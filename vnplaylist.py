@@ -90,7 +90,7 @@ def getItems(url_path="0"):
 	'''
 	# Default VN Open Playlist Sheet ID
 	sheet_id = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
-
+	path     = url_path
 	if "@" in url_path:
 		path, sheet_id = url_path.split("@")
 	url = query_url.format(
