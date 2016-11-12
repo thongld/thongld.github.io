@@ -135,7 +135,6 @@ def getItems(url_path="0"):
 			item["is_playable"] = True
 			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 		items += [item]
-	print json.dumps(items)
 	return items
 
 def getValue(colid):
