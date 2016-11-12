@@ -90,14 +90,14 @@ def getItems(url_path="0"):
 	'''
 	# Default VN Open Playlist Sheet ID
 	sheet_id = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
-	path     = url_path
+	gid     = url_path
 	if "@" in url_path:
-		path, sheet_id = url_path.split("@")
+		gid, sheet_id = url_path.split("@")
 	url = query_url.format(
 		# Thay sid thành Google Spreadsheet ID của bạn ở đây
 		sid = sheet_id,
 		tq  = urllib.quote("select A,B,C,D,E"),
-		gid = path
+		gid = gid
 	)
 	(resp, content) = http.request(
 		url, "GET",
@@ -110,8 +110,19 @@ def getItems(url_path="0"):
 	for row in _json["table"]["rows"]:
 		item = {}
 		item["label"]     = getValue(row["c"][0]).encode("utf-8")
-		item["label2"]    = getValue(row["c"][4])		
-		item["path"]      = getValue(row["c"][1])
+		item["label2"]    = getValue(row["c"][4])
+		# Nếu phát hiện spreadsheet khác của VNOpenPlaylist
+		new_path = getValue(row["c"][1])
+		if "@" in url_path and "@" not in new_path and "section/" in new_path:
+			gid = re.compile("section/(\d+)").findall(new_path)[0]
+			new_path = re.sub(
+				'section/\d+',
+				'section/%s@%s' % (gid,sheet_id),
+				new_path,
+				flags=re.IGNORECASE
+			)
+		item["path"]      = new_path
+
 		item["thumbnail"] = getValue(row["c"][2])
 		item["info"]      = {"plot": getValue(row["c"][3])}
 		if "plugin://" in item["path"]:
@@ -124,6 +135,7 @@ def getItems(url_path="0"):
 			item["is_playable"] = True
 			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 		items += [item]
+	print json.dumps(items)
 	return items
 
 def getValue(colid):
