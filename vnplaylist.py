@@ -88,11 +88,16 @@ def getItems(url_path="0"):
 	tracking_string : string
 		 Tên dễ đọc của view
 	'''
+	# Default VN Open Playlist Sheet ID
+	sheet_id = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
+
+	if "@" in url_path:
+		path, sheet_id = url_path.split("@")
 	url = query_url.format(
 		# Thay sid thành Google Spreadsheet ID của bạn ở đây
-		sid = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss",
+		sid = sheet_id,
 		tq  = urllib.quote("select A,B,C,D,E"),
-		gid = url_path
+		gid = path
 	)
 	(resp, content) = http.request(
 		url, "GET",
