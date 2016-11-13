@@ -19,6 +19,21 @@ sheet_headers  = {
 	"Accept-Encoding" : "gzip, deflate, sdch, br"
 }
 
+def GetSheetIDFromSettings():
+	'''
+	Hàm lấy url chuyển tiếp
+	Parameters
+	----------
+	url_path : string
+		link chứa nội dung m3u playlist
+	'''
+	sid = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
+	resp, content = http.request(plugin.get_setting("GSheetURL"),"HEAD")
+	try:
+		sid = re.compile("/d/(.+?)/").findall(resp["content-location"])[0]
+	except: pass
+	return sid
+
 def M3UToItems(url_path=""):
 	'''
 	Hàm chuyển đổi m3u playlist sang xbmcswift2 items
@@ -89,7 +104,8 @@ def getItems(url_path="0"):
 		 Tên dễ đọc của view
 	'''
 	# Default VN Open Playlist Sheet ID
-	sheet_id = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
+
+	sheet_id = GetSheetIDFromSettings()
 	gid     = url_path
 	if "@" in url_path:
 		gid, sheet_id = url_path.split("@")
