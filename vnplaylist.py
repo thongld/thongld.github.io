@@ -144,6 +144,9 @@ def getItems(url_path="0"):
 		if "plugin://" in item["path"]:
 			if "install-repo" in item["path"]:
 				item["is_playable"] = False
+			elif item["path"].startswith("plugin://plugin.video.f4mTester"):
+				item["is_playable"] = False
+				item["path"] = pluginrootpath + "/executebuiltin/" + urllib.quote_plus(item["path"])
 			elif "/play/" in item["path"]:
 				item["is_playable"] = True
 		else:
