@@ -146,10 +146,17 @@ def getItems(url_path="0"):
 				item["is_playable"] = False
 			elif "/play/" in item["path"]:
 				item["is_playable"] = True
-		else:			
-			# Nếu là playable path thì route đến hàm play_url
-			item["is_playable"] = True
-			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+		else:
+			if "fshare.vn/folder" in item["path"]:
+				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
+			elif "fshare.vn/file" in item["path"]:
+				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			else:		
+				# Nếu là direct link thì route đến hàm play_url
+				item["is_playable"] = True
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 		items += [item]
 	return items
 
