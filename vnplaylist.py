@@ -160,7 +160,7 @@ def getItems(url_path="0"):
 			elif "youtube.com/channel" in item["path"]:
 				# https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ
 				yt_cid = re.compile("youtube.com/channel/(.+?)$").findall(item["path"])[0]
-				item["path"] = "plugin://plugin.video.youtube/channel/%s/" + yt_cid
+				item["path"] = "plugin://plugin.video.youtube/channel/%s/" % yt_cid
 			elif "youtube.com/playlist" in item["path"]:
 				# https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI
 				yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
