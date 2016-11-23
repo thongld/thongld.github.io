@@ -127,7 +127,7 @@ def getItems(url_path="0"):
 		item = {}
 		item["label"]     = getValue(row["c"][0]).encode("utf-8")
 		item["label2"]    = getValue(row["c"][4])
-		# Nếu phát hiện spreadsheet khác của VNOpenPlaylist
+		# Nếu phát hiện spreadsheet khác với VNOpenPlaylist
 		new_path = getValue(row["c"][1])
 		if "@" in url_path and "@" not in new_path and "section/" in new_path:
 			gid = re.compile("section/(\d+)").findall(new_path)[0]
@@ -153,6 +153,18 @@ def getItems(url_path="0"):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			elif "fshare.vn/file" in item["path"]:
+				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			elif "youtube.com/channel" in item["path"]:
+				# https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ
+				yt_cid = re.compile("youtube.com/channel/(.+?)$").findall(item["path"])[0]
+				item["path"] = "plugin://plugin.video.youtube/channel/%s/" + yt_cid
+			elif "youtube.com/playlist" in item["path"]:
+				# https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI
+				yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
+				item["path"] = "plugin://plugin.video.youtube/playlist/%s/" % yt_pid
 			else:		
 				# Nếu là direct link thì route đến hàm play_url
 				item["is_playable"] = True
