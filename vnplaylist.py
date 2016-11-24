@@ -110,7 +110,6 @@ def getItems(url_path="0"):
 	if "@" in url_path:
 		gid, sheet_id = url_path.split("@")
 	url = query_url.format(
-		# Thay sid thành Google Spreadsheet ID của bạn ở đây
 		sid = sheet_id,
 		tq  = urllib.quote("select A,B,C,D,E"),
 		gid = gid
@@ -150,7 +149,15 @@ def getItems(url_path="0"):
 			elif "/play/" in item["path"]:
 				item["is_playable"] = True
 		else:
-			if "fshare.vn/folder" in item["path"]:
+			if "spreadsheets/d/" in item["path"]:
+				# https://docs.google.com/spreadsheets/d/1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss/edit#gid=0
+				sheet_id = re.compile("/d/(.+?)/").findall(item["path"])[0]
+				try:
+					gid = re.compile("gid=(\d+)").findall(item["path"])[0]
+				except:
+					gid = "0"
+				item["path"] = pluginrootpath + "/section/%s@%s" % (gid,sheet_id)
+			elif "fshare.vn/folder" in item["path"]:
 				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
 			elif "fshare.vn/file" in item["path"]:
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
