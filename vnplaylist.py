@@ -244,6 +244,7 @@ def M3USection(path = "0", tracking_string = "M3U"):
 			del item["playable"]
 	return plugin.finish(AddTracking(items))
 
+@plugin.route('/m3u/<path>', name = "m3u_default")
 @plugin.route('/m3u/<path>/<tracking_string>')
 def M3U(path = "0", tracking_string = "M3U"):
 	'''
