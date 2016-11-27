@@ -282,7 +282,6 @@ def InstallRepo(path = "0", tracking_string = ""):
 		"Install Repo - %s" % tracking_string,
 		"/install-repo/%s" % path
 	)
-	should_update = False
 	if path.isdigit(): # xác định GID
 		pDialog = xbmcgui.DialogProgress()
 		pDialog.create('Vui lòng đợi','Bắt đầu cài repo','Đang tải...')
@@ -296,7 +295,6 @@ def InstallRepo(path = "0", tracking_string = ""):
 			try:
 				item["path"] = "http" + item["path"].split("http")[-1]
 				download(urllib.unquote_plus(item["path"]), item["label2"])
-				should_update = True
 			except:
 				failed += [item["label"].encode("utf-8")]
 			if pDialog.iscanceled():
@@ -315,7 +313,6 @@ def InstallRepo(path = "0", tracking_string = ""):
 	else: # cài repo riêng lẻ
 		try:
 			download(path, "")
-			should_update = True
 			dlg = xbmcgui.Dialog()
 			s = "Repo %s đã được cài thành công" % tracking_string
 			dlg.ok('Cài Repo thành công!', s)
@@ -324,9 +321,8 @@ def InstallRepo(path = "0", tracking_string = ""):
 			s = "Vùi lòng thử cài lại lần sau"
 			dlg.ok('Cài repo thất bại!', s)
 
-	if should_update:
-		xbmc.executebuiltin("XBMC.UpdateLocalAddons()")
-		xbmc.executebuiltin("XBMC.UpdateAddonRepos()")
+	xbmc.executebuiltin("XBMC.UpdateLocalAddons()")
+	xbmc.executebuiltin("XBMC.UpdateAddonRepos()")
 
 @plugin.route('/repo-section/<path>/<tracking_string>')
 def RepoSection(path = "0", tracking_string = ""):
