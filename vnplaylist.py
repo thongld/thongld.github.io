@@ -157,13 +157,11 @@ def getItems(url_path="0"):
 				except:
 					gid = "0"
 				item["path"] = pluginrootpath + "/section/%s@%s" % (gid,sheet_id)
-			elif "fshare.vn/folder" in item["path"]:
+			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
-			elif "fshare.vn/file" in item["path"]:
-				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
-				item["is_playable"] = True
-				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-			elif "fshare.vn/file" in item["path"]:
+			elif any(service in item["path"] for service in ["4share.vn/d/"]):
+				item["path"] = "plugin://plugin.video.xshare/?mode=38&page=0&url=" + urllib.quote_plus(item["path"])
+			elif any(service in item["path"] for service in ["fshare.vn/file", "4share.vn/f/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
@@ -180,6 +178,7 @@ def getItems(url_path="0"):
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 		items += [item]
+		print json.dumps(items)
 	return items
 
 def getValue(colid):
