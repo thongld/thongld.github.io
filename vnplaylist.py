@@ -413,6 +413,9 @@ def get_playable_url(url):
 		match = re.compile('(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+	elif "google.com" in url:
+		drive_id = re.compile('/d/(.+?)/').findall(url)[0]
+		url = GetPlayLinkFromDriveID(drive_id)
 	elif "fshare.vn/file" in url:
 		get_fshare = "http://echipstore.com:8000/fshare?url=%s"
 		(resp, content) = http.request(
@@ -425,6 +428,19 @@ def get_playable_url(url):
 	else:
 		if "://" not in url: url = None
 	return url
+
+def GetPlayLinkFromDriveID(drive_id):
+	play_url = "https://drive.google.com/uc?export=download&id=%s" % drive_id
+	(resp, content) = http.request(
+		play_url, "HEAD",
+		headers=sheet_headers
+	)
+	confirm = ""
+	try: confirm = re.compile('download_warning_.+?=(.+?);').findall(resp['set-cookie'])[0]
+	except: return play_url
+	tail = "|User-Agent=%s&Cookie=%s" % (urllib.quote(sheet_headers["User-Agent"]),urllib.quote(resp['set-cookie']))
+	play_url = "%s&confirm=%s" % (play_url,confirm) + tail
+	return play_url
 
 def GA(title="Home",page="/"):
 	'''
