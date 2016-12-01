@@ -161,7 +161,7 @@ def getItems(url_path="0"):
 				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["4share.vn/d/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=38&page=0&url=" + urllib.quote_plus(item["path"])
-			elif any(service in item["path"] for service in ["fshare.vn/file", "4share.vn/f/"]):
+			elif any(service in item["path"] for service in ["4share.vn/f/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
@@ -413,6 +413,15 @@ def get_playable_url(url):
 		match = re.compile('(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+	elif "fshare.vn/file" in url:
+		get_fshare = "http://echipstore.com:8000/fshare?url=%s"
+		(resp, content) = http.request(
+			get_fshare % url, "GET"
+		)
+		js = json.loads(content)
+		if js["wait_time"] == "0" and js["url"] != "":
+			url = js["url"]
+		else: url = None
 	else:
 		if "://" not in url: url = None
 	return url
