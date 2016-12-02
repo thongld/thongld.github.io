@@ -158,7 +158,7 @@ def getItems(url_path="0"):
 					gid = "0"
 				item["path"] = pluginrootpath + "/section/%s@%s" % (gid,sheet_id)
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
-				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
+				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["4share.vn/d/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=38&page=0&url=" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["4share.vn/f/"]):
@@ -216,6 +216,25 @@ def Section(path = "0", tracking_string = "Home"):
 	)
 
 	items = AddTracking(getItems(path))
+	return plugin.finish(items)
+
+@plugin.route('/fshare/<path>/<tracking_string>')
+def FShare(path = "0", tracking_string = "FShare"):
+	(resp, content) = http.request(
+		path, "GET",
+		headers=sheet_headers
+	)
+	items = []
+	for fid, title, size in re.compile('(?s)<a class="filename" data-id="(.+?)"[^>]*title="(.+?)">.+?<div class="pull-left file_size align-right">(.+?)</div>').findall(content):
+		item={}
+		item["path"] = "%s/play/%s/%s" % (
+			pluginrootpath,
+			urllib.quote_plus("https://www.fshare.vn/file/" + fid),
+			urllib.quote_plus("[FShare] %s (%s)" % (title, size))
+		)
+		item["label"] = "[FShare] %s (%s)" % (title, size)
+		item["is_playable"] = True
+		items += [item]
 	return plugin.finish(items)
 
 @plugin.route('/m3u-section/<path>/<tracking_string>')
