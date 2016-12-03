@@ -3,7 +3,7 @@
 import httplib2, json, re, urllib, os, uuid, contextlib, zipfile
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
-from xbmcswift2 import Plugin, xbmc, xbmcaddon, xbmcgui
+from xbmcswift2 import Plugin, xbmc, xbmcaddon, xbmcgui, actions
 path          = xbmc.translatePath(xbmcaddon.Addon().getAddonInfo('path') ).decode("utf-8")
 cache         = xbmc.translatePath(os.path.join(path,".cache"))
 tmp           = xbmc.translatePath('special://temp')
@@ -178,8 +178,58 @@ def getItems(url_path="0"):
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 		items += [item]
-		print json.dumps(items)
+	if url_path == "0":
+		add_playlist_item  = [{
+			"context_menu": [
+				ClearPlaylists(""),
+			],
+			"label":"[COLOR yellow]*** Thêm Playlist***[/COLOR]",
+			"path": "%s/add-playlist" % (pluginrootpath),
+			"thumbnail": "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
+		}]
+		items += add_playlist_item
+		playlists = plugin.get_storage('playlists')
+		if 'sections' in playlists:
+			for section in playlists['sections']:
+				item = {
+					"context_menu": [
+						ClearPlaylists(section),
+					]
+				}
+				item["label"] = section
+				item["path"]  = "%s/section/%s" % (
+					pluginrootpath,
+					section
+				)
+				item["thumbnail"] = "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
+				items.append(item)
 	return items
+
+@plugin.route('/remove-playlists/', name="remove_all")
+@plugin.route('/remove-playlists/<item>')
+def RemovePlaylists(item=""):
+	if item is not "":
+		playlists = plugin.get_storage('playlists')
+		if 'sections' in playlists:
+			new_playlists = []
+			for section in playlists["sections"]:
+				if section != item:
+					new_playlists += [section]
+			playlists["sections"] = new_playlists
+	else:
+		plugin.get_storage('playlists').clear()
+	xbmc.executebuiltin('Container.Refresh')
+
+def ClearPlaylists(item=""):
+	if item == "":
+		label = '[COLOR yellow]Xóa hết Playlists[/COLOR]'
+	else:
+		label = '[COLOR yellow]Xóa "%s"[/COLOR]' % item
+
+	return (label, actions.background(
+		"%s/remove-playlists/%s" % (pluginrootpath,item)
+	))
+
 
 def getValue(colid):
 	'''
@@ -217,6 +267,27 @@ def Section(path = "0", tracking_string = "Home"):
 
 	items = AddTracking(getItems(path))
 	return plugin.finish(items)
+
+@plugin.route('/add-playlist/<tracking_string>')
+def AddPlaylist(tracking_string = "Add Playlist"):
+	sheet_url = plugin.keyboard(heading='Nhập URL của Google Spreadsheet (có hỗ trợ link rút gọn như bit.ly, goo.gl)')
+	if sheet_url:
+		try:
+			resp, content = http.request(sheet_url,"HEAD")
+			sid, gid = re.compile("/d/(.+?)/.+?gid=(\d+)").findall(resp["content-location"])[0]
+
+			playlists = plugin.get_storage('playlists')
+			if 'sections' in playlists:
+				playlists["sections"] = ["%s@%s" % (gid,sid)] + playlists["sections"]
+			else:
+				playlists["sections"] = ["%s@%s" % (gid,sid)]
+			xbmc.executebuiltin('Container.Refresh')
+		except: 
+			line1 = "Vui lòng nhập URL hợp lệ. Ví dụ dạng đầy đủ:"
+			line2 = "http://docs.google.com/spreadsheets/d/xxx/edit#gid=###"
+			line3 = "Hoặc rút gọn: http://bit.ly/xxxxxx hoặc http://goo.gl/xxxxx"
+			dlg = xbmcgui.Dialog()
+			dlg.ok("URL không hợp lệ!!!", line1, line2, line3)
 
 @plugin.route('/fshare/<path>/<tracking_string>')
 def FShare(path = "0", tracking_string = "FShare"):
