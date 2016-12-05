@@ -199,7 +199,7 @@ def getItems(url_path="0"):
 				item["label"] = section
 				item["path"]  = "%s/section/%s" % (
 					pluginrootpath,
-					section
+					section.split("] ")[-1]
 				)
 				item["thumbnail"] = "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
 				items.append(item)
@@ -224,7 +224,7 @@ def ClearPlaylists(item=""):
 	if item == "":
 		label = '[COLOR yellow]Xóa hết Playlists[/COLOR]'
 	else:
-		label = '[COLOR yellow]Xóa "%s"[/COLOR]' % item
+		label = '[COLOR yellow]Xóa "%s"[/COLOR]' % item.encode("utf8")
 
 	return (label, actions.background(
 		"%s/remove-playlists/%s" % (pluginrootpath,item)
@@ -264,7 +264,6 @@ def Section(path = "0", tracking_string = "Home"):
 		"Section - %s" % tracking_string,
 		"/section/%s" % path
 	)
-
 	items = AddTracking(getItems(path))
 	return plugin.finish(items)
 
@@ -277,10 +276,11 @@ def AddPlaylist(tracking_string = "Add Playlist"):
 			sid, gid = re.compile("/d/(.+?)/.+?gid=(\d+)").findall(resp["content-location"])[0]
 
 			playlists = plugin.get_storage('playlists')
+			name = plugin.keyboard(heading='Đặt tên cho Playlist')
 			if 'sections' in playlists:
-				playlists["sections"] = ["%s@%s" % (gid,sid)] + playlists["sections"]
+				playlists["sections"] = ["[[COLOR yellow]%s[/COLOR]] %s@%s" % (name,gid,sid)] + playlists["sections"]
 			else:
-				playlists["sections"] = ["%s@%s" % (gid,sid)]
+				playlists["sections"] = ["[[COLOR yellow]%s[/COLOR]] %s@%s" % (name,gid,sid)]
 			xbmc.executebuiltin('Container.Refresh')
 		except: 
 			line1 = "Vui lòng nhập URL hợp lệ. Ví dụ dạng đầy đủ:"
