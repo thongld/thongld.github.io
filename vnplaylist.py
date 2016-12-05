@@ -208,6 +208,7 @@ def getItems(url_path="0"):
 @plugin.route('/remove-playlists/', name="remove_all")
 @plugin.route('/remove-playlists/<item>')
 def RemovePlaylists(item=""):
+	item = urllib.unquote_plus(item)
 	if item is not "":
 		playlists = plugin.get_storage('playlists')
 		if 'sections' in playlists:
@@ -227,7 +228,7 @@ def ClearPlaylists(item=""):
 		label = '[COLOR yellow]Xóa "%s"[/COLOR]' % item.encode("utf8")
 
 	return (label, actions.background(
-		"%s/remove-playlists/%s" % (pluginrootpath,item)
+		"%s/remove-playlists/%s" % (pluginrootpath,urllib.quote_plus(item))
 	))
 
 
