@@ -158,10 +158,10 @@ def getItems(url_path="0"):
 					gid = "0"
 				item["path"] = pluginrootpath + "/section/%s@%s" % (gid,sheet_id)
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
-				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
+				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["4share.vn/d/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=38&page=0&url=" + urllib.quote_plus(item["path"])
-			elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
+			elif any(service in item["path"] for service in ["4share.vn/f/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
@@ -297,15 +297,24 @@ def FShare(path = "0", tracking_string = "FShare"):
 		headers=sheet_headers
 	)
 	items = []
-	for fid, title, size in re.compile('(?s)<a class="filename" data-id="(.+?)"[^>]*title="(.+?)">.+?<div class="pull-left file_size align-right">(.+?)</div>').findall(content):
+	filelist = re.compile('(?s)<ul class="filelist table table-striped" id="filelist">.+?</ul>').findall(content)[0]
+	for folder, fid, title, size in re.compile('(?s)<a[^>]*class="(filename.*?)" data-id="(.+?)"[^>]*title="(.+?)">.+?<div class="pull-left file_size align-right"[^>]*>(.+?)</div>').findall(filelist):
 		item={}
-		item["path"] = "%s/play/%s/%s" % (
-			pluginrootpath,
-			urllib.quote_plus("https://www.fshare.vn/file/" + fid),
-			urllib.quote_plus("[FShare] %s (%s)" % (title, size))
-		)
-		item["label"] = "[FShare] %s (%s)" % (title, size)
-		item["is_playable"] = True
+		if "folder" in folder:
+			item["path"] = "%s/fshare/%s/%s" % (
+				pluginrootpath,
+				urllib.quote_plus("https://www.fshare.vn/folder/" + fid),
+				urllib.quote_plus("[FShare] %s (%s)" % (title, size))
+			)
+			item["label"] = "[FShare] %s (%s)" % (title, size)
+		else:
+			item["path"] = "%s/play/%s/%s" % (
+				pluginrootpath,
+				urllib.quote_plus("https://www.fshare.vn/file/" + fid),
+				urllib.quote_plus("[FShare] %s (%s)" % (title, size))
+			)
+			item["label"] = "[FShare] %s (%s)" % (title, size)
+			item["is_playable"] = True
 		items += [item]
 	return plugin.finish(items)
 
@@ -508,14 +517,20 @@ def get_playable_url(url):
 		drive_id = re.compile('/d/(.+?)/').findall(url)[0]
 		url = GetPlayLinkFromDriveID(drive_id)
 	elif "fshare.vn/file" in url:
-		get_fshare = "http://echipstore.com:8000/fshare?url=%s"
+		http.follow_redirects = False
+		get_fshare = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=0"
+
 		(resp, content) = http.request(
-			get_fshare % url, "GET"
+			get_fshare, "GET"
 		)
-		js = json.loads(content)
-		if js["wait_time"] == "0" and js["url"] != "":
-			url = js["url"]
-		else: url = None
+		fshare_headers = {
+			'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
+			'Cookie':'session_id=%s' % content
+		}
+		(resp, content) = http.request(
+			url, "GET", headers = fshare_headers
+		)
+		url = resp["location"]
 	else:
 		if "://" not in url: url = None
 	return url
