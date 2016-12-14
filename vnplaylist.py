@@ -148,6 +148,10 @@ def getItems(url_path="0"):
 				item["path"] = pluginrootpath + "/executebuiltin/" + urllib.quote_plus(item["path"])
 			elif "/play/" in item["path"]:
 				item["is_playable"] = True
+		elif item["path"] == "":
+			item["label"] = "[I]%s[/I]" % item["label"]
+			item["is_playable"] = False
+			item["path"] = pluginrootpath + "/executebuiltin/-"
 		else:
 			if "spreadsheets/d/" in item["path"]:
 				# https://docs.google.com/spreadsheets/d/1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss/edit#gid=0
@@ -501,7 +505,9 @@ def execbuiltin(path,tracking_string=""):
 		"Execute Builtin - %s" % tracking_string,
 		"/repo-execbuiltin/%s" % path
 	)
-	xbmc.executebuiltin('XBMC.RunPlugin(%s)' % urllib.unquote_plus(path))
+	try:
+		xbmc.executebuiltin('XBMC.RunPlugin(%s)' % urllib.unquote_plus(path))
+	except: pass
 
 @plugin.route('/play/<url>/<title>')
 def play_url(url, title=""):
