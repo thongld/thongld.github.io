@@ -8,6 +8,7 @@ path          = xbmc.translatePath(xbmcaddon.Addon().getAddonInfo('path') ).deco
 cache         = xbmc.translatePath(os.path.join(path,".cache"))
 tmp           = xbmc.translatePath('special://temp')
 addons_folder = xbmc.translatePath('special://home/addons')
+image         = xbmc.translatePath(os.path.join(path, "icon.png"))
 
 plugin         = Plugin()
 addon          = xbmcaddon.Addon("plugin.video.thongld.vnplaylist")
@@ -525,18 +526,29 @@ def get_playable_url(url):
 	elif "fshare.vn/file" in url:
 		http.follow_redirects = False
 		get_fshare = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=0"
-
-		(resp, content) = http.request(
-			get_fshare, "GET"
-		)
-		fshare_headers = {
-			'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
-			'Cookie':'session_id=%s' % content
-		}
-		(resp, content) = http.request(
-			url, "GET", headers = fshare_headers
-		)
-		url = resp["location"]
+		try:
+			(resp, content) = http.request(
+				get_fshare, "GET"
+			)
+		except:
+			header  = "Server quá tải!"
+			message = "Xin vui lòng thử lại sau"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+			return url
+		try:
+			fshare_headers = {
+				'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
+				'Cookie':'session_id=%s' % content
+			}
+			(resp, content) = http.request(
+				url, "GET", headers = fshare_headers
+			)
+			url = resp["location"]
+		except:
+			header  = "Không lấy được link FShare VIP!"
+			message = "Phiên FShare VIP hiện tại bị hết hạn hoặc link hỏng"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+			return url
 	else:
 		if "://" not in url: url = None
 	return url
