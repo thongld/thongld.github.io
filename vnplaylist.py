@@ -173,8 +173,10 @@ def getItems(url_path="0"):
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 			elif "youtube.com/channel" in item["path"]:
 				# https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ
+				yt_route = "ytcp" if "playlists" in item["path"] else "ytc"
 				yt_cid = re.compile("youtube.com/channel/(.+?)$").findall(item["path"])[0]
-				item["path"] = "plugin://plugin.video.kodi4vn.launcher/ytc/%s/" % yt_cid
+				item["path"] = "plugin://plugin.video.kodi4vn.launcher/%s/%s/" % (yt_route, yt_cid)
+				item["path"] = item["path"].replace("/playlists","")
 			elif "youtube.com/playlist" in item["path"]:
 				# https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI
 				yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
