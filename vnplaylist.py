@@ -163,11 +163,12 @@ def getItems(url_path="0"):
 					gid = "0"
 				item["path"] = pluginrootpath + "/section/%s@%s" % (gid,sheet_id)
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
-				# item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
-				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
+				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
+				# item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["4share.vn/d/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=38&page=0&url=" + urllib.quote_plus(item["path"])
-			elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
+			elif any(service in item["path"] for service in ["4share.vn/f/"]):
+			# elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
@@ -524,8 +525,7 @@ def get_playable_url(url):
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
 	elif "google.com" in url:
-		drive_id = re.compile('/d/(.+?)/').findall(url)[0]
-		url = GetPlayLinkFromDriveID(drive_id)
+		url = getGDriveHighestQuality(url)
 	elif "fshare.vn/file" in url:
 		http.follow_redirects = False
 		get_fshare = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=0"
@@ -537,7 +537,7 @@ def get_playable_url(url):
 			header  = "Server quá tải!"
 			message = "Xin vui lòng thử lại sau"
 			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
-			return url
+			return ""
 		try:
 			fshare_headers = {
 				'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
@@ -546,10 +546,26 @@ def get_playable_url(url):
 			(resp, content) = http.request(
 				url, "GET", headers = fshare_headers
 			)
-			url = resp["location"]
+			if "Tập tin quý khách yêu cầu không tồn tại" in content:
+				header  = "Không lấy được link FShare VIP!"
+				message = "Link không tồn tại hoặc file đã bị xóa"
+				xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+
+				h = {
+					"Accept-Encoding" : "gzip, deflate, sdch, br",
+					"Content-Type": "application/x-www-form-urlencoded"
+				}
+				(resp, content) = http.request(
+					"aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTZndkWU5zdzZxZG80NzhEYlRNRU9helRkMEVMR056Sm9KcFV3SlBEZlBoc0NaV2RBL2Zvcm1SZXNwb25zZQ==".decode("base64"),
+					"POST", headers = h,
+					body=urllib.urlencode({"entry.955186172": url})
+				)
+				return ""
+			else:
+				url = resp["location"]
 		except:
 			header  = "Không lấy được link FShare VIP!"
-			message = "Phiên FShare VIP hiện tại bị hết hạn hoặc link hỏng"
+			message = "Phiên FShare VIP hiện tại bị hết hạn"
 			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
 			return url
 	else:
@@ -557,7 +573,7 @@ def get_playable_url(url):
 	return url
 
 def GetPlayLinkFromDriveID(drive_id):
-	play_url = "https://drive.google.com/uc?export=download&id=%s" % drive_id
+	play_url = "https://drive.google.com/uc?export=mp4&id=%s" % drive_id
 	(resp, content) = http.request(
 		play_url, "HEAD",
 		headers=sheet_headers
@@ -596,6 +612,21 @@ def GA(title="Home",page="/"):
 		)
 	except:
 		pass
+
+def getGDriveHighestQuality(url):
+	(resp, content) = http.request(
+		url, "GET",
+		headers=sheet_headers
+	)
+	match = re.compile('(\["fmt_stream_map".+?\])').findall(content)[0]
+	prefer_quality = ["38","37","46","22","45","18","43"]
+	stream_map = json.loads(match)[1].split(",")
+	for q in prefer_quality:
+		for stream in stream_map:
+			if stream.startswith(q+"|"):
+				url = stream.split("|")[1]
+				tail = "|User-Agent=%s&Cookie=%s" % (urllib.quote(sheet_headers["User-Agent"]),urllib.quote(resp['set-cookie']))
+				return url + tail
 
 # Tạo client id cho GA tracking
 # Tham khảo client id tại https://support.google.com/analytics/answer/6205850?hl=vi
