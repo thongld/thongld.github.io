@@ -541,7 +541,7 @@ def get_playable_url(url):
 		try:
 			fshare_headers = {
 				'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
-				'Cookie':'session_id=%s' % content
+				'Cookie':'session_id=%s' % content.split('\n')[0]
 			}
 			(resp, content) = http.request(
 				url, "GET", headers = fshare_headers
