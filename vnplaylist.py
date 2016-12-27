@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding=utf-8
-import httplib2, json, re, urllib, os, uuid, contextlib, zipfile
+import httplib2, json, re, urllib, os, uuid, contextlib, zipfile,random
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
 from xbmcswift2 import Plugin, xbmc, xbmcaddon, xbmcgui, actions
@@ -538,36 +538,40 @@ def get_playable_url(url):
 			message = "Xin vui lòng thử lại sau"
 			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
 			return ""
-		try:
-			fshare_headers = {
-				'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
-				'Cookie':'session_id=%s' % content.split('\n')[0]
-			}
-			(resp, content) = http.request(
-				url, "GET", headers = fshare_headers
-			)
-			if "Tập tin quý khách yêu cầu không tồn tại" in content:
-				header  = "Không lấy được link FShare VIP!"
-				message = "Link không tồn tại hoặc file đã bị xóa"
+
+		tmps = content.split('\n')
+		random.shuffle(tmps)
+		for tmp in tmps:
+			try:
+				fshare_headers = {
+					'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
+					'Cookie':'session_id=%s' % tmp
+				}
+				header  = "Session"
+				message = fshare_headers['Cookie']
 				xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
 
-				h = {
-					"Accept-Encoding" : "gzip, deflate, sdch, br",
-					"Content-Type": "application/x-www-form-urlencoded"
-				}
 				(resp, content) = http.request(
-					"aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTZndkWU5zdzZxZG80NzhEYlRNRU9helRkMEVMR056Sm9KcFV3SlBEZlBoc0NaV2RBL2Zvcm1SZXNwb25zZQ==".decode("base64"),
-					"POST", headers = h,
-					body=urllib.urlencode({"entry.955186172": url})
+					url, "GET", headers = fshare_headers
 				)
-				return ""
-			else:
-				url = resp["location"]
-		except:
-			header  = "Không lấy được link FShare VIP!"
-			message = "Phiên FShare VIP hiện tại bị hết hạn"
-			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
-			return url
+				if "Tập tin quý khách yêu cầu không tồn tại" in content:
+					header  = "Không lấy được link FShare VIP!"
+					message = "Link không tồn tại hoặc file đã bị xóa"
+					xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+
+					h = {
+						"Accept-Encoding" : "gzip, deflate, sdch, br",
+						"Content-Type": "application/x-www-form-urlencoded"
+					}
+					(resp, content) = http.request(
+						"aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTZndkWU5zdzZxZG80NzhEYlRNRU9helRkMEVMR056Sm9KcFV3SlBEZlBoc0NaV2RBL2Zvcm1SZXNwb25zZQ==".decode("base64"),
+						"POST", headers = h,
+						body=urllib.urlencode({"entry.955186172": url})
+					)
+					return ""
+				else:
+					return resp["location"]
+			except: pass
 	else:
 		if "://" not in url: url = None
 	return url
