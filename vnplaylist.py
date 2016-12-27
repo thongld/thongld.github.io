@@ -547,9 +547,6 @@ def get_playable_url(url):
 					'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
 					'Cookie':'session_id=%s' % tmp
 				}
-				header  = "Session"
-				message = fshare_headers['Cookie']
-				xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
 
 				(resp, content) = http.request(
 					url, "GET", headers = fshare_headers
