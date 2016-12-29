@@ -91,6 +91,10 @@ def M3UToItems(url_path=""):
 		items += [item]
 	return items
 
+@plugin.cached(TTL = 525600)
+def getCachedItems(url_path="0"):
+	return AddTracking(getItems(url_path))
+
 def getItems(url_path="0"):
 	'''
 	Tạo items theo chuẩn xbmcswift2 từ Google Spreadsheet
@@ -156,12 +160,21 @@ def getItems(url_path="0"):
 		else:
 			if "spreadsheets/d/" in item["path"]:
 				# https://docs.google.com/spreadsheets/d/1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss/edit#gid=0
+				match = re.compile('&cache=(.+?)($|&)').findall(item["path"])
 				sheet_id = re.compile("/d/(.+?)/").findall(item["path"])[0]
 				try:
 					gid = re.compile("gid=(\d+)").findall(item["path"])[0]
 				except:
 					gid = "0"
 				item["path"] = pluginrootpath + "/section/%s@%s" % (gid,sheet_id)
+				if match:
+					cache_name = match[0][0]
+					storage = plugin.get_storage('playlist_storage')
+					if 'cache_name' not in storage: storage['cache_name'] = ''
+					if storage['cache_name'] != cache_name:
+						plugin.clear_function_cache()
+						storage['cache_name'] = cache_name
+					item["path"] = pluginrootpath + "/cached-section/%s@%s" % (gid,sheet_id)
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
 				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
 				# item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
@@ -258,6 +271,14 @@ def Home():
 	'''
 	GA() # tracking
 	Section("0")
+
+@plugin.route('/cached-section/<path>/<tracking_string>')
+def CachedSection(path = "0", tracking_string = "Home"):
+	GA( # tracking
+		"Section - %s" % tracking_string,
+		"/section/%s" % path
+	)
+	return plugin.finish(getCachedItems(path))
 
 @plugin.route('/section/<path>/<tracking_string>')
 def Section(path = "0", tracking_string = "Home"):
