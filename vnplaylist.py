@@ -113,7 +113,9 @@ def getItems(url_path="0"):
 	sheet_id = GetSheetIDFromSettings()
 	gid     = url_path
 	if "@" in url_path:
-		gid, sheet_id = url_path.split("@")
+		path_split = url_path.split("@")
+		gid = path_split[0]
+		sheet_id = path_split[1]
 	url = query_url.format(
 		sid = sheet_id,
 		tq  = urllib.quote("select A,B,C,D,E"),
@@ -168,13 +170,8 @@ def getItems(url_path="0"):
 					gid = "0"
 				item["path"] = pluginrootpath + "/section/%s@%s" % (gid,sheet_id)
 				if match:
-					cache_name = match[0][0]
-					storage = plugin.get_storage('playlist_storage')
-					if 'cache_name' not in storage: storage['cache_name'] = ''
-					if storage['cache_name'] != cache_name:
-						plugin.clear_function_cache()
-						storage['cache_name'] = cache_name
-					item["path"] = pluginrootpath + "/cached-section/%s@%s" % (gid,sheet_id)
+					cache_version = match[0][0]
+					item["path"] = pluginrootpath + "/cached-section/%s@%s@%s" % (gid,sheet_id,cache_version)
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
 				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
 				# item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
