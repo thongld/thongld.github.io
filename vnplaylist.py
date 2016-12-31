@@ -483,31 +483,32 @@ def RepoSection(path = "0", tracking_string = ""):
 	items = [install_all_item] + items
 	return plugin.finish(items)
 
-def download(path,reponame):
+def download(path,repo_path):
 	'''
 	Parameters
 	----------
 	path : string
 		Link download zip repo.
-	reponame : string
+	repo_path : string
 		Tên thư mục của repo để kiểm tra đã cài chưa.
 		Mặc định được gán cho item["label2"].
 		Truyền "" để bỏ qua Kiểm tra đã cài
 	'''
-	if reponame == "":
-		reponame = "temp"
-		repo_zip = xbmc.translatePath(os.path.join(tmp,"%s.zip" % reponame))
+	if repo_path == "":
+		repo_path = "temp"
+		repo_zip = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_path))
 		urllib.urlretrieve(path,repo_zip)
 		with contextlib.closing(zipfile.ZipFile(repo_zip, "r")) as z:
 			z.extractall(addons_folder)
 	else:
-		repo_path = xbmc.translatePath('special://home/addons/%s' % reponame)
-		if not os.path.isdir(repo_path):
-			if reponame == "": reponame = "temp"
-			repo_zip = xbmc.translatePath(os.path.join(tmp,"%s.zip" % reponame))
+		repo_name = repo_path.split("/")[-1]
+		extract_path = xbmc.translatePath("/".join(repo_path.split("/")[:-1]))
+		local_path = xbmc.translatePath("%s" % repo_path)
+		if not os.path.isdir(local_path):
+			repo_zip = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_name))
 			urllib.urlretrieve(path,repo_zip)
 			with contextlib.closing(zipfile.ZipFile(repo_zip, "r")) as z:
-				z.extractall(addons_folder)
+				z.extractall(extract_path)
 
 def AddTracking(items):
 	'''
