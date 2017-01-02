@@ -244,7 +244,7 @@ def ClearPlaylists(item=""):
 	if item == "":
 		label = '[COLOR yellow]Xóa hết Playlists[/COLOR]'
 	else:
-		label = '[COLOR yellow]Xóa "%s"[/COLOR]' % item.encode("utf8")
+		label = '[COLOR yellow]Xóa "%s"[/COLOR]' % item
 
 	return (label, actions.background(
 		"%s/remove-playlists/%s" % (pluginrootpath,urllib.quote_plus(item))
