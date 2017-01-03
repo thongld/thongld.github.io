@@ -196,6 +196,8 @@ def getItems(url_path="0"):
 				# Nếu là direct link thì route đến hàm play_url
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+		if item["label2"].startswith("http"):
+			item["path"] += "?sub=" + urllib.quote_plus(item["label2"].encode("utf8"))
 		items += [item]
 	if url_path == "0":
 		add_playlist_item  = [{
@@ -259,7 +261,7 @@ def getValue(colid):
 	colid : string
 		Số thự tự của cột
 	'''
-	if colid is not None: return colid["v"]
+	if colid is not None and colid["v"] is not None: return colid["v"]
 	else: return ""
 
 @plugin.route('/')
@@ -518,9 +520,14 @@ def AddTracking(items):
 	items : list
 		Danh sách các item theo chuẩn xbmcswift2.
 	'''
+
 	for item in items:
 		if "plugin.video.thongld.vnplaylist" in item["path"]:
-			item["path"] = "%s/%s" % (item["path"], urllib.quote_plus(item["label"]))
+			tmps = item["path"].split("?")
+			if len(tmps) == 1:
+				tail = ""
+			else: tail = tmps[1]
+			item["path"] = "%s/%s?%s" % (tmps[0], urllib.quote_plus(item["label"]),tail)
 	return items
 
 @plugin.route('/executebuiltin/<path>/<tracking_string>')
@@ -536,7 +543,10 @@ def execbuiltin(path,tracking_string=""):
 @plugin.route('/play/<url>/<title>')
 def play_url(url, title=""):
 	GA("Play [%s]" % title, "/play/%s/%s" % (title,url))
-	plugin.set_resolved_url(get_playable_url(url))
+	if "sub" in plugin.request.args:
+		plugin.set_resolved_url(get_playable_url(url), subtitles=plugin.request.args["sub"][0])
+	else:
+		plugin.set_resolved_url(get_playable_url(url))
 
 def get_playable_url(url):
 	if "youtube" in url:
