@@ -530,6 +530,10 @@ def AddTracking(items):
 			item["path"] = "%s/%s?%s" % (tmps[0], urllib.quote_plus(item["label"]),tail)
 	return items
 
+@plugin.route('/showimage/<url>/<tracking_string>')
+def showimage(url,tracking_string):
+	xbmc.executebuiltin("ShowPicture(%s)" % urllib.unquote_plus(url))
+
 @plugin.route('/executebuiltin/<path>/<tracking_string>')
 def execbuiltin(path,tracking_string=""):
 	GA( # tracking
