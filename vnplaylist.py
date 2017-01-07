@@ -116,6 +116,12 @@ def getItems(url_path="0"):
 		path_split = url_path.split("@")
 		gid = path_split[0]
 		sheet_id = path_split[1]
+	history = plugin.get_storage('history')
+	if "sources" in history:
+		history["sources"] = ["https://docs.google.com/spreadsheets/d/%s/edit#gid=%s" % (sheet_id,gid)] + history["sources"]
+		history["sources"] = history["sources"][0:4]
+	else:
+		history["sources"] = ["https://docs.google.com/spreadsheets/d/%s/edit#gid=%s" % (sheet_id,gid)]
 	url = query_url.format(
 		sid = sheet_id,
 		tq  = urllib.quote("select A,B,C,D,E"),
@@ -585,6 +591,7 @@ def get_playable_url(url):
 					url, "GET", headers = fshare_headers
 				)
 				if "Tập tin quý khách yêu cầu không tồn tại" in content:
+					history = plugin.get_storage('history')
 					header  = "Không lấy được link FShare VIP!"
 					message = "Link không tồn tại hoặc file đã bị xóa"
 					xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
@@ -593,10 +600,14 @@ def get_playable_url(url):
 						"Accept-Encoding" : "gzip, deflate, sdch, br",
 						"Content-Type": "application/x-www-form-urlencoded"
 					}
+					body = urllib.urlencode({
+						"entry.955186172": url,
+						"entry.1660252828": history["sources"][0]
+					})
 					(resp, content) = http.request(
 						"aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTZndkWU5zdzZxZG80NzhEYlRNRU9helRkMEVMR056Sm9KcFV3SlBEZlBoc0NaV2RBL2Zvcm1SZXNwb25zZQ==".decode("base64"),
 						"POST", headers = h,
-						body=urllib.urlencode({"entry.955186172": url})
+						body=body
 					)
 					return ""
 				else:
