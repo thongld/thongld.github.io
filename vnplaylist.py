@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding=utf-8
-import httplib2, json, re, urllib, os, uuid, contextlib, zipfile,random
+import httplib2, json, re, urllib, os, uuid, contextlib, zipfile, random, base64, time
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
 from xbmcswift2 import Plugin, xbmc, xbmcaddon, xbmcgui, actions
@@ -613,6 +613,8 @@ def get_playable_url(url):
 				else:
 					return resp["location"]
 			except: pass
+	elif "tv24.vn" in url:
+		return getTV24Link(url)
 	else:
 		if "://" not in url: url = None
 	return url
@@ -658,6 +660,49 @@ def GA(title="Home",page="/"):
 	except:
 		pass
 
+def getTV24Link(url):
+	cid = re.compile('/(\d+)/').findall(url)[0]
+	logedin_headers = {
+		"User-Agent"      : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36",
+		"Accept-Encoding" : "gzip, deflate, sdch, br",
+		"Content-Type"    : "application/x-www-form-urlencoded; charset=UTF-8",
+		"Cookie"          : "sess_id=tvxiyR2AvBLh2; sess_data=3syARNoEAlhWYpA4tAOG7AwFauF2MlirUJZz6QYj6EbQnuY7F3ajPYiUr7hFWTIQDfBWGzUhTh8E0OSgJFvKZsaqbzIlseTEA%2BmTL2Kz3fiP9vhgdk32LrOSSSMJsIE0WRYQSV3tEmwIGy3izF%2FcdsvieAdXzPWJuzU%2B2vUkD60QwlPBvyLaw%2FORAl28R83sfQiQLObF%2FW5nlFiPR9HWtH5mXhQ9P%2FSh34qnng%3D%3D;"
+	}
+
+	get_tv24 = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=431795572"
+
+	(resp, content) = http.request(
+		get_tv24, "GET"
+	)
+	tmps = content.split('\n')
+	random.shuffle(tmps)
+	link_headers = {
+		"X-Requested-With" : "XMLHttpRequest",
+		"User-Agent"       : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36",
+		"Content-Type"     : "application/x-www-form-urlencoded; charset=UTF-8",
+		"Accept-Encoding"  : "gzip, deflate",
+		"Cookie"           : base64.b64decode(tmps[0])
+	}
+	resp,cont = http.request(
+		"http://tv24.vn/kenh-truyen-hinh/%s/-" % cid, "GET",
+		headers = logedin_headers
+	)
+
+	token = re.compile('value="(\d+-.+?)"').findall(cont)[0]
+	body = {
+		"channel_id": cid,
+		"channel_token": token
+	}
+	link_headers["Cookie"] += resp["set-cookie"]
+	resp,cont = http.request(
+		"http://tv24.vn/client/channel/link", "POST",
+		headers = link_headers,
+		body = urllib.urlencode(body)
+	)
+	enc_url = json.loads(cont)["data"]["PLAY_URL"]
+	time.sleep(3)
+	return dec(token,enc_url)
+
 def getGDriveHighestQuality(url):
 	(resp, content) = http.request(
 		url, "GET",
@@ -672,6 +717,28 @@ def getGDriveHighestQuality(url):
 				url = stream.split("|")[1]
 				tail = "|User-Agent=%s&Cookie=%s" % (urllib.quote(sheet_headers["User-Agent"]),urllib.quote(resp['set-cookie']))
 				return url + tail
+
+def dec(key, b64_encrypted_str):
+	b64_encrypted_str = base64.b64decode(b64_encrypted_str)
+	j    = 0
+	x    = ""
+	out  = ""
+	s    = [i for i in range(0,256)]
+	for i in range(0,256):
+		j    = (j + s[i] + ord(key[i % len(key)])) % 256
+		x    = s[i]
+		s[i] = s[j]
+		s[j] = x
+	i=0;
+	j=0;
+	for k in range (0, len(b64_encrypted_str)):
+		i    = (i + 1) % 256
+		j    = (j + s[i]) % 256
+		x    = s[i]
+		s[i] = s[j]
+		s[j] = x
+		out += chr(ord(b64_encrypted_str[k])^s[(s[i] + s[j]) % 256])
+	return out
 
 # Tạo client id cho GA tracking
 # Tham khảo client id tại https://support.google.com/analytics/answer/6205850?hl=vi
