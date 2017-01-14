@@ -617,7 +617,7 @@ def get_playable_url(url):
 		return getTV24Link(url)
 	elif "dailymotion.com" in url:
 		did = re.compile("/(\w+)$").findall(url)[0]
-		return "plugin://plugin.video.dailymotion_com/?url=" + did
+		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=mode=playVideo" % did
 	else:
 		if "://" not in url: url = None
 	return url
