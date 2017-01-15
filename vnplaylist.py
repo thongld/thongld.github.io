@@ -179,12 +179,12 @@ def getItems(url_path="0"):
 					cache_version = match[0][0]
 					item["path"] = pluginrootpath + "/cached-section/%s@%s@%s" % (gid,sheet_id,cache_version)
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
-				# item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
-				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
+				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
+				# item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["4share.vn/d/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=38&page=0&url=" + urllib.quote_plus(item["path"])
-			# elif any(service in item["path"] for service in ["4share.vn/f/"]):
-			elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
+			elif any(service in item["path"] for service in ["4share.vn/f/"]):
+			# elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
@@ -584,6 +584,8 @@ def get_playable_url(url):
 			try:
 				fshare_headers = {
 					'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
+					"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+					"Accept-Encoding": "gzip, deflate, br",
 					'Cookie':'session_id=%s' % tmp
 				}
 
@@ -610,8 +612,30 @@ def get_playable_url(url):
 						body=body
 					)
 					return ""
-				else:
+				elif "location" in resp:
 					return resp["location"]
+				else:
+					tok = re.compile('data-tk="(.+?)"').findall(content)[0]
+					data_download = {
+						"fs_csrf"                : tok,
+						"DownloadForm[pwd]"      : "",
+						"DownloadForm[linkcode]" : url.split("/")[-1],
+						"ajax"                   : "download-form",
+						"undefined"              : "undefined"
+					}
+					(resp, content) = http.request(
+						"https://www.fshare.vn/download/get", "POST",
+						headers = fshare_headers,
+						body=urllib.urlencode(data_download)
+					)
+					res_json = json.loads(content)
+					if res_json["wait_time"] == "0":
+						return res_json["url"]
+					else:
+						header  = "Không lấy được link FShare VIP!"
+						message = '"Wait time" lớn hơn 0!!!'
+						xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+						return ""
 			except: pass
 	elif "tv24.vn" in url:
 		return getTV24Link(url)
@@ -665,26 +689,25 @@ def GA(title="Home",page="/"):
 
 def getTV24Link(url):
 	cid = re.compile('/(\d+)/').findall(url)[0]
-	logedin_headers = {
-		"User-Agent"      : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36",
-		"Accept-Encoding" : "gzip, deflate, sdch, br",
-		"Content-Type"    : "application/x-www-form-urlencoded; charset=UTF-8",
-		"Cookie"          : "sess_id=tvxiyR2AvBLh2; sess_data=3syARNoEAlhWYpA4tAOG7AwFauF2MlirUJZz6QYj6EbQnuY7F3ajPYiUr7hFWTIQDfBWGzUhTh8E0OSgJFvKZsaqbzIlseTEA%2BmTL2Kz3fiP9vhgdk32LrOSSSMJsIE0WRYQSV3tEmwIGy3izF%2FcdsvieAdXzPWJuzU%2B2vUkD60QwlPBvyLaw%2FORAl28R83sfQiQLObF%2FW5nlFiPR9HWtH5mXhQ9P%2FSh34qnng%3D%3D;"
-	}
 
-	get_tv24 = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=431795572"
+	get_tv24 = "aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvMTNWelFlYmpHWWFjNWh4ZTFJLXoxcEl2TWlOQjBnU0c3b1dKbEZIV25xc0EvZXhwb3J0P2Zvcm1hdD10c3YmZ2lkPTQzMTc5NTU3Mg=="
 
 	(resp, content) = http.request(
-		get_tv24, "GET"
+		get_tv24.decode('base64'), "GET"
 	)
 	tmps = content.split('\n')
 	random.shuffle(tmps)
+	logedin_headers = {
+		"User-Agent"      : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36",
+		"Accept-Encoding" : "gzip, deflate, sdch, br",
+		"Cookie"          : tmps[0].decode('base64')
+	}
 	link_headers = {
 		"X-Requested-With" : "XMLHttpRequest",
 		"User-Agent"       : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36",
 		"Content-Type"     : "application/x-www-form-urlencoded; charset=UTF-8",
 		"Accept-Encoding"  : "gzip, deflate",
-		"Cookie"           : base64.b64decode(tmps[0])
+		"Cookie"           : ""
 	}
 	resp,cont = http.request(
 		"http://tv24.vn/kenh-truyen-hinh/%s/-" % cid, "GET",
@@ -722,7 +745,7 @@ def getGDriveHighestQuality(url):
 				return url + tail
 
 def dec(key, b64_encrypted_str):
-	b64_encrypted_str = base64.b64decode(b64_encrypted_str)
+	b64_encrypted_str = b64_encrypted_str.decode("base64")
 	j    = 0
 	x    = ""
 	out  = ""
