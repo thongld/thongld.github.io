@@ -635,7 +635,6 @@ def get_playable_url(url):
 						header  = "Không lấy được link FShare VIP!"
 						message = '"Wait time" lớn hơn 0!!!'
 						xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
-						return ""
 			except: pass
 	elif "tv24.vn" in url:
 		return getTV24Link(url)
