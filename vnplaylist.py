@@ -637,7 +637,8 @@ def get_playable_url(url):
 						xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
 			except: pass
 	elif "tv24.vn" in url:
-		return getTV24Link(url)
+		cid = re.compile('/(\d+)/').findall(url)[0]
+		return "plugin://plugin.video.sctv/play/" + cid
 	elif "dailymotion.com" in url:
 		did = re.compile("/(\w+)$").findall(url)[0]
 		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=playVideo" % did
@@ -686,48 +687,6 @@ def GA(title="Home",page="/"):
 	except:
 		pass
 
-def getTV24Link(url):
-	cid = re.compile('/(\d+)/').findall(url)[0]
-
-	get_tv24 = "aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvMTNWelFlYmpHWWFjNWh4ZTFJLXoxcEl2TWlOQjBnU0c3b1dKbEZIV25xc0EvZXhwb3J0P2Zvcm1hdD10c3YmZ2lkPTQzMTc5NTU3Mg=="
-
-	(resp, content) = http.request(
-		get_tv24.decode('base64'), "GET"
-	)
-	tmps = content.split('\n')
-	random.shuffle(tmps)
-	logedin_headers = {
-		"User-Agent"      : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36",
-		"Accept-Encoding" : "gzip, deflate, sdch, br",
-		"Cookie"          : tmps[0].decode('base64')
-	}
-	link_headers = {
-		"X-Requested-With" : "XMLHttpRequest",
-		"User-Agent"       : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36",
-		"Content-Type"     : "application/x-www-form-urlencoded; charset=UTF-8",
-		"Accept-Encoding"  : "gzip, deflate",
-		"Cookie"           : ""
-	}
-	resp,cont = http.request(
-		"http://tv24.vn/kenh-truyen-hinh/%s/-" % cid, "GET",
-		headers = logedin_headers
-	)
-
-	token = re.compile('value="(\d+-.+?)"').findall(cont)[0]
-	body = {
-		"channel_id": cid,
-		"channel_token": token
-	}
-	link_headers["Cookie"] += resp["set-cookie"]
-	resp,cont = http.request(
-		"http://tv24.vn/client/channel/link", "POST",
-		headers = link_headers,
-		body = urllib.urlencode(body)
-	)
-	enc_url = json.loads(cont)["data"]["PLAY_URL"]
-	time.sleep(3)
-	return dec(token,enc_url)
-
 def getGDriveHighestQuality(url):
 	(resp, content) = http.request(
 		url, "GET",
@@ -742,28 +701,6 @@ def getGDriveHighestQuality(url):
 				url = stream.split("|")[1]
 				tail = "|User-Agent=%s&Cookie=%s" % (urllib.quote(sheet_headers["User-Agent"]),urllib.quote(resp['set-cookie']))
 				return url + tail
-
-def dec(key, b64_encrypted_str):
-	b64_encrypted_str = b64_encrypted_str.decode("base64")
-	j    = 0
-	x    = ""
-	out  = ""
-	s    = [i for i in range(0,256)]
-	for i in range(0,256):
-		j    = (j + s[i] + ord(key[i % len(key)])) % 256
-		x    = s[i]
-		s[i] = s[j]
-		s[j] = x
-	i=0;
-	j=0;
-	for k in range (0, len(b64_encrypted_str)):
-		i    = (i + 1) % 256
-		j    = (j + s[i]) % 256
-		x    = s[i]
-		s[i] = s[j]
-		s[j] = x
-		out += chr(ord(b64_encrypted_str[k])^s[(s[i] + s[j]) % 256])
-	return out
 
 # Tạo client id cho GA tracking
 # Tham khảo client id tại https://support.google.com/analytics/answer/6205850?hl=vi
