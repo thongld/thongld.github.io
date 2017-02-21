@@ -179,12 +179,12 @@ def getItems(url_path="0"):
 					cache_version = match[0][0]
 					item["path"] = pluginrootpath + "/cached-section/%s@%s@%s" % (gid,sheet_id,cache_version)
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
-				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
-				# item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
+				# item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
+				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["4share.vn/d/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=38&page=0&url=" + urllib.quote_plus(item["path"])
-			elif any(service in item["path"] for service in ["4share.vn/f/"]):
-			# elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
+			# elif any(service in item["path"] for service in ["4share.vn/f/"]):
+			elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
