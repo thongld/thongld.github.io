@@ -198,6 +198,8 @@ def getItems(url_path="0"):
 				# https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI
 				yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
 				item["path"] = "plugin://plugin.video.kodi4vn.launcher/ytp/%s/" % yt_pid
+			elif any(ext in item["path"] for ext in [".png", ".jpg", ".bmp", ".jpeg"]):
+				item["path"] = "plugin://plugin.video.kodi4vn.launcher/showimage/%s/" % urllib.quote_plus(item["path"])
 			else:		
 				# Nếu là direct link thì route đến hàm play_url
 				item["is_playable"] = True
