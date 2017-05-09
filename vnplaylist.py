@@ -565,6 +565,27 @@ def get_playable_url(url):
 		match = re.compile('(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+	elif "onecloud.media" in url:
+		ocid = url.split("/")[-1].strip()
+		oc_url = "http://onecloud.media/embed/" + ocid
+		h = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+			'Accept-Encoding': 'gzip, deflate, sdch',
+			'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+			'X-Requested-With': 'XMLHttpRequest',
+			'Cookie': 'TimeOut=999999999'}
+		(resp, content) = http.request(
+			oc_url,
+			"POST", headers = h,
+			body=urllib.urlencode({'type':'directLink', 'ip':''})
+		)
+
+		try: url = json.loads(content)["list"][0]["file"]
+		except: 
+			header  = "Có lỗi xảy ra!"
+			message = "Không lấy được link (link hỏng hoặc bị xóa)"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+			return ""
 	elif "google.com" in url:
 		url = getGDriveHighestQuality(url)
 	elif "fshare.vn/file" in url:
