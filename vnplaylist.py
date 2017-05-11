@@ -427,12 +427,18 @@ def InstallRepo(path = "0", tracking_string = ""):
 		failed = []
 		for item in items:
 			done = int(100 * i / total)
+			repo_id = item["label2"].split("/")[-1]
+			json_result = xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"Addons.GetAddons", "params":{"type":"xbmc.addon.repository"}, "id":1}')
+			repo_list = []
+			for addon in json.loads(json_result)["result"]["addons"]:
+				repo_list += [addon["addonid"]]
 			pDialog.update(done,'Đang tải', item["label2"] + '...')
-			try:
-				item["path"] = "http" + item["path"].split("http")[-1]
-				download(urllib.unquote_plus(item["path"]), item["label2"])
-			except:
-				failed += [item["label"].encode("utf-8")]
+			if (item["label2"] == "") or (repo_id not in repo_list):
+				try:
+					item["path"] = "http" + item["path"].split("http")[-1]
+					download(urllib.unquote_plus(item["path"]), item["label2"])
+				except:
+					failed += [item["label"].encode("utf-8")]
 			if pDialog.iscanceled():
 				break
 			i+=1
@@ -493,7 +499,7 @@ def RepoSection(path = "0", tracking_string = ""):
 	items = [install_all_item] + items
 	return plugin.finish(items)
 
-def download(path,repo_path):
+def download(download_path,repo_path):
 	'''
 	Parameters
 	----------
@@ -504,21 +510,11 @@ def download(path,repo_path):
 		Mặc định được gán cho item["label2"].
 		Truyền "" để bỏ qua Kiểm tra đã cài
 	'''
-	if repo_path == "":
-		repo_path = "temp"
-		repo_zip = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_path))
-		urllib.urlretrieve(path,repo_zip)
-		with contextlib.closing(zipfile.ZipFile(repo_zip, "r")) as z:
-			z.extractall(addons_folder)
-	else:
-		repo_name = repo_path.split("/")[-1]
-		extract_path = xbmc.translatePath("/".join(repo_path.split("/")[:-1]))
-		local_path = xbmc.translatePath("%s" % repo_path)
-		if not os.path.isdir(local_path):
-			repo_zip = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_name))
-			urllib.urlretrieve(path,repo_zip)
-			with contextlib.closing(zipfile.ZipFile(repo_zip, "r")) as z:
-				z.extractall(extract_path)
+	if repo_path == "": repo_path = "temp"
+	zipfile_path = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_path.split("/")[-1]))
+	urllib.urlretrieve(download_path,zipfile_path)
+	with contextlib.closing(zipfile.ZipFile(zipfile_path, "r")) as z:
+		z.extractall(addons_folder)
 
 def AddTracking(items):
 	'''
