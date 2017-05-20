@@ -168,16 +168,20 @@ def getItems(url_path="0"):
 		else:
 			if "spreadsheets/d/" in item["path"]:
 				# https://docs.google.com/spreadsheets/d/1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss/edit#gid=0
-				match = re.compile('&cache=(.+?)($|&)').findall(item["path"])
+				match_cache = re.search('cache=(.+?)($|&)',item["path"])
+				match_passw = re.search('passw=(.+?)($|&)',item["path"])
+
 				sheet_id = re.compile("/d/(.+?)/").findall(item["path"])[0]
 				try:
 					gid = re.compile("gid=(\d+)").findall(item["path"])[0]
 				except:
 					gid = "0"
 				item["path"] = pluginrootpath + "/section/%s@%s" % (gid,sheet_id)
-				if match:
-					cache_version = match[0][0]
+				if match_cache:
+					cache_version = match_cache.group(1)
 					item["path"] = pluginrootpath + "/cached-section/%s@%s@%s" % (gid,sheet_id,cache_version)
+				elif match_passw:
+					item["path"] = pluginrootpath + "/password-section/%s/%s@%s" % (match_passw.group(1),gid,sheet_id)
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
 				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
 				# item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
@@ -212,7 +216,7 @@ def getItems(url_path="0"):
 			"context_menu": [
 				ClearPlaylists(""),
 			],
-			"label":"[COLOR yellow]*** Thêm Playlist***[/COLOR]",
+			"label":"[COLOR yellow]*** Thêm Playlist ***[/COLOR]",
 			"path": "%s/add-playlist" % (pluginrootpath),
 			"thumbnail": "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
 		}]
@@ -225,11 +229,22 @@ def getItems(url_path="0"):
 						ClearPlaylists(section),
 					]
 				}
-				item["label"] = section
-				item["path"]  = "%s/section/%s" % (
-					pluginrootpath,
-					section.split("] ")[-1]
-				)
+				if "@@" in section:
+					tmp     = section.split("@@")
+					passw   = tmp[-1]
+					section = tmp[0]
+					item["label"] = section
+					item["path"]  = "%s/password-section/%s/%s" % (
+						pluginrootpath,
+						passw,
+						section.split("] ")[-1]
+					)
+				else:
+					item["label"] = section
+					item["path"]  = "%s/section/%s" % (
+						pluginrootpath,
+						section.split("] ")[-1]
+					)
 				item["thumbnail"] = "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
 				items.append(item)
 	return items
@@ -287,6 +302,31 @@ def CachedSection(path = "0", tracking_string = "Home"):
 	)
 	return plugin.finish(getCachedItems(path))
 
+@plugin.route('/password-section/<password>/<path>/<tracking_string>')
+def PasswordSection(password="0000", path = "0", tracking_string = "Home"):
+	'''
+	Liệt kê danh sách các item của một sheet
+	Parameters
+	----------
+	path : string
+		"gid" của sheet
+	tracking_string : string
+		 Tên dễ đọc của view
+	'''
+	GA( # tracking
+		"Password Section - %s" % tracking_string,
+		"/password-section/%s" % path
+	)
+	passw_string = plugin.keyboard(heading='Nhập password')
+	if passw_string == password:
+		items = AddTracking(getItems(path))
+		return plugin.finish(items)
+	else:
+		header  = "Sai mật khẩu!!!"
+		message = "Mật khẩu không khớp. Không tải được nội dung"
+		xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+		return plugin.finish()
+
 @plugin.route('/section/<path>/<tracking_string>')
 def Section(path = "0", tracking_string = "Home"):
 	'''
@@ -312,13 +352,17 @@ def AddPlaylist(tracking_string = "Add Playlist"):
 		try:
 			resp, content = http.request(sheet_url,"HEAD")
 			sid, gid = re.compile("/d/(.+?)/.+?gid=(\d+)").findall(resp["content-location"])[0]
-
+			match_passw = re.search('passw=(.+?)($|&)', resp["content-location"])
 			playlists = plugin.get_storage('playlists')
 			name = plugin.keyboard(heading='Đặt tên cho Playlist')
+
+			item = "[[COLOR yellow]%s[/COLOR]] %s@%s" % (name,gid,sid)
+			if match_passw:
+				item += "@@" + match_passw.group(1)
 			if 'sections' in playlists:
-				playlists["sections"] = ["[[COLOR yellow]%s[/COLOR]] %s@%s" % (name,gid,sid)] + playlists["sections"]
+				playlists["sections"] = [item] + playlists["sections"]
 			else:
-				playlists["sections"] = ["[[COLOR yellow]%s[/COLOR]] %s@%s" % (name,gid,sid)]
+				playlists["sections"] = [item]
 			xbmc.executebuiltin('Container.Refresh')
 		except: 
 			line1 = "Vui lòng nhập URL hợp lệ. Ví dụ dạng đầy đủ:"
