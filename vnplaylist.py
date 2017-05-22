@@ -317,15 +317,21 @@ def PasswordSection(password="0000", path = "0", tracking_string = "Home"):
 		"Password Section - %s" % tracking_string,
 		"/password-section/%s" % path
 	)
-	passw_string = plugin.keyboard(heading='Nhập password')
-	if passw_string == password:
+	passwords = plugin.get_storage('passwords')
+	if password in passwords and (time.time() - passwords[password] < 1800):
 		items = AddTracking(getItems(path))
 		return plugin.finish(items)
 	else:
-		header  = "Sai mật khẩu!!!"
-		message = "Mật khẩu không khớp. Không tải được nội dung"
-		xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
-		return plugin.finish()
+		passw_string = plugin.keyboard(heading='Nhập password')
+		if passw_string == password:
+			passwords[password] = time.time()
+			items = AddTracking(getItems(path))
+			return plugin.finish(items)
+		else:
+			header  = "Sai mật khẩu!!!"
+			message = "Mật khẩu không khớp. Không tải được nội dung"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+			return plugin.finish()
 
 @plugin.route('/section/<path>/<tracking_string>')
 def Section(path = "0", tracking_string = "Home"):
