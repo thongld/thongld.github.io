@@ -212,15 +212,17 @@ def getItems(url_path="0"):
 			item["path"] += "?sub=" + urllib.quote_plus(item["label2"].encode("utf8"))
 		items += [item]
 	if url_path == "0":
-		add_playlist_item  = [{
+		add_playlist_item  = {
 			"context_menu": [
 				ClearPlaylists(""),
 			],
 			"label":"[COLOR yellow]*** Thêm Playlist ***[/COLOR]",
 			"path": "%s/add-playlist" % (pluginrootpath),
 			"thumbnail": "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
-		}]
-		items += add_playlist_item
+		}
+		info = getSystemInfo()
+		add_playlist_item["info"] = {"plot": "Kernel: [COLOR yellow]%s[/COLOR]\nBuild: [COLOR orange]%s[/COLOR]" % (info["KernelVersion"],info["BuildVersion"])}
+		items += [add_playlist_item]
 		playlists = plugin.get_storage('playlists')
 		if 'sections' in playlists:
 			for section in playlists['sections']:
@@ -275,6 +277,15 @@ def ClearPlaylists(item=""):
 		"%s/remove-playlists/%s" % (pluginrootpath,urllib.quote_plus(item))
 	))
 
+def getSystemInfo():
+	info = {}
+	while True:
+		info["KernelVersion"] = xbmc.getInfoLabel('System.KernelVersion')
+		if "Busy" not in info["KernelVersion"]: break
+	while True:
+		info["BuildVersion"] = xbmc.getInfoLabel('System.BuildVersion')
+		if "Busy" not in info["BuildVersion"]: break
+	return info
 
 def getValue(colid):
 	'''
