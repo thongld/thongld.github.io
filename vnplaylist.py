@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #coding=utf-8
 import httplib2, json, re, urllib, os, uuid, contextlib, zipfile, random, base64, time
+from datetime import datetime
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
 from xbmcswift2 import Plugin, xbmc, xbmcaddon, xbmcgui, actions
@@ -182,6 +183,8 @@ def getItems(url_path="0"):
 					item["path"] = pluginrootpath + "/cached-section/%s@%s@%s" % (gid,sheet_id,cache_version)
 				elif match_passw:
 					item["path"] = pluginrootpath + "/password-section/%s/%s@%s" % (match_passw.group(1),gid,sheet_id)
+			elif any(service in item["path"] for service in ["www.acesoplisting.in"]):
+				item["path"] = pluginrootpath + "/acelist/" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
 				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"])
 				# item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
@@ -375,6 +378,35 @@ def AddPlaylist(tracking_string = "Add Playlist"):
 			line3 = "Hoặc rút gọn: http://bit.ly/xxxxxx hoặc http://goo.gl/xxxxx"
 			dlg = xbmcgui.Dialog()
 			dlg.ok("URL không hợp lệ!!!", line1, line2, line3)
+
+@plugin.route('/acelist/<path>/<tracking_string>')
+def AceList(path = "0", tracking_string = "AceList"):
+	(resp, content) = http.request(
+		path, "GET",
+		headers=sheet_headers
+	)
+	items = []
+	match = re.compile('href="acestream://(\w+)".+?title = "(.+?)".+?data-date = "(\d+)".+?data-time = "(\d+)"').findall(cleanHTML(content))
+	tmp_date = ""
+	tmp_aceid = ""
+	for aceid, title, _date, _time in match:
+		if _date != tmp_date:
+			item = {}
+			tmp_date = _date
+			item["label"] = "[B][COLOR orange]===== %s =====[/COLOR][/B] [GMT 0]" % datetime.strptime(_date, '%Y%m%d').strftime('%a %d %B, %Y')
+			item["path"] = pluginrootpath + "/executebuiltin/-"
+			item["is_playable"] = False
+			items += [item]
+		if aceid != tmp_aceid:
+			item = {}
+			tmp_aceid = aceid
+			title = title.replace("Language ", "")
+			title = " - ".join(title.split("<br />"))
+			item["label"] = "[%s %s:%s] %s" % (_date,_time[:-2],_time[-2:],title.strip())
+			item["path"] = "http://127.0.0.1:6878/ace/getstream?id=%s&.mp4" % aceid
+			item["is_playable"] = True
+			items += [item]
+	return plugin.finish(items)
 
 @plugin.route('/fshare/<path>/<tracking_string>')
 def FShare(path = "0", tracking_string = "FShare"):
@@ -610,6 +642,8 @@ def get_playable_url(url):
 		match = re.compile('(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+	elif url.startswith("acestream://"):
+		url = 'http://127.0.0.1:6878/ace/getstream?id=%s&.mp4' % re.search('acestream://(\w+)',url).group(1)
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
@@ -769,6 +803,14 @@ def getGDriveHighestQuality(url):
 				url = stream.split("|")[1]
 				tail = "|User-Agent=%s&Cookie=%s" % (urllib.quote(sheet_headers["User-Agent"]),urllib.quote(resp['set-cookie']))
 				return url + tail
+
+def cleanHTML(s):
+	s = ''.join(s.splitlines()).replace('\'','"')
+	s = s.replace('\n','')
+	s = s.replace('\t','')
+	s = re.sub('  +',' ',s)
+	s = s.replace('> <','><')
+	return s
 
 # Tạo client id cho GA tracking
 # Tham khảo client id tại https://support.google.com/analytics/answer/6205850?hl=vi
