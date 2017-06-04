@@ -386,7 +386,7 @@ def AceList(path = "0", tracking_string = "AceList"):
 		headers=sheet_headers
 	)
 	items = []
-	match = re.compile('href="acestream://(\w+)".+?title = "(.+?)".+?data-date = "(\d+)".+?data-time = "(\d+)"').findall(cleanHTML(content))
+	match = re.compile('href="(acestream://\w+)".+?title = "(.+?)".+?data-date = "(\d+)".+?data-time = "(\d+)"').findall(cleanHTML(content))
 	tmp_date = ""
 	tmp_aceid = ""
 	for aceid, title, _date, _time in match:
@@ -403,7 +403,12 @@ def AceList(path = "0", tracking_string = "AceList"):
 			title = title.replace("Language ", "")
 			title = " - ".join(title.split("<br />"))
 			item["label"] = "[%s %s:%s] %s" % (_date,_time[:-2],_time[-2:],title.strip())
-			item["path"] = "http://127.0.0.1:6878/ace/getstream?id=%s&.mp4" % aceid
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(aceid)
+			item["path"] = "%s/play/%s/%s" % (
+				pluginrootpath,
+				urllib.quote_plus(aceid),
+				urllib.quote_plus("[AceList] %s" % item["label"])
+			)
 			item["is_playable"] = True
 			items += [item]
 	return plugin.finish(items)
@@ -643,7 +648,14 @@ def get_playable_url(url):
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
 	elif url.startswith("acestream://"):
-		url = 'http://127.0.0.1:6878/ace/getstream?id=%s&.mp4' % re.search('acestream://(\w+)',url).group(1)
+		try:
+			(resp, content) = http.request(
+				"http://localhost:6878/webui/api/service",
+				"HEAD"
+			)
+			url = 'http://127.0.0.1:6878/ace/getstream?id=%s&.mp4' % re.search('acestream://(\w+)',url).group(1)
+		except:
+			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
