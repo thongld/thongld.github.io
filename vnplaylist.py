@@ -647,13 +647,26 @@ def get_playable_url(url):
 		match = re.compile('(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
-	elif url.startswith("acestream://"):
+	elif url.startswith("acestream://") or url.endswith(".acelive") or "arenavision.in" in url:
+		if "arenavision.in" in url:
+			h = {
+				'User-Agent'      : 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36',
+				'Cookie'          :'__cfduid=d36d59e9714c527d920417ed5bbc9315e1496259947; beget=begetok; ads_smrt_popunder=1%7CSat%2C%2003%20Jun%202017%2018%3A57%3A05%20GMT; 141054_245550_1rhpmin=yes; 141054_245550_1rhpmax=4|Sat%2C%2003%20Jun%202017%2018%3A57%3A14%20GMT; has_js=1; _ga=GA1.2.652127938.1496259947; _gid=GA1.2.653920302.1496429805; _gat=1',
+				'Accept-Encoding' : 'gzip, deflate'
+			}
+			(resp, content) = http.request(
+				url,
+				"GET", headers = h
+			)
+			url = re.search('(acestream://.+?)"', content).group(1)
 		try:
 			(resp, content) = http.request(
 				"http://localhost:6878/webui/api/service",
 				"HEAD"
 			)
-			url = 'http://127.0.0.1:6878/ace/getstream?id=%s&.mp4' % re.search('acestream://(\w+)',url).group(1)
+			url = url.replace("acestream://", "http://localhost:6878/ace/manifest.m3u8?id=")
+			if url.endswith(".acelive"):
+				url = "http://localhost:6878/ace/manifest.m3u8?url=" + urllib.quote_plus(url)
 		except:
 			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
 	elif "onecloud.media" in url:
