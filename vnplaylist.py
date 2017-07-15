@@ -668,7 +668,7 @@ def get_playable_url(url):
 			if url.endswith(".acelive"):
 				url = "http://localhost:6878/ace/getstream?url=" + urllib.quote_plus(url) + "&.mp4"
 		except:
-			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
+			url = 'plugin://program.plexus/?url=%s&name=P2PStream&iconimage=' % urllib.quote_plus(url)
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
