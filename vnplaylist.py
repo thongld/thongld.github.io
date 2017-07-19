@@ -96,7 +96,7 @@ def M3UToItems(url_path=""):
 def getCachedItems(url_path="0"):
 	return AddTracking(getItems(url_path))
 
-def getItems(url_path="0"):
+def getItems(url_path="0", tq="select A,B,C,D,E"):
 	'''
 	Tạo items theo chuẩn xbmcswift2 từ Google Spreadsheet
 	Parameters
@@ -125,7 +125,7 @@ def getItems(url_path="0"):
 		history["sources"] = ["https://docs.google.com/spreadsheets/d/%s/edit#gid=%s" % (sheet_id,gid)]
 	url = query_url.format(
 		sid = sheet_id,
-		tq  = urllib.quote("select A,B,C,D,E"),
+		tq  = urllib.quote(tq),
 		gid = gid
 	)
 	(resp, content) = http.request(
@@ -669,6 +669,23 @@ def get_playable_url(url):
 				url = "http://localhost:6878/ace/getstream?url=" + urllib.quote_plus(url) + "&.mp4"
 		except:
 			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
+	elif "m.tivi8k.net" in url:
+	#http://m.tivi8k.net/cinemax.php
+		h = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+			'Accept-Encoding': 'gzip, deflate, sdch'
+		}
+		(resp, content) = http.request(
+			url,
+			"GET", headers = h,
+		)
+
+		tmp_url = re.search('"GET", "(.+?)"', content).group(1)
+		(resp, content) = http.request(
+			tmp_url,
+			"GET", headers = h,
+		)
+		url = content.replace("q=medium", "q=high").strip()
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
