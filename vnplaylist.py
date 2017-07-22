@@ -22,13 +22,6 @@ sheet_headers  = {
 }
 
 def GetSheetIDFromSettings():
-	'''
-	Hàm lấy url chuyển tiếp
-	Parameters
-	----------
-	url_path : string
-		link chứa nội dung m3u playlist
-	'''
 	sid = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
 	resp, content = http.request(plugin.get_setting("GSheetURL"),"HEAD")
 	try:
@@ -157,6 +150,13 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 		if "plugin://" in item["path"]:
 			if "install-repo" in item["path"]:
 				item["is_playable"] = False
+			elif re.search("plugin.video.thongld.vnplaylist/(.+?)/.+?\://", item["path"]):
+				match = re.search("plugin.video.thongld.vnplaylist(/.+?/).+?\://", item["path"])
+				tmp = item["path"].split(match.group(1))
+				tmp[-1] = urllib.quote_plus(tmp[-1])
+				item["path"] = match.group(1).join(tmp)
+				if "/play/" in match.group(1):
+					item["is_playable"] = True
 			elif item["path"].startswith("plugin://plugin.video.f4mTester"):
 				item["is_playable"] = False
 				item["path"] = pluginrootpath + "/executebuiltin/" + urllib.quote_plus(item["path"])
@@ -670,7 +670,6 @@ def get_playable_url(url):
 		except:
 			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
 	elif "m.tivi8k.net" in url:
-	#http://m.tivi8k.net/cinemax.php
 		h1 = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
 			'Accept-Encoding': 'gzip, deflate',
