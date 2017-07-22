@@ -671,19 +671,25 @@ def get_playable_url(url):
 			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
 	elif "m.tivi8k.net" in url:
 	#http://m.tivi8k.net/cinemax.php
-		h = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
-			'Accept-Encoding': 'gzip, deflate, sdch'
+		h1 = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+			'Accept-Encoding': 'gzip, deflate',
+			'Referer': 'http://www.tivi8k.net/'
+		}
+		h2 = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+			'Accept-Encoding': 'gzip, deflate',
+			'Origin': 'http://m.tivi8k.net'
 		}
 		(resp, content) = http.request(
 			url,
-			"GET", headers = h,
+			"GET", headers = h1,
 		)
 
 		tmp_url = re.search('"GET", "(.+?)"', content).group(1)
 		(resp, content) = http.request(
 			tmp_url,
-			"GET", headers = h,
+			"GET", headers = h2,
 		)
 		url = content.replace("q=medium", "q=high").strip()
 	elif "onecloud.media" in url:
