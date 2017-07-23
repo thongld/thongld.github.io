@@ -163,7 +163,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			elif "/play/" in item["path"]:
 				item["is_playable"] = True
 		elif item["path"] == "":
-			item["label"] = "[I]%s[/I]" % item["label"]
+			item["label"] = "[COLOR grey][I]%s[/I][/COLOR]" % item["label"]
 			item["is_playable"] = False
 			item["path"] = pluginrootpath + "/executebuiltin/-"
 		else:
