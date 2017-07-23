@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding=utf-8
-import httplib2, json, re, urllib, os, uuid, contextlib, zipfile, random, base64, time
+import httplib2, json, re, urllib, os, uuid, contextlib, zipfile, random, base64, time, thread
 from datetime import datetime
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
@@ -163,7 +163,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			elif "/play/" in item["path"]:
 				item["is_playable"] = True
 		elif item["path"] == "":
-			item["label"] = "[COLOR grey][I]%s[/I][/COLOR]" % item["label"]
+			item["label"] = "[I]%s[/I]" % item["label"]
 			item["is_playable"] = False
 			item["path"] = pluginrootpath + "/executebuiltin/-"
 		else:
@@ -647,6 +647,36 @@ def get_playable_url(url):
 		match = re.compile('(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+	elif "sphim.tv" in url:
+		http.follow_redirects = False
+		get_sphim = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=1082544232"
+		try:
+			(resp, content) = http.request(
+				get_sphim, "GET"
+			)
+		except:
+			header  = "Server quá tải!"
+			message = "Xin vui lòng thử lại sau"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+			return ""
+
+		tmps = content.split('\n')
+		random.shuffle(tmps)
+		for tmp in tmps:
+			try:
+				sphim_headers = {
+					'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+					"Accept-Encoding": "gzip, deflate",
+					'Cookie': tmp.decode("base64")
+				}
+
+				(resp, content) = http.request(
+					url, "GET", headers = sphim_headers
+				)
+				match = re.search('"(http.+?\.smil/playlist.m3u8.+?)"', content)
+				if match:
+					return match.group(1)
+			except: pass
 	elif url.startswith("acestream://") or url.endswith(".acelive") or "arenavision.in" in url:
 		if "arenavision.in" in url:
 			h = {
