@@ -65,7 +65,7 @@ def M3UToItems(url_path=""):
 			if item["path"].startswith("plugin://"):
 				item["is_playable"] = True
 			# Kiểu link .ts
-			elif re.search("\.ts$", item["path"]): 
+			elif re.search("\.ts$", item["path"]):
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
 					urllib.quote(item["path"]),
 					urllib.quote_plus(item["label"])
@@ -207,6 +207,12 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["path"] = "plugin://plugin.video.kodi4vn.launcher/ytp/%s/" % yt_pid
 			elif any(ext in item["path"] for ext in [".png", ".jpg", ".bmp", ".jpeg"]):
 				item["path"] = "plugin://plugin.video.kodi4vn.launcher/showimage/%s/" % urllib.quote_plus(item["path"])
+			elif re.search("\.ts$", item["path"]):
+				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
+					urllib.quote(item["path"]),
+					urllib.quote_plus(item["label"])
+				)
+				item["path"] = pluginrootpath + "/executebuiltin/" + urllib.quote_plus(item["path"])
 			else:		
 				# Nếu là direct link thì route đến hàm play_url
 				item["is_playable"] = True
