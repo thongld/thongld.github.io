@@ -65,7 +65,7 @@ def M3UToItems(url_path=""):
 			if item["path"].startswith("plugin://"):
 				item["is_playable"] = True
 			# Kiểu link .ts
-			elif ".ts" in item["path"]: 
+			elif re.search("\.ts$", item["path"]): 
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
 					urllib.quote(item["path"]),
 					urllib.quote_plus(item["label"])
@@ -699,16 +699,17 @@ def get_playable_url(url):
 				url = "http://localhost:6878/ace/getstream?url=" + urllib.quote_plus(url) + "&.mp4"
 		except:
 			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
-	elif "m.tivi8k.net" in url:
+	elif any(domain in url for domain in ["m.tivi8k.net","m.xemtvhd.com"]):
+		domain = re.search("https*\://(.+?)/", url).group(1)
 		h1 = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
 			'Accept-Encoding': 'gzip, deflate',
-			'Referer': 'http://www.tivi8k.net/'
+			'Referer': 'http://%s/' % domain.replace("m.tivi8k","www.tivi8k")
 		}
 		h2 = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
 			'Accept-Encoding': 'gzip, deflate',
-			'Origin': 'http://m.tivi8k.net'
+			'Origin': 'http://%s' % domain
 		}
 		(resp, content) = http.request(
 			url,
