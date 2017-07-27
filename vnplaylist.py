@@ -733,8 +733,11 @@ def get_playable_url(url):
 			url,
 			"GET", headers = h1,
 		)
-		url = re.search("source\: '(.+?)'", content).group(1)
-		url = re.sub("q=.+?&", "q=high&", url.strip())
+		try:
+			url = re.search("source\: '(.+?)'", content).group(1)
+		except:
+			url = re.search('source\: "(.+?)"', content).group(1)
+		url = url.replace("q=medium", "q=high")
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
