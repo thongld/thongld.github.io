@@ -723,29 +723,18 @@ def get_playable_url(url):
 				url = "http://localhost:6878/ace/getstream?url=" + urllib.quote_plus(url) + "&.mp4"
 		except:
 			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
-	elif any(domain in url for domain in ["m.tivi8k.net","m.xemtvhd.com"]):
-		domain = re.search("https*\://(.+?)/", url).group(1)
+	elif any(domain in url for domain in ["m.tivi8k.net"]):
 		h1 = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
 			'Accept-Encoding': 'gzip, deflate',
-			'Referer': 'http://%s/' % domain.replace("m.tivi8k","www.tivi8k")
-		}
-		h2 = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
-			'Accept-Encoding': 'gzip, deflate',
-			'Origin': 'http://%s' % domain
+			'Referer': 'http://www.tivi8k.net/'
 		}
 		(resp, content) = http.request(
 			url,
 			"GET", headers = h1,
 		)
-
-		tmp_url = re.search('"GET", "(.+?)"', content).group(1)
-		(resp, content) = http.request(
-			tmp_url,
-			"GET", headers = h2,
-		)
-		url = content.replace("q=medium", "q=high").strip()
+		url = re.search("source\: '(.+?)'", content).group(1)
+		url = re.sub("q=.+?&", "q=high&", url.strip())
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
