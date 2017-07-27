@@ -517,20 +517,32 @@ def InstallRepo(path = "0", tracking_string = ""):
 		total = len(items)
 		i = 0
 		failed = []
+		installed = []
 		for item in items:
 			done = int(100 * i / total)
-			repo_id = item["label2"].split("/")[-1]
-			json_result = xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"Addons.GetAddons", "params":{"type":"xbmc.addon.repository"}, "id":1}')
-			repo_list = []
-			for addon in json.loads(json_result)["result"]["addons"]:
-				repo_list += [addon["addonid"]]
-			pDialog.update(done,'Đang tải', item["label2"] + '...')
-			if (item["label2"] == "") or (repo_id not in repo_list):
-				try:
-					item["path"] = "http" + item["path"].split("http")[-1]
-					download(urllib.unquote_plus(item["path"]), item["label2"])
-				except:
-					failed += [item["label"].encode("utf-8")]
+			pDialog.update(done,'Đang tải', item["label"] + '...')
+			if ":/" not in item["label2"]:
+				result = xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"Addons.GetAddonDetails", "params":{"addonid":"%s", "properties":["version"]}, "id":1}' % item["label"])
+				json_result = json.loads(result)
+				if "version" in result and version_cmp(json_result["result"]["addon"]["version"], item["label2"]) >= 0:
+					pass
+				else:
+					try:
+						item["path"] = "http" + item["path"].split("http")[-1]
+						download(urllib.unquote_plus(item["path"]), item["label"])
+						installed += [item["label"].encode("utf-8")]
+					except:
+						failed += [item["label"].encode("utf-8")]
+			else:
+				if not os.path.exists(xbmc.translatePath(item["label2"])):
+					try:
+						item["path"] = "http" + item["path"].split("http")[-1]
+						download(urllib.unquote_plus(item["path"]), item["label2"])
+						installed += [item["label"].encode("utf-8")]
+					except:
+						failed += [item["label"].encode("utf-8")]
+
+
 			if pDialog.iscanceled():
 				break
 			i+=1
@@ -541,7 +553,7 @@ def InstallRepo(path = "0", tracking_string = ""):
 			dlg.ok('Chú ý: Không cài đủ repo!', s)
 		else:
 			dlg = xbmcgui.Dialog()
-			s = "Tất cả repo đã được cài thành công"
+			s = "Tất cả repo đã được cài thành công\n%s" % "\n".join(installed)
 			dlg.ok('Cài Repo thành công!', s)
 
 	else: # cài repo riêng lẻ
@@ -591,22 +603,28 @@ def RepoSection(path = "0", tracking_string = ""):
 	items = [install_all_item] + items
 	return plugin.finish(items)
 
-def download(download_path,repo_path):
+def download(download_path,repo_id):
 	'''
 	Parameters
 	----------
 	path : string
 		Link download zip repo.
-	repo_path : string
+	repo_id : string
 		Tên thư mục của repo để kiểm tra đã cài chưa.
 		Mặc định được gán cho item["label2"].
 		Truyền "" để bỏ qua Kiểm tra đã cài
 	'''
-	if repo_path == "": repo_path = "temp"
-	zipfile_path = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_path.split("/")[-1]))
-	urllib.urlretrieve(download_path,zipfile_path)
-	with contextlib.closing(zipfile.ZipFile(zipfile_path, "r")) as z:
-		z.extractall(addons_folder)
+	if repo_id == "": repo_id = "temp"
+	if ":/" not in repo_id:
+		zipfile_path = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_id))
+		urllib.urlretrieve(download_path,zipfile_path)
+		with contextlib.closing(zipfile.ZipFile(zipfile_path, "r")) as z:
+			z.extractall(addons_folder)
+	else:
+		zipfile_path = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_id.split("/")[-1]))
+		urllib.urlretrieve(download_path,zipfile_path)
+		with contextlib.closing(zipfile.ZipFile(zipfile_path, "r")) as z:
+			z.extractall(xbmc.translatePath("/".join(repo_id.split("/")[:-1])))
 
 def AddTracking(items):
 	'''
@@ -897,6 +915,11 @@ def cleanHTML(s):
 	s = s.replace('> <','><')
 	return s
 
+def version_cmp(local_version, download_version):
+	def normalize(v):
+		return [int(x) for x in re.sub(r'(\.0+)*$','', v).split(".")]
+	return cmp(normalize(local_version), normalize(download_version))
+
 # Tạo client id cho GA tracking
 # Tham khảo client id tại https://support.google.com/analytics/answer/6205850?hl=vi
 device_path = xbmc.translatePath('special://userdata')
@@ -906,6 +929,5 @@ cid_path = os.path.join(device_path, 'cid')
 if os.path.exists(cid_path)==False:
 	with open(cid_path,"w") as f:
 		f.write(str(uuid.uuid1()))
-
 if __name__ == '__main__':
 	plugin.run()
