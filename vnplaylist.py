@@ -723,11 +723,12 @@ def get_playable_url(url):
 				url = "http://localhost:6878/ace/getstream?url=" + urllib.quote_plus(url) + "&.mp4"
 		except:
 			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
-	elif any(domain in url for domain in ["m.tivi8k.net"]):
+	elif any(domain in url for domain in ["m.tivi8k.net", "m.xemtvhd.com"]):
+
 		h1 = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
 			'Accept-Encoding': 'gzip, deflate',
-			'Referer': 'http://www.tivi8k.net/'
+			'Referer': '%s' % url.replace("/m.","/www.")
 		}
 		(resp, content) = http.request(
 			url,
