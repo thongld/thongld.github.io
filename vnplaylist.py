@@ -733,10 +733,8 @@ def get_playable_url(url):
 			url,
 			"GET", headers = h1,
 		)
-		try:
-			url = re.search("source\: '(.+?)'", content).group(1)
-		except:
-			url = re.search('source\: "(.+?)"', content).group(1)
+		content = content.replace("'", '"')
+		url = re.search('source\: "(.+?)"', content).group(1)
 		url = url.replace("q=medium", "q=high")
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
