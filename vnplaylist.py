@@ -723,27 +723,43 @@ def get_playable_url(url):
 				url = "http://localhost:6878/ace/getstream?url=" + urllib.quote_plus(url) + "&.mp4"
 		except:
 			url = 'plugin://program.plexus/?url=%s&mode=1&name=P2PStream&iconimage=' % urllib.quote_plus(url)
-	elif any(domain in url for domain in ["m.tivi8k.net", "m.xemtvhd.com"]):
+	elif any(domain in url for domain in ["m.tivi8k.net", "m.xemtvhd.com", "xemtiviso.com"]):
 		play_url = ""
-		for i in range(1,8):
-			try:
-				if i > 1:
-					range_url = url.replace(".php", "-%s.php" % i)
-				h1 = {
-					'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
-					'Accept-Encoding': 'gzip, deflate',
-					'Referer': '%s' % url.replace("/m.","/www.")
-				}
-				(resp, content) = http.request(
-					range_url,
-					"GET", headers = h1,
-				)
-				content = content.replace("'", '"')
-				play_url = re.search('source\: "(.+?)"', content).group(1)
-				play_url = play_url.replace("q=medium", "q=high")
-				if "v4live" in play_url:
-					return play_url
-			except: pass
+		if "xemtiviso.com" not in url:
+			for i in range(1,8):
+				try:
+					if i > 1:
+						range_url = url.replace(".php", "-%s.php" % i)
+					h1 = {
+						'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+						'Accept-Encoding': 'gzip, deflate',
+						'Referer': '%s' % url.replace("/m.","/www.")
+					}
+					(resp, content) = http.request(
+						range_url,
+						"GET", headers = h1,
+					)
+					content = content.replace("'", '"')
+					play_url = re.search('source\: "(.+?)"', content).group(1)
+					play_url = play_url.replace("q=medium", "q=high")
+					if "v4live" in play_url:
+						return play_url
+				except: pass
+		else:
+			h1 = {
+				'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+				'Accept-Encoding': 'gzip, deflate',
+				'Referer': '%s' % url.replace("/m.","/www.")
+			}
+			(resp, content) = http.request(
+				url,
+				"GET", headers = h1,
+			)
+			content = content.replace("'", '"')
+			play_url = re.search('source\: "(.+?)"', content).group(1)
+			play_url = play_url.replace("q=medium", "q=high")
+			# try:
+			# except: pass
 		return play_url
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
