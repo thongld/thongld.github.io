@@ -740,7 +740,18 @@ def get_playable_url(url):
 						"GET", headers = h1,
 					)
 					content = content.replace("'", '"')
-					play_url = re.search('source\: "(.+?)"', content).group(1)
+					
+					try:
+						play_url = re.search("https*://api.tivi8k.net/.+?'", content).group(1)
+						(resp, content) = http.request(
+							range_url,
+							"GET", headers = h1,
+						)
+						if "#EXTM3U" in content:
+							return play_url
+						else:
+							return content.strip()
+					except: pass
 					play_url = play_url.replace("q=medium", "q=high")
 					if "v4live" in play_url:
 						return play_url
@@ -800,6 +811,14 @@ def get_playable_url(url):
 			message = "Không lấy được link (link hỏng hoặc bị xóa)"
 			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
 			return ""
+	elif "pscp.tv" in url:
+		pscpid = re.search("w/(.+?)($|\?)", url).group(1)
+		api_url = "https://proxsee.pscp.tv/api/v2/accessVideoPublic?broadcast_id=%s&replay_redirect=false" % pscpid
+		(resp, content) = http.request(
+			api_url,
+			"GET"
+		)
+		return json.loads(content)["hls_url"]
 	elif "google.com" in url:
 		url = getGDriveHighestQuality(url)
 	elif "fshare.vn/file" in url:
