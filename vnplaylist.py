@@ -790,6 +790,26 @@ def get_playable_url(url):
 				play_url = play_url.replace("q=medium", "q=high")
 			except: pass
 		return play_url
+	elif "livestream.com" in url:
+		headers  = {
+			'User-Agent'      : 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding' : 'gzip, deflate',
+		}
+		try:
+			if "events" not in url:
+				(resp, content) = http.request(
+					url,
+					"GET", headers = headers,
+				)
+				match = re.search("accounts/\d+/events/\d+", contentt)
+				url = "https://livestream.com/api/%s" % match.group()
+			(resp, content) = http.request(
+				url,
+				"GET", headers = headers,
+			)
+			j = json.loads(content)
+			url = j["stream_info"]["m3u8_url"]
+		except: pass
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
