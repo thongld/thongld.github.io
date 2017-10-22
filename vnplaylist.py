@@ -671,6 +671,36 @@ def get_playable_url(url):
 		match = re.compile('(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid   = match[0][len(match[0])-1].replace('v/','')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+	elif "thvli.vn/backend/cm/detail/" in url:
+		get_thvl = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=1287121588"
+		try:
+			(resp, content) = http.request(
+				get_thvl, "GET"
+			)
+		except:
+			header  = "Server quá tải!"
+			message = "Xin vui lòng thử lại sau"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+			return ""
+
+		tmps = content.split('\n')
+		random.shuffle(tmps)
+		for tmp in tmps:
+			try:
+				thvl_headers = {
+					'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
+					"Accept-Encoding": "gzip, deflate, br",
+					'Accept': 'application/json',
+					'Authorization': tmp.decode('base64')
+				}
+
+				(resp, content) = http.request(
+					url, "GET", headers = thvl_headers
+				)
+				resp_json = json.loads(content)
+				if "link_play" in resp_json:
+					return resp_json["link_play"]
+			except: pass
 	elif "sphim.tv" in url:
 		http.follow_redirects = False
 		get_sphim = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=1082544232"
