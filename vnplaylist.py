@@ -874,7 +874,7 @@ def get_playable_url(url):
 	elif "fshare.vn/file" in url:
 		url = url.replace("http://", "https://")
 		http.follow_redirects = False
-		get_fshare = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=0"
+		get_fshare = "https://docs.google.com/spreadsheets/d/1Qys0wprZzCB__8y7k_1dal82gl-6p2oT1Mi4Hx8X3hY/export?format=tsv&gid=1368829764"
 		try:
 			(resp, content) = http.request(
 				get_fshare, "GET"
