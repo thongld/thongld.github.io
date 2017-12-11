@@ -186,12 +186,12 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			elif any(service in item["path"] for service in ["www.acesoplisting.in"]):
 				item["path"] = pluginrootpath + "/acelist/" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
-				# item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"].encode("utf8"))
-				item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
+				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"].encode("utf8"))
+				# item["path"] = "plugin://plugin.video.xshare/?mode=90&page=0&url=" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["4share.vn/d/"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=38&page=0&url=" + urllib.quote_plus(item["path"])
-			# elif any(service in item["path"] for service in ["4share.vn/f/"]):
-			elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
+			elif any(service in item["path"] for service in ["4share.vn/f/"]):
+			# elif any(service in item["path"] for service in ["4share.vn/f/", "fshare.vn/file"]):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
@@ -872,9 +872,15 @@ def get_playable_url(url):
 	elif "google.com" in url:
 		url = getGDriveHighestQuality(url)
 	elif "fshare.vn/file" in url:
+		xshare_settings_path = xbmc.translatePath("special://profile/addon_data/plugin.video.xshare/settings.xml")
+		if os.path.exists(xshare_settings_path):
+			with open(xshare_settings_path,"r") as f:
+				s = f.read()
+				if 'id="getLinkFree" value="false"' in s:
+					return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
 		url = url.replace("http://", "https://")
 		http.follow_redirects = False
-		get_fshare = "https://docs.google.com/spreadsheets/d/1Qys0wprZzCB__8y7k_1dal82gl-6p2oT1Mi4Hx8X3hY/export?format=tsv&gid=1368829764"
+		get_fshare = "https://docs.google.com/spreadsheets/d/1fPsMWKEbrWg5_rUQMFrgNwUd4r_viAn111Qqc9etn5g/export?format=tsv&gid=1368829764"
 		try:
 			(resp, content) = http.request(
 				get_fshare, "GET"
