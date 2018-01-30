@@ -903,23 +903,30 @@ def get_playable_url(url):
 	elif "google.com" in url:
 		url = getGDriveHighestQuality(url)
 	elif "fshare.vn/file" in url:
-		xshare_settings_path = xbmc.translatePath("special://profile/addon_data/plugin.video.xshare/settings.xml")
-		if os.path.exists(xshare_settings_path):
+		# xshare_settings_path = xbmc.translatePath("special://profile/addon_data/plugin.video.xshare/settings.xml")
+		# if os.path.exists(xshare_settings_path):
+		# 	with open(xshare_settings_path,"r") as f:
+		# 		s = f.read()
+		# 		if 'id="getLinkFree" value="false"' in s:
+		# 			return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
+		# 		else:
+		# 			line1 = "Nội dung này cần nhập [COLOR yellow]FShare VIP[/COLOR] [COLOR orange]Cá Nhân[/COLOR] trong [COLOR yellow]XShare[/COLOR]"
+		# 			line2 = "Xin vui lòng xem video hướng dẫn chi tiết tại"
+		# 			line3 = "[B][COLOR orange]http://bit.ly/fshare-xshare[/COLOR][/B]"
+		# 			dlg = xbmcgui.Dialog()
+		# 			dlg.ok("Chưa nhập FShare cá nhân!!!", line1, line2, line3)
+		# else:
+		# 	header  = "Không tìm thấy Add-on Settings của XShare"
+		# 	message = "Bạn cần cài addon \"XShare XBMC HDVideo\" và thiết lập FShare VIP trong XShare để xem nội dung này"
+		# 	xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+		# return ""
+		try:
 			with open(xshare_settings_path,"r") as f:
 				s = f.read()
 				if 'id="getLinkFree" value="false"' in s:
 					return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
-				else:
-					line1 = "Nội dung này cần nhập [COLOR yellow]FShare VIP[/COLOR] [COLOR orange]Cá Nhân[/COLOR] trong [COLOR yellow]XShare[/COLOR]"
-					line2 = "Xin vui lòng xem video hướng dẫn chi tiết tại"
-					line3 = "[B][COLOR orange]http://bit.ly/fshare-xshare[/COLOR][/B]"
-					dlg = xbmcgui.Dialog()
-					dlg.ok("Chưa nhập FShare cá nhân!!!", line1, line2, line3)
-		else:
-			header  = "Không tìm thấy Add-on Settings của XShare"
-			message = "Bạn cần cài addon \"XShare XBMC HDVideo\" và thiết lập FShare VIP trong XShare để xem nội dung này"
-			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
-		return ""
+		except: pass
+
 		url = url.replace("http://", "https://")
 		http.follow_redirects = False
 		get_fshare = "https://docs.google.com/spreadsheets/d/1fPsMWKEbrWg5_rUQMFrgNwUd4r_viAn111Qqc9etn5g/export?format=tsv&gid=1368829764"
@@ -937,17 +944,23 @@ def get_playable_url(url):
 		random.shuffle(tmps)
 		for tmp in tmps:
 			try:
+				cred = json.loads(tmp.decode("base64"))
 				fshare_headers = {
-					'User-Agent':'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)',
-					"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
 					"Accept-Encoding": "gzip, deflate, br",
-					'Cookie':'session_id=%s' % tmp
+					'Cookie':'session_id=%s' % cred["session_id"]
+				}
+				data = {
+					"url": url,
+					"token": cred["token"],
+					"password": ""
 				}
 
 				(resp, content) = http.request(
-					url, "GET", headers = fshare_headers
+					"https://api2.fshare.vn/api/session/download", "POST", 
+					body = json.dumps(data),
+					headers = fshare_headers
 				)
-				if "Tập tin quý khách yêu cầu không tồn tại" in content:
+				if resp.status == 404:
 					history = plugin.get_storage('history')
 					header  = "Không lấy được link FShare VIP!"
 					message = "Link không tồn tại hoặc file đã bị xóa"
@@ -967,29 +980,31 @@ def get_playable_url(url):
 						body=body
 					)
 					return ""
-				elif "location" in resp:
-					return resp["location"]
 				else:
-					tok = re.compile('data-tk="(.+?)"').findall(content)[0]
-					data_download = {
-						"fs_csrf"                : tok,
-						"DownloadForm[pwd]"      : "",
-						"DownloadForm[linkcode]" : url.split("/")[-1],
-						"ajax"                   : "download-form",
-						"undefined"              : "undefined"
-					}
-					(resp, content) = http.request(
-						"https://www.fshare.vn/download/get", "POST",
-						headers = fshare_headers,
-						body=urllib.urlencode(data_download)
-					)
-					res_json = json.loads(content)
-					if res_json["wait_time"] == "0":
-						return res_json["url"]
-					else:
-						header  = "Không lấy được link FShare VIP!"
-						message = '"Wait time" lớn hơn 0!!!'
-						xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+					return json.loads(content)["location"]
+				# elif "location" in content:
+				# 	return json.loads(content)["location"]
+				# else:
+				# 	tok = re.compile('data-tk="(.+?)"').findall(content)[0]
+				# 	data_download = {
+				# 		"fs_csrf"                : tok,
+				# 		"DownloadForm[pwd]"      : "",
+				# 		"DownloadForm[linkcode]" : url.split("/")[-1],
+				# 		"ajax"                   : "download-form",
+				# 		"undefined"              : "undefined"
+				# 	}
+				# 	(resp, content) = http.request(
+				# 		"https://www.fshare.vn/download/get", "POST",
+				# 		headers = fshare_headers,
+				# 		body=urllib.urlencode(data_download)
+				# 	)
+				# 	res_json = json.loads(content)
+				# 	if res_json["wait_time"] == "0":
+				# 		return res_json["url"]
+				# 	else:
+				# 		header  = "Không lấy được link FShare VIP!"
+				# 		message = '"Wait time" lớn hơn 0!!!'
+				# 		xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
 			except: pass
 	elif "tv24.vn" in url:
 		cid = re.compile('/(\d+)/').findall(url)[0]
