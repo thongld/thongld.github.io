@@ -421,30 +421,56 @@ def AceList(path = "0", tracking_string = "AceList"):
 
 @plugin.route('/fshare/<path>/<tracking_string>')
 def FShare(path = "0", tracking_string = "FShare"):
+	def toSize(s):
+		gb=2**30;mb=2**20
+		try    : s = int(s)
+		except : s = 0
+		if   s > gb : s = '{:.2f} GB'.format(s/gb)
+		elif s > mb : s = '{:.0f} MB'.format(s/mb)
+		else        : s = '{:.2f} MB'.format(s/mb)
+		return s
+	folder_id = re.search('folder/(.+?)(\?|$)', path).group(1)
+	page = 1
+	try:
+		page = int(re.search('page=(\d+)', path).group(1))
+	except: pass
+	fshare_folder_api = "https://www.fshare.vn/api/v3/files/folder?linkcode=%s&sort=type,-modified&page=%s" % (folder_id,page)
 	(resp, content) = http.request(
-		path, "GET",
-		headers=sheet_headers
+		fshare_folder_api, "GET",
+		headers={"Accept": "application/json, text/plain, */*", "Accept-Encoding": "gzip, deflate, sdch, br"}
 	)
 	items = []
-	filelist = re.compile('(?s)<ul class="filelist table table-striped" id="filelist">.+?</ul>').findall(content)[0]
-	for folder, fid, title, size in re.compile('(?s)<a[^>]*class="(filename.*?)" data-id="(.+?)"[^>]*title="(.+?)">.+?<div class="pull-left file_size align-right"[^>]*>(.+?)</div>').findall(filelist):
+	fshare_items = json.loads(content)["items"]
+	for i in fshare_items:
 		item={}
-		if "folder" in folder:
+		name = i["name"].encode("utf8")
+		if not i["type"]: #is folder
 			item["path"] = "%s/fshare/%s/%s" % (
 				pluginrootpath,
-				urllib.quote_plus("https://www.fshare.vn/folder/" + fid),
-				urllib.quote_plus("[FShare] %s (%s)" % (title, size))
+				urllib.quote_plus("https://www.fshare.vn/folder/" + i["linkcode"]),
+				urllib.quote_plus("[FShare] %s (%s)" % (name, toSize(i["size"])))
 			)
-			item["label"] = "[FShare] %s (%s)" % (title, size)
+			item["label"] = "[FShare] %s (%s)" % (name, toSize(i["size"]))
 		else:
 			item["path"] = "%s/play/%s/%s" % (
 				pluginrootpath,
-				urllib.quote_plus("https://www.fshare.vn/file/" + fid),
-				urllib.quote_plus("[FShare] %s (%s)" % (title, size))
+				urllib.quote_plus("https://www.fshare.vn/file/" + i["linkcode"]),
+				urllib.quote_plus("[FShare] %s (%s)" % (name, toSize(i["size"])))
 			)
-			item["label"] = "[FShare] %s (%s)" % (title, size)
+			item["label"] = "[FShare] %s (%s)" % (name, toSize(i["size"]))
 			item["is_playable"] = True
 		items += [item]
+	if len(fshare_items) >= 20:
+		path = "https://www.fshare.vn/folder/%s?page=%s" % (folder_id, page + 1)
+		items.append({
+			'label'     : 'Next >>',
+			'path'      : '%s/fshare/%s/%s' % (
+				pluginrootpath,
+				urllib.quote_plus(path),
+				urllib.quote_plus(tracking_string)
+			),
+			'thumbnail' : "https://docs.google.com/drawings/d/12OjbFr3Z5TCi1WREwTWECxNNwx0Kx-FTrCLOigrpqG4/pub?w=256&h=256"
+		})
 	return plugin.finish(items)
 
 @plugin.route('/m3u-section/<path>/<tracking_string>')
