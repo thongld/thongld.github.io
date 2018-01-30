@@ -444,20 +444,25 @@ def FShare(path = "0", tracking_string = "FShare"):
 	for i in fshare_items:
 		item={}
 		name = i["name"].encode("utf8")
+		size = 0
+		try:
+			size = toSize(i["size"])
+		except: pass
+
 		if not i["type"]: #is folder
 			item["path"] = "%s/fshare/%s/%s" % (
 				pluginrootpath,
 				urllib.quote_plus("https://www.fshare.vn/folder/" + i["linkcode"]),
-				urllib.quote_plus("[FShare] %s (%s)" % (name, toSize(i["size"])))
+				urllib.quote_plus("[FShare] %s" % name)
 			)
-			item["label"] = "[FShare] %s (%s)" % (name, toSize(i["size"]))
+			item["label"] = "[FShare] %s" % name
 		else:
 			item["path"] = "%s/play/%s/%s" % (
 				pluginrootpath,
 				urllib.quote_plus("https://www.fshare.vn/file/" + i["linkcode"]),
-				urllib.quote_plus("[FShare] %s (%s)" % (name, toSize(i["size"])))
+				urllib.quote_plus("[FShare] %s (%s)" % (name, size))
 			)
-			item["label"] = "[FShare] %s (%s)" % (name, toSize(i["size"]))
+			item["label"] = "[FShare] %s (%s)" % (name, size)
 			item["is_playable"] = True
 		items += [item]
 	if len(fshare_items) >= 20:
