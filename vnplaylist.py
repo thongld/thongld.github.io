@@ -903,29 +903,29 @@ def get_playable_url(url):
 	elif "google.com" in url:
 		url = getGDriveHighestQuality(url)
 	elif "fshare.vn/file" in url:
-		# xshare_settings_path = xbmc.translatePath("special://profile/addon_data/plugin.video.xshare/settings.xml")
-		# if os.path.exists(xshare_settings_path):
-		# 	with open(xshare_settings_path,"r") as f:
-		# 		s = f.read()
-		# 		if 'id="getLinkFree" value="false"' in s:
-		# 			return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
-		# 		else:
-		# 			line1 = "Nội dung này cần nhập [COLOR yellow]FShare VIP[/COLOR] [COLOR orange]Cá Nhân[/COLOR] trong [COLOR yellow]XShare[/COLOR]"
-		# 			line2 = "Xin vui lòng xem video hướng dẫn chi tiết tại"
-		# 			line3 = "[B][COLOR orange]http://bit.ly/fshare-xshare[/COLOR][/B]"
-		# 			dlg = xbmcgui.Dialog()
-		# 			dlg.ok("Chưa nhập FShare cá nhân!!!", line1, line2, line3)
-		# else:
-		# 	header  = "Không tìm thấy Add-on Settings của XShare"
-		# 	message = "Bạn cần cài addon \"XShare XBMC HDVideo\" và thiết lập FShare VIP trong XShare để xem nội dung này"
-		# 	xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
-		# return ""
-		try:
+		xshare_settings_path = xbmc.translatePath("special://profile/addon_data/plugin.video.xshare/settings.xml")
+		if os.path.exists(xshare_settings_path):
 			with open(xshare_settings_path,"r") as f:
 				s = f.read()
 				if 'id="getLinkFree" value="false"' in s:
 					return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
-		except: pass
+				else:
+					line1 = "Nội dung này cần nhập [COLOR yellow]FShare VIP[/COLOR] [COLOR orange]Cá Nhân[/COLOR] trong [COLOR yellow]XShare[/COLOR]"
+					line2 = "Xin vui lòng xem video hướng dẫn chi tiết tại"
+					line3 = "[B][COLOR orange]http://bit.ly/fshare-xshare[/COLOR][/B]"
+					dlg = xbmcgui.Dialog()
+					dlg.ok("Chưa nhập FShare cá nhân!!!", line1, line2, line3)
+		else:
+			header  = "Không tìm thấy Add-on Settings của XShare"
+			message = "Bạn cần cài addon \"XShare XBMC HDVideo\" và thiết lập FShare VIP trong XShare để xem nội dung này"
+			xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+		return ""
+		# try:
+		# 	with open(xshare_settings_path,"r") as f:
+		# 		s = f.read()
+		# 		if 'id="getLinkFree" value="false"' in s:
+		# 			return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
+		# except: pass
 
 		url = url.replace("http://", "https://")
 		http.follow_redirects = False

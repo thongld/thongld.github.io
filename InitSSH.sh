@@ -1,3 +1,4 @@
+#!/bin/bash
 echo 'Add ssh keys'
 sudo mkdir -p ~/.ssh
 sudo echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDM9R46QxESf6lKFeap8KApskCxA5GGUHIsXK669CigDDAfzLBWJy8CYfvpqnkGeNgKVpe0khRffqOVhHwyAMEFtqYuBslftsfdOegmVJaJzGuoEobQJZDAd7+6jL1t2fjA6jN6L+nlSCnVh8/SDvFMF96eQZd4fkET8CFoyT2E5ZcIHekdKwAVuUXCOTrlMIlTp/2ScBZG3cNFVpBKd3X8NxjaV58qCoU6nqpLJDotCdmFDatGwkuHIghwPf17r/mYlkHPkilXz7/oFaZe0szu+hs2FFIvi0HDqbUqQUqOySp8yPgdqyTX3az4HdtbfPVJDw/14YPU4Dy/JeINalFj thongld@DESKTOP-L9AJ1QK >> ~/.ssh/authorized_keys
