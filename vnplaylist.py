@@ -73,6 +73,8 @@ def M3UToItems(url_path=""):
 				item["path"] = pluginrootpath + "/executebuiltin/" + urllib.quote_plus(item["path"])
 			# Kiểu direct link
 			else:
+				if "acestream" in item["path"]:
+					item["label"] = "[AceStream] %s" % item["label"]
 				item["path"] = pluginrootpath + "/play/%s" % urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 		else:
