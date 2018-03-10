@@ -183,7 +183,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 					item["path"] = pluginrootpath + "/cached-section/%s@%s@%s" % (gid,sheet_id,cache_version)
 				elif match_passw:
 					item["path"] = pluginrootpath + "/password-section/%s/%s@%s" % (match_passw.group(1),gid,sheet_id)
-			elif any(service in item["path"] for service in ["www.acesoplisting.in"]):
+			elif any(service in item["path"] for service in ["acelisting.in"]):
 				item["path"] = pluginrootpath + "/acelist/" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["fshare.vn/folder"]):
 				item["path"] = pluginrootpath + "/fshare/" + urllib.quote_plus(item["path"].encode("utf8"))
@@ -392,31 +392,21 @@ def AceList(path = "0", tracking_string = "AceList"):
 		headers=sheet_headers
 	)
 	items = []
-	match = re.compile('href="(acestream://\w+)".+?title = "(.+?)".+?data-date = "(\d+)".+?data-time = "(\d+)"').findall(cleanHTML(content))
-	tmp_date = ""
-	tmp_aceid = ""
-	for aceid, title, _date, _time in match:
-		if _date != tmp_date:
-			item = {}
-			tmp_date = _date
-			item["label"] = "[B][COLOR orange]===== %s =====[/COLOR][/B] [GMT 0]" % datetime.strptime(_date, '%Y%m%d').strftime('%a %d %B, %Y')
-			item["path"] = pluginrootpath + "/executebuiltin/-"
-			item["is_playable"] = False
-			items += [item]
-		if aceid != tmp_aceid:
-			item = {}
-			tmp_aceid = aceid
-			title = title.replace("Language ", "")
-			title = " - ".join(title.split("<br />"))
-			item["label"] = "[%s %s:%s] %s" % (_date,_time[:-2],_time[-2:],title.strip())
-			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(aceid)
-			item["path"] = "%s/play/%s/%s" % (
-				pluginrootpath,
-				urllib.quote_plus(aceid),
-				urllib.quote_plus("[AceList] %s" % item["label"])
-			)
-			item["is_playable"] = True
-			items += [item]
+	match = re.compile('<td class="text-right">(.+?)</td></tr><tr><td class="xsmall text-muted">(.+?)</td></tr></table></td><td>(.+?)</td>.+?href="(acestream.+?)".+?title = "(.+?)"').findall(cleanHTML(content))
+	for _time, _date, sport, aceurl, title in match:
+		titles = title.strip().split("<br />")
+		titles[0] = "[COLOR yellow]%s[/COLOR]" % titles[0]
+		title = " - ".join(titles)
+		title = "[B][COLOR orange]%s, %s[/COLOR] %s %s[/B]" % (_date.strip(), re.sub('<.*?>','',_time).strip(), sport.strip(), title)
+		item = {}
+		item["label"] = title
+		item["path"] = "%s/play/%s/%s" % (
+			pluginrootpath,
+			urllib.quote_plus(aceurl),
+			urllib.quote_plus("[AceList] %s" % item["label"])
+		)
+		item["is_playable"] = True
+		items += [item]
 	return plugin.finish(items)
 
 @plugin.route('/fshare/<path>/<tracking_string>')
