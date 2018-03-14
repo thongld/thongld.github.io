@@ -894,7 +894,7 @@ def get_playable_url(url):
 		return json.loads(content)["hls_url"]
 	elif "google.com" in url:
 		url = getGDriveHighestQuality(url)
-	elif "fshare.vn/file" in url:
+	elif re.match("^https*\://www\.fshare\.vn/file", url):
 		xshare_settings_path = xbmc.translatePath("special://profile/addon_data/plugin.video.xshare/settings.xml")
 		if os.path.exists(xshare_settings_path):
 			with open(xshare_settings_path,"r") as f:
