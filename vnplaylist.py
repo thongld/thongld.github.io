@@ -684,10 +684,19 @@ def execbuiltin(path,tracking_string=""):
 @plugin.route('/play/<url>/<title>')
 def play_url(url, title=""):
 	GA("Play [%s]" % title, "/play/%s/%s" % (title,url))
+	url = get_playable_url(url)
+	#Hack for some buggy redirect link
+	try:
+		http = httplib2.Http(disable_ssl_certificate_validation=True)
+		(resp, content) = http.request(
+			url, "HEAD"
+		)
+		url = resp['content-location']
+	except: pass
 	if "sub" in plugin.request.args:
-		plugin.set_resolved_url(get_playable_url(url), subtitles=plugin.request.args["sub"][0])
+		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	else:
-		plugin.set_resolved_url(get_playable_url(url))
+		plugin.set_resolved_url(url)
 
 def get_playable_url(url):
 	if "youtube" in url:
