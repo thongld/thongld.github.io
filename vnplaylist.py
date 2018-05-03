@@ -863,7 +863,7 @@ def get_playable_url(url):
 					url,
 					"GET", headers = headers,
 				)
-				match = re.search("accounts/\d+/events/\d+", contentt)
+				match = re.search("accounts/\d+/events/\d+", content)
 				url = "https://livestream.com/api/%s" % match.group()
 			(resp, content) = http.request(
 				url,
