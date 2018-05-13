@@ -365,6 +365,8 @@ def Section(path = "0", tracking_string = "Home"):
 def AddPlaylist(tracking_string = "Add Playlist"):
 	sheet_url = plugin.keyboard(heading='Nhập URL của Google Spreadsheet (có hỗ trợ link rút gọn như bit.ly, goo.gl)')
 	if sheet_url:
+		if not re.match("^https*://", sheet_url):
+			sheet_url = "https://" + sheet_url
 		try:
 			resp, content = http.request(sheet_url,"HEAD")
 			sid, gid = re.compile("/d/(.+?)/.+?gid=(\d+)").findall(resp["content-location"])[0]
@@ -641,12 +643,12 @@ def download(download_path,repo_id):
 	if ":/" not in repo_id:
 		zipfile_path = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_id))
 		urllib.urlretrieve(download_path,zipfile_path)
-		with contextlib.closing(zipfile.ZipFile(zipfile_path, "r")) as z:
+		with zipfile.ZipFile(zipfile_path, "r") as z:
 			z.extractall(addons_folder)
 	else:
 		zipfile_path = xbmc.translatePath(os.path.join(tmp,"%s.zip" % repo_id.split("/")[-1]))
 		urllib.urlretrieve(download_path,zipfile_path)
-		with contextlib.closing(zipfile.ZipFile(zipfile_path, "r")) as z:
+		with zipfile.ZipFile(zipfile_path, "r") as z:
 			z.extractall(xbmc.translatePath("/".join(repo_id.split("/")[:-1])))
 
 def AddTracking(items):
