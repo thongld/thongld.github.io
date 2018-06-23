@@ -1,0 +1,504 @@
+1
+00:00:04,929 --> 00:00:09,374
+https://youtu.be/NJSwZm-pWOs
+Welcome, today we are doing
+module three which I view as
+
+2
+00:00:09,374 --> 00:00:13,450
+just a continuation of what
+we were talking about.
+
+3
+00:00:13,450 --> 00:00:18,880
+Actually, with a huge overlap that
+something we spent a lot of time on.
+
+4
+00:00:18,880 --> 00:00:22,169
+Remember application one was on loans.
+
+5
+00:00:23,260 --> 00:00:26,780
+This whole module is on
+something called bonds.
+
+6
+00:00:26,780 --> 00:00:33,450
+Now when I was discussing this with my
+colleagues as to how to do finance for
+
+7
+00:00:33,450 --> 00:00:38,900
+everyone, many wondered that I should
+use things like bonds and stocks.
+
+8
+00:00:38,900 --> 00:00:43,250
+Turns out,
+the cool thing about finance is that
+
+9
+00:00:43,250 --> 00:00:46,340
+the importance of
+fundamentals to everything.
+
+10
+00:00:46,340 --> 00:00:51,128
+Now bonds and stocks are words that
+if you're 16 doing this course
+
+11
+00:00:51,128 --> 00:00:54,908
+you may not relate to, but
+if I pitch it the right way,
+
+12
+00:00:54,908 --> 00:01:00,660
+it will make a lot of sense, regardless
+of age, regardless of experience.
+
+13
+00:01:00,660 --> 00:01:03,900
+And I would encourage you among all
+things to not only do the problem,
+
+14
+00:01:03,900 --> 00:01:06,620
+but to read the popular press.
+
+15
+00:01:06,620 --> 00:01:10,420
+Whichever language you find,
+you find things like this everywhere.
+
+16
+00:01:11,460 --> 00:01:13,279
+Okay, so it's bonds.
+
+17
+00:01:13,280 --> 00:01:17,810
+So let's first start off clarifying lingo,
+and
+
+18
+00:01:17,810 --> 00:01:22,860
+I'll go very slow in this whole course,
+simply because there's a lot of lingo,
+
+19
+00:01:22,860 --> 00:01:28,930
+a lot of complexity, but
+I want to not avoid all complexity.
+
+20
+00:01:28,930 --> 00:01:33,780
+I'm gonna hold your hand a little bit
+more than otherwise because I think it's
+
+21
+00:01:33,780 --> 00:01:37,300
+important for you to basically
+figure out how cool finance is.
+
+22
+00:01:38,490 --> 00:01:43,789
+So as the name suggest,
+what a bond is something
+
+23
+00:01:43,790 --> 00:01:48,700
+that binds two people or two institutions.
+
+24
+00:01:48,700 --> 00:01:56,42
+And basically it's a contract
+between a borrower and a lender.
+
+25
+00:01:56,42 --> 00:01:58,675
+And one of the coolest things about it is,
+
+26
+00:01:58,675 --> 00:02:02,967
+the borrower is the person who needs
+the money for whatever reason,
+
+27
+00:02:02,967 --> 00:02:07,860
+doesn't have enough of it and the lender
+is the person who happens to have more
+
+28
+00:02:07,860 --> 00:02:12,760
+than they need at that point in time and
+is willing to trade over time.
+
+29
+00:02:12,760 --> 00:02:15,100
+Remember, time value of money.
+
+30
+00:02:15,100 --> 00:02:17,329
+It'll be inherent to
+everything we talk about.
+
+31
+00:02:18,370 --> 00:02:22,580
+So a bond is a contract between
+a borrower and a lender.
+
+32
+00:02:22,580 --> 00:02:26,600
+The word contract is very important
+because we'll see it later.
+
+33
+00:02:26,600 --> 00:02:29,900
+And as you do more and more finance,
+you'll understand what this is all about.
+
+34
+00:02:32,30 --> 00:02:34,230
+It's an explicit IOU.
+
+35
+00:02:34,230 --> 00:02:39,194
+So contract or IOU is what I owe you,
+a promise to pay money
+
+36
+00:02:39,194 --> 00:02:43,546
+in the future in return for
+money borrowed today.
+
+37
+00:02:43,546 --> 00:02:45,150
+That's another way to think about a bond.
+
+38
+00:02:46,150 --> 00:02:50,810
+And the word bond can be classified
+even simpler, we have seen it before.
+
+39
+00:02:50,810 --> 00:02:55,100
+So when you go take a loan for
+whatever purpose we took loans for, for
+
+40
+00:02:55,100 --> 00:03:01,220
+buying an iPhone, I believe, or
+going to school or buying a car,
+
+41
+00:03:01,220 --> 00:03:06,940
+whenever you take a loan,
+what it ends up being it is a bond.
+
+42
+00:03:06,940 --> 00:03:11,935
+So we are going to talk about different
+kinds of loans in this module,
+
+43
+00:03:11,935 --> 00:03:16,930
+but the essentially nature of beast
+is identical and becomes more and
+
+44
+00:03:16,930 --> 00:03:19,446
+more interesting, that's all.
+
+45
+00:03:19,446 --> 00:03:23,170
+A loan is in the eye of the beholder.
+
+46
+00:03:23,170 --> 00:03:27,382
+So go back to Excel whenever we figure out
+future value, present value and so on.
+
+47
+00:03:27,383 --> 00:03:33,984
+If you plug in a positive number,
+out comes a negative number.
+
+48
+00:03:33,984 --> 00:03:37,240
+So the issue of eye of the beholder
+is extremely important.
+
+49
+00:03:37,240 --> 00:03:39,720
+So if you have a positive
+sign on a timeline,
+
+50
+00:03:39,720 --> 00:03:41,980
+that means a person is getting money.
+
+51
+00:03:41,980 --> 00:03:46,769
+If there is negative sign on the timeline,
+the person is spending money.
+
+52
+00:03:46,770 --> 00:03:52,230
+But because there are two parties
+in every financial contract, you
+
+53
+00:03:52,230 --> 00:03:58,530
+will be responsible to figure out whether
+the money's flowing out or flowing in.
+
+54
+00:04:00,390 --> 00:04:05,489
+Bonds are extremely important
+because loans are the primary way,
+
+55
+00:04:05,490 --> 00:04:08,600
+in spite of all the buzz
+about stock markets and so
+
+56
+00:04:08,600 --> 00:04:14,329
+on, loans are the primary way
+in which people who need money
+
+57
+00:04:14,330 --> 00:04:20,20
+get money and then people who have
+extra money give money to others.
+
+58
+00:04:20,19 --> 00:04:24,30
+And one of the reasons perhaps
+is that bonds tend to be
+
+59
+00:04:24,30 --> 00:04:28,690
+less risky than stocks so
+that could be one of the reasons.
+
+60
+00:04:28,690 --> 00:04:31,310
+But on the other hand
+there's another reason,
+
+61
+00:04:31,310 --> 00:04:36,90
+which is bonds can span all kinds of risk,
+right.
+
+62
+00:04:36,90 --> 00:04:39,000
+So for example,
+if you take a very safe loan for
+
+63
+00:04:39,000 --> 00:04:42,240
+a safe activity,
+the interest rate will be low.
+
+64
+00:04:42,240 --> 00:04:47,20
+On the other hand, we will talk
+about loans based on credit cards,
+
+65
+00:04:47,20 --> 00:04:48,620
+which are unfortunate, right?
+
+66
+00:04:48,620 --> 00:04:54,580
+Because a person using a credit card
+to finance themselves in the US
+
+67
+00:04:54,580 --> 00:04:58,900
+is a person who doesn't have enough
+money to even buy daily things.
+
+68
+00:04:58,900 --> 00:05:01,260
+I think that's unfortunate and
+
+69
+00:05:01,260 --> 00:05:06,762
+the interest rates on those are very
+high partly because the default rate,
+
+70
+00:05:06,762 --> 00:05:13,337
+the chances that the person won't pay back
+are higher, but partly maybe artificially.
+
+71
+00:05:13,337 --> 00:05:18,175
+So I'm not going to get into that
+issue but I'm going to just talk about
+
+72
+00:05:18,175 --> 00:05:23,40
+different types of bonds and
+how risk going up means return goes up.
+
+73
+00:05:23,40 --> 00:05:27,820
+So the complexity covered by
+bonds is very, very rich,
+
+74
+00:05:27,820 --> 00:05:31,500
+so we could talk about bonds forever,
+right.
+
+75
+00:05:31,500 --> 00:05:38,950
+So financing an iPhone, you need
+a loan if you don't have money and
+
+76
+00:05:38,950 --> 00:05:43,979
+if you want to finance a home, you need
+loans and those are called mortgages.
+
+77
+00:05:45,110 --> 00:05:50,70
+And if you notice, it's closely related
+to all of the stuff and the crisis we
+
+78
+00:05:50,70 --> 00:05:53,760
+went through, especially in the US
+with housing prices falling and so on.
+
+79
+00:05:55,690 --> 00:06:00,780
+Activities of governments are financed
+by what is called fiscal policy and
+
+80
+00:06:00,780 --> 00:06:02,130
+what does that mean?
+
+81
+00:06:02,130 --> 00:06:08,110
+Governments issue bonds in large
+quantities to finance their activities.
+
+82
+00:06:08,110 --> 00:06:14,240
+Again, hopefully, for stuff that we
+collectively need and believe in, right?
+
+83
+00:06:14,240 --> 00:06:19,750
+So one of the passions that I
+have is that government should
+
+84
+00:06:19,750 --> 00:06:24,70
+fund education all over the world.
+
+85
+00:06:24,70 --> 00:06:28,290
+And one of the concerns
+in higher education is,
+
+86
+00:06:28,290 --> 00:06:33,70
+that maybe perhaps pressures
+of different kinds of expenses
+
+87
+00:06:33,70 --> 00:06:37,760
+have led governments to not support
+higher education as much as before.
+
+88
+00:06:37,760 --> 00:06:43,247
+And this is extremely important
+because I believe education probably
+
+89
+00:06:43,247 --> 00:06:48,459
+is next only to health in terms of
+empowering and enabling people.
+
+90
+00:06:48,459 --> 00:06:54,595
+Finally, turns out that indirectly,
+but very powerfully,
+
+91
+00:06:54,595 --> 00:06:58,961
+financier bonds are used
+to create value and
+
+92
+00:06:58,961 --> 00:07:02,740
+that's where I will get into stocks.
+
+93
+00:07:02,740 --> 00:07:08,350
+Because stocks are issued by companies,
+by entities, and when they borrow,
+
+94
+00:07:08,350 --> 00:07:14,970
+they borrow to create hopefully what
+we call positive value creation,
+
+95
+00:07:14,970 --> 00:07:19,890
+by ideas that are better and better and
+better, and we'll talk about those.
+
+96
+00:07:19,890 --> 00:07:22,719
+Those are called corporate bonds.
+
+97
+00:07:22,720 --> 00:07:28,710
+One small caveat, that corporate bonds are
+bonds that are traded in the marketplace.
+
+98
+00:07:30,100 --> 00:07:33,953
+On the other hand, many companies,
+all of them borrow, but
+
+99
+00:07:33,953 --> 00:07:40,30
+they borrow directly and privately from
+banks and those loans don't trade.
+
+100
+00:07:40,30 --> 00:07:46,147
+What's interesting is that there's
+something called securitization that I'll
+
+101
+00:07:46,147 --> 00:07:52,000
+talk about later which happened in the
+mortgage business where loans issued but
+
+102
+00:07:52,000 --> 00:07:57,349
+private banks are then combined and
+created into tradable securities.
+
+103
+00:07:57,349 --> 00:08:02,203
+Okay, it has huge potential, but
+of course, a lot of risks as well as
+
+104
+00:08:02,203 --> 00:08:07,90
+we've seen in recent times,
+especially if not executed with care.
+

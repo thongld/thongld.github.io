@@ -1,0 +1,40 @@
+In this lecture, we explore the following topics:
+
+The Big Data Problem
+Cluster Computing Challenges and the Map Reduce Programming Paradigm
+Apache Spark: Technology Trends, Opportunity, and Advantages
+Structured Data and the Structured Query Language
+Spark SQL and Spark DataFrames
+Spark Community and Resources
+Spark Research Papers
+
+Using memory instead of disks offers two huge benefits. The first benefit is that memory is much faster than disks. The time to read or write a value to memory is only a few hundred nanoseconds (100/1,000,000,000th of a second!), while the time to read or write is tens of milliseconds (10/1,000th of a second) -- that means memory is a 100,000 times faster than disks. The second benefit is that keeping intermediate results in memory means that they do not have to be converted into a format that can be stored on disks. The process of converting a memory object to a disk object is called serialization and the process of converting a disk object to a memory object is called deserialization. Serializing and deserializing objects is a very expensive and time consuming process. Keeping intermediate results in memory avoids this significant overhead.
+
+Taken together, the faster access times and avoidance of serialization/deserialization overhead make Apache Spark much faster than Apache Hadoop/Map Reduce - up to 100 times faster!
+
+Here is an example of the performance difference between Apache Hadoop and Apache Spark when performing logistic regression, a common prediction technique:
+https://courses.edx.org/courses/course-v1:BerkeleyX+CS105x+1T2016/courseware/9d251397874d4f0b947b606c81ccf83c/3cf61a8718fe4ad5afcd8fb35ceabb6e/
+
+Here are links to descriptions of the large databases discussed in this lecture video segment:
+
+US Internal Revenue Service: 150 Terabytes
+http://www.computerworld.com/article/2536160/business-intelligence/been-audited-lately--blame-the-irs-s-massive--superfast-data-warehouse.html
+
+Australian Bureau of Stats: 250 Terabytes
+http://www.dbms2.com/2009/09/19/oracle-database-siz/
+
+AT&T call records: 312 Terabytes
+http://www.comparebusinessproducts.com/fyi/10-largest-databases-in-the-world
+
+eBay database: 1.4 Petabytes
+http://www.comparebusinessproducts.com/fyi/10-largest-databases-in-the-world
+
+Yahoo click data: 2 Petabytes
+http://www.computerworld.com/article/2535825/business-intelligence/size-matters--yahoo-claims-2-petabyte-database-is-world-s-biggest--busiest.html
+
+Here are some resources for the Structured Query Language and Spark SQL:
+https://prod-edx-mktg-edit.edx.org/course/querying-transact-sql-microsoft-dat201x-4
+
+Note that a key difference between SQL and Spark SQL is that Spark SQL does not support DELETE. In SQL, DELETE allows you to delete rows from a table. Remember that DataFrames are immutable which means they cannot be changed once you create them. Instead of modifying a DataFrame, you must create a new DataFrame from that DataFrame. You might think that this would make DataFrames very expensive and cause them to take up a lot of memory, but Spark very efficiently handles the implementation of creating new DataFrames from existing ones.
+
+Join the Apache Spark community!: You can interact with other Spark users through the growing community. Here is a link to the community page to get you started: http://spark.apache.org/community.html

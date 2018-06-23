@@ -1,0 +1,1336 @@
+1
+00:00:08,360 --> 00:00:10,696
+https://youtu.be/RTECox-PiF8
+So now we're going to get
+to the heart of the matter,
+
+2
+00:00:10,696 --> 00:00:14,790
+we're going to actually write some SQL
+and we're going to make a database.
+
+3
+00:00:14,790 --> 00:00:16,840
+Okay, you hopefully by now,
+
+4
+00:00:16,840 --> 00:00:22,020
+I've told you a couple of times, installed
+the SQLite browser. If you haven't, do it.
+
+5
+00:00:22,020 --> 00:00:24,510
+You could also write a Firefox plug-in
+
+6
+00:00:24,510 --> 00:00:27,170
+that can be used to manipulate
+SQLite databases.
+
+7
+00:00:27,170 --> 00:00:30,330
+I used this before SQLite browser
+came out with their newest version.
+
+8
+00:00:30,330 --> 00:00:33,340
+So, everything I'm going to do
+could be used by either one.
+
+9
+00:00:33,340 --> 00:00:36,490
+And there might even be
+a way to do it with an SQLite
+
+10
+00:00:36,490 --> 00:00:40,400
+admin tool if you downloaded
+like a MAMP or an XAMPP.
+
+11
+00:00:40,400 --> 00:00:41,220
+So it doesn't matter.
+
+12
+00:00:41,220 --> 00:00:44,240
+You just need some piece of software
+that gives you a place to type SQL,
+
+13
+00:00:44,240 --> 00:00:47,850
+You hit a go button, and it sends it
+to the database and comes back.
+
+14
+00:00:47,850 --> 00:00:49,780
+That's all you need. Okay.
+
+15
+00:00:49,780 --> 00:00:53,010
+This is what it looks like,
+SQLite, SQLite browser.
+
+16
+00:00:53,010 --> 00:00:54,620
+So let me go ahead and start
+this thing up.
+
+17
+00:00:56,670 --> 00:00:58,870
+SQLite browser, and there we are.
+
+18
+00:00:59,940 --> 00:01:01,550
+Database Browser for SQLite.
+
+19
+00:01:03,180 --> 00:01:07,962
+And what it basically does is this
+is going to read and write a file.
+
+20
+00:01:07,962 --> 00:01:12,462
+And that file that it's going to read and
+write is in a very specialized format
+
+21
+00:01:12,462 --> 00:01:17,720
+that's highly optimized for
+rapid retrieval and rapid storage of data.
+
+22
+00:01:17,720 --> 00:01:22,058
+And so we'll start by saying New Database
+
+23
+00:01:22,058 --> 00:01:26,270
+and I'm going to pick a place on the disk.
+
+24
+00:01:26,270 --> 00:01:30,500
+I will put it in the desktop and
+python for everybody, databases
+
+25
+00:01:31,540 --> 00:01:35,930
+and I'll call it sql1.
+
+26
+00:01:37,450 --> 00:01:38,890
+That'll just be the name of the database.
+
+27
+00:01:38,890 --> 00:01:40,630
+Now, it's writing to a file.
+
+28
+00:01:40,630 --> 00:01:46,230
+This file is not something you should read
+using anything other than a SQLite library.
+
+29
+00:01:46,230 --> 00:01:51,990
+It's a funky looking file. So
+we're going to save it, boop.
+
+30
+00:01:51,990 --> 00:01:54,310
+And it's asking us if we
+want to create a table.
+
+31
+00:01:54,310 --> 00:01:55,900
+I'll just hide that thing.
+
+32
+00:01:55,900 --> 00:01:59,080
+So we have no tables, no indexes,
+no views, no triggers, no nothing.
+
+33
+00:01:59,080 --> 00:02:01,990
+And we have a place that
+we can execute SQL.
+
+34
+00:02:01,990 --> 00:02:04,920
+So when I said you're
+a database administrator,
+
+35
+00:02:04,920 --> 00:02:10,120
+we got a file back there called sql1 that
+everything we do is actually reading and
+
+36
+00:02:10,120 --> 00:02:14,290
+writing to that file, but we don't
+write code to touch that file directly.
+
+37
+00:02:14,290 --> 00:02:17,940
+We always are using the SQLite library,
+okay?
+
+38
+00:02:17,940 --> 00:02:21,840
+So we're up, let's create a table.
+
+39
+00:02:21,840 --> 00:02:24,150
+Now this is our first SQL.
+
+40
+00:02:24,150 --> 00:02:28,080
+And so CREATE TABLE and
+then the name of the table, Users.
+
+41
+00:02:28,080 --> 00:02:29,370
+I'm just going to use upper case.
+
+42
+00:02:29,370 --> 00:02:30,860
+Upper lower case generally matters.
+
+43
+00:02:30,860 --> 00:02:33,610
+There are a few weird situations
+where it doesn't matter, so
+
+44
+00:02:33,610 --> 00:02:36,550
+just pretend that case
+matters in this situation.
+
+45
+00:02:36,550 --> 00:02:39,180
+And it teaches you something
+right away about SQL.
+
+46
+00:02:39,180 --> 00:02:42,620
+SQL is designed to be
+somewhat conversational.
+
+47
+00:02:42,620 --> 00:02:48,820
+And so the keyword, CREATE TABLE,
+
+48
+00:02:48,820 --> 00:02:52,230
+is kind of like one keyword,
+we're creating a table.
+
+49
+00:02:52,230 --> 00:02:57,130
+Then the name of the thing and then
+a parenthesized list of the fields and
+
+50
+00:02:57,130 --> 00:02:59,620
+then the types of the field,
+that's what we're dealing with.
+
+51
+00:02:59,620 --> 00:03:04,160
+So this is CREATE TABLE named Users, and
+we're going to put two columns into it,
+
+52
+00:03:04,160 --> 00:03:08,845
+and one is of variable length
+character, up to 128 characters,
+
+53
+00:03:08,845 --> 00:03:13,090
+an email that's also a variable
+length character up to 128 characters.
+
+54
+00:03:13,090 --> 00:03:16,400
+So, this is sort of our schema,
+this is our contract.
+
+55
+00:03:16,400 --> 00:03:18,960
+We're saying these are the only two
+things we're putting in this table.
+
+56
+00:03:18,960 --> 00:03:21,240
+We can't put a thing
+called age in the table,
+
+57
+00:03:21,240 --> 00:03:26,210
+we can't put a thing called
+favorite beverage in the table and
+
+58
+00:03:26,210 --> 00:03:29,610
+we can't put 129 characters
+in the name column.
+
+59
+00:03:29,610 --> 00:03:33,980
+We can put 0 or 1 or 2 or 127 or 128,
+
+60
+00:03:33,980 --> 00:03:37,970
+that's just fine, but we can't put 129.
+
+61
+00:03:37,970 --> 00:03:39,278
+This is a contract.
+
+62
+00:03:39,278 --> 00:03:45,110
+And the database, if we want to put longer
+characters in, we just say no, no, no, no.
+
+63
+00:03:45,110 --> 00:03:49,170
+We want to put 1024 in and then the contract
+will be we could put up to 1024 and
+
+64
+00:03:49,170 --> 00:03:53,630
+if we put 1025, the database would
+be mad. And like why do you do this?
+
+65
+00:03:53,630 --> 00:03:57,510
+Why is it, why is the database so
+obsessed about this?
+
+66
+00:03:57,510 --> 00:04:01,050
+And the answer is, as it lays
+the data out on this disk drive and
+
+67
+00:04:01,050 --> 00:04:03,020
+it wants to get to it fast,
+
+68
+00:04:03,020 --> 00:04:07,070
+it really is helpful to know the size,
+the maximum size.
+
+69
+00:04:07,070 --> 00:04:12,480
+Because if you say this is only going
+to be four, versus four megabytes,
+
+70
+00:04:12,480 --> 00:04:16,000
+it might lay the table out
+differently on the disk.
+
+71
+00:04:16,000 --> 00:04:17,500
+You don't need to know that.
+
+72
+00:04:17,500 --> 00:04:22,130
+You just need to be explicit
+about the contract. Okay?
+
+73
+00:04:22,130 --> 00:04:25,160
+So this is part of making the
+data model.
+
+74
+00:04:25,160 --> 00:04:28,570
+Figuring out in advance the kind
+of data that you're going to use,
+
+75
+00:04:28,570 --> 00:04:33,100
+how you're going to use that data,
+and then you communicate that to SQL.
+
+76
+00:04:33,100 --> 00:04:36,500
+And then you don't worry about all
+the magic that makes that super fast.
+
+77
+00:04:36,500 --> 00:04:39,120
+So this is the contract that you make so
+
+78
+00:04:39,120 --> 00:04:42,550
+that your data is really fast. By
+being very explicit about your data,
+
+79
+00:04:43,820 --> 00:04:48,800
+you get in return the database does
+a lot for you and does it really fast.
+
+80
+00:04:48,800 --> 00:04:52,320
+So now I'm going to go into
+my little SQL window and
+
+81
+00:04:52,320 --> 00:04:54,490
+I've pasted in that
+CREATE TABLE statement.
+
+82
+00:04:56,160 --> 00:05:00,060
+And different user interfaces
+will have different things, but
+
+83
+00:05:00,060 --> 00:05:01,636
+they all kind of have a window.
+
+84
+00:05:01,636 --> 00:05:05,960
+And you all put some database stuff in
+them, and you hit this execute button.
+
+85
+00:05:05,960 --> 00:05:09,330
+It's a this little play button in this one,
+might be something else in yours, but
+
+86
+00:05:09,330 --> 00:05:11,430
+at some point you go, do it!
+
+87
+00:05:14,000 --> 00:05:18,150
+And down here it says query executed
+successfully, CREATE TABLE,
+
+88
+00:05:18,150 --> 00:05:19,200
+yadda, yadda, yadda.
+
+89
+00:05:19,200 --> 00:05:24,810
+So now if we take a look at the data,
+we see that we have one table and
+
+90
+00:05:24,810 --> 00:05:27,800
+the table is named Users and
+there's name and email.
+
+91
+00:05:27,800 --> 00:05:31,720
+If we pull this over we'll
+see that the VARCHAR is 128,
+
+92
+00:05:31,720 --> 00:05:35,560
+so the database knows the contract
+that we just gave it, okay?
+
+93
+00:05:35,560 --> 00:05:38,120
+So that's your first SQL command.
+
+94
+00:05:38,120 --> 00:05:42,120
+Your next SQL command is, and you
+
+95
+00:05:44,430 --> 00:05:48,260
+probably should just copy and paste this
+stuff off the slides, it's what I'm doing.
+
+96
+00:05:48,260 --> 00:05:54,040
+So there's your table,
+we're going to put some data into it.
+
+97
+00:05:54,040 --> 00:05:55,150
+So let's go ahead and do that.
+
+98
+00:05:57,280 --> 00:05:59,504
+And we can put a new record in there.
+
+99
+00:05:59,504 --> 00:06:04,384
+We can say Chuck
+
+100
+00:06:04,384 --> 00:06:09,879
+csev@umich.edu.
+
+101
+00:06:09,879 --> 00:06:13,087
+We can say another New Record.
+
+102
+00:06:13,087 --> 00:06:15,587
+We can say Colleen.
+
+103
+00:06:17,926 --> 00:06:23,360
+We'll call her vlt@umich.edu.
+
+104
+00:06:23,360 --> 00:06:25,620
+I want it so they sort right, edu.
+
+105
+00:06:28,790 --> 00:06:32,972
+Another record, we'll make this be Sally,
+
+106
+00:06:32,972 --> 00:06:36,851
+sally@umich.edu.
+
+107
+00:06:38,290 --> 00:06:40,740
+And then we'll have another
+one we'll call like Fred.
+
+108
+00:06:40,740 --> 00:06:42,135
+I don't know, Fred.
+
+109
+00:06:42,135 --> 00:06:46,061
+fred@umich.edu.
+
+110
+00:06:46,061 --> 00:06:50,960
+Now it turns out that everything we're
+doing is actually running SQL,
+
+111
+00:06:50,960 --> 00:06:53,160
+and I want to finish that.
+
+112
+00:06:53,160 --> 00:06:55,860
+And if you take a look
+here at the SQL log,
+
+113
+00:06:55,860 --> 00:06:58,790
+you can see all the SQL
+that's going on right here.
+
+114
+00:06:58,790 --> 00:07:01,340
+This INSERT, but let's kind of
+leave that alone for now,
+
+115
+00:07:01,340 --> 00:07:02,340
+we'll just kind of hide that.
+
+116
+00:07:04,190 --> 00:07:07,300
+But that's what's going on right now.
+
+117
+00:07:07,300 --> 00:07:10,530
+And so we made a table and
+it now has four rows in it.
+
+118
+00:07:14,300 --> 00:07:16,670
+And now we're going to do some SQL to
+
+119
+00:07:16,670 --> 00:07:19,700
+We've done the create and now we're going
+to do some inserting and deleting and
+
+120
+00:07:19,700 --> 00:07:21,180
+retrieving of the data.
+
+121
+00:07:21,180 --> 00:07:23,560
+So the first thing we're going to
+do is insert another record.
+
+122
+00:07:23,560 --> 00:07:27,590
+Now, what we were just doing in that
+user interface was exactly this.
+
+123
+00:07:27,590 --> 00:07:30,830
+Here is another example of
+some SQL where INSERT INTO is
+
+124
+00:07:30,830 --> 00:07:32,950
+kind of like a single keyword.
+
+125
+00:07:32,950 --> 00:07:37,060
+The name of the table,
+a parenthesized list of the columns
+
+126
+00:07:37,060 --> 00:07:40,290
+and then the word VALUES,
+that's just part of SQL, and
+
+127
+00:07:40,290 --> 00:07:43,710
+then a parenthesized list of
+the corresponding values.
+
+128
+00:07:43,710 --> 00:07:48,950
+So Kristin is the name and
+kf@umich.edu is the email address.
+
+129
+00:07:48,950 --> 00:07:54,279
+And so that is a SQL statement that
+inserts a new record into our Users table.
+
+130
+00:07:56,330 --> 00:08:00,530
+So we'll just cheat and grab this,
+
+131
+00:08:00,530 --> 00:08:06,220
+copy it, then go to the SQLite browser and
+we'll go to Execute SQL.
+
+132
+00:08:06,220 --> 00:08:09,210
+And I will get rid of the CREATE TABLE
+because we already did that, and
+
+133
+00:08:09,210 --> 00:08:12,380
+just type in insert users
+with that parentheses.
+
+134
+00:08:12,380 --> 00:08:16,080
+It's doing syntax coloring for
+me which makes it very, very helpful.
+
+135
+00:08:16,080 --> 00:08:17,750
+And then I got the right SQL.
+
+136
+00:08:17,750 --> 00:08:19,810
+Now let's just say I make a mistake.
+
+137
+00:08:19,810 --> 00:08:23,920
+Let's just say I call this
+ZAP instead of VALUES.
+
+138
+00:08:23,920 --> 00:08:27,740
+I will run this and it will go
+like zap is a syntax error and so
+
+139
+00:08:27,740 --> 00:08:31,080
+it does talk to you and then you can
+go fix that and say VALUES.
+
+140
+00:08:32,960 --> 00:08:35,730
+And it's actually helping
+me and I can run that.
+
+141
+00:08:35,730 --> 00:08:38,790
+And then it says, success.
+
+142
+00:08:38,790 --> 00:08:40,930
+And I go back and
+look at my data structure.
+
+143
+00:08:40,930 --> 00:08:43,790
+I can browse the data, and
+there's Kristin, right?
+
+144
+00:08:43,790 --> 00:08:45,930
+So the INSERT added another row.
+
+145
+00:08:47,780 --> 00:08:49,790
+Pretty simple stuff, isn't it?
+
+146
+00:08:49,790 --> 00:08:51,070
+Okay, so there we go with that.
+
+147
+00:08:52,220 --> 00:08:54,120
+We inserted another row
+with Kristin in it.
+
+148
+00:08:56,410 --> 00:08:57,230
+Now we could delete a row.
+
+149
+00:08:58,950 --> 00:09:02,720
+And so we say DELETE FROM,
+which is again kind of like a keyword.
+
+150
+00:09:02,720 --> 00:09:04,450
+DELETE, it could be DELETE Users, but
+
+151
+00:09:04,450 --> 00:09:07,470
+it's sort of like, we're not actually
+deleting all the users.
+
+152
+00:09:07,470 --> 00:09:09,640
+We're deleting something from the Users.
+
+153
+00:09:09,640 --> 00:09:12,820
+And so they add this keyword in
+SQL that's kind of redundant.
+
+154
+00:09:13,830 --> 00:09:17,660
+It's not necessary, but it lets us
+read it a little. DELETE FROM Users.
+
+155
+00:09:17,660 --> 00:09:19,400
+Well that sounds like words.
+
+156
+00:09:19,400 --> 00:09:20,480
+Sounds nice.
+
+157
+00:09:20,480 --> 00:09:22,130
+DELETE FROM Users,
+the name of the table,
+
+158
+00:09:22,130 --> 00:09:23,170
+and then a WHERE clause.
+
+159
+00:09:23,170 --> 00:09:26,860
+And you can put WHERE clauses on
+lots of different SQL statements.
+
+160
+00:09:26,860 --> 00:09:31,450
+And that says, don't delete all the rows,
+only delete where this is true.
+
+161
+00:09:31,450 --> 00:09:33,280
+And in this case we put
+a logical question.
+
+162
+00:09:33,280 --> 00:09:36,260
+So this is like a question mark
+in a if statement, right?
+
+163
+00:09:36,260 --> 00:09:40,130
+DELETE FROM Users WHERE
+email equals ted@umich.edu.
+
+164
+00:09:40,130 --> 00:09:42,520
+This could be one row or
+
+165
+00:09:42,520 --> 00:09:45,430
+there could be a hundred rows
+that all have that email address.
+
+166
+00:09:47,100 --> 00:09:50,160
+That would actually be bad to have a
+hundred rows that have that email address
+
+167
+00:09:50,160 --> 00:09:52,560
+if that were a key, but whatever.
+
+168
+00:09:52,560 --> 00:09:56,220
+So this just says DELETE FROM Users
+WHERE email equals ted@umich.edu.
+
+169
+00:09:56,220 --> 00:09:58,504
+So let's do that.
+
+170
+00:10:00,220 --> 00:10:03,760
+Again, I just copy this, copy.
+
+171
+00:10:03,760 --> 00:10:06,150
+Go back to my SQLite browser.
+
+172
+00:10:06,150 --> 00:10:07,570
+I could use the Delete Record button, but
+
+173
+00:10:07,570 --> 00:10:09,840
+I'm trying to teach you
+this SQL language now.
+
+174
+00:10:09,840 --> 00:10:11,420
+So this is the way to do it.
+
+175
+00:10:11,420 --> 00:10:14,970
+DELETE FROM Users WHERE
+email equals ted@umich.edu.
+
+176
+00:10:14,970 --> 00:10:15,720
+I hit the play button.
+
+177
+00:10:17,230 --> 00:10:19,370
+And it says executed successfully.
+
+178
+00:10:19,370 --> 00:10:21,010
+And I go back, and I look at the data.
+
+179
+00:10:22,060 --> 00:10:24,820
+And, was there no Ted in there?
+
+180
+00:10:24,820 --> 00:10:26,530
+I'd better delete a different one,
+let's call Fred.
+
+181
+00:10:27,830 --> 00:10:31,480
+Let's call it fred@umich.edu.
+
+182
+00:10:31,480 --> 00:10:35,100
+So now if we do the Browse Data,
+Fred's gone, so the delete works.
+
+183
+00:10:35,100 --> 00:10:37,400
+That's why I do cutting and
+pasting on this.
+
+184
+00:10:37,400 --> 00:10:38,100
+So that's a delete.
+
+185
+00:10:39,150 --> 00:10:43,707
+Update allows us to sort of reach in
+to a particular cell or set of cells in
+
+186
+00:10:43,707 --> 00:10:49,200
+a table, many rows or many columns or
+many row / column combinations.
+
+187
+00:10:49,200 --> 00:10:54,060
+And we just say UPDATE, which is
+the SQL keyword, the table name, SET,
+
+188
+00:10:54,060 --> 00:10:59,630
+which is an SQL keyword, and then
+the column name and then the new value.
+
+189
+00:11:02,320 --> 00:11:05,070
+The WHERE clause is important
+because without the WHERE clause,
+
+190
+00:11:05,070 --> 00:11:09,320
+it would do it for all of the rows,
+so the WHERE clause reduces the rows.
+
+191
+00:11:09,320 --> 00:11:12,711
+So we have a WHERE clause here that
+says WHERE email='csev@umich.edu'.
+
+192
+00:11:12,711 --> 00:11:17,332
+So what we're really saying is go find
+the rows that have that true and
+
+193
+00:11:17,332 --> 00:11:20,550
+change the column name to be Charles.
+
+194
+00:11:20,550 --> 00:11:22,890
+Okay?
+The column name to be Charles.
+
+195
+00:11:24,830 --> 00:11:26,020
+So let’s do that one.
+
+196
+00:11:27,020 --> 00:11:29,420
+And hopefully at this point you
+are sort of following along and
+
+197
+00:11:29,420 --> 00:11:33,407
+you're doing your own data because that
+will be one of your assignments is to make
+
+198
+00:11:33,407 --> 00:11:37,360
+a database and turn it in.
+
+199
+00:11:37,360 --> 00:11:38,240
+So, I will say execute.
+
+200
+00:11:38,240 --> 00:11:45,287
+Oop. and I take a look at Browse Data and
+you see that Charles is now changed.
+
+201
+00:11:45,287 --> 00:11:46,289
+So far so good.
+
+202
+00:11:46,289 --> 00:11:50,832
+You see why I really like this
+language. I mean, it makes so
+
+203
+00:11:50,832 --> 00:11:55,670
+much more sense than Python,
+but don't criticize Python.
+
+204
+00:11:55,670 --> 00:11:57,570
+Don't be hating on Python!
+
+205
+00:11:57,570 --> 00:11:59,960
+Python is powerful and flexible.
+
+206
+00:11:59,960 --> 00:12:02,629
+This is powerful, but not so flexible.
+
+207
+00:12:04,440 --> 00:12:06,990
+So we did a insert.
+
+208
+00:12:06,990 --> 00:12:08,310
+We did a delete.
+
+209
+00:12:08,310 --> 00:12:09,200
+We did an update.
+
+210
+00:12:09,200 --> 00:12:10,250
+Now we have to do the read.
+
+211
+00:12:11,340 --> 00:12:12,360
+The R part of CRUD.
+
+212
+00:12:13,460 --> 00:12:15,860
+And so that is SELECT.
+
+213
+00:12:16,960 --> 00:12:19,880
+And SELECT takes a list of columns,
+that's a column list.
+
+214
+00:12:21,700 --> 00:12:23,730
+And star means all columns.
+
+215
+00:12:23,730 --> 00:12:27,080
+FROM is a keyword and
+then Users is the name of the database.
+
+216
+00:12:27,080 --> 00:12:30,340
+And you can have either with or
+without a WHERE clause.
+
+217
+00:12:30,340 --> 00:12:31,680
+And so this says select.
+
+218
+00:12:31,680 --> 00:12:35,610
+That really says all rows all columns
+from the database named Users.
+
+219
+00:12:35,610 --> 00:12:37,790
+SELECT * FROM Users. Okay?
+
+220
+00:12:37,790 --> 00:12:41,780
+And this says this will turn out to
+be one row in our little database,
+
+221
+00:12:41,780 --> 00:12:44,340
+but it might be more than
+one if this was true.
+
+222
+00:12:44,340 --> 00:12:48,090
+If this WHERE clause was true for
+more than one, okay?
+
+223
+00:12:48,090 --> 00:12:50,130
+So, let's run those commands.
+
+224
+00:12:50,130 --> 00:12:53,700
+Now, it turns out that we're kind of
+implicitly running those commands,
+
+225
+00:12:53,700 --> 00:12:57,561
+the SELECT * FROM Users,
+every time I hit that browse button.
+
+226
+00:12:57,561 --> 00:13:03,136
+Whoops, don't do that.
+
+227
+00:13:03,136 --> 00:13:07,120
+So if I go over here and when
+I do browse,
+
+228
+00:13:07,120 --> 00:13:13,560
+I couldn actually see that in SQL log,
+the last thing was that. Okay?
+
+229
+00:13:14,590 --> 00:13:18,822
+And so it's doing a select on our behalf,
+but we're learning how to do SQL so
+
+230
+00:13:18,822 --> 00:13:24,730
+we don't want to, we want to
+do it the hard way.
+
+231
+00:13:24,730 --> 00:13:26,340
+So we say SELECT * FROM Users.
+
+232
+00:13:27,360 --> 00:13:29,740
+Hit that, and
+now down here we see that and
+
+233
+00:13:29,740 --> 00:13:33,670
+we also see in this log as the log
+goes by, that it sent that stuff.
+
+234
+00:13:33,670 --> 00:13:34,990
+Now it´s also sending more stuff.
+
+235
+00:13:34,990 --> 00:13:37,120
+We´ll get rid of the log,
+it´s too complex.
+
+236
+00:13:37,120 --> 00:13:39,080
+But it´s really just SQL.
+
+237
+00:13:39,080 --> 00:13:44,391
+I´m giving you the simple stuff at the
+beginning, okay? So that was a select and
+
+238
+00:13:44,391 --> 00:13:48,837
+I can add a WHERE clause,
+WHERE email equals csev@umich.edu.
+
+239
+00:13:48,837 --> 00:13:51,170
+Let's see if I typed that right.
+
+240
+00:13:51,170 --> 00:13:54,057
+And that should show us all the rows,
+but only show the ones for
+
+241
+00:13:54,057 --> 00:13:55,910
+which that's true.
+
+242
+00:13:55,910 --> 00:14:00,850
+So that's a WHERE clause, And a SELECT.
+
+243
+00:14:00,850 --> 00:14:03,370
+You can also throw another
+clause on the end of a SELECT.
+
+244
+00:14:03,370 --> 00:14:04,890
+You can have an ORDER BY.
+
+245
+00:14:04,890 --> 00:14:08,650
+So in this case I'm going to SELECT * FROM
+Users, which is exactly what I did before.
+
+246
+00:14:08,650 --> 00:14:11,320
+Select all the columns
+from the table Users,
+
+247
+00:14:11,320 --> 00:14:16,190
+ORDER BY, again a two-word keyword that
+rolls off the tongue more naturally.
+
+248
+00:14:16,190 --> 00:14:17,990
+email, which is a column.
+
+249
+00:14:17,990 --> 00:14:20,860
+Sorting is one of the things that
+databases do really, really well.
+
+250
+00:14:20,860 --> 00:14:24,940
+And that's because it actually sometimes
+for sorting it has these things. And it has
+
+251
+00:14:24,940 --> 00:14:28,760
+these little tricks that say oh that one
+goes here and this one's the next one.
+
+252
+00:14:28,760 --> 00:14:30,410
+And so if you really want it in
+sorted order,
+
+253
+00:14:30,410 --> 00:14:32,480
+have a really quick way
+to figure that stuff out.
+
+254
+00:14:32,480 --> 00:14:34,590
+But that magic, you don't worry about.
+
+255
+00:14:34,590 --> 00:14:36,580
+That's the database's problem.
+
+256
+00:14:36,580 --> 00:14:41,950
+So you just say hey, smart database
+from billion-dollar company,
+
+257
+00:14:41,950 --> 00:14:44,060
+I would like to order this by email.
+
+258
+00:14:45,100 --> 00:14:48,200
+I don't know how to do that, I don't
+even know how to write a sort algorithm.
+
+259
+00:14:48,200 --> 00:14:53,670
+I just know that I want it ordered
+by email. Now do it, database.
+
+260
+00:14:53,670 --> 00:14:56,890
+And there you go and you see these things
+ordered by email and
+
+261
+00:14:56,890 --> 00:15:03,220
+if I want to change it to be order
+by name, it's order by name, okay?
+
+262
+00:15:03,220 --> 00:15:05,700
+So name this time, email that time.
+
+263
+00:15:05,700 --> 00:15:07,790
+Turns out sometimes you can
+just click on this header.
+
+264
+00:15:07,790 --> 00:15:09,530
+But we're learning the tough way.
+
+265
+00:15:09,530 --> 00:15:11,770
+Which is actually not all that tough.
+
+266
+00:15:13,220 --> 00:15:17,030
+So you can select and you can order them,
+you can have a WHERE clause and
+
+267
+00:15:18,610 --> 00:15:21,130
+ultimately, this is the summary
+of what I've taught you so far.
+
+268
+00:15:22,660 --> 00:15:26,800
+An INSERT INTO a table
+with a columns VALUES,
+
+269
+00:15:26,800 --> 00:15:31,505
+a DELETE FROM Users WHERE, and
+a true / false with UPDATE Users SET,
+
+270
+00:15:31,505 --> 00:15:34,585
+SELECT * FROM Users, or
+SELECT * with an ORDER BY.
+
+271
+00:15:36,105 --> 00:15:41,345
+So at this point, you'd be like, wow,
+I needed to go to college to learn this?
+
+272
+00:15:42,605 --> 00:15:45,025
+It's like so easy [LAUGH].
+
+273
+00:15:45,025 --> 00:15:46,075
+It is easy.
+
+274
+00:15:46,075 --> 00:15:49,025
+That's why I don't teach
+you SQL until later, so
+
+275
+00:15:49,025 --> 00:15:51,085
+you learn the hard stuff, so you're tough.
+
+276
+00:15:51,085 --> 00:15:52,385
+Now I can show you the easy stuff.
+
+277
+00:15:52,385 --> 00:15:55,090
+Now, of course there's
+some complexity to come.
+
+278
+00:15:55,090 --> 00:15:57,830
+But at the end of the day when we're
+talking about a single table and
+
+279
+00:15:57,830 --> 00:16:00,000
+the statements that are one table,
+
+280
+00:16:00,000 --> 00:16:02,320
+it looks like a really big
+fast smart spreadsheet.
+
+281
+00:16:02,320 --> 00:16:06,400
+And that's why some of you may
+recognize what you're learning here.
+
+282
+00:16:06,400 --> 00:16:08,190
+You may say, you know what,
+I've actually been doing this!
+
+283
+00:16:08,190 --> 00:16:09,980
+And I didn't realize how smart I was!
+
+284
+00:16:09,980 --> 00:16:11,950
+I didn't realize I was doing databases.
+
+285
+00:16:13,600 --> 00:16:15,230
+But we're still just at the basics.
+
+286
+00:16:15,230 --> 00:16:19,730
+The power comes with what we're going to talk
+about next and that's when we have more
+
+287
+00:16:19,730 --> 00:16:24,730
+than one table and we start modeling
+data at the connections between things.
+
+288
+00:16:24,730 --> 00:16:29,320
+And that's when we really start to show
+how you can make things really fast.
+
+289
+00:16:30,430 --> 00:16:33,180
+When we exploit the relationships
+between tables.
+
+290
+00:16:33,180 --> 00:16:33,890
+So that's what's up next.

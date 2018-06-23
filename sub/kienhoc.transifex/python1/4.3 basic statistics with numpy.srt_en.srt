@@ -1,0 +1,171 @@
+1
+00:00:01,860 --> 00:00:05,880
+https://www.youtube.com/watch?v=OUaTmKIxCpY
+
+A typical first step in analyzing your data,
+is getting to know your data in the first
+
+2
+00:00:05,880 --> 00:00:10,389
+place. For the Numpy arrays from before, this
+is pretty easy, because it isn't a lot of
+
+3
+00:00:10,389 --> 00:00:15,419
+data. However, as a data scientist, you'll
+be crunching thousands, if not millions or
+
+4
+00:00:15,419 --> 00:00:17,380
+billions of numbers.
+
+5
+00:00:17,380 --> 00:00:21,790
+Imagine you conduct a city-wide survey where
+you ask 5000 adults about their height and
+
+6
+00:00:21,790 --> 00:00:27,410
+weight. You end up with something like this:
+a 2D numpy array, which I named `np_city`,
+
+7
+00:00:27,410 --> 00:00:32,279
+that has 5000 rows, corresponding to the 5000
+people, and two columns, corresponding to
+
+8
+00:00:32,279 --> 00:00:34,780
+the height and the weight.
+
+9
+00:00:34,780 --> 00:00:39,030
+Simply staring at these numbers like a zombie
+won't give you any insights. What you _can_
+
+10
+00:00:39,030 --> 00:00:44,250
+do, though, is generating summarizing statistics
+about your data. Aside from an efficient data
+
+11
+00:00:44,250 --> 00:00:48,329
+structure for number crunching, it happens
+that Numpy is also good at doing these kinds
+
+12
+00:00:48,329 --> 00:00:49,190
+of things.
+
+13
+00:00:49,190 --> 00:00:54,710
+For starters, you can try to find out the
+average height of these 5000 people, with
+
+14
+00:00:54,710 --> 00:00:59,700
+Numpy's mean function. Because it's a function
+from the Numpy package, don't forget to start
+
+15
+00:00:59,700 --> 00:01:01,989
+with "np dot".
+
+16
+00:01:01,989 --> 00:01:05,780
+Of course, I first had to do a subsetting
+operation to get the height column from the
+
+17
+00:01:05,780 --> 00:01:11,860
+2D array. It appears that on average, people
+are 1.75 meters tall. What about the median
+
+18
+00:01:11,860 --> 00:01:17,210
+height? This is the height of the middle person
+if you sort all persons from small to tall.
+
+19
+00:01:17,210 --> 00:01:22,340
+Instead of writing complicated python code
+to figure this out, you can simply use Numpy's
+
+20
+00:01:22,340 --> 00:01:24,080
+`median()` function:
+
+21
+00:01:24,080 --> 00:01:29,030
+You can do similar things for the weight column
+in `np_city`. Often, these summarizing statistics
+
+22
+00:01:29,030 --> 00:01:33,510
+will provide you with a "sanity check" of
+the data. If you end up with a average weight
+
+23
+00:01:33,510 --> 00:01:38,950
+of 2000 kilograms, you're measurements are
+most likely incorrect.
+
+24
+00:01:38,950 --> 00:01:43,330
+Apart from `mean()` and `median()`, there's
+also other functions, like `corrcoeff()` to
+
+25
+00:01:43,330 --> 00:01:45,990
+check if for example height and weight are
+correlated,
+
+26
+00:01:45,990 --> 00:01:49,040
+and `std()`, for standard deviation.
+
+27
+00:01:49,040 --> 00:01:54,799
+Numpy also features more basic functions,
+such as `sum()` and `sort()`, which also exist
+
+28
+00:01:54,799 --> 00:01:59,810
+in the basic Python distribution. However,
+the big difference here is speed. Because
+
+29
+00:01:59,810 --> 00:02:05,880
+Numpy enforces a single data type in an array,
+it can drastically speed up the calculations.
+
+30
+00:02:05,880 --> 00:02:10,220
+Just a sidenote here: If you're wondering
+how I came up with the data in this video:
+
+31
+00:02:10,220 --> 00:02:16,200
+I simulated it with Numpy functions! I sampled
+two random distributions 5000 times to create
+
+32
+00:02:16,200 --> 00:02:19,980
+the `height` and `weight` arrays, and then
+used `column_stack` to paste them together
+
+33
+00:02:19,980 --> 00:02:23,810
+as two columns. Another thing that Numpy can
+do!
+
+34
+00:02:23,810 --> 00:02:28,520
+Another great tool to get some sense of your
+data is to visualize it, but that's something
+
+35
+00:02:28,520 --> 00:02:33,360
+for later. First, head over to the exercises
+to learn how to explore your Numpy arrays!
+

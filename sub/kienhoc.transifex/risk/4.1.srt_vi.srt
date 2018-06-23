@@ -1,0 +1,559 @@
+0
+00:00:05,147 --> 00:00:05,850
+https://youtu.be/0O-GRgSBXg8
+Xin chào.
+Những gì chúng ta sẽ nghiên cứu trong khóa học,
+
+2
+00:00:10,750 --> 00:00:15,880
+ đó là đánh giá rủi ro dự án, hay là cách sắp xếp mọi thứ lại với nhau.
+
+3
+00:00:16,890 --> 00:00:21,115
+Và có một điều tôi khá thích thú về những gì chúng ta đã nghiên cứu là nó có hệ thống.
+
+4
+00:00:21,115 --> 00:00:25,119
+So remember, I&#39;ll walk though what we are doing again, and
+
+5
+00:00:25,119 --> 00:00:28,269
+bạn sẽ thấy những gì tôi muốn nói là một phần có hệ thống.
+
+6
+00:00:28,269 --> 00:00:32,718
+But the way I would title this last finishing content,
+
+7
+00:00:32,718 --> 00:00:36,500
+week, module, whatever you want to call it.
+
+8
+00:00:36,500 --> 00:00:40,340
+Tôi sẽ gọi nó là định giá của cái nhìn đầu tiên.
+
+9
+00:00:40,340 --> 00:00:42,520
+Nếu bạn nhìn vào chương trình học, đây là những gì tôi dùng để gọi nó.
+
+10
+00:00:42,520 --> 00:00:46,090
+Lý do là chúng ta muốn đưa tất cả mọi thứ lại với nhau,
+
+11
+00:00:46,090 --> 00:00:48,670
+và làm một ví dụ rất dài.
+
+12
+00:00:48,670 --> 00:00:51,790
+Tôi sẽ phá vỡ ví dụ đó thành những phần có kích thước nhỏ hơn 
+
+13
+00:00:51,790 --> 00:00:54,220
+để bạn làm việc với tôi dễ dàng hơn.
+
+14
+00:00:54,220 --> 00:00:59,080
+Và nhiều khi, các video này có thể không dùng được nữa,
+nhưng tôi vẫn muốn thực hiện video này
+
+15
+00:00:59,080 --> 00:01:04,060
+both conceptually and practically, so that you&#39;re left with a good
+
+16
+00:01:04,060 --> 00:01:09,080
+sense of why the heck did we do course one, on time value of money typically.
+
+17
+00:01:09,080 --> 00:01:12,430
+Course two on risk assessment, and how they belong together.
+
+18
+00:01:12,430 --> 00:01:13,320
+So let&#39;s get started.
+
+19
+00:01:15,370 --> 00:01:18,740
+As always, I show this equation so
+
+20
+00:01:18,740 --> 00:01:22,400
+that it grounds you in where we have been and where we are headed.
+
+21
+00:01:22,400 --> 00:01:25,480
+So we are doing project analysis, and most projects,
+
+22
+00:01:25,480 --> 00:01:29,593
+we would like them to go through this exercise, if not all of them.
+
+23
+00:01:29,593 --> 00:01:33,320
+In server and payback, IRR, whatever,
+
+24
+00:01:33,320 --> 00:01:37,540
+always do an NPV analysis because it&#39;s the deepest analysis you can do.
+
+25
+00:01:38,760 --> 00:01:42,754
+Does not mean your answers or your numbers are right, because law of
+
+26
+00:01:42,754 --> 00:01:47,670
+analysis is making assumptions largely because you don&#39;t know the future.
+
+27
+00:01:47,670 --> 00:01:51,070
+And to me that&#39;s the critical part of finance.
+
+28
+00:01:51,070 --> 00:01:55,820
+Which is it forces you to be in decision making mode in an uncertain world.
+
+29
+00:01:56,990 --> 00:01:59,012
+So, let&#39;s get started.
+
+30
+00:01:59,012 --> 00:02:01,390
+So -I naught is the cash flow today.
+
+31
+00:02:01,390 --> 00:02:04,530
+And bunch of cash flows in the future.
+
+32
+00:02:04,530 --> 00:02:10,230
+You, in a project, would idly like this to last forever, not true.
+
+33
+00:02:10,229 --> 00:02:14,470
+For simplicity and calculations, we will make the risen infinite
+
+34
+00:02:14,470 --> 00:02:19,850
+many times because we can use c over r minus g, or simple formula.
+
+35
+00:02:19,850 --> 00:02:23,400
+But you can always use a spreadsheet instead of doing calculations, so
+
+36
+00:02:23,400 --> 00:02:28,780
+there is a little disconnect sometimes between the notes and the problem sets.
+
+37
+00:02:28,780 --> 00:02:30,100
+But some of the disconnect,
+
+38
+00:02:30,100 --> 00:02:34,550
+it is by design, because I want you to be able to use Excel.
+
+39
+00:02:36,040 --> 00:02:38,269
+And I don&#39;t want the class to become about Excel.
+
+40
+00:02:38,269 --> 00:02:42,086
+I think Excel has its value, but
+
+41
+00:02:42,086 --> 00:02:48,177
+we want to use it when its value is worth it, right?
+
+42
+00:02:48,177 --> 00:02:51,723
+So okay, so we&#39;ll assume N is the life of the machine and
+
+43
+00:02:51,723 --> 00:02:53,840
+allow N to be as long as possible.
+
+44
+00:02:55,530 --> 00:02:58,640
+There two basic ingredients, the first is cash flow.
+
+45
+00:02:58,640 --> 00:03:01,040
+Very quickly, who do they belong to?
+
+46
+00:03:01,040 --> 00:03:02,985
+They belong to the project,
+
+47
+00:03:02,985 --> 00:03:07,790
+they belong to the manager who&#39;s responsible for projecting it.
+
+48
+00:03:07,790 --> 00:03:09,180
+We have done them.
+
+49
+00:03:09,180 --> 00:03:11,920
+You should know how to get free cash flows.
+
+50
+00:03:11,920 --> 00:03:16,412
+You should be able to do revenues, COGS, SGMA, depreciation,
+
+51
+00:03:16,412 --> 00:03:21,090
+taxes, working capital, cap-ex, all of those items.
+
+52
+00:03:21,090 --> 00:03:24,980
+And you should be able to understand the importance of the whole horizon.
+
+53
+00:03:24,980 --> 00:03:26,560
+Beginning year, end year, and so on.
+
+54
+00:03:27,660 --> 00:03:30,910
+Then we have spent a lot of time in this module
+
+55
+00:03:30,910 --> 00:03:33,010
+in trying to figure out cost of capital.
+
+56
+00:03:33,010 --> 00:03:36,820
+And we did that in many layered steps,
+
+57
+00:03:36,820 --> 00:03:40,110
+including statistics, and understanding finance,
+
+58
+00:03:40,110 --> 00:03:45,860
+understanding how the world works, how stocks and bonds work.
+
+59
+00:03:45,860 --> 00:03:48,580
+And we have assumed, for the time being,
+
+60
+00:03:48,580 --> 00:03:53,510
+that the cost of capital will focus mainly on equity cost of capital.
+
+61
+00:03:53,510 --> 00:03:57,020
+We have assumed no debt for the time being.
+
+62
+00:03:57,020 --> 00:04:01,480
+The important key, however, in doing cost of capital, framework key,
+
+63
+00:04:01,480 --> 00:04:06,360
+setting your mind right, is the r, who does it belong to?
+
+64
+00:04:06,360 --> 00:04:08,230
+R belongs to the marketplace,
+
+65
+00:04:08,230 --> 00:04:11,950
+to the investor, to the world that&#39;s looking at you.
+
+66
+00:04:11,950 --> 00:04:14,050
+So remember we were talking about rainforests,
+
+67
+00:04:14,050 --> 00:04:16,100
+how did you evaluate rainforests?
+
+68
+00:04:16,100 --> 00:04:19,910
+You didn&#39;t do the valuation, the marketplace looks for
+
+69
+00:04:19,910 --> 00:04:24,840
+the R and the best place to go for R is the next best alternative.
+
+70
+00:04:24,840 --> 00:04:30,080
+It&#39;s also called cost of capital or opportunity cost of capital.
+
+71
+00:04:30,080 --> 00:04:32,730
+And the reason why it&#39;s called opportunity cost,
+
+72
+00:04:32,730 --> 00:04:37,520
+because if you don&#39;t invest in rainforest, you&#39;re going to invest in Amazon, but
+
+73
+00:04:37,520 --> 00:04:42,080
+you&#39;ll do that only if Amazon is a better deal for you.
+
+74
+00:04:42,080 --> 00:04:44,920
+We have spent some time on cash flows.
+
+75
+00:04:44,920 --> 00:04:48,160
+We spent some time on risk and cost of capital.
+
+76
+00:04:48,160 --> 00:04:52,140
+For convenience, we have assumed all equity returns.
+
+77
+00:04:52,140 --> 00:04:55,390
+So let&#39;s stare at this graph for a second.
+
+78
+00:04:55,390 --> 00:04:58,430
+On the righthand side I made DEBT = 0.
+
+79
+00:04:58,430 --> 00:05:03,210
+And on the righthand side, the only thing that remains is EQUITY.
+
+80
+00:05:03,210 --> 00:05:07,300
+So when I do cost of capital I also do return on equity.
+
+81
+00:05:07,300 --> 00:05:10,130
+So let me just write for a second.
+
+82
+00:05:11,430 --> 00:05:15,781
+Return on debt will be called Rd.
+
+83
+00:05:15,781 --> 00:05:21,385
+And just setting things up is 0 because DEBT = 0.
+
+84
+00:05:21,385 --> 00:05:26,810
+We&#39;ll call EQUITY E and the return on EQUITY we&#39;ll call Re.
+
+85
+00:05:27,900 --> 00:05:33,100
+But our goal is to first pass get a return on assets.
+
+86
+00:05:33,100 --> 00:05:34,150
+Why?
+
+87
+00:05:34,150 --> 00:05:37,240
+Because assets generate cash flow.
+
+88
+00:05:37,240 --> 00:05:39,480
+And it&#39;s the return on assets that we want.
+
+89
+00:05:40,530 --> 00:05:45,010
+We cannot see it, so we go to an alternative, the next best alternative.
+
+90
+00:05:45,010 --> 00:05:50,089
+We cannot observe the REAL ASSETS; once we have DEBT = 0,
+
+91
+00:05:50,089 --> 00:05:54,370
+we know that these two numbers have to be the same.
+
+92
+00:05:56,050 --> 00:05:59,670
+So that&#39;s the logic of what we have been doing until now.
+
+93
+00:05:59,670 --> 00:06:05,730
+Cost of capital in an all equity firm is the cost of equity or
+
+94
+00:06:05,730 --> 00:06:10,360
+the return on equity by the way I used those and we do the cost and
+
+95
+00:06:10,360 --> 00:06:12,870
+return is synonymous.
+
+96
+00:06:12,870 --> 00:06:16,340
+The return on equity is obtained by figuring out what?
+
+97
+00:06:16,340 --> 00:06:19,100
+The beta of equity and
+
+98
+00:06:19,100 --> 00:06:24,450
+all published quote unquote betas, if you see out there, unqualified.
+
+99
+00:06:24,450 --> 00:06:25,615
+They just say beta.
+
+100
+00:06:25,615 --> 00:06:30,250
+So remember we went Yahoo Finance and we went to Amazon and it just said beta,
+
+101
+00:06:30,250 --> 00:06:31,950
+it didn&#39;t say beta equity.
+
+102
+00:06:31,950 --> 00:06:38,624
+And the reason is, beta equity is very easy relatively speaking to calculate.
+
+103
+00:06:38,624 --> 00:06:46,506
+Because stocks trade frequently but
+
+104
+00:06:46,506 --> 00:06:52,070
+bonds, here we have assumed bonds are not issued by Amazon.
+
+105
+00:06:52,070 --> 00:06:57,230
+Bonds don&#39;t trade that often, trade infrequently.
+
+106
+00:06:57,230 --> 00:07:01,090
+So even if you wanted to calculate as I see later,
+
+107
+00:07:01,090 --> 00:07:05,220
+beta of debt, it&#39;s tougher to calculate given the real world.
+
+108
+00:07:05,220 --> 00:07:08,890
+So, equity betas are what are published.
+
+109
+00:07:08,890 --> 00:07:12,010
+So, if you go anywhere and see a beta, that would be beta equity.
+
+110
+00:07:12,010 --> 00:07:16,780
+Please remember, a lot of people therefore think that debt can&#39;t have a beta.
+
+111
+00:07:16,780 --> 00:07:18,080
+Not true.
+
+112
+00:07:18,080 --> 00:07:21,180
+There&#39;s no such thing as debt can&#39;t have a beta.
+
+113
+00:07:21,180 --> 00:07:26,710
+The only place where we say beta is zero is risk-free debt.
+
+114
+00:07:26,710 --> 00:07:29,200
+So what I&#39;m going to do is now
+
+115
+00:07:29,200 --> 00:07:34,620
+try to build a world where your project is more real.
+
+116
+00:07:34,620 --> 00:07:38,870
+Or the project analysis is more applicable.
+
+117
+00:07:40,000 --> 00:07:41,530
+I&#39;m doing this for two reasons.
+
+118
+00:07:41,530 --> 00:07:44,410
+One, most of the world&#39;s firms have debt.
+
+119
+00:07:45,820 --> 00:07:49,193
+And therefore it&#39;s more realistic.
+
+120
+00:07:49,193 --> 00:07:55,133
+However, I&#39;m also doing it for the reason that this is a nice bridge for
+
+121
+00:07:55,133 --> 00:07:58,209
+bringing in markets and financing.
+
+122
+00:07:58,209 --> 00:08:01,346
+So what you want is to understand all of finance,
+
+123
+00:08:01,346 --> 00:08:05,280
+you just don&#39;t need to understand the valuation piece.
+
+124
+00:08:05,280 --> 00:08:09,770
+You need to understand now what are the details of debt and equity?
+
+125
+00:08:09,770 --> 00:08:12,160
+What are the markets in which they exist?
+
+126
+00:08:12,160 --> 00:08:15,860
+What are the characteristics of debt and equity?
+
+127
+00:08:15,860 --> 00:08:18,060
+How do firms go raise them?
+
+128
+00:08:18,060 --> 00:08:24,020
+That&#39;s not being covered right now but this section will be a good kind of
+
+129
+00:08:24,020 --> 00:08:28,100
+this module is a good tie-in into all the financing issues.
+
+130
+00:08:28,100 --> 00:08:30,850
+So let&#39;s take a break here, and come back.
+
+131
+00:08:30,850 --> 00:08:37,040
+And now consider what I call a firm that has got a capital structure.
+
+132
+00:08:37,039 --> 00:08:42,850
+By capital structure, you almost automatically mean mix of debt and equity.
+
+133
+00:08:43,919 --> 00:08:46,840
+And does that mean that there are forms without any debt?
+
+134
+00:08:46,840 --> 00:08:47,600
+Of course there are.
+
+135
+00:08:47,600 --> 00:08:52,510
+But typically it means Capital structure by definition means how much debt
+
+136
+00:08:52,510 --> 00:08:55,270
+versus equity you have, or vice versa.
+
+137
+00:08:55,270 --> 00:08:56,830
+So see you in a minute.
+
+138
+00:08:56,830 --> 00:08:57,750
+Just think about it for
+
+139
+00:08:57,750 --> 00:09:01,830
+a second, same graph, all we are going to make is debt is positive.
+

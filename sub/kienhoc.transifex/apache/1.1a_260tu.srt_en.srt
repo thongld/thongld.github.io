@@ -1,0 +1,167 @@
+0
+00:00:00,000 --> 00:00:04,782
+https://youtu.be/kBmV4mYUZE4
+
+1
+00:00:04,782 --> 00:00:06,990
+ANTHONY JOSEPH: Hello, and welcome to an Introduction
+
+2
+00:00:06,990 --> 00:00:08,680
+to Apache Spark.
+
+3
+00:00:08,680 --> 00:00:10,210
+My name is Anthony Joseph, and I'm
+
+4
+00:00:10,210 --> 00:00:12,180
+a professor in the electrical engineering and computer
+
+5
+00:00:12,180 --> 00:00:13,980
+science department here at the University
+
+6
+00:00:13,980 --> 00:00:16,160
+of California in Berkeley.
+
+7
+00:00:16,160 --> 00:00:17,590
+Big data is all around us.
+
+8
+00:00:17,590 --> 00:00:19,920
+And Apache Spark is one of the hottest new tools
+
+9
+00:00:19,920 --> 00:00:24,460
+for analyzing big data quickly and efficiently.
+
+10
+00:00:24,460 --> 00:00:27,810
+In this lecture, I'll cover the course objectives
+
+11
+00:00:27,810 --> 00:00:29,960
+and prerequisites.
+
+12
+00:00:29,960 --> 00:00:31,930
+We'll talk about what is Apache Spark
+
+13
+00:00:31,930 --> 00:00:33,930
+and where big data comes from.
+
+14
+00:00:33,930 --> 00:00:36,280
+We'll look at the structure spectrum.
+
+15
+00:00:36,280 --> 00:00:39,130
+And then we'll look at Apache Spark and its key concept
+
+16
+00:00:39,130 --> 00:00:40,934
+of data frames.
+
+17
+00:00:40,934 --> 00:00:42,600
+And then we'll spend quite a bit of time
+
+18
+00:00:42,600 --> 00:00:48,460
+looking at different Spark transformations and actions.
+
+19
+00:00:48,460 --> 00:00:50,720
+So the objectives of this course are
+
+20
+00:00:50,720 --> 00:00:53,950
+that you experiment with use cases for Apache Spark.
+
+21
+00:00:53,950 --> 00:00:56,040
+You'll perform extract transform and load
+
+22
+00:00:56,040 --> 00:00:59,740
+operations, perform basic data and analytics,
+
+23
+00:00:59,740 --> 00:01:02,600
+and visualization.
+
+24
+00:01:02,600 --> 00:01:05,030
+You'll also understand Apache Sparks
+
+25
+00:01:05,030 --> 00:01:07,390
+history and its development.
+
+26
+00:01:07,390 --> 00:01:09,490
+And you'll understand the conceptual model
+
+27
+00:01:09,490 --> 00:01:13,100
+of data frames and Spark SQL.
+
+28
+00:01:13,100 --> 00:01:17,650
+You'll know Spark essentials like transformations, actions,
+
+29
+00:01:17,650 --> 00:01:21,420
+pySpark, and the SparkSQL APIs.
+
+30
+00:01:21,420 --> 00:01:25,070
+And you'll learn basic debugging of Apache Spark programs
+
+31
+00:01:25,070 --> 00:01:29,910
+and where to find answers to Spark questions.
+
+32
+00:01:29,910 --> 00:01:32,740
+This course has several prerequisites.
+
+33
+00:01:32,740 --> 00:01:35,150
+The first is that you have a basic programming skill
+
+34
+00:01:35,150 --> 00:01:37,350
+experience.
+
+35
+00:01:37,350 --> 00:01:40,630
+You also should have some experience with Python 2.7.
+
+36
+00:01:40,630 --> 00:01:43,690
+If not, you can take the Python mini course at the link
+
+37
+00:01:43,690 --> 00:01:47,220
+below to learn Python pretty quickly.
+
+38
+00:01:47,220 --> 00:01:50,640
+You'll also need Google's Chrome browser.
+
+39
+00:01:50,640 --> 00:01:52,450
+The environment that we're using doesn't
+
+40
+00:01:52,450 --> 00:01:56,503
+support Internet Explorer, Edge, or Safari.
+
+41
+00:01:56,503 --> 00:01:57,003
+

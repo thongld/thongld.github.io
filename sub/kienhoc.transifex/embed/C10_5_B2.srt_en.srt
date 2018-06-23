@@ -1,0 +1,146 @@
+0
+00:00:00,000 --> 00:00:00,010
+http://youtu.be/sxgamL2aCn4
+
+1
+00:00:00,610 --> 00:00:04,420
+You have seen a Logic Analyzer 
+operating in simulation mode.
+
+2
+00:00:04,420 --> 00:00:07,250
+Today, we're going to show you 
+a real Logic Analyzer.
+
+3
+00:00:07,250 --> 00:00:13,519
+First, we're going to connect signals
+of our circuit to the Logic Analyzer.
+
+4
+00:00:13,519 --> 00:00:18,790
+So we're going to connect 4 pins 
+for the left motor and 4 more pins
+
+5
+00:00:18,790 --> 00:00:23,440
+for the right motor and the two pins 
+associated with the sensors.
+
+6
+00:00:23,440 --> 00:00:27,320
+So we'll connect these 10 pins 
+to the Logic Analyzer.
+
+7
+00:00:27,320 --> 00:00:28,640
+OK.
+
+8
+00:00:28,640 --> 00:00:34,160
+This is a window showing you real-time recording 
+as the motor is spinning.
+
+9
+00:00:34,160 --> 00:00:39,690
+Both sensors are off, so they're spinning
+in the same direction.
+
+10
+00:00:39,690 --> 00:00:44,829
+These four pins right here, these four signals, 
+represent one motor.
+
+11
+00:00:44,829 --> 00:00:47,489
+And there's the 5-- 01, 01.
+
+12
+00:00:47,489 --> 00:00:51,070
+And these four pins are the other motor.
+
+13
+00:00:51,070 --> 00:00:52,460
+And there's a 5.
+
+14
+00:00:52,460 --> 00:00:58,630
+And so as it turns, we can see that the two
+motors will go through the pattern
+
+15
+00:00:58,630 --> 00:01:00,190
+that we've programmed.
+
+16
+00:01:00,190 --> 00:01:06,190
+This is a hardware physical way to test that
+the system is operational.
+
+17
+00:01:06,190 --> 00:01:11,570
+So Jon, what
+would happen if I were to press the left bumper
+
+18
+00:01:11,570 --> 00:01:14,950
+sensor that is detecting a wall?
+
+19
+00:01:14,950 --> 00:01:19,460
+You see that what will happen
+is the speed will drop in half.
+
+20
+00:01:19,460 --> 00:01:23,170
+And the one motor will turn in one direction.
+
+21
+00:01:23,170 --> 00:01:26,190
+And the other motor will turn in the other
+direction.
+
+22
+00:01:27,590 --> 00:01:28,590
+Push the other button.
+
+23
+00:01:28,590 --> 00:01:29,590
+OK.
+
+24
+00:01:29,590 --> 00:01:30,640
+Let me try the other one.
+
+25
+00:01:30,640 --> 00:01:37,470
+Again, pushing the right bumper
+will rotate one wheel in the opposite direction
+
+26
+00:01:37,470 --> 00:01:40,210
+and drop the speed in half.
+
+27
+00:01:42,950 --> 00:01:51,900
+So we verified the functioning of our logic,
+both physically by observing it and also by
+
+28
+00:01:51,900 --> 00:01:56,740
+monitoring it in a Logic Analyzer.
+
+29
+00:01:56,740 --> 00:02:02,329
+One last thing to notice
+is that the time between steps is exactly
+
+30
+00:02:02,329 --> 00:02:04,229
+20 milliseconds.
+
+31
+00:02:04,229 --> 00:02:08,670
+And this 20 milliseconds was created with
+the SysTick periodic interrupts.
+

@@ -1,0 +1,193 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/7YvyQfn7s1o
+
+1
+00:00:00,000 --> 00:00:00,287
+
+2
+00:00:00,287 --> 00:00:02,870
+DR. JONATHAN VALVANO: We have
+written the software, downloaded
+
+3
+00:00:02,870 --> 00:00:06,900
+onto the launch pad, and we
+have built the R2R ladder.
+
+4
+00:00:06,900 --> 00:00:08,740
+Next we're going to debug it.
+
+5
+00:00:08,740 --> 00:00:12,460
+What we have is one channel
+of the logic analyzer
+
+6
+00:00:12,460 --> 00:00:15,955
+connected here to the DAC output,
+and we have the second channel
+
+7
+00:00:15,955 --> 00:00:19,870
+of the logic analyzer
+connected to the heartbeat.
+
+8
+00:00:19,870 --> 00:00:25,800
+And now let's look at the output
+of the DAC when we push the button.
+
+9
+00:00:25,800 --> 00:00:29,240
+On this screen over here,
+we see the oscilloscope.
+
+10
+00:00:29,240 --> 00:00:33,120
+The orange is the DAC output,
+and the blue is the heartbeat.
+
+11
+00:00:33,120 --> 00:00:36,110
+DR. RAMESH YERRABALLI: So I'm
+going to press the switch, which
+
+12
+00:00:36,110 --> 00:00:41,530
+should cause an interrupt, which it's
+being interrupted by the SysTick,
+
+13
+00:00:41,530 --> 00:00:46,749
+and we're producing a sine
+wave in response to it.
+
+14
+00:00:46,749 --> 00:00:47,790
+DR. JONATHAN VALVANO: OK.
+
+15
+00:00:47,790 --> 00:00:50,940
+We see that the heartbeat
+toggles the output.
+
+16
+00:00:50,940 --> 00:00:52,450
+Every interrupt.
+
+17
+00:00:52,450 --> 00:00:55,340
+And so we can see that each
+time we get an interrupt,
+
+18
+00:00:55,340 --> 00:00:58,940
+a new value is output to the DAC.
+
+19
+00:00:58,940 --> 00:01:10,255
+The numbers that we're outputting were
+a 1, 1, 1, 2, 4, 5, 6, 7, 7, 7, 6, 5, 4,
+
+20
+00:01:10,255 --> 00:01:13,440
+2, 1, 1, 1 again.
+
+21
+00:01:13,440 --> 00:01:16,730
+And this pattern repeats over and over.
+
+22
+00:01:16,730 --> 00:01:18,615
+DR. RAMESH YERRABALLI:
+So, how do we verify
+
+23
+00:01:18,615 --> 00:01:23,809
+whether the time between interrupts
+is correct to 100 Hertz, Jon?
+
+24
+00:01:23,809 --> 00:01:24,850
+DR. JONATHAN VALVANO: Ah.
+
+25
+00:01:24,850 --> 00:01:27,000
+That's fairly easy,
+because all I need to do
+
+26
+00:01:27,000 --> 00:01:34,120
+is measure the time
+here to the time here
+
+27
+00:01:34,120 --> 00:01:42,790
+to see that my system takes
+approximately 10 milliseconds
+
+28
+00:01:42,790 --> 00:01:45,030
+to generate one wave form.
+
+29
+00:01:45,030 --> 00:01:47,677
+So that's something I
+do with oscilloscope.
+
+30
+00:01:47,677 --> 00:01:49,760
+DR. RAMESH YERRABALLI: So
+what does it sound like?
+
+31
+00:01:49,760 --> 00:01:50,060
+DR. JONATHAN VALVANO: Ah.
+
+32
+00:01:50,060 --> 00:01:50,560
+Plug it in.
+
+33
+00:01:50,560 --> 00:01:51,490
+Let's see.
+
+34
+00:01:51,490 --> 00:01:53,281
+DR. RAMESH YERRABALLI:
+So let's plug it in.
+
+35
+00:01:53,281 --> 00:01:58,770
+So we'll plug in a speaker to our DAC.
+
+36
+00:01:58,770 --> 00:02:00,320
+And I'm going to play the sound.
+
+37
+00:02:00,320 --> 00:02:03,180
+
+38
+00:02:03,180 --> 00:02:07,510
+And it sounds like 100 Hertz.
+
+39
+00:02:07,510 --> 00:02:10,996
+So if you play around with this,
+we could get something more fun.
+
+40
+00:02:10,996 --> 00:02:12,870
+DR. JONATHAN VALVANO:
+That's what lab is for.
+
+41
+00:02:12,870 --> 00:02:14,370
+DR. RAMESH YERRBALLI: All right.
+
+42
+00:02:14,370 --> 00:02:16,220
+DR. JONATHAN VALVANO: Your turn.

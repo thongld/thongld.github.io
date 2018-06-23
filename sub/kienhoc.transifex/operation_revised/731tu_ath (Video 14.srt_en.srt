@@ -1,0 +1,400 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/scqlnoIGJfw
+
+1
+00:00:05,599 --> 00:00:08,530
+hello again and welcomed operations
+management
+
+2
+00:00:08,529 --> 00:00:11,730
+in this session we're gonna be talking
+about critical path
+
+3
+00:00:11,730 --> 00:00:14,769
+critical path allows us to determine
+
+4
+00:00:14,769 --> 00:00:19,509
+how long a process actually takes so what
+we're going to be doing
+
+5
+00:00:19,509 --> 00:00:23,769
+is following a process flow diagram from
+beginning to end
+
+6
+00:00:23,769 --> 00:00:27,118
+but we're also gonna be taking a look at
+the time it takes
+
+7
+00:00:27,118 --> 00:00:32,210
+to complete each activity for this we're
+going to use an example of cleaning an
+
+8
+00:00:32,210 --> 00:00:32,939
+office
+
+9
+00:00:32,939 --> 00:00:36,210
+if you notice here we have six different
+activities
+
+10
+00:00:36,210 --> 00:00:41,370
+starting with picking up things all the
+way through dusting sanitizing
+
+11
+00:00:41,369 --> 00:00:46,238
+vacuuming and emptying the trash can and
+finally cleaning that doorknob when we leave
+
+12
+00:00:46,238 --> 00:00:47,218
+the office
+
+13
+00:00:47,219 --> 00:00:50,239
+just like before when we did
+
+14
+00:00:50,238 --> 00:00:54,169
+doing diagram processes
+
+15
+00:00:54,170 --> 00:00:57,329
+we have precedence relationships and
+
+16
+00:00:57,329 --> 00:01:03,120
+this time were also acting adding times
+to complete individual activities
+
+17
+00:01:03,119 --> 00:01:07,430
+so picking up the cups and so forth
+takes fifty-five seconds
+
+18
+00:01:07,430 --> 00:01:10,569
+dusting the surfaces takes 300 seconds
+
+19
+00:01:10,569 --> 00:01:14,919
+and so on as you can see all those times
+for the different activities
+
+20
+00:01:14,920 --> 00:01:19,560
+so now when we build process flow
+diagram
+
+21
+00:01:19,560 --> 00:01:24,890
+not only concerned with precedents to
+make sure that we put the activities in
+
+22
+00:01:24,890 --> 00:01:29,340
+order but we're also interested in how
+long every activity takes
+
+23
+00:01:29,340 --> 00:01:34,700
+so here we have it starting with picking
+up the cups and papers in fifty-five
+
+24
+00:01:34,700 --> 00:01:35,600
+seconds
+
+25
+00:01:35,599 --> 00:01:40,438
+activity a we branch of into three
+different activities
+
+26
+00:01:40,438 --> 00:01:45,239
+B, C and D can be done at the same time
+
+27
+00:01:45,239 --> 00:01:49,489
+B - testing services takes 300 seconds
+
+28
+00:01:49,489 --> 00:01:53,688
+sanitizing things activity C in
+ninety seconds
+
+29
+00:01:53,688 --> 00:01:57,839
+and vacuuming activity D is three hundred
+and sixty seconds
+
+30
+00:01:57,840 --> 00:02:01,060
+once we finished dusting and sanitizing
+
+31
+00:02:01,060 --> 00:02:04,618
+we can empty the trash can E at 40s
+
+32
+00:02:04,618 --> 00:02:08,938
+and finally once we finished vacuuming
+and emptying the trash can
+
+33
+00:02:08,938 --> 00:02:13,310
+we sanitize a doorknob and leave at
+forty seconds
+
+34
+00:02:13,310 --> 00:02:16,759
+so how long is actually taking us 
+
+35
+00:02:16,759 --> 00:02:23,209
+to complete this entire process what we need
+to do is take a look at all the different
+
+36
+00:02:23,209 --> 00:02:23,729
+ways
+
+37
+00:02:23,729 --> 00:02:27,889
+we can get through this process flow
+diagram notice from
+
+38
+00:02:27,889 --> 00:02:31,469
+A we branch off into three different
+areas going from
+
+39
+00:02:31,469 --> 00:02:34,750
+A to B, E to F
+
+40
+00:02:34,750 --> 00:02:37,769
+that's one way through the process
+
+41
+00:02:37,769 --> 00:02:41,140
+and if we take a look at that path
+
+42
+00:02:41,139 --> 00:02:44,539
+and we add up all the times on the activities
+of that path
+
+43
+00:02:44,539 --> 00:02:49,989
+ABE and F that path goes and takes
+
+44
+00:02:49,989 --> 00:02:54,650
+435 seconds but there's another path
+through
+
+45
+00:02:54,650 --> 00:02:59,310
+that ACEFand if we add up the times
+along
+
+46
+00:02:59,310 --> 00:03:04,340
+ACEF we end up with 225 sec
+
+47
+00:03:04,340 --> 00:03:08,469
+and lastly we have a path that's just
+
+48
+00:03:08,469 --> 00:03:14,199
+ADF  it looks like the shortest path
+because it's only three activities on it
+
+49
+00:03:14,199 --> 00:03:18,209
+but in actuality the length of time is
+the longest
+
+50
+00:03:18,209 --> 00:03:24,019
+455 seconds so how long does it take to
+get through the whole process
+
+51
+00:03:24,019 --> 00:03:27,629
+its 455 seconds
+
+52
+00:03:27,628 --> 00:03:31,518
+that is our critical path it's the
+longest
+
+53
+00:03:31,519 --> 00:03:35,069
+path time of a process
+
+54
+00:03:35,068 --> 00:03:40,018
+so what it means is that by the time we
+finish
+
+55
+00:03:40,019 --> 00:03:43,060
+ADF we've also completed
+
+56
+00:03:43,060 --> 00:03:47,170
+dusting the survices sanitizing and emptying
+the trash can
+
+57
+00:03:47,169 --> 00:03:51,699
+but what happened if activity times
+change
+
+58
+00:03:51,699 --> 00:03:55,219
+here activity B
+
+59
+00:03:55,219 --> 00:03:58,979
+has been increased we went from 300
+seconds to three hundred and thirty
+
+60
+00:03:58,979 --> 00:03:59,780
+seconds
+
+61
+00:03:59,780 --> 00:04:05,900
+and vacuuming the carpet went down by 20
+seconds from 360 to 340
+
+62
+00:04:05,900 --> 00:04:09,010
+let's see what kind of impact that has
+
+63
+00:04:09,009 --> 00:04:15,929
+on our process flow diagram and our
+critical path so here we have the same
+
+64
+00:04:15,930 --> 00:04:16,819
+diagram
+
+65
+00:04:16,818 --> 00:04:21,659
+but with the change times for B and D so
+let's take a look
+
+66
+00:04:21,660 --> 00:04:26,479
+ABEF well that's now 465 seconds
+
+67
+00:04:26,478 --> 00:04:30,649
+ACEF that didn't change at all
+
+68
+00:04:30,649 --> 00:04:34,799
+cus nothing none of the activities
+on that path changed
+
+69
+00:04:34,800 --> 00:04:38,050
+at 225 seconds but lastly
+
+70
+00:04:38,050 --> 00:04:41,430
+ADF that changed and it's now
+
+71
+00:04:41,430 --> 00:04:44,800
+435 seconds
+
+72
+00:04:44,800 --> 00:04:49,120
+so because the times changed on
+activities
+
+73
+00:04:49,120 --> 00:04:52,490
+the critical path changed as well
+
+74
+00:04:52,490 --> 00:04:56,360
+the critical path moved from ADF
+
+75
+00:04:56,360 --> 00:05:00,199
+to ABEF and the process flow
+
+76
+00:05:00,199 --> 00:05:04,340
+time changed it went from 455 seconds
+
+77
+00:05:04,339 --> 00:05:07,969
+to now 465 seconds
+
+78
+00:05:07,970 --> 00:05:12,180
+so as you can see when you're dealing
+with processes
+
+79
+00:05:12,180 --> 00:05:16,129
+and the activity times if those times
+change
+
+80
+00:05:16,129 --> 00:05:19,949
+you have to take a good hard look at
+your process flow
+
+81
+00:05:19,949 --> 00:05:24,080
+to see whether you're critical path has
+changed as well
+
+82
+00:05:24,079 --> 00:05:27,978
+and our next session we're gonna be talking
+about slack time
+
+83
+00:05:27,978 --> 00:05:32,939
+slack time says certain activities don't
+always have to be started right at the
+
+84
+00:05:32,939 --> 00:05:33,839
+beginning
+
+85
+00:05:33,839 --> 00:05:38,500
+sometimes they can wait a little bit and
+how much time you can afford to wait
+
+86
+00:05:38,500 --> 00:05:41,579
+well thats slack and that's what we're
+going to do next
+
+87
+00:05:41,579 --> 00:05:42,069
+see you then
+

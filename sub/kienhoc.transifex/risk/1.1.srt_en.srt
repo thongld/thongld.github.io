@@ -1,0 +1,564 @@
+0
+00:00:05,075 --> 00:00:08,270
+Hi, welcome back.
+https://youtu.be/3FoJ0P4lExE
+1
+00:00:08,270 --> 00:00:13,380
+What we are going to do now, or in this multisegment section,
+
+2
+00:00:14,500 --> 00:00:19,980
+but break it up into pieces that make sense, which is as you know,
+
+3
+00:00:19,980 --> 00:00:22,790
+best practice, in especially digital education,
+
+4
+00:00:23,860 --> 00:00:28,720
+is we&#39;ll talk about risk and return.
+
+5
+00:00:28,720 --> 00:00:33,300
+But to do that, we have to first do what I usually do is,
+
+6
+00:00:33,300 --> 00:00:35,570
+set up why we are talking about this.
+
+7
+00:00:35,570 --> 00:00:39,790
+And in the context of pretty much what we&#39;ve been talking about until now.
+
+8
+00:00:39,790 --> 00:00:43,990
+Then we&#39;ll spend time on statistics.
+
+9
+00:00:43,990 --> 00:00:47,650
+So in this particular ongoing segment,
+
+10
+00:00:47,650 --> 00:00:51,560
+chapter, week, whatever, we&#39;re going to do two things.
+
+11
+00:00:51,560 --> 00:00:56,430
+We&#39;re going to define risk, see why we worry about it and
+
+12
+00:00:56,430 --> 00:01:01,150
+the context, and then take a detour and talk about statistics.
+
+13
+00:01:01,150 --> 00:01:05,460
+When I talk about statistics it won&#39;t be everything obviously,
+
+14
+00:01:05,459 --> 00:01:08,290
+because I found I don&#39;t know all statistics.
+
+15
+00:01:08,290 --> 00:01:12,350
+But more focused even among the things I do know,
+
+16
+00:01:12,350 --> 00:01:16,880
+we&#39;ll talk about statistics as applicable to the context.
+
+17
+00:01:18,240 --> 00:01:22,500
+Here again, big advice like in accounting, it&#39;s good to do accounting.
+
+18
+00:01:22,500 --> 00:01:26,130
+I think it&#39;s even better to do more statistics.
+
+19
+00:01:26,130 --> 00:01:27,580
+Why more statistics?
+
+20
+00:01:27,580 --> 00:01:31,520
+Because it&#39;s everywhere, and many times as you know I love finance, but
+
+21
+00:01:31,520 --> 00:01:36,060
+I sometimes think statistics maybe kind of a little bit better.
+
+22
+00:01:36,060 --> 00:01:39,070
+More applicable with big data everything.
+
+23
+00:01:39,070 --> 00:01:43,090
+So it&#39;s not very useful in life,
+
+24
+00:01:43,090 --> 00:01:47,560
+to not worry about the implications of what you are talking about.
+
+25
+00:01:47,560 --> 00:01:52,380
+So, the nice thing about risk is, it&#39;s really easy to talk about it in context.
+
+26
+00:01:52,380 --> 00:01:57,340
+But finance makes statistics very applicable and related to risk directly.
+
+27
+00:01:57,340 --> 00:01:58,240
+So, let&#39;s get started.
+
+28
+00:01:59,420 --> 00:02:03,220
+Again, my favorite formula right in front of you, hopefully,
+
+29
+00:02:03,220 --> 00:02:07,020
+your favorite to know is in project analysis.
+
+30
+00:02:07,020 --> 00:02:11,680
+We have to worry about figuring out the NPV of the project.
+
+31
+00:02:12,930 --> 00:02:17,310
+I think it&#39;s fair to say that this formula is known in all over the world and
+
+32
+00:02:17,310 --> 00:02:18,460
+you understand what it is.
+
+33
+00:02:18,460 --> 00:02:21,860
+I&#39;m not going to repeat it, the most important elements is what?
+
+34
+00:02:21,860 --> 00:02:27,020
+Compounding, and that 1 plus r raised to power n over there
+
+35
+00:02:27,020 --> 00:02:31,770
+is something that you really, really need to worry about as Anstine said,
+
+36
+00:02:31,770 --> 00:02:33,980
+he found compounding the most fascinating things.
+
+37
+00:02:35,330 --> 00:02:40,260
+Okay, so there are two basic ingredients that
+
+38
+00:02:40,260 --> 00:02:44,650
+go into valuation, which are also related to the formula very directly.
+
+39
+00:02:44,650 --> 00:02:46,010
+The first is, cash flows.
+
+40
+00:02:47,100 --> 00:02:49,940
+And we have talked about cash flows.
+
+41
+00:02:49,940 --> 00:02:55,082
+If you entered the space, i.e., you want to just understand risk and
+
+42
+00:02:55,082 --> 00:03:00,312
+return, I would encourage you very strongly to first understand the big
+
+43
+00:03:00,312 --> 00:03:05,994
+picture of NPV and then understand cash flows and then come to risk and return.
+
+44
+00:03:05,994 --> 00:03:08,130
+I think that&#39;s a logical order.
+
+45
+00:03:08,130 --> 00:03:12,460
+Finance is very logical, very framework oriented, and there&#39;s a reason for that.
+
+46
+00:03:12,460 --> 00:03:13,620
+So cash flows have we done.
+
+47
+00:03:13,620 --> 00:03:15,750
+Have we done everything?, no.
+
+48
+00:03:15,750 --> 00:03:18,270
+Can you learn more on your own?, yes.
+
+49
+00:03:18,270 --> 00:03:20,640
+What will help you understand the cash flows?
+
+50
+00:03:20,640 --> 00:03:23,290
+A sense of business and accounting.
+
+51
+00:03:24,610 --> 00:03:28,010
+Now we&#39;ll turn to cost of capital.
+
+52
+00:03:28,010 --> 00:03:31,220
+If you look up on the slide and you&#39;re making notes,
+
+53
+00:03:31,220 --> 00:03:36,580
+I repeat what I said often before, which is, who do cash flows belong to?
+
+54
+00:03:36,580 --> 00:03:39,206
+Cash flows belong to, or
+
+55
+00:03:39,206 --> 00:03:44,592
+are the responsibilities of the project manager.
+
+56
+00:03:44,592 --> 00:03:47,451
+So, if you are doing that analysis, you&#39;re pitching your project,
+
+57
+00:03:47,451 --> 00:03:49,250
+you&#39;re making a case for it.
+
+58
+00:03:49,250 --> 00:03:53,575
+You better be careful about how you estimate your cashflows
+
+59
+00:03:53,575 --> 00:03:57,912
+including all layers, a special focus on your 0 and 10.
+
+60
+00:03:57,912 --> 00:04:03,866
+But the second piece to do the NPVa, as you know, is the cost of capital which
+
+61
+00:04:03,866 --> 00:04:10,030
+is now is taken as a number typically a round number 5%, 10 % or whatever.
+
+62
+00:04:10,030 --> 00:04:12,518
+Question is, who does that belong to?
+
+63
+00:04:12,518 --> 00:04:15,570
+This is a very profound point.
+
+64
+00:04:15,570 --> 00:04:20,400
+And it&#39;s related to the fact that all values is relative.
+
+65
+00:04:20,399 --> 00:04:22,340
+And who does r belong to?
+
+66
+00:04:22,340 --> 00:04:24,020
+It belongs to the marketplace.
+
+67
+00:04:24,020 --> 00:04:28,617
+And you&#39;ll see that in a very stock terms through our discussion.
+
+68
+00:04:29,997 --> 00:04:32,480
+We have spent a donor time in cash flows.
+
+69
+00:04:32,480 --> 00:04:38,450
+We&#39;ve also spent a donor time in bonds and stocks are debt and equity.
+
+70
+00:04:38,450 --> 00:04:40,130
+Why is that important?
+
+71
+00:04:40,130 --> 00:04:45,440
+Because those are the two main ways that will see risk emerge,
+
+72
+00:04:45,440 --> 00:04:50,450
+and they&#39;re also the two main ways of financing, and this will all fit together.
+
+73
+00:04:50,450 --> 00:04:52,460
+Cash flows are coming from whom?
+
+74
+00:04:52,460 --> 00:04:57,660
+Your projects, but financing will become important to figure out cost of capital
+
+75
+00:04:57,660 --> 00:04:59,950
+In a way that&#39;s really very subtle.
+
+76
+00:04:59,950 --> 00:05:01,480
+So please hang on.
+
+77
+00:05:01,480 --> 00:05:06,820
+I could&#39;ve done bonds and stocks way later or in the sequence of courses,
+
+78
+00:05:06,820 --> 00:05:11,250
+or if you look at a textbook, bonds and stocks could come way at the end.
+
+79
+00:05:11,250 --> 00:05:15,800
+But they don&#39;t simply because they&#39;re intimately tied to cost of capital,
+
+80
+00:05:15,800 --> 00:05:17,180
+especially the way it&#39;s measured.
+
+81
+00:05:18,460 --> 00:05:22,922
+What we are going to, therefore, spend time on is r now?
+
+82
+00:05:22,922 --> 00:05:28,010
+So, if we are talking r, why are we talking risk?
+
+83
+00:05:28,010 --> 00:05:31,480
+Why do we talk about return and risk at the same time?
+
+84
+00:05:31,480 --> 00:05:33,020
+And, please take this one takeaway.
+
+85
+00:05:34,150 --> 00:05:38,620
+It makes no sense to talk about return in isolation,
+
+86
+00:05:38,620 --> 00:05:42,110
+like the financial press talks about all the time, and
+
+87
+00:05:42,110 --> 00:05:47,300
+I think that&#39;s wrong, because returns seen in isolation make no sense.
+
+88
+00:05:47,300 --> 00:05:53,400
+Always think of risk and return as a pair, both go hand in hand.
+
+89
+00:05:53,400 --> 00:05:57,960
+So high risk, typically, high return.
+
+90
+00:05:57,960 --> 00:06:02,040
+So if you look at a high return relative to a lower return,
+
+91
+00:06:02,040 --> 00:06:04,090
+what&#39;s the first thing that you should think of?
+
+92
+00:06:05,850 --> 00:06:09,210
+Risk, they always go hand in hand and we&#39;ll see why.
+
+93
+00:06:10,310 --> 00:06:11,570
+So, why?
+
+94
+00:06:11,570 --> 00:06:16,750
+First, I think most people would agree that different projects or
+
+95
+00:06:16,750 --> 00:06:21,970
+ideas, project is a refection of an idea, some good, some not so good.
+
+96
+00:06:23,000 --> 00:06:26,980
+Most people would agree with the statement that different projects have different
+
+97
+00:06:26,980 --> 00:06:28,120
+risks.
+
+98
+00:06:28,120 --> 00:06:31,410
+It&#39;s almost a no-brainer, everybody would say of course that&#39;s true.
+
+99
+00:06:31,410 --> 00:06:36,140
+So, selling bananas is a different kind of proposition than selling a BMW.
+
+100
+00:06:37,440 --> 00:06:41,339
+Different risks, different cash flows, and so on.
+
+101
+00:06:41,339 --> 00:06:45,674
+Most people, and this is where, I really, really do love finances,
+
+102
+00:06:45,674 --> 00:06:50,521
+is that it takes real stuff and makes it conceptual, not the other way around,
+
+103
+00:06:50,521 --> 00:06:55,309
+that you are thinking only conceptually and not really about the real world.
+
+104
+00:06:55,309 --> 00:06:57,933
+And that deep connection between the real world and
+
+105
+00:06:57,933 --> 00:07:02,270
+conceptual thinking is what I think is the value proposition of financing.
+
+106
+00:07:02,270 --> 00:07:07,058
+Most people are risk-averse I would say, almost all people are risk-averse.
+
+107
+00:07:07,058 --> 00:07:13,520
+And hence, when they look at risking as of different projects, what do they expect?
+
+108
+00:07:13,520 --> 00:07:18,190
+They expect to get a higher return if a project is riskier than another one.
+
+109
+00:07:18,190 --> 00:07:20,010
+Remember the first bullet point?
+
+110
+00:07:20,010 --> 00:07:22,950
+Different projects, at different risks.
+
+111
+00:07:22,950 --> 00:07:26,210
+If there are risk averts, which we are, what do we look at?
+
+112
+00:07:26,210 --> 00:07:30,120
+We look at the return, but we immediately,
+
+113
+00:07:30,120 --> 00:07:33,490
+look at risk simultaneously, usually the other way round.
+
+114
+00:07:33,490 --> 00:07:37,810
+So, for example, if risk go up, you want to be compensated for
+
+115
+00:07:37,810 --> 00:07:39,430
+it, because you are risk avert.
+
+116
+00:07:39,430 --> 00:07:41,199
+Risk avert means you don&#39;t like risk.
+
+117
+00:07:42,830 --> 00:07:49,430
+Given all this, what our purpose today is to understand and measure risk.
+
+118
+00:07:51,010 --> 00:07:54,810
+And our next step is to take that measure of risk.
+
+119
+00:07:54,810 --> 00:07:59,230
+So, first understand risk, take that measure of risk, and
+
+120
+00:07:59,230 --> 00:08:01,420
+then go and relate it to return.
+
+121
+00:08:01,420 --> 00:08:07,660
+And when you relate it to return, that return becomes the cost of capital.
+
+122
+00:08:07,660 --> 00:08:12,250
+So for the time being, if you&#39;re having trouble, think of the following scenario.
+
+123
+00:08:12,250 --> 00:08:17,050
+Think of a spreadsheet of an institution, a company, or
+
+124
+00:08:17,050 --> 00:08:22,390
+a project with no debt financing, it will help you a lot thinking through.
+
+125
+00:08:22,390 --> 00:08:26,740
+So, whose risk and return are you worried about?
+
+126
+00:08:26,740 --> 00:08:30,480
+Shareholders, because they&#39;re the only people who are financing the whole firm.
+
+127
+00:08:30,480 --> 00:08:31,630
+That may help you.
+
+128
+00:08:31,630 --> 00:08:34,070
+And when you look at textbooks, when they talk about risk and
+
+129
+00:08:34,070 --> 00:08:37,770
+return, they&#39;re mostly focused on stocks.
+
+130
+00:08:37,770 --> 00:08:43,221
+Having said that, be careful, bonds also do have risk.
+
+131
+00:08:43,221 --> 00:08:47,840
+The mortgage-backed securities, the loans, were all bonds.
+
+132
+00:08:47,840 --> 00:08:52,220
+So, it&#39;s not [LAUGH] as if risk doesn&#39;t exist in bonds, okay?
+
+133
+00:08:52,220 --> 00:08:55,500
+So, what I am going to do now is take a break, I would love for
+
+134
+00:08:55,500 --> 00:08:57,960
+you to think about what we just talked about.
+
+135
+00:08:57,960 --> 00:09:00,850
+Why the heck are we thinking about risk?
+
+136
+00:09:00,850 --> 00:09:05,970
+We&#39;re thinking about risk because every project has different risks.
+
+137
+00:09:05,970 --> 00:09:10,420
+And, how will that risk be incorporated or manifest itself?
+
+138
+00:09:10,420 --> 00:09:11,810
+In the return.
+
+139
+00:09:11,810 --> 00:09:14,690
+And risk and return always go together.
+
+140
+00:09:14,690 --> 00:09:15,676
+See you in a minute.
+

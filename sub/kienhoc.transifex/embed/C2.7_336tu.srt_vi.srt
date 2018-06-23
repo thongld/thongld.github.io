@@ -1,0 +1,160 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/ndvwEznOyCc
+
+1
+00:00:00,000 --> 00:00:00,679
+
+2
+00:00:00,679 --> 00:00:02,470
+DR. RAMESH YERRABALLI: trong video ngắn này,
+
+3
+00:00:02,470 --> 00:00:04,870
+ta sẽ đọc data sheet để học
+
+4
+00:00:04,870 --> 00:00:09,674
+về sắp xếp bộ nhớ của vi điều khiển.
+
+5
+00:00:09,674 --> 00:00:11,215
+Nhìn vào mục lục.
+
+6
+00:00:11,215 --> 00:00:13,910
+
+7
+00:00:13,910 --> 00:00:19,465
+Ta thấy tổng quan của vi điều khiển , là phần 1.2.
+
+8
+00:00:19,465 --> 00:00:21,090
+DR. JONATHAN VALVANO: click vào đó.
+
+9
+00:00:21,090 --> 00:00:22,890
+DR. RAMESH YERRABALLI: Đúng rồi.
+
+10
+00:00:22,890 --> 00:00:27,160
+Ta nhớ là ta coi phần này rồi.
+
+11
+00:00:27,160 --> 00:00:33,240
+Thứ mà ta tìm là bộ nhớ flash có dung lượng bao nhiêu.
+
+12
+00:00:33,240 --> 00:00:36,700
+bộ nhớ RAM có dung lượng bao nhiêu.
+
+13
+00:00:36,700 --> 00:00:40,430
+Bộ nhớ flash là nơi ta sẽ chứa code.
+
+14
+00:00:40,430 --> 00:00:45,380
+ta có khoảng 256 kilobytes.
+
+15
+00:00:45,380 --> 00:00:51,937
+RAM sẽ chứa dữ liệu, có giới hạn là 32 kilobytes.
+
+16
+00:00:51,937 --> 00:00:55,020
+DR. JONATHAN VALVANO: được rồi, câu hỏi kế tiếp là
+
+17
+00:00:55,020 --> 00:00:58,730
+đâu là địa chỉ của bộ nhớ này?
+
+18
+00:00:58,730 --> 00:01:03,660
+cho nên, ta quay lại mục lục và tìm thêm thông tin về bộ nhớ.
+
+19
+00:01:03,660 --> 00:01:05,970
+DR. RAMESH YERRABALLI: vậy hãy tới phần 2.4.
+
+20
+00:01:05,970 --> 00:01:07,762
+DR. JONATHAN VALVANO: Nó đó.
+
+21
+00:01:07,762 --> 00:01:10,220
+DR. RAMESH YERRABALLI: nó sẽ nói cho bạn mô hình của bộ nhớ.
+
+22
+00:01:10,220 --> 00:01:12,710
+DR. JONATHAN VALVANO: đây là mô hình bộ nhớ của chúng ta.
+
+23
+00:01:12,710 --> 00:01:20,230
+Ta thấy 256 kilobytes ROM được xếp ở những địa chỉ này.
+
+24
+00:01:20,230 --> 00:01:24,940
+Và 32 kilobytes RAM được xếp ở đằng kia.
+
+25
+00:01:24,940 --> 00:01:31,190
+và trong data sheet này, nó cũng sẽ nói cho biết ta xài bộ nhớ để làm gì.
+
+26
+00:01:31,190 --> 00:01:33,320
+DR. RAMESH YERRABALLI: như bảng 2.5 này,
+
+27
+00:01:33,320 --> 00:01:39,590
+nói cho ta biết dùng phân vùng bộ nhớ này cho code.
+
+28
+00:01:39,590 --> 00:01:44,730
+Phân vùng từ 0x2000.0000 trở lên sẽ dùng cho dữ liệu.
+
+29
+00:01:44,730 --> 00:01:47,350
+
+30
+00:01:47,350 --> 00:01:51,820
+và ta có những thanh ghi IO cho thiết bị ngoại vi ở đây.
+
+31
+00:01:51,820 --> 00:01:54,670
+Đây là cho những chân GPIO.
+
+32
+00:01:54,670 --> 00:01:57,550
+DR. JONATHAN VALVANO: Khoan đã Ramesh, đây có phải là tất cả thanh ghi?
+
+33
+00:01:57,550 --> 00:01:59,716
+DR. RAMESH YERRABALLI: có thêm vài thanh ghi khác nữa.
+
+34
+00:01:59,716 --> 00:02:03,990
+Đây là Bus thiết bị ngoại vi của chúng ta.
+
+35
+00:02:03,990 --> 00:02:09,030
+Những thiết bị như là NVIC và SYSTICK.
+
+36
+00:02:09,030 --> 00:02:10,617
+sẽ ở đây.
+
+37
+00:02:10,617 --> 00:02:11,950
+DR. JONATHAN VALVANO: Được rồi.
+
+38
+00:02:11,950 --> 00:02:14,680
+1 lần nữa, xài data sheet để tìm thông tin.
+
+39
+00:02:14,680 --> 00:02:17,600
+Đừng sợ phải kiếm vòng vòng.
+
+40
+00:02:17,600 --> 00:02:20,670
+Có rất nhiều thông tin ở đây.

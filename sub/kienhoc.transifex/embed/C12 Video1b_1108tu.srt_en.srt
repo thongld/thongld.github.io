@@ -1,0 +1,628 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/Kt_pVkFPj3c
+
+1
+00:00:00,000 --> 00:00:00,610
+
+2
+00:00:00,610 --> 00:00:04,940
+DR. JONATHAN VALVANO: Next,
+let's look at the context switch.
+
+3
+00:00:04,940 --> 00:00:08,340
+The trigger has happened,
+and the context switch
+
+4
+00:00:08,340 --> 00:00:17,980
+is the process by switching
+from the main program
+
+5
+00:00:17,980 --> 00:00:22,630
+into the interrupt service routine.
+
+6
+00:00:22,630 --> 00:00:26,820
+So we're executing here
+in the main program.
+
+7
+00:00:26,820 --> 00:00:31,110
+The trigger happens, and
+we're going to switch over
+
+8
+00:00:31,110 --> 00:00:32,782
+to the interrupt service routine.
+
+9
+00:00:32,782 --> 00:00:34,490
+DR. RAMESH YERRABALLI:
+So can you show me
+
+10
+00:00:34,490 --> 00:00:37,980
+the details of the program
+that's currently running?
+
+11
+00:00:37,980 --> 00:00:40,320
+Maybe an instruction or
+something that gets interrupted?
+
+12
+00:00:40,320 --> 00:00:41,444
+DR. JONATHAN VALVANO: Sure.
+
+13
+00:00:41,444 --> 00:00:49,230
+The main program might be
+reading and it might be storing.
+
+14
+00:00:49,230 --> 00:00:57,060
+
+15
+00:00:57,060 --> 00:01:03,630
+So the program counter might be pointing
+to an instruction as it executes.
+
+16
+00:01:03,630 --> 00:01:06,790
+DR. RAMESH YERRABALLI: So this is
+the assembly code of the C code
+
+17
+00:01:06,790 --> 00:01:10,305
+that we may have written, and this
+is what is being run right now?
+
+18
+00:01:10,305 --> 00:01:11,430
+DR. JONATHAN VALVANO: Yeah.
+
+19
+00:01:11,430 --> 00:01:14,230
+So we're in the main
+program running something.
+
+20
+00:01:14,230 --> 00:01:16,580
+Program counter points to where we are.
+
+21
+00:01:16,580 --> 00:01:19,600
+And now the trigger has happened.
+
+22
+00:01:19,600 --> 00:01:23,810
+The first thing that will happen is--
+assuming the priority is high enough,
+
+23
+00:01:23,810 --> 00:01:26,350
+and it's armed and enabled,
+and the I bit is all 0,
+
+24
+00:01:26,350 --> 00:01:29,360
+like we did before-- the
+first thing that will happen
+
+25
+00:01:29,360 --> 00:01:32,390
+is it will finish the instruction.
+
+26
+00:01:32,390 --> 00:01:35,065
+Instructions take a finite
+amount of time to execute.
+
+27
+00:01:35,065 --> 00:01:38,520
+
+28
+00:01:38,520 --> 00:01:43,730
+So this instruction that
+I'm executing will finish.
+
+29
+00:01:43,730 --> 00:01:50,730
+The second thing that has to
+happen is we have to suspend.
+
+30
+00:01:50,730 --> 00:01:55,160
+Suspend means make a
+record of where we were.
+
+31
+00:01:55,160 --> 00:01:59,600
+And that is going to be used,
+or recorded, onto our stack.
+
+32
+00:01:59,600 --> 00:02:02,370
+
+33
+00:02:02,370 --> 00:02:07,700
+And the stack pointer points
+to the top of the stack.
+
+34
+00:02:07,700 --> 00:02:16,890
+And when the interrupt happens, we
+are going to push R0, R1, R2, R3.
+
+35
+00:02:16,890 --> 00:02:23,410
+pushes R12, R14-- which
+is the link register--
+
+36
+00:02:23,410 --> 00:02:27,640
+R15, which is the program counter.
+
+37
+00:02:27,640 --> 00:02:31,560
+And it will push the
+program status word.
+
+38
+00:02:31,560 --> 00:02:35,840
+And the order it does it is a
+program status word is here.
+
+39
+00:02:35,840 --> 00:02:46,620
+Program counter, link register, R12
+a lot of registers-- R3, R2, R1, R0,
+
+40
+00:02:46,620 --> 00:02:51,700
+such that the new stack pointer
+is pointing way up here,
+
+41
+00:02:51,700 --> 00:02:54,890
+and eight registers have
+been pushed on the stack.
+
+42
+00:02:54,890 --> 00:02:57,780
+DR. RAMESH YERRABALLI: So why are
+we only pushing these registers?
+
+43
+00:02:57,780 --> 00:03:00,920
+And what about those other
+registers, R4 through R11?
+
+44
+00:03:00,920 --> 00:03:04,639
+
+45
+00:03:04,639 --> 00:03:06,430
+DR. JONATHAN VALVANO:
+These eight registers
+
+46
+00:03:06,430 --> 00:03:09,190
+are actually not pushed on the stack.
+
+47
+00:03:09,190 --> 00:03:15,110
+And so when the programmer writes
+their interrupt service routine,
+
+48
+00:03:15,110 --> 00:03:20,320
+we will not use R4 through R11.
+
+49
+00:03:20,320 --> 00:03:23,199
+They're not used in the
+interrupt service routine.
+
+50
+00:03:23,199 --> 00:03:25,490
+DR. RAMESH YERRABALLI: So
+there's no need to save them.
+
+51
+00:03:25,490 --> 00:03:26,740
+DR. JONATHAN VALVANO: Exactly.
+
+52
+00:03:26,740 --> 00:03:32,050
+The third step is to set the
+link register to a special code.
+
+53
+00:03:32,050 --> 00:03:34,606
+And this special code is 0xFFFFFFF9.
+
+54
+00:03:34,606 --> 00:03:41,120
+
+55
+00:03:41,120 --> 00:03:44,520
+You notice the link register is
+odd, and it's got this weird thing.
+
+56
+00:03:44,520 --> 00:03:52,290
+This pattern means I'm running
+in an interrupt service routine.
+
+57
+00:03:52,290 --> 00:03:56,145
+
+58
+00:03:56,145 --> 00:03:59,270
+DR. RAMESH YERRABALLI: And we will see
+why this special pattern is required
+
+59
+00:03:59,270 --> 00:04:04,030
+when we see the details of how
+we return from an interrupt
+
+60
+00:04:04,030 --> 00:04:07,250
+to the main program
+that was interrupted.
+
+61
+00:04:07,250 --> 00:04:09,054
+DR. JONATHAN VALVANO: Exactly.
+
+62
+00:04:09,054 --> 00:04:15,780
+The IPSR register is going to
+be set to the interrupt number.
+
+63
+00:04:15,780 --> 00:04:17,700
+There are hundreds of interrupts.
+
+64
+00:04:17,700 --> 00:04:23,150
+And so this register will
+contain the interrupt number
+
+65
+00:04:23,150 --> 00:04:28,006
+of the device that's currently
+executing in the ISR.
+
+66
+00:04:28,006 --> 00:04:31,550
+And finally, the program
+counter is loaded
+
+67
+00:04:31,550 --> 00:04:35,830
+with the address of the
+interrupt service routine.
+
+68
+00:04:35,830 --> 00:04:37,525
+And this is called the vector.
+
+69
+00:04:37,525 --> 00:04:40,700
+
+70
+00:04:40,700 --> 00:04:43,110
+DR. RAMESH YERRABALLI: So
+with this five step process,
+
+71
+00:04:43,110 --> 00:04:47,610
+we suspended the current
+program, which is a main--
+
+72
+00:04:47,610 --> 00:04:53,220
+and we call this a main thread--
+and we were able to transfer control
+
+73
+00:04:53,220 --> 00:04:56,120
+to the interrupt service routine thread.
+
+74
+00:04:56,120 --> 00:04:58,652
+So we have two threads--
+the main thread,
+
+75
+00:04:58,652 --> 00:05:00,360
+and the interrupt
+service routine thread.
+
+76
+00:05:00,360 --> 00:05:04,716
+And the control now is with the
+interrupt service routine thread.
+
+77
+00:05:04,716 --> 00:05:06,966
+DR. JONATHAN VALVANO: You
+want to see how we get back?
+
+78
+00:05:06,966 --> 00:05:08,132
+DR. RAMESH YERRABALLI: Yeah.
+
+79
+00:05:08,132 --> 00:05:09,390
+Let's look at it.
+
+80
+00:05:09,390 --> 00:05:12,560
+DR. JONATHAN VALVANO: Right here at the
+end of the interrupt service routine
+
+81
+00:05:12,560 --> 00:05:16,050
+is in instruction call BX LR.
+
+82
+00:05:16,050 --> 00:05:21,570
+And that is to attempt to put the link
+register back into the program counter.
+
+83
+00:05:21,570 --> 00:05:26,920
+But because the link register
+has this special number,
+
+84
+00:05:26,920 --> 00:05:29,950
+instead of storing this
+in the program counter
+
+85
+00:05:29,950 --> 00:05:36,120
+and jumping off into nowhere land,
+what it will do is it will then pop.
+
+86
+00:05:36,120 --> 00:05:42,840
+This BX LR instruction will then pop
+these eight registers off of the stack,
+
+87
+00:05:42,840 --> 00:05:46,110
+including the program counter.
+
+88
+00:05:46,110 --> 00:05:51,670
+And so this instruction here will return
+back to where we interrupted from.
+
+89
+00:05:51,670 --> 00:05:54,070
+DR. RAMESH YERRABALLI:
+Which will bring the program
+
+90
+00:05:54,070 --> 00:05:58,960
+counter to the next instruction, because
+that's what was saved on the stack.
+
+91
+00:05:58,960 --> 00:06:00,220
+DR. JONATHAN VALVANO: Perfect.
+
+92
+00:06:00,220 --> 00:06:04,300
+DR. RAMESH YERRABALLI: So
+interrupts are a powerful mechanism.
+
+93
+00:06:04,300 --> 00:06:09,930
+But with power such as
+this comes responsibility.
+
+94
+00:06:09,930 --> 00:06:12,410
+That is, in your
+interrupt service routine,
+
+95
+00:06:12,410 --> 00:06:18,740
+you have to be careful to do certain
+things and not do certain other things.
+
+96
+00:06:18,740 --> 00:06:22,570
+DR. JONATHAN VALVANO: So let's
+begin with good practices.
+
+97
+00:06:22,570 --> 00:06:27,460
+One of the important things to do
+in the interrupt service routine
+
+98
+00:06:27,460 --> 00:06:28,535
+is to acknowledge.
+
+99
+00:06:28,535 --> 00:06:32,620
+
+100
+00:06:32,620 --> 00:06:37,570
+Acknowledging is to
+clear the trigger flag.
+
+101
+00:06:37,570 --> 00:06:42,020
+Remember, the trigger flag
+caused the interrupt to happen.
+
+102
+00:06:42,020 --> 00:06:48,060
+And the software should clear it.
+
+103
+00:06:48,060 --> 00:06:51,080
+DR. RAMESH YERRABALLI: So
+not clearing the trigger
+
+104
+00:06:51,080 --> 00:06:56,970
+has the potential to make the
+interrupt be considered unserviced.
+
+105
+00:06:56,970 --> 00:07:02,010
+And therefore, the interrupt continues
+to be triggered again and again,
+
+106
+00:07:02,010 --> 00:07:04,180
+so you get stuck in your
+interrupt service routine.
+
+107
+00:07:04,180 --> 00:07:07,650
+DR. JONATHAN VALVANO:
+Yeah, we call that a crash.
+
+108
+00:07:07,650 --> 00:07:08,400
+That's not good.
+
+109
+00:07:08,400 --> 00:07:11,380
+So we will acknowledge.
+
+110
+00:07:11,380 --> 00:07:13,980
+The second thing we're
+going to do, think about,
+
+111
+00:07:13,980 --> 00:07:20,040
+when we write interrupt service routines
+is to make them very, very short.
+
+112
+00:07:20,040 --> 00:07:23,150
+In a short interrupt
+service routine, we'll
+
+113
+00:07:23,150 --> 00:07:29,940
+guarantee that all the
+interrupts get service.
+
+114
+00:07:29,940 --> 00:07:36,450
+
+115
+00:07:36,450 --> 00:07:42,130
+Well, while we're talking about what
+to do, let's talk about what not to do.
+
+116
+00:07:42,130 --> 00:07:48,590
+
+117
+00:07:48,590 --> 00:07:56,750
+I think good interrupt service
+routines do not have delay loops.
+
+118
+00:07:56,750 --> 00:08:01,980
+This means that I don't think that
+once you get an interrupt service
+
+119
+00:08:01,980 --> 00:08:06,420
+routine that you should wait, or
+loop, over and over and over again.
+
+120
+00:08:06,420 --> 00:08:10,210
+
+121
+00:08:10,210 --> 00:08:15,640
+The second thing has to do with
+how often we trigger an interrupt.
+
+122
+00:08:15,640 --> 00:08:19,100
+So let's do a profile.
+
+123
+00:08:19,100 --> 00:08:26,990
+In other words, if the interrupts
+were to occur at this rate,
+
+124
+00:08:26,990 --> 00:08:34,169
+it will be important for us not to
+have the interrupt service routine take
+
+125
+00:08:34,169 --> 00:08:44,930
+longer than the time between interrupts.
+
+126
+00:08:44,930 --> 00:08:53,260
+So good practice is the
+interrupt service routine rate--
+
+127
+00:08:53,260 --> 00:08:56,380
+whatever it is, the time
+between the interrupts.
+
+128
+00:08:56,380 --> 00:08:59,410
+This should be long
+compared to the time it
+
+129
+00:08:59,410 --> 00:09:02,520
+takes to execute the
+interrupt service routine.
+
+130
+00:09:02,520 --> 00:09:08,065
+
+131
+00:09:08,065 --> 00:09:10,690
+DR. RAMESH YERRABALLI: This is
+obvious, because otherwise you'd
+
+132
+00:09:10,690 --> 00:09:14,625
+have pending interrupt triggers
+that will never get serviced.
+
+133
+00:09:14,625 --> 00:09:15,750
+DR. JONATHAN VALVANO: Yeah.
+
+134
+00:09:15,750 --> 00:09:18,580
+We see in this case
+right here we're actually
+
+135
+00:09:18,580 --> 00:09:21,930
+going to attempt to
+interrupt ourselves to do
+
+136
+00:09:21,930 --> 00:09:25,040
+this task, which would be a crash.

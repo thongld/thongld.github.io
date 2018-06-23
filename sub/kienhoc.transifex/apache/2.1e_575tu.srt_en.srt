@@ -1,0 +1,291 @@
+0
+00:00:00,000 --> 00:00:00,570
+https://youtu.be/vkrVorCtTjo
+
+1
+00:00:00,570 --> 00:00:03,770
+SPEAKER: Spark SQL and Spark data frames support joins.
+
+2
+00:00:03,770 --> 00:00:06,460
+Here's the format of a join.
+
+3
+00:00:06,460 --> 00:00:09,525
+You pass in the left side along with other, which
+
+4
+00:00:09,525 --> 00:00:12,490
+is the right side of the join.
+
+5
+00:00:12,490 --> 00:00:17,270
+Along with the join column name, or a list of column names,
+
+6
+00:00:17,270 --> 00:00:19,070
+or a join expression.
+
+7
+00:00:19,070 --> 00:00:21,350
+And how you want the join to be performed.
+
+8
+00:00:21,350 --> 00:00:26,570
+As inner, which is the default, outer, left outer, right outer,
+
+9
+00:00:26,570 --> 00:00:28,890
+or left semi.
+
+10
+00:00:28,890 --> 00:00:33,030
+Let's look at some examples of performing joins with Spark.
+
+11
+00:00:33,030 --> 00:00:35,690
+So here we're going to create two data frames.
+
+12
+00:00:35,690 --> 00:00:39,670
+The first data frame has two rows and two columns.
+
+13
+00:00:39,670 --> 00:00:43,120
+The first row is Alice, with age 1.
+
+14
+00:00:43,120 --> 00:00:46,540
+Second row is Bob, with age 2.
+
+15
+00:00:46,540 --> 00:00:49,750
+So two columns named name and age.
+
+16
+00:00:49,750 --> 00:00:54,090
+The second data frame has two rows also in two columns.
+
+17
+00:00:54,090 --> 00:00:57,700
+The first row is named Chris, and height 80.
+
+18
+00:00:57,700 --> 00:01:02,260
+And the second row is named Bob, and height 85.
+
+19
+00:01:02,260 --> 00:01:05,840
+Now if we perform a join of the first data frame
+
+20
+00:01:05,840 --> 00:01:09,700
+with the second data frame on the column name,
+
+21
+00:01:09,700 --> 00:01:15,040
+This will be a inner join by default.
+
+22
+00:01:15,040 --> 00:01:19,810
+And we will end up with a single row.
+
+23
+00:01:19,810 --> 00:01:21,950
+Because we only have one name that
+
+24
+00:01:21,950 --> 00:01:24,370
+appears in both data frames.
+
+25
+00:01:24,370 --> 00:01:25,730
+And that's Bob.
+
+26
+00:01:25,730 --> 00:01:29,410
+So that will have name Bob as one column.
+
+27
+00:01:29,410 --> 00:01:31,400
+The next column will be age 2.
+
+28
+00:01:31,400 --> 00:01:34,590
+And the last column will be height 85.
+
+29
+00:01:34,590 --> 00:01:38,060
+So this is an inner join.
+
+30
+00:01:38,060 --> 00:01:41,500
+Here's an example with the inner join,
+
+31
+00:01:41,500 --> 00:01:44,630
+but now we're going to select only two of the columns.
+
+32
+00:01:44,630 --> 00:01:47,230
+We select the name column from the first data
+
+33
+00:01:47,230 --> 00:01:51,307
+frame and the height column from the second data frame.
+
+34
+00:01:51,307 --> 00:01:53,930
+
+35
+00:01:53,930 --> 00:01:57,190
+In this third example, we perform an outer join.
+
+36
+00:01:57,190 --> 00:01:59,400
+So we pass in the outer parameter.
+
+37
+00:01:59,400 --> 00:02:02,896
+We're using the same original two data frames.
+
+38
+00:02:02,896 --> 00:02:04,990
+And you can see with the outer data frame,
+
+39
+00:02:04,990 --> 00:02:06,830
+we get a data frame with rows that
+
+40
+00:02:06,830 --> 00:02:10,939
+match columns in either x or y.
+
+41
+00:02:10,939 --> 00:02:12,730
+That's unlike the inner join, where we only
+
+42
+00:02:12,730 --> 00:02:16,420
+had rows that matched the columns in both x and y.
+
+43
+00:02:16,420 --> 00:02:20,610
+So you can see we end up with 3 rows and 3 columns.
+
+44
+00:02:20,610 --> 00:02:24,790
+The first row has name Chris, and age none.
+
+45
+00:02:24,790 --> 00:02:27,460
+Because there is no age associated with Chris.
+
+46
+00:02:27,460 --> 00:02:30,580
+And height 80 as the final column.
+
+47
+00:02:30,580 --> 00:02:35,840
+The second row is name Alice, with age 1, and height none.
+
+48
+00:02:35,840 --> 00:02:38,660
+Since there is no matching height for Alice.
+
+49
+00:02:38,660 --> 00:02:43,330
+And the last row is named Bob, with age 2, and height 85.
+
+50
+00:02:43,330 --> 00:02:45,950
+
+51
+00:02:45,950 --> 00:02:48,260
+So here's the fourth example, where
+
+52
+00:02:48,260 --> 00:02:51,430
+we modify the third example by selecting just the name
+
+53
+00:02:51,430 --> 00:02:52,970
+and height columns.
+
+54
+00:02:52,970 --> 00:02:56,710
+And we do this by using the string names instead.
+
+55
+00:02:56,710 --> 00:02:59,408
+And now you can see we end up with three rows and two
+
+56
+00:02:59,408 --> 00:02:59,907
+columns.
+
+57
+00:02:59,907 --> 00:03:02,710
+
+58
+00:03:02,710 --> 00:03:05,980
+Here's a left outer join, and we get this
+
+59
+00:03:05,980 --> 00:03:09,180
+by passing in the left outer parameter.
+
+60
+00:03:09,180 --> 00:03:11,510
+So now you can see we end up with two rows,
+
+61
+00:03:11,510 --> 00:03:14,330
+because we're only going to return the data frame that
+
+62
+00:03:14,330 --> 00:03:17,900
+contains rows with matching columns in x.
+
+63
+00:03:17,900 --> 00:03:20,790
+And so that result, since we're matching on name,
+
+64
+00:03:20,790 --> 00:03:25,150
+on Alice with age 1 and height none,
+
+65
+00:03:25,150 --> 00:03:29,456
+and Bob with age 2 and height 85.
+
+66
+00:03:29,456 --> 00:03:33,410
+
+67
+00:03:33,410 --> 00:03:36,700
+Here, we perform a right outer join.
+
+68
+00:03:36,700 --> 00:03:38,950
+Now this returns a data frame of rows
+
+69
+00:03:38,950 --> 00:03:42,990
+with matching columns in y.
+
+70
+00:03:42,990 --> 00:03:45,280
+So you can see we end up with two rows.
+
+71
+00:03:45,280 --> 00:03:49,440
+The first row has name Chris, age none, and height 80.
+
+72
+00:03:49,440 --> 00:03:54,670
+And the second row has name Bob, with age 2, and height 85.
+
+73
+00:03:54,670 --> 00:03:55,170
+

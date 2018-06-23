@@ -1,0 +1,314 @@
+1
+00:00:00,919 --> 00:00:03,339
+Hello again and welcome back to Operations
+Management
+
+2
+00:00:03,339 --> 00:00:07,970
+In this section, we are going to talk about
+Quality and Six Sigma
+
+3
+00:00:07,970 --> 00:00:13,150
+Up to this point, we’ve been looking at
+processes and we’ve been evaluating them,
+
+4
+00:00:13,150 --> 00:00:17,440
+flow time, we’ve been looking at matrix,
+we’ve been looking at inventory, we’ve
+
+5
+00:00:17,440 --> 00:00:22,340
+been looking at capacity
+But now it’s time to think about quality
+
+6
+00:00:22,340 --> 00:00:25,760
+and how can we go about improving all these
+processes
+
+7
+00:00:25,760 --> 00:00:30,880
+So the first question is what is quality?
+
+8
+00:00:30,880 --> 00:00:36,760
+If you look at the definition from the American
+Society for Quality, it says that it’s totality
+
+9
+00:00:36,760 --> 00:00:42,199
+of features and characteristics of a product
+or service that bears on its ability to satisfy
+
+10
+00:00:42,199 --> 00:00:47,629
+stated or implied needs
+If you can dense that down, it really is the
+
+11
+00:00:47,629 --> 00:00:52,660
+ability of a product or service to meet or
+exceed customer expectations
+
+12
+00:00:52,660 --> 00:00:55,010
+That’s what quality is.
+
+13
+00:00:55,010 --> 00:01:00,979
+It is in the eyes of customers
+So, why do we consider quality?
+
+14
+00:01:00,979 --> 00:01:04,989
+Well, quality is associated definitely with
+the company’s reputation
+
+15
+00:01:04,989 --> 00:01:09,420
+The better the quality is, the product is,
+the more likely people will purchase their
+
+16
+00:01:09,420 --> 00:01:12,270
+product
+If it is low quality product, people will
+
+17
+00:01:12,270 --> 00:01:17,380
+stay away from it
+If somebody is harm, or injured or worst with
+
+18
+00:01:17,380 --> 00:01:21,090
+their products, then you’re subject to liability.
+
+19
+00:01:21,090 --> 00:01:27,070
+And of course, if we are going to deal with
+global customers,
+
+20
+00:01:27,070 --> 00:01:31,460
+then you will have to have very consistent
+products that can be used across multiple
+
+21
+00:01:31,460 --> 00:01:35,799
+countries
+So what we want to do in terms of quality
+
+22
+00:01:35,799 --> 00:01:42,680
+is we want to manage the process flows
+by reducing variation in the process and in
+
+23
+00:01:42,680 --> 00:01:46,189
+the product itself,
+it improves cost effectiveness
+
+24
+00:01:46,189 --> 00:01:52,749
+If you recall, the more variations we have
+in terms of lead time and demand,
+
+25
+00:01:52,749 --> 00:01:58,649
+we have to keep safety stock,
+Once there is a variation in a process flow,
+
+26
+00:01:58,649 --> 00:02:05,070
+we have increases in lines,
+increases in inventory that causes also a
+
+27
+00:02:05,070 --> 00:02:08,399
+problem
+So, if we can reduce variations in process
+
+28
+00:02:08,399 --> 00:02:15,879
+we will improve the cost effectiveness
+There are costs associated with quality
+
+29
+00:02:15,879 --> 00:02:20,180
+And we look at them from 4 different prospectives
+The first being the prevention cost.
+
+30
+00:02:20,180 --> 00:02:24,700
+That’s a cost associated with stopping a
+problem from happening.
+
+31
+00:02:24,700 --> 00:02:30,620
+That’s typically designing a cost, designing
+a process to prevent a problem
+
+32
+00:02:30,620 --> 00:02:34,120
+The second one is considered appraisal costs.
+
+33
+00:02:34,120 --> 00:02:37,860
+This is where you think about quality and
+inspector
+
+34
+00:02:37,860 --> 00:02:41,849
+and all the tools associated with checking
+for problems
+
+35
+00:02:41,849 --> 00:02:47,930
+That is where appraisal costs come in
+And internal failure is one we find or identify
+
+36
+00:02:47,930 --> 00:02:53,680
+a problem throughout process
+but we still catch it before it goes to the
+
+37
+00:02:53,680 --> 00:02:59,120
+customer
+So this could mean we work or the cost of
+
+38
+00:02:59,120 --> 00:03:03,890
+making a product they cannot be solved,
+that’s internal failure
+
+39
+00:03:03,890 --> 00:03:09,890
+External costs are associated with when the
+customers find the problem.
+
+40
+00:03:09,890 --> 00:03:16,079
+And it is the worst because you are dealing
+with the cost of fixing the situation
+
+41
+00:03:16,079 --> 00:03:22,640
+as well as possibly losing good will with
+the customer who find a problem in a product
+
+42
+00:03:22,640 --> 00:03:27,530
+So how do we improve quality?
+
+43
+00:03:27,530 --> 00:03:30,360
+Well there’s an overall quality improvement
+process,
+
+44
+00:03:30,360 --> 00:03:35,360
+and that’s where we measure everything,
+we call everything has to have a metrical
+
+45
+00:03:35,360 --> 00:03:39,280
+associated with it to make sure it’s up
+to standard,
+
+46
+00:03:39,280 --> 00:03:43,920
+we analyze it, we control all processes and
+once we control,
+
+47
+00:03:43,920 --> 00:03:46,760
+we try to improve them and possibly redesign.
+
+48
+00:03:46,760 --> 00:03:50,329
+That’s the overall quality improvement process.
+
+49
+00:03:50,329 --> 00:03:53,160
+So how do we go about doing this?
+
+50
+00:03:53,160 --> 00:03:56,750
+This is where we start talking about six sigma.
+
+51
+00:03:56,750 --> 00:04:04,959
+The key to six sigma is something called DMAIC,
+and that stands for Define, Measure, Analyze,
+
+52
+00:04:04,959 --> 00:04:10,819
+Improve, and Control
+If we are going to makes any changes to process
+
+53
+00:04:10,819 --> 00:04:17,080
+we need to define the problem
+Measure things so we can climb to the top
+
+54
+00:04:17,080 --> 00:04:21,480
+variables,
+analyze them and then make a change with their
+
+55
+00:04:21,480 --> 00:04:28,880
+improvement and control it and monitor it
+to make sure that the process is now staying
+
+56
+00:04:28,880 --> 00:04:30,450
+in the improve mode.
+
+57
+00:04:30,450 --> 00:04:36,780
+So that’s the key to six sigma but how do
+we actually go about doing that.
+
+58
+00:04:36,780 --> 00:04:41,310
+This is where we talk about seven tools of
+quality
+
+59
+00:04:41,310 --> 00:04:45,470
+Most of them are very simple to you but very
+effective
+
+60
+00:04:45,470 --> 00:04:50,970
+They are check sheets, pareto charts, histograms,
+scatter diagrams,
+
+61
+00:04:50,970 --> 00:04:56,860
+ishikawa otherwise known as fishbone’s cause
+and effect diagrams, flow charts, statistical
+
+62
+00:04:56,860 --> 00:05:01,510
+process control
+In the next few sections, we are going to
+
+63
+00:05:01,510 --> 00:05:06,230
+take a look at each one of those particular
+tools
+
+64
+00:05:06,230 --> 00:05:11,020
+and see what we can learn from them and how
+we can use them to improve processes.
+
+65
+00:05:11,020 --> 00:05:12,260
+I will see you then
+

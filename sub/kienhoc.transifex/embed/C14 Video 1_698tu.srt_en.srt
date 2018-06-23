@@ -1,0 +1,403 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/zilfgmsXeeE
+
+1
+00:00:00,000 --> 00:00:00,499
+
+2
+00:00:00,499 --> 00:00:02,440
+DR. JONATHAN VALVANO:
+In this video, we will
+
+3
+00:00:02,440 --> 00:00:06,440
+demonstrate the fundamental
+concepts of sampling.
+
+4
+00:00:06,440 --> 00:00:11,200
+Here is a slide plot similar
+to the one you will use in lab.
+
+5
+00:00:11,200 --> 00:00:17,550
+The analog signal is shown in
+the plot as the blue signal.
+
+6
+00:00:17,550 --> 00:00:23,660
+And the data points are sampled
+as plotted by the red signal.
+
+7
+00:00:23,660 --> 00:00:26,440
+DR. RAMESH YERRABALLI: So if the
+sampling were done faithfully
+
+8
+00:00:26,440 --> 00:00:31,740
+to capture the signal, then the
+red line would track the blue line.
+
+9
+00:00:31,740 --> 00:00:36,665
+That is a digital capture would
+capture the analog signal faithfully.
+
+10
+00:00:36,665 --> 00:00:39,600
+
+11
+00:00:39,600 --> 00:00:42,710
+So what if it doesn't track?
+
+12
+00:00:42,710 --> 00:00:45,450
+DR. JONATHAN VALVANO: Then
+we get the wrong answer.
+
+13
+00:00:45,450 --> 00:00:48,970
+So there are many ways in
+which the digital samples
+
+14
+00:00:48,970 --> 00:00:51,350
+are different from the analog samples.
+
+15
+00:00:51,350 --> 00:00:56,590
+The first is amplitude quantization.
+
+16
+00:00:56,590 --> 00:01:01,360
+That means that at every
+point, the only choices
+
+17
+00:01:01,360 --> 00:01:05,710
+we're going to have are discrete
+values between some number
+
+18
+00:01:05,710 --> 00:01:06,740
+and some other number.
+
+19
+00:01:06,740 --> 00:01:09,490
+
+20
+00:01:09,490 --> 00:01:13,990
+Additionally, there
+is an amplitude range.
+
+21
+00:01:13,990 --> 00:01:20,070
+In other words, there is a finite
+difference, a finite range,
+
+22
+00:01:20,070 --> 00:01:24,290
+between which our samples must exist.
+
+23
+00:01:24,290 --> 00:01:26,975
+So in our case, that's
+going to be 0 to 3 volts.
+
+24
+00:01:26,975 --> 00:01:29,940
+
+25
+00:01:29,940 --> 00:01:33,760
+The third is time quantization.
+
+26
+00:01:33,760 --> 00:01:41,800
+Because we have to collect
+the data into a computer,
+
+27
+00:01:41,800 --> 00:01:44,220
+there will be a finite time.
+
+28
+00:01:44,220 --> 00:01:46,840
+In this case, we can
+see where the times are,
+
+29
+00:01:46,840 --> 00:01:54,110
+a finite time, that
+the data are sampled.
+
+30
+00:01:54,110 --> 00:02:02,500
+And furthermore, one more, and that
+is, the time interval is fixed.
+
+31
+00:02:02,500 --> 00:02:07,040
+In other words, no matter how much
+memory we have in the computer,
+
+32
+00:02:07,040 --> 00:02:09,770
+there's always a finite
+amount of it, which
+
+33
+00:02:09,770 --> 00:02:15,620
+means that we can only represent
+the data from some minimum time
+
+34
+00:02:15,620 --> 00:02:17,910
+to some maximum time.
+
+35
+00:02:17,910 --> 00:02:24,000
+And these are the four limitations
+that exist in sampling.
+
+36
+00:02:24,000 --> 00:02:29,012
+So let's review the components
+of the data acquisition system.
+
+37
+00:02:29,012 --> 00:02:30,720
+DR. RAMESH YERRABALLI:
+This is the system
+
+38
+00:02:30,720 --> 00:02:32,870
+that you're going to build for Lab 14.
+
+39
+00:02:32,870 --> 00:02:35,550
+
+40
+00:02:35,550 --> 00:02:38,300
+DR. JONATHAN VALVANO: It begins
+with something we want to measure.
+
+41
+00:02:38,300 --> 00:02:41,940
+In our case we're going
+to measure distance.
+
+42
+00:02:41,940 --> 00:02:44,695
+This distance is converted by a sensor.
+
+43
+00:02:44,695 --> 00:02:47,330
+
+44
+00:02:47,330 --> 00:02:50,545
+The sensor is connected to a
+circuit, to give us a voltage.
+
+45
+00:02:50,545 --> 00:02:53,070
+
+46
+00:02:53,070 --> 00:02:57,430
+The voltage will then
+be input to the analog
+
+47
+00:02:57,430 --> 00:03:05,710
+to digital converter, which will
+give us a number, a 12 -bit number.
+
+48
+00:03:05,710 --> 00:03:11,920
+Software, that we write,
+will convert that number
+
+49
+00:03:11,920 --> 00:03:15,280
+into something that means
+something, to a distance.
+
+50
+00:03:15,280 --> 00:03:22,130
+And lastly we're going to output those
+results to a display, which in our case
+
+51
+00:03:22,130 --> 00:03:24,255
+will be the UART.
+
+52
+00:03:24,255 --> 00:03:27,760
+DR. RAMESH YERRABALLI: Here we're
+showing you the data flow diagram.
+
+53
+00:03:27,760 --> 00:03:32,700
+So the data initially
+is resistance, which
+
+54
+00:03:32,700 --> 00:03:37,840
+gets converted to a voltage, which
+then gets converted to a number.
+
+55
+00:03:37,840 --> 00:03:43,750
+And eventually it gets converted to a
+string which is displayed on the UART.
+
+56
+00:03:43,750 --> 00:03:46,430
+DR. JONATHAN VALVANO: Exactly.
+
+57
+00:03:46,430 --> 00:03:51,890
+So let's look at the ADC
+parameters, the fundamental behavior
+
+58
+00:03:51,890 --> 00:03:54,430
+of the analog to digital converter.
+
+59
+00:03:54,430 --> 00:03:56,640
+The first is Precision.
+
+60
+00:03:56,640 --> 00:04:01,260
+The precision is the number
+of different alternatives.
+
+61
+00:04:01,260 --> 00:04:04,770
+How many different
+values can we measure?
+
+62
+00:04:04,770 --> 00:04:14,460
+In our case, it's going to be
+12 bits, or 4,096 alternatives.
+
+63
+00:04:14,460 --> 00:04:17,149
+The second will be the Range.
+
+64
+00:04:17,149 --> 00:04:24,480
+In other words, what is the minimum to
+maximum voltage that we can measure.
+
+65
+00:04:24,480 --> 00:04:28,580
+In our case it will
+measure 0 to 3 volts.
+
+66
+00:04:28,580 --> 00:04:34,790
+And putting those two together,
+we can ask what is the Resolution?
+
+67
+00:04:34,790 --> 00:04:42,680
+In other words, the resolution
+is the smallest change in voltage
+
+68
+00:04:42,680 --> 00:04:45,575
+that can be reliably detected.
+
+69
+00:04:45,575 --> 00:04:52,660
+
+70
+00:04:52,660 --> 00:04:55,230
+These three parameters are related.
+
+71
+00:04:55,230 --> 00:04:59,780
+In other words, the
+resolution is a function
+
+72
+00:04:59,780 --> 00:05:04,983
+of the range divided by the
+precision in alternatives.
+
+73
+00:05:04,983 --> 00:05:07,690
+
+74
+00:05:07,690 --> 00:05:10,800
+In our particular case,
+the range is 3 volts
+
+75
+00:05:10,800 --> 00:05:15,890
+minus 0 volts, divided
+by a precision of 4,096.
+
+76
+00:05:15,890 --> 00:05:21,960
+And this will result in a
+resolution of 0.7 millivolts.
+
+77
+00:05:21,960 --> 00:05:27,290
+So any change in voltage here,
+greater than 0.7 millivolts,
+
+78
+00:05:27,290 --> 00:05:31,470
+is detectable by the analog
+to digital converter.
+
+79
+00:05:31,470 --> 00:05:33,450
+DR. RAMESH YERRABALLI:
+So in summary then,
+
+80
+00:05:33,450 --> 00:05:39,790
+if we have a really good sensing system,
+and an analog to digital converter that
+
+81
+00:05:39,790 --> 00:05:42,390
+has high resolution,
+what we're saying is
+
+82
+00:05:42,390 --> 00:05:49,850
+that it has it can convert and measure
+even the smallest change possible.
+
+83
+00:05:49,850 --> 00:05:54,170
+So the higher the resolution, the
+better the sensor, the more expensive
+
+84
+00:05:54,170 --> 00:05:55,450
+it's going to get.
+
+85
+00:05:55,450 --> 00:05:57,140
+DR. JONATHAN VALVANO: Exactly.
+
+86
+00:05:57,140 --> 00:05:57,640
+All right.
+
+87
+00:05:57,640 --> 00:06:02,280
+Next we're going to see how the A to D
+converter works in our microcontroller.
+
+88
+00:06:02,280 --> 00:06:02,903

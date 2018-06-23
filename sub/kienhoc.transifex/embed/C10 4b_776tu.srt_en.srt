@@ -1,0 +1,381 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/omupgLSEF4M
+
+1
+00:00:00,000 --> 00:00:00,060
+
+2
+00:00:00,060 --> 00:00:01,810
+PROFESSOR YERRABALLI:
+So we will now look
+
+3
+00:00:01,810 --> 00:00:08,160
+at the code for the odd
+ones detector program.
+
+4
+00:00:08,160 --> 00:00:16,710
+We saw the finite state machine being
+described by two states, an Even state
+
+5
+00:00:16,710 --> 00:00:24,300
+and an Odd state, and this
+was our initial state.
+
+6
+00:00:24,300 --> 00:00:30,590
+And what we saw was that on an input
+of zero we stay in the Even state,
+
+7
+00:00:30,590 --> 00:00:31,830
+if you had an Even.
+
+8
+00:00:31,830 --> 00:00:35,350
+And on an input of one,
+we go to the Odd state.
+
+9
+00:00:35,350 --> 00:00:38,590
+And in you're in the Odd state
+we receive an input of zero,
+
+10
+00:00:38,590 --> 00:00:40,530
+we stayed there.
+
+11
+00:00:40,530 --> 00:00:45,880
+And an Odd state, if we received an
+input of one, we go to an Even state.
+
+12
+00:00:45,880 --> 00:00:49,740
+And we also saw that the output
+that is produced here is a zero.
+
+13
+00:00:49,740 --> 00:00:54,010
+And the output that is
+produced here is a one.
+
+14
+00:00:54,010 --> 00:00:56,580
+
+15
+00:00:56,580 --> 00:01:03,260
+We saw that there's a one to one
+mapping between this picture here
+
+16
+00:01:03,260 --> 00:01:08,890
+and the FSM array that
+we declared, which
+
+17
+00:01:08,890 --> 00:01:16,050
+is we saw that there was
+the outputs right there.
+
+18
+00:01:16,050 --> 00:01:20,580
+And we said that on an input
+of zero, so the input of zero
+
+19
+00:01:20,580 --> 00:01:25,390
+is going to cause an Even
+to go from Even to Even.
+
+20
+00:01:25,390 --> 00:01:30,540
+And an input of one is going
+to cause this to go to an Odd.
+
+21
+00:01:30,540 --> 00:01:35,140
+So that's what this one said.
+
+22
+00:01:35,140 --> 00:01:38,760
+And similarly, if I'm in an Odd
+state, which is the second row here.
+
+23
+00:01:38,760 --> 00:01:42,190
+If I receive an input
+of zero, I stay in Odd.
+
+24
+00:01:42,190 --> 00:01:47,700
+And if I receive an input
+of one, I go to Even.
+
+25
+00:01:47,700 --> 00:01:53,590
+So we said that, if I want
+to build this engine, that
+
+26
+00:01:53,590 --> 00:02:00,360
+is the engine that runs it is one
+that navigates this finite state
+
+27
+00:02:00,360 --> 00:02:05,720
+machine which means that it's an
+input, changes state, produces output,
+
+28
+00:02:05,720 --> 00:02:10,310
+reads new inputs, changes
+state, produces outputs.
+
+29
+00:02:10,310 --> 00:02:15,490
+So we saw that we also wanted
+each state to have a time day.
+
+30
+00:02:15,490 --> 00:02:20,130
+And the time delay was
+one second in each state.
+
+31
+00:02:20,130 --> 00:02:27,180
+So the one second can be arrived at by
+taking 100 and multiplying that by 10.
+
+32
+00:02:27,180 --> 00:02:31,940
+Because we know that our delay is
+a 10 millisecond delay function.
+
+33
+00:02:31,940 --> 00:02:34,620
+So by putting 100, I'm
+saying that I'm going
+
+34
+00:02:34,620 --> 00:02:41,740
+to wait for 100 times 10
+milliseconds, which is one second.
+
+35
+00:02:41,740 --> 00:02:42,870
+So let's build an engine.
+
+36
+00:02:42,870 --> 00:02:50,220
+
+37
+00:02:50,220 --> 00:02:54,920
+So our main program has as
+its first step initialization.
+
+38
+00:02:54,920 --> 00:02:59,920
+We initialize port F So
+that we get that input.
+
+39
+00:02:59,920 --> 00:03:11,440
+So we set our port F input is
+from PF4 and the output is PF2.
+
+40
+00:03:11,440 --> 00:03:14,900
+So the initialization is
+going to take care of that.
+
+41
+00:03:14,900 --> 00:03:16,750
+We'll use the SysTick to delay.
+
+42
+00:03:16,750 --> 00:03:20,860
+And the call to SysTick
+wait 10 milliseconds
+
+43
+00:03:20,860 --> 00:03:27,004
+it needs to follow an initialization,
+so this is the initialization.
+
+44
+00:03:27,004 --> 00:03:31,160
+We have four steps of
+any finite state machine.
+
+45
+00:03:31,160 --> 00:03:35,010
+The first step is output.
+
+46
+00:03:35,010 --> 00:03:36,750
+We output the current value.
+
+47
+00:03:36,750 --> 00:03:41,510
+What we notice is that
+in our output we either
+
+48
+00:03:41,510 --> 00:03:45,040
+have a zero or a one as the output.
+
+49
+00:03:45,040 --> 00:03:50,450
+But when I look that, it's going to
+be-- if I did it as an 8-bit number
+
+50
+00:03:50,450 --> 00:03:52,260
+it's going to be zero right there.
+
+51
+00:03:52,260 --> 00:03:56,530
+But when I write it to port
+F, I want it to go to PF2.
+
+52
+00:03:56,530 --> 00:04:02,560
+So what I'm going to do is
+left shift it by two positions.
+
+53
+00:04:02,560 --> 00:04:08,840
+So the zero which is in this position
+is going to come to this position.
+
+54
+00:04:08,840 --> 00:04:15,460
+Or if it's a one, similarly, it's
+going to go from this position
+
+55
+00:04:15,460 --> 00:04:17,350
+to this position.
+
+56
+00:04:17,350 --> 00:04:22,570
+So that's what the purpose
+of this left shift by two is.
+
+57
+00:04:22,570 --> 00:04:26,990
+We wait for a certain amount of
+time having moved to a state.
+
+58
+00:04:26,990 --> 00:04:29,380
+This is a dwell time for the state.
+
+59
+00:04:29,380 --> 00:04:34,350
+We read input, so this
+is my second step.
+
+60
+00:04:34,350 --> 00:04:38,260
+My third step is to read fresh input.
+
+61
+00:04:38,260 --> 00:04:42,025
+And we know that our
+switch is negative logic.
+
+62
+00:04:42,025 --> 00:04:46,630
+
+63
+00:04:46,630 --> 00:04:49,870
+And I'm taking pressing
+the button as a one.
+
+64
+00:04:49,870 --> 00:04:54,690
+And so I take the
+switch input, I read it.
+
+65
+00:04:54,690 --> 00:04:58,140
+So it's going to be, if
+it's a zero or a one.
+
+66
+00:04:58,140 --> 00:05:01,390
+Zero corresponds to not
+pressed and one corresponds
+
+67
+00:05:01,390 --> 00:05:04,590
+to pressed, which means
+that I have to negate it.
+
+68
+00:05:04,590 --> 00:05:10,040
+Therefore I have my
+not at the beginning.
+
+69
+00:05:10,040 --> 00:05:16,950
+And again, I'm reading the input
+as in position four in my array.
+
+70
+00:05:16,950 --> 00:05:23,620
+In my register it's at
+bit 4 in my register.
+
+71
+00:05:23,620 --> 00:05:26,940
+So I'm right shifting it four positions.
+
+72
+00:05:26,940 --> 00:05:28,330
+So I read the input.
+
+73
+00:05:28,330 --> 00:05:30,150
+I use it as an index.
+
+74
+00:05:30,150 --> 00:05:51,120
+So the input is an index
+into the next state array.
+
+75
+00:05:51,120 --> 00:05:53,820
+So that's the next
+state array, I index it.
+
+76
+00:05:53,820 --> 00:05:59,580
+I get the new state and I
+write it into my new state,
+
+77
+00:05:59,580 --> 00:06:02,730
+which is now my cState has been updated.
+
+78
+00:06:02,730 --> 00:06:04,740
+And I repeat this process.
+
+79
+00:06:04,740 --> 00:06:08,960
+So the finance state
+machine engine is simply
+
+80
+00:06:08,960 --> 00:06:15,480
+mimicking what traversing
+the FSM graph would look.
+
+81
+00:06:15,480 --> 00:06:16,905

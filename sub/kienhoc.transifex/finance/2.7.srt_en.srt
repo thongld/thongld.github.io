@@ -1,0 +1,497 @@
+1
+00:00:04,620 --> 00:00:05,620
+https://youtu.be/Bt_4lmek-Xg
+Now for
+
+2
+00:00:05,620 --> 00:00:07,430
+one of the most
+
+3
+00:00:07,430 --> 00:00:14,399
+perplexing concepts which I thought couldn't possibly be useful, but is more useful than
+
+4
+00:00:14,400 --> 00:00:21,730
+anything I apply. You know you can be
+very naive and this is the concept of
+
+5
+00:00:21,730 --> 00:00:28,580
+perpetuity and I have a very complex
+accent, so I say perpetuity other people
+
+6
+00:00:28,580 --> 00:00:30,689
+say perpetuity so differently
+
+7
+00:00:30,690 --> 00:00:35,420
+its a tongue twister for me but anyway, what's a
+perpetuity? Think about perpetual,
+
+8
+00:00:35,420 --> 00:00:40,760
+it's forever. So I said how could anything be forever? So turns out, a perpetuity is
+
+9
+00:00:40,760 --> 00:00:48,790
+this. It is a multiple payment that goes
+on forever. So let me just draw the
+
+10
+00:00:48,790 --> 00:01:03,879
+timeline, you have one, two and some period n, C, C, C.  if you notice, it can be with
+
+11
+00:01:03,879 --> 00:01:09,000
+or without growth. Growth in what? We will soon do more complex problems. In an
+
+12
+00:01:09,000 --> 00:01:17,940
+annuity, it stops at n and the C's were
+fixed, but the C's could grow,
+
+13
+00:01:17,940 --> 00:01:24,950
+I'll explain that in a second but a perpetuity doesn't stop at n, it keeps going on, C,C,C,C,C
+
+14
+00:01:24,950 --> 00:01:33,930
+forever and
+turns out it looks very complex right?
+
+15
+00:01:33,930 --> 00:01:45,540
+What is the Present Value of a
+perpetuity? It's C over 1+r, C over 1+r,
+
+16
+00:01:45,540 --> 00:01:52,570
+square. How many times? A gazillion times, this by the way, this curly little
+
+17
+00:01:52,570 --> 00:01:59,789
+monster is my way of writing infinity, so
+if you look at this, this looks like a
+
+18
+00:01:59,790 --> 00:02:05,579
+mind-boggling, even excel couldn't do it. If you have
+the patience and the time and you are nerdy enough,
+
+19
+00:02:05,579 --> 00:02:08,728
+this is actually very easy to solve.
+
+20
+00:02:08,729 --> 00:02:14,879
+And it's because it's geometric progression
+right? So you can do it and the answer
+
+21
+00:02:14,879 --> 00:02:22,40
+will turn out to be, C over r, so if a perpetuity is fixed forever actually the formula is
+
+22
+00:02:22,40 --> 00:02:28,798
+very simple, it's C over r, and why is
+this useful? Turns out that there's
+
+23
+00:02:28,799 --> 00:02:34,110
+something called a console in England
+which pays one pound of whatever forever
+
+24
+00:02:34,110 --> 00:02:42,660
+and you can buy. But that's not the only use, its a very powerful basis of almost all
+
+25
+00:02:42,660 --> 00:02:51,269
+valuation of things called, stocks. So
+think of this: an annuity is applicable to
+
+26
+00:02:51,269 --> 00:02:57,379
+something that has a fixed life and
+that's why we did things like loans, but
+
+27
+00:02:57,379 --> 00:03:02,629
+a perpetuity is applicable to things
+like stocks, where, what a stock is and we'll
+
+28
+00:03:02,629 --> 00:03:08,429
+see this late in the class, people thought
+why teach stocks to an introductory class?
+
+29
+00:03:08,430 --> 00:03:15,599
+Because it's so beautiful and it's so
+applicable to thinking that I'm using
+
+30
+00:03:15,599 --> 00:03:20,839
+stocks as a concept that will pull you in
+many ways. So what is a stock? When you
+
+31
+00:03:20,840 --> 00:03:26,370
+buy a stock in a company, there's
+no contract between you and them. You buy a
+
+32
+00:03:26,370 --> 00:03:32,419
+share and what you give some money and
+hope to get in return, money not just
+
+33
+00:03:32,419 --> 00:03:37,690
+once if you hold it for a long time but
+forever and that payment is called
+
+34
+00:03:37,690 --> 00:03:43,380
+dividend. So the C becomes a D that's
+all. But the neat thing about stocks is
+
+35
+00:03:43,380 --> 00:03:51,129
+that, it's not a contract, but it wants to
+live forever and therefore all valuation
+
+36
+00:03:51,129 --> 00:03:56,239
+of stocks and long-term companies like
+companies are also long term, fit together very
+
+37
+00:03:56,239 --> 00:04:01,000
+well. I'll get into that. We wouldn't want
+to get too excited right now but the
+
+38
+00:04:01,000 --> 00:04:07,129
+thing I wanted to tell you is that if
+cash flow lasts approximately forever and
+
+39
+00:04:07,129 --> 00:04:11,220
+a C,C,C, the formula is pretty
+straightforward. So very quickly, if I get
+
+40
+00:04:11,220 --> 00:04:16,910
+10 bucks every year for the rest of
+eternity
+
+41
+00:04:16,910 --> 00:04:21,630
+and interest rate is 10%, what's the Present
+Value? You can do it in your head then
+
+42
+00:04:21,630 --> 00:04:29,340
+divide it by 0.1 point, don't divide it by 10, 0.1. It's $100, you see how simple it is? So a lot of really
+
+43
+00:04:29,340 --> 00:04:35,140
+really thoughtful people who know all the
+details of finance use such shortcut
+
+44
+00:04:35,140 --> 00:04:39,280
+formulas in a context which is
+applicable right? Not in a very short
+
+45
+00:04:39,280 --> 00:04:47,30
+term loan but in the long term context. 
+Examples of perpetuities: So the first
+
+46
+00:04:47,30 --> 00:04:53,590
+example of perpetuity is a stock, you can
+think of
+
+47
+00:04:53,590 --> 00:05:04,310
+company, you can think of any long term
+stuff because it's very powerful. So for
+
+48
+00:05:04,310 --> 00:05:16,800
+example, if I gave you 10 bucks forever
+at, and the r was 10%,  you'd
+
+49
+00:05:16,800 --> 00:05:21,900
+have ,because
+
+50
+00:05:21,900 --> 00:05:33,388
+it's 10 over 0.1. The beauty of it is, yes
+companies want to last forever, stocks want
+
+51
+00:05:33,389 --> 00:05:38,840
+to last forever but suppose you have a
+very long term horizon and suppose
+
+52
+00:05:38,840 --> 00:05:50,429
+n was 30, you can approximate a
+perpetuity. So do it for yourself please.
+
+53
+00:05:50,430 --> 00:06:03,350
+So do, equals PV and by the way I haven't
+done it. I am just...Take time, 0.10 and
+
+54
+00:06:03,360 --> 00:06:09,720
+instead of infinity, what you're trying
+to do is PV of a payment, right?
+
+55
+00:06:09,720 --> 00:06:22,810
+How many times? Thirty times. What is the PMT? 10 bucks. If you press return,
+
+56
+00:06:22,810 --> 00:06:30,550
+this you'll find to be a very, very close
+approximation of this and the reason is
+
+57
+00:06:30,550 --> 00:06:31,380
+very simple.
+
+58
+00:06:31,380 --> 00:06:38,800
+First, the longer your horizon, 30 is
+much longer than 5, and the higher
+
+59
+00:06:38,800 --> 00:06:41,630
+your interest,
+
+60
+00:06:41,630 --> 00:06:52,419
+the closer the applicability of
+perpetuity formula. I was looking for it, C over r
+
+61
+00:06:52,419 --> 00:06:57,680
+And the reason is very simple. Because of the  power of discounting, anything happening
+
+62
+00:06:57,680 --> 00:07:07,50
+beyond year 30, year 31 is what? Its impact to today's PV of the whole perpetuity
+
+63
+00:07:07,50 --> 00:07:13,419
+is very low, so the Present Value of the
+31st year's cash flow is very, very low
+
+64
+00:07:13,419 --> 00:07:17,609
+most of the value is coming from the
+earlier cash flows and that's true
+
+65
+00:07:17,610 --> 00:07:25,120
+especially if 0.1 is a pretty high
+interest rate if that's the case. I want
+
+66
+00:07:25,120 --> 00:07:26,389
+to do
+
+67
+00:07:26,389 --> 00:07:31,910
+couple more things and then take a
+break right?
+
+68
+00:07:31,910 --> 00:07:37,60
+Because we're coming towards the end of
+what I would call simple applications
+
+69
+00:07:37,60 --> 00:07:41,350
+and I want to show you the power of
+perpetuity, simply because it seems
+
+70
+00:07:41,350 --> 00:07:46,500
+like the simplest application and it's
+applicable to very complex things like the
+
+71
+00:07:46,500 --> 00:07:50,890
+long term stuff, stocks and bonds, so
+there's one more thing about perpetuities and
+
+72
+00:07:50,890 --> 00:07:59,990
+that is suppose the first number was C,
+but the second one was C times 1+G
+
+73
+00:07:59,990 --> 00:08:15,810
+and the third was C times 1+G squared and this went on
+
+74
+00:08:15,810 --> 00:08:23,30
+forever. There is a name for some animal like this, and it's 
+called a growth stock. So if you buy a
+
+75
+00:08:23,30 --> 00:08:28,500
+company that's growing very fast or growing period for a while as opposed to a
+
+76
+00:08:28,500 --> 00:08:33,490
+company that's not growing and is paying
+out dividend fixed amount cash flow every
+
+77
+00:08:33,490 --> 00:08:41,279
+year, this kind of company is like a really aggressive growth technology company. The
+
+78
+00:08:41,279 --> 00:08:46,830
+formula of the perpetuity turns out to
+be C1 because now you have to write C1
+
+79
+00:08:46,830 --> 00:08:54,480
+right? Because C1 is not equal to
+see C2. So what is C2? C2 is growing at rate
+
+80
+00:08:54,480 --> 00:09:01,130
+G, and suppose this is 2%, that will
+give you a sense of what I'm talking
+
+81
+00:09:01,130 --> 00:09:05,50
+about, right? So if you say inflation is
+2% you would hope that your cash flow grows at
+
+82
+00:09:05,50 --> 00:09:09,930
+2% but suppose inflation is
+close to zero, which is the environment
+
+83
+00:09:09,930 --> 00:09:15,89
+in many places today. You still want your cash flows to
+grow if you're genuinely growing.
+
+84
+00:09:15,89 --> 00:09:23,830
+So it'll be C1 over R-G. Many people say but this formula doesn't make any sense if G is
+
+85
+00:09:23,830 --> 00:09:28,610
+equal to R or greater than R, point is
+yes, it doesn't make any sense. So don't
+
+86
+00:09:28,610 --> 00:09:35,80
+use it, you know? So use what? The long formula and use the short formula when it's applicable and
+
+87
+00:09:35,80 --> 00:09:39,610
+that's what we'll see later is that exactly
+what we'll do, but this again is so
+
+88
+00:09:39,610 --> 00:09:45,720
+powerful, I actually believe if you
+understand this, this, and this  you know all of finance,
+
+89
+00:09:45,720 --> 00:09:51,760
+because that's the beauty. These
+capture the power of compounding, the
+
+90
+00:09:51,760 --> 00:09:57,430
+power of valuation, especially of
+long-term complex things and the notion
+
+91
+00:09:57,430 --> 00:10:05,319
+is the more complex the thing, the less
+valuable it is and in the future is to try to
+
+92
+00:10:05,320 --> 00:10:09,690
+be very precise about C1, C2, C3 because you're going to be wrong anyways
+
+93
+00:10:09,690 --> 00:10:14,240
+right? So you are making a decision today, that's impacting you forever.
+
+94
+00:10:14,240 --> 00:10:19,40
+Investing in a company, starting a
+company, whatever. The more uncertain you
+
+95
+00:10:19,40 --> 00:10:25,240
+are actually, the more shortcuts like
+this really help you think through the problem.
+
+96
+00:10:25,240 --> 00:10:30,810
+But you have to know discounted cash
+flow, the details, to make sense of it. So
+
+97
+00:10:30,810 --> 00:10:36,530
+before I end the segment, I wanted to
+highlight one thing. I will put all the
+
+98
+00:10:36,530 --> 00:10:41,870
+formulas and I'm clicking through so if
+you stare at the screen for a little bit
+
+99
+00:10:41,870 --> 00:10:46,339
+there are two pages with the formulas here. I don't want you to worry about them, because
+
+100
+00:10:46,339 --> 00:10:50,810
+they are lots and we have talked about
+most of them. Some others we'll talk about
+
+101
+00:10:50,810 --> 00:10:56,949
+as we do more complex problems. I'm going to post for you as notes. I'm doing that
+
+102
+00:10:56,950 --> 00:11:02,860
+because it's very tedious to keep writing these formulas. I also am doing that
+
+103
+00:11:02,860 --> 00:11:08,300
+because I think you will probably not use the formulas by hand
+
+104
+00:11:08,300 --> 00:11:14,000
+you'll use Excel but Excel needs to know the formulas right? So they're built into Excel for the most
+
+105
+00:11:14,000 --> 00:11:18,000
+part and whenever the formulas are not built in, I will work with Excel to
+
+106
+00:11:18,000 --> 00:11:19,400
+make you understand what's going on.
+

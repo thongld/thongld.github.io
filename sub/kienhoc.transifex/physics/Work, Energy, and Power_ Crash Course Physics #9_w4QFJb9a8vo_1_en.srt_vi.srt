@@ -1,0 +1,597 @@
+1
+00:00:03,060 --> 00:00:06,140
+Giang Na 5/11/2016
+khi nhắc đến từ "công", điều đầu tiên hiện lên trong đầu bạn là gì?
+
+2
+00:00:06,149 --> 00:00:10,748
+có thể là một căn phòng, cặp tài liệu hay kỳ thi lịch sử sắp tới?
+
+3
+00:00:10,749 --> 00:00:15,260
+nhưng nếu bạn là một nhà vật lý, từ này có nghĩa rất cụ thể, không có gì để xử lý
+
+4
+00:00:15,269 --> 00:00:17,550
+với bảng tính hay sự sụp đổ của đế chế La Mã
+
+5
+00:00:17,550 --> 00:00:21,028
+hôm nay ta sẽ tìm hiểu khái niệm đó, và sự liên kết 
+
+6
+00:00:21,028 --> 00:00:24,570
+với một trong những nguyên tắc quan trọng nhất của vật lý: định luật bảo toàn năng lượng
+
+7
+00:00:24,570 --> 00:00:28,230
+ta cũng sẽ tìm hiểu ngụ ý của các nhà vật lý khi họ nói về một khái niệm
+
+8
+00:00:28,230 --> 00:00:30,670
+thường gặp trong đời sống: năng lượng
+
+9
+00:00:30,670 --> 00:00:32,490
+hãy bắt đầu tìm hiểu
+
+10
+00:00:32,490 --> 00:00:42,990
+[nhạc nền]
+
+11
+00:00:42,990 --> 00:00:47,629
+mới đây ta cũng đã nói về lực, và cách chúng làm vật di chuyển
+
+12
+00:00:47,628 --> 00:00:50,628
+và bạn cần hiểu về lực mới có thể hiểu được công
+
+13
+00:00:50,628 --> 00:00:54,428
+bởi công xảy ra khi bạn tác động một lực lên một vật qua khoảng cách nhất định
+
+14
+00:00:54,429 --> 00:00:59,189
+hệ thống có thể là bất kỳ thứ gì trong vũ trụ mà bạn nhắc đến ngay lúc này
+
+15
+00:00:59,189 --> 00:01:03,420
+ví dụ, nếu bạn dùng một sợi dây để kéo một cái hộp trên sàn, ta nói
+
+16
+00:01:03,420 --> 00:01:07,859
+cái hộp là vật, và lực bạn tác động lên nó là ngoại lực
+
+17
+00:01:07,859 --> 00:01:13,840
+vậy, khi bạn tác động lên chiếc hộp bằng cách kéo nó sau lưng bạn thì sợi dây song song với mặt đất
+
+18
+00:01:13,840 --> 00:01:18,320
+nếu bạn dùng dây để kéo chiếc hộp đi 1 mét, ta nói bạn đang thực hiện công lên chiếc hộp
+
+19
+00:01:18,329 --> 00:01:22,109
+và lượng công bạn thực hiện bằng lực bạn tác động lên chiếc hộp
+
+20
+00:01:22,109 --> 00:01:23,790
+nhân khoảng cách bạn di chuyển nó
+
+21
+00:01:23,790 --> 00:01:27,540
+chẳng hạn, bạn kéo sợi dây và chiếc hộp với một lực 50 niu-tơn
+
+22
+00:01:27,540 --> 00:01:33,460
+và kéo đi 5 mét, ta nói bạn thực hiên công có độ lớn 250 niu-tơn vào chiếc hộp
+
+23
+00:01:33,459 --> 00:01:36,719
+tuy nhiên thông thường, công được biểu thị bằng đơn vị jun
+
+24
+00:01:36,719 --> 00:01:41,539
+đôi khi, lực tác động lên một vật không trùng 
+
+25
+00:01:41,540 --> 00:01:43,640
+với hướng di chuyển của vật
+
+26
+00:01:43,640 --> 00:01:49,040
+giống như khi bạn kéo một cái hộp và tay bạn cao hơn nó, để sợi dây tạo thành một góc so với sàn nhà
+
+27
+00:01:49,040 --> 00:01:54,000
+trong trường hợp này, cái hộp di chuyển song song với sàn nhà, nhưng lực tạo thành một góc với sàn nhà
+
+28
+00:01:54,000 --> 00:01:58,359
+như vậy, bạn phải dùng một trong những mẹo mà ta đã học khi ta nói về véc-tơ
+
+29
+00:01:58,359 --> 00:02:02,819
+cụ thể, bạn phải tách lực tác động lên sợi dây thành các bộ phận cấu thành
+
+30
+00:02:02,819 --> 00:02:06,219
+phần song song với sàn nhà và phần vuông góc với sàn nhà
+
+31
+00:02:06,219 --> 00:02:11,280
+để xác định phần lực song song với sàn nhà, là lực kéo chiếc hộp đi về phía trước
+
+32
+00:02:11,280 --> 00:02:16,140
+bạn chỉ cần nhân độ lớn của lực với cô-sin góc mà sợi dây tạo thành với sàn nhà
+
+33
+00:02:16,139 --> 00:02:19,669
+bạn có nhớ ta đã gọi góc trong một hệ thống là theta
+
+34
+00:02:19,669 --> 00:02:23,839
+vậy để tính công tác động lên hộp, bạn chỉ cần nhân lực song song F
+
+35
+00:02:23,840 --> 00:02:27,580
+với cô-sin góc x khoảng cách di chuyển
+
+36
+00:02:27,580 --> 00:02:31,540
+có một phương trình khác các nhà vật lý dùng để đo công, 
+
+37
+00:02:31,539 --> 00:02:34,429
+lấy lực x khoảng cách x cô-sin góc
+
+38
+00:02:34,430 --> 00:02:40,040
+phương trình đó có thể áp dụng cho bất kỳ trường hợp nào có lực cố định tác động qua khoảng cách nhất định
+
+39
+00:02:40,039 --> 00:02:42,019
+nhưng nếu lực không cố định thì sao?
+
+40
+00:02:42,020 --> 00:02:46,380
+khi bạn thấy nặng và bắt đầu thấy mệt
+
+41
+00:02:46,389 --> 00:02:51,229
+độ lớn lực tác động lên hộp giảm dần khi bạn kéo nó đi xa
+
+42
+00:02:51,229 --> 00:02:55,369
+để tính công trong trường hợp đó, bạn phải tính độ lớn lực
+
+43
+00:02:55,370 --> 00:02:58,219
+tác động trên mỗi quãng đường ngắn
+
+44
+00:02:58,219 --> 00:03:02,180
+và nếu bạn đã xem chương tính toán của chúng tôi, bạn sẽ biết có một cách nhanh hơn
+
+45
+00:03:02,180 --> 00:03:06,140
+để cộng các số gia đơn lẻ với nhau là tích phân
+
+46
+00:03:06,139 --> 00:03:10,339
+vậy để xác định công tạo ra bởi một lực khác, bạn chỉ cần lấy tích phân lực
+
+47
+00:03:10,349 --> 00:03:13,500
+của quãng đường vật đi được. nó sẽ như thế này
+
+48
+00:03:13,500 --> 00:03:16,919
+nhưng lực x khoảng cách chỉ là một cách để đo công của các nhà vật lý
+
+49
+00:03:16,919 --> 00:03:19,979
+bởi vì bạn biết rằng ta nói jun là một đơn vị của công
+
+50
+00:03:19,990 --> 00:03:23,450
+jun còn thường được dùng làm đơn vị của năng lượng
+
+51
+00:03:23,449 --> 00:03:27,949
+và công dùng đơn vị giống năng lượng, vì công chỉ là một sự thay đổi về năng lượng
+
+52
+00:03:27,949 --> 00:03:33,199
+đó là những gì xảy ra khi tác động ngoại lực lên một vật và thay đổi năng lượng vật đó
+
+53
+00:03:33,209 --> 00:03:37,819
+thực tế, một cách để định nghĩa năng lượng, là khả năng thực hiện công của nó
+
+54
+00:03:37,819 --> 00:03:42,199
+có nhiều loại năng lượng khác nhau, nhưng trong chương này, ta sẽ tập trung vào hai loại
+
+55
+00:03:42,199 --> 00:03:47,000
+động năng và cơ năng: động năng là năng lượng của chuyển động
+
+56
+00:03:47,000 --> 00:03:49,969
+khi chiếc hộp nằm yên trên sàn, ta nói nó không có động năng
+
+57
+00:03:49,969 --> 00:03:54,020
+khi tác dụng một lực và làm nó di chuyển là nó đã có động năng
+
+58
+00:03:54,020 --> 00:03:57,599
+và năng lượng của nó thay đổi, nghĩa là bạn đã thực hiện công lên nó
+
+59
+00:03:57,599 --> 00:04:03,060
+cụ thể hơn, động năng của một vật bằng nửa độ lớn của nó nhân bình phương vận tốc
+
+60
+00:04:03,060 --> 00:04:06,459
+trông rất quen thuộc vì nó áp dụng cả nguyên lý thứ 2 của Niu-tơn 
+
+61
+00:04:06,459 --> 00:04:11,569
+và các phương trình động học vào công thức công = lực x khoảng cách
+
+62
+00:04:11,568 --> 00:04:16,019
+vậy nếu chiếc hộp nặng 20 kg, và ở một thời điểm nào đó khi bạn kéo nó
+
+63
+00:04:16,019 --> 00:04:20,689
+với vận tốc 4 mét/giây, ta nói động năng vào thời điểm này
+
+64
+00:04:20,689 --> 00:04:23,069
+là 160 jun
+
+65
+00:04:23,069 --> 00:04:27,430
+ngoài ra còn có cơ năng, nhưng nó thực sự không như tên gọi
+
+66
+00:04:27,430 --> 00:04:32,209
+cơ năng không phải là năng lượng tiềm tàng mà là nó có khả năng hoạt động
+
+67
+00:04:32,209 --> 00:04:36,180
+nói cách khác, cơ năng là năng lượng có thể dùng để thực hiện công
+
+68
+00:04:36,189 --> 00:04:39,680
+một loại cơ năng phổ biến là cơ năng hấp dẫn
+
+69
+00:04:39,680 --> 00:04:43,879
+về cơ bản, cơ năng được tạo ra từ sự tồn tại của lực hấp dẫn
+
+70
+00:04:43,879 --> 00:04:49,300
+nếu tôi cầm quyến sách này trên 1 mét so với mặt đất, ta nói nó có cơ năng hấp dẫn
+
+71
+00:04:49,300 --> 00:04:53,699
+vì nếu bạn thả ra thì lực hấp dẫn sẽ thực hiện công lên cuốn sách
+
+72
+00:04:53,699 --> 00:04:57,800
+lực hấp dẫn tác dụng một lực làm quyển sách rơi xuống đất
+
+73
+00:04:57,810 --> 00:05:01,180
+tuy nhiên, khi sách rơi xuống đất, cơ năng hấp dẫn bằng 0
+
+74
+00:05:01,180 --> 00:05:04,139
+vì lực hấp dẫn không thực hiện công nữa
+
+75
+00:05:04,139 --> 00:05:06,899
+cách tính cơ năng hấp dẫn rất đơn giản
+
+76
+00:05:06,899 --> 00:05:11,879
+nó chỉ là lực hấp dẫn tác dụng lên vật, do đó sẽ bằng khối lượng vật x g nhỏ x độ cao của vật
+
+77
+00:05:11,879 --> 00:05:15,600
+hay ngắn gọn là mgh
+
+78
+00:05:15,600 --> 00:05:19,879
+nghĩa là nếu cuốn sách nặng 1 kg
+
+79
+00:05:19,879 --> 00:05:25,550
+và cao 1 mét so với mặt đất, ta có cơ năng bằng 9,8 jun
+
+80
+00:05:25,550 --> 00:05:28,860
+một dạng cơ năng khác thường gặp là cơ năng đàn hồi
+
+81
+00:05:28,860 --> 00:05:33,259
+không giống như cái tên spring, nó không chỉ mùa, tôi chỉ đùa thôi
+
+82
+00:05:33,259 --> 00:05:37,000
+đó là một dạng cơ năng xảy ra với lò xo
+
+83
+00:05:37,000 --> 00:05:41,579
+lực đàn hồi của lò xo bằng khoảng cách nó bị nén hay giãn
+
+84
+00:05:41,579 --> 00:05:43,418
+nhân hằng số k
+
+85
+00:05:43,420 --> 00:05:48,600
+phương trình này được gọi là nguyên lý Hooke, sau khi nhà vật lý người Anh Robert Hooke, phát hiện ra năm 1660
+
+86
+00:05:48,610 --> 00:05:53,199
+hằng số k được gọi là hằng số đàn hồi, khác nhau với mỗi lò xo
+
+87
+00:05:53,199 --> 00:05:55,259
+nó là số đo độ cứng của lò xo
+
+88
+00:05:55,259 --> 00:05:57,759
+và phương trình có lý nếu bạn suy nghĩ 
+
+89
+00:05:57,759 --> 00:06:02,560
+bạn càng ép chặt lò xo, nó càng cứng, và càng đẩy ra mạnh hơn
+
+90
+00:06:02,560 --> 00:06:07,439
+bạn cũng có thể tự kiểm chứng bằng cách lấy ra một cái bút bi và thử lò xo bên trong
+
+91
+00:06:07,439 --> 00:06:11,360
+nếu kết hợp nguyên lý Hooke với công thức cơ = lực x khoảng cách
+
+92
+00:06:11,360 --> 00:06:13,540
+ta có thể tính được cơ năng của một lò xo
+
+93
+00:06:13,540 --> 00:06:16,720
+là 1/2 x k x bình phương khoảng cách
+
+94
+00:06:16,720 --> 00:06:20,900
+chẳng hạn, một lò xo có hằng số đàn hồi 200 niu-tơn/mét
+
+95
+00:06:20,899 --> 00:06:26,359
+và một cái then nén lò xo với 1/2 mét, vậy cơ năng cái then sẽ là 25 jun
+
+96
+00:06:26,370 --> 00:06:29,439
+vậy khi một vật thực hiện công lên một hệ, năng lượng của hệ thay đổi
+
+97
+00:06:29,439 --> 00:06:32,389
+nhưng năng lượng thay đổi thế nào phụ thuộc vào hệ đó
+
+98
+00:06:32,389 --> 00:06:35,750
+một số hệ mất năng lượng được gọi là hệ không bảo toàn
+
+99
+00:06:35,750 --> 00:06:39,649
+nhưng không có nghĩa năng lượng mất đi biến mất khỏi không gian
+
+100
+00:06:39,649 --> 00:06:43,000
+nó cũng không ảnh hưởng gì đến trạng thái riêng của hệ
+
+101
+00:06:43,000 --> 00:06:45,779
+chỉ là liên quan đến một trong số các quy tắc cơ bản của khoa học
+
+102
+00:06:45,779 --> 00:06:48,478
+năng lượng không thể được sinh ra cũng không thể bị mất đi
+
+103
+00:06:48,478 --> 00:06:53,178
+nhưng hệ có thể mất năng lượng, giống như khi ma sát từ chiếc hộp bị kéo lê trên sàn sinh ra nhiệt
+
+104
+00:06:53,180 --> 00:06:59,019
+với những hệ không bảo toàn, bạn có thể nghiên cứu động năng hay cơ năng ở bất kỳ thời điểm nào
+
+105
+00:06:59,019 --> 00:07:02,120
+nhưng hệ bảo toàn có nhiều thứ để nghiên cứu hơn
+
+106
+00:07:02,129 --> 00:07:05,579
+một hệ bảo toàn là hệ không mất năng lượng khi thực hiện công
+
+107
+00:07:05,579 --> 00:07:07,359
+chẳng hạn một quả lắc đồng hồ
+
+108
+00:07:07,360 --> 00:07:12,860
+khi nó ở vị trí xa nhất của vòng quay, nó sẽ dừng một lúc trước khi chuyển hướng
+
+109
+00:07:12,860 --> 00:07:15,699
+nghĩa là tại thời điểm đó động năng bằng 0
+
+110
+00:07:15,709 --> 00:07:20,209
+nhưng nó có rất nhiều cơ năng, vì lực hấp dẫn thực hiện công lên quả lắc
+
+111
+00:07:20,209 --> 00:07:23,948
+kéo nó xuống cho đến khi đạt đến điểm thấp nhất của vòng quay
+
+112
+00:07:23,949 --> 00:07:26,528
+đến điểm thấp nhất, cơ năng bằng 0
+
+113
+00:07:26,528 --> 00:07:29,139
+vì lực hấp dẫn không thể kéo nó xuống được nữa
+
+114
+00:07:29,139 --> 00:07:33,120
+giờ thì quả lắc có nhiều động năng vì nó đang chuyển động qua lại
+
+115
+00:07:33,120 --> 00:07:37,459
+tóm lại, với mỗi thời điểm bất kỳ trên vòng quay của quả lắc, cả động năng và cơ năng
+
+116
+00:07:37,459 --> 00:07:40,448
+có thể đạt tới cùng một con số nhất định
+
+117
+00:07:40,449 --> 00:07:46,369
+nếu cơ năng tăng bao nhiêu, động năng sẽ giảm bấy nhiêu, và ngược lại
+
+118
+00:07:46,370 --> 00:07:51,180
+sau khi ta đã biết thế nào là công, ta có thể dùng định nghĩa để giải thích 
+
+119
+00:07:51,180 --> 00:07:55,379
+một khái niệm phổ biến mà các nhà vật lý đã có một khái niệm cụ thể: công suất
+
+120
+00:07:55,379 --> 00:07:57,759
+hay cụ thể hơn là công suất trung bình
+
+121
+00:07:57,759 --> 00:08:01,420
+công suất trung bình là công thực hiện qua các thời điểm, được tính bằng oát
+
+122
+00:08:01,420 --> 00:08:04,080
+hay còn gọi là jun/giây
+
+123
+00:08:04,079 --> 00:08:08,579
+về cơ bản, nó là số đo lượng năng lượng được chuyển từ dạng này sang dạng khác theo thời gian
+
+124
+00:08:08,579 --> 00:08:10,399
+còn nhớ chiếc hộp bạn đá kéo chứ?
+
+125
+00:08:10,399 --> 00:08:15,379
+ta đã tính được bạn đã thực hiện công 250 jun lên cái hộp khi kéo nó đi 5 mét
+
+126
+00:08:15,379 --> 00:08:20,288
+nếu mất 2 giây để kéo thì công suất trung bình là 125 oát
+
+127
+00:08:20,288 --> 00:08:21,899
+về cơ bản bạn đã làm được rồi đấy!
+
+128
+00:08:21,899 --> 00:08:26,188
+giờ bạn có thể biểu diễn công suất theo cách khác, bằng cách kết hợp 2 ý tưởng khác nhau
+
+129
+00:08:26,189 --> 00:08:29,169
+thứ nhất, công = lực x khoảng cách
+
+130
+00:08:29,168 --> 00:08:32,759
+thứ 2, vận tốc trung bình = khoảng cách x thời gian
+
+131
+00:08:32,759 --> 00:08:38,319
+từ đó ta nói, công suất là lực tổng hợp áp dụng cho một vật với vận tốc trung bình
+
+132
+00:08:38,328 --> 00:08:43,859
+nếu bạn kéo cái hộp đi 5 mét trong 2 giây, vận tốc trung bình là 2,5 mét/ giây
+
+133
+00:08:43,860 --> 00:08:47,139
+ta đã nói rằng nếu bạn kéo cái hộp với lực 50 niu-tơn
+
+134
+00:08:47,139 --> 00:08:51,299
+thì lực đó x vận tốc trung bình 
+
+135
+00:08:51,308 --> 00:08:54,928
+sẽ cho bạn công suất trung bình là 125 oát
+
+136
+00:08:54,928 --> 00:08:59,279
+hai phương trình tính công suất trung bình thực chất đều mô tả cung một mối quan hệ
+
+137
+00:08:59,279 --> 00:09:01,339
+chỉ là vận dụng các đặc tính khác nhau mà thôi
+
+138
+00:09:01,350 --> 00:09:05,440
+ta sẽ nói thêm về công suất khi ta học về điện trong các chương sau
+
+139
+00:09:05,440 --> 00:09:08,779
+đó là cách hiệu quả nhất để tính lượng năng lượng chuyển động quanh một mạch
+
+140
+00:09:08,778 --> 00:09:12,099
+nhưng đó là việc của hôm sau, bây giờ ta đã xong việc
+
+141
+00:09:12,100 --> 00:09:17,340
+hôm nay, ta đã học 2 phương trình biểu diễn công, và năng lượng để thực hiện công
+
+142
+00:09:17,350 --> 00:09:20,110
+và về động năng và cơ năng
+
+143
+00:09:20,110 --> 00:09:23,659
+cũng như vai trò của chúng trong các hệ bảo toàn và không bảo toàn
+
+144
+00:09:23,659 --> 00:09:26,409
+cuối cùng, ta đã học 2 công thức tính công suất
+
+145
+00:09:26,409 --> 00:09:29,539
+khóa học vật lý cấp tốc được phát triển với sự hợp tác của hãng phim PBS.
+
+146
+00:09:29,539 --> 00:09:33,539
+bạn có thể chuyển sang kênh của họ để xem các chương mới nhất từ các show như The Art Assignment,
+
+147
+00:09:33,539 --> 00:09:35,399
+PBS Idea Channel, và PBS Game Show.
+
+148
+00:09:35,399 --> 00:09:40,039
+chương này được quay phim ở hãng phim Doctor Cheryl C. Kinney  
+
+149
+00:09:40,039 --> 00:09:44,740
+với sự hỗ trợ của những người nhiệt tình và nhóm đồ họa tuyệt vời của chúng tôi là Thought Cafe  
+

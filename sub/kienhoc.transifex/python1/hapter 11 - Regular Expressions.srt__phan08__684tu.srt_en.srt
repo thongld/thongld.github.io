@@ -1,0 +1,406 @@
+659
+00:31:17,150 --> 00:31:22,060
+https://youtu.be/UR6a_wZ8ido
+and ending up with a very
+solid and safe matching.
+
+660
+00:31:22,060 --> 00:31:23,850
+So we're really--
+it's hard for this
+
+661
+00:31:23,850 --> 00:31:25,860
+to find a line that's wrong.
+
+662
+00:31:25,860 --> 00:31:28,020
+And you could even
+improve this a little bit
+
+663
+00:31:28,020 --> 00:31:30,030
+to make it even a little
+tighter where it would
+
+664
+00:31:30,030 --> 00:31:33,440
+go find a number like 0.999.
+
+665
+00:31:33,440 --> 00:31:41,070
+You could say, oh, it's--
+all the numbers are 0 dot--
+
+666
+00:31:41,070 --> 00:31:48,630
+so you could make this a little
+more so it would even skip
+
+667
+00:31:48,630 --> 00:31:51,530
+things that-- you can make it
+so it looks exactly the way you
+
+668
+00:31:51,530 --> 00:31:52,560
+want to look.
+
+669
+00:31:52,560 --> 00:31:55,880
+So I emphasize that this is
+kind of a weird language.
+
+670
+00:31:55,880 --> 00:31:57,430
+And you need some kind of thing.
+
+671
+00:31:57,430 --> 00:31:59,190
+We talked about all these.
+
+672
+00:31:59,190 --> 00:32:00,815
+We have the beginning of a line.
+
+673
+00:32:00,815 --> 00:32:03,980
+We have the end of the line
+matching any character,
+
+674
+00:32:03,980 --> 00:32:05,760
+matching space
+characters, matching
+
+675
+00:32:05,760 --> 00:32:07,920
+non-whitespace characters.
+
+676
+00:32:07,920 --> 00:32:13,150
+Star is a modifier that
+says zero or more times.
+
+677
+00:32:13,150 --> 00:32:16,610
+Star question mark is a
+modifier that says zero or more
+
+678
+00:32:16,610 --> 00:32:18,520
+times non greedy.
+
+679
+00:32:18,520 --> 00:32:21,010
+Plus is one or more times.
+
+680
+00:32:21,010 --> 00:32:25,400
+Plus question mark is one
+or more times non greedy.
+
+681
+00:32:25,400 --> 00:32:27,770
+When you have bracket
+syntax, it's a set.
+
+682
+00:32:27,770 --> 00:32:30,640
+It's a single character
+that's in the listed set.
+
+683
+00:32:30,640 --> 00:32:33,671
+So that's lowercase vowels.
+
+684
+00:32:33,671 --> 00:32:36,170
+You can also have the first--
+if the first character of this
+
+685
+00:32:36,170 --> 00:32:38,680
+is a caret, that flips it.
+
+686
+00:32:38,680 --> 00:32:40,990
+So that means everything
+except capital X,
+
+687
+00:32:40,990 --> 00:32:43,510
+capital Y, capital
+Z. So it's everything
+
+688
+00:32:43,510 --> 00:32:47,920
+that's not in the set capital
+X, capital Y, capital Z.
+
+689
+00:32:47,920 --> 00:32:51,090
+And then you can also put
+dashes in to represent ranges.
+
+690
+00:32:51,090 --> 00:32:54,200
+Bracket a through z and 0
+through 9 in lowercase letters
+
+691
+00:32:54,200 --> 00:32:55,840
+and digits will match.
+
+692
+00:32:55,840 --> 00:32:58,550
+But again, this is
+a single character.
+
+693
+00:32:58,550 --> 00:33:01,670
+Now, you can put a plus
+or a star after these guys
+
+694
+00:33:01,670 --> 00:33:04,272
+to make them happen
+more than one time.
+
+695
+00:33:04,272 --> 00:33:05,730
+And you can even
+put them in twice.
+
+696
+00:33:05,730 --> 00:33:12,800
+So if I wanted a two digit
+number, I could say 0-9, 0-9.
+
+697
+00:33:12,800 --> 00:33:15,850
+Oops, this is one character.
+
+698
+00:33:15,850 --> 00:33:18,350
+This is one character and
+this is the possible things.
+
+699
+00:33:18,350 --> 00:33:23,660
+So that's, you know, 000 0
+would match, 10 would match,
+
+700
+00:33:23,660 --> 00:33:25,970
+99 would match, et cetera.
+
+701
+00:33:25,970 --> 00:33:28,990
+
+702
+00:33:28,990 --> 00:33:31,190
+And then the parentheses
+are the things
+
+703
+00:33:31,190 --> 00:33:33,814
+that if you are in the middle
+of a big long matching string
+
+704
+00:33:33,814 --> 00:33:35,730
+and you don't want to
+extract the whole thing,
+
+705
+00:33:35,730 --> 00:33:39,970
+you can limit the things you're
+extracting to the stuff that's
+
+706
+00:33:39,970 --> 00:33:41,490
+just in there.
+
+707
+00:33:41,490 --> 00:33:44,000
+With all these characters
+that have all this meaning,
+
+708
+00:33:44,000 --> 00:33:46,460
+we have to have a way to
+match those characters.
+
+709
+00:33:46,460 --> 00:33:49,956
+So dollar sign is
+the end of a line.
+
+710
+00:33:49,956 --> 00:33:52,330
+But what if we're looking for
+something that actually has
+
+711
+00:33:52,330 --> 00:33:54,740
+a dollar sign in the string?
+
+712
+00:33:54,740 --> 00:33:56,830
+And that's what the
+backslash is for.
+
+713
+00:33:56,830 --> 00:33:58,330
+So if you put the
+backslash in front
+
+714
+00:33:58,330 --> 00:34:02,880
+of a otherwise
+meaningful character,
+
+715
+00:34:02,880 --> 00:34:04,360
+it becomes the actual character.
+
+716
+00:34:04,360 --> 00:34:06,980
+So this is saying
+match a dollar sign.
+
+717
+00:34:06,980 --> 00:34:09,219
+Those two character say
+match a dollar sign.
+
+718
+00:34:09,219 --> 00:34:13,679
+And then this says one character
+that's 0 through 9 or a dot.
+
+719
+00:34:13,679 --> 00:34:16,020
+And then we put
+the plus modifier
+
+720
+00:34:16,020 --> 00:34:18,810
+to say at least
+one or more times.
+
+721
+00:34:18,810 --> 00:34:21,350
+And so that sort of is
+a greedy, of course.
+
+722
+00:34:21,350 --> 00:34:24,040
+So that will get us
+this and extract it,
+
+723
+00:34:24,040 --> 00:34:25,139
+including the dollar sign.
+
+724
+00:34:25,139 --> 00:34:29,290
+So the escape character
+is the backslash.
+
+725
+00:34:29,290 --> 00:34:31,044
+OK, so there we are.
+
+726
+00:34:31,044 --> 00:34:32,440
+Now we're done.
+
+727
+00:34:32,440 --> 00:34:34,560
+So this is a little bit cryptic.
+
+728
+00:34:34,560 --> 00:34:38,040
+It's kind of a puzzle.
+
+729
+00:34:38,040 --> 00:34:41,250
+It's kind of fun and
+it's extremely powerful.
+
+730
+00:34:41,250 --> 00:34:42,860
+And you don't have to know it.
+
+731
+00:34:42,860 --> 00:34:45,199
+You don't have to learn it.
+
+732
+00:34:45,199 --> 00:34:47,489
+But if you do,
+you'll find that it's
+
+733
+00:34:47,489 --> 00:34:50,590
+very useful as we sort
+of dig through data
+
+734
+00:34:50,590 --> 00:34:53,150
+and are trying to write
+things that are pretty quick.
+
+735
+00:34:53,150 --> 00:34:57,000
+And the thing I like
+about regular expressions
+
+736
+00:34:57,000 --> 00:35:00,850
+is that they tend to be,
+if you write them well,
+
+737
+00:35:00,850 --> 00:35:04,690
+they tend to be less
+sensitive to bad data.
+
+738
+00:35:04,690 --> 00:35:06,540
+They tend to ignore data there.
+
+739
+00:35:06,540 --> 00:35:07,750
+You can put more detail.
+
+740
+00:35:07,750 --> 00:35:09,790
+I exactly want this.
+
+741
+00:35:09,790 --> 00:35:12,160
+Or if you're writing
+find and extract,
+
+742
+00:35:12,160 --> 00:35:14,310
+you're making a lot of
+assumptions about the data--
+
+743
+00:35:14,310 --> 00:35:17,400
+that it's clean and you're not
+going to miss hit on something.
+
+744
+00:35:17,400 --> 00:35:22,170
+So OK, well, good luck in your
+use of regular expressions
+
+745
+00:35:22,170 --> 00:35:24,610
+and we'll see you later.
+

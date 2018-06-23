@@ -1,0 +1,478 @@
+1
+00:00:08,629 --> 00:00:10,630
+dungpham12002 05.07.2016 Thao reviewed
+Chào mừng bạn đã đến chương về đối tượng.
+
+2
+00:00:10,630 --> 00:00:12,879
+Thực ra, chương này
+không có trong giáo trình.
+
+3
+00:00:12,879 --> 00:00:15,546
+Ít nhất là không trong phiên bản
+hiện tại của giáo trình.
+
+4
+00:00:15,546 --> 00:00:18,798
+Nhưng tôi nghĩ đây là thời điểm
+thích hợp - vì trình độ 
+
+5
+00:00:18,798 --> 00:00:23,415
+cũng như độ phức tạp của những chương trình
+ta viết bắt đầu tăng lên -
+
+6
+00:00:23,415 --> 00:00:26,461
+để nói về lập trình hướng đối tượng.
+
+7
+00:00:26,461 --> 00:00:30,692
+Cốt yếu là ta sẽ không dành nhiều thời gian
+để lập trình các đối tượng, mà
+
+8
+00:00:30,692 --> 00:00:32,890
+ta sẽ sử dụng nhiều đối tượng.
+
+9
+00:00:32,890 --> 00:00:35,450
+Và nói thẳng ra thì chúng ta
+đã sử dụng các đối tượng rất nhiều.
+
+10
+00:00:35,450 --> 00:00:37,950
+Vậy nên đây không hẳn
+là một kĩ thuật viết code mới.
+
+11
+00:00:37,950 --> 00:00:42,275
+Nó chỉ giúp giải thích cho bạn một chút
+về những gì vẫn được đề cập đến
+
+12
+00:00:42,275 --> 00:00:43,796
+trong toàn bộ khóa học này.
+
+13
+00:00:43,796 --> 00:00:47,674
+Và khi tôi nói về 'hàm khởi tạo', hay
+đây là cách bạn tạo một dictionary rỗng,
+
+14
+00:00:47,674 --> 00:00:50,580
+tôi muốn bạn có hiểu biết
+sâu hơn về chúng.
+
+15
+00:00:50,580 --> 00:00:54,298
+Vậy hãy ngừng sự hoài nghi; và tôi ngay lúc này 
+cũng không hẳn là đang cố dạy cho bạn 
+
+16
+00:00:54,298 --> 00:00:57,021
+một kĩ năng để bạn trở thành
+một 'phù thủy' về lập trình hướng đối tượng.
+
+17
+00:00:57,021 --> 00:01:00,430
+Nhưng tôi muốn giúp bạn đạt đến trình độ
+mà khi tôi sử dụng các thuật ngữ
+
+18
+00:01:00,430 --> 00:01:03,210
+trong phần còn lại của khóa học
+thì bạn cũng không cảm thấy khó hiểu.
+
+19
+00:01:04,620 --> 00:01:08,260
+Vậy ta đã thấy lập trình
+hướng đối tượng rất nhiều rồi.
+
+20
+00:01:08,260 --> 00:01:11,160
+Đây là phần tài liệu
+của Python về list.
+
+21
+00:01:11,160 --> 00:01:15,016
+Nó là một kiểu dữ liệu
+và có nói về các phương thức.
+
+22
+00:01:15,016 --> 00:01:16,910
+Chúng ta đã nói rất nhiều
+về các phương thức.
+
+23
+00:01:16,910 --> 00:01:18,870
+Tôi cũng đã sử dụng từ 'phương thức'.
+
+24
+00:01:18,870 --> 00:01:23,490
+Các phương thức cũng giống như các hàm
+thuộc một đối tượng vậy.
+
+25
+00:01:23,820 --> 00:01:29,080
+Vậy chúng ta đã sử dụng chúng rất nhiều;
+và khi tôi nói rằng chúng ta khởi tạo một dictionary rỗng,
+
+26
+00:01:29,080 --> 00:01:33,030
+từ 'khởi tạo' là một thuật ngữ
+liên quan đến việc
+
+27
+00:01:33,030 --> 00:01:35,900
+tạo một thực thể mới
+của một đối tượng cụ thể.
+
+28
+00:01:35,900 --> 00:01:36,820
+Chúng ta cũng đã sử dụng khái niệm này.
+
+29
+00:01:36,820 --> 00:01:41,702
+Và khi ta chuyển sang học về cơ sở dữ liệu,
+ta thấy rằng khi đọc phần tài liệu,
+
+30
+00:01:41,702 --> 00:01:43,712
+họ bắt đầu sử dụng từ 'đối tượng'.
+
+31
+00:01:43,712 --> 00:01:45,212
+Họ sử dụng từ 'phương thức'.
+
+32
+00:01:45,212 --> 00:01:48,528
+Và tất cả đều là những
+thuật ngữ mà tôi muốn bạn
+
+33
+00:01:48,528 --> 00:01:53,420
+ít nhất là nắm rõ đã, chứ không nhất thiết 
+phải viết đối tượng thật cao siêu.
+
+34
+00:01:53,420 --> 00:01:56,627
+Bởi bạn không phải lúc nào cũng cần
+viết đối tượng, cũng giống như với hàm,
+
+35
+00:01:56,627 --> 00:01:59,740
+bạn không phải lúc nào cũng cần viết hàm,
+nhưng ta sử dụng chúng rất nhiều.
+
+36
+00:01:59,740 --> 00:02:05,463
+Vậy, với cả các hàm lẫn đối tượng, chúng ta
+sử dụng nhiều hơn là tạo ra chúng.
+
+37
+00:02:05,463 --> 00:02:09,254
+Bây giờ, ta sẽ xem lại các chương trình
+mà ta đã nói khi trước.
+
+38
+00:02:09,254 --> 00:02:13,046
+Đây là chương trình quy đổi
+số tầng thang máy mà tôi rất thích.
+
+39
+00:02:13,046 --> 00:02:16,877
+Và nó có lẽ là chương trình
+đơn giản tôi thích nhất
+
+40
+00:02:16,877 --> 00:02:20,879
+bởi nó bao gồm việc nhập dữ liệu,
+tính toán, và trả kết quả.
+
+41
+00:02:20,879 --> 00:02:25,019
+Và khi nghĩ về điều này: nếu bạn nhớ lại
+về tất cả các chương trình bạn đã viết,
+
+42
+00:02:25,019 --> 00:02:27,250
+chúng chỉ là các biến thể của
+chương trình này thôi.
+
+43
+00:02:27,250 --> 00:02:30,550
+Chúng bắt đầu ở đâu đó, rồi thực hiện một số lệnh,
+có thể có một vài vòng lặp trong đó,
+
+44
+00:02:30,550 --> 00:02:32,300
+và rồi chúng kết thúc.
+
+45
+00:02:32,300 --> 00:02:35,030
+Đó là một chương trình khá điển hình.
+
+46
+00:02:35,030 --> 00:02:36,470
+Nó là một chương trình một khối.
+
+47
+00:02:36,470 --> 00:02:40,420
+Ta có thể viết một hàm, nhưng
+đó chỉ là một cách để nghĩ về một chương trình.
+
+48
+00:02:41,840 --> 00:02:46,537
+Khi ta viết các chương trình ngày càng phức tạp
+hơn, thì các cấu trúc dữ liệu
+
+49
+00:02:46,537 --> 00:02:49,004
+ta xây dựng cũng trở nên phức tạp hơn.
+
+50
+00:02:49,004 --> 00:02:52,759
+Và trong ví dụ nhỏ sau đây,
+ta sẽ tạo ra một list
+
+51
+00:02:52,759 --> 00:02:55,900
+và cho list đó trở thành
+một dãy các dictionary.
+
+52
+00:02:55,900 --> 00:03:00,920
+Vậy, giả sử ta xây dựng một list
+theo trường phái hướng đối tượng.
+
+53
+00:03:00,920 --> 00:03:03,190
+Bây giờ ta sẽ khởi tạo một dictionary.
+
+54
+00:03:03,190 --> 00:03:06,240
+Đầu tiên ta sẽ thêm một số key
+vào dictionary,
+
+55
+00:03:06,240 --> 00:03:08,800
+sau đó thêm nó vào list movies tức các bộ phim,
+
+56
+00:03:08,800 --> 00:03:12,370
+với lệnh movies.append, và thứ
+ta đang thêm ở đây là một dictionary.
+
+57
+00:03:12,370 --> 00:03:15,830
+Vậy đây chính là một list
+gồm các dictionary.
+
+58
+00:03:15,830 --> 00:03:17,020
+Và rồi ta sẽ làm lại điều này một lần nữa.
+
+59
+00:03:17,020 --> 00:03:20,500
+tạo ra một dictionary mới
+và thêm thông tin của bộ phim thứ hai.
+
+60
+00:03:20,500 --> 00:03:23,410
+Và kết quả là ta được hai dictionary,
+và một cấu trúc dữ liệu.
+
+61
+00:03:23,410 --> 00:03:24,730
+Đây chính là một cấu trúc dữ liệu.
+
+62
+00:03:24,730 --> 00:03:29,235
+Sau đó, ta có thể thực hiện việc sắp xếp,
+tạo ra list gồm các tuple, và
+
+63
+00:03:29,235 --> 00:03:31,253
+để dictionary trở thành tuple.
+
+64
+00:03:31,253 --> 00:03:38,046
+Vậy, đưa ra được cấu trúc của dữ liệu
+là một phần của việc giải quyết các vấn đề trong lập trình.
+
+65
+00:03:38,046 --> 00:03:39,400
+Ta cũng đang làm điều này.
+
+66
+00:03:39,400 --> 00:03:41,910
+Điều đáng chú ý là,
+khi ta nhìn lại,
+
+67
+00:03:41,910 --> 00:03:45,170
+ta sẽ nhận ra ta đã
+quyết định rằng phần dữ liệu -
+
+68
+00:03:45,170 --> 00:03:48,130
+hay từng dictionary trong list trên -
+sẽ có cấu trúc giống nhau.
+
+69
+00:03:48,130 --> 00:03:51,020
+Nó có các key là đạo diễn, tựa đề,
+ngày ra mắt, thời lượng và phân loại theo độ tuổi.
+
+70
+00:03:52,040 --> 00:03:55,760
+Và thật ra, nếu ta viết sai hay
+viết thiếu mất một chữ 'i' ở đây chẳng hạn,
+
+71
+00:03:55,760 --> 00:03:59,850
+điều đó sẽ làm cho nó
+trở nên có vấn đề.
+
+72
+00:03:59,850 --> 00:04:04,310
+Ta không có cách nào để nói chính xác
+rằng những key này cần phải là gì.
+
+73
+00:04:04,310 --> 00:04:08,020
+Nhưng theo cách nào đó,
+nó đã giống một đối tượng rồi.
+
+74
+00:04:08,020 --> 00:04:11,860
+Trong đó có hai vật,
+vật 1 và vật 2
+
+75
+00:04:11,860 --> 00:04:15,460
+và chúng chứa đựng kiểu
+dữ liệu rất giống nhau.
+
+76
+00:04:15,460 --> 00:04:17,800
+Và chúng dường như có một cấu trúc.
+
+77
+00:04:17,800 --> 00:04:20,920
+Cấu trúc này không được
+định nghĩa sẵn, tuy nhiên
+
+78
+00:04:20,920 --> 00:04:24,510
+thông thường, ta sẽ chỉ đưa năm thứ
+giống nhau vào trong mỗi dictionary.
+
+79
+00:04:24,510 --> 00:04:26,550
+Hoặc ta có thể thêm vào hàng trăm thứ như thế.
+
+80
+00:04:26,550 --> 00:04:31,000
+Vậy chúng ta có thể viết code
+tận dụng sự nhất quán về
+
+81
+00:04:31,000 --> 00:04:34,040
+cấu trúc của các dictionary.
+
+82
+00:04:34,040 --> 00:04:37,040
+Tóm lại, chúng ta có một list
+
+83
+00:04:37,040 --> 00:04:40,020
+và rồi ta cũng có một dictionary với các key.
+
+84
+00:04:40,020 --> 00:04:41,110
+Đó chính là thứ chúng ta đang cần xử lý.
+
+85
+00:04:41,110 --> 00:04:45,690
+Khi viết chương trình, ta có thể
+chạy vòng lặp qua list để
+
+86
+00:04:45,690 --> 00:04:49,840
+mỗi phần tử 'item' trở thành cấu trúc này.
+Ta biết có một số key nhất định
+
+87
+00:04:49,840 --> 00:04:54,600
+và ta đang cấu hình các dictionary
+sử dụng các key giống nhau,
+
+88
+00:04:54,600 --> 00:04:59,150
+nên chương trình có thể đi qua
+tất cả các key ta 
+
+89
+00:04:59,150 --> 00:05:00,040
+biết là sẽ xuất hiện.
+
+90
+00:05:00,040 --> 00:05:01,730
+Ta nói: "Tôi biết là
+sẽ có những thứ này."
+
+91
+00:05:01,730 --> 00:05:06,191
+Vậy chương trình sẽ đi qua từng item một
+và cũng như là từng
+
+92
+00:05:06,191 --> 00:05:09,980
+key một và lấy giá trị.
+Vậy ta viết lệnh print key và item[key],
+
+93
+00:05:09,980 --> 00:05:10,510
+được chứ?
+
+94
+00:05:10,510 --> 00:05:15,630
+Vậy đây là một cách để chúng ta
+lặp lại, ta đang kiểm soát
+
+95
+00:05:15,630 --> 00:05:20,580
+được cấu trúc dữ liệu
+của các dictionary.
+
+96
+00:05:20,580 --> 00:05:24,200
+Vậy với lập trình hướng đối tượng, đầu tiên
+
+97
+00:05:24,200 --> 00:05:30,460
+là ta sẽ tìm cách tạo ra
+những cấu trúc giống như thế này.
+
+98
+00:05:30,460 --> 00:05:35,770
+Nhưng ta có cách tốt hơn nhiều
+để áp dụng các quy ước đặt tên,
+
+99
+00:05:35,770 --> 00:05:40,610
+và thiết lập các loại dữ liệu
+nằm trong một bộ phim, v.v.
+
+100
+00:05:40,610 --> 00:05:45,770
+Vừa rồi tôi đã giới thiệu
+về lập trình hướng đối tượng
+
+101
+00:05:45,770 --> 00:05:48,130
+từ cách mà chúng ta sẽ sử dụng
+nó nếu không có đối tượng.

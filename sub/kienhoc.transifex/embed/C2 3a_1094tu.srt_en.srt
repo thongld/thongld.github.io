@@ -1,0 +1,579 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/VB8iLtfy3Cc
+
+1
+00:00:00,000 --> 00:00:01,490
+
+2
+00:00:01,490 --> 00:00:07,530
+DR. RAMESH YERRABALLI: So what we saw
+in the previous presentation is Jon
+
+3
+00:00:07,530 --> 00:00:10,960
+showing us the components
+of an embedded system.
+
+4
+00:00:10,960 --> 00:00:17,820
+What he drew your attention to was that
+at the core of an embedded system
+
+5
+00:00:17,820 --> 00:00:20,525
+is the brains, which is the processor.
+
+6
+00:00:20,525 --> 00:00:28,470
+So when we talk about a processor
+design, we are primarily looking at
+
+7
+00:00:28,470 --> 00:00:33,570
+what instructions it supports
+and how do you program it.
+
+8
+00:00:33,570 --> 00:00:38,260
+So commonly, we talk about the processor
+in terms of its
+
+9
+00:00:38,260 --> 00:00:41,190
+Instruction Set Architecture (ISA).
+
+10
+00:00:41,190 --> 00:00:47,640
+So the Instruction Set Architecture
+is a standard.
+
+11
+00:00:47,640 --> 00:00:52,900
+For example, the Instruction
+Set Architecture can draw
+
+12
+00:00:52,900 --> 00:00:55,800
+an analogy to cars.
+
+13
+00:00:55,800 --> 00:01:00,890
+When we sit in a car, we know that a
+car has to have a steering wheel.
+
+14
+00:01:00,890 --> 00:01:05,690
+We know that the brakes and the
+accelerator pedal are always going to
+
+15
+00:01:05,690 --> 00:01:07,135
+be the same place.
+
+16
+00:01:07,135 --> 00:01:13,030
+The indicator lights are one side of
+the steering column and so on.
+
+17
+00:01:13,030 --> 00:01:16,500
+So that is the standard for a car.
+
+18
+00:01:16,500 --> 00:01:20,890
+So as far as Instruction Set
+Architectures are concerned, they have
+
+19
+00:01:20,890 --> 00:01:22,370
+to address the following things.
+
+20
+00:01:22,370 --> 00:01:25,750
+The first thing that an Instruction
+Set Architecture has to address is
+
+21
+00:01:25,750 --> 00:01:28,640
+what are the set of operations
+supported--
+
+22
+00:01:28,640 --> 00:01:31,370
+so instructions.
+
+23
+00:01:31,370 --> 00:01:32,950
+So these are the set of operations.
+
+24
+00:01:32,950 --> 00:01:41,130
+For example, we will see that on most of
+the machines that we look at, there
+
+25
+00:01:41,130 --> 00:01:48,565
+are a set of operations like add,
+multiply, and move things from memory
+
+26
+00:01:48,565 --> 00:01:50,820
+to the processor and so on.
+
+27
+00:01:50,820 --> 00:01:56,490
+The second thing that any ISA has
+to talk about is data types.
+
+28
+00:01:56,490 --> 00:02:04,350
+That is, the data we work on can be
+either a simple character data type or
+
+29
+00:02:04,350 --> 00:02:09,631
+an integer data type or even
+a floating point data type.
+
+30
+00:02:09,631 --> 00:02:17,020
+
+31
+00:02:17,020 --> 00:02:21,430
+The third thing that an Instruction Set
+Architecture will talk about is
+
+32
+00:02:21,430 --> 00:02:24,230
+the registers.
+
+33
+00:02:24,230 --> 00:02:29,280
+That is, these are the place holders
+for our working data.
+
+34
+00:02:29,280 --> 00:02:34,490
+And when we talk about registers we say
+how many there are, what is the
+
+35
+00:02:34,490 --> 00:02:37,940
+size of each register, and
+what purpose they serve.
+
+36
+00:02:37,940 --> 00:02:45,220
+So we have a general purpose registers,
+and we may have some
+
+37
+00:02:45,220 --> 00:02:46,470
+special registers.
+
+38
+00:02:46,470 --> 00:02:51,170
+
+39
+00:02:51,170 --> 00:02:54,870
+If you are programming an assembly, one
+other thing that you really want
+
+40
+00:02:54,870 --> 00:02:57,580
+to focus on is addressing modes.
+
+41
+00:02:57,580 --> 00:03:02,070
+
+42
+00:03:02,070 --> 00:03:09,810
+Addressing mode refers to the different
+ways we can fetch up
+
+43
+00:03:09,810 --> 00:03:14,290
+operands from memory or from registers
+or from instructions.
+
+44
+00:03:14,290 --> 00:03:25,230
+So this answers the question
+how data is formed.
+
+45
+00:03:25,230 --> 00:03:35,060
+And the last thing that the ISA will
+talk about is memory access.
+
+46
+00:03:35,060 --> 00:03:42,110
+This refers to what is the size of an
+entity that you can fetch from memory,
+
+47
+00:03:42,110 --> 00:03:51,490
+are there different sizes of memory
+chunks you can get, and if there's a
+
+48
+00:03:51,490 --> 00:03:54,510
+difference between getting it from
+the RAM or from the ROM.
+
+49
+00:03:54,510 --> 00:03:57,660
+
+50
+00:03:57,660 --> 00:04:03,720
+So to give you an idea, Jon already
+talked about some example ISAs.
+
+51
+00:04:03,720 --> 00:04:05,540
+So here are some popular ISAs.
+
+52
+00:04:05,540 --> 00:04:13,800
+
+53
+00:04:13,800 --> 00:04:20,216
+For most people, the most common ISA
+that comes to mind is the x86.
+
+54
+00:04:20,216 --> 00:04:24,630
+The x86 is an ISA that is
+used extensively in
+
+55
+00:04:24,630 --> 00:04:26,805
+desktop and laptop computers.
+
+56
+00:04:26,805 --> 00:04:29,580
+
+57
+00:04:29,580 --> 00:04:35,300
+Though the desktop computer is much more
+popular, what we see is the ARM
+
+58
+00:04:35,300 --> 00:04:41,480
+processor, ARM ISA, is the one that's
+more popular these days simply because
+
+59
+00:04:41,480 --> 00:04:47,120
+of the sheer number of mobile
+devices, phones for example.
+
+60
+00:04:47,120 --> 00:04:56,380
+There is another ISA that's very
+popular, which is the PowerPC ISA,
+
+61
+00:04:56,380 --> 00:05:00,370
+which is used extensively in
+the automobile industry.
+
+62
+00:05:00,370 --> 00:05:04,350
+
+63
+00:05:04,350 --> 00:05:14,340
+Now there are some other ISAs that are
+out there that have some use, and they
+
+64
+00:05:14,340 --> 00:05:15,700
+have specific use.
+
+65
+00:05:15,700 --> 00:05:22,620
+For example, the SPARC ISA is used
+on the Sun Microsystems devices.
+
+66
+00:05:22,620 --> 00:05:30,940
+And these are typically on
+the server machines.
+
+67
+00:05:30,940 --> 00:05:36,230
+So now that we understand what an ISA
+involves, so first we're going to look
+
+68
+00:05:36,230 --> 00:05:40,860
+at some important components.
+
+69
+00:05:40,860 --> 00:05:43,090
+To start with, we'll
+look at registers.
+
+70
+00:05:43,090 --> 00:05:48,900
+
+71
+00:05:48,900 --> 00:05:51,410
+So to start with, we will
+look at registers.
+
+72
+00:05:51,410 --> 00:05:55,970
+We will focus on the ARM ISA.
+
+73
+00:05:55,970 --> 00:06:04,020
+And what we realize on the ARM ISA is
+there are registers which are our
+
+74
+00:06:04,020 --> 00:06:07,750
+general purpose registers.
+
+75
+00:06:07,750 --> 00:06:10,370
+I'm just going to call them GP--
+
+76
+00:06:10,370 --> 00:06:12,370
+General Purpose registers.
+
+77
+00:06:12,370 --> 00:06:25,970
+And these are R0, R1, all
+the way up to R12.
+
+78
+00:06:25,970 --> 00:06:30,560
+These 13 registers are used like scratch
+pads where we store temporary
+
+79
+00:06:30,560 --> 00:06:35,340
+information, and we manipulate this
+information through performing
+
+80
+00:06:35,340 --> 00:06:40,480
+arithmetic, moving operations, logic
+operations, data manipulation
+
+81
+00:06:40,480 --> 00:06:41,810
+operations.
+
+82
+00:06:41,810 --> 00:06:47,070
+All these registers are
+of length 32 bits.
+
+83
+00:06:47,070 --> 00:06:51,930
+So they can hold 32 bits
+of information.
+
+84
+00:06:51,930 --> 00:06:59,270
+Now the second class of registers
+are special registers.
+
+85
+00:06:59,270 --> 00:07:02,190
+
+86
+00:07:02,190 --> 00:07:07,740
+There are three special registers on the
+ARM, the first of which is the R13
+
+87
+00:07:07,740 --> 00:07:15,805
+register, which is our stack pointer.
+
+88
+00:07:15,805 --> 00:07:20,230
+
+89
+00:07:20,230 --> 00:07:35,460
+In other words, it holds the address
+of the top of the stack.
+
+90
+00:07:35,460 --> 00:07:38,960
+Now we will see the functioning
+of the stack later.
+
+91
+00:07:38,960 --> 00:07:43,210
+But suffice it to say, stack is a region
+of memory that has special
+
+92
+00:07:43,210 --> 00:07:48,210
+importance, and so we dedicate
+a register to point to the
+
+93
+00:07:48,210 --> 00:07:51,590
+special area of memory.
+
+94
+00:07:51,590 --> 00:08:06,870
+The special register is R14, which is
+the link register, which holds the
+
+95
+00:08:06,870 --> 00:08:16,610
+return address for subroutines.
+
+96
+00:08:16,610 --> 00:08:21,690
+
+97
+00:08:21,690 --> 00:08:25,960
+Again, one of the things that we will
+learn in this class is to write code
+
+98
+00:08:25,960 --> 00:08:30,360
+that is modular, and modular code
+involves writing subroutines.
+
+99
+00:08:30,360 --> 00:08:37,700
+And so we dedicate a register to hold
+the return address of our subroutines.
+
+100
+00:08:37,700 --> 00:08:42,130
+The third special register is R15.
+
+101
+00:08:42,130 --> 00:08:46,260
+And this is by far the most
+important register, which
+
+102
+00:08:46,260 --> 00:08:49,600
+is the program counter.
+
+103
+00:08:49,600 --> 00:08:51,710
+I say it's the most important
+register.
+
+104
+00:08:51,710 --> 00:08:59,750
+It is because it always is the marker
+of where you are in your code.
+
+105
+00:08:59,750 --> 00:09:19,350
+So it holds the address of the
+next instruction to execute--
+
+106
+00:09:19,350 --> 00:09:20,600
+to run or to execute.
+
+107
+00:09:20,600 --> 00:09:25,310
+
+108
+00:09:25,310 --> 00:09:30,140
+In addition to these general purpose
+registers and special registers, there
+
+109
+00:09:30,140 --> 00:09:36,520
+is a register which is called the
+Processor Status Register, the PSR.
+
+110
+00:09:36,520 --> 00:09:42,088
+We will not worry about the contents of
+this register except for four bits
+
+111
+00:09:42,088 --> 00:09:49,600
+of its significance to us, which are the
+N, the Z, the V, and the C bits.
+
+112
+00:09:49,600 --> 00:09:55,770
+So these four bits together will tell
+you the status of the system.
+
+113
+00:09:55,770 --> 00:09:59,700
+What we mean by the status of the system
+is these are status indicators
+
+114
+00:09:59,700 --> 00:10:07,420
+that will tell us what the result of the
+most recent operation performed.
+
+115
+00:10:07,420 --> 00:10:19,260
+So it's the result of the most
+recent operation performed.
+
+116
+00:10:19,260 --> 00:10:22,870
+
+117
+00:10:22,870 --> 00:10:27,550
+Now by being on and off, they tell us
+whether the most recent operation that
+
+118
+00:10:27,550 --> 00:10:33,490
+was performed resulted in
+a negative result--
+
+119
+00:10:33,490 --> 00:10:37,540
+that is, the result was negative--
+
+120
+00:10:37,540 --> 00:10:41,110
+or the result was a 0--
+
+121
+00:10:41,110 --> 00:10:43,550
+that is, I just performed an operation,
+and the result of the
+
+122
+00:10:43,550 --> 00:10:45,630
+operation was a 0--
+
+123
+00:10:45,630 --> 00:10:49,425
+or the result caused an overflow.
+
+124
+00:10:49,425 --> 00:10:51,950
+
+125
+00:10:51,950 --> 00:10:58,320
+In fact both V and C indicate overflows,
+except that the V indicates
+
+126
+00:10:58,320 --> 00:11:03,960
+an overflow when we are working with
+signed numbers, and the C indicates an
+
+127
+00:11:03,960 --> 00:11:06,250
+overflow unsigned numbers.
+
+128
+00:11:06,250 --> 00:11:11,195

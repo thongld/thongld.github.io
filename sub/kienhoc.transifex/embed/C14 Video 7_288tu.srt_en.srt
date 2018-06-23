@@ -1,0 +1,194 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/Tt9uL9IRyIw
+
+1
+00:00:00,000 --> 00:00:00,410
+
+2
+00:00:00,410 --> 00:00:01,493
+DR. RAMESH YERRABALLI: Hi.
+
+3
+00:00:01,493 --> 00:00:05,210
+I'm Professor Yerraballi, and this
+is the University of Texas at Austin.
+
+4
+00:00:05,210 --> 00:00:07,290
+DR. JONATHAN VALVANO: And
+I'm Professor Valvano.
+
+5
+00:00:07,290 --> 00:00:11,085
+And today we're going to demonstrate
+this robot we've been building.
+
+6
+00:00:11,085 --> 00:00:14,210
+DR. RAMESH YERRABALLI: OK, so John,
+let's talk about some of the components
+
+7
+00:00:14,210 --> 00:00:15,289
+on that robot.
+
+8
+00:00:15,289 --> 00:00:17,330
+DR. JONATHAN VALVANO:
+There are three components.
+
+9
+00:00:17,330 --> 00:00:21,130
+The infrared sensors together
+with A to D converter
+
+10
+00:00:21,130 --> 00:00:24,300
+are used to measure
+distance to the wall.
+
+11
+00:00:24,300 --> 00:00:28,120
+The background thread, the
+interrupt service thread
+
+12
+00:00:28,120 --> 00:00:33,020
+will generate two PWM signals to
+control the power to the two motors
+
+13
+00:00:33,020 --> 00:00:35,170
+so that I can turn left and right.
+
+14
+00:00:35,170 --> 00:00:38,530
+And the controller, the
+main loop of the software
+
+15
+00:00:38,530 --> 00:00:42,080
+will adjust the power to
+the two motors and attempt
+
+16
+00:00:42,080 --> 00:00:44,849
+to drive straight down the road.
+
+17
+00:00:44,849 --> 00:00:47,890
+DR. RAMESH YERRABALLI: OK, so we saw
+the software, we saw the components,
+
+18
+00:00:47,890 --> 00:00:49,410
+now let's see it run.
+
+19
+00:00:49,410 --> 00:00:51,300
+DR. JONATHAN VALVANO:
+Yeah, let's try it.
+
+20
+00:00:51,300 --> 00:00:53,336
+Straight down the road, there.
+
+21
+00:00:53,336 --> 00:00:55,740
+Straight down the road.
+
+22
+00:00:55,740 --> 00:00:56,949
+DR. RAMESH YERRABALLI: Wally.
+
+23
+00:00:56,949 --> 00:00:58,240
+DR. JONATHAN VALVANO: Oh, yeah.
+
+24
+00:00:58,240 --> 00:00:59,330
+Nice and straight.
+
+25
+00:00:59,330 --> 00:00:59,780
+DR. RAMESH YERRABALLI: Yeah.
+
+26
+00:00:59,780 --> 00:01:01,720
+DR. JONATHAN VALVANO: Nice and
+straight, nice and straight.
+
+27
+00:01:01,720 --> 00:01:03,436
+DR. RAMESH YERRABALLI: Take it easy.
+
+28
+00:01:03,436 --> 00:01:05,269
+DR. JONATHAN VALVANO:
+Look out for the wall.
+
+29
+00:01:05,269 --> 00:01:06,430
+Yeah.
+
+30
+00:01:06,430 --> 00:01:09,670
+And around the corner.
+
+31
+00:01:09,670 --> 00:01:10,710
+Yeah, Wally.
+
+32
+00:01:10,710 --> 00:01:12,940
+Good job.
+
+33
+00:01:12,940 --> 00:01:15,800
+Don't hit the cameraman.
+
+34
+00:01:15,800 --> 00:01:19,100
+DR. RAMESH YERRABALLI: So Jon,
+what have we learned from this lab?
+
+35
+00:01:19,100 --> 00:01:24,440
+DR. JONATHAN VALVANO: Today we learned
+that the sensors collect information,
+
+36
+00:01:24,440 --> 00:01:27,450
+and the A to D converter
+on the micro controller
+
+37
+00:01:27,450 --> 00:01:30,570
+converts that information
+into digital numbers.
+
+38
+00:01:30,570 --> 00:01:34,170
+The software then can make
+decisions on those numbers,
+
+39
+00:01:34,170 --> 00:01:40,310
+and then have outputs connected to
+actuators that can affect the world.
+
+40
+00:01:40,310 --> 00:01:41,810
+DR. RAMESH YERRABALLI: So that's it.
+
+41
+00:01:41,810 --> 00:01:44,090
+Embedded Systems shape the world.
+
+42
+00:01:44,090 --> 00:01:45,490
+DR. JONATHAN VALVANO: Indeed.
+
+43
+00:01:45,490 --> 00:01:47,391

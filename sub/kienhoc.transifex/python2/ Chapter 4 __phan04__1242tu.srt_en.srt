@@ -1,0 +1,720 @@
+463
+00:21:01,060 --> 00:21:04,990
+https://youtu.be/Wdi6lhcrtBU
+And if we say greet, Sally
+it says hello, Sally.
+
+464
+00:21:04,990 --> 00:21:08,720
+And so it runs the code twice;
+and the return function,
+
+465
+00:21:08,720 --> 00:21:11,800
+return value has been
+put in here instead.
+
+466
+00:21:11,800 --> 00:21:14,050
+And so the hello came
+there and hello came there.
+
+467
+00:21:14,050 --> 00:21:15,530
+So we get the two lines.
+
+468
+00:21:15,530 --> 00:21:18,590
+So return is a statement
+that both terminates
+
+469
+00:21:18,590 --> 00:21:22,760
+the execution of the function
+and defines the value of what
+
+470
+00:21:22,760 --> 00:21:26,270
+will be replaced when the
+function call comes back
+
+471
+00:21:26,270 --> 00:21:29,900
+in the line that
+function was called from.
+
+472
+00:21:29,900 --> 00:21:35,190
+So, here is a little smarter
+version of our greet function.
+
+473
+00:21:35,190 --> 00:21:38,180
+It's very similar, it's
+still called greet still.
+
+474
+00:21:38,180 --> 00:21:40,350
+It takes lang as a parameter.
+
+475
+00:21:40,350 --> 00:21:42,820
+And if the language
+is the es then it
+
+476
+00:21:42,820 --> 00:21:44,470
+returns the string hola.
+
+477
+00:21:44,470 --> 00:21:46,800
+If the language is French
+it returns bonjour.
+
+478
+00:21:46,800 --> 00:21:47,925
+Otherwise it returns hello.
+
+479
+00:21:47,925 --> 00:21:49,508
+So we're not actually
+doing the print.
+
+480
+00:21:49,508 --> 00:21:51,560
+If you go back another
+slides we are printing
+
+481
+00:21:51,560 --> 00:21:54,650
+but now we're just
+returning a string.
+
+482
+00:21:54,650 --> 00:21:59,900
+OK so now I can call
+print greet and pass
+
+483
+00:21:59,900 --> 00:22:04,090
+en in so then that runs the
+code once with lang equal to en
+
+484
+00:22:04,090 --> 00:22:07,010
+and I get back hello
+and then comma blank.
+
+485
+00:22:07,010 --> 00:22:09,950
+Then I call it again
+and I pass es in,
+
+486
+00:22:09,950 --> 00:22:12,670
+and then that time it
+returns the return value here
+
+487
+00:22:12,670 --> 00:22:15,120
+becomes hola, a string hola.
+
+488
+00:22:15,120 --> 00:22:16,440
+Hola, Sally.
+
+489
+00:22:16,440 --> 00:22:18,110
+And then Michael.
+
+490
+00:22:18,110 --> 00:22:19,860
+I pass in one more time.
+
+491
+00:22:19,860 --> 00:22:26,030
+Lang now is fr, the string
+fr, and so it returns bonjour.
+
+492
+00:22:26,030 --> 00:22:29,330
+So the residual
+is here is bonjour
+
+493
+00:22:29,330 --> 00:22:32,742
+and so out comes
+bonjour, Michael.
+
+494
+00:22:32,742 --> 00:22:33,950
+There's a lot to this, right?
+
+495
+00:22:33,950 --> 00:22:37,520
+Passing stuff in , you have this
+kind of placeholder variable,
+
+496
+00:22:37,520 --> 00:22:41,400
+and you have this return that
+sort of appears where it was
+
+497
+00:22:41,400 --> 00:22:42,120
+called from.
+
+498
+00:22:42,120 --> 00:22:44,600
+It goes in, does its
+work, it comes back,
+
+499
+00:22:44,600 --> 00:22:47,460
+and there's sort of this
+residual value that sits here.
+
+500
+00:22:47,460 --> 00:22:49,810
+You don't have to have
+a return in a function,
+
+501
+00:22:49,810 --> 00:22:52,320
+but if you want to do
+something with a value
+
+502
+00:22:52,320 --> 00:22:55,140
+then you have to have a
+return in the function.
+
+503
+00:22:55,140 --> 00:22:59,520
+We call the functions that
+produce values fruitful,
+
+504
+00:22:59,520 --> 00:23:03,370
+and the other ones
+are called void.
+
+505
+00:23:03,370 --> 00:23:05,570
+So that's a good name for them.
+
+506
+00:23:05,570 --> 00:23:07,830
+So, to review sort
+of this arguments
+
+507
+00:23:07,830 --> 00:23:09,940
+parameters and
+results, if we look
+
+508
+00:23:09,940 --> 00:23:11,730
+at max, the original
+thing where it's
+
+509
+00:23:11,730 --> 00:23:15,990
+looking for the largest,
+lexicographically
+
+510
+00:23:15,990 --> 00:23:19,340
+largest letter, it
+looks: hello, world
+
+511
+00:23:19,340 --> 00:23:22,060
+is the argument
+that's passed in.
+
+512
+00:23:22,060 --> 00:23:23,910
+We have this sort
+of formal parameter
+
+513
+00:23:23,910 --> 00:23:26,180
+here called imp, which is
+not really variable it just
+
+514
+00:23:26,180 --> 00:23:30,220
+happens to refer to whatever
+is the first argument
+
+515
+00:23:30,220 --> 00:23:32,260
+in any particular call.
+
+516
+00:23:32,260 --> 00:23:34,520
+And that does it's little
+thing and runs loops
+
+517
+00:23:34,520 --> 00:23:39,100
+and does all these things, and
+at some point it returns w.
+
+518
+00:23:39,100 --> 00:23:42,220
+So that the thing that comes
+out when the function quits
+
+519
+00:23:42,220 --> 00:23:44,290
+that becomes the
+replacement value
+
+520
+00:23:44,290 --> 00:23:47,010
+here is a lowercase w string.
+
+521
+00:23:47,010 --> 00:23:49,590
+And then that is the
+w goes over into big.
+
+522
+00:23:49,590 --> 00:23:54,900
+So the return is what
+defines what comes back here.
+
+523
+00:23:54,900 --> 00:23:57,070
+Because you think of this
+as; it's looking at this,
+
+524
+00:23:57,070 --> 00:24:00,920
+it suspends for the
+moment, it runs this code,
+
+525
+00:24:00,920 --> 00:24:03,740
+its holding itself
+here running this code
+
+526
+00:24:03,740 --> 00:24:06,184
+and then it comes back to here.
+
+527
+00:24:06,184 --> 00:24:07,170
+OK?
+
+528
+00:24:07,170 --> 00:24:11,250
+And the return value is
+what defines coming back.
+
+529
+00:24:11,250 --> 00:24:15,790
+So, of course you can have
+more than one parameter
+
+530
+00:24:15,790 --> 00:24:17,600
+and they are in order.
+
+531
+00:24:17,600 --> 00:24:20,420
+So here we have an a and a b.
+
+532
+00:24:20,420 --> 00:24:22,440
+The name of these things
+doesn't really matter.
+
+533
+00:24:22,440 --> 00:24:25,970
+They're just relevant inside
+of the function definition.
+
+534
+00:24:25,970 --> 00:24:28,190
+So we are going to add
+two numbers together
+
+535
+00:24:28,190 --> 00:24:31,860
+by taking a plus b and
+then returning the sum.
+
+536
+00:24:31,860 --> 00:24:34,760
+The added variable's just
+kind of local to this function
+
+537
+00:24:34,760 --> 00:24:39,270
+and now we can say addtwo(3,5)
+and then this will come back
+
+538
+00:24:39,270 --> 00:24:41,380
+as eight and then eight
+will get assigned into x,
+
+539
+00:24:41,380 --> 00:24:43,600
+and so that'll print out eight.
+
+540
+00:24:43,600 --> 00:24:45,750
+And so you can have as
+many of these as you want,
+
+541
+00:24:45,750 --> 00:24:47,230
+and the order
+matters and there's
+
+542
+00:24:47,230 --> 00:24:49,240
+a one to one correspondence.
+
+543
+00:24:49,240 --> 00:24:52,340
+Three goes to a and five goes
+to b when the thing is called,
+
+544
+00:24:52,340 --> 00:24:56,460
+and then the return
+value again comes back.
+
+545
+00:24:56,460 --> 00:24:57,400
+OK?
+
+546
+00:24:57,400 --> 00:25:01,030
+So, that's sort of arguments.
+
+547
+00:25:01,030 --> 00:25:03,780
+And like I said,
+not all functions
+
+548
+00:25:03,780 --> 00:25:04,940
+have to return values.
+
+549
+00:25:04,940 --> 00:25:07,970
+We call them void functions
+when they don't return anything.
+
+550
+00:25:07,970 --> 00:25:12,580
+It's totally fine for
+that to be the case.
+
+551
+00:25:12,580 --> 00:25:15,850
+So at this point you might be
+thinking to yourself, OK great.
+
+552
+00:25:15,850 --> 00:25:18,320
+I still don't quite get
+why to use functions.
+
+553
+00:25:18,320 --> 00:25:21,800
+In reality, in the
+first 10, 11 chapters
+
+554
+00:25:21,800 --> 00:25:24,750
+of this book other than
+using lots of functions,
+
+555
+00:25:24,750 --> 00:25:28,525
+we're not really going to spend
+a lot of time making functions.
+
+556
+00:25:28,525 --> 00:25:31,150
+Because most of our programs are
+going to kind of be that long.
+
+557
+00:25:31,150 --> 00:25:33,660
+And we're not going to do a
+lot of reuse in the program.
+
+558
+00:25:33,660 --> 00:25:39,030
+And there'll be a time when your
+programs become complex enough,
+
+559
+00:25:39,030 --> 00:25:41,390
+that you'll be like, oh
+thank heaven for functions.
+
+560
+00:25:41,390 --> 00:25:43,960
+I think it's premature to
+say you must use functions,
+
+561
+00:25:43,960 --> 00:25:45,880
+even though there are
+some exercises that
+
+562
+00:25:45,880 --> 00:25:47,870
+just say hey do this
+with a function,
+
+563
+00:25:47,870 --> 00:25:50,900
+just so you kind of get the
+understanding of a function.
+
+564
+00:25:50,900 --> 00:25:54,900
+You will find soon enough,
+as your programs grow,
+
+565
+00:25:54,900 --> 00:25:56,990
+you'll go like oh I keep
+doing the same thing over
+
+566
+00:25:56,990 --> 00:25:57,730
+and over again.
+
+567
+00:25:57,730 --> 00:25:59,188
+Let me pull that
+up into a function
+
+568
+00:25:59,188 --> 00:26:01,450
+and pass the parameter
+in, have a return value,
+
+569
+00:26:01,450 --> 00:26:02,470
+and away you go.
+
+570
+00:26:02,470 --> 00:26:04,742
+Or you might find that you're
+moving from one program
+
+571
+00:26:04,742 --> 00:26:06,450
+to another and you
+have this common thing
+
+572
+00:26:06,450 --> 00:26:08,533
+that you want to do so you
+make yourself a library
+
+573
+00:26:08,533 --> 00:26:09,520
+that you drag along.
+
+574
+00:26:09,520 --> 00:26:12,090
+And we will do
+lots of libraries.
+
+575
+00:26:12,090 --> 00:26:15,700
+The book in the second half does
+lots and lots of library stuff
+
+576
+00:26:15,700 --> 00:26:18,057
+doing things like parsing
+XML, and this, that,
+
+577
+00:26:18,057 --> 00:26:18,890
+and the other thing.
+
+578
+00:26:18,890 --> 00:26:23,670
+So, don't feel like you
+need to use functions
+
+579
+00:26:23,670 --> 00:26:26,710
+on every assignment because
+they're a are natural thing
+
+580
+00:26:26,710 --> 00:26:29,670
+when the program
+gets big enough.
+
+581
+00:26:29,670 --> 00:26:32,360
+So, just kind of understand
+them on a mechanical level,
+
+582
+00:26:32,360 --> 00:26:35,060
+but it'll come to you
+at the right time when
+
+583
+00:26:35,060 --> 00:26:38,050
+it's time to start building
+your own functions.
+
+584
+00:26:38,050 --> 00:26:40,890
+So in this class we kind
+of talked about functions.
+
+585
+00:26:40,890 --> 00:26:42,930
+Just got you started,
+talked about parameters,
+
+586
+00:26:42,930 --> 00:26:48,110
+talked about built in functions,
+talked about return values,
+
+587
+00:26:48,110 --> 00:26:50,270
+the store and reuse pattern.
+
+588
+00:26:50,270 --> 00:26:54,380
+So, the problems at the end
+the chapter for this particular
+
+589
+00:26:54,380 --> 00:26:58,490
+chapter are relatively
+straightforward in that --
+
+590
+00:26:58,490 --> 00:27:01,650
+like I said, we don't have
+a real strong need to do
+
+591
+00:27:01,650 --> 00:27:04,260
+functions yet in this
+class because the programs
+
+592
+00:27:04,260 --> 00:27:08,210
+aren't large enough, but
+I just said OK take one
+
+593
+00:27:08,210 --> 00:27:12,480
+of your previous assignments
+and refactor the code so that
+
+594
+00:27:12,480 --> 00:27:15,760
+at the top there's
+a DEF, compute pay,
+
+595
+00:27:15,760 --> 00:27:18,370
+and you put like the if
+and whatever in here.
+
+596
+00:27:18,370 --> 00:27:20,690
+And then later on
+you do your code,
+
+597
+00:27:20,690 --> 00:27:22,270
+and then you call compute pay.
+
+598
+00:27:22,270 --> 00:27:24,140
+So you took code
+that you already had,
+
+599
+00:27:24,140 --> 00:27:27,090
+you move it up into a
+function, and make a function.
+
+600
+00:27:27,090 --> 00:27:29,890
+And I've also online got
+sort of a sample of this,
+
+601
+00:27:29,890 --> 00:27:31,830
+because it's a little complex.
+
+602
+00:27:31,830 --> 00:27:35,140
+And so you should be able
+to find on Python learn
+
+603
+00:27:35,140 --> 00:27:39,770
+or on the course site; should
+be able to find a good example
+
+604
+00:27:39,770 --> 00:27:43,860
+because I really
+want to get this.
+
+605
+00:27:43,860 --> 00:27:45,320
+Like I said, there
+will come a time
+
+606
+00:27:45,320 --> 00:27:47,770
+when functions will make
+the most sense to you.
+
+607
+00:27:47,770 --> 00:27:49,800
+But coming up
+next, of course, is
+
+608
+00:27:49,800 --> 00:27:51,917
+chapter five and that's loops.
+
+609
+00:27:51,917 --> 00:27:53,500
+And loops are going
+to rock the house.
+
+610
+00:27:53,500 --> 00:27:57,960
+So we really; that's our
+fourth major pattern is loops.
+
+611
+00:27:57,960 --> 00:28:00,670
+And I'm looking forward to it.
+
+612
+00:28:00,670 --> 00:28:03,940
+So we'll see you at
+the next lecture.
+

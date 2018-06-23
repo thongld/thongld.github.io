@@ -1,0 +1,100 @@
+0
+00:00:00,000 --> 00:00:00,650
+https://youtu.be/oVczalLCdMk
+
+1
+00:00:00,650 --> 00:00:04,760
+So let's dig into this problem a little bit further.
+
+2
+00:00:04,760 --> 00:00:07,840
+Two other Coop employees, Sally and Bob,
+
+3
+00:00:07,840 --> 00:00:11,030
+they're suggesting that we can further improve this,
+
+4
+00:00:11,030 --> 00:00:14,440
+but they have different solutions to the approach.
+
+5
+00:00:14,440 --> 00:00:17,970
+Sally is suggesting that we order using an EOQ policy.
+
+6
+00:00:17,970 --> 00:00:22,040
+And Bob suggests that the original order quantity of 500
+
+7
+00:00:22,040 --> 00:00:25,330
+is fine, and that he has a way of reducing
+
+8
+00:00:25,330 --> 00:00:28,880
+the set up cost to $25.
+
+9
+00:00:28,880 --> 00:00:31,380
+And this would be really helpful.
+
+10
+00:00:31,380 --> 00:00:33,840
+So let's analyze these two options using
+
+11
+00:00:33,840 --> 00:00:37,820
+the annual purchase, holding, order, and total cost
+
+12
+00:00:37,820 --> 00:00:40,194
+for both Bob's and Sally's plans.
+
+13
+00:00:40,194 --> 00:00:41,610
+And once you've done that, there's
+
+14
+00:00:41,610 --> 00:00:45,140
+also a look into what is the ordering frequency for each
+
+15
+00:00:45,140 --> 00:00:47,160
+of these options.
+
+16
+00:00:47,160 --> 00:00:52,360
+Well, having done that, there's one more question which is now,
+
+17
+00:00:52,360 --> 00:00:55,640
+if we understand Bob and Sally's suggestions
+
+18
+00:00:55,640 --> 00:00:59,480
+and the current scenario, is there a fourth situation
+
+19
+00:00:59,480 --> 00:01:01,760
+where we can even do better than what
+
+20
+00:01:01,760 --> 00:01:04,080
+Bob and Sally are suggesting?
+
+21
+00:01:04,080 --> 00:01:05,450
+But we'll get there.
+
+22
+00:01:05,450 --> 00:01:07,260
+So let's proceed.
+
+23
+00:01:07,260 --> 00:01:10,490
+Let's try to analyze the two options that Bob and Sally are
+
+24
+00:01:10,490 --> 00:01:12,040
+suggesting.
+

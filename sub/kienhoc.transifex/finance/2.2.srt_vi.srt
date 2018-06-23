@@ -1,0 +1,260 @@
+1
+00:00:04,630 --> 00:00:06,580
+narcissusdale
+https://youtu.be/ZYVH7CRk49A
+Bây giờ tôi sẽ giúp các bạn
+
+2
+00:00:06,580 --> 00:00:09,450
+thấy được cái hay của việc ứng dụng và như tôi
+
+3
+00:00:09,450 --> 00:00:13,229
+đã nói chúng ta sẽ dần dần xây dựng cách ứng dụng rồi
+sau đó chúng to sẽ làm đến những phần rất phức tạp
+
+4
+00:00:13,230 --> 00:00:19,90
+và ta trình bày hết trong 2 
+môđun đầu tiên vì tôi muốn 2 môđun đầu tiên
+
+5
+00:00:19,90 --> 00:00:24,830
+của khoá học này là để các bạn hojv các
+khái niệm được ứng dụng, rồi sau đó mới thực sự áp dụng
+
+6
+00:00:24,830 --> 00:00:31,820
+vào những tình huống phức tạp hơn, với cùng những khái niệm đó
+Giờ hãy bắt đầu với tình huống này. Hãy đọc tình huống
+
+7
+00:00:31,820 --> 00:00:36,590
+Đâu là giá trị tài khoản ngân hàng của bạn 
+nếu mỗi năm bạn đều gửi vào đó $1000 
+
+8
+00:00:36,590 --> 00:00:42,800
+Bạn dự định ra ở riêng trong 5 năm tới
+và kỳ vọng sẽ được 5% lãi suất
+
+9
+00:00:42,800 --> 00:00:47,110
+trong tài khoản ngân hàng. Vậy bạn 
+đang học đại học, và đã bắt đầu đầu tư hàng năm
+
+10
+00:00:47,110 --> 00:01:03,629
+$1000 vào ngân hàng, vậy điểm mấu chốt là, 
+đó là khoản thanh toán hằng năm, kéo dài trong nhiêu năm? 1...2, tôi
+
+11
+00:01:03,630 --> 00:01:08,290
+sẽ không viết ra từng con số, vậy
+các bạn sẽ đặt ra là 5
+
+12
+00:01:08,290 --> 00:01:20,960
+5 kỳ, vậy các bạn đã biết N bằng 5. Còn ẩn số khác thì sao?
+Ẩn số R là? R bằng
+
+13
+00:01:20,960 --> 00:01:29,288
+5%. Bây giờ, trong Excel, khi bạn nhập số này,
+N sẽ là 5, nhưng đôi khi R sẽ không ở dạng
+
+14
+00:01:29,289 --> 00:01:35,819
+% trên máy tính, đôi khi cả ở các máy tính, đặc biệt là
+các máy tính HP, theo như tôi biết, hoặc phần lớn
+
+15
+00:01:35,819 --> 00:01:42,29
+các máy tính. Tại đây, bạn nhập vào 0.05
+Hãy ghi nhớ điều đó. Nhưng việc cuối cùng 
+
+16
+00:01:42,29 --> 00:01:52,209
+cần nhớ nếu bạn nhập vào 
+$1000, bạn phải  nhập vào 
+
+17
+00:01:52,209 --> 00:01:57,759
+bao nhiêu lần? 1000 lần. Bây giờ
+Phần sễ đánh lừa các bạn nhất ở đây là
+
+18
+00:01:57,759 --> 00:02:04,840
+phần về một khoản thanh toán hàng năm thông thường, 
+nó không bắt đầu từ điểm gốc, nó bắt đầu tại
+
+19
+00:02:04,840 --> 00:02:09,440
+mốc thời gian 1, như tôi đã nói, bạn có thể thay đổi và
+sau này, bạn có thể bắt đầu thanh toán ở 
+
+
+20
+00:02:09,440 --> 00:02:14,470
+thời điểm thanh toán gốc, bạn có thể bắt đầu 
+tiết kiệm. Kết quả là, nó thay đổi trục thời gian
+
+21
+00:02:14,470 --> 00:02:19,700
+nhưng công thức chuẩn thường giả định
+lần thanh toán đầu tiên rơi vào cuối năm nhất
+
+22
+00:02:19,700 --> 00:02:20,839
+và lần thanh toán cuối kết thúc tại thời điểm cuối
+
+23
+00:02:20,840 --> 00:02:24,959
+năm thứ 5, được chưa ạ. Trong lúc này, ta sẽ tiếp tục 
+sử dụng công thức chuẩn. Khi nào bạn bắt đầu
+
+24
+00:02:24,959 --> 00:02:29,470
+thành thạo việc chuyển tiền theo thời gian,
+và đó là  điều... là lý do tại sao tôi nói rằng
+
+25
+00:02:29,470 --> 00:02:35,349
+nếu xem phim Chiến tranh giữa các vì sao và Ma trận thì bạn sẽ trở nên xuất sắc
+trong lĩnh vực Tài chính. Bạn phải trả 5 khoản tiền tại 
+
+26
+00:02:35,349 --> 00:02:41,470
+thời điểm kết thúc mỗi kỳ. Câu hỏi là, 
+trong Excel, đây là những gì bạn sẽ làm. Bạn sẽ
+
+27
+00:02:41,470 --> 00:02:46,510
+viết dấu bằng và bạn đang cố tính toán 
+cái gì? Hãy nhớ bạn đang tính 
+
+28
+00:02:46,510 --> 00:02:50,179
+Giá trị tương lai và vấn đề này 
+rất thú vị vì ai cũng nghĩ đến nó cả
+
+29
+00:02:50,180 --> 00:02:57,310
+được rồi, trong tương lai tôi cần tiền.
+Giờ tôi sẽ tiết kiệm, nếu có thể tôi sẽ tiết kiệm hàng năm và
+
+30
+00:02:57,310 --> 00:03:04,150
+tôi sẽ có bao nhiêu tiền khi đi học đại học? Vậy
+bạn muốn biết Giá trị tương lai nhưng đâu là
+
+31
+00:03:04,150 --> 00:03:10,260
+con số đầu tiên thể hiện Giá trị tương lai là?
+Lãi suất, tôi sẽ nhập vào, tôi khuyến khích các bạn 
+
+32
+00:03:10,260 --> 00:03:12,170
+mở Excel và cùng thực hiện với 
+
+33
+00:03:12,170 --> 00:03:22,480
+tôi. Chọn ô A1, viết dấu bằng, FV, 0.05, tiếp theo
+là gì?
+
+34
+00:03:22,480 --> 00:03:32,130
+5, thể hiện N, phải không, đúng vậy? Con số tiếp theo,
+hãy nhớ thông thường bạn sẽ tìm 
+
+35
+00:03:32,130 --> 00:03:40,590
+PMT, giờ được rồi, bạn có thể nhập
+1000. Nhưng còn có PV hay giá trị nào
+
+36
+00:03:40,590 --> 00:03:41,560
+khác không? Không
+
+37
+00:03:41,560 --> 00:03:48,670
+Rồi bạn đóng dấu ngoặc đơn và bạn sẽ tính
+lợi nhuận và nếu bạn tính ra Lợi nhuận, bạn... như tôi
+
+38
+00:03:48,670 --> 00:03:53,929
+đã nói vì ở đây bạn đã nhập số dương
+nên kết quả ở đây sẽ là 1 con số âm. Nếu bạn
+
+39
+00:03:53,930 --> 00:03:58,410
+muốn kết quả ra số dương, bạn chỉ cần
+thêm dấu âm hoặc đặt
+
+40
+00:03:58,410 --> 00:04:03,190
+dấu âm vào phía trước FV và
+trong trường hợp này điều này là hợp lý bởi vì bạn
+
+41
+00:04:03,190 --> 00:04:05,30
+đang đầu tư vào tương lai,
+
+42
+00:04:05,30 --> 00:04:09,750
+bạn mất đi $1000 nhưng sẽ lấy lại được trong
+tương lai. Vậy, có thể bạn muốn con số cuối cùng
+
+43
+00:04:09,750 --> 00:04:15,200
+phải là số dương, nhưng chỉ là
+trong suy nghĩ, vậy nếu bạn thực sự
+
+44
+00:04:15,200 --> 00:04:19,849
+ muốn thấy vậy xét từ góc độ 
+của chính bạn, chứ không phải của ngân hàng, bạn có thể muôn
+
+45
+00:04:19,849 --> 00:04:25,669
+chuyển toàn bộ những con số này sang dạng âm
+Điều đó tuỳ thuộc vào bài toán. Vậy 
+
+46
+00:04:25,669 --> 00:04:32,8
+sau đó phép tính này sẽ có kết quả là bao nhiêu?
+Tôi nghĩ sẽ là năm ngàn
+
+47
+00:04:32,9 --> 00:04:40,589
+năm trăm hai mươi lăm đô la và 63 cent. Mỗi lần tôi 
+giải một bài toán, tôi khuyến khích các bạn 
+
+48
+00:04:40,589 --> 00:04:46,789
+Bây giờ tôi sẽ giải những bài toán trọng tâm
+Đầu tiên, chẳng phải điều này rất tuyệt sao? Vậy, hãy cùng
+
+49
+00:04:46,789 --> 00:04:50,498
+làm lại và tôi cũng hay làm vậy  trong
+lớp này
+
+50
+00:04:50,499 --> 00:04:58,419
+Được rồi, giả sử lãi suất là 0
+bạn sẽ có bao nhiêu tiền? Rất đơn giản 5000
+
+51
+00:04:58,419 --> 00:05:04,659
+Sao lại thế? Mỗi năm bạn gửi 1000, 
+5 lần như thế. Tuy nhiên bạn sẽ nhận được
+
+52
+00:05:04,659 --> 00:05:11,370
+thêm 525 đô ngoài 5000 bạn có. Sao bạn lại có thêm số đó? vì sao ạ? Như tôi
+
+53
+00:05:11,370 --> 00:05:13,710
+đã nói, tất cả câu trả lời nằm ở việc tính lãi kép
+

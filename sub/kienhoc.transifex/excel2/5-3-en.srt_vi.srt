@@ -1,0 +1,267 @@
+1
+00:00:02,700 --> 00:00:09,580
+giangthang_gtc_OGMwNz 30/8/2016
+ở video trước, chúng ta đã phân biệt được bảng và đồ thị
+
+2
+00:00:09,960 --> 00:00:13,740
+bây giờ ta sẽ tập trung vào thiết kế của bảng
+
+3
+00:00:13,740 --> 00:00:16,620
+thực ra, xét về kết cấu, 
+
+4
+00:00:19,400 --> 00:00:22,920
+chỉ có 3 loại bảng.
+
+5
+00:00:23,300 --> 00:00:25,260
+loại thứ nhất là loại đơn giản nhất.
+
+6
+00:00:25,260 --> 00:00:30,260
+đây là bảng đơn hướng, tức là nó chỉ có 1 chiều
+
+7
+00:00:31,320 --> 00:00:38,940
+ ta có sales person (người bán) và revenue(doanh thu) , chúng được được trình bày trên các cột riêng biệt
+
+8
+00:00:39,480 --> 00:00:41,900
+bây giờ tôi sẽ làm phức tạp hơn một chút
+
+9
+00:00:41,900 --> 00:00:45,460
+vì thực tế có thể có hơn một danh mục.
+
+10
+00:00:45,780 --> 00:00:49,180
+bên cạnh người bán, ta cũng có country (quốc gia)
+
+11
+00:00:49,960 --> 00:00:53,700
+ta có thể sắp xếp các danh mục khác nhau theo một trật tự nào đó
+
+12
+00:00:53,700 --> 00:00:58,540
+ta thấy sales person và trong sales person, ta thấy các country khác nhau và 
+
+13
+00:00:58,540 --> 00:01:02,160
+revenue mà người đó tạo ra ở đó.
+
+14
+00:01:02,900 --> 00:01:06,620
+đây vẫn là bảng đơn hướng, vẫn chỉ có 1 chiều.
+
+15
+00:01:06,620 --> 00:01:13,040
+tất cả vẫn được sắp xếp theo dòng nhưng lần này các danh mục khác nhau được sắp xếp theo một trật tự nào đó
+
+16
+00:01:13,360 --> 00:01:16,300
+tuy nhiên, chúng ta cũng có thể tạo ra loại bảng 2 chiều
+
+17
+00:01:16,300 --> 00:01:19,520
+đây được gọi là bảng chéo, hay là bảng song hướng
+
+18
+00:01:19,940 --> 00:01:23,800
+ta vẫn có các danh mục giống nhau, vẫn có sales person, country,..
+
+19
+00:01:25,160 --> 00:01:32,900
+nhưng lần này, ta đặt country vào cột và thu được một cách trình bày cơ sở dữ liệu chặt chẽ hơn.
+
+20
+00:01:34,000 --> 00:01:39,460
+tóm lại, có 3 loại bảng: bảng đơn hướng với một doanh mục
+
+21
+00:01:39,460 --> 00:01:45,280
+bảng đơn hướng với một vài danh mục nhưng được sắp xếp theo một trật tự nào đó, 
+
+22
+00:01:45,280 --> 00:01:50,640
+và bảng song hướng với các danh mục cắt nhau ở dòng và cột.
+
+23
+00:01:52,920 --> 00:01:56,700
+các giá trị suy diễn thì sao ? Hãy nhìn vào bảng này.
+
+24
+00:01:58,200 --> 00:02:02,240
+ta đang thấy các products (sản phẩm) khác nhau và units sold (số sản phẩm đã bán)
+
+25
+00:02:02,560 --> 00:02:05,400
+ta cũng thấy actual revenue (doanh thu thực tế) thu được từ những sản phẩm này 
+
+26
+00:02:05,820 --> 00:02:08,360
+và fcast revenue (doanh thu dự đoán)
+
+27
+00:02:08,860 --> 00:02:12,840
+ta có 2 cột mà thực ra là được tính dựa vào các cột trước.
+
+28
+00:02:13,160 --> 00:02:18,640
+vì vậy, ta tính được phần trăm toàn bộ (% of total), trong trường hợp này, là phần trăm của toàn bộ actual revenue
+
+29
+00:02:19,480 --> 00:02:24,500
+và phần trăm dự đoán (% of forcast), chính là tỷ lệ phần trăm actual revenue trong số fcast revenue 
+
+30
+00:02:24,500 --> 00:02:26,560
+as a percentage of the forecast.
+
+31
+00:02:26,860 --> 00:02:31,940
+các bạn có thể thấy cách trình bày như thế này không rõ ràng lắm
+
+32
+00:02:32,190 --> 00:02:37,400
+chúng ta không nên trình bày như vậy, nếu bạn có giá trị suy diễn, các giá trị mà 
+
+33
+00:02:37,400 --> 00:02:41,980
+được tính toán dựa vào các cột khác, chúng ta nên di chuyển những cột này
+
+34
+00:02:41,980 --> 00:02:43,980
+gần nhất có thể với các cột đó.
+
+35
+00:02:44,480 --> 00:02:48,740
+bạn có thể thấy tôi đã di chuyển % of total và đặt nó cạnh actual revenue
+
+36
+00:02:49,000 --> 00:02:53,540
+do đó, ta thấy rõ được % of total là phần trăm của actual revenue
+
+37
+00:02:53,800 --> 00:02:56,100
+tương tự đối với phần dự báo.
+
+38
+00:02:56,800 --> 00:03:01,560
+đó là về giá trị suy diễn. Nếu bạn muốn so sánh thì sao ?
+
+
+39
+00:03:03,720 --> 00:03:09,400
+ta quay lại dữ liệu như cũ, nhưng bây giờ ta muốn so sánh giữa forcast (giá trị dự báo)
+
+40
+00:03:09,400 --> 00:03:15,080
+ với revenue (doanh thu) và forcast với planned revenue (doanh thu theo kế hoạch)
+
+41
+00:03:15,420 --> 00:03:22,460
+trong trường hợp đó, ta cần phải di chuyển vị trí các cột mà chúng ta phải so sánh
+
+42
+00:03:22,460 --> 00:03:26,220
+gần nhất có thể với nhau.
+
+43
+00:03:29,900 --> 00:03:33,620
+khoảng trắng (white space). bây giờ nếu bạn mở bảng tính Excel, 
+
+44
+00:03:33,620 --> 00:03:38,800
+và khởi tạo dữ liệu, Excel sẽ mặc định số dòng 
+
+45
+00:03:39,100 --> 00:03:41,900
+điều này xác định tỷ lệ khoảng trắng mà bạn thấy
+
+46
+00:03:42,340 --> 00:03:44,860
+có thể bạn đang thắc mắc:" tạo sao khoảng trắng lại quan trọng"
+
+47
+00:03:45,160 --> 00:03:49,640
+khoảng trắng giúp ta xác định mỗi dòng và các dòng tiếp theo
+
+48
+00:03:49,640 --> 00:03:51,760
+và để phân biệt giữa 2 dòng với nhau
+
+49
+00:03:52,040 --> 00:03:54,640
+khoảng trắng càng lớn, phân biệt càng dễ
+
+50
+00:03:55,000 --> 00:03:56,260
+nhưng tất nhiên vẫn đảm bảo có sự cân bằng
+
+
+51
+00:03:56,260 --> 00:04:00,480
+ở đây, bạn thấy các giá trị khác nhau cho khoảng trắng và tùy bạn quyết định xem 
+
+52
+00:04:00,480 --> 00:04:07,600
+cái nào dễ nhìn nhất. Nếu là tôi, tôi sẽ chọn 50 hoặc 100%
+
+53
+00:04:08,500 --> 00:04:13,520
+điều quan trọng là bạn có thể giúp người đọc bằng cách
+
+54
+00:04:13,520 --> 00:04:18,100
+xác định tỉ lệ khoảng trắng theo cách mà người đó sẽ đọc bảng
+
+55
+00:04:19,300 --> 00:04:22,960
+chúng ta có thể làm thế với dòng và tất nhiên với cột cũng tương tự
+
+56
+00:04:24,960 --> 00:04:28,960
+điều này thực ra đã được nhắc đến ở bài học đầu tiên
+
+57
+00:04:29,180 --> 00:04:30,960
+tất cả đều dùng để truyền tải thông điệp của tôi
+
+58
+00:04:30,960 --> 00:04:35,280
+tôi muốn trình bày cái gì? tôi muốn cung cấp thông tin gì cho người đọc?
+
+59
+00:04:35,840 --> 00:04:40,120
+tôi muốn họ đọc bảng tính của tôi như thế nào? họ có nên đọc theo từng cột?
+
+60
+00:04:40,320 --> 00:04:46,860
+khi đó, đây sẽ là một ý hay. Hay là họ nên đọc theo từng dòng?
+
+61
+00:04:47,200 --> 00:04:52,560
+nếu vậy, tôi sẽ giảm tỷ lệ khoảng trắng giữa các cột
+
+62
+00:04:52,740 --> 00:04:55,300
+và tăng tỉ lệ khoảng trắng giữa các dòng
+
+63
+00:04:55,720 --> 00:05:00,280
+người ta sẽ tự nhiên đọc bảng tính của tôi theo từng dòng chứ không phải từng cột nữa
+
+64
+00:05:01,820 --> 00:05:07,080
+tóm lại, trong video này, chúng ta đã học được một chút về các thiết kể một bảng tính
+
+65
+00:05:07,380 --> 00:05:11,740
+ở video tiếp theo, chúng ta sẽ quan sát một vài thực hành 
+
+66
+00:05:11,740 --> 00:05:13,800
+mà sẽ giúp chúng ta khởi tạo những bảng tính rất "tuyệt"
+

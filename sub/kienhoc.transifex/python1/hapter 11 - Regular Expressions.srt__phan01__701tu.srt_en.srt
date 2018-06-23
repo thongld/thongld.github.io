@@ -1,0 +1,446 @@
+1
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/UR6a_wZ8ido
+
+2
+00:00:00,500 --> 00:00:03,720
+Hello and welcome to chapter
+11, regular expressions
+
+3
+00:00:03,720 --> 00:00:05,470
+from the book Python
+for Informatics,
+
+4
+00:00:05,470 --> 00:00:07,650
+Exploring Information.
+
+5
+00:00:07,650 --> 00:00:10,960
+As always, these slides are
+copyright Creative Commons
+
+6
+00:00:10,960 --> 00:00:13,250
+attribution as well
+as the audio and video
+
+7
+00:00:13,250 --> 00:00:15,420
+that you're watching or
+listening to right now.
+
+8
+00:00:15,420 --> 00:00:18,080
+
+9
+00:00:18,080 --> 00:00:22,860
+So regular expressions
+are an interesting thing.
+
+10
+00:00:22,860 --> 00:00:25,240
+You've seen from the
+chapters up til now,
+
+11
+00:00:25,240 --> 00:00:29,850
+I've had a singular focus
+on pulling information out
+
+12
+00:00:29,850 --> 00:00:30,520
+of data.
+
+13
+00:00:30,520 --> 00:00:32,850
+Raw data, this mailbox
+file that perhaps you're
+
+14
+00:00:32,850 --> 00:00:34,150
+getting tired of already.
+
+15
+00:00:34,150 --> 00:00:35,650
+But it's a lot of
+fun, because I can
+
+16
+00:00:35,650 --> 00:00:37,884
+have you go look for
+something and pick it out
+
+17
+00:00:37,884 --> 00:00:39,550
+and you're doing
+something that would be
+
+18
+00:00:39,550 --> 00:00:42,350
+really painful to do by hand.
+
+19
+00:00:42,350 --> 00:00:44,892
+
+20
+00:00:44,892 --> 00:00:47,100
+And while it's not all about
+computing, there's games
+
+21
+00:00:47,100 --> 00:00:49,420
+and there's things like
+weather computations
+
+22
+00:00:49,420 --> 00:00:54,180
+that do calculations,
+pulling extracting data out
+
+23
+00:00:54,180 --> 00:00:56,700
+is a big part of computing.
+
+24
+00:00:56,700 --> 00:00:59,090
+And so there's actually
+a library that's
+
+25
+00:00:59,090 --> 00:01:01,340
+built specifically do this.
+
+26
+00:01:01,340 --> 00:01:05,700
+And if you start doing
+a few finds and slicing,
+
+27
+00:01:05,700 --> 00:01:07,000
+it gets long after a while.
+
+28
+00:01:07,000 --> 00:01:07,500
+
+29
+00:01:07,500 --> 00:01:10,600
+Like split, for example,
+really saved us a lot of time.
+
+30
+00:01:10,600 --> 00:01:13,160
+But sometimes, the data
+that you're looking for
+
+31
+00:01:13,160 --> 00:01:15,550
+is a little more
+sophisticated than broken
+
+32
+00:01:15,550 --> 00:01:18,130
+into spaces or colons
+or something like that.
+
+33
+00:01:18,130 --> 00:01:21,110
+And you just want to tell
+something to go find,
+
+34
+00:01:21,110 --> 00:01:23,260
+I see what I want
+and I see where
+
+35
+00:01:23,260 --> 00:01:25,920
+it's embedded in the
+string, go get it for me.
+
+36
+00:01:25,920 --> 00:01:28,720
+And regular expressions are
+themselves a programming
+
+37
+00:01:28,720 --> 00:01:29,220
+language.
+
+38
+00:01:29,220 --> 00:01:33,810
+They're like a really smart
+wild card for searching.
+
+39
+00:01:33,810 --> 00:01:36,590
+So we've used wild cards in
+various things in search.
+
+40
+00:01:36,590 --> 00:01:41,960
+But they are a really smart
+version of a wild card.
+
+41
+00:01:41,960 --> 00:01:46,320
+And so regular expressions
+are quite powerful.
+
+42
+00:01:46,320 --> 00:01:47,700
+And they're very cryptic.
+
+43
+00:01:47,700 --> 00:01:49,325
+And as a matter of
+fact, you don't even
+
+44
+00:01:49,325 --> 00:01:51,870
+need to learn them if you
+don't feel like it, right?
+
+45
+00:01:51,870 --> 00:01:53,470
+I've got this little guide.
+
+46
+00:01:53,470 --> 00:01:56,070
+I need a guide for myself
+when I do regular expressions.
+
+47
+00:01:56,070 --> 00:01:58,067
+It sometimes takes
+me a few minutes
+
+48
+00:01:58,067 --> 00:02:00,400
+to write a regular expression
+to do exactly what I want.
+
+49
+00:02:00,400 --> 00:02:02,890
+So in a way, writing
+a regular expression
+
+50
+00:02:02,890 --> 00:02:05,370
+is like writing a program.
+
+51
+00:02:05,370 --> 00:02:08,350
+It's highly specialized to
+searching and extracting data
+
+52
+00:02:08,350 --> 00:02:10,419
+from strings, but it's
+like writing a program.
+
+53
+00:02:10,419 --> 00:02:11,960
+And it takes a while
+to get it right.
+
+54
+00:02:11,960 --> 00:02:16,380
+And you have to change this,
+what about a slash there.
+
+55
+00:02:16,380 --> 00:02:18,130
+But they actually are fun.
+
+56
+00:02:18,130 --> 00:02:21,750
+And they're a great way
+to exchange little program
+
+57
+00:02:21,750 --> 00:02:23,960
+snippets to say, oh yeah,
+I'm looking for this.
+
+58
+00:02:23,960 --> 00:02:26,230
+Oh, here's a little reg
+expression you might try.
+
+59
+00:02:26,230 --> 00:02:29,650
+So they're like
+programs themselves.
+
+60
+00:02:29,650 --> 00:02:31,970
+It is this language
+of marker characters.
+
+61
+00:02:31,970 --> 00:02:34,650
+So when we look for
+regular expressions,
+
+62
+00:02:34,650 --> 00:02:38,390
+some characters like
+ABC, have meaning as ABC.
+
+63
+00:02:38,390 --> 00:02:40,476
+But some characters, like
+carrot or dollar sign
+
+64
+00:02:40,476 --> 00:02:42,850
+mean the beginning of the line
+or at the end of the line.
+
+65
+00:02:42,850 --> 00:02:48,330
+And so we encode, in this
+string, a program, basically.
+
+66
+00:02:48,330 --> 00:02:50,180
+So it's a rather
+old school language.
+
+67
+00:02:50,180 --> 00:02:51,630
+It's from a long time.
+
+68
+00:02:51,630 --> 00:02:56,790
+It predates Python, which
+is over 20 years old.
+
+69
+00:02:56,790 --> 00:03:00,630
+It also marks you as
+a little cool, right?
+
+70
+00:03:00,630 --> 00:03:04,810
+It's a distinct marking that
+makes it so that you know
+
+71
+00:03:04,810 --> 00:03:06,510
+something other people don't.
+
+72
+00:03:06,510 --> 00:03:08,370
+So you can know how to program.
+
+73
+00:03:08,370 --> 00:03:10,578
+But if you know regular
+expressions, they'll be like,
+
+74
+00:03:10,578 --> 00:03:13,360
+whoa, I tried to look at
+those and they're tough.
+
+75
+00:03:13,360 --> 00:03:17,990
+In a way, knowing regular
+expressions is like a tattoo.
+
+76
+00:03:17,990 --> 00:03:19,450
+So it's casual Friday.
+
+77
+00:03:19,450 --> 00:03:21,200
+And that's why I'm
+wearing a t-shirt today
+
+78
+00:03:21,200 --> 00:03:23,660
+and so I figured I would
+come in today in a t-shirt.
+
+79
+00:03:23,660 --> 00:03:25,160
+But seeing as how
+it's the first I'm
+
+80
+00:03:25,160 --> 00:03:26,618
+wearing a short
+sleeved shirt, it's
+
+81
+00:03:26,618 --> 00:03:29,580
+also first time I can show
+you my real tattoo here.
+
+82
+00:03:29,580 --> 00:03:31,340
+So here's my real tattoo.
+
+83
+00:03:31,340 --> 00:03:33,700
+And in the middle is the
+Sakai, the open source
+
+84
+00:03:33,700 --> 00:03:36,150
+learning manager system,
+always close to my heart.
+
+85
+00:03:36,150 --> 00:03:37,810
+And then you have
+the IMS logo, which
+
+86
+00:03:37,810 --> 00:03:40,260
+is IMS Learning Tools
+and Operability, which
+
+87
+00:03:40,260 --> 00:03:42,190
+is a standard that
+means a lot to me.
+
+88
+00:03:42,190 --> 00:03:47,740
+Blackboard, OLAT, Learning
+Objects, Angel, Moodle,
+
+89
+00:03:47,740 --> 00:03:51,920
+Instructure, Jenzabar,
+and Desire2Learn.
+
+90
+00:03:51,920 --> 00:03:53,670
+I call this the
+ring of compliance.
+
+91
+00:03:53,670 --> 00:03:57,280
+Because these are all of the
+first six or seven learning
+
+92
+00:03:57,280 --> 00:04:00,930
+management systems that complied
+with the IMS Learning Tools
+
+93
+00:04:00,930 --> 00:04:03,070
+Interoperability Standard
+and Specification,
+
+94
+00:04:03,070 --> 00:04:06,220
+which is something that I spent
+a lot of my life making work.
+

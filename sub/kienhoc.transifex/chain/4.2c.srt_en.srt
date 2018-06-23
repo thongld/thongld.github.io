@@ -1,0 +1,944 @@
+0
+00:00:00,000 --> 00:00:00,980
+https://youtu.be/6u2TSaHQ5kg
+
+1
+00:00:00,980 --> 00:00:02,570
+So we've derived the EOQ.
+
+2
+00:00:02,570 --> 00:00:05,370
+And we know how to find that given input data.
+
+3
+00:00:05,370 --> 00:00:09,200
+So now we want to do is find out how sensitive the EOQ
+
+4
+00:00:09,200 --> 00:00:12,930
+solution is to changes or errors in our assumptions.
+
+5
+00:00:12,930 --> 00:00:16,730
+So suppose we have a case where I used a wrong order quantity.
+
+6
+00:00:16,730 --> 00:00:19,550
+My Q was wrong for whatever reason.
+
+7
+00:00:19,550 --> 00:00:21,650
+Management decided to use something else.
+
+8
+00:00:21,650 --> 00:00:23,820
+I made a mistake, whatever.
+
+9
+00:00:23,820 --> 00:00:27,150
+So the question we want to ask is how much worse will my total
+
+10
+00:00:27,150 --> 00:00:31,210
+relevant cost be by using this wrong Q-- this Q here--
+
+11
+00:00:31,210 --> 00:00:33,530
+compared to the one that actually should have been
+
+12
+00:00:33,530 --> 00:00:34,990
+the Q*.
+
+13
+00:00:34,990 --> 00:00:37,170
+And to do this, I just want to do a simple ratio.
+
+14
+00:00:37,170 --> 00:00:39,950
+And my ratio is going to be my total relevant cost
+
+15
+00:00:39,950 --> 00:00:41,960
+equation, which is up here.
+
+16
+00:00:41,960 --> 00:00:45,270
+And I'm going to divide that by the optimal.
+
+17
+00:00:45,270 --> 00:00:47,010
+And we've already shown how we got that.
+
+18
+00:00:47,010 --> 00:00:51,590
+That's the optimal total relevant cost given the right
+
+19
+00:00:51,590 --> 00:00:52,910
+Q*.
+
+20
+00:00:52,910 --> 00:00:56,320
+So if I look at this ratio, and all I'm going to do
+
+21
+00:00:56,320 --> 00:00:58,790
+is do some algebra to clean it up a little bit.
+
+22
+00:00:58,790 --> 00:01:04,090
+I split this up and have the sqrt( 2*c_t*c_e*D) under each.
+
+23
+00:01:04,090 --> 00:01:07,500
+And then I'm just going to clean up and cancel some things out.
+
+24
+00:01:07,500 --> 00:01:11,380
+I'm going to multiply the first term by 1, sqrt(2) / sqrt(2),
+
+25
+00:01:11,380 --> 00:01:15,560
+because I want to get this 2 on the bottom of each term.
+
+26
+00:01:15,560 --> 00:01:17,720
+Let's clean up a little bit more until I
+
+27
+00:01:17,720 --> 00:01:19,070
+get to something like this.
+
+28
+00:01:19,070 --> 00:01:21,730
+And all I did was take the 1/2's out and kind
+
+29
+00:01:21,730 --> 00:01:23,290
+of combine "like terms".
+
+30
+00:01:23,290 --> 00:01:24,790
+But I want you to notice something--
+
+31
+00:01:24,790 --> 00:01:26,590
+make sure you can do the algebra--
+
+32
+00:01:26,590 --> 00:01:33,220
+but this term should look very familiar, as should this term.
+
+33
+00:01:33,220 --> 00:01:38,040
+This is just Q*: sqrt(2*c_t*D / c_e).
+
+34
+00:01:38,040 --> 00:01:40,810
+And same thing, this is the inverse of Q*.
+
+35
+00:01:40,810 --> 00:01:45,450
+So a nice little term we get, a nice little relationship is
+
+36
+00:01:45,450 --> 00:01:49,570
+that the ratio of the relevant costs for the wrong Q compared
+
+37
+00:01:49,570 --> 00:01:53,510
+to the correct, optimal Q* is 1/2 times (Q*/Q + Q/Q*).
+
+38
+00:01:53,510 --> 00:01:57,100
+
+
+39
+00:01:57,100 --> 00:02:00,760
+So what this allows us to do is to very quickly determine
+
+40
+00:02:00,760 --> 00:02:04,260
+how far off our error is.
+
+41
+00:02:04,260 --> 00:02:06,600
+In other words, if we make a mistake in Q,
+
+42
+00:02:06,600 --> 00:02:08,479
+how much of an impact will it have?
+
+43
+00:02:08,479 --> 00:02:11,200
+And the nice answer is: not that much!
+
+44
+00:02:11,200 --> 00:02:12,730
+So here's that same example we've
+
+45
+00:02:12,730 --> 00:02:16,370
+been playing with where the annual demand is 2,000 units.
+
+46
+00:02:16,370 --> 00:02:18,940
+The cost is $50 / unit.
+
+47
+00:02:18,940 --> 00:02:24,490
+The holding cost is $12.50 / unit / year.
+
+48
+00:02:24,490 --> 00:02:28,150
+And the order transaction cost is $500 / order.
+
+49
+00:02:28,150 --> 00:02:31,690
+And remember, we found Q* = $400.
+
+50
+00:02:31,690 --> 00:02:33,930
+And so all I did here was break out what
+
+51
+00:02:33,930 --> 00:02:36,340
+the ordering costs are, the holding costs
+
+52
+00:02:36,340 --> 00:02:38,010
+are, the total relevant costs, which
+
+53
+00:02:38,010 --> 00:02:40,220
+is just the sum of the two.
+
+54
+00:02:40,220 --> 00:02:42,970
+And then I did the ratio of the Q/Q*.
+
+55
+00:02:42,970 --> 00:02:46,025
+And for this, since this is Q*, we're just saying it's 1.
+
+56
+00:02:46,025 --> 00:02:48,060
+So we're just leaving it blank.
+
+57
+00:02:48,060 --> 00:02:50,540
+And then what the relationship of the total relevant cost
+
+58
+00:02:50,540 --> 00:02:52,940
+would be compared with the optimal would be.
+
+59
+00:02:52,940 --> 00:02:56,980
+So looking at this, I did it for different values of Q.
+
+60
+00:02:56,980 --> 00:03:01,200
+And so what happens if I ordered 50% less.
+
+61
+00:03:01,200 --> 00:03:03,600
+So instead of ordering 400 at a time,
+
+62
+00:03:03,600 --> 00:03:05,410
+I only order 200 at a time.
+
+63
+00:03:05,410 --> 00:03:09,940
+So this means I would order more frequently, but not as much.
+
+64
+00:03:09,940 --> 00:03:13,510
+So as you would expect, the ordering cost for that
+
+65
+00:03:13,510 --> 00:03:17,660
+go way up, because I'm ordering twice as often.
+
+66
+00:03:17,660 --> 00:03:20,440
+And the inventory holding costs go way down.
+
+67
+00:03:20,440 --> 00:03:23,860
+But the combined amount is, of course, greater than optimal.
+
+68
+00:03:23,860 --> 00:03:26,680
+You expect it to be greater, not equal to.
+
+69
+00:03:26,680 --> 00:03:28,250
+And how much is that?
+
+70
+00:03:28,250 --> 00:03:33,210
+Well, my Q is 50% smaller than my optimal.
+
+71
+00:03:33,210 --> 00:03:35,630
+But that's only a 25% error.
+
+72
+00:03:35,630 --> 00:03:36,650
+That's pretty amazing.
+
+73
+00:03:36,650 --> 00:03:37,840
+Let's look at the other way.
+
+74
+00:03:37,840 --> 00:03:41,750
+Suppose instead of ordering 400, I order 50% higher.
+
+75
+00:03:41,750 --> 00:03:43,450
+I order 600.
+
+76
+00:03:43,450 --> 00:03:47,200
+So now I'm ordering 50% more each time than I should.
+
+77
+00:03:47,200 --> 00:03:50,490
+Now, what this means is because my total demand doesn't change,
+
+78
+00:03:50,490 --> 00:03:53,510
+I'm going to be ordering less frequently.
+
+79
+00:03:53,510 --> 00:03:56,770
+So my ordering cost is naturally going to go down.
+
+80
+00:03:56,770 --> 00:04:00,000
+My holding costs is going to go up, because I'm ordering more.
+
+81
+00:04:00,000 --> 00:04:01,630
+I'm keeping it there longer.
+
+82
+00:04:01,630 --> 00:04:03,280
+My total combined cost, of course,
+
+83
+00:04:03,280 --> 00:04:05,520
+is higher than the optimal cost.
+
+84
+00:04:05,520 --> 00:04:10,350
+So even though my ordering size is 50% higher than the optimal.
+
+85
+00:04:10,350 --> 00:04:16,360
+It's only 8.3% higher total relevant cost.
+
+86
+00:04:16,360 --> 00:04:17,680
+That's amazing.
+
+87
+00:04:17,680 --> 00:04:21,610
+So the whole idea-- I can be 50% off-- order 50% more
+
+88
+00:04:21,610 --> 00:04:24,850
+than I should in my order size-- and I'm only 8%
+
+89
+00:04:24,850 --> 00:04:28,570
+off in terms of my ratio of total relevant costs.
+
+90
+00:04:28,570 --> 00:04:31,510
+Which begs the question now, is it better
+
+91
+00:04:31,510 --> 00:04:33,415
+if my optimal quantity is something
+
+92
+00:04:33,415 --> 00:04:35,790
+that doesn't make sense, as much as is it better to order
+
+93
+00:04:35,790 --> 00:04:38,190
+a little more or order a little less?
+
+94
+00:04:38,190 --> 00:04:41,510
+Which is the better error to make?
+
+95
+00:04:41,510 --> 00:04:44,670
+Is it better to round up or round down?
+
+96
+00:04:44,670 --> 00:04:47,610
+And well, if we look at this, and we just plot the ratio
+
+97
+00:04:47,610 --> 00:04:49,270
+of Q/Q*.
+
+98
+00:04:49,270 --> 00:04:51,180
+So that's this horizontal axis.
+
+99
+00:04:51,180 --> 00:04:53,100
+It's just Q/Q*.
+
+100
+00:04:53,100 --> 00:04:55,090
+And the ratio on the vertical axis
+
+101
+00:04:55,090 --> 00:04:58,170
+is just the total relevant cost to
+
+102
+00:04:58,170 --> 00:05:01,820
+the optimal total relevant cost.
+
+103
+00:05:01,820 --> 00:05:06,660
+And then if I just do this for different values for Q and Q*,
+
+104
+00:05:06,660 --> 00:05:10,190
+you can see that the relationship is not linear.
+
+105
+00:05:10,190 --> 00:05:16,080
+And so here is-- if I order exactly the right amount-- if I
+
+106
+00:05:16,080 --> 00:05:21,080
+order 50% more, that would be this point right here.
+
+107
+00:05:21,080 --> 00:05:22,830
+And that's about-- what did we say?
+
+108
+00:05:22,830 --> 00:05:27,360
+--8.3 percent more in total relevant cost.
+
+109
+00:05:27,360 --> 00:05:31,970
+But if I do 50% the other way, that would be right here.
+
+110
+00:05:31,970 --> 00:05:33,240
+And that's about what?
+
+111
+00:05:33,240 --> 00:05:38,210
+25% higher costs, and this is because if you
+
+112
+00:05:38,210 --> 00:05:41,740
+think back to the EOQ relationship-- remember,
+
+113
+00:05:41,740 --> 00:05:45,520
+you've got the inventory holding cost here.
+
+114
+00:05:45,520 --> 00:05:47,530
+And your ordering cost kind of go like this.
+
+115
+00:05:47,530 --> 00:05:50,470
+They're non-linear.
+
+116
+00:05:50,470 --> 00:05:53,020
+Every time I go this way, I'm adding
+
+117
+00:05:53,020 --> 00:05:54,370
+a linear cost for holding.
+
+118
+00:05:54,370 --> 00:05:56,970
+So for holding cost, it doesn't matter whether up or down.
+
+119
+00:05:56,970 --> 00:05:58,520
+It's going to be the same amount,
+
+120
+00:05:58,520 --> 00:06:00,810
+because it's a linear function.
+
+121
+00:06:00,810 --> 00:06:03,450
+But for the order cost, as I go down,
+
+122
+00:06:03,450 --> 00:06:07,400
+it will decrease at a slower rate, than if I go up.
+
+123
+00:06:07,400 --> 00:06:10,400
+Because I'm going up that steep part of the slope, where
+
+124
+00:06:10,400 --> 00:06:12,750
+I have that big fixed cost.
+
+125
+00:06:12,750 --> 00:06:15,100
+So that the answer is it's always better
+
+126
+00:06:15,100 --> 00:06:19,580
+to round up a little bit than to round down, because the way
+
+127
+00:06:19,580 --> 00:06:22,070
+that the non-linear order cost function
+
+128
+00:06:22,070 --> 00:06:25,550
+is compared to the linear holding cost function.
+
+129
+00:06:25,550 --> 00:06:28,740
+So what we saw is if I ordered the wrong Q,
+
+130
+00:06:28,740 --> 00:06:31,320
+generally the EOQ is pretty stable.
+
+131
+00:06:31,320 --> 00:06:32,140
+It's pretty stable.
+
+132
+00:06:32,140 --> 00:06:33,760
+So I can round things up a little bit.
+
+133
+00:06:33,760 --> 00:06:36,580
+And I'm still going to be in a pretty good solution.
+
+134
+00:06:36,580 --> 00:06:39,260
+But what about if my demand changes?
+
+135
+00:06:39,260 --> 00:06:43,180
+So what happens if I make a forecast,
+
+136
+00:06:43,180 --> 00:06:46,425
+and I have my demand forecast-- I do this ahead of time--
+
+137
+00:06:46,425 --> 00:06:50,340
+and out of that forecast, I make an EOQ based on that?
+
+138
+00:06:50,340 --> 00:06:51,440
+And that's this.
+
+139
+00:06:51,440 --> 00:06:53,880
+So with the best information I have at the time,
+
+140
+00:06:53,880 --> 00:06:56,970
+I forecast there's going to be 2,000 units out there.
+
+141
+00:06:56,970 --> 00:06:59,190
+And I base my EOQ off that.
+
+142
+00:06:59,190 --> 00:07:01,620
+But afterwards, at the end of year, I look back and say,
+
+143
+00:07:01,620 --> 00:07:03,320
+you know what, the real demand was
+
+144
+00:07:03,320 --> 00:07:04,670
+something totally different.
+
+145
+00:07:04,670 --> 00:07:06,170
+The actual demand.
+
+146
+00:07:06,170 --> 00:07:08,700
+And so the question is, if I go back and say, OK,
+
+147
+00:07:08,700 --> 00:07:11,060
+if I know what the real demand is,
+
+148
+00:07:11,060 --> 00:07:14,780
+and I calculated what the actual Q* should be,
+
+149
+00:07:14,780 --> 00:07:16,780
+how much of a difference will it make?
+
+150
+00:07:16,780 --> 00:07:18,720
+In other words, how much will the accuracy
+
+151
+00:07:18,720 --> 00:07:22,130
+of my forecast impact EOQ?
+
+152
+00:07:22,130 --> 00:07:25,350
+Well, let's take the same relationship we developed.
+
+153
+00:07:25,350 --> 00:07:28,470
+This is the total relevant cost with a Q versus the Q*.
+
+154
+00:07:28,470 --> 00:07:31,660
+And we showed how we got this relationship.
+
+155
+00:07:31,660 --> 00:07:34,470
+And you can see that this is the same thing--
+
+156
+00:07:34,470 --> 00:07:38,640
+I'm just going to clean that up-- as Q*/Q.
+
+157
+00:07:38,640 --> 00:07:41,330
+And Q/Q* here is the same thing as the forecast,
+
+158
+00:07:41,330 --> 00:07:44,550
+which it turns out to be the incorrect Q,
+
+159
+00:07:44,550 --> 00:07:46,490
+versus the actual optimal.
+
+160
+00:07:46,490 --> 00:07:49,370
+So I can use this same relationship.
+
+161
+00:07:49,370 --> 00:07:51,340
+And so what I want to figure out though
+
+162
+00:07:51,340 --> 00:07:53,240
+is the relationship of the wrong D's,
+
+163
+00:07:53,240 --> 00:07:55,900
+because I want to see how bad my forecast is way off.
+
+164
+00:07:55,900 --> 00:07:57,310
+What's the effect?
+
+165
+00:07:57,310 --> 00:08:06,140
+So Q*a / Q*f is simply this term over this term.
+
+166
+00:08:06,140 --> 00:08:09,200
+Then if you look at it, everything cancels out, right?
+
+167
+00:08:09,200 --> 00:08:11,760
+Boom, boom, boom, boom, boom, except for the sqrt(Da)
+
+168
+00:08:11,760 --> 00:08:14,420
+/ sqrt(Df).
+
+169
+00:08:14,420 --> 00:08:17,630
+So this term, I can just substitute in.
+
+170
+00:08:17,630 --> 00:08:20,020
+And I end up with this relationship
+
+171
+00:08:20,020 --> 00:08:25,020
+that the total relevant cost for the forecast versus the actual
+
+172
+00:08:25,020 --> 00:08:28,730
+is 1/2 times the square root of the actual demand
+
+173
+00:08:28,730 --> 00:08:32,150
+over the forecast demand plus the square root of the forecast
+
+174
+00:08:32,150 --> 00:08:33,640
+demand over the actual demand.
+
+175
+00:08:33,640 --> 00:08:36,679
+In other words, the error is not going to be as great.
+
+176
+00:08:36,679 --> 00:08:41,710
+Because before we had it just Q*/Q, way up here.
+
+177
+00:08:41,710 --> 00:08:43,419
+And now, it's the square root of that.
+
+178
+00:08:43,419 --> 00:08:45,710
+So we know it's not going to have as much of an impact.
+
+179
+00:08:45,710 --> 00:08:48,260
+But let's just go through the analysis.
+
+180
+00:08:48,260 --> 00:08:49,950
+So this is the same example.
+
+181
+00:08:49,950 --> 00:08:52,300
+We should be getting very comfortable with this.
+
+182
+00:08:52,300 --> 00:08:56,520
+And we found out that if our actual-- because out of this,
+
+183
+00:08:56,520 --> 00:08:59,470
+we found-- we predicted our forecasted demand was 2,000.
+
+184
+00:08:59,470 --> 00:09:01,980
+If it actually was 2,000, then the ratio
+
+185
+00:09:01,980 --> 00:09:05,160
+of actual demand versus forecast demand, of course, is 1.
+
+186
+00:09:05,160 --> 00:09:07,620
+The Qa / Qf would be the same.
+
+187
+00:09:07,620 --> 00:09:09,350
+And there'll be no difference in terms
+
+188
+00:09:09,350 --> 00:09:11,080
+of the total relevant cost.
+
+189
+00:09:11,080 --> 00:09:15,190
+However, let's suppose, I was 50% off.
+
+190
+00:09:15,190 --> 00:09:17,950
+In other words, my demand was 50% higher.
+
+191
+00:09:17,950 --> 00:09:19,900
+It went to 3,000.
+
+192
+00:09:19,900 --> 00:09:22,610
+So my demand is 50% off.
+
+193
+00:09:22,610 --> 00:09:25,450
+I was 50% higher than what I thought it was going to be.
+
+194
+00:09:25,450 --> 00:09:30,750
+And then that means my Q*s are going to be off by about 22%.
+
+195
+00:09:30,750 --> 00:09:34,520
+But my relevant cost is only going to be off by 2%.
+
+196
+00:09:34,520 --> 00:09:35,710
+That's amazing.
+
+197
+00:09:35,710 --> 00:09:37,120
+And so let's go the other way.
+
+198
+00:09:37,120 --> 00:09:39,740
+Suppose for 2,000 I'm down 50%.
+
+199
+00:09:39,740 --> 00:09:41,490
+So that means my actual demand, let's say,
+
+200
+00:09:41,490 --> 00:09:44,850
+was 1,000, when I predicted it would be 2,000.
+
+201
+00:09:44,850 --> 00:09:46,540
+And so it's actually 1,000.
+
+202
+00:09:46,540 --> 00:09:50,170
+So my demand is half of what I thought it was going to be.
+
+203
+00:09:50,170 --> 00:09:54,730
+So my Q* was actually going to be about that 3/4 what it
+
+204
+00:09:54,730 --> 00:09:55,230
+should be.
+
+205
+00:09:55,230 --> 00:09:58,460
+But the error is only going to be 6%.
+
+206
+00:09:58,460 --> 00:10:02,270
+So what we've seen here is that the demand
+
+207
+00:10:02,270 --> 00:10:04,100
+is pretty insensitive to that.
+
+208
+00:10:04,100 --> 00:10:06,620
+So if I'm a little bit off, it's OK.
+
+209
+00:10:06,620 --> 00:10:08,900
+This optimal solution still works.
+
+210
+00:10:08,900 --> 00:10:12,680
+Now the critical thing here is I did this for demand forecast.
+
+211
+00:10:12,680 --> 00:10:14,720
+But, you know, it doesn't really matter.
+
+212
+00:10:14,720 --> 00:10:18,110
+Let me just clear this off, so you can see.
+
+213
+00:10:18,110 --> 00:10:20,010
+Let's say I wanted the c_t changed.
+
+214
+00:10:20,010 --> 00:10:24,220
+That I use a cost / order, but I was way off.
+
+215
+00:10:24,220 --> 00:10:26,690
+So my forecasted cost / order was way
+
+216
+00:10:26,690 --> 00:10:28,450
+different from what it actually was.
+
+217
+00:10:28,450 --> 00:10:30,120
+Well, I have the same relationship,
+
+218
+00:10:30,120 --> 00:10:31,740
+because everything else cancels here.
+
+219
+00:10:31,740 --> 00:10:34,610
+And so this would really just be the c_t
+
+220
+00:10:34,610 --> 00:10:38,610
+for the actual / the c_t of the forecast, and same thing here.
+
+221
+00:10:38,610 --> 00:10:42,185
+So this same relationship holds for whether I
+
+222
+00:10:42,185 --> 00:10:46,900
+have errors in my c_t, my c, my cost / unit, or my cost
+
+223
+00:10:46,900 --> 00:10:48,930
+for holding inventory.
+
+224
+00:10:48,930 --> 00:10:53,040
+So the net effect of this is that EOQ is very robust.
+
+225
+00:10:53,040 --> 00:10:54,370
+It's a great solution.
+
+226
+00:10:54,370 --> 00:10:57,060
+And it's known as a bathtub function,
+
+227
+00:10:57,060 --> 00:10:59,010
+because you look how flat that is.
+
+228
+00:10:59,010 --> 00:11:01,090
+It's very flat around the optimal.
+
+229
+00:11:01,090 --> 00:11:03,609
+So this is nice because you come up with a solution,
+
+230
+00:11:03,609 --> 00:11:05,400
+and if you're a little off in the forecast,
+
+231
+00:11:05,400 --> 00:11:08,240
+a little off in how you implement the Q, it's OK.
+
+232
+00:11:08,240 --> 00:11:08,760
+It's OK.
+
+233
+00:11:08,760 --> 00:11:10,720
+You're still within a nice optimal region.
+
+234
+00:11:10,720 --> 00:11:13,390
+The error won't be that great.
+
+235
+00:11:13,390 --> 00:11:14,444
+
+

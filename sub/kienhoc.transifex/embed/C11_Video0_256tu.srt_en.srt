@@ -1,0 +1,147 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/vNHHbwzKdJo
+
+1
+00:00:00,000 --> 00:00:00,722
+
+2
+00:00:00,722 --> 00:00:03,430
+DR. RAMESH YERRABALLI: So, Jon,
+what are we going to learn today?
+
+3
+00:00:03,430 --> 00:00:09,950
+DR. JONATHAN VALVANO: Today, we're going
+to learn our first try at communicating
+
+4
+00:00:09,950 --> 00:00:15,020
+between devices, between two or
+more devices using the UART, which
+
+5
+00:00:15,020 --> 00:00:20,440
+stands for Universal Asynchronous
+Receiver Transmitter.
+
+6
+00:00:20,440 --> 00:00:22,840
+DR. RAMESH YERRABALLI:
+So does universal mean
+
+7
+00:00:22,840 --> 00:00:25,100
+that all devices communicate this way?
+
+8
+00:00:25,100 --> 00:00:28,370
+DR. JONATHAN VALVANO: No,
+the UART is one of the first,
+
+9
+00:00:28,370 --> 00:00:34,730
+or one of the original, communication
+protocols using what's called RS-232.
+
+10
+00:00:34,730 --> 00:00:38,457
+And we will use it because
+it is quite simple.
+
+11
+00:00:38,457 --> 00:00:40,790
+DR. RAMESH YERRABALLI: So it
+must be easy to learn then?
+
+12
+00:00:40,790 --> 00:00:45,940
+DR. JONATHAN VALVANO: Yes, especially
+compared to something like TCP/IP,
+
+13
+00:00:45,940 --> 00:00:49,699
+the one used for the internet,
+which is extremely complex.
+
+14
+00:00:49,699 --> 00:00:51,490
+DR. RAMESH YERRABALLI:
+Is it because it has
+
+15
+00:00:51,490 --> 00:00:55,357
+to account for all kinds of devices that
+have to communicate with each other?
+
+16
+00:00:55,357 --> 00:00:56,440
+DR. JONATHAN VALVANO: Yes.
+
+17
+00:00:56,440 --> 00:01:03,160
+In our case, we'll use
+a simple protocol where
+
+18
+00:01:03,160 --> 00:01:09,970
+two devices are connected
+with one serial cable.
+
+19
+00:01:09,970 --> 00:01:14,414
+And we'll transmit information
+from one to the other.
+
+20
+00:01:14,414 --> 00:01:17,580
+DR. RAMESH YERRABALLI: So we're going
+to build something exciting this time?
+
+21
+00:01:17,580 --> 00:01:18,960
+DR. JONATHAN VALVANO: Absolutely.
+
+22
+00:01:18,960 --> 00:01:21,150
+Let's build a chat room.
+
+23
+00:01:21,150 --> 00:01:23,227
+I will use one launch pad.
+
+24
+00:01:23,227 --> 00:01:25,060
+DR. RAMESH YERRABALLI:
+And I'll use another.
+
+25
+00:01:25,060 --> 00:01:28,880
+DR. JONATHAN VALVANO: And we will
+be able to ask and answer questions
+
+26
+00:01:28,880 --> 00:01:31,500
+by communicating between each other--
+
+27
+00:01:31,500 --> 00:01:35,657
+DR. RAMESH YERRABALLI: Using a
+simple interface of the launch pad.
+
+28
+00:01:35,657 --> 00:01:36,740
+DR. JONATHAN VALVANO: Yes.
+
+29
+00:01:36,740 --> 00:01:40,002
+This way, we'll have our own
+private communication channel.
+
+30
+00:01:40,002 --> 00:01:41,460
+DR. RAMESH YERRABALLI: Let's do it.
+
+31
+00:01:41,460 --> 00:01:43,010
+DR. JONATHAN VALVANO: Yes!

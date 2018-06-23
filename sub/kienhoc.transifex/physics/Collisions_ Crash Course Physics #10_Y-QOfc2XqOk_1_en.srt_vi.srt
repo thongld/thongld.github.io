@@ -1,0 +1,573 @@
+1
+00:00:02,859 --> 00:00:06,699
+Giang Na 6/11/2016
+gần đây ta đã tìm hiểu các quy tắc chi phối chuyển động của các vật khác nhau
+
+2
+00:00:06,700 --> 00:00:11,400
+nhưng vật lý không chỉ là kéo các vật lên dốc, hay các phi hành gia bay trên sao chổi
+
+3
+00:00:11,400 --> 00:00:13,470
+ngoài ra còn có sự va chạm
+
+4
+00:00:13,470 --> 00:00:16,769
+và các nhà vật lý có thể nghiên cứu kỹ về sự va chạm, chẳng hạn khi 2 quả bóng bida va vào nhau
+
+5
+00:00:16,769 --> 00:00:21,660
+hay điều xảy ra khi bạn thua trò Mario ở lần thứ 47
+
+6
+00:00:21,660 --> 00:00:24,179
+và ném cái điều khiển game lên sàn
+
+7
+00:00:24,179 --> 00:00:25,280
+thật là ngốc nghếch!
+
+8
+00:00:25,289 --> 00:00:28,738
+để biết được điều gì xảy ra khi các vật thể va chạm nhau, ta sẽ xem xét 2 đặc tính chính
+
+9
+00:00:28,739 --> 00:00:31,539
+động lượng và xung lượng
+
+10
+00:00:31,539 --> 00:00:36,539
+ta cũng sẽ bàn về ngụ ý của các nhà vật lý khi họ nói về tâm khối và lý do tại sao nó quan trọng
+
+11
+00:00:36,539 --> 00:00:41,560
+và I-sắc Niu-tơn sẽ hỗ trợ chúng ta
+
+12
+00:00:41,560 --> 00:00:52,140
+[nhạc nền]
+
+13
+00:00:52,140 --> 00:00:53,960
+bạn còn nhớ nguyên lý 2 của Niu-tơn không?
+
+14
+00:00:53,960 --> 00:00:58,299
+nó cho biết lực tổng lên một vật bằng độ khối lượng x gia tốc của nó
+
+15
+00:00:58,308 --> 00:01:01,068
+tuy nhiên, đó là hẳn là điều Niu-tơn muốn nói
+
+16
+00:01:01,069 --> 00:01:06,349
+ông nói rằng động lượng của một vật = khối lượng x vận tốc của nó
+
+17
+00:01:06,349 --> 00:01:10,308
+và lực tổng = biến thiên khối lượng x vận tốc theo thời gian
+
+18
+00:01:10,308 --> 00:01:14,590
+nói cách khác, nó là đạo hàm của khối lượng x vận tốc theo thời gian
+
+19
+00:01:14,599 --> 00:01:20,199
+nếu bạn tính đạo hàm đó, bạn sẽ thấy lực tổng = khối lượng x gia tốc
+
+20
+00:01:20,200 --> 00:01:23,978
+nhưng nếu xét nguyên lý 2 của Niu-tơn về khối lượng và vận tốc sẽ thấy một khía cạnh của chuyển động 
+
+21
+00:01:23,978 --> 00:01:26,319
+mà ta chưa từng nhắc đến 
+
+22
+00:01:26,319 --> 00:01:30,898
+ông không đặt tên cho đặc tính này, nhưng ta sẽ gọi nó là động lượng
+
+23
+00:01:30,900 --> 00:01:35,260
+và ta sẽ dễ dàng gặp trong đời sống hơn là miêu tả về nó
+
+24
+00:01:35,260 --> 00:01:40,280
+động lượng là khuynh hướng duy trì trạng thái chuyển động của một vật,  nhưng về mặt kỹ thuật
+
+25
+00:01:40,280 --> 00:01:42,549
+động lượng = khối lượng x vận tốc
+
+26
+00:01:42,549 --> 00:01:47,009
+vậy với một túi lớn đầy lá lăn xuống thung lũng, nó sẽ rơi nhanh
+
+27
+00:01:47,009 --> 00:01:51,629
+nhưng khối lượng không lớn, do đó nó không có nhiều động lượng, và việc dừng lại rất đơn giản
+
+28
+00:01:51,629 --> 00:01:56,699
+nhưng với một hòn đá cuội lăn theo một người Ấn Độ thì sao? nó có khối lượng lớn, do đó có nhiều động lượng
+
+29
+00:01:56,700 --> 00:01:59,179
+nên rất khó để dừng lại
+
+30
+00:01:59,179 --> 00:02:02,929
+và động lượng là một yếu tố chi phối sự va chạm giữa các vật
+
+31
+00:02:02,929 --> 00:02:06,890
+tóm lại, nếu một hòn đá to va vào một hòn đá to khác sẽ rất khác
+
+32
+00:02:06,890 --> 00:02:10,990
+so với một túi lá va vào một hòn đá to
+
+33
+00:02:10,990 --> 00:02:14,900
+một đặc tính khác của va chạm mà ta thường lưu tâm là xung lượng
+
+34
+00:02:14,900 --> 00:02:19,760
+ít nhất đối với vật lý, không có gì để bàn với ý chí
+
+35
+00:02:19,759 --> 00:02:23,049
+hay lý do tại sao bạn ném điều khiển game khi bạn thua một ván game
+
+36
+00:02:23,050 --> 00:02:27,380
+thay vào đó, xung lượng, thường được biểu thị là J, là tích phân của lực tổng lên một vật theo thời gian
+
+37
+00:02:27,389 --> 00:02:30,989
+nói cách khác, là sự biến thiên động lượng
+
+38
+00:02:30,990 --> 00:02:34,689
+xung lượng rất hữu ích khi mô tả sự va chạm
+
+39
+00:02:34,689 --> 00:02:38,139
+vì thông thường, khi va chạm lực thay đổi rất nhanh
+
+40
+00:02:38,150 --> 00:02:41,969
+do đó, nếu trái bóng va vào tường, sau 1 giây,
+
+41
+00:02:41,969 --> 00:02:49,270
+lực tác động lên tường bằng Niu-tơn bằng thời gian x 25, ta được xung lượng là 3,1 niu-tơn.giây
+
+42
+00:02:49,270 --> 00:02:52,909
+bây giờ hãy tìm hiểu các dạng va chạm khác nhau mà ta có thể học
+
+43
+00:02:52,909 --> 00:02:56,620
+thông thường, va chạm có thể đàn hồi hoặc không đàn hồi
+
+44
+00:02:56,620 --> 00:03:02,159
+điều quan trọng là xác định dạng va chạm nào mà bạn xét, vì công thức sẽ rất khác nhau
+
+45
+00:03:02,159 --> 00:03:05,150
+nếu va chạm đàn hồi nẩy, thì vốn dĩ nó là như thế
+
+46
+00:03:05,150 --> 00:03:11,289
+giống như hệ bảo toàn mà ta đã nói lần trước, đối với va chạm đàn hồi, động năng có thể được sinh ra cũng có thể mất đi
+
+47
+00:03:11,289 --> 00:03:15,229
+chẳng hạn bạn đánh vào quả bóng bida trắng 
+
+48
+00:03:15,229 --> 00:03:18,530
+thì sẽ va vào quả bóng đỏ trên bàn 
+
+49
+00:03:18,530 --> 00:03:23,180
+để trở thành va chạm đàn hồi, tất cả động năng từ quả bóng trắng
+
+50
+00:03:23,180 --> 00:03:25,150
+sẽ chuyển hết vào bóng đỏ
+
+51
+00:03:25,150 --> 00:03:28,740
+nghĩa là sau khi chúng va chạm, bóng trắng sẽ đứng yên
+
+52
+00:03:28,740 --> 00:03:33,960
+và bóng đỏ sẽ chuyển động với tất cả động năng, cơ bản là cùng tốc độ ban đầu với quả bóng trắng
+
+53
+00:03:33,969 --> 00:03:36,500
+nhưng bạn sẽ không gặp va chạm đàn hồi trong đời sống
+
+54
+00:03:36,500 --> 00:03:40,030
+vì luôn luôn có lượng năng lượng mất đi khi va chạm
+
+55
+00:03:40,030 --> 00:03:41,550
+giống như nhiệt và âm thanh
+
+56
+00:03:41,550 --> 00:03:45,510
+và nếu động năng không được bảo toàn thì đó không phải là va chạm đàn hồi
+
+57
+00:03:45,509 --> 00:03:49,519
+tuy nhiên, có một điều đúng với cả 2 loại va chạm là
+
+58
+00:03:49,520 --> 00:03:52,460
+động lượng của hệ luôn được bảo toàn
+
+59
+00:03:52,460 --> 00:03:56,760
+có thể sẽ chuyển sang vật khác, thậm chí nhiều hơn một vật
+
+60
+00:03:56,759 --> 00:03:59,399
+nhưng động lượng luôn di chuyển
+
+61
+00:03:59,400 --> 00:04:01,939
+và ta sẽ dùng toán học để xác định vị trí di chuyển của nó
+
+62
+00:04:01,939 --> 00:04:05,500
+và ta có thể dùng kiến thức về xung lượng và nguyên lý 3 của Niu-tơn để chứng minh
+
+63
+00:04:05,500 --> 00:04:09,780
+nguyên lý 3 cho biết mỗi hành động đều có phản ứng tương đương và trái ngược
+
+64
+00:04:09,789 --> 00:04:14,379
+và nó áp dụng cho va chạm giống như khi trái bóng va vào tường, nó sẽ tác dụng một lực
+
+65
+00:04:14,379 --> 00:04:18,379
+lên tường, và tường sẽ áp dụng lại một lực tương đương lên trái bóng
+
+66
+00:04:18,379 --> 00:04:22,540
+ta có thể nói các lực này là xung lượng, vì xung lượng
+
+67
+00:04:22,540 --> 00:04:24,540
+là biến thiên động lượng của một vật
+
+68
+00:04:24,540 --> 00:04:28,280
+do đó động lượng quả bóng sẽ giảm khi bóng va vào tường. nhưng theo nguyên lý 3 Niu-tơn
+
+69
+00:04:28,288 --> 00:04:32,318
+động lượng của tường sẽ giảm bằng một lực tương đương
+
+70
+00:04:32,319 --> 00:04:36,030
+ta không thể hình dung biến thiên động lượng của bức tường,
+
+71
+00:04:36,029 --> 00:04:40,369
+vì bức tường liền với mặt đất mà Trái Đất có khối lượng lớn
+
+72
+00:04:40,370 --> 00:04:46,209
+động lượng luôn được bảo toàn rất hữu ích khi biểu diễn va chạm thông qua toán học
+
+73
+00:04:46,209 --> 00:04:49,038
+giống như khi bạn đánh bi trắng vào bi đỏ
+
+74
+00:04:49,038 --> 00:04:53,000
+vì động lượng được bảo toàn, và bằng khối lượng x vận tốc, 
+
+75
+00:04:53,000 --> 00:04:57,439
+do đó động lượng của bóng trắng trước khi va chạm bằng động lượng + động lượng của bóng đỏ
+
+76
+00:04:57,439 --> 00:05:01,019
+sau khi va chạm
+
+77
+00:05:01,029 --> 00:05:04,818
+đó là lý do tại sao khi bóng trắng dừng sau va chạm
+
+78
+00:05:04,819 --> 00:05:09,439
+bóng đỏ phải chuyển động với cùng vận tốc của bóng trắng, giả sử có cùng khối lượng
+
+79
+00:05:09,449 --> 00:05:12,490
+vậy là ta đã biết va chạm đàn hồi và va chạm không đàn hồi
+
+80
+00:05:12,490 --> 00:05:18,079
+nhưng có một loại va chạm không đàn hồi hoàn hảo
+
+81
+00:05:18,079 --> 00:05:20,779
+rất dễ dàng để nói với bạn 
+
+82
+00:05:20,779 --> 00:05:25,359
+vậy nó không phải là đàn hồi mà các vật mất hết động năng
+
+83
+00:05:25,370 --> 00:05:30,240
+thay vào đó, va chạm không đàn hồi hoàn hảo xảy ra khi các vật nằm gần nhau
+
+84
+00:05:30,240 --> 00:05:34,718
+loại va chạm này chuyển nhiều động năng sang các dạng năng lượng khác nhất có thể
+
+85
+00:05:34,718 --> 00:05:39,589
+như nhiệt, âm thanh thậm chí cơ năng, nhưng động lượng vẫn được bảo toàn
+
+86
+00:05:39,589 --> 00:05:43,748
+chẳng hạn nếu bạn đẩy một nam châm vào một nam châm khác, tại điểm chúng tiếp xúc nhau
+
+87
+00:05:43,749 --> 00:05:48,009
+cả 2 bắt đầu trượt cùng nhau
+
+88
+00:05:48,009 --> 00:05:50,038
+với vận tốc bằng nửa vận tốc của nam châm ban đầu
+
+89
+00:05:50,038 --> 00:05:53,418
+trước khi va chạm, động lượng của một nam châm bằng 0, 
+
+90
+00:05:53,418 --> 00:05:55,839
+và động lượng của nam châm bạn đẩy bằng khối lượng x vận tốc
+
+91
+00:05:55,839 --> 00:05:59,948
+khi chúng va chạm, khối lượng gấp đôi, và vận tốc chia đôi
+
+92
+00:05:59,949 --> 00:06:04,939
+do đó tổng động lượng giữ nguyên, nhưng động năng giảm vì vận tốc giảm
+
+93
+00:06:04,939 --> 00:06:10,500
+vậy đó là nguyên lý hoạt động của sự va chạm, và sự ảnh hưởng đối với động lượng của chuyển động trên một đường thẳng
+
+94
+00:06:10,500 --> 00:06:14,959
+nhưng có một chi tiết ta phải tìm hiểu để hiểu rõ chuyển động của vật
+
+95
+00:06:14,959 --> 00:06:16,899
+dù chúng có va chạm hay không
+
+96
+00:06:16,908 --> 00:06:18,620
+đó là tâm khối
+
+97
+00:06:18,620 --> 00:06:22,740
+cho đến bây giờ, ta đã nói về các vật như thể chúng là các phân tử rất nhỏ
+
+98
+00:06:22,740 --> 00:06:27,960
+và hầu hết trong các phần, các vật ta nói đến đều đóng vai trò như một điểm nhỏ
+
+99
+00:06:27,959 --> 00:06:30,438
+nhưng dĩ nhiên không phải phải tất cả đều như vậy
+
+100
+00:06:30,439 --> 00:06:33,840
+chẳng hạn, nếu bạn ném một cái búa -- tôi không khuyến khích điều này đâu nhé!
+
+101
+00:06:33,839 --> 00:06:39,038
+nó sẽ không bay trong không khí như một quả bóng nhẹ, vì khối lượng cái búa phân bố không đồng đều
+
+102
+00:06:39,040 --> 00:06:43,879
+tương tự, một con lắc với một trái bóng to ở cuối sợi dây mảnh, gọi là con lắc đơn
+
+103
+00:06:43,879 --> 00:06:49,079
+sẽ không hoạt động giống như một con lắc dùng một cái gậy nặng hơn, gọi là con lắc vật lý
+
+104
+00:06:49,079 --> 00:06:53,370
+trong những trường hợp này, việc giải thích hoạt động của tâm khối sẽ hữu ích hơn
+
+105
+00:06:53,370 --> 00:06:56,848
+chẳng hạn, khi bạn ném cái búa, nó sẽ xoay quanh tâm khối
+
+106
+00:06:56,848 --> 00:06:58,709
+vậy tâm khối là gì?
+
+107
+00:06:58,709 --> 00:07:02,028
+về cơ bản nó là vị trí trọng tâm của khối lượng trong một hệ
+
+108
+00:07:02,028 --> 00:07:08,478
+chẳng hạn bạn có một cái gậy dài 3 mét, giả sử nó không có khối lượng, với một quả bóng 2 kg ở hai đầu
+
+109
+00:07:08,478 --> 00:07:12,800
+rất dễ để nhận ra tâm khối ở đâu, khối lượng được bố trí cân đối
+
+110
+00:07:12,800 --> 00:07:15,449
+do đó tâm khối sẽ nằm ngay chính giữa gậy
+
+111
+00:07:15,449 --> 00:07:19,759
+chẳng hạn bạn có một gậy 3 mét khác, ở đầu bên trái có một trái bóng 2 kg
+
+112
+00:07:19,759 --> 00:07:22,379
+nhưng bên phải là một trái 4 kg
+
+113
+00:07:22,379 --> 00:07:25,028
+lần này, khối lượng bên phải tăng gấp đôi
+
+114
+00:07:25,028 --> 00:07:29,180
+khi bạn tính vị trí trọng tâm của tất cả khối lượng trên gậy
+
+115
+00:07:29,180 --> 00:07:32,408
+bạn sẽ phải gấp đôi khối lượng bên phải lên
+
+116
+00:07:32,408 --> 00:07:35,949
+nghĩa là tâm khối sẽ là 2/3 độ dài gậy
+
+117
+00:07:35,949 --> 00:07:37,720
+gần về phía bóng 4 kg hơn
+
+118
+00:07:37,720 --> 00:07:42,220
+giống như mỗi khối đều kéo tâm khối sang một ít
+
+119
+00:07:42,228 --> 00:07:45,490
+nhưng tâm khối sẽ nghiêng về phía năng hơn
+
+120
+00:07:45,490 --> 00:07:48,629
+nhưng nếu bạn không muốn tính nhẩm, và nếu có tới 7 phần khác nhau 
+
+121
+00:07:48,629 --> 00:07:52,999
+bạn sẽ không nhẩm mà sẽ có một phương trình để tính
+
+122
+00:07:52,999 --> 00:07:56,059
+đầu tiên, chọn một điểm khởi đầu để tính, khi đó x = 0
+
+123
+00:07:56,060 --> 00:07:59,040
+có thể là đầu gậy, giữa gậy, bất kỳ điểm nào dễ nhất
+
+124
+00:07:59,040 --> 00:08:00,480
+miễn là bạn thống nhất
+
+125
+00:08:00,480 --> 00:08:04,900
+khi đó, tâm khối = khối lượng mỗi phần x khoảng cách từ điểm bắt đầu
+
+126
+00:08:04,908 --> 00:08:09,050
+rồi chia cho tổng khối lượng của hệ
+
+127
+00:08:09,050 --> 00:08:11,300
+hãy thử tính với cây gậy với khối lượng bóng khác nhau
+
+128
+00:08:11,300 --> 00:08:15,340
+ta chọn đầu bên trái nơi có bóng 2 kg làm điểm đầu
+
+129
+00:08:15,339 --> 00:08:18,699
+khối lượng 2kg x khoảng cách, ta được 0
+
+130
+00:08:18,699 --> 00:08:23,259
+bóng 4 kg x khoảng cách 3 mét, ta được 12 kg.mét
+
+131
+00:08:23,259 --> 00:08:25,920
+tổng khối lượng của hệ là 6 kg
+
+132
+00:08:25,930 --> 00:08:29,218
+do đó, lấy 12 kg.mét chia 6 kg ta được 2 mét
+
+133
+00:08:29,218 --> 00:08:32,889
+vậy vị trí tâm khối là 2/3 cây gậy
+
+134
+00:08:32,889 --> 00:08:36,668
+gần về phía bóng 4 kg. đúng với kết quả ban đầu
+
+135
+00:08:36,668 --> 00:08:40,840
+tôi nói với bạn những điều này, vì sau này ta sẽ chuyển sang một phần hoàn toàn mới
+
+136
+00:08:40,840 --> 00:08:42,080
+đúng như thế!
+
+137
+00:08:42,080 --> 00:08:45,980
+vậy là ta đã học về sự va chạm, cách sử dụng động lượng và xung lượng để miêu tả va chạm
+
+138
+00:08:45,980 --> 00:08:49,899
+ta cũng nói về điểm khác nhau giữa va chạm đàn hồi và va chạm không đàn hồi
+
+139
+00:08:49,899 --> 00:08:52,549
+và cách tính tâm khối của một hệ
+
+140
+00:08:52,549 --> 00:08:56,859
+khóa học vật lý cấp tốc được phát triển với sự hợp tác của hãng phim PBS
+
+141
+00:08:56,860 --> 00:09:01,740
+bạn có thể chuyển sang kênh của họ để xem các chương trình thú vị như Physics Girl, Gross Science, và The Chatterbox
+
+142
+00:09:01,750 --> 00:09:05,929
+chương này được quay ở phim trường Doctor Cheryl C. Kinney  
+
+143
+00:09:05,929 --> 00:09:10,579
+với sự hỗ trợ của những người nhiệt tình và nhóm đồ họa tuyệt vời của chúng tôi là Thought Cafe
+

@@ -1,0 +1,1078 @@
+1
+00:00:08,754 --> 00:00:13,074
+https://youtu.be/_64gefthycI
+So now we move from sort of the SQL and
+the contracts we need to talk to a single
+
+2
+00:00:13,074 --> 00:00:15,818
+table, to linking
+multiple tables together,
+
+3
+00:00:15,818 --> 00:00:20,430
+and this is where the real power comes,
+and this is where the complexity comes.
+
+4
+00:00:20,430 --> 00:00:22,796
+So up until now, it should be real simple.
+
+5
+00:00:25,212 --> 00:00:28,858
+When you start a company, we're going to
+kinda pretend we're going to start a small
+
+6
+00:00:28,858 --> 00:00:31,160
+company to build an
+application to manage music.
+
+7
+00:00:32,820 --> 00:00:33,640
+When you start a company,
+
+8
+00:00:33,640 --> 00:00:37,890
+you're going to build an application,
+lots of applications need databases.
+
+9
+00:00:38,980 --> 00:00:42,100
+And you need to design the database for
+your application.
+
+10
+00:00:43,150 --> 00:00:46,010
+And often this is very much a team
+effort with a lot of different
+
+11
+00:00:46,010 --> 00:00:46,750
+people with skills.
+
+12
+00:00:46,750 --> 00:00:49,820
+Some people worry about the user,
+end user capabilities,
+
+13
+00:00:49,820 --> 00:00:51,470
+some people worry about the
+performance, etc.
+
+14
+00:00:51,470 --> 00:00:54,130
+And so database design,
+what I'll show you coming
+
+15
+00:00:54,130 --> 00:00:58,700
+here is just the beginnings of database
+design, but the basics are very powerful.
+
+16
+00:00:58,700 --> 00:01:03,165
+And it's something where smart people
+should take time in database design.
+
+17
+00:01:03,165 --> 00:01:08,080
+And so it's a very collaborative process
+
+18
+00:01:08,080 --> 00:01:12,100
+and if you ultimately look at
+the database design for applications,
+
+19
+00:01:12,100 --> 00:01:14,660
+we draw these crazy pictures, right?
+
+20
+00:01:14,660 --> 00:01:17,830
+And in these crazy
+pictures we are capturing,
+
+21
+00:01:17,830 --> 00:01:19,930
+this is basically multiple tables.
+
+22
+00:01:19,930 --> 00:01:23,300
+Table, table, table, table,
+
+23
+00:01:23,300 --> 00:01:27,070
+and this particular database
+is kind of about an events,
+
+24
+00:01:27,070 --> 00:01:32,620
+like, you know, reserving the picnic
+shelter at a park, right?
+
+25
+00:01:32,620 --> 00:01:35,950
+What times, who's going to be there,
+who reserved it?
+
+26
+00:01:35,950 --> 00:01:37,047
+All these other things.
+
+27
+00:01:37,047 --> 00:01:42,921
+And what we're starting to show is that
+how these tables are connected together.
+
+28
+00:01:42,921 --> 00:01:45,703
+So each of these little arrows,
+so this is a table, and
+
+29
+00:01:45,703 --> 00:01:49,782
+these are the columns in the table, and
+then some of the columns are special
+
+30
+00:01:49,782 --> 00:01:53,760
+columns that represent
+relationships with other tables.
+
+31
+00:01:53,760 --> 00:01:57,590
+And we're not going to go into all the detail,
+you can eventually go into some of the detail
+
+32
+00:01:57,590 --> 00:02:01,360
+where you see what this little
+arrow means and that means one and
+
+33
+00:02:01,360 --> 00:02:03,480
+this means many etc., etc..
+
+34
+00:02:03,480 --> 00:02:08,310
+And this there's all this fancy stuff and
+so we'll talk about this eventually.
+
+35
+00:02:08,310 --> 00:02:12,140
+But this is sort of like what
+we're going for, we're going for
+
+36
+00:02:12,140 --> 00:02:17,510
+a picture of how we want our application's
+data to be stored in the database.
+
+37
+00:02:17,510 --> 00:02:21,410
+And this then becomes our schema and
+it's the contract.
+
+38
+00:02:22,780 --> 00:02:27,670
+So, we made one thing with two,
+we made one table with two columns, and
+
+39
+00:02:27,670 --> 00:02:29,760
+that was a schema and a contract, but
+
+40
+00:02:29,760 --> 00:02:33,730
+now we're going to make multiple
+tables with many columns and
+
+41
+00:02:33,730 --> 00:02:38,800
+some columns that are specifically
+there to connect from one to another.
+
+42
+00:02:38,800 --> 00:02:42,370
+So if you're working in a large
+application, you might walk in and
+
+43
+00:02:42,370 --> 00:02:43,730
+see a picture like this on the wall.
+
+44
+00:02:44,800 --> 00:02:49,130
+And you take a look, whoa, that's really
+important, that must be really complex!
+
+45
+00:02:50,208 --> 00:02:53,880
+And it, for this application,
+it probably represents
+
+46
+00:02:53,880 --> 00:02:58,250
+years of clever engineering to make
+sure that the application runs well.
+
+47
+00:02:58,250 --> 00:03:00,794
+But this is basically how this,
+I don't know what it is,
+
+48
+00:03:00,794 --> 00:03:04,090
+open mecker medical records system,
+I just kind of borrowed the picture.
+
+49
+00:03:05,590 --> 00:03:07,705
+This is how the data is
+stored in its database.
+
+50
+00:03:07,705 --> 00:03:09,270
+And these things can be very complex and
+
+51
+00:03:09,270 --> 00:03:15,190
+the project I work on called Sakai,
+it's probably four times bigger than this.
+
+52
+00:03:15,190 --> 00:03:20,200
+But if you zoom in on it, which you can't,
+but it's just a table and
+
+53
+00:03:20,200 --> 00:03:22,830
+some columns and some connections.
+
+54
+00:03:22,830 --> 00:03:25,660
+And then, oh yeah, there's a table,
+well that one's kind of complex.
+
+55
+00:03:25,660 --> 00:03:30,390
+Here's a table, some columns, and
+two connections.
+
+56
+00:03:30,390 --> 00:03:34,740
+So, yes, it looks complex on the surface, but
+
+57
+00:03:34,740 --> 00:03:40,670
+ultimately we're just trying to figure out
+which tables we are going to make, what we're
+
+58
+00:03:40,670 --> 00:03:44,300
+going to put in those tables, and then how
+we're going to connect the tables together.
+
+59
+00:03:44,300 --> 00:03:48,650
+And the connections are the thing
+that make these things so powerful.
+
+60
+00:03:48,650 --> 00:03:51,060
+We could just put all these
+data in one file, but
+
+61
+00:03:51,060 --> 00:03:53,750
+then this thing would
+run like terribly slow.
+
+62
+00:03:53,750 --> 00:03:58,050
+And so the trade-off of thinking
+through how your data is going to look
+
+63
+00:03:58,050 --> 00:03:59,140
+is that when you're done, it's fast.
+
+64
+00:04:00,580 --> 00:04:04,210
+A lot of times we don't worry too much
+about how fast your program's going to run.
+
+65
+00:04:04,210 --> 00:04:05,910
+But when it comes to scanning data,
+
+66
+00:04:05,910 --> 00:04:08,670
+especially if it's a lot of data,
+you think about that a lot.
+
+67
+00:04:10,300 --> 00:04:13,850
+So the whole idea is to figure out
+the data that you need to represent,
+
+68
+00:04:13,850 --> 00:04:17,310
+and then drawing a picture, and
+then lines between those pictures, right?
+
+69
+00:04:17,310 --> 00:04:21,080
+And the basic rule that
+we're going to use is
+
+70
+00:04:21,080 --> 00:04:23,920
+don't put the same string data in twice.
+
+71
+00:04:23,920 --> 00:04:30,390
+So for example, if we have a column of
+something, don't put Chuck in twice.
+
+72
+00:04:30,390 --> 00:04:32,970
+So that's bad.
+
+73
+00:04:32,970 --> 00:04:36,579
+So if you have some column and you're
+replicating the same string data twice,
+
+74
+00:04:36,579 --> 00:04:37,462
+that's not good.
+
+75
+00:04:37,462 --> 00:04:40,102
+What you want to do is you want
+to make another table and
+
+76
+00:04:40,102 --> 00:04:42,922
+put a Chuck over here and
+give a number to Chuck like 1.
+
+77
+00:04:42,922 --> 00:04:47,511
+And then put 1, 1, so to indicate
+that something belongs to Chuck,
+
+78
+00:04:47,511 --> 00:04:52,740
+which means you're modeling data at a
+connection between one table and another.
+
+79
+00:04:52,740 --> 00:04:55,010
+We'll go through this
+in super great detail.
+
+80
+00:04:55,010 --> 00:04:58,400
+So the basic rule is don't put
+the same string data in twice,
+
+81
+00:04:58,400 --> 00:05:00,140
+use a relationship instead.
+
+82
+00:05:00,140 --> 00:05:02,964
+And the other thing is sort
+of like model the real world.
+
+83
+00:05:02,964 --> 00:05:06,754
+If you have users and tracks and
+Christmas tree farms and whatever,
+
+84
+00:05:06,754 --> 00:05:11,410
+you'll have a table for the Christmas tree
+farms and you'll have another table for
+
+85
+00:05:11,410 --> 00:05:15,420
+the Christmas tree types and
+you'll have another table for whatever.
+
+86
+00:05:15,420 --> 00:05:19,470
+And so often you're starting to
+sort of build an application and
+
+87
+00:05:19,470 --> 00:05:24,345
+so the application that our little company
+is going to build is an application
+
+88
+00:05:24,345 --> 00:05:26,650
+keeping track of audio.
+
+89
+00:05:26,650 --> 00:05:31,130
+Our company has decided that people
+don't use albums anymore and
+
+90
+00:05:31,130 --> 00:05:33,797
+aren't interested in
+buying whole CDs of music.
+
+91
+00:05:33,797 --> 00:05:37,100
+So we're going to sell music by the track.
+I think this is a great idea,
+
+92
+00:05:37,100 --> 00:05:40,010
+and I think we're all going to get
+rich with this little company.
+
+93
+00:05:40,010 --> 00:05:43,170
+And this is the user
+interface that I invented, or
+
+94
+00:05:43,170 --> 00:05:45,520
+I screenshotted from another vendor's.
+
+95
+00:05:45,520 --> 00:05:50,080
+But, whatever this is, we are going to
+this is the program we're going to build.
+
+96
+00:05:50,080 --> 00:05:52,970
+We're going to make a track-making thing.
+
+97
+00:05:52,970 --> 00:05:57,280
+Now, just looking at this user interface
+we see some problems right away.
+
+98
+00:05:57,280 --> 00:06:00,320
+And often, if you just try to
+turn this into a spreadsheet,
+
+99
+00:06:00,320 --> 00:06:02,370
+these things would become the problem.
+
+100
+00:06:02,370 --> 00:06:06,170
+And the problem has to do with
+replicated data in columns.
+
+101
+00:06:06,170 --> 00:06:09,400
+And so, it's like great, this is all cool,
+
+102
+00:06:09,400 --> 00:06:14,040
+until you have the same
+artist name in the columns.
+
+103
+00:06:14,040 --> 00:06:18,480
+That could be once or hundreds, because
+Black Sabbath has written hundreds and
+
+104
+00:06:18,480 --> 00:06:23,070
+hundreds of tracks, and then even in
+the album column, that's a problem.
+
+105
+00:06:23,070 --> 00:06:28,233
+And then it gets even worse when
+you're in the genre column,
+
+106
+00:06:28,233 --> 00:06:32,297
+you're putting the string
+in a zillion times.
+
+107
+00:06:32,297 --> 00:06:35,799
+And if you've been writing Python programs
+they kind of finish really fast, and
+
+108
+00:06:35,799 --> 00:06:38,426
+that's because the only assignments
+I've given you are tiny.
+
+109
+00:06:38,426 --> 00:06:41,760
+But when you're going to do a million or
+
+110
+00:06:41,760 --> 00:06:46,790
+a trillion things, the difference
+between metal and the number 2, 2,
+
+111
+00:06:46,790 --> 00:06:52,770
+2, 2, 2, to replicate this
+is actually very significant.
+
+112
+00:06:52,770 --> 00:06:58,270
+Because this isn't just a six, or five
+character string, this could be a very
+
+113
+00:06:58,270 --> 00:07:04,170
+long string, and so in your data you
+have to allow for very long strings.
+
+114
+00:07:04,170 --> 00:07:09,040
+And so these are the problems right there,
+all this replication.
+
+115
+00:07:09,040 --> 00:07:12,760
+Now it turns out that we have
+a user interface person in the room,
+
+116
+00:07:12,760 --> 00:07:16,950
+and the user interface person we say like,
+hi, we're a database expert.
+
+117
+00:07:16,950 --> 00:07:21,470
+We took a class online and we know that
+you're not supposed to replicate data and
+
+118
+00:07:21,470 --> 00:07:24,530
+the user interface person says, oh no.
+
+119
+00:07:24,530 --> 00:07:26,750
+This replicated data,
+we've done surveys and
+
+120
+00:07:26,750 --> 00:07:29,510
+that's exactly what the user wants to see.
+
+121
+00:07:31,000 --> 00:07:32,130
+And you can't argue with that.
+
+122
+00:07:32,130 --> 00:07:35,040
+If that's what the user wants to see,
+that's what they see.
+
+123
+00:07:36,190 --> 00:07:39,060
+But we still have to write
+an efficient application.
+
+124
+00:07:39,060 --> 00:07:42,970
+And so that's where we start going
+through a data modeling exercise.
+
+125
+00:07:42,970 --> 00:07:47,129
+Where we say, this is the kind of stuff we
+want to represent, and this is the kind of
+
+126
+00:07:47,129 --> 00:07:51,210
+user interface we want to support,
+how can we build a really good data model?
+
+127
+00:07:51,210 --> 00:07:54,360
+So it's not like you've got to change
+the user interface to make it good,
+
+128
+00:07:54,360 --> 00:07:58,670
+you change the data model then to
+represent the stuff we want, and
+
+129
+00:07:58,670 --> 00:08:03,580
+then construct it in a way that the user
+interface is exactly what the user wants.
+
+130
+00:08:04,720 --> 00:08:09,810
+So the idea is you look at the data
+that your application is going to look,
+
+131
+00:08:09,810 --> 00:08:11,050
+and we've got all these columns, and
+
+132
+00:08:11,050 --> 00:08:16,000
+you say is this column represent
+a thing in the real world?
+
+133
+00:08:16,000 --> 00:08:18,200
+Or is it just another
+attribute of a thing?
+
+134
+00:08:18,200 --> 00:08:22,970
+So there's like a thing and then
+attributes of the thing, or two things.
+
+135
+00:08:22,970 --> 00:08:27,455
+And so you've got to go across all of the
+columns, and so that's what we're going to
+
+136
+00:08:27,455 --> 00:08:30,660
+do, we are going to look at all
+the columns and we are arguing.
+
+137
+00:08:30,660 --> 00:08:35,240
+So right now imagine we're in a conference
+room, we're sitting around a table.
+
+138
+00:08:35,240 --> 00:08:38,550
+And we're going to draw this picture,
+and this picture looks like the thing,
+
+139
+00:08:38,550 --> 00:08:40,130
+it's got little boxes and lines, right?
+
+140
+00:08:40,130 --> 00:08:41,360
+We're going to draw a boxes and
+
+141
+00:08:41,360 --> 00:08:45,300
+lines picture, and
+we have a blank screen right now.
+
+142
+00:08:45,300 --> 00:08:51,000
+So the first question, actually, in these
+meetings is commonly where to start.
+
+143
+00:08:51,000 --> 00:08:54,587
+Because you've got a lot of stuff.
+In our example, it's really simple.
+
+144
+00:08:54,587 --> 00:08:58,250
+And it turns out that it's not so
+critical where you start.
+
+145
+00:08:58,250 --> 00:09:00,960
+Even if you start at the wrong place,
+eventually you're just going to have this web
+
+146
+00:09:00,960 --> 00:09:04,960
+of information, and it's all connected,
+and it'll all work out if you do it right.
+
+147
+00:09:04,960 --> 00:09:07,940
+But it does simplify the drawing of your
+picture if you start at the right place.
+
+148
+00:09:07,940 --> 00:09:12,580
+And so, the way I was taught, to start
+at the right place, was to think about
+
+149
+00:09:12,580 --> 00:09:17,010
+the thing that is the most
+essential to this application.
+
+150
+00:09:17,010 --> 00:09:20,796
+What is the one-sentence
+description of this application?
+
+151
+00:09:20,796 --> 00:09:26,087
+And in this application,
+it's a thing that manages tracks.
+
+152
+00:09:26,087 --> 00:09:29,844
+It's not an album-managing thing,
+it's not a artist-managing thing, or
+
+153
+00:09:29,844 --> 00:09:33,250
+a genre-managing thing,
+it's a track-managing thing.
+
+154
+00:09:33,250 --> 00:09:35,610
+And we kind of see that
+in our user interface.
+
+155
+00:09:35,610 --> 00:09:40,860
+We see that every line is a track.
+And so that makes it easy.
+
+156
+00:09:40,860 --> 00:09:44,490
+The first table we're going to
+build is the track table.
+
+157
+00:09:44,490 --> 00:09:48,793
+And once we build the track table, then we
+have to look at all the other things and
+
+158
+00:09:48,793 --> 00:09:52,005
+say, look, which of these
+things are themselves tables,
+
+159
+00:09:52,005 --> 00:09:55,046
+and which of these things
+are just attributes of track.
+
+160
+00:09:55,046 --> 00:09:58,049
+Okay? And so it turns out that
+things like numbers, and
+
+161
+00:09:58,049 --> 00:10:01,857
+like star is just a number, that's five,
+these are all fives,
+
+162
+00:10:01,857 --> 00:10:06,890
+apparently I only like stuff or hate it,
+and then this is the number of plays.
+
+163
+00:10:06,890 --> 00:10:11,592
+And so you go like oh, that's part of it,
+that's part of a track,
+
+164
+00:10:11,592 --> 00:10:13,410
+that's part of a track.
+
+165
+00:10:13,410 --> 00:10:17,040
+Well, and now we come to the three things
+that aren't part of tracks because they have
+
+166
+00:10:17,040 --> 00:10:20,838
+the replicated data, that's the red flag
+that says uh-uh, not part of a track.
+
+167
+00:10:20,838 --> 00:10:25,715
+So, somebody gets up to the board, grabs
+a piece of white board and they go like that's
+
+168
+00:10:25,715 --> 00:10:30,620
+our first table, it's a track table and
+its going to have a rating, length, and a count.
+
+169
+00:10:30,620 --> 00:10:34,440
+I guess there should be a title in
+there as well for this column here, so
+
+170
+00:10:34,440 --> 00:10:36,470
+we have a title field, title.
+
+171
+00:10:36,470 --> 00:10:39,810
+Okay, so now we're good, right?
+We've got that, right, we've got that.
+
+172
+00:10:39,810 --> 00:10:42,260
+The question is, what's connected to that?
+
+173
+00:10:43,280 --> 00:10:47,378
+Right? Well,what is the thing that's 
+the next thing to draw?
+
+174
+00:10:47,378 --> 00:10:52,557
+Well, tracks could be connected to
+artists, they could be connected
+
+175
+00:10:52,557 --> 00:10:57,960
+to albums, so let's just say,
+kind of albums have many tracks.
+
+176
+00:10:57,960 --> 00:11:01,258
+So, the next thing we're going to do
+is we're going to make an album table.
+
+177
+00:11:01,258 --> 00:11:04,750
+And we're going to say on our white board,
+we're just drawing on a board right now,
+
+178
+00:11:04,750 --> 00:11:06,190
+we're not writing code yet.
+
+179
+00:11:06,190 --> 00:11:11,490
+That tracks belong to albums and now it's
+kind of easy that what albums belong to,
+
+180
+00:11:11,490 --> 00:11:14,130
+well albums belong to like groups.
+
+181
+00:11:14,130 --> 00:11:17,120
+Now if you're a music expert you kind of
+understand that we're oversimplifying
+
+182
+00:11:17,120 --> 00:11:20,300
+things, and that's a fine argument to
+have when you're starting your company,
+
+183
+00:11:20,300 --> 00:11:23,580
+but we're going to pretend the world is
+simple, and that tracks belong to albums,
+
+184
+00:11:23,580 --> 00:11:25,190
+that belong to artists.
+
+185
+00:11:25,190 --> 00:11:27,360
+So we're almost done with our meeting.
+
+186
+00:11:27,360 --> 00:11:32,350
+So we got artists, albums, and tracks,
+
+187
+00:11:32,350 --> 00:11:33,050
+and we've drawn a picture.
+
+188
+00:11:33,050 --> 00:11:36,190
+And the question is,
+where does genre belong to?
+
+189
+00:11:36,190 --> 00:11:37,540
+What does genre connect to?
+
+190
+00:11:37,540 --> 00:11:42,550
+Does genre connect to an album?
+
+191
+00:11:42,550 --> 00:11:45,360
+Does genre connect to an artist?
+
+192
+00:11:45,360 --> 00:11:46,840
+Or does genre connect to a track?
+
+193
+00:11:48,890 --> 00:11:53,870
+Now you might want to go to your iTunes and
+go to a track and change its genre.
+
+194
+00:11:55,160 --> 00:11:57,640
+Change it to easy listening.
+
+195
+00:11:59,530 --> 00:12:05,440
+Now if the track was, I mean if
+the genre was connected to the artist,
+
+196
+00:12:05,440 --> 00:12:07,650
+I mean this is a album, sorry.
+
+197
+00:12:07,650 --> 00:12:12,307
+It means that it would then immediately
+change all those to easy listening
+
+198
+00:12:12,307 --> 00:12:16,900
+because that means that albums have
+an attribute of what their genre is.
+
+199
+00:12:16,900 --> 00:12:17,920
+If it was the same for
+
+200
+00:12:17,920 --> 00:12:21,838
+an artist, that means that all your AC/DC
+would be changed to easy listening.
+
+201
+00:12:21,838 --> 00:12:23,729
+And if it was an attribute of track,
+
+202
+00:12:23,729 --> 00:12:26,320
+only this one would be
+changed to easy listening.
+
+203
+00:12:26,320 --> 00:12:30,880
+So the question is, when you go into
+that system and you change one thing,
+
+204
+00:12:32,730 --> 00:12:37,110
+does it change all of these based
+on the album or the artist?
+
+205
+00:12:37,110 --> 00:12:39,790
+Well, you can pause and
+go ahead and do that but,
+
+206
+00:12:39,790 --> 00:12:45,500
+I'm going to tell you, it turns out if
+you change that it only changes one.
+
+207
+00:12:45,500 --> 00:12:49,520
+So that actually tells you,
+in the meeting we're arguing about this.
+
+208
+00:12:49,520 --> 00:12:51,490
+I think it should be here, and
+I think it should be here.
+
+209
+00:12:51,490 --> 00:12:52,280
+And then you say well but
+
+210
+00:12:52,280 --> 00:12:55,650
+if you do it this way,
+that means that it's going to change.
+
+211
+00:12:55,650 --> 00:12:57,180
+Then the UI person is like no, no, no,
+
+212
+00:12:57,180 --> 00:13:00,990
+we can't have it connect to the album
+because then our users will be so
+
+213
+00:13:00,990 --> 00:13:04,150
+mad at us and blah blah blah blah blah,
+and we wouldn't make a lot of money.
+
+214
+00:13:04,150 --> 00:13:06,800
+So when it's all said and
+done, you've argued through.
+
+215
+00:13:06,800 --> 00:13:10,950
+It took you a lot longer to argue this
+last bit, this was the hard part,
+
+216
+00:13:10,950 --> 00:13:16,130
+to say okay, genre belongs to track,
+it just does.
+
+217
+00:13:16,130 --> 00:13:18,560
+And this is a simple, trivial,
+
+218
+00:13:18,560 --> 00:13:23,872
+example of how the data model creates
+the features of the application.
+
+219
+00:13:23,872 --> 00:13:26,170
+So that when we started
+we saw this big picture,
+
+220
+00:13:26,170 --> 00:13:30,890
+that what's in the data model determines
+what the application is capable of doing.
+
+221
+00:13:31,920 --> 00:13:36,830
+And we have to get the data model right,
+so that it can all be very efficient.
+
+222
+00:13:36,830 --> 00:13:42,580
+So now that we've drawn this picture
+on the wall in our conference room,
+
+223
+00:13:42,580 --> 00:13:47,660
+at some point we have to map this into
+a database, into a database structure.
+
+224
+00:13:47,660 --> 00:13:51,190
+Okay? We're going to figure out
+how to actually map that
+
+225
+00:13:51,190 --> 00:13:55,330
+logical picture that we just
+drew into a physical picture
+
+226
+00:13:55,330 --> 00:13:57,990
+exactly how we're going to
+represent this in a database.

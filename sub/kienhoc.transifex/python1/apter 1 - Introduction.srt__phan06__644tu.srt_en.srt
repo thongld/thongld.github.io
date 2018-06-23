@@ -1,0 +1,433 @@
+471
+00:20:31,940 --> 00:20:36,250
+https://youtu.be/G721cooZXgs
+And, I just said all that, OK?
+
+472
+00:20:36,250 --> 00:20:40,410
+So then, the question is,
+where do you belong in this?
+
+473
+00:20:40,410 --> 00:20:41,670
+Where do programs live?
+
+474
+00:20:41,670 --> 00:20:43,060
+Where do we write?
+
+475
+00:20:43,060 --> 00:20:47,300
+And the answer is, we
+live in the memory, right?
+
+476
+00:20:47,300 --> 00:20:51,490
+What we do is, we put our
+programs into the memory,
+
+477
+00:20:51,490 --> 00:20:55,370
+and then the CPU pulls the
+programs out of the memory.
+
+478
+00:20:55,370 --> 00:20:58,600
+So we have to write our programs
+and put them into the memory.
+
+479
+00:20:58,600 --> 00:21:00,242
+When we start them
+and run them, we're
+
+480
+00:21:00,242 --> 00:21:01,700
+really loading them
+into the memory
+
+481
+00:21:01,700 --> 00:21:04,800
+so they can be fed
+rapidly to the CPU.
+
+482
+00:21:04,800 --> 00:21:06,970
+Now the computers
+don't really execute
+
+483
+00:21:06,970 --> 00:21:09,700
+Python, like, if x
+less than 3, print,
+
+484
+00:21:09,700 --> 00:21:11,500
+but that's what we
+tend to want to write.
+
+485
+00:21:11,500 --> 00:21:14,130
+Because what the computers
+really execute is this thing
+
+486
+00:21:14,130 --> 00:21:17,620
+called machine languages,
+which is a series of 0s and 1s
+
+487
+00:21:17,620 --> 00:21:19,590
+that pretty much
+translate directly
+
+488
+00:21:19,590 --> 00:21:21,010
+to what's on these pins.
+
+489
+00:21:21,010 --> 00:21:24,020
+There's voltages
+that go up and down.
+
+490
+00:21:24,020 --> 00:21:25,930
+That's called machine language.
+
+491
+00:21:25,930 --> 00:21:29,920
+Source code, like
+Python, is written
+
+492
+00:21:29,920 --> 00:21:31,300
+in a way that's most convenient.
+
+493
+00:21:31,300 --> 00:21:33,380
+Well, at least more convenient.
+
+494
+00:21:33,380 --> 00:21:36,780
+Machine language is what's most
+convenient for the hardware.
+
+495
+00:21:36,780 --> 00:21:39,380
+So we have to translate
+from source code
+
+496
+00:21:39,380 --> 00:21:40,270
+to machine language.
+
+497
+00:21:40,270 --> 00:21:42,820
+And that's what the Python
+program does for us.
+
+498
+00:21:42,820 --> 00:21:45,420
+We write in Python,
+and Python translates
+
+499
+00:21:45,420 --> 00:21:47,090
+to machine language for us.
+
+500
+00:21:47,090 --> 00:21:49,350
+So I got a couple of
+videos they give you
+
+501
+00:21:49,350 --> 00:21:52,680
+a sense of how this all works.
+
+502
+00:21:52,680 --> 00:21:55,549
+We'll start with CPU.
+
+503
+00:21:55,549 --> 00:21:57,090
+And what this is
+going to do, is this
+
+504
+00:21:57,090 --> 00:21:59,660
+is going to show you
+the intensity of how
+
+505
+00:21:59,660 --> 00:22:01,990
+much electricity--
+that thing that
+
+506
+00:22:01,990 --> 00:22:05,000
+gets hot inside your computer
+is this little guy right here.
+
+507
+00:22:05,000 --> 00:22:07,765
+And we're going to see in this
+video just how hot it can get.
+
+508
+00:22:07,765 --> 00:22:15,140
+
+509
+00:22:15,140 --> 00:22:17,189
+OK, so welcome back.
+
+510
+00:22:17,189 --> 00:22:18,980
+So the next thing I'm
+going to show you-- I
+
+511
+00:22:18,980 --> 00:22:21,260
+showed you a hard
+disk that didn't work,
+
+512
+00:22:21,260 --> 00:22:22,760
+but we're actually
+going to show you
+
+513
+00:22:22,760 --> 00:22:26,160
+real short video on
+how a hard disk works
+
+514
+00:22:26,160 --> 00:22:28,720
+that someone took the cover
+off and actually applied power
+
+515
+00:22:28,720 --> 00:22:29,350
+to it.
+
+516
+00:22:29,350 --> 00:22:30,808
+You don't want to
+do this yourself,
+
+517
+00:22:30,808 --> 00:22:32,310
+if you have a hard drive.
+
+518
+00:22:32,310 --> 00:22:35,780
+I've read, and some people
+say, that you can do it
+
+519
+00:22:35,780 --> 00:22:38,400
+for a few minutes
+and then the drive
+
+520
+00:22:38,400 --> 00:22:41,720
+destroys itself if you
+run it with the cover off.
+
+521
+00:22:41,720 --> 00:22:42,940
+So let's take a look at this.
+
+522
+00:22:42,940 --> 00:22:53,300
+
+523
+00:22:53,300 --> 00:23:00,600
+OK, so now we're going to talk
+a little bit about Python.
+
+524
+00:23:00,600 --> 00:23:02,820
+Python is a
+programming language.
+
+525
+00:23:02,820 --> 00:23:06,870
+Python is a way
+that we communicate.
+
+526
+00:23:06,870 --> 00:23:09,400
+Now, Python wasn't
+invented by computers.
+
+527
+00:23:09,400 --> 00:23:12,980
+We invented Python,
+as humans, as a way
+
+528
+00:23:12,980 --> 00:23:14,960
+to encapsulate our instructions.
+
+529
+00:23:14,960 --> 00:23:17,560
+There's lots of different
+programming languages-- Python,
+
+530
+00:23:17,560 --> 00:23:21,194
+JavaScript C++, tons of them.
+
+531
+00:23:21,194 --> 00:23:22,610
+Python is just one
+of them that we
+
+532
+00:23:22,610 --> 00:23:26,140
+happen to teach in this class.
+
+533
+00:23:26,140 --> 00:23:28,640
+Now, I'll start with a little
+Harry Potter reference.
+
+534
+00:23:28,640 --> 00:23:31,410
+Parseltongue is the language
+of serpents and those
+
+535
+00:23:31,410 --> 00:23:33,720
+who converse with them.
+
+536
+00:23:33,720 --> 00:23:35,810
+An individual who can
+speak Parseltongue
+
+537
+00:23:35,810 --> 00:23:37,220
+is known as a Parselmouth.
+
+538
+00:23:37,220 --> 00:23:40,470
+And it's a very uncommon skill
+and maybe even hereditary.
+
+539
+00:23:40,470 --> 00:23:42,540
+Nearly all known
+Parselmouth are descended
+
+540
+00:23:42,540 --> 00:23:44,690
+from Salazar Slytherin.
+
+541
+00:23:44,690 --> 00:23:47,100
+There's our Harry
+Potter reference.
+
+542
+00:23:47,100 --> 00:23:50,640
+Python is the language
+of the Python interpreter
+
+543
+00:23:50,640 --> 00:23:52,750
+and those who can
+converse with it.
+
+544
+00:23:52,750 --> 00:23:55,130
+We are going to converse
+with the inside of a computer
+
+545
+00:23:55,130 --> 00:23:56,320
+pretty soon.
+
+546
+00:23:56,320 --> 00:23:58,040
+An individual who
+can speak Python,
+
+547
+00:23:58,040 --> 00:24:00,080
+is known as a Pythonista.
+
+548
+00:24:00,080 --> 00:24:03,520
+It is an uncommon skill
+and may be hereditary.
+
+549
+00:24:03,520 --> 00:24:05,210
+May not be hereditary, too.
+
+550
+00:24:05,210 --> 00:24:08,630
+Nearly all known Pythonistas
+use software initially developed
+
+551
+00:24:08,630 --> 00:24:10,720
+by Guido van Rossum.
+
+552
+00:24:10,720 --> 00:24:13,250
+Guido van Rossum,
+this guy right here.
+
+553
+00:24:13,250 --> 00:24:15,354
+Yo, Guido, what's up?
+
+554
+00:24:15,354 --> 00:24:16,520
+Let's put a mustache on him.
+
+555
+00:24:16,520 --> 00:24:17,950
+Yo, Guido.
+
+556
+00:24:17,950 --> 00:24:18,460
+Sorry.
+
+557
+00:24:18,460 --> 00:24:19,810
+I should be nice to him.
+
+558
+00:24:19,810 --> 00:24:21,320
+He is the inventor of Python.
+
+559
+00:24:21,320 --> 00:24:23,660
+Python's over 20 years old.
+
+560
+00:24:23,660 --> 00:24:27,000
+He invented it to make
+it an easy language,
+
+561
+00:24:27,000 --> 00:24:28,500
+but was both easy and powerful.
+
+562
+00:24:28,500 --> 00:24:30,350
+And that's why it's
+a great language
+
+563
+00:24:30,350 --> 00:24:32,780
+to start your learning with.
+
+564
+00:24:32,780 --> 00:24:34,530
+It's a powerful
+language, but it's also
+

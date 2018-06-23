@@ -1,0 +1,528 @@
+1
+00:00:00,729 --> 00:00:06,219
+Xin chào, Vsauce đây. Tôi là Michael. Steve Seitz
+
+2
+00:00:06,219 --> 00:00:11,250
+và Chuck Dyer đã dùng kĩ thuật morphing 
+để phân tích một khía cạnh về bức tranh nàng Mona Lisa
+
+3
+00:00:11,250 --> 00:00:14,660
+mà ta chưa từng biết đến trước đó.
+Sẽ ra sao nếu Mona Lisa 
+
+4
+00:00:14,660 --> 00:00:18,740
+nhìn thẳng vào chúng ta. Cũng là nàng ấy nhưng hẳn có chút gì đó
+
+5
+00:00:18,739 --> 00:00:22,129
+là lạ. Ý tôi là chỉ có một góc nhìn đặc trưng 
+
+6
+00:00:22,129 --> 00:00:26,198
+của nàng Mona Lisa. Chỉ có một bức tranh thực 
+
+7
+00:00:26,199 --> 00:00:29,400
+để bạn có thể nói là mình đã tận mắt nhìn thấy bức tranh.
+
+8
+00:00:29,399 --> 00:00:33,100
+Có các ảnh chụp.
+Cũng có các bản sao mà bạn có thể xem qua.
+
+9
+00:00:33,100 --> 00:00:36,160
+Có các bản nhái, chế nhưng 
+
+10
+00:00:36,159 --> 00:00:39,968
+bức Mona Lisa nguyên bản là ở Louvre. 
+Đây là nơi đó. 
+
+11
+00:00:39,969 --> 00:00:43,429
+Nhưng video này là ở đâu?
+
+12
+00:00:45,520 --> 00:00:46,540
+Hỏi một cách nghiêm túc, 
+
+13
+00:00:46,549 --> 00:00:49,570
+video này là ở đâu?
+
+14
+00:00:49,570 --> 00:00:52,628
+Ý tôi là bây giờ video này đang ở trên màn hình của bạn nhưng 
+nó cũng có ở trên
+
+15
+00:00:52,628 --> 00:00:55,679
+nhiều màn hình khác. Video gốc là ở đâu?
+
+16
+00:00:55,679 --> 00:00:59,948
+Nó được lưu trữ trên các server YouTube
+và bản xuất gốc nằm trên ổ đĩa cứng của tôi
+
+17
+00:00:59,948 --> 00:01:03,039
+nhưng đó chỉ là những chỉ dẫn cách làm video. 
+
+18
+00:01:03,039 --> 00:01:07,439
+Video này có ở khắp mọi nơi.
+
+19
+00:01:07,438 --> 00:01:11,908
+Như Bill Thompson nói, mỗi dữ liệu, mỗi lượt xem video là
+
+20
+00:01:11,909 --> 00:01:16,669
+"một bản sao kĩ thuật số của thứ gì đó không có bản gốc"
+
+21
+00:01:18,819 --> 00:01:23,539
+Vậy bằng cách nào mà người quản lí bảo tàng 
+hay nhà khảo cổ học giải quyết vấn đề này?
+
+22
+00:01:23,549 --> 00:01:26,570
+Họ xét lại việc quản lí các tài nguyên số.
+
+23
+00:01:26,569 --> 00:01:29,669
+Hãy nhìn bức điêu khắc này. 
+
+24
+00:01:29,670 --> 00:01:32,850
+"Khoảng cách từ câu này đến mắt bạn
+
+25
+00:01:32,849 --> 00:01:36,339
+làm thành bức điêu khắc của tôi." Nghe có vẻ hay ho nhưng
+
+26
+00:01:36,340 --> 00:01:41,100
+làm sao bạn có thể đặt những thứ đại loại như vậy 
+trong một bảo tàng? Bức điêu khắc và video này có thể
+
+27
+00:01:41,109 --> 00:01:44,478
+được copy không giới hạn và mỗi phiên bản lại
+được làm từ 
+
+28
+00:01:44,478 --> 00:01:47,978
+những cách khác nhau tại những thời điểm khác nhau,
+cũng khá giống với cơ thể bạn.
+
+29
+00:01:47,978 --> 00:01:53,109
+Có một rắc rối về nhận dạng.
+Như tôi đã đề cập trước đó,
+
+30
+00:01:53,109 --> 00:01:56,890
+cứ mỗi vài năm thì hầu hết 
+các nguyên tử trong cơ thể chúng ta sẽ được thay thế.
+
+31
+00:01:56,890 --> 00:02:00,709
+Những nguyên tử cũ bị loại thải, những cái mới được thêm vào.
+Đâu là cơ thể nguyên thủy
+
+32
+00:02:01,780 --> 00:02:03,239
+của bạn?
+
+33
+00:02:03,239 --> 00:02:09,318
+Giống như video này, bạn thực ra chỉ là kết quả 
+của một chuỗi các chỉ dẫn 
+
+34
+00:02:09,318 --> 00:02:13,169
+được thực thi. Thú vị là trong trường hợp của chúng ta, 
+
+35
+00:02:13,169 --> 00:02:18,729
+những chỉ dẫn này chỉ là dạng nhái. 'The $12 Million Stuffed Shark'
+
+36
+00:02:18,729 --> 00:02:22,598
+làm một cuốn sách hay về thế giới hội họa. 
+Nó nói rằng, có thời điểm, 
+
+37
+00:02:22,598 --> 00:02:26,389
+có 600 tranh của Rembrandt được trưng bày ở bảo tàng,
+
+38
+00:02:26,389 --> 00:02:29,769
+350 tranh của Rembrandt trong
+những bộ sưu tập cá nhân.
+
+39
+00:02:29,770 --> 00:02:34,900
+Vấn đề là ở chỗ các học giả Rambrandt nói rằng
+ông chỉ vẽ có 
+
+40
+00:02:34,900 --> 00:02:39,280
+320 bức họa mà thôi. Những bức mạo danh,
+
+41
+00:02:39,280 --> 00:02:43,348
+nhái và giả mạo vẫn được lưu truyền bấy lâu nay.
+
+42
+00:02:43,348 --> 00:02:48,030
+Năm 1496, Michelangelo, người đã vẽ bức tranh này,
+
+43
+00:02:48,030 --> 00:02:53,300
+dã làm giả một bức tượng. Ông ấy sử dụng acid 
+để làm bức tượng không trông giống 
+
+44
+00:02:53,300 --> 00:02:56,280
+tác phẩm của chính ông mà giống 
+tác phẩm Hy Lạp hay La Mã cổ đại,
+
+45
+00:02:56,280 --> 00:03:02,280
+để có thể bán được nhiều tiền hơn.
+Nhưng thực ra, có vấn đề gì với bức tượng giả này?
+
+46
+00:03:02,280 --> 00:03:06,459
+Ý tôi là ủng hộ tác phẩm nhái 
+cũng giống như ủng hộ việc đạo văn nhưng
+
+47
+00:03:06,459 --> 00:03:10,830
+khi mỹ học nội tại phát triển thì đâu mới là sự khác biệt?
+
+48
+00:03:10,830 --> 00:03:16,180
+Nếu không được vẽ bởi Da Vinci mà là một chú chó hoặc 
+được copy hoàn hảo bởi một robot
+
+49
+00:03:16,180 --> 00:03:20,349
+thì nụ cười nàng Mona Lisa có ảo diệu và 
+
+50
+00:03:20,348 --> 00:03:23,658
+tinh tế đến thế? Vấn đề là ở đây.
+
+51
+00:03:23,658 --> 00:03:28,120
+Chúng ta có cảm giác là bản gốc, bức Mona Lisa mà Da Vinci đã vẽ
+
+52
+00:03:28,120 --> 00:03:31,860
+có điều tiếng của nó. Như Richard Wiseman đã nói đến
+
+53
+00:03:31,860 --> 00:03:36,750
+trong Quirkology - một cuốn sách hay - 
+nhà tâm lí Paul Rosen đã có nghiên cứu cho thấy
+
+54
+00:03:36,750 --> 00:03:38,259
+ta bị chi phối bởi điều tiếng nhiều đến dường nào,
+
+55
+00:03:38,259 --> 00:03:42,439
+vật trở nên quan trọng phần lớn là bởi điều tiếng quanh nó. 
+Ông phát hiện ra rằng người ta
+
+56
+00:03:42,439 --> 00:03:44,340
+sẵn sàng mặc một cái áo len
+
+57
+00:03:44,340 --> 00:03:48,569
+bị rớt vào phân chó còn hơn là mặc cái áo được cho là
+
+58
+00:03:48,568 --> 00:03:49,389
+đã từng là của
+
+59
+00:03:49,389 --> 00:03:53,649
+một tên giết người hàng loạt.
+
+60
+00:03:53,650 --> 00:03:59,129
+Tôi đang ở Mougin. Thành phố đông nam nước Pháp nơi PIcasso 
+
+61
+00:03:59,128 --> 00:04:03,688
+đã qua đời. Có lần, Picasso đã từ chối kí một bức vẽ
+
+62
+00:04:03,688 --> 00:04:08,370
+mà ông biết là mình đã vẽ và nói rằng 
+"Tôi có thể vẽ một bức tranh PIcasso nhái như bất kì ai."
+
+63
+00:04:08,370 --> 00:04:11,480
+Bạn có thể chối bỏ bức tranh của chính mình 
+
+64
+00:04:11,479 --> 00:04:16,620
+và bạn có thể chối bỏ con của mình
+nhưng bạn có thể khẳng định đã tạo ra những bức vẽ của mình,
+
+65
+00:04:16,620 --> 00:04:19,639
+nhưng liệu bạn có thể khẳng định đã tạo ra 
+
+66
+00:04:19,639 --> 00:04:21,718
+con của mình?
+
+67
+00:04:21,720 --> 00:04:26,960
+Hãy xem qua một phép ẩn dụ. 
+Mẹ của bạn là một máy in 3D in ra bạn. 
+
+68
+00:04:26,970 --> 00:04:30,340
+Ba mẹ bạn tạo ra bạn,
+
+69
+00:04:30,339 --> 00:04:34,859
+chăm nom, lo lắng cho bạn. Nhưng những cấu trúc 
+làm nên bạn
+
+70
+00:04:34,860 --> 00:04:38,270
+lại nằm ngoài tầm kiểm soát của họ.
+
+71
+00:04:38,269 --> 00:04:41,448
+Cấu trúc của bạn là một bản sao.
+
+72
+00:04:41,449 --> 00:04:45,680
+Nó được copy, sao chép theo thời gian,
+kể từ khi nhóm phân tử đầu tiên
+
+73
+00:04:45,680 --> 00:04:49,269
+được sắp xếp để sao chép một cách tự động
+
+74
+00:04:49,269 --> 00:04:54,000
+hàng tỉ tỉ năm trước. 
+Đó không phải là một bản sao hoàn hảo.
+
+75
+00:04:54,000 --> 00:04:57,639
+Có những sai khác, làm cho những bản copy liên tiếp
+có chút khác biệt.
+
+76
+00:04:57,639 --> 00:05:00,650
+Nhưng 99,9% ADN của bạn
+
+77
+00:05:00,649 --> 00:05:04,060
+không khác gì với những người khác.
+
+78
+00:05:04,060 --> 00:05:07,740
+Nhưng bạn có thể cho là, 
+này Michael, chúng ta nhìn khác nhau mà.
+
+79
+00:05:07,740 --> 00:05:10,769
+Đại loại vậy. Nhưng đó cũng là vì não bạn 
+
+80
+00:05:10,769 --> 00:05:15,219
+đặc biệt giỏi việc nhận diện những khác biệt giữa 
+những thứ
+
+81
+00:05:15,220 --> 00:05:16,259
+quen thuộc với bạn.
+
+82
+00:05:16,259 --> 00:05:19,550
+Hiện tượng này là hiệu ứng vượt chủng tộc và
+đó là lí do
+
+83
+00:05:19,550 --> 00:05:24,120
+những cặp sinh đôi mới mà bạn chưa từng gặp trước đây 
+lại trông giống nhau hoàn toàn, cho tới khi bạn quen nhìn họ.
+
+84
+00:05:24,120 --> 00:05:27,930
+Đó là lí do những người đến từ một nền văn hóa xa lạ với bạn
+
+85
+00:05:27,930 --> 00:05:31,959
+lại rất khó phân biệt. Cũng là lí do tại sao một bầy chó đen
+
+86
+00:05:31,959 --> 00:05:32,959
+bạn chưa từng thấy trước đó
+
+87
+00:05:32,959 --> 00:05:35,989
+lại trông không có gì khác biệt.
+
+88
+00:05:35,990 --> 00:05:40,788
+Tất cả chúng ta đều có chung một tổ tiên, 
+một người cho ta thừa hưởng ADN
+
+89
+00:05:40,788 --> 00:05:42,240
+hết đời này đến đời khác, 
+
+90
+00:05:42,240 --> 00:05:46,560
+làm chúng ta trở thành một nhóm những bản sao. 
+
+91
+00:05:46,560 --> 00:05:49,910
+Quay trở lại 50 bản sao trước,
+
+92
+00:05:49,910 --> 00:05:54,479
+thế hệ trước, thời gian đủ để liên kết tất cả con người trên Trái Đất.
+
+93
+00:05:54,478 --> 00:05:58,228
+Như tôi đã nói, bạn ít nhất cũng là họ hàng đời thứ 50 
+
+94
+00:05:58,228 --> 00:06:02,500
+với những người khác trên hành tinh ngày nay.
+Nhưng ta có thể có họ hàng xa hơn thế,
+
+95
+00:06:02,500 --> 00:06:06,899
+như Guy Murchie đã nói. Số lượng động vật
+và thậm chí cả
+
+96
+00:06:06,899 --> 00:06:10,109
+số lượng phân tử, cũng trải qua quá trình sao chép
+
+97
+00:06:10,110 --> 00:06:13,430
+và áp lực chọn lọc,
+
+98
+00:06:13,430 --> 00:06:17,160
+bạn chính là họ hàng thứ nghìn tỉ với tất cả sự sống
+
+99
+00:06:17,160 --> 00:06:20,400
+trên Trái Đất, và trên lý thuyết mà nói, bạn là họ hàng thứ triệu tỉ
+
+100
+00:06:20,399 --> 00:06:24,489
+với nước, cây và đất đá.
+
+101
+00:06:24,490 --> 00:06:28,120
+Có một khái niệm hay nhưng mới mẻ.
+
+102
+00:06:28,120 --> 00:06:31,399
+Từ 'human' (con người) có nguồn gốc từ một từ có nghĩa là đất.
+
+103
+00:06:31,399 --> 00:06:36,539
+So sánh với tiếng Do thái cho từ 'ground' (đất)
+với tên gọi cho người đầu tiên.
+
+104
+00:06:37,769 --> 00:06:41,349
+Bạn chính là họ hàng thứ triệu tỉ với cát bụi,
+
+105
+00:06:41,350 --> 00:06:46,039
+đất đá, cây cối, đồ nhựa, quần áo mà bạn đang mặc.
+
+106
+00:06:46,038 --> 00:06:50,089
+Nên dẫu bạn có đánh nhau với 
+một người lạ mặt trong quán bar
+
+107
+00:06:50,089 --> 00:06:53,568
+ hay vấp chân vào đá thì 
+
+108
+00:06:53,569 --> 00:06:55,968
+tất cả cũng chỉ là những va chạm 
+của người trong nhà mà thôi.
+
+109
+00:06:55,968 --> 00:06:57,409
+Và như mọi khi,
+
+110
+00:06:57,410 --> 00:06:59,270
+cảm ơn đã theo dõi.
+
+111
+00:07:03,709 --> 00:07:06,959
+Này, bạn vẫn còn đó chứ. 
+Thật tuyệt vì tôi có 
+
+112
+00:07:06,959 --> 00:07:10,870
+một vài tin rất tuyệt đây.
+Vsauce vừa được đề cử giải Webby 
+
+113
+00:07:10,870 --> 00:07:14,250
+cho hạng mục tin tức và thông tin.
+Đó là một vinh dự lớn
+
+114
+00:07:14,250 --> 00:07:17,478
+và tôi muốn cám ơn các bạn 
+vì đã giúp tạo nên thành công đó.
+
+115
+00:07:17,478 --> 00:07:21,629
+Bạn có thể trở thành một Vsaucer theo cách hoàn toàn mới
+bằng cách bình chọn cho Vsauce
+
+116
+00:07:21,629 --> 00:07:22,759
+trên Webby. Hãy follow 
+
+117
+00:07:22,759 --> 00:07:26,759
+link ở đầu phần mô tả của video này. 
+Cũng xin nói là tất cả các kênh được đề cử
+
+118
+00:07:26,759 --> 00:07:30,729
+đều rất tuyệt. Thật tuyệt khi chúng ta có những kênh này, 
+nên hãy ghé qua tất cả nhé.
+
+119
+00:07:30,728 --> 00:07:32,088
+Và như mọi khi, 
+
+120
+00:07:32,088 --> 00:07:34,088
+cảm ơn đã theo dõi. 
+

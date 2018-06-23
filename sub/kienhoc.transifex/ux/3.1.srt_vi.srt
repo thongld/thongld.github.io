@@ -1,0 +1,1395 @@
+0
+00:00:09,006 --> 00:00:10,850
+Giang Na 9/1/2017
+https://youtu.be/3zXNgJ6HNFU
+xin chào, tôi tên là Stanley
+
+1
+00:00:10,850 --> 00:00:14,370
+trong video này, tôi sẽ lấy ví dụ 
+
+2
+00:00:14,370 --> 00:00:17,970
+về cách tiến hành thử nghiệm tính hữu dụng vi mô trên website mua bán xe hơi
+
+3
+00:00:19,650 --> 00:00:22,430
+mục tiêu của thử nghiệm này
+
+4
+00:00:22,430 --> 00:00:27,150
+là kiểm tra tính hiệu quả của các công việc khác nhau mà người dùng thực hiện trên 1 trang web
+
+5
+00:00:27,150 --> 00:00:30,520
+và để biết công việc nào hiệu quả và công việc nào không
+
+6
+00:00:31,540 --> 00:00:35,340
+trong thử nghiệm này, tôi sẽ tập trung vào 3 công việc
+
+7
+00:00:35,340 --> 00:00:40,880
+tìm hiểu về xe hơi, xác định ngân sách và so sánh xe hơi
+
+8
+00:00:40,880 --> 00:00:43,720
+tôi đã nhờ một người chưa từng sử dụng trang web trước đây
+
+9
+00:00:43,720 --> 00:00:46,040
+tham gia vào thử nghiệm này
+
+10
+00:00:46,040 --> 00:00:49,530
+tôi đã soạn sẵn bản thảo để bạn có thể biết giá của sản phẩm
+
+11
+00:00:49,530 --> 00:00:54,860
+nếu bạn muốn tự theo dõi
+
+12
+00:00:54,860 --> 00:00:57,640
+xin chào, tôi là Stanley, hân hạnh được gặp bạn
+
+13
+00:00:57,640 --> 00:01:00,080
+cảm ơn bạn đã tham gia, hôm nay bạn cảm thấy thế nào?
+
+14
+00:01:00,080 --> 00:01:01,000
+tôi khỏe
+
+15
+00:01:01,000 --> 00:01:06,160
+được rồi, hôm nay tôi muốn bạn giúp chúng tôi
+
+16
+00:01:06,160 --> 00:01:12,330
+hiểu rõ về cách trang web tìm xe hơi này giúp mọi người tìm hiểu và tìm được xe hơi ưng ý
+
+17
+00:01:12,330 --> 00:01:16,590
+tôi muốn bạn thực hiện một số công việc, sử dụng trang web này
+
+18
+00:01:16,590 --> 00:01:18,510
+và chúng tôi sẽ thu thập phản hồi
+
+19
+00:01:18,510 --> 00:01:22,420
+đặc biệt, chúng tôi muốn biết suy nghĩ của bạn về trang web
+
+20
+00:01:22,420 --> 00:01:25,460
+và nó hoạt động tốt ở điểm nào và không tốt ở điểm nào
+
+21
+00:01:25,460 --> 00:01:27,090
+đối với bạn, được không?
+
+22
+00:01:27,090 --> 00:01:27,620
+OK
+
+23
+00:01:27,620 --> 00:01:33,060
+trước khi bắt đầu, chúng tôi muốn bạn nắm được một số điều như sau
+
+24
+00:01:33,060 --> 00:01:36,450
+đầu tiên là chúng tôi đang thử nghiệm trang web chứ không phải thử nghiệm bạn
+
+25
+00:01:36,450 --> 00:01:38,250
+không có điều gì bạn có thể làm sai ca
+
+26
+00:01:38,250 --> 00:01:41,250
+đừng lo lắng nếu có sai sót gì
+
+27
+00:01:41,250 --> 00:01:45,060
+và cũng đừng lo nếu bạn không làm được điều gì đó
+
+28
+00:01:45,060 --> 00:01:49,260
+hay nếu bạn nghĩ có gì đó không ổn
+
+29
+00:01:49,260 --> 00:01:53,080
+hay mơ hồ, thì đó là lỗi hệ thống chứ không phải lỗi của bạn
+
+30
+00:01:53,080 --> 00:01:53,930
+được rồi
+
+31
+00:01:53,930 --> 00:01:56,940
+và hãy cho chúng tôi biết chính xác những gì bạn nghĩ về trang web
+
+32
+00:01:56,940 --> 00:01:59,680
+bạn có thể nói thật, đừng ngại ngùng
+
+33
+00:01:59,680 --> 00:02:01,550
+vì đó là lý do tại sao chúng ta có mặt ở đây hôm nay
+
+34
+00:02:01,550 --> 00:02:04,430
+là để biết trang web không hiệu quả ở chỗ nào
+
+35
+00:02:05,580 --> 00:02:09,060
+tôi sẽ nói cho bạn biết những việc cần làm
+
+36
+00:02:09,060 --> 00:02:12,540
+sau khi bạn bắt đầu, hãy tập trung vào công việc
+
+37
+00:02:12,540 --> 00:02:15,730
+có thể tôi sẽ hỏi bạn một số câu hỏi trong quá trình thử nghiệm
+
+38
+00:02:15,730 --> 00:02:19,840
+bạn cũng có thể hỏi tôi, nhưng có thể tôi sẽ không trả lời hết các câu hỏi được
+
+39
+00:02:21,670 --> 00:02:25,660
+vì chúng tôi muốn quan sát xem người dùng sẽ làm gì nếu không có ai
+
+40
+00:02:25,660 --> 00:02:26,610
+ngồi bên cạnh
+
+41
+00:02:26,610 --> 00:02:30,060
+nhưng nếu sau khi thử nghiệm bạn vẫn có điều thắc mắc
+
+42
+00:02:30,060 --> 00:02:33,880
+tôi nghĩ mình có thể giải đáp những thắc mắc đó
+
+43
+00:02:33,880 --> 00:02:34,950
+và khi tiến hành
+
+44
+00:02:34,950 --> 00:02:39,350
+tôi sẽ yêu cầu bạn nghĩ lớn, vì đây là yếu tố quan trong của thử nghiệm
+
+45
+00:02:39,350 --> 00:02:44,850
+nghĩa là bạn phải nói to lên để chúng tôi biết
+
+46
+00:02:44,850 --> 00:02:48,312
+chẳng hạn khi bạn đang quan sát, tập trung thực hiện công việc
+
+47
+00:02:48,312 --> 00:02:52,166
+bạn đang nghĩ gì và tại sao bạn suy nghĩ và hành động như vậy?
+
+48
+00:02:52,166 --> 00:02:57,690
+và nếu bạn không biết cách hoàn thành một công việc, và bạn nghĩ mình bị kẹt
+
+49
+00:02:57,690 --> 00:02:59,790
+hãy nói với tôi, ta có thể chuyển sang công việc tiếp ttheo
+
+50
+00:03:00,980 --> 00:03:04,260
+với mỗi công việc được giao
+
+51
+00:03:04,260 --> 00:03:07,340
+hãy nói với tôi, tôi xong rồi, khi bạn đã hoàn thành
+
+52
+00:03:07,340 --> 00:03:08,002
+được không?
+
+53
+00:03:08,002 --> 00:03:11,810
+bạn có ý kiến hay thắc mắc gì trước khi bắt đầu không?
+
+54
+00:03:11,810 --> 00:03:15,590
+không, tôi đã sẵn sàng
+tốt lắm, cảm ơn bạn
+
+55
+00:03:15,590 --> 00:03:18,350
+tôi sẽ hỏi bạn một vài câu hỏi trước khi thử nghiệm
+
+56
+00:03:20,360 --> 00:03:23,090
+đầu tiên, bạn làm nghề gì?
+
+57
+00:03:23,090 --> 00:03:24,070
+tôi là sinh viên
+
+58
+00:03:24,070 --> 00:03:25,410
+bạn là sinh viên à
+
+59
+00:03:25,410 --> 00:03:28,390
+OK. bạn nghĩ bạn dành ra khoảng bao nhiêu tiếng
+
+60
+00:03:28,390 --> 00:03:32,591
+lên mạng như email, nhắn tin, v.v...?
+
+61
+00:03:32,591 --> 00:03:34,660
+mỗi tuần hay mỗi ngày?
+
+62
+00:03:34,660 --> 00:03:37,230
+mỗi ngày hay mỗi tuần?
+
+63
+00:03:37,230 --> 00:03:39,310
+thông thường, tôi phải đi học 
+
+64
+00:03:39,310 --> 00:03:43,425
+hoặc đi làm, có thể là 7 hoặc 8 tiếng/ ngày
+
+65
+00:03:43,425 --> 00:03:46,890
+OK, bạn có hay mua đồ qua mạng không?
+
+66
+00:03:48,790 --> 00:03:50,025
+có thể là 1 lần/ tuần
+
+67
+00:03:50,025 --> 00:03:51,620
+1 lần/ tuần?
+
+68
+00:03:51,620 --> 00:03:54,080
+thế bạn thường sản phẩm gì qua mạng?
+
+69
+00:03:56,130 --> 00:03:58,990
+đồ gia dụng, quần áo, tương tự thế
+
+70
+00:03:58,990 --> 00:04:03,890
+Ok, có những trang web nào bạn thường mua?
+
+71
+00:04:03,890 --> 00:04:04,882
+tôi thường mua trên Amazon
+
+72
+00:04:04,882 --> 00:04:07,210
+OK, Amazon
+
+73
+00:04:07,210 --> 00:04:10,780
+bây giờ tôi sẽ hỏi về kinh nghiệm mua phương tiện đi lại
+
+74
+00:04:10,780 --> 00:04:12,620
+bạn đã từng sở hữu bao nhiêu chiếc xe hơi rồi?
+
+75
+00:04:13,850 --> 00:04:14,880
+chưa từng
+
+76
+00:04:14,880 --> 00:04:15,440
+chưa từng
+
+77
+00:04:15,440 --> 00:04:19,750
+vậy bạn đã tìm kiếm xe hơi trên mạng bao nhiêu lần rồi?
+
+78
+00:04:19,750 --> 00:04:22,241
+có thể rất ít, 2 hay 3 lần gì đó
+
+79
+00:04:22,241 --> 00:04:24,970
+một vài lần, OK
+
+80
+00:04:24,970 --> 00:04:29,460
+bạn nghĩ bạn quan tâm đến tiêu chí nào khi mua phương tiện?
+
+81
+00:04:31,120 --> 00:04:37,281
+có thể là độ an toàn, giá thành, có thể là cước phí
+
+82
+00:04:37,281 --> 00:04:38,527
+cước phí của xe
+
+83
+00:04:38,527 --> 00:04:41,120
+bạn nghĩ tiêu chí nào quan trọng nhất?
+
+84
+00:04:42,270 --> 00:04:46,309
+ có thể là cước phí
+
+85
+00:04:46,309 --> 00:04:47,188
+cước phí
+
+86
+00:04:47,188 --> 00:04:47,688
+Ok
+
+87
+00:04:49,780 --> 00:04:50,760
+câu hỏi cuối cùng
+
+88
+00:04:50,760 --> 00:04:54,660
+bạn nghĩ bạn có thể đi được bao xa để mua xe hơi?
+
+89
+00:04:58,930 --> 00:05:00,070
+có thể là 30 dặm
+
+90
+00:05:00,070 --> 00:05:01,160
+OK, 30 dặm
+
+91
+00:05:01,160 --> 00:05:08,319
+OK, bây giờ tôi sẽ yêu cầu bạn làm một số công việc cụ thể
+
+92
+00:05:09,820 --> 00:05:16,600
+tôi sẽ đọc to từng công việc, đây là bản copy để bạn đối chiếu
+
+93
+00:05:16,600 --> 00:05:21,590
+tôi xin nhắc lại là bạn sẽ giúp chúng tôi rấ nhiều nếu bạn nghĩ lớn
+
+94
+00:05:21,590 --> 00:05:25,370
+sau đây là công việc thứ 1
+
+95
+00:05:26,780 --> 00:05:31,310
+một thành viên gia đình bạn yêu cầu bạn tìm cho cô ấy một chiếc xe hơi
+
+96
+00:05:31,310 --> 00:05:33,130
+bạn tìm thấy trang web này
+
+97
+00:05:33,130 --> 00:05:37,060
+vì cô ấy rất bận nên không có thời gian để tìm
+
+98
+00:05:37,060 --> 00:05:41,770
+cô ấy muốn mua một chiếc xe đã qua sử dụng, cụ thể là hơn 3 năm
+
+99
+00:05:43,070 --> 00:05:44,905
+dùng hộp số tự động 
+
+100
+00:05:44,905 --> 00:05:51,800
+có giá dưới 20 nghìn đô la, có thể màu xám, trắng hoặc đen
+
+101
+00:05:51,800 --> 00:05:54,060
+cô ấy cũng không muốn đi quá xa
+
+102
+00:05:54,060 --> 00:06:00,470
+và chiếc xe càng rẻ càng tốt
+
+103
+00:06:00,470 --> 00:06:03,920
+bạn tìm được 2 chiếc dựa trên yêu cầu đó
+
+104
+00:06:03,920 --> 00:06:05,650
+bây giờ bạn có thể bắt đầu
+
+105
+00:06:05,650 --> 00:06:06,150
+OK
+
+106
+00:06:07,340 --> 00:06:09,480
+tôi đang nhìn trên website
+
+107
+00:06:09,480 --> 00:06:13,170
+tôi thấy có lựa chọn tìm kiếm ngay đây
+
+108
+00:06:13,170 --> 00:06:19,320
+chỉ dẫn rằng, tìm kiếm tất cả xe đã sử dụng và xe mới
+
+109
+00:06:20,430 --> 00:06:23,220
+cô ấy không nhắc đến loại xe mà cô ấy thích
+
+110
+00:06:24,380 --> 00:06:28,040
+tôi sẽ chọn 1 nhãn hiệu
+
+111
+00:06:33,130 --> 00:06:36,519
+tôi không biết nhiều về các nhãn hiệu xe hơi khác nhau
+
+112
+00:06:36,519 --> 00:06:39,110
+nên tôi sẽ chọn 1 nhãn hiệu tôi đã từng nghe
+
+113
+00:06:43,290 --> 00:06:45,514
+cô ấy bảo dưới 20 nghìn đô
+
+114
+00:06:47,370 --> 00:06:52,230
+tôi không nghĩ cô ấy nói gì về số dặm
+
+115
+00:06:52,230 --> 00:06:54,070
+nhưng cô ấy muốn gần
+
+116
+00:06:54,070 --> 00:06:55,807
+nên tôi sẽ ghi mã vùng lại
+
+117
+00:06:59,177 --> 00:07:00,438
+OK, tôi sẽ tìm
+
+118
+00:07:08,193 --> 00:07:15,325
+tôi thấy những thứ mà tôi đang tìm kiếm ở đây, tôi kéo xuống và thấy một số lựa chọn
+
+119
+00:07:17,948 --> 00:07:22,671
+phù hợp với yêu cầu nhưng lại ở mức giá đắt nhất
+
+120
+00:07:22,671 --> 00:07:27,290
+nên tôi sẽ tìm tiếp để xem có chiếc nào rẻ hơn không
+
+121
+00:07:27,290 --> 00:07:29,180
+nhưng lại không có ở trang đầu
+
+122
+00:07:30,700 --> 00:07:36,250
+tôi sẽ xem liệu có thể thay đổi giá
+
+123
+00:07:36,250 --> 00:07:39,472
+hay cách mà tôi nhìn vào gía
+
+124
+00:07:42,706 --> 00:07:48,661
+tôi sẽ để nguyên những cái này, nhưng có thể thay đổi cái này
+
+125
+00:07:48,661 --> 00:07:50,479
+giá thì khá là ổn
+
+126
+00:07:57,817 --> 00:07:58,700
+OK
+
+127
+00:07:58,700 --> 00:07:59,380
+những chiếc xe này có rẻ hơn một chút
+
+128
+00:08:06,401 --> 00:08:11,771
+cô ấy có một số yêu cầu khác, như hộp số tự động
+
+129
+00:08:13,900 --> 00:08:18,040
+nên tôi sẽ thử tìm xem có xe như thế không
+
+130
+00:08:20,000 --> 00:08:20,500
+OK
+
+131
+00:08:22,860 --> 00:08:29,002
+tôi chọn cái này, rồi làm tương tự để tìm màu cô ấy thích
+
+132
+00:08:37,416 --> 00:08:42,606
+OK, xám
+
+133
+00:08:42,606 --> 00:08:47,801
+đen và trắng
+
+134
+00:08:47,801 --> 00:08:48,530
+OK
+
+135
+00:08:57,930 --> 00:09:04,032
+bây giờ tôi đã giới hạn được những cái nào tốt
+
+136
+00:09:07,515 --> 00:09:09,205
+cái đầu tiên có vẻ được
+
+137
+00:09:18,535 --> 00:09:20,462
+nhưng lại rất xa
+
+138
+00:09:20,462 --> 00:09:23,097
+ở tận San Diego
+
+139
+00:09:24,509 --> 00:09:26,230
+vậy bây giờ chúng ta sẽ tìm kiếm tiêu chí nào?
+
+140
+00:09:26,230 --> 00:09:29,640
+tôi sẽ tìm một vài tiêu chí tôi vừa nghĩ đến
+
+141
+00:09:29,640 --> 00:09:30,470
+ở đây có một bức hình
+
+142
+00:09:31,760 --> 00:09:34,950
+và nó cho biết chiếc xe ở San Diego
+
+143
+00:09:35,960 --> 00:09:39,300
+thật lạ lùng vì tôi nghĩ tôi đã đánh mã vùng vào phần tìm kiếm rồi
+
+144
+00:09:39,300 --> 00:09:41,673
+nên tôi sẽ quay lại
+
+145
+00:09:44,068 --> 00:09:46,568
+đúng vậy, những chiếc này thực sự rất xa
+
+146
+00:09:49,679 --> 00:09:51,419
+tôi sẽ tìm ở đây
+
+147
+00:09:57,498 --> 00:09:59,549
+ở đây sẽ tốt hơn
+
+148
+00:09:59,549 --> 00:10:00,911
+chiếc này ở rất gần
+
+149
+00:10:00,911 --> 00:10:06,817
+được đấy
+
+150
+00:10:06,817 --> 00:10:13,243
+chiếc này trông có vẻ được và cũng ở rất gần
+
+151
+00:10:13,243 --> 00:10:18,063
+tôi chọn chiếc này
+
+152
+00:10:18,063 --> 00:10:23,802
+được rồi, 1 chiếc nữa
+
+153
+00:10:30,106 --> 00:10:32,715
+chiếc này cũng được và cũng gần
+
+154
+00:10:37,397 --> 00:10:40,785
+vậy tôi nghĩ tôi sẽ đưa ra cho cô ấy 2 lựa chọn này
+
+155
+00:10:40,785 --> 00:10:42,034
+được rồi
+
+156
+00:10:42,034 --> 00:10:45,468
+OK, tôi đã hoàn thành
+
+157
+00:10:45,468 --> 00:10:46,249
+OK
+
+158
+00:10:46,249 --> 00:10:51,330
+bây giờ là công việc thứ 2
+
+159
+00:10:51,330 --> 00:10:54,150
+bây giờ bạn đang đi chợ xe để mua xe hơi mới
+
+160
+00:10:54,150 --> 00:10:57,760
+và bạn đã tiết kiệm được 4 nghìn đô
+
+161
+00:10:57,760 --> 00:11:02,480
+để đặt cọc và bạn xác định mình có thể trả tiền xe theo tháng
+
+162
+00:11:03,560 --> 00:11:08,840
+tối đa là 400 đô trong vòng 5 năm, mua xe trả góp
+
+163
+00:11:08,840 --> 00:11:13,870
+hãy xác định giá cao nhất bạn có thể tự chi trả cho chiếc xe hơi mới?
+
+164
+00:11:13,870 --> 00:11:17,350
+Ok
+
+165
+00:11:17,350 --> 00:11:21,619
+tôi sẽ vào đây, tìm xe hơi đang rao bán
+
+166
+00:11:21,619 --> 00:11:29,207
+tôi sẽ chọn để xem những chiếc xe hơi mới
+
+167
+00:11:31,420 --> 00:11:33,369
+OK, xe hơi mới
+
+168
+00:11:42,410 --> 00:11:49,180
+tôi không biết giá như thế nào là được
+
+169
+00:11:49,180 --> 00:11:51,970
+như tiền đặt cọc hay khoản tiền tôi sẽ trả hàng tháng
+
+170
+00:11:54,330 --> 00:11:57,450
+xem nào, có thể nếu tôi click vào một chiếc xe, tôi sẽ thấy những thông tin đó
+
+171
+00:12:12,093 --> 00:12:17,989
+OK, ước tính số tiền phải trả, có thể sẽ giúp ích
+
+172
+00:12:19,350 --> 00:12:20,678
+tôi sẽ chọn vào đây
+
+173
+00:12:20,678 --> 00:12:22,383
+OK
+
+174
+00:12:30,665 --> 00:12:31,720
+5 tháng đúng không?
+
+175
+00:12:31,720 --> 00:12:32,730
+hay 5 năm?
+
+176
+00:12:32,730 --> 00:12:33,296
+tôi nghĩ thế
+
+177
+00:12:33,296 --> 00:12:39,415
+[CƯỜI] OK, tôi nghĩ chiếc xe sẽ tàm này tiền
+
+178
+00:12:39,415 --> 00:12:42,200
+Mm-hm
+
+179
+00:12:42,200 --> 00:12:44,060
+nhưng tôi không chắc có thể tìm được
+
+180
+00:12:44,060 --> 00:12:46,530
+chiếc nào phù hợp với tiêu chí đó
+
+181
+00:12:46,530 --> 00:12:50,970
+tôi sẽ quan sát hết toàn bộ
+
+182
+00:12:50,970 --> 00:12:53,310
+và chọn một chiếc tôi thích và xem tôi có thể mua hay không
+
+183
+00:12:55,240 --> 00:12:56,470
+OK
+
+184
+00:12:56,470 --> 00:12:59,240
+tiếp tục tôi sẽ chọn địa điểm gần tôi
+
+185
+00:13:02,830 --> 00:13:09,562
+nó sẽ hiện ra danh sách xe mới khi tìm kiếm
+
+186
+00:13:09,562 --> 00:13:13,251
+tôi nghĩ tôi sẽ kiểm tra xem còn lựa chọn nào khác không
+
+187
+00:13:25,112 --> 00:13:27,040
+thế bạn sẽ tìm kiếm tiêu chí nào nữa?
+
+188
+00:13:28,430 --> 00:13:31,340
+tôi sẽ xem qua những kết quả này
+
+189
+00:13:31,340 --> 00:13:36,120
+nhưng tôi không biết làm sao để lọc kế quả này để tìm được chiếc ưng ý
+
+190
+00:13:39,610 --> 00:13:44,567
+như kiểu tôi muốn hạn chế kết quả dựa trên cước phí
+
+191
+00:13:44,567 --> 00:13:47,268
+hay tương tự thế
+
+192
+00:13:49,259 --> 00:13:52,810
+tôi không thấy lựa chọn nào kiểu thế
+
+193
+00:13:52,810 --> 00:13:54,030
+có thể là đây
+
+194
+00:13:58,082 --> 00:14:01,717
+tôi không thấy lựa chọn nào như thế
+
+195
+00:14:01,717 --> 00:14:06,778
+do đó, có rất nhiều kết quả và tôi không biết chọn cái nào
+
+196
+00:14:06,778 --> 00:14:13,484
+[CƯỜI] OK
+
+197
+00:14:13,484 --> 00:14:18,600
+tôi nghĩ là tôi sẽ chọn cái này
+
+198
+00:14:18,600 --> 00:14:20,174
+để xem tôi có mua nổi không đã
+
+199
+00:14:25,419 --> 00:14:28,350
+OK, tôi nghĩ nó vẫn nằm trong ngưỡng giá tôi mua được
+
+200
+00:14:28,350 --> 00:14:31,980
+tôi sẽ chọn chiếc này
+
+201
+00:14:31,980 --> 00:14:36,183
+OK, thế mức giá tối đa bạn có thể mua được là bao nhiêu?
+
+202
+00:14:38,935 --> 00:14:39,927
+ý bạn là sao?
+
+203
+00:14:41,870 --> 00:14:42,556
+à
+
+204
+00:14:42,556 --> 00:14:45,818
+có thể là khoảng 20 nghìn đô, có thể là thấp hơn một chút
+
+205
+00:14:45,818 --> 00:14:47,860
+được rồi
+
+206
+00:14:47,860 --> 00:14:52,430
+đây là công việc cuối cùng mà tôi muốn bạn làm
+
+207
+00:14:52,430 --> 00:14:59,130
+bạn muốn mua chiếc xe hơi dùng trang web này và phù hợp túi tiền của bạn
+
+208
+00:14:59,130 --> 00:15:03,480
+bạn có các tiêu chí riêng của mình, như giá cả, diện mạo, động cơ
+
+209
+00:15:03,480 --> 00:15:04,775
+hay bất cứ thứ gì bạn quan tâm
+
+210
+00:15:04,775 --> 00:15:08,680
+bây giờ ta trở lại trang chủ
+
+211
+00:15:08,680 --> 00:15:13,060
+và dùng các tiêu chí của mình để tìm ra ít nhất 2 chiếc bạn thích
+
+212
+00:15:13,060 --> 00:15:16,130
+và đưa vào 1 danh sách để có thể so sánh
+
+213
+00:15:16,130 --> 00:15:17,080
+được chứ?
+
+214
+00:15:17,080 --> 00:15:17,580
+OK
+
+215
+00:15:19,320 --> 00:15:20,490
+tôi sẽ mua một chiếc xe hơi mới
+
+216
+00:15:20,490 --> 00:15:25,577
+tôi sẽ chọn nhãn hiệu, và phải gần chỗ tôi
+
+217
+00:15:25,577 --> 00:15:30,281
+và tôi có các mức giá giới hạn như trước
+
+218
+00:15:34,889 --> 00:15:36,004
+để xem nào
+
+219
+00:15:38,959 --> 00:15:41,630
+tôi muốn chiếc xe vừa ra đời cách đây không lâu
+
+220
+00:15:41,630 --> 00:15:45,230
+là một chiếc xe mới
+
+221
+00:15:45,230 --> 00:15:46,823
+và
+
+222
+00:15:48,890 --> 00:15:50,733
+một số yếu tố khác nữa
+
+223
+00:15:54,899 --> 00:15:59,900
+tôi thích chiếc xe nhỏ
+
+224
+00:16:04,753 --> 00:16:08,800
+tôi nghĩ màu này được
+
+225
+00:16:12,772 --> 00:16:14,355
+vậy là không có quá nhiều lựa chọn
+
+226
+00:16:14,355 --> 00:16:16,831
+bây giờ tôi sẽ xem qua các lựa chọn
+
+227
+00:16:16,831 --> 00:16:19,991
+chiếc này trông đẹp mà cũng gần tôi
+
+228
+00:16:21,650 --> 00:16:28,163
+tôi sẽ click vào đây
+
+229
+00:16:28,163 --> 00:16:34,202
+để xem thêm thông tin
+
+230
+00:16:44,769 --> 00:16:46,785
+đọc hết các thông tin chi tiết
+
+231
+00:16:46,785 --> 00:16:48,710
+chiếc này có vẻ được đấy
+
+232
+00:16:48,710 --> 00:16:53,060
+tôi sẽ xem có cách nào để lưu nó tại trang web hay không
+
+233
+00:16:58,173 --> 00:17:01,214
+được rồi, đã lưu
+
+234
+00:17:01,214 --> 00:17:05,474
+quay lại với kết quả tìm kiếm
+
+235
+00:17:13,594 --> 00:17:15,096
+và xem chiếc này
+
+236
+00:17:20,098 --> 00:17:21,910
+tôi sẽ đọc lại thông tin
+
+237
+00:17:24,545 --> 00:17:26,489
+chiếc này cũng tương tự chiếc kia
+
+238
+00:17:26,489 --> 00:17:30,575
+vậy bạn đang tìm kiếm thông tin gì?
+
+239
+00:17:30,575 --> 00:17:33,960
+có đặc điểm nào cụ thể không?
+
+240
+00:17:35,240 --> 00:17:38,860
+tôi nghĩ tôi sẽ đọc hết thông tin vì có thể sẽ có thông tin nào đấy mà tôi thích
+
+241
+00:17:38,860 --> 00:17:41,180
+OK. tất cả đều được
+
+242
+00:17:41,180 --> 00:17:43,800
+tôi nghĩ nó cũng tương tự như chiếc tôi đã chọn
+
+243
+00:17:43,800 --> 00:17:45,060
+nên tôi nghĩ là được
+
+244
+00:17:45,060 --> 00:17:46,420
+tôi sẽ lưu tiếp chiếc này vào
+
+245
+00:17:47,700 --> 00:17:50,945
+tôi nghĩ nếu tôi click vào đây thì sẽ có cả 2 chiếc
+
+246
+00:17:50,945 --> 00:17:52,040
+mm-hm
+
+247
+00:17:52,040 --> 00:17:52,840
+đúng rồi
+
+248
+00:17:52,840 --> 00:17:55,720
+OK, tôi đã hoàn thành
+
+249
+00:17:55,720 --> 00:17:56,820
+OK
+
+250
+00:17:56,820 --> 00:17:57,620
+tuyệt vời
+
+251
+00:17:57,620 --> 00:18:05,370
+cảm ơn bạn đã phản hồi và tôi đã rút ra nhiều điều từ quá trình thực hiện của bạn
+
+252
+00:18:05,370 --> 00:18:08,575
+tôi sẽ gói gọn lại thành một vài câu hỏi nhanh
+
+253
+00:18:08,575 --> 00:18:09,100
+mm-hm
+
+254
+00:18:09,100 --> 00:18:13,390
+ấn tượng chung của bạn về trang này là gì?
+
+255
+00:18:13,390 --> 00:18:14,610
+rất hữu ích
+
+256
+00:18:14,610 --> 00:18:16,940
+tôi nghĩ tôi đã có trải nghiệm tuyệt vời
+
+257
+00:18:16,940 --> 00:18:17,900
+OK
+
+258
+00:18:17,900 --> 00:18:23,130
+cụ thể hơn, bạn thấy ở trang web có phần nào khó
+
+259
+00:18:23,130 --> 00:18:26,880
+hay dễ dùng khi bạn thực hiện những công việc này không?
+
+260
+00:18:26,880 --> 00:18:29,700
+tôi thấy khó ở trang tìm kiếm
+
+261
+00:18:29,700 --> 00:18:33,250
+vì tôi cảm giác như tôi không thể tìm thấy những thứ tôi cần
+
+262
+00:18:33,250 --> 00:18:38,130
+tôi không chắc nó có được thiết kế theo hướng dễ dùng
+
+263
+00:18:38,130 --> 00:18:40,475
+và tôi phải click vào để xem thêm nhiều lựa chọn
+
+264
+00:18:40,475 --> 00:18:41,120
+mm-hm
+
+265
+00:18:41,120 --> 00:18:42,600
+tôi thấy là rất nhiều
+
+266
+00:18:42,600 --> 00:18:49,265
+tôi nghĩ đấy là vấn đề lớn nhất tôi gặp phải khi dùng trang web này
+
+267
+00:18:49,265 --> 00:18:50,160
+mm-hm
+
+268
+00:18:50,160 --> 00:18:52,340
+câu hỏi của bạn có phần thứ 2 không?
+
+269
+00:18:52,340 --> 00:18:53,628
+hay chỉ vậy?
+
+270
+00:18:53,628 --> 00:18:58,753
+có chứ, trang web có đặc điểm cụ thể nào 
+
+271
+00:18:58,753 --> 00:19:03,786
+mà bạn thấy mơ hồ khiến bạn không hiểu không?
+
+272
+00:19:07,817 --> 00:19:09,318
+xem nào
+
+273
+00:19:14,358 --> 00:19:15,890
+tôi nghĩ là không
+
+274
+00:19:15,890 --> 00:19:18,250
+tôi nghĩ tôi đã nghĩ kỹ rồi
+
+275
+00:19:18,250 --> 00:19:18,980
+OK
+
+276
+00:19:18,980 --> 00:19:25,460
+tôi để ý thấy bạn chưa từng click vào thanh công cụ tìm kiếm
+
+277
+00:19:25,460 --> 00:19:32,708
+có lý do cụ thể nào mà bạn không click vào đó không?
+
+278
+00:19:32,708 --> 00:19:36,650
+tôi cảm thấy ở đấy chẳng có gì thực sự liên quan đến cái tôi đang làm
+
+279
+00:19:36,650 --> 00:19:37,240
+OK
+
+280
+00:19:37,240 --> 00:19:40,730
+có thể là Buy có liên quan, nhưng tôi nghĩ nếu tôi click vào đó, tôi sẽ quay trở lại 
+
+281
+00:19:40,730 --> 00:19:43,870
+trang chủ, nơi tôi có thể xem tất cả các lựa chọn mua hàng
+
+282
+00:19:43,870 --> 00:19:45,450
+OK, vậy nên tôi cảm thấy thanh công cụ đó
+
+283
+00:19:45,450 --> 00:19:46,350
+không thực sự hữu ích
+
+284
+00:19:46,350 --> 00:19:48,766
+OK, bạn có muốn thử lựa chọn Buy không?
+
+285
+00:19:48,766 --> 00:19:50,507
+được
+
+286
+00:19:50,507 --> 00:19:54,950
+bạn nghĩ sẽ thấy những gì?
+
+287
+00:19:56,870 --> 00:19:58,006
+thanh tiện ích
+
+288
+00:19:58,006 --> 00:20:02,050
+tôi nghĩ có nhiều cách khác nhau
+
+289
+00:20:02,050 --> 00:20:06,720
+để mua xe vì có thể bạn muốn mua xe cũ, hoặc xe mới
+
+290
+00:20:06,720 --> 00:20:09,970
+nhưng nó cho thấy rất nhiều lựa chọn khác nhau mà tôi không nghĩ đến
+
+291
+00:20:09,970 --> 00:20:11,666
+tôi chưa từng thấy cái này trước đây
+
+292
+00:20:11,666 --> 00:20:14,160
+[CƯỜI] OK
+
+293
+00:20:14,160 --> 00:20:18,054
+bạn có nhận xét 
+
+294
+00:20:18,054 --> 00:20:23,306
+hay câu hỏi nào liên quan đến công việc hay trang web không?
+
+295
+00:20:23,306 --> 00:20:24,387
+không
+
+296
+00:20:24,387 --> 00:20:29,120
+OK, một lần nữa cảm ơn bạn rất nhiều vì đã dành thời gian tham gia
+
+297
+00:20:29,120 --> 00:20:34,780
+nếu bạn có câu hỏi hay ý tưởng nào khác trên đường về nhà
+
+298
+00:20:34,780 --> 00:20:36,480
+hãy liên lạc với tôi và cho tôi biết, được chứ?
+
+299
+00:20:36,480 --> 00:20:37,030
+OK. cảm ơn bạn
+
+300
+00:20:37,030 --> 00:20:37,530
+cảm ơn
+
+301
+00:20:39,679 --> 00:20:42,960
+vậy là bạn đã theo dõi một thử nghiệm tính khả dụng vi mô
+
+302
+00:20:42,960 --> 00:20:45,560
+bạn có thấy có vấn đề gì về tính khả dụng không?
+
+303
+00:20:45,560 --> 00:20:48,240
+bạn có thể dừng video và nghĩ về những vấn đề bạn thấy
+
+304
+00:20:48,240 --> 00:20:49,870
+tôi sẽ cho bạn biết danh sách những vấn đề của tôi sau
+
+305
+00:20:51,460 --> 00:20:52,110
+OK
+
+306
+00:20:52,110 --> 00:20:56,640
+nhìn chung, người dùng đã hoàn thành tất cả các công việc mà không gặp quá nhiều khó khăn
+
+307
+00:20:56,640 --> 00:21:00,420
+nhưng vẫn có một số vấn đề về tính khả dụng mà trang web có thể khắc phục
+
+308
+00:21:00,420 --> 00:21:03,410
+để trang web trở nên hiệu quả hơn với người dùng
+
+309
+00:21:03,410 --> 00:21:05,680
+tôi sẽ lấy một số ví dụ
+
+310
+00:21:07,170 --> 00:21:09,670
+thứ 1, mối liên quan giữa mua
+
+311
+00:21:09,670 --> 00:21:13,490
+và ước tính chi phí không rõ ràng với người dùng
+
+312
+00:21:13,490 --> 00:21:18,280
+trong video, bạn có thể thấy người dùng không có ý định dùng nút mua
+
+313
+00:21:19,610 --> 00:21:22,530
+và đã rất ngạc nhiên khi thấy nút ước tình chi phí
+
+314
+00:21:23,670 --> 00:21:27,260
+khi tôi bảo cô ấy click vào nút đó sau khi xong công việc
+
+315
+00:21:27,260 --> 00:21:30,500
+nên tôi nghĩ trang web này nên để nút đó
+
+316
+00:21:30,500 --> 00:21:32,940
+vào vị trí dễ nhìn trên giao diện
+
+317
+00:21:32,940 --> 00:21:35,500
+thay vì để nó vào nút mua
+
+318
+00:21:35,500 --> 00:21:38,440
+vì nhiều người dùng gặp khó khăn khi kết nối cả 2
+
+319
+00:21:40,460 --> 00:21:45,130
+thứ 2, mặc dù người dùng không nhận ra rằng họ chọn all miles
+
+320
+00:21:45,130 --> 00:21:50,340
+khi họ chọn mã vùng, mà sau đó sẽ không lọc ra danh sách xe hơi dựa trên vị trí
+
+321
+00:21:50,340 --> 00:21:54,702
+trang web nên cho người dùng thấy những chiếc xe mà họ cần
+
+322
+00:21:54,702 --> 00:21:58,170
+mà trong trường hợp này là gần chỗ họ
+
+323
+00:21:59,330 --> 00:22:03,110
+điều này đặc biệt quan trọng, vì người dùng đã nhập mã vùng rồi
+
+324
+00:22:03,110 --> 00:22:07,633
+nghĩa là, cô ấy không muốn xem những chiếc xe quá xa chỗ cô ở
+
+325
+00:22:09,587 --> 00:22:12,180
+và đây là một kết quả mà người dùng thấy
+
+326
+00:22:12,180 --> 00:22:17,170
+bạn có thể thấy rằng người dùng khá ngạc nhiên
+
+327
+00:22:17,170 --> 00:22:23,300
+khi cô ấy thấy chiếc xe ở California trong khi cô nhập mã vùng ở Michigan
+
+328
+00:22:23,300 --> 00:22:27,040
+nên người dùng sẽ phải mất công lựa chọn
+
+329
+00:22:29,660 --> 00:22:32,010
+lại khoảng cách ở đây
+
+330
+00:22:34,120 --> 00:22:37,430
+thêm nữa, người dùng thấy một danh sách xe hơi dài
+
+331
+00:22:37,430 --> 00:22:41,690
+và có vẻ cô ấy không thể chọn ra những chiếc mình thích
+
+332
+00:22:41,690 --> 00:22:46,250
+và cô ấy cũng đã đề cập trong phần kết luận
+
+333
+00:22:46,250 --> 00:22:48,250
+việc bạn cố gắng thử các nút lựa chọn
+
+334
+00:22:49,400 --> 00:22:53,480
+là một minh chứng cho thấy cô ấy đang tìm kiếm một thứ gì khác
+
+335
+00:22:53,480 --> 00:22:57,640
+không có sẵn hoặc không xuất hiện trên giao diện
+
+336
+00:23:00,010 --> 00:23:04,806
+ví dụ cuối cùng tôi muốn nói đến là thông báo đẩy xuất hiện trên màn hình
+
+337
+00:23:04,806 --> 00:23:07,069
+yêu cầu đăng ký khi người dùng lưu chiếc xe vào
+
+338
+00:23:09,518 --> 00:23:10,740
+ta sẽ thử
+
+339
+00:23:12,690 --> 00:23:15,610
+thông báo đẩy làm gián đoạn công việc
+
+340
+00:23:15,610 --> 00:23:21,650
+và không nên xuất hiện lần nữa sau khi người dùng đã đóng lại
+
+341
+00:23:21,650 --> 00:23:25,850
+vì khi đó người dùng chỉ đơn thuần là không muốn đăng ký, ít nhất là ngay lúc đó
+
+342
+00:23:27,350 --> 00:23:28,720
+OK, tôi sẽ dừng ở đây
+
+343
+00:23:28,720 --> 00:23:31,430
+nhưng tôi chắc chắn bạn sẽ thấy nhiều vấn đề hơn nữa
+
+344
+00:23:31,430 --> 00:23:35,260
+mục tiêu của video này là hướng dẫn cách để bạn thực hiện
+
+345
+00:23:35,260 --> 00:23:40,130
+một thử nghiệm tính khả dụng vi mô để nhận phản hồi của người dùng
+
+346
+00:23:40,130 --> 00:23:42,047
+và tìm ra vấn đề nhanh chóng
+
+347
+00:23:42,047 --> 00:23:45,780
+bạn sẽ thấy nhiều vấn đề hơn trong thử nghiệm thật của bạn
+

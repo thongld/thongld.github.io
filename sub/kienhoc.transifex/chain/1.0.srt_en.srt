@@ -1,0 +1,676 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/fGkJv2whx1w
+
+1
+00:00:00,500 --> 00:00:03,017
+Welcome to SC1X Supply Chain Fundamentals.
+
+2
+00:00:03,017 --> 00:00:04,850
+And so what we're going to do in this course
+
+3
+00:00:04,850 --> 00:00:07,590
+is apply all of the techniques and methodologies
+
+4
+00:00:07,590 --> 00:00:09,330
+that you've learned previously.
+
+5
+00:00:09,330 --> 00:00:12,480
+Now recall what we started with the supply chain is that it's
+
+6
+00:00:12,480 --> 00:00:14,550
+all about managing flows.
+
+7
+00:00:14,550 --> 00:00:16,600
+You have a customer and a supplier.
+
+8
+00:00:16,600 --> 00:00:21,380
+And so you can think about the flow of information
+
+9
+00:00:21,380 --> 00:00:23,840
+where someone places an order, and then you've
+
+10
+00:00:23,840 --> 00:00:27,490
+got that physical flow that comes back
+
+11
+00:00:27,490 --> 00:00:30,220
+of the actual product itself.
+
+12
+00:00:30,220 --> 00:00:33,950
+And then hopefully, you get paid.
+
+13
+00:00:33,950 --> 00:00:36,640
+And so there's some money or financial transaction.
+
+14
+00:00:36,640 --> 00:00:39,260
+And now also there is some information
+
+15
+00:00:39,260 --> 00:00:41,324
+in between for these different exchanges.
+
+16
+00:00:41,324 --> 00:00:42,740
+And so in this course, we're going
+
+17
+00:00:42,740 --> 00:00:46,640
+to focus primarily, not exclusively, but primarily
+
+18
+00:00:46,640 --> 00:00:48,266
+on this physical flow.
+
+19
+00:00:48,266 --> 00:00:50,390
+Because we're dealing with the logistics of things,
+
+20
+00:00:50,390 --> 00:00:52,370
+the flow of materials.
+
+21
+00:00:52,370 --> 00:00:54,500
+Now this is the simple view of it.
+
+22
+00:00:54,500 --> 00:00:56,330
+But we all know that there's actually
+
+23
+00:00:56,330 --> 00:00:59,280
+a lot of interaction in your whole supply chain.
+
+24
+00:00:59,280 --> 00:01:02,480
+So if this is you, you have your suppliers
+
+25
+00:01:02,480 --> 00:01:05,069
+that are giving you product, and they, in turn,
+
+26
+00:01:05,069 --> 00:01:07,690
+have their own suppliers.
+
+27
+00:01:07,690 --> 00:01:09,850
+And then you have your customers.
+
+28
+00:01:09,850 --> 00:01:12,130
+And then they distribute their product down.
+
+29
+00:01:12,130 --> 00:01:14,620
+And you have this nice complicated supply chain
+
+30
+00:01:14,620 --> 00:01:18,850
+or supply web that you've got to control or manage or operate
+
+31
+00:01:18,850 --> 00:01:19,750
+within.
+
+32
+00:01:19,750 --> 00:01:22,690
+And so everything we're going to do in this course deals
+
+33
+00:01:22,690 --> 00:01:25,134
+with how you manage this complex operation.
+
+34
+00:01:25,134 --> 00:01:26,550
+We'll start with something simple,
+
+35
+00:01:26,550 --> 00:01:28,974
+but we'll try to make it more and more realistic.
+
+36
+00:01:28,974 --> 00:01:30,640
+And what we're going to function on here
+
+37
+00:01:30,640 --> 00:01:34,310
+is-- what we're going to work on are three areas, forecasting,
+
+38
+00:01:34,310 --> 00:01:36,280
+inventory, and transportation.
+
+39
+00:01:36,280 --> 00:01:38,830
+These are the things that we're going to work on.
+
+40
+00:01:38,830 --> 00:01:41,230
+Now, the key word that we have across all
+
+41
+00:01:41,230 --> 00:01:45,160
+of the topics that we will talk in this course
+
+42
+00:01:45,160 --> 00:01:46,721
+is the word trade-off.
+
+43
+00:01:46,721 --> 00:01:49,350
+
+
+44
+00:01:49,350 --> 00:01:51,470
+And so everything we do in this course
+
+45
+00:01:51,470 --> 00:01:53,150
+is a series of trade-offs.
+
+46
+00:01:53,150 --> 00:01:58,460
+And it's mainly between money, financial costs, and what's
+
+47
+00:01:58,460 --> 00:02:01,160
+known as level of service.
+
+48
+00:02:01,160 --> 00:02:02,210
+How well you serve.
+
+49
+00:02:02,210 --> 00:02:03,680
+How fast you serve.
+
+50
+00:02:03,680 --> 00:02:05,900
+How often you have product there.
+
+51
+00:02:05,900 --> 00:02:08,630
+So this whole idea of level of service and cost.
+
+52
+00:02:08,630 --> 00:02:10,940
+And there is a series of other trade-offs that we have,
+
+53
+00:02:10,940 --> 00:02:12,500
+and we'll focus on those.
+
+54
+00:02:12,500 --> 00:02:15,140
+The way that we'll handle and make those trade-offs
+
+55
+00:02:15,140 --> 00:02:18,089
+is we'll use what's known as a total cost equation.
+
+56
+00:02:18,089 --> 00:02:19,880
+And so we're going to develop this equation
+
+57
+00:02:19,880 --> 00:02:21,620
+over the series of weeks, and it's
+
+58
+00:02:21,620 --> 00:02:25,131
+going to be a function of a bunch of different things.
+
+59
+00:02:25,131 --> 00:02:26,630
+You can think of it being a function
+
+60
+00:02:26,630 --> 00:02:30,340
+of the demand, the amount that you order,
+
+61
+00:02:30,340 --> 00:02:32,410
+the lead time that it takes to actually get
+
+62
+00:02:32,410 --> 00:02:36,160
+that product, the variability of that lead time.
+
+63
+00:02:36,160 --> 00:02:38,950
+How variable it is-- or whether it's really deterministic--
+
+64
+00:02:38,950 --> 00:02:40,120
+and a bunch of other things.
+
+65
+00:02:40,120 --> 00:02:42,100
+And we'll spend a lot of time on that.
+
+66
+00:02:42,100 --> 00:02:44,300
+And so we'll go into those in detail.
+
+67
+00:02:44,300 --> 00:02:46,630
+But at the end of it, we're making a trade-off.
+
+68
+00:02:46,630 --> 00:02:51,220
+And we're making that trade-off using this total cost equation.
+
+69
+00:02:51,220 --> 00:02:52,990
+So what are we going to do this week?
+
+70
+00:02:52,990 --> 00:02:54,940
+This week we're going to start off first
+
+71
+00:02:54,940 --> 00:02:56,230
+with some key concepts.
+
+72
+00:02:56,230 --> 00:02:58,090
+And the first one we're going to focus on
+
+73
+00:02:58,090 --> 00:03:03,630
+is what's known as push versus pull.
+
+74
+00:03:03,630 --> 00:03:04,890
+And this is a core concept.
+
+75
+00:03:04,890 --> 00:03:07,500
+And what it really means is at some point
+
+76
+00:03:07,500 --> 00:03:10,650
+if I'm making product, I'm pushing it out to the product.
+
+77
+00:03:10,650 --> 00:03:13,600
+And I'm making it based on a forecast.
+
+78
+00:03:13,600 --> 00:03:17,750
+So this is based on a forecast of demand.
+
+79
+00:03:17,750 --> 00:03:19,639
+But at some point in that supply chain,
+
+80
+00:03:19,639 --> 00:03:21,680
+I'm going to be making actions based on an order.
+
+81
+00:03:21,680 --> 00:03:23,990
+Someone has actually ordered it and I do something,
+
+82
+00:03:23,990 --> 00:03:25,730
+and that's what's called a pull.
+
+83
+00:03:25,730 --> 00:03:28,680
+And this is done on an actual order.
+
+84
+00:03:28,680 --> 00:03:31,850
+And so the point between the push and the pull,
+
+85
+00:03:31,850 --> 00:03:33,330
+is called the push/pull point.
+
+86
+00:03:33,330 --> 00:03:35,030
+And we'll spend a lot of time here,
+
+87
+00:03:35,030 --> 00:03:37,430
+because depending on your supply chain, whether it's
+
+88
+00:03:37,430 --> 00:03:40,010
+a push supply chain or a pull, or probably
+
+89
+00:03:40,010 --> 00:03:43,340
+some kind of hybrid, that changes how you forecast,
+
+90
+00:03:43,340 --> 00:03:44,990
+how you manage your inventory, and how
+
+91
+00:03:44,990 --> 00:03:48,830
+you manage your transportation.
+
+92
+00:03:48,830 --> 00:03:51,960
+The second key concept we're going to learn
+
+93
+00:03:51,960 --> 00:03:54,570
+is known as segmentation.
+
+94
+00:03:54,570 --> 00:03:59,730
+Segmentation is the key tool that you'll use
+
+95
+00:03:59,730 --> 00:04:01,290
+to manage your supply chains.
+
+96
+00:04:01,290 --> 00:04:03,160
+Because as you'll learn very quickly,
+
+97
+00:04:03,160 --> 00:04:04,920
+there is no single supply chain.
+
+98
+00:04:04,920 --> 00:04:07,410
+Every company has many different supply chains.
+
+99
+00:04:07,410 --> 00:04:10,260
+Your customers are different, your suppliers are different,
+
+100
+00:04:10,260 --> 00:04:11,560
+your products are different.
+
+101
+00:04:11,560 --> 00:04:14,670
+And so you want to segment them and treat them differently.
+
+102
+00:04:14,670 --> 00:04:16,769
+And what we'll be talking a lot about
+
+103
+00:04:16,769 --> 00:04:19,079
+is what's known as an ABC analysis
+
+104
+00:04:19,079 --> 00:04:21,809
+where you break your products, your suppliers,
+
+105
+00:04:21,809 --> 00:04:23,100
+your customers into categories.
+
+106
+00:04:23,100 --> 00:04:25,020
+Your A customers, your B customers,
+
+107
+00:04:25,020 --> 00:04:27,550
+and your C customers.
+
+108
+00:04:27,550 --> 00:04:29,630
+And again, the reason why you do that
+
+109
+00:04:29,630 --> 00:04:31,380
+is because you will treat them differently
+
+110
+00:04:31,380 --> 00:04:35,960
+in terms of forecasting, inventory, and transportation.
+
+111
+00:04:35,960 --> 00:04:38,180
+The third key concept we're going to focus on,
+
+112
+00:04:38,180 --> 00:04:41,890
+which you should be familiar with from previous class,
+
+113
+00:04:41,890 --> 00:04:44,390
+is uncertainty.
+
+114
+00:04:44,390 --> 00:04:45,850
+And what are we talking about here?
+
+115
+00:04:45,850 --> 00:04:47,683
+Well, this is when you have any variability.
+
+116
+00:04:47,683 --> 00:04:49,980
+Variability in demand, variability in supply,
+
+117
+00:04:49,980 --> 00:04:53,160
+variability in processing.
+
+118
+00:04:53,160 --> 00:04:55,410
+We'll talk about different ways you can manage or deal
+
+119
+00:04:55,410 --> 00:04:58,459
+with uncertainty.
+
+120
+00:04:58,459 --> 00:05:00,750
+The second lesson we're going to introduce forecasting,
+
+121
+00:05:00,750 --> 00:05:02,850
+because we're going to start working our way
+
+122
+00:05:02,850 --> 00:05:05,149
+down these three main topics.
+
+123
+00:05:05,149 --> 00:05:07,440
+And in forecasting, we're going to hit three big things
+
+124
+00:05:07,440 --> 00:05:08,600
+to set the stage.
+
+125
+00:05:08,600 --> 00:05:11,040
+Because we'll talk about this for the next several weeks.
+
+126
+00:05:11,040 --> 00:05:14,070
+The first we'll attack what I call truisms.
+
+127
+00:05:14,070 --> 00:05:15,600
+And we all know these.
+
+128
+00:05:15,600 --> 00:05:19,020
+People say well, all forecasts are wrong.
+
+129
+00:05:19,020 --> 00:05:21,510
+And this is true, but we'll talk about why that matters
+
+130
+00:05:21,510 --> 00:05:23,010
+and what you can do about it.
+
+131
+00:05:23,010 --> 00:05:26,430
+Another truism is if I have an aggregated forecast,
+
+132
+00:05:26,430 --> 00:05:27,510
+it's better.
+
+133
+00:05:27,510 --> 00:05:30,720
+Aggregated means if I forecast for many different things
+
+134
+00:05:30,720 --> 00:05:32,670
+instead of an individual thing, it'll always
+
+135
+00:05:32,670 --> 00:05:33,960
+get better as I aggregate.
+
+136
+00:05:33,960 --> 00:05:35,760
+And this is an example of risk pooling.
+
+137
+00:05:35,760 --> 00:05:39,550
+And we'll talk more about this as we go forward.
+
+138
+00:05:39,550 --> 00:05:42,840
+Another truism is that a forecast for a shorter horizon
+
+139
+00:05:42,840 --> 00:05:44,640
+is better than a longer horizon.
+
+140
+00:05:44,640 --> 00:05:46,830
+I can probably predict the weather for tomorrow
+
+141
+00:05:46,830 --> 00:05:49,510
+better than I can say, a year from now.
+
+142
+00:05:49,510 --> 00:05:51,397
+And so the shorter the horizon, the better.
+
+143
+00:05:51,397 --> 00:05:52,980
+And so we'll talk about those and show
+
+144
+00:05:52,980 --> 00:05:56,940
+how those play in to the ways that you can forecast.
+
+145
+00:05:56,940 --> 00:06:02,280
+We'll introduce basic techniques and classify them.
+
+146
+00:06:02,280 --> 00:06:06,167
+And the main way I want to classify them in this lesson
+
+147
+00:06:06,167 --> 00:06:07,750
+is the difference between a subjective
+
+148
+00:06:07,750 --> 00:06:10,780
+and an objective technique.
+
+149
+00:06:10,780 --> 00:06:12,670
+So an objective technique is one that
+
+150
+00:06:12,670 --> 00:06:14,360
+uses history and uses data.
+
+151
+00:06:14,360 --> 00:06:16,042
+Subjective uses opinions.
+
+152
+00:06:16,042 --> 00:06:17,500
+And they both have a role, and I'll
+
+153
+00:06:17,500 --> 00:06:20,110
+talk about how they fit together.
+
+154
+00:06:20,110 --> 00:06:23,025
+And the last thing we want to do is talk about metrics.
+
+155
+00:06:23,025 --> 00:06:25,670
+
+
+156
+00:06:25,670 --> 00:06:27,080
+How do you measure your forecast?
+
+157
+00:06:27,080 --> 00:06:28,610
+There's many different ways.
+
+158
+00:06:28,610 --> 00:06:30,080
+And how you measure your forecast
+
+159
+00:06:30,080 --> 00:06:31,496
+is very important because it feeds
+
+160
+00:06:31,496 --> 00:06:34,790
+into how you manage your inventory, which feeds into how
+
+161
+00:06:34,790 --> 00:06:36,600
+you set up your transportation.
+
+162
+00:06:36,600 --> 00:06:39,342
+So hopefully you get the point that everything ties together.
+
+163
+00:06:39,342 --> 00:06:40,800
+We're going to be making trade-offs
+
+164
+00:06:40,800 --> 00:06:42,342
+with the total cost equation.
+
+165
+00:06:42,342 --> 00:06:44,300
+And we're going to do that to try to understand
+
+166
+00:06:44,300 --> 00:06:46,820
+how supply chains work.
+
+167
+00:06:46,820 --> 00:06:49,640
+So watch all the videos, take the recitations,
+
+168
+00:06:49,640 --> 00:06:52,690
+work the quick questions and the practice problems.
+

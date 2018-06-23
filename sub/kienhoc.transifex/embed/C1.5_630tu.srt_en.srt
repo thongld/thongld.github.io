@@ -1,0 +1,365 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/Y6A3kajLgP0
+
+1
+00:00:00,000 --> 00:00:01,800
+
+2
+00:00:01,800 --> 00:00:01,820
+RAMESH YERRABALLI: Hi.
+
+3
+00:00:01,820 --> 00:00:03,100
+I'm Ramesh Yerraballi.
+
+4
+00:00:03,100 --> 00:00:04,830
+JON VALVANO: And I'm Jon Valvano.
+
+5
+00:00:04,830 --> 00:00:08,310
+And in this video, we will
+show you the lab kit.
+
+6
+00:00:08,310 --> 00:00:12,420
+And just to get you excited about this
+class, we will also demonstrate the
+
+7
+00:00:12,420 --> 00:00:13,890
+completed labs.
+
+8
+00:00:13,890 --> 00:00:16,620
+RAMESH YERRABALLI: Here they are.
+
+9
+00:00:16,620 --> 00:00:18,970
+JON VALVANO: The most important
+part of the kit is the
+
+10
+00:00:18,970 --> 00:00:20,520
+microcontroller board.
+
+11
+00:00:20,520 --> 00:00:25,690
+And each of you will purchase a Tiva
+LaunchPad development system, which
+
+12
+00:00:25,690 --> 00:00:28,090
+comes with a standard USB cable.
+
+13
+00:00:28,090 --> 00:00:32,229
+And this is the ARM Cortex-M
+processor.
+
+14
+00:00:32,229 --> 00:00:37,070
+You will be using this board to
+complete five of the labs.
+
+15
+00:00:37,070 --> 00:00:40,010
+RAMESH YERRABALLI: The remaining labs,
+which are a little more exciting,
+
+16
+00:00:40,010 --> 00:00:41,810
+require some external components.
+
+17
+00:00:41,810 --> 00:00:48,270
+The components you will need are a few
+resistors of various sizes, a few
+
+18
+00:00:48,270 --> 00:00:53,470
+light-emitting diodes of different
+colors, a few switches,
+
+19
+00:00:53,470 --> 00:00:56,010
+and add audio jack.
+
+20
+00:00:56,010 --> 00:00:59,260
+JON VALVANO: And for the transducer,
+we'll be using a slide pot.
+
+21
+00:00:59,260 --> 00:01:01,950
+Depending upon where and how you
+buy it, you might get a short
+
+22
+00:01:01,950 --> 00:01:03,320
+one or a long one.
+
+23
+00:01:03,320 --> 00:01:06,170
+Either size is OK.
+
+24
+00:01:06,170 --> 00:01:09,360
+RAMESH YERRABALLI: And to put things
+together, you will need some cables
+
+25
+00:01:09,360 --> 00:01:10,930
+and a breadboard.
+
+26
+00:01:10,930 --> 00:01:16,950
+You could buy them as a separate
+kit, or as a kit together.
+
+27
+00:01:16,950 --> 00:01:18,240
+It does not matter.
+
+28
+00:01:18,240 --> 00:01:21,370
+And what size you buy also
+does not matter.
+
+29
+00:01:21,370 --> 00:01:24,910
+JON VALVANO: And all the buying
+instructions are on the website.
+
+30
+00:01:24,910 --> 00:01:27,920
+And we will now show you the labs
+in the order in which you
+
+31
+00:01:27,920 --> 00:01:29,400
+will complete them.
+
+32
+00:01:29,400 --> 00:01:32,230
+RAMESH YERRABALLI: So as Jon mentioned,
+the first few labs, we'll
+
+33
+00:01:32,230 --> 00:01:37,560
+just use the launchpad and a cable
+connected to your computer.
+
+34
+00:01:37,560 --> 00:01:40,640
+JON VALVANO: And in the interfacing
+lab, you will interface a
+
+35
+00:01:40,640 --> 00:01:42,335
+switch and an LED.
+
+36
+00:01:42,335 --> 00:01:45,580
+
+37
+00:01:45,580 --> 00:01:49,010
+RAMESH YERRABALLI: In the traffic light
+controller lab, we will use a
+
+38
+00:01:49,010 --> 00:01:52,870
+finite state machine to implement a
+traffic light controller, and the
+
+39
+00:01:52,870 --> 00:01:59,540
+interface will involve switches for
+traffic and a switch for the
+
+40
+00:01:59,540 --> 00:02:02,230
+pedestrian button.
+
+41
+00:02:02,230 --> 00:02:06,520
+JON VALVANO: And in the guitar tuner
+lab, we will use interrupts to create
+
+42
+00:02:06,520 --> 00:02:11,500
+the note A.
+
+43
+00:02:11,500 --> 00:02:14,530
+RAMESH YERRABALLI: So Jon,
+what is this doing here?
+
+44
+00:02:14,530 --> 00:02:18,200
+JON VALVANO: Well, Ramesh, in addition
+to the labs the students will do,
+
+45
+00:02:18,200 --> 00:02:22,380
+there will be some projects that
+we will show you how it works.
+
+46
+00:02:22,380 --> 00:02:27,020
+And so this stepper motor car actually
+combines all the components of these
+
+47
+00:02:27,020 --> 00:02:28,530
+labs so far.
+
+48
+00:02:28,530 --> 00:02:30,325
+And you can see, it moves.
+
+49
+00:02:30,325 --> 00:02:36,248
+
+50
+00:02:36,248 --> 00:02:39,490
+Professor Yerraballi, the labs
+are getting more interesting.
+
+51
+00:02:39,490 --> 00:02:41,270
+RAMESH YERRABALLI: Yeah, let's
+take a look at them.
+
+52
+00:02:41,270 --> 00:02:42,980
+JON VALVANO: This is the
+digital piano lab.
+
+53
+00:02:42,980 --> 00:02:48,520
+You will interface switches and build
+a digital to analog converter.
+
+54
+00:02:48,520 --> 00:02:50,120
+And together, they will make sound.
+
+55
+00:02:50,120 --> 00:02:51,500
+[PLAYING TUNE TO "MARY
+HAD A LITTLE LAMB"
+
+56
+00:02:51,500 --> 00:02:55,650
+
+57
+00:02:55,650 --> 00:02:58,805
+And that sound can also
+be used as music.
+
+58
+00:02:58,805 --> 00:03:00,068
+[EMITS MUSICAL BEEPS]
+
+59
+00:03:00,068 --> 00:03:03,460
+
+60
+00:03:03,460 --> 00:03:06,220
+RAMESH YERRABALLI: This is
+the data acquisition lab.
+
+61
+00:03:06,220 --> 00:03:11,320
+And in this lab, you will interface a
+slide pot, a potentiometer, and the
+
+62
+00:03:11,320 --> 00:03:17,200
+position of the slide pot will be
+displayed on an LCD display.
+
+63
+00:03:17,200 --> 00:03:21,350
+JON VALVANO: And we'll put it all
+together and create a handheld video
+
+64
+00:03:21,350 --> 00:03:27,100
+game, which has a joystick, it has
+sounds, and here you see a space
+
+65
+00:03:27,100 --> 00:03:29,430
+invader game.
+
+66
+00:03:29,430 --> 00:03:32,810
+RAMESH YERRABALLI: Here's an alternate
+version of the same game, except we
+
+67
+00:03:32,810 --> 00:03:35,830
+put all of the components
+on a single board.
+
+68
+00:03:35,830 --> 00:03:41,230
+Again, you have your joystick and
+your buttons to play the game.
+
+69
+00:03:41,230 --> 00:03:44,300
+
+70
+00:03:44,300 --> 00:03:47,070
+Hey, Jon, what is this again?
+
+71
+00:03:47,070 --> 00:03:49,840
+JON VALVANO: Just like before, there
+will be some projects that we will
+
+72
+00:03:49,840 --> 00:03:50,850
+build for you.
+
+73
+00:03:50,850 --> 00:03:54,260
+Here is a digital to analog converter
+which is different than the one that
+
+74
+00:03:54,260 --> 00:03:55,630
+you build in lab.
+
+75
+00:03:55,630 --> 00:03:58,940
+And here is our autonomous robot.
+
+76
+00:03:58,940 --> 00:04:03,430
+We'll put together all the concepts of
+this class to make a robot which can
+
+77
+00:04:03,430 --> 00:04:06,580
+drive straight down the road.
+
+78
+00:04:06,580 --> 00:04:07,790
+There you have it.
+
+79
+00:04:07,790 --> 00:04:11,230
+I hope you have as much fun taking
+this class as we had
+
+80
+00:04:11,230 --> 00:04:12,480
+making it for you.
+
+81
+00:04:12,480 --> 00:04:13,793

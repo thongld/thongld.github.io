@@ -1,0 +1,683 @@
+0
+00:00:00,000 --> 00:00:01,880
+https://youtu.be/Kse8enyGHZc
+
+1
+00:00:01,880 --> 00:00:04,570
+Giờ chúng ta hãy phát triển một cách chính thức để giải quyết
+
+2
+00:00:04,570 --> 00:00:08,340
+Vấn đề Tồn kho trong một khoảng thời gian
+bằng cách sử dụng phân tích cận biên.
+
+3
+00:00:08,340 --> 00:00:11,580
+Nếu bạn con nhớ video lần trước,
+
+4
+00:00:11,580 --> 00:00:13,350
+chúng ta đã xem xét đường cong lợi nhuận này,
+
+5
+00:00:13,350 --> 00:00:17,760
+trong đó trục hoành là Q,
+
+6
+00:00:17,760 --> 00:00:21,640
+và trục tung là khả năng sinh lợi.
+
+7
+00:00:21,640 --> 00:00:23,890
+Và chúng ta đã nói có hai vùng.
+
+8
+00:00:23,890 --> 00:00:27,760
+Vùng ở bên trái là khi tôi đặt hàng quá ít,
+
+9
+00:00:27,760 --> 00:00:32,220
+và điều đó có nghĩa là tôi có thể thiếu một số sản phẩm.
+
+10
+00:00:32,220 --> 00:00:35,810
+Và bên phải là khi tôi đặt hàng quá nhiều,
+
+11
+00:00:35,810 --> 00:00:40,690
+và có xác suất cao hơn là tôi sẽ có dư thừa.
+
+12
+00:00:40,690 --> 00:00:44,660
+Và điều chúng ta muốn làm là tìm ra cách
+
+13
+00:00:44,660 --> 00:00:47,020
+để tôi có thể tìm Q*.
+
+14
+00:00:47,020 --> 00:00:50,380
+Vậy đối với vấn đề trong một khoảng thời gian, chúng ta có hai chi phí.
+
+15
+00:00:50,380 --> 00:00:52,110
+Chúng ta có chi phí dư thừa này.
+
+16
+00:00:52,110 --> 00:00:56,080
+Và điều này xảy ra khi nhu cầu thấp hơn tôi muốn, thấp hơn Q.
+
+17
+00:00:56,080 --> 00:01:02,500
+Và điều này có nghĩa là tôi có quá nhiều sản phẩm.
+
+18
+00:01:02,500 --> 00:01:04,849
+Vậy điều này sẽ xảy ra khi
+
+19
+00:01:04,849 --> 00:01:07,300
+tôi có quá nhiều ở xung quanh, tôi có Dư thừa.
+
+20
+00:01:07,300 --> 00:01:10,200
+Sau đó, tôi cũng có Chi phí Thiếu hụt, khi cầu
+
+21
+00:01:10,200 --> 00:01:12,440
+lớn hơn Q với bất kỳ thứ gì tôi chọn,
+
+22
+00:01:12,440 --> 00:01:14,510
+và có quá ít sản phẩm,
+
+23
+00:01:14,510 --> 00:01:16,730
+và tôi sẽ không có đủ ở đó.
+
+24
+00:01:16,730 --> 00:01:18,010
+Vậy tôi muốn làm gì?
+
+25
+00:01:18,010 --> 00:01:20,810
+Tôi đã có phân phối liên tục của cầu.
+
+26
+00:01:20,810 --> 00:01:25,360
+Tôi sẽ có thể tìm ra Chi phí Dư thừa Mong đợi
+
+27
+00:01:25,360 --> 00:01:26,830
+cho đơn vị thứ Q.
+
+28
+00:01:26,830 --> 00:01:28,965
+Đây là chi phí cận biên, đơn vị tiếp theo
+
+29
+00:01:28,965 --> 00:01:30,090
+sẽ được đặt hàng.
+
+30
+00:01:30,090 --> 00:01:32,350
+Đó sẽ là gì?
+
+31
+00:01:32,350 --> 00:01:35,462
+Nó sẽ bằng với chi phí dư thừa.
+
+32
+00:01:35,462 --> 00:01:37,670
+Và chúng ta đã hình dung ra điều sẽ xảy ra
+
+33
+00:01:37,670 --> 00:01:41,850
+sẽ là chi phí có thêm một nhân với xác suất
+
+34
+00:01:41,850 --> 00:01:43,870
+cầu của tôi sẽ nhỏ hơn hoặc bằng Q.
+
+35
+00:01:43,870 --> 00:01:46,850
+Đó là Chi phí Dư thừa Mong đợi cho đơn hàng thứ Q.
+
+36
+00:01:46,850 --> 00:01:50,120
+Và tôi có thể làm điều tương tự cho chi phí thiếu hụt của
+
+37
+00:01:50,120 --> 00:01:50,950
+đơn hàng thứ Q.
+
+38
+00:01:50,950 --> 00:01:54,730
+Đó là Q_s nhân 1 trừ đi xác suất đó.
+
+39
+00:01:54,730 --> 00:01:58,560
+Vậy những gì tôi có ở đây là hai chi phí, chi phí cận biên,
+
+40
+00:01:58,560 --> 00:02:02,440
+vì có quá ít và có quá nhiều.
+
+41
+00:02:02,440 --> 00:02:07,350
+Và, bạn biết đấy, nếu Chi phí Dư thừa của tôi nhỏ hơn Chi phí Thiếu hụt,
+
+42
+00:02:07,350 --> 00:02:09,914
+tôi sẽ tăng Q.
+
+43
+00:02:09,914 --> 00:02:11,420
+Tôi sẽ tăng Q của mình lên bao nhiêu?
+
+44
+00:02:11,420 --> 00:02:14,270
+Tôi sẽ tăng nó cho đến khi chúng bằng nhau,
+
+45
+00:02:14,270 --> 00:02:17,440
+vì, về cơ bản, tôi sẽ leo lên,
+
+46
+00:02:17,440 --> 00:02:21,140
+leo lên cho đến khi độ dốc bằng 0.
+
+47
+00:02:21,140 --> 00:02:23,030
+Nghĩ lại tới phép tính.
+
+48
+00:02:23,030 --> 00:02:26,670
+Do đó, chi phí cận biên là như nhau,
+
+49
+00:02:26,670 --> 00:02:29,372
+đó sẽ là giá trị lớn nhất của tôi.
+
+50
+00:02:29,372 --> 00:02:31,580
+Hãy xem xét cái này về mặt chi phí cận biên.
+
+51
+00:02:31,580 --> 00:02:32,871
+Những gì tôi có ở đây là một biểu đồ.
+
+52
+00:02:32,871 --> 00:02:36,990
+Trục hoành là Q.
+
+53
+00:02:36,990 --> 00:02:40,610
+Và đây là chi phí cận biên cho mỗi chiếc áo len:
+
+54
+00:02:40,610 --> 00:02:42,560
+đó là trục tung.
+
+55
+00:02:42,560 --> 00:02:48,590
+Nếu tôi nhìn vào đường màu xanh dương này,
+đó là Chi phí Dư thừa:
+
+56
+00:02:48,590 --> 00:02:52,440
+đây là mức tăng cận biên, hoặc chi phí cận biên,
+
+57
+00:02:52,440 --> 00:02:53,790
+cho sự dư thừa.
+
+58
+00:02:53,790 --> 00:02:58,240
+Nếu tôi chỉ đặt mua 10, và, hãy nhớ là phân phối của tôi ở đây
+
+59
+00:02:58,240 --> 00:03:01,585
+được phân phối bình thường với cầu là 32,
+
+60
+00:03:01,585 --> 00:03:04,020
+với độ lệch chuẩn là 11.
+
+61
+00:03:04,020 --> 00:03:07,810
+Chúng ta đang tính theo đơn vị ngàn - 32.000 đơn vị
+
+62
+00:03:07,810 --> 00:03:09,140
+với độ lệch chuẩn là 11.000.
+
+63
+00:03:09,140 --> 00:03:13,740
+Nếu tôi đặt mua 10.000 đơn vị ở đây, thì xác suất
+
+64
+00:03:13,740 --> 00:03:16,370
+mà tôi có dư thừa là khá thấp.
+
+65
+00:03:16,370 --> 00:03:18,180
+Điều đó có nghĩa là
+
+66
+00:03:18,180 --> 00:03:22,750
+ ít hơn hoặc bằng 9,999 đơn vị cầu, phải không?
+
+67
+00:03:22,750 --> 00:03:24,780
+Vậy là khá thấp.
+
+68
+00:03:24,780 --> 00:03:26,580
+Khi tôi đứng dậy và đặt mua số lượng cao hơn,
+
+69
+00:03:26,580 --> 00:03:30,200
+nếu tôi đặt mua 60.000 đơn vị, xác suất
+
+70
+00:03:30,200 --> 00:03:33,250
+xác suất dư thừa của tôi, dư thừa áo len,
+
+71
+00:03:33,250 --> 00:03:36,470
+sẽ khá cao, và do đó chi phí biên tăng.
+
+72
+00:03:36,470 --> 00:03:39,040
+Và bạn thấy nó thay đổi như thế nào và nó không tuyến tính.
+
+73
+00:03:39,040 --> 00:03:42,470
+Và đó là sự phản ánh của phân phối thông thường cơ bản.
+
+74
+00:03:42,470 --> 00:03:45,850
+Tôi cũng có thể vẽ bằng màu đỏ những Chi phí Thiếu hụt này.
+
+75
+00:03:45,850 --> 00:03:50,380
+Chúng ta có thể thấy là nếu tôi chỉ đặt mua 10.000 áo len,
+
+76
+00:03:50,380 --> 00:03:53,460
+khi số lượng dự kiến của tôi là 32.000,
+
+77
+00:03:53,460 --> 00:03:55,679
+thì tôi sẽ có chi phí cận biên khá cao,
+
+78
+00:03:55,679 --> 00:03:57,220
+vì tôi mong đợi nó sẽ rất ngắn.
+
+79
+00:03:57,220 --> 00:04:01,290
+Tôi sẽ thiếu một chút nếu tôi mong đợi trung bình là 32.000
+
+80
+00:04:01,290 --> 00:04:03,270
+và tôi chỉ đặt hàng 10.000.
+
+81
+00:04:03,270 --> 00:04:06,580
+Nhưng ở thái cực khác, nếu tôi đặt mua 60.000,
+
+82
+00:04:06,580 --> 00:04:09,790
+thì rất có thể tôi sẽ không còn thiếu nữa.
+
+83
+00:04:09,790 --> 00:04:12,060
+Và bạn thấy rằng hai chi phí cận biên này
+
+84
+00:04:12,060 --> 00:04:13,550
+hoạt động theo hướng đối nghịch nhau.
+
+85
+00:04:13,550 --> 00:04:15,200
+Và khi nào chúng bằng nhau?
+
+86
+00:04:15,200 --> 00:04:19,060
+Đó là ở Q tối ưu của chúng ta,
+
+87
+00:04:19,060 --> 00:04:20,899
+vì khi chúng bằng nhau, thì điều đó có nghĩa là
+
+88
+00:04:20,899 --> 00:04:23,920
+tôi ở mức tối đa của đường cong lợi nhuận đó.
+
+89
+00:04:23,920 --> 00:04:28,220
+Và như vậy nó cho tôi biết Q* của tôi.
+
+90
+00:04:28,220 --> 00:04:30,460
+Hãy xem xét điều này một cách chính thức.
+
+91
+00:04:30,460 --> 00:04:32,770
+Chúng ta đã phát triển phương trình này.
+
+92
+00:04:32,770 --> 00:04:37,180
+Đây là chi phí cận biên cho sự dư thừa.
+
+93
+00:04:37,180 --> 00:04:39,157
+Và đây là chi phí cận biên cho sự thiếu hụt.
+
+94
+00:04:39,157 --> 00:04:40,990
+Chúng ta sẽ đặt chúng bằng nhau.
+
+95
+00:04:40,990 --> 00:04:43,740
+Và tôi sẽ để bạn nhìn vào mặt đại số.
+
+96
+00:04:43,740 --> 00:04:45,720
+Chúng ta sẽ dọn dẹp nó một chút
+
+97
+00:04:45,720 --> 00:04:47,390
+và biến thành mối quan hệ này,
+
+98
+00:04:47,390 --> 00:04:52,060
+trong đó xác suất của cầu nhỏ hơn hoặc bằng Q,
+
+99
+00:04:52,060 --> 00:04:53,900
+số lượng đặt hàng của tôi,
+
+100
+00:04:53,900 --> 00:04:58,220
+sẽ bằng với mối quan hệ c_s chi phí thiếu hụt,
+
+101
+00:04:58,220 --> 00:05:01,470
+trên tổng chi phí dư thừa và chi phí thiếu hụt.
+
+102
+00:05:01,470 --> 00:05:03,630
+Hy vọng rằng, bạn sẽ thấy điều này có vẻ quen.
+
+103
+00:05:03,630 --> 00:05:06,640
+Đó là tỷ lệ tới hạn tương tự chúng ta đã thấy trong bài toán EOQ
+
+104
+00:05:06,640 --> 00:05:08,390
+với Đặt hàng chậm có Kế hoạch.
+
+105
+00:05:08,390 --> 00:05:12,250
+Nó chỉ là một tỷ lệ thiếu hụt trên tổng
+
+106
+00:05:12,250 --> 00:05:13,217
+Chi phí Dư thừa và Thiếu hụt.
+
+107
+00:05:13,217 --> 00:05:15,550
+Hãy xem liệu chúng ta có thể nói thêm
+
+108
+00:05:15,550 --> 00:05:16,510
+về điều đó một chút.
+
+109
+00:05:16,510 --> 00:05:19,110
+Hãy nghĩ về nó như một trò chơi bập bênh.
+
+110
+00:05:19,110 --> 00:05:24,800
+Và một đầu, tôi có chi phí dư thừa.
+
+111
+00:05:24,800 --> 00:05:28,050
+Đầu bên kia của trò chơi bập bênh
+
+112
+00:05:28,050 --> 00:05:31,510
+là chi phí thiếu hụt.
+
+113
+00:05:31,510 --> 00:05:33,500
+Và câu hỏi đặt ra là tôi sẽ đặt
+
+114
+00:05:33,500 --> 00:05:37,310
+điểm tựa ở đâu để cân bằng nó?
+
+115
+00:05:37,310 --> 00:05:40,650
+Chúng ta có thể nghĩ về khoảng cách này từ điểm tựa
+
+116
+00:05:40,650 --> 00:05:44,970
+đến c_e bằng với Tỷ lệ Tới hạn,
+
+117
+00:05:44,970 --> 00:05:53,030
+là c_s / (c_e + c_s), là số hạng này, phải không?
+
+118
+00:05:53,030 --> 00:05:59,660
+Trong trường hợp nếu c_e = c_s, thì điểm tựa sẽ ở đâu?
+
+119
+00:05:59,660 --> 00:06:02,480
+Ngay ở giữa, ngay chính giữa,
+
+120
+00:06:02,480 --> 00:06:04,090
+khi bạn có một nửa và một nửa.
+
+121
+00:06:04,090 --> 00:06:10,690
+Nhưng điều gì xảy ra nếu nói, c_s gấp đôi c_e,
+
+122
+00:06:10,690 --> 00:06:12,800
+Chi phí Thiếu hụt nhiều gấp đôi
+
+123
+00:06:12,800 --> 00:06:14,590
+nếu tôi có Chi phí Dư thừa.
+
+124
+00:06:14,590 --> 00:06:16,540
+Tỷ lệ tới hạn của chúng ta sẽ là gì?
+
+125
+00:06:16,540 --> 00:06:18,730
+Tôi có thể thay cái này vào.
+
+126
+00:06:18,730 --> 00:06:22,580
+Vậy là 2c_e / 3 c_e, sẽ có nghĩa là
+
+127
+00:06:22,580 --> 00:06:27,160
+tỷ lệ tới hạn sẽ bằng 2/3.
+
+128
+00:06:27,160 --> 00:06:29,540
+Vậy điều gì sẽ xảy ra với điểm tựa đó?
+
+129
+00:06:29,540 --> 00:06:33,930
+Nó sẽ di chuyển 2/3 đường đến đó, vì vậy điểm tựa của tôi ở đây.
+
+130
+00:06:33,930 --> 00:06:34,970
+Vì chuyện gì đã xảy ra?
+
+131
+00:06:34,970 --> 00:06:37,710
+Cái này nặng gấp hai lần, điều này đã trở thành một gã to con,
+
+132
+00:06:37,710 --> 00:06:40,450
+ngồi đây là một anh chàng nhỏ bé có kích thước bằng một nửa.
+
+133
+00:06:40,450 --> 00:06:47,780
+Vậy khi c_s của tôi trở nên lớn hơn, chi phí thiếu hụt của tôi,
+
+134
+00:06:47,780 --> 00:06:52,680
+Tỷ lệ Tới hạn của tôi trở nên lớn hơn,
+và nó di chuyển gần hơn với điều đó.
+
+135
+00:06:52,680 --> 00:06:55,320
+Giống như một trò chơi bập bênh, bạn có thể nhìn theo cách khác
+
+136
+00:06:55,320 --> 00:06:58,090
+nếu c_e nhận được thực sự lớn tỷ lệ với c_s,
+
+137
+00:06:58,090 --> 00:07:00,200
+thì điểm tựa sẽ di chuyển theo cách khác.
+
+138
+00:07:00,200 --> 00:07:01,920
+Vậy bạn có thể nghĩ về nó như một sự cân bằng.
+
+139
+00:07:01,920 --> 00:07:04,780
+Sự cân bằng giữa hai cái này ở đâu?
+
+140
+00:07:04,780 --> 00:07:08,040
+Nếu tôi nhìn vào vế trái của phương trình này,
+
+141
+00:07:08,040 --> 00:07:10,340
+xác suất x nhỏ hơn hoặc bằng Q,
+
+142
+00:07:10,340 --> 00:07:12,230
+bạn sẽ có thể nhớ nó là gì,
+
+143
+00:07:12,230 --> 00:07:16,220
+hãy nhớ lại đường cong thông thường yêu dấu của chúng ta.
+
+144
+00:07:16,220 --> 00:07:19,160
+Đó là ước tính tốt nhất của tôi về một đường cong thông thường.
+
+145
+00:07:19,160 --> 00:07:22,620
+Và tôi có cầu trung bình ở đây.
+
+146
+00:07:22,620 --> 00:07:25,370
+Tôi sẽ nói là xác suất này
+
+147
+00:07:25,370 --> 00:07:27,790
+mà x nhỏ hơn hoặc bằng Q
+
+148
+00:07:27,790 --> 00:07:32,970
+chỉ đơn giản là vùng dưới đường cong này, đây là Q.
+
+149
+00:07:32,970 --> 00:07:35,790
+Là vậy đó.
+
+150
+00:07:35,790 --> 00:07:40,140
+Vậy điều gì sẽ xảy ra với Tỷ lệ Tới hạn
+
+151
+00:07:40,140 --> 00:07:41,820
+ngay ở đây tôi đã nói đây là ví dụ,
+
+152
+00:07:41,820 --> 00:07:45,170
+trong đó Chi phí Thiếu hụt bằng hai lần Chi phí
+
+153
+00:07:45,170 --> 00:07:45,920
+Dư thừa.
+
+154
+00:07:45,920 --> 00:07:48,550
+Nên Tỷ lệ Tới hạn bằng 2/3.
+
+155
+00:07:48,550 --> 00:07:51,240
+Khi Tỷ lệ Tới hạn này lớn hơn, điều gì sẽ xảy ra?
+
+156
+00:07:51,240 --> 00:07:53,030
+Q này sẽ phải lớn hơn,
+
+157
+00:07:53,030 --> 00:07:58,120
+vì tôi phải bao trùm được số lượng này.
+
+158
+00:07:58,120 --> 00:08:01,000
+Tôi sẽ phải tìm ra số lượng xác suất từ đó
+
+159
+00:08:01,000 --> 00:08:04,650
+bằng với 2/3.
+
+160
+00:08:04,650 --> 00:08:08,090
+Bài học ở đây là Tỷ lệ Tới hạn ngày càng lớn,
+
+161
+00:08:08,090 --> 00:08:11,440
+có nghĩa là Chi phí thiếu hụt ngày càng tăng,
+
+162
+00:08:11,440 --> 00:08:14,460
+thì tôi phải bao trùm thêm phân phối cầu của mình.
+
+163
+00:08:14,460 --> 00:08:15,450
+Đó là toàn bộ ý nghĩa.
+
+164
+00:08:15,450 --> 00:08:17,050
+Giờ chúng ta sẽ nhìn vào đường cong thông thường,
+
+165
+00:08:17,050 --> 00:08:19,300
+nhưng sau này chúng ta sẽ xem xét các phân phối khác.
+
+166
+00:08:19,300 --> 00:08:22,690
+Tất cả điều đó có nghĩa là cần phải bao trùm phần trăm đó
+
+167
+00:08:22,690 --> 00:08:27,060
+hoặc xác suất của cầu đó xảy ra là tối ưu.
+
+168
+00:08:27,060 --> 00:08:31,174
+Giờ chúng ta hãy áp dụng phân tích này vào vấn đề áo len NFL.
+
+169
+00:08:31,174 --> 00:08:31,674
+
+

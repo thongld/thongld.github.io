@@ -1,0 +1,320 @@
+0
+00:00:06,450 --> 00:00:09,940
+Bạn có thể nghĩ rằng có rất nhiều bằng chứng cho việc chỉ có một thứ duy nhất được gọi là trí thông minh G
+
+1
+00:00:09,940 --> 00:00:15,980
+bởi vì đó là thứ mà ma trận tăng tiến của Raven và các bài kiểm tra khác được thiết kế để đo
+
+2
+00:00:15,980 --> 00:00:17,220
+to measure.
+
+3
+00:00:17,220 --> 00:00:21,510
+Thực ra có một cách để biết xem liệu trí tuệ là một hau nhiều thứ
+
+4
+00:00:21,510 --> 00:00:23,020
+multiple things.
+
+5
+00:00:23,020 --> 00:00:27,690
+Nó liên quan đến việc so sánh biểu hiện của mọi người trên nhiều bài kiểm tra trí tuệ khác nhau giống như Spearman đã làm
+
+6
+00:00:27,690 --> 00:00:32,570
+bằng cách sử dụng kĩ thuật thống kê gọi là phép phân tích nhân tố
+
+7
+00:00:32,570 --> 00:00:36,890
+Đây là một kĩ thuật thống kê cao cấp, nên tôi sẽ chỉ nói qua phần cơ bản
+
+8
+00:00:36,890 --> 00:00:37,890
+the basics.
+
+9
+00:00:37,890 --> 00:00:40,570
+Tôi sẽ giản lược nhất có thể
+
+10
+00:00:40,570 --> 00:00:44,660
+Tất cả những gì tôi mong các bạn rút ra được là khái niệm cơ bản của phép phân tích nhân tố
+
+11
+00:00:44,660 --> 00:00:45,820
+analysis.
+
+12
+00:00:45,820 --> 00:00:49,500
+Không phải cách thực hiện hay đọc kết quả từ phép phân tích
+
+13
+00:00:49,500 --> 00:00:54,430
+Hãy tưởng tượng rằng ta có vài bài kiểm tra và ta đã đo được biểu hiện của mọi người làm nó
+
+14
+00:00:54,430 --> 00:00:58,790
+và chúng ta đánh dấu chúng ở trên một đồ thị như này để thể hiện sự tương quan
+
+15
+00:00:58,790 --> 00:01:03,110
+Chúng ta có thể kẻ một đường bao quát hết các kết quả đó và giảm thiểu tối đa sai sót trong việc tổng hợp dữ liệu
+
+16
+00:01:03,110 --> 00:01:06,640
+as much as possible in summarising those scores.
+
+17
+00:01:06,640 --> 00:01:11,119
+Ta có thể thấy được có bao nhiêu lỗi sai bằng cách nhìn xem các câu trả lời cá nhân liên quan đến đường đó như nào
+
+18
+00:01:11,119 --> 00:01:13,439
+relation to that line.
+
+19
+00:01:13,439 --> 00:01:16,670
+Bạn nhận thấy gì khi con số trở nên lớn hơn?
+
+20
+00:01:16,670 --> 00:01:19,770
+Điều gì xảy ra với số lỗi sai khi số điểm tăng dần?
+
+21
+00:01:19,770 --> 00:01:24,319
+Điều tôi muốn hỏi là số điểm đã cách đường kẻ bao xa?
+
+22
+00:01:24,319 --> 00:01:29,659
+Có vẻ như là số lỗi sai tăng lên khi điểm số tăng lên, điểm dữ liệu di chuyển xa ra khỏi đường kẻ
+
+23
+00:01:29,659 --> 00:01:32,679
+get further and further away from the line.
+
+24
+00:01:32,679 --> 00:01:38,039
+Số điểm có vẻ tụ lại nhiều hơn ở bên dưới nhưng chúng tách ra xa ở trên
+
+25
+00:01:38,039 --> 00:01:39,299
+up there.
+
+26
+00:01:39,299 --> 00:01:44,729
+Điều này chỉ ra rằng có thể sử dụng một sự tương quan hoặc một nhân tố không phải cách tốt nhất để miêu tả dữ liệu này
+
+27
+00:01:44,729 --> 00:01:47,399
+way to describe this data.
+
+28
+00:01:47,399 --> 00:01:53,439
+Điều mà phép phân tích nhân tố làm là quan sát xem liệu một, hai hay ba nhân tố miêu tả dữ liệu tốt hơn
+
+29
+00:01:53,439 --> 00:01:54,439
+the data.
+
+30
+00:01:54,439 --> 00:01:58,249
+Không có giới hạn cho con số cần thiết để miêu tả dữ liệu
+
+31
+00:01:58,249 --> 00:02:02,970
+Cách để biết khi nào nó miêu tả đồ thị hợp lý là khi các biến số xung quanh được tối giản nhất
+
+32
+00:02:02,970 --> 00:02:05,990
+is reduced to a statistical minimum.
+
+33
+00:02:05,990 --> 00:02:10,170
+Nó sẽ không bị loại bỏ, nhưng có một con số optimal mà khi cộng thêm vào sẽ không làm giảm lỗi sai
+
+34
+00:02:10,169 --> 00:02:11,170
+any more error.
+
+35
+00:02:11,170 --> 00:02:12,170
+Thực ra, nó còn làm tăng lỗi sai
+
+36
+00:02:12,170 --> 00:02:16,790
+Nên ta có thể biết rằng số lượng nhân tố cần để biểu diễn các điểm này
+
+37
+00:02:16,790 --> 00:02:21,470
+Ý tưởng là, nếu ta đưa cho mọi người một loạt bài kiểm tra trí tuệ, thực hiện phép phân tích nhân tố biểu hiện của họ
+
+38
+00:02:21,470 --> 00:02:26,209
+thì ta sẽ tìm ra được cần bao nhiêu nhân tố để diễn tả mức độ thể hiện của họ
+
+39
+00:02:26,209 --> 00:02:27,319
+performance.
+
+40
+00:02:27,319 --> 00:02:32,540
+Những nhân tố thống kê thể hiện rằng trí tuệ có bao nhiêu nhân tố
+
+41
+00:02:32,540 --> 00:02:37,030
+Nếu ta chỉ dùng một đường thẳng để biểu diễn biểu hiện của họ thì sẽ chỉ có một nhân tố
+
+42
+00:02:37,030 --> 00:02:40,720
+và ta có thể gọi nó là "G", hay trí tuệ chung
+
+43
+00:02:40,720 --> 00:02:44,939
+Nếu ta cần 7 đường để biểu diễn mức độ thể hiện trong bài kiểm tra thì có 7 yếu tố của trí tuệ
+
+44
+00:02:44,939 --> 00:02:47,760
+underlying factors to intelligence.
+
+45
+00:02:47,760 --> 00:02:52,590
+Sử dụng phép phân tích nhân tố, ta có thể tìm ra số lượng nhân tố cần để miêu tả trí thông minh
+
+46
+00:02:52,590 --> 00:02:53,590
+intelligence.
+
+47
+00:02:53,590 --> 00:03:01,420
+Năm 1938, Thurstone thực hiện một phép phân tích nhân tố trên 56 bài kiểm tra để tìm ra bản chất của trí thông minh
+
+48
+00:03:01,420 --> 00:03:07,439
+Thay vì không gian hai chiều như ví dụ trên, thử tưởng tượng không gian 56 chiều và thực hiện phép phân tích nhân tố lên chúng
+
+49
+00:03:07,439 --> 00:03:10,510
+space and doing a factor analysis on that.
+
+50
+00:03:10,510 --> 00:03:15,730
+Thurstone tìm ra 7 nhân tố cơ bản của trí thông minh từ 56 bài kiểm tra này
+
+51
+00:03:15,730 --> 00:03:22,319
+Các yếu tố này bao gồm: Hiểu biết ngôn ngữ, thành thạo ngôn ngữ, số học, tưởng tượng không gian, 
+
+52
+00:03:22,319 --> 00:03:25,799
+trí nhớ, lí luận và tốc độ nhận biết
+
+53
+00:03:25,799 --> 00:03:30,599
+Vì thế, kết luận thời đó là có 7 khía cạnh ngầm của trí thông minh
+
+54
+00:03:30,599 --> 00:03:31,670
+intelligence.
+
+55
+00:03:31,670 --> 00:03:35,609
+Bạn có thể tưởng tượng rằng những người khá tin tưởng vào khái niệm trí tuệ chung
+
+56
+00:03:35,609 --> 00:03:40,739
+sẽ cảm thấy hơi lo ngại về bằng chứng này vì nó không đồng đều với khái niệm "G"
+
+57
+00:03:40,739 --> 00:03:44,190
+because it&#39;s quite inconsistent with the idea of “G”.
+
+58
+00:03:44,190 --> 00:03:51,310
+Năm 1966, Horn và Cattell thực hiện phép phân tích nhân tố trên 7 yếu tố của Thurstone
+
+59
+00:03:51,310 --> 00:03:56,519
+Thay vì tìm ra 7 nhân tố giống Thurstone, họ tìm ra hai nhân tố cao cấp hơn 
+
+60
+00:03:56,519 --> 00:03:59,560
+thể hiện được biểu hiện trong số 7 nhân tố đó
+
+61
+00:03:59,560 --> 00:04:05,530
+Họ gọi các nhân tố cao cấp hơn là trí thông minh mềm hay Gf,
+
+62
+00:04:05,530 --> 00:04:12,690
+hay là biểu hiện ở các bài tập không liên quan đến văn hóa như trong ma trận tăng tiến của Raven
+
+63
+00:04:12,690 --> 00:04:17,579
+hoặc trí thông minh cứng, hay Gc, yêu cầu phải có thông tin trước - ví dụ như thủ đô Pháp là gì?
+
+64
+00:04:17,579 --> 00:04:19,780
+the capital of France?
+
+65
+00:04:19,779 --> 00:04:25,020
+Horn và Cattell chỉ ra rằng bạn cần cả hai thứ đó để biểu diện biểu hiện trong bài kiểm tra
+
+66
+00:04:25,020 --> 00:04:29,090
+vì cả hai, dù có liên quan đến nhau, nhưng không phải là cùng một thứ
+
+67
+00:04:29,090 --> 00:04:33,030
+Đây là một ví dụ về một số hình ảnh trí thông minh mềm
+
+68
+00:04:33,030 --> 00:04:36,222
+Những hình ảnh này có phạm vi rộng hơn là ma trận tăng tiến
+
+69
+00:04:36,222 --> 00:04:39,860
+Có ma trận trong các hình ảnh này, ví dụ, bạn phải chọn xem cái này thuộc chỗ kia
+
+70
+00:04:39,860 --> 00:04:42,670
+belongs there.
+
+71
+00:04:42,670 --> 00:04:46,480
+Nếu bạn đang theo dõi ở nhà thì đáp án là 4
+
+72
+00:04:46,480 --> 00:04:51,450
+Đây là những câu hỏi đánh giá phép loại suy nhưng không yêu cầu nhiều chủ đề văn hóa
+
+73
+00:04:51,450 --> 00:04:52,890
+of cultural concepts.
+
+74
+00:04:52,890 --> 00:04:55,681
+Bạn cần phải chọn một thứ để hoàn thiện chuỗi này
+
+75
+00:04:55,681 --> 00:05:01,060
+Một hình vuông so với hình tam giác giống như 4 đường thẳng đứng với...
+
+76
+00:05:01,060 --> 00:05:07,130
+Tôi sẽ để bạn suy nghĩ một chút... Câu trả lời là 3 đường thẳng, vì số cạnh
+
+77
+00:05:07,130 --> 00:05:08,490
+the number of sides.
+
+78
+00:05:08,490 --> 00:05:14,070
+Rất nhiều câu hỏi như này động đến các kĩ năng khác nhau nhưng chúng đều không dựa nhiều vào hiểu biết văn hóa
+
+79
+00:05:14,070 --> 00:05:16,720
+necessarily rely heavily on cultural knowledge.
+

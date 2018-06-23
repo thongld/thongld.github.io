@@ -1,0 +1,825 @@
+357
+00:16:30,460 --> 00:16:32,660
+https://youtu.be/O0wE2M8-ois
+inside of string because
+line is a string,
+
+358
+00:16:32,660 --> 00:16:35,210
+if line starts with
+from, print it out.
+
+359
+00:16:35,210 --> 00:16:37,220
+So this means it's going
+to loop through all
+
+360
+00:16:37,220 --> 00:16:39,050
+of the lines of
+the file and it's
+
+361
+00:16:39,050 --> 00:16:40,690
+going to print the
+ones that start
+
+362
+00:16:40,690 --> 00:16:44,540
+with the string from colon.
+
+363
+00:16:44,540 --> 00:16:48,710
+OK again four lines
+complete Python program
+
+364
+00:16:48,710 --> 00:16:51,410
+to read this file and
+print the lines that
+
+365
+00:16:51,410 --> 00:16:54,990
+have a prefix of from.
+
+366
+00:16:54,990 --> 00:17:01,060
+So if you run this program,
+and I suggest that you do,
+
+367
+00:17:01,060 --> 00:17:03,830
+this is what the output's
+going to look like.
+
+368
+00:17:03,830 --> 00:17:05,810
+And it's like wait a second.
+
+369
+00:17:05,810 --> 00:17:12,254
+I'm seeing the lines, seeing
+the lines, that have the froms
+
+370
+00:17:12,254 --> 00:17:13,800
+but then I get
+these blank lines.
+
+371
+00:17:13,800 --> 00:17:16,550
+
+372
+00:17:16,550 --> 00:17:17,780
+And why is that?
+
+373
+00:17:17,780 --> 00:17:20,069
+Why this blank lines there?
+
+374
+00:17:20,069 --> 00:17:24,440
+If I look at the program, I mean
+I'm not printing blank lines,
+
+375
+00:17:24,440 --> 00:17:26,430
+I'm only printing lines
+that start with from.
+
+376
+00:17:26,430 --> 00:17:27,690
+I'm not doing that, so why?
+
+377
+00:17:27,690 --> 00:17:30,470
+
+378
+00:17:30,470 --> 00:17:31,220
+What do you think?
+
+379
+00:17:31,220 --> 00:17:34,408
+Give you a second.
+
+380
+00:17:34,408 --> 00:17:38,100
+I've certainly done enough
+foreshadowing in this lecture.
+
+381
+00:17:38,100 --> 00:17:41,100
+Well it turns out these
+new lines are the problem.
+
+382
+00:17:41,100 --> 00:17:43,380
+So it turns out that
+the print, we've
+
+383
+00:17:43,380 --> 00:17:45,270
+been doing this all
+along you just didn't, we
+
+384
+00:17:45,270 --> 00:17:46,600
+didn't make a fuss about it.
+
+385
+00:17:46,600 --> 00:17:49,060
+The print adds a new line
+at the end of everything
+
+386
+00:17:49,060 --> 00:17:50,180
+that it prints.
+
+387
+00:17:50,180 --> 00:17:51,680
+So these yellow new
+lines are coming
+
+388
+00:17:51,680 --> 00:17:53,280
+from the print statement.
+
+389
+00:17:53,280 --> 00:17:58,110
+But when we read the file,
+each line ends in a new line.
+
+390
+00:17:58,110 --> 00:18:00,560
+So these green new lines
+are actually from the file.
+
+391
+00:18:00,560 --> 00:18:03,180
+
+392
+00:18:03,180 --> 00:18:06,300
+They're the ones from the file.
+
+393
+00:18:06,300 --> 00:18:08,560
+So what's happening is
+we're seeing two lines,
+
+394
+00:18:08,560 --> 00:18:11,880
+and so that turns
+into a blank line.
+
+395
+00:18:11,880 --> 00:18:14,065
+So how do we deal with that?
+
+396
+00:18:14,065 --> 00:18:15,440
+Well, we've got
+a string function
+
+397
+00:18:15,440 --> 00:18:18,130
+that conveniently
+solves that problem.
+
+398
+00:18:18,130 --> 00:18:19,100
+OK.
+
+399
+00:18:19,100 --> 00:18:21,600
+And that is we're going
+to call our strip.
+
+400
+00:18:21,600 --> 00:18:24,460
+If you recall we had
+strip, l strip and r strip
+
+401
+00:18:24,460 --> 00:18:27,150
+to strip white space on
+one side, on the other side
+
+402
+00:18:27,150 --> 00:18:28,440
+or on both sides.
+
+403
+00:18:28,440 --> 00:18:30,425
+So in this one we're
+going to use r strip.
+
+404
+00:18:30,425 --> 00:18:32,050
+We're going to say,
+we're going to read
+
+405
+00:18:32,050 --> 00:18:35,530
+the line that this line is
+going to have a new line in it.
+
+406
+00:18:35,530 --> 00:18:38,510
+Our strip says pull white space
+and the new lines are also
+
+407
+00:18:38,510 --> 00:18:40,230
+comma'd as white space.
+
+408
+00:18:40,230 --> 00:18:42,830
+Blanks or new lines
+are white space.
+
+409
+00:18:42,830 --> 00:18:46,630
+And then we're going to replace
+this with no new line in it,
+
+410
+00:18:46,630 --> 00:18:48,740
+then we're going to ask
+if it starts with a from
+
+411
+00:18:48,740 --> 00:18:50,380
+and then we're
+going to print out.
+
+412
+00:18:50,380 --> 00:18:52,900
+And then we go and we're going
+to see exactly what we're
+
+413
+00:18:52,900 --> 00:18:55,100
+looking for in this file.
+
+414
+00:18:55,100 --> 00:18:56,170
+And there's no new lines.
+
+415
+00:18:56,170 --> 00:18:59,410
+Now they're, so the new
+line that's coming out here,
+
+416
+00:18:59,410 --> 00:19:03,230
+is the one from the print,
+not the one from the file
+
+417
+00:19:03,230 --> 00:19:04,640
+because the one
+from the file got
+
+418
+00:19:04,640 --> 00:19:07,960
+wiped out by that
+particular line.
+
+419
+00:19:07,960 --> 00:19:09,730
+OK.
+
+420
+00:19:09,730 --> 00:19:13,380
+So another general pattern
+of these file based loops
+
+421
+00:19:13,380 --> 00:19:17,520
+that we have done this,
+is a skipping pattern.
+
+422
+00:19:17,520 --> 00:19:19,962
+Now you can do--
+the non skipping
+
+423
+00:19:19,962 --> 00:19:21,420
+pattern is where
+you're saying, I'm
+
+424
+00:19:21,420 --> 00:19:23,800
+going to look for lines
+that start with from
+
+425
+00:19:23,800 --> 00:19:25,640
+and do something to them.
+
+426
+00:19:25,640 --> 00:19:29,619
+Sometimes you want to
+do something to all,
+
+427
+00:19:29,619 --> 00:19:31,910
+you want to say here's a
+bunch lines I'm going to skip,
+
+428
+00:19:31,910 --> 00:19:33,368
+and then I'm going
+to do something.
+
+429
+00:19:33,368 --> 00:19:36,470
+So the skipping
+pattern uses continue.
+
+430
+00:19:36,470 --> 00:19:38,870
+And so the first few
+lines here are the same.
+
+431
+00:19:38,870 --> 00:19:41,790
+We open a file, we read
+each line in the file
+
+432
+00:19:41,790 --> 00:19:43,800
+then we're going to strip
+off the white space.
+
+433
+00:19:43,800 --> 00:19:45,660
+You're going to get tired
+typing these three lines,
+
+434
+00:19:45,660 --> 00:19:47,290
+because you're going
+to do it a lot.
+
+435
+00:19:47,290 --> 00:19:49,690
+Open the file, start
+reading the file,
+
+436
+00:19:49,690 --> 00:19:51,870
+strip the white
+space for each line.
+
+437
+00:19:51,870 --> 00:19:57,770
+And you can make it so that
+you can look for some fact.
+
+438
+00:19:57,770 --> 00:20:01,260
+In this case, I'm going to say
+if not line starts with from,
+
+439
+00:20:01,260 --> 00:20:05,240
+means this is true for all the
+lines this don't start from,
+
+440
+00:20:05,240 --> 00:20:06,030
+continue.
+
+441
+00:20:06,030 --> 00:20:08,600
+If you remember
+continue goes up.
+
+442
+00:20:08,600 --> 00:20:11,740
+So the continue says, I'm
+done, it finishes the iteration
+
+443
+00:20:11,740 --> 00:20:15,210
+and it doesn't do
+anything down here.
+
+444
+00:20:15,210 --> 00:20:18,137
+And so this is-- and
+then we can do something.
+
+445
+00:20:18,137 --> 00:20:19,595
+So I've kind of
+flipped this, where
+
+446
+00:20:19,595 --> 00:20:23,307
+I said, these are the
+things I'm interested in,
+
+447
+00:20:23,307 --> 00:20:25,015
+that's lines that
+start with from, so I'm
+
+448
+00:20:25,015 --> 00:20:26,764
+going to skip the lines
+that don't, so I'm
+
+449
+00:20:26,764 --> 00:20:27,880
+going to use continue.
+
+450
+00:20:27,880 --> 00:20:31,620
+Either way you can do it,
+depending on the complexity
+
+451
+00:20:31,620 --> 00:20:34,010
+or how much-- often when
+you're-- this is a good pattern
+
+452
+00:20:34,010 --> 00:20:36,300
+when you have lots of
+lines of code down here,
+
+453
+00:20:36,300 --> 00:20:39,300
+that you're going to do
+a lot of cool stuff with.
+
+454
+00:20:39,300 --> 00:20:43,430
+You can also use things like
+in, to select lines, right?
+
+455
+00:20:43,430 --> 00:20:47,170
+So I'm going to look
+for lines that have
+
+456
+00:20:47,170 --> 00:20:51,280
+at uct dot ac dot za in them.
+
+457
+00:20:51,280 --> 00:20:54,417
+So again I'm going to
+open it up, open these, go
+
+458
+00:20:54,417 --> 00:20:55,833
+through each line
+in the file, I'm
+
+459
+00:20:55,833 --> 00:20:57,990
+going to strip their
+white space out
+
+460
+00:20:57,990 --> 00:21:06,540
+and if not uct if this, if
+this string is not in line,
+
+461
+00:21:06,540 --> 00:21:07,940
+then I'm going to continue.
+
+462
+00:21:07,940 --> 00:21:10,660
+So it's a way for me to
+skip all of the lines that
+
+463
+00:21:10,660 --> 00:21:14,010
+don't have this string in it.
+
+464
+00:21:14,010 --> 00:21:17,199
+So these lines dupes,
+that one has it too,
+
+465
+00:21:17,199 --> 00:21:18,740
+and then we're going
+to print it out.
+
+466
+00:21:18,740 --> 00:21:23,180
+Then we'll print out the
+ones that make it past here.
+
+467
+00:21:23,180 --> 00:21:23,780
+OK.
+
+468
+00:21:23,780 --> 00:21:27,550
+So, but in is another
+way to do searching.
+
+469
+00:21:27,550 --> 00:21:30,620
+Like it starts with et cetera.
+
+470
+00:21:30,620 --> 00:21:33,390
+So one more thing that
+you might want to try
+
+471
+00:21:33,390 --> 00:21:37,600
+is, so we can count right?
+
+472
+00:21:37,600 --> 00:21:41,910
+Now and this is a pattern for
+prompting for a file name.
+
+473
+00:21:41,910 --> 00:21:46,370
+And so you'll get tired
+of sort of changing
+
+474
+00:21:46,370 --> 00:21:48,730
+your code every time you want
+to open a different file,
+
+475
+00:21:48,730 --> 00:21:51,460
+because you probably want to
+run the program with mbox one,
+
+476
+00:21:51,460 --> 00:21:54,920
+sandbox short, because it
+just, just so you can test it
+
+477
+00:21:54,920 --> 00:21:56,599
+with different things of data.
+
+478
+00:21:56,599 --> 00:21:57,890
+So here's just another pattern.
+
+479
+00:21:57,890 --> 00:22:01,910
+We add this line to say raw
+input enter the file name,
+
+480
+00:22:01,910 --> 00:22:04,660
+and there you go, we'll
+type in the file name,
+
+481
+00:22:04,660 --> 00:22:07,010
+and then the thing that we
+open is whatever we entered
+
+482
+00:22:07,010 --> 00:22:09,115
+as the file name, and
+then the rest of it
+
+483
+00:22:09,115 --> 00:22:11,270
+is pretty much yada yada.
+
+484
+00:22:11,270 --> 00:22:14,090
+So here I'm, reading
+the whole file,
+
+485
+00:22:14,090 --> 00:22:17,190
+if the line starts with subject,
+count equals count plus one,
+
+486
+00:22:17,190 --> 00:22:21,860
+and then there were 1797
+subject lines in inbox dot txt.
+
+487
+00:22:21,860 --> 00:22:25,900
+There were 27 subject lines
+and mbox short dot txt.
+
+488
+00:22:25,900 --> 00:22:26,490
+OK.
+
+489
+00:22:26,490 --> 00:22:29,030
+So that's prompting
+for the file names.
+
+490
+00:22:29,030 --> 00:22:33,540
+Now open-- the open
+statement fails
+
+491
+00:22:33,540 --> 00:22:37,070
+if the file name doesn't exist,
+so you might want to add a try
+
+492
+00:22:37,070 --> 00:22:38,190
+and except around that.
+
+493
+00:22:38,190 --> 00:22:40,620
+If you want to, if you're
+just writing code for yourself
+
+494
+00:22:40,620 --> 00:22:43,820
+and you it is OK, then you
+don't have to write try except,
+
+495
+00:22:43,820 --> 00:22:50,630
+but if you want to catch it,
+and catch a bad file name,
+
+496
+00:22:50,630 --> 00:22:55,880
+then you take the open and
+turn into these four lines.
+
+497
+00:22:55,880 --> 00:22:59,047
+So this is the code that
+we think might blow up
+
+498
+00:22:59,047 --> 00:23:01,380
+and it's going to blow up we
+know it's going to blow up.
+
+499
+00:23:01,380 --> 00:23:04,470
+If they enter a bad file
+name like nana booboo,
+
+500
+00:23:04,470 --> 00:23:06,520
+right, this is going to blow up.
+
+501
+00:23:06,520 --> 00:23:07,750
+So what do we do?
+
+502
+00:23:07,750 --> 00:23:08,960
+We use try and except.
+
+503
+00:23:08,960 --> 00:23:11,530
+We put try around that,
+we're going to take out
+
+504
+00:23:11,530 --> 00:23:14,170
+some insurance on
+that particular line,
+
+505
+00:23:14,170 --> 00:23:17,260
+and then if it fails we're
+going to print this message
+
+506
+00:23:17,260 --> 00:23:20,510
+and then say exit, to get out.
+
+507
+00:23:20,510 --> 00:23:27,520
+So if you get a good file, if
+you get a good file it works,
+
+508
+00:23:27,520 --> 00:23:31,650
+skips the except then runs the
+thing, prints out the count.
+
+509
+00:23:31,650 --> 00:23:33,480
+That's what's happening here.
+
+510
+00:23:33,480 --> 00:23:38,100
+If on the other hand you
+get a bad file, comes here,
+
+511
+00:23:38,100 --> 00:23:43,310
+open blows up, runs the except
+prints this out and then quits.
+
+512
+00:23:43,310 --> 00:23:46,790
+So that's how this one
+works with a bad file
+
+513
+00:23:46,790 --> 00:23:48,370
+and now no trace back.
+
+514
+00:23:48,370 --> 00:23:48,870
+Right.
+
+515
+00:23:48,870 --> 00:23:53,820
+
+516
+00:23:53,820 --> 00:23:58,630
+So we are, it's kind
+of a short lecture.
+
+517
+00:23:58,630 --> 00:24:01,470
+Were done with Chapter Seven .
+
+518
+00:24:01,470 --> 00:24:05,690
+We open a file,
+we read the file,
+
+519
+00:24:05,690 --> 00:24:09,370
+we take out white space
+at the end with r strip,
+
+520
+00:24:09,370 --> 00:24:11,670
+we used string functions.
+
+521
+00:24:11,670 --> 00:24:14,640
+So this is kind of
+putting it all together
+
+522
+00:24:14,640 --> 00:24:18,360
+and it's kind of short little
+programs now, so it's not--
+
+523
+00:24:18,360 --> 00:24:22,137
+and you know,
+starting now, we're
+
+524
+00:24:22,137 --> 00:24:23,970
+going to start putting
+these things together
+
+525
+00:24:23,970 --> 00:24:26,140
+and start actually
+doing work because now
+
+526
+00:24:26,140 --> 00:24:28,100
+we have from the
+first few chapters
+
+527
+00:24:28,100 --> 00:24:30,370
+we have basic
+capabilities of Python,
+
+528
+00:24:30,370 --> 00:24:32,494
+now we have some
+data to work with.
+
+529
+00:24:32,494 --> 00:24:34,910
+Going forward we're going to
+do increasingly sophisticated
+
+530
+00:24:34,910 --> 00:24:36,510
+things with that data.
+
+531
+00:24:36,510 --> 00:24:39,520
+So I can't wait to see
+you in the next lecture.
+

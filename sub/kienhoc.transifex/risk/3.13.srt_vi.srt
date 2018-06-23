@@ -1,0 +1,394 @@
+0
+00:00:04,989 --> 00:00:06,450
+Chào các bạn.
+Trong tiết học này chúng ta sẽ xét
+
+2
+00:00:09,180 --> 00:00:12,550
+ứng dụng của mô hình mà chúng ta đã đề cập lần trước.
+
+3
+00:00:12,550 --> 00:00:14,210
+Chúng ta sẽ thử đánh giá.
+
+4
+00:00:15,280 --> 00:00:20,035
+Chúng ta đã dự đoán dòng tiền, và giờ chúng ta sẽ tập trung vào vốn đầu tư.
+
+5
+00:00:20,035 --> 00:00:22,410
+Chúng ta sẽ đặt giả thiết là không có nợ.
+
+6
+00:00:22,410 --> 00:00:26,710
+Như vậy, khi xét công ty Amazon, thì Amazon sẽ không có nợ.
+
+7
+00:00:26,710 --> 00:00:29,240
+Chúng ta cũng sẽ giả sử rằng … không có nợ.
+
+8
+00:00:30,490 --> 00:00:35,670
+Như vậy, chúng ta sẽ biết rằng lãi suất cân bằng,
+
+9
+00:00:35,670 --> 00:00:41,100
+được dự đoán theo mô hình CAPM, cũng sẽ bằng với lãi suất của tài sản.
+
+10
+00:00:41,100 --> 00:00:47,350
+Vì vậy các bạn không cần lo về nợ, nó không ảnh hưởng đến vốn đầu tư.
+
+11
+00:00:47,350 --> 00:00:50,640
+Tại sao lãi suất của Amazon lại trở thành vốn đầu tư của bạn?
+
+12
+00:00:52,280 --> 00:00:53,880
+Chúng ta sẽ quay lại các khái niệm cơ bản.
+
+13
+00:00:53,880 --> 00:00:57,500
+Các nhà đầu tư sẽ so sánh công ty của bạn với công ty Amazon trước khi đầu tư.
+
+14
+00:00:58,520 --> 00:01:00,040
+Vậy vốn đầu tư gồm có những thành phần nào?
+
+15
+00:01:00,040 --> 00:01:06,328
+Gồm có rủi ro và hệ số Beta, họ sẽ dùng chúng để so sánh với Amazon.
+
+16
+00:01:06,328 --> 00:01:09,950
+Nhờ có Sean, tôi có địa chỉ mail của mình: Finance.yahoo.com
+
+17
+00:01:10,990 --> 00:01:15,233
+Cái đầu tiên tôi muốn nhấn mạnh là khế ước trong khoảng thời gian 10 năm,
+
+18
+00:01:15,233 --> 00:01:18,101
+Các bạn có thể dễ dàng tìm được.
+
+19
+00:01:20,653 --> 00:01:25,730
+Khế ước đó cũng tương tự như khế ước ngân khố vậy.
+
+20
+00:01:25,730 --> 00:01:28,930
+Theo tiêu chuẩn thông thường thì
+
+21
+00:01:28,930 --> 00:01:32,560
+Các bạn sẽ dùng khế ước ngân khố 10 năm để đánh giá tỉ lệ phi rủi ro.
+
+22
+00:01:32,560 --> 00:01:34,490
+Vậy tại sao lại là 10 năm?
+
+23
+00:01:34,490 --> 00:01:39,070
+Chúng ta thường hay xét trên khoảng thời gian dài bởi vì
+
+24
+00:01:39,070 --> 00:01:43,290
+các dự án thường kéo dài trong vài năm, không gói gọn trong vài ngày.
+
+25
+00:01:44,420 --> 00:01:45,710
+Vậy còn kết quả của phép tính kia thì sao?
+
+26
+00:01:45,710 --> 00:01:53,234
+Theo tôi tính được thì kết quả là 1.587.
+
+27
+00:01:53,234 --> 00:01:56,550
+Tôi làm tròn kết quả đến chữ số thứ 2.
+
+28
+00:01:56,550 --> 00:01:58,120
+Vậy kết quả rút gọn là 1.58.
+
+29
+00:01:58,120 --> 00:02:01,360
+Nhân tiện, kết quả kia có ý nghĩa gì?
+
+30
+00:02:01,360 --> 00:02:03,700
+Giả sử như khế ước của các bạn có thời hạn là 10 năm,
+
+31
+00:02:03,700 --> 00:02:07,330
+thì lãi suất sinh lời hằng năm của các bạn là 1.58%.
+
+32
+00:02:07,330 --> 00:02:09,140
+Đó là ý nghĩa của số đó.
+
+33
+00:02:10,139 --> 00:02:13,570
+Giờ chúng ta sẽ quay qua tính Beta.
+
+34
+00:02:13,570 --> 00:02:21,050
+Trước khi tính Beta, tôi sẽ nhấn phím AMZN rồi mới tính.
+
+35
+00:02:22,630 --> 00:02:23,200
+ 
+
+36
+00:02:23,200 --> 00:02:27,230
+Trước khi tính số Beta, hãy nhớ rằng, trong tiết học trước chúng ta đã tính
+
+37
+00:02:27,230 --> 00:02:29,190
+À không, ý tôi là tiết trước chúng ta đã xét Amazon rồi và
+
+38
+00:02:29,190 --> 00:02:33,290
+chúng ta thấy rằng giả định công ty không có nợ cho ra kết quả không khác nhau mấy.
+
+39
+00:02:33,290 --> 00:02:36,960
+Tổng giá trị trên thị trường vào khoảng hơn 350 tỉ đô la.
+
+40
+00:02:36,960 --> 00:02:38,600
+Và số nợ vào khoảng 17 tỉ.
+
+41
+00:02:38,600 --> 00:02:39,940
+Vì vậy nên giả định của chúng ta đúng.
+
+42
+00:02:39,940 --> 00:02:41,960
+Tôi chỉ muốn giải thích rõ ràng hơn thôi.
+
+43
+00:02:43,130 --> 00:02:45,370
+Còn rủi ro bảo hiểm thì sao?
+
+44
+00:02:45,370 --> 00:02:49,065
+Chúng ta đã biết rủi ro tài chính là 1.58, còn rủi ro bảo hiểm thì sao?
+
+45
+00:02:50,852 --> 00:02:54,640
+Chúng ta phải dựa trên các con số tin cậy.
+
+46
+00:02:56,420 --> 00:02:58,820
+Và chúng ta không thể đoán trước kết quả.
+
+47
+00:02:58,820 --> 00:03:02,700
+May mắn ở chỗ đối với trường hợp phi rủi ro, tôi có thể cho các bạn biết tỉ lệ như thế nào trong 19 năm nữa vì
+
+48
+00:03:02,700 --> 00:03:04,980
+tỉ lệ không dổi đối với trường hợp phi rủi ro.
+
+49
+00:03:04,980 --> 00:03:06,030
+Vậy chúng ta sẽ làm gì?
+
+50
+00:03:06,030 --> 00:03:07,180
+Chúng ta sẽ lấy số cũ.
+
+51
+00:03:07,180 --> 00:03:11,270
+Con số chúng ta sẽ dùng gần bằng 5%.
+
+
+52
+00:03:11,270 --> 00:03:13,030
+Tôi sẽ quyết định.
+
+53
+00:03:13,030 --> 00:03:15,750
+Một số sách thậm chí còn lấy đến 7%.
+
+54
+00:03:15,750 --> 00:03:20,210
+Tôi nghĩ số đó thì hơi lí tưởng quá, vì số đó không thực tế
+
+55
+00:03:20,210 --> 00:03:21,260
+về lâu dài.
+
+56
+00:03:21,260 --> 00:03:25,960
+Chúng ta đã có 2 số là 1.58 và 5%, vậy còn lại số nào chưa tính?
+
+57
+00:03:27,640 --> 00:03:29,890
+Hệ số Beta của Amazon.
+
+58
+00:03:29,890 --> 00:03:32,470
+Hóa ra các bạn không cần phải tìm đâu cho xa xôi.
+
+59
+00:03:32,470 --> 00:03:38,440
+Số đó quá phổ biến, nó bằng 1.68.
+
+60
+00:03:38,440 --> 00:03:42,400
+Khi xem bài giảng, nhớ là các bạn phải chọn cho đúng cột.
+
+61
+00:03:42,400 --> 00:03:43,522
+Nó được liệt kê như ở đây.
+
+62
+00:03:43,522 --> 00:03:46,766
+Con số này rất có ảnh hưởng.
+
+63
+00:03:46,766 --> 00:03:51,230
+Tuy nhiên, chú ý là công ty Tài chính Yahoo có lẽ
+
+64
+00:03:51,230 --> 00:03:56,220
+sẽ yêu cầu dữ liệu đến tận 24 tháng để ước lượng số này.
+
+65
+00:03:56,220 --> 00:04:02,270
+Như tôi đã nói trước đó, việc sử dụng các dịch vụ chuyên nghiệp về thống kê,
+
+66
+00:04:02,270 --> 00:04:07,970
+tìm cách cải tiến nó, cải tiến mô hình tính toán CAPM là xu thế của hiện nay.
+
+67
+00:04:07,970 --> 00:04:09,327
+Hãy thử áp dụng với số 1.68.
+
+68
+00:04:09,327 --> 00:04:10,820
+Vậy chúng ta sẽ tính gì?
+
+69
+00:04:14,610 --> 00:04:17,692
+5% nhân với 1.68.
+
+70
+00:04:17,692 --> 00:04:22,478
+5% nhân với 1.68, và tôi sẽ làm tương tự với 1.58.
+
+71
+00:04:22,478 --> 00:04:28,017
+5% nhân với 1.68, và tôi sẽ làm tương tự với 1.58 và
+
+72
+00:04:28,017 --> 00:04:33,433
+Kết quả thu được, nếu làm tròn vài số thì
+
+73
+00:04:33,433 --> 00:04:38,400
+thì kết quả sẽ vào khoảng 10%.
+
+74
+00:04:38,400 --> 00:04:42,640
+Tôi nghĩ kết quả là 9.96.
+
+75
+00:04:42,640 --> 00:04:46,230
+Hóa ra hướng dẫn trong tài liệu đã đơn giản hóa vấn đề.
+
+76
+00:04:46,230 --> 00:04:49,220
+Giả sử kết quả là 10%.
+
+77
+00:04:49,220 --> 00:04:50,393
+Vậy 10% là cái gì?
+
+78
+00:04:50,393 --> 00:04:54,710
+10% là lãi suất của tài sản mà nhà đầu tư mong đợi,
+
+79
+00:04:54,710 --> 00:05:00,620
+cũng tương tự như trường hợp công ty Amazon vậy.
+
+80
+00:05:00,620 --> 00:05:05,540
+Nếu thông số IRR của bạn lớn hơn 10%, bạn sẽ thu được lợi nhuận.
+
+81
+00:05:06,960 --> 00:05:09,640
+Nếu số IRR của bạn nhỏ hơn thì không.
+
+82
+00:05:09,640 --> 00:05:12,878
+Nhưng nếu muốn hiệu quả hơn thì nên tính giá trị hiện tại thuần.
+
+83
+00:05:12,878 --> 00:05:17,240
+Tại 10%, giá trị hiện tại thuần của dòng tiền sẽ thay đổi.
+
+84
+00:05:17,240 --> 00:05:21,650
+Ý tôi là giá trị hiện tại thuần sẽ đánh giá giá trị hiện tại của dòng tiền của bạn.
+
+85
+00:05:21,650 --> 00:05:22,490
+ 
+
+86
+00:05:24,130 --> 00:05:25,670
+Amazon cũng làm như vậy.
+
+87
+00:05:25,670 --> 00:05:31,460
+Nhưng giá trị hiện tại của chúng ta đang được tính theo định nghĩa, 
+
+88
+00:05:31,460 --> 00:05:36,050
+bởi vì các bạn cũng bắt chước mô hình của Amazon để tìm vốn đầu tư của mình.
+
+89
+00:05:36,050 --> 00:05:38,240
+Hi vọng các bạn đã hiểu được vấn đề.
+
+90
+00:05:38,240 --> 00:05:41,400
+Hi vọng các bạn hiểu được thế nào là vốn đầu tư.
+
+91
+00:05:41,400 --> 00:05:47,770
+Mô hình tính toán tiếp theo trong phân tích dự án,
+
+92
+00:05:47,770 --> 00:05:53,960
+mô hình này gói gọn mọi giá trị mà chúng ta cần tính.
+
+93
+00:05:53,960 --> 00:05:56,800
+Vì tôi không muốn để các bạn xoay xở 
+
+94
+00:05:56,800 --> 00:05:59,150
+tính vốn đầu tư mà không có dòng tiền.
+
+95
+00:05:59,150 --> 00:06:03,980
+Tôi muốn tóm gọn nó trước, rồi sau đó các bạn sẽ
+
+96
+00:06:03,980 --> 00:06:06,916
+học thêm các khóa học về tài chính, và cuối cùng xâu chuỗi chúng lại với nhau.
+
+97
+00:06:06,916 --> 00:06:10,731
+Hẹn gặp các bạn sau.
+
+98
+00:06:10,731 --> 00:06:11,870
+Chào tạm biệt.
+

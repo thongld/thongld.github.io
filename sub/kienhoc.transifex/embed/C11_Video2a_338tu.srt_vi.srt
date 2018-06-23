@@ -1,0 +1,160 @@
+0
+00:00:00,000 --> 00:00:00,001
+khang_vgu
+
+
+1
+00:00:00,000 --> 00:00:00,530
+
+2
+00:00:00,530 --> 00:00:06,456
+DR. JONATHAN: giờ ta xem UART, nó là 1 phần 
+của launch pad 
+
+3
+00:00:06,456 --> 00:00:09,590
+launch pad gồm 8 UARTs
+
+4
+00:00:09,590 --> 00:00:16,470
+cái đầu tiên là UART0, 
+nó thuôc PA1 và PA0
+
+5
+00:00:16,470 --> 00:00:20,940
+
+6
+00:00:20,940 --> 00:00:25,540
+PA1 có vai trò là bộ phát, nó là output
+
+7
+00:00:25,540 --> 00:00:31,150
+PA0 là bộ thu, nó là input 
+
+8
+00:00:31,150 --> 00:00:38,050
+UART này thì được nối cứng vào chip debugger
+trên launch pad
+
+9
+00:00:38,050 --> 00:00:50,100
+nối tiếp với dây USB vào PC, như là 1 port COM
+
+10
+00:00:50,100 --> 00:00:55,510
+UART thứ 2 là UART1
+
+11
+00:00:55,510 --> 00:01:00,200
+nó sẽ kết nối với PC5 và PC4
+
+12
+00:01:00,200 --> 00:01:04,970
+đây là bộ phát, và trong trường hợp này, nó 
+sẽ kết nối với launch pad thứ 2 
+
+13
+00:01:04,970 --> 00:01:10,290
+...
+
+14
+00:01:10,290 --> 00:01:16,080
+ta sẽ kết nối PC5 này vào PC4 trên launch pad, và data sẽ chạy theo hướng này
+
+15
+00:01:16,080 --> 00:01:23,850
+trên launch pad, nối ngược PC5 lại vào PC4
+
+16
+00:01:23,850 --> 00:01:27,970
+và đây là bộ thu, 
+đây là bộ phát 
+
+17
+00:01:27,970 --> 00:01:29,410
+ta thấy vai trò đã bị đảo ngược 
+
+18
+00:01:29,410 --> 00:01:33,040
+để nó hoạt động, ta phải xác định Voltage 
+giữa 2 đầu pin này
+
+19
+00:01:33,040 --> 00:01:36,440
+...
+
+20
+00:01:36,440 --> 00:01:39,640
+mỗi khi ta sử dụng UART protocol, 
+ta phải kết nối hết vào GND 
+
+21
+00:01:39,640 --> 00:01:42,730
+...
+
+22
+00:01:42,730 --> 00:01:46,360
+ta còn UART2 
+
+23
+00:01:46,360 --> 00:01:55,960
+nếu ta xài UART2 với PD7 và PD6, và ta muốn 
+kết nối vào thiết bị ngoại vi ở khoảng cách xa 
+
+24
+00:01:55,960 --> 00:02:02,720
+ta có thể lấy bộ thu -> kết nối vào chip 
+driver - Maxim3232
+
+25
+00:02:02,720 --> 00:02:09,919
+...
+
+26
+00:02:09,919 --> 00:02:18,310
+và nó sẽ cho 3 phép, 3 dây: truyền - thu - GND
+
+27
+00:02:18,310 --> 00:02:25,357
+chip driver này cho phép ta kết nối khoảng 
+cách tới 50 feet
+
+28
+00:02:25,357 --> 00:02:27,440
+DR. YERRABALLI: xài dây cáp hả?
+
+29
+00:02:27,440 --> 00:02:32,960
+DR. JONATHAN : yes, cáp nối tới thiết bị ngoại
+vi ở khoảng cách rất xa 
+
+30
+00:02:32,960 --> 00:02:38,100
+đây là bộ thu và đây là GND
+
+31
+00:02:38,100 --> 00:02:40,170
+DR. YERRABALLI: với bộ kết nối DB9
+(hình này)
+
+32
+00:02:40,170 --> 00:02:46,250
+nếu ta đã xài thiết bị cũ, thì ta sẽ thân thuộc 
+với bộ kết nối xài serial port 
+
+33
+00:02:46,250 --> 00:02:51,230
+....
+
+34
+00:02:51,230 --> 00:02:55,230
+nó có 9 pin, nhưng chỉ có 3 cái là cần thiết 
+
+35
+00:02:55,230 --> 00:03:00,310
+pin 3,2 và 5 
+
+36
+00:03:00,310 --> 00:03:05,950
+the transmitter, receiver,
+and common ground.

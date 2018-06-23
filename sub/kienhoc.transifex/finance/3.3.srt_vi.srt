@@ -1,0 +1,525 @@
+1
+00:00:04,610 --> 00:00:06,820
+narcissusdale 13/8/2016
+Chào mừng trở lại với bài toán lớn đầu tiên. 
+
+2
+00:00:06,820 --> 00:00:11,860
+Tôi rất hứng thú với bài toán này. Chúng ta hãy cùng nhìn vào
+
+3
+00:00:11,860 --> 00:00:15,518
+định nghĩa của bài toán này. Tôi đã thay đổi định nghĩa trước một chút,
+
+4
+00:00:15,519 --> 00:00:22,369
+để cho các bạn thấy những bất ngờ có trong đời thực, và để thấy chỉ cần suy nghĩ kỹ càng
+
+5
+00:00:22,369 --> 00:00:27,340
+là ta có thể giải quyết được các bài toán rất, hoặc có vẻ phức tạp. Các bạn dự định theo học tại 
+
+6
+00:00:27,340 --> 00:00:31,809
+một trường đại học. Bạn vay $100,000, bố mẹ là người đại diện, lãi suất là 6%.
+
+7
+00:00:31,809 --> 00:00:38,719
+Nhưng, có chuyển biến bất ngờ của đời thực đây. Bạn cần trả tiền vay hàng tháng. 
+
+8
+00:00:38,719 --> 00:00:45,170
+Nói cách khác, ngân hàng muốn bạn trả nợ mỗi tháng. Bài toán này sẽ cho bạn tiếp xúc với
+
+9
+00:00:45,170 --> 00:00:50,579
+đời thực, với nhiều khó khăn bất ngờ, cũng như với vẻ đẹp của môn Tài chính mà sẽ khiến rắc rối của bạn 
+
+10
+00:00:50,579 --> 00:00:55,720
+trở nên dễ dàng, nhưng phải làm như thế nào? Vậy, việc đầu tiên tôi sẽ làm là
+
+11
+00:00:55,720 --> 00:01:09,60
+vẽ một trục thời gian, với mốc thời gian từ 1 đến 5. Nếu bạn muốn,
+
+12
+00:01:09,60 --> 00:01:16,140
+thì mọi chuyện sẽ trở nên rất đơn giản. Trong 5 năm, 
+
+13
+00:01:16,140 --> 00:01:28,499
+có bao nhiêu tháng? Số tháng, N, bằng 5 x 12, là 60.
+
+14
+00:01:28,499 --> 00:01:35,658
+đây có lẽ là bước quan trọng nhất, không liên quan gì tới bộ môn Tài chính,
+
+15
+00:01:35,659 --> 00:01:41,609
+nhưng góp phần giải quyết vấn đề. Vậy, kỳ hạn là tùy thuộc vào các bạn, và nằm trong khuôn khổ 
+
+16
+00:01:41,609 --> 00:01:45,169
+bản chất của vấn đề. Nếu là trả nợ theo tháng, thì số kỳ hạn là
+
+17
+00:01:45,170 --> 00:01:52,159
+60. điều này sẽ làm đơn giản hóa vấn đề một cách dễ dàng. À, đơn giản hóa một cách dễ dàng nghe có vẻ
+
+18
+00:01:52,159 --> 00:01:53,810
+hơi thừa nhỉ, nhưng thôi không sao.
+
+19
+00:01:53,810 --> 00:02:04,659
+Bây giờ là một mẹo nhỏ đây. R ở đây là tỷ suất đã được công bố, hay gọi là APR (lãi suất phần trăm hàng năm).
+
+20
+00:02:04,659 --> 00:02:10,470
+Nó được công bố mỗi năm. Hầu hết các loại lãi suất đều vậy. nhưng nếu
+
+21
+00:02:10,470 --> 00:02:16,739
+tiền phải trả theo tháng, thì chia nó cho 12. Vậy, lãi suất hàng tháng
+
+22
+00:02:16,739 --> 00:02:25,440
+không còn là 6% nữa, mà là 0,005%. Vì bạn đã chia 0,06 cho 12.
+
+23
+00:02:25,440 --> 00:02:32,430
+Vậy, các bạn đã làm gì? Các bạn đã khớp hai yếu tố này với nhau. Sẽ hợp lý hơn nhiều 
+
+24
+00:02:32,430 --> 00:02:41,810
+nếu làm lãi suất và kỳ hạn tương ứng. Đây là 1 tháng, R bằng 
+
+25
+00:02:41,810 --> 00:02:47,760
+0.06 chia cho 12. Chúng ta đã tìm ra
+
+26
+00:02:47,760 --> 00:02:55,620
+N là 60, R là 0,06/12, tôi sẽ viết tiếp theo nên làm thế nào. 
+
+27
+00:02:55,620 --> 00:03:00,770
+Chúng ta không dùng Excel, mà sẽ tính cùng nhau. Hãy cùng tính xem
+
+28
+00:03:00,770 --> 00:03:01,980
+hàng tháng ta phải trả bao nhiêu tiền.
+
+29
+00:03:01,980 --> 00:03:13,940
+Cùng tính nào! Nhìn vào đây, điểm 0, hàm PMT, số đầu là 
+
+30
+00:03:13,940 --> 00:03:23,210
+5x12, phẩy. Xin lỗi tôi có chút nhầm lẫn nhỏ. Không cần xóa hẳn đi,
+
+31
+00:03:23,210 --> 00:03:34,000
+mắc lỗi cũng là cần thiết mà. Phải là 0,06/12, là lãi suất.
+
+32
+00:03:34,000 --> 00:03:40,980
+Số thứ 2 là N. N = 5x12. Mọi thứ phải đồng nhất đúng không?
+
+33
+00:03:40,980 --> 00:03:43,859
+Vì lãi suất là theo tháng,
+
+34
+00:03:43,860 --> 00:03:48,680
+nên tiếp theo phải là số tháng. Tiếp theo 
+
+35
+00:03:48,680 --> 00:04:00,820
+là giá trị hiện tại PV. Câu hỏi là: giả sử chúng ta trả tiền theo năm, bạn trả khoảng 23.739 đô-la,
+
+36
+00:04:00,820 --> 00:04:06,310
+vậy kết quả ở đây sẽ là gì? Nếu bạn nhấn enter, giá trị hàm PMT ở đây sẽ 
+
+37
+00:04:06,310 --> 00:04:10,50
+nhỏ hơn nhiều, vì thực tế bạn đang trả tiền theo tháng. Và kết quả là,
+
+38
+00:04:10,50 --> 00:04:19,269
+số chính xác là 1933,28. Vậy, 1933,28 là giá trị gì?
+
+39
+00:04:19,269 --> 00:04:25,150
+1933,28 là số tiền bạn sẽ phải trả hàng tháng để bù hết số nợ
+
+40
+00:04:25,150 --> 00:04:32,429
+trong vòng 5 năm, tức là 60 tháng. Các bạn thấy đấy, tôi đã mắc
+
+41
+00:04:32,430 --> 00:04:37,289
+1 lỗi nhỏ lúc tính. Các bạn phải thật cẩn thận khi nhập số bằng Excel. 
+
+42
+00:04:37,289 --> 00:04:43,89
+Vậy, về cơ bản, cái đã thay đổi ở đây là dòng thời gian,
+
+43
+00:04:43,89 --> 00:04:47,819
+vì vậy, tôi khuyên các bạn nên nghĩ tới việc thay đổi dòng thời gian trước,
+
+44
+00:04:47,819 --> 00:04:58,619
+và quan trọng nhất là tìm ra N=60, và R=0,06/12
+
+45
+00:04:58,619 --> 00:05:03,89
+Các bạn có thể tính trong Excel, không nhất thiết phải tính ra trước. Excel sẽ 
+
+46
+00:05:03,89 --> 00:05:08,80
+tự nhận biết được bạn đang làm gì. Giờ hãy làm 1 việc. Chúng ta sẽ làm một bảng biểu chi trả. 
+
+47
+00:05:08,80 --> 00:05:16,279
+Tôi sẽ để các bạn tự tính. Nhưng tôi sẽ làm phần đầu. 
+
+48
+00:05:16,279 --> 00:05:28,39
+đây là số dư lớn, sau đó là tiền trả PMT, lãi, và lãi được hoàn trả. 
+
+49
+00:05:28,39 --> 00:05:35,99
+Tôi sẽ viết nhanh. Nhưng nếu các bạn muốn vừa học vừa vui, hãy tự mình làm. 
+
+50
+00:05:35,99 --> 00:05:41,459
+đầu tiên, thời gian sẽ là 5 năm, 5 hàng, hay là 60 hàng? Là 60 hàng. Bắt đầu nào. Khoản dư đầu kỳ
+
+51
+00:05:41,459 --> 00:05:47,860
+ở tháng đầu tiên là 100.000, bạn phải trả nợ bao nhiêu?
+
+52
+00:05:47,880 --> 00:05:57,899
+1933,28. Tôi sẽ viết nhanh hơn một chút. Vậy, lãi suất
+
+53
+00:05:57,900 --> 00:06:07,649
+bây giờ là bao nhiêu? Lãi suất có giá trị thấp hơn 6 nhiều. Ta có 0,06/12. Vậy,
+
+54
+00:06:07,649 --> 00:06:11,639
+theo như lãi suất bạn sẽ phải trả bao nhiêu? Nhìn vào đây,
+
+55
+00:06:11,639 --> 00:06:19,89
+là khoảng 0,5 phần trăm, đúng không? Vậy đây sẽ là 500, và số còn lại
+
+56
+00:06:19,89 --> 00:06:20,409
+là?
+
+57
+00:06:20,409 --> 00:06:31,789
+1433,28. Giờ tôi sẽ chuyển sang kỳ 2, vẫn là tháng. Tôi còn nợ bao nhiêu tiền?
+
+58
+00:06:31,789 --> 00:06:43,949
+Tôi nợ 98.566,72. Tôi tính thế nào để có giá trị này? Rất đơn giản. Tôi sẽ
+
+59
+00:06:43,949 --> 00:06:46,50
+viết nhanh. ý tưởng rất đơn giản.
+
+60
+00:06:46,50 --> 00:06:47,910
+đây là số bị trừ
+
+61
+00:06:47,910 --> 00:06:56,500
+đây là số trừ. Vậy số nợ tôi còn phải trả là bao nhiêu? 1993,28. điều gì
+
+62
+00:06:56,500 --> 00:07:07,460
+sẽ xảy ra với lãi suất? Nó sẽ giảm xuống còn 492,83, và bạn còn phải trả bao nhiêu. nhiều hay it hơn?
+
+63
+00:07:07,460 --> 00:07:21,150
+Là nhiều hơn. 1440,45. Tôi đã viết hai hàng. Các bạn cố gắng hoàn thành nốt phần còn lại.
+
+64
+00:07:21,150 --> 00:07:25,599
+Tôi không vội làm cho xong nhanh. Tôi chỉ muốn các bạn
+
+65
+00:07:25,600 --> 00:07:31,370
+hiểu rằng máy móc và suy nghĩ đều là như nhau. Chúng ta chuyển sang 
+
+66
+00:07:31,370 --> 00:07:36,440
+một vài câu hỏi thú vị nhé, sau đó sẽ kết thúc với bài tập áp dụng thực sự.
+
+67
+00:07:36,440 --> 00:07:42,830
+Câu hỏi đầu tiên như sau: Các bạn sẽ nợ ngân hàng bao nhiêu tiền
+
+68
+00:07:42,830 --> 00:07:52,130
+sau khi đã trả nợ 18 tháng? Vậy, thay vì tiếp tục làm bảng biểu chi trả,
+
+69
+00:07:52,130 --> 00:07:56,750
+nếu các bạn có thể trả lời câu hỏi này, các bạn đã tới đích, bởi vì bạn có thể điền hết bảng biểu chi trả rồi.
+
+70
+00:07:56,750 --> 00:08:04,490
+Hãy suy nghĩ câu hỏi tôi đã hỏi các bạn. Giờ bạn có 60 - N,
+
+71
+00:08:04,490 --> 00:08:09,500
+và tôi đang hỏi, bạn đã trả nợ tháng thứ 18,
+
+72
+00:08:09,500 --> 00:08:15,910
+bạn nghĩ bạn còn nợ ngân hàng bao nhiêu? Rất nhiều người sẽ bắt đầu tính từ đây, và tôi hay đùa 
+
+73
+00:08:15,910 --> 00:08:20,240
+với những người lao đầu vào tính toán, cứ tính cứ làm
+
+74
+00:08:20,240 --> 00:08:26,300
+bảng biểu chi trả. Sẽ hết cả đời, và sau đó, bạn chết mất rồi. Bạn thấy đấy, không vui vẻ
+
+75
+00:08:26,300 --> 00:08:31,680
+lắm đâu. Sau đây mới là Tài chính. Tài chính là giá trị của mọi thứ sau khi bạn đã trả nợ
+
+76
+00:08:31,680 --> 00:08:39,299
+tháng thứ 18, là những gì còn lại. Vậy bạn nên làm thế này. Lấy PV bằng, số đầu tiên
+
+77
+00:08:39,299 --> 00:08:47,649
+bạn nhập vào PV là gì nhỉ? Hãy nhớ, tôi đã mắc một lỗi nhỏ lúc trước. Vậy, bạn nhập 0,06, nhưng không dừng
+
+78
+00:08:47,649 --> 00:09:00,430
+ở đó. Bạn chia tiếp cho 12. Giờ N còn bao nhiêu? Là 60, không hẳn. Bạn đã
+
+79
+00:09:00,430 --> 00:09:07,719
+trả nợ 18 tháng, vậy còn bao nhiêu? 42. Nếu bạn viết thế này thì có vẻ rất
+
+80
+00:09:07,720 --> 00:09:17,790
+rõ ràng. Rồi. Vậy, bạn có 0,06, PV, bao nhiêu khoản nợ? 42, và tiền nợ
+
+81
+00:09:17,790 --> 00:09:22,329
+là bao nhiêu? Chúng ta đã biết tiền nợ rồi, vì chúng ta đã biết ngân hàng 
+
+82
+00:09:22,330 --> 00:09:30,240
+thu chúng ta bao nhiêu tiền hàng tháng. đáp số ở đây là gì? đáp số là,
+
+83
+00:09:30,240 --> 00:09:46,970
+tôi vừa tính và sẽ viết cho các bạn xem. đáp số là $73.074,70. đây là đáp án. điều thú vị là,
+
+84
+00:09:46,970 --> 00:09:55,120
+mặc dù bạn đã trả 18 tháng nợ, bạn vẫn còn nợ rất nhiều, bạn mới chỉ trả được khoảng $27.000 
+
+85
+00:09:55,120 --> 00:09:59,930
+trong tổng số, và lý do là, trong những kỳ trước, bạn chủ yếu trả phần nào?
+
+86
+00:09:59,930 --> 00:10:06,140
+Dù bạn có 60 kỳ, bạn hầu như chỉ trả lãi, nhưng khi bạn trả 
+
+87
+00:10:06,140 --> 00:10:13,449
+nhiều tiền nợ hơn, chuyện rốt cuộc sẽ xảy ra là, bạn dần dần trả hết số nợ
+
+88
+00:10:13,450 --> 00:10:18,470
+theo thời gian. Vậy chúng ta đi sau hơn một chút và hỏi câu hỏi này:
+
+89
+00:10:18,470 --> 00:10:25,300
+Phần tiền lãi trong khoản nợ phải trả tháng thứ 37 là bao nhiêu? Như tôi đã nói, bạn có thể tạm dừng lại,
+
+90
+00:10:25,300 --> 00:10:30,540
+tự tính toán, hoặc làm trong Excel, hoặc cùng tính với tôi, tùy bạn. Tôi sẽ
+
+91
+00:10:30,540 --> 00:10:32,360
+hết sức khuyên các bạn là,
+
+92
+00:10:32,360 --> 00:10:37,290
+mỗi khi bạn có hứng thú với một bài toán, hãy thư giãn một chút và tự tính toán.
+
+93
+00:10:37,290 --> 00:10:44,980
+Vậy, đây là hai bước làm. Bước một, khi bạn biết mình cần tìm ra PV,
+
+94
+00:10:44,980 --> 00:10:51,519
+bởi vì thành phần lãi rất dễ tính nếu
+
+95
+00:10:51,519 --> 00:10:58,540
+bạn biết điểm khời đầu của số dư một kỳ. Vậy, PV ở khoảng thời gian nào? sau khi trả nợ tháng 36,
+
+96
+00:10:58,540 --> 00:11:01,189
+bởi vì 37 là tháng tiếp theo.
+
+97
+00:11:01,190 --> 00:11:12,630
+Vậy bạn sẽ làm thế này, 0,06/12. đây là số tiền bạn nợ sau khi trả tiền 36 tháng.
+
+98
+00:11:12,630 --> 00:11:20,930
+N còn bao nhiêu? 60 trừ 36 là 24, và số tiền phải trả là 
+
+99
+00:11:20,930 --> 00:11:33,189
+bao nhiêu? 1933,28. Số tiền này, nếu bạn ấn Enter,
+
+100
+00:11:33,190 --> 00:11:41,300
+là số tiền sau khi bạn đã trả 36 tháng, và kết quả là 43.620,34.
+
+101
+00:11:41,300 --> 00:11:52,130
+đây là số dư đầu kỳ của tháng thứ 37. Giờ tôi muốn hỏi bạn
+
+102
+00:11:52,130 --> 00:11:55,750
+phần lãi của tiền nợ phải trả tháng tiếp theo là bao nhiêu? Số tiền phải trả tháng tiếp theo
+
+103
+00:11:55,750 --> 00:12:05,130
+là bao nhiêu? PMT của tháng 37 là bao nhiêu? Chúng ta đều biết, là 1933,28 vì số tiền
+
+104
+00:12:05,130 --> 00:12:09,779
+tôi phải trả hàng tháng là cố định. Tìm ra phần lãi
+
+105
+00:12:09,779 --> 00:12:22,110
+của cái này như thế nào? Phần lãi của tiền nợ phải trả là 43.620,34 nhân với
+
+106
+00:12:22,110 --> 00:12:37,510
+0,06/12. Và kết quả là $218,10. Vậy bạn đã nhận thấy gì rồi?
+
+107
+00:12:37,510 --> 00:12:40,490
+Phần lãi của nó đã
+
+108
+00:12:40,490 --> 00:12:45,500
+giảm xuống một chút, đúng không? Bởi vì số dư đầu kỳ
+
+109
+00:12:45,500 --> 00:12:52,60
+đang giảm, giờ bạn đã trả xong 36 tháng nợ. Thêm một bước nữa 
+
+110
+00:12:52,60 --> 00:12:57,180
+và tôi hứa ta sẽ nghỉ giải lao, nhưng như các bạn đã nói, các bạn lúc nào cũng có thể giải lao. 
+
+111
+00:12:57,180 --> 00:13:01,890
+Lý do mà tôi muốn làm vậy là vì chúng ta đã tập trung vào vấn đề này rất, rất lâu rồi,
+
+112
+00:13:01,890 --> 00:13:16,890
+và cái tôi đang muốn nói đến ở đây là khái niệm "Lãi suất thực (hiệu dụng) hàng năm". Khái niệm này
+
+113
+00:13:16,890 --> 00:13:21,500
+nghĩa là gì? Là lãi suất thực sự tính cả gốc cả lãi (lãi kép)
+
+114
+00:13:21,500 --> 00:13:32,330
+mà bạn trả hàng năm. Hãy nhớ lãi suất công khai là 6%.
+
+115
+00:13:32,330 --> 00:13:38,890
+Vậy ra, nếu tần suất tính lãi là một năm, 6% sẽ có hiệu lực. Nhưng, nếu tần suất
+
+116
+00:13:38,890 --> 00:13:44,29
+tính lãi là một tháng, tiền lãi thực sự mà bạn phải trả trong một năm 
+
+117
+00:13:44,29 --> 00:13:52,890
+là ít hoặc nhiều hơn 6%. đừng quên lãi kép. Nó nhiều hơn 6%.
+
+118
+00:13:52,890 --> 00:13:58,29
+Vậy hãy viết công thức ra, và thử làm với ví dụ. 
+
+119
+00:13:58,29 --> 00:14:08,40
+Lãi suất hiệu dụng hàng năm là, các bạn sẽ thấy ngay thôi, 1 + 0,06
+
+120
+00:14:08,40 --> 00:14:15,449
+nhưng đó là hàng năm. Tỷ suất theo tháng là 12, nên tôi sẽ viết ra 1 đô-la 
+
+121
+00:14:15,450 --> 00:14:22,89
+sẽ trở thành cái gì sau 12 tháng. Nó sẽ trở thành 1 đô và 6 xu, nếu như không có
+
+122
+00:14:22,89 --> 00:14:28,279
+lãi kép trong năm, nhưng khoản 'bán lãi' này, ý tôi là lãi kép tháng. tôi sẽ nâng nó lên
+
+123
+00:14:28,279 --> 00:14:33,890
+lũy thừa 12. Vậy đây là gì? đây là Giá trị tương lai của 1 đô-la với
+
+124
+00:14:33,890 --> 00:14:42,50
+lãi suất và lãi kép. Nhưng, tôi sẽ trừ đi 1, để đi tới
+
+125
+00:14:42,50 --> 00:14:46,899
+kết quả mà các bạn muốn, đó là: Lãi suất có hiệu lực là gì? 
+
+126
+00:14:46,899 --> 00:14:51,450
+Và công thức chung là
+
+127
+00:14:51,450 --> 00:15:02,170
+1 cộng R chia cho K, lũy thừa K rồi trừ 1.  K là gì? K là
+
+128
+00:15:02,170 --> 00:15:11,199
+tần suất tính lãi. Rất dễ tính phải không? Tần suất tính lãi ấy?
+
+129
+00:15:11,200 --> 00:15:15,690
+Bởi vì, nó sẽ được công khai, hoặc trong trường hợp bạn đang vay tiền, nó sẽ được
+
+130
+00:15:15,690 --> 00:15:23,350
+quyết định bởi mức độ thường xuyên bạn trả PMT, nếu là hàng năm, K là 1, nếu là
+
+131
+00:15:23,350 --> 00:15:27,910
+hàng tháng, K là 12, nếu là mỗi nửa năm, K là 2. 
+

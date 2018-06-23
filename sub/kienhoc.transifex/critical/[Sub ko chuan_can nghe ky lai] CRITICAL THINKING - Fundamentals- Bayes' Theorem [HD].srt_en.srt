@@ -1,0 +1,444 @@
+1
+00:00:00,000 --> 00:00:10,290
+my name is Ian Olav i'm a graduate
+student at the cuny graduate center and
+
+2
+00:00:10,290 --> 00:00:14,579
+today I want to talk to you about Bayes
+theorem Bayes theorem is a fact about
+
+3
+00:00:14,580 --> 00:00:18,570
+probabilities a version of which was
+first discovered in the 18th century by
+
+4
+00:00:18,570 --> 00:00:22,830
+thomas bayes theorem is based most
+famous contribution to the mathematical
+
+5
+00:00:22,830 --> 00:00:24,630
+theory of probability
+
+6
+00:00:24,630 --> 00:00:28,590
+it has a lot of applications and some
+philosophers even think it's the key to
+
+7
+00:00:28,590 --> 00:00:31,560
+understanding what it means to think
+rationally
+
+8
+00:00:31,560 --> 00:00:34,530
+in order to understand the theorem
+though we'll have to understand a little
+
+9
+00:00:34,530 --> 00:00:38,940
+bit about probabilities the probability
+of a proposition is the chance or
+
+10
+00:00:38,940 --> 00:00:41,460
+likelihood that that proposition is true
+
+11
+00:00:41,460 --> 00:00:45,629
+suppose you know that one student in a
+class of 20 has the flu but you don't
+
+12
+00:00:45,629 --> 00:00:46,440
+know who
+
+13
+00:00:46,440 --> 00:00:50,218
+if you know that Sally is a student in
+the class you would say the probability
+
+14
+00:00:50,219 --> 00:00:57,90
+that sally has the flu is one in 20 or
+five percent 4.05 we can call this your
+
+15
+00:00:57,90 --> 00:00:59,579
+prior probability that sally has the flu
+
+16
+00:00:59,579 --> 00:01:03,960
+because it's your probability prior to
+finding out any new information as a
+
+17
+00:01:03,960 --> 00:01:11,310
+shorthand will write P of sally has the
+flu equals . 05 suppose now that there
+
+18
+00:01:11,310 --> 00:01:14,729
+are five girls and 15 boys in the class
+now
+
+19
+00:01:14,729 --> 00:01:17,909
+you don't know whether the classes flu
+patient is a boy or a girl
+
+20
+00:01:17,909 --> 00:01:21,240
+but if you were to find out that the
+patient was a girl your probability that
+
+21
+00:01:21,240 --> 00:01:26,339
+sally has the flu would go up to one in
+five or twenty percent or . -
+
+22
+00:01:26,340 --> 00:01:29,909
+on the other hand if you were to find
+out that the patient was a boy your
+
+23
+00:01:29,909 --> 00:01:34,259
+probability that sally has the flu would
+go down to 0 because these things are
+
+24
+00:01:34,259 --> 00:01:35,430
+still iffy though
+
+25
+00:01:35,430 --> 00:01:38,549
+remember you don't yet know whether the
+flu patient is a boy or a girl
+
+26
+00:01:39,210 --> 00:01:43,530
+we'll call these things conditional
+probabilities your probability that
+
+27
+00:01:43,530 --> 00:01:44,880
+sally has the flu
+
+28
+00:01:44,880 --> 00:01:50,130
+conditional on the flu patient being a
+girl is . to your probability that sally
+
+29
+00:01:50,130 --> 00:01:51,89
+has the flu
+
+30
+00:01:51,90 --> 00:01:57,479
+given that the flu patient is a boy is 0
+as a shorthand will write P of sally has
+
+31
+00:01:57,479 --> 00:01:58,200
+the flu
+
+32
+00:01:58,200 --> 00:02:04,380
+given that the flu patient is a girl
+equals . 2 and p of sally has the flu
+
+33
+00:02:04,380 --> 00:02:07,649
+given that the flu patient is a boy
+equals 0
+
+34
+00:02:07,649 --> 00:02:10,979
+the little vertical line tells you that
+we're talking about conditional
+
+35
+00:02:10,979 --> 00:02:12,150
+probabilities
+
+36
+00:02:12,150 --> 00:02:13,470
+now here's
+
+37
+00:02:13,470 --> 00:02:17,160
+the thing sometimes you don't know what
+your conditional probability should be
+
+38
+00:02:17,160 --> 00:02:21,30
+in other words you know that you might
+encounter some new evidence in the
+
+39
+00:02:21,30 --> 00:02:24,990
+future but you don't yet know how that
+evidence should affect the probability
+
+40
+00:02:24,990 --> 00:02:26,940
+you assigned to some hypothesis
+
+41
+00:02:26,940 --> 00:02:31,50
+here's where base theorem comes in it
+gives you a way of figuring out what
+
+42
+00:02:31,50 --> 00:02:35,880
+your conditional probability should be
+so what does base theorem actually say
+
+43
+00:02:35,880 --> 00:02:40,79
+remember our shorthand your probability
+in some hypothesis
+
+44
+00:02:40,80 --> 00:02:43,350
+let's call it h conditional on some new
+piece of evidence
+
+45
+00:02:44,10 --> 00:02:50,820
+let's call it E is written p of h given
+e here's what Bayes theorem tells us
+
+46
+00:02:51,420 --> 00:02:59,160
+p of h given e equals P of e given H
+times P of H divided by P of e
+
+47
+00:02:59,700 --> 00:03:03,899
+in other words it tells us the three
+ingredients that go into the probability
+
+48
+00:03:03,900 --> 00:03:08,730
+of the hypothesis conditional on some
+evidence the probability of the evidence
+
+49
+00:03:08,730 --> 00:03:13,49
+conditional on the hypothesis the prior
+probability of the hypothesis and the
+
+50
+00:03:13,50 --> 00:03:15,330
+prior probability of the evidence
+
+51
+00:03:15,330 --> 00:03:19,950
+let's look at an example imagine that
+one morning you don't feel right and you
+
+52
+00:03:19,950 --> 00:03:22,470
+go on WebMD to figure out what's wrong
+
+53
+00:03:22,470 --> 00:03:27,30
+you're browsing around until you find an
+illness that catches your eye hypothesis
+
+54
+00:03:27,30 --> 00:03:31,200
+itís so the hypothesis under
+consideration is that you've come down
+
+55
+00:03:31,200 --> 00:03:34,440
+with hypothesis itís as you read
+through the list of symptoms
+
+56
+00:03:35,10 --> 00:03:38,880
+you realize that you have all of them in
+other words you have all of the symptoms
+
+57
+00:03:38,880 --> 00:03:42,359
+that you would have if you had
+hypothesized asst
+
+58
+00:03:42,360 --> 00:03:49,920
+so let's say P of e given H or p of
+symptoms given hypothesis itís equals .
+
+59
+00:03:49,920 --> 00:03:54,660
+95 you begin to freak out but then you
+remember Bayes theorem
+
+60
+00:03:55,200 --> 00:03:58,140
+it tells you that there are two more
+things you need to know in order to
+
+61
+00:03:58,140 --> 00:04:01,859
+figure out the probability that you have
+hypothesized asst the prior probability
+
+62
+00:04:01,860 --> 00:04:06,180
+that you would come down with hypothesis
+itís and the prior probability that you
+
+63
+00:04:06,180 --> 00:04:09,360
+would have the symptoms that you
+actually have with a little more
+
+64
+00:04:09,360 --> 00:04:12,660
+googling you discover that the disease
+is extremely rare
+
+65
+00:04:12,660 --> 00:04:19,620
+only 1 in 100,000 people habit so P of
+hypothesis itís is point zero zero zero
+
+66
+00:04:19,620 --> 00:04:21,239
+zero one
+
+67
+00:04:21,238 --> 00:04:26,219
+now for the last ingredient what kind of
+symptoms are they suppose they're very
+
+68
+00:04:26,220 --> 00:04:26,639
+common
+
+69
+00:04:26,639 --> 00:04:31,289
+like a headache and a runny nose lots of
+people have those google tells you one
+
+70
+00:04:31,289 --> 00:04:36,479
+in a hundred so P of symptoms your prior
+probability that you would come down
+
+71
+00:04:36,479 --> 00:04:39,568
+with the symptoms you have is point zero
+one
+
+72
+00:04:39,569 --> 00:04:43,680
+at last you know everything that you
+need to know in order to figure out the
+
+73
+00:04:43,680 --> 00:04:46,680
+probability that you have hypothesis
+given your symptoms
+
+74
+00:04:47,400 --> 00:04:53,279
+bayes theorem tells you that p of
+hypothesis itís given symptoms equals P
+
+75
+00:04:53,279 --> 00:05:00,300
+of symptoms given hypothesis itís times
+P of hypothesis itís / p of symptoms
+
+76
+00:05:00,300 --> 00:05:08,580
+in other words p of hypothesis given
+symptoms equals . 00095 or a little less
+
+77
+00:05:08,580 --> 00:05:13,409
+than one in a thousand Bayes theorem is
+very helpful because in figuring out
+
+78
+00:05:13,409 --> 00:05:15,750
+what to make of some new piece of
+evidence
+
+79
+00:05:15,750 --> 00:05:19,949
+people often ignore the prior
+probability of the hypothesis or Treat p
+
+80
+00:05:19,949 --> 00:05:25,949
+of h given e as P of e given H this
+mistake is sometimes known as the base
+
+81
+00:05:25,949 --> 00:05:29,249
+rate fallacy in the case we just looked
+at
+
+82
+00:05:29,249 --> 00:05:35,69
+p of h given me is very different from P
+of e given h1 is less than one tenth of
+
+83
+00:05:35,69 --> 00:05:39,779
+a percent and the other is ninety-five
+percent without Bayes theorem
+
+84
+00:05:39,779 --> 00:05:42,899
+you might have gotten a lot more worked
+up about hypothesis itís than you
+
+85
+00:05:42,899 --> 00:05:47,909
+needed to be wrapping up then base
+theorem is a formula that tells you how
+
+86
+00:05:47,909 --> 00:05:51,659
+to calculate conditional probabilities
+or the probability you should assign to
+
+87
+00:05:51,659 --> 00:05:54,419
+some hypothesis given a piece of
+evidence
+
+88
+00:05:54,419 --> 00:05:57,930
+even if you forget the formula though
+try to remember that the conditional
+
+89
+00:05:57,930 --> 00:06:02,520
+probability of H given e is determined
+by three things the conditional
+
+90
+00:06:02,520 --> 00:06:07,198
+probability of a given H the prior
+probability of H and the prior
+
+91
+00:06:07,199 --> 00:06:11,339
+probability of eight if you leave one of
+those three things out
+
+92
+00:06:11,339 --> 00:06:12,389
+you don't have a complete picture
+

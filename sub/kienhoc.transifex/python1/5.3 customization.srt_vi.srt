@@ -1,0 +1,213 @@
+1
+00:00:02,070 --> 00:00:06,630
+dungpham12002 28.06.2016 Thao reviewed
+Trực quan hóa dữ liệu vừa là công việc khoa học,
+vừa là một nghệ thuật. Bạn phải dùng trí óc
+
+Data visualization is both a science, and
+an art. You have to use your intelligence
+
+2
+00:00:06,630 --> 00:00:12,230
+để hiểu dữ liệu, cũng như óc sáng tạo để
+thông qua dữ liệu mà kể lên một câu chuyện.
+
+3
+00:00:12,230 --> 00:00:17,480
+Có rất nhiều cách để trực quan hóa dữ liệu.
+Trước hết, có nhiều loại biểu đồ khác nhau. Và với
+
+4
+00:00:17,480 --> 00:00:23,840
+mỗi biểu đồ, bạn có vô vàn cách tùy chỉnh
+như thay đổi màu sắc, hình dạng, chú thích, trục biểu diễn v.v..
+
+5
+00:00:23,840 --> 00:00:28,470
+tùy theo dữ liệu và câu chuyện
+mà bạn muốn truyền tải
+
+6
+00:00:28,470 --> 00:00:30,099
+qua dữ liệu đó.
+
+7
+00:00:30,099 --> 00:00:35,289
+Bởi vì có rất nhiều tùy chỉnh bạn có thể thực hiện,
+nên cách học tốt nhất sẽ là qua ví dụ.
+
+8
+00:00:35,289 --> 00:00:40,090
+Trong video này, ta sẽ tùy chỉnh
+biểu đồ về dân số thế giới để giúp nó
+
+9
+00:00:40,090 --> 00:00:44,840
+trông đẹp hơn. Và trong phần bài tập, bạn sẽ
+được tạo biểu đồ bong bóng nổi tiếng
+
+10
+00:00:44,840 --> 00:00:47,820
+biểu diễn mức độ phát triển toàn cầu của Hans Rosling.
+
+11
+00:00:47,820 --> 00:00:52,190
+Đầu tiên, ta sử dụng phần code trong chương trình này
+để tạo một biểu đồ đường đơn giản. Nó cho thấy
+
+12
+00:00:52,190 --> 00:00:57,879
+sự tăng trưởng dân số thế giới cùng với dự báo
+cho đến năm 2100, theo ước tính của
+
+13
+00:00:57,879 --> 00:01:02,100
+Liên Hợp Quốc. Tôi thích biểu đồ này,
+bởi nó cho thấy sự bùng nổ dân số hiện
+
+14
+00:01:02,100 --> 00:01:06,470
+đang diễn ra, và sẽ chậm lại
+về cuối thế kỉ này. Tuy nhiên,
+
+15
+00:01:06,470 --> 00:01:11,229
+có nhiều thứ cần được cải thiện. Thứ nhất,
+ta cần nêu rõ ta đang trình bày 
+
+16
+00:01:11,229 --> 00:01:15,299
+dữ liệu gì, nhất là cho những người xem
+biểu đồ lần đầu tiên. Thứ hai,
+
+17
+00:01:15,299 --> 00:01:20,320
+tôi muốn thông điệp về sự bùng nổ dân số
+trở nên nổi bật hơn, có mở đầu kết thúc rõ ràng.
+
+18
+00:01:20,320 --> 00:01:25,009
+Việc đầu tiên bạn luôn phải làm là ghi chú thích
+cho các trục bằng cách thêm
+
+19
+00:01:25,009 --> 00:01:29,450
+các hàm xlabel và ylabel. Bạn phải thực hiện
+điều này trước khi gọi lệnh show(). Nếu bạn
+
+20
+00:01:29,450 --> 00:01:33,119
+cho chạy chương trình, kết quả sẽ là biểu đồ trên.
+
+21
+00:01:33,119 --> 00:01:37,220
+Chúng ta cũng sẽ thêm tên cho biểu đồ
+với hàm title. Ta đưa vào tên biểu đồ là
+
+22
+00:01:37,220 --> 00:01:41,399
+"Dự đoán về dân số thế giới" (World Population Projections)
+làm đối số.
+
+23
+00:01:41,399 --> 00:01:46,659
+Vậy ta ít nhất đã biết được biểu đồ của ta
+nói về gì rồi! Điều tiếp theo tôi muốn làm
+
+24
+00:01:46,659 --> 00:01:51,939
+là thay đổi các vạch mốc trên trục tung.
+Ta cần ghi rõ đơn vị là hàng tỉ. Thêm nữa,
+
+25
+00:01:51,939 --> 00:01:56,630
+trục này phải bắt đầu ở mốc 0 để
+có cái nhìn hoàn chỉnh hơn về tăng trưởng dân số.
+
+26
+00:01:56,630 --> 00:02:00,909
+Để làm điều này, bạn có thể dùng lệnh yticks.
+Đối số sẽ là một list tất cả các mốc
+
+27
+00:02:00,909 --> 00:02:04,890
+cần có trong biểu đổ. Ta sẽ bắt đầu từ 0,
+và dừng lại ở 10.
+
+28
+00:02:04,890 --> 00:02:08,950
+Ta cũng có thể thêm đối số thứ hai
+vào hàm yticks là một list các tên hiển thị
+
+29
+00:02:08,950 --> 00:02:13,840
+của các vạch mốc. Ta dùng cách này để thêm
+chữ B, nhằm thể hiện rằng các số trong biểu đồ
+
+30
+00:02:13,840 --> 00:02:16,020
+có giá trị hàng tỉ.
+
+31
+00:02:16,020 --> 00:02:20,490
+Tiếp theo, ta hãy thêm vào một số dữ liệu trước đây
+nhằm nhấn mạnh sự bùng nổ dân số
+
+32
+00:02:20,490 --> 00:02:26,620
+trong 60 năm qua. Trên Wikipedia, ta có thể
+tìm được dữ liệu về dân số thế giới trong các năm 1800,
+
+33
+00:02:26,620 --> 00:02:31,610
+1850 và 1900. Ta sẽ viết chúng dưới dạng list
+và nối chúng vào đầu các list dữ liệu 
+
+34
+00:02:31,610 --> 00:02:36,890
+ta đã có bằng dấu cộng. 3 điểm dữ liệu
+sẽ được thêm vào biểu đồ, cho ta một
+
+35
+00:02:36,890 --> 00:02:38,990
+bức tranh toàn cảnh hơn.
+
+36
+00:02:38,990 --> 00:02:42,610
+Điều cuối cùng tôi muốn làm là tô màu
+cho khoảng dưới đường biểu diễn của biểu đồ,
+
+37
+00:02:42,610 --> 00:02:46,670
+bởi tôi nghĩ sẽ đẹp mắt hơn nếu bạn có thể
+thấy diện tích của phần đó mở rộng theo thời gian,
+
+38
+00:02:46,670 --> 00:02:50,760
+cũng giống như dân số vậy. Để làm vậy, ta thay
+lệnh plot bằng lệnh fill_between.
+
+39
+00:02:50,760 --> 00:02:55,120
+Các đối số lần lượt là list dữ liệu của trục hoành, trục tung;
+số 0 - để tô màu cho đến vạch 0,
+
+40
+00:02:55,120 --> 00:02:59,310
+cuối cùng là màu cần tô,
+trong ví dụ này là màu xanh lá (green).
+
+41
+00:02:59,310 --> 00:03:09,090
+Đó chính là cách biến một biểu đồ đường thông thường
+thành hình minh họa sinh động kể lên một câu chuyện!
+
+42
+00:03:09,090 --> 00:03:13,870
+Bây giờ đến lượt bạn. Hãy làm phần bài tập,
+tùy chỉnh dần biểu đồ và trở thành
+
+43
+00:03:13,870 --> 00:03:15,060
+Hans Rosling tiếp theo!
+

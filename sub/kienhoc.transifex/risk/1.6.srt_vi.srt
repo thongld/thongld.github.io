@@ -1,0 +1,594 @@
+0
+00:00:05,067 --> 00:00:09,760
+Rất vui được gặp lại, tôi sẽ vẽ biểu đồ phân bố trên này.
+https://youtu.be/Rn1Fna63VrA
+1
+00:00:14,732 --> 00:00:16,365
+Nhưng tôi sẽ không vẽ trục đứng,
+
+2
+00:00:16,364 --> 00:00:18,478
+bởi vì chúng ta đã hiểu xác suất là gì.
+
+3
+00:00:18,478 --> 00:00:23,875
+Câu hỏi đặt ra là,
+làm sao để tính được giá trị trung bình của lãi suất.
+
+4
+00:00:23,875 --> 00:00:27,585
+Tôi sẽ giới thiệu hai cách để làm điều này.
+
+5
+00:00:27,585 --> 00:00:30,302
+Thực ra chúng cùng là một, 
+chỉ có một chút khác biệt.
+
+6
+00:00:30,302 --> 00:00:35,368
+Cách thứ nhất, tôi sẽ viết nó ra
+
+7
+00:00:35,368 --> 00:00:41,097
+tôi đặt nó là R gạch ngang.
+
+8
+00:00:41,097 --> 00:00:42,137
+Sao lại đặt là R?
+
+9
+00:00:42,137 --> 00:00:44,914
+Vì chúng ta đang quan tâm đến lãi suất.
+
+10
+00:00:44,914 --> 00:00:50,963
+Nên nhớ là bạn có cũng có thể đặt là x gạch ngang,
+hay y gạch ngang trong bảng thống kê.
+
+11
+00:00:50,963 --> 00:00:54,069
+Nhưng vì ta đang quan tâm đến lãi suất,
+nên tôi sẽ đặt như vậy. 
+
+12
+00:00:54,069 --> 00:01:01,637
+Gỉa sử đây là lãi suất của phân bố IBM.
+
+13
+00:01:01,637 --> 00:01:06,641
+Câu hỏi đặt ra là,
+lãi suất kỳ vọng trung bình của IBM là bao nhiêu? 
+
+14
+00:01:06,641 --> 00:01:10,412
+Tin mừng là, nếu chúng được phân bố chuẩn.
+
+15
+00:01:10,412 --> 00:01:12,249
+Nếu bạn xem xét dữ liệu của từng ngày.
+
+16
+00:01:12,249 --> 00:01:14,497
+Hầu như sẽ không có phân bố chuẩn. 
+
+17
+00:01:14,497 --> 00:01:15,584
+Sẽ có rất nhiều lên xuống.
+
+18
+00:01:15,584 --> 00:01:20,076
+Nhưng nếu bạn tổng hợp dữ liệu,
+và chuyển sang đánh giá dữ liệu theo tháng,
+
+19
+00:01:20,076 --> 00:01:22,294
+chúng sẽ có dạng chuẩn hơn.
+
+20
+00:01:22,294 --> 00:01:23,158
+Tiến đến dữ liệu theo năm,
+
+21
+00:01:23,158 --> 00:01:27,767
+sẽ càng chuẩn hơn nữa,
+bởi đó là cách phân bố chuẩn hình thành.
+
+22
+00:01:27,767 --> 00:01:29,424
+R gạch ngang sẽ bằng cái gì?
+
+23
+00:01:29,424 --> 00:01:30,658
+Để tôi viết nó ra.
+
+24
+00:01:30,658 --> 00:01:35,773
+Đây là ký hiệu tổng.
+
+25
+00:01:35,773 --> 00:01:39,866
+pi Ri.
+
+26
+00:01:39,866 --> 00:01:42,049
+Tạm dừng ít phút.
+
+27
+00:01:42,049 --> 00:01:46,939
+Như tôi đã nói, trong phần tới của chương lớn,
+tôi sẽ thực hiện nhiều phép tính lớn.
+
+28
+00:01:46,939 --> 00:01:47,864
+Vậy pi là gì?
+
+29
+00:01:47,864 --> 00:01:52,861
+pi chính là xác suất.
+
+30
+00:01:57,501 --> 00:01:59,319
+Còn Ri là gì?
+
+31
+00:01:59,319 --> 00:02:01,512
+chính là lãi suất.
+
+32
+00:02:04,061 --> 00:02:06,440
+Bao nhiêu khả năng có thể xảy ra?
+
+33
+00:02:06,440 --> 00:02:10,313
+Đó có thể là một phân bố rời rạc,
+
+34
+00:02:10,312 --> 00:02:13,811
+hay cũng có thể là một phân bố liên tục.
+
+35
+00:02:13,811 --> 00:02:16,129
+Phân bố rời rạc có nghĩa là gì?
+
+36
+00:02:16,129 --> 00:02:19,581
+Nghĩa là chỉ có bốn hoặc năm khả năng có thể xảy ra,
+
+37
+00:02:19,581 --> 00:02:21,605
+ta sẽ xét chúng và nhân với giá trị.
+
+38
+00:02:21,605 --> 00:02:22,631
+Còn phân bố liên tục là gì?
+
+39
+00:02:22,631 --> 00:02:26,295
+Nghĩa là bạn phải xem xét toàn bộ một phân bố như này,
+
+40
+00:02:26,295 --> 00:02:30,866
+chứ không phải chỉ là bốn hay năm khả năng có thể xảy ra.
+
+41
+00:02:30,866 --> 00:02:34,250
+Đây là công thức chung.
+
+42
+00:02:34,250 --> 00:02:39,901
+Còn một cách tính khác,
+mà có thể bạn đã gặp nhiều lần.
+
+43
+00:02:39,901 --> 00:02:43,491
+Gỉa sử bạn có N số lượng khả năng có thể xảy ra.
+
+44
+00:02:43,491 --> 00:02:46,651
+Bạn sẽ làm như này.
+
+45
+00:02:46,651 --> 00:02:47,965
+Điều đó có nghĩa là gì?
+
+46
+00:02:47,965 --> 00:02:53,658
+Nghĩa là tất cả khả năng đều có thể xảy ra,
+và bằng với 1 trên N.
+
+47
+00:02:53,658 --> 00:02:57,532
+Đây là một giả định rất phổ biến.
+
+48
+00:02:57,532 --> 00:03:02,372
+Thường mỗi khi tính toán,
+ta sẽ sử dụng công thức này.
+
+49
+00:03:02,372 --> 00:03:07,328
+Nhưng bạn phải luôn nhớ kỹ công thức chung này.
+
+50
+00:03:07,328 --> 00:03:09,838
+Khi bạn sử dụng công thức thứ hai này.
+
+51
+00:03:09,838 --> 00:03:14,868
+Nghĩa là bạn đang giả sử
+mỗi giá trị R đều có khả năng xảy ra như nhau.
+
+52
+00:03:14,868 --> 00:03:17,129
+Hãy nhớ kỹ điều đó.
+
+53
+00:03:17,129 --> 00:03:19,353
+Điều mà tôi sắp giới thiệu là,
+
+54
+00:03:19,353 --> 00:03:24,373
+Tôi sẽ không dừng lại ở đây,
+mà chuyển sang phần tiếp theo: phương sai.
+
+55
+00:03:24,373 --> 00:03:29,103
+Lý do tôi sẽ nói về phương sai
+đơn giản là vì
+
+56
+00:03:29,103 --> 00:03:30,976
+chúng ta sẽ không hài lòng chỉ với những con số này.
+
+57
+00:03:30,976 --> 00:03:35,558
+Gỉa sử ta đã tính ra được
+giá trị trung bình là 7%.
+
+58
+00:03:35,558 --> 00:03:38,545
+Những người luôn muốn tránh rủi ro như ta
+sẽ lo lắng về điều gì?
+
+59
+00:03:38,545 --> 00:03:44,570
+Ta sẽ không lo lắng khi mọi thứ xảy ra
+về phía bên này.
+
+60
+00:03:44,570 --> 00:03:47,907
+Mà ta sẽ lo lắng phía bên này.
+
+61
+00:03:47,907 --> 00:03:52,846
+Chúng ta bắt đầu lo lắng và suy nghĩ
+
+62
+00:03:52,846 --> 00:03:54,957
+những thứ này có nghĩa là gì?
+
+63
+00:03:54,957 --> 00:03:58,655
+Những phần mở rộng này có nghĩa là gì?
+
+64
+00:03:58,655 --> 00:04:06,564
+Giờ ta sẽ nói về yếu tố quan trọng thứ hai
+của lãi suất rủi ro.
+
+65
+00:04:06,564 --> 00:04:11,493
+Thứ nhất là giá trị trung bình, thứ hai là phương sai,
+và nếu đây là phân bố chuẩn
+
+66
+00:04:11,493 --> 00:04:12,845
+ta không cần phải tính thêm cái gì khác nữa.
+
+67
+00:04:12,845 --> 00:04:14,050
+Hãy bắt đầu với phương sai.
+
+68
+00:04:14,050 --> 00:04:16,749
+Phương sai dùng để đo cái gì?
+
+69
+00:04:16,749 --> 00:04:23,551
+Đối với phân bố của IBM này,
+phần này có giá trị 7%.
+
+70
+00:04:23,551 --> 00:04:25,658
+Phương sai dùng để đo cái gì?
+
+71
+00:04:29,623 --> 00:04:34,439
+Trong phân bố đối xứng này, 
+hai đường này có độ dài bằng nhau.
+
+72
+00:04:34,439 --> 00:04:38,424
+Tôi sẽ không quan tâm tới phần bên này,
+mà chỉ quan tâm tới bên này.
+
+73
+00:04:38,424 --> 00:04:40,594
+Bây giờ ta thử tính giá trị của nó.
+
+74
+00:04:40,594 --> 00:04:44,495
+Tôi sẽ viết ra công thức.
+
+75
+00:04:44,495 --> 00:04:49,275
+Bạn chọn một xác suất,
+
+76
+00:04:49,275 --> 00:04:52,660
+và chọn một biến cố i,
+
+77
+00:04:52,660 --> 00:04:57,850
+sau đó xem độ chênh lệch của nó so với giá trị trung bình.
+
+78
+00:04:57,850 --> 00:05:04,924
+Trong trường hợp này, đây là Ri,
+còn đây là độ phân tán của nó so với giá trị trung bình
+
+79
+00:05:04,924 --> 00:05:06,892
+Bạn áp dụng công thức này cho mọi thứ.
+
+80
+00:05:06,892 --> 00:05:10,068
+Gỉa sử tôi sẽ tính tổng tất cả.
+
+81
+00:05:10,068 --> 00:05:11,688
+Liệu có tính được không?
+
+82
+00:05:11,688 --> 00:05:19,452
+Liệu giá trị tính ra có phải là
+căn bậc hai của sigma.
+
+83
+00:05:19,452 --> 00:05:26,903
+Căn bậc hai sigma là phương sai của lãi suất,
+tuy nhiên, phần mũ chỉ là ước tính.
+
+84
+00:05:26,903 --> 00:05:30,189
+Tôi chỉ dùng những thuật ngữ chuyên nghành
+khá thông dụng.
+
+85
+00:05:30,189 --> 00:05:31,848
+Nếu tôi thực hiện phép tính,
+kết quả là gì?
+
+86
+00:05:34,310 --> 00:05:36,362
+Kết quả sẽ luôn luôn bằng 0.
+
+87
+00:05:36,362 --> 00:05:43,647
+Vì phần âm và phần dương triệt tiêu nhau,
+vì thế tôi căn bậc hai lên.
+
+88
+00:05:43,647 --> 00:05:47,535
+Như vậy phương sai là căn bậc hai
+của độ lệch so với giá trị trung bình.
+
+89
+00:05:47,535 --> 00:05:50,737
+Nó cho bạn biết về
+
+90
+00:05:50,737 --> 00:05:56,081
+độ chênh lệch của lãi suất thực tế
+so với giá trị trung bình. 
+
+91
+00:05:56,081 --> 00:06:01,013
+Là một người muốn tránh rủi ro,
+bạn sẽ lo lắng nhiều hơn
+
+92
+00:06:01,013 --> 00:06:03,779
+về phần đi xuống, chứ không phải phần đi lên.
+
+93
+00:06:03,779 --> 00:06:05,584
+Tuy nhiên, đơn vị của phép tính này là gì?
+
+94
+00:06:05,584 --> 00:06:09,119
+Nhớ rằng đơn vị của giá trị trung bình là phần trăm.
+
+95
+00:06:09,119 --> 00:06:10,684
+Kết quả có thể rất lớn.
+
+96
+00:06:10,684 --> 00:06:12,204
+Khiến việc xử lý khó khăn hơn.
+
+97
+00:06:12,204 --> 00:06:13,040
+Vậy tôi sẽ làm gì?
+
+98
+00:06:13,040 --> 00:06:15,950
+Tôi lấy bình phương của sigma. 
+
+99
+00:06:15,950 --> 00:06:17,857
+Rồi căn bậc hai nó.
+
+100
+00:06:17,857 --> 00:06:21,748
+Ta có được độ lệch chuẩn.
+
+101
+00:06:21,748 --> 00:06:29,451
+Đây là cái được gọi là độ lệch chuẩn.
+
+102
+00:06:29,451 --> 00:06:34,227
+Tôi sẽ không tính ra kết quả
+
+103
+00:06:34,227 --> 00:06:39,002
+tôi chỉ muốn cho bạn thấy
+ví dụ về giá trị trung bình và độ lệch chuẩn
+
+104
+00:06:39,002 --> 00:06:44,479
+khi tính sự phân bố của IBM.
+
+105
+00:06:44,479 --> 00:06:47,791
+Bởi vì nếu không có chúng,
+sẽ không thể nào nhận định về tương lai.
+
+106
+00:06:47,791 --> 00:06:49,969
+Nếu tôi không đưa cho bạn hai hay một vài tham số,
+
+107
+00:06:49,969 --> 00:06:53,951
+để đánh giá về phân bố,
+và so sánh về giá trị của chúng.
+
+108
+00:06:53,951 --> 00:06:56,840
+Tôi luôn luôn so sánh vì mọi thứ đều liên quan đến nhau.
+
+109
+00:06:56,840 --> 00:07:00,830
+Nhưng nếu tôi không thể đưa cho bạn hai tham số này,
+bạn chắc sẽ nghĩ rằng,
+
+110
+00:07:00,830 --> 00:07:02,374
+Điều gì đang xảy ra đây?
+
+111
+00:07:02,374 --> 00:07:04,856
+Có quá nhiều khả năng có thể xảy ra.
+
+112
+00:07:04,856 --> 00:07:08,397
+Làm sao để bạn có thể tính những khả năng này?
+
+113
+00:07:08,397 --> 00:07:13,068
+Nhờ vào mean và radian,
+hay còn gọi là giá trị trung bình và độ lệch chuẩn  .
+
+114
+00:07:13,068 --> 00:07:14,975
+Khi bạn tính căn bậc hai này, bạn sẽ được gì?
+
+115
+00:07:14,975 --> 00:07:16,218
+Một giá trị dương và một giá trị âm,
+
+116
+00:07:16,218 --> 00:07:19,830
+nhưng sẽ không thể nào có một độ lệch chuẩn âm được,
+
+117
+00:07:19,830 --> 00:07:23,071
+vì thế ta sẽ lấy giá trị dương.
+
+118
+00:07:23,071 --> 00:07:25,537
+Bây giờ tôi sẽ tạm nghỉ ở đây.
+
+119
+00:07:25,537 --> 00:07:30,116
+Tôi muốn bạn hãy thu thập dữ liệu từ một nguồn nào đó.
+
+120
+00:07:30,116 --> 00:07:32,973
+Dữ liệu về lượng mưa, hay bất cứ dữ liệu nào bạn thích
+
+121
+00:07:32,973 --> 00:07:36,743
+nếu như bạn chưa từng làm thống kê,
+hãy cứ thử với nó.
+
+122
+00:07:36,743 --> 00:07:39,525
+Bạn có thể lấy dữ liệu từ bất cứ nguồn nào bạn muốn.
+
+123
+00:07:39,525 --> 00:07:41,512
+Đó có thể là thống kê tiền quảng cáo.
+
+124
+00:07:41,512 --> 00:07:45,142
+Hay doanh số của một công ty hay bất cứ thứ gì.
+
+125
+00:07:45,142 --> 00:07:47,552
+Hoặc bạn cũng có thể lấy dữ liệu về lãi suất
+
+126
+00:07:47,552 --> 00:07:49,595
+của công ty Amazon chẳng hạn.
+
+127
+00:07:49,595 --> 00:07:51,290
+Dữ liệu luôn sẵn có.
+
+128
+00:07:51,290 --> 00:07:54,529
+Nhưng chỉ là dữ liệu trong vài tháng,
+và không được tính toán cẩn thận.
+
+129
+00:07:54,529 --> 00:07:59,078
+Vì thế khi bạn thực hành tính toán,
+bạn sẽ được làm việc với số liệu thực tế,
+
+130
+00:07:59,078 --> 00:08:00,691
+và ta sẽ nói về chúng sau.
+
+131
+00:08:00,691 --> 00:08:05,593
+Bây giờ hãy tạm dừng ở đây,
+và trở lại với việc làm một vài thống kê.
+
+132
+00:08:05,593 --> 00:08:09,400
+Câu chuyện về thống kê vẫn chưa kết thúc ở đây.
+
+133
+00:08:09,400 --> 00:08:13,087
+Sẽ vẫn có những thống kê
+và có phần phức tạp hơn trước.
+
+134
+00:08:13,087 --> 00:08:18,015
+Chúng tôi muốn giới thiệu về những khái niệm này
+trước khi chuyển sang nội dung tiếp theo
+
+135
+00:08:18,015 --> 00:08:22,486
+nội dung tiếp theo nói về sự áp dụng
+
+136
+00:08:22,486 --> 00:08:25,700
+trong bối cảnh tài chính.
+
+137
+00:08:25,700 --> 00:08:29,529
+Gặp lại bạn sau.
+

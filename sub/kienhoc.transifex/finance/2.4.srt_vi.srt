@@ -1,0 +1,225 @@
+1
+00:00:04,680 --> 00:00:09,350
+narcissusdale 22/07/2016
+https://youtu.be/71o2NXeqOsU
+Ta vẫn đang bàn về khoản thanh toán hàng năm, và tôi đã làm vài 
+ví dụ mẫu cùng các bạn với Giá trị 
+
+2
+00:00:09,350 --> 00:00:15,000
+ tương lai song vẫn có 1 số cấu trúc
+triển khai từ khoản thanh toán hàng năm
+
+3
+00:00:15,10 --> 00:00:18,120
+mà lần đầu nhìn thấy tôi đã nói "Gì đây?"
+
+4
+00:00:18,120 --> 00:00:24,540
+"Nó sẽ hoạt động ra sao?" Nhưng nó lại... rất hữu ích
+thậm chí giả sử bạn sẽ để dành ra 
+
+5
+00:00:24,540 --> 00:00:30,180
+các khoản cố định hàng năm hoặc 
+sẽ thanh toán các khoản cố định cũng rất thực tế
+
+6
+00:00:30,180 --> 00:00:35,780
+vì người ta đều muốn đầu tư theo những cách 
+dễ hiểu, đơn giản
+
+7
+00:00:35,780 --> 00:00:39,530
+không đổi theo từng thời kỳ, rồi sau đó khi bạn nghĩ đến 
+
+8
+00:00:39,530 --> 00:00:46,650
+PMT, giá trị này bắt nguồn từ, chỉ trong giây lát thôi ta sẽ nhận ra
+nó bắt nguồn từ các khoản vay, và bạn nhận khoản vay rồi sau đó thanh toán
+
+9
+00:00:46,650 --> 00:00:50,120
+các dòng tiền trong tương lai và thường thì 
+chúng là những khoản vay cố định, vậy
+
+10
+00:00:50,120 --> 00:00:55,19
+Đó là nguồn gốc của từ PMT. Giờ ta hãy cùng hãy bắt đầu. Tôi sẽ thay đổi 1 chút
+
+11
+00:00:55,19 --> 00:01:01,680
+và học khái niệm Giá trị 
+hiện tại của khoản thanh toán hàng năm trước, xin hãy chú ý nhìn 
+
+12
+00:01:01,680 --> 00:01:07,790
+lên màn hình và cái các bạn sẽ thấy là, cùng
+cấu trúc của một khoản thanh toán hàng năm, tại đó ba
+
+13
+00:01:07,790 --> 00:01:14,20
+yếu tố đang xảy ra. Bạn cần biết R
+và ta sẽ xác định nó, bạn cần biết N
+
+14
+00:01:14,20 --> 00:01:19,850
+trong trường hợp này là, trường hợp khái niệm là
+3 và bạn cần biết dòng tiền C
+
+15
+00:01:19,850 --> 00:01:24,820
+Đúng không? Bây giờ tôi sẽ đẩy nhanh chút vì các bạn đã gặp trường hợp 
+
+16
+00:01:24,820 --> 00:01:33,550
+này rồi, vậy dòng tiền ở mốc 0 là 0, số năm chiết khấu còn lại, giờ thì ngược lại, đúng không?
+
+17
+00:01:33,550 --> 00:01:34,550
+Vậy các bạn sẽ 
+
+18
+00:01:34,550 --> 00:01:40,890
+chiết khấu chứ không phải mang sang, bạn
+không cần chiết khấu ở mốc 0, bất kỳ số
+
+19
+00:01:40,890 --> 00:01:47,520
+năm nào vì đó là ngày hôm nay. Hãy nhớ rằng 
+đây là trục thời gian bạn có thể vẽ ra
+
+20
+00:01:47,520 --> 00:01:56,570
+với mốc 1,2,3; C,C C và giờ
+ bạn tìm kiếm giá trị ở đâu? Đây
+
+21
+00:01:56,570 --> 00:02:06,500
+chứ không phải ở Giá trị tương lai. Vậy là bạn đang xem xét PV, không phải FV, ok?
+
+22
+00:02:06,510 --> 00:02:11,130
+Vậy, bạn phải chiết khấu bao nhiêu, 
+đầu tiên, không có dòng tiền, không cần chiết khấu?
+
+23
+00:02:11,130 --> 00:02:21,850
+1 năm này; 2 năm này; 3 năm này. Hãy cùng thực hiện, vì ta đã biết cách thực hiện với 1 kỳ
+
+24
+00:02:21,850 --> 00:02:31,180
+Đây sẽ là gì ? 0. Đây sẽ là C, 
+không nhân với 1+R, mà chia
+
+25
+00:02:31,180 --> 00:02:36,730
+chia cho 1+R. Tôi sẽ đặt trong dấu ngoặc đơn vì nếu bạn làm những phép toán
+
+26
+00:02:36,730 --> 00:02:42,510
+tương tự trong Excel, bạn cần đặt các yếu tố tính toan 
+
+27
+00:02:42,510 --> 00:02:46,660
+này cùng nhau ở phần số bị chia và tất cả trong
+ngoặc đơn, hầu hết các bạn có lẽ đã biết 
+
+28
+00:02:46,660 --> 00:02:53,120
+điều đó. Vậy, ta sẽ chia số này cho 1+R,
+bình phương, vậy nếu các bạn không để 
+
+29
+00:02:53,120 --> 00:02:59,190
+1+R trong ngoặc đơn, máy sẽ cho là chỉ có R được bình phương nhưng không phải thế
+
+30
+00:02:59,190 --> 00:03:06,810
+Còn số này sẽ chia cho 1+R, mũ 3. Các bạn thấy có đơn giản không? Mặc dù chữ tôi rất xấu
+
+31
+00:03:06,810 --> 00:03:13,190
+các bạn hẳn đã hiểu rõ chuyện gì đang 
+diễn ra. Giờ tôi sẽ dành chút thời gian
+
+32
+00:03:13,190 --> 00:03:17,230
+viết công thức ra, và
+giải thích 1 lần nữa trước khi ta làm 
+
+33
+00:03:17,230 --> 00:03:35,600
+các ví dụ. Vậy PV của 1 khoản thanh toán hàng năm
+là gì? C chia cho 1+R
+
+34
+00:03:35,600 --> 00:03:46,329
+Có lúc tôi sẽ viết R in hoa, đôi lúc là R in thường, không cần bận tâm đâu. C trên 1+R, bình phương cộng với C trê
+
+35
+00:03:46,330 --> 00:03:48,550
+ 1 cộng R, mũ 3
+
+36
+00:03:48,550 --> 00:03:54,990
+Đúng chưa? Vậy, đây chính là công thức. Một lần nữa, nếu để ý, các bạn có thể đưa C
+
+37
+00:03:54,990 --> 00:03:59,260
+ra ngoài. Các bạn sẽ được gì?
+
+38
+00:03:59,260 --> 00:04:08,140
+1/(1+R) + 1/(1+R)^2
+
+39
+00:04:08,140 --> 00:04:17,760
++ 1/(1+R)^3. Càng viết chữ của tôi trông có vẻ khá hơn. Tôi tự thấy rất ấn tượng với bản thân mình
+
+40
+00:04:17,760 --> 00:04:23,330
+Vậy, đây gọi là Hệ số giá trị hiện tại cho các khoản thanh toán 
+hàng năm. Có thể có nhiều loại ký hiệu khác nhau được sử dụng, thậm chí
+
+41
+00:04:23,330 --> 00:04:35,370
+tôi cũng thế, nhưng các bạn biết đó là khoản thanh toán hàng năm, không phải là một, và
+đó là hàm số của cái gì? R và N, đúng không?
+
+42
+00:04:35,370 --> 00:04:40,710
+Điều thú vị là ở chỗ, hàm này có 3 phần
+vì có bao nhiêu dòng tiền
+
+43
+00:04:40,710 --> 00:04:45,150
+trong đó? Ba dòng tiền, nhưng chúng rất đơn giản, chúng là dòng tiền được bổ sung thêm
+
+44
+00:04:45,150 --> 00:04:51,49
+Dòng tiền chiết khấu thứ nhất, dòng tiền chiết khấu thứ hai, dòng tiền chiết khấu thứ ba
+
+45
+00:04:51,50 --> 00:05:00,530
+Hãy chú ý nhìn vào đây, những con số này thường được in ở cuối sách giáo khoa, nhưng bạn nên
+
+46
+00:05:00,530 --> 00:05:08,549
+dùng Excel. Vậy, nếu tôi hỏi các bạn đâu là
+giá trị tương lai khi gửi 100 lần  giá trị 1 đô la 
+
+47
+00:05:08,550 --> 00:05:14,230
+với mức lãi suất ví dụ là 2%, các bạn
+bây giờ có thể tính rất nhanh
+
+48
+00:05:14,230 --> 00:05:20,980
+nhưng không phải tính nhẩm trong đầu vì nếu không thì sẽ phát điên mất. Tôi nói thế với các bạn vì ta đang nói chuyện 
+
+49
+00:05:20,980 --> 00:05:25,110
+với nhau. Tuy nhiên, Excel quả rất 
+tuyệt. Nó tính toán rất nhanh
+

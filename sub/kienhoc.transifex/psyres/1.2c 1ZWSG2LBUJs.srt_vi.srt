@@ -1,0 +1,280 @@
+0
+00:00:06,589 --> 00:00:13,030
+Khi đưa các biến vào hoạt động, ta cần lưu ý tính độ tin cậy và độ chuẩn xác.
+
+1
+00:00:13,030 --> 00:00:17,869
+Quá trình đưa vào hoạt động đòi hỏi chúng ta phải định nghĩa cách đo khái niệm trừu tượng
+
+2
+00:00:17,869 --> 00:00:23,640
+mà ta đang nghiên cứu, điều quan trọng là cách đo ấy phải vửa đáng tin
+
+3
+00:00:23,640 --> 00:00:25,640
+vừa chuẩn xác.
+
+4
+00:00:25,680 --> 00:00:29,760
+Độ tin cậy đôi khi còn được gọi bằng cái tên dễ gây nhầm lẫn là độ chuẩn xác nội hàm.
+
+5
+00:00:29,760 --> 00:00:33,150
+Đó là mức độ mà ở đó một phương pháp đo cho ra kết quả nhất quán.
+
+6
+00:00:33,150 --> 00:00:38,050
+Độ chuẩn xác, hay còn gọi là độ chuẩn xác ngoại hàm, là mức độ mà ở đó một phương pháp đo 
+
+7
+00:00:38,050 --> 00:00:39,630
+đo được thứ cần đo.
+
+8
+00:00:39,630 --> 00:00:43,640
+Là lời giải đáp cho câu hỏi liệu ta có thực sự đang đó đúng cái ta nghĩ không.
+
+9
+00:00:43,640 --> 00:00:48,670
+Ví dụ về độ tin cậy, hãy tưởng tượng ta muốn đo chiều cao của một người,
+
+10
+00:00:48,670 --> 00:00:50,690
+và ta lấy thước đo.
+
+11
+00:00:50,690 --> 00:00:55,460
+Nếu quan sát, ta có thể thấy theo thước đo thì người này
+
+12
+00:00:55,460 --> 00:00:57,290
+cao khoảng 170cm.
+
+13
+00:00:57,290 --> 00:01:01,930
+Tôi không tự tin về khả năng đo của mình, nên chắc là tôi nên kiểm tra lại
+
+14
+00:01:01,930 --> 00:01:03,300
+bằng cách đo lần nữa.
+
+15
+00:01:03,300 --> 00:01:06,900
+Lần này, vì thước đo khá khó sử dụng, hay bị cong gập,
+
+16
+00:01:06,900 --> 00:01:10,740
+nên tôi có được kết quả khác, 180 cm.
+
+17
+00:01:10,740 --> 00:01:15,750
+Mỗi lần đo thì tôi lại nhận được một kết quả khác nhau.
+
+18
+00:01:15,760 --> 00:01:19,390
+Điều đó cho thấy việc đo này không thực sự đáng tin cậy lắm.
+
+19
+00:01:19,390 --> 00:01:23,480
+Khi tôi đo người này, bạn có thể thấy cách tôi đô không đáng tin cậy, 
+
+20
+00:01:23,500 --> 00:01:26,439
+bởi bạn có thể thấy thước đo bị cong gập.
+
+21
+00:01:26,439 --> 00:01:31,310
+Khi chúng ta sử dụng các thước đo tâm lý, ta không dễ dàng thấy mức độ dao động của chúng,
+
+22
+00:01:31,310 --> 00:01:36,320
+mức độ không đáng tin của chúng, nên ta có các phương pháp cụ thể để đánh giá độ tin cậy.
+
+23
+00:01:36,320 --> 00:01:40,759
+Ta có thể sử dụng nhiều kỹ thuật khác nhau để đánh giá độ tin cậy của phép kiểm tra
+
+24
+00:01:40,759 --> 00:01:48,490
+Chúng bao gồm: Độ tin cậy hình thức tương đương, Độ tin cậy bán phân, và Độ tin cậy kiểm chứng trước - sau.
+
+25
+00:01:48,490 --> 00:01:53,600
+Độ tin cậy hình thức tương đương gồm việc đánh giá hai phiên bản khác nhau của cùng một phép đo.
+
+26
+00:01:53,600 --> 00:01:58,670
+Sau đó, điểm số từ hai lần kiểm tra này được so sánh để xem liệu phép đo có thực sự đáng tin cậy không.
+
+27
+00:01:58,670 --> 00:02:03,179
+Như bạn có thể thấy ở đây, điểm số của một cái tăng thì cái kia cũng tăng,
+
+28
+00:02:03,179 --> 00:02:06,719
+Bạn sẽ để ý thấy rằng chúng hội tụ lại gần nhau hơn trên đường chéo.
+
+29
+00:02:06,719 --> 00:02:10,190
+Không có nhiều sai số hoặc biến thể mà ở đó điểm số thấp.
+
+30
+00:02:10,190 --> 00:02:13,450
+Nhìn chung. chúng tăng ở cả hai mức độ.
+
+31
+00:02:13,450 --> 00:02:17,830
+Điều đó cho thấy phép đo của ta đáng tin cậy, bởi vì hai phiên bản của phép đo
+
+32
+00:02:17,830 --> 00:02:21,230
+đều cho ra một kết quả hiệu quả giống nhau.
+
+33
+00:02:21,230 --> 00:02:25,549
+Độ tin cậy bán phân cũng bao gồm việc đánh giá hai phép đo.
+
+34
+00:02:25,549 --> 00:02:29,760
+Nhưng đôi khi, do tài chính hoặc thời gian còn hạn chế, việc các nhà nghiên cứu phát triển
+
+35
+00:02:29,760 --> 00:02:33,099
+hai phiên bản của phép đo vẫn còn hạn chế.
+
+36
+00:02:33,099 --> 00:02:38,099
+Khi đó, ta có thể phân đôi một phép đo thành 2 phép nhỏ.
+
+37
+00:02:38,099 --> 00:02:42,609
+Từ đây, ta có thể làm như khi nãy, so sánh hiệu quả của nửa đầu phép đo
+
+38
+00:02:42,609 --> 00:02:45,760
+và nửa sau phép đo.
+
+39
+00:02:45,760 --> 00:02:48,120
+Ta có thể lập biểu đồ, và trông nó vẫn giống như trước.
+
+40
+00:02:48,120 --> 00:02:53,190
+Dữ liệu giống nhau vì về mặt khái niệm mà nói, ý tưởng cũng giống hệt nhau.
+
+41
+00:02:53,190 --> 00:02:57,209
+Độ tin cậy kiểm chứng trước - sau là việc cho cùng một nhóm người làm cùng một phép đo
+
+42
+00:02:57,209 --> 00:03:00,370
+hai lần, giữa hai lần sẽ có một khoảng thời gian nghỉ ngơi.
+
+43
+00:03:00,370 --> 00:03:03,709
+Sau đó ta so sánh kết quả của hai lần.
+
+44
+00:03:03,709 --> 00:03:07,870
+Ta có thể biểu thị kết quả thành biểu đồ, và tôi đoán là bạn biết tôi sẽ nói gì rồi đó!
+
+45
+00:03:07,870 --> 00:03:11,540
+Biểu đồ giống hệt khi trước và về mặt khái niệm thì ý tưởng cũng không thay đổi.
+
+46
+00:03:11,540 --> 00:03:17,030
+Ta đang tìm những người có điểm thấp vào lần 1 và cả lần 2,
+
+47
+00:03:17,030 --> 00:03:21,810
+và những người đạt điểm cao ở cả 2 lần.
+
+48
+00:03:21,810 --> 00:03:25,400
+Điểm số giữa hai lần kiểm tra xấp xỉ bằng nhau
+
+49
+00:03:25,400 --> 00:03:29,180
+Điều này cho thấy độ tin cậy của ta cao.
+
+50
+00:03:29,180 --> 00:03:32,980
+Ta nên cẩn thận để chọn được phép đo không chênh lệch sai số quá cao
+
+51
+00:03:32,980 --> 00:03:36,480
+bởi ta cần có được phép đo nhất quán theo thời gian.
+
+52
+00:03:36,480 --> 00:03:38,349
+Còn độ chuẩn xác thì sao?
+
+53
+00:03:38,349 --> 00:03:42,799
+Hãy tưởng tượng tôi đang cố đo chiều cao của một người và họ đứng trên một cái cân sức khỏe.
+
+54
+00:03:42,799 --> 00:03:44,780
+Điều đó có hợp lý không?
+
+55
+00:03:44,780 --> 00:03:47,280
+Khối lượng cơ thể tương quan với chiều cao.
+
+56
+00:03:47,280 --> 00:03:50,829
+Nên có lẽ ta có thể đo chiều cao thông qua việc đo cân nặng.
+
+57
+00:03:50,829 --> 00:03:55,330
+Nhưng đo cân nặng theo kg thì không phải là một cách đo chiều cao chuẩn xác.
+
+58
+00:03:55,330 --> 00:04:00,010
+Đúng là trung bình thì người cao hơn thường sẽ nặng hơn,
+
+59
+00:04:00,010 --> 00:04:02,230
+nhưng đó là một mối tương quan không hoàn hảo.
+
+60
+00:04:02,230 --> 00:04:06,170
+Ta có thể biểu diễn chiều cao và cân nặng trên đồ thị và kết quả 
+
+61
+00:04:06,170 --> 00:04:07,220
+sẽ loạn xạ lên.
+
+62
+00:04:07,220 --> 00:04:09,200
+Có những người cao nhưng cân nặng không đáng kể.
+
+63
+00:04:09,200 --> 00:04:13,280
+Có những người thấp nhưng khá nặng, rất nhiều khả năng.
+
+64
+00:04:13,280 --> 00:04:18,269
+Do đó, dùng cân sức khỏe để đo chiều cao không phải là một ý tưởng hay ho.
+
+65
+00:04:18,269 --> 00:04:22,470
+Nó không giúp ta đo cái mà ta nghĩ là mình đang đo, nên phép đo thu được từ cân sức khỏe
+
+66
+00:04:22,470 --> 00:04:25,700
+không hữu ích lắm nếu dùng để biểu thị chiều cao của một người.
+
+67
+00:04:25,700 --> 00:04:29,610
+Thay vào đó, ta nên dùng thước kẻ hoặc thước đo.
+
+68
+00:04:29,610 --> 00:04:34,330
+Do đó, khi chọn phương pháp đo, quan trọng là ta phải chọn được phương pháp vừa đáng tin
+
+69
+00:04:34,330 --> 00:04:34,930
+vừa chuẩn xác.
+

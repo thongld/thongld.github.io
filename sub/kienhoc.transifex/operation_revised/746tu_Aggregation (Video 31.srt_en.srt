@@ -1,0 +1,403 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/YQAUOQCubG0
+
+1
+00:00:06,230 --> 00:00:08,839
+hello again and welcome back to operations
+management
+
+2
+00:00:08,839 --> 00:00:12,769
+in this session we're gonna be talking about
+inventory aggregation
+
+3
+00:00:12,769 --> 00:00:17,558
+by aggregation on saying that we are
+actually merging
+
+4
+00:00:17,558 --> 00:00:20,780
+warehouses or combining inventory stores
+
+5
+00:00:20,780 --> 00:00:24,379
+when we think about merging inventory
+
+6
+00:00:24,379 --> 00:00:27,750
+there's two different ways to consider
+it one is
+
+7
+00:00:27,750 --> 00:00:31,448
+physical centralization that's we're
+actually taking
+
+8
+00:00:31,449 --> 00:00:34,750
+different warehouses different
+storerooms and combining
+
+9
+00:00:34,750 --> 00:00:40,570
+all of the items into one facility
+another way to consider it is virtually
+
+10
+00:00:40,570 --> 00:00:44,409
+instead of putting them all in one place
+for sharing a single
+
+11
+00:00:44,409 --> 00:00:48,609
+inventory data system said that items
+can be shipped from
+
+12
+00:00:48,609 --> 00:00:53,390
+one facility or another facility but all
+the inventory is kept
+
+13
+00:00:53,390 --> 00:00:59,600
+as a single unit when we do this there
+are advantages and disadvantages
+
+14
+00:00:59,600 --> 00:01:04,680
+the significant advantages of this are
+that we get better accuracy and are
+
+15
+00:01:04,680 --> 00:01:05,789
+forecasting
+
+16
+00:01:05,789 --> 00:01:09,760
+because we're combining lots of different
+places together we lose some of that
+
+17
+00:01:09,760 --> 00:01:10,820
+variability
+
+18
+00:01:10,819 --> 00:01:14,389
+and so we have a much better accuracy
+for forecasting
+
+19
+00:01:14,390 --> 00:01:19,680
+the other advantage is that we can get
+better customer service
+
+20
+00:01:19,680 --> 00:01:23,240
+in terms of our service level
+
+21
+00:01:23,239 --> 00:01:28,879
+with the same level of inventory as if
+ we had a decentralized system
+
+22
+00:01:28,879 --> 00:01:32,119
+disadvantages are if we are locating in
+one place
+
+23
+00:01:32,120 --> 00:01:37,079
+we can increase the response time to the
+customer and we can possibly increase
+
+24
+00:01:37,079 --> 00:01:38,179
+shipment costs
+
+25
+00:01:38,180 --> 00:01:41,380
+when we bring together
+
+26
+00:01:41,379 --> 00:01:44,959
+all the products that are similar and
+we're pulling it together
+
+27
+00:01:44,959 --> 00:01:49,549
+we're going to have a combined safety
+stock now this equation should look
+
+28
+00:01:49,549 --> 00:01:50,829
+somewhat familiar to you
+
+29
+00:01:50,829 --> 00:01:54,439
+because you're creating a safety stock
+by using these statistic
+
+30
+00:01:54,439 --> 00:01:59,170
+associated with service level and a
+standard deviation of the lead time demand
+
+31
+00:01:59,170 --> 00:02:04,250
+what's different about it is that we're
+using a standard deviation of the lead time
+
+32
+00:02:04,250 --> 00:02:06,400
+demand for one location
+
+33
+00:02:06,400 --> 00:02:10,160
+and then multiplying it by the square
+root other number
+
+34
+00:02:10,159 --> 00:02:14,280
+of locations that we're combining so let's 
+see how this works
+
+35
+00:02:14,280 --> 00:02:18,539
+a major online retailer has seven
+warehouses
+
+36
+00:02:18,539 --> 00:02:21,989
+and each warehouse they maintain
+inventory for double-A batteries
+
+37
+00:02:21,990 --> 00:02:26,409
+the average lead time demand for each
+warehous is 200
+
+38
+00:02:26,409 --> 00:02:31,120
+with a standard deviation of 30 we're
+trying to have a 95 percent service
+
+39
+00:02:31,120 --> 00:02:34,409
+level we're going to look at this two
+ways
+
+40
+00:02:34,409 --> 00:02:38,299
+one is we're going to look at an
+individual warehouse
+
+41
+00:02:38,300 --> 00:02:42,830
+and figure out the safety stock and the
+reorder point and then we're also going to
+
+42
+00:02:42,830 --> 00:02:44,900
+take a look at what happens when we
+combine
+
+43
+00:02:44,900 --> 00:02:49,000
+all seven warehouses together calculate the
+safety stock
+
+44
+00:02:49,000 --> 00:02:52,909
+and that reorder point beginning with
+
+45
+00:02:52,909 --> 00:02:57,239
+one warehouse this looks familiar we
+have a standard deviation of lead time
+
+46
+00:02:57,239 --> 00:02:57,769
+demand
+
+47
+00:02:57,769 --> 00:03:02,269
+of 30 we caculate these statistic
+associated with the ninety-five percent
+
+48
+00:03:02,269 --> 00:03:03,510
+service level
+
+49
+00:03:03,509 --> 00:03:08,799
+so when we bring that together we have
+a Z statistic of 1.645
+
+50
+00:03:08,800 --> 00:03:12,709
+we multiply it by the standard deviation
+of lead time demand of
+
+51
+00:03:12,709 --> 00:03:16,370
+30 and we're going to get a safety stock
+at fifty units
+
+52
+00:03:16,370 --> 00:03:18,939
+member we round up
+
+53
+00:03:18,939 --> 00:03:22,378
+then let's caculate the reorder point
+for that warehouse
+
+54
+00:03:22,378 --> 00:03:25,429
+the lead time demand was 200
+
+55
+00:03:25,430 --> 00:03:30,939
+we add in our 50 units for safety and so
+when we get down to 250 units in
+
+56
+00:03:30,939 --> 00:03:31,889
+inventory
+
+57
+00:03:31,889 --> 00:03:35,889
+that's when we're going to place our
+order pretty simple
+
+58
+00:03:35,889 --> 00:03:39,068
+now what happens if we have seven
+warehouses
+
+59
+00:03:39,068 --> 00:03:43,030
+and we combine them together now we're
+going to use
+
+60
+00:03:43,030 --> 00:03:46,269
+that formula for combined
+
+61
+00:03:46,269 --> 00:03:49,599
+safety stock reuse the same Z statistic
+
+62
+00:03:49,598 --> 00:03:54,579
+1.645 the same standard deviation
+of lead time demand of
+
+63
+00:03:54,580 --> 00:03:58,480
+30 but now we're combining 7 warehouses
+together
+
+64
+00:03:58,479 --> 00:04:01,629
+so we're going to multiply it by the square
+root of seven
+
+65
+00:04:01,629 --> 00:04:06,560
+so now our total safety for all seven
+warehouses
+
+66
+00:04:06,560 --> 00:04:13,560
+all combined is 131 units so now
+remember we have one single warehouse
+
+67
+00:04:13,568 --> 00:04:16,870
+that is taking the place of seven
+warehouses
+
+68
+00:04:16,870 --> 00:04:20,489
+so now the reorder point is seven
+
+69
+00:04:20,489 --> 00:04:23,560
+times to 200 for the lead time demand
+
+70
+00:04:23,560 --> 00:04:27,629
+200 was one warehouse we're now looking
+at seven of them
+
+71
+00:04:27,629 --> 00:04:31,579
+we add in our safety stock of 131
+
+72
+00:04:31,579 --> 00:04:37,120
+so the reorder point for the
+combined warehouse is 1,531 units
+
+73
+00:04:37,120 --> 00:04:41,129
+now let's see where the savings come in
+
+74
+00:04:41,129 --> 00:04:45,538
+if we have one combined warehouse
+
+75
+00:04:45,538 --> 00:04:50,279
+we have 131 units in safety stock if we
+have seven
+
+76
+00:04:50,279 --> 00:04:54,918
+individual warehouses each warehouse has
+a safety stock of
+
+77
+00:04:54,918 --> 00:04:57,939
+50 but now there's seven of them
+
+78
+00:04:57,939 --> 00:05:01,319
+so we have 350 units of safety
+
+79
+00:05:01,319 --> 00:05:07,060
+that's a big difference that actually
+ a difference  of 219 units
+
+80
+00:05:07,060 --> 00:05:12,910
+and that means you're not holding on to
+219 units and the cost of
+
+81
+00:05:12,910 --> 00:05:17,150
+those 219 units can be spent elsewhere
+
+82
+00:05:17,149 --> 00:05:20,509
+so that's the major advantage of combining
+the inventory
+
+83
+00:05:20,509 --> 00:05:24,579
+that concludes the whole session on
+inventory
+
+84
+00:05:24,579 --> 00:05:28,069
+and in our next grouping we will be moving
+into Six Sigma
+
+85
+00:05:28,069 --> 00:05:28,668
+I'll see you then
+

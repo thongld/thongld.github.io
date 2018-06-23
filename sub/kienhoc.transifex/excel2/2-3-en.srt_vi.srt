@@ -1,0 +1,72 @@
+1
+00:00:00,480 --> 00:00:04,260
+Ở video trước tôi đã giới thiệu với bạn về biểu đồ Pivot và video này ta sẽ
+
+2
+00:00:04,260 --> 00:00:09,300
+tìm hiểu sâu hơn một chút nhé. Chẳng hạn tôi sẽ cho bạn thấy ở đây
+
+3
+00:00:09,300 --> 00:00:12,240
+bạn tùy thích thêm vào lời ghi chú bao nhiêu trường bạn muốn
+
+4
+00:00:12,520 --> 00:00:18,920
+Ví dụ nếu thêm 'Category' ta sẽ có một màu cho tất cả các kết hợp của sản phẩm và hạng mục.
+
+5
+00:00:19,980 --> 00:00:22,060
+Nhưng giả sử ta chỉ quan tâm đến giày.
+
+6
+00:00:22,060 --> 00:00:26,429
+Ta có thể lọc nó ra bằng cách dùng lọc thông thường. "Ồ không, ta không chỉ quan tâm đến giày...
+
+7
+00:00:26,429 --> 00:00:31,200
+mà còn cả bít tất nữa". Bạn thấy đấy, ta có thể dùng lọc, nhưng nó hơi rắc rối
+
+8
+00:00:31,200 --> 00:00:35,240
+Mỗi một lần phải chọn từng Category rồi sau đó lọc.
+
+9
+00:00:35,250 --> 00:00:41,640
+Ta có thể đơn giản hóa bằng cách sử dụng slicers (lát cắt), một phương pháp rất tốt hỗ trợ 
+
+10
+00:00:41,640 --> 00:00:44,340
+phân tích dữ liệu chuyên sâu. Hãy xem nhé:
+
+11
+00:00:44,920 --> 00:00:51,300
+Nhấp chuột phải vào Category và chọn 'Add as slicer' (thêm một lát cắt), bạn có một bảng điều khiển nhỏ 
+
+12
+00:00:51,300 --> 00:00:57,520
+cho các hạng mục và có thể chọn bất cứ hạng mục nào bạn muốn: áo lót, quần,...
+
+13
+00:00:57,520 --> 00:01:01,400
+Nhấn phím CTRL (hoặc SHIFT) để có thể chọn nhiều hạng mục một lúc.
+
+14
+00:01:01,410 --> 00:01:06,090
+Thật là dễ dàng đúng không? Thử thêm slicer khác cho màu sắc nhé,
+
+15
+00:01:06,090 --> 00:01:10,530
+vì cuối cùng cái ta muốn là tất màu xanh lá mà, nên ta sẽ thêm màu sắc vào nữa.
+
+16
+00:01:10,530 --> 00:01:16,460
+Và: chọn màu xanh lá, rồi chọn tất, và ta có được cái nhìn tổng quan trong các 'lát cắt' của mình
+
+17
+00:01:16,840 --> 00:01:22,360
+Vậy là không cần bất kì công thức hay phân tích phức tạp nào mà thay vào đó bạn chỉ cần chọn các trường bạn muốn,
+
+18
+00:01:22,360 --> 00:01:27,680
+thêm một 'lát cắt' rồi trộn và nối, chờ xem các mẫu thú vị xuất hiện.
+

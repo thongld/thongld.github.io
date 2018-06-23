@@ -1,0 +1,592 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/RNDR6IYbvxY
+
+1
+00:00:00,500 --> 00:00:03,990
+So let's look at simple exponential smoothing.
+
+2
+00:00:03,990 --> 00:00:06,850
+What do we mean by simple exponential smoothing?
+
+3
+00:00:06,850 --> 00:00:09,320
+All we mean is that there's stationary demand.
+
+4
+00:00:09,320 --> 00:00:10,990
+There's no trends or seasonality.
+
+5
+00:00:10,990 --> 00:00:13,570
+
+
+6
+00:00:13,570 --> 00:00:16,280
+So the value of the observation still degrades over time.
+
+7
+00:00:16,280 --> 00:00:17,995
+It is exponential smoothing.
+
+8
+00:00:17,995 --> 00:00:19,870
+And we're going to use some kind of smoothing
+
+9
+00:00:19,870 --> 00:00:23,350
+constant alpha, like we talked about in the last video,
+
+10
+00:00:23,350 --> 00:00:25,170
+where alpha is between 0 and 1.
+
+11
+00:00:25,170 --> 00:00:28,020
+And in practice, you use a value between 0.1 and 0.3.
+
+12
+00:00:28,020 --> 00:00:31,160
+But we'll talk more about that later on.
+
+13
+00:00:31,160 --> 00:00:33,700
+But the underlying model should look very familiar to you.
+
+14
+00:00:33,700 --> 00:00:35,430
+It's a stationary demand.
+
+15
+00:00:35,430 --> 00:00:37,940
+So we assume that there's a level
+
+16
+00:00:37,940 --> 00:00:40,780
+and there's some kind of noise, some kind of error term.
+
+17
+00:00:40,780 --> 00:00:44,180
+So you bounce around this level term, a.
+
+18
+00:00:44,180 --> 00:00:45,920
+And then if I look at the error, we're
+
+19
+00:00:45,920 --> 00:00:48,620
+still assuming that it's distributed identically
+
+20
+00:00:48,620 --> 00:00:51,310
+and independently with a mean of 0,
+
+21
+00:00:51,310 --> 00:00:56,110
+so it's not biased, in variance, whatever that is.
+
+22
+00:00:56,110 --> 00:00:57,900
+And so my forecasting model is going
+
+23
+00:00:57,900 --> 00:01:00,930
+to be exactly what we talked about in the last video.
+
+24
+00:01:00,930 --> 00:01:03,620
+My forecast-- that's the x hat-- sitting
+
+25
+00:01:03,620 --> 00:01:07,170
+in time t for time t plus 1 is going
+
+26
+00:01:07,170 --> 00:01:10,040
+to be equal to alpha-- that's smoothing factor--
+
+27
+00:01:10,040 --> 00:01:13,490
+times my most recent observation of actual demand,
+
+28
+00:01:13,490 --> 00:01:19,880
+xt, times 1 minus alpha times the forecast from my most
+
+29
+00:01:19,880 --> 00:01:24,850
+recent past period to this period, x hat t minus 1 to t.
+
+30
+00:01:24,850 --> 00:01:27,700
+Now, this is a next period kind of forecast.
+
+31
+00:01:27,700 --> 00:01:30,460
+So this is forecasting from this month to next month,
+
+32
+00:01:30,460 --> 00:01:33,590
+from this week to next week, this year to next year.
+
+33
+00:01:33,590 --> 00:01:35,130
+Whatever your periods are.
+
+34
+00:01:35,130 --> 00:01:39,520
+And again, alpha goes between 0 and 1.
+
+35
+00:01:39,520 --> 00:01:41,130
+So we'll get used to this.
+
+36
+00:01:41,130 --> 00:01:43,710
+And again, this is a trade off of new information.
+
+37
+00:01:43,710 --> 00:01:46,930
+That xt is the newest information that we have.
+
+38
+00:01:46,930 --> 00:01:51,150
+And the x hat t minus 1t is the encapsulated
+
+39
+00:01:51,150 --> 00:01:53,160
+of all my most recent forecasts that
+
+40
+00:01:53,160 --> 00:01:55,310
+has all of my historical data.
+
+41
+00:01:55,310 --> 00:01:58,647
+But we can think about this equation in a little bit
+
+42
+00:01:58,647 --> 00:01:59,230
+different way.
+
+43
+00:01:59,230 --> 00:02:01,570
+We can think of it also as error correcting.
+
+44
+00:02:01,570 --> 00:02:03,380
+And this is kind of cool.
+
+45
+00:02:03,380 --> 00:02:05,582
+So here's the same equation.
+
+46
+00:02:05,582 --> 00:02:07,290
+And what I'm going to do here is I'm just
+
+47
+00:02:07,290 --> 00:02:10,560
+going to separate the terms for alpha and collect them.
+
+48
+00:02:10,560 --> 00:02:12,090
+So all I'm going to do is collect
+
+49
+00:02:12,090 --> 00:02:13,990
+the terms that have an alpha in them.
+
+50
+00:02:13,990 --> 00:02:19,180
+And you'll see that's going to be x hat t for t plus 1
+
+51
+00:02:19,180 --> 00:02:23,880
+is equal to x hat t minus 1t plus alpha times xt,
+
+52
+00:02:23,880 --> 00:02:27,230
+the most recent observation, minus x hat t
+
+53
+00:02:27,230 --> 00:02:30,520
+minus 1t, which is my most recent forecast
+
+54
+00:02:30,520 --> 00:02:32,010
+for this period.
+
+55
+00:02:32,010 --> 00:02:35,920
+Another term for this equation right here is the error term.
+
+56
+00:02:35,920 --> 00:02:39,320
+That's the definition of the error, what actually happened
+
+57
+00:02:39,320 --> 00:02:41,770
+minus what we predicted would happen.
+
+58
+00:02:41,770 --> 00:02:45,720
+So you can think of this same exponential smoothing
+
+59
+00:02:45,720 --> 00:02:49,760
+term for simple smoothing as an error correction.
+
+60
+00:02:49,760 --> 00:02:52,060
+My prediction, my forecast sitting
+
+61
+00:02:52,060 --> 00:02:56,450
+in time t for time t plus 1-- so sitting today, looking
+
+62
+00:02:56,450 --> 00:02:58,380
+forecasting for tomorrow-- is going
+
+63
+00:02:58,380 --> 00:03:03,900
+to be equal to my x hat t minus 1t, what I forecasted yesterday
+
+64
+00:03:03,900 --> 00:03:08,190
+for today, plus some kind of alpha of the error term.
+
+65
+00:03:08,190 --> 00:03:10,474
+So I put some fraction of the error term,
+
+66
+00:03:10,474 --> 00:03:11,890
+whether it's positive or negative.
+
+67
+00:03:11,890 --> 00:03:16,050
+I'm going to use that to adjust my most recent forecast.
+
+68
+00:03:16,050 --> 00:03:18,130
+And these are equivalent.
+
+69
+00:03:18,130 --> 00:03:21,500
+So this equation is identical to this equation.
+
+70
+00:03:21,500 --> 00:03:23,950
+I like this equation more, because it shows you
+
+71
+00:03:23,950 --> 00:03:26,004
+the trade off between new and old.
+
+72
+00:03:26,004 --> 00:03:28,420
+But it's equivalent to this, where what we're doing really
+
+73
+00:03:28,420 --> 00:03:32,620
+is correcting some of the error term, the most recent error
+
+74
+00:03:32,620 --> 00:03:34,390
+term.
+
+75
+00:03:34,390 --> 00:03:37,460
+OK, so how do we actually do this in mechanics?
+
+76
+00:03:37,460 --> 00:03:39,210
+So here's an example.
+
+77
+00:03:39,210 --> 00:03:41,010
+I have 10 observations here.
+
+78
+00:03:41,010 --> 00:03:43,540
+And these are next period forecast.
+
+79
+00:03:43,540 --> 00:03:45,640
+So let me explain the chart.
+
+80
+00:03:45,640 --> 00:03:49,830
+So here for this row is observation 1, time period 1.
+
+81
+00:03:49,830 --> 00:03:53,460
+What actually happened was 109 units of demand showed up.
+
+82
+00:03:53,460 --> 00:03:56,270
+And if I'm using exponential smoothing, for here
+
+83
+00:03:56,270 --> 00:03:59,590
+I just assume that the first observation was the forecast,
+
+84
+00:03:59,590 --> 00:04:01,790
+just to keep this started simple.
+
+85
+00:04:01,790 --> 00:04:04,950
+So let's look at the 10th observation.
+
+86
+00:04:04,950 --> 00:04:10,530
+So down here at time period 10, and 96 unit showed up.
+
+87
+00:04:10,530 --> 00:04:15,200
+And my prediction for the next period with an alpha of 0.7
+
+88
+00:04:15,200 --> 00:04:18,930
+is that the next period-- so sitting in time 10
+
+89
+00:04:18,930 --> 00:04:22,510
+for predicting for time 11, t plus 1-- I
+
+90
+00:04:22,510 --> 00:04:25,170
+predict 96 units of demand.
+
+91
+00:04:25,170 --> 00:04:28,980
+If my alpha is 0.1, then my forecast
+
+92
+00:04:28,980 --> 00:04:33,690
+sitting in time 10 for time 11 is 102.6.
+
+93
+00:04:33,690 --> 00:04:35,640
+So hopefully this table makes sense.
+
+94
+00:04:35,640 --> 00:04:39,720
+So these columns here for the alphas underneath,
+
+95
+00:04:39,720 --> 00:04:43,690
+it's the forecast for the next period sitting in that period
+
+96
+00:04:43,690 --> 00:04:45,730
+that it's the row in.
+
+97
+00:04:45,730 --> 00:04:48,020
+So for example, if I want to calculate the forecast
+
+98
+00:04:48,020 --> 00:04:52,780
+for period 6 sitting in period 5 with an alpha of 0.3,
+
+99
+00:04:52,780 --> 00:04:53,620
+what would that be?
+
+100
+00:04:53,620 --> 00:04:58,350
+So I'm in this time period, row five.
+
+101
+00:04:58,350 --> 00:05:04,120
+And so we know that the forecast sitting in time 5 for period 6
+
+102
+00:05:04,120 --> 00:05:06,140
+is going to be alpha, which this case we said
+
+103
+00:05:06,140 --> 00:05:09,770
+was 0.3, times what actually happened in 5, which
+
+104
+00:05:09,770 --> 00:05:16,990
+was 104 plus 1 minus alpha, which is pretty much 0.7,
+
+105
+00:05:16,990 --> 00:05:19,420
+plus what we predicted would happen in 5
+
+106
+00:05:19,420 --> 00:05:21,290
+while sitting in time 4.
+
+107
+00:05:21,290 --> 00:05:22,770
+So what is that?
+
+108
+00:05:22,770 --> 00:05:27,630
+Well, for alpha equals 0.3, it's this-- 100.3.
+
+109
+00:05:27,630 --> 00:05:29,060
+And that's here.
+
+110
+00:05:29,060 --> 00:05:31,660
+So what we're doing is taking a weighted average,
+
+111
+00:05:31,660 --> 00:05:34,580
+a linear combination if you will, between two numbers--
+
+112
+00:05:34,580 --> 00:05:39,000
+104, the most recent observation, and 100.3.
+
+113
+00:05:39,000 --> 00:05:40,930
+And based on our smoothing factor,
+
+114
+00:05:40,930 --> 00:05:44,780
+it's going to determine how close we are to 104
+
+115
+00:05:44,780 --> 00:05:47,900
+or how close we are to 100.3.
+
+116
+00:05:47,900 --> 00:05:52,240
+And the average of that is 101.4.
+
+117
+00:05:52,240 --> 00:05:54,700
+So if I look at this graphically,
+
+118
+00:05:54,700 --> 00:05:58,450
+here is the actual observations for the different time periods.
+
+119
+00:05:58,450 --> 00:06:02,940
+So in time period 1, I had 109 units.
+
+120
+00:06:02,940 --> 00:06:06,520
+Time period 2, it went down to 92 and so forth.
+
+121
+00:06:06,520 --> 00:06:10,920
+So this is just the second column here in the chart.
+
+122
+00:06:10,920 --> 00:06:14,360
+And then if I had a smoothing factor of 0.7,
+
+123
+00:06:14,360 --> 00:06:15,160
+what's that saying?
+
+124
+00:06:15,160 --> 00:06:18,139
+That's saying 70% of the data I'm
+
+125
+00:06:18,139 --> 00:06:19,680
+going to take as the new observation.
+
+126
+00:06:19,680 --> 00:06:21,960
+So that's pretty nervous.
+
+127
+00:06:21,960 --> 00:06:25,180
+It's not going to be exactly like a naive forecast,
+
+128
+00:06:25,180 --> 00:06:26,000
+but it's close.
+
+129
+00:06:26,000 --> 00:06:28,440
+So you can see it reacts very strongly
+
+130
+00:06:28,440 --> 00:06:31,450
+when there's an uptick in demand here, say in period 5,
+
+131
+00:06:31,450 --> 00:06:34,490
+you see the forecast jumps up.
+
+132
+00:06:34,490 --> 00:06:37,420
+So things move.
+
+133
+00:06:37,420 --> 00:06:39,760
+Now as opposed to that, if I stretch this out,
+
+134
+00:06:39,760 --> 00:06:42,940
+and now this is last line is alpha equals 0.1.
+
+135
+00:06:42,940 --> 00:06:44,910
+And you can see it's much calmer.
+
+136
+00:06:44,910 --> 00:06:47,550
+It's more like the cumulative.
+
+137
+00:06:47,550 --> 00:06:50,100
+And so you can see here from this chart what
+
+138
+00:06:50,100 --> 00:06:53,320
+the effect is of the different alphas.
+
+139
+00:06:53,320 --> 00:06:55,920
+And essentially, it's what we've been talking about-- one
+
+140
+00:06:55,920 --> 00:06:56,910
+makes it more nervous.
+
+141
+00:06:56,910 --> 00:06:58,910
+So if my alpha is big, it's going
+
+142
+00:06:58,910 --> 00:07:00,900
+to be much more responsive to any change.
+
+143
+00:07:00,900 --> 00:07:04,579
+That's that yellowish kind of mustard colored one.
+
+144
+00:07:04,579 --> 00:07:06,620
+The dark one is saying kind of just the opposite.
+
+145
+00:07:06,620 --> 00:07:11,400
+It's down to a much smoother, or more calm, forecast.
+
+146
+00:07:11,400 --> 00:07:13,220
+And we'll talk more about which one
+
+147
+00:07:13,220 --> 00:07:17,070
+makes sense in different situations a little later.
+

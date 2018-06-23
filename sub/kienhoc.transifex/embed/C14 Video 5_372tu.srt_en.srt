@@ -1,0 +1,241 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/VNftf5qLpiA
+
+1
+00:00:00,000 --> 00:00:00,322
+
+2
+00:00:00,322 --> 00:00:03,030
+DR. JONATHAN VALVANO: Today, we're
+going to demonstrate aliasing,
+
+3
+00:00:03,030 --> 00:00:06,800
+which is what happens if we
+violate the Nyquist theorem.
+
+4
+00:00:06,800 --> 00:00:09,900
+I've invited our videographer,
+Justin, to participate
+
+5
+00:00:09,900 --> 00:00:12,405
+in this next demonstration.
+
+6
+00:00:12,405 --> 00:00:17,990
+Hey Justin, does your video camera
+capture data in digital form?
+
+7
+00:00:17,990 --> 00:00:19,130
+JUSTIN: Yes, it does.
+
+8
+00:00:19,130 --> 00:00:21,630
+DR. JONATHAN VALVANO: Oooh, so
+it must have a sampling rate.
+
+9
+00:00:21,630 --> 00:00:24,330
+So, do you know what
+that sampling rate is?
+
+10
+00:00:24,330 --> 00:00:25,877
+JUSTIN: 24 frames per second.
+
+11
+00:00:25,877 --> 00:00:27,710
+DR. JONATHAN VALVANO:
+Oooh, so I wonder what
+
+12
+00:00:27,710 --> 00:00:32,920
+happens if I rotate the motor
+at 12 rotations per second.
+
+13
+00:00:32,920 --> 00:00:35,730
+I wonder what would happen?
+
+14
+00:00:35,730 --> 00:00:39,970
+DR. RAMESH YERRABALLI: Oh, I guess it
+has to violate the Nyquist theorem,
+
+15
+00:00:39,970 --> 00:00:42,850
+so we should see the aliasing effect.
+
+16
+00:00:42,850 --> 00:00:46,300
+JUSTIN: Stop talking, let's see it.
+
+17
+00:00:46,300 --> 00:00:48,930
+DR. JONATHAN VALVANO: So
+we're now at 1.3 volts,
+
+18
+00:00:48,930 --> 00:00:50,600
+and we're spinning at that rate.
+
+19
+00:00:50,600 --> 00:00:53,650
+So I'm going to increase the
+voltage so it should spin faster.
+
+20
+00:00:53,650 --> 00:00:56,160
+
+21
+00:00:56,160 --> 00:00:59,750
+And it slowly spins
+up faster and faster.
+
+22
+00:00:59,750 --> 00:01:02,340
+
+23
+00:01:02,340 --> 00:01:05,590
+DR. RAMESH YERRABALLI: OK, ramping up.
+
+24
+00:01:05,590 --> 00:01:13,690
+Ramping up to two frames per
+second, so two rotations per second.
+
+25
+00:01:13,690 --> 00:01:20,610
+Three-- And steady at three.
+
+26
+00:01:20,610 --> 00:01:23,610
+DR. JONATHAN VALVANO: So, we're still
+under the 12 rotations per second,
+
+27
+00:01:23,610 --> 00:01:26,570
+so you should still see the blue dot.
+
+28
+00:01:26,570 --> 00:01:28,395
+So let's go faster and see what happens.
+
+29
+00:01:28,395 --> 00:01:30,960
+
+30
+00:01:30,960 --> 00:01:36,380
+Increasing voltage from
+two to three volts.
+
+31
+00:01:36,380 --> 00:01:38,650
+So it should be speeding even faster.
+
+32
+00:01:38,650 --> 00:01:45,630
+
+33
+00:01:45,630 --> 00:01:52,030
+DR. RAMESH YERRABALLI: So
+we're at six and rising.
+
+34
+00:01:52,030 --> 00:01:58,859
+
+35
+00:01:58,859 --> 00:02:00,650
+DR. JONATHAN VALVANO:
+Let's go even faster.
+
+36
+00:02:00,650 --> 00:02:06,007
+
+37
+00:02:06,007 --> 00:02:07,100
+At four volts.
+
+38
+00:02:07,100 --> 00:02:11,710
+
+39
+00:02:11,710 --> 00:02:15,890
+We cranked up the voltage so
+the motor will spin very fast.
+
+40
+00:02:15,890 --> 00:02:19,840
+As it spins faster and
+faster, watch the white spokes
+
+41
+00:02:19,840 --> 00:02:24,013
+as they appear to first spin
+clockwise and then counterclockwise.
+
+42
+00:02:24,013 --> 00:03:02,110
+
+43
+00:03:02,110 --> 00:03:06,810
+Next we cut the power and the
+motor will start slowing down.
+
+44
+00:03:06,810 --> 00:03:10,560
+As it spins slower and
+slower again, the spokes
+
+45
+00:03:10,560 --> 00:03:14,585
+will appear to spin clockwise
+and then counter clockwise.
+
+46
+00:03:14,585 --> 00:03:26,440
+
+47
+00:03:26,440 --> 00:03:29,650
+What we have witnessed is aliasing.
+
+48
+00:03:29,650 --> 00:03:33,030
+Aliasing occurs when the
+input signal oscillates
+
+49
+00:03:33,030 --> 00:03:37,750
+at a rate greater than or equal
+to one half the sampling rate.
+
+50
+00:03:37,750 --> 00:03:42,000
+In this case, the camera
+samples at 24 frames per second.
+
+51
+00:03:42,000 --> 00:03:47,370
+So any image moving at a rate
+greater than 12 times per second
+
+52
+00:03:47,370 --> 00:03:49,610
+will get all messed up.
+
+53
+00:03:49,610 --> 00:03:53,230
+Aliasing causes the apparent
+rotations per second
+
+54
+00:03:53,230 --> 00:03:57,220
+to be different than the
+actual rotations per second.
+
+55
+00:03:57,220 --> 00:03:59,141

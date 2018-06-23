@@ -1,0 +1,492 @@
+0
+00:00:00,000 --> 00:00:00,170
+https://youtu.be/LCyR13RWcgw
+
+1
+00:00:00,170 --> 00:00:01,795
+All right, let's start building models.
+
+2
+00:00:01,795 --> 00:00:04,010
+And our first model is going to be the simplest.
+
+3
+00:00:04,010 --> 00:00:05,880
+We're going to say that the cost per load
+
+4
+00:00:05,880 --> 00:00:08,080
+is going to be a function of just the distance.
+
+5
+00:00:08,080 --> 00:00:10,710
+So our functional form will be cost per load
+
+6
+00:00:10,710 --> 00:00:14,390
+equals beta 0, the fixed cost, plus beta 1 times distance,
+
+7
+00:00:14,390 --> 00:00:18,280
+where beta 1 is the variable cost per mile.
+
+8
+00:00:18,280 --> 00:00:20,610
+So we will get output such as this.
+
+9
+00:00:20,610 --> 00:00:23,260
+If you run the same model, you'll get the same numbers.
+
+10
+00:00:23,260 --> 00:00:25,960
+Maybe in a different format and in a different sequence,
+
+11
+00:00:25,960 --> 00:00:28,710
+but you should get exactly the same numbers
+
+12
+00:00:28,710 --> 00:00:33,240
+if you run a regression model of this form.
+
+13
+00:00:33,240 --> 00:00:36,240
+So lets go through the results, the output,
+
+14
+00:00:36,240 --> 00:00:37,950
+and then we'll talk about it.
+
+15
+00:00:37,950 --> 00:00:41,970
+First thing you can notice is the r squared of .818,
+
+16
+00:00:41,970 --> 00:00:44,190
+or 82%, roughly.
+
+17
+00:00:44,190 --> 00:00:46,230
+And then the adjusted r squared right beneath it
+
+18
+00:00:46,230 --> 00:00:47,790
+is just a little smaller.
+
+19
+00:00:47,790 --> 00:00:50,490
+It will always be smaller than the r squared,
+
+20
+00:00:50,490 --> 00:00:52,500
+because you're correcting for the number
+
+21
+00:00:52,500 --> 00:00:56,940
+of independent variables that you have in the model.
+
+22
+00:00:56,940 --> 00:01:00,570
+And so we look at this, and what we can interpret this as saying
+
+23
+00:01:00,570 --> 00:01:05,069
+is that I'm explaining about 82% of the variability of cost
+
+24
+00:01:05,069 --> 00:01:07,020
+per load with distance.
+
+25
+00:01:07,020 --> 00:01:08,460
+That's phenomenally high.
+
+26
+00:01:08,460 --> 00:01:09,450
+That's great.
+
+27
+00:01:09,450 --> 00:01:11,460
+I also have the standard error of the model
+
+28
+00:01:11,460 --> 00:01:12,900
+that we can use later.
+
+29
+00:01:12,900 --> 00:01:14,730
+And I have the residual sum of squares
+
+30
+00:01:14,730 --> 00:01:16,470
+and the total sum of squares.
+
+31
+00:01:16,470 --> 00:01:21,150
+Now, if I take the ratio of those, put the RSS over TSS,
+
+32
+00:01:21,150 --> 00:01:25,751
+subtract that from 1, I will get the r squared.
+
+33
+00:01:25,751 --> 00:01:26,250
+Remember?
+
+34
+00:01:26,250 --> 00:01:28,170
+That's all that we're explaining here
+
+35
+00:01:28,170 --> 00:01:30,934
+is the Residual Sum of Squares divided
+
+36
+00:01:30,934 --> 00:01:32,100
+by the Total Sum of Squares.
+
+37
+00:01:32,100 --> 00:01:34,560
+How much am I explaining?
+
+38
+00:01:34,560 --> 00:01:36,300
+And then the bottom table shows, for each
+
+39
+00:01:36,300 --> 00:01:39,460
+of the coefficients, certain output information.
+
+40
+00:01:39,460 --> 00:01:42,180
+So I have for the intercept and distance
+
+41
+00:01:42,180 --> 00:01:44,130
+the coefficient or the estimated value,
+
+42
+00:01:44,130 --> 00:01:47,415
+the standard error for that estimate, the t stat, the p
+
+43
+00:01:47,415 --> 00:01:49,980
+value-- remember, for the hypothesis test
+
+44
+00:01:49,980 --> 00:01:55,470
+that the value is equal to 0 with the alternative hypothesis
+
+45
+00:01:55,470 --> 00:01:59,480
+is that it is not equal to 0, so therefore a lower value,
+
+46
+00:01:59,480 --> 00:02:04,050
+a lower p value means you can more strongly reject
+
+47
+00:02:04,050 --> 00:02:06,960
+the hypothesis, the null hypothesis of 0.
+
+48
+00:02:06,960 --> 00:02:10,139
+So you're looking for that really low p value--
+
+49
+00:02:10,139 --> 00:02:14,850
+then I also have the 95% lower and upper confidence intervals
+
+50
+00:02:14,850 --> 00:02:17,260
+for each of the coefficients.
+
+51
+00:02:17,260 --> 00:02:19,340
+So what can I do with this?
+
+52
+00:02:19,340 --> 00:02:20,980
+How should I interpret this?
+
+53
+00:02:20,980 --> 00:02:23,427
+Well, one thing you can do is have your estimation model,
+
+54
+00:02:23,427 --> 00:02:25,260
+because that's what you've figured out here.
+
+55
+00:02:25,260 --> 00:02:29,490
+By using the coefficients, I can now plug them in.
+
+56
+00:02:29,490 --> 00:02:34,920
+My estimate for beta 0 is 1,282, and my estimate for beta 1
+
+57
+00:02:34,920 --> 00:02:36,960
+is 1.532.
+
+58
+00:02:36,960 --> 00:02:40,500
+So we can say, if I went to predict or estimate
+
+59
+00:02:40,500 --> 00:02:44,310
+what the cost per load will be for a shipment
+
+60
+00:02:44,310 --> 00:02:46,200
+of a certain distance, is going to be
+
+61
+00:02:46,200 --> 00:02:52,410
+$1,282 plus $1.532 times the distance
+
+62
+00:02:52,410 --> 00:02:54,234
+of that length of haul.
+
+63
+00:02:54,234 --> 00:02:54,900
+So that's great.
+
+64
+00:02:54,900 --> 00:02:56,670
+That's how we can use this model.
+
+65
+00:02:56,670 --> 00:02:59,102
+But let's talk a little more how we interpret it.
+
+66
+00:02:59,102 --> 00:03:00,810
+I always like to look at the big picture,
+
+67
+00:03:00,810 --> 00:03:02,650
+and then get down to the parameters.
+
+68
+00:03:02,650 --> 00:03:05,580
+So on the big picture, always look at the adjusted r squared.
+
+69
+00:03:05,580 --> 00:03:08,370
+And what we're saying is we're explaining about 82%
+
+70
+00:03:08,370 --> 00:03:10,770
+of the total variation in cost per load.
+
+71
+00:03:10,770 --> 00:03:11,610
+That's phenomenal.
+
+72
+00:03:11,610 --> 00:03:15,090
+That's a very strong model.
+
+73
+00:03:15,090 --> 00:03:17,550
+Now in practice, you might see lower ones.
+
+74
+00:03:17,550 --> 00:03:19,930
+Especially for some research areas,
+
+75
+00:03:19,930 --> 00:03:22,890
+you'll see very low correlations sometimes.
+
+76
+00:03:22,890 --> 00:03:25,770
+Now, if I look at the independent variables,
+
+77
+00:03:25,770 --> 00:03:27,960
+both the beta 0 and the beta 1 terms
+
+78
+00:03:27,960 --> 00:03:31,860
+seem to make sense both in terms of magnitude and sign.
+
+79
+00:03:31,860 --> 00:03:36,140
+Now, for example, if the distance coefficient, that b1,
+
+80
+00:03:36,140 --> 00:03:38,220
+if that was negative, that would be saying,
+
+81
+00:03:38,220 --> 00:03:40,740
+the further I drive, the less it costs.
+
+82
+00:03:40,740 --> 00:03:42,310
+So that wouldn't make sense.
+
+83
+00:03:42,310 --> 00:03:45,590
+So you always try to look for does the sign make sense
+
+84
+00:03:45,590 --> 00:03:47,190
+and does the magnitude make sense?
+
+85
+00:03:47,190 --> 00:03:49,990
+Because you always want to go in, in my opinion,
+
+86
+00:03:49,990 --> 00:03:52,620
+with some kind of hypothesis how you think the relationship
+
+87
+00:03:52,620 --> 00:03:53,340
+will be.
+
+88
+00:03:53,340 --> 00:03:55,800
+And you're either going to validate or invalidate
+
+89
+00:03:55,800 --> 00:03:57,970
+your hypothesis.
+
+90
+00:03:57,970 --> 00:04:01,050
+So both of these variables, though, are very strong.
+
+91
+00:04:01,050 --> 00:04:04,020
+So all I need to do is look at that p value there.
+
+92
+00:04:04,020 --> 00:04:10,320
+And so this is telling me that it's significant at the .01%.
+
+93
+00:04:10,320 --> 00:04:12,160
+That's exceptionally strong.
+
+94
+00:04:12,160 --> 00:04:14,250
+So I always look at the p value.
+
+95
+00:04:14,250 --> 00:04:17,040
+It's nice to know the standard error and the t stat,
+
+96
+00:04:17,040 --> 00:04:19,680
+but really you're going to use the p-value.
+
+97
+00:04:19,680 --> 00:04:21,600
+So this is the first model.
+
+98
+00:04:21,600 --> 00:04:23,310
+And the next question we have, though,
+
+99
+00:04:23,310 --> 00:04:24,970
+is, OK, where do we go from here?
+
+100
+00:04:24,970 --> 00:04:26,500
+How can we improve it?
+
+101
+00:04:26,500 --> 00:04:28,440
+What potential additions can I make?
+
+102
+00:04:28,440 --> 00:04:30,580
+Does the equipment type matter?
+
+103
+00:04:30,580 --> 00:04:31,810
+Should I include lead time?
+
+104
+00:04:31,810 --> 00:04:32,670
+Does that have an effect?
+
+105
+00:04:32,670 --> 00:04:34,294
+Does the trailer length have an effect?
+
+106
+00:04:34,294 --> 00:04:35,640
+How does the weight influence?
+
+107
+00:04:35,640 --> 00:04:38,010
+Is there some kind of cross-effect?
+
+108
+00:04:38,010 --> 00:04:39,900
+Is there a non-linear relationship
+
+109
+00:04:39,900 --> 00:04:41,880
+with the distance or the weight?
+
+110
+00:04:41,880 --> 00:04:43,650
+All these different things are questions
+
+111
+00:04:43,650 --> 00:04:47,100
+you can test using regression models.
+
+112
+00:04:47,100 --> 00:04:49,380
+It's important, though, that you be logical
+
+113
+00:04:49,380 --> 00:04:51,240
+in your approach and your exploration.
+
+114
+00:04:51,240 --> 00:04:54,570
+Like I said, I think it's important to have some kind
+
+115
+00:04:54,570 --> 00:04:56,220
+of a hypothesis going in.
+
+116
+00:04:56,220 --> 00:04:59,090
+I'm not a fan, personally, of kitchen sink modeling
+
+117
+00:04:59,090 --> 00:05:01,800
+where you put everything in and see what sticks.
+
+118
+00:05:01,800 --> 00:05:03,600
+That's another set of techniques,
+
+119
+00:05:03,600 --> 00:05:05,440
+and we'll talk about those in later courses.
+
+120
+00:05:05,440 --> 00:05:07,480
+But for regression, it's very important,
+
+121
+00:05:07,480 --> 00:05:10,320
+I think, to understand some of the underlying
+
+122
+00:05:10,320 --> 00:05:13,520
+properties of the system you're trying to model.
+

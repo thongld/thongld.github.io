@@ -1,0 +1,437 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/ZoHjGRtl39s
+
+1
+00:00:00,000 --> 00:00:00,980
+
+2
+00:00:00,980 --> 00:00:06,160
+DR. JONATHAN VALVANO: Xin chào, đây là phần giới thiệu những khái niệm cơ bản.
+
+3
+00:00:06,160 --> 00:00:10,800
+DR. RAMESH YERRABALLI: Trong phần này, ta sẽ học về hệ đếm,
+
+4
+00:00:10,800 --> 00:00:16,790
+thiết kế vi điều khiển, và kiến trúc tập lệnh.
+
+5
+00:00:16,790 --> 00:00:17,945
+DR. JONATHAN VALVANO: Đồng ý.
+
+6
+00:00:17,945 --> 00:00:18,330
+DR. RAMESH YERRABALLI: Vâng.
+
+7
+00:00:18,330 --> 00:00:23,990
+Đầu tiên, có 1 câu hỏi, hệ thống nhúng là gì vậy Jon?
+
+8
+00:00:23,990 --> 00:00:27,930
+DR. JONATHAN VALVANO: 1 hệ thống nhúng là kết hợp của
+
+9
+00:00:27,930 --> 00:00:34,730
+điện, hoá học, cơ khí, quang học, máy tính, phần mềm
+
+10
+00:00:34,730 --> 00:00:38,140
+tất cả hợp lại cho 1 mục đích nhất định.
+
+11
+00:00:38,140 --> 00:00:41,640
+Trong lớp này, tôi thêm 1 điều kiện
+
+12
+00:00:41,640 --> 00:00:44,400
+Đó là hệ thống nhúng phải có
+
+13
+00:00:44,400 --> 00:00:48,050
+1 máy tính ở bên trong.
+
+14
+00:00:48,050 --> 00:00:48,720
+DR. RAMESH YERRABALLI: Tốt thôi.
+
+15
+00:00:48,720 --> 00:00:52,320
+Mấy cái anh nói nghe giống tất cả
+
+16
+00:00:52,320 --> 00:00:55,170
+là 1 hệ thống kỹ thuật.
+
+17
+00:00:55,170 --> 00:01:01,040
+Nó có thể là 1 hệ thống hay là phần giao tiếp giữa các hệ thống với nhau.
+
+18
+00:01:01,040 --> 00:01:04,510
+Hệ thống nhúng bao gồm cả 2 phần trên.
+
+19
+00:01:04,510 --> 00:01:07,990
+Chúng là những hệ thống và bạn có giao diện
+
+20
+00:01:07,990 --> 00:01:10,040
+để giao tiếp với những hệ thống này.
+
+21
+00:01:10,040 --> 00:01:11,110
+DR. JONATHAN VALVANO: Chính xác.
+
+22
+00:01:11,110 --> 00:01:11,550
+DR. RAMESH YERRABALLI: Tôi biết.
+
+23
+00:01:11,550 --> 00:01:16,130
+Hãy nhìn 1 số ví dụ.
+
+24
+00:01:16,130 --> 00:01:16,940
+DR. JONATHAN VALVANO: Được.
+
+25
+00:01:16,940 --> 00:01:18,630
+Hãy bắt đầu với mấy thứ tôi thích.
+
+26
+00:01:18,630 --> 00:01:20,520
+Đây là mấy cái máy tạo nhịp tim.
+
+27
+00:01:20,520 --> 00:01:22,360
+Hi vọng là bạn sẽ không phải gắn nó.
+
+28
+00:01:22,360 --> 00:01:28,020
+Nhưng cái thứ này sẽ được gắn vào trong cơ thể và giúp tim của bạn đập
+
+29
+00:01:28,020 --> 00:01:29,040
+đều đặn
+
+30
+00:01:29,040 --> 00:01:35,200
+Bên trong là 1 máy tính, phần mềm để chạy máy tính, van cơ khí
+
+31
+00:01:35,200 --> 00:01:40,890
+phản ứng hoá học giữa van và cơ thể, pin
+
+32
+00:01:40,890 --> 00:01:45,170
+với hoá chất bên trong, tất cả kết hợp lại với 1 mục đích xác định là
+
+33
+00:01:45,170 --> 00:01:47,635
+giúp chúng ta sống lâu hơn.
+
+34
+00:01:47,635 --> 00:01:48,090
+DR. RAMESH YERRABALLI: Tuyệt vời.
+
+35
+00:01:48,090 --> 00:01:53,410
+Cái này quen thuộc với các bạn hơn.
+
+36
+00:01:53,410 --> 00:01:59,920
+Nó có 1 máy tính bên trong, nhưng quan trọng là nó có
+
+37
+00:01:59,920 --> 00:02:01,660
+mấy cái công tắc.
+
+38
+00:02:01,660 --> 00:02:06,200
+Công tắc để điều khiển hoạt động
+
+39
+00:02:06,200 --> 00:02:11,880
+Bạn có màn hình LCD trắng đen.
+
+40
+00:02:11,880 --> 00:02:16,040
+Hệ thống này chạy bằng pin.
+
+41
+00:02:16,040 --> 00:02:18,760
+DR. JONATHAN VALVANO: Nguyên tắc của tôi là khi bạn tìm kiếm hệ thống nhúng xung quanh
+
+42
+00:02:18,760 --> 00:02:22,470
+Hãy nhìn vào mấy thứ chạy bằng điện.
+
+43
+00:02:22,470 --> 00:02:26,090
+Lấy nó ra, và kiếm 1 cái máy tính ở trong.
+
+44
+00:02:26,090 --> 00:02:28,420
+Như bạn thấy, đây là ổ cứng
+
+45
+00:02:28,420 --> 00:02:32,510
+Trong này, phần cơ khí để quay.
+
+46
+00:02:32,510 --> 00:02:37,400
+Phần điện để điều khiển động cơ.
+
+47
+00:02:37,400 --> 00:02:41,284
+Phần quang để đọc vào ghi dữ liệu [Ổ cứng dùng
+
+48
+00:02:41,284 --> 00:02:42,534
+từ trường, ổ CD dùng tia laser để đọc/ghi dữ liệu].
+
+49
+00:02:42,534 --> 00:02:44,110
+
+50
+00:02:44,110 --> 00:02:46,620
+DR. RAMESH YERRABALLI: Đây là 1 hệ thống nhúng khác.
+
+51
+00:02:46,620 --> 00:02:54,210
+Còn hệ thống này dùng các đầu dò
+
+52
+00:02:54,210 --> 00:03:02,430
+để kiểm tra điện áp từ những nguồn khác nhau trên thiết bị của bạn.
+
+53
+00:03:02,430 --> 00:03:09,260
+Nó cho phép bạn theo dõi điều kiện làm việc
+
+54
+00:03:09,260 --> 00:03:13,150
+của bất kỳ hệ thống nào mà bạn cần kiểm tra.
+
+55
+00:03:13,150 --> 00:03:17,910
+Nó có nhiều đầu dò,
+
+56
+00:03:17,910 --> 00:03:21,246
+để bạn theo dõi thông tin.
+
+57
+00:03:21,246 --> 00:03:23,876
+
+58
+00:03:23,876 --> 00:03:26,300
+DR. JONATHAN VALVANO: Tôi có 1 cái khác.
+
+59
+00:03:26,300 --> 00:03:26,590
+Động cơ.
+
+60
+00:03:26,590 --> 00:03:26,900
+DR. RAMESH YERRABALLI: Hay quá.
+
+61
+00:03:26,900 --> 00:03:28,820
+DR. JONATHAN VALVANO: Nhìn này.
+
+62
+00:03:28,820 --> 00:03:29,220
+Yeah.
+
+63
+00:03:29,220 --> 00:03:32,070
+Nếu bạn muốn điều khiển những thứ này, bạn cần động cơ.
+
+64
+00:03:32,070 --> 00:03:35,520
+Nhắc lại lần nữa, hệ thống nhúng gồm những bộ phận.
+
+65
+00:03:35,520 --> 00:03:40,050
+Có bộ phận ở đây, bộ phận ở kia, và 1 giao tiếp
+
+66
+00:03:40,050 --> 00:03:43,170
+giữa chúng, cho phép nó hoạt động.
+
+67
+00:03:43,170 --> 00:03:45,000
+Đây là bộ điều khiển động cơ.
+
+68
+00:03:45,000 --> 00:03:48,900
+Dĩ nhiên hệ thống này sau đó sẽ được gắn vào hệ thống khác to lớn hơn.
+
+69
+00:03:48,900 --> 00:03:50,750
+1 con robot.
+
+70
+00:03:50,750 --> 00:03:54,660
+Rồi hệ thống đó gắn vô hệ thống khác lớn hơn nữa.
+
+71
+00:03:54,660 --> 00:03:56,150
+có thể là robot công nghiệp.
+
+72
+00:03:56,150 --> 00:04:00,930
+Ý tưởng đằng sau là những hệ thống này sẽ làm gì đó
+
+73
+00:04:00,930 --> 00:04:03,346
+mà con người muốn.
+
+74
+00:04:03,346 --> 00:04:03,780
+DR. RAMESH YERRABALLI: chính xác.
+
+75
+00:04:03,780 --> 00:04:08,790
+Hãy nhìn vào hệ thống phức tạp hơn.
+
+76
+00:04:08,790 --> 00:04:11,500
+DR. JONATHAN VALVANO: Đợi đã thầy Yerraballi.
+
+77
+00:04:11,500 --> 00:04:13,400
+Tôi chưa thấy gì vui ở đây hết.
+
+78
+00:04:13,400 --> 00:04:14,930
+DR. RAMESH YERRABALLI: Ờ, vậy hãy ra ngoài lề chút xíu.
+
+79
+00:04:14,930 --> 00:04:17,240
+DR. JONATHAN VALVANO: Đúng rồi, ngoài lề chút đi.
+
+80
+00:04:17,240 --> 00:04:26,380
+
+81
+00:04:26,380 --> 00:04:30,270
+DR. RAMESH YERRABALLI: Như bạn thấy đây là 1 hệ thống nhúng rất nổi tiếng.
+
+82
+00:04:30,270 --> 00:04:34,450
+Chiếc iPod này đã được tháo rời ra.
+
+83
+00:04:34,450 --> 00:04:38,550
+Tôi lấy ổ cứng ra để ta có thể nhìn vào bên trong chiếc máy.
+
+84
+00:04:38,550 --> 00:04:43,600
+Đây là 1 bộ nhiều con vi xử lý.
+
+85
+00:04:43,600 --> 00:04:48,610
+1 hệ thống nhúng có thể có nhiều con vi xử lý làm nhiều tính năng khác nhau.
+
+86
+00:04:48,610 --> 00:04:53,590
+Đây là màn hình.
+
+87
+00:04:53,590 --> 00:04:56,770
+Giao diện, đây là giao diện bấm.
+
+88
+00:04:56,770 --> 00:05:03,600
+Đây là pin, được gắn trên board, cấp điện cho cả hệ thống
+
+89
+00:05:03,600 --> 00:05:07,130
+cho phép nó hoạt động trong thời gian dài mà
+
+90
+00:05:07,130 --> 00:05:08,380
+không phải cắm sạc.
+
+91
+00:05:08,380 --> 00:05:21,560
+
+92
+00:05:21,560 --> 00:05:23,060
+DR. JONATHAN VALVANO: đây là máy chơi game.
+
+93
+00:05:23,060 --> 00:05:24,570
+Tháo nó ra.
+
+94
+00:05:24,570 --> 00:05:29,330
+Tôi tháo mấy con vít để nhìn bên trong.
+
+95
+00:05:29,330 --> 00:05:32,010
+Tháo mặt trước.
+
+96
+00:05:32,010 --> 00:05:32,880
+Để chỗ khác.
+
+97
+00:05:32,880 --> 00:05:34,470
+Được rồi.
+
+98
+00:05:34,470 --> 00:05:36,050
+Không cần cái này.
+
+99
+00:05:36,050 --> 00:05:39,840
+Ta thấy con vi điều khiển bên trong cái máy này.
+
+100
+00:05:39,840 --> 00:05:42,160
+Được rồi, không cần nó nữa.
+
+101
+00:05:42,160 --> 00:05:46,190
+Ở mặt này ta thấy mấy cái công tắc.
+
+102
+00:05:46,190 --> 00:05:48,150
+Mặt này là thiết bị điện tử.
+
+103
+00:05:48,150 --> 00:05:51,560
+Ở chỗ này, dưới mấy cái chấm đen nhỏ
+
+104
+00:05:51,560 --> 00:05:52,870
+là con vi điều khiển.
+
+105
+00:05:52,870 --> 00:05:58,860
+Nhắc lại, hệ thống nhúng gồm có phần cơ, phần điện, năng lượng
+
+106
+00:05:58,860 --> 00:06:01,520
+để hoạt động, đó là tất cả những thứ ta cần.
+
+107
+00:06:01,520 --> 00:06:03,040
+DR. RAMESH YERRABALLI: cảm biến ánh sáng ở đây.
+
+108
+00:06:03,040 --> 00:06:06,150
+DR. JONATHAN VALVANO: Đúng rồi, cảm biến, gia tốc kế,
+
+109
+00:06:06,150 --> 00:06:07,880
+những thứ thú vị này là để ta xài.
+
+110
+00:06:07,880 --> 00:06:09,684

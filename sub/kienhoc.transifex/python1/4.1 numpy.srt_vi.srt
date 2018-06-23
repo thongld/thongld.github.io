@@ -1,0 +1,327 @@
+1
+00:00:01,689 --> 00:00:06,790
+NghiaNguyen.
+Các bạn đã biết tới sức mạnh của 
+List trong Python: List có thể chứa 
+
+By now, you are aware that the Python list
+is pretty powerful: A list can hold any type
+
+2
+00:00:06,790 --> 00:00:12,450
+bất kì kiểu dữ liệu nào. Bạn cũng có thể 
+thay đổi, thêm vào, bỏ ra bất kì phần tử nào.
+
+3
+00:00:12,450 --> 00:00:17,520
+Điều này rất tuyệt vời, nhưng có 1 tính năng bị bỏ qua,
+1 tính năng rất quan trọng mà các nhà khoa học dữ liệu
+
+4
+00:00:17,520 --> 00:00:22,910
+như bạn rất khao khát. Khi phân tích dữ liệu,
+bạn thường thực hiện các phép tính toán với 
+
+5
+00:00:22,910 --> 00:00:27,789
+toàn bộ tập các giá trị, 
+và bạn muốn làm nó nhanh chóng.
+
+6
+00:00:27,789 --> 00:00:29,289
+Với list thì đây là 1 vấn đề.
+
+7
+00:00:29,289 --> 00:00:34,089
+Giờ ta xem lại chiều cao của các thành viên gia đình bạn. 
+Giả sử bạn cũng hỏi mọi người về cân nặng.
+
+8
+00:00:34,089 --> 00:00:39,879
+Điều này không lịch sự lắm, nhưng 
+vì khoa học. Bạn sẽ có 2 list,
+
+9
+00:00:39,879 --> 00:00:45,550
+chiều cao và cân nặng. 
+Người thứ nhất cao 1.73 m và nặng 65.4 Kg
+
+10
+00:00:45,550 --> 00:00:50,420
+Nếu muốn tính chỉ số khối cơ thể BMI 
+cho từng thành viên, bạn mong rằng
+
+11
+00:00:50,420 --> 00:00:54,059
+công thức này sẽ làm 
+được cho từng phần tử.
+
+12
+00:00:54,059 --> 00:00:59,639
+Không may mắn, Python trả ra 1 lỗi, bởi vì 
+Python không biết thực hiện phép tính với 2 list.
+
+13
+00:00:59,639 --> 00:01:03,889
+Bạn có thể giải quyết lỗi này bằng việc
+duyệt qua từng phần tử một trong từng list
+
+14
+00:01:03,889 --> 00:01:08,750
+rồi tính chỉ số BMI cho từng người, 
+nhưng nó rất không hiệu quả và 
+
+15
+00:01:08,750 --> 00:01:10,660
+tốn sức viết.
+
+16
+00:01:10,660 --> 00:01:16,230
+Có 1 giải pháp là dùng thư viện NumPy, hay 
+Numeric Python. Đây là 1 gói Python
+
+17
+00:01:16,230 --> 00:01:22,040
+cung cấp 1 giải pháp thay thế cho list 
+của Python: Numpy array.
+
+18
+00:01:22,040 --> 00:01:25,640
+Numpy Array gần giống với list thông thường 
+của Python, nhưng nó có thêm 1 tính năng:
+
+19
+00:01:25,640 --> 00:01:31,680
+Bạn có thể thực hiện tính toán trên toàn bộ mảng. 
+Nó rất dễ dùng, và cũng chạy rất nhanh 
+
+20
+00:01:31,680 --> 00:01:32,490
+Bạn có thể thực hiện tính toán trên toàn bộ mảng. 
+Nó rất dễ dùng, và cũng chạy rất nhanh 
+
+21
+00:01:32,490 --> 00:01:36,730
+Gói Numpy đã được cài đặt sẵn (tuỳ thuộc phương án 
+bạn cài đặt Python) nhưng nếu bạn muốn tự cài đặt nó
+
+22
+00:01:36,730 --> 00:01:41,940
+trên máy của bạn, thì hãy mở cửa sổ dòng lệnh 
+và gõ lệnh "pip install numpy"
+
+23
+00:01:41,940 --> 00:01:46,730
+Tiếp theo, để dùng Numpy trong 
+Python, bạn hãy import numpy
+
+24
+00:01:46,730 --> 00:01:49,250
+như thế này.
+
+25
+00:01:49,250 --> 00:01:53,680
+Bắt đầu với việc tạo 1 mảng numpy.
+Bạn làm nó bằng hàm arrray() của Numpy.
+
+26
+00:01:53,680 --> 00:01:59,530
+Dữ liệu đầu vào của hàm này là một list bình thường của Python.
+Tôi dùng hàm arrray() 2 lần ở đây để tạo ra 2 Numpy array
+
+27
+00:01:59,530 --> 00:02:03,450
+chứa chiều cao và cân nặng 
+là np_height và np_weight
+
+28
+00:02:03,450 --> 00:02:08,810
+Giờ bắt đầu tính chỉ số BMI cho 
+mỗi người với chỉ 1 câu lệnh:
+
+29
+00:02:08,810 --> 00:02:14,030
+Lần này, nó chạy tốt, phép tính đã được thực hiện 
+cho từng phần tử tương ứng. Chỉ số BMI của người thứ 1
+
+30
+00:02:14,030 --> 00:02:18,200
+được tính bằng việc chia phần tử 
+thứ nhất trong np_weight cho
+
+31
+00:02:18,200 --> 00:02:22,350
+bình phương phần tử thứ nhất trong 
+np_height, chỉ số BMI của người thứ 2
+
+32
+00:02:22,350 --> 00:02:25,030
+được tính dựa vào phần tử thứ 2 
+của mảng chiều cao và mảng cân nặng, và cứ như vậy.
+
+33
+00:02:25,030 --> 00:02:29,670
+Hãy làm 1 phép so sánh nhanh ở đây.
+Đầu tiên, chúng ta thử với list thông thường
+
+34
+00:02:29,670 --> 00:02:33,870
+nhưng cái này có lỗi bởi vì Python
+không biết tính toán như thế nào
+
+35
+00:02:33,870 --> 00:02:39,640
+với nhiều list. Tiếp theo, ta chuyển 
+những list này qua mảng Numpy.
+
+36
+00:02:39,640 --> 00:02:44,870
+Cũng phép tính đó nhưng giờ nó thực hiện mà 
+không có bất kì lỗi nào. Numpy biết cách làm việc
+
+37
+00:02:44,870 --> 00:02:48,290
+với mảng như từng phần tử. 
+Tôi thấy nó thật tuyệt vời.
+
+38
+00:02:48,290 --> 00:02:52,810
+Tuy nhiên bạn nên chú ý rằng, trước hết,
+Numpy có thể làm tất cả những thứ này dễ dàng
+
+39
+00:02:52,810 --> 00:02:57,740
+là bởi vì nó cho rằng mảng Numpy của bạn 
+chỉ chứa các phần tử có cùng 1 kiểu dữ liệu
+
+40
+00:02:57,740 --> 00:03:02,750
+ví dụ: mảng số thực float, hay mảng boolean. 
+Nếu bạn thử tạo 1 mảng
+
+41
+00:03:02,750 --> 00:03:06,870
+với vài kiểu dữ liệu khác nhau, chẳng hạn như ví dụ này,
+mảng Numpy được tạo ra sẽ chứa chỉ 1 kiểu dữ liệu,
+
+42
+00:03:06,870 --> 00:03:10,780
+là string trong trường hợp này. 
+Giá trị boolean và float sẽ 
+
+43
+00:03:10,780 --> 00:03:12,720
+bị ép sang kiểu chuỗi string.
+
+44
+00:03:12,720 --> 00:03:17,540
+Thứ 2, bạn nên biết rằng 1 mảng Numpy 
+cũng là 1 kiểu dữ liệu của Python, như kiểu
+
+45
+00:03:17,540 --> 00:03:22,380
+float, kiểu string và kiểu list. Điều này nghĩa là 
+nó có những phương thức riêng của nó, 
+
+46
+00:03:22,380 --> 00:03:27,590
+mà có thể hoạt động khác với những gì bạn muốn.
+Lấy list Python này và mảng Numpy này làm ví dụ:
+
+47
+00:03:27,590 --> 00:03:28,319
+mà có thể hoạt động khác với những gì bạn muốn.
+Lấy list Python này và mảng Numpy này làm ví dụ:
+
+48
+00:03:28,319 --> 00:03:33,930
+Nếu bạn viết python_list + python_list 
+thì các phần tử trong 2 list được nối với nhau,
+
+49
+00:03:33,930 --> 00:03:38,520
+tạo ra 1 list với 6 phần tử. Nếu bạn làm tương tự 
+với mảng Numpy, Python sẽ lấy tổng của từng
+
+50
+00:03:38,520 --> 00:03:41,459
+cặp phần tử trong mảng.
+
+51
+00:03:41,459 --> 00:03:45,209
+Phải rất chú ý khi bạn làm việc với những 
+kiểu dữ liệu khác nhau trong Python bởi vì
+
+52
+00:03:45,209 --> 00:03:48,550
+kết quả có thể hoàn toàn khác nhau.
+
+53
+00:03:48,550 --> 00:03:52,239
+Ngoài những chi tiết này, bạn có thể sử dụng
+mảng Numpy như list thông thường của Python.
+
+54
+00:03:52,239 --> 00:03:56,370
+Ví dụ, khi bạn muốn lấy 
+phần tử trong mảng,
+
+55
+00:03:56,370 --> 00:04:00,459
+bạn có thể dùng dấu ngoặc vuông [ ]
+Giả sử bạn muốn tìm chỉ số BMI
+
+56
+00:04:00,459 --> 00:04:04,930
+của người thứ 2, thì index sẽ là 1. 
+Giống như thế này:
+
+57
+00:04:04,930 --> 00:04:09,220
+Riêng với Numpy, có 1 cách khác để 
+lấy list con: dùng 1 mảng chứa các
+
+58
+00:04:09,220 --> 00:04:15,879
+giá trị booleans. Giả sử bạn muốn có tất cả 
+các giá trị BMI lớn hơn 23 trong mảng BMI.
+
+59
+00:04:15,879 --> 00:04:19,239
+Việc đầu tiên là dùng dấu 
+lớn hơn >, giống như thế này:
+
+60
+00:04:19,239 --> 00:04:24,820
+Kết quả là 1 mảng Numpy chứa các giá trị boolean. 
+"True" nếu chỉ số BMI tương ứng lớn hơn 23.
+
+61
+00:04:24,820 --> 00:04:29,550
+"False" nếu nhỏ hơn. Tiếp theo, bạn có thể dùng
+mảng boolean này trong ngoặc vuông để lấy list con
+
+62
+00:04:29,550 --> 00:04:34,880
+Chỉ những phần tử trong mảng "bmi" lớn hơn 23, 
+tương ứng với giá trị True được chọn.
+
+63
+00:04:34,880 --> 00:04:40,260
+Có chỉ 1 giá trị BMI lớn hơn 23,
+chúng ta kết thúc với 1 mảng Numpy
+
+64
+00:04:40,260 --> 00:04:45,220
+chỉ có 1 giá trị, chính là chỉ số BMI này.
+
+65
+00:04:45,220 --> 00:04:49,060
+Dùng kết quả của phép so sánh để 
+chọn lọc dữ liệu là 1 cách thường dùng
+
+66
+00:04:49,060 --> 00:04:54,020
+để lấy thông tin thú vị. Hãy học điều này và 
+những tính năng căn bản khác của Numpy trong các bài tập
+

@@ -1,0 +1,791 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://www.youtube.com/watch?v=7gsByAeCnvA
+1
+00:00:00,500 --> 00:00:03,170
+So let's talk about segmentation within supply chains.
+
+2
+00:00:03,170 --> 00:00:05,680
+The most common way that segmentation
+
+3
+00:00:05,680 --> 00:00:08,600
+is done for products, is using something called an ABC
+
+4
+00:00:08,600 --> 00:00:12,280
+Analysis, and it does not stand for Activity Based Costing.
+
+5
+00:00:12,280 --> 00:00:14,590
+That's a whole another technique.
+
+6
+00:00:14,590 --> 00:00:18,150
+But ABC simply are the categories that you create.
+
+7
+00:00:18,150 --> 00:00:20,965
+You created an A category, a B category, and a C category,
+
+8
+00:00:20,965 --> 00:00:23,230
+and it's called ABC Analysis.
+
+9
+00:00:23,230 --> 00:00:26,560
+So when you segment, you want to find the class A items.
+
+10
+00:00:26,560 --> 00:00:28,250
+These are the important few.
+
+11
+00:00:28,250 --> 00:00:30,662
+And these are the very few high impact items.
+
+12
+00:00:30,662 --> 00:00:33,120
+These are the ones you want to spend most of your attention
+
+13
+00:00:33,120 --> 00:00:34,820
+on, because they matter the most.
+
+14
+00:00:34,820 --> 00:00:39,570
+And you expect exceptions to be made on these products.
+
+15
+00:00:39,570 --> 00:00:41,900
+So you might not have a standard process.
+
+16
+00:00:41,900 --> 00:00:43,400
+You want to treat these differently.
+
+17
+00:00:43,400 --> 00:00:45,794
+These are high touch.
+
+18
+00:00:45,794 --> 00:00:46,960
+Then you've got the B items.
+
+19
+00:00:46,960 --> 00:00:48,335
+These are the ones in the middle.
+
+20
+00:00:48,335 --> 00:00:50,630
+We'll spend a lot of time on B items
+
+21
+00:00:50,630 --> 00:00:53,530
+when we talk about inventory.
+
+22
+00:00:53,530 --> 00:00:55,150
+These have moderate impact.
+
+23
+00:00:55,150 --> 00:00:57,050
+And the reason why we spend time on them
+
+24
+00:00:57,050 --> 00:00:59,080
+is because we'll talk about different ways we
+
+25
+00:00:59,080 --> 00:01:00,410
+can automate the control.
+
+26
+00:01:00,410 --> 00:01:03,200
+Because we'll set up different policies that you can use.
+
+27
+00:01:03,200 --> 00:01:05,090
+Now the rules can also be used for A,
+
+28
+00:01:05,090 --> 00:01:06,780
+so you develop these policies for B
+
+29
+00:01:06,780 --> 00:01:10,280
+and then you tweak them a little bit, for a for example.
+
+30
+00:01:10,280 --> 00:01:12,319
+But the important thing is that A items
+
+31
+00:01:12,319 --> 00:01:13,610
+are treated a little different.
+
+32
+00:01:13,610 --> 00:01:14,940
+They're the critical ones.
+
+33
+00:01:14,940 --> 00:01:18,350
+You want to automate for those B items.
+
+34
+00:01:18,350 --> 00:01:20,352
+And the C items, the trivial many.
+
+35
+00:01:20,352 --> 00:01:22,060
+There's a bunch of things you want to do.
+
+36
+00:01:22,060 --> 00:01:25,250
+You might want to reduce the amount of time
+
+37
+00:01:25,250 --> 00:01:26,260
+that you spend on them.
+
+38
+00:01:26,260 --> 00:01:28,210
+You might want to actually try to remove
+
+39
+00:01:28,210 --> 00:01:30,834
+some of those C items, that long tail.
+
+40
+00:01:30,834 --> 00:01:32,250
+But you want to make sure that you
+
+41
+00:01:32,250 --> 00:01:33,952
+don't spend too much time on them.
+
+42
+00:01:33,952 --> 00:01:35,910
+And you make the control systems and everything
+
+43
+00:01:35,910 --> 00:01:37,900
+as simple as possible.
+
+44
+00:01:37,900 --> 00:01:40,010
+And so there's a lot of grouping and categorizing,
+
+45
+00:01:40,010 --> 00:01:44,150
+and we'll talk more about this when we get into inventory.
+
+46
+00:01:44,150 --> 00:01:48,290
+So the important thing, we talk about ABC, and it's widespread.
+
+47
+00:01:48,290 --> 00:01:50,730
+When you go and talk some about ABC Analysis,
+
+48
+00:01:50,730 --> 00:01:52,540
+everyone knows what you're talking about.
+
+49
+00:01:52,540 --> 00:01:54,600
+But there's two things I want to bring up.
+
+50
+00:01:54,600 --> 00:01:57,750
+One is the categories are arbitrary.
+
+51
+00:01:57,750 --> 00:02:00,610
+What you call an A item, could maybe could be partially
+
+52
+00:02:00,610 --> 00:02:02,270
+a B or B plus.
+
+53
+00:02:02,270 --> 00:02:04,160
+So there's a lot of arbitrariness to this.
+
+54
+00:02:04,160 --> 00:02:06,600
+So we're coming up with general rules.
+
+55
+00:02:06,600 --> 00:02:11,130
+The second thing is, items don't stop at the C level.
+
+56
+00:02:11,130 --> 00:02:15,400
+You might have class D, E, F, double F, triple F.
+
+57
+00:02:15,400 --> 00:02:17,920
+When you think about the spare parts industry,
+
+58
+00:02:17,920 --> 00:02:21,320
+they might have items that move one spare part sells
+
+59
+00:02:21,320 --> 00:02:23,620
+every fifth year or even longer.
+
+60
+00:02:23,620 --> 00:02:25,640
+Because they might have tractors in the field
+
+61
+00:02:25,640 --> 00:02:27,680
+that have been in the field for 50 years.
+
+62
+00:02:27,680 --> 00:02:31,450
+And so we usually talk about ABC,
+
+63
+00:02:31,450 --> 00:02:34,625
+but some industries have much longer tails.
+
+64
+00:02:34,625 --> 00:02:36,250
+And they manage those very differently.
+
+65
+00:02:36,250 --> 00:02:40,300
+Especially, like I said, the spare parts industry.
+
+66
+00:02:40,300 --> 00:02:41,340
+So how do we do this?
+
+67
+00:02:41,340 --> 00:02:43,610
+It's a very simple process.
+
+68
+00:02:43,610 --> 00:02:44,550
+I have all my parts.
+
+69
+00:02:44,550 --> 00:02:47,260
+And this is a simple example with a number of SKUs.
+
+70
+00:02:47,260 --> 00:02:50,210
+And here are the Part IDs in the first column.
+
+71
+00:02:50,210 --> 00:02:53,530
+The second column I have the individual price or c_i.
+
+72
+00:02:53,530 --> 00:02:56,080
+That's the cost to me of each of the items.
+
+73
+00:02:56,080 --> 00:02:59,440
+And you can see it ranges from what, about $25 a part,
+
+74
+00:02:59,440 --> 00:03:02,460
+down to about a quarter.
+
+75
+00:03:02,460 --> 00:03:04,490
+The annual demand-- that's D_i --
+
+76
+00:03:04,490 --> 00:03:06,740
+the annual demand for each product and you can see how
+
+77
+00:03:06,740 --> 00:03:07,980
+that varies.
+
+78
+00:03:07,980 --> 00:03:09,800
+And what I created for this fourth column,
+
+79
+00:03:09,800 --> 00:03:12,550
+I just multiplied the Price times the Annual Demand,
+
+80
+00:03:12,550 --> 00:03:15,440
+because that gives me Annual Value.
+
+81
+00:03:15,440 --> 00:03:19,300
+Typically, for ABC Analysis, the thing that drives it
+
+82
+00:03:19,300 --> 00:03:20,930
+is the value.
+
+83
+00:03:20,930 --> 00:03:23,200
+The annual value that that product
+
+84
+00:03:23,200 --> 00:03:27,470
+brings, whether it's the total cost or the total revenue.
+
+85
+00:03:27,470 --> 00:03:29,310
+In any case, it's two functions.
+
+86
+00:03:29,310 --> 00:03:32,150
+One is the cost of each item and the demand.
+
+87
+00:03:32,150 --> 00:03:38,210
+So the product, c times D drives how I'm going to value these.
+
+88
+00:03:38,210 --> 00:03:40,530
+Think back to the baseball and the hockey puck.
+
+89
+00:03:40,530 --> 00:03:41,070
+Right?
+
+90
+00:03:41,070 --> 00:03:44,820
+What we were focused on the c were relatively the same.
+
+91
+00:03:44,820 --> 00:03:48,020
+Couple bucks each for a puck versus a baseball.
+
+92
+00:03:48,020 --> 00:03:50,350
+But the Ds, the Ds changed.
+
+93
+00:03:50,350 --> 00:03:51,330
+That's the demand.
+
+94
+00:03:51,330 --> 00:03:54,500
+And so you can think of instead of annual demand,
+
+95
+00:03:54,500 --> 00:03:57,170
+maybe monthly demand -- you might change that.
+
+96
+00:03:57,170 --> 00:03:59,110
+But any case, at the end of the day,
+
+97
+00:03:59,110 --> 00:04:02,070
+I've got this annual value for each of my items.
+
+98
+00:04:02,070 --> 00:04:04,780
+So what I've done is I've found it for each item,
+
+99
+00:04:04,780 --> 00:04:06,240
+and now I'm going to sort this.
+
+100
+00:04:06,240 --> 00:04:07,780
+And I'm going to categorize it.
+
+101
+00:04:07,780 --> 00:04:12,010
+So this is, you see 20 SKUs, a little over 4,000 units,
+
+102
+00:04:12,010 --> 00:04:15,940
+in total of $22,000 in price.
+
+103
+00:04:15,940 --> 00:04:18,011
+So I just blow this out.
+
+104
+00:04:18,011 --> 00:04:18,510
+Right?
+
+105
+00:04:18,510 --> 00:04:21,630
+And I've sorted, on this column, the Annual Value.
+
+106
+00:04:21,630 --> 00:04:27,520
+So now I have part 55K2 is the highest Annual Value.
+
+107
+00:04:27,520 --> 00:04:29,130
+And I do a new column.
+
+108
+00:04:29,130 --> 00:04:31,530
+This is cumulative, so it just sums up
+
+109
+00:04:31,530 --> 00:04:34,400
+to the cumulative value of all the products.
+
+110
+00:04:34,400 --> 00:04:36,320
+And then I just take a percent of it.
+
+111
+00:04:36,320 --> 00:04:45,140
+So 8,347 divided by total value, 21,984, means 38%.
+
+112
+00:04:45,140 --> 00:04:50,900
+And then here, 13,544 divided by 21,984 gives me 62%.
+
+113
+00:04:50,900 --> 00:04:54,010
+So I found percent Annual Value.
+
+114
+00:04:54,010 --> 00:04:55,200
+So what do I do with this?
+
+115
+00:04:55,200 --> 00:04:57,370
+Well, I'm ready to categorize.
+
+116
+00:04:57,370 --> 00:05:02,430
+So I pick the top 20% of the SKUs, roughly 80% of the value.
+
+117
+00:05:02,430 --> 00:05:05,380
+I'm going to pick the next that that give me about 15%
+
+118
+00:05:05,380 --> 00:05:08,570
+of the value, and then the C items that give me the rest.
+
+119
+00:05:08,570 --> 00:05:12,150
+So you see why it's a little bit arbitrary, but what's common,
+
+120
+00:05:12,150 --> 00:05:14,360
+firms really look for this 80-20.
+
+121
+00:05:14,360 --> 00:05:16,340
+They sometimes they call it the 80-20 Rule.
+
+122
+00:05:16,340 --> 00:05:19,010
+It isn't always there, but for this case,
+
+123
+00:05:19,010 --> 00:05:20,610
+it's just an example.
+
+124
+00:05:20,610 --> 00:05:21,910
+So I break it up.
+
+125
+00:05:21,910 --> 00:05:25,090
+And so then if I put it in again, the same chart that I
+
+126
+00:05:25,090 --> 00:05:27,340
+used for the grocery store example, the percent
+
+127
+00:05:27,340 --> 00:05:30,686
+of the SKUs and the percent of the Annual Value,
+
+128
+00:05:30,686 --> 00:05:31,810
+I just have the same thing.
+
+129
+00:05:31,810 --> 00:05:33,230
+I have the critical few.
+
+130
+00:05:33,230 --> 00:05:34,750
+The important few.
+
+131
+00:05:34,750 --> 00:05:36,610
+The A items here.
+
+132
+00:05:36,610 --> 00:05:38,950
+I've got the C items for all the ones over here,
+
+133
+00:05:38,950 --> 00:05:41,260
+and I'm going to treat them differently.
+
+134
+00:05:41,260 --> 00:05:43,860
+And then the B items in the middle.
+
+135
+00:05:43,860 --> 00:05:46,110
+Right?
+
+136
+00:05:46,110 --> 00:05:48,890
+So this is a good way to start for segmentation.
+
+137
+00:05:48,890 --> 00:05:50,870
+Every company does some form of this,
+
+138
+00:05:50,870 --> 00:05:52,480
+but they don't always stop there.
+
+139
+00:05:52,480 --> 00:05:54,820
+For example, I might want to look
+
+140
+00:05:54,820 --> 00:05:56,700
+at the variability of demand.
+
+141
+00:05:56,700 --> 00:05:59,530
+And that's where I got here on the vertical axis here.
+
+142
+00:05:59,530 --> 00:06:00,600
+Demand variability.
+
+143
+00:06:00,600 --> 00:06:02,070
+Why would that matter?
+
+144
+00:06:02,070 --> 00:06:05,800
+Because I'm going to do my A, B and C Analysis, right?
+
+145
+00:06:05,800 --> 00:06:07,670
+Just like we did on the previous slide.
+
+146
+00:06:07,670 --> 00:06:10,040
+But variability of demand might matter.
+
+147
+00:06:10,040 --> 00:06:14,160
+For example, let's say I sell 250 items
+
+148
+00:06:14,160 --> 00:06:15,690
+in the course of a year.
+
+149
+00:06:15,690 --> 00:06:18,770
+It would probably matter if I sold all 250
+
+150
+00:06:18,770 --> 00:06:23,030
+in one day or versus I sold one item every day
+
+151
+00:06:23,030 --> 00:06:25,160
+over the 250 workdays.
+
+152
+00:06:25,160 --> 00:06:28,590
+So having steady state, one every day, versus all the
+
+153
+00:06:28,590 --> 00:06:29,900
+demand on one day.
+
+154
+00:06:29,900 --> 00:06:30,920
+That's very different.
+
+155
+00:06:30,920 --> 00:06:33,450
+So they'd have very different demand variability,
+
+156
+00:06:33,450 --> 00:06:36,320
+and maybe I want to treat those high variability
+
+157
+00:06:36,320 --> 00:06:40,480
+items differently than my steady state low variability.
+
+158
+00:06:40,480 --> 00:06:43,590
+And so here's just one approach that different companies
+
+159
+00:06:43,590 --> 00:06:47,290
+use: first thing they do the segmentation by ABC.
+
+160
+00:06:47,290 --> 00:06:49,560
+But then they also look at the variability,
+
+161
+00:06:49,560 --> 00:06:51,800
+and they create a cut off.
+
+162
+00:06:51,800 --> 00:06:54,150
+And usually it's coefficient of variation,
+
+163
+00:06:54,150 --> 00:06:57,430
+which is the standard deviation of the demand over the mean,
+
+164
+00:06:57,430 --> 00:06:58,434
+or the average.
+
+165
+00:06:58,434 --> 00:07:00,100
+And you have some cut off there, and you
+
+166
+00:07:00,100 --> 00:07:02,820
+identify whether it's a high variability
+
+167
+00:07:02,820 --> 00:07:04,870
+or a low variability item.
+
+168
+00:07:04,870 --> 00:07:06,910
+And then you can think of three big categories,
+
+169
+00:07:06,910 --> 00:07:08,550
+how you would manage them.
+
+170
+00:07:08,550 --> 00:07:11,590
+For these ones in the top right, these are the volatile.
+
+171
+00:07:11,590 --> 00:07:14,720
+I'm going to use very sophisticated techniques,
+
+172
+00:07:14,720 --> 00:07:17,960
+frequently review them, and spend a lot of time on them.
+
+173
+00:07:17,960 --> 00:07:19,980
+Now the ones down here in the lower right,
+
+174
+00:07:19,980 --> 00:07:22,040
+these stable products.
+
+175
+00:07:22,040 --> 00:07:24,770
+I can automate some of those practices, less frequent
+
+176
+00:07:24,770 --> 00:07:29,490
+reviews, and maybe use some manage by exception.
+
+177
+00:07:29,490 --> 00:07:31,869
+So these would be the high, critical high value ones,
+
+178
+00:07:31,869 --> 00:07:33,410
+that I really spend a lot of time on.
+
+179
+00:07:33,410 --> 00:07:34,760
+These one's, a little less.
+
+180
+00:07:34,760 --> 00:07:36,430
+And then these ones, the C items,
+
+181
+00:07:36,430 --> 00:07:38,840
+whether they're low or high variability,
+
+182
+00:07:38,840 --> 00:07:41,170
+I'm going to be as simple as possible.
+
+183
+00:07:41,170 --> 00:07:42,460
+Very infrequent.
+
+184
+00:07:42,460 --> 00:07:44,310
+But what we've done here is introduce
+
+185
+00:07:44,310 --> 00:07:46,750
+other ways of categorizing.
+
+186
+00:07:46,750 --> 00:07:49,570
+Because as I said, segmentation is
+
+187
+00:07:49,570 --> 00:07:50,900
+more of an art than a science.
+
+188
+00:07:50,900 --> 00:07:52,990
+There's not pure rules for it.
+
+189
+00:07:52,990 --> 00:07:55,090
+It's kind of arbitrary at some point.
+
+190
+00:07:55,090 --> 00:07:58,829
+But the key point is to break the products in segments
+
+191
+00:07:58,829 --> 00:08:00,120
+that you can treat differently.
+
+192
+00:08:00,120 --> 00:08:01,900
+You're going to take a different action.
+
+193
+00:08:01,900 --> 00:08:05,490
+I'm going to manage these red products differently
+
+194
+00:08:05,490 --> 00:08:07,380
+than from these tan products differently
+
+195
+00:08:07,380 --> 00:08:08,930
+from these green products.
+
+196
+00:08:08,930 --> 00:08:12,340
+If I treated them all the same, then why bother segmenting.
+
+197
+00:08:12,340 --> 00:08:15,450
+So you always segment for a purpose.
+

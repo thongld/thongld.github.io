@@ -1,0 +1,440 @@
+856
+00:38:30,270 --> 00:38:33,850
+https://youtu.be/IXXHH6ztsSA
+So one better way
+to write it would
+
+857
+00:38:33,850 --> 00:38:35,640
+be to make the
+variables very simple.
+
+858
+00:38:35,640 --> 00:38:39,700
+And then cognitively, we humans
+can figure out which is which.
+
+859
+00:38:39,700 --> 00:38:42,605
+Because again, it's still
+only about matching.
+
+860
+00:38:42,605 --> 00:38:45,524
+The a has to match the a.
+
+861
+00:38:45,524 --> 00:38:46,700
+The b matches the b.
+
+862
+00:38:46,700 --> 00:38:48,419
+And the cs match.
+
+863
+00:38:48,419 --> 00:38:49,960
+It's actually the
+exact same program.
+
+864
+00:38:49,960 --> 00:38:57,730
+a = 35, b= 12.5, c equals
+a times b, and print c.
+
+865
+00:38:57,730 --> 00:39:00,990
+Python sees these
+as the same program.
+
+866
+00:39:00,990 --> 00:39:03,150
+It doesn't care
+what we name them.
+
+867
+00:39:03,150 --> 00:39:06,660
+Now a human will be much
+appreciative if you say here,
+
+868
+00:39:06,660 --> 00:39:08,780
+you can either have
+this one or this one.
+
+869
+00:39:08,780 --> 00:39:10,905
+This one will make
+them a lot happier.
+
+870
+00:39:10,905 --> 00:39:13,460
+
+871
+00:39:13,460 --> 00:39:14,500
+OK?
+
+872
+00:39:14,500 --> 00:39:17,560
+So that is certainly
+cognitively easier.
+
+873
+00:39:17,560 --> 00:39:19,810
+But it's not really
+giving you any sense
+
+874
+00:39:19,810 --> 00:39:23,330
+of what's going on here.
+
+875
+00:39:23,330 --> 00:39:27,330
+So an even better way to
+write this exact same program
+
+876
+00:39:27,330 --> 00:39:29,660
+to do the exact
+same thing would be
+
+877
+00:39:29,660 --> 00:39:32,440
+to choose variables
+named hours, rate,
+
+878
+00:39:32,440 --> 00:39:35,810
+and pay if indeed that
+is what you're doing.
+
+879
+00:39:35,810 --> 00:39:39,452
+Now you can look at this and
+you go, oh, well shoot, 35
+
+880
+00:39:39,452 --> 00:39:40,410
+is the number of hours.
+
+881
+00:39:40,410 --> 00:39:42,130
+And 12 and 1/2 is the rate.
+
+882
+00:39:42,130 --> 00:39:44,531
+And the pay is the number
+of hours times the rate.
+
+883
+00:39:44,531 --> 00:39:46,280
+And then we're going
+to print out the pay.
+
+884
+00:39:46,280 --> 00:39:48,130
+That makes a lot of sense.
+
+885
+00:39:48,130 --> 00:39:54,270
+So this is really an awesome
+and wonderful characterization.
+
+886
+00:39:54,270 --> 00:39:56,130
+And if that's what
+you're doing and if those
+
+887
+00:39:56,130 --> 00:39:58,280
+are hours, rate, pay,
+it's a great thing
+
+888
+00:39:58,280 --> 00:40:00,040
+to name your variables.
+
+889
+00:40:00,040 --> 00:40:04,444
+But this is where beginning
+students get confused.
+
+890
+00:40:04,444 --> 00:40:06,110
+And so sometimes I'll
+write it this way,
+
+891
+00:40:06,110 --> 00:40:07,859
+and sometimes I'll
+write it this way.
+
+892
+00:40:07,859 --> 00:40:09,400
+Because you'll look
+at this until you
+
+893
+00:40:09,400 --> 00:40:12,150
+get a little more sophisticated
+a little more skilled,
+
+894
+00:40:12,150 --> 00:40:17,530
+and you say, like, does Python
+know something about payroll?
+
+895
+00:40:17,530 --> 00:40:19,400
+Is hours a reserved word?
+
+896
+00:40:19,400 --> 00:40:22,350
+Is rate a reserved word
+and pay a reserved word?
+
+897
+00:40:22,350 --> 00:40:24,290
+Are these things that
+Python knows about?
+
+898
+00:40:24,290 --> 00:40:26,350
+And the answer is no.
+
+899
+00:40:26,350 --> 00:40:30,270
+Python sees these three programs
+as exactly the same name.
+
+900
+00:40:30,270 --> 00:40:33,260
+It's just this person really
+made a very bad choice
+
+901
+00:40:33,260 --> 00:40:34,450
+of variable name.
+
+902
+00:40:34,450 --> 00:40:37,710
+This person made a less bad
+choice of a variable name.
+
+903
+00:40:37,710 --> 00:40:39,620
+And this person made a
+really awesome choice
+
+904
+00:40:39,620 --> 00:40:40,810
+of variable name.
+
+905
+00:40:40,810 --> 00:40:45,090
+So the difference between
+these two things is style.
+
+906
+00:40:45,090 --> 00:40:47,220
+They are the exact same program.
+
+907
+00:40:47,220 --> 00:40:50,610
+And Python is equivalently
+happy with these.
+
+908
+00:40:50,610 --> 00:40:53,630
+But humans are most happy
+when the variables are
+
+909
+00:40:53,630 --> 00:40:56,180
+easy to remember and
+they are somewhat
+
+910
+00:40:56,180 --> 00:40:59,870
+descriptive of what they're
+expected contents will be.
+
+911
+00:40:59,870 --> 00:41:02,980
+That's mnemonic to
+help you remember
+
+912
+00:41:02,980 --> 00:41:05,700
+what you were meaning to do
+when you write the program.
+
+913
+00:41:05,700 --> 00:41:08,742
+This is still a bit cryptic
+having these really short
+
+914
+00:41:08,742 --> 00:41:09,950
+one character variable names.
+
+915
+00:41:09,950 --> 00:41:12,070
+It's still a bit cryptic.
+
+916
+00:41:12,070 --> 00:41:15,960
+So you have a couple
+of assignments
+
+917
+00:41:15,960 --> 00:41:17,120
+at the end of the chapter.
+
+918
+00:41:17,120 --> 00:41:20,280
+One of the assignments
+is to write a program
+
+919
+00:41:20,280 --> 00:41:26,450
+to prompt the user for hours and
+rate per hour and compute pay.
+
+920
+00:41:26,450 --> 00:41:29,500
+So I won't do this
+here, but just
+
+921
+00:41:29,500 --> 00:41:33,091
+a couple of sort of odd things.
+
+922
+00:41:33,091 --> 00:41:34,595
+You're going to be
+using raw input.
+
+923
+00:41:34,595 --> 00:41:37,130
+
+924
+00:41:37,130 --> 00:41:40,630
+But remember that
+hands a string in.
+
+925
+00:41:40,630 --> 00:41:44,862
+So you're going to have to use
+float to function to convert it
+
+926
+00:41:44,862 --> 00:41:46,820
+to a floating point
+number, so you can actually
+
+927
+00:41:46,820 --> 00:41:48,350
+do a calculation.
+
+928
+00:41:48,350 --> 00:41:51,220
+And then you're going to have
+to use multiplication and print,
+
+929
+00:41:51,220 --> 00:41:55,190
+so multiplication
+and then print.
+
+930
+00:41:55,190 --> 00:41:59,130
+So it's some combination of raw
+input, float, multiplication,
+
+931
+00:41:59,130 --> 00:42:05,630
+and print constructed to make
+your program do exactly this.
+
+932
+00:42:05,630 --> 00:42:08,370
+So this is the end
+of a chapter two.
+
+933
+00:42:08,370 --> 00:42:11,530
+We talked about types,
+reserved words, variables,
+
+934
+00:42:11,530 --> 00:42:14,279
+the mnemonic how you choose
+variable names-- we'll
+
+935
+00:42:14,279 --> 00:42:16,820
+hit this a couple more times,
+because choosing variable names
+
+936
+00:42:16,820 --> 00:42:19,780
+is always problematic--
+operators, operator
+
+937
+00:42:19,780 --> 00:42:22,410
+precedence, which just means
+like does multiplication happen
+
+938
+00:42:22,410 --> 00:42:24,600
+before plus, parentheses.
+
+939
+00:42:24,600 --> 00:42:27,690
+Integer division is a little
+weird, because it truncates.
+
+940
+00:42:27,690 --> 00:42:35,190
+
+941
+00:42:35,190 --> 00:42:38,790
+9 over 10 = 0.
+
+942
+00:42:38,790 --> 00:42:41,070
+That's the integer
+division truncating.
+
+943
+00:42:41,070 --> 00:42:44,965
+Conversion, this is
+like the int float.
+
+944
+00:42:44,965 --> 00:42:47,900
+
+945
+00:42:47,900 --> 00:42:50,020
+And then user input,
+which is raw input.
+
+946
+00:42:50,020 --> 00:42:52,110
+And then comments,
+which are ways
+
+947
+00:42:52,110 --> 00:42:55,720
+for you to add human readable
+text to your program.
+
+948
+00:42:55,720 --> 00:42:56,620
+OK.
+
+949
+00:42:56,620 --> 00:42:58,470
+See you next lecture.
+

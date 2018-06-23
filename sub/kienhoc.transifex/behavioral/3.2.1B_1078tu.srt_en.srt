@@ -1,0 +1,499 @@
+1
+00:00:00,399 --> 00:00:05,780
+https://youtu.be/1X_5k24u4jg
+Now, let's look at a second technique
+for using data analysis of experimental results,
+
+2
+00:00:05,780 --> 00:00:08,000
+and that technique is called regression.
+
+3
+00:00:08,000 --> 00:00:10,719
+When do we use regression?
+
+4
+00:00:10,719 --> 00:00:15,969
+Regression is particularly useful under two
+conditions.
+
+5
+00:00:15,969 --> 00:00:21,580
+First, there are a large number of variables
+that we believe might cause the effect, and
+
+6
+00:00:21,580 --> 00:00:26,680
+second, when these variables don't
+come in neat categories, but they might instead
+
+7
+00:00:26,680 --> 00:00:29,859
+be what we call continuous variables.
+
+8
+00:00:29,859 --> 00:00:36,710
+When we looked at ANOVA, we gave the example
+of trying to study the effect of pennies-a-day
+
+9
+00:00:36,710 --> 00:00:38,900
+framing on spending.
+
+10
+00:00:38,900 --> 00:00:42,120
+And we said that people could either be in
+a condition
+
+11
+00:00:42,120 --> 00:00:48,880
+where the expense is framed as pennies a day,
+or if it is expressed as an aggregate fashion.
+
+12
+00:00:48,880 --> 00:00:53,260
+That was the only one variable that explained
+spending.
+
+13
+00:00:53,260 --> 00:00:56,890
+But it could be the case that we are looking
+at several variables
+
+14
+00:00:56,890 --> 00:00:58,990
+that we use to predict spending.
+
+15
+00:00:58,990 --> 00:01:02,030
+That's when regression might be more useful.
+
+16
+00:01:02,030 --> 00:01:07,850
+Also, in the pennies-a-day case, the variable
+was categorical.
+
+17
+00:01:07,850 --> 00:01:11,590
+In other words, you were either in the pennies-a-day
+condition,
+
+18
+00:01:11,590 --> 00:01:13,620
+or you were in the aggregate condition.
+
+19
+00:01:13,620 --> 00:01:15,220
+It was one of two.
+
+20
+00:01:15,220 --> 00:01:17,321
+Now, let's look at a different experiment.
+
+21
+00:01:17,321 --> 00:01:21,100
+Let's imagine if you're trying to study the
+effect of your credit
+
+22
+00:01:21,100 --> 00:01:26,640
+limit-- the credit limit on your credit card--
+on your willingness to make a purchase.
+
+23
+00:01:26,640 --> 00:01:30,160
+The credit limit is not a categorical variable.
+
+24
+00:01:30,160 --> 00:01:32,040
+It is what we call a continuous variable.
+
+25
+00:01:32,040 --> 00:01:34,860
+You could have all kinds of credit limits.
+
+26
+00:01:34,860 --> 00:01:40,230
+It could be $5,000, $1,000, $3,600.
+
+27
+00:01:40,230 --> 00:01:45,010
+Absolutely any numerical dollar value could
+be your credit limit,
+
+28
+00:01:45,010 --> 00:01:48,130
+and that's when regression is particularly
+useful.
+
+29
+00:01:48,130 --> 00:01:54,640
+Now, let's imagine we are doing an experiment.
+
+30
+00:01:54,640 --> 00:01:59,370
+We collect data from several people on their
+credit limit.
+
+31
+00:01:59,370 --> 00:02:01,140
+We're going to call that x.
+
+32
+00:02:01,140 --> 00:02:06,580
+And we also measure from those same people
+a variable y.
+
+33
+00:02:06,580 --> 00:02:10,779
+Let's imagine that is their willingness to
+make a purchase.
+
+34
+00:02:10,779 --> 00:02:15,400
+And you've got data from each of these people
+on those two dimensions.
+
+35
+00:02:15,400 --> 00:02:26,080
+So for example, for this individual, we know
+that this is their credit limit,
+
+36
+00:02:26,080 --> 00:02:30,739
+and this is their willingness to make a purchase.
+
+37
+00:02:30,739 --> 00:02:35,249
+What does regression do when we have data
+from several such people?
+
+38
+00:02:35,249 --> 00:02:39,690
+What it tries to do is it tries to find a
+line that best expresses
+
+39
+00:02:39,690 --> 00:02:45,379
+the relationship between x and y, and that
+line
+
+40
+00:02:45,379 --> 00:02:48,349
+might look something like this.
+
+41
+00:02:48,349 --> 00:02:52,060
+So, what is this line?
+
+42
+00:02:52,060 --> 00:02:54,269
+Let's imagine we've got this dotted line.
+
+43
+00:02:54,269 --> 00:02:58,469
+This dotted line, as I said, might express
+the relationship between x and y.
+
+44
+00:02:58,469 --> 00:03:08,439
+But if you look at any given individual here,
+their actual data deviates from the line.
+
+45
+00:03:08,439 --> 00:03:11,659
+And let's call this deviation an error.
+
+46
+00:03:11,659 --> 00:03:15,809
+So, for each one of them, there is an error.
+
+47
+00:03:15,809 --> 00:03:22,290
+We can take all these errors, we can square
+them, and we can add them up.
+
+48
+00:03:22,290 --> 00:03:30,329
+And the best line is the one where the sum
+of these squares is the minimum.
+
+49
+00:03:30,329 --> 00:03:34,769
+So, what is regression actually doing?
+
+50
+00:03:34,769 --> 00:03:40,290
+Regression is selecting a line such that the
+sum of the squares of these errors
+
+51
+00:03:40,290 --> 00:03:41,719
+is minimized.
+
+52
+00:03:41,719 --> 00:03:47,859
+That is what we call OLS, the ordinary least
+squares approach to regression.
+
+53
+00:03:47,859 --> 00:03:54,109
+Now, once we have a line like this, we can
+actually make predictions about y
+
+54
+00:03:54,109 --> 00:03:55,389
+based on x.
+
+55
+00:03:55,389 --> 00:04:02,239
+So, we say, well, what happens if x is a certain
+value?
+
+56
+00:04:02,239 --> 00:04:03,530
+And that value is there.
+
+57
+00:04:03,530 --> 00:04:07,889
+We can throw up a line, and we can make a
+prediction
+
+58
+00:04:07,889 --> 00:04:11,670
+about what the y is going to be.
+
+59
+00:04:11,670 --> 00:04:16,180
+And this regression line is written out in
+the form of a simple equation, which
+
+60
+00:04:16,180 --> 00:04:18,199
+we will talk about in a minute.
+
+61
+00:04:18,199 --> 00:04:20,069
+But let's imagine the following.
+
+62
+00:04:20,069 --> 00:04:23,950
+What happens when x is 0?
+
+63
+00:04:23,950 --> 00:04:24,950
+What happens at this point?
+
+64
+00:04:24,950 --> 00:04:29,520
+We're going to say, well, there's still some
+very basic purchase intention,
+
+65
+00:04:29,520 --> 00:04:35,151
+and that basic purchase intention is something
+that we're going to call the coefficient,
+
+66
+00:04:35,151 --> 00:04:37,639
+or the intercept.
+
+67
+00:04:37,639 --> 00:04:39,919
+So a, all right?
+
+68
+00:04:39,919 --> 00:04:43,139
+a on this picture is the intercept.
+
+69
+00:04:43,139 --> 00:04:47,210
+It is the value of y when x equals to 0.
+
+70
+00:04:47,210 --> 00:04:51,060
+And b is the slope of the line.
+
+71
+00:04:51,060 --> 00:04:55,870
+And together, our regression line can be captured
+by this equation,
+
+72
+00:04:55,870 --> 00:04:58,960
+y equals to a plus bx.
+
+73
+00:04:58,960 --> 00:05:02,009
+So, that's what a regression line looks like.
+
+74
+00:05:02,009 --> 00:05:08,789
+If, in fact, we had a lot of x's, a lot of
+variables that we believe explain y,
+
+75
+00:05:08,789 --> 00:05:14,560
+then our regression line looks a little bit
+more complicated.
+
+76
+00:05:14,560 --> 00:05:18,419
+But this is the simplest form of the regression
+line.
+
+77
+00:05:18,419 --> 00:05:21,050
+Again, how do we interpret this?
+
+78
+00:05:21,050 --> 00:05:24,730
+When x equals to 0, when the credit limit
+is 0,
+
+79
+00:05:24,730 --> 00:05:27,530
+there is still some basic willingness to purchase.
+
+80
+00:05:27,530 --> 00:05:28,530
+That's going to be a.
+
+81
+00:05:28,530 --> 00:05:34,449
+b is the slope, which talks about the effect
+of credit limit on willingness
+
+82
+00:05:34,449 --> 00:05:35,540
+to purchase.
+
+83
+00:05:35,540 --> 00:05:42,550
+The bigger the slope-- so for example, if
+my slope was very sharp,
+
+84
+00:05:42,550 --> 00:05:46,810
+then it says that if I increase x by small
+amounts,
+
+85
+00:05:46,810 --> 00:05:49,710
+we get pretty large increases in y.
+
+86
+00:05:49,710 --> 00:05:57,729
+If the slope is flat or very gentle, then
+the effect of x on y is low.
+
+87
+00:05:57,729 --> 00:06:03,460
+Now, as we said, if there are a large number
+of x's, then our regression line
+
+88
+00:06:03,460 --> 00:06:04,990
+is going to look something like this.
+
+89
+00:06:04,990 --> 00:06:12,310
+It's going to look like this, where y is a
+plus b1 times x1 plus b2 times x2,
+
+90
+00:06:12,310 --> 00:06:18,189
+where x1, x2 are the various different variables
+that explain.
+
+91
+00:06:18,189 --> 00:06:21,289
+And then finally, in this example that we
+looked at,
+
+92
+00:06:21,289 --> 00:06:23,719
+y is a continuous variable.
+
+93
+00:06:23,719 --> 00:06:28,470
+We simply ask people, what is the likelihood
+that you would make a purchase?
+
+94
+00:06:28,470 --> 00:06:33,229
+But let's imagine that the variable is categorical.
+
+95
+00:06:33,229 --> 00:06:38,270
+Let's say we change the credit limit, and
+we simply ask people,
+
+96
+00:06:38,270 --> 00:06:41,639
+will you buy a certain product, or will you
+not buy it?
+
+97
+00:06:41,639 --> 00:06:47,020
+Or in general, it could be multiple levels,
+if we ask people to choose option A, option
+
+98
+00:06:47,020 --> 00:06:50,979
+B, option C.
+The intuition behind the regression is still
+
+99
+00:06:50,979 --> 00:06:54,830
+going to be the same,
+but the kind of analysis that we're going
+
+100
+00:06:54,830 --> 00:06:58,220
+to use
+is going to be called a variation of this.
+
+101
+00:06:58,220 --> 00:07:01,270
+It's going called a logit-- l-o-g-i-t-- regression.
+
+102
+00:07:01,270 --> 00:07:09,370
+We use a logit regression when our x's are
+still continuous,
+
+103
+00:07:09,370 --> 00:07:13,840
+but our y, which is a dependent variable,
+is a categorical variable.
+
+104
+00:07:13,840 --> 00:07:20,830
+So in sum, regression is a very handy when
+you have complex, continuous data, lots of
+
+105
+00:07:20,830 --> 00:07:24,249
+variables that all explain one
+particular y.
+
+106
+00:07:24,249 --> 00:07:26,889
+Regression is a fantastic tool to use.
+
+107
+00:07:26,889 --> 00:07:31,199
+And in the next few units, we will actually
+see a lot of examples
+
+108
+00:07:31,199 --> 00:07:35,650
+off experiments that have used both the regression
+approach,
+
+109
+00:07:35,650 --> 00:07:39,620
+as well as the ANOVA approach, in reaching
+their conclusions.
+

@@ -1,0 +1,171 @@
+1
+00:00:01,860 --> 00:00:05,880
+dungpham12002 24.06.2016 Thao reviewed
+Thông thường, khi phân tích dữ liệu,
+bạn trước hết cần phải hiểu biết về dữ liệu của mình.
+
+A typical first step in analyzing your data,
+is getting to know your data in the first
+
+2
+00:00:05,880 --> 00:00:10,389
+Với các mảng numpy ở phần trước,
+điều này khá đơn giản, bởi không có nhiều dữ liệu
+
+3
+00:00:10,389 --> 00:00:15,419
+Tuy nhiên, nếu bạn là một nhà khoa học dữ liệu,
+bạn sẽ phải phân tích hàng triệu,
+
+4
+00:00:15,419 --> 00:00:17,380
+có khi là hàng tỉ số.
+
+5
+00:00:17,380 --> 00:00:21,790
+Giả sử bạn thực hiện một cuộc thăm dò
+5000 người trên toàn thành phố về chiều cao
+
+6
+00:00:21,790 --> 00:00:27,410
+và cân nặng của họ. Bạn thu được những kết quả như sau:
+một mảng numpy 2D, có tên np_city.
+
+7
+00:00:27,410 --> 00:00:32,279
+Mảng này có 5000 hàng, tương ứng với 5000 người,
+và 2 cột, tương ứng với
+
+8
+00:00:32,279 --> 00:00:34,780
+chiều cao và cân nặng.
+
+9
+00:00:34,780 --> 00:00:39,030
+Nếu chỉ nhìn vào những số liệu này một cách vô thức,
+bạn sẽ không thu được gì cả. Tuy nhiên, bạn có thể
+
+10
+00:00:39,030 --> 00:00:44,250
+tạo ra các số liệu tổng hợp về dữ liệu của mình.
+Ngoài việc cung cấp một cấu trúc dữ liệu
+
+11
+00:00:44,250 --> 00:00:48,329
+hiệu quả để phân tích số liệu,
+numpy cũng có thể làm điều trên
+
+12
+00:00:48,329 --> 00:00:49,190
+rất tốt.
+
+13
+00:00:49,190 --> 00:00:54,710
+Đầu tiên, bạn có thể tìm
+chiều cao trung bình của 5000 người đó
+
+14
+00:00:54,710 --> 00:00:59,700
+bằng hàm mean của numpy. Vì đây là
+một hàm thuộc gói numpy, bạn cần phải bắt đầu lệnh
+
+15
+00:00:59,700 --> 00:01:01,989
+bằng 'np.'
+
+16
+00:01:01,989 --> 00:01:05,780
+Đương nhiên, trước hết tôi cần phải xuất tập con
+nhằm lấy dữ liệu của cột chiều cao
+
+17
+00:01:05,780 --> 00:01:11,860
+từ mảng 2D. Ta thấy chiều cao trung bình
+là 1.75m. Thế còn chiều cao trung vị?
+
+18
+00:01:11,860 --> 00:01:17,210
+Đây sẽ là chiều cao của người ở chính giữa
+nếu bạn sắp xếp mọi người từ thấp đến cao nhất.
+
+19
+00:01:17,210 --> 00:01:22,340
+Thay vì phải viết các lệnh Python phức tạp
+để xuất ra kết quả, bạn chỉ cần sử dụng
+
+20
+00:01:22,340 --> 00:01:24,080
+hàm median() của numpy.
+
+21
+00:01:24,080 --> 00:01:29,030
+Cách làm tương tự với cột cân nặng trong mảng np_city.
+Thông thường, các dữ liệu tổng hợp
+
+22
+00:01:29,030 --> 00:01:33,510
+sẽ giúp bạn kiểm chứng độ tin cậy của dữ liệu.
+Nếu bạn thấy cân nặng trung bình
+
+23
+00:01:33,510 --> 00:01:38,950
+là 2000 kg thì dữ liệu của bạn
+gần như chắc chắn là có vấn đề.
+
+24
+00:01:38,950 --> 00:01:43,330
+Ngoài mean() và median() còn có
+các hàm khác như corrcoeff() dùng để
+
+25
+00:01:43,330 --> 00:01:45,990
+kiểm tra sự tương quan giữa chiều cao và cân nặng,
+
+26
+00:01:45,990 --> 00:01:49,040
+hay std() nhằm khảo sát độ lệch chuẩn.
+
+27
+00:01:49,040 --> 00:01:54,799
+Numpy cũng có một số hàm cơ bản khác
+như sum() và sort(). Các lệnh này đều có
+
+28
+00:01:54,799 --> 00:01:59,810
+trong bản Python thông thường. Tuy nhiên,
+khác biệt lớn ở đây là tốc độ.
+
+29
+00:01:59,810 --> 00:02:05,880
+Trong một mảng numpy chỉ cho phép tồn tại 1 kiểu dữ liệu,
+nên nó có thể tính toán nhanh hơn hẳn.
+
+30
+00:02:05,880 --> 00:02:10,220
+Ngoài lề một chút: Nếu bạn tự hỏi
+dữ liệu trong video này được lấy từ đâu,
+
+31
+00:02:10,220 --> 00:02:16,200
+thì tôi xin trả lời: tôi đã giả lập chúng bằng các hàm numpy.
+Tôi lấy mẫu từ 2 phân bố ngẫu nhiên 5000 lần, 
+
+32
+00:02:16,200 --> 00:02:19,980
+để tạo các mảng height và weight,
+rồi dùng column_stack để ghép chúng vào với nhau.
+
+33
+00:02:19,980 --> 00:02:23,810
+Đó là một điều khác mà numpy có thể lảm!
+
+34
+00:02:23,810 --> 00:02:28,520
+Một công cụ phân tích dữ liệu hữu ích khác
+là minh họa trực quan, nhưng ta sẽ đề cập điều này
+
+35
+00:02:28,520 --> 00:02:33,360
+ở phần khác. Trước hết, hãy chuyển sang
+phần bài tập để khám phá các mảng numpy.
+

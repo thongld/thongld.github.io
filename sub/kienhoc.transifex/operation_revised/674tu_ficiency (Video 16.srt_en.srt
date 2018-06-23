@@ -1,0 +1,359 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/feapCzKVN80
+
+1
+00:00:06,310 --> 00:00:09,199
+hello again and welcome back operations
+management
+
+2
+00:00:09,199 --> 00:00:12,298
+in this session we're gonna be talking
+about process efficiency
+
+3
+00:00:12,298 --> 00:00:17,380
+in the last couple of sessions we've been
+looking at critical path
+
+4
+00:00:17,380 --> 00:00:21,089
+and following the activities of a
+process from start to finish
+
+5
+00:00:21,089 --> 00:00:24,589
+so we now know how long a process will
+take
+
+6
+00:00:24,589 --> 00:00:28,500
+the next step is trying to make that
+process better
+
+7
+00:00:28,500 --> 00:00:31,528
+so need to do is we need to identify
+
+8
+00:00:31,528 --> 00:00:35,698
+the activities on that process that
+maybe we can improve
+
+9
+00:00:35,698 --> 00:00:41,770
+so how do we go about doing that
+starting with the same example that
+
+10
+00:00:41,770 --> 00:00:44,410
+we've been using for the past couple of
+sessions
+
+11
+00:00:44,409 --> 00:00:48,578
+this is the cleaning of an office we
+know that there are six activities
+
+12
+00:00:48,579 --> 00:00:49,480
+involved
+
+13
+00:00:49,479 --> 00:00:54,699
+and in the last session and the one
+before we were looking at specific
+
+14
+00:00:54,700 --> 00:00:56,199
+activity times
+
+15
+00:00:56,198 --> 00:00:59,219
+these are activity times that
+
+16
+00:00:59,219 --> 00:01:04,349
+actually takes to perform the task when
+we had people at the field
+
+17
+00:01:04,349 --> 00:01:08,340
+doing the cleaning up in office we
+monitor them and we figure out
+
+18
+00:01:08,340 --> 00:01:12,600
+how long it takes to pick up the cups
+how long it takes to dust
+
+19
+00:01:12,599 --> 00:01:17,089
+the surfaces and so forth this is the actual
+activity time
+
+20
+00:01:17,090 --> 00:01:20,200
+now in a perfect world
+
+21
+00:01:20,200 --> 00:01:23,500
+where all the resources are immediately
+available
+
+22
+00:01:23,500 --> 00:01:27,989
+nothing is waiting for anything we have
+a theoretical time
+
+23
+00:01:27,989 --> 00:01:33,019
+so an activity A in reality it takes
+fifty-five seconds
+
+24
+00:01:33,019 --> 00:01:37,298
+but in an absolute perfect world it may
+only take forty seconds
+
+25
+00:01:37,299 --> 00:01:40,860
+activity B perfect world
+
+26
+00:01:40,859 --> 00:01:44,569
+240 seconds when the real world it takes
+
+27
+00:01:44,569 --> 00:01:49,459
+300 seconds so you can see there is a
+difference between
+
+28
+00:01:49,459 --> 00:01:53,688
+the theoretical time and the actual
+activity time
+
+29
+00:01:53,688 --> 00:01:57,048
+so again
+
+30
+00:01:57,049 --> 00:02:01,729
+which activity do we focus on to try and
+improve the process
+
+31
+00:02:01,728 --> 00:02:07,269
+What we're going to do is we're going to be taking
+a look at each of these activities
+
+32
+00:02:07,269 --> 00:02:11,639
+and their actual time and theoretical
+time
+
+33
+00:02:11,639 --> 00:02:14,689
+and we're going to calculate the efficiency
+
+34
+00:02:14,689 --> 00:02:19,189
+we do that by taking a theoretical time
+
+35
+00:02:19,189 --> 00:02:23,459
+and dividing it by the actual time and
+converting it to a percentage
+
+36
+00:02:23,459 --> 00:02:27,830
+so if you recall we had our
+
+37
+00:02:27,830 --> 00:02:32,160
+chart here whether actual activity time
+and theoretical time
+
+38
+00:02:32,159 --> 00:02:36,098
+and now we have a column for efficiency
+activity
+
+39
+00:02:36,098 --> 00:02:40,589
+A we take our forty seconds which is in
+the ideal world
+
+40
+00:02:40,590 --> 00:02:44,409
+and divided by 55 seconds which is
+reality
+
+41
+00:02:44,409 --> 00:02:48,579
+and we come up with an efficiency of 72.7
+percent
+
+42
+00:02:48,580 --> 00:02:52,310
+we do that for each of the activities in
+the process
+
+43
+00:02:52,310 --> 00:02:56,378
+as you can see some activities are fairly
+
+44
+00:02:56,378 --> 00:03:01,549
+efficient such is the dusting process
+it's an 80 percent efficient process
+
+45
+00:03:01,550 --> 00:03:04,930
+activity but empty the trash can
+
+46
+00:03:04,930 --> 00:03:08,590
+that's only 50 percent efficent so still
+
+47
+00:03:08,590 --> 00:03:12,689
+how do we decide which activity to
+target for improvement
+
+48
+00:03:12,689 --> 00:03:16,239
+efficiency by itself is not enough
+
+49
+00:03:16,239 --> 00:03:19,750
+we need to take a look at the actual
+
+50
+00:03:19,750 --> 00:03:22,878
+flow diagram if you recall
+
+51
+00:03:22,878 --> 00:03:26,079
+there were three paths through this
+process ABEF
+
+52
+00:03:26,080 --> 00:03:29,510
+ACEF and  ADF
+
+
+53
+00:03:29,509 --> 00:03:33,348
+I calculated the longest path
+
+54
+00:03:33,348 --> 00:03:36,568
+ADF at 455 seconds
+
+55
+00:03:36,568 --> 00:03:41,089
+and that was the critical path so
+
+56
+00:03:41,090 --> 00:03:44,729
+if we go and we actually try and improve
+activity
+
+57
+00:03:44,729 --> 00:03:51,209
+E because it's only 50 percent efficient
+it's not going to have an impact on the
+
+58
+00:03:51,209 --> 00:03:52,060
+critical path
+
+59
+00:03:52,060 --> 00:03:58,890
+we can improve activity E but the process
+will still take 450 five seconds
+
+60
+00:03:58,889 --> 00:04:03,139
+the next one Sanitize 61 percent
+efficient
+
+61
+00:04:03,139 --> 00:04:07,238
+again we can improve that but it still
+will not
+
+62
+00:04:07,239 --> 00:04:11,700
+impact the overall process club so we
+need to do
+
+63
+00:04:11,699 --> 00:04:15,060
+is identify the activity that has
+
+64
+00:04:15,060 --> 00:04:19,408
+the lowest efficiency but is on the
+critical path
+
+65
+00:04:19,408 --> 00:04:22,750
+that's the one we're going to take a
+look at first
+
+66
+00:04:22,750 --> 00:04:27,769
+so in this case it's activity F sanitized
+doorknob
+
+67
+00:04:27,769 --> 00:04:31,870
+even if we improve the efficiency just a
+little bit
+
+68
+00:04:31,870 --> 00:04:35,970
+and that it takes only 39 seconds to 30
+eight seconds
+
+69
+00:04:35,970 --> 00:04:42,550
+it will have direct impact on the
+overall time for the process
+
+70
+00:04:42,550 --> 00:04:47,319
+so now what we've done is we'd analyze
+processes
+
+71
+00:04:47,319 --> 00:04:52,279
+wave figured out the critical path I've
+also look at how to identify
+
+72
+00:04:52,279 --> 00:04:57,879
+the activities with any process that are
+targeted for improvement
+
+73
+00:04:57,879 --> 00:05:01,310
+our next series  of sessions
+
+74
+00:05:01,310 --> 00:05:04,439
+will be involving capacities analysis
+
+75
+00:05:04,439 --> 00:05:09,050
+make sure that we have enough resources
+in order to support the process
+
+76
+00:05:09,050 --> 00:05:09,639
+I see it then
+

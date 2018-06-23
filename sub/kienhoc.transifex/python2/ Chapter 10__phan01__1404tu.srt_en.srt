@@ -1,0 +1,874 @@
+1
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/odIMpHInDbA
+
+2
+00:00:00,500 --> 00:00:01,050
+Hello.
+
+3
+00:00:01,050 --> 00:00:03,000
+And welcome to
+chapter 10 of Python
+
+4
+00:00:03,000 --> 00:00:05,260
+for Informatics, the
+chapter on tuples.
+
+5
+00:00:05,260 --> 00:00:07,600
+I'm Charles Severance
+I'm your lecturer.
+
+6
+00:00:07,600 --> 00:00:09,900
+And I'm the author
+of the textbook.
+
+7
+00:00:09,900 --> 00:00:12,740
+As always, this material is
+copyright Creative Commons
+
+8
+00:00:12,740 --> 00:00:16,830
+Attribution including the
+video lectures, the slides,
+
+9
+00:00:16,830 --> 00:00:19,560
+and the book.
+
+10
+00:00:19,560 --> 00:00:23,450
+So tuples are the third
+kind of collection
+
+11
+00:00:23,450 --> 00:00:24,450
+that we've talked about.
+
+12
+00:00:24,450 --> 00:00:25,355
+We've talked about lists.
+
+13
+00:00:25,355 --> 00:00:26,910
+And we've talked
+about dictionaries.
+
+14
+00:00:26,910 --> 00:00:29,735
+And in the dictionary lecture,
+we kind of alluded to tuples.
+
+15
+00:00:29,735 --> 00:00:32,237
+
+16
+00:00:32,237 --> 00:00:34,070
+We don't have to talk
+too much about tuples.
+
+17
+00:00:34,070 --> 00:00:35,445
+I'm really shortening
+the lecture
+
+18
+00:00:35,445 --> 00:00:38,110
+by telling you that
+they're a lot like lists.
+
+19
+00:00:38,110 --> 00:00:44,850
+They're a non-changeable list.
+
+20
+00:00:44,850 --> 00:00:50,900
+And the syntax of them is
+pretty much the same as a list,
+
+21
+00:00:50,900 --> 00:00:57,060
+except that we use parentheses
+instead of square brackets.
+
+22
+00:00:57,060 --> 00:01:00,070
+So like here is a
+three tuple, a tuple
+
+23
+00:01:00,070 --> 00:01:02,590
+with three items in it,
+Glen, Sally, and Joseph.
+
+24
+00:01:02,590 --> 00:01:06,360
+They are numbered
+0, 0, 1, and 2.
+
+25
+00:01:06,360 --> 00:01:07,840
+So the second thing is one.
+
+26
+00:01:07,840 --> 00:01:11,720
+So x sub 2 is, indeed, Joseph.
+
+27
+00:01:11,720 --> 00:01:16,880
+We can pass them in as sequences
+to things like max or min
+
+28
+00:01:16,880 --> 00:01:18,790
+or sum.
+
+29
+00:01:18,790 --> 00:01:22,160
+And so the maximum
+of 1, 9, 2 is 9.
+
+30
+00:01:22,160 --> 00:01:23,680
+And we can loop through them.
+
+31
+00:01:23,680 --> 00:01:25,070
+So here's why it's a tuple.
+
+32
+00:01:25,070 --> 00:01:29,300
+It's 1, 9, 2, And
+iteration's going
+
+33
+00:01:29,300 --> 00:01:32,476
+to go through the
+three values, right?
+
+34
+00:01:32,476 --> 00:01:34,100
+And so it's going to
+print out 1, 9, 2.
+
+35
+00:01:34,100 --> 00:01:36,220
+It runs the indented
+code, once for each
+
+36
+00:01:36,220 --> 00:01:38,420
+of the values inside the tuple.
+
+37
+00:01:38,420 --> 00:01:42,370
+And so in this respect,
+they're very much like lists.
+
+38
+00:01:42,370 --> 00:01:44,320
+But they're also
+different than lists
+
+39
+00:01:44,320 --> 00:01:47,200
+in some real valuable ways.
+
+40
+00:01:47,200 --> 00:01:48,920
+Tuples are immutable.
+
+41
+00:01:48,920 --> 00:01:50,920
+And so if you recall when
+we talked about lists,
+
+42
+00:01:50,920 --> 00:01:52,200
+we compared them to strings.
+
+43
+00:01:52,200 --> 00:01:54,740
+Because both lists
+and strings are
+
+44
+00:01:54,740 --> 00:01:56,830
+a sequence of elements,
+where the first one is 0,
+
+45
+00:01:56,830 --> 00:01:59,350
+1, 2, et cetera.
+
+46
+00:01:59,350 --> 00:02:02,550
+But if we look at a
+string, for example,
+
+47
+00:02:02,550 --> 00:02:05,230
+and we have a three
+character string, ABC,
+
+48
+00:02:05,230 --> 00:02:06,980
+and we want to change
+the third character,
+
+49
+00:02:06,980 --> 00:02:12,500
+y sub 2, to d, it complains and
+says, no, you can't do that.
+
+50
+00:02:12,500 --> 00:02:13,710
+But you can do it on a list.
+
+51
+00:02:13,710 --> 00:02:15,850
+So if we have a
+list, 9, 8, 7, and we
+
+52
+00:02:15,850 --> 00:02:19,050
+say x sub 2 is 6, which
+is the third item,
+
+53
+00:02:19,050 --> 00:02:22,070
+then the third item
+changes from 7 to 6.
+
+54
+00:02:22,070 --> 00:02:22,600
+OK.
+
+55
+00:02:22,600 --> 00:02:25,490
+So this is mutable.
+
+56
+00:02:25,490 --> 00:02:28,010
+This is not mutable.
+
+57
+00:02:28,010 --> 00:02:31,360
+
+58
+00:02:31,360 --> 00:02:35,710
+And tuples are also not mutable.
+
+59
+00:02:35,710 --> 00:02:37,350
+They're like strings.
+
+60
+00:02:37,350 --> 00:02:41,840
+They're sort of like lists in
+terms of what they can store.
+
+61
+00:02:41,840 --> 00:02:43,340
+But they're like
+strings in the fact
+
+62
+00:02:43,340 --> 00:02:44,810
+that they can't be changed.
+
+63
+00:02:44,810 --> 00:02:47,930
+So here we create a three
+tuple, a three item tuple.
+
+64
+00:02:47,930 --> 00:02:50,500
+And we try to change the
+third thing from 3 to 0.
+
+65
+00:02:50,500 --> 00:02:56,850
+And it says you can't
+do that, not mutable.
+
+66
+00:02:56,850 --> 00:03:00,420
+So it's kind of like
+lists in the kind of data
+
+67
+00:03:00,420 --> 00:03:01,280
+you store in them.
+
+68
+00:03:01,280 --> 00:03:03,820
+And it's kind of like strings
+in that you can't change them
+
+69
+00:03:03,820 --> 00:03:05,040
+once you create them.
+
+70
+00:03:05,040 --> 00:03:06,770
+So this parentheses,
+this constant,
+
+71
+00:03:06,770 --> 00:03:08,510
+is the moment of creation.
+
+72
+00:03:08,510 --> 00:03:12,880
+Once you put the things in, you
+can't fiddle around with it.
+
+73
+00:03:12,880 --> 00:03:16,570
+There's a bunch of other things
+you can't do with tuples.
+
+74
+00:03:16,570 --> 00:03:17,580
+Why even use tuples?
+
+75
+00:03:17,580 --> 00:03:19,120
+We'll get to that in a second.
+
+76
+00:03:19,120 --> 00:03:23,350
+So here is a three tuple
+with the numbers 3, 2, 1.
+
+77
+00:03:23,350 --> 00:03:24,520
+You can't sort it.
+
+78
+00:03:24,520 --> 00:03:27,500
+Because if you sorted
+it, that would change it.
+
+79
+00:03:27,500 --> 00:03:28,700
+You can't add to it.
+
+80
+00:03:28,700 --> 00:03:31,282
+You can't append the
+value 5 to the end of it.
+
+81
+00:03:31,282 --> 00:03:32,490
+Because that would change it.
+
+82
+00:03:32,490 --> 00:03:33,900
+And you can't reverse it.
+
+83
+00:03:33,900 --> 00:03:37,570
+So none of these are allowed.
+
+84
+00:03:37,570 --> 00:03:39,660
+Those are things you
+can do with lists,
+
+85
+00:03:39,660 --> 00:03:42,490
+but you can't do with tuples.
+
+86
+00:03:42,490 --> 00:03:44,290
+And you can read
+the documentation.
+
+87
+00:03:44,290 --> 00:03:46,940
+But we can use that built-in Dir
+function, that really awesome
+
+88
+00:03:46,940 --> 00:03:51,080
+Dir function, where we make a
+list and we say, hey, Python,
+
+89
+00:03:51,080 --> 00:03:53,220
+what will you let
+me do with lists?
+
+90
+00:03:53,220 --> 00:03:56,850
+Well, you can append, a count,
+extend, index, insert, sort,
+
+91
+00:03:56,850 --> 00:03:59,470
+reverse, remove,
+pop, lots of things.
+
+92
+00:03:59,470 --> 00:04:01,260
+Now we make a tuple
+and say, hey, Python,
+
+93
+00:04:01,260 --> 00:04:02,990
+what can we do with tuple?
+
+94
+00:04:02,990 --> 00:04:05,140
+Well, you can do a
+count or an index,
+
+95
+00:04:05,140 --> 00:04:07,200
+which means you can't do
+all these other things.
+
+96
+00:04:07,200 --> 00:04:09,780
+So this is very
+much a reduction.
+
+97
+00:04:09,780 --> 00:04:12,112
+
+98
+00:04:12,112 --> 00:04:13,820
+Because everything
+you can do with tuples
+
+99
+00:04:13,820 --> 00:04:14,904
+you can do it lists.
+
+100
+00:04:14,904 --> 00:04:16,570
+But not everything
+you can do with lists
+
+101
+00:04:16,570 --> 00:04:18,019
+you can do with tuples.
+
+102
+00:04:18,019 --> 00:04:22,650
+So why did I just waste all
+this time introducing tuples?
+
+103
+00:04:22,650 --> 00:04:25,689
+All they are is
+have parentheses.
+
+104
+00:04:25,689 --> 00:04:26,480
+What good are they?
+
+105
+00:04:26,480 --> 00:04:29,180
+Well, it turns out that
+they're much more efficient.
+
+106
+00:04:29,180 --> 00:04:31,310
+Because Python doesn't
+have to deal with the fact
+
+107
+00:04:31,310 --> 00:04:34,100
+that we as programmers
+might change them,
+
+108
+00:04:34,100 --> 00:04:35,890
+python can make them quicker.
+
+109
+00:04:35,890 --> 00:04:38,170
+They can use less
+memory, all kinds
+
+110
+00:04:38,170 --> 00:04:44,010
+of things that save a lot of
+processing time in Python.
+
+111
+00:04:44,010 --> 00:04:45,260
+So when would you use a tuple?
+
+112
+00:04:45,260 --> 00:04:46,801
+Well, in particularly
+if you're going
+
+113
+00:04:46,801 --> 00:04:49,110
+to create some list that
+you're never changing,
+
+114
+00:04:49,110 --> 00:04:50,800
+we prefer to use tuples.
+
+115
+00:04:50,800 --> 00:04:52,750
+And there's a lot of
+situations in programming
+
+116
+00:04:52,750 --> 00:04:55,770
+where we create what we think
+of as a temporary variable.
+
+117
+00:04:55,770 --> 00:04:59,630
+And if we're going to create
+it, use it, and throw it
+
+118
+00:04:59,630 --> 00:05:01,670
+away without ever
+modifying it, we
+
+119
+00:05:01,670 --> 00:05:04,780
+prefer tuples in those
+kinds of situations.
+
+120
+00:05:04,780 --> 00:05:06,700
+So we prefer tuples
+when we create
+
+121
+00:05:06,700 --> 00:05:08,827
+things that are just temporary.
+
+122
+00:05:08,827 --> 00:05:10,910
+So It's the fact that
+they're temporary variables.
+
+123
+00:05:10,910 --> 00:05:13,367
+They're like temporary lists.
+
+124
+00:05:13,367 --> 00:05:14,450
+Because they're efficient.
+
+125
+00:05:14,450 --> 00:05:15,220
+They're quick to make.
+
+126
+00:05:15,220 --> 00:05:16,553
+And they're quick to get rid of.
+
+127
+00:05:16,553 --> 00:05:18,810
+And they're quick to go through.
+
+128
+00:05:18,810 --> 00:05:22,820
+Now, another really neat thing
+about Python that I really like
+
+129
+00:05:22,820 --> 00:05:26,690
+is the fact that you can do
+sort of two assignments in one
+
+130
+00:05:26,690 --> 00:05:30,010
+by putting a tuple on both the
+left and the right-hand side
+
+131
+00:05:30,010 --> 00:05:31,246
+of the assignment statement.
+
+132
+00:05:31,246 --> 00:05:33,120
+So if we think about an
+assignment statement,
+
+133
+00:05:33,120 --> 00:05:35,120
+I like to think of it as
+having a direction that
+
+134
+00:05:35,120 --> 00:05:37,220
+says these things go there.
+
+135
+00:05:37,220 --> 00:05:40,860
+Well, in Python you can
+actually send two things
+
+136
+00:05:40,860 --> 00:05:42,270
+at the same time.
+
+137
+00:05:42,270 --> 00:05:43,510
+The 4 goes into the x.
+
+138
+00:05:43,510 --> 00:05:45,160
+And the Fred goes into the y.
+
+139
+00:05:45,160 --> 00:05:46,270
+This is a tuple.
+
+140
+00:05:46,270 --> 00:05:47,340
+This is a tuple.
+
+141
+00:05:47,340 --> 00:05:50,450
+You cannot have constants
+on this left-hand side.
+
+142
+00:05:50,450 --> 00:05:52,860
+You can have variables or
+constants or expressions
+
+143
+00:05:52,860 --> 00:05:54,080
+on the right-hand side.
+
+144
+00:05:54,080 --> 00:05:56,740
+But this must be two variables.
+
+145
+00:05:56,740 --> 00:06:02,182
+Similarly, in this the 99 goes
+into A and the 98 goes into B.
+
+146
+00:06:02,182 --> 00:06:05,050
+Now, it turns out that
+you can syntactically
+
+147
+00:06:05,050 --> 00:06:07,790
+eliminate the parentheses
+if you really want.
+
+148
+00:06:07,790 --> 00:06:10,440
+And so this leads to a
+prettier syntax I think.
+
+149
+00:06:10,440 --> 00:06:13,810
+It's the exact same thing with
+or without parentheses, where
+
+150
+00:06:13,810 --> 00:06:17,070
+we basically just
+say, hey, come back,
+
+151
+00:06:17,070 --> 00:06:20,680
+A and B are assigned
+to the tuple 99, 98.
+
+152
+00:06:20,680 --> 00:06:22,680
+So you can eliminate
+the parentheses
+
+153
+00:06:22,680 --> 00:06:25,570
+as long as it's very clear
+what's going on in the tuple.
+
+154
+00:06:25,570 --> 00:06:28,144
+And so this might be
+a little disquieting
+
+155
+00:06:28,144 --> 00:06:29,060
+when you first see it.
+
+156
+00:06:29,060 --> 00:06:31,810
+But it's just a tuple
+with no parentheses.
+
+157
+00:06:31,810 --> 00:06:35,300
+And the 99 goes to the A
+and the 98 goes to the B.
+
+158
+00:06:35,300 --> 00:06:37,990
+Now, it turns out
+we already did this.
+
+159
+00:06:37,990 --> 00:06:41,530
+I sort of blew by this
+in the previous lecture,
+
+160
+00:06:41,530 --> 00:06:43,830
+in Dictionaries,
+because it allows
+
+161
+00:06:43,830 --> 00:06:46,730
+us to go through the
+dictionaries keys and values
+
+162
+00:06:46,730 --> 00:06:50,600
+with two iteration variables.
+
+163
+00:06:50,600 --> 00:06:53,270
+And so if you remember,
+here's a dictionary.
+
+164
+00:06:53,270 --> 00:06:55,050
+We put two items into it.
+
+165
+00:06:55,050 --> 00:07:05,100
+And we can call d.items
+and get a list of tuples,
+
+166
+00:07:05,100 --> 00:07:06,190
+a list of two tuples.
+
+167
+00:07:06,190 --> 00:07:08,340
+Tow tuples are
+quick way of saying
+
+168
+00:07:08,340 --> 00:07:10,030
+a tuple with two things in it.
+
+169
+00:07:10,030 --> 00:07:12,600
+It's a two element
+list that consists
+
+170
+00:07:12,600 --> 00:07:14,490
+each element is a two tuple.
+
+171
+00:07:14,490 --> 00:07:19,270
+And it's the key and the
+value, key and the value.
+
+172
+00:07:19,270 --> 00:07:22,590
+And so if we just print
+this out, it's a list.
+
+173
+00:07:22,590 --> 00:07:27,490
+So then when we put this on
+a for-loop, it is a list.
+
+174
+00:07:27,490 --> 00:07:33,510
+But the things inside the
+list are each a tuple.
+
+175
+00:07:33,510 --> 00:07:36,840
+Each thing inside
+the list is a tuple.
+
+176
+00:07:36,840 --> 00:07:40,700
+So when this iteration
+variable goes to there,
+
+177
+00:07:40,700 --> 00:07:43,480
+it is like this tuple is
+being assigned into k,
+
+178
+00:07:43,480 --> 00:07:48,756
+v, which means the key goes into
+k and the value goes into v.
+
+179
+00:07:48,756 --> 00:07:53,630
+The name I picked for
+k and v do not matter.
+
+180
+00:07:53,630 --> 00:07:56,870
+It's just the first
+one and the second one.
+
+181
+00:07:56,870 --> 00:08:00,350
+So k and v point here.
+
+182
+00:08:00,350 --> 00:08:05,610
+Then the next time through
+the loop, k and v point here.
+
+183
+00:08:05,610 --> 00:08:11,020
+And so that's how csev.2
+and cwen.4 happen.
+
+184
+00:08:11,020 --> 00:08:13,660
+And so this is really
+a tuple assignment
+
+185
+00:08:13,660 --> 00:08:19,370
+or a tuple iterations
+variable or a pair
+
+186
+00:08:19,370 --> 00:08:22,950
+of iteration variables
+walking through the list.
+
+187
+00:08:22,950 --> 00:08:24,980
+OK.
+
+188
+00:08:24,980 --> 00:08:27,840
+We don't do this a lot.
+
+189
+00:08:27,840 --> 00:08:30,394
+It's most heavily used for
+the situation where you're
+

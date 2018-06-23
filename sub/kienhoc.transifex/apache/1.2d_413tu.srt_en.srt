@@ -1,0 +1,223 @@
+0
+00:00:00,000 --> 00:00:00,046
+https://youtu.be/UekrdX_klgk
+
+1
+00:00:00,046 --> 00:00:00,670
+SPEAKER: Hello.
+
+2
+00:00:00,670 --> 00:00:04,940
+In this video, we are going to see how to prepare a cluster.
+
+3
+00:00:04,940 --> 00:00:07,280
+This is a very important video because it has steps
+
+4
+00:00:07,280 --> 00:00:09,910
+that you will likely have to do many times as you
+
+5
+00:00:09,910 --> 00:00:12,160
+are on this course.
+
+6
+00:00:12,160 --> 00:00:15,680
+So to reach the topic cluster, we go on the bar
+
+7
+00:00:15,680 --> 00:00:20,200
+here on the left and click on the Icon Clusters.
+
+8
+00:00:20,200 --> 00:00:24,260
+Then we click on the bottom, Create Cluster.
+
+9
+00:00:24,260 --> 00:00:26,220
+We can give any name we want in this cluster,
+
+10
+00:00:26,220 --> 00:00:29,280
+for example, my-cluster.
+
+11
+00:00:29,280 --> 00:00:32,090
+We click the button Create Cluster.
+
+12
+00:00:32,090 --> 00:00:34,940
+And then we wait for a few seconds.
+
+13
+00:00:34,940 --> 00:00:39,060
+This creates for us a cluster with 6 gigabytes of memory.
+
+14
+00:00:39,060 --> 00:00:42,910
+As we said before, we can restart it or terminate it.
+
+15
+00:00:42,910 --> 00:00:45,890
+Now it's important to remember that your cluster will
+
+16
+00:00:45,890 --> 00:00:49,994
+be automatically terminated after one hour of inactivity.
+
+17
+00:00:49,994 --> 00:00:51,410
+This means that if you come later,
+
+18
+00:00:51,410 --> 00:00:54,230
+for example, another day, to continue with your course,
+
+19
+00:00:54,230 --> 00:00:58,560
+you will have to once again come and create your cluster.
+
+20
+00:00:58,560 --> 00:01:01,500
+What we now have to do is click on the Home icon
+
+21
+00:01:01,500 --> 00:01:03,780
+here on the left.
+
+22
+00:01:03,780 --> 00:01:05,530
+And then we have to add the library, which
+
+23
+00:01:05,530 --> 00:01:07,710
+is specific to this course.
+
+24
+00:01:07,710 --> 00:01:10,910
+Its name is spark_mooc_meta.
+
+25
+00:01:10,910 --> 00:01:15,030
+The good news is that we will have to do this only once.
+
+26
+00:01:15,030 --> 00:01:17,140
+This is a Python library.
+
+27
+00:01:17,140 --> 00:01:20,360
+All we have to do is to right-click here and then do
+
+28
+00:01:20,360 --> 00:01:23,540
+Create Library.
+
+29
+00:01:23,540 --> 00:01:26,340
+Here in the dropdown, we select the second option
+
+30
+00:01:26,340 --> 00:01:29,010
+since this is a Python library.
+
+31
+00:01:29,010 --> 00:01:30,955
+We enter the name here spark_mooc_meta.
+
+32
+00:01:30,955 --> 00:01:34,530
+
+33
+00:01:34,530 --> 00:01:36,350
+We click Install Library.
+
+34
+00:01:36,350 --> 00:01:38,000
+That's all.
+
+35
+00:01:38,000 --> 00:01:40,860
+Now, if we click again on the Clusters icon,
+
+36
+00:01:40,860 --> 00:01:44,380
+we notice here that our cluster has one library selected.
+
+37
+00:01:44,380 --> 00:01:48,190
+And here this spark_mooc_meta is loaded.
+
+38
+00:01:48,190 --> 00:01:52,280
+We can easily confirm that we did this step correctly.
+
+39
+00:01:52,280 --> 00:01:54,740
+If we click on the Home button here on the right,
+
+40
+00:01:54,740 --> 00:02:00,480
+we can go here and right-click Create Notebook.
+
+41
+00:02:00,480 --> 00:02:04,610
+Let's name it test-library.
+
+42
+00:02:04,610 --> 00:02:06,660
+It must be a Python notebook.
+
+43
+00:02:06,660 --> 00:02:09,979
+And the cluster is the one we are already running.
+
+44
+00:02:09,979 --> 00:02:10,980
+Create.
+
+45
+00:02:10,980 --> 00:02:12,700
+This is a Python notebook.
+
+46
+00:02:12,700 --> 00:02:15,980
+And we can write and evaluate Python expressions,
+
+47
+00:02:15,980 --> 00:02:17,936
+for example, 1 plus 1.
+
+48
+00:02:17,936 --> 00:02:21,890
+Now I press Shift, Enter.
+
+49
+00:02:21,890 --> 00:02:24,120
+We can see the computation completed.
+
+50
+00:02:24,120 --> 00:02:26,650
+If we want to check that the library is stored correctly,
+
+51
+00:02:26,650 --> 00:02:30,990
+all we have to do is import and the name of the library.
+
+52
+00:02:30,990 --> 00:02:35,140
+Again, we press Shift, Enter.
+
+53
+00:02:35,140 --> 00:02:39,730
+If there is no error, it means that the input was successful.
+
+54
+00:02:39,730 --> 00:02:40,920
+That was it.
+
+55
+00:02:40,920 --> 00:02:44,270
+We are now ready to start our first lab.
+

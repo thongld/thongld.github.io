@@ -1,0 +1,432 @@
+0
+00:00:00,000 --> 00:00:01,070
+https://youtu.be/nzi0zolAOPY
+
+1
+00:00:01,070 --> 00:00:04,880
+Let's take a look now at Incremental Quantity Discounts.
+
+2
+00:00:04,880 --> 00:00:07,690
+So these differ from the All Units Discount
+
+3
+00:00:07,690 --> 00:00:09,910
+in that the discount only applies
+
+4
+00:00:09,910 --> 00:00:12,850
+to that quantity purchased above whatever that breakpoint
+
+5
+00:00:12,850 --> 00:00:15,050
+quantity is, Q1.
+
+6
+00:00:15,050 --> 00:00:16,450
+But like any discount, it's still
+
+7
+00:00:16,450 --> 00:00:20,330
+a trade-off between lower purchase cost and higher
+
+8
+00:00:20,330 --> 00:00:23,532
+carrying costs-- because a lower purchase price
+
+9
+00:00:23,532 --> 00:00:25,740
+means that you're probably going to order more, which
+
+10
+00:00:25,740 --> 00:00:28,323
+means you're going to have more cycle stock and more inventory
+
+11
+00:00:28,323 --> 00:00:29,980
+holding costs.
+
+12
+00:00:29,980 --> 00:00:31,610
+So the insight though, that we want
+
+13
+00:00:31,610 --> 00:00:34,050
+to bring out from using incremental discounts,
+
+14
+00:00:34,050 --> 00:00:36,040
+the way to figure it out is that, you
+
+15
+00:00:36,040 --> 00:00:39,690
+can assume once I go above a certain break point,
+
+16
+00:00:39,690 --> 00:00:41,710
+all of the costs for the quantity that I bought
+
+17
+00:00:41,710 --> 00:00:46,870
+below that breakpoint becomes a fixed cost that we'll call Fi.
+
+18
+00:00:46,870 --> 00:00:49,620
+The idea is if I'm above a certain break point,
+
+19
+00:00:49,620 --> 00:00:52,300
+it doesn't matter how many more I order--
+
+20
+00:00:52,300 --> 00:00:55,370
+I have a fixed amount, it won't change the price
+
+21
+00:00:55,370 --> 00:00:58,490
+that I paid for that first quantity that's
+
+22
+00:00:58,490 --> 00:01:01,230
+applying to the lower discount level.
+
+23
+00:01:01,230 --> 00:01:05,810
+So what this means is whenever I move from one price--
+
+24
+00:01:05,810 --> 00:01:09,150
+and this is the c0, this is the base price / unit.
+
+25
+00:01:09,150 --> 00:01:12,270
+And I might have a c1 for another discount,
+
+26
+00:01:12,270 --> 00:01:14,750
+and a c2 for another discount, where c1 only
+
+27
+00:01:14,750 --> 00:01:18,170
+applies if I go above this Q1 quantity break point,
+
+28
+00:01:18,170 --> 00:01:22,580
+and c2 only applies here if I go above the Q2 level.
+
+29
+00:01:22,580 --> 00:01:28,350
+And as we can see, we hope that the c0 is always
+
+30
+00:01:28,350 --> 00:01:33,120
+greater than c1, which is greater than c2--
+
+31
+00:01:33,120 --> 00:01:35,550
+that c2 for the higher quantity discount
+
+32
+00:01:35,550 --> 00:01:39,200
+should always be the lowest price per unit.
+
+33
+00:01:39,200 --> 00:01:42,350
+But what I'm pointing out here for this fixed cost is,
+
+34
+00:01:42,350 --> 00:01:46,480
+if I look at the c0, the lowest period where
+
+35
+00:01:46,480 --> 00:01:52,050
+I have no discount, my fixed cost-- this is the F0, my fixed
+
+36
+00:01:52,050 --> 00:01:56,250
+cost for being in zone 0 where no discount applies, is there.
+
+37
+00:01:56,250 --> 00:02:00,440
+If I'm in this zone here between Q1 and Q2,
+
+38
+00:02:00,440 --> 00:02:02,440
+then I look at the price of c1 and I
+
+39
+00:02:02,440 --> 00:02:05,785
+see that this point is actually a fixed price-- I'm
+
+40
+00:02:05,785 --> 00:02:07,990
+going to call it F1-- because no matter
+
+41
+00:02:07,990 --> 00:02:09,900
+how much I order, whether it's here,
+
+42
+00:02:09,900 --> 00:02:14,230
+or here, or here, the amount that I pay for quantity
+
+43
+00:02:14,230 --> 00:02:16,860
+Q1 doesn't change, because it's going
+
+44
+00:02:16,860 --> 00:02:19,860
+to be based off of this amount.
+
+45
+00:02:19,860 --> 00:02:22,510
+So it doesn't really affect, so we
+
+46
+00:02:22,510 --> 00:02:23,820
+can treat that as a fixed cost.
+
+47
+00:02:23,820 --> 00:02:27,320
+For the second zone above Q2, this point
+
+48
+00:02:27,320 --> 00:02:30,550
+here will be the fixed cost for that.
+
+49
+00:02:30,550 --> 00:02:34,100
+And I can assume the per price cost, per unit cost,
+
+50
+00:02:34,100 --> 00:02:37,071
+is going to be the slope of this C2 line.
+
+51
+00:02:37,071 --> 00:02:37,570
+OK.
+
+52
+00:02:37,570 --> 00:02:39,130
+So what we want to figure out is how
+
+53
+00:02:39,130 --> 00:02:42,880
+do I figure out those F1 and F2 quantities when
+
+54
+00:02:42,880 --> 00:02:45,020
+I go to some of the discounts.
+
+55
+00:02:45,020 --> 00:02:48,880
+Well, I know this quantity, this whole quantity
+
+56
+00:02:48,880 --> 00:02:52,950
+here-- because that's simply the rate at which the base
+
+57
+00:02:52,950 --> 00:02:56,170
+price, c0, moves over a Q1 quantity.
+
+58
+00:02:56,170 --> 00:03:01,260
+So I know that the total amount is c0 or c0*Q1.
+
+59
+00:03:01,260 --> 00:03:03,810
+I also know that this quantity on the top
+
+60
+00:03:03,810 --> 00:03:08,170
+is the same distance, Q1 multiplied by the slope of c1.
+
+61
+00:03:08,170 --> 00:03:09,810
+So that's c1*Q1.
+
+62
+00:03:09,810 --> 00:03:12,370
+But what I want to figure out is this distance,
+
+63
+00:03:12,370 --> 00:03:15,780
+because that's the fixed quantity or the fixed cost
+
+64
+00:03:15,780 --> 00:03:19,990
+if I'm in zone one where the first discount applies.
+
+65
+00:03:19,990 --> 00:03:24,839
+And so I just subtract the two: c0*Q1 - c1*Q1,
+
+66
+00:03:24,839 --> 00:03:26,380
+is just the difference, (c0 - c1)*Q1.
+
+67
+00:03:26,380 --> 00:03:28,890
+
+
+68
+00:03:28,890 --> 00:03:31,340
+And so therefore, I know what my fixed cost is.
+
+69
+00:03:31,340 --> 00:03:36,630
+So if I have a quantity that falls within this zone 1
+
+70
+00:03:36,630 --> 00:03:42,560
+where the d1 applies, and therefore the cost c1 applies,
+
+71
+00:03:42,560 --> 00:03:49,010
+then I can use c1 as my variable cost.
+
+72
+00:03:49,010 --> 00:03:51,840
+But then I'm going to add this fixed cost of F1
+
+73
+00:03:51,840 --> 00:03:53,480
+into the calculation.
+
+74
+00:03:53,480 --> 00:03:57,970
+And F1-- the more general form is right here--
+
+75
+00:03:57,970 --> 00:04:02,100
+and it's simply the fixed cost of the previous one
+
+76
+00:04:02,100 --> 00:04:06,110
+plus the difference in the two slopes of the variable cost
+
+77
+00:04:06,110 --> 00:04:09,540
+times whatever that breakpoint quantity is.
+
+78
+00:04:09,540 --> 00:04:12,482
+And then you're just going to add in that fixed cost
+
+79
+00:04:12,482 --> 00:04:14,440
+like you would with the c_t-- because it's just
+
+80
+00:04:14,440 --> 00:04:17,829
+another piece of the fixed cost, because it doesn't change
+
+81
+00:04:17,829 --> 00:04:20,610
+with the quantity level as long as I'm within that discount
+
+82
+00:04:20,610 --> 00:04:22,190
+zone.
+
+83
+00:04:22,190 --> 00:04:24,870
+So the process for doing this is the same as
+
+84
+00:04:24,870 --> 00:04:28,182
+for the All Units, just a little bit different.
+
+85
+00:04:28,182 --> 00:04:29,890
+But you're going to go through and you're
+
+86
+00:04:29,890 --> 00:04:33,110
+going to calculate each of the fixed cost points
+
+87
+00:04:33,110 --> 00:04:35,190
+for however many discounts you have.
+
+88
+00:04:35,190 --> 00:04:39,350
+And always remember that F0 = 0.
+
+89
+00:04:39,350 --> 00:04:44,670
+There is no fixed discount cost when no discount applies.
+
+90
+00:04:44,670 --> 00:04:48,870
+Then you find the Q* for each range, including that F1 value.
+
+91
+00:04:48,870 --> 00:04:51,920
+You do that right here.
+
+92
+00:04:51,920 --> 00:04:54,530
+And if it's within the allowable range,
+
+93
+00:04:54,530 --> 00:04:57,460
+then you want to calculate what the total relevant cost is.
+
+94
+00:04:57,460 --> 00:05:00,700
+If you find the Q* and it's not within the allowable range
+
+95
+00:05:00,700 --> 00:05:03,110
+of the discount, then just ignore it and move to the next
+
+96
+00:05:03,110 --> 00:05:04,270
+one.
+
+97
+00:05:04,270 --> 00:05:06,900
+But if I find one that falls within that range,
+
+98
+00:05:06,900 --> 00:05:10,010
+then all I want to figure out the total relevant cost--
+
+99
+00:05:10,010 --> 00:05:11,880
+I can use this equation, which is just
+
+100
+00:05:11,880 --> 00:05:14,820
+saying it's finding an effective cost per unit,
+
+101
+00:05:14,820 --> 00:05:19,150
+or effective variable cost-- it's taking what the cost /
+
+102
+00:05:19,150 --> 00:05:22,260
+unit is for the variable, and then taking that fixed cost
+
+103
+00:05:22,260 --> 00:05:26,450
+and simply dividing the total quantity that falls under that.
+
+104
+00:05:26,450 --> 00:05:28,260
+And that's determining and it's adding
+
+105
+00:05:28,260 --> 00:05:31,180
+to that effective per unit cost.
+
+106
+00:05:31,180 --> 00:05:34,167
+So that's how you handle Incremental Discounts.
+
+107
+00:05:34,167 --> 00:05:34,667
+
+

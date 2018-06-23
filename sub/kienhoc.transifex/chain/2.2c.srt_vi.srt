@@ -1,0 +1,1044 @@
+0
+00:00:00,000 --> 00:00:00,540
+https://youtu.be/95WZxfXOu7w
+
+1
+00:00:00,540 --> 00:00:03,900
+Bây giờ, hãy xem xét phương pháp liên tiến lũy thừa kèm theo xu hướng.
+
+2
+00:00:03,900 --> 00:00:05,590
+Chúng ta tìm kiếm mẫu xu hướng.
+
+3
+00:00:05,590 --> 00:00:08,189
+Hãy nhớ rằng, xu hướng chỉ là một mô hình đồng nhất, hoặc là 
+
+4
+00:00:08,189 --> 00:00:11,730
+theo hướng tích cực hoặc là theo hướng tiêu cực theo thời gian.
+
+5
+00:00:11,730 --> 00:00:12,500
+Nó có thể là đường thẳng.
+
+6
+00:00:12,500 --> 00:00:13,910
+Nó có thể không phải là một đường thẳng.
+
+7
+00:00:13,910 --> 00:00:17,270
+Giả sử tôi có trường hợp này trong đó cột thứ nhất
+
+8
+00:00:17,270 --> 00:00:19,030
+là khoảng thời gian, t.
+
+9
+00:00:19,030 --> 00:00:24,890
+Và xt chỉ đơn giản là đơn hàng có mặt tại thời điểm đó.
+
+10
+00:00:24,890 --> 00:00:27,010
+Vì thế nếu tôi dự định xem xét cái này,
+
+11
+00:00:27,010 --> 00:00:28,790
+cái này thực ra là quan sát hàng năm.
+
+12
+00:00:28,790 --> 00:00:32,180
+Và nếu tôi sắp thực hiện việc dự đoán cho khoảng thời gian tiếp theo,
+
+13
+00:00:32,180 --> 00:00:33,440
+nên tôi ở tại thời điểm một.
+
+14
+00:00:33,440 --> 00:00:36,960
+Dự báo của tôi cho thời điểm hai và vân vân là gì?
+
+15
+00:00:36,960 --> 00:00:40,670
+Nếu tôi làm bằng số mũ với alpha là 0.3,
+
+16
+00:00:40,670 --> 00:00:43,530
+đó là cột thứ ba này.
+
+17
+00:00:43,530 --> 00:00:46,270
+Các dự đoán đó sẽ như thế này.
+
+18
+00:00:46,270 --> 00:00:49,670
+Và tôi giả sử rằng quan sát đầu tiên
+
+19
+00:00:49,670 --> 00:00:53,496
+là dự đoán này để bắt đầu quy trình.
+
+20
+00:00:53,496 --> 00:00:54,870
+Và bạn có thể thấy ở đây là
+
+21
+00:00:54,870 --> 00:00:57,030
+làm bằng số mũ
+
+22
+00:00:57,030 --> 00:00:58,440
+tăng theo thời gian.
+
+23
+00:00:58,440 --> 00:01:01,660
+Và đây là làm bằng số mũ đơn giản.
+
+24
+00:01:01,660 --> 00:01:04,019
+Nhưng nó không bao giờ bắt kịp.
+
+25
+00:01:04,019 --> 00:01:06,180
+Và nếu tôi tính trung bình chuyển động của ba,
+
+26
+00:01:06,180 --> 00:01:08,560
+đó là cột thứ tư này.
+
+27
+00:01:08,560 --> 00:01:10,710
+Và bạn có thể kiểm tra phép toán ở đây nếu bạn muốn.
+
+28
+00:01:10,710 --> 00:01:14,260
+Và tất cả những gì ta làm là lấy trung bình của
+
+29
+00:01:14,260 --> 00:01:17,160
+ba quan sát gần đây nhất cho dự đoán cho giai đoạn tiếp theo.
+
+30
+00:01:17,160 --> 00:01:19,079
+Bạn có thể thấy là nó cũng chậm.
+
+31
+00:01:19,079 --> 00:01:20,620
+Và bạn có thể thấy là nó sát hơn một chút.
+
+32
+00:01:20,620 --> 00:01:23,900
+Đó là giữa alpha và số trung bình chuyển động
+
+33
+00:01:23,900 --> 00:01:27,580
+mà tôi sử dụng để xác định xem cái nào gần với cái đó hơn.
+
+34
+00:01:27,580 --> 00:01:31,610
+Nhưng trong cả hai trường hợp, chúng sẽ không bao giờ bắt kịp.
+
+35
+00:01:31,610 --> 00:01:35,080
+Trung bình chuyển động và làm bằng số mũ đơn giản
+
+36
+00:01:35,080 --> 00:01:38,900
+sẽ luôn chậm nếu tồn tại xu hướng trong dữ liệu cầu.
+
+37
+00:01:38,900 --> 00:01:40,660
+Vì chúng chỉ nhìn vào lịch sử
+
+38
+00:01:40,660 --> 00:01:42,930
+để tìm một mức cân bằng tĩnh.
+
+39
+00:01:42,930 --> 00:01:46,940
+Trong cả hai trường hợp, mô hình giải thích cơ bản cho chúng là
+
+40
+00:01:46,940 --> 00:01:50,190
+đó là cân bằng cộng với dữ liệu thừa.
+
+41
+00:01:50,190 --> 00:01:52,350
+Và tất cả chúng nói lên một điều là
+
+42
+00:01:52,350 --> 00:01:53,670
+có vài thông tin mới.
+
+43
+00:01:53,670 --> 00:01:54,730
+Đó hẳn là dữ liệu thừa.
+
+44
+00:01:54,730 --> 00:01:56,160
+Tôi có nên điều chỉnh mức cân bằng của mình không?
+
+45
+00:01:56,160 --> 00:01:59,300
+Chúng không bao giờ chủ động tìm kiếm một xu hướng.
+
+46
+00:01:59,300 --> 00:02:01,370
+Và những gì chúng ta cần làm là nắm bắt
+
+47
+00:02:01,370 --> 00:02:03,250
+một xu hướng hoặc một yếu tố khác
+
+48
+00:02:03,250 --> 00:02:05,830
+cho dù đó là tính thời vụ hay cái gì khác.
+
+49
+00:02:05,830 --> 00:02:07,660
+Vậy đối với mô hình này, chúng ta sẽ xem xét
+
+50
+00:02:07,660 --> 00:02:10,990
+cả mức cân bằng và xu hướng.
+
+51
+00:02:10,990 --> 00:02:13,750
+Và điều này thường được gọi là phương pháp Holt,
+
+52
+00:02:13,750 --> 00:02:14,470
+người đầu tiên phát triển nó.
+
+53
+00:02:14,470 --> 00:02:17,180
+Và chúng ta sẽ sử dụng hai hằng số làm bằng: Alpha,
+
+54
+00:02:17,180 --> 00:02:20,180
+mà hiện tại chúng ta đang rất thoải mái với mức cân bằng này,
+
+55
+00:02:20,180 --> 00:02:22,890
+và beta sẽ được sử dụng cho xu hướng này.
+
+56
+00:02:22,890 --> 00:02:25,450
+Và cả alpha phải thuộc khoảng từ 0 đến 1
+
+57
+00:02:25,450 --> 00:02:29,950
+và beta- phải thuộc từ 0 đến 1.
+
+58
+00:02:29,950 --> 00:02:33,220
+Vậy một lần nữa, chúng ta đang nhìn vào một mức cân bằng và xu hướng.
+
+59
+00:02:33,220 --> 00:02:35,540
+Vậy nếu tôi nhìn vào mô hình cơ bản
+
+60
+00:02:35,540 --> 00:02:38,620
+nó khác một chút so với những gì chúng ta đã thấy trong quá khứ.
+
+61
+00:02:38,620 --> 00:02:40,650
+Tôi nói rằng cầu trong xt
+
+62
+00:02:40,650 --> 00:02:43,390
+sẽ là một hàm của một mức cân bằng
+
+63
+00:02:43,390 --> 00:02:47,050
+cộng với một số xu hướng nhân số khoảng thời gian t.
+
+64
+00:02:47,050 --> 00:02:50,800
+Vậy b là tăng dần lên, hoặc giảm,
+
+65
+00:02:50,800 --> 00:02:53,230
+trong khoảng thời gian t nhân với số khoảng thời gian.
+
+66
+00:02:53,230 --> 00:02:55,190
+Chỉ là đường dốc, phải không.
+
+67
+00:02:55,190 --> 00:02:56,080
+Vậy là ở bên này.
+
+68
+00:02:56,080 --> 00:02:57,804
+Nhìn vào hình vẽ.
+
+69
+00:02:57,804 --> 00:03:00,220
+Và sau đó tôi sẽ thêm vào đó số hạng sai số.
+
+70
+00:03:00,220 --> 00:03:02,980
+Luôn luôn có yếu tố ngẫu nhiên hoặc dữ liệu vô nghĩa.
+
+71
+00:03:02,980 --> 00:03:06,200
+Và tôi lại giả sử các số hạng sai số của tôi là độc lập
+
+72
+00:03:06,200 --> 00:03:08,720
+và được phân bố như nhau với giá trị trung bình là 0,
+
+73
+00:03:08,720 --> 00:03:12,500
+không thiên lệch, và có chút giao động.
+
+74
+00:03:12,500 --> 00:03:15,240
+Vậy mô hình dự báo của tôi là gì?
+
+75
+00:03:15,240 --> 00:03:18,500
+Dự báo của tôi, đó là x mũ,
+
+76
+00:03:18,500 --> 00:03:21,930
+tại thời gian t cho thời gian t cộng tau.
+
+77
+00:03:21,930 --> 00:03:24,380
+Giờ điều này không nhất thiết phải là mô hình giai đoạn tiếp theo.
+
+78
+00:03:24,380 --> 00:03:27,060
+Đó là t cộng với giai đoạn tau trong tương lai.
+
+79
+00:03:27,060 --> 00:03:29,980
+Tau có thể là 1, 2, 3, bất cứ điều gì.
+
+80
+00:03:29,980 --> 00:03:33,700
+Nó sẽ bằng với ước đoán của tôi về mức cân bằng
+
+81
+00:03:33,700 --> 00:03:37,780
+tại thời gian t cộng với ước đoán về xu hướng
+
+82
+00:03:37,780 --> 00:03:40,930
+ đó là b mũ dưới t,
+
+83
+00:03:40,930 --> 00:03:46,270
+nhân với số giai đoạn thời gian về sau này, tau.
+
+84
+00:03:46,270 --> 00:03:48,550
+Đây là mô hình dự báo.
+
+85
+00:03:48,550 --> 00:03:51,470
+Vậy mỗi giai đoạn sau đó tôi sẽ cập nhật nó.
+
+86
+00:03:51,470 --> 00:03:54,455
+Vậy tôi phải tạo ra các quy trình cập nhật
+
+87
+00:03:54,455 --> 00:03:54,955
+ hoặc cập nhật các công thức.
+
+88
+00:03:54,955 --> 00:03:58,240
+
+
+89
+00:03:58,240 --> 00:03:59,980
+Đó là nội dung của các công thức này.
+
+90
+00:03:59,980 --> 00:04:03,070
+Công thức đầu tiên trông rất quen.
+
+91
+00:04:03,070 --> 00:04:08,430
+Cả hai cái này, alpha mũ dưới t và sau đó b mũ dưới t,
+
+92
+00:04:08,430 --> 00:04:12,800
+là ước đoán về mức cân bằng, đó là một số hạng.
+
+93
+00:04:12,800 --> 00:04:15,110
+Và số hạng b là các thành phần xu hướng
+
+94
+00:04:15,110 --> 00:04:17,410
+khi kết thúc thời gian t.
+
+95
+00:04:17,410 --> 00:04:22,810
+Khi tôi có một mũ t đó là ước đoán của tôi cho mức cân bằng
+
+96
+00:04:22,810 --> 00:04:25,246
+là biết những gì đã xảy ra trong thời gian t.
+
+97
+00:04:25,246 --> 00:04:27,370
+Vào cuối ngày, cuối tuần,
+
+98
+00:04:27,370 --> 00:04:29,740
+cuối tháng, vân vân.
+
+99
+00:04:29,740 --> 00:04:31,590
+Chúng ta sẽ phải dự báo, hoặc chúng ta
+
+100
+00:04:31,590 --> 00:04:35,380
+phải cập nhật, từng thứ cho dự báo của chúng ta.
+
+101
+00:04:35,380 --> 00:04:37,540
+Nếu tôi nhìn vào cái đầu tiên cho cái này
+
+102
+00:04:37,540 --> 00:04:39,485
+trông sẽ rất quen với các bạn.
+
+103
+00:04:39,485 --> 00:04:40,860
+Vì nó tương tự như chúng ta đã làm với
+
+104
+00:04:40,860 --> 00:04:43,160
+làm bằng số mũ đơn giản.
+
+105
+00:04:43,160 --> 00:04:47,080
+Đó là alpha nhân với quan sát thực tế gần đây nhất
+
+106
+00:04:47,080 --> 00:04:48,890
+không phải là dự báo, quan sát, không có mũ
+
+107
+00:04:48,890 --> 00:04:54,520
+cộng 1 trừ alpha, nhân số hạng alpha mũ t trừ 1 này
+
+108
+00:04:54,520 --> 00:04:57,080
+cộng beta mũ t trừ 1.
+
+109
+00:04:57,080 --> 00:04:58,160
+Đó là gì?
+
+110
+00:04:58,160 --> 00:05:00,200
+Đó là dự báo gần đây nhất.
+
+111
+00:05:00,200 --> 00:05:03,420
+Đó là x mũ t trừ 1t.
+
+112
+00:05:03,420 --> 00:05:05,050
+Là cùng một thứ.
+
+113
+00:05:05,050 --> 00:05:08,540
+Bạn có thể thấy rằng đây chỉ là phương trình tương đương,
+
+114
+00:05:08,540 --> 00:05:12,040
+quy trình cập nhật đầu tiên cho một số hạng,
+
+115
+00:05:12,040 --> 00:05:16,810
+giống như những gì chúng ta đã có với làm bằng số mũ đơn giản.
+
+116
+00:05:16,810 --> 00:05:19,850
+Giờ là số hạng thứ hai, cập nhật b,
+
+117
+00:05:19,850 --> 00:05:21,430
+có hơi khác một chút.
+
+118
+00:05:21,430 --> 00:05:23,640
+Nhưng nó thực sự theo nguyên tắc tương tự.
+
+119
+00:05:23,640 --> 00:05:25,780
+Bạn đã có yếu tố làm bằng beta này.
+
+120
+00:05:25,780 --> 00:05:28,060
+Nên tôi sẽ nhân số hạng đầu tiên,
+
+121
+00:05:28,060 --> 00:05:32,130
+là thông tin mới với beta, và thông tin cũ với
+
+122
+00:05:32,130 --> 00:05:32,990
+1 trừ beta.
+
+123
+00:05:32,990 --> 00:05:36,430
+Nó lại là một sự kết hợp tuyến tính.
+
+124
+00:05:36,430 --> 00:05:38,590
+Và thông tin mới là gì?
+
+125
+00:05:38,590 --> 00:05:41,880
+Xu hướng mới, làm thế nào để tôi biết xu hướng mới là gì?
+
+126
+00:05:41,880 --> 00:05:44,250
+Đây là một cách để nghĩ về nó.
+
+127
+00:05:44,250 --> 00:05:46,930
+Tôi ước đoán xem mức cân bằng mới là gì, phải không.
+
+128
+00:05:46,930 --> 00:05:49,260
+Tôi vừa làm ở trên này.
+
+129
+00:05:49,260 --> 00:05:54,000
+Trừ đi ước đoán gần đây nhất của tôi
+
+130
+00:05:54,000 --> 00:05:54,780
+ về mức cân bằng.
+
+131
+00:05:54,780 --> 00:05:57,170
+Nếu tôi nói rằng lần cuối cùng tôi
+
+132
+00:05:57,170 --> 00:06:01,810
+ước đoán mức cân bằng là khoảng 100 đơn vị cầu cho giai đoạn.
+
+133
+00:06:01,810 --> 00:06:05,860
+Và sau đó lần này tôi ước đoán mức cân bằng đó 110.
+
+134
+00:06:05,860 --> 00:06:09,940
+Vậy 110 trừ 100 có nghĩa là mức cân bằng của tôi đã tăng
+
+135
+00:06:09,940 --> 00:06:12,030
+10 đơn vị trong một giai đoạn thời gian.
+
+136
+00:06:12,030 --> 00:06:14,320
+Đó là một số thông tin mới cho thấy
+
+137
+00:06:14,320 --> 00:06:17,360
+tôi có thể có một xu hướng mới, xu hướng tăng 10 đơn vị cầu
+
+138
+00:06:17,360 --> 00:06:19,920
+cho mỗi giai đoạn thời gian.
+
+139
+00:06:19,920 --> 00:06:21,850
+Đó là thông tin mới.
+
+140
+00:06:21,850 --> 00:06:25,970
+Với xu hướng, thông tin mới,
+
+141
+00:06:25,970 --> 00:06:29,400
+là chênh lệch giữa các ước đoán mức cân bằng gần đây nhất.
+
+142
+00:06:29,400 --> 00:06:31,520
+Vậy thông tin cũ là gì?
+
+143
+00:06:31,520 --> 00:06:35,190
+Thông tin cũ là ước đoán gần đây nhất của tôi
+
+144
+00:06:35,190 --> 00:06:38,390
+về xu hướng, b mũ t trừ 1.
+
+145
+00:06:38,390 --> 00:06:41,900
+Đó là ước đoán về những gì tôi đã làm trong giai đoạn cuối.
+
+146
+00:06:41,900 --> 00:06:44,420
+Vậy trong cả hai trường hợp-- nó giống như làm bằng số mũ kép--
+
+147
+00:06:44,420 --> 00:06:47,480
+tôi có quan sát mới
+
+148
+00:06:47,480 --> 00:06:50,920
+để giúp tôi thiết lập mức cân bằng so với
+
+149
+00:06:50,920 --> 00:06:52,050
+dự đoán gần đây nhất.
+
+150
+00:06:52,050 --> 00:06:55,010
+Và với số hạng b tôi lấy ước đoán mới
+
+151
+00:06:55,010 --> 00:06:56,780
+về xu hướng,
+
+152
+00:06:56,780 --> 00:06:59,310
+là chênh lệch giữa các mức cân bằng gần đây nhất
+
+153
+00:06:59,310 --> 00:07:01,290
+mà tôi đã ước đoán.
+
+154
+00:07:01,290 --> 00:07:05,300
+Và tôi sẽ thêm 1 trừ beta của xu hướng cũ
+
+155
+00:07:05,300 --> 00:07:07,049
+mà tôi đã có từ trước.
+
+156
+00:07:07,049 --> 00:07:08,340
+Vậy là lại là cùng một thứ.
+
+157
+00:07:08,340 --> 00:07:10,290
+Đó là mới và cũ, mới và cũ.
+
+158
+00:07:10,290 --> 00:07:14,130
+Bạn chỉ tạo một khoảng chờ tuyến tính giữa hai cái đó.
+
+159
+00:07:14,130 --> 00:07:15,540
+Hãy xét một ví dụ
+
+160
+00:07:15,540 --> 00:07:17,030
+đơn giản để hiểu về quy trình
+
+161
+00:07:17,030 --> 00:07:20,010
+Đây là mô hình dự báo lên ở đây ở đầu trang.
+
+162
+00:07:20,010 --> 00:07:21,230
+Không có gì thay đổi.
+
+163
+00:07:21,230 --> 00:07:23,550
+Chúng ta có hai quy trình cập nhật,
+
+164
+00:07:23,550 --> 00:07:28,430
+một cho mức cân bằng và cái thứ hai cho số hạng b, đó là xu hướng.
+
+165
+00:07:28,430 --> 00:07:32,750
+Và hãy giả sử chúng ta đang ở thời gian 101,
+
+166
+00:07:32,750 --> 00:07:34,117
+ khoảng thời gian 101.
+
+167
+00:07:34,117 --> 00:07:35,200
+Tôi sẽ làm các tuần.
+
+168
+00:07:35,200 --> 00:07:38,840
+Và tôi đang ở trong tuần 101.
+
+169
+00:07:38,840 --> 00:07:42,070
+Và tôi có alpha bằng 0,3 và beta bằng 0,1.
+
+170
+00:07:42,070 --> 00:07:46,700
+Và tôi muốn dự đoán cầu cho t bằng 102.
+
+171
+00:07:46,700 --> 00:07:49,170
+Vậy tôi đang ở đây, phải không.
+
+172
+00:07:49,170 --> 00:07:51,810
+Tôi muốn dự báo cầu
+
+173
+00:07:51,810 --> 00:07:55,930
+cho giai đoạn 102.
+
+174
+00:07:55,930 --> 00:07:57,580
+Vậy đó là khoảng thời gian tiếp theo.
+
+175
+00:07:57,580 --> 00:07:58,860
+Vậy tôi sẽ làm thế nào?
+
+176
+00:07:58,860 --> 00:08:00,750
+Hãy tập trung vào phần A này trước.
+
+177
+00:08:00,750 --> 00:08:03,332
+Sau đó chúng ta sẽ nói về phần này B.
+
+178
+00:08:03,332 --> 00:08:04,540
+Tôi chỉ muốn đi xuống.
+
+179
+00:08:04,540 --> 00:08:07,717
+Và điều đầu tiên tôi muốn làm là ước đoán số hạng a.
+
+180
+00:08:07,717 --> 00:08:09,050
+Ước đoán mức cân bằng của tôi là gì?
+
+181
+00:08:09,050 --> 00:08:10,980
+Vì tôi có một số thông tin mới.
+
+182
+00:08:10,980 --> 00:08:15,170
+Nên tôi sẽ ước tính nhu cầu của t bằng 102.
+
+183
+00:08:15,170 --> 00:08:17,630
+Và trước tiên tôi sẽ tìm ước đoán
+
+184
+00:08:17,630 --> 00:08:19,660
+cho mức cân bằng tại 101 đó.
+
+185
+00:08:19,660 --> 00:08:22,730
+Tôi muốn tìm số hạng này.
+
+186
+00:08:22,730 --> 00:08:23,590
+Tôi làm thế nào?
+
+187
+00:08:23,590 --> 00:08:27,160
+Tôi chỉ sử dụng quy trình cập nhật của tôi.
+
+188
+00:08:27,160 --> 00:08:28,620
+Quy trình cập nhật của tôi sẽ là
+
+189
+00:08:28,620 --> 00:08:31,130
+alpha mũ cho giai đoạn 101
+
+190
+00:08:31,130 --> 00:08:32,799
+sẽ bằng alpha của tôi,
+
+191
+00:08:32,799 --> 00:08:36,230
+0,3, nhân với quan sát gần đây nhất của tôi,
+
+192
+00:08:36,230 --> 00:08:42,309
+đó là trong giai đoạn 101, là 95, cộng với 1 trừ alpha,
+
+193
+00:08:42,309 --> 00:08:46,180
+là 0,7 , nhân với dự báo gần đây nhất của tôi,
+
+194
+00:08:46,180 --> 00:08:50,440
+là tổng ước đoán gần đây nhất của tôi cho mức cân bằng
+
+195
+00:08:50,440 --> 00:08:56,400
+và xu hướng, alpha mũ 100 beta b mũ 100,
+
+196
+00:08:56,400 --> 00:09:00,880
+chỉ bằng 90 và 8,5, cũng giống như dự đoán gần đây nhất của hôm qua
+
+197
+00:09:00,880 --> 00:09:05,860
+cho hôm nay, là 98,5.
+
+198
+00:09:05,860 --> 00:09:07,820
+Về cơ bản, những gì tôi làm là
+
+199
+00:09:07,820 --> 00:09:11,080
+lấy một giá trị trung bình đã được điều chỉnh giữa thông tin mới,
+
+200
+00:09:11,080 --> 00:09:15,320
+95, và thông tin cũ, là 98,5.
+
+201
+00:09:15,320 --> 00:09:18,280
+Tôi biết nó sẽ là ở vào giữa hai số đó,
+
+202
+00:09:18,280 --> 00:09:24,690
+giữa 95-- thông tin mới của tôi-- và 98,5.
+
+203
+00:09:24,690 --> 00:09:26,480
+Điều này có nghĩa là nó có lẽ sẽ
+
+204
+00:09:26,480 --> 00:09:28,930
+thấp hơn một chút so với 98,5.
+
+205
+00:09:28,930 --> 00:09:30,000
+Có lý đấy chứ.
+
+206
+00:09:30,000 --> 00:09:33,109
+Và ta được 97,5.
+
+207
+00:09:33,109 --> 00:09:34,150
+Giờ tôi sẽ làm gì?
+
+208
+00:09:34,150 --> 00:09:37,360
+Tôi muốn tìm cập nhật, hoặc ước đoán của tôi, cho số hạng b,
+
+209
+00:09:37,360 --> 00:09:39,440
+cho xu hướng, cho giai đoạn 101.
+
+210
+00:09:39,440 --> 00:09:43,440
+Giờ tôi muốn tìm số hạng này.
+
+211
+00:09:43,440 --> 00:09:44,170
+Đó là gì vậy?
+
+212
+00:09:44,170 --> 00:09:47,010
+Tôi sẽ chỉ sử dụng lại công thức cập nhật này.
+
+213
+00:09:47,010 --> 00:09:49,290
+Tôi sẽ sử dụng một cho b hoặc số hạng xu hướng.
+
+214
+00:09:49,290 --> 00:09:54,020
+Sẽ là beta, mà đề bài cho là 0,1, phải không,
+
+215
+00:09:54,020 --> 00:09:56,260
+nhân với chênh lệch của các mức cân bằng ước đoán.
+
+216
+00:09:56,260 --> 00:09:59,870
+Mức cân bằng ước đoán của tôi cho 101, tôi vừa làm điều đó.
+
+217
+00:09:59,870 --> 00:10:01,330
+Đó là 97,5, phải không.
+
+218
+00:10:01,330 --> 00:10:03,760
+Tôi vừa tính ở đây.
+
+219
+00:10:03,760 --> 00:10:06,500
+Và tôi muốn trừ đi ước đoán gần đây nhất của tôi,
+
+220
+00:10:06,500 --> 00:10:09,650
+đó là trong khoảng thời gian 100, đó là 90.
+
+221
+00:10:09,650 --> 00:10:12,370
+Vậy là 97.5 trừ 90.
+
+222
+00:10:12,370 --> 00:10:18,450
+Tôi thấy một ước đoán rằng xu hướng là 7,5 đơn vị trong mỗi giai đoạn thời gian.
+
+223
+00:10:18,450 --> 00:10:22,660
+Đó là ước đoán mới của tôi, với thông tin mới.
+
+224
+00:10:22,660 --> 00:10:24,580
+Tôi sẽ thêm vào đó 0.9,
+
+225
+00:10:24,580 --> 00:10:28,510
+là 1 trừ beta, nhân với ước đoán cũ của tôi về xu hướng này,
+
+226
+00:10:28,510 --> 00:10:31,970
+là số hạng này, 8.5.
+
+227
+00:10:31,970 --> 00:10:35,670
+Thực tế là có vẻ như xu hướng của tôi --thông tin mới--
+
+228
+00:10:35,670 --> 00:10:37,390
+cho thấy xu hướng của tôi thấp hơn một chút
+
+229
+00:10:37,390 --> 00:10:40,130
+so với những gì đã xảy ra trước đó.
+
+230
+00:10:40,130 --> 00:10:45,250
+Giá trị trung bình được điều chỉnh của cái này, 0,1 nhân 7.5, cộng 0,9
+
+231
+00:10:45,250 --> 00:10:48,600
+nhân 8.5, là khoảng 8.4.
+
+232
+00:10:48,600 --> 00:10:50,560
+Vậy làm cách nào để tìm dự báo?
+
+233
+00:10:50,560 --> 00:10:51,874
+Tôi chỉ cần cộng chúng lại với nhau.
+
+234
+00:10:51,874 --> 00:10:53,040
+Vậy hãy cộng chúng lại với nhau.
+
+235
+00:10:53,040 --> 00:10:54,636
+Tôi có 105,9.
+
+236
+00:10:54,636 --> 00:10:59,940
+97,5, là mức cân bằng của tôi, cộng với một khoảng thời gian sau này --vì vậy 1 nhân 8,4--
+
+237
+00:10:59,940 --> 00:11:04,670
+tôi được 105,9.
+
+238
+00:11:04,670 --> 00:11:08,470
+OK, giờ hãy nói rằng tôi lại đang ở tại thời gian 101.
+
+239
+00:11:08,470 --> 00:11:11,050
+Nhưng tôi muốn dự báo cho giai đoạn thời gian 110,
+
+240
+00:11:11,050 --> 00:11:14,470
+là trước chính giai đoạn.
+
+241
+00:11:14,470 --> 00:11:16,190
+Làm thế nào để tôi tìm ra?
+
+242
+00:11:16,190 --> 00:11:18,160
+Thực sự là rất dễ.
+
+243
+00:11:18,160 --> 00:11:20,470
+Vậy tau nghĩa là gì?
+
+244
+00:11:20,470 --> 00:11:24,180
+Nhớ rằng đây là mô hình dự báo của tôi ở đây ở phía trên bên phải.
+
+245
+00:11:24,180 --> 00:11:26,160
+Và tôi nói rằng dự báo của tôi tại
+
+246
+00:11:26,160 --> 00:11:29,430
+thời gian t cho thời gian t cộng với tau sẽ là
+
+247
+00:11:29,430 --> 00:11:34,370
+ước đoán gần đây nhất của tôi về mức cân bằng này cộng với tau
+
+248
+00:11:34,370 --> 00:11:38,550
+nhân với cái gì? - Ước đoán gần đây nhất của tôi về xu hướng.
+
+249
+00:11:38,550 --> 00:11:41,860
+Vậy đơn giản sẽ là 97,5--
+
+250
+00:11:41,860 --> 00:11:46,810
+đó là ước đoán gần đây nhất của tôi về mức cân bằng - cộng với 9 khoảng thời gian,
+
+251
+00:11:46,810 --> 00:11:50,480
+nhân với ước đoán gần đây nhất của tôi về đường dốc, hoặc xu hướng,
+
+252
+00:11:50,480 --> 00:11:51,670
+bằng 8,4.
+
+253
+00:11:51,670 --> 00:11:55,340
+Và nó sẽ ra 173,1.
+
+254
+00:11:55,340 --> 00:11:57,400
+Hy vọng là bạn hiểu được quy trình
+
+255
+00:11:57,400 --> 00:11:58,390
+cách thức thực hiện tất cả những điều này.
+
+256
+00:11:58,390 --> 00:11:59,348
+Và thực sự là đơn giản.
+
+257
+00:11:59,348 --> 00:12:01,620
+Bạn chỉ cần sử dụng hai quy trình cập nhật này.
+
+258
+00:12:01,620 --> 00:12:03,620
+Và alpha và beta đang nói với bạn
+
+259
+00:12:03,620 --> 00:12:05,800
+sử dụng bao nhiêu thông tin mới
+
+260
+00:12:05,800 --> 00:12:08,690
+và bao nhiêu thông tin cũ.
+

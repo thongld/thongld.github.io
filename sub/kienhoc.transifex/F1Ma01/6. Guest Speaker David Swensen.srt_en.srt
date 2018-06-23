@@ -1,0 +1,5717 @@
+1
+00:00:00,000 --> 00:00:02,133
+https://www.youtube.com/watch?v=wRdx7kVNQ_E
+
+2
+00:00:02,133 --> 00:00:04,220
+We've already talked about
+our guest today.
+
+3
+00:00:04,220 --> 00:00:08,260
+This is David Swensen.
+
+4
+00:00:08,260 --> 00:00:12,30
+Remember, I said he was the
+inventor of the swap, which is
+
+5
+00:00:12,30 --> 00:00:17,610
+a real claim to fame, because
+swaps total in the hundreds of
+
+6
+00:00:17,610 --> 00:00:18,30
+billions --
+
+7
+00:00:18,30 --> 00:00:18,480
+PROFESSOR DAVID SWENSEN:
+Trillions.
+
+8
+00:00:18,480 --> 00:00:19,802
+PROFESSOR ROBERT SHILLER:
+It's amazing.
+
+9
+00:00:19,802 --> 00:00:21,169
+PROFESSOR DAVID SWENSEN: I
+thought this was going to be a
+
+10
+00:00:21,170 --> 00:00:23,530
+polite introduction.
+
+11
+00:00:23,530 --> 00:00:25,510
+I used to be proud of the
+swap thing, but that
+
+12
+00:00:25,510 --> 00:00:29,535
+was before the crisis.
+
+13
+00:00:29,535 --> 00:00:30,659
+PROFESSOR ROBERT SHILLER:
+Well, that's financial
+
+14
+00:00:30,659 --> 00:00:31,340
+innovation.
+
+15
+00:00:31,340 --> 00:00:35,360
+I think, swaps are a very
+important new technology.
+
+16
+00:00:35,360 --> 00:00:37,260
+We've been talking about that.
+
+17
+00:00:37,260 --> 00:00:39,449
+So anyway, just to
+remind you --
+
+18
+00:00:39,450 --> 00:00:44,300
+David Swensen came to Yale in
+1985, when the portfolio was
+
+19
+00:00:44,300 --> 00:00:45,663
+worth less than $1 billion.
+
+20
+00:00:45,663 --> 00:00:48,360
+
+
+21
+00:00:48,360 --> 00:00:54,375
+And as of June, 2010,
+it's $16.7 billion.
+
+22
+00:00:54,375 --> 00:00:55,320
+PROFESSOR DAVID SWENSEN:
+And climbing.
+
+23
+00:00:55,320 --> 00:00:57,170
+PROFESSOR ROBERT SHILLER:
+And climbing.
+
+24
+00:00:57,170 --> 00:01:01,260
+And this is a financial crisis,
+but between 2009 and
+
+25
+00:01:01,260 --> 00:01:07,880
+2010, the portfolio went up $1.4
+billion, so there's no
+
+26
+00:01:07,880 --> 00:01:09,610
+crisis around here.
+
+27
+00:01:09,610 --> 00:01:12,182
+Well, there was a little
+hitch at one point.
+
+28
+00:01:12,182 --> 00:01:13,530
+But that kind of
+thing happens.
+
+29
+00:01:13,530 --> 00:01:18,630
+
+
+30
+00:01:18,630 --> 00:01:21,750
+I take pride in training young
+people in finance.
+
+31
+00:01:21,750 --> 00:01:25,580
+David Swensen has done the same
+with many young people.
+
+32
+00:01:25,580 --> 00:01:29,688
+Notably, Andrew Golden, who
+heads the Princeton portfolio,
+
+33
+00:01:29,688 --> 00:01:32,110
+is one of your trainees.
+
+34
+00:01:32,110 --> 00:01:37,230
+And he's had an almost as
+spectacular record as well.
+
+35
+00:01:37,230 --> 00:01:39,230
+Well, with that introduction,
+I will turn it
+
+36
+00:01:39,230 --> 00:01:40,688
+over to David Swensen.
+
+37
+00:01:40,688 --> 00:01:41,174
+PROFESSOR DAVID SWENSEN:
+Thank you.
+
+38
+00:01:41,174 --> 00:01:50,790
+[APPLAUSE]
+
+39
+00:01:50,790 --> 00:01:52,20
+PROFESSOR DAVID SWENSEN: So,
+I've been at Yale for, I
+
+40
+00:01:52,20 --> 00:01:54,560
+guess, more than 25 years now.
+
+41
+00:01:54,560 --> 00:01:58,930
+And for most of the 25 years,
+if there was any publicity,
+
+42
+00:01:58,930 --> 00:02:01,620
+the publicity was pretty good.
+
+43
+00:02:01,620 --> 00:02:06,350
+For the past couple of years,
+it's been a little bit mixed.
+
+44
+00:02:06,350 --> 00:02:10,639
+And, I liked it better, before
+the publicity was mixed.
+
+45
+00:02:10,639 --> 00:02:14,619
+I liked it, when every article
+that you would read had
+
+46
+00:02:14,620 --> 00:02:18,500
+something great to say about
+the Yale Approach or the
+
+47
+00:02:18,500 --> 00:02:20,280
+Swensen Model.
+
+48
+00:02:20,280 --> 00:02:24,490
+But after the collapse of Lehman
+Brothers and the onset
+
+49
+00:02:24,490 --> 00:02:28,460
+of the financial crisis, it
+didn't take very long for the
+
+50
+00:02:28,460 --> 00:02:30,702
+negative headlines to appear.
+
+51
+00:02:30,702 --> 00:02:35,790
+As a matter of fact, I carry
+around this Barron's article
+
+52
+00:02:35,790 --> 00:02:41,799
+that appeared in November
+2008, and the title was
+
+53
+00:02:41,800 --> 00:02:46,840
+''Crash Course.'' And it talked
+about colleges cutting
+
+54
+00:02:46,840 --> 00:02:49,300
+budgets, freezing
+hiring, scaling
+
+55
+00:02:49,300 --> 00:02:51,690
+back building projects.
+
+56
+00:02:51,690 --> 00:02:54,690
+And it blamed the Yale Model and
+the Swensen Approach for
+
+57
+00:02:54,690 --> 00:02:57,370
+being too aggressive.
+
+58
+00:02:57,370 --> 00:03:01,10
+They said in Barron's that
+university endowment should
+
+59
+00:03:01,10 --> 00:03:05,510
+own more stocks and bonds, less
+in alternatives, because
+
+60
+00:03:05,510 --> 00:03:09,440
+the alternatives provided too
+little diversification and too
+
+61
+00:03:09,440 --> 00:03:11,590
+little liquidity.
+
+62
+00:03:11,590 --> 00:03:15,140
+So, I thought what we could do
+today as a jumping off point
+
+63
+00:03:15,140 --> 00:03:18,510
+is, talk about what it is that
+Barron's meant when they were
+
+64
+00:03:18,510 --> 00:03:21,200
+talking about the Swensen
+Approach or the
+
+65
+00:03:21,200 --> 00:03:24,959
+Yale Model and --
+
+66
+00:03:24,960 --> 00:03:26,640
+I think, when it was successful,
+it was the Yale
+
+67
+00:03:26,640 --> 00:03:28,720
+Model, and when it failed, it
+was the Swensen Approach,
+
+68
+00:03:28,720 --> 00:03:29,620
+which I really don't like.
+
+69
+00:03:29,620 --> 00:03:32,180
+There's an asymmetry there.
+
+70
+00:03:32,180 --> 00:03:34,420
+I keep thinking that I should
+name it after one of the guys
+
+71
+00:03:34,420 --> 00:03:35,49
+in the office.
+
+72
+00:03:35,50 --> 00:03:37,60
+Maybe it should be the Takahashi
+Approach instead of
+
+73
+00:03:37,60 --> 00:03:37,850
+the Swensen Approach.
+
+74
+00:03:37,850 --> 00:03:39,670
+It's time for him to have
+some glory, right?
+
+75
+00:03:39,670 --> 00:03:42,200
+
+
+76
+00:03:42,200 --> 00:03:46,940
+Talk about what it is that
+Barron's meant by Swensen
+
+77
+00:03:46,940 --> 00:03:50,910
+Approach or the Yale Model, and
+see, whether, indeed, the
+
+78
+00:03:50,910 --> 00:03:54,970
+criticisms that they levy,
+that there's too little
+
+79
+00:03:54,970 --> 00:03:58,440
+diversification and two little
+liquidity, whether those
+
+80
+00:03:58,440 --> 00:04:01,270
+criticisms are valid.
+
+81
+00:04:01,270 --> 00:04:05,460
+But to do that, let's go
+back to 1985, when I
+
+82
+00:04:05,460 --> 00:04:06,733
+first arrived at Yale.
+
+83
+00:04:06,733 --> 00:04:12,260
+It was April 1, 1985, for those
+of you who care about
+
+84
+00:04:12,260 --> 00:04:13,790
+April Fools' Day.
+
+85
+00:04:13,790 --> 00:04:20,620
+I came from a six-year stint on
+Wall Street, and I had no
+
+86
+00:04:20,620 --> 00:04:23,440
+significant portfolio management
+experience.
+
+87
+00:04:23,440 --> 00:04:27,520
+As Bob mentioned in his
+introduction, I'd been
+
+88
+00:04:27,520 --> 00:04:30,940
+involved with structuring the
+first swap transaction in
+
+89
+00:04:30,940 --> 00:04:33,560
+1981, when I worked for
+Salomon Brothers.
+
+90
+00:04:33,560 --> 00:04:36,730
+It was a swap between IBM
+and the World Bank.
+
+91
+00:04:36,730 --> 00:04:40,860
+And later, Lehman Brothers hired
+me to set up their swap
+
+92
+00:04:40,860 --> 00:04:42,130
+operations.
+
+93
+00:04:42,130 --> 00:04:45,840
+So, generally what I was doing
+on Wall Street was working
+
+94
+00:04:45,840 --> 00:04:49,780
+with new financial technologies
+and being
+
+95
+00:04:49,780 --> 00:04:55,30
+involved with the early days
+of swaps transactions.
+
+96
+00:04:55,30 --> 00:04:56,479
+It was a much smaller
+market then, it
+
+97
+00:04:56,480 --> 00:04:58,650
+wasn't hundreds of trillions.
+
+98
+00:04:58,650 --> 00:05:02,500
+And it was a much less efficient
+market then, so the
+
+99
+00:05:02,500 --> 00:05:05,550
+trades were incredibly
+profitable.
+
+100
+00:05:05,550 --> 00:05:10,900
+Commodity swaps today trade on
+razor thin margins, and tend
+
+101
+00:05:10,900 --> 00:05:16,239
+not to be anywhere near as
+profitable as they were when
+
+102
+00:05:16,240 --> 00:05:19,750
+the markets were much
+less efficient.
+
+103
+00:05:19,750 --> 00:05:20,650
+How did I end up at Yale?
+
+104
+00:05:20,650 --> 00:05:24,159
+Well, one of my dissertation
+advisors called me and said
+
+105
+00:05:24,160 --> 00:05:27,940
+they needed somebody to
+manage the portfolio.
+
+106
+00:05:27,940 --> 00:05:31,690
+And after coming to New Haven
+and talking to them about the
+
+107
+00:05:31,690 --> 00:05:35,130
+job, I realized that my heart
+wasn't in Wall Street.
+
+108
+00:05:35,130 --> 00:05:38,680
+My heart was in the world of
+education, and at Yale in
+
+109
+00:05:38,680 --> 00:05:39,160
+particular.
+
+110
+00:05:39,160 --> 00:05:47,370
+So I came up here, amazed that
+I was responsible, as Chief
+
+111
+00:05:47,370 --> 00:05:49,750
+Investment Officer, for
+this portfolio.
+
+112
+00:05:49,750 --> 00:05:52,640
+It was less than $1 billion,
+but close to $1 billion.
+
+113
+00:05:52,640 --> 00:05:56,770
+And the first thing I did was,
+I looked around to see what
+
+114
+00:05:56,770 --> 00:05:57,830
+other people were doing.
+
+115
+00:05:57,830 --> 00:06:01,770
+That seemed like a sensible way
+to approach the portfolio
+
+116
+00:06:01,770 --> 00:06:03,130
+management problem.
+
+117
+00:06:03,130 --> 00:06:06,480
+There must be some smart people
+at Harvard or Princeton
+
+118
+00:06:06,480 --> 00:06:11,630
+or Stanford putting together
+portfolios that make sense for
+
+119
+00:06:11,630 --> 00:06:14,130
+endowed institutions.
+
+120
+00:06:14,130 --> 00:06:19,930
+What I saw was that colleges
+and universities had, on
+
+121
+00:06:19,930 --> 00:06:26,60
+average, 50% of their portfolio
+in U.S. stocks, 40%
+
+122
+00:06:26,60 --> 00:06:31,970
+of their portfolio in U.S. bonds
+and cash, and 10% in a
+
+123
+00:06:31,970 --> 00:06:34,760
+smattering of alternatives.
+
+124
+00:06:34,760 --> 00:06:38,90
+Even though I had no direct
+portfolio management
+
+125
+00:06:38,90 --> 00:06:41,919
+experience, I had studied at
+Yale and Jim Tobin and Bill
+
+126
+00:06:41,920 --> 00:06:44,250
+Brainard were my dissertation
+advisors.
+
+127
+00:06:44,250 --> 00:06:50,30
+And I understood some of
+the basic principles
+
+128
+00:06:50,30 --> 00:06:52,289
+of corporate finance.
+
+129
+00:06:52,290 --> 00:06:57,330
+And one of the first things that
+you learn when you study
+
+130
+00:06:57,330 --> 00:06:59,159
+finance theory, is that
+
+131
+00:06:59,160 --> 00:07:02,750
+diversification is a great thing.
+
+132
+00:07:02,750 --> 00:07:09,560
+Jim Tobin won the Nobel Prize
+in part for his work related
+
+133
+00:07:09,560 --> 00:07:11,560
+to the subject of
+diversification.
+
+134
+00:07:11,560 --> 00:07:15,900
+In fact, when a New York Times
+reporter asked Jim to explain,
+
+135
+00:07:15,900 --> 00:07:19,400
+in layman's terms, what it was
+that he won the Nobel Prize
+
+136
+00:07:19,400 --> 00:07:22,989
+for, Jim said, well, I guess you
+could say, don't put all
+
+137
+00:07:22,990 --> 00:07:25,610
+your eggs in one basket.
+
+138
+00:07:25,610 --> 00:07:28,33
+I didn't know you got a Nobel
+Prize for that, but that's --
+
+139
+00:07:28,33 --> 00:07:28,150
+PROFESSOR ROBERT SHILLER: We
+told our students that that
+
+140
+00:07:28,150 --> 00:07:28,215
+phrase goes back to 1802.
+
+141
+00:07:28,215 --> 00:07:28,280
+[correction: Lecture
+4 mentions an
+
+142
+00:07:28,280 --> 00:07:28,332
+investment manual from 1874.
+
+143
+00:07:28,332 --> 00:07:28,384
+According to
+ngrams.googlelabs.com, the
+
+144
+00:07:28,384 --> 00:07:33,126
+phrase can actually be
+traced back to 1800.]
+
+145
+00:07:33,126 --> 00:07:35,140
+PROFESSOR DAVID SWENSEN: OK,
+so if it goes back to 1802,
+
+146
+00:07:35,140 --> 00:07:38,719
+Jim was just picking up on the
+vernacular and used it as a
+
+147
+00:07:38,720 --> 00:07:44,80
+way to describe what it is
+that he did his work for.
+
+148
+00:07:44,80 --> 00:07:48,469
+And Harry Markowitz, who
+actually did a fair amount of
+
+149
+00:07:48,470 --> 00:07:53,280
+his work on modern portfolio
+theory at Yale's Cowles
+
+150
+00:07:53,280 --> 00:07:55,729
+Foundation, has said that
+
+151
+00:07:55,730 --> 00:07:58,230
+diversification is a free lunch.
+
+152
+00:07:58,230 --> 00:08:02,20
+I mean, didn't you learn in
+introductory economics and
+
+153
+00:08:02,20 --> 00:08:03,180
+intermediate [clarification:
+intermediate economics]
+
+154
+00:08:03,180 --> 00:08:05,430
+that there ain't no such
+thing as a free lunch?
+
+155
+00:08:05,430 --> 00:08:07,600
+Economists are always talking
+about trade-offs.
+
+156
+00:08:07,600 --> 00:08:10,30
+If you want more of this,
+you have less of that.
+
+157
+00:08:10,30 --> 00:08:13,640
+Well, with diversification,
+that's not true, right?
+
+158
+00:08:13,640 --> 00:08:16,659
+If you diversify your portfolio
+for a given level of
+
+159
+00:08:16,660 --> 00:08:21,590
+return, you can generate that
+return at lower risk.
+
+160
+00:08:21,590 --> 00:08:24,859
+If you diversify for a given
+level of risk, you can
+
+161
+00:08:24,860 --> 00:08:26,560
+generate higher returns.
+
+162
+00:08:26,560 --> 00:08:30,240
+So, diversification is this
+great thing, it's a free
+
+163
+00:08:30,240 --> 00:08:34,580
+lunch, it's something that
+everybody should embrace.
+
+164
+00:08:34,580 --> 00:08:39,659
+Well, if you look at the
+portfolios that I saw in the
+
+165
+00:08:39,659 --> 00:08:43,890
+world of endowment investing in
+the mid-1980s, they weren't
+
+166
+00:08:43,890 --> 00:08:44,840
+diversified.
+
+167
+00:08:44,840 --> 00:08:47,490
+If you've got half of your
+assets in a single asset
+
+168
+00:08:47,490 --> 00:08:51,860
+class, U.S. stocks, and you
+have 90% of your assets in
+
+169
+00:08:51,860 --> 00:08:56,610
+U.S. marketable securities,
+you're not diversified.
+
+170
+00:08:56,610 --> 00:09:00,320
+Half your assets in a single
+asset class is way too much.
+
+171
+00:09:00,320 --> 00:09:04,560
+And the 90% that are in stocks
+and bonds under many
+
+172
+00:09:04,560 --> 00:09:10,199
+circumstances will respond to
+the same driver of returns,
+
+173
+00:09:10,200 --> 00:09:13,550
+interest rates, in
+the same way.
+
+174
+00:09:13,550 --> 00:09:17,599
+Lower interest rates,
+mathematically, are good for
+
+175
+00:09:17,600 --> 00:09:21,970
+bonds, and lower interest rates
+lower the discount rate
+
+176
+00:09:21,970 --> 00:09:24,440
+that you use to discount future
+earning streams, so
+
+177
+00:09:24,440 --> 00:09:26,690
+they're probably going to
+be good for stocks too.
+
+178
+00:09:26,690 --> 00:09:29,410
+And vice versa.
+
+179
+00:09:29,410 --> 00:09:32,760
+And the second thing I thought
+about was the notion that
+
+180
+00:09:32,760 --> 00:09:36,980
+endowments have a longer
+time horizon than any
+
+181
+00:09:36,980 --> 00:09:40,70
+investor that I know.
+
+182
+00:09:40,70 --> 00:09:43,570
+And if you've got a long time
+horizon, you should be
+
+183
+00:09:43,570 --> 00:09:47,450
+rewarded by accepting
+equity risks.
+
+184
+00:09:47,450 --> 00:09:50,800
+Because those equity risks,
+even though they might not
+
+185
+00:09:50,800 --> 00:09:54,520
+reward you in the short
+run, will reward
+
+186
+00:09:54,520 --> 00:09:57,460
+you in the long run.
+
+187
+00:09:57,460 --> 00:10:02,940
+So, with a mission, as a manager
+of an endowment, to
+
+188
+00:10:02,940 --> 00:10:05,940
+preserve the purchasing power
+of the portfolio in
+
+189
+00:10:05,940 --> 00:10:12,320
+perpetuity, I expected that
+other endowments would have
+
+190
+00:10:12,320 --> 00:10:17,160
+substantial equity exposures, to
+take advantage of the fact
+
+191
+00:10:17,160 --> 00:10:20,600
+that, in the long run, that's
+where you're going to generate
+
+192
+00:10:20,600 --> 00:10:22,720
+the greatest returns.
+
+193
+00:10:22,720 --> 00:10:26,640
+But if you think about those
+endowment allocations that I
+
+194
+00:10:26,640 --> 00:10:31,862
+saw in the mid-1980s, 40% of the
+assets were in bonds and
+
+195
+00:10:31,862 --> 00:10:36,660
+cash, which are low expected
+return assets.
+
+196
+00:10:36,660 --> 00:10:43,890
+So, the portfolios that I saw
+when I got to Yale failed the
+
+197
+00:10:43,890 --> 00:10:48,380
+basic common sense test of
+diversification and equity
+
+198
+00:10:48,380 --> 00:10:56,250
+orientation, and it prompted
+me and my colleagues to go
+
+199
+00:10:56,250 --> 00:11:02,930
+down a different path, to put
+together a portfolio that had
+
+200
+00:11:02,930 --> 00:11:06,660
+reasonable exposure to equities,
+and put together a
+
+201
+00:11:06,660 --> 00:11:11,770
+portfolio that was sensibly
+diversified.
+
+202
+00:11:11,770 --> 00:11:17,20
+So, I'd like to talk about how
+it is that we got from where
+
+203
+00:11:17,20 --> 00:11:21,650
+we were in the mid-80s to
+where we ended up in the
+
+204
+00:11:21,650 --> 00:11:25,790
+early- to mid-90s, and where
+we remain today.
+
+205
+00:11:25,790 --> 00:11:32,540
+And to do that, I'd like to put
+it in the context of the
+
+206
+00:11:32,540 --> 00:11:36,870
+basic tools that we have
+available to us as investors.
+
+207
+00:11:36,870 --> 00:11:40,360
+And these tools are the tools
+that you can employ if you're
+
+208
+00:11:40,360 --> 00:11:45,360
+managing your portfolio as an
+individual, or the tools that
+
+209
+00:11:45,360 --> 00:11:49,790
+I have to employ when I'm
+managing Yale's portfolio as
+
+210
+00:11:49,790 --> 00:11:51,449
+an institutional investor.
+
+211
+00:11:51,450 --> 00:11:55,390
+And there are basically three
+things that you can do to
+
+212
+00:11:55,390 --> 00:11:57,69
+affect your returns.
+
+213
+00:11:57,70 --> 00:11:59,990
+First of all, you can decide
+what assets you're going to
+
+214
+00:11:59,990 --> 00:12:03,890
+have in the portfolio and in
+which proportions you'll hold
+
+215
+00:12:03,890 --> 00:12:04,620
+those assets.
+
+216
+00:12:04,620 --> 00:12:06,560
+So, that's the asset allocation
+decision.
+
+217
+00:12:06,560 --> 00:12:09,599
+How much in domestic stocks,
+how much in foreign stocks,
+
+218
+00:12:09,600 --> 00:12:11,990
+how much in real estate.
+
+219
+00:12:11,990 --> 00:12:14,450
+If you're an institutional
+investor, how much in timber,
+
+220
+00:12:14,450 --> 00:12:16,813
+how much in leveraged buyouts,
+how much in venture capital.
+
+221
+00:12:16,813 --> 00:12:19,430
+
+
+222
+00:12:19,430 --> 00:12:22,989
+The fundamental decision of how
+it is that the portfolio
+
+223
+00:12:22,990 --> 00:12:26,660
+assets are allocated.
+
+224
+00:12:26,660 --> 00:12:28,480
+The second thing that
+you can do is make a
+
+225
+00:12:28,480 --> 00:12:29,790
+market timing decision.
+
+226
+00:12:29,790 --> 00:12:34,199
+So, if you establish targets
+for your portfolio --
+
+227
+00:12:34,200 --> 00:12:36,980
+targets with respect to how much
+in domestic socks, how
+
+228
+00:12:36,980 --> 00:12:40,970
+much in domestic bonds, how
+much in foreign stocks.
+
+229
+00:12:40,970 --> 00:12:45,560
+And then, because in the short
+run, you think that --
+
+230
+00:12:45,560 --> 00:12:48,199
+let's say domestic stocks are
+expensive and foreign stocks
+
+231
+00:12:48,200 --> 00:12:49,590
+are cheap --
+
+232
+00:12:49,590 --> 00:12:52,690
+you decide to hold more foreign
+stocks and less in
+
+233
+00:12:52,690 --> 00:12:54,160
+domestic stocks.
+
+234
+00:12:54,160 --> 00:12:57,189
+That bet, that short-term bet
+against your long-term
+
+235
+00:12:57,190 --> 00:12:59,720
+targets, is a market
+timing decision.
+
+236
+00:12:59,720 --> 00:13:03,850
+And the returns that are
+attributable to that deviation
+
+237
+00:13:03,850 --> 00:13:06,820
+from your long-term targets are
+the returns that would be
+
+238
+00:13:06,820 --> 00:13:10,620
+attributable to market timing.
+
+239
+00:13:10,620 --> 00:13:16,250
+And the third source of
+returns has to do with
+
+240
+00:13:16,250 --> 00:13:18,560
+security selection.
+
+241
+00:13:18,560 --> 00:13:23,500
+So, you've got your allocation
+to domestic equities.
+
+242
+00:13:23,500 --> 00:13:26,230
+If you buy the market -- and
+the way that you buy the
+
+243
+00:13:26,230 --> 00:13:31,510
+market is to buy an index fund
+that holds all the securities
+
+244
+00:13:31,510 --> 00:13:34,000
+in the market in the proportions
+that they exist in
+
+245
+00:13:34,000 --> 00:13:36,450
+the market -- if you buy the
+market, then your returns to
+
+246
+00:13:36,450 --> 00:13:41,90
+security selection are zero,
+because your portfolio is
+
+247
+00:13:41,90 --> 00:13:43,412
+going to perform in line
+with the market.
+
+248
+00:13:43,412 --> 00:13:47,820
+But if you make security
+selection bets, if you decide
+
+249
+00:13:47,820 --> 00:13:53,300
+that you want to try and beat
+the market, then that bet or
+
+250
+00:13:53,300 --> 00:13:57,180
+that series of bets will
+define your returns
+
+251
+00:13:57,180 --> 00:13:59,640
+attributable to security
+selection.
+
+252
+00:13:59,640 --> 00:14:05,350
+So, if you decide that you think
+the prospects of Ford
+
+253
+00:14:05,350 --> 00:14:08,750
+are superior to the prospects
+of GM, well, you want to
+
+254
+00:14:08,750 --> 00:14:12,620
+overweight Ford and
+underweight GM.
+
+255
+00:14:12,620 --> 00:14:17,340
+And if that turns out to be a
+good bet and you're rewarded,
+
+256
+00:14:17,340 --> 00:14:20,300
+because Ford outperforms and
+GM underperforms, then you
+
+257
+00:14:20,300 --> 00:14:22,449
+have a positive return to
+security selection.
+
+258
+00:14:22,450 --> 00:14:25,380
+If the converse is true, then
+you have a negative return to
+
+259
+00:14:25,380 --> 00:14:27,280
+security selection.
+
+260
+00:14:27,280 --> 00:14:30,130
+But one of the really important
+facts about security
+
+261
+00:14:30,130 --> 00:14:33,980
+selection is that, if
+you play for free,
+
+262
+00:14:33,980 --> 00:14:35,970
+it's a zero sum game.
+
+263
+00:14:35,970 --> 00:14:39,450
+Because if you've overweighted
+Ford and underweighted GM,
+
+264
+00:14:39,450 --> 00:14:44,490
+there has to be some other
+investor or group of investors
+
+265
+00:14:44,490 --> 00:14:47,820
+that are underweight Ford and
+overweight GM, because this is
+
+266
+00:14:47,820 --> 00:14:50,60
+all relative to the market.
+
+267
+00:14:50,60 --> 00:14:54,459
+And so, if you're overweight
+Ford and underweight GM and
+
+268
+00:14:54,460 --> 00:14:58,190
+somebody else is underweight
+Ford and overweight GM, well,
+
+269
+00:14:58,190 --> 00:15:00,740
+at the end of the day, the
+amount by which the winner
+
+270
+00:15:00,740 --> 00:15:03,910
+wins equals the amount by
+which the loser loses.
+
+271
+00:15:03,910 --> 00:15:06,130
+And so, it's a zero-sum game.
+
+272
+00:15:06,130 --> 00:15:09,110
+Of course, if you take into
+account the fact that it costs
+
+273
+00:15:09,110 --> 00:15:11,360
+money to play the game,
+it turns into a
+
+274
+00:15:11,360 --> 00:15:12,710
+negative-sum game.
+
+275
+00:15:12,710 --> 00:15:15,880
+And the negative-sum is the
+amount that's siphoned off by
+
+276
+00:15:15,880 --> 00:15:17,500
+Wall Street.
+
+277
+00:15:17,500 --> 00:15:21,700
+And Wall Street takes its pound
+of flesh in the form of
+
+278
+00:15:21,700 --> 00:15:25,720
+market impact, in the form of
+commissions, in the form of
+
+279
+00:15:25,720 --> 00:15:32,410
+fees that are charged to manage
+the portfolio actively,
+
+280
+00:15:32,410 --> 00:15:34,500
+and then sometimes there are
+even fees to consultants to
+
+281
+00:15:34,500 --> 00:15:35,460
+choose the manager.
+
+282
+00:15:35,460 --> 00:15:39,310
+So, there's an enormous drain
+from the system that causes
+
+283
+00:15:39,310 --> 00:15:46,900
+the active investment activity
+to be a negative-sum game for
+
+284
+00:15:46,900 --> 00:15:50,442
+those investors that
+decide to play.
+
+285
+00:15:50,442 --> 00:15:54,860
+So, let's take these in turn
+and start out with asset
+
+286
+00:15:54,860 --> 00:15:57,700
+allocation.
+
+287
+00:15:57,700 --> 00:16:03,710
+Asset allocation is far and away
+the most important tool
+
+288
+00:16:03,710 --> 00:16:07,970
+that we have available
+to us as investors.
+
+289
+00:16:07,970 --> 00:16:13,930
+When I first started thinking
+about this 25 years ago, I
+
+290
+00:16:13,930 --> 00:16:17,000
+thought, well, maybe there's
+some financial law that says
+
+291
+00:16:17,000 --> 00:16:20,100
+that asset allocation is the
+most important tool, because
+
+292
+00:16:20,100 --> 00:16:22,860
+it seems pretty obvious that
+that was going to be the most
+
+293
+00:16:22,860 --> 00:16:25,530
+powerful determinant
+of returns.
+
+294
+00:16:25,530 --> 00:16:29,800
+But it turns out, that it's not
+really a law of finance
+
+295
+00:16:29,800 --> 00:16:33,370
+that asset allocation dominates
+returns, it's a
+
+296
+00:16:33,370 --> 00:16:38,160
+behavioral result of how it
+is that we as individual
+
+297
+00:16:38,160 --> 00:16:41,770
+investors, or we as
+institutional investors,
+
+298
+00:16:41,770 --> 00:16:45,110
+manage our portfolios.
+
+299
+00:16:45,110 --> 00:16:50,540
+If I make it back to my office,
+traversing these icy
+
+300
+00:16:50,540 --> 00:16:59,20
+sidewalks, I could take Yale's
+$17 or $18 billion dollars and
+
+301
+00:16:59,20 --> 00:17:00,270
+put it all in Google stock.
+
+302
+00:17:00,270 --> 00:17:05,260
+
+
+303
+00:17:05,260 --> 00:17:06,819
+If I did that, I am not sure
+how long I'd keep my job.
+
+304
+00:17:06,819 --> 00:17:11,409
+It might be fun for a while,
+but that would probably be
+
+305
+00:17:11,410 --> 00:17:13,240
+damaging to my employment
+prospects.
+
+306
+00:17:13,240 --> 00:17:17,280
+But if I did that, asset
+allocation would have almost
+
+307
+00:17:17,280 --> 00:17:19,910
+nothing to say about
+Yale's returns.
+
+308
+00:17:19,910 --> 00:17:25,10
+It would be the idiosyncratic
+return associated with Google
+
+309
+00:17:25,10 --> 00:17:28,990
+that would determine whether the
+endowment went up or down
+
+310
+00:17:28,990 --> 00:17:31,480
+or stayed flat.
+
+311
+00:17:31,480 --> 00:17:36,710
+And so, security selection
+would be the overwhelming
+
+312
+00:17:36,710 --> 00:17:42,140
+important determinant of returns
+for Yale's endowment.
+
+313
+00:17:42,140 --> 00:17:45,580
+And if it wasn't exciting enough
+to sell everything and
+
+314
+00:17:45,580 --> 00:17:49,550
+put it on Google stock, maybe
+I could go back to my office
+
+315
+00:17:49,550 --> 00:17:55,260
+and start day trading
+bond futures.
+
+316
+00:17:55,260 --> 00:18:00,40
+Well, if I took Yale's entire
+$17 or $18 billion dollars and
+
+317
+00:18:00,40 --> 00:18:03,930
+started trading bond futures
+with it, asset allocation
+
+318
+00:18:03,930 --> 00:18:07,690
+would have very little to
+say about Yale's return.
+
+319
+00:18:07,690 --> 00:18:10,180
+Security selection would
+probably have very little to
+
+320
+00:18:10,180 --> 00:18:13,20
+say about Yale's return, so it
+would all be about market
+
+321
+00:18:13,20 --> 00:18:14,660
+timing ability.
+
+322
+00:18:14,660 --> 00:18:20,120
+And if I'm great at following
+the trend -- the trend is your
+
+323
+00:18:20,120 --> 00:18:23,129
+friend -- of course, that's
+true until it's not.
+
+324
+00:18:23,130 --> 00:18:28,620
+Or if I've got some sort of
+marvelous scheme to outsmart
+
+325
+00:18:28,620 --> 00:18:31,439
+all the other smart people, who
+are trading in the bond
+
+326
+00:18:31,440 --> 00:18:34,550
+market, I could generate
+some nice returns.
+
+327
+00:18:34,550 --> 00:18:39,710
+But those returns would have
+nothing to do with asset
+
+328
+00:18:39,710 --> 00:18:42,930
+allocation, nothing to do with
+security selection, and
+
+329
+00:18:42,930 --> 00:18:46,340
+everything to do with
+market timing.
+
+330
+00:18:46,340 --> 00:18:49,899
+Of course, these sound like
+ridiculous things, right?
+
+331
+00:18:49,900 --> 00:18:53,320
+I mean, everybody in this room
+knows, that I'm not going to
+
+332
+00:18:53,320 --> 00:18:59,44
+go back and put Yale's entire
+endowment in one stock.
+
+333
+00:18:59,45 --> 00:19:03,140
+And we also know, that I'm not
+going to go back and day trade
+
+334
+00:19:03,140 --> 00:19:06,670
+futures with the endowment.
+
+335
+00:19:06,670 --> 00:19:09,90
+I'm going to go back, and the
+portfolio is going to look a
+
+336
+00:19:09,90 --> 00:19:12,169
+lot like it looked yesterday,
+and the day before, and the
+
+337
+00:19:12,170 --> 00:19:17,860
+month before that, and the year
+before that, because as
+
+338
+00:19:17,860 --> 00:19:21,699
+investors, whether we're
+individual investors are
+
+339
+00:19:21,700 --> 00:19:25,970
+institutional investors, we
+tend to have a sensible,
+
+340
+00:19:25,970 --> 00:19:30,550
+stable approach to
+asset allocation.
+
+341
+00:19:30,550 --> 00:19:34,590
+And within the asset allocation
+framework that we
+
+342
+00:19:34,590 --> 00:19:40,30
+employ, we tend to hold
+well-diversified portfolios of
+
+343
+00:19:40,30 --> 00:19:44,450
+securities within each
+of the asset classes.
+
+344
+00:19:44,450 --> 00:19:49,600
+So, that means that asset
+allocation is going to be the
+
+345
+00:19:49,600 --> 00:19:52,719
+predominant determinant
+of returns.
+
+346
+00:19:52,720 --> 00:19:55,940
+
+
+347
+00:19:55,940 --> 00:19:58,252
+Bob Shiller and I have a
+colleague at the School of
+
+348
+00:19:58,252 --> 00:20:01,139
+Management, Roger Ibbotson,
+who's done a fair amount of
+
+349
+00:20:01,140 --> 00:20:03,440
+work looking at the
+various sources
+
+350
+00:20:03,440 --> 00:20:05,800
+of returns for investors.
+
+351
+00:20:05,800 --> 00:20:08,990
+And a number of years ago, he
+came out with a finding that
+
+352
+00:20:08,990 --> 00:20:11,940
+more than 90% of the variability
+of returns in
+
+353
+00:20:11,940 --> 00:20:14,600
+institutional portfolios had
+to do with the asset
+
+354
+00:20:14,600 --> 00:20:16,695
+allocation decision.
+
+355
+00:20:16,695 --> 00:20:25,250
+And that was a very widely
+read, and widely accepted
+
+356
+00:20:25,250 --> 00:20:27,70
+conclusion.
+
+357
+00:20:27,70 --> 00:20:30,280
+In that same study, I thought
+that there was a more
+
+358
+00:20:30,280 --> 00:20:33,110
+interesting conclusion, and that
+was that asset allocation
+
+359
+00:20:33,110 --> 00:20:39,459
+actually determined more than
+100% of investor returns.
+
+360
+00:20:39,460 --> 00:20:42,760
+How could that be, how could
+asset allocation determine
+
+361
+00:20:42,760 --> 00:20:44,340
+more than 100% of returns?
+
+362
+00:20:44,340 --> 00:20:47,889
+Well, it goes back to the
+discussion that we had about
+
+363
+00:20:47,890 --> 00:20:50,350
+security selection and the fact
+that it's not free to
+
+364
+00:20:50,350 --> 00:20:52,600
+play the game, and the
+same thing's true
+
+365
+00:20:52,600 --> 00:20:54,639
+about market timing.
+
+366
+00:20:54,640 --> 00:20:59,700
+If somebody is overweighting
+a particular asset class
+
+367
+00:20:59,700 --> 00:21:04,280
+relative to the long-term
+targets that they've got,
+
+368
+00:21:04,280 --> 00:21:05,160
+well, there's got to
+be an offsetting
+
+369
+00:21:05,160 --> 00:21:06,470
+position in the markets.
+
+370
+00:21:06,470 --> 00:21:09,100
+Market timing is expensive in
+the same way that security
+
+371
+00:21:09,100 --> 00:21:11,20
+selection is expensive.
+
+372
+00:21:11,20 --> 00:21:17,990
+And so, it, too, is a zero-sum
+game, even though the analysis
+
+373
+00:21:17,990 --> 00:21:20,190
+that you'd apply to market
+timing isn't quite as clear
+
+374
+00:21:20,190 --> 00:21:24,300
+and crisp as in the closed
+system that you've got with
+
+375
+00:21:24,300 --> 00:21:27,350
+any individual securities
+market.
+
+376
+00:21:27,350 --> 00:21:33,40
+So, if security selection
+and market timing were
+
+377
+00:21:33,40 --> 00:21:39,510
+negative-sum games, then asset
+allocation would explain more
+
+378
+00:21:39,510 --> 00:21:42,10
+than 100% of the returns.
+
+379
+00:21:42,10 --> 00:21:47,690
+And, on average, for the
+community as a whole --
+
+380
+00:21:47,690 --> 00:21:50,860
+because investors do engage in
+market timing, investors do
+
+381
+00:21:50,860 --> 00:21:53,649
+engage in security
+selections --
+
+382
+00:21:53,650 --> 00:21:56,50
+those are going to be
+negative-sum games, and you
+
+383
+00:21:56,50 --> 00:22:00,60
+have to subtract the leakages
+occurring because of security
+
+384
+00:22:00,60 --> 00:22:03,580
+selection and market timing,
+in order to get down to the
+
+385
+00:22:03,580 --> 00:22:08,820
+returns that you would get if
+you just took your asset
+
+386
+00:22:08,820 --> 00:22:12,280
+allocation targets and
+implemented them passively.
+
+387
+00:22:12,280 --> 00:22:15,190
+
+
+388
+00:22:15,190 --> 00:22:22,360
+So, it turns out that asset
+allocation is the most
+
+389
+00:22:22,360 --> 00:22:32,409
+important way that we express
+our basic tenets of investment
+
+390
+00:22:32,410 --> 00:22:33,950
+philosophy.
+
+391
+00:22:33,950 --> 00:22:39,470
+I talked about the importance
+of having an equity bias.
+
+392
+00:22:39,470 --> 00:22:44,920
+Well, these are some
+of Ibbotson's data.
+
+393
+00:22:44,920 --> 00:22:48,530
+He's got this publication called
+Stocks, Bonds, Bills,
+
+394
+00:22:48,530 --> 00:22:51,620
+and Inflation, although he
+might have sold it to
+
+395
+00:22:51,620 --> 00:22:55,179
+Morningstar, so maybe it's
+Morningstar's publication now.
+
+396
+00:22:55,180 --> 00:22:58,740
+And it actually is an outgrowth
+of some academic
+
+397
+00:22:58,740 --> 00:23:02,220
+research that he did
+decades ago.
+
+398
+00:23:02,220 --> 00:23:11,60
+And the basic drill was,
+starting in 1925, looking at a
+
+399
+00:23:11,60 --> 00:23:12,899
+number of asset classes --
+
+400
+00:23:12,900 --> 00:23:15,720
+the ones that I've got here are
+Treasury bills, Treasury
+
+401
+00:23:15,720 --> 00:23:20,650
+bonds, large stocks, small
+stocks, and then, as a
+
+402
+00:23:20,650 --> 00:23:23,520
+benchmark, inflation --
+
+403
+00:23:23,520 --> 00:23:26,740
+starting the investment at the
+end of 1925, taking whatever
+
+404
+00:23:26,740 --> 00:23:30,290
+income was generated from that
+investment, reinvesting it and
+
+405
+00:23:30,290 --> 00:23:33,254
+seeing where you end up at
+the end of the period.
+
+406
+00:23:33,255 --> 00:23:39,310
+I've got here the numbers
+from 1925 to 2009.
+
+407
+00:23:39,310 --> 00:23:41,770
+And if you did that with
+Treasury bills, which are
+
+408
+00:23:41,770 --> 00:23:44,970
+short-term loans to the U.S.
+government, one of the least
+
+409
+00:23:44,970 --> 00:23:49,390
+risky assets imaginable, you
+would have ended up with 21
+
+410
+00:23:49,390 --> 00:23:50,610
+times your money over
+the period.
+
+411
+00:23:50,610 --> 00:23:52,679
+If you think about that, 21
+times your money, that's
+
+412
+00:23:52,680 --> 00:23:54,410
+pretty good.
+
+413
+00:23:54,410 --> 00:23:58,440
+But if you think about the fact
+that inflation consumed a
+
+414
+00:23:58,440 --> 00:24:01,790
+multiple of 12, well,
+you didn't end up
+
+415
+00:24:01,790 --> 00:24:03,770
+with a lot after inflation.
+
+416
+00:24:03,770 --> 00:24:07,220
+And if you're an institution
+like Yale and you only want to
+
+417
+00:24:07,220 --> 00:24:09,720
+consume after-inflation returns,
+so you can maintain
+
+418
+00:24:09,720 --> 00:24:14,890
+the purchasing power the
+portfolio, well, 21 times, but
+
+419
+00:24:14,890 --> 00:24:19,570
+taking off 12 times for
+inflation, not so good.
+
+420
+00:24:19,570 --> 00:24:22,600
+One of the interesting things
+about the Stocks, Bonds,
+
+421
+00:24:22,600 --> 00:24:26,40
+Bills, and Inflation numbers
+over long periods is that they
+
+422
+00:24:26,40 --> 00:24:30,220
+correspond to our sense of the
+relationship between the
+
+423
+00:24:30,220 --> 00:24:35,360
+riskiness of the asset, and the
+notion that, if you except
+
+424
+00:24:35,360 --> 00:24:38,120
+more risk, you should
+get higher returns.
+
+425
+00:24:38,120 --> 00:24:41,530
+And so, if you move up the risk
+spectrum and, instead of
+
+426
+00:24:41,530 --> 00:24:44,889
+looking at Treasury bills, you
+look at Treasury bonds, you
+
+427
+00:24:44,890 --> 00:24:47,980
+end up with a multiple
+of 86 times.
+
+428
+00:24:47,980 --> 00:24:49,550
+That's pretty good, 86 times.
+
+429
+00:24:49,550 --> 00:24:54,620
+I mean, it's a lot better
+than 21 times for bills.
+
+430
+00:24:54,620 --> 00:24:58,570
+It's still not a huge
+return for decades
+
+431
+00:24:58,570 --> 00:25:02,500
+and decades of investing.
+
+432
+00:25:02,500 --> 00:25:06,800
+So, what happens if you move
+away from lending money, in
+
+433
+00:25:06,800 --> 00:25:07,889
+this case lending money to the
+
+434
+00:25:07,890 --> 00:25:11,940
+government, to owning equities?
+
+435
+00:25:11,940 --> 00:25:16,25
+The multiple over this period --
+and this includes the crash
+
+436
+00:25:16,25 --> 00:25:23,830
+in 1929, the market collapse in
+1987, and the most recent
+
+437
+00:25:23,830 --> 00:25:25,949
+financial crisis.
+
+438
+00:25:25,950 --> 00:25:30,960
+In spite of those blips, you
+would've ended up with 2,592
+
+439
+00:25:30,960 --> 00:25:33,370
+times your money.
+
+440
+00:25:33,370 --> 00:25:37,949
+That's stunning, that's way
+more than 86 times and way
+
+441
+00:25:37,950 --> 00:25:39,170
+more than 21 times.
+
+442
+00:25:39,170 --> 00:25:43,90
+So, over long periods of time,
+you do end up being rewarded
+
+443
+00:25:43,90 --> 00:25:44,699
+for accepting equity risk.
+
+444
+00:25:44,700 --> 00:25:46,400
+And what would've happened if
+you would have put the money
+
+445
+00:25:46,400 --> 00:25:49,60
+in small stocks and
+let her run?
+
+446
+00:25:49,60 --> 00:25:53,350
+12,226 times your money.
+
+447
+00:25:53,350 --> 00:25:56,730
+So, the conclusion is
+pretty obvious.
+
+448
+00:25:56,730 --> 00:26:00,640
+This notion that, if you've got
+a long time horizon, you
+
+449
+00:26:00,640 --> 00:26:04,10
+want to expose your portfolio
+to equities, it makes an
+
+450
+00:26:04,10 --> 00:26:05,936
+enormous amount of sense.
+
+451
+00:26:05,936 --> 00:26:09,429
+As a matter of fact, the first
+time I took a look at these
+
+452
+00:26:09,430 --> 00:26:16,100
+numbers was back in 1986,
+when I was teaching --
+
+453
+00:26:16,100 --> 00:26:18,209
+probably a predecessor to the
+class that Bob Shiller's
+
+454
+00:26:18,210 --> 00:26:24,280
+teaching, it was a lecture
+class in finance --
+
+455
+00:26:24,280 --> 00:26:32,100
+and I was preparing the lecture
+that had to do with
+
+456
+00:26:32,100 --> 00:26:36,919
+long-term investment
+philosophy.
+
+457
+00:26:36,920 --> 00:26:39,590
+And that's when I first saw
+these numbers, and I was
+
+458
+00:26:39,590 --> 00:26:42,720
+little bit disconcerted when
+I put them together.
+
+459
+00:26:42,720 --> 00:26:48,920
+Because I thought, gee, 21 times
+for bills, 86 times for
+
+460
+00:26:48,920 --> 00:26:53,000
+bonds, 12,226 times
+for small stocks.
+
+461
+00:26:53,000 --> 00:26:55,50
+Maybe the right thing to do
+is to just put the whole
+
+462
+00:26:55,50 --> 00:27:00,000
+portfolio into small stocks
+and forget about it.
+
+463
+00:27:00,000 --> 00:27:03,900
+And my first problem was that,
+if that were true, what was I
+
+464
+00:27:03,900 --> 00:27:07,790
+going to say for the next
+ten weeks of lectures?
+
+465
+00:27:07,790 --> 00:27:10,300
+My longer-term problem was,
+that, if the investment
+
+466
+00:27:10,300 --> 00:27:12,409
+committee figured out, that all
+we needed to do is put the
+
+467
+00:27:12,410 --> 00:27:14,550
+whole portfolio in small stocks,
+and that that was the
+
+468
+00:27:14,550 --> 00:27:17,629
+way to investment success,
+I wouldn't have a job.
+
+469
+00:27:17,630 --> 00:27:19,280
+They wouldn't need
+me to do that.
+
+470
+00:27:19,280 --> 00:27:21,500
+And I had a wife and young
+children, and I like getting a
+
+471
+00:27:21,500 --> 00:27:23,675
+paycheck and being able to
+feed and house them.
+
+472
+00:27:23,675 --> 00:27:30,850
+So, I took a look at the data
+more carefully, and there are
+
+473
+00:27:30,850 --> 00:27:36,840
+a number of examples of
+what it is that I'm
+
+474
+00:27:36,840 --> 00:27:37,860
+going to talk about.
+
+475
+00:27:37,860 --> 00:27:41,260
+But the most profound example
+remains around the
+
+476
+00:27:41,260 --> 00:27:44,620
+great crash in 1929.
+
+477
+00:27:44,620 --> 00:27:47,639
+And if you had your whole
+portfolio in small stocks at
+
+478
+00:27:47,640 --> 00:27:52,820
+the peak, by the end of 1929,
+you would have lost 54% of
+
+479
+00:27:52,820 --> 00:27:54,620
+your money.
+
+480
+00:27:54,620 --> 00:27:57,520
+By the end of 1930, you would
+have lost another 38% of your
+
+481
+00:27:57,520 --> 00:28:02,160
+money, by the end of 1931,
+you would have
+
+482
+00:28:02,160 --> 00:28:05,110
+lost another 50% percent.
+
+483
+00:28:05,110 --> 00:28:08,139
+And by June of 1932, for good
+measure, you would've lost
+
+484
+00:28:08,140 --> 00:28:11,330
+another 32%.
+
+485
+00:28:11,330 --> 00:28:15,540
+So, for every dollar that you
+had at the peak, at the trough
+
+486
+00:28:15,540 --> 00:28:17,850
+you would have had $0.10 left.
+
+487
+00:28:17,850 --> 00:28:22,510
+And it doesn't matter, whether
+you're an investor with the
+
+488
+00:28:22,510 --> 00:28:26,340
+strongest stomach known to
+mankind, or you're an
+
+489
+00:28:26,340 --> 00:28:31,230
+institutional investor with the
+longest investment horizon
+
+490
+00:28:31,230 --> 00:28:34,880
+imaginable, at some point, when
+the dollars are turning
+
+491
+00:28:34,880 --> 00:28:39,630
+into dimes, you're going to
+say, this is a completely
+
+492
+00:28:39,630 --> 00:28:42,20
+ridiculous thing to accept this
+
+493
+00:28:42,20 --> 00:28:44,860
+much risk in the portfolio.
+
+494
+00:28:44,860 --> 00:28:46,310
+I can't stand it.
+
+495
+00:28:46,310 --> 00:28:51,899
+I'm selling all my small stocks
+and I'm going to buy
+
+496
+00:28:51,900 --> 00:28:53,480
+Treasury bonds or
+Treasury bills.
+
+497
+00:28:53,480 --> 00:28:56,780
+And that's exactly
+what people did.
+
+498
+00:28:56,780 --> 00:29:04,180
+And there was this sense in the
+1930s, 1940s, even into
+
+499
+00:29:04,180 --> 00:29:09,530
+the '50s and '60s, that heavy
+equity exposures weren't a
+
+500
+00:29:09,530 --> 00:29:12,879
+responsible thing
+for a fiduciary.
+
+501
+00:29:12,880 --> 00:29:17,910
+When I was writing my book, I
+was fooling around looking at
+
+502
+00:29:17,910 --> 00:29:20,730
+articles from the Saturday
+Evening Post -- and I know
+
+503
+00:29:20,730 --> 00:29:24,120
+everybody here is too young to
+have seen the Saturday Evening
+
+504
+00:29:24,120 --> 00:29:30,229
+Post when it was still
+publishing, but you've all
+
+505
+00:29:30,230 --> 00:29:31,900
+seen Norman Rockwell
+prints, right?
+
+506
+00:29:31,900 --> 00:29:35,640
+Well, he was famous for doing
+covers for the Saturday
+
+507
+00:29:35,640 --> 00:29:39,160
+Evening Post. And there was this
+article in the 1930s --
+
+508
+00:29:39,160 --> 00:29:43,70
+that's actually before my time,
+so I was looking at
+
+509
+00:29:43,70 --> 00:29:45,620
+things in the library, not
+things that actually had been
+
+510
+00:29:45,620 --> 00:29:47,639
+delivered to my doorstep --
+
+511
+00:29:47,640 --> 00:29:54,180
+and the commentator said that it
+was ridiculous that stocks
+
+512
+00:29:54,180 --> 00:29:56,820
+were called securities.
+
+513
+00:29:56,820 --> 00:29:59,480
+That they were so risky that
+we should call stocks
+
+514
+00:29:59,480 --> 00:30:01,490
+insecurities.
+
+515
+00:30:01,490 --> 00:30:06,960
+There was just this visceral
+dislike for the risks that
+
+516
+00:30:06,960 --> 00:30:10,180
+were associated with the stock
+market, because it had caused
+
+517
+00:30:10,180 --> 00:30:13,540
+so many investors
+so much pain.
+
+518
+00:30:13,540 --> 00:30:19,629
+So yes, stocks are a great thing
+for investors with long
+
+519
+00:30:19,630 --> 00:30:23,400
+time horizons, but you need to
+diversify, because you've got
+
+520
+00:30:23,400 --> 00:30:29,410
+to be able to live through
+those inevitable periods,
+
+521
+00:30:29,410 --> 00:30:35,920
+where risky assets produce
+results that are sometimes so
+
+522
+00:30:35,920 --> 00:30:40,20
+bad as to be frightening.
+
+523
+00:30:40,20 --> 00:30:43,770
+Second source of return,
+market timing.
+
+524
+00:30:43,770 --> 00:30:50,960
+A few years ago, a group of
+former colleagues of mine gave
+
+525
+00:30:50,960 --> 00:30:55,530
+me a party at the Yale Club, and
+they presented me with a
+
+526
+00:30:55,530 --> 00:30:59,590
+copy of Keynes's General
+Theory --
+
+527
+00:30:59,590 --> 00:31:03,230
+because back, when I used to
+teach a big finance class like
+
+528
+00:31:03,230 --> 00:31:08,500
+this, the last class always
+involved reading from Keynes.
+
+529
+00:31:08,500 --> 00:31:12,660
+And I think Keynes is one of
+the best authors about
+
+530
+00:31:12,660 --> 00:31:18,460
+investing and financial
+markets, bar none.
+
+531
+00:31:18,460 --> 00:31:21,100
+I remember one of my students
+telling me afterwards, that I
+
+532
+00:31:21,100 --> 00:31:24,20
+was reading from Keynes as if I
+were reading from the Bible.
+
+533
+00:31:24,20 --> 00:31:28,490
+And I had this paperback copy
+that was falling apart, and my
+
+534
+00:31:28,490 --> 00:31:32,830
+former students remembered this
+and they gave me this
+
+535
+00:31:32,830 --> 00:31:34,360
+beautiful first edition
+of Keynes.
+
+536
+00:31:34,360 --> 00:31:37,240
+And I was on the train back from
+New York, where the party
+
+537
+00:31:37,240 --> 00:31:44,560
+had occurred, to New Haven
+and I found this quote.
+
+538
+00:31:44,560 --> 00:31:47,250
+"The idea of wholesale shifts
+is, for various reasons,
+
+539
+00:31:47,250 --> 00:31:50,180
+impracticable and indeed
+undesirable.
+
+540
+00:31:50,180 --> 00:31:53,880
+Most of those who attempt to,
+sell too late and buy too late
+
+541
+00:31:53,880 --> 00:31:57,20
+and do both too often, incurring
+heavy expenses" --
+
+542
+00:31:57,20 --> 00:31:59,740
+there's that negative-sum game
+thing -- "and developing too
+
+543
+00:31:59,740 --> 00:32:04,140
+unsettled and speculative a
+state of mind." And as, in
+
+544
+00:32:04,140 --> 00:32:09,380
+most things, the data support
+Keynes's conclusions.
+
+545
+00:32:09,380 --> 00:32:14,990
+Morningstar did a study of all
+of the mutual funds in the
+
+546
+00:32:14,990 --> 00:32:18,400
+U.S. domestic equity market,
+and there were 17
+
+547
+00:32:18,400 --> 00:32:20,410
+categories of funds.
+
+548
+00:32:20,410 --> 00:32:22,630
+And what they did with this
+study is, they looked at 10
+
+549
+00:32:22,630 --> 00:32:26,230
+years of returns and compared
+dollar-weighted returns to
+
+550
+00:32:26,230 --> 00:32:27,810
+time-weighted returns.
+
+551
+00:32:27,810 --> 00:32:30,500
+The time-weighted returns are
+simply the returns that are
+
+552
+00:32:30,500 --> 00:32:32,60
+generated year in
+and year out.
+
+553
+00:32:32,60 --> 00:32:34,780
+If you get an offering
+memorandum or a prospectus,
+
+554
+00:32:34,780 --> 00:32:37,220
+they'll show you the
+time-weighted return.
+
+555
+00:32:37,220 --> 00:32:40,910
+If you look at the
+advertisements, where Fidelity
+
+556
+00:32:40,910 --> 00:32:47,70
+is touting its latest, greatest
+funds, the returns
+
+557
+00:32:47,70 --> 00:32:49,260
+that you see are time-weighted
+returns.
+
+558
+00:32:49,260 --> 00:32:52,990
+Dollar-weighted returns take
+into account cash flow.
+
+559
+00:32:52,990 --> 00:32:55,970
+So, in a dollar-weighted return,
+if investors put more
+
+560
+00:32:55,970 --> 00:32:59,810
+money into the fund in a
+particular year, that year's
+
+561
+00:32:59,810 --> 00:33:03,710
+return will have a greater
+weight in the calculation.
+
+562
+00:33:03,710 --> 00:33:06,90
+So, here we have all the mutual
+funds in the U.S., 17
+
+563
+00:33:06,90 --> 00:33:09,310
+categories, time-weighted
+versus dollar-weighted.
+
+564
+00:33:09,310 --> 00:33:12,840
+In every one of those
+categories, the
+
+565
+00:33:12,840 --> 00:33:15,159
+dollar-weighted returns
+were less than the
+
+566
+00:33:15,160 --> 00:33:16,900
+time-weighted returns.
+
+567
+00:33:16,900 --> 00:33:17,940
+What does that mean?
+
+568
+00:33:17,940 --> 00:33:22,630
+That means, that investors
+systematically made perverse
+
+569
+00:33:22,630 --> 00:33:28,140
+decisions, as to when to invest
+and when to disinvest
+
+570
+00:33:28,140 --> 00:33:29,350
+from mutual funds.
+
+571
+00:33:29,350 --> 00:33:37,100
+What investors were doing, they
+were buying in after a
+
+572
+00:33:37,100 --> 00:33:41,340
+fund had showed strong relative
+performance and
+
+573
+00:33:41,340 --> 00:33:47,159
+selling after a fund had shown
+poor relative performance.
+
+574
+00:33:47,160 --> 00:33:49,670
+So, they were systematically
+buying high and selling low,
+
+575
+00:33:49,670 --> 00:33:53,340
+and it doesn't matter whether
+you do that with great
+
+576
+00:33:53,340 --> 00:33:56,310
+enthusiasm and in great volume,
+it's a really, really
+
+577
+00:33:56,310 --> 00:33:57,679
+bad way to make money.
+
+578
+00:33:57,680 --> 00:33:59,210
+Very difficult.
+
+579
+00:33:59,210 --> 00:34:07,815
+So, the conclusion for these
+individuals that operate in
+
+580
+00:34:07,815 --> 00:34:12,760
+the mutual fund market is that
+their market timing decisions
+
+581
+00:34:12,760 --> 00:34:15,275
+were systematically perverse.
+
+582
+00:34:15,275 --> 00:34:21,320
+I also took a look at the top
+10 internet funds during the
+
+583
+00:34:21,320 --> 00:34:24,510
+tech bubble, something I
+published in my book for
+
+584
+00:34:24,510 --> 00:34:27,70
+individual investors.
+
+585
+00:34:27,70 --> 00:34:30,850
+And if you looked at the top 10
+internet funds three years
+
+586
+00:34:30,850 --> 00:34:33,440
+before and three years after the
+bubble, the time weighted
+
+587
+00:34:33,440 --> 00:34:36,786
+return was 1.5% per year.
+
+588
+00:34:36,786 --> 00:34:39,590
+You look at that and you say,
+1.5% per year, well, the
+
+589
+00:34:39,590 --> 00:34:42,780
+market went way up and way
+down, but 1.5% per year,
+
+590
+00:34:42,780 --> 00:34:43,760
+that's not so bad.
+
+591
+00:34:43,760 --> 00:34:46,420
+No harm, no foul.
+
+592
+00:34:46,420 --> 00:34:53,600
+Investors invested $13.7 billion
+and lost $9.9 billion,
+
+593
+00:34:53,600 --> 00:34:56,870
+so they lost 72% of what
+they invested.
+
+594
+00:34:56,870 --> 00:34:59,430
+How could it be that they lost
+72% of the money that they
+
+595
+00:34:59,430 --> 00:35:03,149
+invested, when the time-weighted
+return was 1.5%
+
+596
+00:35:03,150 --> 00:35:04,250
+per year for six years?
+
+597
+00:35:04,250 --> 00:35:08,160
+Well, they weren't invested in
+the internet funds in '97, and
+
+598
+00:35:08,160 --> 00:35:11,000
+they weren't invested in
+'98, and they weren't
+
+599
+00:35:11,000 --> 00:35:12,640
+invested in early '99.
+
+600
+00:35:12,640 --> 00:35:16,370
+It was in late '99 and early
+2000, that all the money piled
+
+601
+00:35:16,370 --> 00:35:19,460
+in at the very top.
+
+602
+00:35:19,460 --> 00:35:23,50
+And then, in 2001 and
+2002, bitterly
+
+603
+00:35:23,50 --> 00:35:25,430
+disappointed, they sold.
+
+604
+00:35:25,430 --> 00:35:29,149
+So, they lost 72% of what they
+put in, even though the
+
+605
+00:35:29,150 --> 00:35:34,640
+time-weighted returns were
+1.5% per year positive.
+
+606
+00:35:34,640 --> 00:35:41,710
+So, institutions don't get
+a free pass either.
+
+607
+00:35:41,710 --> 00:35:47,200
+If you look at the crash in
+October, 1987, which was an
+
+608
+00:35:47,200 --> 00:35:50,310
+extraordinary event --
+
+609
+00:35:50,310 --> 00:35:54,170
+I think, the calculation I did
+put it at a 25 standard
+
+610
+00:35:54,170 --> 00:35:59,400
+deviation, which is essentially
+an impossibility.
+
+611
+00:35:59,400 --> 00:36:03,490
+But however you measure it, it
+was an extraordinary event.
+
+612
+00:36:03,490 --> 00:36:05,740
+And what happened on
+October 19, 1987?
+
+613
+00:36:05,740 --> 00:36:08,520
+Well, stock markets the
+world around went down
+
+614
+00:36:08,520 --> 00:36:10,690
+by more than 20%.
+
+615
+00:36:10,690 --> 00:36:14,590
+What people forget is, along
+with the stock markets going
+
+616
+00:36:14,590 --> 00:36:16,260
+down, there was a huge
+rally in government
+
+617
+00:36:16,260 --> 00:36:18,680
+bonds, flight to safety.
+
+618
+00:36:18,680 --> 00:36:22,359
+So, stocks were cheaper, bonds
+were more expensive.
+
+619
+00:36:22,360 --> 00:36:25,000
+What did institutional
+investors do?
+
+620
+00:36:25,000 --> 00:36:26,440
+Well, they got scared,
+and they sold
+
+621
+00:36:26,440 --> 00:36:29,310
+stocks and bought bonds.
+
+622
+00:36:29,310 --> 00:36:32,259
+Same thing, buying high
+and selling low.
+
+623
+00:36:32,260 --> 00:36:38,610
+As a matter of fact, endowments
+took six years to
+
+624
+00:36:38,610 --> 00:36:44,830
+get their post-crash equity
+allocations back up to where
+
+625
+00:36:44,830 --> 00:36:48,700
+they were before the crash,
+arguably underweighted in
+
+626
+00:36:48,700 --> 00:36:52,149
+equities in the heart of one of
+the greatest bull markets
+
+627
+00:36:52,150 --> 00:36:54,610
+of all time.
+
+628
+00:36:54,610 --> 00:36:58,650
+So, the teams of investors,
+whether they're individual or
+
+629
+00:36:58,650 --> 00:37:05,650
+institutional, have this
+perverse predilection to
+
+630
+00:37:05,650 --> 00:37:06,530
+chasing performance.
+
+631
+00:37:06,530 --> 00:37:10,430
+Buying something after it's
+gone up, selling something
+
+632
+00:37:10,430 --> 00:37:14,370
+after it's gone down, and using
+market timing to damage
+
+633
+00:37:14,370 --> 00:37:17,490
+portfolio returns.
+
+634
+00:37:17,490 --> 00:37:20,750
+The final tool that we have
+available to us as investors
+
+635
+00:37:20,750 --> 00:37:23,150
+is security selection.
+
+636
+00:37:23,150 --> 00:37:28,890
+I cite a study in my book,
+''Unconventional Success,''
+
+637
+00:37:28,890 --> 00:37:32,60
+conducted by Rob Arnott, that
+does a very good job of
+
+638
+00:37:32,60 --> 00:37:36,170
+looking at 20 years worth
+of mutual fund returns.
+
+639
+00:37:36,170 --> 00:37:41,690
+And he says that there's about
+a 14% chance that -- or
+
+640
+00:37:41,690 --> 00:37:44,270
+historically there was a 14%
+chance -- of beating the
+
+641
+00:37:44,270 --> 00:37:50,460
+market after adjusting
+for fees and taxes.
+
+642
+00:37:50,460 --> 00:37:55,60
+So, you think a zero-sum game
+would be a coin flip, 50-50.
+
+643
+00:37:55,60 --> 00:37:57,950
+But because of the leakages from
+the system, and because
+
+644
+00:37:57,950 --> 00:38:02,609
+of taxes, the probability of
+winning goes down to 14%.
+
+645
+00:38:02,610 --> 00:38:08,280
+But oh by the way, that
+14% ignores two
+
+646
+00:38:08,280 --> 00:38:09,350
+very important things.
+
+647
+00:38:09,350 --> 00:38:12,980
+One is that a huge percentage
+of mutual funds
+
+648
+00:38:12,980 --> 00:38:14,600
+have front-end loads.
+
+649
+00:38:14,600 --> 00:38:19,360
+If you call your friendly broker
+to buy a mutual fund,
+
+650
+00:38:19,360 --> 00:38:24,120
+they'll extract a payment of
+2% or 3% or 4% or 5% or 6%.
+
+651
+00:38:24,120 --> 00:38:27,9
+Those numbers aren't included,
+so, if you included the loads,
+
+652
+00:38:27,10 --> 00:38:29,200
+that would make the likelihood
+of winning
+
+653
+00:38:29,200 --> 00:38:30,879
+substantially less than 14%.
+
+654
+00:38:30,880 --> 00:38:35,490
+But even more important is the
+concept of survivorship bias.
+
+655
+00:38:35,490 --> 00:38:38,830
+If you look at 20 years worth
+of returns, the only returns
+
+656
+00:38:38,830 --> 00:38:41,69
+you can look at are the returns
+of the funds that
+
+657
+00:38:41,70 --> 00:38:43,40
+survived for 20 years.
+
+658
+00:38:43,40 --> 00:38:46,140
+Well, which funds
+didn't survive?
+
+659
+00:38:46,140 --> 00:38:48,480
+Almost always, the
+funds that don't
+
+660
+00:38:48,480 --> 00:38:50,540
+survive are the failures.
+
+661
+00:38:50,540 --> 00:38:52,300
+So, you're only looking
+at the winners.
+
+662
+00:38:52,300 --> 00:38:57,810
+If you look at the winners and
+you only have a 14% chance, if
+
+663
+00:38:57,810 --> 00:39:02,390
+you take into account the
+losers, that 14% chance has to
+
+664
+00:39:02,390 --> 00:39:04,740
+go to, essentially, zero.
+
+665
+00:39:04,740 --> 00:39:09,200
+And is survivorship bias an
+important phenomenon?
+
+666
+00:39:09,200 --> 00:39:09,819
+It is.
+
+667
+00:39:09,820 --> 00:39:15,140
+The Center for Research in
+Securities Prices has a
+
+668
+00:39:15,140 --> 00:39:19,770
+survivorship bias-free U.S.
+mutual fund database, meaning
+
+669
+00:39:19,770 --> 00:39:24,509
+that it tracks the
+funds that fail.
+
+670
+00:39:24,510 --> 00:39:29,10
+There were 30,361 funds
+in the database.
+
+671
+00:39:29,10 --> 00:39:32,840
+19,129 were living.
+
+672
+00:39:32,840 --> 00:39:36,900
+11,232 were dead.
+
+673
+00:39:36,900 --> 00:39:44,970
+So, more than a third of the
+funds in this survivorship
+
+674
+00:39:44,970 --> 00:39:48,40
+bias-free database were
+ones that had died.
+
+675
+00:39:48,40 --> 00:39:52,980
+And they died mostly,
+because they failed.
+
+676
+00:39:52,980 --> 00:39:54,860
+And that's kind of an honorable
+way to die.
+
+677
+00:39:54,860 --> 00:39:56,710
+There are other ways to die.
+
+678
+00:39:56,710 --> 00:39:59,870
+If you're a big mutual fund
+complex like Fidelity and
+
+679
+00:39:59,870 --> 00:40:04,620
+you've got an underperforming
+fund, what you tend to do is
+
+680
+00:40:04,620 --> 00:40:07,259
+something like, oh, let's merge
+that into this fund that
+
+681
+00:40:07,260 --> 00:40:08,780
+has good performance.
+
+682
+00:40:08,780 --> 00:40:09,660
+And guess what happens?
+
+683
+00:40:09,660 --> 00:40:13,180
+Fidelity loses a fund that has
+bad performance, and one that
+
+684
+00:40:13,180 --> 00:40:17,390
+has good performance has more
+assets, because they merge the
+
+685
+00:40:17,390 --> 00:40:19,350
+underperforming fund into it,
+and makes them look like
+
+686
+00:40:19,350 --> 00:40:23,819
+they're a more successful
+fund management firm.
+
+687
+00:40:23,820 --> 00:40:28,280
+There's one other aspect of
+security selection that's
+
+688
+00:40:28,280 --> 00:40:34,670
+important, an aspect other
+than the fact that it's a
+
+689
+00:40:34,670 --> 00:40:39,120
+negative-sum game that's
+very tough for
+
+690
+00:40:39,120 --> 00:40:43,290
+practitioners to win.
+
+691
+00:40:43,290 --> 00:40:46,70
+And that has to do with the
+degree of opportunity that
+
+692
+00:40:46,70 --> 00:40:48,770
+you've got in various
+asset classes.
+
+693
+00:40:48,770 --> 00:40:53,680
+A number of years ago, I wanted
+to come up with a way
+
+694
+00:40:53,680 --> 00:40:59,220
+of identifying, in an analytical
+manner, where it is
+
+695
+00:40:59,220 --> 00:41:01,140
+that we could find the most
+attractive investment
+
+696
+00:41:01,140 --> 00:41:02,310
+opportunities.
+
+697
+00:41:02,310 --> 00:41:05,500
+And, as far as I know, financial
+economists haven't
+
+698
+00:41:05,500 --> 00:41:13,160
+determined a way to directly
+measure, how efficient
+
+699
+00:41:13,160 --> 00:41:15,950
+individual markets are.
+
+700
+00:41:15,950 --> 00:41:20,359
+So, I took a look at
+distributions of returns for
+
+701
+00:41:20,360 --> 00:41:22,190
+various asset classes.
+
+702
+00:41:22,190 --> 00:41:26,370
+And I had this notion that,
+if a market priced assets
+
+703
+00:41:26,370 --> 00:41:32,470
+efficiently, the distribution
+of returns around the market
+
+704
+00:41:32,470 --> 00:41:34,790
+return would be very tight.
+
+705
+00:41:34,790 --> 00:41:35,910
+Why would that be?
+
+706
+00:41:35,910 --> 00:41:40,930
+Well, if somebody makes a big
+bet in an efficient market, by
+
+707
+00:41:40,930 --> 00:41:46,290
+definition, whether that
+succeeds or fails has to do
+
+708
+00:41:46,290 --> 00:41:50,400
+with more luck than sense.
+
+709
+00:41:50,400 --> 00:41:53,350
+Because the premise is, that
+these assets are efficiently
+
+710
+00:41:53,350 --> 00:41:56,529
+priced, and you don't make a big
+win on a big bet, unless
+
+711
+00:41:56,530 --> 00:41:59,150
+there's an inefficiency that
+you're exploiting.
+
+712
+00:41:59,150 --> 00:42:02,680
+So, if you're making big bets
+in an efficiently priced
+
+713
+00:42:02,680 --> 00:42:05,810
+market, you might win one year
+and gather more assets, and
+
+714
+00:42:05,810 --> 00:42:07,950
+you might win another year and
+gather more assets, but,
+
+715
+00:42:07,950 --> 00:42:09,990
+ultimately, your luck is
+going to run out and
+
+716
+00:42:09,990 --> 00:42:11,209
+you're going to fail.
+
+717
+00:42:11,210 --> 00:42:13,250
+And then, people will fire
+you, and you'll lose your
+
+718
+00:42:13,250 --> 00:42:16,800
+assets, and lose your
+income stream.
+
+719
+00:42:16,800 --> 00:42:21,280
+So, the right thing to do in an
+efficiently priced market
+
+720
+00:42:21,280 --> 00:42:23,700
+is to hug the benchmark.
+
+721
+00:42:23,700 --> 00:42:25,379
+People call it Closet
+Indexing, look
+
+722
+00:42:25,380 --> 00:42:27,960
+like everybody else.
+
+723
+00:42:27,960 --> 00:42:32,720
+And we're human beings, we don't
+like firing people and
+
+724
+00:42:32,720 --> 00:42:35,250
+we don't like admitting
+we're wrong.
+
+725
+00:42:35,250 --> 00:42:39,760
+And so, if somebody has
+market-like performance, and
+
+726
+00:42:39,760 --> 00:42:42,780
+maybe it's not all that
+outstanding, say, OK fine,
+
+727
+00:42:42,780 --> 00:42:47,870
+we'll just continue with this
+particular investment
+
+728
+00:42:47,870 --> 00:42:52,120
+strategy, even though it's not
+doing great things, at least
+
+729
+00:42:52,120 --> 00:42:54,40
+it's not doing terrible
+things.
+
+730
+00:42:54,40 --> 00:42:57,290
+On the other end of the
+spectrum, maybe there's not
+
+731
+00:42:57,290 --> 00:43:01,500
+even a market that you
+can match with
+
+732
+00:43:01,500 --> 00:43:04,250
+your investment strategy.
+
+733
+00:43:04,250 --> 00:43:07,200
+I mean, think about
+venture capital.
+
+734
+00:43:07,200 --> 00:43:10,9
+I mean, how is it that you could
+index venture capital?
+
+735
+00:43:10,10 --> 00:43:12,950
+You can't, that's a bunch of
+private partnerships and a
+
+736
+00:43:12,950 --> 00:43:16,240
+bunch of idiosyncratic
+enterprises.
+
+737
+00:43:16,240 --> 00:43:20,240
+And even if you wanted to, you
+couldn't match the market.
+
+738
+00:43:20,240 --> 00:43:27,209
+So, you're forced to go out and
+forge your own path, and
+
+739
+00:43:27,210 --> 00:43:30,770
+live and die by the decisions
+that you make.
+
+740
+00:43:30,770 --> 00:43:33,690
+So, how does this thought piece
+
+741
+00:43:33,690 --> 00:43:37,170
+translate into real numbers?
+
+742
+00:43:37,170 --> 00:43:39,690
+So again, we're looking at 10
+years worth of returns for
+
+743
+00:43:39,690 --> 00:43:41,000
+various asset classes.
+
+744
+00:43:41,000 --> 00:43:43,500
+I look at the difference between
+the top quartile
+
+745
+00:43:43,500 --> 00:43:45,610
+manager and the bottom
+quartile --
+
+746
+00:43:45,610 --> 00:43:46,890
+the difference between first and
+third [correction: fourth]
+
+747
+00:43:46,890 --> 00:43:48,310
+quartile, you can use
+any measure of
+
+748
+00:43:48,310 --> 00:43:49,880
+distribution that you want.
+
+749
+00:43:49,880 --> 00:43:53,290
+And in the bond market, which
+is probably the most
+
+750
+00:43:53,290 --> 00:43:55,350
+efficiently priced of all
+markets -- and the reason it's
+
+751
+00:43:55,350 --> 00:43:57,759
+most efficiently priced
+is, because bonds
+
+752
+00:43:57,760 --> 00:43:59,430
+are just math, right?
+
+753
+00:43:59,430 --> 00:44:03,609
+You've got coupons, you've
+got principal, you've got
+
+754
+00:44:03,610 --> 00:44:08,140
+probabilities of default, it's
+the most easily analyzed of
+
+755
+00:44:08,140 --> 00:44:10,60
+all the assets in
+which we invest.
+
+756
+00:44:10,60 --> 00:44:12,320
+The difference between top
+quartile and bottom quartile
+
+757
+00:44:12,320 --> 00:44:14,850
+is 0.50% per annum.
+
+758
+00:44:14,850 --> 00:44:16,549
+Almost nothing.
+
+759
+00:44:16,550 --> 00:44:20,880
+All bond managers are jammed
+together right in the heart of
+
+760
+00:44:20,880 --> 00:44:25,830
+the distribution, because if
+they were out there making
+
+761
+00:44:25,830 --> 00:44:28,740
+crazy bets and generating
+returns that were
+
+762
+00:44:28,740 --> 00:44:32,879
+fundamentally different from the
+market, they'd be in that
+
+763
+00:44:32,880 --> 00:44:36,110
+category of, yes, sure, it's
+great, when it works, but when
+
+764
+00:44:36,110 --> 00:44:38,150
+it doesn't, you're dead.
+
+765
+00:44:38,150 --> 00:44:41,70
+Large cap stocks, less
+efficiently priced than bonds,
+
+766
+00:44:41,70 --> 00:44:43,820
+but still pretty efficiently
+priced, two percentage points
+
+767
+00:44:43,820 --> 00:44:45,460
+per annum difference first to
+third [correction: fourth]
+
+768
+00:44:45,460 --> 00:44:47,130
+quartile over 10 years.
+
+769
+00:44:47,130 --> 00:44:50,10
+Foreign stocks, less efficiently
+priced than those
+
+770
+00:44:50,10 --> 00:44:53,890
+in the domestic markets,
+four points per year.
+
+771
+00:44:53,890 --> 00:44:57,29
+Then you move into the hedge
+fund world, the part of the
+
+772
+00:44:57,30 --> 00:45:01,590
+hedge fund world that we call
+absolute return at Yale, 7.1
+
+773
+00:45:01,590 --> 00:45:03,120
+percentage points, first to
+third [correction: fourth]
+
+774
+00:45:03,120 --> 00:45:04,160
+quartile.
+
+775
+00:45:04,160 --> 00:45:06,839
+Real estate, much less
+efficiently priced than
+
+776
+00:45:06,840 --> 00:45:10,290
+marketable securities, 9.3
+percentage points, top to
+
+777
+00:45:10,290 --> 00:45:12,9
+bottom quartile.
+
+778
+00:45:12,10 --> 00:45:18,960
+Leveraged buyouts, 13.7%
+difference, top quartile to
+
+779
+00:45:18,960 --> 00:45:19,450
+bottom quartile.
+
+780
+00:45:19,450 --> 00:45:25,669
+And the venture capital, 43.2
+percentage points difference,
+
+781
+00:45:25,670 --> 00:45:26,980
+top to bottom quartile.
+
+782
+00:45:26,980 --> 00:45:33,220
+So, the measure that we have
+here of market inefficiency
+
+783
+00:45:33,220 --> 00:45:38,919
+points us toward spending our
+time and energy trying to find
+
+784
+00:45:38,920 --> 00:45:41,400
+the best venture capital
+managers, trying to find the
+
+785
+00:45:41,400 --> 00:45:45,230
+best leveraged buyout managers,
+and spending far
+
+786
+00:45:45,230 --> 00:45:49,650
+less of our time and energy
+trying to beat the bond market
+
+787
+00:45:49,650 --> 00:45:50,760
+or beat the stock market.
+
+788
+00:45:50,760 --> 00:45:53,340
+Because, even if you win there,
+even if you end up in
+
+789
+00:45:53,340 --> 00:45:56,600
+the top quartile, you're not
+adding an enormous amount of
+
+790
+00:45:56,600 --> 00:46:00,910
+value relative to what you would
+have had, if you just
+
+791
+00:46:00,910 --> 00:46:03,890
+would have bought the market.
+
+792
+00:46:03,890 --> 00:46:08,230
+So, with that background, let's
+revisit the criticisms
+
+793
+00:46:08,230 --> 00:46:12,150
+that Barron's leveled
+at the Yale Model
+
+794
+00:46:12,150 --> 00:46:14,340
+and the Swensen Approach.
+
+795
+00:46:14,340 --> 00:46:17,950
+First of all, they talk about
+diversification failing.
+
+796
+00:46:17,950 --> 00:46:25,879
+And the fact is that, in a
+panic, only two things matter:
+
+797
+00:46:25,880 --> 00:46:28,540
+risk and safety.
+
+798
+00:46:28,540 --> 00:46:33,900
+And I saw this in 1987, saw it
+in 1998 with the collapse of
+
+799
+00:46:33,900 --> 00:46:38,70
+Long Term Capital, and saw it in
+2008 in a way that was even
+
+800
+00:46:38,70 --> 00:46:41,580
+more profound than
+in '87 and '98.
+
+801
+00:46:41,580 --> 00:46:47,490
+Investors sold everything that
+had risk associated with it to
+
+802
+00:46:47,490 --> 00:46:49,720
+buy U.S. Treasuries.
+
+803
+00:46:49,720 --> 00:46:51,759
+Safety was all that mattered.
+
+804
+00:46:51,760 --> 00:46:57,880
+And of course, in that narrow
+window of time,
+
+805
+00:46:57,880 --> 00:47:01,150
+diversification does fail.
+
+806
+00:47:01,150 --> 00:47:05,710
+The only diversification that
+would matter in that instance
+
+807
+00:47:05,710 --> 00:47:09,770
+is owning U.S. Treasuries.
+
+808
+00:47:09,770 --> 00:47:12,890
+But if you owned a substantial
+amount of U.S. Treasury bonds
+
+809
+00:47:12,890 --> 00:47:14,950
+-- and what's a substantial
+amount?
+
+810
+00:47:14,950 --> 00:47:18,910
+25%, 30%, 35% of
+your portfolio.
+
+811
+00:47:18,910 --> 00:47:23,540
+Then, under normal
+circumstances, under the
+
+812
+00:47:23,540 --> 00:47:27,259
+circumstances, in which we live
+most of our lives, you're
+
+813
+00:47:27,260 --> 00:47:29,890
+paying a huge opportunity
+cost.
+
+814
+00:47:29,890 --> 00:47:35,910
+So, you could have a portfolio
+with 30% in U.S. Treasuries,
+
+815
+00:47:35,910 --> 00:47:38,940
+and year in and year out you
+would pay this opportunity
+
+816
+00:47:38,940 --> 00:47:42,400
+cost. And then, when the crisis
+comes, you can be happy
+
+817
+00:47:42,400 --> 00:47:47,730
+for six or 12 or 18 months, and
+then you go back to paying
+
+818
+00:47:47,730 --> 00:47:52,160
+the opportunity cost. And I
+would argue that, if you
+
+819
+00:47:52,160 --> 00:47:59,430
+expand your time horizon to a
+sensible length of time, that
+
+820
+00:47:59,430 --> 00:48:04,100
+the strategy, where you hold
+relatively little in the high
+
+821
+00:48:04,100 --> 00:48:07,710
+opportunity cost U.S.
+Treasuries, is the best
+
+822
+00:48:07,710 --> 00:48:12,410
+strategy for a long-term
+investor.
+
+823
+00:48:12,410 --> 00:48:16,310
+And there are those, who say
+that, well, diversification
+
+824
+00:48:16,310 --> 00:48:17,970
+doesn't protect you in
+times of crisis.
+
+825
+00:48:17,970 --> 00:48:18,669
+What does it matter?
+
+826
+00:48:18,670 --> 00:48:21,30
+Why would you want
+to diversify?
+
+827
+00:48:21,30 --> 00:48:22,280
+Well, think about Japan.
+
+828
+00:48:22,280 --> 00:48:24,480
+
+
+829
+00:48:24,480 --> 00:48:29,150
+If you were local Japanese
+investor and you wanted to
+
+830
+00:48:29,150 --> 00:48:32,420
+have an equity bias in your
+portfolio -- so, you owned
+
+831
+00:48:32,420 --> 00:48:34,730
+lots of Japanese stocks --
+
+832
+00:48:34,730 --> 00:48:38,740
+in 1989, at the end of the year,
+the Nikkei closed at
+
+833
+00:48:38,740 --> 00:48:41,640
+about 38,000.
+
+834
+00:48:41,640 --> 00:48:44,420
+At the end of 2009, 20
+years later, the
+
+835
+00:48:44,420 --> 00:48:47,630
+Nikkei closed at 10,500.
+
+836
+00:48:47,630 --> 00:48:51,530
+So, with your long time horizon
+and equity bias in
+
+837
+00:48:51,530 --> 00:48:53,730
+your portfolio over
+two decades, you
+
+838
+00:48:53,730 --> 00:48:56,120
+would have lost 73%.
+
+839
+00:48:56,120 --> 00:49:01,640
+So, diversification makes an
+enormous amount of sense in
+
+840
+00:49:01,640 --> 00:49:08,390
+the long run, even if there are
+occasional panics, where
+
+841
+00:49:08,390 --> 00:49:12,40
+you're disappointed that the
+diversified approach that you
+
+842
+00:49:12,40 --> 00:49:18,930
+had to managing the portfolio
+didn't produce results.
+
+843
+00:49:18,930 --> 00:49:21,430
+The second criticism,
+overemphasis on alternatives.
+
+844
+00:49:21,430 --> 00:49:24,779
+Let's just look at the last
+decade in Yale's portfolio.
+
+845
+00:49:24,780 --> 00:49:29,700
+Over the 10 years ended June
+30, 2010, domestic equities
+
+846
+00:49:29,700 --> 00:49:34,730
+produced returns of negative
+0.7% per year, bonds produced
+
+847
+00:49:34,730 --> 00:49:39,260
+returns of 5.9% per year.
+
+848
+00:49:39,260 --> 00:49:42,270
+Let's look at the alternatives,
+as opposed to
+
+849
+00:49:42,270 --> 00:49:44,400
+domestic marketable
+securities.
+
+850
+00:49:44,400 --> 00:49:48,900
+Private equity, 6.2% per year,
+real estate, 6.9% per year,
+
+851
+00:49:48,900 --> 00:49:53,880
+absolute return, 11.1% per year,
+timber, 12.1% per year,
+
+852
+00:49:53,880 --> 00:49:57,210
+and oil and gas,
+24.7% per year.
+
+853
+00:49:57,210 --> 00:50:00,990
+I think the numbers speak
+for themselves.
+
+854
+00:50:00,990 --> 00:50:06,770
+If you have a sensibly long
+time horizon, these basic
+
+855
+00:50:06,770 --> 00:50:09,610
+principles of equity
+orientation and
+
+856
+00:50:09,610 --> 00:50:13,310
+diversification make an enormous
+amount of sense.
+
+857
+00:50:13,310 --> 00:50:19,330
+And if you look at the bottom
+line, which is performance,
+
+858
+00:50:19,330 --> 00:50:26,200
+when I began managing Yale's
+endowment in 1985, it was less
+
+859
+00:50:26,200 --> 00:50:27,750
+than $1 billion.
+
+860
+00:50:27,750 --> 00:50:31,970
+The amount that we distributed
+to support Yale's operations
+
+861
+00:50:31,970 --> 00:50:35,629
+that year was $45
+million dollars.
+
+862
+00:50:35,630 --> 00:50:40,250
+For the year ended June 30,
+2010, the endowment stood at a
+
+863
+00:50:40,250 --> 00:50:42,780
+little bit above $16
+billion dollars.
+
+864
+00:50:42,780 --> 00:50:44,850
+The amount that we distributed
+to Yale's
+
+865
+00:50:44,850 --> 00:50:47,650
+operations was $1.1 billion.
+
+866
+00:50:47,650 --> 00:50:52,920
+So, an enormous positive
+change over 25 years.
+
+867
+00:50:52,920 --> 00:50:56,550
+If you look at Yale's
+performance over the last 10
+
+868
+00:50:56,550 --> 00:51:01,430
+years, it's still better
+than that of any other
+
+869
+00:51:01,430 --> 00:51:05,299
+institutional investor,
+8.9% per annum.
+
+870
+00:51:05,300 --> 00:51:08,120
+And that compares to an average
+for colleges and
+
+871
+00:51:08,120 --> 00:51:11,920
+universities of about
+4.0% per annum.
+
+872
+00:51:11,920 --> 00:51:18,40
+And that translates into $7.9
+billion of added value,
+
+873
+00:51:18,40 --> 00:51:20,810
+relative to where we would have
+been had we had average
+
+874
+00:51:20,810 --> 00:51:22,490
+returns over the
+past 10 years.
+
+875
+00:51:22,490 --> 00:51:27,125
+And the comparable numbers for
+20 years are Yale at 13.1% per
+
+876
+00:51:27,125 --> 00:51:32,810
+annum, again, the best record of
+any institutional investor
+
+877
+00:51:32,810 --> 00:51:34,450
+in the United States.
+
+878
+00:51:34,450 --> 00:51:37,790
+Relative to an average for
+colleges and universities of
+
+879
+00:51:37,790 --> 00:51:43,850
+8.8% per annum, and $12.1
+billion of value added.
+
+880
+00:51:43,850 --> 00:51:49,270
+So, the slings and arrows
+of outrageous fortune.
+
+881
+00:51:49,270 --> 00:51:52,60
+
+
+882
+00:51:52,60 --> 00:51:58,240
+I would suggest that the
+Barron's articles really took
+
+883
+00:51:58,240 --> 00:52:01,810
+far too short a time horizon.
+
+884
+00:52:01,810 --> 00:52:05,870
+And looking at Yale's
+performance and then looking
+
+885
+00:52:05,870 --> 00:52:11,990
+at the Yale Model, which
+emphasizes a portfolio that's
+
+886
+00:52:11,990 --> 00:52:17,20
+well diversified and has
+a strong equity bias.
+
+887
+00:52:17,20 --> 00:52:20,960
+And I think if we were back in
+this room five years or 10
+
+888
+00:52:20,960 --> 00:52:26,60
+years from now, we'll see that
+the portfolio will continue to
+
+889
+00:52:26,60 --> 00:52:30,130
+produce the same kind of strong
+long-run results as it
+
+890
+00:52:30,130 --> 00:52:33,70
+has for the past 10, 20 years.
+
+891
+00:52:33,70 --> 00:52:36,110
+With that, I'd love to answer
+any questions that you might
+
+892
+00:52:36,110 --> 00:52:59,330
+have.
+
+893
+00:52:59,330 --> 00:53:02,480
+STUDENT: How is your job similar
+or different to what a
+
+894
+00:53:02,480 --> 00:53:04,260
+hedge fund manager would do?
+
+895
+00:53:04,260 --> 00:53:07,530
+And what are the concerns that
+an institutional investor has
+
+896
+00:53:07,530 --> 00:53:11,750
+to have, versus a personal
+investor, a wealthy
+
+897
+00:53:11,750 --> 00:53:13,685
+individual?
+
+898
+00:53:13,685 --> 00:53:16,610
+PROFESSOR DAVID SWENSEN: So,
+the fundamental difference
+
+899
+00:53:16,610 --> 00:53:20,990
+between what we would be doing
+at Yale, as opposed to a hedge
+
+900
+00:53:20,990 --> 00:53:26,569
+fund manager, or a domestic
+stock manager, or a buyout
+
+901
+00:53:26,570 --> 00:53:30,240
+manager, is that we're
+essentially one step removed
+
+902
+00:53:30,240 --> 00:53:33,80
+from the security selection
+process.
+
+903
+00:53:33,80 --> 00:53:38,500
+So, our job is to find the best
+hedge fund managers, find
+
+904
+00:53:38,500 --> 00:53:41,920
+the best domestic equity
+managers, find the best buyout
+
+905
+00:53:41,920 --> 00:53:47,430
+managers, and put together
+partnerships that work for
+
+906
+00:53:47,430 --> 00:53:52,620
+them and work for
+the university.
+
+907
+00:53:52,620 --> 00:53:56,970
+And it's a tricky thing to
+do, because, in the funds
+
+908
+00:53:56,970 --> 00:54:02,799
+management world, there are
+all sorts of issues with
+
+909
+00:54:02,800 --> 00:54:04,450
+respect to what economists
+call the
+
+910
+00:54:04,450 --> 00:54:07,839
+principal-agent problem.
+
+911
+00:54:07,840 --> 00:54:16,440
+And we're principals for the
+university engaging agents,
+
+912
+00:54:16,440 --> 00:54:20,710
+the hedge fund managers or the
+buyout managers, and trying to
+
+913
+00:54:20,710 --> 00:54:26,600
+find ways to get those agents
+to act primarily in the
+
+914
+00:54:26,600 --> 00:54:31,310
+university's interests, to get
+rid of those agency issues.
+
+915
+00:54:31,310 --> 00:54:37,420
+And it's a challenge, but a
+fascinating challenge, because
+
+916
+00:54:37,420 --> 00:54:42,720
+in doing this, you end up
+meeting an enormous number of
+
+917
+00:54:42,720 --> 00:54:48,509
+incredibly intelligent,
+engaged, thoughtful
+
+918
+00:54:48,510 --> 00:54:51,280
+individuals that are
+involved in the
+
+919
+00:54:51,280 --> 00:54:53,100
+funds management business.
+
+920
+00:54:53,100 --> 00:54:58,540
+And it's a fabulous career, at
+least from my perspective,
+
+921
+00:54:58,540 --> 00:55:02,210
+because I get to do this and
+do it to benefit one of the
+
+922
+00:55:02,210 --> 00:55:05,680
+world's great institutions,
+Yale.
+
+923
+00:55:05,680 --> 00:55:10,730
+In terms of differences between
+individuals and
+
+924
+00:55:10,730 --> 00:55:14,690
+institutions, there's some
+structural differences.
+
+925
+00:55:14,690 --> 00:55:16,300
+We don't pay taxes.
+
+926
+00:55:16,300 --> 00:55:21,350
+And taxes are an enormously
+important determinant of
+
+927
+00:55:21,350 --> 00:55:24,650
+investment outcomes
+for individuals.
+
+928
+00:55:24,650 --> 00:55:29,510
+As an individual, you want to
+avoid paying taxes or defer
+
+929
+00:55:29,510 --> 00:55:33,770
+paying taxes, because taxes
+are just a huge drag on
+
+930
+00:55:33,770 --> 00:55:34,560
+investment returns.
+
+931
+00:55:34,560 --> 00:55:37,799
+We don't have to worry about
+that, by and large, in
+
+932
+00:55:37,800 --> 00:55:40,830
+managing Yale's portfolio.
+
+933
+00:55:40,830 --> 00:55:44,950
+Another very fundamental
+difference has to do with the
+
+934
+00:55:44,950 --> 00:55:47,930
+resources that we
+can bring to the
+
+935
+00:55:47,930 --> 00:55:49,890
+investment management problem.
+
+936
+00:55:49,890 --> 00:55:55,80
+Most individuals, and many
+institutions, just don't have
+
+937
+00:55:55,80 --> 00:56:02,650
+the wherewithal, either the
+background or the time, to
+
+938
+00:56:02,650 --> 00:56:06,20
+make high quality active
+management decisions.
+
+939
+00:56:06,20 --> 00:56:08,580
+Markets are incredibly tough.
+
+940
+00:56:08,580 --> 00:56:13,850
+Beating those markets is an
+
+941
+00:56:13,850 --> 00:56:16,319
+incredibly difficult challenge.
+
+942
+00:56:16,320 --> 00:56:21,790
+And doing it, by spending a
+couple of hours on a weekend
+
+943
+00:56:21,790 --> 00:56:25,560
+once a month, isn't
+going to cut it.
+
+944
+00:56:25,560 --> 00:56:31,130
+And so at Yale, we've got
+20, 21, 22 investment
+
+945
+00:56:31,130 --> 00:56:34,320
+professionals, who are
+dedicating their careers to
+
+946
+00:56:34,320 --> 00:56:36,380
+trying to make these high
+quality active management
+
+947
+00:56:36,380 --> 00:56:40,600
+decisions, so we can go out
+and have a decent shot at
+
+948
+00:56:40,600 --> 00:56:42,880
+beating the domestic stock
+market and the foreign stock
+
+949
+00:56:42,880 --> 00:56:46,330
+market, and putting together a
+superior portfolio of venture
+
+950
+00:56:46,330 --> 00:56:50,920
+capital partnerships and
+hedge fund managers.
+
+951
+00:56:50,920 --> 00:56:58,130
+And over the past five, 10, 15,
+20 years, we've produced
+
+952
+00:56:58,130 --> 00:56:59,460
+market-beating results.
+
+953
+00:56:59,460 --> 00:57:04,670
+In contrast, an individual has
+almost no chance of beating
+
+954
+00:57:04,670 --> 00:57:06,390
+the market.
+
+955
+00:57:06,390 --> 00:57:09,89
+So I've written two books,
+one, Pioneering Portfolio
+
+956
+00:57:09,90 --> 00:57:12,200
+Management that talks about
+how it is that, I think,
+
+957
+00:57:12,200 --> 00:57:15,270
+institutions should manage
+their portfolio.
+
+958
+00:57:15,270 --> 00:57:17,660
+And if they've got the resources
+-- and it's not just
+
+959
+00:57:17,660 --> 00:57:19,960
+dollars, it's the human
+resources --
+
+960
+00:57:19,960 --> 00:57:21,640
+to make those high quality
+decisions.
+
+961
+00:57:21,640 --> 00:57:25,480
+They can follow what Barron's
+referred to as the Yale Model
+
+962
+00:57:25,480 --> 00:57:27,220
+or the Swensen Approach.
+
+963
+00:57:27,220 --> 00:57:32,839
+But the book that I've written
+ostensibly for individuals,
+
+964
+00:57:32,840 --> 00:57:36,990
+but it's really individuals and
+institutions that don't
+
+965
+00:57:36,990 --> 00:57:42,390
+have the same resources that
+Yale does to make these high
+
+966
+00:57:42,390 --> 00:57:45,850
+quality active decisions.
+
+967
+00:57:45,850 --> 00:57:48,750
+That book says, basically, what
+you should do, is come up
+
+968
+00:57:48,750 --> 00:57:53,190
+with a sensible asset allocation
+policy, and, then,
+
+969
+00:57:53,190 --> 00:57:58,510
+implement it using index funds,
+which are low-cost ways
+
+970
+00:57:58,510 --> 00:58:00,280
+of mimicking the market.
+
+971
+00:58:00,280 --> 00:58:04,380
+And oh, by the way, because they
+have very low turnover,
+
+972
+00:58:04,380 --> 00:58:08,590
+generate very little in terms
+of tax consequences for the
+
+973
+00:58:08,590 --> 00:58:09,950
+holders of those funds.
+
+974
+00:58:09,950 --> 00:58:15,399
+So, it's kind of an interesting
+world, where the
+
+975
+00:58:15,400 --> 00:58:20,430
+right solution is either one
+extreme or the other extreme.
+
+976
+00:58:20,430 --> 00:58:25,520
+You're either completely
+passive or you're
+
+977
+00:58:25,520 --> 00:58:28,509
+aggressively active.
+
+978
+00:58:28,510 --> 00:58:32,280
+But as in most things, most
+people are kind of in the
+
+979
+00:58:32,280 --> 00:58:33,550
+middle, right?
+
+980
+00:58:33,550 --> 00:58:37,330
+They're neither aggressively
+active nor completely passive,
+
+981
+00:58:37,330 --> 00:58:39,740
+but in the middle you lose.
+
+982
+00:58:39,740 --> 00:58:44,359
+Because you end up paying high
+fees for mediocre active
+
+983
+00:58:44,360 --> 00:58:48,970
+results, and that's where most
+people end up, and most
+
+984
+00:58:48,970 --> 00:58:50,220
+institutions.
+
+985
+00:58:50,220 --> 00:59:03,390
+
+
+986
+00:59:03,390 --> 00:59:07,629
+STUDENT: Hi, so, my question
+is about -- given you were
+
+987
+00:59:07,630 --> 00:59:11,815
+talking about your equity
+orientation and bias, and
+
+988
+00:59:11,815 --> 00:59:14,920
+given what's going on right
+now with the stock market,
+
+989
+00:59:14,920 --> 00:59:16,180
+just what your views are.
+
+990
+00:59:16,180 --> 00:59:19,299
+Whether or not the stock market
+is currently expensive,
+
+991
+00:59:19,300 --> 00:59:22,430
+and whether or not you have any
+money in tech stocks, with
+
+992
+00:59:22,430 --> 00:59:23,940
+all the valuations and
+IPOs that have been
+
+993
+00:59:23,940 --> 00:59:26,70
+going in that space.
+
+994
+00:59:26,70 --> 00:59:27,60
+What do you think about that?
+
+995
+00:59:27,60 --> 00:59:31,620
+And also, what would you do in
+terms of investing it in
+
+996
+00:59:31,620 --> 00:59:33,640
+response to what your view is?
+
+997
+00:59:33,640 --> 00:59:35,890
+Thank you.
+
+998
+00:59:35,890 --> 00:59:39,410
+PROFESSOR DAVID SWENSEN: So, one
+of the great things about
+
+999
+00:59:39,410 --> 00:59:44,620
+having a diversified portfolio
+is that you can worry less
+
+1000
+00:59:44,620 --> 00:59:48,660
+about the relative level of
+valuation of various assets in
+
+1001
+00:59:48,660 --> 00:59:52,799
+which you invest. So, if you
+go back to the mid-'80s and
+
+1002
+00:59:52,800 --> 00:59:58,420
+you've got a portfolio that's
+50% in domestic stocks, you
+
+1003
+00:59:58,420 --> 01:00:01,380
+have to worry a lot about the
+valuation of that portfolio,
+
+1004
+01:00:01,380 --> 01:00:03,980
+because half of your
+assets are in that
+
+1005
+01:00:03,980 --> 01:00:05,460
+single asset class.
+
+1006
+01:00:05,460 --> 01:00:07,960
+But if you've got a
+well-diversified portfolio
+
+1007
+01:00:07,960 --> 01:00:11,690
+with, let's say, minimum
+allocation of 5% to 10%, and
+
+1008
+01:00:11,690 --> 01:00:16,180
+now a maximum allocation of 25%
+to 30% in an individual
+
+1009
+01:00:16,180 --> 01:00:22,120
+asset class, the relative
+valuation of each of those
+
+1010
+01:00:22,120 --> 01:00:25,460
+asset classes matters less.
+
+1011
+01:00:25,460 --> 01:00:31,947
+And there's another
+nice aspect to
+
+1012
+01:00:31,947 --> 01:00:34,890
+a rebalancing policy.
+
+1013
+01:00:34,890 --> 01:00:40,790
+If you set up your targets and
+you faithfully adhere to
+
+1014
+01:00:40,790 --> 01:00:42,40
+those targets --
+
+1015
+01:00:42,40 --> 01:00:45,110
+
+
+1016
+01:00:45,110 --> 01:00:48,140
+Suppose, the domestic equities
+have poor relative
+
+1017
+01:00:48,140 --> 01:00:49,270
+performance.
+
+1018
+01:00:49,270 --> 01:00:53,360
+Well, then you're going to buy
+domestic equities to get them
+
+1019
+01:00:53,360 --> 01:00:56,960
+back up to target, selling
+whatever it is that had
+
+1020
+01:00:56,960 --> 01:00:59,980
+superior relative performance
+to fund those purchases.
+
+1021
+01:00:59,980 --> 01:01:00,725
+And vice versa.
+
+1022
+01:01:00,725 --> 01:01:04,20
+If domestic equities have great
+relative performance,
+
+1023
+01:01:04,20 --> 01:01:09,190
+you'll be selling to get back
+to your long-term target and
+
+1024
+01:01:09,190 --> 01:01:12,790
+buying other assets that have
+shown poor relative
+
+1025
+01:01:12,790 --> 01:01:14,50
+performance.
+
+1026
+01:01:14,50 --> 01:01:17,860
+So, if you're in a circumstance,
+where domestic
+
+1027
+01:01:17,860 --> 01:01:23,370
+stocks are expensive, where
+you're selling into this
+
+1028
+01:01:23,370 --> 01:01:28,299
+superior relative performance
+that the domestic equities are
+
+1029
+01:01:28,300 --> 01:01:32,950
+exhibiting, thereby maintaining
+your risk exposure
+
+1030
+01:01:32,950 --> 01:01:41,319
+at a level that's consistent
+with what's implicit in your
+
+1031
+01:01:41,320 --> 01:01:43,10
+policy asset allocation.
+
+1032
+01:01:43,10 --> 01:01:47,570
+So, that's kind of a long way
+of saying, that, if somebody
+
+1033
+01:01:47,570 --> 01:01:51,310
+asked me whether stocks are
+expensive or cheap, my first
+
+1034
+01:01:51,310 --> 01:01:53,259
+line of defense, it doesn't
+really matter all that much to
+
+1035
+01:01:53,260 --> 01:01:54,960
+me, because we're
+well-diversified and because
+
+1036
+01:01:54,960 --> 01:01:58,220
+we do a great job
+of rebalancing.
+
+1037
+01:01:58,220 --> 01:02:02,240
+But the reality is that those
+questions are just incredibly
+
+1038
+01:02:02,240 --> 01:02:04,700
+tough to answer.
+
+1039
+01:02:04,700 --> 01:02:08,339
+If they were easier to answer,
+I guess I'd be much more
+
+1040
+01:02:08,340 --> 01:02:14,160
+excited about market timing as
+a way to generate returns.
+
+1041
+01:02:14,160 --> 01:02:17,950
+In terms of the second question,
+with respect to
+
+1042
+01:02:17,950 --> 01:02:24,319
+technology, Yale's had a
+long-standing commitment to
+
+1043
+01:02:24,320 --> 01:02:25,970
+venture capital.
+
+1044
+01:02:25,970 --> 01:02:30,500
+And over the decades, it's
+produced extraordinary returns
+
+1045
+01:02:30,500 --> 01:02:32,10
+for the university.
+
+1046
+01:02:32,10 --> 01:02:38,240
+And we continue to have a
+world-class group of venture
+
+1047
+01:02:38,240 --> 01:02:38,870
+capitalists.
+
+1048
+01:02:38,870 --> 01:02:44,700
+We've got exposure to companies
+like LinkedIn and
+
+1049
+01:02:44,700 --> 01:02:46,549
+Facebook and Groupon.
+
+1050
+01:02:46,550 --> 01:02:51,540
+And I hope that this wave of
+IPOs that people are writing
+
+1051
+01:02:51,540 --> 01:02:54,270
+about in the press actually
+occurs, because that would be
+
+1052
+01:02:54,270 --> 01:02:57,730
+very good for the university's
+portfolio.
+
+1053
+01:02:57,730 --> 01:02:59,200
+It's been a long time, right?
+
+1054
+01:02:59,200 --> 01:03:03,629
+We benefited enormously in the
+internet bubble in the late
+
+1055
+01:03:03,630 --> 01:03:08,120
+90s, and the last decade
+has been a bit fallow.
+
+1056
+01:03:08,120 --> 01:03:11,140
+We also find, on the marketable
+securities side,
+
+1057
+01:03:11,140 --> 01:03:17,299
+that technology stocks tend to
+be less efficiently priced
+
+1058
+01:03:17,300 --> 01:03:20,180
+than many other securities.
+
+1059
+01:03:20,180 --> 01:03:24,430
+And so, we have a manager that
+is heavily focused on
+
+1060
+01:03:24,430 --> 01:03:27,120
+information technology stocks
+and another manager that's
+
+1061
+01:03:27,120 --> 01:03:29,759
+very heavily focused on
+biotechnology stocks.
+
+1062
+01:03:29,760 --> 01:03:33,590
+And both those managers have
+produced very handsome
+
+1063
+01:03:33,590 --> 01:03:35,130
+absolute and relative returns.
+
+1064
+01:03:35,130 --> 01:03:37,580
+And that's an important
+part of our
+
+1065
+01:03:37,580 --> 01:03:38,830
+domestic equity strategy.
+
+1066
+01:03:38,830 --> 01:03:48,720
+
+
+1067
+01:03:48,720 --> 01:03:49,970
+STUDENT: Thanks for coming.
+
+1068
+01:03:49,970 --> 01:03:53,109
+
+
+1069
+01:03:53,110 --> 01:03:56,300
+So, in recent years, the number
+of hedge funds, private
+
+1070
+01:03:56,300 --> 01:03:58,590
+equity firms, has gone up.
+
+1071
+01:03:58,590 --> 01:04:02,30
+And I wasn't sure, how that's
+changed the efficiencies of
+
+1072
+01:04:02,30 --> 01:04:05,920
+these alternative asset
+allocation markets.
+
+1073
+01:04:05,920 --> 01:04:08,210
+And if it's changed the
+efficiencies, how have you
+
+1074
+01:04:08,210 --> 01:04:11,940
+changed your investment
+philosophies?
+
+1075
+01:04:11,940 --> 01:04:15,150
+And I was wondering, also,
+what are the structural
+
+1076
+01:04:15,150 --> 01:04:18,820
+patterns of these markets that
+would prevent the market from
+
+1077
+01:04:18,820 --> 01:04:23,520
+becoming very efficient, even if
+there are a lot hedge funds
+
+1078
+01:04:23,520 --> 01:04:25,90
+and a lot of funds of funds.
+
+1079
+01:04:25,90 --> 01:04:27,100
+Thanks.
+
+1080
+01:04:27,100 --> 01:04:30,89
+PROFESSOR DAVID SWENSEN: That's
+a really good question.
+
+1081
+01:04:30,90 --> 01:04:34,190
+I think, the most fundamental
+issue with the explosion of
+
+1082
+01:04:34,190 --> 01:04:37,630
+hedge funds and the explosion of
+private equity funds has to
+
+1083
+01:04:37,630 --> 01:04:41,170
+do with this negative-sum game
+that we were talking about.
+
+1084
+01:04:41,170 --> 01:04:47,700
+If you go back to the 1950s,
+the most common way that
+
+1085
+01:04:47,700 --> 01:04:51,230
+institutional assets were
+managed would be for an
+
+1086
+01:04:51,230 --> 01:04:54,790
+institution like Yale
+to go to a bank like
+
+1087
+01:04:54,790 --> 01:04:57,570
+Chemical Bank or JP Morgan.
+
+1088
+01:04:57,570 --> 01:05:03,740
+And they would pay a small
+fraction of 1% for a
+
+1089
+01:05:03,740 --> 01:05:07,705
+reasonably diversified
+portfolio, stocks, bonds, and
+
+1090
+01:05:07,705 --> 01:05:10,529
+there'd probably be some foreign
+stocks, and some
+
+1091
+01:05:10,530 --> 01:05:11,410
+domestic stocks.
+
+1092
+01:05:11,410 --> 01:05:16,750
+But the leakage from the
+system was very small.
+
+1093
+01:05:16,750 --> 01:05:20,760
+You look at hedge funds and
+private equity funds, they're
+
+1094
+01:05:20,760 --> 01:05:24,910
+essentially dealing with the
+same set of securities that an
+
+1095
+01:05:24,910 --> 01:05:28,910
+institution used to pay two
+tenths of a percent a year, or
+
+1096
+01:05:28,910 --> 01:05:35,109
+three tenths of a percent a
+year for admittedly sleepy
+
+1097
+01:05:35,110 --> 01:05:37,000
+bank management.
+
+1098
+01:05:37,000 --> 01:05:38,550
+But it's the same set
+of securities.
+
+1099
+01:05:38,550 --> 01:05:43,160
+Now, those securities are traded
+in a hedge fund format,
+
+1100
+01:05:43,160 --> 01:05:47,839
+or taken in a private
+equity fund format.
+
+1101
+01:05:47,840 --> 01:05:53,350
+And the fees that you are paying
+are a point, a point
+
+1102
+01:05:53,350 --> 01:05:56,509
+and a half, two points.
+
+1103
+01:05:56,510 --> 01:06:00,10
+The typical ''two and 20.''
+And you're paying a
+
+1104
+01:06:00,10 --> 01:06:03,120
+significant percentage
+of the profits.
+
+1105
+01:06:03,120 --> 01:06:07,549
+The 20 in the ''two and 20.''
+Think about that.
+
+1106
+01:06:07,550 --> 01:06:14,120
+The leakage from the system that
+goes to Wall Street is
+
+1107
+01:06:14,120 --> 01:06:17,490
+enormous, compared to what it
+was 10 years ago, or 20 years
+
+1108
+01:06:17,490 --> 01:06:18,899
+ago, or 30 years ago.
+
+1109
+01:06:18,900 --> 01:06:25,830
+So, there's that much less
+left for us as investors.
+
+1110
+01:06:25,830 --> 01:06:30,779
+And I think that has huge
+consequences for endowments,
+
+1111
+01:06:30,780 --> 01:06:35,230
+foundations, pension plans,
+institutions of all stripes.
+
+1112
+01:06:35,230 --> 01:06:38,50
+And to the extent that
+individuals get exposure to
+
+1113
+01:06:38,50 --> 01:06:40,140
+these types of assets -- and
+they're largely wealthy
+
+1114
+01:06:40,140 --> 01:06:44,20
+individuals that end up getting
+the exposure --
+
+1115
+01:06:44,20 --> 01:06:50,466
+they're going to suffer the same
+consequences of this huge
+
+1116
+01:06:50,466 --> 01:06:54,200
+leakage of higher fees
+and the profits
+
+1117
+01:06:54,200 --> 01:06:57,870
+interest to Wall Street.
+
+1118
+01:06:57,870 --> 01:07:02,120
+The question as to whether or
+not the money flowing to hedge
+
+1119
+01:07:02,120 --> 01:07:04,484
+funds is going to make the
+markets more efficient and
+
+1120
+01:07:04,485 --> 01:07:05,740
+take away opportunities --
+
+1121
+01:07:05,740 --> 01:07:07,370
+I don't worry too
+much about that.
+
+1122
+01:07:07,370 --> 01:07:11,140
+I think, the best talent is
+going to hedge funds, because
+
+1123
+01:07:11,140 --> 01:07:15,109
+if they're in a long only
+domestic equity environment,
+
+1124
+01:07:15,110 --> 01:07:17,570
+maybe they can charge three
+quarters of a percent or a
+
+1125
+01:07:17,570 --> 01:07:20,400
+percent, or if they're in the
+mutual fund world, maybe they
+
+1126
+01:07:20,400 --> 01:07:23,430
+charge a percent and a half,
+or something like that.
+
+1127
+01:07:23,430 --> 01:07:27,299
+Well, you'd rather have ''two
+and 20'' than 0.75, right?
+
+1128
+01:07:27,300 --> 01:07:28,510
+That's easy.
+
+1129
+01:07:28,510 --> 01:07:31,810
+So, there's a huge migration
+of talent to
+
+1130
+01:07:31,810 --> 01:07:35,200
+the hedge fund world.
+
+1131
+01:07:35,200 --> 01:07:39,799
+But what I care about, when
+I look at the degree of
+
+1132
+01:07:39,800 --> 01:07:42,200
+investment opportunities, is
+this dispersion we talked
+
+1133
+01:07:42,200 --> 01:07:48,189
+about, and I haven't seen the
+dispersion of results, top
+
+1134
+01:07:48,190 --> 01:07:51,490
+quartile to bottom quartile,
+compress at all.
+
+1135
+01:07:51,490 --> 01:07:57,229
+So, I don't think, that we're
+increasing the efficiency of
+
+1136
+01:07:57,230 --> 01:07:58,600
+the pricing of assets.
+
+1137
+01:07:58,600 --> 01:08:01,860
+I still need to go out there and
+be able to identify people
+
+1138
+01:08:01,860 --> 01:08:06,430
+in the top quartile or top
+decile, so that we can win
+
+1139
+01:08:06,430 --> 01:08:11,520
+relative to the markets, after
+adjustment for the
+
+1140
+01:08:11,520 --> 01:08:13,90
+risk that we take.
+
+1141
+01:08:13,90 --> 01:08:19,229
+So, as long as we have plenty of
+dispersion in the results,
+
+1142
+01:08:19,229 --> 01:08:22,894
+it's still an interesting
+activity for us to pursue.
+
+1143
+01:08:22,894 --> 01:08:29,914
+
+
+1144
+01:08:29,913 --> 01:08:31,854
+STUDENT: Can I ask?
+
+1145
+01:08:31,854 --> 01:08:32,950
+PROFESSOR DAVID SWENSEN:
+It better be good,
+
+1146
+01:08:32,950 --> 01:08:35,63
+it's the last question.
+
+1147
+01:08:35,63 --> 01:08:38,590
+STUDENT: I'll try.
+
+1148
+01:08:38,590 --> 01:08:41,200
+So, my question is about
+performance of the Yale
+
+1149
+01:08:41,200 --> 01:08:47,260
+portfolio, and we heard that
+it grew from less than $1
+
+1150
+01:08:47,260 --> 01:08:49,810
+billion -- but close to
+it, apparently --
+
+1151
+01:08:49,810 --> 01:08:54,319
+in 1985, to $16 billion, which
+is very impressive.
+
+1152
+01:08:54,319 --> 01:08:59,170
+And it's documented in
+newspapers, it's online,
+
+1153
+01:08:59,170 --> 01:09:02,80
+Wikipedia, Professor
+Shiller introduced
+
+1154
+01:09:02,80 --> 01:09:04,979
+you with these facts.
+
+1155
+01:09:04,979 --> 01:09:07,800
+But what about the
+Sharpe ratio?
+
+1156
+01:09:07,800 --> 01:09:12,850
+And why do you think that people
+talk more about total
+
+1157
+01:09:12,850 --> 01:09:16,674
+returns than, say,
+the Sharpe ratio?
+
+1158
+01:09:16,674 --> 01:09:19,69
+PROFESSOR DAVID SWENSEN: So, I
+think that one of the things
+
+1159
+01:09:19,69 --> 01:09:23,229
+that needs to happen in the
+funds management world is,
+
+1160
+01:09:23,229 --> 01:09:26,609
+that we need to have better
+measures of risk.
+
+1161
+01:09:26,609 --> 01:09:31,420
+And so, one of the reasons,
+why I don't talk about the
+
+1162
+01:09:31,420 --> 01:09:34,764
+Sharpe ratio, is, that just
+looking at standard deviation
+
+1163
+01:09:34,764 --> 01:09:41,330
+of returns doesn't capture
+risk in a way that is
+
+1164
+01:09:41,330 --> 01:09:41,950
+meaningful.
+
+1165
+01:09:41,950 --> 01:09:44,620
+I mean, I've seen other people
+do an analysis of the Yale
+
+1166
+01:09:44,620 --> 01:09:47,430
+portfolio, and show relative
+Sharpe ratios.
+
+1167
+01:09:47,430 --> 01:09:52,890
+And, obviously, because our
+returns have been so good, if
+
+1168
+01:09:52,890 --> 01:09:57,810
+you just look at the pattern
+of those returns, we end up
+
+1169
+01:09:57,810 --> 01:10:04,650
+scoring high when looking at
+Sharpe ratios across different
+
+1170
+01:10:04,650 --> 01:10:06,339
+institutional portfolios.
+
+1171
+01:10:06,340 --> 01:10:16,770
+But the risks that exist in the
+portfolio aren't really
+
+1172
+01:10:16,770 --> 01:10:21,650
+captured by the standard
+deviation of the returns.
+
+1173
+01:10:21,650 --> 01:10:27,740
+Just a quick example: If you
+look at real estate, or
+
+1174
+01:10:27,740 --> 01:10:33,150
+timber, or even any of our
+illiquid assets, they're
+
+1175
+01:10:33,150 --> 01:10:36,469
+appraised relatively
+infrequently.
+
+1176
+01:10:36,470 --> 01:10:42,260
+There tends to be a huge
+stability bias in the
+
+1177
+01:10:42,260 --> 01:10:43,790
+appraisals.
+
+1178
+01:10:43,790 --> 01:10:49,50
+If somebody looks at a piece of
+real estate 12 months ago,
+
+1179
+01:10:49,50 --> 01:10:52,540
+six months ago, and today,
+they're likely to see pretty
+
+1180
+01:10:52,540 --> 01:10:55,890
+much the same thing that they
+saw over that period.
+
+1181
+01:10:55,890 --> 01:10:58,790
+You can compare and contrast
+that to the volatility they've
+
+1182
+01:10:58,790 --> 01:11:01,170
+got in the stock market.
+
+1183
+01:11:01,170 --> 01:11:04,740
+I think Bob Shiller deserves
+credit for coining the term
+
+1184
+01:11:04,740 --> 01:11:09,340
+"excess volatility." There's no
+question that stock prices
+
+1185
+01:11:09,340 --> 01:11:15,370
+are way more variable than they
+need to be to adjust for
+
+1186
+01:11:15,370 --> 01:11:17,720
+changes in the underlying
+fundamentals.
+
+1187
+01:11:17,720 --> 01:11:20,470
+So, if you've got a portfolio
+that's largely marketable
+
+1188
+01:11:20,470 --> 01:11:24,320
+securities, you're going to
+see a lot more standard
+
+1189
+01:11:24,320 --> 01:11:28,160
+deviation of returns than if
+you've got one of illiquid
+
+1190
+01:11:28,160 --> 01:11:32,380
+assets, where you've got this
+stability built in because of
+
+1191
+01:11:32,380 --> 01:11:35,890
+the appraisal nature of
+the valuation process.
+
+1192
+01:11:35,890 --> 01:11:42,10
+And if you end up comparing
+those two portfolios, one
+
+1193
+01:11:42,10 --> 01:11:44,310
+dominated by marketable
+securities, one dominated by
+
+1194
+01:11:44,310 --> 01:11:48,800
+private assets, you're going to
+end up with measures that
+
+1195
+01:11:48,800 --> 01:11:51,360
+are apples and oranges.
+
+1196
+01:11:51,360 --> 01:11:52,130
+Thank you very much.
+
+1197
+01:11:52,130 --> 01:11:53,660
+[APPLAUSE]
+
+1198
+01:11:53,660 --> 01:12:26,999
+
+

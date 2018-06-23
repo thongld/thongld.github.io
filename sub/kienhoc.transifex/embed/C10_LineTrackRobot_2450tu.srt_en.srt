@@ -1,0 +1,1181 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/r-bNPLRdAqk
+
+1
+00:00:00,000 --> 00:00:01,291
+PROFESSOR JONATHAN VALVANO: Hi.
+
+2
+00:00:01,291 --> 00:00:04,980
+In this video, let me show you
+another finite state machine.
+
+3
+00:00:04,980 --> 00:00:07,520
+We're going to build
+a line tracking robot.
+
+4
+00:00:07,520 --> 00:00:10,630
+And this is going to be a
+Moore finite state machine.
+
+5
+00:00:10,630 --> 00:00:15,230
+Let's begin with the inputs and outputs.
+
+6
+00:00:15,230 --> 00:00:21,500
+This line tracking robot has two motors,
+one on the left and one on the right.
+
+7
+00:00:21,500 --> 00:00:24,940
+And it has two sensors to tell
+whether we're on the line.
+
+8
+00:00:24,940 --> 00:00:29,000
+The goal of this system
+is to make an autonomous
+
+9
+00:00:29,000 --> 00:00:32,049
+robot which drives along this track.
+
+10
+00:00:32,049 --> 00:00:34,380
+OK, so I'm going to track this line.
+
+11
+00:00:34,380 --> 00:00:39,780
+The two motors, if I drive both motors,
+both the left and the right motor,
+
+12
+00:00:39,780 --> 00:00:41,250
+they will go straight.
+
+13
+00:00:41,250 --> 00:00:47,430
+If I drive just the right motor here
+and not the left, it'll turn left.
+
+14
+00:00:47,430 --> 00:00:51,030
+And another way around if I drive just
+the left motor and not the right motor,
+
+15
+00:00:51,030 --> 00:00:52,651
+it'll turn right.
+
+16
+00:00:52,651 --> 00:00:53,150
+OK.
+
+17
+00:00:53,150 --> 00:00:57,740
+So those are my outputs
+to the two motors.
+
+18
+00:00:57,740 --> 00:00:58,940
+Let's look at the inputs.
+
+19
+00:00:58,940 --> 00:01:02,340
+The inputs are infrared sensors.
+
+20
+00:01:02,340 --> 00:01:05,850
+And these infrared sensors
+will tell me yes or no
+
+21
+00:01:05,850 --> 00:01:09,660
+whether or not the two sensors you
+see positioned here in the front
+
+22
+00:01:09,660 --> 00:01:12,650
+are on the line or not on the line.
+
+23
+00:01:12,650 --> 00:01:16,960
+So in this configuration here,
+if both sensors show one,
+
+24
+00:01:16,960 --> 00:01:20,050
+that means that both sensors
+are on the line, which
+
+25
+00:01:20,050 --> 00:01:23,560
+means the robot is down
+the middle of the track.
+
+26
+00:01:23,560 --> 00:01:28,630
+However, if I'm off to the left you
+see that the left sensor will go dark
+
+27
+00:01:28,630 --> 00:01:32,610
+and the sensor signal will be 0.
+
+28
+00:01:32,610 --> 00:01:35,020
+But I'm off just a
+little bit to the left,
+
+29
+00:01:35,020 --> 00:01:37,570
+so the right sensor's still on the line.
+
+30
+00:01:37,570 --> 00:01:40,400
+So the right shows a
+1, the left shows a 0,
+
+31
+00:01:40,400 --> 00:01:44,300
+and that means the robot
+is off to the left.
+
+32
+00:01:44,300 --> 00:01:49,170
+If the sensors are reversed, in other
+words, if the right sensor is dark
+
+33
+00:01:49,170 --> 00:01:53,120
+and the left sensor sees the
+line, I'm going to have a 0, 1.
+
+34
+00:01:53,120 --> 00:01:59,190
+So again, the sensors allow me to see
+the situation of where the robot is.
+
+35
+00:01:59,190 --> 00:02:02,070
+I have one more case that I don't
+know quite how to handle yet
+
+36
+00:02:02,070 --> 00:02:03,640
+and that is if I'm lost.
+
+37
+00:02:03,640 --> 00:02:05,800
+And that is both sensors go dark.
+
+38
+00:02:05,800 --> 00:02:08,865
+I'm either off to the left
+or the right, I don't know.
+
+39
+00:02:08,865 --> 00:02:12,760
+And this is where the finite
+state machine will help us.
+
+40
+00:02:12,760 --> 00:02:15,970
+If you wanted to build it,
+here are two motor drivers.
+
+41
+00:02:15,970 --> 00:02:21,350
+The output of PF2 is going to drive this
+transistor, driving this right motor.
+
+42
+00:02:21,350 --> 00:02:24,205
+And the output of PF1 is
+going to drive this transistor
+
+43
+00:02:24,205 --> 00:02:25,810
+and drive the left motor.
+
+44
+00:02:25,810 --> 00:02:28,840
+Again, both motors on go straight.
+
+45
+00:02:28,840 --> 00:02:32,900
+1, 0 turns left and
+0, 1 will turn right.
+
+46
+00:02:32,900 --> 00:02:34,740
+And here's the sensor interface.
+
+47
+00:02:34,740 --> 00:02:40,900
+This is a QRB 1134, an infrared
+sensor with a focal length
+
+48
+00:02:40,900 --> 00:02:43,160
+of about five millimeters.
+
+49
+00:02:43,160 --> 00:02:46,270
+This infrared diode
+emits infrared light.
+
+50
+00:02:46,270 --> 00:02:50,510
+That light will either reflect
+or not reflect off the line.
+
+51
+00:02:50,510 --> 00:02:54,260
+And then that reflected light
+will either turn on or turn off
+
+52
+00:02:54,260 --> 00:02:55,600
+this transistor.
+
+53
+00:02:55,600 --> 00:03:02,530
+This is a thresholding circuit
+such that this signal here on PF4
+
+54
+00:03:02,530 --> 00:03:05,270
+will tell me whether
+or not there's a line.
+
+55
+00:03:05,270 --> 00:03:07,350
+1 means I see a line.
+
+56
+00:03:07,350 --> 00:03:09,600
+A logic 0 means I don't see a line.
+
+57
+00:03:09,600 --> 00:03:13,100
+And I have a second
+one for the other side.
+
+58
+00:03:13,100 --> 00:03:15,640
+OK, let's begin with a strategy.
+
+59
+00:03:15,640 --> 00:03:19,150
+Here I have my robots on the line.
+
+60
+00:03:19,150 --> 00:03:21,390
+Both sensors show line.
+
+61
+00:03:21,390 --> 00:03:25,310
+And then the color means
+here that this dark blue
+
+62
+00:03:25,310 --> 00:03:27,060
+means these motors are active.
+
+63
+00:03:27,060 --> 00:03:30,490
+And so both the left and
+right motors are spinning.
+
+64
+00:03:30,490 --> 00:03:35,990
+So as it spins forward, we see that
+the robot goes in a straight line.
+
+65
+00:03:35,990 --> 00:03:40,310
+But then the robot goes in a
+straight line, but the line moved.
+
+66
+00:03:40,310 --> 00:03:43,270
+And now we have something
+that went wrong.
+
+67
+00:03:43,270 --> 00:03:46,590
+The left sensor went dark, went 0.
+
+68
+00:03:46,590 --> 00:03:48,669
+That means I'm off to the left.
+
+69
+00:03:48,669 --> 00:03:49,710
+So what am I going to do?
+
+70
+00:03:49,710 --> 00:03:53,450
+My strategy is if I'm off to
+the left, I want to turn right.
+
+71
+00:03:53,450 --> 00:03:57,890
+And we saw how to turn right is
+to slow down the right wheel.
+
+72
+00:03:57,890 --> 00:04:00,660
+So if I slow down the right
+wheel and drive the left wheel,
+
+73
+00:04:00,660 --> 00:04:04,320
+it will turn back towards the line.
+
+74
+00:04:04,320 --> 00:04:07,070
+So we see that the robot will turn.
+
+75
+00:04:07,070 --> 00:04:10,280
+The right wheel isn't stopped,
+it's just running at a slower rate.
+
+76
+00:04:10,280 --> 00:04:13,950
+And it turns and moves
+until it's back on the line.
+
+77
+00:04:13,950 --> 00:04:17,279
+Again, both sensors see the
+line, both wheels are active,
+
+78
+00:04:17,279 --> 00:04:21,800
+and so now it's going to move forward
+again until the line goes away.
+
+79
+00:04:21,800 --> 00:04:25,290
+The right sensor went
+dark, left sensor's on.
+
+80
+00:04:25,290 --> 00:04:26,662
+So what am I going to do?
+
+81
+00:04:26,662 --> 00:04:29,640
+I'm going to slow down
+the left wheel, which
+
+82
+00:04:29,640 --> 00:04:33,450
+will cause it to rotate to turn left.
+
+83
+00:04:33,450 --> 00:04:37,770
+This line turned a little faster,
+so it took a couple of times for it
+
+84
+00:04:37,770 --> 00:04:40,410
+to turn and move until it sees.
+
+85
+00:04:40,410 --> 00:04:44,020
+So now that once both
+sensors are activated again,
+
+86
+00:04:44,020 --> 00:04:48,760
+I'm going to go back to the steady
+state, which is to drive both wheels so
+
+87
+00:04:48,760 --> 00:04:50,410
+the robot goes straight.
+
+88
+00:04:50,410 --> 00:04:51,654
+That's my strategy.
+
+89
+00:04:51,654 --> 00:04:54,820
+If I'm off to the left, I'm going to
+turn right and if I'm off to the right,
+
+90
+00:04:54,820 --> 00:04:55,820
+I'm going to turn right.
+
+91
+00:04:55,820 --> 00:04:58,460
+And if I'm on the line,
+I'm going to go straight.
+
+92
+00:04:58,460 --> 00:05:03,030
+So now what we're going to do is capture
+that strategy into the state graph.
+
+93
+00:05:03,030 --> 00:05:06,430
+So we've got to define some states.
+
+94
+00:05:06,430 --> 00:05:09,670
+So states, if you remember,
+are what do we know?
+
+95
+00:05:09,670 --> 00:05:12,490
+What do we believe to be true?
+
+96
+00:05:12,490 --> 00:05:17,160
+So if I'm on the line, if I'm
+in the center of the road,
+
+97
+00:05:17,160 --> 00:05:20,340
+then what I'm going
+to do is go straight.
+
+98
+00:05:20,340 --> 00:05:21,520
+And that's what this says.
+
+99
+00:05:21,520 --> 00:05:24,950
+If I'm in the center, go straight.
+
+100
+00:05:24,950 --> 00:05:30,850
+If I'm off to the left
+then I want to turn right.
+
+101
+00:05:30,850 --> 00:05:33,160
+And if I'm off to the right,
+I'm going to turn left.
+
+102
+00:05:33,160 --> 00:05:35,480
+So this is the essence
+of how I'm going to use
+
+103
+00:05:35,480 --> 00:05:38,760
+my outputs to build this state graph.
+
+104
+00:05:38,760 --> 00:05:43,180
+I'm going to use the outputs,
+which are a function of the state.
+
+105
+00:05:43,180 --> 00:05:47,032
+So if I'm off to the left, I'm going to
+turn right, and if I'm off the right,
+
+106
+00:05:47,032 --> 00:05:47,990
+I'm going to turn left.
+
+107
+00:05:47,990 --> 00:05:51,870
+Now, I could've added a lost state.
+
+108
+00:05:51,870 --> 00:05:55,110
+But we'll see what happens if I
+get lost when I build the machine.
+
+109
+00:05:55,110 --> 00:05:57,990
+So now let's build the
+state transition table.
+
+110
+00:05:57,990 --> 00:06:00,900
+The state transition table
+is built in this way.
+
+111
+00:06:00,900 --> 00:06:04,290
+Down this axis are the state names.
+
+112
+00:06:04,290 --> 00:06:05,660
+It's a Moore machine.
+
+113
+00:06:05,660 --> 00:06:10,160
+So every state has a unique output,
+or every state has an output.
+
+114
+00:06:10,160 --> 00:06:12,750
+It doesn't have to be unique,
+but every state has an output.
+
+115
+00:06:12,750 --> 00:06:14,350
+So that's what I put here.
+
+116
+00:06:14,350 --> 00:06:19,390
+Now in this state transition table, I
+need a column for every possible input.
+
+117
+00:06:19,390 --> 00:06:25,180
+And then what I place in the table is
+what do I do if I'm in the center state
+
+118
+00:06:25,180 --> 00:06:27,900
+and if the input is a 1, 1.
+
+119
+00:06:27,900 --> 00:06:31,110
+The question now
+becomes what to do next.
+
+120
+00:06:31,110 --> 00:06:32,960
+And that's what I place in the state.
+
+121
+00:06:32,960 --> 00:06:34,880
+So let's do a few.
+
+122
+00:06:34,880 --> 00:06:37,280
+I'm in the center
+state and I see a 1, 1.
+
+123
+00:06:37,280 --> 00:06:38,280
+I'm still on the line.
+
+124
+00:06:38,280 --> 00:06:40,920
+I'm going to remain in the center state.
+
+125
+00:06:40,920 --> 00:06:44,210
+I've also started to
+build the graph down here.
+
+126
+00:06:44,210 --> 00:06:48,390
+And I've also started to build
+the data structure here just
+
+127
+00:06:48,390 --> 00:06:50,990
+to show you this one to one mapping.
+
+128
+00:06:50,990 --> 00:06:53,900
+This entry in the table
+matches this arrow
+
+129
+00:06:53,900 --> 00:06:58,510
+in the graph, which matches
+this entry in the software.
+
+130
+00:06:58,510 --> 00:07:01,100
+
+131
+00:07:01,100 --> 00:07:06,320
+If I'm off to the left, and now I see
+the line, that means I'm on the line.
+
+132
+00:07:06,320 --> 00:07:08,420
+So I'll go to the center spot.
+
+133
+00:07:08,420 --> 00:07:13,480
+If I'm off to the right, and now I
+see the line, both beautiful lines,
+
+134
+00:07:13,480 --> 00:07:16,880
+I'm going to go to the center state.
+
+135
+00:07:16,880 --> 00:07:19,840
+So in this state graph,
+whenever I see the line
+
+136
+00:07:19,840 --> 00:07:24,830
+I'm going to see both lines are going
+to be next into the center state.
+
+137
+00:07:24,830 --> 00:07:26,030
+That was an easy one.
+
+138
+00:07:26,030 --> 00:07:27,850
+Let's do a harder one.
+
+139
+00:07:27,850 --> 00:07:31,600
+What do I do if I'm off to the left?
+
+140
+00:07:31,600 --> 00:07:33,760
+In other words, the input is at 0, 1.
+
+141
+00:07:33,760 --> 00:07:35,690
+I'm off to the left.
+
+142
+00:07:35,690 --> 00:07:38,810
+If I'm in the center state and
+I just went off to the left,
+
+143
+00:07:38,810 --> 00:07:40,740
+I'm going to go to the left state.
+
+144
+00:07:40,740 --> 00:07:43,490
+The other thing I'm going to do,
+if I'm already in the left state,
+
+145
+00:07:43,490 --> 00:07:47,380
+I know I'm in the left, and I'm still
+in the left, what I'm going to do
+
+146
+00:07:47,380 --> 00:07:50,350
+is actually oscillate here
+between left and center.
+
+147
+00:07:50,350 --> 00:07:54,440
+So again, if I'm off to the
+left I'm going to turn right.
+
+148
+00:07:54,440 --> 00:07:58,630
+This is where the finite state
+machine really helps us out.
+
+149
+00:07:58,630 --> 00:08:01,970
+And that is, what if I go off the track?
+
+150
+00:08:01,970 --> 00:08:06,450
+Now, what's important to know
+about a finite state machine
+
+151
+00:08:06,450 --> 00:08:09,700
+is we know not only
+what the input is now,
+
+152
+00:08:09,700 --> 00:08:12,340
+but we know where it was previously.
+
+153
+00:08:12,340 --> 00:08:18,330
+So what this is telling me is I used
+to be just a little bit off the left,
+
+154
+00:08:18,330 --> 00:08:20,260
+and now I'm way off to the left.
+
+155
+00:08:20,260 --> 00:08:21,230
+You see that?
+
+156
+00:08:21,230 --> 00:08:24,230
+I used to be just a little
+bit off, and now I'm way off.
+
+157
+00:08:24,230 --> 00:08:28,240
+And if so, I'm going to
+stay in the left state.
+
+158
+00:08:28,240 --> 00:08:31,720
+So in this mode, I'll stop one
+motor, drive just the other motor,
+
+159
+00:08:31,720 --> 00:08:34,289
+and make a hard turn back to the right.
+
+160
+00:08:34,289 --> 00:08:37,640
+
+161
+00:08:37,640 --> 00:08:39,640
+Again, the whole thing is symmetric.
+
+162
+00:08:39,640 --> 00:08:42,240
+What happened on the left
+happens on the right.
+
+163
+00:08:42,240 --> 00:08:48,460
+So this is where I used to be on the
+line and now I missed the right sensor,
+
+164
+00:08:48,460 --> 00:08:51,890
+right sensor just went dark, so I'm
+just a little bit off to the right,
+
+165
+00:08:51,890 --> 00:08:53,840
+so I'll go to the right state.
+
+166
+00:08:53,840 --> 00:08:58,350
+And then what will happen is this will
+oscillate between these two states
+
+167
+00:08:58,350 --> 00:09:00,950
+while I'm a little bit off to
+the right, which will again
+
+168
+00:09:00,950 --> 00:09:07,990
+make a toggling on the left motor and
+make a soft left turn back to the line.
+
+169
+00:09:07,990 --> 00:09:12,160
+So off to the right,
+I'm going to turn left.
+
+170
+00:09:12,160 --> 00:09:15,400
+So the red entry in the
+table matches this arrow,
+
+171
+00:09:15,400 --> 00:09:18,060
+matches that spot in the software.
+
+172
+00:09:18,060 --> 00:09:21,740
+This purple entry matches
+this arrow and that thing.
+
+173
+00:09:21,740 --> 00:09:24,290
+So again, all three are connected.
+
+174
+00:09:24,290 --> 00:09:29,060
+Just like going way off to the left,
+I could go way off to the right.
+
+175
+00:09:29,060 --> 00:09:35,290
+And you see now the sensor shows
+0, 0, but I knew previously
+
+176
+00:09:35,290 --> 00:09:37,380
+I used to be off to the right.
+
+177
+00:09:37,380 --> 00:09:41,270
+And so this arrow here will
+keep me into the right.
+
+178
+00:09:41,270 --> 00:09:44,110
+So I used to be just a
+little bit off to the right.
+
+179
+00:09:44,110 --> 00:09:45,700
+Now I'm way off to right.
+
+180
+00:09:45,700 --> 00:09:48,690
+And so I'm going to do a
+complete stop on the left motor,
+
+181
+00:09:48,690 --> 00:09:52,840
+making a sharp left turn to go back on.
+
+182
+00:09:52,840 --> 00:09:55,575
+I got a couple of more entries
+that don't make any sense,
+
+183
+00:09:55,575 --> 00:09:57,480
+but I've got to put something in there.
+
+184
+00:09:57,480 --> 00:10:00,240
+This one is weird.
+
+185
+00:10:00,240 --> 00:10:03,470
+This is telling me I used to
+be a little bit off to the left
+
+186
+00:10:03,470 --> 00:10:07,560
+and somehow I jumped to be a
+little bit off to the right.
+
+187
+00:10:07,560 --> 00:10:09,940
+That can't happen
+unless your robot skips.
+
+188
+00:10:09,940 --> 00:10:11,820
+But I got to put something in there.
+
+189
+00:10:11,820 --> 00:10:14,260
+Similarly, this one says
+I used to be off the right
+
+190
+00:10:14,260 --> 00:10:16,830
+and now I'm off to the left.
+
+191
+00:10:16,830 --> 00:10:21,050
+I don't know how it happened, but
+I'm going to put something in here.
+
+192
+00:10:21,050 --> 00:10:23,030
+This one's a little more plausible.
+
+193
+00:10:23,030 --> 00:10:26,310
+This one happens if the robot
+is actually running completely
+
+194
+00:10:26,310 --> 00:10:30,580
+perpendicular to the track, where
+it goes from both sensors totally
+
+195
+00:10:30,580 --> 00:10:32,800
+on to both sensors totally off.
+
+196
+00:10:32,800 --> 00:10:34,930
+And so in this mode,
+I'm just going to guess.
+
+197
+00:10:34,930 --> 00:10:40,220
+I'm just going to pick one and
+hopefully it was off to the right.
+
+198
+00:10:40,220 --> 00:10:41,420
+Let's put it all together.
+
+199
+00:10:41,420 --> 00:10:43,340
+Here's the entire state graph.
+
+200
+00:10:43,340 --> 00:10:48,240
+Again, one to one mapping between
+the table, the graph, and the data
+
+201
+00:10:48,240 --> 00:10:49,050
+structure.
+
+202
+00:10:49,050 --> 00:10:51,430
+That means no more, no less.
+
+203
+00:10:51,430 --> 00:10:53,070
+Let's talk about time.
+
+204
+00:10:53,070 --> 00:10:56,084
+Motors typically run at
+about a tenth of a second.
+
+205
+00:10:56,084 --> 00:10:58,000
+So we're going to run
+our finite state machine
+
+206
+00:10:58,000 --> 00:10:59,620
+about 10 times faster than that.
+
+207
+00:10:59,620 --> 00:11:05,610
+So each of my states is going to
+have a delay of 10 milliseconds.
+
+208
+00:11:05,610 --> 00:11:07,910
+All right, so now let's do the software.
+
+209
+00:11:07,910 --> 00:11:09,630
+There's my structure from before.
+
+210
+00:11:09,630 --> 00:11:12,070
+There's my state and index.
+
+211
+00:11:12,070 --> 00:11:22,020
+This index is going to be 0 for center,
+1 and 2 for the other two states.
+
+212
+00:11:22,020 --> 00:11:25,610
+I'm going to add some debugging
+variables, input and output.
+
+213
+00:11:25,610 --> 00:11:27,900
+Input's obviously going to be the input.
+
+214
+00:11:27,900 --> 00:11:29,430
+Output's going to be the output.
+
+215
+00:11:29,430 --> 00:11:33,640
+I'll initialize my GPIO
+ports, my PLL and SysTick,
+
+216
+00:11:33,640 --> 00:11:39,330
+and then set the state to
+assume I'm in the center.
+
+217
+00:11:39,330 --> 00:11:41,410
+It's a more machine,
+so what do I do first?
+
+218
+00:11:41,410 --> 00:11:42,250
+I do the output.
+
+219
+00:11:42,250 --> 00:11:43,730
+Of course, this is not the output.
+
+220
+00:11:43,730 --> 00:11:45,855
+This is just reading the
+output out of the variable
+
+221
+00:11:45,855 --> 00:11:48,310
+and storing it into
+this debugging variable.
+
+222
+00:11:48,310 --> 00:11:50,700
+The actual output occurs
+when I do the output
+
+223
+00:11:50,700 --> 00:11:56,040
+to the motor, when I write to
+port F. And so this variable here
+
+224
+00:11:56,040 --> 00:12:00,290
+is going to be either a 3, a 2,
+or a 1 depending upon whether I'm
+
+225
+00:12:00,290 --> 00:12:04,750
+in the center of the
+left or right state.
+
+226
+00:12:04,750 --> 00:12:09,620
+As I mentioned before, each
+state will wait 10 milliseconds.
+
+227
+00:12:09,620 --> 00:12:12,200
+So this one is captured
+out of the structure.
+
+228
+00:12:12,200 --> 00:12:17,490
+And then I'll wait 10 milliseconds
+to slow down this driver.
+
+229
+00:12:17,490 --> 00:12:22,460
+Then I produce my input, which is
+going to read from the two sensors.
+
+230
+00:12:22,460 --> 00:12:25,260
+And then it's a Moore
+machine, so the next state
+
+231
+00:12:25,260 --> 00:12:27,910
+is a function of the
+current state and the input.
+
+232
+00:12:27,910 --> 00:12:30,190
+So I'm going to go to
+the next state and then
+
+233
+00:12:30,190 --> 00:12:32,200
+I'll repeat this over and over again.
+
+234
+00:12:32,200 --> 00:12:35,730
+Let's show you this in the software.
+
+235
+00:12:35,730 --> 00:12:39,630
+Here I have the solution to that.
+
+236
+00:12:39,630 --> 00:12:46,200
+And so let's debug it, I'm
+running it in the simulator.
+
+237
+00:12:46,200 --> 00:12:49,670
+So my port F, there's my sensors.
+
+238
+00:12:49,670 --> 00:12:52,750
+These two bits are my output
+and I got the Logic Analyzer up,
+
+239
+00:12:52,750 --> 00:12:54,720
+and so we hit the Go button.
+
+240
+00:12:54,720 --> 00:12:58,610
+And again, this state here tells
+me I'm in the center state.
+
+241
+00:12:58,610 --> 00:13:03,010
+And my two inputs are high,
+my two outputs are high,
+
+242
+00:13:03,010 --> 00:13:04,630
+the motor's going straight.
+
+243
+00:13:04,630 --> 00:13:11,290
+If one of the sensors goes on,
+we see that when I turn right,
+
+244
+00:13:11,290 --> 00:13:19,050
+when I'm off to the left, it will turn
+right by toggling the other motor.
+
+245
+00:13:19,050 --> 00:13:22,120
+If I get back on the line,
+I'm going straight again.
+
+246
+00:13:22,120 --> 00:13:26,830
+If the other sensor's on,
+I'll toggle the other motor.
+
+247
+00:13:26,830 --> 00:13:30,220
+So again, I have my
+inputs and my outputs
+
+248
+00:13:30,220 --> 00:13:32,960
+and I can see them here in the debugger.
+
+249
+00:13:32,960 --> 00:13:35,960
+So in summary, what do we have?
+
+250
+00:13:35,960 --> 00:13:38,190
+This is a Moore finite state machine.
+
+251
+00:13:38,190 --> 00:13:41,600
+We produce an output, which
+is a function of the state.
+
+252
+00:13:41,600 --> 00:13:44,180
+We look at our inputs.
+
+253
+00:13:44,180 --> 00:13:48,980
+And those inputs tell us
+what the next state will be.
+
+254
+00:13:48,980 --> 00:13:51,830
+And the idea is to develop
+a strategy and build
+
+255
+00:13:51,830 --> 00:13:55,840
+that strategy in to what
+should the outputs be
+
+256
+00:13:55,840 --> 00:13:57,690
+and what should the next states be.
+
+257
+00:13:57,690 --> 00:14:00,140
+All right, you try.

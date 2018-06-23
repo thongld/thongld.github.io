@@ -1,0 +1,387 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/mo0kEPlOIvQ
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:04,100
+DR. JONATHAN VALVANO: Let's
+look at the Nyquist Theorem.
+
+3
+00:00:04,100 --> 00:00:11,020
+The Nyquist Theorem says that if a
+signal is oscillating at frequency F,
+
+4
+00:00:11,020 --> 00:00:14,470
+in order to capture
+it faithfully, we must
+
+5
+00:00:14,470 --> 00:00:18,510
+sample at a frequency
+that is strictly larger
+
+6
+00:00:18,510 --> 00:00:24,380
+than two times F. The essence
+of the Nyquist Theorem
+
+7
+00:00:24,380 --> 00:00:34,185
+is that if a signal is oscillating we
+must sample faster than it oscillates.
+
+8
+00:00:34,185 --> 00:00:38,370
+
+9
+00:00:38,370 --> 00:00:40,520
+The mathematical proof
+for the Nyquist Theorem
+
+10
+00:00:40,520 --> 00:00:42,590
+is beyond the scope of this class.
+
+11
+00:00:42,590 --> 00:00:47,590
+But let me show you an example
+that illustrates the concept.
+
+12
+00:00:47,590 --> 00:00:53,200
+We have a circular
+running track, and we have
+
+13
+00:00:53,200 --> 00:00:57,560
+a person who is running
+around the track.
+
+14
+00:00:57,560 --> 00:01:05,390
+And our job is to count the number
+of times they go around the track.
+
+15
+00:01:05,390 --> 00:01:10,970
+Let's say the fastest one could run
+is around the track in one minute.
+
+16
+00:01:10,970 --> 00:01:16,570
+So every 60 seconds, a fast
+person could get around the track.
+
+17
+00:01:16,570 --> 00:01:19,230
+I'm a lazy person, and I
+want to know, how often do I
+
+18
+00:01:19,230 --> 00:01:24,190
+have to look at my runner in order
+to tell how many times they've
+
+19
+00:01:24,190 --> 00:01:25,540
+gone around?
+
+20
+00:01:25,540 --> 00:01:28,910
+So for instance, if
+the runner is running
+
+21
+00:01:28,910 --> 00:01:34,250
+at a rate of one lap per one
+minute, and I look every 15 seconds,
+
+22
+00:01:34,250 --> 00:01:36,400
+I will see them here.
+
+23
+00:01:36,400 --> 00:01:38,750
+I will see them over here.
+
+24
+00:01:38,750 --> 00:01:40,990
+I will see them over here.
+
+25
+00:01:40,990 --> 00:01:43,320
+And I will see them over here.
+
+26
+00:01:43,320 --> 00:01:47,890
+And I can count because I've
+seen them before the finish line,
+
+27
+00:01:47,890 --> 00:01:50,410
+and I've seen them
+after the finish line.
+
+28
+00:01:50,410 --> 00:01:54,300
+And so I can count that I've seen it.
+
+29
+00:01:54,300 --> 00:02:04,220
+However, if I count every two minutes,
+then I'm going to see them here.
+
+30
+00:02:04,220 --> 00:02:06,470
+They're going to go
+around the track twice,
+
+31
+00:02:06,470 --> 00:02:09,467
+and I'm going to see them again there.
+
+32
+00:02:09,467 --> 00:02:12,550
+And they're going to go around the
+track, and I'm going to see them there.
+
+33
+00:02:12,550 --> 00:02:18,050
+And so I will be unable to count
+how many times they've gone.
+
+34
+00:02:18,050 --> 00:02:22,310
+There's something
+special about 30 seconds.
+
+35
+00:02:22,310 --> 00:02:27,990
+If I count slower than every
+30 seconds, I will see them.
+
+36
+00:02:27,990 --> 00:02:32,300
+So in other words, if I were to
+count at 40 seconds or 45 seconds,
+
+37
+00:02:32,300 --> 00:02:40,432
+I could potentially only
+seen them once per lap.
+
+38
+00:02:40,432 --> 00:02:43,700
+And if I only see them
+once per lap, I can't
+
+39
+00:02:43,700 --> 00:02:49,420
+tell whether they've going around
+once or they've not gone around at all
+
+40
+00:02:49,420 --> 00:02:51,130
+and not moving.
+
+41
+00:02:51,130 --> 00:02:57,170
+And so it turns out that this magic
+number, in order to solve my problem,
+
+42
+00:02:57,170 --> 00:03:01,720
+is, in order to tell how many
+times they've gone around the loop,
+
+43
+00:03:01,720 --> 00:03:09,030
+I have to look at least every 30
+seconds, which is my Nyquist Theorem.
+
+44
+00:03:09,030 --> 00:03:14,190
+The oscillation of my runner has
+a frequency of one lap per minute.
+
+45
+00:03:14,190 --> 00:03:19,440
+
+46
+00:03:19,440 --> 00:03:27,210
+And I need to look at least twice
+per minute in order to tell.
+
+47
+00:03:27,210 --> 00:03:30,160
+
+48
+00:03:30,160 --> 00:03:34,540
+Here's another example
+of the Nyquist Theorem.
+
+49
+00:03:34,540 --> 00:03:39,350
+We're stuck back on the island,
+and we want to get to the mainland.
+
+50
+00:03:39,350 --> 00:03:43,550
+
+51
+00:03:43,550 --> 00:03:48,260
+But this time there's a boat.
+
+52
+00:03:48,260 --> 00:03:53,430
+And luckily for us, this
+boat takes a periodic trip
+
+53
+00:03:53,430 --> 00:03:58,780
+between the island, the
+mainland, and back to the island.
+
+54
+00:03:58,780 --> 00:04:04,220
+It takes about 12 hours
+for the boat to go
+
+55
+00:04:04,220 --> 00:04:08,630
+one trip, island to
+mainland and back again.
+
+56
+00:04:08,630 --> 00:04:12,820
+
+57
+00:04:12,820 --> 00:04:18,209
+And while it's at the island,
+it'll sit on the dock.
+
+58
+00:04:18,209 --> 00:04:23,860
+And luckily for us, it'll
+sit at the dock for 12 hours.
+
+59
+00:04:23,860 --> 00:04:30,120
+So if we look at the signal,
+is the boat at the dock?
+
+60
+00:04:30,120 --> 00:04:32,640
+We will see that it oscillates.
+
+61
+00:04:32,640 --> 00:04:36,870
+The boat is at the dock for 12 hours.
+
+62
+00:04:36,870 --> 00:04:40,560
+And the boat is not at the
+dock for about 12 hours.
+
+63
+00:04:40,560 --> 00:04:47,420
+At the dock, not at the dock,
+at the dock, not at the dock.
+
+64
+00:04:47,420 --> 00:04:49,310
+This is a periodic wave.
+
+65
+00:04:49,310 --> 00:04:53,170
+And we see that the
+signal oscillates at once
+
+66
+00:04:53,170 --> 00:04:57,270
+per day, which means, according
+to the Nyquist Theorem,
+
+67
+00:04:57,270 --> 00:05:00,240
+we must sample it at twice per day.
+
+68
+00:05:00,240 --> 00:05:06,820
+For example, if I go down
+to the dock every 11 hours,
+
+69
+00:05:06,820 --> 00:05:10,480
+I'm guaranteed to see the boat.
+
+70
+00:05:10,480 --> 00:05:16,510
+There's no time that the boat
+could come, stay at the dock
+
+71
+00:05:16,510 --> 00:05:19,410
+and leave that I wouldn't notice it.
+
+72
+00:05:19,410 --> 00:05:24,950
+So regardless of when I start looking,
+I will get onto the next boat.
+
+73
+00:05:24,950 --> 00:05:34,980
+On the other hand, if I sample
+the signal every 13 hours,
+
+74
+00:05:34,980 --> 00:05:42,060
+I am slower than the twice
+per day, and it's possible--
+
+75
+00:05:42,060 --> 00:05:47,230
+In this case here, we see that
+the boat came to the dock right
+
+76
+00:05:47,230 --> 00:05:52,380
+after I looked at it and left
+right before I looked at it again.
+
+77
+00:05:52,380 --> 00:05:58,580
+And so we see there's something
+magical about this 12 hours.
+
+78
+00:05:58,580 --> 00:06:03,790
+And looking at the
+boat every 12 hours is
+
+79
+00:06:03,790 --> 00:06:08,320
+equivalent to looking
+at it twice per day.
+
+80
+00:06:08,320 --> 00:06:13,620
+And so we see that if we sample
+faster than twice the frequency,
+
+81
+00:06:13,620 --> 00:06:17,680
+we will capture everything we
+need to know about that signal.
+
+82
+00:06:17,680 --> 00:06:19,911
+And that's the Nyquist Theorem.
+
+83
+00:06:19,911 --> 00:06:20,411

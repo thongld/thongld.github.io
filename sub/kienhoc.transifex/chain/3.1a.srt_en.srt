@@ -1,0 +1,580 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/2prT5aRoix4
+
+1
+00:00:00,499 --> 00:00:02,220
+In this lesson, we will extend our use
+
+2
+00:00:02,220 --> 00:00:05,660
+of exponential smoothing to include seasonality patterns.
+
+3
+00:00:05,660 --> 00:00:09,900
+Now remember that seasonality is a repeated cycle around a known
+
+4
+00:00:09,900 --> 00:00:11,370
+and fixed period.
+
+5
+00:00:11,370 --> 00:00:13,190
+This means while it get the annual, when
+
+6
+00:00:13,190 --> 00:00:14,830
+we think of the four seasons.
+
+7
+00:00:14,830 --> 00:00:18,230
+It can also be tied to monthly patterns, weekly patterns,
+
+8
+00:00:18,230 --> 00:00:21,750
+daily patterns, day of the week, anything in between,
+
+9
+00:00:21,750 --> 00:00:23,625
+anything, again, that is repeated
+
+10
+00:00:23,625 --> 00:00:26,720
+and run a known fixed period of time.
+
+11
+00:00:26,720 --> 00:00:30,110
+Now, in practice, most things have some kind
+
+12
+00:00:30,110 --> 00:00:32,360
+of annual seasonality, especially
+
+13
+00:00:32,360 --> 00:00:35,750
+for products that are consumer packaged goods or CPG products
+
+14
+00:00:35,750 --> 00:00:39,220
+that some consumer uses at the very end.
+
+15
+00:00:39,220 --> 00:00:42,150
+So let's just go through some examples, because this is fun.
+
+16
+00:00:42,150 --> 00:00:45,330
+So I have the 12 months of the year up here at the top.
+
+17
+00:00:45,330 --> 00:00:48,100
+And the winter months, for the Northern hemisphere anyway,
+
+18
+00:00:48,100 --> 00:00:50,930
+are in gray, and then the spring is in green,
+
+19
+00:00:50,930 --> 00:00:53,170
+the summer months are in yellow, and brown
+
+20
+00:00:53,170 --> 00:00:54,740
+is in the fall months.
+
+21
+00:00:54,740 --> 00:00:57,820
+So let's talk about a couple products, chocolate and candy.
+
+22
+00:00:57,820 --> 00:01:00,450
+Where is there peak seasonality?
+
+23
+00:01:00,450 --> 00:01:03,750
+In fact, there's a two-week period in the United States,
+
+24
+00:01:03,750 --> 00:01:06,470
+where 10% of all candy is sold.
+
+25
+00:01:06,470 --> 00:01:09,010
+And if you're from the United States, you know this.
+
+26
+00:01:09,010 --> 00:01:10,070
+It's Halloween.
+
+27
+00:01:10,070 --> 00:01:11,640
+It's at the end of November.
+
+28
+00:01:11,640 --> 00:01:15,270
+And so it's a huge spike in demand.
+
+29
+00:01:15,270 --> 00:01:19,030
+Now there's also some around in Easter and Valentine's Day,
+
+30
+00:01:19,030 --> 00:01:21,370
+but it's an order of magnitude smaller
+
+31
+00:01:21,370 --> 00:01:24,540
+than the amount of candy that is sold at the end of October,
+
+32
+00:01:24,540 --> 00:01:26,520
+the last two weeks here.
+
+33
+00:01:26,520 --> 00:01:28,970
+So why do we care about seasonality?
+
+34
+00:01:28,970 --> 00:01:31,350
+Well, we care about it, because to produce
+
+35
+00:01:31,350 --> 00:01:35,450
+10% of all your product over the course of a year in just two
+
+36
+00:01:35,450 --> 00:01:37,910
+weeks, you've got to start preparing way
+
+37
+00:01:37,910 --> 00:01:40,010
+in advance and start stockpiling.
+
+38
+00:01:40,010 --> 00:01:42,960
+You've got to try to figure out how to make that product ahead
+
+39
+00:01:42,960 --> 00:01:45,386
+of time, and figure out where you're going to keep it,
+
+40
+00:01:45,386 --> 00:01:46,760
+and how you're going to make sure
+
+41
+00:01:46,760 --> 00:01:49,274
+it's available when that peak demand comes.
+
+42
+00:01:49,274 --> 00:01:50,690
+Now I also have this other period,
+
+43
+00:01:50,690 --> 00:01:52,600
+because Chinese New Year.
+
+44
+00:01:52,600 --> 00:01:55,310
+When I talk about this example in class,
+
+45
+00:01:55,310 --> 00:01:58,340
+all the students from China say, well, wait a minute.
+
+46
+00:01:58,340 --> 00:02:01,160
+Chinese New Year is a huge bump for candy.
+
+47
+00:02:01,160 --> 00:02:02,670
+And that's also true.
+
+48
+00:02:02,670 --> 00:02:04,270
+So this illustrates another point
+
+49
+00:02:04,270 --> 00:02:06,860
+that seasonality isn't always the same
+
+50
+00:02:06,860 --> 00:02:08,470
+in different parts of the world.
+
+51
+00:02:08,470 --> 00:02:10,080
+You'll look at Northern hemisphere,
+
+52
+00:02:10,080 --> 00:02:12,780
+Southern hemisphere, but also each country
+
+53
+00:02:12,780 --> 00:02:14,930
+might have different types of seasonality.
+
+54
+00:02:14,930 --> 00:02:17,230
+Because remember this can be either driven
+
+55
+00:02:17,230 --> 00:02:20,520
+by nature or by man-made events.
+
+56
+00:02:20,520 --> 00:02:23,090
+So Halloween, it has nothing to do with nature.
+
+57
+00:02:23,090 --> 00:02:24,890
+That's a man-made event, but it is
+
+58
+00:02:24,890 --> 00:02:28,280
+driving the seasonality of chocolate and candy.
+
+59
+00:02:28,280 --> 00:02:28,780
+All right.
+
+60
+00:02:28,780 --> 00:02:30,510
+Let's do another example.
+
+61
+00:02:30,510 --> 00:02:33,640
+Salads, whether they're prepackaged or actually
+
+62
+00:02:33,640 --> 00:02:36,780
+consumed like it's shown here in the little picture in a salad
+
+63
+00:02:36,780 --> 00:02:37,819
+bar.
+
+64
+00:02:37,819 --> 00:02:39,610
+So where do you think the peak for that is?
+
+65
+00:02:39,610 --> 00:02:40,984
+Well, what's interesting, talking
+
+66
+00:02:40,984 --> 00:02:44,280
+to some of the manufacturers of packaged salad goods,
+
+67
+00:02:44,280 --> 00:02:47,010
+it's really at these two time periods,
+
+68
+00:02:47,010 --> 00:02:52,210
+at the end of November, early December and in early January.
+
+69
+00:02:52,210 --> 00:02:52,980
+Why?
+
+70
+00:02:52,980 --> 00:02:55,105
+Because you've got big holidays in the US
+
+71
+00:02:55,105 --> 00:02:58,020
+at Christmas, at the end of December, and Thanksgiving,
+
+72
+00:02:58,020 --> 00:02:59,390
+at the end of November.
+
+73
+00:02:59,390 --> 00:03:02,050
+So people eat so much that they want to be healthy,
+
+74
+00:03:02,050 --> 00:03:04,540
+so there's a peak in salad right after that,
+
+75
+00:03:04,540 --> 00:03:06,990
+because people try to start losing weight again.
+
+76
+00:03:06,990 --> 00:03:09,530
+Interesting what drives these different seasonalities?
+
+77
+00:03:09,530 --> 00:03:10,030
+OK.
+
+78
+00:03:10,030 --> 00:03:11,050
+Another one.
+
+79
+00:03:11,050 --> 00:03:11,930
+Garden tools.
+
+80
+00:03:11,930 --> 00:03:13,700
+These are lawn mowers, wheelbarrows,
+
+81
+00:03:13,700 --> 00:03:18,610
+anything you need for your lawn or any kind of outdoor repair.
+
+82
+00:03:18,610 --> 00:03:20,540
+So this kind of would be naturally
+
+83
+00:03:20,540 --> 00:03:23,240
+where you think in the northern hemisphere,
+
+84
+00:03:23,240 --> 00:03:24,920
+we'd have things in the spring.
+
+85
+00:03:24,920 --> 00:03:27,950
+And so you have this big peak in the April,
+
+86
+00:03:27,950 --> 00:03:30,380
+May timeframe, getting ready for the summer months.
+
+87
+00:03:30,380 --> 00:03:31,950
+And in the southern hemisphere, you
+
+88
+00:03:31,950 --> 00:03:33,600
+have just the opposite of course.
+
+89
+00:03:33,600 --> 00:03:36,950
+This is when their spring is, ready for their summer months.
+
+90
+00:03:36,950 --> 00:03:38,580
+So you see that it's the same pattern,
+
+91
+00:03:38,580 --> 00:03:42,260
+but because the winter and summers are flipped
+
+92
+00:03:42,260 --> 00:03:45,530
+for the hemispheres, they will offset each other.
+
+93
+00:03:45,530 --> 00:03:46,720
+Last one.
+
+94
+00:03:46,720 --> 00:03:47,870
+Cloth bandages.
+
+95
+00:03:47,870 --> 00:03:49,920
+When someone from a company told me about this,
+
+96
+00:03:49,920 --> 00:03:50,900
+I didn't believe it.
+
+97
+00:03:50,900 --> 00:03:53,410
+So there is seasonality with the cloth bandages.
+
+98
+00:03:53,410 --> 00:03:57,900
+And in the US, the peak time, 4th of July.
+
+99
+00:03:57,900 --> 00:03:59,260
+Why 4th of July?
+
+100
+00:03:59,260 --> 00:04:01,080
+Because that's one of the major times
+
+101
+00:04:01,080 --> 00:04:03,150
+that people use fireworks.
+
+102
+00:04:03,150 --> 00:04:06,530
+And so there's a lot of hand injuries and people
+
+103
+00:04:06,530 --> 00:04:09,370
+hurting themselves by doing fireworks in their backyard.
+
+104
+00:04:09,370 --> 00:04:12,300
+It's a huge seasonality for cloth bandages.
+
+105
+00:04:12,300 --> 00:04:14,100
+And again, the Chinese students in my class
+
+106
+00:04:14,100 --> 00:04:15,870
+say, well, wait a minute.
+
+107
+00:04:15,870 --> 00:04:19,089
+The Chinese New Year, that's also a peak as well.
+
+108
+00:04:19,089 --> 00:04:21,589
+And so again, this is not because of nature.
+
+109
+00:04:21,589 --> 00:04:23,340
+This is a man-made event.
+
+110
+00:04:23,340 --> 00:04:26,160
+So the point of this is, it's interesting
+
+111
+00:04:26,160 --> 00:04:28,740
+always to see what the seasonality is
+
+112
+00:04:28,740 --> 00:04:29,979
+for different products.
+
+113
+00:04:29,979 --> 00:04:32,020
+And you should always be aware that there usually
+
+114
+00:04:32,020 --> 00:04:34,260
+is some kind of seasonality.
+
+115
+00:04:34,260 --> 00:04:36,300
+It's rare that you have an item that
+
+116
+00:04:36,300 --> 00:04:40,490
+is steady state across the year or across a month.
+
+117
+00:04:40,490 --> 00:04:43,390
+In fact, for a lot of times, you see seasonality
+
+118
+00:04:43,390 --> 00:04:46,670
+driven by sales, and you've got this sawtooth diagram
+
+119
+00:04:46,670 --> 00:04:49,950
+where you have big sales or at the end of a financial quarter,
+
+120
+00:04:49,950 --> 00:04:52,670
+because sales guys are trying to make their quotas.
+
+121
+00:04:52,670 --> 00:04:54,990
+And that's a kind of an artificial seasonality,
+
+122
+00:04:54,990 --> 00:04:56,365
+but still it's something present.
+
+123
+00:04:56,365 --> 00:04:58,198
+And you might want to try and get rid of it,
+
+124
+00:04:58,198 --> 00:05:00,390
+but it's something we as supply chain professionals
+
+125
+00:05:00,390 --> 00:05:01,640
+have to deal with.
+
+126
+00:05:01,640 --> 00:05:03,140
+All right, what are we going to talk
+
+127
+00:05:03,140 --> 00:05:04,710
+about in the rest of this video?
+
+128
+00:05:04,710 --> 00:05:06,918
+Well, we're only going to talk about a couple things,
+
+129
+00:05:06,918 --> 00:05:08,650
+but it'll take a little while.
+
+130
+00:05:08,650 --> 00:05:10,580
+We'll start talking about seasonality
+
+131
+00:05:10,580 --> 00:05:13,130
+and how we include that in exponential smoothing.
+
+132
+00:05:13,130 --> 00:05:15,170
+We'll introduce a double exponential smoothing
+
+133
+00:05:15,170 --> 00:05:18,050
+model that takes care of level and seasonality.
+
+134
+00:05:18,050 --> 00:05:20,010
+Then, we'll introduce the Holt-Winter model
+
+135
+00:05:20,010 --> 00:05:23,160
+that takes care of all three of the patterns that we've
+
+136
+00:05:23,160 --> 00:05:26,180
+been looking at, level, trend, and seasonality.
+
+137
+00:05:26,180 --> 00:05:28,500
+Then we'll talk about initialization of parameters,
+
+138
+00:05:28,500 --> 00:05:31,890
+something we've been ignoring over the last two videos
+
+139
+00:05:31,890 --> 00:05:32,764
+and lectures.
+
+140
+00:05:32,764 --> 00:05:35,180
+And then we'll finish up with some practical concerns that
+
+141
+00:05:35,180 --> 00:05:37,560
+are just about exponential smoothing and forecasting
+
+142
+00:05:37,560 --> 00:05:38,590
+in general.
+
+143
+00:05:38,590 --> 00:05:39,210
+All right.
+
+144
+00:05:39,210 --> 00:05:41,100
+Let's get started.
+

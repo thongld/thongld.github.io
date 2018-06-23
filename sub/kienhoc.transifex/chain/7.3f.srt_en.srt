@@ -1,0 +1,276 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/fVUaT8fkHNM
+
+1
+00:00:00,500 --> 00:00:02,390
+So for part four we have the following.
+
+2
+00:00:02,390 --> 00:00:04,970
+Suppose demand is still uniformly distributed
+
+3
+00:00:04,970 --> 00:00:07,480
+with mean 0 and max 300.
+
+4
+00:00:07,480 --> 00:00:08,980
+If the manager wants the probability
+
+5
+00:00:08,980 --> 00:00:11,410
+of having excess inventory at the end of the semester
+
+6
+00:00:11,410 --> 00:00:15,886
+to be less than 20%, how many books should then be ordered?
+
+7
+00:00:15,886 --> 00:00:17,010
+So what are we facing here?
+
+8
+00:00:17,010 --> 00:00:19,930
+We have a manager, and clearly she
+
+9
+00:00:19,930 --> 00:00:23,020
+wants to avoid having books left at the semester.
+
+10
+00:00:23,020 --> 00:00:24,790
+Whatever she orders before the semester,
+
+11
+00:00:24,790 --> 00:00:27,590
+she wants to be able to sell that during the semester.
+
+12
+00:00:27,590 --> 00:00:30,050
+So she doesn't want to go through the hassle of having
+
+13
+00:00:30,050 --> 00:00:31,740
+to salvage those books.
+
+14
+00:00:31,740 --> 00:00:33,730
+It could be by having some kind of promotion
+
+15
+00:00:33,730 --> 00:00:36,330
+or having some other type of campaign
+
+16
+00:00:36,330 --> 00:00:37,810
+in order to solve whatever is left
+
+17
+00:00:37,810 --> 00:00:39,080
+at the end of the semester.
+
+18
+00:00:39,080 --> 00:00:40,490
+She wants to avoid that.
+
+19
+00:00:40,490 --> 00:00:42,020
+And what they're saying is that they
+
+20
+00:00:42,020 --> 00:00:47,320
+want the probability of this happening to be less than 20%.
+
+21
+00:00:47,320 --> 00:00:49,350
+So let's think about this.
+
+22
+00:00:49,350 --> 00:00:52,150
+This is a uniformly distributed demand.
+
+23
+00:00:52,150 --> 00:00:55,380
+So if we were to order the average,
+
+24
+00:00:55,380 --> 00:00:58,460
+that means we're going to order 150.
+
+25
+00:00:58,460 --> 00:01:04,830
+If we do that, we know that the probability that the demand is
+
+26
+00:01:04,830 --> 00:01:06,710
+less than what ordered is 50%.
+
+27
+00:01:06,710 --> 00:01:11,577
+So the probability that there's going to be a stockout is 50%
+
+28
+00:01:11,577 --> 00:01:13,910
+and the probability there's going to be excess inventory
+
+29
+00:01:13,910 --> 00:01:14,410
+is 50%.
+
+30
+00:01:14,410 --> 00:01:18,100
+
+
+31
+00:01:18,100 --> 00:01:20,890
+With the probability of excess inventory being 50%,
+
+32
+00:01:20,890 --> 00:01:22,760
+that's too high.
+
+33
+00:01:22,760 --> 00:01:26,020
+We want a probability of ending inventory left to be 20%.
+
+34
+00:01:26,020 --> 00:01:29,700
+So ordering 150, average demand, is
+
+35
+00:01:29,700 --> 00:01:31,810
+too much-- we have to lower it.
+
+36
+00:01:31,810 --> 00:01:36,300
+The question is, how much lower than 150 should we order?
+
+37
+00:01:36,300 --> 00:01:42,800
+Well, we want the probability of the demand to be less than Q,
+
+38
+00:01:42,800 --> 00:01:44,580
+because when the demand is less than Q,
+
+39
+00:01:44,580 --> 00:01:46,930
+it means that we have excess inventory.
+
+40
+00:01:46,930 --> 00:01:50,520
+So you actually don't want it to be equal to,
+
+41
+00:01:50,520 --> 00:01:57,970
+you want it to be less than 20%, or less than 0.2.
+
+42
+00:01:57,970 --> 00:01:59,200
+When is this the case?
+
+43
+00:01:59,200 --> 00:02:01,200
+Well, what is this?
+
+44
+00:02:01,200 --> 00:02:04,270
+This is really f of Q, the cumulative distribution
+
+45
+00:02:04,270 --> 00:02:05,070
+function.
+
+46
+00:02:05,070 --> 00:02:07,810
+We want this to be less than 0.2.
+
+47
+00:02:07,810 --> 00:02:09,310
+The cumulative distribution function
+
+48
+00:02:09,310 --> 00:02:11,460
+for a uniform distribution, we found
+
+49
+00:02:11,460 --> 00:02:12,950
+that in a previous problem.
+
+50
+00:02:12,950 --> 00:02:18,095
+In part three we saw that this is equal to Q divided by 300.
+
+51
+00:02:18,095 --> 00:02:22,320
+We want Q divided by 300 to be less than 0.2,
+
+52
+00:02:22,320 --> 00:02:26,870
+which means that we need a Q, whatever Q we order,
+
+53
+00:02:26,870 --> 00:02:30,650
+has to be less than 60.
+
+54
+00:02:30,650 --> 00:02:34,560
+So we saw that a Q equal to 150 is too much.
+
+55
+00:02:34,560 --> 00:02:38,730
+Really, in order to make sure that the probability of having
+
+56
+00:02:38,730 --> 00:02:41,750
+excess inventory at the end of the semester is less than 0.2,
+
+57
+00:02:41,750 --> 00:02:44,560
+we have to order less than 60 units.
+
+58
+00:02:44,560 --> 00:02:45,800
+OK, so that's it.
+
+59
+00:02:45,800 --> 00:02:49,470
+I hope going through these problems and the solutions
+
+60
+00:02:49,470 --> 00:02:53,480
+with you helped you think about how the distribution of demand
+
+61
+00:02:53,480 --> 00:02:56,370
+impacts the solution for single period inventory
+
+62
+00:02:56,370 --> 00:02:58,090
+type of models.
+
+63
+00:02:58,090 --> 00:02:59,807
+And I hope you find it insightful.
+
+64
+00:02:59,807 --> 00:03:01,140
+Thank you so much for listening.
+
+65
+00:03:01,140 --> 00:03:02,810
+If you any questions or comments,
+
+66
+00:03:02,810 --> 00:03:05,230
+just use the discussion forum that you find
+
+67
+00:03:05,230 --> 00:03:07,440
+after these video segments.
+
+68
+00:03:07,440 --> 00:03:09,140
+Good luck.
+

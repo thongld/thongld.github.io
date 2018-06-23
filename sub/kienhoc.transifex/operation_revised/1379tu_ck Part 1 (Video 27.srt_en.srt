@@ -1,0 +1,541 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/jjLN-Fk7Kgc
+
+1
+00:00:05,000 --> 00:00:09,440
+hello again and welcome back to
+operations management and we're
+
+2
+00:00:09,440 --> 00:00:13,490
+continuing with inventory in this
+session we're going to be working on
+
+3
+00:00:13,490 --> 00:00:19,579
+calculating safety stock and I know that
+I say part 1 because safety stock is a
+
+4
+00:00:19,579 --> 00:00:21,800
+long thing to talk about
+
+5
+00:00:21,800 --> 00:00:24,800
+so we're going to do it in two parts
+let's get started
+
+6
+00:00:25,368 --> 00:00:31,399
+as we recall inventory has cost
+associated with it in terms of holding
+
+7
+00:00:31,399 --> 00:00:37,070
+on to it as well as capital costs which
+means if money is tied up in inventory
+
+8
+00:00:37,070 --> 00:00:39,200
+we can't use it for anything else
+
+9
+00:00:39,200 --> 00:00:42,200
+we also know that if we don't have
+enough inventory
+
+10
+00:00:42,829 --> 00:00:46,850
+it caused a disruption in our
+manufacturing because we may not be able
+
+11
+00:00:46,850 --> 00:00:52,129
+to have enough inventory to manufacture
+goods or we won't have the product to
+
+12
+00:00:52,128 --> 00:00:54,259
+provide customers with it
+
+13
+00:00:54,259 --> 00:00:59,718
+so we won't be able to meet demand so
+what we have to figure out is how much
+
+14
+00:00:59,719 --> 00:01:06,530
+safety stock to keep to do this we need
+to understand a few terms first is stock
+
+15
+00:01:06,530 --> 00:01:11,659
+out stock out means that we are not able
+to meet demand
+
+16
+00:01:11,659 --> 00:01:14,780
+it's just not there it's not on the
+shelves it's not in the warehouse
+
+17
+00:01:15,290 --> 00:01:21,710
+another term the cycle service level
+sometimes just call the service level is
+
+18
+00:01:21,709 --> 00:01:26,750
+that the probability that we will not
+run out of items so the probability that
+
+19
+00:01:26,750 --> 00:01:32,180
+there will not be a stock out is our
+service level and safety stock which is
+
+20
+00:01:32,180 --> 00:01:37,939
+a term I've used before is just extra
+inventory that we hold onto beyond what
+
+21
+00:01:37,938 --> 00:01:46,099
+we expect to use when we go about
+calculating safety stock we tend to make
+
+22
+00:01:46,099 --> 00:01:49,929
+the following assumption and that is
+that the lead time demand
+
+23
+00:01:49,930 --> 00:01:54,880
+and can be represented by the normal
+distribution and it's represented by
+
+24
+00:01:54,879 --> 00:02:00,909
+using the mean of that distribution and
+its standard deviation so we'll actually
+
+25
+00:02:00,909 --> 00:02:05,769
+get two terms when we're thinking about
+safety stock will get the lead time
+
+26
+00:02:05,769 --> 00:02:10,000
+demand which is the average amount we're
+going to use and the standard deviation
+
+27
+00:02:10,000 --> 00:02:16,240
+of the lead time demand which represents
+the variation in demand and when we
+
+28
+00:02:16,240 --> 00:02:18,189
+think about service level
+
+29
+00:02:18,189 --> 00:02:22,719
+it's the probability that the amount we
+use is actually going to be less than or
+
+30
+00:02:22,719 --> 00:02:27,849
+equal to the amount we have on hand
+which is a reorder point which also
+
+31
+00:02:27,849 --> 00:02:33,280
+means that our service level equals one
+minus the probability of running out the
+
+32
+00:02:33,280 --> 00:02:35,289
+probability of a stock out
+
+33
+00:02:35,289 --> 00:02:39,489
+so if we take a look at that normal
+distribution you'll recognize the
+
+34
+00:02:39,489 --> 00:02:43,480
+standard bell curve but we're going to
+add a few things to it
+
+35
+00:02:43,479 --> 00:02:48,699
+the center line of this curve is the
+average amount that we use this is our
+
+36
+00:02:48,699 --> 00:02:50,289
+lead time demand
+
+37
+00:02:50,289 --> 00:02:55,719
+this is what we expect to use during the
+time we place the order to the time it's
+
+38
+00:02:55,719 --> 00:03:01,539
+received but there's also the
+probability of a stock out and what we
+
+39
+00:03:01,539 --> 00:03:07,269
+need to do is we need to have extra
+inventory which becomes our safety stock
+
+40
+00:03:07,269 --> 00:03:10,599
+to prevent the probability of a stock
+out
+
+41
+00:03:10,599 --> 00:03:15,609
+so if the red area is our probability of
+a stock out then the other area the
+
+42
+00:03:15,610 --> 00:03:21,280
+light green area is our service level
+because if you recall the entire area
+
+43
+00:03:21,280 --> 00:03:27,459
+under the curve equals 1 so 1 minus the
+probability of a stock out is our
+
+44
+00:03:27,459 --> 00:03:28,810
+service level
+
+45
+00:03:28,810 --> 00:03:36,939
+so what we do is to calculate that extra
+inventory our safety stock sometimes
+
+46
+00:03:36,939 --> 00:03:39,579
+known as ISIL  or ice of safety
+
+47
+00:03:39,579 --> 00:03:45,459
+we need to use the standard deviation
+and we're trying to figure out how many
+
+48
+00:03:45,459 --> 00:03:48,789
+standard deviations above the mean which
+is there a Z statistic
+
+49
+00:03:51,000 --> 00:03:54,810
+so when we get to re-order . we're going
+to have our lead time demand
+
+50
+00:03:55,680 --> 00:04:01,680
+Plus that safety stock so our safety
+stock equals the number of standard
+
+51
+00:04:01,680 --> 00:04:04,260
+deviations above the mean
+
+52
+00:04:04,259 --> 00:04:10,769
+so that our lead time demand plus our
+safety stock equals the  reorder point and so
+
+53
+00:04:10,770 --> 00:04:12,900
+that entire area under the curve
+
+54
+00:04:12,900 --> 00:04:15,900
+not the red part is our service level
+
+55
+00:04:16,919 --> 00:04:22,079
+so to recap our service level is our
+probability that the amount we use is
+
+56
+00:04:22,079 --> 00:04:27,389
+going to be less than or equal to the re
+order point and the service level equals 1
+
+57
+00:04:27,389 --> 00:04:30,209
+minus the probability of a stockout
+
+58
+00:04:30,209 --> 00:04:36,899
+so to determine our safety stock we're
+going to need a value for Z because we
+
+59
+00:04:36,899 --> 00:04:40,019
+need to know how many standard
+deviations above the mean
+
+60
+00:04:40,709 --> 00:04:46,229
+so we're going to have to use either a
+normal distribution table or Excel my
+
+61
+00:04:46,230 --> 00:04:50,430
+preference is always for Excel because
+it's a lot easier to plug in the numbers
+
+62
+00:04:50,430 --> 00:04:57,269
+use the formula and get your calculation
+for Z as opposed to looking up tables so
+
+63
+00:04:57,269 --> 00:05:02,069
+the formula we are going to use is norms
+inverse NORMSINV
+
+64
+00:05:02,069 --> 00:05:07,168
+I'm going to input the
+probability of not having a stock out
+
+65
+00:05:07,168 --> 00:05:10,319
+which is the service level and that
+will give us a Z statistic
+
+66
+00:05:11,399 --> 00:05:17,759
+so our safety stock becomes Z times the
+standard deviation of the lead time
+
+67
+00:05:17,759 --> 00:05:24,389
+demand now sometimes we already know the
+safety stock and standard deviation of
+
+68
+00:05:24,389 --> 00:05:29,339
+lead time demand and we need to
+calculate what the service level is so
+
+69
+00:05:29,339 --> 00:05:34,079
+we need to work backwards in this case
+if we know the safety stock and the
+
+70
+00:05:34,079 --> 00:05:39,839
+standard deviation of the lead time
+demand are Z equals our safety stock /
+
+71
+00:05:39,839 --> 00:05:47,909
+that standard deviation and once we know
+the Z statistic we can again use a table
+
+72
+00:05:47,910 --> 00:05:52,080
+or Excel to calculate the service level
+
+73
+00:05:52,079 --> 00:05:59,459
+so our service level equals the norms
+distribution NORMSDIST of Z
+
+74
+00:05:59,459 --> 00:06:00,959
+statistic
+
+75
+00:06:00,959 --> 00:06:03,759
+once we use excel so let's do a problem
+
+76
+00:06:03,759 --> 00:06:10,870
+Jordan is trying to figure out how much
+extra inventory of cables to keep during
+
+77
+00:06:10,870 --> 00:06:17,379
+the past year the mean lead time demand
+ltd for the cable was a hundred and five
+
+78
+00:06:17,379 --> 00:06:19,839
+with a standard deviation of 12
+
+79
+00:06:19,839 --> 00:06:23,139
+Jordan would like to maintain a
+ninety-percent service level
+
+80
+00:06:23,860 --> 00:06:27,100
+so what is the recommended safety stock
+
+81
+00:06:27,100 --> 00:06:33,220
+what is a reorder point and if Jordan
+keeps 20 cables safety stock
+
+82
+00:06:33,220 --> 00:06:39,550
+what is the service level so here you
+see that we have a value for our mean
+
+83
+00:06:39,550 --> 00:06:45,490
+lead time demand of a hundred and five
+and we have a standard deviation of 12
+
+84
+00:06:45,490 --> 00:06:51,280
+and we're trying to maintain a
+ninety-percent service level using this
+
+85
+00:06:51,279 --> 00:06:54,519
+information we can calculate the safety
+stock
+
+86
+00:06:54,519 --> 00:06:58,959
+we're going to calculate the Z statistic
+and then multiply by the standard
+
+87
+00:06:58,959 --> 00:07:02,889
+deviation of the lead time demand going
+to excel
+
+88
+00:07:02,889 --> 00:07:09,699
+we're going to use the norms in formula
+and use ninety percent as our service
+
+89
+00:07:09,699 --> 00:07:17,439
+level to get a Z statistic equaling 1.28
+so we calculate the safety stock 1.28 x
+
+90
+00:07:17,439 --> 00:07:20,529
+12 and that's 15.37
+
+91
+00:07:21,040 --> 00:07:27,370
+we always round up when we're dealing
+with safety stock so 15.37 becomes 16
+
+92
+00:07:29,509 --> 00:07:32,719
+so our reorder point is our lead time
+demand
+
+93
+00:07:32,720 --> 00:07:37,610
+plus the safety stock so when you lead
+time demand is a hundred and five
+
+94
+00:07:37,610 --> 00:07:40,610
+we add to it the safety stock of 16
+
+95
+00:07:40,610 --> 00:07:43,699
+so we get a total of a hundred and
+twenty-one
+
+96
+00:07:43,699 --> 00:07:47,990
+so when we're thinking about it we're
+watching the inventory as soon as we get
+
+97
+00:07:47,990 --> 00:07:54,170
+down to a hundred and twenty-one cables
+in inventory we place our order for a
+
+98
+00:07:54,170 --> 00:08:01,460
+new set of inventory now let's say
+Jordan wants to keep 20 on hand
+
+99
+00:08:01,459 --> 00:08:07,609
+how does that safety stock of 20 mean in
+terms of our service level
+
+100
+00:08:08,149 --> 00:08:12,889
+so now that we know that the safety
+stock is 20 we can go backwards and
+
+101
+00:08:12,889 --> 00:08:18,319
+calculate the Z statistic safety stock
+divided by the standard deviation of the
+
+102
+00:08:18,319 --> 00:08:27,409
+lead time demand is 1.67 now we use the
+NORMSDIST norms distribution
+
+103
+00:08:27,410 --> 00:08:35,029
+function within Excel using z of 1.67
+now we find out that the service level
+
+104
+00:08:35,029 --> 00:08:37,250
+is point nine five two two
+
+105
+00:08:37,250 --> 00:08:43,940
+so holding a safety stock of 20 is going
+to increase our service level the more
+
+106
+00:08:43,940 --> 00:08:47,330
+safety stock you have the higher service
+level will be
+
+107
+00:08:49,070 --> 00:08:52,910
+now in our next session we're going to
+figure out how to calculate the standard
+
+108
+00:08:52,909 --> 00:08:55,250
+deviation of lead time demand
+
+109
+00:08:55,250 --> 00:08:59,750
+sometimes it's not given sometimes we
+just know that there is a variation in
+
+110
+00:08:59,750 --> 00:09:05,240
+demand and sometimes there's a variation
+in both the lead time and the demand so
+
+111
+00:09:05,240 --> 00:09:07,370
+we'll cover that in the next session
+
+112
+00:09:07,370 --> 00:09:07,970
+I'll see you then
+

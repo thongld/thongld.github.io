@@ -1,0 +1,823 @@
+1
+00:00:00,000 --> 00:00:05,059
+Energy. The foundation of the universe,
+we'd literally be nothing without it.
+
+2
+00:00:05,059 --> 00:00:11,059
+It does all our work, provides all our heat, can be stored to use later, and never, ever goes away.
+
+3
+00:00:11,060 --> 00:00:13,320
+Sounds like the best-est best friend ever.
+
+4
+00:00:13,320 --> 00:00:19,120
+And yet, most of the time we take it for granted, but here at Crash Course, we feel bad for our old friend Energy;
+
+5
+00:00:19,120 --> 00:00:22,630
+we want to understand it so that we can be
+a better friend to it,
+
+6
+00:00:22,629 --> 00:00:25,129
+and also so that we can understand what it's
+trying to tell us.
+
+7
+00:00:25,129 --> 00:00:28,099
+Like that any bond between two atoms contains
+energy.
+
+8
+00:00:28,109 --> 00:00:31,750
+How much energy? Well, that is not the simplest
+question to answer.
+
+9
+00:00:31,750 --> 00:00:38,090
+And yet, today we shall answer it...kinda,
+using a nifty little thing called enthalpy.
+
+10
+00:00:38,090 --> 00:00:47,670
+[Theme Music]
+
+11
+00:00:47,670 --> 00:00:51,649
+Last time, we learned about internal energy,
+and the two ways that it can be transferred:
+
+12
+00:00:51,649 --> 00:00:53,198
+by heat, or by work.
+
+13
+00:00:53,200 --> 00:00:56,478
+And heat and work are useful concepts, but
+they have limitations.
+
+14
+00:00:56,478 --> 00:01:02,259
+Particularly, that it is extremely difficult to figure out how much of which one is being done.
+
+15
+00:01:02,259 --> 00:01:05,280
+Work is energy transferred to the motion of
+objects,
+
+16
+00:01:05,280 --> 00:01:08,710
+while heat is energy transferred to the motion
+of atoms and molecules.
+
+17
+00:01:08,709 --> 00:01:14,399
+But for any given change in energy, the split between work and heat could be pretty much anything,
+
+18
+00:01:14,400 --> 00:01:16,180
+as long as there's some going to each.
+
+19
+00:01:16,188 --> 00:01:20,048
+Say that my car is at the top of a hill, and
+there's a frozen banana stand at the bottom.
+
+20
+00:01:20,049 --> 00:01:24,799
+If I roll down with my brakes on, lots of heat will be transferred into my brake pads and my brake discs,
+
+21
+00:01:24,799 --> 00:01:29,679
+and I'll kind of like very slightly knock into the frozen banana stand, doing a tiny amount of work on it.
+
+22
+00:01:29,680 --> 00:01:33,120
+But if I am reckless and insane, very little
+heat will be generated,
+
+23
+00:01:33,129 --> 00:01:36,780
+and my car'll do a huge amount of work on
+the frozen banana stand.
+
+24
+00:01:36,780 --> 00:01:42,900
+Both paths transfer the same amount of energy, but one produces very little heat, and the other produces a ton.
+
+25
+00:01:42,900 --> 00:01:46,180
+So, we say that heat and work are "pathway
+dependent."
+
+26
+00:01:46,188 --> 00:01:49,699
+The amount of heat or work done depends on
+the pathway you take.
+
+27
+00:01:49,700 --> 00:01:53,070
+The change in energy, on the other hand, is
+the same in either case.
+
+28
+00:01:53,069 --> 00:01:55,478
+Change in energy is independent of the pathway.
+
+29
+00:01:55,478 --> 00:01:59,140
+In chemistry and physics and math, we call
+that a "state function,"
+
+30
+00:01:59,140 --> 00:02:03,129
+because the only thing that matters is the
+starting state and the ending state,
+
+31
+00:02:03,129 --> 00:02:05,068
+not the stuff in between, not how you got
+there.
+
+32
+00:02:05,069 --> 00:02:08,140
+State functions are pretty great, because
+they make the math very simple;
+
+33
+00:02:08,139 --> 00:02:10,609
+it's just one amount minus another amount.
+
+34
+00:02:10,610 --> 00:02:15,100
+It would be pretty fascinating to know exactly
+how much energy is tied up in a molecule.
+
+35
+00:02:15,099 --> 00:02:18,500
+Unfortunately, it's next to impossible to
+know that number.
+
+36
+00:02:18,500 --> 00:02:22,530
+It's too big, and there are too many boxes
+where all that energy could be hiding.
+
+37
+00:02:22,530 --> 00:02:26,360
+It's like trying to measure the total volume
+of the ocean, like, good luck.
+
+38
+00:02:26,360 --> 00:02:31,240
+However, since energy, like volume, is a state function, we can very easily talk about the change in energy.
+
+39
+00:02:31,240 --> 00:02:33,780
+Just like if you dump a two liter Mountain
+Dew into the ocean,
+
+40
+00:02:33,780 --> 00:02:38,759
+you can't tell me how many liters are in the ocean, but you can say that that number has changed.
+
+41
+00:02:38,770 --> 00:02:40,659
+It has just increased by two.
+
+42
+00:02:40,659 --> 00:02:45,079
+In the same way, we're interested in energy
+being transferred in or out of the system
+
+43
+00:02:45,080 --> 00:02:46,760
+because of chemical reactions.
+
+44
+00:02:46,759 --> 00:02:49,799
+And in many cases, all we're interested in
+is the heat part.
+
+45
+00:02:49,800 --> 00:02:53,219
+For example, if I burn a pile of wood, I care
+about the heat being generated,
+
+46
+00:02:53,219 --> 00:02:57,419
+not the work being done by the volume increase,
+or by the rising smoke.
+
+47
+00:02:57,419 --> 00:03:00,619
+So dealing with the whole internal energy
+equation thing would kind of be overkill.
+
+48
+00:03:00,620 --> 00:03:06,240
+What we really need is a state function based
+on the loss or gain of heat in chemical reactions.
+
+49
+00:03:06,240 --> 00:03:08,960
+Which yes, is what Enthalpy is for.
+
+50
+00:03:08,960 --> 00:03:14,400
+In addition to being a silly-sounding word, enthalpy, which is represented by an equally silly capital H,
+
+51
+00:03:14,400 --> 00:03:16,980
+is technically the internal energy of a system,
+
+52
+00:03:16,979 --> 00:03:21,039
+plus the energy that's required to sort of
+shove the surroundings out of the way,
+
+53
+00:03:21,039 --> 00:03:23,159
+and make room for the system's pressure and
+volume.
+
+54
+00:03:23,159 --> 00:03:26,039
+With enthalpy, we can make some assumptions
+and do some fancy math
+
+55
+00:03:26,039 --> 00:03:28,900
+and make the simplest equation we've ever
+seen in Crash Course Chemistry.
+
+56
+00:03:28,900 --> 00:03:30,180
+Let's get there real fast.
+
+57
+00:03:30,180 --> 00:03:33,030
+So first, we're not really interested in the
+total enthalpy of the system,
+
+58
+00:03:33,030 --> 00:03:35,479
+which is good, because it's impossible to
+measure.
+
+59
+00:03:35,479 --> 00:03:39,280
+We're really just interested in how much it's
+going to change, as a state function.
+
+60
+00:03:39,280 --> 00:03:42,789
+So, the formula for enthalpy is usually written
+as change in enthalpy.
+
+61
+00:03:42,789 --> 00:03:47,669
+Delta E or "change in energy" equals q plus
+w, so we can replace that part,
+
+62
+00:03:47,669 --> 00:03:50,189
+and then we can make two big, huge assumptions.
+
+63
+00:03:50,189 --> 00:03:52,629
+First, that pressure is constant.
+
+64
+00:03:52,629 --> 00:03:55,780
+Fortunately, despite talk of high and low
+pressure weather systems,
+
+65
+00:03:55,780 --> 00:04:00,159
+atmospheric pressure, it really, changes very little compared to the other terms in the equation.
+
+66
+00:04:00,159 --> 00:04:03,740
+Constant pressure is a pretty good assumption
+here on the Earth's surface.
+
+67
+00:04:03,750 --> 00:04:06,360
+So that last Δ only applies to the volume.
+
+68
+00:04:06,360 --> 00:04:09,320
+The second assumption is that the only work
+done in the system
+
+69
+00:04:09,319 --> 00:04:14,609
+is the work that the pressure does to change
+the volume, known as pressure volume work.
+
+70
+00:04:14,610 --> 00:04:16,859
+So W equals negative PΔV.
+
+71
+00:04:16,858 --> 00:04:19,000
+Now the signs are a little bit weird here:
+
+72
+00:04:19,000 --> 00:04:24,189
+an increase -- or positive change -- in volume,
+results in an output of work by the system
+
+73
+00:04:24,189 --> 00:04:26,149
+-- a loss in internal energy --
+
+74
+00:04:26,149 --> 00:04:28,179
+which is defined as a negative amount.
+
+75
+00:04:28,180 --> 00:04:33,439
+So the signs for work and for PΔV will always
+be opposite, and so, voila!
+
+76
+00:04:33,439 --> 00:04:38,459
+The PΔV parts cancel, ΔH equals the heat
+of reaction.
+
+77
+00:04:38,459 --> 00:04:42,219
+Change in enthalpy is equal to the heat gained
+or lost by the system.
+
+78
+00:04:42,220 --> 00:04:45,770
+So I guess in the capital H for enthalpy does
+kinda make sense.
+
+79
+00:04:45,769 --> 00:04:50,599
+Thanks to this little trick for a lot of reactions that happen at constant pressure, like here on the surface of the earth,
+
+80
+00:04:50,600 --> 00:04:54,310
+working just with enthalpies instead of internal
+energy makes a lot more sense.
+
+81
+00:04:54,310 --> 00:04:55,889
+I mean, it's hugely useful.
+
+82
+00:04:55,889 --> 00:05:00,599
+We can determine how much useful energy is
+contained in pretty much any chemical compound.
+
+83
+00:05:00,600 --> 00:05:04,280
+This is done by simply measuring temperature
+changes during chemical reactions.
+
+84
+00:05:04,279 --> 00:05:07,479
+So we know what it is, we know that state
+functions are great, but really why?
+
+85
+00:05:07,480 --> 00:05:11,090
+Why have we done this, and can I just go look
+at pictures of cats now?
+
+86
+00:05:11,089 --> 00:05:14,079
+Well no, because you don't even know why enthalpy
+is so cool.
+
+87
+00:05:14,079 --> 00:05:16,779
+When a reaction takes place and enthalpy changes,
+
+88
+00:05:16,779 --> 00:05:22,979
+that heat is transferring into or out of actual
+chemical bonds, these little guys.
+
+89
+00:05:22,980 --> 00:05:27,200
+Atoms and molecules reacting so that they
+contain more or less energy,
+
+90
+00:05:27,209 --> 00:05:31,180
+and that energy is either released to or taken
+from the environment as heat.
+
+91
+00:05:31,180 --> 00:05:36,660
+Those bonds are nothing but energy, and using enthalpy, we can measure how much energy they have.
+
+92
+00:05:36,660 --> 00:05:40,520
+And we measure enthalpy with a weird little
+science called calorimetry.
+
+93
+00:05:40,519 --> 00:05:45,079
+In calorimetry, we have a reaction take place inside an insulated vessel, like a thermos, basically,
+
+94
+00:05:45,079 --> 00:05:47,579
+and measure how much the temperature changes,
+
+95
+00:05:47,589 --> 00:05:50,810
+which we can then link directly to heat and
+thus enthalpy change.
+
+96
+00:05:50,810 --> 00:05:54,399
+Hopefully that sounds like fun because more
+about the ins and outs of this are coming
+
+97
+00:05:54,399 --> 00:05:56,509
+in an episode on how to measure enthalpy.
+
+98
+00:05:56,509 --> 00:05:59,329
+Scientists have actually done on the calorimetry
+footwork for us,
+
+99
+00:05:59,329 --> 00:06:03,279
+so we can actually predict how much heat a
+chemical reaction will produce.
+
+100
+00:06:03,279 --> 00:06:05,549
+You might not understand what's so great about
+that,
+
+101
+00:06:05,550 --> 00:06:09,800
+but just imagine because I live here in Montana,
+where winters are pretty wintry,
+
+102
+00:06:09,800 --> 00:06:14,400
+I can invent a hand warmer just by doing some
+calculations on paper,
+
+103
+00:06:14,399 --> 00:06:19,019
+without driving to Texas to buy the stuff
+and do all kinds of expensive experiments.
+
+104
+00:06:19,019 --> 00:06:22,329
+For that, we have to thank good old Germain
+Hess.
+
+105
+00:06:22,329 --> 00:06:26,819
+No, not Hermann Hesse, the gaunt, balding
+Swiss author and poet.
+
+106
+00:06:26,819 --> 00:06:31,629
+Germain Hess, the gaunt, balding Swiss...
+uh...author and chemist.
+
+107
+00:06:31,629 --> 00:06:34,819
+Yeah, even the history parts of chemistry
+are confusing.
+
+108
+00:06:34,819 --> 00:06:40,360
+Hess was a chemist, geologist, professor, author, and doctor, and he also got a law named after him,
+
+109
+00:06:40,370 --> 00:06:43,350
+which is pretty much the higher honor you
+can get as a chemist:
+
+110
+00:06:43,350 --> 00:06:48,129
+Hess's Law, which also kind of led directly
+to the first law of thermodynamics.
+
+111
+00:06:48,129 --> 00:06:50,409
+Kind of a big deal.
+Not bad.
+
+112
+00:06:50,410 --> 00:06:55,660
+Hess's law says that the total enthalpy change for a reaction doesn't depend on the pathway it takes,
+
+113
+00:06:55,660 --> 00:06:58,040
+but only on its initial and final states.
+
+114
+00:06:58,040 --> 00:06:59,319
+Sounds pretty familiar, right?
+
+115
+00:06:59,319 --> 00:07:04,060
+As long as you start with the same reactants and end with the same products, the enthalpy change is the same.
+
+116
+00:07:04,060 --> 00:07:06,000
+In order to study this stuff carefully,
+
+117
+00:07:06,009 --> 00:07:10,418
+he looked at the standard enthalpies of formation
+of the reactants and the products of a reaction.
+
+118
+00:07:10,420 --> 00:07:14,560
+To define standard enthalpy of formation, I'm first going to define what a standard state is:
+
+119
+00:07:14,560 --> 00:07:19,780
+Basically it's just a set of criteria so that chemists can all be studying stuff under the same conditions.
+
+120
+00:07:19,779 --> 00:07:24,399
+Chemicals in their standard state are at 25
+degrees Celsius and one atmosphere.
+
+121
+00:07:24,399 --> 00:07:29,060
+Standard enthalpy of formation is the amount
+of heat lost or gained when one mole of a
+
+122
+00:07:29,060 --> 00:07:32,430
+compound is formed from its constituent elements.
+
+123
+00:07:32,430 --> 00:07:35,329
+And of course all of those elements have to
+be at their standard states.
+
+124
+00:07:35,339 --> 00:07:39,579
+Since absolute enthalpy is unknowable though,
+we have to be measuring from a baseline,
+
+125
+00:07:39,579 --> 00:07:44,589
+and that baseline is that individual elements'
+most stable form at standard state.
+
+126
+00:07:44,589 --> 00:07:48,009
+That most stable form is defined as zero.
+
+127
+00:07:48,009 --> 00:07:50,849
+Values for compounds are measured from that
+zero baseline,
+
+128
+00:07:50,850 --> 00:07:57,229
+and then standard state values can be used to calculate the enthalpy change for any reaction, even hypothetical ones.
+
+129
+00:07:57,228 --> 00:08:00,879
+Hess' Law is often stated in terms of standard
+enthalpies of formation.
+
+130
+00:08:00,879 --> 00:08:06,240
+The enthalpy change for a reaction is equal to the sum of the standard enthalpies of formation of the products,
+
+131
+00:08:06,240 --> 00:08:09,720
+minus the sum of the standard enthalpies of
+formation of the reactants.
+
+132
+00:08:09,720 --> 00:08:11,389
+Thanks to many hardworking chemists,
+
+133
+00:08:11,389 --> 00:08:14,978
+the standard enthalpy of formation has been
+measured for hundreds of compounds.
+
+134
+00:08:14,978 --> 00:08:17,728
+We can just look them up in charts and plug
+them into Hess' Law.
+
+135
+00:08:17,728 --> 00:08:21,139
+Speaking of which, here is Hess' Law as a
+mathematical formula.
+
+136
+00:08:21,139 --> 00:08:24,259
+Pretty fancy looking, but it says exactly
+the same thing.
+
+137
+00:08:24,259 --> 00:08:29,459
+The enthalpy change for a reaction equals the sum of the stand enthalpies of formation of the products
+
+138
+00:08:29,459 --> 00:08:32,828
+minus the sum of the standard enthalpies of
+formation of the reactants.
+
+139
+00:08:32,828 --> 00:08:38,479
+That pointy looking funny 'E' looking thing is the capital Greek letter Sigma(Σ) and it means, "the sum of."
+
+140
+00:08:38,480 --> 00:08:43,039
+np and nr are the moles of each product and
+reactant respectively.
+
+141
+00:08:43,049 --> 00:08:46,479
+We have to factor that in because remember
+the standard enthalpy of formation is measured
+
+142
+00:08:46,480 --> 00:08:47,949
+for just one mole of the substance.
+
+143
+00:08:47,948 --> 00:08:49,998
+If the chemical equation uses more than that,
+
+144
+00:08:50,000 --> 00:08:53,759
+we have to multiply the standard enthalpy of formation by the number of moles in the equation.
+
+145
+00:08:53,759 --> 00:08:56,939
+Again, I have just the thing for the calculating.
+
+146
+00:08:56,948 --> 00:08:58,719
+Exhibit A.
+A hand warmer.
+
+147
+00:08:58,720 --> 00:09:01,649
+It gets warm because of an exothermic chemical
+reaction.
+
+148
+00:09:01,649 --> 00:09:06,558
+And I'm very happy the inventors knew how
+ to calculate the enthalpy change of chemical reactions.
+
+149
+00:09:06,559 --> 00:09:13,379
+They chose one that releases just enough heat, quite slowly, to heat up my hand nice and warm without burning them off.
+
+150
+00:09:13,389 --> 00:09:17,110
+The reaction combines an iron powder, which
+is in here, and oxygen,
+
+151
+00:09:17,110 --> 00:09:20,318
+which diffuses through the membrane of the
+little packaging.
+
+152
+00:09:20,318 --> 00:09:23,628
+It forms Iron(III) Oxide, the main ingredient
+in rust.
+
+153
+00:09:23,629 --> 00:09:27,240
+To calculate the enthalpy change of the reaction,
+or heat of reaction,
+
+154
+00:09:27,240 --> 00:09:32,259
+we simply find the ΔHf of all of the reactants
+and products.
+
+155
+00:09:32,259 --> 00:09:36,240
+Either in the back of most textbooks or on
+Google and plug them into Hess' Law.
+
+156
+00:09:36,240 --> 00:09:40,259
+ΔHf of formation of iron and oxygen are zero
+by convention.
+
+157
+00:09:40,259 --> 00:09:42,179
+When in doubt, find them in the same table.
+
+158
+00:09:42,179 --> 00:09:48,318
+And ΔHf of formation of Iron(III) Oxide is
+listed as -826 kilojoules per mole.
+
+159
+00:09:48,318 --> 00:09:52,649
+First we have to make sure we balance the
+chemical equation, so do that number one.
+
+160
+00:09:52,649 --> 00:09:58,279
+Second, let's look at Hess' Law and figure out what our products are and what our reactants are and stick them in.
+
+161
+00:09:58,279 --> 00:10:01,879
+Then, plug in the number of moles for each
+of our products and reactants.
+
+162
+00:10:01,879 --> 00:10:07,249
+Bang on your calculator and realize the ΔH
+of the reaction is -1652 kilojoules.
+
+163
+00:10:07,249 --> 00:10:13,928
+So, the reaction of four moles of iron powder
+which is about 223 grams of iron releases
+
+164
+00:10:13,928 --> 00:10:16,788
+1652 kilojoules of heat.
+
+165
+00:10:16,788 --> 00:10:23,039
+All that energy locked away in chemical bonds and then released as heat to make my aching frozen fingers.
+
+166
+00:10:23,039 --> 00:10:24,779
+Better living through chemistry.
+
+167
+00:10:24,779 --> 00:10:27,579
+Thank you for watching this episode of Crash Course Chemistry. If you were paying attention,
+
+168
+00:10:27,580 --> 00:10:31,840
+today you learned what the state function is and how it varies from a path dependent function.
+
+169
+00:10:31,840 --> 00:10:36,700
+Why enthalpy change is different from heat, even though they turn out to be pretty much the same anyway.
+
+170
+00:10:36,700 --> 00:10:43,579
+That bonds are energy and to form and break them they release and absorb heat to and from their environment.
+
+171
+00:10:43,578 --> 00:10:47,118
+We gave you the most cursory introduction
+to calorimetry ever,
+
+172
+00:10:47,119 --> 00:10:50,778
+which we will remedy next time and discussed
+the power of Hess' Law
+
+173
+00:10:50,778 --> 00:10:54,049
+and how to use his concept of the standard
+enthalpy of formation
+
+174
+00:10:54,049 --> 00:10:58,529
+to calculate exactly how much heat is produced
+by any reaction ever.
+
+175
+00:10:58,529 --> 00:11:00,958
+This episode of Crash Course Chemistry was
+written by Edi Gonzalez and myself.
+
+176
+00:11:00,960 --> 00:11:05,480
+The script was edited by Blake de Pastino.
+And our chemistry consultant was Dr. Heiko Langner.
+
+177
+00:11:05,480 --> 00:11:08,249
+It was filmed, edited, and directed by Nicholas Jenkins.
+
+178
+00:11:08,249 --> 00:11:13,569
+Our script supervisor and sound designer is Michael Aranda. And our graphics team is Thought Cafe.
+

@@ -1,0 +1,737 @@
+1
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/L2IUSArpG98
+
+2
+00:00:00,499 --> 00:00:02,800
+Hello and welcome to Chapter 6.
+
+3
+00:00:02,800 --> 00:00:05,050
+This chapter, we're going
+to talk about strings.
+
+4
+00:00:05,050 --> 00:00:08,680
+And stuff is going to
+start to get real now.
+
+5
+00:00:08,680 --> 00:00:12,970
+So as always, this material,
+this video, these slides,
+
+6
+00:00:12,970 --> 00:00:15,500
+and what are copyright
+Creative Commons attribution.
+
+7
+00:00:15,500 --> 00:00:18,292
+I want you to use
+these materials.
+
+8
+00:00:18,292 --> 00:00:19,500
+I want to make more teachers.
+
+9
+00:00:19,500 --> 00:00:21,700
+So everyone can
+teach this stuff.
+
+10
+00:00:21,700 --> 00:00:23,990
+Use it however you like.
+
+11
+00:00:23,990 --> 00:00:26,740
+OK, so we've been playing with
+strings from the beginning.
+
+12
+00:00:26,740 --> 00:00:28,950
+I mean, literally, if we
+didn't work with strings,
+
+13
+00:00:28,950 --> 00:00:31,390
+we could have never
+printed "Hello, World."
+
+14
+00:00:31,390 --> 00:00:34,470
+And Lord knows we need
+to print Hello, World
+
+15
+00:00:34,470 --> 00:00:35,800
+in a programming language.
+
+16
+00:00:35,800 --> 00:00:39,640
+And so, we've been using
+them, especially constants.
+
+17
+00:00:39,640 --> 00:00:42,910
+Now in this chapter,
+we're going to dig in.
+
+18
+00:00:42,910 --> 00:00:43,670
+Oops.
+
+19
+00:00:43,670 --> 00:00:46,980
+So a string is a
+sequence of characters.
+
+20
+00:00:46,980 --> 00:00:50,410
+You can either use single quotes
+or double quotes in Python
+
+21
+00:00:50,410 --> 00:00:51,420
+to delimit a string.
+
+22
+00:00:51,420 --> 00:00:54,270
+And so, here's two string
+constants, hello and there,
+
+23
+00:00:54,270 --> 00:00:58,210
+and stuck into the variables
+stir one and stir two.
+
+24
+00:00:58,210 --> 00:01:00,560
+We can concatenate them
+together with a plus sign.
+
+25
+00:01:00,560 --> 00:01:03,860
+Python is smart enough to look
+and say, oh, those are strings.
+
+26
+00:01:03,860 --> 00:01:05,922
+I know what to do with those.
+
+27
+00:01:05,922 --> 00:01:08,380
+And you'll notice that the plus
+doesn't add any space here.
+
+28
+00:01:08,380 --> 00:01:11,750
+Because when we print
+"Bob" out, hello and there
+
+29
+00:01:11,750 --> 00:01:14,870
+are right next to one another.
+
+30
+00:01:14,870 --> 00:01:18,380
+If for example, when
+we're, like, reading
+
+31
+00:01:18,380 --> 00:01:19,780
+pay and rate and
+hours and stuff,
+
+32
+00:01:19,780 --> 00:01:20,946
+we've done some conversions.
+
+33
+00:01:20,946 --> 00:01:25,440
+So this an example of a string
+1-2-3, not 123, but the string,
+
+34
+00:01:25,440 --> 00:01:27,630
+quote, "123," quote.
+
+35
+00:01:27,630 --> 00:01:28,850
+And we can't add 1 to this.
+
+36
+00:01:28,850 --> 00:01:30,892
+We get a traceback.
+
+37
+00:01:30,892 --> 00:01:32,725
+We're kind of at this
+point, as we expected.
+
+38
+00:01:32,725 --> 00:01:34,920
+And we would convert
+that to an integer,
+
+39
+00:01:34,920 --> 00:01:36,819
+using the INT function
+that's built in.
+
+40
+00:01:36,819 --> 00:01:38,360
+See how much Python
+you already know?
+
+41
+00:01:38,360 --> 00:01:39,890
+I mean, this is awesome, right?
+
+42
+00:01:39,890 --> 00:01:42,040
+I can just say, oh, you
+call the INT function,
+
+43
+00:01:42,040 --> 00:01:43,640
+and you know what that is.
+
+44
+00:01:43,640 --> 00:01:45,855
+Sorry, I'm just awesomed out.
+
+45
+00:01:45,855 --> 00:01:48,010
+So you convert
+this to an integer.
+
+46
+00:01:48,010 --> 00:01:49,180
+And then, you add 1 to it.
+
+47
+00:01:49,180 --> 00:01:50,870
+And then, we get 124.
+
+48
+00:01:50,870 --> 00:01:52,370
+So there you go.
+
+49
+00:01:52,370 --> 00:01:54,730
+We've been doing strings
+all along, had to.
+
+50
+00:01:54,730 --> 00:01:57,150
+I mean, literally,
+strings and numeric data
+
+51
+00:01:57,150 --> 00:01:59,880
+are the two things that
+programs deal with.
+
+52
+00:01:59,880 --> 00:02:03,220
+So we've been reading
+and converting.
+
+53
+00:02:03,220 --> 00:02:05,880
+Again, this is a pattern from
+some of the earlier programs
+
+54
+00:02:05,880 --> 00:02:08,470
+where we do a raw input.
+
+55
+00:02:08,470 --> 00:02:10,040
+And the raw input
+just takes a string
+
+56
+00:02:10,040 --> 00:02:11,400
+and puts it in a variable.
+
+57
+00:02:11,400 --> 00:02:14,020
+So if I take "Chuck," then the
+variable contains the string
+
+58
+00:02:14,020 --> 00:02:20,000
+C-H-U-C-K. Even if we type
+numbers, that is a string.
+
+59
+00:02:20,000 --> 00:02:23,640
+Just because I put 1-0-0 in,
+I still can't subtract 10.
+
+60
+00:02:23,640 --> 00:02:25,180
+We get a happy little traceback.
+
+61
+00:02:25,180 --> 00:02:27,240
+Oh, happy, little,
+sad faced traceback.
+
+62
+00:02:27,240 --> 00:02:30,560
+
+63
+00:02:30,560 --> 00:02:33,470
+But of course, if we convert
+it INT or Float or something
+
+64
+00:02:33,470 --> 00:02:38,040
+like that, we can do
+that and subtract 10.
+
+65
+00:02:38,040 --> 00:02:39,470
+And we can do that.
+
+66
+00:02:39,470 --> 00:02:41,379
+So we've been doing
+this for a while.
+
+67
+00:02:41,379 --> 00:02:43,420
+We've been doing strings
+and manipulating strings
+
+68
+00:02:43,420 --> 00:02:45,079
+and converting
+strings all along.
+
+69
+00:02:45,079 --> 00:02:46,870
+So the thing we're
+going to start doing now
+
+70
+00:02:46,870 --> 00:02:48,670
+is we're going to
+dive into strings.
+
+71
+00:02:48,670 --> 00:02:52,210
+We realize that strings
+are addressable at
+
+72
+00:02:52,210 --> 00:02:53,620
+a character-by-character basis.
+
+73
+00:02:53,620 --> 00:02:56,440
+And we can do all kind
+of cool things with that.
+
+74
+00:02:56,440 --> 00:03:00,400
+And so, a string is a
+sequence of characters.
+
+75
+00:03:00,400 --> 00:03:03,280
+And we can look inside them,
+using what we call the index
+
+76
+00:03:03,280 --> 00:03:05,564
+operator, the square brackets.
+
+77
+00:03:05,564 --> 00:03:07,230
+And we've seen square
+brackets in lists.
+
+78
+00:03:07,230 --> 00:03:08,896
+And you'll see that
+they're similarities
+
+79
+00:03:08,896 --> 00:03:10,930
+between lists of numbers.
+
+80
+00:03:10,930 --> 00:03:12,900
+And in effect, a string
+as a special kind of
+
+81
+00:03:12,900 --> 00:03:14,340
+list of characters.
+
+82
+00:03:14,340 --> 00:03:19,220
+So we take the string "banana."
+
+83
+00:03:19,220 --> 00:03:21,140
+The first character starts at 0.
+
+84
+00:03:21,140 --> 00:03:24,060
+So we call this operator, "sub."
+
+85
+00:03:24,060 --> 00:03:26,616
+So letter equals fruit sub 1.
+
+86
+00:03:26,616 --> 00:03:27,990
+And that is the
+second character.
+
+87
+00:03:27,990 --> 00:03:29,680
+Now, this may seem
+a little weird
+
+88
+00:03:29,680 --> 00:03:32,630
+that the first character is
+a 0 and the second character
+
+89
+00:03:32,630 --> 00:03:34,220
+is a 1.
+
+90
+00:03:34,220 --> 00:03:36,990
+It actually is similar
+to the old elevator thing
+
+91
+00:03:36,990 --> 00:03:41,020
+where, in Europe, the first
+floor is zero, and then
+
+92
+00:03:41,020 --> 00:03:42,830
+negative one, and the
+second floor is one.
+
+93
+00:03:42,830 --> 00:03:43,480
+All right.
+
+94
+00:03:43,480 --> 00:03:44,670
+It's kind of the same thing.
+
+95
+00:03:44,670 --> 00:03:48,620
+Actually, it turns out that
+internally 0 is a better way
+
+96
+00:03:48,620 --> 00:03:51,120
+to start than 1.
+
+97
+00:03:51,120 --> 00:03:52,430
+You'll get used to it.
+
+98
+00:03:52,430 --> 00:03:55,000
+And then after a while, there's
+some little cool advantages
+
+99
+00:03:55,000 --> 00:03:55,680
+to it.
+
+100
+00:03:55,680 --> 00:03:59,855
+But for now, just
+beginning at 0.
+
+101
+00:03:59,855 --> 00:04:01,300
+It is the rule.
+
+102
+00:04:01,300 --> 00:04:02,960
+Just remember it.
+
+103
+00:04:02,960 --> 00:04:06,410
+OK, so the 0 is B,
+the 1 is A, the 2
+
+104
+00:04:06,410 --> 00:04:08,820
+is N, et cetera, et cetera.
+
+105
+00:04:08,820 --> 00:04:11,790
+And we call this
+syntax "fruit sub 1."
+
+106
+00:04:11,790 --> 00:04:16,160
+OK, so that is the sub
+1 character of fruit.
+
+107
+00:04:16,160 --> 00:04:18,220
+And then, that is
+an A. So that fruit
+
+108
+00:04:18,220 --> 00:04:21,990
+sub 1 says, look up in
+banana, find the 1 position,
+
+109
+00:04:21,990 --> 00:04:23,910
+and give me what's
+in that 1 position.
+
+110
+00:04:23,910 --> 00:04:25,870
+That's what the sub.
+
+111
+00:04:25,870 --> 00:04:29,710
+And what's inside these
+brackets can be an expression.
+
+112
+00:04:29,710 --> 00:04:33,860
+So if we set N to 3, N minus
+1, well, that'll compute to 2.
+
+113
+00:04:33,860 --> 00:04:37,160
+And then, fruit sub
+2 is the letter N.
+
+114
+00:04:37,160 --> 00:04:37,780
+All right?
+
+115
+00:04:37,780 --> 00:04:39,790
+So that's fruit sub 2.
+
+116
+00:04:39,790 --> 00:04:42,110
+It's the third
+character, fruit sub 2.
+
+117
+00:04:42,110 --> 00:04:44,330
+So the index starts at 0.
+
+118
+00:04:44,330 --> 00:04:49,850
+We read the brackets as sub,
+fruit sub 1, fruit sub 2.
+
+119
+00:04:49,850 --> 00:04:56,050
+Now, Python will complain to
+you if you use this sub operator
+
+120
+00:04:56,050 --> 00:04:57,870
+too far down the string.
+
+121
+00:04:57,870 --> 00:05:01,130
+Here is a character with
+3, which is 0, 1, and 2.
+
+122
+00:05:01,130 --> 00:05:05,430
+And if we go to
+sub 5, it blows up.
+
+123
+00:05:05,430 --> 00:05:08,850
+Now you know, by now, I hope
+that you're not freaking out
+
+124
+00:05:08,850 --> 00:05:10,280
+about traceback errors.
+
+125
+00:05:10,280 --> 00:05:12,660
+Remember, traceback
+errors are just
+
+126
+00:05:12,660 --> 00:05:14,585
+Python trying to inform you.
+
+127
+00:05:14,585 --> 00:05:18,800
+And if we just stop looking
+at that as mean Python face
+
+128
+00:05:18,800 --> 00:05:22,010
+and instead look at that
+as, oh, index error.
+
+129
+00:05:22,010 --> 00:05:23,870
+String index out of range.
+
+130
+00:05:23,870 --> 00:05:25,649
+Oh yeah, I stuck a 5 in there.
+
+131
+00:05:25,649 --> 00:05:26,440
+And there's only 3.
+
+132
+00:05:26,440 --> 00:05:29,110
+Ugh, my bad, thank you, Python.
+
+133
+00:05:29,110 --> 00:05:30,000
+Appreciate it.
+
+134
+00:05:30,000 --> 00:05:31,370
+Thanks for the help.
+
+135
+00:05:31,370 --> 00:05:34,890
+So think of this like--
+it's not a smiley face.
+
+136
+00:05:34,890 --> 00:05:37,830
+But it's kind of like
+a quizzical face.
+
+137
+00:05:37,830 --> 00:05:40,100
+Right, it's saying, eh, I
+don't So Python is confused,
+
+138
+00:05:40,100 --> 00:05:41,975
+and it's trying to tell
+you what is confused.
+
+139
+00:05:41,975 --> 00:05:42,940
+OK?
+
+140
+00:05:42,940 --> 00:05:44,910
+So don't look at
+these as sad faces.
+
+141
+00:05:44,910 --> 00:05:45,910
+Python doesn't hate you.
+
+142
+00:05:45,910 --> 00:05:50,120
+Python loves you,
+and loves me too.
+
+143
+00:05:50,120 --> 00:05:52,617
+So strings have
+individual characters
+
+144
+00:05:52,617 --> 00:05:54,450
+that we can address
+with the index operator.
+
+145
+00:05:54,450 --> 00:05:56,180
+They also have length.
+
+146
+00:05:56,180 --> 00:05:58,900
+And there is a built-in
+function called Len
+
+147
+00:05:58,900 --> 00:06:03,040
+that we can call and pass in
+as a parameter, the variable,
+
+148
+00:06:03,040 --> 00:06:03,960
+or a constant.
+
+149
+00:06:03,960 --> 00:06:06,060
+And it will tell us
+how many characters.
+
+150
+00:06:06,060 --> 00:06:08,990
+Now, this banana has
+six characters in it
+
+151
+00:06:08,990 --> 00:06:09,929
+that are 0 through 5.
+
+152
+00:06:09,929 --> 00:06:11,220
+So don't get a little confused.
+
+153
+00:06:11,220 --> 00:06:15,572
+The last character is sub 5, but
+it's also the sixth character.
+
+154
+00:06:15,572 --> 00:06:17,030
+So the length is
+really the length.
+
+155
+00:06:17,030 --> 00:06:20,290
+It's not length minus 1.
+
+156
+00:06:20,290 --> 00:06:22,150
+So Len is like a
+built-in function.
+
+157
+00:06:22,150 --> 00:06:23,850
+It's not a function
+we have to write.
+
+158
+00:06:23,850 --> 00:06:25,951
+As we talk about in
+the functions chapter,
+
+159
+00:06:25,951 --> 00:06:27,825
+there are things that
+are part of Python that
+
+160
+00:06:27,825 --> 00:06:28,783
+are just sitting there.
+

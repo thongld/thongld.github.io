@@ -1,0 +1,456 @@
+0
+00:00:05,179 --> 00:00:08,790
+Welcome back, and now things get fun.
+https://youtu.be/cAn3P2TYk3s
+1
+00:00:09,900 --> 00:00:13,210
+I will keep my hands tied a little bit because I want you to
+
+2
+00:00:13,210 --> 00:00:17,260
+first get a flavor of stuff before we do data analysis right?
+
+3
+00:00:17,260 --> 00:00:20,190
+So I&#39;m keeping data separate for the time being.
+
+4
+00:00:20,190 --> 00:00:23,680
+So now the question becomes, what else do we need to know?
+
+5
+00:00:23,680 --> 00:00:26,370
+We know return, we know risk.
+
+6
+00:00:26,370 --> 00:00:30,550
+We know mean returns, we like them, the higher the better.
+
+7
+00:00:30,550 --> 00:00:32,490
+We dislike standard deviations.
+
+8
+00:00:32,490 --> 00:00:34,000
+So what&#39;s left to talk about?
+
+9
+00:00:35,020 --> 00:00:41,810
+And that&#39;s where folks got Nobel Prizes, two of them, specific to this notion.
+
+10
+00:00:41,810 --> 00:00:43,140
+And, let&#39;s talk about it.
+
+11
+00:00:44,470 --> 00:00:46,240
+So, the question becomes,
+
+12
+00:00:46,240 --> 00:00:51,840
+if each one of us were holding just one security, are you holding IBM?
+
+13
+00:00:51,840 --> 00:00:55,550
+I was holding Xerox, we are done.
+
+14
+00:00:55,550 --> 00:00:59,030
+We know how to measure the return and risk of IBM.
+
+15
+00:00:59,030 --> 00:01:02,050
+Just get the data, calculate, and we&#39;ll do that in detail.
+
+16
+00:01:03,400 --> 00:01:06,050
+And I call to IBM and we are all having fun.
+
+17
+00:01:07,160 --> 00:01:11,350
+Turns out we are not a risk-loving people
+
+18
+00:01:11,350 --> 00:01:16,000
+because only a risk-loving people would put all their eggs in one basket.
+
+19
+00:01:16,000 --> 00:01:16,960
+What are we?
+
+20
+00:01:16,960 --> 00:01:17,900
+Risk averse.
+
+21
+00:01:19,090 --> 00:01:23,580
+So it becomes very complex, but beautiful at the same time.
+
+22
+00:01:23,580 --> 00:01:26,910
+So if we are risk averse, what will we hold?
+
+23
+00:01:26,910 --> 00:01:31,190
+We will never hold one thing.
+
+24
+00:01:31,190 --> 00:01:37,230
+We&#39;ll hold multiple things.
+
+25
+00:01:39,490 --> 00:01:40,620
+And who is we?
+
+26
+00:01:40,620 --> 00:01:41,230
+The investor.
+
+27
+00:01:42,450 --> 00:01:44,600
+Remember, we could be a manager of a company, but
+
+28
+00:01:44,600 --> 00:01:48,580
+we in our real life will also behave like that, in our investments, right?
+
+29
+00:01:48,580 --> 00:01:54,440
+So we hold a multiple thing, and that multiple thing is called portfolio.
+
+30
+00:01:56,310 --> 00:01:58,980
+And I&#39;m going to first give you intuition, and
+
+31
+00:01:58,980 --> 00:02:03,524
+then you&#39;ll go into a lot of detail on diversification because diversification
+
+32
+00:02:03,524 --> 00:02:07,330
+can get very complex with the math in there and so on.
+
+33
+00:02:07,330 --> 00:02:10,820
+But it&#39;s so intuitive that I want to go there.
+
+34
+00:02:10,820 --> 00:02:12,740
+So imagine, that you have IBM.
+
+35
+00:02:14,280 --> 00:02:17,550
+If you are holding only IBM what is its risk?
+
+36
+00:02:20,310 --> 00:02:22,545
+What is its expected return?
+
+37
+00:02:25,239 --> 00:02:28,370
+And let&#39;s put hats, because you estimate this.
+
+38
+00:02:28,370 --> 00:02:29,740
+Done.
+
+39
+00:02:29,740 --> 00:02:31,800
+But you&#39;re not holding IBM by itself.
+
+40
+00:02:32,815 --> 00:02:35,380
+You&#39;d be silly to hold IBM by itself.
+
+41
+00:02:35,380 --> 00:02:36,130
+Why?
+
+42
+00:02:36,130 --> 00:02:38,240
+Because if you&#39;re risk averse, what are you taking on?
+
+43
+00:02:39,740 --> 00:02:43,510
+Lots of risk, for no reason whatsoever, as you&#39;ll see.
+
+44
+00:02:43,510 --> 00:02:46,167
+Because we are risk averse what do we do?
+
+45
+00:02:46,167 --> 00:02:51,640
+We combine IBM with Xerox another company.
+
+46
+00:02:51,640 --> 00:02:54,230
+We combine it with Walmart.
+
+47
+00:02:56,360 --> 00:02:59,240
+We combine it with a lot of firms and
+
+48
+00:02:59,240 --> 00:03:04,890
+many times people buy index and this is becoming very common.
+
+49
+00:03:04,890 --> 00:03:06,320
+Index investing.
+
+50
+00:03:06,320 --> 00:03:10,080
+So, you could invest in a portfolio that looks like the S&amp;P 500.
+
+51
+00:03:11,750 --> 00:03:13,570
+What is S&amp;P 500?
+
+52
+00:03:13,570 --> 00:03:18,180
+Just for those who don&#39;t know it&#39;s Standard and Poor&#39;s 500 stocks.
+
+53
+00:03:18,180 --> 00:03:20,910
+Portfolio that trades, and you can follow it.
+
+54
+00:03:20,910 --> 00:03:22,655
+Go to Yahoo Finance, you can follow it.
+
+55
+00:03:22,655 --> 00:03:27,460
+You can also follow Dow Jones, you can follow, which has only 30, or 10,
+
+56
+00:03:27,460 --> 00:03:30,940
+depending on which one you&#39;re looking or, you can follow Russell&#39;s 2000,
+
+57
+00:03:30,940 --> 00:03:35,240
+which means, how many stocks are in there, and so on, and so forth.
+
+58
+00:03:35,240 --> 00:03:39,320
+So, people, hold, now, large portfolios, up to 500, and for two reasons.
+
+59
+00:03:39,320 --> 00:03:42,210
+One, that they want a portfolio
+
+60
+00:03:42,210 --> 00:03:44,565
+because they don&#39;t want to put everything in one basket.
+
+61
+00:03:44,565 --> 00:03:46,738
+But, why S&amp;P 500?
+
+62
+00:03:46,738 --> 00:03:53,590
+Because you could hold only 60 stocks, but you&#39;ll have to pick them up individually.
+
+63
+00:03:53,590 --> 00:03:56,820
+So if you&#39;re going to pick them up individually you might as well hold
+
+64
+00:03:56,820 --> 00:04:01,242
+an existing portfolio because transaction costs will go down drastically.
+
+65
+00:04:01,242 --> 00:04:07,310
+So Vanguard among others started this whole wave and
+
+66
+00:04:07,310 --> 00:04:14,730
+this is a very controversial issue is that a lot of investing companies are creating
+
+67
+00:04:14,730 --> 00:04:19,320
+portfolios where it&#39;s not very obvious they&#39;re giving you more returns.
+
+68
+00:04:19,320 --> 00:04:22,000
+They are doing it because they are making money every time you
+
+69
+00:04:22,000 --> 00:04:25,510
+turn a portfolio that is buy and sell stocks within.
+
+70
+00:04:25,510 --> 00:04:28,860
+The transaction costs are paid by you, but who&#39;s making money?
+
+71
+00:04:28,860 --> 00:04:30,284
+The broker, both sides.
+
+72
+00:04:30,284 --> 00:04:32,974
+Whether you&#39;re selling for a gain or
+
+73
+00:04:32,974 --> 00:04:37,333
+selling because you worry about loss or whatever, right?
+
+74
+00:04:37,333 --> 00:04:38,430
+So S&amp;P 500.
+
+75
+00:04:38,430 --> 00:04:40,070
+But how many stocks are there?
+
+76
+00:04:40,070 --> 00:04:41,470
+500 in the S&amp;P 500.
+
+77
+00:04:41,470 --> 00:04:44,920
+I actually asked this in class and, how many stocks are in?
+
+78
+00:04:46,640 --> 00:04:50,280
+So, what happens then?
+
+79
+00:04:50,280 --> 00:04:54,880
+So think of IBM now, not by itself, but
+
+80
+00:04:54,880 --> 00:04:58,620
+within a portfolio of 500 and
+
+81
+00:04:58,620 --> 00:05:03,420
+that changes the definition of risk of IBM.
+
+82
+00:05:03,420 --> 00:05:09,970
+IBM&#39;s risk can no longer be just its own standard deviation, it turns out.
+
+83
+00:05:09,970 --> 00:05:12,310
+And I&#39;m jumping ahead, and we&#39;ll come back to it,
+
+84
+00:05:12,310 --> 00:05:16,700
+because it&#39;s really cool, really awesome but also a little bit complex.
+
+85
+00:05:18,020 --> 00:05:22,045
+IBM&#39;s risk no longer is it&#39;s standard deviation, but
+
+86
+00:05:22,045 --> 00:05:28,280
+it&#39;ll depend on how IBM fits in this portfolio.
+
+87
+00:05:28,280 --> 00:05:35,264
+In other words, it will depend the return of IBM relates to the other 499.
+
+88
+00:05:37,020 --> 00:05:38,180
+One more time.
+
+89
+00:05:38,180 --> 00:05:44,890
+If you were holding IBM to return by itself, its risk is very obvious.
+
+90
+00:05:44,890 --> 00:05:49,090
+But you&#39;ll never, you&#39;ll always hold it in a portfolio.
+
+91
+00:05:49,090 --> 00:05:54,780
+Once it&#39;s in a portfolio, the movements of IBM that are relevant will
+
+92
+00:05:54,780 --> 00:05:59,980
+become those that are related to the other stocks and not the movement by itself.
+
+93
+00:06:01,690 --> 00:06:05,450
+And recall, I said there are two types of risks, market risks and
+
+94
+00:06:05,450 --> 00:06:08,320
+specific risks and it&#39;s related to that.
+
+95
+00:06:09,460 --> 00:06:14,850
+So what I am going to do now is statistics needed to understand how to measure
+
+96
+00:06:14,850 --> 00:06:20,190
+relationships because IBM will never be held by itself but in a portfolio.
+
+97
+00:06:20,190 --> 00:06:25,840
+And once in a portfolio its relationships with things inside the portfolio
+
+98
+00:06:25,840 --> 00:06:29,850
+start mattering and we&#39;ll come back measure them conceptually.
+
+99
+00:06:30,920 --> 00:06:33,410
+We&#39;ll wrap up stuff with that stuff for
+
+100
+00:06:33,410 --> 00:06:37,830
+this segment, which is, I would say more on the conceptual side.
+
+101
+00:06:37,830 --> 00:06:40,010
+But as I said, if you don&#39;t know concept,
+
+102
+00:06:40,010 --> 00:06:44,460
+especially in risk and return, if you don&#39;t know why we are studying them,
+
+103
+00:06:44,460 --> 00:06:50,010
+you&#39;ll have a tough time just implementing or worse, you&#39;ll be thrilled with
+
+104
+00:06:50,010 --> 00:06:54,290
+the statistics with the data I gave you, but you won&#39;t know why you&#39;re doing it.
+
+105
+00:06:54,290 --> 00:06:56,840
+I think the second problem is worse.
+
+106
+00:06:56,840 --> 00:07:02,300
+I worry about being able to execute without understanding a lot more
+
+107
+00:07:02,300 --> 00:07:07,280
+than a person who comes and says, you know I would rather understand what I&#39;m going
+
+108
+00:07:07,280 --> 00:07:11,510
+to do with the data before I start running with it.
+
+109
+00:07:11,510 --> 00:07:13,620
+There&#39;s a lot of data available.
+
+110
+00:07:13,620 --> 00:07:16,620
+It&#39;s awesome, but it&#39;s also very scary.
+
+111
+00:07:16,620 --> 00:07:21,500
+The amount of not thoughtful analysis done even at the best of institutions
+
+112
+00:07:22,520 --> 00:07:27,730
+which led the data dictate the analysis rather than thinking is scary.
+
+113
+00:07:27,730 --> 00:07:29,380
+See you soon.
+

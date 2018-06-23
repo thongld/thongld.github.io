@@ -1,0 +1,963 @@
+0
+00:00:00,000 --> 00:00:00,001
+phungdo_vgu http://youtu.be/kgABPjf9qLI
+
+1
+00:00:00,000 --> 00:00:00,405
+
+2
+00:00:00,405 --> 00:00:03,030
+GS. Valvano: Chúng ta sẽ học gì
+trong video này nhỉ?
+
+3
+00:00:03,030 --> 00:00:04,800
+TS. Yerraballi: Ta sẽ cố gắng thấu hiểu
+cách hoạt động của
+
+4
+00:00:04,800 --> 00:00:06,640
+máy trạng thái hữu hạn.
+
+5
+00:00:06,640 --> 00:00:08,350
+Ta sẽ bắt đầu từ đầu.
+
+6
+00:00:08,350 --> 00:00:13,250
+Ta đang xem xét một ví dụ của
+hệ thống đèn giao thông.
+
+7
+00:00:13,250 --> 00:00:19,140
+Ta mắc một đèn giao thông 
+đến board Launchpad.
+
+8
+00:00:19,140 --> 00:00:22,580
+Ta có 2 inputs.
+
+9
+00:00:22,580 --> 00:00:25,380
+Chỗ này là inputs.
+
+10
+00:00:25,380 --> 00:00:26,620
+Có 6 outputs.
+
+11
+00:00:26,620 --> 00:00:29,170
+
+12
+00:00:29,170 --> 00:00:32,570
+Inputs này là inputs 2-bit.
+
+13
+00:00:32,570 --> 00:00:37,060
+Output của ta là 
+output 6-bit.
+
+14
+00:00:37,060 --> 00:00:41,300
+6 outputs là 2 đèn đỏ,
+2 đèn vàng và  2 đèn xanh.
+
+15
+00:00:41,300 --> 00:00:47,230
+2 inputs là 2 cảm biến phát hiện xe
+ở hướng Bắc và hướng Đông.
+
+16
+00:00:47,230 --> 00:00:50,870
+Cùng tìm hiểu xem ý nghĩa
+của các inputs khác nhau là gì.
+
+17
+00:00:50,870 --> 00:01:00,140
+Đầu tiên, ta có input 00, về cơ bản
+nghĩa là đang không có oto nào.
+
+18
+00:01:00,140 --> 00:01:09,690
+Một input 01, có nghĩa là đang có
+xe ở hướng Đông - East.
+
+19
+00:01:09,690 --> 00:01:15,070
+Khi ta có input là 10, 
+điều đó cho ta biết
+
+20
+00:01:15,070 --> 00:01:19,010
+đang có xe ở hướng Bắc
+- North direction.
+
+21
+00:01:19,010 --> 00:01:23,190
+Và cũng có khả năng
+là có input 11, nghĩa là
+
+22
+00:01:23,190 --> 00:01:27,530
+đang có xe ở cả 
+2 hướng/đường.
+
+23
+00:01:27,530 --> 00:01:32,160
+Đó là ý nghĩa của 2-bit inputs.
+
+24
+00:01:32,160 --> 00:01:35,154
+GS. Valvano, vậy làm cách nào để
+ta vẽ cái biểu đồ-graph này?
+
+25
+00:01:35,154 --> 00:01:37,320
+TS. Yerraballi: Cái ta cần hiểu 
+
+26
+00:01:37,320 --> 00:01:39,830
+là state-trạng thái nào mà ta có thể 
+tự tìm thấy mình trong đó.
+
+27
+00:01:39,830 --> 00:01:41,970
+Ta phải bắt đầu với vài trạng thái-state ban đầu.
+
+28
+00:01:41,970 --> 00:01:48,210
+Giả định rằng ta quan tâm đến
+giao thông hướng Bắc.
+
+29
+00:01:48,210 --> 00:01:55,070
+Vậy thì state-trạng thái ban đầu
+ta đặt là Đi Hướng Bắc.
+
+30
+00:01:55,070 --> 00:01:58,190
+Vậy tình hướng có thể xảy ra bây giờ là?
+
+31
+00:01:58,190 --> 00:02:02,680
+Ta đang trong state này, và ta
+có thể có nhiều inputs khả thi này.
+
+32
+00:02:02,680 --> 00:02:08,539
+Nếu tôi đang ở state GoN, 
+và nếu đang KHÔNG có xe nào,
+
+33
+00:02:08,539 --> 00:02:11,700
+thì không có gì chứng minh
+việc thay đổi trạng thái của hệ thống.
+
+34
+00:02:11,700 --> 00:02:14,950
+Ta vẫn sẽ ở GoN.
+
+35
+00:02:14,950 --> 00:02:21,180
+Mặt khác, nếu ta có input mà nó cho 
+biết đang có tranh giành giao thông
+
+36
+00:02:21,180 --> 00:02:25,100
+ở hướng Bắc, nghĩa là ta đã đặt 
+cho đường North một GoN
+
+37
+00:02:25,100 --> 00:02:29,200
+-Đi Tiếp North, và đang có
+một xe ở hướng Bắc.
+
+38
+00:02:29,200 --> 00:02:33,040
+Tôi tiếp tục đặt state tiếp theo là GoN.
+
+39
+00:02:33,040 --> 00:02:38,110
+Bây giờ thì có khả năng ta
+có xe ở hướng Đông-East.
+
+40
+00:02:38,110 --> 00:02:44,920
+Vì ta đã cho quyền ưu tiên
+để tham gia vào lưu thông hướng Bắc,
+
+41
+00:02:44,920 --> 00:02:50,530
+ta nên cúi mình và cho 
+hướng Đông quyền lưu thông.
+
+42
+00:02:50,530 --> 00:02:53,630
+Điều ta làm là đi thông qua một
+trạng thái đợi-wait state.
+
+43
+00:02:53,630 --> 00:02:59,330
+Vì vậy, ta đợi đường Bắc-North
+một chút.
+
+44
+00:02:59,330 --> 00:03:03,830
+Điều này về cơ bản là
+thắp sáng đèn vàng.
+
+45
+00:03:03,830 --> 00:03:07,930
+Và rồi, ta sẽ đi tuần tự đến 
+các trạng thái-state khác.
+
+46
+00:03:07,930 --> 00:03:10,510
+Bây giờ, nếu có xe đang đi
+cả hai hướng,
+
+47
+00:03:10,510 --> 00:03:14,405
+Ta cũng sẽ làm điều tương tự, 
+vì ta cho ưu tiên hướng Bắc rồi.
+
+48
+00:03:14,405 --> 00:03:18,350
+Ta sẽ đợi trong đường Bắc.
+
+49
+00:03:18,350 --> 00:03:24,170
+Xin hỏi một câu, Ta cần xuất ra giá
+trị output thế nào khi đang ở đường Bắc>
+
+50
+00:03:24,170 --> 00:03:34,900
+Đầu ra phải tương ứng với sự thật là 
+đang có một đèn đỏ ngay ở đường East
+
+51
+00:03:34,900 --> 00:03:42,550
+và một đèn xanh ở hướng North.
+
+52
+00:03:42,550 --> 00:03:43,550
+đó là những gì ta biết
+
+53
+00:03:43,550 --> 00:03:47,680
+Vậy hãy xuất ra một output 
+mà tương ứng với điều đó.
+
+54
+00:03:47,680 --> 00:03:56,260
+Và output đó có giá trị 
+là 10 0001.
+
+55
+00:03:56,260 --> 00:04:00,770
+Ta đã xử lý xong state đầu tiên.
+
+56
+00:04:00,770 --> 00:04:06,180
+Khi làm việc này, ta cũng đã tạo một
+state khác, đó là Wait-North.
+
+57
+00:04:06,180 --> 00:04:09,380
+Bắt tay xử lý state đó nào,
+state đó chỉ ra
+
+58
+00:04:09,380 --> 00:04:14,720
+có một khả năng mà ta đang ở
+trong state Wait-North.
+
+59
+00:04:14,720 --> 00:04:18,050
+State Wait-North nói ta biết
+rằng ta đang
+
+60
+00:04:18,050 --> 00:04:23,780
+tự yield để đường East 
+có một cơ hội.
+
+61
+00:04:23,780 --> 00:04:27,210
+Cùng xem xem cái gì có thể xảy ra bây giờ.
+
+62
+00:04:27,210 --> 00:04:35,030
+Đầu tiên, ta biết rằng output 
+phải bằng 10 0010, có nghĩa là
+
+63
+00:04:35,030 --> 00:04:41,320
+đèn Vàng trên đường North.
+
+64
+00:04:41,320 --> 00:04:45,240
+Bây giờ, hãy xử lý điều diễn ra
+ở trong state này.
+
+65
+00:04:45,240 --> 00:04:48,560
+Đó là một dạng 
+state in-between.
+
+66
+00:04:48,560 --> 00:04:50,644
+Đó là, ta đang dịch chuyển.
+
+67
+00:04:50,644 --> 00:04:52,060
+We're going to wait in this state.
+
+68
+00:04:52,060 --> 00:04:54,110
+Sau khoảng thời gian, 
+ta sẽ di chuyển
+
+69
+00:04:54,110 --> 00:04:58,980
+đến state trước đó, đó là
+cấp quyền cho các hướng đi khác.
+
+70
+00:04:58,980 --> 00:05:02,560
+Ta có East-on nếu không có xe nào.
+
+71
+00:05:02,560 --> 00:05:06,550
+Nếu có xe ở trên đường East, 
+ta Go-East.
+
+72
+00:05:06,550 --> 00:05:08,750
+Nếu đang có xe
+trên đường North,
+
+73
+00:05:08,750 --> 00:05:12,870
+ta vẫn Go-East vì ta vừa chỉ 
+mới đến từ state đó.
+
+74
+00:05:12,870 --> 00:05:17,830
+Ta cũng Go-East trong state này.
+
+75
+00:05:17,830 --> 00:05:22,000
+Đây là state thứ hai.
+
+76
+00:05:22,000 --> 00:05:25,040
+Hãy nhìn vào state mới mà 
+ta vừa thêm vào.
+
+77
+00:05:25,040 --> 00:05:28,030
+State mới là Go-East.
+
+78
+00:05:28,030 --> 00:05:30,810
+Go-East bắt chước Go-North.
+
+79
+00:05:30,810 --> 00:05:34,950
+Output của Go-East nên bằng mấy?
+
+80
+00:05:34,950 --> 00:05:41,910
+Output Go-E phải bằng 001100.
+
+81
+00:05:41,910 --> 00:05:47,970
+Cơ bản là thể hiện ra
+đang có đèn đỏ ở đường North,
+
+82
+00:05:47,970 --> 00:05:54,140
+và ta có đèn xanh ở đường East.
+
+83
+00:05:54,140 --> 00:05:57,380
+Cứ thể tiếp tục và
+lấp đầy các output còn lại.
+
+84
+00:05:57,380 --> 00:06:02,370
+Giờ ta nói rằng, nếu không có xe
+ta vẫn ở Go-East.
+
+85
+00:06:02,370 --> 00:06:07,070
+Nếu đang có xe ở đường East,
+ta vẫn ở Go-East.
+
+86
+00:06:07,070 --> 00:06:11,650
+Và nếu đang có xe 
+comes up on đường North,
+
+87
+00:06:11,650 --> 00:06:14,820
+thì ta phải chuyển trạng thái,
+như đã làm lúc trước.
+
+88
+00:06:14,820 --> 00:06:19,560
+Ta phải đi thông qua một 
+state trung gian, đó là Wait-East,
+
+89
+00:06:19,560 --> 00:06:23,420
+nơi mà ta bật đèn vàng 
+trên đường East.
+
+90
+00:06:23,420 --> 00:06:25,120
+rồi ta tuần tự đi ra khỏi.
+
+91
+00:06:25,120 --> 00:06:28,690
+Chỗ này cũng là state Wait-East.
+
+92
+00:06:28,690 --> 00:06:32,850
+vì đang có xe lưu thông trên cả
+hai đường, mà đã được giới thiệu
+
+93
+00:06:32,850 --> 00:06:35,160
+state cuối cùng.
+
+94
+00:06:35,160 --> 00:06:37,040
+State cuối cùng là một Wait-East.
+
+95
+00:06:37,040 --> 00:06:40,500
+
+96
+00:06:40,500 --> 00:06:45,210
+Và ta sẽ xuất ra một output
+tương ứng với nó,
+
+97
+00:06:45,210 --> 00:06:51,530
+bằng 010100.
+
+98
+00:06:51,530 --> 00:06:56,510
+Một lần nữa, về cơ bản
+đó là một đèn vàng ở đường này.
+
+99
+00:06:56,510 --> 00:06:58,500
+Tiếp tục và lấp đầy
+các output còn lại.
+
+100
+00:06:58,500 --> 00:07:00,610
+Phần còn lại khá
+dễ đơn giản.
+
+101
+00:07:00,610 --> 00:07:03,070
+vì ta đang trong một state chuyển tiếp.
+
+102
+00:07:03,070 --> 00:07:06,370
+Một cách tuần tự, ta sẽ
+đến Go-North, không quan tâm
+
+103
+00:07:06,370 --> 00:07:08,060
+state ta đang ở.
+
+104
+00:07:08,060 --> 00:07:12,380
+
+105
+00:07:12,380 --> 00:07:18,150
+Giờ ta có một bức tranh về
+cách hệ thống nên vận hành.
+
+106
+00:07:18,150 --> 00:07:24,010
+Thực tế, ta có thể vẽ 
+một biểu đồ FSM ngay.
+
+107
+00:07:24,010 --> 00:07:25,710
+Đây là một bảng.
+
+108
+00:07:25,710 --> 00:07:30,540
+Biểu đồ FSM đơn giản là
+nơi thể hiện của cùng một thông tin
+
+109
+00:07:30,540 --> 00:07:32,140
+bằng cách đồ hoạ.
+
+110
+00:07:32,140 --> 00:07:37,200
+Cùng nhìn vào biểu đồ FSM, đó là
+một màn trình diễn trực quan cho bảng này.
+
+111
+00:07:37,200 --> 00:07:41,080
+Ta có state Go-North.
+
+112
+00:07:41,080 --> 00:07:43,150
+ta biết output của state
+bằng bao nhiêu.
+
+113
+00:07:43,150 --> 00:07:46,550
+Tôi sẽ viết output này dưới dạng hex.
+
+114
+00:07:46,550 --> 00:07:52,734
+Bằng 0x21, đó là một giá trị 
+cơ bản ở ngay đây.
+
+115
+00:07:52,734 --> 00:07:55,650
+TS. Valvano: Ta sẽ ở trong 
+state đó bao lâu?
+
+116
+00:07:55,650 --> 00:07:57,850
+TS. Yerraballi: Vì ta phải
+dwell trong state này
+
+117
+00:07:57,850 --> 00:08:02,830
+một khoảng thời gian, 
+Khoảng thời gian lưu trú
+
+118
+00:08:02,830 --> 00:08:04,317
+là 3000
+
+119
+00:08:04,317 --> 00:08:06,150
+TS. VALVANO: 
+3000 nhân 10 mili giây.
+
+120
+00:08:06,150 --> 00:08:08,108
+TS. Yerraballi:
+nhân với 10 mili giây.
+
+121
+00:08:08,108 --> 00:08:10,510
+bằng với 3 giây delay.
+
+122
+00:08:10,510 --> 00:08:15,940
+Và rồi ta sẽ chuyển ra state khác
+vì input yêu cầu.
+
+123
+00:08:15,940 --> 00:08:28,270
+Ta nói rằng một input 00 hoặc 10,
+thì ta sẽ ở yên trong state cùng loại.
+
+124
+00:08:28,270 --> 00:08:38,630
+Khi có input 01 hoặc 11, ta
+sẽ chuyển sang state mới.
+
+125
+00:08:38,630 --> 00:08:41,279
+Đây là state wait-north.
+
+126
+00:08:41,279 --> 00:08:45,510
+
+127
+00:08:45,510 --> 00:08:51,490
+Output mà ta xuất ra khi đến 
+state này là 0x22.
+
+128
+00:08:51,490 --> 00:08:59,410
+Thời gian lưu trú ở đây là 500,
+= 0.5 giây.
+
+129
+00:08:59,410 --> 00:09:02,500
+Một lần nữa, ta phải tính đến
+tất cả input ở đây.
+
+130
+00:09:02,500 --> 00:09:09,910
+Bất kì input nào, không kể là
+00, 01, 10 hay 11-
+
+131
+00:09:09,910 --> 00:09:17,880
+đều đưa ta đến cùng một state mới
+đó là Go-East.
+
+132
+00:09:17,880 --> 00:09:24,460
+Output mà ta xuất ra ở đây bằng 0x0C.
+0000 1100
+
+133
+00:09:24,460 --> 00:09:29,970
+Và thời gian lưu trú là
+3000 = 3 giây.
+
+134
+00:09:29,970 --> 00:09:40,210
+Một lần nữa, nếu ta có input là 00
+hoặc 01, thì lại vẫn ở nguyên trạng thái cũ.
+
+135
+00:09:40,210 --> 00:09:57,270
+Với input bằng 10 hoặc 11 thì sẽ đưa ta
+đến statw Wait-East.
+
+136
+00:09:57,270 --> 00:10:01,670
+Bây giờ ta phải hoàn thành 
+state Wait-East.
+
+137
+00:10:01,670 --> 00:10:07,070
+Output của state này là 0x14.
+0001 0100
+
+138
+00:10:07,070 --> 00:10:09,830
+Thời gian lưu trú là 0.5 giây.
+
+139
+00:10:09,830 --> 00:10:14,300
+ta biết rằng bất kì giá trị
+input nào mà ta có ở đây,
+
+140
+00:10:14,300 --> 00:10:24,080
+ta đều đi từ state wait-east này đến
+state go-north, nếu ta có 00, 01, 10 hay 11.
+
+141
+00:10:24,080 --> 00:10:32,950
+cái ta thấy là đang có sự
+mối quan hệ tương ứng 1-1
+
+142
+00:10:32,950 --> 00:10:36,010
+giữa bảng này và sơ đồ FSM.
+
+143
+00:10:36,010 --> 00:10:40,480
+Thực tế, ta sẽ thấy một sự tương ứng
+1-1 giữa những thứ này và
+
+144
+00:10:40,480 --> 00:10:44,400
+phần mềm ta chuẩn bị viết.
+
+145
+00:10:44,400 --> 00:10:49,140
+Cũng hoàn thành cái mối 
+quan hệ 1-1 giữa sơ đồ
+
+146
+00:10:49,140 --> 00:10:51,210
+và phần mềm thực nào.
+
+147
+00:10:51,210 --> 00:10:53,500
+Ta dùng khoảng trống ở đây.
+
+148
+00:10:53,500 --> 00:10:58,980
+Tôi muốn show phần mềm.
+
+149
+00:10:58,980 --> 00:11:02,000
+Cách mà ta làm việc này, --chắc chắn
+
+150
+00:11:02,000 --> 00:11:04,150
+sẽ có vài thiếu sót.
+
+151
+00:11:04,150 --> 00:11:06,840
+Nhưng ta có khả năng có được hết tất cả.
+
+152
+00:11:06,840 --> 00:11:13,270
+Hãy đưa nó lên.
+
+153
+00:11:13,270 --> 00:11:16,160
+Đây là phần mềm.
+
+154
+00:11:16,160 --> 00:11:18,355
+Ta có một loại state.
+
+155
+00:11:18,355 --> 00:11:20,910
+
+156
+00:11:20,910 --> 00:11:23,560
+FSM có 4 states.
+
+157
+00:11:23,560 --> 00:11:25,850
+ those are our four states.
+
+158
+00:11:25,850 --> 00:11:30,160
+Mỗi state, ta có một output.
+
+159
+00:11:30,160 --> 00:11:35,150
+đây là output cho state đầu tiên,
+state GoN.
+
+160
+00:11:35,150 --> 00:11:36,870
+Đây là state đầu tiên.
+
+161
+00:11:36,870 --> 00:11:37,930
+Đánh dấu chỗ này 0.
+
+162
+00:11:37,930 --> 00:11:38,900
+Chỗ này 1.
+
+163
+00:11:38,900 --> 00:11:39,895
+Chỗ này 2.
+
+164
+00:11:39,895 --> 00:11:40,770
+Chỗ này 3.
+
+165
+00:11:40,770 --> 00:11:44,580
+Đó là các index trong 
+mảng có 4 phần tử.
+
+166
+00:11:44,580 --> 00:11:47,260
+State đầu tiên có 1 output.
+
+167
+00:11:47,260 --> 00:11:51,360
+Có một delay, 3000.
+
+168
+00:11:51,360 --> 00:11:55,570
+và nó có những state tiếp theo
+dựa vào từng input.
+
+169
+00:11:55,570 --> 00:11:59,790
+Input 00 thì ta đi đến GoN, 
+ta viết nó xuống.
+
+170
+00:11:59,790 --> 00:12:04,710
+Input 01, đi đến WaitN.
+
+171
+00:12:04,710 --> 00:12:08,220
+Input 10, đi đến GoN.
+
+172
+00:12:08,220 --> 00:12:14,450
+Input 11, đi đến WaitN.
+
+173
+00:12:14,450 --> 00:12:18,870
+TS. VALVANO: Nên chú ý
+sự tương tự giữa bảng và 
+
+174
+00:12:18,870 --> 00:12:21,310
+các dòng code trong software.
+
+175
+00:12:21,310 --> 00:12:22,320
+Có thấy không?
+
+176
+00:12:22,320 --> 00:12:25,445
+Nó giống nhau đó.
+
+177
+00:12:25,445 --> 00:12:27,570
+TS. YERRABALLI:
+Đó là phần tử đầu tiên.
+
+178
+00:12:27,570 --> 00:12:33,180
+Phần tử thứ hai sẽ 
+tương ứng với WaitN.
+
+179
+00:12:33,180 --> 00:12:34,630
+Đóng ngoặc nhọn này lại.
+
+180
+00:12:34,630 --> 00:12:36,100
+Đóng ngoặc nhọn này luôn.
+
+181
+00:12:36,100 --> 00:12:37,800
+Ta đã có phần tử đầu tiên.
+
+182
+00:12:37,800 --> 00:12:42,700
+Phần tử thứ hai, output là 0x22,
+
+183
+00:12:42,700 --> 00:12:45,940
+Nó ngay chỗ này,
+và giống với chỗ này nữa
+
+184
+00:12:45,940 --> 00:12:50,190
+0x22 = 0010 0010, delay 500.
+
+185
+00:12:50,190 --> 00:12:53,490
+Ta viết danh sách từ hàng này vào.
+
+186
+00:12:53,490 --> 00:13:02,890
+Danh sách đó: GoE, GoE, GoE, GoE.
+
+187
+00:13:02,890 --> 00:13:06,850
+Đóng ngoặc nhọn lại, 
+và ta đã có phần tử thứ hai.
+
+188
+00:13:06,850 --> 00:13:12,990
+Phần tử thứ 3 là
+vị trí index 2.
+
+189
+00:13:12,990 --> 00:13:18,740
+Output tương ứng là 0x0C.
+0000 1100.
+
+190
+00:13:18,740 --> 00:13:22,370
+Duration là 3000.
+
+191
+00:13:22,370 --> 00:13:26,470
+Ta có ouput rồi, 
+giờ là các state tiếp diễn,
+
+192
+00:13:26,470 --> 00:13:37,190
+chúng là GoE, GoE, WaitE và WaitE.
+
+193
+00:13:37,190 --> 00:13:39,140
+Đóng ngoặc lại.
+
+194
+00:13:39,140 --> 00:13:43,310
+Ta đã đến với phần tử cuối, 
+
+195
+00:13:43,310 --> 00:13:51,550
+ouput bằng 0x14,
+dwell time bằng 500, 0.5 giây.
+
+196
+00:13:51,550 --> 00:13:56,590
+State tiếp theo luôn là GoN,
+mặc kệ input.
+
+197
+00:13:56,590 --> 00:13:59,212
+
+198
+00:13:59,212 --> 00:14:00,920
+TS. Valvano: Điều ta thấy ở đây là
+
+199
+00:14:00,920 --> 00:14:06,770
+mapping 1-1 giữa sơ đồ trạng thái 
+trong bức hoạ này, và
+
+200
+00:14:06,770 --> 00:14:09,840
+bảng chuyển trạng thái,
+và
+
+201
+00:14:09,840 --> 00:14:13,750
+phần mềm ta lập trình vào trong 
+uC Tiva C Launchpad.
+
+202
+00:14:13,750 --> 00:14:21,130
+TS. Yerraballi: bảng chuyển state,
+sơ đồ FSM là giống nhau.
+
+203
+00:14:21,130 --> 00:14:24,270
+Sơ đồ FSM và phần mềm là giống nhau.
+
+204
+00:14:24,270 --> 00:14:28,070
+Phần mềm và bảng chuyển state là giống nhau.
+
+205
+00:14:28,070 --> 00:14:32,030
+Ta bắt đầu với một trong 3 thứ này.
+
+206
+00:14:32,030 --> 00:14:35,580
+Lý tướng nhất là ta sẽ bắt đầu
+với một ý tưởng rất rõ ràng.
+
+207
+00:14:35,580 --> 00:14:38,100
+ta bắt đầu ở đây.
+
+208
+00:14:38,100 --> 00:14:41,880
+Ta thấy được sự trực quan ở đây.
+
+209
+00:14:41,880 --> 00:14:44,274
+Và ta phát triển nó ở đây.
+
+210
+00:14:44,274 --> 00:14:46,940
+TS. VALVANO: tuyệt đấy.
+
+211
+00:14:46,940 --> 00:14:51,350
+Và bạn có thể thấy phần mềm chạy 
+thực tế sau, cũng trong mục này.
+
+212
+00:14:51,350 --> 00:14:54,883
+Nhưng đây là cách ta phác thảo
+FSM máy trạng thái hữu hạn.
+
+213
+00:14:54,883 --> 00:14:55,383

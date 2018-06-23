@@ -1,0 +1,655 @@
+1
+00:00:07,069 --> 00:00:09,610
+Hãy nhớ lại rằng có 4 bước trong quy trình
+
+2
+00:00:09,610 --> 00:00:11,559
+thiết kế một cú hích.
+
+3
+00:00:11,559 --> 00:00:16,390
+Phác thảo bối cảnh, chọn một cú hích, nhận định
+
+4
+00:00:16,390 --> 00:00:20,880
+đòn bẩy để thực hiện, và cuối cùng là quá trình 
+thiết kế và lặp lại
+
+5
+00:00:20,880 --> 00:00:22,700
+thông qua thí nghiệm.
+
+6
+00:00:22,700 --> 00:00:26,250
+Ta đã nói chuyện về 2 cái đầu tiên, 
+và vào cuối 2 giai đoạn đó,
+
+7
+00:00:26,250 --> 00:00:30,279
+bạn sẽ có được một sơ đồ thể hiện
+ quyết định theo thời gian
+
+8
+00:00:30,279 --> 00:00:33,750
+cũng như một bộ các cú hích mà bạn có thể
+
+9
+00:00:33,750 --> 00:00:36,170
+thực hiện ở từng giai đoạn.
+
+10
+00:00:36,170 --> 00:00:40,260
+Bây giờ là lúc để suy nghĩ về cách thức cụ thể
+ để thực hiện những
+
+11
+00:00:40,260 --> 00:00:42,010
+chiến lược cú hích đó.
+
+12
+00:00:42,010 --> 00:00:45,751
+Những gì bạn thấy ở đây là danh sách các đòn bẩy 
+phổ biến mà ta sử dụng trong việc
+
+13
+00:00:45,751 --> 00:00:48,950
+thực hiện một vài chiến lược cú hích.
+
+14
+00:00:48,950 --> 00:00:53,080
+Hãy bắt đầu với một đòn bẩy đơn giản,
+các quy trình tự động.
+
+15
+00:00:53,080 --> 00:00:57,260
+Giả sử bạn khiến mọi người tự động
+ ghi danh vào chương trình hiến tạng,
+
+16
+00:00:57,260 --> 00:01:00,100
+hoặc chương trình tiết kiệm hưu trí.
+
+17
+00:01:00,100 --> 00:01:04,629
+Nó sẽ loại bỏ 1 bước từ quy trình, 
+bởi vì bây giờ họ không cần phải
+
+18
+00:01:04,629 --> 00:01:05,950
+mở tài khoản.
+
+19
+00:01:05,950 --> 00:01:08,110
+Chúng đã là một phần của quy trình rồi.
+
+20
+00:01:08,110 --> 00:01:11,110
+Đó là một chiến lược tạo cú hích hiệu quả.
+
+21
+00:01:11,110 --> 00:01:12,880
+Chiến lược thứ hai, giá trị mặc định.
+
+22
+00:01:12,880 --> 00:01:16,020
+Ta đã nói rất nhiều về giá trị mặc định từ trước.
+
+23
+00:01:16,020 --> 00:01:21,060
+Thay đổi giá trị mặc định làm thay đổi 
+cách thức mà mọi người lựa chọn.
+
+24
+00:01:21,060 --> 00:01:25,110
+Giá trị mặc định có thể khá thú vị,
+ bởi vì mọi quyết định mà ta làm,
+
+25
+00:01:25,110 --> 00:01:30,060
+như mua bánh sandwich, đăng ký vào lớp này,
+ lựa chọn sách để đọc,
+
+26
+00:01:30,060 --> 00:01:31,869
+tất cả đều có một mặc định.
+
+27
+00:01:31,869 --> 00:01:35,570
+Mặc định cho cuốn sách là không đọc nó, nhưng
+
+28
+00:01:35,570 --> 00:01:37,189
+phải làm một cái gì đó để nhận được nó.
+
+29
+00:01:37,189 --> 00:01:41,090
+Giá trị mặc định cho một bánh sandwich, 
+hay một trải nghiệm trong nhà ăn là để mua
+
+30
+00:01:41,090 --> 00:01:43,700
+bữa ăn tiêu chuẩn, và sau đó rời đi.
+
+31
+00:01:43,700 --> 00:01:46,479
+Trong nhiều trường hợp, người ta thường 
+lãng phí giá trị mặc định.
+
+32
+00:01:46,479 --> 00:01:48,799
+Ta không biết giá trị mặc định đến từ đâu.
+
+33
+00:01:48,799 --> 00:01:53,450
+Ta có thể bằng cách nào đó kết nối
+ những giá trị mặc định để hướng dẫn mọi người theo 
+
+34
+00:01:53,450 --> 00:01:55,509
+đi theo quyết định ta muốn?
+
+35
+00:01:55,509 --> 00:02:00,090
+Cơ cấu thông tin là một chiến lược tạo hích
+ mang tiềm năng lớn.
+
+36
+00:02:00,090 --> 00:02:04,640
+Ta đã nói là cơ cấu thông tin như các tổn thất
+
+37
+00:02:04,640 --> 00:02:09,590
+tác động lớn hơn nhiều so với 
+ cơ cấu thông tin mang lợi ích.
+
+38
+00:02:09,590 --> 00:02:12,820
+Nếu bạn nói mọi người
+ nên nâng cấp thiết bị tiết kiệm năng lượng
+
+39
+00:02:12,820 --> 00:02:17,021
+vì họ sẽ mất tiền mỗi tháng nếu không làm như vậy,
+ và sẽ nhận được tiền nếu làm theo thế
+
+40
+00:02:17,021 --> 00:02:20,570
+có một sự gia tăng đáng kể về số lượng
+
+41
+00:02:20,570 --> 00:02:23,169
+những người thực hiện điều này.
+
+42
+00:02:23,169 --> 00:02:27,250
+Quản lý các thiết lập lựa chọn và trình bày nó
+ theo những cách khác nhau là 
+
+43
+00:02:27,250 --> 00:02:28,670
+đòn bẩy thông thường khác.
+
+44
+00:02:28,670 --> 00:02:33,450
+Thay vì cho mọi người sự lựa chọn 
+từ 60 hoặc 100 quỹ khác nhau,
+
+45
+00:02:33,450 --> 00:02:36,830
+bạn có thể bằng cách nào đó nhóm và tổ chức chúng 
+ rồi dẫn dắt mọi người thông qua
+
+46
+00:02:36,830 --> 00:02:40,950
+ quá trình nhiều giai đoạn đi từ 
+chọn ra một danh mục các quỹ và
+
+47
+00:02:40,950 --> 00:02:45,200
+và rồi chọn chính quỹ họ muốn,
+thì sẽ giảm bớt quá trình đưa ra quyết định.
+
+48
+00:02:45,200 --> 00:02:47,770
+Bạn cũng có thể đơn giản hóa quy trình.
+
+49
+00:02:47,770 --> 00:02:52,730
+Ta đã nói thực tế rằng khi ta áp đặt
+ bất kỳ chi phí giao dịch qua
+
+50
+00:02:52,730 --> 00:02:58,380
+một điểm quyết định, chi phí giao dịch đó 
+có xu hướng hạn chế tiến độ
+
+51
+00:02:58,380 --> 00:02:59,380
+của một kết quả cụ thể.
+
+52
+00:02:59,380 --> 00:03:03,280
+Nếu có một hành vi mà bạn muốn hạn chế, 
+hãy làm cho
+
+53
+00:03:03,280 --> 00:03:05,299
+quá trình thực hiện phức tạp hơn một chút.
+
+54
+00:03:05,299 --> 00:03:09,090
+Nếu đó là một hành vi mà bạn muốn mọi người
+ hoàn thành, hãy làm cho
+
+55
+00:03:09,090 --> 00:03:13,180
+quá trình càng đơn giản càng tốt.
+
+56
+00:03:13,180 --> 00:03:14,549
+Cải thiện việc ra quyết định thông qua công nghệ.
+
+57
+00:03:14,549 --> 00:03:18,180
+Ta đã nói về điều đó rất nhiều trong khóa
+và cuối cùng, 
+
+58
+00:03:18,180 --> 00:03:23,340
+một chiến lược phổ biến khác để tạo cú hích
+ là thay đổi
+
+59
+00:03:23,340 --> 00:03:28,410
+trọng tâm của  các khoản thanh toán mà người ta
+ thường cần phải thực hiện.
+
+60
+00:03:28,410 --> 00:03:30,260
+Hãy nghĩ về việc phải trả các hóa đơn năng lượng.
+
+61
+00:03:30,260 --> 00:03:34,100
+Nếu bạn thanh toán hóa đơn năng lượng trực tuyến, 
+ghi nợ trực tiếp, mọi người không nhận thấy sự
+
+62
+00:03:34,100 --> 00:03:35,100
+tác động về mặt kinh tế.
+
+63
+00:03:35,100 --> 00:03:40,609
+Mặt khác, nếu bạn buộc mọi người bỏ ra 0,05 đô
+trên hóa đơn cho
+
+64
+00:03:40,609 --> 00:03:44,459
+mỗi túi nhựa mà họ tiêu thụ, 
+nó sẽ trở thành một chi phí nổi bật.
+
+65
+00:03:44,459 --> 00:03:47,889
+Tôi đưa ra lập luận ở đây rằng
+ nó là một tác động tâm lý của
+
+66
+00:03:47,889 --> 00:03:52,460
+0.05 đ, chứ không phải tác động kinh tế
+ làm thay đổi hành vi.
+
+67
+00:03:52,460 --> 00:03:54,610
+Một lần nữa, quy tắc rất đơn giản.
+
+68
+00:03:54,610 --> 00:03:58,049
+Nếu bạn muốn làm nổi bật hiệu ứng chi phí chìm, 
+nếu bạn muốn mọi người
+
+69
+00:03:58,049 --> 00:04:02,299
+tiêu thụ một cái gì đó mà họ đã trả trước, 
+đảm bảo rằng bạn đã
+
+70
+00:04:02,299 --> 00:04:04,790
+làm tăng sự quan trọng của thanh toán.  
+
+71
+00:04:04,790 --> 00:04:07,769
+Nếu bạn muốn mọi người không chú ý đến hiệu ứng chi phí chìm,
+
+72
+00:04:07,769 --> 00:04:11,100
+Trên thực tế, bạn đã làm giảm sự nổi bật 
+của hiệu ứng chi phí chìm đó. 
+
+73
+00:04:11,100 --> 00:04:14,410
+Những gì ta có ở đây là một danh sách
+ các chiến lược thường
+
+74
+00:04:14,410 --> 00:04:18,620
+được sử dụng để thực hiện một số cú hích
+ như ta đã nói.
+
+75
+00:04:18,620 --> 00:04:22,540
+Một lần nữa, vào cuối quy trình này, 
+có lẽ ta đã có danh sách
+
+76
+00:04:22,540 --> 00:04:26,340
+3, 4 hay 5 can thiệp tạo hích khác nhau, 
+các cú hích khác nhau mà ta 
+
+77
+00:04:26,340 --> 00:04:30,850
+có thể sử dụng để dòng chảy của quá trình ra
+ quyết định mượt mà hơn.
+
+78
+00:04:30,850 --> 00:04:34,120
+Làm thế nào để ta quyết định cái nào nên ưu tiên và cái nào
+
+79
+00:04:34,120 --> 00:04:35,450
+nên thực hiện đầu tiên?
+
+80
+00:04:35,450 --> 00:04:39,570
+Có 4 nguyên tắc đơn giản dể xác định.
+
+81
+00:04:39,570 --> 00:04:43,920
+Nguyên tắc số một, cú hích giúp tháo nút 
+
+82
+00:04:43,920 --> 00:04:49,790
+ngược dòng quá trình ra quyết định thì thường được
+ưa thích hơn những cú hích tác động
+
+83
+00:04:49,790 --> 00:04:51,530
+xuôi dòng.
+
+84
+00:04:51,530 --> 00:04:55,490
+Nếu bạn cải thiện dòng chảy ở đầu quá trình, 
+nó tự nhiên sẽ
+
+85
+00:04:55,490 --> 00:04:59,010
+tăng lưu lượng trong suốt phần còn lại 
+của các đường ống dẫn.
+
+86
+00:04:59,010 --> 00:05:01,710
+Nguyên tắc thứ hai, suy nghĩ về cú hích với 
+
+87
+00:05:01,710 --> 00:05:04,300
+tầm cao nhất nó có thể.
+
+88
+00:05:04,300 --> 00:05:09,570
+Hãy suy nghĩ về những can thiệp cung cấp những cú hích
+ đến số lượng người tối đa
+
+89
+00:05:09,570 --> 00:05:12,740
+mà bạn có thể tiếp cận, và chọn lấy
+
+90
+00:05:12,740 --> 00:05:13,940
+cái mà đạt đến mức cao nhất.
+
+91
+00:05:13,940 --> 00:05:15,900
+Nguyên tắc thứ ba.
+
+92
+00:05:15,900 --> 00:05:19,890
+Chọn cú hích nhanh chóng và đơn giản để thực hiện.
+
+93
+00:05:19,890 --> 00:05:24,820
+Bạn tạo ra cú hích càng nhanh và đơn giản,
+ bạn càng có nhiều khả năng
+
+94
+00:05:24,820 --> 00:05:27,390
+thấy kết quả sớm hơn.
+
+95
+00:05:27,390 --> 00:05:31,630
+Và cuối cùng, hãy nghĩ về hiệu quả lâu dài của cú hích.
+
+96
+00:05:31,630 --> 00:05:35,550
+Một số cú hích hoạt động hiệu quả trong ngắn hạn, 
+nhưng một khi bạn bỏ nó đi,
+
+97
+00:05:35,550 --> 00:05:38,931
+và thay đổi bối cảnh, thì thực tế,
+
+98
+00:05:38,931 --> 00:05:40,950
+hiệu lực giảm đi.
+
+99
+00:05:40,950 --> 00:05:44,890
+Hãy chọn cú hích có 
+hiệu lực dài hạn cao hơn so với những cái có
+
+100
+00:05:44,890 --> 00:05:46,300
+hiệu lực dài hạn thấp.
+
+101
+00:05:46,300 --> 00:05:50,320
+Đây là 4ốn nguyên tắc và tiêu chí đơn giản giúp bạn
+
+102
+00:05:50,320 --> 00:05:55,750
+ưu tiên và chọn ra cái để làm trước tiên.
+
+103
+00:05:55,750 --> 00:05:58,440
+Khi bạn đã chọn xong, giờ đây hãy đi vào giai đoạn
+
+104
+00:05:58,440 --> 00:06:00,870
+thiết kế và lặp lại.
+
+105
+00:06:00,870 --> 00:06:04,680
+Nếu đó là một cú hích liên quan đến
+ kiểm soát thông tin, bạn cần
+
+106
+00:06:04,680 --> 00:06:08,180
+suy nghĩ xem cách thức nào là tốt nhất để giao tiếp, 
+tầm nhìn của bạn là gì
+
+107
+00:06:08,180 --> 00:06:10,550
+chiến lược truyền thông của bạn là gì?
+
+108
+00:06:10,550 --> 00:06:14,960
+Sau đó bạn cần phải thiết kế một thí nghiệm
+dể có thể xác định hiệu quả
+
+109
+00:06:14,960 --> 00:06:20,370
+nguyên nhân và ảnh hưởng, và liệu 
+cú hích mà bạn chọn có thực sự mang lại kết quả
+
+110
+00:06:20,370 --> 00:06:24,139
+mà bạn muốn hay không.
+
+111
+00:06:24,139 --> 00:06:26,490
+Hãy nghĩ về các thiết kế khác nhau mà ta đã xem xét.
+
+112
+00:06:26,490 --> 00:06:29,020
+Liệu bạn có sử dụng  thiết kế đơn giản 2 điều kiện?
+
+113
+00:06:29,020 --> 00:06:31,930
+Liệu bạn sẽ sử dụng một thiết kế kết hợp toàn diện,
+ hay là bạn sẽ sử dụng một thiết kế
+
+114
+00:06:31,930 --> 00:06:33,870
+trước và sau?
+
+115
+00:06:33,870 --> 00:06:37,681
+Cuối cùng, một khi bạn có được dữ liệu từ thí nghiệm
+
+116
+00:06:37,681 --> 00:06:42,900
+giờ là lúc để lặp lại và cập nhật cú hích.
+
+117
+00:06:42,900 --> 00:06:45,780
+Bạn có thể tiến hành một thí nghiệm trong đó
+3 cú hích được cọ xát với nhau
+
+118
+00:06:45,780 --> 00:06:49,130
+xem cái nào trong số chúng tạo ra tác động lớn nhất
+
+119
+00:06:49,130 --> 00:06:50,360
+lên kết quả.
+
+120
+00:06:50,360 --> 00:06:54,431
+Vào cuối thí nghiệm, bạn có thể tập trung vào
+ chỉ một hoặc hai, và rồi 
+
+121
+00:06:54,431 --> 00:06:59,030
+tập trung vào cái mang lại nhiều lợi ích nhất.
+
+122
+00:06:59,030 --> 00:07:03,270
+Hãy để tôi kết thúc mô-đun này bằng cách
+ nói về 3 câu thần chú trong thiết kế
+
+123
+00:07:03,270 --> 00:07:06,360
+và thực hiện một kế hoạch cú hích.
+
+124
+00:07:06,360 --> 00:07:11,300
+Tôi sẽ xin mạn phép nhắc lại điều Dick Thaler nói
+trong 2 thần chú đầu.
+
+125
+00:07:11,300 --> 00:07:13,400
+Câu thần chú số một là đơn giản.
+
+126
+00:07:13,400 --> 00:07:17,740
+Nếu bạn muốn mọi người làm gì đó, hãy chắc chắn rằng cái đó
+
+127
+00:07:17,740 --> 00:07:20,730
+dễ làm, thú vị để làm.
+
+128
+00:07:20,730 --> 00:07:24,590
+Những thứ càng dễ dàng, thì càng nhiều khả năng 
+là người ta sẽ làm chúng.
+
+129
+00:07:24,590 --> 00:07:29,100
+Câu thần chú số hai, bạn không thể thực hiện 
+chính sách hoặc kinh doanh dựa trên chứng cứ xác thực
+
+130
+00:07:29,100 --> 00:07:31,430
+mà không có bằng chứng.
+
+131
+00:07:31,430 --> 00:07:36,490
+Điều quan trọng là phải thí nghiệm, không chỉ một lần,
+ mà là thí nghiệm
+
+132
+00:07:36,490 --> 00:07:37,490
+mọi lúc.
+
+133
+00:07:37,490 --> 00:07:41,700
+Hãy nhớ rằng, ta nói về sự đối chiếu, 
+ý tưởng cho rằng bạn có thể thu thập chứng cứ
+
+134
+00:07:41,700 --> 00:07:45,680
+từ các chủ thể dân số khác nhau,
+ đo lường phụ thuộc khác nhau
+
+135
+00:07:45,680 --> 00:07:47,730
+và bối cảnh khác nhau.
+
+136
+00:07:47,730 --> 00:07:51,490
+Nếu bạn làm nhiều thí nghiệm mà
+ tất cả đều dẫn tới
+
+137
+00:07:51,490 --> 00:07:56,310
+một kết luận, bạn đã có bằng chứng vững chắc
+dể từ đó vận dụng vào
+
+138
+00:07:56,310 --> 00:07:58,730
+việc kinh doanh hay chính sách bạn lập ra.
+
+139
+00:07:58,730 --> 00:08:03,550
+Ngoài 2 thần chú của Dick Thaler, 
+ta còn thêm một cái thứ ba, 
+
+140
+00:08:03,550 --> 00:08:09,580
+đó là ghi lại kết quả của bạn đều đặc, đơn giản
+và chia sẻ chúng một cách rộng rãi.
+
+141
+00:08:09,580 --> 00:08:13,930
+Không may là ngày nay
+không có cơ sở dữ liệu tập trung để ta
+
+142
+00:08:13,930 --> 00:08:16,560
+có thể tìm kiếm các can thiệp
+mà người khác
+
+143
+00:08:16,560 --> 00:08:18,650
+đã thực hiện qua.
+
+144
+00:08:18,650 --> 00:08:22,770
+Nếu như có một cơ sở dữ liệu chung,
+sẽ dễ dàng hơn cho ta
+
+145
+00:08:22,770 --> 00:08:27,180
+và ta sẽ không cần phải tái thiết lập lại quy trình
+
+146
+00:08:27,180 --> 00:08:29,379
+mỗi khi đưa ra một can thiệp cú hích mới.
+

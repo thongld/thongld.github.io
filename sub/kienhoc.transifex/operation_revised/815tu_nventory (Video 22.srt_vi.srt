@@ -1,0 +1,369 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/JLM0bQsdwKc
+phuongmai201 2/10
+
+1
+00:00:05,689 --> 00:00:08,359
+Rất vui được gặp lại và chào mừng đến với khóa học "Quản trị vận hành".
+
+2
+00:00:08,359 --> 00:00:11,628
+Trong bài giảng hôm nay, ta sẽ nói về hàng tồn kho
+
+3
+00:00:11,628 --> 00:00:15,879
+Ta sẽ bắt đầu với phần giới thiệu ngắn gọn về khái niệm
+
+4
+00:00:15,880 --> 00:00:20,849
+hàng tồn kho và các loại hàng tồn kho cũng như là chi phí đi liền với
+
+5
+00:00:20,849 --> 00:00:21,710
+hàng tồn kho.
+
+6
+00:00:21,710 --> 00:00:25,789
+Bắt đầu với các loại hàng tồn kho
+
+7
+00:00:25,789 --> 00:00:29,900
+Ta biết rằng ngoài kia có rất nhiều loại hàng tồn kho.
+
+8
+00:00:29,899 --> 00:00:34,689
+Loại đầu tiên là tồn kho đầu vào. Khi bạn nghĩ đến một qui trình
+
+9
+00:00:34,689 --> 00:00:37,738
+và nhận thấy có những nguyên liệu đi vào trong qui trình
+
+10
+00:00:37,738 --> 00:00:41,629
+đó chính là hàng tồn kho đầu vào. Vậy nếu nó nằm ở đó và chờ đợi 
+
+11
+00:00:41,630 --> 00:00:45,120
+ngay tại bước đầu của qui trình thì đó chính là hàng tồn kho đầu vào. 
+
+12
+00:00:45,119 --> 00:00:50,479
+Khi hàng tồn kho đang ở trong qui trình và nó emits div các hoạt động hay nằm giữa các hoạt động
+
+13
+00:00:50,479 --> 00:00:51,898
+bên trong qui trình
+
+14
+00:00:51,899 --> 00:00:55,910
+thì đó chính là hàng tồn kho bán thành phẩm hầu hết
+
+15
+00:00:55,909 --> 00:01:00,119
+được biết đến với cái tên công việc trong qui trình hay công việc đang tiến hành
+
+16
+00:01:00,119 --> 00:01:03,349
+và hàng tồn kho đầu ra là 
+
+17
+00:01:03,350 --> 00:01:07,300
+các sản phẩm đã được hoàn thành như chưa rời dây chuyền
+
+18
+00:01:07,299 --> 00:01:11,219
+sản xuất, nghĩa là khi ta chưa chuyển nó ra ngoài qui trình này 
+
+19
+00:01:11,219 --> 00:01:16,170
+đến một qui trình khác. Vậy ta có 3 loại hàng tồn kho 
+
+20
+00:01:16,170 --> 00:01:20,810
+và khi ta gộp chúng lại với nhau ra tổng hàng tồn kho của qui trình.
+
+21
+00:01:20,810 --> 00:01:24,390
+Ta biết từ Little's Law
+
+22
+00:01:24,390 --> 00:01:27,868
+rằng hàng tồn kho trung bình bằng với throughput rate
+
+23
+00:01:27,868 --> 00:01:33,540
+nhân với flow time trung bình. Ta cũng biết là có một lượng nhất định
+
+24
+00:01:33,540 --> 00:01:35,479
+hàng tồn kho cần thiết 
+
+25
+00:01:35,478 --> 00:01:40,908
+cho bất kỳ qui trình nào nhưng tại sao ta lại sử dụng hàng tồn kho ? 
+
+26
+00:01:40,909 --> 00:01:45,329
+Các qui trình có thể có 
+
+27
+00:01:45,328 --> 00:01:48,759
+sự biến động vậy bằng cách có lưu kho
+
+28
+00:01:48,759 --> 00:01:52,868
+hàng tồn kho chính là lưu kho, nó cho phép 
+
+29
+00:01:52,868 --> 00:01:56,239
+môt qui trình có thể được tách biệt một chút so với các quy trình khác.
+
+30
+00:01:56,239 --> 00:02:00,560
+Như nếu một qui trình đang chạy nhanh và ta sẵn có hàng tồn kho 
+
+31
+00:02:00,560 --> 00:02:05,460
+thì qui trình có thể tiếp tục hoạt động. Nếu một qui trình khác chạy chậm
+
+32
+00:02:05,459 --> 00:02:09,509
+ta có thể cho phép hàng tồn kho chất đống. Vậy điều xảy ra là 
+
+33
+00:02:09,509 --> 00:02:13,459
+ta có lưu kho làm các qui trình tách biệt với nhau
+
+34
+00:02:13,459 --> 00:02:20,459
+cũng như với môi trường bên ngoài. Khi ta nghĩ tới hàng tồn kho
+
+35
+00:02:21,360 --> 00:02:25,090
+ta nghĩ đến các sử dụng nó cho 4 lý do lớn.
+
+36
+00:02:25,090 --> 00:02:29,700
+Thứ nhất là cán cân kinh tế. Bằng việc sử dụng hàng tồn kho
+
+37
+00:02:29,699 --> 00:02:32,729
+để cho phép ta xây dựng nên việc sản xuất 
+
+38
+00:02:32,729 --> 00:02:36,939
+hay tăng công suất, ta có thể niêm yết giá cố định
+
+39
+00:02:36,939 --> 00:02:41,889
+cho một khối lượng lớn sản phẩn. Như khi bạn mua một chiếc áo phông
+
+40
+00:02:41,889 --> 00:02:42,909
+in hình
+
+41
+00:02:42,909 --> 00:02:46,068
+cho dù bạn có mua bao nhiêu chiếc khác nhau
+
+42
+00:02:46,068 --> 00:02:50,030
+thì trong đó có bao gồm chi phí cho việc tạo ra cái hình in đó
+
+43
+00:02:50,030 --> 00:02:53,769
+thiết kế cái hình in đó. Cho dù bạn mua 1 
+
+44
+00:02:53,769 --> 00:02:57,140
+cái áo, 5 cái áo hay một trăm cái áo phông
+
+45
+00:02:57,139 --> 00:03:00,299
+thì chi phí vẫn cố định như thế. Vậy để
+
+46
+00:03:00,300 --> 00:03:04,159
+có thể niêm yết chi phí cố định đó trên 1 trăm chiếc áo phông
+
+47
+00:03:04,158 --> 00:03:08,158
+thì chi phí cho mỗi 1 cái áo phông
+
+48
+00:03:08,158 --> 00:03:12,199
+phải giảm xuống. Đó chính là cách ta hiểu về việc niêm yết giá cố định
+
+49
+00:03:12,199 --> 00:03:17,539
+trên một khối lượng lớn sản phẩm. Đối với sự trơn tru của công suất sản xuất, 
+
+50
+00:03:17,539 --> 00:03:21,919
+ta biết rằng như cầu luôn biến động. Nó không bao giờ
+
+51
+00:03:21,919 --> 00:03:26,568
+hoàn toàn cố định nhưng ta không muốn liên tục thuê
+
+52
+00:03:26,568 --> 00:03:30,708
+rồi xa thải nhân công. Ta không muốn phải vận hành ca 2 
+
+53
+00:03:30,709 --> 00:03:34,209
+ca 3 cho sản xuất. Nó không được
+
+54
+00:03:34,209 --> 00:03:37,439
+hiệu quả cho lắm khi làm như vậy.
+
+55
+00:03:37,439 --> 00:03:40,519
+Vậy cái chúng ta làm là ta sử dụng hàng tồn kho 
+
+56
+00:03:40,519 --> 00:03:43,569
+để làm trơn tru lại sự biến đổi đó. Ta để hàng tồn kho
+
+57
+00:03:43,568 --> 00:03:47,798
+tăng hoặc giảm khi nhu cầu biến động.
+
+58
+00:03:47,799 --> 00:03:53,219
+Ví dụ như khi ta cân nhắc về kì nghỉ lễ vào tháng 12,
+
+59
+00:03:53,219 --> 00:03:58,469
+sẽ có một vài sản phẩm tuy không có nhu cầu nhiều trong suốt cả năm
+
+60
+00:03:58,469 --> 00:04:02,019
+nhưng nhu cầu lại tăng lên đột biến vào tháng 11 và 12.
+
+61
+00:04:02,019 --> 00:04:05,469
+Một cách để giải quyết vấn đề đó là phải có 
+
+62
+00:04:05,469 --> 00:04:09,639
+một quá trình sản xuất trơn tru trong suốt cả năm
+
+63
+00:04:09,639 --> 00:04:15,268
+cho phép hàng tồn kho chất đống lên, như thế ta mới có thể đáp ứng được nhu cầu vào tháng 11 và
+
+64
+00:04:15,269 --> 00:04:15,980
+tháng 12.
+
+65
+00:04:15,979 --> 00:04:19,199
+Cách thứ 3 để sử dụng hàng tồn kho
+
+66
+00:04:19,199 --> 00:04:23,750
+để phòng tránh sự thiếu hụt. Nó còn được gọi là phòng tránh thiếu hàng.
+
+67
+00:04:23,750 --> 00:04:27,430
+Ta thường sử dụng dự trữ bảo hiểm. Đây là hàng tồn kho
+
+68
+00:04:27,430 --> 00:04:30,939
+dư ra để phòng tránh ta bị hết hàng. 
+
+69
+00:04:30,939 --> 00:04:36,019
+Như vậy ta sẽ không làm khách hàng thất vọng cũng như không phải ngưng lại
+
+70
+00:04:36,019 --> 00:04:37,698
+quá trình sản xuất. 
+
+71
+00:04:37,699 --> 00:04:41,590
+Cuối cùng, ta còn nhìn hàng tồn kho như một cách để đầu cơ tích trữ giá cả.
+
+72
+00:04:41,589 --> 00:04:45,849
+Nếu ta nghĩ  rằng giá của 1 sản phẩn ta dùng sẽ tăng lên
+
+73
+00:04:45,850 --> 00:04:52,850
+ta có thể sẽ mua nhiều thêm một chút bây giờ để tránh giá cao sau này. 
+
+74
+00:04:53,300 --> 00:04:57,020
+Nhưng những tác dụng tốt của việc dự trữ hàng tồn kho cũng đi liền 
+
+75
+00:04:57,019 --> 00:05:01,649
+với những chi phí của nó. Ở đó có chi phí cho việc dự trữ hàng tồn kho.
+
+76
+00:05:01,649 --> 00:05:05,319
+Chúng được gọi là chi phí tồn trữ vật chất. Một khi ta có 
+
+77
+00:05:05,319 --> 00:05:10,120
+hàng nguyên vật liệu trong qui trình sản xuất, ta phải cất giữ nó ở đâu đó.
+
+78
+00:05:10,120 --> 00:05:13,689
+Ta có nhà kho và ta cần theo dõi nó. 
+
+79
+00:05:13,689 --> 00:05:17,699
+Đôi khi ta còn phải kiểm soát khí hậu.
+
+80
+00:05:17,699 --> 00:05:21,430
+Tất cả những thứ này gọi là cho phí tồn trữ vật chất. Chi phí 
+
+81
+00:05:21,430 --> 00:05:26,840
+cho việc dự trữ hàng tồn kho. Một loại chi phí nữa gắn với hàng tồn kho 
+
+82
+00:05:26,839 --> 00:05:30,250
+là chi phí cơ hội. Đó là chi phí cho những cơ hội đầu tư
+
+83
+00:05:30,250 --> 00:05:33,430
+bị mất đi. Số tiền ta bỏ vào
+
+84
+00:05:33,430 --> 00:05:36,900
+hàng tồn kho và không thể dùng được vào những việc khác.
+
+85
+00:05:36,899 --> 00:05:41,799
+Bạn không thể dùng nó để chi cho một dự án khác hay thậm chí là bỏ vào ngân hàng
+
+86
+00:05:41,800 --> 00:05:44,870
+để lấy lãi suất. Mặc dù vậy, ta có
+
+87
+00:05:44,870 --> 00:05:49,860
+lý do để sử dụng hàng tồn kho. Ta cũng cần phải cân bằng nó với chi phí
+
+88
+00:05:49,860 --> 00:05:54,360
+bỏ ra cho hàng tồn kho. Đó chính là bài giới thiệu về hàng tồn kho.
+
+89
+00:05:54,360 --> 00:05:59,280
+Trong phần tới, ta sẽ nói về phương trình tổng chi phí
+
+90
+00:05:59,279 --> 00:06:03,068
+ta sẽ tiếp tục tìm hiểu xem chi phí cho mỗi lần 
+
+91
+00:06:03,069 --> 00:06:06,289
+đặt hàng là bao nhiêu. Hẹn gặp lại các bạn trong bài tới.
+

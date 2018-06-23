@@ -1,0 +1,302 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/vkGcJypSBXg
+Rumbooo 15/10
+
+1
+00:00:05,198 --> 00:00:09,349
+Chào mừng quay trở lại với bài giảng
+ quản lý điều hành và
+
+2
+00:00:09,349 --> 00:00:10,129
+bài giảng đầu tiên của chúng ta chỉ nói về điều hành thôi
+
+3
+00:00:10,129 --> 00:00:13,589
+và tôi cũng đã nói rằng các bạn có thể tìm kiếm
+các cách vận hành từ
+
+4
+00:00:13,589 --> 00:00:17,820
+viễn cảnh trong tương lai thế nên 
+hôm nay chúng ta sẽ nói về
+
+5
+00:00:17,820 --> 00:00:22,810
+những quy trình cơ bản mà các bạn biết
+và những thứ cần biết về một quy trình
+
+6
+00:00:22,809 --> 00:00:25,948
+Nói chung, một quy trình là một sự biến đổi
+
+7
+00:00:25,949 --> 00:00:30,830
+nó nhận sản phẩm vào và biến hóa thành sản phẩm đầu ra
+
+8
+00:00:30,829 --> 00:00:34,310
+các bạn hãy nhìn vào biểu đồ này,
+ở đây chúng ta có các đầu vào
+
+9
+00:00:34,310 --> 00:00:37,629
+tham gia vào quá trình và có các sản phẩm đi ra
+
+10
+00:00:37,630 --> 00:00:42,879
+đó chính là toàn bộ một quy trình
+thế nên cái tôi muốn nói là
+
+11
+00:00:42,878 --> 00:00:46,628
+đầu vào là những thứ đi vào quy trình
+
+12
+00:00:46,628 --> 00:00:50,079
+ví dụ có thể đó là các đơn hàng, 
+người du lịch
+
+13
+00:00:50,079 --> 00:00:54,230
+có thể là các vật liệu thô
+
+14
+00:00:54,229 --> 00:00:59,198
+cũng có thể là hóa đơn thanh toán
+tóm lại là những thứ đi vào trong quy trình
+
+15
+00:00:59,198 --> 00:01:02,229
+để sau đó được biến đổi theo một cách nào đó
+
+16
+00:01:02,229 --> 00:01:05,319
+thì những thứ như này
+
+17
+00:01:05,319 --> 00:01:10,338
+chúng ta đã được học rằng
+
+18
+00:01:10,338 --> 00:01:11,219
+những thứ đơn lẻ đi vào một quy trình
+
+19
+00:01:11,219 --> 00:01:14,530
+chúng ta xem xét một cách cẩn thận
+và gọi chúng là một đơn vị nhỏ
+
+20
+00:01:14,530 --> 00:01:18,719
+đây chính là cách chúng ta lần theo
+khi chúng đi vào quy trình
+
+21
+00:01:18,719 --> 00:01:22,859
+và đi ra sau quy trình đó và chúng ta đã có đầu ra.
+
+22
+00:01:22,859 --> 00:01:28,359
+nếu chúng ta có nước đi vào trong quy trình
+
+23
+00:01:28,359 --> 00:01:29,599
+vậy ai sẽ là người đặt đơn hàng cho đầu ra
+
+24
+00:01:29,599 --> 00:01:33,030
+Nếu chúng ta có đầu vào là khách du lịch
+
+25
+00:01:33,030 --> 00:01:36,769
+thì có thể sản phẩm đầu ra sẽ là khách du lịch được
+
+26
+00:01:36,769 --> 00:01:37,530
+check qua hệ thống an ninh một cách toàn diện
+
+27
+00:01:37,530 --> 00:01:41,210
+tiền tệ đi vào để hoàn tất các sản phẩm đầu ra
+
+28
+00:01:41,209 --> 00:01:44,500
+mà một phần hóa đơn của chúng ta
+
+29
+00:01:44,500 --> 00:01:47,938
+là đô la đã được trả
+
+30
+00:01:47,938 --> 00:01:51,089
+như các bạn có thể thấy, chúng ta lấy một đầu vào 
+
+31
+00:01:51,090 --> 00:01:54,159
+và biến đổi nó theo một cách nào đó để được đầu ra
+
+32
+00:01:54,159 --> 00:01:57,630
+nhưng cái gì bên trong quy trình ấy
+
+33
+00:01:57,629 --> 00:02:01,140
+chúng ta đã thực sự làm cho sự biến đổi đó xảy ra
+
+34
+00:02:01,140 --> 00:02:04,549
+và theo cách đó chúng ta áp dụng vào những thứ
+
+35
+00:02:04,549 --> 00:02:07,979
+như các máy móc tự động
+
+36
+00:02:07,978 --> 00:02:11,780
+chúng được sử dụng để tạo ra sự biến đổi
+
+37
+00:02:11,780 --> 00:02:16,219
+đó là những nguồn lực hữu hình và chúng ta có thể
+
+38
+00:02:16,219 --> 00:02:19,250
+lấy đầu vào từ các nguồn và
+
+39
+00:02:19,250 --> 00:02:25,560
+tạo ra các sản phẩm đầu ra, 
+khi chúng ta nhìn vào quy trình
+
+40
+00:02:25,560 --> 00:02:29,068
+nó không chỉ là một khối đơn độc mà
+
+41
+00:02:29,068 --> 00:02:32,488
+cái chúng ta có là cả một hệ thống các
+hoạt động được móc nối với nhau
+
+42
+00:02:32,489 --> 00:02:37,378
+nếu bạn nhìn vào bên trong chiếc hộp của chúng tôi ở đây
+
+43
+00:02:37,378 --> 00:02:39,389
+bạn có thể thấy rằng những hình chữ nhật nhỏ xíu này 
+đang thực hiện hoạt động của các bạn
+
+44
+00:02:39,389 --> 00:02:42,639
+những tam giác được coi là vùng đệm
+
+45
+00:02:42,639 --> 00:02:47,089
+nên nếu như bạn nghĩ về một tổ chức lớn và bạn biết rằng
+
+46
+00:02:47,090 --> 00:02:51,840
+những thứ đi qua các hoạt động của tổ chức
+đôi khi phải đợi 
+
+47
+00:02:51,840 --> 00:02:56,269
+nhưng khi chúng ta kết nối tất cả chúng lại
+
+48
+00:02:56,269 --> 00:02:59,789
+tạo ra một mạng lưới tốt bên trong quy trình
+
+49
+00:02:59,789 --> 00:03:05,719
+thì những thứ đi vào trong quy trình
+có thể áp dụng những nguồn này
+
+50
+00:03:05,719 --> 00:03:08,500
+để di chuyển tới tất cả các hoạt động và vùng đệm
+
+51
+00:03:08,500 --> 00:03:13,419
+sau đó sẽ tới đầu ra
+
+52
+00:03:13,419 --> 00:03:16,679
+nhưng như thế vẫn chưa đủ
+làm sao chúng ta có thể biết có bao nhiêu thứ khác
+
+53
+00:03:16,680 --> 00:03:19,730
+khi nào chúng ta cần tới và ngược lại
+
+54
+00:03:19,729 --> 00:03:24,109
+đó chính là thông tin,
+đây cũng là một phần của toàn bộ quá trình
+
+55
+00:03:24,110 --> 00:03:29,080
+Chúng ta cần các thông tin cho chúng ta biết 
+
+56
+00:03:29,080 --> 00:03:29,909
+những gì chúng ta cần đúng theo thứ tự của quy trình
+
+57
+00:03:29,908 --> 00:03:33,039
+và chúng ta cũng cần tới quản lý nữa
+
+58
+00:03:33,039 --> 00:03:38,310
+các quy trình chính sách như thực hành tuyển dụng
+
+59
+00:03:38,310 --> 00:03:41,920
+hoặc những thứ liên quan đến làm ca 
+
+60
+00:03:41,919 --> 00:03:46,458
+đó là nhiệm vụ của quản lý trong quy trình này
+vậy khi chúng ta kéo tất cả lại với nhau
+
+61
+00:03:46,459 --> 00:03:49,939
+chúng ta sẽ có một dòng chảy liên tục
+
+62
+00:03:49,939 --> 00:03:53,509
+một quy trình là một mạng lưới các hoạt động và bộ đệp
+
+63
+00:03:53,509 --> 00:03:58,188
+chúng ta đang áp dụng những thứ hữu hình như
+
+64
+00:03:58,188 --> 00:04:02,878
+máy móc phục vụ sản xuất để chuyển hóa
+chúng thành những sản phẩm đầu ra
+
+65
+00:04:02,878 --> 00:04:06,639
+chúng ta sử dụng thông tin để chỉ ra lượng chúng ta cần
+
+66
+00:04:06,639 --> 00:04:10,949
+khi nào thì cần làm gì và ta có tất các các
+cấp bậc quản lý để
+
+67
+00:04:10,949 --> 00:04:14,000
+giữ tất cả theo một trật tự
+
+68
+00:04:14,000 --> 00:04:18,110
+và tất cả những thứ đó vận hành trong một quy trình
+
+69
+00:04:18,110 --> 00:04:21,540
+trong bài tiếp theo chúng ta sẽ nói đến 
+cái gì tạo ra một quy trình tốt
+

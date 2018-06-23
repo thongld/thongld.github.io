@@ -1,0 +1,412 @@
+283
+00:12:29,890 --> 00:12:31,590
+wermarter 16/05/16
+Và đây là đoạn chương trình của tôi
+
+284
+00:12:31,590 --> 00:12:34,060
+Tôi sẽ đưa ra phác thảo 
+về những gì chương trình sẽ làm
+
+285
+00:12:34,060 --> 00:12:37,160
+Đầu tiên, nó sẽ mở file
+và đọc nội dung file
+
+286
+00:12:37,160 --> 00:12:40,540
+Kế tiếp là tách các dòng trong file
+
+287
+00:12:40,540 --> 00:12:42,880
+thành từng chữ 
+tách nhau bằng dấu cách
+
+288
+00:12:42,880 --> 00:12:46,730
+Sau đó, nó sẽ quét qua từng chữ
+và cộng dồn các con số
+
+289
+00:12:46,730 --> 00:12:48,850
+Ví dụ như chữ này một lần,
+chữ này một lần
+
+290
+00:12:48,850 --> 00:12:50,974
+Tôi thấy nó lần nữa 
+nên sẽ cộng nó lên thành 2
+
+291
+00:12:50,974 --> 00:12:51,890
+Đó là những gì đoạn lệnh này làm
+
+292
+00:12:51,890 --> 00:12:53,848
+Vì đây là một vòng lặp,
+nên nó sẽ lặp đi lặp lại
+
+293
+00:12:53,848 --> 00:12:55,440
+mỗi lần tương ứng với một chữ.
+
+294
+00:12:55,440 --> 00:12:58,530
+Và vòng lặp tiếp theo
+
+295
+00:12:58,530 --> 00:13:01,120
+được dùng tìm ra đâu
+là chữ phổ biến nhất
+
+296
+00:13:01,120 --> 00:13:03,450
+bằng cách lần lượt quét qua
+các số liệu thu được
+
+297
+00:13:03,450 --> 00:13:04,540
+mà ta đã tính trước đó
+
+298
+00:13:04,540 --> 00:13:07,900
+Và cuối cùng, chương trình sẽ in ra
+kết quả tìm được cho người dùng
+
+299
+00:13:07,900 --> 00:13:11,330
+Ta có thể chạy nó ví dụ như "python words.py"
+
+300
+00:13:11,330 --> 00:13:14,660
+nó đọc file "clown.txt" 
+và nói cho ta biết rằng chữ "the"
+
+301
+00:13:14,660 --> 00:13:15,840
+xuất hiện 7 lần
+
+302
+00:13:15,840 --> 00:13:19,960
+Còn đối với file "words.txt"
+
+303
+00:13:19,960 --> 00:13:21,730
+chữ "two" xuất hiện 16 lần
+
+304
+00:13:21,730 --> 00:13:24,287
+Và thực hiện rất nhanh
+
+305
+00:13:24,287 --> 00:13:25,870
+Vậy, bạn cần học
+một ngôn ngữ lập trình
+
+306
+00:13:25,870 --> 00:13:28,780
+và bạn phải ra lệnh cho nó một cách chính xác,
+nhưng một khi đã ra lệnh rồi
+
+307
+00:13:28,780 --> 00:13:31,950
+Nó có thể xử lí cả triệu hoặc cả tỉ chữ 
+một cách vui vẻ
+
+308
+00:13:31,950 --> 00:13:34,890
+Bạn không phải làm những việc nhàm chán
+
+309
+00:13:34,890 --> 00:13:37,230
+một khi bạn đã biết cách hướng dẫn máy tính.
+
+310
+00:13:37,230 --> 00:13:40,529
+làm những việc nhàm chán cho mình
+
+311
+00:13:40,529 --> 00:13:41,570
+ 
+
+312
+00:13:41,570 --> 00:13:45,890
+Ta luôn bắt đầu mọi lớp
+ngôn ngữ lập trình
+
+313
+00:13:45,890 --> 00:13:47,980
+bằng việc nói về kiến trúc phần cứng
+
+314
+00:13:47,980 --> 00:13:51,250
+Tôi không nghĩ nó quan trọng đến vậy,
+nên đừng quá phấn khích về nó
+
+315
+00:13:51,250 --> 00:13:53,600
+Nó có nhiều thuật ngữ hữu ích
+
+316
+00:13:53,600 --> 00:13:55,520
+Chúng ta sẽ có những từ như CPU
+
+317
+00:13:55,520 --> 00:13:56,880
+và bạn không nên sợ khi nghe về nó
+
+318
+00:13:56,880 --> 00:14:00,842
+Hoặc là bộ nhớ (memory), hay RAM, ổ đĩa (disk drive),
+
+319
+00:14:00,842 --> 00:14:02,550
+Tôi không muốn biến bạn 
+thành một chuyên gia về phần cứng
+
+320
+00:14:02,550 --> 00:14:04,557
+Tôi chỉ muốn bạn làm quen 
+với một số thuật ngữ
+
+321
+00:14:04,557 --> 00:14:06,390
+để ta có thể nói chuyện 
+về những gì diễn ra bên trong
+
+322
+00:14:06,390 --> 00:14:09,640
+Vì ta sẽ viết các chương trình
+
+323
+00:14:09,640 --> 00:14:12,390
+để làm việc này việc kia -- dữ liệu, các câu lệnh,...
+
+324
+00:14:12,390 --> 00:14:15,620
+
+325
+00:14:15,620 --> 00:14:18,120
+Đây là một số phần cứng
+tôi mua vài tuần trước
+
+326
+00:14:18,120 --> 00:14:19,540
+Tôi thực sự thích nó
+
+327
+00:14:19,540 --> 00:14:21,520
+Đó là Raspberry Pi
+
+328
+00:14:21,520 --> 00:14:25,240
+là máy tính một bảng mạch
+
+329
+00:14:25,240 --> 00:14:28,870
+Với bộ nhớ là thẻ SD
+
+330
+00:14:28,870 --> 00:14:29,660
+Nó đây
+
+331
+00:14:29,660 --> 00:14:31,800
+Đây là hệ điều hành 
+và các dữ liệu của máy
+
+332
+00:14:31,800 --> 00:14:35,290
+Nó cũng có cả bộ vi xử lý
+
+333
+00:14:35,290 --> 00:14:37,240
+ và bộ nhớ trong đây
+
+334
+00:14:37,240 --> 00:14:40,370
+cùng với các loại cổng như
+USB, HDMI và những thứ khác
+
+335
+00:14:40,370 --> 00:14:41,780
+Trong khoá học này, nếu muốn,
+
+336
+00:14:41,780 --> 00:14:45,500
+bạn có thể làm tất cả các bài tập 
+trên một máy tính Raspberry Pi
+
+337
+00:14:45,500 --> 00:14:47,610
+nếu bạn thật sự muốn
+
+338
+00:14:47,610 --> 00:14:49,610
+Đây chính là phần cứng
+
+339
+00:14:49,610 --> 00:14:51,250
+thường được tìm thấy bên trong 
+các loại máy tính
+
+340
+00:14:51,250 --> 00:14:53,790
+Nó thường ở trong một lớp vỏ 
+nên bạn không nhìn thấy
+
+341
+00:14:53,790 --> 00:14:55,040
+Nó trông như vậy đấy
+
+342
+00:14:55,040 --> 00:14:59,400
+Với các màu lục, bạc, và vàng.
+
+343
+00:14:59,400 --> 00:15:02,560
+Tôi nghĩ nó rất đẹp
+
+344
+00:15:02,560 --> 00:15:03,815
+Thực sự đẹp
+
+345
+00:15:03,815 --> 00:15:05,940
+Rất nhiều kĩ thuật được áp dụng
+để làm nên sản phẩm như thế này
+
+346
+00:15:05,940 --> 00:15:08,920
+
+347
+00:15:08,920 --> 00:15:12,960
+Đây là sơ đồ khối về
+kiến trúc bên trong máy
+
+348
+00:15:12,960 --> 00:15:16,010
+Có vài thuật ngữ
+
+349
+00:15:16,010 --> 00:15:21,130
+Bộ não của nó --
+Tôi vẽ sơ đồ khối này một phần là vì
+
+350
+00:15:21,130 --> 00:15:24,110
+Oh, có một phần của nó
+
+351
+00:15:24,110 --> 00:15:27,710
+ bị rơi ra
+
+352
+00:15:27,710 --> 00:15:29,010
+Tôi không chắc nó là 
+phần nào trong đây
+
+353
+00:15:29,010 --> 00:15:31,360
+Nhưng không sao,
+thứ này vốn dĩ đã bị hư rồi
+
+354
+00:15:31,360 --> 00:15:32,860
+Nếu bạn có một máy tính để bàn
+
+355
+00:15:32,860 --> 00:15:34,484
+thì bên trong nó sẽ trông như thế này
+
+356
+00:15:34,484 --> 00:15:36,225
+Phần này được gọi là 
+bo mạch chủ
+
+357
+00:15:36,225 --> 00:15:38,370
+Nó có chức năng kết nối
+
+358
+00:15:38,370 --> 00:15:40,197
+tất cả các bộ phận của máy tính lại với nhau
+
+359
+00:15:40,197 --> 00:15:41,280
+thông qua nhiều đoạn dây dẫn
+
+360
+00:15:41,280 --> 00:15:44,100
+Những đường nối trên bề mặt nó
+thực chất là những dây dẫn nối nhau
+
+361
+00:15:44,100 --> 00:15:46,040
+được phủ lên một lớp sơn
+
+362
+00:15:46,040 --> 00:15:48,180
+Cũng có một vài bộ phận
+đâm xuyên qua bo mạch
+
+363
+00:15:48,180 --> 00:15:50,910
+dùng để nối các loại chip khác nhau
+
+364
+00:15:50,910 --> 00:15:54,630
+Đây là tất cả những gì
+sơ đồ trên biểu thị
+
+365
+00:15:54,630 --> 00:15:58,207
+nhưng ngoài ra, còn được
+kết nối với một số phụ kiện khác
+
+366
+00:15:58,207 --> 00:15:59,790
+Đây là bộ xử lý trung tâm (CPU)
+
+367
+00:15:59,790 --> 00:16:03,220
+ mà tôi đã nói lúc trước
+
+368
+00:16:03,220 --> 00:16:06,470
+Nó được xem là bộ não của máy tính
+
+369
+00:16:06,470 --> 00:16:08,330
+Nhưng chưa hẳn là một bộ não
+
+370
+00:16:08,330 --> 00:16:11,650
+Thực tế, nó chỉ là một máy tính 
+có thể lập trình và có khả năng tính cực nhanh
+
+371
+00:16:11,650 --> 00:16:13,820
+Ta làm cho nó trở nên linh hoạt 
+bởi sự sáng tạo của mình
+
+372
+00:16:13,820 --> 00:16:14,800
+khi ta viết các chương trình
+
+373
+00:16:14,800 --> 00:16:16,420
+Ta làm cho nó có vẻ thông minh
+
+374
+00:16:16,420 --> 00:16:17,920
+Chính con người mang lại trí thông minh
+
+375
+00:16:17,920 --> 00:16:21,080
+bằng cách đưa những hiểu biết của mình vào trong đó
+
+376
+00:16:21,080 --> 00:16:22,860
+Bản thân CPU không hề thông minh
+

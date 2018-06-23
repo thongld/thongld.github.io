@@ -1,0 +1,117 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/uRbhW-gimZI
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:02,210
+DR. JONATHAN VALVANO: I'm Jon Valvano.
+
+3
+00:00:02,210 --> 00:00:06,080
+In this video we will use
+edge triggered interrupts
+
+4
+00:00:06,080 --> 00:00:07,940
+to solve a real time problem.
+
+5
+00:00:07,940 --> 00:00:11,460
+
+6
+00:00:11,460 --> 00:00:13,530
+The problem we're
+going to solve is we're
+
+7
+00:00:13,530 --> 00:00:18,570
+going to have a switch attached to
+PF4, and when we touch the switch,
+
+8
+00:00:18,570 --> 00:00:21,690
+there will be a falling edge on PF4.
+
+9
+00:00:21,690 --> 00:00:26,200
+The action I wish to perform
+is to increment a counter.
+
+10
+00:00:26,200 --> 00:00:30,580
+This is a software action,
+and so the interrupt
+
+11
+00:00:30,580 --> 00:00:33,600
+is going to trigger a software action.
+
+12
+00:00:33,600 --> 00:00:39,780
+And the time between the hardware
+event and the software action
+
+13
+00:00:39,780 --> 00:00:42,780
+is called latency.
+
+14
+00:00:42,780 --> 00:00:49,455
+This is a time delay between
+a desire and an action.
+
+15
+00:00:49,455 --> 00:00:55,390
+And if this latency is less
+than a bound, in other words
+
+16
+00:00:55,390 --> 00:00:58,900
+it's always less than
+some number, then we
+
+17
+00:00:58,900 --> 00:01:02,780
+will classify this system as real time.
+
+18
+00:01:02,780 --> 00:01:06,180
+In order to make this real time,
+we're going to use the interrupts.
+
+19
+00:01:06,180 --> 00:01:11,410
+The interrupt is going to cause a
+trigger on the falling edge of PF4.
+
+20
+00:01:11,410 --> 00:01:14,390
+We'll acknowledge the interrupt,
+which is to clear the trigger,
+
+21
+00:01:14,390 --> 00:01:16,090
+and then we'll increment the variable.
+
+22
+00:01:16,090 --> 00:01:19,990
+
+23
+00:01:19,990 --> 00:01:25,430
+After incrementing the variable, we'll
+return back to where we came from.
+
+24
+00:01:25,430 --> 00:01:29,165
+Next we'll show you the steps
+involved in initializing
+
+25
+00:01:29,165 --> 00:01:31,171
+the edge triggered interrupts.
+
+26
+00:01:31,171 --> 00:01:31,671

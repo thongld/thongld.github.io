@@ -1,0 +1,324 @@
+0
+00:00:06,700 --> 00:00:11,120
+Nếu có tương quan thuận giữa số kem một người ăn ở bãi biển
+
+1
+00:00:11,120 --> 00:00:15,419
+với số người chết đuối, thì ta có lý giải nào 
+
+2
+00:00:15,419 --> 00:00:16,580
+cho mối quan hệ này?
+
+3
+00:00:16,580 --> 00:00:22,260
+Có một khả năng là ăn kem khiến cho người ta chết đuối.
+
+4
+00:00:22,260 --> 00:00:26,700
+Có lẽ bố mẹ ta đã đúng khi nói rằng ta nên đợi nửa tiếng sau khi ăn
+
+5
+00:00:26,700 --> 00:00:28,350
+rồi mới được bơi chăng?
+
+6
+00:00:28,350 --> 00:00:33,430
+Vấn đề với thiết kế tương quan là ta không thể chỉ ra biến nào
+
+7
+00:00:33,430 --> 00:00:35,090
+làm thay đổi biến nào.
+
+8
+00:00:35,090 --> 00:00:40,700
+Ở ví dụ này, ta có thể loại trừ khả năng chết đuối đã khiến mọi người ăn kem.
+
+9
+00:00:40,700 --> 00:00:43,390
+Điều đó khá bất khả thi.
+
+10
+00:00:43,390 --> 00:00:48,600
+Vậy, ta có thể nói chắc chắn rằng ăn kem khiến người ta chết đuổi không?
+
+11
+00:00:48,600 --> 00:00:53,151
+Chỉ có hai khả năng mà ta đã loại trừ được một rồi,
+
+12
+00:00:53,151 --> 00:00:54,930
+đúng không?
+
+13
+00:00:54,930 --> 00:01:00,170
+Vấn đề là có thể có những biến khác trong mối quan hệ giữa ăn kem và chết đuối,
+
+14
+00:01:00,170 --> 00:01:04,860
+bên cạnh các biến có trong tương quan, cụ thể là số kem 
+
+15
+00:01:04,860 --> 00:01:06,940
+và số vụ chết đuối.
+
+16
+00:01:06,940 --> 00:01:12,710
+Thế những biến khác đó là gì, và ta giải thích mối tương quan như thế nào đây?
+
+17
+00:01:12,710 --> 00:01:15,750
+Có một biến hiển nhiên là nhiệt độ.
+
+18
+00:01:15,750 --> 00:01:19,960
+Trời càng nóng thì càng nhiều người ra biển, càng nhiều người ăn kem ở bãi biển
+
+19
+00:01:19,960 --> 00:01:23,530
+và càng nhiều người chết đuối ở biển.
+
+20
+00:01:23,530 --> 00:01:28,070
+Vậy nhiệt độ, hay số lượng người, nếu bạn muốn hiểu theo cách đó, chính là lý do
+
+21
+00:01:28,070 --> 00:01:31,220
+cho sự tương quan giữa ăn kem và chết đuối.
+
+22
+00:01:31,220 --> 00:01:35,930
+Nhiệt độ là biến làm thay đổi số kem mọi người ăn
+
+23
+00:01:35,930 --> 00:01:41,450
+và số người chết đuối, chứ không phải do tự thân việc ăn kem đã làm vậy.
+
+24
+00:01:41,450 --> 00:01:45,490
+Nếu muốn tìm hiểu xem việc ăn kem có khiến người ta chết đuối hay không,
+
+25
+00:01:45,490 --> 00:01:47,780
+ta sẽ phải làm một thí nghiệm.
+
+26
+00:01:47,780 --> 00:01:52,159
+Để có được một mối quan hệ nhân quả, ta phải điều khiển một biến.
+
+27
+00:01:52,159 --> 00:01:53,700
+Đó sẽ là biến độc lập của ta.
+
+28
+00:01:53,700 --> 00:01:57,790
+Ta sẽ lấy một nhóm người, chia đôi số người ra.
+
+29
+00:01:57,790 --> 00:02:00,630
+Với nửa này, ta sẽ cho họ ăn kem.
+
+30
+00:02:00,630 --> 00:02:02,700
+Thật nhiều kem vào!
+
+31
+00:02:02,700 --> 00:02:06,510
+Với nửa còn lại, ta sẽ không cho họ ăn kem.
+
+32
+00:02:06,510 --> 00:02:11,420
+Biến độc lập của ta là những người này có được ăn kem hay không.
+
+33
+00:02:11,420 --> 00:02:16,090
+Ta điều khiển biến độc lập để xem ảnh hưởng của nó tới biến phụ thuộc.
+
+34
+00:02:16,090 --> 00:02:18,980
+Biến phụ thuộc là tỉ lệ chết đuối.
+
+35
+00:02:18,980 --> 00:02:24,069
+Ta đưa hai nhóm người này ra bãi biển, đẩy bọn họ về phía có nước.
+
+36
+00:02:24,069 --> 00:02:28,840
+Sau đó, ta lấy ống nhòm quan sát xem có bao nhiêu người chết đuối, 
+
+37
+00:02:28,840 --> 00:02:33,209
+và tính toán tỉ lệ chết đuối tương đối của số người ăn kem và số người không ăn
+
+38
+00:02:33,209 --> 00:02:37,300
+để xem số liệu có gì khác biệt giữa hai nhóm người này không.
+
+39
+00:02:37,300 --> 00:02:43,540
+Ta sẽ cần phải có một mẫu lớn thì việc phát hiện được ảnh hưởng, nếu có, mới đáng tin cậy.
+
+40
+00:02:43,540 --> 00:02:48,050
+Đó sẽ là thí nghiệm kiểm tra xem ăn kem có gây chết đuối không.
+
+41
+00:02:48,050 --> 00:02:53,060
+Rõ ràng là thí nghiệm này trái với đạo lý và chúng tôi thực tế sẽ chẳng bao giờ làm vậy.
+
+42
+00:02:53,060 --> 00:02:56,819
+Tôi nói nghiêm túc đó, đừng làm thí nghiệm này.
+
+43
+00:02:56,819 --> 00:03:01,250
+Thiết kế thí nghiệm giúp ta có thể kiểm soát các biến mà ta đang nghiên cứu,
+
+44
+00:03:01,250 --> 00:03:05,650
+nên thiết kế này là cách tốt nhất để bóc tách nguyên nhân khỏi kết quả.
+
+45
+00:03:05,650 --> 00:03:10,510
+Tuy nhiên, tùy vào biến ta nghiên cứu, việc điều khiển các biến không phải lúc nào
+
+46
+00:03:10,510 --> 00:03:12,110
+cũng hợp đạo lý hay hợp pháp.
+
+47
+00:03:12,110 --> 00:03:17,240
+Ví dụ, ta không thể nghiên cứu xem việc cầm tù có giúp những kẻ giết người hàng loạt cải tà quy chính không
+
+48
+00:03:17,240 --> 00:03:20,420
+bằng cách điều khiển các biến mà ta quan tâm.
+
+49
+00:03:20,420 --> 00:03:24,600
+Ta không thể tóm 50 tên giết người hàng loạt nhốt vào tù, và tóm 50 tên khác
+
+50
+00:03:24,600 --> 00:03:29,060
+rồi đưa ra ngoài xã hội để xem chuyện gì sẽ xảy ra.
+
+51
+00:03:29,060 --> 00:03:30,750
+Ta không thể làm vậy được.
+
+52
+00:03:30,750 --> 00:03:35,200
+Do tiến hành trong diều kiện được kiểm soát rất chặt chẽ,
+
+53
+00:03:35,200 --> 00:03:38,230
+các thí nghiệm thường thiếu tính thực tế của đời sống thường ngày.
+
+54
+00:03:38,230 --> 00:03:42,489
+Ta không thể nghiên cứu hành vi giáo phái bằng cách đem người đến phòng lab và bảo 
+
+55
+00:03:42,489 --> 00:03:44,250
+"Cảm ơn mọi người đã đến buổi nghiên cứu này.
+
+56
+00:03:44,250 --> 00:03:45,849
+Sẽ mất khoảng một giờ thôi.
+
+57
+00:03:45,849 --> 00:03:48,050
+Giờ các bạn đang ở trong một giáo phái.
+
+58
+00:03:48,050 --> 00:03:51,150
+Cứ làm mấy việc giống một giáo phái đi, tôi sẽ ngồi đây quan sát.
+
+59
+00:03:51,150 --> 00:03:54,019
+Khoảng 45 phút nữa sẽ đến tận thế.
+
+60
+00:03:54,019 --> 00:03:55,840
+Muốn làm gì cũng được."
+
+61
+00:03:55,840 --> 00:03:57,690
+Vậy sẽ không hiệu quả.
+
+62
+00:03:57,690 --> 00:04:02,360
+Ta thường phải nghĩ ra các tình huống giả lập, nhưng sử dụng chúng nó một mục đích cụ thể.
+
+63
+00:04:02,360 --> 00:04:06,470
+Bởi vì ta quan tâm đến nguyên nhân - kết quả.
+
+64
+00:04:06,470 --> 00:04:10,860
+Nếu được thiết kế chính xác, thiết kế thực nghiệm sẽ là phương pháp nghiên cứu duy nhất
+
+65
+00:04:10,860 --> 00:04:14,569
+có thể thu thập thông tin rõ ràng về nguyên nhân và kết quả.
+
+66
+00:04:14,569 --> 00:04:17,430
+Hãy cùng quan sát nghiên cứu này.
+
+67
+00:04:17,430 --> 00:04:21,620
+Giả sử tôi quan tâm tới việc nhịp tim và huyết áp của con người khi xem phim bao lực
+
+68
+00:04:21,620 --> 00:04:25,610
+có cao hơn so với phim không bao lực không.
+
+69
+00:04:25,610 --> 00:04:28,930
+Với phim bạo lực, ta có thể cho họ xem "Commando".
+
+70
+00:04:28,930 --> 00:04:33,509
+Vào thời điểm ra rạp thì đây là bộ phim có nhiều cảnh giết chóc nhất điện ảnh Hollywood.
+
+71
+00:04:33,509 --> 00:04:37,539
+Với phim không bạo lực thì ta sẽ chiếu một tập của "The Wiggles"
+
+72
+00:04:37,539 --> 00:04:40,650
+The Wiggles là một chương trình ca nhạc thiếu nhi.
+
+73
+00:04:40,650 --> 00:04:44,889
+Nếu bạn không phải là bậc cha mẹ, thì phim này sẽ không có cảnh bạo lực, không tạo cảm giác lo lắng hay phẫn nộ gì.
+
+74
+00:04:44,889 --> 00:04:47,330
+Nếu đã làm bố mẹ thì cũng có thể lắm.
+
+75
+00:04:47,330 --> 00:04:50,960
+Giả sử ta làm một nghiên cứu như sau, những người đến vào ca thí nghiệm sáng
+
+76
+00:04:50,960 --> 00:04:55,369
+sẽ xem phim "Commando", còn những người đến vào ca chiều,
+
+77
+00:04:55,369 --> 00:04:57,210
+sẽ xem “The Wiggles.”
+
+78
+00:04:57,210 --> 00:04:59,340
+Sau đó ta sẽ đo nhịp tim và huyết áp của họ.
+
+79
+00:04:59,340 --> 00:05:01,319
+Bạn nghĩ biến độc lập sẽ là gì?
+
+80
+00:05:01,319 --> 00:05:02,939
+Và biến phụ thuộc là gì?
+

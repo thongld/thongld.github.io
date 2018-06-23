@@ -1,0 +1,423 @@
+92
+00:04:35,610 --> 00:04:39,410
+http://open.umich.edu/sites/default/files/py4inf-01-intro.pdf https://youtu.be/G721cooZXgs
+We're with the CPU, we are with the
+memory.
+
+93
+00:04:39,410 --> 00:04:41,370
+We are with the network connection.
+
+94
+00:04:41,370 --> 00:04:45,600
+We are doing things on behalf of the user,
+and presenting them back up to the user.
+
+95
+00:04:47,870 --> 00:04:49,580
+So, why be a programmer?
+
+96
+00:04:49,580 --> 00:04:52,850
+Now, this class is specifically not trying
+to turn you
+
+97
+00:04:52,850 --> 00:04:55,650
+into a professional programmer, even
+though I'd be very proud
+
+98
+00:04:55,650 --> 00:04:58,180
+if after five, ten more classes you were a
+
+99
+00:04:58,180 --> 00:05:01,530
+professional programmer. But that's not the
+purpose of this class.
+
+100
+00:05:01,530 --> 00:05:03,320
+Sometimes you just want to get something
+done.
+
+101
+00:05:03,320 --> 00:05:06,860
+You got an Excel spreadsheet at work and
+the data's not right.
+
+102
+00:05:06,860 --> 00:05:08,750
+You got the data from somebody else and
+it's
+
+103
+00:05:08,750 --> 00:05:12,240
+got like extra spaces where it shouldn't
+have it or
+
+104
+00:05:12,240 --> 00:05:17,120
+does missing fields or something, you gotta do
+something to it that Excel can't do.
+
+105
+00:05:17,120 --> 00:05:18,640
+And you're, you're stuck, like, saying,
+Aw, I
+
+106
+00:05:18,640 --> 00:05:20,920
+want to, I want to mess with this data and
+
+107
+00:05:20,920 --> 00:05:23,620
+put it in Excel so I can do my job, but
+it's a pain in the neck.
+
+108
+00:05:23,620 --> 00:05:26,960
+And I have to sit and bring it into a text
+editor like Microsoft Word
+
+109
+00:05:26,960 --> 00:05:30,530
+and go line by line and make all kinds of
+mistakes and clean the data up.
+
+110
+00:05:30,530 --> 00:05:31,960
+You can write a program to do that,
+
+111
+00:05:31,960 --> 00:05:33,320
+and that's the kind of programs we're
+going to do.
+
+112
+00:05:33,320 --> 00:05:37,810
+Programs that serve our needs inside the
+computer, but to serve our needs.
+
+113
+00:05:37,810 --> 00:05:42,690
+Professional programmers tend to build
+things for other people to use, right?
+
+114
+00:05:42,690 --> 00:05:44,650
+They, they tend to build things that
+everyone else does.
+
+115
+00:05:44,650 --> 00:05:49,480
+But we're going to build stuff primarily
+for ourselves.
+
+116
+00:05:49,480 --> 00:05:50,720
+So.
+
+117
+00:05:50,720 --> 00:05:51,820
+What is code?
+
+118
+00:05:51,820 --> 00:05:52,570
+What is software?
+
+119
+00:05:52,570 --> 00:05:55,660
+We use these words pretty much
+independently, a program.
+
+120
+00:05:55,660 --> 00:05:58,530
+It's really a sequence of stored
+instructions.
+
+121
+00:05:58,530 --> 00:06:01,790
+We learn the language that this talks, and
+then
+
+122
+00:06:01,790 --> 00:06:05,110
+we will feed the instructions in, one at a
+time.
+
+123
+00:06:05,110 --> 00:06:08,720
+It takes them one at a time, it gives us
+back a result, we give it the next one.
+
+124
+00:06:08,720 --> 00:06:11,020
+It gives it back, in, out, in, out.
+
+125
+00:06:11,020 --> 00:06:13,030
+So it's really a sequence of stored
+instructions.
+
+126
+00:06:13,030 --> 00:06:15,890
+But it's kind of more than that.
+
+127
+00:06:15,890 --> 00:06:19,290
+It's, it's sort of like our creativity,
+and if you've been using some of
+
+128
+00:06:19,290 --> 00:06:21,040
+my software, like my MOOC software, I
+
+129
+00:06:21,040 --> 00:06:23,980
+spent about a month writing all that
+stuff.
+
+130
+00:06:23,980 --> 00:06:25,700
+And it's like, it's me.
+
+131
+00:06:25,700 --> 00:06:29,070
+I mean I'm, it's my vision of how cool
+stuff ought to work, right?
+
+132
+00:06:29,070 --> 00:06:32,380
+And so it's more than just getting
+something done.
+
+133
+00:06:32,380 --> 00:06:34,930
+It's also a sense of pride and a sense of
+accomplishment.
+
+134
+00:06:34,930 --> 00:06:37,580
+Especially if you're giving something that
+other people can make use of.
+
+135
+00:06:37,580 --> 00:06:40,090
+It's really, I think it's very creative.
+
+136
+00:06:40,090 --> 00:06:42,580
+And it's what attracted me to being a
+programmer in the first place.
+
+137
+00:06:42,580 --> 00:06:46,230
+It's that I could, I could leverage the
+abilities inside of here,
+
+138
+00:06:46,230 --> 00:06:49,790
+and I could do things, cool things, on
+behalf of the user.
+
+139
+00:06:49,790 --> 00:06:54,570
+So, code, software, a program.
+
+140
+00:06:54,570 --> 00:06:58,720
+So, let's get a non-technical example of
+this.
+
+141
+00:07:00,270 --> 00:07:03,880
+So, I'll have you link out to the YouTube
+[COUGH] for this.
+
+142
+00:07:03,880 --> 00:07:06,170
+This is the Macarena.
+
+143
+00:07:06,170 --> 00:07:09,700
+The Macarena is a song that
+
+144
+00:07:09,700 --> 00:07:11,750
+has with it a well-known dance that
+everyone
+
+145
+00:07:11,750 --> 00:07:14,730
+seems to know, or either get taught very
+quickly.
+
+146
+00:07:14,730 --> 00:07:18,993
+So I'll, I'll stop and let you watch the
+Macarena, and then come back.
+
+147
+00:07:18,993 --> 00:07:22,016
+[BLANK_AUDIO]
+
+148
+00:07:22,016 --> 00:07:23,590
+So welcome back.
+
+149
+00:07:23,590 --> 00:07:24,680
+I hope you enjoyed that.
+
+150
+00:07:25,910 --> 00:07:28,600
+In a sense what we've got there is
+
+151
+00:07:28,600 --> 00:07:29,580
+a program.
+
+152
+00:07:29,580 --> 00:07:30,830
+A program for human beings.
+
+153
+00:07:31,868 --> 00:07:33,749
+And, maybe you learned that at a club or
+
+154
+00:07:33,749 --> 00:07:36,160
+something, and they told you what to do
+next.
+
+155
+00:07:36,160 --> 00:07:37,740
+Well, I can teach you how to do
+
+156
+00:07:37,740 --> 00:07:41,160
+the Macarena by writing a simple program
+right now.
+
+157
+00:07:41,160 --> 00:07:42,210
+So here's my Macarena.
+
+158
+00:07:43,740 --> 00:07:45,990
+While the music plays, means you do it
+over and over
+
+159
+00:07:45,990 --> 00:07:48,570
+and over again, to the beat, that's kind
+of like computers.
+
+160
+00:07:48,570 --> 00:07:49,620
+They do things in a beat.
+
+161
+00:07:49,620 --> 00:07:52,000
+They happen to have three billion beats a
+second.
+
+162
+00:07:52,000 --> 00:07:55,300
+But as it were, so we're going to do this
+multiple times so
+
+163
+00:07:55,300 --> 00:07:58,180
+we have this whole group of instructions
+that we're going to do, right?
+
+164
+00:07:59,270 --> 00:08:05,130
+Left hand out and up, right hand out and
+up, flip left hand, flip right hand, left
+
+165
+00:08:05,130 --> 00:08:11,960
+hand to right shoulder, right hand to left
+shoulder, et cetera, et cetera.
+
+166
+00:08:11,960 --> 00:08:17,170
+Now this particular little program has a
+mistake in it.
+
+167
+00:08:17,170 --> 00:08:18,350
+Actually several.
+
+168
+00:08:18,350 --> 00:08:22,141
+I want you to look and see if you can find
+the mistakes in the program.
+
+169
+00:08:22,141 --> 00:08:29,093
+[BLANK_AUDIO]
+
+170
+00:08:29,093 --> 00:08:30,000
+Okay.
+
+171
+00:08:30,000 --> 00:08:33,480
+So here are the places that have the
+mistake.
+
+172
+00:08:33,480 --> 00:08:34,040
+Right?
+
+173
+00:08:34,040 --> 00:08:34,850
+The mistake is
+
+174
+00:08:37,540 --> 00:08:43,910
+right ham to the back of the head, and
+left hand to right hit, not hip.
+
+175
+00:08:43,910 --> 00:08:47,790
+Now if you're in a bar and you take a ham
+and you hit somebody
+
+176
+00:08:47,790 --> 00:08:52,360
+in the back of the head, that's not very
+nice when you're dancing to this song.
+
+177
+00:08:52,360 --> 00:08:54,270
+These are what's called bugs.
+
+178
+00:08:54,270 --> 00:08:56,550
+Now a human reading this
+
+179
+00:08:56,550 --> 00:09:00,910
+would say, oh, I think they meant to say
+"hand" here.
+
+180
+00:09:00,910 --> 00:09:03,380
+But a computer is much more literal than
+people.
+
+181
+00:09:03,380 --> 00:09:06,530
+We'll see a couple of exercises where
+we'll see that people
+
+182
+00:09:06,530 --> 00:09:11,780
+can correct little mistakes like this, but
+computers they cannot, right?
+

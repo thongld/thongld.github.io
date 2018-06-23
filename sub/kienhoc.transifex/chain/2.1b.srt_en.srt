@@ -1,0 +1,960 @@
+0
+00:00:00,000 --> 00:00:00,377
+https://youtu.be/71EgPoBY_38
+
+1
+00:00:00,377 --> 00:00:02,210
+So let's talk about the different components
+
+2
+00:00:02,210 --> 00:00:05,170
+we'll be looking for in time series analysis.
+
+3
+00:00:05,170 --> 00:00:07,800
+The first component we're going to look for is the level.
+
+4
+00:00:07,800 --> 00:00:11,410
+This is the value where a demand hovers, the mean.
+
+5
+00:00:11,410 --> 00:00:13,520
+So over here on the right we have this picture
+
+6
+00:00:13,520 --> 00:00:15,660
+of all the different observations.
+
+7
+00:00:15,660 --> 00:00:17,200
+What we can see here is that they're
+
+8
+00:00:17,200 --> 00:00:19,710
+all kind of hovering around a certain level.
+
+9
+00:00:19,710 --> 00:00:22,490
+And this captures the scale of the time series analysis
+
+10
+00:00:22,490 --> 00:00:26,640
+because this kind of sets the level on the demand side.
+
+11
+00:00:26,640 --> 00:00:29,710
+And if there's no other pattern, no other components present,
+
+12
+00:00:29,710 --> 00:00:31,560
+then we can say the forecast is going
+
+13
+00:00:31,560 --> 00:00:33,590
+to be this constant value.
+
+14
+00:00:33,590 --> 00:00:35,690
+So we're going to call this Level (a)
+
+15
+00:00:35,690 --> 00:00:38,070
+and you can see it's just the mean or the average
+
+16
+00:00:38,070 --> 00:00:41,600
+where all those different observations hover.
+
+17
+00:00:41,600 --> 00:00:44,080
+So this is the easiest pattern-- level.
+
+18
+00:00:44,080 --> 00:00:46,210
+The second one is a trend, and this
+
+19
+00:00:46,210 --> 00:00:48,520
+is defined as the rate of growth or decline.
+
+20
+00:00:48,520 --> 00:00:50,120
+It's got to be persistent movement
+
+21
+00:00:50,120 --> 00:00:52,300
+in one direction or the other.
+
+22
+00:00:52,300 --> 00:00:54,140
+We show this as a positive trend.
+
+23
+00:00:54,140 --> 00:00:56,100
+You can also have a negative trend.
+
+24
+00:00:56,100 --> 00:00:57,670
+It could happen.
+
+25
+00:00:57,670 --> 00:01:00,580
+It's typically linear like what we have right here.
+
+26
+00:01:00,580 --> 00:01:02,080
+So this is a linear trend, and we're
+
+27
+00:01:02,080 --> 00:01:04,769
+going to say the slope is b.
+
+28
+00:01:04,769 --> 00:01:06,520
+But you could have an exponential trend
+
+29
+00:01:06,520 --> 00:01:08,020
+that would look something like this.
+
+30
+00:01:08,020 --> 00:01:09,990
+Very dangerous, because then you have
+
+31
+00:01:09,990 --> 00:01:13,570
+to make sure it goes-- grows exponentially.
+
+32
+00:01:13,570 --> 00:01:15,580
+So you have to monitor it very closely.
+
+33
+00:01:15,580 --> 00:01:18,230
+If you start modeling an exponential trend,
+
+34
+00:01:18,230 --> 00:01:19,540
+it will blow up.
+
+35
+00:01:19,540 --> 00:01:22,380
+So you have to be very careful in monitoring that.
+
+36
+00:01:22,380 --> 00:01:24,850
+More common is you'll see something
+
+37
+00:01:24,850 --> 00:01:26,285
+like this, where you have a level,
+
+38
+00:01:26,285 --> 00:01:29,450
+and you expect it to tail out.
+
+39
+00:01:29,450 --> 00:01:31,010
+It'll dampen.
+
+40
+00:01:31,010 --> 00:01:33,370
+And we'll talk more about that, because the thing
+
+41
+00:01:33,370 --> 00:01:36,170
+about trends-- trends don't go on forever.
+
+42
+00:01:36,170 --> 00:01:37,920
+And so we eventually assume that they
+
+43
+00:01:37,920 --> 00:01:42,910
+will change slope and maybe temper down a little bit.
+
+44
+00:01:42,910 --> 00:01:44,950
+So you have to monitor that.
+
+45
+00:01:44,950 --> 00:01:47,550
+But that's the second component we're looking at is trend.
+
+46
+00:01:47,550 --> 00:01:51,299
+So we've got level, trend, and then we've got seasonality.
+
+47
+00:01:51,299 --> 00:01:52,840
+We're going to call that F, and we'll
+
+48
+00:01:52,840 --> 00:01:56,480
+talk about what that means, this F factor.
+
+49
+00:01:56,480 --> 00:02:00,220
+But essentially, seasonality is a repeated cycle.
+
+50
+00:02:00,220 --> 00:02:04,070
+And the important thing is it's around a known or fixed period
+
+51
+00:02:04,070 --> 00:02:09,650
+of time-- hourly, daily, weekly, monthly, quarterly, annually.
+
+52
+00:02:09,650 --> 00:02:13,300
+It doesn't matter as long as it's fixed and known.
+
+53
+00:02:13,300 --> 00:02:16,590
+And it can be caused by either natural forces or man-made.
+
+54
+00:02:16,590 --> 00:02:18,340
+You can think of summer and winter.
+
+55
+00:02:18,340 --> 00:02:20,260
+In the winter you're not going to have
+
+56
+00:02:20,260 --> 00:02:22,900
+as much demand for certain products.
+
+57
+00:02:22,900 --> 00:02:25,340
+Man-made things like back to school,
+
+58
+00:02:25,340 --> 00:02:27,130
+that happens at a certain time of year.
+
+59
+00:02:27,130 --> 00:02:30,620
+It always happens in the fall-- in North America, anyway.
+
+60
+00:02:30,620 --> 00:02:32,010
+And so what that means is there's
+
+61
+00:02:32,010 --> 00:02:34,560
+going to be this seasonality, and it's nothing
+
+62
+00:02:34,560 --> 00:02:37,810
+to do with natural causes-- it's all man-made.
+
+63
+00:02:37,810 --> 00:02:40,060
+But again, remember when we talk about time series,
+
+64
+00:02:40,060 --> 00:02:42,190
+this is a black box method.
+
+65
+00:02:42,190 --> 00:02:44,370
+I'm just looking at the seasonality
+
+66
+00:02:44,370 --> 00:02:49,870
+to try to see the patterns in the existing data.
+
+67
+00:02:49,870 --> 00:02:53,050
+Then the last one-- or not the last one, the fourth one,
+
+68
+00:02:53,050 --> 00:02:54,620
+is random fluctuations.
+
+69
+00:02:54,620 --> 00:02:57,030
+And we're going to call this e, or epsilon.
+
+70
+00:02:57,030 --> 00:02:58,970
+And this is the remainder of the variability
+
+71
+00:02:58,970 --> 00:03:01,900
+after all the other components have been used.
+
+72
+00:03:01,900 --> 00:03:04,090
+So it's kind of what's left over.
+
+73
+00:03:04,090 --> 00:03:06,950
+And you see irregular, unpredictable variations.
+
+74
+00:03:06,950 --> 00:03:08,890
+Everything you see here, all the little noise.
+
+75
+00:03:08,890 --> 00:03:09,389
+Right?
+
+76
+00:03:09,389 --> 00:03:11,850
+All the little noise.
+
+77
+00:03:11,850 --> 00:03:14,090
+And it's something that we will always have there,
+
+78
+00:03:14,090 --> 00:03:17,850
+because a prediction will never be totally accurate.
+
+79
+00:03:17,850 --> 00:03:20,250
+So you're always going to have this noise.
+
+80
+00:03:20,250 --> 00:03:22,620
+Now there is a fifth component that we
+
+81
+00:03:22,620 --> 00:03:23,777
+want to talk about briefly.
+
+82
+00:03:23,777 --> 00:03:25,360
+We're not going to do too much with it
+
+83
+00:03:25,360 --> 00:03:26,818
+the remainder of this course, but I
+
+84
+00:03:26,818 --> 00:03:29,010
+want to make sure you understand what it is.
+
+85
+00:03:29,010 --> 00:03:30,920
+And that's cyclical movements.
+
+86
+00:03:30,920 --> 00:03:34,090
+So a cyclical movement is not like seasonality.
+
+87
+00:03:34,090 --> 00:03:36,450
+Yes, it's a periodic movement, but it's not
+
+88
+00:03:36,450 --> 00:03:37,910
+with a fixed period.
+
+89
+00:03:37,910 --> 00:03:40,470
+So the length of it differs.
+
+90
+00:03:40,470 --> 00:03:43,530
+A lot of times this is used for business cycles or any kind
+
+91
+00:03:43,530 --> 00:03:46,610
+of economic or macroeconomic conditions.
+
+92
+00:03:46,610 --> 00:03:49,510
+So let me give you an example here.
+
+93
+00:03:49,510 --> 00:03:50,620
+This is a great statistic.
+
+94
+00:03:50,620 --> 00:03:53,830
+This is the PMI, the Purchasing Manager Index
+
+95
+00:03:53,830 --> 00:03:55,860
+from the Institute of Supply Management.
+
+96
+00:03:55,860 --> 00:03:59,200
+And that's an index they run from 0 to 100,
+
+97
+00:03:59,200 --> 00:04:01,610
+and the key number is 50.
+
+98
+00:04:01,610 --> 00:04:04,840
+And so if their index is below 50,
+
+99
+00:04:04,840 --> 00:04:08,670
+then that means they think the economy is contracting.
+
+100
+00:04:08,670 --> 00:04:10,769
+And if it's above 50, they think it's expanding.
+
+101
+00:04:10,769 --> 00:04:13,060
+And they do this through a bunch of surveys and things.
+
+102
+00:04:13,060 --> 00:04:14,601
+They've been doing it for many years.
+
+103
+00:04:14,601 --> 00:04:19,240
+And here's a recent snapshot from 2006, October 2006,
+
+104
+00:04:19,240 --> 00:04:21,980
+to October 2010, which captured a recession.
+
+105
+00:04:21,980 --> 00:04:24,380
+Pretty much a global recession.
+
+106
+00:04:24,380 --> 00:04:26,455
+So you see here what happened is they
+
+107
+00:04:26,455 --> 00:04:29,370
+were kind of in the middle, kind of hanging out in the middle,
+
+108
+00:04:29,370 --> 00:04:31,960
+and then we had a very big contraction.
+
+109
+00:04:31,960 --> 00:04:35,920
+And then we started expanding out over the last couple years.
+
+110
+00:04:35,920 --> 00:04:37,510
+So this is a business cycle.
+
+111
+00:04:37,510 --> 00:04:40,230
+And in this case, the business cycle
+
+112
+00:04:40,230 --> 00:04:42,550
+lasted about-- what is that?
+
+113
+00:04:42,550 --> 00:04:43,550
+About a year and a half?
+
+114
+00:04:43,550 --> 00:04:44,780
+18 months?
+
+115
+00:04:44,780 --> 00:04:47,110
+So you can think about that, but other business cycles
+
+116
+00:04:47,110 --> 00:04:49,630
+will last many different lengths of time.
+
+117
+00:04:49,630 --> 00:04:54,460
+So here we are-- the same index, but going back to 1949.
+
+118
+00:04:54,460 --> 00:04:58,390
+And you can see that these different troughs and cycles
+
+119
+00:04:58,390 --> 00:05:00,450
+have many different lengths of time.
+
+120
+00:05:00,450 --> 00:05:03,800
+So this is why it's a cyclical movement-- it's not periodic.
+
+121
+00:05:03,800 --> 00:05:07,420
+If we knew exactly how long each downturn in the economy
+
+122
+00:05:07,420 --> 00:05:09,750
+would be, it would be a very different world.
+
+123
+00:05:09,750 --> 00:05:12,150
+Let me point out one other thing.
+
+124
+00:05:12,150 --> 00:05:17,010
+If I'm sitting here-- let's say we're in the summer of 2009,
+
+125
+00:05:17,010 --> 00:05:20,070
+or the spring of 2009, right in here--
+
+126
+00:05:20,070 --> 00:05:23,030
+and I'm forecasting for the next three to six months,
+
+127
+00:05:23,030 --> 00:05:27,050
+if I just take this snapshot, and this is my world,
+
+128
+00:05:27,050 --> 00:05:28,500
+what does my world look like?
+
+129
+00:05:28,500 --> 00:05:31,610
+It looks like I'm in a major trend.
+
+130
+00:05:31,610 --> 00:05:35,740
+So depending on the level of your view as you come in,
+
+131
+00:05:35,740 --> 00:05:38,450
+and if you do a very short term forecast,
+
+132
+00:05:38,450 --> 00:05:41,910
+you might be seeing a tremendous uptick,
+
+133
+00:05:41,910 --> 00:05:45,850
+a steep trend in the economy.
+
+134
+00:05:45,850 --> 00:05:48,680
+And so one thing about these different patterns,
+
+135
+00:05:48,680 --> 00:05:51,070
+it really matters what your level of view
+
+136
+00:05:51,070 --> 00:05:53,160
+is, what your horizon is.
+
+137
+00:05:53,160 --> 00:05:56,470
+Because similarly if I was sitting over here,
+
+138
+00:05:56,470 --> 00:06:02,640
+and I'm in the fall of 2008, I'm in a negative trend.
+
+139
+00:06:02,640 --> 00:06:06,410
+So the point I'm trying to make here-- where you sit
+
+140
+00:06:06,410 --> 00:06:08,740
+and what your time frame is dictates
+
+141
+00:06:08,740 --> 00:06:12,311
+a lot of what pattern you're looking at.
+
+142
+00:06:12,311 --> 00:06:12,810
+OK.
+
+143
+00:06:12,810 --> 00:06:14,840
+So we have these five patterns.
+
+144
+00:06:14,840 --> 00:06:18,190
+We have a level, we have a trend, we have seasonality,
+
+145
+00:06:18,190 --> 00:06:20,530
+we have the cyclical movements, and then we
+
+146
+00:06:20,530 --> 00:06:21,950
+have this error term.
+
+147
+00:06:21,950 --> 00:06:22,950
+What do I do with those?
+
+148
+00:06:22,950 --> 00:06:24,110
+Well, I can combine them.
+
+149
+00:06:24,110 --> 00:06:27,270
+And there's different ways I can combine these components.
+
+150
+00:06:27,270 --> 00:06:29,250
+One way is multiplicative.
+
+151
+00:06:29,250 --> 00:06:32,860
+If I think the trend changes with-- Let's say
+
+152
+00:06:32,860 --> 00:06:36,980
+I have every season-- winter, spring, summer, and fall
+
+153
+00:06:36,980 --> 00:06:41,100
+has a different trend level, and it increases by say 10%
+
+154
+00:06:41,100 --> 00:06:43,260
+or decreases by 10%.
+
+155
+00:06:43,260 --> 00:06:47,186
+If I think it's a multiplicative trend, then I multiply it.
+
+156
+00:06:47,186 --> 00:06:48,560
+And then I can multiply the error
+
+157
+00:06:48,560 --> 00:06:49,830
+and all those kind of terms.
+
+158
+00:06:49,830 --> 00:06:53,830
+So this is where I think that the changes in the seasonality
+
+159
+00:06:53,830 --> 00:06:55,620
+are relative.
+
+160
+00:06:55,620 --> 00:06:57,380
+Now another way to look at this-- let's
+
+161
+00:06:57,380 --> 00:07:00,140
+clean this up-- is to think of them as additive.
+
+162
+00:07:00,140 --> 00:07:04,800
+If I think, for example, in the summer my increase in demand
+
+163
+00:07:04,800 --> 00:07:08,180
+is an absolute amount-- say 100 units or 1,000 units-- then
+
+164
+00:07:08,180 --> 00:07:09,380
+that's additive.
+
+165
+00:07:09,380 --> 00:07:11,070
+If I think it's just a straight bump,
+
+166
+00:07:11,070 --> 00:07:14,080
+if I think it's a percentage of the trend,
+
+167
+00:07:14,080 --> 00:07:15,840
+then I'm here to multiplicative.
+
+168
+00:07:15,840 --> 00:07:19,430
+So you have to think about how you want to use these trends.
+
+169
+00:07:19,430 --> 00:07:20,880
+Is it an additive function?
+
+170
+00:07:20,880 --> 00:07:23,630
+Is it a multiplicative function?
+
+171
+00:07:23,630 --> 00:07:26,210
+But as you some of you might have already realized,
+
+172
+00:07:26,210 --> 00:07:27,940
+if I think it's all multiplicative,
+
+173
+00:07:27,940 --> 00:07:31,650
+I can change that into an additive function
+
+174
+00:07:31,650 --> 00:07:33,830
+just by taking a log transformation.
+
+175
+00:07:33,830 --> 00:07:35,630
+Take a natural log-- actually a log
+
+176
+00:07:35,630 --> 00:07:38,700
+of any base-- to this function, and it
+
+177
+00:07:38,700 --> 00:07:40,990
+turns into an additive function.
+
+178
+00:07:40,990 --> 00:07:44,540
+And so you can turn a pure multiplicative function
+
+179
+00:07:44,540 --> 00:07:46,410
+into an additive function.
+
+180
+00:07:46,410 --> 00:07:49,720
+It gets a little more confusing, but you can do it.
+
+181
+00:07:49,720 --> 00:07:53,390
+But what happens more often, more commonly,
+
+182
+00:07:53,390 --> 00:07:55,580
+is this idea of mixed.
+
+183
+00:07:55,580 --> 00:07:58,450
+And so here are three examples of mixed models.
+
+184
+00:07:58,450 --> 00:08:00,430
+And there are many other ones you can do.
+
+185
+00:08:00,430 --> 00:08:02,970
+In the first one, it's saying that the demand
+
+186
+00:08:02,970 --> 00:08:06,330
+x of t-- so this is the actual demand in period t--
+
+187
+00:08:06,330 --> 00:08:11,280
+is going to be equal to the seasonality factor-- we say
+
+188
+00:08:11,280 --> 00:08:14,600
+it's multiplicative-- of the level and the trend.
+
+189
+00:08:14,600 --> 00:08:15,991
+Now this is b times t.
+
+190
+00:08:15,991 --> 00:08:16,490
+Right?
+
+191
+00:08:16,490 --> 00:08:19,320
+So this b is the slope, t is the number of time units
+
+192
+00:08:19,320 --> 00:08:20,150
+that I've done.
+
+193
+00:08:20,150 --> 00:08:23,300
+So you can see down here at the bottom the notation.
+
+194
+00:08:23,300 --> 00:08:26,670
+So this is saying that if the seasonality in the winter
+
+195
+00:08:26,670 --> 00:08:29,350
+for sales goes up by 10%, it's affecting
+
+196
+00:08:29,350 --> 00:08:31,440
+both the level and the trend.
+
+197
+00:08:31,440 --> 00:08:34,960
+Then I added the cyclical and the error term as well.
+
+198
+00:08:34,960 --> 00:08:37,450
+Another one, the second one, where
+
+199
+00:08:37,450 --> 00:08:40,090
+the actual demand in period t we're going to say
+
+200
+00:08:40,090 --> 00:08:42,960
+is equal to the level, but the level doesn't change over
+
+201
+00:08:42,960 --> 00:08:44,350
+the seasons, we're saying.
+
+202
+00:08:44,350 --> 00:08:47,446
+We're saying only the trend changes.
+
+203
+00:08:47,446 --> 00:08:49,070
+So we're saying that during the winter,
+
+204
+00:08:49,070 --> 00:08:53,329
+say, sales go up 3% instead of 6%.
+
+205
+00:08:53,329 --> 00:08:55,370
+And then in the summer it changes some other way.
+
+206
+00:08:55,370 --> 00:08:58,810
+So only the trend is being affected here.
+
+207
+00:08:58,810 --> 00:09:00,932
+And then the final one that I have down here.
+
+208
+00:09:00,932 --> 00:09:01,890
+It's just the opposite.
+
+209
+00:09:01,890 --> 00:09:05,470
+It's saying the level is affected by the season.
+
+210
+00:09:05,470 --> 00:09:08,270
+So we could say something like, in the summer,
+
+211
+00:09:08,270 --> 00:09:11,220
+usually we sell 1,000 units a month across the year,
+
+212
+00:09:11,220 --> 00:09:14,880
+but in the summer I sell about 20% more.
+
+213
+00:09:14,880 --> 00:09:16,810
+But the trend over time isn't changing.
+
+214
+00:09:16,810 --> 00:09:18,970
+It's just the level in the summer is different.
+
+215
+00:09:18,970 --> 00:09:20,840
+So you can see you can have a combination
+
+216
+00:09:20,840 --> 00:09:23,646
+of multiplicative and additive functions.
+
+217
+00:09:23,646 --> 00:09:25,020
+So what are we going to focus on?
+
+218
+00:09:25,020 --> 00:09:28,210
+We're going to focus on four models.
+
+219
+00:09:28,210 --> 00:09:30,610
+The first is just a straight level model.
+
+220
+00:09:30,610 --> 00:09:33,850
+And this is saying that the demand in period t
+
+221
+00:09:33,850 --> 00:09:36,310
+is equal to this level, this constant amount,
+
+222
+00:09:36,310 --> 00:09:39,507
+plus some error term, some noise bouncing around.
+
+223
+00:09:39,507 --> 00:09:41,090
+Next we'll go for a trend, where we're
+
+224
+00:09:41,090 --> 00:09:42,881
+saying there's this level, but then there's
+
+225
+00:09:42,881 --> 00:09:45,660
+a general trend either increasing or decreasing.
+
+226
+00:09:45,660 --> 00:09:48,390
+And if it's decreasing this b would be negative, of course.
+
+227
+00:09:48,390 --> 00:09:51,260
+
+
+228
+00:09:51,260 --> 00:09:52,650
+And then the third model is where
+
+229
+00:09:52,650 --> 00:09:54,700
+we're going to mix level and seasonality.
+
+230
+00:09:54,700 --> 00:09:56,690
+So I'm saying there is a level, and there
+
+231
+00:09:56,690 --> 00:09:58,500
+is some kind of seasonality.
+
+232
+00:09:58,500 --> 00:10:01,400
+And then the last one is kind of combining them all together,
+
+233
+00:10:01,400 --> 00:10:03,910
+where I have a mixed level, trend, and seasonality.
+
+234
+00:10:03,910 --> 00:10:09,200
+Where the level and the trend are additive,
+
+235
+00:10:09,200 --> 00:10:11,120
+but it's multiplicative in the seasonality,
+
+236
+00:10:11,120 --> 00:10:13,600
+and seasonality affects both of them.
+
+237
+00:10:13,600 --> 00:10:16,770
+So these are the models that we're going to focus on.
+
+238
+00:10:16,770 --> 00:10:17,270
+All right.
+
+239
+00:10:17,270 --> 00:10:19,250
+So let's get started.
+

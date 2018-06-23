@@ -1,0 +1,728 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/Y8b7miGTIdM
+
+1
+00:00:00,500 --> 00:00:03,030
+OK, some final comments on exponential smoothing,
+
+2
+00:00:03,030 --> 00:00:07,200
+some practical concerns, first data.
+
+3
+00:00:07,200 --> 00:00:08,840
+We talked about this briefly, but I
+
+4
+00:00:08,840 --> 00:00:10,790
+think it's very important to reemphasize
+
+5
+00:00:10,790 --> 00:00:13,250
+the fact you need three different data sets.
+
+6
+00:00:13,250 --> 00:00:16,030
+You should strive to have three different data sets.
+
+7
+00:00:16,030 --> 00:00:19,670
+The first to estimate any of the parameters, the level
+
+8
+00:00:19,670 --> 00:00:21,800
+of the trend or the seasonality factors.
+
+9
+00:00:21,800 --> 00:00:25,160
+And, again, if I suspect some kind of seasonality,
+
+10
+00:00:25,160 --> 00:00:26,919
+I need multiple seasons.
+
+11
+00:00:26,919 --> 00:00:28,460
+And, in fact, I don't know how you're
+
+12
+00:00:28,460 --> 00:00:30,910
+going to even try to see if there is seasonality
+
+13
+00:00:30,910 --> 00:00:33,620
+unless you have multiple seasons there.
+
+14
+00:00:33,620 --> 00:00:35,280
+Then you want to set of data to train
+
+15
+00:00:35,280 --> 00:00:37,520
+to determine the smoothing parameters.
+
+16
+00:00:37,520 --> 00:00:39,700
+And then, finally, once you have those,
+
+17
+00:00:39,700 --> 00:00:42,880
+you want to take a new set of data or later set of data
+
+18
+00:00:42,880 --> 00:00:45,350
+and evaluate the quality, the accuracy and the bias
+
+19
+00:00:45,350 --> 00:00:48,130
+of the forecast, and just see how well it does.
+
+20
+00:00:48,130 --> 00:00:51,570
+Try to avoid initializing, training, and testing
+
+21
+00:00:51,570 --> 00:00:55,830
+on the exact same data set.
+
+22
+00:00:55,830 --> 00:00:59,247
+How do I select the data to be used in the model formulation?
+
+23
+00:00:59,247 --> 00:01:00,830
+Well, this is what caused the problem.
+
+24
+00:01:00,830 --> 00:01:01,960
+There's a trade-off.
+
+25
+00:01:01,960 --> 00:01:04,730
+So I want it to be as long as possible,
+
+26
+00:01:04,730 --> 00:01:06,920
+but it still has to be relevant.
+
+27
+00:01:06,920 --> 00:01:11,120
+And you also want to clean out these nonrepeating events.
+
+28
+00:01:11,120 --> 00:01:14,050
+One of the common problems that can happen
+
+29
+00:01:14,050 --> 00:01:18,250
+is that a promotion was run in a previous period, let's say.
+
+30
+00:01:18,250 --> 00:01:20,780
+And it was left in the exponential smoothing
+
+31
+00:01:20,780 --> 00:01:23,540
+model for history going forward.
+
+32
+00:01:23,540 --> 00:01:25,200
+Then what's going to happen is you're
+
+33
+00:01:25,200 --> 00:01:30,460
+going to use that promotion, which usually peak sales--
+
+34
+00:01:30,460 --> 00:01:32,100
+you're going to see this peak in demand
+
+35
+00:01:32,100 --> 00:01:33,910
+and expect it to happen again next year,
+
+36
+00:01:33,910 --> 00:01:35,880
+when it might have been a one-off.
+
+37
+00:01:35,880 --> 00:01:38,910
+So you want to remove all promotions
+
+38
+00:01:38,910 --> 00:01:41,770
+and, in fact, when we talk about causal analysis,
+
+39
+00:01:41,770 --> 00:01:43,520
+we'll talk about maybe you want to measure
+
+40
+00:01:43,520 --> 00:01:45,980
+the effect of a promotion and, therefore, you
+
+41
+00:01:45,980 --> 00:01:49,050
+were able to build in the expected demand
+
+42
+00:01:49,050 --> 00:01:50,660
+if you're going to run a promotion.
+
+43
+00:01:50,660 --> 00:01:52,714
+Because that's a very powerful tool.
+
+44
+00:01:52,714 --> 00:01:54,630
+But you need to make sure that the data you're
+
+45
+00:01:54,630 --> 00:01:57,360
+using for history is really history
+
+46
+00:01:57,360 --> 00:01:59,870
+and you've removed those nonrepeating
+
+47
+00:01:59,870 --> 00:02:03,210
+events, like promotions and things.
+
+48
+00:02:03,210 --> 00:02:07,100
+Appropriate smoothing factors, no hard and fast rules here,
+
+49
+00:02:07,100 --> 00:02:10,080
+just some recommendations from different sources.
+
+50
+00:02:10,080 --> 00:02:14,150
+Level, I would pick the alpha smoothing parameter
+
+51
+00:02:14,150 --> 00:02:17,130
+between 0.01 to 0.3, 0.1 is reasonable.
+
+52
+00:02:17,130 --> 00:02:19,990
+If it's part of a larger model, like a Holt-Winter,
+
+53
+00:02:19,990 --> 00:02:21,940
+where you have trend and seasonality,
+
+54
+00:02:21,940 --> 00:02:24,490
+you might want to ramp it up a little bit.
+
+55
+00:02:24,490 --> 00:02:27,440
+0.19 is reasonable, but you tweak around
+
+56
+00:02:27,440 --> 00:02:29,240
+and see what this does.
+
+57
+00:02:29,240 --> 00:02:34,700
+For the betas, anything between 0.005 and 0.176, and then
+
+58
+00:02:34,700 --> 00:02:36,695
+you see the gamma for seasonality.
+
+59
+00:02:36,695 --> 00:02:39,750
+A good range is from 0.05 to 0.5,
+
+60
+00:02:39,750 --> 00:02:41,570
+where the 0.1 is reasonable.
+
+61
+00:02:41,570 --> 00:02:45,750
+Now, suppose you were bad and you used the exact same data
+
+62
+00:02:45,750 --> 00:02:48,500
+to initialize and to train your data.
+
+63
+00:02:48,500 --> 00:02:54,330
+And what you're trying to do is find the best alpha, beta,
+
+64
+00:02:54,330 --> 00:02:57,630
+and gamma to minimize your sum of squares,
+
+65
+00:02:57,630 --> 00:02:59,040
+your mean square error.
+
+66
+00:02:59,040 --> 00:03:02,160
+So I'm trying to find the best ones to get the best fit.
+
+67
+00:03:02,160 --> 00:03:04,910
+Chances are, your alpha is going to be very high,
+
+68
+00:03:04,910 --> 00:03:07,370
+your beta is going to be very high, your gamma,
+
+69
+00:03:07,370 --> 00:03:09,540
+it could be all over the place, it depends.
+
+70
+00:03:09,540 --> 00:03:10,510
+Why?
+
+71
+00:03:10,510 --> 00:03:14,380
+Because what you're doing is you're finding the best level
+
+72
+00:03:14,380 --> 00:03:16,920
+alpha and the best trend smoothing factor,
+
+73
+00:03:16,920 --> 00:03:22,530
+beta, that matches, fits as best as possible, to that data.
+
+74
+00:03:22,530 --> 00:03:24,200
+And so you're going to make, you're
+
+75
+00:03:24,200 --> 00:03:26,640
+going to create estimates that are very nervous.
+
+76
+00:03:26,640 --> 00:03:28,240
+They're going to be fast following.
+
+77
+00:03:28,240 --> 00:03:31,200
+And so those very volatile parameters, remember,
+
+78
+00:03:31,200 --> 00:03:33,710
+I'm valuing my new information a lot more,
+
+79
+00:03:33,710 --> 00:03:37,720
+chances are, when you test those in another data set,
+
+80
+00:03:37,720 --> 00:03:39,020
+they'll do quite poorly.
+
+81
+00:03:39,020 --> 00:03:42,000
+So you have to worry about overfitting.
+
+82
+00:03:42,000 --> 00:03:45,670
+The natural tendency of students or people new to forecasting
+
+83
+00:03:45,670 --> 00:03:48,390
+is to ramp up the alpha and the beta factors,
+
+84
+00:03:48,390 --> 00:03:51,970
+because it looks like it fits the goodness of fit
+
+85
+00:03:51,970 --> 00:03:53,520
+to the curve, and it does.
+
+86
+00:03:53,520 --> 00:03:55,910
+But, remember, the purpose of the model
+
+87
+00:03:55,910 --> 00:03:59,640
+is to forecast going forward, not to best fit history.
+
+88
+00:03:59,640 --> 00:04:01,860
+A couple more things.
+
+89
+00:04:01,860 --> 00:04:03,720
+Most of the work, as you probably saw,
+
+90
+00:04:03,720 --> 00:04:06,270
+and if you did the problems, is bookkeeping.
+
+91
+00:04:06,270 --> 00:04:07,972
+You've just got to keep track of stuff,
+
+92
+00:04:07,972 --> 00:04:10,055
+especially when you get to the Holt-Winters model.
+
+93
+00:04:10,055 --> 00:04:12,545
+You have a lot of seasonality indices
+
+94
+00:04:12,545 --> 00:04:15,170
+that you have to keep normalizing and updating.
+
+95
+00:04:15,170 --> 00:04:17,290
+And, after awhile, you see the mechanics of it,
+
+96
+00:04:17,290 --> 00:04:20,589
+but that's why I wanted to go through a bunch of examples,
+
+97
+00:04:20,589 --> 00:04:23,280
+so you get to see and get a handle of the mechanics.
+
+98
+00:04:23,280 --> 00:04:24,760
+It's a lot of rote.
+
+99
+00:04:24,760 --> 00:04:28,585
+So the initialization procedures can be somewhat arbitrary,
+
+100
+00:04:28,585 --> 00:04:29,960
+you're kind of finding an average
+
+101
+00:04:29,960 --> 00:04:31,980
+and doing the best guess.
+
+102
+00:04:31,980 --> 00:04:35,960
+But, as the forecast progresses, those initial estimates
+
+103
+00:04:35,960 --> 00:04:38,910
+will eventually wash out.
+
+104
+00:04:38,910 --> 00:04:41,770
+And, again, seasonality, while it makes sense,
+
+105
+00:04:41,770 --> 00:04:44,110
+it's almost always there, boy, it greatly
+
+106
+00:04:44,110 --> 00:04:46,710
+complicates a lot of what you have to do.
+
+107
+00:04:46,710 --> 00:04:48,510
+One thing you should always look to do
+
+108
+00:04:48,510 --> 00:04:52,130
+is measure your ongoing bias in your forecast.
+
+109
+00:04:52,130 --> 00:04:53,840
+So a way to do this is just to keep
+
+110
+00:04:53,840 --> 00:04:57,720
+a sum, a running, cumulative sum, of your errors,
+
+111
+00:04:57,720 --> 00:04:59,280
+of your absolute errors.
+
+112
+00:04:59,280 --> 00:05:01,890
+So you just keep summing up in here.
+
+113
+00:05:01,890 --> 00:05:05,760
+I have that C sub t is equal to C sub t minus 1,
+
+114
+00:05:05,760 --> 00:05:09,650
+the last periods, plus the new error term.
+
+115
+00:05:09,650 --> 00:05:11,830
+And I could normalize this by dividing
+
+116
+00:05:11,830 --> 00:05:14,110
+by the square root of the mean square error
+
+117
+00:05:14,110 --> 00:05:15,400
+that I just estimated.
+
+118
+00:05:15,400 --> 00:05:19,810
+And what that does, that gives me a more normalized number.
+
+119
+00:05:19,810 --> 00:05:23,430
+But the important thing is you should fluctuate around zero.
+
+120
+00:05:23,430 --> 00:05:28,920
+This number if here is zero, if I'm normalizing it,
+
+121
+00:05:28,920 --> 00:05:31,240
+hopefully you're going something like this.
+
+122
+00:05:31,240 --> 00:05:34,720
+If you find that you're trending way up or trending way down,
+
+123
+00:05:34,720 --> 00:05:36,670
+then you've got a bias problem.
+
+124
+00:05:36,670 --> 00:05:42,420
+So this is a good thing to track and to keep track of going on.
+
+125
+00:05:42,420 --> 00:05:44,320
+So we talked about a lot of models,
+
+126
+00:05:44,320 --> 00:05:47,360
+but we've barely scratched the surface of what's out there.
+
+127
+00:05:47,360 --> 00:05:50,170
+Forecasting is its own domain.
+
+128
+00:05:50,170 --> 00:05:53,190
+You can do a whole course, series of courses,
+
+129
+00:05:53,190 --> 00:05:55,150
+get a whole degree in econometrics
+
+130
+00:05:55,150 --> 00:05:58,210
+that can used for demand modeling and forecasting.
+
+131
+00:05:58,210 --> 00:06:00,390
+So what I'm showing in this table below
+
+132
+00:06:00,390 --> 00:06:03,960
+is what can be done for exponential smoothing
+
+133
+00:06:03,960 --> 00:06:06,730
+and where the models that we've done fit in.
+
+134
+00:06:06,730 --> 00:06:09,760
+So we looked at seasonality, you can
+
+135
+00:06:09,760 --> 00:06:12,160
+have a model that has no seasonality,
+
+136
+00:06:12,160 --> 00:06:15,490
+additive seasonality, or multiplicative seasonality.
+
+137
+00:06:15,490 --> 00:06:17,620
+You could think of the same thing for the trend.
+
+138
+00:06:17,620 --> 00:06:20,600
+You could have no trend if you assume that in the model.
+
+139
+00:06:20,600 --> 00:06:23,680
+You could have additive trend or multiplicative trend.
+
+140
+00:06:23,680 --> 00:06:25,520
+You could have dampening of trends.
+
+141
+00:06:25,520 --> 00:06:27,020
+It can be there or not.
+
+142
+00:06:27,020 --> 00:06:30,850
+Remember, that's where the trend tapers out over time.
+
+143
+00:06:30,850 --> 00:06:32,950
+So what I have here is a simple chart
+
+144
+00:06:32,950 --> 00:06:35,970
+where the columns are the seasonality components,
+
+145
+00:06:35,970 --> 00:06:39,060
+again, none, additive, and multiplicative.
+
+146
+00:06:39,060 --> 00:06:41,329
+And the rows are the different trend components,
+
+147
+00:06:41,329 --> 00:06:43,370
+the different ways that we can measure the trend.
+
+148
+00:06:43,370 --> 00:06:45,420
+We assume we always do level.
+
+149
+00:06:45,420 --> 00:06:47,370
+So here there's no trend.
+
+150
+00:06:47,370 --> 00:06:49,090
+We have an additive trend, an additive
+
+151
+00:06:49,090 --> 00:06:51,970
+damped, multiplicative and multiplicative damped.
+
+152
+00:06:51,970 --> 00:06:54,700
+And you can see where the models fit in that we looked at.
+
+153
+00:06:54,700 --> 00:06:56,720
+We looked at five different models,
+
+154
+00:06:56,720 --> 00:06:58,330
+the simple exponential smoothing,
+
+155
+00:06:58,330 --> 00:07:02,310
+which is just a level, no trend, no seasonality.
+
+156
+00:07:02,310 --> 00:07:04,910
+Then we looked at the Holt model,
+
+157
+00:07:04,910 --> 00:07:09,640
+which is an additive trend, no seasonality, with a level.
+
+158
+00:07:09,640 --> 00:07:11,840
+Then we look at the damped Holt, where all we did
+
+159
+00:07:11,840 --> 00:07:15,360
+was dampen the trend component.
+
+160
+00:07:15,360 --> 00:07:17,960
+Then we introduced the double-exponential smoothing,
+
+161
+00:07:17,960 --> 00:07:23,830
+which had a level, no trend, but had multiplicative seasonality.
+
+162
+00:07:23,830 --> 00:07:25,510
+And then we did Holt-Winters.
+
+163
+00:07:25,510 --> 00:07:29,050
+But look at all these open ones that we didn't look at.
+
+164
+00:07:29,050 --> 00:07:32,860
+So there's a whole bunch of other combinations of models
+
+165
+00:07:32,860 --> 00:07:34,270
+that you can go for.
+
+166
+00:07:34,270 --> 00:07:37,390
+There's also some other types of modeling that you can look at.
+
+167
+00:07:37,390 --> 00:07:39,770
+And probably the most common one that we're not
+
+168
+00:07:39,770 --> 00:07:41,780
+going to talk about, but it's worth
+
+169
+00:07:41,780 --> 00:07:44,310
+exploring if you're interested in, to go further,
+
+170
+00:07:44,310 --> 00:07:47,790
+the Box-Jenkins for auto-regressive
+
+171
+00:07:47,790 --> 00:07:50,300
+integrated moving average, ARIMA.
+
+172
+00:07:50,300 --> 00:07:51,730
+You'll see a lot into this.
+
+173
+00:07:51,730 --> 00:07:53,146
+If you're interested in this area,
+
+174
+00:07:53,146 --> 00:07:56,090
+that's probably a good next step for you to dive in.
+
+175
+00:07:56,090 --> 00:07:57,590
+All right, so that's all we're going
+
+176
+00:07:57,590 --> 00:07:59,630
+to talk about for exponential smoothing.
+
+177
+00:07:59,630 --> 00:08:01,880
+Hopefully, if you have any questions, comments,
+
+178
+00:08:01,880 --> 00:08:03,920
+or suggestions, you'll use the discussion,
+
+179
+00:08:03,920 --> 00:08:06,530
+you won't be confused like Ginger Belle.
+
+180
+00:08:06,530 --> 00:08:08,030
+You'll use the discussion in helping
+
+181
+00:08:08,030 --> 00:08:10,150
+you solve your problems.
+

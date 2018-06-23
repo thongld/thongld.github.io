@@ -1,0 +1,942 @@
+1
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/FS-WZWUlPlM
+
+2
+00:00:00,500 --> 00:00:05,020
+Hello again, and welcome to
+Chapter 9, Python dictionaries.
+
+3
+00:00:05,020 --> 00:00:08,520
+As always this lecture is
+copyright Creative Commons
+
+4
+00:00:08,520 --> 00:00:12,990
+Attribution, that means the
+audio, the video, the slides
+
+5
+00:00:12,990 --> 00:00:16,570
+and even my scribbles you
+can use in any way you like.
+
+6
+00:00:16,570 --> 00:00:17,850
+As long as you attribute them.
+
+7
+00:00:17,850 --> 00:00:20,117
+OK so, this is
+the second chapter
+
+8
+00:00:20,117 --> 00:00:21,450
+we're talking about collections.
+
+9
+00:00:21,450 --> 00:00:23,741
+And the collections are kind
+of like a piece of luggage
+
+10
+00:00:23,741 --> 00:00:27,890
+in that you can put
+multiple things in them.
+
+11
+00:00:27,890 --> 00:00:29,470
+Variables that
+we've talked about,
+
+12
+00:00:29,470 --> 00:00:32,479
+sort of starting in chapter
+two and chapter three,
+
+13
+00:00:32,479 --> 00:00:34,520
+were simple variables.
+
+14
+00:00:34,520 --> 00:00:37,580
+Scaler, they're just kind of
+one thing and soon as you like,
+
+15
+00:00:37,580 --> 00:00:40,610
+put another thing in there it
+overwrites the first thing.
+
+16
+00:00:40,610 --> 00:00:46,810
+So, if you look at the code
+x equals 2 and x equals 4,
+
+17
+00:00:46,810 --> 00:00:51,220
+the question is you know,
+where did the two go?
+
+18
+00:00:51,220 --> 00:00:53,230
+All right the two was
+there, x was there,
+
+19
+00:00:53,230 --> 00:00:55,490
+there was a two in there,
+and then we cross it out
+
+20
+00:00:55,490 --> 00:00:56,720
+and put four in there.
+
+21
+00:00:56,720 --> 00:00:59,180
+This is sort of the basic
+operation, the assignment
+
+22
+00:00:59,180 --> 00:01:01,210
+statement it's a replacement.
+
+23
+00:01:01,210 --> 00:01:04,060
+But a dictionary allows us to
+put more than one thing, not
+
+24
+00:01:04,060 --> 00:01:06,140
+using this syntax,
+but it allows us
+
+25
+00:01:06,140 --> 00:01:09,380
+to have a variable that's really
+an aggregate of many values
+
+26
+00:01:09,380 --> 00:01:12,460
+and the difference between
+a list and a dictionary,
+
+27
+00:01:12,460 --> 00:01:16,080
+is how the values are structured
+within that single variable.
+
+28
+00:01:16,080 --> 00:01:19,820
+The list is a linear collection
+indexed by integers, zero, one,
+
+29
+00:01:19,820 --> 00:01:21,120
+two, three.
+
+30
+00:01:21,120 --> 00:01:23,460
+If there's five of them,
+it's zero through four.
+
+31
+00:01:23,460 --> 00:01:25,396
+Very much like a
+Pringles can here,
+
+32
+00:01:25,396 --> 00:01:26,770
+where they're just
+stacked nicely
+
+33
+00:01:26,770 --> 00:01:30,880
+on top of each other,
+everything's kind of organized.
+
+34
+00:01:30,880 --> 00:01:32,730
+We talked about in
+the last lecture,
+
+35
+00:01:32,730 --> 00:01:35,660
+this lecture we're talking
+about dictionaries.
+
+36
+00:01:35,660 --> 00:01:39,220
+Dictionaries' very powerful,
+and it's power comes from
+
+37
+00:01:39,220 --> 00:01:42,170
+a different way of
+organizing itself internally.
+
+38
+00:01:42,170 --> 00:01:44,370
+It's a bag of values,
+like a, just a, sort of,
+
+39
+00:01:44,370 --> 00:01:48,200
+just stuffs in it, it's not
+in any order, big stuff,
+
+40
+00:01:48,200 --> 00:01:50,729
+little stuff,
+things have labels.
+
+41
+00:01:50,729 --> 00:01:53,020
+You can also think of it like
+a purse, with just things
+
+42
+00:01:53,020 --> 00:01:55,480
+and it's like, it's
+not like stacked,
+
+43
+00:01:55,480 --> 00:01:57,690
+it's just stuff moves
+around as you're going.
+
+44
+00:01:57,690 --> 00:02:01,560
+And that's a very good
+model for dictionaries.
+
+45
+00:02:01,560 --> 00:02:05,230
+And so dictionaries have to have
+a label, because the stuff is
+
+46
+00:02:05,230 --> 00:02:05,930
+not an order.
+
+47
+00:02:05,930 --> 00:02:07,920
+There's no such thing
+as the third thing.
+
+48
+00:02:07,920 --> 00:02:10,066
+There is the thing
+with a label perfume.
+
+49
+00:02:10,066 --> 00:02:11,690
+There's the thing
+with the label candy,
+
+50
+00:02:11,690 --> 00:02:14,080
+there's the thing
+with the label money.
+
+51
+00:02:14,080 --> 00:02:17,520
+And so there's the value, the
+thing, the money, and then
+
+52
+00:02:17,520 --> 00:02:19,410
+there's always also the label.
+
+53
+00:02:19,410 --> 00:02:24,800
+We also call these key value.
+
+54
+00:02:24,800 --> 00:02:29,090
+The key is the label, and
+the value is whatever.
+
+55
+00:02:29,090 --> 00:02:31,890
+And so these pink things are
+all labels for various things
+
+56
+00:02:31,890 --> 00:02:35,110
+that you could put in the purse,
+so you could say to your purse,
+
+57
+00:02:35,110 --> 00:02:38,480
+hey purse give me my tissues,
+hey purse give me my money
+
+58
+00:02:38,480 --> 00:02:41,510
+and it's in there somewhere
+and the purse sort of gives you
+
+59
+00:02:41,510 --> 00:02:44,300
+back the tissues or the money.
+
+60
+00:02:44,300 --> 00:02:48,246
+And it's-- Python's most
+powerful data collection is
+
+61
+00:02:48,246 --> 00:02:48,870
+the dictionary.
+
+62
+00:02:48,870 --> 00:02:51,827
+And when you get used
+to wielding them,
+
+63
+00:02:51,827 --> 00:02:54,160
+you'll say like whoa I can
+do so much with these things.
+
+64
+00:02:54,160 --> 00:02:56,480
+And at the beginning you're
+just sort of learning,
+
+65
+00:02:56,480 --> 00:02:59,417
+sort of how to use them
+without hurting yourself.
+
+66
+00:02:59,417 --> 00:03:00,500
+But they're very powerful.
+
+67
+00:03:00,500 --> 00:03:01,870
+It's like a database.
+
+68
+00:03:01,870 --> 00:03:05,870
+It allows you to store very
+arbitrary data organized
+
+69
+00:03:05,870 --> 00:03:08,020
+in however you feel
+like organizing it,
+
+70
+00:03:08,020 --> 00:03:10,661
+in a way that advances the
+cause the program that you're
+
+71
+00:03:10,661 --> 00:03:11,160
+writing.
+
+72
+00:03:11,160 --> 00:03:13,160
+We're still kind of
+at the very beginning,
+
+73
+00:03:13,160 --> 00:03:16,790
+but as you learn more,
+these will become
+
+74
+00:03:16,790 --> 00:03:20,770
+a very powerful tool for you.
+
+75
+00:03:20,770 --> 00:03:24,680
+Dictionaries have different
+names in different languages.
+
+76
+00:03:24,680 --> 00:03:28,920
+Perl or Php would call
+them Associative Arrays,
+
+77
+00:03:28,920 --> 00:03:32,010
+Java would call them a
+Property Map or a HashMap,
+
+78
+00:03:32,010 --> 00:03:34,930
+and C# might call them a
+Property Bag or an Attribute
+
+79
+00:03:34,930 --> 00:03:35,430
+Bag.
+
+80
+00:03:35,430 --> 00:03:38,100
+And so they're just
+the same concept,
+
+81
+00:03:38,100 --> 00:03:40,620
+it's keys and values
+is the concept,
+
+82
+00:03:40,620 --> 00:03:42,560
+that's across all
+these languages, just
+
+83
+00:03:42,560 --> 00:03:43,657
+a very powerful one.
+
+84
+00:03:43,657 --> 00:03:45,990
+And if you look at the Wikipedia
+entry that I have here,
+
+85
+00:03:45,990 --> 00:03:48,424
+you can see that it's
+just, it's a concept
+
+86
+00:03:48,424 --> 00:03:50,590
+that we give different names
+in different languages.
+
+87
+00:03:50,590 --> 00:03:54,130
+Same concept, different names.
+
+88
+00:03:54,130 --> 00:03:56,200
+So like I said, the
+difference between a list
+
+89
+00:03:56,200 --> 00:03:59,560
+and a dictionary, they both
+can store multiple values.
+
+90
+00:03:59,560 --> 00:04:02,030
+The question is how we label
+them, how we store them,
+
+91
+00:04:02,030 --> 00:04:03,250
+and how we retrieve them.
+
+92
+00:04:03,250 --> 00:04:05,630
+So here's an example
+use of a dictionary.
+
+93
+00:04:05,630 --> 00:04:07,370
+I'm going to make a
+thing called purse,
+
+94
+00:04:07,370 --> 00:04:09,320
+and I'm going to
+store in purse, this
+
+95
+00:04:09,320 --> 00:04:12,830
+is an assignment statement,
+purse sub money so this isn't
+
+96
+00:04:12,830 --> 00:04:15,100
+like sub zero, this is money.
+
+97
+00:04:15,100 --> 00:04:18,200
+So I'm actually using
+a string as the place.
+
+98
+00:04:18,200 --> 00:04:21,029
+And so I'm going to say
+stick 12 in my purse,
+
+99
+00:04:21,029 --> 00:04:25,630
+and stick us posted note,
+that's my money, candy is three,
+
+100
+00:04:25,630 --> 00:04:27,290
+tissues is 75.
+
+101
+00:04:27,290 --> 00:04:31,260
+And if I look at that, it's not
+just the numbers 12, 3 and 75
+
+102
+00:04:31,260 --> 00:04:36,460
+as it would be in a list, it
+is the connection between money
+
+103
+00:04:36,460 --> 00:04:40,150
+and 12, tissues is
+75, candy is three.
+
+104
+00:04:40,150 --> 00:04:42,960
+And in the key value, that's
+the key and that's the value.
+
+105
+00:04:42,960 --> 00:04:47,580
+So candy is the key,
+and three is the value.
+
+106
+00:04:47,580 --> 00:04:51,390
+Now I can look things up by
+their name, print purse sub
+
+107
+00:04:51,390 --> 00:04:51,890
+candy.
+
+108
+00:04:51,890 --> 00:04:56,580
+Well goes finds it, asking
+hey purse give me that candy,
+
+109
+00:04:56,580 --> 00:04:59,690
+and it goes and finds the
+value which is three and so
+
+110
+00:04:59,690 --> 00:05:01,630
+outcomes a three.
+
+111
+00:05:01,630 --> 00:05:04,480
+We can also put it on the right
+hand side of an assignment
+
+112
+00:05:04,480 --> 00:05:04,980
+statement.
+
+113
+00:05:04,980 --> 00:05:08,550
+So purse of candy says give
+me the old version of candy,
+
+114
+00:05:08,550 --> 00:05:11,340
+and then add two to
+it, which gives me 5.
+
+115
+00:05:11,340 --> 00:05:15,900
+And then store it back in that
+purse, under the label candy.
+
+116
+00:05:15,900 --> 00:05:18,470
+So we see candy
+changing to five.
+
+117
+00:05:18,470 --> 00:05:22,041
+And so, this is a place, and
+you could do this with a list
+
+118
+00:05:22,041 --> 00:05:23,290
+except these would be numbers.
+
+119
+00:05:23,290 --> 00:05:26,360
+You could say purse sub
+2 is equal to purse sub
+
+120
+00:05:26,360 --> 00:05:28,500
+2 plus 2 or whatever.
+
+121
+00:05:28,500 --> 00:05:31,540
+But in dictionaries,
+there are labels.
+
+122
+00:05:31,540 --> 00:05:32,940
+Now they're not strings.
+
+123
+00:05:32,940 --> 00:05:35,140
+Strings is a very common
+label in dictionaries,
+
+124
+00:05:35,140 --> 00:05:36,310
+but it's not always strings.
+
+125
+00:05:36,310 --> 00:05:37,510
+You can use other things.
+
+126
+00:05:37,510 --> 00:05:39,930
+In this chapter we'll pretty
+much focus on strings.
+
+127
+00:05:39,930 --> 00:05:42,100
+You could even use
+numbers and then you
+
+128
+00:05:42,100 --> 00:05:44,940
+would get a little
+confused, but you can.
+
+129
+00:05:44,940 --> 00:05:48,240
+So here's sort of a
+picture of how this works.
+
+130
+00:05:48,240 --> 00:05:53,000
+So if we take a look at this
+line purse sub money equals 12,
+
+131
+00:05:53,000 --> 00:05:56,360
+it's like we are putting
+a key value connection,
+
+132
+00:05:56,360 --> 00:06:00,690
+money is the label for 12, and
+then we sort of move that n.
+
+133
+00:06:00,690 --> 00:06:04,330
+And it's up to the purse
+to decide m things live.
+
+134
+00:06:04,330 --> 00:06:06,800
+If we look at the
+next line, we're
+
+135
+00:06:06,800 --> 00:06:11,290
+going to put the value n three
+with n with the label candy,
+
+136
+00:06:11,290 --> 00:06:14,490
+and we're going to put the value
+75 in with a label of tissues.
+
+137
+00:06:14,490 --> 00:06:17,270
+And when we say hey
+purse print yourself out,
+
+138
+00:06:17,270 --> 00:06:19,630
+it just goes and pulls
+these things back out
+
+139
+00:06:19,630 --> 00:06:20,790
+and hands them to her.
+
+140
+00:06:20,790 --> 00:06:22,290
+And what it's really,
+it's giving us
+
+141
+00:06:22,290 --> 00:06:23,728
+both the label and the value.
+
+142
+00:06:23,728 --> 00:06:25,853
+And it's necessary to do
+that, because there's just
+
+143
+00:06:25,853 --> 00:06:29,090
+12, 75 and three,
+what exactly is that?
+
+144
+00:06:29,090 --> 00:06:31,460
+And so this syntax
+with the curly braces
+
+145
+00:06:31,460 --> 00:06:34,880
+is what happens when you
+print a dictionary out.
+
+146
+00:06:34,880 --> 00:06:37,630
+The same thing happens when
+we're sort of printing purse
+
+147
+00:06:37,630 --> 00:06:38,650
+sub candy.
+
+148
+00:06:38,650 --> 00:06:39,390
+Right?
+
+149
+00:06:39,390 --> 00:06:43,520
+Purse sub candy, it's
+like, you're first,
+
+150
+00:06:43,520 --> 00:06:45,870
+go and find the candy
+thing, look at that one,
+
+151
+00:06:45,870 --> 00:06:48,340
+look at that one, oh
+yep yep this is candy.
+
+152
+00:06:48,340 --> 00:06:50,200
+But what we're looking
+for is the value,
+
+153
+00:06:50,200 --> 00:06:52,580
+and so that's why three
+is coming up here.
+
+154
+00:06:52,580 --> 00:06:55,080
+So go look up under
+candy and tell me
+
+155
+00:06:55,080 --> 00:06:57,242
+what's stored under candy.
+
+156
+00:06:57,242 --> 00:06:58,950
+These can be actually
+more complex things
+
+157
+00:06:58,950 --> 00:07:02,880
+and I'm just keeping it
+simple for this lecture.
+
+158
+00:07:02,880 --> 00:07:06,050
+And then when we say purse
+sub candy equals purse sub
+
+159
+00:07:06,050 --> 00:07:08,540
+candy plus 2, well
+it pulls the three
+
+160
+00:07:08,540 --> 00:07:13,650
+out looking at the label
+candy, then adds 3 plus 2
+
+161
+00:07:13,650 --> 00:07:16,940
+and makes five, and then
+it assigns it back in.
+
+162
+00:07:16,940 --> 00:07:19,460
+And then that says oh
+go go place this number
+
+163
+00:07:19,460 --> 00:07:22,930
+five in the purse with
+the label of candy,
+
+164
+00:07:22,930 --> 00:07:26,460
+which then replaces
+the three with a five.
+
+165
+00:07:26,460 --> 00:07:29,570
+OK and if we print
+it out, we see
+
+166
+00:07:29,570 --> 00:07:35,390
+that the new variable, or the
+new candy entry is now five.
+
+167
+00:07:35,390 --> 00:07:36,880
+OK?
+
+168
+00:07:36,880 --> 00:07:40,470
+So if we just sort of put
+these things side by side,
+
+169
+00:07:40,470 --> 00:07:42,340
+we create them sort
+of both the same way
+
+170
+00:07:42,340 --> 00:07:44,960
+and we make an empty
+list an empty dictionary.
+
+171
+00:07:44,960 --> 00:07:47,670
+We call the append method
+because we're sort of just
+
+172
+00:07:47,670 --> 00:07:48,980
+putting these things in order.
+
+173
+00:07:48,980 --> 00:07:50,700
+You've got to put the
+first one in first.
+
+174
+00:07:50,700 --> 00:07:53,120
+So it's not telling you
+where, you kind of know
+
+175
+00:07:53,120 --> 00:07:54,300
+that this would be the
+first one because you're
+
+176
+00:07:54,300 --> 00:07:56,800
+starting with an empty one, and
+this will be the second one.
+
+177
+00:07:56,800 --> 00:08:00,120
+We put in the values 21 and
+183 and then we print it out
+
+178
+00:08:00,120 --> 00:08:03,320
+and it's like OK, you gave
+me the value as 21 and 183.
+
+179
+00:08:03,320 --> 00:08:05,600
+I will maintain
+the order for you,
+
+180
+00:08:05,600 --> 00:08:07,700
+there's no keys other
+than their position.
+
+181
+00:08:07,700 --> 00:08:10,330
+Position is the key, as it were.
+
+182
+00:08:10,330 --> 00:08:12,620
+If I want to change
+the first one to 23,
+
+183
+00:08:12,620 --> 00:08:15,510
+well, I say lists of
+zero which is this,
+
+184
+00:08:15,510 --> 00:08:16,890
+and then change that to 23.
+
+185
+00:08:16,890 --> 00:08:20,354
+So this is sort of used as
+a look up to find something.
+
+186
+00:08:20,354 --> 00:08:22,770
+Can be used on either the right
+hand side or the left hand
+
+187
+00:08:22,770 --> 00:08:24,370
+side of the science statement.
+
+188
+00:08:24,370 --> 00:08:27,710
+Comparing that to dictionaries,
+I want to put a 21 in there
+
+189
+00:08:27,710 --> 00:08:30,160
+and I'm going to put
+it with the label age,
+
+190
+00:08:30,160 --> 00:08:33,530
+and put 182, put that in
+with the label course.
+
+191
+00:08:33,530 --> 00:08:36,440
+So, so we don't have
+to like make an entry.
+
+192
+00:08:36,440 --> 00:08:39,850
+The fact that the entry doesn't
+exist, it creates the age entry
+
+193
+00:08:39,850 --> 00:08:41,289
+and sticks 21 into it.
+
+194
+00:08:41,289 --> 00:08:44,700
+Creates the course entry,
+sticks 182 into it,
+
+195
+00:08:44,700 --> 00:08:48,240
+we print it out and says, oh
+course is 182 and age is 21.
+
+196
+00:08:48,240 --> 00:08:54,720
+This emphasizes that order is
+not preserved in dictionaries.
+
+197
+00:08:54,720 --> 00:08:57,054
+

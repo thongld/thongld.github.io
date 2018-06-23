@@ -1,0 +1,440 @@
+1
+00:00:00,000 --> 00:00:10,045
+https://youtu.be/asKkIAUAB-Q
+
+2
+00:00:10,045 --> 00:00:12,960
+So I've been talking about this
+thing called a histogram
+
+3
+00:00:12,960 --> 00:00:15,240
+quite a lot in the last
+couple of topics.
+
+4
+00:00:15,240 --> 00:00:18,110
+And I just want to spend a
+little bit of time explaining
+
+5
+00:00:18,110 --> 00:00:21,250
+what happens with a histogram
+and what it's actually telling
+
+6
+00:00:21,250 --> 00:00:25,530
+us about our image, because we
+can get a lot of information
+
+7
+00:00:25,530 --> 00:00:27,830
+just from having a really simple
+understanding of what
+
+8
+00:00:27,830 --> 00:00:29,020
+this means.
+
+9
+00:00:29,020 --> 00:00:32,990
+A histogram, most simply, is
+a graphic representation of
+
+10
+00:00:32,990 --> 00:00:37,210
+where the data and photographic
+values or total
+
+11
+00:00:37,210 --> 00:00:39,810
+values sit within our image.
+
+12
+00:00:39,810 --> 00:00:43,320
+And we get a couple of
+measurements and a couple of
+
+13
+00:00:43,320 --> 00:00:44,860
+readouts on here.
+
+14
+00:00:44,860 --> 00:00:47,130
+Down on the bottom here, we've
+just got our levels.
+
+15
+00:00:47,130 --> 00:00:50,950
+So that's from 0, which is
+black, right up to white,
+
+16
+00:00:50,950 --> 00:00:54,760
+which if it's 8-bit,
+would be 255.
+
+17
+00:00:54,760 --> 00:00:58,250
+And along here, we have the
+number of pixels that are
+
+18
+00:00:58,250 --> 00:01:01,710
+represented at that
+particular value.
+
+19
+00:01:01,710 --> 00:01:04,569
+Now, a histogram is like
+a light metre.
+
+20
+00:01:04,569 --> 00:01:07,840
+It doesn't know what
+the photograph is.
+
+21
+00:01:07,840 --> 00:01:10,800
+It doesn't know what it is that
+you're trying to do with
+
+22
+00:01:10,800 --> 00:01:11,910
+your image.
+
+23
+00:01:11,910 --> 00:01:16,929
+It just gives us that data
+graphic representation.
+
+24
+00:01:16,930 --> 00:01:19,530
+But we can get quite a lot
+of information from that.
+
+25
+00:01:19,530 --> 00:01:23,700
+And we can measure whether our
+exposure is accurate, whether
+
+26
+00:01:23,700 --> 00:01:26,420
+we're going to need to do
+anything in post-processing,
+
+27
+00:01:26,420 --> 00:01:29,750
+for example, or, actually,
+whether we might even need to
+
+28
+00:01:29,750 --> 00:01:32,410
+re-expose our image.
+
+29
+00:01:32,410 --> 00:01:37,220
+If I have a histogram that looks
+like that, that's a bit
+
+30
+00:01:37,220 --> 00:01:38,920
+of a disaster really,
+depending, of
+
+31
+00:01:38,920 --> 00:01:40,120
+course, on the subject.
+
+32
+00:01:40,120 --> 00:01:43,630
+But the blacks are right
+up against here.
+
+33
+00:01:43,630 --> 00:01:47,589
+So there will be lots of tone or
+lots of pixels in my image
+
+34
+00:01:47,590 --> 00:01:51,200
+that are just black,
+pure black, so no
+
+35
+00:01:51,200 --> 00:01:53,150
+continuous tone there.
+
+36
+00:01:53,150 --> 00:01:56,270
+I've also got a lot
+of missing tone.
+
+37
+00:01:56,270 --> 00:01:58,759
+So there's no highlights
+in this image.
+
+38
+00:01:58,760 --> 00:02:02,850
+If I'm photographing myself
+under low light,
+
+39
+00:02:02,850 --> 00:02:04,410
+that might be OK.
+
+40
+00:02:04,410 --> 00:02:07,990
+But if I'm photographing a
+general outdoor scene, I'm
+
+41
+00:02:07,990 --> 00:02:09,710
+going to want to black values.
+
+42
+00:02:09,710 --> 00:02:13,020
+And I'm also going to want
+to highlight values.
+
+43
+00:02:13,020 --> 00:02:15,580
+So in this instance
+I would need to
+
+44
+00:02:15,580 --> 00:02:17,180
+expose that image again.
+
+45
+00:02:17,180 --> 00:02:21,440
+But I would need to give it
+more time or more light.
+
+46
+00:02:21,440 --> 00:02:25,480
+Most cameras and some software
+for even camera phones will
+
+47
+00:02:25,480 --> 00:02:28,369
+give us the option of being
+able to see the histogram
+
+48
+00:02:28,370 --> 00:02:30,390
+after we've captured
+our image.
+
+49
+00:02:30,390 --> 00:02:33,760
+On screen now, you can see a
+histogram there that gives us
+
+50
+00:02:33,760 --> 00:02:36,390
+an indication that I've
+got shadow values.
+
+51
+00:02:36,390 --> 00:02:38,850
+I've got lots of midtones
+in there.
+
+52
+00:02:38,850 --> 00:02:41,680
+And I've also got some highlight
+values, which means
+
+53
+00:02:41,680 --> 00:02:45,740
+that that's for that scene a
+reasonably good exposure.
+
+54
+00:02:45,740 --> 00:02:51,610
+Likewise up here, something
+like this tells me, for
+
+55
+00:02:51,610 --> 00:02:54,150
+example, the same
+sort of thing.
+
+56
+00:02:54,150 --> 00:02:55,420
+There are shadow values.
+
+57
+00:02:55,420 --> 00:02:56,970
+There are midtone values.
+
+58
+00:02:56,970 --> 00:02:58,310
+There are highlight values.
+
+59
+00:02:58,310 --> 00:03:02,840
+But it also tells me that most
+of the pixels in my image are
+
+60
+00:03:02,840 --> 00:03:06,430
+sitting around that middle
+area in that tonal range,
+
+61
+00:03:06,430 --> 00:03:11,150
+where the highlights and the
+shadows, it falls off.
+
+62
+00:03:11,150 --> 00:03:16,440
+And that's probably indicative
+of most outdoor scenes.
+
+63
+00:03:16,440 --> 00:03:19,410
+And it's certainly indicative
+of the way that cameras will
+
+64
+00:03:19,410 --> 00:03:20,890
+capture that information.
+
+65
+00:03:20,890 --> 00:03:23,399
+So check your histogram.
+
+66
+00:03:23,400 --> 00:03:25,710
+Make sure that you've got the
+right amount of information in
+
+67
+00:03:25,710 --> 00:03:26,640
+your image.
+
+68
+00:03:26,640 --> 00:03:30,059
+And make sure that you're able
+to work out just exactly what
+
+69
+00:03:30,060 --> 00:03:31,700
+this means.
+
+70
+00:03:31,700 --> 00:03:34,940
+So in the last topic, when we
+talked about raw, I mentioned
+
+71
+00:03:34,940 --> 00:03:37,820
+that idea of how we might
+consider the way that a raw
+
+72
+00:03:37,820 --> 00:03:40,410
+file or a digital
+file is exposed.
+
+73
+00:03:40,410 --> 00:03:44,210
+And looking at this histogram,
+we can get some more sense
+
+74
+00:03:44,210 --> 00:03:46,040
+about how that works.
+
+75
+00:03:46,040 --> 00:03:50,160
+Really, the rule that you need
+to think about is that you're
+
+76
+00:03:50,160 --> 00:03:53,859
+better off exposing to the upper
+end of the histogram or
+
+77
+00:03:53,860 --> 00:03:57,490
+exposed to the right rather than
+down here, the lower end
+
+78
+00:03:57,490 --> 00:04:01,040
+of the histogram, because a lot
+of the information sits up
+
+79
+00:04:01,040 --> 00:04:05,269
+here in that first stop of
+exposure and sequentially
+
+80
+00:04:05,270 --> 00:04:07,030
+further and further down.
+
+81
+00:04:07,030 --> 00:04:11,320
+So the more you can get your
+information that way, the more
+
+82
+00:04:11,320 --> 00:04:14,959
+clarity, the more definition,
+and the less noise you're
+
+83
+00:04:14,960 --> 00:04:16,180
+going to have.
+
+84
+00:04:16,180 --> 00:04:20,410
+So raw and exposure and
+histograms, they're all
+
+85
+00:04:20,410 --> 00:04:21,720
+interconnected.
+
+86
+00:04:21,720 --> 00:04:24,950
+And again, in the resources,
+there are some wonderful links
+
+87
+00:04:24,950 --> 00:04:27,840
+to the sorts of places that you
+can go to find out more
+
+88
+00:04:27,840 --> 00:04:28,849
+about this.
+
+89
+00:04:28,850 --> 00:04:33,180
+And there are several video
+tutorials on Lynda.com that go
+
+90
+00:04:33,180 --> 00:04:36,160
+into a lot of detail and a
+lot of depth about how
+
+91
+00:04:36,160 --> 00:04:37,530
+to process raw files.
+
+92
+00:04:37,530 --> 00:04:39,849
+And I encourage you to have
+a look at some of those.
+
+93
+00:04:39,850 --> 00:04:41,100
+
+

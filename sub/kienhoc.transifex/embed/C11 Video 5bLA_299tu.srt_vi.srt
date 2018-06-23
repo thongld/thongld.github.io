@@ -1,0 +1,160 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/CoM92k3nGhQ
+
+1
+00:00:00,000 --> 00:00:01,060
+
+2
+00:00:01,060 --> 00:00:03,660
+DR JONATHAN VALVANO: So as
+we saw from last chapter,
+
+3
+00:00:03,660 --> 00:00:08,340
+the Logic Analyzer is a non-intrusive
+hardware debugging instrument.
+
+4
+00:00:08,340 --> 00:00:15,200
+And I've connected the Logic
+Analyzer to the UART system,
+
+5
+00:00:15,200 --> 00:00:21,381
+connecting one wire, channel
+zero, from the signal from A to B,
+
+6
+00:00:21,381 --> 00:00:27,950
+and channel one from the transmit line
+from B to A. And we're going to see,
+
+7
+00:00:27,950 --> 00:00:34,070
+that if I select a pattern-- like
+if I want to send the color Red--
+
+8
+00:00:34,070 --> 00:00:37,650
+I will then push the send button.
+
+9
+00:00:37,650 --> 00:00:40,520
+And over here on the
+Logic Analyzer, we see
+
+10
+00:00:40,520 --> 00:00:43,070
+that this is the UART
+pattern which was sent
+
+11
+00:00:43,070 --> 00:00:47,100
+from B to A. Let's
+send a different color.
+
+12
+00:00:47,100 --> 00:00:48,780
+Let's send Green.
+
+13
+00:00:48,780 --> 00:00:50,870
+And there is the Green pattern.
+
+14
+00:00:50,870 --> 00:00:53,250
+The signal is transmitted in serial.
+
+15
+00:00:53,250 --> 00:01:00,370
+And we have the start bit, bit zero,
+bit one, bit two, bit three, bit four,
+
+16
+00:01:00,370 --> 00:01:03,370
+five, six, and seven.
+
+17
+00:01:03,370 --> 00:01:05,560
+And right here is the stop bit.
+
+18
+00:01:05,560 --> 00:01:10,690
+So we can see voltage versus time
+as our signal is transmitted.
+
+19
+00:01:10,690 --> 00:01:13,340
+And I have it triggered
+on the falling edge, which
+
+20
+00:01:13,340 --> 00:01:18,090
+is the idle to start the transition.
+
+21
+00:01:18,090 --> 00:01:21,780
+So if I send a Blue, we can
+see that the pattern changes.
+
+22
+00:01:21,780 --> 00:01:25,470
+
+23
+00:01:25,470 --> 00:01:29,880
+Now if I switch the Logic
+Analyzer to trigger on the falling
+
+24
+00:01:29,880 --> 00:01:36,100
+edge of the other one, so now we
+have the falling edge of the A to B.
+
+25
+00:01:36,100 --> 00:01:46,720
+And over here, if I send a Red, we see
+that the A to B signal has the pattern.
+
+26
+00:01:46,720 --> 00:01:49,910
+
+27
+00:01:49,910 --> 00:01:53,860
+Green, Blue.
+
+28
+00:01:53,860 --> 00:01:56,430
+And I can use the Logic
+Analyzer to test to make
+
+29
+00:01:56,430 --> 00:01:59,430
+sure the baud-rate is
+correct by measuring
+
+30
+00:01:59,430 --> 00:02:03,140
+the time between these pulses,
+and make sure my pattern is right
+
+31
+00:02:03,140 --> 00:02:05,120
+as I push the values.
+
+32
+00:02:05,120 --> 00:02:08,560
+So in summary, the Logic
+Analyzer is a hardware device
+
+33
+00:02:08,560 --> 00:02:11,950
+that allows us to measure
+multiple digital signals
+
+34
+00:02:11,950 --> 00:02:15,173
+in their amplitude versus time behavior.
+
+35
+00:02:15,173 --> 00:02:15,673

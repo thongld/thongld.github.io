@@ -1,0 +1,216 @@
+0
+00:00:00,000 --> 00:00:01,350
+https://youtu.be/jFv-TTXYV8k
+
+1
+00:00:01,350 --> 00:00:04,170
+OK, let's go over some key points from this lesson.
+
+2
+00:00:04,170 --> 00:00:06,940
+And I think there's really three big ones.
+
+3
+00:00:06,940 --> 00:00:09,080
+The first is that these Newsvendor problems
+
+4
+00:00:09,080 --> 00:00:10,360
+are everywhere.
+
+5
+00:00:10,360 --> 00:00:12,840
+You see them wherever you have to make a firm
+
+6
+00:00:12,840 --> 00:00:15,190
+bet, in this case an Order Quantity,
+
+7
+00:00:15,190 --> 00:00:17,070
+in the face of uncertainty, in this case
+
+8
+00:00:17,070 --> 00:00:20,030
+uncertainty of demand, over a Single Period.
+
+9
+00:00:20,030 --> 00:00:22,110
+You have no opportunity for replenishment
+
+10
+00:00:22,110 --> 00:00:23,410
+within that period.
+
+11
+00:00:23,410 --> 00:00:25,720
+And you see it in things as diverse as ordering
+
+12
+00:00:25,720 --> 00:00:27,730
+for fashion items, which have a set selling
+
+13
+00:00:27,730 --> 00:00:30,080
+period; perishable goods, which only
+
+14
+00:00:30,080 --> 00:00:32,090
+last a certain period of time.
+
+15
+00:00:32,090 --> 00:00:33,870
+To things that you wouldn't expect,
+
+16
+00:00:33,870 --> 00:00:36,100
+like the sizing of a private fleet,
+
+17
+00:00:36,100 --> 00:00:38,400
+whether to buy it yourself and have your own fleet
+
+18
+00:00:38,400 --> 00:00:41,290
+or use higher priced spot market.
+
+19
+00:00:41,290 --> 00:00:42,750
+Same thing for contracting.
+
+20
+00:00:42,750 --> 00:00:45,705
+We'll see later on how this same model applies
+
+21
+00:00:45,705 --> 00:00:49,630
+to different contracting relationships between vendors
+
+22
+00:00:49,630 --> 00:00:51,820
+and buyers.
+
+23
+00:00:51,820 --> 00:00:53,870
+You can think of it in terms of space missions,
+
+24
+00:00:53,870 --> 00:00:57,660
+where I only get to replenish a trip to the moon once right
+
+25
+00:00:57,660 --> 00:00:58,484
+at the beginning.
+
+26
+00:00:58,484 --> 00:01:00,400
+So you can think of all these different cases.
+
+27
+00:01:00,400 --> 00:01:04,090
+We'll see this everywhere, the Newsvendor problem.
+
+28
+00:01:04,090 --> 00:01:06,630
+And what it's really doing is having this classic trade-off
+
+29
+00:01:06,630 --> 00:01:10,140
+between having too much -- so I have this Excess Cost,
+
+30
+00:01:10,140 --> 00:01:13,000
+the cost of having too much product there,
+
+31
+00:01:13,000 --> 00:01:16,376
+and trading that off with having too little, the Shortage Cost.
+
+32
+00:01:16,376 --> 00:01:18,000
+And the important thing to take away we
+
+33
+00:01:18,000 --> 00:01:19,950
+haven't really talked about too much
+
+34
+00:01:19,950 --> 00:01:23,100
+is that these have linear marginal costs.
+
+35
+00:01:23,100 --> 00:01:26,330
+We haven't gone into any non-linear marginal cost.
+
+36
+00:01:26,330 --> 00:01:29,472
+But generally, if you have linear marginal costs,
+
+37
+00:01:29,472 --> 00:01:30,930
+that's where this classic trade-off
+
+38
+00:01:30,930 --> 00:01:33,920
+can be measured using this model.
+
+39
+00:01:33,920 --> 00:01:36,225
+The last thing is that I think you need take away
+
+40
+00:01:36,225 --> 00:01:37,839
+is what the Critical Ratio is doing.
+
+41
+00:01:37,839 --> 00:01:39,380
+And hopefully that's the big takeaway
+
+42
+00:01:39,380 --> 00:01:41,130
+from this whole lesson.
+
+43
+00:01:41,130 --> 00:01:43,460
+And it's simply the ratio of the Cost
+
+44
+00:01:43,460 --> 00:01:45,980
+of the Shortage over the sum of the Cost of the Shortage
+
+45
+00:01:45,980 --> 00:01:47,540
+and the Cost of the Excess.
+
+46
+00:01:47,540 --> 00:01:49,160
+And that, for the Critical Ratio,
+
+47
+00:01:49,160 --> 00:01:52,490
+is determining what percent of the demand distribution
+
+48
+00:01:52,490 --> 00:01:55,990
+I should cover, or the probability that x, the demand,
+
+49
+00:01:55,990 --> 00:01:58,940
+is less than or equal to that Q that I ordered.
+
+50
+00:01:58,940 --> 00:02:01,380
+So these are the three big takeaways
+
+51
+00:02:01,380 --> 00:02:04,160
+that I think you should take from this lesson.
+
+52
+00:02:04,160 --> 00:02:06,680
+And if you have any questions, comments, or suggestions,
+
+53
+00:02:06,680 --> 00:02:08,830
+please use the discussion.
+

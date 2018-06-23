@@ -1,0 +1,736 @@
+481
+00:20:57,310 --> 00:20:59,660
+https://youtu.be/L2IUSArpG98
+But one of the things
+we tend to use lower for
+
+482
+00:20:59,660 --> 00:21:02,830
+is if you're doing searching
+and you want to ignore case,
+
+483
+00:21:02,830 --> 00:21:04,710
+you convert the whole
+thing to lowercase.
+
+484
+00:21:04,710 --> 00:21:06,543
+And then, you switch
+for a lowercase string.
+
+485
+00:21:06,543 --> 00:21:08,810
+So it depends if you want
+to ignore case or not.
+
+486
+00:21:08,810 --> 00:21:14,270
+So that's one of the reasons
+that you have things like this.
+
+487
+00:21:14,270 --> 00:21:16,280
+There is a Replace function.
+
+488
+00:21:16,280 --> 00:21:19,370
+Again, it doesn't
+change the value.
+
+489
+00:21:19,370 --> 00:21:21,610
+Greet is going to
+have Hello, Bob.
+
+490
+00:21:21,610 --> 00:21:27,040
+And I'm going to say, Greet dot
+Replace all occurrences of Bob
+
+491
+00:21:27,040 --> 00:21:28,360
+with Jane.
+
+492
+00:21:28,360 --> 00:21:33,550
+That gives me back a copy and
+End STIR says, Hello, Jane.
+
+493
+00:21:33,550 --> 00:21:35,800
+So Greet is unchanged.
+
+494
+00:21:35,800 --> 00:21:38,280
+This Replace says, make a copy.
+
+495
+00:21:38,280 --> 00:21:43,800
+And then, make that following
+edit that we requested.
+
+496
+00:21:43,800 --> 00:21:48,200
+Now, the replace is going
+to do all occurrences.
+
+497
+00:21:48,200 --> 00:21:50,399
+So Greet is still Hello, Bob.
+
+498
+00:21:50,399 --> 00:21:51,690
+This is kind of redundant here.
+
+499
+00:21:51,690 --> 00:21:53,990
+I'm just doing it so
+you remember what it is.
+
+500
+00:21:53,990 --> 00:21:55,300
+Greet is still Hello, Bob.
+
+501
+00:21:55,300 --> 00:21:57,240
+I put Hello, Bob back in it.
+
+502
+00:21:57,240 --> 00:21:59,380
+And Replace all the
+occurrences of lowercase
+
+503
+00:21:59,380 --> 00:22:03,780
+O with uppercase X.
+And then, that happens.
+
+504
+00:22:03,780 --> 00:22:06,120
+So this says, go through
+the whole string--
+
+505
+00:22:06,120 --> 00:22:09,800
+tch-tch-tch-tch-tch--
+doing all those Replace.
+
+506
+00:22:09,800 --> 00:22:11,717
+OK?
+
+507
+00:22:11,717 --> 00:22:14,050
+Now, another common thing
+that we're going to have to do
+
+508
+00:22:14,050 --> 00:22:16,990
+is we're going to have to
+throw away white space.
+
+509
+00:22:16,990 --> 00:22:18,970
+Sometimes, you
+have a string that
+
+510
+00:22:18,970 --> 00:22:22,920
+has blank characters or other
+characters at the beginning
+
+511
+00:22:22,920 --> 00:22:25,250
+and the end,
+non-printable characters.
+
+512
+00:22:25,250 --> 00:22:26,390
+And we can strip them.
+
+513
+00:22:26,390 --> 00:22:28,730
+And there's three
+functions that are
+
+514
+00:22:28,730 --> 00:22:33,940
+built into Python strings
+that do this for us.
+
+515
+00:22:33,940 --> 00:22:38,330
+There is Lstrip, which
+strips from the left.
+
+516
+00:22:38,330 --> 00:22:43,770
+There is Rstrip, which
+strips from the right--
+
+517
+00:22:43,770 --> 00:22:45,580
+so throws away
+these white spaces.
+
+518
+00:22:45,580 --> 00:22:49,150
+So Hello, Bob is gone.
+
+519
+00:22:49,150 --> 00:22:50,940
+So it gets rid of
+these characters.
+
+520
+00:22:50,940 --> 00:22:51,080
+Oops.
+
+521
+00:22:51,080 --> 00:22:53,080
+These are the ones that
+are gotten rid of there.
+
+522
+00:22:53,080 --> 00:22:56,060
+I need an eraser.
+
+523
+00:22:56,060 --> 00:22:57,260
+Oh, let's use white.
+
+524
+00:22:57,260 --> 00:23:00,760
+And then, Strip basically gets
+rid of all the white space,
+
+525
+00:23:00,760 --> 00:23:04,150
+both on the left and the right
+side and gets rid of that.
+
+526
+00:23:04,150 --> 00:23:07,300
+So we're going to be
+using these a lot.
+
+527
+00:23:07,300 --> 00:23:09,960
+One of the things you tend to do
+in Python is cleaning up data.
+
+528
+00:23:09,960 --> 00:23:12,376
+Sometimes, if you have spaces
+at the beginning or the end,
+
+529
+00:23:12,376 --> 00:23:13,950
+you just want to ignore them.
+
+530
+00:23:13,950 --> 00:23:15,050
+So you strip them off.
+
+531
+00:23:15,050 --> 00:23:18,020
+You throw them away.
+
+532
+00:23:18,020 --> 00:23:20,030
+When we're looking
+for data, we sometimes
+
+533
+00:23:20,030 --> 00:23:21,990
+are looking for a prefix.
+
+534
+00:23:21,990 --> 00:23:25,380
+And there is a
+Startswith function that
+
+535
+00:23:25,380 --> 00:23:27,400
+gives you a True or a False.
+
+536
+00:23:27,400 --> 00:23:29,780
+We're asking here,
+does this variable line
+
+537
+00:23:29,780 --> 00:23:31,380
+start with the string "please?"
+
+538
+00:23:31,380 --> 00:23:32,450
+And the answer is True.
+
+539
+00:23:32,450 --> 00:23:34,886
+Yes, it does start
+with the string please.
+
+540
+00:23:34,886 --> 00:23:38,340
+Or in the next, we ask, does
+this start with the letter P?
+
+541
+00:23:38,340 --> 00:23:39,630
+And the answer is False.
+
+542
+00:23:39,630 --> 00:23:42,660
+It does not start
+with the letter P. OK?
+
+543
+00:23:42,660 --> 00:23:44,980
+So there's lots more
+of these things.
+
+544
+00:23:44,980 --> 00:23:48,570
+
+545
+00:23:48,570 --> 00:23:52,090
+And reading data and tearing
+it apart is one of the things
+
+546
+00:23:52,090 --> 00:23:54,400
+that we're going
+to really focus on
+
+547
+00:23:54,400 --> 00:23:57,120
+for the rest of these first
+few chapters of the book.
+
+548
+00:23:57,120 --> 00:23:59,700
+Because that's one thing
+that Python's really good at
+
+549
+00:23:59,700 --> 00:24:02,810
+is tearing data into pieces
+and pulling the pieces
+
+550
+00:24:02,810 --> 00:24:04,500
+that you want.
+
+551
+00:24:04,500 --> 00:24:06,910
+So let's take a
+look at this line.
+
+552
+00:24:06,910 --> 00:24:11,120
+So this line that we've got here
+is a line from an actual email
+
+553
+00:24:11,120 --> 00:24:13,310
+box.
+
+554
+00:24:13,310 --> 00:24:16,210
+If you looked at your
+email on your hard drive,
+
+555
+00:24:16,210 --> 00:24:18,690
+email boxes would have
+this kind of a format.
+
+556
+00:24:18,690 --> 00:24:20,470
+And there's actually many lines.
+
+557
+00:24:20,470 --> 00:24:23,596
+And soon, we'll be reading
+whole files full of email.
+
+558
+00:24:23,596 --> 00:24:24,970
+But for now, let's
+just say we've
+
+559
+00:24:24,970 --> 00:24:26,900
+got this one line somehow.
+
+560
+00:24:26,900 --> 00:24:31,870
+And we don't know how long
+these things are going to be.
+
+561
+00:24:31,870 --> 00:24:34,610
+The first thing is From, then
+there's an email address.
+
+562
+00:24:34,610 --> 00:24:38,010
+Then, there's some detail
+about when the mail was sent.
+
+563
+00:24:38,010 --> 00:24:42,430
+But what we actually want
+is this part right here.
+
+564
+00:24:42,430 --> 00:24:45,450
+And that's the domain
+name of the mail address.
+
+565
+00:24:45,450 --> 00:24:45,950
+Right?
+
+566
+00:24:45,950 --> 00:24:48,110
+We want to extract this out.
+
+567
+00:24:48,110 --> 00:24:51,080
+We're faced with this
+line in a variable.
+
+568
+00:24:51,080 --> 00:24:52,860
+And we want to extract that out.
+
+569
+00:24:52,860 --> 00:24:56,310
+So this is kind of putting
+all these things together.
+
+570
+00:24:56,310 --> 00:24:59,370
+So let's walk through
+how we do this.
+
+571
+00:24:59,370 --> 00:25:00,950
+So here's this line.
+
+572
+00:25:00,950 --> 00:25:02,080
+And it's a big long string.
+
+573
+00:25:02,080 --> 00:25:03,980
+Mostly, we would have
+read this from a file
+
+574
+00:25:03,980 --> 00:25:05,380
+rather than just put
+it in a constant.
+
+575
+00:25:05,380 --> 00:25:06,921
+But for now, we put
+it in a constant,
+
+576
+00:25:06,921 --> 00:25:09,940
+because Files is
+the next chapter.
+
+577
+00:25:09,940 --> 00:25:12,460
+And so, what we're going to
+do is we're going to say,
+
+578
+00:25:12,460 --> 00:25:13,529
+you know what?
+
+579
+00:25:13,529 --> 00:25:14,820
+I'm going to look at this line.
+
+580
+00:25:14,820 --> 00:25:16,611
+And then, I'm going to
+go find the At sign.
+
+581
+00:25:16,611 --> 00:25:18,480
+And I want to know
+where the At sign is.
+
+582
+00:25:18,480 --> 00:25:21,840
+So I called Data
+dot Find At sign,
+
+583
+00:25:21,840 --> 00:25:24,330
+and put the
+resultant in At Pose.
+
+584
+00:25:24,330 --> 00:25:26,236
+And that gives me 21.
+
+585
+00:25:26,236 --> 00:25:29,330
+It hunts until it
+finds the At sign,
+
+586
+00:25:29,330 --> 00:25:31,680
+and then tells me
+where it found it.
+
+587
+00:25:31,680 --> 00:25:35,300
+Then, what I want to
+look at is, starting here
+
+588
+00:25:35,300 --> 00:25:38,640
+for the rest of the string, I
+want to find the first place
+
+589
+00:25:38,640 --> 00:25:40,180
+afterwards.
+
+590
+00:25:40,180 --> 00:25:43,800
+So what I say is this
+SP pose is my variable
+
+591
+00:25:43,800 --> 00:25:45,890
+for the position of the space.
+
+592
+00:25:45,890 --> 00:25:51,310
+Data dot Find a blank
+starting at the At.
+
+593
+00:25:51,310 --> 00:25:53,330
+So this is starting at 21.
+
+594
+00:25:53,330 --> 00:25:55,170
+So it says, I'll
+start at 21, and I'll
+
+595
+00:25:55,170 --> 00:25:56,710
+look for the next blank.
+
+596
+00:25:56,710 --> 00:25:59,770
+And I find that at 31.
+
+597
+00:25:59,770 --> 00:26:03,250
+So now, I know where
+the At sign is.
+
+598
+00:26:03,250 --> 00:26:05,095
+And I know where the space is.
+
+599
+00:26:05,095 --> 00:26:07,660
+And so, what I'm
+looking at is I want
+
+600
+00:26:07,660 --> 00:26:11,960
+the stuff one beyond the At
+sign, up-to but not including
+
+601
+00:26:11,960 --> 00:26:14,220
+the space.
+
+602
+00:26:14,220 --> 00:26:18,180
+So then, I can use
+a slicing operation.
+
+603
+00:26:18,180 --> 00:26:23,230
+I can start at the At
+position, add 1 to it.
+
+604
+00:26:23,230 --> 00:26:24,490
+So it advanced one.
+
+605
+00:26:24,490 --> 00:26:28,260
+That's going to be the letter U.
+And then, a slicing operation--
+
+606
+00:26:28,260 --> 00:26:30,850
+up-to but not including space.
+
+607
+00:26:30,850 --> 00:26:34,500
+Up to-- this is going to work
+out nicely all of a sudden--
+
+608
+00:26:34,500 --> 00:26:37,140
+but not including.
+
+609
+00:26:37,140 --> 00:26:41,310
+
+610
+00:26:41,310 --> 00:26:43,840
+And then, I'm going to take
+that slice-- which is really
+
+611
+00:26:43,840 --> 00:26:47,730
+this little bit of data
+right here-- take that slice
+
+612
+00:26:47,730 --> 00:26:49,480
+and put it in the variable host.
+
+613
+00:26:49,480 --> 00:26:52,300
+Then, we print that out,
+and we get the piece.
+
+614
+00:26:52,300 --> 00:26:53,990
+OK?
+
+615
+00:26:53,990 --> 00:26:57,000
+And so, here we have some
+data we want to tear apart.
+
+616
+00:26:57,000 --> 00:26:58,250
+We hunt for the At.
+
+617
+00:26:58,250 --> 00:27:00,390
+We find it at position 21.
+
+618
+00:27:00,390 --> 00:27:02,220
+We start at 21.
+
+619
+00:27:02,220 --> 00:27:05,690
+And we look for the
+space after that, 31.
+
+620
+00:27:05,690 --> 00:27:10,750
+And then, we pull from 22,
+up-to but not including 31.
+
+621
+00:27:10,750 --> 00:27:12,584
+And it wouldn't matter
+where this thing was.
+
+622
+00:27:12,584 --> 00:27:14,249
+Because these aren't
+all the same length
+
+623
+00:27:14,249 --> 00:27:16,080
+when we start looking
+at them in files.
+
+624
+00:27:16,080 --> 00:27:19,000
+But it would have found the At
+sign and the space after the
+
+625
+00:27:19,000 --> 00:27:20,020
+At sign.
+
+626
+00:27:20,020 --> 00:27:23,630
+And it would have reliably
+pulled out the host.
+
+627
+00:27:23,630 --> 00:27:24,360
+OK?
+
+628
+00:27:24,360 --> 00:27:31,716
+So this is a basic pattern
+we call parsing text.
+
+629
+00:27:31,716 --> 00:27:34,120
+Like, find this, find
+that other thing.
+
+630
+00:27:34,120 --> 00:27:35,150
+Grab this thing out.
+
+631
+00:27:35,150 --> 00:27:38,200
+Then, look inside that thing
+and-- phl-sl-sl-fl-fl--
+
+632
+00:27:38,200 --> 00:27:41,610
+it does all these things.
+
+633
+00:27:41,610 --> 00:27:43,830
+So that's strings.
+
+634
+00:27:43,830 --> 00:27:45,177
+Up next, we have files.
+
+635
+00:27:45,177 --> 00:27:46,760
+Files are going to
+be lots of strings.
+
+636
+00:27:46,760 --> 00:27:49,280
+So we're going to start putting
+all these things together.
+
+637
+00:27:49,280 --> 00:27:52,900
+And so, the next chapter is
+a really, really important
+
+638
+00:27:52,900 --> 00:27:55,660
+chapter where it starts to
+really start coming together.
+
+639
+00:27:55,660 --> 00:27:58,410
+So see you soon.
+

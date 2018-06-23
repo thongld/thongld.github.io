@@ -1,0 +1,760 @@
+0
+00:00:00,000 --> 00:00:00,150
+https://youtu.be/M_RuT-XsAuQ
+
+1
+00:00:00,150 --> 00:00:00,650
+OK.
+
+2
+00:00:00,650 --> 00:00:02,940
+Let me wrap up this lesson by giving some key points,
+
+3
+00:00:02,940 --> 00:00:05,710
+and these are really more practical tips.
+
+4
+00:00:05,710 --> 00:00:08,310
+So when you do this in practice for regression,
+
+5
+00:00:08,310 --> 00:00:10,950
+you should probably follow a pretty standard process.
+
+6
+00:00:10,950 --> 00:00:13,657
+First thing, I always like to pick the independent variables
+
+7
+00:00:13,657 --> 00:00:15,240
+that you want to include in the model,
+
+8
+00:00:15,240 --> 00:00:17,940
+and you should base this on common sense and knowledge
+
+9
+00:00:17,940 --> 00:00:20,820
+of the context of the problem you're trying to solve.
+
+10
+00:00:20,820 --> 00:00:24,120
+Again, I'm not a big fan of kitchen sink regressions
+
+11
+00:00:24,120 --> 00:00:27,810
+where you throw in everything to see what sticks.
+
+12
+00:00:27,810 --> 00:00:29,490
+You have to collect the data and think
+
+13
+00:00:29,490 --> 00:00:32,100
+about the dummy variables you might want to create as well.
+
+14
+00:00:32,100 --> 00:00:33,930
+If, for example, we looked at lead time
+
+15
+00:00:33,930 --> 00:00:36,150
+for the previous example, I thought about, well,
+
+16
+00:00:36,150 --> 00:00:38,760
+maybe I want to have a separate variable if it's same day.
+
+17
+00:00:38,760 --> 00:00:41,460
+Maybe I want to have a separate variable if it's long,
+
+18
+00:00:41,460 --> 00:00:43,090
+let's say a week or longer.
+
+19
+00:00:43,090 --> 00:00:45,570
+So you think about the type of data
+
+20
+00:00:45,570 --> 00:00:48,000
+you want to collect or create, based on the data
+
+21
+00:00:48,000 --> 00:00:49,080
+that you have.
+
+22
+00:00:49,080 --> 00:00:51,960
+Don't be restricted to just the variables you have.
+
+23
+00:00:51,960 --> 00:00:54,060
+You can combine them in different terms.
+
+24
+00:00:54,060 --> 00:00:56,130
+Think of what we did when we squared terms.
+
+25
+00:00:56,130 --> 00:00:57,810
+You can use natural logs.
+
+26
+00:00:57,810 --> 00:00:59,730
+You can transform these variables.
+
+27
+00:00:59,730 --> 00:01:02,100
+So what you really want to do is have good knowledge
+
+28
+00:01:02,100 --> 00:01:05,489
+of the problem, and then use the regression to help tweak
+
+29
+00:01:05,489 --> 00:01:06,865
+out the different insights.
+
+30
+00:01:06,865 --> 00:01:09,540
+
+
+31
+00:01:09,540 --> 00:01:11,220
+Eventually, you'll run the regression,
+
+32
+00:01:11,220 --> 00:01:12,430
+and that's the easiest part.
+
+33
+00:01:12,430 --> 00:01:15,060
+With software today, it's a push of the button
+
+34
+00:01:15,060 --> 00:01:16,710
+and it's very easy.
+
+35
+00:01:16,710 --> 00:01:20,220
+The harder parts are leading up to it, picking the data,
+
+36
+00:01:20,220 --> 00:01:22,380
+and then also analyzing.
+
+37
+00:01:22,380 --> 00:01:24,510
+So when you analyze the output and make changes,
+
+38
+00:01:24,510 --> 00:01:26,830
+because it's a very iterative process,
+
+39
+00:01:26,830 --> 00:01:28,530
+you probably want to guide and use
+
+40
+00:01:28,530 --> 00:01:29,910
+fewer independent variables.
+
+41
+00:01:29,910 --> 00:01:32,430
+It's best to use fewer than more.
+
+42
+00:01:32,430 --> 00:01:35,100
+You want to use as few as possible but enough
+
+43
+00:01:35,100 --> 00:01:37,800
+that you're explaining the model.
+
+44
+00:01:37,800 --> 00:01:39,960
+You always want to be able to explain or justify
+
+45
+00:01:39,960 --> 00:01:43,020
+the inclusion or exclusion of a variable.
+
+46
+00:01:43,020 --> 00:01:45,360
+Always validate the individual explanatory variables,
+
+47
+00:01:45,360 --> 00:01:46,290
+those x's.
+
+48
+00:01:46,290 --> 00:01:47,370
+Look at the p-value.
+
+49
+00:01:47,370 --> 00:01:49,860
+Now, if one of the variables has a p-value that's
+
+50
+00:01:49,860 --> 00:01:52,650
+greater than 0.1, you can include it, just
+
+51
+00:01:52,650 --> 00:01:56,070
+be careful and explain why you want to include it.
+
+52
+00:01:56,070 --> 00:01:59,520
+The whole point here is that there's more art than science
+
+53
+00:01:59,520 --> 00:02:01,560
+to a lot of these regression models.
+
+54
+00:02:01,560 --> 00:02:04,680
+You can simply just run it through rote,
+
+55
+00:02:04,680 --> 00:02:07,230
+but you need to be able to understand what it is
+
+56
+00:02:07,230 --> 00:02:09,890
+that you're trying to present.
+
+57
+00:02:09,890 --> 00:02:10,389
+OK.
+
+58
+00:02:10,389 --> 00:02:12,270
+Here's a little checklist that you should
+
+59
+00:02:12,270 --> 00:02:14,820
+check after you run each model.
+
+60
+00:02:14,820 --> 00:02:15,930
+Look at the linearity.
+
+61
+00:02:15,930 --> 00:02:18,180
+Look at a scatterplot, use your common sense,
+
+62
+00:02:18,180 --> 00:02:19,740
+and know your problem.
+
+63
+00:02:19,740 --> 00:02:21,829
+Look at the signs of the regression coefficients.
+
+64
+00:02:21,829 --> 00:02:23,370
+Signs are really good because does it
+
+65
+00:02:23,370 --> 00:02:27,210
+make sense that it's additive or that it's going negative?
+
+66
+00:02:27,210 --> 00:02:28,860
+The t stats are always good.
+
+67
+00:02:28,860 --> 00:02:30,720
+Look at the p-values there.
+
+68
+00:02:30,720 --> 00:02:33,240
+And these are testing, again, is the coefficient
+
+69
+00:02:33,240 --> 00:02:35,370
+significantly different from 0?
+
+70
+00:02:35,370 --> 00:02:38,310
+It's a two-tailed test, with the null hypothesis
+
+71
+00:02:38,310 --> 00:02:41,250
+is that the coefficient value equals 0.
+
+72
+00:02:41,250 --> 00:02:43,260
+Always look at the adjusted r-squared.
+
+73
+00:02:43,260 --> 00:02:44,520
+Is it reasonably high?
+
+74
+00:02:44,520 --> 00:02:47,130
+This is telling me the whole overall goodness
+
+75
+00:02:47,130 --> 00:02:49,170
+of fit of the model.
+
+76
+00:02:49,170 --> 00:02:51,000
+Is it following normal conditions?
+
+77
+00:02:51,000 --> 00:02:53,790
+Plot the histogram of the residuals, those error terms.
+
+78
+00:02:53,790 --> 00:02:55,930
+Do they follow a normal distribution,
+
+79
+00:02:55,930 --> 00:02:57,940
+and is that mean roughly 0?
+
+80
+00:02:57,940 --> 00:02:59,910
+That heteroscedasticity.
+
+81
+00:02:59,910 --> 00:03:01,650
+Plot the residuals with each x variable.
+
+82
+00:03:01,650 --> 00:03:03,660
+See if it stays constant, in terms
+
+83
+00:03:03,660 --> 00:03:06,360
+of the standard deviation, with different values of those x
+
+84
+00:03:06,360 --> 00:03:07,440
+variables.
+
+85
+00:03:07,440 --> 00:03:09,330
+Autocorrelation, very related.
+
+86
+00:03:09,330 --> 00:03:10,920
+Look at a time series plot.
+
+87
+00:03:10,920 --> 00:03:13,560
+Try to identify if there are any issues.
+
+88
+00:03:13,560 --> 00:03:15,150
+And then multi-collinearity.
+
+89
+00:03:15,150 --> 00:03:17,070
+This is where you have correlations
+
+90
+00:03:17,070 --> 00:03:19,780
+with the different independent x variables.
+
+91
+00:03:19,780 --> 00:03:23,224
+If the correlation is greater than 0.7, positive or negative,
+
+92
+00:03:23,224 --> 00:03:25,140
+you might want to remove one of the variables.
+
+93
+00:03:25,140 --> 00:03:26,914
+Just a rule of thumb.
+
+94
+00:03:26,914 --> 00:03:28,580
+Anyway, these are like little checklists
+
+95
+00:03:28,580 --> 00:03:30,510
+that you should follow as you're building
+
+96
+00:03:30,510 --> 00:03:33,210
+these models and practice.
+
+97
+00:03:33,210 --> 00:03:35,460
+Let me finish with one last concern,
+
+98
+00:03:35,460 --> 00:03:38,100
+and this is something that plagues most first time
+
+99
+00:03:38,100 --> 00:03:40,020
+users of regression models, in that you
+
+100
+00:03:40,020 --> 00:03:41,910
+tend to over fit the data.
+
+101
+00:03:41,910 --> 00:03:44,160
+So let's give a very simple example.
+
+102
+00:03:44,160 --> 00:03:48,340
+Suppose I have this four pieces of data.
+
+103
+00:03:48,340 --> 00:03:50,760
+It's sales based on effort.
+
+104
+00:03:50,760 --> 00:03:54,780
+So the sales is the y variable and effort is my x.
+
+105
+00:03:54,780 --> 00:03:57,630
+So my dependent variable is sales and effort
+
+106
+00:03:57,630 --> 00:03:59,550
+is my independent.
+
+107
+00:03:59,550 --> 00:04:02,520
+And I want to have-- I say that sales is a function of effort.
+
+108
+00:04:02,520 --> 00:04:05,419
+I want to find the best fit curve that fits this data.
+
+109
+00:04:05,419 --> 00:04:07,460
+So there's a bunch of different ways I can do it.
+
+110
+00:04:07,460 --> 00:04:09,820
+Here's what the data looks like plotted,
+
+111
+00:04:09,820 --> 00:04:12,450
+and so you might do a linear regression.
+
+112
+00:04:12,450 --> 00:04:18,720
+You get y equals 4.5 plus 0.4 times x, the effort.
+
+113
+00:04:18,720 --> 00:04:22,770
+Gives you quite a poor r-squared of 0.16.
+
+114
+00:04:22,770 --> 00:04:24,690
+But I could make a quadratic.
+
+115
+00:04:24,690 --> 00:04:26,914
+So I add a squared term in there.
+
+116
+00:04:26,914 --> 00:04:29,080
+And you see what it does, it increases the r-squared
+
+117
+00:04:29,080 --> 00:04:30,150
+to 0.36.
+
+118
+00:04:30,150 --> 00:04:31,680
+That's pretty good.
+
+119
+00:04:31,680 --> 00:04:34,860
+But I could actually include a cubic equation.
+
+120
+00:04:34,860 --> 00:04:37,689
+And so I have a cubed term in addition to a squared term.
+
+121
+00:04:37,689 --> 00:04:38,730
+And look at my r-squared.
+
+122
+00:04:38,730 --> 00:04:39,990
+It's 1.
+
+123
+00:04:39,990 --> 00:04:44,610
+So the question is, is this the best model?
+
+124
+00:04:44,610 --> 00:04:47,220
+And hopefully you'll realize it's not.
+
+125
+00:04:47,220 --> 00:04:50,190
+Yes, it fits this data, but it's not a good estimate.
+
+126
+00:04:50,190 --> 00:04:53,760
+Because what would my estimate be for an effort of 6
+
+127
+00:04:53,760 --> 00:04:55,440
+or an effort of 5?
+
+128
+00:04:55,440 --> 00:04:57,901
+In this model, with a linear equation,
+
+129
+00:04:57,901 --> 00:05:00,150
+it's probably going to be something right around here,
+
+130
+00:05:00,150 --> 00:05:01,920
+which seems to make sense.
+
+131
+00:05:01,920 --> 00:05:05,190
+For the cubic one, who knows where it's going to be.
+
+132
+00:05:05,190 --> 00:05:07,770
+So just because you have a better fit,
+
+133
+00:05:07,770 --> 00:05:09,600
+doesn't mean it's a better model.
+
+134
+00:05:09,600 --> 00:05:11,940
+Make sure the model matches for the decisions
+
+135
+00:05:11,940 --> 00:05:13,650
+that you're trying to make.
+
+136
+00:05:13,650 --> 00:05:16,530
+My preference, simple is always better.
+
+137
+00:05:16,530 --> 00:05:19,230
+Try to keep it simple.
+
+138
+00:05:19,230 --> 00:05:21,160
+Last tips.
+
+139
+00:05:21,160 --> 00:05:23,850
+Don't confuse causality with relationship.
+
+140
+00:05:23,850 --> 00:05:26,430
+Statistics, we're finding and measuring relationships.
+
+141
+00:05:26,430 --> 00:05:27,840
+Mathematical relationships.
+
+142
+00:05:27,840 --> 00:05:31,740
+Correlations and covariances, not causality.
+
+143
+00:05:31,740 --> 00:05:34,050
+You have to try to explain that causality
+
+144
+00:05:34,050 --> 00:05:35,410
+and make that argument.
+
+145
+00:05:35,410 --> 00:05:37,860
+But just because we see two variables correlated
+
+146
+00:05:37,860 --> 00:05:40,560
+doesn't mean that one causes the other.
+
+147
+00:05:40,560 --> 00:05:42,780
+Again, don't be a slave to the r-squared.
+
+148
+00:05:42,780 --> 00:05:45,090
+The model has to make sense.
+
+149
+00:05:45,090 --> 00:05:46,230
+Simple is always better.
+
+150
+00:05:46,230 --> 00:05:47,960
+Avoid over-specifying.
+
+151
+00:05:47,960 --> 00:05:49,590
+And there's a rule of thumb here,
+
+152
+00:05:49,590 --> 00:05:52,440
+where k is the number of independent variables
+
+153
+00:05:52,440 --> 00:05:54,300
+and n is the number of observations,
+
+154
+00:05:54,300 --> 00:05:55,841
+that you always want to make sure you
+
+155
+00:05:55,841 --> 00:05:57,870
+have more observations, then the rule of thumb
+
+156
+00:05:57,870 --> 00:06:00,280
+is 5 times k plus 2.
+
+157
+00:06:00,280 --> 00:06:02,375
+And this really usually isn't a big issue
+
+158
+00:06:02,375 --> 00:06:04,500
+because you're going to have a lot of observations,
+
+159
+00:06:04,500 --> 00:06:06,852
+typically, in practice.
+
+160
+00:06:06,852 --> 00:06:09,060
+Something I haven't spent too much time talking about
+
+161
+00:06:09,060 --> 00:06:12,970
+is extrapolating outside the observed range.
+
+162
+00:06:12,970 --> 00:06:14,940
+Remember, all of your independent variables,
+
+163
+00:06:14,940 --> 00:06:16,740
+your x's, they have ranges.
+
+164
+00:06:16,740 --> 00:06:20,460
+For example, in the data that we had for Duffy Industrials,
+
+165
+00:06:20,460 --> 00:06:25,060
+the shortest length was greater than 500 miles,
+
+166
+00:06:25,060 --> 00:06:28,170
+and I think it went up to like 2,500 miles.
+
+167
+00:06:28,170 --> 00:06:31,950
+If I want to estimate something for a 100 mile shipment,
+
+168
+00:06:31,950 --> 00:06:34,770
+I cannot use that model or I have to be very careful if I
+
+169
+00:06:34,770 --> 00:06:37,710
+use that model because now I'm going over,
+
+170
+00:06:37,710 --> 00:06:41,160
+I'm estimating outside of my observed range of that
+
+171
+00:06:41,160 --> 00:06:42,660
+independent variable.
+
+172
+00:06:42,660 --> 00:06:45,240
+Have to be careful that you only sample
+
+173
+00:06:45,240 --> 00:06:47,610
+within the range of the observed data
+
+174
+00:06:47,610 --> 00:06:49,874
+for those independent variables.
+
+175
+00:06:49,874 --> 00:06:51,540
+And then the final thing, you can always
+
+176
+00:06:51,540 --> 00:06:55,470
+include nonlinear relationships, using different techniques
+
+177
+00:06:55,470 --> 00:06:56,400
+that we talked about.
+
+178
+00:06:56,400 --> 00:06:58,670
+Binary variables, you can transform them
+
+179
+00:06:58,670 --> 00:07:01,980
+with the square root, take an inverse, you can multiply them.
+
+180
+00:07:01,980 --> 00:07:04,860
+You have all these tools to help you better model
+
+181
+00:07:04,860 --> 00:07:07,290
+the complex relationships.
+
+182
+00:07:07,290 --> 00:07:08,130
+All right.
+
+183
+00:07:08,130 --> 00:07:10,830
+So that's all that I wanted to cover.
+
+184
+00:07:10,830 --> 00:07:13,020
+And so hopefully, just gave you a feel
+
+185
+00:07:13,020 --> 00:07:15,430
+for how to create regression models.
+
+186
+00:07:15,430 --> 00:07:17,190
+We didn't get into the theory too much.
+
+187
+00:07:17,190 --> 00:07:19,410
+You need to be careful when you validate them,
+
+188
+00:07:19,410 --> 00:07:21,810
+but the biggest thing I wanted you to take away
+
+189
+00:07:21,810 --> 00:07:25,580
+is the process by which you can develop these models.
+

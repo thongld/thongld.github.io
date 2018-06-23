@@ -1,0 +1,580 @@
+0
+00:00:05,120 --> 00:00:10,000
+Welcome back, so now let&#39;s get into some number crunching.
+https://youtu.be/HqfUAWmMGh8
+1
+00:00:11,150 --> 00:00:17,578
+Okay, focused mainly on valuation, but also mainly on cost of capital.
+
+2
+00:00:17,578 --> 00:00:23,440
+To me, that needs more emphasis, because we have spent a lot of time,
+
+3
+00:00:23,440 --> 00:00:28,340
+especially over, in finance, we spend a lot of time on time value of money,
+
+4
+00:00:28,340 --> 00:00:32,470
+and bond pricing, and stock pricing, a lot of examples.
+
+5
+00:00:32,470 --> 00:00:34,750
+But risk and return, I think,
+
+6
+00:00:34,750 --> 00:00:38,460
+are much more powerful because of compounding at huge impacts.
+
+7
+00:00:38,460 --> 00:00:39,798
+So we need to get that right.
+
+8
+00:00:39,798 --> 00:00:43,093
+Really right, at least the way we think, and
+
+9
+00:00:43,093 --> 00:00:46,810
+then refine our practical applications.
+
+10
+00:00:46,810 --> 00:00:48,170
+Okay, so let&#39;s get started.
+
+11
+00:00:48,170 --> 00:00:53,590
+Question number 1, what is Kitchen Inc&#39;s cost of capital
+
+12
+00:00:53,590 --> 00:00:56,680
+before it undertakes the construction business?
+
+13
+00:00:56,680 --> 00:01:01,000
+So important, I&#39;m not asking you the cost of capital of the new business, But
+
+14
+00:01:01,000 --> 00:01:04,455
+what is Kitchen Inc&#39;s cost of capital?
+
+15
+00:01:04,455 --> 00:01:05,546
+Remember, no taxes.
+
+16
+00:01:05,546 --> 00:01:07,440
+Simplicity, let&#39;s keep it simple.
+
+17
+00:01:08,480 --> 00:01:11,056
+So, let&#39;s draw a graph first.
+
+18
+00:01:13,668 --> 00:01:17,940
+And let&#39;s call it K Business, Kitchen Inc., I mean Kitchen business.
+
+19
+00:01:19,710 --> 00:01:21,510
+You have assets, and what do you have?
+
+20
+00:01:22,810 --> 00:01:23,510
+Kitchen stuff.
+
+21
+00:01:25,400 --> 00:01:27,087
+And what do you have on your liability side?
+
+22
+00:01:30,030 --> 00:01:36,850
+You have only equity, you have debt zero.
+
+23
+00:01:36,850 --> 00:01:38,480
+Do you remember that?
+
+24
+00:01:38,480 --> 00:01:39,880
+Yeah?
+
+25
+00:01:39,880 --> 00:01:46,050
+You also know or have estimated the beta equity equals one.
+
+26
+00:01:46,050 --> 00:01:49,320
+What else do you need to know here?
+
+27
+00:01:49,320 --> 00:01:55,113
+I want to figure out what, cashflows I&#39;m not interested in right now.
+
+28
+00:01:55,113 --> 00:01:57,968
+I&#39;m interested in cost of capital.
+
+29
+00:01:57,968 --> 00:01:59,899
+Which is equal to what?
+
+30
+00:01:59,899 --> 00:02:00,629
+WAC.
+
+31
+00:02:00,629 --> 00:02:06,535
+But because debt is zero, it is equal to Re.
+
+32
+00:02:06,535 --> 00:02:09,762
+And Re is equal to what?
+
+33
+00:02:09,762 --> 00:02:14,140
+Rf plus Rm minus Rf.
+
+34
+00:02:14,140 --> 00:02:18,630
+I&#39;m not using the expectation signs, beta equity.
+
+35
+00:02:18,630 --> 00:02:21,807
+But of which business?
+
+36
+00:02:21,807 --> 00:02:24,270
+Kitchen business.
+
+37
+00:02:24,270 --> 00:02:25,640
+Do I know the numbers?
+
+38
+00:02:25,640 --> 00:02:26,295
+Yes.
+
+39
+00:02:26,295 --> 00:02:28,274
+2.5.
+
+40
+00:02:28,274 --> 00:02:32,900
+This much is 5 percent.
+
+41
+00:02:32,900 --> 00:02:38,030
+And since I&#39;m figuring out beta equity, how much is it?
+
+42
+00:02:38,030 --> 00:02:39,280
+One.
+
+43
+00:02:39,280 --> 00:02:49,237
+Answer is Pretty straightforward, pretty easy, right?
+
+44
+00:02:49,237 --> 00:02:50,953
+And that&#39;s what I meant,
+
+45
+00:02:50,953 --> 00:02:55,327
+the beauty of a powerful idea is how parsimonously you capture it.
+
+46
+00:02:55,327 --> 00:03:00,200
+Meaning, how simply you can capture it, and how far it can take you.
+
+47
+00:03:00,200 --> 00:03:06,490
+Of course, you don&#39;t wanna make things so simple that you basically trivialize them.
+
+48
+00:03:06,490 --> 00:03:08,310
+But I think capital is not doing that.
+
+49
+00:03:08,310 --> 00:03:12,990
+Capital is extremely powerful, making assumptions, not right,
+
+50
+00:03:12,990 --> 00:03:17,930
+perfectly, but on the right track in such a simple equation.
+
+51
+00:03:17,930 --> 00:03:21,100
+Dangerous to abuse that, okay.
+
+52
+00:03:21,100 --> 00:03:23,040
+So, we got that first question.
+
+53
+00:03:23,040 --> 00:03:25,610
+I&#39;ll do a couple of questions at a time, and
+
+54
+00:03:25,610 --> 00:03:29,940
+then take a break, because I want you to work along with me, okay.
+
+55
+00:03:29,940 --> 00:03:31,650
+Question number two.
+
+56
+00:03:31,650 --> 00:03:34,860
+What is the IRR of the new project?
+
+57
+00:03:34,860 --> 00:03:38,178
+So, let me just qualify that, and remind you, what is the new project.
+
+58
+00:03:38,178 --> 00:03:41,305
+Construction.
+
+59
+00:03:41,305 --> 00:03:48,720
+So, construction is not equal to, I&#39;m giving you a hint, Kitchen.
+
+60
+00:03:50,850 --> 00:03:53,190
+Okay. They are not the same business.
+
+61
+00:03:53,190 --> 00:03:56,190
+You may require construction to put in Kitchen staff.
+
+62
+00:03:56,190 --> 00:03:56,960
+Sorry.
+
+63
+00:03:56,960 --> 00:03:58,640
+I thought that was really funny.
+
+64
+00:03:58,640 --> 00:04:00,530
+But they are very different businesses, right?
+
+65
+00:04:00,530 --> 00:04:04,900
+So, even though, kind of we could&#39;ve taken a totally different business, but
+
+66
+00:04:04,900 --> 00:04:07,560
+I thought, let&#39;s start with construction.
+
+67
+00:04:07,560 --> 00:04:09,340
+Okay, quick question.
+
+68
+00:04:09,340 --> 00:04:12,296
+Why am I asking to do calculation of IRR?
+
+69
+00:04:12,296 --> 00:04:13,450
+For two reasons.
+
+70
+00:04:13,450 --> 00:04:14,630
+The real world does it.
+
+71
+00:04:14,630 --> 00:04:19,486
+And secondly, I have given you the cashflows and they&#39;re well-behaved.
+
+72
+00:04:19,486 --> 00:04:22,810
+What do I mean by well-behaved cash flows?
+
+73
+00:04:22,810 --> 00:04:26,770
+Negative, positive, positive, positive.
+
+74
+00:04:26,770 --> 00:04:30,070
+Point number one, so IRR will be well behaved.
+
+75
+00:04:30,070 --> 00:04:33,614
+Point number two, I&#39;m not comparing two different projects of different lives.
+
+76
+00:04:34,821 --> 00:04:37,135
+I could have problems there.
+
+77
+00:04:37,135 --> 00:04:38,710
+I just have one project.
+
+78
+00:04:38,710 --> 00:04:43,190
+So if the well-behaved cashflows are there, and one project is there,
+
+79
+00:04:43,190 --> 00:04:47,900
+IRR greater than R will work, right?
+
+80
+00:04:47,900 --> 00:04:49,830
+Or NPV positive.
+
+81
+00:04:49,830 --> 00:04:52,420
+Okay, let&#39;s write out the cash flows.
+
+82
+00:04:52,420 --> 00:04:57,460
+If you recall the numbers, how much are you spending at time 0?
+
+83
+00:04:57,460 --> 00:05:00,900
+Negative $100
+
+84
+00:05:03,694 --> 00:05:07,513
+million, right?
+
+85
+00:05:07,513 --> 00:05:08,490
+Yeah?
+
+86
+00:05:08,490 --> 00:05:09,960
+That&#39;s the easy part.
+
+87
+00:05:09,960 --> 00:05:16,590
+Now what&#39;s new is the cashflow in year one could have three components.
+
+88
+00:05:16,590 --> 00:05:17,730
+The first one was what?
+
+89
+00:05:19,170 --> 00:05:27,130
+Its expected c1, not c1, is what we need to calculate.
+
+90
+00:05:27,130 --> 00:05:30,497
+So the three components,
+
+91
+00:05:30,497 --> 00:05:35,399
+the first one is 0.40 times 15.
+
+92
+00:05:43,066 --> 00:05:47,880
+Let me double-check whether this is the right number, or not.
+
+93
+00:05:47,880 --> 00:05:49,310
+I knew I was off by a little bit.
+
+94
+00:05:50,740 --> 00:05:53,309
+So, this was 25 million.
+
+95
+00:05:53,309 --> 00:05:55,778
+So .4 times 25 million?
+
+96
+00:05:55,778 --> 00:05:58,959
+But 30 percent probability.
+
+97
+00:05:58,959 --> 00:06:04,008
+That&#39;s the part I was thinking of, 15 million and
+
+98
+00:06:04,008 --> 00:06:08,150
+30 percent probability, was how much?
+
+99
+00:06:09,630 --> 00:06:10,570
+Nada, nothing.
+
+100
+00:06:12,230 --> 00:06:15,345
+The good news is that my analysis,
+
+101
+00:06:15,345 --> 00:06:20,455
+probabilities add up to 1, and on average, how much do I get?
+
+102
+00:06:20,455 --> 00:06:22,600
+.4 times 25 million is?
+
+103
+00:06:22,600 --> 00:06:23,645
+10 million.
+
+104
+00:06:23,645 --> 00:06:25,650
+.3 times 15 million is?
+
+105
+00:06:25,650 --> 00:06:26,506
+5 million.
+
+106
+00:06:26,506 --> 00:06:30,960
+So my expected cashflow in period 1 is 15 million.
+
+107
+00:06:34,470 --> 00:06:34,970
+Yeah?
+
+108
+00:06:36,778 --> 00:06:38,690
+Let me make sure, 15 million.
+
+109
+00:06:39,740 --> 00:06:44,370
+So I am making 15 million in the first year, but what is the good news?
+
+110
+00:06:44,370 --> 00:06:47,090
+These cashflows are expected to remain the same.
+
+111
+00:06:47,090 --> 00:06:52,620
+So C1 is equal to C2, is equal to C3, is equal forever.
+
+112
+00:06:52,620 --> 00:06:59,560
+So you&#39;re going to get $15 million every year, till infinity, more or less.
+
+113
+00:06:59,560 --> 00:07:03,740
+More or less I say, there&#39;s no such thing as infinity, right?
+
+114
+00:07:03,740 --> 00:07:05,980
+So the question I&#39;m asking you is, what is the IRR?
+
+115
+00:07:07,180 --> 00:07:08,680
+Tricky, no?
+
+116
+00:07:08,680 --> 00:07:09,698
+You should be able to tell me.
+
+117
+00:07:09,698 --> 00:07:13,650
+I&#39;ll pause.
+
+118
+00:07:13,650 --> 00:07:18,070
+IRR Is that rate of return which makes NPV 0.
+
+119
+00:07:18,070 --> 00:07:24,990
+IRR is that rate of return which makes NPV 0.
+
+120
+00:07:24,990 --> 00:07:30,726
+So, quick question.
+
+121
+00:07:30,726 --> 00:07:33,813
+What is NPV?
+
+122
+00:07:33,813 --> 00:07:39,650
+C/R- I0 should be = 0.
+
+123
+00:07:39,650 --> 00:07:41,538
+Why did I add C over R?
+
+124
+00:07:41,538 --> 00:07:42,038
+Sorry.
+
+125
+00:07:47,280 --> 00:07:48,490
+Expected C.
+
+126
+00:07:48,490 --> 00:07:50,140
+And this is IRR.
+
+127
+00:07:50,140 --> 00:07:51,410
+So E(c) over IRR- I0 should be 0.
+
+128
+00:07:51,410 --> 00:07:53,720
+If I solve this equation, I get IRR.
+
+129
+00:07:55,020 --> 00:07:57,720
+Why did I write expected C over IRR?
+
+130
+00:07:57,720 --> 00:08:01,170
+Because I know it&#39;s a perpetuity, and what&#39;s the formula for a perpetuity?
+
+131
+00:08:01,170 --> 00:08:02,540
+C over R.
+
+132
+00:08:02,540 --> 00:08:06,080
+Substitute, do I know this, do I know this?
+
+133
+00:08:06,080 --> 00:08:08,230
+Yes, and yes.
+
+134
+00:08:08,230 --> 00:08:13,254
+And the answer, IRR is 15 percent.
+
+135
+00:08:14,310 --> 00:08:16,000
+You see how cool it is.
+
+136
+00:08:16,000 --> 00:08:19,906
+So I&#39;ve always, I&#39;ve almost done a review of the whole finance course,
+
+137
+00:08:19,906 --> 00:08:21,325
+the one thing missing is.
+
+138
+00:08:21,325 --> 00:08:22,680
+[LAUGH] Sorry.
+
+139
+00:08:22,680 --> 00:08:26,828
+The only thing missing is, I don&#39;t have a G in this.
+
+140
+00:08:26,828 --> 00:08:31,064
+So we&#39;ve figured out the IRR of this project is 15 percent.
+
+141
+00:08:31,064 --> 00:08:33,380
+I&#39;ll ask you one more question.
+
+142
+00:08:33,380 --> 00:08:34,590
+Pause there, come back.
+
+143
+00:08:36,070 --> 00:08:40,750
+Should Kitchen Inc take the new project?
+
+144
+00:08:40,750 --> 00:08:42,070
+See you in a minute.
+

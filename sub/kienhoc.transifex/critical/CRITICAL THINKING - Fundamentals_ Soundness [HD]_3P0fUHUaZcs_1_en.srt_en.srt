@@ -1,0 +1,493 @@
+1
+00:00:00,000 --> 00:00:03,908
+(intro music)
+
+2
+00:00:05,817 --> 00:00:08,125
+Hi, I'm Aaron Ancell.
+
+3
+00:00:08,125 --> 00:00:10,298
+I'm a graduate student at Duke University,
+
+4
+00:00:10,298 --> 00:00:13,397
+and in this video I'm going
+to tell you about soundness,
+
+5
+00:00:13,397 --> 00:00:14,964
+an important notion
+that philosophers use
+
+6
+00:00:14,964 --> 00:00:17,460
+to evaluate arguments.
+
+7
+00:00:17,460 --> 00:00:19,817
+Let's start by looking back at validity.
+
+8
+00:00:19,817 --> 00:00:22,301
+You should already know
+what a valid argument is.
+
+9
+00:00:22,301 --> 00:00:25,762
+If you don't, I encourage you
+to watch the video on validity
+
+10
+00:00:25,762 --> 00:00:29,545
+before watching the rest of this video.
+
+11
+00:00:29,545 --> 00:00:31,739
+As you learned in the video on validity,
+
+12
+00:00:31,739 --> 00:00:33,725
+an argument is valid if it is impossible
+
+13
+00:00:33,725 --> 00:00:35,745
+for all of the premises to be true
+
+14
+00:00:35,744 --> 00:00:37,765
+while its conclusion is false.
+
+15
+00:00:37,765 --> 00:00:42,026
+For example, the following
+is a valid argument.
+
+16
+00:00:42,026 --> 00:00:45,718
+Premise (1): All cats are purple.
+
+17
+00:00:45,718 --> 00:00:50,718
+Premise (2): Everything
+that is purple is a person.
+
+18
+00:00:50,826 --> 00:00:54,945
+Conclusion: Therefore,
+all cats are people.
+
+19
+00:00:55,945 --> 00:00:58,243
+This argument is valid,
+because it is impossible
+
+20
+00:00:58,243 --> 00:01:02,225
+for the premises to be true
+while the conclusion is false.
+
+21
+00:01:02,225 --> 00:01:06,753
+If all cats were purple, and
+all purple things were people,
+
+22
+00:01:06,753 --> 00:01:09,724
+then all cats would be people.
+
+23
+00:01:09,724 --> 00:01:12,231
+Of course, not all cats are purple,
+
+24
+00:01:12,231 --> 00:01:14,287
+and not all purple things are people.
+
+25
+00:01:14,287 --> 00:01:16,343
+So even though this argument is valid,
+
+26
+00:01:16,343 --> 00:01:18,409
+it's not really informative.
+
+27
+00:01:18,409 --> 00:01:20,847
+It does not establish the
+truth of its conclusion,
+
+28
+00:01:20,846 --> 00:01:23,491
+since the premises are obviously false.
+
+29
+00:01:24,364 --> 00:01:26,512
+Since the goal of an
+argument is usually to show
+
+30
+00:01:26,512 --> 00:01:29,322
+that some conclusion is true,
+
+31
+00:01:29,322 --> 00:01:32,730
+we usually want arguments
+that are more than just valid.
+
+32
+00:01:32,989 --> 00:01:36,107
+This is where the notion
+of soundness comes in.
+
+33
+00:01:36,462 --> 00:01:39,957
+Soundness is a technical
+notion in philosophy.
+
+34
+00:01:39,957 --> 00:01:42,313
+What philosophers mean by "sound"
+
+35
+00:01:42,313 --> 00:01:45,416
+is a bit different than
+what people ordinarily mean
+
+36
+00:01:45,417 --> 00:01:48,519
+when they say things like
+"that was sound advice,"
+
+37
+00:01:48,519 --> 00:01:50,984
+or "she demonstrated sound judgement
+
+38
+00:01:50,984 --> 00:01:53,573
+in making that decision."
+
+39
+00:01:53,573 --> 00:01:56,557
+In philosophy, soundness, like validity,
+
+40
+00:01:56,558 --> 00:01:58,990
+applies only to deductive arguments.
+
+41
+00:01:58,989 --> 00:02:00,957
+In order to be sound, an argument
+
+42
+00:02:00,957 --> 00:02:03,013
+must meet two requirements.
+
+43
+00:02:03,013 --> 00:02:06,193
+First, the argument must be valid.
+
+44
+00:02:06,192 --> 00:02:09,652
+All invalid arguments are unsound.
+
+45
+00:02:09,652 --> 00:02:13,727
+Second, the premises of the
+argument must all be true.
+
+46
+00:02:13,728 --> 00:02:16,491
+Any argument that has even
+a single false premise
+
+47
+00:02:16,491 --> 00:02:18,453
+is unsound.
+
+48
+00:02:18,453 --> 00:02:21,901
+To be sound, an argument
+must meet both requirements.
+
+49
+00:02:21,901 --> 00:02:25,175
+Let's go back to the example
+with the purple cats.
+
+50
+00:02:25,175 --> 00:02:28,576
+Is this argument sound? Let's check.
+
+51
+00:02:28,576 --> 00:02:31,816
+The argument is valid, so it
+meets the first requirement.
+
+52
+00:02:31,816 --> 00:02:34,439
+But it definitely does not
+meet the second requirement,
+
+53
+00:02:34,439 --> 00:02:36,633
+since not all of its premises are true.
+
+54
+00:02:36,633 --> 00:02:40,012
+In fact, both the premises are false.
+
+55
+00:02:40,012 --> 00:02:43,054
+But not every unsound
+argument has false premises.
+
+56
+00:02:43,054 --> 00:02:44,842
+Consider another example.
+
+57
+00:02:44,842 --> 00:02:48,754
+Premise (1): All dead parrots are dead.
+
+58
+00:02:48,753 --> 00:02:52,632
+Premise (2): Parrots are not frogs.
+
+59
+00:02:52,632 --> 00:02:56,961
+Conclusion: Therefore, frogs exist.
+
+60
+00:02:56,961 --> 00:02:59,039
+Both premises of this argument are true,
+
+61
+00:02:59,038 --> 00:03:01,280
+so this argument satisfies
+the second requirement
+
+62
+00:03:01,280 --> 00:03:02,871
+for being a sound argument.
+
+63
+00:03:02,871 --> 00:03:05,616
+However, it doesn't satisfy
+the first requirement,
+
+64
+00:03:05,616 --> 00:03:08,181
+because the argument is invalid.
+
+65
+00:03:08,181 --> 00:03:10,561
+The conclusion does not
+follow from the premises.
+
+66
+00:03:10,561 --> 00:03:12,280
+So this is an unsound argument,
+
+67
+00:03:12,280 --> 00:03:14,693
+even though all the premises are true.
+
+68
+00:03:14,693 --> 00:03:16,737
+Note that the conclusion is also true.
+
+69
+00:03:16,737 --> 00:03:17,737
+But that doesn't matter.
+
+70
+00:03:17,737 --> 00:03:20,526
+It's still an unsound argument.
+
+71
+00:03:20,526 --> 00:03:22,325
+Here's another example.
+
+72
+00:03:22,325 --> 00:03:25,866
+Premise (1): Ostriches cannot fly.
+
+73
+00:03:25,866 --> 00:03:30,221
+Premise (2): All insects wear top hats.
+
+74
+00:03:30,221 --> 00:03:34,563
+Conclusion: Therefore,
+ostriches are insects.
+
+75
+00:03:34,562 --> 00:03:37,139
+This argument fails to
+meet both requirements.
+
+76
+00:03:37,139 --> 00:03:40,239
+It isn't valid, and the
+second premise is false.
+
+77
+00:03:40,240 --> 00:03:43,246
+So this argument is definitely unsound.
+
+78
+00:03:43,246 --> 00:03:45,568
+"Now," you might ask, "why should I care
+
+79
+00:03:45,568 --> 00:03:47,507
+"whether an argument is sound?"
+
+80
+00:03:47,507 --> 00:03:50,397
+The reason is that if we know
+that an argument is sound,
+
+81
+00:03:50,397 --> 00:03:52,545
+then we know that the
+conclusion of that argument
+
+82
+00:03:52,545 --> 00:03:54,182
+must be true.
+
+83
+00:03:54,182 --> 00:03:55,929
+There is no way that an argument can meet
+
+84
+00:03:55,929 --> 00:03:57,890
+both requirements for soundness
+
+85
+00:03:57,890 --> 00:04:00,037
+and have a false conclusion.
+
+86
+00:04:00,038 --> 00:04:01,652
+To meet the first requirement,
+
+87
+00:04:01,651 --> 00:04:03,335
+an argument must be valid.
+
+88
+00:04:03,336 --> 00:04:05,530
+And by definition, a valid argument
+
+89
+00:04:05,530 --> 00:04:07,932
+is one where the
+conclusion cannot be false
+
+90
+00:04:07,932 --> 00:04:10,289
+if the premises are true.
+
+91
+00:04:10,289 --> 00:04:12,054
+And to meet the second requirement,
+
+92
+00:04:12,054 --> 00:04:15,350
+the premises of the
+argument must all be true.
+
+93
+00:04:15,350 --> 00:04:17,788
+Putting the requirements
+for soundness together,
+
+94
+00:04:17,788 --> 00:04:19,611
+we can say that a sound argument
+
+95
+00:04:19,612 --> 00:04:22,095
+is one where the
+conclusion cannot be false
+
+96
+00:04:22,095 --> 00:04:23,850
+if the premises are true,
+
+97
+00:04:23,850 --> 00:04:26,148
+and where the premises are all true.
+
+98
+00:04:26,148 --> 00:04:29,647
+This shows that the conclusion of
+a sound argument cannot be false.
+
+99
+00:04:29,646 --> 00:04:31,290
+It has to be true.
+
+100
+00:04:31,769 --> 00:04:33,997
+Sound arguments are very useful.
+
+101
+00:04:33,997 --> 00:04:36,935
+They enable us to establish
+that things are true.
+
+102
+00:04:36,935 --> 00:04:39,512
+Let's finish off by looking at an example.
+
+103
+00:04:39,512 --> 00:04:42,889
+Premise (1): Whales do not have fur.
+
+104
+00:04:42,889 --> 00:04:45,908
+Premise (2): Whales are mammals.
+
+105
+00:04:45,908 --> 00:04:49,656
+Conclusion: Therefore,
+not all mammals have fur.
+
+106
+00:04:50,762 --> 00:04:52,490
+This argument is valid.
+
+107
+00:04:52,490 --> 00:04:54,012
+If the premises are true,
+
+108
+00:04:54,012 --> 00:04:56,415
+then the conclusion must also be true.
+
+109
+00:04:56,415 --> 00:04:59,759
+And the premises are true,
+so this is a sound argument,
+
+110
+00:04:59,759 --> 00:05:01,910
+and the conclusion must be true.
+
+111
+00:05:01,910 --> 00:05:03,415
+Give it a try.
+
+112
+00:05:03,415 --> 00:05:06,394
+See if you can write a
+sound argument of your own.
+
+113
+00:05:10,079 --> 00:05:13,079
+Subtitles by the Amara.org community
+

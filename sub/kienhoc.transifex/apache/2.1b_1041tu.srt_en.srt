@@ -1,0 +1,556 @@
+0
+00:00:00,000 --> 00:00:00,720
+https://youtu.be/u4l2WHvPtzE
+
+1
+00:00:00,720 --> 00:00:03,470
+SPEAKER 1: So what makes Apache Spark scalable?
+
+2
+00:00:03,470 --> 00:00:07,280
+To answer that question, we need to look at a brief review
+
+3
+00:00:07,280 --> 00:00:10,920
+of data-- big data processing.
+
+4
+00:00:10,920 --> 00:00:15,200
+Big data processing started with lots of hard drives and lots
+
+5
+00:00:15,200 --> 00:00:18,760
+of CPUs, all in one big box.
+
+6
+00:00:18,760 --> 00:00:21,180
+This was a solution from the 1990s.
+
+7
+00:00:21,180 --> 00:00:24,890
+All of those processors shared the same memory.
+
+8
+00:00:24,890 --> 00:00:28,650
+Unfortunately, this solution was very expensive
+
+9
+00:00:28,650 --> 00:00:31,530
+because it was produced in low volume and used premium
+
+10
+00:00:31,530 --> 00:00:35,260
+hardware, expensive server hard drives.
+
+11
+00:00:35,260 --> 00:00:38,585
+It's also still not big enough for real big data processing.
+
+12
+00:00:38,585 --> 00:00:41,950
+
+13
+00:00:41,950 --> 00:00:44,510
+A big change was when we switched to using
+
+14
+00:00:44,510 --> 00:00:45,960
+consumer grade hardware.
+
+15
+00:00:45,960 --> 00:00:48,970
+This is not your gold plated server hardware.
+
+16
+00:00:48,970 --> 00:00:52,300
+Rather, this is desktop-like servers
+
+17
+00:00:52,300 --> 00:00:56,690
+that are stacked in racks and put in many racks in a cluster.
+
+18
+00:00:56,690 --> 00:00:59,050
+This makes it very easy to add capacity
+
+19
+00:00:59,050 --> 00:01:01,760
+because each one of those desktop servers
+
+20
+00:01:01,760 --> 00:01:06,850
+is much cheaper in terms of the processor and the disk.
+
+21
+00:01:06,850 --> 00:01:12,920
+However, it requires a lot more complexity in software.
+
+22
+00:01:12,920 --> 00:01:16,950
+So here's a picture of the original Google
+
+23
+00:01:16,950 --> 00:01:19,540
+rack for computing.
+
+24
+00:01:19,540 --> 00:01:23,430
+And it literally was a set of desktop server boards
+
+25
+00:01:23,430 --> 00:01:30,300
+that were put in a stack in a rack and connected together.
+
+26
+00:01:30,300 --> 00:01:33,340
+Now, there are lots of problems with cheap hardware.
+
+27
+00:01:33,340 --> 00:01:36,810
+Google's own numbers are that between 1% and 5%
+
+28
+00:01:36,810 --> 00:01:42,130
+of hard drives fail every year, and approximately 0.2%
+
+29
+00:01:42,130 --> 00:01:45,490
+of memory chips fail every year.
+
+30
+00:01:45,490 --> 00:01:50,400
+Also, the network is much slower than the shared memory
+
+31
+00:01:50,400 --> 00:01:52,970
+that we saw when we had all of those processors
+
+32
+00:01:52,970 --> 00:01:55,520
+and disks in one big box.
+
+33
+00:01:55,520 --> 00:01:57,080
+It's much higher latency, it's slower
+
+34
+00:01:57,080 --> 00:02:00,150
+to get to it, its lower bandwidth also.
+
+35
+00:02:00,150 --> 00:02:02,880
+And network storage is much slower
+
+36
+00:02:02,880 --> 00:02:06,510
+than locally attached storage.
+
+37
+00:02:06,510 --> 00:02:10,615
+There's also uneven performance because a machine may
+
+38
+00:02:10,615 --> 00:02:13,090
+be starting to fail, for example,
+
+39
+00:02:13,090 --> 00:02:18,270
+and so it may operate much slower than the other machines.
+
+40
+00:02:18,270 --> 00:02:21,130
+So those are two of the problems that we
+
+41
+00:02:21,130 --> 00:02:23,140
+have with cluster computing.
+
+42
+00:02:23,140 --> 00:02:25,330
+But there are other problems which we also
+
+43
+00:02:25,330 --> 00:02:26,860
+have to deal with.
+
+44
+00:02:26,860 --> 00:02:29,900
+How do we split work across machines?
+
+45
+00:02:29,900 --> 00:02:34,450
+So let's look at a very simple task, counting words.
+
+46
+00:02:34,450 --> 00:02:36,440
+So how do you count the number of occurrences
+
+47
+00:02:36,440 --> 00:02:38,810
+of each word in a document?
+
+48
+00:02:38,810 --> 00:02:43,380
+So here we have a document, I am Sam, I am Sam, Sam I am,
+
+49
+00:02:43,380 --> 00:02:46,390
+Do you like Green eggs and ham?
+
+50
+00:02:46,390 --> 00:02:51,770
+Now we can see that the word I occurs three times,
+
+51
+00:02:51,770 --> 00:02:59,600
+the word Sam occurs three times, the word do once, and so on.
+
+52
+00:02:59,600 --> 00:03:02,390
+So one approach is to use a hash table.
+
+53
+00:03:02,390 --> 00:03:05,010
+
+54
+00:03:05,010 --> 00:03:07,420
+So here, each time we see a word,
+
+55
+00:03:07,420 --> 00:03:10,060
+we look it up in the hash table, and if it does not
+
+56
+00:03:10,060 --> 00:03:13,580
+appear in the hash table we add it to the hash table.
+
+57
+00:03:13,580 --> 00:03:17,390
+If it does, we increment it by 1.
+
+58
+00:03:17,390 --> 00:03:17,890
+OK.
+
+59
+00:03:17,890 --> 00:03:19,130
+So let's start.
+
+60
+00:03:19,130 --> 00:03:22,310
+We start with I. I does not occur
+
+61
+00:03:22,310 --> 00:03:25,300
+so we add it to our hash table with value 1
+
+62
+00:03:25,300 --> 00:03:28,790
+since we've seen it now once.
+
+63
+00:03:28,790 --> 00:03:32,890
+Same thing for am and the same thing for Sam.
+
+64
+00:03:32,890 --> 00:03:36,630
+Now, when we see I for the second time,
+
+65
+00:03:36,630 --> 00:03:39,410
+it's already in our hash table so we increment the number
+
+66
+00:03:39,410 --> 00:03:41,500
+of occurrences by one.
+
+67
+00:03:41,500 --> 00:03:43,992
+So we've seen it twice now.
+
+68
+00:03:43,992 --> 00:03:46,890
+And we keep doing this.
+
+69
+00:03:46,890 --> 00:03:50,200
+But what if our document is really big?
+
+70
+00:03:50,200 --> 00:03:52,540
+Well, then what we can do is we can divide it
+
+71
+00:03:52,540 --> 00:03:56,860
+up so that each machine only has a portion of the document
+
+72
+00:03:56,860 --> 00:04:00,960
+and we run that same hash table computation on each portion
+
+73
+00:04:00,960 --> 00:04:03,420
+at each machine.
+
+74
+00:04:03,420 --> 00:04:09,200
+We then aggregate that hash table at one machine.
+
+75
+00:04:09,200 --> 00:04:12,000
+So we use machines one through four
+
+76
+00:04:12,000 --> 00:04:15,240
+to operate on the four partitions, or shards,
+
+77
+00:04:15,240 --> 00:04:18,260
+of our data and combine the resulting hash
+
+78
+00:04:18,260 --> 00:04:21,890
+table on machine five.
+
+79
+00:04:21,890 --> 00:04:24,174
+But what's the problem with this approach?
+
+80
+00:04:24,174 --> 00:04:25,465
+Take a look at it for a moment.
+
+81
+00:04:25,465 --> 00:04:28,030
+
+82
+00:04:28,030 --> 00:04:31,580
+So the problem is that all of the results
+
+83
+00:04:31,580 --> 00:04:36,030
+have to fit on one machine, machine five.
+
+84
+00:04:36,030 --> 00:04:40,250
+And what if our document is really, really large?
+
+85
+00:04:40,250 --> 00:04:42,330
+Well, the results aren't going to fit
+
+86
+00:04:42,330 --> 00:04:43,860
+and our computation will fail.
+
+87
+00:04:43,860 --> 00:04:46,480
+
+88
+00:04:46,480 --> 00:04:49,760
+So we could add aggregationo-- so
+
+89
+00:04:49,760 --> 00:04:54,240
+have different layers performing aggregation-- but in the end,
+
+90
+00:04:54,240 --> 00:04:55,800
+all of the results would still have
+
+91
+00:04:55,800 --> 00:04:57,820
+to fit on a single machine.
+
+92
+00:04:57,820 --> 00:05:00,330
+
+93
+00:05:00,330 --> 00:05:04,620
+An alternative is to use divide and conquer.
+
+94
+00:05:04,620 --> 00:05:09,370
+So now, after each machine has computed its local hash table,
+
+95
+00:05:09,370 --> 00:05:13,340
+all of the machines will send their result for the word
+
+96
+00:05:13,340 --> 00:05:17,790
+I to the first machine and for the word do
+
+97
+00:05:17,790 --> 00:05:21,350
+to the first machine and so on.
+
+98
+00:05:21,350 --> 00:05:24,670
+And we'll partition the results by word.
+
+99
+00:05:24,670 --> 00:05:27,250
+
+100
+00:05:27,250 --> 00:05:34,120
+This approach has the first stage-- its' called a map--
+
+101
+00:05:34,120 --> 00:05:37,390
+and with this approach the second stage is called
+
+102
+00:05:37,390 --> 00:05:39,540
+a reduce.
+
+103
+00:05:39,540 --> 00:05:42,130
+And it's this programming paradigm
+
+104
+00:05:42,130 --> 00:05:44,620
+that Google published in a very important research
+
+105
+00:05:44,620 --> 00:05:47,730
+paper in 2004.
+
+106
+00:05:47,730 --> 00:05:52,210
+And this led to the Apache Hadoop project.
+
+107
+00:05:52,210 --> 00:05:55,970
+Now, we can also use MapReduce for tasks like sorting.
+
+108
+00:05:55,970 --> 00:06:00,110
+So what if we want to know what word is used most?
+
+109
+00:06:00,110 --> 00:06:04,150
+So now our reduce stage, instead of just simply dividing
+
+110
+00:06:04,150 --> 00:06:08,020
+by word, we divide by number of occurrences.
+
+111
+00:06:08,020 --> 00:06:10,930
+So all occurrences less than or equal to 2
+
+112
+00:06:10,930 --> 00:06:13,570
+go to the first machine, greater than 2
+
+113
+00:06:13,570 --> 00:06:17,120
+and less than or equal to 4 go to the second machine,
+
+114
+00:06:17,120 --> 00:06:20,080
+and so on.
+
+115
+00:06:20,080 --> 00:06:21,790
+So what's hard about cluster computing?
+
+116
+00:06:21,790 --> 00:06:24,490
+We've seen two things that we have to deal with.
+
+117
+00:06:24,490 --> 00:06:27,840
+We have to deal with dividing the work across the machines.
+
+118
+00:06:27,840 --> 00:06:30,430
+This means we have to consider the network
+
+119
+00:06:30,430 --> 00:06:34,520
+and where data is located because the network can
+
+120
+00:06:34,520 --> 00:06:37,410
+be slow and limited bandwidth.
+
+121
+00:06:37,410 --> 00:06:39,890
+And if data is not local, moving that data
+
+122
+00:06:39,890 --> 00:06:42,559
+could be very expensive.
+
+123
+00:06:42,559 --> 00:06:44,850
+The second thing that makes cluster computing difficult
+
+124
+00:06:44,850 --> 00:06:46,940
+is dealing with failures.
+
+125
+00:06:46,940 --> 00:06:50,250
+If one server fails every three years,
+
+126
+00:06:50,250 --> 00:06:52,245
+then if we have a cluster with 10,000 nodes,
+
+127
+00:06:52,245 --> 00:06:55,980
+we'll see 10 faults every day.
+
+128
+00:06:55,980 --> 00:06:59,200
+And even worse, machines that haven't failed but are just
+
+129
+00:06:59,200 --> 00:07:03,420
+running very slowly are stragglers.
+
+130
+00:07:03,420 --> 00:07:06,730
+And when we have a computation that operates in stages,
+
+131
+00:07:06,730 --> 00:07:09,435
+those stragglers can make each stage take much, much longer.
+
+132
+00:07:09,435 --> 00:07:12,430
+
+133
+00:07:12,430 --> 00:07:14,642
+So how do we deal with failures?
+
+134
+00:07:14,642 --> 00:07:18,500
+Well, if a machine fails with MapReduce
+
+135
+00:07:18,500 --> 00:07:22,140
+we just simply launch another task.
+
+136
+00:07:22,140 --> 00:07:24,850
+How do we deal with slow tasks?
+
+137
+00:07:24,850 --> 00:07:26,630
+We actually use the same mechanism,
+
+138
+00:07:26,630 --> 00:07:29,020
+which is launch another task and then
+
+139
+00:07:29,020 --> 00:07:31,545
+we terminate that slow task.
+
+140
+00:07:31,545 --> 00:07:32,045
+

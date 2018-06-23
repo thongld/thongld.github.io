@@ -1,0 +1,710 @@
+0
+00:00:00,000 --> 00:00:00,001
+phungdo_vgu KienHoc.vn http://youtu.be/hT0tHMp3m5k
+
+1
+00:00:00,000 --> 00:00:00,420
+
+2
+00:00:00,420 --> 00:00:02,211
+TS. Yerraballi: Cùng xem qua
+
+3
+00:00:02,211 --> 00:00:07,110
+cách ta chuyển tiếp
+từ một state transition graph,
+
+4
+00:00:07,110 --> 00:00:20,540
+hay còn gọi là biên dịch, từ 
+một State Transition Graph ra code.
+
+5
+00:00:20,540 --> 00:00:24,540
+Cụ thể, ta sẽ thu nạp
+cái cấu trúc
+
+6
+00:00:24,540 --> 00:00:29,800
+của giải pháp trong dạng code.
+
+7
+00:00:29,800 --> 00:00:34,840
+Và trong đoạn code, ta 
+gọi nó là cấu trúc dữ liệu.
+
+8
+00:00:34,840 --> 00:00:39,280
+Cấu trúc trên giải pháp
+của ta hoặc FSM được thu nạp
+
+9
+00:00:39,280 --> 00:00:41,410
+trong dạng của một cấu trúc dữ liệu.
+
+10
+00:00:41,410 --> 00:00:43,680
+Cùng xem nó hoạt động thế nào.
+
+11
+00:00:43,680 --> 00:00:48,850
+Điều đầu tiên là,
+ta ghi chú sự cơ sở lập luận
+
+12
+00:00:48,850 --> 00:00:54,730
+mà đã có trong bài sửa này,
+đó là có 2 trạng thái.
+
+13
+00:00:54,730 --> 00:00:55,800
+Có 2 input.
+
+14
+00:00:55,800 --> 00:00:59,010
+Input xanh lá là 0,
+Input đỏ là 1.
+
+15
+00:00:59,010 --> 00:01:03,370
+Nó cho ra 2 output khác 
+nhau, 0 và 1.
+
+16
+00:01:03,370 --> 00:01:10,520
+0 có màu magenta,
+1 có màu lục lam.
+
+17
+00:01:10,520 --> 00:01:13,260
+Đầu tiên, hãy mô tả trạng thái.
+
+18
+00:01:13,260 --> 00:01:20,040
+Một trạng thái-- 
+một cấu trúc trạng thái--
+
+19
+00:01:20,040 --> 00:01:22,760
+sẽ có những thuộc tính này.
+
+20
+00:01:22,760 --> 00:01:27,390
+Thuộc tính đầu tiền
+là "unsigned".
+
+21
+00:01:27,390 --> 00:01:29,500
+Mỗi trạng thái có 1 output.
+
+22
+00:01:29,500 --> 00:01:35,159
+Biến "out" sẽ có kiểu
+dữ liệu là "unsigned char",
+
+23
+00:01:35,159 --> 00:01:37,700
+vì có một phép one-to-one
+tương ứng giữa trạng thái 
+
+24
+00:01:37,700 --> 00:01:39,220
+và output.
+
+25
+00:01:39,220 --> 00:01:44,520
+Điều thứ 2 khiến ta phấn khích
+là-- các trạng thái ko có các input.
+
+26
+00:01:44,520 --> 00:01:46,220
+States thì phản ứng với inputs.
+
+27
+00:01:46,220 --> 00:01:49,380
+Ta sẽ đến với inputs 
+trong vài giây nữa.
+
+28
+00:01:49,380 --> 00:01:52,240
+Một trong những thứ cần
+làm khi giải quyết vấn đề
+
+29
+00:01:52,240 --> 00:01:55,940
+là [CHƯA NÓI Ở ĐÂY], 
+ta nên quay lại 
+
+30
+00:01:55,940 --> 00:01:58,090
+về phần mô tả hệ thống.
+
+31
+00:01:58,090 --> 00:02:01,880
+Bởi vì ta đang đọc các input,
+và cho ra các output.
+
+32
+00:02:01,880 --> 00:02:10,039
+Các input sẽ đến với thứ tự là
+0, 1, 1, 0, 0, 0, 1, 1 nếu bạn muốn.
+
+33
+00:02:10,039 --> 00:02:13,980
+và cứ thế,
+điều ta sẽ làm là:
+
+34
+00:02:13,980 --> 00:02:19,370
+xác định cụ thể thời gian
+delay giữa các bit.
+
+35
+00:02:19,370 --> 00:02:23,940
+Ta cần chắc rằng khi đọc những
+input này,... bởi vì chúng đến từ
+
+36
+00:02:23,940 --> 00:02:28,990
+một công tắc mà ta nhấn, 
+rồi ta cho thực thi.
+
+37
+00:02:28,990 --> 00:02:32,730
+Ta mong rằng thời gian delay giữa
+việc đọc các input
+
+38
+00:02:32,730 --> 00:02:41,820
+sẽ được xác định cụ thể trước
+-- ví dụ là 0.5s hoặc 0.1s.
+
+39
+00:02:41,820 --> 00:02:42,320
+...
+
+40
+00:02:42,320 --> 00:02:43,860
+Nó ko quan trọng.
+
+41
+00:02:43,860 --> 00:02:47,920
+Ta phải đợi một chút
+giữa việc đọc các input.
+
+42
+00:02:47,920 --> 00:02:51,400
+rồi ta sẽ thấy lí do
+chờ đợi.
+
+43
+00:02:51,400 --> 00:02:56,780
+Bây giờ, ta sẽ định rõ các 
+thuộc tính khác cho từng state, 
+
+44
+00:02:56,780 --> 00:03:00,540
+nghĩa là khi đang trong state bất kì 
+nào đấy.
+
+45
+00:03:00,540 --> 00:03:09,310
+Định kiểu "unsigned long" cho biến
+"wait" và ta sẽ thấy cách dùng
+
+46
+00:03:09,310 --> 00:03:12,755
+của nó ghi viết xong
+chương trình.
+
+47
+00:03:12,755 --> 00:03:18,680
+
+48
+00:03:18,680 --> 00:03:23,040
+Thuộc tính thứ 3 
+cũng quan trọng.
+
+49
+00:03:23,040 --> 00:03:27,050
+Thuộc tính thứ 3 cần lưu tâm 
+là State tiếp theo là gì?
+
+50
+00:03:27,050 --> 00:03:31,420
+Mỗi State đều có một State tiếp theo.
+
+51
+00:03:31,420 --> 00:03:35,630
+Hoàn toàn có thể khi có 
+một input 0 thì ở yên tại chỗ.
+
+52
+00:03:35,630 --> 00:03:37,520
+Khi có input 1 thì nhảy qua đây.
+
+53
+00:03:37,520 --> 00:03:41,460
+State Even có thể có bao nhiêu
+State tiếp theo?
+
+54
+00:03:41,460 --> 00:03:45,420
+Điều đó tùy thuộc vào bao nhiêu
+input mà nó phải xử lý.
+
+55
+00:03:45,420 --> 00:03:51,120
+Vì có 2 input mà ta phải xử lý,
+đó là khả năng của 0.
+
+56
+00:03:51,120 --> 00:03:52,990
+Khi input là 0, ở yên.
+
+57
+00:03:52,990 --> 00:03:54,330
+Khi input là 1, đi qua đây.
+
+58
+00:03:54,330 --> 00:03:58,080
+Mảng này cho biết
+tất cả các State tiếp theo
+
+59
+00:03:58,080 --> 00:04:00,920
+có thể đến được từ State cụ thể này?
+
+60
+00:04:00,920 --> 00:04:05,030
+Đó là một mảng của
+2 State tiếp theo.
+
+61
+00:04:05,030 --> 00:04:09,460
+mảng này có kiểu dữ liệu
+là "unsigned char".
+
+62
+00:04:09,460 --> 00:04:14,630
+
+63
+00:04:14,630 --> 00:04:20,589
+Ta có một mảng của các 
+next states, có kiểu "unsigned char".
+
+64
+00:04:20,589 --> 00:04:23,800
+Ý tưởng này tôi sẽ
+lưu lại ở đây,
+
+65
+00:04:23,800 --> 00:04:26,230
+tôi sẽ viết một 
+dòng comment ở đây.
+
+66
+00:04:26,230 --> 00:04:34,640
+đây là chỉ mục-index của trạng thái.
+
+67
+00:04:34,640 --> 00:04:40,310
+Nói cách khác, nếu ta muốn
+rằng khi input là 0, 
+
+68
+00:04:40,310 --> 00:04:46,540
+đi đến Even State, Even State 
+được cho là một chỉ mục
+
+69
+00:04:46,540 --> 00:04:48,700
+Odd State cũng được cho là một index.
+
+70
+00:04:48,700 --> 00:04:53,670
+Phương pháp 
+là:
+
+71
+00:04:53,670 --> 00:05:02,340
+ta đặt #define Even trở thành index của 0.
+
+72
+00:05:02,340 --> 00:05:10,920
+và #define Odd trở thành index của 1.
+
+73
+00:05:10,920 --> 00:05:13,640
+Ta đang đánh số các state.
+
+74
+00:05:13,640 --> 00:05:20,610
+Vì chỉ có 2 trạng thái, nên ta
+xem rằng đây là trạng thái-0  và trạng thái-1.
+
+75
+00:05:20,610 --> 00:05:31,160
+Như đã làm, ta sẽ định nghĩa một
+typedef struct state bằng 
+
+76
+00:05:31,160 --> 00:05:35,350
+"Stype".
+
+77
+00:05:35,350 --> 00:05:40,070
+
+78
+00:05:40,070 --> 00:05:45,800
+Ta đã thu nạp cấu trúc này, nhưng
+cũng phải bắt được nội dung.
+
+79
+00:05:45,800 --> 00:05:49,640
+Điều tiếp theo ta 
+cần viết code ở đây.
+
+80
+00:05:49,640 --> 00:05:52,390
+
+81
+00:05:52,390 --> 00:05:57,700
+ta có một mảng fsm kích thước 2.
+
+82
+00:05:57,700 --> 00:06:00,740
+Đó là vì có 2 trạng thái
+trong hệ thống.
+
+83
+00:06:00,740 --> 00:06:04,700
+Ta sẽ populate 2 trạng thái này
+, trong trường hợp này
+
+84
+00:06:04,700 --> 00:06:09,850
+là cách declare và khởi tạo 
+một mảng.
+
+85
+00:06:09,850 --> 00:06:11,510
+Nhớ rằng, ta đã biết làm việc này.
+
+86
+00:06:11,510 --> 00:06:13,590
+Đặt một dấu ngoặc nhọn.
+
+87
+00:06:13,590 --> 00:06:16,830
+Phần tử đầu tiên là 
+một structure.
+
+88
+00:06:16,830 --> 00:06:20,960
+Phần tử thứ hai cũng là một structure.
+
+89
+00:06:20,960 --> 00:06:22,680
+và đóng ngoặc nhọn lại.
+
+90
+00:06:22,680 --> 00:06:25,420
+Phần tử đầu tiên của
+mảng là gì?
+
+91
+00:06:25,420 --> 00:06:27,710
+Mỗi phần tử đều có kiểu "Stype".
+
+92
+00:06:27,710 --> 00:06:30,940
+Ta biết rằng phần tử đầu tiên 
+có 3 thuộc tính.
+
+93
+00:06:30,940 --> 00:06:34,730
+Thuộc tính thứ nhất là output.
+
+94
+00:06:34,730 --> 00:06:38,700
+Trong trường hợp này, ta biết 
+mình sẽ cho ra một giá trị đầu ra,
+
+95
+00:06:38,700 --> 00:06:42,460
+Đây sẽ là Even State.
+
+96
+00:06:42,460 --> 00:06:44,080
+đây sẽ là Odd State.
+
+97
+00:06:44,080 --> 00:06:46,970
+Thực hiện nào. 
+Cần chú ý.
+
+98
+00:06:46,970 --> 00:06:54,230
+Code của Even State là chỗ này,
+Còn Odd State là dòng này.
+
+99
+00:06:54,230 --> 00:07:00,590
+Với Even State, output 
+cần cho ra là 0.
+
+100
+00:07:00,590 --> 00:07:06,550
+Even State thì ouput là 0.
+
+101
+00:07:06,550 --> 00:07:10,490
+Ta đều biết rằng cần 
+đợi một khoảng thời gian,
+
+102
+00:07:10,490 --> 00:07:13,650
+Cho một con số 
+vào chỗ này.
+
+103
+00:07:13,650 --> 00:07:16,950
+Ta đặt số 100, rồi sẽ hiểu 
+nó được dùng thế nào.
+
+104
+00:07:16,950 --> 00:07:21,120
+Thuộc tính thứ 3 cho
+Even State là một mảng.
+
+105
+00:07:21,120 --> 00:07:26,130
+Hãy nhớ rằng, mảng luôn được 
+khởi tạo bằng các dấu ngoặc nhọn.
+
+106
+00:07:26,130 --> 00:07:34,850
+Nó thể hiện rằng,
+khi input là 0 thì vẫn ở Even State.
+
+107
+00:07:34,850 --> 00:07:36,890
+Ta viết vào đây.
+
+108
+00:07:36,890 --> 00:07:45,460
+Tôi tạo một ghi chú,
+khi input-0 thì ở Even.
+
+109
+00:07:45,460 --> 00:07:49,270
+Khi input là 1, chuyển qua Odd State.
+
+110
+00:07:49,270 --> 00:07:50,960
+Viết Odd vào.
+
+111
+00:07:50,960 --> 00:07:53,540
+
+112
+00:07:53,540 --> 00:08:04,220
+Tương tự cho trạng thái 
+thứ 2, Output là 1.
+
+113
+00:08:04,220 --> 00:08:07,430
+Delay cũng là 100, 
+vì ta dùng
+
+114
+00:08:07,430 --> 00:08:11,840
+delay giống nhau
+khi dịch chuyển giữa trạng thái.
+
+115
+00:08:11,840 --> 00:08:18,360
+Mảng ở đây cho biết, 
+input-0 thì ở yên Odd State.
+
+116
+00:08:18,360 --> 00:08:20,480
+Viết Odd vào.
+
+117
+00:08:20,480 --> 00:08:25,210
+Nếu input là 1, đi qua Even.
+
+118
+00:08:25,210 --> 00:08:29,380
+Việc này khởi tạo
+mảng, và thực tế thì ta
+
+119
+00:08:29,380 --> 00:08:31,850
+sẽ xem thứ này trong bộ nhớ ra làm sao 
+trong mấy giây nữa.
+
+120
+00:08:31,850 --> 00:08:35,210
+Đầu tiên, có phải thứ
+cần phải làm dễ hiểu,
+
+121
+00:08:35,210 --> 00:08:49,040
+đó là mảng này được index 0.
+nó cho biết ở yên tại chỗ.
+
+122
+00:08:49,040 --> 00:08:55,950
+và khi index-1, là giá trị
+ở đây, ta qua đấy.
+
+123
+00:08:55,950 --> 00:08:58,860
+
+124
+00:08:58,860 --> 00:09:04,010
+Hãy mường tượng 
+nó sẽ hiện ra trọng bộ nhớ.
+
+125
+00:09:04,010 --> 00:09:05,660
+Tôi sẽ thể hiện nó ở ngay đây.
+
+126
+00:09:05,660 --> 00:09:11,450
+Cần xóa chỗ này đã.
+Và xem
+
+127
+00:09:11,450 --> 00:09:19,450
+thứ gì được tạo ra trong
+bộ nhớ-- thứ gì được lưu
+
+128
+00:09:19,450 --> 00:09:21,625
+trong bộ nhớ như là kết quả 
+của phép declaration này.
+
+129
+00:09:21,625 --> 00:09:32,070
+
+130
+00:09:32,070 --> 00:09:36,310
+Đây là FSM [0].
+
+131
+00:09:36,310 --> 00:09:45,070
+đây là FSM [1],
+đây là hiện thân của Even structure
+
+132
+00:09:45,070 --> 00:09:46,990
+Đây là Odd structure.
+
+133
+00:09:46,990 --> 00:10:00,150
+Giá trị chỗ này bằng 0
+giá trị chỗ này là 100.
+
+134
+00:10:00,150 --> 00:10:01,670
+Đây là một character.
+
+135
+00:10:01,670 --> 00:10:06,160
+Có kiểu là "long", 
+nó chứa 4 bytes.
+
+136
+00:10:06,160 --> 00:10:12,500
+Ta có một mảng của 2 vị trí,
+đều là kiểu "char".
+
+137
+00:10:12,500 --> 00:10:17,110
+Cái đầu tiên có giá trị
+là Even.
+
+138
+00:10:17,110 --> 00:10:19,210
+Trong trường hợp này, tôi
+viết nó trước.
+
+139
+00:10:19,210 --> 00:10:26,670
+Tôi gọi Even, đã được định nghĩa 
+đồng nghĩa với 0,
+
+140
+00:10:26,670 --> 00:10:35,740
+và Odd, đồng nghĩa với 1.
+
+141
+00:10:35,740 --> 00:10:46,370
+Mảng thứ 2 có output là 1,
+
+142
+00:10:46,370 --> 00:10:56,610
+Delay là 100, có 2 phần tử ở 
+đây, chỗ này là Odd.
+
+143
+00:10:56,610 --> 00:11:01,510
+Trong bộ nhớ thì Odd là 
+một số, 1.
+
+144
+00:11:01,510 --> 00:11:04,920
+Even là một số, 0.
+
+145
+00:11:04,920 --> 00:11:11,280
+Đây là vị trí 0 của mảng next.
+
+146
+00:11:11,280 --> 00:11:19,630
+đây là vị trí 1 của mảng next,
+trong trường hợp FSM 1.
+
+147
+00:11:19,630 --> 00:11:23,050
+đây là out.
+
+148
+00:11:23,050 --> 00:11:25,740
+Đây là thời gian chờ.
+
+149
+00:11:25,740 --> 00:11:30,200
+Tương tự, đây là out, thời gian chờ.
+
+150
+00:11:30,200 --> 00:11:32,490
+đây là hai vị trí của mảng next.
+Trong FSM[0] thì biến next[0] sẽ bằng 0,
+trong FSM[1] thì biến next [0] sẽ bằng 1.
+
+151
+00:11:32,490 --> 00:11:35,450
+...
+
+152
+00:11:35,450 --> 00:11:45,330
+Nếu muốn truy cập nó,
+đây là next[0], đây là next[1].
+
+153
+00:11:45,330 --> 00:11:53,160
+đây là index.
+
+154
+00:11:53,160 --> 00:11:55,780
+This is the green indexes.
+
+155
+00:11:55,780 --> 00:12:04,120
+And these are my red indexes, which
+tell me on what input that happens.

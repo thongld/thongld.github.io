@@ -1,0 +1,383 @@
+95
+00:04:06,220 --> 00:04:09,580
+(L.N.Chính) Thao reviewed
+Cho nên tôi mới xăm lên một cái hình,
+
+96
+00:04:09,580 --> 00:04:11,910
+đúng chuẩn hình tượng ngầu và cứng của tôi.
+
+97
+00:04:11,910 --> 00:04:14,140
+Thực ra các biểu thức chính quy
+
+98
+00:04:14,140 --> 00:04:16,370
+cũng là một phần hình tượng ngầu và cứng đó.
+
+99
+00:04:16,370 --> 00:04:18,860
+Bởi vì biểu thức chính quy là nghề của chàng ;-)
+
+100
+00:04:18,860 --> 00:04:22,050
+Bà con ấn tượng với ngón nghề này
+
+101
+00:04:22,050 --> 00:04:22,770
+của tôi lắm.
+
+102
+00:04:22,770 --> 00:04:25,890
+Nhưng dù tôi đỉnh thế nào, 
+tôi vẫn cần một tờ phao (cheat sheet).
+
+103
+00:04:25,890 --> 00:04:28,545
+Hi vọng các bạn cũng có thể download tờ phao này
+
+104
+00:04:28,545 --> 00:04:31,080
+trên trang web của Python hoặc web nào đó tương tự
+
+105
+00:04:31,080 --> 00:04:32,790
+Nó cũng không cần gì nhiều,
+
+106
+00:04:32,790 --> 00:04:34,840
+chỉ để hỗ trợ bạn thôi.
+
+107
+00:04:34,840 --> 00:04:37,140
+Và đây là các ký tự có ý nghĩa đặc biệt.
+
+108
+00:04:37,140 --> 00:04:39,890
+Giống như dấu mũ ^ biểu thị đầu dòng,
+còn ký hiệu $ thì biểu thị kết thúc dòng.
+
+109
+00:04:39,890 --> 00:04:40,935
+Giống như dấu mũ ^ biểu thị đầu dòng,
+còn ký hiệu $ thì biểu thị kết thúc dòng.
+
+110
+00:04:40,935 --> 00:04:42,810
+Vậy ký hiệu $ không phải đô la,
+
+111
+00:04:42,810 --> 00:04:46,400
+mà mang một ý nghĩa riêng trong chuỗi ký tự của ta,
+
+112
+00:04:46,400 --> 00:04:48,780
+tựa như ngôn ngữ lập trình.
+
+113
+00:04:48,780 --> 00:04:52,120
+Như nhiều thứ khác ta học về sau trong Python,
+
+114
+00:04:52,120 --> 00:04:54,220
+khi ta muốn dùng một tính năng phức tạp,
+
+115
+00:04:54,220 --> 00:04:57,600
+nó đi kèm với Python nhưng dưới hình thức một thư viện.
+
+116
+00:04:57,600 --> 00:04:59,460
+Và muốn sử dụng thư viện regular expression
+
+117
+00:04:59,460 --> 00:05:02,430
+thì ta phải gõ "import re"
+
+118
+00:05:02,430 --> 00:05:04,130
+ở đầu chương trình.
+
+119
+00:05:04,130 --> 00:05:06,390
+Rồi ta gọi re.search() để
+
+120
+00:05:06,390 --> 00:05:09,240
+tìm hàm search từ thư viện biểu thức chính quy.
+
+121
+00:05:09,240 --> 00:05:12,740
+Ta sẽ học về 2 chức năng cơ bản
+
+122
+00:05:12,740 --> 00:05:14,740
+trong thư viện này.
+
+123
+00:05:14,740 --> 00:05:16,900
+Đầu tiên là hàm search
+thay thế cho find.
+
+124
+00:05:16,900 --> 00:05:18,490
+Một phiên bản thông minh của find.
+
+125
+00:05:18,490 --> 00:05:22,310
+Thứ 2 là hàm find all, kết hợp tìm kiếm thông minh
+
+126
+00:05:22,310 --> 00:05:24,140
+và tự động trích xuất thông tin.
+
+127
+00:05:24,140 --> 00:05:26,320
+Giờ ta sẽ lần lượt học cả 2.
+
+128
+00:05:26,320 --> 00:05:29,270
+Tôi sẽ so sánh nó với các code Python
+
+129
+00:05:29,270 --> 00:05:31,300
+mà các bạn đã biết.
+
+130
+00:05:31,300 --> 00:05:34,480
+
+131
+00:05:34,480 --> 00:05:37,300
+Đây là một đoạn code để tìm những dòng
+
+132
+00:05:37,300 --> 00:05:40,126
+có chuỗi "From:" 
+
+133
+00:05:40,126 --> 00:05:41,626
+Chúng ta sẽ mở file,
+
+134
+00:05:41,626 --> 00:05:44,490
+xoá đi các khoảng trắng,
+
+135
+00:05:44,490 --> 00:05:47,840
+tìm các dòng có chuỗi "From:",
+
+136
+00:05:47,840 --> 00:05:51,010
+nếu nó lớn hơn hoặc bằng 0 thì in nó ra màn hình.
+
+137
+00:05:51,010 --> 00:05:53,220
+Hàm này chỉ đưa ra kết quả là một con số.
+
+138
+00:05:53,220 --> 00:05:54,790
+Nếu không tìm thấy, kết quả trả về là -1.
+
+139
+00:05:54,790 --> 00:05:58,040
+Cuối cùng chỉ việc in những dòng có từ "From:".
+
+140
+00:05:58,040 --> 00:06:00,730
+Còn bên đây là một ví dụ tương đương sử dụng các biểu thức chính quy
+
+141
+00:06:00,730 --> 00:06:03,240
+2 cách này tương đương nhau.
+
+142
+00:06:03,240 --> 00:06:05,994
+Đầu tiên ta phải import thư viện vào 
+như tôi đã đề cập.
+
+143
+00:06:05,994 --> 00:06:07,410
+Phần còn lại thì giống nhau.
+
+144
+00:06:07,410 --> 00:06:11,570
+Hàm re.search trong vế if có nghĩa là
+
+145
+00:06:11,570 --> 00:06:15,100
+gọi tiện ích tìm kiếm trong thư viện "re".
+
+146
+00:06:15,100 --> 00:06:17,960
+Sau đó ta nhập vào chuỗi cần tìm
+
+147
+00:06:17,960 --> 00:06:21,080
+và line tức đoạn text cần quét qua.
+
+148
+00:06:21,080 --> 00:06:24,130
+Giống như là tìm kiếm "From:" bên trong line và trả cho tôi
+
+149
+00:06:24,130 --> 00:06:27,510
+giá trị True hoặc False, tùy theo
+
+150
+00:06:27,510 --> 00:06:28,635
+bạn có tìm được nó hay không
+
+151
+00:06:28,635 --> 00:06:30,720
+Có thể các bạn sẽ thấy
+
+152
+00:06:30,720 --> 00:06:32,500
+nó nhiều chữ hơn.
+
+153
+00:06:32,500 --> 00:06:34,750
+Đúng là ở đây có thêm vài ký tự.
+
+154
+00:06:34,750 --> 00:06:37,640
+Nhưng rất nhanh thôi bạn sẽ thấy
+ta có thể gia tăng sức mạnh
+
+155
+00:06:37,640 --> 00:06:39,210
+cho biểu thức chính quy này.
+
+156
+00:06:39,210 --> 00:06:41,770
+Với find thì ta phải thêm vài dòng code cho
+
+157
+00:06:41,770 --> 00:06:44,180
+chương trình xịn hơn,
+còn trong biểu thức chính quy
+
+158
+00:06:44,180 --> 00:06:49,780
+ta thay đổi chuỗi cần tìm
+
+159
+00:06:49,780 --> 00:06:51,640
+để tùy chỉnh hướng tìm kiếm.
+
+160
+00:06:51,640 --> 00:06:52,900
+Chủ yếu là ta sẽ chỉ
+
+161
+00:06:52,900 --> 00:06:54,570
+thay đổi chuỗi tìm kiếm.
+
+162
+00:06:54,570 --> 00:06:58,160
+Giờ, nếu ta muốn tìm kiểu khác,
+
+163
+00:06:58,160 --> 00:07:00,230
+ta không muốn từ "From:" ở bất cứ đâu trong dòng
+
+164
+00:07:00,230 --> 00:07:02,880
+mà muốn nó ở đầu dòng.
+
+165
+00:07:02,880 --> 00:07:05,207
+Ta phải đổi thành line.startswith('From:')
+
+166
+00:07:05,207 --> 00:07:07,540
+Và nó sẽ cho ra các giá trị True hoặc False tùy theo
+
+167
+00:07:07,540 --> 00:07:10,520
+dòng đó có bắt đầu bằng "From:" không.
+
+168
+00:07:10,520 --> 00:07:12,890
+Để làm tương tự với biểu thức chính quy
+
+169
+00:07:12,890 --> 00:07:15,791
+ta phải thay đổi chuỗi tìm kiếm.
+
+170
+00:07:15,791 --> 00:07:17,290
+Ta hãy sang bên sử dụng biểu thức chính quy.
+
+171
+00:07:17,290 --> 00:07:19,120
+Cái này không chỉ là một chuỗi.
+
+172
+00:07:19,120 --> 00:07:20,750
+Nó là một chuỗi cộng thêm những kí tự có tác dụng
+
+173
+00:07:20,750 --> 00:07:24,840
+ra lệnh cho thư viện biểu thức chính quy.
+
+174
+00:07:24,840 --> 00:07:29,470
+Dấu mũ, kí tự đầu tiên trong danh sách biểu thức chính quy
+
+175
+00:07:29,470 --> 00:07:31,870
+biểu thị vị trí đầu dòng.
+
+176
+00:07:31,870 --> 00:07:33,130
+Nó không hẳn mang ý nghĩa của một dấu mũ.
+
+177
+00:07:33,130 --> 00:07:35,940
+Vậy chữ F đứng sau dấu mũ này
+
+178
+00:07:35,940 --> 00:07:39,640
+có nghĩa là chữ F phải nằm ở cột 1,
+
+179
+00:07:39,640 --> 00:07:41,470
+tức là ký tự đầu tiên của dòng.
+
+180
+00:07:41,470 --> 00:07:44,630
+Cái này cũng sẽ đưa ra giá trị True hoặc False
+
+181
+00:07:44,630 --> 00:07:47,510
+tùy theo biểu thức chính quy có trùng khớp không.
+
+182
+00:07:47,510 --> 00:07:51,230
+Tìm cụm "From:" đứng đầu dòng đồng nghĩa với bên kia,
+
+183
+00:07:51,230 --> 00:07:52,720
+dòng có bắt đầu bằng "From:" hay không.
+
+184
+00:07:52,720 --> 00:07:54,740
+Vậy 2 bên tương đương với nhau.
+
+185
+00:07:54,740 --> 00:07:56,730
+Nhưng bạn cần nắm được
+
+186
+00:07:56,730 --> 00:08:00,560
+phương thức thay đổi chuỗi bằng các ký tự
+
+187
+00:08:00,560 --> 00:08:04,460
+có ý nghĩa đặc biệt, OK?
+
+188
+00:08:04,460 --> 00:08:06,770
+Một ký tự rất phổ biến khác
+

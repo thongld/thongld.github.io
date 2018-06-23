@@ -1,0 +1,233 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/bUOC_OAwjlA
+phuongmai201 23/10
+
+1
+00:00:05,000 --> 00:00:13,039
+"Quản trị vận hành". Chúng ta đã học đến phần phân tích năng suất và đang xem xét
+
+2
+00:00:13,039 --> 00:00:18,469
+ví dụ bổ trợ thứ 2, đây cũng là phần cuối cùng. Nếu bạn còn nhớ 
+
+3
+00:00:18,469 --> 00:00:23,649
+trong phần trước ta đang nói đến công ty Amazing Shed chuyên sản xuất 
+
+4
+00:00:23,649 --> 00:00:28,750
+3 loại nhà kho: thông thường, ưu việt, cao cấp. Mỗi 
+
+5
+00:00:28,750 --> 00:00:33,849
+nhà kho sử dụng cùng nguồn lực gồm: đội chế tạo, đội lắp ráp, đội sơn
+
+6
+00:00:33,849 --> 00:00:41,719
+và đội kiểm tra. Lợi nhuận cho mỗi nhà kho thông thường là $190, $224 đối với
+
+7
+00:00:41,719 --> 00:00:47,850
+loại ưu việt và $234 cho loại cao cấp. Với nguồn lực như hiện tại, nhà kho loại nào mang lại nhiều 
+
+8
+00:00:47,850 --> 00:00:54,590
+lợi nhuận nhất ? Ta sẽ quay trở lại thông tin ban đầu của vấn đề
+
+9
+00:00:54,590 --> 00:00:59,250
+ở đó ta đã tìm ra unit load cho mỗi loại nhà kho
+
+10
+00:00:59,250 --> 00:01:04,349
+khác nhau và số nhóm có sẵn cũng như số lượng 
+
+11
+00:01:04,349 --> 00:01:10,368
+giờ mỗi ngày cho mỗi nhóm. Bạn có thể nhìn thấy ở đây mỗi loại nhà kho khác nhau có 
+
+12
+00:01:10,368 --> 00:01:17,269
+những unit loads khác nhau cho việc chế tạo, lắp ráp, sơn và kiểm tra. Việc 
+
+13
+00:01:17,269 --> 00:01:21,408
+tiếp theo ta làm là ta sẽ xem xem tổng số nhà kho
+
+14
+00:01:21,409 --> 00:01:28,990
+có thể làm được của từng loại nếu giả sử rằng ta chỉ tập trung làm đúng 1 loại đó. Nào 
+
+15
+00:01:28,989 --> 00:01:34,929
+hãy bắt đầu với loại nhà kho thông thường. Unit load cho việc chế tạo nhà kho thông thường 
+
+16
+00:01:34,930 --> 00:01:36,170
+là 2 giờ,
+
+17
+00:01:36,170 --> 00:01:43,049
+lắp ráp là 3 giờ, sơn 1 giờ, kiểm tra 1,5 giờ. Bây giờ sử dụng số 
+
+18
+00:01:43,049 --> 00:01:49,899
+nhóm làm việc mỗi ngày và số giờ khả dụng cho mỗi nhóm, ta tính 
+
+19
+00:01:49,899 --> 00:01:55,250
+số thời gian khả dụng cho mỗi nguồn lực. Vậy đối với việc chế tạo, ta có
+
+20
+00:01:55,250 --> 00:01:56,728
+28 giờ
+
+21
+00:01:56,728 --> 00:02:04,109
+lắp ráp là 22.5 giờ, sơn 14 giờ và kiểm tra 12 giờ. Bây giờ ta đã biết 
+
+22
+00:02:04,109 --> 00:02:09,490
+thời gian ta có và thời gian cần thiết hay chính là unit load, từ đó ta tính được
+
+23
+00:02:09,490 --> 00:02:16,329
+năng suất mỗi ngày. 28 giờ khả dụng, 2 giờ cho việc chế tạo, vậy trong
+
+24
+00:02:16,330 --> 00:02:17,450
+việc chế tạo
+
+25
+00:02:17,449 --> 00:02:23,268
+ta có thể chế tạo được 14 nhà kho. Ta tiếp tục thấy năng suất của việc lắp ráp là 7.5 
+
+26
+00:02:23,269 --> 00:02:24,450
+nhà kho
+
+27
+00:02:24,449 --> 00:02:32,378
+sơn là 14 nhà kho và kiểm tra là 8. Ta tính lợi nhuận cho riêng việc sản xuất
+
+28
+00:02:32,378 --> 00:02:37,810
+nhà kho thông thường. Ta sẽ lấy số lượng nhà kho tối đa có thể sản xuất được
+
+29
+00:02:37,810 --> 00:02:43,959
+trong trường hợp này là 7.5 vì điểm ứ đọng ở đây là việc lắp ráp
+
+30
+00:02:43,959 --> 00:02:50,409
+rồi ta nhân 7.5 nhà kho đó với 190 đô 
+
+31
+00:02:50,409 --> 00:02:57,669
+tiền lãi ta kiếm được cho mỗi nhà kho, và nó cho ta kết quả là 1425 đô. Bây giờ nhìn sang
+
+32
+00:02:57,669 --> 00:03:03,539
+loại nhà kho ưu việt, ta tính toán tương tự. Bây giờ sử dụng
+
+33
+00:03:03,539 --> 00:03:09,689
+unit loads cho loại nhà kho ưu việt. Ta vẫn có 28 giờ khả dụng mỗi ngày 
+
+34
+00:03:09,689 --> 00:03:15,699
+cho việc chế tạo, 22.5 giờ cho lắp rắp, 14 giờ cho việc sơn, và 12 giờ cho việc kiểm tra
+
+35
+00:03:15,699 --> 00:03:22,608
+Nhưng bây giờ, năng suất mỗi ngày khác đi vì unit load đã thay đổi. Ta 
+
+36
+00:03:22,609 --> 00:03:25,030
+có 28 giờ khả dụng mỗi ngày
+
+37
+00:03:25,030 --> 00:03:31,549
+chia cho 2.5 giờ cần thiết cho việc chế tạo thì sẽ làm được 11.2 
+
+38
+00:03:31,549 --> 00:03:37,219
+nhà kho. Nếu làm tương tự với resouce pools chế tạo, lắp ráp 
+
+39
+00:03:37,219 --> 00:03:44,099
+sơn và kiểm tra, ta thấy rằng điểm ứ đọng vẫn giữ nguyên ở qui trình lắp ráp và lần này
+
+40
+00:03:44,099 --> 00:03:50,219
+ta chỉ làm được 6.43 nhà kho bởi nó 
+
+41
+00:03:50,219 --> 00:03:55,530
+là số lượng nhà kho tối đa có thể hoàn tất. Ta sẽ nhân nó với $220 tiền lãi 
+
+42
+00:03:55,530 --> 00:04:04,239
+thu được cho mỗi nhà kho ưu việt và được kết quả là $1414. Bây giờ nhìn tiếp sang
+
+43
+00:04:04,239 --> 00:04:08,439
+loại nhà kho cao cấp. Đối với loại này, unit load lại
+
+44
+00:04:08,439 --> 00:04:15,818
+thay đổi và thời gian khả dụng mỗi ngày giữ nguyên nên năng suất mỗi ngày giờ đây
+
+45
+00:04:15,818 --> 00:04:25,439
+sẽ khác. Trong việc chế tạo sẽ làm được 11.2 nhà kho, lắp ráp được 5.92, sơn được 11.2 và 
+
+46
+00:04:25,439 --> 00:04:27,259
+kiểm tra được 8 nhà kho. 
+
+47
+00:04:27,259 --> 00:04:34,009
+Vậy điểm ứ đọng ngẫu nhiên vẫn là ở quy trình lắp ráp và ta chỉ sản xuất hoàn thiện được 5.92
+
+48
+00:04:34,009 --> 00:04:39,899
+nhà kho. Nếu đó là số nhà kho tối đa làm được, ta sẽ nhân nó với 
+
+49
+00:04:39,899 --> 00:04:49,329
+lợi nhuận $230 cho mỗi nhà kho và được kết quả $1362. Bây giờ so sánh cả 3
+
+50
+00:04:49,329 --> 00:04:55,879
+mức lợi nhuận để xem loại nào mang lợi nhuận cao nhất. Trong trường hợp này chính là loại nhà kho thông thường
+
+51
+00:04:55,879 --> 00:05:01,120
+mặc dù nó có giá rẻ nhất và mang lại ít
+
+52
+00:05:01,120 --> 00:05:11,590
+lợi nhuận nhất, chỉ $190. Ta không thể sản xuất được nhiều nhà kho cao cấp nên chỉ kiếm được 
+
+53
+00:05:11,589 --> 00:05:18,439
+$1362. Vậy ta có thể sản xuất được rất nhiều nhà kho thông thường nhưng không nhiều nhà kho loại ưu việt và cao cấp.
+
+54
+00:05:18,439 --> 00:05:25,839
+Nhìn chung, lợi nhuận nằm ở loại nhà kho thông thường. Vậy khi ta nghĩ về
+
+55
+00:05:25,839 --> 00:05:31,269
+lợi nhuận và việc phân tích năng suất, ta không chỉ phải nghĩ tới lợi nhuận
+
+56
+00:05:31,269 --> 00:05:38,870
+ta kiếm được cho mỗi sản phẩm mà còn phải cân nhắc số sản phẩm ta có thể sản xuất ra. Cảm ơn các bạn đã 
+
+57
+00:05:38,870 --> 00:05:41,699
+tham gia bài học với tôi. Hẹn gặp lại các bạn trong phần tới.
+

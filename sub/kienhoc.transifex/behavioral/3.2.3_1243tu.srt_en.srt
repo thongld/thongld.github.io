@@ -1,0 +1,610 @@
+1
+00:00:07,940 --> 00:00:11,040
+https://youtu.be/zKMkCdMipt8
+Let's imagine you've gone ahead and done an
+experiment.
+
+2
+00:00:11,040 --> 00:00:12,750
+You've put people in different conditions.
+
+3
+00:00:12,750 --> 00:00:14,550
+You've measured some outcome variables.
+
+4
+00:00:14,550 --> 00:00:18,260
+And now, it's time to analyze the data.
+
+5
+00:00:18,260 --> 00:00:20,460
+As we said earlier, there are two ways in
+which you analyze
+
+6
+00:00:20,460 --> 00:00:22,210
+experimental data.
+
+7
+00:00:22,210 --> 00:00:23,571
+One is called an analysis of variance.
+
+8
+00:00:23,571 --> 00:00:27,190
+The second one is regression.
+
+9
+00:00:27,190 --> 00:00:30,690
+What we'll do in the next segment is to see
+how we can interpret the
+
+10
+00:00:30,690 --> 00:00:33,140
+results of experiments.
+
+11
+00:00:33,140 --> 00:00:36,870
+In order to do that, I want to keep going
+back to the experiment that we
+
+12
+00:00:36,870 --> 00:00:40,420
+talked about earlier, Gourville's experiment
+on the
+
+13
+00:00:40,420 --> 00:00:41,920
+pennies-a-day phenomena.
+
+14
+00:00:41,920 --> 00:00:44,300
+Remember the first experiment we talked about.
+
+15
+00:00:44,300 --> 00:00:50,030
+In this experiment, people were either exposed
+to a $350 a year or a
+
+16
+00:00:50,030 --> 00:00:52,789
+dollar-a-day frame.
+
+17
+00:00:52,789 --> 00:00:54,489
+Here's what Gourville found.
+
+18
+00:00:54,489 --> 00:01:01,969
+He found that when people saw the same amount
+expressed as dollars a day,
+
+19
+00:01:01,969 --> 00:01:05,230
+they were much more willing to donate then
+when they saw
+
+20
+00:01:05,230 --> 00:01:06,230
+the aggregate frame.
+
+21
+00:01:06,230 --> 00:01:09,680
+And in fact, what you'll see is that the green
+bar, in this case
+
+22
+00:01:09,680 --> 00:01:14,550
+representing pennies-a-day, is taller than
+the grey bar.
+
+23
+00:01:14,550 --> 00:01:17,680
+That is an example of what we call a main
+effect.
+
+24
+00:01:17,680 --> 00:01:22,850
+In this case, one factor, which is the framing
+of the payment, has a main
+
+25
+00:01:22,850 --> 00:01:27,270
+effect, consistent effect on the outcome,
+which in this case is
+
+26
+00:01:27,270 --> 00:01:28,930
+willingness to donate.
+
+27
+00:01:28,930 --> 00:01:32,480
+Now, let's look at a second experiment that
+we talked about.
+
+28
+00:01:32,480 --> 00:01:34,790
+In this case, we had a fully crossed experiment.
+
+29
+00:01:34,790 --> 00:01:38,750
+We looked at pennies-a-day framing versus
+aggregate framing.
+
+30
+00:01:38,750 --> 00:01:44,580
+But we did that under two conditions, under
+a low-amount condition and a
+
+31
+00:01:44,580 --> 00:01:45,930
+high-amount condition.
+
+32
+00:01:45,930 --> 00:01:49,180
+Here's what you see in terms of the results.
+
+33
+00:01:49,180 --> 00:01:53,370
+On the left-hand side we see the data for
+their low-amount condition.
+
+34
+00:01:53,370 --> 00:01:58,640
+And what you see here is a replication of
+the first study, namely, people in
+
+35
+00:01:58,640 --> 00:02:02,710
+the pennies-a-day condition actually were
+much more willing to donate than
+
+36
+00:02:02,710 --> 00:02:05,370
+people in the aggregate condition.
+
+37
+00:02:05,370 --> 00:02:07,610
+Let's look at the right-hand side panel.
+
+38
+00:02:07,610 --> 00:02:10,200
+That's the panel where the amounts were high.
+
+39
+00:02:10,200 --> 00:02:11,890
+And notice what happens there.
+
+40
+00:02:11,890 --> 00:02:15,510
+In that condition, we see a reversal of the
+basic effect.
+
+41
+00:02:15,510 --> 00:02:19,820
+In other words, we find that people who saw
+the pennies-a-day condition,
+
+42
+00:02:19,820 --> 00:02:23,550
+actually, were less likely to donate than
+people who saw
+
+43
+00:02:23,550 --> 00:02:24,550
+the aggregate condition.
+
+44
+00:02:24,550 --> 00:02:28,850
+So if you look at the big picture, this is
+what is happening.
+
+45
+00:02:28,850 --> 00:02:34,250
+The effect of one variable, in this case the
+pennies-a-day framing, on the
+
+46
+00:02:34,250 --> 00:02:38,750
+willingness to donate changes as a function
+of the presence of a second
+
+47
+00:02:38,750 --> 00:02:43,380
+variable, in this case whether the amount
+is high or low.
+
+48
+00:02:43,380 --> 00:02:48,270
+Every time you have a situation where the
+effect of one variable on the
+
+49
+00:02:48,270 --> 00:02:52,570
+final outcome changes as a function of the
+presence of a second variable,
+
+50
+00:02:52,570 --> 00:02:56,390
+we're going to call that an interaction effect.
+
+51
+00:02:56,390 --> 00:03:01,550
+So once again, a main effect is when a given
+variable has a consistent effect
+
+52
+00:03:01,550 --> 00:03:03,160
+on the outcome variable.
+
+53
+00:03:03,160 --> 00:03:07,630
+An interaction effect is when the effect of
+variable one changes as a
+
+54
+00:03:07,630 --> 00:03:12,350
+function of the presence or absence of a second
+variable.
+
+55
+00:03:12,350 --> 00:03:17,230
+Let's think through the notion of interaction
+effects a bit more closely.
+
+56
+00:03:17,230 --> 00:03:20,660
+And what I'm going to do is I'm going to try
+and hypothesize three imaginary
+
+57
+00:03:20,660 --> 00:03:24,880
+experiments that John Gourville could have
+done in his study on
+
+58
+00:03:24,880 --> 00:03:26,200
+pennies-a-day.
+
+59
+00:03:26,200 --> 00:03:27,520
+Here's the first one.
+
+60
+00:03:27,520 --> 00:03:31,600
+Let's imagine we take one condition, which
+is the pennies-a-day framing
+
+61
+00:03:31,600 --> 00:03:34,780
+versus a second condition, which is the aggregate
+framing.
+
+62
+00:03:34,780 --> 00:03:40,150
+Now, we replicate this experiment in a second
+product context.
+
+63
+00:03:40,150 --> 00:03:45,940
+So what we now have is a fully-crossed design,
+two products times two levels
+
+64
+00:03:45,940 --> 00:03:48,060
+of price framing.
+
+65
+00:03:48,060 --> 00:03:51,319
+In this context we might see results that
+look like that.
+
+66
+00:03:51,319 --> 00:03:56,489
+On the left-hand side, you see that for product
+one the pennies-a-day
+
+67
+00:03:56,489 --> 00:03:59,890
+results in a greater willingness to donate
+than the aggregate.
+
+68
+00:03:59,890 --> 00:04:04,520
+On the right-hand side for product two, we
+see the same exact effect.
+
+69
+00:04:04,520 --> 00:04:09,840
+In this case, there is no attraction effect
+but simply a strong main effect
+
+70
+00:04:09,840 --> 00:04:15,310
+of the way in which you frame the amount,
+pennies-a-day versus aggregate.
+
+71
+00:04:15,310 --> 00:04:17,000
+Here's a second situation.
+
+72
+00:04:17,000 --> 00:04:20,569
+This is really not hypothetical, but it is
+basically a graph drawn from the
+
+73
+00:04:20,569 --> 00:04:23,419
+experiment that we talked about earlier.
+
+74
+00:04:23,419 --> 00:04:27,770
+Shows that when the amount is low, pennies-a-day
+dominates.
+
+75
+00:04:27,770 --> 00:04:31,780
+When the amount is high, the aggregate frame
+dominates.
+
+76
+00:04:31,780 --> 00:04:35,940
+In this case, the presence of the second variable
+has reversed the
+
+77
+00:04:35,940 --> 00:04:40,720
+original effect resulting in an interaction
+effect.
+
+78
+00:04:40,720 --> 00:04:42,550
+Here's a third kind.
+
+79
+00:04:42,550 --> 00:04:47,211
+Let's imagine that this experiment was done,
+not so much with amounts, but
+
+80
+00:04:47,211 --> 00:04:48,900
+with two different kinds of people.
+
+81
+00:04:48,900 --> 00:04:53,750
+For example, let's say in one condition we
+showed people who were
+
+82
+00:04:53,750 --> 00:04:57,510
+monthly-wage earners and put them into conditions.
+
+83
+00:04:57,510 --> 00:04:59,690
+The aggregate was a pennies-a-day.
+
+84
+00:04:59,690 --> 00:05:03,830
+In a second group, we took people that were
+daily-wage earners and then
+
+85
+00:05:03,830 --> 00:05:07,190
+again, did the same thing all over again with
+them.
+
+86
+00:05:07,190 --> 00:05:10,120
+Here's a simple theoretical prediction.
+
+87
+00:05:10,120 --> 00:05:14,380
+If people are earning wages on a daily basis,
+they are much more likely to
+
+88
+00:05:14,380 --> 00:05:18,450
+compute the daily impact of an aggregate product
+anyways.
+
+89
+00:05:18,450 --> 00:05:21,330
+And therefore, for those people, we expect
+that there would be no
+
+90
+00:05:21,330 --> 00:05:26,180
+difference between framing as pennies-a-day
+verses framing as an
+
+91
+00:05:26,180 --> 00:05:27,180
+aggregate expense.
+
+92
+00:05:27,180 --> 00:05:30,880
+In fact, this is what our results might show
+us.
+
+93
+00:05:30,880 --> 00:05:34,300
+And the last panel for monthly-wage earners,
+we would replicate the
+
+94
+00:05:34,300 --> 00:05:35,580
+earlier finding.
+
+95
+00:05:35,580 --> 00:05:38,120
+Pennies-a-day does better than aggregate.
+
+96
+00:05:38,120 --> 00:05:41,410
+But on the right panel, what we would find
+is that there is no difference
+
+97
+00:05:41,410 --> 00:05:45,040
+between the two types of price framing.
+
+98
+00:05:45,040 --> 00:05:48,260
+This is an interaction effect, but one in
+which the effect--
+
+99
+00:05:48,260 --> 00:05:53,100
+in which the basic effect disappears when
+you introduce a second variable.
+
+100
+00:05:53,100 --> 00:05:57,570
+So there are many ways in which you would
+get interaction effects.
+
+101
+00:05:57,570 --> 00:06:02,190
+An effect would be stronger or weaker as a
+result of a second variable.
+
+102
+00:06:02,190 --> 00:06:07,690
+Or it could completely reverse and finally
+even be eliminated as the
+
+103
+00:06:07,690 --> 00:06:11,110
+second variable is introduced into the experiment.
+
+104
+00:06:11,110 --> 00:06:15,430
+Let's finally end by looking at how you would
+interpret regression
+
+105
+00:06:15,430 --> 00:06:19,250
+coefficients if you use regression to analyze
+your experimental data.
+
+106
+00:06:19,250 --> 00:06:22,920
+Remember that in the regression setting, your
+final output is an
+
+107
+00:06:22,920 --> 00:06:29,550
+equation that might look something like Y
+is some constant a plus b1
+
+108
+00:06:29,550 --> 00:06:33,130
+multiplied by the first variable plus b2 multiplied
+by the second variable
+
+109
+00:06:33,130 --> 00:06:35,120
+and so on and so forth.
+
+110
+00:06:35,120 --> 00:06:38,760
+Every time you run a regression model, the
+first thing to keep in mind is
+
+111
+00:06:38,760 --> 00:06:43,350
+that if the model shows you that certain coefficients
+are not
+
+112
+00:06:43,350 --> 00:06:47,240
+statistically significant, you would need
+not consider them in your
+
+113
+00:06:47,240 --> 00:06:48,860
+interpretation of the results.
+
+114
+00:06:48,860 --> 00:06:52,320
+When you read a paper, you will typically
+find that statistically
+
+115
+00:06:52,320 --> 00:06:56,350
+significant coefficients have an asterisks
+or a star
+
+116
+00:06:56,350 --> 00:06:57,699
+marked next to them.
+
+117
+00:06:57,699 --> 00:07:02,850
+The ones that are not significant do not have
+an asterisks or a star.
+
+118
+00:07:02,850 --> 00:07:06,840
+The second thing that you need to keep in
+mind is to look at how we think
+
+119
+00:07:06,840 --> 00:07:11,580
+about capturing interaction effects in a regression
+setting.
+
+120
+00:07:11,580 --> 00:07:16,430
+ANOVA does it by simply looking at each of
+the two factors as separate
+
+121
+00:07:16,430 --> 00:07:19,380
+independent factors when it runs its model.
+
+122
+00:07:19,380 --> 00:07:24,070
+In a regression setting, let's imagine you
+have two variables, x1 and x2.
+
+123
+00:07:24,070 --> 00:07:27,100
+How do I capture the interaction between the
+two?
+
+124
+00:07:27,100 --> 00:07:28,350
+Here's what I do.
+
+125
+00:07:28,350 --> 00:07:34,670
+I would normally model Y as a function of
+a plus b1 times x1
+
+126
+00:07:34,670 --> 00:07:37,170
+plus b2 times x2.
+
+127
+00:07:37,170 --> 00:07:41,460
+And then, I would simply multiply x1 and x2
+and give it a separate
+
+128
+00:07:41,460 --> 00:07:45,080
+coefficient of its own, in this case, b3.
+
+129
+00:07:45,080 --> 00:07:48,800
+And if you ran a model like this and came
+up with a regression coefficient
+
+130
+00:07:48,800 --> 00:07:53,680
+which was significant in b3, then you would
+say that you had a significant
+
+131
+00:07:53,680 --> 00:07:55,860
+interaction effect in a regression sense.
+

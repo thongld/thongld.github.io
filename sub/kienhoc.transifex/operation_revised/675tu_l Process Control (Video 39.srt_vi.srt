@@ -1,0 +1,311 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/9JWIwDpCzjY
+nhidoan0429
+
+1
+00:00:05,729 --> 00:00:08,638
+Chào các bạn đã trở lại với khóa học "Quản trị vận hành"
+
+2
+00:00:08,638 --> 00:00:12,000
+Trong phần này ta sẽ nói về phương pháp kiểm soát quy trình bằng thống kê
+
+3
+00:00:12,000 --> 00:00:17,009
+Một trong bảy công cụ dùng để kiểm soát quy trình theo phương pháp này
+
+4
+00:00:17,009 --> 00:00:21,278
+mà ta thường biết với tên SPC là một cách ta có thể giám sát
+
+5
+00:00:21,278 --> 00:00:25,009
+một quy trình với những tiêu chuẩn đặc biệt thích hợp
+
+6
+00:00:25,010 --> 00:00:28,830
+Và sau đó vì quy trình đang hoạt động, ta sẽ đo lường 
+
+7
+00:00:28,829 --> 00:00:32,439
+So sánh chúng với những tiêu chuẩn trên
+và nếu cần thiết
+
+8
+00:00:32,439 --> 00:00:35,939
+Ta sẽ hiệu chỉnh lại. Đó là tất cả những gì ta phải làm
+
+9
+00:00:35,939 --> 00:00:41,409
+Trong khi sản phẩm hay dịch vụ đang được đưa ra. Đây là một phần nội dung
+
+10
+00:00:41,409 --> 00:00:41,769
+của
+
+11
+00:00:41,770 --> 00:00:45,100
+nguyên tắc cơ bản kiểm soát ý kiến phản hồi. Ta có một quy trình
+
+12
+00:00:45,100 --> 00:00:48,340
+Ta đánh giá việc thực hiên tổng hợp thông tin
+
+13
+00:00:48,340 --> 00:00:52,160
+ Và sau đó quyết định việc ta có cần thay đổi quy trình này hay không
+
+14
+00:00:52,159 --> 00:00:57,000
+Đó là một vòng phản hồi mà ta biết rằng
+bên trong quy trình có những sự thay đổi
+
+15
+00:00:57,000 --> 00:00:57,640
+variations
+
+16
+00:00:57,640 --> 00:01:01,039
+Bạn có thể thay đổi một cách bình thường hoặc
+
+17
+00:01:01,039 --> 00:01:04,609
+bất thường cũng được nhưng cái ta cần là nhận diện được 
+
+18
+00:01:04,609 --> 00:01:10,689
+sự khác biệt của việc thay đổi được cho rằng là tự nhiên
+
+19
+00:01:10,688 --> 00:01:14,889
+Hay là theo cách thông thường. Cứ lần nào quy trình đang tiến hành
+
+20
+00:01:14,890 --> 00:01:19,379
+Và cả những lần ta đưa ra một sản phẩm
+Điều này có thể tạo ra sự khác biệt một chút
+
+21
+00:01:19,379 --> 00:01:21,469
+Giữa sản phẩm này với sản phẩm kế tiếp sẽ được đưa ra
+
+22
+00:01:21,469 --> 00:01:24,509
+Giả sử khi bạn ký tên 
+
+23
+00:01:24,509 --> 00:01:27,549
+Mỗi lần bạn ký tên, chữ ký của bạn
+
+24
+00:01:27,549 --> 00:01:30,618
+Sẽ nhìn khác đi một chút.
+
+25
+00:01:30,618 --> 00:01:34,599
+Đó là sự thay đổi tự nhiên.
+
+26
+00:01:34,599 --> 00:01:38,478
+Còn điều ta không trông đợi được gọi là sự thay đổi khác thường
+
+27
+00:01:38,478 --> 00:01:42,469
+Ví dụ bạn đang ký tên và có ai đó va vào khuỷu tay bạn
+
+28
+00:01:42,469 --> 00:01:46,019
+Bất ngờ chữ ký của bạn bị thay đổi đi một chút
+
+29
+00:01:46,019 --> 00:01:50,459
+Hoặc có những trường hợp, chữ kỹ sẽ khác biệt hoàn toàn.
+
+30
+00:01:50,459 --> 00:01:53,599
+Đây là trường hợp cụ thể để ta dễ dàng nhận thấy sự khác biệt của nó.
+
+31
+00:01:53,599 --> 00:01:56,839
+Đó là lý do vì sao nó được gọi là khác thường. Bạn có thể chỉ định được nguyên nhân
+
+32
+00:01:56,840 --> 00:02:00,140
+cause to it
+
+33
+00:02:00,140 --> 00:02:03,540
+trong việc kiểm soát quy trình bằng thống kê mà ta đang cố xác định rõ
+
+34
+00:02:03,540 --> 00:02:07,690
+Sự thay đổi xảy ra tự nhiên hay bởi vì một vài nguyên nhân nào đó
+
+35
+00:02:07,689 --> 00:02:11,620
+Mà sau đó ta phải bắt tay hành động sửa chữa
+
+36
+00:02:11,620 --> 00:02:17,360
+Ta dùng biểu đồ kiểm soát được biểu diễn bằng đồ thị đã cập nhật quá hạn
+
+37
+00:02:17,360 --> 00:02:21,890
+Ta có những giới hạn kiểm soát trước cho nên
+
+38
+00:02:21,889 --> 00:02:27,369
+Nếu sự thay đổi vượt quá giới hạn kiểm soát sẽ gây ra một vấn đề.
+Nếu sự thay đổi giảm xuống giới hạn ở mức độ thấp hơn,
+
+39
+00:02:27,370 --> 00:02:32,490
+Đó cũng là một vấn đề nhưng sẽ rất dễ để thấy được
+
+40
+00:02:32,490 --> 00:02:36,909
+ở trên biểu đồ. Đây là tất cả dựa vào
+
+41
+00:02:36,909 --> 00:02:41,500
+Định lý giới hạn trung tâm. Nếu bạn nhớ lại từ những thống kê nền tảng
+
+42
+00:02:41,500 --> 00:02:44,819
+Bạn nhận ra rằng khi bạn có một lượng khách hàng
+
+43
+00:02:44,819 --> 00:02:48,500
+Và bạn lấy những mẫu thử từ khách hàng của họ, ta sẽ có được giá trị trung bình của những mẫu thử 
+
+44
+00:02:48,500 --> 00:02:49,340
+samples
+
+45
+00:02:49,340 --> 00:02:53,740
+Mà có khuynh hướng theo phân phối mẫu trung bình 
+
+46
+00:02:53,740 --> 00:02:58,000
+Cách phân phối này nhìn có vẻ như một cách phân phối bình thường
+
+47
+00:02:58,000 --> 00:03:01,729
+Và ta sử dụng chúng khi ta thiết lập những giới hạn kiểm soát
+
+48
+00:03:01,729 --> 00:03:05,679
+Ở đây ta có sự phân phối thông thường
+
+49
+00:03:05,680 --> 00:03:09,750
+Một sự phân phối chuẩn xác và nếu ta đang cố hết sức để có được
+
+50
+00:03:09,750 --> 00:03:13,349
+Sự thay đổi tự nhiên nhất có thể và hầu hết các trường hợp
+
+51
+00:03:13,349 --> 00:03:17,659
+Ta xác định được giới hạn kiểm soát của chúng theo 3 độ lệch chuẩn
+
+52
+00:03:17,659 --> 00:03:21,949
+Nằm ở trên giá trị trung bình và ba độ lệch chuẩn này nằm ở dưới giá trị trung bình
+
+53
+00:03:21,949 --> 00:03:25,939
+Điều đó có nghĩa là ta đang có được
+
+54
+00:03:25,939 --> 00:03:30,889
+99.74% trong tổng số sự thay đổi tự nhiên xảy ra trong một quy trình
+
+55
+00:03:30,889 --> 00:03:34,219
+Cho nên nếu có cái nào rời khỏi những giới hạn này
+
+56
+00:03:34,219 --> 00:03:37,459
+Ta chắc chắn rằng bời vì nguyên nhân khác thường
+
+57
+00:03:37,459 --> 00:03:40,909
+Nào ta cùng nhìn vào biểu đồ kiểm soát này
+
+58
+00:03:40,909 --> 00:03:44,209
+Ở đây ta có được giá trị trung bình của những hàng mẫu quá hạn
+
+59
+00:03:44,209 --> 00:03:48,860
+Có nhiều sự thay đổi ở đó nhưng bây giờ ta không thể nói
+
+60
+00:03:48,860 --> 00:03:51,400
+Sự thay đổi đó có tự nhiên hay không
+
+61
+00:03:51,400 --> 00:03:55,170
+Hay sự thay đổi đó là vì những nguyên nhân đặc biệt
+
+62
+00:03:55,169 --> 00:03:58,739
+Ngay bây giờ ta thêm sự phân phối thông thường vào đó
+
+63
+00:03:58,740 --> 00:04:03,090
+Ta có thể thấy chỗ sự phân phối đó giãn ra
+
+64
+00:04:03,090 --> 00:04:06,189
+Và nếu ta giữ 3 độ lệch chuẩn nằm ở trên
+
+65
+00:04:06,189 --> 00:04:10,870
+Và bên dưới giá trị trung bình, bây giờ ta có toán hạng 
+và những giới hạn kiểm soát thấp hơn
+
+66
+00:04:10,870 --> 00:04:15,560
+Ta có thể thấy hầu hết sự thay đổi đó thực sự đã hạ xuống
+
+67
+00:04:15,560 --> 00:04:20,019
+bên trong những giới hạn kiểm soát vì vậy đó là sự thay đổi tự nhiên
+
+68
+00:04:20,019 --> 00:04:25,290
+Nhưng ta cũng có 3 điểm vượt khỏi những giới hạn kiểm soát này
+
+69
+00:04:25,290 --> 00:04:28,810
+Đây là điều ta tìm kiếm trong những giới hạn của sự thay đổi không ngẫu nhiên này
+
+70
+00:04:28,810 --> 00:04:31,899
+Vì bây giờ
+
+71
+00:04:31,899 --> 00:04:35,109
+Chúng vượt quá xa ba độ lệch chuẩn và cũng cách xa giá trị trung bình
+
+72
+00:04:35,110 --> 00:04:38,250
+Điều đó có khả năng vì chi phí phát sinh từ bên ngoài
+
+73
+00:04:38,250 --> 00:04:42,730
+Nói chung đó là điều ta sẽ làm với biểu đồ kiểm soát
+
+74
+00:04:42,730 --> 00:04:46,520
+Trong phần tiếp theo, ta sẽ nói một chút về việc kiểm tra
+
+75
+00:04:46,519 --> 00:04:50,060
+Và làm thế nào ta thực sự phát triển được những biểu đồ kiểm soát này.
+Hẹn gặp lại các bạn lần sau
+

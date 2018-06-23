@@ -1,0 +1,327 @@
+1
+00:00:04,580 --> 00:00:06,770
+https://youtu.be/OPe6JQ0sUrU
+Welcome back. We are on
+
+2
+00:00:06,770 --> 00:00:08,519
+application one. I call it mega
+
+3
+00:00:08,519 --> 00:00:14,29
+and particularly useful to understand Finance, because it has all the components,
+
+4
+00:00:14,29 --> 00:00:20,779
+it has Time Value of Money, it has moving forward, moving backwards, and then you'll see very cool
+
+5
+00:00:20,779 --> 00:00:26,649
+stuff now. So what are the patterns we have observed in what we call the amortization table, which
+
+6
+00:00:26,649 --> 00:00:31,110
+by the way a bank can print out and should
+print out for you, if you´re so desired.
+
+7
+00:00:31,110 --> 00:00:38,50
+If, if not, you can ask for it, right? So, it
+basically shows you how a loan works.
+
+8
+00:00:38,50 --> 00:00:42,919
+So, quickly let's capture the main
+elements. How many components of a
+
+9
+00:00:42,920 --> 00:00:51,980
+payment?  So, our payment was about $23,739 and the answer is two. Right? One is what?
+
+10
+00:00:51,980 --> 00:00:58,910
+Interest, which you pay on the beginning
+of the period balance, not the end. Right? Pay
+
+11
+00:00:58,910 --> 00:01:04,629
+interest for the usage of time and money. And,
+the second is whatever remains goes and
+
+12
+00:01:04,640 --> 00:01:11,420
+pays off part of the principal. Which
+component decreases over time? If you're
+
+13
+00:01:11,420 --> 00:01:15,859
+paying off part of the principal, the
+component that is decreasing given that
+
+14
+00:01:15,859 --> 00:01:22,679
+your payment is fixed has to be
+interest. Right? So, interest drops and
+
+15
+00:01:22,679 --> 00:01:27,450
+which one increases? The repayment
+increases such that the last repayment
+
+16
+00:01:27,450 --> 00:01:31,569
+is exactly equal to the beginning of the
+period balance. Because if that's not the
+
+17
+00:01:31,569 --> 00:01:36,630
+case, you're still keeping on paying some
+interest and so on so forth. So, what I'm
+
+18
+00:01:36,630 --> 00:01:41,499
+going to do next is, ask you some simple
+questions to show you the power of Finance.
+
+19
+00:01:41,499 --> 00:01:49,298
+So, how would you figure out, for example, the outstanding balance after the second
+
+20
+00:01:49,299 --> 00:01:55,90
+payment? So, let me just...let me just ask
+the following question. So here's the
+
+21
+00:01:55,90 --> 00:01:58,189
+pen. And, I'm asking you this.
+
+22
+00:01:58,189 --> 00:02:05,869
+You have 1...5. The payment you're
+making every year is 23,739.64.
+
+23
+00:02:05,869 --> 00:02:14,599
+I'm asking you the following
+question: at time 2, after you've made the
+
+24
+00:02:14,599 --> 00:02:19,329
+second payment, how much do you still owe?
+
+25
+00:02:19,330 --> 00:02:25,800
+As I said, these are snippets I'm doing with you in complex problems and I'm keep going because you´ve
+
+26
+00:02:25,800 --> 00:02:31,640
+become a genius now. You know Finance. Now, you could do it the long way, which we just did.
+
+27
+00:02:31,640 --> 00:02:37,929
+You could start at time 0, and work
+your way forwards, but this is the
+
+28
+00:02:37,930 --> 00:02:43,200
+awesomeness of Finance. Finance, one of
+the main elements of Finance is, it looks
+
+29
+00:02:43,200 --> 00:02:48,489
+forward, it doesn't look back. It makes
+life very simple by recognizing the
+
+30
+00:02:48,490 --> 00:02:54,400
+value of anything is the Present Value
+of the future. Value of anything today is the
+
+31
+00:02:54,400 --> 00:03:00,250
+Present Value of the future. So, watch
+Matrix, time travel to time 2, and ask
+
+32
+00:03:00,250 --> 00:03:05,30
+yourself: how much do you owe? That's the question, given you made two payments.
+
+33
+00:03:05,30 --> 00:03:08,600
+Think for a second. The answer is pretty
+
+34
+00:03:08,600 --> 00:03:13,489
+straightforward, but very complex if you
+don't know Finance. And it is,
+
+35
+00:03:13,490 --> 00:03:21,840
+it has to be the Present Value of what you
+owe the bank. So, how do you do PV? You
+
+36
+00:03:21,840 --> 00:03:37,550
+know that interest is 0.06. You know the
+payment is 23,739.64. But, you
+
+37
+00:03:37,550 --> 00:03:46,440
+want to know N now. How many N are left? Three. When you do this, you'll get the answer of
+
+38
+00:03:46,440 --> 00:04:02,109
+63,456.34. Isn't that cool? Right? So,
+you...the one thing I've told you now is a very
+
+39
+00:04:02,110 --> 00:04:08,320
+deep lesson of Finance or of thinking of
+value. Value comes from the future and
+
+40
+00:04:08,320 --> 00:04:12,549
+looking forward, and then, remember you´ve gotta discount because of Time Value of
+
+41
+00:04:12,550 --> 00:04:17,859
+Money. But, where you look forward from is dictated by the problem you're trying to
+
+42
+00:04:17,858 --> 00:04:23,640
+solve. Trick question. If you were
+standing at time 0, and I asked
+
+43
+00:04:23,640 --> 00:04:28,000
+you: what is the Present Value? what would
+
+44
+00:04:28,000 --> 00:04:36,50
+change here? This 3 would become 5. But, what answer should you get, and this is one of
+
+45
+00:04:36,50 --> 00:04:42,810
+the most profound realizations of people when they figure it out. You don't need to
+
+46
+00:04:42,810 --> 00:04:48,840
+do this. You should know the answer. It has to be 100,000. So, one of the things we´ll realize down
+
+47
+00:04:48,840 --> 00:04:54,299
+the road is that Finance itself cannot
+add value, in Present Value terms
+
+48
+00:04:54,300 --> 00:05:01,130
+because it's just an exchange of money. Value creation, where you make more than what
+
+49
+00:05:01,130 --> 00:05:07,570
+you put in, comes from real ideas. Right? It comes from producing something like
+
+50
+00:05:07,570 --> 00:05:11,930
+an iPhone, which is very popular and people
+seem to value a lot, rather than just
+
+51
+00:05:11,930 --> 00:05:16,620
+exchanging money. Ok? So, let´s do one more question, and then, what I'll do is, I'll
+
+52
+00:05:16,620 --> 00:05:21,550
+keep taking breaks within the first
+mega problem because as I said, it's
+
+53
+00:05:21,550 --> 00:05:26,520
+pretty complex. I may do it in other mega
+problems too, but I will do one more
+
+54
+00:05:26,520 --> 00:05:31,599
+question before we take a break. How would
+you figure out the interest component of
+
+55
+00:05:31,620 --> 00:05:37,120
+the third payment? So now, I'm asking you a very simple question. So, you made a third payment, how
+
+56
+00:05:37,120 --> 00:05:43,800
+do you figure out the interest component?
+Now, if you remember your basics, that the
+
+57
+00:05:43,800 --> 00:05:48,690
+interest you pay in any period is a function
+of two things:
+
+58
+00:05:48,690 --> 00:05:54,300
+the dollar in amount, the interest rate and the
+amount you owe at the beginning of the
+
+59
+00:05:54,300 --> 00:05:54,950
+period.
+
+60
+00:05:54,950 --> 00:06:01,719
+Do we know the amount we owe at the
+beginning of the third period, which is also, time
+
+61
+00:06:01,720 --> 00:06:11,780
+period two after you´ve made. Yes, we just
+calculated it. It was 63,456.34. Right?
+
+62
+00:06:11,780 --> 00:06:19,39
+So, I'm asking you: what is the third
+payment's interest component? We know the third
+
+63
+00:06:19,40 --> 00:06:29,229
+payment was what? Also 23,739.64.
+I'm asking, what is the interest
+
+64
+00:06:29,229 --> 00:06:37,570
+component of this? Very simple. Multiply it by 0.06, and I think the answer works
+
+65
+00:06:37,570 --> 00:06:39,529
+out to be
+
+66
+00:06:39,529 --> 00:06:51,49
+3,807.38. You see how simple
+this is? So, you can basically do anything
+
+67
+00:06:51,49 --> 00:06:56,318
+you want even if there are gazillion periods
+to pay off the loan. So, if you took a 30
+
+68
+00:06:56,319 --> 00:07:01,249
+year mortgage. Right? Mortgage is a loan
+against a house. And, you paid monthly
+
+69
+00:07:01,249 --> 00:07:07,639
+payments, how many periods do you have? 360.You would go nuts figuring out the amortization
+
+70
+00:07:07,639 --> 00:07:11,999
+table. We're going to take a break, and
+kind of go in that direction to show you
+
+71
+00:07:11,999 --> 00:07:14,359
+the real power the first mega problem.
+

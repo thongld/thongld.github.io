@@ -1,0 +1,272 @@
+0
+00:00:01,880 --> 00:00:06,400
+quangdutran Thao reviewed
+Link đúng: https://www.youtube.com/watch?v=wCnbczfN91s
+Một nhà khoa học dữ liệu sẽ phải làm việc với
+hàng tấn dữ liệu. Bạn đã biết về
+
+1
+00:00:06,400 --> 00:00:11,390
+mảng numpy 2 chiều lưu dữ liệu theo
+cấu trúc chữ nhật. Nhưng nó có một nhược điểm:
+
+2
+00:00:11,390 --> 00:00:16,230
+bạn chỉ được lưu cùng một kiểu dữ liệu.
+Trong thực tế, bạn sẽ làm việc với
+
+3
+00:00:16,230 --> 00:00:21,279
+nhiều kiểu dữ liệu khác nhau như
+kiểu số, string, boolean, v.v.
+
+4
+00:00:21,279 --> 00:00:25,939
+Để xử lí các dữ liệu này dễ dàng và hiệu quả,
+ta sử dụng gói Pandas. Đây là công cụ
+
+5
+00:00:25,939 --> 00:00:30,890
+xử lí dữ liệu cao cấp được các nhà khoa học dữ liệu
+trên khắp thế giới sử dụng.
+
+6
+00:00:30,890 --> 00:00:36,760
+Trong Pandas, ta lưu dữ liệu trong khung dữ liệu (dataframe). 
+Hãy xem khung dữ liệu có tên brics này.
+
+7
+00:00:36,760 --> 00:00:42,140
+Khung dữ liệu này chứa các thông tin cơ bản 
+của các nước: Brazil, Nga,
+
+8
+00:00:42,140 --> 00:00:43,980
+Ấn Độ, Trung Quốc, Nam Phi.
+
+9
+00:00:43,980 --> 00:00:50,240
+Một khung dữ liệu là một bảng: các dòng là
+các mục hoặc đối tượng dữ liệu khác nhau,
+
+10
+00:00:50,240 --> 00:00:55,760
+trong trường hợp này là các nước. Mỗi dòng có
+một nhãn duy biệt: BR cho Brazil, RU cho Nga và
+
+11
+00:00:55,760 --> 00:00:57,370
+tiếp tục như thế.
+
+12
+00:00:57,370 --> 00:01:01,390
+Các cột là các thuộc tính,
+được thể hiện qua tên cột:
+
+13
+00:01:01,390 --> 00:01:06,509
+quốc gia, dân số, diện tích, thủ đô.
+Các cột mang nhiều kiểu dữ liệu khác nhau. 
+
+14
+00:01:06,509 --> 00:01:09,799
+Chẳng hạn cột quốc gia là kiểu chuỗi,
+cột dân số là kiểu số.
+
+15
+00:01:09,799 --> 00:01:15,140
+Bạn không cần phải tự tay tạo nên một khung dữ liệu.
+Thay vào đó, bạn nhập dữ liệu
+
+16
+00:01:15,140 --> 00:01:18,840
+từ một file bên ngoài chứa các dữ liệu này.
+Khung dữ liệu brics vừa rồi
+
+17
+00:01:18,840 --> 00:01:23,759
+được lấy từ file CSV (comma separated values)
+tức các giá trị tách nhau bởi dấu phẩy.
+
+18
+00:01:23,759 --> 00:01:28,799
+Dòng đầu là tên cột và các dòng sau
+tương ứng với từng dòng của bảng.
+
+19
+00:01:28,799 --> 00:01:33,709
+CSV là một loại file lưu trữ bộ dữ liệu
+rất hay dùng. Giờ ta sẽ tự nhập dữ liệu nhé.
+
+20
+00:01:33,709 --> 00:01:39,759
+Đầu tiên, nhập gói Pandas dưới tên 'pd'. 
+Giờ bạn có thể dùng hàm read_csv()
+
+21
+00:01:39,759 --> 00:01:44,020
+và đưa vào đối số là
+đường dẫn của file CSV như sau:
+
+22
+00:01:44,020 --> 00:01:50,529
+Giờ nếu bạn in khung brics ra, vẫn có gì đó
+chưa ổn. Nhãn của dòng, còn gọi là index,
+
+23
+00:01:50,529 --> 00:01:55,509
+được coi là một cột riêng. Để giải quyết vấn đề này,
+ta phải nói cho hàm read_csv()
+
+24
+00:01:55,509 --> 00:02:01,039
+cột đầu tiên là nhãn của dòng.
+Bạn khai thêm đối số index_col
+
+25
+00:02:01,039 --> 00:02:02,899
+như thế này:
+
+26
+00:02:02,899 --> 00:02:06,939
+Lần này, khung dữ liệu brics đã hiển thị
+như ta thấy ở đầu của video.
+
+27
+00:02:06,939 --> 00:02:10,300
+Tên cột và dòng được trình bày hợp lí hơn.
+
+28
+00:02:10,300 --> 00:02:14,560
+Một trong những điểm mạnh của Pandas
+là bạn có thể dễ dàng chọn cột
+
+29
+00:02:14,560 --> 00:02:16,280
+và dòng theo nhiều cách khác nhau.
+
+30
+00:02:16,280 --> 00:02:21,000
+Để truy cập một cột, bạn đặt tên cột
+trong ngoặc vuông. Ví dụ ở đây,
+
+31
+00:02:21,000 --> 00:02:26,480
+tôi đã chọn cột "quốc gia" trong khung brics.
+Bạn cũng có thể dùng dấu chấm.
+
+32
+00:02:26,480 --> 00:02:30,810
+Lưu ý rằng với cách này bạn không
+cần dùng dấu ngoặc kép.
+
+33
+00:02:30,810 --> 00:02:34,630
+Thậm chí thêm cột cũng khá là dễ.
+Bạn có thể dùng ngoặc vuông,
+
+34
+00:02:34,630 --> 00:02:36,860
+nhưng lần này, bạn gán cho nó một list.
+
+35
+00:02:36,860 --> 00:02:41,360
+Bạn còn có thể tạo một cột
+dựa vào cột khác.
+
+36
+00:02:41,360 --> 00:02:45,980
+Ở đây ta tạo cột "mật độ dân số".
+Vì Pandas dựa trên numpy
+
+37
+00:02:45,980 --> 00:02:50,890
+nên ta có thể chia dân số cho diện tích
+tương ứng. Ta nhân với 1 triệu vì
+
+38
+00:02:50,890 --> 00:02:56,090
+cột dân số được ghi theo hàng triệu.
+Vậy là ta đã tính toán ra một cột mới
+
+39
+00:02:56,090 --> 00:03:02,290
+chỉ với một dòng code. Rõ ràng Ấn Độ
+có mật độ dân số cao nhất trong các nước,
+
+40
+00:03:02,290 --> 00:03:07,280
+với 380 người/km vuông. Không có gì bất ngờ
+khi Nga là nước rộng nhất thế giới
+
+41
+00:03:07,280 --> 00:03:10,340
+mà chỉ có 8 người/km vuông.
+
+42
+00:03:10,340 --> 00:03:14,390
+Vậy giờ bạn đã biết cách truy cập cột,
+thường là dùng ngoặc vuông 
+
+43
+00:03:14,390 --> 00:03:17,800
+chứa tên cột. Để truy cập một dòng,
+bạn phải làm cách khác.
+
+44
+00:03:17,800 --> 00:03:22,300
+Vì Pandas cần biết bạn đang muốn lấy dòng
+chứ không phải lấy cột
+
+45
+00:03:22,300 --> 00:03:27,790
+Bạn sẽ dùng 'loc'. Với khung brics,
+ta viết brics.loc rồi đến nhãn của dòng
+
+46
+00:03:27,790 --> 00:03:33,020
+mà ta muốn lấy theo dạng chuỗi, đặt trong ngoặc vuông.
+Kết quả là thông tin của dòng đó
+
+47
+00:03:33,020 --> 00:03:37,960
+được hiển thị như một cột. Chẳng hạn,
+giờ ta dễ dàng thấy được Brazil hiện tại
+
+48
+00:03:37,960 --> 00:03:40,650
+có dân số là 200 triệu người.
+
+49
+00:03:40,650 --> 00:03:44,590
+Để lấy riêng một ô trong bảng,
+bạn có thể khai cả tên cột và dòng  
+
+50
+00:03:44,590 --> 00:03:50,370
+trong hàm loc như thế này.
+Còn có các cách khác. Trước tiên là chọn cột,
+
+51
+00:03:50,370 --> 00:03:56,100
+sau đó dùng loc để chọn dòng,
+hoặc ngược lại như thế này.
+
+52
+00:03:56,100 --> 00:03:59,960
+Đó là điểm hay của Pandas, bạn có nhiều cách làm khác nhau.
+
+53
+00:03:59,960 --> 00:04:05,650
+Mong là các chức năng cơ bản này
+sẽ khiến bạn muốn dùng Pandas hơn.
+
+54
+00:04:05,650 --> 00:04:09,630
+Theo kinh nghiệm của tôi, càng dùng nhiều
+bạn sẽ càng yêu thích nó đấy!
+
+55
+00:04:09,630 --> 00:04:10,730
+Đã đến lúc luyện tập rồi!
+

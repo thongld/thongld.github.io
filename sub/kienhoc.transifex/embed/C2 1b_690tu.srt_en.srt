@@ -1,0 +1,336 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/kPnPCaDgz8A
+
+1
+00:00:00,000 --> 00:00:00,510
+
+2
+00:00:00,510 --> 00:00:05,630
+DR. RAMESH YERRABALLI: So let's
+take a look at another common
+
+3
+00:00:05,630 --> 00:00:06,880
+system that we use.
+
+4
+00:00:06,880 --> 00:00:17,820
+
+5
+00:00:17,820 --> 00:00:20,080
+There are other common bases.
+
+6
+00:00:20,080 --> 00:00:24,200
+Other common bases.
+
+7
+00:00:24,200 --> 00:00:31,670
+One of the more common systems that we
+use in computers is the hexadecimal
+
+8
+00:00:31,670 --> 00:00:32,720
+number system.
+
+9
+00:00:32,720 --> 00:00:40,340
+As the word connotes, we have a
+hexadecimal, which is a 6 and a 10,
+
+10
+00:00:40,340 --> 00:00:44,290
+which is a base 16 number system.
+
+11
+00:00:44,290 --> 00:01:01,340
+Again, the base is 16 and our valid
+coefficients are 0, 1, 2, up to 9.
+
+12
+00:01:01,340 --> 00:01:07,970
+And the next value is 10, but to make
+sure that we don't confuse a 10, which
+
+13
+00:01:07,970 --> 00:01:15,650
+is a decimal number 10, with a
+hexadecimal entity, we represent 10 by
+
+14
+00:01:15,650 --> 00:01:30,860
+A, 11 by B, C, D, E, and F.
+So, A is 10 and F is 15.
+
+15
+00:01:30,860 --> 00:01:36,240
+So, for example, we might write some
+number in hexadecimal, which is, let's
+
+16
+00:01:36,240 --> 00:01:40,370
+say, a five digit hexadecimal
+number, like this.
+
+17
+00:01:40,370 --> 00:01:47,320
+And sometimes, because we may not have
+the luxury of representing subscript
+
+18
+00:01:47,320 --> 00:01:53,990
+on a machine, we use a more convenient
+alternative, which is, we represent
+
+19
+00:01:53,990 --> 00:02:01,100
+hexadecimal numbers by prefixing the
+number with a 0x, and hhhhh.
+
+20
+00:02:01,100 --> 00:02:07,550
+So, this is a five digit
+hexadecimal number.
+
+21
+00:02:07,550 --> 00:02:10,690
+So, let's take a simple example.
+
+22
+00:02:10,690 --> 00:02:21,070
+So, for example, if I have the number
+0x2A9F, and I'm told that it
+
+23
+00:02:21,070 --> 00:02:25,320
+represents a number which is,
+again, equivalent to writing
+
+24
+00:02:25,320 --> 00:02:28,920
+2A9F to the base 16--
+
+25
+00:02:28,920 --> 00:02:35,800
+So, from here onwards, 0x2A9F is
+the preferred representation.
+
+26
+00:02:35,800 --> 00:02:47,060
+We notice that this, again, represents
+the coefficients 2, A, 9, and F.
+
+27
+00:02:47,060 --> 00:02:53,350
+But remember that A is
+a 10 and F is a 15.
+
+28
+00:02:53,350 --> 00:02:56,460
+So, this represents 15.
+
+29
+00:02:56,460 --> 00:03:05,925
+And, again, my place value is 16 to the 0,
+9 times 16 to the 1, 10 times 16 to
+
+30
+00:03:05,925 --> 00:03:11,900
+the 2, and 2 times 16 to the 3.
+
+31
+00:03:11,900 --> 00:03:25,400
+So, this number represents 8192 plus
+256, times 10 which is 2560, plus 144 (9 times 16),
+
+32
+00:03:25,400 --> 00:03:29,300
+plus 15 times 1, which is 15.
+
+33
+00:03:29,300 --> 00:03:37,280
+So this represents the number
+10911 to the base 10.
+
+34
+00:03:37,280 --> 00:03:42,390
+So we also, when we talk about
+hexadecimal, we sometimes simply refer
+
+35
+00:03:42,390 --> 00:03:44,030
+to it as hex.
+
+36
+00:03:44,030 --> 00:03:48,620
+So when people talk about hex numbers,
+they're really talking about numbers
+
+37
+00:03:48,620 --> 00:03:53,640
+that are represented using
+the hexadecimal notation.
+
+38
+00:03:53,640 --> 00:03:58,620
+So hex is not just used for representing
+numbers, we can also use
+
+39
+00:03:58,620 --> 00:04:05,090
+the hex notation, also
+used for addresses.
+
+40
+00:04:05,090 --> 00:04:07,900
+
+41
+00:04:07,900 --> 00:04:13,760
+So when we say that the address of a
+particular item is such and such, we
+
+42
+00:04:13,760 --> 00:04:15,490
+represent the address as hex.
+
+43
+00:04:15,490 --> 00:04:20,769
+So here's an example of an address in
+hex that we will look at on the ARM
+
+44
+00:04:20,769 --> 00:04:22,640
+processor that we're
+going to be using.
+
+45
+00:04:22,640 --> 00:04:29,590
+So that for example, when I say that the
+address is 0x2000001A, I'm saying
+
+46
+00:04:29,590 --> 00:04:38,000
+that this is an address, and as we will
+see, this represents 12345678
+
+47
+00:04:38,000 --> 00:04:40,740
+digits of hex.
+
+48
+00:04:40,740 --> 00:04:51,600
+They can also be used to represent
+contents of registers or memory.
+
+49
+00:04:51,600 --> 00:04:57,230
+Now, we will look at what registers
+are, and what memory is at a
+
+50
+00:04:57,230 --> 00:05:01,740
+later time, but for example
+I can say the content of
+
+51
+00:05:01,740 --> 00:05:03,210
+memory location is 0xA0.
+
+52
+00:05:03,210 --> 00:05:07,750
+
+53
+00:05:07,750 --> 00:05:13,200
+Or I can say the content of register,
+let's say register R0, I can represent
+
+54
+00:05:13,200 --> 00:05:27,540
+the content of register R0 as containing
+the value 0xFFFF1011.
+
+55
+00:05:27,540 --> 00:05:34,020
+So one of the convenient things about
+representing hex is that, as I said,
+
+56
+00:05:34,020 --> 00:05:38,460
+it alleviates the burden of
+having to represent binary
+
+57
+00:05:38,460 --> 00:05:40,300
+numbers in their entirety.
+
+58
+00:05:40,300 --> 00:05:52,340
+In fact this number, which is 10911, if
+we were to express it in base 2, it
+
+59
+00:05:52,340 --> 00:05:53,590
+would look like this.
+
+60
+00:05:53,590 --> 00:06:00,474
+It would look like 1111, remember,
+all the digits are binary.
+
+61
+00:06:00,474 --> 00:06:08,810
+0010 1010 1001 1111.
+
+62
+00:06:08,810 --> 00:06:12,750
+Now, I didn't actually work
+this out in my head.
+
+63
+00:06:12,750 --> 00:06:17,320
+There is a convenient way of figuring
+this out, and that is that when I look
+
+64
+00:06:17,320 --> 00:06:22,820
+at the hexadecimal, because these two
+are in the same base, the F is a 15,
+
+65
+00:06:22,820 --> 00:06:26,220
+which in binary is 1111.
+
+66
+00:06:26,220 --> 00:06:39,580
+A 9 is a 1001.
+
+67
+00:06:39,580 --> 00:06:56,150
+An A is a 1010, and a 2 is a 0010.
+
+68
+00:06:56,150 --> 00:07:00,280
+So this is a simple way of
+converting between forms.
+
+69
+00:07:00,280 --> 00:07:07,440
+Now, notice it is much simpler to write
+it as 2A9F than to write this in
+
+70
+00:07:07,440 --> 00:07:09,520
+its entirety in binary.
+
+71
+00:07:09,520 --> 00:07:17,680
+So hex is a very convenient notation,
+which will be used
+
+72
+00:07:17,680 --> 00:07:19,910
+throughout this course.
+
+73
+00:07:19,910 --> 00:07:27,517

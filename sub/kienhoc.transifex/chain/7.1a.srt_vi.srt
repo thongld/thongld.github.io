@@ -1,0 +1,205 @@
+0
+00:00:00,000 --> 00:00:01,040
+tangoclinhh_12/10/2017
+
+1
+00:00:01,040 --> 00:00:03,360
+Trong bài học này ta sẽ mở rộng
+
+2
+00:00:03,360 --> 00:00:05,250
+cuộc thảo luận về các mô hình hàng tồn kho
+
+3
+00:00:05,250 --> 00:00:08,940
+sang việc ta cho phép hết hàng hay thiếu hàng.
+
+4
+00:00:08,940 --> 00:00:12,180
+Ta sẽ tập trung vào các mô hình một thời kỳ.
+
+5
+00:00:12,180 --> 00:00:15,380
+Nhưng trước tiên, tôi muốn xem lại mô hình EOQ đơn giản
+
+6
+00:00:15,380 --> 00:00:17,600
+mà ta đã xây dựng trong bài học trước,
+
+7
+00:00:17,600 --> 00:00:20,880
+nhưng lần này ta cho phép nới lỏng một số giả định,
+
+8
+00:00:20,880 --> 00:00:24,550
+đó là cho phép có các đơn hàng chờ giao đã được biết trước,
+với một khoản chi phí.
+
+9
+00:00:24,550 --> 00:00:26,750
+Sự thay đổi căn bản trong các giả định này
+
+10
+00:00:26,750 --> 00:00:29,700
+sẽ giúp dẫn dắt ta xử lý
+
+11
+00:00:29,700 --> 00:00:30,780
+sự không cố định trong nhu cầu.
+
+12
+00:00:30,780 --> 00:00:32,837
+Hãy nhìn vào danh sách các giả định của chúng ta.
+
+13
+00:00:32,837 --> 00:00:35,170
+Giờ ta muốn có một danh sách giả định
+
+14
+00:00:35,170 --> 00:00:36,950
+dành cho các đơn hàng chờ giao đã được tính trước.
+
+15
+00:00:36,950 --> 00:00:41,060
+Vậy tôi sẽ cho bạn được phép có nhu cầu chờ hàng,
+
+16
+00:00:41,060 --> 00:00:42,950
+nhưng với một mức chi phí nhất định.
+
+17
+00:00:42,950 --> 00:00:45,320
+Vậy giả định duy nhất mà ta sẽ nới lỏng
+
+18
+00:00:45,320 --> 00:00:49,270
+là có thể sẽ có cầu vượt cung, bởi vì trước đó
+
+19
+00:00:49,270 --> 00:00:51,079
+ta đã giả định rằng không có chuyện cầu vượt cung.
+
+20
+00:00:51,079 --> 00:00:53,620
+Và ta sẽ giả định rằng nếu nhu cầu nhiều hơn lượng cung cấp,
+
+21
+00:00:53,620 --> 00:00:56,245
+vậy những đơn hàng đó sẽ là những đơn hàng chờ được giao,
+
+22
+00:00:56,245 --> 00:00:59,250
+ta vẫn sẽ giao chúng.
+
+23
+00:00:59,250 --> 00:01:03,230
+Trong bài trước ta đã định nghĩa sơ đồ hình răng cưa đơn giản này,
+
+24
+00:01:03,230 --> 00:01:06,375
+và ta đã tìm ra các cách để
+
+25
+00:01:06,375 --> 00:01:09,280
+xác định Q*, số lượng đặt hàng tối ưu,
+
+26
+00:01:09,280 --> 00:01:12,190
+số lượng đặt hàng kinh tế, và T*,
+
+27
+00:01:12,190 --> 00:01:15,390
+là tần suất đặt hàng.
+
+28
+00:01:15,390 --> 00:01:18,310
+Câu hỏi đặt ra là: Ta có nên
+
+29
+00:01:18,310 --> 00:01:21,720
+đặt hàng khi mức hàng trong tay ta bằng 0 không?
+
+30
+00:01:21,720 --> 00:01:25,470
+Khi lượng hàng trong tay bằng 0, bạn đặt một lượng hàng Q*.
+
+31
+00:01:25,470 --> 00:01:28,490
+Hay nếu bạn cho phép hàng ở mức âm,
+
+32
+00:01:28,490 --> 00:01:30,185
+vậy sẽ xuất hiện những đơn hàng chờ giao,
+
+33
+00:01:30,185 --> 00:01:33,420
+có nên đặt hàng ở thời điểm này không?
+
+34
+00:01:33,420 --> 00:01:35,900
+Ta sẽ gọi số lượng này là b.
+
+35
+00:01:35,900 --> 00:01:41,260
+Tôi có một lượng hàng này,
+
+36
+00:01:41,260 --> 00:01:46,000
+đặc trưng bởi c_e, là lượng hàng dư ra.
+
+37
+00:01:46,000 --> 00:01:50,890
+Nhưng tôi cũng có lượng hàng này,
+
+38
+00:01:50,890 --> 00:01:53,682
+ta sẽ gọi nó là c_s, hay chi phí thiếu hụt.
+
+39
+00:01:53,682 --> 00:01:55,640
+Câu hỏi mà ta đang cố gắng trả lời là
+
+40
+00:01:55,640 --> 00:01:59,120
+nếu tôi cho phép mức hàng âm, và tôi phải trả một khoản
+
+41
+00:01:59,120 --> 00:02:03,919
+cho việc hết hàng, vậy số lượng tối ưu âm
+
+42
+00:02:03,919 --> 00:02:05,460
+có xảy ra hay không,
+
+43
+00:02:05,460 --> 00:02:08,389
+hay bạn sẽ luôn chắc chắn rằng mình có hàng trong tay?
+
+44
+00:02:08,389 --> 00:02:12,350
+Trước khi ta tìm hiểu sâu hơn về mặt toán học,
+
+45
+00:02:12,350 --> 00:02:14,270
+tôi muốn kiểm tra trực giác của bạn trước.
+
+46
+00:02:14,270 --> 00:02:16,640
+Trong câu hỏi tiếp theo, một bài toán nhỏ,
+
+47
+00:02:16,640 --> 00:02:18,520
+tôi muốn bạn trả lời được câu hỏi:
+
+48
+00:02:18,520 --> 00:02:21,860
+Q* và T* sẽ như thế nào nếu
+
+49
+00:02:21,860 --> 00:02:23,760
+ta cho phép có các đơn hàng chờ giao, với một khoản phí,
+
+50
+00:02:23,760 --> 00:02:26,580
+chính là c_s mà tôi đã nhắc tới?
+

@@ -1,0 +1,346 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/_DgexVhva9E
+
+1
+00:00:00,000 --> 00:00:00,972
+
+2
+00:00:00,972 --> 00:00:02,980
+DR. JONATHAN VALVANO: Well, Professor
+Yerraballi, what are
+
+3
+00:00:02,980 --> 00:00:04,830
+we gonna learn today?
+
+4
+00:00:04,830 --> 00:00:07,780
+DR. RAMESH YERRABALLI: Well, we're
+gonna try something a little
+
+5
+00:00:07,780 --> 00:00:08,660
+challenging.
+
+6
+00:00:08,660 --> 00:00:11,612
+But we'll try and keep things simple.
+
+7
+00:00:11,612 --> 00:00:16,660
+We're gonna learn the basics
+of electrical circuits in
+
+8
+00:00:16,660 --> 00:00:19,540
+an abbreviated session.
+
+9
+00:00:19,540 --> 00:00:25,180
+So let's hope we can get you to
+understand the basics and apply them
+
+10
+00:00:25,180 --> 00:00:31,980
+as it is relevant in the context
+of embedded systems.
+
+11
+00:00:31,980 --> 00:00:37,330
+Let's look at the foundations that
+govern electrical circuits.
+
+12
+00:00:37,330 --> 00:00:44,690
+Electric circuits are made up of basic
+elements, what we call as passive
+
+13
+00:00:44,690 --> 00:00:46,070
+elements and active elements.
+
+14
+00:00:46,070 --> 00:00:50,470
+But before we get to those elements,
+we want to define some terms.
+
+15
+00:00:50,470 --> 00:00:55,660
+So the first term that I'm going
+to look at is current.
+
+16
+00:00:55,660 --> 00:01:04,780
+Current is the flow of charge.
+
+17
+00:01:04,780 --> 00:01:10,050
+And when we say charge, we're looking
+at a positive or negative charge.
+
+18
+00:01:10,050 --> 00:01:13,780
+In our case, we're going to look at
+electrons as a unit of charge.
+
+19
+00:01:13,780 --> 00:01:21,160
+So the units for current are, because
+it's a flow of electrons, we're going
+
+20
+00:01:21,160 --> 00:01:27,760
+to look at it as coulombs per second.
+
+21
+00:01:27,760 --> 00:01:32,010
+In other words, it's a rate of flow of
+charge, and charge, the units for
+
+22
+00:01:32,010 --> 00:01:34,310
+charge is coulombs, so it's
+coulombs per second.
+
+23
+00:01:34,310 --> 00:01:41,230
+So rather than say coulombs per second,
+we use a term called amperes
+
+24
+00:01:41,230 --> 00:01:42,550
+to represent current.
+
+25
+00:01:42,550 --> 00:01:49,920
+So the idea, then, is current flows,
+current is the flow of electrons, or
+
+26
+00:01:49,920 --> 00:01:52,680
+the flow of charge.
+
+27
+00:01:52,680 --> 00:01:56,430
+And the units for current are amperes.
+
+28
+00:01:56,430 --> 00:02:07,090
+Current has a direction, as we will
+see, and so when we talk about
+
+29
+00:02:07,090 --> 00:02:10,789
+current, we're always talking about the
+flow of current, where it makes
+
+30
+00:02:10,789 --> 00:02:14,715
+sense to talk about the direction
+in which current flows.
+
+31
+00:02:14,715 --> 00:02:23,020
+So through a conductor, we say that
+current flows in some direction.
+
+32
+00:02:23,020 --> 00:02:26,880
+So the second term we're gonna
+look at is voltage.
+
+33
+00:02:26,880 --> 00:02:32,300
+
+34
+00:02:32,300 --> 00:02:39,490
+Voltage is what we call as
+electromotive force.
+
+35
+00:02:39,490 --> 00:02:48,220
+Electromotive force are sometimes
+called potential difference.
+
+36
+00:02:48,220 --> 00:02:58,300
+And the idea of voltage is always, we
+talk of voltage as a difference in
+
+37
+00:02:58,300 --> 00:02:59,950
+potential between two points.
+
+38
+00:02:59,950 --> 00:03:06,240
+So when I say, for example, points a and
+b, we refer to the voltage as Vab
+
+39
+00:03:06,240 --> 00:03:09,560
+as a potential difference
+between points a and b.
+
+40
+00:03:09,560 --> 00:03:19,420
+Now, the definition of voltage is it's
+the amount of energy, so amount of
+
+41
+00:03:19,420 --> 00:03:33,910
+energy needed to move one unit of
+charge, in this case a unit of charge
+
+42
+00:03:33,910 --> 00:03:39,850
+is a coulomb, from a to b,
+
+43
+00:03:39,850 --> 00:03:42,500
+from one point to another point.
+One volt will deliver one joule of energy 
+per coulomb of charge that passes through it.
+
+44
+00:03:42,500 --> 00:03:44,600
+So that is the voltage.
+
+45
+00:03:44,600 --> 00:03:52,670
+So voltage, then, has the units of
+joules, which is the unit for energy
+
+46
+00:03:52,670 --> 00:03:54,485
+per coulomb.
+
+47
+00:03:54,485 --> 00:03:58,100
+
+48
+00:03:58,100 --> 00:04:01,120
+Again, we have a short for this.
+
+49
+00:04:01,120 --> 00:04:05,160
+We simply call these volts.
+
+50
+00:04:05,160 --> 00:04:11,090
+So the units for current are amperes,
+and the unit for voltage is volts.
+
+51
+00:04:11,090 --> 00:04:17,880
+So Ohm's law gives us a relationship
+between voltage and current, the two
+
+52
+00:04:17,880 --> 00:04:19,600
+terms that we just introduced.
+
+53
+00:04:19,600 --> 00:04:26,390
+So what Ohm's law says is that the
+current that flows through a
+
+54
+00:04:26,390 --> 00:04:30,580
+conductor, and here I'm going to
+represent this conductor like this,
+
+55
+00:04:30,580 --> 00:04:34,950
+the current that flows through a
+conductor from its positive side to
+
+56
+00:04:34,950 --> 00:04:38,430
+the negative side, we call those a and
+b, which are positive and negative.
+
+57
+00:04:38,430 --> 00:04:42,630
+So Vab is a voltage across these two
+points, and it's saying that the
+
+58
+00:04:42,630 --> 00:04:51,510
+current and the voltage are related by
+a rule that says V equals I times R.
+
+59
+00:04:51,510 --> 00:04:55,030
+Where R is the resistance
+of the conductor.
+
+60
+00:04:55,030 --> 00:05:00,250
+So we can write it in various ways, and
+so for example, I can say R equals
+
+61
+00:05:00,250 --> 00:05:06,825
+V by I, or I can say I equals V over
+R. All these are different forms of
+
+62
+00:05:06,825 --> 00:05:15,410
+Ohm's law where R is given, R is the
+resistance, and the unit for
+
+63
+00:05:15,410 --> 00:05:19,840
+resistance R ohms.
+
+64
+00:05:19,840 --> 00:05:26,850
+So we have Ohm's law, which is giving us
+the relationship between these two,
+
+65
+00:05:26,850 --> 00:05:32,690
+but what we also say is that when
+current flows, we say we're talking
+
+66
+00:05:32,690 --> 00:05:35,860
+about the flow of current.
+
+67
+00:05:35,860 --> 00:05:44,010
+And we say the power dissipated, if you
+will, through this resistance is
+
+68
+00:05:44,010 --> 00:05:54,760
+given by the voltage times V times I.
+And the units for power are watts.
+
+69
+00:05:54,760 --> 00:06:01,820
+And the interesting thing is that we
+can actually derive this as being
+
+70
+00:06:01,820 --> 00:06:07,640
+joules per second.
+
+71
+00:06:07,640 --> 00:06:18,250
+And this is simply because the unit for
+voltage is joules per coulomb, and
+
+72
+00:06:18,250 --> 00:06:21,180
+the units for current are
+coulombs per second.
+
+73
+00:06:21,180 --> 00:06:27,340
+So the units for power is joules per
+second, which is also called watts.
+
+74
+00:06:27,340 --> 00:06:28,590

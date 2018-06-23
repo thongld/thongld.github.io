@@ -1,0 +1,437 @@
+847
+00:37:00,240 --> 00:37:03,250
+https://youtu.be/G721cooZXgs
+allocate it, label it
+x, and stick 2 in it.
+
+848
+00:37:03,250 --> 00:37:06,500
+This is kind of like
+a move 2 into x.
+
+849
+00:37:06,500 --> 00:37:10,770
+Then, this says, go
+get x, add 2 to it,
+
+850
+00:37:10,770 --> 00:37:13,120
+and then put the
+sum back into x.
+
+851
+00:37:13,120 --> 00:37:16,190
+Again, little sentences that are
+kind of like subject/predicate.
+
+852
+00:37:16,190 --> 00:37:18,380
+Especially with this assignment.
+
+853
+00:37:18,380 --> 00:37:20,930
+And then print prints
+a reserved word.
+
+854
+00:37:20,930 --> 00:37:23,280
+One that was on the list on
+the previous slide, and then
+
+855
+00:37:23,280 --> 00:37:24,196
+go read that variable.
+
+856
+00:37:24,196 --> 00:37:27,815
+So, these are like
+three sentences
+
+857
+00:37:27,815 --> 00:37:28,940
+in our new little language.
+
+858
+00:37:28,940 --> 00:37:33,570
+
+859
+00:37:33,570 --> 00:37:34,070
+OK.
+
+860
+00:37:34,070 --> 00:37:34,960
+So that's sentences.
+
+861
+00:37:34,960 --> 00:37:37,460
+Now, paragraphs.
+
+862
+00:37:37,460 --> 00:37:39,200
+Let's talk about paragraphs.
+
+863
+00:37:39,200 --> 00:37:41,460
+Paragraphs are the
+combination of sentences
+
+864
+00:37:41,460 --> 00:37:43,070
+to make a thought together.
+
+865
+00:37:43,070 --> 00:37:46,270
+Multiple sentences,
+multiple lines.
+
+866
+00:37:46,270 --> 00:37:50,040
+So the interactive Python
+that I just showed you,
+
+867
+00:37:50,040 --> 00:37:55,310
+is fine for running one,
+two, or five or six commands.
+
+868
+00:37:55,310 --> 00:37:56,940
+But ultimately,
+we're going to write
+
+869
+00:37:56,940 --> 00:37:59,790
+much longer bits of Python.
+
+870
+00:37:59,790 --> 00:38:02,220
+And so, we write what's
+called a Python script,
+
+871
+00:38:02,220 --> 00:38:07,400
+or a Python program, and
+we put these in a file.
+
+872
+00:38:07,400 --> 00:38:10,140
+And if you went through
+the prerequisite,
+
+873
+00:38:10,140 --> 00:38:14,400
+you will have seen me edit in
+a text editor, save the file,
+
+874
+00:38:14,400 --> 00:38:17,340
+and then run from
+the Python file.
+
+875
+00:38:17,340 --> 00:38:18,260
+OK?
+
+876
+00:38:18,260 --> 00:38:20,730
+So we call these files--
+put dot py on the end
+
+877
+00:38:20,730 --> 00:38:22,440
+them, py on the end of them.
+
+878
+00:38:22,440 --> 00:38:27,120
+And we're giving Python
+a script to execute.
+
+879
+00:38:27,120 --> 00:38:30,450
+So interactive, you're
+typing directly into Python
+
+880
+00:38:30,450 --> 00:38:32,470
+and it's doing it right
+as you're talking.
+
+881
+00:38:32,470 --> 00:38:34,000
+You're still doing
+it in an order,
+
+882
+00:38:34,000 --> 00:38:35,650
+and the order does matter.
+
+883
+00:38:35,650 --> 00:38:38,380
+In a script, you type it all
+into a file once and say,
+
+884
+00:38:38,380 --> 00:38:39,520
+Python do it all.
+
+885
+00:38:39,520 --> 00:38:44,850
+
+886
+00:38:44,850 --> 00:38:47,250
+Now, when you write
+one of these things,
+
+887
+00:38:47,250 --> 00:38:49,800
+there are patterns
+for combining these.
+
+888
+00:38:49,800 --> 00:38:53,530
+There are things that we do to
+these lines that sort of treat
+
+889
+00:38:53,530 --> 00:38:54,970
+them differently.
+
+890
+00:38:54,970 --> 00:38:58,090
+It's like a recipe, a
+set of instructions.
+
+891
+00:38:58,090 --> 00:39:00,160
+Start at the beginning,
+tsh tsh tsh tsh tsh,
+
+892
+00:39:00,160 --> 00:39:02,370
+but it's a little more
+complex than that.
+
+893
+00:39:02,370 --> 00:39:04,520
+Some steps are just sequential.
+
+894
+00:39:04,520 --> 00:39:06,640
+Some steps might be skipped.
+
+895
+00:39:06,640 --> 00:39:08,890
+Some steps we do multiple times.
+
+896
+00:39:08,890 --> 00:39:11,680
+And other times, we
+have set of steps
+
+897
+00:39:11,680 --> 00:39:13,810
+we do over and over again.
+
+898
+00:39:13,810 --> 00:39:15,820
+So here's some pictures.
+
+899
+00:39:15,820 --> 00:39:19,050
+And here's a four
+lines of Python,
+
+900
+00:39:19,050 --> 00:39:21,030
+a little, simple paragraph.
+
+901
+00:39:21,030 --> 00:39:26,070
+And it's got a sentence that
+says, x equals 2, print x,
+
+902
+00:39:26,070 --> 00:39:28,740
+equals x plus 2, which says
+go grab the old value of x,
+
+903
+00:39:28,740 --> 00:39:31,730
+add 2 to it, stick it
+back in x, and print x.
+
+904
+00:39:31,730 --> 00:39:35,360
+So the output of this
+program is 2 then 4.
+
+905
+00:39:35,360 --> 00:39:38,340
+Because x was 2, we printed
+it, then we added 2 to it,
+
+906
+00:39:38,340 --> 00:39:40,690
+and then we printed
+again so it was 4.
+
+907
+00:39:40,690 --> 00:39:42,149
+Now, these flowcharts,
+don't worry.
+
+908
+00:39:42,149 --> 00:39:43,690
+I'm not going to
+make you draw these.
+
+909
+00:39:43,690 --> 00:39:45,470
+I just draw these in
+case, cognitively,
+
+910
+00:39:45,470 --> 00:39:49,210
+it makes it easier for you to
+understand what's going on.
+
+911
+00:39:49,210 --> 00:39:52,730
+So, x equals 1 is
+the first step.
+
+912
+00:39:52,730 --> 00:39:55,600
+Sequentially, it just continues
+on, it runs the print.
+
+913
+00:39:55,600 --> 00:39:58,006
+x equals x plus
+1, runs the print.
+
+914
+00:39:58,006 --> 00:39:59,380
+So this is just
+straight through.
+
+915
+00:39:59,380 --> 00:40:01,830
+It'll make more sense when we
+see a little more convoluted
+
+916
+00:40:01,830 --> 00:40:02,630
+things.
+
+917
+00:40:02,630 --> 00:40:05,220
+So this program just
+starts naturally.
+
+918
+00:40:05,220 --> 00:40:07,860
+Python starts at the beginning
+and works its way down
+
+919
+00:40:07,860 --> 00:40:09,000
+through the end.
+
+920
+00:40:09,000 --> 00:40:10,640
+That's sequential stuff.
+
+921
+00:40:10,640 --> 00:40:14,150
+That's the normal
+order business.
+
+922
+00:40:14,150 --> 00:40:17,730
+A conditional is a step that
+may or may not get executed.
+
+923
+00:40:17,730 --> 00:40:19,270
+If all we did was
+sequential steps,
+
+924
+00:40:19,270 --> 00:40:21,390
+programs would be kind of dull.
+
+925
+00:40:21,390 --> 00:40:21,890
+Right?
+
+926
+00:40:21,890 --> 00:40:25,560
+They would just be like, blah
+blah blah blah blah stop.
+
+927
+00:40:25,560 --> 00:40:27,712
+So there's things like,
+what if you do this
+
+928
+00:40:27,712 --> 00:40:28,670
+or what if you do that?
+
+929
+00:40:28,670 --> 00:40:32,110
+So we do things like, if
+you have more than 40 hours,
+
+930
+00:40:32,110 --> 00:40:34,250
+I'm going to pay you a
+different rate than if I
+
+931
+00:40:34,250 --> 00:40:36,020
+have under 40 hours.
+
+932
+00:40:36,020 --> 00:40:39,760
+Those kinds of things
+are "if," the word "if."
+
+933
+00:40:39,760 --> 00:40:41,930
+So in Python, the
+way we express this
+
+934
+00:40:41,930 --> 00:40:43,840
+is we use the keyword "if."
+
+935
+00:40:43,840 --> 00:40:45,560
+So we say x equals 5.
+
+936
+00:40:45,560 --> 00:40:48,710
+And we say, if x
+is less than 10--
+
+937
+00:40:48,710 --> 00:40:50,970
+this is a question
+that's being asked--
+
+938
+00:40:50,970 --> 00:40:53,880
+is x less than 10
+or not, yes or no?
+
+939
+00:40:53,880 --> 00:40:57,990
+If it is, we execute the
+indented bit, if it's not,
+
+940
+00:40:57,990 --> 00:40:59,940
+we skip it.
+

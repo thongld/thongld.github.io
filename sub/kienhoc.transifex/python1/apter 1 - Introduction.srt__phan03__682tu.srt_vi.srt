@@ -1,0 +1,407 @@
+189
+00:07:56,710 --> 00:07:58,960
+wermarter 18/05/16
+Tôi nghĩ nó rất sáng tạo
+
+190
+00:07:58,960 --> 00:08:00,960
+Nó là điều đã lôi cuốn tôi trở thành một lập trình viên
+
+191
+00:08:00,960 --> 00:08:01,810
+Nó là điều đã lôi cuốn tôi trở thành một lập trình viên
+
+192
+00:08:01,810 --> 00:08:05,630
+Tôi có thể vận dụng được
+những tiềm năng ở bên trong này
+
+193
+00:08:05,630 --> 00:08:08,940
+Tôi có thể làm những thứ hay ho thay cho người dùng
+
+194
+00:08:08,940 --> 00:08:13,620
+Vậy là ta đã biết đến
+mã, phần mềm và chương trình
+
+195
+00:08:13,620 --> 00:08:19,530
+Bây giờ, ta lấy một ví dụ bình thường trong cuộc sống
+
+196
+00:08:19,530 --> 00:08:22,896
+Bạn hãy mở YouTube ra xem
+
+197
+00:08:22,896 --> 00:08:25,010
+Đây là Macarena
+
+198
+00:08:25,010 --> 00:08:30,470
+một bài hát với điệu nhảy khá phổ biến
+
+199
+00:08:30,470 --> 00:08:33,970
+Mà hầu như mọi người đều biết đến
+hoặc có thể học rất nhanh
+
+200
+00:08:33,970 --> 00:08:37,289
+Bạn có thể dừng một lát
+để xem Macarena
+
+201
+00:08:37,289 --> 00:08:38,100
+và sau đó tiếp tục khoá học
+
+202
+00:08:38,100 --> 00:08:41,280
+
+203
+00:08:41,280 --> 00:08:42,799
+Chào mừng bạn trở lại
+
+204
+00:08:42,799 --> 00:08:45,020
+Tôi mong các bạn thích nó
+
+205
+00:08:45,020 --> 00:08:48,690
+Cái ta có ở đây là một đoạn chương trình
+
+206
+00:08:48,690 --> 00:08:51,220
+Một chương trình dành cho con người
+
+207
+00:08:51,220 --> 00:08:53,800
+Bạn có thể học tại một câu lạc bộ 
+hoặc từ một ai đó
+
+208
+00:08:53,800 --> 00:08:55,380
+Họ hướng dẫn bạn
+làm những gì theo từng bước
+
+209
+00:08:55,380 --> 00:08:58,100
+Và bây giờ, tôi sẽ hướng dẫn các bạn 
+điệu nhảy Macarena
+
+210
+00:08:58,100 --> 00:09:00,440
+nhưng bằng một chương trình đơn giản như sau
+
+211
+00:09:00,440 --> 00:09:02,850
+Đây là chương trình Macarena của tôi
+
+212
+00:09:02,850 --> 00:09:05,150
+Khi (While) nhạc được phát, bạn thực hiện liên tục các động tác này
+
+213
+00:09:05,150 --> 00:09:06,469
+Và lặp lại cho đến khi nhạc dừng
+
+214
+00:09:06,469 --> 00:09:08,760
+Giống như máy tính thực hiện công việc theo nhịp
+
+215
+00:09:08,760 --> 00:09:11,110
+Khoảng 3 tỉ nhịp một giây
+
+216
+00:09:11,110 --> 00:09:14,204
+Và như thế, ta sẽ làm điều này lặp lại nhiều lần
+
+217
+00:09:14,204 --> 00:09:15,995
+Ở đây là tất cả câu lệnh
+
+218
+00:09:15,995 --> 00:09:18,370
+sẽ được thực hiện
+
+219
+00:09:18,370 --> 00:09:20,690
+Đưa tay trái ra và lên,
+Đưa tay phải ra và lên
+
+220
+00:09:20,690 --> 00:09:23,920
+Úp tay trái xuống,
+Úp tay phải xuống
+
+221
+00:09:23,920 --> 00:09:29,880
+Đưa tay trái lên vai phải,
+Đưa tay phải lên vai trái
+
+222
+00:09:29,880 --> 00:09:31,180
+và nhiều câu lệnh nữa
+
+223
+00:09:31,180 --> 00:09:36,250
+Chương trình này có một lỗi nhỏ
+
+224
+00:09:36,250 --> 00:09:37,460
+Thực ra là vài lỗi
+
+225
+00:09:37,460 --> 00:09:40,440
+Bạn hãy tìm các lỗi
+
+226
+00:09:40,440 --> 00:09:41,065
+trong đoạn chương trình trên
+
+227
+00:09:41,065 --> 00:09:48,330
+
+228
+00:09:48,330 --> 00:09:49,030
+OK
+
+229
+00:09:49,030 --> 00:09:52,400
+Đây là các lỗi có trong chương trình
+
+230
+00:09:52,400 --> 00:09:52,900
+Phải không?
+
+231
+00:09:52,900 --> 00:09:59,030
+Lỗi là : đưa THỊT (-> tay) ra sau đầu
+(right HAM to back of head)
+
+232
+00:09:59,030 --> 00:10:03,040
+Lỗi: và đưa tay trái lên ĐÁNH (-> hông)
+(Left hand to right HIT)
+
+233
+00:10:03,040 --> 00:10:06,340
+Nếu bạn ở trong quán bar,
+cầm lên một miếng thịt và
+
+234
+00:10:06,340 --> 00:10:08,250
+đánh vào đầu một ai đó
+
+235
+00:10:08,250 --> 00:10:11,490
+Thì điệu nhảy trên không hay cho lắm
+
+236
+00:10:11,490 --> 00:10:13,380
+Đây là những thứ gọi là
+lỗi chương trình (bugs)
+
+237
+00:10:13,380 --> 00:10:16,750
+Bây giờ một người đang đọc
+đoạn chương trình lỗi sẽ nói:
+
+238
+00:10:16,750 --> 00:10:20,010
+"Tôi nghĩ THỊT (ham) ở đây là TAY (hand)"
+
+239
+00:10:20,010 --> 00:10:22,500
+Nhưng máy tính không
+"thông minh" như vậy
+
+240
+00:10:22,500 --> 00:10:25,852
+Có vài trường hợp mà
+con người có thể nhìn thấy lỗi sai
+
+241
+00:10:25,852 --> 00:10:28,940
+Và chỉnh sửa lại cho đúng
+
+242
+00:10:28,940 --> 00:10:29,940
+Nhưng máy tính thì không thể
+
+243
+00:10:29,940 --> 00:10:30,860
+Đúng không?
+
+244
+00:10:30,860 --> 00:10:32,891
+Chúng ta cần sửa những lỗi sai này
+
+245
+00:10:32,891 --> 00:10:34,640
+Sửa lại: ...TAY phải... và
+
+246
+00:10:34,640 --> 00:10:36,260
+...đặt lên HÔNG...
+Khi ta muốn thể hiện như vậy
+
+247
+00:10:36,260 --> 00:10:37,400
+Ta cần phải thể hiện thực sự rõ ràng
+
+248
+00:10:37,400 --> 00:10:39,960
+Vì máy tính sẽ làm đúng như
+những gì ta bảo nó làm
+
+249
+00:10:39,960 --> 00:10:41,830
+chúng không làm những thứ ta định làm
+mà không nói rõ
+
+250
+00:10:41,830 --> 00:10:43,900
+Tiếp theo
+
+251
+00:10:43,900 --> 00:10:45,690
+Đây là một ví dụ khác
+
+252
+00:10:45,690 --> 00:10:48,010
+Hãy xem nó sẽ hiện ra như thế nào
+
+253
+00:10:48,010 --> 00:10:53,650
+
+254
+00:10:53,650 --> 00:10:56,590
+Chúng ta cần phải
+đếm số lần xuất hiện
+
+255
+00:10:56,590 --> 00:11:01,290
+của chữ "the" trong câu trên
+
+256
+00:11:01,290 --> 00:11:03,360
+Hãy đếm nào
+
+257
+00:11:03,360 --> 00:11:04,900
+Có bao nhiêu chữ "the"?
+
+258
+00:11:04,900 --> 00:11:15,810
+
+259
+00:11:15,810 --> 00:11:17,816
+OK
+
+260
+00:11:17,816 --> 00:11:18,440
+Đến phiên của bạn
+
+261
+00:11:18,440 --> 00:11:25,660
+
+262
+00:11:25,660 --> 00:11:31,360
+Đây quả thật không phải việc
+mà con người có thể làm tốt
+
+263
+00:11:31,360 --> 00:11:33,930
+Tôi chỉ cần di chuyển nó, 
+phát một đoạn nhạc là có thể làm bạn bối rối
+
+264
+00:11:33,930 --> 00:11:37,045
+Tôi đã đặt bức hình
+chiếc xe hề ở góc phía trên
+
+265
+00:11:37,045 --> 00:11:39,350
+và nhiều thứ nữa...
+
+266
+00:11:39,350 --> 00:11:42,420
+Sự thật, khi ta ra lệnh
+cho máy tính làm điều gì,
+
+267
+00:11:42,420 --> 00:11:46,600
+Nó thật sự rất giỏi trong việc
+tập trung để hoàn thành công việc đó
+
+268
+00:11:46,600 --> 00:11:49,900
+Nó có thể dễ dàng 
+quét qua 30 chữ
+
+269
+00:11:49,900 --> 00:11:53,020
+và tìm chữ được lặp lại nhiều nhất
+
+270
+00:11:53,020 --> 00:11:54,350
+hoặc 3 triệu chữ
+và tìm ra chữ thông dụng nhất
+
+271
+00:11:54,350 --> 00:11:55,770
+Và không bao giờ có
+một sai sót nào cả
+
+272
+00:11:55,770 --> 00:11:58,780
+Nhưng đầu tiên ta phải 
+đưa ra tập các câu lệnh
+
+273
+00:11:58,780 --> 00:12:01,540
+Tôi không yêu cầu bạn 
+phải học nó ngay bây giờ
+
+274
+00:12:01,540 --> 00:12:03,780
+nhưng đây là một đoạn chương trình
+được viết bằng Python
+
+275
+00:12:03,780 --> 00:12:08,890
+Giả sử, tôi muốn bạn đếm các chữ trong tập tin
+
+276
+00:12:08,890 --> 00:12:11,430
+Giả sử bạn biết lập trình Python,
+
+277
+00:12:11,430 --> 00:12:13,820
+Tôi sẽ gửi mail cho bạn chương trình này
+
+278
+00:12:13,820 --> 00:12:17,720
+Chỉ cần đưa vào Python 
+và nó sẽ đếm các chữ cho bạn
+
+279
+00:12:17,720 --> 00:12:19,970
+Bạn có một triệu chữ, 
+hay một triệu dòng trong tập tin
+
+280
+00:12:19,970 --> 00:12:23,990
+Bạn cần tìm chữ phổ biến nhất, 
+
+281
+00:12:23,990 --> 00:12:27,230
+Tôi sẽ gửi bạn file words.py này
+
+282
+00:12:27,230 --> 00:12:29,890
+mà tôi đã dành thời gian cho nó,
+hãy xem đây là một món quà tôi dành cho bạn.
+

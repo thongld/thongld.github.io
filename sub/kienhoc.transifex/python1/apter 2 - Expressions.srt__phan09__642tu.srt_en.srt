@@ -1,0 +1,436 @@
+761
+00:34:25,659 --> 00:34:27,500
+https://youtu.be/IXXHH6ztsSA
+2010.
+
+762
+00:34:27,500 --> 00:34:29,590
+And you could also just
+hide a line of code
+
+763
+00:34:29,590 --> 00:34:32,460
+to test and turn it on
+and off without actually
+
+764
+00:34:32,460 --> 00:34:34,030
+deleting the line of code.
+
+765
+00:34:34,030 --> 00:34:36,900
+It's a real common
+thing in debugging.
+
+766
+00:34:36,900 --> 00:34:41,902
+So for example,
+here is the program
+
+767
+00:34:41,902 --> 00:34:43,110
+that we've been playing with.
+
+768
+00:34:43,110 --> 00:34:44,895
+This is our word
+counting program
+
+769
+00:34:44,895 --> 00:34:47,080
+that we've been talking
+about from the beginning.
+
+770
+00:34:47,080 --> 00:34:51,620
+And here is the example of
+four comments, one, two, three,
+
+771
+00:34:51,620 --> 00:34:54,797
+four, four comments
+that basically tell us
+
+772
+00:34:54,797 --> 00:34:56,380
+what these paragraphs
+are going to do.
+
+773
+00:34:56,380 --> 00:34:59,280
+Now, they don't have any effect
+on the program whatsoever.
+
+774
+00:34:59,280 --> 00:35:02,330
+But this one says get the
+name of the file and open it.
+
+775
+00:35:02,330 --> 00:35:04,130
+Kind of helpful, right?
+
+776
+00:35:04,130 --> 00:35:06,630
+Count the word frequency, that's
+what this little bit does.
+
+777
+00:35:06,630 --> 00:35:08,070
+Find the most
+common word, that's
+
+778
+00:35:08,070 --> 00:35:09,490
+what this little bit does.
+
+779
+00:35:09,490 --> 00:35:11,580
+And all done, print this out.
+
+780
+00:35:11,580 --> 00:35:14,830
+So it really can be
+very helpful just
+
+781
+00:35:14,830 --> 00:35:16,620
+to add a little
+tiny bit of stuff.
+
+782
+00:35:16,620 --> 00:35:18,410
+You don't want to
+over use comments.
+
+783
+00:35:18,410 --> 00:35:23,500
+You don't want to say like, x =
+12, take 12 and put it into x.
+
+784
+00:35:23,500 --> 00:35:24,980
+Sometimes people
+teach you and try
+
+785
+00:35:24,980 --> 00:35:28,217
+to say, oh, you need one
+comment every three lines.
+
+786
+00:35:28,217 --> 00:35:29,800
+I don't believe in
+any of those rules.
+
+787
+00:35:29,800 --> 00:35:32,690
+I basically say if it's
+useful to describe it, then
+
+788
+00:35:32,690 --> 00:35:35,030
+describe it.
+
+789
+00:35:35,030 --> 00:35:36,580
+So that's comments.
+
+790
+00:35:36,580 --> 00:35:41,140
+So some operators
+apply the strings.
+
+791
+00:35:41,140 --> 00:35:43,410
+We've already talked about plus.
+
+792
+00:35:43,410 --> 00:35:45,610
+It's kind of silly,
+although useful in places.
+
+793
+00:35:45,610 --> 00:35:47,160
+You could actually
+multiply string,
+
+794
+00:35:47,160 --> 00:35:50,040
+where the asterisk
+looks and says
+
+795
+00:35:50,040 --> 00:35:51,900
+I got a string and an integer.
+
+796
+00:35:51,900 --> 00:35:55,320
+And it prints out the
+string five times.
+
+797
+00:35:55,320 --> 00:35:57,640
+Not a lot of use for that.
+
+798
+00:35:57,640 --> 00:36:01,480
+Now, let's talk a little bit
+about choosing variable names.
+
+799
+00:36:01,480 --> 00:36:04,270
+This is something that
+is really confusing.
+
+800
+00:36:04,270 --> 00:36:07,280
+So I said, like, x
+= 1, x = x plus 1.
+
+801
+00:36:07,280 --> 00:36:08,280
+What does x mean?
+
+802
+00:36:08,280 --> 00:36:12,190
+And the answer is it
+doesn't mean anything.
+
+803
+00:36:12,190 --> 00:36:13,450
+I chose it.
+
+804
+00:36:13,450 --> 00:36:14,930
+I wanted to make a variable.
+
+805
+00:36:14,930 --> 00:36:16,780
+And so I picked x.
+
+806
+00:36:16,780 --> 00:36:18,730
+We pick x a lot
+probably because we
+
+807
+00:36:18,730 --> 00:36:23,290
+learned in algebra in sixth
+grade that x was a variable.
+
+808
+00:36:23,290 --> 00:36:24,510
+And it's short.
+
+809
+00:36:24,510 --> 00:36:26,130
+And so why not call it x?
+
+810
+00:36:26,130 --> 00:36:29,800
+
+811
+00:36:29,800 --> 00:36:31,660
+But as your programs
+get larger, this
+
+812
+00:36:31,660 --> 00:36:33,784
+gets kind of frustrating
+to have all your variables
+
+813
+00:36:33,784 --> 00:36:35,490
+like x and y and z.
+
+814
+00:36:35,490 --> 00:36:39,130
+And so the notion of
+mnemonic, it means memory aid.
+
+815
+00:36:39,130 --> 00:36:41,830
+We choose our
+variable names wisely,
+
+816
+00:36:41,830 --> 00:36:44,180
+so they remind us of
+what the variable is
+
+817
+00:36:44,180 --> 00:36:46,430
+going to do internally.
+
+818
+00:36:46,430 --> 00:36:51,540
+And so as I go
+through this lecture,
+
+819
+00:36:51,540 --> 00:36:55,740
+in the beginning if I choose
+a variable that's too clever,
+
+820
+00:36:55,740 --> 00:36:59,030
+you're going to think that
+it's part of the language.
+
+821
+00:36:59,030 --> 00:37:00,650
+And so I sort of
+switch back and forth
+
+822
+00:37:00,650 --> 00:37:02,530
+between well chosen
+variable names
+
+823
+00:37:02,530 --> 00:37:04,110
+and stupid variable
+names to kind
+
+824
+00:37:04,110 --> 00:37:07,410
+re-emphasize the notion
+that I can choose.
+
+825
+00:37:07,410 --> 00:37:09,400
+Mnemonic is a good practice.
+
+826
+00:37:09,400 --> 00:37:10,100
+OK.
+
+827
+00:37:10,100 --> 00:37:11,450
+So here we go.
+
+828
+00:37:11,450 --> 00:37:13,970
+Let's take a look
+at the bit of code.
+
+829
+00:37:13,970 --> 00:37:17,410
+
+830
+00:37:17,410 --> 00:37:21,120
+So the question is what
+is this code doing?
+
+831
+00:37:21,120 --> 00:37:23,300
+What will it even print out?
+
+832
+00:37:23,300 --> 00:37:24,720
+Is it syntactically correct?
+
+833
+00:37:24,720 --> 00:37:27,400
+
+834
+00:37:27,400 --> 00:37:32,880
+Now you can probably cut
+and paste this into Python
+
+835
+00:37:32,880 --> 00:37:37,510
+and figure out that it
+is syntactically correct.
+
+836
+00:37:37,510 --> 00:37:38,895
+There are three variables.
+
+837
+00:37:38,895 --> 00:37:42,880
+
+838
+00:37:42,880 --> 00:37:48,070
+This one here and
+this one here match.
+
+839
+00:37:48,070 --> 00:37:50,840
+This one here and
+that one there match.
+
+840
+00:37:50,840 --> 00:37:52,980
+And these two match.
+
+841
+00:37:52,980 --> 00:37:56,250
+So it's taking these two numbers
+and multiplying together,
+
+842
+00:37:56,250 --> 00:37:59,090
+and then printing out the
+product of the two numbers
+
+843
+00:37:59,090 --> 00:38:03,900
+if you're real careful and
+look at every character.
+
+844
+00:38:03,900 --> 00:38:07,210
+Now this would be called
+non-mnemonic variables.
+
+845
+00:38:07,210 --> 00:38:09,220
+They're really messy.
+
+846
+00:38:09,220 --> 00:38:11,260
+Now Python, it's happy.
+
+847
+00:38:11,260 --> 00:38:13,680
+Because all it wants
+is to say, oh, here's
+
+848
+00:38:13,680 --> 00:38:16,040
+the name that I, the
+programmer, decided I wanted
+
+849
+00:38:16,040 --> 00:38:17,310
+to call this piece of memory.
+
+850
+00:38:17,310 --> 00:38:20,190
+And I'll refer to it down here.
+
+851
+00:38:20,190 --> 00:38:21,870
+OK.
+
+852
+00:38:21,870 --> 00:38:23,350
+And so Python's happy.
+
+853
+00:38:23,350 --> 00:38:25,650
+Now, if you hand this
+to another human being,
+
+854
+00:38:25,650 --> 00:38:27,290
+they're going to
+be really unhappy.
+
+855
+00:38:27,290 --> 00:38:30,270
+Because they're going to
+be like what are you doing?
+

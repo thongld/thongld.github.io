@@ -1,0 +1,310 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/feapCzKVN80
+phuongmai201
+
+1
+00:00:06,310 --> 00:00:09,199
+Rất vui được gặp lại và chào mừng các bạn trở lại với khóa học "Quản trị vận hành".
+
+2
+00:00:09,199 --> 00:00:12,298
+trong bài này ta sẽ nói về hiệu quả của quá trình
+
+3
+00:00:12,298 --> 00:00:17,380
+trong những bài trước, ta đã tập trung vào đường lối then chốt
+
+4
+00:00:17,380 --> 00:00:21,089
+và nghiên cứu những hoạt động của một quá trình từ lúc bắt đầu  đến khi kết thúc
+
+5
+00:00:21,089 --> 00:00:24,589
+và giờ đây ta đã biết một quá trình kéo dài bao lâu,
+
+6
+00:00:24,589 --> 00:00:28,500
+bước tiếp theo là làm cho quá trình này tốt hơn.
+
+7
+00:00:28,500 --> 00:00:31,528
+Điều ta cần biết là xác định 
+
+8
+00:00:31,528 --> 00:00:35,698
+các hoạt động trong quá trình sản xuất mà ta có thể cải thiện.
+
+9
+00:00:35,698 --> 00:00:41,770
+Vậy làm sao làm được điều đó? Bắt đầu với việc nghiên cứu
+
+10
+00:00:41,770 --> 00:00:44,410
+ví dụ được dùng từ những bài trước.
+
+11
+00:00:44,409 --> 00:00:48,578
+Đây là hoạt động quét dọn của một văn phòng, 
+
+12
+00:00:48,579 --> 00:00:49,480
+ta biết rằng có 6 hoạt động trong này,
+
+13
+00:00:49,479 --> 00:00:54,699
+và trong bài trước ta đã
+
+14
+00:00:54,700 --> 00:00:56,199
+biết thời gian cụ thể cho mỗi hoạt động.
+
+15
+00:00:56,198 --> 00:00:59,219
+Đây là thời gian cần thiết 
+
+16
+00:00:59,219 --> 00:01:04,349
+để hoàn tất cho mỗi hoạt động. Trong khi học đang dọn dẹp,
+
+17
+00:01:04,349 --> 00:01:08,340
+ta quan sát và ghi lại
+
+18
+00:01:08,340 --> 00:01:12,600
+mất bao lâu để nhặt cốc, mất bao lâu để quét bụi,
+
+19
+00:01:12,599 --> 00:01:17,089
+và tương tự thế. Đây là thời gian thực tế cho mỗi hoạt động
+
+20
+00:01:17,090 --> 00:01:20,200
+Trong thế giới lý tưởng,
+
+21
+00:01:20,200 --> 00:01:23,500
+tất cả nguồn lực luôn sẵn sàng
+
+22
+00:01:23,500 --> 00:01:27,989
+và không phải chờ bất cứ điều gì, ta có thời gian lý thuyết
+
+23
+00:01:27,989 --> 00:01:33,019
+Một hoạt động A trên thực tế mất 45s
+
+24
+00:01:33,019 --> 00:01:37,298
+nhưng trong thế giới hoàn hảo, có thể chỉ mất 40s thôi.
+
+25
+00:01:37,299 --> 00:01:40,860
+Hoạt động B ở thế giới lý tưởng cần 240s 
+
+26
+00:01:40,859 --> 00:01:44,569
+trong khi ở thế giới thực phải mất 300s
+
+27
+00:01:44,569 --> 00:01:49,459
+nên bạn có thể thấy sự khác biệt 
+
+28
+00:01:49,459 --> 00:01:53,688
+giữa thời gian lý thuyết và thời gian thực tế yêu cầu.
+
+29
+00:01:53,688 --> 00:01:57,048
+Và
+
+30
+00:01:57,049 --> 00:02:01,729
+đâu là hoạt động ta tập trung vào để cải thiện quá trình?
+
+31
+00:02:01,728 --> 00:02:07,269
+Ta sẽ quan sát từng hoạt động 
+
+32
+00:02:07,269 --> 00:02:11,639
+dựa theo thời gian thực tế và lý thuyết.
+
+33
+00:02:11,639 --> 00:02:14,689
+và ta sẽ tính hiệu suất
+
+34
+00:02:14,689 --> 00:02:19,189
+bằng cách lấy thời gian lý thuyết chia cho thời gian thực tế
+
+35
+00:02:19,189 --> 00:02:23,459
+rồi đổi ra phần trăm
+
+36
+00:02:23,459 --> 00:02:27,830
+nếu bạn nhớ lại thì ta có biểu đồ sau
+
+37
+00:02:27,830 --> 00:02:32,160
+ta đã có thời gian thực tế, thời gian lý thuyết,
+
+38
+00:02:32,159 --> 00:02:36,098
+và giờ có thêm cột mới cho hiệu suất hoạt động
+
+39
+00:02:36,098 --> 00:02:40,589
+Hoạt động A có thời gian thực tế là 55s 
+
+40
+00:02:40,590 --> 00:02:44,409
+trong khi thời gian lý thuyết là 40s,
+
+41
+00:02:44,409 --> 00:02:48,579
+làm phép chia và kết quả về hiệu suất là 72.7%.
+
+42
+00:02:48,580 --> 00:02:52,310
+Ta làm thế với từng hoạt động trong quá trình,
+
+43
+00:02:52,310 --> 00:02:56,378
+và bạn có thể thấy có vài hoạt động hiệu suất khá cao,
+
+44
+00:02:56,378 --> 00:03:01,549
+ví dụ như lau bụi, hiệu suất là 80%,
+
+45
+00:03:01,550 --> 00:03:04,930
+trong khi hoạt động đổ rác
+
+46
+00:03:04,930 --> 00:03:08,590
+có hiệu suất chỉ 50%.
+
+47
+00:03:08,590 --> 00:03:12,689
+Làm thế nào để chọn hoạt động mục tiêu cần cải thiện?
+
+48
+00:03:12,689 --> 00:03:16,239
+Chỉ dựa vào hiệu suất thôi là chưa đủ.
+
+49
+00:03:16,239 --> 00:03:19,750
+ta cần phải nhìn vào biểu đồ dòng thực tế,
+
+50
+00:03:19,750 --> 00:03:22,878
+nếu bạn nhớ lại,
+
+51
+00:03:22,878 --> 00:03:26,079
+có 3 con đường qua quá trình ABEF,
+
+52
+00:03:26,080 --> 00:03:29,510
+ACEF và ADF.
+
+
+53
+00:03:29,509 --> 00:03:33,348
+Tôi tính đường dài nhất
+
+54
+00:03:33,348 --> 00:03:36,568
+là ADF và cần 455s.
+
+55
+00:03:36,568 --> 00:03:41,089
+và đây cũng là con đường then chốt.
+
+56
+00:03:41,090 --> 00:03:44,729
+Nếu ta thực sự thử cải thiện hoạt động E vì nó hiệu suất chỉ là 50%
+
+57
+00:03:44,729 --> 00:03:51,209
+thì cũng không có ảnh hưởng gì
+
+58
+00:03:51,209 --> 00:03:52,060
+đến con đường then chốt.
+
+59
+00:03:52,060 --> 00:03:58,890
+Ta có thể cải thiện hoạt động E nhưng quá trình vẫn mất 455s
+
+60
+00:03:58,889 --> 00:04:03,139
+hoạt động vệ sinh C có hiệu suất 61%
+
+61
+00:04:03,139 --> 00:04:07,238
+và tương tự, ta có thể cải thiện nó, nhưng vẫn sẽ không
+
+62
+00:04:07,239 --> 00:04:11,700
+ảnh hưởng đến tiến độ chung. Do đó,
+
+63
+00:04:11,699 --> 00:04:15,060
+ta phải xác định hoạt động có hiệu suất thấp nhất
+
+64
+00:04:15,060 --> 00:04:19,408
+nhưng phải ở trên con đường then chốt.
+
+65
+00:04:19,408 --> 00:04:22,750
+Đó là điều đầu tiên ta phải nhìn vào
+
+66
+00:04:22,750 --> 00:04:27,769
+trong trường hợp này, đó là hoạt động F
+
+67
+00:04:27,769 --> 00:04:31,870
+ngay cả khi ta cải thiện hiệu suất của nó một chút
+
+68
+00:04:31,870 --> 00:04:35,970
+và nó chỉ tốn 39s đến 30s 
+
+69
+00:04:35,970 --> 00:04:42,550
+nó sẽ có ảnh hưởng trực tiếp đến tiến độ chung của quá trình.
+
+70
+00:04:42,550 --> 00:04:47,319
+Tổng kết lại, ta đã nghiên cứu cả quá trình,
+
+71
+00:04:47,319 --> 00:04:52,279
+chỉ ra con đường then chốt, 
+
+72
+00:04:52,279 --> 00:04:57,879
+chỉ ra cách xác định các hoạt động  cần tập trung cải thiện trong bất cứ quá trình nào.
+
+73
+00:04:57,879 --> 00:05:01,310
+Bài sau ta sẽ nghiên cứu
+
+74
+00:05:01,310 --> 00:05:04,439
+phân tích sức chứa để đảm bảo rằng
+
+75
+00:05:04,439 --> 00:05:09,050
+tao có đủ nguồn lực để cung cấp cho quá trình.
+
+76
+00:05:09,050 --> 00:05:09,639
+Hẹn gặp lại các bạn trong bài tới.
+

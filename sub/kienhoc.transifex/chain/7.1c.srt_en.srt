@@ -1,0 +1,384 @@
+0
+00:00:00,000 --> 00:00:01,380
+https://youtu.be/-jWx9qSA8SM
+
+1
+00:00:01,380 --> 00:00:05,260
+OK, let's solve the EOQ- Planned Backorders.
+
+2
+00:00:05,260 --> 00:00:07,820
+We last left with this Total Relevant Cost equation,
+
+3
+00:00:07,820 --> 00:00:11,110
+which is a function of the order quantity, Q, and the quantity
+
+4
+00:00:11,110 --> 00:00:12,870
+I'm allowed to backorder, b.
+
+5
+00:00:12,870 --> 00:00:16,140
+We had the three terms -- the Ordering Cost,
+
+6
+00:00:16,140 --> 00:00:19,010
+then the cost of holding inventory,
+
+7
+00:00:19,010 --> 00:00:22,230
+and then the cost of stocking out, or the Shortage Cost.
+
+8
+00:00:22,230 --> 00:00:23,620
+It's a continuous function.
+
+9
+00:00:23,620 --> 00:00:26,510
+So how do we find the minimum value for this?
+
+10
+00:00:26,510 --> 00:00:28,930
+We take first order conditions, set them equal to zero.
+
+11
+00:00:28,930 --> 00:00:30,590
+Since I have two equations, I've got
+
+12
+00:00:30,590 --> 00:00:32,790
+to use partial differential equations.
+
+13
+00:00:32,790 --> 00:00:35,840
+A full derivation is attached in the PDF to this unit,
+
+14
+00:00:35,840 --> 00:00:39,470
+if you want to see that, but the end result is what's important.
+
+15
+00:00:39,470 --> 00:00:44,439
+So we end up with optimal form for the Q*_PBO,
+
+16
+00:00:44,439 --> 00:00:46,480
+that's the optimal quantity we're going to order.
+
+17
+00:00:46,480 --> 00:00:48,850
+And I subscripted it with PBO, so we
+
+18
+00:00:48,850 --> 00:00:50,820
+know it's for Planned Backorders.
+
+19
+00:00:50,820 --> 00:00:53,360
+And then we'll also be able to determine the b*,
+
+20
+00:00:53,360 --> 00:00:56,230
+the optimal amount we're willing to stock out.
+
+21
+00:00:56,230 --> 00:01:01,550
+So the form of the Q*_PBO is right here, I'm boxing it.
+
+22
+00:01:01,550 --> 00:01:02,970
+Why is that important?
+
+23
+00:01:02,970 --> 00:01:07,190
+Well, we're going to see that this ratio of (c_s / c_e) + c_s
+
+24
+00:01:07,190 --> 00:01:08,680
+is going to be very important.
+
+25
+00:01:08,680 --> 00:01:11,090
+It plays a big role going forward.
+
+26
+00:01:11,090 --> 00:01:14,040
+And so we're saying that the new Q*_PBO is going to be equal
+
+27
+00:01:14,040 --> 00:01:17,650
+to the old Q*, which is the optimal quantity,
+
+28
+00:01:17,650 --> 00:01:20,740
+the EOQ when Backorders were not allowed,
+
+29
+00:01:20,740 --> 00:01:25,900
+times sqrt ((c_s + c_e) / c_s), which is just a ratio
+
+30
+00:01:25,900 --> 00:01:29,300
+of the sum of the Excess and Shortage Cost divided
+
+31
+00:01:29,300 --> 00:01:31,250
+by the Shortage Cost.
+
+32
+00:01:31,250 --> 00:01:38,410
+The b* is going to be equal to the Q*_PBO times (1 -
+
+33
+00:01:38,410 --> 00:01:40,920
+(c_s) / (c_s + c_e).
+
+34
+00:01:40,920 --> 00:01:45,440
+So if I know the forms for the new Q* and the new b*,
+
+35
+00:01:45,440 --> 00:01:48,050
+then I can figure out my Inventory Policy:
+
+36
+00:01:48,050 --> 00:01:52,780
+It's simply order Q*_b0 when Inventory On Hand is equal
+
+37
+00:01:52,780 --> 00:01:54,530
+to -b*.
+
+38
+00:01:54,530 --> 00:01:57,720
+Or comparably I could say order Q*_PBO,
+
+39
+00:01:57,720 --> 00:02:01,450
+quantity we figured out every T* PBO time periods.
+
+40
+00:02:01,450 --> 00:02:03,540
+Now, remember, once I figure out a Q,
+
+41
+00:02:03,540 --> 00:02:06,020
+I know the T, and vice versa.
+
+42
+00:02:06,020 --> 00:02:09,430
+So the important thing here is this Critical Ratio,
+
+43
+00:02:09,430 --> 00:02:12,420
+this ratio of the Cost of Shortage divided
+
+44
+00:02:12,420 --> 00:02:15,880
+by the sum of the Cost of Shortage plus Cost of Excess.
+
+45
+00:02:15,880 --> 00:02:19,690
+We see that it plays a role here in the determination of b,
+
+46
+00:02:19,690 --> 00:02:23,370
+and the inverse of it plays a role in determining what
+
+47
+00:02:23,370 --> 00:02:25,600
+the new Q* is going to be.
+
+48
+00:02:25,600 --> 00:02:27,520
+This Critical Ratio is something we're
+
+49
+00:02:27,520 --> 00:02:29,590
+going to use a lot of going forward.
+
+50
+00:02:29,590 --> 00:02:32,570
+So let's take a closer look at it just for a second.
+
+51
+00:02:32,570 --> 00:02:35,460
+We know that the range of the Critical Ratio
+
+52
+00:02:35,460 --> 00:02:41,200
+can take is between 0 and 1, because c_s / (c_s + c_e)
+
+53
+00:02:41,200 --> 00:02:42,850
+can never be negative.
+
+54
+00:02:42,850 --> 00:02:44,910
+And it can't be greater than 1 since it's
+
+55
+00:02:44,910 --> 00:02:47,700
+a part of the denominator.
+
+56
+00:02:47,700 --> 00:02:52,010
+So on this chart I have here, on the horizontal axis,
+
+57
+00:02:52,010 --> 00:02:55,480
+you see it goes from 0 to 1, and this is the Critical Ratio.
+
+58
+00:02:55,480 --> 00:02:59,640
+So this is the Critical Ratio on the horizontal axis.
+
+59
+00:02:59,640 --> 00:03:06,040
+And on the vertical axis is the Q*_PBO as a percentage of Q*.
+
+60
+00:03:06,040 --> 00:03:11,260
+So it's the Q* allowing Backorders divided by the Q*
+
+61
+00:03:11,260 --> 00:03:13,060
+not allowing Backorders.
+
+62
+00:03:13,060 --> 00:03:15,100
+So let's take some extremes, because it's always
+
+63
+00:03:15,100 --> 00:03:18,490
+helpful to look at extreme values first.
+
+64
+00:03:18,490 --> 00:03:21,920
+So what happens if the c_s is very, very big?
+
+65
+00:03:21,920 --> 00:03:30,080
+Now, remember, we know that Q*_PBO is equal to Q* times
+
+66
+00:03:30,080 --> 00:03:32,280
+the sqrt(1/CR).
+
+67
+00:03:32,280 --> 00:03:38,510
+
+
+68
+00:03:38,510 --> 00:03:41,900
+So what happens as the Critical Ratio gets really big?
+
+69
+00:03:41,900 --> 00:03:45,270
+Well, as you can see, as it gets really big, it can go up to 1.
+
+70
+00:03:45,270 --> 00:03:50,190
+This term, this sqrt(1/CR) will go to 1,
+
+71
+00:03:50,190 --> 00:03:54,160
+which means that Q*_PBO will equal Q*.
+
+72
+00:03:54,160 --> 00:03:57,150
+So it's really costly to be short,
+
+73
+00:03:57,150 --> 00:03:58,980
+essentially not allowing it.
+
+74
+00:03:58,980 --> 00:04:01,960
+If it goes really, really high, then, essentially, I'm
+
+75
+00:04:01,960 --> 00:04:04,220
+going to order what I normally order for EOQ when
+
+76
+00:04:04,220 --> 00:04:06,085
+I don't allow Backorders.
+
+77
+00:04:06,085 --> 00:04:09,850
+At the other extreme, what if c_s is very small?
+
+78
+00:04:09,850 --> 00:04:13,470
+Well, when it's very small, then we're going to make our Q*_PBO
+
+79
+00:04:13,470 --> 00:04:15,040
+very, very big.
+
+80
+00:04:15,040 --> 00:04:16,820
+It'll be tremendously higher.
+
+81
+00:04:16,820 --> 00:04:19,550
+It's essentially saying at the end of the year,
+
+82
+00:04:19,550 --> 00:04:21,927
+I will place the order for all the demand
+
+83
+00:04:21,927 --> 00:04:23,510
+that I had up to that year, because it
+
+84
+00:04:23,510 --> 00:04:26,670
+costs next to nothing for them to stock out.
+
+85
+00:04:26,670 --> 00:04:28,700
+So I'll order at the last possible time
+
+86
+00:04:28,700 --> 00:04:31,840
+and I'll order a very, very big amount.
+
+87
+00:04:31,840 --> 00:04:35,540
+But I can plot this relationship for all the values of CR
+
+88
+00:04:35,540 --> 00:04:40,350
+and I get this kind of curve, which is very useful to see.
+
+89
+00:04:40,350 --> 00:04:43,140
+And so now you can see that, based
+
+90
+00:04:43,140 --> 00:04:46,480
+on the ratio of how big the Shortage Costs are compared
+
+91
+00:04:46,480 --> 00:04:49,590
+to the Excess Costs, that tells me and sets
+
+92
+00:04:49,590 --> 00:04:51,620
+how much I'm going to order.
+
+93
+00:04:51,620 --> 00:04:54,340
+And it's a trade-off, again, between the Shortage
+
+94
+00:04:54,340 --> 00:04:56,506
+and the Excess Costs.
+
+95
+00:04:56,506 --> 00:04:57,005
+
+

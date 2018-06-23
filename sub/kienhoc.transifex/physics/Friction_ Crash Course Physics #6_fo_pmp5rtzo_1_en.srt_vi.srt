@@ -1,0 +1,641 @@
+1
+00:00:02,980 --> 00:00:06,540
+<Dương Thu Hường>
+Tập này của Crash Course Physics được tài trợ bởi Audible
+
+2
+00:00:06,540 --> 00:00:09,099
+Nếu bạn đã xem tập về Định luật chuyển động của Newton,
+
+3
+00:00:09,099 --> 00:00:12,490
+Bạn đã trở thành một chuyên gia về LỰC, và cách chúng gây gia tốc lên mọi vật.
+
+4
+00:00:12,490 --> 00:00:15,609
+Nhưng có một điều ta đã bỏ qua -
+một điều rất quan trọng
+
+5
+00:00:15,609 --> 00:00:18,929
+khi bạn mô tả cách mọi vật chuyển động trong thực tế: MA SÁT.
+
+6
+00:00:18,929 --> 00:00:21,609
+Nó làm cho một vận động viên bóng chày đang trượt vào đĩa nhà dừng lại.
+
+7
+00:00:21,609 --> 00:00:25,769
+Và nó cũng là lý do giúp tôi giữ chiếc cốc này không bị tuột khỏi tay.
+
+8
+00:00:25,769 --> 00:00:29,600
+Nếu không có ma sát, sẽ rất khó để thực hiện... gần như mọi thứ.
+
+9
+00:00:29,609 --> 00:00:32,399
+Nhưng nó cũng làm cho những việc KHÁC trở nên... khó khăn hơn.
+
+10
+00:00:32,399 --> 00:00:34,859
+Bất cứ ai đã từng di chuyển đồ đạc cũng biết điều đó.
+
+11
+00:00:34,869 --> 00:00:39,829
+Thật may, ma sát cũng là một lực, nên những nhà vật lý chúng ta biết cách làm gì với nó.
+
+12
+00:00:39,829 --> 00:00:48,729
+[Nhạc nền]
+
+13
+00:00:48,729 --> 00:00:55,009
+Bạn đang chuyển tới một ngôi nhà mới và bạn nhờ một người bạn tới giúp.
+
+14
+00:00:55,009 --> 00:00:59,210
+Bạn thực sự cần anh ấy giúp vì bạn phải chuyển một kệ sách và một cái bàn to,
+
+15
+00:00:59,210 --> 00:01:01,070
+bạn không thể tự làm việc đó được.
+
+16
+00:01:01,070 --> 00:01:04,799
+Mọi chuyện đã xong xuôi một nửa, bây giờ bạn đang sắp xếp đồ trong phòng ngủ mới,
+
+17
+00:01:04,799 --> 00:01:06,640
+và bạn gặp phải một vấn đề:
+
+18
+00:01:06,640 --> 00:01:11,180
+Bạn đang đẩy liên tục kệ sách nhưng nó chẳng nhúc nhích chút nào.
+
+19
+00:01:11,180 --> 00:01:17,000
+Vậy là bạn gọi anh bạn kia và cả hai cùng đẩy, kệ sách bắt đầu dịch chuyển.
+
+20
+00:01:17,000 --> 00:01:21,719
+Nhưng rất khó để làm cho kệ sách dịch chuyển - và tiếp tục dịch chuyển 
+
+21
+00:01:21,719 --> 00:01:25,379
+Bởi vì đang có một lực ngăn cản bạn - làm kệ sách ngừng trượt trên sàn: ma sát.
+
+22
+00:01:25,379 --> 00:01:27,500
+Có hai loại ma sát.
+
+23
+00:01:27,500 --> 00:01:31,939
+Thứ nhất, đó là ma sát ĐỘNG - lực làm kệ sách chuyển động chậm lại khi nó đang trượt trên sàn.
+
+24
+00:01:31,939 --> 00:01:36,819
+Và thứ hai là ma sát NGHỈ - lực mà bạn phải thắng để có thể làm kệ sách đang đứng yên bắt đầu dịch chuyển.
+
+25
+00:01:36,819 --> 00:01:38,789
+Hãy cùng tìm hiểu ma sát động trước.
+
+26
+00:01:38,790 --> 00:01:43,210
+Nó là một lực cản, nghĩa là nó sẽ hoạt động để ngăn cản bạn.
+
+27
+00:01:43,209 --> 00:01:47,530
+Nói cách khác, nếu bạn đẩy kệ sách sang bên trái,
+
+28
+00:01:47,530 --> 00:01:49,299
+thì lực ma sát động sẽ hoạt động hướng về phía bên phải.
+
+29
+00:01:49,299 --> 00:01:53,299
+Nhưng nếu bạn đẩy kệ sách sang phải thì lực ma sát đó sẽ hướng sang trái.
+
+30
+00:01:53,299 --> 00:01:57,659
+Ma sát động cũng sẽ tạo ra nhiệt hay âm thanh hay cả hai.
+
+31
+00:01:57,659 --> 00:01:58,979
+Điều gì đã gây ra nó?
+
+32
+00:01:58,989 --> 00:02:03,548
+Kệ sách trên sàn gỗ NHÌN có vẻ trơn nhẵn, nhưng nếu nhìn qua kính hiển vi,
+
+33
+00:02:03,549 --> 00:02:06,840
+bạn sẽ thấy chúng được phủ bởi những vùng lỗi lõm nhỏ li ti.
+
+34
+00:02:06,840 --> 00:02:10,259
+Khi kệ sách trượt trên sàn, các bề mặt cọ sát nhau,
+
+35
+00:02:10,258 --> 00:02:15,858
+và thậm chí có thể hình thành liên kết yếu giữa các phân tử. Kệ sách bị kéo lại và di chuyển chậm đi.
+
+36
+00:02:15,859 --> 00:02:21,099
+Khi kệ sách tiếp tục trượt, nó phá vỡ các liên kết trên và trượt qua vùng lồi lõm đang làm nó mắc kẹt.
+
+37
+00:02:21,099 --> 00:02:25,739
+Các phân tử vừa được giải phóng bắn về phía sau, sinh ra nhiệt và âm thanh.
+
+38
+00:02:25,740 --> 00:02:28,480
+Vòng tuần hoàn cứ thế tiếp tục.
+
+39
+00:02:28,479 --> 00:02:33,158
+Bạn sẽ luôn đối mặt với một lực ngăn cản bất kì dạng chuyển động trượt nào,
+
+40
+00:02:33,158 --> 00:02:36,078
+độ lớn của nó phụ thuộc phần nào vào các chất liệu trượt trên nhau.
+
+41
+00:02:36,079 --> 00:02:40,308
+Chất liệu càng gồ ghề thì càng nhiều bề mặt tiếp xúc, đó là lý do vì sao
+
+42
+00:02:40,308 --> 00:02:44,008
+đẩy kệ sách trên sàn gỗ sẽ dễ hơn trên thảm.
+
+43
+00:02:44,008 --> 00:02:48,839
+Việc ảnh hưởng của độ gồ ghề được gọi là hệ số ma sát động.
+
+44
+00:02:48,840 --> 00:02:51,979
+Với các chất liệu khác nhau, hệ số ma sát động sẽ có giá trị khác nhau.
+
+45
+00:02:51,989 --> 00:02:54,329
+Nhưng có một nhân tố khác trong lực ma sát:
+
+46
+00:02:54,329 --> 00:02:59,280
+Các chất liệu được ép vào nhau càng chặt sẽ càng tăng bề mặt tiếp xúc với nhau.
+
+47
+00:02:59,289 --> 00:03:02,179
+Và đây là lúc phản lực F_N xuất hiện.
+
+48
+00:03:02,180 --> 00:03:05,799
+Có lẽ bạn vẫn nhớ ở tập trước, rằng khi một lực ép kệ sách xuống sàn,
+
+49
+00:03:05,800 --> 00:03:08,800
+thì sàn sẽ có một lực đẩy ngược lại.
+
+50
+00:03:08,800 --> 00:03:14,020
+Đó là định luật thứ 3 của Newton, và ta gọi lực mà sàn nhà tác dụng lên kệ sách là PHẢN LỰC.
+
+51
+00:03:14,020 --> 00:03:18,600
+Trong trường hợp này, lực từ kệ sách tác dụng lên sàn là trọng lượng của nó, mg.
+
+52
+00:03:18,599 --> 00:03:23,680
+Phản lực sẽ có độ lớn bằng mg, nhưng hướng lên - độ lớn như nhau nhưng ngược chiều.
+
+53
+00:03:23,680 --> 00:03:28,359
+Vậy là ta đã biết hai nhân tố chính ảnh hưởng tới độ lớn lực ma sát động:
+
+54
+00:03:28,359 --> 00:03:33,899
+Hệ số ma sát động -- kí hiệu mu_k -- và phản lực, F_N
+
+55
+00:03:33,900 --> 00:03:37,439
+Sẽ không quá ngạc nhiên, khi công thức của lực ma sát động chỉ là...
+
+56
+00:03:37,449 --> 00:03:39,519
+Hệ số ma sát nhân với độ lớn phản lực.
+
+57
+00:03:39,519 --> 00:03:42,739
+Nhưng đó mới chỉ là một nửa. Thế còn lực ma sát nghỉ thì sao?
+
+58
+00:03:42,740 --> 00:03:46,800
+Khi bạn không thể đẩy kệ sách lúc đầu,
+
+59
+00:03:46,808 --> 00:03:48,929
+đó chính là do ma sát nghỉ giữa kệ sách và sàn nhà.
+
+60
+00:03:48,929 --> 00:03:52,049
+Giống ma sát động, đây cũng là một lực cản.
+
+61
+00:03:52,049 --> 00:03:55,929
+Nhưng không chỉ có hướng, độ lớn của nó cũng có thể thay đổi.
+
+62
+00:03:55,929 --> 00:03:59,439
+Bạn chỉ dùng một tay để đẩy nhẹ kệ sách và nó không di chuyển.
+
+63
+00:03:59,439 --> 00:04:03,280
+Như vậy hẳn là kệ sách đang trong trạng thái cân bằng.
+
+64
+00:04:03,280 --> 00:04:05,500
+Nghĩa là các lực tác dụng lên kệ sách đang cân bằng nhau.
+
+65
+00:04:05,509 --> 00:04:10,289
+Vì thế lực ma sát nghỉ phải lớn bằng với lực đẩy từ tay bạn,
+
+66
+00:04:10,289 --> 00:04:13,400
+nhưng hướng thì ngược lại, do có sự cân bằng.
+
+67
+00:04:13,400 --> 00:04:17,560
+Lực này không giống như phản lực và cũng không liên quan đến định luật 3 Newton.
+
+68
+00:04:17,560 --> 00:04:21,259
+Nhưng rồi bạn đẩy kệ sách hết sức bằng lưng.
+
+69
+00:04:21,259 --> 00:04:28,159
+Kệ sách vẫn không chuyển động, nghĩa là lực ma sát nghỉ vẫn đang đẩy ngược lại với độ lớn bằng lực mà bạn gây ra.
+
+70
+00:04:28,160 --> 00:04:32,220
+Tuy nhiên, lực ma sát nghỉ giữa hai vật thể có thể thay đổi:
+
+71
+00:04:32,230 --> 00:04:36,990
+Khi bạn của bạn cùng đẩy, kệ sách bắt đầu dịch chuyển vì tổng lực của hai người
+
+72
+00:04:36,990 --> 00:04:42,030
+lớn hơn độ lớn cực đại mà lực ma sát nghỉ có thể đạt tới - được viết như sau.
+
+73
+00:04:42,029 --> 00:04:46,279
+Quan hệ giữa lực ma sát nghỉ cực đại với phản lực
+
+74
+00:04:46,279 --> 00:04:49,069
+tương tự như quan hệ của lực ma sát động với phản lực.
+
+75
+00:04:49,069 --> 00:04:54,089
+Ta cũng có hệ số ma sát nghỉ, đo lường độ nhám 
+
+76
+00:04:54,089 --> 00:04:57,179
+giữa hai vật thể - và được viết là mu_s.
+
+77
+00:04:57,180 --> 00:05:03,199
+Độ lớn lực ma sát nghỉ cực đại bằng hệ số ma sát nghỉ nhân độ lớn phản lực.
+
+78
+00:05:03,209 --> 00:05:07,049
+Vậy là ta đã biết phương trình cho cả hai loại lực ma sát và nguyên nhân sinh ra chúng.
+
+79
+00:05:07,050 --> 00:05:11,699
+Điều đó nghĩa là ta có thể dùng những kiến thức đó để giúp giải quyết những vấn đề liên quan tới ma sát.
+
+80
+00:05:11,699 --> 00:05:16,420
+Giống như những vấn đề liên quan tới lực khác, ta sẽ bắt đầu với một sơ đồ lực.
+
+81
+00:05:16,420 --> 00:05:21,020
+Nó giúp ta biết lực nào tác dụng vào đâu, từ đó ta sẽ có một cái nhìn tổng quan với vấn đề. 
+
+82
+00:05:21,029 --> 00:05:25,389
+Tiếp theo, ta xây dựng những hệ trục: x và y ở đâu? Hướng nào là dương, hướng nào âm?
+
+83
+00:05:25,389 --> 00:05:29,819
+Nó sẽ hữu ích khi xuất hiện mặt phẳng nghiêng, vì ta có thể đặt x là trục hướng xuống phía dưới dọc mặt nghiêng,
+
+84
+00:05:29,819 --> 00:05:32,430
+và trục y hướng vào phía trong mặt nghiêng, vuông góc với trục x,
+
+85
+00:05:32,430 --> 00:05:37,160
+Việc cần làm tiếp theo là tách các vector lực thành các lực thành phần theo trục x và y.
+
+86
+00:05:37,160 --> 00:05:42,939
+Vì phản lực sẽ khác một chút khi một vật (ví dụ như kệ sách) nằm trên một mặt nghiêng.
+
+87
+00:05:42,939 --> 00:05:46,939
+Phản lực hướng lệch đi do nó vuông góc với bề mặt đặt vật - tức vuông góc với mặt nghiêng.
+
+88
+00:05:46,939 --> 00:05:51,680
+Và phản lực trường hợp này KHÔNG cân bằng với trọng lực, vì TRỌNG LỰC hướng thẳng xuống dưới.
+
+89
+00:05:51,689 --> 00:05:55,550
+Thay vào đó, ta sẽ phải sử dụng lượng giác để tách trọng lực 
+
+90
+00:05:55,550 --> 00:06:00,850
+thành hai lực thành phần vuông góc nhau: 
+phần thứ nhất hướng song song mặt nghiêng, phần thứ hai hướng vào phía trong mặt nghiêng đó.
+
+91
+00:06:00,850 --> 00:06:04,400
+Lúc này, phản lực sẽ cân bằng với lực thành phần thứ hai,
+
+92
+00:06:04,399 --> 00:06:06,169
+là phần hướng vào phía trong mặt nghiêng
+
+93
+00:06:06,170 --> 00:06:09,240
+Sau đây là cách tách lực và vẽ sơ đồ:
+
+94
+00:06:09,240 --> 00:06:13,720
+Góc tạo bởi trọng lực và thành phần lực thứ hai - hướng vào phía trong mặt nghiêng- được gọi là theta.
+
+95
+00:06:13,720 --> 00:06:16,200
+Và nó bằng độ nghiêng của mặt nghiêng.
+
+96
+00:06:16,199 --> 00:06:20,279
+Chúng tạo thành hai cạnh của một tam giác. Và vì thành phần lực thứ hai là cạnh kề với góc theta,
+
+97
+00:06:20,279 --> 00:06:25,979
+nên độ lớn của nó sẽ bằng (mg) x (cos góc theta)
+
+98
+00:06:25,980 --> 00:06:27,490
+-- và độ lớn của phản lực cũng như vậy.
+
+99
+00:06:27,490 --> 00:06:31,110
+Lực thành phần còn lại, hướng SONG SONG mặt nghiêng, là cạnh ĐỐI của góc theta.
+
+100
+00:06:31,110 --> 00:06:36,730
+Nên, tiếp tục dùng lượng giác, ta có độ lớn của nó bằng (mg) x (sin góc theta).
+
+101
+00:06:36,730 --> 00:06:41,360
+Vậy là, bạn đã vẽ được sơ đồ lực, đã xác định các hệ trục,
+
+102
+00:06:41,360 --> 00:06:44,259
+và tách trọng lực thành các lực thành phần.
+
+103
+00:06:44,259 --> 00:06:47,849
+Bây giờ ta có thể vận dùng các phương trình lực.
+
+104
+00:06:47,850 --> 00:06:50,210
+Đã tới lúc dùng tới định luật 2 Newton, F(net) =ma -- rồi.
+
+105
+00:06:50,209 --> 00:06:54,750
+Ta sẽ vận dụng nó hai lần -- một cho trục x, hướng dọc xuống mặt nghiêng, 
+
+106
+00:06:54,750 --> 00:06:56,569
+và một cho trục y, hướng vào bên trong mặt nghiêng.
+
+107
+00:06:56,569 --> 00:06:59,740
+Giả sử bạn đã chuyển kệ sách tới đúng nơi rồi, và bây giờ bạn cần chuyển thứ gì đó
+
+108
+00:06:59,740 --> 00:07:06,579
+ra khỏi xe tải trở đồ -- lần này, là một thùng nặng 40kg chứa bình rất dễ vỡ bên trong.
+
+109
+00:07:06,579 --> 00:07:09,889
+Thùng đó nặng, nên bạn dùng một mặt phẳng nghiêng để đưa nó xuống mặt đất từ phía sau xe tải.
+
+110
+00:07:09,889 --> 00:07:15,788
+Độ nghiêng của mặt phẳng nghiêng là 30 độ -- và sau đó bạn đi uống một cốc nước.
+
+111
+00:07:15,790 --> 00:07:21,819
+Và bạn cũng biết hệ số ma sát nghỉ giữa chiếc thùng và mặt nghiêng là 0.50
+
+112
+00:07:21,819 --> 00:07:23,529
+Gia tốc của chiếc thùng là bao nhiêu?
+
+113
+00:07:23,529 --> 00:07:28,139
+Nếu gia tốc bằng 0, chiếc thùng sẽ đứng yên đó và bạn có thể yên tâm về chiếc bình khi đi uống nước.
+
+114
+00:07:28,139 --> 00:07:33,079
+Nếu không, chiếc thùng sẽ bắt đầu trượt xuống mặt nghiêng và bạn gặp phải một vấn đề.
+
+115
+00:07:33,079 --> 00:07:36,839
+Đầu tiên ta cần vẽ một sơ đồ biểu diễn lực tác dụng lên chiếc thùng.
+
+116
+00:07:36,839 --> 00:07:41,399
+Về tọa độ, ta có trục x song song mặt nghiêng, chiều dương hướng xuống,
+
+117
+00:07:41,399 --> 00:07:46,719
+và trục y vuông góc với mặt nghiêng, chiều dương cũng hướng xuống dưới.
+
+118
+00:07:46,730 --> 00:07:48,600
+Và ta có rất nhiều lực ở đây:
+
+119
+00:07:48,600 --> 00:07:50,590
+Phản lực hướng lệch lên khỏi mặt nghiêng.
+
+120
+00:07:50,589 --> 00:07:54,709
+Có cả lực ma sát nghỉ, lúc này đang hướng lên phía trên song song mặt nghiêng --
+
+121
+00:07:54,709 --> 00:07:58,699
+vì nó ngăn cản phần trọng lực kéo chiếc thùng trượt xuống.
+
+122
+00:07:58,699 --> 00:08:01,899
+Nói đến đây, trọng lực lúc này đang hướng thẳng xuống,
+
+123
+00:08:01,899 --> 00:08:06,560
+KHÔNG song song với trục x và y, nên ta tách nó thành hai lực thành phần:
+
+124
+00:08:06,560 --> 00:08:12,459
+(mg)(cos)(theta) hướng vào phía trong mặt nghiêng và
+(mg)(sin)(theta) hướng xuống dưới song song với mặt nghiêng.
+
+125
+00:08:12,459 --> 00:08:15,209
+Bây giờ ta sẽ xây dựng phương trình lực tổng hợp theo mỗi trục:
+
+126
+00:08:15,209 --> 00:08:18,789
+Chiếc thùng không di chuyển theo chiều trục y,
+
+127
+00:08:18,790 --> 00:08:20,810
+nó sẽ không tự nhiên bay lên khỏi bề mặt của mặt nghiêng phải không?
+
+128
+00:08:20,810 --> 00:08:26,339
+Do đó tất cả các lực tác dụng có phương song song với trục y, tổng hợp lại sẽ bằng 0, vì chúng cân bằng với nhau.
+
+129
+00:08:26,339 --> 00:08:30,189
+Nhưng các lực có phương song song trục x, song song với mặt nghiêng, lại là một chuyện khác.
+
+130
+00:08:30,189 --> 00:08:36,779
+Nếu chiếc thùng không chuyển động (nó đứng yên, hoặc trượt với vận tốc đều) thì tổng hợp các lực theo trục x cũng sẽ bằng 0.
+
+131
+00:08:36,779 --> 00:08:41,759
+Nhưng chiếc thùng CÓ gia tốc theo phương song song mặt nghiêng, nên các lực sẽ bằng khối lượng thùng nhân gia tốc.
+
+132
+00:08:41,759 --> 00:08:47,039
+Do đó, để biết được chiếc thùng có trượt xuống hay không, ta cần xem lực thành phần của trọng lực có tác dụng kéo chiếc thùng xuống, 
+
+133
+00:08:47,039 --> 00:08:52,919
+ (mg)(sin)(theta), có lớn hơn lực ma sát nghỉ cực đại chống lại nó hay không.
+
+134
+00:08:52,929 --> 00:08:58,438
+Nói cách khác: Nếu chiều hướng xuống mặt nghiêng là chiều dương, vậy tổng hợp các lực sẽ dương hay bằng không?
+
+135
+00:08:58,438 --> 00:09:03,578
+Các lực ở đây gồm lực thành phần của trọng lực kéo chiếc thùng xuống mặt nghiêng, (mg)(sin)(theta),
+
+136
+00:09:03,578 --> 00:09:08,620
+và lực ma sát nghỉ cực đại. Nhưng ta sẽ viết lực ma sát nghỉ cực đại là một số âm,
+
+137
+00:09:08,620 --> 00:09:12,389
+vì nó hướng theo chiều âm đối với trục x -- nghĩa là nó hướng lên trên dọc mặt nghiêng.
+
+138
+00:09:12,389 --> 00:09:14,688
+Cộng hai lực đó lại với nhau, ta thu được phương trình sau.
+
+139
+00:09:14,688 --> 00:09:18,288
+Nhân các giá trị (mg)(sin)(theta),
+
+140
+00:09:18,288 --> 00:09:22,179
+Ta thu được kết quả 196.20 Newtons.
+
+141
+00:09:22,179 --> 00:09:26,659
+Và độ lớn lực ma sát nghỉ cực đại tính bằng (hệ số ma sát nghỉ) x độ lớn (phản lực)
+
+142
+00:09:26,669 --> 00:09:33,588
+Và ta thủ được kết quả 169.91 Newtons.
+
+143
+00:09:33,589 --> 00:09:37,100
+Điều đó nghĩa là, cộng hai lực lại ta thu được kết quả 26.29 Newtons.
+
+144
+00:09:37,100 --> 00:09:41,820
+Vậy là có một lực tổng hợp đang kéo chiếc thùng trượt xuống mặt nghiêng, vậy là chiếc thùng sẽ trượt xuống.
+
+145
+00:09:41,828 --> 00:09:44,488
+Điều đó nghĩa là tôi có vài tin xấu cho chiếc bình của bạn...
+
+146
+00:09:44,489 --> 00:09:46,920
+Nhưng hôm nay, bạn đã biết về hai loại lực ma sát:
+
+147
+00:09:46,919 --> 00:09:51,378
+Ma sát động và ma sát nghỉ, cách chúng chống lại các lực.
+
+148
+00:09:51,379 --> 00:09:55,308
+Chúng ta cũng đã nói về cách dùng lực ma sát để miêu tả chuyển động của một vật.
+
+149
+00:09:55,308 --> 00:09:59,068
+Bao gồm cả cách tính độ lớn phản lực khi một vật nằm trên một mặt phẳng nghiêng.
+
+150
+00:09:59,068 --> 00:10:02,578
+Cuối cùng, ta đã tính toán để biết được một chiếc thùng có trượt xuống một mặt phẳng nghiêng hay không.
+
+151
+00:10:02,578 --> 00:10:06,338
+Tập hôm nay của Crash Course Vật Lý được hỗ trợ bởi Audible.com
+
+152
+00:10:06,339 --> 00:10:12,559
+Ngay bây giờ, AUDIBLE đang có một đợt thử dùng miễn phí 30 ngày. HÃY truy cập audible.com/crashcourse.
+
+153
+00:10:12,559 --> 00:10:18,158
+Các bạn có thể truy cập vào các file audio, các tựa sách như cuốn sách NÀY - The Tao of Physics bởi Freetyoff Capra.
+
+154
+00:10:18,158 --> 00:10:22,879
+Tôi định sẽ nghe nó trên chuyến bay về nhà tuần này... Sẽ là một chuyến bay dài.
+
+155
+00:10:22,879 --> 00:10:29,679
+Hãy truy cập vào audible.com/crashcourse -- và hãy chắc chắn bạn sẽ dùng link đó để giúp chúng tôi, trở thành thành viên và dùng thử.
+
+156
+00:10:29,679 --> 00:10:33,719
+Crash Course Vật Lý được sản xuất cộng tác với PBS Digital Studios.
+
+157
+00:10:33,720 --> 00:10:39,639
+Các bạn có thể truy cập kênh của họ để khám phá những shows thú vị như Deep Look, The Good Stuff, và PBS Space Time.
+
+158
+00:10:39,639 --> 00:10:44,139
+Tập này của Crash Course được thực hiện tại
+Crash Course Studio của Tiến sĩ  
+
+159
+00:10:44,139 --> 00:10:48,318
+cùng với sự giúp đỡ của những người tuyệt vời này và đội ngũ graphics Thought Cafe.
+

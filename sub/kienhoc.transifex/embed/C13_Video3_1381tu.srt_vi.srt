@@ -1,0 +1,649 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/5LveKTMGuEM
+
+1
+00:00:00,000 --> 00:00:00,460
+
+2
+00:00:00,460 --> 00:00:01,876
+DR. JONATHAN VALVANO: Hey, Ramesh.
+
+3
+00:00:01,876 --> 00:00:03,360
+Let's build something.
+
+4
+00:00:03,360 --> 00:00:05,550
+DR. RAMESH YERRABALLI:
+OK, so let's build a DAC.
+
+5
+00:00:05,550 --> 00:00:07,390
+Remember what a DAC does.
+
+6
+00:00:07,390 --> 00:00:11,440
+A DAC is a digital to
+analog converter, which
+
+7
+00:00:11,440 --> 00:00:17,010
+means when I have my microcontroller
+produce a digital value,
+
+8
+00:00:17,010 --> 00:00:22,090
+we write to the DAC and the
+DAC produces an analog value.
+
+9
+00:00:22,090 --> 00:00:29,580
+So maybe it produces one
+particular value on a signal.
+
+10
+00:00:29,580 --> 00:00:30,960
+Some signal.
+
+11
+00:00:30,960 --> 00:00:33,510
+So, we want to see how to do this.
+
+12
+00:00:33,510 --> 00:00:39,390
+And we will do this by
+using this circuit for it.
+
+13
+00:00:39,390 --> 00:00:43,180
+There are two designs that we
+can do for the analog circuit.
+
+14
+00:00:43,180 --> 00:00:52,960
+One is a binary-weighted circuit.
+
+15
+00:00:52,960 --> 00:01:03,800
+The other, which is more popular in
+systems, is an R-2R ladder circuit.
+
+16
+00:01:03,800 --> 00:01:09,010
+The binary weighted design is
+intuitive, so we will do this first.
+
+17
+00:01:09,010 --> 00:01:11,810
+
+18
+00:01:11,810 --> 00:01:23,690
+So our goal is to produce
+a signal, so we've said.
+
+19
+00:01:23,690 --> 00:01:29,090
+Let's say we're working
+with a three bit DAC, which
+
+20
+00:01:29,090 --> 00:01:34,890
+means that I have eight levels.
+
+21
+00:01:34,890 --> 00:01:38,310
+So our precision-- so
+we have a three bit DAC.
+
+22
+00:01:38,310 --> 00:01:49,200
+We have eight levels, and the eight
+levels are from zero to the seven.
+
+23
+00:01:49,200 --> 00:01:59,180
+And we are going to write that down
+here- 0, 1, 2, 3, 4, 5, 6, and 7.
+
+24
+00:01:59,180 --> 00:02:02,290
+And we want to produce a voltage.
+
+25
+00:02:02,290 --> 00:02:11,190
+And let's assume our voltages
+are between 0 and 3.3 volts.
+
+26
+00:02:11,190 --> 00:02:17,540
+So we want to use an analog
+value-- this is our digital--
+
+27
+00:02:17,540 --> 00:02:20,330
+and we want to produce
+an analog value, Vout,
+
+28
+00:02:20,330 --> 00:02:25,690
+which ranges between 0 and 3.3 volts.
+
+29
+00:02:25,690 --> 00:02:30,240
+Well, each of these then
+will be a fraction of that.
+
+30
+00:02:30,240 --> 00:02:43,590
+So this will have a value
+of the 3.3 times 1 over 7.
+
+31
+00:02:43,590 --> 00:02:50,220
+This will be 3.3 times
+2 over 7, and so on.
+
+32
+00:02:50,220 --> 00:02:53,760
+So when we get here, it'll
+be 3.3 times 7 over 7.
+
+33
+00:02:53,760 --> 00:02:54,840
+That will be my voltage.
+
+34
+00:02:54,840 --> 00:02:58,092
+So that's my behavior
+that I want to get.
+
+35
+00:02:58,092 --> 00:03:00,550
+DR. JONATHAN VALVANO: So what's
+the resolution of this DAC?
+
+36
+00:03:00,550 --> 00:03:03,980
+DR. RAMESH YERRABALLI: So, as we see
+the smallest change we can capture
+
+37
+00:03:03,980 --> 00:03:08,590
+is a difference between consecutive
+values, which in our case
+
+38
+00:03:08,590 --> 00:03:11,720
+is 3.3 divided by 7.
+
+39
+00:03:11,720 --> 00:03:18,030
+So our resolution delta
+is 3.3 divided by 7.
+
+40
+00:03:18,030 --> 00:03:20,710
+And our precision, again, is eight.
+
+41
+00:03:20,710 --> 00:03:23,120
+So that's the design we're looking for.
+
+42
+00:03:23,120 --> 00:03:25,820
+So let's design this.
+
+43
+00:03:25,820 --> 00:03:28,996
+So again, here is our
+schematic, microcontroller.
+
+44
+00:03:28,996 --> 00:03:32,870
+
+45
+00:03:32,870 --> 00:03:35,030
+And we're going to use
+three bits for now.
+
+46
+00:03:35,030 --> 00:03:35,850
+It doesn't matter.
+
+47
+00:03:35,850 --> 00:03:41,170
+I'm going to call them bit
+two, bit one, bit zero.
+
+48
+00:03:41,170 --> 00:03:48,340
+So this is our bit two,
+bit one, and bit zero.
+
+49
+00:03:48,340 --> 00:03:51,380
+So, we're going to use
+the three bits, and we're
+
+50
+00:03:51,380 --> 00:03:57,050
+going to produce our output,
+which is going to be our Vout.
+
+51
+00:03:57,050 --> 00:04:05,170
+And the way we're going to do that
+is we're going to connect resistors.
+
+52
+00:04:05,170 --> 00:04:10,910
+And we make an observation that
+each of these bits-- this bit
+
+53
+00:04:10,910 --> 00:04:14,160
+has a position of one, this
+bit has a position of two,
+
+54
+00:04:14,160 --> 00:04:19,750
+and this bit has a place
+significance, or place value of four.
+
+55
+00:04:19,750 --> 00:04:25,000
+So when we choose our
+resistors, we will choose them
+
+56
+00:04:25,000 --> 00:04:28,520
+in that ratio, which
+is 4 is to 2 is to 1.
+
+57
+00:04:28,520 --> 00:04:38,480
+So we will use the-- bit two will
+have 11 K, we'll have 22 K here,
+
+58
+00:04:38,480 --> 00:04:42,240
+and this will be a 44 K
+
+59
+00:04:42,240 --> 00:04:45,150
+DR. JONATHAN VALVANO: So which one
+is twice as much as the other one?
+
+60
+00:04:45,150 --> 00:04:48,550
+DR. RAMESH YERRABALLI:
+So bit zero is-- remember
+
+61
+00:04:48,550 --> 00:04:51,580
+that bit zero has a place value of one.
+
+62
+00:04:51,580 --> 00:04:57,040
+So the resistance, that is, whatever
+signal comes out of here for a one
+
+63
+00:04:57,040 --> 00:05:01,610
+has half the significance as bit one.
+
+64
+00:05:01,610 --> 00:05:06,720
+So in order to do that, we
+subject it to a higher resistance.
+
+65
+00:05:06,720 --> 00:05:12,420
+And so the lower the significance,
+the higher the resistance.
+
+66
+00:05:12,420 --> 00:05:17,700
+So bit two has the highest significance,
+so it has the least resistance, which
+
+67
+00:05:17,700 --> 00:05:24,090
+is 11 K. And notice the ratio
+between these three is 11 is to 22
+
+68
+00:05:24,090 --> 00:05:31,390
+is to 44, which is 1 is to 2 is to
+4, which is exactly what we want.
+
+69
+00:05:31,390 --> 00:05:35,720
+So let's analyze this circuit
+to see how it behaves.
+
+70
+00:05:35,720 --> 00:05:38,660
+So let's take our table again.
+
+71
+00:05:38,660 --> 00:05:42,645
+This is our N. This is the bit values.
+
+72
+00:05:42,645 --> 00:05:48,510
+And I'm going to represent
+them by Q2, Q1, and Q0,
+
+73
+00:05:48,510 --> 00:05:51,000
+which is basically what I see here.
+
+74
+00:05:51,000 --> 00:05:54,660
+Q2, Q1, and Q0.
+
+75
+00:05:54,660 --> 00:06:08,070
+So, if I have zero, this is a
+0, 0, 0, and this is my Vout.
+
+76
+00:06:08,070 --> 00:06:15,610
+Now if I have an N value of
+one, then what I have is 0,
+
+77
+00:06:15,610 --> 00:06:19,400
+0, 1, which makes this
+a 0, this a 0, and this
+
+78
+00:06:19,400 --> 00:06:25,610
+is a 3.3 volts-- I'm going to
+make because I have a one here.
+
+79
+00:06:25,610 --> 00:06:31,230
+And similarly, I have a
+two, which is a 0, 1, 0,
+
+80
+00:06:31,230 --> 00:06:43,060
+so that's 3.3, and 0, and three
+which is 0, 3.3, and 3.3, and so on.
+
+81
+00:06:43,060 --> 00:06:44,740
+And I'm just going to write one more.
+
+82
+00:06:44,740 --> 00:06:51,860
+Four, which is 3.3, 0, and 0.
+
+83
+00:06:51,860 --> 00:06:56,810
+And so on, all the way up to
+seven, which is all three bits
+
+84
+00:06:56,810 --> 00:07:01,730
+are on- 3.3, 3.3, and 3.3.
+
+85
+00:07:01,730 --> 00:07:04,080
+So we'll calculate how our Vout is.
+
+86
+00:07:04,080 --> 00:07:08,660
+So first, I'm going to do an
+analysis for one of these.
+
+87
+00:07:08,660 --> 00:07:13,130
+So let's do an analysis of our four.
+
+88
+00:07:13,130 --> 00:07:16,430
+
+89
+00:07:16,430 --> 00:07:25,580
+So the circuit for this situation is
+we have a 3.3 here, a 0 here, and a 0
+
+90
+00:07:25,580 --> 00:07:29,370
+here, which gives us a
+equivalent circuit-- I'm
+
+91
+00:07:29,370 --> 00:07:35,730
+going to draw the equivalent circuit
+here, which is our 11K with a 3.3.
+
+92
+00:07:35,730 --> 00:07:42,650
+And we have these two,
+which are in parallel,
+
+93
+00:07:42,650 --> 00:07:46,580
+and they connect to our zero volts.
+
+94
+00:07:46,580 --> 00:07:50,440
+And we want to find out what Vout is.
+
+95
+00:07:50,440 --> 00:07:54,830
+And Vout is with respect to zero,
+so we want to find out this voltage.
+
+96
+00:07:54,830 --> 00:08:01,040
+So if I were to convert this--
+and remember these are 22 K,
+
+97
+00:08:01,040 --> 00:08:05,940
+and this is a 44 K. So if
+I were to convert this,
+
+98
+00:08:05,940 --> 00:08:16,880
+the equivalent circuit looks like
+this, where I have 22 times 44.
+
+99
+00:08:16,880 --> 00:08:22,410
+Remember these are in
+parallel by 22 plus 44, which
+
+100
+00:08:22,410 --> 00:08:29,870
+gives me a value of 44 by three kilohms.
+
+101
+00:08:29,870 --> 00:08:35,700
+OK, so I have 44 by 3
+here, and I have 11 K
+
+102
+00:08:35,700 --> 00:08:39,945
+they are in series, and what
+I have is a voltage divider.
+
+103
+00:08:39,945 --> 00:08:42,620
+
+104
+00:08:42,620 --> 00:08:49,630
+So I know that Vout is going
+to be given by a value, which
+
+105
+00:08:49,630 --> 00:09:00,970
+is 44 by 3 divided by 11 plus 44
+by 3 times 3.3, which comes out
+
+106
+00:09:00,970 --> 00:09:07,060
+to be 4 over 7 times 3.3.
+
+107
+00:09:07,060 --> 00:09:13,600
+So that's my 4 over 7 times 3.3.
+
+108
+00:09:13,600 --> 00:09:22,240
+Now it's a good idea to do one where--
+there are two of them that have a one.
+
+109
+00:09:22,240 --> 00:09:31,550
+So let's take this example of three,
+which says now my equivalent circuit is
+
+110
+00:09:31,550 --> 00:09:41,400
+going to be one where I have a 0
+here, a 3.3 here, and a 3.3 here.
+
+111
+00:09:41,400 --> 00:09:45,710
+So now I have this
+circuit, which is my 0.
+
+112
+00:09:45,710 --> 00:09:48,300
+
+113
+00:09:48,300 --> 00:09:53,496
+And I'm going to draw it
+this way-- let me clear it.
+
+114
+00:09:53,496 --> 00:09:58,770
+
+115
+00:09:58,770 --> 00:10:10,090
+So the equivalent circuit is this,
+where I have my two resistances, which
+
+116
+00:10:10,090 --> 00:10:19,220
+are 22 K and the 44 K, which
+are in parallel with 11 K.
+
+117
+00:10:19,220 --> 00:10:23,100
+And 11 K is at 0 volts.
+
+118
+00:10:23,100 --> 00:10:28,480
+One end of it is at 0 volts,
+and this is my 3.3 volts,
+
+119
+00:10:28,480 --> 00:10:31,010
+and I want to find out
+what the voltage here
+
+120
+00:10:31,010 --> 00:10:34,050
+is, which is my Vout,
+which, by the way, is
+
+121
+00:10:34,050 --> 00:10:38,070
+the voltage across the resistance, 11 K.
+
+122
+00:10:38,070 --> 00:10:43,150
+So, again, my circuit is similar
+because we already calculated it.
+
+123
+00:10:43,150 --> 00:10:50,690
+So this is a 44 by 3, this is
+11 K, and this is my V out,
+
+124
+00:10:50,690 --> 00:10:56,250
+and that's 3.3 and 0 volts.
+
+125
+00:10:56,250 --> 00:10:57,810
+And so it's a voltage divided.
+
+126
+00:10:57,810 --> 00:11:05,920
+But now my Vout is given
+by 11 divided by 11 plus 44
+
+127
+00:11:05,920 --> 00:11:18,350
+by 3 times 3.3, which gives me a
+3 over 7 times 3.3 volts, which
+
+128
+00:11:18,350 --> 00:11:24,350
+is 3 over 7 times 3.3 volts.
+
+129
+00:11:24,350 --> 00:11:28,950
+So similarly, we can fill
+in the rest of my analysis.
+
+130
+00:11:28,950 --> 00:11:39,220
+So this is a three bit DAC
+using a weighted design.
+
+131
+00:11:39,220 --> 00:11:42,380
+DR. JONATHAN VALVANO: So Professor
+Yerraballi, what will they do in lab?
+
+132
+00:11:42,380 --> 00:11:45,800
+DR. RAMESH YERRABALLI: So in the lab,
+you will take this idea of the design
+
+133
+00:11:45,800 --> 00:11:50,590
+and extend it to four bits, which means
+that you will add an extra bit, which
+
+134
+00:11:50,590 --> 00:11:56,990
+is B3, and you will make
+a four bit DAC, which
+
+135
+00:11:56,990 --> 00:11:59,270
+will be much better,
+because it'll be better
+
+136
+00:11:59,270 --> 00:12:02,510
+at more levels, more
+precision, more resolution.
+
+137
+00:12:02,510 --> 00:12:05,720
+Therefore, when we
+hook it up to a sound,
+
+138
+00:12:05,720 --> 00:12:08,580
+you can produce really
+high quality sound.
+
+139
+00:12:08,580 --> 00:12:10,602
+DR. JONATHAN VALVANO: Ah, sweet.
+
+140
+00:12:10,602 --> 00:12:11,102

@@ -1,0 +1,517 @@
+0
+00:00:05,105 --> 00:00:07,110
+Giờ chúng ta sẽ thực hành.
+
+2
+00:00:08,100 --> 00:00:09,110
+Chúng ta có 3 công ty.
+
+3
+00:00:09,110 --> 00:00:12,178
+Các bạn có dữ liệu của 3 công ty.
+
+4
+00:00:12,178 --> 00:00:14,860
+Danh mục đầu tư của các bạn có 3 công ty.
+
+5
+00:00:14,860 --> 00:00:19,420
+Để đơn giản chúng ta sẽ xét lần lượt từng công ty này.
+
+6
+00:00:19,420 --> 00:00:24,800
+Có một thứ quan trọng tôi quên nhắc,
+dó là 3 công ty này có tỉ lệ như nhau trong danh mục.
+
+7
+00:00:24,800 --> 00:00:27,913
+Vì thế mỗi công ty sẽ chiếm tỉ lệ 1/3 trong danh mục.
+
+8
+00:00:27,913 --> 00:00:30,974
+Các bạn có thể chọn tỉ lệ khác cũng được.
+
+9
+00:00:30,974 --> 00:00:33,976
+Đó là sự đa dạng trong danh mục đầu tư.
+
+10
+00:00:33,976 --> 00:00:38,995
+Ví dụ, tôi có 3 công ty trong danh mục đầu tư nhưng
+
+11
+00:00:38,995 --> 00:00:44,970
+tôi chỉ dồn hết vốn của mình cho 1 công ty.
+Hoàn toàn không có sự đa dạng hóa, đúng không?
+
+12
+00:00:44,970 --> 00:00:48,894
+Lãi suất trung bình của 3 công ty là bao nhiêu?
+
+13
+00:00:48,894 --> 00:00:51,254
+Tôi sẽ viết công thức ra.
+
+14
+00:00:51,254 --> 00:00:54,880
+Công thức khá là đơn giản.
+
+15
+00:00:54,880 --> 00:01:00,182
+2.18, chúng ta dã tính rồi.
+3.25 cũng vậy.
+
+16
+00:01:00,182 --> 00:01:05,490
+2.26, các bạn tính số này trong lúc tôi ghi.
+
+17
+00:01:07,245 --> 00:01:08,786
+Chỉ là hàm trung bình thôi.
+
+18
+00:01:11,745 --> 00:01:15,848
+Lãi suất trung bình của danh mục đầu tư của 3 công ty là gi?
+
+19
+00:01:15,848 --> 00:01:20,710
+Nếu bạn có danh mục đầu tư này, bạn sẽ làm gì?
+
+20
+00:01:21,850 --> 00:01:24,729
+Tạo một cột mới kí hiệu là Rp.
+
+21
+00:01:26,836 --> 00:01:33,455
+Sau đó tính Rp= R1/3 + R2/3 + R3/3.
+
+22
+00:01:33,455 --> 00:01:39,510
+Những đại lượng này ở 3 cột kia, thấy không?
+
+23
+00:01:39,510 --> 00:01:42,810
+Các bạn đi từ dòng số 2 vì đó là dữ liệu của công ty đầu tiên.
+
+24
+00:01:42,810 --> 00:01:45,710
+c2, d2, e2.
+
+25
+00:01:45,710 --> 00:01:47,030
+ Đó là của danh mục đầu tư.
+
+26
+00:01:47,030 --> 00:01:50,980
+Các bạn hãy chọn số đầu tiên trong cột.
+
+27
+00:01:50,980 --> 00:01:52,880
+ Nó ở dòng thứ hai.
+
+28
+00:01:52,880 --> 00:01:54,950
+Sau đó kéo xuống hàng thứ 61.
+
+29
+00:01:54,950 --> 00:01:59,570
+Các bạn đã có kết quả từ dòng thứ 2 xuống dòng thứ 61.
+
+30
+00:02:01,160 --> 00:02:04,700
+Tôi hi vọng các bạn hiểu tôi đang nói gì vì
+
+31
+00:02:04,700 --> 00:02:08,370
+thì không phải lúc nào tôi cũng ghi hết mọi thứ ra.
+
+32
+00:02:08,370 --> 00:02:13,083
+Và các bạn cũng chủ động tham gia bài học hơn là
+
+33
+00:02:13,083 --> 00:02:15,290
+chỉ ngồi xem video bài giảng.
+
+34
+00:02:15,290 --> 00:02:18,842
+Điều đó cũng tốt nếu như nó giúp các bạn tiếp thu nhanh hơn.
+
+35
+00:02:18,842 --> 00:02:20,724
+Lãi suất trung bình của danh mục đầu tư là bao nhiêu?
+
+36
+00:02:20,724 --> 00:02:24,065
+Các bạn xét danh mục đầu tư rồi tính lãi suất trung bình.
+
+37
+00:02:24,065 --> 00:02:30,656
+Kết quả tính ra là 2.56%
+
+38
+00:02:30,656 --> 00:02:32,982
+VÌ chúng ta đã tính ở phần trước rồi
+
+39
+00:02:32,982 --> 00:02:34,616
+nên chúng ta sẽ phân tích nó.
+
+40
+00:02:34,616 --> 00:02:37,829
+Số này có liên hệ gì với những đại lượng này?
+
+41
+00:02:40,501 --> 00:02:49,028
+Câu trả lời là chúng đều như nhau.
+
+42
+00:02:49,028 --> 00:02:49,783
+Tại sao?
+
+43
+00:02:49,783 --> 00:02:54,887
+Vì giá trị trung bình có tính chất tuyến tính, và danh mục đầu tư 
+
+44
+00:02:54,887 --> 00:03:02,240
+gồm 3 công ty cũng vậy, nên trong trường hợp này các số này có tính chất như nhau.
+
+45
+00:03:03,710 --> 00:03:04,670
+Các bạn hiểu chứ?
+
+46
+00:03:04,670 --> 00:03:07,574
+Các bạn tính xong, ngồi ngẫm nghĩ một tí và sẽ thấy tôi nói có lý.
+
+47
+00:03:07,574 --> 00:03:12,229
+Kết quả của chúng ta là 2.18, 2.26 và 3.25, số cuối cùng chênh lệch hơi nhiều.
+
+48
+00:03:12,229 --> 00:03:19,000
+Đáp án cuối cùng của chúng ta nằm trong khoảng từ 2.26 và 3.15.
+
+49
+00:03:19,000 --> 00:03:21,240
+Kết quả cuối cùng là 2.56.
+
+50
+00:03:21,240 --> 00:03:24,410
+Giả sử như các bạn tính sai, thì các bạn sẽ làm gì?
+
+51
+00:03:24,410 --> 00:03:28,304
+Chúng ta sẽ sửa lại, không có gì phải lo.
+
+52
+00:03:28,304 --> 00:03:31,516
+Sai về mặt khái niệm thì đó mới là vấn đề.
+
+53
+00:03:31,516 --> 00:03:36,150
+Tôi cũng ít khi sai lắm vì tôi luôn kiểm tra kĩ lưỡng nhưng
+
+54
+00:03:36,150 --> 00:03:38,080
+tất nhiên là đôi lúc tôi cũng bỏ qua vài chỗ.
+
+55
+00:03:39,110 --> 00:03:41,780
+Nếu sai thì các bạn cứ sửa rồi theo dõi bài tiếp.
+
+56
+00:03:41,780 --> 00:03:45,540
+Đó là cái hay của thế giới kĩ thuật số.
+
+57
+00:03:45,540 --> 00:03:49,600
+Trong khi đó ở thế giới thực, chẳng hạn tôi nói sai chỗ nào đó
+
+58
+00:03:49,600 --> 00:03:55,070
+trong một lớp gồm 50 sinh viên, liệu rằng
+
+59
+00:03:55,070 --> 00:04:00,030
+lớp có hiểu được ý của tôi không?
+
+60
+00:04:01,070 --> 00:04:03,260
+Chưa kể đến là tôi có ít cơ hội để sửa sai.
+
+61
+00:04:03,260 --> 00:04:06,060
+Và đó cũng là một lợi thế khác của việc giáo dục qua mạng.
+
+62
+00:04:06,060 --> 00:04:07,740
+ 
+
+63
+00:04:07,740 --> 00:04:10,800
+Bây giờ chúng ta sẽ qua phần phương sai.
+
+64
+00:04:12,020 --> 00:04:17,071
+Tôi cho rằng các bạn đã lập danh mục đầu tư gồm 3 công ty
+
+65
+00:04:17,071 --> 00:04:22,443
+ở cột 2 đến cột 61.
+
+66
+00:04:22,443 --> 00:04:24,863
+Rủi ro của 3 công ty là bao nhiêu?
+
+67
+00:04:24,863 --> 00:04:29,290
+Giờ chúng ta sẽ tính rủi ro theo phương sai.
+
+68
+00:04:29,290 --> 00:04:30,706
+Giờ chúng ta sẽ viết công thức tính phương sai ra trước.
+
+69
+00:04:30,706 --> 00:04:35,820
+Sigma bình phương.
+0.0127.
+
+70
+00:04:35,820 --> 00:04:40,934
+Sigma 2 bình phương.
+0.0102.
+
+71
+00:04:40,934 --> 00:04:44,002
+Sigma 3 bình phương.
+
+72
+00:04:44,002 --> 00:04:48,616
+Cái này không lâu đâu.
+
+73
+00:04:52,119 --> 00:04:56,519
+Quên, 116 mới đúng.
+
+74
+00:04:56,519 --> 00:04:58,560
+Các bạn sẽ dùng hàm nào?
+
+75
+00:04:59,610 --> 00:05:02,607
+Đó là hàm VAR.S.
+
+76
+00:05:02,607 --> 00:05:06,380
+S là bởi vì các bạn đang tính cho dữ liệu mẫu.
+
+77
+00:05:06,380 --> 00:05:09,000
+Chúng ta không có hết toàn bộ dữ liệu của tất cả công ty.
+
+78
+00:05:09,000 --> 00:05:10,690
+Việc đó hầu như là bất khả thi, đúng không?
+
+79
+00:05:10,690 --> 00:05:13,210
+Các bạn đã tính xong 3 công ty rồi.
+
+80
+00:05:14,570 --> 00:05:17,248
+Rủi ro của danh mục đầu tư gồm 3 công ty này bằng bao nhiêu?
+
+81
+00:05:17,248 --> 00:05:22,663
+Tính cái này rất dễ nếu như các bạn đã tính lãi suất của danh mục đầu tư,
+
+82
+00:05:22,663 --> 00:05:25,022
+mà tôi nghĩ là các bạn cũng đã tính rồi.
+
+83
+00:05:25,022 --> 00:05:32,581
+Kết quả tính ra là 0.0053.
+
+84
+00:05:32,581 --> 00:05:35,093
+Rủi ro của danh mục đầu tư này bằng bao nhiêu?
+
+85
+00:05:35,093 --> 00:05:37,180
+0.0053.
+
+86
+00:05:37,180 --> 00:05:38,370
+Tôi tính bằng cách nào?
+
+87
+00:05:38,370 --> 00:05:43,520
+Tôi bấm vào ô đầu tiên trong cột, nhập hàm VAR, sau đó
+
+88
+00:05:43,520 --> 00:05:48,460
+kéo từ dòng thứ 2 đến dòng 61 ở 3 công ty mà các bạn đã tạo.
+
+89
+00:05:48,460 --> 00:05:50,330
+Đầu tiên, hãy tính lãi suất của danh mục đầu tư và
+
+90
+00:05:50,330 --> 00:05:54,480
+rồi hãy tính phương sai, nếu không các bạn sẽ bị tẩu hỏa nhập ma hết.
+
+91
+00:05:54,480 --> 00:05:57,230
+Các bạn phải đưa vào bao nhiêu biến số?
+
+92
+00:05:57,230 --> 00:05:58,370
+9 đúng không?
+
+93
+00:05:59,560 --> 00:06:02,625
+Nó có liên hệ thế nào với 3 công ty?
+
+94
+00:06:02,625 --> 00:06:05,966
+Lãi suất trung binh của 3 công ty rất dễ tính.
+
+95
+00:06:05,966 --> 00:06:11,135
+Chỉ cần lấy trung bình của 3 số lớn nhất
+
+96
+00:06:11,135 --> 00:06:16,949
+Kết quả là 0.0115, cách tính tương tự thì sẽ ra 0.0016.
+
+97
+00:06:16,949 --> 00:06:17,517
+Tại sao à?
+
+98
+00:06:17,517 --> 00:06:23,402
+Bời vì trung bình cộng của 2 công ty đầu tiên đã vào khoảng 0.000114 rồi.
+
+99
+00:06:23,402 --> 00:06:25,560
+Vì vậy kết quả ra sẽ là số đó.
+
+100
+00:06:25,560 --> 00:06:29,701
+Kết quả trung bình cũng thay đổi không nhiều khi tăng số công ty từ 2 lên 3.
+
+101
+00:06:31,230 --> 00:06:35,890
+Các bạn có thể so sánh rủi ro
+
+102
+00:06:35,890 --> 00:06:41,380
+sigma bình phương b với số thứ ba không, 0.0015?
+
+103
+00:06:41,380 --> 00:06:44,720
+Nhỏ hơn đúng không?
+
+104
+00:06:44,720 --> 00:06:48,900
+Số này nhỏ hơn số này.
+
+105
+00:06:48,900 --> 00:06:52,675
+Nhưng câu mà tôi muốn hỏi là 
+
+106
+00:06:52,675 --> 00:06:56,562
+các bạn hãy so sánh số này với danh mục đầu tư gồm công ty 1 và 2.
+
+107
+00:06:59,083 --> 00:07:00,510
+Kết quả ra sao?
+
+108
+00:07:00,510 --> 00:07:04,060
+Tôi nghĩ kết quả là 0.0061.
+
+109
+00:07:04,060 --> 00:07:12,130
+Có một sự giảm sút mạnh khi đi từ 1 qua 2.
+
+110
+00:07:12,130 --> 00:07:20,390
+Sự sụt giảm đó khi đi từ 1,2 sang 1,2,3 không đáng kể.
+
+111
+00:07:20,390 --> 00:07:25,090
+Thêm một điều nữa là danh mục đầu tư của các bạn cũng có sự đa dạng nữa.
+
+112
+00:07:25,090 --> 00:07:27,790
+Đơn giản là vì các bạn đã bắt đầu với 2 công ty,
+
+113
+00:07:27,790 --> 00:07:30,690
+Hệ số tương quan thấp.
+
+114
+00:07:30,690 --> 00:07:34,610
+Sau đó các bạn thêm vào một công ty thứ ba và hệ số tương quan tăng lên.
+
+115
+00:07:34,610 --> 00:07:40,010
+Đó là những lý do mà tôi muốn hỏi khi các bạn tính toán. 
+
+116
+00:07:40,010 --> 00:07:43,200
+Tôi nghĩ tôi hỏi đúng trọng tâm bài học.
+
+117
+00:07:43,200 --> 00:07:47,640
+Dù mục tiêu của các bạn là gì thì tôi vẫn đưa đáp án cho các bạn, có lẽ là hơi kì,
+
+118
+00:07:47,640 --> 00:07:52,680
+nhưng tôi làm vậy để các bạn có số liệu mà so sánh.
+
+119
+00:07:52,680 --> 00:07:55,590
+Cứ nói chuyện lý thuyết hoài thì các bạn sẽ phát chán.
+
+120
+00:07:56,660 --> 00:08:01,872
+Vẻ đẹp của tài chính là ít nhất các bạn cũng tính được các số liệu cho
+
+121
+00:08:01,872 --> 00:08:05,240
+hầu hết các khái niệm mà chúng ta đã học.
+
+122
+00:08:05,240 --> 00:08:08,470
+Theo tôi, bi kịch của tài chính đó là
+
+123
+00:08:08,470 --> 00:08:14,070
+chưa thu hút được nhiều người trong xã hội dến với tài chính
+
+124
+00:08:14,070 --> 00:08:18,720
+đẻ hiêu hơn về việc tạo ra giá trị thông qua quá trình suy luận và học hỏi.
+
+125
+00:08:18,720 --> 00:08:21,610
+Và một phần lý do tôi tham gia các khóa MOOC, hay tôi thích MOOC, là vì
+
+126
+00:08:21,610 --> 00:08:25,600
+tôi hi vọng có thể thay đổi một ít theo cách của mình.
+
+127
+00:08:25,600 --> 00:08:27,720
+Nhưng chúng ta sẽ bàn chuyện đó sau.
+
+128
+00:08:27,720 --> 00:08:28,220
+Chào các bạn.
+

@@ -1,0 +1,12 @@
+XSeries Program Overview
+
+The "Data Science and Engineering with Spark" XSeries, created in partnership with Databricks, will teach students how to perform data science and data engineering at scale using Spark, a cluster computing system well-suited for large-scale machine learning tasks. It will also present an integrated view of data processing by highlighting the various components of data analysis pipelines, including exploratory data analysis, feature extraction, supervised learning, and model evaluation. Students will gain hands-on experience building and debugging Spark applications. Internal details of Spark and distributed machine learning algorithms will be covered, which will provide students with intuition about working with big data and developing code for a distributed environment.
+
+This XSeries requires a programming background and experience with Python (or the ability to learn it quickly). All exercises will use PySpark (the Python API for Spark), but previous experience with Spark or distributed computing is NOT required. Familiarity with basic machine learning concepts and exposure to algorithms, probability, linear algebra and calculus are prerequisites for two of the courses in this series.
+
+What You'll Learn
+1. How to use Spark and its libraries to solve big data problems
+2. How to approach large scale data science and engineering problems
+3. Spark's APIs, architecture and many internal details
+4. The trade-offs between communication and computation in a distributed environment
+5. Use cases for Spark

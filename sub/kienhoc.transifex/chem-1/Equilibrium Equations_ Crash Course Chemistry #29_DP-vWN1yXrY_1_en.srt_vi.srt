@@ -1,0 +1,565 @@
+1
+00:00:00,089 --> 00:00:02,499
+phuongphuong 26/10
+Tuần trước, tôi đã giới thiệu cho các bạn về sự cân bằng, đây chính là bằng chứng,
+
+2
+00:00:02,499 --> 00:00:05,580
+nếu như bạn cần đến, rằng vũ trụ đang cố gắng  chung đụng với ta,
+
+3
+00:00:05,580 --> 00:00:10,280
+bởi dù cho ta nghĩ và đề cập đến các phản ứng hóa học như là một quy trình đơn giản,
+
+4
+00:00:10,279 --> 00:00:12,410
+nhưng cũng có nhiều lúc chúng lại trái ngược những gì ta nghĩ.
+
+5
+00:00:12,410 --> 00:00:16,530
+Cùng một lúc, các chất phản ứng đang kết hợp với nhau để tạo ra các sản phẩm, chẳng hạn như Nitơ và Hydro tác dụng để tạo thành ammonia,
+
+6
+00:00:16,530 --> 00:00:18,800
+hay là Hydro và Flo tác dụng để tạo thành Hydrogen fluorine (HF).
+
+7
+00:00:18,809 --> 00:00:21,769
+Các sản phẩm cũng phân hủy ngược lại thành các chất phản ứng.
+
+8
+00:00:21,769 --> 00:00:23,059
+Vậy có nghĩa là tồn tại một điểm vô cùng thú vị.
+
+9
+00:00:23,059 --> 00:00:28,159
+Một tỉ lệ cụ thể giữa các chất phản ứng với các sản phẩm mà trong đó các sản phẩm hình thành ở cùng tỉ lệ mà chúng phân hủy.
+
+10
+00:00:28,160 --> 00:00:31,618
+Khi một phản ứng đạt đến điểm đó, nó được cho là đang ở trạng thái cân bằng.
+
+11
+00:00:31,618 --> 00:00:32,859
+Như một cú đá vào đầu.
+
+12
+00:00:32,859 --> 00:00:35,119
+Nhưng chắc chắn là bạn hoàn toàn không chịu sự phó mặc của hóa học;
+
+13
+00:00:35,119 --> 00:00:39,049
+bạn có thể tạo nên sự cân bằng hóa học bằng cách thay đổi sự cô đọng của các chất
+
+14
+00:00:39,049 --> 00:00:41,979
+và nhiệt độ của chúng, và nếu chúng là các khí thì là thay đổi áp suất.
+
+15
+00:00:41,979 --> 00:00:45,759
+Ví dụ, việc gia tăng áp suất đối với Quy trình Haber mà ta dùng để tạo ra ammonia
+
+16
+00:00:45,759 --> 00:00:48,119
+về cơ bản là sẽ thay đổi trạng thái của sự cân bằng,
+
+17
+00:00:48,119 --> 00:00:52,308
+vậy nên kết quả của phản ứng là có nhiều ammonia được sản sinh ra hơn so với Nitơ và Hydro.
+
+18
+00:00:52,308 --> 00:00:54,468
+Tuy nhiên, nó cũng chẳng giúp ích được gì nhiều hơn cho bạn nếu bạn biết
+
+19
+00:00:54,469 --> 00:00:59,448
+bạn cần thêm vào bao nhiêu áp suất để tạo ra chính xác lượng ammonia mà bạn cần,
+
+20
+00:00:59,448 --> 00:01:03,329
+hay là cần bao nhiêu HF để tinh chế được một lượng khí nhất định.
+
+21
+00:01:03,329 --> 00:01:07,868
+Và tất nhiên Toán học là cách để tìm ra đáp án cho những câu hỏi này, vậy nên hôm nay tôi sẽ đưa ra cho bạn 
+
+22
+00:01:07,868 --> 00:01:12,049
+vài phép tính toán đơn giản và dễ dàng mà sẽ giúp ích cho bạn trong việc cân bằng hóa học.
+
+23
+00:01:12,049 --> 00:01:21,588
+[Âm nhạc]
+
+24
+00:01:21,588 --> 00:01:27,519
+Điều đầu tiên và cũng là quan trọng nhất mà bạn cần để thực hiện các phép tính cân bằng là hằng số cân bằng.
+
+25
+00:01:27,519 --> 00:01:30,498
+Con số này là duy nhất đối với mỗi phản ứng và thể hiện
+
+26
+00:01:30,498 --> 00:01:36,048
+một tỉ lệ phân tử gam của các chất sản phẩm so với các chất phản ứng khi một phản ứng ở trạng thái cân bằng.
+
+27
+00:01:36,049 --> 00:01:39,609
+Để tạo nên các hằng số cân bằng là việc vô cùng đơn giản, nhưng để giải thích được chúng lại không hề đơn giản chút nào.
+
+28
+00:01:39,608 --> 00:01:43,848
+vì thế nên hãy cùng bắt đầu với một ví dụ sử dụng các phương trình cân bằng hóa học giả mạo hiển nhiên.
+
+29
+00:01:43,849 --> 00:01:46,639
+Các chữ in hoa đại diện cho các chất phản ứng và các chất sản phẩm
+
+30
+00:01:46,638 --> 00:01:49,248
+và các chữ cái thường viết tắc cho các hệ số của chúng.
+
+31
+00:01:49,248 --> 00:01:53,738
+Hằng số cân bằng, hay còn gọi là hằng số k, bằng với sản phẩm của sự cô đọng các chất sản phẩm
+
+32
+00:01:53,739 --> 00:01:56,679
+chia cho sản phẩm của sự cô đọng phân tử gam của các chất phản ứng.
+
+33
+00:01:56,679 --> 00:02:00,558
+Mỗi sự cô đọng đạt tối đa công suất của hệ số của nó trong phương trình đã được cân bằng.
+
+34
+00:02:00,558 --> 00:02:04,239
+Giờ thì đây là điều quan trọng; ta đang dùng các hệ số như là các số mũ ở đây
+
+35
+00:02:04,239 --> 00:02:08,239
+bởi ta đang nhân lên tất cả các sản phẩm và tất cả chất phản ứng,
+
+36
+00:02:08,239 --> 00:02:11,599
+chứ không phải thêm chúng như bạn sẽ làm trong một phương trình cân bằng.
+
+37
+00:02:11,599 --> 00:02:18,379
+Rất nhiều khóa học sinh đã gào lên với kết quả bài kiểm tra vì làm sai phần này, nhưng bạn sẽ không làm như thế.
+
+38
+00:02:18,379 --> 00:02:24,120
+Vì vậy, nó là sản phẩm của các sản phẩm của sản phẩm của các chất phản ứng và các hệ số trở thành các mũ số.
+
+39
+00:02:24,120 --> 00:02:25,319
+Thực ra là khá đơn giản.
+
+40
+00:02:25,318 --> 00:02:29,938
+Các nhà hóa học sử dụng dấu ngoặc vuông trong công thức để thể hiện sự cô đọng phân tử gam,
+
+41
+00:02:29,938 --> 00:02:32,959
+hay chính là nồng độ phân tử gam: các phân tử gam của chất tan trên một lít dung dịch.
+
+42
+00:02:32,959 --> 00:02:36,000
+Các phương trình hằng số cân bằng này và chính các hằng số
+
+43
+00:02:36,000 --> 00:02:39,449
+là một trong số ít các vị trí mà bạn không cần phải viết chúng với mọi số.
+
+44
+00:02:39,449 --> 00:02:42,968
+Chỉ cần nhớ chuyển mọi thứ sang nồng độ phân tử gam trước khi đặt các số vào phương trình cân bằng.
+
+45
+00:02:42,968 --> 00:02:45,938
+Còn một thứ cuối cùng cần lưu ý trước khi ta làm một phép tính là: như ta đã học được trong tập phim trước,
+
+46
+00:02:45,938 --> 00:02:49,328
+sự thay đổi nhiệt độ sẽ thay đổi thế cân bằng.
+
+47
+00:02:49,329 --> 00:02:53,480
+Do đó, hằng số cân bằng chỉ đúng ở một nhiệt độ cụ thể.
+
+48
+00:02:53,479 --> 00:02:57,738
+Các hằng số thông thường được tính ở 25 độ C, mức nhiệt độ khá sát với hầu hết các trường hợp,
+
+49
+00:02:57,739 --> 00:03:00,620
+tuy nhiên thì nhiệt độ vẫn luôn luôn nên được đề cập đến cùng với hệ số.
+
+50
+00:03:00,620 --> 00:03:05,800
+May mắn cho ta là, các nhà hóa học đã tìm ra các hằng số cân bằng của hầu hết các phản ứng phổ biến rồi.
+
+51
+00:03:05,800 --> 00:03:10,040
+Ví dụ như axit cacbonic (H2CO3) - về cơ bản chỉ là CO2 phân hủy trong nước-
+
+52
+00:03:10,039 --> 00:03:12,679
+sẽ phân ly để tạo thành các ion carbonate (CO2 -3) và các ion hydro (H+)
+
+53
+00:03:12,680 --> 00:03:17,498
+Bạn sẽ gặp lại phản ứng này khi ta thảo luận sâu hơn về carbon và các chu kì carbon của hành tinh.
+
+54
+00:03:17,500 --> 00:03:25,560
+Quan trọng hơn nữa là, ngay bây giờ, phản ứng có thể đảo ngược một cách hoàn hảo với hệ số cân bằng là 1.66 x 10^-17.
+
+55
+00:03:25,560 --> 00:03:31,219
+Đối với phản ứng này, hằng số k bằng sản phẩm của sự cô đọng phân tử gam của ion carbonate 
+
+56
+00:03:31,219 --> 00:03:33,560
+và sự cô đọng phân tử gam của ion hydro,
+
+57
+00:03:33,568 --> 00:03:37,498
+điều này được bình phương bởi hệ số của hydron trong phương trình đã cân bằng là 2,
+
+58
+00:03:37,498 --> 00:03:40,098
+tất cả chia cho sự cô đọng phân tử gam của axit carbonic.
+
+59
+00:03:40,098 --> 00:03:42,119
+Giờ thì hãy đừng chán nản và vứt đám số má lằng nhằng đó sang một bên.
+
+60
+00:03:42,120 --> 00:03:49,519
+Cái mà bạn cần biết là tỉ số ở bên phải phải luôn luôn tạo ra cùng một số bởi vì nó là một hằng số.
+
+61
+00:03:49,519 --> 00:03:54,519
+Vậy nên, nếu lượng CO2 trong khí quyển tăng làm cho có nhiều H2CO3 hơn trong nước trên trái đất,
+
+62
+00:03:54,520 --> 00:04:01,080
+sự cô đọng của các ion carbonate và/hoặc các ion hydro cũng phải tăng theo để tổng cộng sẽ khớp với hằng số k.
+
+63
+00:04:01,090 --> 00:04:04,468
+Bạn cũng nên chú ý rằng bất kì thay đổi nào đối với sự cô đọng các ion hydro
+
+64
+00:04:04,468 --> 00:04:08,318
+sẽ có tác động vô cùng lớn đến mẫu số bởi vì bình phương của nó. 
+
+65
+00:04:08,319 --> 00:04:12,959
+Vậy nên sự gia tăng các ion hydro, giống như nếu nước bị axit hóa bởi một nguồn từ bên ngoài,
+
+66
+00:04:12,960 --> 00:04:18,100
+sẽ đòi hỏi một sự giảm xuống vô cùng lớn các ion carbonate hoặc là một sự tăng vô cùng lớn axit carbonic 
+
+67
+00:04:18,108 --> 00:04:21,948
+- CO2 được đẩy vào trong khí quyển để làm thỏa mãn lại tình trạng cân bằng.
+
+68
+00:04:21,949 --> 00:04:26,549
+Ta cũng có thể tiếp cận vấn đề này từ một hướng khác, tùy thuộc vào thông tin mà ta có để bắt đầu.
+
+69
+00:04:26,548 --> 00:04:29,759
+Các nhà hóa học thường không chỉ biết hằng số cân bằng với một phản ứng,
+
+70
+00:04:29,769 --> 00:04:32,560
+mà còn biết mức độ của mỗi chất phản ứng là bao nhiêu.
+
+71
+00:04:32,560 --> 00:04:36,720
+Và tất cả họ đều cần tìm ra chính xác mức độ mỗi chất sẽ được thể hiện khi ở trạng thái cân bằng.
+
+72
+00:04:36,728 --> 00:04:40,418
+Kiểu tính toán này là cách dễ nhất trong đó sử dụng một mẫu định dạng có tên gọi bảng tính RICE.
+
+73
+00:04:40,418 --> 00:04:43,930
+RICE là viết tắt của Phản ứng, Ban đầu, Thay đổi, và Cân bằng.
+
+74
+00:04:43,930 --> 00:04:48,418
+Trên dòng R ở đầu bảng, ta viết phương trình hóa học của phản ứng,
+
+75
+00:04:48,418 --> 00:04:52,839
+để cách giữa mỗi phần để ta có chỗ trống để thêm vào các thông tin bên dưới.
+
+76
+00:04:52,839 --> 00:04:55,638
+Trên dòng I ta viết các cô đọng ban đầu của mỗi chất.
+
+77
+00:04:55,639 --> 00:05:01,240
+Một vài trong số đó sẽ gần như là luôn luôn bằng 0, bởi vì các sản phẩm nhìn chung không xuất hiện cho đến khi phản ứng bắt đầu.
+
+78
+00:05:01,240 --> 00:05:05,490
+Dòng C là nơi ta sẽ phác họa ra mức độ mà mỗi chất sẽ thay đổi trong suốt phản ứng là bao nhiêu.
+
+79
+00:05:05,490 --> 00:05:08,930
+Ta thường không biết chính xác nó là bao nhiêu cho đến khi ta thực hiện phép tính,
+
+80
+00:05:08,930 --> 00:05:11,579
+vì vậy ta sẽ bắt đầu với x, khi mà mức độ còn là một ẩn số.
+
+81
+00:05:11,579 --> 00:05:16,918
+Dòng E là nơi ta đặt kết quả cuối cùng: mức độ mỗi chất sẽ xuất hiện khi đạt cân bằng.
+
+82
+00:05:16,918 --> 00:05:21,079
+Bởi vì lượng cuối cùng chỉ là lượng ban đầu cộng thêm với bất kì những thay đổi nào xảy ra,
+
+83
+00:05:21,079 --> 00:05:24,740
+nên dòng này là tổng của dòng ban đầu và dòng thay đổi.
+
+84
+00:05:24,740 --> 00:05:30,319
+Hãy cùng làm điều này đối với HF, một phần vô cùng quan trọng của quá trình tinh chế gasolin.
+
+85
+00:05:30,319 --> 00:05:36,598
+Nó có thể được hình thành ở dạng thể khí bằng một phản ứng cân bằng giữa khí Hydro (H) và khí Flo (F).
+
+86
+00:05:36,598 --> 00:05:38,550
+Bắt đầu bằng việc viết phương trình cân bằng hóa học.
+
+87
+00:05:38,550 --> 00:05:39,960
+Đối với bốn sự cô đọng ban đầu,
+
+88
+00:05:39,959 --> 00:05:47,478
+hãy dùng 3.00 mol H2 và 6.00 mol F2 trong bình chứa 3.00 lít ở nhiệt độ nhất định.
+
+89
+00:05:47,478 --> 00:05:52,769
+Điều đó khiến cho sự cô đọng ban đầu của H2 là 3 phân tử gam trong 3 lít, hay chính là 1.00 phân tử gam dung dịch.
+
+90
+00:05:52,769 --> 00:05:57,930
+Tương tự, sự cô đọng ban đầu của F2 là 6 phân tử gam trên 3 lít, hay chính là 2 phân tử gam.
+
+91
+00:05:57,930 --> 00:06:01,098
+HF vẫn chưa được tạo ra, vậy nên sự cô đọng ban đầu của nó là 0.
+
+92
+00:06:01,100 --> 00:06:03,460
+Vậy thì cái mà ta đang cố gắng tìm ra là có bao nhiêu lượng Hydro và Flo 
+
+93
+00:06:03,459 --> 00:06:06,388
+sẽ phản ứng để tạo ra HF trong những điều kiện trên.
+
+94
+00:06:06,389 --> 00:06:08,519
+Vì vậy ta sẽ gọi thay đổi là x từ bây giờ.
+
+95
+00:06:08,519 --> 00:06:13,370
+Vì 1 phân tử gam H2 và 1 phân tử gam F2 tác dụng với nhau để tạo thành 2 phân tử gam HF.
+
+96
+00:06:13,370 --> 00:06:20,199
+Ta có thể nói rằng H2 và F2 mỗi cái sẽ mất đi 'x' phân tử gam/ lít dung dịch trong khi HF nhận được 2x phân tử gam/ lít.
+
+97
+00:06:20,199 --> 00:06:22,439
+Điều đó được thể hiện trên dòng thay đổi trong bảng của bạn.
+
+98
+00:06:22,439 --> 00:06:25,978
+Vậy là điều đó dẫn đến dòng cân bằng nơi bạn viết các tổng số.
+
+99
+00:06:25,978 --> 00:06:32,860
+Với H2 ta có tổng cộng 1.00 -x phân tử gam. Với F2 tổng cộng là 2.00 - x.
+
+100
+00:06:32,860 --> 00:06:35,199
+Với HF tổng cộng là 2x phân tử gam.
+
+101
+00:06:35,199 --> 00:06:39,009
+Giờ ta áp dụng những con số này vào công thức của hằng số cân bằng.
+
+102
+00:06:39,009 --> 00:06:44,081
+Dựa vào bảng số liệu mặt sau cuốn sách giáo khoa của tôi, hệ số k đối với phản ứng này là 115 tại nhiệt độ cho trước.
+
+103
+00:06:44,098 --> 00:06:47,459
+Ta lắp các con số từ bảng RICE và gán cho x.
+
+104
+00:06:47,459 --> 00:06:51,609
+Và ta tìm là kết quả cuối cùng là như thế. Điều này có lẽ bạn nhận ra chính là phương trình bậc hai.
+
+105
+00:06:51,610 --> 00:06:56,490
+Và ngay lập tức bạn biết rằng điều đó không xảy ra với mọi phép toán cân bằng, nhưng nó lại là một kết quả cực kì phổ biến.
+
+106
+00:06:56,490 --> 00:06:59,740
+Để giải phương trình cân bằng bậc hai ta phải dùng công thức bậc hai.
+
+107
+00:06:59,740 --> 00:07:05,590
+Và để làm được điều đó ta phải nghĩ đến các hệ số của phương trình là a, b và c theo thứ tự đó.
+
+108
+00:07:05,589 --> 00:07:09,119
+Sau đó ta lắp chúng vào các vị trí trong công thức này:
+
+109
+00:07:09,120 --> 00:07:15,348
+-b +/- căn bậc hai của b2 - 4ac, tất cả chia cho 2a.
+
+110
+00:07:15,348 --> 00:07:17,500
+Một khi ta có được các số ở các vị trí đúng,
+
+111
+00:07:17,500 --> 00:07:20,550
+nó trở thành vấn đề của việc nghiền ngẫm qua một số đại số cơ bản.
+
+112
+00:07:20,550 --> 00:07:24,680
+Và do cách thức mà công thức bậc hai thực hiện, ta sẽ có hai kết quả khả thi.
+
+113
+00:07:24,680 --> 00:07:28,620
+Để tìm ra kết quả nào chính xác, hãy cùng nghĩ lại từ sự bắt đầu vấn đề.
+
+114
+00:07:28,620 --> 00:07:35,300
+Tôi đã nói rằng sự cô đọng ban đầu của H2 là 1 phân tử gam, và sự cô đọng ban đầu của F2 là 2 phân tử gam.
+
+115
+00:07:35,300 --> 00:07:38,340
+Và x là lượng mà mỗi chất mất đi, phải không nào?
+
+116
+00:07:38,348 --> 00:07:43,240
+Hừm, cả H2 và F2 đều không thể nào mất đi 2.13 phân tử gam/ lít
+
+117
+00:07:43,240 --> 00:07:45,598
+khi mà từ ban đầu chúng đã có ít hơn mức đó rồi.
+
+118
+00:07:45,598 --> 00:07:50,259
+Vì vậy rõ ràng là, câu trả lời đúng phải là 0.968 phân tử gam.
+
+119
+00:07:50,259 --> 00:07:54,080
+Sau đó, sử dụng kết quả đó, ta có thể tính ra lượng cân bằng trên thực tế của mỗi chất.
+
+120
+00:07:54,079 --> 00:07:59,089
+Tại trạng thái cân bằng, dưới những điều kiện cụ thể, sự cô đọng của HF là 2x,
+
+121
+00:07:59,089 --> 00:08:02,718
+hay chính là 2 x 0.968 = 1.94 phân tử gam.
+
+122
+00:08:02,718 --> 00:08:07,509
+Sự cô đọng của hydro sẽ là 1 - 0.968, tức là 0.032 phân tử gam.
+
+123
+00:08:07,509 --> 00:08:12,979
+Và sự cô đọng của flourine sẽ là 2 - 0.968, tức là 1.03 phân tử gam.
+
+124
+00:08:12,978 --> 00:08:16,668
+Như ta đã học tuần trước, những giá trị này có thể bị thay đổi.
+
+125
+00:08:16,668 --> 00:08:21,680
+Ví dụ, để tối đa hóa việc sản sinh ra HF bằng cách thêm hoặc bớt một ít các chất.
+
+126
+00:08:21,680 --> 00:08:24,250
+Hay là bằng cách thay đổi nhiệt độ hoặc áp suất của hệ thống.
+
+127
+00:08:24,250 --> 00:08:27,079
+Đó là lí do tại sao những phép tính toán này là vô cùng có giá trị đối với các nhà khoa học.
+
+128
+00:08:27,079 --> 00:08:31,120
+Chỉ một chút ít đại số cho phép ta tối đa hóa lợi ích mà ta nhận được
+
+129
+00:08:31,120 --> 00:08:33,279
+từ những thứ mà tự nhiên vốn dĩ đã thực hiện.
+
+130
+00:08:33,279 --> 00:08:37,980
+Nếu như vũ trụ thực sự đang cố gắng để tận dụng chúng ta, thì chắc chắn là ta đã tìm ra cách để tận dụng ngược lại vũ trụ.
+
+131
+00:08:37,980 --> 00:08:41,600
+Vậy nên nếu có lần nào bạn phân vân tại sao bạn lại học những điều này trong giờ Toán học thì giờ bạn đã hiểu rồi đấy.
+
+132
+00:08:41,600 --> 00:08:43,820
+Cảm ơn các bạn đã theo dõi bài giảng lần này.
+
+133
+00:08:43,820 --> 00:08:49,600
+Hôm nay bạn đã học những công cụ toán học để giúp ta tận dụng hiệu quả hơn các phản ứng cân bằng trong cuộc sống thực tế.
+
+134
+00:08:49,600 --> 00:08:52,399
+Bạn đã học cách để tính toán hằng số cân bằng k.
+
+135
+00:08:52,399 --> 00:08:57,319
+Bạn đã học cách để tính toán các điều kiện cân bằng của các phản ứng chỉ với những hiểu biết về các điều kiện ban đầu của chúng.
+
+136
+00:08:57,320 --> 00:09:01,640
+Và bạn đã học được rằng bảng RICE không chỉ là nơi bạn ăn sushi.
+
+137
+00:09:01,649 --> 00:09:04,419
+Và bạn cũng có thể học được đôi chút về phương trình bậc hai.
+
+138
+00:09:04,419 --> 00:09:08,610
+Nội dung bài học được viết bởi Edi Gonzalez. Kịch bản được biên tập bởi Blake de Pastino.
+
+139
+00:09:08,610 --> 00:09:11,169
+Cố vấn hóa học là Giáo sư Heiko Langner.
+
+140
+00:09:11,169 --> 00:09:15,349
+Nội dung bài học được biên tập, đạo diễn và dựng thành phim bởi Nicholas Jenkins. Giám sát kịch bản là Katherine Green.
+
+141
+00:09:15,350 --> 00:09:18,909
+Thiết kế âm thanh là Michael Aranda. Và đội ngũ đồ họa là Though Café.
+

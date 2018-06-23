@@ -1,0 +1,906 @@
+1
+00:00:07,589 --> 00:00:10,480
+Với mong muốn giúp mọi người hiểu được quá trình
+
+2
+00:00:10,480 --> 00:00:14,510
+và hình thành tiêu chuẩn để phát triển các cú hích,
+nhóm nghiên cứu của tôi ở
+
+3
+00:00:14,510 --> 00:00:18,039
+trường Quản lý Rotman đã tạo nên bản hướng dẫn
+
+4
+00:00:18,039 --> 00:00:19,660
+"Hướng dẫn của chuyên gia về cú hích".
+
+5
+00:00:19,660 --> 00:00:22,990
+Rất nhiều nội dung của bản hướng dẫn này 
+thực tế đã được sử dụng làm
+
+6
+00:00:22,990 --> 00:00:24,470
+tài liệu đọc cho lớp này.
+
+7
+00:00:24,470 --> 00:00:28,740
+Hôm nay bạn cũng sẽ thấy 1 đường dẫn tới bản 
+
+8
+00:00:28,740 --> 00:00:31,470
+PDF của hướng dẫn.
+
+9
+00:00:31,470 --> 00:00:34,910
+Chúng tôi tạo ra hướng dẫn
+ nhằm xác định 1 quy trình đơn giản gồm 4 giai đoạn
+
+10
+00:00:34,910 --> 00:00:37,870
+cần làm để thiết kế 1 cú hích.
+
+11
+00:00:37,870 --> 00:00:42,010
+4 giai đoạn đó là vạch ra tình huống,
+ vạch ra quyết định
+
+12
+00:00:42,010 --> 00:00:45,640
+chọn cú hích, xác định đòn bẩy cụ thể mà bạn sẽ
+
+13
+00:00:45,640 --> 00:00:50,240
+sử dụng để phụ trợ cho cú hích
+ và cuối cùng là quy trình để thiết kế 
+
+14
+00:00:50,240 --> 00:00:53,280
+và lặp đi lặp lại cú hích đó.
+
+15
+00:00:53,280 --> 00:00:57,170
+Hãy bắt đầu với quá trình phác thảo 
+bối cảnh của quyết định.
+
+16
+00:00:57,170 --> 00:00:58,630
+Phác thảo bối cảnh là gì?
+
+17
+00:00:58,630 --> 00:01:00,539
+Nó nghĩa là thế này.
+
+18
+00:01:00,539 --> 00:01:03,899
+Khi chúng ta nghĩ về kết quả, 
+chẳng hạn như tiết kiệm nhiều hơn cho hưu trí
+
+19
+00:01:03,899 --> 00:01:07,770
+hay là sống khỏe mạnh hơn, 
+có một số giai đoạn mà khách hàng 
+
+20
+00:01:07,770 --> 00:01:13,060
+trải qua để cuối cùng đưa ra loạt các quyết định 
+
+21
+00:01:13,060 --> 00:01:15,529
+dẫn đến kết quả cuối cùng.
+
+22
+00:01:15,529 --> 00:01:19,679
+Phác thảo ra xem chuỗi các quyết định
+ trông như thế nào
+
+23
+00:01:19,679 --> 00:01:23,329
+ cùng với những cân nhắc chủ yếu và thời điểm quyết định
+là một trong những điều quan trọng nhất
+
+24
+00:01:23,329 --> 00:01:28,259
+khi thực hiện chiến lược cú hích.
+
+25
+00:01:28,259 --> 00:01:32,279
+Như một phần của bản PDF mà tôi đã nói trước đó,
+ phần phụ lục
+
+26
+00:01:32,279 --> 00:01:36,659
+cung cấp cho các bạn danh sách đơn giản 
+
+27
+00:01:36,659 --> 00:01:40,049
+về các việc bạn cần ghi chú
+
+28
+00:01:40,049 --> 00:01:42,920
+ khi thực hiện quá trình ra quyết định.
+
+29
+00:01:42,920 --> 00:01:46,520
+Những tính chất của quyết định là gì?
+
+30
+00:01:46,520 --> 00:01:48,069
+Đó có phải một lựa chọn nhị phân đơn giản
+
+31
+00:01:48,069 --> 00:01:49,109
+với trả lời là có/không?
+
+32
+00:01:49,109 --> 00:01:52,319
+Hoặc là có nhiều giai đoạn trong lựa chọn đó?
+
+33
+00:01:52,319 --> 00:01:54,880
+Có nhiều phương án mà người ta cần phải chọn?
+
+34
+00:01:54,880 --> 00:01:57,189
+Hay chỉ đơn giản là có 2?
+
+35
+00:01:57,189 --> 00:01:59,149
+Có hay không những lựa chọn đơn giản?
+
+36
+00:01:59,149 --> 00:02:01,729
+Mọi người có cần đánh giá
+ một trường hợp liên tục không?
+
+37
+00:02:01,729 --> 00:02:06,159
+Ví dụ một lựa chọn đơn giản sẽ có kiểu như 
+là tôi sẽ chọn Quỹ A hay Quỹ B?
+
+38
+00:02:06,159 --> 00:02:10,280
+Một quyết định phức tạp hơn sẽ là 
+tôi nên đóng bao nhiêu tiền
+
+39
+00:02:10,280 --> 00:02:14,020
+vào tài khoản hưu mỗi tháng 
+và số tiền đó có nên thay đổi
+
+40
+00:02:14,020 --> 00:02:16,300
+theo thời gian hay không?
+
+41
+00:02:16,300 --> 00:02:19,780
+Những nhân tố cần xem xét khác 
+bao gồm thông tin mà mọi người
+
+42
+00:02:19,780 --> 00:02:23,290
+cần và sử dụng để đưa ra quyết định.
+
+43
+00:02:23,290 --> 00:02:25,370
+Thông tin được truyền tải tới họ bằng cách nào?
+
+44
+00:02:25,370 --> 00:02:26,540
+Có nhiều quá không?
+
+45
+00:02:26,540 --> 00:02:27,860
+Có ít quá không?
+
+46
+00:02:27,860 --> 00:02:29,690
+Thông tin như thế nào là ở mức trung bình?
+
+47
+00:02:29,690 --> 00:02:30,760
+Nó được cung cấp bằng văn bản?
+
+48
+00:02:30,760 --> 00:02:32,170
+Hay xem trực tuyến?
+
+49
+00:02:32,170 --> 00:02:35,659
+Hay là họ tình cờ xem qua các kênh thông tin khác?
+
+50
+00:02:35,659 --> 00:02:37,680
+Nó là thông tin dạng chữ?
+
+51
+00:02:37,680 --> 00:02:40,130
+Hay dạng hình ảnh?
+
+52
+00:02:40,130 --> 00:02:42,750
+Thông tin có dạng riêng biệt 
+
+53
+00:02:42,750 --> 00:02:44,810
+so với các dạng khác hay không?
+
+54
+00:02:44,810 --> 00:02:47,750
+Kiểm tra tất cả các việc này thật sự quan trọng. 
+
+55
+00:02:47,750 --> 00:02:51,989
+Một người thường nghĩ gì khi họ đưa ra quyết định?
+
+56
+00:02:51,989 --> 00:02:54,170
+Họ có tập trung vào thiết lập?
+
+57
+00:02:54,170 --> 00:02:56,360
+Hay tập trung vào kế hoạch?
+
+58
+00:02:56,360 --> 00:02:58,099
+Họ có phải là người không tính chuyện tương lai?
+
+59
+00:02:58,099 --> 00:03:00,190
+Hay là họ đang nhìn xa trông rộng?
+
+60
+00:03:00,190 --> 00:03:02,709
+Họ quyết định ở đâu?
+
+61
+00:03:02,709 --> 00:03:05,750
+Trong cửa hàng khi họ phải quyết định nhanh?
+
+62
+00:03:05,750 --> 00:03:09,040
+Hay ở nhà khi đang ngồi thoải mái một mình
+
+63
+00:03:09,040 --> 00:03:10,260
+trong phòng khách?
+
+64
+00:03:10,260 --> 00:03:13,390
+Họ có quyết định khi có mặt những người khác?
+
+65
+00:03:13,390 --> 00:03:16,180
+Hay là họ quyết định một mình?
+
+66
+00:03:16,180 --> 00:03:20,520
+Cuối cùng, các nhân tố môi trường và xã hội cần được kiểm tra
+
+67
+00:03:20,520 --> 00:03:21,609
+và ghi chép lại.
+
+68
+00:03:21,609 --> 00:03:25,030
+Các quyết định có được công bố không?
+
+69
+00:03:25,030 --> 00:03:27,930
+Hay là mọi người có thể tự quyết định và không có ai 
+
+70
+00:03:27,930 --> 00:03:30,219
+sẽ biết về sự lựa chọn của họ?
+
+71
+00:03:30,219 --> 00:03:33,640
+Nó có phải là loại mặt hàng hay được tiêu thụ?
+
+72
+00:03:33,640 --> 00:03:37,700
+Hay là loại khó tìm?
+
+73
+00:03:37,700 --> 00:03:40,450
+Lựa chọn theo nhóm?
+
+74
+00:03:40,450 --> 00:03:42,780
+Hay lựa chọn cá nhân?
+
+75
+00:03:42,780 --> 00:03:46,930
+Những nhân tố này và khác nữa là một phần 
+của danh sách và luôn luôn là
+
+76
+00:03:46,930 --> 00:03:50,469
+điểm bắt đầu khi bạn thiết kế cú hích,
+ vì nó cung cấp cho bạn
+
+77
+00:03:50,469 --> 00:03:54,120
+tất cả thông tin bạn cần phải biết
+ khi bắt đầu nghĩ về 
+
+78
+00:03:54,120 --> 00:03:56,390
+một sự can thiệp tốt là như thế nào.
+
+79
+00:03:56,390 --> 00:04:01,239
+Đây là ví dụ về phác thảo quá trình quyết định 
+
+80
+00:04:01,239 --> 00:04:03,000
+về tiết kiệm nghỉ hưu.
+
+81
+00:04:03,000 --> 00:04:06,400
+Như các bạn thấy ở đây,
+chúng tôi đã xác định được một số 
+
+82
+00:04:06,400 --> 00:04:09,799
+giai đoạn khác nhau, được chia thành 3 nhóm 
+
+83
+00:04:09,799 --> 00:04:11,849
+trong quá trình hình thành quyết định.
+
+84
+00:04:11,849 --> 00:04:15,340
+Xác định tầm quan trọng của việc tiết kiệm
+ sau khi nghỉ hưu là giai đoạn đầu tiên
+
+85
+00:04:15,340 --> 00:04:16,790
+trong quá trình.
+
+86
+00:04:16,790 --> 00:04:20,519
+Đây là việc cần thiết mà thường 
+người ta sẽ không để ý đến,
+
+87
+00:04:20,519 --> 00:04:23,170
+vì phần còn lại của các giai đoạn
+ thường là không quan trọng.
+
+88
+00:04:23,170 --> 00:04:24,170
+Có các giai đoạn khác nữa.
+
+89
+00:04:24,170 --> 00:04:27,220
+Ví dụ, hiển nhiên là bạn phải mở một tài khoản hưu,
+
+90
+00:04:27,220 --> 00:04:32,610
+quỹ hưu trí 401k ở Mỹ 
+
+91
+00:04:32,610 --> 00:04:36,039
+hay tài khoản tiết kiệm hưu trí RRSP ở Canada 
+hay bất cứ loại tài khoản tương tự nào 
+
+92
+00:04:36,039 --> 00:04:37,870
+ở đất nước của bạn.
+
+93
+00:04:37,870 --> 00:04:41,080
+Và cuối cùng, có những giai đoạn
+ phải theo dõi tài khoản 
+
+94
+00:04:41,080 --> 00:04:45,310
+liên tục, điều chỉnh, đảm bảo hồ sơ của bạn 
+
+95
+00:04:45,310 --> 00:04:47,930
+luôn ổn định và nhiều thứ khác  nữa.
+
+96
+00:04:47,930 --> 00:04:53,389
+Vì vậy sơ đồ này biểu thị các giai đoạn cơ bản 
+
+97
+00:04:53,389 --> 00:04:56,010
+trong việc đưa ra quyết định. 
+
+98
+00:04:56,010 --> 00:05:00,060
+Bây giờ khi bạn đã có sơ đồ
+ và bắt đầu suy nghĩ về 
+
+99
+00:05:00,060 --> 00:05:04,760
+các loại cú hích phù hợp cho 
+từng giai đoạn khác nhau 
+
+100
+00:05:04,760 --> 00:05:07,449
+trong quá trình đưa ra quyết định,
+ có 4 loại câu hỏi mà bạn cần
+
+101
+00:05:07,449 --> 00:05:08,849
+phải hỏi chính mình.
+
+102
+00:05:08,849 --> 00:05:11,730
+Các câu hỏi này được đánh dấu 
+trong bảng hướng dẫn
+
+103
+00:05:11,730 --> 00:05:13,419
+mà tôi vừa mới nói qua.
+
+104
+00:05:13,419 --> 00:05:17,150
+Câu hỏi đầu tiên có lẽ là câu hỏi quan trọng nhất.
+
+105
+00:05:17,150 --> 00:05:21,949
+Người đưa ra quyết định có biết 
+ đâu là quyết định chính xác
+
+106
+00:05:21,949 --> 00:05:23,860
+và liệu có phải là không thể từ bỏ nó không?
+
+107
+00:05:23,860 --> 00:05:26,440
+Hay thậm chí họ không biết đâu
+ là sự lựa chọn đúng đắn?
+
+108
+00:05:26,440 --> 00:05:27,960
+Hãy nghĩ`đến một ví dụ đơn giản.
+
+109
+00:05:27,960 --> 00:05:29,639
+Nghĩ về tiền tiết kiệm hưu trí.
+
+110
+00:05:29,639 --> 00:05:32,440
+Chúng ta đã thảo luận sự thật là mọi người
+ đều biết rằng họ cần phải tiết kiệm
+
+111
+00:05:32,440 --> 00:05:35,479
+nhiều hơn nhưng lại không bắt đầu tiết kiệm.
+
+112
+00:05:35,479 --> 00:05:37,550
+Chúng ta có nhận thức.
+
+113
+00:05:37,550 --> 00:05:42,070
+Mọi người biết họ cần phải làm gì 
+nhưng họ lại không thực hiện được.
+
+114
+00:05:42,070 --> 00:05:45,540
+Nhưng chắc cũng sẽ có trường hợp khác
+ khi người ta không biết mình phải làm gì.
+
+115
+00:05:45,540 --> 00:05:47,389
+Hãy nghĩ đến việc ăn uống lành mạnh.
+
+116
+00:05:47,389 --> 00:05:52,550
+Hãy nói về chương trình ăn uống lành mạnh
+ không có gluten.
+
+117
+00:05:52,550 --> 00:05:56,280
+Nếu người tiêu dùng không có đủ 
+kiến thức để hiểu rõ
+
+118
+00:05:56,280 --> 00:06:01,450
+cái gì là tốt nhất cho họ, họ thậm chí
+ sẽ không bao giờ tính đến
+
+119
+00:06:01,450 --> 00:06:02,919
+chế độ ăn không có gluten.
+
+120
+00:06:02,919 --> 00:06:03,990
+Nên đó chính là câu hỏi quan trọng. 
+
+121
+00:06:03,990 --> 00:06:06,710
+Liệu một người có tự nhận thức được
+ hay bạn phải giúp họ nhận thức?
+
+122
+00:06:06,710 --> 00:06:10,180
+Bạn có cần phải hướng họ đến
+ một kết quả cụ thể nào không?
+
+123
+00:06:10,180 --> 00:06:14,410
+Câu hỏi thứ hai là
+một người có muốn bị áp đặt cú hích 
+
+124
+00:06:14,410 --> 00:06:16,060
+lên bản thân họ hay không?
+
+125
+00:06:16,060 --> 00:06:18,150
+Hãy nghĩ về chương trình
+Save More Tomorrow.
+
+126
+00:06:18,150 --> 00:06:21,639
+Nếu tôi đi và nói với ai đó, đây là chương trình
+ mà bạn có thể lừa bản thân mình
+
+127
+00:06:21,639 --> 00:06:25,110
+để tiết kiệm nhiều hơn, nó sẽ có tác dụng
+ với những người tự biết 
+
+128
+00:06:25,110 --> 00:06:26,610
+họ không thể kiềm chế được chính mình.
+
+129
+00:06:26,610 --> 00:06:30,270
+Hoặc là stickk.com,
+chúng ta đã nói về trang web có thể giúp bạn
+
+130
+00:06:30,270 --> 00:06:31,909
+đạt được mục tiêu của bạn.
+
+131
+00:06:31,909 --> 00:06:35,690
+Nó sẽ giúp mọi người biết được 
+họ có vấn đề về tự chủ.
+
+132
+00:06:35,690 --> 00:06:39,150
+Nếu mọi người có vấn đề về tự chủ, họ nhận thức được, 
+và họ
+
+133
+00:06:39,150 --> 00:06:43,860
+muốn khắc phục nó, thì bạn mới có thể áp dụng
+ được các loại cú hích.
+
+134
+00:06:43,860 --> 00:06:47,520
+Nếu họ thật sự không hề muốn 
+thì bạn nên nói với họ về 
+
+135
+00:06:47,520 --> 00:06:51,660
+một chiến lược hoàn toàn khác.
+
+136
+00:06:51,660 --> 00:06:54,009
+Nhận thức là câu hỏi thứ ba.
+
+137
+00:06:54,009 --> 00:06:56,319
+Liệu tôi có nên cung cấp cho
+ mọi người nhiều thông tin hơn?
+
+138
+00:06:56,319 --> 00:06:59,539
+Liệu có phải họ lựa chọn sai vì họ thiếu
+
+139
+00:06:59,539 --> 00:07:00,539
+thông tin?
+
+140
+00:07:00,539 --> 00:07:04,090
+Hay là việc cung cấp thêm thông tin hay thỏa thuận
+
+141
+00:07:04,090 --> 00:07:05,129
+sẽ làm tổn thương họ?
+
+142
+00:07:05,129 --> 00:07:08,539
+Liệu nhận thức sẽ có ích hay sẽ gây tổn thương?
+
+143
+00:07:08,539 --> 00:07:11,540
+Nếu họ đã có nhiều thông tin
+ và nhiều sai sót xảy ra 
+
+144
+00:07:11,540 --> 00:07:15,629
+vì họ không thể xử lý lượng thông tin lớn như vậy 
+thì thực tế là bạn sẽ muốn
+
+145
+00:07:15,629 --> 00:07:16,689
+giảm bớt và đơn giản hóa lại.
+
+146
+00:07:16,689 --> 00:07:20,000
+Ngược lại, nếu họ không có đủ thông tin
+ thì bạn sẽ muốn
+
+147
+00:07:20,000 --> 00:07:22,199
+cung cấp thêm thông tin cho họ.
+
+148
+00:07:22,199 --> 00:07:27,789
+Và cuối cùng là một câu hỏi quan trọng nữa.
+Mọi người lựa chọn sai có phải vì 
+
+149
+00:07:27,789 --> 00:07:30,250
+tính trì trệ và lười biếng?
+
+150
+00:07:30,250 --> 00:07:34,159
+Hay là có bản tính nào khác nữa?
+
+151
+00:07:34,159 --> 00:07:38,830
+Hay là, liệu tôi có cần xúi giục
+ và kích thích mọi người, hoặc thúc họ
+
+152
+00:07:38,830 --> 00:07:40,439
+làm gì đó?
+
+153
+00:07:40,439 --> 00:07:43,889
+Hay là tôi muốn thúc họ không làm 
+những điều ngược lại?
+
+154
+00:07:43,889 --> 00:07:46,930
+Một lần nữa, xét về bề nổi thì những điều này
+ giống như một quá trình ăn khớp.
+
+155
+00:07:46,930 --> 00:07:50,590
+Nhưng xét theo quan điểm về cú hích
+ thì chúng thuộc
+
+156
+00:07:50,590 --> 00:07:53,610
+một khía cạnh tâm lý hoàn toàn khác,
+ một sự can thiệp hoàn toàn khác 
+
+157
+00:07:53,610 --> 00:07:56,990
+mà bạn thực hiện để xử lý các khía cạnh tâm lý đó.
+
+158
+00:07:56,990 --> 00:08:01,629
+Sau khi đã có được 4 câu hỏi này, 
+bây giờ có một việc cụ thể 
+
+159
+00:08:01,629 --> 00:08:06,020
+bạn có thể quay trở lại sơ đồ 
+mà chúng ta đã nói qua
+
+160
+00:08:06,020 --> 00:08:07,020
+lúc nãy.
+
+161
+00:08:07,020 --> 00:08:10,220
+Hãy tìm ra nút thắt trong quá trình.
+
+162
+00:08:10,220 --> 00:08:14,289
+Hãy nghĩ tới một sơ đồ có 6 giai đoạn hay 6 cái hộp.
+
+163
+00:08:14,289 --> 00:08:17,710
+Hộp nào hao mòn sức lực nhiều nhất
+
+164
+00:08:17,710 --> 00:08:19,039
+hay làm giảm những gì đã xảy ra?
+
+165
+00:08:19,039 --> 00:08:22,509
+Nói cách khác, có bao nhiêu người ở giai đoạn 1
+
+166
+00:08:22,509 --> 00:08:24,310
+cuối cùng chuyển sang giai đoạn 2?
+
+167
+00:08:24,310 --> 00:08:28,620
+Bao nhiêu người cảm thấy thích thú
+ hay có động lực hay nhận thức rằng 
+
+168
+00:08:28,620 --> 00:08:32,090
+họ cần tiết kiệm nhiều hơn cuối cùng 
+đã chịu mở một tài khoản ngân hàng?
+
+169
+00:08:32,090 --> 00:08:36,810
+Có bao nhiêu người trong số đó thật sự 
+có tìm hiểu thông tin cần thiết để biết chính xác
+
+170
+00:08:36,810 --> 00:08:39,430
+những gì họ cần cho việc đầu tư 
+cũng như các vấn đề tương tự?
+
+171
+00:08:39,430 --> 00:08:42,880
+Cho nên nếu bạn vẽ ra chúng trên sơ đồ, 
+bạn có thể nhận thấy được 
+
+172
+00:08:42,880 --> 00:08:43,880
+các nút thắt lớn.
+
+173
+00:08:43,880 --> 00:08:45,450
+Đâu là các nút thắt?
+
+174
+00:08:45,450 --> 00:08:47,860
+Các nút thắt xuất hiện ở các giai đoạn mà bạn có
+
+175
+00:08:47,860 --> 00:08:49,810
+tỉ lệ hao mòn sức lực cao nhất.
+
+176
+00:08:49,810 --> 00:08:53,540
+Vậy thật sự là cái gì gây ra các nút thắt này?
+
+177
+00:08:53,540 --> 00:08:56,440
+Bạn cần phải nghĩ đến các nguyên tắc tâm lý 
+
+178
+00:08:56,440 --> 00:08:57,760
+ tạo ra các nút thắt.
+
+179
+00:08:57,760 --> 00:09:01,150
+Ví dụ, đâu là nút thắt lớn nhất 
+
+180
+00:09:01,150 --> 00:09:02,890
+ở giai đoạn nhận thức sự cần thiết?
+
+181
+00:09:02,890 --> 00:09:09,630
+Tại sao chỉ có một số ít người có thể
+ bắt đầu nhận ra được sự cần thiết
+
+182
+00:09:09,630 --> 00:09:11,130
+ phải lên kế hoạch hưu trí?
+
+183
+00:09:11,130 --> 00:09:14,090
+Phần nào là thiên lệch tâm lý đơn giản?
+
+184
+00:09:14,090 --> 00:09:16,640
+Thiên hướng khoảng cách, ví như còn xa quá.
+
+185
+00:09:16,640 --> 00:09:19,100
+30 năm nữa tôi mới nghỉ hưu.
+
+186
+00:09:19,100 --> 00:09:20,740
+Con tôi còn nhỏ.
+
+187
+00:09:20,740 --> 00:09:22,320
+Tôi còn nhiều nhu cầu khác cho hôm nay.
+
+188
+00:09:22,320 --> 00:09:25,270
+Tại sao tôi lại tập trung cho việc nghỉ hưu?
+
+189
+00:09:25,270 --> 00:09:29,830
+Bất kỳ chiến lược nào khắc phục được
+ cách nhìn nhận thời gian giữa hôm nay
+
+190
+00:09:29,830 --> 00:09:33,380
+và lúc nghỉ hưu sẽ có ích cho bạn.
+
+191
+00:09:33,380 --> 00:09:37,160
+Sự phân chia như
+tại sao người ta lại không thể để dành phần tốt nhất
+
+192
+00:09:37,160 --> 00:09:39,980
+cho tài khoản hưu trí?
+
+193
+00:09:39,980 --> 00:09:42,910
+Có lẽ là do họ không biết cách để chọn.
+
+194
+00:09:42,910 --> 00:09:46,850
+Và đây, một sự can thiệp đơn giản, cung cấp 
+cho người ta một công cụ hay kỹ thuật
+
+195
+00:09:46,850 --> 00:09:51,730
+để giúp họ có được sự lựa chọn
+ sẽ là một cú hích tốt nhất.
+
+196
+00:09:51,730 --> 00:09:56,060
+Chọn lựa tiền quỹ
+Làm sao người ta có thể quyết định chọn
+
+197
+00:09:56,060 --> 00:09:57,060
+loại tiền quỹ nào?
+
+198
+00:09:57,060 --> 00:10:00,720
+Có lẽ nút thắt ở đây chính là
+ có quá nhiều sự lựa chọn.
+
+199
+00:10:00,720 --> 00:10:03,830
+Vì quá nhiều sự lựa chọn như chúng ta
+ đã nói làm mọi người thất bại.
+
+200
+00:10:03,830 --> 00:10:05,180
+Sự lựa chọn của họ là không chọn gì hết.
+
+201
+00:10:05,180 --> 00:10:09,390
+Nên họ có tài khoản nhưng
+ họ không gửi vào đó gì cả.
+
+202
+00:10:09,390 --> 00:10:13,820
+Vì vậy ở mỗi giai đoạn, nếu bạn xét đến 
+tỉ lệ hao mòn sức lực 
+
+203
+00:10:13,820 --> 00:10:18,880
+và cố gắng tìm ra chính xác xem
+ bạn có thể làm gì để cải thiện
+
+204
+00:10:18,880 --> 00:10:22,280
+sự hao mòn sức lực đó, thì đến cuối
+
+205
+00:10:22,280 --> 00:10:26,390
+quy trình này, bạn sẽ nhận ra một loạt các can thiệp
+ hoặc thúc đẩy tiềm năng 
+
+206
+00:10:26,390 --> 00:10:30,530
+mà bạn có thể bổ sung để tạo ra dòng chảy
+từ phía bên trái
+
+207
+00:10:30,530 --> 00:10:31,600
+đến bên phải.
+

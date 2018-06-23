@@ -1,0 +1,961 @@
+0
+00:00:00,000 --> 00:00:00,610
+https://youtu.be/aXuvXHMVV10
+
+1
+00:00:00,610 --> 00:00:03,100
+Giờ chúng ta sẽ phát triển một vài mô hình chuỗi thời gian.
+
+2
+00:00:03,100 --> 00:00:05,470
+Và chúng ta sẽ làm hai mô hình này trước,
+
+3
+00:00:05,470 --> 00:00:08,150
+đó là dự đoán tích lũy và dự đoán mộc.
+
+4
+00:00:08,150 --> 00:00:10,730
+Chúng ta sẽ giải thích lý do ngay sau đây.
+
+5
+00:00:10,730 --> 00:00:13,020
+Khi phát triển bất kỳ mô hình chuỗi thời gian gian nào--
+
+6
+00:00:13,020 --> 00:00:15,520
+cần hiểu được chúng ta sẽ sử dụng chúng ở đâu.
+
+7
+00:00:15,520 --> 00:00:17,872
+Và với chuỗi cung, việc sử dụng đích thị
+
+8
+00:00:17,872 --> 00:00:21,490
+phân tích chuỗi là để dự đoán cầu sản phẩm
+
+9
+00:00:21,490 --> 00:00:24,450
+của một sản phẩm "trưởng thành" ở cấp SKU
+
+10
+00:00:24,450 --> 00:00:27,200
+trong một đường thời gian ngắn, dù đó là tuần, tháng,
+
+11
+00:00:27,200 --> 00:00:31,850
+quý, hay năm, thì cầu về sản phẩm là độc lập.
+
+12
+00:00:31,850 --> 00:00:34,410
+Mảnh ghép quan trọng ở đây là nó phải "trưởng thành".
+
+13
+00:00:34,410 --> 00:00:35,550
+Điều này có nghĩa là tôi có lịch sử.
+
+14
+00:00:35,550 --> 00:00:37,020
+Tôi có thứ có thể dùng được.
+
+15
+00:00:37,020 --> 00:00:38,250
+Đó là ở cấp độ SKU.
+
+16
+00:00:38,250 --> 00:00:40,270
+Có nghĩa là nó rất rời rạc.
+
+17
+00:00:40,270 --> 00:00:42,230
+Nó là một đường thời gian ngắn.
+
+18
+00:00:42,230 --> 00:00:47,060
+Nên tôi sẽ nhìn vào khoảng thời gian phân tích rất dài.
+
+19
+00:00:47,060 --> 00:00:48,970
+Và cầu về sản phẩm là độc lập,
+
+20
+00:00:48,970 --> 00:00:51,320
+có nghĩa là tôi có thể tạo các mô hình riêng cho chúng.
+
+21
+00:00:51,320 --> 00:00:54,215
+Tôi không cần biết cầu của sản phẩm khác
+
+22
+00:00:54,215 --> 00:00:56,390
+dù là sản phẩm bổ sung hay thay thế.
+
+23
+00:00:56,390 --> 00:00:59,270
+Sau đó, chúng ta sẽ nới lỏng một vài giả thiết này
+
+24
+00:00:59,270 --> 00:01:01,170
+cho các loại dự đoán khác.
+
+25
+00:01:01,170 --> 00:01:03,470
+Ví dụ, sản phẩm mới-- bạn không có
+
+26
+00:01:03,470 --> 00:01:06,360
+lịch sử cho một sản phẩm mới được tung ra.
+
+27
+00:01:06,360 --> 00:01:09,990
+Bạn có thể muốn nhìn vào toàn bộ các chuỗi sản phẩm.
+
+28
+00:01:09,990 --> 00:01:12,670
+Bạn có thể muốn nhìn vào một đường thời gian rất dài.
+
+29
+00:01:12,670 --> 00:01:14,950
+Tôi có thể đang nhìn vào 5, hay 10 năm.
+
+30
+00:01:14,950 --> 00:01:18,607
+Khi những thứ này thay đổi, mô hình của bạn sẽ thay đổi.
+
+31
+00:01:18,607 --> 00:01:20,190
+Nhưng hiện tại chúng ta sẽ dùng
+
+32
+00:01:20,190 --> 00:01:23,415
+mô hình chuỗi thời gian truyền thống
+
+33
+00:01:23,415 --> 00:01:25,990
+xem xét sản phẩm trưởng thành, cân bằng SKU,
+
+34
+00:01:25,990 --> 00:01:28,570
+đường thời gian ngắn, với các sản phẩm độc lập.
+
+35
+00:01:28,570 --> 00:01:32,370
+Chúng ta sẽ sử dụng các xu hướng chính ở đây là--
+
+36
+00:01:32,370 --> 00:01:36,220
+cấp độ, xu hướng, tính theo mùa, và sai số, bốn kiểu.
+
+37
+00:01:36,220 --> 00:01:37,760
+Quy trình sẽ như thế nào?
+
+38
+00:01:37,760 --> 00:01:38,800
+Không phức tạp.
+
+39
+00:01:38,800 --> 00:01:42,400
+Đầu tiên, bạn chọn một mô hình cho kiểu cầu theo thời gian.
+
+40
+00:01:42,400 --> 00:01:45,070
+Bạn dự đoán và đo độ chính xác của các thông số cho mô hình.
+
+41
+00:01:45,070 --> 00:01:48,960
+Bạn sử dụng các thông số này để dự đoán hoặc ước đoán tương lai.
+
+42
+00:01:48,960 --> 00:01:51,710
+Và sau đó là bước quan trọng, bước bốn,
+
+43
+00:01:51,710 --> 00:01:54,200
+thường bị nhiều công ty bỏ qua,
+
+44
+00:01:54,200 --> 00:01:55,860
+là xem lại mộ hình
+
+45
+00:01:55,860 --> 00:01:58,620
+và điều chỉnh các thông số và kiểu tương ứng.
+
+46
+00:01:58,620 --> 00:02:01,380
+Những dự đoán này đang tồn tại, nên bạn luôn phải
+
+47
+00:02:01,380 --> 00:02:05,250
+kiểm tra và đảm bảo rằng các thông số vẫn hợp lý.
+
+48
+00:02:05,250 --> 00:02:07,730
+Ok, chúng ta sẽ phát triển hai mô hình, như đã nói,
+
+49
+00:02:07,730 --> 00:02:10,520
+mô hình tích lũy và mô hình mộc.
+
+50
+00:02:10,520 --> 00:02:13,510
+Và chúng khác nhau ở giả thiết cơ bản.
+
+51
+00:02:13,510 --> 00:02:16,800
+Và giả thiết cơ bản này là tầm quan trọng
+
+52
+00:02:16,800 --> 00:02:20,680
+của lịch sử, bạn coi trọng dữ liệu lịch sử như thế nào.
+
+53
+00:02:20,680 --> 00:02:23,240
+Và có hai giả thiết thuộc về hai thái cực.
+
+54
+00:02:23,240 --> 00:02:26,076
+Một là tôi coi tất cả chúng đều rất quan trọng.
+
+55
+00:02:26,076 --> 00:02:27,950
+Và hai là chúng không quan trọng đến thế,
+
+56
+00:02:27,950 --> 00:02:29,390
+chúng hoàn toàn không quan trọng.
+
+57
+00:02:29,390 --> 00:02:30,973
+Hãy bắt đầu với cái thứ nhất.
+
+58
+00:02:30,973 --> 00:02:32,460
+Đây là dự đoán tích lũy.
+
+59
+00:02:32,460 --> 00:02:36,230
+Trong mỗi trường hợp, tôi sẽ nhìn vào cầu cân bằng.
+
+60
+00:02:36,230 --> 00:02:39,640
+Bạn cũng có thể gọi đây là cầu tĩnh.
+
+61
+00:02:39,640 --> 00:02:42,960
+Chúng ta giả sử kiểu duy nhất ở đây là kiểu cân bằng.
+
+62
+00:02:42,960 --> 00:02:46,760
+Vậy cầu trong khoảng thời gian t, xt
+
+63
+00:02:46,760 --> 00:02:48,360
+sẽ bằng với mức này,
+
+64
+00:02:48,360 --> 00:02:50,245
+a, cùng với giới hạn sai số, mang tính ngẫu nhiên.
+
+65
+00:02:50,245 --> 00:02:51,600
+Nó sẽ đi lên và đi xuống.
+
+66
+00:02:51,600 --> 00:02:54,570
+Và chúng ta giả sử rằng giới hạn ngẫu nhiên được phân bổ
+
+67
+00:02:54,570 --> 00:02:58,350
+một cách đồng nhất và độc lập với trung bình của 0
+
+68
+00:02:58,350 --> 00:03:00,690
+và vài biến số.
+
+69
+00:03:00,690 --> 00:03:02,820
+Tại sao chúng ta giả sử rằng trung bình là 0?
+
+70
+00:03:02,820 --> 00:03:04,010
+Điều gì sẽ xảy ra nếu không phải là 0?
+
+71
+00:03:04,010 --> 00:03:07,520
+Điều gì sẽ xảy ra nếu tôi nói trung bình của sai số là 10?
+
+72
+00:03:07,520 --> 00:03:09,940
+Điều đó có nghĩa là tôi bị thiên lệch về 10.
+
+73
+00:03:09,940 --> 00:03:11,760
+Tôi sẽ luôn bị thiên lệch dương.
+
+74
+00:03:11,760 --> 00:03:15,280
+Vậy giá trị trung bình của sai số nên luôn là 0,
+
+75
+00:03:15,280 --> 00:03:17,462
+vì nếu khác 0, tôi sẽ hoặc là bị thiên lệch dương
+
+76
+00:03:17,462 --> 00:03:18,045
+hoặc là thiên lệch âm.
+
+77
+00:03:18,045 --> 00:03:20,680
+
+
+78
+00:03:20,680 --> 00:03:22,335
+Để tôi xóa đi.
+
+79
+00:03:22,335 --> 00:03:23,210
+Đây là mô hình của chúng ta.
+
+80
+00:03:23,210 --> 00:03:26,320
+Và lý do nó được gọi là mô hình tích lũy đó là vì
+
+81
+00:03:26,320 --> 00:03:27,890
+mô hình dự đoán của chúng ta sẽ là như vậy,
+
+82
+00:03:27,890 --> 00:03:30,030
+nó sẽ nói rằng x mũ-- và x mũ
+
+83
+00:03:30,030 --> 00:03:37,510
+là dự đoán cầu tại thời điểm t-- với thời điểm t +1
+
+84
+00:03:37,510 --> 00:03:39,900
+Để khái quát lại, tôi có như dưới đây.
+
+85
+00:03:39,900 --> 00:03:44,040
+Đó là x mũ t phảy t + T nhỏ.
+
+86
+00:03:44,040 --> 00:03:49,000
+Và đó là dự đoán được đưa ra khi kết thúc khoảng thời gian t
+
+87
+00:03:49,000 --> 00:03:52,460
+cho cầu trong khoảng thời gian t + T, trong đó T là 1, 2,
+
+88
+00:03:52,460 --> 00:03:55,230
+3, 4, khoảng thời gian bất kỳ trong tương lai.
+
+89
+00:03:55,230 --> 00:03:59,860
+Vậy mô hình dự đoán này là cho giai đoạn tiếp theo.
+
+90
+00:03:59,860 --> 00:04:02,910
+Chúng ta sẽ làm nhiều phân tích như thế này
+cho mô hình giai đoạn tiếp theo.
+
+91
+00:04:02,910 --> 00:04:06,240
+Vậy là tôi ngồi ở đây hôm nay để dự đoán cho ngày mai.
+
+92
+00:04:06,240 --> 00:04:09,900
+Tôi ngồi ở đây tháng này để dự đoán cho tháng tới.
+
+93
+00:04:09,900 --> 00:04:12,640
+Và đó đơn giản là mô hình tích lũy
+
+94
+00:04:12,640 --> 00:04:15,530
+tổng toàn bộ cầu chia cho
+
+95
+00:04:15,530 --> 00:04:16,760
+số giai đoạn.
+
+96
+00:04:16,760 --> 00:04:18,810
+Vậy nó sẽ là giá trị trung bình của trung bình.
+
+97
+00:04:18,810 --> 00:04:22,720
+Tôi nói rằng tất cả lịch sự đều quan trọng như nhau.
+
+98
+00:04:22,720 --> 00:04:23,740
+Có lý đấy chứ.
+
+99
+00:04:23,740 --> 00:04:25,214
+Giờ hãy chuyển sang thái cực khác.
+
+100
+00:04:25,214 --> 00:04:26,880
+Giả sử lịch sử không hề quan trọng.
+
+101
+00:04:26,880 --> 00:04:29,640
+Cái này được biết đến là dự đoán mộc.
+
+102
+00:04:29,640 --> 00:04:31,610
+Chúng ta giả sử ở đây là
+
+103
+00:04:31,610 --> 00:04:34,850
+quan sát gần đây nhất sẽ khẳng định cái tiếp theo.
+
+104
+00:04:34,850 --> 00:04:38,630
+Mô hình này đôi khi được gọi là bước đi ngẫu nhiên hay
+cuối cùng là kế tiếp.
+
+105
+00:04:38,630 --> 00:04:42,700
+Chúng ta có cùng loại dự đoán ngang bằng,
+
+106
+00:04:42,700 --> 00:04:44,700
+nhưng điều chúng ta đang nói là, mô hình cơ bản là
+
+107
+00:04:44,700 --> 00:04:48,150
+cầu của tôi trong thời gian t sẽ
+
+108
+00:04:48,150 --> 00:04:51,625
+bằng với cầu của thực tế đã xảy ra trong ngày hôm qua
+
+109
+00:04:51,625 --> 00:04:55,350
+trong t - 1, cộng với giới hạn sai số, là ngẫu nhiên.
+
+110
+00:04:55,350 --> 00:04:57,280
+Điều duy nahats sẽ thay đổi
+
+111
+00:04:57,280 --> 00:04:59,320
+là giới hạn ngẫu nhiên đó.
+
+112
+00:04:59,320 --> 00:05:01,160
+Giới hạn sai số của tôi được phân bổ
+
+113
+00:05:01,160 --> 00:05:05,230
+với giá trị trung bình là 0 và có biến đổi.
+
+114
+00:05:05,230 --> 00:05:08,760
+Vậy là mô hình dự đoán của tôi trở nên đơn giản hơn.
+
+115
+00:05:08,760 --> 00:05:12,600
+Dự đoán cầu của ngày mai khi đang ngồi ở thời điểm hôm nay,
+
+116
+00:05:12,600 --> 00:05:16,630
+t - 1, bằng với cầu của hôm nay.
+
+117
+00:05:16,630 --> 00:05:18,630
+Tôi đang giả sử rằng những gì xảy ra vào ngày mai
+
+118
+00:05:18,630 --> 00:05:20,070
+sẽ chính là những gì đã xảy ra trong hôm nay.
+
+119
+00:05:20,070 --> 00:05:21,030
+Đó là dư đoán của tôi.
+
+120
+00:05:21,030 --> 00:05:22,905
+Tôi biết đó là không chính xác,
+
+121
+00:05:22,905 --> 00:05:26,160
+vì còn có giới hạn sai số.
+
+122
+00:05:26,160 --> 00:05:28,340
+Nhưng sự khác nhau trong các mô hình dự đoán,
+
+123
+00:05:28,340 --> 00:05:31,070
+hay mô hình tích lũy, giả sử
+
+124
+00:05:31,070 --> 00:05:33,740
+nó sẽ là trung bình của mọi thứ tôi thấy gần dây.
+
+125
+00:05:33,740 --> 00:05:36,530
+Tôi đang tạo toàn bộ lịch sử bằng nhau.
+
+126
+00:05:36,530 --> 00:05:40,104
+Với mô hình mộc, tất cả vấn đề đó là của hôm qua.
+
+127
+00:05:40,104 --> 00:05:42,020
+Tôi nghĩ rằng những gì dã xảy ra ở giai đoạn trước,
+
+128
+00:05:42,020 --> 00:05:44,200
+sẽ xảy ra ở giai đoạn tiếp theo.
+
+129
+00:05:44,200 --> 00:05:46,020
+Vậy hãy xem mọi thứ trông như thế nào.
+
+130
+00:05:46,020 --> 00:05:47,660
+Đây là một vài dữ liệu mà chúng ta có.
+
+131
+00:05:47,660 --> 00:05:49,640
+Và trong cột đầu tiên của bảng này,
+
+132
+00:05:49,640 --> 00:05:52,230
+là giai đoạn từ 1 đến 10.
+
+133
+00:05:52,230 --> 00:05:56,370
+xt là cầu tại thời điểm t.
+
+134
+00:05:56,370 --> 00:06:01,360
+Vậy trong giai đoạn 4, chúng ta có cầu cho 96 đơn vị.
+
+135
+00:06:01,360 --> 00:06:03,474
+Và nhìn sang bên phải, tôi có biểu đồ
+
+136
+00:06:03,474 --> 00:06:04,890
+thể hiện điều đó.
+
+137
+00:06:04,890 --> 00:06:09,180
+Tôi sẽ dự đoán gì nếu tôi đang ngồi tại t này
+
+138
+00:06:09,180 --> 00:06:12,710
+và tôi muốn dự đoán cầu trong giai đoạn tiếp theo?
+
+139
+00:06:12,710 --> 00:06:18,000
+Đó sẽ là x mũ 10 phảy 11, vì T trong trường hợp này
+
+140
+00:06:18,000 --> 00:06:18,780
+sẽ là 1.
+
+141
+00:06:18,780 --> 00:06:21,130
+Đây là dự đoán cho giai đoạn tiếp theo.
+
+142
+00:06:21,130 --> 00:06:22,470
+Vậy sẽ là gì?
+
+143
+00:06:22,470 --> 00:06:26,290
+Với mô hình mộc, đó sẽ là chính xác những gì
+
+144
+00:06:26,290 --> 00:06:28,090
+đã xảy ra trong giai đoạn gần đây nhất này.
+
+145
+00:06:28,090 --> 00:06:30,300
+Vậy điều gì đã xảy ra trong giai đoạn 10?
+
+146
+00:06:30,300 --> 00:06:31,200
+Là 96.
+
+147
+00:06:31,200 --> 00:06:34,820
+Đó là dự đoán của tôi cho giai đoạn tiếp theo.
+
+148
+00:06:34,820 --> 00:06:37,440
+Với mô hình tích lũy, có hơi phức tạp hơn một chút,
+
+149
+00:06:37,440 --> 00:06:38,960
+hơi chuyên sâu hơn một chút.
+
+150
+00:06:38,960 --> 00:06:40,820
+Tôi sẽ đi tính tổng trung bình.
+
+151
+00:06:40,820 --> 00:06:43,130
+Và nếu tôi tính tổng những cái này--
+và bạn có thể kiểm tra kết quả của tôi--
+
+152
+00:06:43,130 --> 00:06:46,170
+tổng ở đây sẽ là bằng 995.
+
+153
+00:06:46,170 --> 00:06:50,050
+Chia 995 cho 10, là 10 quan sát, bạn sẽ được 99,5.
+
+154
+00:06:50,050 --> 00:06:52,925
+Đây là dự đoán tích lũy của tôi.
+
+155
+00:06:52,925 --> 00:06:55,680
+
+
+156
+00:06:55,680 --> 00:06:58,600
+Đây là một phép toán rất đơn giản.
+
+157
+00:06:58,600 --> 00:07:01,960
+Nhưng nếu tôi muốn xem thay vì làm cho giai đoạn đó,
+
+158
+00:07:01,960 --> 00:07:04,340
+giả sử tôi muốn tạo một chuỗi dự đoán
+
+159
+00:07:04,340 --> 00:07:05,370
+cho giai đoạn tiếp theo.
+
+160
+00:07:05,370 --> 00:07:08,657
+Hãy xem sẽ thế nào nếu tôi ở giai đoạn 1
+
+161
+00:07:08,657 --> 00:07:10,740
+và không biết gì khác ngoài những gì đang diễn ra
+
+162
+00:07:10,740 --> 00:07:13,100
+và tôi đưa ra dự đoán của mình cho giai đoạn 2.
+
+163
+00:07:13,100 --> 00:07:14,680
+Sau đó trong giai đoạn 2, sẽ dự đoán cho giai đoạn 3.
+
+164
+00:07:14,680 --> 00:07:16,590
+Và trong 3 lại dự đoán cho 4.
+
+165
+00:07:16,590 --> 00:07:18,330
+Nó sẽ như thế nào?
+
+166
+00:07:18,330 --> 00:07:19,680
+Đồ thị sẽ như thế này.
+
+167
+00:07:19,680 --> 00:07:22,650
+Cột đầu tiên chỉ là khoảng thời gian.
+
+168
+00:07:22,650 --> 00:07:26,850
+Cột xt là cầu trong giai đoạn t.
+
+169
+00:07:26,850 --> 00:07:29,940
+Cột thứ 3 màu xanh lá là dự đoán tích lũy
+
+170
+00:07:29,940 --> 00:07:32,410
+tại thời điểm của giai đoạn tiếp theo.
+
+171
+00:07:32,410 --> 00:07:34,390
+Và cột thứ 4 màu đỏ,
+
+172
+00:07:34,390 --> 00:07:36,710
+tương tự cho dự đoán mộc.
+
+173
+00:07:36,710 --> 00:07:39,900
+Hãy nhìn vào giai đoạn 10.
+
+174
+00:07:39,900 --> 00:07:43,480
+Trong giai đoạn 10, cầu thực tế của tôi là 96.
+
+175
+00:07:43,480 --> 00:07:48,800
+Dự đoán của tôi ở giai đoạn 10 cho giai đoạn 11
+
+176
+00:07:48,800 --> 00:07:51,150
+trong dự đoán tích lũy là 99,5.
+
+177
+00:07:51,150 --> 00:07:58,790
+Dự đoán mộc của tôi, x mũ 10 ở giai đoạn 10
+cho giai đoạn 11 là 96.
+
+178
+00:07:58,790 --> 00:08:01,180
+Nó ở hàng cuối cùng đó.
+
+179
+00:08:01,180 --> 00:08:04,020
+Tôi có thể vẽ đồ thị về những điều này.
+
+180
+00:08:04,020 --> 00:08:05,507
+Tương tự như vậy.
+
+181
+00:08:05,507 --> 00:08:06,590
+Đây là cầu thực tế.
+
+182
+00:08:06,590 --> 00:08:09,220
+Tôi vừa vẽ một đường thẳng lên nó cho dễ nhìn hơn.
+
+183
+00:08:09,220 --> 00:08:11,360
+Và đây là dự đoán mộc.
+
+184
+00:08:11,360 --> 00:08:12,870
+Và đây lại là giai đoạn tiếp theo.
+
+185
+00:08:12,870 --> 00:08:15,000
+Đây là dự đoán được đưa ra ở cuối mỗi giai đoạn
+
+186
+00:08:15,000 --> 00:08:17,060
+cho giai đoạn tiếp theo.
+
+187
+00:08:17,060 --> 00:08:19,500
+Và nó giống như bạn bị chứng nhìn một thành hai vậy,
+
+188
+00:08:19,500 --> 00:08:21,060
+vì tất cả những gì nó làm là gì?
+
+189
+00:08:21,060 --> 00:08:22,150
+Là dịch chuyển một cái.
+
+190
+00:08:22,150 --> 00:08:23,860
+Đơn giản là chuyển một cái sang phải.
+
+191
+00:08:23,860 --> 00:08:25,334
+vì đó là dự đoán mộc.
+
+192
+00:08:25,334 --> 00:08:27,000
+Nó nói rằng dù hôm qua có diễn ra như thế nào,
+
+193
+00:08:27,000 --> 00:08:29,325
+thì đó là những gì sẽ xảy ra vào ngày mai.
+
+194
+00:08:29,325 --> 00:08:30,700
+Giờ hãy nhìn vào dự đoán tích lũy.
+
+195
+00:08:30,700 --> 00:08:32,070
+Ở phần màu xanh lá.
+
+196
+00:08:32,070 --> 00:08:34,640
+Và bạn có thể thấy nó trở nên ngang bằng,
+
+197
+00:08:34,640 --> 00:08:39,440
+vì khi tôi thêm thông tin vào, nó sẽ giao động lớn hơn
+
+198
+00:08:39,440 --> 00:08:42,380
+để di chuyển cái đó, vì tôi đang lấy giá trị trung bình
+
+199
+00:08:42,380 --> 00:08:43,760
+tại từng điểm này.
+
+200
+00:08:43,760 --> 00:08:46,180
+Điều duy nhất khiến bạn thấy khó hiểu có lẽ là
+
+201
+00:08:46,180 --> 00:08:47,870
+những gì tôi đã làm ở đây.
+
+202
+00:08:47,870 --> 00:08:50,170
+Và ở giai đoạn đầu, chỉ là để cho đơn giản,
+
+203
+00:08:50,170 --> 00:08:53,310
+tôi giả sử rằng dự đoán cho từng giai đoạn là thực tế,
+
+204
+00:08:53,310 --> 00:08:54,060
+chỉ để bắt đầu nó.
+
+205
+00:08:54,060 --> 00:08:56,460
+Chúng ta sẽ nói nhiều hơn về cách bạn bắt đầu dự đoán.
+
+206
+00:08:56,460 --> 00:08:59,180
+Nhưng hiện tại, hãy giả sử rằng
+
+207
+00:08:59,180 --> 00:09:01,380
+tôi đã giả thiết mọi thứ như vậy.
+
+208
+00:09:01,380 --> 00:09:04,730
+Nhưng hãy nhìn vào đồ thị ở dưới cuối này,
+
+209
+00:09:04,730 --> 00:09:06,030
+bạn sẽ thấy vài điểm đáng chú ý.
+
+210
+00:09:06,030 --> 00:09:08,540
+Và đây là điểm mấu chốt của rất nhiều
+
+211
+00:09:08,540 --> 00:09:09,830
+đánh đổi trong dự đoán.
+
+212
+00:09:09,830 --> 00:09:12,040
+Bạn thấy sự khác nhau giữa màu đỏ
+
+213
+00:09:12,040 --> 00:09:13,930
+của dự đoán mộc và màu xanh lá
+
+214
+00:09:13,930 --> 00:09:16,050
+của dự đoán tích lũy, và
+
+215
+00:09:16,050 --> 00:09:19,000
+bạn có thể thấy rằng dự đoán tích lũy, phần màu xanh lá
+
+216
+00:09:19,000 --> 00:09:20,600
+rất bằng phẳng.
+
+217
+00:09:20,600 --> 00:09:22,610
+Nó sẽ trở nên ngang bằng.
+
+218
+00:09:22,610 --> 00:09:25,930
+Trong khi dự đoán mộc rất hay thay đổi, rất bất ổn,
+
+219
+00:09:25,930 --> 00:09:28,620
+vì nó sẽ phản ánh bất kỳ thay đổi nào
+
+220
+00:09:28,620 --> 00:09:29,810
+có trong cầu cơ bản.
+
+221
+00:09:29,810 --> 00:09:32,540
+Và đánh đổi giữa sự bằng phẳng và sự bất ổn
+
+222
+00:09:32,540 --> 00:09:36,124
+sẽ thường trải dài trên toàn bộ dự đoán mà chúng ta đưa ra.
+
+223
+00:09:36,124 --> 00:09:37,540
+Và có thể bạn sẽ nói rõ ràng là
+
+224
+00:09:37,540 --> 00:09:38,990
+bằng phẳng sẽ tốt hơn.
+
+225
+00:09:38,990 --> 00:09:41,390
+Nhưng bạn phải nhìn vào mặt trái của nó.
+
+226
+00:09:41,390 --> 00:09:44,610
+Các mô hình mộc dễ phản ứng lại trước một thay đổi
+
+227
+00:09:44,610 --> 00:09:45,960
+hơn so với mô hình tích lũy.
+
+228
+00:09:45,960 --> 00:09:48,290
+Mô hình tích lũy sẽ luôn chậm hơn
+
+229
+00:09:48,290 --> 00:09:50,240
+trong việc phản ứng với những thay đổi.
+
+230
+00:09:50,240 --> 00:09:51,890
+Và đó là đặc điểm then chốt.
+
+231
+00:09:51,890 --> 00:09:53,970
+Sự đánh đổi giữa mô hình tích lũy
+
+232
+00:09:53,970 --> 00:09:55,610
+sử dụng toàn bộ dữ liệu mà bạn có,
+
+233
+00:09:55,610 --> 00:09:57,750
+toàn bộ lịch sử còn dự đoán mộc,
+
+234
+00:09:57,750 --> 00:10:01,070
+chỉ sử dụng những gì gần đây nhất, là cốt lõi
+
+235
+00:10:01,070 --> 00:10:02,280
+là đánh đổi cơ bản nhất trong dự đoán.
+
+236
+00:10:02,280 --> 00:10:05,044
+Chúng ta sẽ thấy điều này trong các dạng thức
+tinh vi hơn ở phần sau.
+
+237
+00:10:05,044 --> 00:10:07,210
+Nhưng về mặt cốt lõi, đây chính là những gì nó sẽ đạt được.
+
+238
+00:10:07,210 --> 00:10:10,150
+Bạn muốn sử dụng bao nhiêu thông tin?
+

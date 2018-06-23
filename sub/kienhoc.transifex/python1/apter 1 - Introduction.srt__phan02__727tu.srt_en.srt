@@ -1,0 +1,448 @@
+95
+00:04:11,400 --> 00:04:12,890
+https://youtu.be/G721cooZXgs
+supposed to do.
+
+96
+00:04:12,890 --> 00:04:15,010
+And sometimes you're
+running a program
+
+97
+00:04:15,010 --> 00:04:18,010
+like Moodle-- an open source
+learning management system,
+
+98
+00:04:18,010 --> 00:04:21,029
+or Sakai-- another open source
+learning management system.
+
+99
+00:04:21,029 --> 00:04:23,480
+And sometimes, you'll even
+get paid to do that, right?
+
+100
+00:04:23,480 --> 00:04:25,560
+Sometimes do it for free,
+sometimes you get paid.
+
+101
+00:04:25,560 --> 00:04:27,495
+Sometimes, you write
+things for yourself.
+
+102
+00:04:27,495 --> 00:04:30,390
+
+103
+00:04:30,390 --> 00:04:32,900
+But if you think about
+it, all these applications
+
+104
+00:04:32,900 --> 00:04:35,635
+on my iPhone, somebody's
+making some money off of these.
+
+105
+00:04:35,635 --> 00:04:37,260
+They may not be able
+to quit their job,
+
+106
+00:04:37,260 --> 00:04:39,800
+but a surprising number have
+been able to quit their job
+
+107
+00:04:39,800 --> 00:04:41,240
+or start small companies.
+
+108
+00:04:41,240 --> 00:04:45,480
+Maybe not gigantic companies
+but small companies.
+
+109
+00:04:45,480 --> 00:04:48,080
+So these people that can
+put applications inside
+
+110
+00:04:48,080 --> 00:04:49,630
+of our computers
+are programmers.
+
+111
+00:04:49,630 --> 00:04:51,760
+Because they understand
+the way that we
+
+112
+00:04:51,760 --> 00:04:54,230
+talk to these computers.
+
+113
+00:04:54,230 --> 00:04:56,050
+And part what I'm
+going to try to do
+
+114
+00:04:56,050 --> 00:05:00,500
+is to get you to move from the
+mindset of the end user, who
+
+115
+00:05:00,500 --> 00:05:03,080
+thinks of this as
+something just to click on,
+
+116
+00:05:03,080 --> 00:05:04,840
+to the mindset of
+the programmer, who's
+
+117
+00:05:04,840 --> 00:05:08,790
+kind of on the inside
+trying to get out to you.
+
+118
+00:05:08,790 --> 00:05:11,380
+So that's, as we move
+from user to programmer,
+
+119
+00:05:11,380 --> 00:05:13,210
+we move from outside to inside.
+
+120
+00:05:13,210 --> 00:05:14,711
+And we think of the
+world out there,
+
+121
+00:05:14,711 --> 00:05:16,501
+and it's like, what
+are they going to push?
+
+122
+00:05:16,501 --> 00:05:18,190
+What button are
+they going to push?
+
+123
+00:05:18,190 --> 00:05:20,960
+So here's kind of
+a picture of that.
+
+124
+00:05:20,960 --> 00:05:22,400
+So on the outside, we're users.
+
+125
+00:05:22,400 --> 00:05:24,430
+We click on buttons,
+we click on websites,
+
+126
+00:05:24,430 --> 00:05:27,810
+we click on buttons on our
+phones, et cetera, et cetera.
+
+127
+00:05:27,810 --> 00:05:30,840
+But what's really going
+on inside of all that is
+
+128
+00:05:30,840 --> 00:05:34,430
+there's a computer with a bunch
+of hardware inside of that.
+
+129
+00:05:34,430 --> 00:05:39,020
+And it has inside of it data,
+networks, other information,
+
+130
+00:05:39,020 --> 00:05:44,720
+and software-- is what
+makes all that make sense.
+
+131
+00:05:44,720 --> 00:05:46,670
+And so, part of what
+I want you to do
+
+132
+00:05:46,670 --> 00:05:48,610
+is I want you to stop
+thinking about how
+
+133
+00:05:48,610 --> 00:05:50,600
+to use these things
+from the outside
+
+134
+00:05:50,600 --> 00:05:53,490
+and we move to
+becoming a programmer.
+
+135
+00:05:53,490 --> 00:05:54,770
+We're someone on the inside.
+
+136
+00:05:54,770 --> 00:05:58,510
+We are with the CPU,
+we are with the memory,
+
+137
+00:05:58,510 --> 00:06:00,480
+we are with the
+network connection,
+
+138
+00:06:00,480 --> 00:06:02,760
+we are doing things
+on behalf of the user
+
+139
+00:06:02,760 --> 00:06:06,940
+and presenting them
+back up to the user.
+
+140
+00:06:06,940 --> 00:06:08,700
+So why be a programmer?
+
+141
+00:06:08,700 --> 00:06:10,977
+Now, this class is
+specifically not
+
+142
+00:06:10,977 --> 00:06:13,060
+trying to turn you into a
+professional programmer.
+
+143
+00:06:13,060 --> 00:06:16,805
+Even though I'd be very proud
+if after five, ten more classes,
+
+144
+00:06:16,805 --> 00:06:18,180
+you were professional
+programmer,
+
+145
+00:06:18,180 --> 00:06:20,544
+but that's not the
+purpose of this class.
+
+146
+00:06:20,544 --> 00:06:22,460
+Sometimes you just want
+to get something done.
+
+147
+00:06:22,460 --> 00:06:24,480
+You've got an Excel
+spreadsheet at work,
+
+148
+00:06:24,480 --> 00:06:26,000
+and the data is not right.
+
+149
+00:06:26,000 --> 00:06:27,610
+You've got the data
+from somebody else
+
+150
+00:06:27,610 --> 00:06:30,160
+and it's got extra
+spaces where it shouldn't
+
+151
+00:06:30,160 --> 00:06:32,584
+have it or missing fields.
+
+152
+00:06:32,584 --> 00:06:34,250
+Or something, you've
+got to do something
+
+153
+00:06:34,250 --> 00:06:36,210
+to it that Excel can't do.
+
+154
+00:06:36,210 --> 00:06:39,960
+And you're stuck saying I
+want to mess with this data
+
+155
+00:06:39,960 --> 00:06:41,620
+and put in Excel
+so I can do my job,
+
+156
+00:06:41,620 --> 00:06:44,036
+but it's a pain in the neck
+and I have to sit and bring it
+
+157
+00:06:44,036 --> 00:06:46,050
+into a text editor
+like Microsoft Word
+
+158
+00:06:46,050 --> 00:06:48,250
+and go line by line and
+make all kinds of mistakes
+
+159
+00:06:48,250 --> 00:06:49,650
+and clean the data up.
+
+160
+00:06:49,650 --> 00:06:51,210
+You can write a
+program to do that.
+
+161
+00:06:51,210 --> 00:06:53,126
+And that's kind of
+programs we're going to do.
+
+162
+00:06:53,126 --> 00:06:55,600
+Programs that serve our
+needs inside the computer,
+
+163
+00:06:55,600 --> 00:06:56,950
+but to serve our needs.
+
+164
+00:06:56,950 --> 00:07:00,470
+Professional programmers tend
+to build things for other people
+
+165
+00:07:00,470 --> 00:07:01,729
+to use, right?
+
+166
+00:07:01,729 --> 00:07:03,770
+They tend to build things
+and everyone else does.
+
+167
+00:07:03,770 --> 00:07:08,510
+But we're going to build
+stuff primarily for ourselves.
+
+168
+00:07:08,510 --> 00:07:10,940
+So, what is code?
+
+169
+00:07:10,940 --> 00:07:11,730
+What is software?
+
+170
+00:07:11,730 --> 00:07:14,760
+We use these words pretty much
+independently-- a program.
+
+171
+00:07:14,760 --> 00:07:17,630
+It's really a sequence
+of stored instructions.
+
+172
+00:07:17,630 --> 00:07:20,420
+We learn the language
+that this talks,
+
+173
+00:07:20,420 --> 00:07:24,220
+and then we will feed the
+instructions in, one at a time.
+
+174
+00:07:24,220 --> 00:07:26,640
+It takes them one at a time,
+it gives us back a result,
+
+175
+00:07:26,640 --> 00:07:28,010
+we give a next one.
+
+176
+00:07:28,010 --> 00:07:30,089
+Give it back, in out, in out.
+
+177
+00:07:30,089 --> 00:07:32,130
+So it's really a sequence
+of stored instructions.
+
+178
+00:07:32,130 --> 00:07:35,000
+But it's more than that.
+
+179
+00:07:35,000 --> 00:07:37,175
+It's like our creativity.
+
+180
+00:07:37,175 --> 00:07:39,050
+And if you've been using
+some of my software,
+
+181
+00:07:39,050 --> 00:07:40,090
+like my MOOC software.
+
+182
+00:07:40,090 --> 00:07:43,090
+I spent about a month
+writing all that stuff.
+
+183
+00:07:43,090 --> 00:07:45,140
+And it's like, it's me.
+
+184
+00:07:45,140 --> 00:07:48,120
+It's my vision of how cool
+stuff ought to work, right?
+
+185
+00:07:48,120 --> 00:07:51,586
+And so, it's more than just
+getting something done.
+
+186
+00:07:51,586 --> 00:07:53,960
+It's also a sense of pride
+and a sense of accomplishment.
+
+187
+00:07:53,960 --> 00:07:55,250
+Especially if you're
+giving something
+
+188
+00:07:55,250 --> 00:07:56,710
+that other people
+can make use of.
+

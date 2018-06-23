@@ -1,0 +1,432 @@
+476
+00:20:57,388 --> 00:20:58,535
+https://youtu.be/VXyRfgnzL2o
+Any questions?
+
+477
+00:20:58,535 --> 00:21:01,740
+
+478
+00:21:01,740 --> 00:21:08,647
+OK, well, I'm going to ask
+you a question in a second.
+
+479
+00:21:08,647 --> 00:21:11,570
+
+480
+00:21:11,570 --> 00:21:14,220
+OK, so just a couple of
+things that probably you're
+
+481
+00:21:14,220 --> 00:21:16,050
+wondering about.
+
+482
+00:21:16,050 --> 00:21:18,240
+You don't actually need an else.
+
+483
+00:21:18,240 --> 00:21:20,680
+You can have a multi-way.
+
+484
+00:21:20,680 --> 00:21:23,610
+X = 5, if x < 2,
+there is no else here.
+
+485
+00:21:23,610 --> 00:21:26,380
+You'll notice that this
+print just comes back.
+
+486
+00:21:26,380 --> 00:21:29,702
+And so this way it could,
+if both of these are false,
+
+487
+00:21:29,702 --> 00:21:31,660
+skip them both and just
+run right through here,
+
+488
+00:21:31,660 --> 00:21:33,800
+and there's no else clause.
+
+489
+00:21:33,800 --> 00:21:39,150
+OK, so in this case, the
+way this one's going to run
+
+490
+00:21:39,150 --> 00:21:40,620
+is x = 5.
+
+491
+00:21:40,620 --> 00:21:43,410
+If x < 2, it's not.
+
+492
+00:21:43,410 --> 00:21:44,910
+And it skips to here.
+
+493
+00:21:44,910 --> 00:21:48,620
+Else if x < 10, which it is,
+it will run that one and come
+
+494
+00:21:48,620 --> 00:21:49,160
+here.
+
+495
+00:21:49,160 --> 00:22:00,050
+But for a different value
+of x, like 95, if x was 59,
+
+496
+00:22:00,050 --> 00:22:00,920
+this would be false.
+
+497
+00:22:00,920 --> 00:22:01,690
+It would skip it.
+
+498
+00:22:01,690 --> 00:22:03,572
+This elif would still be false.
+
+499
+00:22:03,572 --> 00:22:04,280
+It would skip it.
+
+500
+00:22:04,280 --> 00:22:08,970
+And the only thing that would
+print out would be "All done."
+
+501
+00:22:08,970 --> 00:22:14,190
+OK, you can also
+have many elifs.
+
+502
+00:22:14,190 --> 00:22:18,059
+So better change to green.
+
+503
+00:22:18,059 --> 00:22:18,850
+It checks this one.
+
+504
+00:22:18,850 --> 00:22:20,060
+If it's true, it
+runs the first one.
+
+505
+00:22:20,060 --> 00:22:21,476
+If it's false it,
+checks this one.
+
+506
+00:22:21,476 --> 00:22:25,160
+If that's true, it runs
+this one, and then it skips.
+
+507
+00:22:25,160 --> 00:22:27,130
+And so the way to
+think about this
+
+508
+00:22:27,130 --> 00:22:30,500
+is it just goes through
+and checks this one false,
+
+509
+00:22:30,500 --> 00:22:32,210
+this one false, false, false.
+
+510
+00:22:32,210 --> 00:22:33,930
+Oh, I finally found one.
+
+511
+00:22:33,930 --> 00:22:35,150
+And now I'm done.
+
+512
+00:22:35,150 --> 00:22:39,470
+It still is going to do
+one, and only one, of these.
+
+513
+00:22:39,470 --> 00:22:43,330
+This one has an else, so sooner
+or later it is going to do one.
+
+514
+00:22:43,330 --> 00:22:47,450
+And it only will do the else
+if all of these are false.
+
+515
+00:22:47,450 --> 00:22:49,920
+All have to be false.
+
+516
+00:22:49,920 --> 00:22:53,094
+Then it will actually come
+and hit the else clause.
+
+517
+00:22:53,094 --> 00:22:55,635
+It's great, because there are
+lots of situations where you're
+
+518
+00:22:55,635 --> 00:22:58,280
+like, oh, is it before
+8:00 in the morning,
+
+519
+00:22:58,280 --> 00:23:01,890
+or is it between 8:00 and noon,
+or is it between noon and 5:00,
+
+520
+00:23:01,890 --> 00:23:06,940
+or after 5:00, after midnight?
+
+521
+00:23:06,940 --> 00:23:12,350
+So here coming up is a question.
+
+522
+00:23:12,350 --> 00:23:14,354
+And there's two puzzles.
+
+523
+00:23:14,354 --> 00:23:16,770
+And I'm going to stop so you
+can look at them for a while.
+
+524
+00:23:16,770 --> 00:23:21,200
+And I want you to figure
+out, in both sides of this,
+
+525
+00:23:21,200 --> 00:23:24,580
+which of the lines
+will not execute,
+
+526
+00:23:24,580 --> 00:23:26,660
+regardless of the value for x.
+
+527
+00:23:26,660 --> 00:23:28,830
+So on both sides,
+there is a line
+
+528
+00:23:28,830 --> 00:23:31,990
+that won't execute, regardless
+of the value of the x.
+
+529
+00:23:31,990 --> 00:23:33,200
+Which will never print?
+
+530
+00:23:33,200 --> 00:23:38,650
+There's two problems--
+problem A problem B. OK, I'll
+
+531
+00:23:38,650 --> 00:23:40,284
+have some coffee
+while you think.
+
+532
+00:23:40,284 --> 00:23:55,000
+
+533
+00:23:55,000 --> 00:23:57,620
+OK, hopefully you paused it,
+so that you could actually
+
+534
+00:23:57,620 --> 00:24:00,064
+think for a bit.
+
+535
+00:24:00,064 --> 00:24:01,480
+So I'm going to
+guess you probably
+
+536
+00:24:01,480 --> 00:24:02,470
+got the first one right.
+
+537
+00:24:02,470 --> 00:24:03,720
+That's pretty straightforward.
+
+538
+00:24:03,720 --> 00:24:06,304
+I mean, actually you're in great
+shape if you got both of them
+
+539
+00:24:06,304 --> 00:24:06,803
+right.
+
+540
+00:24:06,803 --> 00:24:09,040
+If you got any of them
+right, you're in great shape,
+
+541
+00:24:09,040 --> 00:24:10,430
+because that means you're
+starting to get it.
+
+542
+00:24:10,430 --> 00:24:12,013
+It's starting to
+like, oh, I am seeing
+
+543
+00:24:12,013 --> 00:24:14,230
+kind of this flow picture.
+
+544
+00:24:14,230 --> 00:24:15,380
+There's a picture.
+
+545
+00:24:15,380 --> 00:24:17,570
+I look at these characters
+that seemingly looked
+
+546
+00:24:17,570 --> 00:24:19,600
+like gibberish and
+a picture arises,
+
+547
+00:24:19,600 --> 00:24:23,730
+or a pattern of
+execution arises.
+
+548
+00:24:23,730 --> 00:24:25,220
+That's what we want to see.
+
+549
+00:24:25,220 --> 00:24:29,025
+So in the first one,
+which will never print?
+
+550
+00:24:29,025 --> 00:24:30,650
+Well, we're looking
+for kind of a value
+
+551
+00:24:30,650 --> 00:24:32,860
+for x which will be defective.
+
+552
+00:24:32,860 --> 00:24:35,374
+So if x is less than two,
+we're going to do this else.
+
+553
+00:24:35,374 --> 00:24:38,040
+If x is greater than or equal to
+2, we're going to do this else,
+
+554
+00:24:38,040 --> 00:24:38,950
+we'll do that.
+
+555
+00:24:38,950 --> 00:24:41,390
+Well, here's the
+problem with this one.
+
+556
+00:24:41,390 --> 00:24:45,860
+For all values of x, x < 2
+is either going to be true,
+
+557
+00:24:45,860 --> 00:24:53,949
+or for x >= 2 is
+going to be true.
+
+558
+00:24:53,949 --> 00:24:56,490
+So it's going to run this one,
+or it's going to run that one.
+
+559
+00:24:56,490 --> 00:24:59,056
+So for big numbers--
+numbers above 2--
+
+560
+00:24:59,056 --> 00:25:00,180
+it's going to run this one.
+
+561
+00:25:00,180 --> 00:25:01,680
+Below 2, it's going
+to run that one.
+
+562
+00:25:01,680 --> 00:25:05,060
+So this one is
+never going to run,
+
+563
+00:25:05,060 --> 00:25:08,190
+because one of the first
+two is going to be true.
+
+564
+00:25:08,190 --> 00:25:11,300
+And so the third else
+situation is not going to run.
+
+565
+00:25:11,300 --> 00:25:13,520
+Hope you got that right.
+
+566
+00:25:13,520 --> 00:25:16,500
+OK, so let's take a
+look at the next one.
+
+567
+00:25:16,500 --> 00:25:18,951
+So the question is, is x < 2 2?
+
+568
+00:25:18,951 --> 00:25:19,450
+Do this.
+
+569
+00:25:19,450 --> 00:25:21,290
+If x <20, do that.
+
+570
+00:25:21,290 --> 00:25:25,260
+And if x < 10, do this,
+and otherwise do that.
+

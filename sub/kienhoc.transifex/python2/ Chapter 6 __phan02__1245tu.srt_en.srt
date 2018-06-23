@@ -1,0 +1,748 @@
+161
+00:06:28,783 --> 00:06:32,530
+https://youtu.be/L2IUSArpG98
+And so, we are passing
+banana, the variable fruit,
+
+162
+00:06:32,530 --> 00:06:36,610
+into function, and then
+into the Len function.
+
+163
+00:06:36,610 --> 00:06:39,540
+Then, Len-- shhh--
+does magic stuff.
+
+164
+00:06:39,540 --> 00:06:42,240
+And then, out comes the answer.
+
+165
+00:06:42,240 --> 00:06:44,260
+And that 6 replaces this.
+
+166
+00:06:44,260 --> 00:06:48,430
+And then, the 6 goes into the
+variable X. And so X is 6.
+
+167
+00:06:48,430 --> 00:06:51,040
+I sure made that a
+messy looking slide.
+
+168
+00:06:51,040 --> 00:06:53,840
+And so, think of inside
+the Len function.
+
+169
+00:06:53,840 --> 00:06:55,630
+There's a Def Len.
+
+170
+00:06:55,630 --> 00:06:58,680
+It takes a parameter,
+does sound loopy things.
+
+171
+00:06:58,680 --> 00:07:00,030
+And it does its thing.
+
+172
+00:07:00,030 --> 00:07:03,120
+So it's a function that we might
+write, except we don't have to.
+
+173
+00:07:03,120 --> 00:07:07,170
+Because it's already written
+and built into Python.
+
+174
+00:07:07,170 --> 00:07:10,764
+OK, so that's length
+of the string.
+
+175
+00:07:10,764 --> 00:07:12,430
+That's getting it
+individual characters.
+
+176
+00:07:12,430 --> 00:07:15,570
+We can also loop
+through strings.
+
+177
+00:07:15,570 --> 00:07:18,490
+Obviously, if we can
+use the index operator
+
+178
+00:07:18,490 --> 00:07:21,990
+and we can put a variable in
+there, we can write a loop.
+
+179
+00:07:21,990 --> 00:07:23,530
+This is an indefinite loop.
+
+180
+00:07:23,530 --> 00:07:25,020
+So we have this variable fruit.
+
+181
+00:07:25,020 --> 00:07:27,150
+It has the string banana in it.
+
+182
+00:07:27,150 --> 00:07:29,600
+We set the variable index to 0.
+
+183
+00:07:29,600 --> 00:07:31,640
+We make a little wild loop.
+
+184
+00:07:31,640 --> 00:07:35,580
+And we ask, as long as index is
+less than the length of fruit--
+
+185
+00:07:35,580 --> 00:07:37,706
+now remember, the length
+of fruit is going to be 6.
+
+186
+00:07:37,706 --> 00:07:39,913
+But we don't want to make
+that less than or equal to,
+
+187
+00:07:39,913 --> 00:07:41,250
+because then we would crash.
+
+188
+00:07:41,250 --> 00:07:43,650
+Because the last character is 5.
+
+189
+00:07:43,650 --> 00:07:45,680
+We can say, letter is
+equal to fruits sub index.
+
+190
+00:07:45,680 --> 00:07:48,630
+So that's going to start
+out, index is going to be 0.
+
+191
+00:07:48,630 --> 00:07:50,060
+So that's fruit sub 0.
+
+192
+00:07:50,060 --> 00:07:51,700
+Then, we print index and letter.
+
+193
+00:07:51,700 --> 00:07:54,330
+So that means the first
+time through the loop,
+
+194
+00:07:54,330 --> 00:07:56,250
+we're going to see 0B.
+
+195
+00:07:56,250 --> 00:08:01,930
+Then, we increment our iteration
+operator, and we go up.
+
+196
+00:08:01,930 --> 00:08:03,570
+And then, we come up with 1A.
+
+197
+00:08:03,570 --> 00:08:10,580
+And index advances
+until index is 6,
+
+198
+00:08:10,580 --> 00:08:13,570
+but has printed out
+each of the letters.
+
+199
+00:08:13,570 --> 00:08:16,430
+Now, we're not doing this
+just to print them out.
+
+200
+00:08:16,430 --> 00:08:23,130
+We will do something a little
+more valuable inside that loop.
+
+201
+00:08:23,130 --> 00:08:26,950
+But this gives the sense that
+we can work through a loop,
+
+202
+00:08:26,950 --> 00:08:31,410
+just like we can work
+through a string,
+
+203
+00:08:31,410 --> 00:08:35,169
+just like we work through
+a list of numbers.
+
+204
+00:08:35,169 --> 00:08:38,630
+Now, that was how you do
+it with an indefinite loop.
+
+205
+00:08:38,630 --> 00:08:42,039
+In a definite loop, it's
+just far more awesome.
+
+206
+00:08:42,039 --> 00:08:46,130
+OK, just like we did
+with the list of numbers,
+
+207
+00:08:46,130 --> 00:08:50,050
+Python understands strings and
+allows us to write four loops,
+
+208
+00:08:50,050 --> 00:08:53,390
+using 4 and N that go
+through the strings.
+
+209
+00:08:53,390 --> 00:08:56,230
+So basically, for letter
+in fruit-- now remember,
+
+210
+00:08:56,230 --> 00:08:58,270
+I'm using letter as a
+pneumatic variable here.
+
+211
+00:08:58,270 --> 00:09:01,210
+It's just a wise choice
+of a variable name.
+
+212
+00:09:01,210 --> 00:09:03,760
+So that says, run this
+little block of text
+
+213
+00:09:03,760 --> 00:09:06,560
+once for each letter
+in the variable fruit.
+
+214
+00:09:06,560 --> 00:09:09,060
+Which means that letters are
+going to take on the successive
+
+215
+00:09:09,060 --> 00:09:14,430
+B-A-N-A-N-A. When
+I look at that,
+
+216
+00:09:14,430 --> 00:09:15,930
+I always worry that
+I misspelled it.
+
+217
+00:09:15,930 --> 00:09:18,819
+I think I got these right.
+
+218
+00:09:18,819 --> 00:09:20,360
+If I rewrite this
+book, I'm not going
+
+219
+00:09:20,360 --> 00:09:21,750
+to use banana as the example.
+
+220
+00:09:21,750 --> 00:09:24,240
+Because I'm terrified
+that I misspelled banana.
+
+221
+00:09:24,240 --> 00:09:27,210
+Because I don't know how
+many N's banana has in it.
+
+222
+00:09:27,210 --> 00:09:30,760
+But be that as it may,
+we are abstracting.
+
+223
+00:09:30,760 --> 00:09:34,500
+We are letting Python say, run
+this little block of text once,
+
+224
+00:09:34,500 --> 00:09:37,400
+in order for each of the
+letters in the variable fruit,
+
+225
+00:09:37,400 --> 00:09:40,960
+which is B-A-N-A. And so, it
+prints out each of the letters.
+
+226
+00:09:40,960 --> 00:09:46,090
+So this is a much prettier
+version of the looping.
+
+227
+00:09:46,090 --> 00:09:49,630
+So using the definite, the
+For keyword instead of the
+
+228
+00:09:49,630 --> 00:09:50,640
+While keyword.
+
+229
+00:09:50,640 --> 00:09:54,080
+And so, we can just
+compare these two things.
+
+230
+00:09:54,080 --> 00:09:55,930
+They kind of do the
+exact same thing.
+
+231
+00:09:55,930 --> 00:10:01,120
+And it also gives you a sense
+of what the For is doing for us.
+
+232
+00:10:01,120 --> 00:10:03,190
+The For is setting
+up this index.
+
+233
+00:10:03,190 --> 00:10:06,120
+The For is looking
+up inside of fruit.
+
+234
+00:10:06,120 --> 00:10:08,200
+And the For is
+advancing the index.
+
+235
+00:10:08,200 --> 00:10:10,050
+So the For is doing a
+bunch of work for us.
+
+236
+00:10:10,050 --> 00:10:12,410
+And I've characterize that
+in the previous lecture,
+
+237
+00:10:12,410 --> 00:10:15,300
+how the For is doing a
+bunch of things for us.
+
+238
+00:10:15,300 --> 00:10:20,360
+And it allows our code
+to be more expressive.
+
+239
+00:10:20,360 --> 00:10:25,330
+And so, a lot of this is
+just got a bookkeeping crap,
+
+240
+00:10:25,330 --> 00:10:26,540
+that we don't really need.
+
+241
+00:10:26,540 --> 00:10:28,450
+And so the For loop
+helps us by doing
+
+242
+00:10:28,450 --> 00:10:31,910
+some of the bookkeeping for us.
+
+243
+00:10:31,910 --> 00:10:34,970
+OK, so we can do all
+those loop idioms.
+
+244
+00:10:34,970 --> 00:10:37,920
+We can find the largest
+letter, the smallest letter,
+
+245
+00:10:37,920 --> 00:10:44,194
+how many times, how
+many N's in this,
+
+246
+00:10:44,194 --> 00:10:45,360
+or how many A's are in this.
+
+247
+00:10:45,360 --> 00:10:48,500
+And so, this is a simple
+counting pattern and a looking
+
+248
+00:10:48,500 --> 00:10:49,660
+pattern.
+
+249
+00:10:49,660 --> 00:10:51,380
+And so, our word is "banana."
+
+250
+00:10:51,380 --> 00:10:52,690
+Our count is 0.
+
+251
+00:10:52,690 --> 00:10:55,695
+For the letter in word, again--
+boop-boop-boop-boop-boop--
+
+252
+00:10:55,695 --> 00:10:57,260
+that comes out like that.
+
+253
+00:10:57,260 --> 00:10:59,030
+So it's going to run
+this little block.
+
+254
+00:10:59,030 --> 00:11:02,350
+If the letter is A,
+add 1 to the count.
+
+255
+00:11:02,350 --> 00:11:04,500
+So this is going to
+basically print out,
+
+256
+00:11:04,500 --> 00:11:07,615
+at the end, the number
+of A's in banana.
+
+257
+00:11:07,615 --> 00:11:10,000
+It would probably be more
+useful for me to print out
+
+258
+00:11:10,000 --> 00:11:11,480
+the number of N's in banana.
+
+259
+00:11:11,480 --> 00:11:13,585
+Because I never know how
+many N's are in banana.
+
+260
+00:11:13,585 --> 00:11:15,460
+But it looks like there's
+supposed to be two.
+
+261
+00:11:15,460 --> 00:11:18,770
+Or otherwise, I have
+a typo on this slide.
+
+262
+00:11:18,770 --> 00:11:21,320
+So that "In," again,
+I love that In.
+
+263
+00:11:21,320 --> 00:11:23,020
+I just absolutely love this In.
+
+264
+00:11:23,020 --> 00:11:28,280
+I love this syntax, this For
+each letter In the word banana.
+
+265
+00:11:28,280 --> 00:11:30,750
+Just to me, it
+reads very smoothly.
+
+266
+00:11:30,750 --> 00:11:33,440
+Cognitively, it fits in
+my mind what's going on.
+
+267
+00:11:33,440 --> 00:11:36,420
+For each letter in banana,
+run this little indented block
+
+268
+00:11:36,420 --> 00:11:37,080
+of text.
+
+269
+00:11:37,080 --> 00:11:38,730
+Again, very pretty.
+
+270
+00:11:38,730 --> 00:11:40,340
+I love In.
+
+271
+00:11:40,340 --> 00:11:42,730
+It's one of my favorite
+little pieces of Python.
+
+272
+00:11:42,730 --> 00:11:46,480
+
+273
+00:11:46,480 --> 00:11:49,990
+So again, with the For, it
+takes care of all the iteration
+
+274
+00:11:49,990 --> 00:11:51,045
+variables for us.
+
+275
+00:11:51,045 --> 00:11:52,420
+And it goes through
+the sequence.
+
+276
+00:11:52,420 --> 00:11:54,850
+And so, here's an animation.
+
+277
+00:11:54,850 --> 00:11:57,900
+Remember that the For is going
+to do all this work for us.
+
+278
+00:11:57,900 --> 00:12:03,370
+Letter is going to advance
+through the successive letters
+
+279
+00:12:03,370 --> 00:12:04,750
+in banana.
+
+280
+00:12:04,750 --> 00:12:08,170
+So letter is being moved
+for us by the For statement.
+
+281
+00:12:08,170 --> 00:12:10,980
+
+282
+00:12:10,980 --> 00:12:12,130
+OK?
+
+283
+00:12:12,130 --> 00:12:14,310
+So that's looping through.
+
+284
+00:12:14,310 --> 00:12:16,310
+Now, it turns out there's
+a lot of common things
+
+285
+00:12:16,310 --> 00:12:17,768
+that we want to do
+that are already
+
+286
+00:12:17,768 --> 00:12:19,776
+built into Python for us.
+
+287
+00:12:19,776 --> 00:12:22,990
+Clear the old screen there.
+
+288
+00:12:22,990 --> 00:12:24,480
+We call these "slicing."
+
+289
+00:12:24,480 --> 00:12:28,690
+So the index operator looks
+up various things in a string.
+
+290
+00:12:28,690 --> 00:12:30,400
+But we can also
+pull substrings out,
+
+291
+00:12:30,400 --> 00:12:33,510
+using the colon in addition
+to the square brackets.
+
+292
+00:12:33,510 --> 00:12:36,300
+Again, this is called "slicing."
+
+293
+00:12:36,300 --> 00:12:39,070
+So the colon
+operator, basically,
+
+294
+00:12:39,070 --> 00:12:43,490
+takes a starting position
+and, then, an ending position.
+
+295
+00:12:43,490 --> 00:12:47,020
+But the ending position
+is up-to but not including
+
+296
+00:12:47,020 --> 00:12:47,780
+the second one.
+
+297
+00:12:47,780 --> 00:12:50,530
+So it's up-to,
+but not including.
+
+298
+00:12:50,530 --> 00:12:53,040
+Up-to but not including,
+just like the 0,
+
+299
+00:12:53,040 --> 00:12:54,430
+you get used up pretty quick.
+
+300
+00:12:54,430 --> 00:12:59,240
+But the first time you see
+it, it's a little bit wonky.
+
+301
+00:12:59,240 --> 00:13:02,820
+So if we're going 0 through 4,
+that's how I read this print.
+
+302
+00:13:02,820 --> 00:13:07,540
+S sub 0 through 4, or--
+better said-- S, 0, up-to
+
+303
+00:13:07,540 --> 00:13:08,970
+but not including 4.
+
+304
+00:13:08,970 --> 00:13:12,310
+That is, print me out
+the chunk that is up-to
+
+305
+00:13:12,310 --> 00:13:14,150
+but not including 4.
+
+306
+00:13:14,150 --> 00:13:15,610
+So it doesn't include 4.
+
+307
+00:13:15,610 --> 00:13:17,945
+And so, out comes "mont."
+
+308
+00:13:17,945 --> 00:13:19,610
+All right?
+
+309
+00:13:19,610 --> 00:13:22,690
+So the next one is 6
+up-to but not including 7.
+
+310
+00:13:22,690 --> 00:13:26,750
+So it starts at 6, up-to
+but not including 7.
+
+311
+00:13:26,750 --> 00:13:31,820
+So out comes the P. And
+even though you might expect
+
+312
+00:13:31,820 --> 00:13:36,160
+that it would traceback
+on this, here's
+
+313
+00:13:36,160 --> 00:13:38,360
+a moment where Python
+is a little forgiving,
+
+314
+00:13:38,360 --> 00:13:40,170
+saying, I'll give
+you a break here.
+
+315
+00:13:40,170 --> 00:13:43,000
+If you go 6 up-to
+but not including 20,
+
+316
+00:13:43,000 --> 00:13:45,470
+I'll just stop at the
+end of the string.
+
+317
+00:13:45,470 --> 00:13:47,000
+So 6 to the end.
+
+318
+00:13:47,000 --> 00:13:49,990
+So you can over-reference
+here, and you
+
+319
+00:13:49,990 --> 00:13:51,500
+won't get yourself in trouble.
+
+320
+00:13:51,500 --> 00:13:53,280
+So that comes out "python."
+

@@ -1,0 +1,268 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/SyexB3Nnzug
+
+1
+00:00:06,030 --> 00:00:08,870
+hello again and welcome back operations
+management
+
+2
+00:00:08,870 --> 00:00:12,039
+are continuing with the grouping of
+videos
+
+3
+00:00:12,039 --> 00:00:16,429
+on 7 tools of quality and today we're gonna be
+talking about histograms
+
+4
+00:00:16,429 --> 00:00:21,039
+basically a histogram is just a
+graphical representation
+
+5
+00:00:21,039 --> 00:00:24,050
+of the variation or distribution of data
+
+6
+00:00:24,050 --> 00:00:27,839
+so what we're doing is we're taking data
+putting in two categories
+
+7
+00:00:27,839 --> 00:00:32,278
+and now we're making a chart so when we
+use histograms
+
+8
+00:00:32,278 --> 00:00:35,679
+we try to decide can we see the shape
+
+9
+00:00:35,679 --> 00:00:38,780
+of a data's distribution? Is it normally
+distributed
+
+10
+00:00:38,780 --> 00:00:42,500
+Is there any kind of bias
+
+11
+00:00:42,500 --> 00:00:47,500
+or skewness to it do we need to compare
+the output across processes 
+
+12
+00:00:47,500 --> 00:00:52,738
+for example do we need to take a look at
+one production line versus another and
+
+13
+00:00:52,738 --> 00:00:56,000
+take a look at the output to see whether
+they're roughly the same
+
+14
+00:00:56,000 --> 00:00:59,159
+another thing about histograms all that
+data
+
+15
+00:00:59,159 --> 00:01:03,718
+on them must be numerical we can't use
+anything like colors
+
+16
+00:01:03,719 --> 00:01:08,649
+or people are things like that what we
+want to do is take a look at numerical
+
+17
+00:01:08,649 --> 00:01:09,250
+data
+
+18
+00:01:09,250 --> 00:01:12,400
+We want to see what the categorized
+
+19
+00:01:12,400 --> 00:01:17,049
+for the shape of that data so here's a sample
+histogram
+
+20
+00:01:17,049 --> 00:01:20,330
+for call center and as you can see me
+
+21
+00:01:20,329 --> 00:01:23,750
+across the bottom line categories of the
+numbers of minutes
+
+22
+00:01:23,750 --> 00:01:28,769
+on hold 0 to 1, 1 to 2,  2 to 3 and
+so forth
+
+23
+00:01:28,769 --> 00:01:31,859
+and then on the y-axis
+
+24
+00:01:31,859 --> 00:01:35,060
+we are showing the number of customers
+willing to wait
+
+25
+00:01:35,060 --> 00:01:39,790
+for those particular minutes and now you
+can see me that this is roughly a
+
+26
+00:01:39,790 --> 00:01:41,390
+normally distributed
+
+27
+00:01:41,390 --> 00:01:45,200
+distribution of data because it's
+roughly bell-shaped
+
+28
+00:01:45,200 --> 00:01:49,228
+where the peak in the center and as you
+can see
+
+29
+00:01:49,228 --> 00:01:53,640
+all these partial right next to each
+other we've categorized the data
+
+30
+00:01:53,640 --> 00:01:58,430
+so that we're checking between one and
+two minutes to in three minutes 3&4
+
+31
+00:01:58,430 --> 00:02:01,520
+and we're just checking to see if the frequency
+
+32
+00:02:01,519 --> 00:02:05,728
+for each of these categories so in other
+words it's also like
+
+33
+00:02:05,728 --> 00:02:11,590
+graphically representing a frequency
+distribution
+
+34
+00:02:11,590 --> 00:02:15,140
+so when we look at a histogram we
+noticed that the shape of the data 
+
+35
+00:02:15,139 --> 00:02:15,779
+provide
+
+36
+00:02:15,780 --> 00:02:20,890
+insight into the process producing the
+data a bell curve is going to show a
+
+37
+00:02:20,889 --> 00:02:22,449
+normal distribution
+
+38
+00:02:22,449 --> 00:02:27,310
+if we have a tail to the right or left
+that indicates some kind of skewness to
+
+39
+00:02:27,310 --> 00:02:30,390
+data if we end up with a rectangular
+shape
+
+40
+00:02:30,389 --> 00:02:33,419
+it indicates there's uniform distribution
+
+41
+00:02:33,419 --> 00:02:37,059
+so by looking at that distribution the
+data we have
+
+42
+00:02:37,060 --> 00:02:40,420
+a sense for what kind of process we have
+
+43
+00:02:40,419 --> 00:02:45,329
+when we built a histogram we can do it
+in Excel
+
+44
+00:02:45,330 --> 00:02:50,340
+we enter data by category so if we're
+looking at the diameter a whole
+
+45
+00:02:50,340 --> 00:02:54,069
+we have all these categories less than
+10 centimeters
+
+46
+00:02:54,069 --> 00:02:57,840
+between 10-11 11-12 and so forth
+
+47
+00:02:57,840 --> 00:03:02,650
+and we're calculating the frequency for
+each of these particular categories
+
+48
+00:03:02,650 --> 00:03:06,039
+notice none of these categories will
+overlap
+
+49
+00:03:06,039 --> 00:03:09,039
+so that they are distinct one from
+another
+
+50
+00:03:09,039 --> 00:03:12,379
+from this we then plotted in
+
+51
+00:03:12,379 --> 00:03:16,789
+using the chart tools and we select the
+column chart
+
+52
+00:03:16,789 --> 00:03:20,289
+and then we edited to reduce the gap
+between the columns
+
+53
+00:03:20,289 --> 00:03:25,259
+and also to provide titles so create a
+histogram is fairly simple
+
+54
+00:03:25,259 --> 00:03:29,319
+we're actually taking a frequency
+distribution of data
+
+55
+00:03:29,319 --> 00:03:33,459
+or graphing it to see the shape of it
+
+56
+00:03:33,459 --> 00:03:36,739
+next time we'll be talking about another
+tool. I'll see you then
+

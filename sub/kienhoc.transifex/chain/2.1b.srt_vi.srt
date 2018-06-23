@@ -1,0 +1,960 @@
+0
+00:00:00,000 --> 00:00:00,377
+https://youtu.be/71EgPoBY_38
+
+1
+00:00:00,377 --> 00:00:02,210
+Hãy bàn về các thành phần khác nhau
+
+2
+00:00:02,210 --> 00:00:05,170
+mà ta sẽ tìm thấy trong phân tích chuỗi thời gian.
+
+3
+00:00:05,170 --> 00:00:07,800
+Thành phần đầu tiên mà ta sẽ tìm là mức độ.
+
+4
+00:00:07,800 --> 00:00:11,410
+Đây là giá trị mà ta thấy nhu cầu lơ lửng ở giữa, giá trị trung bình.
+
+5
+00:00:11,410 --> 00:00:13,520
+Ở đây bên phải ta có hình ảnh
+
+6
+00:00:13,520 --> 00:00:15,660
+của tất cả các số liệu khác nhau.
+
+7
+00:00:15,660 --> 00:00:17,200
+Ta có thể thấy ở đây rằng
+
+8
+00:00:17,200 --> 00:00:19,710
+chúng lơ lửng quanh một mức độ nhất định.
+
+9
+00:00:19,710 --> 00:00:22,490
+Và điều đó thể hiện được quy mô của phân tích chuỗi thời gian
+
+10
+00:00:22,490 --> 00:00:26,640
+bởi nó kiểu như định mức cho bên nhu cầu.
+
+11
+00:00:26,640 --> 00:00:29,710
+Và nếu không có kiểu mẫu khác, không thể hiện thành phần nào khác,
+
+12
+00:00:29,710 --> 00:00:31,560
+thì ta có thể nói dự báo
+
+13
+00:00:31,560 --> 00:00:33,590
+sẽ là giá trị bất biến.
+
+14
+00:00:33,590 --> 00:00:35,690
+Vậy ta sẽ gọi đây là Mức (a)
+
+15
+00:00:35,690 --> 00:00:38,070
+và bạn có thể thấy nó chỉ là giá trị trung bình
+
+16
+00:00:38,070 --> 00:00:41,600
+biểu thị tất cả các số liệu khác nhau
+
+17
+00:00:41,600 --> 00:00:44,080
+Vậy đây là kiểu mẫu - mức dễ nhất.
+
+18
+00:00:44,080 --> 00:00:46,210
+Thành phần thứ hai là xu hướng, và nó
+
+19
+00:00:46,210 --> 00:00:48,520
+được xác định như là tỉ lệ tăng trưởng hoặc giảm sút.
+
+20
+00:00:48,520 --> 00:00:50,120
+Nó phải chuyển động không đổi
+
+21
+00:00:50,120 --> 00:00:52,300
+theo một hướng này hoặc hướng khác.
+
+22
+00:00:52,300 --> 00:00:54,140
+Ta cho thấy đây là xu hướng tích cực.
+
+23
+00:00:54,140 --> 00:00:56,100
+Bạn cũng có thể có xu hướng tiêu cực.
+
+24
+00:00:56,100 --> 00:00:57,670
+Nó có thể xảy ra.
+
+25
+00:00:57,670 --> 00:01:00,580
+Về cơ bản nó là một đường thẳng như hình ta biểu hiện ở đây.
+
+26
+00:01:00,580 --> 00:01:02,080
+Đây là xu hướng tuyến tính, và ta
+
+27
+00:01:02,080 --> 00:01:04,769
+sẽ nói hệ số góc đó là b.
+
+28
+00:01:04,769 --> 00:01:06,520
+Nhưng bạn cũng có thể thấy xu hướng mũ
+
+29
+00:01:06,520 --> 00:01:08,020
+trông như thế này.
+
+30
+00:01:08,020 --> 00:01:09,990
+Rất nguy hiểm, bởi sau đó bạn phải
+
+31
+00:01:09,990 --> 00:01:13,570
+đảm bảo rằng nó tăng trưởng theo hàm mũ.
+
+32
+00:01:13,570 --> 00:01:15,580
+Vậy nên bạn phải giám sát rất chặt chẽ.
+
+33
+00:01:15,580 --> 00:01:18,230
+Nếu bạn bắt đầu vẽ mô hình xu hướng mũ,
+
+34
+00:01:18,230 --> 00:01:19,540
+nó sẽ gây ra vấn đề.
+
+35
+00:01:19,540 --> 00:01:22,380
+Nên bạn phải cực kì cẩn thận khi giám sát nó.
+
+36
+00:01:22,380 --> 00:01:24,850
+Một cái phổ biến hơn mà bạn sẽ thấy
+
+37
+00:01:24,850 --> 00:01:26,285
+trông như thế này. Ở đây bạn có một mức độ,
+
+38
+00:01:26,285 --> 00:01:29,450
+và bạn mong nó sẽ mọc dài ra.
+
+39
+00:01:29,450 --> 00:01:31,010
+Nó sẽ giảm.
+
+40
+00:01:31,010 --> 00:01:33,370
+Và ta sẽ bàn thêm về điều đó, bởi vấn đề
+
+41
+00:01:33,370 --> 00:01:36,170
+về xu hướng là xu hướng không kéo dài mãi mãi.
+
+42
+00:01:36,170 --> 00:01:37,920
+Vậy cuối cùng, ta cho rằng chúng
+
+43
+00:01:37,920 --> 00:01:42,910
+sẽ thay đổi hệ số góc và có lẽ giảm đi một chút.
+
+44
+00:01:42,910 --> 00:01:44,950
+Vậy bạn phải kiểm soát điều đó.
+
+45
+00:01:44,950 --> 00:01:47,550
+Nhưng đó là thành phần thứ hai ta đang tìm hiểu, xu hướng.
+
+46
+00:01:47,550 --> 00:01:51,299
+Ta có mức độ, xu hướng, và sau đó ta có tính thời vụ.
+
+47
+00:01:51,299 --> 00:01:52,840
+Ta sẽ gọi đó là F, và ta sẽ
+
+48
+00:01:52,840 --> 00:01:56,480
+nói về ý nghĩa của nó, nhân tố F này.
+
+49
+00:01:56,480 --> 00:02:00,220
+Nhưng về cơ bản, tính thời vụ là một chu kỳ lặp lại.
+
+50
+00:02:00,220 --> 00:02:04,070
+Và điều quan trọng là nó quanh một khoảng thời gian đã biết được hoặc cố định
+
+51
+00:02:04,070 --> 00:02:09,650
+theo giờ, theo ngày, theo tuần, theo tháng, theo quý, theo năm.
+
+52
+00:02:09,650 --> 00:02:13,300
+Những thứ đó chẳng quan trọng miễn là nó cố định hoặc đã biết trước.
+
+53
+00:02:13,300 --> 00:02:16,590
+Và nó có thể được gây ra bởi một trong hai thế lực tự nhiên hoặc nhân tạo.
+
+54
+00:02:16,590 --> 00:02:18,340
+Bạn có thể nghĩ tới mùa hè và mùa đông.
+
+55
+00:02:18,340 --> 00:02:20,260
+Vào mùa đông, một số sản phẩm nhất định của bạn sẽ
+
+56
+00:02:20,260 --> 00:02:22,900
+không có nhu cầu cao.
+
+57
+00:02:22,900 --> 00:02:25,340
+Các yếu tố nhân tạo như mùa tựu trường
+
+58
+00:02:25,340 --> 00:02:27,130
+xảy ra vào một thời điểm nhất định trong năm.
+
+59
+00:02:27,130 --> 00:02:30,620
+Nó luôn xảy ra vào mùa thu - ở Bắc Mỹ.
+
+60
+00:02:30,620 --> 00:02:32,010
+Điều đó có nghĩ là
+
+61
+00:02:32,010 --> 00:02:34,560
+ta sẽ có tính mùa vụ, và nó chẳng liên quan
+
+62
+00:02:34,560 --> 00:02:37,810
+gì tới các nguyên nhân tự nhiên - tất cả đều là nhân tạo.
+
+63
+00:02:37,810 --> 00:02:40,060
+Nhưng lần nữa, hãy nhớ khi ta nói về chuỗi thời gian,
+
+64
+00:02:40,060 --> 00:02:42,190
+đây là phương pháp hộp đen.
+
+65
+00:02:42,190 --> 00:02:44,370
+Tôi chỉ đang xem xét tính thời vụ
+
+66
+00:02:44,370 --> 00:02:49,870
+để cố thấy được các kiểu mẫu trong dữ liệu có sẵn này.
+
+67
+00:02:49,870 --> 00:02:53,050
+Và cái cuối cùng - hay không phải cái cuối, cái thứ tư,
+
+68
+00:02:53,050 --> 00:02:54,620
+là dao động ngẫu nhiên.
+
+69
+00:02:54,620 --> 00:02:57,030
+Và ta sẽ gọi đây là e, hay epsilon.
+
+70
+00:02:57,030 --> 00:02:58,970
+Và đây là phần còn lại của độ biến thiên
+
+71
+00:02:58,970 --> 00:03:01,900
+sau khi tất cả các thành phần khác đã được sử dụng.
+
+72
+00:03:01,900 --> 00:03:04,090
+Nó đại loại là phần thừa.
+
+73
+00:03:04,090 --> 00:03:06,950
+Bạn thấy các biến số bất định, không thể đoán định.
+
+74
+00:03:06,950 --> 00:03:08,890
+Mọi thứ bạn thấy ở đây, tất cả những tiếng ồn nhỏ nhỏ này. 
+
+75
+00:03:08,890 --> 00:03:09,389
+Phải không?
+
+76
+00:03:09,389 --> 00:03:11,850
+Tất cả những thứ tiếng nhỏ nhỏ này.
+
+77
+00:03:11,850 --> 00:03:14,090
+Và nó là thứ mà ta sẽ luôn thấy ở đó,
+
+78
+00:03:14,090 --> 00:03:17,850
+bởi có một dự đoán sẽ không bao giờ hoàn toàn chính xác.
+
+79
+00:03:17,850 --> 00:03:20,250
+Nên bạn sẽ luôn có tiếng ồn đó.
+
+80
+00:03:20,250 --> 00:03:22,620
+Giờ ta muốn nói ngắn gọn về
+
+81
+00:03:22,620 --> 00:03:23,777
+thành phần thứ 5.
+
+82
+00:03:23,777 --> 00:03:25,360
+Ta sẽ không bàn gì nhiều về no
+
+83
+00:03:25,360 --> 00:03:26,818
+suốt phần còn lại của khóa học này, nhưng tôi
+
+84
+00:03:26,818 --> 00:03:29,010
+muốn đảm bảo rằng bạn hiểu nó là gì.
+
+85
+00:03:29,010 --> 00:03:30,920
+Và đó là chuyển động theo chu kì.
+
+86
+00:03:30,920 --> 00:03:34,090
+Chuyển động theo chu kì không giống như tính thời vụ.
+
+87
+00:03:34,090 --> 00:03:36,450
+Phải, nó chuyển động theo chu kì, nhưnng nó khôn
+
+88
+00:03:36,450 --> 00:03:37,910
+phải với chu kì cố định.
+
+89
+00:03:37,910 --> 00:03:40,470
+Độ dài của chu kì sẽ khác nhau.
+
+90
+00:03:40,470 --> 00:03:43,530
+Nó thường được dùng cho chu kỳ kinh doanh hay bất kì 
+
+91
+00:03:43,530 --> 00:03:46,610
+tình trạng kinh tế hay kinh tế vĩ mô nào.
+
+92
+00:03:46,610 --> 00:03:49,510
+Để tôi đưa ra một ví dụ.
+
+93
+00:03:49,510 --> 00:03:50,620
+Đây là một bảng thông kê tuyệt vời.
+
+94
+00:03:50,620 --> 00:03:53,830
+Đây là PMI, chỉ số quản lý thu mua
+
+95
+00:03:53,830 --> 00:03:55,860
+từ Viện Quản lý Cung Ứng.
+
+96
+00:03:55,860 --> 00:03:59,200
+Chỉ số đó chạy từ 0 tới 100,
+
+97
+00:03:59,200 --> 00:04:01,610
+và con số chính là 50
+
+98
+00:04:01,610 --> 00:04:04,840
+Nếu chỉ số ở dưới 50,
+
+99
+00:04:04,840 --> 00:04:08,670
+điều đó có nghĩa họ nghĩ rằng kinh tế đang thu hẹp.
+
+100
+00:04:08,670 --> 00:04:10,769
+Nếu nó trên 50, họ nghĩ nó đang phát triển.
+
+101
+00:04:10,769 --> 00:04:13,060
+Và họ thực hiện qua một đống khảo sát và này nọ.
+
+102
+00:04:13,060 --> 00:04:14,601
+Họ đã thực hiện nó được nhiều năm rồi.
+
+103
+00:04:14,601 --> 00:04:19,240
+Và đây là ảnh chụp nhanh gần đây từ năm 2006, tháng 10 năm 2006,
+
+104
+00:04:19,240 --> 00:04:21,980
+đến tháng 10 năm 2010, thể hiện sự suy thoái.
+
+105
+00:04:21,980 --> 00:04:24,380
+Gần như là suy thoái toàn cầu
+
+106
+00:04:24,380 --> 00:04:26,455
+Ở đây bạn thấy chỉ sổ
+
+107
+00:04:26,455 --> 00:04:29,370
+ở giữa giữa, kiểu như lơ lửng ở giữa,
+
+108
+00:04:29,370 --> 00:04:31,960
+và sau đó ta có một sự thu hẹp lớn.
+
+109
+00:04:31,960 --> 00:04:35,920
+và rồi trong vòng vài năm trước đây, ta bắt đầu mở rộng.
+
+110
+00:04:35,920 --> 00:04:37,510
+Vậy đây là chu kỳ kinh doanh.
+
+111
+00:04:37,510 --> 00:04:40,230
+Và trong trường hợp này, chu kỳ kinh doanh
+
+112
+00:04:40,230 --> 00:04:42,550
+kéo dài khoảng - bao lâu nhỉ?
+
+113
+00:04:42,550 --> 00:04:43,550
+Khoảng 1 năm rưỡi thì phải?
+
+114
+00:04:43,550 --> 00:04:44,780
+18 tháng?
+
+115
+00:04:44,780 --> 00:04:47,110
+Vậy bạn có thể nghĩ về điều đó, nhưng các chu kỳ kinh doanh khác
+
+116
+00:04:47,110 --> 00:04:49,630
+sẽ có độ dài khác nhau.
+
+117
+00:04:49,630 --> 00:04:54,460
+Rồi ta ở đây - cùng chỉ số, nhưng qua ngược về năm 1949.
+
+118
+00:04:54,460 --> 00:04:58,390
+Và bạn có thể thấy những ngọn khác nhau và các chu kỳ
+
+119
+00:04:58,390 --> 00:05:00,450
+có nhiều độ dài khác nhau.
+
+120
+00:05:00,450 --> 00:05:03,800
+Đây là lí do tại sao nó chuyển động theo chu kỳ - không phải thường kỳ
+
+121
+00:05:03,800 --> 00:05:07,420
+Nếu ta biết chính xác mỗi lần kinh tế suy sụp sẽ kéo dài trong bao lâu,
+
+122
+00:05:07,420 --> 00:05:09,750
+thế giới giờ sẽ rất khác rồi.
+
+123
+00:05:09,750 --> 00:05:12,150
+Để tôi chỉ ra một chuyện khác.
+
+124
+00:05:12,150 --> 00:05:17,010
+Nếu tôi ngồi ở đây - ví dụ mùa hè năm 2009,
+
+125
+00:05:17,010 --> 00:05:20,070
+hay mùa xuân năm 2009, ngay ở đó --
+
+126
+00:05:20,070 --> 00:05:23,030
+và tôi đang dự báo cho 3 hay 6 tháng tới,
+
+127
+00:05:23,030 --> 00:05:27,050
+nếu tôi chỉ dùng ảnh chụp nhanh này, và đây là thế giới của tôi,
+
+128
+00:05:27,050 --> 00:05:28,500
+thế giới của tôi trông như thế nào?
+
+129
+00:05:28,500 --> 00:05:31,610
+Nó trông như tôi là một xu hướng chính.
+
+130
+00:05:31,610 --> 00:05:35,740
+Vậy tùy thuộc vào mức độ quan điểm của bạn khi bạn đến,
+
+131
+00:05:35,740 --> 00:05:38,450
+và nếu bạn tiến hành dự báo ngắn hạn,
+
+132
+00:05:38,450 --> 00:05:41,910
+bạn có thể thấy nó là một bước tăng vọt,
+
+133
+00:05:41,910 --> 00:05:45,850
+một xu hướng nổi bật trong kinh tế.
+
+134
+00:05:45,850 --> 00:05:48,680
+Và có một điều về những kiểu mẫu khác nhau này
+
+135
+00:05:48,680 --> 00:05:51,070
+mức độ quan điểm của bạn, tầm nhìn của bạn
+
+136
+00:05:51,070 --> 00:05:53,160
+thật sự quan trọng.
+
+137
+00:05:53,160 --> 00:05:56,470
+Bởi cũng tương tự vậy, nếu tôi ngồi ở đây,
+
+138
+00:05:56,470 --> 00:06:02,640
+và tôi ở thời điểm mùa thu năm 2008, tôi là một xu hướng tiêu cực.
+
+139
+00:06:02,640 --> 00:06:06,410
+Vậy trọng điểm mà tôi đang chỉ ra ở đây là - bạn ngồi ở đâu
+
+140
+00:06:06,410 --> 00:06:08,740
+và khung thời gian của bạn là gì sẽ điều khiển
+
+141
+00:06:08,740 --> 00:06:12,311
+khá nhiều loại kiểu mẫu mà bạn đang xem xét.
+
+142
+00:06:12,311 --> 00:06:12,810
+OK.
+
+143
+00:06:12,810 --> 00:06:14,840
+Vậy ta có 5 kiểu mẫu này.
+
+144
+00:06:14,840 --> 00:06:18,190
+Ta có một mức độ, một xu hướng, ta có tính thời vụ,
+
+145
+00:06:18,190 --> 00:06:20,530
+ta có chuyển động theo chu kỳ, và rồi ta 
+
+146
+00:06:20,530 --> 00:06:21,950
+có phần sai số.
+
+147
+00:06:21,950 --> 00:06:22,950
+Tôi làm gì được với chúng?
+
+148
+00:06:22,950 --> 00:06:24,110
+Thì, tôi có thể kết hợp chúng.
+
+149
+00:06:24,110 --> 00:06:27,270
+Tôi có thể kết hợp các thành phần này bằng những cách khác nhau.
+
+150
+00:06:27,270 --> 00:06:29,250
+Trong đó có một cách là nhân lên.
+
+151
+00:06:29,250 --> 00:06:32,860
+Nếu tôi nghĩ xu hướng thay đổi với - ví dụ như
+
+152
+00:06:32,860 --> 00:06:36,980
+tôi có mỗi mùa - đông, xuân, hạ, và thu
+
+153
+00:06:36,980 --> 00:06:41,100
+có mức xu hướng khác nhau, và nó tăng lên ví dụ 10%
+
+154
+00:06:41,100 --> 00:06:43,260
+hay giảm 10%.
+
+155
+00:06:43,260 --> 00:06:47,186
+Nếu tôi nghĩ nó là xu hướng nhân lên, thì tôi nhân nó.
+
+156
+00:06:47,186 --> 00:06:48,560
+Và sau đó tôi có thể nhân sai số
+
+157
+00:06:48,560 --> 00:06:49,830
+và tất cả các loại số hạng khác.
+
+158
+00:06:49,830 --> 00:06:53,830
+Đây là nơi tôi nghĩ những thay đổi ở tính thời vụ có liên quan.
+
+159
+00:06:53,830 --> 00:06:55,620
+are relative.
+
+160
+00:06:55,620 --> 00:06:57,380
+Một cách khác để xem xét điều này - hãy
+
+161
+00:06:57,380 --> 00:07:00,140
+dọn cái này đã - là nghĩ chúng là thành phần phụ thêm thôi.
+
+162
+00:07:00,140 --> 00:07:04,800
+Ví dụ, nếu tôi nghĩ rằng vào mùa hè nhu cầu sẽ tăng 
+
+163
+00:07:04,800 --> 00:07:08,180
+một lượng tuyệt đối - ví dụ 100 đơn vị hay 1000 đơn vị - thì
+
+164
+00:07:08,180 --> 00:07:09,380
+đó là thành phần phụ thêm.
+
+165
+00:07:09,380 --> 00:07:11,070
+Nếu tôi nghĩ nó chỉ là một đường va chạm thẳng băng,
+
+166
+00:07:11,070 --> 00:07:14,080
+nếu tôi nghĩ nó là một tỷ lệ phần trăm của xu hướng,
+
+167
+00:07:14,080 --> 00:07:15,840
+thì tôi ở đây để nhân số.
+
+168
+00:07:15,840 --> 00:07:19,430
+Vậy bạn phải nghĩ về cách bạn muốn sử dụng các xu hướng này.
+
+169
+00:07:19,430 --> 00:07:20,880
+Nó có phải là hàm phụ trợ không?
+
+170
+00:07:20,880 --> 00:07:23,630
+Nó có phải hàm nhân không?
+
+171
+00:07:23,630 --> 00:07:26,210
+Nhưng như một số các bạn có thể đã nhận ra,
+
+172
+00:07:26,210 --> 00:07:27,940
+nếu tôi nghĩ nó đều là nhân,
+
+173
+00:07:27,940 --> 00:07:31,650
+tôi có thể đổi nó thành hàm phụ trợ.
+
+174
+00:07:31,650 --> 00:07:33,830
+chỉ bằng cách biến đổi loga.
+
+175
+00:07:33,830 --> 00:07:35,630
+Dùng logarit tự nhiên - thật ra là loga
+
+176
+00:07:35,630 --> 00:07:38,700
+của bất kì cơ số nào - tới hàm này, và nó
+
+177
+00:07:38,700 --> 00:07:40,990
+trở thành hàm phụ trợ.
+
+178
+00:07:40,990 --> 00:07:44,540
+Và vậy bạn có thể biến một hàm nhân đơn thuần
+
+179
+00:07:44,540 --> 00:07:46,410
+thành hàm phụ trợ.
+
+180
+00:07:46,410 --> 00:07:49,720
+Hơi khó hiểu một chút, nhưng bạn có thể làm được thôi.
+
+181
+00:07:49,720 --> 00:07:53,390
+Nhưng việc xảy ra thường xuyên hơn, phổ biến hơn
+
+182
+00:07:53,390 --> 00:07:55,580
+là ý tưởng trộn hai hàm.
+
+183
+00:07:55,580 --> 00:07:58,450
+Ở đây có 3 ví dụ về các mô hình hỗn hợp
+
+184
+00:07:58,450 --> 00:08:00,430
+Bạn có thể tạo ra nhiều mô hình khác.
+
+185
+00:08:00,430 --> 00:08:02,970
+Trong ví dụ đầu tiên, nó thể hiện rằng nhu cầu
+
+186
+00:08:02,970 --> 00:08:06,330
+x của t - vậy đây là nhu cầu thực tế trong khoảng thời gian t --
+
+187
+00:08:06,330 --> 00:08:11,280
+sẽ bằng với nhân tố thời vụ - ta nói
+
+188
+00:08:11,280 --> 00:08:14,600
+nó có tính nhân - của mức độ và xu hướng.
+
+189
+00:08:14,600 --> 00:08:15,991
+Đây là b lần t.
+
+190
+00:08:15,991 --> 00:08:16,490
+Được chứ?
+
+191
+00:08:16,490 --> 00:08:19,320
+b này là hệ số góc, t là số đơn vị thời gian
+
+192
+00:08:19,320 --> 00:08:20,150
+tôi đã thực hiện.
+
+193
+00:08:20,150 --> 00:08:23,300
+Vậy bạn có thể thấy ở dưới đây, cuối bảng chú thích.
+
+194
+00:08:23,300 --> 00:08:26,670
+Nó nói rằng nếu tính thời vụ vào mùa đông
+
+195
+00:08:26,670 --> 00:08:29,350
+doanh số tăng 10%, nó đang ảnh hưởng tới
+
+196
+00:08:29,350 --> 00:08:31,440
+cả mức độ lẫn xu hướng.
+
+197
+00:08:31,440 --> 00:08:34,960
+Rồi tôi cũng thêm vào chỉ số tuần hoàn và sai số.
+
+198
+00:08:34,960 --> 00:08:37,450
+Một mô hình khác, mô hình thứ hai.
+
+199
+00:08:37,450 --> 00:08:40,090
+Trong mô hình này, nhu cầu thực tế trong khoảng thời gian t ta sẽ nói
+
+200
+00:08:40,090 --> 00:08:42,960
+là bằng với mức độ, nhưng mức độ không thay đổi
+
+201
+00:08:42,960 --> 00:08:44,350
+theo mùa.
+
+202
+00:08:44,350 --> 00:08:47,446
+Ta đang nói chỉ có xu hướng thay đổi thôi.
+
+203
+00:08:47,446 --> 00:08:49,070
+Ta nói trong suốt mùa đông,
+
+204
+00:08:49,070 --> 00:08:53,329
+doanh số tăng 3% thay vì 6%
+
+205
+00:08:53,329 --> 00:08:55,370
+Và rồi trong mùa hè nó thay đổi theo cách nào đó khác.
+
+206
+00:08:55,370 --> 00:08:58,810
+Vậy chỉ có xu hướng bị ảnh hưởng ở đây.
+
+207
+00:08:58,810 --> 00:09:00,932
+Và mô hình cuối cùng tôi có ở đây.
+
+208
+00:09:00,932 --> 00:09:01,890
+Nó chỉ ngược lại thôi.
+
+209
+00:09:01,890 --> 00:09:05,470
+Nó thể hiện mức độ bị ảnh hưởng bởi mùa.
+
+210
+00:09:05,470 --> 00:09:08,270
+Ta có thể nói đại loại là, vào mùa hè,
+
+211
+00:09:08,270 --> 00:09:11,220
+bình thường ta bán được 1,000 món mỗi tháng suốt năm, 
+
+212
+00:09:11,220 --> 00:09:14,880
+nhưng vào mùa hè, tôi bán được thêm 20% nữa.
+
+213
+00:09:14,880 --> 00:09:16,810
+Nhưng xu hướng theo thời gian thì không thay đổi.
+
+214
+00:09:16,810 --> 00:09:18,970
+Chỉ có mức độ vào mùa hè là khác.
+
+215
+00:09:18,970 --> 00:09:20,840
+Nên bạn có thể thấy bạn có thể có sự kết hợp
+
+216
+00:09:20,840 --> 00:09:23,646
+giữa hàm nhân và hàm phụ trợ.
+
+217
+00:09:23,646 --> 00:09:25,020
+Vậy ta sẽ tập trung vào cái gì?
+
+218
+00:09:25,020 --> 00:09:28,210
+Ta sẽ tập trung vào bốn mô hình.
+
+219
+00:09:28,210 --> 00:09:30,610
+Cái đầu tiên là mô hình mức thẳng.
+
+220
+00:09:30,610 --> 00:09:33,850
+Và nó thể hiện rằng nhu cầu trong khoảng thời gian t
+
+221
+00:09:33,850 --> 00:09:36,310
+bằng với mức độ này, lượng không đổi này,
+
+222
+00:09:36,310 --> 00:09:39,507
+cộng thêm sai số, số nhiễu nhảy xung quanh
+
+223
+00:09:39,507 --> 00:09:41,090
+Tiếp theo, ta sẽ đi tìm hiểu xu hướng. 
+
+224
+00:09:41,090 --> 00:09:42,881
+Ở đây ta đang nói có mức độ này, nhưng sau đó có
+
+225
+00:09:42,881 --> 00:09:45,660
+một xu hướng chung là hoặc đang tăng hoặc đang giảm.
+
+226
+00:09:45,660 --> 00:09:48,390
+Và nếu nó đang giảm thì tất nhiên b này sẽ âm.
+
+227
+00:09:48,390 --> 00:09:51,260
+
+
+228
+00:09:51,260 --> 00:09:52,650
+Ở mô hình thứ ba,
+
+229
+00:09:52,650 --> 00:09:54,700
+ta sẽ trộn mức độ với tính thời vụ.
+
+230
+00:09:54,700 --> 00:09:56,690
+Vậy tôi đang nói rằng có một mức độ, và có
+
+231
+00:09:56,690 --> 00:09:58,500
+loại thời vụ nào đó.
+
+232
+00:09:58,500 --> 00:10:01,400
+Và sau đó mô hình cuối cùng đại loại là kết hợp chúng lại với nhau,
+
+233
+00:10:01,400 --> 00:10:03,910
+<br>ở mô hình này tôi có mức độ, xu hướng và tính thời vụ trộn với nhau.
+
+234
+00:10:03,910 --> 00:10:09,200
+Mức độ và xu hướng là thành phần phụ trợ,
+
+235
+00:10:09,200 --> 00:10:11,120
+nhưng tính thời vụ là thành phần nhân,
+
+236
+00:10:11,120 --> 00:10:13,600
+và tính thời vụ sẽ ảnh hưởng cả hai thành phần đó.
+
+237
+00:10:13,600 --> 00:10:16,770
+Vậy các mô hình này là cái ta sẽ tập trung.
+
+238
+00:10:16,770 --> 00:10:17,270
+Được rồi.
+
+239
+00:10:17,270 --> 00:10:19,250
+Bắt đầu thôi.
+

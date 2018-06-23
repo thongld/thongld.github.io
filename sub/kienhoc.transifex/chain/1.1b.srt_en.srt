@@ -1,0 +1,1184 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/-V-Y6Wktv4s
+
+1
+00:00:00,500 --> 00:00:03,140
+One way to classify supply chain processes
+
+2
+00:00:03,140 --> 00:00:06,150
+is as either a Push or a Pull System.
+
+3
+00:00:06,150 --> 00:00:09,900
+To illustrate this, let's look at a simple example.
+
+4
+00:00:09,900 --> 00:00:11,980
+Here at MIT in Kendall Square, we
+
+5
+00:00:11,980 --> 00:00:14,270
+have a sandwich shop that's close by to our building.
+
+6
+00:00:14,270 --> 00:00:15,432
+We go there a lot.
+
+7
+00:00:15,432 --> 00:00:17,390
+And one of the things I've found over the years
+
+8
+00:00:17,390 --> 00:00:20,950
+is you can learn almost everything about logistics
+
+9
+00:00:20,950 --> 00:00:22,870
+and supply chain from a sandwich shop.
+
+10
+00:00:22,870 --> 00:00:25,300
+So we're going to use a very simple example here,
+
+11
+00:00:25,300 --> 00:00:27,970
+and I'm sure you have a similar type of store or restaurant
+
+12
+00:00:27,970 --> 00:00:29,660
+right by you.
+
+13
+00:00:29,660 --> 00:00:32,250
+The idea is you've got this sandwich shop,
+
+14
+00:00:32,250 --> 00:00:35,100
+and this is a picture of someone making sandwiches by hand.
+
+15
+00:00:35,100 --> 00:00:37,240
+And you see someone is cutting the bread here,
+
+16
+00:00:37,240 --> 00:00:40,160
+and they've got some tomatoes ready, and some lettuce.
+
+17
+00:00:40,160 --> 00:00:42,240
+Some things are pre-prepared, and they're
+
+18
+00:00:42,240 --> 00:00:43,540
+making them on demand.
+
+19
+00:00:43,540 --> 00:00:46,980
+As someone comes in, they order a sandwich, and they make it.
+
+20
+00:00:46,980 --> 00:00:49,280
+So I went in a little while ago and looked
+
+21
+00:00:49,280 --> 00:00:52,480
+in at the different types of sandwiches that they can make.
+
+22
+00:00:52,480 --> 00:00:57,130
+So if you figure a sandwich consists of some kind of bread,
+
+23
+00:00:57,130 --> 00:00:59,780
+some kind of protein, whether meat or something,
+
+24
+00:00:59,780 --> 00:01:03,360
+some kind of spread, and some toppings.
+
+25
+00:01:03,360 --> 00:01:06,130
+In this store, they had 18 different breads,
+
+26
+00:01:06,130 --> 00:01:08,090
+six different types of protein-- turkey,
+
+27
+00:01:08,090 --> 00:01:10,680
+chicken, and things like that-- different types of spread,
+
+28
+00:01:10,680 --> 00:01:12,911
+whether it's mayonnaise, tomato, whatever,
+
+29
+00:01:12,911 --> 00:01:14,410
+and different toppings, whether it's
+
+30
+00:01:14,410 --> 00:01:16,950
+lettuce, tomato, all those different things.
+
+31
+00:01:16,950 --> 00:01:22,255
+And if you combine those, that's 21,600 unique sandwiches
+
+32
+00:01:22,255 --> 00:01:23,630
+that can be made, and that's only
+
+33
+00:01:23,630 --> 00:01:26,150
+considering if I only have one topping.
+
+34
+00:01:26,150 --> 00:01:27,950
+If I allow you to have two toppings,
+
+35
+00:01:27,950 --> 00:01:31,960
+like lettuce and tomato, then that goes up to over 400,000.
+
+36
+00:01:31,960 --> 00:01:34,610
+And if you look at it, the real, total number,
+
+37
+00:01:34,610 --> 00:01:37,650
+if I look at any combination, exceeds a million.
+
+38
+00:01:37,650 --> 00:01:40,210
+So you have all these different types of sandwiches.
+
+39
+00:01:40,210 --> 00:01:42,751
+Now obviously, they're not going to have all these sandwiches
+
+40
+00:01:42,751 --> 00:01:44,300
+pre-made and just waiting for you,
+
+41
+00:01:44,300 --> 00:01:46,710
+but sometimes, someone might want to come in and not
+
+42
+00:01:46,710 --> 00:01:48,570
+wait for someone to make a sandwich.
+
+43
+00:01:48,570 --> 00:01:50,929
+They might want to come here to this little area
+
+44
+00:01:50,929 --> 00:01:52,720
+where you can see some pre-made sandwiches.
+
+45
+00:01:52,720 --> 00:01:54,370
+Let me circle them right down here.
+
+46
+00:01:54,370 --> 00:01:57,170
+They might want to come in and just get something and go
+
+47
+00:01:57,170 --> 00:01:59,910
+because, while having them custom-made is great
+
+48
+00:01:59,910 --> 00:02:04,340
+because you can have any one of 21,600 unique sandwiches made,
+
+49
+00:02:04,340 --> 00:02:06,450
+sometimes you don't want to wait that long.
+
+50
+00:02:06,450 --> 00:02:10,240
+So what I've got here are two very different processes
+
+51
+00:02:10,240 --> 00:02:12,930
+for satisfying the demand for a sandwich.
+
+52
+00:02:12,930 --> 00:02:15,320
+And so we give formal names to these.
+
+53
+00:02:15,320 --> 00:02:18,920
+So the idea of a Make-to-Order is this example up here,
+
+54
+00:02:18,920 --> 00:02:22,460
+where I actually make the product once it's been ordered.
+
+55
+00:02:22,460 --> 00:02:25,240
+So I'm doing it once someone has placed an order of demand.
+
+56
+00:02:25,240 --> 00:02:27,130
+That's when I make it.
+
+57
+00:02:27,130 --> 00:02:30,800
+Now over here, in this case where I have the pre-made ones,
+
+58
+00:02:30,800 --> 00:02:34,090
+I made those to stock, or to inventory.
+
+59
+00:02:34,090 --> 00:02:36,430
+Now, you might ask yourself, how many do I make?
+
+60
+00:02:36,430 --> 00:02:39,326
+How do I know how many of these kind of sandwiches to make?
+
+61
+00:02:39,326 --> 00:02:40,450
+Well, that's the challenge.
+
+62
+00:02:40,450 --> 00:02:41,991
+You're making it to stock, it's based
+
+63
+00:02:41,991 --> 00:02:44,940
+on a forecast, versus making it by order,
+
+64
+00:02:44,940 --> 00:02:47,120
+you're actually making it on actual demand
+
+65
+00:02:47,120 --> 00:02:48,820
+that someone is requesting.
+
+66
+00:02:48,820 --> 00:02:51,650
+And then you've got this third category, engineer to order,
+
+67
+00:02:51,650 --> 00:02:54,360
+where you're not making a traditional product.
+
+68
+00:02:54,360 --> 00:02:56,510
+You might engineer something a little bit different
+
+69
+00:02:56,510 --> 00:02:57,260
+for that customer.
+
+70
+00:02:57,260 --> 00:03:00,950
+When they come in, they order something special off menu.
+
+71
+00:03:00,950 --> 00:03:03,480
+So let's continue with this analogy,
+
+72
+00:03:03,480 --> 00:03:05,980
+and let's formalize some of these ideas, what
+
+73
+00:03:05,980 --> 00:03:08,020
+a Push versus a Pull is.
+
+74
+00:03:08,020 --> 00:03:11,130
+So a push system-- and this is essentially
+
+75
+00:03:11,130 --> 00:03:13,250
+where you had the pre-ordered sandwiches--
+
+76
+00:03:13,250 --> 00:03:16,290
+is where the execution-- in this case, making a sandwich--
+
+77
+00:03:16,290 --> 00:03:19,780
+is performed in anticipation of an order.
+
+78
+00:03:19,780 --> 00:03:21,040
+So what does that mean?
+
+79
+00:03:21,040 --> 00:03:24,040
+That means I'm making my inventory based
+
+80
+00:03:24,040 --> 00:03:27,810
+on a forecast, what I expect or anticipate to come in.
+
+81
+00:03:27,810 --> 00:03:29,450
+It's proactive.
+
+82
+00:03:29,450 --> 00:03:31,560
+So it's being done ahead of time and it's
+
+83
+00:03:31,560 --> 00:03:33,690
+based on a projected need or demand.
+
+84
+00:03:33,690 --> 00:03:36,700
+You can contrast this with a pull system,
+
+85
+00:03:36,700 --> 00:03:40,370
+and this is where I make the sandwich to order.
+
+86
+00:03:40,370 --> 00:03:43,310
+Someone comes in, and in response to that order,
+
+87
+00:03:43,310 --> 00:03:44,850
+I make the sandwich.
+
+88
+00:03:44,850 --> 00:03:47,300
+Demand is known because someone actually placed the order,
+
+89
+00:03:47,300 --> 00:03:50,000
+it's known with certainty, and it's reactive.
+
+90
+00:03:50,000 --> 00:03:51,560
+I only do this when?
+
+91
+00:03:51,560 --> 00:03:53,280
+When they come in, and then I have
+
+92
+00:03:53,280 --> 00:03:55,350
+to start the whole process.
+
+93
+00:03:55,350 --> 00:03:57,650
+So when you look at supply chains,
+
+94
+00:03:57,650 --> 00:04:01,580
+there are very, very, very few that are all push or all pull.
+
+95
+00:04:01,580 --> 00:04:03,820
+We'll talk more about that in a second.
+
+96
+00:04:03,820 --> 00:04:06,990
+But the idea is that you usually have a combination of them.
+
+97
+00:04:06,990 --> 00:04:09,820
+And the point where your supply chain
+
+98
+00:04:09,820 --> 00:04:12,940
+changes from being a push to a pull
+
+99
+00:04:12,940 --> 00:04:15,020
+is sometimes called the push/pull boundary,
+
+100
+00:04:15,020 --> 00:04:16,930
+or the push/pull point.
+
+101
+00:04:16,930 --> 00:04:20,480
+And it's the place where you're done doing inventory
+
+102
+00:04:20,480 --> 00:04:24,610
+based on a forecast and you're switching it to actual demand.
+
+103
+00:04:24,610 --> 00:04:26,200
+So let's continue on with our example,
+
+104
+00:04:26,200 --> 00:04:28,220
+and let's talk about three sandwiches.
+
+105
+00:04:28,220 --> 00:04:30,740
+I made these up, but these are pretty representative.
+
+106
+00:04:30,740 --> 00:04:34,010
+So this first one is a pre-made sandwich, a ready made turkey
+
+107
+00:04:34,010 --> 00:04:34,510
+wrap.
+
+108
+00:04:34,510 --> 00:04:37,000
+You see it in its nice little plastic casing there.
+
+109
+00:04:37,000 --> 00:04:39,850
+They make these ahead of time the night before or the morning
+
+110
+00:04:39,850 --> 00:04:43,280
+before because they know they expect some demand.
+
+111
+00:04:43,280 --> 00:04:45,950
+Then there's some signature ham sandwiches that they only make
+
+112
+00:04:45,950 --> 00:04:49,750
+to order when someone comes in, and then I created an engineer
+
+113
+00:04:49,750 --> 00:04:51,660
+to order one, a Dagwood sandwich,
+
+114
+00:04:51,660 --> 00:04:54,060
+one-of-a-kind that they make if someone comes
+
+115
+00:04:54,060 --> 00:04:56,170
+in and they've got to give special directions.
+
+116
+00:04:56,170 --> 00:04:58,380
+So let's look how these three types of sandwiches
+
+117
+00:04:58,380 --> 00:05:00,000
+flow through.
+
+118
+00:05:00,000 --> 00:05:01,460
+Well, any one of these sandwiches
+
+119
+00:05:01,460 --> 00:05:03,070
+has three main steps.
+
+120
+00:05:03,070 --> 00:05:05,470
+One, you're going to buy some raw materials,
+
+121
+00:05:05,470 --> 00:05:08,870
+then you're going to prepare the components, whether it's
+
+122
+00:05:08,870 --> 00:05:11,510
+you're pre-slicing tomato, precooking the chicken,
+
+123
+00:05:11,510 --> 00:05:12,425
+whatever.
+
+124
+00:05:12,425 --> 00:05:14,050
+And then you're going to assemble them,
+
+125
+00:05:14,050 --> 00:05:15,480
+and then I'm going to sell them.
+
+126
+00:05:15,480 --> 00:05:18,690
+And so the question is, how do each of these
+
+127
+00:05:18,690 --> 00:05:21,720
+get accomplished for these three sandwiches?
+
+128
+00:05:21,720 --> 00:05:23,800
+Well, for each one, for buying raw materials,
+
+129
+00:05:23,800 --> 00:05:25,383
+you're not going to wait until someone
+
+130
+00:05:25,383 --> 00:05:26,962
+comes in the door to order your ham.
+
+131
+00:05:26,962 --> 00:05:28,670
+You're going to order that ahead of time.
+
+132
+00:05:28,670 --> 00:05:31,470
+So all three of these-- the ready-made,
+
+133
+00:05:31,470 --> 00:05:34,639
+the signature sandwich, and the one-of-a-kind sandwich--
+
+134
+00:05:34,639 --> 00:05:37,180
+you're going to order those raw materials ahead of time based
+
+135
+00:05:37,180 --> 00:05:38,330
+on some kind of forecast.
+
+136
+00:05:38,330 --> 00:05:39,050
+You're pushing.
+
+137
+00:05:39,050 --> 00:05:41,900
+You're going to order those ahead of time.
+
+138
+00:05:41,900 --> 00:05:43,660
+What about preparing the components?
+
+139
+00:05:43,660 --> 00:05:47,630
+Well, for most of them, for the ready-made and the signature
+
+140
+00:05:47,630 --> 00:05:50,570
+ham one, you're going to do that ahead of time as well.
+
+141
+00:05:50,570 --> 00:05:53,570
+You can prepare and precook some of the materials, the bread
+
+142
+00:05:53,570 --> 00:05:56,110
+and things, but for this one of a kind,
+
+143
+00:05:56,110 --> 00:05:57,750
+you might have to start doing a pull.
+
+144
+00:05:57,750 --> 00:06:00,139
+You might not prepare all the components
+
+145
+00:06:00,139 --> 00:06:01,680
+until they order because it might not
+
+146
+00:06:01,680 --> 00:06:03,624
+be a standard thing that you do.
+
+147
+00:06:03,624 --> 00:06:06,040
+So you might have a strange ingredient that you don't even
+
+148
+00:06:06,040 --> 00:06:09,030
+touch until they do that one-of-a-kind order.
+
+149
+00:06:09,030 --> 00:06:12,604
+Final assembly, it gets even more differentiated
+
+150
+00:06:12,604 --> 00:06:14,020
+in that the ready made one, you're
+
+151
+00:06:14,020 --> 00:06:15,270
+going to do that ahead of time.
+
+152
+00:06:15,270 --> 00:06:17,811
+Remember, these are the ones I'm going to stock ahead of time
+
+153
+00:06:17,811 --> 00:06:22,570
+to have ready to take, someone can grab from the cooler.
+
+154
+00:06:22,570 --> 00:06:24,570
+The signature ones, I'm not going to assemble it
+
+155
+00:06:24,570 --> 00:06:27,452
+until someone has actually placed the order.
+
+156
+00:06:27,452 --> 00:06:29,160
+And then down here for the one-of-a-kind,
+
+157
+00:06:29,160 --> 00:06:30,640
+of course I'm not going to assemble it until
+
+158
+00:06:30,640 --> 00:06:33,430
+someone's placed that order for that one-of-a-kind sandwich.
+
+159
+00:06:33,430 --> 00:06:35,864
+And then selling it, that's a pull as well.
+
+160
+00:06:35,864 --> 00:06:37,280
+I don't actually collect the money
+
+161
+00:06:37,280 --> 00:06:39,150
+until someone is actually there.
+
+162
+00:06:39,150 --> 00:06:41,960
+So if I look at these, you can see where the push/pull point
+
+163
+00:06:41,960 --> 00:06:46,010
+is for each one of these types of sandwiches.
+
+164
+00:06:46,010 --> 00:06:47,920
+And so we can ask some questions, though,
+
+165
+00:06:47,920 --> 00:06:50,360
+because here it is, I've got a sandwich shop.
+
+166
+00:06:50,360 --> 00:06:54,200
+Simple operations, three products, and they're
+
+167
+00:06:54,200 --> 00:06:56,070
+all sandwiches of some sort, but I've
+
+168
+00:06:56,070 --> 00:06:59,070
+got three very different supply chains.
+
+169
+00:06:59,070 --> 00:07:00,570
+And so you might ask yourself, which
+
+170
+00:07:00,570 --> 00:07:03,020
+is the fastest for the customer?
+
+171
+00:07:03,020 --> 00:07:05,020
+Which one will give me the product the fastest?
+
+172
+00:07:05,020 --> 00:07:09,134
+And I think we'd all agree it's this top one because all
+
+173
+00:07:09,134 --> 00:07:10,550
+I need to do, I don't have to wait
+
+174
+00:07:10,550 --> 00:07:12,090
+for any of these processing times.
+
+175
+00:07:12,090 --> 00:07:13,960
+It takes time to assemble, it takes time
+
+176
+00:07:13,960 --> 00:07:15,530
+to prepare the components.
+
+177
+00:07:15,530 --> 00:07:18,080
+It takes time, of course, to buy the raw materials.
+
+178
+00:07:18,080 --> 00:07:21,550
+So this one would be the fastest, the top one.
+
+179
+00:07:21,550 --> 00:07:24,800
+Then you ask the question, which is the hardest to forecast?
+
+180
+00:07:24,800 --> 00:07:27,930
+And again, it's probably going to be this top one, because I'm
+
+181
+00:07:27,930 --> 00:07:31,260
+making all these decisions-- not just the raw material to buy,
+
+182
+00:07:31,260 --> 00:07:35,690
+how much flour and how much ham, how many components to prepare.
+
+183
+00:07:35,690 --> 00:07:39,690
+I might precook the meat, I might slice the tomatoes,
+
+184
+00:07:39,690 --> 00:07:41,690
+but I'm going to pre-assemble and put them
+
+185
+00:07:41,690 --> 00:07:43,440
+in these nice little plastic cases.
+
+186
+00:07:43,440 --> 00:07:45,410
+So I'm doing all of that ahead of time.
+
+187
+00:07:45,410 --> 00:07:49,470
+I've got to forecast each type of sandwich specifically.
+
+188
+00:07:49,470 --> 00:07:51,020
+That's going to be tough.
+
+189
+00:07:51,020 --> 00:07:53,780
+And then you might wonder, which process
+
+190
+00:07:53,780 --> 00:07:55,630
+gives me the most variety?
+
+191
+00:07:55,630 --> 00:07:57,980
+Certainly, it's going to be these bottom two.
+
+192
+00:07:57,980 --> 00:08:00,880
+Probably this one gives me the most efficient way
+
+193
+00:08:00,880 --> 00:08:03,980
+of giving a lot of variety because what I'm doing
+
+194
+00:08:03,980 --> 00:08:09,520
+is I'm postponing the final customization until I know
+
+195
+00:08:09,520 --> 00:08:11,410
+exactly what the customer wants.
+
+196
+00:08:11,410 --> 00:08:16,620
+So I'm postponing the final assembly in this case.
+
+197
+00:08:16,620 --> 00:08:19,170
+By doing that, I'm keeping most of my products
+
+198
+00:08:19,170 --> 00:08:22,170
+in this component or raw material form,
+
+199
+00:08:22,170 --> 00:08:24,150
+and I'm only using them when they
+
+200
+00:08:24,150 --> 00:08:27,390
+get requested because, like any sandwich shop I've been to,
+
+201
+00:08:27,390 --> 00:08:30,410
+I'm sure you've noticed there's only so many ingredients.
+
+202
+00:08:30,410 --> 00:08:32,659
+It's how they get combined that increases
+
+203
+00:08:32,659 --> 00:08:35,220
+the number that you can have.
+
+204
+00:08:35,220 --> 00:08:38,309
+So this is the simple example of three sandwiches,
+
+205
+00:08:38,309 --> 00:08:41,020
+but let's think about it just a little bit more.
+
+206
+00:08:41,020 --> 00:08:42,360
+What about pure systems?
+
+207
+00:08:42,360 --> 00:08:45,430
+What about a pure push system?
+
+208
+00:08:45,430 --> 00:08:46,160
+This happens.
+
+209
+00:08:46,160 --> 00:08:48,850
+You have pure push systems where things go all the way through.
+
+210
+00:08:48,850 --> 00:08:51,170
+You've got to base your inventory
+
+211
+00:08:51,170 --> 00:08:53,950
+on a forecast all the way through.
+
+212
+00:08:53,950 --> 00:08:56,400
+And you can think that it leads to higher inventory levels
+
+213
+00:08:56,400 --> 00:08:58,108
+because you're making a guess-- and we'll
+
+214
+00:08:58,108 --> 00:09:00,340
+talk better ways to make that guess--
+
+215
+00:09:00,340 --> 00:09:01,810
+on what your demand is going to be.
+
+216
+00:09:01,810 --> 00:09:04,350
+So it's based on a forecast, so you're naturally
+
+217
+00:09:04,350 --> 00:09:06,346
+going to have higher inventory levels.
+
+218
+00:09:06,346 --> 00:09:08,220
+You're going to have potential spoilage, too.
+
+219
+00:09:08,220 --> 00:09:10,130
+If you forecast too much, you might
+
+220
+00:09:10,130 --> 00:09:13,730
+have too much that you expected, it doesn't materialize.
+
+221
+00:09:13,730 --> 00:09:17,700
+But you will have faster cycle time because by pushing it,
+
+222
+00:09:17,700 --> 00:09:19,760
+having it ready, then the customer,
+
+223
+00:09:19,760 --> 00:09:21,870
+especially in the sandwich shop example,
+
+224
+00:09:21,870 --> 00:09:24,200
+can come right in and grab it.
+
+225
+00:09:24,200 --> 00:09:27,570
+Now, for pure pull systems, these are very rare.
+
+226
+00:09:27,570 --> 00:09:29,440
+These are unicorns.
+
+227
+00:09:29,440 --> 00:09:31,630
+In class when I ask this, some people
+
+228
+00:09:31,630 --> 00:09:34,730
+come up with bizarre examples, but it's very, very hard
+
+229
+00:09:34,730 --> 00:09:37,140
+to find a product that doesn't get
+
+230
+00:09:37,140 --> 00:09:40,480
+started to be even thought about until someone requests it.
+
+231
+00:09:40,480 --> 00:09:42,310
+So maybe some engineer to order ones
+
+232
+00:09:42,310 --> 00:09:44,850
+that are very, very, very unique, or maybe
+
+233
+00:09:44,850 --> 00:09:47,260
+if you get water out of a stream that's already there.
+
+234
+00:09:47,260 --> 00:09:51,230
+But if you start thinking about a pull system, the sandwich
+
+235
+00:09:51,230 --> 00:09:53,630
+shop, for example, you've got to start baking the bread.
+
+236
+00:09:53,630 --> 00:09:57,180
+No one starts baking the bread when someone places an order.
+
+237
+00:09:57,180 --> 00:09:59,410
+Usually, you'll have a combination of the two.
+
+238
+00:09:59,410 --> 00:10:02,260
+You might have pure push, but generally it's a mix.
+
+239
+00:10:02,260 --> 00:10:04,460
+And you always look for that push/pull point,
+
+240
+00:10:04,460 --> 00:10:07,000
+and one of the things that you try to do
+
+241
+00:10:07,000 --> 00:10:13,000
+is push that push/pull point further upstream.
+
+242
+00:10:13,000 --> 00:10:15,380
+You want to get it further away from the customer.
+
+243
+00:10:15,380 --> 00:10:18,450
+And the idea is you're going to push the undifferentiated,
+
+244
+00:10:18,450 --> 00:10:22,030
+or raw product, or the work in process, the components,
+
+245
+00:10:22,030 --> 00:10:23,960
+push those to a forecast, and you
+
+246
+00:10:23,960 --> 00:10:28,510
+want to pull the finished product as much as possible.
+
+247
+00:10:28,510 --> 00:10:31,690
+Some of the benefits here of having this mixed system where
+
+248
+00:10:31,690 --> 00:10:35,780
+you have a push/pull point, one is the idea of postponement,
+
+249
+00:10:35,780 --> 00:10:37,900
+and this is the process that allows
+
+250
+00:10:37,900 --> 00:10:40,320
+for efficient mass customization.
+
+251
+00:10:40,320 --> 00:10:43,070
+And so I don't do the final assembly,
+
+252
+00:10:43,070 --> 00:10:46,662
+the final customization until as late as possible.
+
+253
+00:10:46,662 --> 00:10:48,370
+Think about putting a smartphone together
+
+254
+00:10:48,370 --> 00:10:50,210
+with different colored cases.
+
+255
+00:10:50,210 --> 00:10:51,890
+I could have them all manufactured
+
+256
+00:10:51,890 --> 00:10:55,040
+in the plant with each of the colors,
+
+257
+00:10:55,040 --> 00:10:58,390
+but then I'd have to predict and forecast how many of each
+
+258
+00:10:58,390 --> 00:11:00,530
+color are going to be sold.
+
+259
+00:11:00,530 --> 00:11:04,520
+Instead, maybe I want to segment those out and assemble those
+
+260
+00:11:04,520 --> 00:11:05,920
+at the dealership.
+
+261
+00:11:05,920 --> 00:11:10,250
+And so the idea is you postpone the final customization.
+
+262
+00:11:10,250 --> 00:11:11,910
+And then it also does something else,
+
+263
+00:11:11,910 --> 00:11:13,451
+and we'll see this in our next couple
+
+264
+00:11:13,451 --> 00:11:15,510
+lectures when we talk about forecasting.
+
+265
+00:11:15,510 --> 00:11:17,820
+By pooling these products, these components,
+
+266
+00:11:17,820 --> 00:11:20,135
+or these aggregate components that
+
+267
+00:11:20,135 --> 00:11:24,480
+are used in multiple items, I'm aggregating demand.
+
+268
+00:11:24,480 --> 00:11:27,400
+By aggregating demand, my forecast accuracy
+
+269
+00:11:27,400 --> 00:11:31,137
+improves because I have more products to balance them over.
+
+270
+00:11:31,137 --> 00:11:32,720
+It's a law of large numbers, and we'll
+
+271
+00:11:32,720 --> 00:11:34,120
+talk much more about this.
+
+272
+00:11:34,120 --> 00:11:37,350
+But the idea of pooling products improves my forecasting
+
+273
+00:11:37,350 --> 00:11:42,270
+because I'm forecasting over a wider range of final products.
+
+274
+00:11:42,270 --> 00:11:47,749
+So the key principles from here is-- I love this phrase.
+
+275
+00:11:47,749 --> 00:11:49,540
+What you want to do is you want to maximize
+
+276
+00:11:49,540 --> 00:11:53,080
+the external variety with minimal internal variety.
+
+277
+00:11:53,080 --> 00:11:54,130
+What does that mean?
+
+278
+00:11:54,130 --> 00:11:57,140
+That means I want to have as many sandwiches that people
+
+279
+00:11:57,140 --> 00:12:00,530
+can take, I want to sell as many possible combinations,
+
+280
+00:12:00,530 --> 00:12:04,670
+with the minimal number of raw components and sub-assemblies.
+
+281
+00:12:04,670 --> 00:12:06,170
+So I want to make sure I can have
+
+282
+00:12:06,170 --> 00:12:09,677
+all these different combinations and find clever ways to be
+
+283
+00:12:09,677 --> 00:12:11,510
+able to deliver that with the minimum amount
+
+284
+00:12:11,510 --> 00:12:12,610
+of internal variety.
+
+285
+00:12:12,610 --> 00:12:15,780
+Another concept that you might hear is the whole idea of RAP,
+
+286
+00:12:15,780 --> 00:12:17,320
+Raw As Possible.
+
+287
+00:12:17,320 --> 00:12:20,720
+Keep your in process inventory as raw as possible.
+
+288
+00:12:20,720 --> 00:12:21,870
+What does that mean?
+
+289
+00:12:21,870 --> 00:12:23,970
+That means you don't do final assembly.
+
+290
+00:12:23,970 --> 00:12:27,210
+You push that back as far as possible.
+
+291
+00:12:27,210 --> 00:12:29,620
+So this was Push and Pull Systems,
+
+292
+00:12:29,620 --> 00:12:32,700
+and we're going to talk more about these as we go.
+
+293
+00:12:32,700 --> 00:12:34,720
+Maybe the next step that we want to talk about
+
+294
+00:12:34,720 --> 00:12:36,870
+is how do you determine which product
+
+295
+00:12:36,870 --> 00:12:39,470
+will go in which type of process.
+

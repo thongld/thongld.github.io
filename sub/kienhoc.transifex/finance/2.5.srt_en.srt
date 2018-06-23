@@ -1,0 +1,256 @@
+1
+00:00:04,680 --> 00:00:12,860
+https://youtu.be/Sr65xHmnqOY
+An application: remember very, very
+similar to real world problems but here
+
+2
+00:00:12,860 --> 00:00:20,360
+we are thinking Present Value applications not Future Value. So, in this application, you
+
+3
+00:00:20,360 --> 00:00:25,680
+are starting college, how much money do
+you need in the bank today so that you
+
+4
+00:00:25,680 --> 00:00:29,950
+can spend 3000 bucks every
+year for the next four years? This
+
+5
+00:00:29,950 --> 00:00:37,000
+probably is something if your tuition is being paid by your parents or you
+
+6
+00:00:37,000 --> 00:00:42,710
+have worked, you need to worry about
+having this money in place, right? And
+
+7
+00:00:42,710 --> 00:00:46,370
+this is over and above the tuition, so
+what you're doing is you're figuring out
+
+8
+00:00:46,370 --> 00:00:51,59
+you want to be able to spend some money
+every year, 3000 on things that you need
+
+9
+00:00:51,60 --> 00:00:57,410
+other than tuition and boarding, and
+suppose the interest rate in the bank is 5%.
+
+10
+00:00:57,410 --> 00:01:01,898
+So the question asking you is,
+how much money do you need in the bank
+
+11
+00:01:01,899 --> 00:01:08,729
+today, so that you can spend 3000 every
+year? As always, if you´re... the beauty of online is
+
+12
+00:01:08,729 --> 00:01:14,140
+you can just pause right now and
+do the problem yourself. You don't need
+
+13
+00:01:14,140 --> 00:01:18,630
+to listen to me, in fact I would
+encourage you to do that but I'm taking and
+
+14
+00:01:18,630 --> 00:01:24,979
+making shot clips and when the problems
+are easy, I'm just doing...going ahead and
+
+15
+00:01:24,979 --> 00:01:30,299
+doing them. In more complicated problems,
+we will have longer videos but I also
+
+16
+00:01:30,299 --> 00:01:35,810
+will try hard to stop, but at the same
+time, remember, the beauty of this class
+
+17
+00:01:35,810 --> 00:01:40,659
+is not necessarily the videos, but the
+assignments and they have been created
+
+18
+00:01:40,659 --> 00:01:45,820
+very carefully, so that they match the
+real world and help you learn. So let's
+
+19
+00:01:45,820 --> 00:01:57,619
+draw a timeline here and I encourage you
+to use Excel. So timeline, 0, how many years?
+
+20
+00:01:57,619 --> 00:02:01,810
+1...4
+
+21
+00:02:01,810 --> 00:02:08,789
+and you can spend 3000 every year for
+the next four years, so
+
+22
+00:02:08,788 --> 00:02:23,991
+Put 3000. So let's think. Do we have all the ingredients here? We are not going here.
+
+23
+00:02:24,000 --> 00:02:33,660
+It's saying how much do we need in the bank
+now and now equates to PV
+
+24
+00:02:33,660 --> 00:02:40,359
+So we need to figure out PV. What are the ingredients of PV? Remember in PV function, you will say
+
+25
+00:02:40,360 --> 00:02:47,440
+equals PV. Do this with me on the
+Excel, I think that's a good thing, I'm
+
+26
+00:02:47,440 --> 00:02:50,170
+doing Excel but without going to it, okay?
+
+27
+00:02:50,170 --> 00:02:55,660
+So PV, the first number is rate. So look in
+the problem, what is the rate? Remember
+
+28
+00:02:55,660 --> 00:03:02,859
+don´t write 5%, write 0.05. What's the
+other number Excel is looking for? How
+
+29
+00:03:02,860 --> 00:03:13,570
+many years and you found that they were,  you´re thinking 4, right? Who determines
+this four? You do, right? You
+
+30
+00:03:13,570 --> 00:03:16,858
+almost determine everything and by the way
+you have very little control of the
+
+31
+00:03:16,859 --> 00:03:21,239
+5% anyways, so you just take what you
+get.
+
+32
+00:03:21,239 --> 00:03:26,250
+So...so what's amazing about most problems
+in life is, you're far more in control than
+
+33
+00:03:26,250 --> 00:03:31,269
+you think you are, right? And things that
+you can't control, don't worry about them.
+
+34
+00:03:31,269 --> 00:03:40,590
+Four right? And the next good news is the
+natural next button in Excel is PMT
+
+35
+00:03:40,590 --> 00:03:47,530
+unlike when we were doing a FV. So PMT is how much? 3000.
+
+36
+00:03:47,530 --> 00:03:52,830
+So let's pause before that and see what
+kind of number should we get, if there was no
+
+37
+00:03:52,830 --> 00:03:58,900
+Time Value of Money, you would get what? You are putting 3000 bucks
+
+38
+00:03:58,900 --> 00:04:03,890
+four times, you´ll get 12000. Now,
+just think about it, before you press
+
+39
+00:04:03,890 --> 00:04:07,880
+return, do you want a number to show up that makes sense?
+
+40
+00:04:07,880 --> 00:04:14,590
+Answer is yes. Will it be greater than or less
+than 12000? The answer is, because you are discounting
+
+41
+00:04:14,590 --> 00:04:18,899
+and because of compounding and because
+Time Value of Money is not zero
+
+42
+00:04:18,899 --> 00:04:26,49
+you'll get a number less that 12,000 and I
+think it turns out to be 10,637.
+
+43
+00:04:26,50 --> 00:04:33,40
+So I'll write it out here, you see the design I can do
+
+44
+00:04:33,40 --> 00:04:46,350
+Who said I can't write well? I guess, I did 637.64. Now again, if these numbers are
+
+45
+00:04:46,350 --> 00:04:52,300
+positive, this will show up negative, if
+these numbers are negative, this will show up positive.
+
+46
+00:04:52,300 --> 00:04:56,930
+So you are in control of that, I'm just
+doing how do you get to the numbers.
+
+47
+00:04:56,930 --> 00:05:03,140
+Now if you're saving...spending these in the
+future you need them, right? So you need
+
+48
+00:05:03,140 --> 00:05:03,979
+to put away
+
+49
+00:05:03,979 --> 00:05:09,830
+$10,637 in the bank today and it will
+finance it. When we go to real-world
+
+50
+00:05:09,830 --> 00:05:17,680
+problems, what I'm going to do is, I'm going to spend a lot... Real world problems meaning more complicated, this is real world too.
+
+51
+00:05:17,680 --> 00:05:22,669
+I will actually make you double check all your answers to make sure that you know you're getting
+
+52
+00:05:22,669 --> 00:05:27,849
+it and the way you double check is, you make
+sure that you actually when you spent 3000
+
+53
+00:05:27,850 --> 00:05:33,440
+four times, how much will you have in the
+bank at the end? If we start off at 10,637?
+
+54
+00:05:33,440 --> 00:05:39,690
+If you think about it, you´ll have zero and you can show it period by period.
+

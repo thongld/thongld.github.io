@@ -1,0 +1,228 @@
+1
+00:00:08,10 --> 00:00:11,629
+https://youtu.be/1miAU6IFtLc
+Chào các bạn quay trở lại bại học, giờ hãy để tôi cho bạn thấy
+sức mạnh của tính chiết khấu
+
+2
+00:00:11,630 --> 00:00:16,59
+vốn cũng tương tự như sức mạnh của việc tính lãi kép
+nhưng theo chiều ngược lại, đúng không ạ. Giờ chúng ta hãy cùng
+
+3
+00:00:16,59 --> 00:00:22,169
+nhìn vào phần mà tôi muốn các bạn làm.
+Các bạn nhớ chứ? Tôi bảo các bạn xác định
+
+4
+00:00:22,169 --> 00:00:29,29
+sự thay đổi của N, N rất quan trọng nhưng 
+sự kết hợp của N và lãi suất là
+
+5
+00:00:29,29 --> 00:00:30,560
+là tất cả những gì chúng ta bàn tới
+
+6
+00:00:30,560 --> 00:00:35,900
+Vậy nên, N và lãi suất càng thấp thì
+bạn sẽ càng ít thấy sức mạnh của 
+
+7
+00:00:35,900 --> 00:00:40,720
+tính lãi kép và  tính chiết khấu càng thấp, phải không nào? Vậy
+hãy cùng tính sức mạnh của chiết khấu. Đâu là
+
+8
+00:00:40,720 --> 00:00:46,239
+Giá trị hiện tại của việc nhận một
+tỉ đô la, bạn nên nhớ,là tỉ đô la nhé,
+
+9
+00:00:46,239 --> 00:00:47,800
+rất nhiều tiền đấy,
+
+10
+00:00:47,800 --> 00:00:52,89
+chín số 0, tôi luôn quên mất một triệu hay một tỉ có bao nhiêu 
+số 0, nhưng các bạn luôn có thể
+
+11
+00:00:52,89 --> 00:00:58,920
+tra google. Vậy, 5% so với 15%, bạn hãy nhớ 
+tôi lấy hai con số này ở đâu không, tôi
+
+12
+00:00:58,920 --> 00:01:06,180
+tôi lấy chúng từ lịch sử dữ liệu
+được thừa nhận riêng tại Mỹ, nhưng tôi sẽ
+
+13
+00:01:06,180 --> 00:01:12,270
+chọn 50 năm kể từ hiện tại thay vì
+ 90, chỉ để xem điều gì sẽ xảy ra. Như vậy
+
+14
+00:01:12,270 --> 00:01:22,579
+theo công thức thì nó khá là khó, nên tôi
+sẽ vừa nói vừa viết, được không ạ? Vậy đâu là
+
+15
+00:01:22,579 --> 00:01:27,8
+số đầu tiên, hãy cùng viết 
+công thức, và bạn đầu tiên sẽ lấy 5%
+
+16
+00:01:27,9 --> 00:01:37,960
+bạn sẽ có 1 tỉ đô la
+và
+
+17
+00:01:37,960 --> 00:01:48,149
+chia cho 1.05, tính lũy thừa lên, được bao nhiêu? 50. 
+Đây là phép tính mà bạn làm
+
+18
+00:01:48,150 --> 00:01:53,220
+và việc thứ hai là tìm ra 
+giá trị hiện với mức lãi suất nào? Mức
+
+19
+00:01:53,220 --> 00:01:59,600
+15%, vậy bạn chỉ việc thay thế
+0.05 ở đây hay 1.05, toàn bộ 
+
+20
+00:01:59,600 --> 00:02:08,609
+thay bằng 1.15, đương nhiên lũy thừa lên bao nhiêu? 50. 
+Đây là hai phép tính khác nhau
+
+21
+00:02:08,610 --> 00:02:12,800
+mà tôi yêu cầu các bạn làm. Giờ cnu các bạn nhìn vào đây và nếu các bạn có thể tính
+
+22
+00:02:12,800 --> 00:02:17,360
+nhẩm trong đầu, như tôi đã nói, nếu thế
+thì bạn đúng là rất khác thường, nhưng 
+
+23
+00:02:17,360 --> 00:02:22,60
+chúng ta sẽ coi như các bạn sẽ không
+tính nhẩmtrong đầu mà chúng ta sẽ dùng Excel, vậy việc
+
+24
+00:02:22,60 --> 00:02:29,370
+mà tôi sẽ làm là cho các bạn thấy một chút về cái
+mà Excel làm để các bạn có thể hiểu 
+
+25
+00:02:29,370 --> 00:02:35,930
+Vậy, đối với Excel, chúng ta vẫn
+giữ anh bạn cũ ở đó và chúng ta sẽ 
+
+26
+00:02:35,930 --> 00:02:43,160
+xóa nó đi, bây giờ chúng ta sẽ viết 
+các con số. Vậy, hãy cùng nhập vào dấu bằng =, nhưng giờ sau khi
+
+27
+00:02:43,160 --> 00:02:51,820
+nhập dấu bằng, bạn sẽ nhập vào cái gì?
+Bạn sẽ viết PV mà không phải FV sau đó mở 
+
+28
+00:02:51,820 --> 00:02:57,140
+ngoặc. Khi mở ngoặc, bạn sẽ 
+biết rõ được thứ mình đang thấy
+
+29
+00:02:57,140 --> 00:03:05,268
+đúng không ạ? Vậy, số đầu tiên là lãi suất, vậy
+hãy cùng nhập vào 0.05 và sau đó hãy
+
+30
+00:03:05,269 --> 00:03:09,150
+nhập vào số kì, bao nhiêu...bao nhiêu 
+kỳ chúng ta có theo bài toán? Tôi nghĩ chúng ta có
+
+31
+00:03:09,150 --> 00:03:18,850
+50 năm. Chúng ta có khoản thanh toán nào
+ở giữa không? Câu trả lời là không, vì vậy ta đặt 0, bạn biết đấy, khi tôi
+
+32
+00:03:18,850 --> 00:03:22,420
+làm thế này nhiều lần, tôi đơn giản là làm
+nhanh quá và quên mất không có PMT
+
+33
+00:03:22,420 --> 00:03:26,958
+ở đó, vậy phải cẩn thận, vì bạn đang
+tận dụng ưu thế của Excel nhưng Excel cũng có
+
+34
+00:03:26,959 --> 00:03:32,950
+nguyên tắc phải tuân theo, phải chứ? Như vậy các bạn
+được trả bao nhiêu? Giờ, ở đây, nhập dãy số 0,
+
+35
+00:03:32,950 --> 00:03:44,649
+1 000 000 000 sau đó nhấn ENTER, các bạn
+sẽ nhận được, và tôi sẽ xem
+
+36
+00:03:44,650 --> 00:03:49,210
+để chắc rằng ta đã có đúng số. Các bạn
+sẽ phải tính được
+
+37
+00:03:49,210 --> 00:03:56,140
+để tôi chắc chắn ta đã 
+đúng. Các bạn phải tính được, theo tôi, ở mức 5%
+
+38
+00:03:56,140 --> 00:04:02,760
+50 năm một tỉ đô la, các bạn phải tính ra được 87 triệu, hai trăm
+
+39
+00:04:02,760 --> 00:04:11,730
+linh ba nghìn, bảy trăm hai mươi sáu hoặc gần bảy trăm hai mươi bảy, 87.203.727 
+
+40
+00:04:11,730 --> 00:04:19,820
+đô la. Giá trị bị giảm đi,
+nhưng không quá nhiều. Giờ, việc tôi làm tiếp theo
+
+41
+00:04:19,820 --> 00:04:25,610
+là gì? Tôi sẽ giữ nguyên bảng tính Excel và nhập vào 0.15
+
+42
+00:04:25,610 --> 00:04:31,80
+và các bạn nghĩ điều gì sẽ xảy ra?
+
+43
+00:04:31,80 --> 00:04:38,219
+Các bạn còn lại bao nhiêu? Chỉ có chín trăm 
+hai mươi hai nghìn, tám trăm đô la
+
+44
+00:04:38,220 --> 00:04:50,260
+922.800 đô la, tám trăm linh một, vậy số đó sẽ là
+ 922800.84. Việc tôi sẽ làm tiếp theo là, tôi sẽ
+
+45
+00:04:50,260 --> 00:04:54,000
+cho các bạn nghỉ giải lao, tự làm và khi 
+ta quay lại bài học, tôi sẽ
+
+46
+00:04:54,000 --> 00:04:59,500
+tiếp tục từ đoạn chúng ta tạm nghỉ, chỉ ra cho các bạn hai 
+số đó và chuyển đến
+
+47
+00:04:59,500 --> 00:05:01,830
+những phần lí thú nhiều nhiều hơn nữa. Chào các bạn.
+

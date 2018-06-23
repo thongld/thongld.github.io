@@ -1,0 +1,213 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/NGonOa7sCK0
+
+1
+00:00:00,000 --> 00:00:00,490
+
+2
+00:00:00,490 --> 00:00:04,950
+(JONATHAN VALVANO) So in this video,
+we're going to illustrate the software
+
+3
+00:00:04,950 --> 00:00:07,910
+development process.
+
+4
+00:00:07,910 --> 00:00:11,470
+We'll begin with an editor.
+
+5
+00:00:11,470 --> 00:00:18,200
+And the editor is going to create
+our source code, our program.
+
+6
+00:00:18,200 --> 00:00:27,360
+And then we'll use the compiler
+to build the object code.
+
+7
+00:00:27,360 --> 00:00:32,189
+
+8
+00:00:32,189 --> 00:00:45,220
+The object code can be loaded into a
+simulator for testing, or it could be
+
+9
+00:00:45,220 --> 00:00:55,730
+loaded into the real board, the real
+target, for testing and deployment.
+
+10
+00:00:55,730 --> 00:00:58,970
+We see that there are
+two testing steps.
+
+11
+00:00:58,970 --> 00:01:06,090
+We will test in the simulator, and
+we will test in the real target.
+
+12
+00:01:06,090 --> 00:01:13,220
+The Keil uVision is integrated
+development environment (IDE) which
+
+13
+00:01:13,220 --> 00:01:17,690
+will combine the editor, the compiler,
+and the simulator.
+
+14
+00:01:17,690 --> 00:01:20,930
+
+15
+00:01:20,930 --> 00:01:24,650
+Let's illustrate this sequence
+with an existing system, the
+
+16
+00:01:24,650 --> 00:01:26,140
+pointer traffic light.
+
+17
+00:01:26,140 --> 00:01:32,320
+In the Keil IDE, we're going
+to edit the code.
+
+18
+00:01:32,320 --> 00:01:37,220
+Next, we will build it which
+is to compile it.
+
+19
+00:01:37,220 --> 00:01:41,530
+To download it onto the board, we'll
+hit the Download button.
+
+20
+00:01:41,530 --> 00:01:45,170
+But let's show you the hardware first.
+
+21
+00:01:45,170 --> 00:01:49,810
+We've built the hardware up, there's a
+LaunchPad, the Stellaris LaunchPad,
+
+22
+00:01:49,810 --> 00:01:52,260
+and on the protoboard,
+we have the circuits.
+
+23
+00:01:52,260 --> 00:01:54,270
+And this is my simulated
+traffic light.
+
+24
+00:01:54,270 --> 00:01:59,060
+I have a red, yellow, green for one
+direction, and red, yellow, green in
+
+25
+00:01:59,060 --> 00:02:02,060
+the other direction, and
+two car sensors.
+
+26
+00:02:02,060 --> 00:02:07,630
+So the next step will be to download
+it, and over here on Keil, if I hit
+
+27
+00:02:07,630 --> 00:02:12,815
+the Download button, code is programmed
+onto the microcontroller.
+
+28
+00:02:12,815 --> 00:02:16,230
+
+29
+00:02:16,230 --> 00:02:19,820
+We will debug it by running
+the Keil Debugger.
+
+30
+00:02:19,820 --> 00:02:23,570
+So in the Keil Debugger, I can do
+many things, and we'll teach you
+
+31
+00:02:23,570 --> 00:02:25,600
+that as we go along.
+
+32
+00:02:25,600 --> 00:02:27,700
+But for now, I'm just going to run it.
+
+33
+00:02:27,700 --> 00:02:32,120
+And so now, looking back at the board
+again, we see that the traffic light
+
+34
+00:02:32,120 --> 00:02:33,040
+is running.
+
+35
+00:02:33,040 --> 00:02:40,390
+And I hit the sensor in this direction ,
+we see that the light will change so
+
+36
+00:02:40,390 --> 00:02:42,250
+the cars can go.
+
+37
+00:02:42,250 --> 00:02:50,020
+So in summary, we use the Keil IDE
+to edit, we download, we debug.
+
+38
+00:02:50,020 --> 00:02:56,110
+As we go forward, we'll take this
+breadboard system, move it aside, and
+
+39
+00:02:56,110 --> 00:03:00,240
+then develop a more sophisticated
+printed circuit (PCB) version of it.
+
+40
+00:03:00,240 --> 00:03:02,900
+There's the microcontroller.
+
+41
+00:03:02,900 --> 00:03:10,530
+And the final deployment of the system
+will include power, display, and we'll
+
+42
+00:03:10,530 --> 00:03:12,430
+put the whole thing in the box.
+
+43
+00:03:12,430 --> 00:03:14,640
+And this is what it means
+to be embedded.
+
+44
+00:03:14,640 --> 00:03:19,870
+We're going to put the system in a box
+now, and once we've embedded the
+
+45
+00:03:19,870 --> 00:03:22,610
+system, we see the computer
+is hidden inside.
+
+46
+00:03:22,610 --> 00:03:24,822

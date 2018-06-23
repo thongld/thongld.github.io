@@ -1,0 +1,245 @@
+1
+00:00:01,599 --> 00:00:06,129
+Đến giờ tôi hi vọng các bạn đã thấy được
+sức mạnh của các hàm và phương thức trong Python.
+
+By now, I hope you're convinced that python
+functions and methods are extremely powerful:
+
+2
+00:00:06,129 --> 00:00:11,360
+Bạn có thể sử dụng code của những người khác
+để giải quyết vấn đề của bạn. Tuy nhiên,
+
+3
+00:00:11,360 --> 00:00:15,510
+thêm tất cả các hàm và phương thức đã được học
+cho đến giờ vào cùng một hệ thống Python
+
+4
+00:00:15,510 --> 00:00:21,020
+sẽ tạo nên sự hỗn loạn. Phần lớn code sẽ 
+chẳng bao giờ được sử dụng. Hơn nữa,
+
+5
+00:00:21,020 --> 00:00:24,080
+bảo trì tất cả những mã code này thật sự là cả một vấn đề.
+
+6
+00:00:24,080 --> 00:00:29,020
+Đây chính là lúc nên sử dụng đến gói (package).
+Gói giống như một thư mục các chương trình Python.
+
+7
+00:00:29,020 --> 00:00:35,010
+Mỗi chương trình như vậy được gọi là một module. 
+Chúng định rõ các hàm, phương thức
+
+8
+00:00:35,010 --> 00:00:40,219
+và những kiểu dữ liệu Python mới để giải quyết
+những vấn đề cụ thể. Có hàng ngàn gói Python
+
+9
+00:00:40,219 --> 00:00:45,519
+trên mạng. Trong số đó là các gói dùng cho
+ngành khoa học dữ liệu: có gói numpy
+
+10
+00:00:45,519 --> 00:00:50,399
+giúp làm việc hiệu quả với mảng, matplotlib để
+minh họa số liệu, scikit-learn dùng trong machine learning
+
+11
+00:00:50,399 --> 00:00:51,940
+và nhiều gói khác.
+
+12
+00:00:51,940 --> 00:00:56,460
+Không phải tất cả những gói này đều mặc định có
+ở Python. Để sử dụng những gói Python, bạn sẽ
+
+13
+00:00:56,460 --> 00:01:00,489
+phải cài đặt chúng trước, sau đó viết code
+trong chương trình của bạn để báo cho Python
+
+14
+00:01:00,489 --> 00:01:03,389
+rằng bạn muốn sử dụng những gói này.
+
+15
+00:01:03,389 --> 00:01:07,219
+Datacamp đã cài đặt tất cả những gói cần thiết
+cho bạn, nhưng nếu bạn muốn cài đặt
+
+16
+00:01:07,219 --> 00:01:11,890
+chúng trong hệ thống riêng của bạn,
+bạn cần dùng pip, phần mềm quản lý các gói cho Python.
+
+17
+00:01:11,890 --> 00:01:18,170
+Nếu bạn theo đường dẫn URL này, bạn có thể tải về
+tập tin get-pip.py. Tiếp theo, bạn mở Terminal
+
+18
+00:01:18,170 --> 00:01:24,170
+và chạy "python3 get-pip.py". Giờ bạn
+có thể sử dụng pip để cài đặt gói Python
+
+19
+00:01:24,170 --> 00:01:29,130
+bạn cần. Giả sử ta muốn cài đặt
+gói numpy mà bạn sẽ tìm hiểu 
+
+20
+00:01:29,130 --> 00:01:34,950
+trong phần tiếp theo. Hãy gõ "pip3 install numpy".
+Bạn phải sử dụng những lệnh python3
+
+21
+00:01:34,950 --> 00:01:38,929
+và pip3 này để báo cho hệ thống rằng chúng ta 
+đang làm việc trên Python phiên bản 3.
+(chỉ gõ "pip" thôi nếu bạn dùng Python 2)
+
+22
+00:01:38,929 --> 00:01:43,789
+Khi gói đã được cài đặt, bạn có thể sử dụng nó 
+trong các chương trình Python của mình.
+
+23
+00:01:43,789 --> 00:01:48,399
+Trước khi làm điều này, bạn nên
+nhập gói hoặc một module cụ thể của gói.
+
+24
+00:01:48,399 --> 00:01:52,460
+Bạn có thể làm việc này bằng câu lệnh 'import'.
+
+25
+00:01:52,460 --> 00:01:57,649
+Để nhập toàn bộ gói numpy, 
+bạn nhập lệnh 'import numpy', như trên.
+
+26
+00:01:57,649 --> 00:02:03,229
+Một hàm thông dụng trong Numpy là array().
+Nó nhận vào một list.
+
+27
+00:02:03,229 --> 00:02:07,079
+Nếu ta chỉ gọi hàm array() như trên,
+sẽ có lỗi xảy ra.
+
+28
+00:02:07,079 --> 00:02:11,850
+Để thực hiện hàm array của gói numpy,
+bạn sẽ cần viết như sau:
+
+29
+00:02:11,850 --> 00:02:16,160
+Lần này lệnh được thực hiện. Mảng numpy rất
+hữu dụng trong khoa học dữ liệu; ta sẽ tìm hiểu
+
+30
+00:02:16,160 --> 00:02:17,940
+kĩ hơn ở các phần sau.
+
+31
+00:02:17,940 --> 00:02:22,420
+Viết tiền tố 'numpy.' nhiều lần khá mệt mỏi,
+nên bạn có thể nhập gói dữ liệu
+
+32
+00:02:22,420 --> 00:02:26,810
+và gán cho nó một cái tên khác, bằng cách
+kéo dài câu lệnh import
+
+33
+00:02:26,810 --> 00:02:29,840
+với vế as, như sau:
+
+34
+00:02:29,840 --> 00:02:35,940
+Giờ, thay vì nhập numpy.array(), bạn chỉ cần nhập 
+np.array() để sử dụng hàm array trong numpy
+
+35
+00:02:35,940 --> 00:02:40,530
+Trong vài trường hợp, bạn chỉ cần sử dụng
+một hàm cụ thể của một gói. Python cho phép
+
+36
+00:02:40,530 --> 00:02:45,030
+bạn nêu rõ điều này trong code. Giả sử
+bạn chỉ cần dùng hàm array()
+
+37
+00:02:45,030 --> 00:02:50,680
+trong gói Numpy. Thay vì nhập 'import numpy',
+bạn có thể nhập 'from numpy import
+
+38
+00:02:50,680 --> 00:02:53,020
+array', như sau:
+
+39
+00:02:53,020 --> 00:02:58,980
+Lần này, bạn chỉ cần gọi hàm array
+như thế này, không cần phải viết thêm 'numpy.'
+
+40
+00:02:58,980 --> 00:03:03,330
+Lệnh 'from...import...' để nêu các phần cụ thể của gói
+mà ta cần sử dụng rất hữu dụng trong việc
+
+41
+00:03:03,330 --> 00:03:07,950
+hạn chế khối lượng code, nhưng lại làm mất đi 
+một phần ngữ cảnh. Giả sử bạn đang viết
+
+42
+00:03:07,950 --> 00:03:12,980
+một kịch bản Python dài. Bạn nhập hàm 
+array từ gói numpy ngay từ đầu, và lâu sau đó,
+
+43
+00:03:12,980 --> 00:03:17,650
+bạn sử dụng hàm array. Người đọc code
+của bạn có thể quên rằng
+
+44
+00:03:17,650 --> 00:03:21,560
+hàm array là một hàm riêng trong Numpy, bởi
+điều này không được nêu rõ khi gọi hàm.
+
+45
+00:03:21,560 --> 00:03:27,310
+Vì vậy lệnh chuẩn 'import numpy'
+hay được sử dụng hơn. Khi đó,
+
+46
+00:03:27,310 --> 00:03:31,840
+bạn cần gọi hàm numpy.array() để nêu rõ
+là bạn đang sử dụng Numpy.
+
+47
+00:03:31,840 --> 00:03:36,480
+Nhưng dù sao, mỗi người sẽ chọn cách họ thích;
+nên bạn có thể dùng cách nào mà bạn cho là
+
+48
+00:03:36,480 --> 00:03:39,070
+thuận tiện nhất.
+
+49
+00:03:39,070 --> 00:03:42,960
+Giờ ta sẽ sang phần bài tập, để giúp bạn tự luyện
+các cách khác nhau để nhập các gói
+
+50
+00:03:42,960 --> 00:03:43,870
+và các module!
+

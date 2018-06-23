@@ -1,0 +1,677 @@
+1
+00:00:02,859 --> 00:00:06,699
+You and I have explored the rules that govern
+lots of different moving objects so far.
+
+2
+00:00:06,700 --> 00:00:11,400
+But physics isn’t just about dragging blocks
+up inclines, or astronauts floating in Vomit Comets.
+
+3
+00:00:11,400 --> 00:00:13,470
+There are also ... collisions!
+
+4
+00:00:13,470 --> 00:00:16,769
+And physics has a lot to say about collisions
+-- whether it’s two billiard balls knocking
+
+5
+00:00:16,769 --> 00:00:21,660
+against each other, or what happens when you
+fail at a Super Mario level for the 47th time
+
+6
+00:00:21,660 --> 00:00:24,179
+and throw your controller at the floor.
+
+7
+00:00:24,179 --> 00:00:25,280
+Stupid lava sticks!
+
+8
+00:00:25,289 --> 00:00:28,738
+To figure out what’s happening when objects
+collide, we’ll have to take into account
+
+9
+00:00:28,739 --> 00:00:31,539
+two main qualities: momentum and impulse.
+
+10
+00:00:31,539 --> 00:00:36,539
+We’ll also discuss what physicists mean
+when they talk about center of mass, and why that’s important.
+
+11
+00:00:36,539 --> 00:00:41,560
+And we’ll have our old friend Isaac Newton
+to help us out along the way.
+
+12
+00:00:41,560 --> 00:00:52,140
+[Theme Music]
+
+13
+00:00:52,140 --> 00:00:53,960
+Remember Newton’s second law?
+
+14
+00:00:53,960 --> 00:00:58,299
+That’s the one that says the net force on
+an object is equal to its mass, times its acceleration.
+
+15
+00:00:58,308 --> 00:01:01,068
+Except, that’s not actually what Newton
+said.
+
+16
+00:01:01,069 --> 00:01:06,349
+He really said that an object’s so-called “quantity of motion” was equal to its mass, times its velocity.
+
+17
+00:01:06,349 --> 00:01:10,308
+And the net force is equal to the change in
+that mass-times-velocity over time.
+
+18
+00:01:10,308 --> 00:01:14,590
+In other words, it’s the derivative of mass-times-velocity
+with respect to time.
+
+19
+00:01:14,599 --> 00:01:20,199
+And if you were to calculate that derivative, you’d find that the net force is just equal to mass times acceleration.
+
+20
+00:01:20,200 --> 00:01:23,978
+But putting Newton’s second law in terms
+of mass and velocity introduces an aspect
+
+21
+00:01:23,978 --> 00:01:26,319
+of motion that we haven’t talked about yet.
+
+22
+00:01:26,319 --> 00:01:30,898
+Newton didn’t really give this aspect a
+name, but we will: it’s called momentum,
+
+23
+00:01:30,900 --> 00:01:35,260
+and it’s one of those things that’s easier
+to see in real life than to describe.
+
+24
+00:01:35,260 --> 00:01:40,280
+Momentum is often described as an object’s
+tendency to remain in motion, but technically,
+
+25
+00:01:40,280 --> 00:01:42,549
+it’s an object’s mass times its velocity.
+
+26
+00:01:42,549 --> 00:01:47,009
+So, a big bag full of leaves rolling down
+a hill? It might be going fast, but it doesn’t
+
+27
+00:01:47,009 --> 00:01:51,629
+have much mass, so it doesn’t have a lot
+of momentum, and it wouldn’t be too hard to stop.
+
+28
+00:01:51,629 --> 00:01:56,699
+But the boulder chasing Indiana Jones? That
+had a lot of mass -- and therefore lots of momentum.
+
+29
+00:01:56,700 --> 00:01:59,179
+So it would have been much harder
+to stop.
+
+30
+00:01:59,179 --> 00:02:02,929
+And momentum is one factor that affects collisions
+between objects.
+
+31
+00:02:02,929 --> 00:02:06,890
+After all, if a huge boulder crashes into
+another huge boulder, that’s going to be
+
+32
+00:02:06,890 --> 00:02:10,990
+a very different sort of crash than if a bag
+of leaves crashes into a boulder.
+
+33
+00:02:10,990 --> 00:02:14,900
+But the other quality of a collision that
+we often consider is known as impulse, which
+
+34
+00:02:14,900 --> 00:02:19,760
+-- at least in the context of physics -- doesn’t
+actually have anything to do with willpower,
+
+35
+00:02:19,759 --> 00:02:23,049
+or why you throw your game controller when
+you get stuck on a level.
+
+36
+00:02:23,050 --> 00:02:27,380
+Instead, impulse -- usually represented by
+a J -- is the integral of the net force on
+
+37
+00:02:27,389 --> 00:02:30,989
+an object over time -- in other words, its
+change in momentum.
+
+38
+00:02:30,990 --> 00:02:34,689
+Impulse turns out to be a particularly useful
+way to describe a crash --
+
+39
+00:02:34,689 --> 00:02:38,139
+because generally, in collisions,
+forces change very quickly.
+
+40
+00:02:38,150 --> 00:02:41,969
+So, if a ball smacks into a wall, and over
+the course of half a second, its force on
+
+41
+00:02:41,969 --> 00:02:49,270
+the wall in Newtons is equal to the time, multiplied by 25, we’d say that its impulse was 3.1 Newton-seconds.
+
+42
+00:02:49,270 --> 00:02:52,909
+Now, let’s consider the different kinds
+of collisions that we can study.
+
+43
+00:02:52,909 --> 00:02:56,620
+Generally, collisions can be described
+as either elastic or inelastic.
+
+44
+00:02:56,620 --> 00:03:02,159
+And it’s going to be important to figure out which kind you’re dealing with, because the math works in very different ways.
+
+45
+00:03:02,159 --> 00:03:05,150
+If elastic collisions sound bouncy, that’s
+because they are.
+
+46
+00:03:05,150 --> 00:03:11,289
+Like the conservative systems we talked about last time, in elastic collisions, kinetic energy is neither created nor destroyed.
+
+47
+00:03:11,289 --> 00:03:15,229
+For example: let’s say you knock a white
+billiard ball into a second, red one that’s
+
+48
+00:03:15,229 --> 00:03:18,530
+sitting on the table, and they hit each other
+in just the right way.
+
+49
+00:03:18,530 --> 00:03:23,180
+For this to be a true elastic collision, all
+of the kinetic energy from the white ball
+
+50
+00:03:23,180 --> 00:03:25,150
+would be transferred to the red ball.
+
+51
+00:03:25,150 --> 00:03:28,740
+Meaning, after they hit each other, the white
+ball would stay put, and the red one would
+
+52
+00:03:28,740 --> 00:03:33,960
+zoom away with all of the kinetic energy -- so, the same speed, basically -- that the white ball used to have.
+
+53
+00:03:33,969 --> 00:03:36,500
+But you won’t come across elastic collisions
+in real life.
+
+54
+00:03:36,500 --> 00:03:40,030
+Because: There’s always going to be some
+energy that’s lost somewhere in a collision,
+
+55
+00:03:40,030 --> 00:03:41,550
+generally as heat or sound.
+
+56
+00:03:41,550 --> 00:03:45,510
+And when kinetic energy isn’t conserved,
+that’s an inelastic collision.
+
+57
+00:03:45,509 --> 00:03:49,519
+There’s one thing that’s going to be true about every collision, though, whether or not it’s elastic:
+
+58
+00:03:49,520 --> 00:03:52,460
+The momentum of the system
+will always be conserved.
+
+59
+00:03:52,460 --> 00:03:56,760
+It might be transferred to another object --
+it might even be transferred to more than one object --
+
+60
+00:03:56,759 --> 00:03:59,399
+but the momentum is always
+going to go somewhere,
+
+61
+00:03:59,400 --> 00:04:01,939
+And we’ll be able to use math to figure out where it went.
+
+62
+00:04:01,939 --> 00:04:05,500
+And we can use what we know about impulse
+-- and Newton’s third law -- to prove it.
+
+63
+00:04:05,500 --> 00:04:09,780
+The third law, of course, is the one that
+says that every action has an equal and opposite reaction.
+
+64
+00:04:09,789 --> 00:04:14,379
+And that applies to collisions in the sense that,
+if a ball hits a wall, it’ll exert a force
+
+65
+00:04:14,379 --> 00:04:18,379
+on the wall, and the wall will exert an equally
+strong force on the ball.
+
+66
+00:04:18,379 --> 00:04:22,540
+We can describe each of these forces as impulses,
+since we know that an impulse is just
+
+67
+00:04:22,540 --> 00:04:24,540
+a change in an object’s momentum.
+
+68
+00:04:24,540 --> 00:04:28,280
+So, the ball’s momentum will be decreasing
+when it hits the wall. But because of Newton’s
+
+69
+00:04:28,288 --> 00:04:32,318
+third law, we know that the wall’s momentum
+is going to increase by an equal amount.
+
+70
+00:04:32,319 --> 00:04:36,030
+The change in the wall’s momentum might
+be impossible for us to see, because the wall
+
+71
+00:04:36,029 --> 00:04:40,369
+is connected to the ground, and Earth has
+lots of mass. But it’s there.
+
+72
+00:04:40,370 --> 00:04:46,209
+And that fact -- that momentum is always conserved -- turns out to be super helpful for describing collisions using math.
+
+73
+00:04:46,209 --> 00:04:49,038
+Like in the case where you knocked the white
+billiard ball into the red one.
+
+74
+00:04:49,038 --> 00:04:53,000
+Since momentum is conserved, and momentum
+is mass times velocity, the white ball’s
+
+75
+00:04:53,000 --> 00:04:57,439
+mass-times-velocity before the collision has
+to be equal to its mass-times-velocity, plus
+
+76
+00:04:57,439 --> 00:05:01,019
+the red ball’s mass-times-velocity, after
+the collision.
+
+77
+00:05:01,029 --> 00:05:04,818
+Which is why -- assuming the balls have the
+same mass -- if the white ball stops moving
+
+78
+00:05:04,819 --> 00:05:09,439
+after the collision, then the red ball must
+move with the same velocity that the white ball had.
+
+79
+00:05:09,449 --> 00:05:12,490
+So, now we know about both elastic and inelastic
+collisions.
+
+80
+00:05:12,490 --> 00:05:18,079
+But there’s also such a thing as a perfectly
+inelastic collision, because... of course there is.
+
+81
+00:05:18,079 --> 00:05:20,779
+And it’s easier for me to tell you, first,
+what it isn’t.
+
+82
+00:05:20,779 --> 00:05:25,359
+So, it is not a collision where the objects
+lose all of their kinetic energy.
+
+83
+00:05:25,370 --> 00:05:30,240
+Instead, a perfectly inelastic collision is
+what happens when objects stick together.
+
+84
+00:05:30,240 --> 00:05:34,718
+These collisions lose as much kinetic energy
+as possible to other forms of energy, like
+
+85
+00:05:34,718 --> 00:05:39,589
+heat, sound, or even potential energy ... but
+still, their momentum is conserved.
+
+86
+00:05:39,589 --> 00:05:43,748
+An example would be if you pushed one magnet
+toward another -- at just the right angle
+
+87
+00:05:43,749 --> 00:05:48,009
+for them to stick together on contact -- and
+then they both started sliding together at
+
+88
+00:05:48,009 --> 00:05:50,038
+half the speed of the magnet you pushed.
+
+89
+00:05:50,038 --> 00:05:53,418
+Before the collision, the momentum of one
+magnet was zero, and the momentum of the one
+
+90
+00:05:53,418 --> 00:05:55,839
+you pushed was its mass times its velocity.
+
+91
+00:05:55,839 --> 00:05:59,948
+Once the magnets collide, the mass is doubled,
+and the velocity is cut in half.
+
+92
+00:05:59,949 --> 00:06:04,939
+So the total momentum stays the same, but you lose some kinetic energy because there’s less speed involved.
+
+93
+00:06:04,939 --> 00:06:10,500
+So that’s the basics of how collisions work, and how they relate to the momentum of motion in a straight line.
+
+94
+00:06:10,500 --> 00:06:14,959
+But there’s one more detail we have to explore in order to really understand how objects move,
+
+95
+00:06:14,959 --> 00:06:16,899
+whether they’re going to collide or
+not.
+
+96
+00:06:16,908 --> 00:06:18,620
+And that is: center of mass.
+
+97
+00:06:18,620 --> 00:06:22,740
+Until now, we’ve been talking about objects
+as though they were little point-particles.
+
+98
+00:06:22,740 --> 00:06:27,960
+And that’s worked fine -- for the most part, the objects we’ve been talking about would act much like a small dot would.
+
+99
+00:06:27,959 --> 00:06:30,438
+But of course, not all objects work that way.
+
+100
+00:06:30,439 --> 00:06:33,840
+If you’ve ever tried to fling a hammer,
+for example -- which I do not recommend doing!
+
+101
+00:06:33,839 --> 00:06:39,038
+-- it wouldn’t fly through the air the same way a softball would, because the hammer’s mass isn’t distributed evenly.
+
+102
+00:06:39,040 --> 00:06:43,879
+Likewise, a pendulum with a big ball on the end of a very light string -- called simple pendulum --
+
+103
+00:06:43,879 --> 00:06:49,079
+would behave very differently from a pendulum that uses a heavier stick -- what’s known as a physical pendulum.
+
+104
+00:06:49,079 --> 00:06:53,370
+In these situations, it’s more useful to
+describe what the center of mass is doing.
+
+105
+00:06:53,370 --> 00:06:56,848
+When you throw the hammer, for example, it’ll
+rotate around its center of mass.
+
+106
+00:06:56,848 --> 00:06:58,709
+So, what is the center of mass?
+
+107
+00:06:58,709 --> 00:07:02,028
+It’s basically the average position of all
+the mass in the system.
+
+108
+00:07:02,028 --> 00:07:08,478
+Say you have a 3 meter long stick -- which we’ll pretend is massless -- with a 2-kilogram ball stuck on either end.
+
+109
+00:07:08,478 --> 00:07:12,800
+It’s easy to see where the center of mass
+should be -- the mass is distributed symmetrically,
+
+110
+00:07:12,800 --> 00:07:15,449
+so its center is going to be right in the
+middle of the stick.
+
+111
+00:07:15,449 --> 00:07:19,759
+Now, let’s say you have another 3 meter
+stick, and on the left side there’s a 2
+
+112
+00:07:19,759 --> 00:07:22,379
+kilogram ball, but on the right side, there’s
+a 4 kilogram ball.
+
+113
+00:07:22,379 --> 00:07:25,028
+This time, there’s twice the mass on the
+right side of the stick.
+
+114
+00:07:25,028 --> 00:07:29,180
+So when you’re trying to calculate the average
+position of all the mass attached to the stick,
+
+115
+00:07:29,180 --> 00:07:32,408
+you’re going to be counting the right-hand
+side twice as much.
+
+116
+00:07:32,408 --> 00:07:35,949
+That means the center of mass will be two
+thirds of the way along the stick,
+
+117
+00:07:35,949 --> 00:07:37,720
+closer to the 4 kilogram ball.
+
+118
+00:07:37,720 --> 00:07:42,220
+It’s like each piece of mass pulls on the
+center of mass a little bit, so parts with
+
+119
+00:07:42,228 --> 00:07:45,490
+more mass end up pulling harder and moving
+it closer.
+
+120
+00:07:45,490 --> 00:07:48,629
+But if you don’t want to calculate this
+in your head -- and if there are like seven
+
+121
+00:07:48,629 --> 00:07:52,999
+different particles to deal with, you probably
+won’t -- but there’s an equation for it!
+
+122
+00:07:52,999 --> 00:07:56,059
+First, pick a starting point to measure from,
+where x = 0.
+
+123
+00:07:56,060 --> 00:07:59,040
+That can be the end of the stick,
+the middle of the stick, whatever’s easiest.
+
+124
+00:07:59,040 --> 00:08:00,480
+As long as you’re consistent.
+
+125
+00:08:00,480 --> 00:08:04,900
+Then, the center of mass will be equal to
+the sum of each individual mass, times its
+
+126
+00:08:04,908 --> 00:08:09,050
+distance from the starting point, all divided
+by the total mass in the system.
+
+127
+00:08:09,050 --> 00:08:11,300
+Let’s try it for our stick with the differently-weighted
+balls.
+
+128
+00:08:11,300 --> 00:08:15,340
+We’ll choose the left side of the stick,
+where the 2 kilogram ball is, as our starting point.
+
+129
+00:08:15,339 --> 00:08:18,699
+The 2 kilogram ball’s mass times its
+position is zero.
+
+130
+00:08:18,699 --> 00:08:23,259
+The 4 kilogram ball’s mass times its position
+-- 3 meters -- is 12 kilogram-meters.
+
+131
+00:08:23,259 --> 00:08:25,920
+And the total mass of the system is 6 kilograms.
+
+132
+00:08:25,930 --> 00:08:29,218
+So, divide 12 kilogram-meters by 6 kilograms,
+and you get 2 meters.
+
+133
+00:08:29,218 --> 00:08:32,889
+That’s the position of the center of mass,
+which is two thirds of the way along the stick,
+
+134
+00:08:32,889 --> 00:08:36,668
+toward the 4 kilogram ball’s side.
+Exactly what we figured out earlier.
+
+135
+00:08:36,668 --> 00:08:40,840
+I’m telling you all of this now, because
+from here, we’re heading off in a totally new direction.
+
+136
+00:08:40,840 --> 00:08:42,080
+Literally!
+
+137
+00:08:42,080 --> 00:08:45,980
+But for now, you learned about collisions, and how momentum and impulse can be used to describe them.
+
+138
+00:08:45,980 --> 00:08:49,899
+We also talked about the differences
+between elastic and inelastic collisions,
+
+139
+00:08:49,899 --> 00:08:52,549
+and how to calculate the center of mass of
+a system.
+
+140
+00:08:52,549 --> 00:08:56,859
+Crash Course Physics is produced in association
+with PBS Digital Studios. You can head over
+
+141
+00:08:56,860 --> 00:09:01,740
+to their channel to check out amazing shows
+like Physics Girl, Gross Science and The Chatterbox.
+
+142
+00:09:01,750 --> 00:09:05,929
+This episode of Crash Course was filmed in
+the Doctor Cheryl C. Kinney Crash Course Studio
+
+143
+00:09:05,929 --> 00:09:10,579
+with the help of these amazing people and
+our equally amazing graphics team is Thought Cafe.
+

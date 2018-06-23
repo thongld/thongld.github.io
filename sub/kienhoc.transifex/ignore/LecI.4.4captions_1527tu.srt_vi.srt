@@ -1,0 +1,419 @@
+1
+00:00:10,290 --> 00:00:17,290
+nnmyxuan 20/10 
+Trong nhiều tình huống thực tế, ta phải đưa ra quyết định không chỉ khi ta không biết
+
+2
+00:00:20,250 --> 00:00:24,830
+xác suất kết quả nào sẽ xảy ra, mà ta còn thậm chí không biết tất cả
+
+3
+00:00:24,830 --> 00:00:31,830
+các kết quả nào có thể xảy ra được. Đây là loại "thiếu hiểu biết không gian". nó tương ứng
+
+4
+00:00:32,480 --> 00:00:36,910
+khá chặt chẽ với thuật ngữ "vắng mặt" trong phân loại của tôi.
+
+5
+00:00:36,910 --> 00:00:42,680
+Tại sao thiếu hiểu biết không gian lại quan trọng? Có hai lý do chính. Đầu tiên, ta có xu hướng ước tính
+
+6
+00:00:42,680 --> 00:00:48,250
+xác suất mà một cái gì đó mới mẻ sẽ xảy ra. Thứ hai, phán đoán trực giác của ta về
+
+7
+00:00:48,250 --> 00:00:54,570
+xác suất của kết quả phụ thuộc vào lượng kết quả ta nghĩ sẽ có. Tôi sẽ giải thích
+
+8
+00:00:54,570 --> 00:00:59,670
+cả hai lý do này và cách chúng kết nối như thế nào, bắt đầu với cái đầu tiên.
+
+9
+00:00:59,670 --> 00:01:05,750
+Quay lại năm 1978, Baruch Fischhoff, Paul Slovic, và Sarah Lichtenstein nghiên cứu của 
+xác suất nhiệm vụ của người dân
+
+10
+00:01:05,750 --> 00:01:11,920
+đến các nguyên nhân khả thi của một sự kiện, chẳng hạn như sự thất bại của ô tô để
+
+11
+00:01:11,920 --> 00:01:17,750
+khởi đầu. Họ thấy rằng các nguyên nhân mà được liệt kê một cách rõ ràng nhận được xác suất cao hơn
+
+12
+00:01:17,750 --> 00:01:23,570
+hơn khi những nguyên nhân tương tự bị gói vào thể loại "Catch-All" các nguyên nhân phụ.
+
+13
+00:01:23,570 --> 00:01:29,140
+Một lời giải thích được đề xuất cho hiệu ứng này thè hiện câu tục ngữ cổ "xa mặt cách lòng ",
+
+14
+00:01:29,140 --> 00:01:34,840
+và các hiệu ứng đã được gọi là" Catch-All Underestimation Bias ".
+
+15
+00:01:34,840 --> 00:01:39,990
+Catch-All Underestimation Bias đã được nhân rộng trong nhiều nghiên cứu
+
+16
+00:01:39,990 --> 00:01:46,369
+sau đó, và đã có những nỗ lực để xây dựng nó thành một lý thuyết tổng quát về cách ta làm bản án xác suất
+
+17
+00:01:46,369 --> 00:01:50,510
+khi ta không có một bức tranh hoàn chỉnh về tất cả các kết quả khả thi.
+
+18
+00:01:50,510 --> 00:01:57,510
+Một trong những ứng dụng quan trọng nhất của Catch-All Underestimation Bias là
+
+19
+00:01:57,580 --> 00:02:03,840
+ta có xu hướng đánh giá thấp khả năng các nguyên nhân hoặc sự kiện mà ta chưa từng thấy.
+
+20
+00:02:03,840 --> 00:02:10,590
+Tất cả những sự kiện vô hình gộp lại với nhau thành một thể loại duy nhất và nên ta sẽ có xu hướng
+
+21
+00:02:10,590 --> 00:02:16,780
+đánh giá thấp khả năng bất kỳ trong số chúng đôi khi xuất hiện trong tương lai.
+
+22
+00:02:16,780 --> 00:02:22,859
+Có hai yếu tố quan trọng điều khiển Catch-All Underestimation Bias. Đầu tiên, đó là những gì mà
+
+23
+00:02:22,859 --> 00:02:29,859
+Amos Tversky và Derek Kohler gọi là "đóng gói" thay vì "giải nén" các sự kiện khải thi. Giải nén
+
+24
+00:02:30,450 --> 00:02:37,180
+một sự kiện hợp nhất (ví dụ, ung thư) thành các thành phần rời nhau (ung thư vú, ung thư phổi, dạ dày ung thư, vv) 
+
+25
+00:02:37,180 --> 00:02:43,379
+có xu hướng tăng khả năng nhận thức của sự kiện đó. Một hàm ý tức thì
+
+26
+00:02:43,379 --> 00:02:49,559
+là giải nén một giả thuyết và / hoặc đóng gói ngược nó lại sẽ làm tăng rõ rệt
+
+27
+00:02:49,559 --> 00:02:55,519
+khả năng của giả thuyết đó. Con người chúng ta không hành xử theo lý thuyết xác suất
+này,
+
+28
+00:02:55,519 --> 00:03:01,469
+vậy ta đang làm những gì để thay thế? Một lời giải thích hợp lý là ta đánh giá theo trực giác
+
+29
+00:03:01,469 --> 00:03:07,499
+khả năng của một sự kiện bằng các cách ta nghĩ rằng nó có thể xảy ra. Càng nhiều
+
+30
+00:03:07,499 --> 00:03:12,819
+đường dẫn riêng biệt đến kết quả ta nhận thức được, càng nhiều khả năng kết quả xảy ra.
+
+31
+00:03:12,819 --> 00:03:19,540
+Điều đó dẫn ta đến điều khiển thứ hai của Catch-All Underestimation Bias.
+
+32
+00:03:19,540 --> 00:03:24,699
+Sau nghiên cứu của Tversky-Kohler, Yuval Rottenstreich và Amos Tversky đã chứng minh rằng mặc dù 
+
+33
+00:03:24,699 --> 00:03:30,900
+giải nén một sự kiện hợp nhất làm tăng khả năng rõ ràng của nó, đánh giá khả năng riêng biệt
+
+34
+00:03:30,900 --> 00:03:37,900
+của sự kiện được giải nén này làm tăng tổng xác suất chủ quan nhiều hơn. Craig Fox
+
+35
+00:03:38,379 --> 00:03:43,120
+và Yuval Rottenstreich tìm được phát hiện này và thấy rằng đánh giá của con người trên các
+
+36
+00:03:43,120 --> 00:03:48,579
+xác suất của tập hợp các sự kiện đang bị ảnh hưởng mạnh bởi số lượng các sự kiện
+
+37
+00:03:48,579 --> 00:03:54,379
+đang được xem xét. Trong một thí nghiệm của họ, họ hỏi một nửa số người tham gia rằng làm thế nào
+
+38
+00:03:54,379 --> 00:04:00,980
+chủ nhật mang khả năng là ngày nóng nhất trong tuần, và hỏi nửa kia khả năng nào mà 
+
+39
+00:04:00,980 --> 00:04:05,769
+Chủ nhật là ngày nóng nhất trong 7 ngày trong tuần.  Những người tham gia trong nhóm đầu tiên 
+
+40
+00:04:05,769 --> 00:04:11,079
+nghĩ về khả năng hai mặt: Chủ nhật là hoặc không là
+
+41
+00:04:11,079 --> 00:04:17,380
+ngày nóng nhất. Nhiều người trong số họ trả lời 1/2. Nhóm thứ hai được nhắc rằng 
+
+42
+00:04:17,380 --> 00:04:23,699
+có bảy ngay trong tuần, nên hầu hết họ trả lời chính xác với 1/7. 
+
+43
+00:04:23,699 --> 00:04:30,070
+Hiện tượng này là "phụ thuộc phân vùng". Nếu ta nghĩ rằng có k sự kiện khả thi 
+
+44
+00:04:30,070 --> 00:04:34,620
+trong sự vắng mặt kiến thức khác về khả năng của chúng, ta sẽ có khuynh hướng đánh giá 
+
+45
+00:04:34,620 --> 00:04:40,670
+khả năng mỗi thứ là 1/K. Thậm chí khi ta có bằng chứng chỉ ra 
+
+46
+00:04:40,670 --> 00:04:47,670
+một sự kiện khả thi hơn những cái khác, a vẫn sẽ bị ảnh hưởng bởi trực giác 1/K. Nếu ta 
+
+47
+00:04:48,200 --> 00:04:53,540
+chọn sai giá trị cho k, như những người tham gia trong nghiên cứu của Fox-Rottenstreich, ta sẽ 
+
+48
+00:04:53,540 --> 00:04:58,970
+sử dụng phân vùng sai của các sự kiện. Các phục thuộc phân vùng có phản ánh vấn đề
+
+49
+00:04:58,970 --> 00:05:05,500
+trong thế giới thực? Có. Trực giác của ta có thể chỉ sai phân vùng. 
+
+50
+00:05:05,500 --> 00:05:09,650
+Giả dụ bãn biết có 3 công ty dược đang phát triển một loại thuốc chống ung thư 
+
+51
+00:05:09,650 --> 00:05:14,980
+là thuốc A, B, C. Bạn biết rằng một phòng thí nghiệm độc lập đã so sánh 
+
+52
+00:05:14,980 --> 00:05:21,840
+hiệu quả của A và C, thấy rằng A hoàn toàn hiệu quả hơn C. Nếu bạn phải chọn 
+
+53
+00:05:21,840 --> 00:05:26,590
+giữa thuốc A hay B cho bệnh nhân ung thư trên cơ bản của
+
+54
+00:05:26,590 --> 00:05:33,590
+bằng chứng hiện tại, bạn có nên chọn A hay không? Theo một nghiên cứu năm 2005 bởi Fox và Levav, 
+
+55
+00:05:33,960 --> 00:05:37,840
+nhiều người trong số ta loại C ra khỏi khả năng là liều thuốc mạnh nhất, để lại 
+
+56
+00:05:37,840 --> 00:05:43,300
+khả năng tương đương liều thuốc mạnh là A hoặc B.  Vì vậy, khả năng 
+
+57
+00:05:43,300 --> 00:05:49,320
+A là liều thuốc mạnh nhất trong cả ba là 1/2, và không có lý do nào để ưu tiên A hơn B. 
+
+58
+00:05:49,320 --> 00:05:55,830
+Ở đây, ta đang lý luận trên cơ sở của một phân vùng hai mặt: Hoặc A hoặc B là liều thuốc mạnh hơn. 
+
+59
+00:05:55,830 --> 00:05:59,860
+Câu trả lời đúng được đánh giá xác suất theo một nghiên cứu so sánh cả ba loại thuốc
+
+60
+00:05:59,860 --> 00:06:06,860
+sẽ kết luận rằng A hiệu quả hơn cả B và C. Chúng tôi cần phải xem xét tất cả
+
+61
+00:06:06,860 --> 00:06:10,780
+các trật tự có thể có giữa các loại thuốc có thể là kết quả của nghiên cứu này.
+
+62
+00:06:10,780 --> 00:06:17,780
+Các trật tự khả thi là {ABC, ACB, BAC, BCA, CAB, CBA}, trong đó trình tự của các chữ cái chỉ ra
+
+63
+00:06:18,540 --> 00:06:24,810
+xếp hạng của họ. Ví dụ, ABC chỉ ra rằng A> B> C. Ba trật tự cuối cùng,
+
+64
+00:06:24,810 --> 00:06:29,630
+BCA, CAB, và CBA, đã được loại trừ bởi vì chúng có thuốc C mạnh hơn thuốc A.
+
+65
+00:06:29,630 --> 00:06:36,360
+ABC, ACB, BAC, đều là phân vùng 3 phần, không phải hai phần.
+
+66
+00:06:36,360 --> 00:06:40,200
+Thuốc A là mạnh nhất trong hai trật tự đầu, vì vậy xác suất
+
+67
+00:06:40,200 --> 00:06:44,300
+nghiên cứu so sánh tất cả ba loại thuốc sẽ kết luận rằng thuốc A hiệu quả nhất
+
+68
+00:06:44,300 --> 00:06:51,300
+là 2/3. Trên số dư của xác suất, ta chắc chắn sẽ chọn A hơn B.
+
+69
+00:06:51,590 --> 00:06:55,550
+Một khi bạn biết chúng, bạn có thể tìm thấy các vấn đề phân vùng phụ thuộc ở nhiều nơi.
+
+70
+00:06:55,550 --> 00:07:02,050
+Một số ví dụ đáng chú ý nhất là khi người ta tự xây dựng các phân vùng riêng của họ. Pháp luật
+
+71
+00:07:02,050 --> 00:07:07,270
+cung cấp một số ví dụ điển hình. Trong hầu hết các hệ thống pháp luật phương Tây, hội thẩm trong các thử nghiệm hình sự
+
+72
+00:07:07,270 --> 00:07:13,800
+được yêu cầu để đưa ra một trong hai bản án: Kết tội hoặc tha bổng. Đây là một phân vùng hai mặt:
+
+73
+00:07:13,800 --> 00:07:19,380
+Dù bị cáo có tội hay không. Bồi thẩm đoàn thường được hướng dẫn để đưa ra
+
+74
+00:07:19,380 --> 00:07:24,740
+phán quyết chỉ khi họ xem xét các bị cáo có tội "ngoài nghi ngờ hợp lý",
+
+75
+00:07:24,740 --> 00:07:30,920
+mà nhiều người giải thích có nghĩa là xác suất rất cao của có tội. Bất cứ điều gì ít hơn một
+
+76
+00:07:30,920 --> 00:07:34,550
+xác suất cao thường kết quả là một tuyên bố trắng án.
+
+77
+00:07:34,550 --> 00:07:40,010
+Một ngoại lệ là các truyền thống pháp lý Scotland, đã cho phép lựa chọn thứ ba:
+
+78
+00:07:40,010 --> 00:07:47,010
+"Không được chứng minh". Vì vậy, Hội thẩm có một phân vùng ba phần: Các bị cáo có tội hoặc vô tội,
+
+79
+00:07:47,030 --> 00:07:52,000
+hoặc họ không chắc chắn. Trong các cuộc tranh luận về việc liệu tùy chọn này nên được đưa vào
+
+80
+00:07:52,000 --> 00:07:57,410
+xét xử hình sự quy phạm pháp luật của các quốc gia hay không, một niềm tin phổ biến rộng rãi bởi các học giả pháp lý và các bên liên quan khác
+
+81
+00:07:57,410 --> 00:08:04,280
+đã được giới thiệu kết quả "không được chứng minh" sẽ ít kết án.
+
+82
+00:08:04,280 --> 00:08:10,740
+Sự tranh luận là Hội thẩm sẽ ủng hộ lựa chọn này là một lựa chọn ít đau đớn hơn kết án một người nào đó.
+
+83
+00:08:10,740 --> 00:08:16,080
+Lập luận khác đã được đưa ra khi lựa chọn "không được chứng minh" là có sẵn, Hội thẩm
+
+84
+00:08:16,080 --> 00:08:21,930
+sẽ trở nên nghiêm ngặt hơn về cách họ phải chắc chắn khi đưa ra kết án.
+
+85
+00:08:21,930 --> 00:08:28,860
+Hai trong số các sinh viên danh dự của tôi, Sara Deady và Lavinia Gracik, và tôi đặt các học giả pháp lý 
+
+86
+00:08:28,860 --> 00:08:34,810
+suy đoán để kiểm tra các bằng chứng thực nghiệm. Chúng tôi chạy một loạt các nghiên cứu thực nghiệm của
+
+87
+00:08:34,810 --> 00:08:39,829
+mô hình thử nghiệm trong đó một nửa số người tham gia đã có lựa chọn "không được chứng minh" có sẵn cho
+
+88
+00:08:39,829 --> 00:08:45,559
+họ và nửa còn lại thì không, vì vậy nửa sau chỉ có thể chọn một trong hai một là kết án
+
+89
+00:08:45,559 --> 00:08:51,579
+hoặc tuyên bố trắng án. Những người tham gia trong điều kiện "không được chứng minh"
+
+90
+00:08:51,579 --> 00:08:58,579
+có đưa ra ít kết án hơn không? Không, và trong thực tế, họ quyết định vô tội ít hơn. Tiêu chuẩn 
+
+91
+00:08:59,449 --> 00:09:04,639
+chứng minh của họ cho tuyên bố trắng án trở nên khắt khe hơn so với những người chỉ có thể hoặc là kết án hoặc
+
+92
+00:09:04,639 --> 00:09:09,930
+trắng án, trong khi tiêu chuẩn của bằng chứng để kết tội vẫn giống như những người trong
+
+93
+00:09:09,930 --> 00:09:14,529
+điều kiện kết tội hoặc tha bổng. Chúng tôi tìm thấy xác suất đánh giá của tội lỗi cho những người tham gia
+
+94
+00:09:14,529 --> 00:09:20,180
+đưa ra phán quyết "không được chứng minh" vững chắc trong khoảng giữa quy mô, cao hơn
+
+95
+00:09:20,180 --> 00:09:26,779
+những người đưa ra tuyên bố trắng án và thấp hơn so với những người tuyên bố kết tội. Những suy đoán
+
+96
+00:09:26,779 --> 00:09:33,779
+trong các tài liệu pháp lý đã sai 100%. Tác dụng chính của việc giới thiệu lựa chọn của người Scotland
+
+97
+00:09:33,829 --> 00:09:39,050
+là làm khó khăn hơn cho một bị cáo để có được một tuyên bố trắng án hoàn toàn và nhận ra,
+
+98
+00:09:39,050 --> 00:09:43,920
+Scot-miễn phí. Tại thời điểm này, bạn bị thuyết phục rằng mọi người hành động như thể có
+
+99
+00:09:43,920 --> 00:09:48,910
+nhiều loại khác nhau của ẩn số, và họ thậm chí có thể
+
+100
+00:09:48,910 --> 00:09:54,470
+thích một số loại hơn những thứ khác. Nhưng liệu não của con người có thực sự hoạt động như thể nó có
+
+101
+00:09:54,470 --> 00:09:59,170
+các loại khác nhau? Điều gì xảy ra trong não khi nó đang phải đối mặt với ẩn số phát sinh
+
+102
+00:09:59,170 --> 00:10:05,680
+từ xác suất, sự mơ hồ, mâu thuẫn, hoặc không gian thiếu hiểu biết? Do cấu trúc khác nhau
+
+103
+00:10:05,680 --> 00:10:11,249
+trong não được kích hoạt, hoặc là có một thống nhất " thiếu hiểu biết trung tâm" như "phần thưởng
+
+104
+00:10:11,249 --> 00:10:16,729
+trung tâm" tuyên bố bởi các nhà kinh tế thần kinh học? Hãy khám phá não bộ trong bài giảng tiếp theo.
+

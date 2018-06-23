@@ -1,0 +1,610 @@
+1
+00:00:02,799 --> 00:00:06,259
+Mỗi lĩnh vực khoa học đều có những thuật ngữ riêng
+
+2
+00:00:06,259 --> 00:00:09,160
+và đây là cách để truyền đạt các ý tưởng mà lĩnh vực đấy nghiên cứu.
+
+3
+00:00:09,169 --> 00:00:13,830
+Lấy ví dụ, sinh học tìm cách sắp xếp thế giới bằng cách đặt tên cho mọi sinh vật sống một cái tên theo tiếng La Tinh.
+
+4
+00:00:13,830 --> 00:00:18,449
+Hóa học có 1 hệ thống tiền tố, hậu tố và chữ số để cho bạn biết, trong một hoặc hai từ,
+
+5
+00:00:18,449 --> 00:00:21,050
+thành phần chính xác của một nguyên tử, hoặc một hợp chất.
+
+6
+00:00:21,050 --> 00:00:23,900
+Nhưng vật lý phải truyền đạt ý tưởng của nó theo cách khác.
+
+7
+00:00:23,908 --> 00:00:25,928
+Ngôn ngữ của vật lý chính là toán học.
+
+8
+00:00:25,928 --> 00:00:29,518
+Bởi vì, nếu bạn muốn miêu tả cách thức thế giới hoạt động, bạn thực sự cần biết
+
+9
+00:00:29,518 --> 00:00:32,009
+cách thức các sự vật liên hệ với nhau 
+dựa trên phương diện toán học.
+
+10
+00:00:32,009 --> 00:00:37,308
+Ví dụ, chúng ta đã nói rất nhiều về vị trí, vận tốc và gia tốc, và cách thức chúng liên kết với nhau. 
+
+11
+00:00:37,308 --> 00:00:42,028
+Vận tốc đo sự thay đổi về vị trí, và gia tốc đo sự thay đổi về vận tốc.
+
+12
+00:00:42,029 --> 00:00:46,100
+Chúng liên hệ với nhau -- đại lượng này sẽ miêu tả
+đại lượng khác thay đổi như thế nào.
+
+13
+00:00:46,100 --> 00:00:49,300
+Và cách thức mà ta mô tả sự thay đổi trong toán học 
+là thông qua toán học giải tích.
+
+14
+00:00:49,299 --> 00:00:52,640
+Phép tính giải tích giải thích cách thức và nguyên nhân sự vật thay đổi, như sử dụng đạo hàm,
+
+15
+00:00:52,649 --> 00:00:57,409
+giúp ta xác định cách thức một phương trình biến đổi, điều tương tự như tích phân,
+
+16
+00:00:57,409 --> 00:01:00,409
+cái mà có thể giúp bạn tính toán diện tích bên dưới một đường cong.
+
+17
+00:01:00,409 --> 00:01:04,920
+Đạo hàm và tích phân bản thân chúng có mối quan hệ chặt chẽ. Nhưng ta sẽ khởi đầu với đạo hàm trước.
+
+18
+00:01:04,920 --> 00:01:08,680
+Bạn chắc chắn sẽ không thể đi từ bài học hôm nay tới bài thi giải tích cuối kì được đâu.
+
+19
+00:01:08,680 --> 00:01:12,800
+Nhưng hi vọng rằng trong 10 phút tới, bạn sẽ 
+có thể hiểu được 1 số phép toàn mà 
+
+20
+00:01:12,810 --> 00:01:17,269
+các nhà khoa học đã sử dụng trong vật lý trong hơn 400 năm qua.
+
+21
+00:01:17,269 --> 00:01:21,670
+Và bạn CŨNG sẽ có 1 cách MỚI để tránh bị phạt quá tốc độ. Bạn biết đấy, chỉ để đề phòng thôi. 
+
+22
+00:01:21,670 --> 00:01:31,109
+[Nhạc nền]
+
+23
+00:01:31,109 --> 00:01:34,879
+Bài trước, chúng ta đã nói về rủi ro khi bạn dính 1 vé phạt quá tốc độ.
+
+24
+00:01:34,879 --> 00:01:39,560
+Công tơ mét của bạn bị hỏng, nhưng bởi ta biết được gia tốc của bạn, ta hoàn toàn có thể đo được
+
+25
+00:01:39,560 --> 00:01:41,879
+bạn đang đi nhanh như thế nào khi cảnh sát dừng xe bạn lại.
+
+26
+00:01:41,879 --> 00:01:43,899
+Giờ hãy cùng nói về chuyện gì sẽ xảy ra tiếp theo.
+
+27
+00:01:43,899 --> 00:01:47,629
+Cảnh sát yêu cầu bạn phóng xe đi. Bạn sẵn sàng để đi tiếp, rồi bạn nhấn ga và
+
+28
+00:01:47,629 --> 00:01:50,149
+phóng về phía trước, di chuyển ngày càng nhanh. 
+
+29
+00:01:50,149 --> 00:01:53,308
+Nhưng trong tình huống này, ta không biết được gia tốc của bạn;
+
+30
+00:01:53,308 --> 00:01:56,528
+ta chỉ có thể biết được vị trí của bạn thay đổi nhiều như thế nào theo thời gian.
+
+31
+00:01:56,528 --> 00:02:00,078
+Trong ví dụ này, vị trí của bạn sẽ bằng quãng thời gian mà bạn
+
+32
+00:02:00,078 --> 00:02:04,528
+đã lái xe bình phương. Vậy chúng ta sẽ có công thức x=t^2
+
+33
+00:02:04,528 --> 00:02:10,508
+Sau 20 giây, bạn đi qua 1 máy dò tốc độ chỉ rõ tốc độ của bạn trên biển báo. Bạn vẫn tiếp tục lái xe,
+
+34
+00:02:10,508 --> 00:02:14,228
+chân vẫn ở trên bàn đạp ga, và bạn nhận ra con số bạn đang nhìn thấy.
+
+35
+00:02:14,229 --> 00:02:22,349
+Và... ôi không! Bạn vừa mới nhận được 1 vé phạt quá tốc vì đi với vận tốc 126 km/h trong khu vực giới hạn 100 km/h,
+
+36
+00:02:22,348 --> 00:02:25,139
+Và giờ bảng báo báo rằng bạn thậm chí còn đang đi nhanh hơn nữa.
+
+37
+00:02:25,139 --> 00:02:28,619
+Giờ bạn rất muốn biết liệu con số trên máy dò có chính xác không, nói cách khác, bạn muốn
+
+38
+00:02:28,620 --> 00:02:31,580
+biết vận tốc của mình, ngay chính xác thời điểm bạn đi qua.
+
+39
+00:02:31,580 --> 00:02:35,320
+Vận tốc này chỉ là 1 phép đo sự thay đổi vị trí của bạn - chính là đạo hàm của nó.
+
+40
+00:02:35,319 --> 00:02:39,299
+Vậy, để tìm được vận tốc của bạn, ta sẽ phải tìm đạo hàm vị trí của bạn.
+
+41
+00:02:39,310 --> 00:02:42,909
+Và để xác định được đạo hàm, trước tiên ta cần phải nói về giới hạn.
+
+42
+00:02:42,909 --> 00:02:47,259
+Không phải là giới hạn tốc độ - mà là giới hạn của đạo hàm. Tôi sẽ giải thích..
+
+43
+00:02:47,270 --> 00:02:51,840
+Giới hạn được dựa trên khái niệm rằng nếu bạn có 1 công thức trên đồ thị, bạn thường có thể đoán được 
+
+44
+00:02:51,840 --> 00:02:56,060
+tại 1 điểm nó sẽ trông như thế nào khi bạn nhìn vào những điểm xung quanh. 
+
+45
+00:02:56,060 --> 00:03:01,599
+Ví dụ:  ta có công thức x=t^2 từ bài toán tốc độ phía trên
+
+46
+00:03:01,599 --> 00:03:07,239
+và bạn muốn biết vị trí của bạn thay đổi như thế nào vào thời điểm thời gian bằng 0. 
+
+47
+00:03:07,240 --> 00:03:10,420
+Và đó chính là giới hạn khi thời gian tiếp cận mốc 0.
+
+48
+00:03:10,419 --> 00:03:14,219
+Giờ hãy xem chuyện gì xảy ra quanh mốc t=0.
+
+49
+00:03:14,219 --> 00:03:16,520
+Tại điểm t=1, x=0.
+
+50
+00:03:16,520 --> 00:03:19,939
+Tại điểm t=0.5, x=0.25
+
+51
+00:03:19,939 --> 00:03:24,199
+Và t=0.1 thì x=0.01.
+
+52
+00:03:24,210 --> 00:03:28,570
+Ta có thể thấy rằng càng gần đến mức t=0 thì giá trị của x cũng
+
+53
+00:03:28,569 --> 00:03:33,109
+gần với 0 hơn. Đấy chính là ý nghĩa toán học khi ta nói về giới hạn.
+
+54
+00:03:33,110 --> 00:03:37,580
+Giới hạn rất hữu ích bới nó có thể giúp ta phán đoán được chuyện xảy ra khi bạn thu ngắn khoảng thời gian lại. 
+
+55
+00:03:37,580 --> 00:03:43,680
+Và khoảng thời gian chỉ là 1 khoảng cách trên đồ thị, nó là khoảng cách giữa 2 điểm trên trục hoành. 
+
+56
+00:03:43,689 --> 00:03:47,789
+Vậy đầu tiên ta có thể thử tính vận tốc trung bình trong khoảng thời gian từ
+
+57
+00:03:47,789 --> 00:03:51,179
+15 đến 20 giây. Ta có thể sử dụng công thức đã được đề cập trước đó -
+
+58
+00:03:51,180 --> 00:03:54,680
+vận tốc trung bình tương đương với   
+
+59
+00:03:54,680 --> 00:03:57,599
+sự thay đổi vị trí, được chia ra theo sự thay đổi về thời gian.
+
+60
+00:03:57,599 --> 00:04:00,189
+Kết quả sẽ là 35 m/s.
+
+61
+00:04:00,189 --> 00:04:03,909
+Vấn đề là, nó mới chỉ là trung bình, không phải tốc độ CHÍNH XÁC bạn đã đi sau
+
+62
+00:04:03,909 --> 00:04:06,299
+20 giây gia tốc, khi bạn đi qua máy đo tốc độ.
+
+63
+00:04:06,300 --> 00:04:10,069
+Nhờ có giới hạn, ta có thể thấy răng bạn có thể có con số gần với con số chính xác hơn bằng cách
+
+64
+00:04:10,068 --> 00:04:14,659
+tính vận tốc trung bình trong các khoảng thời gian nhỏ hơn nữa. Khi đó bạn sẽ thấy rằng
+
+65
+00:04:14,659 --> 00:04:18,250
+con số sẽ gần hơn với mức 40 m/s.
+
+66
+00:04:18,250 --> 00:04:20,939
+Điều này có nghĩa là bạn sẽ phải chậm lại nếu không muốn nhận
+
+67
+00:04:20,939 --> 00:04:23,079
+cái phiếu phạt tốc độ thứ 2 trong ngày.
+
+68
+00:04:23,079 --> 00:04:27,399
+Vả đấy chính là ý tưởng về đạo hàm: ta có thể sử dụng những khoảng thời gian nhỏ không giới hạn để tính
+
+69
+00:04:27,399 --> 00:04:30,319
+chính xác một phương trình đang thay đổi như thế nào ở bất kỳ khoảnh khắc nào.
+
+70
+00:04:30,319 --> 00:04:34,969
+Bạn thậm chí có thể đưa ra 1 phương trình để mô tả sự thay đổi đấy. Đấy chính xác là vận tốc - 
+
+71
+00:04:34,970 --> 00:04:37,430
+một phương trình mô tả sự thay đổi vị trí.
+
+72
+00:04:37,430 --> 00:04:39,800
+Và gia tốc mô tả sự thay đổi về vận tốc.
+
+73
+00:04:39,800 --> 00:04:44,629
+Vậy chúng ta có thể gọi vận tốc là đạo hàm của vị trí và gia tốc là đạo hàm của vận tốc. 
+
+74
+00:04:44,629 --> 00:04:48,689
+Giờ ta sẽ nói về cách biểu diễn đạo hàm, các nhà toán học đã
+
+75
+00:04:48,689 --> 00:04:50,120
+đưa ra được các quy tắc nhanh chóng hơn. 
+
+76
+00:04:50,120 --> 00:04:51,840
+Giống như một cái gọi là Quy tắc lũy thừa.
+
+77
+00:04:51,839 --> 00:04:56,319
+Như chính cái tên của nó, Quy tắc này được sử dụng cho các phép toán với các biến số được  nâng lên lũy thừa, hoặc mũ 
+
+78
+00:04:56,319 --> 00:04:58,839
+miễn rằng số mũ là 1 con số.
+
+79
+00:04:58,839 --> 00:05:04,519
+Ví dụ, x=t^2 được áp dụng trong quy tắc lũy thừa bởi nó nâng lên lũy thừa bậc 2.
+
+80
+00:05:04,529 --> 00:05:09,059
+Trong quy tắc lũy thừa, đối với những loại phép tính này, để tính được đạo hàm, 
+
+81
+00:05:09,060 --> 00:05:11,030
+tất cả những gì chúng ta cần là 1 mẹo nhỏ.
+
+82
+00:05:11,029 --> 00:05:15,209
+Lấy số mũ, trong trường hợp này là 2 -- và đặt nó ngay trước biến số.
+
+83
+00:05:15,209 --> 00:05:18,259
+Sau đó lấy số mũ trừ 1.
+
+84
+00:05:18,259 --> 00:05:19,469
+Và đấy chính là đạo hàm!
+
+85
+00:05:19,470 --> 00:05:25,180
+Vậy đạo hàm của x=t^2 là 2t. Điều đó có nghĩa là cho dù bạn có 
+
+86
+00:05:25,180 --> 00:05:30,329
+nhấn ga mấy giây đi nữa thì vận tốc của bạn vẫn là 2t, tức là gấp đôi số giây.
+
+87
+00:05:30,329 --> 00:05:36,550
+Sau 5 giây, bạn sẽ đi với vận tốc vừa phải là 10m/s. Nhưng sau 20 giây, vận tốc của bạn sẽ là
+
+88
+00:05:36,550 --> 00:05:42,740
+40 m/s. Và điều này không hề tốt. Chúng ta sẽ viết ra như sau, và dxdt ở đây chỉ là 1 cách 
+
+89
+00:05:42,740 --> 00:05:46,740
+thể hiện rằng ta đang đạo hàm phần phép tính có liên quan tới t.
+
+90
+00:05:46,740 --> 00:05:51,860
+Hoặc là theo như cách nói của 1 nhà toán học, ta lấy đạo hàm của x theo t.
+
+91
+00:05:51,860 --> 00:05:54,300
+Bạn cũng sẽ thỉnh thoảng thấy nó được trình bày theo 1 cách hoàn toàn khác: 
+
+92
+00:05:54,300 --> 00:05:58,710
+Nếu hàm f với biến t bằng t bình phương, thì đạo hàm f' của t bằng 2t. 
+
+93
+00:05:58,709 --> 00:06:01,879
+Giờ hãy thử tìm vài đạo hàm dùng quy tắc lũy thừa.
+
+94
+00:06:01,879 --> 00:06:08,879
+x=7t^6 cũng là 1 phép toán lũy thừa: 
+nó có 1 biến t, lũy thừa lên bậc 6
+
+95
+00:06:08,879 --> 00:06:13,759
+với 1 hằng số trước nó: 7. Việc đầu tiên cần làm là lấy số mũ và đặt nó
+
+96
+00:06:13,759 --> 00:06:15,089
+trước biến t.
+
+97
+00:06:15,089 --> 00:06:19,739
+Nhưng đã có sẵn 1 con số đứng trước t là 7. Vậy chúng ta sẽ nhân nó lên: 7 nhân
+
+98
+00:06:19,740 --> 00:06:26,980
+6 bằng 42. Sau đó ta lấy số mũ trừ đi 1. Đáp án sẽ là 42t mũ 5.
+
+99
+00:06:26,980 --> 00:06:31,879
+Tương tự đối với trường hợp số mũ là phân số hoặc số thập phân. Vậy đạo hàm 
+
+100
+00:06:31,879 --> 00:06:35,740
+của t mũ 1/2 bằng 1/2 t mũ trừ 1/2.
+
+101
+00:06:35,740 --> 00:06:41,660
+Công thức này cũng áp dụng cho số mũ âm - đạo hàm của t^-2 bằng 
+
+102
+00:06:41,660 --> 00:06:42,620
+-2t^-3. 
+
+103
+00:06:42,620 --> 00:06:46,319
+Ta có 1 số công thức có đạo hàm bạn có thể hiểu được.
+
+104
+00:06:46,319 --> 00:06:50,459
+Lượng giác - công thức được dùng để tính góc và cạnh của hình tam giác
+
+105
+00:06:50,459 --> 00:06:54,339
+đang được áp dụng rất rộng rãi trong vật lý bởi chúng ta sử dụng hình tam giác vuông rất nhiều.
+
+106
+00:06:54,339 --> 00:06:58,948
+Vậy nên sẽ là 1 ý kiến hay nếu ta biết được cách tìm đạo hàm của sin(x) và cos(x).
+
+107
+00:06:58,949 --> 00:07:04,220
+Sin cho ta biết rằng nếu ta có 1 hình tam giác vuông và x là 1 góc trong tam giác đó, thì sin(x)
+
+108
+00:07:04,220 --> 00:07:07,979
+sẽ là (chiều dài của của cạnh đối diện) chia cho (cạnh huyền). 
+
+109
+00:07:07,978 --> 00:07:12,969
+Cosin cũng tương tự sẽ bằng (cạnh kề bên) chia cho (cạnh huyền).
+
+110
+00:07:12,970 --> 00:07:16,419
+Vậy đồ thị của chúng cho biết tỉ lệ trên là bao nhiêu sẽ phụ thuộc vào góc.
+
+111
+00:07:16,418 --> 00:07:20,459
+Thực tế ta có thể đoán đạo hàm của  sin(x) chỉ bằng cách nhìn và đồ thị của nó.
+
+112
+00:07:20,459 --> 00:07:25,209
+Bạn có thể thấy đường cong có các điểm ngoặt theo chu kỳ tại điểm x= -90 độ,  x= 90 độ
+
+113
+00:07:25,209 --> 00:07:29,638
+và tiếp tục lặp lại mỗi 180 độ.
+
+114
+00:07:29,639 --> 00:07:35,000
+Điều này có nghĩa là ở những điểm này, công thức không hề thay đổi - nên đạo hàm ở những
+
+115
+00:07:35,000 --> 00:07:37,410
+điểm ngoặt cũng sẽ chính xác bằng 0. 
+
+116
+00:07:37,410 --> 00:07:40,930
+Giờ hãy xem tiếp 1 đồ thị khác, ở đây ta sẽ vẽ 1 đạo hàm và xác định vài điểm mà tại đó
+
+117
+00:07:40,930 --> 00:07:42,329
+ta biết nó sẽ bằng 0.
+
+118
+00:07:42,329 --> 00:07:49,300
+Giờ, chuyện gì sẽ xảy ra giữa những điểm ngoặt này? Từ -270 độ đến âm -90độ, sin(x)
+
+119
+00:07:49,300 --> 00:07:49,939
+giảm dần.
+
+120
+00:07:49,939 --> 00:07:54,449
+Nói cách khác, sự thay đổi của nó, kéo theo đó là đạo hàm của nó sẽ phải là 1 số âm.
+
+121
+00:07:54,449 --> 00:08:01,391
+Tiếp theo, từ -90 đến 90 độ, sin(x) tăng dần - vậy nó sẽ có đạo hàm dương. Và tương tự như vậy..
+
+122
+00:08:01,399 --> 00:08:05,349
+Thực tế có nhiều dấu hiệu hơn trong đồ thị này giúp ta tìm được đạo hàm, nhưng 
+
+123
+00:08:05,350 --> 00:08:07,680
+ta đã biết đủ để có được 1 suy đoán hợp lí.
+
+124
+00:08:07,680 --> 00:08:11,660
+Nếu ta nối các điểm trên đồ thị của đạo hàm, nhớ rằng nơi 
+
+125
+00:08:11,660 --> 00:08:16,250
+nào đường cong là dương và nơi nào là âm. Đây, đạo hàm này trông
+
+126
+00:08:16,250 --> 00:08:18,800
+rất giống đồ thị của cos(x).
+
+127
+00:08:18,800 --> 00:08:22,978
+Đúng vậy. Đạo hàm của sin chính là cos, và nó sẽ
+
+128
+00:08:22,978 --> 00:08:24,079
+còn xuất hiện rất nhiều nữa đó.
+
+129
+00:08:24,079 --> 00:08:28,430
+Và những công thức này cũng vậy, bạn có thể tự tìm ra nó bằng cách tương tự như cách chúng ta vừa làm
+
+130
+00:08:28,430 --> 00:08:30,400
+với đồ thị của sin(x) và cos(x).
+
+131
+00:08:30,399 --> 00:08:34,468
+Một phương trình đạo hàm khác mà cũng xuất hiện rất thường xuyên là một trường hợp rất đặc biệt, 
+
+132
+00:08:34,469 --> 00:08:38,640
+Và đó là e^x. Đạo hàm của e^x chỉ là ..
+e^x.
+
+133
+00:08:38,639 --> 00:08:40,419
+Vâng, chỉ vậy thôi. Dù có là gì đi nữa.
+
+134
+00:08:40,429 --> 00:08:45,079
+Thực tế, đó là một cách để định nghĩa số e, nó cũng giống số pi ở chỗ
+
+135
+00:08:45,080 --> 00:08:51,750
+nó cũng là một chữ cái đơn giản đại diện cho một số vô tỉ cụ thể -- khoảng 2.718, 
+
+136
+00:08:51,750 --> 00:08:54,399
+nhưng với nhiều chữ số sau dấu thập phân dài tới vô tận.
+
+137
+00:08:54,399 --> 00:08:58,350
+Nó có đủ thứ công dụng trong giải tích, nhưng nó cũng xuất hiện nhiều khi bạn học 
+
+138
+00:08:58,350 --> 00:09:00,070
+về tài chính hay xác suất.
+
+139
+00:09:00,070 --> 00:09:04,190
+Được trang bị với những cách này để tính đạo hàm, bạn có thể lấy hầu như bất kì phương trình nào
+
+140
+00:09:04,190 --> 00:09:08,270
+về vị trí của bạn và tính đạo hàm của nó -- cho nên sẽ có được vận tốc của bạn.
+
+141
+00:09:08,269 --> 00:09:12,100
+Bằng cách tương tự, bạn có thể tính đạo hàm vận tốc của bạn và tìm ra gia tốc.
+
+142
+00:09:12,100 --> 00:09:17,009
+Nhưng vẫn còn nguyên một phần khác của giải tích mà chúng ta vẫn chưa nói tới -- tích phân.
+
+143
+00:09:17,009 --> 00:09:18,909
+Cái mà sẽ giúp bạn làm điều này ngược lại.
+
+144
+00:09:18,909 --> 00:09:23,419
+Với tích phân, bạn có thể sử dụng gia tốc của mình để tìm ra vận tốc, và sử dụng vận tốc của bạn để tìm ra vị trí.
+
+145
+00:09:23,419 --> 00:09:24,860
+Nhưng chúng ta sẽ để dành nó cho lần sau.
+
+146
+00:09:24,860 --> 00:09:29,279
+Hôm nay bạn đã học được về giới hạn, và rằng đạo hàm được dùng để mô tả một phương trình thay đổi như thế nào.
+
+147
+00:09:29,279 --> 00:09:34,980
+Chúng ta cũng nói về một vài loại đạo hàm khác nhau: hàm mũ, hằng số, lượng giác và e^x.
+
+148
+00:09:34,990 --> 00:09:38,899
+Khóa học vật lý cấp tốc được sản xuất với sự hợp tác của Xưởng phim kỹ thuật số PBS.
+
+149
+00:09:38,899 --> 00:09:44,000
+Bạn có thể truy cập kênh của họ để khám phá những chương trình thú vị như Deep Look, The Good Stuff, and PBS Space Time.
+
+150
+00:09:44,009 --> 00:09:47,939
+Tập này của khóa học cấp tốc được quay ở Xưởng phim khóa học cấp tốc của Bác sĩ Cheryl C. Kinney
+
+151
+00:09:47,940 --> 00:09:53,300
+với sự giúp đỡ của những con người tuyệt vời và nhóm đồ họa Thought Cafe.
+

@@ -1,0 +1,598 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/RNDR6IYbvxY
+
+1
+00:00:00,500 --> 00:00:03,990
+Vậy hãy nhìn vào làm bằng số mũ đơn giản.
+
+2
+00:00:03,990 --> 00:00:06,850
+Làm bằng số mũ đơn giản là gì?
+
+3
+00:00:06,850 --> 00:00:09,320
+Có nghĩa là có cầu không thay đổi.
+
+4
+00:00:09,320 --> 00:00:10,990
+Không có xu hướng hay tính mùa vụ.
+
+5
+00:00:10,990 --> 00:00:13,570
+
+
+6
+00:00:13,570 --> 00:00:16,280
+Nên giá trị quan sát vẫn giảm theo thời gian.
+
+7
+00:00:16,280 --> 00:00:17,995
+Đó là làm bằng số mũ.
+
+8
+00:00:17,995 --> 00:00:19,870
+Và chúng ta sẽ sử dụng một vài hằng số làm bằng alpha,
+
+9
+00:00:19,870 --> 00:00:23,350
+như chúng ta đã nói tới ở video trước,
+
+10
+00:00:23,350 --> 00:00:25,170
+trong đó alpha thuộc khoảng từ 0 đến 1.
+
+11
+00:00:25,170 --> 00:00:28,020
+Và thực tế là bạn sử dụng một giá trị thuộc khoảng 0,1 đến 0,3.
+
+12
+00:00:28,020 --> 00:00:31,160
+Nhưng chúng ta sẽ nói thêm về điều này sau.
+
+13
+00:00:31,160 --> 00:00:33,700
+Nhưng bạn sẽ thấy mô hình cơ bản này khá quen.
+
+14
+00:00:33,700 --> 00:00:35,430
+Đó là cầu không thay đổi.
+
+15
+00:00:35,430 --> 00:00:37,940
+Nên chúng ta giải sử rằng có một sự cân bằng
+
+16
+00:00:37,940 --> 00:00:40,780
+và có chút nhiễu loạn, kiểu như số hạng sai số.
+
+17
+00:00:40,780 --> 00:00:44,180
+Bạn giao động xung quanh số hạng cân bằng này, gọi là a.
+
+18
+00:00:44,180 --> 00:00:45,920
+Và sau đó nếu nhìn vào sai số,
+
+19
+00:00:45,920 --> 00:00:48,620
+chúng ta đang giả sử rằng nó được phân bổ như nhau
+
+20
+00:00:48,620 --> 00:00:51,310
+và độc lập với một giá trị trung bình của 0,
+
+21
+00:00:51,310 --> 00:00:56,110
+nên nó không bị sai lệch, giao động, hay gì đó.
+
+22
+00:00:56,110 --> 00:00:57,900
+Vậy mô hình dự đoán của tôi sẽ chính là
+
+23
+00:00:57,900 --> 00:01:00,930
+những gì chúng ta đã nói tới ở video trước.
+
+24
+00:01:00,930 --> 00:01:03,620
+Dự đoán của tôi-- đó là x mũ--
+
+25
+00:01:03,620 --> 00:01:07,170
+trong thời gian t cho thời gian t + 1
+
+26
+00:01:07,170 --> 00:01:10,040
+sẽ bằng với alpha-- đó là hệ số làm bằng--
+
+27
+00:01:10,040 --> 00:01:13,490
+nhân với quan sát gần đây nhất của tôi về cầu thực tế,
+
+28
+00:01:13,490 --> 00:01:19,880
+xt, nhân với (1 - alpha) nhân với dự đoán từ
+
+29
+00:01:19,880 --> 00:01:24,850
+khoảng thời gian đã xảy ra gần đây nhất cho thời gian này,
+x mũ, (t - 1) tới t.
+
+30
+00:01:24,850 --> 00:01:27,700
+Đây là giai đoạn dự đoán tiếp theo.
+
+31
+00:01:27,700 --> 00:01:30,460
+Đây là dự đoán từ tháng này đến tháng tiếp theo,
+
+32
+00:01:30,460 --> 00:01:33,590
+từ tuần này đến tuần kế tiếp, năm này đến năm tiếp theo.
+
+33
+00:01:33,590 --> 00:01:35,130
+Bạn có thể lấy các khoảng thời gian bất kỳ.
+
+34
+00:01:35,130 --> 00:01:39,520
+Và vẫn vậy, alpha sẽ nằm trong khoảng từ 0 đến 1.
+
+35
+00:01:39,520 --> 00:01:41,130
+Chúng ta đều biết điều này rồi.
+
+36
+00:01:41,130 --> 00:01:43,710
+Đây cũng là sự đánh đổi thông tin mới.
+
+37
+00:01:43,710 --> 00:01:46,930
+Rằng xt là thông tin mới nhất mà chúng ta có.
+
+38
+00:01:46,930 --> 00:01:51,150
+Và x mũ (t - 1) là được đúc kết
+
+39
+00:01:51,150 --> 00:01:53,160
+từ tất cả dự đoán gần đây nhất của tôi
+
+40
+00:01:53,160 --> 00:01:55,310
+có chứa toàn bộ dự liệu lịch sử của tôi.
+
+41
+00:01:55,310 --> 00:01:58,647
+Nhưng chúng ta có thể nghĩ tới phương trình này
+
+42
+00:01:58,647 --> 00:01:59,230
+theo cách khác đi một chút.
+
+43
+00:01:59,230 --> 00:02:01,570
+Chúng ta có thể nghĩ về nó như hiệu chỉnh sai số.
+
+44
+00:02:01,570 --> 00:02:03,380
+Và điều này có vẻ tuyệt.
+
+45
+00:02:03,380 --> 00:02:05,582
+Đây là phương trình tương đương.
+
+46
+00:02:05,582 --> 00:02:07,290
+Và điều tôi sẽ làm ở đây là tôi sẽ
+
+47
+00:02:07,290 --> 00:02:10,560
+tách các số hạng với alpha và gộp chúng lại.
+
+48
+00:02:10,560 --> 00:02:12,090
+Vậy là tôi sẽ gộp các số hạng
+
+49
+00:02:12,090 --> 00:02:13,990
+có chưa alpha.
+
+50
+00:02:13,990 --> 00:02:19,180
+Và bạn sẽ thấy đó sẽ là x mũ t tại (t - 1)
+
+51
+00:02:19,180 --> 00:02:23,880
+bằng với x mũ, (t - 1), t, cộng alpha xt,
+
+52
+00:02:23,880 --> 00:02:27,230
+quan sát gần đây nhất, trừ đi x mũ, (t - 1), t
+
+53
+00:02:27,230 --> 00:02:30,520
+là dự đoán gần đây nhất của tôi
+
+54
+00:02:30,520 --> 00:02:32,010
+cho giai đoạn này.
+
+55
+00:02:32,010 --> 00:02:35,920
+Một số hạng khác cho phương trình này là số hạng sai số.
+
+56
+00:02:35,920 --> 00:02:39,320
+Đó là định nghĩa về sai số, thực tế đã xảy ra
+
+57
+00:02:39,320 --> 00:02:41,770
+trừ đi những gì chúng ta đã dự đoán là sẽ xảy ra.
+
+58
+00:02:41,770 --> 00:02:45,720
+Vậy bạn có thể nghĩ về số hạng làm bằng số mũ tương tự này
+
+59
+00:02:45,720 --> 00:02:49,760
+cho làm bằng đơn giản như một sự hiệu chỉnh sai số.
+
+60
+00:02:49,760 --> 00:02:52,060
+Dự đoán của tôi, dự đoán của tôi tại
+
+61
+00:02:52,060 --> 00:02:56,450
+thời gian t cho thời gian (t - 1)-- vậy là tại thời điểm hôm nay,
+
+62
+00:02:56,450 --> 00:02:58,380
+nhìn vào dự đoán cho ngày mai--
+
+63
+00:02:58,380 --> 00:03:03,900
+sẽ bằng với x mũ, t - 1, t, là những gì
+tôi đã dự đoán ở ngày hôm qua
+
+64
+00:03:03,900 --> 00:03:08,190
+cho ngày hôm nay, cộng với alpha của số hạng sai số.
+
+65
+00:03:08,190 --> 00:03:10,474
+Vậy tôi đặt phân số của số hạng sai số này,
+
+66
+00:03:10,474 --> 00:03:11,890
+dù nó là âm hay dương.
+
+67
+00:03:11,890 --> 00:03:16,050
+Tôi sẽ sử dụng nó để điều chỉnh
+dự đoán gần đây nhất của tôi.
+
+68
+00:03:16,050 --> 00:03:18,130
+Và những cái này là tương đương.
+
+69
+00:03:18,130 --> 00:03:21,500
+Vậy phương trình này giống hệt phương trình này.
+
+70
+00:03:21,500 --> 00:03:23,950
+Tôi thích phương trình này hơn, vì nó cho bạn thấy
+
+71
+00:03:23,950 --> 00:03:26,004
+sự đánh đổi giữa cái mới và cái cũ.
+
+72
+00:03:26,004 --> 00:03:28,420
+Nhưng nó tương đương với cái này,
+điều bạn thực sự làm ở đây
+
+73
+00:03:28,420 --> 00:03:32,620
+là hiệu chỉnh số hạng sai số,
+
+74
+00:03:32,620 --> 00:03:34,390
+số hạng sai số mới đây nhất.
+
+75
+00:03:34,390 --> 00:03:37,460
+Vậy theo quy trình chúng ta sẽ làm điều này như thế nào?
+
+76
+00:03:37,460 --> 00:03:39,210
+Đây là một ví dụ.
+
+77
+00:03:39,210 --> 00:03:41,010
+Ở đây tôi có 10 quan sát.
+
+78
+00:03:41,010 --> 00:03:43,540
+Và những cái này là dự đoán cho giai đoạn tiếp theo.
+
+79
+00:03:43,540 --> 00:03:45,640
+Để tôi giải thích đồ thị này.
+
+80
+00:03:45,640 --> 00:03:49,830
+Cái này là cho hàng này là quan sát 1, khoảng thời gian 1.
+
+81
+00:03:49,830 --> 00:03:53,460
+Thực tế đã diễn ra là đã có được 109 đơn vị cầu.
+
+82
+00:03:53,460 --> 00:03:56,270
+Và nếu tôi sử dụng làm bằng số mũ, ở đây
+
+83
+00:03:56,270 --> 00:03:59,590
+tôi chỉ giả sử rằng quan sát đầu tiên là dự đoán,
+
+84
+00:03:59,590 --> 00:04:01,790
+nhằm giữ cho cái này được đơn giản.
+
+85
+00:04:01,790 --> 00:04:04,950
+Hãy nhìn vào quan sát thứ 10.
+
+86
+00:04:04,950 --> 00:04:10,530
+Bên dưới đây, tại khoảng thời gian thứ 10, đã có được 96 đơn vị.
+
+87
+00:04:10,530 --> 00:04:15,200
+Và dự đoán của tôi cho giai đoạn tiếp theo với alpha là 0,7
+
+88
+00:04:15,200 --> 00:04:18,930
+là giai đoạn tiếp theo-- vậy tại thời gian thứ 10
+
+89
+00:04:18,930 --> 00:04:22,510
+dự đoán cho thời gian thứ 11, t - 1
+
+90
+00:04:22,510 --> 00:04:25,170
+tôi dự đoán 96 đơn vị cầu.
+
+91
+00:04:25,170 --> 00:04:28,980
+Nếu alpha của tôi là 0,1 thì dự đoán của tôi
+
+92
+00:04:28,980 --> 00:04:33,690
+tại thời gian thứ 10 cho thời gian thứ 11 là 102,6.
+
+93
+00:04:33,690 --> 00:04:35,640
+Hy vọng rằng bảng này hợp lý.
+
+94
+00:04:35,640 --> 00:04:39,720
+Những cột này là cho alpha bên dưới,
+
+95
+00:04:39,720 --> 00:04:43,690
+đó là dự đoán cho thời gian tiếp theo tại thời gian đó
+
+96
+00:04:43,690 --> 00:04:45,730
+đó là hàng này.
+
+97
+00:04:45,730 --> 00:04:48,020
+Chẳng hạn, nếu tôi muốn tính dự đoán này
+
+98
+00:04:48,020 --> 00:04:52,780
+trong giai đoạn 6 khi đang ở giai đoạn 5,
+với alpha bằng 0,3.
+
+99
+00:04:52,780 --> 00:04:53,620
+thì sẽ như thế nào?
+
+100
+00:04:53,620 --> 00:04:58,350
+Tôi dang ở giai đoạn này, hàng thứ 5.
+
+101
+00:04:58,350 --> 00:05:04,120
+Chúng ta biết rằng dự đoán cho giai đoạn 6
+khi đang ở thời gian thứ 5
+
+102
+00:05:04,120 --> 00:05:06,140
+sẽ là alpha, trường hợp này chúng ta có là 0,3,
+
+103
+00:05:06,140 --> 00:05:09,770
+nhân với những gì thực tế đã xảy ra ở 5,
+
+104
+00:05:09,770 --> 00:05:16,990
+là 104, cộng (1 - alpha) là 0,7,
+
+105
+00:05:16,990 --> 00:05:19,420
+cộng những gì chúng ta đã dự đoán là sẽ xảy ra ở 5
+
+106
+00:05:19,420 --> 00:05:21,290
+trong khi dang ở thời gian 4.
+
+107
+00:05:21,290 --> 00:05:22,770
+Vậy sẽ là gì?
+
+108
+00:05:22,770 --> 00:05:27,630
+Với alpha bằng 0,3, nó sẽ là 100,3.
+
+109
+00:05:27,630 --> 00:05:29,060
+Và đó đây.
+
+110
+00:05:29,060 --> 00:05:31,660
+Vậy là chúng ta đang lấy một giá trị trung bình đã được điều chỉnh,
+
+111
+00:05:31,660 --> 00:05:34,580
+một kết hợp tuyến tính giữa hai số--
+
+112
+00:05:34,580 --> 00:05:39,000
+104, quan sát gần đây nhất, và 100,3.
+
+113
+00:05:39,000 --> 00:05:40,930
+Và căn cứ vào hệ số làm bằng,
+
+114
+00:05:40,930 --> 00:05:44,780
+nó sẽ xác định xem chúng ta gần với 104
+
+115
+00:05:44,780 --> 00:05:47,900
+hay gần với 100,3.
+
+116
+00:05:47,900 --> 00:05:52,240
+Và trung bình của chúng là 101,4.
+
+117
+00:05:52,240 --> 00:05:54,700
+Nếu tôi nhìn vào dồ thị,
+
+118
+00:05:54,700 --> 00:05:58,450
+đây là quan sát thực tế cho các khoảng thời gian khác nhau.
+
+119
+00:05:58,450 --> 00:06:02,940
+Vậy trong khoảng thời gian 1, tôi có 109 đơn vị.
+
+120
+00:06:02,940 --> 00:06:06,520
+Khoảng thời gian 2, giảm xuống còn 92 và vân vân.
+
+121
+00:06:06,520 --> 00:06:10,920
+Trên đồ thị đây là cột thứ hai.
+
+122
+00:06:10,920 --> 00:06:14,360
+Và nếu tôi có một hệ số làm bằng là 0,7
+
+123
+00:06:14,360 --> 00:06:15,160
+thì sẽ nói lên điều gì?
+
+124
+00:06:15,160 --> 00:06:18,139
+Nó sẽ cho biết rằng 70% dữ liệu mà tôi
+
+125
+00:06:18,139 --> 00:06:19,680
+có được là quan sát mới.
+
+126
+00:06:19,680 --> 00:06:21,960
+Vậy là hơi đáng lo ngại.
+
+127
+00:06:21,960 --> 00:06:25,180
+Nó sẽ hệt như một dự đoán mộc,
+
+128
+00:06:25,180 --> 00:06:26,000
+nhưng nó gần đúng.
+
+129
+00:06:26,000 --> 00:06:28,440
+Bạn có thể thấy nó phản ứng rất mạnh
+
+130
+00:06:28,440 --> 00:06:31,450
+khi có một đỉnh lên ở cầu như ở đây, giai đoạn 5,
+
+131
+00:06:31,450 --> 00:06:34,490
+bạn sẽ thấy dự đoán tăng lên.
+
+132
+00:06:34,490 --> 00:06:37,420
+Nên mọi thứ sẽ chuyển dịch.
+
+133
+00:06:37,420 --> 00:06:39,760
+Ngược với điều đó, nếu tôi duỗi cái này ra,
+
+134
+00:06:39,760 --> 00:06:42,940
+và đây là đường cuối cùng là alpha bằng 0,1.
+
+135
+00:06:42,940 --> 00:06:44,910
+Bạn có thể thấy nó tĩnh lặng hơn.
+
+136
+00:06:44,910 --> 00:06:47,550
+Nó sẽ giống mô hình tích lũy hơn.
+
+137
+00:06:47,550 --> 00:06:50,100
+Và bạn có thể thấy ở đây, từ đồ thị này
+
+138
+00:06:50,100 --> 00:06:53,320
+tác động là thuộc vào các alpha khác nhau.
+
+139
+00:06:53,320 --> 00:06:55,920
+Về cơ bản, đó là những gì chúng ta đang nói tới--
+
+140
+00:06:55,920 --> 00:06:56,910
+điều khiến nó trở nên đáng lo ngại hơn.
+
+141
+00:06:56,910 --> 00:06:58,910
+Nếu alpha của tôi lớn, nó sẽ
+
+142
+00:06:58,910 --> 00:07:00,900
+dễ phản ứng lại thay đổi bất kỳ hơn.
+
+143
+00:07:00,900 --> 00:07:04,579
+Đó chính là đường kẻ màu vàng, màu mù-tạc.
+
+144
+00:07:04,579 --> 00:07:06,620
+Đường kẻ màu đen cho biết điều ngược lại.
+
+145
+00:07:06,620 --> 00:07:11,400
+Nó giảm xuống thành dự đoán bằng phẳng hơn, tĩnh lặng hơn,
+
+146
+00:07:11,400 --> 00:07:13,220
+Và chúng ta sẽ nói thêm về ý nghĩa của từng loại
+
+147
+00:07:13,220 --> 00:07:17,070
+trong các tình huống khác nhau sau.
+

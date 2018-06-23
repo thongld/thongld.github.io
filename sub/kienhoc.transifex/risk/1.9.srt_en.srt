@@ -1,0 +1,604 @@
+0
+00:00:05,117 --> 00:00:10,808
+Okay, so now, there&#39;s a chance that you may get slightly confused,
+https://youtu.be/Ly6rSmZ6iCU
+1
+00:00:10,808 --> 00:00:15,839
+and the reason is relationships can be measured in many ways.
+
+2
+00:00:16,920 --> 00:00:21,830
+And the ways we use to measure it have some logic behind them.
+
+3
+00:00:21,830 --> 00:00:25,149
+And I like finance because it brings out that logic beautifully.
+
+4
+00:00:25,149 --> 00:00:31,890
+I actually feel like statistics was created for finance.
+
+5
+00:00:31,890 --> 00:00:35,580
+And when finance, modern finance emerged, statistics made so much sense.
+
+6
+00:00:35,580 --> 00:00:39,240
+And you&#39;ll see what I mean, it&#39;s so exciting how closely tied they are.
+
+7
+00:00:40,270 --> 00:00:42,760
+So, one final notion of relationships.
+
+8
+00:00:43,900 --> 00:00:46,220
+So, why are we studying relationships?
+
+9
+00:00:46,220 --> 00:00:49,830
+Because it&#39;s related to the notion that I, as a risk averse person,
+
+10
+00:00:49,830 --> 00:00:51,470
+would never invest in one thing.
+
+11
+00:00:51,470 --> 00:00:54,220
+I would invest in a portfolio.
+
+12
+00:00:54,220 --> 00:00:59,900
+Once I have put IBM in a portfolio, its risk is no longer its standard deviation.
+
+13
+00:00:59,900 --> 00:01:02,520
+But it&#39;s related to how IBM,
+
+14
+00:01:02,520 --> 00:01:07,300
+it is based on how IBM is related to other stocks in the portfolio.
+
+15
+00:01:07,300 --> 00:01:08,750
+What did we just do?
+
+16
+00:01:08,750 --> 00:01:13,840
+We found one way of measuring relationships called correlations.
+
+17
+00:01:13,840 --> 00:01:16,330
+But correlations started off at what?
+
+18
+00:01:16,330 --> 00:01:20,220
+Covariance, which was dependent on units.
+
+19
+00:01:20,220 --> 00:01:24,100
+And also, could be enlarged, or made small,
+
+20
+00:01:24,100 --> 00:01:29,143
+shrunk based on how the units were measured, inches or
+
+21
+00:01:29,143 --> 00:01:33,360
+millimeters if you may, okay?
+
+22
+00:01:33,360 --> 00:01:35,980
+Or if you measured feet, you&#39;d change the number again.
+
+23
+00:01:37,000 --> 00:01:41,630
+Now what we&#39;re going to do is we&#39;re going to define what&#39;s called regression.
+
+24
+00:01:42,660 --> 00:01:48,662
+Okay, and the regression is a concept that is written typically,
+
+25
+00:01:48,662 --> 00:01:55,427
+and I&#39;ll write it out, Yi, this is the standard equation of regression.
+
+26
+00:02:01,180 --> 00:02:02,857
+So I&#39;ve written it out.
+
+27
+00:02:02,857 --> 00:02:06,863
+I&#39;m again starting with some very fundamental concepts.
+
+28
+00:02:06,863 --> 00:02:14,020
+So Yi = Alpha i + Beta i Xi + Epsilon.
+
+29
+00:02:14,020 --> 00:02:15,960
+What does it reflect?
+
+30
+00:02:15,960 --> 00:02:19,590
+So if Y is on this axis, and
+
+31
+00:02:19,590 --> 00:02:24,750
+X is on this axis, there are a bunch of datas.
+
+32
+00:02:24,750 --> 00:02:26,480
+Yi, I should have, Xi.
+
+33
+00:02:27,640 --> 00:02:30,110
+So, we are measuring the relationship between the two.
+
+34
+00:02:30,110 --> 00:02:34,935
+What you&#39;ll see soon, when we come back for the next segment,
+
+35
+00:02:34,935 --> 00:02:40,124
+you&#39;re going to replace this by Ri, which is, you can pick of IBM,
+
+36
+00:02:40,124 --> 00:02:45,879
+then you are going to replace this by Rm, which is the return on the market.
+
+37
+00:02:45,879 --> 00:02:49,306
+But for the time being, just think of them by an X.
+
+38
+00:02:49,306 --> 00:02:52,380
+So, the first question is what are we trying to do?
+
+39
+00:02:52,380 --> 00:02:56,300
+You&#39;re trying to see if you can fit a relationship through that.
+
+40
+00:02:58,949 --> 00:03:02,510
+Okay, now, let&#39;s talk about it.
+
+41
+00:03:02,510 --> 00:03:05,436
+So what is, first of all, this guy?
+
+42
+00:03:08,785 --> 00:03:12,308
+This guy is also called the intercept.
+
+43
+00:03:14,875 --> 00:03:16,580
+And think about what it is.
+
+44
+00:03:16,580 --> 00:03:19,312
+So y is related to x, but
+
+45
+00:03:19,312 --> 00:03:24,659
+y is bouncing around and x is bouncing around.
+
+46
+00:03:24,659 --> 00:03:31,020
+So, alpha is that average y, which has nothing to do with x.
+
+47
+00:03:31,020 --> 00:03:33,970
+In other words, x is bouncing around, it&#39;s related to y,
+
+48
+00:03:33,970 --> 00:03:38,470
+but y is moving for, on average, without x moving too.
+
+49
+00:03:38,470 --> 00:03:40,340
+They&#39;re not perfect, you see what I&#39;m saying?
+
+50
+00:03:40,340 --> 00:03:42,750
+So, that&#39;s the average value of Y.
+
+51
+00:03:42,750 --> 00:03:44,040
+There is nothing to do with X.
+
+52
+00:03:45,150 --> 00:03:45,924
+What is this?
+
+53
+00:03:48,719 --> 00:03:50,440
+This is called the slope.
+
+54
+00:03:53,668 --> 00:03:58,843
+Slope, another word for it is, of course, BETA.
+
+55
+00:03:58,843 --> 00:04:02,320
+And by the way, is going to stay with us for a long time.
+
+56
+00:04:03,750 --> 00:04:05,640
+So, what is BETA measuring?
+
+57
+00:04:05,640 --> 00:04:09,710
+BETA is measuring the relationship between x and y.
+
+58
+00:04:11,040 --> 00:04:14,912
+So I could throw in IBM here, and Xerox here.
+
+59
+00:04:14,912 --> 00:04:17,560
+Or I could throw in IBM here and market here.
+
+60
+00:04:18,630 --> 00:04:22,890
+Beta will capture the relationship between the two.
+
+61
+00:04:22,890 --> 00:04:25,520
+So, how do you define beta?
+
+62
+00:04:25,520 --> 00:04:27,750
+And the definition of beta is the following.
+
+63
+00:04:28,860 --> 00:04:31,580
+It has to start off with what?
+
+64
+00:04:31,580 --> 00:04:35,228
+Covariance, between what and what?
+
+65
+00:04:35,228 --> 00:04:39,028
+Y and X.
+
+66
+00:04:39,028 --> 00:04:41,156
+And we know how to calculate it, yeah?
+
+67
+00:04:41,156 --> 00:04:47,060
+Yi minus y bar, xi minus x bar, summed over all probabilities.
+
+68
+00:04:47,060 --> 00:04:48,320
+So I&#39;m using another symbol.
+
+69
+00:04:49,410 --> 00:04:50,010
+And by the way,
+
+70
+00:04:51,230 --> 00:04:56,580
+review of statistics is a note that is with this note that you should read.
+
+71
+00:04:56,580 --> 00:04:59,261
+It&#39;s available to you, it&#39;s in the syllabus.
+
+72
+00:04:59,261 --> 00:05:01,288
+And I&#39;m repeating some of this stuff, but
+
+73
+00:05:01,288 --> 00:05:04,402
+I think it&#39;s important to walk through the more important ones.
+
+74
+00:05:04,402 --> 00:05:07,120
+So, Yi Xi is written here.
+
+75
+00:05:07,120 --> 00:05:09,676
+What&#39;s the problem with Yi Xi?
+
+76
+00:05:09,676 --> 00:05:17,790
+Covariance of Yi Xi, imagine Y was bushels, and X was rainfall.
+
+77
+00:05:17,790 --> 00:05:21,940
+You have a unit problem, you have a magnitude problem, then what do you do?
+
+78
+00:05:23,110 --> 00:05:28,220
+Here, you standardize it by variance of x.
+
+79
+00:05:29,860 --> 00:05:34,310
+You do not standardize it by standard deviation of y and
+
+80
+00:05:34,310 --> 00:05:38,130
+standard deviation of x, which was called correlation.
+
+81
+00:05:38,130 --> 00:05:44,300
+The formula for beta turns out to be covariance standardized by what?
+
+82
+00:05:44,300 --> 00:05:46,560
+Variance of which variable?
+
+83
+00:05:46,560 --> 00:05:51,000
+The independent variable, y is called the dependent variable.
+
+84
+00:05:51,000 --> 00:05:54,880
+So x changes around, and y is dependent on x.
+
+85
+00:05:54,880 --> 00:05:58,780
+That&#39;s why it&#39;s very, very important to not flip the two, for
+
+86
+00:05:58,780 --> 00:05:59,970
+the two to make sense.
+
+87
+00:05:59,970 --> 00:06:02,050
+That&#39;s why, what did I put on the left-hand side?
+
+88
+00:06:02,050 --> 00:06:03,120
+Bushels.
+
+89
+00:06:03,120 --> 00:06:06,285
+And what did I put on the right-hand side?
+
+90
+00:06:06,285 --> 00:06:08,070
+Rainfall, right?
+
+91
+00:06:08,070 --> 00:06:09,740
+So, rainfall affects bushels.
+
+92
+00:06:09,740 --> 00:06:12,470
+So, suppose we are talking about advertising and sales.
+
+93
+00:06:12,470 --> 00:06:13,790
+What should X be?
+
+94
+00:06:13,790 --> 00:06:15,360
+Advertising, sales should be Y.
+
+95
+00:06:16,770 --> 00:06:21,271
+Okay, so you have to use common sense and that&#39;s what&#39;s call hypothesis building,
+
+96
+00:06:21,271 --> 00:06:23,040
+building a good model.
+
+97
+00:06:23,040 --> 00:06:26,955
+Turns out when we do finance, when we come back for the next module,
+
+98
+00:06:26,955 --> 00:06:32,130
+Xi will be, could be anything, but it will end up being
+
+99
+00:06:32,130 --> 00:06:36,850
+Rm as the most sensible thing to use, that is return on the market.
+
+100
+00:06:36,850 --> 00:06:38,500
+And the formula is here.
+
+101
+00:06:38,500 --> 00:06:43,000
+What I&#39;m going to leave you with is, how is it different from correlation?
+
+102
+00:06:43,000 --> 00:06:46,440
+And you can go from beta to correlation, correlation to beta, and
+
+103
+00:06:46,440 --> 00:06:48,050
+I&#39;ll let you do that.
+
+104
+00:06:48,050 --> 00:06:52,030
+It&#39;s just a little manipulation of the same equation.
+
+105
+00:06:52,030 --> 00:06:56,060
+But important point, the numerators of both correlation and
+
+106
+00:06:56,060 --> 00:06:59,090
+beta are the same, which is covariance.
+
+107
+00:06:59,090 --> 00:07:03,030
+Therefore, the sign of beta and correlation are the same, but
+
+108
+00:07:03,030 --> 00:07:07,760
+the magnitudes are different based on how you are calculating them.
+
+109
+00:07:07,760 --> 00:07:10,000
+So what does beta tell you?
+
+110
+00:07:10,000 --> 00:07:12,510
+Correlation tells you strength of relationship.
+
+111
+00:07:12,510 --> 00:07:13,520
+What does beta tell you?
+
+112
+00:07:15,200 --> 00:07:19,560
+Suppose this is in percentage terms, and returns are in percentage.
+
+113
+00:07:19,560 --> 00:07:21,110
+Suppose this is percent change.
+
+114
+00:07:22,590 --> 00:07:27,370
+If x changes by 1%, how much does y change by?
+
+115
+00:07:27,370 --> 00:07:30,990
+That&#39;s exactly beta unit slope.
+
+116
+00:07:30,990 --> 00:07:33,670
+So yeah, it is a lot of meaning.
+
+117
+00:07:33,670 --> 00:07:34,800
+It&#39;s very beautiful.
+
+118
+00:07:34,800 --> 00:07:38,700
+It turns out, again, that finance is also, because you don&#39;t have to do percentages.
+
+119
+00:07:38,700 --> 00:07:41,153
+The return is already in percentage form.
+
+120
+00:07:41,153 --> 00:07:46,190
+And there is a deeper reason for using percentages in another context.
+
+121
+00:07:46,190 --> 00:07:48,550
+We won&#39;t talk about it here.
+
+122
+00:07:48,550 --> 00:07:50,550
+Finally, what the heck is this?
+
+123
+00:07:53,580 --> 00:07:55,150
+This, many people call error.
+
+124
+00:07:56,230 --> 00:07:57,720
+This is all these.
+
+125
+00:07:57,720 --> 00:08:03,510
+Once you&#39;ve fit the line, all these distances from the line are these errors.
+
+126
+00:08:03,510 --> 00:08:05,970
+And you&#39;re trying to do what when you fit the straight line?
+
+127
+00:08:05,970 --> 00:08:10,270
+You&#39;re trying to minimize those errors, and randomize them.
+
+128
+00:08:10,270 --> 00:08:14,190
+Because if there&#39;s a systematic part in the errors, they should show up where?
+
+129
+00:08:14,190 --> 00:08:15,800
+In the main equation.
+
+130
+00:08:15,800 --> 00:08:18,460
+So, epsilon has got errors.
+
+131
+00:08:19,470 --> 00:08:22,100
+And I also call it our ignorance.
+
+132
+00:08:22,100 --> 00:08:27,825
+So, if you&#39;re trying to explain, say again, bushels with rainfall,
+
+133
+00:08:27,825 --> 00:08:32,890
+rainfall is not the only thing that will explain your productivity.
+
+134
+00:08:32,890 --> 00:08:34,300
+What else could you think of?
+
+135
+00:08:34,299 --> 00:08:38,450
+Fertilizer, you can think of natural fertilizers being
+
+136
+00:08:38,450 --> 00:08:42,160
+more long-term beneficial than artificial, and so on and so forth.
+
+137
+00:08:42,159 --> 00:08:46,800
+In other words, there could be multiple determinants of y.
+
+138
+00:08:46,800 --> 00:08:49,700
+And what will you do when you get a better beta in determinants?
+
+139
+00:08:49,700 --> 00:08:52,850
+You make these errors the variance of them.
+
+140
+00:08:52,850 --> 00:08:54,350
+Shrink it.
+
+141
+00:08:54,350 --> 00:08:59,390
+And that&#39;s one of the goals of a good model, is to try to build a sensible model
+
+142
+00:08:59,390 --> 00:09:03,240
+that&#39;s got higher predictability, in some instances.
+
+143
+00:09:03,240 --> 00:09:06,810
+Here, I just wanted to introduce you to what?
+
+144
+00:09:06,810 --> 00:09:11,080
+Another measure of relationships, which is going to be very important.
+
+145
+00:09:11,080 --> 00:09:13,103
+And that measure is called beta,
+
+146
+00:09:13,103 --> 00:09:16,144
+which tells you the relationship between y and x.
+
+147
+00:09:16,144 --> 00:09:21,275
+It tells you if x and y are in percentages,
+
+148
+00:09:21,275 --> 00:09:26,856
+how much does y change by if x changes by 1%.
+
+149
+00:09:26,856 --> 00:09:32,730
+See you for a data driven module on statistics, risk and return.
+
+150
+00:09:34,430 --> 00:09:34,930
+See you later.
+

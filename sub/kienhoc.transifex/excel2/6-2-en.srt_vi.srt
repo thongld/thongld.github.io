@@ -1,0 +1,235 @@
+1
+00:00:02,280 --> 00:00:06,460
+https://youtu.be/124cG5Q0NZ4    NghiaNguyen
+Chào mọi người!
+Ở video trước, ta kết thúc ở bảng điều khiển này.
+
+2
+00:00:06,460 --> 00:00:12,599
+Tôi đã hứa là ta sẽ tự xây dựng 
+bảng tính này bằng Excel.
+
+3
+00:00:12,599 --> 00:00:17,890
+Nhưng trước khi bắt đầu, 
+trước khi xây dựng bất kì cái gì,
+
+4
+00:00:17,890 --> 00:00:22,570
+bạn phải nghĩ 1 chút về việc 
+bạn sẽ thiết kế nó như thế nào.
+
+5
+00:00:22,570 --> 00:00:27,840
+Thực sư, cái mà ta cần là 1 dạng lưới.
+
+6
+00:00:27,840 --> 00:00:31,700
+Tôi có thể dùng slide để hiển thị, nhưng
+tôi nghĩ nó sẽ tốt hơn nếu ta dùng Excel,
+
+7
+00:00:31,700 --> 00:00:35,339
+và tôi sẽ cho bạn thấy nó ở đó.
+
+8
+00:00:35,339 --> 00:00:40,199
+Ở đây ta có file exel. Đây là 1 cái lưới,
+và tôi sẽ giải thích cách làm việc của lưới sau.
+
+9
+00:00:40,199 --> 00:00:44,420
+Nhưng trước khi bắt đầu, 
+tôi nghĩ sẽ tốt hơn khi ta 
+
+10
+00:00:44,420 --> 00:00:47,890
+nhìn sơ qua file mà chúng ta sẽ làm việc.
+
+11
+00:00:47,890 --> 00:00:52,690
+Và 1 trong những điều đầu tiên bạn thấy là
+có nhiều bảng tính khác nhau ở đây.
+
+12
+00:00:52,690 --> 00:00:59,149
+Nó sẽ rất vướng víu nếu ta phải điều hướng đến từng bảng.
+
+13
+00:00:59,149 --> 00:01:04,170
+Có 1 mẹo nhỏ là: nếu bạn để 
+con trỏ chuột ở giữa 2 mũi tên,
+
+14
+00:01:04,170 --> 00:01:08,810
+và bạn nhấn phải chuột, bạn sẽ 
+thấy 1 danh sách tất cả các sheet.
+
+15
+00:01:08,810 --> 00:01:15,189
+Và có 2 sheet rất quan trọng ở đây. 
+Trong tuần đầy này, bạn sẽ học cách
+
+16
+00:01:15,189 --> 00:01:21,770
+nhập dữ liệu từ 1 file CSV vào file Excel.
+
+17
+00:01:21,770 --> 00:01:29,409
+Đó chính xác là những gì ta đã làm.
+Đây không phải là file nhỏ, bởi vì nếu tôi
+
+18
+00:01:29,409 --> 00:01:38,579
+xoá bỏ bộ lọc, ta có thể thấy 
+có khoảng 27000 hàng ghi.
+
+19
+00:01:38,579 --> 00:01:46,609
+Đây là file chứa thông tin tài chính, nhưng ta 
+cũng còn có cả file chứa thông tin kinh doanh.
+
+20
+00:01:46,609 --> 00:01:53,640
+Hôm nay, công ty mà chúng là làm việc 
+có thể được mô tả là 1 siêu thị trực tuyến.
+
+21
+00:01:53,640 --> 00:01:59,060
+Ta có thể đặt mua hàng hoá trực tuyến.
+Và đây là dữ liệu tài chính mà tôi có hàng tháng,
+
+22
+00:01:59,060 --> 00:02:04,939
+và ở đây là dữ liệu từ website cung cấp chính xác
+những thứ mà khách hàng mua, sản phẩm mua,
+
+23
+00:02:04,939 --> 00:02:11,409
+số lượng, tổng số tiền, đơn giá,
+
+24
+00:02:11,409 --> 00:02:15,349
+và ta đã tạo ra nhiều công thức 
+để tìm kiếm vài thông tin bổ sung.
+
+25
+00:02:15,349 --> 00:02:20,260
+Nếu tôi bán "ớt chuông" thì tôi cũng biết 
+ớt này ở kệ hàng nào, và thuộc về loại hàng nào.
+
+26
+00:02:20,260 --> 00:02:26,239
+Và ta có 2 slide này ở đây.
+
+27
+00:02:26,239 --> 00:02:33,010
+Ở đây, tôi có danh sách sản phẩm với ngăn kệ và loại.
+
+28
+00:02:33,010 --> 00:02:36,950
+Và ở slide này, tôi có 1 thứ 
+gọi là 'the chart of account'
+
+29
+00:02:36,950 --> 00:02:43,299
+Đây là những tài khoản gốc từ phần mềm tài chính.
+
+30
+00:02:43,299 --> 00:02:50,640
+Tôi có thể thấy tất các báo cáo nhóm.
+Đây là file quan trọng nhất.
+
+31
+00:02:50,640 --> 00:02:56,959
+Tôi có đủ loại dữ liệu, và ta 
+sẽ tập trung vào chi tiết sau,
+
+32
+00:02:56,959 --> 00:03:01,610
+thứ mà tôi cần cho bảng điểu khiển.
+Nhưng giờ, hãy nhìn vào thiết kế của
+
+33
+00:03:01,610 --> 00:03:08,810
+bảng điều khiển. Việc đầu 
+tiên mà ta phải làm là nghĩ 
+
+34
+00:03:08,810 --> 00:03:14,769
+"Chuyện gì sẽ xảy ra với bảng điều khiển này?"
+Có ai đó sẽ in nó ra hay ai đó sẽ quan sát từ 
+
+35
+00:03:14,769 --> 00:03:17,420
+1 màn hình?
+
+36
+00:03:17,420 --> 00:03:20,470
+Và nếu ai đó nhìn từ 1 màn hình, 
+thì nó có thể là loại màn hình nào?
+
+37
+00:03:20,470 --> 00:03:29,519
+Là màn hình nhỏ 11 inch của laptop?
+Hay màn hình lớn 27 inch?
+
+38
+00:03:29,519 --> 00:03:37,060
+Bạn nên thiết kế bảng điểu khiển 
+hiển thị trên 1 loại màn hình cụ thể.
+
+39
+00:03:37,060 --> 00:03:43,739
+Và cái mà tôi thích làm khi thiết kế 
+bảng điều khiển là sử dụng dạng lưới.
+
+40
+00:03:43,739 --> 00:03:55,829
+Vì thế tôi đã tạo ra những ô nhỏ ở đây,
+Mỗi 1 ô nhỏ sẽ có hiển thị 1 đồ thị.
+
+41
+00:03:55,829 --> 00:04:02,450
+Tôi để lại 1 dòng cho tựa đề của bảng điều khiển.
+
+42
+00:04:02,450 --> 00:04:07,110
+Và vài thông tin chung về bảng điểu khiển.
+Bạn có thể thấy nó ở đầu bảng điều khiển.
+
+43
+00:04:07,110 --> 00:04:19,060
+Và ở đây tôi có 1 'area title' (tựa đề ô), 1 'chart title' 
+(tựa đề đồ thị), còn ở đây là chỗ cho đồ thị, và 
+
+44
+00:04:19,060 --> 00:04:22,550
+còn footer cho mỗi đồ thị.
+Tiếp theo, tôi sẽ lặp lại như trên.
+
+45
+00:04:22,550 --> 00:04:28,880
+Lại 'area title', 'chart title', 
+nơi để biểu đồ và footer đồ thị.
+
+46
+00:04:28,880 --> 00:04:35,710
+Và dựa vào cái này, tôi sẽ sắp sếp bảng điều khiển.
+Đó là những gì tôi sẽ làm trong bài tiếp theo.
+
+47
+00:04:35,710 --> 00:04:40,400
+next session.
+So here we are, back in our grid.
+
+48
+00:04:40,400 --> 00:04:45,810
+Hãy nhìn lại toàn bộ bảng điều khiển này.
+Ở video tiếp theo, ta sẽ bắt đầu làm việc
+
+49
+00:04:45,810 --> 00:04:48,819
+với đồ thị đầu tiên, đồ thị 'sales by category'.
+Hẹn gặp lại các bạn!
+

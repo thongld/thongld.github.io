@@ -1,0 +1,1072 @@
+0
+00:00:00,000 --> 00:00:01,410
+tangoclinhh_22/9/2017
+
+1
+00:00:01,410 --> 00:00:04,100
+Trong bài học này, tôi muốn giới thiệu về quản lý hàng tồn kho.
+
+2
+00:00:04,100 --> 00:00:06,710
+Chúng ta sẽ thảo luận tại sao phải giữ hàng,
+
+3
+00:00:06,710 --> 00:00:08,760
+mục đích của việc giữ hàng,
+
+4
+00:00:08,760 --> 00:00:11,120
+các cách khác nhau để phân loại chúng.
+
+5
+00:00:11,120 --> 00:00:12,860
+Điều này sẽ đặt nền tảng cho
+
+6
+00:00:12,860 --> 00:00:14,820
+các chính sách hàng tồn kho mà ta phát triển sau này
+
+7
+00:00:14,820 --> 00:00:16,600
+trong một hay hai bài giảng tiếp theo.
+
+8
+00:00:16,600 --> 00:00:18,060
+Bắt đầu nào.
+
+9
+00:00:18,060 --> 00:00:20,070
+Đầu tiên, tại sao ta phải giữ hàng?
+
+10
+00:00:20,070 --> 00:00:21,040
+Có rất nhiều lý do.
+
+11
+00:00:21,040 --> 00:00:22,770
+Tôi sẽ điểm qua một vài trong số chúng.
+
+12
+00:00:22,770 --> 00:00:25,400
+Giờ tôi sẽ dùng một ví dụ, đó là cửa hàng bánh sandwhich
+
+13
+00:00:25,400 --> 00:00:27,260
+mà ta đã nói tới trước kia
+
+14
+00:00:27,260 --> 00:00:31,640
+nơi tôi có một đống nguyên liệu thô, rau diếp, thịt,
+
+15
+00:00:31,640 --> 00:00:34,660
+sau đó tôi nướng bánh, và tôi ghép chúng thành những chiếc sandwhich,
+
+16
+00:00:34,660 --> 00:00:38,050
+rồi tôi chuyển chúng cho những khách hàng muốn ăn sandwhich.
+
+17
+00:00:38,050 --> 00:00:41,140
+Vậy tại sao một cửa hàng bánh sandwhich lại muốn giữ hàng?
+
+18
+00:00:41,140 --> 00:00:44,270
+Một trong những lý do là để họ cắt giảm thời gian chế biến.
+
+19
+00:00:44,270 --> 00:00:46,430
+Tôi không muốn nướng một ổ bánh
+
+20
+00:00:46,430 --> 00:00:48,330
+mỗi lần có ai đó gọi một chiếc sandwhich.
+
+21
+00:00:48,330 --> 00:00:49,500
+Quá lâu.
+
+22
+00:00:49,500 --> 00:00:51,770
+Lâu hơn so với thời gian một người sẵn sàng đợi,
+
+23
+00:00:51,770 --> 00:00:54,020
+cho nên tôi sẽ
+
+24
+00:00:54,020 --> 00:00:56,190
+nướng chiếc bánh này trước.
+
+25
+00:00:56,190 --> 00:00:59,020
+Như vậy, tôi sẽ có bánh mì nướng
+
+26
+00:00:59,020 --> 00:01:00,230
+sẵn sàng chờ sử dụng.
+
+27
+00:01:00,230 --> 00:01:02,310
+Tôi làm điều đó để cắt giảm khoảng thời gian dài
+
+28
+00:01:02,310 --> 00:01:05,940
+cần có để nướng bánh.
+
+29
+00:01:05,940 --> 00:01:09,400
+Một lý do khác là để tách các quá trình
+
+30
+00:01:09,400 --> 00:01:10,580
+hay cho phép một quá trình được tách ra.
+
+31
+00:01:10,580 --> 00:01:12,660
+Ngoài việc nướng bánh mỳ,
+
+32
+00:01:12,660 --> 00:01:16,170
+tôi còn cần ai đó thái cà chua, có thể là thái thịt nữa,
+
+33
+00:01:16,170 --> 00:01:19,090
+để ghép chúng vào chiếc bánh sandwhich của tôi.
+
+34
+00:01:19,090 --> 00:01:22,190
+Có thể tôi muốn dự trữ cà chua đã thái lát
+
+35
+00:01:22,190 --> 00:01:25,710
+và thịt đã thái lát để tôi không phải
+
+36
+00:01:25,710 --> 00:01:28,310
+yêu cầu người kia thái chúng mỗi lần tôi cần nữa.
+
+37
+00:01:28,310 --> 00:01:31,260
+Bằng cách này, tôi đã tách khỏi người thái cà chua
+
+38
+00:01:31,260 --> 00:01:33,614
+và người thái thịt,
+
+39
+00:01:33,614 --> 00:01:35,030
+và tất cả những quá trình khác nhau này,
+
+40
+00:01:35,030 --> 00:01:38,410
+các quá trình riêng rẽ này, tạo nên một chiếc sandwhich.
+
+41
+00:01:38,410 --> 00:01:42,150
+Bằng việc giữ những hàng này, tôi tách chúng ra.
+
+42
+00:01:42,150 --> 00:01:44,290
+Vậy là tôi có thể thái trước một đống thứ
+
+43
+00:01:44,290 --> 00:01:46,980
+và chuẩn bị sẵn sàng, có thể là sử dụng cùng một người
+
+44
+00:01:46,980 --> 00:01:50,040
+để thái thịt thay vì thái từng thứ một.
+
+45
+00:01:50,040 --> 00:01:51,800
+Để làm được điều đó
+
+46
+00:01:51,800 --> 00:01:55,880
+tôi phải có hàng dự trữ, cho phép quá trình tách diễn ra.
+
+47
+00:01:55,880 --> 00:01:58,010
+Một nhóm nguyên nhân lớn khác là
+
+48
+00:01:58,010 --> 00:01:59,970
+sự dự báo hoặc phỏng đoán.
+
+49
+00:01:59,970 --> 00:02:01,440
+Chúng cũng phần nào liên quan đến nhau.
+
+50
+00:02:01,440 --> 00:02:04,210
+Hãy nghĩ về việc dự báo trong cửa hàng sandwhich của tôi.
+
+51
+00:02:04,210 --> 00:02:06,690
+Tôi biết rằng nhu cầu ăn sandwhich sẽ tăng vọt
+
+52
+00:02:06,690 --> 00:02:08,930
+vào bữa trưa, nên tôi sẽ
+
+53
+00:02:08,930 --> 00:02:10,380
+làm trước nhiều bánh.
+
+54
+00:02:10,380 --> 00:02:13,010
+Tôi sẽ làm sandwhich vào buổi sáng,
+
+55
+00:02:13,010 --> 00:02:14,730
+sẵn sàng cho đợt gọi bánh lớn,
+
+56
+00:02:14,730 --> 00:02:21,170
+như vậy tôi không phải chế biến đến mức đỉnh điểm
+khi nhu cầu đỉnh điểm tới vào bữa trưa.
+
+57
+00:02:21,170 --> 00:02:23,402
+Sự phỏng đoán thì hơi khác một chút.
+
+58
+00:02:23,402 --> 00:02:24,860
+Nó khác ở chỗ tôi muốn mua
+
+59
+00:02:24,860 --> 00:02:26,740
+một số thứ trước
+
+60
+00:02:26,740 --> 00:02:29,550
+bởi vì tôi nghĩ giá sẽ tăng.
+
+61
+00:02:29,550 --> 00:02:31,970
+Nên tôi sẽ mua bây giờ, khi giá của chúng còn thấp.
+
+62
+00:02:31,970 --> 00:02:33,930
+Điều này rất phổ biến đối với hàng hóa
+
+63
+00:02:33,930 --> 00:02:36,400
+như đồng hoặc thiếc,
+
+64
+00:02:36,400 --> 00:02:38,790
+mọi người cố mua chúng
+
+65
+00:02:38,790 --> 00:02:40,200
+trước khi giá tăng.
+
+66
+00:02:40,200 --> 00:02:44,150
+Họ phỏng đoán rằng giá sẽ tăng.
+
+67
+00:02:44,150 --> 00:02:46,760
+Một loại lớn khác là
+
+68
+00:02:46,760 --> 00:02:47,470
+giảm thiểu chi phí kiểm soát.
+
+69
+00:02:47,470 --> 00:02:51,500
+Mỗi khi tôi đặt hàng, tôi đều tốn tiền và thời gian.
+
+70
+00:02:51,500 --> 00:02:54,220
+Vì vậy, có thể tôi muốn tìm ra các cách khác tốt hơn
+
+71
+00:02:54,220 --> 00:02:58,110
+để gộp các đơn hàng của tôi vào sao cho tốn ít thời gian
+
+72
+00:02:58,110 --> 00:03:00,460
+kiểm soát chúng hơn khi đặt hàng.
+
+73
+00:03:00,460 --> 00:03:03,530
+Nếu tôi làm điều đó, có lẽ tôi sẽ chỉ đặt hàng bánh mỳ
+
+74
+00:03:03,530 --> 00:03:06,530
+hai ngày một lần thay vì hàng ngày,
+
+75
+00:03:06,530 --> 00:03:07,860
+hay mỗi lần tôi cần một ổ bánh mới.
+
+76
+00:03:07,860 --> 00:03:10,530
+Khi tôi làm điều đó, tôi có nhiều hàng hơn
+
+77
+00:03:10,530 --> 00:03:13,250
+để cắt giảm thời gian chế biến bánh.
+
+78
+00:03:13,250 --> 00:03:15,370
+Đó là một lý do khác để giữ hàng
+
+79
+00:03:15,370 --> 00:03:18,560
+để cho phép tôi tối thiểu hóa chi phí điều khiển.
+
+80
+00:03:18,560 --> 00:03:22,170
+Nhóm lớn cuối cùng là những sự không chắc chắn.
+
+81
+00:03:22,170 --> 00:03:23,940
+Nếu tôi gặp sự không chắc chắn,
+
+82
+00:03:23,940 --> 00:03:27,030
+có lẽ tôi sẽ muốn có một lượng hàng dự trữ để hỗ trợ.
+
+83
+00:03:27,030 --> 00:03:28,910
+Ta đều biết về tính không chắc chắn trong nhu cầu của khách hàng
+
+84
+00:03:28,910 --> 00:03:30,490
+khi ta nhìn vào dự báo.
+
+85
+00:03:30,490 --> 00:03:32,475
+Có thể tôi có một bản dự báo
+
+86
+00:03:32,475 --> 00:03:34,940
+nhu cầu khách hàng mà tôi mong muốn, nhưng tôi biết nó sẽ sai,
+
+87
+00:03:34,940 --> 00:03:37,120
+nên tôi muốn có một lượng hàng dự trữ
+
+88
+00:03:37,120 --> 00:03:38,530
+để tôi không hết hàng.
+
+89
+00:03:38,530 --> 00:03:41,810
+Điều tương tự áp dụng với bên cung cấp.
+
+90
+00:03:41,810 --> 00:03:44,280
+Nếu tôi có một nhà cung cấp không cố định,
+
+91
+00:03:44,280 --> 00:03:45,789
+có thể thời gian giao hàng của họ
+
+92
+00:03:45,789 --> 00:03:47,830
+không cố định, thỉnh thoảng họ đến vào thứ Hai,
+
+93
+00:03:47,830 --> 00:03:49,740
+thỉnh thoảng vào thứ Tư,
+
+94
+00:03:49,740 --> 00:03:52,460
+vậy tôi sẽ muốn có một lượng cung hàng thêm
+
+95
+00:03:52,460 --> 00:03:54,800
+trong trường hợp họ đến muộn, để tôi không bị hết hàng.
+
+96
+00:03:54,800 --> 00:03:57,300
+Cũng giống như cách bạn xử lý tính không chắc chắn
+trong nhu cầu khách hàng,
+
+97
+00:03:57,300 --> 00:03:59,556
+bạn cũng có thể xử lý tính không chắc chắn trong việc cung ứng.
+
+98
+00:03:59,556 --> 00:04:00,930
+Và bạn có thể nghĩ về
+
+99
+00:04:00,930 --> 00:04:03,630
+những sự không chắc chắn trong quá trình chế biến của chính bạn.
+
+100
+00:04:03,630 --> 00:04:05,790
+Giả sử khi tôi nướng bánh mỳ,
+
+101
+00:04:05,790 --> 00:04:11,262
+mỗi một trăm lần tôi nướng, tôi lại làm cháy một mẻ.
+
+102
+00:04:11,262 --> 00:04:13,720
+Vì vậy, tôi muốn có hàng dự trữ để hỗ trợ
+
+103
+00:04:13,720 --> 00:04:17,769
+tránh trường hợp tôi làm cháy một mẻ bánh mỳ.
+
+104
+00:04:17,769 --> 00:04:21,950
+Tất cả những điều đó đều giúp xử lý tính không chắc chắn.
+
+105
+00:04:21,950 --> 00:04:24,576
+Đó là một số nguyên nhân ta giữ hàng.
+
+106
+00:04:24,576 --> 00:04:27,200
+Giờ hãy xem một số loại quyết định mà bạn sẽ đưa ra.
+
+107
+00:04:27,200 --> 00:04:28,658
+Bạn có thể chia nhỏ chúng ra
+
+108
+00:04:28,658 --> 00:04:31,610
+thành các mức chiến lược, chiến thuật và chiến dịch.
+
+109
+00:04:31,610 --> 00:04:33,540
+Cho phép tôi giải thích từng cái một.
+
+110
+00:04:33,540 --> 00:04:35,430
+Ở cấp độ chiến lược,
+
+111
+00:04:35,430 --> 00:04:38,850
+có những thứ bạn quyết định trong một, hai, hay ba năm,
+
+112
+00:04:38,850 --> 00:04:41,540
+những quyết định mang tính lâu dài của bạn.
+
+113
+00:04:41,540 --> 00:04:43,610
+Đó không phải là những quyết định mà bạn đưa ra hàng ngày,
+
+114
+00:04:43,610 --> 00:04:45,410
+chúng là những quyết định mang tính lâu dài.
+
+115
+00:04:45,410 --> 00:04:47,350
+Và chúng có thể là câu hỏi
+
+116
+00:04:47,350 --> 00:04:49,720
+đâu là những lựa chọn tiềm năng cho tôi
+
+117
+00:04:49,720 --> 00:04:51,120
+để giữ hàng?
+
+118
+00:04:51,120 --> 00:04:52,990
+Ví dụ, có thể tôi muốn
+
+119
+00:04:52,990 --> 00:04:57,240
+vận chuyển thật sự nhanh thay vì
+
+120
+00:04:57,240 --> 00:04:58,634
+giữ một đống hàng.
+
+121
+00:04:58,634 --> 00:05:00,300
+Vì vậy, nếu ai yêu cầu thứ gì đó,
+
+122
+00:05:00,300 --> 00:05:02,174
+tôi chỉ cần gửi cho họ thật nhanh thay vì
+
+123
+00:05:02,174 --> 00:05:05,580
+giữ thêm hàng để làm hài lòng họ.
+
+124
+00:05:05,580 --> 00:05:07,990
+Đó là một sự trao đổi kinh điển, một lựa chọn thay thế
+
+125
+00:05:07,990 --> 00:05:09,570
+kinh điển cho việc giữ hàng,
+
+126
+00:05:09,570 --> 00:05:11,890
+một quyết định mang tính lâu dài.
+
+127
+00:05:11,890 --> 00:05:14,440
+Cùng với đó, có thể bạn muốn xem chuỗi cung ứng
+
+128
+00:05:14,440 --> 00:05:16,790
+hay sản phẩm được thiết kế như thế nào.
+
+129
+00:05:16,790 --> 00:05:19,000
+Nó có được chủ ý đi cùng với chuỗi cung ứng không?
+
+130
+00:05:19,000 --> 00:05:21,000
+Bạn sẽ chuyển hàng như thế nào
+
+131
+00:05:21,000 --> 00:05:22,870
+và bạn định trữ hàng như thế nào?
+
+132
+00:05:22,870 --> 00:05:24,960
+Ở mức độ chiến thuật,
+
+133
+00:05:24,960 --> 00:05:26,580
+đây là những quyết định được đưa ra trong vòng một năm,
+
+134
+00:05:26,580 --> 00:05:29,340
+trong vòng một tháng, một quý hay một năm,
+
+135
+00:05:29,340 --> 00:05:31,300
+chúng được biết đến như là những quyết định triển khai.
+
+136
+00:05:31,300 --> 00:05:34,320
+Tôi nên đặc biệt lưu trữ hàng gì
+
+137
+00:05:34,320 --> 00:05:36,100
+và tôi nên đặt chúng ở đâu?
+
+138
+00:05:36,100 --> 00:05:37,475
+Điều này là cực kỳ quan trọng
+
+139
+00:05:37,475 --> 00:05:38,990
+khi tôi đang ra mắt một sản phẩm mới
+
+140
+00:05:38,990 --> 00:05:42,130
+và muốn biết nên để chúng ở đâu.
+
+141
+00:05:42,130 --> 00:05:45,100
+Đây là một sự dự đoán tính không chắc chắn 
+
+142
+00:05:45,100 --> 00:05:47,480
+của việc nhu cầu sẽ xảy ra như thế nào.
+
+143
+00:05:47,480 --> 00:05:49,870
+Và tôi nên giữ chúng trong hình thức nào?
+
+144
+00:05:49,870 --> 00:05:53,340
+Có thể, nếu tôi đang bán một chiếc điện thoại thông minh,
+
+145
+00:05:53,340 --> 00:05:55,830
+và tôi có các vỏ màu khác nhau,
+
+146
+00:05:55,830 --> 00:05:58,630
+có thể tôi muốn giữ các thành phần bên trong riêng biệt
+
+147
+00:05:58,630 --> 00:06:00,870
+với các vỏ màu ở cửa hàng
+
+148
+00:06:00,870 --> 00:06:02,890
+để lúc nào tôi cũng có thể lắp chúng vào
+
+149
+00:06:02,890 --> 00:06:06,270
+và để tôi không có các chiếc màu đỏ, màu cam
+
+150
+00:06:06,270 --> 00:06:07,430
+hay màu xanh dương lắp trước.
+
+151
+00:06:07,430 --> 00:06:10,190
+Ở thời điểm mua hàng đó tôi mới muốn quyết định
+
+152
+00:06:10,190 --> 00:06:11,290
+lắp vỏ nào vào.
+
+153
+00:06:11,290 --> 00:06:12,795
+Trong trường hợp đó, tôi sẽ lưu trữ hàng.
+
+154
+00:06:12,795 --> 00:06:16,910
+Tôi sẽ giữ các thành phần chính của máy và các vỏ máy
+
+155
+00:06:16,910 --> 00:06:19,400
+và quản lý chúng riêng rẽ một chút.
+
+156
+00:06:19,400 --> 00:06:21,640
+Và mức độ cuối cùng là
+
+157
+00:06:21,640 --> 00:06:23,400
+mức độ chiến dịch.
+
+158
+00:06:23,400 --> 00:06:25,970
+Đó là những quyết định tôi đưa ra
+
+159
+00:06:25,970 --> 00:06:28,550
+hàng ngày, hàng tuần, hàng tháng.
+
+160
+00:06:28,550 --> 00:06:30,190
+Có ba câu hỏi lớn
+
+161
+00:06:30,190 --> 00:06:32,710
+mà tôi muốn hỏi để xác định sự bổ sung của tôi.
+
+162
+00:06:32,710 --> 00:06:35,820
+Đầu tiên là bao lâu thì tôi nên kiểm tra
+
+163
+00:06:35,820 --> 00:06:36,380
+tình trạng hàng tồn kho của mình.
+
+164
+00:06:36,380 --> 00:06:37,860
+Tôi có nên luôn luôn canh chừng nó không?
+
+165
+00:06:37,860 --> 00:06:39,595
+Tôi có nên kiểm tra nó một lần một tuần không?
+
+166
+00:06:39,595 --> 00:06:40,470
+Hay hai tuần một lần?
+
+167
+00:06:40,470 --> 00:06:42,920
+Vậy bao lâu tôi nên kiểm tra một lần?
+
+168
+00:06:42,920 --> 00:06:45,920
+Câu hỏi thứ hai là khi nào tôi nên đặt hàng?
+
+169
+00:06:45,920 --> 00:06:47,519
+Làm sao để biết khi nào cần đặt hàng?
+
+170
+00:06:47,519 --> 00:06:50,060
+Kể cả khi tôi kiểm tra mỗi tuần, tôi nên đặt hàng mỗi tuần
+
+171
+00:06:50,060 --> 00:06:52,890
+hay tôi nên đợi có chuyện xảy ra mới đặt?
+
+172
+00:06:52,890 --> 00:06:56,620
+Và câu hỏi cuối cùng là tôi nên đặt bao nhiêu hàng?
+
+173
+00:06:56,620 --> 00:06:58,730
+Tôi nên bổ sung thêm bao nhiêu hàng?
+
+174
+00:06:58,730 --> 00:07:01,080
+Ba câu hỏi này kết hợp với nhau
+
+175
+00:07:01,080 --> 00:07:04,160
+xác định nên chính sách hàng tồn kho của chúng ta.
+
+176
+00:07:04,160 --> 00:07:06,910
+Đây là điểm mà ta sẽ chủ yếu tập trung vào
+
+177
+00:07:06,910 --> 00:07:08,430
+qua các bài học tiếp theo.
+
+178
+00:07:08,430 --> 00:07:10,410
+Bởi vì các quyết định bổ sung hàng
+
+179
+00:07:10,410 --> 00:07:14,050
+rất quan trọng để thiết lập chuỗi cung ứng.
+
+180
+00:07:14,050 --> 00:07:16,900
+OK, tiếp theo tôi muốn nói về phân loại hàng tồn kho.
+
+181
+00:07:16,900 --> 00:07:18,550
+Bởi vì đây là một nhân tố quan trọng
+
+182
+00:07:18,550 --> 00:07:21,470
+và những người khác nhau trong tổ chức của bạn
+
+183
+00:07:21,470 --> 00:07:23,810
+sẽ nhìn hàng tồn kho theo những cách nhìn khác nhau.
+
+184
+00:07:23,810 --> 00:07:26,210
+Loại đầu tiên là
+
+185
+00:07:26,210 --> 00:07:29,060
+loại tài chính hay kế toán.
+
+186
+00:07:29,060 --> 00:07:31,100
+Nếu tôi quay lại cửa hàng bánh sandwhich của tôi,
+
+187
+00:07:31,100 --> 00:07:32,960
+nếu tôi bước vào một cửa hàng bánh sandwhich,
+
+188
+00:07:32,960 --> 00:07:35,890
+tôi có thể xác định được những nguyên liệu thô là gì -
+
+189
+00:07:35,890 --> 00:07:38,080
+những quả cà chua, những cây rau diếp.
+
+190
+00:07:38,080 --> 00:07:41,390
+Tôi có thể xác định được quá trình làm việc hay các thành phần.
+
+191
+00:07:41,390 --> 00:07:44,220
+Đây là những gì đã diễn ra - cà chua được cắt lát,
+
+192
+00:07:44,220 --> 00:07:45,510
+bánh mỳ được tách đôi.
+
+193
+00:07:45,510 --> 00:07:47,550
+Từng phần một được ghép vào với nhau.
+
+194
+00:07:47,550 --> 00:07:49,390
+Và tôi có thể chỉ ra sản phẩm cuối cùng -
+
+195
+00:07:49,390 --> 00:07:51,150
+chính là những chiếc sandwhich.
+
+196
+00:07:51,150 --> 00:07:53,670
+Ý tưởng ở đây là những loại tài chính này
+
+197
+00:07:53,670 --> 00:07:56,180
+đều nhìn vào giá trị gia tăng.
+
+198
+00:07:56,180 --> 00:07:59,460
+Khi tôi thêm giá trị vào chúng,
+
+199
+00:07:59,460 --> 00:08:01,380
+chúng trở thành loại kế toán.
+
+200
+00:08:01,380 --> 00:08:03,320
+Điều này có ý nghĩa đối với kế toán bởi vì
+
+201
+00:08:03,320 --> 00:08:04,695
+đây là cách bạn đang cố gắng
+
+202
+00:08:04,695 --> 00:08:05,880
+tính toán chi phí của bạn.
+
+203
+00:08:05,880 --> 00:08:08,900
+Nhưng có một điều mà loại kế toán này không làm
+
+204
+00:08:08,900 --> 00:08:11,200
+đó là chúng không tính chi phí cơ hội.
+
+205
+00:08:11,200 --> 00:08:12,980
+Và chúng không giúp xác định
+
+206
+00:08:12,980 --> 00:08:15,287
+cách tôi muốn quản lý hàng tồn kho của mình.
+
+207
+00:08:15,287 --> 00:08:16,870
+Đó là lý do vì sao ta sẽ tập trung vào
+
+208
+00:08:16,870 --> 00:08:18,820
+vai trò chức năng.
+
+209
+00:08:18,820 --> 00:08:20,910
+Và các vai trò chức năng này
+
+210
+00:08:20,910 --> 00:08:23,560
+chính là cách mà hàng tồn kho được dùng.
+
+211
+00:08:23,560 --> 00:08:26,190
+Tôi sẽ giới thiệu ba trong số chúng.
+
+212
+00:08:26,190 --> 00:08:28,930
+Tôi sẽ giới thiệu bằng cách dùng
+
+213
+00:08:28,930 --> 00:08:29,430
+biểu đồ hàng tồn kho này.
+
+214
+00:08:29,430 --> 00:08:32,030
+Trong biểu đồ hàng tồn kho này, ta sẽ thấy rất nhiều thứ này.
+
+215
+00:08:32,030 --> 00:08:34,370
+Trên trục hoành là thời gian.
+
+216
+00:08:34,370 --> 00:08:36,740
+Đây là đoạn thời gian.
+
+217
+00:08:36,740 --> 00:08:41,110
+Trên trục tung là khối lượng
+
+218
+00:08:41,110 --> 00:08:42,289
+hàng tồn kho mà tôi có.
+
+219
+00:08:42,289 --> 00:08:44,850
+Loại đầu tiên là vòng tuần hoàn hàng tồn kho.
+
+220
+00:08:44,850 --> 00:08:47,155
+Vòng tuần hoàn hàng tồn kho đơn giản là lượng hàng
+
+221
+00:08:47,155 --> 00:08:52,030
+tôi có giữa các lần nhập hàng hay các lần bổ sung của tôi.
+
+222
+00:08:52,030 --> 00:08:53,870
+Nó được gọi là vòng tuần hoàn.
+
+223
+00:08:53,870 --> 00:08:55,690
+Ôi, đường này không thẳng lắm.
+
+224
+00:08:55,690 --> 00:08:57,320
+Nhưng đây là vòng tuần hoàn thời gian.
+
+225
+00:08:57,320 --> 00:08:59,940
+Vòng tuần hoàn hàng tồn kho là tất cả chỗ hàng này.
+
+226
+00:08:59,940 --> 00:09:01,690
+Để tôi tô màu vào nó.
+
+227
+00:09:01,690 --> 00:09:05,380
+Đó là lượng tuần hoàn hàng tồn kho của tôi,
+
+228
+00:09:05,380 --> 00:09:07,510
+lượng hàng mà tôi mong đợi sẽ tiêu thụ hết
+
+229
+00:09:07,510 --> 00:09:09,670
+qua quá trình bổ sung hàng.
+
+230
+00:09:09,670 --> 00:09:11,940
+Giờ bạn sẽ thấy vòng tuần hoàn hàng tồn kho
+
+231
+00:09:11,940 --> 00:09:14,590
+nằm trên đỉnh của lượng trữ kho an toàn.
+
+232
+00:09:14,590 --> 00:09:17,240
+Lượng trữ kho an toàn là số hàng
+
+233
+00:09:17,240 --> 00:09:20,620
+mà tôi trữ để đối phó với những sự không chắc chắn,
+
+234
+00:09:20,620 --> 00:09:23,920
+cho dù đó là không chắc chắn trong nhu cầu, trong cung ứng
+
+235
+00:09:23,920 --> 00:09:25,560
+hay trong quá trình xử lý, điều đó không quan trọng.
+
+236
+00:09:25,560 --> 00:09:27,490
+Đó là lượng hàng trữ kho an toàn.
+
+237
+00:09:27,490 --> 00:09:29,430
+Và bạn có thể thấy rằng vòng tuần hoàn hàng tồn kho
+
+238
+00:09:29,430 --> 00:09:32,200
+nổi lên trên hàng trữ kho an toàn.
+
+239
+00:09:32,200 --> 00:09:33,610
+Tiếp đến là loại thứ ba
+
+240
+00:09:33,610 --> 00:09:35,620
+được gọi là hàng tồn kho đường ống.
+
+241
+00:09:35,620 --> 00:09:38,270
+Đây là loại hàng mà tôi đã đặt
+
+242
+00:09:38,270 --> 00:09:39,800
+nhưng chưa về đến nơi.
+
+243
+00:09:39,800 --> 00:09:41,190
+Cho nên nó vẫn ở trong đường ống.
+
+244
+00:09:41,190 --> 00:09:42,220
+Nó ở trên xe tải.
+
+245
+00:09:42,220 --> 00:09:43,360
+Nó đang được chế biến.
+
+246
+00:09:43,360 --> 00:09:44,750
+Nó chưa về đến nơi.
+
+247
+00:09:44,750 --> 00:09:47,640
+Đó là ba loại chính
+
+248
+00:09:47,640 --> 00:09:48,790
+mà ta sẽ xử lý.
+
+249
+00:09:48,790 --> 00:09:50,992
+Chúng khác những loại tài chính như thế nào?
+
+250
+00:09:50,992 --> 00:09:53,200
+Như tôi đã nói, ta có thể đi vào trong cửa hàng sandwhich
+
+251
+00:09:53,200 --> 00:09:56,310
+và chỉ vào từng cái một, các nguyên liệu thô,
+những thứ chưa được hoàn thành,
+
+252
+00:09:56,310 --> 00:09:58,300
+những thành phần tạo nên sản phẩm cuối cùng.
+
+253
+00:09:58,300 --> 00:09:59,700
+Tôi không thể đi vào cửa hàng sandwhich
+
+254
+00:09:59,700 --> 00:10:01,660
+và chỉ vào nó rồi nói, ồ, quả cà chua này là
+
+255
+00:10:01,660 --> 00:10:03,510
+vòng tuần hoàn hàng tồn kho còn quả cà chua kia là hàng trữ kho an toàn.
+
+256
+00:10:03,510 --> 00:10:05,050
+Không phải như thế.
+
+257
+00:10:05,050 --> 00:10:08,020
+Có những cách được sử dụng, nhưng tôi không thể
+
+258
+00:10:08,020 --> 00:10:10,930
+dán nhãn rõ ràng từng thứ một để nói cái nào là loại nào,
+
+259
+00:10:10,930 --> 00:10:15,200
+là vòng tuần hoàn hay hàng trữ an toàn,
+bởi vì đó là cách mà chúng được sử dụng.
+
+260
+00:10:15,200 --> 00:10:18,020
+Cho nên đây là mảng mà ta sẽ dùng.
+
+261
+00:10:18,020 --> 00:10:20,930
+Ta sẽ tập trung vào các loại chức năng này
+
+262
+00:10:20,930 --> 00:10:23,260
+bởi vì đây là cách ta quản lý hàng tồn kho.
+
+263
+00:10:23,260 --> 00:10:26,240
+Và ta sẽ dùng phương trình tổng chi phí
+
+264
+00:10:26,240 --> 00:10:30,260
+để xác định những chính sách, từ đó giảm thiểu tối đa
+
+265
+00:10:30,260 --> 00:10:31,810
+tổng chi phí hàng tồn kho.
+
+266
+00:10:31,810 --> 00:10:32,811
+
+

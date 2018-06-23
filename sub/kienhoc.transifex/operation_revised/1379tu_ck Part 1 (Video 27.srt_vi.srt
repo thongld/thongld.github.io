@@ -1,0 +1,508 @@
+0
+00:00:00,000 --> 00:00:00,001
+Thanh_Nguyễn 17/10/2016
+http://youtu.be/jjLN-Fk7Kgc
+
+1
+00:00:05,000 --> 00:00:09,440
+Chào mừng các bạn trở lại với khóa Quản trị Điều hành và ta sẽ
+
+2
+00:00:09,440 --> 00:00:13,490
+tiếp tục với hàng hóa lưu kho, trong phần này
+ta sẽ tiếp tục làm việc với
+
+3
+00:00:13,490 --> 00:00:19,579
+tính toán tồn kho an toàn và tôi hiểu rằng
+tôi nói phần 1 vì tồn kho an toàn là
+
+4
+00:00:19,579 --> 00:00:21,800
+một vấn đề dài để nói về.
+
+5
+00:00:21,800 --> 00:00:24,800
+Nên ta sẽ chia nó thành 2 phần.
+Hãy bắt đầu nào!
+
+6
+00:00:25,368 --> 00:00:31,399
+Khi ta nhớ lại hàng hóa lưu kho có chi phí kèm theo
+về mặt duy trì
+
+7
+00:00:31,399 --> 00:00:37,070
+cũng như chi phí đầu tư, nghĩa là
+nếu tiền gắn liền với hàng hóa lưu kho
+
+8
+00:00:37,070 --> 00:00:39,200
+ta không thể sử dụng nó cho bất cứ thứ gì khác.
+
+9
+00:00:39,200 --> 00:00:42,200
+Ta cũng biết rằng nếu ta không có đủ hàng hóa lưu kho
+
+10
+00:00:42,829 --> 00:00:46,850
+nó dẫn đến sự gián đọa trong quá trình sản xuất
+vì ta có thể không có khả năng
+
+11
+00:00:46,850 --> 00:00:52,129
+có đủ hàng lưu kho để sản xuất hàng hóa
+hoặc ta sẽ không có sản phẩm để
+
+12
+00:00:52,128 --> 00:00:54,259
+cung cấp cho khách hàng mặt hàng đó.
+
+13
+00:00:54,259 --> 00:00:59,718
+Vậy nên ta sẽ không có khả năng đáp ứng nhu cầu.
+Do đó, ta phải tìm ra chi phí để duy trì
+
+14
+00:00:59,719 --> 00:01:06,530
+tồn kho an toàn là bao nhiêu. Để làm được điều này,
+ta cần hiểu một vài thuật ngữ. Đầu tiên là gián đoạn tồn kho.
+
+15
+00:01:06,530 --> 00:01:11,659
+Gián đoạn tồn kho nghĩa là ta không có khả năng
+đáp ứng nhu cầu.
+
+16
+00:01:11,659 --> 00:01:14,780
+Hàng hóa chỉ không ở đó, không có ở trên giá hàng, 
+không có ở trong kho
+
+17
+00:01:15,290 --> 00:01:21,710
+Một thuật ngữ khác là mức dịch vụ theo chu kì
+thỉnh thoảng chỉ gọi mức dịch vụ là
+
+18
+00:01:21,709 --> 00:01:26,750
+xác suất mà ta sẽ không bị hết  hàng.
+Vậy nên xác suất
+
+19
+00:01:26,750 --> 00:01:32,180
+sẽ không bị gián đoạn tồn kho là
+mức dịch vụ và an toàn tồn kho,
+
+20
+00:01:32,180 --> 00:01:37,939
+một thuật ngữ mà tôi đã dùng trước đó, chỉ là hàng lưu kho phụ
+mà ta phải duy trì trên mức
+
+21
+00:01:37,938 --> 00:01:46,099
+ta dự tính sử dụng. Khi ta bắt đầu
+tính toán tồn kho an toàn, ta có khuynh hướng
+
+22
+00:01:46,099 --> 00:01:49,929
+đưa ra giả thuyết sau và đó là
+nhu cầu thời gian thực hiện đơn hàng
+
+23
+00:01:49,930 --> 00:01:54,880
+có thể được thể hiện bởi phân phối bình thường
+và nó được biểu diễn bằng cách
+
+24
+00:01:54,879 --> 00:02:00,909
+sử dụng số trung bình của phân phối đó và 
+độ lệch chuẩn của nó nên thực ra ta sẽ
+
+25
+00:02:00,909 --> 00:02:05,769
+hiểu hai thuật ngữ này khi ta nghĩ về an toàn tồn kho, sẽ hiểu
+nhu cầu thời gian thực hiện đơn hàng là
+
+26
+00:02:05,769 --> 00:02:10,000
+lượng trung bình ta sẽ dùng và độ lệch chuẩn
+
+27
+00:02:10,000 --> 00:02:16,240
+của nhu cầu thời gian thực hiện đơn hàng thể hiện sự biến thiên nhu cầu khi ta
+
+28
+00:02:16,240 --> 00:02:18,189
+nghĩ về mức dịch vụ.
+
+29
+00:02:18,189 --> 00:02:22,719
+Có khả năng là lượng ta dùng thực ra sẽ ít hơn hoặc
+
+30
+00:02:22,719 --> 00:02:27,849
+bằng lượng ta có sẵn là mức đặt hàng,
+
+31
+00:02:27,849 --> 00:02:33,280
+cũng có nghĩa là dịch vụ của ta bằng
+1 trừ khả năng bị hết
+
+32
+00:02:33,280 --> 00:02:35,289
+khả năng gián đoạn hàng hóa
+
+33
+00:02:35,289 --> 00:02:39,489
+Vậy nếu ta nhin vào sự phân phối thông thường,
+bạn sẽ nhận thấy đường cong hình chuông thông thường
+
+34
+00:02:39,489 --> 00:02:43,480
+nhưng ta sẽ thêm một vào thứ vào đó.
+
+35
+00:02:43,479 --> 00:02:48,699
+Phần trung tâm của đường cong này là 
+lượng trung bình ta sử dụng.
+
+36
+00:02:48,699 --> 00:02:50,289
+Đây là nhu cầu thời gian thực hiện đơn hàng.
+
+37
+00:02:50,289 --> 00:02:55,719
+Đây là cái ta dự đoán sử dụng trong suốt thời gian 
+ta sắp xếp trật từ theo thời gian nó
+
+38
+00:02:55,719 --> 00:03:01,539
+được nhận. Nhưng cũng có khả năng 
+gián đoạn hàng hóa và cái ta cần làm là
+
+39
+00:03:01,539 --> 00:03:07,269
+ta cần có thêm hàng lưu kho phụ
+cái trở thành an toàn tồn kho
+
+40
+00:03:07,269 --> 00:03:10,599
+đề ngăn khả năng gián đoạn hàng hóa.
+
+41
+00:03:10,599 --> 00:03:15,609
+Vậy nếu vùng màu đỏ là khả năng bị gián đoạn hàng hóa
+tiếp đó vùng khác,
+
+42
+00:03:15,610 --> 00:03:21,280
+vùng có màu xanh nhạt là mức dịch vụ của ta
+vì nếu bạn nhớ lại thì toàn bộ vùng
+
+43
+00:03:21,280 --> 00:03:27,459
+phía dưới đường cong bằng 1
+nên 1 trừ đi khả năng gián đoạn hàng hóa là
+
+44
+00:03:27,459 --> 00:03:28,810
+mức dịch vụ của ta.
+
+45
+00:03:28,810 --> 00:03:36,939
+Vậy điều ta nên làm là tính toán thêm hàng lưu kho
+ tồn kho an toàn đôi khi
+
+46
+00:03:36,939 --> 00:03:39,579
+được biết như ISIL hay mức an toàn cố định
+
+47
+00:03:39,579 --> 00:03:45,459
+ta cần sử dụng độ lệch chuẩn
+và ta cố tìm ra có bao nhiêu
+
+48
+00:03:45,459 --> 00:03:48,789
+độ lệch chuẩn trên mức trung bình
+cái mà là một số Z.
+
+49
+00:03:51,000 --> 00:03:54,810
+Vậy khi ta có đặt hàng lại, ta sẽ
+có nhu cầu thời gian theo đơn hàng.
+
+50
+00:03:55,680 --> 00:04:01,680
+Thêm điều đó vào tồn kho an toàn, 
+vậy tồn kho an toàn bằng với số độ lệch chuẩn
+
+51
+00:04:01,680 --> 00:04:04,260
+trên mức trung bình
+
+52
+00:04:04,259 --> 00:04:10,769
+để nhu cầu thời gian theo đơn hàng thêm tồn kho an toàn
+tương đương với mức đặt hàng và 
+
+53
+00:04:10,770 --> 00:04:12,900
+để toàn bộ vùng phía dước đường cong
+
+54
+00:04:12,900 --> 00:04:15,900
+không phải vùng màu đỏ là mức dịch vụ của ta.
+
+55
+00:04:16,919 --> 00:04:22,079
+Vậy tóm lại, mức dịch vụ là khả năng mà
+lượng ta dùng sẽ
+
+56
+00:04:22,079 --> 00:04:27,389
+ít hơn hoặc bằng với mức đặt hàng và
+mức dịch vụ tương đương với 1
+
+57
+00:04:27,389 --> 00:04:30,209
+trừ đi khả năng gián đoạn hàng hóa.
+
+58
+00:04:30,209 --> 00:04:36,899
+để xác định an toàn tồn kho, ta sẽ cần một giá trị cho Z vì ta
+
+59
+00:04:36,899 --> 00:04:40,019
+cần biết có bao nhiêu độ lệch chuẩn trên mức trung bình
+
+60
+00:04:40,709 --> 00:04:46,229
+Vậy ta sẽ phải hoặc dùng một bảng phân phối thông thưởng hoặc dùng Excel
+
+61
+00:04:46,230 --> 00:04:50,430
+Tôi luôn thích dùng Excel hơn vì nó dễ hơn rất nhiều để điền số
+
+62
+00:04:50,430 --> 00:04:57,269
+sử dụng hàm và tính Z cho bạn
+trái ngược với tra cứu trên bảng biểu
+
+63
+00:04:57,269 --> 00:05:02,069
+Vậy hàm ta sẽ dùng là quy tắc nghịch đảo NORMSINV
+
+64
+00:05:02,069 --> 00:05:07,168
+Tôi sẽ nhập vào khả năng không bị gián đoạn hàng hóa
+
+65
+00:05:07,168 --> 00:05:10,319
+cái mà là mức dịch vụ và điều đó sẽ cung cấp cho ta một số Z
+
+66
+00:05:11,399 --> 00:05:17,759
+Vậy khi này, tồn kho an toàn trở thành Z nhân với
+độ lệch chuẩn của nhu cầu thời gian theo đơn hàng
+
+67
+00:05:17,759 --> 00:05:24,389
+Đôi khi ta đã biết an toàn tồn kho và độ lệch chuẩn của
+
+68
+00:05:24,389 --> 00:05:29,339
+nhu cầu thời gian theo đơn hàng và 
+ta cần tính toán mức dịch vụ là bao nhiêu.
+
+69
+00:05:29,339 --> 00:05:34,079
+Trong trường hợp này, ta cần xem lại,
+nếu ta biết an toàn tồn kho và
+
+70
+00:05:34,079 --> 00:05:39,839
+độ lệch chuẩn của nhu cầu theo thời gian đơn hàng
+là Z bằng an toàn tồn kho / độ lệch chuẩn
+
+71
+00:05:39,839 --> 00:05:47,909
+của nhu cầu theo thời gian đơn hàng và một lần nữa
+ta biết số Z, ta lại có thể sử dụng bảng
+
+72
+00:05:47,910 --> 00:05:52,080
+hoặc Excel để tính mức dịch vụ.
+
+73
+00:05:52,079 --> 00:05:59,459
+Vậy mức dịch vụ của ta bằng phân phối chuẩn NORMSDIST 
+
+74
+00:05:59,459 --> 00:06:00,959
+của số Z.
+
+75
+00:06:00,959 --> 00:06:03,759
+Khi ta sử dụng excel, hãy giải quyết một vấn đề.
+
+76
+00:06:03,759 --> 00:06:10,870
+Jordan đang cố tìm ra chi phí để duy trì hàng lưu kho thêm của dây cáp
+
+77
+00:06:10,870 --> 00:06:17,379
+trong cả năm trước. Trung bình nhu cầu theo thời gian đơn hàng 
+Itd cho dây cáp là 105
+
+78
+00:06:17,379 --> 00:06:19,839
+với độ lệch chuẩn là 12
+
+79
+00:06:19,839 --> 00:06:23,139
+Jordan muốn duy trì mức dịch vụ là 90%.
+
+80
+00:06:23,860 --> 00:06:27,100
+Vậy an toàn tồn kho được khuyến cáo là bao nhiểu?
+
+81
+00:06:27,100 --> 00:06:33,220
+Mức đặt hàng là bao nhiêu? và nếu Jordan duy trì 20 dây cáp làm tồn kho an toàn
+
+82
+00:06:33,220 --> 00:06:39,550
+mức dịch vụ là bao nhiêu? Vậy ở đây bạn thấy rằng ta có 1 giá trị cho 
+
+83
+00:06:39,550 --> 00:06:45,490
+nhu cầu theo thời gian đơn hàng trung bình là 105
+và ta có độ lệch chuẩn là 12
+
+84
+00:06:45,490 --> 00:06:51,280
+và ta đang cố duy trì mức dịch vụ là 90% sử dụng đữ kiện này
+
+85
+00:06:51,279 --> 00:06:54,519
+ta có thể tính tồn kho an toàn.
+
+86
+00:06:54,519 --> 00:06:58,959
+Ta sẽ tính số Z và sau đó nhân với độ lệch chuẩn
+
+87
+00:06:58,959 --> 00:07:02,889
+của nhu cầu theo thời gian đơn hàng
+sử dụng excel.
+
+88
+00:07:02,889 --> 00:07:09,699
+Ta sẽ dùng công thức trong hàm và sử dụng 90% như
+
+89
+00:07:09,699 --> 00:07:17,439
+mức dịch vụ của ta để tìm được số Z bằng 1.28
+vậy ta tính tồn kho an toàn bằng 1.28 x 12
+
+90
+00:07:17,439 --> 00:07:20,529
+và bằng 15.37
+
+91
+00:07:21,040 --> 00:07:27,370
+Ta luôn làm tròn khi ta phải giải quyết vấn đề
+tồn kho an toàn. Vậy 15.37 được làm tròn thành 16.
+
+92
+00:07:29,509 --> 00:07:32,719
+Vậy mức đặt hàng là nhu cầu theo thời gian đơn hàng
+
+93
+00:07:32,720 --> 00:07:37,610
+thêm tồn kho an toàn, vậy khi nhu cầu theo
+ thời gian đơn hàng của bạn là 105
+
+94
+00:07:37,610 --> 00:07:40,610
+ta thêm 16 cái vào tồn kho an toàn
+
+95
+00:07:40,610 --> 00:07:43,699
+vậy ta có tổng là 121
+
+96
+00:07:43,699 --> 00:07:47,990
+Khi ta nghĩ về điều đó, ta đang giám sát hàng hóa lưu kho
+ngay khi ta nhận được 121 dây cáp
+
+97
+00:07:47,990 --> 00:07:54,170
+trong kho hàng, ta đặt trật tự cho một đợt hàng lưu kho mới.
+
+98
+00:07:54,170 --> 00:08:01,460
+Giờ cho rằng Jordan muốn giữ 20 cái dự trữ
+
+99
+00:08:01,459 --> 00:08:07,609
+tồn kho an toàn là 20 có nghĩa như thế nào về mặt mức dịch vụ
+
+100
+00:08:08,149 --> 00:08:12,889
+Giờ ta biết rằng tồn kho an toàn là 20, ta có thể đi ngược lại
+
+101
+00:08:12,889 --> 00:08:18,319
+và tính số Z, lấy tồn kho an toàn chia cho độ lệch chuẩn 
+
+102
+00:08:18,319 --> 00:08:27,409
+của nhu cầu theo thời gian đơn hàng là 1.67.
+Giờ ta dùng hàm phân phối NORMSDIST 
+
+103
+00:08:27,410 --> 00:08:35,029
+trong excel, sử dụng Z là 1.67.
+Giờ ta nhận thấy rằng mức dịch vụ là
+
+104
+00:08:35,029 --> 00:08:37,250
+0. 9522
+
+105
+00:08:37,250 --> 00:08:43,940
+vậy duy trì tồn kho an toàn là 20 sẽ
+tăng mức dịch vụ của ta lên.
+
+106
+00:08:43,940 --> 00:08:47,330
+tồn kho an toàn càng nhiều, mức dịch vụ càng cao.
+
+107
+00:08:49,070 --> 00:08:52,910
+Giờ thì trong phần tiếp theo, ta sẽ
+tìm hiểu làm sao để tính độ lệch chuẩn
+
+108
+00:08:52,909 --> 00:08:55,250
+của nhu cầu thời gian thực hiện đơn hàng
+
+109
+00:08:55,250 --> 00:08:59,750
+Đôi khi nó không được cho trước.
+Đôi khi ta chỉ biết có sự biến thiên nhu cầu
+
+110
+00:08:59,750 --> 00:09:05,240
+và đôi khi có sự biến thiên trong cả thời gian thực hiện đơn hàng và nhu cầu, vậy nên
+
+111
+00:09:05,240 --> 00:09:07,370
+Ta sẽ bao gồm điều này trong phần tiếp theo.
+
+112
+00:09:07,370 --> 00:09:07,970
+Hẹn gặp lại bạn trong bài tới.
+

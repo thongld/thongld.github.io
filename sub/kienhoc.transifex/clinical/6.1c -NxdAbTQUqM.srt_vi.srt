@@ -1,0 +1,176 @@
+0
+00:00:06,490 --> 00:00:10,800
+Hãy tưởng tượng ta đo chiều cao của nhiều người và lập biểu đồ.
+
+1
+00:00:10,800 --> 00:00:13,230
+Có lẽ biểu đồ sẽ giống thế này.
+
+2
+00:00:13,230 --> 00:00:16,680
+Chiều cao trung bình ở đây là 170cm.
+
+3
+00:00:16,680 --> 00:00:19,740
+Chiều cao trung bình nằm chính giữa bảng phân bổ.
+
+4
+00:00:19,740 --> 00:00:24,619
+Tôi đã đánh dấu độ chênh lệch tiêu chuẩn, ở đây là 10cm.
+
+5
+00:00:24,619 --> 00:00:28,679
+Con số này chỉ độ biến thiên so với mức trung bình.
+
+6
+00:00:28,679 --> 00:00:33,150
+Chỉ cần nhìn qua tỉ lệ phân bổ thông thường ta cũng nhận thấy
+
+7
+00:00:33,150 --> 00:00:35,620
+chỉ số dường như tiến gần tới mức trung bình.
+
+8
+00:00:35,620 --> 00:00:39,280
+Các chỉ số thấp dần ở một đến hai vùng của độ lệch chuẩn,
+
+9
+00:00:39,280 --> 00:00:45,960
+và còn tiếp tục thấp hơn khi vượt ra khỏi độ lệch chuẩn.
+
+10
+00:00:45,960 --> 00:00:50,190
+Do đây là tỉ lệ phân bổ thông thường nên khi ta đo chiều cao của một người 
+
+11
+00:00:50,190 --> 00:00:55,890
+cao 180cm, ta hoàn toàn xác định được người đó cao hay thấp
+
+12
+00:00:55,890 --> 00:00:59,800
+trong mối tương quan với các đối tượng tham gia khác.
+
+13
+00:00:59,800 --> 00:01:05,420
+Cách ta làm là quy đổi chiều cao sang một chỉ số đã qua chuẩn hóa, nói cách khác
+
+14
+00:01:05,420 --> 00:01:10,570
+ta quy đổi tỉ lệ phân bổ các chỉ số sang tỉ lệ phân bổ thông thường tiêu chuẩn .
+
+15
+00:01:10,570 --> 00:01:15,299
+Phân bổ thông thường tiêu chuẩn chính là tỉ lệ phân bổ thông thường với chỉ số trung bình là 0
+
+16
+00:01:15,299 --> 00:01:17,340
+và độ lệch chuẩn là 1 
+
+17
+00:01:17,340 --> 00:01:23,810
+Ta quy đổi chiều cao ra chỉ số tiêu chuẩn bằng cách lấy nó trừ đi 
+
+18
+00:01:23,810 --> 00:01:29,060
+chỉ số trung bình là 170 và lấy độ lệch chuẩn là 10 chia cho nó.
+
+19
+00:01:29,060 --> 00:01:34,130
+Ví dụ một người có chiều cao 180cm sẽ có chỉ số tiêu chuẩn là 1
+
+20
+00:01:34,130 --> 00:01:35,810
+trên bảng phân bổ thông thường tiêu chuẩn.
+
+21
+00:01:35,810 --> 00:01:41,009
+Như vậy đây chính là một độ lệch chuẩn vượt quá chỉ số trung bình.
+
+22
+00:01:41,009 --> 00:01:46,149
+Giờ thì ta có thể xác định chỉ số là lớn hay nhỏ vì ta đã biết các đặc tính 
+
+23
+00:01:46,149 --> 00:01:47,189
+của tỉ lệ phân bổ thông thường.
+
+24
+00:01:47,189 --> 00:01:52,749
+Ví dụ, ta biết rằng khoảng 68% chỉ số thuộc vùng cộng  
+
+25
+00:01:52,749 --> 00:01:55,350
+hoặc trừ 1 so với độ lệch chuẩn.
+
+26
+00:01:55,350 --> 00:02:00,020
+95% chỉ số thuộc hai vùng độ lệch chuẩn.
+
+27
+00:02:00,020 --> 00:02:03,969
+Khá nhiều chỉ số thuộc ba vùng độ lệch chuẩn.
+
+28
+00:02:03,969 --> 00:02:09,319
+Từ dữ liệu này, ta có thể xác định người cao 180cm cao như thế nào bằng cách
+
+29
+00:02:09,318 --> 00:02:13,590
+tính toán số liệu ở vùng dưới đường cong đi lên độ lệch chuẩn một kia.
+
+30
+00:02:13,590 --> 00:02:17,860
+Ta chỉ phải cộng tổng các chỉ số ở vùng màu xanh. 
+
+31
+00:02:17,860 --> 00:02:22,420
+Tổng này miêu tả một nửa bảng phân bổ thông thường tiêu chuẩn. 
+
+32
+00:02:22,420 --> 00:02:25,140
+có nghĩa đây chính là 50% số chỉ số. 
+
+33
+00:02:25,140 --> 00:02:29,540
+Ta biết rằng phần thêm vào là một nửa vùng giữa cộng  và trừ 1
+
+34
+00:02:29,540 --> 00:02:31,080
+của độ lệch chuẩn.
+
+35
+00:02:31,080 --> 00:02:34,910
+Như vậy một nửa của 68% là 34%.
+
+36
+00:02:34,910 --> 00:02:40,140
+Ta chỉ phải cộng các chỉ số này lại để xác định rằng người cao 180cm cao hơn
+
+37
+00:02:40,140 --> 00:02:41,940
+84% số người tham gia.
+
+38
+00:02:41,940 --> 00:02:43,610
+Khá cao đấy chứ!
+
+39
+00:02:43,610 --> 00:02:47,200
+Ta có thể khẳng định rằng người này cao hơn đa số những người khác.
+
+40
+00:02:47,200 --> 00:02:52,690
+Đây là lí do tại sao chuẩn hóa các bài test như bài test về trí thông minh là quan trọng,
+
+41
+00:02:52,690 --> 00:02:57,290
+Bài test đã qua chuẩn hóa cung cấp cho ta dữ liệu dể xác định một cách chính xác
+
+42
+00:02:57,290 --> 00:02:59,200
+bài làm của một người.
+
+43
+00:02:59,200 --> 00:03:00,780
+Những dữ liệu này cực kì có ích! 
+

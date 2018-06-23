@@ -1,0 +1,334 @@
+1
+00:00:01,689 --> 00:00:08,429
+zhangrain 4/9/2016
+https://youtu.be/NBLQviqMDnI
+Chào mọi người!
+Hoan nghênh tới video bonus cuối cùng
+
+2
+00:00:08,429 --> 00:00:15,159
+Trong video trước chúng ta đã tạo ra một slicer.
+Giờ ta có thể sử dụng slicer
+
+3
+00:00:15,159 --> 00:00:19,970
+để nhìn vào dữ liệu trên mốc thời gian ta chọn.
+Dữ liệu sẽ thay đổi theo đó.
+
+4
+00:00:19,970 --> 00:00:26,050
+Nhưng có một vấn đề ở đây.
+Nó liên quan đến một danh sách top 10.
+
+5
+00:00:26,050 --> 00:00:32,119
+Danh sách top 10 này dựa trên PivotTable. 
+Vì có rất nhiều khách hàng,
+
+6
+00:00:32,119 --> 00:00:39,300
+ta cần PivotTable 
+để tóm tắt danh sách top 10 khách hàng.
+
+7
+00:00:39,300 --> 00:00:45,390
+Và tương tự cho sản phẩm.
+Nhưng nếu ta thay đổi mốc thời gian được chọn,
+
+8
+00:00:45,390 --> 00:00:51,670
+nó sẽ tìm trong dữ liệu phụ.
+Bạn có thể thấy xu hướng, những sparklines
+
+9
+00:00:51,670 --> 00:00:55,629
+đã thay đổi.
+Nhưng PivotTable thì không đổi.
+
+10
+00:00:55,629 --> 00:01:07,420
+Để làm được điều đó, ta phải vào 'data'.
+Tôi không nên chọn tấm hình.
+
+11
+00:01:07,420 --> 00:01:12,690
+Tôi phải vào 'data'. 
+Và chọn 'refresh all'/
+
+12
+00:01:12,690 --> 00:01:16,010
+Bây giờ trên nền đã tự động
+làm mới các bảng.
+
+13
+00:01:16,010 --> 00:01:22,720
+Ta đã thấy một số sự thay đổi ở đây.
+Tôi không thích như vậy.
+
+14
+00:01:22,720 --> 00:01:27,250
+Tôi muốn nó tự động thay đổi.
+Sẽ không làm được điều đó với công thức.
+
+15
+00:01:27,250 --> 00:01:29,860
+Nhưng có thể làm được với VBA.
+Việc đó không khó.
+
+16
+00:01:29,870 --> 00:01:35,380
+Vì đây là bài bonus,
+ta sẽ thử làm việc đó.
+
+17
+00:01:35,390 --> 00:01:43,590
+Vào chương trình chỉnh sửa VBA,
+bằng cách gõ tổ hợp phím 'alt+F11'.
+
+18
+00:01:45,140 --> 00:01:55,060
+Giờ ta đang ở chương trình của Excel.
+
+19
+00:01:55,070 --> 00:02:08,530
+Có thể thấy dự án VBA với worksheet của chúng ta.
+Điều ta cần là ngay khi trường này, ô này, X1 thay đổi,
+
+20
+00:02:08,530 --> 00:02:18,120
+PivotTable cũng sẽ thay đổi theo, một cách tự động.
+
+21
+00:02:18,120 --> 00:02:22,900
+Bằng cách sử dụng một 'event', ta có thể làm được điều đó.
+
+22
+00:02:22,900 --> 00:02:27,300
+Một event được khởi động
+bởi sheet 'dashboard'.
+
+23
+00:02:27,300 --> 00:02:32,590
+Đâu rồi ... Đây rồi.
+
+24
+00:02:32,590 --> 00:02:40,050
+Click hai lần,
+ta có 'worksheet event'.
+
+25
+00:02:40,050 --> 00:02:44,780
+Cái đầu tiên không phải lúc nào cũng là cái ta muốn.
+Bởi vì đây là 'sự thay đổi được lựa chọn'
+
+26
+00:02:44,780 --> 00:02:50,270
+Nghĩa là [một] event sẽ được khởi động ngay khi ta click (với chuột) một điểm nào đó trên ô.
+
+27
+00:02:50,270 --> 00:02:54,310
+Nhưng ta cần event được khởi động chỉ khi 
+
+28
+00:02:54,310 --> 00:03:01,099
+giá trị của ô thay đổi.
+Vì vậy, ta chọn event 'thay đổi'.
+
+29
+00:03:01,099 --> 00:03:07,910
+Cái này có thể xóa đi.
+Giờ ta có thể thấy ....
+
+30
+00:03:07,910 --> 00:03:15,160
+Ta có một event, mỗi khi một ô thay đổi 
+trên worksheet 'dashboard'.
+
+31
+00:03:15,160 --> 00:03:20,120
+event này được khởi động, ta có một 'mục tiêu'.
+Mục tiêu có thể là một ô, hoặc một chuỗi ô
+
+32
+00:03:20,120 --> 00:03:25,120
+thay đổi theo.
+Để làm được điều đó, ta tạo một mệnh đề 'if'
+
+33
+00:03:25,120 --> 00:03:42,680
+'If target.Address = "$X$1",
+ô chúng ta đang đề cập.
+
+34
+00:03:42,680 --> 00:03:46,250
+Thì ta sẽ ra kết quả nào đó.
+
+35
+00:03:46,250 --> 00:03:50,260
+Mệnh đề 'If' luôn gắn liền với mệnh đề 'End If'.
+
+36
+00:03:51,880 --> 00:04:00,900
+Mỗi ô có thể thay đổi, 
+nhưng chỉ khi đó là ô X1, PivotTable sẽ thay đổi theo.
+
+37
+00:04:02,220 --> 00:04:17,960
+Để làm được điều đó PivotTable được đặt
+ ở sheet 'CustT10' và 'ProdT10'.
+
+38
+00:04:17,970 --> 00:04:23,780
+Sẽ dễ dàng hơn nếu ta đặt PivotTable mà chúng ta đang thấy
+một cái tên thích hợp.
+
+39
+00:04:23,780 --> 00:04:29,310
+Xem nhé.
+
+40
+00:04:29,310 --> 00:04:33,680
+Thông thường, nó được gọi là 'PivotTable 1', nhưng ở đây
+ta sẽ gọi là Pivot.
+
+41
+00:04:33,680 --> 00:04:42,280
+Không, tôi chỉ gọi là 'Top10Cust'.
+
+42
+00:04:42,280 --> 00:04:53,960
+Và tương tự với sheet sản phẩm trên PivotTable.
+Với cái tên sẽ hơi khác một chút.
+
+43
+00:04:53,960 --> 00:04:58,280
+'Top10Prod'.
+
+44
+00:04:58,280 --> 00:05:03,330
+Hai PivotTable làm cho việc mã hóa dễ dàng hơn.
+
+45
+00:05:03,330 --> 00:05:10,199
+Chúng được đặt trên sheet 'CustT10' và 'ProdT10'.
+
+46
+00:05:12,520 --> 00:05:24,900
+Ở đây ta có sheet 'CustT10'.
+
+47
+00:05:24,900 --> 00:05:27,160
+Trên sheet ta có thể thấy một tập hợp các PivotTable.
+
+48
+00:05:27,160 --> 00:05:30,750
+Ít nhất một tập hợp PivotTable.
+
+49
+00:05:30,750 --> 00:05:38,979
+Từ tập hợp PivotTable, ta muốn tạo 'Top10Cust'.
+
+50
+00:05:38,979 --> 00:05:45,800
+Và từ riêng PivotTable này.
+ta có thể làm mới bảng tính.
+
+51
+00:05:45,800 --> 00:06:06,259
+Ta có thể sao chép nó.
+Tiếp tục đổi nó cho 'Prod'.
+
+52
+00:06:06,259 --> 00:06:11,900
+Ta cần 1,2,3,4,5,6 dòng mã.
+
+53
+00:06:11,900 --> 00:06:18,910
+với cốt lõi chỉ là hai dòng.
+Để xem có lỗi nào không.
+
+54
+00:06:18,910 --> 00:06:21,380
+Ở đây.
+Sửa lại rồi.
+
+55
+00:06:21,380 --> 00:06:29,930
+Không phải là 'Sheet', mà là một tập hợp các sheet.
+Thêm một đuôi 's' ở đây.
+
+56
+00:06:29,930 --> 00:06:33,710
+Kiểm tra lần nữa.
+Yeah, không có lỗi nào.
+
+57
+00:06:33,710 --> 00:06:39,229
+Tôi rất tò mò nó sẽ hoạt động như thế nào.
+Tôi sẽ đặt một break-point ở đây.
+
+58
+00:06:39,229 --> 00:06:43,259
+Để xem nó có thật sẽ áp dụng vào mã này.
+
+59
+00:06:43,259 --> 00:06:55,740
+Nên đặt nó ở đây.
+Quay trở lại dashboard.
+
+60
+00:06:55,740 --> 00:07:03,850
+Giờ ta sẽ thử đổi thành 2016-12.
+Đây là mã của chúng ta.
+
+61
+00:07:03,850 --> 00:07:20,449
+Có thể thấy địa chỉ là X1.
+Ta có một lỗi ở đây.
+
+62
+00:07:20,449 --> 00:07:29,039
+Thấy rồi.
+Tiếp tục nào.
+
+63
+00:07:29,039 --> 00:07:35,110
+Tốt rồi.
+Xóa break-point.
+
+64
+00:07:35,110 --> 00:07:44,520
+Quay trở lại và thử lần cuối.
+Ta đổi lại thành 2016-07.
+
+65
+00:07:44,520 --> 00:07:49,560
+Có thể thấy hệ thống cần thêm một ít thời gian,
+nhưng nó không chỉ làm mới tất cả dữ liệu
+
+66
+00:07:49,569 --> 00:07:57,050
+mà còn làm mới cả dữ liệu sparkline.
+
+67
+00:07:57,050 --> 00:08:03,389
+Có một vấn đề nhỏ ở đây,
+nhưng chỉ là lỗi trên tập tin của tôi.
+
+68
+00:08:03,389 --> 00:08:05,979
+Trên tập tin mà bạn tải về sẽ không có vấn đề đó.
+
+69
+00:08:05,979 --> 00:08:11,389
+Đã đến cuối bài tập. 
+Hy vọng bạn cảm thấy thích thú.
+
+70
+00:08:11,389 --> 00:08:14,860
+Hy vọng nhận được những dashboard tốt từ các bạn.
+
+71
+00:08:14,860 --> 00:08:15,360
+Cảm ơn mọi người !
+

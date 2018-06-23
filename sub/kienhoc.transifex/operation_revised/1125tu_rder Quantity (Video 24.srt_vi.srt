@@ -1,0 +1,502 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/ROLT2OsbLVA
+npnhaquyen
+
+1
+00:00:06,078 --> 00:00:09,259
+Chào mừng các bạn trở lại với khóa Quản trị Điều hành.
+
+2
+00:00:09,259 --> 00:00:13,019
+Chúng ta sẽ tiếp tục với chủ đề hàng tồn kho
+
+3
+00:00:13,019 --> 00:00:17,349
+trong phần trước ta đã nói về phương trình tổng chi phí
+
+4
+00:00:17,349 --> 00:00:21,019
+và ở phần này ta sẽ tiếp tục với EOQ 
+
+5
+00:00:21,019 --> 00:00:26,559
+lượng đặt hàng kinh tế (Economic Order Quantity)
+Nếu bạn nhớ lại phần trước, chúng ta đã có
+
+6
+00:00:26,559 --> 00:00:27,739
+phương trình tổng chi phí
+
+7
+00:00:27,739 --> 00:00:31,409
+có nghĩa là các chi phí trong thời hạn một năm
+
+8
+00:00:31,410 --> 00:00:34,750
+EOQ sẽ giảm thiểu các chi phí đó
+
+9
+00:00:34,750 --> 00:00:37,960
+chúng ta sẽ nhìn vào tổng chi phí hằng năm đó
+
+10
+00:00:37,960 --> 00:00:41,539
+ta sẽ thử và tìm ra cách để biến khoản chi phí đó
+
+11
+00:00:41,539 --> 00:00:44,619
+nhỏ nhất có thể. 
+
+12
+00:00:44,619 --> 00:00:48,878
+EOQ là điểm khởi đầu cho việc phân tích hàng tồn kho 
+
+13
+00:00:48,878 --> 00:00:52,409
+ta có những giả định không lấy gì làm thực tế lắm
+
+14
+00:00:52,409 --> 00:00:55,628
+nhưng chúng dẫn đường cho ta đến với điểm khởi đầu
+
+15
+00:00:55,628 --> 00:00:59,729
+những giả định đó bao gồm rằng
+nhu cầu có thể được biết trước
+
+16
+00:00:59,729 --> 00:01:04,919
+nhu cầu là không đổi, có nghĩa là ta không bao giờ gặp phải biến động nào
+
+17
+00:01:04,920 --> 00:01:08,319
+Ta biết chính xác số lượng mà ta sẽ sử dụng
+
+18
+00:01:08,319 --> 00:01:12,510
+vào bất cứ thời điểm xác định nào 
+Tiến độ được xác định và không thay đổi
+
+19
+00:01:12,510 --> 00:01:16,299
+có nghĩa là từ lúc ta đưa đơn hàng tới khi ta nhận được nó
+
+20
+00:01:16,299 --> 00:01:19,770
+ta biết chắc chắn nó sẽ mất bao lâu
+
+21
+00:01:19,769 --> 00:01:22,929
+và ta còn biết là nó cố định
+
+22
+00:01:22,930 --> 00:01:26,159
+khi ta nhận bản kiểm kê hàng hóa, ta nhận tất cả cùng một lúc
+
+23
+00:01:26,159 --> 00:01:29,650
+ta không bao giờ nhận một phần của đơn hàng nên sẽ không có bất cứ vấn đề gì với nó
+
+24
+00:01:29,650 --> 00:01:33,140
+Có những giả định mấu chốt với phương trình EOQ
+
+25
+00:01:33,140 --> 00:01:38,290
+mà ta phải thừa nhận rằng nó không thực tế lắm
+nhưng đó là điểm khởi đầu
+
+26
+00:01:38,290 --> 00:01:39,100
+để ta phân tích hàng tồn kho
+
+27
+00:01:39,099 --> 00:01:43,349
+do đó khi nhìn vào mô hình EOQ này
+
+28
+00:01:43,349 --> 00:01:47,000
+bạn để ý thấy nó có dạng hình răng cưa 
+nếu nhìn ngay trên đây
+
+29
+00:01:47,000 --> 00:01:50,489
+ta có số lượng đặt hàng là Q
+
+30
+00:01:50,489 --> 00:01:55,188
+khi ta đưa một đơn đặt hàng, đây là số lượng mà ta đặt
+
+31
+00:01:55,188 --> 00:02:00,578
+và qua thời gian, vì tỉ lệ nhu cầu của ta là không đổi
+
+32
+00:02:00,578 --> 00:02:06,758
+nó có chiều hướng đi xuống
+vậy hãy nhìn vào đường thứ hai ở đây, bạn có thể thấy 
+
+33
+00:02:06,759 --> 00:02:09,240
+một đường chạy thẳng từ đỉnh
+
+34
+00:02:09,240 --> 00:02:13,149
+xuống tới số 0, có nghĩa là 
+
+35
+00:02:13,149 --> 00:02:16,800
+lượng hàng tồn kho trung bình của chúng ta sẽ bằng Số lượng đặt hàng (Q) chia cho 2
+
+36
+00:02:16,800 --> 00:02:21,480
+ta lấy lượng đặt hàng cao nhất là Q
+
+37
+00:02:21,479 --> 00:02:25,299
+cùng với lượng thấp nhất là 0
+
+38
+00:02:25,300 --> 00:02:28,390
+lấy trung bình của hai số này và ta được Số lượng đặt hàng (Q)
+
+39
+00:02:28,389 --> 00:02:34,549
+bây giờ ta sẽ nhìn phương trình tổng chi phí
+
+40
+00:02:34,550 --> 00:02:39,140
+ta sẽ để ý thấy một vài điều
+thứ nhất, chi phí thiết lập, cũng có nghĩa là 
+
+41
+00:02:39,139 --> 00:02:43,589
+chi phí đặt hàng, là một đường cong bắt đầu ở một điểm rất cao
+
+42
+00:02:43,590 --> 00:02:46,930
+sau đó cứ thấp dần thấp dần xuống
+
+43
+00:02:46,930 --> 00:02:50,230
+Đó là bởi vì ta đã trang trải phần chi phí đặt hàng
+
+44
+00:02:50,229 --> 00:02:54,268
+dựa trên số lượng món hàng mà ta đặt cùng một lúc
+
+45
+00:02:54,269 --> 00:02:57,430
+nếu ta đặt hàng 5 lần một năm
+
+46
+00:02:57,430 --> 00:03:02,069
+thì sẽ tốn kém hơn so với việc
+
+47
+00:03:02,068 --> 00:03:05,859
+đặt hàng 3 lần một năm
+
+48
+00:03:05,860 --> 00:03:09,190
+hoặc 1 lần một năm. Vậy nên số lần đặt hàng của ta càng nhiều
+
+49
+00:03:09,189 --> 00:03:12,560
+thì chi phí càng tăng lên
+
+50
+00:03:12,560 --> 00:03:16,060
+nên ta sẽ đặt nhiều hơn trong một đơn hàng để khỏi phải đặt nhiều lần
+
+51
+00:03:16,060 --> 00:03:21,680
+đó là lí do tại sao đường cong này lại đi xuống
+Đường thứ hai thể hiện phí tổn giữ kho
+
+52
+00:03:21,680 --> 00:03:26,510
+chúng ta càng giữ nhiều hàng thì chi phí sẽ càng tăng lên
+
+53
+00:03:26,509 --> 00:03:30,959
+đó là lí do tại sao đường này lại có chiều hướng đi lên
+Ta cộng hai loại chi phí này lại
+
+54
+00:03:30,959 --> 00:03:35,199
+và thêm vào đó tiền của bản thân món hàng
+Ta có tổng chi phí
+
+55
+00:03:35,199 --> 00:03:38,699
+và đó là đường cong ở đây, kết hợp từ hai đường ban nãy
+
+56
+00:03:38,699 --> 00:03:44,209
+điều thú vị đã xảy ra
+nếu bạn để ý thì điểm thấp nhất 
+
+57
+00:03:44,209 --> 00:03:45,689
+của đường cong thể hiện tổng chi phí
+
+58
+00:03:45,689 --> 00:03:49,079
+trùng với điểm mà ở đó chi phí đặt hàng
+
+59
+00:03:49,080 --> 00:03:52,719
+bằng với phí tổn trữ kho
+
+60
+00:03:52,719 --> 00:03:57,979
+vậy khi điều đó xảy ra, ta hoàn toàn có thể tính toán được giá trị của Số lượng đặt hàng Q
+
+61
+00:03:57,979 --> 00:04:01,329
+để tìm ra con số đó bằng bao nhiêu
+
+62
+00:04:01,330 --> 00:04:06,760
+nhằm tìm cách giảm thiểu tổng các chi phí
+tất cả những gì ta phải làm là sắp đặt chi phí đặt hàng
+
+63
+00:04:06,759 --> 00:04:10,539
+sao cho bằng với chi phí trữ hàng và đó chính là những gì ta đang làm ở đây
+
+64
+00:04:10,539 --> 00:04:14,628
+Ta lấy chi phí thiết lập, cũng có nghĩa là chi phí đặt hàng
+
+65
+00:04:14,628 --> 00:04:18,429
+đặt nó bằng với chi phí trữ hàng hằng năm
+
+66
+00:04:18,430 --> 00:04:22,199
+và làm một vài phép tính đơn giản để xác định
+
+67
+00:04:22,199 --> 00:04:25,239
+số lượng, giờ kết quả ta có ở đây là
+
+68
+00:04:25,238 --> 00:04:28,849
+căn bậc hai của hai lần R
+
+69
+00:04:28,850 --> 00:04:33,120
+nghĩa là nhu cầu hằng năm nhân với tỉ lệ mức tiêu thị S
+
+70
+00:04:33,120 --> 00:04:37,790
+nghĩa là chi phí thiết lập, chia cho chi phí lưu trữ H
+
+71
+00:04:37,790 --> 00:04:43,550
+ta dùng dấu hoa thị ngay phía trên Q để cho thấy
+ta có được giá trị này
+
+72
+00:04:43,550 --> 00:04:48,168
+nhờ dùng phương trình lượng đặt hàng kinh tế để tính toán
+
+73
+00:04:48,168 --> 00:04:51,689
+vậy thực sự thì nó có ý nghĩa gì?
+Hãy làm một ví dụ nhanh này nhé
+
+74
+00:04:51,689 --> 00:04:55,279
+và bạn sẽ hiểu vì sao
+
+75
+00:04:55,279 --> 00:05:00,539
+giả sử ta đặt mua pin từ một nhà cung cấp với giá 10 đô la một đơn vị
+
+76
+00:05:00,540 --> 00:05:05,509
+để sử dụng cho bộ cảm biến khói
+trung bình ta dùng 54 400 cục pin mỗi năm
+
+77
+00:05:05,509 --> 00:05:10,360
+và mỗi lần đặt hàng
+
+78
+00:05:10,360 --> 00:05:14,710
+lại phát sinh thêm chi phí đặt hàng lên tới 1000 đô
+
+79
+00:05:14,709 --> 00:05:18,359
+dù ta chỉ đặt một cục pin hay đặt cả trăm cục pin
+
+80
+00:05:18,360 --> 00:05:22,189
+hay 2 nghìn cục pin, chi phí đặt hàng vẫn là 1000 đô cho mỗi lần đặt hàng
+
+81
+00:05:22,189 --> 00:05:27,310
+chi phí vốn của ta là 10% một năm
+
+82
+00:05:27,310 --> 00:05:31,500
+trong đó chi phí lưu trữ chiếm 7% một năm
+
+83
+00:05:31,500 --> 00:05:34,870
+vậy ta nên đặt mua bao nhiêu cục pin một lần
+
+84
+00:05:34,870 --> 00:05:39,459
+hay nói cách khác số lượng là bao nhiêu cho mỗi lần đặt hàng của ta
+
+85
+00:05:39,459 --> 00:05:42,529
+thêm vào đó, hằng năm thì chi phí đặt hàng
+
+86
+00:05:42,529 --> 00:05:46,288
+chi phí lưu trữ và tổng các chi phí là bao nhiêu?
+
+87
+00:05:46,288 --> 00:05:50,379
+cùng tính toán nào
+
+88
+00:05:50,379 --> 00:05:54,538
+ta có các con số quan trọng sau
+C tượng trưng cho giá tiền mỗi đơn vị, là 10 đô
+
+89
+00:05:54,538 --> 00:05:58,300
+R tượng trưng cho nhu cầu hằng năm hoặc tỉ lệ mức tiêu thụ hằng năm, 
+
+90
+00:05:58,300 --> 00:06:01,560
+là 54 400 đô
+
+91
+00:06:01,560 --> 00:06:05,889
+S tượng trưng chi phí thiết lập, mỗi lần ta đặt một đơn hàng thì sẽ mất 1000 đô phí đặt hàng
+
+92
+00:06:05,889 --> 00:06:10,019
+và H, tổng chi phí lưu trữ
+
+93
+00:06:10,019 --> 00:06:13,639
+vậy giờ ta sẽ lấy chi phí lưu trữ vật chất
+
+94
+00:06:13,639 --> 00:06:18,360
+cộng với chi phí vốn, rồi nhân với giá tiền mỗi đơn vị
+
+95
+00:06:18,360 --> 00:06:23,259
+và ta có kết quả đằng sau chữ H viết hoa là 1.7 đô la
+
+96
+00:06:23,259 --> 00:06:26,960
+giờ ta hãy thế chúng vào phương trình EOQ
+
+97
+00:06:26,959 --> 00:06:30,180
+đây rồi, ta thế tất cả vào
+
+98
+00:06:30,180 --> 00:06:33,550
+giờ ta phải cho thương của 2RS chia cho H vào căn bậc hai
+
+99
+00:06:33,550 --> 00:06:37,009
+và ta có kết quả là 8000
+
+100
+00:06:37,009 --> 00:06:41,160
+vậy ta nên đặt hàng 8 nghìn viên pin một lần đặt
+
+101
+00:06:41,160 --> 00:06:45,740
+vậy tổng chi phí thiết lập là gi?
+
+102
+00:06:45,740 --> 00:06:50,960
+S nhân với R chia cho Q, ta được 6800 đô
+
+
+103
+00:06:50,959 --> 00:06:54,870
+tổng chi phi lưu trữ
+
+104
+00:06:54,870 --> 00:06:58,038
+cũng 6800 đô
+
+105
+00:06:58,038 --> 00:07:02,300
+không nên lấy làm ngạc nhiên vì ta đã tính toán 
+
+106
+00:07:02,300 --> 00:07:06,870
+chi phí tối thiểu mà ở đó chi phí lưu trữ
+
+107
+00:07:06,870 --> 00:07:10,240
+bằng với chi phí thiết lập, do dó hai con số này
+
+108
+00:07:10,240 --> 00:07:14,949
+đều bằng nhau khi ta dùng phuong pháp EOQ
+
+109
+00:07:14,949 --> 00:07:20,848
+cuối cùng, tổng chi phí hằng năm của ta sẽ bằng chi phí thiết lập
+
+110
+00:07:20,848 --> 00:07:25,089
+cộng chi phí lưu trữ và cộng với giá tiền từng đơn vị
+
+111
+00:07:25,089 --> 00:07:28,109
+tất cả lại với nhau, và ta sẽ có được
+
+112
+00:07:28,110 --> 00:07:31,620
+557 600 đô
+
+113
+00:07:31,620 --> 00:07:35,288
+vậy đó là cách dùng phương phương EOQ để tính toán
+
+114
+00:07:35,288 --> 00:07:38,500
+điểm đặt biệt cần ghi nhớ đó là
+
+115
+00:07:38,500 --> 00:07:42,399
+đầu tiên, đó phải là tình huống lí tưởng mà ta biết rõ mọi thứ
+
+116
+00:07:42,399 --> 00:07:46,620
+nhu cầu, tiến độ, ta không bao giờ nhận đơn đặt hàng từng phần riêng lẻ
+
+117
+00:07:46,620 --> 00:07:51,000
+và khi ta tính toán phương trình EOQ, chi phí thiết lập hằng năm của ta
+
+118
+00:07:51,000 --> 00:07:54,579
+phải bằng với chi phí lưu trữ hằng năm
+
+119
+00:07:54,579 --> 00:07:58,620
+và ta sẽ có một vài thay đổi ở phương trình này vào bài học tiếp theo
+
+120
+00:07:58,620 --> 00:07:59,160
+Hẹn gặp lại các bạn.
+

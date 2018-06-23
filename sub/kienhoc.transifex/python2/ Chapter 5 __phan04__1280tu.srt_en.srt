@@ -1,0 +1,812 @@
+535
+00:23:07,110 --> 00:23:11,040
+https://youtu.be/6KgArgGi6Mk
+So that middle part says,
+run this six times, once
+
+536
+00:23:11,040 --> 00:23:13,520
+for each of those
+values, and then after.
+
+537
+00:23:13,520 --> 00:23:16,160
+And so we will add some
+intelligence at the beginning,
+
+538
+00:23:16,160 --> 00:23:17,910
+we'll add some
+intelligence in the middle,
+
+539
+00:23:17,910 --> 00:23:19,870
+and we'll add some
+intelligence at the end.
+
+540
+00:23:19,870 --> 00:23:22,780
+And then the whole thing
+will accomplish what we want.
+
+541
+00:23:22,780 --> 00:23:26,150
+Right now this is
+not that intelligent.
+
+542
+00:23:26,150 --> 00:23:28,990
+So now what I want to do is
+I want to review the thing
+
+543
+00:23:28,990 --> 00:23:32,001
+we did, and I want you to
+remember what the largest
+
+544
+00:23:32,001 --> 00:23:33,500
+number is, and I'm
+going to show you
+
+545
+00:23:33,500 --> 00:23:35,750
+a sequence of numbers in order.
+
+546
+00:23:35,750 --> 00:23:36,980
+Ready?
+
+547
+00:23:36,980 --> 00:23:39,610
+I'll do it quickly because
+you've seen this before.
+
+548
+00:23:39,610 --> 00:23:41,650
+So I'm only showing you
+one number at a time,
+
+549
+00:23:41,650 --> 00:23:44,220
+so you want to tell me
+what the largest number is,
+
+550
+00:23:44,220 --> 00:23:46,460
+so here we go.
+
+551
+00:23:46,460 --> 00:23:49,100
+The first number is 9.
+
+552
+00:23:49,100 --> 00:23:52,210
+The second number is 41.
+
+553
+00:23:52,210 --> 00:23:54,980
+The third number is 12.
+
+554
+00:23:54,980 --> 00:23:57,220
+The fourth number is 3.
+
+555
+00:23:57,220 --> 00:23:59,970
+The fifth number is 74.
+
+556
+00:23:59,970 --> 00:24:03,900
+And the six number is 15.
+
+557
+00:24:03,900 --> 00:24:05,850
+So what was the largest number?
+
+558
+00:24:05,850 --> 00:24:09,060
+
+559
+00:24:09,060 --> 00:24:13,190
+Did you have to go back, or
+did you remember how to do it?
+
+560
+00:24:13,190 --> 00:24:16,150
+Well, I will give you a clue.
+
+561
+00:24:16,150 --> 00:24:18,760
+It was 74.
+
+562
+00:24:18,760 --> 00:24:21,380
+That's because I know.
+
+563
+00:24:21,380 --> 00:24:22,990
+Now if you did that,
+and you had to do
+
+564
+00:24:22,990 --> 00:24:24,940
+that for 20 or 30
+numbers, you'd have
+
+565
+00:24:24,940 --> 00:24:27,270
+to create a mental
+algorithm in your head
+
+566
+00:24:27,270 --> 00:24:30,010
+to approach it and
+stay concentrated.
+
+567
+00:24:30,010 --> 00:24:31,150
+Focused.
+
+568
+00:24:31,150 --> 00:24:33,900
+So you would have create a
+variable in your head called
+
+569
+00:24:33,900 --> 00:24:36,229
+largest so far.
+
+570
+00:24:36,229 --> 00:24:38,520
+I would show you the first
+number, which would be nine.
+
+571
+00:24:38,520 --> 00:24:43,030
+And you would go, well, nine
+is larger than negative one,
+
+572
+00:24:43,030 --> 00:24:44,310
+so I will keep that.
+
+573
+00:24:44,310 --> 00:24:47,510
+That's the new largest I've seen
+so far, that's pretty awesome.
+
+574
+00:24:47,510 --> 00:24:50,516
+Because it's way better
+than negative one.
+
+575
+00:24:50,516 --> 00:24:52,300
+41, I thought nine was good.
+
+576
+00:24:52,300 --> 00:24:54,910
+But 41, that is a lot better.
+
+577
+00:24:54,910 --> 00:24:56,670
+So I'm going to keep that one.
+
+578
+00:24:56,670 --> 00:24:57,336
+That's the best.
+
+579
+00:24:57,336 --> 00:24:58,810
+It's the largest
+we've seen so far.
+
+580
+00:24:58,810 --> 00:25:02,560
+We've only seen two numbers,
+but the best we've seen so far
+
+581
+00:25:02,560 --> 00:25:03,510
+is 41.
+
+582
+00:25:03,510 --> 00:25:05,590
+So 12.
+
+583
+00:25:05,590 --> 00:25:06,680
+That's not larger.
+
+584
+00:25:06,680 --> 00:25:08,500
+Who cares about that?
+
+585
+00:25:08,500 --> 00:25:11,475
+It's not as big as 41, so we'll
+just go right on to the next.
+
+586
+00:25:11,475 --> 00:25:12,100
+On to the next.
+
+587
+00:25:12,100 --> 00:25:13,340
+Three.
+
+588
+00:25:13,340 --> 00:25:16,160
+That's lame when we're
+looking for large numbers.
+
+589
+00:25:16,160 --> 00:25:16,660
+So we skip.
+
+590
+00:25:16,660 --> 00:25:18,070
+Whoa, 74.
+
+591
+00:25:18,070 --> 00:25:19,800
+That's a rockingly large number.
+
+592
+00:25:19,800 --> 00:25:23,120
+So that's actually the
+largest we've seen so far.
+
+593
+00:25:23,120 --> 00:25:26,960
+Because it's bigger than 41,
+and 41 was the former champion
+
+594
+00:25:26,960 --> 00:25:28,870
+largest we've seen so far.
+
+595
+00:25:28,870 --> 00:25:31,260
+And there's 74, so
+we keep that one.
+
+596
+00:25:31,260 --> 00:25:33,787
+I don't know how many of these
+things we're going to see.
+
+597
+00:25:33,787 --> 00:25:34,870
+We could see lots of them.
+
+598
+00:25:34,870 --> 00:25:38,050
+But the next one we see 15.
+
+599
+00:25:38,050 --> 00:25:39,640
+Well, that's no good.
+
+600
+00:25:39,640 --> 00:25:43,630
+We got 74 already, 74 is,
+like, totally awesome.
+
+601
+00:25:43,630 --> 00:25:45,280
+So now, oh, we're done.
+
+602
+00:25:45,280 --> 00:25:46,330
+So hey, we're done.
+
+603
+00:25:46,330 --> 00:25:50,670
+And so 74 is the champion.
+
+604
+00:25:50,670 --> 00:25:51,542
+That is the largest.
+
+605
+00:25:51,542 --> 00:25:53,250
+It's not even the
+largest so far anymore,
+
+606
+00:25:53,250 --> 00:25:57,180
+it's actually the largest.
+
+607
+00:25:57,180 --> 00:25:58,550
+It's the largest.
+
+608
+00:25:58,550 --> 00:26:00,829
+So again, we had this
+thing at the top,
+
+609
+00:26:00,829 --> 00:26:02,120
+we had this loop in the middle.
+
+610
+00:26:02,120 --> 00:26:04,250
+At the bottom is where
+you get the payoff.
+
+611
+00:26:04,250 --> 00:26:06,742
+And the payoff is
+not in the middle.
+
+612
+00:26:06,742 --> 00:26:09,200
+While we're largest so far,
+largest so far, largest so far.
+
+613
+00:26:09,200 --> 00:26:11,020
+But at the end, it
+turned out once you've
+
+614
+00:26:11,020 --> 00:26:13,280
+looked at all the
+variables, all the values,
+
+615
+00:26:13,280 --> 00:26:16,320
+the largest so far is,
+indeed, the largest.
+
+616
+00:26:16,320 --> 00:26:19,160
+OK, so here's the
+algorithm for this.
+
+617
+00:26:19,160 --> 00:26:20,420
+I have some variables.
+
+618
+00:26:20,420 --> 00:26:22,150
+And remember that
+underscores are
+
+619
+00:26:22,150 --> 00:26:25,525
+valid characters in variables.
+
+620
+00:26:25,525 --> 00:26:28,650
+I'm being a little
+over explicit in this.
+
+621
+00:26:28,650 --> 00:26:31,710
+So I have a variable
+called largest so far.
+
+622
+00:26:31,710 --> 00:26:37,160
+And what I do is I set
+it to negative one.
+
+623
+00:26:37,160 --> 00:26:39,400
+Then I print before, so
+we can see that largest
+
+624
+00:26:39,400 --> 00:26:42,030
+so far is negative one.
+
+625
+00:26:42,030 --> 00:26:46,082
+Then we have a for loop, and my
+iteration variable is the_num.
+
+626
+00:26:46,082 --> 00:26:47,790
+So that's going to
+take on the successive
+
+627
+00:26:47,790 --> 00:26:54,390
+values 9, 41, 12, 3, 74, 15, and
+run this indented loop of code.
+
+628
+00:26:54,390 --> 00:26:59,440
+And so the_num will be
+nine first time through.
+
+629
+00:26:59,440 --> 00:27:03,440
+If the_num, 9, is greater
+than largest so far,
+
+630
+00:27:03,440 --> 00:27:11,470
+then grab the_num and assign
+it into largest so far.
+
+631
+00:27:11,470 --> 00:27:14,470
+Then print at the end of
+each loop largest so far
+
+632
+00:27:14,470 --> 00:27:15,920
+and the_num.
+
+633
+00:27:15,920 --> 00:27:19,020
+So in effect, the_num is nine.
+
+634
+00:27:19,020 --> 00:27:22,800
+We compare it to negative
+1, and nine is higher.
+
+635
+00:27:22,800 --> 00:27:26,280
+So we make largest
+so far be nine.
+
+636
+00:27:26,280 --> 00:27:32,700
+Next time through
+the loop, num is 41.
+
+637
+00:27:32,700 --> 00:27:35,780
+So we compare largest
+so far with 41,
+
+638
+00:27:35,780 --> 00:27:38,190
+and we like it, so we store it.
+
+639
+00:27:38,190 --> 00:27:40,400
+So we like it, we run
+it, and we print out,
+
+640
+00:27:40,400 --> 00:27:43,310
+41 is the largest
+we've seen so far.
+
+641
+00:27:43,310 --> 00:27:44,700
+Then we run again.
+
+642
+00:27:44,700 --> 00:27:47,930
+We come in, the_num
+points to 12.
+
+643
+00:27:47,930 --> 00:27:53,650
+The_num, 12, is not greater
+than 41, and so we skip.
+
+644
+00:27:53,650 --> 00:27:58,920
+So the largest so far
+stays 41, and we see 12.
+
+645
+00:27:58,920 --> 00:28:03,480
+Similarly, the_num
+advances to three.
+
+646
+00:28:03,480 --> 00:28:04,630
+We skip.
+
+647
+00:28:04,630 --> 00:28:08,160
+So we saw three, but the
+largest so far is still 41.
+
+648
+00:28:08,160 --> 00:28:12,170
+Continuing, the_num is now 74.
+
+649
+00:28:12,170 --> 00:28:13,070
+It runs.
+
+650
+00:28:13,070 --> 00:28:16,940
+74 is greater than 41.
+
+651
+00:28:16,940 --> 00:28:18,840
+And so we run this code.
+
+652
+00:28:18,840 --> 00:28:23,300
+And so we say, 74 is
+stuck in largest so far.
+
+653
+00:28:23,300 --> 00:28:25,140
+And indeed, then
+we print it out.
+
+654
+00:28:25,140 --> 00:28:27,580
+And largest so far is now 74.
+
+655
+00:28:27,580 --> 00:28:29,160
+We continue on.
+
+656
+00:28:29,160 --> 00:28:30,560
+We go up more time.
+
+657
+00:28:30,560 --> 00:28:35,510
+the_nu, points to 15, but
+15 is not larger than 74.
+
+658
+00:28:35,510 --> 00:28:40,720
+And so we skip, we print out 15
+and 74, and then we come out.
+
+659
+00:28:40,720 --> 00:28:45,410
+And at the end, we get
+the largest so far.
+
+660
+00:28:45,410 --> 00:28:49,260
+The name no longer-- I mean,
+largest so far at the end
+
+661
+00:28:49,260 --> 00:28:51,610
+is the largest, but
+the variable name.
+
+662
+00:28:51,610 --> 00:28:52,990
+OK.
+
+663
+00:28:52,990 --> 00:28:55,600
+Got it?
+
+664
+00:28:55,600 --> 00:28:57,180
+That's one idiom.
+
+665
+00:28:57,180 --> 00:29:00,580
+So let's just switch
+to another idiom.
+
+666
+00:29:00,580 --> 00:29:01,292
+Now counting.
+
+667
+00:29:01,292 --> 00:29:03,250
+How many things are we
+going to, how many times
+
+668
+00:29:03,250 --> 00:29:05,250
+is loop going to execute,
+how many things are we
+
+669
+00:29:05,250 --> 00:29:06,360
+going to find in the loop?
+
+670
+00:29:06,360 --> 00:29:07,990
+It's all the same notion.
+
+671
+00:29:07,990 --> 00:29:10,090
+And the pattern
+is really simple.
+
+672
+00:29:10,090 --> 00:29:11,657
+We start some variable, zork.
+
+673
+00:29:11,657 --> 00:29:13,240
+A better name for
+this would be count,
+
+674
+00:29:13,240 --> 00:29:15,740
+but I want to call it zork.
+
+675
+00:29:15,740 --> 00:29:16,960
+And then we have a loop.
+
+676
+00:29:16,960 --> 00:29:19,850
+And then in the loop,
+we just add one to zork.
+
+677
+00:29:19,850 --> 00:29:22,444
+And at the end,
+zork-- that should
+
+678
+00:29:22,444 --> 00:29:24,200
+be light blue right there.
+
+679
+00:29:24,200 --> 00:29:26,507
+Zork should be the total count.
+
+680
+00:29:26,507 --> 00:29:29,090
+Now of course, we can look at
+it and say it's going to be six.
+
+681
+00:29:29,090 --> 00:29:31,924
+But assume this loop is
+looping through a million lines
+
+682
+00:29:31,924 --> 00:29:33,340
+in a file, or
+something like that.
+
+683
+00:29:33,340 --> 00:29:38,685
+So it's cheating to look at
+it and say, oh, it's six.
+
+684
+00:29:38,685 --> 00:29:40,310
+Because we want to
+actually compute it.
+
+685
+00:29:40,310 --> 00:29:41,750
+So it's really simple.
+
+686
+00:29:41,750 --> 00:29:43,450
+Zork starts at zero.
+
+687
+00:29:43,450 --> 00:29:45,211
+It's going to run,
+zork is one now,
+
+688
+00:29:45,211 --> 00:29:49,420
+and two, three, four,
+five, six, and then
+
+689
+00:29:49,420 --> 00:29:53,010
+we've run out of stuff,
+and then we print out six.
+
+690
+00:29:53,010 --> 00:29:54,330
+So that's the idiom.
+
+691
+00:29:54,330 --> 00:29:57,980
+Before, during, and after.
+
+692
+00:29:57,980 --> 00:30:00,110
+We do something before,
+we do something during.
+
+693
+00:30:00,110 --> 00:30:02,910
+And in a sense,
+this zork here is
+
+694
+00:30:02,910 --> 00:30:05,070
+the number we've seen so far.
+
+695
+00:30:05,070 --> 00:30:07,330
+And at the end, it
+becomes the total number.
+
+696
+00:30:07,330 --> 00:30:10,090
+
+697
+00:30:10,090 --> 00:30:12,387
+Summing in the
+loop, very similar.
+
+698
+00:30:12,387 --> 00:30:14,220
+Again, you have to think
+of this as, there's
+
+699
+00:30:14,220 --> 00:30:16,460
+a whole bunch of variables here.
+
+700
+00:30:16,460 --> 00:30:18,890
+We start a variable at zero.
+
+701
+00:30:18,890 --> 00:30:21,180
+Each time through the
+loop, we add whatever
+
+702
+00:30:21,180 --> 00:30:22,330
+it is that we're seeing.
+
+703
+00:30:22,330 --> 00:30:27,760
+Instead of adding one, we're
+adding 9, 41, 12, 3, 74, 15.
+
+704
+00:30:27,760 --> 00:30:34,460
+And zork would be best
+thought of as running total.
+
+705
+00:30:34,460 --> 00:30:35,920
+So zork is the running total.
+
+706
+00:30:35,920 --> 00:30:39,600
+And so if you look at the
+numbers, running total's nine,
+
+707
+00:30:39,600 --> 00:30:43,470
+numbering total's 50, running
+total's 62, 65, 130, and 154.
+
+708
+00:30:43,470 --> 00:30:46,160
+And then we skip
+out, and at the end
+
+709
+00:30:46,160 --> 00:30:50,280
+the running total
+becomes the total.
+
+710
+00:30:50,280 --> 00:30:52,850
+So that's another
+of these patterns
+
+711
+00:30:52,850 --> 00:30:54,660
+that we do something
+at the beginning,
+
+712
+00:30:54,660 --> 00:30:59,200
+we do something in the middle,
+and we have something very nice
+

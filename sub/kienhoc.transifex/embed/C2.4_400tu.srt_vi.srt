@@ -1,0 +1,182 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/NGonOa7sCK0
+
+1
+00:00:00,000 --> 00:00:00,490
+
+2
+00:00:00,490 --> 00:00:04,950
+(JONATHAN VALVANO) trong video này, tôi sẽ cho bạn thấy qui trình
+
+3
+00:00:04,950 --> 00:00:07,910
+phát triển phần mềm.
+
+4
+00:00:07,910 --> 00:00:11,470
+Ta sẽ bắt đầu với trình soạn thảo.
+
+5
+00:00:11,470 --> 00:00:18,200
+Ta sẽ viết code, chương trình trên trình soạn thảo.
+
+6
+00:00:18,200 --> 00:00:27,360
+và sẽ dùng trình biên dịch để dịch chương trình ra mã lệnh.
+
+7
+00:00:27,360 --> 00:00:32,189
+
+8
+00:00:32,189 --> 00:00:45,220
+Mã lệnh sẽ được nạp lên trình giả lập để test, hoặc
+
+9
+00:00:45,220 --> 00:00:55,730
+nạp lên board thực, để test và thực thi.
+
+10
+00:00:55,730 --> 00:00:58,970
+Ta thấy ở đây có 2 bước test.
+
+11
+00:00:58,970 --> 00:01:06,090
+Test trên trình giả lập, và test trên board thực.
+
+12
+00:01:06,090 --> 00:01:13,220
+Keil uVision là 1 môi trường phát triển tích hợp (IDE)
+
+13
+00:01:13,220 --> 00:01:17,690
+có trình soạn thảo, trình biên dịch, và trình giả lập.
+
+14
+00:01:17,690 --> 00:01:20,930
+
+15
+00:01:20,930 --> 00:01:24,650
+Hãy xem trình tự này trên 1 hệ thống có sẳn,
+
+16
+00:01:24,650 --> 00:01:26,140
+hệ thống đèn giao thông.
+
+17
+00:01:26,140 --> 00:01:32,320
+Trên Keil IDE, ta sẽ sửa code.
+
+18
+00:01:32,320 --> 00:01:37,220
+Kế tiếp, biên dịch nó.
+
+19
+00:01:37,220 --> 00:01:41,530
+Để download nó lên board, ta nhấn nút Download.
+
+20
+00:01:41,530 --> 00:01:45,170
+Nhưng hãy coi qua phần cứng trước.
+
+21
+00:01:45,170 --> 00:01:49,810
+Ta đã làm sẵn phần cứng, đây là LaunchPad, Stellaris LaunchPad,
+
+22
+00:01:49,810 --> 00:01:52,260
+và trên board cắm, ta có sẵn vài mạch.
+
+23
+00:01:52,260 --> 00:01:54,270
+Và đây là hệ thống giả lập đèn giao thông của tôi.
+
+24
+00:01:54,270 --> 00:01:59,060
+Tôi có đỏ, vàng, xanh lá cho 1 chiều và đỏ, vàng, xanh lá cho
+
+25
+00:01:59,060 --> 00:02:02,060
+chiều kia, và 2 sensor nhận biết xe hơi.
+
+26
+00:02:02,060 --> 00:02:07,630
+Bước kế tiếp, tôi sẽ download code lên đây, trên Keil, tôi bấm
+
+27
+00:02:07,630 --> 00:02:12,815
+nút Download, code sẽ được nạp lên vi điều khiển.
+
+28
+00:02:12,815 --> 00:02:16,230
+
+29
+00:02:16,230 --> 00:02:19,820
+Tôi sẽ debug bằng Keil Debugger.
+
+30
+00:02:19,820 --> 00:02:23,570
+Trên Keil Debugger, ta có thể làm được nhiều thứ, và tôi sẽ dạy bạn
+
+31
+00:02:23,570 --> 00:02:25,600
+trong những phần tiếp theo.
+
+32
+00:02:25,600 --> 00:02:27,700
+Nhưng giờ, tôi chỉ chạy nó.
+
+33
+00:02:27,700 --> 00:02:32,120
+Và giờ, nhìn vào board, ta thấy đèn giao thông
+
+34
+00:02:32,120 --> 00:02:33,040
+đang chạy.
+
+35
+00:02:33,040 --> 00:02:40,390
+Khi tôi chạm vào sensor ở chiều này, ta thấy đèn đổi màu để
+
+36
+00:02:40,390 --> 00:02:42,250
+xe có thể đi.
+
+37
+00:02:42,250 --> 00:02:50,020
+Tóm lại, ta có Keil IDE để chỉnh sửa, nạp code, và debug.
+
+38
+00:02:50,020 --> 00:02:56,110
+Tiếp tục, ta lấy hệ thống thử nghiệm này, để qua 1 bên, và
+
+39
+00:02:56,110 --> 00:03:00,240
+làm 1 phiên bản mạch in (PCB) phức tạp hơn cho nó.
+
+40
+00:03:00,240 --> 00:03:02,900
+Đây là vi điều khiển.
+
+41
+00:03:02,900 --> 00:03:10,530
+Bản hoàn chỉnh của hệ thống có nguồn, màn hình và ta
+
+42
+00:03:10,530 --> 00:03:12,430
+để mọi thứ vào trong hộp.
+
+43
+00:03:12,430 --> 00:03:14,640
+đó chính là hệ thống nhúng.
+
+44
+00:03:14,640 --> 00:03:19,870
+Ta bỏ mọi thứ vào trong hộp, và giờ ta có
+
+45
+00:03:19,870 --> 00:03:22,610
+1 hệ thống nhúng với máy tính giấu bên trong.
+
+46
+00:03:22,610 --> 00:03:24,822

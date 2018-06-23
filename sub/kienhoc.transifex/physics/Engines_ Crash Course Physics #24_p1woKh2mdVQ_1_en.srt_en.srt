@@ -1,0 +1,540 @@
+1
+00:00:03,060 --> 00:00:07,140
+Think of all of the developments throughout history that led to the conveniences you enjoy today.
+
+2
+00:00:07,139 --> 00:00:12,599
+If I had to pick the biggest game-changer in human technology, it would probably be the steam engine.
+
+3
+00:00:12,609 --> 00:00:16,919
+During the industrial revolution, the steam
+engine powered machines in farms and factories.
+
+4
+00:00:16,920 --> 00:00:23,580
+And, although it may not seem so, those advances eventually led to the technologies that you’re using to watch me, right now.
+
+5
+00:00:23,579 --> 00:00:26,019
+So, the steam engine was a pretty big deal.
+
+6
+00:00:26,019 --> 00:00:32,119
+Developing a practical steam engine involved a lot of time and a lot smart people, and about a hundred years, and three main inventors.
+
+7
+00:00:32,119 --> 00:00:39,259
+And it took a solid understanding of thermodynamic processes – and heat engines – to make this world-changing technology, a reality.
+
+8
+00:00:39,259 --> 00:00:51,159
+[Theme Music]
+
+9
+00:00:51,159 --> 00:00:57,398
+Heat engines, like steam engines, turn thermal energy into mechanical work, and they do it in a repeating cycle.
+
+10
+00:00:57,399 --> 00:01:03,859
+The process starts at a high operating temperature, which we label as T_H, and ends up at a lower operating temperature, T_L.
+
+11
+00:01:03,859 --> 00:01:07,359
+In the process, the engine takes the input
+heat that was used to raise the temperature,
+
+12
+00:01:07,359 --> 00:01:13,439
+known as Q_H, and turns some of it into work, while also releasing some heat – Q_L – as exhaust.
+
+13
+00:01:13,439 --> 00:01:17,959
+Then the engine’s temperature is raised once more, so it can start the cycle all over again.
+
+14
+00:01:17,959 --> 00:01:25,639
+OK, now think back to the first law of thermodynamics, which says that the change in the thermal energy of a system is equal to heat and work.
+
+15
+00:01:25,640 --> 00:01:31,420
+In the case of a heat engine, the change in thermal energy is zero, because it always returns to the temperature it started from.
+
+16
+00:01:31,430 --> 00:01:36,160
+So, the engine’s input heat must be equal
+to the work it does, plus the heat it releases.
+
+17
+00:01:36,159 --> 00:01:38,670
+Now let’s see how this plays out in a steam
+engine.
+
+18
+00:01:38,670 --> 00:01:42,950
+There are a few different types of steam engine, but we’ll focus on the basic reciprocating type.
+
+19
+00:01:42,950 --> 00:01:47,219
+As long as you have something to "heat" the steam, like coal or oil, the engine keeps working.
+
+20
+00:01:47,219 --> 00:01:48,840
+That’s the input heat.
+
+21
+00:01:48,849 --> 00:01:52,369
+The input heat is used to heat a volume of
+water, which turns to steam.
+
+22
+00:01:52,370 --> 00:01:56,040
+Then, an intake valve opens, allowing the
+steam into the engine.
+
+23
+00:01:56,040 --> 00:01:59,960
+The steam expands and moves a piston outward
+– that’s the work done by the engine.
+
+24
+00:01:59,959 --> 00:02:03,469
+Then the intake valve closes, and an exhaust
+valve opens.
+
+25
+00:02:03,469 --> 00:02:07,870
+The exhaust valve leads to a condenser, which
+cools the steam back into water.
+
+26
+00:02:07,870 --> 00:02:14,620
+The lower temperature also lowers the pressure, creating a partial vacuum that makes the piston move back into its original position.
+
+27
+00:02:14,620 --> 00:02:17,960
+Then the water gets heated back into steam,
+and the cycle starts over.
+
+28
+00:02:17,960 --> 00:02:22,879
+As the engine runs, the motion of the piston can be translated into all kinds of different movement,
+
+29
+00:02:22,879 --> 00:02:27,280
+which is how steam engines can do things like
+move trains and boats, and run factory lines.
+
+30
+00:02:27,280 --> 00:02:30,739
+But as the steam engine runs, it releases
+exhaust heat.
+
+31
+00:02:30,740 --> 00:02:36,900
+The more exhaust heat it produces, the less efficient the engine is, and the more energy you have to put in for the same amount of work.
+
+32
+00:02:36,909 --> 00:02:40,959
+Obviously, it’s important for engines to
+be as efficient as possible to save energy.
+
+33
+00:02:40,959 --> 00:02:45,158
+And to design an efficient engine, engineers
+have to be able to calculate its efficiency.
+
+34
+00:02:45,159 --> 00:02:50,099
+Like we said earlier, an engine’s input heat is equal to the work it does, plus its exhaust heat.
+
+35
+00:02:50,099 --> 00:02:55,099
+And the more work – and therefore, the less exhaust heat – you get out of the input heat, the more efficient your engine is.
+
+36
+00:02:55,099 --> 00:02:58,759
+So, efficiency is equal to the work done by
+an engine divided by its input heat.
+
+37
+00:02:58,770 --> 00:03:03,630
+We can also put this just in terms of input
+heat and exhaust heat – pretty easily, actually.
+
+38
+00:03:03,629 --> 00:03:06,810
+We know that work is equal to input heat minus
+exhaust heat.
+
+39
+00:03:06,810 --> 00:03:11,340
+So efficiency is equal to input heat minus
+exhaust heat, divided by the input heat.
+
+40
+00:03:11,348 --> 00:03:16,209
+Or, simplifying those terms: efficiency is
+equal to 1 - exhaust heat / input heat.
+
+41
+00:03:16,209 --> 00:03:18,670
+If your engine produced no exhaust heat at all?
+
+42
+00:03:18,680 --> 00:03:21,530
+We’d say that its efficiency was exactly 1.
+
+43
+00:03:21,530 --> 00:03:24,129
+It would be perfectly efficient.
+
+44
+00:03:24,129 --> 00:03:27,620
+But there’s no such thing as an engine that
+produces no exhaust heat at all.
+
+45
+00:03:27,620 --> 00:03:32,219
+It wouldn’t work, because the temperature needs to be lowered and then raised again for the engine to keep going.
+
+46
+00:03:32,219 --> 00:03:37,900
+But we can imagine an ideal engine, where none of the exhaust energy is waste heat – where there’s no friction or anything like that.
+
+47
+00:03:37,900 --> 00:03:46,159
+An ideal engine would also be reversible – meaning, you could run it backward, putting in work to transfer heat from something with a lower temperature to something with a higher temperature.
+
+48
+00:03:46,159 --> 00:03:53,740
+This kind of hypothetical engine is called a Carnot engine, and we can use it to figure out the maximum possible efficiency of a real-life engine.
+
+49
+00:03:53,740 --> 00:03:57,420
+Last time, we talked about the four types
+of basic thermodynamic processes.
+
+50
+00:03:57,419 --> 00:04:01,859
+The Carnot engine combines two of those types
+into what’s known as the Carnot cycle.
+
+51
+00:04:01,860 --> 00:04:06,680
+But in the Carnot cycle, those processes don’t transfer heat between areas with different temperatures.
+
+52
+00:04:06,680 --> 00:04:15,659
+Because, if an engine involves heat transfer from an area with a higher temperature to an area with a lower temperature, then reversing the engine would involve transferring heat from lower to higher.
+
+53
+00:04:15,659 --> 00:04:18,219
+Which would violate the second law of thermodynamics!
+
+54
+00:04:18,220 --> 00:04:22,620
+So, in the Carnot cycle, heat won’t flow between areas of different temperatures at all.
+
+55
+00:04:22,620 --> 00:04:29,699
+Instead, the cycle goes through two adiabatic processes, where heat is held constant, and two isothermal processes, where heat is transferred.
+
+56
+00:04:29,699 --> 00:04:34,860
+But the temperature is held constant, so the heat never flows between areas of different temperatures.
+
+57
+00:04:34,860 --> 00:04:38,960
+Now, you might be wondering how heat gets transferred, if there’s no difference in temperature.
+
+58
+00:04:38,959 --> 00:04:42,579
+Well, remember how we described isothermal
+processes last time:
+
+59
+00:04:42,579 --> 00:04:47,759
+In those cases, there are only very tiny differences in temperature, and they’re immediately eliminated.
+
+60
+00:04:47,759 --> 00:04:52,420
+So, practically speaking, there is no transfer
+of heat between areas of different temperatures.
+
+61
+00:04:52,420 --> 00:04:55,020
+And this means, the process can still be reversed.
+
+62
+00:04:55,019 --> 00:05:01,959
+With all that in mind, here’s how a Carnot engine works – at least in theory, because again: Carnot engines are totally hypothetical.
+
+63
+00:05:01,959 --> 00:05:04,759
+The first process in the cycle is isothermal.
+
+64
+00:05:04,759 --> 00:05:07,599
+The temperature is constant, but heat is slowly
+added.
+
+65
+00:05:07,600 --> 00:05:12,379
+That makes the gas’s volume expand and its
+pressure decrease – path a-b on this diagram.
+
+66
+00:05:12,379 --> 00:05:14,709
+The second process is adiabatic.
+
+67
+00:05:14,709 --> 00:05:20,419
+The temperature drops while the heat stays constant, which also makes the volume expand and the pressure decrease.
+
+68
+00:05:20,420 --> 00:05:22,300
+That’s path b-c on the diagram.
+
+69
+00:05:22,300 --> 00:05:25,879
+The third process is the opposite of the first
+one, and it’s also isothermal.
+
+70
+00:05:25,879 --> 00:05:33,379
+The gas is compressed while the temperature is held constant, so it releases heat and its pressure increases while its volume decreases.
+
+71
+00:05:33,379 --> 00:05:34,680
+That’s path c-d.
+
+72
+00:05:34,680 --> 00:05:41,400
+The last process is the opposite of the second: it’s adiabatic, so the gas is compressed but its heat doesn’t change.
+
+73
+00:05:41,399 --> 00:05:46,159
+That makes the gas’s volume decrease and
+its pressure increase, like in path d-a.
+
+74
+00:05:46,160 --> 00:05:48,480
+Its temperature goes back up to the starting
+point.
+
+75
+00:05:48,480 --> 00:05:54,259
+The Carnot engine is the ideal engine, because it produces the most possible work from a given temperature difference.
+
+76
+00:05:54,259 --> 00:06:00,839
+And because a Carnot engine is as efficient as possible, the high and low temperatures are proportional to the input and exhaust heat.
+
+77
+00:06:00,850 --> 00:06:04,289
+Which is important, math-wise, because it
+means that in the equation for efficiency,
+
+78
+00:06:04,288 --> 00:06:10,719
+you can replace Q_H and Q_L – the input and exhaust heat – with T_H and T_L – the higher and lower operating temperatures.
+
+79
+00:06:10,720 --> 00:06:15,620
+Which can help if you don’t know an engine’s input and exhaust heats, but you know its operating temperatures.
+
+80
+00:06:15,620 --> 00:06:21,379
+So! The ideal efficiency for an engine is equal
+to: 1 - its low temperature / its high temperature.
+
+81
+00:06:21,379 --> 00:06:25,879
+The colder that lower operating temperature is, the more efficient the ideal version of the engine is.
+
+82
+00:06:25,879 --> 00:06:30,199
+So, say you need an engine to power a life-size
+Mario Kart that you’re building for yourself.
+
+83
+00:06:30,199 --> 00:06:34,620
+You find an engine online, and you’re thinking about buying it, but first you want to know how efficient it is.
+
+84
+00:06:34,620 --> 00:06:40,439
+The manufacturer’s website says that for every second, the engine’s input heat is 10 kilojoules at 500 Kelvin.
+
+85
+00:06:40,439 --> 00:06:43,478
+Its exhaust heat is 2 kilojoules at 300 Kelvin.
+
+86
+00:06:43,480 --> 00:06:51,900
+The efficiency equation says that the engine’s efficiency is equal to: 1 - its exhaust heat / its input heat – in this case, 0.8.
+
+87
+00:06:51,899 --> 00:06:56,199
+That would be a very efficient engine, so
+you should be a little suspicious.
+
+88
+00:06:56,199 --> 00:06:58,860
+I mean, is that kind of efficiency even possible?
+
+89
+00:06:58,870 --> 00:07:03,370
+You can find out, by checking the ideal efficiency
+of the engine – the Carnot efficiency.
+
+90
+00:07:03,370 --> 00:07:11,980
+The ideal efficiency is equal to: 1 - its lower operating temperature / its higher operating temperature, which in this case is equal to 0.4.
+
+91
+00:07:11,980 --> 00:07:19,020
+It’s impossible for this engine to have an efficiency higher than 0.4, so the manufacturer’s website is...well, just lying.
+
+92
+00:07:19,019 --> 00:07:21,539
+So you probably shouldn’t buy anything from them anyway.
+
+93
+00:07:21,540 --> 00:07:28,060
+And, actually, you probably wouldn’t want an engine that was close to the efficiency of a Carnot engine, because Carnot engines are very slow.
+
+94
+00:07:28,060 --> 00:07:32,658
+During those isothermal processes, the temperature
+has to be kept constant while heat is transferred
+
+95
+00:07:32,658 --> 00:07:36,079
+– which only works if the heat is transferred
+super slowly.
+
+96
+00:07:36,079 --> 00:07:38,079
+So the engine has to be really slow.
+
+97
+00:07:38,079 --> 00:07:43,300
+If you had a Carnot engine in your car, for example, it would take you a whole day to get out of your driveway.
+
+98
+00:07:43,300 --> 00:07:48,759
+Real-life heat engines are useful, because they use the flow of heat from something warmer to something cooler to produce work.
+
+99
+00:07:48,759 --> 00:07:51,860
+But what if you want heat to flow from something
+cooler to something warmer?
+
+100
+00:07:51,860 --> 00:07:58,939
+That’s what things like air conditioners and refrigerators do, and they were originally developed using the principles scientists had learned from creating steam engines.
+
+101
+00:07:58,939 --> 00:08:06,300
+These cooling machines are a lot like the opposite of heat engines, in the sense that they use work to make heat flow in the opposite direction that it would normally go.
+
+102
+00:08:06,300 --> 00:08:10,040
+The refrigerator, for example, passes a cool
+liquid through the inside of the fridge.
+
+103
+00:08:10,040 --> 00:08:13,060
+The liquid absorbs heat – that’s Q_L – as
+it evaporates.
+
+104
+00:08:13,060 --> 00:08:17,519
+Then, the fridge uses a motor to do work on the now-warmer fluid, which has turned into a gas.
+
+105
+00:08:17,519 --> 00:08:24,620
+It’s passed through coils on the outside of the refrigerator, where it releases the exhaust heat – Q_H – and cools to become a liquid again.
+
+106
+00:08:24,620 --> 00:08:25,978
+Then the cycle starts over.
+
+107
+00:08:25,980 --> 00:08:30,020
+For heat engines, efficiency is measured by the work produced for a given amount of input heat.
+
+108
+00:08:30,019 --> 00:08:39,240
+And there’s a similar concept for refrigerators: the coefficient of performance, or COP, which is equal to the amount of heat removed from the lower-temperature zone divided by work.
+
+109
+00:08:39,240 --> 00:08:43,899
+The more heat the fridge removes for a given amount of work, the higher the coefficient of performance.
+
+110
+00:08:43,899 --> 00:08:49,699
+Like we did with the efficiency equation, we can rewrite the COP equation just in terms of Q_L and Q_H.
+
+111
+00:08:49,700 --> 00:08:54,660
+The coefficient of performance is equal to
+Q_L divided by Q_H minus Q_L.
+
+112
+00:08:54,659 --> 00:09:04,299
+To find the coefficient of performance for an ideal refrigerator, we do the same thing we did with the ideal Carnot engine: replace Q_L with T_L and Q_H with T_H.
+
+113
+00:09:04,299 --> 00:09:13,479
+So, for an ideal fridge, the coefficient of performance would be equal to: the lower operating temperature, divided by the higher operating temperature minus the lower operating temperature.
+
+114
+00:09:13,480 --> 00:09:18,639
+And of course, a real-life refrigerator can’t have a higher coefficient of performance than an ideal refrigerator.
+
+115
+00:09:18,639 --> 00:09:22,939
+Now, it may not be surprising that steam engines
+and refrigerators are total opposites.
+
+116
+00:09:22,940 --> 00:09:30,639
+But! Fridges and freezers and air conditioning are all game-changing inventions that were only made possible by our knowledge of steam engines.
+
+117
+00:09:30,639 --> 00:09:35,559
+Today, you learned about how engines turn thermal energy into work and how to calculate their efficiency.
+
+118
+00:09:35,570 --> 00:09:37,410
+We also described the Carnot engine.
+
+119
+00:09:37,409 --> 00:09:40,799
+And finally, we talked about cooling machines,
+like refrigerators.
+
+120
+00:09:40,799 --> 00:09:44,479
+Crash Course Physics is produced in association
+with PBS Digital Studios.
+
+121
+00:09:44,480 --> 00:09:49,279
+You can head over to their channel and check out a playlist of the latest episodes from shows like:
+
+122
+00:09:49,279 --> 00:09:52,360
+PBS Space Time, Deep Look, and Blank on Blank.
+
+123
+00:09:52,360 --> 00:09:56,659
+This episode of Crash Course was filmed in
+the Doctor Cheryl C. Kinney Crash Course Studio
+
+124
+00:09:56,659 --> 00:10:01,439
+with the help of these amazing people and our equally amazing graphics team, is Thought Cafe.
+

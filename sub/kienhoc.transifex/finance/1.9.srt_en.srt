@@ -1,0 +1,263 @@
+1
+00:00:08,19 --> 00:00:11,210
+https://youtu.be/Bh2Z7xNXXSY
+Welcome back, we have talked about Future Value,
+
+2
+00:00:11,210 --> 00:00:13,769
+we have seen the power of compounding,
+
+3
+00:00:13,769 --> 00:00:16,789
+and, I would like to now
+
+4
+00:00:16,789 --> 00:00:22,960
+talk about Present Value, but we'll keep
+one thing still simple, which is, we´ll have a
+
+5
+00:00:22,960 --> 00:00:29,419
+one-time payment or a one-time amount of
+money at a point in time. So in the
+
+6
+00:00:29,419 --> 00:00:36,79
+previous examples, we had Future Values
+of what? A thousand dollars or whatever the money is, at
+
+7
+00:00:36,79 --> 00:00:41,129
+point zero at different points in time
+in the future, so we increased N from
+
+8
+00:00:41,129 --> 00:00:42,690
+one and so on.
+
+9
+00:00:42,690 --> 00:00:47,59
+Now what we are going to do is, we're going to do
+the reverse of it and Present Value is
+
+10
+00:00:47,59 --> 00:00:50,830
+more difficult to understand, but not if
+you understand Future Value. So many
+
+11
+00:00:50,830 --> 00:00:54,680
+textbooks introduce Present Value first,
+which I find little bit counterintuitive
+
+12
+00:00:54,680 --> 00:00:59,299
+and tough for people to understand,
+especially with compounding, so let's do
+
+13
+00:00:59,299 --> 00:01:03,939
+Present Value. So the question I ask is
+the following, and it's up on the screen
+
+14
+00:01:03,939 --> 00:01:10,610
+for you. What is the Present Value of
+receiving $1100 one year from now? So
+
+15
+00:01:10,610 --> 00:01:17,310
+let's again, make sure we understand the
+timing of it and draw the timeline. So you
+
+16
+00:01:17,310 --> 00:01:25,909
+are standing here, our question is, asking
+what is PV? But I'm giving you money
+
+17
+00:01:25,909 --> 00:01:31,110
+in the future and for the beginning, time
+being, we will keep the period only one year.
+
+18
+00:01:31,110 --> 00:01:43,530
+So I'm giving you 1100, right? So, can you
+guess? Given what we've just done? Turns out,
+
+19
+00:01:43,530 --> 00:01:49,750
+that the Present Value is, think of it as
+the reverse of Future Value. So, if somebody
+
+20
+00:01:49,750 --> 00:01:52,740
+gave me 1100 in the future,
+
+21
+00:01:52,740 --> 00:01:58,820
+will it be worth less or more today? Remember Future
+Value increases, Present Value has to be
+
+22
+00:01:58,820 --> 00:02:07,809
+less, so what will you do? You´ll do 1100 and
+you will do something called discounting,
+
+23
+00:02:07,810 --> 00:02:12,319
+and the word discounting is everywhere in
+Finance and the reason is, we make
+
+24
+00:02:12,319 --> 00:02:17,810
+decisions today and calculate Present
+Values of our actions, but our actions
+
+25
+00:02:17,810 --> 00:02:23,159
+affect the future, so we'll try to bring
+this 1100 back today, because that's when
+
+26
+00:02:23,159 --> 00:02:25,880
+you make decisions and it´s good to think in
+Present Value
+
+27
+00:02:25,880 --> 00:02:29,930
+terms, nothing wrong in thinking in the
+future, but what's the point, if you´re
+
+28
+00:02:29,930 --> 00:02:38,540
+making the decision today? Turns out, what will you do?
+You´ll divide this by 1+R and it'll
+
+29
+00:02:38,540 --> 00:02:47,950
+become $1000, so let me explain why do you divide,
+because the good news is, you´ve
+
+30
+00:02:47,950 --> 00:02:52,600
+already know Future Value, that's why I
+like Future Value a little bit better, in
+
+31
+00:02:52,600 --> 00:02:57,400
+terms of a beginning tool to understand and it
+makes sense, you can relate to it and
+
+32
+00:02:57,400 --> 00:03:01,460
+easier to do, dividing is more
+difficult than multiplying, though with
+
+33
+00:03:01,460 --> 00:03:08,610
+compounding we saw, we needed Excel as soon as
+we went beyond one year essentially, ok? So
+
+34
+00:03:08,610 --> 00:03:14,350
+think about it, why do you have 1000. One way to think about it
+is, suppose I put a thousand bucks here,
+
+35
+00:03:14,350 --> 00:03:22,910
+the Present Value. To check that my
+answer is right, what do I need to do? To
+
+36
+00:03:22,910 --> 00:03:27,240
+calculate its Future Value, take its
+Future Value to the future, how much will you
+
+37
+00:03:27,240 --> 00:03:43,140
+get? You´ll get 1100, which is equal to what? PV
+times 1+R, Yeah?
+
+38
+00:03:43,140 --> 00:03:55,109
+We sometimes call PV P2, right? So what does FV become?
+so FV is PV times 1+R, so
+
+39
+00:03:55,110 --> 00:04:09,130
+think about it. What is PV? PV is FV divided by is 1+R, and I kinda cheated and did the calculation right here.
+
+40
+00:04:09,130 --> 00:04:17,79
+So the reason it's difficult as you know,
+dividing by R, 1+R and you dividing
+
+41
+00:04:17,79 --> 00:04:21,250
+by 1+R and this is a simple
+scenario and the reason you're dividing
+
+42
+00:04:21,250 --> 00:04:25,150
+1+R is because, you get the
+original amount in the future
+
+43
+00:04:25,150 --> 00:04:31,760
+plus an interest rate, ok? So let's just keep
+going a little bit and talk a little bit
+
+44
+00:04:31,760 --> 00:04:38,360
+about the Present Value concept which you
+already have. So PV concept is, you
+
+45
+00:04:38,360 --> 00:04:48,560
+take something in the Future Value and
+you try to bring it back, right? And the
+
+46
+00:04:48,560 --> 00:04:57,740
+way you do it is, you divide it by a number
+greater than 1. R, we´ll assume
+
+47
+00:04:57,740 --> 00:05:02,440
+throughout this course, is typically
+greater than 1, so what happens to the
+
+48
+00:05:02,440 --> 00:05:07,400
+Future Value when you divide it by a number
+greater than 1? It becomes discounted, it
+
+49
+00:05:07,400 --> 00:05:13,780
+becomes less than the Future Value. One
+more time, let's write out the formula, Okay?
+
+50
+00:05:13,780 --> 00:05:24,390
+So the PV formula is equal to FV
+over 1+R, sometimes
+
+51
+00:05:24,390 --> 00:05:30,190
+I write lower case, sometimes I write caps,
+don't worry about it, you know what I'm
+
+52
+00:05:30,190 --> 00:05:44,370
+talking about. So in our example it was 1100 divided by 1.10, and it was a 1000 bucks, Okay? Let´s take
+
+53
+00:05:44,370 --> 00:05:49,250
+a break. We want to nail Present Value, we´ve nailed Future Value, at least for one payment,
+
+54
+00:05:49,250 --> 00:05:52,870
+and then we'll come back and do more
+interesting stuff.
+

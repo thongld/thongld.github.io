@@ -1,0 +1,189 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/eKnmfacxfX4
+
+1
+00:00:00,000 --> 00:00:00,130
+
+2
+00:00:00,130 --> 00:00:01,880
+DR. JONATHAN VALVANO:
+In this video, we're
+
+3
+00:00:01,880 --> 00:00:06,050
+going to show you how to configure
+the slide pot, the potentiometer,
+
+4
+00:00:06,050 --> 00:00:08,560
+to do this lab.
+
+5
+00:00:08,560 --> 00:00:12,060
+Most of the potentiometers
+have these extra tabs.
+
+6
+00:00:12,060 --> 00:00:14,590
+Now, notice that there are
+two types of pins on here.
+
+7
+00:00:14,590 --> 00:00:18,800
+The pins labeled one, two, and
+three, those are the important pins.
+
+8
+00:00:18,800 --> 00:00:20,210
+Don't bend those.
+
+9
+00:00:20,210 --> 00:00:23,430
+But these other big
+fat tabs we don't need.
+
+10
+00:00:23,430 --> 00:00:25,520
+So I'm going to bend
+them out of the way.
+
+11
+00:00:25,520 --> 00:00:30,680
+So I grab my suppliers, I hold on
+tight, and I bend it out of the way.
+
+12
+00:00:30,680 --> 00:00:33,700
+Now, notice I didn't bend
+pin one, two, or three.
+
+13
+00:00:33,700 --> 00:00:35,610
+I just bent one of these tabs.
+
+14
+00:00:35,610 --> 00:00:38,090
+So I'm going to take all the
+tabs that I don't need to
+
+15
+00:00:38,090 --> 00:00:39,840
+and I'm going to bend
+them out of the way.
+
+16
+00:00:39,840 --> 00:00:41,330
+And that was two.
+
+17
+00:00:41,330 --> 00:00:44,840
+Take this one, bend it out of the way.
+
+18
+00:00:44,840 --> 00:00:47,790
+Take this one, bend it out the way.
+
+19
+00:00:47,790 --> 00:00:48,290
+OK.
+
+20
+00:00:48,290 --> 00:00:51,400
+So now I have left three pins.
+
+21
+00:00:51,400 --> 00:00:55,590
+Pin three is going to be
+connected to plus 3.3.
+
+22
+00:00:55,590 --> 00:00:59,560
+Pin one will go to
+ground, and pin two will
+
+23
+00:00:59,560 --> 00:01:02,560
+be connected to the
+analog-to-digital input.
+
+24
+00:01:02,560 --> 00:01:07,510
+And as we saw, we're going to use
+PE2, which is analog channel one.
+
+25
+00:01:07,510 --> 00:01:12,160
+So now I can flip this over and
+plug it into the protoboard.
+
+26
+00:01:12,160 --> 00:01:15,600
+Notice that pin (three) is
+going to be tied to 3.3,
+
+27
+00:01:15,600 --> 00:01:20,500
+and down here we have pin one going
+to the ground-- that's this one--
+
+28
+00:01:20,500 --> 00:01:24,280
+and pin two is going to the
+analog-to-digital input.
+
+29
+00:01:24,280 --> 00:01:27,260
+And so now we have our
+slide pot here, which
+
+30
+00:01:27,260 --> 00:01:30,370
+can be used to create
+our analog voltage.
+
+31
+00:01:30,370 --> 00:01:34,900
+One last important step is we're going
+to convert this pot to a distance
+
+32
+00:01:34,900 --> 00:01:38,690
+measure by attaching a scale to it.
+
+33
+00:01:38,690 --> 00:01:42,960
+And so if I define the measurement
+point as right here, that
+
+34
+00:01:42,960 --> 00:01:51,570
+is 0 millimeters, 5 millimeters,
+10 millimeters-- you see,
+
+35
+00:01:51,570 --> 00:01:59,820
+my edge is right here at 10
+millimeters-- 15, and lastly 20.
+
+36
+00:01:59,820 --> 00:02:01,940
+Now some pots have more
+or less millimeters,
+
+37
+00:02:01,940 --> 00:02:04,410
+but they all go from
+one side to the other.
+
+38
+00:02:04,410 --> 00:02:11,730
+And so now I've created the transducer,
+which I can use to measure distance.
+
+39
+00:02:11,730 --> 00:02:13,711
+Have fun building it.
+
+40
+00:02:13,711 --> 00:02:14,210

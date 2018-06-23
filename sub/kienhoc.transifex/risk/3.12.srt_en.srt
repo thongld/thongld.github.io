@@ -1,0 +1,356 @@
+0
+00:00:05,047 --> 00:00:06,510
+Welcome back.
+https://youtu.be/vi1D4ZZyl1k
+1
+00:00:06,510 --> 00:00:08,170
+Let me give you some intuition for
+
+2
+00:00:08,170 --> 00:00:12,860
+CAPM, and let me write it out in the way actually I should write it out.
+
+3
+00:00:13,870 --> 00:00:18,092
+But for simplicity, we&#39;ll drop the Es many times.
+
+4
+00:00:31,998 --> 00:00:34,100
+Okay, let me give you some intuition.
+
+5
+00:00:35,720 --> 00:00:41,330
+Suppose I asked you what is the beta of a treasury bill.
+
+6
+00:00:41,330 --> 00:00:41,990
+What would you say?
+
+7
+00:00:43,080 --> 00:00:44,790
+It&#39;s a risk free asset.
+
+8
+00:00:44,790 --> 00:00:47,986
+Treasury Bill.
+
+9
+00:00:47,986 --> 00:00:54,550
+Beta i = 0, so what should you expect this equation&#39;s answer to be?
+
+10
+00:00:56,380 --> 00:01:00,600
+rf, because if we substitute 0 this whole thing drops out.
+
+11
+00:01:01,790 --> 00:01:02,870
+Is that right?
+
+12
+00:01:02,870 --> 00:01:03,920
+Sure.
+
+13
+00:01:03,920 --> 00:01:07,390
+If the beta is zero the return should be RF.
+
+14
+00:01:07,390 --> 00:01:10,950
+So imagine a security that somehow has a beta close to zero,
+
+15
+00:01:10,950 --> 00:01:12,850
+remember when we looked at security
+
+16
+00:01:14,700 --> 00:01:19,460
+correlations across securities and the market portfolio and so on.
+
+17
+00:01:19,460 --> 00:01:22,820
+You could have a situation with very low betas.
+
+18
+00:01:22,820 --> 00:01:26,440
+And their returns should be slightly higher than the risk-free.
+
+19
+00:01:26,440 --> 00:01:29,250
+Now, let&#39;s go to the market, the next part.
+
+20
+00:01:29,250 --> 00:01:33,280
+Suppose you look at S&amp;P 500.
+
+21
+00:01:33,280 --> 00:01:35,810
+In this context it&#39;s beta will be beta = 1.
+
+22
+00:01:37,200 --> 00:01:39,260
+What should its return be?
+
+23
+00:01:39,260 --> 00:01:42,720
+Let&#39;s substitute 1, rf cancels with rf.
+
+24
+00:01:42,720 --> 00:01:45,620
+Expected return will be market.
+
+25
+00:01:45,620 --> 00:01:47,910
+Great, expected return on market.
+
+26
+00:01:48,980 --> 00:01:54,070
+So, now this is very likely, suppose you find a security whose beta is one.
+
+27
+00:01:54,070 --> 00:01:55,410
+What does capitan say?
+
+28
+00:01:56,850 --> 00:02:00,360
+It has to have the same return as the simple 500.
+
+29
+00:02:00,360 --> 00:02:02,460
+Otherwise, what do you have?
+
+30
+00:02:02,460 --> 00:02:03,490
+Arbitrage opportunities.
+
+31
+00:02:04,800 --> 00:02:08,830
+But here&#39;s the trick question, which of the two will you hold?
+
+32
+00:02:08,830 --> 00:02:10,460
+So imagine a security with, and
+
+33
+00:02:10,460 --> 00:02:15,058
+this is very important, imagine a security that has a beta of one.
+
+34
+00:02:15,058 --> 00:02:17,368
+And imagine S&amp;P 500 beta of one.
+
+35
+00:02:17,368 --> 00:02:22,100
+You&#39;re a risk-averse person, which of these two will you hold?
+
+36
+00:02:23,780 --> 00:02:25,371
+S&amp;P 500.
+
+37
+00:02:25,371 --> 00:02:31,445
+So, if you hold expected, if you hold the one security with beta close to one,
+
+38
+00:02:31,445 --> 00:02:34,820
+what are you happening to you?
+
+39
+00:02:34,820 --> 00:02:39,410
+You&#39;re bouncing around your tutorials and one is the market but
+
+40
+00:02:39,410 --> 00:02:43,280
+the second is idiosincartic, and why would you want that?
+
+41
+00:02:43,280 --> 00:02:48,187
+Because expected return both securities will be the same
+
+42
+00:02:48,187 --> 00:02:52,591
+in a market dominated by people who are risk first.
+
+43
+00:02:52,591 --> 00:02:57,150
+And that is the point, and that is something you need to internalize.
+
+44
+00:02:57,150 --> 00:03:00,830
+That specific risk cannot matter in such a world.
+
+45
+00:03:00,830 --> 00:03:06,290
+And it&#39;s not algebra, it&#39;s not math, it is very simple stuff.
+
+46
+00:03:06,290 --> 00:03:11,910
+So, what I want to do is CAPM is powerful because of the following reason.
+
+47
+00:03:11,910 --> 00:03:16,950
+It&#39;s a very intuitive, simple idea, it&#39;s based on the notion of diversification.
+
+48
+00:03:18,270 --> 00:03:22,080
+Simple measure of risk, which says, if you diversify and
+
+49
+00:03:22,080 --> 00:03:26,900
+you hold a large portfolio, the risk of something cannot be its own risk or
+
+50
+00:03:26,900 --> 00:03:30,669
+variance, it has to be relationship with other things.
+
+51
+00:03:30,669 --> 00:03:32,810
+And it&#39;s very easy to measure.
+
+52
+00:03:32,810 --> 00:03:38,390
+Simple relationship between risk and return, linear, betas add up.
+
+53
+00:03:38,390 --> 00:03:42,684
+Beta is the only measure you need to know plus the risk-free rate, both available.
+
+54
+00:03:42,684 --> 00:03:47,940
+Risk-free amount tends to be very stable, doesn&#39;t jump around a lot.
+
+55
+00:03:47,940 --> 00:03:52,050
+We&#39;ll assume it&#39;s 5% and easily measurable.
+
+56
+00:03:52,050 --> 00:03:55,840
+So, why would you not want to use CAPM?
+
+57
+00:03:55,840 --> 00:03:59,250
+There&#39;s one reason you may not want to rely on any model.
+
+58
+00:04:00,740 --> 00:04:02,470
+Nothing is perfect.
+
+59
+00:04:02,470 --> 00:04:05,130
+In a world with human behavior involved,
+
+60
+00:04:06,210 --> 00:04:09,600
+I say capital is better than equals MC squared.
+
+61
+00:04:09,600 --> 00:04:12,690
+And the reason is humans are complex.
+
+62
+00:04:12,690 --> 00:04:17,774
+The stock market is not easy to understand, and then to put such a simple
+
+63
+00:04:17,774 --> 00:04:23,270
+characterization around it, better be the best model ever created.
+
+64
+00:04:23,270 --> 00:04:25,440
+Because the intuition is right, right?
+
+65
+00:04:25,440 --> 00:04:27,780
+So if people are risk averse, which they are,
+
+66
+00:04:27,780 --> 00:04:32,430
+why the heck would a specific risk matter in the pricing of things?
+
+67
+00:04:32,430 --> 00:04:36,290
+And even though the measurements are not perfect, the concept is very perfect.
+
+68
+00:04:36,290 --> 00:04:38,170
+So here&#39;s a strong caveat.
+
+69
+00:04:39,450 --> 00:04:41,950
+We will apply in this course,
+
+70
+00:04:41,950 --> 00:04:47,660
+this concept in a very simplistic way as it was supposed to have been designed.
+
+71
+00:04:47,660 --> 00:04:50,770
+But when you go to the real world, there are a lot of measurement issues.
+
+72
+00:04:50,770 --> 00:04:54,360
+They&#39;re a lot of is the market portfolio capturing everything
+
+73
+00:04:54,360 --> 00:04:57,840
+because it&#39;s simply a measure of S&amp;P 500.
+
+74
+00:04:57,840 --> 00:05:03,660
+I would encourage you very strongly to think more about maybe market portfolio or
+
+75
+00:05:03,660 --> 00:05:09,220
+more than one factor that&#39;s common to things needs to capture the variation.
+
+76
+00:05:09,220 --> 00:05:11,040
+There&#39;s a lot of work done in that field and
+
+77
+00:05:11,040 --> 00:05:13,850
+you can make your models a little bit better.
+
+78
+00:05:13,850 --> 00:05:20,900
+But, my conjecture, all models are based on the hypothesis that market-wide risks,
+
+79
+00:05:20,900 --> 00:05:25,760
+however you capture them, simplistically or a little bit more complicated,
+
+80
+00:05:25,760 --> 00:05:29,450
+will tend to be things that matter to a risk averse person.
+
+81
+00:05:29,450 --> 00:05:32,640
+And therefore, to the valuation of anything,
+
+82
+00:05:32,640 --> 00:05:38,650
+because people hold projects through equity, that and so on, and so forth.
+
+83
+00:05:38,650 --> 00:05:44,314
+Let&#39;s come back and what we&#39;ll do is we&#39;ll go to rainforest.
+
+84
+00:05:44,314 --> 00:05:48,176
+Remember, we are trying to figure out the cost of capital of rainforest and
+
+85
+00:05:48,176 --> 00:05:50,290
+that means going to Amazon.
+
+86
+00:05:50,290 --> 00:05:56,170
+When we come back, we&#39;ll go to the financial screen finish up that discussion
+
+87
+00:05:56,170 --> 00:05:59,390
+and we&#39;ll be done--for this part.
+
+88
+00:05:59,390 --> 00:05:59,930
+See you soon.
+

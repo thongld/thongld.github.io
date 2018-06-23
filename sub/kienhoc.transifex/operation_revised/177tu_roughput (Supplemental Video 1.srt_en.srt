@@ -1,0 +1,145 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/IQiDvN0d5Vk
+
+1
+00:00:05,000 --> 00:00:14,259
+hello again and welcome back to operation management. 
+In this supplemental lecture, we're gonna be taking about process
+throughput, try to figure out what controls the rate of units going through
+a particular process.
+
+2
+00:00:14,259 --> 00:00:39,380
+So we're gonna particularly look at the arrival rate of the unit vs process rate itself. 
+Won't you remember what we've talked about what is the average throughput rate?
+We know that it is the average number of units that flow through the process in 
+a specified period of time. So for example, it could be 10 units per hour, 50 units per day
+
+
+3
+00:00:39,380 --> 00:00:55,490
+12 units per minute, 100 per week, 100 per hour, 3 per second
+ and so forth. So we're looking at units per period of time. So what affects
+ the throughput. As i said earlier, it is
+
+4
+00:00:55,490 --> 00:01:21,730
+the arrival rate, which is how many units that arrive and enter 
+the process, and it also affects the private process rate, which
+is how many units can be processed. So again we're looking at 
+units per period of time. Now, there're 3 different situations. One is 
+the arrival rate can exceed the process rate.
+
+5
+00:01:21,730 --> 00:01:26,260
+In this case, there are more units arrive in than the process can handle. 
+
+6
+00:01:26,260 --> 00:01:47,820
+The second situation is that the arrival rate is less than the 
+process rate, which means the process is capable of handling 
+more units than all the arrive in. And the third situation 
+is when the arrival rate is equal to the process rate. We're going
+through each of these situation independently.
+
+7
+00:01:47,819 --> 00:02:03,459
+In the first on, when the arrival rate exceed that of a process rate, 
+if you look at this diagram, you can see that units are building up 
+inventory, because as units are arriving, but the process is 
+not ready to accept these new flow units.
+
+
+8
+00:02:03,459 --> 00:02:11,879
+So it's going to build up. So in this case, 
+The output of the process of throughput rate 
+9
+00:02:11,879 --> 00:02:22,159
+is going to be limited to the capability of the process itself. 
+This process is going to be used all the 
+time. It is 
+
+10
+00:02:22,159 --> 00:02:29,120
+100% untilized, which means if you have the arrival rate
+ exceeding your process rate, here is no 
+downtime for that process
+
+11
+00:02:29,120 --> 00:03:03,590
+It's been used 100% capacity. And it's high arrival rate is going to
+increases work in process inventory. Because if you want an unit going
+through your arriving, waiting for the process to handle it and the process
+it's just slow. It can not handle all of those units. So when we're thinking 
+about increasing throughput rate of a process, we always have to consider
+how quickly the process can handle these new units
+
+12
+00:03:03,590 --> 00:03:06,509
+The second situation is the arrival rate is less than process rate. 
+
+13
+00:03:06,509 --> 00:03:26,759
+And here you that we have almost no build-up inventory in practice.
+ None here. And on average, the process is waiting for the arrival of units. 
+Now we can get some small inventory build-up 
+because there is variability in arrival of units. 
+
+14
+00:03:26,759 --> 00:03:36,598
+Remember when we talk about
+
+15
+00:03:36,598 --> 00:03:43,829
+And also variability in processing of the units. So in this case,
+ when the arrival rate is less than
+process rate, 
+
+16
+00:03:43,830 --> 00:04:11,189
+then average throughput rate is going to be controlled by the 
+arrival rate of the units. So this meansthe output of process 
+is limited to the arrival rate. And average utilization of the process itself is
+going to be less than 100%. 'Cos there will be period of time when the 
+process is waiting for units
+
+17
+00:04:11,189 --> 00:04:19,879
+to arrive. And our work in process inventory is low or non-existent
+because the process is faster than the units can arrive. The third 
+situation when arrival rate equals to process rate
+
+18
+00:04:19,879 --> 00:04:27,089
+Well, here, it's similar to that of the previous situation when the 
+arrival rate is less than process rate
+
+
+19
+00:04:27,089 --> 00:04:47,339
+But although the arrival rate and the process rate is the same, there 
+is some variability in units coming. So we can have some small inventory 
+build-up and there can be times when the process is waiting. So the arrival rate
+ equals to process rate, which equals to throughput rate
+
+20
+00:04:47,339 --> 00:04:55,500
+So the ouput is limited to capability of the process itself. 
+
+21
+00:04:55,500 --> 00:05:17,879
+And here our capacity utilization can be
+just about 100%, which means that process is working almost all of
+the time and we may get some work in process inventory increases
+ over time due to variability of arrival and process rates themselves.
+So when we thinking about throughput of a process,
+
+22
+00:05:17,879 --> 00:05:39,000
+remember you have to consider the arrival rate and the process rate
+itself . If the arrival rate exceed than the process, then the process is 
+controlling the throughput rate. If the arrival rate is less than
+the process, then it is the arrival rate that is controlling the throughput 
+rate. Thanks for watching. I'll see you next time.

@@ -1,0 +1,459 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/9xRmNLc7ZOo
+
+1
+00:00:00,000 --> 00:00:00,940
+
+2
+00:00:00,940 --> 00:00:05,570
+DR. JONATHAN VALVANO: The essence of
+the universal receiver transmitter
+
+3
+00:00:05,570 --> 00:00:09,020
+is that the data is sent serially.
+
+4
+00:00:09,020 --> 00:00:12,020
+That means one bit at a time.
+
+5
+00:00:12,020 --> 00:00:17,630
+The idle condition is
+a high or a 3.3 volts.
+
+6
+00:00:17,630 --> 00:00:21,060
+And then the data,
+when it wants to send,
+
+7
+00:00:21,060 --> 00:00:28,460
+begins with a start bit which is
+low, which is always a level 0.
+
+8
+00:00:28,460 --> 00:00:41,650
+And then the bits are sent
+0, 1, 2, 3, 4, 5, 6, 7.
+
+9
+00:00:41,650 --> 00:00:43,460
+And then we're going to have a stop bit.
+
+10
+00:00:43,460 --> 00:00:47,610
+
+11
+00:00:47,610 --> 00:00:50,350
+And the stop bit is always high.
+
+12
+00:00:50,350 --> 00:00:57,560
+These 10 bits together
+are called a Frame.
+
+13
+00:00:57,560 --> 00:01:04,300
+And so in one Frame we
+see we have 10 total bits.
+
+14
+00:01:04,300 --> 00:01:10,010
+And encoded in those 10 total
+bits are eight data bits.
+
+15
+00:01:10,010 --> 00:01:13,560
+The other aspect of this
+serial communication
+
+16
+00:01:13,560 --> 00:01:16,525
+has to do with the time per bit.
+
+17
+00:01:16,525 --> 00:01:19,580
+
+18
+00:01:19,580 --> 00:01:23,280
+The time per bit is called the bit-time.
+
+19
+00:01:23,280 --> 00:01:27,470
+And one over the bit-time
+is called the baud-rate.
+
+20
+00:01:27,470 --> 00:01:32,950
+And that is the total number
+of bits transmitted per second.
+
+21
+00:01:32,950 --> 00:01:38,090
+As we saw in the last slide, the
+transmitter on the one computer
+
+22
+00:01:38,090 --> 00:01:41,920
+is connected up to the
+receiver on the other computer.
+
+23
+00:01:41,920 --> 00:01:48,220
+So this wave form here are the
+same on one side, the transmitter.
+
+24
+00:01:48,220 --> 00:01:54,870
+So these 10 bits are output from the
+transmitter and input to the receiver.
+
+25
+00:01:54,870 --> 00:01:57,160
+So let's look at the transmitter.
+
+26
+00:01:57,160 --> 00:02:00,970
+The transmitter has a
+10-bit shift-register
+
+27
+00:02:00,970 --> 00:02:05,490
+which is connected to the
+transmit data output pin(TxD).
+
+28
+00:02:05,490 --> 00:02:07,930
+There are 10 bits in here.
+
+29
+00:02:07,930 --> 00:02:14,504
+The start bit will come out first
+and then bits 0, 1, 2, 3, 4, 5, 6,
+
+30
+00:02:14,504 --> 00:02:20,270
+7 will come out next, and lastly the
+stop bit which you know is a one.
+
+31
+00:02:20,270 --> 00:02:23,100
+
+32
+00:02:23,100 --> 00:02:27,450
+And these 10 bits are loaded
+into this shift-register.
+
+33
+00:02:27,450 --> 00:02:34,180
+In order to make it happen the
+software will write to the data
+
+34
+00:02:34,180 --> 00:02:37,120
+register so it's going to
+write to the data register.
+
+35
+00:02:37,120 --> 00:02:40,630
+
+36
+00:02:40,630 --> 00:02:43,420
+And this data register
+has the name UART0.
+
+37
+00:02:43,420 --> 00:02:46,020
+
+38
+00:02:46,020 --> 00:02:50,650
+This number can be 0 through 7
+data register (DR) underscore R,
+
+39
+00:02:50,650 --> 00:02:54,100
+So it will write to this register.
+
+40
+00:02:54,100 --> 00:02:59,840
+This 8 bits of data is then passed
+through a First In, First Out hardware
+
+41
+00:02:59,840 --> 00:03:05,310
+FIFO and sent into this shift-register.
+
+42
+00:03:05,310 --> 00:03:11,450
+
+43
+00:03:11,450 --> 00:03:15,770
+DR RAMESH YERRABALLI: Does that mean
+that there is a buffer between the data
+
+44
+00:03:15,770 --> 00:03:18,720
+register that you write to
+and the shift-register that
+
+45
+00:03:18,720 --> 00:03:21,030
+actually sends the data out?
+
+46
+00:03:21,030 --> 00:03:26,610
+DR. JONATHAN VALVANO: Yes, this is a
+16 element buffer, or First In First
+
+47
+00:03:26,610 --> 00:03:32,770
+Out queue that allows the software
+to write many data into this buffer
+
+48
+00:03:32,770 --> 00:03:35,100
+and then they're sent out one at a time.
+
+49
+00:03:35,100 --> 00:03:41,270
+There's one flag in this device that
+the software needs to know about.
+
+50
+00:03:41,270 --> 00:03:45,530
+And that is the transmit
+FIFO full flag(TXFF).
+
+51
+00:03:45,530 --> 00:03:55,460
+And this flag is 1 if this FIFO is
+full and can't accept any more data.
+
+52
+00:03:55,460 --> 00:04:00,320
+And this flag is 0 so if it's
+not full and the software
+
+53
+00:04:00,320 --> 00:04:03,927
+can write to the data register.
+
+54
+00:04:03,927 --> 00:04:05,760
+DR RAMESH YERRABALLI:
+Now, let's take a look
+
+55
+00:04:05,760 --> 00:04:10,260
+at the receiver side
+of the transmission.
+
+56
+00:04:10,260 --> 00:04:13,620
+On the receiver side,
+just like the sender side,
+
+57
+00:04:13,620 --> 00:04:16,910
+there is a shift-register as well.
+
+58
+00:04:16,910 --> 00:04:28,360
+This receiver shift-register is also
+of the same size, which is 10 bits.
+
+59
+00:04:28,360 --> 00:04:33,100
+There is your start
+bit and the stop bit.
+
+60
+00:04:33,100 --> 00:04:35,940
+
+61
+00:04:35,940 --> 00:04:40,545
+And your payload, which is
+your data, which is 8 bits.
+
+62
+00:04:40,545 --> 00:04:43,160
+
+63
+00:04:43,160 --> 00:04:50,150
+Now when the software
+wants to read data it's
+
+64
+00:04:50,150 --> 00:04:56,400
+going to perform the read on the data
+register which we call UART0_DR_R.
+
+65
+00:04:56,400 --> 00:05:03,070
+
+66
+00:05:03,070 --> 00:05:13,010
+And again, this 0 can be any number
+between 0 and 7 for the various UARTs.
+
+67
+00:05:13,010 --> 00:05:15,570
+
+68
+00:05:15,570 --> 00:05:34,570
+And we have a receiver FIFO which
+is also a 16-element buffer.
+
+69
+00:05:34,570 --> 00:05:40,080
+The receiver is slightly complicated
+compared to the sender in that
+
+70
+00:05:40,080 --> 00:05:43,845
+when we receive data
+these 10 bits of data
+
+71
+00:05:43,845 --> 00:05:51,130
+are taken and converted
+to the 8 bits of payload.
+
+72
+00:05:51,130 --> 00:05:59,290
+So every element here will have the
+8 bits of raw data and 4 other bits.
+
+73
+00:05:59,290 --> 00:06:04,130
+These 4 bits are for indicating errors.
+
+74
+00:06:04,130 --> 00:06:08,050
+So we have what we call
+an overrun error bit(OE),
+
+75
+00:06:08,050 --> 00:06:16,000
+a break error bit(BE), a frame error
+bit(FE), and a parity error bit(PE).
+
+76
+00:06:16,000 --> 00:06:20,930
+For now we will ignore the break
+error bit because we rarely use it.
+
+77
+00:06:20,930 --> 00:06:23,790
+but we will talk about
+the overrun error bit.
+
+78
+00:06:23,790 --> 00:06:27,920
+Remember that this is
+a 16 element buffer.
+
+79
+00:06:27,920 --> 00:06:35,720
+So when data is being received, and
+if the sender is sending too fast,
+
+80
+00:06:35,720 --> 00:06:39,210
+and if this buffer were
+to fill up, this receiver
+
+81
+00:06:39,210 --> 00:06:41,620
+will not have a place
+to put information.
+
+82
+00:06:41,620 --> 00:07:04,390
+So the overrun error bit is set to
+1 to indicate the buffer is full
+
+83
+00:07:04,390 --> 00:07:08,460
+and some frame had to be dropped.
+
+84
+00:07:08,460 --> 00:07:11,750
+So now, as far as a
+software is concerned
+
+85
+00:07:11,750 --> 00:07:21,640
+it's going to use a different flag
+which is the receive buffer RXFE flag
+
+86
+00:07:21,640 --> 00:07:26,575
+which is called the FIFO empty flag.
+
+87
+00:07:26,575 --> 00:07:29,940
+
+88
+00:07:29,940 --> 00:07:33,030
+So what the receiver
+is going to do is it's
+
+89
+00:07:33,030 --> 00:07:34,960
+going to repeatedly check this flag.
+
+90
+00:07:34,960 --> 00:07:40,470
+And as long as this flag is a 0,
+which means that there's no data
+
+91
+00:07:40,470 --> 00:07:45,940
+to be consumed, it keeps looping
+if it's trying to do a busy wait.
+
+92
+00:07:45,940 --> 00:07:51,240
+And when this becomes a 1 we know
+that there's at least some data here,
+
+93
+00:07:51,240 --> 00:07:54,150
+so you can consume the data.
+
+94
+00:07:54,150 --> 00:08:02,480
+So the frame error is when this a
+Baud-rate mismatch, Baud-rate error,
+
+95
+00:08:02,480 --> 00:08:05,910
+which means that the sender
+and receiver have not
+
+96
+00:08:05,910 --> 00:08:08,060
+been configured with the same Baud-rate.
+
+97
+00:08:08,060 --> 00:08:10,870
+
+98
+00:08:10,870 --> 00:08:13,290
+And the parity error
+is a thing of the past.
+
+99
+00:08:13,290 --> 00:08:15,170
+We no longer use it.
+
+100
+00:08:15,170 --> 00:08:20,238
+It's just it's just there for
+continuity in the protocol.
+
+101
+00:08:20,238 --> 00:08:20,737

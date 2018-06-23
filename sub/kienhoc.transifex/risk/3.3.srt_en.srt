@@ -1,0 +1,348 @@
+0
+00:00:05,110 --> 00:00:06,280
+Welcome back.
+https://youtu.be/DIB0riiRFY0
+1
+00:00:06,280 --> 00:00:11,990
+So, having talked about two securities, let me show you some data
+
+2
+00:00:11,990 --> 00:00:16,030
+which is kind of artificial but quite reflective.
+
+3
+00:00:16,030 --> 00:00:20,724
+So stare at the deck for a second.
+
+4
+00:00:20,724 --> 00:00:23,800
+While you&#39;re doing that, I&#39;m going to walk you through.
+
+5
+00:00:23,800 --> 00:00:30,095
+So on the left-hand top side, is a scatter plot but what&#39;s peculiar about it?
+
+6
+00:00:30,095 --> 00:00:35,760
+N in x axis, b on y axis, a on x axis, that&#39;s true about all of them.
+
+7
+00:00:35,760 --> 00:00:38,190
+What&#39;s peculiar about the left top?
+
+8
+00:00:38,190 --> 00:00:40,470
+All the dots are in a perfect straight line.
+
+9
+00:00:41,500 --> 00:00:45,800
+What&#39;s true about the right, extreme bottom part?
+
+10
+00:00:45,800 --> 00:00:49,550
+Same is true, except the relationship is negative.
+
+11
+00:00:49,550 --> 00:00:50,700
+Those are the two extremes.
+
+12
+00:00:52,540 --> 00:00:55,590
+What&#39;s happening along the other dimension?
+
+13
+00:00:55,590 --> 00:01:01,930
+If you go to the left bottom corner, that&#39;s negative 0.5.
+
+14
+00:01:01,930 --> 00:01:08,518
+Middle nothing happens, top 0.5.
+
+15
+00:01:08,518 --> 00:01:13,477
+So let me ask you a question and this is one of those things that
+
+16
+00:01:13,477 --> 00:01:18,290
+I do all the time, very rarely am I programmed in class.
+
+17
+00:01:18,290 --> 00:01:23,030
+But here this joke or this serious talk or whatever comes to mind.
+
+18
+00:01:23,030 --> 00:01:27,420
+If you stare at this first, let&#39;s talk about the serious stuff.
+
+19
+00:01:27,420 --> 00:01:30,430
+Then the question for you, and then we&#39;ll leave it off and come back to it.
+
+20
+00:01:31,740 --> 00:01:33,710
+First, quick.
+
+21
+00:01:34,890 --> 00:01:42,490
+There are two reasons that risk is there, broad reasons about types of risks.
+
+22
+00:01:42,490 --> 00:01:48,210
+One is market tends to be common to everything, and one is specific.
+
+23
+00:01:48,210 --> 00:01:50,600
+And remember, for simplicity we have only two securities.
+
+24
+00:01:51,810 --> 00:01:57,860
+So they&#39;ll be specific to A or B, or common to A or B, market.
+
+25
+00:01:57,860 --> 00:02:03,850
+Quick question, what is the reason of the correlation between the two?
+
+26
+00:02:03,850 --> 00:02:08,880
+Is it the specific risks or something that&#39;s common to both?
+
+27
+00:02:08,880 --> 00:02:10,421
+Answer is pretty obvious.
+
+28
+00:02:10,420 --> 00:02:17,445
+Correlations exist, covariances exist because of the fact that most of us,
+
+29
+00:02:17,445 --> 00:02:23,606
+most security, most projects are affected commonly by this notion
+
+30
+00:02:23,606 --> 00:02:29,440
+of macro market moments, which is becoming global now.
+
+31
+00:02:29,440 --> 00:02:33,880
+So as I said earlier I think at some point, in one of the sessions I talked
+
+32
+00:02:33,880 --> 00:02:38,590
+about something that wasn&#39;t a common risk has become.
+
+33
+00:02:38,590 --> 00:02:40,750
+Similar technology&#39;s another one.
+
+34
+00:02:40,750 --> 00:02:47,370
+Heck, Internet has been there for a long time, much longer than we know.
+
+35
+00:02:47,370 --> 00:02:51,120
+But, it was not a very specific risk, I mean,
+
+36
+00:02:51,120 --> 00:02:54,220
+not a very common risk, now it&#39;s everywhere.
+
+37
+00:02:54,220 --> 00:02:59,010
+So, if something were to happen to the Internet, everything, I believe,
+
+38
+00:02:59,010 --> 00:03:04,650
+will come to a halt, except, just enjoying nature, that&#39;s the beauty.
+
+39
+00:03:04,650 --> 00:03:06,340
+[LAUGH] Anyway, so, let&#39;s step back.
+
+40
+00:03:06,340 --> 00:03:08,580
+Let me ask you the following question.
+
+41
+00:03:08,580 --> 00:03:10,540
+Okay, so everybody, hopefully,
+
+42
+00:03:10,540 --> 00:03:16,280
+agrees that it&#39;s not the specific risk that remains, when you combine securities,
+
+43
+00:03:16,280 --> 00:03:20,340
+but the common, and that&#39;s the source of the correlation.
+
+44
+00:03:20,340 --> 00:03:26,440
+How likely are the left top other bottom, right, top.
+
+45
+00:03:26,440 --> 00:03:28,240
+Almost zero probability.
+
+46
+00:03:28,240 --> 00:03:33,279
+It&#39;s a unlikely that Google will move perfectly with Microsoft, though
+
+47
+00:03:33,279 --> 00:03:38,980
+they are in similar industries, though they are much more dependent on Internet.
+
+48
+00:03:38,980 --> 00:03:43,499
+By the way, the business that Microsoft is getting into is becoming more and
+
+49
+00:03:43,499 --> 00:03:46,868
+more different than just producing Windows software.
+
+50
+00:03:46,868 --> 00:03:52,270
+Okay, anyway so those two extremes are out.
+
+51
+00:03:52,270 --> 00:03:53,790
+How likely is the middle part?
+
+52
+00:03:55,170 --> 00:03:58,172
+[SOUND] How likely, right?
+
+53
+00:03:58,172 --> 00:04:03,053
+Because two securities being completely independent of each other actually
+
+54
+00:04:03,053 --> 00:04:06,132
+in that environment, say Google Microsoft, or
+
+55
+00:04:06,132 --> 00:04:10,190
+Google Walmart maybe no chance that will be zero.
+
+56
+00:04:10,190 --> 00:04:12,890
+There has to be some element of commonality.
+
+57
+00:04:12,890 --> 00:04:14,870
+So let me go to the left pattern.
+
+58
+00:04:15,960 --> 00:04:20,850
+How likely is it that one will go up and the other will go down?
+
+59
+00:04:20,850 --> 00:04:21,870
+Quite unlikely.
+
+60
+00:04:21,870 --> 00:04:24,970
+Why?, because it&#39;s very rare, it can happen, but a stark,
+
+61
+00:04:24,970 --> 00:04:30,300
+on average, is anti cyclical, meaning it moves against the market.
+
+62
+00:04:30,300 --> 00:04:32,690
+Of course, everybody love it, why?
+
+63
+00:04:32,690 --> 00:04:35,850
+Because when everybody is doing well, it does poorly.
+
+64
+00:04:35,850 --> 00:04:38,538
+But when everybody is doing poorly, it&#39;s doing well, and
+
+65
+00:04:38,538 --> 00:04:40,000
+that&#39;s what you want, right?
+
+66
+00:04:40,000 --> 00:04:43,140
+Is the risk of loss percent, it&#39;s also called a friend in need.
+
+67
+00:04:44,460 --> 00:04:45,980
+There are lots of friends that I have.
+
+68
+00:04:45,980 --> 00:04:50,400
+But the real friends are ones who show up when I&#39;m not doing well,
+
+69
+00:04:50,400 --> 00:04:53,890
+when I&#39;m in trouble or something like that.
+
+70
+00:04:53,890 --> 00:04:56,910
+Anyway, let&#39;s go to the right top.
+
+71
+00:04:56,910 --> 00:05:04,140
+I would say not 0.5 exact, but this notion of a positive relationship is most likely.
+
+72
+00:05:05,560 --> 00:05:11,270
+And the reason again is, the market is common to most things,
+
+73
+00:05:11,270 --> 00:05:13,910
+okay, so does that give you a sense of what&#39;s happening.
+
+74
+00:05:13,910 --> 00:05:18,280
+So if everything was in a straight line somehow, and
+
+75
+00:05:18,280 --> 00:05:22,470
+on the positive left hand top, diversification won&#39;t work.
+
+76
+00:05:22,470 --> 00:05:27,890
+But because two randomly securities tend to be in the right craft,
+
+77
+00:05:27,890 --> 00:05:31,460
+the 0.5 not exact a 0.5 but a positive number, not 1,
+
+78
+00:05:31,460 --> 00:05:34,690
+but positive, diversification will work.
+
+79
+00:05:34,690 --> 00:05:39,080
+Of course it will work very well, for the middle part or even better for
+
+80
+00:05:39,080 --> 00:05:42,290
+the left, because things will tend to cancel each other.
+
+81
+00:05:42,290 --> 00:05:46,490
+Okay, now the trick question and now the fun part.
+
+82
+00:05:46,490 --> 00:05:48,624
+Which one of these graphs is love?
+
+83
+00:05:50,908 --> 00:05:55,907
+Really, I mean it, when you love somebody,
+
+84
+00:05:55,907 --> 00:05:59,730
+which one of these graphs is love?
+
+85
+00:06:00,770 --> 00:06:03,470
+And you&#39;ll see how finances occurred.
+
+86
+00:06:03,470 --> 00:06:04,244
+See you on a bit.
+

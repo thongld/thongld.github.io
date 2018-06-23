@@ -1,0 +1,516 @@
+1
+00:00:01,870 --> 00:00:04,680
+https://youtu.be/c9Se4IBVzAE
+The analysis of experimental data.
+
+2
+00:00:04,680 --> 00:00:11,930
+There are two basic methods used to
+analyze data collected in an experiment.
+
+3
+00:00:11,930 --> 00:00:15,240
+The first one is called the analysis of variance
+or ANOVA.
+
+4
+00:00:15,240 --> 00:00:17,780
+The second one is called regression.
+
+5
+00:00:17,780 --> 00:00:23,660
+Each of these techniques computes a test-statistic
+which can then be read off as a p-value.
+
+6
+00:00:23,660 --> 00:00:28,420
+You can think about the value as the level
+of confidence
+
+7
+00:00:28,420 --> 00:00:30,950
+we have in the result.
+
+8
+00:00:30,950 --> 00:00:36,949
+In this module-- and indeed, in this course--
+we will focus on the basic ideas of analyzing
+
+9
+00:00:36,949 --> 00:00:41,199
+experimental data
+and leave the actual numerical computations
+
+10
+00:00:41,199 --> 00:00:43,070
+to more advanced courses.
+
+11
+00:00:43,070 --> 00:00:47,350
+Again, our focus in this segment is to get
+the key ideas
+
+12
+00:00:47,350 --> 00:00:51,489
+and think through the intuition of the analysis
+of experimental data.
+
+13
+00:00:51,489 --> 00:00:56,660
+But we will not get into actual number work
+in this module.
+
+14
+00:00:56,660 --> 00:01:01,339
+Let's start off by a simple experiment in
+which you have two conditions.
+
+15
+00:01:01,339 --> 00:01:06,060
+Let's go back to the example we used earlier,
+a price that is expressed as an aggregate,
+
+16
+00:01:06,060 --> 00:01:12,230
+price and a price that is expressed as pennies
+a day.
+
+17
+00:01:12,230 --> 00:01:15,290
+When you collect data from a number of participants--
+let's
+
+18
+00:01:15,290 --> 00:01:20,570
+say in the aggregate condition-- that data
+might be distributed as this.
+
+19
+00:01:20,570 --> 00:01:27,410
+Might have some mean, x, and there would be
+some people who answer it more than x and
+
+20
+00:01:27,410 --> 00:01:30,780
+others that answer less than x.
+
+21
+00:01:30,780 --> 00:01:35,920
+Likewise, under the pennies a day condition
+you might have a different mean.
+
+22
+00:01:35,920 --> 00:01:37,410
+Let's call it y.
+
+23
+00:01:37,410 --> 00:01:39,960
+You have some people that answer it more than
+y,
+
+24
+00:01:39,960 --> 00:01:42,590
+and some that answer it less than y.
+
+25
+00:01:42,590 --> 00:01:50,670
+The question that you want to ask is, is y
+the likelihood of purchase significantly greater
+
+26
+00:01:50,670 --> 00:01:56,710
+than x, the likelihood of purchase under the
+aggregate condition.
+
+27
+00:01:56,710 --> 00:01:58,240
+Are these means different?
+
+28
+00:01:58,240 --> 00:02:01,590
+If you put these two distributions on the
+same scale,
+
+29
+00:02:01,590 --> 00:02:03,880
+you might end up seeing something like this.
+
+30
+00:02:03,880 --> 00:02:05,960
+This is y.
+
+31
+00:02:05,960 --> 00:02:07,430
+This is x.
+
+32
+00:02:07,430 --> 00:02:14,370
+The question is, is so why statistically larger
+than x?
+
+33
+00:02:14,370 --> 00:02:20,299
+In any experimental analysis, the null assumption--
+or what we would call a default assumption--
+
+34
+00:02:20,299 --> 00:02:22,680
+is
+that there is no difference between x and
+
+35
+00:02:22,680 --> 00:02:23,680
+y.
+
+36
+00:02:23,680 --> 00:02:29,340
+That in fact, both of these distributions
+are drawn from the same a normal distribution
+
+37
+00:02:29,340 --> 00:02:34,250
+and have the same basic mean.
+
+38
+00:02:34,250 --> 00:02:38,599
+We refer to this null assumption as the null
+hypothesis.
+
+39
+00:02:38,599 --> 00:02:41,010
+That's the hypothesis that we're going to
+try and test.
+
+40
+00:02:41,010 --> 00:02:46,139
+The t-score, which is an index off how different
+these means are,
+
+41
+00:02:46,139 --> 00:02:50,459
+is computed by roughly looking at a ratio
+between the difference in means
+
+42
+00:02:50,459 --> 00:02:54,760
+and the variability.
+
+43
+00:02:54,760 --> 00:02:57,480
+Let's imagine that there is no variability.
+
+44
+00:02:57,480 --> 00:03:02,480
+Let's imagine for a moment that everybody
+who sees the pennies a day frame, responds
+
+45
+00:03:02,480 --> 00:03:06,689
+with the high value for willingness to purchase.
+
+46
+00:03:06,689 --> 00:03:13,520
+Using the scale that goes from one to 10,
+everybody says eight under a pennies a day
+
+47
+00:03:13,520 --> 00:03:14,909
+frame.
+
+48
+00:03:14,909 --> 00:03:18,889
+And everybody says four under the aggregate
+frame.
+
+49
+00:03:18,889 --> 00:03:25,859
+In this case, there is no variability at all,
+and we are pretty confident that the average
+
+50
+00:03:25,859 --> 00:03:30,409
+willingness to pay
+is greater because eight is greater than four.
+
+51
+00:03:30,409 --> 00:03:32,680
+And there is absolutely no variation.
+
+52
+00:03:32,680 --> 00:03:35,689
+However in the real world, there will be variation.
+
+53
+00:03:35,689 --> 00:03:38,879
+And the real world will look something like
+this.
+
+54
+00:03:38,879 --> 00:03:42,700
+As the variability increases, our confidence
+that y
+
+55
+00:03:42,700 --> 00:03:47,620
+is greater than x actually decreases because
+this overlapping
+
+56
+00:03:47,620 --> 00:03:51,099
+area between the two distributions increases.
+
+57
+00:03:51,099 --> 00:03:57,110
+Somebody who answered this level, could come
+either from this distribution here
+
+58
+00:03:57,110 --> 00:04:00,380
+or from that distribution.
+
+59
+00:04:00,380 --> 00:04:03,290
+The t-test of differences and means provides
+the likelihood
+
+60
+00:04:03,290 --> 00:04:08,989
+that the null is false, or that the null hypothesis
+is rejected.
+
+61
+00:04:08,989 --> 00:04:14,829
+As the t-score goes up, it is more likely
+that the null-- which is that both of these
+
+62
+00:04:14,829 --> 00:04:18,979
+x's and y's are the same--
+is rejected.
+
+63
+00:04:18,979 --> 00:04:23,620
+And that's what we try and do in the analysis
+of experiments.
+
+64
+00:04:23,620 --> 00:04:28,210
+Let's think about a world where we move away
+from two conditions to an experiment that
+
+65
+00:04:28,210 --> 00:04:30,050
+has many conditions.
+
+66
+00:04:30,050 --> 00:04:35,259
+These data are analyzed by a process called
+ANOVA.
+
+67
+00:04:35,259 --> 00:04:38,490
+ANOVA stands for the analysis of variance.
+
+68
+00:04:38,490 --> 00:04:44,740
+Again, the null is that the means of all of
+the groups are equal.
+
+69
+00:04:44,740 --> 00:04:48,450
+The alternative hypothesis is that not all
+of these means are equal.
+
+70
+00:04:48,450 --> 00:04:53,690
+And in fact, if you find no support for the
+null-- if you reject the null--
+
+71
+00:04:53,690 --> 00:04:57,560
+you come to the conclusion that the means
+across your conditions
+
+72
+00:04:57,560 --> 00:04:59,389
+are different from each other.
+
+73
+00:04:59,389 --> 00:05:03,699
+However, let's keep in mind that this analysis
+doesn't say how
+
+74
+00:05:03,699 --> 00:05:05,280
+or which means are different.
+
+75
+00:05:05,280 --> 00:05:11,400
+You could of course test that by doing follow
+up multiple comparisons.
+
+76
+00:05:11,400 --> 00:05:15,229
+Or what are sometimes called, contrast effects.
+
+77
+00:05:15,229 --> 00:05:25,370
+So once again, ANOVA will tell you that the
+overall pattern is different,
+
+78
+00:05:25,370 --> 00:05:29,310
+but it doesn't tell you how or in which way.
+
+79
+00:05:29,310 --> 00:05:33,159
+But that can easily be tested by multiple
+comparisons.
+
+80
+00:05:33,159 --> 00:05:36,409
+What's the basic idea of an ANOVA?
+
+81
+00:05:36,409 --> 00:05:39,270
+ANOVA looks at two sources of variation in
+the data
+
+82
+00:05:39,270 --> 00:05:44,580
+and compares their relative size.
+
+83
+00:05:44,580 --> 00:05:48,770
+First it looks at between condition variations.
+
+84
+00:05:48,770 --> 00:05:52,099
+Let's go back to the example of pennies a
+day.
+
+85
+00:05:52,099 --> 00:05:55,759
+And imagine that you are collecting-- on a
+10 point scale--
+
+86
+00:05:55,759 --> 00:06:01,060
+the willingness to purchase as a function
+of whether the cause is
+
+87
+00:06:01,060 --> 00:06:04,889
+pennies a day, or the price is framed as an
+aggregate condition.
+
+88
+00:06:04,889 --> 00:06:08,860
+So this variable, ANOVA is going to look at
+the difference
+
+89
+00:06:08,860 --> 00:06:14,610
+between the mean of the condition and the
+overall mean.
+
+90
+00:06:14,610 --> 00:06:18,460
+It also looks at a within group variation.
+
+91
+00:06:18,460 --> 00:06:23,409
+It looks at the same variable, willingness
+to pay,
+
+92
+00:06:23,409 --> 00:06:27,909
+and it will look at the difference between
+that value of each participant
+
+93
+00:06:27,909 --> 00:06:34,070
+in a given group and the mean of it's group.
+
+94
+00:06:34,070 --> 00:06:41,289
+So let's look at this in the form of a simple
+diagram.
+
+95
+00:06:41,289 --> 00:06:44,690
+Let's look at a case where you have three
+conditions.
+
+96
+00:06:44,690 --> 00:06:54,070
+We call them condition A, B, C. The average
+of A is xA.
+
+97
+00:06:54,070 --> 00:06:57,139
+The average of b is xB.
+
+98
+00:06:57,139 --> 00:07:04,250
+The average and C is xC, and the overall average
+is x.
+
+99
+00:07:04,250 --> 00:07:18,229
+Between condition variation compares xA with
+x, xB, with x, and xC with x.
+
+100
+00:07:18,229 --> 00:07:21,389
+Within group variation-- or within condition
+variation--
+
+101
+00:07:21,389 --> 00:07:30,520
+we'll compare xA with each of the x's in group
+A.
+
+102
+00:07:30,520 --> 00:07:35,129
+The overall f statistic is a ratio of the
+between group variation,
+
+103
+00:07:35,129 --> 00:07:38,170
+divided by the within group variation.
+
+104
+00:07:38,170 --> 00:07:46,250
+The larger the f, it would essentially say
+that the variation across-- or between the
+
+105
+00:07:46,250 --> 00:07:50,080
+groups--
+is greater than the variation within each
+
+106
+00:07:50,080 --> 00:07:51,740
+group or each condition.
+
+107
+00:07:51,740 --> 00:07:57,610
+Therefore the larger the f, the greater is
+the evidence against the null
+
+108
+00:07:57,610 --> 00:08:03,300
+that all of these groups-- all of these conditions--
+are drawn from the same average value.
+
+109
+00:08:03,300 --> 00:08:08,520
+Therefore the greater the f, the more likely
+are you to reject the null
+
+110
+00:08:08,520 --> 00:08:14,980
+and prove that in fact, there is a difference
+in means across your experimental groups.
+

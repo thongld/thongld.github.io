@@ -1,0 +1,357 @@
+0
+00:00:05,028 --> 00:00:06,050
+Chào các bạn.
+Tôi hi vọng các bạn đã làm bài.
+
+2
+00:00:10,270 --> 00:00:16,620
+Tôi hi vọng rằng các số liệu tôi gửi sẽ làm bạn hứng thú.
+
+3
+00:00:16,620 --> 00:00:21,050
+Nếu không thì tôi hi vọng các bạn có theo dõi và 
+
+4
+00:00:21,050 --> 00:00:23,040
+dành thời gian để luyện tập.
+
+5
+00:00:23,040 --> 00:00:27,420
+Nhân tiện, bài luyện tập này sẽ giúp các bạn nhiều trong các bài tập về nhà.
+
+6
+00:00:27,420 --> 00:00:30,070
+Ý tôi là lượng bài tập này.
+
+7
+00:00:30,070 --> 00:00:33,380
+Hôm nay chúng ta sẽ học qua phần Hồi quy.
+
+8
+00:00:33,380 --> 00:00:39,160
+Hồi quy cũng sẽ được sử dụng để đánh giá mối quan hệ giữa mức an toàn 1 và 2.
+
+9
+00:00:39,160 --> 00:00:43,400
+Tôi sẽ viết phương trình ra một lần nữa.
+
+10
+00:00:43,400 --> 00:00:47,751
+  Phương trình như sau: R1i = Alpha I
+
+11
+00:00:47,751 --> 00:00:53,850
+   cộng với Beta nhân với R2i cộng Epsilon.
+
+12
+00:00:53,850 --> 00:00:56,546
+Số beta có kí hiệu 1 và 2.
+
+13
+00:00:58,540 --> 00:01:00,720
+Xong phần kí hiệu.
+
+14
+00:01:00,720 --> 00:01:08,246
+Giờ chúng ta sẽ viết phương trình cho phần này.
+
+15
+00:01:08,246 --> 00:01:12,116
+Riêng cái này thì tôi cũng sẽ chỉ cho các bạn cách tính toán.
+
+16
+00:01:12,116 --> 00:01:16,535
+Đây là hiệp phương sai độ lệch chuẩn mà tôi đã nói với các bạn.
+
+17
+00:01:16,535 --> 00:01:18,970
+Có nhiều cách cho các bạn làm.
+
+18
+00:01:18,970 --> 00:01:24,250
+Các bạn có thể phân tích gói dữ liệu, hoặc bám theo những công thức cơ bản.
+
+19
+00:01:24,250 --> 00:01:26,200
+Chúng ta sẽ làm cách đơn giản trước, áp dụng công thức để tính.
+
+20
+00:01:26,200 --> 00:01:27,480
+Chúng ta sẽ dùng công thức gì?
+
+21
+00:01:27,480 --> 00:01:30,190
+Cũng tương tự như các bài trên.
+
+22
+00:01:30,190 --> 00:01:31,470
+Chúng ta có biết số này không?
+
+23
+00:01:31,470 --> 00:01:31,970
+Có
+
+24
+00:01:36,209 --> 00:01:38,540
+Chúng ta sẽ chia nó cho bao nhiêu?
+
+25
+00:01:38,540 --> 00:01:43,120
+Chúng ta sẽ chia nó cho bình phương của phương sai.
+
+26
+00:01:45,680 --> 00:01:47,470
+Chúng ta có biết phương sai đó không?
+
+27
+00:01:47,470 --> 00:01:51,179
+Có, nó bằng 0.0102.
+
+28
+00:01:58,530 --> 00:02:07,047
+Thêm cả số Beta 1 và 2 nữa, nếu đúng thì kết quả sẽ là
+
+29
+00:02:07,047 --> 00:02:10,270
+0.069
+
+30
+00:02:10,270 --> 00:02:12,740
+Khi quan sát số Beta này, các bạn nghĩ đến cái gì?
+
+31
+00:02:12,740 --> 00:02:15,850
+Nó không như hệ số tương quan đúng không?
+
+32
+00:02:15,850 --> 00:02:18,890
+Bởi vì hệ số tương quan đánh giá độ lớn.
+
+33
+00:02:18,890 --> 00:02:22,630
+Liệu hệ số tương quan có nhỏ hơn 1 không?
+
+34
+00:02:22,630 --> 00:02:24,138
+Có.
+0.062.
+
+35
+00:02:24,138 --> 00:02:28,340
+Các bạn có nhận xét gì về mối liên hệ này?
+
+36
+00:02:28,340 --> 00:02:32,050
+Nó là số dương, nhưng không lớn lắm.
+
+37
+00:02:32,050 --> 00:02:36,950
+Nó gần bằng không và cách xa số 1, đúng không?
+
+38
+00:02:36,950 --> 00:02:39,840
+Hệ số Beta 1,2 cho các bạn biết gì?
+
+39
+00:02:39,840 --> 00:02:43,670
+Theo ý tôi nó không cho các bạn biết về mối liên hệ giữa hai số.
+
+40
+00:02:43,670 --> 00:02:49,848
+Nó cho các bạn biết liệu hệ số an toàn 2 thay dổi 1% thì,
+
+41
+00:02:49,848 --> 00:02:55,850
+chúng ta sẽ thống nhất gọi nó là 0x,
+vậy thì hệ số an toàn 1 thay đổi như thế nào?
+
+42
+00:02:55,850 --> 00:03:02,820
+Rõ ràng không phải 1%, mà là 0.069.
+
+43
+00:03:02,820 --> 00:03:03,510
+Được chứ?
+
+44
+00:03:03,510 --> 00:03:08,370
+Vậy thì số Beta cho biết hệ số an toàn thay đổi như thế nào, đúng không?
+
+45
+00:03:08,370 --> 00:03:12,450
+Câu hỏi khó của tôi dành cho các bạn.
+
+46
+00:03:13,960 --> 00:03:16,020
+Các bạn có thể tính được hệ số Beta 2,1i không?
+
+47
+00:03:17,330 --> 00:03:19,320
+Câu trả lời là gì thì các bạn hãy tính đi
+
+48
+00:03:20,370 --> 00:03:24,080
+Liệu nó có bằng số này không?
+
+49
+00:03:24,080 --> 00:03:29,910
+Câu trả lời như sau: tử số sẽ giống, nhưng mẫu số thì không.
+
+50
+00:03:29,910 --> 00:03:31,346
+Vậy mẫu số là gì?
+
+51
+00:03:31,346 --> 00:03:38,730
+ Sigma 1 bình phương, đúng không?
+
+52
+00:03:38,730 --> 00:03:40,780
+Vậy nên số Beta sẽ thay đổi.
+
+53
+00:03:40,780 --> 00:03:46,330
+Vậy thì hệ số Beta sẽ phụ thuộc vào vị trí của số mà chúng ta đang xét.
+
+54
+00:03:46,330 --> 00:03:48,960
+Đó là cái đầu tiên mà tôi muốn các bạn ghi nhớ.
+
+55
+00:03:48,960 --> 00:03:52,400
+Cái thứ hai tôi muốn các bạn nhớ kĩ ở bài học sau là
+
+56
+00:03:53,940 --> 00:03:59,120
+các bạn đã nắm rõ cách làm các câu 1-2, 2-1, 1-3, 3-1.
+
+57
+00:03:59,120 --> 00:04:05,230
+và chúng ta sẽ xem thử coi số nào đổi và số nào thì không.
+
+58
+00:04:05,230 --> 00:04:08,540
+Nhưng nhớ rằng chỉ làm trong giới hạn cho phép thôi nhé.
+
+59
+00:04:08,540 --> 00:04:11,270
+Tất nhiên là các bạn thích làm gì thì làm.
+
+60
+00:04:11,270 --> 00:04:13,210
+Nhưng nhớ làm trong khoảng từ hệ số an toàn 1 đến hệ số an toàn 2 thôi.
+
+61
+00:04:13,210 --> 00:04:16,580
+Sau đó chúng ta sẽ học tiếp phần danh mục đầu tư thị trường.
+
+62
+00:04:16,579 --> 00:04:21,556
+Trong phần này, tôi chủ yếu tập trung vào việc phân tích ứng dụng của dữ liệu.
+
+63
+00:04:21,555 --> 00:04:22,830
+ 
+
+64
+00:04:22,830 --> 00:04:24,960
+Tôi sẽ cho các bạn thêm một số câu hỏi khó.
+
+65
+00:04:24,960 --> 00:04:26,580
+Tôi sẽ thêm yếu tố thị trường vào.
+
+66
+00:04:26,580 --> 00:04:29,330
+Các bạn sẽ thấy lợi ích của nó và tại sao nó lại quan trọng đến vậy.
+
+67
+00:04:31,020 --> 00:04:36,380
+Trước khi kết thúc bài học, hàm số mà các bạn sử dụng để tính toán dữ liệu
+
+68
+00:04:36,380 --> 00:04:40,600
+nó là hàm hồi quy, các bạn có thể dùng nó để tính toán theo cách các bạn muốn.
+
+69
+00:04:40,600 --> 00:04:42,570
+Hàm này có hệ số góc.
+
+70
+00:04:43,940 --> 00:04:47,620
+Và khi các bạn tính các hiệp phương sai hay hệ số tương quan hay
+
+71
+00:04:47,620 --> 00:04:52,040
+hệ số góc thì các bạn cần khai báo bao nhiêu biến?
+
+72
+00:04:53,310 --> 00:04:57,960
+Cho dù tính độ lệch chuẩn hay giá trị trung bình hay phương sai thì
+các bạn chỉ cần khai báo một lần thôi.
+
+73
+00:04:57,960 --> 00:04:59,400
+Nhớ kĩ, từ ô C2 đến ô C61.
+
+74
+00:05:00,710 --> 00:05:03,900
+Nhưng dối với các hiệp phương sai, các hệ số tương quan và các số beta,
+
+75
+00:05:03,900 --> 00:05:06,510
+các bạn cần biến nào để mô tả hàm đó?
+
+76
+00:05:06,510 --> 00:05:10,110
+Các bạn cần khai báo 2 biến khác nhau.
+
+77
+00:05:10,110 --> 00:05:13,106
+Biến Y và biến X.
+Và vị trí của chúng như thế nào?
+
+78
+00:05:13,106 --> 00:05:18,450
+Một biến ở cột B, biến còn lại ở cột C.
+
+79
+00:05:18,450 --> 00:05:22,850
+hoặc là trong trường hợp này thì 2 biến sẽ ở cột C và D.
+
+80
+00:05:22,850 --> 00:05:27,110
+Các cột này sẽ thay đổi, nhưng nhìn chung là từ ô 2 đến ô 61.
+
+81
+00:05:27,110 --> 00:05:34,470
+Tôi khuyến khích các bạn thực hành thêm với lượng dữ liệu này,
+
+82
+00:05:34,470 --> 00:05:39,310
+Chúng ta sẽ quay lại sau ít phút nữa và học tiếp phần cuối cùng.
+
+83
+00:05:39,310 --> 00:05:43,820
+tập trung vào mối liên hệ giữa
+
+84
+00:05:43,820 --> 00:05:48,450
+chủ yếu tập trung vào mối liên hệ giữa danh mục đầu tư thị trường và
+
+85
+00:05:48,450 --> 00:05:51,760
+một mức an toàn cụ thể, đồng thời giảm bớt việc tính toán.
+
+86
+00:05:51,760 --> 00:05:52,330
+Chúng ta sẽ chọn một số.
+
+87
+00:05:53,480 --> 00:05:55,070
+Đó là mức an toàn 1.
+
+88
+00:05:55,070 --> 00:05:55,883
+Hẹn gặp lại các bạn.
+

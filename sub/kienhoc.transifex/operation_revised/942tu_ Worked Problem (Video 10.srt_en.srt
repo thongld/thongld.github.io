@@ -1,0 +1,472 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/h-1Q-uuuQkQ
+
+1
+00:00:05,570 --> 00:00:08,210
+hello and welcome back to operations
+management
+
+2
+00:00:08,210 --> 00:00:12,838
+in our last session we talked about
+Little's law which is a very powerful
+
+3
+00:00:12,839 --> 00:00:16,050
+equation that shows the relationship
+between inventory
+
+4
+00:00:16,050 --> 00:00:19,620
+throughput rate and flow time in this
+session
+
+5
+00:00:19,619 --> 00:00:22,939
+we're going to take a very simple
+problem and work through it
+
+6
+00:00:22,940 --> 00:00:29,940
+using Little's law here we have a simple
+flow diagram
+
+7
+00:00:30,170 --> 00:00:33,640
+this is what's going on inside the
+process
+
+8
+00:00:33,640 --> 00:00:37,429
+of a delicatessen people walk into the
+deli
+
+9
+00:00:37,429 --> 00:00:40,530
+they wait on line they get served at the
+counter
+
+10
+00:00:40,530 --> 00:00:43,820
+and then they leave so you can see first
+of all
+
+11
+00:00:43,820 --> 00:00:47,340
+we have an arrow showing an input
+
+12
+00:00:47,340 --> 00:00:50,469
+into the process and we have people
+coming
+
+13
+00:00:50,469 --> 00:00:53,670
+into the deli at a rate of 30 per hour
+
+14
+00:00:53,670 --> 00:00:57,280
+then they wait on line on average
+
+15
+00:00:57,280 --> 00:01:01,079
+there are eight people waiting that's
+represented by the triangle
+
+16
+00:01:01,079 --> 00:01:06,359
+triangles represent buffers and buffers
+represent units that are waiting
+
+17
+00:01:06,359 --> 00:01:09,448
+following that we have
+
+18
+00:01:09,448 --> 00:01:13,978
+a rectangle and that's the activity of
+somebody being served at the deli
+
+19
+00:01:13,978 --> 00:01:14,650
+counter
+
+20
+00:01:14,650 --> 00:01:19,500
+and on average that takes five minutes
+so we bring it all together
+
+21
+00:01:19,500 --> 00:01:23,188
+we have on average 30 people per hour
+coming into the deli
+
+22
+00:01:23,188 --> 00:01:26,688
+on average there are eight people
+waiting on line
+
+23
+00:01:26,688 --> 00:01:29,989
+and then as they get up to the deli
+counter
+
+24
+00:01:29,989 --> 00:01:33,449
+on average takes five minutes for them
+to get to the deli counter
+
+25
+00:01:33,450 --> 00:01:37,040
+and then leave remember I'm using averages
+here
+
+26
+00:01:37,040 --> 00:01:40,340
+that way we're not dealing with
+individual fluctuations
+
+27
+00:01:40,340 --> 00:01:43,780
+and we also going to look at this as a
+stable process
+
+28
+00:01:43,780 --> 00:01:48,000
+which means the input rate is going to
+equal our output rate
+
+29
+00:01:48,000 --> 00:01:51,280
+30 people coming in per hour 30 people
+
+30
+00:01:51,280 --> 00:01:55,478
+per hour are meeting to the first thing
+we want to double check is
+
+31
+00:01:55,478 --> 00:01:58,769
+what is our flow unit now
+
+32
+00:01:58,769 --> 00:02:04,590
+if you said people you'd be correct by a
+flow unit this is what we are studying
+
+33
+00:02:04,590 --> 00:02:09,180
+as part of the process and you can see
+that we're referring to people
+
+34
+00:02:09,180 --> 00:02:13,039
+in the buffer we're referring to people
+as part of the throughput rate
+
+35
+00:02:13,038 --> 00:02:16,659
+so
+
+36
+00:02:16,659 --> 00:02:21,239
+what can we do with Little's Law we're going
+to be able to answer these kinds of
+
+37
+00:02:21,239 --> 00:02:22,120
+questions
+
+38
+00:02:22,120 --> 00:02:27,020
+how long does the average person wait on
+line on average how many people are
+
+39
+00:02:27,020 --> 00:02:28,370
+being served at once
+
+40
+00:02:28,370 --> 00:02:32,989
+how many people are in the deli how long
+does it take to get through the whole
+
+41
+00:02:32,989 --> 00:02:34,200
+line and service
+
+42
+00:02:34,199 --> 00:02:37,829
+we'll be able to answer these questions
+with Little's law
+
+43
+00:02:37,830 --> 00:02:43,050
+so our first step is to take a look at
+what kind of information we have if you
+
+44
+00:02:43,050 --> 00:02:44,340
+recall from a problem
+
+45
+00:02:44,340 --> 00:02:47,709
+we were given information at the waiting
+line that there were
+
+46
+00:02:47,709 --> 00:02:51,459
+eight people there we're also told that
+the throughput rate
+
+47
+00:02:51,459 --> 00:02:56,259
+is thirty people per hour at the
+activity of being served at the deli
+
+48
+00:02:56,259 --> 00:02:56,848
+counter
+
+49
+00:02:56,848 --> 00:03:01,229
+it takes five minutes on average we've
+got a problem here
+
+50
+00:03:01,229 --> 00:03:04,959
+because the throughput rate is in units
+per hour
+
+51
+00:03:04,959 --> 00:03:10,939
+but our flow time is in minute we have to make
+sure that our flow time our 
+
+52
+00:03:10,939 --> 00:03:11,699
+throughput rate
+
+53
+00:03:11,699 --> 00:03:16,060
+have the same time units they don't have
+the same time units
+
+54
+00:03:16,060 --> 00:03:19,939
+our equation will not work so what we're
+going to do is we're going to add
+
+55
+00:03:19,939 --> 00:03:20,939
+another column
+
+56
+00:03:20,939 --> 00:03:26,169
+and in this column instead of just
+having the throughput rate in units per
+
+57
+00:03:26,169 --> 00:03:29,949
+hour we're going to convert that over two
+units per minute
+
+58
+00:03:29,949 --> 00:03:35,500
+so 30 per hour is the equivalent of
+seeing a half a person per minute
+
+59
+00:03:35,500 --> 00:03:40,009
+so now we have all of units matching
+
+60
+00:03:40,009 --> 00:03:43,609
+we have people and we have time in
+minutes
+
+61
+00:03:43,610 --> 00:03:47,920
+so now we're going to use Little's law
+
+62
+00:03:47,919 --> 00:03:52,399
+we're going to use it in two different
+versions of the same equation
+
+63
+00:03:52,400 --> 00:03:55,539
+the way we first introduced it was I
+equals
+
+64
+00:03:55,539 --> 00:03:58,719
+R times T inventory equals
+
+65
+00:03:58,719 --> 00:04:03,009
+throughput rate times flow time we can
+use that
+
+66
+00:04:03,009 --> 00:04:06,298
+to calculate the inventory as long as we have
+a throughput
+
+67
+00:04:06,299 --> 00:04:10,709
+rate and we have a flow time we can
+figure out how many items are there
+
+68
+00:04:10,709 --> 00:04:15,250
+another way of using little's law is to
+calculate the flow time
+
+69
+00:04:15,250 --> 00:04:18,438
+if you already have inventory and
+the throughput rate
+
+70
+00:04:18,438 --> 00:04:21,779
+so here we have T equals I divided by
+
+71
+00:04:21,779 --> 00:04:24,978
+R when we look at our table now
+
+72
+00:04:24,978 --> 00:04:29,139
+we can see that we have I and we have have
+R
+
+73
+00:04:29,139 --> 00:04:32,350
+for the waiting line the buffer and we're
+going to calculate
+
+74
+00:04:32,350 --> 00:04:36,840
+T so we're going to use the equation I
+divided by R
+
+75
+00:04:36,839 --> 00:04:41,409
+for the activity of being served we had
+the throughput rate
+
+76
+00:04:41,410 --> 00:04:45,439
+and we had the flow time so we're going to use
+the equation in the
+
+77
+00:04:45,439 --> 00:04:49,389
+form of R times T to calculate the
+inventory
+
+78
+00:04:49,389 --> 00:04:54,150
+so let's see how that comes out
+
+79
+00:04:54,149 --> 00:04:57,189
+so for the inventory being
+
+80
+00:04:57,189 --> 00:05:00,759
+8 and our throughput rate being .5 we
+ended up
+
+81
+00:05:00,759 --> 00:05:04,759
+realizing that flow time is 16 minutes
+
+82
+00:05:04,759 --> 00:05:09,050
+for the activity of being served the
+inventory is two-and-a-half
+
+83
+00:05:09,050 --> 00:05:12,620
+then we can total everything up on
+average there's
+
+84
+00:05:12,620 --> 00:05:18,500
+ten-and-a-half people in the deli and on
+average it's taking 21 minutes to get
+
+85
+00:05:18,500 --> 00:05:19,779
+through the whole line
+
+86
+00:05:19,779 --> 00:05:24,029
+and being served so getting back to
+original questions
+
+87
+00:05:24,029 --> 00:05:28,349
+now we have those answers how long on
+average does the person wait on line
+
+88
+00:05:28,350 --> 00:05:32,580
+16 minutes how many people are being
+served at once
+
+89
+00:05:32,579 --> 00:05:36,439
+two-and-a-half on average how many
+people are in the deli
+
+90
+00:05:36,439 --> 00:05:39,439
+ten-and-a-half and how long does it take
+to get through it
+
+91
+00:05:39,439 --> 00:05:44,279
+21 minutes don't be afraid when you see
+half people or
+
+92
+00:05:44,279 --> 00:05:47,489
+quarter of people or things like that in your
+answers remember
+
+93
+00:05:47,490 --> 00:05:52,470
+we're working with averages and averages
+means you're not going to get whole
+
+94
+00:05:52,470 --> 00:05:56,280
+numbers all the time
+
+95
+00:05:56,279 --> 00:06:00,750
+so you can see the power of little's law and
+even with this simple problem you can
+
+96
+00:06:00,750 --> 00:06:04,439
+see how this could relate to more
+complicated problems
+
+97
+00:06:04,439 --> 00:06:08,129
+I'll be going through more complicated
+problems and different ways of using the
+
+98
+00:06:08,129 --> 00:06:09,879
+little's law in our next session
+
+99
+00:06:09,879 --> 00:06:10,430
+I'll see you then
+

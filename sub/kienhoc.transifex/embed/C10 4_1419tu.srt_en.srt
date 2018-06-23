@@ -1,0 +1,712 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/hT0tHMp3m5k
+
+1
+00:00:00,000 --> 00:00:00,420
+
+2
+00:00:00,420 --> 00:00:02,211
+DR. RAMESH YERRABALLI:
+So let's take a look
+
+3
+00:00:02,211 --> 00:00:07,110
+at how we can transition from
+a state transition graph,
+
+4
+00:00:07,110 --> 00:00:20,540
+or do the translation rather, from
+a state transition graph to code.
+
+5
+00:00:20,540 --> 00:00:24,540
+Specifically, we are going
+to capture the structure
+
+6
+00:00:24,540 --> 00:00:29,800
+of the solution in the form of code.
+
+7
+00:00:29,800 --> 00:00:34,840
+And we call it in code, we
+call it a data structure.
+
+8
+00:00:34,840 --> 00:00:39,280
+The structure on our
+solution or FSM is captured
+
+9
+00:00:39,280 --> 00:00:41,410
+in the form of a data structure.
+
+10
+00:00:41,410 --> 00:00:43,680
+So let's see how that's done.
+
+11
+00:00:43,680 --> 00:00:48,850
+First thing I'm going to do is,
+I will make note of the fact
+
+12
+00:00:48,850 --> 00:00:54,730
+that I have this solution,
+which has two states.
+
+13
+00:00:54,730 --> 00:00:55,800
+There are two inputs.
+
+14
+00:00:55,800 --> 00:00:59,010
+The green input is a
+0, red input is a 1.
+
+15
+00:00:59,010 --> 00:01:03,370
+It produces two different
+outputs-- a 0 and a 1,
+
+16
+00:01:03,370 --> 00:01:10,520
+which are colored here
+as magenta and cyan.
+
+17
+00:01:10,520 --> 00:01:13,260
+First let's describe our state.
+
+18
+00:01:13,260 --> 00:01:20,040
+A state for us-- so I'm going to say
+struct state-- a state for us then,
+
+19
+00:01:20,040 --> 00:01:22,760
+is going to have these attributes.
+
+20
+00:01:22,760 --> 00:01:27,390
+The first attribute is
+going to be an unsigned.
+
+21
+00:01:27,390 --> 00:01:29,500
+Every state has an output.
+
+22
+00:01:29,500 --> 00:01:35,159
+So I'm going to call that
+an unsigned char out,
+
+23
+00:01:35,159 --> 00:01:37,700
+because there's a one-to-one
+correspondence between the state
+
+24
+00:01:37,700 --> 00:01:39,220
+and output.
+
+25
+00:01:39,220 --> 00:01:44,520
+The second field of interest to
+us-- so states don't have inputs.
+
+26
+00:01:44,520 --> 00:01:46,220
+States react to inputs.
+
+27
+00:01:46,220 --> 00:01:49,380
+So we'll get to the
+inputs in just a second.
+
+28
+00:01:49,380 --> 00:01:52,240
+One of the things we're
+going to do in our problem
+
+29
+00:01:52,240 --> 00:01:55,940
+is, because we are reading--
+and so let's go back
+
+30
+00:01:55,940 --> 00:01:58,090
+to the system description.
+
+31
+00:01:58,090 --> 00:02:01,880
+Because we are reading inputs
+and we're producing outputs,
+
+32
+00:02:01,880 --> 00:02:10,039
+and the inputs are coming as a sequence
+if you will, of 0, 1, 1, 0, 0, 0, 1, 1,
+
+33
+00:02:10,039 --> 00:02:13,980
+and so on, what we
+are going to do is, we
+
+34
+00:02:13,980 --> 00:02:19,370
+will specified that
+time delay between bits.
+
+35
+00:02:19,370 --> 00:02:23,940
+We will make sure that when we
+read these inputs, because they're
+
+36
+00:02:23,940 --> 00:02:28,990
+going to be coming from a switch that
+I press, then I do the implementation.
+
+37
+00:02:28,990 --> 00:02:32,730
+I expect that the time
+delay between reading inputs
+
+38
+00:02:32,730 --> 00:02:41,820
+is going to be some pre-specified
+value-- let's say, half a second or 0.1
+
+39
+00:02:41,820 --> 00:02:42,320
+seconds.
+
+40
+00:02:42,320 --> 00:02:43,860
+It doesn't matter.
+
+41
+00:02:43,860 --> 00:02:47,920
+We will have some wait
+between reading inputs.
+
+42
+00:02:47,920 --> 00:02:51,400
+And we'll see why that
+wait is going to be used.
+
+43
+00:02:51,400 --> 00:02:56,780
+So for now, I'm going to specify
+another attribute for each state, which
+
+44
+00:02:56,780 --> 00:03:00,540
+means when I'm in any given state,
+I'm going to wait for that long.
+
+45
+00:03:00,540 --> 00:03:09,310
+And I'm going to call this an unsigned
+long wait We'll see the use of it
+
+46
+00:03:09,310 --> 00:03:12,755
+when we get to our
+code that we complete.
+
+47
+00:03:12,755 --> 00:03:18,680
+
+48
+00:03:18,680 --> 00:03:23,040
+The third field of interest--
+attribute of interest-- is important.
+
+49
+00:03:23,040 --> 00:03:27,050
+And the third attribute of
+interest is what is my next state?
+
+50
+00:03:27,050 --> 00:03:31,420
+For every state, there's a next state.
+
+51
+00:03:31,420 --> 00:03:35,630
+That is, it's possible that
+on an input of 0, I stay here.
+
+52
+00:03:35,630 --> 00:03:37,520
+On an input of 1, I go there.
+
+53
+00:03:37,520 --> 00:03:41,460
+How many possible next states
+does this state even have?
+
+54
+00:03:41,460 --> 00:03:45,420
+Well, it depends on how many
+inputs it has to process.
+
+55
+00:03:45,420 --> 00:03:51,120
+So because there are two inputs I have
+to process, that is a possibility of 0.
+
+56
+00:03:51,120 --> 00:03:52,990
+On an input of 0, I stay here.
+
+57
+00:03:52,990 --> 00:03:54,330
+On an input of 1, I go there.
+
+58
+00:03:54,330 --> 00:03:58,080
+So this array here is telling,
+what are all the next states
+
+59
+00:03:58,080 --> 00:04:00,920
+I can reach from this particular state?
+
+60
+00:04:00,920 --> 00:04:05,030
+So it's going to be an
+array of two next states.
+
+61
+00:04:05,030 --> 00:04:09,460
+And this then is going
+to be a unsigned char.
+
+62
+00:04:09,460 --> 00:04:14,630
+
+63
+00:04:14,630 --> 00:04:20,589
+I have an array of next states,
+which I'm calling unsigned char.
+
+64
+00:04:20,589 --> 00:04:23,800
+And the idea will be that
+what I will store here
+
+65
+00:04:23,800 --> 00:04:26,230
+is I'm going to might
+write a comment here.
+
+66
+00:04:26,230 --> 00:04:34,640
+This will be the index of the state.
+
+67
+00:04:34,640 --> 00:04:40,310
+In other words, if I want to
+say that on an input of zero,
+
+68
+00:04:40,310 --> 00:04:46,540
+I go to the even state, even state
+is going to be given an index
+
+69
+00:04:46,540 --> 00:04:48,700
+and odd is going to be given an index.
+
+70
+00:04:48,700 --> 00:04:53,670
+The way I do that is,
+before I do that is,
+
+71
+00:04:53,670 --> 00:05:02,340
+I set define Even to be an index of 0.
+
+72
+00:05:02,340 --> 00:05:10,920
+And I define Odd to be an index of 1.
+
+73
+00:05:10,920 --> 00:05:13,640
+So I'm numbering the states.
+
+74
+00:05:13,640 --> 00:05:20,610
+Because there only two states, I'm going
+to call this a 0 state and a 1 state.
+
+75
+00:05:20,610 --> 00:05:31,160
+And like we did before, I'm
+going to define a typedef struct
+
+76
+00:05:31,160 --> 00:05:35,350
+state to be an Stype.
+
+77
+00:05:35,350 --> 00:05:40,070
+
+78
+00:05:40,070 --> 00:05:45,800
+I've captured the structure, but I
+also have to capture the content.
+
+79
+00:05:45,800 --> 00:05:49,640
+My continuation of this,
+I'm going to write it here.
+
+80
+00:05:49,640 --> 00:05:52,390
+
+81
+00:05:52,390 --> 00:05:57,700
+I have an array called FSM of size 2.
+
+82
+00:05:57,700 --> 00:06:00,740
+That's because there are
+two states in my system.
+
+83
+00:06:00,740 --> 00:06:04,700
+And this two states, I'm going
+to populate the two states, which
+
+84
+00:06:04,700 --> 00:06:09,850
+in this case, this is how I
+declare and initialize an array.
+
+85
+00:06:09,850 --> 00:06:11,510
+Remember, we already know this.
+
+86
+00:06:11,510 --> 00:06:13,590
+So I put a curly braces.
+
+87
+00:06:13,590 --> 00:06:16,830
+The first element is
+going to be a structure.
+
+88
+00:06:16,830 --> 00:06:20,960
+The second element is also a structure.
+
+89
+00:06:20,960 --> 00:06:22,680
+And I close it.
+
+90
+00:06:22,680 --> 00:06:25,420
+So what is the first
+element of my array?
+
+91
+00:06:25,420 --> 00:06:27,710
+Well, each element is of type Stype.
+
+92
+00:06:27,710 --> 00:06:30,940
+And we know that the first
+element has three attributes.
+
+93
+00:06:30,940 --> 00:06:34,730
+The first attribute is the output.
+
+94
+00:06:34,730 --> 00:06:38,700
+And I know that in this case,
+I'm going to produce an output,
+
+95
+00:06:38,700 --> 00:06:42,460
+so this will be my state Even.
+
+96
+00:06:42,460 --> 00:06:44,080
+And this will be my state Odd.
+
+97
+00:06:44,080 --> 00:06:46,970
+So let's make that, and
+make a note of that.
+
+98
+00:06:46,970 --> 00:06:54,230
+This will be my state Even,
+and this will be my state Odd.
+
+99
+00:06:54,230 --> 00:07:00,590
+With respect to Even, the output
+I will produce is going to be a 0.
+
+100
+00:07:00,590 --> 00:07:06,550
+With respect to even,
+so the output is a 0.
+
+101
+00:07:06,550 --> 00:07:10,490
+And what I also know is, since
+we have a wait of certain time,
+
+102
+00:07:10,490 --> 00:07:13,650
+I'm just going to for
+now give a number here.
+
+103
+00:07:13,650 --> 00:07:16,950
+I'll put a number 100, and
+we'll how this gets used.
+
+104
+00:07:16,950 --> 00:07:21,120
+And my third attribute
+for my state is an array.
+
+105
+00:07:21,120 --> 00:07:26,130
+Remember, arrays are always
+initialized using curly braces.
+
+106
+00:07:26,130 --> 00:07:34,850
+What this is saying is, on
+an input of 0 I stay in Even.
+
+107
+00:07:34,850 --> 00:07:36,890
+So I'm going to write here.
+
+108
+00:07:36,890 --> 00:07:45,460
+I'm going to make a note,
+which is that I stay in Even.
+
+109
+00:07:45,460 --> 00:07:49,270
+And on an input of 1, I go to Odd.
+
+110
+00:07:49,270 --> 00:07:50,960
+So that's my Odd.
+
+111
+00:07:50,960 --> 00:07:53,540
+
+112
+00:07:53,540 --> 00:08:04,220
+Similarly for my second
+state, my output is a 1.
+
+113
+00:08:04,220 --> 00:08:07,430
+And the delay is also
+100, because I'm going
+
+114
+00:08:07,430 --> 00:08:11,840
+to use the same delay
+between state transitions.
+
+115
+00:08:11,840 --> 00:08:18,360
+And my array here is saying that
+on input of 0, I stay in Odd.
+
+116
+00:08:18,360 --> 00:08:20,480
+So I say Odd.
+
+117
+00:08:20,480 --> 00:08:25,210
+On input of 1, I go to Even.
+
+118
+00:08:25,210 --> 00:08:29,380
+This will initialize the
+array, and in fact, we
+
+119
+00:08:29,380 --> 00:08:31,850
+will look at how this looks
+in memory in just a second.
+
+120
+00:08:31,850 --> 00:08:35,210
+But first, let's also
+clarify something else, which
+
+121
+00:08:35,210 --> 00:08:49,040
+is that this array is indexed by so
+on a 0, it says that I stay here.
+
+122
+00:08:49,040 --> 00:08:55,950
+And on a 1, which is this
+value here, I go there.
+
+123
+00:08:55,950 --> 00:08:58,860
+
+124
+00:08:58,860 --> 00:09:04,010
+Let's now visualize this as
+it would appear in memory.
+
+125
+00:09:04,010 --> 00:09:05,660
+I'm going to do it right here.
+
+126
+00:09:05,660 --> 00:09:11,450
+I'm going to erase
+this spot here, and see
+
+127
+00:09:11,450 --> 00:09:19,450
+what gets created in
+memory-- what gets stored
+
+128
+00:09:19,450 --> 00:09:21,625
+in memory as a result
+of this declaration.
+
+129
+00:09:21,625 --> 00:09:32,070
+
+130
+00:09:32,070 --> 00:09:36,310
+This is my FSM of 0.
+
+131
+00:09:36,310 --> 00:09:45,070
+And this is my FSM 1, which by
+the way, this is my Even structure
+
+132
+00:09:45,070 --> 00:09:46,990
+and this is my Odd structure.
+
+133
+00:09:46,990 --> 00:10:00,150
+And what I see here is a
+value of 0 and a value of 100.
+
+134
+00:10:00,150 --> 00:10:01,670
+This is one character.
+
+135
+00:10:01,670 --> 00:10:06,160
+This is a long, so it's
+going to be four bytes.
+
+136
+00:10:06,160 --> 00:10:12,500
+And then I have an array of two
+locations, which are both char.
+
+137
+00:10:12,500 --> 00:10:17,110
+And the first one will
+have a value which is Even.
+
+138
+00:10:17,110 --> 00:10:19,210
+In this case, I'm going first write it.
+
+139
+00:10:19,210 --> 00:10:26,670
+I'm going to call this Even, which
+has been defined as a synonym for 0,
+
+140
+00:10:26,670 --> 00:10:35,740
+and an Odd, which is the synonym for 1.
+
+141
+00:10:35,740 --> 00:10:46,370
+And the second array then is
+going to have an output of 1,
+
+142
+00:10:46,370 --> 00:10:56,610
+and a delay of 100, and two
+elements here, which is Odd.
+
+143
+00:10:56,610 --> 00:11:01,510
+And in memory, that's going
+to be a number, which is 1.
+
+144
+00:11:01,510 --> 00:11:04,920
+And an Even, which is
+a number, which is 0.
+
+145
+00:11:04,920 --> 00:11:11,280
+And this is my next state array of 0.
+
+146
+00:11:11,280 --> 00:11:19,630
+This is next of 1 as
+a field within FSM 1.
+
+147
+00:11:19,630 --> 00:11:23,050
+And this is my out.
+
+148
+00:11:23,050 --> 00:11:25,740
+This is my wait.
+
+149
+00:11:25,740 --> 00:11:30,200
+Similarly, this is my out, wait.
+
+150
+00:11:30,200 --> 00:11:32,490
+And this is my next.
+
+151
+00:11:32,490 --> 00:11:35,450
+So these are all-- there's
+a dot, if you will.
+
+152
+00:11:35,450 --> 00:11:45,330
+If I want to access it, this
+next of 0, and this next of 1.
+
+153
+00:11:45,330 --> 00:11:53,160
+And this in fact, is my index here.
+
+154
+00:11:53,160 --> 00:11:55,780
+This is the green indexes.
+
+155
+00:11:55,780 --> 00:12:04,120
+And these are my red indexes, which
+tell me on what input that happens.

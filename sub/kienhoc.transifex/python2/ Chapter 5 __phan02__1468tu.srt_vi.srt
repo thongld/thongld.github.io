@@ -1,0 +1,784 @@
+179
+00:07:35,320 --> 00:07:37,150
+quangdutran 07/05 Thao reviewed
+Ta đánh vào chữ "done" và nó sẽ kết thúc.
+
+180
+00:07:37,150 --> 00:07:40,920
+Khi ta gõ "done",
+chương trình sẽ nhảy khỏi vòng lặp.
+
+181
+00:07:40,920 --> 00:07:43,540
+Và chương trình kết thúc.
+
+182
+00:07:43,540 --> 00:07:48,190
+Bàn chi tiết hơn chút,
+
+183
+00:07:48,190 --> 00:07:51,760
+lần đầu chạy, 
+nó thực hiện hàm raw_input.
+
+184
+00:07:51,760 --> 00:07:53,980
+Vì kết quả là đúng,
+các câu lệnh này sẽ chạy.
+
+185
+00:07:53,980 --> 00:07:57,409
+Và rồi ta đánh vào chữ "hello there".
+
+186
+00:07:57,409 --> 00:07:59,950
+Chương trình sẽ so sánh
+chữ ta vừa đánh với từ "done".
+
+187
+00:07:59,950 --> 00:08:03,680
+Chúng khác nhau nên nó bỏ qua phần này
+và chạy lệnh print.
+
+188
+00:08:03,680 --> 00:08:06,560
+Ta làm lại một lần nữa,
+ta đánh vào từ "finished".
+
+189
+00:08:06,560 --> 00:08:09,579
+Vẫn không phải là từ "done".
+
+190
+00:08:09,579 --> 00:08:11,620
+Biến line không có 
+giá trị "done".
+
+191
+00:08:11,620 --> 00:08:12,740
+Vậy ta in biến đó ra.
+
+192
+00:08:12,740 --> 00:08:14,390
+Ta chạy một lần nữa.
+
+193
+00:08:14,390 --> 00:08:16,460
+Nhưng lần này thì đúng.
+
+194
+00:08:16,460 --> 00:08:18,850
+Câu lệnh break
+được thực thi
+
+195
+00:08:18,850 --> 00:08:21,190
+và chương trình thoát khỏi vòng lặp.
+
+196
+00:08:21,190 --> 00:08:26,310
+Bạn có thể coi đây 
+là thân của vòng lặp.
+
+197
+00:08:26,310 --> 00:08:29,680
+Vì đó là chỗ bắt đầu và kết thúc lùi đầu dòng.
+
+198
+00:08:29,680 --> 00:08:34,499
+Câu "break" nói hãy phá vòng lặp này
+
+199
+00:08:34,499 --> 00:08:37,039
+và chạy đến câu lệnh
+thẳng hàng
+
+200
+00:08:37,039 --> 00:08:38,250
+với câu lệnh while.
+
+201
+00:08:38,250 --> 00:08:42,010
+"Break" có nghĩa là
+thoát khỏi vòng lặp
+
+202
+00:08:42,010 --> 00:08:45,340
+Khi câu lệnh đó được thực thi, 
+ta xong việc với vòng lặp.
+
+203
+00:08:45,340 --> 00:08:46,720
+Ta không dùng vòng lặp nữa.
+
+204
+00:08:46,720 --> 00:08:48,870
+Vòng lặp sẽ chạy mãi
+cho tới khi câu lệnh đó thực thi vì
+
+205
+00:08:48,870 --> 00:08:53,200
+ta đã đặt giá trị 
+while là luôn đúng.
+
+206
+00:08:53,200 --> 00:08:57,120
+Đây là một cách đơn giản
+để biểu diễn điều này.
+
+207
+00:08:57,120 --> 00:09:02,560
+"Break" có nghĩa là nhảy 
+đến câu lệnh ngay sau vòng lặp.
+
+208
+00:09:02,560 --> 00:09:04,090
+Các bạn có thể hình dung nó
+
+209
+00:09:04,090 --> 00:09:06,830
+giống như thiết bị dịch chuyển trong Star Trek.
+
+210
+00:09:06,830 --> 00:09:11,220
+Khi bước vào break, 
+bạn sẽ phân nhỏ thành các phân tử
+
+211
+00:09:11,220 --> 00:09:13,130
+và được gửi đến
+bốn phương của vũ trụ.
+
+212
+00:09:13,130 --> 00:09:16,040
+Rồi các phân tử đó sẽ tập hợp lại ở bên ngoài vòng lặp.
+
+213
+00:09:16,040 --> 00:09:18,970
+Hãy nhìn vào sơ đồ 
+đường đi
+
+214
+00:09:18,970 --> 00:09:22,150
+của vòng lặp,
+
+215
+00:09:22,150 --> 00:09:24,060
+nó sẽ chạy vòng vòng một thời gian.
+
+216
+00:09:24,060 --> 00:09:25,840
+Có thể có nhiều câu "break",
+
+217
+00:09:25,840 --> 00:09:27,090
+miễn là nó chạy như thế này.
+
+218
+00:09:27,090 --> 00:09:30,730
+Nhưng một khi
+nó chạy tới câu lệnh break
+
+219
+00:09:30,730 --> 00:09:34,010
+thì nó sẽ nhảy khỏi vòng lặp hoàn toàn.
+
+220
+00:09:34,010 --> 00:09:36,090
+Vậy là nó thoát khỏi vòng lặp.
+
+221
+00:09:36,090 --> 00:09:41,500
+Kiểu như bạn đang chạy, chạy, chạy
+
+222
+00:09:41,500 --> 00:09:43,830
+thì đến đây rồi
+
+223
+00:09:43,830 --> 00:09:46,260
+hiện hình ở ngoài vòng lặp.
+
+224
+00:09:46,260 --> 00:09:48,410
+Đó là ý nghĩa của "break".
+
+225
+00:09:48,410 --> 00:09:54,640
+"Break" là một cách để kiểm soát
+các vòng lặp.
+
+226
+00:09:54,640 --> 00:09:56,990
+Có một cách kiểm soát khác
+
+227
+00:09:56,990 --> 00:09:58,830
+gọi là "continue", mà khi đó
+
+228
+00:09:58,830 --> 00:10:01,010
+ta không thực sự nhảy khỏi vòng lặp.
+
+229
+00:10:01,010 --> 00:10:04,630
+"continue" cơ bản là
+
+230
+00:10:04,630 --> 00:10:06,640
+kết thúc bước lặp này của vòng lặp.
+
+231
+00:10:06,640 --> 00:10:09,640
+Mỗi lần vòng lặp chạy ta gọi đó là một bước lặp.
+
+232
+00:10:09,640 --> 00:10:13,160
+"continue" tức là ta không dừng vòng lặp,
+
+233
+00:10:13,160 --> 00:10:15,790
+mà dừng bước lặp này và
+
+234
+00:10:15,790 --> 00:10:17,442
+nhảy tới bước lặp tiếp theo.
+
+235
+00:10:17,442 --> 00:10:18,900
+Ta có ở đây 
+
+236
+00:10:18,900 --> 00:10:21,730
+một vòng lặp đơn giản, 
+"while" luôn đúng,
+
+237
+00:10:21,730 --> 00:10:24,590
+tức là vòng lặp vô hạn.
+
+238
+00:10:24,590 --> 00:10:26,250
+Ta sẽ đọc một biến đầu vào
+
+239
+00:10:26,250 --> 00:10:28,635
+được nhập sau dấu >
+
+240
+00:10:28,635 --> 00:10:31,260
+Nếu đầu vào là "done",
+ta sẽ break xuống.
+
+241
+00:10:31,260 --> 00:10:33,218
+Và xuống tới đây ta in ra màn hình.
+
+242
+00:10:33,218 --> 00:10:35,910
+Bình thường ta sẽ chỉ đọc và in.
+
+243
+00:10:35,910 --> 00:10:37,610
+Nếu đánh vào chữ "done",
+
+244
+00:10:37,610 --> 00:10:39,651
+thì ta sẽ nhảy khỏi vòng lặp.
+
+245
+00:10:39,651 --> 00:10:41,940
+Nhưng có một phần mới ở đây.
+
+246
+00:10:41,940 --> 00:10:44,120
+Phần này ta sẽ học 
+trong chương tới.
+
+247
+00:10:44,120 --> 00:10:47,570
+Nếu line[0] tức phần tử thứ nhất 
+của chuỗi kí tự ta đánh vào
+
+248
+00:10:47,570 --> 00:10:50,640
+là một dấu #, ta sẽ tiếp tục - "continue".
+
+249
+00:10:50,640 --> 00:10:53,370
+Thực chất "continue" không đưa 
+ta ra khỏi vòng lặp
+
+250
+00:10:53,370 --> 00:10:56,350
+mà nhảy về phần đầu
+của vòng lặp.
+
+251
+00:10:56,350 --> 00:11:00,080
+Có nghĩa là trong bước lặp đó,
+nó bỏ qua
+
+252
+00:11:00,080 --> 00:11:01,860
+phần còn lại của vòng lặp.
+
+253
+00:11:01,860 --> 00:11:10,690
+Vậy khi chương trình gặp dòng này,
+
+254
+00:11:10,690 --> 00:11:13,700
+nó sẽ quay về đoạn "while".
+
+255
+00:11:13,700 --> 00:11:15,630
+Tức là dù đầu vào có là gì
+
+256
+00:11:15,630 --> 00:11:17,380
+thì nó cũng không được hàm xử lý
+
+257
+00:11:17,380 --> 00:11:19,700
+mà sẽ nhảy về "while".
+
+258
+00:11:19,700 --> 00:11:22,060
+"continue" sẽ kết thúc
+bước lặp hiện tại
+
+259
+00:11:22,060 --> 00:11:23,620
+và quay trở về đầu vòng lặp,
+
+260
+00:11:23,620 --> 00:11:26,280
+bắt đầu bước lặp tiếp theo luôn.
+
+261
+00:11:26,280 --> 00:11:29,280
+Ta hãy nhìn cách hoạt động của đoạn code:
+
+262
+00:11:29,280 --> 00:11:30,440
+"hello there", in ra.
+
+263
+00:11:30,440 --> 00:11:32,950
+Chuỗi với dấu # ở đầu thì không in,
+
+264
+00:11:32,950 --> 00:11:35,230
+nên không có gì được in ra.
+
+265
+00:11:35,230 --> 00:11:37,580
+"Print this" không phải là "done",
+và ta đánh vào "done"
+
+266
+00:11:37,580 --> 00:11:39,360
+thì vòng lặp mới kết thúc.
+
+267
+00:11:39,360 --> 00:11:42,700
+Một cách biểu diễn khác
+là "continue" sẽ nhảy
+
+268
+00:11:42,700 --> 00:11:44,830
+lên đầu vòng lặp.
+
+269
+00:11:44,830 --> 00:11:48,220
+Nó có thực hiện câu hỏi, đúng không nào?
+
+270
+00:11:48,220 --> 00:11:49,610
+Nó có kiểm tra câu hỏi.
+
+271
+00:11:49,610 --> 00:11:52,780
+Vậy ta cũng có thể biểu diễn thế này.
+
+272
+00:11:52,780 --> 00:11:55,556
+Ta có một vòng lặp
+đang chạy rất là vui vẻ.
+
+273
+00:11:55,556 --> 00:11:56,930
+Đôi chỗ có thể có câu "break"
+
+274
+00:11:56,930 --> 00:11:58,730
+hay câu "continue".
+
+275
+00:11:58,730 --> 00:12:01,030
+Miễn là không gặp phải "break" hay "continue"
+
+276
+00:12:01,030 --> 00:12:03,080
+thì vòng lặp cứ chạy rồi quay lại từ đầu.
+
+277
+00:12:03,080 --> 00:12:06,990
+Chợt tại câu hỏi nào đó, ta vấp phải "continue".
+
+278
+00:12:06,990 --> 00:12:10,110
+Giống như một thiết bị dịch chuyển,
+chỉ khác là ta không ra khỏi vòng lặp,
+
+279
+00:12:10,110 --> 00:12:11,360
+mà quay về đầu vòng lặp.
+
+280
+00:12:11,360 --> 00:12:15,640
+Nhưng cái quan trọng là
+phải kiểm tra câu hỏi.
+
+281
+00:12:15,640 --> 00:12:17,990
+"continue" sẽ không thoát
+vòng lặp
+
+282
+00:12:17,990 --> 00:12:20,350
+trừ khi câu hỏi có câu trả lời là sai.
+
+283
+00:12:20,350 --> 00:12:23,480
+"continue" sẽ chạy lên đây, thực thi thêm một lúc,
+
+284
+00:12:23,480 --> 00:12:25,540
+rồi gặp lại "continue",
+chạy lên đây.
+
+285
+00:12:25,540 --> 00:12:26,670
+Ấy, tôi vẽ vòng ngược rồi.
+
+286
+00:12:26,670 --> 00:12:29,460
+Chạy thêm một lúc.
+Giờ tôi sẽ xóa cái này.
+
+287
+00:12:29,460 --> 00:12:32,090
+Vậy "continue" có thể chạy nhiều lần.
+
+288
+00:12:32,090 --> 00:12:35,010
+Vòng lặp chạy rất nhiều lần
+
+289
+00:12:35,010 --> 00:12:36,690
+đến khi gặp "continue".
+
+290
+00:12:36,690 --> 00:12:38,030
+Chương trình nhảy về đầu.
+
+291
+00:12:38,030 --> 00:12:40,700
+Nếu kết quả vẫn là đúng,
+vòng lặp chạy thêm một số lần nữa.
+
+292
+00:12:40,700 --> 00:12:42,480
+Rồi lại gặp "continue",
+chương trình
+
+293
+00:12:42,480 --> 00:12:43,975
+lại nhảy lên,
+rồi xuống đây.
+
+294
+00:12:43,975 --> 00:12:45,600
+Cứ thế lặp đi lặp lại.
+
+295
+00:12:45,600 --> 00:12:49,250
+Gặp "continue", quay lên trên, vân vân.
+
+296
+00:12:49,250 --> 00:12:52,650
+Trong vòng lặp này, 
+câu "break"
+
+297
+00:12:52,650 --> 00:12:55,230
+nằm dưới đây, 
+đó là cách ta thoát khỏi vòng lặp.
+
+298
+00:12:55,230 --> 00:13:00,020
+Còn "continue" thì quay về đầu 
+vòng lặp.
+
+299
+00:13:00,020 --> 00:13:03,010
+Như vậy vòng lặp mà ta tạo ra 
+với từ khóa "while"
+
+300
+00:13:03,010 --> 00:13:05,350
+được gọi là vòng lặp vô hạn.
+
+301
+00:13:05,350 --> 00:13:07,440
+Nhìn vào những gì ta vừa viết,
+
+302
+00:13:07,440 --> 00:13:09,660
+2 dòng hay 6 dòng,
+
+303
+00:13:09,660 --> 00:13:12,180
+ta có thể kiểm tra nó và biết được
+
+304
+00:13:12,180 --> 00:13:13,540
+khi nào vòng lặp sẽ dừng.
+
+305
+00:13:13,540 --> 00:13:17,776
+Và ta biết nó có thể
+dừng lại được.
+
+306
+00:13:17,776 --> 00:13:21,510
+Một vòng lặp không dừng lại
+là một vòng lặp vô hạn.
+
+307
+00:13:21,510 --> 00:13:23,469
+Đôi lúc chương trình sẽ phức tạp hơn.
+
+308
+00:13:23,469 --> 00:13:25,510
+Có thể bạn sẽ không kiểm tra được
+
+309
+00:13:25,510 --> 00:13:30,710
+vì có nhiều dòng quá, không biết được.
+
+310
+00:13:30,710 --> 00:13:32,940
+Vậy nên hãy thật cẩn trọng khi
+dựng vòng lặp
+
+311
+00:13:32,940 --> 00:13:35,160
+và đảm bảo là 
+chúng dừng lại được
+
+312
+00:13:35,160 --> 00:13:37,220
+khi mọi thứ trở nên 
+phức tạp hơn.
+
+313
+00:13:37,220 --> 00:13:42,380
+Họ hàng của vòng lặp vô hạn 
+là vòng lặp hữu hạn.
+
+314
+00:13:42,380 --> 00:13:46,280
+Vòng lặp hữu hạn là khi 
+ta có
+
+315
+00:13:46,280 --> 00:13:48,845
+một dãy các công việc
+
+316
+00:13:48,845 --> 00:13:50,657
+hữu hạn, đã biết.
+
+317
+00:13:50,657 --> 00:13:52,240
+Ta sẽ 
+viết một vòng lặp
+
+318
+00:13:52,240 --> 00:13:53,920
+điểm qua cái dãy đó
+
+319
+00:13:53,920 --> 00:13:57,430
+và thực hiện một số việc
+với từng thứ.
+
+320
+00:13:57,430 --> 00:14:00,510
+Ta sử dụng từ khóa "for"
+
+321
+00:14:00,510 --> 00:14:03,680
+Từ khóa "for" trong Python
+
+322
+00:14:03,680 --> 00:14:05,030
+có nghĩa là ta đang viết vòng lặp.
+
+323
+00:14:05,030 --> 00:14:08,010
+Nhưng thay vì chạy cho tới khi
+một điều kiện nào đó
+
+324
+00:14:08,010 --> 00:14:10,440
+trở thành đúng hoặc sai, 
+hoặc nhảy vào "break",
+
+325
+00:14:10,440 --> 00:14:12,850
+thì ta sẽ biết chính xác
+vòng lặp
+
+326
+00:14:12,850 --> 00:14:13,740
+sẽ chạy bao nhiêu lần.
+
+327
+00:14:13,740 --> 00:14:16,600
+Ta có thể dùng "break" và "continue"
+trong vòng lặp "for".
+
+328
+00:14:16,600 --> 00:14:19,840
+Ta gọi nó là vòng lặp hữu hạn vì 
+
+329
+00:14:19,840 --> 00:14:23,140
+ta nắm được số lần chạy của nó.
+
+330
+00:14:23,140 --> 00:14:25,250
+Đây là một vòng lặp hữu hạn đơn giản.
+
+331
+00:14:25,250 --> 00:14:27,150
+Giống với vòng lặp "while"
+
+332
+00:14:27,150 --> 00:14:29,660
+mà ta vừa gặp ở trên, 
+nó đếm ngược
+
+333
+00:14:29,660 --> 00:14:31,370
+rồi báo "Blastoff!" (nổ tung)
+
+334
+00:14:31,370 --> 00:14:33,520
+Ta tạo ra
+vòng lặp này
+
+335
+00:14:33,520 --> 00:14:36,950
+bằng từ khóa "for", 
+một phần của Python,
+
+336
+00:14:36,950 --> 00:14:40,940
+từ khóa "in" và một
+biến vòng lặp (iteration variable)
+
+337
+00:14:40,940 --> 00:14:43,670
+Tôi chọn i là biến vòng lặp.
+
+338
+00:14:43,670 --> 00:14:45,890
+Cũng giống như ta đang nói
+
+339
+00:14:45,890 --> 00:14:50,250
+hỡi Python, hãy chạy
+khối lệnh lùi đầu dòng này
+
+340
+00:14:50,250 --> 00:14:52,930
+Khối này chỉ có một dòng thôi.
+
+341
+00:14:52,930 --> 00:14:56,930
+Hãy chạy câu lệnh đó 
+với từng giá trị trong dãy số này.
+
+342
+00:14:56,930 --> 00:14:58,420
+Đây là một dãy - "list" trong Python.
+
+343
+00:14:58,420 --> 00:15:00,620
+Dấu ngoặc vuông này 
+khai một "list" trong Python,
+
+344
+00:15:00,620 --> 00:15:02,240
+các phần tử được ngăn cách bằng dấu phẩy.
+
+345
+00:15:02,240 --> 00:15:05,115
+Tôi muốn i = 5, 
+rồi chạy đoạn này.
+
+346
+00:15:05,115 --> 00:15:07,240
+Tiếp theo tôi muốn i = 4, 
+lại chạy đoạn này.
+
+347
+00:15:07,240 --> 00:15:09,440
+i = 3,
+chạy đoạn này tiếp
+
+348
+00:15:09,440 --> 00:15:11,280
+i = 2,
+chạy đoạn này tiếp
+
+349
+00:15:11,280 --> 00:15:13,530
+i = 1,
+chạy đoạn này tiếp
+
+350
+00:15:13,530 --> 00:15:17,830
+Khá rõ ràng đúng không.
+Tôi thích từ "in" này.
+
+351
+00:15:17,830 --> 00:15:21,134
+Nó nhảy từ cái này sang cái kia.
+
+352
+00:15:21,134 --> 00:15:22,610
+Mỗi lần nhảy lại chạy đoạn code.
+
+353
+00:15:22,610 --> 00:15:25,630
+Màn hình in ra là
+5, 4, 3, 2, 1.
+
+354
+00:15:25,630 --> 00:15:28,120
+Và vòng lặp kết thúc.
+
+355
+00:15:28,120 --> 00:15:30,170
+Python đã gánh hết phần nặng cho ta.
+
+356
+00:15:30,170 --> 00:15:34,739
+Nó tự tính toán mọi thứ
+

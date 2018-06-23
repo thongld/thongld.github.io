@@ -1,0 +1,444 @@
+753
+00:32:51,750 --> 00:32:53,250
+https://youtu.be/G721cooZXgs
+and I want you go
+back, and remember
+
+754
+00:32:53,250 --> 00:32:54,630
+that x I gave you before?
+
+755
+00:32:54,630 --> 00:32:59,350
+Go get that one back, and add
+50 to that, and put that in one.
+
+756
+00:32:59,350 --> 00:33:02,600
+So now, I've got something in
+x and I got something in y.
+
+757
+00:33:02,600 --> 00:33:05,110
+And, let's print y out.
+
+758
+00:33:05,110 --> 00:33:07,970
+
+759
+00:33:07,970 --> 00:33:09,060
+What's in y?
+
+760
+00:33:09,060 --> 00:33:12,570
+Go look in y, where you put
+that, and let's print it out.
+
+761
+00:33:12,570 --> 00:33:14,200
+150.
+
+762
+00:33:14,200 --> 00:33:17,120
+So, we're doing simple things.
+
+763
+00:33:17,120 --> 00:33:19,802
+And, actually, most programming
+is a series of simple things.
+
+764
+00:33:19,802 --> 00:33:21,760
+The number of statements,
+different statements,
+
+765
+00:33:21,760 --> 00:33:25,130
+you can do is relatively few.
+
+766
+00:33:25,130 --> 00:33:29,450
+So we are talking to Python.
+
+767
+00:33:29,450 --> 00:33:30,880
+Let's run back to the slides.
+
+768
+00:33:30,880 --> 00:33:31,960
+There we go.
+
+769
+00:33:31,960 --> 00:33:36,960
+And so, we give it a
+series of commands,
+
+770
+00:33:36,960 --> 00:33:39,440
+and you can do the same thing
+sitting on your computer,
+
+771
+00:33:39,440 --> 00:33:42,800
+and you type exit or
+quit, with parentheses,
+
+772
+00:33:42,800 --> 00:33:44,460
+to get out of it
+when you're done.
+
+773
+00:33:44,460 --> 00:33:46,120
+And that ends the
+interactive session.
+
+774
+00:33:46,120 --> 00:33:47,680
+This is interactive
+Python, where
+
+775
+00:33:47,680 --> 00:33:50,080
+it's asking us
+command by command
+
+776
+00:33:50,080 --> 00:33:52,270
+and then interpreting, or
+running those commands,
+
+777
+00:33:52,270 --> 00:33:54,620
+as we finish.
+
+778
+00:33:54,620 --> 00:33:58,270
+So, you'll be doing in
+some kind of a window.
+
+779
+00:33:58,270 --> 00:34:00,170
+There's a different way
+to do it on Windows.
+
+780
+00:34:00,170 --> 00:34:02,710
+My install documentation
+on pythonlearn.com
+
+781
+00:34:02,710 --> 00:34:05,960
+gives you all of this,
+tells you everything to do.
+
+782
+00:34:05,960 --> 00:34:08,830
+So now we're basically
+talking to Python.
+
+783
+00:34:08,830 --> 00:34:11,199
+So what language?
+
+784
+00:34:11,199 --> 00:34:14,320
+I've got to still teach
+you this language.
+
+785
+00:34:14,320 --> 00:34:16,790
+So what we say when we
+get a hold of Python,
+
+786
+00:34:16,790 --> 00:34:18,810
+what kinds of things?
+
+787
+00:34:18,810 --> 00:34:23,659
+Just like any language, a human
+language, there's vocabulary,
+
+788
+00:34:23,659 --> 00:34:26,860
+there's basic words,
+there's variables
+
+789
+00:34:26,860 --> 00:34:28,830
+and reserved words in Python.
+
+790
+00:34:28,830 --> 00:34:31,300
+Then we combine those
+in lines to make
+
+791
+00:34:31,300 --> 00:34:33,590
+sentence-like structures,
+that themselves are not
+
+792
+00:34:33,590 --> 00:34:34,710
+a full story.
+
+793
+00:34:34,710 --> 00:34:37,020
+And then we make
+a story out of it.
+
+794
+00:34:37,020 --> 00:34:40,120
+Now, the story is in
+the Python language, not
+
+795
+00:34:40,120 --> 00:34:42,989
+English or French,
+or a human language,
+
+796
+00:34:42,989 --> 00:34:46,800
+but it still is kind of a
+sequence of small pieces
+
+797
+00:34:46,800 --> 00:34:49,000
+that build to make
+bigger pieces that then
+
+798
+00:34:49,000 --> 00:34:50,630
+build to make a whole program.
+
+799
+00:34:50,630 --> 00:34:54,590
+So here is, again,
+that same program.
+
+800
+00:34:54,590 --> 00:34:55,230
+Right?
+
+801
+00:34:55,230 --> 00:34:57,100
+That same program
+of how to count
+
+802
+00:34:57,100 --> 00:34:59,520
+the most common word in a file.
+
+803
+00:34:59,520 --> 00:35:02,900
+And I mentioned before, that
+it starts by opening the file,
+
+804
+00:35:02,900 --> 00:35:07,590
+it reads the data from the
+file, splits it into words,
+
+805
+00:35:07,590 --> 00:35:09,700
+counts them all up, and
+then finds the biggest one
+
+806
+00:35:09,700 --> 00:35:11,230
+and prints it out.
+
+807
+00:35:11,230 --> 00:35:16,940
+So, name is like a word, equals
+is another word, raw is a word.
+
+808
+00:35:16,940 --> 00:35:19,420
+All these things are
+words; each of these things
+
+809
+00:35:19,420 --> 00:35:21,740
+is like a sentence.
+
+810
+00:35:21,740 --> 00:35:24,680
+There are blocks of stuff,
+they're kind of paragraphs.
+
+811
+00:35:24,680 --> 00:35:26,985
+There's kind of a
+paragraph, paragraph-- maybe
+
+812
+00:35:26,985 --> 00:35:29,230
+I should put a
+different color here--
+
+813
+00:35:29,230 --> 00:35:33,500
+here's a paragraph and a
+paragraph and a paragraph.
+
+814
+00:35:33,500 --> 00:35:36,050
+And then at the end of the
+day, once you understand it--
+
+815
+00:35:36,050 --> 00:35:38,300
+and you will understand
+this before it's all over--
+
+816
+00:35:38,300 --> 00:35:40,520
+this is kind of like a story.
+
+817
+00:35:40,520 --> 00:35:41,020
+Right?
+
+818
+00:35:41,020 --> 00:35:43,330
+It holds together, it has
+a beginning, a middle,
+
+819
+00:35:43,330 --> 00:35:44,840
+and an end.
+
+820
+00:35:44,840 --> 00:35:47,190
+Again, don't worry
+about the detail.
+
+821
+00:35:47,190 --> 00:35:49,520
+We've got plenty of chapters
+to cover this detail.
+
+822
+00:35:49,520 --> 00:35:51,490
+Don't worry about this
+particular program.
+
+823
+00:35:51,490 --> 00:35:54,520
+I'm just sort of getting into
+the sense that you'll get it.
+
+824
+00:35:54,520 --> 00:35:56,640
+But we'll start simple.
+
+825
+00:35:56,640 --> 00:35:58,830
+So, the first thing
+that you've got
+
+826
+00:35:58,830 --> 00:36:04,040
+to know how to do in Python,
+is know what not to do.
+
+827
+00:36:04,040 --> 00:36:06,140
+Or, when you use
+these reserved words,
+
+828
+00:36:06,140 --> 00:36:09,380
+they have very special
+meaning to Python.
+
+829
+00:36:09,380 --> 00:36:11,510
+It's like when you
+say, I don't think
+
+830
+00:36:11,510 --> 00:36:13,900
+you're going to get any
+food today, to a dog.
+
+831
+00:36:13,900 --> 00:36:16,660
+The dog hears the word
+"food" and nothing else.
+
+832
+00:36:16,660 --> 00:36:18,880
+So food is a reserved
+word for dogs.
+
+833
+00:36:18,880 --> 00:36:21,580
+Walk, bath-- they're
+other reserved words.
+
+834
+00:36:21,580 --> 00:36:24,080
+So what it really means is, you
+can't use these for anything
+
+835
+00:36:24,080 --> 00:36:26,520
+other than what
+they mean to Python.
+
+836
+00:36:26,520 --> 00:36:29,400
+So, print tells it
+to print things.
+
+837
+00:36:29,400 --> 00:36:32,350
+Return is used in functions.
+
+838
+00:36:32,350 --> 00:36:35,600
+"Else", "if"-- these
+are words that if Python
+
+839
+00:36:35,600 --> 00:36:39,450
+sees the word "if", it's
+like, this means something.
+
+840
+00:36:39,450 --> 00:36:41,830
+Don't use it for any other
+purpose except it's stated
+
+841
+00:36:41,830 --> 00:36:44,630
+purpose; we'll learn
+what those are.
+
+842
+00:36:44,630 --> 00:36:47,970
+Now if we talk about sentences,
+sentences are, in Python,
+
+843
+00:36:47,970 --> 00:36:50,750
+like a line that
+have pieces to them.
+
+844
+00:36:50,750 --> 00:36:53,880
+So, here is three
+pieces of code.
+
+845
+00:36:53,880 --> 00:36:55,300
+One is x equals 2.
+
+846
+00:36:55,300 --> 00:37:00,240
+That says, take and find me a
+piece of memory in your RAM,
+

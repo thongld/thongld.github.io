@@ -1,0 +1,446 @@
+1
+00:00:04,973 --> 00:00:05,900
+narcissusdale 
+https://youtu.be/9fzNx2na56w
+Chào mừng trở lại
+
+2
+00:00:05,900 --> 00:00:08,890
+Ta đang giải các bài toán lớn, bài tập ứng dụng 2
+
+3
+00:00:08,890 --> 00:00:10,970
+và bài toán tôi sẽ giải cũng rất thú vị
+
+4
+00:00:12,10 --> 00:00:14,410
+Vì như ở bài tập ứng dụng 1, tôi muốn
+
+5
+00:00:14,410 --> 00:00:16,962
+rút ra thật nhiều giá trị từ bài toán này
+
+6
+00:00:16,962 --> 00:00:22,338
+Vì phần nào nó sẽ giúp bạn tự mình điều khiển  
+và trao quyền cho bạn
+
+7
+00:00:22,338 --> 00:00:27,10
+Tôi liên tục nhắc nhở bản thân rằng khoá học này là Tài chính cho mọi người
+
+8
+00:00:27,10 --> 00:00:31,680
+Điều quan trọng là tôi cung cấp cho các bạn
+một số công cụ để giải quyết các vấn đề, đúng không?
+
+9
+00:00:31,680 --> 00:00:36,90
+Điều tôi sẽ làm là xác nhận rằng
+mình đã tính toán đúng
+
+10
+00:00:36,90 --> 00:00:36,960
+Bạn làm vậy bằng cách nào?
+
+11
+00:00:36,960 --> 00:00:39,80
+Một trong những cái hay của Tài chính
+
+12
+00:00:39,80 --> 00:00:43,980
+là các bạn có thể triển khai mọi việc ngoài đời thực
+và xem liệu tất cả có hợp lý không
+
+13
+00:00:43,980 --> 00:00:45,669
+Vậy điều đó có nghĩa là gì? 
+
+14
+00:00:45,670 --> 00:00:50,147
+Tôi sẽ bắt đầu với số lượng mà ta đã quyết định
+
+15
+00:00:50,147 --> 00:00:54,423
+Hiện nay, Emilia cần có trong quỹ tiền gửi ngân hàng
+
+16
+00:00:54,423 --> 00:00:59,818
+$34,000 ở mốc thời gian 0
+
+17
+00:00:59,818 --> 00:01:04,750
+Chính xác là 34,213.09 đúng không?
+
+18
+00:01:04,750 --> 00:01:08,490
+Ta cần số tiền đó trong ngân hàng,
+và tôi sẽ triển khai số tiền đó trong thời gian thực
+
+19
+00:01:09,650 --> 00:01:14,180
+Rồi sau đó, tôi sẽ giải bài tập ứng dụng
+nó sẽ khiến bạn làm mọi thứ khéo léo 
+
+20
+00:01:14,180 --> 00:01:15,970
+và nhanh chóng hơn nhưng giờ tôi muốn đi từng bước
+
+21
+00:01:17,470 --> 00:01:22,371
+Đây là trục thời gian
+
+22
+00:01:22,371 --> 00:01:28,125
+tôi quan tâm tới năm thứ 5
+
+23
+00:01:28,125 --> 00:01:32,190
+6, 7, 8. 
+
+24
+00:01:32,190 --> 00:01:35,970
+Tất nhiên là cô ấy sẽ tốt nghiệp vào năm thứ 9,
+ok, nếu mọi chuyện tiến triển theo đúng kế hoạch
+
+25
+00:01:37,290 --> 00:01:40,720
+Điều đầu tiên tôi sẽ làm là nói cho các bạn biết giá trị
+
+26
+00:01:40,720 --> 00:01:43,80
+hay làm việc với giá trị của khoản tiền.
+
+27
+00:01:43,80 --> 00:01:47,190
+Từ đó, tôi sẽ trừ đi học khoảng đóng học đó mỗi năm
+
+28
+00:01:48,910 --> 00:01:55,823
+Hãy nhớ rằng tiền quỹ sẽ tăng 5% mỗi năm
+và học phí tăng 2.5%
+
+29
+00:01:55,823 --> 00:02:00,207
+Ta đã tính toán những con số này rồi
+
+30
+00:02:00,207 --> 00:02:01,880
+và học phí là một số âm
+
+31
+00:02:03,580 --> 00:02:07,200
+Điều tôi sẽ làm là chia khoản tiền này cho mỗi năm
+
+32
+00:02:08,400 --> 00:02:11,720
+sau khi tính toán giá trị thuần,
+ngân quỹ thuần
+
+33
+00:02:12,890 --> 00:02:15,959
+Cuối cùng, các bạn nên làm gì nếu đã tiết kiệm đủ tiền và
+
+34
+00:02:15,960 --> 00:02:20,770
+mọi việc diễn ra suôn sẻ, cuối cùng bạn sẽ tính ra kết quả là 0
+
+35
+00:02:20,770 --> 00:02:23,540
+Nên tôi sẽ viết một số 0 ngay đây
+
+36
+00:02:23,540 --> 00:02:25,310
+Đó là kết quả tôi muốn có, đúng chưa nào?
+
+37
+00:02:25,310 --> 00:02:27,600
+Vì bạn đã thanh toán mọi thứ
+
+38
+00:02:27,600 --> 00:02:31,90
+Sẽ không còn số âm hay dương nào cả, đúng không?
+
+39
+00:02:31,90 --> 00:02:31,980
+Chúng ta hãy bắt đầu
+
+40
+00:02:31,980 --> 00:02:36,980
+Vấn đề đầu tiên là, giá trị ngân quỹ trong năm thứ 5 là bao nhiêu?
+
+41
+00:02:36,980 --> 00:02:39,320
+Rất đơn giản, bạn sẽ tính bằng cách nào?
+
+42
+00:02:39,320 --> 00:02:42,760
+Đó là bài toán Giá trị tương lai, rất đơn giản
+
+43
+00:02:42,760 --> 00:02:44,355
+mức lãi suất là bao nhiêu?
+
+44
+00:02:44,355 --> 00:02:49,79
+5% và số năm là 5
+
+45
+00:02:49,80 --> 00:02:52,813
+PV =34,213. 
+
+46
+00:02:52,813 --> 00:02:59,616
+Tôi sẽ viết con số đó ra
+
+47
+00:02:59,616 --> 00:03:03,614
+ 43,665.53. 
+
+48
+00:03:04,870 --> 00:03:06,844
+Đây là tổng số tiền trong ngân quỹ của tôi
+
+49
+00:03:06,844 --> 00:03:09,802
+Tuy nhiên, sau 5 năm
+
+50
+00:03:09,802 --> 00:03:14,743
+tôi sẽ phải rút tiền từ quỹ này để đóng học phí
+
+51
+00:03:14,743 --> 00:03:21,463
+Số tiền cần rút là 11,314.08. 
+
+52
+00:03:21,463 --> 00:03:26,480
+Ta đã tính toán từ trước rồi
+nhưng các bạn vẫn có thể tính lại
+
+53
+00:03:26,480 --> 00:03:27,519
+Con số này là gì?
+
+54
+00:03:27,520 --> 00:03:28,693
+Tôi tính ra nó bằng cách nào?
+
+55
+00:03:28,693 --> 00:03:32,368
+Giá trị học phí hiện tại sẽ là  10,000
+
+56
+00:03:32,368 --> 00:03:35,850
+tăng 2.5% mỗi năm trong 5 năm
+
+57
+00:03:35,850 --> 00:03:37,666
+Tôi còn lại bao nhiêu?
+
+58
+00:03:37,666 --> 00:03:45,389
+Tôi còn lại 32,351.45.
+
+59
+00:03:45,389 --> 00:03:48,887
+Đây là bước đầu tiên, nhưng ta phải tiếp tục
+
+60
+00:03:48,887 --> 00:03:51,260
+và đó chính là phần thú vị
+
+61
+00:03:51,260 --> 00:03:53,320
+ Câu hỏi là, vào năm thứ 6
+
+62
+00:03:53,320 --> 00:03:57,660
+Giá trị của ngân quỹ là bao nhiêu, sau khi đã đóng học phí 1 năm?
+
+63
+00:03:57,660 --> 00:04:02,204
+Câu trả lời phải là 1 con số lớn hơn 32, nhưng ở mức lãi suất bao nhiêu?
+
+64
+00:04:02,205 --> 00:04:05,82
+5%.
+Đó là bài toán Giá trị tương lai
+
+65
+00:04:05,82 --> 00:04:06,665
+khi N =1
+
+66
+00:04:06,665 --> 00:04:10,840
+33,969.02, nhưng giờ tôi phải
+
+67
+00:04:10,841 --> 00:04:15,690
+trừ đi học phí lần 2 trong năm 6
+
+68
+00:04:15,690 --> 00:04:22,330
+và tiền học phí lần 2 phải lớn hơn 11,314.
+
+69
+00:04:22,330 --> 00:04:23,359
+Vì sao?
+
+70
+00:04:23,360 --> 00:04:27,446
+Vì lạm phát là 2.5%
+
+71
+00:04:27,446 --> 00:04:35,549
+Nên học phí lần 2 sẽ là 11,596.93
+
+72
+00:04:35,549 --> 00:04:44,150
+và bạn vẫn còn 22,372.09.
+
+73
+00:04:44,150 --> 00:04:47,969
+vì có rất nhiều số, nên tôi sẽ làm thật chậm
+
+74
+00:04:47,970 --> 00:04:51,560
+Để không mắc lỗi ngớ ngẩn
+
+75
+00:04:51,560 --> 00:04:55,216
+Điều đó hợp lý, đúng không?
+Vì học phí khá là nặng
+
+76
+00:04:55,216 --> 00:04:57,70
+Nên ngân quỹ sẽ giảm từ 33 xuống còn khoảng 22
+
+77
+00:04:57,70 --> 00:04:59,368
+Giờ thì làm sao tôi tính ra đầu số này?
+
+78
+00:04:59,368 --> 00:05:03,576
+Một lần nữa, lấy 22,000 chuyển tiếp
+nhưng ở mức lãi suất bao nhiêu %?
+
+79
+00:05:03,576 --> 00:05:07,666
+5%
+Vậy là 23,409. 
+
+80
+00:05:07,666 --> 00:05:09,826
+Xin lỗi, phải là 490
+
+81
+00:05:09,826 --> 00:05:11,203
+23,490.69. 
+
+82
+00:05:20,968 --> 00:05:25,903
+Tôi cần phải trừ đi tiền học phí, 
+và học phí lại tăng 1 lần nữa
+
+83
+00:05:25,903 --> 00:05:26,844
+mỗi năm
+
+84
+00:05:26,844 --> 00:05:35,41
+Học phí lần này là 11,886.86.
+
+85
+00:05:35,41 --> 00:05:37,180
+Tôi còn lại bao nhiêu tiền?
+
+86
+00:05:37,180 --> 00:05:44,60
+Tôi còn lại 11,603.84
+
+87
+00:05:46,820 --> 00:05:48,381
+Tôi nên thực hiện chuyển tiếp, nhưng
+
+88
+00:05:48,381 --> 00:05:51,650
+nhưng con số tôi tính ra ở đây cũng chính bằng học phí
+
+89
+00:05:51,650 --> 00:05:55,229
+có vẻ như tôi đã đi đúng hướng, đúng không?
+
+90
+00:05:55,230 --> 00:05:58,820
+Nhưng tôi chuyển tiếp ở mức 5%
+
+91
+00:05:58,820 --> 00:06:02,928
+tôi được 12,184.03
+
+92
+00:06:02,928 --> 00:06:06,915
+đó chính xác là tiền học phí
+
+93
+00:06:06,915 --> 00:06:10,256
+12,184.03. 
+
+94
+00:06:10,256 --> 00:06:11,340
+Không thú vị sao?
+
+95
+00:06:12,600 --> 00:06:17,400
+Tôi đã làm được gì?
+tôi đã giải 2 bài toán lớn
+
+96
+00:06:17,400 --> 00:06:23,90
+tôi đã hứa với các bạn sẽ không chỉ trao quyền 
+cho các bạn tự làm những bài toán này trong khoảng thời gian riêng
+
+97
+00:06:23,90 --> 00:06:25,669
+tôi chân thành khuyên các bạn nên làm vậy
+
+98
+00:06:25,670 --> 00:06:29,20
+mà còn trao quyền cho các bạn làm các bài toán trong phần bài tập
+
+99
+00:06:29,20 --> 00:06:34,609
+ lần lượt sẽ giúp bạn điều khiển được những điều thậm chí vượt ra ngoài các bài tập.
+
+100
+00:06:34,610 --> 00:06:38,560
+Tôi đã cố tình đưa ra một số câu hỏi khó trong phần bài tập 
+
+101
+00:06:38,560 --> 00:06:40,250
+để các bạn phải suy nghĩ
+
+102
+00:06:40,250 --> 00:06:43,480
+Nhưng trong khoá học này, tôi đã làm nhiều bài tập ứng dụng
+
+103
+00:06:43,480 --> 00:06:49,630
+cho các vấn đề mà các bạn sẽ gặp phải 
+trong nhiều khía cạnh khác nhau của cuộc sống
+
+104
+00:06:49,630 --> 00:06:52,270
+Tất nhiên là tôi không thể bao quát mọi khía cạnh được
+
+105
+00:06:52,270 --> 00:06:56,140
+Nhưng hy vọng rằng
+với bản chất bài toán như vậy
+
+106
+00:06:56,140 --> 00:07:01,906
+và sự kết hợp chéo các bài toán như vậy
+khoá học này sẽ bao hàm được hầu hết các vấn đề
+

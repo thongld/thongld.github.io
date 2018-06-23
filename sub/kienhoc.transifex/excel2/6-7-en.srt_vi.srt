@@ -1,0 +1,223 @@
+1
+00:00:02,470 --> 00:00:07,460
+trước đó chúng ta đã quan sát các biểu đồ dùng để biễn diễn
+
+2
+00:00:07,460 --> 00:00:12,000
+doanh số (sales), lợi nhuận từ hoạt động SXKD (operating profit) và lãi (margin), và tất cả đều được xoay theo chiều dọc
+
+
+3
+00:00:12,000 --> 00:00:17,670
+tất nhiên ta cũng có thể làm y hệt, nhưng thay vì dùng biểu đổ cột, ta sẽ dùng biểu đồ thanh từ đó
+
+4
+00:00:17,670 --> 00:00:20,710
+và đó cũng là việc chúng ta sẽ làm đối với biểu đồ về "chi phí" (cost)
+
+5
+00:00:20,710 --> 00:00:23,460
+hãy nhìn vào Excel để thấy được ta sẽ làm việc đó như thế nào
+
+6
+00:00:23,460 --> 00:00:28,269
+Chúng ta đang ở đây, file dữ liệu
+
+7
+00:00:28,269 --> 00:00:35,270
+tôi lập tức đi đến bảng "cost". Ở đây tôi có tất cả thông tin, tất cả các yếu tố của chi phí
+
+8
+00:00:35,270 --> 00:00:40,110
+actuals (giá trị thực tế) và budget (ngân sách)
+
+9
+00:00:40,110 --> 00:00:55,310
+và ta sẽ tạo một biểu đồ từ những dữ liệu này. 
+
+10
+00:00:55,310 --> 00:00:58,360
+tôi cần dùng một thủ thuật nhỏ với phím "ctrl"
+
+11
+00:00:58,360 --> 00:01:01,829
+đấy. Tôi đã chọn phần dữ liệu
+
+12
+00:01:01,829 --> 00:01:07,690
+tôi vừa chọn các yếu tố của chi phí, các danh mục, và các con số
+
+13
+00:01:07,690 --> 00:01:17,420
+và tôi sẽ vào "insert" (chèn), "bar chart" (biểu đồ thanh), "2D bar" (biểu đồ dạng 2D)
+
+14
+00:01:17,420 --> 00:01:21,500
+và ta có như thế. chúng tá đã biết thủ thuật ở đây là 
+
+15
+00:01:21,500 --> 00:01:26,409
+chọn khoảng giá trị thực , click chuột phải
+
+16
+00:01:26,409 --> 00:01:32,110
+và ta sẽ định dạng lại chuỗi dữ liệu đó
+
+17
+00:01:32,110 --> 00:01:35,299
+chọn secondary axis
+
+18
+00:01:35,299 --> 00:01:39,640
+ta cũng cần phải chỉnh gap width một chút
+
+19
+00:01:39,640 --> 00:01:45,100
+chỉnh cái này đến mức 200%
+
+20
+00:01:45,100 --> 00:01:49,420
+và bây giờ, tôi cũng muốn chọn chuỗi dữ liệu khác. nhưng tôi phải thật cẩn thận. 
+
+21
+00:01:49,420 --> 00:01:54,380
+like that.
+Luckily I can also select (over here) a different
+
+22
+00:01:54,380 --> 00:01:57,770
+tôi không thích thế. May là tôi có thể chọn  chuỗi dữ liệu khác ở đây. Chọn series two 
+
+23
+00:01:57,770 --> 00:02:09,409
+và tôi sẽ đổi giá trị ở đây thành 50. Đây trông có vẻ ổn, nhưng tất nhiên vẫn đang có vấn đề về tỉ lệ. 
+
+24
+00:02:09,409 --> 00:02:15,440
+Vì vậy, tôi sẽ định dạng (format) lại các trục một chút
+
+25
+00:02:15,440 --> 00:02:27,120
+trong trường hợp này, tôi muốn tối đa là 2 triệu
+
+26
+00:02:27,120 --> 00:02:39,480
+tôi sẽ làm tương tự ở đây
+
+27
+00:02:39,480 --> 00:02:52,040
+sau đó, tôi không cần cái này nữa. Và tôi vẫn gặp phải một vấn đề
+
+28
+00:02:52,040 --> 00:03:07,430
+đó là dữ liệu không được phân loại đúng. Cách đơn giản nhất là phân loại chúng ở đây
+
+29
+00:03:07,430 --> 00:03:10,860
+có nhiều cách để phân loại nhưng cách này sẽ làm được. 
+
+
+30
+00:03:10,860 --> 00:03:20,360
+chúng ta sẽ phân loại ở cột C, "actuals"
+
+31
+00:03:20,360 --> 00:03:25,390
+và bây giờ, nó đã được xếp hạng từ cao xuống thấp.
+Tôi muốn thêm cái này vào biểu đồ
+
+32
+00:03:25,390 --> 00:03:32,319
+bỏ tiêu đề, bỏ chú thích.
+
+33
+00:03:32,319 --> 00:03:43,300
+bỏ đường kẻ ngang.
+Tôi cũng muốn thay đổi những con số lớn này.
+
+34
+00:03:43,300 --> 00:03:53,800
+vì vậy, tôi sẽ định dạng con số một lần nữa
+
+35
+00:03:53,800 --> 00:04:06,019
+và tôi muốn các con số này ở đơn vị nghìn.
+một dấu phẩy sẽ làm được điều này.
+
+36
+00:04:06,019 --> 00:04:13,360
+ta phải chỉnh lại format (định dạng) nữa
+
+37
+00:04:13,360 --> 00:04:20,310
+chọn chart area.
+tôi cũng có thể thay đổi format ở đây.
+
+38
+00:04:20,310 --> 00:04:30,610
+chọn 2.15 là phổ biến nhất
+và 2.27
+
+39
+00:04:30,610 --> 00:04:38,520
+và nên xóa hết các fill còn lại
+
+40
+00:04:38,520 --> 00:04:41,820
+không border, không fill.
+
+41
+00:04:41,820 --> 00:04:49,370
+màu này cũng xấu quá. ta sẽ đổi màu
+
+
+42
+00:04:49,370 --> 00:05:00,050
+để giữ được sự thống nhất. 
+Xong rồi
+
+43
+00:05:00,050 --> 00:05:09,840
+và như thế là ta đã sắp sửa sẵn sàng.
+quay trở lại bảng thống kê. 
+
+44
+00:05:09,840 --> 00:05:22,300
+ta sẽ đjăt nó ở đây.
+và đó là "costs"
+
+45
+00:05:22,300 --> 00:05:29,080
+ta cũng nên chỉnh font chữ cho to lên một tý.
+20.
+
+46
+00:05:34,840 --> 00:05:41,400
+bỏ cái này đi
+
+47
+00:05:41,410 --> 00:05:45,770
+và bỏ cái fill khác nữa
+
+48
+00:05:45,770 --> 00:05:50,830
+biểu đồ chi phí "cost graph" cũng ở đây.
+hãy quan sát điều mà chúng ta sẽ thấy ở video tiếp theo.
+
+49
+00:05:50,830 --> 00:05:55,300
+ở video tiếp theo. chúng ta sẽ tạm thời không học về biểu đồ
+
+50
+00:05:55,300 --> 00:05:57,710
+mà sẽ học về trình trạng đầy đủ về lợi nhuận và tổn thất 
+
+51
+00:05:57,710 --> 00:06:02,500
+dưới dạng bảng. 
+tôi hứa đây sẽ là một phần thú vị
+
+52
+00:06:02,500 --> 00:06:03,360
+hẹn gặp lại
+

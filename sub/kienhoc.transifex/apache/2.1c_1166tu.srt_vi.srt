@@ -1,0 +1,670 @@
+0
+00:00:00,000 --> 00:00:01,226
+https://youtu.be/FnHF-d95eWE Luu_Huong_Minh
+
+1
+00:00:01,226 --> 00:00:02,600
+Vậy, điều gì giúp Apache Spark
+
+2
+00:00:02,600 --> 00:00:05,550
+đạt được hiệu suất cao?
+
+3
+00:00:05,550 --> 00:00:07,490
+Để trả lời câu hỏi trên, ta cần phải
+
+4
+00:00:07,490 --> 00:00:11,830
+xem xét cấu trúc của một trung tâm dữ liệu.
+
+5
+00:00:11,830 --> 00:00:14,030
+Đây là một nút mạng riêng lẻ,
+
+6
+00:00:14,030 --> 00:00:16,480
+bao gồm nhiều CPU, được kết nối
+
+7
+00:00:16,480 --> 00:00:20,470
+với các ổ đĩa cứng, ổ đĩa rắn SSD,
+
+8
+00:00:20,470 --> 00:00:22,250
+và bộ nhớ (RAM).
+
+9
+00:00:22,250 --> 00:00:25,360
+Các nút mạng này được đặt 
+trên một kệ và liên kết với
+
+10
+00:00:25,360 --> 00:00:27,330
+một thiết bị chuyển mạch ở đầu kệ.
+
+11
+00:00:27,330 --> 00:00:28,860
+Và các thiết bị chuyển mạch đầu kệ này
+
+12
+00:00:28,860 --> 00:00:33,760
+được liên kết với các thiết bị chuyển mạch đầu kệ khác.
+
+13
+00:00:33,760 --> 00:00:35,460
+Điều cần lưu ý ở đây là
+
+14
+00:00:35,460 --> 00:00:38,430
+băng thông mà ta có giữa các CPU
+
+15
+00:00:38,430 --> 00:00:44,560
+và các thiết bị trong một nút mạng lớn hơn nhiều
+
+16
+00:00:44,560 --> 00:00:47,530
+so với băng thông kết nối các nút mạng khác nhau trên một kệ
+
+17
+00:00:47,530 --> 00:00:52,910
+và lớn hơn rất nhiều so với 
+băng thông kết nối các kệ khác nhau.
+
+18
+00:00:52,910 --> 00:00:55,020
+Một điều nữa ta cần hiểu rõ khi bàn về hiệu suất,
+
+19
+00:00:55,020 --> 00:00:59,220
+khi ta sử dụng MapReduce,
+
+20
+00:00:59,220 --> 00:01:02,880
+mỗi bước đều đi qua các ổ đĩa cứng.
+
+21
+00:01:02,880 --> 00:01:06,380
+Cụ thể, ở bước Map, dữ liệu được đọc từ một ổ đĩa cứng,
+
+22
+00:01:06,380 --> 00:01:08,760
+rồi xuất dữ liệu ra một ổ cứng khác.
+
+23
+00:01:08,760 --> 00:01:11,940
+Bước Reduce đọc dữ liệu từ ổ cứng này
+
+24
+00:01:11,940 --> 00:01:16,220
+rồi lại ghi dữ liệu ra một ổ cứng khác nữa.
+
+25
+00:01:16,220 --> 00:01:18,680
+Giả sử ta có một công việc lặp đi lặp lại,
+
+26
+00:01:18,680 --> 00:01:22,170
+công việc này sẽ cần rất nhiều bước 
+nhập - xuất dữ liệu ở mỗi lần lặp.
+
+27
+00:01:22,170 --> 00:01:25,030
+Ở đây ta có 3 bước.
+
+28
+00:01:25,030 --> 00:01:29,040
+Mỗi bước đều phải ghi dữ liệu ra ổ cứng.
+
+29
+00:01:29,040 --> 00:01:33,640
+Và ở mỗi bước, bước Map
+sẽ đọc dữ liệu từ ổ đĩa
+
+30
+00:01:33,640 --> 00:01:36,280
+rồi viết ra một ổ khác, và bước Reduce
+
+31
+00:01:36,280 --> 00:01:39,040
+lại đọc dữ liệu từ ổ đĩa này
+rồi ghi ra ổ đĩa khác.
+
+32
+00:01:39,040 --> 00:01:41,570
+Cần nhớ là nhập - xuất dữ liệu
+tốn rất nhiều thời gian.
+
+33
+00:01:41,570 --> 00:01:44,220
+
+34
+00:01:44,220 --> 00:01:47,060
+Vậy nên động lực hình thành Apache Spark
+
+35
+00:01:47,060 --> 00:01:49,810
+là nhu cầu sử dụng MapReduce 
+cho những công việc phức tạp,
+
+36
+00:01:49,810 --> 00:01:52,720
+truy vấn dữ liệu tương tác cao
+và xữ lý trực tuyến.
+
+37
+00:01:52,720 --> 00:01:56,020
+Tất cả những việc này đòi hỏi
+rất nhiều bước nhập - xuất dữ liệu.
+
+38
+00:01:56,020 --> 00:01:58,510
+Trong khai thác dữ liệu tương tác cao,
+
+39
+00:01:58,510 --> 00:02:01,050
+ta đọc dữ liệu từ đĩa ở mỗi truy vấn.
+
+40
+00:02:01,050 --> 00:02:03,000
+Và với xử lý chuỗi kí tự, ta đọc dữ liệu
+
+41
+00:02:03,000 --> 00:02:06,710
+từ đĩa cho mỗi công việc.
+
+42
+00:02:06,710 --> 00:02:08,570
+Cũng với những công việc lặp đi lặp lại, 
+ta đọc dữ liệu từ đĩa
+
+43
+00:02:08,570 --> 00:02:13,160
+giữa mỗi bước của công việc lặp lại đó.
+
+44
+00:02:13,160 --> 00:02:17,710
+Và như ta đã biết, nhập - xuất dữ liệu từ đĩa
+mất rất nhiều thời gian.
+
+45
+00:02:17,710 --> 00:02:20,500
+Một xu hướng công nghệ hiện nay chính là 
+
+46
+00:02:20,500 --> 00:02:25,630
+giá thành của bán dẫn và các thiết bị đang giảm
+theo hàm mũ.
+
+47
+00:02:25,630 --> 00:02:30,420
+Ta có một biểu đồ, ở cột x là năm,
+
+48
+00:02:30,420 --> 00:02:35,440
+còn ở cột y là giá thành được thể hiện
+trên một thang logarit.
+
+49
+00:02:35,440 --> 00:02:39,170
+Ta có thể thấy giá thành ổ đĩa, bộ nhớ flash và RAM
+
+50
+00:02:39,170 --> 00:02:42,520
+đều đang giảm theo cấp số nhân.
+
+51
+00:02:42,520 --> 00:02:45,010
+Năm 2010, trung bình mỗi MB tốn 0.01 đôla
+
+52
+00:02:45,010 --> 00:02:48,960
+Còn bây giờ, giá mỗi MB ít hơn 1 xu nhiều.
+
+53
+00:02:48,960 --> 00:02:51,380
+Giá thành bộ nhớ giảm nghĩa là
+
+54
+00:02:51,380 --> 00:02:56,440
+ta có thể có nhiều bộ nhớ hơn cho mỗi nút mạng
+
+55
+00:02:56,440 --> 00:02:58,880
+Với những phần cứng hiện đại ngày nay,
+để áp dụng dữ liệu lớn
+
+56
+00:02:58,880 --> 00:03:03,240
+ta có thể dùng rất nhiều
+ổ cứng, rất nhiều CPU,
+
+57
+00:03:03,240 --> 00:03:06,320
+và rất nhiều bộ nhớ.
+
+58
+00:03:06,320 --> 00:03:08,330
+Đây chính là cơ sở cho việc
+
+59
+00:03:08,330 --> 00:03:11,510
+lưu trữ nhiều dữ liệu hơn trong bộ nhớ.
+
+60
+00:03:11,510 --> 00:03:15,140
+Nhưng để làm việc này, ta cần tạo ra 
+một hệ thống thực thi phân tán mới:
+
+61
+00:03:15,140 --> 00:03:19,220
+Apache Spark
+
+62
+00:03:19,220 --> 00:03:24,540
+Cần nhớ là, với MapReduce, mỗi lần lặp,
+
+63
+00:03:24,540 --> 00:03:28,250
+là một lần đọc dữ liệu từ đĩa và 
+viết dữ liệu ra một đĩa khác,
+
+64
+00:03:28,250 --> 00:03:32,350
+rồi lại phải đọc dữ liệu từ đĩa này ở lần lặp tiếp theo.
+
+65
+00:03:32,350 --> 00:03:35,240
+Điều này cũng đúng khi ta phân tích dữ liệu,
+
+66
+00:03:35,240 --> 00:03:38,110
+và khi ta thực hiện nhiều truy vấn
+
+67
+00:03:38,110 --> 00:03:40,700
+trên cùng một bộ dữ liệu.
+
+68
+00:03:40,700 --> 00:03:42,560
+Mỗi truy vấn là một lần
+
+69
+00:03:42,560 --> 00:03:46,650
+đọc dữ liệu tử ổ đĩa.
+
+70
+00:03:46,650 --> 00:03:51,680
+Với Spark, ta thay thế ổ đĩa bằng bộ nhớ RAM.
+
+71
+00:03:51,680 --> 00:03:54,060
+Ở bước đầu tiên, ta vẫn cần
+
+72
+00:03:54,060 --> 00:03:58,530
+đọc dữ liệu từ ổ đĩa cho lần lặp thứ nhất
+
+73
+00:03:58,530 --> 00:04:01,190
+hay lần truy vấn thứ nhất.
+
+74
+00:04:01,190 --> 00:04:05,370
+Nhưng những lần lặp và truy vấn tiếp theo
+
+75
+00:04:05,370 --> 00:04:07,640
+là dựa vào dữ liệu lưu trong bộ nhớ.
+
+76
+00:04:07,640 --> 00:04:10,270
+
+77
+00:04:10,270 --> 00:04:13,710
+Điều này sẽ làm tăng hiệu suất
+
+78
+00:04:13,710 --> 00:04:18,670
+từ 10 đến 100 lần so với đọc dữ liệu
+
+79
+00:04:18,670 --> 00:04:22,290
+từ mạng hay ổ đĩa.
+
+80
+00:04:22,290 --> 00:04:25,350
+Còn một số điểm khác giữa Apache Spark và
+
+81
+00:04:25,350 --> 00:04:28,810
+Apache Hadoop hay MapReduce.
+
+82
+00:04:28,810 --> 00:04:33,060
+Hadoop và MapReduce chỉ dùng ổ đĩa
+để lưu trữ dữ liệu.
+
+83
+00:04:33,060 --> 00:04:37,830
+Còn Spark dùng bộ nhớ hoặc ổ đĩa.
+
+84
+00:04:37,830 --> 00:04:42,290
+MapReduce chỉ thực hiện 2 thao tác
+là Map hoặc Reduce,
+
+85
+00:04:42,290 --> 00:04:45,600
+trong khi Spark có thể thực hiện
+nhiều biến đổi và hành động khác nhau.
+
+86
+00:04:45,600 --> 00:04:49,820
+Như ta đã thấy ở bài trước,
+
+87
+00:04:49,820 --> 00:04:54,360
+Spark cũng hỗ trợ các thao tác Map và Reduce 
+
+88
+00:04:54,360 --> 00:04:57,830
+Ta cũng bắt buộc phải chạy
+hàng loạt thao tác trong 1 lần
+
+89
+00:04:57,830 --> 00:04:59,560
+khi sử dụng MapReduce
+
+90
+00:04:59,560 --> 00:05:02,080
+Còn Spark có nhiều chế độ thực hiện 
+khác nhau như: hàng loạt, tương tác,
+
+91
+00:05:02,080 --> 00:05:05,430
+hay liên tục.
+
+92
+00:05:05,430 --> 00:05:08,820
+MapReduce chỉ hỗ trợ ngôn ngữ Java,
+
+93
+00:05:08,820 --> 00:05:13,265
+trong khi Spark hỗ trợ Scala, Java, R, và cả Python.
+
+94
+00:05:13,265 --> 00:05:16,010
+
+95
+00:05:16,010 --> 00:05:19,600
+Còn có nhiều khác biệt nữa giữa Spark và MapReduce.
+
+96
+00:05:19,600 --> 00:05:23,670
+Spark cung cấp một khuôn mẫu 
+tổng quát cho việc tính toán.
+
+97
+00:05:23,670 --> 00:05:26,500
+Nó cung cấp một hệ thống duy nhất
+
+98
+00:05:26,500 --> 00:05:27,790
+cho nhiều trường hợp sử dụng.
+
+99
+00:05:27,790 --> 00:05:30,600
+Kết quả là khi ta viết ứng dụng,
+
+100
+00:05:30,600 --> 00:05:33,900
+lượng code sẽ ngắn hơn 2-5 lần
+
+101
+00:05:33,900 --> 00:05:36,560
+khi ta dùng Spark.
+
+102
+00:05:36,560 --> 00:05:38,630
+Như đã thấy ở bài trước, Spark
+
+103
+00:05:38,630 --> 00:05:41,540
+thực hiện phân tích trì hoãn trên đồ thị dòng.
+
+104
+00:05:41,540 --> 00:05:46,410
+Sự thay đổi không được thực hiện
+đến khi một hành động xảy ra.
+
+105
+00:05:46,410 --> 00:05:48,716
+Điều này nghĩa là Spark có thể tối ưu hoá.
+
+106
+00:05:48,716 --> 00:05:51,100
+Nó còn có thể giảm thời gian chờ,
+
+107
+00:05:51,100 --> 00:05:53,500
+và nó có thể pipeline tốt hơn.
+
+108
+00:05:53,500 --> 00:05:57,000
+Spark tốn ít tài nguyên hơn để bắt đầu công việc và
+
+109
+00:05:57,000 --> 00:06:00,070
+trộn lẫn dữ liệu nhanh hơn.
+
+110
+00:06:00,070 --> 00:06:04,480
+Lưu trữ dữ liệu trong bộ nhớ RAM
+thật sự tạo ra sự khác biệt lớn.
+
+111
+00:06:04,480 --> 00:06:08,500
+Hai thí nghiệm vào năm 2013
+
+112
+00:06:08,500 --> 00:06:10,250
+sử dụng hai thuật toán lặp lại trong machine learning khác nhau:
+
+113
+00:06:10,250 --> 00:06:13,260
+phân cụm K-means,
+
+114
+00:06:13,260 --> 00:06:14,990
+và hồi quy logistic.
+
+115
+00:06:14,990 --> 00:06:18,280
+Trục x là thời gian,
+
+116
+00:06:18,280 --> 00:06:20,820
+Thanh màu đỏ là Hadoop MapReduce,
+
+117
+00:06:20,820 --> 00:06:23,887
+còn thanh màu xanh là Spark.
+
+118
+00:06:23,887 --> 00:06:25,720
+Có thể thấy sự giảm đi đáng kể
+
+119
+00:06:25,720 --> 00:06:28,230
+về thời gian thực hiện
+
+120
+00:06:28,230 --> 00:06:29,340
+khi sử dụng Spark.
+
+121
+00:06:29,340 --> 00:06:31,890
+
+122
+00:06:31,890 --> 00:06:36,570
+Năm 2014, Spark xếp hạng nhất
+
+123
+00:06:36,570 --> 00:06:40,770
+trong việc sắp xếp 100 terabyte dữ liệu
+
+124
+00:06:40,770 --> 00:06:43,460
+chỉ trong 23 phút.
+
+125
+00:06:43,460 --> 00:06:46,590
+Kỉ lục trước đó của Hadoop
+
+126
+00:06:46,590 --> 00:06:51,460
+là 72 phút, và sử dụng số lượng nút mạng
+
+127
+00:06:51,460 --> 00:06:55,570
+nhiều hơn gấp 10 lần.
+
+128
+00:06:55,570 --> 00:07:01,060
+Spark cũng là môi trường thực hiện đầu tiên
+
+129
+00:07:01,060 --> 00:07:04,570
+có thể sắp xếp 1 petabyte - 1000 terabyte dữ liệu,
+
+130
+00:07:04,570 --> 00:07:08,855
+sử dụng dich vụ đám mây công cộng, cụ thể là Amazon EC2.
+
+131
+00:07:08,855 --> 00:07:12,490
+
+132
+00:07:12,490 --> 00:07:15,750
+Spark còn có 2 cách ưu hoá hiệu suất rất quan trọng,
+
+133
+00:07:15,750 --> 00:07:19,200
+bên cạnh việc dùng RAM thay cho ổ đĩa.
+
+134
+00:07:19,200 --> 00:07:22,510
+Thứ nhất là Catalyst Optimization.
+
+135
+00:07:22,510 --> 00:07:26,350
+Nó có thể giảm đến 75% thời gian cần thiết
+
+136
+00:07:26,350 --> 00:07:28,910
+để chạy một phần mèm.
+
+137
+00:07:28,910 --> 00:07:33,160
+Thứ hai là Project Tungsten, quản lý bộ nhớ
+theo phương thức off-heap
+
+138
+00:07:33,160 --> 00:07:36,480
+giúp giảm ít nhất 75% bộ nhớ sử dụng,
+
+139
+00:07:36,480 --> 00:07:40,920
+cùng với ít lần dọn rác hơn nhiều.
+
+140
+00:07:40,920 --> 00:07:44,150
+Việc dọn rác là khi hệ thống tạm dừng
+để dọn dẹp
+
+141
+00:07:44,150 --> 00:07:47,950
+những phần của bộ nhớ mà
+ta không sử dụng nữa.
+
+142
+00:07:47,950 --> 00:07:53,500
+Catalyst là sự tối ưu hoá và môi trường.
+
+143
+00:07:53,500 --> 00:07:59,020
+Catalyst sử dụng cùng một pipeline 
+tối ưu hoá việc thực thi
+
+144
+00:07:59,020 --> 00:08:05,250
+giữa các ngôn ngữ khác nhau như:
+Java, R, Python, và Scala,
+
+145
+00:08:05,250 --> 00:08:07,830
+và giữa các cơ sở hạ tầng ta có
+
+146
+00:08:07,830 --> 00:08:13,940
+cho các khung dữ liệu, bộ dữ liệu, và Spark SQL.
+
+147
+00:08:13,940 --> 00:08:18,430
+Đi sâu vào cơ chế,
+Spark sử dụng môi trường thực thi
+
+148
+00:08:18,430 --> 00:08:20,740
+máy ảo Java - Java Virtual Machine
+
+149
+00:08:20,740 --> 00:08:23,830
+Vì Java coi mọi thứ là một đối tượng,
+
+150
+00:08:23,830 --> 00:08:28,470
+nên nếu ta có một chuỗi kí tự abcd, 
+và ta thể hiện nó một cách trực tiếp,
+
+151
+00:08:28,470 --> 00:08:32,510
+thì nó sẽ chiếm 4 byte, mỗi byte là một kí tự.
+
+152
+00:08:32,510 --> 00:08:36,250
+Tuy nhiên, trong Java thì mọi thứ là một đối tượng,
+
+153
+00:08:36,250 --> 00:08:40,950
+nên nó sẽ chiếm đến 48 byte
+
+154
+00:08:40,950 --> 00:08:44,220
+để lưu trữ một đối tượng như vậy.
+
+155
+00:08:44,220 --> 00:08:49,350
+Với Project Tungsten, ta có thể lưu trữ mỗi đối tượng
+
+156
+00:08:49,350 --> 00:08:51,940
+một cách gọn gàng hơn,
+
+157
+00:08:51,940 --> 00:08:55,840
+chiếm ít bộ nhớ hơn - ít nhất là 75%
+
+158
+00:08:55,840 --> 00:09:01,100
+với ít lần dọn rác hơn.
+
+159
+00:09:01,100 --> 00:09:02,242
+pauses.
+
+160
+00:09:02,242 --> 00:09:02,742
+

@@ -1,0 +1,391 @@
+1
+00:00:00,000 --> 00:00:00,370
+mhthanh
+https://youtu.be/IXXHH6ztsSA
+---------- KIENHOC.VN ----------
+
+2
+00:00:00,370 --> 00:00:00,870
+Xin chào
+---------- KIENHOC.VN ----------
+
+3
+00:00:00,870 --> 00:00:02,670
+Chào mừng đến với Chương 2
+---------- KIENHOC.VN ----------
+
+4
+00:00:02,670 --> 00:00:04,560
+Hy vọng là bạn đã thích Chương 1
+---------- KIENHOC.VN ----------
+
+5
+00:00:04,560 --> 00:00:06,850
+Bài giảng đó dài hơn
+---------- KIENHOC.VN ----------
+
+6
+00:00:06,850 --> 00:00:08,930
+cố gắng truyền cảm hứng cho bạn một chút
+---------- KIENHOC.VN ----------
+
+7
+00:00:08,930 --> 00:00:12,150
+Bây giờ ta sẽ quay lại những khái niệm cơ bản
+
+8
+00:00:12,150 --> 00:00:14,350
+Bài giảng 1 tương ứng với khoảng 4-5 chương đầu
+
+9
+00:00:14,350 --> 00:00:15,850
+ của quyển sách giáo trình
+
+10
+00:00:15,850 --> 00:00:19,940
+Như mọi khi, video và các slide này
+
+11
+00:00:19,940 --> 00:00:23,145
+được cấp quyền sử dụng theo giấy phép Creative Commons Attribution
+
+12
+00:00:23,145 --> 00:00:24,770
+phần âm thanh cũng thế
+
+13
+00:00:24,770 --> 00:00:27,690
+Bây giờ ta sẽ nói về
+
+14
+00:00:27,690 --> 00:00:29,700
+những thứ thật sự nền tảng
+
+15
+00:00:29,700 --> 00:00:33,700
+tạo nên ngôn ngữ Python
+
+16
+00:00:33,700 --> 00:00:36,090
+Hằng số -- một số thứ ở đây chỉ là thuật ngữ
+
+17
+00:00:36,090 --> 00:00:38,650
+tôi có thể nói "constant"
+
+18
+00:00:38,650 --> 00:00:40,660
+thì bạn đừng sợ
+
+19
+00:00:40,660 --> 00:00:43,860
+Hằng số thì đối nghịch với cái gì đó
+
+20
+00:00:43,860 --> 00:00:45,300
+thay đổi, mà ta gọi là biến
+
+21
+00:00:45,300 --> 00:00:47,310
+Ta sẽ nói về các biến trong slide kế tiếp
+
+22
+00:00:47,310 --> 00:00:48,850
+Nhưng bây giờ thì nói về hằng số
+
+23
+00:00:48,850 --> 00:00:51,520
+Hằng số là những thứ
+
+24
+00:00:51,520 --> 00:00:57,430
+tự nhiên, như các con số 123, 98.6
+
+25
+00:00:57,430 --> 00:00:59,170
+hay chữ "hello world"
+
+26
+00:00:59,170 --> 00:01:02,322
+Cái mà tôi đang làm ở đây
+
+27
+00:01:02,322 --> 00:01:03,530
+là sử dụng trình biên dịch Python
+
+28
+00:01:03,530 --> 00:01:06,180
+Đó là cách bạn nói với dấu nhắc >>>
+
+29
+00:01:06,180 --> 00:01:08,110
+Tôi nói "print 123"
+
+30
+00:01:08,110 --> 00:01:10,480
+thì sau đó Python in ra 123
+
+31
+00:01:10,480 --> 00:01:16,440
+print 98.6, Python in ra 98.6, 
+và print 'hello world'
+
+32
+00:01:16,440 --> 00:01:19,500
+Vậy hằng số là những thứ như 123, 98.6
+
+33
+00:01:19,500 --> 00:01:22,780
+và 'hello world'
+
+34
+00:01:22,780 --> 00:01:25,820
+Ta có thể dùng dấu nháy đơn hoặc dấu nháy kép
+
+35
+00:01:25,820 --> 00:01:26,910
+để biểu thị các chuỗi ký tự
+
+36
+00:01:26,910 --> 00:01:29,629
+Các chương trình làm việc với các con số
+
+37
+00:01:29,629 --> 00:01:30,170
+và các chuỗi ký tự
+
+38
+00:01:30,170 --> 00:01:34,370
+Và ta có những giá trị không thay đổi này mà ta gọi là các hằng số
+
+39
+00:01:34,370 --> 00:01:39,930
+Ngược lại với hằng số là các biến số (gọi tắt là biến)
+
+40
+00:01:39,930 --> 00:01:42,100
+Cách mà tôi hay dùng để giải thích về một biến là
+
+41
+00:01:42,100 --> 00:01:46,100
+nó là một chỗ trong bộ nhớ của máy tính
+
+42
+00:01:46,100 --> 00:01:47,580
+Ta cho nó 1 cái tên
+
+43
+00:01:47,580 --> 00:01:49,530
+Ta đặt tên cho biến
+
+44
+00:01:49,530 --> 00:01:55,270
+Ở đây, tôi nói x = 12.2 và y = 14
+
+45
+00:01:55,270 --> 00:01:56,870
+Tôi đang chọn cái tên
+
+46
+00:01:56,870 --> 00:01:59,540
+và tôi đang chọn nội dung để đặt vào
+
+47
+00:01:59,540 --> 00:02:03,330
+Đây là một câu lệnh gán
+
+48
+00:02:03,330 --> 00:02:05,430
+Cách nghĩ về câu lệnh gán
+
+49
+00:02:05,430 --> 00:02:08,360
+là nó có phương hướng
+
+50
+00:02:08,360 --> 00:02:12,010
+Ta nói, này Python, hãy tìm một vùng nhớ nào đó
+
+51
+00:02:12,010 --> 00:02:16,260
+Sau này tôi sẽ dùng nhãn x để nói về vùng nhớ đó
+
+52
+00:02:16,260 --> 00:02:20,430
+Và gắn con số 12.2 vào cho x
+
+53
+00:02:20,430 --> 00:02:21,450
+Đây là một đoạn mã tuần tự
+
+54
+00:02:21,450 --> 00:02:22,950
+Việc tiếp theo tôi muốn máy tính làm
+
+55
+00:02:22,950 --> 00:02:26,080
+là tìm thêm một vùng nhớ khác, gọi là y
+
+56
+00:02:26,080 --> 00:02:30,780
+Gắn con số 14 vào vùng nhớ y, 
+và sau này tôi sẽ gọi đến nó
+
+57
+00:02:30,780 --> 00:02:34,310
+Vậy là ta có 2 khu vực nhỏ
+
+58
+00:02:34,310 --> 00:02:38,690
+trong bộ nhớ, mà một trong số chúng được đặt tên là x
+
+59
+00:02:38,690 --> 00:02:40,080
+Đây là một ô nhỏ
+
+60
+00:02:40,080 --> 00:02:41,940
+trong đó ta có thể vẽ vào
+
+61
+00:02:41,940 --> 00:02:44,360
+Và một vùng nhớ được đặt tên là y, trong đó ta đặt vào số 12.2
+
+62
+00:02:44,360 --> 00:02:47,880
+Sau khi những dòng này chạy, ta có 12.2 trong một ô và 14
+
+63
+00:02:47,880 --> 00:02:49,570
+trong ô còn lại
+
+64
+00:02:49,570 --> 00:02:54,020
+Giả sử có thêm một dòng ở dưới đây
+
+65
+00:02:54,020 --> 00:02:56,920
+Dòng thứ 3 này, sau khi dòng này được thực thi
+
+66
+00:02:56,920 --> 00:02:59,070
+và sau khi dòng này được thực thi,
+ta gán x = 100
+
+67
+00:02:59,070 --> 00:03:02,320
+Nhớ rằng lệnh gán này kiểu như có một phương hướng
+
+68
+00:03:02,320 --> 00:03:04,800
+Có nhớ vùng nhớ x của tôi không?
+
+69
+00:03:04,800 --> 00:03:07,490
+Bây giờ tôi muốn đặt số 100 vào đó
+
+70
+00:03:07,490 --> 00:03:08,920
+Tôi nghĩ rằng cách làm
+
+71
+00:03:08,920 --> 00:03:10,370
+là bỏ ra
+
+72
+00:03:10,370 --> 00:03:14,980
+số 12.2 hoặc ghi đè lên số 12.2 và đặt số 100 vào đó
+
+73
+00:03:14,980 --> 00:03:18,920
+Cuối cùng thì x giữ số 100
+
+74
+00:03:18,920 --> 00:03:21,820
+Và y giữ số 14
+
+75
+00:03:21,820 --> 00:03:24,380
+Biến có thể giữ một giá trị
+
+76
+00:03:24,380 --> 00:03:26,910
+Ta có thể lấy ra xem, tái sử dụng chúng
+
+77
+00:03:26,910 --> 00:03:30,900
+và đặt vào những giá trị khác nhau nếu ta muốn
+
+78
+00:03:30,900 --> 00:03:33,870
+Có một số luật trong việc đặt tên biến
+
+79
+00:03:33,870 --> 00:03:37,350
+Bạn phải đặt tên cho biến
+
+80
+00:03:37,350 --> 00:03:39,550
+Thường thì ta đặt tên có ý nghĩa nào đó
+
+81
+00:03:39,550 --> 00:03:41,580
+Ta sẽ sớm nói về việc đó
+
+82
+00:03:41,580 --> 00:03:44,910
+Trong Python, tên biến có thể bắt đầu bằng dấu gạch chân
+
+83
+00:03:44,910 --> 00:03:48,090
+Như các lập trình viên, ta có xu hướng không sử dụng nó
+
+84
+00:03:48,090 --> 00:03:52,330
+Ta để các thư viện dùng nó
+
+85
+00:03:52,330 --> 00:03:57,370
+Tên biến phải được tạo thành từ các ký tự, con số, dấu gạch chân,
+
+86
+00:03:57,370 --> 00:04:00,010
+và bắt đầu bằng một ký tự hoặc một dấu gạch chân
+
+87
+00:04:00,010 --> 00:04:06,000
+Python phân biệt chữ viết hoa và viết thường.
+tên "spam" dùng được, tên "eggs" dùng được
+
+88
+00:04:06,000 --> 00:04:08,340
+"spam23" dùng được, vì con số không phải là
+
+89
+00:04:08,340 --> 00:04:09,590
+ký tự đầu tiên
+
+90
+00:04:09,590 --> 00:04:11,880
+tên "_speed" cũng hoàn toàn dùng được
+
+91
+00:04:11,880 --> 00:04:15,830
+vì nó bắt đầu bằng một dấu gạch chân hoặc một ký tự
+
+92
+00:04:15,830 --> 00:04:20,839
+tên "23spam" không dùng được vì nó bắt đầu bằng 1 con số
+
+93
+00:04:20,839 --> 00:04:24,360
+Tên này không bắt đầu bằng ký tự hay dấu gạch chân (nên cũng không hợp lệ)
+
+94
+00:04:24,360 --> 00:04:27,520
+Không được có dấu chấm trong tên biến
+
+95
+00:04:27,520 --> 00:04:30,280
+Dấu chấm có ý nghĩa riêng trong Python
+

@@ -1,0 +1,1047 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/OVuQEfT4omA
+
+1
+00:00:00,500 --> 00:00:03,000
+Hãy nhìn vào chân lý dự đoán thứ hai
+
+2
+00:00:03,000 --> 00:00:06,820
+và rằng dự đoán tổng thể chính xác hơn
+
+3
+00:00:06,820 --> 00:00:09,190
+dự đoán từng phần.
+
+4
+00:00:09,190 --> 00:00:10,350
+Và điều này là hợp lý.
+
+5
+00:00:10,350 --> 00:00:12,680
+Nhưng khi chúng ta nói về tổng thể,
+
+6
+00:00:12,680 --> 00:00:15,820
+chúng ta nói về tổng hợp dự đoán theo SKU.
+
+7
+00:00:15,820 --> 00:00:18,850
+Hãy xem dự đoán cho một loại sản phẩm.
+
+8
+00:00:18,850 --> 00:00:19,800
+Hay thời điểm.
+
+9
+00:00:19,800 --> 00:00:21,790
+Nhìn vào hàng hóa hay một khoảng thời gian nhất định.
+
+10
+00:00:21,790 --> 00:00:23,270
+Một tuần, một tháng, một năm.
+
+11
+00:00:23,270 --> 00:00:24,440
+Hay một địa điểm.
+
+12
+00:00:24,440 --> 00:00:27,220
+Và cách tôi tổng hợp những thứ này lại với nhau
+
+13
+00:00:27,220 --> 00:00:29,820
+có thể cải thiện độ chính xác cho dự đoán của tôi.
+
+14
+00:00:29,820 --> 00:00:32,259
+Vậy để xem xét điều này, chúng ta sẽ sử dụng một chuẩn đo lường,
+
+15
+00:00:32,259 --> 00:00:34,390
+và chúng ta sẽ gọi nó là Hệ số Biến thiên
+
+16
+00:00:34,390 --> 00:00:36,230
+Đây là một chuẩn đo lường rất chính xác để nhìn vào.
+
+17
+00:00:36,230 --> 00:00:39,350
+Nó được định nghĩa đơn giản là
+
+18
+00:00:39,350 --> 00:00:40,490
+độ lệch chuẩn trên giá trị trung bình.
+
+19
+00:00:40,490 --> 00:00:41,010
+Đúng không?
+
+20
+00:00:41,010 --> 00:00:44,660
+Đó là giàn sự phân phối
+
+21
+00:00:44,660 --> 00:00:47,910
+được chia bởi xu hướng trung tâm,
+là giá trị trung bình.
+
+22
+00:00:47,910 --> 00:00:50,520
+Đó là thước đo kém ổn định hay không chắc chắn
+
+23
+00:00:50,520 --> 00:00:52,390
+trong bất kỳ loại phân phối nào.
+
+24
+00:00:52,390 --> 00:00:56,320
+Và Hệ số biến đổi (CV) này, rõ ràng là nếu bạn
+nhìn vào định nghĩa ở đây,
+
+25
+00:00:56,320 --> 00:00:57,760
+nó không thể có giá trị âm.
+
+26
+00:00:57,760 --> 00:00:58,260
+Đúng không?
+
+27
+00:00:58,260 --> 00:00:59,870
+Nó không thực sự là 0.
+
+28
+00:00:59,870 --> 00:01:01,860
+Điều đó có vẻ hơi kỳ lạ.
+
+29
+00:01:01,860 --> 00:01:04,900
+Nhìn chung, nó là một số dương.
+
+30
+00:01:04,900 --> 00:01:08,230
+Và CV càng cao thì càng dễ thay đổi.
+
+31
+00:01:08,230 --> 00:01:11,250
+Nếu tiến gần tới 0,5 hoặc tiến gần tới 1,
+
+32
+00:01:11,250 --> 00:01:13,170
+điều đó có nghĩa là độ lệch chuẩn của bạn
+
+33
+00:01:13,170 --> 00:01:14,700
+lớn tương đương giá trị trung bình.
+
+34
+00:01:14,700 --> 00:01:16,580
+Như thế sẽ rất không ổn định.
+
+35
+00:01:16,580 --> 00:01:20,130
+Nếu tôi có hai sản phẩm, màu đỏ và màu xanh
+
+36
+00:01:20,130 --> 00:01:22,640
+để tôi xóa những thứ này đi.
+
+37
+00:01:22,640 --> 00:01:24,140
+Chúng ta có như vậy.
+
+38
+00:01:24,140 --> 00:01:26,550
+Bạn có thể thấy là nếu tôi phải dự đoán một trong những thứ này,
+
+39
+00:01:26,550 --> 00:01:29,270
+nếu tôi phải chọn sản phẩm mà tôi muốn dự đoán,
+
+40
+00:01:29,270 --> 00:01:32,130
+màu xanh hay màu đỏ, thì tôi nghĩ
+tất cả chúng ta sẽ chọn cái màu xanh.
+
+41
+00:01:32,130 --> 00:01:34,491
+Vì nó có lẽ ở vào khoảng 100.
+
+42
+00:01:34,491 --> 00:01:34,990
+Đúng không?
+
+43
+00:01:34,990 --> 00:01:35,679
+Đó là đường màu xanh dương.
+
+44
+00:01:35,679 --> 00:01:37,470
+Nếu đây là cầu hàng ngày trên trục thẳng đứng
+
+45
+00:01:37,470 --> 00:01:40,970
+và bạn có thể thấy thời gian kéo dài theo trục ngang.
+
+46
+00:01:40,970 --> 00:01:42,850
+Rõ ràng là không có nhiều tính không ổn định ở đó,
+
+47
+00:01:42,850 --> 00:01:46,850
+khác với sản phẩm màu đỏ, đã chuyển qua chuyển lại
+
+48
+00:01:46,850 --> 00:01:50,020
+từ gần bằng 0 đến 200 đơn vị sản phẩm.
+
+49
+00:01:50,020 --> 00:01:53,020
+Bạn có thể thấy CV ở đây, nếu tôi nhìn vào sản phẩm màu đỏ,
+
+50
+00:01:53,020 --> 00:01:57,560
+giá trị trung bình là 100, và độ lệch chuẩn là 45 đơn vị.
+
+51
+00:01:57,560 --> 00:01:59,340
+Thì hệ số biến thiên đơn giản
+
+52
+00:01:59,340 --> 00:02:03,420
+ là bằng 45, tổng thể là 100, hay 0,45
+
+53
+00:02:03,420 --> 00:02:06,600
+Và sản phẩm màu xanh có cùng giá trị trung bình.
+
+54
+00:02:06,600 --> 00:02:09,120
+Vậy chúng có cùng giá trị trung bình, nhưng
+
+55
+00:02:09,120 --> 00:02:09,800
+độ lệch chuẩn chỉ bằng 1.
+
+56
+00:02:09,800 --> 00:02:14,560
+Vậy hệ số biến thiên của nó bằng 0,01
+
+57
+00:02:14,560 --> 00:02:18,190
+Bạn sẽ đoán là hệ số biến thiên càng cao
+
+58
+00:02:18,190 --> 00:02:19,720
+thì càng khó dự đoán.
+
+59
+00:02:19,720 --> 00:02:22,320
+Hay khả năng dự đoán chính xác càng thấp,
+
+60
+00:02:22,320 --> 00:02:25,580
+vì có quá nhiều tính hay thay đổi.
+
+61
+00:02:25,580 --> 00:02:26,990
+Nên đó sẽ là chuẩn đo lường tốt.
+
+62
+00:02:26,990 --> 00:02:29,130
+Và chúng ta sẽ sử dụng CV như một ủy nhiệm
+
+63
+00:02:29,130 --> 00:02:31,580
+để xem liệu phép tổng hợp này có thực sự
+
+64
+00:02:31,580 --> 00:02:33,710
+cải thiện độ chính xác của dự đoán hay không.
+
+65
+00:02:33,710 --> 00:02:35,890
+Vậy hãy quay trở lại cửa hàng sandwich của chúng ta.
+
+66
+00:02:35,890 --> 00:02:37,730
+Và dĩ nhiên cửa hàng sandwich,
+
+67
+00:02:37,730 --> 00:02:40,580
+ngoài bán sandwich thì còn bán rất nhiều cà phê.
+
+68
+00:02:40,580 --> 00:02:42,560
+Và cà phê luôn luôn có nắp.
+
+69
+00:02:42,560 --> 00:02:44,720
+Vậy ở đây chúng ta có ba loại cà phê,
+
+70
+00:02:44,720 --> 00:02:46,350
+và tất cả đều có những chiếc cốc giấy riêng.
+
+71
+00:02:46,350 --> 00:02:50,000
+Cốc lớn kia có cầu hàng ngày
+
+72
+00:02:50,000 --> 00:02:51,010
+vào khoảng 80.
+
+73
+00:02:51,010 --> 00:02:53,950
+Được phân phối ở mức bình thường,
+với độ lệch chuẩn là 30.
+
+74
+00:02:53,950 --> 00:02:54,450
+Phải không?
+
+75
+00:02:54,450 --> 00:02:55,283
+Là vậy đó.
+
+76
+00:02:55,283 --> 00:02:58,550
+Vậy ta có thể tính ra CV bằng 0,38
+
+77
+00:02:58,550 --> 00:03:00,790
+Với cốc cỡ vừa, tôi sẽ cho bạn cầu trung bình.
+
+78
+00:03:00,790 --> 00:03:03,590
+Bạn bán nhiều hơn với loại cốc này - 450 cốc một ngày.
+
+79
+00:03:03,590 --> 00:03:07,910
+Độ lệch chuẩn là 210 và CV của bạn là 0,47
+
+80
+00:03:07,910 --> 00:03:10,240
+Và sau đó là cốc nhỏ bán được khoảng 250.
+
+81
+00:03:10,240 --> 00:03:13,130
+Và bạn có thể thấy độ lệch chuẩn là 110,
+
+82
+00:03:13,130 --> 00:03:15,040
+và CV là 0,44.
+
+83
+00:03:15,040 --> 00:03:16,660
+Vậy tôi có ba loại cốc này.
+
+84
+00:03:16,660 --> 00:03:20,669
+Và bạn giả sử là mỗi loại cốc có nắp riêng của nó.
+
+85
+00:03:20,669 --> 00:03:21,960
+Để tôi vẽ nắp.
+
+86
+00:03:21,960 --> 00:03:23,010
+Có rồi đó.
+
+87
+00:03:23,010 --> 00:03:25,060
+Và ở dưới đáy biểu đồ, tôi có
+
+88
+00:03:25,060 --> 00:03:27,650
+tình trạng phân phối trong
+
+89
+00:03:27,650 --> 00:03:29,820
+khung thời gian khoảng một năm.
+
+90
+00:03:29,820 --> 00:03:32,810
+Vậy bạn thấy những cái có tính hay thay đổi cao,
+
+91
+00:03:32,810 --> 00:03:35,010
+cốc trung bình bán được nhiều nhất,
+
+92
+00:03:35,010 --> 00:03:37,840
+có mức độ không ổn định cao hơn loại cốc nhỏ.
+
+93
+00:03:37,840 --> 00:03:39,930
+Còn cốc lớn thì khá ổn định,
+
+94
+00:03:39,930 --> 00:03:42,030
+nhưng chúng ta không bán được nhiều.
+
+95
+00:03:42,030 --> 00:03:43,900
+Vậy bạn có thể thấy mức độ không ổn định ở đây,
+
+96
+00:03:43,900 --> 00:03:48,210
+nhưng câu hỏi đặt ra là: Sẽ thế nào nếu tôi tạo một nắp chung?
+
+97
+00:03:48,210 --> 00:03:51,290
+Vậy thay vì để mỗi loại cốc có một nắp riêng,
+
+98
+00:03:51,290 --> 00:03:54,720
+và những chiếc cốc là độc nhất,
+giờ tôi sẽ tạo một loại nắp chung cho tất cả.
+
+99
+00:03:54,720 --> 00:03:59,280
+Vậy là sẽ chỉ có một nắp cho tất cả các loại cốc.
+
+100
+00:03:59,280 --> 00:04:00,850
+Điều gì sẽ xảy ra?
+
+101
+00:04:00,850 --> 00:04:02,640
+Chúng ta có thể thấy ở đây là
+
+102
+00:04:02,640 --> 00:04:04,320
+tình trạng phân bổ của chiếc nắp chung đó.
+
+103
+00:04:04,320 --> 00:04:07,480
+Và đó sẽ là kết hợp của cả ba
+
+104
+00:04:07,480 --> 00:04:08,610
+tình trạng phân bổ đó.
+
+105
+00:04:08,610 --> 00:04:12,480
+Nếu tôi nhìn vào giá trị trung bình, hay giá trị ước định,
+
+106
+00:04:12,480 --> 00:04:15,220
+thì sẽ là tổng của giá trị ước định của
+
+107
+00:04:15,220 --> 00:04:19,019
+từng loại cốc, và bằng 780.
+
+108
+00:04:19,019 --> 00:04:22,430
+Và độ lệch chuẩn của cầu cho chiếc nắp chung đó
+
+109
+00:04:22,430 --> 00:04:26,530
+sẽ là căn bậc hai của tổng các giá trị biến thiên.
+
+110
+00:04:26,530 --> 00:04:27,830
+Hãy kiểm tra phép tính của tôi.
+
+111
+00:04:27,830 --> 00:04:29,010
+Đúng phải không.
+
+112
+00:04:29,010 --> 00:04:32,410
+Vậy bạn sẽ có những chiếc nắp chung
+
+113
+00:04:32,410 --> 00:04:37,040
+được phân phối với giá trị trung bình,
+hay ước định là 780 đơn vị
+
+114
+00:04:37,040 --> 00:04:40,090
+mỗi ngày, với độ lệch chuẩn bằng 239
+
+115
+00:04:40,090 --> 00:04:41,420
+Và hãy xem điều gì xảy ra với CV của tôi.
+
+116
+00:04:41,420 --> 00:04:43,370
+Nó giảm xuống còn 0,31
+
+117
+00:04:43,370 --> 00:04:46,940
+Nó thấp hơn bất kỳ loại nắp riêng nào.
+
+118
+00:04:46,940 --> 00:04:48,062
+Tại sao lại như vậy?
+
+119
+00:04:48,062 --> 00:04:50,020
+Đây là những gì bạn sẽ thấy về tình trạng phân phối
+
+120
+00:04:50,020 --> 00:04:51,840
+của nắp chung.
+
+121
+00:04:51,840 --> 00:04:53,770
+Hiện tượng này được gọi là
+
+122
+00:04:53,770 --> 00:04:54,980
+góp chung rủi ro.
+
+123
+00:04:54,980 --> 00:04:58,100
+Tôi đang giảm tổng số mức độ không ổn định
+
+124
+00:04:58,100 --> 00:05:03,300
+vì chúng ta giả sử rằng nếu một vài mức độ rủi ro
+của cốc lớn
+
+125
+00:05:03,300 --> 00:05:07,310
+được bù đắp bởi một vài sự chuyển qua chuyển lại
+của cầu cho cốc nhỏ,
+
+126
+00:05:07,310 --> 00:05:08,520
+và của cốc trung bình.
+
+127
+00:05:08,520 --> 00:05:11,380
+Thì những đỉnh nhọn và vùng trũng sâu
+của từng loại cốc
+
+128
+00:05:11,380 --> 00:05:13,040
+sẽ bù đắp cho nhau.
+
+129
+00:05:13,040 --> 00:05:16,020
+Và đó chính là nội dung của góp chung rủi ro.
+
+130
+00:05:16,020 --> 00:05:19,060
+Đó cũng là một ví dụ hay, một ví dụ rất đơn giản
+
+131
+00:05:19,060 --> 00:05:20,730
+mà bạn thường thấy hàng ngày và không nghĩ tới
+
+132
+00:05:20,730 --> 00:05:24,640
+các bộ phận có thể tháo rời, hay các bộ phận tương đồng nhau.
+
+133
+00:05:24,640 --> 00:05:27,600
+Đây thực sự là một vấn đề lớn
+
+134
+00:05:27,600 --> 00:05:29,860
+đối với mọi sản phẩm được sản xuất.
+
+135
+00:05:29,860 --> 00:05:33,420
+Các kỹ sư sẽ cố gắng thiết kế ra một sản phẩm độc đáo.
+
+136
+00:05:33,420 --> 00:05:35,640
+Và bạn có thể có một sản phẩm với
+
+137
+00:05:35,640 --> 00:05:38,850
+bu-lông hay thành phần nào đó là duy nhất cho sản phẩm đó,
+
+138
+00:05:38,850 --> 00:05:41,970
+nhưng nó có thể là thành phần chung cho nhiều sản phẩm khác.
+
+139
+00:05:41,970 --> 00:05:44,670
+Vậy ý tưởng có nhiều bộ phận chung,
+
+140
+00:05:44,670 --> 00:05:48,300
+hay thành phần chung giữa các sản phẩm khác nhau,
+
+141
+00:05:48,300 --> 00:05:51,890
+sẽ giảm thiểu tính biến thiên của sản phẩm chung đó,
+
+142
+00:05:51,890 --> 00:05:53,561
+và khiến việc dự đoán trở nên dễ dàng hơn.
+
+143
+00:05:53,561 --> 00:05:54,810
+Nó còn làm được nhiều điều khác nữa.
+
+144
+00:05:54,810 --> 00:05:56,850
+Chúng ta sẽ nói khi thảo luận về tồn kho.
+
+145
+00:05:56,850 --> 00:05:59,500
+Nhưng bạn có thể nghĩ tới việc giảm sự biến thiên.
+
+146
+00:05:59,500 --> 00:06:01,730
+Và khi bạn giảm sự biến thiên,
+
+147
+00:06:01,730 --> 00:06:02,780
+sẽ thu được kết quả tốt.
+
+148
+00:06:02,780 --> 00:06:03,280
+Đúng không?
+
+149
+00:06:03,280 --> 00:06:05,650
+Sẽ dễ dự đoán hơn, và trên thực tế
+
+150
+00:06:05,650 --> 00:06:07,210
+bạn sẽ cần ít hàng tồn kho trong Kho An Toàn hơn.
+
+151
+00:06:07,210 --> 00:06:10,100
+Và chúng ta sẽ nói về điều đó sau.
+
+152
+00:06:10,100 --> 00:06:12,150
+Nhưng điều mấu chốt tôi muốn nói ở đây là
+
+153
+00:06:12,150 --> 00:06:15,120
+nếu tôi tổng hợp theo SKU, với việc làm lại,
+
+154
+00:06:15,120 --> 00:06:17,950
+nhiều bộ phận tách rời hay bộ phận chung đó,
+
+155
+00:06:17,950 --> 00:06:19,930
+thì tôi sẽ giảm được sự biến thiên.
+
+156
+00:06:19,930 --> 00:06:23,800
+Và sự giảm bớt đó được nhìn thấy trong hệ số biến thiên.
+
+157
+00:06:23,800 --> 00:06:26,100
+Nhưng tôi cũng có thể tổng hợp theo thời gian.
+
+158
+00:06:26,100 --> 00:06:29,400
+Ở đây tôi có cầu hàng ngày cho chiếc nắp chung đó.
+
+159
+00:06:29,400 --> 00:06:33,400
+Nhớ là giá trị trung bình của nó bằng 780 đơn vị mỗi ngày,
+
+160
+00:06:33,400 --> 00:06:36,260
+độ lệch chuẩn bằng 239,
+
+161
+00:06:36,260 --> 00:06:39,260
+và tôi có hệ số biến thiên bằng 0,31
+
+162
+00:06:39,260 --> 00:06:41,580
+Nhưng thay vì xét cầu hàng ngày,
+
+163
+00:06:41,580 --> 00:06:43,290
+vì có lẽ tôi không cần biết cầu hàng ngày.
+
+164
+00:06:43,290 --> 00:06:44,520
+Thế cầu hàng tuần thì sao nhỉ?
+
+165
+00:06:44,520 --> 00:06:48,240
+Nếu tôi tổng hợp theo tuần, và tôi lấy số liệu
+
+166
+00:06:48,240 --> 00:06:51,530
+và xem cầu giữa các tuần khác nhau như thế nào.
+
+167
+00:06:51,530 --> 00:06:53,900
+Và bạn có thể thấy hệ số biến thiên
+
+168
+00:06:53,900 --> 00:06:55,630
+giảm dần.
+
+169
+00:06:55,630 --> 00:06:57,390
+Và sau đó nếu tôi nói hãy quên tuần đi,
+
+170
+00:06:57,390 --> 00:06:59,110
+tôi có thể làm theo tháng.
+
+171
+00:06:59,110 --> 00:07:00,857
+Có lẽ tôi muốn dự đoán theo tháng.
+
+172
+00:07:00,857 --> 00:07:02,690
+Và bạn có thể thấy hệ số biến thiên
+
+173
+00:07:02,690 --> 00:07:05,730
+giảm dần thậm chí xuống mức 0,06
+
+174
+00:07:05,730 --> 00:07:08,760
+Bạn có thể nói, ừ thì nó giảm xuống tương đối
+
+175
+00:07:08,760 --> 00:07:12,490
+nhưng hãy xem con số 21.000 đơn vị ở đây
+
+176
+00:07:12,490 --> 00:07:16,310
+còn ở đây chỉ có 6.000 hay 5458
+
+177
+00:07:16,310 --> 00:07:19,110
+vậy là nó có số lượng tuyệt đối lớn hơn.
+
+178
+00:07:19,110 --> 00:07:21,790
+Nhưng sao chúng ta phải quan tâm tới mức độ không ổn định.
+
+179
+00:07:21,790 --> 00:07:23,600
+Mức độ không ổn định tương đối.
+
+180
+00:07:23,600 --> 00:07:28,330
+Vậy là bằng cách tổng hợp từ hàng ngày
+sang hàng tuần sang hàng tháng
+
+181
+00:07:28,330 --> 00:07:31,210
+độ chính xác trong dự đoán của tôi sẽ tăng lên.
+
+182
+00:07:31,210 --> 00:07:34,940
+Dự đoán cho phạm vi dài hơn sẽ luôn chính xác hơn.
+
+183
+00:07:34,940 --> 00:07:37,520
+Vì bạn tiến hành bù trừ,
+
+184
+00:07:37,520 --> 00:07:41,350
+và bạn san bằng theo khoảng thời gian dài hơn.
+
+185
+00:07:41,350 --> 00:07:44,470
+Trên thực tế, mặc dù bạn cần đảm bảo rằng giỏ thời gian
+
+186
+00:07:44,470 --> 00:07:49,930
+mà bạn sử dụng, dù là hàng ngày, hàng tuần,
+hay hàng tháng
+
+187
+00:07:49,930 --> 00:07:52,900
+phải phù hợp với tình huống của bạn.
+
+188
+00:07:52,900 --> 00:07:55,290
+Còn nhớ khi tôi làm một dự án từ vài năm trước,
+
+189
+00:07:55,290 --> 00:07:58,320
+một hãng sản xuất đang làm ăn với một nhà bản lẻ.
+
+190
+00:07:58,320 --> 00:08:01,140
+Và nhà sản xuất làm việc theo giỏ thời gian hàng tuần,
+
+191
+00:08:01,140 --> 00:08:03,650
+còn nhà bán lẻ làm theo tháng.
+
+192
+00:08:03,650 --> 00:08:06,487
+Và họ đã phải chia sản phẩm của họ.
+
+193
+00:08:06,487 --> 00:08:08,570
+Và họ nói gì, họ lấy cầu từ nhà bán lẻ
+
+194
+00:08:08,570 --> 00:08:10,322
+và chia nó cho 4.
+
+195
+00:08:10,322 --> 00:08:11,780
+Vậy họ giả sử rằng có sự phân phối
+
+196
+00:08:11,780 --> 00:08:13,800
+đều nhau trong các tuần.
+
+197
+00:08:13,800 --> 00:08:18,080
+Và bạn cần đảm bảo rằng giỏ thời gian của bạn
+
+198
+00:08:18,080 --> 00:08:20,210
+phù hợp với các thành viên khác trong chuỗi cung của bạn.
+
+199
+00:08:20,210 --> 00:08:23,030
+Nhưng bạn muốn làm cho dự đoán của bạn khớp với điều đó.
+
+200
+00:08:23,030 --> 00:08:26,650
+Vậy nếu tôi có thể dặt mua nắp một lần mỗi tháng.
+
+201
+00:08:26,650 --> 00:08:29,290
+Thì tại sao tôi muốn theo dõi nó theo cầu hàng ngày.
+
+202
+00:08:29,290 --> 00:08:32,830
+Có lẽ tôi có thể theo dõi nó theo mức hàng tháng.
+
+203
+00:08:32,830 --> 00:08:34,830
+Vậy bạn muốn làm cho nó khớp với tình huống.
+
+204
+00:08:34,830 --> 00:08:37,351
+Chúng ta sẽ nói thêm về điều đó sau.
+
+205
+00:08:37,351 --> 00:08:39,809
+Khía cạnh thứ ba mà tôi muốn nói tới cho tổng hợp
+
+206
+00:08:39,809 --> 00:08:41,475
+là theo địa điểm.
+
+207
+00:08:41,475 --> 00:08:43,100
+Chúng ta có ở đây là giả sử
+
+208
+00:08:43,100 --> 00:08:44,860
+chúng ta có ba cửa hàng bán sandwich.
+
+209
+00:08:44,860 --> 00:08:48,000
+Và chúng ta nói rằng cầu hàng tuần cho chiếc nắp chung đó,
+
+210
+00:08:48,000 --> 00:08:53,590
+nhớ là điều này chưa thay đổi, CV bằng 0,12
+
+211
+00:08:53,590 --> 00:08:57,340
+đầy là cầu hàng tuần, nên không phải là cầu hàng ngày nữa.
+
+212
+00:08:57,340 --> 00:08:58,269
+Tôi để nó là hàng tuần.
+
+213
+00:08:58,269 --> 00:08:59,310
+Không có vấn đề gì cả.
+
+214
+00:08:59,310 --> 00:09:02,150
+Sẽ tạo ra tác động như nhau
+nếu tôi làm theo ngày hoặc theo tháng.
+
+215
+00:09:02,150 --> 00:09:03,880
+Vậy là có ba cửa hàng.
+
+216
+00:09:03,880 --> 00:09:07,550
+Nếu tôi muốn theo dõi từng loại nắp riêng biệt,
+
+217
+00:09:07,550 --> 00:09:10,040
+bạn sẽ thấy CV bằng 0,12
+
+218
+00:09:10,040 --> 00:09:12,890
+Nhưng nếu tôi kết hợp lại vào cái chính giữa này,
+
+219
+00:09:12,890 --> 00:09:17,190
+Trung tâm Phân phối chung ở đây,
+thì cầu hàng tuần của tôi
+
+220
+00:09:17,190 --> 00:09:18,970
+thực tế sẽ giảm.
+
+221
+00:09:18,970 --> 00:09:21,980
+Hoặc CV sẽ giảm xuống 0,07
+
+222
+00:09:21,980 --> 00:09:22,740
+Tại sao?
+
+223
+00:09:22,740 --> 00:09:24,840
+Tương tự như tổng hợp theo SKU
+
+224
+00:09:24,840 --> 00:09:26,450
+hay tổng hợp theo thời gian.
+
+225
+00:09:26,450 --> 00:09:28,440
+Ý định của tôi là kết hợp
+
+226
+00:09:28,440 --> 00:09:32,235
+biến thiên của ba cửa hàng riêng biệt này,
+
+227
+00:09:32,235 --> 00:09:33,860
+và chúng sẽ bù trừ cho nhau.
+
+228
+00:09:33,860 --> 00:09:36,560
+Vì tôi giả sửa rằng chúng độc lập với nhau.
+
+229
+00:09:36,560 --> 00:09:39,610
+Nêu hệ số biến thiên sẽ giảm
+
+230
+00:09:39,610 --> 00:09:43,330
+khi chúng ta tổng hợp SKU theo thời gian,
+
+231
+00:09:43,330 --> 00:09:45,290
+theo SKU, hoặc theo địa điểm.
+
+232
+00:09:45,290 --> 00:09:47,690
+Và chúng ta có thể tính bằng công thức toán học.
+
+233
+00:09:47,690 --> 00:09:51,860
+Nếu chúng ta giả sử rằng mỗi cửa hàng
+
+234
+00:09:51,860 --> 00:09:54,030
+hay là mỗi SKU riêng biệt
+
+235
+00:09:54,030 --> 00:09:56,910
+hay mỗi tuần riêng biệt.
+
+236
+00:09:56,910 --> 00:09:59,080
+Nếu chúng có cùng tình trạng phân phối
+
+237
+00:09:59,080 --> 00:10:02,450
+đó là CV của từng cái,
+
+238
+00:10:02,450 --> 00:10:05,430
+cho dù đó là SKU, là thời gian, hay địa điểm.
+
+239
+00:10:05,430 --> 00:10:09,120
+Thì nếu tôi tổng hợp chúng, nếu tôi tổng hợp n chúng,
+
+240
+00:10:09,120 --> 00:10:11,890
+thì chúng ta có thể thấy rằng giá trị trung bình tăng
+
+241
+00:10:11,890 --> 00:10:13,780
+theo cấp số nhân n.
+
+242
+00:10:13,780 --> 00:10:17,770
+Nếu tôi đi từ một tới hai, và hai này,
+giá trị trung bình của tôi tăng gấp đôi.
+
+243
+00:10:17,770 --> 00:10:20,480
+Nếu tôi đi từ một tới ba,
+giá trị trung bình của tôi tăng gấp ba.
+
+244
+00:10:20,480 --> 00:10:24,240
+Vì đó là tổng của cả ba cửa hàng.
+
+245
+00:10:24,240 --> 00:10:29,590
+Mặc dù độ lệch chuẩn tăng với tỷ lệ chậm hơn.
+
+246
+00:10:29,590 --> 00:10:31,500
+Nó tăng theo căn bậc n.
+
+247
+00:10:31,500 --> 00:10:34,260
+Vì đó là tổng của biến đổi.
+
+248
+00:10:34,260 --> 00:10:37,080
+Vậy đó là căn bậc n
+
+249
+00:10:37,080 --> 00:10:39,050
+của độ lệch chuẩn.
+
+250
+00:10:39,050 --> 00:10:42,420
+Nhìn vào đó và giải quyết vấn đề,
+
+251
+00:10:42,420 --> 00:10:44,040
+làm tính với căn bậc n,
+
+252
+00:10:44,040 --> 00:10:46,420
+chúng ta có mối quan hệ tuyệt vời này.
+
+253
+00:10:46,420 --> 00:10:50,060
+nếu tôi có CV tổng hợp,
+
+254
+00:10:50,060 --> 00:10:52,850
+nó sẽ bằng với từng hệ số biến thiên riêng lẻ
+
+255
+00:10:52,850 --> 00:10:57,170
+của từng địa điểm, hay SKU
+
+256
+00:10:57,170 --> 00:10:59,940
+hay thời gian được chia cho căn bậc n,
+
+257
+00:10:59,940 --> 00:11:02,850
+trong đó n là số cái mà tôi tổng hợp.
+

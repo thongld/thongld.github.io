@@ -1,0 +1,474 @@
+1
+00:00:00,000 --> 00:00:00,501
+http://youtu.be/4RsNS-lQfz4
+
+2
+00:00:05,458 --> 00:00:08,029
+Rất vui được gặp lại và chào mừng các bạn trở lại với khóa học "Quản trị vận hành".
+
+3
+00:00:08,029 --> 00:00:08,030
+Trong bài học này, ta sẽ nhìn lại định luật Law lần nữa.
+
+4
+00:00:08,030 --> 00:00:11,419
+Trong bài học này, ta sẽ nhìn lại định luật Little lần nữa.
+
+5
+00:00:11,419 --> 00:00:15,000
+Từ khía cạnh tài chính, ta sẽ sắp xếp những vấn đề đã được giải quyết
+
+6
+00:00:15,000 --> 00:00:18,980
+Nếu bạn còn nhớ từ bài học trước, ta có thể sử dụng
+
+7
+00:00:18,980 --> 00:00:23,929
+thông tin được tìm thấy về những báo cáo kế toán để xác định cần bao lâu
+
+8
+00:00:23,929 --> 00:00:28,899
+để một dollar đi hết toàn bộ môt quy trình. Ta sẽ làm nhiều hơn thế trong bài học này
+
+9
+00:00:28,899 --> 00:00:33,689
+Hãy nhìn vào sơ đồ quy trình này
+
+10
+00:00:33,689 --> 00:00:38,058
+thực ra ta có thể lấy thông tin mà ta có thể tìm về báo cáo kế toán
+
+11
+00:00:38,058 --> 00:00:42,159
+và phân tích nó về mặt dòng chảy quy trình
+
+12
+00:00:42,159 --> 00:00:48,169
+Nếu bạn đang nhìn vào giá vốn hàng bán, nhiều lần nó bị chia nhỏ bởi chi phí
+
+13
+00:00:48,170 --> 00:00:48,979
+được chi cho
+
+14
+00:00:48,979 --> 00:00:48,980
+nguyên liệu thô là bao nhiêu, chi phí dành cho những phần mua và v.v.
+
+15
+00:00:48,980 --> 00:00:53,500
+on raw materials how much is can be
+spent on purchase parts and so forth
+
+16
+00:00:53,500 --> 00:00:58,640
+và ta cũng có thể thấy còn bao nhiêu được tích dưới dạng tồn kho
+
+17
+00:00:58,640 --> 00:01:02,280
+Trong lần trước, ta đã nhìn vào toàn bộ tồn kho
+
+18
+00:01:02,280 --> 00:01:06,489
+và trong phần này ta sẽ chỉ nhìn vào tồn kho dưới dạng nguyên liệu thô
+
+19
+00:01:06,489 --> 00:01:09,618
+ở đây giá vốn hàng bán
+
+20
+00:01:09,618 --> 00:01:14,900
+đi vào quy trình chỉ là nguyên liệu thô. Ta phải chi
+
+21
+00:01:14,900 --> 00:01:16,349
+43,000 dollar một năm
+
+22
+00:01:16,349 --> 00:01:16,350
+Vậy nó sẽ là tốc độ lưu thông của ta. Nếu ta chỉ theo dõi chi phí nguyên liệu thô
+
+23
+00:01:16,350 --> 00:01:21,109
+so that would be our throughput rate if
+we just tracking raw material dollars
+
+24
+00:01:21,109 --> 00:01:24,900
+tồn kho là bao nhiêu giá trị nguyên liệu thô còn lại 
+
+25
+00:01:24,900 --> 00:01:29,759
+vào thời điểm cuối năm và đó là 3.5 nghìn dollar
+
+26
+00:01:29,759 --> 00:01:32,969
+Vâng ta sẽ chuyển hóa nguyên liệu thô
+
+27
+00:01:32,969 --> 00:01:37,859
+thành vài loại việc khác trong quy trình
+ta sử dụng lao động và nguồn tài nguyên
+
+28
+00:01:37,859 --> 00:01:41,629
+Vậy đôi khi bạn cũng sẽ thấy điều đó trong báo cáo kế toán của mình
+
+29
+00:01:41,629 --> 00:01:45,640
+nhưng trong trường hợp này dù nó ở đó, ta sẽ không sử dụng cái đó
+
+30
+00:01:45,640 --> 00:01:50,560
+với phân tích định luật Little. Ta thực sự sẽ tập trung
+
+31
+00:01:50,560 --> 00:01:55,009
+tốc độ lưu thông và tồn kho của ta vì nếu bạn muốn tìm ra
+
+32
+00:01:55,009 --> 00:01:59,840
+bao lâu để một dollar nguyên liệu thô đi hết quy trình
+
+33
+00:01:59,840 --> 00:02:03,019
+Vậy mất bao lâu?
+
+34
+00:02:03,019 --> 00:02:03,020
+Ta sẽ nhìn vào định luật Little. Ta sẽ dùng phép tính
+
+35
+00:02:03,020 --> 00:02:08,199
+we're going to take a look at little's
+law we're going to use the calculation
+
+36
+00:02:08,199 --> 00:02:13,098
+thời gian lưu thông bằng hàng tồn kho chia cho tốc độ lưu thông
+
+37
+00:02:13,098 --> 00:02:18,348
+Trong trường hợp này, tồn kho của ta là tồn kho nguyên liệu thô được biết là`
+
+38
+00:02:18,348 --> 00:02:22,159
+3.5 nghìn dollar và tốc độ lưu thông là
+
+39
+00:02:22,159 --> 00:02:25,489
+giá vốn hàng bán của chỉ nguyên liệu thô
+
+40
+00:02:25,489 --> 00:02:28,560
+là 43,000 dollar một năm
+
+41
+00:02:28,560 --> 00:02:32,169
+vậy khi ta tính
+
+42
+00:02:32,169 --> 00:02:32,170
+thời gian lưu thông, nó sẽ là thời gian lưu thông
+
+43
+00:02:32,170 --> 00:02:36,369
+the flow time it's going to be flow
+time
+
+44
+00:02:36,370 --> 00:02:40,569
+bằng tồn kho chia cho tốc độ lưu thông như bạn có thể thấy
+
+45
+00:02:40,568 --> 00:02:41,780
+bằng những phép tính
+
+46
+00:02:41,780 --> 00:02:45,889
+Ta được tốc độ lưu thông là .081 năm
+
+47
+00:02:45,889 --> 00:02:45,890
+Bây giờ rất nhiều người không thể hiểu .081 là gì
+
+48
+00:02:45,890 --> 00:02:49,559
+now a lot of people can't get their
+heads around .081
+
+49
+00:02:49,560 --> 00:02:54,110
+Vậy ta sẽ chuyển nó thành số tuần và có 52 tuần trong một năm nên
+
+50
+00:02:54,110 --> 00:02:56,650
+ta chỉ cần nhân .081
+
+51
+00:02:56,650 --> 00:03:00,979
+với 52 và kết quả là 4.23 tuần
+
+52
+00:03:00,979 --> 00:03:00,980
+Vậy cái ta đang nói đến ở đây là 1 dollar
+
+53
+00:03:00,980 --> 00:03:04,219
+so what we're saying here is a dollar
+
+54
+00:03:04,219 --> 00:03:08,340
+nguyên liệu thô đi vào quy trình
+
+55
+00:03:08,340 --> 00:03:11,628
+sẽ được lưu trữ ở đó khoảng 4.23 tuần
+
+56
+00:03:11,628 --> 00:03:14,649
+ngay khi nó đi ra khỏi quy trình
+
+57
+00:03:14,650 --> 00:03:19,900
+Ok giờ ta có thể thực hiện điều này cho tất cả các quá trình khác nhau
+
+58
+00:03:19,900 --> 00:03:21,080
+trong toàn bộ tổ chức của ta
+
+59
+00:03:21,080 --> 00:03:25,289
+ta có thể thực hiện điều này với nguyên liệu thô trong quá trình chế tạo
+
+60
+00:03:25,289 --> 00:03:25,290
+we can take a look at items going
+through
+we can do this for the raw materials in
+a fabrication setting
+
+61
+00:03:25,290 --> 00:03:28,759
+ta có thể quan sát những đơn vị hàng đi qua
+
+62
+00:03:28,759 --> 00:03:31,870
+quá trình lắp ráp ta có thể nhìn vào những đơn vị hàng
+
+63
+00:03:31,870 --> 00:03:37,250
+đi qua quá trình đóng gói và khi ta thực hiện điều đó
+ta có thể xác định thời gian lưu thông
+
+64
+00:03:37,250 --> 00:03:40,818
+tại mỗi quá trình con mà cho ta biết
+
+65
+00:03:40,818 --> 00:03:44,708
+quá trình con diễn ra lâu nhất để gợi nhớ lại
+
+66
+00:03:44,709 --> 00:03:48,000
+một trong những lí do vì sao ta đang quan sát những quy trình này
+
+67
+00:03:48,000 --> 00:03:51,959
+là để khiến chúng hiệu quả và tiết kiệm chi phí hơn
+
+68
+00:03:51,959 --> 00:03:56,780
+vậy bằng cách sử dụng định luật Little
+bằng đánh giá những quy trình con
+
+69
+00:03:56,780 --> 00:04:00,378
+ta có thể hiểu cái gì diễn ra lâu nhất
+
+70
+00:04:00,378 --> 00:04:05,120
+và ta phải chi bao nhiêu.
+Vậy khi ta đến và nhìn vào
+
+71
+00:04:05,120 --> 00:04:10,110
+sự cải thiện quá trình, ta sẽ bắt đầu nhắm vào những quá trình con
+
+72
+00:04:10,110 --> 00:04:11,169
+diễn ra lâu nhất
+
+73
+00:04:11,169 --> 00:04:11,170
+và những cái cần nhiều chi phí nhất
+ta có thể áp dụng định luật Little
+
+74
+00:04:11,170 --> 00:04:16,449
+and those are costing us the most we can
+even apply little's law
+
+75
+00:04:16,449 --> 00:04:21,079
+để xem cần bao lâu để ta có thể thu hồi lại tiền từ khách hàng
+
+76
+00:04:21,079 --> 00:04:22,100
+Một khi ta đã làm hóa đơn
+
+77
+00:04:22,100 --> 00:04:25,529
+trong trường hợp này chi phí
+
+78
+00:04:25,529 --> 00:04:25,530
+tốc độ lưu thông là lợi nhuận ròng
+
+79
+00:04:25,530 --> 00:04:28,529
+throughput rate is our net sales
+
+80
+00:04:28,529 --> 00:04:33,478
+Ta đang làm hóa đơn tới khách hàng của ta
+trong trường hợp này, 80,000 dollar trong năm
+
+81
+00:04:33,478 --> 00:04:36,550
+nhưng lưu trữ trong những tài khoản báo thu của ta
+
+82
+00:04:36,550 --> 00:04:40,160
+là tồn kho, những thứ mà chưa được thanh toán
+
+83
+00:04:40,160 --> 00:04:43,750
+Nó là 9.6000 dollar
+do đó ta có thể sử dụng
+
+84
+00:04:43,750 --> 00:04:47,189
+tốc độ lưu thông của lợi nhuận ròng và tồn kho
+
+85
+00:04:47,189 --> 00:04:52,639
+của những tài khoản báo thu để xác định trung bình cần bao lâu để một đơn hàng
+
+86
+00:04:52,639 --> 00:04:56,829
+được báo giá được thanh toán; do đó, ở đây ta có
+
+87
+00:04:56,829 --> 00:05:00,879
+thời gian lưu thông của ta là tồn kho chia cho tốc độ lưu thông
+
+88
+00:05:00,879 --> 00:05:05,478
+và ta sẽ tính những tài khoản báo thu là 9.6 nghìn
+
+89
+00:05:05,478 --> 00:05:09,800
+lợi nhuận ròng là 82,000 mỗi năm
+
+90
+00:05:09,800 --> 00:05:13,788
+vậy cần 0.117 của một năm
+
+91
+00:05:13,788 --> 00:05:18,879
+để ta được thanh toán nhưng lần nữa ta sẽ chuyển đổi cái đó sang tuần
+
+92
+00:05:18,879 --> 00:05:22,159
+do đó ta nhân với 52 và cần khoảng hơn 6 tuần
+
+93
+00:05:22,160 --> 00:05:27,810
+từ lúc ta báo giá khách hàng trung bình thời gian ta thu hồi lại
+
+94
+00:05:27,810 --> 00:05:31,930
+một thời gian dài. Vậy điều ta thực sự có thể thực hiện là nói, vâng
+
+95
+00:05:31,930 --> 00:05:35,720
+nếu điều này cần nhiều thời gian. Sao ta không nhìn vào 
+
+96
+00:05:35,720 --> 00:05:36,449
+chính quy trình
+
+97
+00:05:36,449 --> 00:05:39,870
+và thấy nếu họ có thể được rút ngắn nhưng bằng cách sử dụng
+
+98
+00:05:39,870 --> 00:05:44,220
+định luật Little, thực tế ta có thể tìm ra cần bao lâu từ lúc
+
+99
+00:05:44,220 --> 00:05:47,600
+ta đưa 1 dollar để bắt đầu
+
+100
+00:05:47,600 --> 00:05:51,649
+quá trình sản xuất thứ gì đó đến lúc ta thực sự thu hồi vốn từ
+
+101
+00:05:51,649 --> 00:05:51,650
+khách hàng
+
+102
+00:05:51,650 --> 00:05:52,659
+customer
+
+103
+00:05:52,660 --> 00:05:55,669
+được biết đến là giá cả đến thời gian giao ngân
+
+104
+00:05:55,668 --> 00:05:59,069
+Vậy ta tìm ra cần bao lâu để đi qua xí nghiệp
+
+105
+00:05:59,069 --> 00:06:02,079
+cần bao lâu để một hóa đơn được thanh toán
+
+106
+00:06:02,079 --> 00:06:05,728
+ta thêm điều đó vào và cho ta biết cần bao lâu
+
+107
+00:06:05,728 --> 00:06:10,758
+tổng thể từ giá cả đến tiền mặt
+
+108
+00:06:10,759 --> 00:06:15,038
+thứ tự cảm biến này theo định luật Little từ góc độ tài chính
+
+109
+00:06:15,038 --> 00:06:15,818
+cũng như
+
+110
+00:06:15,819 --> 00:06:19,800
+góc độ lưu thông nhưng ta cũng sẽ trở lại với điều này sau
+
+111
+00:06:19,800 --> 00:06:21,550
+trong kì này.
+
+112
+00:06:21,550 --> 00:06:24,769
+Nhưng lần towus ta sẽ bàn về phương pháp Đường găng và
+
+113
+00:06:24,769 --> 00:06:24,770
+lập sơ đồ dòng chảy quy trình.
+Hẹn gặp bạn sau.
+
+114
+00:06:24,770 --> 00:06:28,180
+and flow charting a process diagrams I'll
+see you then
+

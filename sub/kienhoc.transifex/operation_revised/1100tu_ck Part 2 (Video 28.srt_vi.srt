@@ -1,0 +1,324 @@
+0
+00:00:00,000 --> 00:00:00,001
+Thiện Ngô 15/10/2016
+
+1
+00:00:05,000 --> 00:00:10,609
+chào mừng mọi người đã trở lại với khóa quản trị vận hành và chúng ta vẫn
+
+2
+00:00:10,609 --> 00:00:15,230
+tính toán tồn kho an toàn, khi chúng ta tính
+
+3
+00:00:15,230 --> 00:00:20,420
+dự trữ an toàn mà không cho mức cầu trong thời gian chờ hàng và độ lệch chuẩn của
+
+4
+00:00:20,420 --> 00:00:26,899
+nó. Cái chúng ta có là mức cầu và độ lệch chuẩn của mức cầu
+
+5
+00:00:26,899 --> 00:00:31,219
+thời gian chờ hàng đôi khi biến đổi và đôi lúc không đổi
+
+6
+00:00:31,219 --> 00:00:36,528
+vì vậy chúng ta sẽ phải tính mức cầu khách hàng trong thời gian chờ hàng cũng như
+
+7
+00:00:36,528 --> 00:00:42,200
+độ lệch của nhu cầu khách hàng trong thời gian chờ hàng. Đôi khi
+
+8
+00:00:42,200 --> 00:00:48,469
+thời gian chờ hàng không biến đổi, nó là hằng số nhưng mức cầu
+
+9
+00:00:48,469 --> 00:00:52,879
+có thể biến đổi nên ta phải tính mức cầu trong thời gian chờ hàng đó và độ lệch chuẩn
+
+10
+00:00:52,878 --> 00:00:58,339
+của nó. Chúng ta thường được cho mức cầu
+
+11
+00:00:58,340 --> 00:01:05,270
+lượng mong đợi được sử dụng trong một khoảng thời gian đề ra: ngày, tuần, tháng...vv là bao nhiêu cũng như
+
+12
+00:01:05,270 --> 00:01:10,880
+độ lệch chuẩn của mức cầu đó. Chúng ta cũng được cho thời gian chờ hàng.
+
+13
+00:01:10,879 --> 00:01:15,349
+Vậy để tính mức cầu trong thời gian chờ hàng, chúng ta chỉ cần nhân thời gian chờ hàng cho 
+
+14
+00:01:15,349 --> 00:01:20,658
+mức cầu, rất đơn giản. Và để có độ lệch chuẩn của nhu cầu trong thời gian chờ hàng
+
+15
+00:01:20,659 --> 00:01:22,609
+thì hơi khác một tí
+
+16
+00:01:22,609 --> 00:01:26,840
+Ta lấy căn bậc hai của thời gian chờ hàng nhân cho
+
+17
+00:01:26,840 --> 00:01:34,430
+độ lệch chuẩn của mức cầu. Ta lấy một ví dụ đơn giản: Riley
+
+18
+00:01:34,430 --> 00:01:38,540
+đang tính toán cần dự trữ thêm bao nhiêu hộp mực và
+
+19
+00:01:38,540 --> 00:01:43,729
+trong suốt nắm ngoái nhu cầu mỗi ngày tăng giảm trung bình là 20 hộp và
+
+20
+00:01:43,728 --> 00:01:48,709
+có độ lệch chuẩn là 3, thời gian chờ hàng không đổi là 5 ngày.
+
+21
+00:01:48,709 --> 00:01:53,509
+Riley muốn giữ 90% mức dịch vụ. Muốn tính
+
+22
+00:01:53,509 --> 00:01:59,118
+mức dự trữ an toàn và lượng đặt hàng lại trong bài toán này, biết rằng
+
+23
+00:01:59,118 --> 00:02:04,459
+ mức cầu bản thân nó là biến bởi vì người ta chi giá trị trung bình, độ lệch chuẩn
+
+24
+00:02:04,459 --> 00:02:12,530
+và thời gian chờ hàng là hằng số - 5 ngày. Vậy hãy làm những phép tính đó.
+
+25
+00:02:12,530 --> 00:02:16,848
+mức cầu trong thời gian chờ hàng sẽ bằng thời gian chờ hàng nhân cho mức cầu.
+
+26
+00:02:16,848 --> 00:02:18,459
+Ta biết rằng thời gian chờ hàng là 5
+
+27
+00:02:18,460 --> 00:02:25,689
+mức cầu là 20. Chúng ta muốn sử dụng 100 hộp mực trong thời gian
+
+28
+00:02:25,689 --> 00:02:30,189
+từ lúc đặt hàng cho đến khi nhận hàng nhưng để tính
+
+29
+00:02:30,189 --> 00:02:36,009
+độ lệch chuẩn của mức cầu trong thời gian chờ hàng, ta lấy căn bậc hai của 5 nhân cho
+
+30
+00:02:36,009 --> 00:02:43,149
+độ lệch chuẩn của mức cầu và ra kết quả là 6.708.
+
+31
+00:02:43,150 --> 00:02:48,340
+Chúng ta vừa tính xong mức cầu trong thời gian chờ hàng và độ lệch chuẩn
+
+32
+00:02:48,340 --> 00:02:53,319
+của nó, tức là giờ chúng ta có thể sử dụng kiến thức của
+
+33
+00:02:53,319 --> 00:02:58,569
+bài trước để tính dự trữ an toàn hay số Z nhân độ lệch chuẩn của
+
+34
+00:02:58,569 --> 00:03:04,780
+mức cầu trong thời gian chờ hàng ta đã tính được, trong đó số Z là cấp độ dịch vụ
+
+35
+00:03:04,780 --> 00:03:11,560
+đã cho 90% và ta sử dụng các hàm Norm nghịch đảo đẳng thức trong Excel
+
+36
+00:03:11,560 --> 00:03:17,860
+và có được kết quả là 1.28, rồi nhân 1.28 cho độ lệch chuẩn của
+
+37
+00:03:17,860 --> 00:03:23,860
+mức cầu trong thời gian chờ hàng ta được 8.6. Khi tính dự trữ an toàn
+
+38
+00:03:23,860 --> 00:03:30,430
+ta phải luôn làm tròn lên cho nên dự trữ an toàn sẽ là 9 hộp mực và
+
+39
+00:03:30,430 --> 00:03:35,500
+để tính lượng đặt hàng lại, ta lấy mức cầu trong thời gian chờ hàng cộng với dự trữ an toàn ta được
+
+40
+00:03:35,500 --> 00:03:40,930
+109, vậy khi nhìn lại lượng hàng tồn kho, ta nhận ra nó đã giảm xuống
+
+41
+00:03:40,930 --> 00:03:47,530
+còn 109 hộp mực, ta đặt hàng nhưng đoi khi thời gian chờ hàng
+
+42
+00:03:47,530 --> 00:03:52,659
+cũng có thể biến đổi chứ không chỉ mức cầu. Chúng ta vẫn phải tính mức cầu trong thời gia chờ hàng đó
+
+43
+00:03:52,659 --> 00:03:57,669
+và độ lệch chuẩn cho nó. Thông thường ta
+
+44
+00:03:57,669 --> 00:04:05,500
+được cho một giá trị R - mức nhu cầu  và độ lệch chuẩn mức nhu cầu và
+
+45
+00:04:05,500 --> 00:04:13,150
+cũng sẽ được cho thời gian chờ hàng L và độ lệch chuẩn của thời gian chờ hàng.
+
+46
+00:04:13,150 --> 00:04:18,850
+Bây giời sử dụng cả 4 giá trị này ta sẽ tính được mức nhu cầu trong thời gian chờ hàng
+
+47
+00:04:18,850 --> 00:04:24,819
+bằng thời gian chờ hàng nhân độ lệch chuẩn
+
+48
+00:04:24,819 --> 00:04:29,349
+của nó rồi nhân cho mức cầu. Bây giờ hãy lưu ý rằng công thức này khác xa với công thức
+
+49
+00:04:29,350 --> 00:04:30,400
+chúng ta sử dụng trước đó.
+
+50
+00:04:30,399 --> 00:04:32,199
+Nó phức tạp hơn một chút
+
+51
+00:04:32,199 --> 00:04:38,050
+và khi sử dụng bạn phải hết sức cẩn trọng ở chỗ bạn phải
+
+52
+00:04:38,050 --> 00:04:42,160
+lấy căn bậc hai của cả biểu thưc và phải chắc chắn có dấu ngoặc đơn và cả 4 giá trị
+
+53
+00:04:42,160 --> 00:04:48,430
+được đặt đúng chỗ như trong ví dụ này, Robin đang
+
+54
+00:04:48,430 --> 00:04:52,449
+tính cần phải dự trữ thêm bao nhiêu hộp socola nhập khẩu
+
+55
+00:04:52,449 --> 00:04:58,389
+trong suốt năm ngoái, mức cầu mỗi tuần biến đổi với giá trị trung bình là 85 và
+
+56
+00:04:58,389 --> 00:05:04,629
+độ lệch chuẩn 12, thời gian chờ hàng cũng biến dổi với thời gian trung bình 6 tuần và
+
+57
+00:05:04,629 --> 00:05:11,860
+độ lệch chuẩn 2. Vậy bây giờ chúng ta có một giá trị mức cầu cùng với
+
+58
+00:05:11,860 --> 00:05:15,610
+độ lệch chuẩn của nó và một giá trị cho thời gian chờ hàng cùng với
+
+59
+00:05:15,610 --> 00:05:19,689
+độ lệch chuẩn của nó. Chúng ta biết rằng cấp độ dịch vụ ở trường hợp cũng là 90%
+
+60
+00:05:19,689 --> 00:05:27,040
+Muốn tính dự trữ an toàn cũng như thời gian đặt hàng lại, ta sử dụng
+
+61
+00:05:27,040 --> 00:05:32,860
+những biến số đã cho và tính được mức cầu trong thời gian chờ hàng là 510
+
+62
+00:05:32,860 --> 00:05:37,600
+và độ lệch chuẩn của nó cũng là 172,52.
+
+63
+00:05:37,600 --> 00:05:44,650
+Trở lại với biểu thức tính dự trữ an toàn chuẩn: Z nhân cho
+
+64
+00:05:44,649 --> 00:05:51,009
+độ lệch chuẩn của mức cầu trong thời gian chờ hàng. Khi tính hằng số Z và
+
+65
+00:05:51,009 --> 00:05:56,920
+dự trữ an toàn chúng ta luôn phải làm tròn lên, vậy ta làm tròn lên 220 dự trữ an toàn của mình
+
+66
+00:05:56,920 --> 00:06:06,009
+và mức đặt hàng lại bằng mức cầu trong thời gian chờ hàng cộng dự trữ an toàn 510 cộng 222
+
+67
+00:06:06,519 --> 00:06:13,089
+Vậy khi mức tồn hàng giảm xuống còn 732 hộp socola
+
+68
+00:06:13,089 --> 00:06:20,079
+thì ta đặt hàng. Làm sao bạn biết áp dụng được đúng công thức
+
+69
+00:06:20,079 --> 00:06:24,699
+để tính dự trữ an toàn. Câu hỏi đầu tiên dặt ra là mức cầu và thời gian chờ hàng
+
+70
+00:06:24,699 --> 00:06:31,959
+có phải là hằng số không? Dự trữ an toàn là cần thiết. Liệu mức cầu trong thời gian chờ hàng có thay dổi?
+
+71
+00:06:31,959 --> 00:06:37,389
+Vâng ta sẽ tính dự trữ an toàn bằng cách lấy Z nhân
+
+72
+00:06:37,389 --> 00:06:43,029
+độ lệch chuẩn của mức cầu trong thời gian chờ hàng là hằng số thòi gian chờ hàng với
+
+73
+00:06:43,029 --> 00:06:45,848
+biến số nhu cầu. Ta tính mức cầu trong thời gian chờ hàng
+
+74
+00:06:45,848 --> 00:06:50,168
+và độ lệch chuẩn của nó rồi tính dự trữ an toàn
+
+75
+00:06:50,168 --> 00:06:55,628
+Nếu cả thời gian chờ hàng và mức cầu là biến số, chúng ta sẽ tính
+
+76
+00:06:55,629 --> 00:07:00,968
+mức cầu trong thời gian chờ hàng đó và độ lệch chuẩn của nó rồi tính
+
+77
+00:07:00,968 --> 00:07:06,490
+dự trữ an toàn. Chúng ta đã và đang nói rất nhiều đến cấp độ dịch vụ, ta sử dụng 90%
+
+78
+00:07:06,490 --> 00:07:11,379
+rất nhiều nhưng trong bài học tiếp theo ta sẽ nói về đến
+
+79
+00:07:11,379 --> 00:07:15,459
+cấp đọ dịch vụ đó là gì, làm thế nào để thử và tính được cấp độ dịch vụ đó.
+
+80
+00:07:15,459 --> 00:07:16,749
+Gặp lại các bạn sau.
+

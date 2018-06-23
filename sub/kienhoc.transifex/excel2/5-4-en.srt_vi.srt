@@ -1,0 +1,372 @@
+1
+00:00:00,250 --> 00:00:03,930
+Trong phiên học trước ta đã xem 
+thiết kế kết cấu của bảng biểu.
+
+2
+00:00:04,460 --> 00:00:10,180
+Tuy nhiên chúng tôi cũng chuẩn bị một số
+bí quyết nho nhỏ cho các bạn để cải tiến
+bảng của mình hơn nữa.
+
+3
+00:00:10,520 --> 00:00:15,540
+Hãy nhìn vào những bảng này.
+Đầu tiên là lưới phân cách các ô (grid).
+
+4
+00:00:17,460 --> 00:00:23,320
+Đáng tiếc là chúng ta vẫn nhìn thấy 
+rất nhiều bảng được trình bày giống như
+bảng ở góc trên bên trái,
+
+5
+00:00:23,320 --> 00:00:27,260
+ở đây tất cả các ô đều được ngăn cách.
+Và như chúng tôi đã nói ở phần giới thiệu:
+
+6
+00:00:28,080 --> 00:00:33,380
+Ta phải nghĩ về tỷ lệ dữ liệu-mực in.
+Tất cả những đường kẻ này có nói lên điều gì
+
+7
+00:00:33,390 --> 00:00:37,750
+về dữ liệu trong bảng không? Không hề.
+
+8
+00:00:38,040 --> 00:00:43,840
+Vậy ta nên xóa tất cả các đường kẻ này
+và chỉ giữ lại những đường kẻ mà ta thực sự cần.
+
+9
+00:00:44,180 --> 00:00:52,940
+Đó chính là bảng ở góc dưới bên phải. 
+Ta có thể thấy ta chỉ cần một đường kẻ
+
+10
+00:00:52,940 --> 00:00:58,380
+để thể hiện là 3 quốc gia thuộc chung một nhóm,
+ta cần đường kẻ thứ hai
+
+11
+00:00:58,380 --> 00:01:03,800
+để phân biệt thông tin ở đầu bảng và thân bảng,
+và ta cần một đường kẻ nữa
+
+12
+00:01:03,800 --> 00:01:07,500
+để phân biệt thân bảng và thông tin cuối bảng.
+
+13
+00:01:07,500 --> 00:01:11,320
+Ta chỉ cần có vậy. Phần còn lại ta có thể
+sắp xếp với các khoảng trắng.
+
+14
+00:01:11,760 --> 00:01:16,700
+Cố gắng tưởng tượng là các pixel này
+đều rất đắt đỏ, nên hãy dùng ít nhất có thể.
+
+15
+00:01:21,240 --> 00:01:25,920
+Trong giao diện Excel bạn có thể
+định dạng bảng biểu.
+
+16
+00:01:26,780 --> 00:01:34,420
+Rất nhiều định dạng phổ biến dùng màu xen kẽ nhau
+cho các hàng, ví dụ hàng đầu tiên màu trắng,
+
+17
+00:01:34,420 --> 00:01:38,380
+hàng thứ hai màu xanh, hàng thứ ba
+màu trắng, hàng thứ tư màu xanh, v..v.
+
+18
+00:01:39,740 --> 00:01:42,820
+Thực ta tôi không cho rằng đây là
+cách tô màu hữu hiệu.
+
+19
+00:01:43,200 --> 00:01:48,420
+Nếu bạn muốn tô màu cho bảng,
+bạn phải đảm bảo việc đó gắn với
+thông điệp của bạn, mục đích của bạn.
+
+20
+00:01:48,420 --> 00:01:54,000
+Bạn muốn truyền đạt điều gì? 
+Nếu bạn muốn ai đó tập trung vào một ô
+
+21
+00:01:54,000 --> 00:01:59,119
+duy nhất trên bảng, thì đúng là bạn nên
+tô màu cho ô đó. Tôi đã làm việc này
+
+22
+00:01:59,120 --> 00:02:03,960
+trong bảng thứ nhất. Ta tô nó màu đỏ,
+rất dễ nhìn, người đọc phải tập trung vào đó.
+
+23
+00:02:05,280 --> 00:02:08,260
+Nhưng cũng có thể tôi muốn họ tập trung vào...
+
+24
+00:02:08,270 --> 00:02:13,570
+một người bán hàng nhất định ở một
+khu vực nhất định. Trong trường hợp này là
+ông Hanson ở Mỹ.
+
+25
+00:02:13,920 --> 00:02:19,760
+Vậy tôi dùng một màu rất nhạt để làm nổi
+hàng và cột, việc này sẽ hướng 
+
+26
+00:02:19,760 --> 00:02:27,319
+ánh mắt của người xem vào những dữ kiện này.
+Vậy tôi có thể dùng việc tô màu để tác động lên cách
+
+27
+00:02:27,319 --> 00:02:31,859
+người đọc sẽ đọc bảng của tôi và giúp họ
+hiểu được quan điểm của tôi.
+
+28
+00:02:35,320 --> 00:02:39,560
+Bây giờ là một vài nguyên tắc căn bản
+về căn lề.
+
+29
+00:02:40,720 --> 00:02:47,760
+Cũng không khó lắm. Nếu là ký tự thì bạn
+căn lề trái, nếu là chữ số thì bạn căn lề phải.
+
+30
+00:02:48,580 --> 00:02:55,000
+Chỉ có vấn đề là ngày tháng. Bạn có thể nhìn
+xuống phía dưới màn hình: Thực ra vấn đề 
+
+31
+00:02:55,000 --> 00:02:59,520
+không phải là sự căn lề ngày tháng
+mà là bản thân định dạng ngày tháng.
+
+32
+00:02:59,520 --> 00:03:08,020
+Lời khuyên của tôi là hãy cố gắng định dạng
+ngày tháng sao cho tất cả đều có cùng một độ dài.
+
+33
+00:03:09,540 --> 00:03:14,780
+Nếu bạn định viết là "Ngày 1 tháng 1, 2014",
+
+34
+00:03:14,780 --> 00:03:21,300
+thì hãy coi đó là ký tự và căn lề trái.
+Còn nếu tất cả đều có cùng độ dài rồi
+
+35
+00:03:21,300 --> 00:03:27,760
+thì bạn có thể căn lề trái, giữa hoặc phải.
+Bạn có thể nhìn thấy cái cột rộng rộng ở bảng dưới,
+
+36
+00:03:27,760 --> 00:03:30,600
+bạn không nên để dữ liệu như vậy.
+
+37
+00:03:31,280 --> 00:03:33,200
+Đó là về căn lề.
+
+38
+00:03:35,640 --> 00:03:40,220
+Bạn cũng sẽ phải suy nghĩ 
+về mức độ chính xác.
+
+39
+00:03:40,580 --> 00:03:50,160
+Trong cột đầu tiên ta thấy số 2 xuất hiện
+3 lần ở 3 hàng dưới. Nhưng thực ra nó là 2.4, 2.1 và 2.0.
+
+40
+00:03:50,160 --> 00:03:54,700
+Nếu điều đó quan trọng với thông điệp của tôi,...
+Vì câu hỏi ở đây là: Liệu người xem có cần
+
+41
+00:03:54,700 --> 00:03:58,660
+hiểu được sự khác nhau giữa 3 giá trị này không?
+
+42
+00:03:58,660 --> 00:04:01,360
+Nếu có thì tôi cần phải thể hiện
+ít nhất một số thập phân.
+
+43
+00:04:02,060 --> 00:04:08,120
+Để 2 số thập phân trong trường hợp này
+sẽ không cần thiết, vì người đọc đã có thể
+
+44
+00:04:08,120 --> 00:04:10,300
+nhìn ra được sự khác nhau giữa 2.4, 2.1 và 2.0.
+
+45
+00:04:10,940 --> 00:04:17,600
+Chỉ khi cần thiết phải đưa ra giá trị chính xác
+thì tôi mới tăng số số thập phân lên.
+
+46
+00:04:20,620 --> 00:04:25,680
+Tiếp theo là định dạng chữ số.
+Cột doanh thu ở đây
+
+47
+00:04:25,680 --> 00:04:32,360
+hơi khó đọc vì không có dấu ngăn cách phần nghìn.
+
+48
+00:04:32,540 --> 00:04:35,820
+Vậy tôi luôn khuyên các bạn là hãy
+đưa vào dấu ngăn cách phần nghìn.
+
+49
+00:04:37,120 --> 00:04:41,540
+Ở phía bên phải, bạn sẽ nhận ra 
+có điều gì đó khác biệt. Khi giới thiệu bản thân
+tôi không nói với các bạn tôi làm nghề gì
+
+50
+00:04:41,540 --> 00:04:47,320
+nhưng thực ra tôi làm trong ngành tài chính.
+Những người làm nghề tài chính không thích
+các giá trị âm.
+
+51
+00:04:47,940 --> 00:04:54,200
+Vậy nên chúng tôi cố gắng giấu nó đi
+bằng cách để các giá trị âm trong dấu ( ).
+
+52
+00:04:55,240 --> 00:04:59,120
+Nhưng khi bạn nhìn vào số thứ hai trong bảng
+
+53
+00:04:59,130 --> 00:05:04,770
+và so sánh với số thứ ba, thì hai số này
+không thẳng hàng nhau vì có dấu ( ).
+
+54
+00:05:05,860 --> 00:05:10,680
+Bạn phải khắc phục vấn đề này. Bạn có thể làm được,
+và kết quả bạn trông đợi sẽ như thế này.
+
+55
+00:05:10,680 --> 00:05:16,600
+Các số đều thẳng hàng, nhưng ở hai bên các số
+có một khoảng trống để cho dấu ( ) vào.
+
+56
+00:05:17,600 --> 00:05:20,460
+Tôi sẽ chỉ cho các bạn cách làm trong Excel.
+
+57
+00:05:20,470 --> 00:05:24,370
+Trong phần bài tập bạn cũng có thể thử.
+
+58
+00:05:30,860 --> 00:05:33,259
+Đây rồi. Chúng ta có dữ liệu giống lúc nãy.
+
+59
+00:05:33,980 --> 00:05:35,780
+Tôi sẽ chọn dữ liệu,
+
+60
+00:05:39,580 --> 00:05:43,800
+rồi mở Cell Properties, đến phần định dạng chữ số.
+
+61
+00:05:44,600 --> 00:05:49,180
+Ở đây tôi có thể thấy phần định dạng chữ số và...
+
+62
+00:05:53,100 --> 00:05:57,039
+Kiểu định dạng chữ số ở đây không đúng,
+các số không được căn chỉnh thẳng hàng.
+
+63
+00:05:57,320 --> 00:06:03,700
+Ta muốn thay đổi điều này. Vậy nếu ta mở
+Cell Properties rồi đến phần tùy chỉnh định dạng số...
+
+64
+00:06:05,660 --> 00:06:11,260
+Bạn thấy đây là định dạng chữ số,
+có một dấu ; ở giữa.
+
+65
+00:06:11,740 --> 00:06:14,840
+Phía bên trái dấu ; là giá trị dương,
+
+66
+00:06:15,120 --> 00:06:18,231
+phía bên phải dấu ; là định dạng của
+giá trị âm.
+
+67
+00:06:18,530 --> 00:06:22,530
+Ở đây ta thấy các giá trị âm nằm trong dấu ( ).
+
+68
+00:06:24,860 --> 00:06:35,860
+Mẹo ở đây là ta phải hướng dẫn Excel chừa lại
+một khoảng trống nhỏ cho những dấu ( ) này.
+
+69
+00:06:36,380 --> 00:06:39,400
+Ta có thể làm vậy bằng cách đưa vào dấu _
+
+70
+00:06:39,960 --> 00:06:44,180
+rồi đánh ký tự mà Excel phải chừa chỗ trống cho nó.
+
+71
+00:06:44,560 --> 00:06:51,400
+Nếu là giá trị dương thì Excel sẽ không quan tâm
+đến cái này, nhưng
+
+72
+00:06:51,400 --> 00:06:56,980
+nó sẽ chừa ra thêm một ít chỗ trống.
+Nhấp chuột vào đây ta sẽ thấy.
+
+73
+00:06:58,280 --> 00:06:59,740
+Giờ ta thấy...
+
+74
+00:07:02,140 --> 00:07:07,760
+Bạn có thể thấy bên cạnh số 8 có một khoảng trống
+nho nhỏ để đảm bảo tất cả các số đều thẳng hàng.
+
+75
+00:07:08,380 --> 00:07:10,420
+Vừa rồi là nội dung về định dạng số.
+
+76
+00:07:11,820 --> 00:07:16,000
+Ta đã kết thúc các kỹ năng thiết kế bảng hay nhất.
+
+77
+00:07:17,480 --> 00:07:19,740
+Và cũng kết thúc luôn chương về Bảng.
+
+78
+00:07:20,020 --> 00:07:22,280
+Trong phiên học tiếp theo ta sẽ
+bàn về Biểu đồ.
+

@@ -1,0 +1,356 @@
+0
+00:00:05,066 --> 00:00:07,262
+Welcome back.
+https://youtu.be/o2Xz96vx6UQ
+1
+00:00:07,262 --> 00:00:08,434
+Here&#39;s is some data.
+
+2
+00:00:08,434 --> 00:00:13,124
+I&#39;m going to use it to calculate betas with the caution I just made in the end of
+
+3
+00:00:13,124 --> 00:00:15,400
+the previous segment.
+
+4
+00:00:15,400 --> 00:00:16,370
+We&#39;ll do it.
+
+5
+00:00:16,370 --> 00:00:19,070
+We&#39;ll even go to Yahoo Finance and find the betas.
+
+6
+00:00:19,070 --> 00:00:21,940
+You see, that&#39;s how common it&#39;s become.
+
+7
+00:00:21,940 --> 00:00:27,530
+And this is last 50, 55 years that this theory has emerged.
+
+8
+00:00:27,530 --> 00:00:29,920
+And it&#39;s so powerful.
+
+9
+00:00:29,920 --> 00:00:32,300
+It&#39;s very powerful framework.
+
+10
+00:00:32,299 --> 00:00:34,180
+Measurement, there are issues.
+
+11
+00:00:34,180 --> 00:00:39,370
+But, heck, when are there not issues in life?
+
+12
+00:00:39,370 --> 00:00:40,840
+Okay, let&#39;s keep going.
+
+13
+00:00:40,840 --> 00:00:45,660
+So you have five securities and one market portfolio, as simply 500.
+
+14
+00:00:45,660 --> 00:00:48,380
+We calculate betas.
+
+15
+00:00:48,380 --> 00:00:53,080
+Consider Securities 1 &amp; 2, please calculate the betas of these securities.
+
+16
+00:00:53,080 --> 00:00:55,320
+Not the variances, the betas.
+
+17
+00:00:55,320 --> 00:00:57,460
+How will you do that?
+
+18
+00:00:57,460 --> 00:01:02,560
+For simplicity, let&#39;s use the slope function.
+
+19
+00:01:02,560 --> 00:01:06,590
+And in the slope function, you&#39;ll have to get 2 variables.
+
+20
+00:01:06,590 --> 00:01:13,985
+The first variable we want, security 1 and the second variable will be SnP and
+
+21
+00:01:13,985 --> 00:01:18,140
+then you&#39;ll do slope 1 and you do slope 2.
+
+22
+00:01:20,360 --> 00:01:25,728
+And you&#39;ll give the data on security two and then s&amp;p 500.
+
+23
+00:01:25,728 --> 00:01:28,270
+Now important question.
+
+24
+00:01:28,270 --> 00:01:31,626
+If you&#39;re calculating correlations, what function will you use?
+
+25
+00:01:31,626 --> 00:01:33,690
+This is not the important part, it&#39;s very easy.
+
+26
+00:01:33,690 --> 00:01:37,590
+Correl, C-O-R-R-E-L.
+
+27
+00:01:37,590 --> 00:01:40,090
+And you can do the correlations.
+
+28
+00:01:40,090 --> 00:01:43,620
+The betas and correlations are different, right?
+
+29
+00:01:43,620 --> 00:01:45,600
+So please keep that in mind.
+
+30
+00:01:45,600 --> 00:01:49,200
+Use the slope function, not the correlation function.
+
+31
+00:01:49,200 --> 00:01:52,340
+And we are trying to figure out the sensitivities, right?
+
+32
+00:01:52,340 --> 00:01:55,010
+Not the strength of the relationship.
+
+33
+00:01:55,010 --> 00:01:58,660
+Okay, you do this, and the ordering is important guys.
+
+34
+00:01:58,660 --> 00:02:02,826
+So please keep security one on the left hand side, and
+
+35
+00:02:02,826 --> 00:02:05,610
+S&amp;P500 on the right hand side.
+
+36
+00:02:05,610 --> 00:02:10,399
+It&#39;s also very important, conceptually, security one is unlikely to have an effect
+
+37
+00:02:10,399 --> 00:02:13,560
+on S&amp;P500, that&#39;s another beauty of finance.
+
+38
+00:02:13,560 --> 00:02:16,720
+It tells you what your right hand side variable is.
+
+39
+00:02:16,720 --> 00:02:20,560
+And you don&#39;t just blindly run regressions, and it makes sense.
+
+40
+00:02:20,560 --> 00:02:25,393
+It&#39;s unlikely, impossible that security one will cause S&amp;P 500.
+
+41
+00:02:25,393 --> 00:02:30,140
+Where there are 500 others, the opposite is true, right?
+
+42
+00:02:30,140 --> 00:02:31,180
+So you measure these.
+
+43
+00:02:31,180 --> 00:02:35,707
+If you do, the numbers will turn
+
+44
+00:02:35,707 --> 00:02:40,074
+out to be .79 and 0.47.
+
+45
+00:02:40,074 --> 00:02:42,858
+I didn&#39;t mean to do this.
+
+46
+00:02:42,858 --> 00:02:45,246
+So .79 and .47.
+
+47
+00:02:45,246 --> 00:02:47,195
+So what does .79 mean?
+
+48
+00:02:47,195 --> 00:02:53,148
+How does if the market moves by 1%, how much security one move by?
+
+49
+00:02:53,148 --> 00:02:57,299
+0.47 tells you that the sensitivity of slope,
+
+50
+00:02:57,299 --> 00:03:01,651
+I mean sensitivity of security two to market is less.
+
+51
+00:03:01,651 --> 00:03:06,556
+It&#39;s not zero, it&#39;s closer to 0.5, it&#39;s less.
+
+52
+00:03:06,556 --> 00:03:12,328
+It’s simply because when markets change, this security is less common risk right?
+
+53
+00:03:12,328 --> 00:03:13,508
+So, okay.
+
+54
+00:03:13,508 --> 00:03:15,857
+It&#39;s also called systematic risk.
+
+55
+00:03:15,857 --> 00:03:17,750
+Quick question.
+
+56
+00:03:17,750 --> 00:03:21,460
+What is the beta of the portfolio of two securities?
+
+57
+00:03:21,460 --> 00:03:26,516
+So remember, hopefully you&#39;ve created this Rp,
+
+58
+00:03:26,516 --> 00:03:32,043
+which is weighted average of Securities (1,2) and
+
+59
+00:03:32,043 --> 00:03:35,290
+you put it in a separate column.
+
+60
+00:03:35,290 --> 00:03:36,810
+Remember we&#39;re done that.
+
+61
+00:03:36,810 --> 00:03:40,810
+Calculate the slope and replace two by that Rp.
+
+62
+00:03:42,600 --> 00:03:48,199
+And you should be able to figure the slope three and
+
+63
+00:03:48,199 --> 00:03:52,210
+I think it turns out to be 0.63.
+
+64
+00:03:52,210 --> 00:03:54,484
+Now comes the really cool thing.
+
+65
+00:03:54,484 --> 00:03:59,858
+How is the 0.63 related to the average?
+
+66
+00:03:59,858 --> 00:04:04,800
+How is the 0.63 related to the average of the two betas?
+
+67
+00:04:05,880 --> 00:04:08,375
+Thing is, they are the same.
+
+68
+00:04:11,260 --> 00:04:12,757
+You see what has happened?
+
+69
+00:04:12,757 --> 00:04:17,087
+We have gone from variances not being important in a portfolio,
+
+70
+00:04:17,087 --> 00:04:23,620
+covariances being important, therefore the measure of risk of Amazon is the beta.
+
+71
+00:04:23,620 --> 00:04:26,310
+The major of risk of security one is it&#39;s beta.
+
+72
+00:04:26,310 --> 00:04:28,480
+Security two is it&#39;s beta.
+
+73
+00:04:28,480 --> 00:04:29,836
+And betas are adding up.
+
+74
+00:04:29,836 --> 00:04:35,110
+They&#39;re averages, they&#39;re linear, variances were not.
+
+75
+00:04:35,110 --> 00:04:36,900
+So you see how cool things have become?
+
+76
+00:04:36,900 --> 00:04:39,168
+If I asked you what is the variance of a portfolio,
+
+77
+00:04:39,168 --> 00:04:41,599
+of 500 things what will you have to do?
+
+78
+00:04:41,599 --> 00:04:47,262
+Boy, there&#39;s a portfolio return, or have 250,000 things to worry about.
+
+79
+00:04:47,262 --> 00:04:53,460
+If I ask you, what is the average of the Betas of the 500, just like means.
+
+80
+00:04:53,460 --> 00:04:54,850
+The betas add up.
+
+81
+00:04:54,850 --> 00:04:59,439
+And this will give you a hint of why a beautiful relationship between risk and
+
+82
+00:04:59,439 --> 00:05:01,130
+return exists.
+
+83
+00:05:01,130 --> 00:05:06,010
+It&#39;s because betas are linear, and variances are not.
+
+84
+00:05:06,010 --> 00:05:11,410
+And betas determine risk in a diversified portfolio and therefore,
+
+85
+00:05:11,410 --> 00:05:17,140
+betas will show up as a measurement to for figuring out returns.
+
+86
+00:05:17,140 --> 00:05:21,360
+And that equation is called capitalistic pricing model.
+
+87
+00:05:21,360 --> 00:05:25,530
+And when we come back in a minute, that&#39;s where we go.
+
+88
+00:05:25,530 --> 00:05:26,030
+See you soon.
+

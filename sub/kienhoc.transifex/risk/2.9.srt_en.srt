@@ -1,0 +1,748 @@
+0
+00:00:05,090 --> 00:00:05,770
+Welcome.
+https://youtu.be/bXd9aQ8FbuY
+1
+00:00:06,850 --> 00:00:11,140
+As you know we are doing a lot of data analysis especially for
+
+2
+00:00:11,140 --> 00:00:13,460
+those of you who haven&#39;t done this before.
+
+3
+00:00:13,460 --> 00:00:17,620
+It&#39;s capturing various things, right?
+
+4
+00:00:17,620 --> 00:00:21,920
+You&#39;re understanding concepts, you&#39;re applying data, you&#39;re learning Excel,
+
+5
+00:00:21,920 --> 00:00:24,270
+you&#39;re learning statistics.
+
+6
+00:00:24,270 --> 00:00:27,950
+So it can be somewhat overwhelming sometimes but
+
+7
+00:00:27,950 --> 00:00:32,490
+the good news about digital education is you can take breaks, go back,
+
+8
+00:00:33,500 --> 00:00:37,580
+figure out what you didn&#39;t understand and so on and so forth and run with it.
+
+9
+00:00:37,580 --> 00:00:43,270
+So right now, what we&#39;re doing or we have been doing is using simple statistics to
+
+10
+00:00:43,270 --> 00:00:49,350
+try to use a large data set and make sense of it in the context of risk and return.
+
+11
+00:00:49,350 --> 00:00:51,490
+So what did we just do?
+
+12
+00:00:51,490 --> 00:00:55,682
+We did average returns which you&#39;d rather have them higher than lower.
+
+13
+00:00:58,477 --> 00:01:04,087
+We did standard deviations and variances to understand risk of them stand alone.
+
+14
+00:01:04,087 --> 00:01:08,816
+But then we are doing a lot of covariances, and correlations, and
+
+15
+00:01:08,816 --> 00:01:13,884
+betas to understand relationships, because, as you&#39;ll see later,
+
+16
+00:01:13,884 --> 00:01:19,040
+in stock reality, but right now a little bit of faith is involved.
+
+17
+00:01:19,040 --> 00:01:23,260
+That when you are risk adverse your whole portfolio, so it doesn&#39;t make much sense
+
+18
+00:01:23,260 --> 00:01:28,600
+to look at the risk of security by itself, because you never hold a security.
+
+19
+00:01:30,030 --> 00:01:33,900
+Now, the ultimate of that is that you&#39;ll hold a large portfolio.
+
+20
+00:01:33,900 --> 00:01:38,040
+And one of the largest portfolios out there is the market portfolio.
+
+21
+00:01:38,040 --> 00:01:43,000
+Now remember when you say market portfolio technically means everything in the world.
+
+22
+00:01:43,000 --> 00:01:47,900
+But for the time being let&#39;s call it S&amp;P 500 as reflecting
+
+23
+00:01:47,900 --> 00:01:51,780
+all the things that are possible to do in the real world.
+
+24
+00:01:51,780 --> 00:01:54,690
+And I&#39;ve given you that data for how many periods?
+
+25
+00:01:54,690 --> 00:02:01,453
+60 months starting with grow number two, going into 61.
+
+26
+00:02:01,453 --> 00:02:06,364
+And I believe the market data is not column one, like the month numbers, but
+
+27
+00:02:06,364 --> 00:02:07,224
+column two.
+
+28
+00:02:07,224 --> 00:02:12,300
+So assuming it&#39;s column two, let&#39;s calculate average market return.
+
+29
+00:02:12,300 --> 00:02:15,130
+And let&#39;s go through this relatively quickly, and
+
+30
+00:02:15,130 --> 00:02:18,860
+then what I&#39;ll do is I&#39;ll do a wrap up secondly for this whole thing.
+
+31
+00:02:18,860 --> 00:02:24,370
+Put it all back together contextually then we jump into diversification
+
+32
+00:02:24,370 --> 00:02:29,428
+portafolio theory applying all of this to design probably the best
+
+33
+00:02:29,428 --> 00:02:34,594
+model the world has seen called Capitalistic Passing Model Again.
+
+34
+00:02:34,594 --> 00:02:37,467
+Again, for its simplicity and its beauty,
+
+35
+00:02:37,467 --> 00:02:42,090
+and its applicability to some extent, not perfect extent.
+
+36
+00:02:42,090 --> 00:02:45,400
+So, what is the average return on the market portfolio?
+
+37
+00:02:45,400 --> 00:02:46,940
+Very simple to calculate.
+
+38
+00:02:46,940 --> 00:02:48,890
+Let&#39;s write out the numbers.
+
+39
+00:02:48,890 --> 00:02:53,640
+I&#39;ll write it as RM bar, m stands for here,
+
+40
+00:02:53,640 --> 00:02:58,640
+market, But specifically I&#39;m measuring it as S&amp;P 500.
+
+41
+00:02:58,640 --> 00:03:07,120
+This turns out to be 1 / N summation Rm, okay?
+
+42
+00:03:07,120 --> 00:03:13,710
+And I believe the returns turns out to be 1.30%,
+
+43
+00:03:13,710 --> 00:03:18,350
+and how did I calculated average give B2 through B61 answer.
+
+44
+00:03:19,540 --> 00:03:21,143
+Pretty straight foward.
+
+45
+00:03:21,143 --> 00:03:25,960
+The fact that&#39;s different from securities one and two is obvious why,
+
+46
+00:03:25,960 --> 00:03:28,851
+because one and two are just securities and
+
+47
+00:03:28,851 --> 00:03:32,470
+this is combination of a large number of securities.
+
+48
+00:03:33,570 --> 00:03:40,575
+It&#39;s relatively low if you look at history but that&#39;s function of the times.
+
+49
+00:03:40,575 --> 00:03:44,940
+Variance/Standard Deviation of the Market portfolio, very easy introduce,
+
+50
+00:03:44,940 --> 00:03:46,490
+so let&#39;s do it.
+
+51
+00:03:46,490 --> 00:03:50,410
+In Excel, what function will you use?
+
+52
+00:03:50,410 --> 00:03:53,970
+You&#39;ll use VAR S, I think it&#39;s in caps.
+
+53
+00:03:55,460 --> 00:03:57,042
+Let&#39;s write out more.
+
+54
+00:03:57,042 --> 00:03:59,670
+Rm squared hat.
+
+55
+00:03:59,670 --> 00:04:01,490
+What is Excel doing?
+
+56
+00:04:01,490 --> 00:04:05,400
+It&#39;s adjusting for degrees of freedom, but it&#39;s calculating
+
+57
+00:04:06,850 --> 00:04:10,450
+Rm- Rm bar, and these change.
+
+58
+00:04:10,450 --> 00:04:11,780
+And how many of them are there?
+
+59
+00:04:11,780 --> 00:04:15,590
+60 of them, and squared.
+
+60
+00:04:15,590 --> 00:04:22,230
+Otherwise, you would sum something up that adds up to zero.
+
+61
+00:04:22,230 --> 00:04:25,933
+And this number, I think,
+
+62
+00:04:25,933 --> 00:04:30,124
+works out to be 0.0021.
+
+63
+00:04:30,124 --> 00:04:33,205
+The first thing you&#39;ll realize is that it&#39;s much
+
+64
+00:04:33,205 --> 00:04:36,285
+lower than the variance of integers securities,
+
+65
+00:04:36,285 --> 00:04:40,337
+and that&#39;s just teaser for you to think about when we get into it.
+
+66
+00:04:40,337 --> 00:04:47,975
+So okay, then the number that I will calculate is standard deviation,
+
+67
+00:04:47,975 --> 00:04:52,330
+take a square root and 0.0457%.
+
+68
+00:04:52,330 --> 00:04:55,660
+Okay, so we have calculated the standard deviation, the variance of the market.
+
+69
+00:04:56,750 --> 00:04:58,250
+Why are we doing this?
+
+70
+00:04:58,250 --> 00:05:01,010
+Because, let me throw out an idea.
+
+71
+00:05:01,010 --> 00:05:03,930
+Who, imagine three situations.
+
+72
+00:05:03,930 --> 00:05:07,570
+You could have held security one by itself, security two by itself,
+
+73
+00:05:07,570 --> 00:05:10,310
+or the market portfolio by itself.
+
+74
+00:05:10,310 --> 00:05:13,690
+Which one of these are you most likely to hold,
+
+75
+00:05:13,690 --> 00:05:16,080
+if these were the only three options?
+
+76
+00:05:16,080 --> 00:05:20,400
+Answer should be very obvious, it depends on your tolerance for risk.
+
+77
+00:05:20,400 --> 00:05:23,880
+And most of us are risk-averse, and most of us will do what?
+
+78
+00:05:23,880 --> 00:05:24,900
+Diversify.
+
+79
+00:05:24,900 --> 00:05:32,030
+Know one day you see, that people who can save tend to save in not only portfolios
+
+80
+00:05:32,030 --> 00:05:37,010
+but index portfolios, where the preconceived portfolios.
+
+81
+00:05:37,010 --> 00:05:41,554
+You don&#39;t have to buy and sell and pay a lot of transaction costs,
+
+82
+00:05:41,554 --> 00:05:43,960
+it&#39;s become very, very common.
+
+83
+00:05:43,960 --> 00:05:48,980
+Let&#39;s keep going and let&#39;s ask you the following question.
+
+84
+00:05:48,980 --> 00:05:53,210
+What is the covariance between security one and the market?
+
+85
+00:05:55,060 --> 00:06:00,760
+And this will again, huge amount of significance as we move forward and why.
+
+86
+00:06:00,760 --> 00:06:05,700
+And the reason is very simple, remember security ones risk standard deviation
+
+87
+00:06:05,700 --> 00:06:10,970
+of variance or whatever, doesn´t mean anything for a risk adverse person.
+
+88
+00:06:10,970 --> 00:06:15,460
+Think of a person who&#39;s holding a very large diversified portfolio.
+
+89
+00:06:15,460 --> 00:06:18,550
+And let&#39;s imagine that&#39;s the market portfolio.
+
+90
+00:06:18,550 --> 00:06:21,750
+Then, how that security one behaves as everything in
+
+91
+00:06:21,750 --> 00:06:26,790
+the market portfolio becomes an extremely important thing to measure.
+
+92
+00:06:26,790 --> 00:06:30,110
+Because that&#39;s what will be the measure of its risk.
+
+93
+00:06:30,110 --> 00:06:34,870
+So, let&#39;s see relationships, how will you measure this covariance?
+
+94
+00:06:34,870 --> 00:06:37,020
+Let&#39;s measure it.
+
+95
+00:06:37,020 --> 00:06:42,941
+So the covariance 1,m
+
+96
+00:06:42,941 --> 00:06:48,269
+hat will be equal to 1
+
+97
+00:06:48,269 --> 00:06:56,270
+/N-1 Summation R1- R1i.
+
+98
+00:06:58,127 --> 00:07:06,830
+Sorry, R1 bar times Rm- Rm bar.
+
+99
+00:07:08,600 --> 00:07:11,030
+Apologize for that little slip up.
+
+100
+00:07:11,030 --> 00:07:17,020
+So bar is the mean, bar is the mean, Two means, I know, very easy to calculate.
+
+101
+00:07:17,020 --> 00:07:23,853
+And the answer turns out to be, if I have my numbers right, 0.0017.
+
+102
+00:07:23,853 --> 00:07:28,492
+Again, what function will you use correl for
+
+103
+00:07:28,492 --> 00:07:32,390
+correlation, covariance cov.
+
+104
+00:07:32,390 --> 00:07:36,730
+And remember, you&#39;re using sample data, so remember that piece of.
+
+105
+00:07:36,730 --> 00:07:41,200
+But you can also do this by hand, and learn what it means.
+
+106
+00:07:41,200 --> 00:07:46,040
+This is not a very useful measure, in terms of interpretation, but a absolute
+
+107
+00:07:46,040 --> 00:07:50,530
+necessary step, you cannot calculate relationships Unless you know this.
+
+108
+00:07:50,530 --> 00:07:55,350
+What do you recognize, what is the one thing you can say, that this security
+
+109
+00:07:55,350 --> 00:08:00,030
+on average is positively correlated with the market, okay.
+
+110
+00:08:00,030 --> 00:08:02,763
+And again, I repeat and deze you,
+
+111
+00:08:02,763 --> 00:08:07,710
+this is much more likely to happen than a negative correlation or
+
+112
+00:08:07,710 --> 00:08:13,110
+a zero correlation of any randomly selected security.
+
+113
+00:08:13,110 --> 00:08:18,500
+So, since this is just telling you relationship sign, let&#39;s go and
+
+114
+00:08:18,500 --> 00:08:20,670
+try to figure out correlation.
+
+115
+00:08:20,670 --> 00:08:23,737
+What&#39;s the correlation between security one and two?
+
+116
+00:08:23,737 --> 00:08:28,453
+And, correlation between security 1 and
+
+117
+00:08:28,453 --> 00:08:32,383
+2 is, covariance 1 having one and
+
+118
+00:08:32,383 --> 00:08:37,370
+market divided by sigma 1 hat, sigma m hat.
+
+119
+00:08:38,659 --> 00:08:42,710
+So it&#39;s standardizing by both the variables, okay?
+
+120
+00:08:42,710 --> 00:08:49,415
+And I think the correlation turns out to be 0.32, I know all the numbers,
+
+121
+00:08:49,415 --> 00:08:55,313
+so you know all the numbers, just plug, and it should be 0.32.
+
+122
+00:08:55,313 --> 00:08:57,380
+So, quick question.
+
+123
+00:08:57,380 --> 00:08:58,530
+What does this mean?
+
+124
+00:08:58,530 --> 00:09:05,700
+Positive, does it mean closer to one than the before of 0.06?
+
+125
+00:09:05,700 --> 00:09:06,768
+Answer is yes.
+
+126
+00:09:06,768 --> 00:09:08,910
+0.06 was between one and two.
+
+127
+00:09:08,910 --> 00:09:11,478
+This is between one and the market, so
+
+128
+00:09:11,478 --> 00:09:17,410
+0.32 means it&#39;s positive and it&#39;s reasonably strong.
+
+129
+00:09:17,410 --> 00:09:21,849
+Given in the real world we&#39;ve never seen one, we&#39;ve never seen really,
+
+130
+00:09:21,849 --> 00:09:24,224
+really high numbers, this is not bad.
+
+131
+00:09:24,224 --> 00:09:28,860
+Good news is between minus one, plus one.
+
+132
+00:09:28,860 --> 00:09:33,290
+More interpretation plus one highly unlikely negative range.
+
+133
+00:09:33,290 --> 00:09:37,370
+Also likely in the real world, why therefore mostly positive.
+
+134
+00:09:38,490 --> 00:09:41,500
+Okay, so one way to think about it is most security returns will have
+
+135
+00:09:41,500 --> 00:09:45,550
+positive correlations with the market the extent of the correlation with change
+
+136
+00:09:45,550 --> 00:09:46,670
+will tend to be positive.
+
+137
+00:09:47,800 --> 00:09:49,390
+Please carry that and think about it.
+
+138
+00:09:51,490 --> 00:09:54,670
+Let&#39;s keep going, because we haven&#39;t been done.
+
+139
+00:09:54,670 --> 00:09:59,812
+This, to me, now becomes the key variable that we&#39;ll use later on,
+
+140
+00:09:59,812 --> 00:10:02,303
+and I&#39;m gonna introduce it now.
+
+141
+00:10:02,303 --> 00:10:07,574
+So the question is, what is the beta between 1 and S&amp;P 500?
+
+142
+00:10:07,574 --> 00:10:09,570
+So, let&#39;s write out the regression.
+
+143
+00:10:09,570 --> 00:10:13,690
+And this is what I&#39;ve been waiting for for a long, long time.
+
+144
+00:10:16,890 --> 00:10:23,728
+Beta 1 with m, Rm + Epsilon i.
+
+145
+00:10:25,068 --> 00:10:27,462
+Or, 1i, right?
+
+146
+00:10:29,736 --> 00:10:31,790
+Actually since 1 is there, i wouldn&#39;t be there.
+
+147
+00:10:33,230 --> 00:10:36,680
+Okay, so let&#39;s figure out how to calculate this.
+
+148
+00:10:36,680 --> 00:10:38,905
+The function you&#39;ll use is slope.
+
+149
+00:10:40,726 --> 00:10:44,849
+But, let&#39;s write out the formula,
+
+150
+00:10:44,849 --> 00:10:50,169
+beta 1m hat = covariance 1m, which we know,
+
+151
+00:10:50,169 --> 00:10:57,490
+hat, not divide by sigma 1, sigma m, but by sigma m square hat.
+
+152
+00:10:57,490 --> 00:10:58,950
+And this interpretation is so
+
+153
+00:10:58,950 --> 00:11:03,450
+awesome because it&#39;s saying, how does one related with m?
+
+154
+00:11:03,450 --> 00:11:05,010
+And inside m is who?
+
+155
+00:11:05,010 --> 00:11:07,880
+Everybody in your portfolio, if you&#39;re holding the market portfolio.
+
+156
+00:11:09,120 --> 00:11:13,700
+Relative to what, the movement in the market portfolio itself.
+
+157
+00:11:13,700 --> 00:11:16,310
+Do we all these numbers and these two numbers?
+
+158
+00:11:16,310 --> 00:11:17,770
+The answer is yes.
+
+159
+00:11:17,770 --> 00:11:25,406
+And here, it will turn out to be 0.79.
+
+160
+00:11:25,406 --> 00:11:27,050
+So, what does that mean?
+
+161
+00:11:27,050 --> 00:11:32,740
+It means something great, that if the the whole market moves by 1%,
+
+162
+00:11:32,740 --> 00:11:35,736
+how much does this security move by?
+
+163
+00:11:35,736 --> 00:11:37,322
+0.79%.
+
+164
+00:11:37,322 --> 00:11:41,740
+So, it&#39;s not moving perfectly with the market, but it&#39;s pretty close to.
+
+165
+00:11:41,740 --> 00:11:48,420
+And it turns out most betas are within a tight distribution, not very extreme.
+
+166
+00:11:48,420 --> 00:11:53,400
+But it also depends on lifecycle of the firm, where is it at?
+
+167
+00:11:53,400 --> 00:11:54,690
+What kind of film is it?
+
+168
+00:11:54,690 --> 00:11:56,810
+What kind of business does it do?
+
+169
+00:11:56,810 --> 00:12:02,190
+If it&#39;s very luxury this number will be high, and we&#39;ll talk about it why.
+
+170
+00:12:02,190 --> 00:12:06,245
+Whether it&#39;s needed all the time then it&#39;s beta&#39;s would be low,
+
+171
+00:12:06,245 --> 00:12:09,450
+built-in to be positive, and so on.
+
+172
+00:12:09,450 --> 00:12:13,800
+What am I going to do now is I&#39;m going to request you to take a break.
+
+173
+00:12:13,800 --> 00:12:18,910
+I would request you to calculate beta two M, beta three M, beta four M, beta five M.
+
+174
+00:12:18,910 --> 00:12:21,440
+See what you gain from it,
+
+175
+00:12:21,440 --> 00:12:25,810
+then it familiarize you with getting your hands dirty with data.
+
+176
+00:12:25,810 --> 00:12:29,420
+Do it with the Excel function, do it without the Excel function.
+
+177
+00:12:29,420 --> 00:12:30,720
+If you&#39;re more advanced,
+
+178
+00:12:30,720 --> 00:12:34,800
+you probably don&#39;t need to do much, you&#39;ve set up regression functions.
+
+179
+00:12:35,870 --> 00:12:40,470
+Whatever your learning is at, where ever it&#39;s at,
+
+180
+00:12:40,470 --> 00:12:44,850
+in statistics, in finance and so on try to combine it with the on speed but
+
+181
+00:12:44,850 --> 00:12:48,370
+do the data analysis that&#39;s the beauty of this.
+
+182
+00:12:48,370 --> 00:12:49,370
+I&#39;m wanna take a break and
+
+183
+00:12:49,370 --> 00:12:55,130
+what I&#39;m going to do now when I come back is I&#39;m gonna wrap things and bring them
+
+184
+00:12:55,130 --> 00:13:00,410
+back to why the heck did we do data analysis for such a long period of time,
+
+185
+00:13:01,480 --> 00:13:07,210
+using statistics but mostly using financial data.
+
+186
+00:13:07,210 --> 00:13:08,328
+See you in a minute.
+

@@ -1,0 +1,612 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/maWGmeD4DYY
+
+1
+00:00:00,499 --> 00:00:03,340
+So how do I measure the quality of a forecast?
+
+2
+00:00:03,340 --> 00:00:05,660
+Well, we can think of it as a trade-off.
+
+3
+00:00:05,660 --> 00:00:08,130
+And so if I think of my forecast here--
+
+4
+00:00:08,130 --> 00:00:11,090
+and I have a chart-- and the horizontal axis
+
+5
+00:00:11,090 --> 00:00:13,390
+is the forecast accuracy.
+
+6
+00:00:13,390 --> 00:00:17,380
+So as I increase, this gets more accurate over here, right?
+
+7
+00:00:17,380 --> 00:00:20,150
+And less accurate down here.
+
+8
+00:00:20,150 --> 00:00:23,690
+And you can think of the cost on the vertical axis.
+
+9
+00:00:23,690 --> 00:00:26,840
+So we can think about a cost of errors in forecast.
+
+10
+00:00:26,840 --> 00:00:29,660
+So as I increase my forecast accuracy
+
+11
+00:00:29,660 --> 00:00:32,280
+I expect some cost to go down.
+
+12
+00:00:32,280 --> 00:00:36,040
+These are the costs of having to deal with low-quality.
+
+13
+00:00:36,040 --> 00:00:40,660
+So the rework, removing some items, expediting items.
+
+14
+00:00:40,660 --> 00:00:42,630
+If my demand gets more accurate, then I
+
+15
+00:00:42,630 --> 00:00:46,060
+expect to have less products that become obsolete.
+
+16
+00:00:46,060 --> 00:00:47,790
+I won't have to discount as much.
+
+17
+00:00:47,790 --> 00:00:51,010
+So I can think of a whole bunch of different error forecast
+
+18
+00:00:51,010 --> 00:00:53,520
+costs that are reduced as I improve
+
+19
+00:00:53,520 --> 00:00:59,070
+the quality of the forecast accuracy of my forecast.
+
+20
+00:00:59,070 --> 00:01:01,110
+Now at the other side, that a lot of people
+
+21
+00:01:01,110 --> 00:01:03,490
+don't think about, is there is a cost
+
+22
+00:01:03,490 --> 00:01:05,846
+of having more accurate forecasts.
+
+23
+00:01:05,846 --> 00:01:07,220
+And so some of these things would
+
+24
+00:01:07,220 --> 00:01:09,790
+be the cost of the system used.
+
+25
+00:01:09,790 --> 00:01:12,640
+You'd have a much more expensive system.
+
+26
+00:01:12,640 --> 00:01:16,000
+But even more importantly, there would be a time aspect.
+
+27
+00:01:16,000 --> 00:01:18,230
+It takes more time to produce this forecast.
+
+28
+00:01:18,230 --> 00:01:20,470
+So there's a delay in producing that forecast.
+
+29
+00:01:20,470 --> 00:01:22,350
+There's more time and energy spent
+
+30
+00:01:22,350 --> 00:01:24,560
+in producing that forecast as well.
+
+31
+00:01:24,560 --> 00:01:27,880
+Also, as I get more accurate forecasts
+
+32
+00:01:27,880 --> 00:01:31,380
+and spend more time on this they tend to get more nervous.
+
+33
+00:01:31,380 --> 00:01:32,330
+They jump around.
+
+34
+00:01:32,330 --> 00:01:34,140
+They're not as consistent.
+
+35
+00:01:34,140 --> 00:01:36,470
+And so the idea here is, there are
+
+36
+00:01:36,470 --> 00:01:39,690
+costs of spending too much time-- or an excess amount
+
+37
+00:01:39,690 --> 00:01:43,380
+of time on forecast accuracy.
+
+38
+00:01:43,380 --> 00:01:46,690
+So ideally, what you want to do is be somewhere in the middle.
+
+39
+00:01:46,690 --> 00:01:48,830
+And so you look at this total cost
+
+40
+00:01:48,830 --> 00:01:51,170
+and you say, OK, what's the region that I
+
+41
+00:01:51,170 --> 00:01:54,720
+want to be in in this acceptable region the middle?
+
+42
+00:01:54,720 --> 00:01:57,550
+You don't want to be too excessively over here
+
+43
+00:01:57,550 --> 00:01:59,480
+with your causal models, and you don't
+
+44
+00:01:59,480 --> 00:02:02,850
+be too overly naive in your models.
+
+45
+00:02:02,850 --> 00:02:04,356
+Now, this is just conceptual.
+
+46
+00:02:04,356 --> 00:02:05,730
+This is just a general framework.
+
+47
+00:02:05,730 --> 00:02:08,430
+But I think it's important to remember this.
+
+48
+00:02:08,430 --> 00:02:12,280
+Because we can get caught up in spending so much time
+
+49
+00:02:12,280 --> 00:02:14,370
+to forecast for forecast's sake.
+
+50
+00:02:14,370 --> 00:02:17,910
+And that's the idea of coming up with these really, really
+
+51
+00:02:17,910 --> 00:02:19,950
+intricate, detailed forecasts.
+
+52
+00:02:19,950 --> 00:02:23,660
+And we lose sight of what the cost is of doing that.
+
+53
+00:02:23,660 --> 00:02:26,640
+So let's return back to the idea of what is a quality forecast.
+
+54
+00:02:26,640 --> 00:02:30,220
+How can I determine if a forecast is good?
+
+55
+00:02:30,220 --> 00:02:31,670
+So what we want to end up with is
+
+56
+00:02:31,670 --> 00:02:33,600
+a metric, or a series of metrics.
+
+57
+00:02:33,600 --> 00:02:35,430
+And so let's do an example.
+
+58
+00:02:35,430 --> 00:02:37,030
+And this is a very simple example.
+
+59
+00:02:37,030 --> 00:02:40,120
+So time is on the horizontal axis,
+
+60
+00:02:40,120 --> 00:02:42,960
+and the vertical axis is the demand.
+
+61
+00:02:42,960 --> 00:02:44,630
+And so I have two forecasts.
+
+62
+00:02:44,630 --> 00:02:47,590
+The first forecast is my blue square forecast.
+
+63
+00:02:47,590 --> 00:02:50,820
+And for every time period you can see what they forecasted.
+
+64
+00:02:50,820 --> 00:02:53,690
+So for time period one they forecasted 900.
+
+65
+00:02:53,690 --> 00:02:56,140
+Time period two they forecasted 1,100.
+
+66
+00:02:56,140 --> 00:02:58,320
+Time period three they forecasted demand
+
+67
+00:02:58,320 --> 00:03:00,780
+would be back to 900, and so on.
+
+68
+00:03:00,780 --> 00:03:02,480
+Another forecast that was developed
+
+69
+00:03:02,480 --> 00:03:04,870
+is the green triangle forecast.
+
+70
+00:03:04,870 --> 00:03:07,110
+And they forecasted, or estimated,
+
+71
+00:03:07,110 --> 00:03:11,980
+that demand would be the same, 1,100, for every time period.
+
+72
+00:03:11,980 --> 00:03:13,470
+So these are the two forecasts.
+
+73
+00:03:13,470 --> 00:03:15,050
+So what happened?
+
+74
+00:03:15,050 --> 00:03:16,180
+Here's the actual.
+
+75
+00:03:16,180 --> 00:03:20,470
+These red circles are the actual demand values.
+
+76
+00:03:20,470 --> 00:03:23,010
+So the question is, which forecast
+
+77
+00:03:23,010 --> 00:03:25,590
+is better, the square or the triangle?
+
+78
+00:03:25,590 --> 00:03:28,250
+And so this gets to the heart of the question of,
+
+79
+00:03:28,250 --> 00:03:30,550
+how do you measure the quality of a forecast.
+
+80
+00:03:30,550 --> 00:03:32,280
+Because let's look at it.
+
+81
+00:03:32,280 --> 00:03:36,410
+They both have the same level of accuracy.
+
+82
+00:03:36,410 --> 00:03:38,150
+In other words, each of the forecasts,
+
+83
+00:03:38,150 --> 00:03:41,160
+whether it's the blue square or the green triangle
+
+84
+00:03:41,160 --> 00:03:45,510
+is exactly 100 units off from what the actual demand was.
+
+85
+00:03:45,510 --> 00:03:49,910
+So in each case I'm off by 100 units.
+
+86
+00:03:49,910 --> 00:03:52,240
+So which one is better there?
+
+87
+00:03:52,240 --> 00:03:55,410
+Another way to look at it though is the idea of bias.
+
+88
+00:03:55,410 --> 00:03:57,250
+And so what do I mean by bias?
+
+89
+00:03:57,250 --> 00:03:58,930
+Well, look at the green triangle.
+
+90
+00:03:58,930 --> 00:04:01,640
+It's always above the actual.
+
+91
+00:04:01,640 --> 00:04:02,970
+It's 100 units up.
+
+92
+00:04:02,970 --> 00:04:05,110
+So it's positively biased.
+
+93
+00:04:05,110 --> 00:04:08,710
+My forecast is always higher than the actual demand.
+
+94
+00:04:08,710 --> 00:04:11,470
+If I look at the blue squares, it's not.
+
+95
+00:04:11,470 --> 00:04:12,400
+There is no bias.
+
+96
+00:04:12,400 --> 00:04:14,530
+I'm equally above or below.
+
+97
+00:04:14,530 --> 00:04:16,570
+So the question is, which is better there?
+
+98
+00:04:16,570 --> 00:04:20,399
+I would argue that it's probably better to be not biased, right?
+
+99
+00:04:20,399 --> 00:04:22,200
+Because if I'm overly-biased then
+
+100
+00:04:22,200 --> 00:04:23,640
+I'm always going to over-predict.
+
+101
+00:04:23,640 --> 00:04:28,200
+If I'm negatively-biased I'm always going to under-predict.
+
+102
+00:04:28,200 --> 00:04:30,190
+However, if I came into a situation
+
+103
+00:04:30,190 --> 00:04:32,700
+and I determined which would I rather
+
+104
+00:04:32,700 --> 00:04:34,600
+step into, a situation where I have
+
+105
+00:04:34,600 --> 00:04:37,830
+these blue square forecasts or the green triangles?
+
+106
+00:04:37,830 --> 00:04:39,600
+It's easier to fix a bias.
+
+107
+00:04:39,600 --> 00:04:42,760
+If I go in and see that I'm always over-biased,
+
+108
+00:04:42,760 --> 00:04:46,980
+over-predicting by 20%, that's an easy fix.
+
+109
+00:04:46,980 --> 00:04:49,380
+I reduced it by 20%.
+
+110
+00:04:49,380 --> 00:04:53,170
+And so I'd almost rather step into that to fix it.
+
+111
+00:04:53,170 --> 00:04:54,560
+At the end of the day though we'd
+
+112
+00:04:54,560 --> 00:04:57,070
+like to have an unbiased forecast.
+
+113
+00:04:57,070 --> 00:04:59,210
+So let's look at this in a little bit more detail
+
+114
+00:04:59,210 --> 00:05:00,720
+and define what we mean here when
+
+115
+00:05:00,720 --> 00:05:02,920
+we talk about accuracy and bias.
+
+116
+00:05:02,920 --> 00:05:05,960
+Accuracy is essentially the closeness
+
+117
+00:05:05,960 --> 00:05:08,330
+to actual observations.
+
+118
+00:05:08,330 --> 00:05:10,830
+The bias is, the persistent tendency
+
+119
+00:05:10,830 --> 00:05:13,760
+to either over or under-predict.
+
+120
+00:05:13,760 --> 00:05:18,210
+So we can think of these two terms as different dimensions.
+
+121
+00:05:18,210 --> 00:05:20,500
+And as they get more accurate, I don't necessarily
+
+122
+00:05:20,500 --> 00:05:22,880
+get less biased or more biased.
+
+123
+00:05:22,880 --> 00:05:25,620
+So there are two dimensions in forecasts.
+
+124
+00:05:25,620 --> 00:05:28,160
+So I can put these on a two by two.
+
+125
+00:05:28,160 --> 00:05:30,390
+And so I've got accuracy on the vertical,
+
+126
+00:05:30,390 --> 00:05:32,380
+and the horizontal is bias.
+
+127
+00:05:32,380 --> 00:05:36,440
+So in the best case, I've got a very accurate forecast.
+
+128
+00:05:36,440 --> 00:05:38,190
+I mean, these are my bullseyes, right?
+
+129
+00:05:38,190 --> 00:05:40,400
+All in the bullseye here, right?
+
+130
+00:05:40,400 --> 00:05:42,360
+It's tough to see red on red.
+
+131
+00:05:42,360 --> 00:05:44,330
+And they're not biased, in that they're all
+
+132
+00:05:44,330 --> 00:05:48,004
+pretty much solid in there-- as opposed
+
+133
+00:05:48,004 --> 00:05:49,170
+to something being accurate.
+
+134
+00:05:49,170 --> 00:05:52,620
+Again it's a nice tight spread.
+
+135
+00:05:52,620 --> 00:05:53,600
+But it's biased.
+
+136
+00:05:53,600 --> 00:05:56,830
+It's all positive and a little bit to the right.
+
+137
+00:05:56,830 --> 00:05:59,420
+Then I can think of having something that's not accurate,
+
+138
+00:05:59,420 --> 00:06:00,320
+right?
+
+139
+00:06:00,320 --> 00:06:01,290
+And not biased.
+
+140
+00:06:01,290 --> 00:06:04,540
+Because if I look at this it's evenly spread throughout,
+
+141
+00:06:04,540 --> 00:06:06,960
+but it's not accurate at all.
+
+142
+00:06:06,960 --> 00:06:09,440
+And then down here for this-- whoops, going the wrong way.
+
+143
+00:06:09,440 --> 00:06:11,851
+This last one, it's not that accurate.
+
+144
+00:06:11,851 --> 00:06:13,100
+It's still kind of spread out.
+
+145
+00:06:13,100 --> 00:06:13,900
+But it's biased.
+
+146
+00:06:13,900 --> 00:06:16,240
+Everything's shooting lower left.
+
+147
+00:06:16,240 --> 00:06:19,680
+So you can think about these two metrics, accuracy and bias.
+
+148
+00:06:19,680 --> 00:06:21,160
+And whenever we look at forecasts
+
+149
+00:06:21,160 --> 00:06:23,680
+we want to think about both dimensions.
+
+150
+00:06:23,680 --> 00:06:25,561
+They're not totally fungible.
+
+151
+00:06:25,561 --> 00:06:27,060
+They're different dimensions and you
+
+152
+00:06:27,060 --> 00:06:30,650
+want to capture and look at each one separately.
+

@@ -1,0 +1,641 @@
+1
+00:00:08,290 --> 00:00:13,030
+This equation that we saw in the last unit
+is the basis of what is called the expected
+
+2
+00:00:13,030 --> 00:00:15,530
+utility
+theory of decision making.
+
+3
+00:00:15,530 --> 00:00:19,640
+This theory relies on five principles, or
+five axioms,
+
+4
+00:00:19,640 --> 00:00:22,740
+that underlie rational decision making.
+
+5
+00:00:22,740 --> 00:00:24,500
+Here are the five axioms.
+
+6
+00:00:24,500 --> 00:00:26,500
+The first one is called completeness.
+
+7
+00:00:26,500 --> 00:00:27,920
+The second one is transitivity.
+
+8
+00:00:27,920 --> 00:00:30,919
+The third is substitution.
+
+9
+00:00:30,919 --> 00:00:32,650
+The fourth is continuity, and the fifth is
+monotonicity.
+
+10
+00:00:32,650 --> 00:00:37,240
+We're going to focus on the first three, because
+the last two are really there
+
+11
+00:00:37,240 --> 00:00:41,410
+for mathematical tractability off the model,
+and they don't have interesting behavioural
+
+12
+00:00:41,410 --> 00:00:43,210
+insights coming out
+of those.
+
+13
+00:00:43,210 --> 00:00:46,010
+Let me start off with completeness.
+
+14
+00:00:46,010 --> 00:00:47,840
+It's a very simple axiom.
+
+15
+00:00:47,840 --> 00:00:51,270
+Completeness says that when I give a decision
+maker two options,
+
+16
+00:00:51,270 --> 00:00:57,240
+let's say x and y, the decision maker should
+be able to articulate a preference between
+
+17
+00:00:57,240 --> 00:00:58,400
+those two options.
+
+18
+00:00:58,400 --> 00:01:05,239
+In other words, they should either be able
+to prefer x over y, or y over x,
+
+19
+00:01:05,239 --> 00:01:11,030
+or they should be able to say that they're
+totally indifferent between those two options.
+
+20
+00:01:11,030 --> 00:01:14,490
+What cannot happen is for the decision maker
+to say, well, gee,
+
+21
+00:01:14,490 --> 00:01:16,260
+I don't know which one to choose.
+
+22
+00:01:16,260 --> 00:01:22,159
+Now, we've seen in some of the previous units
+that in cases where there is too much information,
+
+23
+00:01:22,159 --> 00:01:26,100
+or when there is overload of data, consumers
+might actually
+
+24
+00:01:26,100 --> 00:01:32,060
+choose to not choose, because they're confused,
+and that would be a violation of this simple
+
+25
+00:01:32,060 --> 00:01:34,010
+axiom.
+
+26
+00:01:34,010 --> 00:01:37,850
+Let's go onto to the second axiom, and that's
+called transitivity.
+
+27
+00:01:37,850 --> 00:01:42,350
+This, again, is a very simple axiom, and it
+says the following.
+
+28
+00:01:42,350 --> 00:01:49,780
+Let's imagine a decision maker prefers x over
+y, and then chooses y over z.
+
+29
+00:01:49,780 --> 00:01:55,630
+What this axiom says is, in that case, x should
+be preferred over z.
+
+30
+00:01:55,630 --> 00:01:57,580
+Now this sounds fairly obvious.
+
+31
+00:01:57,580 --> 00:02:03,630
+If you prefer receiving $100 over $50, and
+you prefer receiving $50 over $20,
+
+32
+00:02:03,630 --> 00:02:07,330
+it makes perfect sense that you want to receive
+$100 instead of $20.
+
+33
+00:02:07,330 --> 00:02:12,819
+But there are many different domains in which
+this particular axiom is violated.
+
+34
+00:02:12,819 --> 00:02:15,659
+And I want to show you one simple example.
+
+35
+00:02:15,659 --> 00:02:18,599
+Let's imagine that you are looking for a research
+assistant.
+
+36
+00:02:18,599 --> 00:02:23,540
+You're looking to hire someone, and you have
+three applicants, Mr. A, Mr. B,
+
+37
+00:02:23,540 --> 00:02:27,390
+and Mr. C. And for each one of them, you've
+got data on two attributes.
+
+38
+00:02:27,390 --> 00:02:32,219
+The first one is their IQ, which is based
+on a standardized IQ test.
+
+39
+00:02:32,219 --> 00:02:36,999
+The second one is the number of years of work
+experience that these people have.
+
+40
+00:02:36,999 --> 00:02:40,239
+And let's say you've got a very simple rule.
+
+41
+00:02:40,239 --> 00:02:45,879
+You want to choose the most intelligent person,
+and if in fact, you have two people of equal
+
+42
+00:02:45,879 --> 00:02:49,439
+intelligence,
+then you will choose the one with higher work
+
+43
+00:02:49,439 --> 00:02:50,439
+experience.
+
+44
+00:02:50,439 --> 00:02:53,150
+If you look at this data, you've got three
+people.
+
+45
+00:02:53,150 --> 00:02:56,950
+The person with the highest intelligence score
+also has the lowest experience.
+
+46
+00:02:56,950 --> 00:03:02,400
+And this is a fairly standard kind of a set
+up that you might expect in the real world.
+
+47
+00:03:02,400 --> 00:03:04,239
+Now, here's the interesting part.
+
+48
+00:03:04,239 --> 00:03:10,549
+We also know from the history of IQ tests
+that they're not really reliable.
+
+49
+00:03:10,549 --> 00:03:12,680
+They're not really diagnostic.
+
+50
+00:03:12,680 --> 00:03:15,779
+In other words, a score which is different
+from 10 points
+
+51
+00:03:15,779 --> 00:03:20,340
+from each other might not really mean that
+one person is actually smarter
+
+52
+00:03:20,340 --> 00:03:21,340
+than the other one.
+
+53
+00:03:21,340 --> 00:03:25,890
+So if I look at these data, 120 is about the
+same as 110.
+
+54
+00:03:25,890 --> 00:03:29,519
+110 is about the same as 100.
+
+55
+00:03:29,519 --> 00:03:32,930
+So if I apply my rule of decision making,
+here's what it's going to tell me.
+
+56
+00:03:32,930 --> 00:03:37,459
+It's going to tell me that I will prefer Mr.
+B over Mr. A,
+
+57
+00:03:37,459 --> 00:03:41,860
+because they're about equally intelligent,
+but B has more experience.
+
+58
+00:03:41,860 --> 00:03:49,029
+And likewise, I would prefer C over B. However,
+if I now look at the whole picture, I will
+
+59
+00:03:49,029 --> 00:03:54,780
+end up preferring A over C,
+because now, the difference between 120 and
+
+60
+00:03:54,780 --> 00:03:59,249
+100
+is significantly large, that by my rule, I
+
+61
+00:03:59,249 --> 00:04:01,599
+end up
+picking the more intelligent person.
+
+62
+00:04:01,599 --> 00:04:06,059
+So this is an example of the violation of
+the transitivity principle,
+
+63
+00:04:06,059 --> 00:04:08,859
+and it happens in a number of different domains.
+
+64
+00:04:08,859 --> 00:04:11,909
+Essentially, what's happened here is that
+the context
+
+65
+00:04:11,909 --> 00:04:16,139
+has conspired in such a way that the decision
+maker views
+
+66
+00:04:16,139 --> 00:04:19,609
+the attributes differently in making choices.
+
+67
+00:04:19,609 --> 00:04:24,229
+So the literature is replete with examples
+of the violation
+
+68
+00:04:24,229 --> 00:04:26,920
+off this particular axiom.
+
+69
+00:04:26,920 --> 00:04:33,830
+Here's the third and more important axiom,
+and this axiom is called the axiom of substitution.
+
+70
+00:04:33,830 --> 00:04:36,410
+And it says the following.
+
+71
+00:04:36,410 --> 00:04:41,630
+If I have two options, x and y, and I'm indifferent
+between x and y,
+
+72
+00:04:41,630 --> 00:04:44,480
+then I should be indifferent between two lotteries
+that
+
+73
+00:04:44,480 --> 00:04:47,280
+have x and y as their price.
+
+74
+00:04:47,280 --> 00:04:52,310
+So for example, if I love an apple as much
+as I love a banana,
+
+75
+00:04:52,310 --> 00:04:55,780
+then you come to me and say, well if you're
+going to toss a coin,
+
+76
+00:04:55,780 --> 00:04:58,220
+in one case if it's heads, you're going to
+get an apple.
+
+77
+00:04:58,220 --> 00:05:00,990
+In the other case, if it's heads, you're going
+to get a banana.
+
+78
+00:05:00,990 --> 00:05:03,270
+Then I should be indifferent between those
+two lotteries
+
+79
+00:05:03,270 --> 00:05:07,870
+because I was indifferent between the two
+prizes to begin with.
+
+80
+00:05:07,870 --> 00:05:14,060
+Now, one corollary of this particular axiom
+is something called the cancellation principle.
+
+81
+00:05:14,060 --> 00:05:16,650
+And cancellation says that if I've got two
+options,
+
+82
+00:05:16,650 --> 00:05:20,260
+and I remove something identical from those
+two options,
+
+83
+00:05:20,260 --> 00:05:24,650
+I should still now have the same preference
+between those two options
+
+84
+00:05:24,650 --> 00:05:25,650
+as I had before.
+
+85
+00:05:25,650 --> 00:05:28,790
+Now it turns out again that this principle,
+the principle
+
+86
+00:05:28,790 --> 00:05:33,450
+of cancellation, is often violated in a lot
+of decisions that we make.
+
+87
+00:05:33,450 --> 00:05:38,000
+And perhaps the most famous demonstration
+of the violation of this principle was done
+
+88
+00:05:38,000 --> 00:05:43,810
+by Maurice Allais in something
+that is known as the Allais Paradox.
+
+89
+00:05:43,810 --> 00:05:47,900
+Let's look for a moment at this particular
+choice.
+
+90
+00:05:47,900 --> 00:05:49,200
+Two options.
+
+91
+00:05:49,200 --> 00:05:53,780
+Option A, I give you a million dollars, no
+questions asked.
+
+92
+00:05:53,780 --> 00:05:56,280
+Option B, they're going to play a lottery.
+
+93
+00:05:56,280 --> 00:05:59,730
+In that lottery, there's a 10% chance that
+you will win 2.5 million.
+
+94
+00:05:59,730 --> 00:06:03,930
+There's an 89% chance that you will win one
+million,
+
+95
+00:06:03,930 --> 00:06:07,360
+and there is a 1% chance that you will win
+nothing.
+
+96
+00:06:07,360 --> 00:06:11,770
+In this circumstance, what Maurice Allais
+found
+
+97
+00:06:11,770 --> 00:06:16,130
+was that most people prefer Option A. It's
+a no brainer.
+
+98
+00:06:16,130 --> 00:06:18,860
+It's a million dollars with no strings attached.
+
+99
+00:06:18,860 --> 00:06:20,810
+Makes perfect sense.
+
+100
+00:06:20,810 --> 00:06:23,480
+Now, let's look at the second problem.
+
+101
+00:06:23,480 --> 00:06:27,340
+Again, if you're choosing here between two
+options, we're going to call it A
+
+102
+00:06:27,340 --> 00:06:34,810
+and B. In Option A, we have a lottery in which
+there's an 11% chance of winning one million
+
+103
+00:06:34,810 --> 00:06:38,500
+and an 89% chance of winning nothing.
+
+104
+00:06:38,500 --> 00:06:41,170
+In Option B, we have a second lottery.
+
+105
+00:06:41,170 --> 00:06:47,820
+10% chance of winning 2.5 million and a 90%
+chance of winning nothing.
+
+106
+00:06:47,820 --> 00:06:52,150
+Now, as you might expect a lot of people prefer
+Option B.
+
+107
+00:06:52,150 --> 00:06:57,070
+If you think about,
+the difference between 10%, 11% isn't very
+
+108
+00:06:57,070 --> 00:06:58,070
+large.
+
+109
+00:06:58,070 --> 00:07:02,650
+The difference between a million and 2.5 million
+is that much more larger.
+
+110
+00:07:02,650 --> 00:07:06,060
+And so, people tend to pick the Option B,
+which gives them
+
+111
+00:07:06,060 --> 00:07:08,270
+a chance of winning the larger price.
+
+112
+00:07:08,270 --> 00:07:10,330
+Here's an interesting thing though.
+
+113
+00:07:10,330 --> 00:07:13,730
+If I put these two side by side, what you'll
+notice
+
+114
+00:07:13,730 --> 00:07:17,920
+is that these two options are essentially
+identical.
+
+115
+00:07:17,920 --> 00:07:20,210
+These two problems are essentially identical.
+
+116
+00:07:20,210 --> 00:07:25,430
+What I've done is I've taken away an 89% probability
+of winning
+
+117
+00:07:25,430 --> 00:07:29,790
+a million dollars away from both options.
+
+118
+00:07:29,790 --> 00:07:35,420
+And essentially, by doing that, I have now
+created a situation in which I can reverse
+
+119
+00:07:35,420 --> 00:07:40,990
+preferences between A and B.
+And that, again, is a violation of the axiom.
+
+120
+00:07:40,990 --> 00:07:44,830
+Now, as we go through this course we'll see
+a lot of different ways
+
+121
+00:07:44,830 --> 00:07:48,780
+in which consumers and people in general tend
+to violate,
+
+122
+00:07:48,780 --> 00:07:53,530
+not only these axioms of choice, but tend
+to make inconsistent preferences.
+
+123
+00:07:53,530 --> 00:07:55,230
+And I'd like to leave you with one thought.
+
+124
+00:07:55,230 --> 00:07:59,850
+We've talked about the four C's of rationality,
+and we've made the point that all of these
+
+125
+00:07:59,850 --> 00:08:05,120
+four C's need
+to happen for people to display rational behavior.
+
+126
+00:08:05,120 --> 00:08:08,690
+Now, people routinely violate axioms.
+
+127
+00:08:08,690 --> 00:08:13,411
+People routinely do not behave in consistence
+with those four C's, but
+
+128
+00:08:13,411 --> 00:08:14,730
+they're just being people.
+
+129
+00:08:14,730 --> 00:08:16,010
+Are they being irrational?
+
+130
+00:08:16,010 --> 00:08:19,590
+Irrational, I think, has a very strong connotation
+to it.
+
+131
+00:08:19,590 --> 00:08:21,990
+It suggests that people are making a mistake.
+
+132
+00:08:21,990 --> 00:08:27,080
+And in my opinion, if you have a theory that
+doesn't account for the way in which people
+
+133
+00:08:27,080 --> 00:08:31,320
+make decisions,
+perhaps that's not the right theory to explain
+
+134
+00:08:31,320 --> 00:08:32,320
+human behavior.
+
+135
+00:08:32,320 --> 00:08:34,490
+Perhaps it's not people that are being irrational.
+
+136
+00:08:34,490 --> 00:08:41,019
+It is the theory that is perhaps not rational,
+and that's why a behavioral approach to economics
+
+137
+00:08:41,019 --> 00:08:42,589
+tends to be the richer approach.
+

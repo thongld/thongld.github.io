@@ -1,0 +1,364 @@
+0
+00:00:00,000 --> 00:00:00,001
+Thanh_Nguyễn 22/10/2016
+http://youtu.be/5qfietdBNzQ
+
+1
+00:00:05,960 --> 00:00:09,710
+Chào mừng các bạn trở lại với khóa Quản trị Vận hành và ta sẽ
+
+2
+00:00:09,710 --> 00:00:11,028
+dành một chút thời gian
+
+3
+00:00:11,028 --> 00:00:17,629
+tìm hiểu những sơ đồ quy trình.
+Những sơ đồ quy trình là cần thiết vì chúng
+
+4
+00:00:17,630 --> 00:00:19,469
+thể hiện điều gì đang thực sự diễn ra
+
+5
+00:00:19,469 --> 00:00:24,259
+bên trong quy trình. Những điều đầu tiên bạn cần hiểu
+
+6
+00:00:24,260 --> 00:00:28,130
+là có những kí hiệu chính với một sơ đồ quy trình.
+
+7
+00:00:28,129 --> 00:00:32,500
+những hoạt động luôn được biểu diễn bằng những hình chữ nhật
+
+8
+00:00:32,500 --> 00:00:36,768
+những vùng chờ được biết như là vùng đệm luôn được biểu diễn bằng
+
+9
+00:00:36,768 --> 00:00:41,719
+những hình tam giác. Sử dụng những mũi tên để biểu diễn hướng của tiến trình
+
+10
+00:00:41,719 --> 00:00:45,160
+từ đầu vào đến đầu ra và đôi khi bạn thấy
+
+11
+00:00:45,159 --> 00:00:48,299
+những hình tròn hoặc bầu dục biểu diễn điểm bắt đầu và kết thúc
+
+12
+00:00:48,299 --> 00:00:51,549
+Rất quan trọng rằng bạn sử dụng chính xác
+
+13
+00:00:51,549 --> 00:00:55,159
+kí hiệu cho đúng hoạt động hoặc vùng đệm hoặc v.v
+
+14
+00:00:55,159 --> 00:00:59,179
+cách đó bất cứ ai quan sát sơ đồ quy trình
+
+15
+00:00:59,179 --> 00:01:05,390
+hiểu điều gì đang diễn ra. Điều thứ hai, rất quan trọng khi ta xử lí
+
+16
+00:01:05,390 --> 00:01:07,079
+những sơ đồ quy trình
+
+17
+00:01:07,079 --> 00:01:10,579
+là khái nhiệm ưu tiên.
+
+18
+00:01:10,579 --> 00:01:13,890
+Ưu tiên ám chỉ hoạt động nào phải diễn ra ngay
+
+19
+00:01:13,890 --> 00:01:19,769
+trước một hoạt động khác. Điều này cho ta biết những hoạt động nào
+
+20
+00:01:19,769 --> 00:01:21,500
+cần được hoàn thành
+
+21
+00:01:21,500 --> 00:01:25,680
+trước khi một hoạt động khác có thể được tiến hành.
+
+22
+00:01:25,680 --> 00:01:28,950
+Ví dụ ở đây ta có hoạt động C và nếu bạn chú ý
+
+23
+00:01:28,950 --> 00:01:32,810
+có hai hoạt động diễn ra ngay trước khi nó đến trước
+
+24
+00:01:32,810 --> 00:01:35,990
+hoạt động C. Cả hoạt động A
+
+25
+00:01:35,989 --> 00:01:40,179
+và B cần được hoàn thành
+
+26
+00:01:40,180 --> 00:01:44,900
+để hoạt động C diễn ra.
+Đó là ý của ta khi nói những hoạt động ưu tiên
+
+27
+00:01:44,900 --> 00:01:48,920
+là cái diễn ra trước những hoạt động khác
+
+28
+00:01:48,920 --> 00:01:53,049
+Đôi khi bạn thấy thứ tự ưu tiên trong bảng
+
+29
+00:01:53,049 --> 00:01:56,189
+Vậy ở đây ta có 4 hoạt động từ A đến D
+
+30
+00:01:56,188 --> 00:02:00,228
+Và chú ý có một ưu tiên liệt kê hoạt động A
+
+31
+00:02:00,228 --> 00:02:03,909
+được gạch chân biểu diễn không có gì diễn ra trước đó
+
+32
+00:02:03,909 --> 00:02:07,310
+nhưng hoạt động B cần phải có A
+
+33
+00:02:07,310 --> 00:02:11,478
+hoạt động C, không cần gì diễn ra trước đó
+
+34
+00:02:11,478 --> 00:02:15,280
+nhưng hoạt động D cần cả B và C
+
+35
+00:02:15,280 --> 00:02:18,729
+do đó khi quan sát biểu đồ, bạn thấy rằng
+
+
+36
+00:02:18,729 --> 00:02:22,439
+A&C không cần hoạt động nào trước đó
+
+37
+00:02:22,439 --> 00:02:26,128
+bắt đầu cần hoạt động A
+
+38
+00:02:26,128 --> 00:02:29,229
+vậy mũi tên đó xuất phát từ A đến B
+
+39
+00:02:29,229 --> 00:02:32,419
+Hoạt động D đòi hỏi cả B và C
+
+40
+00:02:32,419 --> 00:02:36,488
+do đó hai mũi tên cùng tiến đến D
+
+41
+00:02:36,489 --> 00:02:39,628
+Hãy cùng quan sát thứ gì đó thực tiễn hơn một chút
+
+42
+00:02:39,628 --> 00:02:45,329
+mà ta có thể liên hệ ở đây.
+Giả sử bạn sẽ sơn một cánh cửa
+
+43
+00:02:45,330 --> 00:02:48,860
+vậy để sơn cánh cửa đó bạn cần tập hợp cái cửa
+
+44
+00:02:48,860 --> 00:02:52,519
+bạn cần sơn và cần có cọ sơn.
+Đó sẽ là
+
+45
+00:02:52,519 --> 00:02:53,310
+hoạt động đầu tiên của ta.
+
+46
+00:02:53,310 --> 00:02:57,409
+những thứ khác mà phải diễn ra, bạn cần đánh bóng cửa
+
+47
+00:02:57,409 --> 00:03:03,318
+bạn cần làm sạch cánh cửa và sau đó làm khô nó. Sơn phải là bước tiếp theo.
+
+48
+00:03:03,318 --> 00:03:06,399
+Cọ sơn phải được chuẩn bị sẵn và sau đó
+
+49
+00:03:06,400 --> 00:03:10,250
+dĩ nhiên, bạn có thể sơn cửa, nhưng nếu bạn cân nhắc vài điều khác
+
+50
+00:03:10,250 --> 00:03:13,699
+bạn có thể trộn sơn mà không có cần
+
+51
+00:03:13,699 --> 00:03:18,318
+cửa được đánh bóng hoặc làm sạch trước. Bạn có thể chuẩn bị cọ
+
+52
+00:03:18,318 --> 00:03:22,609
+mà không cần phải trộn sơn, do đó khi ta quan sát những bước trước đó
+
+53
+00:03:22,610 --> 00:03:26,840
+ta thấy rằng lấy hoạt động đầu tiên làm ví dụ
+hãy tập hợp mọi thứ lại với nhau
+
+54
+00:03:26,840 --> 00:03:31,049
+tập trung cửa, sơn và cọ và không có thứ gì diễn ra trước đó
+
+55
+00:03:31,049 --> 00:03:35,219
+nhưng để đánh bóng cửa, trước hết bạn cần phải có
+
+56
+00:03:35,219 --> 00:03:35,759
+cánh cửa.
+
+57
+00:03:35,759 --> 00:03:40,098
+Do đó hoạt động B đánh bóng cửa cần có hoạt động A
+
+58
+00:03:40,098 --> 00:03:44,929
+và nếu bạn trộn sơn, bạn cần sơn cũng như vậy, hoạt động E
+
+59
+00:03:44,930 --> 00:03:49,569
+cần hoạt động A vầ nếu bạn cần chuẩn bị cọ, bạn cần phải có
+
+60
+00:03:49,568 --> 00:03:50,169
+cọ sơn
+
+61
+00:03:50,169 --> 00:03:56,039
+do đó hoạt động F đòi hỏi A để làm sạch cửa
+
+62
+00:03:56,039 --> 00:03:59,348
+trước hết bạn cần đánh bóng nó, do đó hoạt động C
+
+63
+00:03:59,348 --> 00:04:04,068
+làm sạch cửa cần có hoạt động B. Một khi đã làm sạch,
+
+64
+00:04:04,068 --> 00:04:08,079
+bạn phải làm khô, do đó theo sau bước làm sạch cửa
+
+65
+00:04:08,080 --> 00:04:11,459
+là hoạt động C, làm khô cửa.
+
+66
+00:04:11,459 --> 00:04:15,128
+do đó, bạn có thể thấy rằng những bước diễn ra trước bước làm khô cửa
+
+67
+00:04:15,128 --> 00:04:18,449
+là làm sạch cửa và sau đó ta sẽ
+
+68
+00:04:18,449 --> 00:04:22,488
+sơn cửa, ta cần bước làm khô cửa D
+
+69
+00:04:22,488 --> 00:04:26,649
+ta cần bước trộn sơn E và cọ F
+
+70
+00:04:26,649 --> 00:04:31,649
+do đó bạn có thể thấy tất cả những bước phía trước theo thứ tự đó
+
+71
+00:04:31,649 --> 00:04:34,719
+vậy giờ nếu bạn muốn dừng video, hãy thử kết luận
+
+72
+00:04:34,720 --> 00:04:37,800
+sơ đồ dòng chảy hoạt động sẽ trong như thế nào
+
+73
+00:04:37,800 --> 00:04:41,889
+và thấy nó có phù hợp với điều ta sẽ nói đến tiếp theo không
+
+74
+00:04:41,889 --> 00:04:45,620
+Ở đây nó là cái ta bắt đầu ngay khi bắt đầu
+
+75
+00:04:45,620 --> 00:04:49,319
+tập hợp cửa cần được sơn và cọ
+
+76
+00:04:49,319 --> 00:04:53,529
+từ đó ta không thể đánh bóng cửa, ta có thể trộn sơn
+
+77
+00:04:53,529 --> 00:04:59,399
+và chuẩn bị cọ sau khi đánh bóng cọ, ta phải làm sạch cửa
+
+78
+00:04:59,399 --> 00:05:03,609
+sau đó làm khô cửa và sau đó một khi cửa đã khô
+
+79
+00:05:03,610 --> 00:05:07,639
+và sơn đã được trộn và cọ đã được chuẩn bị
+
+80
+00:05:07,639 --> 00:05:12,310
+tất cả cùng sẵn sằng cho bước cuối cùng của hoạt động sơn cửa
+
+81
+00:05:12,310 --> 00:05:16,750
+Đó là tất cả cần nhớ về những sơ đồ quy trình
+
+82
+00:05:16,750 --> 00:05:20,360
+điều bạn muốn làm là chắc chắc bạn sử dụng kí hiệu chính xác
+
+83
+00:05:20,360 --> 00:05:23,699
+và bạn chú ý đến chính bản thân những hoạt động
+
+84
+00:05:23,699 --> 00:05:28,538
+cái phải diễn ra trước cái khác
+sau đó bạn thể hiện hướng của dòng chảy
+
+85
+00:05:28,538 --> 00:05:31,849
+bằng cách sử dụng những mũi tên. Lần tới ta sẽ
+
+86
+00:05:31,850 --> 00:05:35,939
+thêm thời gian cho những hoạt động này và tìm hiểu một thứ được gọi là
+
+87
+00:05:35,939 --> 00:05:37,069
+đường tới hạn
+
+88
+00:05:37,069 --> 00:05:37,538
+Hẹn gặp bạn sau.
+

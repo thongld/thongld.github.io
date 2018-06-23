@@ -1,0 +1,386 @@
+1
+00:00:04,640 --> 00:00:05,949
+https://youtu.be/htPez_vQsGg
+We just
+
+2
+00:00:05,950 --> 00:00:11,120
+finished the power of discounting, we had
+done power of compounding, power of
+
+3
+00:00:11,120 --> 00:00:18,299
+discounting and you found, how impactful the
+passage of time is, right? So we got
+
+4
+00:00:18,300 --> 00:00:23,630
+something like 87 million
+dollars. And I remind you that negative,
+
+5
+00:00:23,630 --> 00:00:28,738
+positive sign of Excel depends on whether
+you are getting money or losing money, so
+
+6
+00:00:28,739 --> 00:00:34,850
+87 million at 5% and about less
+than a million and nine hundred thousand or so,
+
+7
+00:00:34,850 --> 00:00:42,90
+if the interest rate is 15 percent, obviously
+inverse of the Future Value, right? Now let us
+
+8
+00:00:42,90 --> 00:00:50,170
+go into what I would call as more
+realistic applications. We will go in a
+
+9
+00:00:50,170 --> 00:00:55,850
+stepwise manner. I will not include
+everything that will confuse you in a
+
+10
+00:00:55,850 --> 00:01:01,90
+problem, but we´ll go stepwise but the
+interesting thing is, even though I'm
+
+11
+00:01:01,90 --> 00:01:07,659
+going stepwise, the power of each concept
+I'm telling you is so remarkable,
+
+12
+00:01:07,659 --> 00:01:13,999
+that you can apply even the simplest of
+applications in many contexts, right? So
+
+13
+00:01:13,999 --> 00:01:20,609
+let's start off with the one thing which we
+assumed till now, is not going to happen.
+
+14
+00:01:20,609 --> 00:01:28,810
+So we drew a timeline and remember in
+the timeline, we did go from period one,
+
+15
+00:01:28,810 --> 00:01:35,909
+we went up to N, but the assumption we made till now was, either something was
+
+16
+00:01:35,909 --> 00:01:41,619
+happening here at time zero or something
+was happening here, in other words we had
+
+17
+00:01:41,619 --> 00:01:47,49
+one-time payments, either today or in the
+future. What I'm going to introduce now
+
+18
+00:01:47,49 --> 00:01:52,749
+is the notion of multiple payments,
+because most problems in life or most
+
+19
+00:01:52,749 --> 00:01:59,79
+issues or most concepts or most
+applications involve multiple payments,
+
+20
+00:01:59,79 --> 00:02:04,630
+right? So we'll start off, as I said, in a
+very structured way, with something called an
+
+21
+00:02:04,630 --> 00:02:13,640
+annuity. An annuity is some payment that you
+get, we´ll call it cash flow, C which is
+
+22
+00:02:13,640 --> 00:02:17,380
+fixed in quantity typically and lasts for
+
+23
+00:02:17,380 --> 00:02:22,930
+N periods. So, here what's going on is,
+instead of getting say, or paying
+
+24
+00:02:22,930 --> 00:02:27,420
+100 bucks once, you're doing it
+multiple times and you'll see
+
+25
+00:02:27,420 --> 00:02:31,829
+applications of it as I do them, but
+first, since you know Present Value and
+
+26
+00:02:31,830 --> 00:02:36,130
+Future Value now, let's just think about
+it conceptually. So I'll go back and
+
+27
+00:02:36,130 --> 00:02:40,480
+forth between applications and concepts.
+Once you know some concept, I'm going to
+
+28
+00:02:40,480 --> 00:02:45,220
+go to the concept next time and then
+application and so on. So multiple payments,
+
+29
+00:02:45,220 --> 00:02:51,410
+let's talk about the concept a little bit. We´ll call
+the payments C but on a... now this is related
+
+30
+00:02:51,410 --> 00:02:56,140
+to the Excel, in Excel, they don't call it
+cash flows, right? They call it
+
+31
+00:02:56,140 --> 00:03:01,380
+PMT and it is a cash flow and it´s called
+payment because, it's like a payment
+
+32
+00:03:01,380 --> 00:03:05,990
+every period and you'll see where all of
+this is coming from. It´s coming from
+
+33
+00:03:05,990 --> 00:03:08,190
+basically, the structure of a loan.
+
+34
+00:03:08,190 --> 00:03:15,700
+Ok, so if you stare at the graph on top, what I
+want to do is, as I said, conceptually lay
+
+35
+00:03:15,700 --> 00:03:22,200
+out what's going on. So the cash flow in
+a typical annuity and here convention is
+
+36
+00:03:22,200 --> 00:03:24,250
+very important,
+
+37
+00:03:24,250 --> 00:03:28,710
+doesn't start at time zero and the
+assumption is, the first cash flow is
+
+38
+00:03:28,710 --> 00:03:32,910
+occurring at the end of the first period,
+now the period could be one year long, six
+
+39
+00:03:32,910 --> 00:03:37,650
+months long, whatever, depends on the
+problem. So what we're going to do is,
+
+40
+00:03:37,650 --> 00:03:47,100
+we're going to have a simple annuity
+which lasts N=3, which is
+
+41
+00:03:47,100 --> 00:03:51,239
+important because you want to know how
+many periods and in each period you're
+
+42
+00:03:51,240 --> 00:03:55,580
+getting a PMT
+
+43
+00:03:55,580 --> 00:04:02,30
+of C. C will be a number in our problems obviously, right? And I would like again to
+
+44
+00:04:02,30 --> 00:04:05,620
+start off with the concept of Future
+Value because Future Value is quite
+
+45
+00:04:05,620 --> 00:04:08,880
+interesting, so in order to figure out
+Future Value, now you have to
+
+46
+00:04:08,880 --> 00:04:15,310
+conceptually think of it this way.
+How many years left from period 0 to the
+
+47
+00:04:15,310 --> 00:04:22,200
+future? Years left, 3
+
+48
+00:04:22,200 --> 00:04:28,590
+How many years left from the period 1 to
+the future? Now the future remember, is
+
+49
+00:04:28,590 --> 00:04:33,869
+ending at time 3 and period one, whenever we say a period, we mean end of
+
+50
+00:04:33,870 --> 00:04:39,920
+the period. This causes a lot of anxiety among
+people, that's why drawing timelines is
+
+51
+00:04:39,920 --> 00:04:47,950
+important. This is 1 and this is 0. What
+this gives you a sense is, another way of
+
+52
+00:04:47,950 --> 00:04:53,690
+writing the timeline and I'm going to be a
+little bit painfully slow here, because
+
+53
+00:04:53,690 --> 00:05:00,800
+we are assuming we have beginners, not used
+to doing this. So the C, C, C, this is
+
+54
+00:05:00,800 --> 00:05:06,140
+how it's working, right? So how many
+periods from 0 to this, 3, how many
+
+55
+00:05:06,140 --> 00:05:17,620
+period from 1 to 3? 2. 2 to 3, 1. At 3, 0. So
+that's the structure presumed about an annuity, of course
+
+56
+00:05:17,620 --> 00:05:20,620
+you can change that structure
+depending on the nature of the problem,
+
+57
+00:05:20,620 --> 00:05:26,930
+but you can go very far with this kind of
+structure, even though it's pretty... So
+
+58
+00:05:26,930 --> 00:05:31,840
+let's see what the Future Value will
+look like and we'll do it slowly and
+
+59
+00:05:31,840 --> 00:05:37,570
+then we'll take a break and come back to
+applications. This Future Value will be
+
+60
+00:05:37,570 --> 00:05:42,219
+0 and the reason is, at time 0
+nothing's happening, in a standard
+
+61
+00:05:42,220 --> 00:05:48,170
+annuity. What is the Future Value of
+the cash flow you are getting at time 1?
+
+62
+00:05:48,170 --> 00:05:55,860
+Remember time 1 means what? At this
+time, at the end of the first year. It´ll be to C
+
+63
+00:05:55,860 --> 00:06:10,240
+times 1+R, how many? Squared, remember?
+And the key is, this number, because you're
+
+64
+00:06:10,240 --> 00:06:10,800
+going...
+
+65
+00:06:10,800 --> 00:06:19,500
+carrying this C forward two periods. How much
+are we carrying this C? One period, C(1+R)
+
+66
+00:06:19,500 --> 00:06:22,510
+and how much are you
+
+67
+00:06:22,510 --> 00:06:28,840
+carrying this last C? No amount, just C itself. So when you are doing a Future Value of an
+
+68
+00:06:28,840 --> 00:06:34,570
+annuity, you are essentially carrying forward
+cash flows now, but the last one is in
+
+69
+00:06:34,570 --> 00:06:40,530
+period 3 and therefore it doesn't need to be
+carried forward, much. So this gives you a
+
+70
+00:06:40,530 --> 00:06:55,690
+sense of the concept and the formula,
+Future Value of an annuity becomes C
+
+71
+00:06:55,690 --> 00:07:08,390
+1+R square plus C(1+R) plus C. Again, this is the one at the end of
+
+72
+00:07:08,390 --> 00:07:12,659
+the first period, Future Value of the one at
+the end of the second period and finally
+
+73
+00:07:12,660 --> 00:07:32,20
+Future Value of the third one is in period 3. Notice that
+you can take C,
+
+74
+00:07:32,20 --> 00:07:42,90
+you can re-write this and this is the formula of an annuity and in the text books, what you'll find is, at
+the back, this number is calculated and it's
+
+75
+00:07:42,90 --> 00:07:55,508
+called Future Value Annuity Factor and it´s a
+function of two things, R and N, number of
+
+76
+00:07:55,509 --> 00:08:03,680
+periods. So, not surprisingly again, R
+matters because it's Time Value of Money,
+
+77
+00:08:03,680 --> 00:08:09,889
+but time matters too and it´s 3 years. The
+key difference between just simple
+
+78
+00:08:09,889 --> 00:08:16,289
+Future Value is that, you get payment
+once today and you carried it forward or a
+
+79
+00:08:16,289 --> 00:08:18,949
+cash-flow once, here it's happening
+
+80
+00:08:18,949 --> 00:08:19,449
+three times.
+

@@ -1,0 +1,834 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/lJu8XWjqffE
+
+1
+00:00:00,000 --> 00:00:00,499
+
+2
+00:00:00,499 --> 00:00:03,230
+PROFESSOR: So we looked
+at finite state machines.
+
+3
+00:00:03,230 --> 00:00:07,710
+Now we have to see how we
+can convert a finite state
+
+4
+00:00:07,710 --> 00:00:14,210
+machine from an abstraction,
+which is a state transition graph,
+
+5
+00:00:14,210 --> 00:00:17,800
+to code, which is my software.
+
+6
+00:00:17,800 --> 00:00:20,510
+
+7
+00:00:20,510 --> 00:00:26,970
+In order to do that, I have to
+build some concept-- built up
+
+8
+00:00:26,970 --> 00:00:28,170
+on some concept.
+
+9
+00:00:28,170 --> 00:00:33,800
+And the concept we're going to build in
+programming is what is called a struct.
+
+10
+00:00:33,800 --> 00:00:38,800
+A struct is-- the definition
+would be, for a struct,
+
+11
+00:00:38,800 --> 00:00:48,590
+would be that it's a mechanism
+to store composite information.
+
+12
+00:00:48,590 --> 00:00:50,390
+It's a composite store.
+
+13
+00:00:50,390 --> 00:01:00,080
+Now, because it's allowing us
+to store composite information,
+
+14
+00:01:00,080 --> 00:01:08,430
+we will also call it-- it's a user
+defined-- as a user defined type.
+
+15
+00:01:08,430 --> 00:01:11,910
+Now, we've already
+seen a composite store.
+
+16
+00:01:11,910 --> 00:01:14,390
+An array is a composite store.
+
+17
+00:01:14,390 --> 00:01:26,480
+What an array allows us to do is store
+a set of items in consecutive locations.
+
+18
+00:01:26,480 --> 00:01:30,740
+And that the key thing in
+an array is all these items
+
+19
+00:01:30,740 --> 00:01:35,310
+have to be of the same type.
+
+20
+00:01:35,310 --> 00:01:38,340
+
+21
+00:01:38,340 --> 00:01:41,980
+So a struct, on the other
+hand, is a composite store
+
+22
+00:01:41,980 --> 00:01:45,970
+where the items can
+be of dissimilar type.
+
+23
+00:01:45,970 --> 00:01:48,080
+They don't have to all
+be of the same type.
+
+24
+00:01:48,080 --> 00:01:50,800
+So this is important to us
+in finite state machines
+
+25
+00:01:50,800 --> 00:01:55,120
+because we want to capture all the
+information about the finite state
+
+26
+00:01:55,120 --> 00:01:55,630
+machine.
+
+27
+00:01:55,630 --> 00:01:57,060
+We want to capture states.
+
+28
+00:01:57,060 --> 00:01:58,660
+We want to capture inputs.
+
+29
+00:01:58,660 --> 00:02:00,440
+We want to capture outputs.
+
+30
+00:02:00,440 --> 00:02:02,950
+And they may not all
+be of the same type.
+
+31
+00:02:02,950 --> 00:02:04,740
+Some might be two bits.
+
+32
+00:02:04,740 --> 00:02:07,280
+Some might be a string.
+
+33
+00:02:07,280 --> 00:02:08,820
+One might be something else.
+
+34
+00:02:08,820 --> 00:02:12,510
+And states are indexes, and so on.
+
+35
+00:02:12,510 --> 00:02:15,880
+So what we want is a new concept.
+
+36
+00:02:15,880 --> 00:02:17,980
+And the concept is a struct.
+
+37
+00:02:17,980 --> 00:02:25,710
+So let's try to understand this
+by taking some real example.
+
+38
+00:02:25,710 --> 00:02:29,760
+Let's say we were working on a game.
+
+39
+00:02:29,760 --> 00:02:31,330
+So let's have a game.
+
+40
+00:02:31,330 --> 00:02:34,940
+And in this game-- and this
+is a screen of my game.
+
+41
+00:02:34,940 --> 00:02:38,730
+And in this game, I have a player.
+
+42
+00:02:38,730 --> 00:02:41,570
+So let's say there's a player in this.
+
+43
+00:02:41,570 --> 00:02:44,240
+And this player has certain attributes.
+
+44
+00:02:44,240 --> 00:02:50,380
+So for example, this player is
+within this two dimensional space.
+
+45
+00:02:50,380 --> 00:02:54,290
+This player is currently at this point.
+
+46
+00:02:54,290 --> 00:02:57,710
+So I want to store all the
+information about this player.
+
+47
+00:02:57,710 --> 00:03:05,230
+So what I do is I say,
+OK, I have a player,
+
+48
+00:03:05,230 --> 00:03:08,160
+and I want to store
+information about this player.
+
+49
+00:03:08,160 --> 00:03:10,150
+What information do I want to store?
+
+50
+00:03:10,150 --> 00:03:12,680
+Well, I say this is a player.
+
+51
+00:03:12,680 --> 00:03:18,400
+And he's a new type-- he's
+not-- he's not an integer.
+
+52
+00:03:18,400 --> 00:03:19,590
+He's not a long.
+
+53
+00:03:19,590 --> 00:03:20,526
+He's not a short.
+
+54
+00:03:20,526 --> 00:03:21,400
+He's not a character.
+
+55
+00:03:21,400 --> 00:03:22,940
+He's not a string.
+
+56
+00:03:22,940 --> 00:03:23,980
+He's not even an array.
+
+57
+00:03:23,980 --> 00:03:26,050
+He is a new type.
+
+58
+00:03:26,050 --> 00:03:27,480
+So I'll call it a struct.
+
+59
+00:03:27,480 --> 00:03:31,600
+And I'm going to list all the
+attributes that display it has.
+
+60
+00:03:31,600 --> 00:03:33,670
+Now for me, I'm going to keep it simple.
+
+61
+00:03:33,670 --> 00:03:36,430
+This player has three attributes.
+
+62
+00:03:36,430 --> 00:03:46,573
+He has a position, which is-- let's say
+an unsigned char where his position is
+
+63
+00:03:46,573 --> 00:03:54,860
+where is he relative on the
+x-axis and on the y-axis.
+
+64
+00:03:54,860 --> 00:03:58,980
+So this is x-coordinate
+and this is y-coordinate.
+
+65
+00:03:58,980 --> 00:04:04,755
+So I'm going to call this his
+x position and his y position.
+
+66
+00:04:04,755 --> 00:04:14,640
+
+67
+00:04:14,640 --> 00:04:18,550
+Now, it's possible that the x's
+define-- this might be my origin
+
+68
+00:04:18,550 --> 00:04:19,980
+and that's why that's x and y.
+
+69
+00:04:19,980 --> 00:04:23,480
+Or this could be an origin in which
+case x and y have different meanings.
+
+70
+00:04:23,480 --> 00:04:25,090
+But it doesn't really matter.
+
+71
+00:04:25,090 --> 00:04:30,880
+So what I also have with respect to
+this player is maybe I store his score.
+
+72
+00:04:30,880 --> 00:04:40,340
+So I have an unsigned, another
+unsigned, maybe a short
+
+73
+00:04:40,340 --> 00:04:46,300
+which tell me what his
+points are, how many points
+
+74
+00:04:46,300 --> 00:04:48,946
+he has at this particular point in time.
+
+75
+00:04:48,946 --> 00:04:50,570
+So maybe those are my three attributes.
+
+76
+00:04:50,570 --> 00:04:52,010
+So I define that.
+
+77
+00:04:52,010 --> 00:04:56,720
+And this I will end with a semicolon.
+
+78
+00:04:56,720 --> 00:05:00,580
+So this defines a new
+type called player.
+
+79
+00:05:00,580 --> 00:05:07,440
+Now, if I want to, I can now do
+this, which is I can say typedef.
+
+80
+00:05:07,440 --> 00:05:10,150
+
+81
+00:05:10,150 --> 00:05:21,170
+I'm defining a new type
+called a player type.
+
+82
+00:05:21,170 --> 00:05:24,390
+
+83
+00:05:24,390 --> 00:05:33,520
+So this struct player which
+I just described up here
+
+84
+00:05:33,520 --> 00:05:36,620
+is going to be from here onwards,
+I'm going to call him a PType.
+
+85
+00:05:36,620 --> 00:05:42,620
+
+86
+00:05:42,620 --> 00:05:48,730
+And so, what this allows me is
+the convenience of declaring-- so
+
+87
+00:05:48,730 --> 00:05:55,410
+for example, PType, I can say
+P1, player one, is a PType.
+
+88
+00:05:55,410 --> 00:06:05,610
+
+89
+00:06:05,610 --> 00:06:11,070
+Which when I make this declaration,
+in memory then, there will be space
+
+90
+00:06:11,070 --> 00:06:11,580
+allocated.
+
+91
+00:06:11,580 --> 00:06:17,820
+There will be one character for
+where the x position will be stored.
+
+92
+00:06:17,820 --> 00:06:20,770
+Another so this is my P1.
+
+93
+00:06:20,770 --> 00:06:26,780
+And P1 has the first attribute which is
+x position, the second attribute which
+
+94
+00:06:26,780 --> 00:06:31,170
+is a y position, which are both
+one character, which is eight bits.
+
+95
+00:06:31,170 --> 00:06:36,840
+And then I have points
+which are two bytes.
+
+96
+00:06:36,840 --> 00:06:41,950
+So that's two bytes, one byte, one byte.
+
+97
+00:06:41,950 --> 00:06:45,280
+Because my points are two bytes long.
+
+98
+00:06:45,280 --> 00:06:51,470
+So I can now declare a user,
+a particular player like that.
+
+99
+00:06:51,470 --> 00:06:56,310
+Now, if I want to set the
+player's position so this
+
+100
+00:06:56,310 --> 00:06:58,580
+is my declaration, and
+somewhere in my code,
+
+101
+00:06:58,580 --> 00:07:03,500
+let's say I want to set the position
+of this player to a particular point,
+
+102
+00:07:03,500 --> 00:07:04,810
+so I can do this.
+
+103
+00:07:04,810 --> 00:07:08,750
+I can say, I want to take player one,
+and I want to change his attributes.
+
+104
+00:07:08,750 --> 00:07:13,205
+So I use the dot operator.
+
+105
+00:07:13,205 --> 00:07:20,580
+
+106
+00:07:20,580 --> 00:07:26,710
+to access the fields within--
+attributes within a struct.
+
+107
+00:07:26,710 --> 00:07:33,800
+So I say P1 dot-- that's the
+dot operator, which is just
+
+108
+00:07:33,800 --> 00:07:42,270
+the period-- x position equals, let's
+say I want to be at 45-- position 45.
+
+109
+00:07:42,270 --> 00:07:47,750
+And maybe my-- because it's a char, I
+know that the values that it can take
+
+110
+00:07:47,750 --> 00:07:53,230
+is anywhere from zero to 255
+because char is eight bits.
+
+111
+00:07:53,230 --> 00:07:55,280
+So maybe that's my x position.
+
+112
+00:07:55,280 --> 00:07:58,370
+And maybe I have a y
+position for him also.
+
+113
+00:07:58,370 --> 00:08:03,230
+So I set, let's say, his
+y position is equal to 50.
+
+114
+00:08:03,230 --> 00:08:09,675
+So that's how I can access and
+modify an attribute of a struct.
+
+115
+00:08:09,675 --> 00:08:11,910
+And I can also do this,
+which is p1.points.
+
+116
+00:08:11,910 --> 00:08:15,100
+
+117
+00:08:15,100 --> 00:08:21,130
+Maybe it's just started the
+code, and so his points are zero.
+
+118
+00:08:21,130 --> 00:08:25,120
+So that's a way to
+initialize or set values.
+
+119
+00:08:25,120 --> 00:08:31,600
+Now, we can also-- if you know that we
+can define a single player like this,
+
+120
+00:08:31,600 --> 00:08:34,020
+we can also define an array of players.
+
+121
+00:08:34,020 --> 00:08:44,660
+Maybe as a part of my game, maybe
+what I have is a bunch of ships.
+
+122
+00:08:44,660 --> 00:08:48,330
+These are, let's say, my enemy ships.
+
+123
+00:08:48,330 --> 00:08:52,330
+And maybe I have an array of ships.
+
+124
+00:08:52,330 --> 00:08:55,040
+Like I said, there are five ships.
+
+125
+00:08:55,040 --> 00:08:59,380
+So I can declare them like so.
+
+126
+00:08:59,380 --> 00:09:04,360
+I can say, for example, PType--
+again, I'm calling them player type,
+
+127
+00:09:04,360 --> 00:09:08,340
+but they're a different kind of
+player-- an adversary if you will.
+
+128
+00:09:08,340 --> 00:09:11,250
+And let's say they're called ships.
+
+129
+00:09:11,250 --> 00:09:15,420
+And I can declare five of those ships.
+
+130
+00:09:15,420 --> 00:09:22,190
+Now, if I do that, in memory then--
+let's create some space here.
+
+131
+00:09:22,190 --> 00:09:29,630
+In memory then, I'm declaring not
+one player, but multiple players.
+
+132
+00:09:29,630 --> 00:09:34,790
+So this is multiple players.
+
+133
+00:09:34,790 --> 00:09:37,830
+And so I have something called ships.
+
+134
+00:09:37,830 --> 00:09:42,300
+So this is, let's say, ships of zero.
+
+135
+00:09:42,300 --> 00:09:47,170
+And zero itself will have
+three attributes in it.
+
+136
+00:09:47,170 --> 00:09:56,470
+And then ships of one, which is a second
+ship, will have key attributes in it.
+
+137
+00:09:56,470 --> 00:10:00,010
+So I'm going to draw this
+line to kind of distinguish.
+
+138
+00:10:00,010 --> 00:10:07,930
+And although we have two ships,
+before-- because remember,
+
+139
+00:10:07,930 --> 00:10:10,440
+our indexes go from 0 to 4.
+
+140
+00:10:10,440 --> 00:10:13,040
+So this will also have
+three attributes in that.
+
+141
+00:10:13,040 --> 00:10:17,350
+
+142
+00:10:17,350 --> 00:10:19,940
+And they're continuously allocated.
+
+143
+00:10:19,940 --> 00:10:27,030
+So let's take a look at how we
+can use this idea of structures
+
+144
+00:10:27,030 --> 00:10:30,630
+and also to manipulate
+the position of the ships.
+
+145
+00:10:30,630 --> 00:10:34,460
+So if you remember
+what we did was we said
+
+146
+00:10:34,460 --> 00:10:39,500
+we had the screen where
+we had ships that we
+
+147
+00:10:39,500 --> 00:10:41,595
+wanted to-- there are five ships.
+
+148
+00:10:41,595 --> 00:10:44,330
+
+149
+00:10:44,330 --> 00:10:47,660
+There are five ships on the screen.
+
+150
+00:10:47,660 --> 00:10:52,840
+And let's write a routine which
+will take one of these ships
+
+151
+00:10:52,840 --> 00:10:58,590
+and move the ship to
+the center of my screen.
+
+152
+00:10:58,590 --> 00:11:02,020
+And to do that, I have a
+subroutine that I'm going to write.
+
+153
+00:11:02,020 --> 00:11:04,185
+The subroutine is called MoveCenter.
+
+154
+00:11:04,185 --> 00:11:09,030
+
+155
+00:11:09,030 --> 00:11:14,710
+And it's going to be passed the
+identity of the ship-- which
+
+156
+00:11:14,710 --> 00:11:16,080
+ship I want to move.
+
+157
+00:11:16,080 --> 00:11:22,110
+So I'm going to pass it
+long i, which is to indicate
+
+158
+00:11:22,110 --> 00:11:26,720
+that I'm passing the i-th ship is
+the one that I'm trying to move.
+
+159
+00:11:26,720 --> 00:11:31,420
+And since this subroutine doesn't
+return anything, it does some work.
+
+160
+00:11:31,420 --> 00:11:33,590
+It's not going to-- it's
+going to have a void.
+
+161
+00:11:33,590 --> 00:11:41,980
+So this subroutine-- first, it will take
+my array of ships which we looked at
+
+162
+00:11:41,980 --> 00:11:46,550
+and extract the i-th ship
+from that array of ships,
+
+163
+00:11:46,550 --> 00:11:49,450
+which is now a record,
+which is a structure.
+
+164
+00:11:49,450 --> 00:11:54,240
+And we know that we use a dot operator
+to access fields within this structure.
+
+165
+00:11:54,240 --> 00:12:08,070
+We'll make the x position be equal to
+128 so that we move the ship's position
+
+166
+00:12:08,070 --> 00:12:17,770
+to be an x value of 128
+and also a y value of 128.
+
+167
+00:12:17,770 --> 00:12:19,400
+That's it's new position.
+
+168
+00:12:19,400 --> 00:12:32,320
+So we set the x position,
+we set the y position,
+
+169
+00:12:32,320 --> 00:12:38,370
+and we also decided that every
+time it moves to the center,
+
+170
+00:12:38,370 --> 00:12:45,030
+maybe this was some step that it
+performed that got it an extra point.
+
+171
+00:12:45,030 --> 00:12:50,240
+So I'm going to take the ship's i.
+
+172
+00:12:50,240 --> 00:12:53,550
+I'm going to check its current points.
+
+173
+00:12:53,550 --> 00:12:58,260
+So I'll compare that against
+the maximum points possible.
+
+174
+00:12:58,260 --> 00:13:06,120
+So if it's still less than 65535--
+because remember that the points
+
+175
+00:13:06,120 --> 00:13:11,450
+field is an unsigned short
+and the largest unsigned short
+
+176
+00:13:11,450 --> 00:13:13,680
+we can have is 65535.
+
+177
+00:13:13,680 --> 00:13:19,930
+So the max value we can
+have is 65535 with a short.
+
+178
+00:13:19,930 --> 00:13:22,500
+So I check against that bounds.
+
+179
+00:13:22,500 --> 00:13:32,210
+And if it's well within the bounds,
+then I'm going to add 1 to its points.
+
+180
+00:13:32,210 --> 00:13:39,110
+I will add one to it kind of like this.
+
+181
+00:13:39,110 --> 00:13:40,620
+So a colon there.
+
+182
+00:13:40,620 --> 00:13:41,540
+I close that.
+
+183
+00:13:41,540 --> 00:13:45,140
+
+184
+00:13:45,140 --> 00:13:47,930
+So this subroutine
+whenever it's called in
+
+185
+00:13:47,930 --> 00:13:57,800
+will modify the position of the ships,
+the i-th ship, in the game grid.
+
+186
+00:13:57,800 --> 00:13:58,866

@@ -1,0 +1,648 @@
+0
+00:00:00,000 --> 00:00:01,130
+https://youtu.be/-YOc445mxQc
+
+1
+00:00:01,130 --> 00:00:03,410
+So let's take a look at how to calculate the expected
+
+2
+00:00:03,410 --> 00:00:04,850
+units short.
+
+3
+00:00:04,850 --> 00:00:07,140
+First though, let's look at the other values
+
+4
+00:00:07,140 --> 00:00:09,922
+that we're going to have to find expected values of.
+
+5
+00:00:09,922 --> 00:00:11,880
+And so I'm going to look at this for two cases.
+
+6
+00:00:11,880 --> 00:00:14,810
+One is where we have a continuous variable for demand,
+
+7
+00:00:14,810 --> 00:00:17,320
+and that could be something like the Normal distribution,
+
+8
+00:00:17,320 --> 00:00:18,650
+as well as a discrete case.
+
+9
+00:00:18,650 --> 00:00:20,300
+And this is where I might have --
+
+10
+00:00:20,300 --> 00:00:22,640
+my demand only takes discrete values like a Poisson
+
+11
+00:00:22,640 --> 00:00:24,680
+distribution.
+
+12
+00:00:24,680 --> 00:00:26,830
+So I'm always going to have to calculate
+
+13
+00:00:26,830 --> 00:00:28,580
+my expected units demanded.
+
+14
+00:00:28,580 --> 00:00:31,830
+This is my expected amount of demand,
+
+15
+00:00:31,830 --> 00:00:34,770
+or my mean value of the demand distribution.
+
+16
+00:00:34,770 --> 00:00:37,280
+And this is simply going to be for the discrete case.
+
+17
+00:00:37,280 --> 00:00:41,070
+The summation from x=0 to infinity of the value
+
+18
+00:00:41,070 --> 00:00:44,020
+of demand, x, times the probability that that
+
+19
+00:00:44,020 --> 00:00:45,290
+occurrence happens.
+
+20
+00:00:45,290 --> 00:00:47,530
+We'll call this sometimes x hat.
+
+21
+00:00:47,530 --> 00:00:49,537
+And you can see for the continuous case,
+
+22
+00:00:49,537 --> 00:00:50,370
+it's the same thing.
+
+23
+00:00:50,370 --> 00:00:52,870
+Instead of a summation, I have an integral from zero
+
+24
+00:00:52,870 --> 00:00:56,760
+to infinity of x times the probability distribution
+
+25
+00:00:56,760 --> 00:01:01,670
+function f(x)dx and again, it's x hat.
+
+26
+00:01:01,670 --> 00:01:04,830
+Now we'll also want to calculate the expected units sold.
+
+27
+00:01:04,830 --> 00:01:06,680
+And we've talked about this before,
+
+28
+00:01:06,680 --> 00:01:08,800
+but it consists of two terms.
+
+29
+00:01:08,800 --> 00:01:12,360
+The first term is when demand is less than my order quantity,
+
+30
+00:01:12,360 --> 00:01:14,920
+and the second term is when the demand
+
+31
+00:01:14,920 --> 00:01:18,990
+is greater than my order quantity.
+
+32
+00:01:18,990 --> 00:01:21,360
+So two summations, and for the first one,
+
+33
+00:01:21,360 --> 00:01:25,590
+I'm going to sell x, the demand, and for the second term,
+
+34
+00:01:25,590 --> 00:01:27,350
+I'm only going to be able to sell Q,
+
+35
+00:01:27,350 --> 00:01:29,400
+because that's all that I have on hand.
+
+36
+00:01:29,400 --> 00:01:32,570
+And the continuous case is the same as the discrete case,
+
+37
+00:01:32,570 --> 00:01:37,230
+with the exception that the summations are now integrals.
+
+38
+00:01:37,230 --> 00:01:39,210
+The last case, though, is what we're
+
+39
+00:01:39,210 --> 00:01:42,510
+going to focus on in this lesson, in this short video.
+
+40
+00:01:42,510 --> 00:01:44,890
+That's the expected units short.
+
+41
+00:01:44,890 --> 00:01:48,070
+So for the discrete case, let's take a look at it.
+
+42
+00:01:48,070 --> 00:01:52,690
+It's going to be a summation from the x is just
+
+43
+00:01:52,690 --> 00:01:56,160
+greater than my order quantity up to infinity
+
+44
+00:01:56,160 --> 00:01:59,510
+and it's going to be x - Q. So it's
+
+45
+00:01:59,510 --> 00:02:03,050
+the amount above my order quantity,
+
+46
+00:02:03,050 --> 00:02:06,240
+times the probability that that value of x occurs.
+
+47
+00:02:06,240 --> 00:02:09,990
+And I've got the same form over here on the continuous case.
+
+48
+00:02:09,990 --> 00:02:12,210
+What I want you to think about, though,
+
+49
+00:02:12,210 --> 00:02:14,470
+is these are all related.
+
+50
+00:02:14,470 --> 00:02:17,880
+So I can think my expected units demanded
+
+51
+00:02:17,880 --> 00:02:23,100
+is going to be equal to my expected units sold
+
+52
+00:02:23,100 --> 00:02:27,240
+plus my expected units short.
+
+53
+00:02:27,240 --> 00:02:28,740
+So look at that, look at the terms
+
+54
+00:02:28,740 --> 00:02:30,620
+and convince yourself that it's true.
+
+55
+00:02:30,620 --> 00:02:34,140
+Expected units demanded is going to be equal of two components.
+
+56
+00:02:34,140 --> 00:02:38,400
+One is the expected units sold, plus the expected units
+
+57
+00:02:38,400 --> 00:02:40,950
+that I'm going to be short.
+
+58
+00:02:40,950 --> 00:02:43,810
+So now let's go into the expected units short,
+
+59
+00:02:43,810 --> 00:02:47,570
+and I'm going to explain this through a simple example
+
+60
+00:02:47,570 --> 00:02:49,470
+of a discrete case.
+
+61
+00:02:49,470 --> 00:02:52,440
+So suppose I'm selling freshly baked widgets.
+
+62
+00:02:52,440 --> 00:02:54,850
+We don't know what widgets are, it doesn't matter.
+
+63
+00:02:54,850 --> 00:02:56,790
+Here's the demand distribution.
+
+64
+00:02:56,790 --> 00:02:59,490
+I'll sell between one and eight.
+
+65
+00:02:59,490 --> 00:03:01,960
+Equal probability for each, so it's
+
+66
+00:03:01,960 --> 00:03:05,787
+1/8 or 0.125 probability for each.
+
+67
+00:03:05,787 --> 00:03:08,120
+At the end of the day, all the widgets that are not sold
+
+68
+00:03:08,120 --> 00:03:08,840
+are thrown out.
+
+69
+00:03:08,840 --> 00:03:10,660
+So therefore it's a Newsvendor Problem.
+
+70
+00:03:10,660 --> 00:03:13,480
+It's a single period inventory model.
+
+71
+00:03:13,480 --> 00:03:16,420
+And suppose based on my Critical ratio and all
+
+72
+00:03:16,420 --> 00:03:19,620
+that, I'm going to order 5 units each day.
+
+73
+00:03:19,620 --> 00:03:22,630
+So my Q=5.
+
+74
+00:03:22,630 --> 00:03:24,180
+So I'm giving that to you.
+
+75
+00:03:24,180 --> 00:03:28,030
+What we want to figure out is what is my Expected Demand.
+
+76
+00:03:28,030 --> 00:03:29,730
+Remember that x hat?
+
+77
+00:03:29,730 --> 00:03:32,820
+I want to find my expected units that I'm going to sell,
+
+78
+00:03:32,820 --> 00:03:35,630
+and I want to find my expected units short.
+
+79
+00:03:35,630 --> 00:03:37,320
+So here's our example again.
+
+80
+00:03:37,320 --> 00:03:40,390
+And remember, I have 5 units that I already had.
+
+81
+00:03:40,390 --> 00:03:43,130
+That's my Q. And you can see the probability
+
+82
+00:03:43,130 --> 00:03:46,930
+for each of the other values of x is equal; it's 0.125.
+
+83
+00:03:46,930 --> 00:03:49,910
+And so the first thing I want to find is my Expected Demand.
+
+84
+00:03:49,910 --> 00:03:51,600
+So what is the average demand?
+
+85
+00:03:51,600 --> 00:03:54,700
+We could probably eyeball the distribution up here and figure
+
+86
+00:03:54,700 --> 00:03:57,160
+out what it's going to be, but essentially all we're going
+
+87
+00:03:57,160 --> 00:03:59,050
+to do -- it's a sum product.
+
+88
+00:03:59,050 --> 00:04:02,170
+I'm multiplying this array times this array.
+
+89
+00:04:02,170 --> 00:04:04,750
+So it's going to be the demand value, 1,
+
+90
+00:04:04,750 --> 00:04:10,325
+times the probability, 0.125; plus 2 (the demand) times
+
+91
+00:04:10,325 --> 00:04:12,074
+the probability that I have a demand of 2,
+
+92
+00:04:12,074 --> 00:04:16,529
+which is 0.125 (that's 0.25); 3 times 0.125 and so on...
+
+93
+00:04:16,529 --> 00:04:22,620
+And I add those all up and I get an expected value of 4.5 units.
+
+94
+00:04:22,620 --> 00:04:25,490
+Now this is the Expected Demand, and note
+
+95
+00:04:25,490 --> 00:04:28,360
+that this doesn't take into account what the value of Q
+
+96
+00:04:28,360 --> 00:04:29,180
+is at all.
+
+97
+00:04:29,180 --> 00:04:30,370
+It doesn't matter.
+
+98
+00:04:30,370 --> 00:04:32,760
+It's the pure demand.
+
+99
+00:04:32,760 --> 00:04:36,542
+But the next thing we want to look at is the expected sales.
+
+100
+00:04:36,542 --> 00:04:38,000
+And we can think of this, actually,
+
+101
+00:04:38,000 --> 00:04:40,700
+as a conditional expectation.
+
+102
+00:04:40,700 --> 00:04:43,740
+We're finding the expected units sold
+
+103
+00:04:43,740 --> 00:04:48,050
+given that my order quantity is 5 because now it matters.
+
+104
+00:04:48,050 --> 00:04:51,780
+Remember, 5 units, so let me just draw a line here.
+
+105
+00:04:51,780 --> 00:04:54,920
+That means up to demand equal to 5,
+
+106
+00:04:54,920 --> 00:04:57,090
+I will sell the amount of the demand.
+
+107
+00:04:57,090 --> 00:05:00,420
+So if demand -- only 1 unit of demand comes in, I'm going
+
+108
+00:05:00,420 --> 00:05:02,080
+to sell that.
+
+109
+00:05:02,080 --> 00:05:04,360
+And if 2 comes in, I'll sell 2.
+
+110
+00:05:04,360 --> 00:05:08,420
+Above 5 though, I'm only going to be able to sell 5.
+
+111
+00:05:08,420 --> 00:05:10,130
+So again, this is just simply going
+
+112
+00:05:10,130 --> 00:05:14,820
+to be the x times the probability of x for the values
+
+113
+00:05:14,820 --> 00:05:18,390
+of the demand up until my Q. And then
+
+114
+00:05:18,390 --> 00:05:21,150
+down here, for any value greater than Q,
+
+115
+00:05:21,150 --> 00:05:24,712
+it's simply going to be Q times the probability
+
+116
+00:05:24,712 --> 00:05:26,130
+of that x value.
+
+117
+00:05:26,130 --> 00:05:29,620
+And so again I'm going to sum these up,
+
+118
+00:05:29,620 --> 00:05:33,060
+and I get my expected sales -- let me clean that up a little
+
+119
+00:05:33,060 --> 00:05:36,120
+bit -- is 3.75 units.
+
+120
+00:05:36,120 --> 00:05:42,570
+So with this Q of 5, I expect to sell 3.75 units on average.
+
+121
+00:05:42,570 --> 00:05:44,970
+Now the last thing we want to figure out
+
+122
+00:05:44,970 --> 00:05:47,720
+is expected units short.
+
+123
+00:05:47,720 --> 00:05:50,300
+Again, this is a conditional expectation.
+
+124
+00:05:50,300 --> 00:05:53,100
+It's the expected units short given
+
+125
+00:05:53,100 --> 00:05:54,780
+that I have 5 units on hand.
+
+126
+00:05:54,780 --> 00:05:56,750
+My Q is 5.
+
+127
+00:05:56,750 --> 00:06:01,270
+So all I'm going to do is figure out this loss function.
+
+128
+00:06:01,270 --> 00:06:05,120
+And we call this L_q or L(Q), and it's
+
+129
+00:06:05,120 --> 00:06:08,640
+equal to the x, the demand, minus the Q,
+
+130
+00:06:08,640 --> 00:06:12,960
+given that my demand is greater than or equal to my Q.
+
+131
+00:06:12,960 --> 00:06:19,650
+So my loss is going to be 0 up until I hit 6 units of demand.
+
+132
+00:06:19,650 --> 00:06:20,390
+Why?
+
+133
+00:06:20,390 --> 00:06:22,540
+Well if I have 5 units of inventory,
+
+134
+00:06:22,540 --> 00:06:26,690
+if I have 5 units hanging out, and I have a demand of 3,
+
+135
+00:06:26,690 --> 00:06:28,010
+will I be short any?
+
+136
+00:06:28,010 --> 00:06:28,530
+No.
+
+137
+00:06:28,530 --> 00:06:31,330
+I have enough to cover it so I won't have any loss.
+
+138
+00:06:31,330 --> 00:06:36,850
+However, if I have 5 on hand, and 6 units of demand come in,
+
+139
+00:06:36,850 --> 00:06:38,700
+then I'm going to be short 1.
+
+140
+00:06:38,700 --> 00:06:43,300
+So my loss function is going to be 6 minus 5, or 1.
+
+141
+00:06:43,300 --> 00:06:45,805
+If 7 units of demand come in, my loss function
+
+142
+00:06:45,805 --> 00:06:50,480
+is going to be 7 minus 5, or 2.
+
+143
+00:06:50,480 --> 00:06:54,105
+Eight units of demand comes in, 8 minus 5 is 3.
+
+144
+00:06:54,105 --> 00:06:55,810
+I'm going to take each of those losses,
+
+145
+00:06:55,810 --> 00:07:00,710
+multiply it by the probability that it occurs, and I get this.
+
+146
+00:07:00,710 --> 00:07:03,750
+Which is simply just the loss -- the L(Q) --
+
+147
+00:07:03,750 --> 00:07:05,540
+times the probability of that x.
+
+148
+00:07:05,540 --> 00:07:06,760
+And I'm gonna sum that up.
+
+149
+00:07:06,760 --> 00:07:11,010
+So my expected units short is 0.75.
+
+150
+00:07:11,010 --> 00:07:16,650
+So notice that my Expected Demand, my x hat, remember,
+
+151
+00:07:16,650 --> 00:07:19,420
+was 4.5.
+
+152
+00:07:19,420 --> 00:07:24,680
+My expected units that I actually sold
+
+153
+00:07:24,680 --> 00:07:29,120
+was equal to 3.75.
+
+154
+00:07:29,120 --> 00:07:36,220
+And my expected units short, this was equal to 0.75.
+
+155
+00:07:36,220 --> 00:07:38,950
+Notice that I didn't need to calculate all three,
+
+156
+00:07:38,950 --> 00:07:41,300
+because once I have two, I know the third.
+
+157
+00:07:41,300 --> 00:07:46,260
+4.5 = 3.75 + 0.75.
+
+158
+00:07:46,260 --> 00:07:49,650
+The Expected Demand is equal to the expected units
+
+159
+00:07:49,650 --> 00:07:53,580
+to be sold, plus the expected units short.
+
+160
+00:07:53,580 --> 00:07:55,220
+OK, now we're going to take a case,
+
+161
+00:07:55,220 --> 00:07:58,250
+and we're gonna look at it with the Normal distribution.
+

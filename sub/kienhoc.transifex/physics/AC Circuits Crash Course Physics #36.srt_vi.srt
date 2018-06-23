@@ -1,0 +1,540 @@
+1
+00:00:03,500 --> 00:00:10,980
+Chúng ta không thể giữ bóng đèn sáng mà không luân phiên thay đổi dòng điện.
+
+2
+00:00:10,980 --> 00:00:19,320
+Chúng ta đã nói về cách thay đổi điện áp, giúp ích cho việc truyền dòng điện đi xa, nhưng vật lý của dòng điện xoay chiều vẫn còn nhiều thứ nữa.
+
+3
+00:00:19,320 --> 00:00:24,420
+Ví dụ, dòng điện xoay chiều bị ảnh hưởng thế nào thế nào khi bạn thêm điện trở vào? Hay thêm tụ điện? Hay một cuộn cảm?
+
+4
+00:00:24,420 --> 00:00:29,480
+Ba thứ này được dùng rất phổ biến và hôm nay chúng ta sẽ kết hợp chúng với nhau. 
+
+5
+00:00:29,480 --> 00:00:41,940
+[Nhạc Dạo Đầu]
+
+6
+00:00:41,940 --> 00:00:47,699
+Khi nói về mạch dòng một chiều, việc miêu tả điện áp và dòng điện
+khá là dễ hiểu.
+
+7
+00:00:47,700 --> 00:00:53,200
+Thông thường, nguồn áp trong mạch dòng một chiều không đổi, nên dòng điện là hằng định. 
+
+8
+00:00:53,200 --> 00:00:59,360
+Nhưng trong mạch dòng xoay chiều, cả điẹn áp và dòng điện đều đổi chiều liên tục, từ cực âm sang cực dương và ngược lại.
+
+9
+00:00:59,360 --> 00:01:01,700
+Vậy bạn miêu tả các giá trị như thế nào khi nó liên tục thay đổi?
+
+10
+00:01:01,700 --> 00:01:07,399
+À thì, khi dòng điện luân phiên thay đổi một cách nhanh chóng, nó thay đổi qua lại giữa giá trị lớn nhất và giá trị nhỏ nhất, hay còn gọi là dòng điện cực đại.
+
+11
+00:01:07,400 --> 00:01:14,280
+Và "cực đại" ở đây có nghĩa là hoặc lớn nhất hoặc nhỏ nhất, dương hay âm, vì dòng điện có cùng cấp khuếch đại.
+
+12
+00:01:14,280 --> 00:01:20,980
+Theo toán học, dòng điện bằng dòng điện cực đại nhân với hàm sin liên quan đến tần số của hệ thống, thông thường là 60 Hz.
+
+13
+00:01:20,980 --> 00:01:23,920
+Và điều này cũng đúng cho điện áp trong mạch điện xoay dòng. 
+
+14
+00:01:23,920 --> 00:01:28,920
+Nó thay đổi giữa điện áp cực đại và điện áp cực tiểu để tạo ra dòng điện xoay chiều.
+
+15
+00:01:28,920 --> 00:01:32,680
+Bây giờ, giả sử bạn tính toán nguồn năng lượng trung bình được tiêu thụ bởi mạch dòng xoay chiều.
+
+16
+00:01:32,680 --> 00:01:36,540
+Bạn có thể sử dụng biểu thức năng lượng tiện dụng dành cho mạch dòng một chiều, cái mà chúng ta đã suy ra,
+
+17
+00:01:36,540 --> 00:01:40,860
+để tìm năng lượng được tiêu thụ theo thời gian, theo dòng điện và điện trở.
+
+18
+00:01:40,860 --> 00:01:44,320
+Rồi bạn có thể dùng phương trình mới cho dòng điện xoay chiều để thay thế cho dòng điện.
+
+19
+00:01:44,320 --> 00:01:48,820
+Sau đó, vì bạn muốn tìm năng lượng trung bình, chỉ cần tính trung bình cộng của biểu thức năng lượng. 
+
+20
+00:01:48,829 --> 00:01:51,679
+Hàm sin bình phương luôn luôn giảm xuống còn 1.5 khi được tính trung bình cộng.
+
+21
+00:01:51,680 --> 00:01:56,480
+Điều này cho bạn kết quả năng lượng trung bình của dòng điện cực đại bình phương nhân với điện trở rồi chia 2.
+
+22
+00:01:56,480 --> 00:02:03,680
+Nhưng bạn chỉ có thể dùng phương trình này cho mạch dòng một chiều, trước khi bạn bắt đầu thay đổi hoàn toàn phương trình để tính toán mạch dòng xoay chiều.
+
+23
+00:02:03,680 --> 00:02:06,920
+Tại sao lại thế? Bởi vì I: cường độ dòng điện.
+
+24
+00:02:06,920 --> 00:02:09,39
+Hãy nghĩ về việc lái xe khi giao thông dừng-tiến.
+
+25
+00:02:09,39 --> 00:02:13,560
+Bạn tăng tốc lúc này, rồi giảm tốc lúc khác, nhưng nếu bạn chạy với tốc độ trung bình trong suốt quãng đường,
+
+26
+00:02:13,569 --> 00:02:15,849
+thì bạn có một tốc độ "hiệu quả" nằm đâu đó ở giữa tốc độ khi bạn tăng tốc và tốc độ khi bạn giảm tốc.
+
+27
+00:02:15,849 --> 00:02:18,299
+Điều đó cũng giống như dòng điện trong việc tính toán dòng điện xoay chiều.
+
+28
+00:02:18,300 --> 00:02:23,840
+Vì thế, để biểu thị dòng điện trong phương trình này, chúng ta cần biến số mới để biểu thị giá trị hiệu quả này.
+
+29
+00:02:23,840 --> 00:02:27,840
+Và biến số đó là giá trị RMS của dòng điện.
+
+30
+00:02:27,840 --> 00:02:32,420
+Nó chính là giá trị mà bạn sẽ nhận được nếu bình phương dòng điện, tính trung bình cộng, rồi căn bậc hai nó một lần nữa.
+
+31
+00:02:32,420 --> 00:02:34,160
+Vì thế có tên là: căn quân phương.
+
+32
+00:02:34,160 --> 00:02:42,359
+Now, this same derivation works for alternating voltage, as well, with the RMS value of voltage being equal to the peak voltage divided by the square root of 2.
+
+33
+00:02:42,360 --> 00:02:51,160
+With these two RMS values at your disposal, you can then use them in place of current and voltage in DC equations, with power equaling the RMS current times RMS voltage.
+
+34
+00:02:51,160 --> 00:02:55,439
+So, now that we have RMS values to better
+describe current and voltage in AC circuits,
+
+35
+00:02:55,439 --> 00:02:59,379
+let’s think about how we can use the unique
+nature of AC circuits to our advantage.
+
+36
+00:02:59,380 --> 00:03:05,519
+For example, with coils of wire, we know that when the current is changing, a magnetic flux is induced in the coil.
+
+37
+00:03:05,520 --> 00:03:11,260
+And that flux seeks to oppose the current with an electromotive force, or emf, in the opposite direction.
+
+38
+00:03:11,260 --> 00:03:13,440
+And this is the rule that we know as Lenz’s
+Law.
+
+39
+00:03:13,440 --> 00:03:19,940
+And this relationship works the opposite way as well, with a changing magnetic flux inducing an emf that opposes the flux.
+
+40
+00:03:19,940 --> 00:03:29,300
+So in an AC circuit, what you end up with is a changing current that induces an opposing magnetic flux, which in turn induces an emf in the opposite direction of the current!
+
+41
+00:03:29,300 --> 00:03:33,600
+This induction of an emf that opposes the
+main current is called self-inductance.
+
+42
+00:03:33,600 --> 00:03:39,239
+And to calculate an induced emf, you just take the change in current over time and multiply it by negative L.
+
+43
+00:03:39,240 --> 00:03:46,860
+L is a constant, known as the inductance, signifying how well that specific coil induces an opposing current, depending on its shape and size.
+
+44
+00:03:46,870 --> 00:03:51,200
+And it’s negative, because the induced emf
+is in the opposite direction of the main current.
+
+45
+00:03:51,200 --> 00:03:53,940
+Inductance, by the way, is expressed in units
+called Henrys.
+
+46
+00:03:53,940 --> 00:04:00,600
+Induction of an electromagnetic force is so useful, that engineers make coils that are designed to maximize their self-inductance.
+
+47
+00:04:00,600 --> 00:04:03,900
+These coils that are designed for self-inductance
+are called inductors.
+
+48
+00:04:03,900 --> 00:04:08,40
+In a circuit diagram, they look like small coils,
+'cause that’s pretty much what they are!
+
+49
+00:04:08,40 --> 00:04:12,379
+So to get a handle on how inductors work,
+let’s first consider one in a DC circuit.
+
+50
+00:04:12,380 --> 00:04:17,839
+Let’s say this circuit has an inductor connected in series with a battery that has a constant voltage, V naught.
+
+51
+00:04:17,839 --> 00:04:24,159
+Since most inductors have a natural resistance, we’ll say that there’s also a small resistor in series with the inductor and battery.
+
+52
+00:04:24,160 --> 00:04:29,791
+And because we have an inductance L and a resistance R, we call this configuration an LR circuit.
+
+53
+00:04:29,800 --> 00:04:34,680
+If we set up this circuit and then insert the battery,
+the voltage will immediately be V naught.
+
+54
+00:04:34,680 --> 00:04:37,250
+But the current won’t reach its maximum
+value.
+
+55
+00:04:37,250 --> 00:04:42,100
+That’s because the inductor opposes the sudden change in current that was caused by the sudden voltage change.
+
+56
+00:04:42,100 --> 00:04:48,980
+So the current will increase gradually, until it eventually reaches maximum current, which is the battery’s voltage divided by the resistance.
+
+57
+00:04:48,980 --> 00:04:52,960
+The current in this case is kind of like a
+car that’s accelerating from a dead stop.
+
+58
+00:04:52,970 --> 00:04:57,169
+Even if you stomp down on the gas pedal, you
+won’t immediately start going at top speed.
+
+59
+00:04:57,169 --> 00:04:59,258
+You’re going to have to build up to it over
+time.
+
+60
+00:04:59,259 --> 00:05:02,539
+So you have to consider time when you’re
+dealing with inductors.
+
+61
+00:05:02,540 --> 00:05:09,480
+Mathematically, the current in a circuit with an inductor is expressed as the maximum current times one minus e to the negative t over tau.
+
+62
+00:05:09,490 --> 00:05:14,350
+The maximum current is the voltage divided
+by the resistance, and tau is the time constant,
+
+63
+00:05:14,350 --> 00:05:16,690
+equal to the inductance divided by the resistance.
+
+64
+00:05:16,690 --> 00:05:20,560
+This time constant has all kinds of mathematical
+meaning that we can’t get into right now.
+
+65
+00:05:20,560 --> 00:05:24,740
+But you can see that as time goes to infinity,
+you get closer to the maximum current value.
+
+66
+00:05:24,740 --> 00:05:29,420
+Put in terms of our car analogy, the maximum current is like the fastest that your car will go.
+
+67
+00:05:29,420 --> 00:05:33,500
+And the time constant lets you know how long you need to press down on the accelerator to get there.
+
+68
+00:05:33,500 --> 00:05:39,160
+A small time constant means less time is needed to reach maximum speed, and also less time to slow down to a stop.
+
+69
+00:05:39,160 --> 00:05:44,520
+A large time constant means the opposite: that a lot of time is necessary to speed up and slow down.
+
+70
+00:05:44,520 --> 00:05:48,240
+Now, let’s say the circuit has reached steady-state,
+with the current at that maximum value.
+
+71
+00:05:48,250 --> 00:05:51,610
+There’s no longer a changing current, so
+the inductor acts just like a piece of wire.
+
+72
+00:05:51,610 --> 00:05:55,270
+But if the battery is suddenly removed, the
+current won’t drop to 0 immediately.
+
+73
+00:05:55,280 --> 00:05:59,820
+Because, remember, the inductor opposes the change in current with its own changing magnetic flux.
+
+74
+00:05:59,820 --> 00:06:03,300
+So after the battery is removed, the inductor
+generates its own current!
+
+75
+00:06:03,300 --> 00:06:06,700
+This is like driving a car and then taking
+your foot off the accelerator.
+
+76
+00:06:06,700 --> 00:06:10,139
+You’ve stopped the car from going faster,
+but you won’t stop immediately.
+
+77
+00:06:10,139 --> 00:06:13,419
+Instead, you’ll slow down over time, before
+you stop entirely.
+
+78
+00:06:13,419 --> 00:06:16,979
+So you can write this as the decreasing version
+of the earlier current equation,
+
+79
+00:06:16,979 --> 00:06:22,159
+with current equaling the maximum possible
+current, times e to the negative t over tau.
+
+80
+00:06:22,160 --> 00:06:27,680
+I max is the same, and tau is the same, and once enough time has passed, then the current is equal to 0.
+
+81
+00:06:27,680 --> 00:06:31,640
+So, inductors oppose a change in current,
+whether it’s an increase or a decrease.
+
+82
+00:06:31,640 --> 00:06:36,919
+When you switch a device on or off, and you notice a delay, that’s probably because an inductor is in the system.
+
+83
+00:06:36,920 --> 00:06:44,100
+By flipping the switch, you’ve either started or ended a voltage supply, but an inductor in the system delays the current from starting or stopping immediately.
+
+84
+00:06:44,110 --> 00:06:45,990
+OK so that’s inductors 101!
+
+85
+00:06:45,990 --> 00:06:51,470
+Now let’s go back to AC circuits, and combine an inductor, a resistor, and a capacitor all in one circuit.
+
+86
+00:06:51,470 --> 00:06:55,160
+Each component will behave differently when
+connected to the source of alternating voltage.
+
+87
+00:06:55,160 --> 00:07:00,620
+So before we combine everything, let’s look at each component as if it alone were in series with the source.
+
+88
+00:07:00,620 --> 00:07:02,100
+Let’s start with a resistor.
+
+89
+00:07:02,100 --> 00:07:06,780
+When the voltage is at peak voltage, the current through the resistor will also be at peak current.
+
+90
+00:07:06,780 --> 00:07:11,159
+Since the voltage and current peaks occur at the
+same time, the two are said to be in phase.
+
+91
+00:07:11,160 --> 00:07:14,360
+For inductors and capacitors, however, the
+story’s a little different.
+
+92
+00:07:14,360 --> 00:07:21,800
+As the alternating voltage is applied across the inductor, the opposing emf that’s induced equals the amount of voltage that drops across the device.
+
+93
+00:07:21,800 --> 00:07:29,520
+The inductor has an insignificant amount of resistance, so when it’s the only device in the circuit, all the voltage must be opposed by the opposing emf.
+
+94
+00:07:29,520 --> 00:07:36,400
+In this equation, the voltage is at maximum when the current is changing the fastest, and the voltage is 0 when the current isn’t changing at all.
+
+95
+00:07:36,400 --> 00:07:42,479
+This means that, when the current is 0, there’s peak voltage, and when current is at its peak and unchanging, the voltage is 0.
+
+96
+00:07:42,480 --> 00:07:48,20
+When you express this graphically, it means that the current lags behind voltage by 90 degrees, or a quarter cycle.
+
+97
+00:07:48,20 --> 00:07:54,299
+So in AC circuit inductors, we say that the current and voltage are out-of-phase, which means they don’t peak at the same time.
+
+98
+00:07:54,300 --> 00:07:58,340
+Capacitors in AC circuits are also out of
+phase, but for a different reason.
+
+99
+00:07:58,340 --> 00:08:02,419
+Let’s look at a circuit with only an alternating
+voltage source and a capacitor.
+
+100
+00:08:02,420 --> 00:08:06,560
+When the current flows in one direction, charge
+momentarily builds up on one of the plates.
+
+101
+00:08:06,560 --> 00:08:13,460
+So when the voltage changes from positive to negative, the capacitor acts as a smaller voltage source that still pushes the current along.
+
+102
+00:08:13,460 --> 00:08:18,280
+In this case, current leads voltage by 90 degrees, changing the direction ahead of the voltage source.
+
+103
+00:08:18,280 --> 00:08:21,760
+So let’s sum up: Current in inductors lags
+voltage.
+
+104
+00:08:21,760 --> 00:08:24,139
+Current in resistors is in phase with voltage.
+
+105
+00:08:24,139 --> 00:08:26,650
+And current in capacitors leads voltage.
+
+106
+00:08:26,650 --> 00:08:31,440
+Another thing that sets inductors and capacitors apart from resistors is that they don’t release a lot of heat.
+
+107
+00:08:31,440 --> 00:08:35,760
+The only part of an AC circuit that dissipates
+power as thermal energy is the resistance.
+
+108
+00:08:35,760 --> 00:08:40,519
+Inductors and capacitors both have negligible
+resistance, and they don’t dissipate heat,
+
+109
+00:08:40,519 --> 00:08:43,49
+but they do have voltage drops across each
+component.
+
+110
+00:08:43,49 --> 00:08:49,149
+So their voltage drops will still affect how much voltage the circuit can supply to other components that DO need to dissipate power.
+
+111
+00:08:49,149 --> 00:08:55,829
+So, when you have an AC circuit with a resistor, inductor, and capacitor in series, you can calculate the voltage supplied,
+
+112
+00:08:55,829 --> 00:09:00,888
+versus the voltage applied across each component, by adding all of the component voltage drops together.
+
+113
+00:09:00,889 --> 00:09:05,860
+Every voltage drop peaks at a different time,
+but the sum will always equal that of the source.
+
+114
+00:09:05,860 --> 00:09:07,400
+What goes in must go out!
+
+115
+00:09:07,400 --> 00:09:09,480
+This wraps up our last look at electricity!
+
+116
+00:09:09,480 --> 00:09:16,000
+But you can’t forget everything you’ve learned about electromagnetism yet, because it’s coming back in a shiny new form, known as light!
+
+117
+00:09:16,10 --> 00:09:18,760
+Today, we learned about currents and voltages
+in AC circuits.
+
+118
+00:09:18,760 --> 00:09:23,20
+We also learned about inductors and we combined
+our knowledge of AC circuits with inductors,
+
+119
+00:09:23,20 --> 00:09:29,40
+capacitors, and resistors in order to analyze how voltage and current interact with an alternating voltage source.
+
+120
+00:09:29,50 --> 00:09:32,819
+Crash Course Physics is produced in association
+with PBS Digital Studios.
+
+121
+00:09:32,820 --> 00:09:36,540
+You can head over to their channel and check out a playlist of the latest episodes from shows like:
+
+122
+00:09:36,540 --> 00:09:39,599
+PBS Offbook, Gross Science, and Coma Niddy.
+
+123
+00:09:39,610 --> 00:09:43,310
+This episode of Crash Course was filmed in
+the Doctor Cheryl C. Kinney Crash Course Studio
+
+124
+00:09:43,310 --> 00:09:47,599
+with the help of these amazing people and our equally amazing graphics team, is Thought Cafe.
+

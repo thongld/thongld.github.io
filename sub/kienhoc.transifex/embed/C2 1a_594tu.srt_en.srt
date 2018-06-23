@@ -1,0 +1,301 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/Rd2BEVNZdDo
+
+1
+00:00:00,000 --> 00:00:02,830
+DR. RAMESH YERRABALLI: So in this
+module, as we said, we're going to
+
+2
+00:00:02,830 --> 00:00:06,870
+look at some fundamental concepts
+that underlie embedded systems.
+
+3
+00:00:06,870 --> 00:00:11,740
+But before we get to components of an
+embedded system, we want to get some
+
+4
+00:00:11,740 --> 00:00:13,590
+basics out of the way.
+
+5
+00:00:13,590 --> 00:00:19,850
+The first important concept we're going
+to look at is number systems.
+
+6
+00:00:19,850 --> 00:00:31,140
+That is, all computers use a basic
+representation for numbers.
+
+7
+00:00:31,140 --> 00:00:35,980
+In order to understand the binary
+number system, which is what the
+
+8
+00:00:35,980 --> 00:00:41,550
+computers use, we'll draw parallels to
+a system that we are more familiar
+
+9
+00:00:41,550 --> 00:00:44,050
+with-- the decimal number system.
+
+10
+00:00:44,050 --> 00:00:51,960
+The decimal number system is sometimes
+referred to as the base-10 system.
+
+11
+00:00:51,960 --> 00:00:54,870
+A base-10 system has--
+
+12
+00:00:54,870 --> 00:00:58,780
+any system has two important
+characteristics.
+
+13
+00:00:58,780 --> 00:01:06,350
+That is, each position
+has a place value.
+
+14
+00:01:06,350 --> 00:01:11,960
+That is, when I say that
+I have a number of--
+
+15
+00:01:11,960 --> 00:01:15,800
+5 digit number, each digit
+is a position.
+
+16
+00:01:15,800 --> 00:01:20,253
+So each position has a place value.
+
+17
+00:01:20,253 --> 00:01:23,580
+
+18
+00:01:23,580 --> 00:01:32,220
+And the value attributed to each
+place is a power of 10, which
+
+19
+00:01:32,220 --> 00:01:41,160
+is a power of 10.
+
+20
+00:01:41,160 --> 00:01:44,680
+
+21
+00:01:44,680 --> 00:01:48,740
+The second characteristic of
+any number system is, what
+
+22
+00:01:48,740 --> 00:01:50,030
+are the valid values?
+
+23
+00:01:50,030 --> 00:01:52,020
+That is, when we--
+
+24
+00:01:52,020 --> 00:01:54,626
+the valid values are the coefficients.
+
+25
+00:01:54,626 --> 00:01:58,680
+
+26
+00:01:58,680 --> 00:02:12,197
+In the case of the base-10 system, the
+valid values are 0, 1, 2, 3, 4, 5, 6,
+
+27
+00:02:12,197 --> 00:02:14,600
+7, 8, and 9.
+
+28
+00:02:14,600 --> 00:02:18,430
+
+29
+00:02:18,430 --> 00:02:31,010
+So for example, when I look at a number
+like 4723 in base 10-- so we--
+
+30
+00:02:31,010 --> 00:02:34,740
+to represent a number in base 10,
+we simply write it this way.
+
+31
+00:02:34,740 --> 00:02:38,500
+We say that this number represents 4--
+
+32
+00:02:38,500 --> 00:02:40,040
+so each of these positions.
+
+33
+00:02:40,040 --> 00:02:44,770
+So we have 4, 7, 2, and 3.
+
+34
+00:02:44,770 --> 00:02:51,000
+And three has a place value,
+which is 10 to the zero.
+
+35
+00:02:51,000 --> 00:02:54,084
+2 has a place value, which
+is 10 to the one.
+
+36
+00:02:54,084 --> 00:02:57,280
+7 has a place value, which
+is 10 to the two.
+
+37
+00:02:57,280 --> 00:03:00,640
+And 4 has a place value, which
+is 10 to the three.
+
+38
+00:03:00,640 --> 00:03:08,460
+So when we add these together, we get
+the numbers, so which is 4,000,
+
+39
+00:03:08,460 --> 00:03:13,920
+700, 20, and 3.
+
+40
+00:03:13,920 --> 00:03:28,010
+So this number represents
+4723 in base 10.
+
+41
+00:03:28,010 --> 00:03:35,880
+So let's take a look at the binary
+number system, which is a base-2
+
+42
+00:03:35,880 --> 00:03:37,130
+number system.
+
+43
+00:03:37,130 --> 00:03:43,520
+
+44
+00:03:43,520 --> 00:03:54,870
+So again, the first thing is, we have
+place values, which are powers of 2.
+
+45
+00:03:54,870 --> 00:04:04,880
+And the valid values are 0 and 1.
+
+46
+00:04:04,880 --> 00:04:14,960
+
+47
+00:04:14,960 --> 00:04:28,560
+So for example then, if I'm given
+a number, 1101 to the base 2--
+
+48
+00:04:28,560 --> 00:04:35,770
+so a number, 1101 to the base 2
+represents the coefficients
+
+49
+00:04:35,770 --> 00:04:39,750
+1, 0, 1, and 1.
+
+50
+00:04:39,750 --> 00:04:43,580
+And this 1 has a place value
+of 2 to the zero.
+
+51
+00:04:43,580 --> 00:04:46,530
+This 0 has a place value
+of 2 to the one.
+
+52
+00:04:46,530 --> 00:04:49,310
+This 1 has a place value
+of 2 to the two.
+
+53
+00:04:49,310 --> 00:04:53,340
+And this 1 has a place value
+of 2 to the three.
+
+54
+00:04:53,340 --> 00:04:54,710
+So I add them up.
+
+55
+00:04:54,710 --> 00:05:00,430
+I get an 8 plus a 4, plus that's
+a 0 times 2 to the one.
+
+56
+00:05:00,430 --> 00:05:09,420
+That's a 0 plus one, which
+is a 13 in base 10.
+
+57
+00:05:09,420 --> 00:05:16,300
+So now that we understand how a base-2
+system works and how a base-10 system
+
+58
+00:05:16,300 --> 00:05:19,910
+works, we can actually generalize
+this to any base.
+
+59
+00:05:19,910 --> 00:05:34,280
+For example, if I look at a
+base-n system, where my--
+
+60
+00:05:34,280 --> 00:05:40,700
+it's n can be either 2 or 10 in this
+case, then the valid values are going
+
+61
+00:05:40,700 --> 00:05:46,730
+to be from 0, 1, 2, all the
+way up to n minus 1.
+
+62
+00:05:46,730 --> 00:05:51,040
+So for example here, it's
+10 minus 1, which is 9.
+
+63
+00:05:51,040 --> 00:05:54,790
+Here it is 2 minus 1, which is 1.
+
+64
+00:05:54,790 --> 00:06:03,530
+So as we move on, any base system can
+be easily deciphered based on our
+
+65
+00:06:03,530 --> 00:06:10,710
+understanding of what the coefficients
+are and what the base is.
+
+66
+00:06:10,710 --> 00:06:15,860

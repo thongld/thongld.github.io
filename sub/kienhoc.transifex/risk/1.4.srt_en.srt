@@ -1,0 +1,708 @@
+0
+00:00:05,198 --> 00:00:06,290
+Welcome back.
+https://youtu.be/8AWiQeCSkHI
+1
+00:00:06,290 --> 00:00:09,380
+Quickly capture the main elements of what we are trying to do,
+
+2
+00:00:09,380 --> 00:00:11,570
+because to me context is very important.
+
+3
+00:00:11,570 --> 00:00:15,570
+It&#39;s very easy to get caught up in statistics which we&#39;ll do.
+
+4
+00:00:15,570 --> 00:00:20,000
+But before we do that, I always like to emphasize why.
+
+5
+00:00:20,000 --> 00:00:23,380
+I hope I made you understand why you need accounting.
+
+6
+00:00:24,590 --> 00:00:29,470
+I hope I&#39;ll motivate you to do statistics and more of it, but for a reason.
+
+7
+00:00:29,470 --> 00:00:32,780
+And that&#39;s makes learning more fun, right?
+
+8
+00:00:32,780 --> 00:00:33,930
+So what did we do?
+
+9
+00:00:33,930 --> 00:00:39,780
+We said we now are going to worry about risk because, not in isolation.
+
+10
+00:00:39,780 --> 00:00:42,870
+In this course with a very specific reason, and
+
+11
+00:00:42,870 --> 00:00:46,090
+that is to figure out the cost of capital.
+
+12
+00:00:46,090 --> 00:00:50,720
+We assume for the time being that there&#39;s only equity financing and
+
+13
+00:00:50,720 --> 00:00:52,380
+of course change that.
+
+14
+00:00:52,380 --> 00:00:56,330
+But by the way that&#39;s not a very drastic assumption first because the rest
+
+15
+00:00:56,330 --> 00:01:00,940
+becomes mechanical, so conceptually challenging if there&#39;s debt that is.
+
+16
+00:01:00,940 --> 00:01:03,210
+But also that equity and
+
+17
+00:01:03,210 --> 00:01:07,680
+financing and estimation of cost of equity if you can figure out,
+
+18
+00:01:08,680 --> 00:01:12,530
+then that&#39;s be a good return on asset, but that itself is very challenging.
+
+19
+00:01:12,530 --> 00:01:15,664
+So let&#39;s understand that piece, how to figure out return on equity.
+
+20
+00:01:15,664 --> 00:01:21,276
+Okay, so what are the issues, so you got a cash flow your in forest, you have
+
+21
+00:01:21,276 --> 00:01:26,170
+estimated the cash flow, you go to Amazon because your investor will go there.
+
+22
+00:01:26,170 --> 00:01:31,990
+So that first step is, when you think about risk and return your always thinking
+
+23
+00:01:31,990 --> 00:01:37,530
+of the context project analysis, not of your risk and return, of course you are.
+
+24
+00:01:37,530 --> 00:01:41,210
+But you&#39;re thinking about a comparable because all pricing is relative.
+
+25
+00:01:43,240 --> 00:01:47,080
+Determining the return that would compensate investors for
+
+26
+00:01:47,080 --> 00:01:48,570
+that risk of what?
+
+27
+00:01:48,570 --> 00:01:49,670
+The comparables risk!
+
+28
+00:01:49,670 --> 00:01:51,230
+In this case again, Amazon.
+
+29
+00:01:51,230 --> 00:01:56,690
+So the first is figure out the comparable, figure out risk,
+
+30
+00:01:56,690 --> 00:02:00,940
+the third is figure out the return that matches that risk.
+
+31
+00:02:02,440 --> 00:02:03,900
+We are all together on this right?
+
+32
+00:02:04,950 --> 00:02:10,420
+For simplicity again, emphasizing just for simplicity, and it&#39;ll help us a lot.
+
+33
+00:02:10,419 --> 00:02:13,430
+We&#39;ll assume only equity financing.
+
+34
+00:02:13,430 --> 00:02:16,050
+And I took you to the website of
+
+35
+00:02:16,050 --> 00:02:20,850
+Amazon just to make sure you understand that that&#39;s not an unrealistic assumption.
+
+36
+00:02:20,850 --> 00:02:26,030
+A lot of growth firms, a lot of technology firms have very little debt,
+
+37
+00:02:26,030 --> 00:02:29,690
+you can talk about that forever, that&#39;s a very interesting topic.
+
+38
+00:02:29,690 --> 00:02:31,150
+So now let&#39;s go to risk.
+
+39
+00:02:32,380 --> 00:02:38,740
+And risk will be a lot of statistics, but before we jump in, what is risk?
+
+40
+00:02:38,740 --> 00:02:42,520
+So let me ask you the following, go back to understanding bonds.
+
+41
+00:02:43,720 --> 00:02:49,100
+Why is it that the treasury bill is a riskless bond?
+
+42
+00:02:50,440 --> 00:02:54,390
+Why is it that the treasury bill, and of course you have to understand that lingo
+
+43
+00:02:54,390 --> 00:02:56,670
+and I&#39;m assuming you do, but quickly.
+
+44
+00:02:56,670 --> 00:03:02,950
+A treasury bill is zero coupon bond issued by the government of the US.
+
+45
+00:03:04,290 --> 00:03:06,040
+So why is it riskless?
+
+46
+00:03:06,040 --> 00:03:12,310
+Because suppose I buy it today and
+
+47
+00:03:14,840 --> 00:03:19,180
+suppose I hold it til maturity and suppose the maturity is one year away.
+
+48
+00:03:19,180 --> 00:03:21,294
+And supposed I&#39;m promised $1,000.
+
+49
+00:03:22,540 --> 00:03:24,010
+Why is it riskless?
+
+50
+00:03:24,010 --> 00:03:28,590
+Because I&#39;m standing here, I suddenly pay a price for it,
+
+51
+00:03:29,930 --> 00:03:35,050
+because if I hold this maturity, I&#39;m going to get $1,000.
+
+52
+00:03:35,050 --> 00:03:40,480
+Chances of default of course some countries are defaulting,
+
+53
+00:03:40,480 --> 00:03:42,750
+unfortunately, or at risk of defaulting.
+
+54
+00:03:42,750 --> 00:03:45,760
+Even postponing your payment is a default, effectively,
+
+55
+00:03:45,760 --> 00:03:48,110
+because the time value of money.
+
+56
+00:03:48,110 --> 00:03:50,600
+But we are calling it a riskless treasury bill,
+
+57
+00:03:50,600 --> 00:03:53,380
+because we think you&#39;re going to get paid this for sure.
+
+58
+00:03:54,680 --> 00:03:55,340
+Okay?
+
+59
+00:03:55,340 --> 00:03:56,960
+So, what is risk?
+
+60
+00:03:56,960 --> 00:04:00,700
+Remember I told you risk will start in the context of equity?
+
+61
+00:04:00,700 --> 00:04:04,460
+But I’m starting at the basics, where something is riskless, so
+
+62
+00:04:04,460 --> 00:04:07,760
+that you can gradually work your way up.
+
+63
+00:04:08,780 --> 00:04:13,980
+What about an identical bond issued by an average corporation?
+
+64
+00:04:13,980 --> 00:04:15,099
+What is that bond saying?
+
+65
+00:04:16,940 --> 00:04:21,970
+Identical, 0 pays $1,000.
+
+66
+00:04:21,970 --> 00:04:25,860
+What&#39;s the difference between these two bonds?
+
+67
+00:04:25,860 --> 00:04:28,320
+Both of them say they&#39;ll promise 1,000.
+
+68
+00:04:28,320 --> 00:04:31,140
+Both of them, you&#39;re standing one year away.
+
+69
+00:04:31,140 --> 00:04:34,540
+Assume for the time being both of them has no coupons.
+
+70
+00:04:34,540 --> 00:04:39,500
+The zero coupon bonds are issued mostly by treasuries or governments.
+
+71
+00:04:40,810 --> 00:04:44,250
+The difference is that one could end up defaulting.
+
+72
+00:04:45,500 --> 00:04:48,050
+And if there is default, what will happen?
+
+73
+00:04:48,050 --> 00:04:48,800
+There is risk.
+
+74
+00:04:48,800 --> 00:04:50,020
+So what is risk?
+
+75
+00:04:50,020 --> 00:04:53,560
+Risk is all about the future and
+
+76
+00:04:53,560 --> 00:04:58,140
+all about not getting paid what you thought you would get paid.
+
+77
+00:04:58,140 --> 00:04:59,470
+That&#39;s the notion of risk.
+
+78
+00:05:00,700 --> 00:05:04,030
+In this case, there is no ups side and
+
+79
+00:05:04,030 --> 00:05:07,120
+that&#39;s why I like this example too, what do I mean by that?
+
+80
+00:05:07,120 --> 00:05:11,337
+If times are good, will the government or the corporations suddenly pay you a more?
+
+81
+00:05:11,337 --> 00:05:15,187
+No, they will still pay you thousand, however,
+
+82
+00:05:15,187 --> 00:05:18,129
+if times are bad, what would happen?
+
+83
+00:05:18,129 --> 00:05:22,044
+The government bond will still pay you 1,000 and
+
+84
+00:05:22,044 --> 00:05:25,790
+the corporate bond is likely to pay you less.
+
+85
+00:05:25,790 --> 00:05:32,980
+So the question becomes, really important question, which one will you pay more for?
+
+86
+00:05:32,980 --> 00:05:35,060
+To answer that question, what do I have to assume?
+
+87
+00:05:36,250 --> 00:05:37,170
+What are you?
+
+88
+00:05:37,170 --> 00:05:39,790
+Risk adverse, risk neutral, what?
+
+89
+00:05:39,790 --> 00:05:42,650
+I&#39;ll assume you are risk adverse.
+
+90
+00:05:42,650 --> 00:05:45,890
+So what don&#39;t you like about the second bond?
+
+91
+00:05:45,890 --> 00:05:49,630
+The fact that it would actually pay you less than 1,000.
+
+92
+00:05:49,630 --> 00:05:54,050
+And we don&#39;t like losses, we like gains, right?
+
+93
+00:05:54,050 --> 00:05:59,890
+There&#39;s not compensating gain here, so which one will have a lower price?
+
+94
+00:05:59,890 --> 00:06:02,740
+You got to figure it out for yourself.
+
+95
+00:06:02,740 --> 00:06:04,650
+Which one will have a higher price,
+
+96
+00:06:04,650 --> 00:06:09,960
+the one that&#39;s more risky will have a lower price.
+
+97
+00:06:09,960 --> 00:06:14,490
+Because you value it lower, because of chances of default.
+
+98
+00:06:15,530 --> 00:06:20,830
+What&#39;s the difference between this and a stock, before we jump into stuff?
+
+99
+00:06:20,830 --> 00:06:26,370
+The difference between this corporate bond and a stock, is stock can lose money.
+
+100
+00:06:26,370 --> 00:06:27,540
+Of course you can.
+
+101
+00:06:27,540 --> 00:06:29,990
+I mean hey, in a day you could lose a lot of money.
+
+102
+00:06:29,990 --> 00:06:34,510
+But first thing you also happen, it could make a lot of money upside.
+
+103
+00:06:34,510 --> 00:06:38,720
+So that is, what this 1,000 bucks is.
+
+104
+00:06:38,720 --> 00:06:42,500
+This could be thought of, on average you&#39;ll get 1,000.
+
+105
+00:06:42,500 --> 00:06:47,270
+But there could be a upside, or a downside for a stock.
+
+106
+00:06:48,930 --> 00:06:50,730
+Let&#39;s keep talking about this for a second.
+
+107
+00:06:50,730 --> 00:06:57,280
+So if there&#39;s upside and downside, what are the sources of this risk?
+
+108
+00:06:57,280 --> 00:06:59,070
+So, capture it again.
+
+109
+00:06:59,070 --> 00:07:02,130
+Risk is not getting what you were promised.
+
+110
+00:07:02,130 --> 00:07:07,110
+In the case of a bond, it&#39;s all risk, less you&#39;ll never get more.
+
+111
+00:07:07,110 --> 00:07:08,710
+Think more broadly.
+
+112
+00:07:08,710 --> 00:07:09,830
+Suppose it&#39;s a stock.
+
+113
+00:07:09,830 --> 00:07:12,670
+You could get less ore more than you&#39;re expecting.
+
+114
+00:07:12,670 --> 00:07:14,650
+What are the sources of this risk?
+
+115
+00:07:14,650 --> 00:07:16,250
+What is going on?
+
+116
+00:07:16,250 --> 00:07:18,640
+And this where things become interesting.
+
+117
+00:07:18,640 --> 00:07:22,230
+There are typically two broad types of risk.
+
+118
+00:07:24,150 --> 00:07:29,775
+One is called economy-wide/macro/systematic,
+
+119
+00:07:29,775 --> 00:07:32,300
+non-diversifiable.
+
+120
+00:07:32,300 --> 00:07:36,000
+I&#39;m throwing that name out there, but not written it, because you&#39;ll see why I
+
+121
+00:07:36,000 --> 00:07:42,120
+called it that, and the second is, specific, meaning, it&#39;s idiosyncratic,
+
+122
+00:07:42,120 --> 00:07:47,530
+it&#39;s unique, it&#39;s related only to the thing that you&#39;re thinking of.
+
+123
+00:07:47,530 --> 00:07:49,950
+So, let&#39;s go back to Amazon.
+
+124
+00:07:51,270 --> 00:07:55,240
+Can you think of a market-wide risk that&#39;s built into Amazon?
+
+125
+00:07:55,240 --> 00:07:56,490
+Why am I thinking of Amazon?
+
+126
+00:07:56,490 --> 00:07:58,830
+Because I want to start a company similar to Amazon, so
+
+127
+00:07:58,830 --> 00:08:01,690
+I want to figure out what types of risks it faces.
+
+128
+00:08:03,150 --> 00:08:09,150
+So what is the market-wide macro risk you can think of?
+
+129
+00:08:09,150 --> 00:08:12,725
+Well you can think of what&#39;s happening to the whole GNP, what
+
+130
+00:08:12,725 --> 00:08:17,124
+happens to the economy, if the economy goes up what do you expect to happen,
+
+131
+00:08:17,124 --> 00:08:21,424
+people will buy more, when the economy goes down, people will buy less.
+
+132
+00:08:21,424 --> 00:08:24,731
+Chances are Amazon&#39;s stock prices will go up and
+
+133
+00:08:24,731 --> 00:08:27,400
+down based on how the economy is doing.
+
+134
+00:08:28,670 --> 00:08:30,080
+But what is specific then?
+
+135
+00:08:31,290 --> 00:08:32,930
+And this is very, very important.
+
+136
+00:08:32,929 --> 00:08:37,250
+Especially important because of the way we deal with risk, and
+
+137
+00:08:37,250 --> 00:08:39,130
+what are we assuming throughout?
+
+138
+00:08:39,130 --> 00:08:42,190
+That we don&#39;t like risk.
+
+139
+00:08:42,190 --> 00:08:43,090
+We are hypocritical.
+
+140
+00:08:43,090 --> 00:08:45,280
+We actually like the upside.
+
+141
+00:08:45,280 --> 00:08:47,280
+But we don&#39;t like the downside.
+
+142
+00:08:47,280 --> 00:08:49,430
+And you see that in life all the time.
+
+143
+00:08:49,430 --> 00:08:51,040
+Everybody likes things going up.
+
+144
+00:08:51,040 --> 00:08:56,080
+And they don&#39;t call it risky, of course it&#39;s jumping around, but it&#39;s going up.
+
+145
+00:08:56,080 --> 00:08:59,580
+As soon as things start going down, we think it&#39;s risky, right?
+
+146
+00:08:59,580 --> 00:09:01,420
+Because we are risk averse.
+
+147
+00:09:01,420 --> 00:09:06,354
+So Amazon broad risk easy, market, GNP.
+
+148
+00:09:06,354 --> 00:09:07,750
+What is specific risk?
+
+149
+00:09:09,640 --> 00:09:16,910
+Oddly enough, Jeff Bezos, who started the company is a specific risk.
+
+150
+00:09:18,150 --> 00:09:18,820
+Right?
+
+151
+00:09:18,820 --> 00:09:21,800
+I mean so he is the CEO, he is the founder.
+
+152
+00:09:21,800 --> 00:09:25,350
+He is a specific risk, why?
+
+153
+00:09:25,350 --> 00:09:28,030
+Because he is very peculiar to Amazon.
+
+154
+00:09:29,740 --> 00:09:30,790
+Please remember that.
+
+155
+00:09:30,790 --> 00:09:33,995
+Other types of specific risks could also be there,
+
+156
+00:09:33,995 --> 00:09:36,400
+right which are only peculiar to that firm.
+
+157
+00:09:36,400 --> 00:09:43,140
+So for example, giving you a broader sense of oil in one of my examples.
+
+158
+00:09:43,140 --> 00:09:49,980
+Oil became and is one of the major issues of the future is.
+
+159
+00:09:49,980 --> 00:09:55,550
+We&#39;re just exhausting the resources that are not renewable.
+
+160
+00:09:55,550 --> 00:09:57,790
+So what oil was.
+
+161
+00:09:57,790 --> 00:10:01,110
+Oil probably was a specific risk at some point.
+
+162
+00:10:01,110 --> 00:10:03,950
+For some companies that used oil.
+
+163
+00:10:03,950 --> 00:10:08,933
+But with transportation taking off, and with the boom
+
+164
+00:10:08,933 --> 00:10:15,190
+in railroads and cars, oil started becoming an economy wide factor.
+
+165
+00:10:15,190 --> 00:10:17,990
+So the reason I&#39;m raising this is, this is all art.
+
+166
+00:10:19,050 --> 00:10:23,170
+Nobody knows what is for sure, systematic risk or specific risk.
+
+167
+00:10:23,170 --> 00:10:24,770
+It&#39;s a way of thinking.
+
+168
+00:10:24,770 --> 00:10:29,970
+And we&#39;ll throw statistics in and you&#39;ll see how beautiful it all fits together.
+
+169
+00:10:29,970 --> 00:10:32,420
+So hang in there, think again.
+
+170
+00:10:32,420 --> 00:10:33,980
+I&#39;m thinking of Amazon,
+
+171
+00:10:33,980 --> 00:10:38,700
+because it&#39;s my comparable, because I want my cost of capital through Amazon,
+
+172
+00:10:38,700 --> 00:10:43,640
+because that&#39;s what investors will use to think about rain forest.
+
+173
+00:10:43,640 --> 00:10:48,480
+And when I think of Amazon&#39;s rate of return, it&#39;ll be determined by risk.
+
+174
+00:10:48,480 --> 00:10:51,960
+And there are two types of risks that you always need to worry about.
+
+175
+00:10:51,960 --> 00:10:58,460
+Broad, economy-wide risks and risks specific to your project.
+
+176
+00:10:58,460 --> 00:10:59,720
+See you in a bit.
+

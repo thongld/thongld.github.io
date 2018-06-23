@@ -1,0 +1,137 @@
+1
+00:00:00,340 --> 00:00:04,920
+Khoá học mới, cửa hàng mới!
+Tuần này chúng ta sẽ là chủ cửa hàng
+
+2
+00:00:04,920 --> 00:00:09,860
+chuyên bán quần áo chạy bộ
+như tất, giày, áo ngực và quần.
+
+3
+00:00:09,860 --> 00:00:16,059
+Ta sẽ phân tích ta làm việc này như thế nào.
+Tuần này ta sẽ bàn về cách thức nhập dữ liệu.
+
+4
+00:00:16,059 --> 00:00:19,720
+Giả sử ta đã có một số nguồn dữ liệu như một cơ sở dữ liệu
+
+5
+00:00:19,720 --> 00:00:25,910
+hay một hệ thống hoạch định tài nguyên doanh nghiệp (ERP). Và ta muốn đưa những dữ liệu này lên bảng tính.
+
+6
+00:00:25,910 --> 00:00:31,019
+Tôi đoán bạn đang tưởng tượng ra cảnh
+nhập dữ liệu như thế này.
+
+7
+00:00:31,019 --> 00:00:35,730
+Người ta email cho bạn những bảng tính và bạn phải tìm cách để hiểu được nội dung của chúng.
+
+8
+00:00:35,730 --> 00:00:40,190
+Cuối cùng kết quả sẽ như thế này. 
+Bạn có một thư mục trên ổ cứng
+
+9
+00:00:40,190 --> 00:00:45,879
+với rất nhiều file Excel, và bạn phải 
+phân tích tất cả các file ấy.
+
+10
+00:00:45,879 --> 00:00:48,829
+Có lẽ bạn sẽ làm như thế này.
+
+11
+00:00:48,829 --> 00:00:51,760
+Bạn nhập dữ liệu bằng cách 
+nhấp chuột vào một file.
+
+12
+00:00:51,760 --> 00:00:56,559
+Nó mở ra. Bạn chọn tất cả dữ liệu,
+đây là việc rất đơn giản.
+
+13
+00:00:56,559 --> 00:01:00,270
+Bạn di chuyển đến trang tính mà bạn muốn
+thực hiện phân tích dữ liệu rồi dán dữ liệu vào đó.
+
+14
+00:01:00,270 --> 00:01:04,679
+Bạn lặp lại quá trình này với một file khác.
+Bạn cũng muốn có dữ liệu của Nhật Bản nữa.
+
+15
+00:01:04,679 --> 00:01:09,789
+Chúng ta bắt đầu nào: chọn tất cả dữ liệu,
+Ctrl+C rồi Ctrl+V,
+
+16
+00:01:09,789 --> 00:01:13,560
+và ta dán nó vào đây. Vậy giả sử ta có
+6 file, và ta sẽ lặp lại công đoạn này
+
+17
+00:01:13,560 --> 00:01:16,639
+6 lần. Tôi đoán bạn đã hiểu 
+các bước đó như thế nào rồi.
+
+18
+00:01:16,639 --> 00:01:19,639
+Cách này cũng không tệ lắm.
+
+19
+00:01:19,639 --> 00:01:22,950
+Nếu chúng ta chỉ phải làm một lần
+thì có lẽ cũng được.
+
+20
+00:01:22,950 --> 00:01:26,849
+Nhưng có thể bạn sẽ gặp phải tình huống
+như thế này.
+
+21
+00:01:26,849 --> 00:01:32,340
+Ai đó gửi email cho bạn và bảo: "Ồ, tôi xin lỗi.
+Tôi gửi nhầm file.
+
+22
+00:01:32,340 --> 00:01:36,079
+Đây mới là file đúng này."
+Lúc này mọi việc bắt đầu rối rắm.
+
+23
+00:01:36,079 --> 00:01:38,929
+Vì bạn lại phải mở trang tính Excel ra,
+
+24
+00:01:38,929 --> 00:01:42,989
+chọn dữ liệu mà bạn muốn thay thế,
+xoá nó và đưa dữ liệu mới vào.
+
+25
+00:01:42,989 --> 00:01:46,909
+Cách làm này rất dễ sinh ra lỗi. Có thể bạn sẽ viết đè lên một hàng có ở đó từ trước.
+
+26
+00:01:46,909 --> 00:01:50,469
+Có thể bạn lỡ xoá quá nhiều dữ liệu.
+Bạn không muốn thế.
+
+27
+00:01:50,469 --> 00:01:54,889
+Bạn sẽ kiểu: "Anh đùa tôi đấy à? Tôi sẽ không
+lặp lại tất cả công đoạn đó một lần nữa đâu."
+
+28
+00:01:54,889 --> 00:02:02,239
+Vậy tuần này tôi sẽ chỉ cho bạn cách tự động
+nhập các file Excel với số lượng tuỳ ý
+
+29
+00:02:02,239 --> 00:02:03,309
+vào một file nguồn
+

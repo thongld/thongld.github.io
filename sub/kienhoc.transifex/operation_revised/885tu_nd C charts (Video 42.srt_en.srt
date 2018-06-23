@@ -1,0 +1,438 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/FD9o2iz6gq0
+
+1
+00:00:06,948 --> 00:00:08,179
+hello again welcome back
+
+2
+00:00:08,179 --> 00:00:12,009
+operations management we're continuing
+with statistical process control
+
+3
+00:00:12,009 --> 00:00:16,388
+and now we're going to be looking at how we
+create control limits for P charts and
+
+4
+00:00:16,388 --> 00:00:19,768
+C charts if you recall P charts and
+C charts
+
+5
+00:00:19,768 --> 00:00:23,039
+are used for attribute inspection in terms
+
+6
+00:00:23,039 --> 00:00:26,600
+up is there a defect is there not a
+defect
+
+7
+00:00:26,600 --> 00:00:31,160
+a P chart is used to monitor the percent
+or fraction
+
+8
+00:00:31,160 --> 00:00:35,010
+of defective units within a sample so
+when you thinking about
+
+9
+00:00:35,010 --> 00:00:39,280
+P charts think percent defective we have
+a total number
+
+10
+00:00:39,280 --> 00:00:42,390
+items in the sample and we're just counting how
+many of them
+
+11
+00:00:42,390 --> 00:00:45,489
+are defective when we go to create
+
+12
+00:00:45,488 --> 00:00:49,289
+the upper and lower control limits just
+like we've done before we're going to
+
+13
+00:00:49,289 --> 00:00:49,929
+take
+
+14
+00:00:49,929 --> 00:00:54,289
+the mean and we're going to add the number
+of standard deviations
+
+15
+00:00:54,289 --> 00:00:59,649
+above the mean and then we're going to 
+take the mean and subtract the number
+
+16
+00:00:59,649 --> 00:01:02,780
+of standard deviations below the mean
+
+17
+00:01:02,780 --> 00:01:07,549
+for the lower control limit one thing to
+remember with the P chart is we
+
+18
+00:01:07,549 --> 00:01:10,408
+actually have to calculate the standard
+deviation of
+
+19
+00:01:10,409 --> 00:01:13,439
+3 and to do that we need the
+
+20
+00:01:13,438 --> 00:01:16,679
+mean percent deffective or the average
+percent deffective
+
+21
+00:01:16,680 --> 00:01:19,799
+and we also need the mean sample size
+
+22
+00:01:19,799 --> 00:01:23,409
+so in this case it would be the square
+root of p bar 
+
+23
+00:01:23,409 --> 00:01:26,430
+times one minus p bar over in bar
+
+24
+00:01:26,430 --> 00:01:30,000
+now typically we use 3 for z
+
+25
+00:01:30,000 --> 00:01:33,549
+because we typically used three standard
+deviations away from the mean
+
+26
+00:01:33,549 --> 00:01:36,570
+so here we have an example
+
+27
+00:01:36,569 --> 00:01:41,169
+the LRDR company is trying to monitor
+the number of defective batteries that
+
+28
+00:01:41,170 --> 00:01:41,978
+they make
+
+29
+00:01:41,978 --> 00:01:45,390
+it's been determined that the average
+percent deffective
+
+30
+00:01:45,390 --> 00:01:49,849
+in a sample of 50 is two percent so
+we're gonna use 3 sigma control
+
+31
+00:01:49,849 --> 00:01:53,129
+limits and calculate and upper and lower
+control limit for
+
+32
+00:01:53,129 --> 00:01:58,699
+a P chart so the first thing we need to do
+is we need to calculate
+
+33
+00:01:58,700 --> 00:02:03,040
+that standard deviation of p we know that
+the average percent deffective
+
+34
+00:02:03,040 --> 00:02:06,490
+is two percent which is .02
+
+35
+00:02:06,489 --> 00:02:09,670
+and our sample size was given is 50
+
+36
+00:02:09,670 --> 00:02:13,378
+so we make those substitutions p bar
+.02
+
+37
+00:02:13,378 --> 00:02:17,289
+and n is 50 and we can calculate that
+
+38
+00:02:17,289 --> 00:02:21,409
+samples standard deviation for the
+percent deffective
+
+39
+00:02:21,409 --> 00:02:25,359
+from there we can creat  upper and
+lower control limits
+
+40
+00:02:25,360 --> 00:02:28,690
+p bar plus three times the standard
+deviation
+
+41
+00:02:28,689 --> 00:02:31,919
+p bar minus three times the
+standard deviation
+
+42
+00:02:31,919 --> 00:02:35,859
+and so our upper control limit is
+.0398
+
+43
+00:02:35,860 --> 00:02:40,480
+and our lower control limit is 
+.0002
+
+44
+00:02:40,479 --> 00:02:43,789
+so when we have our control limits
+
+45
+00:02:43,789 --> 00:02:48,449
+and we have a control chart that lower
+control limit is our lower line on the
+
+46
+00:02:48,449 --> 00:02:49,089
+chart
+
+47
+00:02:49,090 --> 00:02:52,700
+and the upper control limit is our upper 
+line on that chart
+
+48
+00:02:52,699 --> 00:02:57,129
+as long as our data points we're going to be
+collecting samples
+
+49
+00:02:57,129 --> 00:03:01,329
+of data calculating the percentage
+deffective in that sample
+
+50
+00:03:01,329 --> 00:03:05,829
+as long as that percent deffective falls
+between these two limits
+
+51
+00:03:05,829 --> 00:03:09,560
+we consider the process in control if it
+falls
+
+52
+00:03:09,560 --> 00:03:12,818
+outside the control limits we say it is
+not in control
+
+53
+00:03:12,818 --> 00:03:18,979
+and we start looking for an assignable cause
+a C chart is a little bit different
+
+54
+00:03:18,979 --> 00:03:22,509
+in stead of  like a percent deffective
+we're actually looking
+
+55
+00:03:22,509 --> 00:03:25,699
+at the count of defects within a sample
+
+56
+00:03:25,699 --> 00:03:29,189
+which means there can be more than one
+defect
+
+57
+00:03:29,189 --> 00:03:34,669
+in a particular product for example for
+looking at a car there could be a flaw
+
+58
+00:03:34,669 --> 00:03:37,939
+in the paint there could be a flaw in the
+windshield
+
+59
+00:03:37,939 --> 00:03:41,139
+there can be the flaw in a light
+
+60
+00:03:41,139 --> 00:03:44,769
+that would be three separate flaws and
+each one of them
+
+61
+00:03:44,769 --> 00:03:49,269
+counts towards this C chart so there
+can be more than one
+
+62
+00:03:49,269 --> 00:03:56,269
+defect on the unit so we calculate the
+upper control limit by using c bar plus
+
+63
+00:03:58,439 --> 00:04:02,719
+z times square root of c bar and the
+lower control limit
+
+64
+00:04:02,719 --> 00:04:06,169
+of c bar minus z times
+square root c bar
+
+65
+00:04:06,169 --> 00:04:11,430
+and typically again z is three so we
+have three standard deviations from the
+
+66
+00:04:11,430 --> 00:04:11,959
+mean
+
+67
+00:04:11,959 --> 00:04:15,009
+and c bar is the average number of defects
+
+68
+00:04:15,009 --> 00:04:18,279
+or the mean
+
+69
+00:04:18,279 --> 00:04:20,879
+so here we have another example this
+one
+
+70
+00:04:20,879 --> 00:04:24,870
+is concerned with the number defects in
+painted panels
+
+71
+00:04:24,870 --> 00:04:29,329
+and the average number of defects in a
+sample of 100 is 2
+
+72
+00:04:29,329 --> 00:04:32,800
+the company wants to monitor the process
+we're going to use
+
+73
+00:04:32,800 --> 00:04:37,650
+3 sigma control limits and now we're going to
+calculate the upper and lower control
+
+74
+00:04:37,649 --> 00:04:39,079
+limits for C chart
+
+75
+00:04:39,079 --> 00:04:42,279
+we know the average number of defects
+
+76
+00:04:42,279 --> 00:04:47,669
+2 so that's c bar and then we simply create
+the upper and lower control limits
+
+77
+00:04:47,670 --> 00:04:51,930
+by taking c bar plus three times the
+square root of c bar
+
+78
+00:04:51,930 --> 00:04:55,009
+and c bar minus three times the square
+root of c bar
+
+79
+00:04:55,009 --> 00:04:58,089
+are so we have 6.24
+
+80
+00:04:58,089 --> 00:05:01,929
+is our upper control  limit 
+and negative 2.24 is
+
+81
+00:05:01,930 --> 00:05:04,949
+lower and you can't have a negative
+number of
+
+82
+00:05:04,949 --> 00:05:09,529
+defects so in this case we converted
+that lower control limit
+
+83
+00:05:09,529 --> 00:05:13,949
+to 0 and in fact anytime we have a control
+limit
+
+84
+00:05:13,949 --> 00:05:18,689
+where it's negative and it is possible to
+have a negative number
+
+85
+00:05:18,689 --> 00:05:23,500
+we convert that to 0 that's all there
+is to creating the
+
+86
+00:05:23,500 --> 00:05:26,660
+control limits for C chart and for R
+charts
+
+87
+00:05:26,660 --> 00:05:30,380
+when we use them on a control chart the
+
+88
+00:05:30,379 --> 00:05:34,879
+upper control limit is the upper line the
+lower control limit is the lower line
+
+89
+00:05:34,879 --> 00:05:39,860
+and then we just plotting the data in between
+as long as that data points stays between
+
+90
+00:05:39,860 --> 00:05:42,110
+those lines our process is in control
+
+91
+00:05:42,110 --> 00:05:45,360
+if it falls outside we say it's not in
+control
+
+92
+00:05:45,360 --> 00:05:49,120
+that's it for control charts have a good
+day
+

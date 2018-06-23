@@ -1,0 +1,208 @@
+1
+00:00:04,650 --> 00:00:05,930
+https://youtu.be/9vU339NfNo4
+Chúng ta đang nói về
+
+2
+00:00:05,930 --> 00:00:10,440
+việc so sánh theo thời gian và điều đầu tiên 
+ta cần hiểu đó là
+
+3
+00:00:10,440 --> 00:00:17,970
+thời gian cũng có giá trị, bạn không thể so sánh thời gian
+giữa 0 và 1 một cách trực tiếp, thậm chí ngay cả trong từng
+
+4
+00:00:17,970 --> 00:00:22,779
+chu kỳ phức tạp nhất, chúng ta cũng chỉ luôn luôn  lấy giá trị tương đối
+nghĩa là chúng ta đang vi phạm 
+
+5
+00:00:22,780 --> 00:00:27,350
+giả định rằng thời gian có giá trị và 
+điều này không phải là một giả định, đó là lý thuyết, là
+
+6
+00:00:27,350 --> 00:00:32,320
+thực tiễn, vì vậy, chúng ta hãu cùng bàn
+về các khái niệm của Giá trị tương lai, đúng không nào? Chúng ta
+
+7
+00:00:32,320 --> 00:00:36,879
+dùng Giá trị tương lai để chỉ ra rằng phương án 
+A tốt hơn phương án B. Vậy đâu là
+
+8
+00:00:36,879 --> 00:00:43,480
+giá trị tương lại? Thực tế, Giá trị tương lai có hai thành phần: thành phần thứ nhất đó là
+
+9
+00:00:43,480 --> 00:00:49,269
+khoản thanh toán ban đầu:  Giá trị của nó là bao nhiêu? 
+Khoản thanh toán ban đầu, tôi viết lại lần nữa
+
+10
+00:00:49,270 --> 00:00:57,700
+là 1000 đôla, tại thời điểm nào bạn
+nhận được khoản tiền nào? Tại điểm 0. Nhưng giá trị
+
+11
+00:00:57,700 --> 00:01:03,770
+tương lai đang được đo lường tại điểm nào?
+Mốc thời gian 1. Vì vậy khoản thanh toán ban đầu có thể vẫn là
+
+12
+00:01:03,770 --> 00:01:10,549
+1000 đô và không có gì thay đổi trong trường hợp lãi suất bằng 0, tuy nhiên giá trị ban đầu này
+
+13
+00:01:10,549 --> 00:01:15,840
+trong phương án A, để so sánh 
+với phương án B vốn cũng có giá trị ban đầu là 1000 đô la
+
+14
+00:01:15,840 --> 00:01:22,200
+nhưng trong kỳ nào? Kỳ 2, như vậy, giá trị này không được
+mang sang, đúng không ạ?  Bạn lấy nguyên giá trị này
+
+15
+00:01:22,200 --> 00:01:27,530
+mang sang theo phương án A. Khoản thanh toán ban đầu
+là 1000 đôla cộng thêm tiền lãi
+
+16
+00:01:27,530 --> 00:01:34,549
+và như chúng ta đã tính, nó là bao nhiêu? 100 đôla. Chúng ta sẽ không đi vào chi tiết vì sao lại là 100 đôla
+
+17
+00:01:34,549 --> 00:01:40,460
+bởi vì đó là 10 phần trăm của 1000 đôla, vì sao 
+lại chọn 10% ? Bởi vì như tôi đã nói tôi đang chọn
+
+18
+00:01:40,460 --> 00:01:45,979
+số làm tròn để có thể làm các bước tiếp theo và để có thể tính nhẩm được. Trong thực tế 
+
+19
+00:01:45,979 --> 00:01:51,850
+điều này sẽ được xác định như tôi đã giải thích
+là do các thị trường cạnh tranh và không phải bởi 1% 
+
+20
+00:01:51,850 --> 00:01:57,189
+sẽ vắt kiệt hầu bao của bạn. Không may rằng điều này lại xảy ra và đó là lý do tại sao lĩnh vực Tài chính vi mô 
+
+21
+00:01:57,189 --> 00:02:02,679
+xuất hiện, xin lỗi vì đã nói lan man, nhưng 
+quan trọng là ta phải hiểu được rằng thị trường
+
+22
+00:02:02,680 --> 00:02:09,619
+cạnh tranh có tính chất quyết định trong đưa ra
+mức lãi suất hợp lý, đúng không ạ? Như vậy
+
+23
+00:02:09,619 --> 00:02:16,19
+lãi suất lũy kế là 100 đôla, như vậy
+tổng số tiền lúc này sẽ là bao nhiêu, 1100 đôla? Hãy tiếp tục
+
+24
+00:02:16,19 --> 00:02:20,540
+với phần công thức tính toán thêm một chút nữa, 
+chúng ta hãy viết ra công thức 
+
+25
+00:02:20,540 --> 00:02:25,19
+tính Giá trị tương lai, nếu nhìn vào
+những công thức ở đây, tôi sẽ đưa cho các bạn
+
+26
+00:02:25,19 --> 00:02:29,950
+một bảng ghi lại một số công thức, nhưng nếu các bạn tự tra cứu thì sẽ thấy Giá trị tương lai có hai thành phần,
+
+27
+00:02:29,950 --> 00:02:35,819
+nhiều khi người ta gọi nó một khoản tiền, 
+khoản tiền gốc, ở đây khoản này có giá trị là 1000 đôla
+
+28
+00:02:35,819 --> 00:02:45,899
+và đây là 10% của giá trị đó và ký hiệu này, 
+ngôi sao có nghĩa là phép tính nhân
+
+29
+00:02:45,900 --> 00:02:52,739
+nhân với 1000, chúng ta đã có bao nhiêu 
+khi chúng ta nhân 10% với 1000
+
+30
+00:02:52,739 --> 00:02:58,200
+chúng ta có 100 đôla, nhưng bạn có thể viết
+ như sau:  hãy để ý có điểm 
+
+31
+00:02:58,200 --> 00:03:02,738
+chung giữa tiền gốc ban đầu và tiền lãi  được tính bằng tiền gốc ban đầu
+
+32
+00:03:02,739 --> 00:03:09,200
+gọi là P, theo đó chúng ta có
+1 + R nhân với P
+
+33
+00:03:09,200 --> 00:03:18,899
+vì nếu bạn triển khai công thức, ta sẽ có P + R P, và giờ bạn thấy giá trị hay xuất hiện
+
+34
+00:03:18,900 --> 00:03:26,200
+trong mọi giáo trình Tài Chính, nó được gọi là Hệ số giá trị 
+tương lai. Viết lại một lần nữa 
+
+35
+00:03:26,200 --> 00:03:37,549
+Hệ số giá trị tương lai
+
+36
+00:03:37,550 --> 00:03:47,120
+Và bạn nghĩ gì về hệ số này? Đó đơn giản là giá trị của 1 đồng, 1 đôla, bao nhiêu kỳ bắt đầu từ thời đỉểm hiện tại? Một kì bắt đầu từ
+
+37
+00:03:47,120 --> 00:03:53,50
+thời điểm hiện tại, và nếu như bạn biết Hệ số giá trị tương lai, và đó chính là giá trị của 1 đồng 
+
+38
+00:03:53,50 --> 00:03:58,120
+trong tương lai, tôi phải làm gì để tính nếu
+đó là  1000 đôla Giá trị tương lai, tôi chỉ
+
+39
+00:03:58,120 --> 00:04:02,190
+cần nhân nó với 1000. Vậy 
+Hệ số giá trị tương lai rất quan trọng 
+
+40
+00:04:02,190 --> 00:04:06,990
+và cũng được in phía sau các sách giáo khoa, thế nhưng,
+ bởi vì chúng ta không quen với
+
+41
+00:04:06,990 --> 00:04:11,130
+việc tính toán và tính những bài toán 
+phức tạp là rất khó, nên hãy nhớ rằng
+
+42
+00:04:11,130 --> 00:04:16,000
+chúng ta đang trong thế giới 1 kỳ, như vậy bài toán sẽ trở nên hết sức đơn giản. Tôi hy vọng điều này 
+
+43
+00:04:16,000 --> 00:04:24,260
+có ích cho các bạn, khi chúng ta quay lại với đoạn video
+ngắn tiếp theo, tôi sẽ chỉ cho các bạn thấy sức mạnh
+
+44
+00:04:24,260 --> 00:04:30,849
+của Giá trị tương lai và chúng ta sẽ trao đổi
+một chút về điều đó, được chứ?
+

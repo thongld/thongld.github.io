@@ -1,0 +1,406 @@
+761
+00:34:00,940 --> 00:34:03,130
+https://youtu.be/VXyRfgnzL2o
+And if it works, it's great.
+
+762
+00:34:03,130 --> 00:34:07,380
+And if it fails, it runs this
+and sets it to negative 1.
+
+763
+00:34:07,380 --> 00:34:11,820
+And afterwards, we either have
+the number or a negative 1.
+
+764
+00:34:11,820 --> 00:34:17,409
+And so, if the person enters
+42, it says nice work.
+
+765
+00:34:17,409 --> 00:34:19,409
+Let's show you where it runs.
+
+766
+00:34:19,409 --> 00:34:22,989
+If the person says 42,
+it runs through here,
+
+767
+00:34:22,989 --> 00:34:25,340
+gets the string 42,
+converts that to an integer,
+
+768
+00:34:25,340 --> 00:34:28,030
+skips here, and
+then says nice work.
+
+769
+00:34:28,030 --> 00:34:29,639
+And that's how it runs.
+
+770
+00:34:29,639 --> 00:34:32,710
+If on the other hand,
+they type fortytwo--
+
+771
+00:34:32,710 --> 00:34:37,040
+the words-- this gets to
+be the string fortytwo.
+
+772
+00:34:37,040 --> 00:34:38,370
+It runs here.
+
+773
+00:34:38,370 --> 00:34:43,100
+This blows up, so it comes
+and runs this part here.
+
+774
+00:34:43,100 --> 00:34:46,500
+And then it says if ival
+> 0, which is not true.
+
+775
+00:34:46,500 --> 00:34:50,500
+So it runs this part
+and says not a number.
+
+776
+00:34:50,500 --> 00:34:54,370
+So this is our way of
+compensating for user input
+
+777
+00:34:54,370 --> 00:34:56,630
+that might have errors in it.
+
+778
+00:34:56,630 --> 00:35:00,800
+Errors that we're anticipating,
+because you'd rather
+
+779
+00:35:00,800 --> 00:35:03,580
+at least put up some
+kind of a message,
+
+780
+00:35:03,580 --> 00:35:05,080
+rather than just
+have a traceback,
+
+781
+00:35:05,080 --> 00:35:06,810
+if you're writing code
+for somebody else.
+
+782
+00:35:06,810 --> 00:35:08,950
+It just kind of is
+not very classy.
+
+783
+00:35:08,950 --> 00:35:16,100
+
+784
+00:35:16,100 --> 00:35:19,090
+The classic program
+to do this is a time
+
+785
+00:35:19,090 --> 00:35:20,590
+and a half for overtime pay.
+
+786
+00:35:20,590 --> 00:35:23,200
+
+787
+00:35:23,200 --> 00:35:26,050
+So you get some pay
+rate, like $10 an hour
+
+788
+00:35:26,050 --> 00:35:27,320
+for your first 40 hours.
+
+789
+00:35:27,320 --> 00:35:30,190
+And then you get 15 hours
+for any hours above it.
+
+790
+00:35:30,190 --> 00:35:33,700
+So you have to sort of
+say, OK, if this ends up
+
+791
+00:35:33,700 --> 00:35:37,040
+being some kind
+of a thing where--
+
+792
+00:35:37,040 --> 00:35:40,460
+let me draw that picture
+a little better--
+
+793
+00:35:40,460 --> 00:35:45,019
+hours greater than 40,
+you're going to do one thing.
+
+794
+00:35:45,019 --> 00:35:46,560
+And if hours are
+less than 40, you're
+
+795
+00:35:46,560 --> 00:35:47,760
+going to do another thing.
+
+796
+00:35:47,760 --> 00:35:49,800
+So you have two
+payout calculations.
+
+797
+00:35:49,800 --> 00:35:51,630
+If the hours are
+greater than 40,
+
+798
+00:35:51,630 --> 00:35:55,180
+then you're going to do
+overtime calculation, which
+
+799
+00:35:55,180 --> 00:35:58,870
+is kind of like 40
+times the regular rate,
+
+800
+00:35:58,870 --> 00:36:02,650
+and then the number of excess
+hours, like 5 overtime hours,
+
+801
+00:36:02,650 --> 00:36:05,620
+times the rate times 1 and 1/2.
+
+802
+00:36:05,620 --> 00:36:07,370
+So this is kind
+of the calculation
+
+803
+00:36:07,370 --> 00:36:10,530
+that happens if the hours
+are greater than 40.
+
+804
+00:36:10,530 --> 00:36:13,260
+And then if the hours
+are less than 40,
+
+805
+00:36:13,260 --> 00:36:18,660
+it's just pay equals
+rate times hours.
+
+806
+00:36:18,660 --> 00:36:22,500
+So you're going to do
+one of two calculations,
+
+807
+00:36:22,500 --> 00:36:23,950
+depending on how it works.
+
+808
+00:36:23,950 --> 00:36:27,710
+So that's one of the programming
+problems for this chapter.
+
+809
+00:36:27,710 --> 00:36:29,300
+That's a classic.
+
+810
+00:36:29,300 --> 00:36:30,892
+Is the classic if then else.
+
+811
+00:36:30,892 --> 00:36:33,100
+You can actually do it with
+if then if you're tricky.
+
+812
+00:36:33,100 --> 00:36:34,650
+There's a lot of
+ways to do this.
+
+813
+00:36:34,650 --> 00:36:36,840
+So pick one and do it.
+
+814
+00:36:36,840 --> 00:36:39,630
+Now, the next thing
+I want you to do
+
+815
+00:36:39,630 --> 00:36:43,810
+is I want you to take
+that same program,
+
+816
+00:36:43,810 --> 00:36:48,730
+do it again in another
+assignment, or another problem
+
+817
+00:36:48,730 --> 00:36:53,500
+in the chapter, and have some
+kind of a non-numeric input
+
+818
+00:36:53,500 --> 00:36:54,470
+and have it blow up.
+
+819
+00:36:54,470 --> 00:36:59,900
+So if they type something
+like nine, put out an error.
+
+820
+00:36:59,900 --> 00:37:02,490
+Or if they type something
+here put out an error.
+
+821
+00:37:02,490 --> 00:37:07,100
+Now, don't write
+a loop-- no loop.
+
+822
+00:37:07,100 --> 00:37:09,160
+This is one execution
+of the program.
+
+823
+00:37:09,160 --> 00:37:11,107
+And this is another
+execution program.
+
+824
+00:37:11,107 --> 00:37:12,190
+Later, we can write loops.
+
+825
+00:37:12,190 --> 00:37:13,648
+We haven't even
+talked about loops.
+
+826
+00:37:13,648 --> 00:37:15,220
+So this is running it twice.
+
+827
+00:37:15,220 --> 00:37:17,700
+All I want you to do is exit.
+
+828
+00:37:17,700 --> 00:37:20,240
+So take a look in the book
+as to how to just get out.
+
+829
+00:37:20,240 --> 00:37:22,750
+So I don't want
+you to try to say,
+
+830
+00:37:22,750 --> 00:37:25,810
+I'm going to prompt for these
+numbers until I get a good one.
+
+831
+00:37:25,810 --> 00:37:26,880
+We'll do that later.
+
+832
+00:37:26,880 --> 00:37:30,060
+I just want you to deal with
+the fact that you read a thing.
+
+833
+00:37:30,060 --> 00:37:34,827
+You use the try to convert to
+a float and see if it works.
+
+834
+00:37:34,827 --> 00:37:36,160
+And if you don't, you just quit.
+
+835
+00:37:36,160 --> 00:37:40,410
+Don't try to be tricky
+and repeatedly prompt.
+
+836
+00:37:40,410 --> 00:37:42,230
+So don't repeatedly prompt.
+
+837
+00:37:42,230 --> 00:37:47,676
+One prompt, and then quit.
+
+838
+00:37:47,676 --> 00:37:50,750
+
+839
+00:37:50,750 --> 00:37:55,800
+So this is conditional
+execution-- if, if then else,
+
+840
+00:37:55,800 --> 00:37:58,340
+and then I added a
+little bit with the try
+
+841
+00:37:58,340 --> 00:37:59,780
+and except as well.
+
+842
+00:37:59,780 --> 00:38:04,230
+And the try/except is really
+a limited kind of a problem.
+
+843
+00:38:04,230 --> 00:38:07,130
+It really is to compensate
+for errors that you
+
+844
+00:38:07,130 --> 00:38:08,720
+anticipate are going to happen.
+
+845
+00:38:08,720 --> 00:38:10,180
+And you can imagine
+what you want
+
+846
+00:38:10,180 --> 00:38:14,770
+to do as a replacement
+for what those errors are.
+
+847
+00:38:14,770 --> 00:38:16,620
+See you next lecture.
+

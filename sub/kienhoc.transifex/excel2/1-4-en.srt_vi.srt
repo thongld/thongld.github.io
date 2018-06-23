@@ -1,0 +1,102 @@
+1
+00:00:02,060 --> 00:00:07,850
+Ta đã dừng ở đây trong video trước.
+Ta đã lấy một file CSV và nhập dữ liệu từ nó
+
+2
+00:00:07,850 --> 00:00:15,529
+vào Excel. Nhưng đôi khi ta có nhiều hơn một file Excel.
+Trong video này ta có sáu 
+
+3
+00:00:15,529 --> 00:00:22,089
+file XLSX khác nhau, và ta phải nhập tất cả dữ liệu từ chúng. Thử tưởng tượng trong một phút
+
+4
+00:00:22,089 --> 00:00:26,939
+ta đã chuyển tất cả chúng thành dạng CSV. 
+Trong video tiếp tôi sẽ hướng dẫn cách làm việc đó tự động.
+
+5
+00:00:26,939 --> 00:00:31,810
+Nhưng giả sử ta đã xuất tất cả bằng cách thủ công. Và giờ thì tôi có
+
+6
+00:00:31,810 --> 00:00:38,000
+sáu file dạng CSV và tôi cần nhập dữ liệu từ chúng vào một file Excel. Ta có thể lại dùng cách
+
+7
+00:00:38,000 --> 00:00:42,860
+'import' (nhập dữ liệu) và tạo sáu kết nối khác nhau thành các file CSV. Nhưng
+
+8
+00:00:42,860 --> 00:00:47,620
+như vậy thì tốn nhiều sức quá. 
+Ta muốn làm theo cách đơn giản nhất có thể.
+
+9
+00:00:47,620 --> 00:00:52,420
+Điều tôi thực hiện trong video này có thể gây một chút ghê rợn. 
+Giống như là
+
+10
+00:00:52,420 --> 00:00:57,740
+bạn đang lái một chiếc ô tô già cỗi mà bạn biết nó hoạt động như thế nào, tôi sẽ mở capô xe
+
+11
+00:00:57,740 --> 00:01:03,190
+và thay dầu. Có một chút đáng sợ ở đây vì ta sẽ thực hiện một chút
+
+12
+00:01:03,190 --> 00:01:07,960
+lập trình. Nhưng đừng lo, tôi sẽ đồng hành với bạn trong từng bước 
+
+13
+00:01:07,960 --> 00:01:13,810
+Đây là sáu tập tin dạng CSV trong thư mục. 
+Điều ta làm tiếp theo là gõ vào thanh địa chỉ chữ
+
+14
+00:01:13,810 --> 00:01:20,609
+'cmd'. Và ta có một cửa sổ hiện ra, trông hơi đáng sợ chút, mà ta có thể
+
+15
+00:01:20,609 --> 00:01:26,369
+dùng để điều khiển Windows. Nó được gọi là 'dấu nhắc lệnh', nơi ta có thể gõ một chút 
+
+16
+00:01:26,369 --> 00:01:31,359
+mã lập trình và nó sẽ làm gì đó với máy tính. Thông thường, ta sẽ click vào khi ta muốn mở 
+
+17
+00:01:31,359 --> 00:01:36,880
+một file nào đó, nhưng ở đây chỉ cần gõ chữ 'mở', và file sẽ được mở ra. Ta dùng cách này
+
+18
+00:01:36,880 --> 00:01:43,469
+để nối sáu file CSV lại thành một. Cùng nhìn xem chúng hoạt động như thế nào nhé
+
+19
+00:01:43,469 --> 00:01:52,219
+Chỉ cần gõ 'copy*.csv', ta copy tất cả file dạng CSV trong thư mục. Và rồi ta gõ 'input.csv'
+
+20
+00:01:52,219 --> 00:01:57,520
+tất cả chúng thành một file duy nhất. Và nếu ta mở file đó trong Excel bạn sẽ thấy rằng ta
+
+21
+00:01:57,520 --> 00:02:04,959
+giờ đã có sáu file CSV liên tiếp nằm lần lượt chung với nhau trong một file.
+
+22
+00:02:04,959 --> 00:02:10,970
+Kết quả là, nếu ta kéo xuống ta có thể thấy Rotterdam và New York, Tokyo và lại là Rotterdam.
+
+23
+00:02:10,970 --> 00:02:17,430
+Tất cả file đều ở đây. Đó mới chỉ là một nhắc lệnh đơn giản, chỉ cần gõ 'copy'
+
+24
+00:02:17,430 --> 00:02:20,930
+bạn có tất cả file gộp thành một file và sẵn sàng để nhập dữ liệu.
+

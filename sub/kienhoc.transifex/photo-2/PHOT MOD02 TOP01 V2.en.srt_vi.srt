@@ -1,0 +1,264 @@
+
+
+
+
+1
+00:00:10,350 --> 00:00:15,690
+Chào mừng đến với phần hai.
+Tuần này, ta sẽ tìm hiểu về sự phát triển 
+của nghệ thuật nhiếp ảnh
+
+2
+00:00:15,690 --> 00:00:20,590
+Ở phần trước, ta đã tìm hiểu về ánh sáng, ý nghĩa
+và ống kính cũng như mối quan hệ
+
+3
+00:00:20,590 --> 00:00:26,960
+giữa việc một bức ảnh được tạo ra như thế nào và
+ta chụp được một bức ảnh qua ống kính như thế nào.
+Tuần này, ta sẽ tìm hiểu về
+
+4
+00:00:26,960 --> 00:00:33,370
+những tác động mới của việc làm thế nào mà pixel và level
+cũng như những hiểu biết kĩ thuật mới về nhiếp ảnh kĩ thuật số
+
+5
+00:00:33,370 --> 00:00:40,370
+quyết định việc một bức ảnh được thành hình (shaped)
+và hội họa hóa (pictorialised).
+
+6
+00:00:40,800 --> 00:00:46,040
+Ở chủ đề lần này, ta sẽ khám phá mối quan hệ
+giữa pixel và cách mà nó quyết định đến
+
+7
+00:00:46,040 --> 00:00:50,750
+chi tiết và thông tin trong 
+những bức ảnh chụp của ta.
+
+8
+00:00:50,750 --> 00:00:56,699
+Nếu bạn nhìn gần vào mặt tôi, bạn có thể thấy
+tất cả những thông tin hiện có,
+
+9
+00:00:56,699 --> 00:01:03,589
+đôi mắt, lông mày, mũi và miệng tôi.
+Tất cả những thứ đó là thông tin được 
+
+10
+00:01:03,589 --> 00:01:10,589
+biểu diễn trên một bề mặt ảnh chụp. Với các pixel,
+thông tin đó sẽ được chia nhỏ ra
+
+11
+00:01:10,740 --> 00:01:17,740
+thành các chi tiết tương ứng với các hình vuông riêng biệt
+xác định các giá trị hiển thị như các chi tiết
+
+12
+00:01:18,409 --> 00:01:24,719
+trên bức ảnh của tôi.
+Nó đại loại giống như là các bậc thang 
+với một đoạn dốc vậy.
+
+13
+00:01:24,719 --> 00:01:30,439
+Trong một bức ảnh tương tự (ảnh analogue), 
+bạn không thể phân biệt được các giá trị khác nhau.
+
+14
+00:01:30,439 --> 00:01:37,439
+Nó giống như việc lăn xuống một con dốc thoải. Còn trong một
+bức ảnh kĩ thuật số, mỗi một giá trị là một giá trị riêng biệt độc nhất,
+
+15
+00:01:37,600 --> 00:01:43,158
+giống như việc bước xuống cầu thang. Bạn có thể đếm số bậc thang mà bạn bước, nhưng chắc chắn bạn không thể
+
+16
+00:01:43,159 --> 00:01:47,299
+đếm số bậc của một con dốc
+đơn giản vì dốc thì chẳng có bậc.
+
+17
+00:01:47,299 --> 00:01:51,829
+Thông thường, ta không thể thấy các pixel 
+trong những bức ảnh chụp, trừ khi bạn có
+
+18
+00:01:51,829 --> 00:01:58,359
+một ứng dụng cho phép bạn zoom in
+đến một mức độ nào đấy để bạn có thể
+
+19
+00:01:58,359 --> 00:02:04,309
+nhìn ra từng pixel. Trong video này, bạn có thể thấy,
+khi tôi thay đổi độ phóng đại, khi tôi zoom in
+
+20
+00:02:04,310 --> 00:02:09,960
+ngày càng nhiều vào bức hình, các chi tiết
+tự động hiện lên. Khi tôi đi sâu hơn
+
+21
+00:02:09,960 --> 00:02:16,960
+vào chi tiết, bạn bắt đầu thấy các pixel.
+Trong bộ phim kinh điển năm 1960 tên Blow-up
+
+22
+00:02:17,020 --> 00:02:23,300
+của nhà làm phim Michelangelo Antonioni, ta thấy người thợ nhiếp ảnh
+khám phá ra được ngày càng nhiều các thông tin
+
+23
+00:02:23,300 --> 00:02:29,960
+khi ông cứ thế phóng to và phóng to
+bức ảnh của mình đến độ ông có thể thấy những
+
+24
+00:02:29,960 --> 00:02:36,440
+thông tin và chi tiết mà ông không hề thấy khi 
+chụp bức hình. Pixel thì không hoàn toàn tương tự.
+
+25
+00:02:36,440 --> 00:02:41,380
+Một khi bạn đến vị trí cùng cực khi mà
+pixel bắt đầu lộ ra, điều duy nhất 
+
+26
+00:02:41,380 --> 00:02:47,100
+bạn có thể làm là phóng lớn pixel ấy ra.
+Bạn không thể tìm thêm bất cứ thông tin gì
+
+27
+00:02:47,100 --> 00:02:52,410
+trong bức ảnh đó nữa. Thông tin được quyết định 
+bởi độ phân giải pixel.
+
+28
+00:02:52,410 --> 00:02:57,370
+Khi nói về các pixel, ta không thể
+nói về sự liên quan đến việc tạo ảnh
+
+29
+00:02:57,370 --> 00:03:03,140
+mà không bàn tới vấn đề độ phân giải.
+Đừng rời đi nhé. Đây không phải là chủ đề
+
+30
+00:03:03,140 --> 00:03:07,920
+hào hứng nhất mà ta sẽ bàn đến, nhưng việc
+có được một vốn hiểu biết nền tảng về mối quan hệ
+
+31
+00:03:07,920 --> 00:03:13,230
+giữa cách các pixel làm việc và kích cỡ vật lí
+của một bức ảnh chụp là rất quan trọng.
+
+32
+00:03:13,230 --> 00:03:20,230
+Đây là một pixel. Nó có dạng hình vuông. Đây là
+10 pixel xếp thành 1 hàng. Có nghĩa là ta đang có
+
+33
+00:03:21,120 --> 00:03:27,610
+10 pixel nằm kế tiếp nhau. Nếu tôi muốn cho nó một
+dạng kích thước vật lí, hãy cho nó là 1 inch,
+
+34
+00:03:27,610 --> 00:03:34,610
+nghĩa là ta có độ phân giải của 10 pixel trên 1 inch,
+hay 10 PPI.
+
+35
+00:03:39,980 --> 00:03:44,750
+10 pixel trên 1 inch thì không nhiều lắm,
+
+36
+00:03:44,750 --> 00:03:50,890
+nhưng ý tưởng thì vẫn như trên. Nếu tôi muốn
+thay đổi để giá trị đó lớn hơn
+
+37
+00:03:50,890 --> 00:03:57,890
+giả sử như là 2 inch, như vậy tôi sẽ phải phân bố
+lại số lượng các pixel trên một khoảng không gian
+
+38
+00:03:58,820 --> 00:04:05,820
+vật lí khác, trong trường hợp này là 2 inch. Nghĩa là
+độ phân giải của tôi lúc này là 5 pixel trên 1 inch.
+
+39
+00:04:09,060 --> 00:04:15,310
+Như vậy, độ phân giải mà bạn cần dùng được
+quyết định bởi thiết bị đầu ra bạn sử dụng,
+
+40
+00:04:15,310 --> 00:04:22,310
+nên thực sự là nó cũng không ảnh hưởng 
+nhiều lắm. Bạn chỉ cần đảm bảo 
+
+41
+00:04:23,120 --> 00:04:27,980
+hai thiết bị này tương thích là được.
+Có người sẽ nói cho bạn biết đó nghĩa là gì,
+
+42
+00:04:27,980 --> 00:04:34,980
+nhưng nếu không, và nếu bạn không chắc,
+thông số an toàn nhất, độ phân giải kì diệu 
+
+43
+00:04:35,440 --> 00:04:40,410
+chính là 300 pixel trên 1 inch.
+Và giờ có một điều nữa mà ta cần
+
+44
+00:04:40,410 --> 00:04:47,410
+để ý ở đây. Có rất nhiều người nhầm lẫn
+về sự khác nhau giữa số pixel trên 1 inch,
+
+45
+00:04:47,440 --> 00:04:54,250
+hay PPI, và số điểm ảnh trên 1 inch, hay DPI (dots per inch).
+Và rất nhiều nhà sản xuất, không may là thêm cả
+
+46
+00:04:54,250 --> 00:05:01,250
+các phòng thí nghiệm và tổ chức thương mại
+và thậm chí là các giáo trình, cũng nhầm lẫn về diều này.
+
+47
+00:05:01,760 --> 00:05:08,150
+Các chấm (dot) được hiểu như là các chấm mực
+trên một trang. Pixel không giống như các chấm này,
+
+48
+00:05:08,150 --> 00:05:14,239
+và trong đa phần các trường hợp, số các pixel
+mà bạn cần trên bất kì số inch nào
+
+49
+00:05:14,240 --> 00:05:20,520
+cũng sẽ không bằng số các chấm mà bạn 
+nhận được từ một chiếc máy in nào đó.
+
+50
+00:05:20,520 --> 00:05:26,070
+Bạn còn nhớ con số 300 kì diệu đó không? Bạn chỉ
+cần để ý đến điều đó, khi bạn phân bố
+
+51
+00:05:26,070 --> 00:05:30,990
+số các pixel, nó sẽ quyết định kích cỡ 
+ngoài đời của một bức hình 
+
+52
+00:05:30,990 --> 00:05:32,030
+mà bạn sắp in.
+

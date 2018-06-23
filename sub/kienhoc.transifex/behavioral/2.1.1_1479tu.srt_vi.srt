@@ -1,0 +1,718 @@
+1
+00:00:07,130 --> 00:00:10,140
+Chúng ta đều đã tửng nghe
+1 đồng tiết kiệm là 
+
+2
+00:00:10,140 --> 00:00:11,140
+1 đồng được.
+
+3
+00:00:11,140 --> 00:00:14,969
+Thực ra, lý thuyết kinh tế cho rằng tiền thì có thể thay thế.
+
+4
+00:00:14,969 --> 00:00:18,340
+Có nghĩa là 1 dô là 1 đô, bất kể
+
+5
+00:00:18,340 --> 00:00:22,590
+bằng cách nào bạn có nó, bạn tiết kiệm nó ở đâu,
+và  với loại tiền tệ nào
+
+6
+00:00:22,590 --> 00:00:24,040
+hay hình thức nào.
+
+7
+00:00:24,040 --> 00:00:29,689
+Ví dụ như, tôi có 1 tờ 20 đô bên tay phải,
+và tay trái tôi có 3 tờ 
+
+8
+00:00:29,689 --> 00:00:32,270
+mà tổng vẫn là 20 đô.
+
+9
+00:00:32,270 --> 00:00:35,860
+Nếu thuyết kinh tế được áp dụng,
+tôi sẽ chi số tiền ấy 
+
+10
+00:00:35,860 --> 00:00:38,399
+như cách tôi có nó.
+
+11
+00:00:38,399 --> 00:00:41,410
+Thế nhưng nghiên cứu của tôi chỉ ra rằng
+điều đó không đúng.
+
+12
+00:00:41,410 --> 00:00:44,710
+Thật ra thì nguyên lý về tính dễ thay thế này
+thường hay bị vi phạm.
+
+13
+00:00:44,710 --> 00:00:48,720
+Hôm nay, tôi muốn bỏ thời gian ra nói về
+một mảng nghiên cứu,
+
+14
+00:00:48,720 --> 00:00:52,270
+đó là tính toán cảm tính, địa hạt duy nhất 
+mà có lẽ tôi đã
+
+15
+00:00:52,270 --> 00:00:56,490
+thực hiện nghiên cứu nhiều nhất trong 20 năm qua.
+
+16
+00:00:56,490 --> 00:01:01,580
+Hãy để tôi bắt đầu bằng một ví dụ, giả thiết
+đơn giản dễ hình dung như sau.
+
+17
+00:01:01,580 --> 00:01:03,180
+Tưởng tượng rằng bạn yêu âm nhạc.
+
+18
+00:01:03,180 --> 00:01:04,980
+Bạn có vé đến xem thính phòng.
+
+19
+00:01:04,980 --> 00:01:06,830
+Bạn thậm chí đã trả 50 đô la.
+
+20
+00:01:06,830 --> 00:01:09,430
+Và giờ hãy tạo ra hai phiên bản của câu chuyện trên.
+
+21
+00:01:09,430 --> 00:01:11,990
+Phiên bản một, bạn tới buổi hoà nhạc.
+
+22
+00:01:11,990 --> 00:01:14,439
+Mua vé rồi và sau đó còn một ít thời gian.
+
+23
+00:01:14,439 --> 00:01:16,609
+Bạn ra ngoài và mua đồ ăn nhẹ.
+
+24
+00:01:16,609 --> 00:01:20,229
+Khi bạn trở về, bạn nhận ra rằng mình đã 
+đánh mất tấm vé.
+
+25
+00:01:20,229 --> 00:01:21,939
+Sau đó bạn quay trở lại phòng bán vé.
+
+26
+00:01:21,939 --> 00:01:26,719
+Người ta nói bạn cách duy nhất 
+bạn có thể tiếp tục
+
+27
+00:01:26,719 --> 00:01:30,130
+xem buổi hoà nhạc là mua một cái vé khác, 
+vì trên chiếc vé kia 
+
+28
+00:01:30,130 --> 00:01:31,710
+không hề ghi số ghế.
+
+29
+00:01:31,710 --> 00:01:34,219
+Liệu bạn có mua cái vé thứ hai không?
+
+30
+00:01:34,219 --> 00:01:37,189
+Còn đây là phiên bản khác của cùng câu chuyện trên.
+
+31
+00:01:37,189 --> 00:01:38,889
+Bạn đến buổi hoà nhạc.
+
+32
+00:01:38,889 --> 00:01:40,979
+Bạn dự định sẽ chi ra 50 đô.
+
+33
+00:01:40,979 --> 00:01:42,889
+Nhưng trước khi mua vé bạn phát hiện 
+
+34
+00:01:42,889 --> 00:01:45,499
+mình đã mất 50 đô tiền mặt.
+
+35
+00:01:45,499 --> 00:01:48,840
+Câu hỏi là, liệu bạn có mua vé buổi hoà nhạc
+ nữa hay không?
+
+36
+00:01:48,840 --> 00:01:52,049
+Giờ thì, nếu bạn là nhà kinh tế học, hai phiên bản trên thực chất
+
+37
+00:01:52,049 --> 00:01:54,399
+giống hệt nhau.
+
+38
+00:01:54,399 --> 00:01:57,670
+Trong cả hai phiên bản, bạn đều làm mất một miếng giấy, mất nó vì 
+
+39
+00:01:57,670 --> 00:02:01,249
+thiếu cẩn thận, và cũng cùng là buổi hoà nhạc đó, 
+
+40
+00:02:01,249 --> 00:02:03,130
+buổi biểu diễn đó mà bạn định tham dự.
+
+41
+00:02:03,130 --> 00:02:07,570
+Tuy nhiên,Richard Thaler cho chúng ta thấy 
+trong nghiên cứu ấn tượng của mình,
+
+42
+00:02:07,570 --> 00:02:11,660
+những người trong phiên bản một sẽ dễ dàng từ chối, không,
+tôi sẽ không mua cái vé nào nào nữa, 
+
+43
+00:02:11,660 --> 00:02:15,280
+hơn là những người trong phiên bản hai.
+
+44
+00:02:15,280 --> 00:02:18,730
+Nếu bạn mất tiền, hoá ra bạn sẽ 
+dễ chịu chi để mua vé hơn.
+
+45
+00:02:18,730 --> 00:02:22,810
+Còn nếu mất vé thì lại không muốn phải mua vé khác.
+
+46
+00:02:22,810 --> 00:02:24,870
+Tại sao lại như vậy?
+
+47
+00:02:24,870 --> 00:02:26,540
+Tính toán cảm tính sẽ lí giải câu chuyện đó.
+
+48
+00:02:26,540 --> 00:02:27,870
+Thế nào là tính toán cảm tính?
+
+49
+00:02:27,870 --> 00:02:32,240
+Nó là ý tưởng cho rằng con người có xu hướng 
+gán cho tiền bạc những cái nhãn nhất định.
+
+50
+00:02:32,240 --> 00:02:35,560
+Và giây phút bạn dán cho tiền một nhãn khác, bạn sẽ
+
+51
+00:02:35,560 --> 00:02:37,400
+tiêu nó khác đi.
+
+52
+00:02:37,400 --> 00:02:38,660
+Con người hành động như các kế toán viên.
+
+53
+00:02:38,660 --> 00:02:41,590
+Nghe có vẻ là một mặc định đáng sợ, nhưng
+thực sự chúng ta đang làm như vậy.
+
+54
+00:02:41,590 --> 00:02:46,110
+Ví dụ như, nếu bạn quyết định xem buổi hoà nhạc 
+giá vé 50 đô, bạn rất có thể
+
+55
+00:02:46,110 --> 00:02:49,480
+tự tạo ra một tài khoản trong đầu.
+
+56
+00:02:49,480 --> 00:02:50,920
+Gọi là buổi hoà nhạc đi.
+
+57
+00:02:50,920 --> 00:02:53,400
+Nó có ngân quỹ bao gồm 50 đô.
+
+58
+00:02:53,400 --> 00:02:56,330
+Khoảnh khắc bạn đã mua cái vé chính là 
+lúc khoản tiền ấy ra đi.
+
+59
+00:02:56,330 --> 00:02:57,330
+Sạch sẽ luôn.
+
+60
+00:02:57,330 --> 00:03:01,540
+Cho nên khi bạn làm mất vé, bạn không còn gì lại trong ngân quỹ ấy nữa.
+
+61
+00:03:01,540 --> 00:03:04,630
+Nói cách khác, nếu bạn làm mất tiền mặt, thì chẳng sao, vì số tiền ấy
+
+62
+00:03:04,630 --> 00:03:06,910
+đến từ tài khoản chi tiêu chung chung.
+
+63
+00:03:06,910 --> 00:03:08,730
+Kết luận ở đây rất đơn giản.
+
+64
+00:03:08,730 --> 00:03:11,910
+Con người nhìn vào tiền, và thường 
+sẽ phân loại nó vào
+
+65
+00:03:11,910 --> 00:03:17,080
+những nhóm khác nhau, và họ sẽ sử dụng 
+chúng khác nhau.
+
+66
+00:03:17,080 --> 00:03:19,270
+Mấy năm trước, tôi đã làm một số
+ nghiên cứu ở Canada--
+
+67
+00:03:19,270 --> 00:03:23,140
+trước đó nữa là ở Ấn Độ-- 
+về những cách thức hình thành các quỹ
+
+68
+00:03:23,140 --> 00:03:25,860
+sử dụng từ tiền của họ.
+
+69
+00:03:25,860 --> 00:03:28,900
+Tôi bắt gặp một câu chuyện thú vị từ một người bạn, người đã kể tôi
+
+70
+00:03:28,900 --> 00:03:33,900
+nghe về cách mà bà anh ta sử dụng ngân quỹ 
+cho những chi tiêu hàng ngày.
+
+71
+00:03:33,900 --> 00:03:38,650
+Cách thức đó gọi nôm na là Quỹ Lọ đựng mứt.
+
+72
+00:03:38,650 --> 00:03:42,970
+Viviana Zelizer, một nhà xã hội học ở Princeton, đã ghi nhận
+
+73
+00:03:42,970 --> 00:03:45,840
+một hiện tượng tương tự mà bà gọi là
+Quỹ Hộp thiếc.
+
+74
+00:03:45,840 --> 00:03:47,830
+Ý tưởng cũng đơn giản thôi.
+
+75
+00:03:47,830 --> 00:03:51,790
+Người chồng về nhà, suy nghĩ về những 
+khoản thu nhập phải chi ra 
+
+76
+00:03:51,790 --> 00:03:53,610
+trong tháng đó.
+
+77
+00:03:53,610 --> 00:03:56,610
+Họ chia chúng ra vào những quỹ khác nhau, 
+và đựng chúng
+
+78
+00:03:56,610 --> 00:03:59,350
+trong những hộp đựng mứt với nhãn tên trên đấy.
+
+79
+00:03:59,350 --> 00:04:02,600
+Ví dụ như, cái lọ này gọi là 
+"ăn ngoài".
+
+80
+00:04:02,600 --> 00:04:05,110
+Nó chứa 70 đô và một ít tiền lẻ trong đó.
+
+81
+00:04:05,110 --> 00:04:07,580
+Còn lọ này là "tiền tiêu của Dillip".
+
+82
+00:04:07,580 --> 00:04:08,580
+Chỉ có 5 đô thôi.
+
+83
+00:04:08,580 --> 00:04:10,780
+Và cứ như vậy.
+
+84
+00:04:10,780 --> 00:04:13,500
+Lần tới khi phải đối mặt với một khoản chi nào đó,
+việc cần làm là 
+
+85
+00:04:13,500 --> 00:04:15,180
+nhìn vào lọ tương ứng.
+
+86
+00:04:15,180 --> 00:04:18,630
+Nên khi bọn trẻ tới và bảo, con có thể
+mua kem không ạ?
+
+87
+00:04:18,630 --> 00:04:19,630
+Nhìn vào cái lọ.
+
+88
+00:04:19,630 --> 00:04:22,250
+Nếu còn tiền bên trong, thì nói OK thôi.
+
+89
+00:04:22,250 --> 00:04:25,060
+Còn không đủ tiền thì bạn từ chối.
+
+90
+00:04:25,060 --> 00:04:27,970
+Chuyện là thế này, nếu như bạn lấy khoản tiền có thể thay thế được--
+
+91
+00:04:27,970 --> 00:04:30,000
+bạn có thể tiêu vào cái này cái kia.
+
+92
+00:04:30,000 --> 00:04:34,970
+Nhưng rồi bạn dán nhãn cho chúng-- như tiền kem
+và tiền vui chơi giải trí.
+
+93
+00:04:34,970 --> 00:04:37,580
+Từ lúc đó, bạn sẽ có xu hướng sử dụng
+những quỹ trên
+
+94
+00:04:37,580 --> 00:04:39,460
+ khác nhau.
+
+95
+00:04:39,460 --> 00:04:41,260
+Vậy con người tính toán cảm tính như thế nào?
+
+96
+00:04:41,260 --> 00:04:43,240
+Làm thế nào có thể phân loại ra như thế?
+
+97
+00:04:43,240 --> 00:04:46,460
+Có một số cách khác nhau để thực hiện điều đó.
+
+98
+00:04:46,460 --> 00:04:50,690
+Bạn có thể tính toán cảm tính từ cách
+bạn có được đồng tiền đó.
+
+99
+00:04:50,690 --> 00:04:54,520
+Nếu tôi nhặt được tiền trên đường, tôi sẽ sử dụng
+chúng khác với khi 
+
+100
+00:04:54,520 --> 00:04:59,230
+tôi phải làm việc rất vất vả để có được chúng--
+tiền được cho không, tiền do lao động.
+
+101
+00:04:59,230 --> 00:05:01,740
+Tiền được cho không sẽ được dùng vào thứ linh tinh.
+
+102
+00:05:01,740 --> 00:05:05,810
+Còn tiền lương thì sẽ thường được dùng
+để thanh toán hoá đơn.
+
+103
+00:05:05,810 --> 00:05:08,340
+Cách khác để phân loại quỹ chính là 
+dựa vào khoảng thời gian.
+
+104
+00:05:08,340 --> 00:05:10,700
+Bạn có thể tạo quỹ tuần, quỹ tháng,
+hoặc
+
+105
+00:05:10,700 --> 00:05:12,660
+đôi khi quỹ theo ngày.
+
+106
+00:05:12,660 --> 00:05:16,451
+Cách khác nữa, chính là chia quỹ theo mục đích sử dụng, 
+phân loại chúng ra--
+
+107
+00:05:16,451 --> 00:05:18,870
+như chúng ta đã thấy ở trên.
+
+108
+00:05:18,870 --> 00:05:22,850
+Cuối cùng bạn thậm chí có thể tạo ra những tài khoản cảm tính
+cho một giao dịch cụ thể
+
+109
+00:05:22,850 --> 00:05:26,790
+như buổi hòa nhạc mà chúng ta vừa thấy trên.
+
+110
+00:05:26,790 --> 00:05:29,970
+Mỗi quy trình tính toán cảm tính có 2 thành phần.
+
+111
+00:05:29,970 --> 00:05:32,870
+Một là cái ta gọi là quy trình tính toán.
+
+112
+00:05:32,870 --> 00:05:36,020
+Quy trình này nhỉn vào lượng tiền 
+
+113
+00:05:36,020 --> 00:05:37,630
+thực sự trong tài khoản.
+
+114
+00:05:37,630 --> 00:05:43,230
+Hai là phạm vi hay độ rộng của tài khoản cảm tính, 
+
+115
+00:05:43,230 --> 00:05:44,920
+để phân loại thành các tài khoản.
+
+116
+00:05:44,920 --> 00:05:49,889
+Như khi bạn nhìn vào tài khoản cảm tính 
+cho buổi hòa nhạc,
+
+117
+00:05:49,889 --> 00:05:50,889
+nó là 1 tài khoản cảm tính hẹp.
+
+118
+00:05:50,889 --> 00:05:54,840
+Nó chỉ tồn tại cho cơ hội tiêu dùng đặc biệt.
+
+119
+00:05:54,840 --> 00:05:58,750
+Phần tính toán cho nó được ghi nhận là 
+-50, phần tôi 
+
+120
+00:05:58,750 --> 00:06:01,240
+phải trả để xem buổi hòa nhạc.
+
+
+121
+00:06:01,240 --> 00:06:06,480
+Bây giờ, thời điểm bạn chi trả hay trả trước,
+để tiêu dùng thứ gì đó trong
+
+122
+00:06:06,480 --> 00:06:09,460
+tương lai, nó hình thành 1 hiện tượng
+ tính toán cảm tính thú vị
+
+123
+00:06:09,460 --> 00:06:11,590
+rằng ta gọi là Hiệu ứng chi phí chìm.
+
+124
+00:06:11,590 --> 00:06:12,590
+Điều đó nghĩa là gì?
+
+125
+00:06:12,590 --> 00:06:13,620
+Nghĩa là sự tiếp tục.
+
+126
+00:06:13,620 --> 00:06:17,060
+Một lần nữa, trở lại ví dụ buổi hòa nhạc của ta.
+
+127
+00:06:17,060 --> 00:06:18,060
+Bạn chi 50 đô.
+
+128
+00:06:18,060 --> 00:06:19,990
+Bạn lên kế hoạch đến buổi hòa nhạc.
+
+129
+00:06:19,990 --> 00:06:23,910
+Nếu bạn sống ở Toronto, hãy nghĩ là
+
+130
+00:06:23,910 --> 00:06:25,791
+một cơn bão tuyết dữ dội kéo đến.
+
+131
+00:06:25,791 --> 00:06:28,310
+Rất khó khăn để lái xe.
+
+132
+00:06:28,310 --> 00:06:31,280
+Bạn của bạn nói rằng không đáng 
+để đến buổi hòa nhạc nữa.
+
+133
+00:06:31,280 --> 00:06:33,100
+Nhưng bạn vẫn đi.
+
+134
+00:06:33,100 --> 00:06:37,270
+Lý do bạn đi là vì 50 đô vì nếu không nó sẽ 
+làm thâm hụt
+
+135
+00:06:37,270 --> 00:06:38,720
+ túi tiền của bạn.
+
+136
+00:06:38,720 --> 00:06:42,350
+Ở Ấn Độ, khi tôi dần lớn lên, có một thời kì
+gọi là
+
+137
+00:06:42,350 --> 00:06:43,350
+paisa vasool.
+
+138
+00:06:43,350 --> 00:06:46,080
+Paisa vasool nghĩa là cảm thấy chắc chắn
+bạn tiêu dùng
+
+139
+00:06:46,080 --> 00:06:48,220
+đồng tiền của bạn hợp lý.
+
+140
+00:06:48,220 --> 00:06:52,300
+Hiệu ứng nó hóa ra khá 
+phi lí về mặt hành vi kinh tế
+
+141
+00:06:52,300 --> 00:06:56,280
+vì lý thuyết kinh tế học nói rằng
+bạn nên đưa ra các quyết định
+
+142
+00:06:56,280 --> 00:07:00,139
+dựa trên điều diễn ra trong tương lai,
+mà bỏ qua chi phí chìm.
+
+143
+00:07:00,139 --> 00:07:04,770
+Nhưng Dick Thaler trong các 
+nghiên cứu sơ khai, đã ghi lại 
+
+144
+00:07:04,770 --> 00:07:08,669
+lượng lớn ví dụ về những người đưa ra lựa chọn phi lí
+đơn giản vì
+
+145
+00:07:08,669 --> 00:07:12,530
+họ đã trả nhiều tiền hơn để tiêu dùng thứ 
+trong tương lai.
+
+146
+00:07:12,530 --> 00:07:16,790
+Nếu bạn trả 100 đô đến xem bóng rổ
+bạn sẽ đi xem bất kể
+
+147
+00:07:16,790 --> 00:07:18,680
+thời tiết trở nên xấu thế nào.
+
+148
+00:07:18,680 --> 00:07:21,880
+Nếu bạn có chỗ vì nhận được vé miễn phí
+bạn dường như sẽ 
+
+149
+00:07:21,880 --> 00:07:23,560
+không đi trong khi xảy ra bão tuyết.
+
+150
+00:07:23,560 --> 00:07:29,490
+Có rất nhiều người thực sự chơi tennis 
+khi bị chấn thương khủyu tay
+
+151
+00:07:29,490 --> 00:07:33,210
+đơn giản vì họ đã trả tiền cho việc 
+học các khóa học.
+
+152
+00:07:33,210 --> 00:07:37,020
+Hiệu ứng chi phí chìm trở thành 1 
+động lực lớn trong hành vi người tiêu dùng.
+
+153
+00:07:37,020 --> 00:07:41,110
+Nếu mọi người trả trước cho thứ gì đó,
+thì nghiễm nhiên họ sẽ muốn
+
+154
+00:07:41,110 --> 00:07:42,850
+tiêu dủng nó.
+
+155
+00:07:42,850 --> 00:07:45,680
+Và nó được gọi là Tính toán Đỏ và Đen.
+
+156
+00:07:45,680 --> 00:07:46,680
+Ý tưởng thì đơn giản thôi.
+
+157
+00:07:46,680 --> 00:07:49,960
+Khoảnh khắc bạn trả trước tiền, bạn có một 
+sự thâm hụt trong tài khoản.
+
+158
+00:07:49,960 --> 00:07:53,550
+Nếu bạn không tiêu dùng, sau đó bạn sẽ phải
+đóng tài khoản bằng dấu đỏ.
+
+159
+00:07:53,550 --> 00:07:55,500
+Đó là khoản lỗ.
+
+160
+00:07:55,500 --> 00:07:59,420
+Mọi người ko thích bị lỗ, vì thế họ
+bị thúc đẩy để tiêu dùng
+
+161
+00:07:59,420 --> 00:08:00,610
+thứ sản phẩm đó.
+
+162
+00:08:00,610 --> 00:08:04,680
+Vậy, hiệu ứng chi phí chìm thành ra là 
+một động lực lớn thúc đẩy con người
+
+163
+00:08:04,680 --> 00:08:07,029
+tiêu dùng sản phẩm và dịch vụ.
+

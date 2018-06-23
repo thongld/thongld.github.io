@@ -1,0 +1,381 @@
+0
+00:00:00,000 --> 00:00:00,001
+phungdo_vgu KienHoc.vn http://youtu.be/omupgLSEF4M
+
+1
+00:00:00,000 --> 00:00:00,060
+
+2
+00:00:00,060 --> 00:00:01,810
+GS. Yerraballi: 
+Giờ ta sẽ xem xét
+
+3
+00:00:01,810 --> 00:00:08,160
+dòng code dành cho việc
+phát hiện ra Odd State.
+
+4
+00:00:08,160 --> 00:00:16,710
+Ta đã thấy máy trạng thái hữu hạn
+được mô tả bằng 2 state, một Even State
+
+5
+00:00:16,710 --> 00:00:24,300
+và một Odd State, và chỗ này 
+là state khởi đầu.
+
+6
+00:00:24,300 --> 00:00:30,590
+Những gì ta thấy là khi input bằng 0
+thì ở yên Even State,
+
+7
+00:00:30,590 --> 00:00:31,830
+nếu bạn có một Even State.
+
+8
+00:00:31,830 --> 00:00:35,350
+Khi input bằng 1, thì ta
+đi đến Odd State.
+
+9
+00:00:35,350 --> 00:00:38,590
+Khi ở Odd State, thì khi
+nhận một input bằng 0,
+
+10
+00:00:38,590 --> 00:00:40,530
+vẫn ở yên đó.
+
+11
+00:00:40,530 --> 00:00:45,880
+Nếu nhận một input bằng 1, thì 
+đi từ Odd State qua Even State.
+
+12
+00:00:45,880 --> 00:00:49,740
+Ta đã thấy Output được xuất ra
+ở đây là một giá trị 0.
+
+13
+00:00:49,740 --> 00:00:54,010
+Output được xuất ra ở 
+chỗ này là bằng 1.
+
+14
+00:00:54,010 --> 00:00:56,580
+
+15
+00:00:56,580 --> 00:01:03,260
+Ta đã thấy có one-to-one mapping 
+trong khung hình này 
+
+16
+00:01:03,260 --> 00:01:08,890
+và mảng FSM mà đã 
+được declared, 
+
+17
+00:01:08,890 --> 00:01:16,050
+thứ ta thấy chính là các 
+giá trị output ngay tại đây.
+
+18
+00:01:16,050 --> 00:01:20,580
+Ta nói khi một input bằng 0, 
+thì input=0
+
+19
+00:01:20,580 --> 00:01:25,390
+đó làm cho Even State đi từ
+chính nó đến nó (Even->Even).
+
+20
+00:01:25,390 --> 00:01:30,540
+Một input = 1 sẽ làm
+Even State chuyển qua Odd State.
+
+21
+00:01:30,540 --> 00:01:35,140
+Đây là ý nghĩa của dòng code này.
+
+22
+00:01:35,140 --> 00:01:38,760
+Tương tự, khi ta đang trong 
+một Odd State, dòng thứ 2 này.
+
+23
+00:01:38,760 --> 00:01:42,190
+Nhận một input = 0,
+ở yên Odd.
+
+24
+00:01:42,190 --> 00:01:47,700
+Nếu nhận một input = 1,
+di chuyển qua Even State.
+
+25
+00:01:47,700 --> 00:01:53,590
+Nếu muốn xây dựng
+hệ thống máy này,
+
+26
+00:01:53,590 --> 00:02:00,360
+mà đó là một động cơ
+chạy để điều hướng FSM
+
+27
+00:02:00,360 --> 00:02:05,720
+máy trạng thái hữu hạn này, nghĩa rằng
+có một input, chuyển đổi trạng thái, xuất ra output,
+
+28
+00:02:05,720 --> 00:02:10,310
+đọc input mới, chuyển đổi trạng thái,
+xuất ra outputs.
+
+29
+00:02:10,310 --> 00:02:15,490
+Ta cũng muốn rằng mỗi trạng thái
+đều có một thời gian delay.
+
+30
+00:02:15,490 --> 00:02:20,130
+Thời gian delay là 
+một giây cho từng state.
+
+31
+00:02:20,130 --> 00:02:27,180
+Một giây  được tính bằng 100 nhân với 10ms 
+trong chương trình này.
+
+32
+00:02:27,180 --> 00:02:31,940
+Vì ta biết rằng thời gian delay 
+bằng 10 mili giây trong hàm delay.
+
+33
+00:02:31,940 --> 00:02:34,620
+Bằng việc đưa số 100 vào,
+tôi nói rằng tôi đang
+
+34
+00:02:34,620 --> 00:02:41,740
+đợi 100 nhân 10 ms,
+bằng 1 giây.
+
+35
+00:02:41,740 --> 00:02:42,870
+Cùng làm ra một cái engine nào.
+
+36
+00:02:42,870 --> 00:02:50,220
+
+37
+00:02:50,220 --> 00:02:54,920
+Chương trình chính có bước đầu 
+tiên là khởi tạo - initialization.
+
+38
+00:02:54,920 --> 00:02:59,920
+Ta khởi tạo PortF 
+để có input.
+
+39
+00:02:59,920 --> 00:03:11,440
+Đặt PortF input là từ PF4,
+output đến PF2.
+
+40
+00:03:11,440 --> 00:03:14,900
+Hàm khởi tạo sẽ lo
+việc này.
+
+41
+00:03:14,900 --> 00:03:16,750
+Ta cũng dùng SysTick để có delay.
+
+42
+00:03:16,750 --> 00:03:20,860
+Gọi hàm SysTick 
+đợi 10 mili giây
+
+43
+00:03:20,860 --> 00:03:27,004
+Cần follow theo hàm khởi tạo,
+đây là hàm khởi tạo.
+
+44
+00:03:27,004 --> 00:03:31,160
+Bất kì máy trạng thái hữu
+hạn đều có 4 bước.
+
+45
+00:03:31,160 --> 00:03:35,010
+Bước đầu tiên là output.
+
+46
+00:03:35,010 --> 00:03:36,750
+Output dựa trên giá trị hiện tại - state hiện tại.
+
+47
+00:03:36,750 --> 00:03:41,510
+Điều ta được biết là
+các output thì có một trong hai
+
+48
+00:03:41,510 --> 00:03:45,040
+giá trị, là 0 và 1.
+
+49
+00:03:45,040 --> 00:03:50,450
+Nhưng khi ta nhìn vào đấy, nó đang
+thành-- nếu ta xem đó là một số 8-bit
+
+50
+00:03:50,450 --> 00:03:52,260
+thì sẽ có số 0 ở chỗ này.
+
+51
+00:03:52,260 --> 00:03:56,530
+Nhưng khi viết tới PortF,
+ta muốn viết nó tới PF2.
+
+52
+00:03:56,530 --> 00:04:02,560
+Thì ta dịch số 0 qua trái 
+2 vị trí - 2 ô bit..
+
+53
+00:04:02,560 --> 00:04:08,840
+Số 0 từ chỗ này di chuyển
+qua chỗ này.-- PF2 là vị trí của bit 2.
+
+54
+00:04:08,840 --> 00:04:15,460
+Tương tự đối với 1,
+di chuyển từ chỗ này qua
+
+55
+00:04:15,460 --> 00:04:17,350
+qua chỗ này.
+
+56
+00:04:17,350 --> 00:04:22,570
+Đó là mục đích của phép 
+dịch 2 bit.
+-- PF2 là nơi ta xuất output ra.--
+
+57
+00:04:22,570 --> 00:04:26,990
+Ta đợi một khoảng thời gian
+để di chuyển một state.
+
+58
+00:04:26,990 --> 00:04:29,380
+Đây là một thời gian dừng cho state.
+
+59
+00:04:29,380 --> 00:04:34,350
+Đọc input, đây là 
+bước thứ 2 của ta.
+
+60
+00:04:34,350 --> 00:04:38,260
+Bước thứ 3 là đọc input mới.
+
+61
+00:04:38,260 --> 00:04:42,025
+Ta biết rằng công tắc 
+là một logic tiêu cực.
+
+62
+00:04:42,025 --> 00:04:46,630
+
+63
+00:04:46,630 --> 00:04:49,870
+Đang nhấn nút thì là 1.
+
+64
+00:04:49,870 --> 00:04:54,690
+Xem công tắc là input.
+
+65
+00:04:54,690 --> 00:04:58,140
+Nó sẽ thành gì 
+nếu là 0 hay 1.
+
+66
+00:04:58,140 --> 00:05:01,390
+0 tương ứng với trạng thái KHÔNG
+ĐANG NHẤN, 1 tương ứng
+
+67
+00:05:01,390 --> 00:05:04,590
+đã nhấn, nghĩa là ta 
+phủ nhận nó.
+
+68
+00:05:04,590 --> 00:05:10,040
+Vì thế nên ta có giá trị 0 
+ban đầu.
+
+69
+00:05:10,040 --> 00:05:16,950
+Một lần nữa, ta đọc input 
+tương ứng vị trí thứ 4 trong mảng.
+
+70
+00:05:16,950 --> 00:05:23,620
+Trong thanh ghi thì
+nó ở bit 4.
+
+71
+00:05:23,620 --> 00:05:26,940
+Ta đang shift qua phải 4 vị trí. 
+--Nghĩa là PF4 là nơi đưa input vào microcontroller--
+
+72
+00:05:26,940 --> 00:05:28,330
+Ta đọc các input này.
+
+73
+00:05:28,330 --> 00:05:30,150
+Xem nó như là một index - chỉ mục.
+
+74
+00:05:30,150 --> 00:05:51,120
+Input là một index-chỉ mục
+trong next state array-mảng trạng thái tiếp theo.
+
+75
+00:05:51,120 --> 00:05:53,820
+Đó là next state array-mảng trạng 
+thái tiếp theo, ta index-chỉ mục nó.
+
+76
+00:05:53,820 --> 00:05:59,580
+Có trạng thái mới và ta viết nó
+vào dòng code của new state,
+
+77
+00:05:59,580 --> 00:06:02,730
+chính là dòng cState này, nó vừa được cập nhật.
+
+78
+00:06:02,730 --> 00:06:04,740
+Ta lặp đi lặp lại quy trình này.
+
+79
+00:06:04,740 --> 00:06:08,960
+Động cơ của máy trạng
+thái hữu hạn đơn giản là đang
+
+80
+00:06:08,960 --> 00:06:15,480
+bắt chước ngang với 
+những gì biểu đồ FSM thể hiện.
+
+81
+00:06:15,480 --> 00:06:16,905

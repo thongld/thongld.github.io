@@ -1,0 +1,408 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/kYxKjMAFDBE
+
+1
+00:00:00,000 --> 00:00:01,040
+
+2
+00:00:01,040 --> 00:00:06,090
+DR. RAMESH YERRABALLI: So now that we
+understand numbers systems, one of the
+
+3
+00:00:06,090 --> 00:00:13,850
+questions that often comes is how
+do computers represent numbers?
+
+4
+00:00:13,850 --> 00:00:18,090
+That is, do numbers have to always
+be of a certain length?
+
+5
+00:00:18,090 --> 00:00:20,720
+And if they are of a certain length,
+what do they represent?
+
+6
+00:00:20,720 --> 00:00:27,820
+The most common number we represent
+on computers are integers.
+
+7
+00:00:27,820 --> 00:00:36,380
+Integers are the most common numbers,
+and integers, by definition, are on
+
+8
+00:00:36,380 --> 00:00:38,660
+the number line you have
+positive integers.
+
+9
+00:00:38,660 --> 00:00:49,420
+So some maximum positive integer, zero
+to maximum, and some negative on the
+
+10
+00:00:49,420 --> 00:00:50,600
+negative number line.
+
+11
+00:00:50,600 --> 00:00:55,810
+So we have numbers represented
+on the number line.
+
+12
+00:00:55,810 --> 00:01:04,280
+So for the most part, we are happy to
+represent numbers as being unsigned.
+
+13
+00:01:04,280 --> 00:01:08,930
+And that's what we did in
+the last description.
+
+14
+00:01:08,930 --> 00:01:14,110
+When we say a number this unsigned we
+primarily focusing on numbers that
+
+15
+00:01:14,110 --> 00:01:18,400
+range from zero to some
+positive maximum.
+
+16
+00:01:18,400 --> 00:01:23,720
+So unsigned numbers don't have
+a positive or negative sign.
+
+17
+00:01:23,720 --> 00:01:24,900
+So unsigned numbers.
+
+18
+00:01:24,900 --> 00:01:27,380
+So let's take an example
+of an unsigned number.
+
+19
+00:01:27,380 --> 00:01:33,540
+Here is an unsigned number, 10001101.
+
+20
+00:01:33,540 --> 00:01:37,630
+And if I told you that this is an
+unsigned number which is in binary, we
+
+21
+00:01:37,630 --> 00:01:38,870
+know what it represents.
+
+22
+00:01:38,870 --> 00:01:45,320
+We know that it represents, again just
+to make the point I say that this as a
+
+23
+00:01:45,320 --> 00:01:52,560
+position of 0, 1, 2,
+3, 4, 5, 6, and 7.
+
+24
+00:01:52,560 --> 00:01:59,190
+And so one of the convenient things to
+do is to look at the numbers and just
+
+25
+00:01:59,190 --> 00:02:03,030
+identify the coefficients
+that are non-zero.
+
+26
+00:02:03,030 --> 00:02:05,100
+In this case, the one coefficients.
+
+27
+00:02:05,100 --> 00:02:15,820
+So the coefficients occur in positions
+0, 1, 2, 3, 4, 5, 6, and 7.
+
+28
+00:02:15,820 --> 00:02:25,450
+And the place values, accordingly, are
+1, that's 2, this is 4, because that's
+
+29
+00:02:25,450 --> 00:02:36,490
+2 to the 2, this is 8, and this
+is 16, 32, 64, and 128.
+
+30
+00:02:36,490 --> 00:02:49,220
+So I'm going to write this number as 1
+plus 4 plus 8 plus 128, which is the
+
+31
+00:02:49,220 --> 00:02:54,940
+number 141 in base 10.
+
+32
+00:02:54,940 --> 00:02:58,350
+So what if we want to represent
+numbers that can have a sign?
+
+33
+00:02:58,350 --> 00:03:01,870
+That can be a positive number
+or a negative number?
+
+34
+00:03:01,870 --> 00:03:05,840
+So let's take a look at what such a
+representation would look like.
+
+35
+00:03:05,840 --> 00:03:16,600
+So the number, 01000110, let's say this
+were a signed number in base 2.
+
+36
+00:03:16,600 --> 00:03:21,470
+What we do when we're representing
+signed numbers is we assign a special
+
+37
+00:03:21,470 --> 00:03:31,320
+meaning to the most significant
+bit we call this the sign bit.
+
+38
+00:03:31,320 --> 00:03:37,710
+And the significance is that a sign
+bit is either a zero or a one to
+
+39
+00:03:37,710 --> 00:03:46,325
+represent positive numbers
+or negative numbers.
+
+40
+00:03:46,325 --> 00:03:51,030
+
+41
+00:03:51,030 --> 00:03:55,000
+So here's a number because it
+has a zero here it has to
+
+42
+00:03:55,000 --> 00:03:57,390
+be a positive number.
+
+43
+00:03:57,390 --> 00:04:00,780
+So let's understand what
+this number represents.
+
+44
+00:04:00,780 --> 00:04:04,400
+So this number then, has the bit.
+
+45
+00:04:04,400 --> 00:04:07,430
+This bit represents a
+place value of 2.
+
+46
+00:04:07,430 --> 00:04:11,120
+This represents a place value of 4.
+
+47
+00:04:11,120 --> 00:04:18,089
+And then we have 6, 8, 16, 32, and 64.
+
+48
+00:04:18,089 --> 00:04:24,690
+So this number then, represents
+64 plus 4 plus 2.
+
+49
+00:04:24,690 --> 00:04:28,040
+
+50
+00:04:28,040 --> 00:04:31,980
+Which is 70 in base 10.
+
+51
+00:04:31,980 --> 00:04:35,340
+Now, this is a number that
+is a positive number.
+
+52
+00:04:35,340 --> 00:04:38,670
+So what if we have a signed number
+that is a negative number?
+
+53
+00:04:38,670 --> 00:04:41,210
+A signed number that is negative,
+let's take a simple
+
+54
+00:04:41,210 --> 00:04:42,660
+example of such a number.
+
+55
+00:04:42,660 --> 00:04:47,020
+
+56
+00:04:47,020 --> 00:04:49,640
+Here is a signed number
+that is negative.
+
+57
+00:04:49,640 --> 00:04:56,410
+So 10001101.
+
+58
+00:04:56,410 --> 00:05:03,050
+And again, we notice that because this
+bit is a 1, this tells us that this
+
+59
+00:05:03,050 --> 00:05:06,680
+number has to be a negative number.
+
+60
+00:05:06,680 --> 00:05:08,340
+So what does it represent?
+
+61
+00:05:08,340 --> 00:05:17,270
+Well, our place values are 1, that's a
+2, that's 4, that's an 8, and this
+
+62
+00:05:17,270 --> 00:05:24,330
+still has a place value which is 128,
+but now we notice that this number
+
+63
+00:05:24,330 --> 00:05:36,410
+will actually represent 1 plus
+4 plus 8 plus a -128.
+
+64
+00:05:36,410 --> 00:05:38,800
+Because that's a negative number.
+
+65
+00:05:38,800 --> 00:05:45,265
+So this number represents
+a -115 in base ten.
+
+66
+00:05:45,265 --> 00:05:48,060
+
+67
+00:05:48,060 --> 00:05:54,840
+So in summary then, let's see if we
+can understand something about the
+
+68
+00:05:54,840 --> 00:06:01,550
+ranges that these two number
+representations can capture.
+
+69
+00:06:01,550 --> 00:06:08,460
+So let's look at how signed and unsigned
+numbers go from, for example,
+
+70
+00:06:08,460 --> 00:06:14,820
+if I have eight bits that I have eight
+bits to represent, then I can go from
+
+71
+00:06:14,820 --> 00:06:25,290
+zero, so from here, all
+the way up to 255.
+
+72
+00:06:25,290 --> 00:06:31,090
+Now if I have a signed numbers, again
+in eight bits, because I have to
+
+73
+00:06:31,090 --> 00:06:35,380
+represent both positive and negative
+numbers, I will only be able to
+
+74
+00:06:35,380 --> 00:06:47,460
+represent 127 on the positive side,
+and I will represent -128 on the
+
+75
+00:06:47,460 --> 00:06:48,240
+negative side.
+
+76
+00:06:48,240 --> 00:06:54,490
+So the range is from -128 to +127.
+
+77
+00:06:54,490 --> 00:06:59,040
+Here is a neat little trick that we
+use sometimes when we want to show
+
+78
+00:06:59,040 --> 00:07:04,740
+numbers and show them in, not in their
+full glory in binary, but to
+
+79
+00:07:04,740 --> 00:07:08,560
+show them as in hex.
+
+80
+00:07:08,560 --> 00:07:19,440
+So we could write this number again as
+a 8 followed by a D, because that's a
+
+81
+00:07:19,440 --> 00:07:27,710
+1101, which is 12 plus 1, which is 13,
+13 stands for D. So I could represent
+
+82
+00:07:27,710 --> 00:07:31,270
+this number as 0x8D.
+
+83
+00:07:31,270 --> 00:07:35,430
+And that's simply a convenient way so
+that when we look at numbers, it's
+
+84
+00:07:35,430 --> 00:07:38,460
+sometimes simpler to represent
+them as binary.
+
+85
+00:07:38,460 --> 00:07:43,020
+Represent them as hex, or represent
+them as decimal.
+
+86
+00:07:43,020 --> 00:07:50,820
+
+87
+00:07:50,820 --> 00:07:52,070
+OK.
+
+88
+00:07:52,070 --> 00:07:52,501

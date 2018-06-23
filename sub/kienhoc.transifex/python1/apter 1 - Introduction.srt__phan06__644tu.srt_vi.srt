@@ -1,0 +1,406 @@
+471
+00:20:31,940 --> 00:20:36,250
+wermarter 22/05/16
+Tôi đã nói về tất cả các phần này
+
+472
+00:20:36,250 --> 00:20:40,410
+Câu hỏi đặt ra là:
+Ta nằm ở đâu trong đây?
+
+473
+00:20:40,410 --> 00:20:41,670
+Những chương trình "sống" ở đâu?
+
+474
+00:20:41,670 --> 00:20:43,060
+Những chương trình ta viết nằm đâu?
+
+475
+00:20:43,060 --> 00:20:47,300
+Câu trả lời là bộ nhớ (RAM)
+
+476
+00:20:47,300 --> 00:20:51,490
+Điều ta làm là đưa chương trình
+vào bộ nhớ RAM 
+
+477
+00:20:51,490 --> 00:20:55,370
+và sau đó các chương trình sẽ được
+CPU kéo vào để xử lí
+
+478
+00:20:55,370 --> 00:20:58,600
+Tất cả những gì ta cần làm là 
+viết chương trình và đưa nó vào RAM
+
+479
+00:20:58,600 --> 00:21:00,242
+Khi ta chạy chương trình,
+
+480
+00:21:00,242 --> 00:21:01,700
+máy tính sẽ nạp nó vào bộ nhớ
+
+481
+00:21:01,700 --> 00:21:04,800
+để chúng có thể được nạp vào CPU 
+một cách nhanh chóng
+
+482
+00:21:04,800 --> 00:21:06,970
+Nhưng máy tính không
+trực tiếp chạy chương trình Python
+
+483
+00:21:06,970 --> 00:21:09,700
+như là "if x < 3: print" mà ta viết
+
+484
+00:21:09,700 --> 00:21:11,500
+Dù đó là những gì ta muốn
+
+485
+00:21:11,500 --> 00:21:14,130
+Bởi vì, máy tính chỉ thật sự thực thi thứ này
+
+486
+00:21:14,130 --> 00:21:17,620
+gọi là ngôn ngữ máy -- Một dãy số gồm 0 và 1
+
+487
+00:21:17,620 --> 00:21:19,590
+được dịch trực tiếp 
+thành những tín hiệu
+
+488
+00:21:19,590 --> 00:21:21,010
+trên những thanh này
+
+489
+00:21:21,010 --> 00:21:24,020
+tương ứng với trạng thái
+điện áp lên hay xuống.
+
+490
+00:21:24,020 --> 00:21:25,930
+Đó chính là ngôn ngữ máy tính.
+
+491
+00:21:25,930 --> 00:21:29,920
+Mã nguồn, như Python,
+
+492
+00:21:29,920 --> 00:21:31,300
+được viết theo cách tiện dụng nhất
+
+493
+00:21:31,300 --> 00:21:33,380
+hoặc ít nhất là tiện hơn
+
+494
+00:21:33,380 --> 00:21:36,780
+Ngôn ngữ máy tính là thứ 
+tiện nhất cho phần cứng.
+
+495
+00:21:36,780 --> 00:21:39,380
+Do đó, ta cần dịch mã nguồn
+
+496
+00:21:39,380 --> 00:21:40,270
+thành ngôn ngữ máy tính.
+
+497
+00:21:40,270 --> 00:21:42,820
+Đó chính là điều chương trình Python
+làm cho ta
+
+498
+00:21:42,820 --> 00:21:45,420
+Ta viết mã nguồn bằng Python,
+và chương trình Python sẽ dịch nó
+
+499
+00:21:45,420 --> 00:21:47,090
+thành ngôn ngữ máy tính.
+
+500
+00:21:47,090 --> 00:21:49,350
+Ở đây là một số video
+
+501
+00:21:49,350 --> 00:21:52,680
+về cách thức hoạt động của phần cứng.
+
+502
+00:21:52,680 --> 00:21:55,549
+Bắt đầu với CPU.
+
+503
+00:21:55,549 --> 00:21:57,090
+Video đầu tiên sẽ 
+
+504
+00:21:57,090 --> 00:21:59,660
+biểu diễn cho bạn 
+cường độ dòng điện
+
+505
+00:21:59,660 --> 00:22:01,990
+làm nóng máy lên
+
+506
+00:22:01,990 --> 00:22:05,000
+là do hoạt động của CPU này.
+
+507
+00:22:05,000 --> 00:22:07,765
+Video sẽ cho bạn biết
+CPU có thể nóng đến mức nào.
+
+508
+00:22:07,765 --> 00:22:15,140
+
+509
+00:22:15,140 --> 00:22:17,189
+OK, chào mừng trở lại.
+
+510
+00:22:17,189 --> 00:22:18,980
+Kế tiếp là một đoạn video thể hiện
+
+511
+00:22:18,980 --> 00:22:21,260
+-- Tôi đã cho bạn xem 
+1 cái ổ đĩa cứng không hoạt động
+
+512
+00:22:21,260 --> 00:22:22,760
+nhưng tôi sẽ thật sự cho bạn xem
+
+513
+00:22:22,760 --> 00:22:26,160
+video cách thức hoạt động 
+của một ổ đĩa cứng
+
+514
+00:22:26,160 --> 00:22:28,720
+mà ai đó đã gỡ lớp vỏ ngoài
+rồi cho điện vào
+
+515
+00:22:28,720 --> 00:22:29,350
+để nó hoạt động
+
+516
+00:22:29,350 --> 00:22:30,808
+Tuy nhiên, bạn không nên
+thử nghiệm việc này
+
+517
+00:22:30,808 --> 00:22:32,310
+với chính ổ cứng của mình.
+
+518
+00:22:32,310 --> 00:22:35,780
+Tôi đọc được một vài trường hợp
+khi ổ cứng như vậy
+
+519
+00:22:35,780 --> 00:22:38,400
+nó sẽ hoạt động trong vài phút
+
+520
+00:22:38,400 --> 00:22:41,720
+và sẽ tự phá huỷ chính nó.
+
+521
+00:22:41,720 --> 00:22:42,940
+Bạn hãy dành một chút thời gian để xem thử hiện tượng này.
+-- Có link đến 1 video khác trên YouTube --
+
+522
+00:22:42,940 --> 00:22:53,300
+
+523
+00:22:53,300 --> 00:23:00,600
+Bây giờ, ta sẽ tìm hiểu về Python.
+
+524
+00:23:00,600 --> 00:23:02,820
+Python là một ngôn ngữ lập trình.
+
+525
+00:23:02,820 --> 00:23:06,870
+Python là một cách để con người 
+giao tiếp với máy tính.
+
+526
+00:23:06,870 --> 00:23:09,400
+Python không được 
+phát minh ra bởi máy tính.
+
+527
+00:23:09,400 --> 00:23:12,980
+Con người sáng tạo 
+ra Python với vai trò
+
+528
+00:23:12,980 --> 00:23:14,960
+đóng gói những câu lệnh của ta.
+
+529
+00:23:14,960 --> 00:23:17,560
+Có rất nhiều ngôn ngữ lập trình khác nhau, 
+như Python,
+
+530
+00:23:17,560 --> 00:23:21,194
+Javascript, C++, v.v..
+
+531
+00:23:21,194 --> 00:23:22,610
+Python chỉ là một trong số chúng
+
+532
+00:23:22,610 --> 00:23:26,140
+mà ta được học trong lớp học này
+
+533
+00:23:26,140 --> 00:23:28,640
+Ta sẽ bắt đầu với một chút liên hệ đến Harry Potter
+
+534
+00:23:28,640 --> 00:23:31,410
+"Xà ngữ" là ngôn ngữ của rắn
+
+535
+00:23:31,410 --> 00:23:33,720
+và những người giao tiếp với chúng
+
+536
+00:23:33,720 --> 00:23:35,810
+Người nói được "Xà ngữ"
+
+537
+00:23:35,810 --> 00:23:37,220
+được gọi là "Xà khẩu".
+
+538
+00:23:37,220 --> 00:23:40,470
+Đây là một khả năng rất hiếm,
+và thậm chí thông qua di truyền.
+
+539
+00:23:40,470 --> 00:23:42,540
+Hầu hết "Xà khẩu" đều 
+có nguồn gốc từ
+
+540
+00:23:42,540 --> 00:23:44,690
+Salazar Slytherin.
+
+541
+00:23:44,690 --> 00:23:47,100
+Đó là liên hệ đến Harry Potter
+
+542
+00:23:47,100 --> 00:23:50,640
+Python là ngôn ngữ sử dụng
+bởi trình biên dịch Python
+
+543
+00:23:50,640 --> 00:23:52,750
+và những người có thể sử dụng nó để giao tiếp
+
+544
+00:23:52,750 --> 00:23:55,130
+Ta sẽ giao tiếp với máy tính
+
+545
+00:23:55,130 --> 00:23:56,320
+sớm thôi
+
+546
+00:23:56,320 --> 00:23:58,040
+Người có thể sử dụng được Python
+
+547
+00:23:58,040 --> 00:24:00,080
+được gọi là Pythonista.
+
+548
+00:24:00,080 --> 00:24:03,520
+Đây là một kĩ năng hiếm hoi
+và có thể di truyền
+
+549
+00:24:03,520 --> 00:24:05,210
+hoặc không được di truyền ;-)
+
+550
+00:24:05,210 --> 00:24:08,630
+Hầu hết các Pythonista đều sử dụng 
+phần mềm ban đầu được phát triển bởi
+
+551
+00:24:08,630 --> 00:24:10,720
+Guido van Rossum
+
+552
+00:24:10,720 --> 00:24:13,250
+Guido van Rossum chính là anh chàng này
+
+553
+00:24:13,250 --> 00:24:15,354
+Guido, khoẻ không?
+
+554
+00:24:15,354 --> 00:24:16,520
+Hãy vẽ một bộ ria cho anh ấy
+
+555
+00:24:16,520 --> 00:24:17,950
+Yo, Guido.
+
+556
+00:24:17,950 --> 00:24:18,460
+À, xin lỗi
+
+557
+00:24:18,460 --> 00:24:19,810
+Tôi nên tôn trọng anh ta
+
+558
+00:24:19,810 --> 00:24:21,320
+Guido chính là người sáng tạo ra Python
+
+559
+00:24:21,320 --> 00:24:23,660
+Đã hơn 20 năm
+kể từ khi Python ra đời
+
+560
+00:24:23,660 --> 00:24:27,000
+Guido tạo ra nó như
+một ngôn ngữ dễ hiểu, dễ học
+
+561
+00:24:27,000 --> 00:24:28,500
+nhưng lại vô cùng mạnh mẽ
+
+562
+00:24:28,500 --> 00:24:30,350
+Đó là lý do tại sao Python
+là ngôn ngữ thích hợp
+
+563
+00:24:30,350 --> 00:24:32,780
+để bạn bắt đầu học
+
+564
+00:24:32,780 --> 00:24:34,530
+Đây là một ngôn ngữ mạnh nhưng đồng thời
+

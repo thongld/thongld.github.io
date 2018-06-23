@@ -1,0 +1,145 @@
+Answers Week 4 
+
+4.1 Introduction This section contained no questions. 
+
+4.2 Goal Seek 
+
+Average Number of Waffles 
+
+We want to sell 500 waffles per month on average. Determine how many waffles we should sell in October to reach that goal using Goal Seek. 
+
+516 
+
+Explanation: First make a PivotTable listing the months January to September and the Count of Sales Price filtered on product type Waffle. Then add a cell for October Waffle sales (B15) and a cell computing the average sales per month (B16). 
+
+B16 =AVERAGE(B4:B12,B15) 
+
+Now run the Solver with: set cell $B$16, to value 500, by changing cell $B$15. 
+
+ 
+
+Note: The solution Excel file is available on this week’s Answers section on edX.  
+
+4.3 Profit Felienne hard copied the ingredient costs, but there is an extra worksheet for that: Item Prices. 
+
+Using VLOOKUP to get the new Item Costs, compute the following and round all final answers to two decimal places!* 
+
+*Beware! We mean round the final answers, manually. Do not use ROUND() in the spreadsheet or your answers may differ, as the answers to the first two questions are inputs for the outcome of the third question. 
+
+How much does one unit (1 gr) of sugar cost? 
+
+0.01 
+
+Explanation: 
+
+=VLOOKUP(D2,'Item Prices'!$A:$C,3,FALSE)/VLOOKUP(D2,'Item Prices'!$A:$C,2,FALSE) 
+
+How much does one lemon cost? 
+
+0.47 
+
+Explanation: 
+
+=VLOOKUP(F2,'Item Prices'!$A:$C,3,FALSE)/VLOOKUP(F2,'Item Prices'!$A:$C,2,FALSE) 
+
+What is the profit per serving with the new prices and already filled in quantities? 
+
+1.51 
+
+Explanation: 
+
+Total Cost Price =SUMPRODUCT(D3:F3,D4:F4)/C3 
+
+Sales Price =VLOOKUP(A3,'Sales Prices'!A2:B13,2,FALSE) 
+
+Profit =B9-B8 
+
+ 
+
+Note: The solution Excel file is available on this week’s Answers section on edX.  
+
+4.4 Data Table 
+
+How many Lemons 
+
+Considering that the equation for expected sales is 60+0.2*[number of lemons], how many lemons should 4 servings use to obtain the highest profit (rounded to two decimal places). 
+
+8 
+
+Explanation: 
+
+The sales price of the lemonade is 2.50. The cost price per lemonade can be found by multiplying the amount of sugar, water and lemons by their respective prices, summing these, and then dividing by the number of servings. 
+
+The profit is the sales price of one lemonade minus the cost price of one lemonade. More lemons will increase the cost price per serving, and therefore decrease the profit per serving. 
+
+The number of sales is defined as 60+0.2*[number of lemons]. This means an increase in the number of lemons will increase the total number of sales. 
+
+The expected profit is the profit per serving multiplied by the expected number of sales. With goal seek we can find the correct number of lemons to balance between cost price and number of sales. With roughly 8 lemons, the expected profit will be highest. 
+
+ 
+
+Expected Sales: B10 =60+0.2*F3 
+
+E6 =B11 
+
+ 
+
+From the values and the conditional formatting in E7:E16 you can now conclude that the highest expected profit is in the range 6 to 10 lemons. 
+
+ 
+
+Note: The solution Excel file is available on this week’s Answers section on edX. 
+
+  
+
+4.5 Solver Most of our customers like sweet lemonade. Some of them also like a strong taste of lemonade. The equation for expected sales is: 40 + 0.6*[grams of sugar] + 0.3*[number of lemons] 
+
+Also take into account the following constraints: 
+
+1. each lemonade should have at least 50 gr of sugar, 200 ml of water, and 2 lemons per serving 2. we need at least 4 times more water than sugar 3. the number of lemons used relative to volume of water must be between (inclusive) 0.01 and 0.05. (For example, for 100 ml of water between 1 and 5 lemons must be added) 
+
+Using the Solver: Please use the (it should be default) GRG Nonlinear Solving Method and do not change the options. 
+
+Maximum Lemonade Profit 
+
+Considering the restrictions above, what is the highest profit we can obtain? 
+
+233.89 or 234 
+
+Explanation: 
+
+ 
+
+Note: The solution Excel file is available on this week’s Answers section on edX.  
+
+4.6 Assignment We have the basic ingredients for a Latte: Espresso and milk. 
+
+Take into account the following constraints: 
+
+1. Our machine works best with 20 servings at a time. 2. A latte sells for $2.50. 3. The number of espresso cups should be at least half the number of servings. 4. The amount of milk cups should be at least five times the number of espresso cups. 5. The expected number of sales is 100 + 0.3*[espresso cups] + 0.4*[milk cups]. 
+
+Using the Solver: Please use the (it should be default) GRG Nonlinear Solving Method and do not change the options. 
+
+A very milky Latte 
+
+Use a VLOOKUP to get the cost prices from the Item Price sheet and find out how many milk cups we need to make 20 servings of Latte and maximize profit. 
+
+Any number between (including) 971 and 972. 
+
+Explanation: Applying the given rules, you should have done something comparable to the following: 
+
+1. Set C3 to 20, the number of servings we want to know the quantities for 2. Set B7 to 2.50, the sales price of a Latte 3. Apply constraint $D$3 >= $C$3 4. Apply constrain $E$3 >= $D$3*5 5. Set B10 to formula =100+0.3*D3+0.4*E3 
+
+Run the Solver on maximizing $B$11 by changing $D$3:$E$3. 
+
+ 
+
+Note: The solution Excel file is available on this week’s Answers section on edX. 
+
+  
+
+A better recipe 
+
+You might say the equations we provided for the quizzes and the assignment are not realistic, or do not in fact create a very tasty drink. Can you come up with a good recipe? How about a Chocolate Cookie Latte? Based on your intuition create your own equations to predict the sales for your tasty latte, and post them on the forum. 
+
+Thanks for sharing all your original and well thought through Latte recipes! 

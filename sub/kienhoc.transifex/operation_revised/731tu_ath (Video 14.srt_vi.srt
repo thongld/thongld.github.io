@@ -1,0 +1,394 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/scqlnoIGJfw
+knh_argentwei 
+
+1
+00:00:05,599 --> 00:00:08,530
+Rất vui được gặp lại và chào mừng đến với khóa học "Quản trị vận hành"
+
+2
+00:00:08,529 --> 00:00:11,730
+Trong phần này ta sẽ nói về 
+đường găng hay còn được gọi là đường tới hạn
+
+3
+00:00:11,730 --> 00:00:14,769
+Đường tới hạn cho phép ta xác định
+
+4
+00:00:14,769 --> 00:00:19,509
+khoảng thời gian thực hiện quy trình
+Điều ta sẽ làm 
+
+5
+00:00:19,509 --> 00:00:23,769
+là theo dõi sơ đồ diễn biến quá trình 
+từ đầu đến cuối
+
+6
+00:00:23,769 --> 00:00:27,118
+nhưng chúng ta cũng quan tâm đến
+khoảng thời gian mà nó tốn
+
+7
+00:00:27,118 --> 00:00:32,210
+để hoàn thành mỗi hoạt động ta cần
+sử dụng một ví dụ về quá trình làm sạch văn phòng
+
+8
+00:00:32,210 --> 00:00:32,939
+office
+
+9
+00:00:32,939 --> 00:00:36,210
+nếu bạn để ý sẽ thấy ta có
+sáu hoạt động
+
+10
+00:00:36,210 --> 00:00:41,370
+bắt đầu với việc chọn lựa tất cả 
+dụng cụ khử trùng
+
+11
+00:00:41,369 --> 00:00:46,238
+hút bụi, dọn sạch thùng rác
+và cuối cùng là lau sạch nắm cửa
+
+12
+00:00:46,238 --> 00:00:47,218
+khi ta rời khỏi văn phòng
+
+13
+00:00:47,219 --> 00:00:50,239
+giống như những gì ta từng làm
+
+14
+00:00:50,238 --> 00:00:54,169
+sử dụng sơ đồ diễn biến
+
+15
+00:00:54,170 --> 00:00:57,329
+ta có được những mối quan hệ ưu tiên
+
+16
+00:00:57,329 --> 00:01:03,120
+và lúc này ta đồng thời cũng thêm vào thời gian
+để hoàn thành các công việc
+
+17
+00:01:03,119 --> 00:01:07,430
+như thu dọn cốc và những việc tương tự
+tốn 55 giây
+
+18
+00:01:07,430 --> 00:01:10,569
+quét bụi bề mặt tốn 300 giây
+
+19
+00:01:10,569 --> 00:01:14,919
+và như ta thấy thì tất cả những khoảng thời gian này 
+được dùng vào những việc khác nhau
+
+20
+00:01:14,920 --> 00:01:19,560
+vậy nên ta tạo ra một sơ đồ diễn biến quá trình
+
+21
+00:01:19,560 --> 00:01:24,890
+không chỉ dùng những tiền lệ 
+để ta chắc chắn về việc sắp xếp công việc
+
+22
+00:01:24,890 --> 00:01:29,340
+cũng như hứng thú với việc mỗi hoạt động
+tiêu tốn bao nhiêu thời gian
+
+23
+00:01:29,340 --> 00:01:34,700
+Ở đây ta bắt đầu với việc 
+thu dọn cốc và giấy tờ trong 55 giây
+
+24
+00:01:34,700 --> 00:01:35,600
+seconds
+
+25
+00:01:35,599 --> 00:01:40,438
+ta chia những hoạt động đa nhiệm thành 
+3 hoạt động khác nhau
+
+26
+00:01:40,438 --> 00:01:45,239
+B,C và D có thể hoàn thành cùng lúc
+
+27
+00:01:45,239 --> 00:01:49,489
+B - kiểm tra dịch vụ tốn 300 giây
+
+28
+00:01:49,489 --> 00:01:53,688
+hoạt động C là khử trùng các thứ
+trong 9 giây
+
+29
+00:01:53,688 --> 00:01:57,839
+và hoạt động D hút bụi trong 360 giây
+
+30
+00:01:57,840 --> 00:02:01,060
+khi mà ta xong việc hút bụi và khử trùng
+
+31
+00:02:01,060 --> 00:02:04,618
+ta có thể làm sạch thùng rác E trong 40 giây
+
+32
+00:02:04,618 --> 00:02:08,938
+và cuối là ta hoàn thành việc hút bụi 
+và làm sạch thùng rác
+
+33
+00:02:08,938 --> 00:02:13,310
+ta khử trùng tay nắm cửa và ra về
+trong 40s
+
+34
+00:02:13,310 --> 00:02:16,759
+Thật ra thì ta đã tốn bao nhiêu thời gian để
+
+35
+00:02:16,759 --> 00:02:23,209
+hoàn thành cả quá trình và chúng ta cần
+là nhìn khái quát theo
+
+36
+00:02:23,209 --> 00:02:23,729
+những hướng khác
+
+37
+00:02:23,729 --> 00:02:27,889
+Ta nhìn qua sơ đồ diễn biến quá trình
+chú ý rằng
+
+38
+00:02:27,889 --> 00:02:31,469
+Ta phân ra thành 
+3 lĩnh vực khác nhau
+
+39
+00:02:31,469 --> 00:02:34,750
+từ A đến B, E đến F
+
+40
+00:02:34,750 --> 00:02:37,769
+đó là 1 hướng của quá trình
+
+41
+00:02:37,769 --> 00:02:41,140
+nếu ta nhìn theo hướng khác
+
+42
+00:02:41,139 --> 00:02:44,539
+và ta cho tất cả thời gian của mọi hoạt động
+theo hướng đó
+
+43
+00:02:44,539 --> 00:02:49,989
+ta được đường ABE và F tốn 435 giây
+
+44
+00:02:49,989 --> 00:02:54,650
+nhưng vẫn còn một đường khác là
+
+45
+00:02:54,650 --> 00:02:59,310
+đường ACEF và nếu ta sử dụng thời gian theo
+
+46
+00:02:59,310 --> 00:03:04,340
+ACEF thì ta sẽ kết thúc trong vòng 225 giây
+
+47
+00:03:04,340 --> 00:03:08,469
+và cuối cùng là ta có hướng 
+
+48
+00:03:08,469 --> 00:03:14,199
+ADF là hướng có vẻ ngắn nhất
+vì chỉ có 3 hoạt động cần được thực hiện
+
+49
+00:03:14,199 --> 00:03:18,209
+nhưng thật ra về khoảng thời gian thực hiện
+lại là dài nhất
+
+50
+00:03:18,209 --> 00:03:24,019
+tốn 455 giây nếu ta hoàn thành 
+cả quá trình
+
+51
+00:03:24,019 --> 00:03:27,629
+455 giây đó
+
+52
+00:03:27,628 --> 00:03:31,518
+là đường giới hạn của ta
+đó là đường dài nhất
+
+53
+00:03:31,519 --> 00:03:35,069
+trong tất cả các khoảng thời gian của quá trình
+
+54
+00:03:35,068 --> 00:03:40,018
+nên nó có nghĩa là khi ta kết thúc
+
+55
+00:03:40,019 --> 00:03:43,060
+ADF thì ta cũng đồng thời kết thúc
+
+56
+00:03:43,060 --> 00:03:47,170
+việc hút bụi, khử trùng và 
+làm sạch thùng rác
+
+57
+00:03:47,169 --> 00:03:51,699
+nhưng sẽ có gì diễn ra nếu thời gian 
+của các hoạt động thay đổi
+
+58
+00:03:51,699 --> 00:03:55,219
+đây vì hoạt động B
+
+59
+00:03:55,219 --> 00:03:58,979
+thời gian tăng từ 
+300 giây lên 330 giây
+
+60
+00:03:58,979 --> 00:03:59,780
+seconds
+
+61
+00:03:59,780 --> 00:04:05,900
+và hút bụi thảm giảm xuống 20 giây
+từ 360 thành 340
+
+62
+00:04:05,900 --> 00:04:09,010
+để xem điều này ảnh hưởng thế nào đến
+
+63
+00:04:09,009 --> 00:04:15,929
+sơ đồ diễn biến quá trình và đường giới hạn của ta
+
+64
+00:04:15,930 --> 00:04:16,819
+ở đây ta cũng có một sơ đồ y hệt
+
+65
+00:04:16,818 --> 00:04:21,659
+nhưng B và D đã được thay đổi thời gian
+Nhìn thử xem
+
+66
+00:04:21,660 --> 00:04:26,479
+ABEF hiện tại là 465 giây
+
+67
+00:04:26,478 --> 00:04:30,649
+ACEF không thay đổi
+
+68
+00:04:30,649 --> 00:04:34,799
+ngoài ra không có hoạt động nào 
+theo hướng này thay đổi
+
+69
+00:04:34,800 --> 00:04:38,050
+vẫn là 225 giây
+
+70
+00:04:38,050 --> 00:04:41,430
+cuối cùng, ADF thay đổi và giờ là 435 giây
+
+71
+00:04:41,430 --> 00:04:44,800
+435 seconds
+
+72
+00:04:44,800 --> 00:04:49,120
+vậy nên vì thời gian thay đổi mà 
+các hoạt động
+
+73
+00:04:49,120 --> 00:04:52,490
+và đường giới hạn cũng bị thay đổi
+
+74
+00:04:52,490 --> 00:04:56,360
+đường giới hạn chuyển từ ADF 
+
+75
+00:04:56,360 --> 00:05:00,199
+sang ABEF và thời gian của diễn biến quá trình
+
+76
+00:05:00,199 --> 00:05:04,340
+thay đổi từ 455 giây
+
+77
+00:05:04,339 --> 00:05:07,969
+thành 465 giây
+
+78
+00:05:07,970 --> 00:05:12,180
+nên ta có thể thấy được
+khi bạn phân phối những quá trình
+
+79
+00:05:12,180 --> 00:05:16,129
+và thời gian của các hoạt động
+nếu thời gian tha đổi
+
+80
+00:05:16,129 --> 00:05:19,949
+bạn sẽ phải có một cái nhìn kĩ hơn
+diễn biến quá trình của bạn
+
+81
+00:05:19,949 --> 00:05:24,080
+để thấy được rằng
+đường giới hạn cũng thay đổi
+
+82
+00:05:24,079 --> 00:05:27,978
+và trong bài tới ta sẽ nói về 
+thời gian tự do
+
+83
+00:05:27,978 --> 00:05:32,939
+thời gian tự do biểu thị rằng 
+các hoạt động không phải luôn bắt đầu từ
+
+84
+00:05:32,939 --> 00:05:33,839
+điểm đầu
+
+85
+00:05:33,839 --> 00:05:38,500
+đôi khi ta có thể đợi một tí 
+và quãng thời gian bạn dùng để đợi
+
+86
+00:05:38,500 --> 00:05:41,579
+ta gọi là thời gian tự do 
+và đó là những gì ta sẽ học trong bài tới
+
+87
+00:05:41,579 --> 00:05:42,069
+Hẹn gặp lại
+

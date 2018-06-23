@@ -1,0 +1,453 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/kbKg-QGoHDE
+
+1
+00:00:00,000 --> 00:00:00,321
+
+2
+00:00:00,321 --> 00:00:02,029
+DR. JONATHAN VALVANO:
+Next we'll show you
+
+3
+00:00:02,029 --> 00:00:05,630
+the software needed for the Chat tool.
+
+4
+00:00:05,630 --> 00:00:09,550
+We're going to add one more
+driver function, one more
+
+5
+00:00:09,550 --> 00:00:14,520
+input function, which is
+going to be non-blocking.
+
+6
+00:00:14,520 --> 00:00:24,700
+Non-blocking means that if
+the receive FIFO is empty
+
+7
+00:00:24,700 --> 00:00:27,450
+that means it has no data.
+
+8
+00:00:27,450 --> 00:00:32,060
+And so rather than waiting, like
+a busy-wait what will happen is
+
+9
+00:00:32,060 --> 00:00:35,810
+we will simply return a zero.
+
+10
+00:00:35,810 --> 00:00:40,220
+And that will mean
+that there is no data.
+
+11
+00:00:40,220 --> 00:00:46,530
+If the receive FIFO empty flag is
+zero, that means there is data,
+
+12
+00:00:46,530 --> 00:00:55,960
+and so we will input the
+data and return the data.
+
+13
+00:00:55,960 --> 00:00:58,920
+This will allow the
+main program to check
+
+14
+00:00:58,920 --> 00:01:04,069
+to see whether it has received any
+input from the other microcontroller
+
+15
+00:01:04,069 --> 00:01:05,349
+and processes it.
+
+16
+00:01:05,349 --> 00:01:08,692
+But if there is no data,
+it doesn't have to wait.
+
+17
+00:01:08,692 --> 00:01:11,150
+DR. RAMESH YERRABALLI: So this
+is different from the InChar
+
+18
+00:01:11,150 --> 00:01:15,750
+we wrote earlier which was a
+blocking I/O. The difference is
+
+19
+00:01:15,750 --> 00:01:24,260
+that the blocking I/O would have
+sat in a loop waiting for the input
+
+20
+00:01:24,260 --> 00:01:25,470
+to be available.
+
+21
+00:01:25,470 --> 00:01:30,389
+And once it's available, it's
+going to return the data it reads.
+
+22
+00:01:30,389 --> 00:01:31,764
+DR. JONATHAN VALVANO: Absolutely.
+
+23
+00:01:31,764 --> 00:01:37,910
+
+24
+00:01:37,910 --> 00:01:40,900
+DR. RAMESH YERRABALLI:
+OK, so what's next?
+
+25
+00:01:40,900 --> 00:01:43,960
+DR. JONATHAN VALVANO: This is the
+main program of our Chat tool.
+
+26
+00:01:43,960 --> 00:01:48,415
+We will initialize the
+PLL at 80 megahertz,
+
+27
+00:01:48,415 --> 00:01:54,000
+we'll use SysTick down here for
+wait, we'll initialization our UART,
+
+28
+00:01:54,000 --> 00:01:59,190
+and we'll initialize the
+port F buttons and LEDs.
+
+29
+00:01:59,190 --> 00:02:05,310
+The main body of the Chat tool, you
+can see, is a great big while loop.
+
+30
+00:02:05,310 --> 00:02:10,620
+The first thing we're going to do is
+check to see if switch one is pressed.
+
+31
+00:02:10,620 --> 00:02:15,600
+It switch one(SW1) is pressed,
+that means it's a zero,
+
+32
+00:02:15,600 --> 00:02:19,610
+we are going to select the
+next color in the wheel.
+
+33
+00:02:19,610 --> 00:02:24,747
+
+34
+00:02:24,747 --> 00:02:28,870
+And you can see that is done
+with this line of code here,
+
+35
+00:02:28,870 --> 00:02:34,390
+which will add one to the color and then
+mask it with a seven so at all times
+
+36
+00:02:34,390 --> 00:02:40,060
+the value color goes to zero,
+one, two, all the way up to seven.
+
+37
+00:02:40,060 --> 00:02:43,290
+
+38
+00:02:43,290 --> 00:02:49,840
+If the switch is not pressed,
+then we will go to the next step.
+
+39
+00:02:49,840 --> 00:02:53,070
+And we will check to see if
+switch two (SW2) is pressed.
+
+40
+00:02:53,070 --> 00:02:57,320
+
+41
+00:02:57,320 --> 00:03:02,220
+If switch two is pressed,
+its time to send the message.
+
+42
+00:03:02,220 --> 00:03:09,976
+And so what will happen is we will
+encode the message and send it.
+
+43
+00:03:09,976 --> 00:03:12,100
+DR. RAMESH YERRABALLI: So
+switch one is our Chooser
+
+44
+00:03:12,100 --> 00:03:15,445
+and switch two is our Send button.
+
+45
+00:03:15,445 --> 00:03:17,959
+
+46
+00:03:17,959 --> 00:03:20,250
+DR. JONATHAN VALVANO: The
+last thing we're going to do,
+
+47
+00:03:20,250 --> 00:03:28,920
+and if it's not pressed, we'll
+go to our third step, which
+
+48
+00:03:28,920 --> 00:03:31,995
+is to check to see whether we
+have any received messages.
+
+49
+00:03:31,995 --> 00:03:37,180
+
+50
+00:03:37,180 --> 00:03:42,920
+And that was our input, non-blocking
+from the previous slide.
+
+51
+00:03:42,920 --> 00:03:49,270
+We saw with the non-blocking input we
+had two choices, either we had no input
+
+52
+00:03:49,270 --> 00:03:51,670
+or we did have input.
+
+53
+00:03:51,670 --> 00:03:55,040
+If we have input we're
+going to decode that input.
+
+54
+00:03:55,040 --> 00:03:57,640
+
+55
+00:03:57,640 --> 00:04:01,060
+In our case the encoding
+and decoding is very simple.
+
+56
+00:04:01,060 --> 00:04:05,270
+To encode the message, we took
+the number zero through seven
+
+57
+00:04:05,270 --> 00:04:09,020
+and added 30 to it to get
+the ASCII zero through seven.
+
+58
+00:04:09,020 --> 00:04:13,180
+To decode the message we're
+going to mask off the 30,
+
+59
+00:04:13,180 --> 00:04:17,219
+so again we have a number
+between zero and seven.
+
+60
+00:04:17,219 --> 00:04:21,290
+
+61
+00:04:21,290 --> 00:04:26,250
+And we will set the color
+to that input value.
+
+62
+00:04:26,250 --> 00:04:33,680
+The fourth step is to output
+to the LED either the value
+
+63
+00:04:33,680 --> 00:04:37,230
+that we've selected with the
+press switch or the value
+
+64
+00:04:37,230 --> 00:04:39,980
+that we've read from the input.
+
+65
+00:04:39,980 --> 00:04:43,260
+And so if we don't have an
+input, we're going go here.
+
+66
+00:04:43,260 --> 00:04:47,900
+We're going to add a fifth step,
+and that is a 20 millisecond wait.
+
+67
+00:04:47,900 --> 00:04:50,550
+And this will remove the
+bounce of the switch.
+
+68
+00:04:50,550 --> 00:04:57,460
+And so these steps, one,
+two, three, four, and five
+
+69
+00:04:57,460 --> 00:05:03,020
+are repeated over and over
+again in the While loop.
+
+70
+00:05:03,020 --> 00:05:05,520
+DR. RAMESH YERRABALLI: So John,
+I understand the flowchart.
+
+71
+00:05:05,520 --> 00:05:10,940
+But I see that you have this
+variable called previous prevSW1
+
+72
+00:05:10,940 --> 00:05:15,609
+and prevSW2, what are those used for?
+
+73
+00:05:15,609 --> 00:05:18,650
+DR. JONATHAN VALVANO: They are used
+to make sure when I touch the switch,
+
+74
+00:05:18,650 --> 00:05:22,460
+it increments the color just once.
+
+75
+00:05:22,460 --> 00:05:26,090
+And the way I'm going to do it
+is in this if statement here.
+
+76
+00:05:26,090 --> 00:05:31,390
+I'm going to look for the touch,
+or the falling edge of switch one.
+
+77
+00:05:31,390 --> 00:05:39,400
+So the switch one will be touched
+when the switch one is zero.
+
+78
+00:05:39,400 --> 00:05:44,030
+But the previous value of switch
+one through the loop was a one.
+
+79
+00:05:44,030 --> 00:05:47,120
+So if the switch one is not
+pressed it goes through the loop
+
+80
+00:05:47,120 --> 00:05:49,330
+and there's a one in this variable.
+
+81
+00:05:49,330 --> 00:05:54,310
+And if I'm going around the
+loop, and I touch the switch,
+
+82
+00:05:54,310 --> 00:05:56,410
+it will become a zero.
+
+83
+00:05:56,410 --> 00:06:00,480
+So if switch one is a zero, and the
+previous time through the loop it's
+
+84
+00:06:00,480 --> 00:06:04,570
+a one, I've detected
+the first touch event.
+
+85
+00:06:04,570 --> 00:06:08,490
+So the color number is
+just increment once.
+
+86
+00:06:08,490 --> 00:06:11,820
+DR. RAMESH YERRABALLI: So otherwise
+the switch one would be zero
+
+87
+00:06:11,820 --> 00:06:14,795
+and the previous value
+of the switch would also
+
+88
+00:06:14,795 --> 00:06:18,157
+be a zero, that tells me that it's
+been pressed but not released yet.
+
+89
+00:06:18,157 --> 00:06:19,240
+DR. JONATHAN VALVANO: Yes.
+
+90
+00:06:19,240 --> 00:06:23,750
+And we do the same thing for
+switch two and it's previous two.
+
+91
+00:06:23,750 --> 00:06:26,580
+Because when I push the button,
+I only want to send one message.
+
+92
+00:06:26,580 --> 00:06:29,070
+DR. RAMESH YERRABALLI:
+OK, and the input that we
+
+93
+00:06:29,070 --> 00:06:33,610
+are talking about reading is
+from the UART in this picture,
+
+94
+00:06:33,610 --> 00:06:36,890
+in the flow chart, that's
+coming from the UART
+
+95
+00:06:36,890 --> 00:06:38,800
+DR. JONATHAN VALVANO: Absolutely.
+
+96
+00:06:38,800 --> 00:06:41,065
+DR. RAMESH YERRABALLI:
+OK, so let's play.
+
+97
+00:06:41,065 --> 00:06:41,565

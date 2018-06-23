@@ -1,0 +1,432 @@
+666
+00:29:55,100 --> 00:29:56,730
+https://youtu.be/VXyRfgnzL2o
+It's a bit of syntax.
+
+667
+00:29:56,730 --> 00:30:00,250
+I mentioned that it uses
+the try and except keywords.
+
+668
+00:30:00,250 --> 00:30:02,957
+These are reserved
+words in Python.
+
+669
+00:30:02,957 --> 00:30:04,540
+And then it's a
+little indented block.
+
+670
+00:30:04,540 --> 00:30:07,570
+So astr = "Hello Bob".
+
+671
+00:30:07,570 --> 00:30:08,390
+Great.
+
+672
+00:30:08,390 --> 00:30:10,820
+Try means we're about to
+do something dangerous.
+
+673
+00:30:10,820 --> 00:30:13,440
+Let's take out some
+insurance policy on it.
+
+674
+00:30:13,440 --> 00:30:16,420
+And that is we are going to
+convert this to an integer.
+
+675
+00:30:16,420 --> 00:30:20,831
+Take astr, convert to
+an integer, put in istr.
+
+676
+00:30:20,831 --> 00:30:23,330
+If that works, great, we'll
+just continue on and ignore this
+
+677
+00:30:23,330 --> 00:30:24,410
+except.
+
+678
+00:30:24,410 --> 00:30:28,590
+If it blows up, we're going
+to jump into the except block.
+
+679
+00:30:28,590 --> 00:30:31,210
+And then we'll have
+alternate substitute code.
+
+680
+00:30:31,210 --> 00:30:33,810
+In this case, I'm going to set
+the variable to negative one
+
+681
+00:30:33,810 --> 00:30:35,340
+as an indicator.
+
+682
+00:30:35,340 --> 00:30:36,580
+Then I'll print it out.
+
+683
+00:30:36,580 --> 00:30:37,810
+I'll do it again.
+
+684
+00:30:37,810 --> 00:30:40,840
+Try this code, and away we go.
+
+685
+00:30:40,840 --> 00:30:45,640
+So when this runs, you know
+exactly how it's going to run.
+
+686
+00:30:45,640 --> 00:30:51,690
+
+687
+00:30:51,690 --> 00:30:53,260
+Set to string.
+
+688
+00:30:53,260 --> 00:30:55,380
+The try takes out the insurance.
+
+689
+00:30:55,380 --> 00:30:57,110
+This blows up.
+
+690
+00:30:57,110 --> 00:31:00,530
+So it runs down to here
+and runs this part.
+
+691
+00:31:00,530 --> 00:31:04,800
+And then it will print First -1.
+
+692
+00:31:04,800 --> 00:31:08,610
+Then it sets the string to
+1 2 3-- not 123, but 1 2 3
+
+693
+00:31:08,610 --> 00:31:09,730
+is a string.
+
+694
+00:31:09,730 --> 00:31:11,950
+It takes out an
+insurance policy.
+
+695
+00:31:11,950 --> 00:31:13,430
+This time it works.
+
+696
+00:31:13,430 --> 00:31:20,400
+And istr is going to be 123, so
+we don't run the except code.
+
+697
+00:31:20,400 --> 00:31:25,020
+And so out comes
+the second 1 2 3.
+
+698
+00:31:25,020 --> 00:31:30,500
+So the try is take out insurance
+on this little bit of code.
+
+699
+00:31:30,500 --> 00:31:33,010
+And if it fails, run
+this alternate code.
+
+700
+00:31:33,010 --> 00:31:35,770
+If not, skip the alternate code.
+
+701
+00:31:35,770 --> 00:31:37,400
+So it's kind of conditional.
+
+702
+00:31:37,400 --> 00:31:40,260
+If you put multiple
+lines in the block
+
+703
+00:31:40,260 --> 00:31:44,490
+between the try and the
+except, it runs until one dies.
+
+704
+00:31:44,490 --> 00:31:46,140
+So it doesn't come back.
+
+705
+00:31:46,140 --> 00:31:49,420
+It's not taking
+insurance out separately
+
+706
+00:31:49,420 --> 00:31:50,460
+on all three statements.
+
+707
+00:31:50,460 --> 00:31:51,876
+It's like here's
+a block of stuff,
+
+708
+00:31:51,876 --> 00:31:54,780
+and if anything blows up stop.
+
+709
+00:31:54,780 --> 00:31:58,520
+And the things that run do run.
+
+710
+00:31:58,520 --> 00:32:00,650
+This is really kind of bad
+code, because you really
+
+711
+00:32:00,650 --> 00:32:01,858
+don't want the print in here.
+
+712
+00:32:01,858 --> 00:32:04,980
+It's actually a good idea on
+the try/except to have as little
+
+713
+00:32:04,980 --> 00:32:07,390
+in the try block as
+you possibly can,
+
+714
+00:32:07,390 --> 00:32:11,550
+so you're real clear on
+what's going to fail.
+
+715
+00:32:11,550 --> 00:32:13,610
+But so here we come in.
+
+716
+00:32:13,610 --> 00:32:15,490
+It's Bob, so it's going to fail.
+
+717
+00:32:15,490 --> 00:32:16,390
+We run this.
+
+718
+00:32:16,390 --> 00:32:18,110
+That runs successfully.
+
+719
+00:32:18,110 --> 00:32:19,570
+This blows up.
+
+720
+00:32:19,570 --> 00:32:23,540
+So it quits and jumps into the
+except blocks and continues.
+
+721
+00:32:23,540 --> 00:32:27,290
+The point is that this
+code never executes--
+
+722
+00:32:27,290 --> 00:32:28,550
+never executes.
+
+723
+00:32:28,550 --> 00:32:31,370
+The other point is
+this code does execute.
+
+724
+00:32:31,370 --> 00:32:33,590
+Just because this blew up,
+this is already executed.
+
+725
+00:32:33,590 --> 00:32:37,460
+It might have done something
+more complex than print hello.
+
+726
+00:32:37,460 --> 00:32:40,240
+OK, there you go.
+
+727
+00:32:40,240 --> 00:32:42,420
+So if we look at this
+kind of in a picture,
+
+728
+00:32:42,420 --> 00:32:44,270
+we set the try block.
+
+729
+00:32:44,270 --> 00:32:44,870
+It runs.
+
+730
+00:32:44,870 --> 00:32:45,860
+It runs.
+
+731
+00:32:45,860 --> 00:32:48,960
+And the try/except kind
+of has this escape patch
+
+732
+00:32:48,960 --> 00:32:54,290
+that says if there is
+a explosion somehow,
+
+733
+00:32:54,290 --> 00:32:57,544
+then it runs this alternate
+code, and then comes out
+
+734
+00:32:57,544 --> 00:32:58,085
+and finishes.
+
+735
+00:32:58,085 --> 00:32:59,890
+
+736
+00:32:59,890 --> 00:33:03,460
+And again, it doesn't go
+back and finish the block.
+
+737
+00:33:03,460 --> 00:33:06,980
+And it doesn't undo the
+work that is done by that.
+
+738
+00:33:06,980 --> 00:33:09,150
+So it doesn't un-execute it.
+
+739
+00:33:09,150 --> 00:33:11,710
+If it executes and works,
+it just keeps on going.
+
+740
+00:33:11,710 --> 00:33:16,780
+Then it blows up, and then it
+sort of flushes its way out.
+
+741
+00:33:16,780 --> 00:33:18,870
+So here's an example
+of how you might
+
+742
+00:33:18,870 --> 00:33:21,694
+do this in a running program,
+like the programs that you're
+
+743
+00:33:21,694 --> 00:33:23,110
+about to be assigned,
+where you're
+
+744
+00:33:23,110 --> 00:33:26,850
+supposed to check for
+user input having errors.
+
+745
+00:33:26,850 --> 00:33:29,866
+So here is a little
+conversion of a number.
+
+746
+00:33:29,866 --> 00:33:32,880
+
+747
+00:33:32,880 --> 00:33:35,060
+And so we're saying
+enter a number.
+
+748
+00:33:35,060 --> 00:33:38,390
+And we're putting a
+string into roster.
+
+749
+00:33:38,390 --> 00:33:39,560
+It's a string.
+
+750
+00:33:39,560 --> 00:33:41,731
+And so we don't know.
+
+751
+00:33:41,731 --> 00:33:43,980
+And here's where we're going
+to convert to an integer,
+
+752
+00:33:43,980 --> 00:33:46,550
+and we're just not sure if
+it's going to work or not.
+
+753
+00:33:46,550 --> 00:33:49,240
+So we know how int works.
+
+754
+00:33:49,240 --> 00:33:51,676
+It either converts
+it, or it blows up.
+
+755
+00:33:51,676 --> 00:33:53,050
+So we know it's
+going to do that.
+
+756
+00:33:53,050 --> 00:33:55,133
+We just don't know what
+the user is going to type.
+
+757
+00:33:55,133 --> 00:33:55,850
+We don't know.
+
+758
+00:33:55,850 --> 00:33:57,474
+So we have to take
+out insurance on it.
+
+759
+00:33:57,474 --> 00:33:59,570
+So this runs, and
+then we do try.
+
+760
+00:33:59,570 --> 00:34:00,940
+And we try to convert it.
+

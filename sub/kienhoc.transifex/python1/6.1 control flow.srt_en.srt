@@ -1,0 +1,325 @@
+1
+00:00:01,939 --> 00:00:07,140
+http://youtube.com/watch?v=X5cTzNKXFxU
+
+Before, you already learned about different
+Python types. Among those was the Boolean.
+
+2
+00:00:07,140 --> 00:00:10,610
+Remember how you used the boolean array to
+subset an array depending on a condition?
+
+3
+00:00:10,610 --> 00:00:15,599
+In this video, I'm going to talk some more
+about relational operators such as this greater
+
+4
+00:00:15,599 --> 00:00:21,450
+than sign. You use them to see how two Python
+values relate. Say, for example, that you
+
+5
+00:00:21,450 --> 00:00:27,430
+want to check if 2 is smaller than 3. You
+type 2 less then sign 3, and hit Enter. Because
+
+6
+00:00:27,430 --> 00:00:32,050
+this is the case, you get True. You can also
+check if two values are equal, with a double
+
+7
+00:00:32,050 --> 00:00:38,059
+equals sign. From this call, we see that 2
+equals equals 3 gives us False. Of course,
+
+8
+00:00:38,059 --> 00:00:43,530
+you can also use relational operators directly
+on variables, like this:
+
+9
+00:00:43,530 --> 00:00:47,390
+Have a look at this table that summarizes
+all relational operators. You already know
+
+10
+00:00:47,390 --> 00:00:54,100
+about greater than, less than and equality.
+There's also the less then or equal to sign
+
+11
+00:00:54,100 --> 00:00:59,499
+and the greater than or equal to sign, and
+the not equals sign. You'll get plenty of
+
+12
+00:00:59,499 --> 00:01:01,469
+exercises with them later on!
+
+13
+00:01:01,469 --> 00:01:03,549
+The next step is combining the results of
+relational operations, so booleans. You can
+
+14
+00:01:03,549 --> 00:01:10,100
+use logical operators for this. The three
+most common ones are AND, OR, and NOT.
+
+15
+00:01:10,100 --> 00:01:15,330
+The and operator works just as you would expect.
+It takes two boolans and returns `True` only
+
+16
+00:01:15,330 --> 00:01:19,930
+if both the booleans are `True` themselves.
+This means that `True and True` evaluates
+
+17
+00:01:19,930 --> 00:01:24,390
+`True`, but that `False and True`, `True and
+False` and `False and False` all evaluate
+
+18
+00:01:24,390 --> 00:01:25,680
+to `False`.
+
+19
+00:01:25,680 --> 00:01:31,170
+Instead of using booleans, we can off course
+use the results of comparisons. Suppose we
+
+20
+00:01:31,170 --> 00:01:35,630
+have a variable `x`, equal to 12. To check
+if this variable is greater than 5 but less
+
+21
+00:01:35,630 --> 00:01:42,140
+than 15, we can use x greater than 5 and x
+less than 15. As you already learned, the
+
+22
+00:01:42,140 --> 00:01:46,990
+first part will evaluate to `True`. The second
+part, will also evaluate to `True`. So the
+
+23
+00:01:46,990 --> 00:01:53,080
+result of this expression is `True`. This
+makes sense, because 12 lies between 5 and
+
+24
+00:01:53,080 --> 00:01:53,840
+15.
+
+25
+00:01:53,840 --> 00:01:58,330
+The OR operator works similarly, but the difference
+is that only at least one of the booleans
+
+26
+00:01:58,330 --> 00:02:03,280
+it uses should be equal to `True` for the
+OR operation to evaluate to True. This means
+
+27
+00:02:03,280 --> 00:02:08,030
+that, `True or True` equals `True`, but that
+also `True or False` and `False or True` evaluate
+
+28
+00:02:08,030 --> 00:02:14,450
+to `True`. Only False or False results in
+`False`. Also here you can make combinations
+
+29
+00:02:14,450 --> 00:02:19,550
+with variables, like this example that checks
+if a variable `y`, equal to 5, is less then
+
+30
+00:02:19,550 --> 00:02:27,550
+or equal to 7 or above 13. 5 less than 7 is
+True, 7 greater than 13 is False. The OR operation
+
+31
+00:02:27,550 --> 00:02:29,120
+thus returns True.
+
+32
+00:02:29,120 --> 00:02:34,120
+Finally, there's the NOT operator, represented
+by an exclamation mark. It simply negates
+
+33
+00:02:34,120 --> 00:02:40,450
+the boolean value you use it on. Not True
+is False, Not False, is True.
+
+34
+00:02:40,450 --> 00:02:44,060
+Things get really interesting, when you can
+actually use relational operators and logical
+
+35
+00:02:44,060 --> 00:02:49,790
+operators to change how your program behaves.
+Depending on the outcome of your comparisons,
+
+36
+00:02:49,790 --> 00:02:54,040
+you might want your Python code to behave
+differently. You can do this with conditional
+
+37
+00:02:54,040 --> 00:02:58,440
+statements in Python: if, else and elif.
+
+38
+00:02:58,440 --> 00:03:03,770
+Let's start working in a script, control.py.
+Suppose you have a variable `z`, equal to
+
+39
+00:03:03,770 --> 00:03:10,209
+4. If the value is even, you want to print
+out: "z is even". This code does the trick.
+
+40
+00:03:10,209 --> 00:03:15,069
+modulo operator 2 will return 0 if z is even.
+
+41
+00:03:15,069 --> 00:03:19,590
+If you run this, Python checks if the condition
+holds. It's true, so the corresponding code
+
+42
+00:03:19,590 --> 00:03:23,380
+is executed: z is even gets printed out.
+
+43
+00:03:23,380 --> 00:03:27,000
+Let's compare this to the general recipe for
+an if statement.
+
+44
+00:03:27,000 --> 00:03:32,720
+It reads as follows: if condition, execute
+expression. Notice the colon at the end, and
+
+45
+00:03:32,720 --> 00:03:36,880
+the fact that you simply have to indent the
+Python code with four spaces to tell Python
+
+46
+00:03:36,880 --> 00:03:42,209
+what to do in the case the condition succeeds.
+It's perfectly possible to have more lines
+
+47
+00:03:42,209 --> 00:03:46,880
+here, like this for example. The script now
+prints out two lines if you run it.
+
+48
+00:03:46,880 --> 00:03:52,430
+If the condition does not pass, the expression
+is not executed. You can see this if we change
+
+49
+00:03:52,430 --> 00:03:56,930
+z to be 5 and rerun the code: there's no output.
+
+50
+00:03:56,930 --> 00:04:02,290
+Suppose now that you want to print out "z
+is odd" in this case. How to do this? Well,
+
+51
+00:04:02,290 --> 00:04:06,530
+you can simply use an else statement, like
+this. <PAUSE> If we run it with z equal to
+
+52
+00:04:06,530 --> 00:04:12,540
+5, the condition is not true, so the expression
+for the else statement gets printed out. The
+
+53
+00:04:12,540 --> 00:04:18,000
+general recipe looks like this: for the else
+statement, you don't need to specify a condition.
+
+54
+00:04:18,000 --> 00:04:22,220
+The corresponding expression gets run if the
+condition of the if statement it belongs to
+
+55
+00:04:22,220 --> 00:04:23,320
+does not hold.
+
+56
+00:04:23,320 --> 00:04:29,310
+You can think of cases where even more customized
+behavior is necessary. Say you want different
+
+57
+00:04:29,310 --> 00:04:34,000
+printouts for numbers that are divisible by
+2 and by 3. You can throw some elifs in there
+
+58
+00:04:34,000 --> 00:04:37,900
+to get the job done. Take this example:
+
+59
+00:04:37,900 --> 00:04:42,650
+Can you tell what this script will print out
+if you run it? If z equals 3, the first condition
+
+60
+00:04:42,650 --> 00:04:48,050
+is FALSE, so it goes over to the next condition.
+This condition, does hold, so the corresponding
+
+61
+00:04:48,050 --> 00:04:54,900
+print statement is exectued. Suppose now that
+z equals 6. Both the if and elif conditions
+
+62
+00:04:54,900 --> 00:05:00,850
+hold in this case. Will two printouts occur?
+Nope. As soon as Python bumps into a condition
+
+63
+00:05:00,850 --> 00:05:05,180
+that is true, it exectues the corresponding
+code and then leaves the control structure
+
+64
+00:05:05,180 --> 00:05:10,470
+after that. This means the second condition,
+corresponding to the elif, is never reached
+
+65
+00:05:10,470 --> 00:05:13,830
+so there's no corresponding printout.
+
+66
+00:05:13,830 --> 00:05:18,520
+Now that you know more about relational operators,
+logical operators and control flow, it's time
+
+67
+00:05:18,520 --> 00:05:20,620
+to get practical with them in the exercises
+

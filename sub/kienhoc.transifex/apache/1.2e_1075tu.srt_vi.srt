@@ -1,0 +1,647 @@
+0
+00:00:00,000 --> 00:00:00,200
+DANG THANH 19/10 https://youtu.be/SnJO3m9DMDs
+
+1
+00:00:00,200 --> 00:00:00,980
+DIỄN GIẢ 1: Xin chào.
+
+2
+00:00:00,980 --> 00:00:03,930
+Trong đoạn phim này, ta sẽ học cách sử dụng hệ thống chấm điểm tự động Autograder.
+
+3
+00:00:03,930 --> 00:00:06,840
+Nhắc lại, ta sẽ bắt đầu từ trang web của edX,
+
+4
+00:00:06,840 --> 00:00:09,180
+thiết lập môi trường phần mềm cốt lõi.
+
+5
+00:00:09,180 --> 00:00:11,470
+Và ta nhấp chuột vào cái nhãn cuối ở đây,
+
+6
+00:00:11,470 --> 00:00:14,280
+sử dụng Course AutoGrader.
+
+7
+00:00:14,280 --> 00:00:16,320
+Tôi sẽ giả định rằng các bạn đã làm theo các hướng dẫn
+
+8
+00:00:16,320 --> 00:00:20,240
+trong băng hình lần trước, và lab zero hoàn toàn thành công.
+
+9
+00:00:20,240 --> 00:00:23,780
+Điều này có nghĩa là ta đã hoàn thành bước đầu tiên ở đây.
+
+10
+00:00:23,780 --> 00:00:28,680
+Giờ, ta sẽ thực hiện bước hai, sử dụng máy tính Autograder.
+
+11
+00:00:28,680 --> 00:00:30,240
+Hãy cùng xem nó hoạt động như thế nào.
+
+12
+00:00:30,240 --> 00:00:34,410
+Cuốn chuột xuống một ít để xem hướng dẫn chi tiết.
+
+13
+00:00:34,410 --> 00:00:38,300
+Lần nữa, tôi sẽ giả định rằng ta đã đăng nhập.
+
+14
+00:00:38,300 --> 00:00:41,000
+Và  sau đó ta nhập
+
+15
+00:00:41,000 --> 00:00:44,390
+Nhấn chuột phải, Import.
+
+16
+00:00:44,390 --> 00:00:46,826
+Ở đây, ta chọn một URL.
+
+17
+00:00:46,826 --> 00:00:52,016
+Ta chép và dán địa chỉ URL.
+
+18
+00:00:52,016 --> 00:00:54,540
+Và ấn Import.
+
+19
+00:00:54,540 --> 00:00:55,200
+Xong.
+
+20
+00:00:55,200 --> 00:00:59,550
+Ta có thể xem notebook ở đây.
+
+21
+00:00:59,550 --> 00:01:01,380
+Sau đó, hướng dẫn nói rằng
+
+22
+00:01:01,380 --> 00:01:04,760
+cần theo chỉ dẫn trong notebook.
+
+23
+00:01:04,760 --> 00:01:07,010
+Đây là tổng hợp của những gì ta đã thấy.
+
+24
+00:01:07,010 --> 00:01:09,700
+Ta cuộn chuột xuống một ít.
+
+25
+00:01:09,700 --> 00:01:12,410
+Ta bỏ qua ô này, như hướng dẫn.
+
+26
+00:01:12,410 --> 00:01:14,650
+Ta đến thẳng đây.
+
+27
+00:01:14,650 --> 00:01:16,750
+Khi bạn thấy cái này trong bất kỳ notebook nào,
+
+28
+00:01:16,750 --> 00:01:19,490
+nó có nghĩa là bạn thực sự phải làm một điều gì đó.
+
+29
+00:01:19,490 --> 00:01:22,310
+Ở đây, ta được hướng dẫn điền vào thư điện tử.
+
+30
+00:01:22,310 --> 00:01:24,420
+Đây phải là một địa chỉ thư điện tử hợp lệ.
+
+31
+00:01:24,420 --> 00:01:27,890
+Lẫn nữa, ta ấn Shifft Enter.
+
+32
+00:01:27,890 --> 00:01:31,680
+Bởi vì đây là tập mã đầu tiên ta chạy trong notebook này,
+
+33
+00:01:31,680 --> 00:01:35,200
+nó nhắc ta phải gấn vào một cụm.
+
+34
+00:01:35,200 --> 00:01:35,880
+Thật tuyệt.
+
+35
+00:01:35,880 --> 00:01:38,530
+Giờ ta đã sẵn sàng để chạy ô tiếp theo.
+
+36
+00:01:38,530 --> 00:01:40,085
+Đây chỉ là một ô xác nhận.
+
+37
+00:01:40,085 --> 00:01:41,980
+Nó in địa chỉ thư điện tử của ta.
+
+38
+00:01:41,980 --> 00:01:44,500
+Xác nhận thư điện tử này là chính xác.
+
+39
+00:01:44,500 --> 00:01:46,760
+Ấn Shift Enter một lần nữa.
+
+40
+00:01:46,760 --> 00:01:48,220
+Và ta đến đây.
+
+41
+00:01:48,220 --> 00:01:51,650
+Ấn Shift Enter một lần nữa.
+
+42
+00:01:51,650 --> 00:01:54,710
+Chú ý rằng, tại thời điểm này, nếu bạn có bất kỳ thông báo lỗi liên quan đến nhập mã từ thư viện,
+
+43
+00:01:54,710 --> 00:01:57,040
+nó chỉ có nghĩa là, một lần nữa, bạn chưa cài đặt
+
+44
+00:01:57,040 --> 00:01:59,270
+thư viện spark mooc meta.
+
+45
+00:01:59,270 --> 00:02:03,750
+Bạn hãy làm theo các bước trong băng hình kỳ trước để hoàn thành việc cài đặt.
+
+46
+00:02:03,750 --> 00:02:05,230
+Trong vài giây sau, bạn sẽ
+
+47
+00:02:05,230 --> 00:02:08,570
+nhận được một thư điện tử như thế này trong hộp thư.
+
+48
+00:02:08,570 --> 00:02:10,250
+Rõ ràng rằng, cần phải kiểm tra hộ thư rác
+
+49
+00:02:10,250 --> 00:02:13,170
+nếu không thấy nó đến trong chốc lát.
+
+50
+00:02:13,170 --> 00:02:16,290
+Tất cả những gì ta cần ở đây là một mã xác nhận riêng.
+
+51
+00:02:16,290 --> 00:02:19,530
+Ta có thể sao chép chúng.
+
+52
+00:02:19,530 --> 00:02:21,830
+Và như hướng dẫn ở đây trên notebook,
+
+53
+00:02:21,830 --> 00:02:25,270
+ta quay lại phần mở đầu của hướng dẫn
+
+54
+00:02:25,270 --> 00:02:28,230
+và vô hiệu hóa bình luận ở đây.
+
+55
+00:02:28,230 --> 00:02:32,610
+Lần nữa ta điền mã xác nhận ở đây.
+
+56
+00:02:32,610 --> 00:02:33,410
+Thật tuyệt.
+
+57
+00:02:33,410 --> 00:02:35,980
+Ta ấn Shift Enter.
+
+58
+00:02:35,980 --> 00:02:39,030
+Giờ thì ta cuộn chuột ngược lại phần hai.
+
+59
+00:02:39,030 --> 00:02:43,656
+Lẫn nữa, ta ấn Shift Enter và Shift Enter.
+
+60
+00:02:43,656 --> 00:02:45,530
+Đây là cách ta xác nhận.
+
+61
+00:02:45,530 --> 00:02:47,560
+rằng mã xác nhận là đúng.
+
+62
+00:02:47,560 --> 00:02:51,555
+Giờ ta sẽ cần thực hiện một số bước trong đã làm trong lab 0.
+
+63
+00:02:51,555 --> 00:02:52,960
+Các bước ở đây.
+
+64
+00:02:52,960 --> 00:02:54,750
+Để làm làm mọi thứ trở nên dễ dàng hơn,
+
+65
+00:02:54,750 --> 00:02:57,650
+ta sẽ mở lab zero trong một thanh mục khác.
+
+66
+00:02:57,650 --> 00:03:04,200
+Ta ấn chuột vào Recent, chuột phải vào Open Link in Tab.
+
+67
+00:03:04,200 --> 00:03:05,250
+Tuyệt.
+
+68
+00:03:05,250 --> 00:03:08,610
+Bước đầu tiên là khởi động lại cụm của ta.
+
+69
+00:03:08,610 --> 00:03:13,080
+Ta sẽ quay lại lab zero, và ta khởi động cụm của ta.
+
+70
+00:03:13,080 --> 00:03:16,120
+Điều này mất khoảng nửa phút.
+
+71
+00:03:16,120 --> 00:03:16,690
+Tuyệt.
+
+72
+00:03:16,690 --> 00:03:20,450
+Cụm của ta được sắp xếp, và notebook đã được đính vào.
+
+73
+00:03:20,450 --> 00:03:22,020
+Hãy cùng xem bước tiếp theo.
+
+74
+00:03:22,020 --> 00:03:24,900
+Ta cần phải ấn vào Run All.
+
+75
+00:03:24,900 --> 00:03:25,740
+Thật dễ.
+
+76
+00:03:25,740 --> 00:03:29,210
+Chỉ ấn Run All, và chờ.
+
+77
+00:03:29,210 --> 00:03:31,480
+Trong vài giây, biểu mẫu này
+
+78
+00:03:31,480 --> 00:03:34,190
+sẽ biến mất, và ta sẽ quay lại với mẫu Run All.
+
+79
+00:03:34,190 --> 00:03:36,860
+Ta hoàn tất.
+
+80
+00:03:36,860 --> 00:03:40,540
+Xác nhận là máy tính của bạn vượt qua các kiểm tra.
+
+81
+00:03:40,540 --> 00:03:42,550
+Lần nữa, ta di chuột xuống, và ta sẽ có thể
+
+82
+00:03:42,550 --> 00:03:46,200
+khẳng định một cách trực quan rằng mọi thứ ổn.
+
+83
+00:03:46,200 --> 00:03:48,460
+Một kiểm tra khác đã được vượt qua.
+
+84
+00:03:48,460 --> 00:03:50,620
+Xuất sắc.
+
+85
+00:03:50,620 --> 00:03:54,570
+Bước tiếp theo là ấn vào Publish Notebook.
+
+86
+00:03:54,570 --> 00:03:56,510
+Ta có thể tìm trong mục lục File.
+
+87
+00:03:56,510 --> 00:03:58,990
+File, Publish.
+
+88
+00:03:58,990 --> 00:04:02,370
+Và ta ấn chuột vào Publish.
+
+89
+00:04:02,370 --> 00:04:03,930
+Nó sẽ cho ta một địa chỉ URL.
+
+90
+00:04:03,930 --> 00:04:06,350
+Ta ấn chuột phải và sao chép địa chỉ này.
+
+91
+00:04:06,350 --> 00:04:08,490
+Xong.
+
+92
+00:04:08,490 --> 00:04:09,100
+Xuất sắc.
+
+93
+00:04:09,100 --> 00:04:11,730
+Ta sẽ quay lại phần hướng dẫn.
+
+94
+00:04:11,730 --> 00:04:16,721
+Ta có thể xem ở đây là ta cần phải dán địa chỉ URL của máy tính.
+
+95
+00:04:16,721 --> 00:04:17,220
+Tuyệt.
+
+96
+00:04:17,220 --> 00:04:19,430
+Ta cần ấn Shift Enter.
+
+97
+00:04:19,430 --> 00:04:21,360
+Trong khi đó, bạn cần phải nhớ rằng,
+
+98
+00:04:21,360 --> 00:04:23,090
+ta cần phải khởi động lại cụm.
+
+99
+00:04:23,090 --> 00:04:26,530
+Cả máy tính lab zero vào Autograder
+
+100
+00:04:26,530 --> 00:04:28,370
+cần phải chạy trên cùng một cụm.
+
+101
+00:04:28,370 --> 00:04:30,490
+Điều này có nghĩa là các nội dung của Autograder
+
+102
+00:04:30,490 --> 00:04:32,920
+cũng đã được thiết lập lại.
+
+103
+00:04:32,920 --> 00:04:36,070
+Đây là thời điểm thích hợp để ấn Run All trong máy tính Autograder
+
+104
+00:04:36,070 --> 00:04:40,219
+để tái đánh giá các biến.
+
+105
+00:04:40,219 --> 00:04:42,260
+Ta cần phải xem các bước được đánh giá tiếp theo.
+
+106
+00:04:42,260 --> 00:04:44,510
+Chúng sẽ gửi ta thư điện tử.
+
+107
+00:04:44,510 --> 00:04:46,760
+Xác nhận nó chính xác.
+
+108
+00:04:46,760 --> 00:04:50,370
+Xác nhận lần nữa mã xác nhận là chính xác.
+
+109
+00:04:50,370 --> 00:04:53,710
+Cuối cùng, điền phiên bản thực hành vào đây.
+
+110
+00:04:53,710 --> 00:04:58,700
+Thực sự, đây là lab zero, do đó ta chỉ cần sao chép/dán cái này.
+
+111
+00:04:58,700 --> 00:05:01,007
+Cho các thực hành tiếp, ta sẽ cần cập nhật cái này.
+
+112
+00:05:01,007 --> 00:05:04,350
+Ta ấn Shift Enter.
+
+113
+00:05:04,350 --> 00:05:06,150
+Về bản chất, giờ ta đã hoàn thành tất cả
+
+114
+00:05:06,150 --> 00:05:09,970
+để điền vào địa chỉ thư điện tử, mã xác nhận và địa chỉ URL công khai
+
+115
+00:05:09,970 --> 00:05:12,400
+cho lab zero.
+
+116
+00:05:12,400 --> 00:05:14,300
+Giờ ta sẽ gửi những cái này.
+
+117
+00:05:14,300 --> 00:05:18,630
+Ta ấn Shift Enter trên ô 3F.
+
+118
+00:05:18,630 --> 00:05:20,500
+Thành công.
+
+119
+00:05:20,500 --> 00:05:23,640
+nếu gửi quá thường xuyên, ta có thể thấy thông điệp báo lỗi
+
+120
+00:05:23,640 --> 00:05:24,730
+ở bước này.
+
+121
+00:05:24,730 --> 00:05:28,300
+Ta sẽ phải chờ một lúc.
+
+122
+00:05:28,300 --> 00:05:31,170
+Giờ ta chuyển đến bước tiếp theo.
+
+123
+00:05:31,170 --> 00:05:34,760
+Ở đây ta có một số chức năng tiện ích.
+
+124
+00:05:34,760 --> 00:05:37,020
+Bằng việc chạy, ví dụ, ô này,
+
+125
+00:05:37,020 --> 00:05:40,990
+tôi có thể thấy trạng thái của phần đệ trình của ta.
+
+126
+00:05:40,990 --> 00:05:45,180
+Ta có thể thấy trạng thái bây giờ là đang xử lý.
+
+127
+00:05:45,180 --> 00:05:47,760
+Ta có thể click vào cái này.
+
+128
+00:05:47,760 --> 00:05:50,240
+Ta có thể xem rằng không có đệ trình nào được tìm thấy.
+
+129
+00:05:50,240 --> 00:05:53,690
+Điều này có nghĩa là đệ trình đã được thiết lập thành công.
+
+130
+00:05:53,690 --> 00:05:56,150
+Ta giờ có thể di chuyển đến phần năm.
+
+131
+00:05:56,150 --> 00:05:59,260
+Điều này cho ta một chức năng tiện ích mà ta có thể gọi
+
+132
+00:05:59,260 --> 00:06:02,130
+để xem tât cả các đệ trình.
+
+133
+00:06:02,130 --> 00:06:04,900
+Lần nữa, Shift Enter.
+
+134
+00:06:04,900 --> 00:06:05,740
+Xuất sắc.
+
+135
+00:06:05,740 --> 00:06:07,510
+Giờ ta có thể xem điểm của ta ở đây.
+
+136
+00:06:07,510 --> 00:06:08,900
+Và đây là ID đệ trình.
+
+137
+00:06:08,900 --> 00:06:13,650
+Ta có thể sao chép cái này, và ta có thể dán nó vào ô tiếp theo.
+
+138
+00:06:13,650 --> 00:06:16,410
+Lần nữa, ta ấn Shift Enter.
+
+139
+00:06:16,410 --> 00:06:19,460
+Sau đó ta có thể sử dụng ô 6A để xem nhiều thông tin hơn
+
+140
+00:06:19,460 --> 00:06:22,000
+về đệ trình của ta.
+
+141
+00:06:22,000 --> 00:06:24,960
+Ta có thể xem, trong trường hợp này, nó đã thành công [khó nghe]
+
+142
+00:06:24,960 --> 00:06:27,640
+đậu, và điểm 100%.
+
+143
+00:06:27,640 --> 00:06:29,440
+Ta cũng có thể chạy ô tiếp theo để xem
+
+144
+00:06:29,440 --> 00:06:32,670
+tất cả các kết quả của máy tính sách lab zero như là chạy
+
+145
+00:06:32,670 --> 00:06:36,090
+trên dịch vụ Autograder.
+
+146
+00:06:36,090 --> 00:06:36,660
+Xuất sắc.
+
+147
+00:06:36,660 --> 00:06:39,480
+Đây là quá trình sử dụng Autograder.
+
+148
+00:06:39,480 --> 00:06:43,460
+Giờ ta sẽ quay lại edX để hoàn thành bước thứ ba.
+
+149
+00:06:43,460 --> 00:06:47,220
+Ta sẽ xem ở trang gần cuối của khóa học Autograder.
+
+150
+00:06:47,220 --> 00:06:52,360
+Ở đây, ta điền thông tin đăng nhập và ID đệ trình.
+
+151
+00:06:52,360 --> 00:06:54,480
+Sau đó ta ấn Check.
+
+152
+00:06:54,480 --> 00:06:57,620
+Trong vài giây, ta có thể xem kết quả ở đây.
+
+153
+00:06:57,620 --> 00:07:00,910
+Nó chính xác, và ta vừa mới có 100 điểm.
+
+154
+00:07:00,910 --> 00:07:02,680
+Ta cũng có thể xác nhận những kết quả này
+
+155
+00:07:02,680 --> 00:07:05,010
+bằng ấn chuột lên thanh Progress.
+
+156
+00:07:05,010 --> 00:07:07,760
+Ở đây là 100%.
+
+157
+00:07:07,760 --> 00:07:09,100
+Là nó.
+
+158
+00:07:09,100 --> 00:07:11,720
+Giờ ta sẵn sàng để đến với tuần thứ hai với nhiều
+
+159
+00:07:11,720 --> 00:07:13,380
+yêu cầu về thực nghiệm.
+
+160
+00:07:13,380 --> 00:07:14,930
+Chúc mừng.
+
+161
+00:07:14,930 --> 00:07:15,744
+

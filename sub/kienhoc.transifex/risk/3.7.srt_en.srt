@@ -1,0 +1,516 @@
+0
+00:00:05,105 --> 00:00:07,110
+Okay, let&#39;s do some data.
+https://youtu.be/OXoNupVop6c
+1
+00:00:07,110 --> 00:00:08,100
+We&#39;re having fun?
+
+2
+00:00:08,100 --> 00:00:09,110
+We have three assets.
+
+3
+00:00:09,110 --> 00:00:12,178
+You have a stock.data.
+
+4
+00:00:12,178 --> 00:00:14,860
+You have three securities for sure, 1, 2, 3.
+
+5
+00:00:14,860 --> 00:00:19,420
+And let&#39;s assume for simplicity what are the weights in all three.
+
+6
+00:00:19,420 --> 00:00:24,800
+Something that I forget mentioning but is important, equally weighted.
+
+7
+00:00:24,800 --> 00:00:27,913
+So you&#39;re just weighting a third, a third, a third.
+
+8
+00:00:27,913 --> 00:00:30,974
+You can off course choose to distribute the weights,
+
+9
+00:00:30,974 --> 00:00:33,976
+that&#39;s another way of how diversification works.
+
+10
+00:00:33,976 --> 00:00:38,995
+So take an extreme example, I have three securities in my portfolio but
+
+11
+00:00:38,995 --> 00:00:44,970
+I put weight on only one of them, that&#39;s not diversification, right?
+
+12
+00:00:44,970 --> 00:00:48,894
+Anyway, what are the average returns of securities 1, 2, and 3?
+
+13
+00:00:48,894 --> 00:00:51,254
+And I&#39;m going to write them down and
+
+14
+00:00:51,254 --> 00:00:54,880
+this should be pretty straightforward to figure out.
+
+15
+00:00:54,880 --> 00:01:00,182
+2.18, we already did, 3.25, we already did,
+
+16
+00:01:00,182 --> 00:01:05,490
+and 2.26, you should have done while I was talking.
+
+17
+00:01:07,245 --> 00:01:08,786
+It&#39;s just the average function.
+
+18
+00:01:11,745 --> 00:01:15,848
+What is the average return of the portfolio of the three securities?
+
+19
+00:01:15,848 --> 00:01:20,710
+If you&#39;re [INAUDIBLE] a portfolio of three securities, what will you do?
+
+20
+00:01:21,850 --> 00:01:24,729
+Create a new column called Rp.
+
+21
+00:01:26,836 --> 00:01:33,455
+Put a third R1 + one-third R2 + one-third R3,
+
+22
+00:01:33,455 --> 00:01:39,510
+they are sitting in some columns, see?
+
+23
+00:01:39,510 --> 00:01:42,810
+And you start with two because that&#39;s the first data item,
+
+24
+00:01:42,810 --> 00:01:45,710
+c2, d2, e2, third, third, third.
+
+25
+00:01:45,710 --> 00:01:47,030
+That&#39;s the portfolio.
+
+26
+00:01:47,030 --> 00:01:50,980
+You&#39;ve got the first number in column, whatever you call it.
+
+27
+00:01:50,980 --> 00:01:52,880
+Item, row number two.
+
+28
+00:01:52,880 --> 00:01:54,950
+Drag down bring it back to 61.
+
+29
+00:01:54,950 --> 00:01:59,570
+So you&#39;ll have column 2 through 61.
+
+30
+00:02:01,160 --> 00:02:04,700
+I hope you&#39;re understanding what I&#39;m talking about and doing it because to me,
+
+31
+00:02:04,700 --> 00:02:08,370
+that&#39;s the fun part, is that I&#39;m not always writing out everything.
+
+32
+00:02:08,370 --> 00:02:13,083
+And you&#39;re actually actively engaged rather than sitting back drinking in
+
+33
+00:02:13,083 --> 00:02:15,290
+your class of wine and watching me,
+
+34
+00:02:15,290 --> 00:02:18,842
+which is fine too if that&#39;s what makes you learn faster.
+
+35
+00:02:18,842 --> 00:02:20,724
+What is the average journal portfolio?
+
+36
+00:02:20,724 --> 00:02:24,065
+See, you call the portfolio and then calculate the average.
+
+37
+00:02:24,065 --> 00:02:30,656
+Turns out this number will be 2.56%.
+
+38
+00:02:30,656 --> 00:02:32,982
+And very quickly, since we&#39;ve done this before,
+
+39
+00:02:32,982 --> 00:02:34,616
+we are beginning to get a hang of it.
+
+40
+00:02:34,616 --> 00:02:37,829
+How is it related to these?
+
+41
+00:02:40,501 --> 00:02:49,028
+And the answer will be, they are the, Same.
+
+42
+00:02:49,028 --> 00:02:49,783
+Why?
+
+43
+00:02:49,783 --> 00:02:54,887
+Because averaging is linear, and a portfolio is a linear
+
+44
+00:02:54,887 --> 00:03:02,240
+combination of the returns of three securities, in this case equally weighted.
+
+45
+00:03:03,710 --> 00:03:04,670
+Does that make sense?
+
+46
+00:03:04,670 --> 00:03:07,574
+Do it, and if I stare at it, it makes sense, right?
+
+47
+00:03:07,574 --> 00:03:12,229
+So you have 2.18, 2.26, and 3.25, pretty far off.
+
+48
+00:03:12,229 --> 00:03:19,000
+So the answer is likely to be somewhere between 2.26 and 3.15.
+
+49
+00:03:19,000 --> 00:03:21,240
+And answer turns out to be 2.56.
+
+50
+00:03:21,240 --> 00:03:24,410
+Now of course if I make silly mistakes, what will you do?
+
+51
+00:03:24,410 --> 00:03:28,304
+Gotham is a silly guy, we&#39;re gonna fix it, no worries.
+
+52
+00:03:28,304 --> 00:03:31,516
+If I make a conceptual error, that&#39;s a problem.
+
+53
+00:03:31,516 --> 00:03:36,150
+And I doubt I will because I&#39;m trying very hard to make sure I&#39;m well prepared, but
+
+54
+00:03:36,150 --> 00:03:38,080
+I&#39;m human I could make a mistake.
+
+55
+00:03:39,110 --> 00:03:41,780
+And we can then fix it and keep going, right?
+
+56
+00:03:41,780 --> 00:03:45,540
+That&#39;s the beauty of the digital world.
+
+57
+00:03:45,540 --> 00:03:49,600
+Whereas in the real world, sometime I feel like if I said something wrong in the real
+
+58
+00:03:49,600 --> 00:03:55,070
+class, the class of 50, and I didn&#39;t even realize it, is there a possibility
+
+59
+00:03:55,070 --> 00:04:00,030
+that one point may stay with them and make them confused.
+
+60
+00:04:01,070 --> 00:04:03,260
+Less opportunity to go fix it.
+
+61
+00:04:03,260 --> 00:04:06,060
+And that&#39;s another advantage of digital education.
+
+62
+00:04:06,060 --> 00:04:07,740
+So why don&#39;t we do this?
+
+63
+00:04:07,740 --> 00:04:10,800
+Let&#39;s keep going and talk about variances.
+
+64
+00:04:12,020 --> 00:04:17,071
+I will assume you have already created a portfolio of three
+
+65
+00:04:17,071 --> 00:04:22,443
+securities in a column 2 through 61, to make life simple.
+
+66
+00:04:22,443 --> 00:04:24,863
+What are the risks of the three securities?
+
+67
+00:04:24,863 --> 00:04:29,290
+And here, let&#39;s talk about risks in terms of variances.
+
+68
+00:04:29,290 --> 00:04:30,706
+So write out the variances.
+
+69
+00:04:30,706 --> 00:04:35,820
+Sigma square hat, 0.0127,
+
+70
+00:04:35,820 --> 00:04:40,934
+sigma 2 square hat 0.0102,
+
+71
+00:04:40,934 --> 00:04:44,002
+sigma 3 square hat,
+
+72
+00:04:44,002 --> 00:04:48,616
+it should take you as much time.
+
+73
+00:04:52,119 --> 00:04:56,519
+Sorry, 116.
+
+74
+00:04:56,519 --> 00:04:58,560
+So which function are you using?
+
+75
+00:04:59,610 --> 00:05:02,607
+And the function you wanna use is VAR.S.
+
+76
+00:05:02,607 --> 00:05:06,380
+.S is because you&#39;re using a sample,
+
+77
+00:05:06,380 --> 00:05:09,000
+we don&#39;t have all the data on all these companies.
+
+78
+00:05:09,000 --> 00:05:10,690
+That&#39;s almost impossible, right?
+
+79
+00:05:10,690 --> 00:05:13,210
+So, okay, so you&#39;ve done these three.
+
+80
+00:05:14,570 --> 00:05:17,248
+What is the risk of the portfolio of the three securities?
+
+81
+00:05:17,248 --> 00:05:22,663
+Now this is very easy to do if you&#39;ve calculated the portfolio return,
+
+82
+00:05:22,663 --> 00:05:25,022
+which I&#39;m assuming you have.
+
+83
+00:05:25,022 --> 00:05:32,581
+And it&#39;ll work out to be 0.0053.
+
+84
+00:05:32,581 --> 00:05:35,093
+So what is the risk of the portfolio of the three securities?
+
+85
+00:05:35,093 --> 00:05:37,180
+0.0053.
+
+86
+00:05:37,180 --> 00:05:38,370
+How did I calculate it?
+
+87
+00:05:38,370 --> 00:05:43,520
+I just went to the column, did VAR.S, 2 through 61 of
+
+88
+00:05:43,520 --> 00:05:48,460
+the column in which portfolio of the three securities you&#39;ve created.
+
+89
+00:05:48,460 --> 00:05:50,330
+First, create the portfolio return and
+
+90
+00:05:50,330 --> 00:05:54,480
+then worry about variances, otherwise you&#39;ll go nuts.
+
+91
+00:05:54,480 --> 00:05:57,230
+How many items will you have to add up?
+
+92
+00:05:57,230 --> 00:05:58,370
+9, right?
+
+93
+00:05:59,560 --> 00:06:02,625
+How is it related to the average of the three securities?
+
+94
+00:06:02,625 --> 00:06:05,966
+Now the average of the three securities is pretty straightforward.
+
+95
+00:06:05,966 --> 00:06:11,135
+Remember, I just have to average the top three numbers and
+
+96
+00:06:11,135 --> 00:06:16,949
+it turns out to be 0.0115, very similar to 0.0016.
+
+97
+00:06:16,949 --> 00:06:17,517
+Why?
+
+98
+00:06:17,517 --> 00:06:23,402
+Because the average of the first two was already around 0.000114.
+
+99
+00:06:23,402 --> 00:06:25,560
+So, something like that number.
+
+100
+00:06:25,560 --> 00:06:29,701
+So you&#39;re not changing the average very much going from 2 to 3.
+
+101
+00:06:31,230 --> 00:06:35,890
+Quick, can you please compare the risk of
+
+102
+00:06:35,890 --> 00:06:41,380
+the sigma square hat b with the third item, 0.0015?
+
+103
+00:06:41,380 --> 00:06:44,720
+Which is much lower.
+
+104
+00:06:44,720 --> 00:06:48,900
+This is much lower than this.
+
+105
+00:06:48,900 --> 00:06:52,675
+But the question I&#39;m asking is, go back and
+
+106
+00:06:52,675 --> 00:06:56,562
+compare this with the portfolio of 1 and 2.
+
+107
+00:06:59,083 --> 00:07:00,510
+How much was that?
+
+108
+00:07:00,510 --> 00:07:04,060
+I think that was 0.0061.
+
+109
+00:07:04,060 --> 00:07:12,130
+So, the drop from combining one and two was drastic.
+
+110
+00:07:12,130 --> 00:07:20,390
+The drop from going from 1, 2 to 1, 2, 3 is not as much.
+
+111
+00:07:20,390 --> 00:07:25,090
+And the reason will back to what, you have already gotten a lot of diversification.
+
+112
+00:07:25,090 --> 00:07:27,790
+Simply because you started over two securities,
+
+113
+00:07:27,790 --> 00:07:30,690
+which correlation was very low.
+
+114
+00:07:30,690 --> 00:07:34,610
+And then you added a third and the correlation is not as low.
+
+115
+00:07:34,610 --> 00:07:40,010
+So there are those reasons, I would ask you to mess around the data.
+
+116
+00:07:40,010 --> 00:07:43,200
+I&#39;m asking good questions here, I think.
+
+117
+00:07:43,200 --> 00:07:47,640
+And what your goal should be, I&#39;m giving you the answers, which in sometimes is
+
+118
+00:07:47,640 --> 00:07:52,680
+dysfunctional, but I&#39;m doing that simply because numbers are very cool to compare.
+
+119
+00:07:52,680 --> 00:07:55,590
+You can talk concept forever and you bang your head against the wall.
+
+120
+00:07:56,660 --> 00:08:01,872
+And the beauty of finance is you can at least calculate numbers for
+
+121
+00:08:01,872 --> 00:08:05,240
+most of the concepts we talk about.
+
+122
+00:08:05,240 --> 00:08:08,470
+The tragedy of finance is, I believe,
+
+123
+00:08:08,470 --> 00:08:14,070
+that we haven&#39;t included a lot of people in society
+
+124
+00:08:14,070 --> 00:08:18,720
+into the beauty of how to create value through financial thinking.
+
+125
+00:08:18,720 --> 00:08:21,610
+And part of the reason I&#39;m doing MOOCs, or I love MOOCs,
+
+126
+00:08:21,610 --> 00:08:25,600
+is hopefully I&#39;m changing that a little bit in my own way.
+
+127
+00:08:25,600 --> 00:08:27,720
+But talk about that later.
+
+128
+00:08:27,720 --> 00:08:28,220
+See you soon.
+

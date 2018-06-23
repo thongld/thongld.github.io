@@ -1,0 +1,669 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/IjNN3gRmmxE
+
+1
+00:00:00,000 --> 00:00:00,135
+
+2
+00:00:00,135 --> 00:00:02,968
+RAMESH YERRABALLI: Let's take a
+look at the concept of digitization.
+
+3
+00:00:02,968 --> 00:00:07,090
+
+4
+00:00:07,090 --> 00:00:10,620
+JONATHAN VALVANO: The world we
+live in is inherently analog.
+
+5
+00:00:10,620 --> 00:00:15,570
+That means the signals are
+continuous, both in time and space.
+
+6
+00:00:15,570 --> 00:00:18,950
+However, computers are
+inherently digital.
+
+7
+00:00:18,950 --> 00:00:22,820
+So Professor Yerraballi, how
+do we capture analog signals
+
+8
+00:00:22,820 --> 00:00:24,575
+in a digital form?
+
+9
+00:00:24,575 --> 00:00:25,950
+RAMESH YERRABALLI: That is right.
+
+10
+00:00:25,950 --> 00:00:28,250
+So we have computers.
+
+11
+00:00:28,250 --> 00:00:34,220
+For us, it's a micro controller,
+which is inherently digital,
+
+12
+00:00:34,220 --> 00:00:41,030
+because it stores information
+in the form of binary data.
+
+13
+00:00:41,030 --> 00:00:49,920
+And we have the analog world,
+which conveys information
+
+14
+00:00:49,920 --> 00:00:58,055
+as a continuous time varying signal.
+
+15
+00:00:58,055 --> 00:01:01,120
+
+16
+00:01:01,120 --> 00:01:04,510
+And we have to interface these two.
+
+17
+00:01:04,510 --> 00:01:10,030
+So our first kind of interfacing is how
+do we read information that's analog
+
+18
+00:01:10,030 --> 00:01:14,090
+and store it in digital form?
+
+19
+00:01:14,090 --> 00:01:18,020
+So what we need is a
+conversion, which we call analog
+
+20
+00:01:18,020 --> 00:01:24,750
+to digital conversation, ADC,
+which does that act for us.
+
+21
+00:01:24,750 --> 00:01:30,870
+The second possibility is when we want
+to affect the world that is analog.
+
+22
+00:01:30,870 --> 00:01:40,000
+And the affectation is performed
+by, again, a microcontroller.
+
+23
+00:01:40,000 --> 00:01:43,640
+So we have the information
+in digital form.
+
+24
+00:01:43,640 --> 00:01:48,250
+And we want to convey it to the
+outside world, which is analog.
+
+25
+00:01:48,250 --> 00:02:01,110
+And we do that by introducing a
+module, which we will call a DAC.
+
+26
+00:02:01,110 --> 00:02:04,930
+A DAC is a digital to analog converter.
+
+27
+00:02:04,930 --> 00:02:09,840
+In some cases, the DAC could
+be part of the microcontroller.
+
+28
+00:02:09,840 --> 00:02:14,730
+But for flexibility, we
+will use external circuitry
+
+29
+00:02:14,730 --> 00:02:17,440
+that will do the job for us.
+
+30
+00:02:17,440 --> 00:02:19,623
+So let's take a look at some examples.
+
+31
+00:02:19,623 --> 00:02:22,260
+
+32
+00:02:22,260 --> 00:02:28,430
+So when I look at
+examples of analog stimuli
+
+33
+00:02:28,430 --> 00:02:31,150
+that have to be captured
+in digital form,
+
+34
+00:02:31,150 --> 00:02:35,710
+I can think of simple things
+like temperature sensors.
+
+35
+00:02:35,710 --> 00:02:40,100
+
+36
+00:02:40,100 --> 00:02:41,230
+JONATHAN VALVANO: Sound.
+
+37
+00:02:41,230 --> 00:02:44,465
+RAMESH YERRABALLI: Sound, which
+is where we're doing recording.
+
+38
+00:02:44,465 --> 00:02:47,070
+We're capturing sound.
+
+39
+00:02:47,070 --> 00:02:49,106
+And we can think of pressure sensors.
+
+40
+00:02:49,106 --> 00:02:52,504
+
+41
+00:02:52,504 --> 00:02:55,170
+JONATHAN VALVANO: There are signals
+in the body, Bio-potentials,
+
+42
+00:02:55,170 --> 00:02:55,970
+you could measure.
+
+43
+00:02:55,970 --> 00:02:56,886
+RAMESH YERRABALLI: OK.
+
+44
+00:02:56,886 --> 00:03:04,220
+Biosensors-- we can think
+of proximity sensors.
+
+45
+00:03:04,220 --> 00:03:06,720
+JONATHAN VALVANO: Oh, I don't
+want my robot to hit the wall.
+
+46
+00:03:06,720 --> 00:03:08,300
+RAMESH YERRABALLI: Yeah.
+
+47
+00:03:08,300 --> 00:03:11,670
+And we have optical sensors.
+
+48
+00:03:11,670 --> 00:03:16,850
+Now, the world of
+embedded systems is all
+
+49
+00:03:16,850 --> 00:03:21,540
+about being able to work with sensors.
+
+50
+00:03:21,540 --> 00:03:25,800
+But we also have the
+counterpart, which is actuators.
+
+51
+00:03:25,800 --> 00:03:31,190
+So if we call these sensors,
+which is the input part,
+
+52
+00:03:31,190 --> 00:03:34,210
+then the output is actuators.
+
+53
+00:03:34,210 --> 00:03:39,520
+That is, we produce a stimuli
+which affects the world.
+
+54
+00:03:39,520 --> 00:03:48,390
+So again, we can think of examples
+like controlling our motors
+
+55
+00:03:48,390 --> 00:03:54,840
+so that we send voltages
+that power our motors.
+
+56
+00:03:54,840 --> 00:03:56,840
+JONATHAN VALVANO: Sound
+could be an output, too.
+
+57
+00:03:56,840 --> 00:03:58,006
+RAMESH YERRABALLI: Speakers.
+
+58
+00:03:58,006 --> 00:04:02,740
+
+59
+00:04:02,740 --> 00:04:06,400
+We could have lights--
+dimmers, for example.
+
+60
+00:04:06,400 --> 00:04:09,080
+
+61
+00:04:09,080 --> 00:04:10,080
+What else?
+
+62
+00:04:10,080 --> 00:04:12,747
+JONATHAN VALVANO: Pacemaker uses
+an output to trigger the heart.
+
+63
+00:04:12,747 --> 00:04:13,663
+RAMESH YERRABALLI: OK.
+
+64
+00:04:13,663 --> 00:04:16,370
+JONATHAN VALVANO: So it's another
+biosensor, a bio actuator.
+
+65
+00:04:16,370 --> 00:04:19,899
+RAMESH YERRABALLI: Bio actuator.
+
+66
+00:04:19,899 --> 00:04:26,420
+And our anti-lock breaks are outputs.
+
+67
+00:04:26,420 --> 00:04:28,780
+And we want the braking
+to be controlled.
+
+68
+00:04:28,780 --> 00:04:34,020
+It's not an on off thing, but it's
+something that has to be a variable.
+
+69
+00:04:34,020 --> 00:04:34,604
+So that's one.
+
+70
+00:04:34,604 --> 00:04:36,811
+JONATHAN VALVANO: Just like
+temperature was an input,
+
+71
+00:04:36,811 --> 00:04:39,370
+it could be an output-- so our
+heating and air conditioning.
+
+72
+00:04:39,370 --> 00:04:43,830
+RAMESH YERRABALLI: So A/C could be.
+
+73
+00:04:43,830 --> 00:04:47,210
+So we have examples of
+sensors and actuators.
+
+74
+00:04:47,210 --> 00:04:53,270
+So in summary, then, we
+have the analog world
+
+75
+00:04:53,270 --> 00:04:59,666
+interfacing with our digital computers.
+
+76
+00:04:59,666 --> 00:05:03,270
+
+77
+00:05:03,270 --> 00:05:13,250
+And we have our ADCs and
+DACs that accomplish that.
+
+78
+00:05:13,250 --> 00:05:19,220
+So this module is going
+to be focusing on DACs.
+
+79
+00:05:19,220 --> 00:05:21,880
+JONATHAN VALVANO: What's next?
+
+80
+00:05:21,880 --> 00:05:24,920
+RAMESH YERRABALLI: So
+next goal is to understand
+
+81
+00:05:24,920 --> 00:05:28,190
+what the fundamentals
+of digitization are.
+
+82
+00:05:28,190 --> 00:05:31,320
+
+83
+00:05:31,320 --> 00:05:35,800
+So we saw that the
+purpose of digitization
+
+84
+00:05:35,800 --> 00:05:40,550
+is to take an analog
+signal and digitize it,
+
+85
+00:05:40,550 --> 00:05:42,900
+which means to store it in a computer.
+
+86
+00:05:42,900 --> 00:05:47,220
+So we have an analog signal that's
+continuously varying in time.
+
+87
+00:05:47,220 --> 00:05:53,000
+And for now, we will think of it
+as a change in changing voltage.
+
+88
+00:05:53,000 --> 00:05:55,240
+And we want to digitize this.
+
+89
+00:05:55,240 --> 00:06:00,310
+So digitization is done
+using two concepts.
+
+90
+00:06:00,310 --> 00:06:06,765
+One is our amplitude quantization.
+
+91
+00:06:06,765 --> 00:06:11,610
+
+92
+00:06:11,610 --> 00:06:18,280
+So by quantization, we mean
+discretizing the signal.
+
+93
+00:06:18,280 --> 00:06:22,050
+
+94
+00:06:22,050 --> 00:06:24,290
+So we have continuous.
+
+95
+00:06:24,290 --> 00:06:29,540
+The opposite of continuous, as far as
+a computer is concerned, is discrete.
+
+96
+00:06:29,540 --> 00:06:35,380
+So when we store our
+information in the computer,
+
+97
+00:06:35,380 --> 00:06:38,580
+we store them as digital values.
+
+98
+00:06:38,580 --> 00:06:46,970
+So our amplitude quantization is
+talking about separating our amplitude
+
+99
+00:06:46,970 --> 00:06:48,360
+into levels.
+
+100
+00:06:48,360 --> 00:06:51,020
+
+101
+00:06:51,020 --> 00:06:54,750
+So we'll call these levels.
+
+102
+00:06:54,750 --> 00:06:59,300
+So the counterpart to
+amplitude quantization
+
+103
+00:06:59,300 --> 00:07:08,895
+is to do time quantization, which
+is also referred to as sampling.
+
+104
+00:07:08,895 --> 00:07:15,550
+
+105
+00:07:15,550 --> 00:07:26,860
+So time quantization is capturing
+the signal periodically,
+
+106
+00:07:26,860 --> 00:07:31,400
+or as we say, sampling
+the signal, so that we
+
+107
+00:07:31,400 --> 00:07:34,600
+can capture the essence
+of the signal faithfully.
+
+108
+00:07:34,600 --> 00:07:37,160
+
+109
+00:07:37,160 --> 00:07:45,020
+So we have periodic capture of samples,
+which we call as time quantization.
+
+110
+00:07:45,020 --> 00:07:54,460
+So let's look at what the trade-offs
+are when we do amplitude quantization
+
+111
+00:07:54,460 --> 00:07:56,770
+and time quantization.
+
+112
+00:07:56,770 --> 00:08:08,160
+So the way we like to look at this is
+if I have more levels, from a computing
+
+113
+00:08:08,160 --> 00:08:24,190
+standpoint, I have to represent
+this by more bits per sample,
+
+114
+00:08:24,190 --> 00:08:27,310
+which means I have more levels.
+
+115
+00:08:27,310 --> 00:08:32,480
+If I have only two levels, I would
+represent all samples by just 0 or 1.
+
+116
+00:08:32,480 --> 00:08:37,340
+But more levels means
+more bits per sample.
+
+117
+00:08:37,340 --> 00:08:50,930
+From an analog standpoint, what this
+means is I have better precision.
+
+118
+00:08:50,930 --> 00:08:54,190
+So we'll define the term "precision."
+
+119
+00:08:54,190 --> 00:09:02,030
+The term "precision" is
+telling us exactly the number
+
+120
+00:09:02,030 --> 00:09:07,835
+of levels we can represent in a signal.
+
+121
+00:09:07,835 --> 00:09:10,480
+
+122
+00:09:10,480 --> 00:09:16,360
+So I am assuming that I
+have around 16 levels here.
+
+123
+00:09:16,360 --> 00:09:22,600
+If I have 16 levels, I
+have four bits per sample.
+
+124
+00:09:22,600 --> 00:09:26,110
+So the precision is 16.
+
+125
+00:09:26,110 --> 00:09:31,360
+Now, what I also have is
+this concept of resolution.
+
+126
+00:09:31,360 --> 00:09:35,610
+
+127
+00:09:35,610 --> 00:09:46,000
+Resolution is the smallest change I
+can represent in the analog signal.
+
+128
+00:09:46,000 --> 00:09:51,950
+So resolution is the
+smallest change, which
+
+129
+00:09:51,950 --> 00:09:57,790
+means it's the difference between
+levels that I can actually capture.
+
+130
+00:09:57,790 --> 00:10:02,470
+So what we are saying is
+this captures precision.
+
+131
+00:10:02,470 --> 00:10:14,770
+Now, what we also see, then,
+is if we have more samples--
+
+132
+00:10:14,770 --> 00:10:20,610
+then the rate of capture is
+high-- then what we are saying is,
+
+133
+00:10:20,610 --> 00:10:27,840
+from a computer's standpoint,
+we need faster processing.
+
+134
+00:10:27,840 --> 00:10:33,670
+Whether we are producing these samples
+or we're captioning these samples,
+
+135
+00:10:33,670 --> 00:10:39,400
+we have to do more
+processing per unit time.
+
+136
+00:10:39,400 --> 00:10:43,740
+
+137
+00:10:43,740 --> 00:10:50,050
+What it means from an analog standpoint
+is the more samples I capture,
+
+138
+00:10:50,050 --> 00:11:07,140
+the more faithful the
+digital representation
+
+139
+00:11:07,140 --> 00:11:14,910
+is with respect to the analog signal.
+
+140
+00:11:14,910 --> 00:11:19,070
+As a matter of fact, we
+will capture this idea
+
+141
+00:11:19,070 --> 00:11:30,100
+of faithfulness using a theorem
+called the Nyquist theorem, which
+
+142
+00:11:30,100 --> 00:11:34,550
+for us simply tells us how
+faithful is faithful enough?
+
+143
+00:11:34,550 --> 00:11:39,310
+That is, how many samples
+per second is best
+
+144
+00:11:39,310 --> 00:11:42,820
+to capture the essence
+of the analog signal?
+
+145
+00:11:42,820 --> 00:11:49,710
+So in summary, then, digitization is
+about taking a continuous time varying
+
+146
+00:11:49,710 --> 00:11:54,140
+signal and discretizing
+it so that we capture it
+
+147
+00:11:54,140 --> 00:12:01,400
+by these discrete points
+that attempt to make
+
+148
+00:12:01,400 --> 00:12:05,090
+a faithful representation of the signal.
+
+149
+00:12:05,090 --> 00:12:06,017

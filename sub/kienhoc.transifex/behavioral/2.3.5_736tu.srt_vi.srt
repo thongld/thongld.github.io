@@ -1,0 +1,353 @@
+1
+00:00:01,229 --> 00:00:04,700
+Ở mục này, ta sẽ ôn tập lại 
+những nội dung quan trọng về tự chủ
+
+2
+00:00:04,700 --> 00:00:08,330
+và lựa chọn theo thời gian.
+
+3
+00:00:08,330 --> 00:00:11,759
+Những kết quả trong tương lai được đánh giá khác với
+những kết quả ở hiện tại.
+
+4
+00:00:11,759 --> 00:00:17,130
+1 đô ở hiện tại thì đáng giá hơn ở tương lai, 
+vì thế mọi người muốn nhận được nhiều hơn
+
+5
+00:00:17,130 --> 00:00:21,779
+trong tương lai để đánh đổi cho việc từ bỏ nhận lấy
+1 đô ở hiện tại.
+
+6
+00:00:21,779 --> 00:00:25,880
+Việc chiết khấu này có thể được đo lường bằng cách 
+đặt một câu hỏi, ví dụ như, nếu tôi đã
+
+7
+00:00:25,880 --> 00:00:30,929
+hứa sẽ trả cho bạn 100 đô hôm nay, 
+tôi sẽ phải trả bạn bao nhiêu sau 365 ngày nữa
+
+8
+00:00:30,929 --> 00:00:34,879
+để bạn không phải phân vân 
+giữa hai lựa chọn?
+
+9
+00:00:34,879 --> 00:00:40,750
+Hoặc, nếu bạn được nhận 1000 đô trong một năm nữa, 
+thì tôi sẽ phải đề nghị trả cho bạn bao nhiêu 
+
+10
+00:00:40,750 --> 00:00:45,620
+để bạn không cảm thấy khác biệt giữa hai lựa chọn?
+
+11
+00:00:45,620 --> 00:00:51,390
+Ở biểu đồ này, đây là tương lai, 
+và đây là hiện tại.
+
+12
+00:00:51,390 --> 00:00:56,190
+Lấy ví dụ, bạn được hứa sẽ nhận được 
+1000 đô trong tương lai.
+
+13
+00:00:56,190 --> 00:00:59,039
+Bạn cần khoản tiền bao nhiêu trong hôm nay 
+để không cảm thấy khác biệt?
+
+14
+00:00:59,039 --> 00:01:05,920
+Giả sử hôm nay là 30 ngày trước hạn nhận được tiền, 
+bạn sẽ yêu cầu 700 đô.
+
+15
+00:01:05,920 --> 00:01:06,920
+để không thấy phân vân.
+
+16
+00:01:06,920 --> 00:01:13,490
+Nếu con số là 60 ngày, bạn sẽ yêu cầu 600 đô. 
+Cứ như thế và như thế.
+
+17
+00:01:13,490 --> 00:01:18,430
+Thứ kết nối những mức yêu cầu khác nhau này 
+ gọi là hàm chiết khấu.
+
+18
+00:01:18,430 --> 00:01:22,160
+Trong hàm chiết khấu này, 
+chiết khấu được thực hiện nhanh hơn
+
+19
+00:01:22,160 --> 00:01:29,930
+khi ở tương lai gần và giảm dần theo thời gian 
+trong tương lai xa.
+
+20
+00:01:29,930 --> 00:01:35,030
+Đây được gọi là hàm chiết khấu dạng hyperbol.
+
+21
+00:01:35,030 --> 00:01:38,670
+Hàm hyperbol giúp ta hiểu được những đảo ngược 
+trong sự ưa thích 
+
+22
+00:01:38,670 --> 00:01:40,410
+là một hàm số theo thời gian.
+
+23
+00:01:40,410 --> 00:01:46,240
+Ở biểu đồ này, SS đại diện cho một giá trị 
+nhỏ và sớm hơn
+
+24
+00:01:46,240 --> 00:01:51,880
+ví dụ 10 đô, 
+và LL là giá trị lớn và muộn hơn, 
+
+25
+00:01:51,880 --> 00:01:53,360
+ví dụ 12 đô.
+
+26
+00:01:53,360 --> 00:02:01,100
+Khi tôi ở đây, 
+giá trị chiết khấu của LL lớn hơn
+
+27
+00:02:01,100 --> 00:02:05,780
+giá trị chiết khấu của SS, do đó tôi chọn LL.
+
+28
+00:02:05,780 --> 00:02:15,030
+Nhưng khi thời gian tiến gần về SS, 
+hai hàm số giao nhau ở đây, và bây giờ, 
+
+29
+00:02:15,030 --> 00:02:21,000
+SS trông như có giá trị lớn hơn LL, 
+kết quả là
+
+30
+00:02:21,000 --> 00:02:22,650
+ta đưa ra một lựa chọn bốc đồng.
+
+31
+00:02:22,650 --> 00:02:33,459
+Khu vực này được gọi là ‘Lapse zone’ – 
+vùng mà ta bị rơi vào cám dỗ.
+
+32
+00:02:33,459 --> 00:02:37,050
+Một cách khác để xem xét phân tích này 
+là tuyên bố rằng
+
+33
+00:02:37,050 --> 00:02:41,680
+có hai thực thể 
+khác nhau trong ta, 
+
+34
+00:02:41,680 --> 00:02:48,130
+thực thể này quan sát thế giới từ đây, 
+và thực thể kia quan sát từ đây.
+
+35
+00:02:48,130 --> 00:02:54,390
+Thực thể đầu tiên là bên lập kế hoạch, 
+phần lý trí và khôn ngoan 
+
+36
+00:02:54,390 --> 00:02:55,769
+của ta.
+
+37
+00:02:55,769 --> 00:03:00,469
+Thực thể thứ hai là bên thực hiện, 
+phần bốc đồng của ta.
+
+38
+00:03:00,469 --> 00:03:05,079
+Bên thực hiện đã không tuân theo hoạch định 
+được lập ra bên lập kế hoạch bởi, tạo ra
+
+39
+00:03:05,079 --> 00:03:08,939
+khoảng cách giữa chủ ý và hành động, 
+điều mà ta đã đề cập trước đó trong khóa.
+
+40
+00:03:08,939 --> 00:03:13,930
+Tuy nhiên, bên lập kế hoạch thông minh có thể đánh lừa 
+ bên thực hiện bằng cách đặt ra rào cản 
+
+41
+00:03:13,930 --> 00:03:15,540
+hành vi.
+
+42
+00:03:15,540 --> 00:03:20,830
+Những người này được gọi là
+‘Người tinh tế, vốn có vấn đề về tự chủ
+
+43
+00:03:20,830 --> 00:03:26,080
+họ biết họ có vấn đề 
+và mong muốn giải quyết 
+
+44
+00:03:26,080 --> 00:03:28,219
+các vấn đề đó.
+
+45
+00:03:28,219 --> 00:03:33,920
+Bây giờ, ta có thể lập mô hình tự kiểm soát như 
+một trận chiến giữa bên lập kế hoạch
+
+46
+00:03:33,920 --> 00:03:39,189
+và người thực hiện, hoặc giữa ý chí và ham muốn.
+
+47
+00:03:39,189 --> 00:03:47,469
+Ở mô hình này, ý chí chiến thắng 
+ở vùng phía trên đường chấm chấm, 
+
+48
+00:03:47,469 --> 00:03:51,959
+trong khi ham muốn chiến thắng
+ ở vùng phía dưới đường này.
+
+49
+00:03:51,959 --> 00:03:56,549
+Nếu bạn nhận thấy mình đang ở
+ vùng bạn kỳ vọng rằng ham muốn 
+
+50
+00:03:56,549 --> 00:04:02,029
+sẽ chiến thắng ý chí, có một vài chiến lược để giảm ham muốn 
+
+51
+00:04:02,029 --> 00:04:05,180
+và tăng sức mạnh ý chí.
+
+52
+00:04:05,180 --> 00:04:10,129
+Tránh các kích thích hấp dẫn là một chiến lược dễ dàng
+ để làm giảm ham muốn, như 
+
+53
+00:04:10,129 --> 00:04:14,579
+việc áp đặt một" thời gian nguội" -
+ khoảng thời gian chờ đợi bắt buộc 
+
+54
+00:04:14,579 --> 00:04:18,570
+giữa việc đưa ra một quyết định 
+và việc thực sự mua hàng.
+
+55
+00:04:18,570 --> 00:04:23,420
+Một lựa chọn thứ ba là thay thế một sản phẩm ngẫu hứng 
+bằng một sản phẩm khác.
+
+56
+00:04:23,420 --> 00:04:28,190
+Ta cũng đã nói về hai chiến lựơc hiệu quả 
+để làm tăng sức mạnh ý chí. 
+
+57
+00:04:28,190 --> 00:04:33,040
+Chiến lược thứ nhất, cam kết trước, 
+đặc biệt là cam kết được hỗ trợ bởi tuyên bố công khai;
+
+58
+00:04:33,040 --> 00:04:37,590
+và chiến lược thứ hai là giữ 
+và giám sát những khoản ngân sách.
+
+59
+00:04:37,590 --> 00:04:43,340
+Thêm vào đó, việc gợi lên sự hối tiếc đoán trước
+ cho những lựa chọn của bạn là 
+
+60
+00:04:43,340 --> 00:04:45,350
+chiến lược hiệu quả thứ ba.
+
+61
+00:04:45,350 --> 00:04:48,940
+Cuối cùng, những điểm quyết định 
+đóng vai trò làm giảm ham muốn 
+
+62
+00:04:48,940 --> 00:04:54,220
+và tăng sức mạnh ý chí.
+
+63
+00:04:54,220 --> 00:04:58,130
+Để kết luận, đây là ba ví dụ cụ thể về chiến lược 
+tự kiểm soát.
+
+64
+00:04:58,130 --> 00:05:03,300
+Thứ nhất, hạn chế các nguồn cung cấp tài nguyên, 
+ngay cả khi nó đi kèm với một cái giá.
+
+65
+00:05:03,300 --> 00:05:08,040
+Người hút thuốc sẽ chỉ giữ một gói thuốc, 
+và học sinh sẽ
+
+66
+00:05:08,040 --> 00:05:12,480
+tự áp đặt một thời hạn sớm
+ để hoàn thành bài tập, chỉ để đặt 
+
+67
+00:05:12,480 --> 00:05:14,150
+những rào cản lên hành vi của họ.
+
+68
+00:05:14,150 --> 00:05:18,950
+Thứ hai, đóng băng các thẻ tín dụng 
+để đảm bảo rằng chúng chỉ được dùng 
+
+69
+00:05:18,950 --> 00:05:23,440
+cho trường hợp khẩn cấp, và việc sử dụng chúng 
+ không hề dễ dàng.
+
+70
+00:05:23,440 --> 00:05:27,390
+Cuối cùng, áp đặt những rào cản lên hành vi của bản thân 
+bằng cách ngăn cấm 
+
+71
+00:05:27,390 --> 00:05:30,340
+những hành động khác, ví dụ như rút tiền 
+từ tài khoản tiết kiệm.
+
+72
+00:05:30,340 --> 00:05:35,030
+Khi bạn có thể kiểm soát được hành vi 
+của bản thân vào thời điểm 
+
+73
+00:05:35,030 --> 00:05:39,580
+bạn có ý định làm điều gì đó tốt, 
+việc kiểm soát này sẽ giúp bạn thu hẹp 
+
+74
+00:05:39,580 --> 00:05:42,910
+khoảng cách giữa những ý định 
+và hành động thực tế.
+

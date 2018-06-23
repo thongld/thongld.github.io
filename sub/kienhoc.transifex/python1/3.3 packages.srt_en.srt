@@ -1,0 +1,245 @@
+1
+00:00:01,599 --> 00:00:06,129
+https://www.youtube.com/watch?v=rS0GJMSSHKY
+
+By now, I hope you're convinced that python
+functions and methods are extremely powerful:
+
+2
+00:00:06,129 --> 00:00:11,360
+you can basically use other people's code
+to solve your own problems. However, adding
+
+3
+00:00:11,360 --> 00:00:15,510
+all functions and methods that have been written
+up to now to the same Python distribution
+
+4
+00:00:15,510 --> 00:00:21,020
+would be a mess. There would be tons and tons
+of code in there, that you'll never use. Also,
+
+5
+00:00:21,020 --> 00:00:24,080
+maintaining all of this code would be a real
+pain.
+
+6
+00:00:24,080 --> 00:00:29,020
+This is where packages come into play. You
+can think of package as a directory of Python
+
+7
+00:00:29,020 --> 00:00:35,010
+scripts. Each such script is a so-called module.
+These modules specify functions, methods and
+
+8
+00:00:35,010 --> 00:00:40,219
+new Python types aimed at solving particular
+problems. There are thousands of Python packages
+
+9
+00:00:40,219 --> 00:00:45,519
+available from the internet. Among them are
+packages for data science: there's numpy to
+
+10
+00:00:45,519 --> 00:00:50,399
+efficiently work with arrays, matplotlib for
+data visualization, scikit-learn for machine
+
+11
+00:00:50,399 --> 00:00:51,940
+learning, and many others.
+
+12
+00:00:51,940 --> 00:00:56,460
+Not all these packages are available in Python
+by default. To use Python packages, you'll
+
+13
+00:00:56,460 --> 00:01:00,489
+first have to install them on your system,
+and then put code in your script to tell Python
+
+14
+00:01:00,489 --> 00:01:03,389
+that you want to use these packages.
+
+15
+00:01:03,389 --> 00:01:07,219
+Datacamp already has all necessary packages
+installed for you, but if you want to install
+
+16
+00:01:07,219 --> 00:01:11,890
+them on your own system, you'll want to use
+pip, a package maintenance system for Python.
+
+17
+00:01:11,890 --> 00:01:18,170
+If you go to this URL, you can download the
+file `get-pip.py`. Next, you go to the terminal,
+
+18
+00:01:18,170 --> 00:01:24,170
+and execute `python3 get-pip.py`. Now you
+can use pip to actually install a Python package
+
+19
+00:01:24,170 --> 00:01:29,130
+of your choosing. Suppose we want to install
+the numpy package, which you'll learn about
+
+20
+00:01:29,130 --> 00:01:34,950
+in the next chapter. You type `pip3 install
+numpy`. You have to use the commands python3
+
+21
+00:01:34,950 --> 00:01:38,929
+and pip3 here to tell our system that we're
+working with Python version 3.
+
+22
+00:01:38,929 --> 00:01:43,789
+Now that the package is installed, you can
+actually start using it in one of your Python
+
+23
+00:01:43,789 --> 00:01:48,399
+scripts. Before you can do this, you should
+import the package, or a specific module of
+
+24
+00:01:48,399 --> 00:01:52,460
+the package. You can do this with the `import`
+statement.
+
+25
+00:01:52,460 --> 00:01:57,649
+To import the entire numpy package, you can
+do import numpy, like this.
+
+26
+00:01:57,649 --> 00:02:03,229
+A commonly used function in Numpy is `array()`.
+It takes a list as input. Simply calling the
+
+27
+00:02:03,229 --> 00:02:07,079
+array function like this, will generate an
+error.
+
+28
+00:02:07,079 --> 00:02:11,850
+To refer to the array function from the numpy
+package, you'll need this:
+
+29
+00:02:11,850 --> 00:02:16,160
+This time it works. The Numpy array is very
+useful to do data science, but more on that
+
+30
+00:02:16,160 --> 00:02:17,940
+later.
+
+31
+00:02:17,940 --> 00:02:22,420
+Using this numpy dot prefix all the time can
+become pretty tiring, so you can also import
+
+32
+00:02:22,420 --> 00:02:26,810
+the package and refer to it with a different
+name. You can do this by extending your import
+
+33
+00:02:26,810 --> 00:02:29,840
+statement with as, like this:
+
+34
+00:02:29,840 --> 00:02:35,940
+Now, instead of numpy.array(), you'll have
+to use np.array() to use Numpy's array function:
+
+35
+00:02:35,940 --> 00:02:40,530
+There are cases in which you only need one
+specific function of a package. Python allows
+
+36
+00:02:40,530 --> 00:02:45,030
+you to make this explicit in your code. Suppose
+that we only want to use the array() function
+
+37
+00:02:45,030 --> 00:02:50,680
+from the Numpy package. Instead of doing import
+numpy, you can instead do from numpy import
+
+38
+00:02:50,680 --> 00:02:53,020
+array, like this:
+
+39
+00:02:53,020 --> 00:02:58,980
+This time, you can simply call the array function
+like this, no need to use numpy dot here.
+
+40
+00:02:58,980 --> 00:03:03,330
+This from import version to use specific parts
+of a package can be useful to limit the amount
+
+41
+00:03:03,330 --> 00:03:07,950
+of coding, but you're also loosing some of
+the context. Suppose you're working in a long
+
+42
+00:03:07,950 --> 00:03:12,980
+Python script. You import the array function
+from numpy at the very top, and way later,
+
+43
+00:03:12,980 --> 00:03:17,650
+you actually use this array function. Somebody
+else who's reading your code might have forgotten
+
+44
+00:03:17,650 --> 00:03:21,560
+that this array function is a specific Numpy
+function; it's not clear from the function
+
+45
+00:03:21,560 --> 00:03:27,310
+call. In that respect, the more standard import
+numpy call is preferred: In this case, your
+
+46
+00:03:27,310 --> 00:03:31,840
+function call is numpy.array(), making it
+very clear that you're working with Numpy.
+
+47
+00:03:31,840 --> 00:03:36,480
+At the end of the day, it's a matter of personal
+preference; up to you to decide what you think
+
+48
+00:03:36,480 --> 00:03:39,070
+is most convenient!
+
+49
+00:03:39,070 --> 00:03:42,960
+Off to the exercises now, where you can practice
+on different ways of importing packages and
+
+50
+00:03:42,960 --> 00:03:43,870
+modules yourself!
+

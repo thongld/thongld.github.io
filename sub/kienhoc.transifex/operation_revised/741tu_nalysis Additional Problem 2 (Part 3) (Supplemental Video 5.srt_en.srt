@@ -1,0 +1,282 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/bUOC_OAwjlA
+
+1
+00:00:05,000 --> 00:00:13,039
+operations management we are in capacity
+analysis and working on that
+
+2
+00:00:13,039 --> 00:00:18,469
+supplementary problem number two and
+this is our last part as you recall from
+
+3
+00:00:18,469 --> 00:00:23,649
+the previous parts we were working with
+the amazing shed company that produces
+
+4
+00:00:23,649 --> 00:00:28,750
+three different kinds of sheds the basic
+the superior and premium each of the
+
+5
+00:00:28,750 --> 00:00:33,849
+sheds uses the same resources
+fabrication teams assembly teams paint
+
+6
+00:00:33,849 --> 00:00:41,719
+teams and inspection teams the profit
+per shed is $190 for  basic 224 for
+
+7
+00:00:41,719 --> 00:00:47,850
+superior and 234 for premium given their
+current resources which shed is most
+
+8
+00:00:47,850 --> 00:00:54,590
+profitable we're gonna head back to the
+original information for the problem
+
+9
+00:00:54,590 --> 00:00:59,250
+where we found out what the unit load
+ for each of the different
+
+10
+00:00:59,250 --> 00:01:04,349
+types of sheds and the number of teams
+available and the number of available
+
+11
+00:01:04,349 --> 00:01:10,368
+hours per day per team so you can see
+here each of the different sheds has
+
+12
+00:01:10,368 --> 00:01:17,269
+different unit loads for fabrication
+assembly paint and inspection so what
+
+13
+00:01:17,269 --> 00:01:21,408
+we're going to do is we're going to take
+a look at the total number of shed
+
+14
+00:01:21,409 --> 00:01:28,990
+that can be made of each type assuming that
+that's the only kind of shed we make so
+
+15
+00:01:28,989 --> 00:01:34,929
+let's start with the basic shed the unit
+load for a basic shed of fabrication is
+
+16
+00:01:34,930 --> 00:01:36,170
+two hours
+
+17
+00:01:36,170 --> 00:01:43,049
+assembly is 3, paint 1, inspection
+1.5 now using the number of
+
+18
+00:01:43,049 --> 00:01:49,899
+teams available per day and the number of
+hours available per team we calculate
+
+19
+00:01:49,899 --> 00:01:55,250
+the amount of time available for each
+resource so in fabrication we have
+
+20
+00:01:55,250 --> 00:01:56,728
+28 hours
+
+21
+00:01:56,728 --> 00:02:04,109
+assembly 22.5 paint 14
+and inspection 12 so now we know how
+
+22
+00:02:04,109 --> 00:02:09,490
+much time we have and the amount of time
+needed which is the unit load gives us
+
+23
+00:02:09,490 --> 00:02:16,329
+our capacity per day 28 hours available
+to needed for fabrication so in the
+
+24
+00:02:16,330 --> 00:02:17,450
+fabrication area
+
+25
+00:02:17,449 --> 00:02:23,268
+we could produce 14 sheds now we gonna take a
+look at assembly which is seven and a
+
+26
+00:02:23,269 --> 00:02:24,450
+half
+
+27
+00:02:24,449 --> 00:02:32,378
+paint 14 and inspection 8 so when we're
+going to calculate the Profit just on
+
+28
+00:02:32,378 --> 00:02:37,810
+basic sheds we'll take the maximum
+number of sheds that we can produce
+
+29
+00:02:37,810 --> 00:02:43,959
+which in this case is seven and a half
+because of bottleneck that is the assembly
+
+30
+00:02:43,959 --> 00:02:50,409
+resource and then we're going to multiply that seven
+and a half by the hundred and ninety
+
+31
+00:02:50,409 --> 00:02:57,669
+dollars that we would earn as profit so
+that gives us 1425 now gonna take a look
+
+32
+00:02:57,669 --> 00:03:03,539
+at these superior shed and we do the
+same set of calculations now we're using
+
+33
+00:03:03,539 --> 00:03:09,689
+the unit loads just for superior sheds
+we still have 28 hours available per day
+
+34
+00:03:09,689 --> 00:03:15,699
+in fabrication 22.5 in
+assembly 14 in paint 12 in inspection
+
+35
+00:03:15,699 --> 00:03:22,608
+but now a capacity per day is different
+because our unit load is different so we
+
+36
+00:03:22,609 --> 00:03:25,030
+have twenty eight hours available a day
+
+37
+00:03:25,030 --> 00:03:31,549
+divided by two and a half hours needed
+in fabrication yielding 11.2
+
+38
+00:03:31,549 --> 00:03:37,219
+sheds if we do that for each of the
+resource pools fabrication assembly
+
+39
+00:03:37,219 --> 00:03:44,099
+paint an inspection we see that the
+bottleneck remains in assembly and this
+
+40
+00:03:44,099 --> 00:03:50,219
+time we only have 6.43
+sheds that we could produce since that's
+
+41
+00:03:50,219 --> 00:03:55,530
+the maximum number we're going to
+multiply that by the $220 profit we
+
+42
+00:03:55,530 --> 00:04:04,239
+would get per superior shed which yield
+$1414 so now let's look at the
+
+43
+00:04:04,239 --> 00:04:08,439
+premium shed with the premium shed
+the unit load again
+
+44
+00:04:08,439 --> 00:04:15,818
+changes and our available time per day
+stays the same so our capacity per day is now
+
+45
+00:04:15,818 --> 00:04:25,439
+different now in fabrication it's 11.2
+sheds assembly 5.92 paint 11.2 and
+
+46
+00:04:25,439 --> 00:04:27,259
+inspection 8
+
+47
+00:04:27,259 --> 00:04:34,009
+so our bottleneck happens to still be
+assembly and we can only produce 5.92
+
+48
+00:04:34,009 --> 00:04:39,899
+sheds so if that is the maximum number
+of shed that means we multiply that by
+
+49
+00:04:39,899 --> 00:04:49,329
+the profit per share of $230 yielding
+$1362 now we compare all three
+
+50
+00:04:49,329 --> 00:04:55,879
+profits which is most profitable well in
+this case it's the basic shed even
+
+51
+00:04:55,879 --> 00:05:01,120
+though it is the lowest priced shed by
+the one that gives us the least amount
+
+52
+00:05:01,120 --> 00:05:11,590
+of profit $190 we cannot produce many of
+the premium sheds at so that yields only
+
+53
+00:05:11,589 --> 00:05:18,439
+$1362 so we can produce a lot of basic
+sheds but not a lot of superior or premium sheds
+
+54
+00:05:18,439 --> 00:05:25,839
+so our overall profitability is keen on
+basic sheds so when we think about
+
+55
+00:05:25,839 --> 00:05:31,269
+profit and capacity analysis we have to
+think about not only how much we're
+
+56
+00:05:31,269 --> 00:05:38,870
+learning per item but also how many of
+that item we can produce thank you for
+
+57
+00:05:38,870 --> 00:05:41,699
+joining me and I'll see you in another session
+

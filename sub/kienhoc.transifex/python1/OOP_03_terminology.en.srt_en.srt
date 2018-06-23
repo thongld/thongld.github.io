@@ -1,0 +1,246 @@
+1
+00:00:08,810 --> 00:00:11,524
+https://youtu.be/N_8Vw64Aof0
+So now we're going to just cover
+a bit of terminology for
+
+2
+00:00:11,524 --> 00:00:13,221
+object oriented approaches.
+
+3
+00:00:13,221 --> 00:00:14,650
+There are two ways to look at terminology.
+
+4
+00:00:14,650 --> 00:00:16,983
+One is I can write quiz
+questions about terminology.
+
+5
+00:00:16,983 --> 00:00:19,615
+And the other is later I can use
+these words in a sentence and
+
+6
+00:00:19,615 --> 00:00:21,186
+expect that you understand them.
+
+7
+00:00:21,186 --> 00:00:26,387
+So basically these are some words that
+we throw around in object orientation.
+
+8
+00:00:26,387 --> 00:00:29,625
+One is class, which is like a template.
+
+9
+00:00:29,625 --> 00:00:32,145
+And I love the idea of a cookie cutter.
+
+10
+00:00:32,145 --> 00:00:36,154
+And a cookie cutter it's not a cookie,
+but if you have some dough,
+
+11
+00:00:36,154 --> 00:00:40,562
+you can make as many cookies and
+they're all based on that template.
+
+12
+00:00:40,562 --> 00:00:43,046
+So that's one.
+
+13
+00:00:43,046 --> 00:00:48,363
+Within a class you have code, is
+capability but it's more like a function.
+
+14
+00:00:48,363 --> 00:00:49,778
+We would call that a method.
+
+15
+00:00:49,778 --> 00:00:53,749
+Some people would call that a message, and
+those two terms are kind of equivalent.
+
+16
+00:00:53,749 --> 00:00:57,720
+You either call a method in the class or
+you send a message to the class.
+
+17
+00:00:57,720 --> 00:01:01,468
+Whichever you're doing, you're kind of
+activating a little tiny bit of code in
+
+18
+00:01:01,468 --> 00:01:03,408
+the class, like causing the dog to bark.
+
+19
+00:01:03,408 --> 00:01:06,684
+So here's the barking code which would
+cause a little bark noise to come out
+
+20
+00:01:06,684 --> 00:01:08,040
+of our speaker, for example.
+
+21
+00:01:08,040 --> 00:01:09,970
+And then there's code in data, so
+
+22
+00:01:09,970 --> 00:01:12,911
+method is how we access
+the code inside of an object.
+
+23
+00:01:12,911 --> 00:01:15,176
+And the data is like a field or
+an attribute,
+
+24
+00:01:15,176 --> 00:01:18,309
+which is really just a variable
+that lives inside the class.
+
+25
+00:01:18,309 --> 00:01:23,227
+And then the actual object that we're
+going to use or instance, that is, and
+
+26
+00:01:23,227 --> 00:01:25,356
+back to the cookie cutter model.
+
+27
+00:01:25,356 --> 00:01:30,198
+The class is how you make cookies,
+but the cookie itself is the instance.
+
+28
+00:01:30,198 --> 00:01:34,179
+And so we can have lots and
+lots and lots of cookies, right?
+
+29
+00:01:34,179 --> 00:01:36,826
+So class describes
+the abstract characteristics,
+
+30
+00:01:36,826 --> 00:01:40,312
+including all the methods,
+it's all the data that's inside of it,
+
+31
+00:01:40,312 --> 00:01:41,889
+the code that's inside of it.
+
+32
+00:01:41,889 --> 00:01:46,497
+Another way to think about it it's like a
+blueprint or a factory that manufactures
+
+33
+00:01:46,497 --> 00:01:50,374
+these things, but it's not the things
+that come out of the factory.
+
+34
+00:01:50,374 --> 00:01:53,394
+It's a pattern as compared
+to the thing itself.
+
+35
+00:01:53,394 --> 00:01:57,538
+It's what we expect to see coming
+from all of these objects.
+
+36
+00:01:57,538 --> 00:02:01,825
+So when we look at the string
+documentation, and we see the startswith
+
+37
+00:02:01,825 --> 00:02:06,778
+method, that basically says that all
+strings should have a startswith method.
+
+38
+00:02:06,778 --> 00:02:11,126
+That doesn't mean that the class defines
+what things should be there, but
+
+39
+00:02:11,126 --> 00:02:12,723
+it is not the thing itself.
+
+40
+00:02:12,723 --> 00:02:16,089
+The instance is the actual variable,
+the thing that we're going to use.
+
+41
+00:02:16,089 --> 00:02:21,350
+So in our program, we might have
+40 variables that are all strings,
+
+42
+00:02:21,350 --> 00:02:22,786
+and that's okay.
+
+43
+00:02:22,786 --> 00:02:26,364
+There are 40 instances of a string object,
+right?
+
+44
+00:02:26,364 --> 00:02:30,250
+So there are 40 instances
+of a string class.
+
+45
+00:02:30,250 --> 00:02:34,512
+Class is a whole category of things that
+are all like strings, they're all pretty
+
+46
+00:02:34,512 --> 00:02:38,305
+much the same, but like we have x and
+we have y and we have z and a and b and c.
+
+47
+00:02:38,305 --> 00:02:44,448
+Those are the instances, and so
+we often use the word object and instance.
+
+48
+00:02:44,448 --> 00:02:47,817
+As I said, classes contain
+code in addition to data, and
+
+49
+00:02:47,817 --> 00:02:50,635
+the method is the way that
+we activate the code.
+
+50
+00:02:50,635 --> 00:02:55,533
+And it's basically a function that's
+scoped to being within the class.
+
+51
+00:02:55,533 --> 00:02:57,541
+And so that's our quick summary
+of terminology.
+
+52
+00:02:57,541 --> 00:02:59,950
+Up next, we're going to actually
+build one of these things.

@@ -1,0 +1,298 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/0l4bX4LxeKc
+
+1
+00:00:00,000 --> 00:00:01,160
+
+2
+00:00:01,160 --> 00:00:01,990
+DR. JONATHAN VALVANO: Hi.
+
+3
+00:00:01,990 --> 00:00:05,940
+In this video, we will introduce
+digital logic--
+
+4
+00:00:05,940 --> 00:00:08,780
+not to teach you everything about
+it, but give you a glimpse
+
+5
+00:00:08,780 --> 00:00:10,250
+of how things work.
+
+6
+00:00:10,250 --> 00:00:13,080
+In digital logic, we have two states.
+
+7
+00:00:13,080 --> 00:00:16,670
+The true state is going to be
+mapped to a high voltage--
+
+8
+00:00:16,670 --> 00:00:19,450
+in our case, 3.3 volts--
+
+9
+00:00:19,450 --> 00:00:23,710
+and a false state is going
+to be mapped to 0 volts.
+
+10
+00:00:23,710 --> 00:00:27,900
+And the way this is going to work
+is around two transistors.
+
+11
+00:00:27,900 --> 00:00:30,980
+The first is a P-channel.
+
+12
+00:00:30,980 --> 00:00:40,040
+The P-channel has three pins, it
+has a gate, it has a source,
+
+13
+00:00:40,040 --> 00:00:43,090
+and it has a drain.
+
+14
+00:00:43,090 --> 00:00:47,970
+And the way the P-channel works is,
+if there is a positive voltage--
+
+15
+00:00:47,970 --> 00:00:49,300
+a positive voltage--
+
+16
+00:00:49,300 --> 00:00:56,620
+between the source down to the gate,
+then this transistor will be on, and
+
+17
+00:00:56,620 --> 00:01:01,400
+can conduct current down,
+from source to drain.
+
+18
+00:01:01,400 --> 00:01:05,630
+The other type of transistor
+also has three pins.
+
+19
+00:01:05,630 --> 00:01:07,700
+It's called an N-channel.
+
+20
+00:01:07,700 --> 00:01:10,300
+And the N-channel has a gate.
+
+21
+00:01:10,300 --> 00:01:13,200
+And this one's the drain.
+
+22
+00:01:13,200 --> 00:01:15,790
+And this one's the source.
+
+23
+00:01:15,790 --> 00:01:17,780
+But it works differently.
+
+24
+00:01:17,780 --> 00:01:24,980
+In the N-channel, a positive voltage
+between the gate and the source will
+
+25
+00:01:24,980 --> 00:01:26,420
+turn the N-channel on.
+
+26
+00:01:26,420 --> 00:01:31,240
+But now the current will go in this
+direction, from drain to source.
+
+27
+00:01:31,240 --> 00:01:34,600
+And what we're going to do
+is to combine these two
+
+28
+00:01:34,600 --> 00:01:36,580
+transistors to make a gate.
+
+29
+00:01:36,580 --> 00:01:39,604
+And the first one we're going
+to build is an NOT gate.
+
+30
+00:01:39,604 --> 00:01:51,440
+The NOT gate has an input, which can be
+True or False, and an output, which
+
+31
+00:01:51,440 --> 00:01:52,280
+is the opposite.
+
+32
+00:01:52,280 --> 00:01:57,280
+So True goes to False, and
+False goes to True.
+
+33
+00:01:57,280 --> 00:01:59,800
+And the way we're going to build it is
+we're going to tie the two gates
+
+34
+00:01:59,800 --> 00:02:01,210
+together here.
+
+35
+00:02:01,210 --> 00:02:03,000
+And that will be our input.
+
+36
+00:02:03,000 --> 00:02:05,920
+And we're going to tie the
+two drains together here.
+
+37
+00:02:05,920 --> 00:02:09,139
+And that will be our output.
+
+38
+00:02:09,139 --> 00:02:14,464
+And then, we're going to tie this
+source, here, to 3.3 volts.
+
+39
+00:02:14,464 --> 00:02:18,300
+And we're going to tie
+this one to ground.
+
+40
+00:02:18,300 --> 00:02:21,704
+Now let's see how it works.
+
+41
+00:02:21,704 --> 00:02:26,680
+If the input were True, OK--
+so if the input were True--
+
+42
+00:02:26,680 --> 00:02:30,260
+that means it is 3.3 volts.
+
+43
+00:02:30,260 --> 00:02:31,550
+And that will create--
+
+44
+00:02:31,550 --> 00:02:38,330
+across this transistor, you'll see
+there's 3.3 volts in this direction.
+
+45
+00:02:38,330 --> 00:02:41,850
+And this transistor will
+then become on.
+
+46
+00:02:41,850 --> 00:02:48,780
+But over here, we see we've got
+3.3 volts to 3.3 volts.
+
+47
+00:02:48,780 --> 00:02:53,510
+And so there's no voltage across the
+source gate of the P. And this one
+
+48
+00:02:53,510 --> 00:02:54,430
+will be off.
+
+49
+00:02:54,430 --> 00:02:58,880
+And if this transistor's off, and
+that one's on, we can see--
+
+50
+00:02:58,880 --> 00:03:00,040
+there's 0 volts--
+
+51
+00:03:00,040 --> 00:03:03,080
+that becomes 0 volts.
+
+52
+00:03:03,080 --> 00:03:07,400
+The other case is also easy to see.
+
+53
+00:03:07,400 --> 00:03:13,450
+Now if the input were False, that
+means there'd be 0 volts here.
+
+54
+00:03:13,450 --> 00:03:19,960
+And on the N-channel, we have 0 volts
+to 0 volts, which is no drop.
+
+55
+00:03:19,960 --> 00:03:22,180
+And so this one will go off.
+
+56
+00:03:22,180 --> 00:03:27,490
+But over here, we have 3.3
+volts down to 0 volts.
+
+57
+00:03:27,490 --> 00:03:30,980
+And so we see a positive voltage
+between the source
+
+58
+00:03:30,980 --> 00:03:33,630
+and gate of the P-channel.
+
+59
+00:03:33,630 --> 00:03:36,490
+And it will come on and conduct.
+
+60
+00:03:36,490 --> 00:03:41,390
+So if this transistor is on, and
+conducts, this 3.3 volts shows up at
+
+61
+00:03:41,390 --> 00:03:44,060
+the output as 3.3 volts.
+
+62
+00:03:44,060 --> 00:03:45,400
+And there you have it.
+
+63
+00:03:45,400 --> 00:03:48,160
+True goes to False, and
+False goes to True.
+
+64
+00:03:48,160 --> 00:03:51,430
+And this is just a glimpse
+of how digital logic
+
+65
+00:03:51,430 --> 00:03:52,750
+works inside the computer.
+
+66
+00:03:52,750 --> 00:03:56,029

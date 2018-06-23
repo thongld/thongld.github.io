@@ -1,0 +1,476 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/KiYSWqb3tI0
+
+1
+00:00:05,849 --> 00:00:09,379
+welcome back to operations management in
+this session we're gonna talk about
+
+2
+00:00:09,379 --> 00:00:11,140
+process analysis
+
+3
+00:00:11,140 --> 00:00:14,449
+and I'm going to introduce you to the
+concept of Little's
+
+4
+00:00:14,449 --> 00:00:19,879
+law up until this time we've been
+thinking theoretically about processes
+
+5
+00:00:19,880 --> 00:00:23,100
+I've talked about why we need to study a
+process
+
+6
+00:00:23,100 --> 00:00:27,868
+and the importance of relating our
+operational strategies to our
+
+7
+00:00:27,868 --> 00:00:29,839
+organizational strategy and
+
+8
+00:00:29,839 --> 00:00:33,849
+so forth but now we need to start
+looking at processes
+
+9
+00:00:33,849 --> 00:00:40,488
+in detail and that's what we're gonna
+start now we study operations management
+
+10
+00:00:40,488 --> 00:00:41,929
+from a process view
+
+11
+00:00:41,929 --> 00:00:46,039
+because when we look down into an
+organization
+
+12
+00:00:46,039 --> 00:00:49,058
+it is this series of interconnected
+events
+
+13
+00:00:49,058 --> 00:00:52,979
+from moment an order is received the time
+that it goes
+
+14
+00:00:52,979 --> 00:00:58,038
+out to the customer we just have one bit
+long process that when we look down into
+
+15
+00:00:58,039 --> 00:00:58,359
+it
+
+16
+00:00:58,359 --> 00:01:02,229
+it's actually a series of interconnected
+smaller processes
+
+17
+00:01:02,229 --> 00:01:05,709
+activities tasks buffers now
+
+18
+00:01:05,710 --> 00:01:09,058
+in order for us to improve on that
+process
+
+19
+00:01:09,058 --> 00:01:12,629
+we need to look at it we need to take
+a
+
+20
+00:01:12,629 --> 00:01:15,780
+look at it from the moment that
+orders received
+
+21
+00:01:15,780 --> 00:01:19,670
+and start looking at what can we do to
+shorten how
+
+22
+00:01:19,670 --> 00:01:24,180
+shorten the amount of time it takes to
+complete unit shorten the amount of time
+
+23
+00:01:24,180 --> 00:01:25,880
+it takes to get to the customer
+
+24
+00:01:25,879 --> 00:01:30,289
+how can I make it less costly how can we
+make it higher quality
+
+25
+00:01:30,290 --> 00:01:34,710
+we can't figure that out unless we
+understand the process itself
+
+26
+00:01:34,709 --> 00:01:39,399
+so what we need to do is we need to look
+at every step in that process
+
+27
+00:01:39,400 --> 00:01:42,590
+and trying new things that don't need to
+be there
+
+28
+00:01:42,590 --> 00:01:45,780
+things that don't need to be that there
+are considered
+
+29
+00:01:45,780 --> 00:01:48,950
+but we call non value added
+
+30
+00:01:48,950 --> 00:01:52,990
+when things have to wait that's non-value
+added
+
+31
+00:01:52,989 --> 00:01:56,069
+when we have additional steps that don't
+need to happen
+
+32
+00:01:56,069 --> 00:02:00,219
+that's also non-value added so when we
+look at that process view
+
+33
+00:02:00,219 --> 00:02:04,489
+we're carefully analyzing every step in
+that process
+
+34
+00:02:04,489 --> 00:02:07,868
+and trying to get rid of things that
+don't add the value
+
+35
+00:02:07,868 --> 00:02:12,500
+when we analyze the process
+
+36
+00:02:12,500 --> 00:02:15,848
+we need it to be considered what we call
+stable
+
+37
+00:02:15,848 --> 00:02:18,979
+a stable process says the
+
+38
+00:02:18,979 --> 00:02:23,539
+units that come in on average the rate of
+flow coming in
+
+39
+00:02:23,539 --> 00:02:27,919
+equals the rate of flow going out that
+
+40
+00:02:27,919 --> 00:02:31,519
+average inflow equals average outflow
+
+41
+00:02:31,520 --> 00:02:34,980
+we all know that
+
+42
+00:02:34,979 --> 00:02:39,060
+averages are not actually what is
+happening
+
+43
+00:02:39,060 --> 00:02:43,939
+on moment-to-moment basis we also know that
+when you flip the coin
+
+44
+00:02:43,939 --> 00:02:47,930
+on average you're going to get 50
+percent heads
+
+45
+00:02:47,930 --> 00:02:51,750
+50 percent tales but on an individual
+coin flip
+
+46
+00:02:51,750 --> 00:02:55,389
+or three in a row or four in a row
+you're not going to get
+
+47
+00:02:55,389 --> 00:03:00,579
+50 percent heads 50 percent tails but we
+can't study a process
+
+48
+00:03:00,580 --> 00:03:05,230
+on individual transactions we can only a
+study a process
+
+49
+00:03:05,229 --> 00:03:11,268
+using averages So we know the
+fluctuations happen all the time
+
+50
+00:03:11,269 --> 00:03:14,890
+but we're going to be looking at a
+process by averages
+
+51
+00:03:14,889 --> 00:03:19,609
+we need to look at three particular
+
+52
+00:03:19,610 --> 00:03:23,450
+operational measures one is flow time
+
+53
+00:03:23,449 --> 00:03:27,378
+we characterize that by the variable T
+T for time
+
+54
+00:03:27,378 --> 00:03:32,079
+and it indicates how long does it take to
+get through the process
+
+55
+00:03:32,080 --> 00:03:36,390
+so flow time how long it takes to
+get through the process
+
+56
+00:03:36,389 --> 00:03:39,979
+we have inventory inventory
+
+57
+00:03:39,979 --> 00:03:43,009
+are how many units are in
+
+58
+00:03:43,009 --> 00:03:46,889
+the process at any given time again
+we're looking at averages
+
+59
+00:03:46,889 --> 00:03:51,079
+so if we were to take a snapshot and say
+on average how many units are in the
+
+60
+00:03:51,080 --> 00:03:51,890
+process
+
+61
+00:03:51,889 --> 00:03:56,518
+that I for inventory our throughput
+rate
+
+62
+00:03:56,519 --> 00:04:00,039
+what is processing in and out
+
+63
+00:04:00,039 --> 00:04:03,158
+of the process at any given time
+
+64
+00:04:03,158 --> 00:04:07,188
+that our throughput rate how many are coming
+in and going out
+
+65
+00:04:07,188 --> 00:04:11,620
+rate R now these three variables
+
+66
+00:04:11,620 --> 00:04:15,438
+these three operational measures can
+be
+
+67
+00:04:15,438 --> 00:04:18,750
+connected and that this Little's law
+
+68
+00:04:18,750 --> 00:04:22,399
+Little's law connects the three we take our
+
+69
+00:04:22,399 --> 00:04:26,069
+average inventory and if you look inside
+the box there that's the
+
+70
+00:04:26,069 --> 00:04:29,680
+units that are sitting inside the
+process equals to
+
+71
+00:04:29,680 --> 00:04:34,139
+average throughput rate that's the
+flow rate of items going through the
+
+72
+00:04:34,139 --> 00:04:35,560
+process
+
+73
+00:04:35,560 --> 00:04:40,259
+units per hour or units per minute or units
+per second
+
+74
+00:04:40,259 --> 00:04:43,419
+and we multiply that by our average flow
+time
+
+75
+00:04:43,418 --> 00:04:46,448
+the length of time it takes for an
+average unit
+
+76
+00:04:46,449 --> 00:04:50,680
+to get through the process itself so
+little's law says
+
+77
+00:04:50,680 --> 00:04:53,900
+average inventory equals average throughput
+rate
+
+78
+00:04:53,899 --> 00:04:57,250
+times average flow time I equals
+
+79
+00:04:57,250 --> 00:05:00,850
+R times T very very powerful
+
+80
+00:05:00,850 --> 00:05:03,900
+because as long as we know that the
+values
+
+81
+00:05:03,899 --> 00:05:08,409
+of 2 of these variables we can always
+caculate the third
+
+82
+00:05:08,410 --> 00:05:11,479
+so let's just do a very simple example
+
+83
+00:05:11,478 --> 00:05:15,629
+A toy manufacture has throughput rate of
+30 toys per hour
+
+84
+00:05:15,629 --> 00:05:19,370
+and it takes a half an hour for a toy to
+go through the process
+
+85
+00:05:19,370 --> 00:05:22,949
+how many toys on average are in the
+process
+
+86
+00:05:22,949 --> 00:05:28,430
+pause video and take a moment to solve
+it
+
+87
+00:05:28,430 --> 00:05:31,889
+the key here is to look at the problem
+and identify
+
+88
+00:05:31,889 --> 00:05:35,430
+the values for the individual
+variables
+
+89
+00:05:35,430 --> 00:05:38,829
+if you notice we said that the
+throughput rate was
+
+90
+00:05:38,829 --> 00:05:42,740
+30 toys per our so that becomes a
+variable
+
+91
+00:05:42,740 --> 00:05:46,930
+R the length of time in the process
+
+92
+00:05:46,930 --> 00:05:50,810
+was a half hour that  our flow time so
+that becomes
+
+93
+00:05:50,810 --> 00:05:54,050
+T so to calculate the inventory
+
+94
+00:05:54,050 --> 00:05:58,319
+we use Little's law of I equals R
+times T
+
+95
+00:05:58,319 --> 00:06:01,639
+which equals 30 toys per hour
+
+96
+00:06:01,639 --> 00:06:04,769
+times the half an hour equals
+
+97
+00:06:04,769 --> 00:06:08,409
+15 toys that's all it takes to do
+
+98
+00:06:08,410 --> 00:06:11,479
+little's law  this understanding
+relationship
+
+99
+00:06:11,478 --> 00:06:15,159
+of I equals R times T next time
+
+100
+00:06:15,160 --> 00:06:18,500
+we're gonna go and do some more
+complicated problems
+
+101
+00:06:18,500 --> 00:06:20,800
+using Little's law. I'll see you then
+

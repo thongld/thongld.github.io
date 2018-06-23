@@ -1,0 +1,320 @@
+0
+00:00:00,000 --> 00:00:00,870
+https://youtu.be/xZTMwRc5jqs
+
+1
+00:00:00,870 --> 00:00:02,840
+The next set of extensions to the EOQ,
+
+2
+00:00:02,840 --> 00:00:06,340
+or Economic Order Quantity, deal with the volume, or quantity
+
+3
+00:00:06,340 --> 00:00:09,420
+discounts, with how much you buy.
+
+4
+00:00:09,420 --> 00:00:11,600
+So the assumption we're going to loosen
+
+5
+00:00:11,600 --> 00:00:14,770
+is going to be this one up here, this discounts.
+
+6
+00:00:14,770 --> 00:00:17,750
+And so instead of having the purchase price, or the price
+
+7
+00:00:17,750 --> 00:00:20,560
+per item, c, be constant, it's going
+
+8
+00:00:20,560 --> 00:00:24,620
+to be a function, now, of how much we buy of the Q.
+
+9
+00:00:24,620 --> 00:00:27,360
+So since the purchase price is a function of Q,
+
+10
+00:00:27,360 --> 00:00:29,460
+it is now a relevant decision-- it
+
+11
+00:00:29,460 --> 00:00:33,170
+is in that relevant variable for how much I'm going to buy.
+
+12
+00:00:33,170 --> 00:00:37,840
+So we need to include that, when we determine the EOQ.
+
+13
+00:00:37,840 --> 00:00:40,032
+So let's look at the three most common cases.
+
+14
+00:00:40,032 --> 00:00:41,740
+There are many ways you can do discounts,
+
+15
+00:00:41,740 --> 00:00:43,830
+but here the three most common.
+
+16
+00:00:43,830 --> 00:00:46,139
+And so the first is All Units Discount.
+
+17
+00:00:46,139 --> 00:00:48,430
+And this is where, whatever the discount is that you're
+
+18
+00:00:48,430 --> 00:00:52,470
+going to give, applies to all the units that you purchase,
+
+19
+00:00:52,470 --> 00:00:54,940
+as long as you exceed some break point quantity.
+
+20
+00:00:54,940 --> 00:00:57,070
+So along the horizontal axis, here,
+
+21
+00:00:57,070 --> 00:00:59,860
+I've got the Q, the quantity you're going to order,
+
+22
+00:00:59,860 --> 00:01:04,750
+and c is the cost / item, and D is your annual demand.
+
+23
+00:01:04,750 --> 00:01:08,620
+And so I put in this Q1 and this Q2, and these are break points.
+
+24
+00:01:08,620 --> 00:01:11,970
+So if you buy above Q1, right, you
+
+25
+00:01:11,970 --> 00:01:15,650
+get a lower rate cost per item.
+
+26
+00:01:15,650 --> 00:01:19,500
+So here, this c0 would be the lowest,
+
+27
+00:01:19,500 --> 00:01:21,190
+or it would be the initial price,
+
+28
+00:01:21,190 --> 00:01:24,520
+and then this c1 would apply if I'm in that break point
+
+29
+00:01:24,520 --> 00:01:25,920
+past Q1.
+
+30
+00:01:25,920 --> 00:01:32,200
+And cost two, c2, would apply if I'm above that break point, Q2,
+
+31
+00:01:32,200 --> 00:01:34,720
+and you'd expect that c0 is greater
+
+32
+00:01:34,720 --> 00:01:36,620
+than c1 is greater than c2.
+
+33
+00:01:36,620 --> 00:01:40,740
+In other words, you get a lower cost per item as you go up.
+
+34
+00:01:40,740 --> 00:01:41,950
+And this is very common.
+
+35
+00:01:41,950 --> 00:01:44,630
+This is the most common in industrial settings, where
+
+36
+00:01:44,630 --> 00:01:49,100
+you try-- the vendor tries to encourage you to order more,
+
+37
+00:01:49,100 --> 00:01:51,780
+then it helps them with their economies of scale.
+
+38
+00:01:51,780 --> 00:01:54,870
+The next type that you see a lot in the retail space,
+
+39
+00:01:54,870 --> 00:01:56,960
+is what's known as an Incremental Discount.
+
+40
+00:01:56,960 --> 00:01:59,860
+And this where a discount applies to the c,
+
+41
+00:01:59,860 --> 00:02:02,530
+only to the quantity that's purchased beyond the break
+
+42
+00:02:02,530 --> 00:02:03,120
+point.
+
+43
+00:02:03,120 --> 00:02:07,250
+So here, I have the same two break points, Q1 and Q2.
+
+44
+00:02:07,250 --> 00:02:13,520
+But the idea is, if I buy, 1-Q1, so I'm buying this, right,
+
+45
+00:02:13,520 --> 00:02:17,690
+and I'm paying that price where that's c0.
+
+46
+00:02:17,690 --> 00:02:19,740
+As I break over there, I'm still paying
+
+47
+00:02:19,740 --> 00:02:22,380
+c0 for all the items up to Q1.
+
+48
+00:02:22,380 --> 00:02:26,100
+Beyond that, every item beyond that, up to break point 2,
+
+49
+00:02:26,100 --> 00:02:29,970
+I'm paying c1 as an incremental cost.
+
+50
+00:02:29,970 --> 00:02:32,670
+So it only applies to the quantities
+
+51
+00:02:32,670 --> 00:02:34,380
+beyond the break point.
+
+52
+00:02:34,380 --> 00:02:37,590
+So think of it as if you go to some store
+
+53
+00:02:37,590 --> 00:02:40,540
+where you're buying some clothes, you might "buy 2,
+
+54
+00:02:40,540 --> 00:02:43,090
+get 1 (get a third) at half price".
+
+55
+00:02:43,090 --> 00:02:45,820
+Or those coffee cards where you "buy 11,
+
+56
+00:02:45,820 --> 00:02:47,430
+you get the 12th for free".
+
+57
+00:02:47,430 --> 00:02:49,150
+That's an Incremental Discount.
+
+58
+00:02:49,150 --> 00:02:53,470
+You see that a lot of times in retail situations.
+
+59
+00:02:53,470 --> 00:02:55,440
+The last one that we're going to talk about
+
+60
+00:02:55,440 --> 00:02:57,470
+is a One Time Only Discount, and this
+
+61
+00:02:57,470 --> 00:02:58,990
+happens in industrial settings.
+
+62
+00:02:58,990 --> 00:03:01,620
+And the idea is your vendor, whether they're
+
+63
+00:03:01,620 --> 00:03:03,990
+trying to hit end of quarter, or end of year,
+
+64
+00:03:03,990 --> 00:03:06,650
+for some reason they're offering you a big discount.
+
+65
+00:03:06,650 --> 00:03:09,650
+So if my inventory on hand looks like this, and this
+
+66
+00:03:09,650 --> 00:03:13,530
+is that common sawtooth that we've talked about,
+
+67
+00:03:13,530 --> 00:03:16,350
+where this is the cycle stock.
+
+68
+00:03:16,350 --> 00:03:19,940
+And instead of how much you normally buy, he's saying well,
+
+69
+00:03:19,940 --> 00:03:23,150
+you know what, if you buy a whole bunch more,
+
+70
+00:03:23,150 --> 00:03:25,320
+then I'll give you a really good price on it.
+
+71
+00:03:25,320 --> 00:03:26,710
+So there's no quantity limit.
+
+72
+00:03:26,710 --> 00:03:28,870
+It's kind of a one time buy, and then you
+
+73
+00:03:28,870 --> 00:03:32,100
+go back to your normal order frequency.
+
+74
+00:03:32,100 --> 00:03:34,110
+So we'll talk about how you determine
+
+75
+00:03:34,110 --> 00:03:36,080
+whether it makes sense to do this one time buy,
+
+76
+00:03:36,080 --> 00:03:37,362
+and how much you should buy.
+
+77
+00:03:37,362 --> 00:03:39,070
+So these are the three types of discounts
+
+78
+00:03:39,070 --> 00:03:40,924
+that we're going to discuss.
+
+79
+00:03:40,924 --> 00:03:41,424
+
+

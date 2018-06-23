@@ -1,0 +1,552 @@
+0
+00:00:05,067 --> 00:00:09,760
+Welcome back, I&#39;m going to draw the distribution up here.
+https://youtu.be/Rn1Fna63VrA
+1
+00:00:14,732 --> 00:00:16,365
+And I&#39;m not going to draw this axis,
+
+2
+00:00:16,364 --> 00:00:18,478
+simply because we know what probability it is.
+
+3
+00:00:18,478 --> 00:00:23,875
+So the question is, how do you calculate the average of return?
+
+4
+00:00:23,875 --> 00:00:27,585
+And I&#39;m going to give you two ways of doing it.
+
+5
+00:00:27,585 --> 00:00:30,302
+They are the same thing, but two slightly different ways.
+
+6
+00:00:30,302 --> 00:00:35,368
+So the first way is, and I&#39;m going to
+
+7
+00:00:35,368 --> 00:00:41,097
+write it out, I&#39;m going to call it R bar.
+
+8
+00:00:41,097 --> 00:00:42,137
+Why R?
+
+9
+00:00:42,137 --> 00:00:44,914
+Because we are going to be interested in returns.
+
+10
+00:00:44,914 --> 00:00:50,963
+Remember, you could call it x bar, in statistics books or y bar.
+
+11
+00:00:50,963 --> 00:00:54,069
+But because we are interested in returns, I&#39;m going to just define it this way.
+
+12
+00:00:54,069 --> 00:01:01,637
+So suppose these are the returns of IBM distribution.
+
+13
+00:01:01,637 --> 00:01:06,641
+So the good question to ask is, what is the average expected return of IBM?
+
+14
+00:01:06,641 --> 00:01:10,412
+Good news, if they&#39;re normally distributed.
+
+15
+00:01:10,412 --> 00:01:12,249
+And by the way, if you take daily data,
+
+16
+00:01:12,249 --> 00:01:14,497
+it&#39;s less likely to be normally distributed.
+
+17
+00:01:14,497 --> 00:01:15,584
+There&#39;s a lot of choppiness.
+
+18
+00:01:15,584 --> 00:01:20,076
+But as you aggregate data, so you go from one day to monthly data,
+
+19
+00:01:20,076 --> 00:01:22,294
+better behaved, more normal.
+
+20
+00:01:22,294 --> 00:01:23,158
+Go to annual,
+
+21
+00:01:23,158 --> 00:01:27,767
+better behaved because that&#39;s how we came to normal distribution, okay?
+
+22
+00:01:27,767 --> 00:01:29,424
+So R bar will be what?
+
+23
+00:01:29,424 --> 00:01:30,658
+Let me just write it out.
+
+24
+00:01:30,658 --> 00:01:35,773
+This is summation
+
+25
+00:01:35,773 --> 00:01:39,866
+sign, pi Ri.
+
+26
+00:01:39,866 --> 00:01:42,049
+So pause for a second.
+
+27
+00:01:42,049 --> 00:01:46,939
+And as I said, in the next section, big module, I&#39;ll do a lot of number crunching.
+
+28
+00:01:46,939 --> 00:01:47,864
+What is pi?
+
+29
+00:01:47,864 --> 00:01:52,861
+pi is the probability.
+
+30
+00:01:57,501 --> 00:01:59,319
+And what is Ri?
+
+31
+00:01:59,319 --> 00:02:01,512
+Is the return.
+
+32
+00:02:04,061 --> 00:02:06,440
+How many possible are there?
+
+33
+00:02:06,440 --> 00:02:10,313
+Well you could have a discrete distribution, or
+
+34
+00:02:10,312 --> 00:02:13,811
+you could have a continuous distribution.
+
+35
+00:02:13,811 --> 00:02:16,129
+What does discrete distribution mean?
+
+36
+00:02:16,129 --> 00:02:19,581
+That there are only four or five possibilities of the future, and
+
+37
+00:02:19,581 --> 00:02:21,605
+we&#39;ll do that and multiply by price.
+
+38
+00:02:21,605 --> 00:02:22,631
+What is continuous?
+
+39
+00:02:22,631 --> 00:02:26,295
+Continuous means that you have a whole distribution up there,
+
+40
+00:02:26,295 --> 00:02:30,866
+it&#39;s not just four or five possibilities in the future you&#39;re considering.
+
+41
+00:02:30,866 --> 00:02:34,250
+So this is the generic formula, right?
+
+42
+00:02:34,250 --> 00:02:39,901
+But another way of calculating this, which you&#39;ll see very often is,
+
+43
+00:02:39,901 --> 00:02:43,491
+suppose you have N number of possibilities.
+
+44
+00:02:43,491 --> 00:02:46,651
+You&#39;ll do it like this.
+
+45
+00:02:46,651 --> 00:02:47,965
+So what does that mean?
+
+46
+00:02:47,965 --> 00:02:53,658
+That all possibilities are equally likely, and equal to 1 over N.
+
+47
+00:02:53,658 --> 00:02:57,532
+And that&#39;s a very strong assumption we make, regardless of thinking.
+
+48
+00:02:57,532 --> 00:03:02,372
+So whenever we do calculations, we tend to use this formula.
+
+49
+00:03:02,372 --> 00:03:07,328
+But this is the generic formula that you should always keep in mind.
+
+50
+00:03:07,328 --> 00:03:09,838
+And when you use this second formula,
+
+51
+00:03:09,838 --> 00:03:14,868
+you&#39;re assuming that each R has the same likelihood of occurrence, okay?
+
+52
+00:03:14,868 --> 00:03:17,129
+So just keep that in mind.
+
+53
+00:03:17,129 --> 00:03:19,353
+What I’m going to do now is,
+
+54
+00:03:19,353 --> 00:03:24,373
+I won’t want to leave you with this, but go on to variance next.
+
+55
+00:03:24,373 --> 00:03:29,103
+And the reason we’ll go to variance in our contexts is simply because we’re not just
+
+56
+00:03:29,103 --> 00:03:30,976
+happy with knowing this number.
+
+57
+00:03:30,976 --> 00:03:35,558
+So suppose we calculated it, and this turned out to be 7%.
+
+58
+00:03:35,558 --> 00:03:38,545
+What are we worried about as risk averse people?
+
+59
+00:03:38,545 --> 00:03:44,570
+We are not worried about the times when things will be on this side.
+
+60
+00:03:44,570 --> 00:03:47,907
+We are worried about this side.
+
+61
+00:03:47,907 --> 00:03:52,846
+And in order to do this, what we&#39;ll do is start worrying about,
+
+62
+00:03:52,846 --> 00:03:54,957
+what do the heck this mean?
+
+63
+00:03:54,957 --> 00:03:58,655
+What do the fact that this is spread out mean?
+
+64
+00:03:58,655 --> 00:04:06,564
+So, let&#39;s talk about the second important ingredient of risk return.
+
+65
+00:04:06,564 --> 00:04:11,493
+One is average, one is variance, and, if distributions are normal, there&#39;s nothing,
+
+66
+00:04:11,493 --> 00:04:12,845
+no third to worry about.
+
+67
+00:04:12,845 --> 00:04:14,050
+So, let&#39;s go on to variance.
+
+68
+00:04:14,050 --> 00:04:16,749
+So, what is variance measuring?
+
+69
+00:04:16,749 --> 00:04:23,551
+So variance is measuring, I got this for IBM, 7%.
+
+70
+00:04:23,551 --> 00:04:25,658
+What is variance measuring?
+
+71
+00:04:29,623 --> 00:04:34,439
+In its symmetric distribution these two lengths are the same, okay, distances.
+
+72
+00:04:34,439 --> 00:04:38,424
+I&#39;m not worried about this one, I&#39;m worried about this guy.
+
+73
+00:04:38,424 --> 00:04:40,594
+Okay, so let&#39;s try to measure it.
+
+74
+00:04:40,594 --> 00:04:44,495
+So this is what happens, and I&#39;m going to write out the formula.
+
+75
+00:04:44,495 --> 00:04:49,275
+You take a probability, and
+
+76
+00:04:49,275 --> 00:04:52,660
+take an event i, and
+
+77
+00:04:52,660 --> 00:04:57,850
+see how far is it from the mean.
+
+78
+00:04:57,850 --> 00:05:04,924
+So in this case, this is Ri and it&#39;s this far from the mean, okay?
+
+79
+00:05:04,924 --> 00:05:06,892
+You do this for everything.
+
+80
+00:05:06,892 --> 00:05:10,068
+So suppose I just added up all of these.
+
+81
+00:05:10,068 --> 00:05:11,688
+Would this work?
+
+82
+00:05:11,688 --> 00:05:19,452
+Would this be what is called sigma square at.
+
+83
+00:05:19,452 --> 00:05:26,903
+Sigma squared is the variance of the return, however, hat is an estimate.
+
+84
+00:05:26,903 --> 00:05:30,189
+So I&#39;m just using jargon that&#39;s pretty common.
+
+85
+00:05:30,189 --> 00:05:31,848
+If I did this, what would happen?
+
+86
+00:05:34,310 --> 00:05:36,362
+I would get 0 every time, right?
+
+87
+00:05:36,362 --> 00:05:43,647
+Because the positives and negatives will cut it, so I square it.
+
+88
+00:05:43,647 --> 00:05:47,535
+So the variance is the square of the deviation from the average.
+
+89
+00:05:47,535 --> 00:05:50,737
+And will give you a sense of,
+
+90
+00:05:50,737 --> 00:05:56,081
+how far the returns could be away from the mean.
+
+91
+00:05:56,081 --> 00:06:01,013
+And more concern in finance when you&#39;re talking returns as a risk adverse person
+
+92
+00:06:01,013 --> 00:06:03,779
+about the downside, not the upside as much.
+
+93
+00:06:03,779 --> 00:06:05,584
+However, what&#39;s the units of this?
+
+94
+00:06:05,584 --> 00:06:09,119
+Remember, the units of mean would be percentage.
+
+95
+00:06:09,119 --> 00:06:10,684
+This will be very squared.
+
+96
+00:06:10,684 --> 00:06:12,204
+Makes it more difficult.
+
+97
+00:06:12,204 --> 00:06:13,040
+So what will I do?
+
+98
+00:06:13,040 --> 00:06:15,950
+I&#39;ll take sigma squared hat.
+
+99
+00:06:15,950 --> 00:06:17,857
+Take the square root of that.
+
+100
+00:06:17,857 --> 00:06:21,748
+And I&#39;ll get standard deviation.
+
+101
+00:06:21,748 --> 00:06:29,451
+So this is called standard, Deviation.
+
+102
+00:06:29,451 --> 00:06:34,227
+And I&#39;m not going to calculate the numbers here,
+
+103
+00:06:34,227 --> 00:06:39,002
+but I just wanted to give you a sense of both mean and
+
+104
+00:06:39,002 --> 00:06:44,479
+standard deviation as capturing IBM&#39;s distribution.
+
+105
+00:06:44,479 --> 00:06:47,791
+Because otherwise it&#39;s impossible to think about the future, right?
+
+106
+00:06:47,791 --> 00:06:49,969
+If I didn&#39;t give you two parameters, or
+
+107
+00:06:49,969 --> 00:06:53,951
+a few parameters to think about distributions and compare them, right?
+
+108
+00:06:53,951 --> 00:06:56,840
+I&#39;m always comparing, everything is relative.
+
+109
+00:06:56,840 --> 00:07:00,830
+If I couldn&#39;t give you these two parameters, you&#39;d be thinking,
+
+110
+00:07:00,830 --> 00:07:02,374
+what the heck is going on?
+
+111
+00:07:02,374 --> 00:07:04,856
+There&#39;s so many possibilities.
+
+112
+00:07:04,856 --> 00:07:08,397
+So how do you capture those possibilities?
+
+113
+00:07:08,397 --> 00:07:13,068
+Mean and radians or mean and standard deviation.
+
+114
+00:07:13,068 --> 00:07:14,975
+Of course when you take the square root, what will you get?
+
+115
+00:07:14,975 --> 00:07:16,218
+A plus and a minus, but
+
+116
+00:07:16,218 --> 00:07:19,830
+it makes no sense to have a negative standard deviation, right?
+
+117
+00:07:19,830 --> 00:07:23,071
+So we&#39;ll pick the positive one.
+
+118
+00:07:23,071 --> 00:07:25,537
+What I&#39;m going to do now is I&#39;m going to take a break.
+
+119
+00:07:25,537 --> 00:07:30,116
+I want you to just go pick up some data from somewhere.
+
+120
+00:07:30,116 --> 00:07:32,973
+Rainfall data, whatever data you like, and
+
+121
+00:07:32,973 --> 00:07:36,743
+just mess with it if you&#39;ve never done statistics before.
+
+122
+00:07:36,743 --> 00:07:39,525
+You can get this data from wherever you want.
+
+123
+00:07:39,525 --> 00:07:41,512
+You can look at advertising money.
+
+124
+00:07:41,512 --> 00:07:45,142
+You can look at sales of a company and so on and so forth.
+
+125
+00:07:45,142 --> 00:07:47,552
+Or you can look at returns.
+
+126
+00:07:47,552 --> 00:07:49,595
+And if you want, Amazon.
+
+127
+00:07:49,595 --> 00:07:51,290
+They&#39;re available, by the way.
+
+128
+00:07:51,290 --> 00:07:54,529
+Not for many months, and not calculated properly.
+
+129
+00:07:54,529 --> 00:07:59,078
+So that&#39;s why when we do our applications, we&#39;ll do it with the right numbers, and
+
+130
+00:07:59,078 --> 00:08:00,691
+we&#39;ll talk about it, okay?
+
+131
+00:08:00,691 --> 00:08:05,593
+Let&#39;s take a break, let&#39;s come back, do some more statistics.
+
+132
+00:08:05,593 --> 00:08:09,400
+Statistics because this is not where the story ends.
+
+133
+00:08:09,400 --> 00:08:13,087
+The story keeps going, becomes a little bit more complicated.
+
+134
+00:08:13,087 --> 00:08:18,015
+And we want to introduce these concepts before we pick up the next
+
+135
+00:08:18,015 --> 00:08:22,486
+chunk of content which is applications, applications,
+
+136
+00:08:22,486 --> 00:08:25,700
+applications in the context of finance.
+
+137
+00:08:25,700 --> 00:08:29,529
+See you in a bit.
+

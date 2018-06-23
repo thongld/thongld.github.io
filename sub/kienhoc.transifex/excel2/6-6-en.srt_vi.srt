@@ -1,0 +1,291 @@
+1
+00:00:00,220 --> 00:00:02,340
+Xin chào các bạn! Chào mừng quay trở lại.
+
+2
+00:00:02,340 --> 00:00:06,749
+Trong video này ta sẽ học một loại biểu đồ mới.
+
+3
+00:00:06,749 --> 00:00:11,570
+Thực ra ta đã biết loại biểu đồ này rồi.
+Nó là biểu đồ cột, nhưng ở đây ta sẽ dùng nó
+
+4
+00:00:11,570 --> 00:00:18,240
+theo cách rất đặc biệt, qua đó ta có thể
+dễ dàng so sánh "thực tế" và "ngân sách" 
+chỉ trong một cột duy nhất.
+
+5
+00:00:18,240 --> 00:00:24,779
+Nhìn nó như thế này.
+Chúng ta sẽ xem tạo ra biểu đồ này
+trong Excel ra sao nhé.
+
+6
+00:00:24,779 --> 00:00:34,820
+Ta đang quay lại Dashboard. 
+Giờ ta sẽ đến trang "Doanh thu".
+
+7
+00:00:34,820 --> 00:00:39,520
+Gần như không có dữ liệu gì, vì ta chỉ có 2 con số
+là lượng bán hàng thực tế, hay doanh thu thực tế
+
+8
+00:00:39,520 --> 00:00:44,640
+và nguồn thu ngân sách. Tôi sẽ chọn các dữ liệu này.
+
+9
+00:00:44,640 --> 00:00:51,370
+Tôi sẽ vào mục Insert, và trong trường hợp này
+tôi sẽ chèn biểu đồ cột.
+
+10
+00:00:51,370 --> 00:01:01,710
+Mẹo tôi sẽ thực hiện là...
+Có lẽ ta nên đưa hình minh hoạ ra đây.
+
+11
+00:01:01,710 --> 00:01:09,820
+Tôi sẽ đưa cột này ra đằng sau cột này.
+Nhưng tôi chỉ có thể làm thế nếu mỗi cột
+là một chuỗi số liệu (series) riêng biệt.
+
+12
+00:01:09,820 --> 00:01:13,400
+Ở đây ta có một chuỗi số liệu với hai thành phần
+(category).
+
+13
+00:01:13,400 --> 00:01:17,830
+Ta có thể thay đổi điều này bằng 
+một nút bấm thần kỳ.
+
+14
+00:01:17,830 --> 00:01:23,320
+Vậy tôi sẽ sang mục Chart Tools, chọn Design
+rồi chọn Switch row and collum.
+
+15
+00:01:23,320 --> 00:01:30,060
+Ngay lập tức ta thấy ở đây có hai vùng dữ liệu khác nhau.
+
+16
+00:01:30,060 --> 00:01:39,470
+Giờ ta sẽ đổi màu này sang một màu khác
+tuy xấu nhưng nhìn rõ hơn.
+
+17
+00:01:39,470 --> 00:01:48,170
+Được rồi. Ta xoá tiêu đề đi.
+
+18
+00:01:48,170 --> 00:01:53,250
+Giờ ta chỉ việc di chuyển cột này ra sau cột kia.
+Để làm việc đó ta phải làm một mẹo.
+
+19
+00:01:53,250 --> 00:01:57,850
+Tôi sẽ chọn chuỗi dữ liệu "thực tế" rồi nhấp chuột phải.
+
+20
+00:01:57,850 --> 00:02:05,430
+Chọn Format data series.  
+Ở đây ta phải biểu diễn chuỗi dữ liệu
+
+21
+00:02:05,430 --> 00:02:10,009
+trên trục thứ cấp. Giờ ta thấy cột này đã ở sau cột kia.
+
+22
+00:02:10,009 --> 00:02:16,220
+Nhưng nếu cột "ngân sách" của tôi thấp hơn
+
+23
+00:02:16,220 --> 00:02:23,400
+thì tôi sẽ không nhìn thấy nó. 
+Vì vậy bằng cách nào đó tôi phải làm 
+
+24
+00:02:23,400 --> 00:02:30,880
+cột "thực tế" nhỏ hơn. Ta có thể làm việc này
+bằng cách tùy chỉnh "gap width".
+
+25
+00:02:30,880 --> 00:02:43,670
+Tôi sẽ để cột này là 200. 
+Còn cột này là 50.
+
+26
+00:02:43,670 --> 00:02:52,209
+Thế này tạm ổn rồi. Nhưng cột "ngân sách"
+của tôi phải thấp hơn cột "thực tế", mà ở đây
+nó lại cao hơn.
+
+27
+00:02:52,209 --> 00:03:00,890
+Đó là vì ta có hai trục khác nhau nên 
+thước đo ở đây là khác nhau.
+
+28
+00:03:00,890 --> 00:03:05,870
+Đã nhiều năm rồi, tôi chờ Microsoft tự động hóa
+việc này nhưng họ vẫn chưa làm.
+
+29
+00:03:05,870 --> 00:03:09,730
+Thế nên ta phải tự tay làm thôi.
+Tôi sẽ chọn trục này.
+
+30
+00:03:09,730 --> 00:03:20,640
+Và cho tổng số là 6 nghìn.
+
+31
+00:03:20,640 --> 00:03:31,980
+Tôi sẽ làm tương tự với trục bên này.
+Tôi sẽ điền giá trị mới vào đây.
+
+32
+00:03:31,980 --> 00:03:39,950
+Lúc này tôi đã có hai trục y hệt nhau. Và cột "ngân sách"
+
+33
+00:03:39,950 --> 00:03:43,819
+đã thấp hơn cột "thực tế". Vậy trục bên này
+không còn chức năng gì nữa.
+
+34
+00:03:43,819 --> 00:03:49,470
+Ta có thể xóa nó đi. 
+Tôi cũng không cần lưới đường thẳng này.
+
+35
+00:03:49,470 --> 00:03:53,010
+Xóa nó đi. Nhưng tôi cũng không thích những con số lớn này.
+
+36
+00:03:53,010 --> 00:03:56,260
+Tôi sẽ thay đổi định dạng chữ số.
+
+37
+00:03:56,260 --> 00:04:05,129
+Ta có thể làm điều này trong mục "number".
+Tuần trước ta cũng làm việc này rồi.
+
+38
+00:04:05,129 --> 00:04:14,930
+Ta sẽ chọn định dạng chữ số tùy chỉnh. Được rồi.
+
+39
+00:04:14,930 --> 00:04:31,900
+Trong trường hợp này tôi sẽ để...
+với dấu ngăn cách phần nghìn ở cuối.
+
+40
+00:04:31,900 --> 00:04:42,690
+Thực ra tôi cần hai dấu vì tôi muốn dùng cho số phần triệu.
+
+41
+00:04:42,690 --> 00:04:47,669
+Giờ tôi đã có số phần triệu. 
+Tôi không cần số "1" này.
+
+42
+00:04:47,669 --> 00:04:58,990
+Ta có thể xóa nó đi. Được rồi.
+
+43
+00:04:58,990 --> 00:05:05,770
+Giờ tôi chỉ việc căn chỉnh định dạng.
+Ở đây ta có một mẹo nữa.
+
+44
+00:05:05,770 --> 00:05:29,930
+Nếu ta nhìn vào dashboard ta sẽ thấy
+ở đây cần 3 biểu đồ khác nhau.
+
+45
+00:05:29,930 --> 00:05:41,690
+Thế nên biểu đồ này nên bé đi một chút.
+Ta lại để chiều cao là 2.15, nhưng lúc này
+bề ngang sẽ là 0.76.
+
+46
+00:05:41,690 --> 00:05:46,790
+Tôi cũng cần một cái trục ở đây,
+
+47
+00:05:46,790 --> 00:05:58,740
+nên tôi sẽ chọn Tick-mark ở ngoài Major level. 
+
+48
+00:05:58,740 --> 00:06:01,930
+Giờ tôi đã có một biểu đồ rất đẹp.
+Tất nhiên nó vẫn có màu nền.
+
+49
+00:06:01,930 --> 00:06:04,880
+Ta không cần nó. Ta muốn tự điều chỉnh nó.
+
+50
+00:06:04,880 --> 00:06:12,580
+Vậy ta xóa nó đi. Rồi ta cut biểu đồ
+
+51
+00:06:12,580 --> 00:06:24,500
+và dán vào dashboard. Được rồi.
+
+52
+00:06:24,500 --> 00:06:30,220
+Đây là mục "bán hàng".
+
+53
+00:06:30,220 --> 00:06:38,120
+Lúc này ta đã làm xong một biểu đồ.
+Ta có thể dễ dàng tiến hành tương tự
+
+54
+00:06:38,130 --> 00:06:40,979
+với "lợi nhuận hoạt động" (operating profit)
+và "hệ số biên" (margin), như bạn có thể 
+nhìn thấy trên slide.
+
+55
+00:06:40,979 --> 00:06:47,229
+Bạn có thể tự làm biểu đồ này. Với mỗi video
+bạn có thể tải các file 
+
+56
+00:06:47,229 --> 00:06:54,710
+mà chúng tôi thực hiện tại đây.
+Ngay cả nếu bạn bỏ lỡ một file, chúng tôi đảm bảo
+
+57
+00:06:54,710 --> 00:06:58,850
+mỗi file bạn nhận được đều sẽ ở đúng tình trạng
+bắt đầu thực hiện bài tập này.
+
+58
+00:06:58,850 --> 00:07:02,520
+Vậy bạn có thể tự luyện tập và đưa hai biểu đồ khác vào.
+
+59
+00:07:02,520 --> 00:07:09,520
+Trong video tới sẽ có gì?
+Ta đã tạo ra một biểu đồ theo chiều dọc,
+
+60
+00:07:09,520 --> 00:07:12,630
+nhưng ta cũng có thể tạo ra biểu đồ theo chiều ngang.
+
+61
+00:07:12,630 --> 00:07:14,639
+Đó sẽ là nội dung của video sắp tới.
+
+62
+00:07:14,639 --> 00:07:15,139
+Hẹn gặp lại các bạn!
+

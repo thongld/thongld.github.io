@@ -1,0 +1,332 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/ne_LDAt88AQ
+
+1
+00:00:00,500 --> 00:00:03,660
+OK, so here's a problem that we're going to look at today.
+
+2
+00:00:03,660 --> 00:00:06,140
+Like I said, you will find this in this week's problem set.
+
+3
+00:00:06,140 --> 00:00:09,730
+So I encourage everyone of you who haven't already
+
+4
+00:00:09,730 --> 00:00:12,450
+to go back, look at this problem,
+
+5
+00:00:12,450 --> 00:00:14,550
+try to solve the problem, wrestle with the problem
+
+6
+00:00:14,550 --> 00:00:16,633
+before you come here and watch the solution on how
+
+7
+00:00:16,633 --> 00:00:17,200
+to solve it.
+
+8
+00:00:17,200 --> 00:00:19,366
+I think you will find this video much more rewarding
+
+9
+00:00:19,366 --> 00:00:21,710
+if you've actually worked through the details
+
+10
+00:00:21,710 --> 00:00:22,740
+of this problem.
+
+11
+00:00:22,740 --> 00:00:27,420
+So those of you haven't, stop the video now and go back,
+
+12
+00:00:27,420 --> 00:00:30,254
+and then you can come back.
+
+13
+00:00:30,254 --> 00:00:32,170
+Those of you feel like you've understood this,
+
+14
+00:00:32,170 --> 00:00:33,950
+feel free to skip ahead, because I'm just
+
+15
+00:00:33,950 --> 00:00:35,650
+going to go and read through the problem
+
+16
+00:00:35,650 --> 00:00:36,775
+and highlight a few things.
+
+17
+00:00:36,775 --> 00:00:39,010
+If you feel like you understand the problem properly,
+
+18
+00:00:39,010 --> 00:00:40,940
+feel free to skip ahead.
+
+19
+00:00:40,940 --> 00:00:43,717
+The rest of you, OK, here we go.
+
+20
+00:00:43,717 --> 00:00:45,050
+So we're looking at a bookstore.
+
+21
+00:00:45,050 --> 00:00:47,650
+The MIT bookstore is selling a popular book
+
+22
+00:00:47,650 --> 00:00:48,830
+on supply chain management.
+
+23
+00:00:48,830 --> 00:00:51,240
+So it's a popular book, good.
+
+24
+00:00:51,240 --> 00:00:54,400
+The book is used as a textbook in a supply chain course
+
+25
+00:00:54,400 --> 00:00:56,440
+during the fall semester and is sold
+
+26
+00:00:56,440 --> 00:01:00,900
+by the store at $160 per book.
+
+27
+00:01:00,900 --> 00:01:04,280
+Once the semester is halfway through, sales tend to drop.
+
+28
+00:01:04,280 --> 00:01:05,860
+At this point, since the bookstore
+
+29
+00:01:05,860 --> 00:01:08,370
+needs to use its retail space for other books,
+
+30
+00:01:08,370 --> 00:01:10,950
+the store clears any remaining inventory of the supply chain
+
+31
+00:01:10,950 --> 00:01:15,060
+book by selling it at $60 per book.
+
+32
+00:01:15,060 --> 00:01:17,740
+The supply chain course has approximately 500 students
+
+33
+00:01:17,740 --> 00:01:18,912
+every fall semester.
+
+34
+00:01:18,912 --> 00:01:20,370
+During previous semesters, the book
+
+35
+00:01:20,370 --> 00:01:23,010
+has sold 200 copies, on average.
+
+36
+00:01:23,010 --> 00:01:24,990
+The bookstore purchases the books
+
+37
+00:01:24,990 --> 00:01:28,730
+from a distributor at $100 per book.
+
+38
+00:01:28,730 --> 00:01:31,140
+There is a significant lead time from the distributor,
+
+39
+00:01:31,140 --> 00:01:32,810
+so orders out before the book need
+
+40
+00:01:32,810 --> 00:01:34,860
+to be placed well before the semester.
+
+41
+00:01:34,860 --> 00:01:37,190
+Also, due to the lead time, there's
+
+42
+00:01:37,190 --> 00:01:41,190
+no time to replenish the books once the semester starts.
+
+43
+00:01:41,190 --> 00:01:43,080
+Consequently, the bookstore needs
+
+44
+00:01:43,080 --> 00:01:45,760
+to make a single decision about how many books to order
+
+45
+00:01:45,760 --> 00:01:48,579
+before the start of a semester.
+
+46
+00:01:48,579 --> 00:01:50,120
+Looking at previous semester's sales,
+
+47
+00:01:50,120 --> 00:01:52,580
+a manager at the bookstore sees that they have never
+
+48
+00:01:52,580 --> 00:01:55,270
+sold more than 250 copies of the book.
+
+49
+00:01:55,270 --> 00:01:58,980
+The data also shows that they have sold as few as 100 books
+
+50
+00:01:58,980 --> 00:02:00,330
+in some semesters.
+
+51
+00:02:00,330 --> 00:02:03,210
+Based on this, she believes that ordering the average sales
+
+52
+00:02:03,210 --> 00:02:05,600
+in previous semesters-- that is, 200 books--
+
+53
+00:02:05,600 --> 00:02:08,780
+is a good policy for the upcoming semester.
+
+54
+00:02:08,780 --> 00:02:10,810
+OK, so what are we looking at here?
+
+55
+00:02:10,810 --> 00:02:12,950
+Clearly, this is a single-period model.
+
+56
+00:02:12,950 --> 00:02:13,537
+Why?
+
+57
+00:02:13,537 --> 00:02:15,120
+Because it has the two characteristics
+
+58
+00:02:15,120 --> 00:02:16,406
+that I told you about.
+
+59
+00:02:16,406 --> 00:02:18,530
+We know that we have a well-defined selling season,
+
+60
+00:02:18,530 --> 00:02:19,030
+right?
+
+61
+00:02:19,030 --> 00:02:20,180
+It's up here.
+
+62
+00:02:20,180 --> 00:02:23,580
+It says that it's during one semester
+
+63
+00:02:23,580 --> 00:02:24,600
+that we sell the books.
+
+64
+00:02:24,600 --> 00:02:26,016
+And at the end of the semester, we
+
+65
+00:02:26,016 --> 00:02:29,410
+want to clear any remaining inventory, right?
+
+66
+00:02:29,410 --> 00:02:31,540
+So we can no longer sell the book at full price
+
+67
+00:02:31,540 --> 00:02:34,190
+after a certain point in time.
+
+68
+00:02:34,190 --> 00:02:36,820
+So it's a well-defined sales period.
+
+69
+00:02:36,820 --> 00:02:40,330
+Also, we cannot replenish during the sales period.
+
+70
+00:02:40,330 --> 00:02:41,870
+And that's over here.
+
+71
+00:02:41,870 --> 00:02:43,576
+It says that due to the lead time,
+
+72
+00:02:43,576 --> 00:02:45,200
+there is no time to replenish the books
+
+73
+00:02:45,200 --> 00:02:46,960
+once the semester starts.
+
+74
+00:02:46,960 --> 00:02:49,870
+So we're looking at a single-period decision
+
+75
+00:02:49,870 --> 00:02:52,680
+where the manager has to make a quantity
+
+76
+00:02:52,680 --> 00:02:54,950
+decision about how many books to order
+
+77
+00:02:54,950 --> 00:02:56,240
+before the semester starts.
+
+78
+00:02:56,240 --> 00:02:58,770
+So the manager has to make a bet.
+
+79
+00:02:58,770 --> 00:03:01,010
+How much do you think we're going to sell,
+
+80
+00:03:01,010 --> 00:03:03,186
+and how much are we going to order in order
+
+81
+00:03:03,186 --> 00:03:05,040
+to meet that demand?
+
+82
+00:03:05,040 --> 00:03:08,540
+So this is the problem that we're going to look at.
+

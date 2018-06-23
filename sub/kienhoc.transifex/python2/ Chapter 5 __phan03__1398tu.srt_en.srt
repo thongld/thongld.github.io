@@ -1,0 +1,842 @@
+357
+00:15:34,739 --> 00:15:36,530
+https://youtu.be/6KgArgGi6Mk
+and handling all this,
+and then we're done.
+
+358
+00:15:36,530 --> 00:15:39,690
+And so if you look at it, we
+have an iteration variable,
+
+359
+00:15:39,690 --> 00:15:41,340
+but we didn't have
+to increment it,
+
+360
+00:15:41,340 --> 00:15:42,660
+we didn't have to do anything.
+
+361
+00:15:42,660 --> 00:15:44,950
+Python took care of a
+lot of things for us.
+
+362
+00:15:44,950 --> 00:15:47,720
+And so when we're looping
+through known list of things,
+
+363
+00:15:47,720 --> 00:15:49,627
+or later when we
+read a file, we're
+
+364
+00:15:49,627 --> 00:15:51,460
+going to loop through
+the lines in the file.
+
+365
+00:15:51,460 --> 00:15:54,440
+And so the for loop is
+a really nice, powerful,
+
+366
+00:15:54,440 --> 00:15:56,170
+and its syntactically cleaner.
+
+367
+00:15:56,170 --> 00:15:58,110
+It's really quite nice.
+
+368
+00:15:58,110 --> 00:16:00,500
+Now it's important to
+realize that you don't have
+
+369
+00:16:00,500 --> 00:16:02,300
+to just loop through numbers.
+
+370
+00:16:02,300 --> 00:16:04,414
+I did that one with a set
+of descending numbers,
+
+371
+00:16:04,414 --> 00:16:06,080
+so that was equivalent
+to the while loop
+
+372
+00:16:06,080 --> 00:16:07,670
+that I started at beginning.
+
+373
+00:16:07,670 --> 00:16:10,920
+But this is a loop where what
+it's going to loop through
+
+374
+00:16:10,920 --> 00:16:14,990
+is a list-- closed square
+brackets are a list in Python.
+
+375
+00:16:14,990 --> 00:16:18,990
+This is a list of three strings,
+Joseph, Glenn, and Sally.
+
+376
+00:16:18,990 --> 00:16:21,920
+They're string constants,
+and then commas
+
+377
+00:16:21,920 --> 00:16:24,320
+are how we make lists.
+
+378
+00:16:24,320 --> 00:16:27,205
+And so friends is a
+mnemonic variable.
+
+379
+00:16:27,205 --> 00:16:29,580
+Python doesn't know anything
+about friends in particular,
+
+380
+00:16:29,580 --> 00:16:31,910
+but I've chosen this
+variable name to be friends.
+
+381
+00:16:31,910 --> 00:16:35,110
+And it's a list of three
+people, Joseph, Glenn and Sally.
+
+382
+00:16:35,110 --> 00:16:37,880
+And so I have an iteration
+variable called friend,
+
+383
+00:16:37,880 --> 00:16:40,160
+and I'm going to loop
+through this set of friends.
+
+384
+00:16:40,160 --> 00:16:42,530
+Now, Python doesn't know
+anything about singular,
+
+385
+00:16:42,530 --> 00:16:44,280
+Python doesn't know
+anything about plural.
+
+386
+00:16:44,280 --> 00:16:45,863
+I'm just choosing
+these variable names
+
+387
+00:16:45,863 --> 00:16:48,450
+because it makes a lot of sense.
+
+388
+00:16:48,450 --> 00:16:51,840
+This is a set of friends,
+because it has three of minute,
+
+389
+00:16:51,840 --> 00:16:54,040
+and this is a single friend.
+
+390
+00:16:54,040 --> 00:16:56,250
+What it's really
+going to do is friend
+
+391
+00:16:56,250 --> 00:16:58,620
+is going to take on the
+successive values Joseph, Glenn
+
+392
+00:16:58,620 --> 00:17:00,630
+and Sally, and this
+little block of code
+
+393
+00:17:00,630 --> 00:17:04,770
+is going to run once for each
+of those three items in the set.
+
+394
+00:17:04,770 --> 00:17:07,349
+And the variable
+friend is going to take
+
+395
+00:17:07,349 --> 00:17:10,170
+on the successive
+values of that set.
+
+396
+00:17:10,170 --> 00:17:13,880
+So out of this comes three lines
+of print out, happy new year
+
+397
+00:17:13,880 --> 00:17:16,020
+Joseph, happy new year
+Glenn, happy new year Sally.
+
+398
+00:17:16,020 --> 00:17:18,670
+Of course, this is the
+i bit right over here.
+
+399
+00:17:18,670 --> 00:17:22,060
+But we just made it so,
+hey Python, look, however
+
+400
+00:17:22,060 --> 00:17:24,780
+many friends there are, run
+this code one time for each one.
+
+401
+00:17:24,780 --> 00:17:26,829
+Change this variable,
+friend, to be each
+
+402
+00:17:26,829 --> 00:17:28,990
+of the success ones in order.
+
+403
+00:17:28,990 --> 00:17:30,470
+And then we print
+that we're done.
+
+404
+00:17:30,470 --> 00:17:31,730
+OK.
+
+405
+00:17:31,730 --> 00:17:33,757
+So the for loop, we
+go and try to make
+
+406
+00:17:33,757 --> 00:17:34,840
+a picture of the for loop.
+
+407
+00:17:34,840 --> 00:17:36,730
+The for loop's kind
+of a powerful thing.
+
+408
+00:17:36,730 --> 00:17:39,530
+It does two things.
+
+409
+00:17:39,530 --> 00:17:42,700
+It decides if we're
+done or not, how
+
+410
+00:17:42,700 --> 00:17:45,510
+do we keep going in the loop.
+
+411
+00:17:45,510 --> 00:17:47,010
+And as long as we
+keep going, we're
+
+412
+00:17:47,010 --> 00:17:49,440
+going to advance the i value,
+the iteration variable.
+
+413
+00:17:49,440 --> 00:17:51,690
+It takes care of the
+responsibility of changing
+
+414
+00:17:51,690 --> 00:17:54,160
+the iteration variable, we do
+not have to add lines of code
+
+415
+00:17:54,160 --> 00:17:57,040
+in that change the
+iteration variable.
+
+416
+00:17:57,040 --> 00:18:01,520
+And so if we take a look,
+we come in, are we done?
+
+417
+00:18:01,520 --> 00:18:02,310
+We're not done.
+
+418
+00:18:02,310 --> 00:18:04,350
+Set i to the right
+thing, then print it.
+
+419
+00:18:04,350 --> 00:18:08,370
+Out comes 5, advanced
+i, advance i.
+
+420
+00:18:08,370 --> 00:18:10,900
+Print it, advance it, print
+it, advance it, print it.
+
+421
+00:18:10,900 --> 00:18:13,360
+Oh, now we're done.
+
+422
+00:18:13,360 --> 00:18:16,510
+i was not the thing that
+decided when we were done.
+
+423
+00:18:16,510 --> 00:18:18,910
+The for loop just
+keeps track internally
+
+424
+00:18:18,910 --> 00:18:22,830
+as i moves through these things
+and goes, oh, I'm all done.
+
+425
+00:18:22,830 --> 00:18:24,310
+I'll take care of that.
+
+426
+00:18:24,310 --> 00:18:25,260
+You finished.
+
+427
+00:18:25,260 --> 00:18:26,600
+So there's no if in here.
+
+428
+00:18:26,600 --> 00:18:29,140
+It's not like, if
+i equals 1, stop.
+
+429
+00:18:29,140 --> 00:18:29,920
+No, no.
+
+430
+00:18:29,920 --> 00:18:31,810
+It just says, you told
+me to do five things,
+
+431
+00:18:31,810 --> 00:18:34,226
+I'm going to do five things,
+and then we're going to stop.
+
+432
+00:18:34,226 --> 00:18:40,930
+And so again, the for loop
+here has got two functions.
+
+433
+00:18:40,930 --> 00:18:42,760
+Decides how long the
+loop's going to run,
+
+434
+00:18:42,760 --> 00:18:44,690
+and changes the
+iteration variable
+
+435
+00:18:44,690 --> 00:18:47,770
+based on what you've told
+it to in this in clause.
+
+436
+00:18:47,770 --> 00:18:50,300
+
+437
+00:18:50,300 --> 00:18:53,580
+So I think in is a
+real elegant construct.
+
+438
+00:18:53,580 --> 00:18:58,300
+It's just a key word, but
+if you think about math,
+
+439
+00:18:58,300 --> 00:18:59,870
+if you're familiar
+with sets, it's
+
+440
+00:18:59,870 --> 00:19:02,150
+like something inside
+of a set of something.
+
+441
+00:19:02,150 --> 00:19:05,050
+I think it's a real pretty
+way to think about it.
+
+442
+00:19:05,050 --> 00:19:06,580
+And you can think
+of a little more
+
+443
+00:19:06,580 --> 00:19:08,380
+abstractly, that you
+say, well, here's
+
+444
+00:19:08,380 --> 00:19:11,040
+a little indented block of code.
+
+445
+00:19:11,040 --> 00:19:15,487
+And I want it to run some number
+of times, for each of the i
+
+446
+00:19:15,487 --> 00:19:18,670
+values in the set, five,
+four, three, two, one.
+
+447
+00:19:18,670 --> 00:19:19,940
+That's how I think of it.
+
+448
+00:19:19,940 --> 00:19:23,180
+So I think this is a
+real pretty syntax.
+
+449
+00:19:23,180 --> 00:19:25,500
+Different languages have
+different looping syntax.
+
+450
+00:19:25,500 --> 00:19:29,030
+I think this is really a very
+expressive, very pretty one.
+
+451
+00:19:29,030 --> 00:19:36,180
+
+452
+00:19:36,180 --> 00:19:40,470
+So one way to think about this
+picture is that the for loop
+
+453
+00:19:40,470 --> 00:19:43,930
+causes repeated execution, and
+we're driving in this circle.
+
+454
+00:19:43,930 --> 00:19:45,430
+and then we stop.
+
+455
+00:19:45,430 --> 00:19:47,280
+The other way to
+think about this
+
+456
+00:19:47,280 --> 00:19:50,680
+is to think about it a
+little more abstractly.
+
+457
+00:19:50,680 --> 00:19:53,820
+To say, hm, at the end of
+the day, all I'm really
+
+458
+00:19:53,820 --> 00:19:57,930
+telling Python is I want to
+execute this block of code
+
+459
+00:19:57,930 --> 00:20:00,820
+five times, and I want
+the variable i to change
+
+460
+00:20:00,820 --> 00:20:01,880
+to these three values.
+
+461
+00:20:01,880 --> 00:20:03,380
+So in a way, you
+could think of this
+
+462
+00:20:03,380 --> 00:20:06,120
+as expanded is the for
+loop sets it to five,
+
+463
+00:20:06,120 --> 00:20:06,990
+then runs your code.
+
+464
+00:20:06,990 --> 00:20:09,300
+The for loop then sets it
+to four, runs your code.
+
+465
+00:20:09,300 --> 00:20:11,680
+The for loop sets it to
+three, runs your code.
+
+466
+00:20:11,680 --> 00:20:14,795
+For loop sets it to two, runs
+your code, sets it to one,
+
+467
+00:20:14,795 --> 00:20:15,840
+runs your code.
+
+468
+00:20:15,840 --> 00:20:19,990
+These two ways of looking
+at it are the same
+
+469
+00:20:19,990 --> 00:20:22,530
+from your perspective,
+because you're just
+
+470
+00:20:22,530 --> 00:20:24,580
+asking Python to do something.
+
+471
+00:20:24,580 --> 00:20:28,050
+Whether it does it this way or
+whether it does it this way,
+
+472
+00:20:28,050 --> 00:20:30,450
+you hardly can tell
+the difference.
+
+473
+00:20:30,450 --> 00:20:32,320
+It's probably going
+to do it this way.
+
+474
+00:20:32,320 --> 00:20:35,350
+But logically it's
+not that different.
+
+475
+00:20:35,350 --> 00:20:37,160
+It's not different
+from doing it this way.
+
+476
+00:20:37,160 --> 00:20:39,810
+You're saying run
+this block of, code
+
+477
+00:20:39,810 --> 00:20:41,510
+change i in the following way.
+
+478
+00:20:41,510 --> 00:20:44,870
+
+479
+00:20:44,870 --> 00:20:46,770
+Cool.
+
+480
+00:20:46,770 --> 00:20:48,600
+It's like we don't
+have to worry.
+
+481
+00:20:48,600 --> 00:20:51,670
+I mean, we can use mentally
+either model of what's
+
+482
+00:20:51,670 --> 00:20:53,549
+going on inside, because
+it doesn't matter,
+
+483
+00:20:53,549 --> 00:20:54,590
+because they're the same.
+
+484
+00:20:54,590 --> 00:20:57,330
+
+485
+00:20:57,330 --> 00:21:00,360
+OK, so these definite
+loops are really cool.
+
+486
+00:21:00,360 --> 00:21:01,820
+Starting in a
+couple of chapters,
+
+487
+00:21:01,820 --> 00:21:04,430
+we'll mostly use definite
+loops to go through lists,
+
+488
+00:21:04,430 --> 00:21:08,400
+or dictionaries, or
+tuples, or files.
+
+489
+00:21:08,400 --> 00:21:10,020
+And so it's a finite
+set of things.
+
+490
+00:21:10,020 --> 00:21:11,728
+It can be a large set
+of things, but it's
+
+491
+00:21:11,728 --> 00:21:13,710
+a finite set of things.
+
+492
+00:21:13,710 --> 00:21:14,510
+OK.
+
+493
+00:21:14,510 --> 00:21:18,980
+So now I want to talk
+about loop idioms.
+
+494
+00:21:18,980 --> 00:21:24,180
+Loop idioms are how
+we construct loops.
+
+495
+00:21:24,180 --> 00:21:28,120
+And the loops have some
+kind of a goal in mind.
+
+496
+00:21:28,120 --> 00:21:30,000
+Finding the largest,
+we've played with that.
+
+497
+00:21:30,000 --> 00:21:33,340
+Finding the smallest,
+counting the number of things.
+
+498
+00:21:33,340 --> 00:21:35,450
+Looking for lines that
+start with pound signs,
+
+499
+00:21:35,450 --> 00:21:36,980
+something like that.
+
+500
+00:21:36,980 --> 00:21:40,700
+They have a high level view of
+what they're supposed to do,
+
+501
+00:21:40,700 --> 00:21:43,800
+and then we have to build
+a loop to accomplish that.
+
+502
+00:21:43,800 --> 00:21:47,630
+And and this goes back to how we
+have to think like a computer.
+
+503
+00:21:47,630 --> 00:21:50,886
+We have to say, hey computer,
+do this over, and over,
+
+504
+00:21:50,886 --> 00:21:52,260
+and over again,
+and then I'll get
+
+505
+00:21:52,260 --> 00:21:54,380
+what I want when you've done
+that over, and over again.
+
+506
+00:21:54,380 --> 00:21:55,800
+You have to do something
+a million times.
+
+507
+00:21:55,800 --> 00:21:57,258
+I'm not going to
+sit here and wait.
+
+508
+00:21:57,258 --> 00:21:59,030
+At the end, I'll
+get what I want.
+
+509
+00:21:59,030 --> 00:22:02,850
+So I call these smart loops,
+or how to build intelligence
+
+510
+00:22:02,850 --> 00:22:03,580
+into loops.
+
+511
+00:22:03,580 --> 00:22:06,290
+
+512
+00:22:06,290 --> 00:22:09,410
+So for example, we want
+the largest number.
+
+513
+00:22:09,410 --> 00:22:11,760
+But we have to
+construct a loop that
+
+514
+00:22:11,760 --> 00:22:15,260
+will get us the largest number
+thinking like a computer.
+
+515
+00:22:15,260 --> 00:22:18,940
+Thinking computationally
+thinking like a computer.
+
+516
+00:22:18,940 --> 00:22:21,960
+So idea is that we have
+some kind of a loop,
+
+517
+00:22:21,960 --> 00:22:25,950
+and we're going to through
+some list of things,
+
+518
+00:22:25,950 --> 00:22:27,898
+and this is going to
+run a bunch of times.
+
+519
+00:22:27,898 --> 00:22:29,606
+But the way we're
+going to do it is we're
+
+520
+00:22:29,606 --> 00:22:32,110
+going to set something up
+before the loop starts,
+
+521
+00:22:32,110 --> 00:22:34,990
+we're going to do something
+to each of the things that's
+
+522
+00:22:34,990 --> 00:22:36,344
+being looked at.
+
+523
+00:22:36,344 --> 00:22:37,760
+And at the end,
+we're going to get
+
+524
+00:22:37,760 --> 00:22:40,500
+the result we're looking for.
+
+525
+00:22:40,500 --> 00:22:43,310
+And so in the
+middle, it's working,
+
+526
+00:22:43,310 --> 00:22:45,560
+it's in the middle working.
+
+527
+00:22:45,560 --> 00:22:47,260
+And then here is the payoff.
+
+528
+00:22:47,260 --> 00:22:51,030
+The payoff is at the end when we
+get the information that we're
+
+529
+00:22:51,030 --> 00:22:52,360
+interested in.
+
+530
+00:22:52,360 --> 00:22:57,850
+So I will use in the next few
+examples this simple loop.
+
+531
+00:22:57,850 --> 00:22:59,880
+And right now, it
+doesn't do much.
+
+532
+00:22:59,880 --> 00:23:02,570
+It does a print before, and it
+has this variable thing that
+
+533
+00:23:02,570 --> 00:23:06,150
+goes through the successive
+values of these numbers,
+
+534
+00:23:06,150 --> 00:23:07,110
+and it prints it out.
+

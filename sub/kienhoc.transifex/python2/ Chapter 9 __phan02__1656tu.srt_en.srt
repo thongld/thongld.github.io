@@ -1,0 +1,944 @@
+198
+00:08:57,054 --> 00:08:58,720
+https://youtu.be/FS-WZWUlPlM
+I'm won't go in that
+I like great detail
+
+199
+00:08:58,720 --> 00:08:59,800
+as to why that it is.
+
+200
+00:08:59,800 --> 00:09:01,570
+It turns out that
+that's a compromise that
+
+201
+00:09:01,570 --> 00:09:03,060
+makes them fast.
+
+202
+00:09:03,060 --> 00:09:04,530
+Using a technique
+called hashing.
+
+203
+00:09:04,530 --> 00:09:06,740
+It's how it's actually
+works internally
+
+204
+00:09:06,740 --> 00:09:09,600
+go to Wikipedia hashing
+and take a look,
+
+205
+00:09:09,600 --> 00:09:14,040
+but the thing that matters to
+us as programmers primarily
+
+206
+00:09:14,040 --> 00:09:18,640
+is that lists maintain
+order and dictionaries
+
+207
+00:09:18,640 --> 00:09:21,040
+do not maintain order.
+
+208
+00:09:21,040 --> 00:09:23,090
+Dictionaries give
+us power that we
+
+209
+00:09:23,090 --> 00:09:25,597
+don't have unless, I mean
+they're very complimentary.
+
+210
+00:09:25,597 --> 00:09:27,680
+There's not this one that's
+better than the other,
+
+211
+00:09:27,680 --> 00:09:28,804
+they're very complimentary.
+
+212
+00:09:28,804 --> 00:09:31,130
+Different kinds of data is
+either better represented
+
+213
+00:09:31,130 --> 00:09:32,980
+as a list or as a
+dictionary depending
+
+214
+00:09:32,980 --> 00:09:34,830
+on the problem trying to solve.
+
+215
+00:09:34,830 --> 00:09:36,990
+And in a moment,
+we'll be writing
+
+216
+00:09:36,990 --> 00:09:38,840
+programs that are using both.
+
+217
+00:09:38,840 --> 00:09:42,430
+So if we come down here
+and I say OK stick 23
+
+218
+00:09:42,430 --> 00:09:47,270
+into assignment statement,
+into ddd sub age,
+
+219
+00:09:47,270 --> 00:09:51,190
+well that will change this
+21 to 23, so we print it out.
+
+220
+00:09:51,190 --> 00:09:54,320
+So you can, this part where you
+look something up and change
+
+221
+00:09:54,320 --> 00:09:56,110
+the value, you
+can do either way,
+
+222
+00:09:56,110 --> 00:10:00,040
+it's just how you do it here
+is a little bit different.
+
+223
+00:10:00,040 --> 00:10:01,640
+OK.
+
+224
+00:10:01,640 --> 00:10:03,840
+So let's look through
+this code again.
+
+225
+00:10:03,840 --> 00:10:07,000
+And so, I like to use
+the word key and value.
+
+226
+00:10:07,000 --> 00:10:09,670
+Key is the way we look
+the thing up in a list,
+
+227
+00:10:09,670 --> 00:10:13,951
+keys are numbers starting
+at 0 and with no gaps.
+
+228
+00:10:13,951 --> 00:10:16,200
+In dictionaries, keys are
+whatever we want them to be,
+
+229
+00:10:16,200 --> 00:10:18,100
+in this case I'm using strings.
+
+230
+00:10:18,100 --> 00:10:20,410
+And then the value is the
+number we're storing in it.
+
+231
+00:10:20,410 --> 00:10:25,960
+So we create this kind of a list
+with those kinds of statements,
+
+232
+00:10:25,960 --> 00:10:28,530
+this statement creates
+this kind of a thing.
+
+233
+00:10:28,530 --> 00:10:32,340
+Now if we think of this
+assignment statement
+
+234
+00:10:32,340 --> 00:10:36,690
+as moving data into a new, into
+a place, a new item of data
+
+235
+00:10:36,690 --> 00:10:43,550
+into a place, it's looking
+at this thing right here.
+
+236
+00:10:43,550 --> 00:10:45,360
+It's like that's where
+I want to move it
+
+237
+00:10:45,360 --> 00:10:48,240
+and so it hunts and
+says look the key up
+
+238
+00:10:48,240 --> 00:10:50,180
+and that's the one that
+I'm going to change,
+
+239
+00:10:50,180 --> 00:10:52,445
+and then once it knows which
+it's going to change then
+
+240
+00:10:52,445 --> 00:10:54,340
+it's going to take
+the 23, then it's
+
+241
+00:10:54,340 --> 00:10:57,200
+going to put the 23
+into that location.
+
+242
+00:10:57,200 --> 00:11:01,280
+And so that's how this
+changes from that to that.
+
+243
+00:11:01,280 --> 00:11:04,400
+Similarly when we
+get down to here,
+
+244
+00:11:04,400 --> 00:11:06,420
+we're going to
+stick 23 somewhere
+
+245
+00:11:06,420 --> 00:11:09,560
+and this expression,
+this look up expression,
+
+246
+00:11:09,560 --> 00:11:11,980
+the index expression,
+dd sub age,
+
+247
+00:11:11,980 --> 00:11:13,420
+is where we're going to put it.
+
+248
+00:11:13,420 --> 00:11:16,470
+So we're looking here,
+where is that thing.
+
+249
+00:11:16,470 --> 00:11:21,270
+Well that thing is this
+entry in the dictionary,
+
+250
+00:11:21,270 --> 00:11:23,270
+and so now we're
+going to store the 23,
+
+251
+00:11:23,270 --> 00:11:25,070
+we know where the
+23 is going to go,
+
+252
+00:11:25,070 --> 00:11:27,505
+it's going to overwrite
+the 21 and so the 21
+
+253
+00:11:27,505 --> 00:11:29,070
+is going to change to 23.
+
+254
+00:11:29,070 --> 00:11:29,570
+OK.
+
+255
+00:11:29,570 --> 00:11:32,070
+So so they're kind
+of similar, there
+
+256
+00:11:32,070 --> 00:11:34,210
+are things that
+work similar in them
+
+257
+00:11:34,210 --> 00:11:37,560
+and then there are things
+that work differently in them.
+
+258
+00:11:37,560 --> 00:11:42,020
+We can make literals,
+constants, with the curly braces
+
+259
+00:11:42,020 --> 00:11:43,450
+and they look just
+like the print.
+
+260
+00:11:43,450 --> 00:11:44,908
+That's one nice
+thing about Python,
+
+261
+00:11:44,908 --> 00:11:46,410
+when you print
+something out, it's
+
+262
+00:11:46,410 --> 00:11:48,620
+showing you how you
+can make a literal
+
+263
+00:11:48,620 --> 00:11:51,340
+and basically you just
+open with a curly brace
+
+264
+00:11:51,340 --> 00:11:56,150
+and say chuck colon
+one, Fred 42, Jan 100
+
+265
+00:11:56,150 --> 00:11:58,140
+and we're making connections.
+
+266
+00:11:58,140 --> 00:12:00,580
+Key value pair, key value pair.
+
+267
+00:12:00,580 --> 00:12:05,782
+We print it out and no order,
+they don't maintain order.
+
+268
+00:12:05,782 --> 00:12:07,490
+Now that might come
+out in the same order
+
+269
+00:12:07,490 --> 00:12:08,760
+but that's just lucky.
+
+270
+00:12:08,760 --> 00:12:10,120
+Right, all the ones
+I've shown you so far,
+
+271
+00:12:10,120 --> 00:12:11,495
+don't come out in
+the same order,
+
+272
+00:12:11,495 --> 00:12:12,650
+which is good demonstrated.
+
+273
+00:12:12,650 --> 00:12:15,020
+If it one time came out
+in the same order, that
+
+274
+00:12:15,020 --> 00:12:17,180
+wouldn't be broken,
+it's not like it doesn't
+
+275
+00:12:17,180 --> 00:12:19,550
+want to come out in the
+same order, it's just,
+
+276
+00:12:19,550 --> 00:12:21,690
+it's not internally stored.
+
+277
+00:12:21,690 --> 00:12:25,129
+And you add an element
+and it may reorder them.
+
+278
+00:12:25,129 --> 00:12:27,670
+You can do an empty dictionary
+with just a curly brace, curly
+
+279
+00:12:27,670 --> 00:12:28,170
+brace.
+
+280
+00:12:28,170 --> 00:12:33,440
+
+281
+00:12:33,440 --> 00:12:37,490
+So, I'm going to give
+you another example.
+
+282
+00:12:37,490 --> 00:12:40,880
+And I'm going to show
+you a series of names,
+
+283
+00:12:40,880 --> 00:12:45,660
+and I want you to figure out
+what the most common name is,
+
+284
+00:12:45,660 --> 00:12:48,270
+and how many times
+each name appears.
+
+285
+00:12:48,270 --> 00:12:49,930
+Now these are real
+people that actually
+
+286
+00:12:49,930 --> 00:12:55,830
+work on the Sakai project,
+Stephen, Zhen, and Chen,
+
+287
+00:12:55,830 --> 00:12:56,660
+and me.
+
+288
+00:12:56,660 --> 00:12:59,050
+So these are people that
+are actually in the data
+
+289
+00:12:59,050 --> 00:13:00,700
+that we use in this course.
+
+290
+00:13:00,700 --> 00:13:04,400
+OK and so I think I'll
+show you about 15 names,
+
+291
+00:13:04,400 --> 00:13:06,717
+and you're to come
+up with a way,
+
+292
+00:13:06,717 --> 00:13:08,550
+I'm going to show them
+to you one at a time.
+
+293
+00:13:08,550 --> 00:13:11,350
+You need to come up with a
+way to keep track of these.
+
+294
+00:13:11,350 --> 00:13:12,390
+OK?
+
+295
+00:13:12,390 --> 00:13:15,370
+So I'll just with no further
+ado, I will show you the names.
+
+296
+00:13:15,370 --> 00:13:53,860
+
+297
+00:13:53,860 --> 00:13:56,230
+OK so that's all the names.
+
+298
+00:13:56,230 --> 00:13:57,630
+Did you get it?
+
+299
+00:13:57,630 --> 00:14:00,960
+You might have to go
+back and do it again.
+
+300
+00:14:00,960 --> 00:14:05,650
+How did you solve the problem,
+what kind of a data structure
+
+301
+00:14:05,650 --> 00:14:09,340
+did you build to solve the
+problem or did you just say,
+
+302
+00:14:09,340 --> 00:14:12,440
+wow that's painful, I think
+I will learn Python instead
+
+303
+00:14:12,440 --> 00:14:15,530
+in solving that problem.
+
+304
+00:14:15,530 --> 00:14:20,730
+So pause the video if
+you want and write down,
+
+305
+00:14:20,730 --> 00:14:23,120
+or go back write
+down what you think
+
+306
+00:14:23,120 --> 00:14:30,210
+the number of the most common
+name is and how many times.
+
+307
+00:14:30,210 --> 00:14:32,050
+OK now I'll show you.
+
+308
+00:14:32,050 --> 00:14:34,460
+So here is the whole list.
+
+309
+00:14:34,460 --> 00:14:35,670
+It's all of them.
+
+310
+00:14:35,670 --> 00:14:39,080
+And now that we see all of them,
+we use our amazing human mind
+
+311
+00:14:39,080 --> 00:14:42,750
+and we scan around and look at
+purpleness and all that stuff,
+
+312
+00:14:42,750 --> 00:14:45,390
+and then we go like, oh this is
+a so much easier problem when
+
+313
+00:14:45,390 --> 00:14:48,050
+I'm looking at the whole thing.
+
+314
+00:14:48,050 --> 00:14:53,885
+And I think that the most
+common person is Zhen,
+
+315
+00:14:53,885 --> 00:15:00,750
+and I think we see Zhen, I
+think we see Zhen five times,
+
+316
+00:15:00,750 --> 00:15:03,740
+and I think Csev
+is one, two three,
+
+317
+00:15:03,740 --> 00:15:07,580
+and Cwen is one, two,
+and Stephen Marquard
+
+318
+00:15:07,580 --> 00:15:09,260
+is one, two, three.
+
+319
+00:15:09,260 --> 00:15:11,552
+So the question is what is
+an effective data structure,
+
+320
+00:15:11,552 --> 00:15:13,301
+if you're going to see
+a million of these?
+
+321
+00:15:13,301 --> 00:15:15,580
+What kind of data structure
+would you have to produce,
+
+322
+00:15:15,580 --> 00:15:17,205
+because you can't
+keep it in your head?
+
+323
+00:15:17,205 --> 00:15:20,207
+Even this number of people,
+you can't, even this amount
+
+324
+00:15:20,207 --> 00:15:22,040
+of data no way you can
+keep it in your head.
+
+325
+00:15:22,040 --> 00:15:26,070
+You have to come up with some
+kind of a variable as it were,
+
+326
+00:15:26,070 --> 00:15:28,210
+just like largest so
+far was a variable.
+
+327
+00:15:28,210 --> 00:15:29,720
+Some kind of variable
+that gets you
+
+328
+00:15:29,720 --> 00:15:32,290
+to the point where you
+understand what's going on.
+
+329
+00:15:32,290 --> 00:15:34,640
+And so this is the
+most common technique
+
+330
+00:15:34,640 --> 00:15:37,100
+to solve this problem,
+where you keep a running
+
+331
+00:15:37,100 --> 00:15:39,110
+total of each of the names.
+
+332
+00:15:39,110 --> 00:15:42,500
+And if you see a new name,
+you add them to the list.
+
+333
+00:15:42,500 --> 00:15:46,205
+So Csev and then you give him
+a one, and then you see Zhen
+
+334
+00:15:46,205 --> 00:15:48,170
+and you give her a one
+and then you see Chen
+
+335
+00:15:48,170 --> 00:15:51,080
+and you give her a one,
+and then you see Csev again
+
+336
+00:15:51,080 --> 00:15:54,090
+and you give him a two, and
+you see and a two, and a two,
+
+337
+00:15:54,090 --> 00:15:57,020
+and a one right?
+
+338
+00:15:57,020 --> 00:15:58,690
+And so then when
+you're all done,
+
+339
+00:15:58,690 --> 00:16:02,790
+you have the mapping,
+right of these things
+
+340
+00:16:02,790 --> 00:16:04,570
+and you go OK let
+me look through here
+
+341
+00:16:04,570 --> 00:16:07,230
+and find the largest one,
+that's the largest one,
+
+342
+00:16:07,230 --> 00:16:09,970
+so that must be the
+person who is the most.
+
+343
+00:16:09,970 --> 00:16:12,720
+So you need a scratch
+area, a data structure
+
+344
+00:16:12,720 --> 00:16:16,580
+or a piece of paper as it
+were, and so that's what,
+
+345
+00:16:16,580 --> 00:16:19,630
+exactly what dictionaries
+are really good at.
+
+346
+00:16:19,630 --> 00:16:23,220
+You could think of this
+as like a histogram.
+
+347
+00:16:23,220 --> 00:16:25,500
+You know it's a
+bunch of counters,
+
+348
+00:16:25,500 --> 00:16:27,850
+but counters that are
+indexed by a string.
+
+349
+00:16:27,850 --> 00:16:29,580
+So we use a lot of this.
+
+350
+00:16:29,580 --> 00:16:32,610
+And so this is a pattern of
+many counters with a dictionary.
+
+351
+00:16:32,610 --> 00:16:33,660
+Simultaneous counters.
+
+352
+00:16:33,660 --> 00:16:35,160
+Were counting a
+bunch of-- they were
+
+353
+00:16:35,160 --> 00:16:36,810
+looking at a series
+of things and we're
+
+354
+00:16:36,810 --> 00:16:39,440
+going to simultaneously
+keep track
+
+355
+00:16:39,440 --> 00:16:42,560
+of a large number of counters,
+rather than just one counter.
+
+356
+00:16:42,560 --> 00:16:44,970
+How many names you
+see total whatever,
+
+357
+00:16:44,970 --> 00:16:47,550
+12, but how many of
+each name did you see
+
+358
+00:16:47,550 --> 00:16:48,795
+is a bunch of counters.
+
+359
+00:16:48,795 --> 00:16:51,840
+So it's a bunch of
+simultaneous counters.
+
+360
+00:16:51,840 --> 00:16:55,030
+So a dictionary
+is great for this,
+
+361
+00:16:55,030 --> 00:16:56,860
+dictionary is great for this.
+
+362
+00:16:56,860 --> 00:16:58,870
+When we see somebody
+for the first time,
+
+363
+00:16:58,870 --> 00:17:00,490
+we can add an entry
+to the dictionary,
+
+364
+00:17:00,490 --> 00:17:06,280
+which is kind of like going
+Csev one and then Chen Wen one.
+
+365
+00:17:06,280 --> 00:17:08,160
+Now these don't
+exist yet, all right
+
+366
+00:17:08,160 --> 00:17:12,089
+so we got Csev one and Chen Wen
+one so that creates an entry
+
+367
+00:17:12,089 --> 00:17:15,700
+and sticks a one in it and new
+mapping between the key Csev
+
+368
+00:17:15,700 --> 00:17:18,410
+and the value one, the key
+Chen Wen and value of one,
+
+369
+00:17:18,410 --> 00:17:21,890
+and we say hey what's in
+there, oh we got Csev as one
+
+370
+00:17:21,890 --> 00:17:25,869
+and Chen Wen is one and then we
+see Chen wen second time so we
+
+371
+00:17:25,869 --> 00:17:28,670
+add another number right
+there, so this old number
+
+372
+00:17:28,670 --> 00:17:31,490
+is one we add one
+to it, we get two
+
+373
+00:17:31,490 --> 00:17:35,330
+and then we stick that back in
+and then we do the calculation,
+
+374
+00:17:35,330 --> 00:17:38,480
+we do a dump and say oh
+there's two in Chen Wen
+
+375
+00:17:38,480 --> 00:17:40,150
+and one in Csev.
+
+376
+00:17:40,150 --> 00:17:41,620
+OK
+
+377
+00:17:41,620 --> 00:17:44,020
+So this is a great
+data structure
+
+378
+00:17:44,020 --> 00:17:46,310
+for these simultaneous
+counters, like what's
+
+379
+00:17:46,310 --> 00:17:51,100
+the most common word,
+who had the most commits.
+
+380
+00:17:51,100 --> 00:17:53,772
+Now everything we do,
+we have to figure out
+
+381
+00:17:53,772 --> 00:17:55,980
+like when you're going to
+get in trouble with Python,
+
+382
+00:17:55,980 --> 00:17:58,770
+when Python's going to give
+you the old thumbs down and say
+
+383
+00:17:58,770 --> 00:18:00,230
+yup you went too far.
+
+384
+00:18:00,230 --> 00:18:02,430
+So one thing Python
+does not like ,
+
+385
+00:18:02,430 --> 00:18:06,340
+is if you reference a
+key before it exists.
+
+386
+00:18:06,340 --> 00:18:09,089
+We'll look at in a second
+how to work around this,
+
+387
+00:18:09,089 --> 00:18:10,630
+but if you simply
+create a dictionary
+
+388
+00:18:10,630 --> 00:18:13,160
+and say oh print out
+what's under Csev,
+
+389
+00:18:13,160 --> 00:18:16,250
+it gives you a trace
+back, it's like I'm
+
+390
+00:18:16,250 --> 00:18:18,390
+going to inform you
+that that's not there.
+
+391
+00:18:18,390 --> 00:18:20,500
+And it's a key error Csev.
+
+392
+00:18:20,500 --> 00:18:24,810
+Now the thing that allows us to
+solve this, is the in operator.
+
+393
+00:18:24,810 --> 00:18:27,060
+We've used the in operator
+to see if a substring was
+
+394
+00:18:27,060 --> 00:18:30,410
+in a string, or the
+number was in a list, so
+

@@ -1,0 +1,449 @@
+191
+00:08:18,010 --> 00:08:19,720
+https://youtu.be/VXyRfgnzL2o
+So we call this a
+one-way decision,
+
+192
+00:08:19,720 --> 00:08:20,910
+where you have the
+question and then you
+
+193
+00:08:20,910 --> 00:08:22,368
+have a couple of
+things that you're
+
+194
+00:08:22,368 --> 00:08:24,040
+going to do on this true thing.
+
+195
+00:08:24,040 --> 00:08:26,160
+Or if it turns out
+that you're false,
+
+196
+00:08:26,160 --> 00:08:30,070
+you're going to skip
+all those things.
+
+197
+00:08:30,070 --> 00:08:34,340
+So Python is actually
+one of the few languages
+
+198
+00:08:34,340 --> 00:08:39,700
+that uses indentation as
+syntactically significant.
+
+199
+00:08:39,700 --> 00:08:43,289
+We like to indent code to
+for ifs, and in a moment
+
+200
+00:08:43,289 --> 00:08:44,770
+we'll learn about loops.
+
+201
+00:08:44,770 --> 00:08:48,440
+We like to indent code as a
+way to make sense of stuff.
+
+202
+00:08:48,440 --> 00:08:51,130
+It makes it easier to read.
+
+203
+00:08:51,130 --> 00:08:53,040
+You know if this thing's inside.
+
+204
+00:08:53,040 --> 00:08:54,830
+And so you it's
+really quite nice.
+
+205
+00:08:54,830 --> 00:08:56,760
+And then we sort of
+use it as a matching
+
+206
+00:08:56,760 --> 00:08:58,340
+to help us
+cognitively understand
+
+207
+00:08:58,340 --> 00:09:02,636
+what's inside of a program.
+
+208
+00:09:02,636 --> 00:09:04,510
+But in Python, it's
+really, really important.
+
+209
+00:09:04,510 --> 00:09:07,390
+
+210
+00:09:07,390 --> 00:09:09,130
+You have to think
+of like when you
+
+211
+00:09:09,130 --> 00:09:10,910
+are moving in you
+mean something,
+
+212
+00:09:10,910 --> 00:09:13,280
+and when you move back
+out you mean something.
+
+213
+00:09:13,280 --> 00:09:15,390
+So you can increase
+the indent, which
+
+214
+00:09:15,390 --> 00:09:17,764
+you do after an if statement
+or any other statement that
+
+215
+00:09:17,764 --> 00:09:18,430
+ends in a colon.
+
+216
+00:09:18,430 --> 00:09:21,670
+You increase the indent,
+and then when you're done,
+
+217
+00:09:21,670 --> 00:09:22,760
+you decrease the indent.
+
+218
+00:09:22,760 --> 00:09:26,460
+You maintain the indent,
+sort of for sequential code.
+
+219
+00:09:26,460 --> 00:09:28,650
+Blank lines and
+comments are ignored.
+
+220
+00:09:28,650 --> 00:09:31,789
+So you can have a blank line,
+and the indentation just
+
+221
+00:09:31,789 --> 00:09:32,580
+goes right past it.
+
+222
+00:09:32,580 --> 00:09:34,430
+And the comments
+don't affect it.
+
+223
+00:09:34,430 --> 00:09:38,730
+And so while we're
+here we'll interrupt us
+
+224
+00:09:38,730 --> 00:09:41,403
+for a recommendation.
+
+225
+00:09:41,403 --> 00:09:44,140
+
+226
+00:09:44,140 --> 00:09:49,440
+In your text editor, Notepad+,
+TextEdit, or TextWrangler,
+
+227
+00:09:49,440 --> 00:09:54,240
+or whatever you're using, it may
+be set when you hit the tab key
+
+228
+00:09:54,240 --> 00:09:56,600
+to move in four spaces.
+
+229
+00:09:56,600 --> 00:09:58,670
+Sometimes you also might
+move in four spaces
+
+230
+00:09:58,670 --> 00:10:01,170
+by hitting space bar four times.
+
+231
+00:10:01,170 --> 00:10:03,520
+Python will see
+that as different.
+
+232
+00:10:03,520 --> 00:10:07,100
+And it is possible in all
+of these word processors
+
+233
+00:10:07,100 --> 00:10:11,180
+to say, hey, don't actually
+put tabs in my document.
+
+234
+00:10:11,180 --> 00:10:13,720
+When I hit the tab,
+put in four spaces.
+
+235
+00:10:13,720 --> 00:10:16,864
+Then, whether you're hitting the
+space bar or hitting the tab,
+
+236
+00:10:16,864 --> 00:10:19,280
+at least you are putting the
+same thing into your document
+
+237
+00:10:19,280 --> 00:10:22,730
+and not freaking Python out.
+
+238
+00:10:22,730 --> 00:10:25,580
+If you don't, you may
+get indentation errors.
+
+239
+00:10:25,580 --> 00:10:29,190
+Indentation errors are
+syntax errors to Python.
+
+240
+00:10:29,190 --> 00:10:31,460
+And what's really
+frustrating is it
+
+241
+00:10:31,460 --> 00:10:33,140
+looks good to you
+in your text editor.
+
+242
+00:10:33,140 --> 00:10:36,020
+You have an if, and the block
+goes in, and it comes back out.
+
+243
+00:10:36,020 --> 00:10:38,810
+But one of them is four spaces,
+and one of them is a tab,
+
+244
+00:10:38,810 --> 00:10:40,530
+then Python will yell at you.
+
+245
+00:10:40,530 --> 00:10:42,260
+And this is really
+frustrating, when
+
+246
+00:10:42,260 --> 00:10:45,090
+Python yells at you about that.
+
+247
+00:10:45,090 --> 00:10:48,630
+So what I'd like you to do
+is go into your text editor--
+
+248
+00:10:48,630 --> 00:10:53,430
+whatever it is-- into the
+properties or the settings.
+
+249
+00:10:53,430 --> 00:10:58,770
+And yours may be different,
+but here is where
+
+250
+00:10:58,770 --> 00:11:03,300
+you set this Auto-expand Tabs.
+
+251
+00:11:03,300 --> 00:11:05,850
+That is on the Mac
+in TextWrangler.
+
+252
+00:11:05,850 --> 00:11:09,620
+And then in Notepad++ there
+is Replace Tabs with Spaces.
+
+253
+00:11:09,620 --> 00:11:11,270
+And that's underneath
+preferences.
+
+254
+00:11:11,270 --> 00:11:12,580
+So you have to find it.
+
+255
+00:11:12,580 --> 00:11:16,160
+Stop right now and go
+set this, so you're not
+
+256
+00:11:16,160 --> 00:11:18,830
+going to make yourself crazy.
+
+257
+00:11:18,830 --> 00:11:21,172
+OK, so this is kind
+of a busy slide,
+
+258
+00:11:21,172 --> 00:11:22,630
+but it gives you
+the sense that you
+
+259
+00:11:22,630 --> 00:11:28,270
+have to explicitly think about
+indenting and de-indenting.
+
+260
+00:11:28,270 --> 00:11:30,330
+And so I'm just going
+to walk through this.
+
+261
+00:11:30,330 --> 00:11:33,910
+So when you have
+two lines lining up,
+
+262
+00:11:33,910 --> 00:11:36,290
+that means they're going
+to run sequentially.
+
+263
+00:11:36,290 --> 00:11:39,580
+If you see an if, or later
+here we'll see a for--
+
+264
+00:11:39,580 --> 00:11:44,470
+we haven't talked about for
+yet, but it's like if-- the fact
+
+265
+00:11:44,470 --> 00:11:46,610
+that we go from this second
+line to this third line
+
+266
+00:11:46,610 --> 00:11:48,360
+and move the indent
+in, we're actually
+
+267
+00:11:48,360 --> 00:11:51,270
+creating a block that
+has to do with this if.
+
+268
+00:11:51,270 --> 00:11:53,430
+And you can also kind
+of tell the if and the
+
+269
+00:11:53,430 --> 00:11:55,980
+for end in a colon character.
+
+270
+00:11:55,980 --> 00:11:58,760
+Now, we could pull
+this print back out,
+
+271
+00:11:58,760 --> 00:12:02,440
+but we want it to be part of the
+if, so we maintain the indent.
+
+272
+00:12:02,440 --> 00:12:05,200
+And then we're done with
+the if by pulling out.
+
+273
+00:12:05,200 --> 00:12:08,390
+So we line the p with
+the i, and that means
+
+274
+00:12:08,390 --> 00:12:11,090
+this is outside of the if.
+
+275
+00:12:11,090 --> 00:12:14,290
+This for, which we haven't
+learned about for yet,
+
+276
+00:12:14,290 --> 00:12:16,530
+is another statement
+that ends in colon.
+
+277
+00:12:16,530 --> 00:12:19,000
+And afterwards,
+you have to indent.
+
+278
+00:12:19,000 --> 00:12:21,130
+Then you maintain the indent.
+
+279
+00:12:21,130 --> 00:12:22,220
+Here's an if.
+
+280
+00:12:22,220 --> 00:12:25,060
+But now we have an if,
+and we're already in.
+
+281
+00:12:25,060 --> 00:12:28,540
+But it ends in a colon,
+so we go in farther.
+
+282
+00:12:28,540 --> 00:12:29,910
+And now this is the block.
+
+283
+00:12:29,910 --> 00:12:32,660
+Now, we come back
+out, and we line
+
+284
+00:12:32,660 --> 00:12:35,670
+up with that if right there.
+
+285
+00:12:35,670 --> 00:12:38,780
+And now at the end
+of this indent,
+

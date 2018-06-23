@@ -1,0 +1,508 @@
+0
+00:00:00,000 --> 00:00:01,290
+https://youtu.be/NIg8sWvrbAc
+
+1
+00:00:01,290 --> 00:00:03,240
+So now let's extend what we've learned
+
+2
+00:00:03,240 --> 00:00:05,970
+in working with the Planned Backorder situation
+
+3
+00:00:05,970 --> 00:00:08,420
+with Deterministic Demand to the case where
+
+4
+00:00:08,420 --> 00:00:11,070
+we have Probabilistic or Stochastic Demand.
+
+5
+00:00:11,070 --> 00:00:13,210
+And we're going to focus initially on the simplest
+
+6
+00:00:13,210 --> 00:00:15,960
+model, and that is the Newsvendor problem
+
+7
+00:00:15,960 --> 00:00:18,070
+or the Single Period Inventory Model.
+
+8
+00:00:18,070 --> 00:00:21,220
+So let's start and look at our assumptions.
+
+9
+00:00:21,220 --> 00:00:24,870
+So for the Single Period Models we're going to develop here,
+
+10
+00:00:24,870 --> 00:00:26,920
+we made a couple changes on the assumptions.
+
+11
+00:00:26,920 --> 00:00:29,250
+The first is the demand.
+
+12
+00:00:29,250 --> 00:00:33,030
+Instead of constant and known demand, we are now variable
+
+13
+00:00:33,030 --> 00:00:34,380
+and it's random.
+
+14
+00:00:34,380 --> 00:00:36,950
+Because we have random demand, there's
+
+15
+00:00:36,950 --> 00:00:39,620
+going to be a higher probability that I
+
+16
+00:00:39,620 --> 00:00:40,920
+might have excess demand.
+
+17
+00:00:40,920 --> 00:00:42,210
+I'll be short.
+
+18
+00:00:42,210 --> 00:00:46,030
+So what will we do with those short cases?
+
+19
+00:00:46,030 --> 00:00:48,260
+Well, we'll have lost orders.
+
+20
+00:00:48,260 --> 00:00:49,990
+And then finally, the big change we're
+
+21
+00:00:49,990 --> 00:00:52,520
+making for this model, this Single Period,
+
+22
+00:00:52,520 --> 00:00:54,710
+is we're moving away from an infinite planning
+
+23
+00:00:54,710 --> 00:00:57,840
+horizon to one where it's a Single Period.
+
+24
+00:00:57,840 --> 00:01:01,940
+So my planning is going to be for one selling period where I
+
+25
+00:01:01,940 --> 00:01:05,310
+need to make a decision for how much to order ahead of time
+
+26
+00:01:05,310 --> 00:01:08,650
+and I cannot replenish within that time period.
+
+27
+00:01:08,650 --> 00:01:10,920
+So this is what's known as the Newsvendor problem.
+
+28
+00:01:10,920 --> 00:01:14,910
+And so let's expand on this by working through an example.
+
+29
+00:01:14,910 --> 00:01:18,810
+This example is based off of a thesis from 2004.
+
+30
+00:01:18,810 --> 00:01:20,290
+And what the situation is, there's
+
+31
+00:01:20,290 --> 00:01:24,080
+a company that's called Reebok, and in 2002, they
+
+32
+00:01:24,080 --> 00:01:28,000
+gained the sole rights to sell replica NFL jerseys.
+
+33
+00:01:28,000 --> 00:01:31,480
+These are things, jerseys that are sold to fans in the United
+
+34
+00:01:31,480 --> 00:01:35,030
+States, the National Football League, or NFL,
+
+35
+00:01:35,030 --> 00:01:37,250
+is one of the most popular sports.
+
+36
+00:01:37,250 --> 00:01:39,860
+It's a professional sport; it's American football;
+
+37
+00:01:39,860 --> 00:01:45,040
+there's 32 teams; each team has about 50 players and fans
+
+38
+00:01:45,040 --> 00:01:48,690
+of one of these teams; they like to buy the jerseys to show
+
+39
+00:01:48,690 --> 00:01:51,820
+that they're a member of that team.
+
+40
+00:01:51,820 --> 00:01:53,432
+And so here is the picture, and this
+
+41
+00:01:53,432 --> 00:01:55,930
+is Tom Brady of the New England Patriots
+
+42
+00:01:55,930 --> 00:01:57,940
+and you see his jersey number 12.
+
+43
+00:01:57,940 --> 00:02:00,790
+Well, people would like to go by a number 12 New England
+
+44
+00:02:00,790 --> 00:02:03,740
+Patriots jersey with Brady written on the back.
+
+45
+00:02:03,740 --> 00:02:06,340
+All the jerseys have unique names and numbers
+
+46
+00:02:06,340 --> 00:02:09,300
+so there's a higher number of SKUs.
+
+47
+00:02:09,300 --> 00:02:12,960
+And the way these things are sold: there's a peak time,
+
+48
+00:02:12,960 --> 00:02:15,390
+and it's right at the end of summer
+
+49
+00:02:15,390 --> 00:02:19,220
+before the fall season starts, and it's about eight weeks.
+
+50
+00:02:19,220 --> 00:02:22,780
+And that's where the majority of the jerseys are sold.
+
+51
+00:02:22,780 --> 00:02:25,680
+Now, when they have these jerseys made,
+
+52
+00:02:25,680 --> 00:02:28,180
+it's made from a contract manufacturer
+
+53
+00:02:28,180 --> 00:02:30,540
+and it takes about 12 to 16 weeks
+
+54
+00:02:30,540 --> 00:02:34,550
+to complete that order because it's done overseas.
+
+55
+00:02:34,550 --> 00:02:36,350
+So, you see the problem here is that they
+
+56
+00:02:36,350 --> 00:02:40,020
+have to place an order 16 weeks out
+
+57
+00:02:40,020 --> 00:02:42,580
+and they only have an eight week period to sell.
+
+58
+00:02:42,580 --> 00:02:45,600
+So therefore, this is a Single Period Problem.
+
+59
+00:02:45,600 --> 00:02:49,590
+And so the issue is that Reebok has to commit to an order
+
+60
+00:02:49,590 --> 00:02:53,670
+to the quantity for each player for each team ahead of time
+
+61
+00:02:53,670 --> 00:02:56,670
+while the actual demand that arises during that eight week
+
+62
+00:02:56,670 --> 00:02:59,390
+selling period is totally uncertain,
+
+63
+00:02:59,390 --> 00:03:02,010
+so they can't react within the selling period.
+
+64
+00:03:02,010 --> 00:03:04,790
+If one of the jerseys starts selling really well,
+
+65
+00:03:04,790 --> 00:03:07,480
+they can't suddenly order more or vice versa.
+
+66
+00:03:07,480 --> 00:03:10,940
+They can't lower an order during that selling period.
+
+67
+00:03:10,940 --> 00:03:12,580
+And so the question that Reebok has
+
+68
+00:03:12,580 --> 00:03:16,580
+is, how many of these jerseys of each player should they order?
+
+69
+00:03:16,580 --> 00:03:19,410
+Now this might sound like a really specialized problem,
+
+70
+00:03:19,410 --> 00:03:21,040
+but it isn't.
+
+71
+00:03:21,040 --> 00:03:23,670
+This problem is very common; it's not unique.
+
+72
+00:03:23,670 --> 00:03:26,440
+It's called the Newsvendor problem because it originally
+
+73
+00:03:26,440 --> 00:03:30,060
+arose from the idea of someone who sells newspapers,
+
+74
+00:03:30,060 --> 00:03:32,300
+where every day they would go and buy
+
+75
+00:03:32,300 --> 00:03:34,840
+a certain number of newspapers from the plant
+
+76
+00:03:34,840 --> 00:03:36,360
+and sell them on the street.
+
+77
+00:03:36,360 --> 00:03:40,720
+At the end of the day, any extra newspapers they had,
+
+78
+00:03:40,720 --> 00:03:42,780
+they would have to eat them or throw them away.
+
+79
+00:03:42,780 --> 00:03:45,490
+They couldn't sell the papers tomorrow.
+
+80
+00:03:45,490 --> 00:03:48,080
+No one wants to buy yesterday's newspaper.
+
+81
+00:03:48,080 --> 00:03:49,839
+And also during the day, if there
+
+82
+00:03:49,839 --> 00:03:51,380
+are more people wanting their papers,
+
+83
+00:03:51,380 --> 00:03:52,900
+they couldn't replenish.
+
+84
+00:03:52,900 --> 00:03:56,050
+So the Newsvendor problem is essentially the classic Single
+
+85
+00:03:56,050 --> 00:03:57,820
+Period Inventory Problem.
+
+86
+00:03:57,820 --> 00:04:01,020
+And the way you can classify these is any time where you
+
+87
+00:04:01,020 --> 00:04:04,665
+have a firm who has to make a bet on how much they order,
+
+88
+00:04:04,665 --> 00:04:08,670
+a Q*, over a certain fixed Single Period where they
+
+89
+00:04:08,670 --> 00:04:11,520
+can't be replenished and there's uncertain demand during that
+
+90
+00:04:11,520 --> 00:04:12,740
+period.
+
+91
+00:04:12,740 --> 00:04:15,260
+So let me give you some more data here for this problem.
+
+92
+00:04:15,260 --> 00:04:17,950
+
+
+93
+00:04:17,950 --> 00:04:20,800
+The cost of the jersey that Reebok had to pay was about
+
+94
+00:04:20,800 --> 00:04:22,630
+$10.90.
+
+95
+00:04:22,630 --> 00:04:27,050
+They sold them to retail outlets for about $24 a jersey.
+
+96
+00:04:27,050 --> 00:04:29,540
+And they forecasted the demand over the eight weeks
+
+97
+00:04:29,540 --> 00:04:32,350
+selling period to be about 32,000 jerseys.
+
+98
+00:04:32,350 --> 00:04:35,640
+This is for Tom Brady's jerseys, with a standard deviation
+
+99
+00:04:35,640 --> 00:04:36,510
+of 11,000.
+
+100
+00:04:36,510 --> 00:04:39,980
+And they noticed that it was Normally distributed.
+
+101
+00:04:39,980 --> 00:04:44,320
+So what they wanted to do was to find the Q*, right,
+
+102
+00:04:44,320 --> 00:04:47,500
+the order quantity that would maximize their profit.
+
+103
+00:04:47,500 --> 00:04:50,520
+Notice this is different from everything we've done with EOQ.
+
+104
+00:04:50,520 --> 00:04:52,930
+With EOQ we're looking to minimize cost.
+
+105
+00:04:52,930 --> 00:04:55,200
+Here we're maximizing profit.
+
+106
+00:04:55,200 --> 00:04:56,820
+And what's our profit function?
+
+107
+00:04:56,820 --> 00:05:00,070
+Well, it's simply going to be this p, the purchase price,
+
+108
+00:05:00,070 --> 00:05:04,790
+times the minimum of either the amount of demand that shows up
+
+109
+00:05:04,790 --> 00:05:07,960
+or the q, the amount that I ordered.
+
+110
+00:05:07,960 --> 00:05:09,950
+I can't sell any more than I ordered
+
+111
+00:05:09,950 --> 00:05:12,360
+and I can't sell any more than what's demanded.
+
+112
+00:05:12,360 --> 00:05:14,360
+So the minimum of those two quantities
+
+113
+00:05:14,360 --> 00:05:16,474
+will be the amount that I can sell.
+
+114
+00:05:16,474 --> 00:05:17,890
+And then I'm going to subtract off
+
+115
+00:05:17,890 --> 00:05:20,500
+of that the cost times the q, which
+
+116
+00:05:20,500 --> 00:05:22,220
+is the amount of that I'm ordering.
+
+117
+00:05:22,220 --> 00:05:24,150
+Now the challenge is, we don't know
+
+118
+00:05:24,150 --> 00:05:26,750
+what this x is, it's a random variable.
+
+119
+00:05:26,750 --> 00:05:28,250
+That's the trick.
+
+120
+00:05:28,250 --> 00:05:29,952
+So how do I determine the best policy?
+
+121
+00:05:29,952 --> 00:05:31,910
+Well, what we're going to do in the next couple
+
+122
+00:05:31,910 --> 00:05:33,610
+videos is show two different ways.
+
+123
+00:05:33,610 --> 00:05:35,300
+I'll start off with a data table then
+
+124
+00:05:35,300 --> 00:05:37,130
+we'll go into marginal analysis.
+
+125
+00:05:37,130 --> 00:05:40,205
+So let's get started with a data table next.
+
+126
+00:05:40,205 --> 00:05:40,705
+
+

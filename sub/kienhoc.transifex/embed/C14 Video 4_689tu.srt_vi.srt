@@ -1,0 +1,445 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/YCScddUsZZA
+
+1
+00:00:00,000 --> 00:00:00,262
+
+2
+00:00:00,262 --> 00:00:02,470
+DR. RAMESH YERRABALLI: So
+we looked at the two steps.
+
+3
+00:00:02,470 --> 00:00:07,350
+One is the initialization step,
+which is what this routine is doing.
+
+4
+00:00:07,350 --> 00:00:12,380
+The initialization ritual, which we
+do one, which is a 13 step sequence.
+
+5
+00:00:12,380 --> 00:00:14,740
+You can look at all the details here.
+
+6
+00:00:14,740 --> 00:00:15,970
+We talked about it.
+
+7
+00:00:15,970 --> 00:00:24,970
+This part here is simply making the GPI
+pin be an alternate pin and an input.
+
+8
+00:00:24,970 --> 00:00:26,660
+So this is saying input.
+
+9
+00:00:26,660 --> 00:00:27,780
+We did the clock.
+
+10
+00:00:27,780 --> 00:00:30,230
+We did the alternate bit.
+
+11
+00:00:30,230 --> 00:00:32,930
+And then we did select, and we
+enabled (Disable digital) it.
+
+12
+00:00:32,930 --> 00:00:40,740
+Now, the second part is we
+turn on the clock for the ADC.
+
+13
+00:00:40,740 --> 00:00:45,600
+We wait for a little bit too
+for the clock to get going.
+
+14
+00:00:45,600 --> 00:00:47,990
+We set the sampling rate.
+
+15
+00:00:47,990 --> 00:00:50,510
+We set the priority of the sequencer.
+
+16
+00:00:50,510 --> 00:00:56,310
+We disable it and enable
+it between these two steps.
+
+17
+00:00:56,310 --> 00:01:00,310
+And while we are configuring
+it, the steps involved
+
+18
+00:01:00,310 --> 00:01:03,425
+are, what is the trigger we're using?
+
+19
+00:01:03,425 --> 00:01:05,730
+We're using software as a trigger.
+
+20
+00:01:05,730 --> 00:01:12,700
+We are saying, I'm using channel
+PE2, which is analog in one(AIN1).
+
+21
+00:01:12,700 --> 00:01:17,187
+And we made sure that IE0 is set to one.
+
+22
+00:01:17,187 --> 00:01:19,770
+DR. JONATHAN VALVANO: I have a
+question, Professor Yerraballi.
+
+23
+00:01:19,770 --> 00:01:24,090
+Why did you disable the digital input?
+
+24
+00:01:24,090 --> 00:01:26,240
+DR. RAMESH YERRABALLI:
+Oh, that is correct.
+
+25
+00:01:26,240 --> 00:01:31,340
+In fact, what we did for the
+D-enable is we turned it off.
+
+26
+00:01:31,340 --> 00:01:32,840
+DR. JONATHAN VALVANO: Yeah, but why?
+
+27
+00:01:32,840 --> 00:01:35,350
+DR. RAMESH YERRABALLI: That
+is because it's not digital.
+
+28
+00:01:35,350 --> 00:01:36,210
+It's analog.
+
+29
+00:01:36,210 --> 00:01:37,460
+DR. JONATHAN VALVANO: Ah, yes.
+
+30
+00:01:37,460 --> 00:01:39,356
+You're right.
+
+31
+00:01:39,356 --> 00:01:40,730
+DR. RAMESH YERRABALLI: All right.
+
+32
+00:01:40,730 --> 00:01:47,650
+So let's take a look at our second
+routine, which is our routine
+
+33
+00:01:47,650 --> 00:01:51,530
+where we're actually
+going to be read the data.
+
+34
+00:01:51,530 --> 00:01:53,220
+So this is a data read routine.
+
+35
+00:01:53,220 --> 00:01:57,210
+This is when there is a sample,
+and you're ready to read it.
+
+36
+00:01:57,210 --> 00:01:59,490
+And this routine has been called.
+
+37
+00:01:59,490 --> 00:02:04,520
+This routine's responsibility
+is to tell the ADC module
+
+38
+00:02:04,520 --> 00:02:09,234
+that you are ready to read
+it, which is our first step.
+
+39
+00:02:09,234 --> 00:02:10,130
+OK.
+
+40
+00:02:10,130 --> 00:02:13,320
+Let's take a look at the read routine.
+
+41
+00:02:13,320 --> 00:02:15,560
+We've already seen it, so
+I'm going to summarize it.
+
+42
+00:02:15,560 --> 00:02:16,480
+We start.
+
+43
+00:02:16,480 --> 00:02:20,260
+
+44
+00:02:20,260 --> 00:02:26,950
+And once we get the
+sampling going, we'll
+
+45
+00:02:26,950 --> 00:02:30,260
+keep checking to see if it is done.
+
+46
+00:02:30,260 --> 00:02:33,680
+So you're we're going
+to check the status bit.
+
+47
+00:02:33,680 --> 00:02:38,680
+And if the status bit
+says that it's Busy,
+
+48
+00:02:38,680 --> 00:02:42,920
+then we keep going back
+and keep checking it.
+
+49
+00:02:42,920 --> 00:02:46,990
+And eventually, it's
+going to say it's done.
+
+50
+00:02:46,990 --> 00:02:49,745
+And once it's done, we're
+going to read the data.
+
+51
+00:02:49,745 --> 00:02:57,320
+
+52
+00:02:57,320 --> 00:03:01,420
+And we're going to clear the bit.
+
+53
+00:03:01,420 --> 00:03:04,220
+So that's exactly what you see here.
+
+54
+00:03:04,220 --> 00:03:06,900
+This is a start.
+
+55
+00:03:06,900 --> 00:03:12,990
+We have a loop here, which
+repeatedly checks the status.
+
+56
+00:03:12,990 --> 00:03:15,200
+Then we come out of this.
+
+57
+00:03:15,200 --> 00:03:20,590
+We read the data, which is
+right here in the FIFO3.
+
+58
+00:03:20,590 --> 00:03:26,330
+And the last step is we cleared
+the bit, which is right here.
+
+59
+00:03:26,330 --> 00:03:27,630
+And we return the results.
+
+60
+00:03:27,630 --> 00:03:28,757
+So we return.
+
+61
+00:03:28,757 --> 00:03:30,667
+
+62
+00:03:30,667 --> 00:03:32,000
+DR. JONATHAN VALVANO: All right.
+
+63
+00:03:32,000 --> 00:03:33,030
+Shall we see if it works?
+
+64
+00:03:33,030 --> 00:03:33,990
+DR. RAMESH YERRABALLI: Let's do it.
+
+65
+00:03:33,990 --> 00:03:35,323
+DR. JONATHAN VALVANO: All right.
+
+66
+00:03:35,323 --> 00:03:40,190
+So we have a analog signal
+connected up to PE2.
+
+67
+00:03:40,190 --> 00:03:43,010
+So to test it, we ill
+use this main program.
+
+68
+00:03:43,010 --> 00:03:47,330
+And we will ask the ADC
+converter to capture the input
+
+69
+00:03:47,330 --> 00:03:49,740
+and store it into this variable.
+
+70
+00:03:49,740 --> 00:03:50,240
+All right.
+
+71
+00:03:50,240 --> 00:03:51,050
+Let's go.
+
+72
+00:03:51,050 --> 00:03:53,230
+Build.
+
+73
+00:03:53,230 --> 00:03:55,830
+Download.
+
+74
+00:03:55,830 --> 00:03:56,330
+Debug.
+
+75
+00:03:56,330 --> 00:04:01,159
+
+76
+00:04:01,159 --> 00:04:02,450
+Let's look at the watch window.
+
+77
+00:04:02,450 --> 00:04:05,840
+
+78
+00:04:05,840 --> 00:04:09,310
+And in this watch window,
+we have the variable
+
+79
+00:04:09,310 --> 00:04:12,200
+that we're going to set
+every time we sample.
+
+80
+00:04:12,200 --> 00:04:14,880
+So let's hit the Go button.
+
+81
+00:04:14,880 --> 00:04:19,120
+In this watch window, we can see
+the results of the ADC converter.
+
+82
+00:04:19,120 --> 00:04:20,600
+That's a 12-bit number.
+
+83
+00:04:20,600 --> 00:04:23,870
+So Professor Yerraballi,
+make it go smaller.
+
+84
+00:04:23,870 --> 00:04:26,500
+DR. RAMESH YERRABALLI: So
+I'm sliding the slide-pot.
+
+85
+00:04:26,500 --> 00:04:28,520
+And it's moving it to the right.
+
+86
+00:04:28,520 --> 00:04:30,550
+And I moved it as right as I can.
+
+87
+00:04:30,550 --> 00:04:32,550
+DR. JONATHAN VALVANO: Oh,
+that's a small number.
+
+88
+00:04:32,550 --> 00:04:33,490
+DR. RAMESH YERRABALLI:
+And it's a small number.
+
+89
+00:04:33,490 --> 00:04:33,845
+DR. JONATHAN VALVANO: OK.
+
+90
+00:04:33,845 --> 00:04:36,930
+The ADC converter goes from zero
+to, what number does it go to?
+
+91
+00:04:36,930 --> 00:04:38,968
+Let's see.
+
+92
+00:04:38,968 --> 00:04:39,502
+Ooh, bigger.
+
+93
+00:04:39,502 --> 00:04:40,752
+DR. RAMESH YERRABALLI: Bigger.
+
+94
+00:04:40,752 --> 00:04:41,200
+DR. JONATHAN VALVANO: Bigger.
+
+95
+00:04:41,200 --> 00:04:42,250
+DR. RAMESH YERRABALLI: I'm moving it.
+
+96
+00:04:42,250 --> 00:04:44,060
+DR. JONATHAN VALVANO: Come on, faster.
+
+97
+00:04:44,060 --> 00:04:44,830
+No, not so fast.
+
+98
+00:04:44,830 --> 00:04:46,141
+Slow it down.
+
+99
+00:04:46,141 --> 00:04:46,640
+There we go.
+
+100
+00:04:46,640 --> 00:04:49,690
+And the largest number is 4,095.
+
+101
+00:04:49,690 --> 00:04:52,065
+There we are, 12 bit converter.
+
+102
+00:04:52,065 --> 00:04:54,340
+Now, you try it.

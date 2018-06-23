@@ -1,0 +1,248 @@
+0
+00:00:00,000 --> 00:00:08,220
+https://youtu.be/EA4_SPhJTJ0
+
+1
+00:00:08,220 --> 00:00:10,010
+STELLA BACHTIS: Trong hoạt động trước của chúng ta,
+
+2
+00:00:10,010 --> 00:00:13,700
+chúng ta đã xác định thành công phạm vi của một dự án xây dựng nhà,
+
+3
+00:00:13,700 --> 00:00:17,430
+và xác định được trình tự các công việc
+
+4
+00:00:17,430 --> 00:00:19,000
+cần phải làm.
+
+5
+00:00:19,000 --> 00:00:21,870
+Chúng ta sẽ xem xét lại những thông tin này
+
+6
+00:00:21,870 --> 00:00:27,330
+bằng một lịch trình thời gian, còn được gọi là sơ đồ Gantt.
+
+7
+00:00:27,330 --> 00:00:29,620
+Nhắc lại nhanh một chút, thời gian biểu
+
+8
+00:00:29,620 --> 00:00:34,466
+là tổng quan về thời gian chỉ định cho từng công việc.
+
+9
+00:00:34,466 --> 00:00:35,840
+Hãy cùng xem xét thời gian biểu
+
+10
+00:00:35,840 --> 00:00:38,650
+dựa trên 11 công việc trong dự án mà chúng ta đã xác định
+
+11
+00:00:38,650 --> 00:00:42,560
+cùng nhau, với thời gian được tính toán theo ngày
+
+12
+00:00:42,560 --> 00:00:44,190
+cho từng hoạt động.
+
+13
+00:00:44,190 --> 00:00:48,080
+Bạn sẽ thấy rằng mỗi công việc theo sau nhau 
+
+14
+00:00:48,080 --> 00:00:50,400
+liên tục.
+
+15
+00:00:50,400 --> 00:00:53,390
+Trong khi một vài công việc phụ thuộc vào những việc khác,
+
+16
+00:00:53,390 --> 00:00:56,180
+và hoàn toàn có thể làm việc bằng cách này,
+
+17
+00:00:56,180 --> 00:00:59,340
+thì đó có thể không phải là cách hiệu quả nhất để một người quản lý dự án
+
+18
+00:00:59,340 --> 00:01:04,300
+thực hiện, vì mỗi công việc lại phụ thuộc vào sự hoàn thành của việc khác.
+
+19
+00:01:04,300 --> 00:01:07,480
+Trong thực tế, thường có rất nhiều áp lực
+
+20
+00:01:07,480 --> 00:01:11,650
+để hoàn thành dự án trong khoảng thời gian ngắn hơn.
+
+21
+00:01:11,650 --> 00:01:14,080
+Ví dụ, trong trường hợp của chúng ta,
+
+22
+00:01:14,080 --> 00:01:17,520
+chúng ta biết rằng mùa hè là khoảng thời gian tốt nhất trong năm để kinh doanh
+
+23
+00:01:17,520 --> 00:01:18,990
+bất động sản.
+
+24
+00:01:18,990 --> 00:01:22,720
+Chúng tôi tha thiết muốn đạt được điều này từ dự án xây dựng,
+
+25
+00:01:22,720 --> 00:01:26,690
+nếu chúng ta mất 63 ngày để hoàn thành
+
+26
+00:01:26,690 --> 00:01:31,440
+rồi giao bán, mùa hè có thể đã trôi qua mất rồi.
+
+27
+00:01:31,440 --> 00:01:36,330
+Tuy nhiên, nếu chúng ta có thể hoàn thành dự án trong 39 ngày,
+
+28
+00:01:36,330 --> 00:01:39,340
+chúng ta có cơ hội tốt hơn để giao nó cho người mua
+
+29
+00:01:39,340 --> 00:01:42,240
+trong suốt mùa hè.
+
+30
+00:01:42,240 --> 00:01:46,780
+Làm thế nào có thể làm giảm khoảng thời gian 63 ngày để thực hiện dự án hiện tại,
+
+31
+00:01:46,780 --> 00:01:51,280
+mà vẫn có 11 công việc cần hoàn thành?
+
+32
+00:01:51,280 --> 00:01:53,220
+Để giảm lượng thời gian
+
+33
+00:01:53,220 --> 00:01:55,460
+hoàn thành dự án này,
+
+34
+00:01:55,460 --> 00:01:59,690
+chúng ta sẽ cần xem xét sự tồn tại của các mối liên quan.
+
+35
+00:01:59,690 --> 00:02:01,530
+Các mối liên quan là các mối quan hệ
+
+36
+00:02:01,530 --> 00:02:05,430
+giữa các công việc trước và sau.
+
+37
+00:02:05,430 --> 00:02:08,750
+Nói cách khác, nếu chúng ta nhìn lại 3 công việc đầu tiên
+
+38
+00:02:08,750 --> 00:02:12,080
+khi xây dựng nhà, đó là chuẩn bị đất,
+
+39
+00:02:12,080 --> 00:02:16,700
+đặt nền móng và dựng các khung tường,
+
+40
+00:02:16,700 --> 00:02:19,490
+chúng ta cần cân nhắc các mối tương quan
+
+41
+00:02:19,490 --> 00:02:21,190
+có thể tồn tại.
+
+42
+00:02:21,190 --> 00:02:24,630
+Nói đơn giản, chúng ta không thể bắt đầu công việc thứ 3,
+
+43
+00:02:24,630 --> 00:02:27,850
+là dựng tường trước khi chúng ta hoàn thành
+
+44
+00:02:27,850 --> 00:02:31,410
+công việc thứ 2 là đặt nền móng,
+
+45
+00:02:31,410 --> 00:02:35,600
+và lần lượt không thể hoàn thành trước công việc đầu tiên
+
+46
+00:02:35,600 --> 00:02:38,940
+là chuẩn bị đất và đảm bảo nó đã được
+
+47
+00:02:38,940 --> 00:02:40,770
+hoàn thành.
+
+48
+00:02:40,770 --> 00:02:44,410
+Đặt nền móng, do đó, có một mối liên quan,
+
+49
+00:02:44,410 --> 00:02:49,150
+trong khi đó dựng tường lại có hai.
+
+50
+00:02:49,150 --> 00:02:51,430
+Chìa khóa để giảm thiểu thời gian biểu 
+
+51
+00:02:51,430 --> 00:02:55,140
+là xác định các công việc không có các mối liên quan.
+
+52
+00:02:55,140 --> 00:02:57,740
+Hay nói cách khác, các công việc này
+
+53
+00:02:57,740 --> 00:03:00,330
+có thể bắt đầu mà không cần chờ cái khác
+
+54
+00:03:00,330 --> 00:03:06,010
+hoàn thành và tiến hành đồng thời với công việc khác.
+
+55
+00:03:06,010 --> 00:03:09,460
+Trong hoạt động tới, hãy chuẩn bị thời gian biểu dự án của bạn
+
+56
+00:03:09,460 --> 00:03:12,950
+bằng cách cân nhắc các mối liên quan và sắp xếp lại
+
+57
+00:03:12,950 --> 00:03:17,850
+những hoạt động có thể được hoàn thành cùng lúc.
+
+58
+00:03:17,850 --> 00:03:22,210
+Chú ý rằng bạn không thể thay đổi thời gian thực hiện các công việc.
+
+59
+00:03:22,210 --> 00:03:25,080
+Mục tiêu của bạn là cân nhắc các mối liên quan,
+
+60
+00:03:25,080 --> 00:03:29,340
+để làm giảm thời gian của cả dự án.
+
+61
+00:03:29,340 --> 00:03:30,025
+
+

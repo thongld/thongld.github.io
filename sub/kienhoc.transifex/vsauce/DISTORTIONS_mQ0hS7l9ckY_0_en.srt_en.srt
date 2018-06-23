@@ -1,0 +1,732 @@
+1
+00:00:07,219 --> 00:00:10,558
+Hey, Vsauce. Michael here. I am
+
+2
+00:00:10,558 --> 00:00:13,959
+distorted. The pixels you are watching have been
+
+3
+00:00:13,960 --> 00:00:18,179
+time displaced. They've been mapped onto a gradient
+
+4
+00:00:18,179 --> 00:00:21,778
+and the darker the region they're mapped to,
+the further behind
+
+5
+00:00:21,778 --> 00:00:25,589
+they lag. The effect is really fun but it's certainly
+
+6
+00:00:25,589 --> 00:00:28,589
+not realistic. Or is it?
+
+7
+00:00:31,230 --> 00:00:35,820
+Many, many popular digital cameras suffer
+from lag induced distortion,
+
+8
+00:00:35,820 --> 00:00:39,020
+like what you just saw, though much,
+
+9
+00:00:39,020 --> 00:00:42,460
+much more subtle. Usually completely
+
+10
+00:00:42,460 --> 00:00:45,710
+unnoticeable. It's called a rolling shutter.
+
+11
+00:00:45,710 --> 00:00:48,789
+Instead of snapping a full exposure at once
+
+12
+00:00:48,789 --> 00:00:52,198
+they quickly scan strips of each frame. It's
+
+13
+00:00:52,198 --> 00:00:56,710
+usually undetectable. But when the
+subject changes faster than the camera
+
+14
+00:00:56,710 --> 00:00:57,550
+scans,
+
+15
+00:00:57,549 --> 00:01:03,209
+you get the famous geloey wobbly rolling 
+shutter effect. Really fast
+
+16
+00:01:03,210 --> 00:01:06,799
+things, like vibrating guitar strings and
+airplane propellers,
+
+17
+00:01:06,799 --> 00:01:11,709
+are famous victims, but people can be too.
+Luke Mandel submitted this photo
+
+18
+00:01:11,709 --> 00:01:16,618
+to Boing Boing[.net]. His camera scans left to
+right and, in this instance,
+
+19
+00:01:16,618 --> 00:01:20,209
+managed to capture a blink, eyes closed
+
+20
+00:01:20,209 --> 00:01:25,169
+when the scan began and then open in the
+reflection scanned a fraction
+
+21
+00:01:25,170 --> 00:01:28,739
+of a second later.
+But the rolling shutter effect
+
+22
+00:01:28,739 --> 00:01:32,699
+is not just a neat curiosity. It represents
+
+23
+00:01:32,700 --> 00:01:36,130
+a fundamental and inescapable distortion that
+
+24
+00:01:36,129 --> 00:01:39,709
+affects everything we see. Rolling shutter
+
+25
+00:01:39,709 --> 00:01:44,118
+or not. First things first, let's talk about distortions.
+
+26
+00:01:44,118 --> 00:01:47,409
+A hallucination is a distortion of reality
+
+27
+00:01:47,409 --> 00:01:51,390
+when there is no apparent stimulus. If you are merely
+
+28
+00:01:51,390 --> 00:01:55,700
+misinterpreting an actual stimulus, that is an illusion.
+
+29
+00:01:55,700 --> 00:01:59,909
+But some distortions occur before our sense organs
+
+30
+00:01:59,909 --> 00:02:03,180
+and minds get in the way. They are called
+
+31
+00:02:03,180 --> 00:02:08,340
+optical phenomena. They are not the
+result of sensation or perception gone wrong.
+
+32
+00:02:08,340 --> 00:02:13,659
+Instead, optical phenomena are distortions
+caused by the mere properties of light
+
+33
+00:02:13,659 --> 00:02:14,500
+and matter
+
+34
+00:02:14,500 --> 00:02:17,969
+in and of themselves. If you look up at the sky
+
+35
+00:02:17,969 --> 00:02:21,639
+and see a giant vivid drinking gourd,
+
+36
+00:02:21,639 --> 00:02:24,899
+you are hallucinating. But if you see a flat
+
+37
+00:02:24,900 --> 00:02:29,000
+two-dimensional connect-the-dots
+Big Dipper, you are seeing
+
+38
+00:02:29,000 --> 00:02:32,289
+an illusion. It's an illusion because those dots merely
+
+39
+00:02:32,289 --> 00:02:37,509
+appear to be on the same plain, like
+holes poked in the dark roof of the sky.
+
+40
+00:02:37,509 --> 00:02:40,608
+In reality, those dots are stars
+
+41
+00:02:40,609 --> 00:02:44,730
+lightyears apart from one another in three dimensions.
+
+42
+00:02:44,729 --> 00:02:48,840
+As Celestron's brilliant free real-time
+3D visualization of space
+
+43
+00:02:48,840 --> 00:02:52,439
+shows, from different perspectives, besides our own,
+
+44
+00:02:52,439 --> 00:02:56,409
+they look a lot less like a dipper or plough.
+
+45
+00:02:56,409 --> 00:02:59,659
+In fact, all constellations and asterisms
+
+46
+00:02:59,659 --> 00:03:03,650
+are geocentric illusions. From a wider perspective
+
+47
+00:03:03,650 --> 00:03:06,730
+their outlines point inward,
+
+48
+00:03:06,729 --> 00:03:09,789
+to the single lowly point in space
+
+49
+00:03:09,789 --> 00:03:13,560
+that gave them their names. But you can't blame us.
+
+50
+00:03:13,560 --> 00:03:18,400
+I mean, Earth is the only perspective any
+human has ever had.
+
+51
+00:03:18,419 --> 00:03:22,199
+And even Voyager 1,
+the most distant man-made object,
+
+52
+00:03:22,209 --> 00:03:26,060
+is still not even close to being far
+enough away for the constellations to look
+
+53
+00:03:26,060 --> 00:03:29,759
+even remotely different than they do here on Earth.
+
+54
+00:03:29,759 --> 00:03:33,569
+It's also not our fault, our eyes' and brains'
+
+55
+00:03:33,569 --> 00:03:37,108
+fault, that distant, distant stars weren't included
+
+56
+00:03:37,109 --> 00:03:40,810
+in our early cosmic connect-the-dot game.
+
+57
+00:03:40,810 --> 00:03:44,079
+Sure, our eyesight could be better,
+
+58
+00:03:44,079 --> 00:03:47,129
+but optical phenomena are also to blame.
+
+59
+00:03:47,129 --> 00:03:52,349
+If it weren't for red shifting and the
+inverse square law and light extinction,
+
+60
+00:03:52,349 --> 00:03:55,599
+distant things could be seen in all their glory.
+
+61
+00:03:55,599 --> 00:03:59,819
+The night sky would look phenomenal. Many structures
+
+62
+00:03:59,819 --> 00:04:03,150
+up there are huge. They're just
+
+63
+00:04:03,150 --> 00:04:06,849
+too dim for their hugeness to be appreciated.
+
+64
+00:04:06,849 --> 00:04:11,870
+When we see Hubble Telescope images of
+distant objects, like the Helix Nebula,
+
+65
+00:04:11,870 --> 00:04:15,509
+it's easy to think that, without a telescope to zoom in,
+
+66
+00:04:15,509 --> 00:04:19,289
+the object must just be a tiny point in the sky.
+
+67
+00:04:19,290 --> 00:04:23,419
+But in reality, even though the Helix Nebula is
+
+68
+00:04:23,418 --> 00:04:26,680
+700 light years away, it's
+
+69
+00:04:26,680 --> 00:04:31,160
+3 lightyears across. If we could make the Helix Nebula
+
+70
+00:04:31,160 --> 00:04:34,340
+less dim, if our eyes could take a
+
+71
+00:04:34,339 --> 00:04:37,728
+really long exposure of it,
+we would see the Helix Nebula
+
+72
+00:04:37,728 --> 00:04:42,839
+as it really is - nearly 70% the apparent diameter
+
+73
+00:04:42,839 --> 00:04:47,379
+of our Moon. This is a serious picture.
+That is how large
+
+74
+00:04:47,379 --> 00:04:50,800
+the Helix Nebula would appear in the
+night sky from Earth
+
+75
+00:04:50,800 --> 00:04:54,360
+if it just wasn't so dim. Our Moon is
+
+76
+00:04:54,360 --> 00:04:59,199
+tiny in the sky, by the way. It's easy to
+think of the moon as this huge
+
+77
+00:04:59,199 --> 00:05:02,909
+baseball-sized thing up there in the sky,
+but that's an illusion.
+
+78
+00:05:02,910 --> 00:05:06,960
+Try this the next time you see the
+Moon. Grab a sheet of notebook paper
+
+79
+00:05:06,959 --> 00:05:10,299
+and you will notice that the angular
+diameter of the Moon
+
+80
+00:05:10,300 --> 00:05:14,840
+is the same size as a hole punched in a
+sheet of notebook paper held
+
+81
+00:05:14,839 --> 00:05:19,879
+in arms-length away. Seriously, try it
+sometime. It shows just how
+
+82
+00:05:19,879 --> 00:05:23,620
+cute and tiny our little moon is.
+The Orion Nebula
+
+83
+00:05:23,620 --> 00:05:27,100
+would appear even larger, if we saw all of its light.
+
+84
+00:05:27,100 --> 00:05:30,180
+And the Andromeda Galaxy? Just
+
+85
+00:05:30,180 --> 00:05:34,970
+a smudge in the sky to our eyes. But if our
+eyes were better at collecting
+
+86
+00:05:34,970 --> 00:05:38,420
+dim light, we would see Andromeda's true extent
+
+87
+00:05:38,420 --> 00:05:41,689
+in our sky. Of course, our
+
+88
+00:05:41,689 --> 00:05:44,719
+night sky doesn't look like that. Distant objects
+
+89
+00:05:44,720 --> 00:05:49,520
+are dimmer, that's a bummer. But light still
+wins when it comes to speed.
+
+90
+00:05:49,519 --> 00:05:55,319
+Light travels at the fastest speed.
+In fact, in a vacuum, light travels
+
+91
+00:05:55,329 --> 00:05:57,969
+300,000 kilometres a second.
+
+92
+00:05:58,540 --> 00:05:59,400
+That's fast.
+
+93
+00:06:01,069 --> 00:06:04,629
+But not really. I mean, not compared to how far apart
+
+94
+00:06:04,629 --> 00:06:08,199
+things are in the universe. Sydney, Australia
+
+95
+00:06:08,199 --> 00:06:12,279
+is 1/14th of a light second away from London.
+
+96
+00:06:12,279 --> 00:06:13,919
+But the Andromeda Galaxy is
+
+97
+00:06:13,920 --> 00:06:18,540
+2,500,000 light years away from London.
+
+98
+00:06:18,550 --> 00:06:22,829
+To put that in perspective let's take a
+light speed journey from London
+
+99
+00:06:22,829 --> 00:06:25,810
+to Sydney. It would look like this... Ready?
+
+100
+00:06:25,810 --> 00:06:29,550
+Three, two, one, go!
+
+101
+00:06:30,850 --> 00:06:35,230
+Nice! Alright, alright. Here's the Andromeda Galaxy.
+
+102
+00:06:35,230 --> 00:06:40,520
+Okay, now, relativistic effects aside,
+let's take a look at what it would look
+
+103
+00:06:40,519 --> 00:06:43,180
+like to travel toward the Andromeda Galaxy
+
+104
+00:06:43,180 --> 00:06:46,019
+at the speed of light. Are you ready? Alright.
+
+105
+00:06:46,019 --> 00:06:50,539
+Three, two, one, go!
+
+106
+00:06:54,360 --> 00:06:57,439
+Yeah. I mean, seriously, it's
+
+107
+00:06:57,449 --> 00:07:01,349
+pretty lame. Even at the speed of light,
+
+108
+00:07:01,350 --> 00:07:05,230
+the fastest speed possible, a year from now
+
+109
+00:07:05,230 --> 00:07:09,000
+we won't even be a millionth of the way there.
+
+110
+00:07:09,000 --> 00:07:11,319
+That's how far away
+
+111
+00:07:11,329 --> 00:07:14,979
+Andromeda is. It's almost sad
+
+112
+00:07:14,980 --> 00:07:20,290
+in a way. But this brings us back to
+the rolling shutter effect.
+
+113
+00:07:20,290 --> 00:07:25,960
+The Andromeda Galaxy is huge. It's more
+than a hundred thousand light years across
+
+114
+00:07:25,959 --> 00:07:29,589
+and our view of it is tilted.
+
+115
+00:07:29,589 --> 00:07:33,819
+Which means that, on the plain we view it in,
+light from the back
+
+116
+00:07:33,819 --> 00:07:39,240
+represents what Andromeda looked like
+thousands and thousands of years before
+
+117
+00:07:39,240 --> 00:07:42,329
+what light from the front represents.
+
+118
+00:07:42,329 --> 00:07:45,689
+Changes in its appearance reach us 
+sooner from the front
+
+119
+00:07:45,689 --> 00:07:50,269
+than from the back. Andromeda is rotating,
+spinning at hundreds of kilometers per
+
+120
+00:07:50,269 --> 00:07:51,909
+second in some places.
+
+121
+00:07:51,910 --> 00:07:55,670
+Now, a lag between light coming from near
+
+122
+00:07:55,670 --> 00:07:58,879
+and far points on a spinning object, results
+
+123
+00:07:58,879 --> 00:08:03,689
+in a skewed image. The rolling shutter
+effect on a cosmic scale
+
+124
+00:08:03,689 --> 00:08:06,699
+applied to, say, a chessboard, seeing the front
+
+125
+00:08:06,699 --> 00:08:10,409
+ahead of the back is pretty trippy and dramatic.
+
+126
+00:08:11,259 --> 00:08:13,779
+So, does that mean we see
+
+127
+00:08:13,790 --> 00:08:18,200
+wobbly, funhouse mirror, rolling
+shutter effect versions of Andromeda
+
+128
+00:08:18,199 --> 00:08:21,670
+and other distant galaxies? Well, technically
+
+129
+00:08:21,670 --> 00:08:26,660
+yeah, but the distortion is negligible. It may as well be
+
+130
+00:08:26,660 --> 00:08:30,020
+ignored. Why? Well,
+
+131
+00:08:30,019 --> 00:08:33,669
+the speeds used in these visualizations are not
+
+132
+00:08:33,669 --> 00:08:38,250
+to scale. On average, yes, matter within galaxies
+
+133
+00:08:38,250 --> 00:08:41,700
+orbits the galactic center at hundreds
+of kilometers per second
+
+134
+00:08:41,700 --> 00:08:45,560
+but galaxies are so huge it takes them
+
+135
+00:08:45,559 --> 00:08:49,209
+hundreds of millions of years to complete just one
+
+136
+00:08:49,210 --> 00:08:53,740
+rotation. In other words, the lag between light
+
+137
+00:08:53,740 --> 00:08:57,000
+reaching you from near and far points on a galaxy,
+
+138
+00:08:57,000 --> 00:09:00,289
+is nothing compared to how much time it takes
+
+139
+00:09:00,289 --> 00:09:03,860
+matter in the galaxy to travel that same distance.
+
+140
+00:09:03,860 --> 00:09:06,990
+In the case of Andromeda, if you insisted
+
+141
+00:09:06,990 --> 00:09:10,379
+on seeing Andromeda as it really is,
+
+142
+00:09:10,379 --> 00:09:15,559
+that is, corrected for any lag caused by
+the fact that the speed of light is
+
+143
+00:09:15,559 --> 00:09:18,799
+finite, the most extreme points on the Galaxy
+
+144
+00:09:18,799 --> 00:09:23,039
+would only need to be adjusted by about a 10,000th of
+
+145
+00:09:23,039 --> 00:09:26,419
+the width of any image. In this case, less than a pixel.
+
+146
+00:09:26,419 --> 00:09:30,799
+So, it's not a big deal. But it's not a nothing deal.
+
+147
+00:09:30,799 --> 00:09:34,529
+It's real. In fact, everything we look at is,
+
+148
+00:09:34,529 --> 00:09:37,669
+in some way, distorted by the fact that the speed of light
+
+149
+00:09:37,669 --> 00:09:40,750
+is finite. Your own feet are about
+
+150
+00:09:40,750 --> 00:09:47,139
+5 to 6 light nano seconds away from your
+eyes, which means when you look at your feet
+
+151
+00:09:47,139 --> 00:09:50,949
+you are seeing where they were 5 to 6
+
+152
+00:09:50,950 --> 00:09:55,230
+nano seconds ago. 5 to 6 nanoseconds in the past.
+
+153
+00:09:55,230 --> 00:09:58,250
+Of course, a delay that brief is pretty
+much undetectable
+
+154
+00:09:58,250 --> 00:10:01,879
+but it is calculate-able. If it makes you feel
+
+155
+00:10:01,879 --> 00:10:05,220
+a little sad to know that even with the sharpest mind
+
+156
+00:10:05,220 --> 00:10:09,550
+or the best instruments, appearances still depend on
+
+157
+00:10:09,549 --> 00:10:13,139
+where you are. That optical phenomena insure
+
+158
+00:10:13,139 --> 00:10:17,679
+appearances are always relative(?) Don't feel bad.
+
+159
+00:10:17,679 --> 00:10:21,669
+We call the people closest to us our relatives.
+
+160
+00:10:21,669 --> 00:10:25,069
+We're really just a family, a big family
+
+161
+00:10:25,070 --> 00:10:28,480
+of reference frames that,
+like a family, don't always agree
+
+162
+00:10:28,480 --> 00:10:31,570
+but do have plenty of cool things to look at.
+
+163
+00:10:31,570 --> 00:10:35,490
+I'd like to thank my editor, Guy, for help with the
+
+164
+00:10:35,490 --> 00:10:37,930
+rolling shutter effect in this video.
+
+165
+00:10:51,889 --> 00:10:54,448
+And I'd like to thank you, because, as always
+
+166
+00:10:54,448 --> 00:10:57,068
+thanks for watching.
+
+167
+00:11:21,970 --> 00:11:23,009
+Oh, here's something cool.
+
+168
+00:11:23,009 --> 00:11:26,039
+I will be at YouTube Fan Fest with HP
+
+169
+00:11:26,039 --> 00:11:29,579
+in India very very soon. Check the
+description for more info. If you can
+
+170
+00:11:29,580 --> 00:11:30,070
+make it,
+
+171
+00:11:30,070 --> 00:11:31,020
+I hope to see you there.
+

@@ -1,0 +1,561 @@
+0
+00:00:05,075 --> 00:00:08,270
+Chào mừng bạn đã quay trở lại.
+Chúng ta sẽ làm gì bây giờ, hay trong phần đa phân đoạn này,
+
+2
+00:00:14,500 --> 00:00:19,980
+nhưng chia nhỏ nó ra có vẻ hợp lý, theo như bạn biết
+
+3
+00:00:19,980 --> 00:00:22,790
+việc thực hành tốt nhất, đặc biệt trong việc giáo dục kỹ thuật số
+
+4
+00:00:23,860 --> 00:00:28,720
+đó là chúng ta #39 sẽ nói về các rủi ro và lợi nhuận
+
+5
+00:00:28,720 --> 00:00:33,300
+Nhưng để làm được điều đó thì đầu tiên chúng ta phải làm điều mà tôi hay làm đó là,
+
+6
+00:00:33,300 --> 00:00:35,570
+tìm ra lý do tại sao chúng ta lại nói về điều đó.
+
+7
+00:00:35,570 --> 00:00:39,790
+Và trong khá  nhiều bối cảnh mà chúng ta #39 đã đề cập đến từ trước cho đến bay giờ
+
+8
+00:00:39,790 --> 00:00:43,990
+Sau đó chúng ta #39 sẽ dành thời gian cho các số liệu
+
+9
+00:00:43,990 --> 00:00:47,650
+Vì vậy trong đoạn cụ thể này
+
+10
+00:00:47,650 --> 00:00:51,560
+chương, tuần, hay bất cứ thứ gì, chúng ta#39 sắp làm hai việc.
+
+11
+00:00:51,560 --> 00:00:56,430
+Chúng ta#39 sẽ xác định rủi ro, và xem tại sao chúng ta nên lo lắng về nó
+
+12
+00:00:56,430 --> 00:01:01,150
+và bối cảnh, và sau đó vòng lại và nói về các số liệu thống kê.
+
+13
+00:01:01,150 --> 00:01:05,460
+Khi mà tôi nói về các số liệu thống kê, rõ ràng là nó không #39 phải là mọi thứ
+
+14
+00:01:05,459 --> 00:01:08,290
+Bởi vì tôi nhận ra rằng tôi ko biết tất cả các số liệu thống kê
+
+15
+00:01:08,290 --> 00:01:12,350
+Nhưng tập trung hơn thậm chí với những điều tôi biết rõ,
+
+16
+00:01:12,350 --> 00:01:16,880
+Chúng ta #39 sẽ nói về các số liệu thống kê phù hợp với từng hoàn cảnh.
+
+17
+00:01:18,240 --> 00:01:22,500
+Một lần nữa lời khuyên tốt nhất như trong kế toán đó là #39 làm kế toán là rất tốt.
+
+18
+00:01:22,500 --> 00:01:26,130
+Tôi nghĩ thậm chí nó #39 còn tốt hơn để làm thống kê.
+
+19
+00:01:26,130 --> 00:01:27,580
+Tại sao lại là thống kê số kiệu nhiều hơn?
+
+20
+00:01:27,580 --> 00:01:31,520
+Bởi nó #39 ở khắp mọi nơi, và theo như các bạn biết tôi rất yêu tài chính, nhưng
+
+21
+00:01:31,520 --> 00:01:36,060
+đôi khi tôi cho rằng thống kê có lẽ còn nhỉnh hơn một chút
+
+22
+00:01:36,060 --> 00:01:39,070
+Có thể áp dụng với mọi dữ liệu lớn.
+
+23
+00:01:39,070 --> 00:01:43,090
+Vậy thì nó #39 ko phải là rất hữu ích trong cuộc sống.
+
+24
+00:01:43,090 --> 00:01:47,560
+đừng quá lo lắng về hàm ý của những gì mà bạn đang nói đến.
+
+25
+00:01:47,560 --> 00:01:52,380
+Điều hay ho của rủi ro đó là nó #39 rất dễ để đề cập đến trong hoàn cảnh cụ thể.
+
+26
+00:01:52,380 --> 00:01:57,340
+Nhưng tài chính làm cho thống kê rất áp dụng và liên quan trực tiếp đến rủi ro.
+
+27
+00:01:57,340 --> 00:01:58,240
+Chúng ta #39 hãy bắt đầu.
+
+28
+00:01:59,420 --> 00:02:03,220
+Một lần nữa công thức yêu thích của tôi ở ngay trước mặt các bạn, hi vọng rằng
+
+29
+00:02:03,220 --> 00:02:07,020
+sự yêu thích muốn biết của bạn nằm trong phân tích dự án.
+
+30
+00:02:07,020 --> 00:02:11,680
+Chúng ta nên quan tâm đến giá trị hiện tại ròng "NPV" của dự án.
+
+31
+00:02:12,930 --> 00:02:17,310
+Tôi cho rằng nó #39 rất công bằng khi nói ràng công thức này được toàn thế giới biết đến và
+
+32
+00:02:17,310 --> 00:02:18,460
+bạn hiểu nó là cái gì.
+
+33
+00:02:18,460 --> 00:02:21,860
+Tôi #39 sẽ Ko nhắc lại nó, nhân tố quan trọng nhất là?
+
+34
+00:02:21,860 --> 00:02:27,020
+Việc kết hợp, và rằng 1 + r tăng lên thành n đắng kia
+
+35
+00:02:27,020 --> 00:02:31,770
+đó là điều mà thực sự bạn rất, rất cần quan tâm tới theo như Anstine đã nói,
+
+36
+00:02:31,770 --> 00:02:33,980
+Ông ấy  cho rằng việc kết hợp là những điều thú vị nhất.
+
+37
+00:02:35,330 --> 00:02:40,260
+Okay, vậy là ở đây có hai thành phần cơ bản đó là
+
+38
+00:02:40,260 --> 00:02:44,650
+Đi vào định giá cái mà liên quan trực tiếp đến công thức
+
+39
+00:02:44,650 --> 00:02:46,010
+Điều đầu tiên đó là, dòng tiền.
+
+40
+00:02:47,100 --> 00:02:49,940
+Chúng ta đã nói về dòng tiền
+
+41
+00:02:49,940 --> 00:02:55,082
+Nếu bạn muốn bước vào không gian, nghĩa là bạn muốn hiểu được rủi ro và
+
+42
+00:02:55,082 --> 00:03:00,312
+lợi nhuận, tôi sẽ cực kỳ khuyến khích bạn trước tiên là hiểu rõ bức tranh toàn cảnh
+
+43
+00:03:00,312 --> 00:03:05,994
+của NPV và sau đó là biết được dòng tiền, tiếp theo mới là đến rủi ro và lợi nhuận.
+
+44
+00:03:05,994 --> 00:03:08,130
+Tôi cho rằng đó #39 là một thứ tự logic
+
+45
+00:03:08,130 --> 00:03:12,460
+Tài chính rất là logic, được dịnh hướng rất là khuô khổ, và đó #39 là lý do của điều trên.
+
+46
+00:03:12,460 --> 00:03:13,620
+Vậy là dòng tiền đã xong.
+
+47
+00:03:13,620 --> 00:03:15,750
+Chúng ta đã làm xon mọi thứ chưa? Chưa
+
+48
+00:03:15,750 --> 00:03:18,270
+Các bạn có thể tự tìm hiểu thêm không? Có
+
+49
+00:03:18,270 --> 00:03:20,640
+Điều gì sẽ giúp bạn hiểu được dòng tiền?
+
+50
+00:03:20,640 --> 00:03:23,290
+Ý thức của kinh doanh và kế toán
+
+51
+00:03:24,610 --> 00:03:28,010
+Bây giờ chúng ta #39 sẽ chuyển sang chi phí vốn.
+
+52
+00:03:28,010 --> 00:03:31,220
+Nếu như bạn nhìn lên slide và dang #39 ghi chép lại
+
+53
+00:03:31,220 --> 00:03:36,580
+Tôi nói lại những điều tôi hay nói trước đó là ai mới là người mà dòng tiền thực  sụ thuộc về?
+
+54
+00:03:36,580 --> 00:03:39,206
+Dòng tiền thuộc về, hay
+
+55
+00:03:39,206 --> 00:03:44,592
+đó là trách nhiệm của người quản lý dự án.
+
+56
+00:03:44,592 --> 00:03:47,451
+Nếu như bạn đang phân tích nó, bạn đang #39 trình bày dự án của mình
+
+57
+00:03:47,451 --> 00:03:49,250
+bạn đang#39 tạo một trường hợp cho nó
+
+58
+00:03:49,250 --> 00:03:53,575
+bạn tốt nhất là nên cẩn thận với việc bạn đánh giá dòng tiền của mình
+
+59
+00:03:53,575 --> 00:03:57,912
+bao gồm tất cả các lớp, nên đặc biệt tập trung vào lớp 0 và 10 của bạn
+
+60
+00:03:57,912 --> 00:04:03,866
+nhưng mảnh ghép thứ hai để làm NPV như bạn biết đó là giá trị của vốn
+
+61
+00:04:03,866 --> 00:04:10,030
+mà bây giờ được lấy như một số điển hình một số tròn 5%, 10% hay bất kỳ số nào.
+
+62
+00:04:10,030 --> 00:04:12,518
+Câu hỏi là, nó thuộc về ai?
+
+63
+00:04:12,518 --> 00:04:15,570
+Đây là một điểm rất thâm thúy.
+
+64
+00:04:15,570 --> 00:04:20,400
+Và có một thực tế là tất cả các giá trị đều liên quan đến nhau.
+
+65
+00:04:20,399 --> 00:04:22,340
+Và nó thuộc về ai?
+
+66
+00:04:22,340 --> 00:04:24,020
+Nó thuộc về thị trường.
+
+67
+00:04:24,020 --> 00:04:28,617
+Bạn sẽ nhận ra các điều khoản về cổ phiếu trong sự bàn luận của chúng ta.
+
+68
+00:04:29,997 --> 00:04:32,480
+Chúng ta đã dành thời gian trong dòng tiền.
+
+69
+00:04:32,480 --> 00:04:38,450
+Chúng ta cũng đã dành thời gian cho trái phiếu, cổ phiếu là nợ và vốn cổ phần.
+
+70
+00:04:38,450 --> 00:04:40,130
+Tại sao nó lại quan trọng đến vậy?
+
+71
+00:04:40,130 --> 00:04:45,440
+Bởi lẽ đó là hai cách chính để thấy được nguy cơ phát sinh.
+
+72
+00:04:45,440 --> 00:04:50,450
+và đó cũng là hai cách chính của tài chính, sau đó chúng đều phù hợp với nhau.
+
+73
+00:04:50,450 --> 00:04:52,460
+Dòng tiền đến từ ai?
+
+74
+00:04:52,460 --> 00:04:57,660
+Các dự án của bạn, nhưng tài chính sẽ trở nên quan trọng để tìm ra chi phí vốn.
+
+75
+00:04:57,660 --> 00:04:59,950
+theo cái cách mà rất là tế nhị.
+
+76
+00:04:59,950 --> 00:05:01,480
+Hãy từ từ đã
+
+77
+00:05:01,480 --> 00:05:06,820
+Tôi có thể đã hoàn thành phần trái phiếu và cổ phiếu sau, hoặc theo trình tự của khóa học.
+
+78
+00:05:06,820 --> 00:05:11,250
+hoặc nếu bạn nhìn vào giáo trình, trái phiếu và cổ phiểu có thể đặt xuống cuối cùng.
+
+79
+00:05:11,250 --> 00:05:15,800
+Nhưng họ không làm vậy đơn giản là nó liên quan mật thiết đến chi phí vốn,
+
+80
+00:05:15,800 --> 00:05:17,180
+đặc biệt là cách nó được đo lường
+
+81
+00:05:18,460 --> 00:05:22,922
+Vì thế giờ chúng ta sẽ dành thời gian cho nó?
+
+82
+00:05:22,922 --> 00:05:28,010
+Nếu chúng ta đang nói về việc tại sao chúng ta lại nói về các nguy cơ?
+
+83
+00:05:28,010 --> 00:05:31,480
+Tại sao chúng ta lại nói về lợi nhuận và rủi ro cùng một lúc?
+
+84
+00:05:31,480 --> 00:05:33,020
+And, please take this one takeaway.
+
+85
+00:05:34,150 --> 00:05:38,620
+It makes no sense to talk about return in isolation,
+
+86
+00:05:38,620 --> 00:05:42,110
+like the financial press talks about all the time, and
+
+87
+00:05:42,110 --> 00:05:47,300
+I think that&#39;s wrong, because returns seen in isolation make no sense.
+
+88
+00:05:47,300 --> 00:05:53,400
+Always think of risk and return as a pair, both go hand in hand.
+
+89
+00:05:53,400 --> 00:05:57,960
+So high risk, typically, high return.
+
+90
+00:05:57,960 --> 00:06:02,040
+So if you look at a high return relative to a lower return,
+
+91
+00:06:02,040 --> 00:06:04,090
+what&#39;s the first thing that you should think of?
+
+92
+00:06:05,850 --> 00:06:09,210
+Risk, they always go hand in hand and we&#39;ll see why.
+
+93
+00:06:10,310 --> 00:06:11,570
+So, why?
+
+94
+00:06:11,570 --> 00:06:16,750
+First, I think most people would agree that different projects or
+
+95
+00:06:16,750 --> 00:06:21,970
+ideas, project is a refection of an idea, some good, some not so good.
+
+96
+00:06:23,000 --> 00:06:26,980
+Most people would agree with the statement that different projects have different
+
+97
+00:06:26,980 --> 00:06:28,120
+risks.
+
+98
+00:06:28,120 --> 00:06:31,410
+It&#39;s almost a no-brainer, everybody would say of course that&#39;s true.
+
+99
+00:06:31,410 --> 00:06:36,140
+So, selling bananas is a different kind of proposition than selling a BMW.
+
+100
+00:06:37,440 --> 00:06:41,339
+Different risks, different cash flows, and so on.
+
+101
+00:06:41,339 --> 00:06:45,674
+Most people, and this is where, I really, really do love finances,
+
+102
+00:06:45,674 --> 00:06:50,521
+is that it takes real stuff and makes it conceptual, not the other way around,
+
+103
+00:06:50,521 --> 00:06:55,309
+that you are thinking only conceptually and not really about the real world.
+
+104
+00:06:55,309 --> 00:06:57,933
+And that deep connection between the real world and
+
+105
+00:06:57,933 --> 00:07:02,270
+conceptual thinking is what I think is the value proposition of financing.
+
+106
+00:07:02,270 --> 00:07:07,058
+Most people are risk-averse I would say, almost all people are risk-averse.
+
+107
+00:07:07,058 --> 00:07:13,520
+And hence, when they look at risking as of different projects, what do they expect?
+
+108
+00:07:13,520 --> 00:07:18,190
+They expect to get a higher return if a project is riskier than another one.
+
+109
+00:07:18,190 --> 00:07:20,010
+Remember the first bullet point?
+
+110
+00:07:20,010 --> 00:07:22,950
+Different projects, at different risks.
+
+111
+00:07:22,950 --> 00:07:26,210
+If there are risk averts, which we are, what do we look at?
+
+112
+00:07:26,210 --> 00:07:30,120
+We look at the return, but we immediately,
+
+113
+00:07:30,120 --> 00:07:33,490
+look at risk simultaneously, usually the other way round.
+
+114
+00:07:33,490 --> 00:07:37,810
+So, for example, if risk go up, you want to be compensated for
+
+115
+00:07:37,810 --> 00:07:39,430
+it, because you are risk avert.
+
+116
+00:07:39,430 --> 00:07:41,199
+Risk avert means you don&#39;t like risk.
+
+117
+00:07:42,830 --> 00:07:49,430
+Given all this, what our purpose today is to understand and measure risk.
+
+118
+00:07:51,010 --> 00:07:54,810
+And our next step is to take that measure of risk.
+
+119
+00:07:54,810 --> 00:07:59,230
+So, first understand risk, take that measure of risk, and
+
+120
+00:07:59,230 --> 00:08:01,420
+then go and relate it to return.
+
+121
+00:08:01,420 --> 00:08:07,660
+And when you relate it to return, that return becomes the cost of capital.
+
+122
+00:08:07,660 --> 00:08:12,250
+So for the time being, if you&#39;re having trouble, think of the following scenario.
+
+123
+00:08:12,250 --> 00:08:17,050
+Think of a spreadsheet of an institution, a company, or
+
+124
+00:08:17,050 --> 00:08:22,390
+a project with no debt financing, it will help you a lot thinking through.
+
+125
+00:08:22,390 --> 00:08:26,740
+So, whose risk and return are you worried about?
+
+126
+00:08:26,740 --> 00:08:30,480
+Shareholders, because they&#39;re the only people who are financing the whole firm.
+
+127
+00:08:30,480 --> 00:08:31,630
+That may help you.
+
+128
+00:08:31,630 --> 00:08:34,070
+And when you look at textbooks, when they talk about risk and
+
+129
+00:08:34,070 --> 00:08:37,770
+return, they&#39;re mostly focused on stocks.
+
+130
+00:08:37,770 --> 00:08:43,221
+Having said that, be careful, bonds also do have risk.
+
+131
+00:08:43,221 --> 00:08:47,840
+The mortgage-backed securities, the loans, were all bonds.
+
+132
+00:08:47,840 --> 00:08:52,220
+So, it&#39;s not [LAUGH] as if risk doesn&#39;t exist in bonds, okay?
+
+133
+00:08:52,220 --> 00:08:55,500
+So, what I am going to do now is take a break, I would love for
+
+134
+00:08:55,500 --> 00:08:57,960
+you to think about what we just talked about.
+
+135
+00:08:57,960 --> 00:09:00,850
+Why the heck are we thinking about risk?
+
+136
+00:09:00,850 --> 00:09:05,970
+We&#39;re thinking about risk because every project has different risks.
+
+137
+00:09:05,970 --> 00:09:10,420
+And, how will that risk be incorporated or manifest itself?
+
+138
+00:09:10,420 --> 00:09:11,810
+In the return.
+
+139
+00:09:11,810 --> 00:09:14,690
+And risk and return always go together.
+
+140
+00:09:14,690 --> 00:09:15,676
+See you in a minute.
+

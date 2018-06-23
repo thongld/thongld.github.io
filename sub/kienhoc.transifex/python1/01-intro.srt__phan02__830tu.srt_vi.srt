@@ -1,0 +1,419 @@
+92
+00:04:35,610 --> 00:04:39,410
+http://open.umich.edu/sites/default/files/py4inf-01-intro.pdf https://youtu.be/G721ZXgs
+Chúng ta với CPU 
+và bộ nhớ.
+
+
+93
+00:04:39,410 --> 00:04:41,370
+Chúng ta với kết nối mạng lưới.
+
+94
+00:04:41,370 --> 00:04:45,600
+Ta đang làm những việc đại diện cho người dùng,
+và giải thích những việc đó cho họ.
+
+95
+00:04:47,870 --> 00:04:49,580
+Tại sao bạn lại chọn làm một lập trình viên?
+
+96
+00:04:49,580 --> 00:04:52,850
+Lớp học này không cố làm bạn
+
+97
+00:04:52,850 --> 00:04:55,650
+trở thành một lập trình viên chuyên nghiệp, 
+mặc dù tôi sẽ rất tự hào
+
+98
+00:04:55,650 --> 00:04:58,180
+nếu sau năm hoặc mười lớp học nữa bạn sẽ là một
+
+99
+00:04:58,180 --> 00:05:01,530
+lập trình viên có chuyên môn. Nhưng đó không phải là 
+mục đích của lớp học này.
+
+100
+00:05:01,530 --> 00:05:03,320
+Đôi khi bạn chỉ muốn làm xong
+việc gì đó.
+
+101
+00:05:03,320 --> 00:05:06,860
+Bạn có một bảng tính Excel ở văn phòng và
+số liệu bị sai.
+
+102
+00:05:06,860 --> 00:05:08,750
+Bạn lấy số liệu từ một người khác và
+nó
+
+103
+00:05:08,750 --> 00:05:12,240
+bị thừa vài dấu cách
+hoặc
+
+104
+00:05:12,240 --> 00:05:17,120
+bị thiếu vài trường dữ liệu hay gì đó, bạn phải làm
+điều gì đó mà Exel không thể.
+
+105
+00:05:17,120 --> 00:05:18,640
+Và bạn bị mắc kẹt, bạn có thể nói,
+Ôi, tôi
+
+106
+00:05:18,640 --> 00:05:20,920
+muốn, tôi muốn can thiệp vào đống dữ liệu này và
+
+107
+00:05:20,920 --> 00:05:23,620
+để chúng vào Excel để tôi có thể tiếp tục làm việc. nhưng
+
+chúng thật là khó chịu quá đi.
+
+108
+00:05:23,620 --> 00:05:26,960
+Thế là tôi lại phải ngồi và chuyển chúng sang một 
+trình định dạng văn bản như Microsoft Word
+
+109
+00:05:26,960 --> 00:05:30,530
+kiểm từng dòng một và tạo đủ các thể loại
+lỗi rồi chỉnh sửa lại đống dữ liệu.
+
+110
+00:05:30,530 --> 00:05:31,960
+Bạn có thể tạo ra một chương trình để làm việc đó,
+
+111
+00:05:31,960 --> 00:05:33,320
+và nó chính là loại chương trình mà ta sắp tạo ra.
+
+112
+00:05:33,320 --> 00:05:37,810
+Những chương trình phục vụ nhu cầu của ta trong
+máy vi tính
+
+113
+00:05:37,810 --> 00:05:42,690
+Các nhà lập trình chuyên nghiệp có xu hướng tạo ra
+những thứ cho người khác sử dụng đúng không?
+
+114
+00:05:42,690 --> 00:05:44,650
+Họ thường tạo ra những thứ giống như mọi người khác.
+
+115
+00:05:44,650 --> 00:05:49,480
+Nhưng ta không chỉ đơn giản tạo ra những thứ cho riêng mình.
+
+116
+00:05:49,480 --> 00:05:50,720
+Vì vậy.
+
+117
+00:05:50,720 --> 00:05:51,820
+Mật mã là gì?
+
+118
+00:05:51,820 --> 00:05:52,570
+Phần mềm là như thế nào?
+
+119
+00:05:52,570 --> 00:05:55,660
+Ta dùng những từ này khá thường xuyên
+một cách độc lập, là một chương trình.
+
+120
+00:05:55,660 --> 00:05:58,530
+Nó thực sự là một trình tự các lệnh
+được lưu trữ.
+
+121
+00:05:58,530 --> 00:06:01,790
+Ta học ngôn ngữ mà nó có thể giao tiếp, và 
+sau đó
+
+122
+00:06:01,790 --> 00:06:05,110
+ta sẽ nhập các lệnh vào, từng lệnh một.
+
+123
+00:06:05,110 --> 00:06:08,720
+Chương trình sẽ nhận từng lệnh một, và xuất cho ta
+một kết quả, ta lại nhập vào nó lệnh tiếp theo.
+
+124
+00:06:08,720 --> 00:06:11,020
+Nó lại xuất ra kết quả, nhập, xuất, nhập, xuất.
+
+125
+00:06:11,020 --> 00:06:13,030
+Cho nên chương trình thực sự là một chuỗi các lệnh 
+được lưu trữ.
+
+126
+00:06:13,030 --> 00:06:15,890
+Nhưng nó không chỉ như thế.
+
+127
+00:06:15,890 --> 00:06:19,290
+Nó gần giống như sư sáng tạo của ta,
+và bạn vẫn sử dụng một số
+
+128
+00:06:19,290 --> 00:06:21,040
+phần mềm của tôi, như phần mềm MOOC, tôi
+
+129
+00:06:21,040 --> 00:06:23,980
+đã mất một tháng để viết ra 
+nó.
+
+130
+00:06:23,980 --> 00:06:25,700
+Và nó như thể là chính tôi vậy.
+
+131
+00:06:25,700 --> 00:06:29,070
+Ý tôi là đó là cái nhìn của tôi về cách 
+phần mềm hoạt động, phải không?
+
+132
+00:06:29,070 --> 00:06:32,380
+Vậy vấn đề đã không đơn giản là chỉ
+hoàn thành xong việc gì đó.
+
+133
+00:06:32,380 --> 00:06:34,930
+Mà nó còn mang ý nghĩa về lòng kiêu hãnh
+và sự chu toàn.
+
+134
+00:06:34,930 --> 00:06:37,580
+Nhất là nếu bạn đưa ra thứ mà
+người khác có thể tận dụng.
+
+135
+00:06:37,580 --> 00:06:40,090
+Thì tôi nghĩ nó thực sự rất sáng tạo.
+
+136
+00:06:40,090 --> 00:06:42,580
+Đó chính là điều khiến tôi trở thành một 
+lập trình viên ngay từ lúc đầu.
+
+137
+00:06:42,580 --> 00:06:46,230
+Nghĩa là tôi có thể tận dụng được
+tất cả những khả năng mà tôi có,
+
+138
+00:06:46,230 --> 00:06:49,790
+và tôi có thể làm những điều tuyệt vời,
+vì lợi ích của người sử dụng.
+
+139
+00:06:49,790 --> 00:06:54,570
+Vậy, mật mã, phần mềm, một chương trình.
+
+140
+00:06:54,570 --> 00:06:58,720
+Hãy lấy một ví dụ không liên quan đến
+kỹ thuật.
+
+141
+00:07:00,270 --> 00:07:03,880
+Tôi sẽ đưa cho các bạn một đường link Youtube
+về ví dụ này.
+
+142
+00:07:03,880 --> 00:07:06,170
+Đây là Macarena.
+
+143
+00:07:06,170 --> 00:07:09,700
+Macarena là một bài hát 
+
+144
+00:07:09,700 --> 00:07:11,750
+gắn liền với một điệu nhảy nổi tiếng mà
+có vẻ tất cả mọi người
+
+145
+00:07:11,750 --> 00:07:14,730
+đều biết đến, hoặc có thể học theo được
+rất nhanh.
+
+146
+00:07:14,730 --> 00:07:18,993
+Tôi sẽ tạm dừng để các bạn xem 
+bài Macarena.
+
+147
+00:07:18,993 --> 00:07:22,016
+[AUDIO]
+
+148
+00:07:22,016 --> 00:07:23,590
+Chào mừng các bạn quay lại với buổi học.
+
+149
+00:07:23,590 --> 00:07:24,680
+Mong là các bạn thích bài hát đó.
+
+150
+00:07:25,910 --> 00:07:28,600
+Theo cách nào đó cái chúng ta có ở đây là
+
+151
+00:07:28,600 --> 00:07:29,580
+một chương trình.
+
+152
+00:07:29,580 --> 00:07:30,830
+Một chương trình dành cho con người.
+
+153
+00:07:31,868 --> 00:07:33,749
+Có lẽ bạn đã biết rằng ở một câu lạc bộ hoặc
+
+154
+00:07:33,749 --> 00:07:36,160
+ở một nơi nào đấy, người ta bảo bạn phải làm gì 
+tiếp theo.
+
+155
+00:07:36,160 --> 00:07:37,740
+Tôi cũng có thể dạy bạn cách nhảy
+
+156
+00:07:37,740 --> 00:07:41,160
+theo bài Macarena bằng cách viết một chương trình
+ngay bây giờ.
+
+157
+00:07:41,160 --> 00:07:42,210
+Và đây là điệu Macarena của tôi.
+
+158
+00:07:43,740 --> 00:07:45,990
+Khi nhạc được bật lên, nghĩa là bạn
+nhảy đi nhảy lại, 
+
+159
+00:07:45,990 --> 00:07:48,570
+theo nhịp, gần giống như 
+các máy vi tính.
+
+160
+00:07:48,570 --> 00:07:49,620
+Chúng thực hiện mọi việc theo nhịp.
+
+161
+00:07:49,620 --> 00:07:52,000
+Chúng có ba tỉ nhịp 
+mỗi giây.
+
+162
+00:07:52,000 --> 00:07:55,300
+Vì thế ta sẽ làm việc này 
+nhiều lần để
+
+163
+00:07:55,300 --> 00:07:58,180
+ta có tất cả các lệnh
+ta sẽ thực hiện nhỉ?
+
+164
+00:07:59,270 --> 00:08:05,130
+Đưa tay trái ra và ngửa lên trên, đưa tay phải ra và 
+ngửa lên trên, úp tay trái xuống, úp tay phải xuống,
+
+165
+00:08:05,130 --> 00:08:11,960
+tay trái đặt lên vai bên phải, tay phải lên vai
+trái, vân vân.
+
+166
+00:08:11,960 --> 00:08:17,170
+Chương trình nhỏ này có một
+lỗi.
+
+167
+00:08:17,170 --> 00:08:18,350
+Thực chất là vài lỗi.
+
+168
+00:08:18,350 --> 00:08:22,141
+Tôi muốn các bạn nhìn và tìm xem
+có lỗi nào trong chương trình này không.
+
+169
+00:08:22,141 --> 00:08:29,093
+[AUDIO]
+
+170
+00:08:29,093 --> 00:08:30,000
+Được rồi.
+
+171
+00:08:30,000 --> 00:08:33,480
+Đây là những vị trí xuất hiện 
+lỗi.
+
+172
+00:08:33,480 --> 00:08:34,040
+Có đúng không?
+
+173
+00:08:34,040 --> 00:08:34,850
+Lỗi ở đây là
+
+174
+00:08:37,540 --> 00:08:43,910
+miếng giăm bông bên phải đặt ra sau đầu, và
+tay trái đặt lên cú đánh bên phải chứ không phải hông bên phải.
+
+175
+00:08:43,910 --> 00:08:47,790
+Nếu bạn đang ở trong môt quán bar mà bạn lại ăn giăm bông
+và đánh ai đó
+
+176
+00:08:47,790 --> 00:08:52,360
+vào sau đầu thì nó sẽ không được lịch sự cho lắm khi bạn nhảy theo bài hát này.
+
+177
+00:08:52,360 --> 00:08:54,270
+Đó được gọi là những lỗi lập trình.
+
+178
+00:08:54,270 --> 00:08:56,550
+Bây giờ một người đang đọc được điều này
+
+179
+00:08:56,550 --> 00:09:00,910
+sẽ nói, ồ, tôi định nói 
+"tay" ở đó cơ.
+
+180
+00:09:00,910 --> 00:09:03,380
+Nhưng một chiếc máy vi tính thì tầm thường hơn 
+con người rất nhiều.
+
+181
+00:09:03,380 --> 00:09:06,530
+Ta thấy một vài bài tập mà
+người ta 
+
+182
+00:09:06,530 --> 00:09:11,780
+có thể sửa những lỗi nhỏ như thế này, nhưng
+máy vi tính thì không thể, đúng chứ?
+

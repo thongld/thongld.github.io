@@ -1,0 +1,496 @@
+1
+00:00:00,310 --> 00:00:03,060
+Hey, Vsauce. Michael here,
+and I just got back from
+
+2
+00:00:03,060 --> 00:00:06,459
+VidCon. The entire convention was
+incredible, but the whole time I was
+
+3
+00:00:06,459 --> 00:00:07,099
+there
+
+4
+00:00:07,099 --> 00:00:11,619
+I thought a lot about video.
+We all watch video
+
+5
+00:00:11,619 --> 00:00:15,239
+and many of us work with video,
+but what is it? I mean, what really
+
+6
+00:00:15,240 --> 00:00:18,920
+is video? Well, guess what, today
+we're gonna take a look.
+
+7
+00:00:18,920 --> 00:00:22,949
+To begin I think we should start all
+the way down at the bottom
+
+8
+00:00:22,949 --> 00:00:26,300
+with language.
+What does the word record mean?
+
+9
+00:00:26,300 --> 00:00:29,760
+The story behind the word 'record' is
+actually quite cool and makes me a little
+
+10
+00:00:29,760 --> 00:00:30,760
+sentimental.
+
+11
+00:00:30,760 --> 00:00:34,690
+The word 'record' comes from the Latin,
+where "re" means
+
+12
+00:00:34,689 --> 00:00:38,439
+again and "cor" means the heart or the soul.
+
+13
+00:00:38,439 --> 00:00:42,199
+So when you record something you are
+literally bringing it back
+
+14
+00:00:42,200 --> 00:00:46,039
+into your heart, bringing it back into your
+soul, remembering it.
+
+15
+00:00:46,039 --> 00:00:49,289
+Now, that sounds really nice and pretty,
+but it actually had more to do with the
+
+16
+00:00:49,289 --> 00:00:49,700
+fact that
+
+17
+00:00:49,700 --> 00:00:53,440
+ancient people thought that the heart
+was we were stored memories, not the brain.
+
+18
+00:00:53,979 --> 00:00:57,459
+The reason a sequence of still images
+can appear to be moving
+
+19
+00:00:57,469 --> 00:01:01,489
+is an effect known as "beta movement."
+If images move fast enough
+
+20
+00:01:01,488 --> 00:01:04,938
+our brain can't comprehend them as
+separate images and the illusion of
+
+21
+00:01:04,938 --> 00:01:05,609
+motion
+
+22
+00:01:05,609 --> 00:01:09,170
+is created.
+Now, for a very long time we recorded
+
+23
+00:01:09,170 --> 00:01:12,960
+moving images on photographic film,
+but later on
+
+24
+00:01:12,959 --> 00:01:16,789
+a new way of capturing moving images
+came about and it was called
+
+25
+00:01:16,790 --> 00:01:20,189
+"video."
+Video comes from the Latin for "I see"
+
+26
+00:01:20,188 --> 00:01:24,258
+and rather than preserving a moving
+image chemically on celluloid
+
+27
+00:01:24,259 --> 00:01:28,549
+photographic film stock,
+video is an electronic
+
+28
+00:01:28,549 --> 00:01:33,220
+representation of the moving image.
+Now in the real world stuff just
+
+29
+00:01:33,219 --> 00:01:37,158
+happens. The things just continuously
+happen. But in the world of a camera,
+
+30
+00:01:37,159 --> 00:01:38,118
+whether it's film
+
+31
+00:01:38,118 --> 00:01:41,790
+or video camera, it's almost always in
+the form of frame rates.
+
+32
+00:01:41,790 --> 00:01:45,570
+Pictures of the world taken at a
+certain speed that are then quickly gone
+
+33
+00:01:45,569 --> 00:01:46,078
+through
+
+34
+00:01:46,078 --> 00:01:49,658
+producing, through beta movement,
+the illusion of movement.
+
+35
+00:01:49,659 --> 00:01:53,750
+When a camera records at a lower frame
+rate, playback often looks
+
+36
+00:01:53,750 --> 00:01:58,649
+jittery and skips like this. More frames
+per second means that more information
+
+37
+00:01:58,649 --> 00:02:00,109
+is taken every second
+
+38
+00:02:00,109 --> 00:02:03,609
+leading to more fluidity.
+But that leads to a whole can of worms,
+
+39
+00:02:03,609 --> 00:02:06,618
+which is a great transition to a
+conversation I had with Dylan from
+
+40
+00:02:06,618 --> 00:02:08,118
+HouseholdHacker at VidCon.
+
+41
+00:02:08,120 --> 00:02:09,280
+Roll the tape.
+
+42
+00:02:11,240 --> 00:02:16,800
+Hey, Vsauce. Michael here, and I am in the bathroom at VidCon and I've got a special guest. Right outside
+
+43
+00:02:16,800 --> 00:02:20,260
+it's Dylan from HouseholdHacker.
+Hey, what's going on everyone?
+
+44
+00:02:20,259 --> 00:02:24,068
+You know, I got a good question for you
+based on frame rates and what not. What would you
+
+45
+00:02:24,068 --> 00:02:24,549
+say
+
+46
+00:02:24,550 --> 00:02:31,050
+the human eye sees as a frame rate? Very good question. What frame rate do we see the world in with our
+
+47
+00:02:31,050 --> 00:02:32,099
+eyeballs?
+I mean,
+
+48
+00:02:32,098 --> 00:02:35,409
+how fast does information travel
+from our eye to our brain?
+
+49
+00:02:35,409 --> 00:02:39,729
+It obviously can't be too low,
+because fast objects don't look like they're
+
+50
+00:02:39,729 --> 00:02:40,539
+skipping,
+
+51
+00:02:40,539 --> 00:02:44,979
+they look pretty fluid. Well, it's a little bit of a
+trick question because our eyes
+
+52
+00:02:44,979 --> 00:02:48,878
+are not cameras.
+Instead, they track onto objects
+
+53
+00:02:48,878 --> 00:02:52,219
+and receive a continuous flow of photons
+onto the retina
+
+54
+00:02:52,219 --> 00:02:55,250
+sending information via a chemical reaction
+
+55
+00:02:55,250 --> 00:02:59,150
+to the brain. Now, here's what we do now.
+The visual cortex in our brain
+
+56
+00:02:59,150 --> 00:03:02,408
+usually holds that information
+from our retina for about a fifteenth
+
+57
+00:03:02,408 --> 00:03:06,400
+of a second. So if an animation moves
+fifteen frames a second
+
+58
+00:03:06,400 --> 00:03:09,719
+or faster, it's gonna look nice and fluid.
+But
+
+59
+00:03:09,719 --> 00:03:13,568
+if it's lower than fifteen frames a second,
+our brain's not fooled by the beta
+
+60
+00:03:13,568 --> 00:03:14,158
+movement
+
+61
+00:03:14,158 --> 00:03:19,699
+and it'll look like it's skipping. So, basically,
+the faster the frame rate, the better
+
+62
+00:03:19,699 --> 00:03:24,268
+everything's gonna look in the end. Here's the thing.
+If frame rates get higher and higher,
+
+63
+00:03:24,269 --> 00:03:27,500
+you wind up with an image that can
+actually cause headaches when people
+
+64
+00:03:27,500 --> 00:03:28,549
+watch it on the screen.
+
+65
+00:03:28,549 --> 00:03:31,989
+Uhm... Here, I'll explain why.
+Hold this camera for a second.
+
+66
+00:03:31,989 --> 00:03:35,450
+Oh yeah, no problem.
+So back to the point
+
+67
+00:03:35,449 --> 00:03:39,060
+about our eyes tracking onto objects.
+If I do this -
+
+68
+00:03:39,060 --> 00:03:42,709
+move my hand in front of my face and
+track it with my eyes -
+
+69
+00:03:42,709 --> 00:03:47,340
+I can see my hand, it makes sense. But at
+a certain point my hand will move so fast
+
+70
+00:03:47,340 --> 00:03:51,239
+that it's just a blur and the reason
+it's a blur is because my eye
+
+71
+00:03:51,239 --> 00:03:56,890
+can only track so fast. And when objects move
+faster than our eyeballs can track, your brain
+
+72
+00:03:56,889 --> 00:03:57,529
+adds in
+
+73
+00:03:57,530 --> 00:04:00,900
+motion blur. That way we get a sense of
+movement happening,
+
+74
+00:04:00,900 --> 00:04:04,140
+but we don't see something like a hand randomly
+
+75
+00:04:04,139 --> 00:04:07,818
+appearing all over the place.
+But this becomes a problem with new
+
+76
+00:04:07,818 --> 00:04:09,658
+high-definition programs on
+
+77
+00:04:09,658 --> 00:04:13,639
+big televisions, because some of those
+programs are brought to your TV
+
+78
+00:04:13,639 --> 00:04:16,949
+at frame rates as high as a 1000 frames a second.
+
+79
+00:04:16,949 --> 00:04:20,739
+And objects, like a tennis ball,
+that normally travels so fast
+
+80
+00:04:20,738 --> 00:04:24,439
+our eyes can't track them and they look blurry
+don't look blurry,
+
+81
+00:04:24,439 --> 00:04:28,240
+because the camera is able to see them
+clearly. And when you watch that program
+
+82
+00:04:28,240 --> 00:04:28,970
+on TV
+
+83
+00:04:28,970 --> 00:04:32,470
+you can actually get a headache or get
+dizzy, so they're having to find ways to
+
+84
+00:04:32,470 --> 00:04:33,650
+add blur
+
+85
+00:04:33,649 --> 00:04:37,159
+back into HD pictures.
+Pretty neat, right?
+
+86
+00:04:37,160 --> 00:04:40,380
+That's great information. How did you
+learn this? That's what I'm here for, man.
+
+87
+00:04:40,379 --> 00:04:45,918
+Thank you. See you.
+See you.
+
+88
+00:04:45,918 --> 00:04:49,118
+You know, the bathroom. You know.
+I heard you coming out. Did you wash your hands?
+
+89
+00:04:52,220 --> 00:04:53,160
+Uhm, yeah.
+
+90
+00:04:55,250 --> 00:04:58,829
+So there you go. Some cool facts about
+video that I learned while I was flying
+
+91
+00:04:58,829 --> 00:04:59,589
+to
+
+92
+00:04:59,589 --> 00:05:03,719
+and from VidCon from New York to LA.
+It was a long flight, but I learned a lot
+
+93
+00:05:03,720 --> 00:05:07,509
+and I wanna end with some numbers about
+YouTube specifically.
+
+94
+00:05:07,509 --> 00:05:11,259
+YouTube host videos from all over the world.
+Massive,
+
+95
+00:05:11,259 --> 00:05:14,840
+massive amounts.
+In fact, every minute of the day
+
+96
+00:05:14,839 --> 00:05:18,750
+people are uploading video to YouTube.
+And if you were to take all the video
+
+97
+00:05:18,750 --> 00:05:22,550
+uploaded to YouTube at any given minute,
+all together it would equal
+
+98
+00:05:22,550 --> 00:05:27,250
+48 hours. That's right.
+Two full days of video
+
+99
+00:05:27,250 --> 00:05:31,699
+are uploaded to YouTube every single
+minute. You guys are part of something
+
+100
+00:05:31,699 --> 00:05:35,199
+gigantic. All right, now later this week
+I'll have a new episode of IMG.
+
+101
+00:05:35,199 --> 00:05:38,569
+And soon enough we'll have episodes of
+DONG, LÜt, it's gonna be super cool, so be
+
+102
+00:05:38,569 --> 00:05:40,579
+sure you're subscribed so you don't miss anything.
+
+103
+00:05:40,579 --> 00:05:41,620
+And as always,
+
+104
+00:05:41,620 --> 00:05:43,000
+thanks for watching.
+
+105
+00:05:49,300 --> 00:05:51,460
+They're not, they're not the same person.
+

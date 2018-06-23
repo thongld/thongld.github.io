@@ -1,0 +1,400 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/L9uMIpP1g18
+knh_hoducminh161296
+
+1
+00:00:06,169 --> 00:00:08,730
+Chào mừng quay lại với Quản Lý Hoạt Động
+
+2
+00:00:08,730 --> 00:00:12,220
+Ta sẽ tiếp tục với buổi họp về điều khiển quy trình thống kê
+
+3
+00:00:12,219 --> 00:00:15,558
+và buổi họp này ta sẽ bàn về cách ta có thể tạo
+
+4
+00:00:15,558 --> 00:00:16,888
+những giới hạn điều khiển cho cả
+
+5
+00:00:16,888 --> 00:00:20,170
+biểu đồ X và R nếu bạn nhớ lại
+
+6
+00:00:20,170 --> 00:00:24,420
+biểu đồ X và R luôn đi chung và chúng được dùng cho những xem
+
+7
+00:00:24,420 --> 00:00:28,109
+xét hay thay đổi and biều đồ X biểu thị
+
+8
+00:00:28,109 --> 00:00:32,260
+những thay đổi nó có nghĩa là xu hướng chủ yếu của quá trình
+
+9
+00:00:32,260 --> 00:00:36,868
+trong khi biểu đồ R theo phạm vi của mẫu để giám sát
+
+10
+00:00:36,868 --> 00:00:37,839
+sự phân tán mà chúng
+
+11
+00:00:37,840 --> 00:00:42,280
+ luôn được dùng chung vì vậy ta có nhiều quan điểm của quá trình
+
+12
+00:00:42,280 --> 00:00:45,329
+khi ta nhìn vào biểu đồ X
+
+13
+00:00:45,329 --> 00:00:48,609
+ta sẽ tạo ra một giới hạn điều chỉnh cao hơn bằng việc sử dụng
+
+14
+00:00:48,609 --> 00:00:51,850
+thêm 3 sự sai lệch tiêu chuẩn
+
+15
+00:00:51,850 --> 00:00:55,730
+trên trung bình và cho giới hạn điều chỉnh thấp hơn nó sẽ
+
+16
+00:00:55,729 --> 00:00:59,359
+sai lệch tiêu chuẩn âm ba ngay lúc này
+
+17
+00:00:59,359 --> 00:01:03,369
+bạn thấy tôi có Z ở đây bởi vì người ta thường dùng
+
+18
+00:01:03,369 --> 00:01:06,780
+con số khác 3 tiêu chuẩn sai lệch mặc dù
+
+19
+00:01:06,780 --> 00:01:10,118
+3 là bình thường cho loại
+
+20
+00:01:10,118 --> 00:01:13,868
+biểu đồ hiện nay khi ta làm nên tiêu chuẩn sai lệch
+
+21
+00:01:13,868 --> 00:01:16,950
+thực sự đã phạm những lỗi tiêu chuẩn
+
+22
+00:01:16,950 --> 00:01:20,689
+đó là những đóng góp mẫu của sai lệch tiêu chuẩn chính
+
+23
+00:01:20,688 --> 00:01:25,569
+and that's calculated by taking the
+population standard deviation
+
+24
+00:01:25,569 --> 00:01:29,169
+and dividing it by the square root of
+the sample size
+
+25
+00:01:29,170 --> 00:01:34,340
+so it's too an example here we have the
+LRDR company
+
+26
+00:01:34,340 --> 00:01:37,579
+and produces a candy bar that has an
+average weight of
+
+27
+00:01:37,578 --> 00:01:40,719
+10 ounces with the standard deviation of
+
+
+28
+00:01:40,719 --> 00:01:45,269
+.2  the company wants to monitor the
+process that makes these bars
+
+29
+00:01:45,269 --> 00:01:50,719
+so they're going to collect data samples
+they're going to use a sample sizes 16
+
+30
+00:01:50,719 --> 00:01:54,519
+and they want to create control limits
+of three standard deviations
+
+31
+00:01:54,519 --> 00:01:58,060
+so we'll  calculate both the upper and lower
+control limit
+
+32
+00:01:58,060 --> 00:02:01,820
+for this X-bar chart the average
+weight
+
+33
+00:02:01,819 --> 00:02:06,739
+mean is 10 ounces the standard deviation
+of the population is point
+
+34
+00:02:06,739 --> 00:02:10,819
+two ounces and we'reusing a sample sizes of 16
+
+35
+00:02:10,819 --> 00:02:14,030
+so to creat the upper and lower control limits
+
+36
+00:02:14,030 --> 00:02:18,870
+we're going to take the mean and add to
+it three standard deviations above the
+
+37
+00:02:18,870 --> 00:02:19,450
+mean
+
+38
+00:02:19,449 --> 00:02:23,629
+but remember we have to calculate
+standard deviation
+
+39
+00:02:23,629 --> 00:02:27,590
+by using the population standard
+deviation of .2
+
+40
+00:02:27,590 --> 00:02:30,990
+and dividing it by the square root of
+the sample size of
+
+41
+00:02:30,990 --> 00:02:34,510
+16 so we have 10 plus
+
+42
+00:02:34,509 --> 00:02:38,269
+3 times .2 divided by the square
+root of 16
+
+43
+00:02:38,270 --> 00:02:44,880
+which is 10.15 the lower control limit
+is calculated in a similar fashion
+
+44
+00:02:44,879 --> 00:02:48,049
+only was starting with the mean and
+we're subtracting
+
+45
+00:02:48,050 --> 00:02:51,110
+the three standard deviations so that
+gives us
+
+46
+00:02:51,110 --> 00:02:54,510
+9.85 so now you can imagine
+
+47
+00:02:54,509 --> 00:02:59,109
+a control chart that has a lower line
+of 9.85
+
+48
+00:02:59,110 --> 00:03:03,320
+an upper line of 10.15 when we collect
+
+49
+00:03:03,319 --> 00:03:06,569
+data and we take the means of those samples
+
+50
+00:03:06,569 --> 00:03:09,599
+and we plotted on the chart
+
+51
+00:03:09,599 --> 00:03:13,329
+as long as those data points fall
+between 9.85
+
+52
+00:03:13,330 --> 00:03:20,330
+and 10.15 everything looks fine but in
+conjunction with the X bar chart we
+
+53
+00:03:20,360 --> 00:03:22,100
+have to take a look at the range
+
+54
+00:03:22,099 --> 00:03:26,349
+at the gate so we're going to calculate
+the upper and lower control limits
+
+55
+00:03:26,349 --> 00:03:30,639
+of the range in a similar fashion to
+the X bar chart
+
+56
+00:03:30,639 --> 00:03:35,759
+we're going to take the range means plus three
+standard deviations at the range
+
+57
+00:03:35,759 --> 00:03:36,969
+standard deviation
+
+58
+00:03:36,969 --> 00:03:40,939
+so we have R bar plus
+
+59
+00:03:40,939 --> 00:03:44,430
+three times the standard deviation of  the
+range and R bar
+
+60
+00:03:44,430 --> 00:03:47,620
+minus three times standard deviations of
+the range
+
+61
+00:03:47,620 --> 00:03:51,340
+using the same process
+
+62
+00:03:51,340 --> 00:03:55,219
+now we know that the average weight
+range of the candy bar
+
+63
+00:03:55,219 --> 00:03:59,250
+is .15 ounces with the standard
+deviation of the range
+
+64
+00:03:59,250 --> 00:04:03,259
+being .03 ounces now the company is
+
+65
+00:04:03,259 --> 00:04:08,090
+monitoring this process for the range
+ranging the same sample size of
+
+66
+00:04:08,090 --> 00:04:11,539
+16 and we're still going to use three
+sigma control limits
+
+67
+00:04:11,539 --> 00:04:14,879
+so we're going to create the upper and
+lower control limit
+
+68
+00:04:14,879 --> 00:04:18,500
+for the R chart the average weight
+
+69
+00:04:18,500 --> 00:04:22,089
+ranges .15 ounces and the standard
+deviation
+
+70
+00:04:22,089 --> 00:04:25,909
+of that ranges point 03 and our sample
+size
+
+71
+00:04:25,910 --> 00:04:30,169
+is 16 so we're going to creat upper
+and lower control limits
+
+72
+00:04:30,168 --> 00:04:33,930
+so it's .15 plus 3 times
+
+73
+00:04:33,930 --> 00:04:39,978
+.03 which is 24 and a lower control
+limit is .15
+
+74
+00:04:39,978 --> 00:04:44,399
+minus 3 times .03 which is .06
+
+75
+00:04:44,399 --> 00:04:47,439
+so again a margin to control chart
+
+76
+00:04:47,439 --> 00:04:51,149
+the lower line it's .06 the upper
+line is 
+
+77
+00:04:51,149 --> 00:04:56,399
+.24 as long as we calculate the ranges of
+our samples
+
+78
+00:04:56,399 --> 00:05:00,629
+those data points fall between .06 and
+.24
+
+79
+00:05:00,629 --> 00:05:04,810
+we say a our process is doing fine but
+remember
+
+80
+00:05:04,810 --> 00:05:08,410
+X-bar or R-chart  always used in
+conjunction
+
+81
+00:05:08,410 --> 00:05:12,660
+with each other so if there's even one
+data point that falls
+
+82
+00:05:12,660 --> 00:05:15,840
+outside the control limits on either
+chart
+
+83
+00:05:15,839 --> 00:05:19,199
+then the process is not considered in
+control
+
+84
+00:05:19,199 --> 00:05:22,839
+we have to go look for a cause for that
+variation
+
+85
+00:05:22,839 --> 00:05:26,538
+in our next session we're gonna be
+taking a look
+
+86
+00:05:26,538 --> 00:05:30,959
+control charts for attributes which
+would be the C chart
+
+87
+00:05:30,959 --> 00:05:32,549
+and the P chart. I'll see you then
+

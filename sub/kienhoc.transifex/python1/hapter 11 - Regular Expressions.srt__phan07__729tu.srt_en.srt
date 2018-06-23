@@ -1,0 +1,440 @@
+565
+00:26:47,960 --> 00:26:52,640
+https://youtu.be/UR6a_wZ8ido
+So pull that part out
+and put it right there.
+
+566
+00:26:52,640 --> 00:26:56,720
+Now, an even cooler version
+of this that you probably
+
+567
+00:26:56,720 --> 00:27:04,190
+kind of imagined right away
+is we say, you know what?
+
+568
+00:27:04,190 --> 00:27:06,709
+I would like this
+first character
+
+569
+00:27:06,709 --> 00:27:08,250
+to-- the first part
+of the line to be
+
+570
+00:27:08,250 --> 00:27:17,190
+from with a blank followed
+by any number of characters
+
+571
+00:27:17,190 --> 00:27:18,870
+followed by an at sign.
+
+572
+00:27:18,870 --> 00:27:20,420
+So the at sign is real.
+
+573
+00:27:20,420 --> 00:27:25,070
+Then start extracting, then any
+number of non blank characters
+
+574
+00:27:25,070 --> 00:27:27,350
+and extracting.
+
+575
+00:27:27,350 --> 00:27:32,420
+So this is like eight
+or nine lines of Python
+
+576
+00:27:32,420 --> 00:27:35,650
+all rolled into one thing, OK?
+
+577
+00:27:35,650 --> 00:27:38,800
+
+578
+00:27:38,800 --> 00:27:41,470
+so start at the
+beginning of the line.
+
+579
+00:27:41,470 --> 00:27:44,210
+Look for string
+from with a space.
+
+580
+00:27:44,210 --> 00:27:49,040
+Then skip a bunch of characters
+looking for an at sign.
+
+581
+00:27:49,040 --> 00:27:52,350
+Skip characters until
+you encounter an at sign.
+
+582
+00:27:52,350 --> 00:27:55,590
+Then start extracting.
+
+583
+00:27:55,590 --> 00:27:58,230
+Match any non blank-- a
+single non blank character.
+
+584
+00:27:58,230 --> 00:28:02,495
+So this is kind of like one
+non blank character, one non
+
+585
+00:28:02,495 --> 00:28:03,300
+blank character.
+
+586
+00:28:03,300 --> 00:28:05,780
+But once you suffix
+it with the asterisk,
+
+587
+00:28:05,780 --> 00:28:10,570
+that changes it to be
+many non blank characters.
+
+588
+00:28:10,570 --> 00:28:15,340
+And then stop extracting, OK?
+
+589
+00:28:15,340 --> 00:28:20,660
+So it's like, find from
+followed by a space-- great.
+
+590
+00:28:20,660 --> 00:28:22,280
+That's the first part.
+
+591
+00:28:22,280 --> 00:28:26,140
+Now throw away until
+you find an at sign.
+
+592
+00:28:26,140 --> 00:28:28,060
+Then start extracting.
+
+593
+00:28:28,060 --> 00:28:30,870
+Keep going with non
+blank characters
+
+594
+00:28:30,870 --> 00:28:33,210
+until you hit the
+first blank characters
+
+595
+00:28:33,210 --> 00:28:34,290
+and pull that part out.
+
+596
+00:28:34,290 --> 00:28:36,620
+Now, the result is we
+get the exact same data.
+
+597
+00:28:36,620 --> 00:28:40,530
+But with this added
+to it, we're much more
+
+598
+00:28:40,530 --> 00:28:43,010
+narrow in the kind of things
+that we're looking for.
+
+599
+00:28:43,010 --> 00:28:46,330
+And if we get noisy data that
+like-- say something like,
+
+600
+00:28:46,330 --> 00:28:52,100
+you know, meet at Joe's, right?
+
+601
+00:28:52,100 --> 00:28:53,040
+We don't want that.
+
+602
+00:28:53,040 --> 00:28:54,040
+That won't match, right?
+
+603
+00:28:54,040 --> 00:28:56,180
+We want that to be like a false.
+
+604
+00:28:56,180 --> 00:28:58,330
+And that allows us
+to sort of really
+
+605
+00:28:58,330 --> 00:28:59,979
+fine tune our matching
+and extracting.
+
+606
+00:28:59,979 --> 00:29:01,270
+And this is just the beginning.
+
+607
+00:29:01,270 --> 00:29:03,050
+They're very, very powerful.
+
+608
+00:29:03,050 --> 00:29:05,620
+So the last thing
+that I will show you
+
+609
+00:29:05,620 --> 00:29:08,830
+is sort of a program
+that is kind of like one
+
+610
+00:29:08,830 --> 00:29:11,860
+of the programs that we
+did in a previous section.
+
+611
+00:29:11,860 --> 00:29:14,550
+Except now, we're going to use
+regular expressions to do it.
+
+612
+00:29:14,550 --> 00:29:16,110
+So if you remember,
+we had this thing
+
+613
+00:29:16,110 --> 00:29:17,985
+where we're doing spam
+confidence where we're
+
+614
+00:29:17,985 --> 00:29:23,330
+looking for lines and pulling
+this number out and then
+
+615
+00:29:23,330 --> 00:29:26,390
+calculating you the average
+or the maximum or whatever.
+
+616
+00:29:26,390 --> 00:29:30,050
+And so here is a-- we import
+the regular expression library.
+
+617
+00:29:30,050 --> 00:29:31,289
+We open the file.
+
+618
+00:29:31,289 --> 00:29:32,830
+We're going to do
+this with appending
+
+619
+00:29:32,830 --> 00:29:36,340
+to a list-- we'll put
+the numbers in a list
+
+620
+00:29:36,340 --> 00:29:39,190
+rather than doing the
+calculational loop.
+
+621
+00:29:39,190 --> 00:29:40,330
+We strip the data.
+
+622
+00:29:40,330 --> 00:29:42,170
+Now, here's the
+key thing, right?
+
+623
+00:29:42,170 --> 00:29:44,240
+We're going to have a
+regular expression that
+
+624
+00:29:44,240 --> 00:29:47,750
+says, look for the
+first character
+
+625
+00:29:47,750 --> 00:29:50,900
+being x followed by a
+dash followed by all this.
+
+626
+00:29:50,900 --> 00:29:54,730
+All this exactly has to match
+literally followed by a colon.
+
+627
+00:29:54,730 --> 00:29:56,820
+And then there's a space.
+
+628
+00:29:56,820 --> 00:29:59,030
+And then we begin extracting.
+
+629
+00:29:59,030 --> 00:30:03,510
+And we're looking for the
+digits 0 through 9 or a dot.
+
+630
+00:30:03,510 --> 00:30:08,686
+And we're looking
+for one or more.
+
+631
+00:30:08,686 --> 00:30:09,810
+And then we end extracting.
+
+632
+00:30:09,810 --> 00:30:12,342
+So that's-- the parentheses are
+telling us what to pull out.
+
+633
+00:30:12,342 --> 00:30:13,800
+So that just means
+that we're going
+
+634
+00:30:13,800 --> 00:30:16,860
+to pull out those numbers, all
+the digits and the numbers,
+
+635
+00:30:16,860 --> 00:30:19,610
+until we get something-- I mean,
+all the digits and the period
+
+636
+00:30:19,610 --> 00:30:22,440
+and we'll get something other
+than a digit and a period.
+
+637
+00:30:22,440 --> 00:30:26,130
+And then we'll be done, OK?
+
+638
+00:30:26,130 --> 00:30:29,260
+And so this is going to pull
+those numbers out and give us
+
+639
+00:30:29,260 --> 00:30:29,904
+back a list.
+
+640
+00:30:29,904 --> 00:30:31,320
+Now, the thing
+about it is we have
+
+641
+00:30:31,320 --> 00:30:34,640
+to realize that sometimes
+this is not going to match.
+
+642
+00:30:34,640 --> 00:30:37,120
+Because we're sending
+every line-- not just
+
+643
+00:30:37,120 --> 00:30:38,680
+the ones that start with x.
+
+644
+00:30:38,680 --> 00:30:40,540
+We're sending every
+line through this.
+
+645
+00:30:40,540 --> 00:30:44,270
+And so we need to know
+when we didn't get a match.
+
+646
+00:30:44,270 --> 00:30:47,950
+And the way we know we didn't
+get a match is if the list
+
+647
+00:30:47,950 --> 00:30:51,280
+the number of items in the
+list that we got back is zero,
+
+648
+00:30:51,280 --> 00:30:52,570
+then we're going to continue.
+
+649
+00:30:52,570 --> 00:30:55,320
+So this is kind of
+our if we're searching
+
+650
+00:30:55,320 --> 00:30:57,010
+for the needle in the haystack.
+
+651
+00:30:57,010 --> 00:31:00,690
+But then once we find
+what we're looking for,
+
+652
+00:31:00,690 --> 00:31:04,560
+the actual number that
+we're interested in
+
+653
+00:31:04,560 --> 00:31:08,340
+is already sitting here
+in stuff sub 0, OK?
+
+654
+00:31:08,340 --> 00:31:09,680
+And then we convert to a float.
+
+655
+00:31:09,680 --> 00:31:10,550
+We append it.
+
+656
+00:31:10,550 --> 00:31:12,110
+And then when the
+loop is all done,
+
+657
+00:31:12,110 --> 00:31:14,900
+we print out the maximum, OK?
+
+658
+00:31:14,900 --> 00:31:17,150
+And so this is sort of
+encoding a number of things
+

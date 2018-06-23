@@ -1,0 +1,272 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/zR8GrVnPqjw
+
+1
+00:00:05,859 --> 00:00:08,529
+rất vui được gặp lại các bạn trong khóa "Quản trị vận hành"
+
+2
+00:00:08,529 --> 00:00:12,609
+và chúng ta vẫn sẽ tiếp tục với hàng tồn kho
+Lần này ta sẽ nói về
+
+3
+00:00:12,609 --> 00:00:14,320
+cách chúng ta tính toán
+
+4
+00:00:14,320 --> 00:00:20,018
+một cấp độ dịch vụ phù hợp cho một tổ chức 
+Trong những tập trước
+
+5
+00:00:20,018 --> 00:00:22,850
+ta đã nói rằng cấp độ dịch vụ là xác suất
+
+6
+00:00:22,850 --> 00:00:27,580
+mà ta sẽ không bị hết hàng
+Vậy nên nó sẽ bằng 1 - xác suất hết hàng
+
+7
+00:00:27,579 --> 00:00:28,629
+we will run
+
+8
+00:00:28,629 --> 00:00:31,969
+Nhưng cấp độ dịch vụ đó nên bằng bao nhiêu?
+
+9
+00:00:31,969 --> 00:00:34,989
+Tất cả những gì ta biết là
+
+10
+00:00:34,989 --> 00:00:40,780
+cấp độ dịch vụ nên là sự cân bằng giữa có đủ hàng tồn kho
+
+11
+00:00:40,780 --> 00:00:42,520
+có quá nhiều
+
+12
+00:00:42,520 --> 00:00:48,190
+bởi vì ta đều biết rằng hàng tồn kho dư thừa sẽ khiến chi phí lưu trữ và vốn bị nâng lên
+
+13
+00:00:48,189 --> 00:00:51,479
+nhưng nếu không có đủ hàng và
+
+14
+00:00:51,479 --> 00:00:54,750
+có khả năng ta sẽ ngừng sản xuất vì thiếu nguyên liệu
+
+15
+00:00:54,750 --> 00:00:57,859
+đơn đặt của khách hàng sẽ bị thiếu, vân vân và vân vân
+
+16
+00:00:57,859 --> 00:01:01,589
+vậy nên ta cần tìm một sự cân bằng thích hợp giữa hai thái cực trên
+
+17
+00:01:01,590 --> 00:01:06,640
+Vậy chính xác thì cấp độ dịch vụ nên bằng bao nhiêu?
+
+18
+00:01:06,640 --> 00:01:12,340
+ta sẽ thực hiện một phân tích biên bằng cách so sánh mức giá kỳ vọng và lợi nhuận
+
+19
+00:01:12,340 --> 00:01:15,909
+approaching tiền lời của mỗi đơn vị
+
+20
+00:01:15,909 --> 00:01:19,990
+cho hàng tồn kho 
+vậy với mỗi đơn vị thêm vào trong hàng tồn kho
+
+21
+00:01:19,989 --> 00:01:24,769
+ta sẽ xem xét giá cả và lợi nhuận của chúng 
+để làm được điều đó ta cần hiểu
+
+22
+00:01:24,769 --> 00:01:25,649
+understand
+
+23
+00:01:25,650 --> 00:01:28,759
+từ viết tắt của lợi ích cận biên (Marginal Benefit - MB
+
+24
+00:01:28,759 --> 00:01:32,909
+giá bán (price) ở đây là mức giá mà ta có thể bán với mỗi đơn vị
+
+25
+00:01:32,909 --> 00:01:36,460
+với giá (cost) là mức giá vốn
+
+26
+00:01:36,459 --> 00:01:39,519
+vậy giá bán trừ đi giá vốn ta sẽ được lợi nhuận biên
+
+27
+00:01:39,519 --> 00:01:45,449
+chi phí biên là lượng chi phí để có được sản phẩm 
+
+28
+00:01:45,450 --> 00:01:49,100
+nhưng ta phải trừ đi cho giá trị thu hồi
+
+29
+00:01:49,099 --> 00:01:53,009
+đến cuối cùng, đây là những gì ta có được cho mỗi đơn vị bán ra
+
+30
+00:01:53,009 --> 00:01:56,540
+nó không phải là giá bán ban đầu nữa mà là thứ gì đó còn lại
+
+31
+00:01:56,540 --> 00:02:00,350
+bây giờ chúng ta sẽ tính toán cấp độ dịch vụ
+
+32
+00:02:00,349 --> 00:02:03,649
+ta sẽ lấy lợi nhuận biên chia cho 
+
+33
+00:02:03,649 --> 00:02:07,689
+tổng lợi nhuận biên và chi phí biên
+
+34
+00:02:07,688 --> 00:02:10,860
+và ta sẽ có được xác suất nhu cầu của ta
+
+35
+00:02:10,860 --> 00:02:14,349
+trong suốt thời gian ta đưa đơn đặt hàng cho tới khi
+
+36
+00:02:14,349 --> 00:02:17,400
+ta nhận nó là nhỏ hơn hoặc bằng điểm bổ sung
+
+37
+00:02:17,400 --> 00:02:22,670
+cũng giống như ta luôn nói về cấp độ dịch vụ
+vậy nếu ta nhìn vào
+
+38
+00:02:22,669 --> 00:02:23,729
+một ví dụ
+
+39
+00:02:23,729 --> 00:02:28,409
+ta có Sydney với việc kinh doanh theo mùa bằng hình thức mua và bán những bức tượng nhỏ
+
+40
+00:02:28,409 --> 00:02:32,719
+Sydney mua những bức tượng nhỏ với giá 25 đô mỗi bức
+
+41
+00:02:32,719 --> 00:02:35,990
+và sau đó bức tượng được bán lại với giá
+
+42
+00:02:35,990 --> 00:02:39,120
+là 50 đô la.
+Và vào cuối mùa
+
+43
+00:02:39,120 --> 00:02:43,810
+Sydney phải loại bỏ những món hàng không bán được bằng cách bán lại cho một người buôn sỉ
+
+44
+00:02:43,810 --> 00:02:48,199
+với giá 15 đô mỗi bức
+ta sẽ dùng những thông tin này
+
+45
+00:02:48,199 --> 00:02:54,000
+để tính toán cấp độ dịch vụ phù hợp
+vậy ta đã biết là ta có thể bán 
+
+46
+00:02:54,000 --> 00:02:55,659
+một bức tượng với giá 50 đô la
+
+47
+00:02:55,659 --> 00:02:59,270
+đây là số tiền ta phải bỏ ra: 25 đô
+
+48
+00:02:59,270 --> 00:03:04,320
+để có được bức tượng và đến cuối mùa, giá tốt nhất có thể có cho mỗi bức tượng là 15 đô
+
+49
+00:03:04,319 --> 00:03:05,400
+fifteen dollars
+
+50
+00:03:05,400 --> 00:03:10,900
+đó là giá trị thu hồi của ta.
+Vậy lợi nhuận biên của ta là giá bán trừ đi giá mua
+
+51
+00:03:10,900 --> 00:03:14,860
+có nghĩa là 25 đô, và chi phí biên của ta
+
+52
+00:03:14,860 --> 00:03:19,640
+là giá mua trừ đi giá trị thu hồi, vậy ta có 10 đô
+
+53
+00:03:19,639 --> 00:03:25,109
+vậy cấp độ dịch vụ của ta sẽ bằng 25 chia cho 25+10
+
+54
+00:03:25,110 --> 00:03:30,299
+nghĩa là 25 chia cho 35, bằng 0.7143
+
+55
+00:03:30,299 --> 00:03:33,640
+vậy chúng ta không nhìn vào cấp độ dịch vụ ở mức 90%
+
+56
+00:03:33,639 --> 00:03:38,099
+thực tế ta đang nhìn vào cấp độ dịch vụ 71,43%
+
+57
+00:03:38,099 --> 00:03:41,939
+vậy nên có đôi chút khác biệt
+mỗi tổ chức sẽ phải tự tính toán
+
+58
+00:03:41,939 --> 00:03:44,269
+cấp độ dịch vụ phù hợp cho mình
+
+59
+00:03:44,269 --> 00:03:48,349
+và trong bài tới ta sẽ bắt đầu với
+
+60
+00:03:48,349 --> 00:03:51,379
+một vấn đề đang phát triển mạnh
+
+61
+00:03:51,379 --> 00:03:55,469
+trong phân tích hàng tồn kho
+ta sẽ đi từ lượng đặt hàng kinh tế (EOQ)
+
+62
+00:03:55,469 --> 00:03:56,229
+quantity
+
+63
+00:03:56,229 --> 00:03:59,409
+đến điểm đặt lại hàng trong tồn kho an toàn
+
+64
+00:03:59,409 --> 00:03:59,989
+Hẹn gặp lại các bạn!
+

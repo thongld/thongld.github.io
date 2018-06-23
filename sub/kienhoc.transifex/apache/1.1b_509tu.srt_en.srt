@@ -1,0 +1,284 @@
+0
+00:00:00,000 --> 00:00:00,580
+https://youtu.be/zZriVGvk6_A
+
+1
+00:00:00,580 --> 00:00:02,510
+ANTHONY JOSEPH: So what is Apache Spark?
+
+2
+00:00:02,510 --> 00:00:05,950
+Apache Spark is all about scalable, efficient analysis
+
+3
+00:00:05,950 --> 00:00:07,640
+of Big Data.
+
+4
+00:00:07,640 --> 00:00:10,810
+In this lecture, we'll talk about the analysis and Big Data
+
+5
+00:00:10,810 --> 00:00:12,910
+parts of that statement.
+
+6
+00:00:12,910 --> 00:00:15,080
+In the next lecture, we'll talk about how
+
+7
+00:00:15,080 --> 00:00:19,510
+Spark achieves its scalable and efficient operation.
+
+8
+00:00:19,510 --> 00:00:21,590
+So let's start with Big Data.
+
+9
+00:00:21,590 --> 00:00:23,480
+Where does Big Data come from?
+
+10
+00:00:23,480 --> 00:00:25,320
+Well, it's all around us.
+
+11
+00:00:25,320 --> 00:00:29,070
+Everything that you do online, well, someone could record.
+
+12
+00:00:29,070 --> 00:00:31,500
+The clicks that you make, the ads that you see,
+
+13
+00:00:31,500 --> 00:00:34,730
+any billing events, when you're watching a video, if you fast
+
+14
+00:00:34,730 --> 00:00:38,980
+forward, or pause, or stop that video, every request that you
+
+15
+00:00:38,980 --> 00:00:42,440
+make to a server, or every transaction that you perform,
+
+16
+00:00:42,440 --> 00:00:45,180
+or every network message that you send or receive,
+
+17
+00:00:45,180 --> 00:00:47,520
+or any faults that occur in the network,
+
+18
+00:00:47,520 --> 00:00:50,730
+in applications that you use, or on devices--
+
+19
+00:00:50,730 --> 00:00:53,600
+all of this information could be recorded.
+
+20
+00:00:53,600 --> 00:00:55,870
+This represents just the tip of the iceberg
+
+21
+00:00:55,870 --> 00:01:00,830
+in terms of the data that could be collected and then analyzed.
+
+22
+00:01:00,830 --> 00:01:03,570
+Big Data also comes from user generated content.
+
+23
+00:01:03,570 --> 00:01:06,750
+And this can be on the web or on mobile applications.
+
+24
+00:01:06,750 --> 00:01:10,010
+So from Facebook, or Instagram, or Yelp, or Twitter,
+
+25
+00:01:10,010 --> 00:01:14,130
+or TripAdvisor, or YouTube-- all of these applications
+
+26
+00:01:14,130 --> 00:01:18,430
+have user generated content, like posts and videos,
+
+27
+00:01:18,430 --> 00:01:21,370
+and pictures.
+
+28
+00:01:21,370 --> 00:01:24,200
+Another source of Big Data is health
+
+29
+00:01:24,200 --> 00:01:26,520
+and scientific computing.
+
+30
+00:01:26,520 --> 00:01:29,280
+So in scientific computing, the large hadron collider
+
+31
+00:01:29,280 --> 00:01:31,940
+is generating petabytes of data.
+
+32
+00:01:31,940 --> 00:01:35,300
+Similarly, in protein applications,
+
+33
+00:01:35,300 --> 00:01:40,610
+we're generating gigabytes, terabytes, petabytes of data.
+
+34
+00:01:40,610 --> 00:01:46,040
+Genome X is generating many petabytes of data.
+
+35
+00:01:46,040 --> 00:01:50,810
+Graph data also is a source of Big Data.
+
+36
+00:01:50,810 --> 00:01:52,550
+And there's lots of interesting data
+
+37
+00:01:52,550 --> 00:01:53,870
+that has a graph structure.
+
+38
+00:01:53,870 --> 00:01:57,160
+So social networks, your friends relationships,
+
+39
+00:01:57,160 --> 00:02:00,510
+telecommunication networks, computer networks,
+
+40
+00:02:00,510 --> 00:02:04,420
+road networks, collaborations, and relationships.
+
+41
+00:02:04,420 --> 00:02:06,700
+Some of these graphs can be absolutely huge.
+
+42
+00:02:06,700 --> 00:02:08,509
+So think about the Facebook user graph--
+
+43
+00:02:08,509 --> 00:02:10,220
+all of those friends relationships
+
+44
+00:02:10,220 --> 00:02:14,640
+across billions of users.
+
+45
+00:02:14,640 --> 00:02:18,380
+Another source of Big Data is web servers.
+
+46
+00:02:18,380 --> 00:02:21,610
+An Apache web server log generates a record
+
+47
+00:02:21,610 --> 00:02:25,660
+every time you access something on that web server.
+
+48
+00:02:25,660 --> 00:02:27,750
+In this class, in the second lab,
+
+49
+00:02:27,750 --> 00:02:31,340
+you'll actually analyze an Apache web server
+
+50
+00:02:31,340 --> 00:02:35,290
+from a NASA web server.
+
+51
+00:02:35,290 --> 00:02:38,050
+Machines also generate lots of information.
+
+52
+00:02:38,050 --> 00:02:41,440
+Every interaction that you do with an application
+
+53
+00:02:41,440 --> 00:02:46,980
+on a machine generates a record in a file.
+
+54
+00:02:46,980 --> 00:02:51,037
+The internet of things is also a source of Big Data.
+
+55
+00:02:51,037 --> 00:02:53,370
+Here's a project that we're doing here at Berkeley where
+
+56
+00:02:53,370 --> 00:02:57,840
+we're measuring the humidity, temperature, and light levels
+
+57
+00:02:57,840 --> 00:03:00,450
+at different levels of a Redwood tree.
+
+58
+00:03:00,450 --> 00:03:02,090
+We have lots of Redwood trees here.
+
+59
+00:03:02,090 --> 00:03:04,220
+And they actually are so big that they
+
+60
+00:03:04,220 --> 00:03:07,210
+create their own microclimate.
+
+61
+00:03:07,210 --> 00:03:08,820
+And so this is an example of where
+
+62
+00:03:08,820 --> 00:03:12,640
+we use internet connected sensors to capture information
+
+63
+00:03:12,640 --> 00:03:17,540
+about what's happening over time at different levels of a tree
+
+64
+00:03:17,540 --> 00:03:20,870
+to measure this microclimate.
+
+65
+00:03:20,870 --> 00:03:25,280
+Another source is RFID tags.
+
+66
+00:03:25,280 --> 00:03:27,840
+So examples are here in California we
+
+67
+00:03:27,840 --> 00:03:30,440
+use RFID tags to pay our tolls.
+
+68
+00:03:30,440 --> 00:03:33,840
+It's the fast track electronic toll collection system.
+
+69
+00:03:33,840 --> 00:03:36,920
+We also use the data that's collected from the transponders
+
+70
+00:03:36,920 --> 00:03:39,180
+for traffic reporting.
+

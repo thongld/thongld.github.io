@@ -1,0 +1,412 @@
+0
+00:00:00,000 --> 00:00:00,001
+khang_vgu
+
+1
+00:00:00,000 --> 00:00:00,940
+
+2
+00:00:00,940 --> 00:00:05,570
+DR. JONATHAN: bản chất của bộ thu và bộ phát
+universal là data được gửi nối tiếp nhau
+
+3
+00:00:05,570 --> 00:00:09,020
+...
+
+4
+00:00:09,020 --> 00:00:12,020
+nghĩa là chỉ 1 bit tại 1 thời điểm
+
+5
+00:00:12,020 --> 00:00:17,630
+điều kiện idle, bit high, là ở 3.3 V
+
+6
+00:00:17,630 --> 00:00:21,060
+khi cần gửi data 
+
+7
+00:00:21,060 --> 00:00:28,460
+nó sẽ bắt đầu với bit low, là 0 
+
+8
+00:00:28,460 --> 00:00:41,650
+và các biết được gửi đi 
+0, 1, 2, 3, 4, 5, 6, 7.
+
+9
+00:00:41,650 --> 00:00:43,460
+sau đó ta có bit stop 
+
+10
+00:00:43,460 --> 00:00:47,610
+
+11
+00:00:47,610 --> 00:00:50,350
+stop bit luôn ở trạng thái high
+
+12
+00:00:50,350 --> 00:00:57,560
+10 bits này gộp lại thành 1 khung 
+
+13
+00:00:57,560 --> 00:01:04,300
+...
+
+14
+00:01:04,300 --> 00:01:10,010
+giải mã 10 bits này là data 8 bits
+
+15
+00:01:10,010 --> 00:01:13,560
+ta cần quan tâm 1 cái nữa 
+
+16
+00:01:13,560 --> 00:01:16,525
+là thời gian cho mỗi bit 
+
+17
+00:01:16,525 --> 00:01:19,580
+
+18
+00:01:19,580 --> 00:01:23,280
+gọi là bit-time 
+
+19
+00:01:23,280 --> 00:01:27,470
+1 chia bit-time gọi là baud-rate
+
+20
+00:01:27,470 --> 00:01:32,950
+đó là tổng số bit truyền đi trong 1 giây
+
+21
+00:01:32,950 --> 00:01:38,090
+ở slide trước, ta nhớ, bộ phát của vi tính 
+thì được kết nối vào bộ thu của vi tính khác
+
+22
+00:01:38,090 --> 00:01:41,920
+...
+
+23
+00:01:41,920 --> 00:01:48,220
+vậy, dãy này đây tượng trưng cho bộ phát 
+
+24
+00:01:48,220 --> 00:01:54,870
+10 bits này là output từ bộ phát vào 
+sẽ input vào bộ thu 
+
+25
+00:01:54,870 --> 00:01:57,160
+giờ nhìn vào bộ phát
+
+26
+00:01:57,160 --> 00:02:00,970
+nó có thanh ghi dịch chuyển 10-bit 
+
+27
+00:02:00,970 --> 00:02:05,490
+nó kết nồi vào pin(TxD)  output để chuyển data 
+
+28
+00:02:05,490 --> 00:02:07,930
+có 10 bit ở đây 
+
+29
+00:02:07,930 --> 00:02:14,504
+bit start ra trước, rồi tới 0, 1, 2, 3, 4, 5, 6, 7.
+
+30
+00:02:14,504 --> 00:02:20,270
+cuối cùng là bit stop, nó = 1 
+
+31
+00:02:20,270 --> 00:02:23,100
+
+32
+00:02:23,100 --> 00:02:27,450
+10 bits sẽ được tài vào thanh ghi dịch chuyển
+
+33
+00:02:27,450 --> 00:02:34,180
+để thực hiện việc trên, phần mềm phải ghi vào
+thanh ghi data 
+
+34
+00:02:34,180 --> 00:02:37,120
+...
+
+35
+00:02:37,120 --> 00:02:40,630
+
+36
+00:02:40,630 --> 00:02:43,420
+thanh ghi data này có tên UART0
+
+37
+00:02:43,420 --> 00:02:46,020
+
+38
+00:02:46,020 --> 00:02:50,650
+nó có thể là thanh ghi data có số 0.....7
+
+39
+00:02:50,650 --> 00:02:54,100
+nó sẽ ghi vào thanh ghi này 
+
+40
+00:02:54,100 --> 00:02:59,840
+8 bit data này sẽ vào phần cứng Fisrt in, First out
+
+41
+00:02:59,840 --> 00:03:05,310
+nó là FIFO,
+ta gửi data vào thanh ghi dịch chuyển này
+
+42
+00:03:05,310 --> 00:03:11,450
+
+43
+00:03:11,450 --> 00:03:15,770
+DR. YERRABALLI: nghĩa là có 1 bộ đệm giữa\
+thanh ghi data và thanh ghi dịch chuyển  
+
+44
+00:03:15,770 --> 00:03:18,720
+thanh ghi dịch để gửi data ra ngoài 
+
+45
+00:03:18,720 --> 00:03:21,030
+...
+
+46
+00:03:21,030 --> 00:03:26,610
+DR. JONATHAN: yes, đây là bộ đệm 16 elements
+hoặc gọi là First in First out queue
+
+47
+00:03:26,610 --> 00:03:32,770
+nó cho phép phần mềm ghi data 
+vào bộ đệm này 
+
+48
+00:03:32,770 --> 00:03:35,100
+và nó dược truyền ra 1 bit 1 thời điểm 
+
+49
+00:03:35,100 --> 00:03:41,270
+có 1 flag ở thiết bị này mà phần mềm
+cần biết
+
+50
+00:03:41,270 --> 00:03:45,530
+nó là bộ phát  FIFO full fag(TXFF)
+
+51
+00:03:45,530 --> 00:03:55,460
+flag = 1 nếu FIFO đầy và không thể nhét 
+vào được nữa 
+
+52
+00:03:55,460 --> 00:04:00,320
+flag = 0 nếu nó vẫn chưa đầy và 
+phần mềm có thể ghi vào thanh ghi data 
+
+53
+00:04:00,320 --> 00:04:03,927
+...
+
+54
+00:04:03,927 --> 00:04:05,760
+DR YERRABALLI: nhìn đây
+
+55
+00:04:05,760 --> 00:04:10,260
+ở phía bộ thu, nó cũng như bộ phát 
+
+56
+00:04:10,260 --> 00:04:13,620
+...
+
+57
+00:04:13,620 --> 00:04:16,910
+có thanh ghi dịch chuyển
+
+58
+00:04:16,910 --> 00:04:28,360
+thanh ghi này có cùng size = 10 bit 
+
+59
+00:04:28,360 --> 00:04:33,100
+đây là start bit vào stop bit 
+
+60
+00:04:33,100 --> 00:04:35,940
+
+61
+00:04:35,940 --> 00:04:40,545
+độ lớn của dữ liệu là 8 bits 
+
+62
+00:04:40,545 --> 00:04:43,160
+
+63
+00:04:43,160 --> 00:04:50,150
+khi phần mềm muốn đọc data,
+
+64
+00:04:50,150 --> 00:04:56,400
+nó sẽ đọc trên thanh ghi data, gọi là UART0_DR_R
+
+65
+00:04:56,400 --> 00:05:03,070
+
+66
+00:05:03,070 --> 00:05:13,010
+số 0 này có là 0 ...7 cho từng loại UART
+
+67
+00:05:13,010 --> 00:05:15,570
+
+68
+00:05:15,570 --> 00:05:34,570
+ta có bộ thu FIFO với bộ đệm 16-element 
+
+69
+00:05:34,570 --> 00:05:40,080
+bộ thu thì khá phức tạp nếu so với bộ phát 
+
+70
+00:05:40,080 --> 00:05:43,845
+khi ta nhận data, 10 bits này 
+
+71
+00:05:43,845 --> 00:05:51,130
+data sẽ được chuyển thành payload 8 bits 
+
+72
+00:05:51,130 --> 00:05:59,290
+mỗi element ở đây đều có 8 bits cho data thô và
+4 cho các bits khác 
+
+73
+00:05:59,290 --> 00:06:04,130
+4 bits này cho xác định lỗi
+
+74
+00:06:04,130 --> 00:06:08,050
+ta có bit overrun error (OE)
+
+75
+00:06:08,050 --> 00:06:16,000
+a break error bit(BE), a frame error
+bit(FE), and a parity error bit(PE).
+
+76
+00:06:16,000 --> 00:06:20,930
+ta sẽ bỏ qua bit break error, bởi vì ta hiếm khi xài 
+
+77
+00:06:20,930 --> 00:06:23,790
+nhưng ta sẽ tìm hiểu về bit error overrun 
+
+78
+00:06:23,790 --> 00:06:27,920
+nên nhớ, đây là bộ đệm 16-element 
+
+79
+00:06:27,920 --> 00:06:35,720
+khi data được nhân, và nếu bộ phát gửi quá nhanh
+
+80
+00:06:35,720 --> 00:06:39,210
+nếu bộ đệm được xài hết,
+
+81
+00:06:39,210 --> 00:06:41,620
+bộ thu này se không có chỗ để đặt info
+
+82
+00:06:41,620 --> 00:07:04,390
+bit error overrun được đổi thành 1 để chỉ 
+bộ đếm đã đầy 
+
+83
+00:07:04,390 --> 00:07:08,460
+và vài khung sẽ bị mất 
+
+84
+00:07:08,460 --> 00:07:11,750
+...
+
+85
+00:07:11,750 --> 00:07:21,640
+gio ta dùng 1 flag khác gọi là
+bộ đệm buffer RXFE flag (để nhận)
+
+86
+00:07:21,640 --> 00:07:26,575
+nó là FIFO empty flag
+
+87
+00:07:26,575 --> 00:07:29,940
+
+88
+00:07:29,940 --> 00:07:33,030
+và bộ thu kiểm tra flag này nhiều lần 
+
+89
+00:07:33,030 --> 00:07:34,960
+...
+
+90
+00:07:34,960 --> 00:07:40,470
+khi flag này = 0, nghĩa là không có data 
+để chứa 
+
+91
+00:07:40,470 --> 00:07:45,940
+...
+
+92
+00:07:45,940 --> 00:07:51,240
+khi nó = 1, nghĩa là phải có 1 nhất 1 it data ở đây 
+
+93
+00:07:51,240 --> 00:07:54,150
+nên ta có thể tiêu thụ data
+
+94
+00:07:54,150 --> 00:08:02,480
+error khung là khi có sự không phù hợp 
+ở Baud-rate, Baud-rate error
+
+95
+00:08:02,480 --> 00:08:05,910
+nghĩa là bộ phát và bộ thu không được
+chuẩn hóa với cùng Baud-rate
+
+96
+00:08:05,910 --> 00:08:08,060
+...
+
+97
+00:08:08,060 --> 00:08:10,870
+
+98
+00:08:10,870 --> 00:08:13,290
+parity error là thứ của quá khứ
+
+99
+00:08:13,290 --> 00:08:15,170
+ta không xài nó nữa 
+
+100
+00:08:15,170 --> 00:08:20,238
+nó chỉ nằm đây trong protocol 
+
+101
+00:08:20,238 --> 00:08:20,737

@@ -1,0 +1,366 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/9JWIwDpCzjY
+
+1
+00:00:05,729 --> 00:00:08,638
+hellow again and welcome back operations
+management
+
+2
+00:00:08,638 --> 00:00:12,000
+in this session we'll be talking about
+statistical process control
+
+3
+00:00:12,000 --> 00:00:17,009
+one of the seven tools of quality
+statistical process control
+
+4
+00:00:17,009 --> 00:00:21,278
+also known as SPC is a way that we can
+monitor
+
+5
+00:00:21,278 --> 00:00:25,009
+a process we have particular standards
+in place
+
+6
+00:00:25,010 --> 00:00:28,830
+and then as the process is running we're
+going to take measurements
+
+7
+00:00:28,829 --> 00:00:32,439
+compare them against those standards and
+if necessary
+
+8
+00:00:32,439 --> 00:00:35,939
+we'll make corrective action and all this
+is happening
+
+9
+00:00:35,939 --> 00:00:41,409
+while the product or service is being
+produced this is part of what's known as
+
+10
+00:00:41,409 --> 00:00:41,769
+the
+
+11
+00:00:41,770 --> 00:00:45,100
+feedback control principle we have a
+process
+
+12
+00:00:45,100 --> 00:00:48,340
+we evaluate the performance collect
+information
+
+13
+00:00:48,340 --> 00:00:52,160
+and then make a decision as to whether
+we need to change the process
+
+14
+00:00:52,159 --> 00:00:57,000
+so it's a feedback loop we know that
+inside the process this's going to be
+
+15
+00:00:57,000 --> 00:00:57,640
+variations
+
+16
+00:00:57,640 --> 00:01:01,039
+you could either be normal
+variation or
+
+17
+00:01:01,039 --> 00:01:04,609
+abnormal variation and what we need
+to do is figure out
+
+18
+00:01:04,609 --> 00:01:10,689
+the differences between the two natural
+or normal variation
+
+19
+00:01:10,688 --> 00:01:14,889
+is to be expected every time a process is
+happening
+
+20
+00:01:14,890 --> 00:01:19,379
+and every time we produce a product this
+can be some slight difference between
+
+21
+00:01:19,379 --> 00:01:21,469
+one product to next product
+
+22
+00:01:21,469 --> 00:01:24,509
+if you think about when you sign your
+name
+
+23
+00:01:24,509 --> 00:01:27,549
+every time sign your name your signature
+looks
+
+24
+00:01:27,549 --> 00:01:30,618
+a little bit different and that's to be
+expected
+
+25
+00:01:30,618 --> 00:01:34,599
+that is natural variation what
+
+26
+00:01:34,599 --> 00:01:38,478
+isn't to be expected is what's known as
+assignable variation
+
+27
+00:01:38,478 --> 00:01:42,469
+let's say you're signing your name and
+somebody bang your elbow
+
+28
+00:01:42,469 --> 00:01:46,019
+and suddenly your signature looks a
+little bit different or
+
+29
+00:01:46,019 --> 00:01:50,459
+in some cases significantly different
+this is a variation
+
+30
+00:01:50,459 --> 00:01:53,599
+that can be traced to a particular cause
+
+31
+00:01:53,599 --> 00:01:56,839
+that's why it's called assignable you
+can assign
+
+32
+00:01:56,840 --> 00:02:00,140
+cause to it
+
+33
+00:02:00,140 --> 00:02:03,540
+in statistical process control what
+we're trying to do
+
+34
+00:02:03,540 --> 00:02:07,690
+is determined whether the variation is
+natural
+
+35
+00:02:07,689 --> 00:02:11,620
+or due to some sort of cause that we then
+have to go and correct
+
+36
+00:02:11,620 --> 00:02:17,360
+we use control charts which are
+graphical presentation updated over time
+
+37
+00:02:17,360 --> 00:02:21,890
+we have predetermined control limits so
+if variation exceed
+
+38
+00:02:21,889 --> 00:02:27,369
+ that control limit there's a problem
+if variation goes below
+
+39
+00:02:27,370 --> 00:02:32,490
+a lower level limit there's a problem but
+it's very easy to see
+
+40
+00:02:32,490 --> 00:02:36,909
+on a graph this is all based on
+
+41
+00:02:36,909 --> 00:02:41,500
+the central limit theorem if you recall
+from your basis statistics
+
+42
+00:02:41,500 --> 00:02:44,819
+you realize that when you have a
+population
+
+43
+00:02:44,819 --> 00:02:48,500
+and we take samples from their
+population we take the means of those
+
+44
+00:02:48,500 --> 00:02:49,340
+samples
+
+45
+00:02:49,340 --> 00:02:53,740
+that tends towards a sampling
+distribution of the mean
+
+46
+00:02:53,740 --> 00:02:58,000
+which is looking somewhat like a normal
+distribution
+
+47
+00:02:58,000 --> 00:03:01,729
+and so we use that when we setup our
+control limits
+
+48
+00:03:01,729 --> 00:03:05,679
+here we have the normal distribution
+
+49
+00:03:05,680 --> 00:03:09,750
+it a nice belt curve and if we're trying to
+capture as much
+
+50
+00:03:09,750 --> 00:03:13,349
+the natural variation as possible and
+most cases
+
+51
+00:03:13,349 --> 00:03:17,659
+we define those control limits to be three
+standard deviations
+
+52
+00:03:17,659 --> 00:03:21,949
+above the mean and three standard
+deviations below the mean
+
+53
+00:03:21,949 --> 00:03:25,939
+that means that we're capturing
+ninety-nine point
+
+54
+00:03:25,939 --> 00:03:30,889
+74 percent of all that natural variation
+that goes on in a process
+
+55
+00:03:30,889 --> 00:03:34,219
+so if something falls outside of those
+limits
+
+56
+00:03:34,219 --> 00:03:37,459
+we're pretty sure that it's due to an
+assignable cause
+
+57
+00:03:37,459 --> 00:03:40,909
+so let's take a look at a control chart
+
+58
+00:03:40,909 --> 00:03:44,209
+here we've captured means of samples
+
+59
+00:03:44,209 --> 00:03:48,860
+overtime there's a lot of variation
+there but right now we can't tell
+
+60
+00:03:48,860 --> 00:03:51,400
+whether that variation is natural
+
+61
+00:03:51,400 --> 00:03:55,170
+or that variation is due to
+particular causes
+
+62
+00:03:55,169 --> 00:03:58,739
+to now once we've added the normal
+distribution there
+
+63
+00:03:58,740 --> 00:04:03,090
+we can see where that normal
+distribution spreads
+
+64
+00:04:03,090 --> 00:04:06,189
+and if we take three standard deviations
+above
+
+65
+00:04:06,189 --> 00:04:10,870
+and below the mean we now have operand
+lower control limits
+
+66
+00:04:10,870 --> 00:04:15,560
+and we can see that most that variation
+actually falls
+
+67
+00:04:15,560 --> 00:04:20,019
+inside the control limits so that would be
+natural variation
+
+68
+00:04:20,019 --> 00:04:25,290
+but we also have three-point that fall
+outside of these control limits
+
+69
+00:04:25,290 --> 00:04:28,810
+this is what we would look for in terms
+of assignable
+
+70
+00:04:28,810 --> 00:04:31,899
+variation because it is now
+
+71
+00:04:31,899 --> 00:04:35,109
+beyond three standard deviations away
+from the mean
+
+72
+00:04:35,110 --> 00:04:38,250
+it is most likely due to an external
+costs
+
+73
+00:04:38,250 --> 00:04:42,730
+so that's generally what we do with
+control charts
+
+74
+00:04:42,730 --> 00:04:46,520
+in the next session we're gonna talk a
+little bit about inspection
+
+75
+00:04:46,519 --> 00:04:50,060
+and how we actually develop those
+control charts I'll see you then
+

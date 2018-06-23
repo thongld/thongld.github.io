@@ -1,0 +1,141 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/47E_7XvvDpo
+
+1
+00:00:00,000 --> 00:00:00,065
+
+2
+00:00:00,065 --> 00:00:01,940
+DR. JONATHAN VALVANO: Qua khoá học này,
+
+3
+00:00:01,940 --> 00:00:07,480
+tôi sẽ cho bạn 1 loạt video ngắn chỉ cách đọc data sheet.
+
+4
+00:00:07,480 --> 00:00:13,010
+Bởi vì lớp này chủ yếu xử lý input và output, trong video đầu tiên này,
+
+5
+00:00:13,010 --> 00:00:15,715
+tôi cho bạn thấy cách tìm IO pins.
+
+6
+00:00:15,715 --> 00:00:21,190
+
+7
+00:00:21,190 --> 00:00:24,770
+1 cách tiện lợi cho mỗi data sheet
+
+8
+00:00:24,770 --> 00:00:27,640
+là xài mục lục.
+
+9
+00:00:27,640 --> 00:00:31,500
+DR. RAMESH YERRABALLI: Hãy coi chương 10,
+
+10
+00:00:31,500 --> 00:00:35,211
+có thông tin của IO pin dùng chung.
+
+11
+00:00:35,211 --> 00:00:37,960
+DR. JONATHAN VALVANO: được rồi, tôi sẽ click ở đây.
+
+12
+00:00:37,960 --> 00:00:39,887
+và giờ ta đã tới chương 10.
+
+13
+00:00:39,887 --> 00:00:42,220
+DR. RAMESH YERRABALLI: Ta thấy ở trang này
+
+14
+00:00:42,220 --> 00:00:49,520
+nói là ta có 43 GPIO pin trên con vi điều khiển
+
+15
+00:00:49,520 --> 00:00:52,250
+và được xếp thành port.
+
+16
+00:00:52,250 --> 00:00:57,454
+là port A, B, C, D, E, và F.
+
+17
+00:00:57,454 --> 00:00:59,870
+DR. JONATHAN VALVANO: 1 câu nên hỏi
+
+18
+00:00:59,870 --> 00:01:02,320
+1 pin là gì?
+
+19
+00:01:02,320 --> 00:01:08,380
+Ta nên trở lại mục lục và tìm thông tin của pin.
+
+20
+00:01:08,380 --> 00:01:14,160
+DR. RAMESH YERRABALLI: ta sẽ thấy ở chương 22.
+
+21
+00:01:14,160 --> 00:01:16,950
+DR. JONATHAN VALVANO: vâng, chương 22.
+
+22
+00:01:16,950 --> 00:01:19,200
+DR. RAMESH YERRABALLI: Nó thường sẽ có giản đồ pin
+
+23
+00:01:19,200 --> 00:01:20,949
+DR. JONATHAN VALVANO: nên click vào đó.
+
+24
+00:01:20,949 --> 00:01:24,290
+Đây rồi, chương 22, ta thấy giản đồ pin.
+
+25
+00:01:24,290 --> 00:01:28,150
+Và đây là hình chụp của con vi điều khiển.
+
+26
+00:01:28,150 --> 00:01:31,120
+DR. RAMESH YERRABALLI: và ta thấy pin ở đây.
+
+27
+00:01:31,120 --> 00:01:34,610
+trong lab đầu tiên, ta có những pin này,
+
+28
+00:01:34,610 --> 00:01:38,800
+PF 1, 2, và 3 là những output.
+
+29
+00:01:38,800 --> 00:01:44,255
+Và PF 0 và PF 4 là những input.
+
+30
+00:01:44,255 --> 00:01:46,380
+DR. JONATHAN VALVANO: vậy câu trả lời là
+
+31
+00:01:46,380 --> 00:01:52,520
+1 pin là 1 tín hiệu kết nối từ vi điều khiển với
+
+32
+00:01:52,520 --> 00:01:54,557
+những thứ mà ta sẽ làm input và output.
+
+33
+00:01:54,557 --> 00:01:57,140
+DR. RAMESH YERRABALLI: và đây là layout
+
+34
+00:01:57,140 --> 00:01:58,980
+của chip.
+
+35
+00:01:58,980 --> 00:02:00,530
+DR. JONATHAN VALVANO: vâng.

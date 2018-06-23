@@ -1,0 +1,1079 @@
+1
+00:00:08,754 --> 00:00:13,074
+dungpham12002 18.07.2016 Thao reviewed
+Bây giờ ta sẽ đi từ SQL
+ta cần để tạo ra một bảng
+
+2
+00:00:13,074 --> 00:00:15,818
+đến việc nối nhiều bảng vào với nhau.
+
+3
+00:00:15,818 --> 00:00:20,430
+Đây thực sự mở ra tiềm năng rất lớn,
+nhưng nó cũng sẽ rất phức tạp.
+
+4
+00:00:20,430 --> 00:00:22,796
+Vậy cho đến bây giờ,
+mọi thứ vẫn rất đơn giản.
+
+5
+00:00:25,212 --> 00:00:28,858
+Khi bạn thành lập một công ty - ở đây
+ta giả sử bạn thành lập một công ty nhỏ
+
+6
+00:00:28,858 --> 00:00:31,160
+để phát triển ứng dụng
+quản lí âm nhạc chẳng hạn.
+
+7
+00:00:32,820 --> 00:00:33,640
+Khi bạn lập công ty,
+
+8
+00:00:33,640 --> 00:00:37,890
+và cần xây dựng ứng dụng, ta biết
+rất nhiều ứng dụng cần có cơ sở dữ liệu.
+
+9
+00:00:38,980 --> 00:00:42,100
+Và bạn sẽ cần thiết kế cơ sở
+dữ liệu cho ứng dụng của mình.
+
+10
+00:00:43,150 --> 00:00:46,010
+Thường thì đây sẽ là công việc
+của cả một tập thể
+
+11
+00:00:46,010 --> 00:00:46,750
+với nhiều người có kĩ năng.
+
+12
+00:00:46,750 --> 00:00:49,820
+Một số người sẽ làm về quyền hạn
+của người dùng đầu cuối,
+
+13
+00:00:49,820 --> 00:00:51,470
+vài người khác lại quan tâm đến
+hiệu suất ứng dụng, v.v..
+
+14
+00:00:51,470 --> 00:00:54,130
+Vậy với việc thiết kế cơ sở dữ liệu - 
+những gì tôi sắp cho bạn thấy
+
+15
+00:00:54,130 --> 00:00:58,700
+mới là bước đầu trong thiết kế cơ sở dữ liệu,
+nhưng là kiến thức căn bản có giá trị rất lớn.
+
+16
+00:00:58,700 --> 00:01:03,165
+Và những người thông minh nên
+dành thời gian cho công việc này.
+
+17
+00:01:03,165 --> 00:01:08,080
+Nó là một công việc
+đòi hỏi sự hợp tác rất lớn
+
+18
+00:01:08,080 --> 00:01:12,100
+và nếu như bạn nhìn vào
+thiết kế cơ sở dữ liệu cho ứng dụng,
+
+19
+00:01:12,100 --> 00:01:14,660
+ta thấy có những hình vẽ
+rất phức tạp, phải không?
+
+20
+00:01:14,660 --> 00:01:17,830
+Và trong những bức hình
+ta có ở đây,
+
+21
+00:01:17,830 --> 00:01:19,930
+về cơ bản, là gồm nhiều bảng.
+
+22
+00:01:19,930 --> 00:01:23,300
+Ở đây, đây, đây và đây
+đều là các bảng,
+
+23
+00:01:23,300 --> 00:01:27,070
+và loại cơ sở dữ liệu này
+là kiểu để dùng cho sự kiện,
+
+24
+00:01:27,070 --> 00:01:32,620
+chẳng hạn như đặt chỗ để đi
+dã ngoại tại công viên.
+
+25
+00:01:32,620 --> 00:01:35,950
+Người ta cần biết vào giờ nào,
+ai sẽ đến, hay ai đã đặt chỗ,
+
+26
+00:01:35,950 --> 00:01:37,047
+cùng với rất nhiều thứ khác.
+
+27
+00:01:37,047 --> 00:01:42,921
+Ta cũng có thể thấy cách
+các bảng này được liên kết với nhau,
+
+28
+00:01:42,921 --> 00:01:45,703
+bằng mỗi cái mũi tên nhỏ này.
+Ví dụ ta thấy đây là một bảng,
+
+29
+00:01:45,703 --> 00:01:49,782
+còn đây là các cột trong bảng, và
+có một số cột là các cột đặc biệt,
+
+30
+00:01:49,782 --> 00:01:53,760
+giúp thể hiện các mối quan hệ
+với các bảng khác.
+
+31
+00:01:53,760 --> 00:01:57,590
+Ta sẽ không tìm hiểu kĩ mọi thứ,
+nhưng bạn có thể đi tìm hiểu chi tiết một vài thứ
+
+32
+00:01:57,590 --> 00:02:01,360
+như ý nghĩa của mũi tên này,
+hay là cái này nghĩa là một và
+
+33
+00:02:01,360 --> 00:02:03,480
+cái này nghĩa là nhiều, v.v...
+
+34
+00:02:03,480 --> 00:02:08,310
+Và còn rất nhiều thứ cao siêu nữa
+mà ta sẽ tìm hiểu sau.
+
+35
+00:02:08,310 --> 00:02:12,140
+Nhưng ở đây, mục tiêu
+của ta là có được
+
+36
+00:02:12,140 --> 00:02:17,510
+hình dung về cách ta muốn lưu trữ dữ liệu
+của các ứng dụng trong cơ sở dữ liệu.
+
+37
+00:02:17,510 --> 00:02:21,410
+Đây sẽ trở thành lược đồ của ta;
+và nó cũng là contract.
+
+38
+00:02:22,780 --> 00:02:27,670
+Vậy ta đã làm một bảng
+với hai cột, đó là
+
+39
+00:02:27,670 --> 00:02:29,760
+một lược đồ và một contract, nhưng
+
+40
+00:02:29,760 --> 00:02:33,730
+bây giờ, ta sẽ tạo nhiều bảng
+với nhiều cột;
+
+41
+00:02:33,730 --> 00:02:38,800
+trong đó một số cột có nhiệm vụ
+kết nối từ một bảng sang một bảng khác.
+
+42
+00:02:38,800 --> 00:02:42,370
+Vậy nếu bạn đang xây dựng một
+ứng dụng lớn, bạn có thể bước vào phòng
+
+43
+00:02:42,370 --> 00:02:43,730
+và thấy một sơ đồ như thế này trên tường.
+
+44
+00:02:44,800 --> 00:02:49,130
+Rồi bạn quan sát và phải thốt lên: 'Hẳn là
+nó quan trọng và phức tạp lắm!'
+
+45
+00:02:50,208 --> 00:02:53,880
+Với ứng dụng này có lẽ
+
+46
+00:02:53,880 --> 00:02:58,250
+sẽ tốn rất nhiều năm thiết kế cẩn thận
+để đảm bảo rằng ứng dụng sẽ chạy tốt.
+
+47
+00:02:58,250 --> 00:03:00,794
+Nhưng về cơ bản, đây là -
+tôi không biết cái này là gì,
+
+48
+00:03:00,794 --> 00:03:04,090
+hình như là hệ thống bệnh án điện tử mở chăng? -
+tôi chỉ mượn ảnh này để nói nên không chắc.
+
+49
+00:03:05,590 --> 00:03:07,705
+Đây là cách mà dữ liệu
+được lưu trữ trong cơ sở dữ liệu.
+
+50
+00:03:07,705 --> 00:03:09,270
+Và chúng có thể trở nên rất phức tạp -
+
+51
+00:03:09,270 --> 00:03:15,190
+như dự án tôi đang thực hiện, tên là Sakai -
+nó có lẽ phải lớn gấp bốn lần cái này.
+
+52
+00:03:15,190 --> 00:03:20,200
+Dù không thể, nhưng nếu bạn phóng to
+ảnh này ra, bạn sẽ thấy đây chỉ là một cái bảng,
+
+53
+00:03:20,200 --> 00:03:22,830
+một vài cột và vài kết nối với bảng khác.
+
+54
+00:03:22,830 --> 00:03:25,660
+Ở đây ta cũng có một bảng..
+cái này lại khá phức tạp.
+
+55
+00:03:25,660 --> 00:03:30,390
+Đây cũng là một bảng, một vài cột
+và hai quan hệ với hai bảng khác.
+
+56
+00:03:30,390 --> 00:03:34,740
+Vậy nên đúng thế, nhìn bề ngoài
+thì nó rất phức tạp, nhưng
+
+57
+00:03:34,740 --> 00:03:40,670
+cuối cùng thì ta chỉ cần tìm xem
+mình cần tạo bảng nào, ta
+
+58
+00:03:40,670 --> 00:03:44,300
+sẽ đặt gì vào trong các bảng đó, và ta sẽ
+kết nối chúng như thế nào.
+
+59
+00:03:44,300 --> 00:03:48,650
+Và chính những liên kết là thứ
+khiến cho chúng trở nên rất hữu dụng.
+
+60
+00:03:48,650 --> 00:03:51,060
+Ta có thể nhập tất cả
+dữ liệu vào một file, tuy nhiên
+
+61
+00:03:51,060 --> 00:03:53,750
+ứng dụng của bạn lúc ấy
+sẽ chạy vô cùng chậm.
+
+62
+00:03:53,750 --> 00:03:58,050
+Và nếu bạn lựa chọn suy nghĩ kĩ
+về việc dữ liệu của bạn trông sẽ thế nào,
+
+63
+00:03:58,050 --> 00:03:59,140
+thì khi bạn xong việc, mọi thứ
+khác sẽ rất nhanh gọn.
+
+64
+00:04:00,580 --> 00:04:04,210
+Thông thường, ta không cần lo
+về tốc độ chạy của chương trình.
+
+65
+00:04:04,210 --> 00:04:05,910
+Nhưng đến khi scan dữ liệu,
+
+66
+00:04:05,910 --> 00:04:08,670
+đặc biệt là khi có nhiều dữ liệu,
+ta sẽ phải để tâm đến điều này.
+
+67
+00:04:10,300 --> 00:04:13,850
+Vậy ý tưởng chính là tìm ra
+phần dữ liệu bạn cần trình bày,
+
+68
+00:04:13,850 --> 00:04:17,310
+sau đó vẽ ra một bức tranh, cũng như
+sự liên kết giữa chúng, phải không?
+
+69
+00:04:17,310 --> 00:04:21,080
+Và một nguyên tắc cơ bản
+ta sẽ sử dụng là
+
+70
+00:04:21,080 --> 00:04:23,920
+ta sẽ không nhập 
+một chuỗi dữ liệu hai lần.
+
+71
+00:04:23,920 --> 00:04:30,390
+Giả sử, nếu ta có một cột gì đó,
+ta sẽ không nhập 'Chuck' hai lần.
+
+72
+00:04:30,390 --> 00:04:32,970
+Điều đó không ổn.
+
+73
+00:04:32,970 --> 00:04:36,579
+Vậy nếu trong một cột có
+hai chuỗi dữ liệu giống hệt nhau,
+
+74
+00:04:36,579 --> 00:04:37,462
+điều đó không ổn.
+
+75
+00:04:37,462 --> 00:04:40,102
+Điều bạn cần làm là khởi tạo
+một bảng mới,
+
+76
+00:04:40,102 --> 00:04:42,922
+nhập một lần 'Chuck' vào đây, và
+gán cho nó một con số, như 1 chẳng hạn. 
+
+77
+00:04:42,922 --> 00:04:47,511
+Sau đó gán 1, 1 vào đây để biểu thị
+rằng những thứ này thuộc về 'Chuck',
+
+78
+00:04:47,511 --> 00:04:52,740
+tức là bạn đang mô hình hóa dữ liệu
+qua quan hệ giữa một bảng và một bảng khác. 
+
+79
+00:04:52,740 --> 00:04:55,010
+Chúng ta sẽ học phần này
+vô cùng kĩ lưỡng.
+
+80
+00:04:55,010 --> 00:04:58,400
+Vậy ở đây, nguyên tắc là ta không
+nhập một chuỗi dữ liệu hai lần,
+
+81
+00:04:58,400 --> 00:05:00,140
+mà thay vào đó, ta sẽ dùng
+một quan hệ.
+
+82
+00:05:00,140 --> 00:05:02,964
+Một nguyên tắc khác là mô hình của ta
+cần dựa trên thế giới thực.
+
+83
+00:05:02,964 --> 00:05:06,754
+Vậy nếu bạn có người dùng, có các
+bản nhạc hay trang trại cây thông Giáng sinh v.v..,
+
+84
+00:05:06,754 --> 00:05:11,410
+bạn sẽ có một bảng cho các trang trại
+cây, rồi một bảng khác
+
+85
+00:05:11,410 --> 00:05:15,420
+cho các loại cây, tương tự như thế.
+
+86
+00:05:15,420 --> 00:05:19,470
+Và nhiều khi bạn bắt đầu
+xây dựng một ứng dụng và
+
+87
+00:05:19,470 --> 00:05:24,345
+giả sử công ty nhỏ của ta
+đang phát triển một ứng dụng
+
+88
+00:05:24,345 --> 00:05:26,650
+nhằm quản lí âm nhạc.
+
+89
+00:05:26,650 --> 00:05:31,130
+Công ty nhận thấy rằng mọi người
+không còn sử dụng album nhạc nữa, và
+
+90
+00:05:31,130 --> 00:05:33,797
+họ cũng chẳng hứng thú lắm 
+với việc mua cả một đĩa CD nhạc.
+
+91
+00:05:33,797 --> 00:05:37,100
+Vậy chúng ta sẽ bán riêng từng bài hát.
+Tôi nghĩ đây là một ý tưởng tuyệt vời,
+
+92
+00:05:37,100 --> 00:05:40,010
+và tôi nghĩ chúng ta sắp giàu đến nơi rồi.
+
+93
+00:05:40,010 --> 00:05:43,170
+Còn đây là giao diện người dùng
+tôi đã sáng chế,
+
+94
+00:05:43,170 --> 00:05:45,520
+hoặc là tôi đã chụp 
+của một nhà cung cấp dịch vụ khác.
+
+95
+00:05:45,520 --> 00:05:50,080
+Nhưng, dù thứ này là gì đi chăng nữa,
+nó là chương trình ta sẽ viết.
+
+96
+00:05:50,080 --> 00:05:52,970
+Ta sẽ viết một chương trình
+giúp tạo ra các bản nhạc.
+
+97
+00:05:52,970 --> 00:05:57,280
+Chỉ cần nhìn vào giao diện người dùng ở đây thôi,
+ta đã có thể nhìn thấy một số vấn đề.
+
+98
+00:05:57,280 --> 00:06:00,320
+Thông thường, nếu bạn thử
+biến nó thành một bảng tính,
+
+99
+00:06:00,320 --> 00:06:02,370
+sẽ có những vấn đề xảy ra.
+
+100
+00:06:02,370 --> 00:06:06,170
+Và vấn đề này liên quan đến việc
+trùng lặp dữ liệu trong các cột.
+
+101
+00:06:06,170 --> 00:06:09,400
+Điều đó nghĩa là mọi thứ đều ổn thỏa,
+
+102
+00:06:09,400 --> 00:06:14,040
+cho đến khi có tên một nghệ sĩ
+bị trùng lặp trong cột 'nghệ sĩ'.
+
+103
+00:06:14,040 --> 00:06:18,480
+Trùng lặp có thể chỉ một lần hoặc hàng trăm lần,
+bởi Black Sabbath đã viết hàng trăm
+
+104
+00:06:18,480 --> 00:06:23,070
+bản nhạc. Vấn đề cũng xuất hiện
+ở cột album.
+
+105
+00:06:23,070 --> 00:06:28,233
+Và mọi chuyện còn trở nên 
+tồi tệ hơn ở cột thể loại -
+
+106
+00:06:28,233 --> 00:06:32,297
+bởi có thể bạn phải nhập
+một chuỗi kí tự hàng tỉ lần.
+
+107
+00:06:32,297 --> 00:06:35,799
+Và nếu bạn đã từng viết các chương trình
+Python mà chạy xong rất nhanh,
+
+108
+00:06:35,799 --> 00:06:38,426
+đó là bởi vì bài tập tôi cho bạn
+mới chỉ là các bài tập nhỏ.
+
+109
+00:06:38,426 --> 00:06:41,760
+Nhưng khi bạn đang xử lí một triệu hay
+
+110
+00:06:41,760 --> 00:06:46,790
+một nghìn tỉ thứ, sự khác biệt giữa
+(dòng nhạc) metal và các số 2
+
+111
+00:06:46,790 --> 00:06:52,770
+được dùng để sao chép nó là rất lớn.
+
+112
+00:06:52,770 --> 00:06:58,270
+Bởi vì đây không phải lúc nào cũng là
+một chuỗi 5-6 kí tự, nó có thể
+
+113
+00:06:58,270 --> 00:07:04,170
+rất dài, nên trong dữ liệu, bạn cần 
+tính đến việc có các chuỗi rất dài.
+
+114
+00:07:04,170 --> 00:07:09,040
+Vậy vấn đề nằm ở việc trùng lặp dữ liệu.
+
+115
+00:07:09,040 --> 00:07:12,760
+Nhưng hóa ra trong phòng lúc này
+có một người làm về giao diện người dùng,
+
+116
+00:07:12,760 --> 00:07:16,950
+và ta nói với người đó rằng: 'Xin chào,
+tôi là chuyên gia về cơ sở dữ liệu.
+
+117
+00:07:16,950 --> 00:07:21,470
+Chúng tôi đã học một khóa học trên mạng và
+được dạy rằng dữ liệu không được trùng lặp',
+
+118
+00:07:21,470 --> 00:07:24,530
+thì người đó sẽ trả lời: 'Ồ không.
+
+119
+00:07:24,530 --> 00:07:26,750
+Chúng tôi đã làm khảo sát
+và thấy phần dữ liệu trùng lặp này
+
+120
+00:07:26,750 --> 00:07:29,510
+chính là thứ mà người dùng muốn có.'
+
+121
+00:07:31,000 --> 00:07:32,130
+Bạn không thể phản bác được điều đó.
+
+122
+00:07:32,130 --> 00:07:35,040
+Nếu đó là thứ người dùng muốn thấy,
+họ phải thấy có thứ đó.
+
+123
+00:07:36,190 --> 00:07:39,060
+Nhưng đồng thời ta vẫn phải
+viết một ứng dụng hiệu quả.
+
+124
+00:07:39,060 --> 00:07:42,970
+Và đây chính là lúc để làm một bài tập
+về mô hình hóa dữ liệu.
+
+125
+00:07:42,970 --> 00:07:47,129
+Trong đó, ta hỏi: 'Đây là phần dữ liệu
+ta muốn trình bày, còn kia là loại
+
+126
+00:07:47,129 --> 00:07:51,210
+giao diện người dùng ta muốn hỗ trợ,
+vậy làm sao để xây dựng một mô hình dữ liệu tốt?
+
+127
+00:07:51,210 --> 00:07:54,360
+Bạn không cần phải thay đổi
+giao diện người dùng để cải thiện nó,
+
+128
+00:07:54,360 --> 00:07:58,670
+bạn cần thay đổi mô hình dữ liệu
+để trình bày dữ liệu,
+
+129
+00:07:58,670 --> 00:08:03,580
+và xây dựng nó sao cho giao diện 
+người dùng giống y như ý muốn của người dùng.
+
+130
+00:08:04,720 --> 00:08:09,810
+Vậy ý tưởng là bạn sẽ nhìn vào
+phần dữ liệu mà ứng dụng của bạn sẽ quản lí,
+
+131
+00:08:09,810 --> 00:08:11,050
+và ta có các cột ở đây;
+
+132
+00:08:11,050 --> 00:08:16,000
+bạn cần xác định xem cột này có
+đại diện cho một thứ có thực không.
+
+133
+00:08:16,000 --> 00:08:18,200
+Hay nó chỉ là một thuộc tính
+của một vật?
+
+134
+00:08:18,200 --> 00:08:22,970
+Có thể là một thứ và các thuộc tính của nó,
+hoặc hai thứ tách biệt.
+
+135
+00:08:22,970 --> 00:08:27,455
+Vậy điều ta sẽ làm bây giờ là
+xem tất cả các cột
+
+136
+00:08:27,455 --> 00:08:30,660
+và giả sử ta đang có tranh luận.
+
+137
+00:08:30,660 --> 00:08:35,240
+Hãy hình dung bạn đang trong phòng
+hội thảo, và ta đang ngồi xung quanh bàn.
+
+138
+00:08:35,240 --> 00:08:38,550
+Rồi ta sẽ vẽ một sơ đồ,
+
+139
+00:08:38,550 --> 00:08:40,130
+nó có các ô và các hàng, đúng không?
+
+140
+00:08:40,130 --> 00:08:41,360
+Ta sẽ vẽ một sơ đồ gồm các ô
+
+141
+00:08:41,360 --> 00:08:45,300
+và đường, nhưng bây giờ
+vẫn chưa có gì được vẽ.
+
+142
+00:08:45,300 --> 00:08:51,000
+Thường thì câu hỏi đầu tiên trong những
+buổi họp như thế này là 'Ta nên bắt đầu từ đâu?'
+
+143
+00:08:51,000 --> 00:08:54,587
+Bởi bạn có rất nhiều thứ phải xử lí.
+Nhưng với ví dụ của ta thì nó lại khá đơn giản.
+
+144
+00:08:54,587 --> 00:08:58,250
+Thực tế là việc bạn bắt đầu ở đâu
+không quá quan trọng.
+
+145
+00:08:58,250 --> 00:09:00,960
+Kể cả khi bạn không bắt đầu đúng chỗ,
+bạn vẫn có một mạng lưới
+
+146
+00:09:00,960 --> 00:09:04,960
+thông tin - tất cả đều liên kết với nhau -
+và mọi việc sẽ ổn nếu bạn làm đúng.
+
+147
+00:09:04,960 --> 00:09:07,940
+Nhưng việc vẽ sơ đồ sẽ đơn giản hơn
+nếu bạn bắt đầu ở đúng chỗ.
+
+148
+00:09:07,940 --> 00:09:12,580
+Tôi được dạy rằng: để bắt đầu ở đúng chỗ,
+ta phải xác định được
+
+149
+00:09:12,580 --> 00:09:17,010
+thứ quan trọng nhất trong
+ứng dụng này.
+
+150
+00:09:17,010 --> 00:09:20,796
+Nếu được miêu tả ứng dụng 
+bằng một câu thì đó là gì?
+
+151
+00:09:20,796 --> 00:09:26,087
+Với ứng dụng này thì nó
+là một ứng dụng quản lí các bản nhạc.
+
+152
+00:09:26,087 --> 00:09:29,844
+Nó không quản lí album, nghệ sĩ,
+
+153
+00:09:29,844 --> 00:09:33,250
+hay thể loại nhạc.
+Mà nó quản lí các bản nhạc.
+
+154
+00:09:33,250 --> 00:09:35,610
+Và chúng ta có thể thấy điều đó
+trong giao diện người dùng.
+
+155
+00:09:35,610 --> 00:09:40,860
+Ta thấy mỗi dòng ở đây ứng với một bản nhạc,
+làm cho việc quản lí dễ dàng hơn.
+
+156
+00:09:40,860 --> 00:09:44,490
+Vậy bảng đầu tiên ta sẽ làm
+là bảng các bản nhạc.
+
+157
+00:09:44,490 --> 00:09:48,793
+Sau khi ta đã lập bảng các bản nhạc, ta sẽ
+nhìn vào các thứ còn lại
+
+158
+00:09:48,793 --> 00:09:52,005
+và nghĩ xem những thứ nào
+có thể tự trở thành một bảng
+
+159
+00:09:52,005 --> 00:09:55,046
+và những thứ nào chỉ là
+thuộc tính của bản nhạc (track).
+
+160
+00:09:55,046 --> 00:09:58,049
+Ta thấy có những thứ như các con số,
+
+161
+00:09:58,049 --> 00:10:01,857
+hay ngôi sao cũng chỉ là con số, ở đây là 5.
+Các bài hát này đều được đánh giá 5 sao.
+
+162
+00:10:01,857 --> 00:10:06,890
+Hẳn là tôi yêu ghét khá rõ ràng.
+Còn đây là số lượt nghe.
+
+163
+00:10:06,890 --> 00:10:11,592
+Bạn sẽ nhận ra rằng chúng
+
+164
+00:10:11,592 --> 00:10:13,410
+đều là một phần của một bản nhạc.
+
+165
+00:10:13,410 --> 00:10:17,040
+Bây giờ ta sẽ xét ba thứ không phải
+là một phần của bản nhạc bởi
+
+166
+00:10:17,040 --> 00:10:20,838
+chúng có các dữ liệu bị trùng lặp,
+đó là dấu hiệu cho thấy chúng không thuộc bản nhạc.
+
+167
+00:10:20,838 --> 00:10:25,715
+Vậy, sẽ có ai đó lên bảng, chọn một chỗ viết
+rồi nói rằng: 'Đó là bảng đầu tiên của ta.
+
+168
+00:10:25,715 --> 00:10:30,620
+Nó là bảng về bản nhạc và sẽ bao gồm
+đánh giá, độ dài và số lượt nghe.'
+
+169
+00:10:30,620 --> 00:10:34,440
+Tôi nghĩ là nên có cả tên của bản nhạc
+trong cột này nữa, nên
+
+170
+00:10:34,440 --> 00:10:36,470
+ta sẽ có thêm trường 'tên bản nhạc'.
+
+171
+00:10:36,470 --> 00:10:39,810
+Vậy phần đó ổn rồi, đúng không?
+Ta đã giải quyết xong phần đó.
+
+172
+00:10:39,810 --> 00:10:42,260
+Một câu hỏi nữa là, cái gì
+sẽ được kết nối với nó?
+
+173
+00:10:43,280 --> 00:10:47,378
+Nói cách khác thì tiếp theo,
+ta cần phải vẽ cái gì?
+
+174
+00:10:47,378 --> 00:10:52,557
+Ta thấy bản nhạc có thể
+được liên kết với nghệ sĩ,
+
+175
+00:10:52,557 --> 00:10:57,960
+hay được liên kết với album; ta sẽ
+chọn album, vì album có nhiều bản nhạc.
+
+176
+00:10:57,960 --> 00:11:01,258
+Vậy việc tiếp theo ta sẽ làm là
+làm một bảng album.
+
+177
+00:11:01,258 --> 00:11:04,750
+Hiện tại ta chỉ đang vẽ trên bảng thôi
+chứ chưa viết code vội.
+
+178
+00:11:04,750 --> 00:11:06,190
+Trên bảng, ta sẽ ghi rằng
+
+179
+00:11:06,190 --> 00:11:11,490
+bản nhạc thuộc album. Còn album
+thuộc về gì thì rất đơn giản,
+
+180
+00:11:11,490 --> 00:11:14,130
+chúng đương nhiên thuộc về
+các nhóm nhạc.
+
+181
+00:11:14,130 --> 00:11:17,120
+Nếu như bạn là chuyên gia về âm nhạc,
+bạn sẽ hiểu rằng ta đang đơn giản hóa quá mức,
+
+182
+00:11:17,120 --> 00:11:20,300
+lí lẽ như vậy hoàn toàn chấp nhận được
+nếu như bạn đang lập một công ty;
+
+183
+00:11:20,300 --> 00:11:23,580
+nhưng ta sẽ giả sử rằng thế giới này rất đơn giản;
+trong đó bản nhạc thuộc về album,
+
+184
+00:11:23,580 --> 00:11:25,190
+còn album thuộc về các nghệ sĩ.
+
+185
+00:11:25,190 --> 00:11:27,360
+Vậy buổi họp của chúng ta sắp xong rồi.
+
+186
+00:11:27,360 --> 00:11:32,350
+Ta đã giải quyết xong các phần
+nghệ sĩ, album và bản nhạc,
+
+187
+00:11:32,350 --> 00:11:33,050
+và ta đã vẽ một sơ đồ.
+
+188
+00:11:33,050 --> 00:11:36,190
+Câu hỏi bây giờ là,
+'Thể loại' sẽ thuộc về gì?
+
+189
+00:11:36,190 --> 00:11:37,540
+'Thể loại' sẽ được kết nối với cái gì?
+
+190
+00:11:37,540 --> 00:11:42,550
+Liệu thể loại liên kết với một album?
+
+191
+00:11:42,550 --> 00:11:45,360
+Liệu nó liên kết tới một nghệ sĩ?
+
+192
+00:11:45,360 --> 00:11:46,840
+Hay liệu nó liên kết với một bản nhạc?
+
+193
+00:11:48,890 --> 00:11:53,870
+Người dùng có thể sẽ muốn chuyển thể loại
+một bản nhạc trong iTunes của mình.
+
+194
+00:11:55,160 --> 00:11:57,640
+Đổi nó thành 'easy listening' chẳng hạn.
+
+195
+00:11:59,530 --> 00:12:05,440
+Nếu như thể loại
+
+196
+00:12:05,440 --> 00:12:07,650
+được liên kết với album,
+
+197
+00:12:07,650 --> 00:12:12,307
+chương trình sẽ lập tức đổi tất cả
+những bài này sang 'easy listening'
+
+198
+00:12:12,307 --> 00:12:16,900
+bởi trong trường hợp này, thể loại
+là một thuộc tính của một album.
+
+199
+00:12:16,900 --> 00:12:17,920
+Nếu ta liên kết thể loại
+
+200
+00:12:17,920 --> 00:12:21,838
+với nghệ sĩ thì tất cả các bài của AC/DC
+sẽ bị chuyển thành thể loại 'easy listening'.
+
+201
+00:12:21,838 --> 00:12:23,729
+Nếu nó là một thuộc tính của bản nhạc,
+
+202
+00:12:23,729 --> 00:12:26,320
+thì sẽ chỉ có bài này
+đổi thành 'easy listening'.
+
+203
+00:12:26,320 --> 00:12:30,880
+Vậy ta cần hỏi, 'Nếu bạn vào hệ thống
+và thay đổi cái này,
+
+204
+00:12:32,730 --> 00:12:37,110
+liệu tất cả những thứ này có bị đổi do 
+được liên kết với album hay nghệ sĩ không?'
+
+205
+00:12:37,110 --> 00:12:39,790
+Bạn có thể dừng video
+và thử tìm hiểu, nhưng
+
+206
+00:12:39,790 --> 00:12:45,500
+tôi sẽ nói luôn - nếu bạn làm vậy,
+sẽ có mỗi cái này bị thay đổi.
+
+207
+00:12:45,500 --> 00:12:49,520
+Vậy trong buổi họp,
+ta đang tranh luận về vấn đề này.
+
+208
+00:12:49,520 --> 00:12:51,490
+Người thì nghĩ nó phải ở chỗ này,
+người thì nghĩ phải là chỗ khác.
+
+209
+00:12:51,490 --> 00:12:52,280
+Và bạn sẽ nói: 'Nhưng nếu
+
+210
+00:12:52,280 --> 00:12:55,650
+ta làm như thế này,
+nó sẽ bị thay đổi.'
+
+211
+00:12:55,650 --> 00:12:57,180
+Và người làm về giao diện người dùng
+sẽ nói: 'Không, không được.
+
+212
+00:12:57,180 --> 00:13:00,990
+Ta không thể kết nối thể loại với
+album bởi điều đó sẽ làm
+
+213
+00:13:00,990 --> 00:13:04,150
+người dùng tức giận với ta, và ta sẽ
+không kiếm được nhiều tiền'.
+
+214
+00:13:04,150 --> 00:13:06,800
+Vậy sau khi mọi thứ đã giải quyết xong
+thì mọi người cũng tranh luận xong.
+
+215
+00:13:06,800 --> 00:13:10,950
+Bạn mất lâu hơn một chút để
+tranh luận về phần cuối, bởi đó là phần khó,
+
+216
+00:13:10,950 --> 00:13:16,130
+để kết luận rằng thể loại là thuộc tính
+của bản nhạc, và nó phải như vậy.
+
+217
+00:13:16,130 --> 00:13:18,560
+Vậy đây là một ví dụ nhỏ, đơn giản
+
+218
+00:13:18,560 --> 00:13:23,872
+về cách mô hình dữ liệu tạo ra
+các tính năng của một ứng dụng.
+
+219
+00:13:23,872 --> 00:13:26,170
+Khi ta bắt đầu, ta thấy được 
+bức tranh toàn cảnh là
+
+220
+00:13:26,170 --> 00:13:30,890
+những gì có trong mô hình dữ liệu
+sẽ quyết định những gì ứng dụng có thể làm.
+
+221
+00:13:31,920 --> 00:13:36,830
+Vậy ta cần phải tạo mô hình dữ liệu đúng,
+nếu ta muốn mọi thứ trở nên hiệu quả.
+
+222
+00:13:36,830 --> 00:13:42,580
+Vậy bây giờ ta đã có sơ đồ này
+trên tường trong phòng hội thảo,
+
+223
+00:13:42,580 --> 00:13:47,660
+đến lúc nào đó, ta sẽ phải biến nó thành 
+một cơ sở dữ liệu, một cấu trúc cơ sở dữ liệu.
+
+224
+00:13:47,660 --> 00:13:51,190
+Ta sẽ tìm cách làm sao để
+
+225
+00:13:51,190 --> 00:13:55,330
+biến sơ đồ logic ta vừa vẽ
+thành một bức tranh thực,
+
+226
+00:13:55,330 --> 00:13:57,990
+giống hệt cách ta sẽ trình bày
+phần dữ liệu trong cơ sở dữ liệu.

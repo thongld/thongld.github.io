@@ -1,0 +1,692 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/rkIahRTD9oI
+
+1
+00:00:00,500 --> 00:00:02,355
+Welcome to week two of SC1x.
+
+2
+00:00:02,355 --> 00:00:03,980
+And what we're going to do in this week
+
+3
+00:00:03,980 --> 00:00:06,810
+is we're going to dive into forecasting a little deeper.
+
+4
+00:00:06,810 --> 00:00:11,770
+And the keyword for this week is time series.
+
+5
+00:00:11,770 --> 00:00:15,460
+So we're going to use different time series techniques to do
+
+6
+00:00:15,460 --> 00:00:16,480
+better forecasting.
+
+7
+00:00:16,480 --> 00:00:18,400
+So this is our second week where we started
+
+8
+00:00:18,400 --> 00:00:20,117
+talking about forecasting.
+
+9
+00:00:20,117 --> 00:00:21,700
+So the first thing you want to realize
+
+10
+00:00:21,700 --> 00:00:23,616
+when you look at demand, because that's really
+
+11
+00:00:23,616 --> 00:00:25,250
+what we're going to be forecasting,
+
+12
+00:00:25,250 --> 00:00:27,220
+the assumption here for time series
+
+13
+00:00:27,220 --> 00:00:29,020
+is that they follow patterns.
+
+14
+00:00:29,020 --> 00:00:31,252
+And there are certain patterns that are out there,
+
+15
+00:00:31,252 --> 00:00:33,710
+and there are four patterns that we're going to talk about.
+
+16
+00:00:33,710 --> 00:00:36,160
+The first one is level that we call
+
+17
+00:00:36,160 --> 00:00:38,740
+a, and that just assumes that there's some level,
+
+18
+00:00:38,740 --> 00:00:41,680
+there's some base level of demand.
+
+19
+00:00:41,680 --> 00:00:46,750
+The next is known as trend, and this is a persistent change
+
+20
+00:00:46,750 --> 00:00:49,660
+in demand over time.
+
+21
+00:00:49,660 --> 00:00:51,550
+Now, it can be this is a positive trend.
+
+22
+00:00:51,550 --> 00:00:53,540
+I could also have a negative trend.
+
+23
+00:00:53,540 --> 00:00:54,880
+It doesn't matter.
+
+24
+00:00:54,880 --> 00:00:56,830
+But it's persistent and it's linear.
+
+25
+00:00:56,830 --> 00:00:58,900
+It's a linear trend.
+
+26
+00:00:58,900 --> 00:01:02,050
+Then another pattern that we see is
+
+27
+00:01:02,050 --> 00:01:04,239
+something called seasonality, and this
+
+28
+00:01:04,239 --> 00:01:07,930
+is where you see a repeating pattern over time.
+
+29
+00:01:07,930 --> 00:01:11,290
+And we call this-- we use the letter f for this.
+
+30
+00:01:11,290 --> 00:01:12,040
+Different seasons.
+
+31
+00:01:12,040 --> 00:01:15,670
+Now, we say seasonality, but that doesn't mean it's spring,
+
+32
+00:01:15,670 --> 00:01:17,290
+summer, fall, winter.
+
+33
+00:01:17,290 --> 00:01:19,850
+It could be, but it could be the months of the year.
+
+34
+00:01:19,850 --> 00:01:21,520
+It could be days of the week have
+
+35
+00:01:21,520 --> 00:01:22,960
+their different seasonality.
+
+36
+00:01:22,960 --> 00:01:24,670
+It could be hours of the day that
+
+37
+00:01:24,670 --> 00:01:26,020
+have different seasonality.
+
+38
+00:01:26,020 --> 00:01:29,290
+So it's just over any time a repeating pattern, not
+
+39
+00:01:29,290 --> 00:01:31,220
+necessarily a year.
+
+40
+00:01:31,220 --> 00:01:34,295
+And then the last one we'll talking about is randomness.
+
+41
+00:01:34,295 --> 00:01:36,670
+And we're going to call that-- it's really an error term,
+
+42
+00:01:36,670 --> 00:01:37,930
+and we'll talk about that.
+
+43
+00:01:37,930 --> 00:01:39,910
+But we know from our previous classes
+
+44
+00:01:39,910 --> 00:01:43,930
+that's just where you have some kind of random nature here.
+
+45
+00:01:43,930 --> 00:01:47,220
+So we have these four patterns, really these three patterns,
+
+46
+00:01:47,220 --> 00:01:48,640
+that we're going to focus on.
+
+47
+00:01:48,640 --> 00:01:50,015
+And what we're going to do is try
+
+48
+00:01:50,015 --> 00:01:52,909
+to fit those to make some forecasts.
+
+49
+00:01:52,909 --> 00:01:54,700
+And the way we're going to make a forecast,
+
+50
+00:01:54,700 --> 00:01:57,310
+the way we're going to milk that, is we're going to say,
+
+51
+00:01:57,310 --> 00:02:00,070
+my forecast for demand-- that's what the little hat is-- it
+
+52
+00:02:00,070 --> 00:02:04,260
+means it's an estimate or a forecast sitting in time period
+
+53
+00:02:04,260 --> 00:02:08,590
+t-- that's today-- making my forecast for t
+
+54
+00:02:08,590 --> 00:02:12,880
+plus one-- that means tomorrow or the next period--
+
+55
+00:02:12,880 --> 00:02:14,626
+and we want to find what that is.
+
+56
+00:02:14,626 --> 00:02:16,000
+And we're going to find that it's
+
+57
+00:02:16,000 --> 00:02:21,940
+a function of all those different patterns-- the level,
+
+58
+00:02:21,940 --> 00:02:25,720
+the trend, the seasonality, the error, and a bunch
+
+59
+00:02:25,720 --> 00:02:27,340
+of other things.
+
+60
+00:02:27,340 --> 00:02:29,476
+So we're going to use different functional forms,
+
+61
+00:02:29,476 --> 00:02:30,850
+different models, and we're going
+
+62
+00:02:30,850 --> 00:02:32,683
+to make different assumptions, and that will
+
+63
+00:02:32,683 --> 00:02:35,530
+allow us to make forecasts.
+
+64
+00:02:35,530 --> 00:02:37,679
+OK, so let's start with the simplest models.
+
+65
+00:02:37,679 --> 00:02:39,220
+We'll talk more about these in class,
+
+66
+00:02:39,220 --> 00:02:42,900
+but the simplest ones-- first one is known as a cumulative.
+
+67
+00:02:42,900 --> 00:02:46,240
+And in a cumulative model, my forecast
+
+68
+00:02:46,240 --> 00:02:49,210
+sitting in today for the next period,
+
+69
+00:02:49,210 --> 00:02:54,760
+t plus 1-- t, t plus 1-- is equal to all the other demands
+
+70
+00:02:54,760 --> 00:02:56,770
+where x is the random variable of demand that
+
+71
+00:02:56,770 --> 00:02:59,770
+happens in that period, so xi is the demand that
+
+72
+00:02:59,770 --> 00:03:02,050
+happened in period i.
+
+73
+00:03:02,050 --> 00:03:04,790
+So for the cumulative, I'm going to sum those all up from i
+
+74
+00:03:04,790 --> 00:03:07,750
+equals 1 to my current period, t, today.
+
+75
+00:03:07,750 --> 00:03:10,390
+So I'm going all the way back to today,
+
+76
+00:03:10,390 --> 00:03:13,290
+and I'm going to divide that by t.
+
+77
+00:03:13,290 --> 00:03:15,850
+That should look very familiar.
+
+78
+00:03:15,850 --> 00:03:16,660
+It's an average.
+
+79
+00:03:16,660 --> 00:03:19,118
+That's all that the cumulative is doing-- saying everything
+
+80
+00:03:19,118 --> 00:03:22,150
+in the past matters equally, and I'm going to take half of that.
+
+81
+00:03:22,150 --> 00:03:24,650
+I'm going to take an average of that.
+
+82
+00:03:24,650 --> 00:03:27,110
+Now, at the opposite extreme is the naive.
+
+83
+00:03:27,110 --> 00:03:30,460
+And for naive, we say that the estimate sitting
+
+84
+00:03:30,460 --> 00:03:34,060
+in today for the demand for the next period
+
+85
+00:03:34,060 --> 00:03:38,320
+is going to be equal to what happened today.
+
+86
+00:03:38,320 --> 00:03:39,770
+So this is just the opposite.
+
+87
+00:03:39,770 --> 00:03:42,340
+This is what was last is next.
+
+88
+00:03:42,340 --> 00:03:44,590
+What happens tomorrow is what happened today.
+
+89
+00:03:44,590 --> 00:03:46,690
+So this uses no history.
+
+90
+00:03:46,690 --> 00:03:48,490
+This uses all the history.
+
+91
+00:03:48,490 --> 00:03:50,260
+So you can see these are kind of bookends
+
+92
+00:03:50,260 --> 00:03:52,014
+at how you can do forecasting.
+
+93
+00:03:52,014 --> 00:03:53,680
+And now there's one that's in the middle
+
+94
+00:03:53,680 --> 00:03:57,200
+here that's called a moving average,
+
+95
+00:03:57,200 --> 00:03:59,350
+which, as you would expect, makes a lot of sense.
+
+96
+00:03:59,350 --> 00:04:01,570
+And what do we do here?
+
+97
+00:04:01,570 --> 00:04:04,360
+Instead of going all the way back to the beginning of time,
+
+98
+00:04:04,360 --> 00:04:06,850
+I go back m periods.
+
+99
+00:04:06,850 --> 00:04:08,350
+How far back do I go?
+
+100
+00:04:08,350 --> 00:04:13,330
+And I only go from equals t minus m up to t.
+
+101
+00:04:13,330 --> 00:04:16,089
+So I might go back a moving average of four periods.
+
+102
+00:04:16,089 --> 00:04:18,279
+I go back four, and I do the average of those four
+
+103
+00:04:18,279 --> 00:04:20,000
+or average of 12.
+
+104
+00:04:20,000 --> 00:04:21,850
+So moving average is kind of something
+
+105
+00:04:21,850 --> 00:04:24,965
+in between these two extremes.
+
+106
+00:04:24,965 --> 00:04:26,590
+Now, we're going to spend a lot of time
+
+107
+00:04:26,590 --> 00:04:29,950
+on this last one known as exponential smoothing
+
+108
+00:04:29,950 --> 00:04:32,860
+because this really makes it interesting because this does
+
+109
+00:04:32,860 --> 00:04:34,850
+a lot of interesting stuff.
+
+110
+00:04:34,850 --> 00:04:37,820
+So if I look at cumulative and naive forecasts,
+
+111
+00:04:37,820 --> 00:04:42,110
+let's think about how it weights the older observations.
+
+112
+00:04:42,110 --> 00:04:45,230
+So in this chart down here, I've got on the vertical axis
+
+113
+00:04:45,230 --> 00:04:48,400
+the weight of each observation, and these are periods of time
+
+114
+00:04:48,400 --> 00:04:50,090
+as I go back in time.
+
+115
+00:04:50,090 --> 00:04:53,680
+This is today, t. t minus 1 is last period, two periods ago,
+
+116
+00:04:53,680 --> 00:04:57,190
+three periods ago, four periods ago, and so forth.
+
+117
+00:04:57,190 --> 00:04:59,940
+So if I look at the cumulative, it
+
+118
+00:04:59,940 --> 00:05:03,300
+treats each of these the same.
+
+119
+00:05:03,300 --> 00:05:07,440
+I'm just going to take an average of every observation.
+
+120
+00:05:07,440 --> 00:05:10,490
+Now, if I look at the naive, if I do the naive, what does
+
+121
+00:05:10,490 --> 00:05:11,300
+it do?
+
+122
+00:05:11,300 --> 00:05:14,300
+It treats the one, the most recent, 100%
+
+123
+00:05:14,300 --> 00:05:17,220
+and the rest of them at 0.
+
+124
+00:05:17,220 --> 00:05:19,900
+So you can kind of see where they're different.
+
+125
+00:05:19,900 --> 00:05:21,630
+But the question you might be asking
+
+126
+00:05:21,630 --> 00:05:24,960
+is, why do I treat something like this cumulative one
+
+127
+00:05:24,960 --> 00:05:27,420
+four periods ago with the same weight as yesterday?
+
+128
+00:05:27,420 --> 00:05:29,940
+Shouldn't yesterday or last period count more?
+
+129
+00:05:29,940 --> 00:05:32,610
+Isn't the more recent information more important
+
+130
+00:05:32,610 --> 00:05:33,360
+to me?
+
+131
+00:05:33,360 --> 00:05:35,520
+And that's what exponential smoothing does.
+
+132
+00:05:35,520 --> 00:05:41,280
+It essentially says the weight is a function of how recent
+
+133
+00:05:41,280 --> 00:05:42,660
+that data is.
+
+134
+00:05:42,660 --> 00:05:44,396
+And so it uses this smoothing function--
+
+135
+00:05:44,396 --> 00:05:46,770
+and we'll talk about this in the lectures and derive it--
+
+136
+00:05:46,770 --> 00:05:48,600
+it's actually a geometric smoothing,
+
+137
+00:05:48,600 --> 00:05:50,550
+but we call it exponential smoothing.
+
+138
+00:05:50,550 --> 00:05:52,500
+And so what this ends up being is
+
+139
+00:05:52,500 --> 00:05:57,480
+that my forecast sitting for today for the time period
+
+140
+00:05:57,480 --> 00:06:00,150
+t plus-- I'm going to go tau-- that
+
+141
+00:06:00,150 --> 00:06:02,420
+means tau periods in the future-- one, two,
+
+142
+00:06:02,420 --> 00:06:05,520
+three-- so I could forecast tomorrow and tau
+
+143
+00:06:05,520 --> 00:06:08,850
+would be one, or two, or three-- it's forecasting how far I
+
+144
+00:06:08,850 --> 00:06:10,032
+want to go in the future.
+
+145
+00:06:10,032 --> 00:06:11,490
+And we're saying that's going to be
+
+146
+00:06:11,490 --> 00:06:14,010
+equal to the smoothing factor.
+
+147
+00:06:14,010 --> 00:06:16,650
+We're going to call it alpha.
+
+148
+00:06:16,650 --> 00:06:21,000
+And we're going to multiply that by my information
+
+149
+00:06:21,000 --> 00:06:25,670
+that I have most recent, my most recent observation of demand,
+
+150
+00:06:25,670 --> 00:06:29,720
+plus 1 minus that alpha times what?
+
+151
+00:06:29,720 --> 00:06:36,510
+My most recent forecast, and that's x-hat t minus 1 of t.
+
+152
+00:06:36,510 --> 00:06:39,310
+What did I forecast yesterday for today?
+
+153
+00:06:39,310 --> 00:06:41,370
+What I'm doing here-- let me just highlight this
+
+154
+00:06:41,370 --> 00:06:43,650
+because this is really critical--
+
+155
+00:06:43,650 --> 00:06:48,970
+I'm creating a balance between the new information
+
+156
+00:06:48,970 --> 00:06:51,064
+and the old information.
+
+157
+00:06:51,064 --> 00:06:52,730
+And so that's what exponential smoothing
+
+158
+00:06:52,730 --> 00:06:55,070
+does that these other methods do not.
+
+159
+00:06:55,070 --> 00:06:59,540
+It treats the age of the observation of the data
+
+160
+00:06:59,540 --> 00:07:00,470
+differently.
+
+161
+00:07:00,470 --> 00:07:02,570
+And so exponential smoothing is widely used.
+
+162
+00:07:02,570 --> 00:07:04,010
+It's in all of the packages, so I
+
+163
+00:07:04,010 --> 00:07:05,551
+want to make sure you understand this
+
+164
+00:07:05,551 --> 00:07:08,930
+very well because you're able to not only weight it
+
+165
+00:07:08,930 --> 00:07:12,410
+according to age, you're able to incorporate all these trends.
+
+166
+00:07:12,410 --> 00:07:14,744
+For this week, we'll just start with level and trend.
+
+167
+00:07:14,744 --> 00:07:16,160
+But in the next weeks, we'll start
+
+168
+00:07:16,160 --> 00:07:18,304
+adding in seasonality and other things.
+
+169
+00:07:18,304 --> 00:07:20,720
+All right, so this is what we're going to cover this week.
+
+170
+00:07:20,720 --> 00:07:23,720
+It's a lot of stuff diving deep into forecasting.
+
+171
+00:07:23,720 --> 00:07:26,870
+So watch the videos, do the recitations,
+
+172
+00:07:26,870 --> 00:07:29,650
+work the quick questions of practice problems.
+

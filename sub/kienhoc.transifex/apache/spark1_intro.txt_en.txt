@@ -1,0 +1,22 @@
+BerkeleyX: CS105x Introduction to Apache Spark
+
+Spark is rapidly becoming the compute engine of choice for big data. Spark programs are more concise and often run 10-100 times faster than Hadoop MapReduce jobs. As companies realize this, Spark developers are becoming increasingly valued.
+
+This statistics and data analysis course will teach you the basics of working with Spark and will provide you with the necessary foundation for diving deeper into Spark. You’ll learn about Spark's architecture and programming model, including commonly used APIs. After completing this course, you’ll be able to write and debug basic Spark applications. This course will also explain how to use Spark’s web user interface (UI), how to recognize common coding errors, and how to proactively prevent errors. The focus of this course will be Spark Core and Spark SQL.
+
+This course covers advanced undergraduate-level material. It requires a programming background and experience with Python (or the ability to learn it quickly). All exercises will use PySpark (the Python API for Spark), but previous experience with Spark or distributed computing is NOT required.
+
+The production of this course would not have been possible without the generous contribution of Databricks company.
+
+What you'll learn
+1. Basic Spark architecture
+2. Common operations
+3. How to avoid coding mistakes
+4. How to debug your Spark program
+
+Instructor: Anthony D. Joseph
+
+Professor in Electrical Engineering and Computer Science
+University of California, Berkeley
+
+Anthony D. Joseph is a Professor in Electrical Engineering and Computer Science at UC Berkeley. He received his B.S., S.M., and Ph.D. Degrees in Computer Science from MIT. He joined the UC Berkeley faculty in 1998, where he is developing adaptive techniques for: cloud computing, network and computer security, and security defenses for machine learning-based decision systems. He also co-leads the DETERlab testbed, a secure scalable testbed for conducting cybersecurity research, and he is a Technical Advisor at Databricks.

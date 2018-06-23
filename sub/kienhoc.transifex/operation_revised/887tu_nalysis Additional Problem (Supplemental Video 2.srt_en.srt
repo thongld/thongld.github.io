@@ -1,0 +1,332 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/hENmgX6bTvc
+
+1
+00:00:05,000 --> 00:00:09,879
+hello again and welcome back to operations
+management in this session we're going
+
+2
+00:00:09,879 --> 00:00:14,669
+to talk about capacity analysis and I
+have an additional problem for you
+
+3
+00:00:14,669 --> 00:00:19,740
+several people contacted me asking for
+additional problems in different areas
+
+4
+00:00:19,740 --> 00:00:26,480
+and this is one of them so let's get
+started in this problem we're dealing
+
+5
+00:00:26,480 --> 00:00:32,480
+with a group of people who are building
+charity food boxes so they are a local
+
+6
+00:00:32,480 --> 00:00:37,500
+charity that makes up food boxes for the
+elderly volunteers are only available
+
+7
+00:00:37,500 --> 00:00:42,259
+for five hours a day four days a week
+but they want to make a hundred and
+
+8
+00:00:42,259 --> 00:00:47,649
+fifty boxes each week there are three
+components to making a food box they
+
+9
+00:00:47,649 --> 00:00:53,250
+have to select the canned goods they
+have to pack the good into the box and
+
+10
+00:00:53,250 --> 00:00:59,840
+seal and stack the box there are two
+volunteers assigned to each task now you
+
+11
+00:00:59,840 --> 00:01:05,390
+can see the amount of time required for
+each of these activities and now based
+
+12
+00:01:05,390 --> 00:01:06,759
+on this information
+
+13
+00:01:06,759 --> 00:01:11,849
+what is the process capacity per day can
+they meet their target of a hundred
+
+14
+00:01:11,849 --> 00:01:14,239
+fifty boxes per week
+
+15
+00:01:14,239 --> 00:01:19,048
+what is the current bottleneck of this
+operation and if you assume that every
+
+16
+00:01:19,049 --> 00:01:24,790
+volunteer is capable of doing every job
+how would you reassign the volunteers and
+
+17
+00:01:24,790 --> 00:01:30,210
+what is your new process capacity
+per day so what we're going to do is
+
+18
+00:01:30,209 --> 00:01:36,039
+walk through this problem and you can
+see that these are the key pieces of
+
+19
+00:01:36,040 --> 00:01:42,140
+information they are available five
+hours a day four days a week so this
+
+20
+00:01:42,140 --> 00:01:44,829
+helps us figure out our time available
+
+21
+00:01:44,828 --> 00:01:50,469
+our goal is a hundred and fifty boxes we
+have the time required which is the 
+
+22
+00:01:50,469 --> 00:01:50,780
+unit
+
+23
+00:01:50,780 --> 00:01:55,500
+load for each one of the resource pools
+we have a resouce pool for selecting
+
+24
+00:01:55,500 --> 00:02:02,078
+the canned goods one for packing the goods
+and one for sealing and stacking boxes and we
+
+25
+00:02:02,078 --> 00:02:06,349
+have how many resources that are
+available in each poor there's two
+
+26
+00:02:06,349 --> 00:02:08,360
+volunteers for each task
+
+27
+00:02:08,360 --> 00:02:15,310
+so now we're going to put it into a grid
+so that we can analyze the capacity so
+
+28
+00:02:15,310 --> 00:02:19,140
+we have a resource pools the unit load
+an hour
+
+29
+00:02:19,139 --> 00:02:24,789
+the time available per person per day
+which was given as five hours per day we
+
+30
+00:02:24,789 --> 00:02:30,389
+have two volunteers for each of the
+resources and they work four days a week
+
+31
+00:02:30,389 --> 00:02:34,279
+so what we're going to be doing is going
+to be calculating the total time
+
+32
+00:02:34,280 --> 00:02:39,890
+available per day then the effective
+capacity per day and then the effective
+
+33
+00:02:39,889 --> 00:02:47,329
+capacity per week so when we look at the
+total time per day we have 2 resources
+
+34
+00:02:47,330 --> 00:02:53,850
+2 volunteers working five hours a day
+so there's ten hours available for each
+
+35
+00:02:53,849 --> 00:02:59,969
+of the resource pools so when we
+calculate the effective capacity per day we
+
+36
+00:02:59,969 --> 00:03:02,000
+take the time available
+
+37
+00:03:02,000 --> 00:03:07,379
+divided by the time needed which is a
+unit load and we can see that selecting
+
+38
+00:03:07,379 --> 00:03:12,989
+canned goods yield 28.57 boxes per day
+
+39
+00:03:12,989 --> 00:03:19,009
+83.33 for packing and 40 for sealing and
+stacking but that's per day and we're
+
+40
+00:03:19,009 --> 00:03:24,250
+trying to meet a hundred and fifty in a
+week and they work four days a week so
+
+41
+00:03:24,250 --> 00:03:28,919
+we're just going to multiply the effective
+capacity per day by the four days a week
+
+42
+00:03:28,919 --> 00:03:37,159
+so we can see our smallest number of
+boxes per week is in the selecting
+
+43
+00:03:37,159 --> 00:03:44,009
+canned goods we can only do 
+114.28 so that
+
+44
+00:03:44,009 --> 00:03:52,048
+is our bottleneck right there so answer
+to her question based on this
+
+45
+00:03:52,049 --> 00:03:58,760
+information what is a process capacity
+per day it's 28.57 boxes can they meet
+
+46
+00:03:58,759 --> 00:04:05,090
+their target of 150 cannot and our
+current bottleneck is selected canned
+
+47
+00:04:05,090 --> 00:04:12,019
+goods now the last one was if we assume
+that every volunteer is capable of doing
+
+48
+00:04:12,019 --> 00:04:16,950
+every job how'd you reassigned the
+volunteers and what is your new process
+
+49
+00:04:16,949 --> 00:04:20,149
+capacity per day so let's take a look at
+this
+
+50
+00:04:20,149 --> 00:04:26,389
+this we have excess capacity and that
+excess capacity is in the area of
+
+51
+00:04:26,389 --> 00:04:32,449
+packing goods notice it more than double
+our intended 150 because it's
+
+52
+00:04:32,449 --> 00:04:37,949
+over 300 so since we're over double
+their what if we move one of the
+
+53
+00:04:37,949 --> 00:04:43,120
+resource units one volunteer from
+packing goods and move it to selecting
+
+54
+00:04:43,120 --> 00:04:49,970
+canned good and when we do that and we
+recalculated our effective capacity per
+
+55
+00:04:49,970 --> 00:04:56,120
+day and then our boxes per week we see
+that now we can meet that hundred and
+
+56
+00:04:56,120 --> 00:05:01,129
+fifty requirement we have a hundred
+seventy-one in selecting canned goods
+
+57
+00:05:01,129 --> 00:05:07,418
+166.67 in packing goods and our 
+sealing and stacking box
+
+58
+00:05:07,418 --> 00:05:12,709
+is a hundred and sixty now we look at
+this we realize that our bottleneck has
+
+59
+00:05:12,709 --> 00:05:17,680
+now moved it's no longer selecting
+canned goods it is now seal and stack
+
+60
+00:05:17,680 --> 00:05:25,189
+boxes so by moving one person from the
+packing to the selecting we reduce the
+
+61
+00:05:25,189 --> 00:05:31,569
+excess capacity from packing and added
+it to the bottleneck so that yielded an
+
+62
+00:05:31,569 --> 00:05:36,908
+overall effective capacity of 40 per day
+because we have a new bottleneck in the
+
+63
+00:05:36,908 --> 00:05:43,110
+seal and stack and we have a weekly
+capacity of 160 so one of the big things
+
+64
+00:05:43,110 --> 00:05:48,620
+about capacity analysis is once we
+identify the bottleneck and see whether
+
+65
+00:05:48,620 --> 00:05:54,329
+we have excess capacity we can move that
+excess capacity over to the bottleneck
+
+66
+00:05:54,329 --> 00:06:01,439
+to be able to increase their overall
+throughput it'll be another operations
+
+67
+00:06:01,439 --> 00:06:06,209
+supplemental problem in capacity analysis and I
+hope to see you for that one
+

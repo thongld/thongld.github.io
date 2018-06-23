@@ -1,0 +1,396 @@
+0
+00:00:04,989 --> 00:00:06,450
+Welcome back.
+https://youtu.be/2qFCzkX01GQ
+1
+00:00:06,450 --> 00:00:09,180
+What we are going to to do is we are going to look at now,
+
+2
+00:00:09,180 --> 00:00:12,550
+application of what we were talking about.
+
+3
+00:00:12,550 --> 00:00:14,210
+Trying to value rainforest.
+
+4
+00:00:15,280 --> 00:00:20,035
+Rainforest, cashflows have been estimated, we are focused on cost of capital.
+
+5
+00:00:20,035 --> 00:00:22,410
+We make an assumption, no debt.
+
+6
+00:00:22,410 --> 00:00:26,710
+Turns out, you&#39;ll see when we go to Amazon, Amazon has no debt.
+
+7
+00:00:26,710 --> 00:00:29,240
+We&#39;ll just assume a rainforest also has no debt.
+
+8
+00:00:30,490 --> 00:00:35,670
+If that&#39;s the case, then we know that return on equity, which we&#39;ll
+
+9
+00:00:35,670 --> 00:00:41,100
+use CAPM to estimate in a second, will also be equal to return on assets,
+
+10
+00:00:41,100 --> 00:00:47,350
+nothing to worry about debt and that becomes your cost of capital.
+
+11
+00:00:47,350 --> 00:00:50,640
+Why Amazon&#39;s return on asset becomes your cost of capital?
+
+12
+00:00:52,280 --> 00:00:53,880
+Let&#39;s go back to the basics.
+
+13
+00:00:53,880 --> 00:00:57,500
+The investor is gonna compare you to Amazon before giving you the money.
+
+14
+00:00:58,520 --> 00:01:00,040
+So what are the elements of capital?
+
+15
+00:01:00,040 --> 00:01:06,328
+Risk-free rate, plus the risk premium times beta of Amazon.
+
+16
+00:01:06,328 --> 00:01:09,950
+I&#39;m on Finance.yahoo.com, thanks to Sean.
+
+17
+00:01:10,990 --> 00:01:15,233
+And the first thing I would like to highlight is that look at that 10 year
+
+18
+00:01:15,233 --> 00:01:18,101
+bond, you&#39;ll see a 10 year bond right there.
+
+19
+00:01:20,653 --> 00:01:25,730
+And that means it&#39;s like Treasury bill bond, 10 years.
+
+20
+00:01:25,730 --> 00:01:28,930
+And that&#39;s the standard practice,
+
+21
+00:01:28,930 --> 00:01:32,560
+is that you are using a 10 year treasury bond to measure risk-free rate.
+
+22
+00:01:32,560 --> 00:01:34,490
+Why 10 year?
+
+23
+00:01:34,490 --> 00:01:39,070
+Because you wanna use long term rather than short term because the project is
+
+24
+00:01:39,070 --> 00:01:43,290
+likely to be a long term thing, rather than say for example daily trading.
+
+25
+00:01:44,420 --> 00:01:45,710
+So what&#39;s the number over there?
+
+26
+00:01:45,710 --> 00:01:53,234
+In my case it happens to be about 1.587.
+
+27
+00:01:53,234 --> 00:01:56,550
+I&#39;m now going to go to third decimal.
+
+28
+00:01:56,550 --> 00:01:58,120
+So let&#39;s assume 1.58.
+
+29
+00:01:58,120 --> 00:02:01,360
+By the way, that number is what?
+
+30
+00:02:01,360 --> 00:02:03,700
+If you hold a treasury bond for ten years,
+
+31
+00:02:03,700 --> 00:02:07,330
+you&#39;re going to likely get an annual return of about 1.58%.
+
+32
+00:02:07,330 --> 00:02:09,140
+That&#39;s what it says.
+
+33
+00:02:10,139 --> 00:02:13,570
+But let&#39;s go to getting beta.
+
+34
+00:02:13,570 --> 00:02:21,050
+Before we go to beta, and while I do it, I&#39;ll press AMZN and go looking for it.
+
+35
+00:02:22,630 --> 00:02:23,200
+And yeah.
+
+36
+00:02:23,200 --> 00:02:27,230
+Before we go to beta, remember, that yesterday we were, we had gone on.
+
+37
+00:02:27,230 --> 00:02:29,190
+I mean, last time we had gone on Amazon and
+
+38
+00:02:29,190 --> 00:02:33,290
+seen that the zero debt assumption is not that drastically different.
+
+39
+00:02:33,290 --> 00:02:36,960
+The total market value is about 350 plus billion.
+
+40
+00:02:36,960 --> 00:02:38,600
+And the debt was around 17.
+
+41
+00:02:38,600 --> 00:02:39,940
+So, we are okay.
+
+42
+00:02:39,940 --> 00:02:41,960
+I just want to be more real, right?
+
+43
+00:02:43,130 --> 00:02:45,370
+Now, what about the risk premium?
+
+44
+00:02:45,370 --> 00:02:49,065
+So the RF we know, 1.58, what is the risk premium?
+
+45
+00:02:50,852 --> 00:02:54,640
+We have to rely on a very reliable number.
+
+46
+00:02:56,420 --> 00:02:58,820
+And we cannot predict the future.
+
+47
+00:02:58,820 --> 00:03:02,700
+Luckily for the risk free rate, I can tell you the next ten year rate because it&#39;s
+
+48
+00:03:02,700 --> 00:03:04,980
+risk free if you know it today.
+
+49
+00:03:04,980 --> 00:03:06,030
+So well, what would we do?
+
+50
+00:03:06,030 --> 00:03:07,180
+We go to the past.
+
+51
+00:03:07,180 --> 00:03:11,270
+And the number that we use is around 5%.
+
+52
+00:03:11,270 --> 00:03:13,030
+I&#39;m making the judgment call.
+
+53
+00:03:13,030 --> 00:03:15,750
+Even today people are using 7% in textbooks.
+
+54
+00:03:15,750 --> 00:03:20,210
+I think that&#39;s living in la-la land, because that&#39;s not a realistic number for
+
+55
+00:03:20,210 --> 00:03:21,260
+the future.
+
+56
+00:03:21,260 --> 00:03:25,960
+So we know 1.58, we know 5, what is the only number left to calculate?
+
+57
+00:03:27,640 --> 00:03:29,890
+The beta of Amazon.
+
+58
+00:03:29,890 --> 00:03:32,470
+Turns out you don&#39;t need to go very far.
+
+59
+00:03:32,470 --> 00:03:38,440
+It&#39;s so popular now it&#39;s reported here at 1.68.
+
+60
+00:03:38,440 --> 00:03:42,400
+Now when you&#39;re watching, you&#39;re on the same page, just go to the right column.
+
+61
+00:03:42,400 --> 00:03:43,522
+It&#39;s listed there.
+
+62
+00:03:43,522 --> 00:03:46,766
+It&#39;s that powerful a measure.
+
+63
+00:03:46,766 --> 00:03:51,230
+However, caution, the Yahoo.Finance probably
+
+64
+00:03:51,230 --> 00:03:56,220
+requires only 24 months of data to estimate it, does it in a simple fashion.
+
+65
+00:03:56,220 --> 00:04:02,270
+Therefore, as I said earlier, try to use professional services, learn statistics,
+
+66
+00:04:02,270 --> 00:04:07,970
+learn to get it better, and improve on the CAPM model as the real world is doing.
+
+67
+00:04:07,970 --> 00:04:09,327
+So let&#39;s run with 1.68.
+
+68
+00:04:09,327 --> 00:04:10,820
+So what am I going to do?
+
+69
+00:04:14,610 --> 00:04:17,692
+5% multiplied by 1.68.
+
+70
+00:04:17,692 --> 00:04:22,478
+5% multiplied by 1.68, and I will add to that 1.58.
+
+71
+00:04:22,478 --> 00:04:28,017
+5% times 1.68 and I&#39;ll add to that 1.58 and
+
+72
+00:04:28,017 --> 00:04:33,433
+your answer if I&#39;m kind of done it, I&#39;ve scribbled
+
+73
+00:04:33,433 --> 00:04:38,400
+some numbers here, should be close to 10%.
+
+74
+00:04:38,400 --> 00:04:42,640
+I believe it to be something like 9.96.
+
+75
+00:04:42,640 --> 00:04:46,230
+So it turns out the textbook assumptions are making things simple.
+
+76
+00:04:46,230 --> 00:04:49,220
+Let&#39;s assume it&#39;s about 10%.
+
+77
+00:04:49,220 --> 00:04:50,393
+So what does 10% become?
+
+78
+00:04:50,393 --> 00:04:54,710
+10% becomes the return on assets that people will
+
+79
+00:04:54,710 --> 00:05:00,620
+expect from rainforest, assuming it&#39;s very similar to Amazon.
+
+80
+00:05:00,620 --> 00:05:05,540
+So if your IRR is greater than 10%, people will give you the money.
+
+81
+00:05:06,960 --> 00:05:09,640
+If your expected IRR is less, no.
+
+82
+00:05:09,640 --> 00:05:12,878
+But the better calculation to do is NPV.
+
+83
+00:05:12,878 --> 00:05:17,240
+If at 10%, the NPV of your cash flows.
+
+84
+00:05:17,240 --> 00:05:21,650
+I mean, if the present value of your cash flows is what they&#39;ll evaluate,
+
+85
+00:05:21,650 --> 00:05:22,490
+relative to.
+
+86
+00:05:24,130 --> 00:05:25,670
+What Amazon has done.
+
+87
+00:05:25,670 --> 00:05:31,460
+But the relative part is present values were happening by definition,
+
+88
+00:05:31,460 --> 00:05:36,050
+because you&#39;re going to Amazon to figure out your cost of capital.
+
+89
+00:05:36,050 --> 00:05:38,240
+I hope this was useful to you.
+
+90
+00:05:38,240 --> 00:05:41,400
+I hope we have captured cost of capital.
+
+91
+00:05:41,400 --> 00:05:47,770
+And the next big module in this in this particular project analysis
+
+92
+00:05:47,770 --> 00:05:53,960
+is what I would call wrapping things up or the first peak at valuation.
+
+93
+00:05:53,960 --> 00:05:56,800
+Because I don&#39;t want to leave you with just with figuring out cost of
+
+94
+00:05:56,800 --> 00:05:59,150
+capital with no cash flows.
+
+95
+00:05:59,150 --> 00:06:03,980
+I want to wrap it around, and then you can do more detailed
+
+96
+00:06:03,980 --> 00:06:06,916
+courses on financing and put it all together.
+
+97
+00:06:06,916 --> 00:06:10,731
+See you soon.
+
+98
+00:06:10,731 --> 00:06:11,870
+Bye.
+

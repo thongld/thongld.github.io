@@ -1,0 +1,277 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/4XuVDdLqKrI
+
+1
+00:00:00,000 --> 00:00:01,791
+DR. JONATHAN VALVANO:
+Professor Yerraballi,
+
+2
+00:00:01,791 --> 00:00:04,130
+what are we going to learn today?
+
+3
+00:00:04,130 --> 00:00:08,230
+DR. RAMESH YERRABALLI: Today we're going
+to see how computers can take stimuli
+
+4
+00:00:08,230 --> 00:00:13,920
+from the external analog world and
+store them digitally in the computer.
+
+5
+00:00:13,920 --> 00:00:15,440
+So take an example.
+
+6
+00:00:15,440 --> 00:00:22,610
+Here's an example of a volume knob
+in a rotational form or as a slider.
+
+7
+00:00:22,610 --> 00:00:25,280
+
+8
+00:00:25,280 --> 00:00:29,030
+What's essentially happening
+here is that the position
+
+9
+00:00:29,030 --> 00:00:31,540
+is a variable resistance.
+
+10
+00:00:31,540 --> 00:00:35,160
+So if we can convert this
+variable resistance to say,
+
+11
+00:00:35,160 --> 00:00:39,060
+voltages between some
+range, 0 to 3 volts, 3.3
+
+12
+00:00:39,060 --> 00:00:43,100
+volts, then we can take
+that voltage and store it
+
+13
+00:00:43,100 --> 00:00:49,400
+inside a computer as 12-bit number
+using an analog-to-digital converter.
+
+14
+00:00:49,400 --> 00:00:51,910
+DR. JONATHAN VALVANO:
+That means that any signal
+
+15
+00:00:51,910 --> 00:00:55,215
+that we can convert into
+a voltage could then
+
+16
+00:00:55,215 --> 00:00:58,000
+be entered into the
+computer with the A-to-D.
+
+17
+00:00:58,000 --> 00:00:58,520
+DR. RAMESH YERRABALLI: That is correct.
+
+18
+00:00:58,520 --> 00:01:00,790
+DR. JONATHAN VALVANO: Let
+me show you some examples.
+
+19
+00:01:00,790 --> 00:01:02,910
+The first is a strain gauge.
+
+20
+00:01:02,910 --> 00:01:06,620
+And it could be used to
+measure force or pressure.
+
+21
+00:01:06,620 --> 00:01:09,005
+DR. RAMESH YERRABALLI:
+Here's a thermostat
+
+22
+00:01:09,005 --> 00:01:11,337
+that can be used to measure temperature.
+
+23
+00:01:11,337 --> 00:01:13,670
+DR. JONATHAN VALVANO: Here's
+another temperature sensor.
+
+24
+00:01:13,670 --> 00:01:15,576
+It's an integrated circuit.
+
+25
+00:01:15,576 --> 00:01:19,523
+DR. RAMESH YERRABALLI: Here's a
+microphone that measures sound.
+
+26
+00:01:19,523 --> 00:01:21,910
+DR. JONATHAN VALVANO:
+Here's a digital camera.
+
+27
+00:01:21,910 --> 00:01:26,080
+It looks at the image and creates
+a two dimensional digital array
+
+28
+00:01:26,080 --> 00:01:27,230
+of what it sees.
+
+29
+00:01:27,230 --> 00:01:29,840
+DR. RAMESH YERRABALLI:
+Here is a GPS that
+
+30
+00:01:29,840 --> 00:01:34,587
+senses the coordinates of where you
+are, latitude and longitude (actually
+
+31
+00:01:34,587 --> 00:01:35,670
+the HMC6352 is a compass).
+
+32
+00:01:35,670 --> 00:01:38,360
+DR. JONATHAN VALVANO: Here's
+the infrared distance sensor
+
+33
+00:01:38,360 --> 00:01:39,910
+we're going to put in our robot.
+
+34
+00:01:39,910 --> 00:01:41,550
+And it measures distance.
+
+35
+00:01:41,550 --> 00:01:44,760
+DR. RAMESH YERRABALLI: Here's
+another distance sensor.
+
+36
+00:01:44,760 --> 00:01:48,860
+This is an ultrasonic distance
+sensor that gives you distance.
+
+37
+00:01:48,860 --> 00:01:54,940
+DR. JONATHAN VALVANO: Here is a
+catheter that measures biopotentials.
+
+38
+00:01:54,940 --> 00:01:57,950
+This ring right here
+is inside the heart.
+
+39
+00:01:57,950 --> 00:02:03,974
+And it allows the pacemaker to measure
+the biopotentials in your heart.
+
+40
+00:02:03,974 --> 00:02:06,200
+DR. RAMESH YERRABALLI:
+Yes, as a matter of fact,
+
+41
+00:02:06,200 --> 00:02:10,714
+the LaunchPad has internal
+sensors which sense temperature.
+
+42
+00:02:10,714 --> 00:02:13,543
+DR. JONATHAN VALVANO: So
+what are we going to build?
+
+43
+00:02:13,543 --> 00:02:16,560
+DR. RAMESH YERRABALLI: We're
+going to build a robot.
+
+44
+00:02:16,560 --> 00:02:22,210
+And the robot car we're going to
+build is will use infrared sensors.
+
+45
+00:02:22,210 --> 00:02:25,400
+This is different from
+our bump sensors, which
+
+46
+00:02:25,400 --> 00:02:29,100
+sensed an obstacle by
+actually colliding with it.
+
+47
+00:02:29,100 --> 00:02:32,740
+Now we can measure the
+distance from the obstacle,
+
+48
+00:02:32,740 --> 00:02:35,190
+and then we're going to
+take evasive action so
+
+49
+00:02:35,190 --> 00:02:39,080
+that we can avert bumping
+against obstacles.
+
+50
+00:02:39,080 --> 00:02:42,550
+DR. JONATHAN VALVANO: So this
+is a classic control system.
+
+51
+00:02:42,550 --> 00:02:45,270
+In other words, our
+objective is to drive
+
+52
+00:02:45,270 --> 00:02:47,500
+straight down the middle of the road.
+
+53
+00:02:47,500 --> 00:02:51,760
+And we're going to begin
+by sensing where we are.
+
+54
+00:02:51,760 --> 00:02:55,590
+To tell where we are relative
+to the middle of the road.
+
+55
+00:02:55,590 --> 00:02:59,430
+And then the software in
+the computer will then
+
+56
+00:02:59,430 --> 00:03:05,656
+adjust the power to the two motors in
+an attempt to drive fast and straight.
+
+57
+00:03:05,656 --> 00:03:07,280
+DR. RAMESH YERRABALLI: That is correct.
+
+58
+00:03:07,280 --> 00:03:09,940
+So let's build it.

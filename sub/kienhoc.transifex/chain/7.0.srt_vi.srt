@@ -1,0 +1,617 @@
+0
+00:00:00,000 --> 00:00:00,500
+tangoclinhh_11/10/2017
+
+1
+00:00:00,500 --> 00:00:03,954
+Chào mừng trở lại với SC1x,
+Các nguyên tắc cơ bản trong Quản lý Chuỗi cung ứng.
+
+2
+00:00:03,954 --> 00:00:05,370
+Tuần này, chúng ta sẽ tiếp tục
+
+3
+00:00:05,370 --> 00:00:07,810
+thảo luận về hàng tồn kho.
+
+4
+00:00:07,810 --> 00:00:10,780
+Ta sẽ nói về một phiên bản khác
+
+5
+00:00:10,780 --> 00:00:11,280
+của quản lý hàng tồn kho.
+
+6
+00:00:11,280 --> 00:00:13,500
+Ta sẽ thay đổi các giả định một chút.
+
+7
+00:00:13,500 --> 00:00:17,040
+Lần trước, khi ta xây dựng số lượng đặt hàng kinh tế,
+
+8
+00:00:17,040 --> 00:00:19,890
+ta đã đưa ra rất nhiều giả định.
+
+9
+00:00:19,890 --> 00:00:23,310
+Trong đó có 3 giả định chính,
+
+10
+00:00:23,310 --> 00:00:29,620
+đầu tiên là giả định rằng nhu cầu có thể được biết trước và cố định.
+
+11
+00:00:29,620 --> 00:00:31,140
+Ta giả định rằng nó là tất yếu.
+
+12
+00:00:31,140 --> 00:00:31,800
+Nó bền vững.
+
+13
+00:00:31,800 --> 00:00:33,660
+Và ta hiểu rõ về nó.
+
+14
+00:00:33,660 --> 00:00:36,150
+Chu kỳ kế hoạch là vô hạn.
+
+15
+00:00:36,150 --> 00:00:38,340
+Đó là lý do vì sao ta có thể lấy giá trị trung bình.
+
+16
+00:00:38,340 --> 00:00:41,255
+Ta đã sử dụng mức hàng trung bình Q/2,
+
+17
+00:00:41,255 --> 00:00:43,880
+bởi vì ta giả định rằng chu kỳ
+
+18
+00:00:43,880 --> 00:00:45,250
+sẽ lặp lại mãi mãi.
+
+19
+00:00:45,250 --> 00:00:48,270
+Không có cầu vượt cung.
+
+20
+00:00:48,270 --> 00:00:49,620
+Ta không giả định điều đó.
+
+21
+00:00:49,620 --> 00:00:51,120
+Giờ ta sẽ nới lỏng
+
+22
+00:00:51,120 --> 00:00:52,450
+một số giả định đó.
+
+23
+00:00:52,450 --> 00:00:56,900
+Điều đầu tiên ta sẽ nới lỏng là cầu vượt cung.
+
+24
+00:00:56,900 --> 00:00:58,580
+Chuyện gì sẽ xảy ra
+
+25
+00:00:58,580 --> 00:01:02,230
+nếu ta cho phép các đơn hàng chờ giao?
+
+26
+00:01:02,230 --> 00:01:05,890
+Hãy nghĩ đến trường hợp bạn đặt một chiếc điện thoại thông minh.
+
+27
+00:01:05,890 --> 00:01:08,680
+Rất nhiều người sẵn sàng chờ đơn hàng đó về tay.
+
+28
+00:01:08,680 --> 00:01:09,640
+Họ nối tiếp nhau thành một danh sách những người chờ hàng.
+
+29
+00:01:09,640 --> 00:01:11,290
+Về cơ bản, đó gọi là đơn hàng chờ giao.
+
+30
+00:01:11,290 --> 00:01:12,250
+Bạn đặt một đơn hàng.
+
+31
+00:01:12,250 --> 00:01:13,458
+Bạn không nhận được nó ngay lập tức.
+
+32
+00:01:13,458 --> 00:01:16,150
+Nhưng bạn sẵn sàng đợi, trái ngược với trường hợp mất đơn hàng,
+
+33
+00:01:16,150 --> 00:01:17,680
+khi bạn bỏ đi không mua nữa.
+
+34
+00:01:17,680 --> 00:01:20,200
+Vậy chuyện gì sẽ xảy ra nếu bạn cho phép các đơn hàng chờ giao?
+
+35
+00:01:20,200 --> 00:01:23,500
+Kể cả khi tôi có nhu cầu cố định và một chu kỳ vô hạn,
+
+36
+00:01:23,500 --> 00:01:25,720
+ta sẽ thấy rằng điều này làm thay đổi một số thứ.
+
+37
+00:01:25,720 --> 00:01:28,720
+Nó làm thay đổi một số thứ bởi vì bây giờ
+
+38
+00:01:28,720 --> 00:01:30,910
+lượng đơn hàng chờ giao mà tôi cho phép
+
+39
+00:01:30,910 --> 00:01:33,970
+là hàm của hai thứ, đó là Chi phí thừa hàng
+
+40
+00:01:33,970 --> 00:01:35,110
+và Chi phí thiếu hàng.
+
+41
+00:01:35,110 --> 00:01:36,640
+Ta sẽ bàn về điều đó sau.
+
+42
+00:01:36,640 --> 00:01:39,580
+Nhưng đó là bước đầu tiên để cho phép các đơn hàng chờ giao
+
+43
+00:01:39,580 --> 00:01:42,880
+hay khi nhu cầu không được đáp ứng hết.
+
+44
+00:01:42,880 --> 00:01:46,330
+Tiếp theo ta sẽ mở rộng một chút
+
+45
+00:01:46,330 --> 00:01:50,680
+và nói về người bán báo hay một cậu bé đưa báo
+
+46
+00:01:50,680 --> 00:01:52,880
+hay vấn đề một thời kỳ.
+
+47
+00:01:52,880 --> 00:01:54,550
+Ở đây, nhu cầu sẽ
+
+48
+00:01:54,550 --> 00:01:58,400
+là ngẫu nhiên.
+
+49
+00:01:58,400 --> 00:01:59,847
+Nó có thể biến đổi.
+
+50
+00:01:59,847 --> 00:02:00,430
+Ta không biết trước được.
+
+51
+00:02:00,430 --> 00:02:02,920
+Ta có thể miêu tả nó trong phần phân phối.
+
+52
+00:02:02,920 --> 00:02:04,780
+Nhưng nó là một biến số ngẫu nhiên.
+
+53
+00:02:04,780 --> 00:02:08,720
+Chu kỳ kế hoạch của ta là một thời kỳ.
+
+54
+00:02:08,720 --> 00:02:10,160
+Có nghĩa là sao?
+
+55
+00:02:10,160 --> 00:02:12,040
+Có nghĩa là nó chỉ kéo dài trong một ngày hoặc một tuần.
+
+56
+00:02:12,040 --> 00:02:15,070
+Tôi phải sản xuất và quyết định
+
+57
+00:02:15,070 --> 00:02:16,600
+làm thêm bao nhiêu hay mua thêm bao nhiêu hàng trong thời gian sắp tới.
+
+58
+00:02:16,600 --> 00:02:18,310
+Và tôi không thể hồi phục được trong khoảng thời gian đó.
+
+59
+00:02:18,310 --> 00:02:19,934
+Cuối chu kỳ, tôi phải bỏ đi
+
+60
+00:02:19,934 --> 00:02:21,070
+những thứ tôi không bán được.
+
+61
+00:02:21,070 --> 00:02:22,600
+Ta sẽ nói nhiều hơn về điều đó.
+
+62
+00:02:22,600 --> 00:02:24,670
+Còn về việc thiếu hàng để bán,
+
+63
+00:02:24,670 --> 00:02:28,860
+ta sẽ giả định rằng ta bị mất một số khách hàng.
+
+64
+00:02:28,860 --> 00:02:31,980
+Nói cách khác, nếu tôi có một mặt hàng,
+
+65
+00:02:31,980 --> 00:02:33,440
+tôi bán hết hàng rồi.
+
+66
+00:02:33,440 --> 00:02:34,819
+Một người khách nữa bước vào.
+
+67
+00:02:34,819 --> 00:02:36,110
+Tôi không còn hàng để bán.
+
+68
+00:02:36,110 --> 00:02:37,100
+Tôi mất người khách đó.
+
+69
+00:02:37,100 --> 00:02:39,124
+Vậy là tôi mất đi nguồn thu tiềm năng.
+
+70
+00:02:39,124 --> 00:02:40,790
+Đó là điều ta sẽ tập trung vào.
+
+71
+00:02:40,790 --> 00:02:43,850
+Tôi sẽ cho bạn một vài ý niệm về điều này.
+
+72
+00:02:43,850 --> 00:02:45,470
+Nó được gọi là bài toán Người bán báo,
+
+73
+00:02:45,470 --> 00:02:49,280
+bởi vì nó y hệt cách ta làm khi ta bán báo.
+
+74
+00:02:49,280 --> 00:02:51,800
+Chẳng ai muốn đọc báo ngày hôm qua cả.
+
+75
+00:02:51,800 --> 00:02:53,130
+Ý tưởng sẽ như thế này.
+
+76
+00:02:53,130 --> 00:02:56,000
+Bạn là một cậu bé bán báo, hoặc một cô bé bán báo, một người bán báo,
+
+77
+00:02:56,000 --> 00:02:59,240
+bạn có công ty báo, trong trường hợp này là Boston Globe.
+
+78
+00:02:59,240 --> 00:03:01,640
+Và như bao chuỗi cung ứng khác,
+
+79
+00:03:01,640 --> 00:03:02,650
+bạn sẽ đặt một đơn hàng.
+
+80
+00:03:02,650 --> 00:03:05,360
+Bạn sẽ nói với nhà cung cấp rằng, tôi muốn q tờ báo
+
+81
+00:03:05,360 --> 00:03:07,010
+để bán trong ngày hôm đó.
+
+82
+00:03:07,010 --> 00:03:09,990
+Họ sẽ gửi cho bạn số lượng bạn cần.
+
+83
+00:03:09,990 --> 00:03:14,090
+Vậy là tôi sẽ có một chồng báo
+
+84
+00:03:14,090 --> 00:03:17,000
+với số lượng là Q tờ.
+
+85
+00:03:17,000 --> 00:03:20,600
+Giờ ta giả địng rằng bạn trả tiền cho mỗi tờ báo mà bạn đã đặt,
+
+86
+00:03:20,600 --> 00:03:23,150
+không cần biết bạn có bán chúng hay không.
+
+87
+00:03:23,150 --> 00:03:25,020
+Giờ, trong một ngày,
+
+88
+00:03:25,020 --> 00:03:27,050
+bạn sẽ bán được một lượng báo.
+
+89
+00:03:27,050 --> 00:03:29,600
+Đó là một biến số ngẫu nhiên mà ta đặt là x.
+
+90
+00:03:29,600 --> 00:03:35,930
+Vậy tôi sẽ bán x tờ báo trong một ngày.
+
+91
+00:03:35,930 --> 00:03:39,430
+Câu hỏi là, tôi sẽ bán bao nhiêu?
+
+92
+00:03:39,430 --> 00:03:40,990
+Q sẽ là bao nhiêu?
+
+93
+00:03:40,990 --> 00:03:42,940
+Bạn có thể nghĩ đến
+
+94
+00:03:42,940 --> 00:03:45,820
+hai trường hợp xảy ra.
+
+95
+00:03:45,820 --> 00:03:50,800
+Trường hợp 1 là khi x nhỏ hơn Q.
+
+96
+00:03:50,800 --> 00:03:52,160
+Nghĩa là sao?
+
+97
+00:03:52,160 --> 00:03:55,080
+Nghĩa là tôi sẽ thừa hàng.
+
+98
+00:03:55,080 --> 00:03:56,850
+Cuối ngày tôi sẽ còn lại vài tờ báo.
+
+99
+00:03:56,850 --> 00:03:59,810
+Hãy nghĩ về chi phí của số hàng thừa đó.
+
+100
+00:03:59,810 --> 00:04:02,690
+Trường hợp thứ hai, là khi x lớn hơn Q.
+
+101
+00:04:02,690 --> 00:04:04,710
+Nghĩa là sao
+
+102
+00:04:04,710 --> 00:04:07,780
+Nghĩa là tôi sẽ bị thiếu hàng.
+
+103
+00:04:07,780 --> 00:04:09,700
+Tôi sẽ không có đủ báo để bán.
+
+104
+00:04:09,700 --> 00:04:11,230
+Tôi sẽ bị thiếu một lượng.
+
+105
+00:04:11,230 --> 00:04:15,500
+Câu hỏi đặt ra là, làm thế nào để quyết định được điều cần làm?
+
+106
+00:04:15,500 --> 00:04:18,760
+Nếu tôi nhìn vào sự phân phối của nhu cầu này,
+
+107
+00:04:18,760 --> 00:04:21,160
+nhu cầu x của tôi, câu hỏi sẽ là
+
+108
+00:04:21,160 --> 00:04:23,680
+tôi có nên đặt hàng ở số lượng này không?
+
+109
+00:04:23,680 --> 00:04:24,820
+Đây là sự phân phối hàng của tôi.
+
+110
+00:04:24,820 --> 00:04:27,280
+Và tôi biết rằng nếu tôi đặt chừng này hàng, khả năng cao là
+
+111
+00:04:27,280 --> 00:04:29,230
+tôi sẽ thiếu hàng, bởi vì
+
+112
+00:04:29,230 --> 00:04:31,030
+hầu hết sự phân phối là ở trên mức đó.
+
+113
+00:04:31,030 --> 00:04:33,710
+Nếu tôi đặt hàng ở số lượng này thì sao?
+
+114
+00:04:33,710 --> 00:04:37,180
+Vậy thì nhiều khả năng là tôi sẽ không bị thiếu hàng, đúng không?
+
+115
+00:04:37,180 --> 00:04:38,680
+Nhưng có thể tôi sẽ thiếu rất nhiều hàng,
+
+116
+00:04:38,680 --> 00:04:40,240
+bởi vì sự phân phối có thể sẽ dừng ở đây.
+
+117
+00:04:40,240 --> 00:04:42,280
+Vậy là bạn đang nhìn vào một sự được - mất
+
+118
+00:04:42,280 --> 00:04:45,461
+giữa chi phí thiếu hụt và chi phí dư thừa hàng.
+
+119
+00:04:45,461 --> 00:04:47,710
+Điều mà ta sẽ tìm ra và cho bạn thấy là
+
+120
+00:04:47,710 --> 00:04:49,660
+cố gắng tối đa hóa
+
+121
+00:04:49,660 --> 00:04:51,290
+lợi nhuận của bạn.
+
+122
+00:04:51,290 --> 00:04:53,150
+Làm cách nào để tối đa hóa lợi nhuận?
+
+123
+00:04:53,150 --> 00:04:55,660
+Tôi đã có giá bán ra của sản phẩm.
+
+124
+00:04:55,660 --> 00:04:58,840
+Và tôi cần số người đến mua báo là ít nhất
+
+125
+00:04:58,840 --> 00:05:00,730
+hoặc số lượng báo tôi đặt là ít nhất.
+
+126
+00:05:00,730 --> 00:05:02,450
+Tôi không thể bán nhiều hơn số lượng tôi đã đặt.
+
+127
+00:05:02,450 --> 00:05:04,180
+Tôi không thể bán cho nhiều người hơn
+
+128
+00:05:04,180 --> 00:05:06,855
+số người đến mua báo, trừ đi chi phí.
+
+129
+00:05:06,855 --> 00:05:08,980
+Tôi phải trả tiền cho số hàng tôi đã đặt,
+
+130
+00:05:08,980 --> 00:05:11,200
+không cần biết tôi bán được bao nhiêu.
+
+131
+00:05:11,200 --> 00:05:13,090
+Đây chính là vấn đề cốt lõi.
+
+132
+00:05:13,090 --> 00:05:16,726
+Và số lượng mà ta bán, kết quả cuối cùng của bài học,
+
+133
+00:05:16,726 --> 00:05:18,350
+được gọi là điểm tới hạn.
+
+134
+00:05:18,350 --> 00:05:19,770
+Bạn cần nhớ rõ điều này.
+
+135
+00:05:19,770 --> 00:05:22,690
+Điểm tới hạn về cơ bản là
+
+136
+00:05:22,690 --> 00:05:27,060
+chi phí thiếu hụt trên mỗi đơn vị
+
+137
+00:05:27,060 --> 00:05:29,070
+chia cho tổng chi phí thiếu hàng
+
+138
+00:05:29,070 --> 00:05:30,450
+cộng chi phí thừa hàng.
+
+139
+00:05:30,450 --> 00:05:35,280
+Điểm tới hạn cho tôi biết tôi cần đặt bao nhiêu hàng
+
+140
+00:05:35,280 --> 00:05:38,400
+để tối đa hóa lợi nhuận.
+
+141
+00:05:38,400 --> 00:05:41,460
+Vùng này sẽ tương đương với điểm tới hạn,
+
+142
+00:05:41,460 --> 00:05:43,050
+đây là một kết quả đẹp.
+
+143
+00:05:43,050 --> 00:05:46,350
+Về cơ bản, nó dựa trên sự cân bằng giữa số hàng thừa và số hàng thiếu,
+
+144
+00:05:46,350 --> 00:05:47,970
+chi phí dành cho sự thừa và thiếu hàng,
+
+145
+00:05:47,970 --> 00:05:50,177
+nó cho tôi biết có bao nhiêu phần phân phối cần bao quát
+
+146
+00:05:50,177 --> 00:05:52,260
+và liệu đó là một sự phân phối bình thường
+
+147
+00:05:52,260 --> 00:05:53,485
+hay ở một loại hình nào khác.
+
+148
+00:05:53,485 --> 00:05:55,610
+Đó là nội dung ta sẽ học trong tuần này,
+
+149
+00:05:55,610 --> 00:05:59,220
+bài toán Người bán báo và nhu cầu ngẫu nhiên
+
+150
+00:05:59,220 --> 00:06:00,660
+trong một thời kỳ.
+
+151
+00:06:00,660 --> 00:06:03,077
+Hãy xem các video, xem các phần chú thích
+
+152
+00:06:03,077 --> 00:06:05,160
+và thử trả lời những câu hỏi cũng như làm các bài toán.
+
+153
+00:06:05,160 --> 00:06:06,830
+Chúc vui vẻ.
+

@@ -1,0 +1,321 @@
+1
+00:00:01,430 --> 00:00:04,180
+Hello again and welcome back to Operations
+Management
+
+2
+00:00:04,180 --> 00:00:08,500
+We are continuing our series on 7 tools of
+quality.
+
+3
+00:00:08,500 --> 00:00:11,980
+And this time we are going to talk about scatter
+diagrams
+
+4
+00:00:11,980 --> 00:00:16,150
+Scatter diagrams are also known as scatter
+plots or scatter charts
+
+5
+00:00:16,150 --> 00:00:17,780
+Those terms are used interchangeably.
+
+6
+00:00:17,780 --> 00:00:23,980
+In essence, what we are doing is plotting
+two variables against each other on a graph
+
+7
+00:00:23,980 --> 00:00:30,210
+to look for relationship between those variables
+So to … to scatter plot, we are trying to
+
+8
+00:00:30,210 --> 00:00:36,700
+think are two variables related,
+we plot the variables coordinate on a graph,
+
+9
+00:00:36,700 --> 00:00:41,230
+and then look for trends,
+and possible correlation between those variables
+
+10
+00:00:41,230 --> 00:00:45,220
+So let’s see what a couple of these plots
+look like
+
+11
+00:00:45,220 --> 00:00:51,100
+Here we have one on the left to show the relationship
+between car weight and gas mileage.
+
+12
+00:00:51,100 --> 00:00:54,190
+The weight of the car being presented by the
+X axis
+
+13
+00:00:54,190 --> 00:00:59,649
+and the Y axis represents the gas mileage
+using X-Y coordinate
+
+14
+00:00:59,649 --> 00:01:05,970
+For each car weight there is a corresponding
+gas mileage and it is plotted there on the
+
+15
+00:01:05,970 --> 00:01:06,970
+chart.
+
+16
+00:01:06,970 --> 00:01:11,240
+It looks kind of scatter, so that’s why
+it’s called a scatter plot.
+
+17
+00:01:11,240 --> 00:01:16,170
+Even though they’re kind of spread out,
+we can see that there is some sorts of relationship
+
+18
+00:01:16,170 --> 00:01:20,040
+between them
+and it kind of looks like as the the weight
+
+19
+00:01:20,040 --> 00:01:25,310
+of the car increases the gas mileage will
+decrease
+
+20
+00:01:25,310 --> 00:01:31,299
+The plot on the right is showing the relationship
+between the stopping distance of a vehicle
+
+21
+00:01:31,299 --> 00:01:33,810
+and how fast it is traveling.
+
+22
+00:01:33,810 --> 00:01:39,840
+The speed is being shown on the X axis,
+the stopping distance on the Y axis just like
+
+23
+00:01:39,840 --> 00:01:43,900
+with the car weight one,
+we have a little dot that are scattered across
+
+24
+00:01:43,900 --> 00:01:49,520
+this chart for each vehicle speed with the
+stopping distance.
+
+25
+00:01:49,520 --> 00:01:54,880
+And again we can kind of see that there is
+a relationship between the two variables.
+
+26
+00:01:54,880 --> 00:01:59,579
+This time as the speed increases so will stopping
+distance
+
+27
+00:01:59,579 --> 00:02:04,950
+To help this look a little bit better we can
+add trend line.
+
+28
+00:02:04,950 --> 00:02:10,470
+These trend lines are linear lines that show
+the relationship between these two variables.
+
+29
+00:02:10,470 --> 00:02:16,459
+We don’t expect the trend line to fit exactly
+to those dots
+
+30
+00:02:16,459 --> 00:02:23,180
+but it does take all the dots into consideration
+and create a linear line
+
+31
+00:02:23,180 --> 00:02:24,879
+So what does all this mean?
+
+32
+00:02:24,879 --> 00:02:29,840
+When the trend line goes down,
+it show that there is a negative correlation
+
+33
+00:02:29,840 --> 00:02:34,810
+between variables
+Negative means as one variable increases the
+
+34
+00:02:34,810 --> 00:02:36,959
+other one decreases.
+
+35
+00:02:36,959 --> 00:02:43,769
+So in the case of the car weight going up
+that means the gas mileage goes down
+
+36
+00:02:43,769 --> 00:02:48,409
+The trend line going up means that there is
+a positive correlation between the variables
+
+37
+00:02:48,409 --> 00:02:53,829
+which means as one variable increases so will
+the other one
+
+38
+00:02:53,829 --> 00:02:58,549
+As the speed increases on the vehicle so does
+the stopping distance
+
+39
+00:02:58,549 --> 00:03:00,290
+Now there can be other possibilities.
+
+40
+00:03:00,290 --> 00:03:03,750
+There can be no correlation, there can be
+cyclical, there can be pattern.
+
+41
+00:03:03,750 --> 00:03:06,829
+All of those things can happen with the scatter
+plots.
+
+42
+00:03:06,829 --> 00:03:12,019
+I just showed you a couple of them, but how
+do we go about making a scatter plot?
+
+43
+00:03:12,019 --> 00:03:16,459
+Well, in Excel we can enter the data in two
+columns.
+
+44
+00:03:16,459 --> 00:03:21,699
+One will present the X coordinate and the
+other one will present the Y coordinate
+
+45
+00:03:21,699 --> 00:03:25,819
+So in this case we have batch size and the
+number of defects.
+
+46
+00:03:25,819 --> 00:03:32,339
+We would have the batch size as one coordinate
+and defect as the other
+
+47
+00:03:32,339 --> 00:03:37,829
+Once that’s in place we will select the
+X, Y or the scatter plot from chart tools
+
+48
+00:03:37,829 --> 00:03:43,019
+and it would create the chart for us and then
+we can add it to edit the axis titles.
+
+49
+00:03:43,019 --> 00:03:49,939
+You can see those data points sitting there
+on the chart
+
+50
+00:03:49,939 --> 00:03:56,939
+then we would add a trend line or in addition
+to that we can add R square (coefficient of
+
+51
+00:03:56,939 --> 00:04:00,900
+determination)
+And that trend line typically will start with
+
+52
+00:04:00,900 --> 00:04:06,769
+the linear trend, that’s the default,
+and that shows how the relationship works.
+
+53
+00:04:06,769 --> 00:04:11,420
+So in this case as batch size increases so
+will the number of defects
+
+54
+00:04:11,420 --> 00:04:17,180
+It’s a positive line going upwards and so
+we have a positive relationship between those
+
+55
+00:04:17,180 --> 00:04:24,370
+two variables
+We will look at R square Coefficient of Determination.
+
+56
+00:04:24,370 --> 00:04:29,020
+It must fall between 0 and 1 and the higher
+values indicate that
+
+57
+00:04:29,020 --> 00:04:33,210
+the trend line that we added explains the
+relationship between the variables
+
+58
+00:04:33,210 --> 00:04:39,210
+We can also look at the correlation coefficient
+which is R which is also known as
+
+59
+00:04:39,210 --> 00:04:41,900
+the square root of the coefficient of determination.
+
+60
+00:04:41,900 --> 00:04:48,680
+The greater value of R the stronger the relationship
+between the two variables.
+
+61
+00:04:48,680 --> 00:04:54,960
+So we can consider it strong if it is greater
+than point 8 and if it less than point 5 we
+
+62
+00:04:54,960 --> 00:04:59,370
+can consider it weak
+So that’s all there is to scatter plot,
+
+63
+00:04:59,370 --> 00:05:02,120
+we are looking at the relationship between
+two variables
+
+64
+00:05:02,120 --> 00:05:08,840
+and see if what relationship it is and next
+time we will look at another one of 7 tools
+
+65
+00:05:08,840 --> 00:05:10,419
+of quality.
+
+66
+00:05:10,419 --> 00:05:11,539
+Take care.
+

@@ -1,0 +1,380 @@
+571
+00:25:25,260 --> 00:25:29,210
+Thao Tran
+Đây là dòng lệnh sẽ không bao giờ được thực hiện.
+
+572
+00:25:29,210 --> 00:25:35,400
+
+573
+00:25:35,400 --> 00:25:41,200
+Ví dụ x = 15 không hay. Lấy x = 5 ta sẽ thấy rõ
+
+574
+00:25:41,200 --> 00:25:44,190
+vấn đề hơn.
+
+575
+00:25:44,190 --> 00:25:48,800
+Nếu x bằng 5, điều này sai.
+
+576
+00:25:48,800 --> 00:25:52,060
+Nếu x nhỏ hơn 20, điều này đúng.
+
+577
+00:25:52,060 --> 00:25:53,580
+Vậy là kết thúc.
+
+578
+00:25:53,580 --> 00:25:58,130
+Vấn đề là dòng lệnh này sẽ không bao giờ được thực hiện
+
+579
+00:25:58,130 --> 00:26:02,750
+vì nếu một giá trị nhỏ hơn 10 thì cũng đồng thời nhỏ hơn 20.
+
+580
+00:26:02,750 --> 00:26:04,270
+Vậy câu này cũng đúng.
+
+581
+00:26:04,270 --> 00:26:07,260
+Với một giá trị như 5, tức nó nhỏ hơn 10,
+
+582
+00:26:07,260 --> 00:26:10,130
+có thể bạn nghĩ vì vậy lệnh đó sẽ được thực hiện
+
+583
+00:26:10,130 --> 00:26:11,540
+nhưng không.
+
+584
+00:26:11,540 --> 00:26:14,150
+Lệnh này được thực hiện vì nó được kiểm tra trước.
+
+585
+00:26:14,150 --> 00:26:17,290
+Nếu chúng ta chuyển đoạn code này xuống dưới đây
+
+586
+00:26:17,290 --> 00:26:21,695
+thì sẽ hợp lý hơn.
+
+587
+00:26:21,695 --> 00:26:23,940
+Chuyển xuống đây sẽ hợp lý hơn.
+
+588
+00:26:23,940 --> 00:26:26,640
+Tóm lại, đáp án là
+
+589
+00:26:26,640 --> 00:26:32,140
+lệnh này không thực hiện.
+
+590
+00:26:32,140 --> 00:26:35,130
+Và lệnh này cũng không bao giờ thực hiện với bất cứ giá trị nào.
+
+591
+00:26:35,130 --> 00:26:37,400
+Đó là đáp án.
+
+592
+00:26:37,400 --> 00:26:39,890
+Chúng ta đã sắp xong phần câu lệnh điều kiện.
+
+593
+00:26:39,890 --> 00:26:43,730
+Tôi muốn chỉ cho các bạn một loại câu lệnh điều kiện nữa.
+
+594
+00:26:43,730 --> 00:26:46,100
+Hơi khác một chút.
+
+595
+00:26:46,100 --> 00:26:50,580
+Nó không phải một cấu trúc code ta tạo ra
+
+596
+00:26:50,580 --> 00:26:56,890
+mà là cách xử lý trong trường hợp gặp phải lỗi.
+
+597
+00:26:56,890 --> 00:27:00,597
+Ví dụ như khi đọc một số liệu do người dùng nhập
+
+598
+00:27:00,597 --> 00:27:02,680
+và bạn muốn chuyển đổi nó sang dạng số thực,
+
+599
+00:27:02,680 --> 00:27:06,070
+chắc các bạn đã thấy dạng bài này trong bài tập về nhà rồi,
+
+600
+00:27:06,070 --> 00:27:06,960
+bạn có thể gặp lỗi.
+
+601
+00:27:06,960 --> 00:27:09,800
+Bạn biết chương trình sắp xảy ra lỗi nhưng lại không muốn
+
+602
+00:27:09,800 --> 00:27:12,000
+tắt chương trình.
+
+603
+00:27:12,000 --> 00:27:16,180
+Khái niệm try / except (thử / nếu gặp lỗi) hình dung là
+
+604
+00:27:16,180 --> 00:27:17,430
+đoạn code này nguy hiểm.
+
+605
+00:27:17,430 --> 00:27:18,480
+Ta biết có thể sẽ xảy ra lỗi.
+
+606
+00:27:18,480 --> 00:27:19,990
+Ta biết chính xác lý do xảy ra lỗi.
+
+607
+00:27:19,990 --> 00:27:21,100
+Nhưng ta không muốn phải dừng.
+
+608
+00:27:21,100 --> 00:27:23,141
+Ta không muốn dừng chương trình vì gặp lỗi
+
+609
+00:27:23,141 --> 00:27:24,210
+mà muốn tiếp tục.
+
+610
+00:27:24,210 --> 00:27:26,660
+Đây chính là mục đích của khối except.
+
+611
+00:27:26,660 --> 00:27:29,110
+Hãy nhìn đoạn code này.
+
+612
+00:27:29,110 --> 00:27:31,270
+Các bạn có thể thấy là ta từng làm đoạn code này rồi.
+
+613
+00:27:31,270 --> 00:27:34,720
+Nó tương tự như bài tập tiền lương và mức lương
+
+614
+00:27:34,720 --> 00:27:38,200
+mà các bạn đọc chuỗi ký tự bằng hàm raw_input.
+
+615
+00:27:38,200 --> 00:27:40,860
+Bạn chuyển đổi nó sang số thực nhưng sau đó
+
+616
+00:27:40,860 --> 00:27:43,900
+nếu gõ vào là "Fred" thì chương trình gặp lỗi.
+
+617
+00:27:43,900 --> 00:27:46,130
+Ở đây ta cũng đang làm tương tự.
+
+618
+00:27:46,130 --> 00:27:49,490
+Ta có một biến, một chuỗi ký tự là Hello Bob.
+
+619
+00:27:49,490 --> 00:27:51,385
+Ta chuyển nó thành số nguyên.
+
+620
+00:27:51,385 --> 00:27:53,010
+Rồi in dòng này ra.
+
+621
+00:27:53,010 --> 00:27:56,910
+Tiếp theo ta lại có chuỗi ký tự khác gồm các ký tự 1 2 3.
+
+622
+00:27:56,910 --> 00:27:58,650
+Ta chuyển nó thành số nguyên.
+
+623
+00:27:58,650 --> 00:28:00,570
+Rồi ta in dòng đó ra.
+
+624
+00:28:00,570 --> 00:28:07,010
+Vấn đề là khi thực hiện đoạn này chương trình sẽ thất bại.
+
+625
+00:28:07,010 --> 00:28:10,410
+Nó sẽ hiện lên đoạn traceback này.
+
+626
+00:28:10,410 --> 00:28:14,830
+Vấn đề là khi hiện traceback thì
+
+627
+00:28:14,830 --> 00:28:17,220
+chương trình sẽ ngừng hoạt động.
+
+628
+00:28:17,220 --> 00:28:22,140
+Đoạn traceback cũng như Python đang báo cho bạn
+
+629
+00:28:22,140 --> 00:28:22,990
+là này, như vậy không ổn.
+
+630
+00:28:22,990 --> 00:28:24,130
+Tôi không biết phải làm gì.
+
+631
+00:28:24,130 --> 00:28:25,310
+Tôi dừng lại đây.
+
+632
+00:28:25,310 --> 00:28:30,880
+Đoạn còn lại của chương trình sẽ bị mất hết.
+
+633
+00:28:30,880 --> 00:28:33,670
+Ta có viết gì dưới đây cũng không quan trọng.
+
+634
+00:28:33,670 --> 00:28:36,690
+Dòng này đã bị hủy khi traceback.
+
+635
+00:28:36,690 --> 00:28:37,780
+Nó dừng lại.
+
+636
+00:28:37,780 --> 00:28:40,537
+Không phải hiện traceback xong là chương trình chạy tiếp đâu.
+
+637
+00:28:40,537 --> 00:28:41,620
+Nó chỉ hiện traceback.
+
+638
+00:28:41,620 --> 00:28:43,659
+Vậy là hết.
+
+639
+00:28:43,659 --> 00:28:45,950
+Đoạn này cũng có thể ở dạng khác thay vì chỉ có
+
+640
+00:28:45,950 --> 00:28:48,020
+chuỗi ký tự "Hello Bob".
+
+641
+00:28:48,020 --> 00:28:50,210
+Dữ liệu đầu vào có thể là dữ liệu thô, khi
+
+642
+00:28:50,210 --> 00:28:52,670
+người dùng đang nhập liệu, bạn bảo họ nhập vào một con số,
+
+643
+00:28:52,670 --> 00:28:54,792
+Rồi họ nhập một dữ liệu không phải số.
+
+644
+00:28:54,792 --> 00:28:55,750
+Chương trình sẽ gặp lỗi.
+
+645
+00:28:55,750 --> 00:28:58,270
+Ta biết trước nó sắp gặp lỗi.
+
+646
+00:28:58,270 --> 00:29:00,670
+Vấn đề là ta không biết--
+
+647
+00:29:00,670 --> 00:29:03,820
+Ôi, để tôi xóa cái này đi.
+
+648
+00:29:03,820 --> 00:29:06,550
+Giờ ta lại phải đốt sạch nó đi.
+
+649
+00:29:06,550 --> 00:29:10,540
+OK, cháy hết rồi. Vấn đề là bạn có thể hình dung
+
+650
+00:29:10,540 --> 00:29:12,550
+bạn chính là chương trình này.
+
+651
+00:29:12,550 --> 00:29:16,990
+Nếu các bạn nhớ, các bạn nhập lệnh vào
+
+652
+00:29:16,990 --> 00:29:20,060
+kịch bản, cấp dữ liệu cho bộ xử lý trung tâm
+
+653
+00:29:20,060 --> 00:29:22,370
+để trả lời câu hỏi phải làm gì tiếp.
+
+654
+00:29:22,370 --> 00:29:24,620
+Bạn nên đặt mình vào vai trò ấy
+
+655
+00:29:24,620 --> 00:29:28,980
+khi chương trình hiện traceback, vì như vậy tức là
+
+656
+00:29:28,980 --> 00:29:32,620
+bạn, dưới dạng chương trình, đã bốc hơi mất
+
+657
+00:29:32,620 --> 00:29:35,850
+và không còn ở đấy để ra chỉ thị nữa.
+
+658
+00:29:35,850 --> 00:29:36,600
+Chương trình dừng lại.
+
+659
+00:29:36,600 --> 00:29:38,380
+Dừng ngay giữa đường.
+
+660
+00:29:38,380 --> 00:29:40,380
+Bạn biến mất.
+
+661
+00:29:40,380 --> 00:29:44,270
+Vậy nên ta phải đảm bảo kiểm soát được tình huống này.
+
+662
+00:29:44,270 --> 00:29:46,780
+Ta biết chương trình có thể gặp lỗi.
+
+663
+00:29:46,780 --> 00:29:49,930
+Và ta muốn thực hiện một đoạn code khác
+
+664
+00:29:49,930 --> 00:29:52,570
+ngay trong tình huống ấy.
+
+665
+00:29:52,570 --> 00:29:55,100
+Ta làm như sau.
+

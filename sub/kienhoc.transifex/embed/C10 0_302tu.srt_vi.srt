@@ -1,0 +1,170 @@
+0
+00:00:00,000 --> 00:00:00,001
+phungdo_vgu KienHoc.vn http://youtu.be/PLsSwhjKQZs
+
+1
+00:00:00,000 --> 00:00:01,875
+GS. Valvano: Này thầy Yerraballi
+
+2
+00:00:01,875 --> 00:00:03,415
+Hôm nay chúng ta sẽ học gì ?
+
+3
+00:00:03,415 --> 00:00:05,165
+TS. Yerraballi: 
+Ta sẽ học cách sử dụng
+
+4
+00:00:05,165 --> 00:00:08,770
+SysTick timer để có các delay
+với độ chính xác cao.
+
+5
+00:00:08,770 --> 00:00:12,030
+Độ chính xác cao là yêu cầu cốt yếu 
+trong hệ thống thời gian thực.
+
+6
+00:00:12,030 --> 00:00:14,850
+TS. Valvano: Hệ thống đó là loại gì ?
+
+7
+00:00:14,850 --> 00:00:17,433
+TS. Yerraballi: Các hệ thống mà không 
+đáp ứng được về tính chính xác của độ trễ
+
+8
+00:00:17,433 --> 00:00:19,340
+có thế gây ra nhiều hậu quả.
+
+9
+00:00:19,340 --> 00:00:26,490
+Nó trải dài từ những sự bất tiện nhỏ 
+đến thảm họa nghiêm trọng.
+
+10
+00:00:26,490 --> 00:00:31,270
+TS. Valvano: Ý của ông là đài kiểm soát 
+không lưu hoặc nhà máy điện hạt nhân.
+
+11
+00:00:31,270 --> 00:00:34,300
+hay thậm chí là hệ thống 
+chống bó cứng phanh trên ôtô.
+
+12
+00:00:34,300 --> 00:00:35,850
+TS. Yerraballi: Đúng vậy.
+
+13
+00:00:35,850 --> 00:00:41,440
+Ta sẽ lập ra một khái niệm kĩ thuật trừu tượng
+đó là máy trạng thái hữu hạn - FSM
+
+14
+00:00:41,440 --> 00:00:46,140
+thiết kế hệ thống phức tạp bằng
+việc dùng sự trừu tượng đơn giản.
+
+15
+00:00:46,140 --> 00:00:49,232
+Sự trừu tượng đó, nó thích hợp với 
+tính khả chứng của hàm.
+
+16
+00:00:49,232 --> 00:00:51,190
+TS. Valvano: Quy trình để 
+thiết kế một máy trạng thái
+
+17
+00:00:51,190 --> 00:00:55,270
+hữu hạn có dễ để
+kiểm chứng lại không ?
+
+18
+00:00:55,270 --> 00:00:59,800
+TS. Yerraballi: Đúng vậy, bởi vì 
+có rất nhiều lí thuyết đằng sau nó.
+
+19
+00:00:59,800 --> 00:01:04,160
+Điều tuyệt nhất là cùng MỘT KĨ THUẬT mà 
+ta làm cho một máy trạng thái hữu hạn
+
+20
+00:01:04,160 --> 00:01:08,600
+có thể được dùng mà không quan tâm
+đến độ phức tạp của hệ thống.
+
+21
+00:01:08,600 --> 00:01:13,440
+TS. Valvano: Điều này có nghĩa là
+tôi có thể dùng lại code, phương thức của ông
+
+22
+00:01:13,440 --> 00:01:15,027
+trong máy trạng thái hữu hạn của tôi?
+
+23
+00:01:15,027 --> 00:01:16,610
+TS. Yerraballi: Đúng thế.
+
+24
+00:01:16,610 --> 00:01:18,869
+Nghe hay đấy, nhưng ta sẽ 
+tạo ra cái gì tiếp theo đây?
+
+25
+00:01:18,869 --> 00:01:20,910
+TS. Valvano: Ta sẽ làm nên 
+vài thứ với 
+
+26
+00:01:20,910 --> 00:01:25,130
+động cơ bước, là động cơ rất phổ
+biến trong hệ thống nhúng.
+
+27
+00:01:25,130 --> 00:01:30,560
+khi ta muốn một thứ gì đó
+di chuyển được.
+
+28
+00:01:30,560 --> 00:01:32,740
+TS. Yerraballi: Một động cơ bước 
+như thế này là một phần
+
+29
+00:01:32,740 --> 00:01:36,269
+của hệ thống nhúng mà có 
+chuyển động là một tính năng.
+
+30
+00:01:36,269 --> 00:01:38,060
+TS. Valvano: Chúng tôi sẽ
+làm ra một con robot
+
+31
+00:01:38,060 --> 00:01:40,530
+tự hành để cho các bạn xem.
+
+32
+00:01:40,530 --> 00:01:46,840
+Nó có vi điều khiển, pin 
+2 động cơ bước,
+
+33
+00:01:46,840 --> 00:01:48,944
+và nhiều cảm biến.
+
+34
+00:01:48,944 --> 00:01:50,360
+TS. Yerraballi: Làm thôi.
+
+35
+00:01:50,360 --> 00:01:51,860
+TS. Valvano: Được rồi.
+
+36
+00:01:51,860 --> 00:01:52,360

@@ -1,0 +1,435 @@
+0
+00:00:05,088 --> 00:00:09,390
+Lần trước chúng ta đã học về trung bình, độ lệch chuẩn, hiệp phương sai và hệ số tương quan.
+
+2
+00:00:12,090 --> 00:00:19,404
+Nội dung tiếp theo mà chúng ta sẽ học được sử dụng nhiều nhất trong tính toán,
+
+3
+00:00:19,404 --> 00:00:24,289
+mà trước đó chúng ta cũng dã gặp rồi, 
+đó là hồi quy.
+
+4
+00:00:24,289 --> 00:00:30,540
+Hồi quy cũng có liên quan đến những cái khác.
+
+5
+00:00:30,540 --> 00:00:34,823
+Tôi sẽ viết ra các phương trình sau.
+
+6
+00:00:34,823 --> 00:00:40,478
+R1i bằng Alpha i cộng Beta nhân với
+
+7
+00:00:40,478 --> 00:00:44,951
+R2i cộng cho Epsilon i.
+
+8
+00:00:44,951 --> 00:00:48,415
+Điều đầu tiên mà các bạn phải nhận ra là
+
+9
+00:00:48,415 --> 00:00:50,010
+tôi đang áp dụng hồi quy cho cái gì?
+
+10
+00:00:50,010 --> 00:00:52,536
+Mức an toàn 1 và mức an toàn 2.
+
+11
+00:00:52,536 --> 00:00:55,040
+Và tôi cũng không lo gì đến số Alpha i này,
+
+12
+00:00:55,040 --> 00:00:57,000
+chúng ta chỉ quan tâm nó trong thực tế thôi.
+
+13
+00:00:57,000 --> 00:01:02,575
+Tôi chỉ tập trung vào biến này vì đây là thông số của
+
+14
+00:01:02,575 --> 00:01:06,913
+mối quan hệ mà chúng ta đang xét, còn gọi là đường cong phân bố.
+
+15
+00:01:06,913 --> 00:01:09,480
+Tôi nói lại, tôi chỉ giảng về mức an toàn 1 và mức an toàn 2.
+
+16
+00:01:09,480 --> 00:01:14,761
+Lát nữa các bạn sẽ nhận thấy rằng không có ý nghĩa gì khi xây dựng đường cong phân bố 
+
+17
+00:01:14,761 --> 00:01:19,427
+với 2 mức an toàn 1 và 2 trong một danh mục đầu tư lớn,
+
+18
+00:01:19,427 --> 00:01:22,787
+ngoại trừ đường cong phân bố của mức an toàn 1 và mức sinh lời trong danh mục đầu tư.
+
+19
+00:01:22,787 --> 00:01:26,670
+Giờ chúng ta sẽ tính các số này.
+
+20
+00:01:26,670 --> 00:01:33,042
+Beta 1,2 có ý nghĩa gì?
+
+21
+00:01:33,042 --> 00:01:34,630
+Để tôi tính trước đã.
+
+22
+00:01:34,630 --> 00:01:36,520
+Các bạn sẽ tính sau.
+
+23
+00:01:36,520 --> 00:01:39,217
+Tử số là bao nhiêu?
+
+24
+00:01:39,217 --> 00:01:46,160
+Nhớ rằng tử số phải là Sigma 1,2 của các hiệp phương sai.
+
+25
+00:01:46,160 --> 00:01:49,178
+Nhưng khi chúng ta tiêu chuẩn hóa thì mọi chuyện lại khác.
+
+26
+00:01:49,178 --> 00:01:56,128
+Và mẫu số ở đây hóa ra lại là Sigma 2 bình phương.
+
+27
+00:01:56,128 --> 00:02:00,415
+Mặc dù tôi không thích nhớ các thứ, nhưng cách để nhớ lâu ở đây là
+
+28
+00:02:00,415 --> 00:02:04,013
+phương sai của biến số bên phải,
+
+29
+00:02:04,013 --> 00:02:08,668
+còn gọi là biến vô hạn, nằm ở mẫu số mà chúng ta vừa nhân lên.
+
+30
+00:02:08,668 --> 00:02:13,514
+Tin tốt là cho dù bạn lấy bên trái bình phương hay 
+
+31
+00:02:13,514 --> 00:02:19,096
+bên phải bình phương, chúng đều là phần trăm cả.
+
+32
+00:02:19,096 --> 00:02:27,795
+Chúng ta lấy 5.81 chia cho 2.90.
+
+33
+00:02:27,795 --> 00:02:33,420
+Theo tôi thì 2.90 là phương sai của chỉ số an toàn thứ hai, đúng không?
+
+34
+00:02:33,420 --> 00:02:38,574
+Đáp án là 2.00.
+
+35
+00:02:38,574 --> 00:02:42,367
+Chúng ta dừng một lát.
+
+36
+00:02:42,367 --> 00:02:47,336
+để tôi đặt câu hỏi, các bạn không trả lời cũng được.
+
+37
+00:02:47,336 --> 00:02:49,537
+Nếu tôi không trả lời được thì đó mới là vấn đề.
+
+38
+00:02:49,537 --> 00:02:51,497
+Tôi cũng hay đặt câu hỏi trong lớp.
+
+39
+00:02:51,497 --> 00:02:54,027
+Tôi thường không chờ được
+
+40
+00:02:54,027 --> 00:02:55,399
+nên tôi trả lời luôn.
+
+41
+00:02:55,399 --> 00:02:57,417
+Giờ thì tôi vô cùng kiên nhẫn.
+
+42
+00:02:57,417 --> 00:02:59,890
+Thường khi giao tiếp tôi không kiên nhẫn lắm.
+
+43
+00:02:59,890 --> 00:03:03,880
+Nếu vậy thì cũng không hay cho lắm.
+
+44
+00:03:03,880 --> 00:03:06,120
+Vậy kết quả 2 chúng ta vừa tính được có nghĩa gì?
+
+45
+00:03:06,120 --> 00:03:11,088
+Số 2 đó có nghĩa là nếu như mức sinh lời thứ hai, trong trường hợp này là của Xeror
+
+46
+00:03:11,088 --> 00:03:15,314
+thay đổi khoản 1%, thì IBM thay đổi khoảng bao nhiêu?
+
+47
+00:03:15,314 --> 00:03:17,539
+Gấp đôi.
+
+48
+00:03:17,539 --> 00:03:20,378
+Đó chỉ là một hàm trong toán thống kê.
+
+49
+00:03:20,378 --> 00:03:22,614
+Thứ đầu tiên tôi nên hỏi các bạn là 
+
+50
+00:03:22,614 --> 00:03:27,188
+giả sử như tôi hỏi các bạn hệ số tương quan giữa hai đại lượng bằng bao nhiêu?
+
+51
+00:03:27,188 --> 00:03:27,940
+Các bạn có biết không?
+
+52
+00:03:27,940 --> 00:03:29,756
+Câu trả lời là 1.
+
+53
+00:03:29,756 --> 00:03:31,257
+Hệ số tương quan đó có bằng 2 không?
+
+54
+00:03:31,257 --> 00:03:36,178
+Không thể, mối tương quan đó chỉ nằm trong khoảng từ -1 đến +1.
+
+55
+00:03:36,178 --> 00:03:40,992
+Thực ra tôi cố tình chọn số +1.
+
+56
+00:03:40,992 --> 00:03:43,481
+Nhưng liệu các giá trị Beta có khác 1 không?
+
+57
+00:03:43,481 --> 00:03:44,265
+Có.
+
+58
+00:03:44,265 --> 00:03:48,832
+Đường sin vẫn mang dấu dương vì nó phụ thuộc vào
+
+59
+00:03:48,832 --> 00:03:52,930
+tử số có giá trị là 5.81, và tử số đều dương trong 2 trường hợp.
+
+60
+00:03:52,930 --> 00:03:56,830
+Nhưng quan trọng là cách bạn tính toán.
+
+61
+00:03:56,830 --> 00:04:00,410
+Ở đây có một câu hỏi khá thú vị.
+
+62
+00:04:00,410 --> 00:04:04,779
+Đại lượng 1 thay đổi bao nhiêu phần trăm nếu như đại lượng 2 thay đổi khoảng 1%?
+
+63
+00:04:04,779 --> 00:04:06,550
+Hệ số tương quan này bằng mấy?
+
+64
+00:04:06,550 --> 00:04:08,859
+Và giá trị của nó là bao nhiêu?
+
+65
+00:04:08,859 --> 00:04:11,823
+Tối đa là 1.
+
+66
+00:04:11,823 --> 00:04:12,737
+Các bạn hiểu chứ?
+
+67
+00:04:12,737 --> 00:04:15,220
+Còn giờ tôi hỏi câu này.
+
+68
+00:04:15,220 --> 00:04:20,040
+Hệ số tương quan của 2,1 là bao nhiêu?
+
+69
+00:04:20,040 --> 00:04:21,972
+Số này bằng bao nhiêu?
+
+70
+00:04:28,433 --> 00:04:33,059
+Còn số này thì bằng bao nhiêu?
+
+71
+00:04:34,488 --> 00:04:40,300
+Các bạn thử không tính toán, cho tôi biết giá trị nào không đổi.
+
+72
+00:04:41,610 --> 00:04:48,051
+Độ lớn được đánh giá theo hệ số tương quan, do đó nó vẫn giữ nguyên là 1, đúng không?
+
+73
+00:04:48,051 --> 00:04:53,073
+Vì các bạn đang tiêu chuẩn hóa nên các bạn có thể thoải mái
+
+74
+00:04:53,073 --> 00:04:56,532
+trao đổi vị trí của 2 thông số độ lệch chuẩn.
+
+75
+00:04:56,532 --> 00:05:01,628
+Nhưng tử số thì phải giữ cố định.
+
+76
+00:05:01,628 --> 00:05:02,590
+Giờ tới số Beta.
+
+77
+00:05:03,920 --> 00:05:07,299
+Có gì thay đổi không khi tôi thay đổi các đáp án?
+
+78
+00:05:07,299 --> 00:05:12,427
+Có. Bởi vì tử số giữ nguyên, nhưng mẫu số sẽ thay đổi.
+
+79
+00:05:12,427 --> 00:05:13,700
+Vậy kết quả là bao nhiêu?
+
+80
+00:05:13,700 --> 00:05:18,380
+Nó trở thành phương sai của mức an toàn 1, đúng không?
+
+81
+00:05:18,380 --> 00:05:20,267
+Nhỡ kĩ đấy.
+
+82
+00:05:20,267 --> 00:05:21,905
+Vậy số đó bằng bao nhiêu?
+
+83
+00:05:21,905 --> 00:05:24,261
+11.61.
+
+84
+00:05:24,261 --> 00:05:28,045
+Cái các bạn cần nhớ là hệ số tương quan
+
+85
+00:05:28,045 --> 00:05:32,589
+có ảnh hưởng đến độ lớn và
+
+86
+00:05:32,589 --> 00:05:38,187
+hệ số Beta cũng ảnh hưởng đến độ lớn của cái khác, 
+nhưng cả 2 đại lượng đều độc lập
+
+87
+00:05:38,187 --> 00:05:40,388
+Và chúng ta có thể so sánh chúng với nhau.
+
+88
+00:05:40,388 --> 00:05:44,101
+Có nghĩa là hệ số Beta 1 là số Beta của 2 mức an toàn khác nhau,
+
+89
+00:05:44,101 --> 00:05:46,189
+và có thể được đem ra so sánh với những số khác.
+
+90
+00:05:46,189 --> 00:05:48,326
+Các hệ số tương quan cũng vậy.
+
+91
+00:05:48,326 --> 00:05:51,989
+Lát nữa khi nghỉ giải lao,
+
+92
+00:05:51,989 --> 00:05:54,539
+tôi sẽ thay đổi cách học.
+
+93
+00:05:54,539 --> 00:05:59,730
+Khái niệm thì không đổi, nhưng công thức tính toàn và
+
+94
+00:05:59,730 --> 00:06:04,666
+cách học sẽ thay đổi khi các bạn gặp các số khác nhau,
+
+95
+00:06:04,666 --> 00:06:09,451
+các bạn sẽ thấy chúng trong ví dụ sau, và cả trong thực tế nữa.
+
+96
+00:06:09,451 --> 00:06:13,438
+Khái niệm thì không đổi, nhưng cách thức tính toán và
+
+97
+00:06:13,438 --> 00:06:16,639
+phương pháp tính sẽ thay đổi.
+
+98
+00:06:16,639 --> 00:06:19,990
+Khi giải lao xong, tôi sẽ cho các bạn xem các số liệu mới.
+
+99
+00:06:19,990 --> 00:06:21,171
+Nhớ phóng to lên để coi cho rõ.
+
+100
+00:06:21,171 --> 00:06:24,388
+Dữ liệu theo kì hạn.
+Các bạn nên làm quen là vừa.
+
+101
+00:06:24,388 --> 00:06:26,959
+Tôi đang dùng bảng tính trong Excel.
+
+102
+00:06:26,959 --> 00:06:29,090
+Tôi sẽ trình ra cho các bạn xem.
+
+103
+00:06:29,090 --> 00:06:31,250
+Và sau đó tôi sẽ tắt nó đi.
+
+104
+00:06:31,250 --> 00:06:35,861
+Và tôi sẽ chỉ cho các bạn cách dùng các hàm thống kê khác nhau.
+
+105
+00:06:35,861 --> 00:06:41,238
+những cách đơn giản mà các bạn có thể tự liên hệ được.
+
+106
+00:06:41,238 --> 00:06:46,563
+Và sau đó chúng ta sẽ tính toán, rồi chúng ta sẽ tổng kết học phần này lại,
+
+107
+00:06:46,563 --> 00:06:50,223
+là học phần về ứng dụng của rủi ro và thống kê.
+
+108
+00:06:50,223 --> 00:06:51,740
+Hẹn gặp các bạn trong ít phút nữa.
+

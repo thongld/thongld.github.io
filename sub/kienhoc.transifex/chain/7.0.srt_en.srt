@@ -1,0 +1,616 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/XxXNi9oHBDw
+
+1
+00:00:00,500 --> 00:00:03,954
+Hello, welcome back to SC1x, Supply Chain Fundamentals.
+
+2
+00:00:03,954 --> 00:00:05,370
+This week, we're going to continue
+
+3
+00:00:05,370 --> 00:00:07,810
+our discussion of inventory.
+
+4
+00:00:07,810 --> 00:00:10,780
+So we're going to talk about another version of inventory
+
+5
+00:00:10,780 --> 00:00:11,280
+management.
+
+6
+00:00:11,280 --> 00:00:13,500
+We're going to change our assumptions a little bit.
+
+7
+00:00:13,500 --> 00:00:17,040
+Last time, when we developed the economic order quantity,
+
+8
+00:00:17,040 --> 00:00:19,890
+we made some assumptions here, a lot of different assumptions.
+
+9
+00:00:19,890 --> 00:00:23,310
+But three that are our key first is,
+
+10
+00:00:23,310 --> 00:00:29,620
+we made the assumption that the demand was known and constant.
+
+11
+00:00:29,620 --> 00:00:31,140
+So we assumed it was deterministic.
+
+12
+00:00:31,140 --> 00:00:31,800
+It was solid.
+
+13
+00:00:31,800 --> 00:00:33,660
+And we knew what that was going to be.
+
+14
+00:00:33,660 --> 00:00:36,150
+Our planning horizon was infinite.
+
+15
+00:00:36,150 --> 00:00:38,340
+That's why we could take averages.
+
+16
+00:00:38,340 --> 00:00:41,255
+We looked at the average inventory level, Q over 2
+
+17
+00:00:41,255 --> 00:00:43,880
+and things like that, because we assumed that the horizon would
+
+18
+00:00:43,880 --> 00:00:45,250
+go on forever.
+
+19
+00:00:45,250 --> 00:00:48,270
+And for excess demand, didn't apply.
+
+20
+00:00:48,270 --> 00:00:49,620
+We didn't have that at all.
+
+21
+00:00:49,620 --> 00:00:51,120
+Now what we're going to do is loosen
+
+22
+00:00:51,120 --> 00:00:52,450
+some of these assumptions.
+
+23
+00:00:52,450 --> 00:00:56,900
+So the first one we're going to loosen is this excess demand.
+
+24
+00:00:56,900 --> 00:00:58,580
+And I'm going to say, well, what happens
+
+25
+00:00:58,580 --> 00:01:02,230
+if we allow back orders?
+
+26
+00:01:02,230 --> 00:01:05,890
+So think about when you order a phone, one of your smartphones.
+
+27
+00:01:05,890 --> 00:01:08,680
+Many people are willing to wait for that order to come.
+
+28
+00:01:08,680 --> 00:01:09,640
+They get on a list.
+
+29
+00:01:09,640 --> 00:01:11,290
+So that's a back order, essentially.
+
+30
+00:01:11,290 --> 00:01:12,250
+You placed an order.
+
+31
+00:01:12,250 --> 00:01:13,458
+You didn't get it right away.
+
+32
+00:01:13,458 --> 00:01:16,150
+But you're willing to wait, as opposed to a lost sale, where
+
+33
+00:01:16,150 --> 00:01:17,680
+you would walk away.
+
+34
+00:01:17,680 --> 00:01:20,200
+So what happens if you allow back orders?
+
+35
+00:01:20,200 --> 00:01:23,500
+Well, even if I have constant demand and an infinite horizon,
+
+36
+00:01:23,500 --> 00:01:25,720
+we'll see that this changes things.
+
+37
+00:01:25,720 --> 00:01:28,720
+And it changes things because now the amount
+
+38
+00:01:28,720 --> 00:01:30,910
+of back orders that I'm willing to allow
+
+39
+00:01:30,910 --> 00:01:33,970
+is a function of two things, the Cost of Excess
+
+40
+00:01:33,970 --> 00:01:35,110
+and the cost of shortage.
+
+41
+00:01:35,110 --> 00:01:36,640
+And we'll talk about those later.
+
+42
+00:01:36,640 --> 00:01:39,580
+But it's kind of a first step into allowing back orders
+
+43
+00:01:39,580 --> 00:01:42,880
+or when demand is not satisfied.
+
+44
+00:01:42,880 --> 00:01:46,330
+The next thing we're going to do is extend this a little more
+
+45
+00:01:46,330 --> 00:01:50,680
+and talk about what's known as the Newsvendor or a newsboy
+
+46
+00:01:50,680 --> 00:01:52,880
+or a single period problem.
+
+47
+00:01:52,880 --> 00:01:54,550
+And we're going to do here, the demand
+
+48
+00:01:54,550 --> 00:01:58,400
+now is going to be random.
+
+49
+00:01:58,400 --> 00:01:59,847
+So it's variable.
+
+50
+00:01:59,847 --> 00:02:00,430
+We don't know.
+
+51
+00:02:00,430 --> 00:02:02,920
+We might be able to describe it in the distribution.
+
+52
+00:02:02,920 --> 00:02:04,780
+But it's a random variable.
+
+53
+00:02:04,780 --> 00:02:08,720
+Our planning horizon is one period.
+
+54
+00:02:08,720 --> 00:02:10,160
+So what does that mean?
+
+55
+00:02:10,160 --> 00:02:12,040
+That means it's one day, one week.
+
+56
+00:02:12,040 --> 00:02:15,070
+I have to produce and make my decision of how much to make
+
+57
+00:02:15,070 --> 00:02:16,600
+or how much to buy ahead of time.
+
+58
+00:02:16,600 --> 00:02:18,310
+And I cannot recover during that period.
+
+59
+00:02:18,310 --> 00:02:19,934
+At the end of the period, I have to get
+
+60
+00:02:19,934 --> 00:02:21,070
+rid of what I didn't sell.
+
+61
+00:02:21,070 --> 00:02:22,600
+We'll talk more about that.
+
+62
+00:02:22,600 --> 00:02:24,670
+And for excess demand, we're going
+
+63
+00:02:24,670 --> 00:02:28,860
+to assume that we have lost sales.
+
+64
+00:02:28,860 --> 00:02:31,980
+In other words, if I have my product,
+
+65
+00:02:31,980 --> 00:02:33,440
+someone and I sell it all.
+
+66
+00:02:33,440 --> 00:02:34,819
+Someone else comes in.
+
+67
+00:02:34,819 --> 00:02:36,110
+I don't get to back order them.
+
+68
+00:02:36,110 --> 00:02:37,100
+I lose that sale.
+
+69
+00:02:37,100 --> 00:02:39,124
+So I lose that potential revenue.
+
+70
+00:02:39,124 --> 00:02:40,790
+So this is what we're going to focus on.
+
+71
+00:02:40,790 --> 00:02:43,850
+And let me give you some flesh around this of how this works.
+
+72
+00:02:43,850 --> 00:02:45,470
+It's called the Newsvendor problem,
+
+73
+00:02:45,470 --> 00:02:49,280
+because it mimics what we do when we supply newspapers.
+
+74
+00:02:49,280 --> 00:02:51,800
+No one wants to read yesterday's newspaper.
+
+75
+00:02:51,800 --> 00:02:53,130
+So the idea is like this.
+
+76
+00:02:53,130 --> 00:02:56,000
+You're a newsboy, a newsgirl, a Newsvendor,
+
+77
+00:02:56,000 --> 00:02:59,240
+and you have the paper company, in this case, the Boston Globe.
+
+78
+00:02:59,240 --> 00:03:01,640
+And you're going to, just like any good supply chain,
+
+79
+00:03:01,640 --> 00:03:02,650
+place an order.
+
+80
+00:03:02,650 --> 00:03:05,360
+And you're going to say, I want q newspapers
+
+81
+00:03:05,360 --> 00:03:07,010
+that I have to sell that day.
+
+82
+00:03:07,010 --> 00:03:09,990
+They are going to send you that many.
+
+83
+00:03:09,990 --> 00:03:14,090
+So I'm going to have this stack of newspapers here
+
+84
+00:03:14,090 --> 00:03:17,000
+that is going to be Q many.
+
+85
+00:03:17,000 --> 00:03:20,600
+And then we assume that you pay them for each of those
+
+86
+00:03:20,600 --> 00:03:23,150
+that you ordered, regardless of whether you sell them.
+
+87
+00:03:23,150 --> 00:03:25,020
+Now during the course of the day,
+
+88
+00:03:25,020 --> 00:03:27,050
+you're going to sell a certain number.
+
+89
+00:03:27,050 --> 00:03:29,600
+And that's a random variable that we're going to call x.
+
+90
+00:03:29,600 --> 00:03:35,930
+So I'm going to sell x newspapers during the day.
+
+91
+00:03:35,930 --> 00:03:39,430
+And the question is, how many should I buy?
+
+92
+00:03:39,430 --> 00:03:40,990
+What should my Q be?
+
+93
+00:03:40,990 --> 00:03:42,940
+And the way to think about this is
+
+94
+00:03:42,940 --> 00:03:45,820
+that there's two situations that could happen.
+
+95
+00:03:45,820 --> 00:03:50,800
+Situation 1 is where x is less than Q.
+
+96
+00:03:50,800 --> 00:03:52,160
+And what does that mean?
+
+97
+00:03:52,160 --> 00:03:55,080
+That means I'm going to have excess.
+
+98
+00:03:55,080 --> 00:03:56,850
+I'm going to have extra papers at the end.
+
+99
+00:03:56,850 --> 00:03:59,810
+So think of that cost of excess.
+
+100
+00:03:59,810 --> 00:04:02,690
+Second situation, when x is greater
+
+101
+00:04:02,690 --> 00:04:04,710
+than Q. What does that mean?
+
+102
+00:04:04,710 --> 00:04:07,780
+That means I'm going to be short.
+
+103
+00:04:07,780 --> 00:04:09,700
+I'm not going to have enough papers.
+
+104
+00:04:09,700 --> 00:04:11,230
+I'm going to have a shortage.
+
+105
+00:04:11,230 --> 00:04:15,500
+And so the question is, how do I decide which to do?
+
+106
+00:04:15,500 --> 00:04:18,760
+And so if I look at the distribution of this demand,
+
+107
+00:04:18,760 --> 00:04:21,160
+where this is my demand x, the question is,
+
+108
+00:04:21,160 --> 00:04:23,680
+should I order this many, right?
+
+109
+00:04:23,680 --> 00:04:24,820
+If that's my distribution?
+
+110
+00:04:24,820 --> 00:04:27,280
+And I know if I ordered that many, the probability of me
+
+111
+00:04:27,280 --> 00:04:29,230
+being short is pretty high, because most
+
+112
+00:04:29,230 --> 00:04:31,030
+of the distribution is above that.
+
+113
+00:04:31,030 --> 00:04:33,710
+Well, what if I order this many?
+
+114
+00:04:33,710 --> 00:04:37,180
+Well, then chances are I'm going to not be short, right?
+
+115
+00:04:37,180 --> 00:04:38,680
+But I might have a lot of excess,
+
+116
+00:04:38,680 --> 00:04:40,240
+because it might end up here.
+
+117
+00:04:40,240 --> 00:04:42,280
+So what you're seeing is there's a trade off
+
+118
+00:04:42,280 --> 00:04:45,461
+between the shortage and the excess costs.
+
+119
+00:04:45,461 --> 00:04:47,710
+And what we're going to end up finding out and showing
+
+120
+00:04:47,710 --> 00:04:49,660
+you is that, really, what you're trying to do
+
+121
+00:04:49,660 --> 00:04:51,290
+is maximize your profit.
+
+122
+00:04:51,290 --> 00:04:53,150
+How do I maximize my profit?
+
+123
+00:04:53,150 --> 00:04:55,660
+Well, I've got the price that I'm selling it for.
+
+124
+00:04:55,660 --> 00:04:58,840
+And it's the minimum of either how many customers come in
+
+125
+00:04:58,840 --> 00:05:00,730
+to sell or how many I ordered.
+
+126
+00:05:00,730 --> 00:05:02,450
+I can't sell more than I ordered.
+
+127
+00:05:02,450 --> 00:05:04,180
+I can't sell more than the number
+
+128
+00:05:04,180 --> 00:05:06,855
+of people who come to buy them, minus the cost.
+
+129
+00:05:06,855 --> 00:05:08,980
+I've got to pay for all of the ones that I ordered,
+
+130
+00:05:08,980 --> 00:05:11,200
+regardless of how many I sell.
+
+131
+00:05:11,200 --> 00:05:13,090
+So this is the core problem.
+
+132
+00:05:13,090 --> 00:05:16,726
+And what we'll see, at the end of the result of the lesson,
+
+133
+00:05:16,726 --> 00:05:18,350
+is something called the critical ratio.
+
+134
+00:05:18,350 --> 00:05:19,770
+And this is the key takeaway.
+
+135
+00:05:19,770 --> 00:05:22,690
+And that the critical ratio is essentially
+
+136
+00:05:22,690 --> 00:05:27,060
+the ratio of the cost of a shortage per unit,
+
+137
+00:05:27,060 --> 00:05:29,070
+divided by the sum of the cost of the shortage,
+
+138
+00:05:29,070 --> 00:05:30,450
+plus the cost of the excess.
+
+139
+00:05:30,450 --> 00:05:35,280
+And what this is telling me is how much of this distribution
+
+140
+00:05:35,280 --> 00:05:38,400
+I should cover to maximize the profit.
+
+141
+00:05:38,400 --> 00:05:41,460
+This area will be equal to the critical ratio, which
+
+142
+00:05:41,460 --> 00:05:43,050
+is a really cool result.
+
+143
+00:05:43,050 --> 00:05:46,350
+So essentially, based on the balance of overage an underage,
+
+144
+00:05:46,350 --> 00:05:47,970
+cost of excess and shortage, it's
+
+145
+00:05:47,970 --> 00:05:50,177
+going to tell me how much of this distribution
+
+146
+00:05:50,177 --> 00:05:52,260
+I should cover, whether it's a normal distribution
+
+147
+00:05:52,260 --> 00:05:53,485
+or any other shape.
+
+148
+00:05:53,485 --> 00:05:55,610
+So this is what we're going to cover in this week's
+
+149
+00:05:55,610 --> 00:05:59,220
+lessons, the Newsvendor problem and dealing with random demand
+
+150
+00:05:59,220 --> 00:06:00,660
+in a single period.
+
+151
+00:06:00,660 --> 00:06:03,077
+So watch the videos, go through the recitations,
+
+152
+00:06:03,077 --> 00:06:05,160
+try the quick questions and the practice problems.
+
+153
+00:06:05,160 --> 00:06:06,830
+Have fun.
+

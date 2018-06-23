@@ -1,0 +1,438 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/sNhlNi0zL2A
+
+1
+00:00:00,000 --> 00:00:00,259
+
+2
+00:00:00,259 --> 00:00:02,300
+DR. RAMESH YERRABALLI:
+This is Ramesh Yerraballi.
+
+3
+00:00:02,300 --> 00:00:08,210
+Let's take a look at another interrupt,
+which is the SysTick interrupt.
+
+4
+00:00:08,210 --> 00:00:14,350
+The SysTick interrupt is used
+to generate periodic events.
+
+5
+00:00:14,350 --> 00:00:15,860
+That's one of its uses.
+
+6
+00:00:15,860 --> 00:00:22,290
+So we'll see an example where we want
+to produce a wave, a square wave if you
+
+7
+00:00:22,290 --> 00:00:31,740
+will, where on port F, bit 2, we
+will produce a square wave like this.
+
+8
+00:00:31,740 --> 00:00:38,360
+It's going to be on and off for one
+millisecond, on one millisecond, off,
+
+9
+00:00:38,360 --> 00:00:40,870
+and repeats this process.
+
+10
+00:00:40,870 --> 00:00:43,220
+So that's our problem.
+
+11
+00:00:43,220 --> 00:00:45,870
+So the way we're going
+to solve this problem
+
+12
+00:00:45,870 --> 00:00:50,490
+is we will periodically interrupt.
+
+13
+00:00:50,490 --> 00:00:56,250
+And every time we
+interrupt, we will toggle.
+
+14
+00:00:56,250 --> 00:01:01,990
+The software action will be toggled PF2.
+
+15
+00:01:01,990 --> 00:01:05,880
+So this is our trigger and
+the action is toggle PF2.
+
+16
+00:01:05,880 --> 00:01:12,480
+So let's take a look at the
+components of our program.
+
+17
+00:01:12,480 --> 00:01:18,140
+The initialization involves our SysTick
+registers, the control register,
+
+18
+00:01:18,140 --> 00:01:22,290
+the reload register, and
+the current register.
+
+19
+00:01:22,290 --> 00:01:28,380
+So we will set our control register
+to 0, disable during set-up.
+
+20
+00:01:28,380 --> 00:01:32,220
+We will set our reload value
+to a calculated period.
+
+21
+00:01:32,220 --> 00:01:36,030
+This period corresponds
+to our 1 millisecond.
+
+22
+00:01:36,030 --> 00:01:41,210
+And the calculation is that
+our clock is at 16 megahertz.
+
+23
+00:01:41,210 --> 00:01:46,800
+And at 16 megahertz, 1
+millisecond is 16,000 times
+
+24
+00:01:46,800 --> 00:01:50,720
+62.5, which is 1 millisecond.
+
+25
+00:01:50,720 --> 00:01:53,970
+So our count is going to be 16,000.
+
+26
+00:01:53,970 --> 00:01:56,540
+So that's what we call it.
+
+27
+00:01:56,540 --> 00:02:03,710
+And as Jon indicated in the previous
+program, we need to set the priority.
+
+28
+00:02:03,710 --> 00:02:06,090
+The priority for the
+SysTick interrupt is
+
+29
+00:02:06,090 --> 00:02:10,389
+in a different register, which is the
+priority three register of the Nested
+
+30
+00:02:10,389 --> 00:02:12,380
+Vectored Interrupt Control.
+
+31
+00:02:12,380 --> 00:02:19,070
+And we are setting the priority to
+be equal to 2 by this statement here.
+
+32
+00:02:19,070 --> 00:02:23,040
+And the last thing we will
+do is we will enable SysTick
+
+33
+00:02:23,040 --> 00:02:25,900
+because we finished the initialization.
+
+34
+00:02:25,900 --> 00:02:31,820
+And then we will enable interrupts
+by setting the I to be equal to 0.
+
+35
+00:02:31,820 --> 00:02:34,840
+DR. JONATHAN VALVANO: Professor
+Yerraballi, this 7 is new.
+
+36
+00:02:34,840 --> 00:02:37,150
+Last time, we wrote a
+different number to it.
+
+37
+00:02:37,150 --> 00:02:38,980
+Last time, we wrote a 5.
+
+38
+00:02:38,980 --> 00:02:40,529
+Why is it a 7 now?
+
+39
+00:02:40,529 --> 00:02:42,570
+DR. RAMESH YERRABALLI: So
+that's a good question,
+
+40
+00:02:42,570 --> 00:02:50,690
+because previously when we enabled
+SysTick, we wrote a value of 5 here,
+
+41
+00:02:50,690 --> 00:02:54,030
+which was a 101.
+
+42
+00:02:54,030 --> 00:02:59,380
+Now we have a different value,
+which is 111 instead of a 101
+
+43
+00:02:59,380 --> 00:03:00,990
+which corresponds to a 7.
+
+44
+00:03:00,990 --> 00:03:08,000
+So this bit here is
+to enable interrupts.
+
+45
+00:03:08,000 --> 00:03:13,380
+That is, we're saying that when
+SysTick crosses the boundary where
+
+46
+00:03:13,380 --> 00:03:19,780
+it goes from 1 to a 0 transition,
+we want an interrupt to be flagged.
+
+47
+00:03:19,780 --> 00:03:23,710
+And that's a bit to say that.
+
+48
+00:03:23,710 --> 00:03:25,290
+DR. JONATHAN VALVANO: Oh.
+
+49
+00:03:25,290 --> 00:03:26,373
+DR. RAMESH YERRABALLI: OK.
+
+50
+00:03:26,373 --> 00:03:29,240
+So let's take a look at
+how the code is set up.
+
+51
+00:03:29,240 --> 00:03:32,370
+So first, we initialize
+the SysTick interrupt
+
+52
+00:03:32,370 --> 00:03:35,660
+by calling the SysTick_Init
+with this value, 16,000,
+
+53
+00:03:35,660 --> 00:03:37,850
+which corresponds to 1 millisecond.
+
+54
+00:03:37,850 --> 00:03:39,430
+We enable interrupts.
+
+55
+00:03:39,430 --> 00:03:45,110
+And our while loop is just sitting
+there waiting for the SysTick
+
+56
+00:03:45,110 --> 00:03:50,940
+to be fired off every time
+it crosses the 1 0 boundary.
+
+57
+00:03:50,940 --> 00:03:56,550
+And this is just a wait for interrupts
+so that we are in a power saving mode.
+
+58
+00:03:56,550 --> 00:04:04,100
+So now when the interrupt trigger does
+occur, we execute the SysTick_Handler.
+
+59
+00:04:04,100 --> 00:04:11,520
+And within the SysTick_Handler, we
+perform a toggle on port F, bit 2.
+
+60
+00:04:11,520 --> 00:04:15,940
+And we're also incrementing a counter
+to keep track of how many times
+
+61
+00:04:15,940 --> 00:04:21,472
+we did this flipping of the bit PF2.
+
+62
+00:04:21,472 --> 00:04:23,680
+DR. JONATHAN VALVANO: So
+how are we going to test it?
+
+63
+00:04:23,680 --> 00:04:29,430
+DR. RAMESH YERRABALLI: So let's test
+this by running it in our simulation.
+
+64
+00:04:29,430 --> 00:04:32,700
+So we're going to make sure
+we're in simulation mode.
+
+65
+00:04:32,700 --> 00:04:34,130
+So we go to our debug.
+
+66
+00:04:34,130 --> 00:04:36,710
+It's in the simulator mode, OK.
+
+67
+00:04:36,710 --> 00:04:40,159
+And I'm going to go ahead and--
+
+68
+00:04:40,159 --> 00:04:41,450
+DR. JONATHAN VALVANO: Build it.
+
+69
+00:04:41,450 --> 00:04:43,950
+DR. RAMESH YERRABALLI: --build it.
+
+70
+00:04:43,950 --> 00:04:46,790
+And I'm going to run it.
+
+71
+00:04:46,790 --> 00:04:51,120
+And we have already set
+it up so that the Logic
+
+72
+00:04:51,120 --> 00:04:56,860
+Analyzer is monitoring port F, bit 2.
+
+73
+00:04:56,860 --> 00:04:59,120
+And we also have a
+viewer here that shows
+
+74
+00:04:59,120 --> 00:05:04,670
+us our SysTick timer, the registers
+corresponding to SysTick timer.
+
+75
+00:05:04,670 --> 00:05:07,880
+And this is on PF2 which
+we can look at here
+
+76
+00:05:07,880 --> 00:05:10,600
+or we can look at in the Logic Analyzer.
+
+77
+00:05:10,600 --> 00:05:12,838
+So let's go ahead and run it.
+
+78
+00:05:12,838 --> 00:05:14,140
+DR. JONATHAN VALVANO: Ooh.
+
+79
+00:05:14,140 --> 00:05:19,690
+DR. RAMESH YERRABALLI: And we see
+the SysTick causing interrupts.
+
+80
+00:05:19,690 --> 00:05:26,550
+And we can measure the time
+between our two interrupts.
+
+81
+00:05:26,550 --> 00:05:37,760
+And that's 5.6 to 5.690, so that's
+pretty close to 1 millisecond.
+
+82
+00:05:37,760 --> 00:05:38,970
+DR. JONATHAN VALVANO: Works.
+
+83
+00:05:38,970 --> 00:05:40,303
+DR. RAMESH YERRABALLI: It works.
+
+84
+00:05:40,303 --> 00:05:43,540
+And we can also see
+the LED here, but this
+
+85
+00:05:43,540 --> 00:05:47,210
+is a visual that doesn't
+tell us whether it's actually
+
+86
+00:05:47,210 --> 00:05:49,980
+going on and at 1 millisecond.
+
+87
+00:05:49,980 --> 00:05:54,410
+So we looked at how the SysTick can
+be used to generate a square wave.
+
+88
+00:05:54,410 --> 00:05:57,320
+But maybe there's some
+interesting applications for this.
+
+89
+00:05:57,320 --> 00:05:58,680
+Jon, what do you think?
+
+90
+00:05:58,680 --> 00:05:59,805
+DR. JONATHAN VALVANO: Yeah.
+
+91
+00:05:59,805 --> 00:06:02,810
+We can use this type of
+wave to control our motor.
+
+92
+00:06:02,810 --> 00:06:08,320
+So we're going to build a robot and
+use this SysTick wave to apply power
+
+93
+00:06:08,320 --> 00:06:09,395
+to the wheels.
+
+94
+00:06:09,395 --> 00:06:10,940
+Should we build it?
+
+95
+00:06:10,940 --> 00:06:12,890
+DR. RAMESH YERRABALLI: Let's do it.

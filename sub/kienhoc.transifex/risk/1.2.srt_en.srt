@@ -1,0 +1,544 @@
+0
+00:00:05,179 --> 00:00:06,180
+Welcome back.
+https://youtu.be/84X0GJ8elTo
+1
+00:00:06,180 --> 00:00:11,040
+So we introduced the notion of risk and return and
+
+2
+00:00:11,040 --> 00:00:15,640
+the purposes to kinda try to understand risk before relating it to return,
+
+3
+00:00:15,640 --> 00:00:22,200
+because risk is the kind of the source of return, if you may, right.
+
+4
+00:00:22,200 --> 00:00:24,280
+So let&#39;s make it a little bit interesting.
+
+5
+00:00:24,280 --> 00:00:29,540
+Let&#39;s assume our goal is to value a company called Rainforest, Inc.
+
+6
+00:00:29,540 --> 00:00:34,200
+And by the way, this is my attempt at being humorous.
+
+7
+00:00:34,200 --> 00:00:35,500
+Just hang on.
+
+8
+00:00:35,500 --> 00:00:40,680
+We want to evaluate an idea/project/firm that is launching an online portal
+
+9
+00:00:40,680 --> 00:00:45,060
+to sell everything under the sun, and we&#39;ll call it Rainforest.
+
+10
+00:00:45,060 --> 00:00:50,740
+And anyway, I&#39;ll leave it at that, my attempts at being funny.
+
+11
+00:00:50,740 --> 00:00:52,350
+So you want to value Rainforest.
+
+12
+00:00:53,510 --> 00:00:56,350
+What you have done is your job, you&#39;re the manager.
+
+13
+00:00:56,350 --> 00:01:00,090
+Or you&#39;re being hired by a set of people, by stockholders,
+
+14
+00:01:00,090 --> 00:01:02,200
+to run the company, this new company.
+
+15
+00:01:02,200 --> 00:01:03,760
+And you projected all the cashflows.
+
+16
+00:01:03,760 --> 00:01:06,880
+Remember, who do the cashflows belong to, belong, in quotes?
+
+17
+00:01:08,280 --> 00:01:11,110
+You, if you haven&#39;t done your cash flow estimation,
+
+18
+00:01:11,110 --> 00:01:13,510
+there&#39;s nobody who&#39;s going to give you money.
+
+19
+00:01:13,510 --> 00:01:15,750
+Right? Even you shouldn&#39;t put your money in that
+
+20
+00:01:15,750 --> 00:01:19,850
+idea because you&#39;d have no clue what value it&#39;s going to provide in the future.
+
+21
+00:01:19,850 --> 00:01:21,170
+So you&#39;ve done that.
+
+22
+00:01:21,170 --> 00:01:22,840
+And we know how to do that.
+
+23
+00:01:22,840 --> 00:01:25,880
+I recommend that you don&#39;t do this section
+
+24
+00:01:25,880 --> 00:01:28,690
+until you know how to do time value of money and cash flows.
+
+25
+00:01:28,690 --> 00:01:30,190
+We have done that.
+
+26
+00:01:31,650 --> 00:01:34,250
+How would you determine the cost of capital?
+
+27
+00:01:35,320 --> 00:01:37,428
+In other words, you have this new idea,
+
+28
+00:01:37,428 --> 00:01:41,340
+you have all the cash flows over which you have more control in estimating.
+
+29
+00:01:41,340 --> 00:01:44,940
+Of course it depends on market share, market place and all that.
+
+30
+00:01:44,940 --> 00:01:45,860
+But you have done it.
+
+31
+00:01:46,890 --> 00:01:49,390
+How do you determine your cost of capital?
+
+32
+00:01:49,390 --> 00:01:54,110
+And this is where a lot of people just pull things out of thin air.
+
+33
+00:01:54,110 --> 00:01:58,170
+And this is again where I just love markets.
+
+34
+00:01:58,170 --> 00:02:00,210
+I love finance, I love competition,
+
+35
+00:02:00,210 --> 00:02:03,079
+not to say that it exists even in the best of markets.
+
+36
+00:02:04,390 --> 00:02:07,060
+But this is the beauty why we like markets.
+
+37
+00:02:07,060 --> 00:02:09,450
+This is the value of information.
+
+38
+00:02:09,449 --> 00:02:12,100
+This is the value of democracy,
+
+39
+00:02:12,100 --> 00:02:16,140
+that people can actually participate in the marketplace.
+
+40
+00:02:16,140 --> 00:02:18,270
+So how do you determine the cost of capital?
+
+41
+00:02:19,570 --> 00:02:21,700
+To answer that question, you have to remember and
+
+42
+00:02:21,700 --> 00:02:25,250
+I&#39;ll answer it in a second, you remember one big hint.
+
+43
+00:02:26,540 --> 00:02:29,630
+All valuation is relative and
+
+44
+00:02:29,630 --> 00:02:33,170
+the law of one price is lurking behind the background.
+
+45
+00:02:33,170 --> 00:02:35,180
+So what will you do?
+
+46
+00:02:36,990 --> 00:02:38,110
+You can pause here.
+
+47
+00:02:38,110 --> 00:02:38,750
+Take a break.
+
+48
+00:02:38,750 --> 00:02:39,560
+Go for a run.
+
+49
+00:02:39,560 --> 00:02:41,150
+Think deeply about it.
+
+50
+00:02:41,150 --> 00:02:45,800
+What I want to do is I&#39;m gonna keep moving so that we are on track, and
+
+51
+00:02:45,800 --> 00:02:51,820
+these short segments of videos make sense, contextually, and within this.
+
+52
+00:02:51,820 --> 00:02:56,800
+So, if you realize that all pricing is relative, what will you do?
+
+53
+00:02:56,800 --> 00:03:04,680
+You will go looking for a company that has a very, very similar business proposition.
+
+54
+00:03:04,680 --> 00:03:08,730
+And that&#39;s why I thought Rainforest was a pretty funny choice.
+
+55
+00:03:08,730 --> 00:03:09,460
+So what will you do?
+
+56
+00:03:11,020 --> 00:03:15,720
+You&#39;ll go looking for a company that&#39;s very similar and that company,
+
+57
+00:03:15,720 --> 00:03:17,530
+we know what it is.
+
+58
+00:03:17,530 --> 00:03:20,460
+We&#39;ll call it, for simplicity, Amazon.
+
+59
+00:03:22,060 --> 00:03:23,358
+So this is what you&#39;ll do.
+
+60
+00:03:23,358 --> 00:03:30,030
+Please stare at the screen or the slide.
+
+61
+00:03:30,030 --> 00:03:30,870
+What will you see?
+
+62
+00:03:30,870 --> 00:03:32,430
+My favorite picture all over again.
+
+63
+00:03:33,810 --> 00:03:35,480
+And you have a fundamental problem.
+
+64
+00:03:35,480 --> 00:03:37,710
+So you go to Amazon, what do you see?
+
+65
+00:03:37,710 --> 00:03:39,179
+You see its balance sheet.
+
+66
+00:03:40,860 --> 00:03:43,980
+And you see on the balance sheet what?
+
+67
+00:03:43,980 --> 00:03:48,450
+Real assets and equity and debt.
+
+68
+00:03:49,670 --> 00:03:53,260
+Let&#39;s assume this number is relatively close to zero,
+
+69
+00:03:53,260 --> 00:03:58,110
+it would just make matters a little simple and we&#39;ll do debt financing,
+
+70
+00:03:58,110 --> 00:04:02,710
+equity financing and the you have two courses that you could go into,
+
+71
+00:04:02,710 --> 00:04:08,140
+which are sometimes built in a series, they are on financing.
+
+72
+00:04:08,140 --> 00:04:11,280
+And in this particular x series, we&#39;ll have them.
+
+73
+00:04:11,280 --> 00:04:15,040
+But you can do this course in isolation, that&#39;s why I&#39;m emphasizing it.
+
+74
+00:04:15,040 --> 00:04:17,090
+For the time being, let&#39;s assume only equity.
+
+75
+00:04:18,730 --> 00:04:20,740
+So what is your problem?
+
+76
+00:04:20,740 --> 00:04:23,230
+The real assets of Amazon are sitting here.
+
+77
+00:04:25,640 --> 00:04:30,310
+They are generating cash flows to Amazon, but they are based on that.
+
+78
+00:04:31,330 --> 00:04:32,310
+They are being returned.
+
+79
+00:04:33,810 --> 00:04:37,190
+And that return, I&#39;m going to call Ra.
+
+80
+00:04:37,190 --> 00:04:39,520
+Please remember, this is very important.
+
+81
+00:04:39,520 --> 00:04:45,850
+The return on assets we&#39;ll call Ra, and as you go, it will make sense what Ra is.
+
+82
+00:04:45,850 --> 00:04:48,510
+So where does Ra come from?
+
+83
+00:04:48,510 --> 00:04:50,720
+Where do the cash flows come from?
+
+84
+00:04:50,720 --> 00:04:52,940
+They come from your returns.
+
+85
+00:04:52,940 --> 00:04:55,200
+And, I mean, from your real assets.
+
+86
+00:04:55,200 --> 00:04:58,840
+And then you take those returns and distribute them all to whom?
+
+87
+00:05:00,170 --> 00:05:03,380
+Equity in this case, because the data is relatively low.
+
+88
+00:05:03,380 --> 00:05:04,590
+So what is the challenge?
+
+89
+00:05:05,690 --> 00:05:07,965
+The fundamental problem is you can&#39;t see Ra.
+
+90
+00:05:09,020 --> 00:05:11,100
+Because Ra is return on real assets.
+
+91
+00:05:11,100 --> 00:05:15,090
+Heck, you don&#39;t even know what real assets Amazon has.
+
+92
+00:05:15,090 --> 00:05:20,240
+I would claim that even Amazon can&#39;t figure out its return on assets.
+
+93
+00:05:20,240 --> 00:05:21,220
+Now here&#39;s the beauty of it.
+
+94
+00:05:23,230 --> 00:05:25,830
+And that&#39;s why markets are so good.
+
+95
+00:05:25,830 --> 00:05:28,690
+That one of the main primary functions,
+
+96
+00:05:28,690 --> 00:05:34,630
+main primary functions, that will count is to figure out value.
+
+97
+00:05:34,630 --> 00:05:38,400
+Markets are created so that we can make it transparent so
+
+98
+00:05:38,400 --> 00:05:40,770
+if there&#39;s no debt, what will Ra be?
+
+99
+00:05:42,080 --> 00:05:44,720
+Ra has to be equal to Re.
+
+100
+00:05:47,400 --> 00:05:51,496
+In other words the return on equity and the return on assets have to be the same
+
+101
+00:05:51,496 --> 00:05:55,098
+because there&#39;s no debt, there&#39;s nobody else sharing the pie?
+
+102
+00:05:55,098 --> 00:05:57,166
+So but what comes first?
+
+103
+00:05:57,166 --> 00:06:02,502
+Return on assets, and then you decide to give it all to equity holders
+
+104
+00:06:02,502 --> 00:06:08,310
+because they are the main financing source for this company, okay?
+
+105
+00:06:08,310 --> 00:06:09,800
+So here&#39;s the beauty of finance.
+
+106
+00:06:10,830 --> 00:06:15,193
+If we didn&#39;t have this trading going on, if we didn&#39;t have markets,
+
+107
+00:06:19,259 --> 00:06:21,380
+And we didn&#39;t have trading going on.
+
+108
+00:06:22,750 --> 00:06:26,080
+It would not be easy to determine this.
+
+109
+00:06:26,080 --> 00:06:30,670
+And because we have markets, and we have trading going on, there should be a Ts.
+
+110
+00:06:30,670 --> 00:06:32,131
+I got excited.
+
+111
+00:06:34,228 --> 00:06:36,380
+You could never forget our table.
+
+112
+00:06:36,380 --> 00:06:40,750
+So you&#39;re catching your nose the long way through markets.
+
+113
+00:06:40,750 --> 00:06:42,240
+Markets reflect value.
+
+114
+00:06:43,380 --> 00:06:46,110
+Right? So I work for a not for profit.
+
+115
+00:06:46,110 --> 00:06:49,240
+One of the best creations is a university.
+
+116
+00:06:49,240 --> 00:06:50,360
+I work for a university.
+
+117
+00:06:51,380 --> 00:06:56,230
+But the one thing about not for profits is you don&#39;t know the rate of return.
+
+118
+00:06:56,230 --> 00:07:00,740
+If it, even if it first making some cash flows.
+
+119
+00:07:00,740 --> 00:07:02,630
+Because nothing is public, right.
+
+120
+00:07:02,630 --> 00:07:04,840
+So when you have shares trading,
+
+121
+00:07:04,840 --> 00:07:09,340
+one of the beauties of it is it gives you information about value.
+
+122
+00:07:09,340 --> 00:07:12,240
+And therefore the fundamental problem is resolved.
+
+123
+00:07:13,350 --> 00:07:16,210
+Of course it&#39;s challenging, and there&#39;s debt and so on, so forth.
+
+124
+00:07:16,210 --> 00:07:18,140
+We&#39;ll get into that later.
+
+125
+00:07:18,140 --> 00:07:23,130
+So return on equity and return on assets are the same, therefore we can go and
+
+126
+00:07:23,130 --> 00:07:28,550
+figure out return on assets based on the information about Amazon.
+
+127
+00:07:29,750 --> 00:07:31,640
+I&#39;m going to take a break now and
+
+128
+00:07:31,640 --> 00:07:35,875
+when we come back I&#39;ll spend a few minutes going to Amazon on the web.
+
+129
+00:07:35,875 --> 00:07:40,860
+Remember whenever I teach I try to go to the information that&#39;s readily
+
+130
+00:07:40,860 --> 00:07:42,670
+available with one major caution.
+
+131
+00:07:43,740 --> 00:07:46,850
+As soon as we get into estimation, like we will,
+
+132
+00:07:46,850 --> 00:07:51,090
+of risk, there&#39;s data available on the web, freely available.
+
+133
+00:07:51,090 --> 00:07:53,730
+That doesn&#39;t mean it&#39;s the best data.
+
+134
+00:07:53,730 --> 00:07:55,940
+Okay, so be a little careful.
+
+135
+00:07:55,940 --> 00:07:58,400
+We&#39;ll come back in a minute and go visit Amazon.
+

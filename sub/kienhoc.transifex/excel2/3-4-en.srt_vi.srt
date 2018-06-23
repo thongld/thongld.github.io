@@ -1,0 +1,193 @@
+1
+00:00:01,160 --> 00:00:04,440
+Tuần này chúng ta đã tìm hiểu các xu hướng.
+Trong các video trước
+
+2
+00:00:04,440 --> 00:00:08,820
+chúng ta đã làm theo hai cách:
+Thứ nhất là dùng định dạng theo điều kiện
+(conditional formatting),
+
+3
+00:00:08,820 --> 00:00:13,140
+và thứ hai là dùng biểu đồ trong ô (sparkline).
+Nhưng những kỹ thuật này hơi giống với 
+việc vẽ phác thảo.
+
+4
+00:00:13,380 --> 00:00:14,940
+Bạn chưa thực sự hiểu xu hướng
+ở đó là gì.
+
+5
+00:00:14,949 --> 00:00:19,029
+Chúng ta chỉ đang cố gắng tìm hiểu xem
+dữ liệu chứa những thông tin gì.
+
+6
+00:00:19,220 --> 00:00:23,520
+Nhưng giờ tôi nghĩ các bạn đã sẵn sàng 
+bắt tay vào một nhiệm vụ thực sự. 
+Đó là tạo dựng một biểu đồ.
+
+7
+00:00:23,640 --> 00:00:27,120
+Vậy hãy quay lại trang tính của chúng ta
+và cùng vẽ một biểu đồ nhé.
+
+8
+00:00:27,220 --> 00:00:30,780
+Ta sẽ xoá sparkline đi, không cần chúng nữa.
+
+9
+00:00:31,120 --> 00:00:36,600
+Nếu ta nhìn vào dữ liệu, một kết quả
+ta nhận được từ bước phân tích là
+
+10
+00:00:36,600 --> 00:00:40,520
+tuần đầu tiên và tuần cuối cùng
+không được tính là những tuần thực sự.
+
+11
+00:00:40,520 --> 00:00:42,780
+Hai tuần này chửa rất ít dữ liệu,
+
+12
+00:00:42,780 --> 00:00:46,140
+thế nên tốt hơn hết là xoá chúng đi,
+lọc chúng ra khỏi trang tính để ít nhất
+
+13
+00:00:46,140 --> 00:00:49,280
+ta sẽ có một cái nhìn rõ ràng hơn
+về xu hướng trong dữ liệu.
+
+14
+00:00:49,380 --> 00:00:51,720
+Ta cũng xoá luôn conditional formatting
+
+15
+00:00:51,720 --> 00:00:55,340
+và giờ ta đã sẵn sàng tạo một
+biểu đồ thực sự. Bắt đầu nào.
+
+16
+00:00:55,350 --> 00:00:59,570
+Ta thêm một biểu đồ PivotChart, vì như các bạn
+đã xem ở tuần trước,
+
+17
+00:00:59,570 --> 00:01:04,019
+đây là một công cụ tương tác hữu ích 
+mà ta vẫn có thể chỉnh sửa dữ liệu nếu muốn.
+
+18
+00:01:04,019 --> 00:01:10,360
+Phóng to lên một chút nào, được rồi.
+Nếu ta nhìn vào mặt hàng "Quần chạy bộ",
+chúng ta nghĩ rằng 
+
+19
+00:01:10,360 --> 00:01:13,960
+có một điểm cao lên ở giữa nhưng nhìn chung
+là bằng phẳng.
+
+20
+00:01:13,960 --> 00:01:19,060
+Excel có thể đưa vào một đường biểu thị 
+xu hướng trên bản đồ, bạn có thể thấy
+
+21
+00:01:19,060 --> 00:01:24,100
+Excel đang giúp chúng ta hiểu được dữ liệu,
+vì dù đúng là có những sự lên xuống
+
+22
+00:01:24,100 --> 00:01:26,940
+nhưng đường biểu thị xu hướng có vẻ bằng phẳng.
+
+23
+00:01:27,180 --> 00:01:31,800
+Chúng ta lặp lại các bước với "Áo ngực chạy bộ",
+ta cũng cho vào một đường biểu thị xu hướng.
+
+24
+00:01:32,140 --> 00:01:36,880
+Đáng tiếc là chúng ta thấy 
+xu hướng lại đi xuống.
+
+25
+00:01:37,120 --> 00:01:42,880
+Chúng ta đang bán ngày càng ít áo ngực
+theo từng tuần, dù dữ liệu về áo ngực hơi giống
+dữ liệu về quần.
+
+26
+00:01:42,880 --> 00:01:46,560
+Cũng có những sự lên xuống.
+Ta có thể khiến biểu đồ thú vị hơn nữa,
+
+27
+00:01:46,560 --> 00:01:54,420
+bằng cách cho vào một dự đoán.
+Giờ đường biểu thị xu hướng tiếp tục kéo dài ra
+ngay cả khi đã hết dữ liệu.
+
+28
+00:01:54,580 --> 00:01:58,360
+Vậy ta có một dự đoán về tương lai của xu hướng.
+
+29
+00:01:58,660 --> 00:02:03,460
+Ta có thể dùng đường biểu thị xu hướng này
+để đưa ra các dự đoán thực sự
+
+30
+00:02:03,460 --> 00:02:07,280
+về số lượng áo ngực ta sẽ bán được
+trong 2 tuần tới.
+
+31
+00:02:07,420 --> 00:02:09,980
+Để tôi chỉ cho các bạn:
+
+32
+00:02:09,980 --> 00:02:12,520
+Các bạn chọn đường biểu thị xu hướng,
+click chuột phải vào Format Trendline,
+
+33
+00:02:12,520 --> 00:02:17,220
+bạn có thể thay đổi thông tin. Ví dụ như 
+kéo dài sự dự đoán lên 5 tuần chẳng hạn.
+
+34
+00:02:17,220 --> 00:02:22,780
+Một việc cũng rất thú vị là bạn có thể
+cho một phương trình lên biểu đồ.
+
+35
+00:02:22,780 --> 00:02:25,240
+Ở đây Excel giải thích với bạn:
+
+36
+00:02:25,240 --> 00:02:31,860
+Bạn cứ nhập số tuần vào và số tiền
+ta sẽ kiếm được nhờ bán áo ngực trong
+một vài tuần tới.
+
+37
+00:02:31,860 --> 00:02:35,800
+Trong phần bài tập các bạn sẽ tập đưa ra dự đoán
+dựa trên các dữ liệu
+
+38
+00:02:35,800 --> 00:02:38,540
+bằng cách sử dụng phương trình này.
+
+39
+00:02:38,680 --> 00:02:40,120
+Chúc may mắn!
+

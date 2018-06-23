@@ -1,0 +1,483 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/gGtm9PN44Uo
+
+1
+00:00:00,000 --> 00:00:00,520
+
+2
+00:00:00,520 --> 00:00:04,600
+JONATHAN VALVANO: Let's look at the
+software needed to initialize the UART.
+
+3
+00:00:04,600 --> 00:00:07,870
+We're going to execute
+it once to turn it on.
+
+4
+00:00:07,870 --> 00:00:10,470
+There are three things
+that we have to do.
+
+5
+00:00:10,470 --> 00:00:13,570
+First, we have to select
+which UART to use.
+
+6
+00:00:13,570 --> 00:00:16,780
+There are eight of them, and
+we're going to use UART1.
+
+7
+00:00:16,780 --> 00:00:19,540
+So we'll turn on the clock for UART1.
+
+8
+00:00:19,540 --> 00:00:24,570
+And you notice, we're going to
+configure the registers for UART1.
+
+9
+00:00:24,570 --> 00:00:28,650
+The second we have to do is
+select which pins to use,
+
+10
+00:00:28,650 --> 00:00:34,380
+and we're going to use two of the pins
+here in port C to implement our UART.
+
+11
+00:00:34,380 --> 00:00:37,680
+So we'll turn on the clock
+for port C, and then we
+
+12
+00:00:37,680 --> 00:00:45,670
+will set the alternative function
+register for bits PC5 and PC4.
+
+13
+00:00:45,670 --> 00:00:48,150
+They will become our UART bits.
+
+14
+00:00:48,150 --> 00:00:52,830
+We have to enable those pins
+as digital outputs or inputs--
+
+15
+00:00:52,830 --> 00:00:55,240
+again, on PC5 and 4.
+
+16
+00:00:55,240 --> 00:01:02,320
+And the last is-- These two
+bits in the PCTL register
+
+17
+00:01:02,320 --> 00:01:06,670
+are selected to be the alternative
+function, which is the UART.
+
+18
+00:01:06,670 --> 00:01:10,720
+So setting a 22 into
+these two bits of the PCTL
+
+19
+00:01:10,720 --> 00:01:15,080
+will set PC5 and 4 to be UARTs.
+
+20
+00:01:15,080 --> 00:01:18,886
+And they're not analog, so
+we'll shut off the analog.
+
+21
+00:01:18,886 --> 00:01:20,760
+RAMESH YERRABALLI: So,
+Jon, do we do anything
+
+22
+00:01:20,760 --> 00:01:23,665
+with the direction register for port C?
+
+23
+00:01:23,665 --> 00:01:24,540
+JONATHAN VALVANO: No.
+
+24
+00:01:24,540 --> 00:01:32,040
+Because the UART is fixed, PC5 five will
+be an output and PC4 will be an input.
+
+25
+00:01:32,040 --> 00:01:36,590
+And that's automatically set
+by selecting it as a UART.
+
+26
+00:01:36,590 --> 00:01:37,770
+RAMESH YERRABALLI: OK.
+
+27
+00:01:37,770 --> 00:01:40,860
+JONATHAN VALVANO: And the third thing
+we have to do is set the baud-rate.
+
+28
+00:01:40,860 --> 00:01:43,780
+The baud rate set in
+these two registers.
+
+29
+00:01:43,780 --> 00:01:46,000
+Let's look at the calculation.
+
+30
+00:01:46,000 --> 00:01:47,950
+The calculation is shown here.
+
+31
+00:01:47,950 --> 00:01:52,130
+We'll begin with the bus
+clock-- which, in this case,
+
+32
+00:01:52,130 --> 00:01:54,250
+is going to be 80 megahertz.
+
+33
+00:01:54,250 --> 00:01:59,210
+The 16 is a fixed constant--
+which will always be 16--
+
+34
+00:01:59,210 --> 00:02:01,550
+and then here is our input.
+
+35
+00:02:01,550 --> 00:02:07,312
+We would like to set the baud-rate
+to 115,200 bits per second.
+
+36
+00:02:07,312 --> 00:02:09,270
+RAMESH YERRABALLI: This
+is a standard baud-rate
+
+37
+00:02:09,270 --> 00:02:11,530
+that is used in communication.
+
+38
+00:02:11,530 --> 00:02:13,590
+JONATHAN VALVANO: And a fast one.
+
+39
+00:02:13,590 --> 00:02:18,710
+When you calculate it, you get
+this number here-- 43.40278.
+
+40
+00:02:18,710 --> 00:02:22,360
+We're going to take the
+43 and put it right there.
+
+41
+00:02:22,360 --> 00:02:25,120
+And we're going to take
+the fraction and create
+
+42
+00:02:25,120 --> 00:02:28,720
+a binary fraction by multiplying by 64.
+
+43
+00:02:28,720 --> 00:02:31,380
+Again, it's always 64 in this spot.
+
+44
+00:02:31,380 --> 00:02:34,530
+In this case, we're going
+to get a quotient of 26.
+
+45
+00:02:34,530 --> 00:02:36,400
+And the 26 goes in there.
+
+46
+00:02:36,400 --> 00:02:39,590
+RAMESH YERRABALLI: So these are the
+Integer part and the Fractional part
+
+47
+00:02:39,590 --> 00:02:45,310
+of the calculation we performed from
+when we set our desired baud-rate.
+
+48
+00:02:45,310 --> 00:02:46,630
+JONATHAN VALVANO: Absolutely.
+
+49
+00:02:46,630 --> 00:02:49,820
+In summary, there are three
+things that we're going to do.
+
+50
+00:02:49,820 --> 00:02:54,330
+First, we're going to turn
+on the clock for UART1.
+
+51
+00:02:54,330 --> 00:03:00,620
+Two, we're going to select which pins
+to use-- in this case, PC5 and 4.
+
+52
+00:03:00,620 --> 00:03:03,050
+And three, we're going
+to set the baud rate
+
+53
+00:03:03,050 --> 00:03:05,410
+by setting two values
+into these two registers.
+
+54
+00:03:05,410 --> 00:03:08,290
+
+55
+00:03:08,290 --> 00:03:09,650
+RAMESH YERRABALLI: OK.
+
+56
+00:03:09,650 --> 00:03:14,920
+Once we initialize the UART
+for transmission and receiving
+
+57
+00:03:14,920 --> 00:03:20,400
+on a particular port, we will
+have to write a device driver
+
+58
+00:03:20,400 --> 00:03:23,310
+routine for input and output.
+
+59
+00:03:23,310 --> 00:03:25,880
+The first one we look at is the InChar.
+
+60
+00:03:25,880 --> 00:03:33,376
+So the receiver code
+where we read a input-- .
+
+61
+00:03:33,376 --> 00:03:37,370
+
+62
+00:03:37,370 --> 00:03:39,860
+This is to read an
+input character-- which
+
+63
+00:03:39,860 --> 00:03:42,850
+is a 8-bit data that we are receiving.
+
+64
+00:03:42,850 --> 00:03:47,640
+If I want to read it,
+my logic says that I'm
+
+65
+00:03:47,640 --> 00:03:54,210
+going to check a flag-- which is
+my receiver FIFO empty flag(RXFE).
+
+66
+00:03:54,210 --> 00:04:00,240
+If this flag is 1, it tells
+me that the FIFO is empty,
+
+67
+00:04:00,240 --> 00:04:03,020
+which means that I have
+nothing to consume.
+
+68
+00:04:03,020 --> 00:04:06,400
+So I'm going to go back and check again.
+
+69
+00:04:06,400 --> 00:04:11,300
+And I keep checking till
+this flag becomes a 0.
+
+70
+00:04:11,300 --> 00:04:14,350
+So what I'm doing here
+it is it's saying--
+
+71
+00:04:14,350 --> 00:04:20,620
+While this flag is not equal to
+0-- which means it's equal to 1--
+
+72
+00:04:20,620 --> 00:04:22,280
+I keep repeating this loop.
+
+73
+00:04:22,280 --> 00:04:25,720
+So this while loop
+really has no body, which
+
+74
+00:04:25,720 --> 00:04:29,060
+means it's going to repeatedly check it.
+
+75
+00:04:29,060 --> 00:04:30,960
+It is a 1.
+
+76
+00:04:30,960 --> 00:04:37,770
+Once it is 0-- which
+means it's not empty--
+
+77
+00:04:37,770 --> 00:04:41,050
+which tells me that there's
+something to be consumed-- then
+
+78
+00:04:41,050 --> 00:04:42,205
+I'm going to read the data.
+
+79
+00:04:42,205 --> 00:04:46,760
+
+80
+00:04:46,760 --> 00:04:50,670
+And the way I read
+the data is by looking
+
+81
+00:04:50,670 --> 00:04:52,580
+at the data register(UART1_DR_R).
+
+82
+00:04:52,580 --> 00:04:55,210
+So the data register
+will give me the data.
+
+83
+00:04:55,210 --> 00:04:59,340
+And because it's a 32-bit
+register, I'm just masking
+
+84
+00:04:59,340 --> 00:05:02,850
+and I'm only taking the
+lower 8 bits off it.
+
+85
+00:05:02,850 --> 00:05:07,110
+And I'm going to return
+that to my caller.
+
+86
+00:05:07,110 --> 00:05:10,594
+So this is my return.
+
+87
+00:05:10,594 --> 00:05:11,760
+JONATHAN VALVANO: All right.
+
+88
+00:05:11,760 --> 00:05:13,260
+Let's output.
+
+89
+00:05:13,260 --> 00:05:18,780
+The output function is also
+busy-wait synchronization,
+
+90
+00:05:18,780 --> 00:05:24,410
+and the output function will output
+one character to the serial port.
+
+91
+00:05:24,410 --> 00:05:27,160
+It also will look at a flag.
+
+92
+00:05:27,160 --> 00:05:32,800
+The particular flag I'm interested in
+is the transmit FIFO full flag(TXFF).
+
+93
+00:05:32,800 --> 00:05:35,830
+And this flag has two states.
+
+94
+00:05:35,830 --> 00:05:40,630
+If the transmit FIFO
+flag is equal to a 1,
+
+95
+00:05:40,630 --> 00:05:43,940
+that means the transfer FIFO is full.
+
+96
+00:05:43,940 --> 00:05:47,550
+And there's no more data,
+no more place to output.
+
+97
+00:05:47,550 --> 00:05:49,570
+So we will wait.
+
+98
+00:05:49,570 --> 00:05:55,900
+So if the transmitter is busy
+outputting previous characters,
+
+99
+00:05:55,900 --> 00:06:01,040
+we will wait by going back.
+
+100
+00:06:01,040 --> 00:06:05,900
+If the flag is 0, that
+means the FIFO is not full.
+
+101
+00:06:05,900 --> 00:06:09,870
+And the device is ready to
+accept another character.
+
+102
+00:06:09,870 --> 00:06:12,500
+And when we have that,
+what we're going to do
+
+103
+00:06:12,500 --> 00:06:15,170
+is we're going to output
+the next piece of data.
+
+104
+00:06:15,170 --> 00:06:25,610
+We're going to write the next data
+to the device, and then we'll return.
+
+105
+00:06:25,610 --> 00:06:29,885

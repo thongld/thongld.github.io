@@ -1,0 +1,262 @@
+
+Answers Week 5 
+
+5.1 Introduction Thanks for sharing your experiences with badly designed charts via the discussion forum. 
+
+5.2 Show me the numbers 
+
+Graph or Table 
+
+What should you use in the following scenarios? 
+
+We want to highlight the trend of increasing number of diabetes patients at the local hospital. 
+
+Graph 
+
+Explanation: Graphs are more effective for noticing numerical trends than tables. 
+
+We want to quickly find the insulin amount the current patient needs, based on his medical history, weight, gender and age. 
+
+Table 
+
+Explanation: There are too many factors involved here for a graph and we want to find a precise value. 
+
+5.3 Structural Table Design 
+
+Select the correct table 
+
+We want to know how many sales we have for each type and gender in the context of each brand. 
+
+Which of the tables below contradicts the rules previously explained the least? Since the spacing concern is partially subjective, you do not have to regard this for this quiz. 
+
+Table 3 
+
+Explanation: (See tables on the next page) 
+
+- Table 1: Having three levels of data in a one-dimensional table is too much. - Table 2: The grid of this table is far too heavy. The lines add nothing to the structure of the table. Also it is not really clear what the labels representing Gender mean to someone who did not create the table or dataset. 
+
+- Table 3: This table is not perfect as well, but the labels are far more clear, there is no unnecessary use of grid lines and the column spacing is wide enough for recognizing to which column values belong. 
+
+Table 1      Table 2 
+
+  
+
+Table 3 
+
+ 
+
+ 
+
+What can we do to further improve table 3 in each of the following categories? Select all that apply. 
+
+Background 
+
+- TRUE: Remove all current shading - FALSE: Add more colors - FALSE: Color each cell in a different color shade to highlight the highest and lowest values - TRUE: Increase white spacing between rows - FALSE: Put columns closer together in order to better compare the values - FALSE: Add a specific color for each brand in order to find specific values faster 
+
+  
+
+Explanation: 
+
+- Following Bas’ rules we should use whitespace instead of alternating fill colors to distinct rows (and columns) from each other; - The purpose of the table is to compare sales in product type and gender. Highlighting maxima and minima is not a good idea because the users of the table might need overall information or specific in regards to one brand; - Adding brand specific colors is a way to go in charts, but in tables the structural design does the job of making clear what value belongs to which data category. Therefore the column should not be places closer together, as the spacing increases readability.  
+
+Delimiters 
+
+- FALSE: Add a full table grid - FALSE: Add a grid around cells with values - TRUE: Add lines to differentiate the header and footer from the table body - FALSE: Add a table grid to the headers - TRUE: Add a thin line between brand name and the gender subtypes to show the columns belong to the brand - FALSE: Surround each brand column with a border 
+
+Explanation: 
+
+- Adding a full table (to the headers) grid or grid around each cell containing a value, as well as surrounding columns do not add anything to the table. - Lines that separate the table body from the headers and footers do help structuring the table. - Also, since there are multiple/hierarchical categories in the columns, adding a thin horizontal line between the brand names and gender labels increases readability. 
+
+5.4 Best practices in Table Design 
+
+Table improvements 
+
+The table above shows some information about various train types driving through the Netherlands. 
+
+There are a few issues concerning the alignment and precision in this table. Taking into account the rules for alignment and precision in the video, what can be done to improve the table?
+
+- FALSE: Align column A to right [text should be aligned to the left] - TRUE: Align column C to left [idem] - FALSE: Align column C to center [idem] - TRUE: Decrease precision in column D (less decimal places) [number produced can only be integers] - FALSE: Align column E right [text should be aligned to the left] - TRUE: Align column F right [numeric values should be aligned to the right] - FALSE: Align column G left [idem] - TRUE: Increase precision in column H [no more precision is needed to spot the differences] - FALSE: Decrease precision in column H [the differences in the most specific decimal place do not add anything to the comparability of the values in the column] - FALSE: Align column I center [numeric values should be aligned to the right] 
+
+Custom number formatting 
+
+Apply the following custom number formatting rule to the cells in the spreadsheet used in the video (link above the video): #,##0.0;#,##0_0 
+
+What does this rule do to the way the values are shown? 
+
+Negative values look like they are positive values. 
+
+Explanation: The first part of the expression (#,##0.0) represents the number formatting for positive values. The hash symbols mean there will be thousand separators visible. 0.0 means there will always be one digit after the decimal separator visible. The second part of the expression (#,##0_0) is for representing negative numbers. It differs from the positive one only at the end: _0 instead of .0. So no digits after the decimal separator will be shown here. As Bas explained, the underscore let’s Excel reserve space for the symbol that follows it, but it does not show the actual symbol. The fact that negative numbers look like positive numbers if because there is no minus symbol or parentheses in the representation of negative numbers. Positive and negative values are not nicely aligned, because there is no space reserved for the decimal separator in the negative value representation. 
+
+5.5 Graph Design: Chart types 
+
+Select the Chart 
+
+We want to quickly see which brand sold the most items. Choose the chart that best represents the situation for this purpose. 
+
+Chart 2 
+
+Explanation: As Bas explained pie charts (chart 1) are not advisable to use. The 3D 100% stacked chart (chart 3) makes it impossible to compare values. Chart 4, a column chart, may seem very neat, but it does not allow us to quickly see which brand sold the most items, as the data is split up in gender categories. 
+
+Chart 1:   Chart 2:  
+
+Chart 3:  Chart 4: 
+
+Consider you are a Nike employee. You are using the following chart to let your sales staff know that your current sales are higher than Adidas'. However, you are selling less than Asics, and you want to come up with a strategy to become #1. 
+
+Improve Chart 
+
+In the context described, how can we further improve this chart*? (* chart 2 from previous question) 
+
+- TRUE: Remove the buttons [they are only there for changing the chart’s content in Excel] - FALSE: Use a different color for each brand [the structure of the chart already splits up the brands] - TRUE: Remove the numbers on the bottom, since you are not interested in the exact sales numbers - TRUE: Remove the legend [there are no multiple data series, so no legend is needed] - FALSE: Make the legends more detailed [idem] - TRUE: Remove the "blank" brand [this is left over from the PivotTable and means nothing] - FALSE: Use a more artistic font - FALSE: Add more brands that sold less than Adidas [your goal is to compare to brand Asics in order to find a strategy to become #1, adding smaller brands does not help communicating this message]  
+
+Improve Chart Title 
+
+How could the title of Chart 2 be improved? 
+
+Change title to: "Nike is second best in sales" 
+
+Explanation: This title summarizes the message we want to communicate with the chart best. 
+
+“Nike sold more than Adidas” does not lead us to the goal of overtake Asics. Saying “Adidas sold 200 items” does not mention the position in the business branch.  
+
+5.6 Best practices in Graph Design 
+
+Select the Chart 
+
+We are looking at the number of new members registering for a gym each month during the course of 2015. 
+
+Which chart best represents the trend in this particular case on 12 data points in a time series? 
+
+Chart 1 
+
+Explanation: (See charts on the next page) 
+
+In chart 1 we can clearly see the trend. Having more than 5 categories (in this case months) a line chart is better than a column chart, like chart 4.Besided that, chart 4 has unnecessary 3D effects. Chart 2 shows a time series (months) over a vertical axis. As explained it is better to plot a time series over a horizontal axis. Chart 3 has multiple issues: Not all months are shown and it is hard to infer a trend from this representation. Also, the data-ink ratio is very low, because the entire grid and the width of the horizontal axis are not used for representing data. 
+
+  
+
+Chart 1      Chart 2 
+
+   
+
+Chart 3      Chart 4 
+
+   
+
+ 
+
+5.7 Assignment This week’s end assignment did not contain graded material. 
+
+We want to compare the Shoes, Pants and Socks sales per brand. Use a column chart and apply the principles Bas explained. Share your beautiful chart on the forum thread My Beautiful Chart here. If you made certain choices in your design, please explain your reasoning. 
+
+Thank you for posting the wide variety of charts in the My Beautiful Chart My Beautiful Chart forum thread.  
+
+Some general comments on the charts posted on the forum: 
+
+- Only a few of the posted charts contained a descriptive title. Keep in mind that a title like “Sales by Brand” does not summarize any message you could want to communicate. Examples of better titles are “Asics sells pants without competition” and “Adidas is the best shoes seller”; - Some charts we encountered had multiple categories organized in a hierarchical way on the horizontal axis, but no color differentiation. This makes it hard to compare values of the same category X between different items of category Y, for example when you want to compare female shoes of the brand Nike to female shoes of the brand Asics. 
+
+
+
+Answers Week 6 – Dashboard Design 
+
+6.1 Introduction This section does not contain any graded material. 
+
+6.2 Dashboard Overview 
+
+What would Bas do? What tip does Bas give you in this last lecture? You have to consider on what kind of medium (paper printed, screen (size), etc.) the dashboard will be used in the end. 
+
+6.3 Bar Chart 
+
+Every Chart and Table Needs... According to Bas, every chart or table used in your dashboard should have its own: Worksheet 
+
+6.4 Column Chart 
+
+Creating Charts If you payed close attention to Bas' chart creation demo in the video, you might have noticed he violates an important rule explained in week 5. Which rule did Bas violate? 
+
+The y-axis should start with 0. Explanation: As Bas pointed out in week 5, not starting the vertical axis at zero overstates the trend going on in the data, which is misleading to the reader. 
+
+You would use a scatter plot when you want to explain a relation between variables. 
+
+6.5 Mixed Chart Type This section does not contain any graded material.   
+
+6.6 Thermometer Chart 
+
+Increasing Column Width In the screenshot above you see the Format Chart Area pane. What should be changed here in order to make the chart's columns wider? Decrease 'Gap Width' percentage. 
+
+6.7 Horizontal Thermometer 
+
+When to use a Thermometer Chart Use a thermometer chart when you want to compare similar variables. 
+
+6.8 Profit & Loss Table 
+
+Linked Picture When you paste as linked picture you can (select all that apply): - TRUE: change original data content and have live updates - TRUE: rotate the table as a picture [The Linked Picture has the same options as a normal picture] - FALSE: filter out data in the linked picture that is present in the original data [It is not possible to change parts of the Linked Picture. All content changes should happen in the linked source] - FALSE: the pasted version is independent of the original data [The content of the Linked Picture depends on the original data] - TRUE: change original data formatting and have live updates [Besides content, also the formatting is linked] - FALSE: change the pasted data and get live update in the original data [The Linked Picture’s content is not editable] 
+
+6.9 Sparklines This section does not contain any graded material. Thank you for the submissions of your spreadsheets. 
+
+6.10 BONUS: Slicer This section does not contain any graded material. 
+
+6.11 BONUS: Automatic Refresh This section does not contain any graded material.   
+
+6.12 Assignment Thank you for sharing your final Dashboards and contributing to the research of the SpreadsheetLab! We have seen beautiful Dashboards on the My Functional Dashboard forum thread. To some forum posts specific feedback was replied by community TAs or course staff. Some general feedback by Bas: 
+
+ 
+
+ The most frequently made error we saw in the end assignment were charts with a y-axis that did not start at zero. You should (almost never) do this. You are manipulating the data and overstating the variation in the chart. 
+
+ 
+
+ Pay attention to the number format of your axis.       In this example it should show 53% instead of 0.53. 
+
+ 
+
+1) Whenever possible display text from left to right. I definitely prefer the chart on the right. 2) Also try to avoid diagonal aligned text. The labels do fit in this case, but are difficult to read. 
+
+3) Same story here. The labels on the x-axis do fit, but nobody can read them. ↓ When you have long labels it is better to use a bar chart instead of a column chart. 
+
+1) 2) 3) 
+
+   
+
+ 
+
+ I agree with “less is more”, but we do need some information in the chart. In this case both the axis and the labels are missing and on top of that the nonvisible y-axis is not starting at zero. The chart no communicates a high variance in the average number of orders per day, while in reality it is quite stable. 
+
+ 
+
+ I’m not a fan of the data labels. I think they make the chart very cluttered.       This could be solved by using a y-axis and if necessary some grid lines. 
+
+ 
+
+↘ Be aware of the white space between the columns. I think the right chart is easier to read. 
+
+ 
+
+ 
+
+ 
+
+New Dashboard Charts Using your own finalized dashboard answer the following questions: 
+
+1. Gross Margin % is Above 50 
+
+2. Which product groups sales most?  Cheese 
+
+3. The average orders per day are: Above 25 
+
+ 
+
+ 
+
+QUESTION 1 
+
+ 
+
+QUESTION 2 
+
+ 
+
+QUESTION 3 
+
+ 
+
+The Excel file of the final dashboard solution is available on this week’s Answers section on edX. 

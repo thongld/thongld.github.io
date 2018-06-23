@@ -1,0 +1,329 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/VyEAtqWR1dQ
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:03,708
+PROFESSOR JONATHAN VALVANO: Next, let's
+show you how to make your own images.
+
+3
+00:00:03,708 --> 00:00:06,190
+But this is an optional step
+that you can do if you want.
+
+4
+00:00:06,190 --> 00:00:07,900
+So this is the starter project.
+
+5
+00:00:07,900 --> 00:00:11,480
+And I'm going to look inside the files.
+
+6
+00:00:11,480 --> 00:00:16,090
+And I'm going to edit one of
+the Space Invader art files.
+
+7
+00:00:16,090 --> 00:00:18,520
+So I'll find an enemy and we'll edit it.
+
+8
+00:00:18,520 --> 00:00:22,010
+So I'm going to open this enemy here.
+
+9
+00:00:22,010 --> 00:00:28,470
+And I'm going to open him in Paint,
+your favorite drawing program.
+
+10
+00:00:28,470 --> 00:00:32,756
+And any application that
+can edit BMP files can work.
+
+11
+00:00:32,756 --> 00:00:34,380
+Now, as you can see, it's pretty small.
+
+12
+00:00:34,380 --> 00:00:35,685
+So let's make him bigger.
+
+13
+00:00:35,685 --> 00:00:38,300
+
+14
+00:00:38,300 --> 00:00:43,300
+So in this mode, we see
+that a white is going
+
+15
+00:00:43,300 --> 00:00:45,730
+to show up as a pixel on the screen.
+
+16
+00:00:45,730 --> 00:00:48,660
+And a black will show up as a blank.
+
+17
+00:00:48,660 --> 00:00:54,660
+So I'm going to change this guy
+to make him a very scary guy,
+
+18
+00:00:54,660 --> 00:00:55,926
+like moving his insides.
+
+19
+00:00:55,926 --> 00:00:58,770
+
+20
+00:00:58,770 --> 00:01:11,440
+And then let's make him a little
+more meaty here and have great big--
+
+21
+00:01:11,440 --> 00:01:13,405
+and have great big ears.
+
+22
+00:01:13,405 --> 00:01:16,000
+Because ears are scary.
+
+23
+00:01:16,000 --> 00:01:20,260
+And we'll give him more
+fluff around the outside.
+
+24
+00:01:20,260 --> 00:01:22,930
+Remember, I got to leave
+two pixels all around.
+
+25
+00:01:22,930 --> 00:01:24,633
+So we'll make a really scary.
+
+26
+00:01:24,633 --> 00:01:32,240
+
+27
+00:01:32,240 --> 00:01:35,940
+So now I have a new image
+that I want to create.
+
+28
+00:01:35,940 --> 00:01:37,395
+Let's Save As.
+
+29
+00:01:37,395 --> 00:01:43,720
+And this step is important for you to
+make sure you save it as a 16-color
+
+30
+00:01:43,720 --> 00:01:44,510
+.BMP.
+
+31
+00:01:44,510 --> 00:01:50,720
+And so we're going to
+call him small enemy new.
+
+32
+00:01:50,720 --> 00:01:53,460
+
+33
+00:01:53,460 --> 00:01:55,430
+Give him whatever name you want.
+
+34
+00:01:55,430 --> 00:01:59,546
+All right, so I've just created
+a BMP file, a new BMP file.
+
+35
+00:01:59,546 --> 00:02:01,420
+And so now what I'm
+going to do is, I'm going
+
+36
+00:02:01,420 --> 00:02:06,720
+to convert that BMP
+file into a-- I'm going
+
+37
+00:02:06,720 --> 00:02:09,590
+to convert that BMP file into text file.
+
+38
+00:02:09,590 --> 00:02:23,480
+
+39
+00:02:23,480 --> 00:02:26,850
+So I'm going to use
+this executable, which
+
+40
+00:02:26,850 --> 00:02:29,820
+will take a BMP file
+and create a text file.
+
+41
+00:02:29,820 --> 00:02:33,640
+So I got to remember the name
+of the file I just created,
+
+42
+00:02:33,640 --> 00:02:35,720
+which was small enemy new.
+
+43
+00:02:35,720 --> 00:02:39,060
+And into this window, I'm
+going to write the name
+
+44
+00:02:39,060 --> 00:02:48,540
+of this file I just
+created small enemy new.
+
+45
+00:02:48,540 --> 00:02:50,340
+Hit enter.
+
+46
+00:02:50,340 --> 00:02:53,340
+And this created a text file.
+
+47
+00:02:53,340 --> 00:02:57,220
+So I'll find where it
+went, small enemy new text.
+
+48
+00:02:57,220 --> 00:03:02,000
+So I will open up the one I
+just created in a text editor.
+
+49
+00:03:02,000 --> 00:03:04,680
+You could see this is now C code.
+
+50
+00:03:04,680 --> 00:03:06,440
+I will copy it.
+
+51
+00:03:06,440 --> 00:03:11,850
+Now I'm going to go
+over to my application.
+
+52
+00:03:11,850 --> 00:03:15,620
+And I'm going to paste the
+bad boy right in there.
+
+53
+00:03:15,620 --> 00:03:18,400
+And now I have a new
+image that I can create.
+
+54
+00:03:18,400 --> 00:03:20,260
+That I can display.
+
+55
+00:03:20,260 --> 00:03:23,140
+So let's draw him on the screen,
+show you what he looks like.
+
+56
+00:03:23,140 --> 00:03:34,770
+So right here, I'm going
+to copy, paste, take
+
+57
+00:03:34,770 --> 00:03:39,020
+his name-- he's called small enemy new.
+
+58
+00:03:39,020 --> 00:03:40,680
+Where would you like to put him?
+
+59
+00:03:40,680 --> 00:03:43,590
+Let's put them in the middle.
+
+60
+00:03:43,590 --> 00:03:46,880
+Halfway across is 48.
+
+61
+00:03:46,880 --> 00:03:49,610
+Halfway down is 24.
+
+62
+00:03:49,610 --> 00:03:57,530
+Again, this will put him at the middle
+at location x equals 48, y equals 24.
+
+63
+00:03:57,530 --> 00:04:06,717
+So we will build, download, debug.
+
+64
+00:04:06,717 --> 00:04:11,100
+
+65
+00:04:11,100 --> 00:04:15,670
+So again on the screen we see
+nothing, left over from last time.
+
+66
+00:04:15,670 --> 00:04:20,279
+And so we will step over,
+step over, step over.
+
+67
+00:04:20,279 --> 00:04:23,430
+This will clear the RAM screen.
+
+68
+00:04:23,430 --> 00:04:25,990
+This will draw the new enemy.
+
+69
+00:04:25,990 --> 00:04:28,330
+And then when I hit
+the display buffer, we
+
+70
+00:04:28,330 --> 00:04:32,020
+can see our new enemy
+is drawn on the screen.
+
+71
+00:04:32,020 --> 00:04:33,970
+Very scary-looking fellow is he.
+
+72
+00:04:33,970 --> 00:04:37,010
+
+73
+00:04:37,010 --> 00:04:40,140
+So that's a summary of how it is
+you could create your own bump
+
+74
+00:04:40,140 --> 00:04:44,663
+images if you want to modify
+the game to make it more fun.
+
+75
+00:04:44,663 --> 00:04:45,163

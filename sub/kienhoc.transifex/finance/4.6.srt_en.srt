@@ -1,0 +1,256 @@
+1
+00:00:05,140 --> 00:00:09,340
+https://youtu.be/fPUlXPIgcug
+Pay attention to the slide, I have written
+the generic formula, but
+
+2
+00:00:09,340 --> 00:00:11,290
+with numbers in it.
+I shouldn't call it generic,
+
+3
+00:00:11,290 --> 00:00:16,350
+with numbers in it of the pricing of a coupon
+paying bond.
+
+4
+00:00:16,350 --> 00:00:19,070
+Now if I were to make it zero coupon, what
+would I do?
+
+5
+00:00:19,070 --> 00:00:24,820
+I just remove the PMT, that 3,000 make it
+0.
+
+6
+00:00:24,820 --> 00:00:29,369
+What I'm going to do is something different.
+I want you to understand the relationship
+
+7
+00:00:29,369 --> 00:00:36,400
+between the price of a bond and
+the discount rate or the interest rate.
+
+8
+00:00:36,400 --> 00:00:39,850
+This is not coupon, I'm talking about coupon
+as in dollars,
+
+9
+00:00:39,850 --> 00:00:45,940
+I'm talking about the rate of return.
+So if you stare up, it started off with an
+
+10
+00:00:45,940 --> 00:00:58,010
+interest rate of 4%.
+What I would like you to do with me is change.
+
+11
+00:00:58,010 --> 00:01:07,790
+This interest rate from 1% to 8%.
+What will this tell you?
+
+12
+00:01:07,790 --> 00:01:12,590
+It will show you the sensitivity of the price
+of the bond
+
+13
+00:01:12,590 --> 00:01:18,200
+as you change the interest rate.
+Before we even do that, this is one of the
+
+14
+00:01:18,200 --> 00:01:24,530
+ones you'll read over and
+over in the press, if interest rates go up,
+
+15
+00:01:24,530 --> 00:01:30,140
+bond prices have to go down.
+And, therefore, the relationship between interest
+
+16
+00:01:30,140 --> 00:01:34,420
+rates and
+bond prices is one of the given of life are
+
+17
+00:01:34,420 --> 00:01:38,560
+inverse.
+But more interesting is when you do this calculation,
+
+18
+00:01:38,560 --> 00:01:42,799
+so let's do it.
+You do it on Excel, I'll write out the numbers,
+
+19
+00:01:42,799 --> 00:01:45,439
+and
+hopefully all you're doing is changing this
+
+20
+00:01:45,439 --> 00:01:50,649
+number, making it 0.01, return.
+0.02, return.
+
+21
+00:01:50,649 --> 00:01:55,750
+0.03, return.
+You'll find something like this.
+
+22
+00:01:55,750 --> 00:02:06,409
+At 1%, you'll find a price
+of 111,168.93.
+
+23
+00:02:06,409 --> 00:02:13,269
+At 2%, what will happen?
+The price of the bond will drop.
+
+24
+00:02:13,269 --> 00:02:22,910
+105 627.54.
+Okay, at 3%, what will you find?
+
+25
+00:02:22,910 --> 00:02:27,800
+This is very interesting.
+Before even doing it, what should you find?
+
+26
+00:02:27,800 --> 00:02:37,870
+You should find face value, should be 100,000.
+In other words, the bond should be selling
+
+27
+00:02:37,870 --> 00:02:44,480
+at par, that's the terminology.
+Why, because think about it, if your coupon
+
+28
+00:02:44,480 --> 00:02:50,060
+rate is 3% and
+your interest rate happens to be 3%, the denominator
+
+29
+00:02:50,060 --> 00:02:53,170
+and numerator
+with compounding kinda cancel each other out
+
+30
+00:02:53,170 --> 00:02:58,190
+and you're left with just face value.
+It's very intuitive.
+
+31
+00:02:58,190 --> 00:03:05,989
+At 4%, how much?
+It'll be 94,712.
+
+32
+00:03:05,989 --> 00:03:18,370
+Sorry, 742.24.
+Or actually, back up.
+
+33
+00:03:18,370 --> 00:03:23,640
+712.33.
+I jumped ahead to 5%.
+
+34
+00:03:23,640 --> 00:03:33,989
+So, last one to reconnect with you is 94,712.33.
+Please keep doing these,
+
+35
+00:03:33,989 --> 00:03:37,200
+what it will do is it will give you a familiarity
+with doing present value.
+
+36
+00:03:37,200 --> 00:03:42,590
+But also what you'll see is,
+I challenge you to now figure out why did
+
+37
+00:03:42,590 --> 00:03:47,439
+I make you do it?
+And I made you do it because if you look at
+
+38
+00:03:47,439 --> 00:03:54,700
+the relationship between price and
+interest rates, I'm going to draw this,
+
+39
+00:03:54,700 --> 00:04:01,970
+you'll find a downward sloping but what is
+called a convex curve.
+
+40
+00:04:01,970 --> 00:04:06,750
+It's not straight.
+So the percentage change is happening.
+
+41
+00:04:06,750 --> 00:04:10,269
+Right?
+Or different.
+
+42
+00:04:10,269 --> 00:04:18,470
+If it were a straight line, a change
+in interest rate would lead to the same percentage
+
+43
+00:04:18,470 --> 00:04:21,330
+change in price.
+But that's not the case.
+
+44
+00:04:21,330 --> 00:04:29,410
+So what you'll find is, it's called convexity.
+You have a downward sloping curve, but
+
+45
+00:04:29,410 --> 00:04:32,540
+the change in price is relative to change
+in
+
+46
+00:04:32,540 --> 00:04:44,700
+1% interest rate, as where this is P and
+this is R as marked straight line, right.
+
+47
+00:04:44,700 --> 00:04:49,910
+It's not the same, okay.
+Enjoy this, and this is also something that
+
+48
+00:04:49,910 --> 00:04:54,000
+you'll read and depress all the time.
+And you'll be able to figure out why is it
+
+49
+00:04:54,000 --> 00:04:58,610
+that a longer term barn
+versus a shorter term barn behaves differently
+
+50
+00:04:58,610 --> 00:05:04,340
+and so on and so forth.
+So, we'll take a little break here.
+
+51
+00:05:04,340 --> 00:05:06,570
+Think about this.
+We'll come back and talk some more.
+

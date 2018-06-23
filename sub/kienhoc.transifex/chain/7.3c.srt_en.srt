@@ -1,0 +1,716 @@
+0
+00:00:00,000 --> 00:00:00,620
+https://youtu.be/Yr3pIlIxUYY
+
+1
+00:00:00,620 --> 00:00:02,530
+OK, part 1 says the following.
+
+2
+00:00:02,530 --> 00:00:04,680
+Without using formal analysis, would you
+
+3
+00:00:04,680 --> 00:00:07,630
+agree that using average sales in previous semesters,
+
+4
+00:00:07,630 --> 00:00:11,844
+that is, 200 units, as the order quantity is the best policy.
+
+5
+00:00:11,844 --> 00:00:13,010
+So what is being asked here?
+
+6
+00:00:13,010 --> 00:00:15,500
+Well, there is a suggested policy.
+
+7
+00:00:15,500 --> 00:00:17,980
+And that suggestion is to order 200 books.
+
+8
+00:00:17,980 --> 00:00:21,200
+And we want to know, is this a good policy or not?
+
+9
+00:00:21,200 --> 00:00:25,390
+So to get to that, let's first put down the parameters
+
+10
+00:00:25,390 --> 00:00:26,810
+that we have.
+
+11
+00:00:26,810 --> 00:00:28,390
+We have the sales price p, which is
+
+12
+00:00:28,390 --> 00:00:30,070
+how much we going to sell the book for during the selling
+
+13
+00:00:30,070 --> 00:00:30,570
+season.
+
+14
+00:00:30,570 --> 00:00:32,520
+And that's $160.
+
+15
+00:00:32,520 --> 00:00:35,404
+We also have a cost-- that is how much it costs the bookstore
+
+16
+00:00:35,404 --> 00:00:36,070
+to get the book.
+
+17
+00:00:36,070 --> 00:00:38,270
+And that's $100 per book.
+
+18
+00:00:38,270 --> 00:00:41,410
+Also, we have a salvage value again called g.
+
+19
+00:00:41,410 --> 00:00:43,780
+And that salvage value is $60.
+
+20
+00:00:43,780 --> 00:00:45,760
+That's how much we expect to get for a book
+
+21
+00:00:45,760 --> 00:00:47,750
+after the selling season is over.
+
+22
+00:00:47,750 --> 00:00:50,870
+So these are the key parameters to this problem.
+
+23
+00:00:50,870 --> 00:00:52,700
+We have a suggested policy.
+
+24
+00:00:52,700 --> 00:00:55,165
+And basically we want to know what
+
+25
+00:00:55,165 --> 00:00:57,954
+are the consequences of following this policy?
+
+26
+00:00:57,954 --> 00:00:58,870
+How do we get to that?
+
+27
+00:00:58,870 --> 00:01:02,340
+Well, we can compare it to another policy.
+
+28
+00:01:02,340 --> 00:01:06,890
+So let's compare it to a policy where we order 1 unit less.
+
+29
+00:01:06,890 --> 00:01:11,950
+We only look at that last 200th book.
+
+30
+00:01:11,950 --> 00:01:19,040
+Let's compare to a policy where we said Q equal to 199 units.
+
+31
+00:01:19,040 --> 00:01:21,790
+And then we just look at is this last 200th book.
+
+32
+00:01:21,790 --> 00:01:23,370
+Should we order that or not?
+
+33
+00:01:23,370 --> 00:01:25,985
+So we boil this whole decision down to that last book.
+
+34
+00:01:25,985 --> 00:01:28,360
+And then we can get an idea about whether we should order
+
+35
+00:01:28,360 --> 00:01:31,090
+more or order less than 200.
+
+36
+00:01:31,090 --> 00:01:34,100
+So let's see what we get here.
+
+37
+00:01:34,100 --> 00:01:37,410
+Basically, what happens if you look at 200th book,
+
+38
+00:01:37,410 --> 00:01:38,959
+there are really only two options.
+
+39
+00:01:38,959 --> 00:01:40,500
+There are two things that can happen,
+
+40
+00:01:40,500 --> 00:01:42,270
+two cases, two scenarios.
+
+41
+00:01:42,270 --> 00:01:46,120
+Either we are going to sell that 200th book or we're not.
+
+42
+00:01:46,120 --> 00:01:47,745
+Those are two possible cases.
+
+43
+00:01:47,745 --> 00:01:49,120
+So let's look at them separately.
+
+44
+00:01:49,120 --> 00:01:51,760
+What are the consequences of each of these different cases.
+
+45
+00:01:51,760 --> 00:01:54,700
+Let's say the demand is greater than or equal to Q.
+
+46
+00:01:54,700 --> 00:01:55,840
+What does that mean?
+
+47
+00:01:55,840 --> 00:01:58,897
+It means that there's going to be more demand than what
+
+48
+00:01:58,897 --> 00:01:59,480
+we have books.
+
+49
+00:01:59,480 --> 00:02:01,522
+So we're going to sell the book.
+
+50
+00:02:01,522 --> 00:02:03,480
+There's more demand than what we have in stock.
+
+51
+00:02:03,480 --> 00:02:05,760
+We are going to sell everything that we have in stock.
+
+52
+00:02:05,760 --> 00:02:07,610
+What does it mean to order that 200th book?
+
+53
+00:02:07,610 --> 00:02:09,860
+Well, it means we're going to get an extra profit.
+
+54
+00:02:09,860 --> 00:02:11,940
+How much are we going to get in extra profit?
+
+55
+00:02:11,940 --> 00:02:13,480
+We're going to get $160, which is
+
+56
+00:02:13,480 --> 00:02:16,380
+what we sell it for the revenues minus the cost, $100.
+
+57
+00:02:16,380 --> 00:02:27,190
+So we're going to get $60 extra profit for that 200th book.
+
+58
+00:02:27,190 --> 00:02:28,670
+That's one of the cases.
+
+59
+00:02:28,670 --> 00:02:31,010
+The other case is-- so let's look at the case
+
+60
+00:02:31,010 --> 00:02:36,150
+where demand is less than Q. What does that mean?
+
+61
+00:02:36,150 --> 00:02:38,230
+It means that we're not selling that last book.
+
+62
+00:02:38,230 --> 00:02:40,500
+So instead of getting extra profit, what we're getting
+
+63
+00:02:40,500 --> 00:02:42,294
+is having one extra book at the end
+
+64
+00:02:42,294 --> 00:02:43,710
+of the semester sitting in a store
+
+65
+00:02:43,710 --> 00:02:45,230
+that we have to get rid of.
+
+66
+00:02:45,230 --> 00:02:47,940
+How much extra cost does that mean?
+
+67
+00:02:47,940 --> 00:02:50,690
+Well, we have the purchase price of the book
+
+68
+00:02:50,690 --> 00:02:54,010
+or what the store buys it for $100.
+
+69
+00:02:54,010 --> 00:02:55,460
+And then we get some revenue.
+
+70
+00:02:55,460 --> 00:02:57,660
+We get that $60 of salvage value.
+
+71
+00:02:57,660 --> 00:03:03,300
+So we end up with $40 extra cost.
+
+72
+00:03:03,300 --> 00:03:04,580
+Not as good.
+
+73
+00:03:04,580 --> 00:03:08,560
+So really, what does this tell us?
+
+74
+00:03:08,560 --> 00:03:10,860
+This is with that policy.
+
+75
+00:03:10,860 --> 00:03:13,540
+This is the difference between ordering 200 books
+
+76
+00:03:13,540 --> 00:03:15,760
+versus ordering 199 books.
+
+77
+00:03:15,760 --> 00:03:19,690
+Really, buying the 200th book-- by placing that extra book
+
+78
+00:03:19,690 --> 00:03:21,930
+order-- we're making a bet.
+
+79
+00:03:21,930 --> 00:03:24,070
+If that bet is successful, we're going
+
+80
+00:03:24,070 --> 00:03:26,302
+to get $60 in extra profit.
+
+81
+00:03:26,302 --> 00:03:27,760
+If we're missing on that bet, we're
+
+82
+00:03:27,760 --> 00:03:30,990
+going to bring $40 of extra cost.
+
+83
+00:03:30,990 --> 00:03:32,700
+So that is sort of the core decision
+
+84
+00:03:32,700 --> 00:03:34,020
+that we're facing here.
+
+85
+00:03:34,020 --> 00:03:35,162
+We have to make a bet.
+
+86
+00:03:35,162 --> 00:03:36,870
+And there are two different possibilities
+
+87
+00:03:36,870 --> 00:03:39,250
+on what we can end up with.
+
+88
+00:03:39,250 --> 00:03:42,730
+So what we want to know is: is ordering that 200th book a good
+
+89
+00:03:42,730 --> 00:03:44,420
+bet or not?
+
+90
+00:03:44,420 --> 00:03:46,310
+How do we determine if it's a good bet?
+
+91
+00:03:46,310 --> 00:03:49,320
+Well, we look at expectation-- the expected profit of it.
+
+92
+00:03:49,320 --> 00:03:50,830
+So in order to do that, let's think
+
+93
+00:03:50,830 --> 00:03:55,400
+about the probabilities of these two different scenarios.
+
+94
+00:03:55,400 --> 00:03:57,590
+And let's just for sake of argument
+
+95
+00:03:57,590 --> 00:03:59,812
+say that there is a 0.5 probability for each
+
+96
+00:03:59,812 --> 00:04:00,520
+of the scenarios.
+
+97
+00:04:00,520 --> 00:04:02,811
+There's a 50% chance that we're going to sell the book.
+
+98
+00:04:02,811 --> 00:04:05,720
+There's a 50% chance that we're not going to sell the book.
+
+99
+00:04:05,720 --> 00:04:06,820
+What does that mean?
+
+100
+00:04:06,820 --> 00:04:11,800
+It means there's a 0.5 probability of gaining $60.
+
+101
+00:04:11,800 --> 00:04:15,920
+There is a 0.5 probability of incurring $40.
+
+102
+00:04:15,920 --> 00:04:19,420
+So the expectation is positive --
+
+103
+00:04:19,420 --> 00:04:23,930
+it would make sense to buy that 200th book if there's a 50%
+
+104
+00:04:23,930 --> 00:04:26,630
+probability for each of the scenarios.
+
+105
+00:04:26,630 --> 00:04:28,773
+So let's just think about when there
+
+106
+00:04:28,773 --> 00:04:33,700
+is a 50% chance of selling that book and not selling the book.
+
+107
+00:04:33,700 --> 00:04:35,600
+That's when you're at the mean.
+
+108
+00:04:35,600 --> 00:04:38,170
+At the mean, the probability of selling the book
+
+109
+00:04:38,170 --> 00:04:40,020
+and not selling book are equal.
+
+110
+00:04:40,020 --> 00:04:43,710
+We have the same probability mass on both sides of the mean.
+
+111
+00:04:43,710 --> 00:04:45,430
+So really, what we want to do here--
+
+112
+00:04:45,430 --> 00:04:46,660
+we want to keep increasing.
+
+113
+00:04:46,660 --> 00:04:49,220
+We want to go a little bit above the mean,
+
+114
+00:04:49,220 --> 00:04:52,160
+because if you look at this, by adding a 201st book,
+
+115
+00:04:52,160 --> 00:04:53,490
+we can have the same argument.
+
+116
+00:04:53,490 --> 00:04:55,600
+We know that this probability over here
+
+117
+00:04:55,600 --> 00:05:00,660
+is going to be slightly lower, because there's
+
+118
+00:05:00,660 --> 00:05:03,520
+a slightly smaller chance of selling that last book if we
+
+119
+00:05:03,520 --> 00:05:04,660
+add one more book.
+
+120
+00:05:04,660 --> 00:05:07,920
+If you add a 202nd book, this is going to be even lower.
+
+121
+00:05:07,920 --> 00:05:09,830
+But we want to keep on adding books
+
+122
+00:05:09,830 --> 00:05:13,730
+until this probability is actually 0.4,
+
+123
+00:05:13,730 --> 00:05:17,480
+because at 0.4 it means that this probability is
+
+124
+00:05:17,480 --> 00:05:19,810
+going to be 0.6.
+
+125
+00:05:19,810 --> 00:05:22,590
+And that means that the expectation is zero.
+
+126
+00:05:22,590 --> 00:05:24,760
+So once we've added that book that gives you
+
+127
+00:05:24,760 --> 00:05:26,970
+these probabilities, adding more books
+
+128
+00:05:26,970 --> 00:05:31,500
+is not going to bring us an additional expected profit
+
+129
+00:05:31,500 --> 00:05:33,190
+that's greater than zero.
+
+130
+00:05:33,190 --> 00:05:35,520
+So this is what we're looking at.
+
+131
+00:05:35,520 --> 00:05:41,480
+And we know that at the mean there's a 50% probability.
+
+132
+00:05:41,480 --> 00:05:43,910
+So we want to keep increasing above the mean
+
+133
+00:05:43,910 --> 00:05:45,260
+until we reach this probability.
+
+134
+00:05:45,260 --> 00:05:50,600
+Now, do we know whether the 200 is the mean or not?
+
+135
+00:05:50,600 --> 00:05:53,120
+That's the question here, because if 200
+
+136
+00:05:53,120 --> 00:05:57,470
+was the mean demand, it means that we want to go above 200.
+
+137
+00:05:57,470 --> 00:05:59,620
+Let's think about the information that we have.
+
+138
+00:05:59,620 --> 00:06:01,670
+What information do we have?
+
+139
+00:06:01,670 --> 00:06:03,920
+If you look at sales, we can look
+
+140
+00:06:03,920 --> 00:06:05,820
+at the frequency of the sales.
+
+141
+00:06:05,820 --> 00:06:08,790
+We know there's a minimum 100 sales.
+
+142
+00:06:08,790 --> 00:06:12,380
+There's a maximum of 200 sales, the book sales in a season.
+
+143
+00:06:12,380 --> 00:06:14,260
+And there's an average of 200.
+
+144
+00:06:14,260 --> 00:06:15,740
+So if you draw the graph like this,
+
+145
+00:06:15,740 --> 00:06:17,960
+it looks something like that.
+
+146
+00:06:17,960 --> 00:06:20,920
+So we know that the average sales are 200.
+
+147
+00:06:20,920 --> 00:06:24,410
+We just said if the mean demand is also 200,
+
+148
+00:06:24,410 --> 00:06:26,600
+we definitely want to order more than 200 books.
+
+149
+00:06:26,600 --> 00:06:30,220
+So do we know if mean demand is 200 based on this?
+
+150
+00:06:30,220 --> 00:06:32,710
+Well, we have to be careful because sales are not
+
+151
+00:06:32,710 --> 00:06:35,070
+the same as demand.
+
+152
+00:06:35,070 --> 00:06:36,140
+Why?
+
+153
+00:06:36,140 --> 00:06:38,750
+Because sales are censored upwards.
+
+154
+00:06:38,750 --> 00:06:39,740
+What do I mean by that?
+
+155
+00:06:39,740 --> 00:06:45,160
+Well, think of any time in the past where we sold 250 books.
+
+156
+00:06:45,160 --> 00:06:48,360
+Do we know from the information that we sold these 250 books
+
+157
+00:06:48,360 --> 00:06:51,330
+because the demand was exactly 250
+
+158
+00:06:51,330 --> 00:06:52,840
+or because we just didn't have more
+
+159
+00:06:52,840 --> 00:06:54,850
+than 250 books in our store?
+
+160
+00:06:54,850 --> 00:06:56,000
+We don't know that.
+
+161
+00:06:56,000 --> 00:06:57,580
+So we have to be careful.
+
+162
+00:06:57,580 --> 00:07:00,020
+Just based on information that we have,
+
+163
+00:07:00,020 --> 00:07:01,660
+we could have the demand curve.
+
+164
+00:07:01,660 --> 00:07:05,840
+Like if we look at the PDF of demand, the Probability Density
+
+165
+00:07:05,840 --> 00:07:10,140
+Function of demand, we might have a tail above turned 250.
+
+166
+00:07:10,140 --> 00:07:12,900
+If that is the case, it means that the mean
+
+167
+00:07:12,900 --> 00:07:15,300
+of sales to average sales is less
+
+168
+00:07:15,300 --> 00:07:23,729
+than the mean of the demand.
+
+169
+00:07:23,729 --> 00:07:26,020
+In either case, we know that it's going to be less than
+
+170
+00:07:26,020 --> 00:07:27,060
+or equal.
+
+171
+00:07:27,060 --> 00:07:30,430
+So we set it if mean demand was 200,
+
+172
+00:07:30,430 --> 00:07:32,500
+we wanted to order more than 200.
+
+173
+00:07:32,500 --> 00:07:35,790
+Now, we know that mean demand is at least 200.
+
+174
+00:07:35,790 --> 00:07:39,410
+So we know we want to order at least 200 and then some.
+
+175
+00:07:39,410 --> 00:07:42,260
+So the answer to the question is that we
+
+176
+00:07:42,260 --> 00:07:46,450
+want Q star to be greater than-- we
+
+177
+00:07:46,450 --> 00:07:49,740
+want it to be greater than 200.
+
+178
+00:07:49,740 --> 00:07:51,108
+
+

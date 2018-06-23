@@ -1,0 +1,602 @@
+0
+00:00:00,000 --> 00:00:00,760
+https://youtu.be/R1UENY1sG2c               NghiaNguyen
+
+1
+00:00:00,760 --> 00:00:04,390
+Hãy thảo luận về phân tích dữ liệu.
+
+2
+00:00:04,390 --> 00:00:07,820
+Thông thường, mọi người phân tích dữ liệu bằng các công cụ
+
+3
+00:00:07,820 --> 00:00:09,650
+như những lệnh shell của Unix.
+
+4
+00:00:09,650 --> 00:00:15,180
+Như grep, awk, sed, và cả Python pandas,
+
+5
+00:00:15,180 --> 00:00:17,610
+và môi trường lập trình R.
+
+6
+00:00:17,610 --> 00:00:20,840
+Nhưng sự hạn chế chính của những công cụ này là
+
+7
+00:00:20,840 --> 00:00:24,800
+nó chỉ chạy trên 1 máy đơn.
+
+8
+00:00:24,800 --> 00:00:26,850
+Giả sử ta có công cụ phân tích
+
+9
+00:00:26,850 --> 00:00:29,850
+có thể chạy trên khối dữ liệu lớn?
+
+10
+00:00:29,850 --> 00:00:33,480
+Ta sẽ làm những thứ như kết hợp 
+thông tin giao thông công cộng,
+
+11
+00:00:33,480 --> 00:00:36,810
+cùng với bản đồ địa hình,
+
+12
+00:00:36,810 --> 00:00:39,620
+cùng với dữ liệu từ điện thoại người dùng cung cấp,
+
+13
+00:00:39,620 --> 00:00:41,930
+và kết hợp tất cả lại bằng cách 
+sử dụng 1 mô hình dữ liệu tập trung
+
+14
+00:00:41,930 --> 00:00:46,830
+để cung cấp thông tin giao thông theo thời gian thực.
+
+15
+00:00:46,830 --> 00:00:48,630
+Ngày nay, mọi người đang sử dụng Spark
+
+16
+00:00:48,630 --> 00:00:55,510
+trong thế giới rộng lớn, dữ liệu đa dạng phong phú.
+
+17
+00:00:55,510 --> 00:00:58,510
+Tại trường ĐH UC Berkeley, nhóm nghiên cứu của tôi
+
+18
+00:00:58,510 --> 00:01:00,740
+đang làm việc trên khối dữ liệu lớn phân tích gen - Big Data Genomics.
+
+19
+00:01:00,740 --> 00:01:05,420
+Ta đang xây dựng 1 hệ thống phân tích gen, gọi là ADAM,
+
+20
+00:01:05,420 --> 00:01:08,590
+nó cho phép bạn thao tác trên hàng ngàn gen
+
+21
+00:01:08,590 --> 00:01:10,740
+đồng thời 1 lúc.
+
+22
+00:01:10,740 --> 00:01:13,550
+Khởi đầu với Conviva, sử dụng Spark
+
+23
+00:01:13,550 --> 00:01:17,566
+để tối ưu tốc độ truyền tại video qua internet.
+
+24
+00:01:17,566 --> 00:01:18,940
+Cũng có vài công ty đang sử dụng Spark
+
+25
+00:01:18,940 --> 00:01:21,720
+để xử lý dữ liệu cho thiết bị đeo trên người
+
+26
+00:01:21,720 --> 00:01:23,970
+và cho Internet of Things (Vạn vật kết nối)
+
+27
+00:01:23,970 --> 00:01:28,390
+Yahoo dùng Spark để đưa tin tức phù hợp với từng người dùng
+
+28
+00:01:28,390 --> 00:01:32,650
+và phân tích dữ liệu từ hệ thống quảng cáo của họ.
+
+29
+00:01:32,650 --> 00:01:35,140
+Và ngân hàng Capital One đang sử dụng Spark
+
+30
+00:01:35,140 --> 00:01:38,010
+để giới thiệu các sản phẩm
+
+31
+00:01:38,010 --> 00:01:41,790
+theo hàng ngàn chủng loại và người dùng.
+
+32
+00:01:41,790 --> 00:01:45,120
+
+33
+00:01:45,120 --> 00:01:49,660
+Vấn đề với dữ liệu lớn là dữ liệu ngày tăng lên nhanh hơn
+
+34
+00:01:49,660 --> 00:01:52,300
+tốc độ xử lý của máy tính.
+
+35
+00:01:52,300 --> 00:01:54,590
+Có rất nhiều nguồn dữ liệu mới
+
+36
+00:01:54,590 --> 00:01:57,050
+và cả nguồn dữ liệu đang mở rộng.
+
+37
+00:01:57,050 --> 00:02:01,920
+Web, di động, khoa học, những thứ mà ta thấy.
+
+38
+00:02:01,920 --> 00:02:04,690
+Hiện nay, bộ nhớ thì ngày càng rẻ, và dung lượng của nó
+
+39
+00:02:04,690 --> 00:02:07,980
+tăng gấp đôi mỗi 18 tháng.
+
+40
+00:02:07,980 --> 00:02:13,170
+Nhưng hiệu năng của CPU, tốc độ, không tăng.
+
+41
+00:02:13,170 --> 00:02:16,490
+Và thời gian để đọc và ghi dữ liệu vào bộ nhớ ngay càng
+
+42
+00:02:16,490 --> 00:02:20,960
+trở thành 1 nút thắt cổ chai.
+
+43
+00:02:20,960 --> 00:02:24,300
+Sau đây là vài ví dụ thực tế về dữ liệu lớn.
+
+44
+00:02:24,300 --> 00:02:29,680
+Log hàng ngày của Facebook khoảng 60 TB mỗi ngày.
+
+45
+00:02:29,680 --> 00:02:32,600
+Dự án 1000 Gen tạo ra
+
+46
+00:02:32,600 --> 00:02:36,860
+trên 200 TB dữ liệu gen của con người
+
+47
+00:02:36,860 --> 00:02:39,990
+ và còn được thêm vào hàng ngày.
+
+48
+00:02:39,990 --> 00:02:45,790
+Các chỉ mục web của Google lớn hơn 10 PB thông tin.
+
+49
+00:02:45,790 --> 00:02:48,630
+Hiện nay, tin tốt là ổ đĩa ngày càng rẻ.
+
+50
+00:02:48,630 --> 00:02:52,790
+Nó khoảng -- 35$ cho 1 TB.
+
+51
+00:02:52,790 --> 00:02:57,810
+Mặt khác, mọi người đang tải lên Youtube
+
+52
+00:02:57,810 --> 00:03:01,870
+1 PB (~ 1000TB) dữ liệu hàng ngày.
+
+53
+00:03:01,870 --> 00:03:05,080
+Thời gian để đọc và ghi 1 TB dữ liệu từ ổ đĩa là 
+
+54
+00:03:05,080 --> 00:03:09,740
+khoảng 3h, tức là 100MB mỗi giây.
+
+55
+00:03:09,740 --> 00:03:13,280
+Thực sự tốn khá nhiều thời gian.
+
+56
+00:03:13,280 --> 00:03:16,680
+Vậy thách thức mà ta đang đối mặt là 1 máy tính không thể xử lý,
+
+57
+00:03:16,680 --> 00:03:19,420
+hay lưu trữ tất cả dữ liệu.
+
+58
+00:03:19,420 --> 00:03:22,280
+Và hướng giải quyết là phân tán dữ liệu cho
+
+59
+00:03:22,280 --> 00:03:25,110
+từng cụm máy tính.
+
+60
+00:03:25,110 --> 00:03:30,050
+Nhiều ổ cứng, và CPU, và cả bộ nhớ.
+
+61
+00:03:30,050 --> 00:03:32,040
+Ta sẽ nói nhiều hơn về cái này ở bài tiếp theo,
+
+62
+00:03:32,040 --> 00:03:35,110
+nhưng điểm chính của ngày hôm nay
+
+63
+00:03:35,110 --> 00:03:37,170
+là về bộ nhớ.
+
+64
+00:03:37,170 --> 00:03:39,560
+Khi ta xây dựng 1 cụm máy tính lớn,
+
+65
+00:03:39,560 --> 00:03:43,050
+ta có thể có rất nhiều bộ nhớ trong các máy đó.
+
+66
+00:03:43,050 --> 00:03:46,620
+Và càng nhiều hơn khi ta nhìn vào toàn bộ cụm máy chủ.
+
+67
+00:03:46,620 --> 00:03:47,250
+Và càng nhiều hơn khi ta nhìn vào toàn bộ cụm máy chủ,
+
+68
+00:03:47,250 --> 00:03:50,070
+
+69
+00:03:50,070 --> 00:03:55,520
+Ta có nhiều dữ liệu và ta chia nhỏ
+
+70
+00:03:55,520 --> 00:03:58,360
+cho toàn bộ các máy tính trong cụm máy chủ.
+
+71
+00:03:58,360 --> 00:04:02,550
+Vậy, mỗi máy tính sẽ có vài hàng dữ liệu 
+
+72
+00:04:02,550 --> 00:04:07,670
+trong đống dữ liệu to lớn mà ta muốn lưu trữ và
+
+73
+00:04:07,670 --> 00:04:11,060
+phân tích.
+
+74
+00:04:11,060 --> 00:04:13,800
+Ý tưởng của việc phân mảnh dữ liệu lớn 
+
+75
+00:04:13,800 --> 00:04:17,120
+cho từng máy tính và lưu trữ trong bộ nhớ của mỗi máy
+
+76
+00:04:17,120 --> 00:04:20,720
+được gọi là Sparks DataFrame.
+
+77
+00:04:20,720 --> 00:04:22,835
+Đây là ý tưởng chủ đạo trong Spark.
+
+78
+00:04:22,835 --> 00:04:25,420
+
+79
+00:04:25,420 --> 00:04:28,000
+Hiên nay, Spark là 1 framework tính toán.
+
+80
+00:04:28,000 --> 00:04:31,020
+Và nó cung cấp 1 phương pháp lập trình trừu tượng và
+
+81
+00:04:31,020 --> 00:04:33,910
+chạy song song mà che đi cả độ phức tạp
+
+82
+00:04:33,910 --> 00:04:36,940
+của fault tolerance và một số máy tính chạy chậm.
+
+83
+00:04:36,940 --> 00:04:38,780
+Đơn giản mà nói, đây là 1 thao tác,
+
+84
+00:04:38,780 --> 00:04:40,890
+chạy trên tất cả dữ liệu.
+
+85
+00:04:40,890 --> 00:04:43,756
+Bạn không cần phải quan tâm về nó chạy ở đâu,
+
+86
+00:04:43,756 --> 00:04:45,130
+trên hệ điều hành gì, hệ thống nào,
+
+87
+00:04:45,130 --> 00:04:48,600
+quan tâm về lập lịch như thế nào.
+
+88
+00:04:48,600 --> 00:04:52,250
+Thực tế, Spark có thể xử lý nhiều tác vụ trên 
+
+89
+00:04:52,250 --> 00:04:54,610
+những node khác nhau, bởi vì 1 node có thể bị lỗi
+
+90
+00:04:54,610 --> 00:04:57,010
+hoặc xử lý chậm.
+
+91
+00:04:57,010 --> 00:04:59,950
+Ta sẽ tìm hiểu thêm về cái này ở bài giảng thứ 2,
+
+92
+00:04:59,950 --> 00:05:02,670
+nhưng điều cần ghi nhớ là Spark che đi 
+
+93
+00:05:02,670 --> 00:05:05,220
+toàn bộ độ phức tạp này.
+
+94
+00:05:05,220 --> 00:05:08,360
+Bạn chỉ nói cái mà bạn muốn làm và Spark sẽ làm nó
+
+95
+00:05:08,360 --> 00:05:12,020
+theo cách tối ưu nhất.
+
+96
+00:05:12,020 --> 00:05:14,960
+Apache Spark bao gồm vài thành phần.
+
+97
+00:05:14,960 --> 00:05:18,730
+Có 1 nhân là Apache Spark Runtime.
+
+98
+00:05:18,730 --> 00:05:25,810
+Và bên trên là Spark SQL, Spark Streaming, MLib, ML,
+
+99
+00:05:25,810 --> 00:05:26,390
+và GraphX.
+
+100
+00:05:26,390 --> 00:05:29,210
+
+101
+00:05:29,210 --> 00:05:34,730
+Ta sẽ tập chung vào Spark SQL và Apache Spark
+
+102
+00:05:34,730 --> 00:05:35,610
+ở khoá học này.
+
+103
+00:05:35,610 --> 00:05:38,730
+
+104
+00:05:38,730 --> 00:05:43,370
+Ở đây là 1 số tài liệu quan trọng để tham khảo Apache Spark.
+
+105
+00:05:43,370 --> 00:05:46,690
+Khi tôi lập trình và viết chương trình Apache Spark,
+
+106
+00:05:46,690 --> 00:05:50,420
+tôi luôn luôn có 1 trình duyệt web được mở với 1 hoặc nhiều
+
+107
+00:05:50,420 --> 00:05:51,265
+những đường dẫn này.
+
+108
+00:05:51,265 --> 00:05:53,910
+
+109
+00:05:53,910 --> 00:05:55,410
+Môi trường mà ta sẽ sử dụng trong khoá học này
+
+110
+00:05:55,410 --> 00:05:59,030
+là phương thức lập trình cho Spark bằng Python,
+
+111
+00:05:59,030 --> 00:06:01,980
+còn gọi là pySpark.
+
+112
+00:06:01,980 --> 00:06:03,850
+Cái này cung cấp cách lập trình trừu tượng dễ dàng,
+
+113
+00:06:03,850 --> 00:06:06,040
+và cả chạy song song.
+
+114
+00:06:06,040 --> 00:06:08,280
+Nhắc lại, bạn chỉ nói, đây là 1 thao tác,
+
+115
+00:06:08,280 --> 00:06:10,410
+thực thi trên toàn bộ dữ liệu.
+
+116
+00:06:10,410 --> 00:06:12,540
+Ý tưởng chính mà ta sẽ dùng
+
+117
+00:06:12,540 --> 00:06:16,980
+là gói dữ liệu Spark Data Frames.
+
+118
+00:06:16,980 --> 00:06:20,180
+Giờ, khi bạn chạy 1 chương trình Spark,
+
+119
+00:06:20,180 --> 00:06:24,000
+thực tế nó bao gồm 2 chương trình.
+
+120
+00:06:24,000 --> 00:06:28,710
+Có 1 chương trình driver và 1 chương trình worker.
+
+121
+00:06:28,710 --> 00:06:33,550
+Chương trình driver chạy trên 1 máy tính.
+
+122
+00:06:33,550 --> 00:06:37,700
+Và chương trình worker chạy trên cụm máy chủ
+
+123
+00:06:37,700 --> 00:06:40,154
+hoặc 1 thread riêng biệt trong 1 máy tính nội bộ.
+
+124
+00:06:40,154 --> 00:06:42,880
+
+125
+00:06:42,880 --> 00:06:45,820
+DataFrames mà bạn tạo sẽ được phân chia
+
+126
+00:06:45,820 --> 00:06:47,600
+cho toàn bộ các worker.
+
+127
+00:06:47,600 --> 00:06:51,180
+
+128
+00:06:51,180 --> 00:06:55,710
+1 chương trình Spark đầu tiên sẽ tạo 1 đối tượng SparkContext.
+
+129
+00:06:55,710 --> 00:06:58,200
+Và SparkContext cung cấp cho Spark về cách truy vập và
+
+130
+00:06:58,200 --> 00:07:00,840
+địa chỉ của cụm máy tính.
+
+131
+00:07:00,840 --> 00:07:04,180
+Nếu bạn dùng pySpark hay bạn dùng môi trường của
+
+132
+00:07:04,180 --> 00:07:07,460
+Databrick Community Edition, cả 2 cái sẽ tự động tạo
+
+133
+00:07:07,460 --> 00:07:09,770
+SparkContext cho bạn.
+
+134
+00:07:09,770 --> 00:07:14,390
+Nếu bạn đang sử dụng iPython hay đang viết 1 chương trình Spark,
+
+135
+00:07:14,390 --> 00:07:17,920
+không liên quan tới pySpark hay Databricks Community Edition,
+
+136
+00:07:17,920 --> 00:07:19,810
+thì bạn phải tự tạo đối tượng SparkContext.
+
+137
+00:07:19,810 --> 00:07:23,140
+thì bạn phải tự tạo đối tượng SparkContext.
+
+138
+00:07:23,140 --> 00:07:27,020
+Tiếp theo, chương trình tạo ra đối tượng sqlContext.
+
+139
+00:07:27,020 --> 00:07:31,330
+Bạn dùng đối tượng sqlContext để tạo các gói dữ liệu DataFrame.
+
+140
+00:07:31,330 --> 00:07:33,820
+Trong các bài tập thí nghiệm, ta sẽ tạo SparkContext
+
+141
+00:07:33,820 --> 00:07:36,210
+và sqlContext giùm bạn.
+
+142
+00:07:36,210 --> 00:07:39,200
+Nhưng nếu bạn đang tự viết chương trình riêng,
+
+143
+00:07:39,200 --> 00:07:42,350
+thì bạn có thể cần tạo SparkContext và sqlContext,
+
+144
+00:07:42,350 --> 00:07:46,670
+phụ thuộc vào môi trường mà bạn đang sử dụng.
+
+145
+00:07:46,670 --> 00:07:49,710
+Đối số Master Parameter cho SparkContext xác định
+
+146
+00:07:49,710 --> 00:07:53,170
+kích cỡ và loại của cụm máy chủ mà bạn dùng.
+
+147
+00:07:53,170 --> 00:07:54,980
+Và có 4 lựa chọn khác nhau.
+
+148
+00:07:54,980 --> 00:07:58,480
+Bạn có thể chạy Spark ở chế độ nội bộ (local),
+
+149
+00:07:58,480 --> 00:08:04,820
+hay bạn có thể chạy Spark ở chế độ cụm máy chủ (cluster), hay với mesos.
+
+150
+00:08:04,820 --> 00:08:07,070
+với các bài tập thí nghiệm, bạn không phải lo lắng về master parameter,
+
+151
+00:08:07,070 --> 00:08:10,110
+chúng tôi sẽ chọn nó cho bạn.
+

@@ -1,0 +1,601 @@
+1
+00:00:04,873 --> 00:00:12,53
+https://youtu.be/Avk4VIk2l40
+We are going to talk about entities that
+issue bonds or entities that borrow.
+
+2
+00:00:12,53 --> 00:00:17,460
+And we are focused on the most important
+entity, I guess, in the following sense,
+
+3
+00:00:17,460 --> 00:00:22,733
+that it borrows a lot, and it's in every
+country and it's called a government.
+
+4
+00:00:22,733 --> 00:00:29,13
+And governments borrow issuing bonds and
+we're gonna focus on those.
+
+5
+00:00:29,13 --> 00:00:31,917
+They finance a ton of activity as I said,
+and
+
+6
+00:00:31,917 --> 00:00:35,540
+fiscal policy is very,
+very common across the world.
+
+7
+00:00:37,205 --> 00:00:42,305
+They issue bonds that are very complex,
+but have also been involved in market
+
+8
+00:00:42,305 --> 00:00:47,333
+backed securities in America and
+other countries that are pretty complex.
+
+9
+00:00:47,333 --> 00:00:49,492
+This is all just fine.
+
+10
+00:00:49,493 --> 00:00:54,797
+It's just that the level of complexity
+of the bonds can be so much,
+
+11
+00:00:54,797 --> 00:00:59,913
+that at some point,
+technical assistance in understanding how
+
+12
+00:00:59,914 --> 00:01:06,568
+bonds work is critical to every company,
+every institution, every government.
+
+13
+00:01:06,568 --> 00:01:10,353
+So I don't want you to think that we're
+going to approach all that complexity.
+
+14
+00:01:10,353 --> 00:01:15,11
+But do enough for you to understand how
+thing could be dramatically different in
+
+15
+00:01:15,11 --> 00:01:16,479
+different situations.
+
+16
+00:01:17,580 --> 00:01:23,50
+We'll start with the simplest,
+most traded bond in the world, probably.
+
+17
+00:01:23,50 --> 00:01:27,130
+It's called a treasury security,
+and the interesting thing about
+
+18
+00:01:27,130 --> 00:01:31,199
+a treasury security, you'll see today,
+is it's a zero coupon bond.
+
+19
+00:01:32,250 --> 00:01:33,640
+What does that mean?
+
+20
+00:01:33,640 --> 00:01:36,330
+Remember, a bond pays in two ways.
+
+21
+00:01:36,330 --> 00:01:39,630
+So when the issuer of the bond,
+the borrower says, I need money,
+
+22
+00:01:39,630 --> 00:01:42,210
+they specify two things.
+
+23
+00:01:42,210 --> 00:01:46,660
+What is the periodic payment, called
+coupon, and what is the final payment,
+
+24
+00:01:46,660 --> 00:01:47,442
+called face value?
+
+25
+00:01:47,442 --> 00:01:52,460
+Zero coupon bond actually
+does not pay any coupons, and
+
+26
+00:01:52,460 --> 00:01:55,479
+it's issued with up to one year maturity.
+
+27
+00:01:55,480 --> 00:01:58,940
+Remember, there's a finite life,
+bonds tend to have finite lives,
+
+28
+00:01:58,940 --> 00:01:59,700
+they're contracts.
+
+29
+00:02:01,60 --> 00:02:03,120
+And it's issued up to one year maturity.
+
+30
+00:02:03,120 --> 00:02:05,952
+And I'll give you a very interesting
+episode of the beginning of,
+
+31
+00:02:05,952 --> 00:02:07,160
+I mean, not episode,
+
+32
+00:02:07,160 --> 00:02:10,710
+example of the beginning of something
+called securitization when we get to it.
+
+33
+00:02:12,250 --> 00:02:14,13
+So what does it say?
+
+34
+00:02:14,13 --> 00:02:21,41
+It typically says that, I'll pay
+you $100,000 or $1,000 or whatever.
+
+35
+00:02:21,41 --> 00:02:27,820
+Where I is the US government,
+one year from now is the maximum maturity.
+
+36
+00:02:27,820 --> 00:02:31,850
+But actually let me just introduce
+the complexity I just spoke about.
+
+37
+00:02:31,850 --> 00:02:34,730
+Because we'll use it in examples
+as well as I'm thinking.
+
+38
+00:02:35,790 --> 00:02:37,959
+So we're doing this ahead of time.
+
+39
+00:02:37,960 --> 00:02:40,530
+They are either treasury bills or strips.
+
+40
+00:02:40,530 --> 00:02:43,950
+What is the distinction between
+a treasury bill and a strip?
+
+41
+00:02:43,950 --> 00:02:50,265
+For the time being, the distinction
+is, a strip is a treasury bill,
+
+42
+00:02:50,265 --> 00:02:54,684
+zero coupon bond with maturity
+greater than one year.
+
+43
+00:02:54,685 --> 00:02:56,178
+So think like that.
+
+44
+00:02:56,178 --> 00:02:59,875
+It, of course, could have maturity
+less than one, we'll get to later.
+
+45
+00:02:59,875 --> 00:03:04,105
+But treasury bills originally were
+issued with up to one year maturity.
+
+46
+00:03:04,105 --> 00:03:08,744
+But you can buy government bonds
+with greater than one year maturity,
+
+47
+00:03:08,745 --> 00:03:10,602
+that are also zero coupon, okay?
+
+48
+00:03:12,920 --> 00:03:15,760
+This is a very, very interesting example.
+
+49
+00:03:15,760 --> 00:03:22,60
+It looks very simple and it is in pricing,
+but it's the most traded type of loan.
+
+50
+00:03:22,60 --> 00:03:23,580
+So what does it have?
+
+51
+00:03:23,580 --> 00:03:25,860
+It has face value, that's it.
+
+52
+00:03:26,950 --> 00:03:28,880
+So let's take an example.
+
+53
+00:03:28,880 --> 00:03:31,49
+Let's try to price the bond.
+
+54
+00:03:31,50 --> 00:03:34,810
+The bond price will be very simple,
+it'll be what?
+
+55
+00:03:34,810 --> 00:03:40,150
+It'll be equal to the Present Value of
+only one thing, and that's the face value.
+
+56
+00:03:40,150 --> 00:03:42,652
+So I'm going to just,
+instead of writing it all out,
+
+57
+00:03:42,652 --> 00:03:48,829
+I will just show you in the slide up on
+the page, and please write it out.
+
+58
+00:03:48,830 --> 00:03:53,910
+So what you'll see is the price of
+the bond is equal to face value
+
+59
+00:03:53,910 --> 00:03:59,770
+times our old friend,
+Present Value factor.
+
+60
+00:03:59,770 --> 00:04:04,913
+And sometimes I say PVF,
+sometimes I say FPF, what is it?
+
+61
+00:04:04,913 --> 00:04:09,915
+It is the Present Value Factor
+means how much is the Present Value
+
+62
+00:04:09,915 --> 00:04:15,114
+of one buck, given an interest rate
+of r and number of periods away n?
+
+63
+00:04:15,115 --> 00:04:23,570
+Or, in this case, it's the face value
+divided by 1 + r raised to power n.
+
+64
+00:04:23,570 --> 00:04:25,920
+Remember, it's one shot.
+
+65
+00:04:25,920 --> 00:04:31,220
+It's like the first kind of example
+we did in the first module,
+
+66
+00:04:31,220 --> 00:04:33,420
+seems like we met many, many moons ago.
+
+67
+00:04:34,800 --> 00:04:35,680
+In the first module,
+
+68
+00:04:35,680 --> 00:04:41,350
+the first thing we considered was one shot
+payments gathered over multiple periods.
+
+69
+00:04:41,350 --> 00:04:43,483
+We did the Future Value,
+we did the Present Value.
+
+70
+00:04:43,483 --> 00:04:47,452
+So this is the Present Value of
+getting one shot payment n
+
+71
+00:04:47,452 --> 00:04:50,370
+years from now, where n can be any number.
+
+72
+00:04:51,600 --> 00:04:52,700
+So let's do an example,
+
+73
+00:04:54,160 --> 00:04:59,200
+suppose there is a zero coupon bond
+that pays $100,000 in exactly one year.
+
+74
+00:05:00,750 --> 00:05:04,810
+And let us assume that
+the compounding interval is one year.
+
+75
+00:05:04,810 --> 00:05:07,610
+You'll understand what I'm
+talking about in a second.
+
+76
+00:05:07,610 --> 00:05:10,820
+Because in the real world,
+the compounding interval for
+
+77
+00:05:10,820 --> 00:05:12,770
+government bonds is about six months.
+
+78
+00:05:14,140 --> 00:05:17,320
+So let's assume, for
+simplicity, it's one year.
+
+79
+00:05:17,320 --> 00:05:21,300
+What is the price or value of the bond?
+
+80
+00:05:21,300 --> 00:05:23,190
+The two are the same.
+
+81
+00:05:23,190 --> 00:05:25,320
+How much will it sell for today?
+
+82
+00:05:25,320 --> 00:05:30,330
+In other words,
+if all other bonds of similar majority
+
+83
+00:05:30,330 --> 00:05:33,950
+are earning about 5% and
+issued by the government, right?
+
+84
+00:05:35,30 --> 00:05:39,54
+The neat thing about government
+bonds is they're traded a lot and
+
+85
+00:05:39,54 --> 00:05:41,183
+their information is available.
+
+86
+00:05:41,183 --> 00:05:42,844
+So the discount rate is what?
+
+87
+00:05:42,845 --> 00:05:45,140
+5%.
+So let's try to do this.
+
+88
+00:05:45,140 --> 00:05:52,190
+This is so simple that I'm kind of
+a little bit, it feels odd doing this.
+
+89
+00:05:52,190 --> 00:05:54,560
+So let's write it down.
+
+90
+00:05:54,560 --> 00:05:57,890
+Equals, what will the price be equal to?
+
+91
+00:05:57,890 --> 00:06:00,39
+So you do equal sign in Excel.
+
+92
+00:06:00,40 --> 00:06:04,660
+And we'll introduce some other
+Excel parameters or functions.
+
+93
+00:06:05,730 --> 00:06:07,263
+So it'll be what?
+
+94
+00:06:07,263 --> 00:06:10,416
+The PV function, and
+what will be the interest rate?
+
+95
+00:06:10,416 --> 00:06:14,736
+0.05.
+
+96
+00:06:14,736 --> 00:06:16,409
+How much is n?
+
+97
+00:06:16,410 --> 00:06:20,670
+Remember, we are saying the compounding
+interval is the same as
+
+98
+00:06:20,670 --> 00:06:25,560
+the maturity of this, which is one year, right?
+
+99
+00:06:26,980 --> 00:06:29,846
+And what is the PMT?
+
+100
+00:06:29,846 --> 00:06:34,766
+0, look how I wrote 0, it's style.
+
+101
+00:06:34,766 --> 00:06:38,140
+And finally, 100000 remember,
+don't put commas.
+
+102
+00:06:39,880 --> 00:06:44,390
+And when you press Enter,
+
+103
+00:06:44,390 --> 00:06:52,385
+you should get a number 95,238.10.
+
+104
+00:06:52,386 --> 00:06:56,839
+The nice thing about a zero
+coupon bond is, under
+
+105
+00:06:56,839 --> 00:07:02,280
+the assumption that interest
+rates are positive.
+
+106
+00:07:02,280 --> 00:07:07,619
+And by the way, in recent times even,
+we have seen this not to be true.
+
+107
+00:07:08,840 --> 00:07:11,960
+But anyways, most of the time
+the interest rate is positive.
+
+108
+00:07:11,960 --> 00:07:15,919
+Right now, the interest rate on such
+bonds will be very low in the US, but
+
+109
+00:07:15,920 --> 00:07:18,489
+suppose it's 5% because
+we want round numbers.
+
+110
+00:07:19,580 --> 00:07:24,808
+The price of a zero coupon
+bond under the assumption that
+
+111
+00:07:24,809 --> 00:07:30,816
+Time Value of Money is
+inherently positive is $95,238,
+
+112
+00:07:30,816 --> 00:07:34,503
+meaning less than $100,000.
+
+113
+00:07:34,504 --> 00:07:38,872
+So one thing that it's also called,
+a zero coupon bond,
+
+114
+00:07:38,872 --> 00:07:42,50
+is also called a discount bond, why?
+
+115
+00:07:42,50 --> 00:07:46,460
+Not because it's being sold at a discount,
+meaning it's not a sale.
+
+116
+00:07:46,460 --> 00:07:49,306
+But the Present Value has
+to be less than face value.
+
+117
+00:07:49,306 --> 00:07:52,825
+But that is under the assumption
+that interest rates are positive.
+
+118
+00:07:52,826 --> 00:07:58,860
+So let's think about the next concept.
+
+119
+00:07:58,860 --> 00:08:03,990
+What we're going to do next is,
+do a little clip on what I call
+
+120
+00:08:03,990 --> 00:08:09,000
+yield to maturity,
+which is related to what we just did.
+
+121
+00:08:09,000 --> 00:08:12,880
+In our example right now,
+if you think about it a little bit,
+
+122
+00:08:12,880 --> 00:08:17,130
+I gave you two numbers and
+I asked you to calculate the third,
+
+123
+00:08:18,200 --> 00:08:20,960
+which we said, was the price of the bond.
+
+124
+00:08:20,960 --> 00:08:22,830
+Now, think about it in the real world.
+
+125
+00:08:22,830 --> 00:08:24,229
+What will happen?
+
+126
+00:08:24,230 --> 00:08:29,16
+Trading is happening and
+somebody is saying, you know what?
+
+127
+00:08:29,16 --> 00:08:34,630
+I'm going to give $100,000 one year
+from now, how much will you pay me?
+
+128
+00:08:34,630 --> 00:08:39,590
+So it's very likely that what
+you know is the price and
+
+129
+00:08:39,590 --> 00:08:42,500
+built in the price is the rate of return.
+
+130
+00:08:42,500 --> 00:08:44,100
+So we'll talk about that in a second.
+

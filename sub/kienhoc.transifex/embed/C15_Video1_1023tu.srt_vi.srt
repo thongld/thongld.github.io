@@ -1,0 +1,523 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/YJ855nhKJeA
+
+1
+00:00:00,000 --> 00:00:00,497
+
+2
+00:00:00,497 --> 00:00:02,830
+DR. RAMESH YERRABALLI: So as
+we saw in the introduction,
+
+3
+00:00:02,830 --> 00:00:07,690
+this module will bring everything that
+you learned into one single concept.
+
+4
+00:00:07,690 --> 00:00:09,690
+DR. JONATHAN VALVANO:
+Yeah, we can build a game.
+
+5
+00:00:09,690 --> 00:00:12,189
+DR. RAMESH YERRABALLI: So the
+game that we're going to build
+
+6
+00:00:12,189 --> 00:00:14,010
+is the one that Jon
+is playing right here.
+
+7
+00:00:14,010 --> 00:00:14,410
+DR. JONATHAN VALVANO: And losing.
+
+8
+00:00:14,410 --> 00:00:17,270
+DR. RAMESH YERRABALLI:
+It's a space invaders game.
+
+9
+00:00:17,270 --> 00:00:22,300
+OK, let's give it another
+try, So we will collect first
+
+10
+00:00:22,300 --> 00:00:24,325
+the requirements for this game.
+
+11
+00:00:24,325 --> 00:00:28,830
+A requirements document is
+the part where we start.
+
+12
+00:00:28,830 --> 00:00:30,830
+DR. JONATHAN VALVANO: So
+a requirements document
+
+13
+00:00:30,830 --> 00:00:34,530
+is a legal contract between
+the developer, which is you,
+
+14
+00:00:34,530 --> 00:00:38,756
+and the customer, which
+will purchase your software.
+
+15
+00:00:38,756 --> 00:00:40,880
+DR. RAMESH YERRABALLI: So
+the requirements document
+
+16
+00:00:40,880 --> 00:00:47,610
+has to spell out in great detail the
+requirements of what the system ought
+
+17
+00:00:47,610 --> 00:00:54,190
+to look like, what are its features,
+what its form factor should be,
+
+18
+00:00:54,190 --> 00:00:59,600
+and what the cost ought to be, and
+what components it may or may not
+
+19
+00:00:59,600 --> 00:01:03,740
+need so that a standard
+can be delivered.
+
+20
+00:01:03,740 --> 00:01:09,480
+So now we'll look at what
+discussions or exchanges go
+
+21
+00:01:09,480 --> 00:01:13,270
+in building the requirements document.
+
+22
+00:01:13,270 --> 00:01:17,380
+DR. JONATHAN VALVANO: The
+requirements document has three parts.
+
+23
+00:01:17,380 --> 00:01:19,100
+The first is an overview.
+
+24
+00:01:19,100 --> 00:01:21,110
+Why are we doing this project?
+
+25
+00:01:21,110 --> 00:01:25,570
+We're doing this project to put
+together all the pieces of this class,
+
+26
+00:01:25,570 --> 00:01:31,250
+and in particular, we're going to
+build a 1980s style shoot 'em up
+
+27
+00:01:31,250 --> 00:01:34,990
+game like Space Invaders.
+
+28
+00:01:34,990 --> 00:01:37,920
+The second part of the
+overview is the process,
+
+29
+00:01:37,920 --> 00:01:42,640
+and the process for developing this
+game will be like all the other labs.
+
+30
+00:01:42,640 --> 00:01:47,290
+And that is we will begin with a
+starting point or a starter project,
+
+31
+00:01:47,290 --> 00:01:50,480
+and you will add features
+to this starter project
+
+32
+00:01:50,480 --> 00:01:52,400
+to meet the requirements of this lab.
+
+33
+00:01:52,400 --> 00:01:54,474
+
+34
+00:01:54,474 --> 00:01:56,390
+DR. RAMESH YERRABALLI:
+So, Jon, are you saying
+
+35
+00:01:56,390 --> 00:02:00,100
+that they don't have to design
+this project from scratch?
+
+36
+00:02:00,100 --> 00:02:02,290
+DR. JONATHAN VALVANO:
+That's what that means.
+
+37
+00:02:02,290 --> 00:02:06,690
+The other aspect of this project,
+which is different than the other labs,
+
+38
+00:02:06,690 --> 00:02:11,560
+is since we have no grader that
+will automatically grade your lab,
+
+39
+00:02:11,560 --> 00:02:15,210
+we encourage you to find
+teams and work together
+
+40
+00:02:15,210 --> 00:02:18,760
+to perform or to develop
+your game in teams.
+
+41
+00:02:18,760 --> 00:02:24,340
+We suggest somewhere between one
+and three members of your team.
+
+42
+00:02:24,340 --> 00:02:27,290
+The most important part of
+the requirements document
+
+43
+00:02:27,290 --> 00:02:33,370
+that you want to look into is
+exactly how does your game fit.
+
+44
+00:02:33,370 --> 00:02:37,730
+In other words, there are some specific
+requirements that your game must have.
+
+45
+00:02:37,730 --> 00:02:41,470
+It must be written in C, it
+has to be developed on Keil,
+
+46
+00:02:41,470 --> 00:02:45,740
+it has to run on your LaunchPad,
+and more specifically, we
+
+47
+00:02:45,740 --> 00:02:52,240
+have decided or defined exactly where
+the input and output pins are located.
+
+48
+00:02:52,240 --> 00:02:55,480
+By specifying exactly
+where the pins are,
+
+49
+00:02:55,480 --> 00:03:00,200
+this will allow one student to
+play the game of another student.
+
+50
+00:03:00,200 --> 00:03:02,130
+When reading the
+requirements document, you
+
+51
+00:03:02,130 --> 00:03:07,310
+will see we'll use specific
+terminology like BMP files, sprites,
+
+52
+00:03:07,310 --> 00:03:08,430
+and public documents.
+
+53
+00:03:08,430 --> 00:03:11,510
+And you can read and
+read those definitions.
+
+54
+00:03:11,510 --> 00:03:17,170
+We are worried about you spreading
+viruses from one student to another.
+
+55
+00:03:17,170 --> 00:03:23,110
+So we are only going to allow the
+upload of one source code file.
+
+56
+00:03:23,110 --> 00:03:29,270
+And since this game is not required
+for your final course grade,
+
+57
+00:03:29,270 --> 00:03:32,360
+you don't have to actually upload it.
+
+58
+00:03:32,360 --> 00:03:36,110
+DR. RAMESH YERRABALLI: So you're
+saying that if I build a software,
+
+59
+00:03:36,110 --> 00:03:41,900
+I could send you my project, just one
+single file which has all the source
+
+60
+00:03:41,900 --> 00:03:42,590
+code.
+
+61
+00:03:42,590 --> 00:03:46,310
+And you will run it, and it will
+work perfectly on your system
+
+62
+00:03:46,310 --> 00:03:50,160
+because you built a hardware
+exactly to specification
+
+63
+00:03:50,160 --> 00:03:51,990
+that my software is following.
+
+64
+00:03:51,990 --> 00:03:53,365
+DR. JONATHAN VALVANO: Absolutely.
+
+65
+00:03:53,365 --> 00:03:55,900
+That allows us to play
+each other's games.
+
+66
+00:03:55,900 --> 00:04:00,240
+The second part of the requirements
+document is the functional description,
+
+67
+00:04:00,240 --> 00:04:03,900
+and it specifies exactly
+what the system will do.
+
+68
+00:04:03,900 --> 00:04:09,210
+It'll be an '80s style video
+game with inputs and outputs.
+
+69
+00:04:09,210 --> 00:04:12,300
+These are the phases of development .
+
+70
+00:04:12,300 --> 00:04:15,760
+You will find a team,
+if you'd like, to find
+
+71
+00:04:15,760 --> 00:04:18,479
+exactly what the rules
+of your game will be.
+
+72
+00:04:18,479 --> 00:04:23,440
+We'll specify the modules, the various
+hardware and software components.
+
+73
+00:04:23,440 --> 00:04:27,420
+We will organize or
+architect your software
+
+74
+00:04:27,420 --> 00:04:32,140
+by defining prototypes for the
+public functions and then one by one,
+
+75
+00:04:32,140 --> 00:04:34,310
+you will test the modules.
+
+76
+00:04:34,310 --> 00:04:36,025
+And then once all the
+modules are tested,
+
+77
+00:04:36,025 --> 00:04:39,804
+you will put them together
+to create a system.
+
+78
+00:04:39,804 --> 00:04:42,220
+DR. RAMESH YERRABALLI: So one
+of the things it looks like,
+
+79
+00:04:42,220 --> 00:04:46,120
+Jon, is that you're hiding all
+the details of implementations
+
+80
+00:04:46,120 --> 00:04:52,350
+by exposing only the prototypes of
+public functions to the other modules.
+
+81
+00:04:52,350 --> 00:04:56,740
+DR. JONATHAN VALVANO: This is a common
+development process for larger systems,
+
+82
+00:04:56,740 --> 00:05:02,740
+and that allows more than one person
+to work on the project at a time.
+
+83
+00:05:02,740 --> 00:05:07,170
+We'll evaluate the beauty or
+the wonderfulness of your game
+
+84
+00:05:07,170 --> 00:05:10,160
+by two very, very simple properties.
+
+85
+00:05:10,160 --> 00:05:15,305
+Is it easy to learn to play the game,
+and second, is your game fun to play?
+
+86
+00:05:15,305 --> 00:05:17,180
+DR. RAMESH YERRABALLI:
+Oh, you mean if I have
+
+87
+00:05:17,180 --> 00:05:19,940
+to read a document to play
+the game, it's not easy.
+
+88
+00:05:19,940 --> 00:05:21,440
+DR. JONATHAN VALVANO: It's not easy.
+
+89
+00:05:21,440 --> 00:05:26,630
+DR. RAMESH YERRABALLI: And if I
+have to turn a knob a certain way
+
+90
+00:05:26,630 --> 00:05:32,567
+or do seven things before I can make a
+missile fire, that's not fun to play.
+
+91
+00:05:32,567 --> 00:05:34,650
+DR. JONATHAN VALVANO: No,
+and we'll have an option
+
+92
+00:05:34,650 --> 00:05:40,510
+to allow you to share your game
+with other students in the class.
+
+93
+00:05:40,510 --> 00:05:47,350
+The usability is exactly how it is
+the game will occur, and as I said,
+
+94
+00:05:47,350 --> 00:05:50,380
+we'll have very, very,
+very explicit pins,
+
+95
+00:05:50,380 --> 00:05:53,120
+which must be for your
+input and your output.
+
+96
+00:05:53,120 --> 00:05:56,450
+And these requirements
+are specified in detail,
+
+97
+00:05:56,450 --> 00:06:01,150
+and it will allow one student to
+play the game of another student.
+
+98
+00:06:01,150 --> 00:06:04,240
+And again, because we're
+worried about spreading viruses,
+
+99
+00:06:04,240 --> 00:06:09,420
+we will only take one C file of
+all your programs in text form.
+
+100
+00:06:09,420 --> 00:06:18,000
+
+101
+00:06:18,000 --> 00:06:22,030
+And the last part of a requirements
+document is the deliverables.
+
+102
+00:06:22,030 --> 00:06:24,390
+We won't make you write
+a report, but we do
+
+103
+00:06:24,390 --> 00:06:26,335
+encourage you to put
+comments in your C file.
+
+104
+00:06:26,335 --> 00:06:29,030
+
+105
+00:06:29,030 --> 00:06:31,820
+We don't have any
+audits, but we will allow
+
+106
+00:06:31,820 --> 00:06:34,580
+you to talk about your
+game in the forums,
+
+107
+00:06:34,580 --> 00:06:37,790
+and the ultimate
+deliverable, like we said,
+
+108
+00:06:37,790 --> 00:06:44,670
+will be one large C file that we
+can upload and share with the class.
+
+109
+00:06:44,670 --> 00:06:47,070
+All right, let's start building.

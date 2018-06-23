@@ -1,0 +1,1033 @@
+0
+00:00:08,765 --> 00:00:12,730
+https://youtu.be/1DT62Y04a7M
+In the next couple of lectures, we&#39;re gonna start talking about user testing.
+
+1
+00:00:14,030 --> 00:00:17,790
+User testing is one of the core methods in UX research,
+
+2
+00:00:17,790 --> 00:00:21,620
+if not the core method in UX research.
+
+3
+00:00:21,620 --> 00:00:25,640
+And not only are we gonna be taking about user testing.
+
+4
+00:00:25,640 --> 00:00:29,390
+But we&#39;re gonna get you ready to jump right in and do some user testing.
+
+5
+00:00:29,390 --> 00:00:36,740
+So, by the end of next week, you will have done a user test yourself and you&#39;ll
+
+6
+00:00:36,740 --> 00:00:42,450
+have that first experience of getting your feet wet with some UX research.
+
+7
+00:00:44,140 --> 00:00:46,130
+So what is user testing?
+
+8
+00:00:46,130 --> 00:00:51,476
+Well, basically what it means is you&#39;re gonna watch representative users,
+
+9
+00:00:51,476 --> 00:00:55,445
+that is the types of people that you expect to use a system,
+
+10
+00:00:55,445 --> 00:00:59,258
+try to accomplish important tasks using that product.
+
+11
+00:00:59,258 --> 00:01:02,822
+And so, that&#39;s pretty much all it is, is you&#39;re gonna just bring people in or
+
+12
+00:01:02,822 --> 00:01:05,690
+you&#39;re gonna go to where they are and have them do a few things.
+
+13
+00:01:05,690 --> 00:01:07,815
+And you&#39;re just gonna watch what happens.
+
+14
+00:01:07,815 --> 00:01:11,228
+You&#39;ll also hear this called usability testing.
+
+15
+00:01:11,228 --> 00:01:14,066
+Although, as we talked about in previous lectures,
+
+16
+00:01:14,066 --> 00:01:16,279
+there&#39;s more to UX than just usability.
+
+17
+00:01:16,279 --> 00:01:20,695
+And you often learn about other UX criteria using user testing,
+
+18
+00:01:20,695 --> 00:01:24,882
+as well, like desirability, credibility, usefulness.
+
+19
+00:01:24,882 --> 00:01:26,930
+And we&#39;ll be talking more about that as we go on.
+
+20
+00:01:28,280 --> 00:01:29,910
+So, why do we do user testing?
+
+21
+00:01:29,910 --> 00:01:31,116
+What do you get out of it?
+
+22
+00:01:31,116 --> 00:01:36,736
+Well, in a nutshell, you learn a lot from watching people use a system.
+
+23
+00:01:36,736 --> 00:01:38,560
+You learn what works and what doesn&#39;t.
+
+24
+00:01:38,560 --> 00:01:40,160
+Where do they run into trouble?
+
+25
+00:01:40,160 --> 00:01:44,660
+Where does the system support what they are trying to do and where does it not?
+
+26
+00:01:44,660 --> 00:01:46,800
+You also learn why things work and they don&#39;t.
+
+27
+00:01:46,800 --> 00:01:50,259
+You really can see when you watch people struggle with the system.
+
+28
+00:01:50,259 --> 00:01:53,608
+You can see what might be broken or what might be causing the problem,
+
+29
+00:01:53,608 --> 00:01:57,260
+that gives you some clues about what it is you need to fix.
+
+30
+00:01:57,260 --> 00:02:01,502
+You also often learn about user needs that you missed that maybe that you didn&#39;t get
+
+31
+00:02:01,502 --> 00:02:05,883
+right earlier in the process when you were trying to understand what users needs are.
+
+32
+00:02:05,883 --> 00:02:07,631
+You put something in front of people and say,
+
+33
+00:02:07,631 --> 00:02:09,110
+hey is this the thing that you needed?
+
+34
+00:02:09,110 --> 00:02:13,190
+And they say, no, you know, I forgot to tell you I actually need it done this way.
+
+35
+00:02:14,270 --> 00:02:18,170
+And so you can learn a lot that will help you design a better version of a product.
+
+36
+00:02:19,620 --> 00:02:21,990
+Well, why not just use your own experience?
+
+37
+00:02:21,990 --> 00:02:24,800
+Why not just try these things out yourself and see where it works and
+
+38
+00:02:24,800 --> 00:02:25,750
+where it doesn&#39;t work?
+
+39
+00:02:25,750 --> 00:02:28,400
+Well, there&#39;s a couple of reasons why your own experience
+
+40
+00:02:28,400 --> 00:02:30,610
+isn&#39;t necessarily gonna be enough.
+
+41
+00:02:30,610 --> 00:02:34,710
+For one thing, you often know too much, especially if this is a system that
+
+42
+00:02:34,710 --> 00:02:38,390
+you&#39;re helping to build or a system that you&#39;ve spent a lot time with.
+
+43
+00:02:38,390 --> 00:02:41,520
+You&#39;ve already figured out how to do all the things you need to do.
+
+44
+00:02:41,520 --> 00:02:45,180
+You may know the workarounds to get things done that
+
+45
+00:02:45,180 --> 00:02:48,580
+new people aren&#39;t gonna necessarily, be aware of.
+
+46
+00:02:48,580 --> 00:02:52,290
+And so, it might be easier for you to use a system than it&#39;s going to be for
+
+47
+00:02:52,290 --> 00:02:52,940
+other people.
+
+48
+00:02:52,940 --> 00:02:56,810
+And you need to see how other people are approaching it.
+
+49
+00:02:56,810 --> 00:02:59,660
+In some cases, you also might know too little.
+
+50
+00:02:59,660 --> 00:03:02,420
+You don&#39;t really know enough about the users and
+
+51
+00:03:02,420 --> 00:03:05,830
+what their expectations are and what their mental models are and
+
+52
+00:03:05,830 --> 00:03:09,400
+how they think a task should work until you see them try it out.
+
+53
+00:03:09,400 --> 00:03:13,320
+Until you see them go through the process of working through a task.
+
+54
+00:03:13,320 --> 00:03:15,680
+So, your own experience is valuable.
+
+55
+00:03:15,680 --> 00:03:18,870
+Your own intuition is valuable about what works and what doesn&#39;t.
+
+56
+00:03:18,870 --> 00:03:23,952
+But it&#39;s often not enough and that&#39;s why we do user testing to see how other people
+
+57
+00:03:23,952 --> 00:03:28,830
+come at and interact with products that we&#39;re interested in understanding.
+
+58
+00:03:28,830 --> 00:03:32,235
+So, the basic idea behind user testing is you&#39;re going to go and
+
+59
+00:03:32,235 --> 00:03:34,379
+you&#39;re going to find potential users,
+
+60
+00:03:34,379 --> 00:03:38,118
+people that are the types of people that you expect to use your system.
+
+61
+00:03:38,118 --> 00:03:41,450
+You&#39;re going to ask them to do some stuff and we&#39;re going to call those tasks.
+
+62
+00:03:41,450 --> 00:03:43,447
+You&#39;re going to observe what happens.
+
+63
+00:03:43,447 --> 00:03:46,628
+You&#39;re going to ask them some questions afterwards about their experience.
+
+64
+00:03:46,628 --> 00:03:49,017
+And then you&#39;re going to write down what you learn and
+
+65
+00:03:49,017 --> 00:03:52,270
+figure out what that tells you about how the system ought to be improved.
+
+66
+00:03:54,600 --> 00:03:56,220
+What do we mean by potential users?
+
+67
+00:03:56,220 --> 00:03:59,160
+Well, we mean people who fall within the target audience.
+
+68
+00:03:59,160 --> 00:04:00,390
+So, whatever your system is.
+
+69
+00:04:00,390 --> 00:04:06,610
+If it&#39;s Amazon, it&#39;s people that need the kinds of products that Amazon sells.
+
+70
+00:04:06,610 --> 00:04:11,070
+If it&#39;s the City of Ann Arbor website, it&#39;s going to be people that are citizens
+
+71
+00:04:11,070 --> 00:04:15,930
+of Ann Arbor that are likely to need to use the City of Ann Arbor website.
+
+72
+00:04:15,930 --> 00:04:19,560
+And you&#39;re gonna be looking for people that match the target audience in terms of
+
+73
+00:04:19,560 --> 00:04:22,410
+their attitudes, so how they feel about things,
+
+74
+00:04:22,410 --> 00:04:26,880
+about the particular product that&#39;s being sold, or that&#39;s being produced.
+
+75
+00:04:26,880 --> 00:04:31,407
+Their behaviors, do they do the things that this product will help them do?
+
+76
+00:04:31,407 --> 00:04:35,355
+And their characteristics, are they the right age,
+
+77
+00:04:35,355 --> 00:04:38,610
+gender, nationality, or whatever it is.
+
+78
+00:04:38,610 --> 00:04:43,120
+If the system is targeted for people with particular characteristics, you wanna make
+
+79
+00:04:43,120 --> 00:04:46,610
+sure that your user test participants have those characteristics as well.
+
+80
+00:04:47,750 --> 00:04:51,610
+A critical thing, and this is not often intuitive for people are just starting
+
+81
+00:04:51,610 --> 00:04:56,320
+with user testing, is that you really don&#39;t want current users of the system.
+
+82
+00:04:56,320 --> 00:04:58,760
+For the same reason that your own experience and
+
+83
+00:04:58,760 --> 00:05:02,370
+your own intuition might not lead you in the right direction.
+
+84
+00:05:02,370 --> 00:05:06,910
+Because they may know too much, they may have already figured out how to do things.
+
+85
+00:05:06,910 --> 00:05:10,450
+And you really wanna see how people that are new to this figure it out.
+
+86
+00:05:10,450 --> 00:05:15,710
+Is the system easy enough for people to use when they&#39;re first getting started?
+
+87
+00:05:15,710 --> 00:05:18,470
+As opposed to, can people who have already been using it for
+
+88
+00:05:18,470 --> 00:05:22,720
+a while figure out how to do things that might have been hard the first time?
+
+89
+00:05:22,720 --> 00:05:27,140
+Now, one caveat with that is it&#39;s okay if they are current users of the system.
+
+90
+00:05:27,140 --> 00:05:30,350
+But maybe they haven&#39;t done the tasks that you&#39;re asking them to do.
+
+91
+00:05:30,350 --> 00:05:34,370
+But you want to be aware of whether their prior experience with the system is gonna
+
+92
+00:05:34,370 --> 00:05:38,460
+make it a lot easier for them to do the tasks than it would be for somebody else.
+
+93
+00:05:38,460 --> 00:05:41,860
+And maybe you&#39;ll also wanna get people that are completely new.
+
+94
+00:05:41,860 --> 00:05:46,938
+One of the most critical but challenging parts of designing a user
+
+95
+00:05:46,938 --> 00:05:52,480
+test is selecting and developing the tasks that you&#39;re gonna have users do.
+
+96
+00:05:52,480 --> 00:05:53,940
+So, what do we mean by a task?
+
+97
+00:05:53,940 --> 00:05:58,070
+Well it&#39;s just the instructions that you&#39;re gonna give your participants
+
+98
+00:05:58,070 --> 00:06:02,950
+in order to have them try to accomplish some goal using the product.
+
+99
+00:06:02,950 --> 00:06:07,809
+So, for example if it was Amazon you might give the instructions, buy a coffee maker
+
+100
+00:06:07,809 --> 00:06:11,994
+that costs less than a $100 and makes at least 32 ounces of coffee.
+
+101
+00:06:11,994 --> 00:06:16,441
+Then you would see how easy or hard it is for them to accomplish that.
+
+102
+00:06:16,441 --> 00:06:20,407
+And you be able to tell whether they are successful at buying a coffee maker that
+
+103
+00:06:20,407 --> 00:06:21,830
+met those criteria.
+
+104
+00:06:21,830 --> 00:06:26,615
+Or you might ask them to enter a review for the most recent book that they read.
+
+105
+00:06:26,615 --> 00:06:29,726
+And you would see how easy and how difficult it is and where they encounter
+
+106
+00:06:29,726 --> 00:06:33,780
+stumbling blocks and where they system supports them particularly well.
+
+107
+00:06:33,780 --> 00:06:36,320
+So, how do we go about choosing and
+
+108
+00:06:36,320 --> 00:06:39,220
+designing the tasks that we&#39;re gonna use in the user test?
+
+109
+00:06:40,530 --> 00:06:45,580
+Well, you wanna start with the things that most users need to do.
+
+110
+00:06:45,580 --> 00:06:51,050
+I think we would all agree that if it was difficult or impossible for
+
+111
+00:06:51,050 --> 00:06:55,660
+somebody to buy a book on Amazon, that would be a pretty big problem for Amazon.
+
+112
+00:06:55,660 --> 00:07:00,742
+It&#39;s an example of the kind of task that most users will need to do at some time or
+
+113
+00:07:00,742 --> 00:07:01,283
+other.
+
+114
+00:07:01,283 --> 00:07:02,548
+Amazon sells lot of things.
+
+115
+00:07:02,548 --> 00:07:03,920
+So, they might need to buy other things.
+
+116
+00:07:03,920 --> 00:07:07,340
+But a book is a good example of a kind of thing that people would need to buy.
+
+117
+00:07:09,090 --> 00:07:13,370
+Once you&#39;ve scoped out all of the things that most users will need to do,
+
+118
+00:07:13,370 --> 00:07:16,370
+you can look at maybe some more difficult things that some users,
+
+119
+00:07:16,370 --> 00:07:18,160
+but not all users, need to do.
+
+120
+00:07:18,160 --> 00:07:22,130
+An example of that for Amazon might be to write a review.
+
+121
+00:07:22,130 --> 00:07:23,820
+Not everybody writes a review.
+
+122
+00:07:23,820 --> 00:07:26,517
+In fact, anecdotally it&#39;s somewhere between 1 and
+
+123
+00:07:26,517 --> 00:07:28,896
+5% of users on Amazon write reviews.
+
+124
+00:07:28,896 --> 00:07:32,620
+So, we know it&#39;s not a very common test, but it&#39;s a really important one for
+
+125
+00:07:32,620 --> 00:07:37,150
+Amazon to support for the people that do need to do it.
+
+126
+00:07:37,150 --> 00:07:41,100
+Or, perhaps, it would be a more difficult task that some users need to do like
+
+127
+00:07:41,100 --> 00:07:44,410
+find a product that meets very specific criteria,
+
+128
+00:07:44,410 --> 00:07:48,810
+like buy a hardbound book by a Nigerian author that was published this year.
+
+129
+00:07:48,810 --> 00:07:53,220
+Okay, so that&#39;s a more specific task, it&#39;s likely to be more challenging.
+
+130
+00:07:53,220 --> 00:07:55,780
+Representative of the kind of things some users need to do, but
+
+131
+00:07:55,780 --> 00:07:57,669
+not necessarily all users.
+
+132
+00:07:59,640 --> 00:08:04,130
+There are a couple of different tasks we can consider, when does choosing tasks for
+
+133
+00:08:04,130 --> 00:08:05,370
+a user test.
+
+134
+00:08:05,370 --> 00:08:06,980
+The first is closed-ended tasks.
+
+135
+00:08:06,980 --> 00:08:12,100
+So, these are tasks that have a clear end point so you can easily tell when
+
+136
+00:08:12,100 --> 00:08:16,910
+a participant and a user test has reached the end of the task.
+
+137
+00:08:16,910 --> 00:08:18,730
+They have a verifiable outcome.
+
+138
+00:08:18,730 --> 00:08:20,840
+There&#39;s actually in many cases a right and
+
+139
+00:08:20,840 --> 00:08:25,100
+a wrong answer, or usually one right and lots of wrong answers.
+
+140
+00:08:25,100 --> 00:08:28,463
+And you can tell whether they were successful at completing the task or not.
+
+141
+00:08:28,463 --> 00:08:33,023
+And typically close ended tasks have the user follow an expected path so
+
+142
+00:08:33,023 --> 00:08:35,230
+you know what right way to do it is.
+
+143
+00:08:35,230 --> 00:08:36,900
+So, you can tell if they&#39;ve diverged or
+
+144
+00:08:36,900 --> 00:08:39,630
+if they&#39;ve gone in different ways that what you had expected.
+
+145
+00:08:40,950 --> 00:08:45,400
+An example of that would be the example that I gave on the previous slide.
+
+146
+00:08:45,400 --> 00:08:48,950
+Buy a hardbound book by a Nigerian author that was published this year.
+
+147
+00:08:48,950 --> 00:08:53,630
+So that&#39;s a very specific, it has a very clear end point because you buy a book.
+
+148
+00:08:53,630 --> 00:08:56,738
+You either do or don&#39;t successfully buy a book.
+
+149
+00:08:56,738 --> 00:08:58,410
+It has a verifiable outcome.
+
+150
+00:08:58,410 --> 00:09:01,351
+You can tell whether the book is published in this year and
+
+151
+00:09:01,351 --> 00:09:04,140
+whether it was written by a Nigerian author.
+
+152
+00:09:04,140 --> 00:09:05,420
+And there&#39;s probably only one or
+
+153
+00:09:05,420 --> 00:09:10,470
+two ways that you can successfully accomplish this efficiently using Amazon.
+
+154
+00:09:10,470 --> 00:09:12,320
+And so if a user takes a different path,
+
+155
+00:09:12,320 --> 00:09:14,215
+you could tell there might have been some problem.
+
+156
+00:09:14,215 --> 00:09:20,138
+In contrast, open-ended tasks allow users to judge when they&#39;re complete.
+
+157
+00:09:20,138 --> 00:09:24,954
+So, it can be more difficult as the observer to tell when the user has
+
+158
+00:09:24,954 --> 00:09:27,673
+satisfactorily completed the task.
+
+159
+00:09:27,673 --> 00:09:29,785
+And the end result may not be verifiable.
+
+160
+00:09:29,785 --> 00:09:33,702
+It may be very difficult for you to tell whether they actually succeeded in this
+
+161
+00:09:33,702 --> 00:09:36,092
+because the success criteria are ambiguous.
+
+162
+00:09:36,092 --> 00:09:38,622
+Or it&#39;s something that&#39;s entirely within the user&#39;s head.
+
+163
+00:09:38,622 --> 00:09:39,710
+And you don&#39;t have access to it.
+
+164
+00:09:39,710 --> 00:09:43,702
+And typically, open-ended tasks will allow users to follow
+
+165
+00:09:43,702 --> 00:09:46,712
+divergent alternative paths to get to the same point.
+
+166
+00:09:46,712 --> 00:09:49,222
+So what would an example of an open-ended task be?
+
+167
+00:09:49,222 --> 00:09:53,820
+Well, it might be something like find some books you might like to read on vacation.
+
+168
+00:09:53,820 --> 00:09:56,111
+Well that&#39;s gonna be highly subjective.
+
+169
+00:09:56,111 --> 00:10:00,330
+Some users might take this very seriously, maybe they have very specific criteria for
+
+170
+00:10:00,330 --> 00:10:02,543
+the books that they like to read on vacation.
+
+171
+00:10:02,543 --> 00:10:07,262
+And other people will just be satisfied with whatever comes up on the top best
+
+172
+00:10:07,262 --> 00:10:08,500
+sellers page.
+
+173
+00:10:08,500 --> 00:10:12,870
+Some people might want to go look at wish lists or
+
+174
+00:10:12,870 --> 00:10:14,940
+lists that people create of vacation books.
+
+175
+00:10:14,940 --> 00:10:17,620
+There&#39;s all kinds of different ways people might do it, and
+
+176
+00:10:17,620 --> 00:10:19,090
+how do you know when they succeeded?
+
+177
+00:10:19,090 --> 00:10:20,120
+Find some books.
+
+178
+00:10:21,420 --> 00:10:25,760
+So, this is an open-ended task, and we might ask which ones are better.
+
+179
+00:10:25,760 --> 00:10:30,470
+Which ones would be better to use in a user test that you&#39;re designing.
+
+180
+00:10:30,470 --> 00:10:33,540
+Well, closed-ended tests have the disadvantage
+
+181
+00:10:33,540 --> 00:10:34,960
+that they can be less natural.
+
+182
+00:10:34,960 --> 00:10:37,779
+You might be asking somebody to do something that they would never
+
+183
+00:10:37,779 --> 00:10:38,403
+actually do.
+
+184
+00:10:38,403 --> 00:10:41,131
+And so they may have trouble accessing the motivation.
+
+185
+00:10:41,131 --> 00:10:45,331
+They may have less prior knowledge about how to do this kind of thing, so
+
+186
+00:10:45,331 --> 00:10:50,245
+they might struggle more than somebody who&#39;s actually motivated to do this task.
+
+187
+00:10:50,245 --> 00:10:53,119
+At the same time, you can actually control for
+
+188
+00:10:53,119 --> 00:10:57,330
+motivation because you&#39;re providing the motivation for people.
+
+189
+00:10:57,330 --> 00:11:02,290
+You&#39;re sort of saying, here is the goal that I want you to accomplish whether or
+
+190
+00:11:02,290 --> 00:11:05,502
+no this is something that you would normally take seriously or
+
+191
+00:11:05,502 --> 00:11:06,510
+think was important.
+
+192
+00:11:06,510 --> 00:11:10,270
+You also control a bit more for interpretation of the instructions.
+
+193
+00:11:10,270 --> 00:11:14,970
+So when you ask somebody to find a book that they might like to read on vacation,
+
+194
+00:11:14,970 --> 00:11:17,070
+people are gonna interpret that in different ways.
+
+195
+00:11:17,070 --> 00:11:20,550
+Whereas if you give a closed-ended task with specific instructions,
+
+196
+00:11:20,550 --> 00:11:23,978
+you close down the different types of interpretation that might happen.
+
+197
+00:11:23,978 --> 00:11:26,015
+And with closed-ended tasks,
+
+198
+00:11:26,015 --> 00:11:30,096
+it&#39;s easier to assess whether somebody was successful or not.
+
+199
+00:11:30,096 --> 00:11:34,557
+Open-ended tasks, on the other hand, can be more natural and you can learn very
+
+200
+00:11:34,557 --> 00:11:38,246
+interesting things about how people approach a particular task.
+
+201
+00:11:38,246 --> 00:11:41,961
+And you may learn that some people do it in ways that are radically different from
+
+202
+00:11:41,961 --> 00:11:42,870
+what you expect.
+
+203
+00:11:42,870 --> 00:11:46,020
+It may lead to insights and what you need to support.
+
+204
+00:11:46,020 --> 00:11:49,800
+The downside is, you do have this issue where people are gonna be
+
+205
+00:11:49,800 --> 00:11:53,330
+varyingly motivated to accomplish that task.
+
+206
+00:11:53,330 --> 00:11:56,740
+They may put more into it, may put less into it.
+
+207
+00:11:56,740 --> 00:11:58,850
+They may interpret things in different ways.
+
+208
+00:11:58,850 --> 00:12:01,879
+And it might be to difficult to assess whether or not they were successful.
+
+209
+00:12:03,160 --> 00:12:05,863
+Well the good news is, you don&#39;t necessarily have to choose.
+
+210
+00:12:05,863 --> 00:12:10,866
+When designing a user test, you&#39;re often designing multiple tasks.
+
+211
+00:12:10,866 --> 00:12:14,567
+In fact, you&#39;re pretty much always designing multiple tasks not just one and
+
+212
+00:12:14,567 --> 00:12:17,833
+it&#39;s okay to use a mixture of closed-ended and open-ended tasks.
+
+213
+00:12:17,833 --> 00:12:22,439
+Maybe closed-ended tasks earlier in the test to assess the core functions and
+
+214
+00:12:22,439 --> 00:12:24,474
+whether or not they&#39;re working.
+
+215
+00:12:24,474 --> 00:12:27,955
+And open-ended tasks to let people explore a little bit and
+
+216
+00:12:27,955 --> 00:12:32,350
+learn how they go about using the system to explore with less constraints.
+
+217
+00:12:33,790 --> 00:12:37,710
+So, we talked about picking individual tasks, but you also need to think
+
+218
+00:12:37,710 --> 00:12:40,390
+about how the different tasks that you&#39;re going to use go together.
+
+219
+00:12:41,480 --> 00:12:43,360
+So, when thinking about the tasks set or
+
+220
+00:12:43,360 --> 00:12:47,680
+the set of tasks you&#39;re going to use, a couple things you might keep in mind.
+
+221
+00:12:47,680 --> 00:12:52,280
+First of all, you usually want the tasks to progress from easier to harder.
+
+222
+00:12:52,280 --> 00:12:54,330
+And there&#39;s a couple of reasons for that.
+
+223
+00:12:54,330 --> 00:12:57,400
+The main one is that it can be very stressful actually for
+
+224
+00:12:57,400 --> 00:13:00,400
+people to participate in user tests.
+
+225
+00:13:00,400 --> 00:13:03,110
+They don&#39;t necessarily know what&#39;s being asked of them.
+
+226
+00:13:03,110 --> 00:13:06,460
+They feel anxious about being watched to do something,
+
+227
+00:13:06,460 --> 00:13:09,880
+watched while they&#39;re doing something that is unfamiliar to them.
+
+228
+00:13:09,880 --> 00:13:15,030
+And it&#39;s nice to give them some success early to help them relax and
+
+229
+00:13:15,030 --> 00:13:17,608
+help them kind of get more into it.
+
+230
+00:13:17,608 --> 00:13:23,660
+Also, if people experience really difficult tasks early in the test,
+
+231
+00:13:23,660 --> 00:13:26,070
+they might get frustrated, they might get flustered, and
+
+232
+00:13:26,070 --> 00:13:29,600
+they might actually fail at tasks they might succeed at because
+
+233
+00:13:29,600 --> 00:13:33,350
+their mental state has changed and it&#39;s now more difficult to get things done.
+
+234
+00:13:35,180 --> 00:13:37,830
+When you&#39;re looking at designing a set of tasks,
+
+235
+00:13:37,830 --> 00:13:40,900
+you wanna make sure you cover a range of critical task types.
+
+236
+00:13:40,900 --> 00:13:45,160
+So, all the different critical things that people are expected to do or
+
+237
+00:13:45,160 --> 00:13:46,610
+need to do, on a site.
+
+238
+00:13:46,610 --> 00:13:51,198
+So, for example, on Amazon, you might look at browsing, searching, buying,
+
+239
+00:13:51,198 --> 00:13:53,600
+writing reviews and various other types.
+
+240
+00:13:53,600 --> 00:13:57,725
+You don&#39;t necessarily need to have lots of different examples of browse tasks or
+
+241
+00:13:57,725 --> 00:14:00,105
+lots of different examples of buying tasks.
+
+242
+00:14:00,105 --> 00:14:02,715
+But you need to make sure that each of those categories
+
+243
+00:14:02,715 --> 00:14:04,340
+is covered when designing a test.
+
+244
+00:14:05,425 --> 00:14:10,295
+And your task set as we just said can include open-ended and closed-ended tasks.
+
+245
+00:14:10,295 --> 00:14:14,330
+And often, it&#39;s good to include a mixture of those.
+
+246
+00:14:14,330 --> 00:14:17,530
+And another thing you need to be careful about is ordering effects.
+
+247
+00:14:17,530 --> 00:14:21,950
+So when putting the tasks in order, you need to make sure that
+
+248
+00:14:21,950 --> 00:14:26,880
+accomplishing task one doesn&#39;t give the participant a clue or
+
+249
+00:14:26,880 --> 00:14:31,290
+a hint about how to accomplish task two or task three or task four,
+
+250
+00:14:31,290 --> 00:14:36,480
+especially if that information or that hint wouldn&#39;t be available to them if they
+
+251
+00:14:36,480 --> 00:14:41,660
+were coming to those later task without that prior experience.
+
+252
+00:14:41,660 --> 00:14:45,488
+So far, we&#39;ve talked about the different tasks and
+
+253
+00:14:45,488 --> 00:14:50,030
+some things to think about when choosing tasks and putting tasks together.
+
+254
+00:14:50,030 --> 00:14:54,750
+In the next video, we&#39;re gonna start to talk about some of the issues that
+
+255
+00:14:54,750 --> 00:14:59,120
+come up when you actually write out the task instructions for your participants.
+
+256
+00:14:59,120 --> 00:15:02,280
+And then, we&#39;re gonna move on to other aspects of designing and
+
+257
+00:15:02,280 --> 00:15:03,495
+executing your user test.
+

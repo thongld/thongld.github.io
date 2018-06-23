@@ -1,0 +1,1068 @@
+0
+00:00:00,000 --> 00:00:01,410
+https://youtu.be/1X1EhOxG3Qs
+
+1
+00:00:01,410 --> 00:00:04,100
+In this lesson, I want to introduce inventory management.
+
+2
+00:00:04,100 --> 00:00:06,710
+We're going to discuss why we hold inventory,
+
+3
+00:00:06,710 --> 00:00:08,760
+the purpose for having an inventory,
+
+4
+00:00:08,760 --> 00:00:11,120
+and talk about different ways to classify it.
+
+5
+00:00:11,120 --> 00:00:12,860
+This kind of sets the stage for how
+
+6
+00:00:12,860 --> 00:00:14,820
+we will develop inventory policies
+
+7
+00:00:14,820 --> 00:00:16,600
+in the next lecture or two.
+
+8
+00:00:16,600 --> 00:00:18,060
+So let's get started.
+
+9
+00:00:18,060 --> 00:00:20,070
+First, why do we hold inventory?
+
+10
+00:00:20,070 --> 00:00:21,040
+There are many reasons.
+
+11
+00:00:21,040 --> 00:00:22,770
+Let me just go through a couple of them.
+
+12
+00:00:22,770 --> 00:00:25,400
+And now, I will use as an example, that sandwich
+
+13
+00:00:25,400 --> 00:00:27,260
+shop we talked about before where
+
+14
+00:00:27,260 --> 00:00:31,640
+I have a bunch of raw materials, whether it's lettuce, meats,
+
+15
+00:00:31,640 --> 00:00:34,660
+and then I bake my bread, and I combine them into sandwiches,
+
+16
+00:00:34,660 --> 00:00:38,050
+and I deliver those to customers who want sandwiches.
+
+17
+00:00:38,050 --> 00:00:41,140
+And so why would a sandwich shop want to hold any inventory?
+
+18
+00:00:41,140 --> 00:00:44,270
+Well, one reason is to cover process time.
+
+19
+00:00:44,270 --> 00:00:46,430
+I don't want to have to bake a loaf of bread
+
+20
+00:00:46,430 --> 00:00:48,330
+every time someone orders a sandwich.
+
+21
+00:00:48,330 --> 00:00:49,500
+It takes too long.
+
+22
+00:00:49,500 --> 00:00:51,770
+Longer than someone would be willing to wait
+
+23
+00:00:51,770 --> 00:00:54,020
+for a sandwich, most likely, so I will probably
+
+24
+00:00:54,020 --> 00:00:56,190
+bake this bread ahead of time.
+
+25
+00:00:56,190 --> 00:00:59,020
+And therefore, I'll have to have an inventory of baked bread
+
+26
+00:00:59,020 --> 00:01:00,230
+ready for me to use.
+
+27
+00:01:00,230 --> 00:01:02,310
+And I do that to cover the long process
+
+28
+00:01:02,310 --> 00:01:05,940
+time it takes to bake bread.
+
+29
+00:01:05,940 --> 00:01:09,400
+Another reason is to decouple processes or allow a process
+
+30
+00:01:09,400 --> 00:01:10,580
+to be uncoupled.
+
+31
+00:01:10,580 --> 00:01:12,660
+So in addition to baking bread, I also
+
+32
+00:01:12,660 --> 00:01:16,170
+have to have someone to slice tomatoes, maybe slice the meat,
+
+33
+00:01:16,170 --> 00:01:19,090
+in order to combine them to put onto my sandwich.
+
+34
+00:01:19,090 --> 00:01:22,190
+Well, I might want to have some inventory of sliced tomatoes
+
+35
+00:01:22,190 --> 00:01:25,710
+and sliced meat so I don't have to go to that person
+
+36
+00:01:25,710 --> 00:01:28,310
+to ask them to slice it every time I need it.
+
+37
+00:01:28,310 --> 00:01:31,260
+So this way, I'm uncoupled from the guy slicing
+
+38
+00:01:31,260 --> 00:01:33,614
+the tomatoes and the person who slices the meat,
+
+39
+00:01:33,614 --> 00:01:35,030
+and all those different processes,
+
+40
+00:01:35,030 --> 00:01:38,410
+the individual processes, that it take to make a sandwich.
+
+41
+00:01:38,410 --> 00:01:42,150
+By having inventory in between those, I decouple them.
+
+42
+00:01:42,150 --> 00:01:44,290
+So I can slice a bunch of them up ahead of time
+
+43
+00:01:44,290 --> 00:01:46,980
+and have them ready, and maybe use that same person
+
+44
+00:01:46,980 --> 00:01:50,040
+to slice the meat instead of doing it one at a time.
+
+45
+00:01:50,040 --> 00:01:51,800
+In order to make that happen, I've
+
+46
+00:01:51,800 --> 00:01:55,880
+got to have inventory to allow that decoupling to happen.
+
+47
+00:01:55,880 --> 00:01:58,010
+Another big group of reasons are the idea
+
+48
+00:01:58,010 --> 00:01:59,970
+of anticipation or speculation.
+
+49
+00:01:59,970 --> 00:02:01,440
+They're somewhat related.
+
+50
+00:02:01,440 --> 00:02:04,210
+Think about anticipation in my sandwich shop.
+
+51
+00:02:04,210 --> 00:02:06,690
+I know there's going to be a big surge for sandwiches
+
+52
+00:02:06,690 --> 00:02:08,930
+around lunch time, so I'm going to make
+
+53
+00:02:08,930 --> 00:02:10,380
+finished good ahead of time.
+
+54
+00:02:10,380 --> 00:02:13,010
+I'm going to make sandwiches in the morning, ready for when
+
+55
+00:02:13,010 --> 00:02:14,730
+that surge comes, so I don't have
+
+56
+00:02:14,730 --> 00:02:21,170
+to peak my processing when that peak demand comes in for lunch.
+
+57
+00:02:21,170 --> 00:02:23,402
+Speculation is a little bit different.
+
+58
+00:02:23,402 --> 00:02:24,860
+And the idea, here, is that I might
+
+59
+00:02:24,860 --> 00:02:26,740
+want to buy some things ahead of time
+
+60
+00:02:26,740 --> 00:02:29,550
+because I think the price of it will increase later on.
+
+61
+00:02:29,550 --> 00:02:31,970
+So I'm going to buy it now while it's low.
+
+62
+00:02:31,970 --> 00:02:33,930
+This happens a lot in commodities,
+
+63
+00:02:33,930 --> 00:02:36,400
+like copper or tin, where people will
+
+64
+00:02:36,400 --> 00:02:38,790
+try to buy these things ahead of time
+
+65
+00:02:38,790 --> 00:02:40,200
+before the price increases.
+
+66
+00:02:40,200 --> 00:02:44,150
+They're speculating that the price is going to increase.
+
+67
+00:02:44,150 --> 00:02:46,760
+Another big category is the idea of minimizing your control
+
+68
+00:02:46,760 --> 00:02:47,470
+costs.
+
+69
+00:02:47,470 --> 00:02:51,500
+Every time I place an order, that costs time and money.
+
+70
+00:02:51,500 --> 00:02:54,220
+And so, maybe, I want to figure out better ways
+
+71
+00:02:54,220 --> 00:02:58,110
+to aggregate my orders so that it costs less time
+
+72
+00:02:58,110 --> 00:03:00,460
+to control them, to place those orders.
+
+73
+00:03:00,460 --> 00:03:03,530
+And if I do that, maybe I'm only placing my orders for bread
+
+74
+00:03:03,530 --> 00:03:06,530
+every two days instead of every day, or every time
+
+75
+00:03:06,530 --> 00:03:07,860
+I need a new loaf.
+
+76
+00:03:07,860 --> 00:03:10,530
+Well, as I do that, I've got to have more inventory
+
+77
+00:03:10,530 --> 00:03:13,250
+to cover the time in between those deliveries.
+
+78
+00:03:13,250 --> 00:03:15,370
+So it's another reason to have inventory
+
+79
+00:03:15,370 --> 00:03:18,560
+to allow me to minimize my control costs.
+
+80
+00:03:18,560 --> 00:03:22,170
+And then the last big category is uncertainties.
+
+81
+00:03:22,170 --> 00:03:23,940
+If I have uncertainty, then maybe
+
+82
+00:03:23,940 --> 00:03:27,030
+I want to have a little extra inventory to buffer that.
+
+83
+00:03:27,030 --> 00:03:28,910
+So we know all about demand uncertainty
+
+84
+00:03:28,910 --> 00:03:30,490
+when we looked at forecasting.
+
+85
+00:03:30,490 --> 00:03:32,475
+I might have a predicted forecast where
+
+86
+00:03:32,475 --> 00:03:34,940
+I'd expect demand to be, but I know it's going to be wrong,
+
+87
+00:03:34,940 --> 00:03:37,120
+so maybe I want a little bit of extra inventory
+
+88
+00:03:37,120 --> 00:03:38,530
+so I don't run out.
+
+89
+00:03:38,530 --> 00:03:41,810
+Well, the same thing applies to the supply side.
+
+90
+00:03:41,810 --> 00:03:44,280
+If I have a supplier who's not that consistent,
+
+91
+00:03:44,280 --> 00:03:45,789
+maybe their delivery times are not
+
+92
+00:03:45,789 --> 00:03:47,830
+that consistent-- sometimes it comes on a Monday,
+
+93
+00:03:47,830 --> 00:03:49,740
+sometimes on a Wednesday-- then maybe I
+
+94
+00:03:49,740 --> 00:03:52,460
+want to have a little extra supply just in case
+
+95
+00:03:52,460 --> 00:03:54,800
+they run a little late, so I don't run out.
+
+96
+00:03:54,800 --> 00:03:57,300
+So just as you buffer for demand uncertainty,
+
+97
+00:03:57,300 --> 00:03:59,556
+you can also buffer supply uncertainty.
+
+98
+00:03:59,556 --> 00:04:00,930
+And then you can also think about
+
+99
+00:04:00,930 --> 00:04:03,630
+your own internal processing uncertainties.
+
+100
+00:04:03,630 --> 00:04:05,790
+Suppose that when I bake my bread,
+
+101
+00:04:05,790 --> 00:04:11,262
+every hundredth time I bake bread, I burn the batch.
+
+102
+00:04:11,262 --> 00:04:13,720
+So therefore, I might want to have a little extra inventory
+
+103
+00:04:13,720 --> 00:04:17,769
+in case I burn a batch of bread, so I have some standing by.
+
+104
+00:04:17,769 --> 00:04:21,950
+So all of these deal with buffering against uncertainty.
+
+105
+00:04:21,950 --> 00:04:24,576
+So these are some reasons why we hold inventory.
+
+106
+00:04:24,576 --> 00:04:27,200
+Now, let's look at the types of decisions we are going to make.
+
+107
+00:04:27,200 --> 00:04:28,658
+And you can really break these down
+
+108
+00:04:28,658 --> 00:04:31,610
+at the strategic, tactical, and operational levels.
+
+109
+00:04:31,610 --> 00:04:33,540
+Let me explain each in turn.
+
+110
+00:04:33,540 --> 00:04:35,430
+At the strategic level, these are
+
+111
+00:04:35,430 --> 00:04:38,850
+things you make a decision for a one, two,
+
+112
+00:04:38,850 --> 00:04:41,540
+three years out, your longer-term decisions.
+
+113
+00:04:41,540 --> 00:04:43,610
+These are not decisions you make every day,
+
+114
+00:04:43,610 --> 00:04:45,410
+they're longer-term decisions.
+
+115
+00:04:45,410 --> 00:04:47,350
+And they might be things, such as,
+
+116
+00:04:47,350 --> 00:04:49,720
+what are the potential alternatives for me
+
+117
+00:04:49,720 --> 00:04:51,120
+to hold inventory?
+
+118
+00:04:51,120 --> 00:04:52,990
+So for example, maybe I just want
+
+119
+00:04:52,990 --> 00:04:57,240
+to have very, very, very fast transportation instead
+
+120
+00:04:57,240 --> 00:04:58,634
+of having a bunch of inventory.
+
+121
+00:04:58,634 --> 00:05:00,300
+Therefore, if someone demands something,
+
+122
+00:05:00,300 --> 00:05:02,174
+I just ship it to them really quickly instead
+
+123
+00:05:02,174 --> 00:05:05,580
+of having extra inventory there to be able to satisfy them.
+
+124
+00:05:05,580 --> 00:05:07,990
+It's a classic trade-off, a classic alternative
+
+125
+00:05:07,990 --> 00:05:09,570
+to having inventory, something you
+
+126
+00:05:09,570 --> 00:05:11,890
+want to make it a longer-term decision.
+
+127
+00:05:11,890 --> 00:05:14,440
+Also, you might want to look at how the supply chain
+
+128
+00:05:14,440 --> 00:05:16,790
+or how the product is designed.
+
+129
+00:05:16,790 --> 00:05:19,000
+Is it designed with the supply chain in mind?
+
+130
+00:05:19,000 --> 00:05:21,000
+How are you going to ship things and how are you
+
+131
+00:05:21,000 --> 00:05:22,870
+going to store them.
+
+132
+00:05:22,870 --> 00:05:24,960
+At the tactical level-- and these
+
+133
+00:05:24,960 --> 00:05:26,580
+are decisions made within a year,
+
+134
+00:05:26,580 --> 00:05:29,340
+say, within a month, a quarter, or a year-- then
+
+135
+00:05:29,340 --> 00:05:31,300
+these are known as deployment decisions.
+
+136
+00:05:31,300 --> 00:05:34,320
+And which items specifically should I carry as inventory
+
+137
+00:05:34,320 --> 00:05:36,100
+and where should I place them?
+
+138
+00:05:36,100 --> 00:05:37,475
+This is especially important when
+
+139
+00:05:37,475 --> 00:05:38,990
+I'm launching a new product where
+
+140
+00:05:38,990 --> 00:05:42,130
+I want to know where they should be held.
+
+141
+00:05:42,130 --> 00:05:45,100
+And so this is in anticipation of the uncertainty
+
+142
+00:05:45,100 --> 00:05:47,480
+of what the demand will materialize.
+
+143
+00:05:47,480 --> 00:05:49,870
+Also, what form should I keep them in?
+
+144
+00:05:49,870 --> 00:05:53,340
+Maybe, if I have, say, a smartphone that I'm selling,
+
+145
+00:05:53,340 --> 00:05:55,830
+and I have different colored shells,
+
+146
+00:05:55,830 --> 00:05:58,630
+maybe I want to keep the internal components separate
+
+147
+00:05:58,630 --> 00:06:00,870
+from the different colored shells at the store
+
+148
+00:06:00,870 --> 00:06:02,890
+so I can always add them on, and so I
+
+149
+00:06:02,890 --> 00:06:06,270
+don't have pre-packaged red ones, orange ones,
+
+150
+00:06:06,270 --> 00:06:07,430
+or blue ones.
+
+151
+00:06:07,430 --> 00:06:10,190
+I want to decide at that point of purchase
+
+152
+00:06:10,190 --> 00:06:11,290
+which one to put on.
+
+153
+00:06:11,290 --> 00:06:12,795
+And in that case, I'd be storing.
+
+154
+00:06:12,795 --> 00:06:16,910
+I'd have inventory-- my core components and my shells,
+
+155
+00:06:16,910 --> 00:06:19,400
+and I would manage those a little separately.
+
+156
+00:06:19,400 --> 00:06:21,640
+And then the last level is what's
+
+157
+00:06:21,640 --> 00:06:23,400
+known as the operational level.
+
+158
+00:06:23,400 --> 00:06:25,970
+And these are decisions that I make
+
+159
+00:06:25,970 --> 00:06:28,550
+at the daily, weekly, monthly level.
+
+160
+00:06:28,550 --> 00:06:30,190
+And there are three big questions
+
+161
+00:06:30,190 --> 00:06:32,710
+I want to make to determine my replenishment.
+
+162
+00:06:32,710 --> 00:06:35,820
+The first is how often should I be checking my inventory
+
+163
+00:06:35,820 --> 00:06:36,380
+status?
+
+164
+00:06:36,380 --> 00:06:37,860
+Should I always be looking at it?
+
+165
+00:06:37,860 --> 00:06:39,595
+Should I only check it once a week?
+
+166
+00:06:39,595 --> 00:06:40,470
+Once every two weeks?
+
+167
+00:06:40,470 --> 00:06:42,920
+So how frequently should I check?
+
+168
+00:06:42,920 --> 00:06:45,920
+Then the next question is when should I place an order?
+
+169
+00:06:45,920 --> 00:06:47,519
+How do I know when to place the order?
+
+170
+00:06:47,519 --> 00:06:50,060
+Even though I'm checking every week, do I place it every week
+
+171
+00:06:50,060 --> 00:06:52,890
+or do I wait for some trigger to happen?
+
+172
+00:06:52,890 --> 00:06:56,620
+And then the last question is how much should I order?
+
+173
+00:06:56,620 --> 00:06:58,730
+How large should my replenishment be?
+
+174
+00:06:58,730 --> 00:07:01,080
+And these three questions combined
+
+175
+00:07:01,080 --> 00:07:04,160
+determine what's known as our inventory policy.
+
+176
+00:07:04,160 --> 00:07:06,910
+And this is where we're going to focus a lot of our time
+
+177
+00:07:06,910 --> 00:07:08,430
+over the next several lessons.
+
+178
+00:07:08,430 --> 00:07:10,410
+Because these replenishment decisions
+
+179
+00:07:10,410 --> 00:07:14,050
+are critical to how a supply chain is set up.
+
+180
+00:07:14,050 --> 00:07:16,900
+OK, next I want to talk about classification of inventory.
+
+181
+00:07:16,900 --> 00:07:18,550
+Because this is a critical component
+
+182
+00:07:18,550 --> 00:07:21,470
+because different people in your organization
+
+183
+00:07:21,470 --> 00:07:23,810
+will view inventory differently.
+
+184
+00:07:23,810 --> 00:07:26,210
+The first type of classification that you see
+
+185
+00:07:26,210 --> 00:07:29,060
+are known as financial or accounting categories.
+
+186
+00:07:29,060 --> 00:07:31,100
+And if I go back to my sandwich shop,
+
+187
+00:07:31,100 --> 00:07:32,960
+if I walked into a sandwich shop,
+
+188
+00:07:32,960 --> 00:07:35,890
+I'd be able to identify what the raw materials were--
+
+189
+00:07:35,890 --> 00:07:38,080
+the tomatoes, the heads of lettuce.
+
+190
+00:07:38,080 --> 00:07:41,390
+I'd be able to identify the work in process or the components.
+
+191
+00:07:41,390 --> 00:07:44,220
+This is where they have been-- the tomatoes are sliced,
+
+192
+00:07:44,220 --> 00:07:45,510
+the bread is sliced.
+
+193
+00:07:45,510 --> 00:07:47,550
+Things are partially put together.
+
+194
+00:07:47,550 --> 00:07:49,390
+And I could point to the finished goods--
+
+195
+00:07:49,390 --> 00:07:51,150
+the sandwiches themselves.
+
+196
+00:07:51,150 --> 00:07:53,670
+Well the idea, here, is these financial categories
+
+197
+00:07:53,670 --> 00:07:56,180
+all look at the added value.
+
+198
+00:07:56,180 --> 00:07:59,460
+So as I add value to them, they change
+
+199
+00:07:59,460 --> 00:08:01,380
+into their accounting category.
+
+200
+00:08:01,380 --> 00:08:03,320
+And this makes sense for accounting
+
+201
+00:08:03,320 --> 00:08:04,695
+because this is how you're trying
+
+202
+00:08:04,695 --> 00:08:05,880
+to account for your costs.
+
+203
+00:08:05,880 --> 00:08:08,900
+But one thing that these accounting categories do not do
+
+204
+00:08:08,900 --> 00:08:11,200
+is they don't track opportunity costs.
+
+205
+00:08:11,200 --> 00:08:12,980
+And they really don't help determine
+
+206
+00:08:12,980 --> 00:08:15,287
+how I want to manage my inventory.
+
+207
+00:08:15,287 --> 00:08:16,870
+And that's why we're going to focus in
+
+208
+00:08:16,870 --> 00:08:18,820
+on what's known as functional roles.
+
+209
+00:08:18,820 --> 00:08:20,910
+And these functional roles are the ways
+
+210
+00:08:20,910 --> 00:08:23,560
+that inventories are used.
+
+211
+00:08:23,560 --> 00:08:26,190
+And so I'm just going to introduce three of them.
+
+212
+00:08:26,190 --> 00:08:28,930
+And I'm going to do that through the use of this inventory
+
+213
+00:08:28,930 --> 00:08:29,430
+chart.
+
+214
+00:08:29,430 --> 00:08:32,030
+And this inventory chart, we'll be seeing a lot of these.
+
+215
+00:08:32,030 --> 00:08:34,370
+On the horizontal axis is the time.
+
+216
+00:08:34,370 --> 00:08:36,740
+So this is just the passage of time.
+
+217
+00:08:36,740 --> 00:08:41,110
+And on the vertical axis-- this is just the amount of inventory
+
+218
+00:08:41,110 --> 00:08:42,289
+I have.
+
+219
+00:08:42,289 --> 00:08:44,850
+And so the first category is cycle stock.
+
+220
+00:08:44,850 --> 00:08:47,155
+And cycle stock is simply the amount of inventory
+
+221
+00:08:47,155 --> 00:08:52,030
+I have in between my deliveries or my replenishments.
+
+222
+00:08:52,030 --> 00:08:53,870
+This is known as the cycle.
+
+223
+00:08:53,870 --> 00:08:55,690
+Oops, that's not a very straight line.
+
+224
+00:08:55,690 --> 00:08:57,320
+But this is the cycle time.
+
+225
+00:08:57,320 --> 00:08:59,940
+So the cycle stock is all of this inventory.
+
+226
+00:08:59,940 --> 00:09:01,690
+Let me just color it in.
+
+227
+00:09:01,690 --> 00:09:05,380
+So that's the amount of my cycle stock, the amount of inventory
+
+228
+00:09:05,380 --> 00:09:07,510
+I expect to deplete over the course
+
+229
+00:09:07,510 --> 00:09:09,670
+of my replenishment cycle.
+
+230
+00:09:09,670 --> 00:09:11,940
+Now, cycle stock, you'll see, kind of sits
+
+231
+00:09:11,940 --> 00:09:14,590
+on top of what's known as safety stock.
+
+232
+00:09:14,590 --> 00:09:17,240
+Safety stock is the inventory that I
+
+233
+00:09:17,240 --> 00:09:20,620
+have that to cover or buffer against the uncertainties,
+
+234
+00:09:20,620 --> 00:09:23,920
+whether it's demand uncertainty, supply uncertainty, processing
+
+235
+00:09:23,920 --> 00:09:25,560
+uncertainty-- it doesn't matter.
+
+236
+00:09:25,560 --> 00:09:27,490
+So it's the amount of safety stock.
+
+237
+00:09:27,490 --> 00:09:29,430
+And you can see that the cycle stock
+
+238
+00:09:29,430 --> 00:09:32,200
+floats on the safety stock.
+
+239
+00:09:32,200 --> 00:09:33,610
+And then there's a third category
+
+240
+00:09:33,610 --> 00:09:35,620
+called pipeline inventory.
+
+241
+00:09:35,620 --> 00:09:38,270
+And this is the inventory where I've place the order,
+
+242
+00:09:38,270 --> 00:09:39,800
+but it hasn't arrived yet.
+
+243
+00:09:39,800 --> 00:09:41,190
+And so it's in the pipeline.
+
+244
+00:09:41,190 --> 00:09:42,220
+It's on the truck.
+
+245
+00:09:42,220 --> 00:09:43,360
+It's being processed.
+
+246
+00:09:43,360 --> 00:09:44,750
+It hasn't arrived yet.
+
+247
+00:09:44,750 --> 00:09:47,640
+And so these are the three major categories there
+
+248
+00:09:47,640 --> 00:09:48,790
+we're going to deal with.
+
+249
+00:09:48,790 --> 00:09:50,992
+How do they differ from the financial ones?
+
+250
+00:09:50,992 --> 00:09:53,200
+Well, like I said, we could go into the sandwich shop
+
+251
+00:09:53,200 --> 00:09:56,310
+and point to each of these, the raw materials, the WIP,
+
+252
+00:09:56,310 --> 00:09:58,300
+the components of finished goods.
+
+253
+00:09:58,300 --> 00:09:59,700
+I can't go into the sandwich shop
+
+254
+00:09:59,700 --> 00:10:01,660
+and point, oh, that tomato is cycle stock
+
+255
+00:10:01,660 --> 00:10:03,510
+and that tomato is safety stock.
+
+256
+00:10:03,510 --> 00:10:05,050
+It doesn't work that way.
+
+257
+00:10:05,050 --> 00:10:08,020
+These are the way it's used, but I can't clearly
+
+258
+00:10:08,020 --> 00:10:10,930
+tag each item to say which one they are, whether it's
+
+259
+00:10:10,930 --> 00:10:15,200
+cycle or safety, because it's how they're being used.
+
+260
+00:10:15,200 --> 00:10:18,020
+And so this is the area that we're going to use.
+
+261
+00:10:18,020 --> 00:10:20,930
+We're going to focus on these functional categories
+
+262
+00:10:20,930 --> 00:10:23,260
+because that's how we manage inventory.
+
+263
+00:10:23,260 --> 00:10:26,240
+And we're going to use what's known as a total cost equation
+
+264
+00:10:26,240 --> 00:10:30,260
+to determine policies to try to minimize our total inventory
+
+265
+00:10:30,260 --> 00:10:31,810
+cost.
+
+266
+00:10:31,810 --> 00:10:32,811
+
+

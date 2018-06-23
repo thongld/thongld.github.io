@@ -1,0 +1,418 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/5qfietdBNzQ
+
+1
+00:00:05,960 --> 00:00:09,710
+hello again welcome back operations
+management in this session we're going
+
+2
+00:00:09,710 --> 00:00:11,028
+to spend a little time
+
+3
+00:00:11,028 --> 00:00:17,629
+looking at process flow diagrams process
+flow diagrams are needed because they
+
+4
+00:00:17,630 --> 00:00:19,469
+show us what is actually happening
+
+5
+00:00:19,469 --> 00:00:24,259
+inside the process first things you need
+to understand
+
+6
+00:00:24,260 --> 00:00:28,130
+are there are key symbols to a process
+flow diagram
+
+7
+00:00:28,129 --> 00:00:32,500
+activities are always represented by
+rectangles
+
+8
+00:00:32,500 --> 00:00:36,768
+waiting areas known as buffers are
+always represented by
+
+9
+00:00:36,768 --> 00:00:41,719
+triangles use arrows to show the
+direction of the flow
+
+10
+00:00:41,719 --> 00:00:45,160
+from the input to the output and
+sometimes you see a
+
+11
+00:00:45,159 --> 00:00:48,299
+circles or ovals representing
+starting and ending
+
+12
+00:00:48,299 --> 00:00:51,549
+it's very important that you use the
+correct
+
+13
+00:00:51,549 --> 00:00:55,159
+symbol for the correct activity or
+buffer or so forth
+
+14
+00:00:55,159 --> 00:00:59,179
+that way anybody who is looking at a
+process flow diagram
+
+15
+00:00:59,179 --> 00:01:05,390
+knows what's happening a second thing
+that's very important when we deal with
+
+16
+00:01:05,390 --> 00:01:07,079
+process flow diagrams
+
+17
+00:01:07,079 --> 00:01:10,579
+is the concept precedence precedence
+
+18
+00:01:10,579 --> 00:01:13,890
+implies what activity must come
+
+19
+00:01:13,890 --> 00:01:19,769
+immediately before another what this
+does is it tells us what activities are
+
+20
+00:01:19,769 --> 00:01:21,500
+required to be completed
+
+21
+00:01:21,500 --> 00:01:25,680
+before another activity can be done for
+example
+
+22
+00:01:25,680 --> 00:01:28,950
+here we have activity C and if you
+notice
+
+23
+00:01:28,950 --> 00:01:32,810
+there are two activities to come right
+before it preceding
+
+24
+00:01:32,810 --> 00:01:35,990
+activity C activity A
+
+25
+00:01:35,989 --> 00:01:40,179
+and activity B both have them are
+needed
+
+26
+00:01:40,180 --> 00:01:44,900
+in order for activity C to start
+that's what we mean by precedence
+
+27
+00:01:44,900 --> 00:01:48,920
+activities that are preceddding
+other activities
+
+28
+00:01:48,920 --> 00:01:53,049
+sometimes you'll see precedence in a
+table
+
+29
+00:01:53,049 --> 00:01:56,189
+so here we have four activities A through D
+
+30
+00:01:56,188 --> 00:02:00,228
+And on notice there's a precedence listing
+activity
+
+31
+00:02:00,228 --> 00:02:03,909
+A with that dashed their shows nothing
+has come before
+
+32
+00:02:03,909 --> 00:02:07,310
+it but activity B requires
+
+33
+00:02:07,310 --> 00:02:11,478
+A activity C nothing's needed before it
+
+34
+00:02:11,478 --> 00:02:15,280
+but activity D needs both B&C
+
+35
+00:02:15,280 --> 00:02:18,729
+so when we look at the diagram you
+notice that
+
+36
+00:02:18,729 --> 00:02:22,439
+A&C which have no preceding activities
+
+37
+00:02:22,439 --> 00:02:26,128
+are starting it off be requires
+
+38
+00:02:26,128 --> 00:02:29,229
+A so there's that arrow coming from A into
+B
+
+39
+00:02:29,229 --> 00:02:32,419
+an activity D requires both
+
+40
+00:02:32,419 --> 00:02:36,488
+B and C so those two arrows come
+together into D
+
+41
+00:02:36,489 --> 00:02:39,628
+let's look at something a little bit
+
+42
+00:02:39,628 --> 00:02:45,329
+more realistic that we can relate to
+here let's say you gonna go paint a door
+
+43
+00:02:45,330 --> 00:02:48,860
+so in order to paint that door you need
+to gather door
+
+44
+00:02:48,860 --> 00:02:52,519
+you need to paint and you need to get the
+brushes so that would be our first
+
+45
+00:02:52,519 --> 00:02:53,310
+activity
+
+46
+00:02:53,310 --> 00:02:57,409
+other things that have to happen you
+need to sand the door
+
+47
+00:02:57,409 --> 00:03:03,318
+you need to clean the door and then dry
+it also the paint has to be next
+
+48
+00:03:03,318 --> 00:03:06,399
+the brushes have to be prepared and then
+
+49
+00:03:06,400 --> 00:03:10,250
+of course you can paint the door but if
+you think about a few things
+
+50
+00:03:10,250 --> 00:03:13,699
+you can mix the paint without having
+
+51
+00:03:13,699 --> 00:03:18,318
+the door sanded or cleaned yet you can
+prepare the brushes
+
+52
+00:03:18,318 --> 00:03:22,609
+without having to mix the paint so when
+we look at the precedents
+
+53
+00:03:22,610 --> 00:03:26,840
+we see that the first activity says
+let's get everything together
+
+54
+00:03:26,840 --> 00:03:31,049
+gather the door the paint and the brushes
+and nothing comes before that
+
+55
+00:03:31,049 --> 00:03:35,219
+but in order to sand the door you
+have to have the door in the first
+
+56
+00:03:35,219 --> 00:03:35,759
+place
+
+57
+00:03:35,759 --> 00:03:40,098
+so activity B sand door requires
+activity A
+
+58
+00:03:40,098 --> 00:03:44,929
+and if you going to mix paint you need
+the paint as well so activity
+
+59
+00:03:44,930 --> 00:03:49,569
+E requires A and if you need to
+prepare brushes you have to have the
+
+60
+00:03:49,568 --> 00:03:50,169
+brushes
+
+61
+00:03:50,169 --> 00:03:56,039
+so activity F requires A in order to
+clean the door
+
+62
+00:03:56,039 --> 00:03:59,348
+you need to sand it first so activities
+C
+
+63
+00:03:59,348 --> 00:04:04,068
+clean door requires activity B
+once cleaned
+
+64
+00:04:04,068 --> 00:04:08,079
+you have to dry so following
+clean door
+
+65
+00:04:08,080 --> 00:04:11,459
+activities C is dry door
+
+66
+00:04:11,459 --> 00:04:15,128
+so you can see the item that precedes dry
+door
+
+67
+00:04:15,128 --> 00:04:18,449
+is clean door and the we go to
+
+68
+00:04:18,449 --> 00:04:22,488
+paint the door we need dry door
+activity
+
+69
+00:04:22,488 --> 00:04:26,649
+D we need mix paint E and brushes
+
+70
+00:04:26,649 --> 00:04:31,649
+F so you can see the precedents all line
+up there
+
+71
+00:04:31,649 --> 00:04:34,719
+so if you want to stop the video now try
+and draw
+
+72
+00:04:34,720 --> 00:04:37,800
+out what that activity flow diagram is
+gonna look like
+
+73
+00:04:37,800 --> 00:04:41,889
+and see whether it matches what we've
+got coming up next
+
+74
+00:04:41,889 --> 00:04:45,620
+here it is we started right at the
+beginning
+
+75
+00:04:45,620 --> 00:04:49,319
+gather the door get paint and the
+brushes
+
+76
+00:04:49,319 --> 00:04:53,529
+from there we can't sand at the door we
+can mix the paint
+
+77
+00:04:53,529 --> 00:04:59,399
+and prepare the brushes following
+sanding the door we have clean the door
+
+78
+00:04:59,399 --> 00:05:03,609
+then drying the door and then once we
+have the door
+
+79
+00:05:03,610 --> 00:05:07,639
+that's dry and the paint mixed and the
+prepared brushes
+
+80
+00:05:07,639 --> 00:05:12,310
+the all come together for the final.
+activity of painting the door
+
+81
+00:05:12,310 --> 00:05:16,750
+that's it so when we're thinking about
+process flow diagrams
+
+82
+00:05:16,750 --> 00:05:20,360
+what you want to do is make sure you're
+using the correct symbols
+
+83
+00:05:20,360 --> 00:05:23,699
+and that you're paying attention to the
+activities themselves
+
+84
+00:05:23,699 --> 00:05:28,538
+what has to come before something else
+then you show the directional of the flow
+
+85
+00:05:28,538 --> 00:05:31,849
+using arrows next time we're going to be
+
+86
+00:05:31,850 --> 00:05:35,939
+adding times to these activities and
+going through something called critical
+
+87
+00:05:35,939 --> 00:05:37,069
+path
+
+88
+00:05:37,069 --> 00:05:37,538
+see you then
+

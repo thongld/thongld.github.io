@@ -1,0 +1,452 @@
+0
+00:00:00,000 --> 00:00:00,001
+phungdo_vgu KienHoc.vn http://youtu.be/9tzjY1GURxc
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:06,690
+TS Yerraballi: Ta sẽ xem lại
+SysTick Timer.
+
+3
+00:00:06,690 --> 00:00:12,600
+Và làm thế nào để làm
+cho nó chuẩn xác hơn.
+
+4
+00:00:12,600 --> 00:00:18,800
+Ta thử làm cho nó chính xác hơn.
+
+5
+00:00:18,800 --> 00:00:30,140
+Bằng cách can thiệp hệ thống điều khiển 
+tần số khép kín, gọi là PLL.
+
+6
+00:00:30,140 --> 00:00:33,550
+
+7
+00:00:33,550 --> 00:00:38,060
+Để hiểu nó gây ra cái gì,
+
+8
+00:00:38,060 --> 00:00:50,030
+Đầu tiên, đó là quan sát trên 
+vi điều khiển Cortex M4, là
+
+9
+00:00:50,030 --> 00:00:58,830
+con TM4C của tôi,
+nó có hai nguồn clock.
+
+10
+00:00:58,830 --> 00:01:10,940
+Có một máy dao động nội,
+chạy ở tần số 16Mhz
+
+11
+00:01:10,940 --> 00:01:24,350
+với sai số là cộng-trừ 1%.
+
+12
+00:01:24,350 --> 00:01:29,380
+Không chuẩn cho lắm, nhưng
+làm board ít tiêu hao điện.
+
+13
+00:01:29,380 --> 00:01:38,060
+Lợi ích mang lại là 
+ít tiêu hao năng lượng.
+
+14
+00:01:38,060 --> 00:01:42,190
+Nhưng điều tệ là nó không chính xác.
+
+15
+00:01:42,190 --> 00:01:46,920
+
+16
+00:01:46,920 --> 00:01:53,270
+Ta có thể can thiệp bên ngoài,
+đây là bộ dao động có sẵn bên trong.
+
+17
+00:01:53,270 --> 00:01:55,480
+Có một bộ dao động ngoài.
+
+18
+00:01:55,480 --> 00:02:02,850
+
+19
+00:02:02,850 --> 00:02:10,410
+Ta sẽ thấy bức tranh thực tế sau,
+nơi có vài thứ để bạn 
+
+20
+00:02:10,410 --> 00:02:16,940
+có thể chọn để đặt lên bảng mạch,
+mà-- trong trường hợp này,
+
+21
+00:02:16,940 --> 00:02:22,940
+là một bộ dao động đã 
+được hàn dính.
+
+22
+00:02:22,940 --> 00:02:27,650
+Bộ dao động ngoài này 
+rất chính xác.
+
+23
+00:02:27,650 --> 00:02:31,770
+
+24
+00:02:31,770 --> 00:02:33,300
+và ổn định.
+
+25
+00:02:33,300 --> 00:02:38,090
+
+26
+00:02:38,090 --> 00:02:43,070
+Bộ dao động ngoài này, tùy thuộc vào
+bạn chọn cái gì cho bảng mạch--
+
+27
+00:02:43,070 --> 00:02:47,360
+cái mà được hàn sẵn đó cũng 
+là bộ thạch anh 16 MHz.
+
+28
+00:02:47,360 --> 00:02:50,640
+
+29
+00:02:50,640 --> 00:02:54,870
+Nhưng có thể chọn bộ thạch 
+anh khác nếu muốn.
+
+30
+00:02:54,870 --> 00:03:01,510
+Bây giờ, cái ta có - hệ thống 
+điều khiển tần số khép kín 
+
+31
+00:03:01,510 --> 00:03:05,080
+có thể tận dụng lợi thế 
+của bộ dao động ngoài.
+
+32
+00:03:05,080 --> 00:03:31,165
+Ý tưởng là PLL cho phép ta tăng tốc
+hoặc làm chậm đồng hồ.
+
+33
+00:03:31,165 --> 00:03:34,660
+
+34
+00:03:34,660 --> 00:03:39,610
+Bây giờ, ai đó thắc mắc, tại sao lại tăng tốc 
+hay làm chậm đồng hồ trong vi điều khiển.
+
+35
+00:03:39,610 --> 00:03:48,680
+Tăng tốc là làm cho đồng hồ
+chạy nhanh hơn, 
+
+36
+00:03:48,680 --> 00:03:53,560
+nghĩa là bạn đang làm 
+nhiều việc hơn.
+
+37
+00:03:53,560 --> 00:03:57,760
+Nhưng trong cùng khoảng thời gian, 
+năng lượng tiêu tốn nhiều và nhanh hơn.
+
+38
+00:03:57,760 --> 00:04:02,730
+Khi chạy chậm thì sẽ tiết kiệm năng lượng.
+
+39
+00:04:02,730 --> 00:04:06,890
+Cụ thế, nếu đang cố điều khiển
+trong một hệ thống nơi mà
+
+40
+00:04:06,890 --> 00:04:10,920
+bạn muốn thời lượng pin dài
+thì phải làm đồng hồ chậm đi,
+
+41
+00:04:10,920 --> 00:04:15,320
+nhất là nếu công việc đang làm 
+không yêu cầu tốc độ cao.
+
+42
+00:04:15,320 --> 00:04:35,210
+Đó là sự đánh đổi giữa
+tốc độ và năng lượng.
+
+43
+00:04:35,210 --> 00:04:38,720
+Vậy thì PLL cho phép
+chọn nơi bạn muốn 
+
+44
+00:04:38,720 --> 00:04:43,020
+nghiêng về của sự đánh đổi
+giữa tốc độ và mức tiêu thụ năng lượng.
+
+45
+00:04:43,020 --> 00:04:50,330
+Cùng nhìn vào hai trường mà ta
+sử dụng để tinh chỉnh Phase Look Loop.
+
+46
+00:04:50,330 --> 00:04:55,540
+Hai trường đó là XTAL và SYSDIV2
+
+47
+00:04:55,540 --> 00:05:01,772
+SYSDIV2.
+
+48
+00:05:01,772 --> 00:05:08,435
+Đây là hai thanh ghi của PLL,
+nơi để thể hiện 2 trường kia.
+
+49
+00:05:08,435 --> 00:05:18,520
+thanh ghi thiết bị SYSCTL_RCC 
+và một thanh ghi khác,
+
+50
+00:05:18,520 --> 00:05:29,880
+là thanh ghi SYSCTL_RCC2.
+
+51
+00:05:29,880 --> 00:05:38,110
+Trường XTAL là ở bit 10 đến bit 6.
+
+52
+00:05:38,110 --> 00:05:41,680
+XTAL là một trường 5-bit.
+
+53
+00:05:41,680 --> 00:05:49,975
+SYSDIV là từ bit 28 đến bit 22, 
+một trường 7-bit.
+
+54
+00:05:49,975 --> 00:05:56,250
+
+55
+00:05:56,250 --> 00:06:02,602
+Ngay chỗ này, đây là 5-bit,
+và đó là 7-bit.
+
+56
+00:06:02,602 --> 00:06:11,300
+Trường XTAL là một mẫu 5-bit,
+đó là 10101.
+
+57
+00:06:11,300 --> 00:06:13,040
+Đoạn 10101 là những gì ta sẽ viết vào đây.
+
+58
+00:06:13,040 --> 00:06:18,780
+Điều mà đoạn 10101 này nói với 
+hệ thống tức là nói với vi điều khiển
+
+59
+00:06:18,780 --> 00:06:23,830
+: đồng hồ ngoại
+là một đồng hồ 16 Mhz.
+
+60
+00:06:23,830 --> 00:06:30,000
+Bây giờ, vì bản mạch sẽ có
+một bộ dao động thạch anh ngoài
+
+61
+00:06:30,000 --> 00:06:34,350
+16Mhz-- đây là số cố định.
+
+62
+00:06:34,350 --> 00:06:36,150
+Bạn sẽ không đổi nó.
+
+63
+00:06:36,150 --> 00:06:38,520
+Nếu phải đổi-- ví dụ, 
+nếu bạn có
+
+64
+00:06:38,520 --> 00:06:46,030
+một bản mạch khác, mà có sẵn
+bộ thạch anh ngoài ở 24Mhz--
+
+65
+00:06:46,030 --> 00:06:56,730
+thì bạn sẽ viết vào ô mẫu
+này đoạn 11010.
+
+66
+00:06:56,730 --> 00:06:58,550
+Đó là điểm khác biệt duy nhất.
+
+67
+00:06:58,550 --> 00:07:06,750
+Trong lớp này thì tôi mong bạn
+chỉ dùng đoạn 10101 cho trường.
+
+68
+00:07:06,750 --> 00:07:11,090
+Trường thứ 2 là 
+trường SYSDIV, nơi mà
+
+69
+00:07:11,090 --> 00:07:15,500
+có thể lấy giá trị giữa 4 và 127.
+
+70
+00:07:15,500 --> 00:07:18,700
+Hãy đặt tên giá trị bằng "n".
+
+71
+00:07:18,700 --> 00:07:26,300
+Bit số n này thường được dùng để 
+cấu hình hệ thống PLL ở tốc độ khác nhau
+
+72
+00:07:26,300 --> 00:07:30,490
+mà bạn muốn system bus chạy ở.
+
+73
+00:07:30,490 --> 00:07:37,170
+Nếu n được định cho giá trị bất kì,
+ví dụ n = 4--
+
+74
+00:07:37,170 --> 00:07:43,480
+Thì clock sẽ chạy ở tần số
+400 Mhz chia cho (n+1),
+
+75
+00:07:43,480 --> 00:07:49,600
+n = 4 thì có phép tính thành
+400 chia 4+1,
+
+76
+00:07:49,600 --> 00:07:53,992
+với 4+1=5, là bằng 80 Mhz.
+
+77
+00:07:53,992 --> 00:07:55,950
+TS. Valvano: Nếu tôi muốn 
+chạy chậm hơn nữa thì sao ?
+
+78
+00:07:55,950 --> 00:07:58,450
+TS. Yerraballi: Càng muốn
+clock chạy chậm thì,
+
+79
+00:07:58,450 --> 00:08:01,070
+giá trị của "n" phải càng cao.
+
+80
+00:08:01,070 --> 00:08:07,840
+Bạn có thể chọn số thích hợp 
+để có tốc độ mong muốn.
+
+81
+00:08:07,840 --> 00:08:13,850
+Về bản chất thì, hệ thống PLL
+cho ta 2 thứ.
+
+82
+00:08:13,850 --> 00:08:17,930
+Một, trong việc dùng PLL,
+thì việc đầu tiên ta làm là
+
+83
+00:08:17,930 --> 00:08:30,670
+dùng một bộ dao động thạch
+anh ngoài có độ chính xác cao--
+
+84
+00:08:30,670 --> 00:08:32,669
+TS. Valvano: Có nghĩa là
+đúng hơn ?
+
+85
+00:08:32,669 --> 00:08:35,360
+TS. Yerraballi: Rất là chuẩn và rất
+ổn định.
+
+86
+00:08:35,360 --> 00:08:36,740
+TS. Valvano: Tốt rồi.
+
+87
+00:08:36,740 --> 00:08:39,281
+TS. Yerraballi: Điều thứ 2 
+ta đã đạt được 
+
+88
+00:08:39,281 --> 00:08:53,170
+là có khả năng cấu hình hay 
+tính linh hoạt để chọn tốc độ.
+
+89
+00:08:53,170 --> 00:08:55,520
+TS. Valvano: Tại sao ta muốn
+chọn tốc độ vậy?
+
+90
+00:08:55,520 --> 00:08:58,910
+TS. Yerraballi: Tốc độ được
+chọn thì dựa vào
+
+91
+00:08:58,910 --> 00:09:01,400
+sự đánh đổi mà ta đã đề 
+cập rồi đó.
+
+92
+00:09:01,400 --> 00:09:09,770
+Đánh đổi giữa mức tiêu hao
+năng lượng và tốc độ.
+
+93
+00:09:09,770 --> 00:09:15,920
+Nếu tôi muốn chạy với ít năng 
+lượng thì tôi chọn tốc độ thấp.
+
+94
+00:09:15,920 --> 00:09:21,120
+Nếu muốn hệ thống chạy
+tốc độ cao hơn thì
+
+95
+00:09:21,120 --> 00:09:22,940
+tôi bào pin nhanh hơn.
+
+96
+00:09:22,940 --> 00:09:25,640
+Vậy nên tôi sẽ tiêu tốn
+năng lượng nhanh hơn.
+
+97
+00:09:25,640 --> 00:09:29,620
+Bằng việc chọn điểm thích
+hợp để máy hoạt động,
+
+98
+00:09:29,620 --> 00:09:35,190
+Hệ thống có thể chạy
+bằng cách hiệu quả nhất.

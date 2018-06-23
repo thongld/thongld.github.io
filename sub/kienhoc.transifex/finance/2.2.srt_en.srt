@@ -1,0 +1,259 @@
+1
+00:00:04,630 --> 00:00:06,580
+https://youtu.be/ZYVH7CRk49A
+I would encourage you to now
+
+2
+00:00:06,580 --> 00:00:09,450
+see the beauty of applications and as I
+
+3
+00:00:09,450 --> 00:00:13,229
+said we'll build applications slowly but
+then we'll do some pretty complicated
+
+4
+00:00:13,230 --> 00:00:19,90
+stuff, and we´ll spread it out in the first two
+modules because, I want the first two
+
+5
+00:00:19,90 --> 00:00:24,830
+modules of this course to give you
+concepts applied, but then really applied
+
+6
+00:00:24,830 --> 00:00:31,820
+to more complex situations, same concepts.
+So let's start off with this. Please read it.
+
+7
+00:00:31,820 --> 00:00:36,590
+What will be the value of your bank
+account if you deposit thousand dollars
+
+8
+00:00:36,590 --> 00:00:42,800
+every year in a bank. You plan to leave
+home in five years and expect to earn 5%
+
+9
+00:00:42,800 --> 00:00:47,110
+in your bank account. So you're in
+college, you´ve started investing every year
+
+10
+00:00:47,110 --> 00:01:03,629
+$1,000 in the bank, so the key thing is,
+it's an annuity, of how many years? 1...2, I
+
+11
+00:01:03,630 --> 00:01:08,290
+won´t right out all the numbers, so you
+are going to put it at
+
+12
+00:01:08,290 --> 00:01:20,960
+five, so you know N is 5. What is the other secret?
+The secret is, what is R? It's equal to
+
+13
+00:01:20,960 --> 00:01:29,288
+5 percent. Now in Excel when you put this number,
+N will be 5, but R will not be in
+
+14
+00:01:29,289 --> 00:01:35,819
+percentage terms, sometimes in calculators, it is, HP
+calculators especially, as far as I know, or most
+
+15
+00:01:35,819 --> 00:01:42,29
+calculators. Here you'll enter 0.05,
+please remember that. But the final thing
+
+16
+00:01:42,29 --> 00:01:52,209
+to remember is, if you are putting in a
+thousand bucks, how many times are you
+
+17
+00:01:52,209 --> 00:01:57,759
+putting it in? Thousand times. Now the
+little bit tricky-ness to this is,
+
+18
+00:01:57,759 --> 00:02:04,840
+convention is that, a normal annuity
+doesn't start at time zero, it starts at
+
+19
+00:02:04,840 --> 00:02:09,440
+time 1, as I said, you can change it and
+then the future you can start some
+
+20
+00:02:09,440 --> 00:02:14,470
+payment at time zero, you can start
+saving. All it does is, it shifts the timeline,
+
+21
+00:02:14,470 --> 00:02:19,700
+but a standard formula assumes the first
+payment is at the end of the first year
+
+22
+00:02:19,700 --> 00:02:20,839
+and the last one end
+
+23
+00:02:20,840 --> 00:02:24,959
+at the 5th year, ok? So we'll stick with that
+for the time being. When you become
+
+24
+00:02:24,959 --> 00:02:29,470
+proficient with moving money over time
+and that's what... that's why I say watch
+
+25
+00:02:29,470 --> 00:02:35,349
+Star Wars, Matrix and you'll be cool in
+Finance. You have five payments at the
+
+26
+00:02:35,349 --> 00:02:41,470
+end of each period. So the question is, in
+Excel, this is what you'll do. You´ll do
+
+27
+00:02:41,470 --> 00:02:46,510
+equals and what are you trying to figure
+out? Remember, you're trying to figure out
+
+28
+00:02:46,510 --> 00:02:50,179
+the Future Value and this is a very cool
+problem, because everybody's thinking
+
+29
+00:02:50,180 --> 00:02:57,310
+about this, ok I need money in the future.
+I´ll save now, I´ll save every year, if possible and
+
+30
+00:02:57,310 --> 00:03:04,150
+how much will I have when I go to college? So
+Future Value, you want, but the first
+
+31
+00:03:04,150 --> 00:03:10,260
+number in Future Value is which one? 
+Rate, you´ll press, I would encourage you
+
+32
+00:03:10,260 --> 00:03:12,170
+to open your Excel and do this with
+
+33
+00:03:12,170 --> 00:03:22,480
+me. Put Cell A1, equal sign, FV, 0.05, what
+next?
+
+34
+00:03:22,480 --> 00:03:32,130
+5, which is for N, yes? And the next number
+remember, the convention will look for a
+
+35
+00:03:32,130 --> 00:03:40,590
+PMT, so now you're ok, you can put 
+1000. But is there any PV or anything
+
+36
+00:03:40,590 --> 00:03:41,560
+going on? No.
+
+37
+00:03:41,560 --> 00:03:48,670
+So you´ll close the parenthesis and you'll hit
+return and if you hit return, you... as I
+
+38
+00:03:48,670 --> 00:03:53,929
+said, because you put a positive number
+here you'll get a negative number here. If you
+
+39
+00:03:53,930 --> 00:03:58,410
+want to make this negative, all you can
+do is put a negative sign or put a
+
+40
+00:03:58,410 --> 00:04:03,190
+negative sign in front of FV and in this
+context it makes sense because you're
+
+41
+00:04:03,190 --> 00:04:05,30
+investing for the future,
+
+42
+00:04:05,30 --> 00:04:09,750
+you are losing $1000, you get it in the
+future. So you may want the final number
+
+43
+00:04:09,750 --> 00:04:15,200
+to be positive but that's just kind of
+in your head, so if you want to be really
+
+44
+00:04:15,200 --> 00:04:19,849
+painful, looking at it from your
+perspective, not the bank´s, you may want
+
+45
+00:04:19,849 --> 00:04:25,669
+to make all these numbers negative.
+That's just up to the problem. So what
+
+46
+00:04:25,669 --> 00:04:32,8
+will this turn out to be? I think this
+will turn out to be five thousand
+
+47
+00:04:32,9 --> 00:04:40,589
+five hundred and twenty five dollars 63 cents. I would
+encourage you, every time I do a problem
+
+48
+00:04:40,589 --> 00:04:46,789
+I'll do right now very focused problems.
+First of all, isn't this cool? So let's
+
+49
+00:04:46,789 --> 00:04:50,498
+try to undo this and I'll do that a lot in
+this class.
+
+50
+00:04:50,499 --> 00:04:58,419
+Okay, suppose interest rates were zero,
+how much would you have? Very simple 5,000.
+
+51
+00:04:58,419 --> 00:05:04,659
+Because why? You are putting thousand every
+year, five times. However, you are getting
+
+52
+00:05:04,659 --> 00:05:11,370
+525 bucks more than
+the 5,000. Why are you  getting that? Because of? As I
+
+53
+00:05:11,370 --> 00:05:13,710
+said, all answers are compounding.
+

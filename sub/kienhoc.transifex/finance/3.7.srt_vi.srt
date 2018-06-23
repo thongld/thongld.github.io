@@ -1,0 +1,697 @@
+1
+00:00:04,874 --> 00:00:10,890
+https://youtu.be/LP1mByqT4Ls
+Chào mừng các bạn đã trở lại, sau đây là bài toán lớn hay
+ứng dụng lớn số bốn
+
+2
+00:00:12,140 --> 00:00:20,560
+Và tôi muốn làm bài toán này là vì tôi muốn cho các bạn thấy ta có thể giải quyết vấn đề một cách thông minh hơn như thế nào
+
+3
+00:00:21,590 --> 00:00:23,460
+Và, tôi hy vọng là các bạn thích phần này
+
+4
+00:00:23,460 --> 00:00:25,940
+Nó có vẻ đơn giản, nhưng
+
+5
+00:00:25,940 --> 00:00:30,540
+có thể trở nên rất phức tạp nếu bạn bắt đầu lo lắng về việc giải quyết nó ra sao
+
+6
+00:00:30,540 --> 00:00:34,420
+Bạn có thể giải quyết nó bằng một cách rất đơn giản hoặc rất là phức tạp
+
+7
+00:00:34,420 --> 00:00:38,330
+Và nhân tiện, tất cả những bài toán mà tôi đang sử dụng sẽ giúp bạn trong việc
+
+8
+00:00:38,330 --> 00:00:43,210
+giải quyết các bài tập, bởi vì bài tập có thể trở nên phức tạp, và
+
+9
+00:00:43,210 --> 00:00:46,825
+Nếu bạn giải quyết thông suốt những vấn đề này, nó sẽ thật sự giúp ích cho các bạn trong việc giải các bài tập.
+
+10
+00:00:46,825 --> 00:00:47,610
+Được chứ?
+
+11
+00:00:47,610 --> 00:00:49,897
+Vậy hãy bắt đầu, hãy nhìn vào màn hình.
+
+12
+00:00:49,898 --> 00:00:56,840
+Bạn đã đầu tư 75,000 đôla vào 1 quỹ ủy thác với 7.5% cho việc học của con em.
+
+13
+00:00:57,930 --> 00:01:01,630
+Con bạn sẽ nhận được 12,000 đôla mỗi năm từ quỹ này trong vòng
+
+14
+00:01:01,630 --> 00:01:04,940
+4 năm bắt đầu từ cuối năm thứ bảy.
+
+15
+00:01:04,940 --> 00:01:09,539
+Số tiền còn lại trong quỹ này sẽ là bao nhiêu
+
+16
+00:01:10,590 --> 00:01:14,900
+vào cuối năm thứ 10, sau khi mà đứa con đã thực hiện rút tiền lần thứ tư?
+
+17
+00:01:16,580 --> 00:01:20,610
+Điều này nghe có vẻ gần giống với bài toán thứ nhất, tôi đã đơn giản bài toán
+
+18
+00:01:20,610 --> 00:01:27,30
+đi một chút để chỉ cho bạn thấy cách giải quyết vấn đề nhanh chóng, đúng không?
+
+19
+00:01:27,30 --> 00:01:33,250
+Và điều phức tạp mà tôi đã bỏ đi đó là tiền học phí không thay đổi do lạm phát,
+
+20
+00:01:33,250 --> 00:01:37,460
+nhưng cái mà tôi đã thêm vào là, tôi đang hỏi bạn rằng từ đâu mà
+
+21
+00:01:37,460 --> 00:01:41,449
+qũy ủy thác của bạn sẽ có một khoản tiền thừa sau 10 năm.
+
+22
+00:01:41,450 --> 00:01:44,460
+Thay vì đi vay và trả dần dần cho hết khoản nợ, đúng không?
+
+23
+00:01:45,640 --> 00:01:47,900
+Hãy xem, cho dù bạn có còn tiền còn lại hay không.
+
+24
+00:01:49,50 --> 00:01:51,820
+Hãy vẽ trục thời gian như mọi khi
+
+25
+00:01:51,820 --> 00:01:54,378
+Có bao nhiêu mốc thời gian?
+
+26
+00:01:54,379 --> 00:01:57,408
+Chúng ta bắt đầu với 0 và sau đó thêm 10 mốc  nữa.
+
+27
+00:02:01,923 --> 00:02:03,750
+Chúng ta biết gì rồi?
+
+28
+00:02:03,750 --> 00:02:06,590
+Và hãy đặt chúng lên bảng.
+
+29
+00:02:06,590 --> 00:02:10,800
+Chúng ta biết rằng bạn có 75,000 đôla tại điểm này, cộng thêm
+
+30
+00:02:12,410 --> 00:02:16,70
+Tuy nhiên, chúng ta biết bắt đầu từ năm thứ bảy
+
+31
+00:02:16,70 --> 00:02:20,200
+trong một vài trường hợp chúng ta đã giải quyết  vấn đề phức tạp hơn trước tiên, đúng không?
+
+32
+00:02:20,200 --> 00:02:23,200
+Bởi vì sự phức tạp của lạm phát
+
+33
+00:02:23,200 --> 00:02:25,160
+Chúng ta bắt đầu rút số tiền 12 nghìn đôla
+
+34
+00:02:33,461 --> 00:02:33,961
+Đúng chứ?
+
+35
+00:02:35,290 --> 00:02:38,820
+Vậy câu hỏi ở đây là
+
+36
+00:02:39,970 --> 00:02:42,890
+Còn lại bao nhiêu tiền ở cuối năm thứ 10
+
+37
+00:02:42,890 --> 00:02:45,279
+Bây giờ chúng ta có thể suy nghĩ 1 cách đơn giản về vấn đề này
+
+38
+00:02:45,280 --> 00:02:49,885
+Và một cách đơn giản ở đây là, bỏ qua tất cả về Giá trị tiền tệ theo thời gian
+
+
+39
+00:02:49,885 --> 00:02:52,595
+và nó làm tôi cảm thấy buồn.
+
+40
+00:02:52,595 --> 00:02:57,765
+Nhưng chúng ta hãy nhớ rằng, lãi suất của Giá trị tiền tệ theo thời gian
+là 7.5% vì vậy khi chúng ta bỏ qua nó thì nó tác động 
+
+41
+00:02:57,765 --> 00:03:03,964
+sẽ mạnh hơn so với trường hợp lãi suất gần với 0% , tức là khi không có Giá trị tiền tệ theo thời gian
+
+
+42
+00:03:03,965 --> 00:03:08,533
+Vậy cách đơn giản để hiểu vấn đề này sẽ là, tôi có 75 và
+
+43
+00:03:08,533 --> 00:03:13,640
+tiếp theo chúng ta trừ cho 4 lần 12,000, nghĩa là 48
+
+44
+00:03:13,640 --> 00:03:16,70
+Đúng không? 12 lần 4 là 48
+
+45
+00:03:16,70 --> 00:03:18,560
+Vậy chúng ta còn lại gì ở đây?
+
+46
+00:03:18,560 --> 00:03:20,970
+$75,000 trừ $48,000 là $27,000
+
+47
+00:03:20,970 --> 00:03:26,890
+Đó là cách đơn giản và ngây thơ nhất, nhưng chúng ta hãy giải chúng bằng 1 cách khác thông minh hơn.
+
+48
+00:03:26,890 --> 00:03:32,700
+Nhiều người giải quyết vấn đề bằng cách giải quyết từng bước một, họ sẽ bắt đầu từ năm thứ 7
+
+49
+00:03:32,700 --> 00:03:35,690
+Sau đó là năm thứ 8 và bắt đầu trừ
+
+50
+00:03:35,690 --> 00:03:40,810
+Chúng ta thực hiện các bước đó là để xác nhận lại kết quả
+
+51
+00:03:40,810 --> 00:03:45,460
+Chúng ta hãy giải quyết vấn đề bằng một cách khá đơn giản.
+
+52
+00:03:45,460 --> 00:03:47,860
+Chia vấn đề ra làm hai phần nhỏ
+
+53
+00:03:47,860 --> 00:03:53,590
+Và hai phần đó, không trộn lẫn giá trị của quỹ ủy thác
+
+54
+00:03:53,590 --> 00:03:58,160
+với số tiền thanh toán được thực hiện hàng năm bắt đầu từ năm thứ bảy, đúng chứ?
+
+55
+00:03:58,160 --> 00:04:01,770
+Ngay cả khi việc thanh toán được thực hiện từ năm thứ nhất, nó vẫn khá là phức tạp.
+
+56
+00:04:01,770 --> 00:04:02,610
+Vậy chúng ta làm gì?
+
+57
+00:04:02,610 --> 00:04:05,370
+Tách phần âm ra khỏi phần dương
+
+58
+00:04:06,710 --> 00:04:09,330
+Hãy chia nó làm 2 phần.
+
+59
+00:04:11,110 --> 00:04:13,60
+Phần dương
+
+60
+00:04:13,60 --> 00:04:18,860
+Ở đây tôi gọi phần dương là 75 nghìn được chuyển tiếp trong vòng bao nhiêu năm?
+
+61
+00:04:18,860 --> 00:04:20,890
+10 năm, chúng ta có thể làm được điều này không?
+
+62
+00:04:20,890 --> 00:04:23,789
+Câu trả lời là có, đó là bài toán Giá Trị Tương Lai.
+
+63
+00:04:25,580 --> 00:04:26,888
+Lãi suất là bao nhiêu?
+
+64
+00:04:26,888 --> 00:04:30,138
+0.075
+
+65
+00:04:30,138 --> 00:04:32,210
+n bằng bao nhiêu?
+
+66
+00:04:32,210 --> 00:04:33,440
+10.
+
+67
+00:04:33,440 --> 00:04:35,430
+PMT là bao nhiêu?
+
+68
+00:04:35,430 --> 00:04:36,433
+bằng không.
+
+69
+00:04:36,433 --> 00:04:38,647
+PV bằng bao nhiêu?
+
+70
+00:04:38,648 --> 00:04:41,88
+75,000
+
+71
+00:04:41,88 --> 00:04:44,570
+Và chúng ta sẽ có được bao nhiêu?
+
+72
+00:04:44,570 --> 00:04:50,710
+Nếu như những số liệu đã đúng, chúng ta nhấn Enter.
+
+73
+00:04:50,710 --> 00:04:53,866
+Chúng ta có 154,577.37
+
+74
+00:04:53,866 --> 00:04:58,30
+Đây là tổng số tiền mà chúng ta sẽ có.
+
+75
+00:04:58,30 --> 00:05:01,140
+Và rõ ràng, nhiều gấp đôi và
+
+76
+00:05:01,140 --> 00:05:05,419
+lý do khá là đơn giản, thực chất có 2 nguyên nhân.
+
+77
+00:05:05,420 --> 00:05:11,400
+Một là lãi suất cao, nguyên nhân thứ hai đó là 10 không phải là một con số nhỏ, nó...
+
+78
+00:05:11,400 --> 00:05:17,10
+Mưởi năm là 1 khoảng thời gian khá dài để cho số tiền được tích lũy, đúng không?
+
+79
+00:05:17,10 --> 00:05:20,920
+Tiếp theo, bây giờ chúng ta giải quyết phần âm, phần âm là gì?
+
+80
+00:05:23,250 --> 00:05:25,30
+Phần âm là vẽ trục thời gian, 
+
+81
+00:05:25,30 --> 00:05:26,969
+phần âm đầu tiên là 12 nghìn
+
+82
+00:05:28,370 --> 00:05:31,200
+phần thứ hai là khoảng thời gian 12,000
+
+83
+00:05:31,200 --> 00:05:37,219
+12 nghìn, âm 12 nghìn
+
+84
+00:05:39,280 --> 00:05:40,520
+Được chứ?
+
+85
+00:05:40,520 --> 00:05:42,930
+Vậy thì chúng ta đang nhìn thấy ở đây đó là
+
+86
+00:05:42,930 --> 00:05:46,230
+Nếu chúng ta gộp hai phần lại với nhau nó có thể trở nên rất rất là phức tạp.
+
+87
+00:05:46,230 --> 00:05:47,510
+Bạn có thể làm cho vui.
+
+88
+00:05:47,510 --> 00:05:51,440
+Như tôi đã làm trước đó để thấy rằng bạn có thể xác nhận được kết quả của mình bằng cách nào
+
+89
+00:05:51,440 --> 00:05:53,530
+Và chúng ta sẽ tính toán 1 chút ở đây.
+
+90
+00:05:53,530 --> 00:05:57,469
+Nhưng nó khá là dễ hiểu.
+
+91
+00:05:57,470 --> 00:06:01,885
+Tính Giá Trị Tương Lai của cái gì?
+
+92
+00:06:01,885 --> 00:06:07,243
+Nó không phải chỉ là 1 lần, nó là khoản tiền trả hàng năm
+
+93
+00:06:07,243 --> 00:06:11,375
+Vậy, lãi suất là bao nhiêu?
+
+94
+00:06:11,375 --> 00:06:15,870
+0.075 và nhớ rằng nó sẽ là số dương nhưng
+
+95
+00:06:15,870 --> 00:06:18,804
+Tôi biết rằng nó là phần âm bởi vì đó là số tiền mà tôi thanh toán đúng không?
+
+96
+00:06:18,804 --> 00:06:22,159
+Vậy 0.075, n là bao nhiêu?
+
+97
+00:06:22,160 --> 00:06:23,170
+N là 4
+
+98
+00:06:23,170 --> 00:06:27,10
+Nhớ rằng tôi tính Giá Trị Tương Lai bởi vì tôi muốn biết số tiền ở năm thứ 10.
+
+99
+00:06:27,10 --> 00:06:29,140
+N là bốn 
+
+100
+00:06:29,140 --> 00:06:30,800
+PMT là bao nhiêu?
+
+101
+00:06:33,420 --> 00:06:35,220
+Bây giờ, chúng ta có thể nhấn âm 12,000 nhưng
+
+102
+00:06:35,220 --> 00:06:37,770
+Tôi sẽ không  như tôi đã giải thích, lo lắng về nó.
+
+103
+00:06:37,770 --> 00:06:39,370
+Và tại sao tôi lại đóng ngoặc?
+
+104
+00:06:39,370 --> 00:06:40,850
+Bởi vì không còn gì nữa cả
+
+105
+00:06:40,850 --> 00:06:41,610
+Đúng không?
+
+106
+00:06:41,610 --> 00:06:42,610
+Không còn gì nữa cả.
+
+107
+00:06:42,610 --> 00:06:49,790
+Chúng ta có thể làm nó thú vị hơn nhưng bây giờ thì tôi sẽ bỏ qua 
+
+108
+00:06:49,790 --> 00:06:53,653
+Và kết quả sẽ là
+
+109
+00:06:53,653 --> 00:06:59,350
+53,675.06 đôla
+
+110
+00:06:59,350 --> 00:07:01,60
+Vậy giờ chúng ta biết được hai phần
+
+111
+00:07:01,60 --> 00:07:04,840
+Một phần là 154,577.37 . Phần còn lại là phần âm và
+
+112
+00:07:04,840 --> 00:07:10,349
+Bây giờ tôi sẽ chuyển nó sang số âm bởi vì tôi biết là tôi đang thanh toán tiền
+
+113
+00:07:11,950 --> 00:07:20,26
+Vậy số dư quỹ ròng là bao nhiêu?
+
+114
+00:07:20,26 --> 00:07:25,350
+Trong năm nào? Năm thứ mười.
+
+115
+00:07:25,350 --> 00:07:30,80
+Kết quả sẽ là lấy 154,577.37 trừ cho 53,675.06 và
+
+116
+00:07:30,80 --> 00:07:34,680
+Tôi nghĩ rằng đáp án 
+
+117
+00:07:34,680 --> 00:07:39,790
+sẽ là 100,000 đôla
+
+118
+00:07:39,790 --> 00:07:40,480
+902.
+
+119
+00:07:40,480 --> 00:07:48,390
+Tôi là một gã dở hơi, tôi cứ tự cười chính bản thân mình
+
+120
+00:07:48,390 --> 00:07:49,80
+Và 30 cents.
+
+121
+00:07:49,80 --> 00:07:51,140
+Vậy chúng ta sẽ có bao nhiêu?
+
+122
+00:07:51,140 --> 00:07:55,849
+Chúng ta sẽ có 100,000 đôla, gần 101,000 đôla mặc dù đó là sau khi chúng ta đã trả 4 lần 12 nghìn đô.
+
+123
+00:07:55,850 --> 00:08:00,640
+Và điều này cho bạn thấy sức mạnh của lãi kép.
+
+124
+00:08:00,640 --> 00:08:02,900
+Bởi vì chúng ta đã có một số tiền tương đối lớn.
+
+125
+00:08:04,140 --> 00:08:07,50
+Cố gắng với tôi thêm chút nữa và chúng ta sẽ xong vấn đề của ngày hôm nay.
+
+126
+00:08:07,50 --> 00:08:08,660
+Cố gắng giúp tôi nhé.
+
+127
+00:08:08,660 --> 00:08:12,110
+Bây giờ chúng ta xác nhận lại điều này có đúng hay không.
+
+128
+00:08:12,110 --> 00:08:15,280
+Hãy làm điều này và tôi sẽ rất vui vì điều đó.
+
+129
+00:08:16,490 --> 00:08:21,290
+Hãy bắt đầu, và lần này chúng ta sẽ làm nó theo cách phức tạp.
+
+130
+00:08:21,290 --> 00:08:28,700
+Hãy bắt đầu với 75,000 đôla và nó được chuyển tiếp cho đến năm thứ mấy? Năm thứ 7
+
+131
+00:08:30,350 --> 00:08:31,80
+Bạn có thể thực hiện nó chứ?
+
+132
+00:08:32,130 --> 00:08:36,799
+Hãy gọi nó là x7
+
+133
+00:08:39,809 --> 00:08:41,569
+Tiếp theo đó, chúng ta sẽ trừ ra bao nhiêu?
+
+134
+00:08:43,750 --> 00:08:44,250
+12 nghìn
+
+135
+00:08:45,270 --> 00:08:49,270
+Chúng ta sẽ còn x7 ròng.
+
+136
+00:08:50,270 --> 00:08:51,220
+Các bạn có thích điều đó không?
+
+137
+00:08:51,220 --> 00:08:51,820
+x7 ròng
+
+138
+00:08:53,540 --> 00:08:55,849
+Tiếp theo chúng ta sẽ làm gì trong năm thứ 8?
+
+139
+00:08:55,850 --> 00:08:58,930
+Chúng ta sẽ chuyển tiếp nó ở mức 7.5 %
+
+140
+00:08:58,930 --> 00:09:00,319
+Để có y7, đó là
+
+141
+00:09:02,920 --> 00:09:11,310
+tổng số tiền trong tài khoản của bạn hay trong quỹ ủy thác của bạn
+
+142
+00:09:11,310 --> 00:09:17,609
+sau khi bạn đã thanh toán 12 nghìn đầu tiên và bạn còn lại một khoản tiền xác định.
+
+143
+00:09:17,610 --> 00:09:19,000
+Tiếp theo chúng ta trừ cho cái gì?
+
+144
+00:09:19,000 --> 00:09:20,15
+thêm 12 nghìn nữa.
+
+145
+00:09:20,15 --> 00:09:25,766
+Tiếp tục như thế đến năm thứ 10, chúng ta sẽ có gì ở đây?
+
+146
+00:09:25,766 --> 00:09:27,99
+Khoảng 101 nghìn.
+
+147
+00:09:27,100 --> 00:09:34,410
+Và tôi đang nó là khoảng bởi vì nó hơi ít hơn số đó một chút.
+
+148
+00:09:35,420 --> 00:09:38,969
+Hãy làm điều này và bạn sẽ giải quyết được bài toán.
+
+149
+00:09:38,970 --> 00:09:43,790
+Chúng ta đã giải quyết rất nhiều vấn đề và tôi đã thực hiện điều đó có mục đích.
+
+150
+00:09:44,900 --> 00:09:49,770
+Mặc dù với chữ viết tay hơi tệ và tôi đã cố tình không dùng Excel, 
+
+151
+00:09:49,770 --> 00:09:52,480
+Để các bạn có thể hiểu được tính logic của trục thời gian.
+
+152
+00:09:52,480 --> 00:09:56,90
+Nhưng hãy nhớ sử dụng Excel nhất là khi đó là điều đúng.
+
+153
+00:09:57,940 --> 00:10:01,100
+Chúng ta biết rằng dòng tiền thay đổi theo thời gian
+
+154
+00:10:01,100 --> 00:10:05,900
+Chúng ta biết là chúng ta phải dùng những hàm khác ngoài PMT, PV, và tương tự
+
+155
+00:10:05,900 --> 00:10:08,670
+cho những hàm công thức đơn giản.
+
+156
+00:10:08,670 --> 00:10:09,740
+Vậy điều gì sẽ xảy ra?
+
+157
+00:10:09,740 --> 00:10:11,570
+Khi dòng tiền thay đổi trong tự nhiên
+
+158
+00:10:11,570 --> 00:10:15,10
+Ví dụ như, sự tăng trưởng của hiểu biết qua trực giác, nếu như điều này đang diễn ra.
+
+159
+00:10:15,10 --> 00:10:16,600
+Hãy thử cái này.
+
+160
+00:10:16,600 --> 00:10:20,460
+Giả sử rằng 12 nghìn sẽ tăng theo thời gian.
+
+161
+00:10:20,460 --> 00:10:25,450
+Hôm nay bạn có 12 nghìn và nó sẽ tăng, ví dụ như 3% trong 1 năm.
+
+162
+00:10:25,450 --> 00:10:28,500
+Bạn sẽ quay lại phép toán đầu tiên và bạn có thể làm lại từ đầu.
+
+163
+00:10:29,630 --> 00:10:31,620
+Hy vọng rằng bạn sẽ làm được.
+
+164
+00:10:31,620 --> 00:10:34,679
+Và lần tiếp theo, mô-đun tiếp theo, ta sẽ giải
+
+165
+00:10:36,20 --> 00:10:40,630
+một ứng dụng thực tế của điều này và nó được gọi là trái phiếu.
+
+166
+00:10:40,630 --> 00:10:42,380
+Nhưng đừng lo lắng quá về cái tên.
+
+167
+00:10:42,380 --> 00:10:46,689
+Trái phiếu thực chất là một cái tên khác nghe có vẻ hay hơn của khoản vay.
+
+168
+00:10:46,690 --> 00:10:48,336
+Có nhiều loại khoản vay khác nhau.
+
+169
+00:10:48,336 --> 00:10:52,710
+Khoản vay của chính phủ, khoản vay doanh nghiệp.
+
+170
+00:10:52,710 --> 00:10:56,580
+Chúng ta đã tập trung phần lớn vào khoản vay cá nhân ở đây.
+
+171
+00:10:56,580 --> 00:10:58,310
+Nhưng lần tới chúng ta sẽ thấy hứng thú và
+
+172
+00:10:58,310 --> 00:11:02,328
+thực hành thêm về các khoản vay rất thú vị được vay bởi những tổ chức khác nhau.
+
+173
+00:11:02,328 --> 00:11:03,654
+Hẹn sớm gặp lại các bạn.
+

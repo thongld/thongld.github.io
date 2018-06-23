@@ -1,0 +1,432 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/lCII8lj6lDA
+
+1
+00:00:05,780 --> 00:00:08,638
+hello again and welcome back to operations
+management
+
+2
+00:00:08,638 --> 00:00:12,278
+in our previous session's we've been
+talking about capacity analysis
+
+3
+00:00:12,278 --> 00:00:17,070
+in other words we've been thinking
+about what it takes to determine how
+
+4
+00:00:17,070 --> 00:00:18,070
+many units
+
+5
+00:00:18,070 --> 00:00:23,698
+a process can produce it generally comes
+down to how much time you have available
+
+6
+00:00:23,699 --> 00:00:27,179
+for resource pool and how much time is
+needed
+
+7
+00:00:27,179 --> 00:00:30,689
+and this session we're going to work
+through a problem
+
+8
+00:00:30,689 --> 00:00:34,399
+it may be a little bit longer than some
+of the other videos but please bear with
+
+9
+00:00:34,399 --> 00:00:34,810
+me
+
+10
+00:00:34,810 --> 00:00:40,009
+I involve I make things very very clear as
+to how you approach a problem like this
+
+11
+00:00:40,009 --> 00:00:44,339
+here we have the LRDR  laundry company
+
+12
+00:00:44,340 --> 00:00:47,610
+this company provides a commercial
+laundry service
+
+13
+00:00:47,609 --> 00:00:50,850
+to businesses whose employees wear
+uniforms
+
+14
+00:00:50,850 --> 00:00:55,010
+approximately 10 percent of all loads are
+considered heavy loads
+
+15
+00:00:55,009 --> 00:00:58,219
+the rest are considered normal a normal
+load
+
+16
+00:00:58,219 --> 00:01:01,780
+takes 30 minutes in the washer and
+eighty minutes in the dryer
+
+17
+00:01:01,780 --> 00:01:05,009
+a heavy load takes 45 minutes in the
+washer
+
+18
+00:01:05,009 --> 00:01:09,030
+and 140 minutes in the dryer they have
+two washers
+
+19
+00:01:09,030 --> 00:01:15,180
+and 4 dryers the washers and dryers
+can run 22 hours a day seven days a week
+
+20
+00:01:15,180 --> 00:01:20,420
+the question is can they meet their weekly
+demand of 500 loads
+
+21
+00:01:20,420 --> 00:01:25,070
+what we're going to do is we can to
+parse out this particular problem
+
+22
+00:01:25,069 --> 00:01:28,149
+and identify all the key pieces of the
+
+23
+00:01:28,150 --> 00:01:33,118
+information to determine whether or not
+we can meet the demand of 500 loads
+
+24
+00:01:33,118 --> 00:01:36,228
+here the grid
+
+25
+00:01:36,228 --> 00:01:41,269
+that identifies the two resource pools
+that we have we have the washer pool
+
+26
+00:01:41,269 --> 00:01:45,200
+and the dryer pool as you can see
+
+27
+00:01:45,200 --> 00:01:48,579
+we're going to be working with the amount
+of it's needed to
+
+28
+00:01:48,578 --> 00:01:52,438
+complete a load of laundry for both the
+wash and the dryer
+
+29
+00:01:52,438 --> 00:01:56,148
+are also going to look at how much time
+is available
+
+30
+00:01:56,149 --> 00:02:01,409
+for each of the resources so now let's go
+back to the original problem
+
+31
+00:02:01,409 --> 00:02:04,899
+and find the information that we need to
+fill in this grid
+
+32
+00:02:04,899 --> 00:02:09,840
+in the problem they state
+
+33
+00:02:09,840 --> 00:02:14,640
+that they have two washers and 4
+dryers the washers and dryers can run
+
+34
+00:02:14,639 --> 00:02:18,219
+22 hours a day seven days a week
+
+35
+00:02:18,219 --> 00:02:22,030
+so this is going to give us the
+information on the available time
+
+36
+00:02:22,030 --> 00:02:26,259
+for the different resource pools the
+washer
+
+37
+00:02:26,259 --> 00:02:30,009
+has 2 resource units in it cus there're
+ two washers
+
+38
+00:02:30,009 --> 00:02:33,039
+each one runs 22 hours
+
+39
+00:02:33,039 --> 00:02:36,539
+a day now an hour is 60 minutes so
+
+40
+00:02:36,539 --> 00:02:40,229
+each one is running 1320 minutes
+
+41
+00:02:40,229 --> 00:02:44,429
+so there're 2 of them the total time
+available per day
+
+42
+00:02:44,430 --> 00:02:49,209
+is 2640 minutes the dryer
+
+43
+00:02:49,209 --> 00:02:53,390
+is also running twenty-two hours a day
+so each dryer runs
+
+44
+00:02:53,389 --> 00:02:59,039
+1,320 minutes but there are four units
+in this resource pool
+
+45
+00:02:59,039 --> 00:03:02,679
+so there's a total of  5280
+
+46
+00:03:02,680 --> 00:03:09,189
+minutes available for dryer time
+now go back and look at the problem to
+
+47
+00:03:09,189 --> 00:03:11,000
+find out how much time is needed
+
+48
+00:03:11,000 --> 00:03:16,229
+we're told that 10 percent of all loads 
+are considered heavy
+
+49
+00:03:16,229 --> 00:03:19,679
+and the rest are considered normal a
+normal load
+
+50
+00:03:19,680 --> 00:03:23,060
+takes 30 minutes in the washer and
+eighty minutes in the dryer
+
+51
+00:03:23,060 --> 00:03:26,580
+whereas a heavy load takes 45 minutes
+in the washer
+
+52
+00:03:26,580 --> 00:03:30,140
+and a hundred and forty minutes in the
+dryer so
+
+53
+00:03:30,139 --> 00:03:35,809
+let's go put that in the grid as well
+there's two forty-five minutes for the
+
+54
+00:03:35,810 --> 00:03:37,229
+washer for the heavy load and
+
+55
+00:03:37,229 --> 00:03:42,060
+140 minutes for the dryer 30 minutes for
+the normal load
+
+56
+00:03:42,060 --> 00:03:45,610
+and 80-minute for the dryer for the normal
+load
+
+57
+00:03:45,610 --> 00:03:48,870
+but now we have to create the average
+unit load
+
+58
+00:03:48,870 --> 00:03:53,140
+this has to be a weighted average
+because only ten percent
+
+59
+00:03:53,139 --> 00:03:56,729
+of the load are heavy and ninety
+percent
+
+60
+00:03:56,729 --> 00:04:01,329
+are normal so I'll take 10 percent times
+the heavy time
+
+61
+00:04:01,330 --> 00:04:04,510
+plus ninety percent times the normal
+time
+
+62
+00:04:04,509 --> 00:04:07,810
+and add them together and that will give
+us our weighted average
+
+63
+00:04:07,810 --> 00:04:11,009
+so on average a load
+
+64
+00:04:11,009 --> 00:04:14,979
+of laundry through the washer takes
+31.5 minutes
+
+65
+00:04:14,979 --> 00:04:18,209
+and in the dryer it takes 86 minutes
+
+66
+00:04:18,209 --> 00:04:21,720
+to this is the time we need per load
+
+67
+00:04:21,720 --> 00:04:26,420
+and we have already calculated the
+amount of time that we have available
+
+68
+00:04:26,420 --> 00:04:30,140
+so the next step is to just calculate
+the number of loads per day
+
+69
+00:04:30,139 --> 00:04:33,719
+we have the load per day
+
+70
+00:04:33,720 --> 00:04:38,030
+equally the available time for the
+washer which was two thousand four
+
+71
+00:04:38,029 --> 00:04:39,559
+hundred and sixty minutes
+
+72
+00:04:39,560 --> 00:04:43,889
+divided by 31.5 is 83.8
+
+73
+00:04:43,889 --> 00:04:48,129
+loads per day and the same thing with
+the dryer the total time
+
+74
+00:04:48,129 --> 00:04:51,689
+5280 minutes divided by
+
+75
+00:04:51,689 --> 00:04:55,170
+86 minutes needed per load giving us
+
+76
+00:04:55,170 --> 00:05:02,170
+61.4 loads per day now the question was
+can we meet five hundred loads in a week
+
+77
+00:05:03,560 --> 00:05:07,250
+so if we know how many loads per day
+we can
+
+78
+00:05:07,250 --> 00:05:10,860
+multiply it  by seven and determine the
+number of loads per week
+
+79
+00:05:10,860 --> 00:05:16,810
+the washer can meet the commitment 586.7
+loads can be done
+
+80
+00:05:16,810 --> 00:05:20,750
+through the washer in a week but the
+dryer can't
+
+81
+00:05:20,750 --> 00:05:24,220
+the dryer can only do 429.8
+
+82
+00:05:24,220 --> 00:05:28,290
+so the overall capacity of the laundry
+company
+
+83
+00:05:28,290 --> 00:05:32,000
+is only 429.8 loads per week
+
+84
+00:05:32,000 --> 00:05:36,050
+the dryer is our bottleneck it is what's
+driving
+
+85
+00:05:36,050 --> 00:05:40,710
+our effective capacity for the process
+so
+
+86
+00:05:40,709 --> 00:05:44,779
+the answer to your question can we meet
+the demand to five hundred loads per
+
+87
+00:05:44,779 --> 00:05:45,419
+week
+
+88
+00:05:45,420 --> 00:05:49,560
+the answer is No now and the next
+session
+
+89
+00:05:49,560 --> 00:05:52,970
+we'll talk about how we go about
+determining how many
+
+90
+00:05:52,970 --> 00:05:57,190
+resources we need in order to meet their
+demand
+
+91
+00:05:57,189 --> 00:05:58,089
+i'll see you then
+

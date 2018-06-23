@@ -1,0 +1,353 @@
+0
+00:00:05,093 --> 00:00:06,540
+Chào các bạn.
+Bài học hôm nay sẽ khó hơn một tí.
+
+2
+00:00:08,790 --> 00:00:11,940
+Vẫn là 2 công ty, nhưng lần này chúng ta sẽ giải quyết vấn đề liên quan đến dữ liệu hai công ty.
+
+3
+00:00:11,940 --> 00:00:14,410
+Chúng ta sẽ dùng dữ liệu cổ phần.
+
+4
+00:00:14,410 --> 00:00:18,950
+Tôi sẽ cố đơn giản hóa để các bạn làm quen.
+
+5
+00:00:18,950 --> 00:00:23,420
+Thỉnh thoảng tôi sẽ đưa cả phương sai hay độ lệch chuẩn vào.
+
+6
+00:00:23,420 --> 00:00:25,950
+Mối liên hệ giữa hai công ty như thế nào?
+
+7
+00:00:25,950 --> 00:00:27,990
+Đầu tiên, nguyên tắc quan trọng nhất là
+
+8
+00:00:27,990 --> 00:00:32,630
+phải tính được phương sai trước khi tính độ lệch chuẩn.
+
+9
+00:00:32,630 --> 00:00:36,230
+Nhiều người khá thích thảo luận về phương sai.
+
+10
+00:00:36,230 --> 00:00:40,784
+Số khác lại thích độ lệch chuẩn đơn giản vì độ lệch chuẩn là căn bậc hai và
+
+11
+00:00:40,784 --> 00:00:42,525
+cũng tương tự như mức sinh lời vậy.
+
+12
+00:00:42,525 --> 00:00:47,142
+Vì thế nên tôi sẽ luân phiên nói về phương sai và độ lệch chuẩn,
+
+13
+00:00:47,142 --> 00:00:49,886
+các bạn cũng không thấy phiền lắm đúng không?
+
+14
+00:00:49,886 --> 00:00:52,030
+Các bạn sẽ dễ dàng phân biệt được hai khái niệm này.
+
+15
+00:00:52,030 --> 00:00:52,918
+Nhưng điều quan trọng là
+
+16
+00:00:52,918 --> 00:00:56,986
+các bạn không thể tính được độ lệch chuẩn nếu như các bạn không tính phương sai.
+
+17
+00:00:56,986 --> 00:01:02,561
+Với 2 công ty này thì mức sinh lời trung bình của 2 công ty là bao nhiêu?
+
+18
+00:01:02,561 --> 00:01:04,630
+Mức sinh lời tổng là trung bình của mức sinh lời của 2 công ty.
+
+19
+00:01:05,680 --> 00:01:10,890
+Do đó nên lãi suất kỳ vọng của danh mục đầu tư là trung bình của
+
+20
+00:01:10,890 --> 00:01:12,090
+các lãi suất kì vọng.
+
+21
+00:01:12,090 --> 00:01:13,510
+Rất đơn giản.
+
+22
+00:01:14,580 --> 00:01:18,374
+Và tỉ lệ mỗi công ty trong danh mục là 0.5.
+
+23
+00:01:18,374 --> 00:01:20,100
+Tôi hỏi câu này.
+
+24
+00:01:20,100 --> 00:01:24,140
+Các bạn đã tính lãi suất của danh mục đầu tư rồi đúng không?
+
+25
+00:01:24,140 --> 00:01:28,960
+Các bạn đã tạo một cột khác đi từ hàng số 2 đến hàng số 61 bởi vì 
+
+26
+00:01:28,960 --> 00:01:33,900
+có 60 con số khác nhau, và cũng là sự kết hợp từ 2 công ty lại.
+
+27
+00:01:33,900 --> 00:01:34,710
+Chúng ta tiếp tục nào.
+
+28
+00:01:35,860 --> 00:01:40,390
+Khi xét 2 công ty đó, các rủi ro của 2 công ty đó là gì? 
+
+29
+00:01:40,390 --> 00:01:42,000
+ 
+
+30
+00:01:42,000 --> 00:01:43,500
+Chúng ta sẽ thảo luận phần phương sai sau.
+
+31
+00:01:43,500 --> 00:01:47,130
+Đây là ý tôi khi tôi nói tôi sẽ luân phiên dùng phương sai
+
+32
+00:01:47,130 --> 00:01:48,420
+và độ lệch chuẩn.
+
+33
+00:01:48,420 --> 00:01:52,970
+Các bạn đừng dùng khái niệm phương sai và độ lệch chuẩn của từng công ty.
+
+34
+00:01:52,970 --> 00:01:53,930
+Nó không có ý nghĩa đâu.
+
+35
+00:01:53,930 --> 00:01:54,930
+Giờ chúng ta sẽ viết công thức ra.
+
+36
+00:01:56,130 --> 00:02:02,820
+Sigma 1 bình phương, sigma 2 bình phương.
+
+37
+00:02:02,820 --> 00:02:05,400
+Lẽ ra các bạn đã làm xong ở lần trước rồi.
+
+38
+00:02:05,400 --> 00:02:11,865
+Tôi nghĩ kết quả là 0.0127,
+
+39
+00:02:11,865 --> 00:02:17,258
+Còn kết quả này là 0.0102.
+
+40
+00:02:17,258 --> 00:02:20,130
+Nhớ rằng các bạn đang tính phương sai
+
+41
+00:02:20,130 --> 00:02:24,440
+và các bạn phải tính phương sai của cả 2 công ty.
+
+42
+00:02:24,440 --> 00:02:28,270
+Vấn đề ở đây là
+
+43
+00:02:28,270 --> 00:02:33,430
+các bạn đang có trong tay 1 danh mục đầu tư, vậy các bạn đã tính lãi suất của danh mục đầu tư đó chưa?
+
+44
+00:02:33,430 --> 00:02:34,730
+Rồi.
+
+45
+00:02:34,730 --> 00:02:36,620
+Câu hỏi thứ hai.
+
+46
+00:02:37,820 --> 00:02:41,560
+Rủi ro của danh mục đầu tư là bao nhiêu?
+
+47
+00:02:41,560 --> 00:02:42,470
+Và các bạn làm thế nào để xác định được?
+
+48
+00:02:43,480 --> 00:02:48,150
+Các bạn sẽ phải tính sigma p bình phương.
+
+49
+00:02:48,150 --> 00:02:54,554
+Rất đơn giản, chỉ cần tính phương sai, sau đó
+
+50
+00:02:54,554 --> 00:02:59,285
+sử dụng hàm VAR.
+
+51
+00:02:59,285 --> 00:03:04,801
+Lãi suất của danh mục đầu tư đang ở cột 61.
+
+52
+00:03:04,801 --> 00:03:08,910
+Các bạn sẽ thay thế cột lãi suất của danh mục đầu tư,
+
+53
+00:03:08,910 --> 00:03:11,230
+ở vị trí mà các bạn vừa tạo.
+
+54
+00:03:11,230 --> 00:03:12,410
+Dễ hiểu đúng không.
+
+55
+00:03:12,410 --> 00:03:13,150
+Khá đơn giản
+
+56
+00:03:14,230 --> 00:03:17,626
+Nếu các bạn đã tính rồi thì
+
+57
+00:03:20,396 --> 00:03:21,710
+kết quả sẽ là như sau.
+
+58
+00:03:22,920 --> 00:03:26,818
+Sigma 1 bình phương bằng bao nhiêu?
+
+59
+00:03:26,818 --> 00:03:29,237
+Tôi đặt dấu mũ vì giá trị này chỉ mang tính ước lượng.
+
+60
+00:03:31,359 --> 00:03:34,271
+Sigma 2 bình phương bằng bao nhiêu?
+
+61
+00:03:40,121 --> 00:03:41,800
+Tôi đã tính 3 số này.
+
+62
+00:03:41,800 --> 00:03:45,730
+Lúc này chắc các bạn đã nhận thấy có gì đó khác thường rồi.
+
+63
+00:03:46,990 --> 00:03:50,940
+Tôi sẽ không nói rõ, tôi sẽ dặt câu hỏi cho các bạn.
+
+64
+00:03:50,940 --> 00:03:55,555
+Rủi ro của danh mục đầu tư có liên hệ gì với rủi ro của 2 công ty?
+
+65
+00:03:55,555 --> 00:04:00,532
+Nếu tôi tính trung bình của 2 công ty, kết quả tôi có được là bao nhiêu?
+
+66
+00:04:00,532 --> 00:04:05,300
+Câu trả lời là 0.0114.
+
+67
+00:04:05,300 --> 00:04:07,130
+Tôi đã tính trung bình 2 số này.
+
+68
+00:04:07,130 --> 00:04:12,030
+Kết quả nằm trong khoảng giữa hai số đó.
+
+69
+00:04:12,030 --> 00:04:13,000
+Các bạn nhận thấy cái gì?
+
+70
+00:04:13,000 --> 00:04:17,698
+Mối liên hệ giữa con số tôi vừa tính và
+
+71
+00:04:17,697 --> 00:04:19,318
+lãi suất của danh mục đầu tư là gì?
+
+72
+00:04:21,598 --> 00:04:25,345
+Tôi nghĩ các bạn có thể dễ dàng thấy được.
+
+73
+00:04:25,345 --> 00:04:28,076
+1 số nhỏ hơn số kia, các bạn cũng thấy rồi.
+
+74
+00:04:28,076 --> 00:04:32,792
+Các bạn cũng dễ dàng thấy được rằng phương sai của lãi suất danh mục đầu tư nhỏ hơn
+
+75
+00:04:32,792 --> 00:04:36,210
+phương sai trung bình của 2 công ty, được chứ?
+
+76
+00:04:36,210 --> 00:04:38,050
+Kết luận cũng tương tự cho độ lệch chuẩn.
+
+77
+00:04:39,530 --> 00:04:42,120
+Nhưng có 1 số nhỏ hơn hẳn.
+
+78
+00:04:42,120 --> 00:04:48,570
+Phương sai của lãi suất danh mục đầu tư quá nhỏ so với giá trị 0.114.
+
+79
+00:04:48,570 --> 00:04:50,400
+Khoảng 50%.
+
+80
+00:04:50,400 --> 00:04:52,360
+Tại sao lại có hiện tượng này?
+
+81
+00:04:52,360 --> 00:04:54,380
+Tại sao nó lại nhỏ đến vậy?
+
+82
+00:04:54,380 --> 00:04:56,980
+Để giải thích thì các bạn dựa vào đâu?
+
+83
+00:04:56,980 --> 00:05:00,630
+Tôi sẽ dừng lại ở đây để các bạn
+
+84
+00:05:00,630 --> 00:05:02,610
+đi tìm câu trả lời.
+
+85
+00:05:02,610 --> 00:05:05,810
+Hi vọng các bạn gặp may mắn.
+
+86
+00:05:05,810 --> 00:05:06,890
+Các bạn sẽ dựa vào đâu?
+
+87
+00:05:06,890 --> 00:05:07,920
+Các bạn dựa vào cái gì?
+
+88
+00:05:10,080 --> 00:05:10,720
+Bye.
+

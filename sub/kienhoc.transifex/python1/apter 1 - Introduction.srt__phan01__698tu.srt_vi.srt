@@ -1,0 +1,383 @@
+1
+00:00:00,000 --> 00:00:00,990
+MHTHANH
+https://youtu.be/G721cooZXgs
+Dịch bởi Kiến Học
+kienhoc.vn
+facebook.com/kienhoc
+
+2
+00:00:00,990 --> 00:00:03,821
+Chào mừng đến với khoá học Python for Informatics
+
+3
+00:00:03,821 --> 00:00:06,070
+Bây giờ chúng ta sẽ học Chương 1
+
+4
+00:00:06,070 --> 00:00:08,380
+Tôi là Charles Severance của Đại học Michigan
+
+5
+00:00:08,380 --> 00:00:10,910
+Tôi là tác giả và là giảng viên
+
+6
+00:00:10,910 --> 00:00:15,560
+cho bài giảng trực tuyến này 
+của chương đầu tiên của quyển sách
+
+7
+00:00:15,560 --> 00:00:19,150
+Bài giảng này, các slide, và quyển sách của tôi
+
+8
+00:00:19,150 --> 00:00:19,900
+đều có tính mở
+
+9
+00:00:19,900 --> 00:00:23,360
+Nội dung mở, tài liệu mở
+
+10
+00:00:23,360 --> 00:00:25,490
+Chúng đều được cấp quyền sử dụng theo giấy phép Creative Commons Attribution
+
+11
+00:00:25,490 --> 00:00:28,900
+Video này cũng theo giấy phép Creative Commons
+
+12
+00:00:28,900 --> 00:00:29,454
+Attribution.
+
+13
+00:00:29,454 --> 00:00:31,370
+Điều quan trọng là phải rõ ràng về bản quyền
+
+14
+00:00:31,370 --> 00:00:35,620
+nên tôi nói về nó ngay từ đầu
+
+15
+00:00:35,620 --> 00:00:40,400
+Nếu bạn chưa cài đặt Python thì nên làm đi
+
+16
+00:00:40,400 --> 00:00:42,200
+Bạn sẽ cần làm điều đó không sớm thì muộn
+
+17
+00:00:42,200 --> 00:00:45,174
+Bạn thật sự có thể làm điều đó trước bài giảng này
+
+18
+00:00:45,174 --> 00:00:47,590
+Rõ ràng là bạn có thể nghe bài giảng này mà không cần cài đặt Python
+
+19
+00:00:47,590 --> 00:00:50,270
+nhưng nếu có Python thì bạn có thể thử nghiệm vài thứ
+
+20
+00:00:50,270 --> 00:00:53,480
+Ta sẽ viết một chút mã Python trong bài giảng này
+
+21
+00:00:53,480 --> 00:00:55,260
+và cho bạn xem Python
+
+22
+00:00:55,260 --> 00:01:01,280
+Vì thế, bạn có thể tự thử nghiệm cùng lúc, nếu bạn có Python sẵn sàng ở 1 cửa sổ khác
+
+23
+00:01:01,280 --> 00:01:06,050
+Trang web
+pythonlearn.com/install.php
+
+24
+00:01:06,050 --> 00:01:10,030
+có các chỉ dẫn cho (hệ điều hành) Microsoft Windows và Macintosh
+
+25
+00:01:10,030 --> 00:01:14,190
+Và mặc dù không có trên slide, nhưng tôi đã đưa lên các chỉ dẫn
+
+26
+00:01:14,190 --> 00:01:17,040
+về cách cài đặt Python trên Raspberry Pi 
+
+27
+00:01:17,040 --> 00:01:20,130
+loại máy tính mới giá 25 đô la khá hay ho
+
+28
+00:01:20,130 --> 00:01:23,270
+Thật sự là dễ dàng
+
+29
+00:01:23,270 --> 00:01:26,770
+Có các video ghi lại màn hình đầy đủ, từng bước một
+
+30
+00:01:26,770 --> 00:01:28,830
+Tối đa chỉ mất 10 hay 15 phút
+
+31
+00:01:28,830 --> 00:01:30,780
+Bạn có thể dừng hay mở lại
+
+32
+00:01:30,780 --> 00:01:33,450
+Bạn có thể tải về ổ đĩa cứng của mình
+
+33
+00:01:33,450 --> 00:01:36,570
+Chúng sẽ hướng dẫn bạn những gì cần làm để cài đặt Python
+
+34
+00:01:36,570 --> 00:01:37,140
+nếu cần
+
+35
+00:01:37,140 --> 00:01:38,910
+Cài đặt chương trình soạn thảo văn bản nếu cần
+
+36
+00:01:38,910 --> 00:01:41,830
+Và sau đó chạy chương trình Python đầu tiên của bạn
+
+37
+00:01:41,830 --> 00:01:44,000
+Bạn sẽ phải chạy một chương trình Python
+
+38
+00:01:44,000 --> 00:01:48,600
+Nên đây là thời điểm thích hợp để bạn dừng lại
+
+39
+00:01:48,600 --> 00:01:49,900
+hoàn tất việc cài đặt và quay trở lại bài giảng
+
+40
+00:01:49,900 --> 00:01:51,190
+Được chứ?
+
+41
+00:01:51,190 --> 00:01:54,730
+Bây giờ, quay trở lại phần giới thiệu
+
+42
+00:01:54,730 --> 00:01:58,650
+Các máy tính nói chung là muốn trở nên hữu ích
+
+43
+00:01:58,650 --> 00:02:04,060
+Chúng được lập trình --
+Đây là một bộ vi xử lý
+
+44
+00:02:04,060 --> 00:02:06,370
+Chỉ là một bộ phận điện tử
+
+45
+00:02:06,370 --> 00:02:09,120
+Có dây nối và mạch điện ở bên trong
+
+46
+00:02:09,120 --> 00:02:12,130
+Ai đó đã bỏ rất nhiều thời gian
+
+47
+00:02:12,130 --> 00:02:15,380
+để làm cho các chân cắm này ở phía sau
+
+48
+00:02:15,380 --> 00:02:18,860
+nhận các chỉ thị từ chúng ta, từ các hệ điều hành
+
+49
+00:02:18,860 --> 00:02:22,080
+từ ổ đĩa cứng, từ bộ nhớ
+
+50
+00:02:22,080 --> 00:02:24,480
+Các chỉ thị đi vào đây và sau đó kết quả chạy ra
+
+51
+00:02:24,480 --> 00:02:27,340
+Nó như là một cái máy tính cầm tay có thể lập trình
+
+52
+00:02:27,340 --> 00:02:29,820
+và công việc của ta là đưa các chỉ thị vào
+
+53
+00:02:29,820 --> 00:02:35,000
+Vật này, theo một nghĩa nào đó, có bản tính tò mò
+
+54
+00:02:35,000 --> 00:02:38,020
+tiếp theo là gì?
+
+55
+00:02:38,020 --> 00:02:40,400
+Kiểu như, nói tôi nghe bạn muốn làm gì tiếp?
+
+56
+00:02:40,400 --> 00:02:41,610
+Bạn muốn làm gì tiếp?
+
+57
+00:02:41,610 --> 00:02:42,440
+Bạn muốn làm gì tiếp?
+
+58
+00:02:42,440 --> 00:02:44,148
+và sau đó, bạn muốn làm gì tiếp?
+
+59
+00:02:44,148 --> 00:02:47,060
+Và nó làm điều đó cả tỉ lần mỗi giây
+
+60
+00:02:47,060 --> 00:02:50,250
+Đó là phần nội dung hơi chuyên sâu
+
+61
+00:02:50,250 --> 00:02:53,020
+nhưng bạn có thể nghĩ, nếu bạn có một cái PDA
+
+62
+00:02:53,020 --> 00:02:55,830
+giống như thế này, tất cả các nút bấm ở đây
+
+63
+00:02:55,830 --> 00:02:59,660
+kiểu như hỏi rằng "tiếp theo là gì?"
+
+64
+00:02:59,660 --> 00:03:00,400
+Phải không?
+
+65
+00:03:00,400 --> 00:03:03,530
+Mỗi cái trong số chúng đang van nài để có sự chú ý của tôi
+
+66
+00:03:03,530 --> 00:03:06,750
+Một nhà phát triển ứng dụng nào đó đã xây dựng một ứng dụng thú vị
+
+67
+00:03:06,750 --> 00:03:09,980
+và nói rằng, vui lòng hãy dùng tôi, hãy click tôi
+
+68
+00:03:09,980 --> 00:03:11,680
+Tôi không là gì cả nếu không có bạn
+
+69
+00:03:11,680 --> 00:03:14,920
+Con người chúng ta làm cho máy tính 
+
+70
+00:03:14,920 --> 00:03:16,360
+bắt đầu làm việc gì đó
+
+71
+00:03:16,360 --> 00:03:18,970
+và cái này vẫn ở yên đó cho đến khi
+
+72
+00:03:18,970 --> 00:03:20,600
+tôi bảo nó làm gì đó
+
+73
+00:03:20,600 --> 00:03:23,158
+Bây giờ, whoa!
+
+74
+00:03:23,158 --> 00:03:24,106
+Whoa.
+
+75
+00:03:24,106 --> 00:03:25,900
+Hy vọng là nó vẫn ổn
+
+76
+00:03:25,900 --> 00:03:26,400
+Yeah.
+
+77
+00:03:26,400 --> 00:03:28,530
+Có vẻ ổn
+
+78
+00:03:28,530 --> 00:03:30,510
+Bị va đập nhưng không sao cả
+
+79
+00:03:30,510 --> 00:03:33,910
+Ai cũng có thể dùng những thứ này đúng không?
+
+80
+00:03:33,910 --> 00:03:38,472
+Họ nói thậm chí động vật cũng có thể dùng một cái điện thoại thông minh của Macintosh
+
+81
+00:03:38,472 --> 00:03:40,180
+Vì thế bạn không cần phải là một lập trình viên
+
+82
+00:03:40,180 --> 00:03:43,790
+nhưng để thứ này làm điều bạn muốn
+
+83
+00:03:43,790 --> 00:03:45,650
+bạn cần học một ngôn ngữ khác
+
+84
+00:03:45,650 --> 00:03:48,870
+Ta cần học ngôn ngữ của các chỉ thị
+
+85
+00:03:48,870 --> 00:03:50,000
+để nói cho nó biết cần phải làm gì
+
+86
+00:03:50,000 --> 00:03:51,560
+Đó là điều ta sẽ làm
+
+87
+00:03:51,560 --> 00:03:53,550
+Ta sẽ học cách nói chuyện với nó
+
+88
+00:03:53,550 --> 00:03:54,540
+Yo!
+
+89
+00:03:54,540 --> 00:03:56,140
+Vì nó đang hỏi ta một câu hỏi
+
+90
+00:03:56,140 --> 00:03:59,880
+và ta phải đưa ra câu trả lời
+
+91
+00:03:59,880 --> 00:04:01,625
+Vậy thì, một lập trình viên là gì?
+
+92
+00:04:01,625 --> 00:04:05,070
+Lập trình viên là người viết chương trình
+
+93
+00:04:05,070 --> 00:04:08,000
+chương trình là một tập các chỉ lệnh
+
+94
+00:04:08,000 --> 00:04:11,400
+nói cho những thứ này rằng chúng
+

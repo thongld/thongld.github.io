@@ -1,0 +1,1341 @@
+1
+00:00:00,008 --> 00:00:04,040
+Các anh cứ để nhạc chạy được không?
+
+2
+00:00:07,942 --> 00:00:10,845
+Các anh bật to hơn 
+cho không khí sôi động tí nhé?
+
+3
+00:00:10,845 --> 00:00:11,846
+>> Tiếng to quá.
+
+4
+00:00:11,846 --> 00:00:13,514
+>> Thế được rồi.
+
+5
+00:00:19,420 --> 00:00:20,774
+>> OK, chúng ta sẽ
+lắng nghe nhịp
+
+6
+00:00:20,774 --> 00:00:21,999
+và vỗ tay theo nhịp nhé.
+
+7
+00:00:25,760 --> 00:00:26,594
+>> OK.
+
+8
+00:00:26,594 --> 00:00:27,361
+Được đó.
+
+9
+00:00:30,464 --> 00:00:31,632
+Các bạn làm tốt lắm.
+
+10
+00:00:31,632 --> 00:00:32,333
+Được rồi.
+
+11
+00:00:32,333 --> 00:00:32,833
+We're good.
+
+12
+00:00:32,833 --> 00:00:33,634
+Cảm ơn các bạn.
+
+13
+00:00:33,634 --> 00:00:34,869
+Các anh tắt nhạc hộ với.
+
+14
+00:00:34,869 --> 00:00:36,303
+Okay, stop the music.
+
+15
+00:00:36,303 --> 00:00:36,803
+Cảm ơn.
+
+16
+00:00:38,300 --> 00:00:39,049
+Các anh bật hộ
+
+17
+00:00:39,049 --> 00:00:40,141
+máy chiếu lên nhé?
+Cảm ơn.
+
+18
+00:00:42,243 --> 00:00:43,508
+>> Vừa rồi là phần
+sôi động nhất
+
+19
+00:00:43,508 --> 00:00:45,734
+trong chủ đề phần mềm doanh nghiệp,
+
+20
+00:00:45,734 --> 00:00:48,223
+từ nay về sau chỉ
+càng buồn ngủ hơn thôi.
+
+21
+00:00:48,223 --> 00:00:51,870
+>> Cảm ơn các anh
+về đoạn nhạc mở đầu,
+
+22
+00:00:51,870 --> 00:00:53,320
+tập luyện bài bản đấy,
+cảm ơn nhé.
+
+23
+00:00:54,555 --> 00:00:57,381
+Chém đến đâu hay đến đấy.
+
+24
+00:00:57,381 --> 00:00:58,600
+very good.
+
+25
+00:00:58,600 --> 00:01:01,744
+Tôi là Aaron Levie, CEO và
+nhà đồng sáng lập của Box.
+
+26
+00:01:01,744 --> 00:01:06,078
+Chào mừng các bạn
+đến với bài thuyết trình
+
+27
+00:01:06,078 --> 00:01:11,570
+về Cách xây dựng công ty
+phần mềm doanh nghiệp.
+
+28
+00:01:11,570 --> 00:01:13,350
+Đó là khóa học
+
+29
+00:01:13,350 --> 00:01:16,110
+các bạn đang học đúng không?
+
+30
+00:01:16,110 --> 00:01:17,378
+Không à? Thế cũng không sao.
+
+31
+00:01:18,946 --> 00:01:20,750
+Nhiệm vụ của tôi hôm nay
+
+32
+00:01:20,750 --> 00:01:21,820
+là cố gắng
+
+33
+00:01:21,820 --> 00:01:25,210
+thuyết phục các bạn rằng
+tất cả những người đã thuyết trình
+
+34
+00:01:25,210 --> 00:01:28,040
+trong toàn bộ khóa học này
+đều sai, rằng bạn
+
+35
+00:01:28,040 --> 00:01:30,060
+thực sự muốn xây dựng một
+công ty phần mềm doanh nghiệp.
+
+36
+00:01:30,060 --> 00:01:31,620
+Hy vọng rằng
+
+37
+00:01:31,620 --> 00:01:33,900
+sau khi học xong bài này,
+các bạn sẽ hiểu được vì sao
+
+38
+00:01:33,900 --> 00:01:37,740
+làm việc trong lĩnh vực
+doanh nghiệp rất tuyệt vời.
+
+39
+00:01:37,740 --> 00:01:40,570
+Các bạn cũng sẽ hiểu
+rằng không phải cứ
+
+40
+00:01:40,570 --> 00:01:42,710
+dấn thân vào lĩnh vực 
+xây dựng sản phẩm tiêu dùng
+
+41
+00:01:42,710 --> 00:01:44,300
+là thú vị này nọ.
+
+42
+00:01:44,300 --> 00:01:45,520
+Bạn sẽ nhận ra
+cái mình muốn làm
+
+43
+00:01:45,520 --> 00:01:47,000
+là xây dựng phần mềm
+doanh nghiệp.
+
+44
+00:01:47,000 --> 00:01:49,260
+Ai muốn xây dựng công ty
+phần mềm doanh nghiệp nào?
+
+45
+00:01:49,260 --> 00:01:50,230
+Rất tốt.
+
+46
+00:01:50,230 --> 00:01:51,420
+Cảm ơn các bạn 
+rất nhiều.
+
+47
+00:01:51,420 --> 00:01:53,782
+Mong rằng khi chúng ta
+bình chọn lại lúc cuối giờ,
+
+48
+00:01:53,782 --> 00:01:56,740
+số lượng cánh tay
+vừa rồi sẽ không giảm đi.
+
+49
+00:01:56,740 --> 00:01:59,890
+Thực ra đấy là
+mục tiêu duy nhất
+
+50
+00:01:59,890 --> 00:02:01,070
+của tôi lúc này.
+
+51
+00:02:01,070 --> 00:02:04,380
+Hôm nay tôi sẽ 
+trình bày về ba thứ.
+
+52
+00:02:04,380 --> 00:02:07,780
+Thứ nhất là nói qua về
+
+53
+00:02:07,780 --> 00:02:08,980
+lịch sử hình thành Box.
+
+54
+00:02:08,980 --> 00:02:10,980
+Vì khi mới thành lập công ty,
+chúng tôi không nhận ra
+
+55
+00:02:10,980 --> 00:02:13,960
+mình muốn xây dựng phần mềm
+doanh nghiệp. Nên tôi muốn
+
+56
+00:02:13,960 --> 00:02:16,310
+nói qua vì sao chúng tôi
+lại quyết định theo đuổi
+
+57
+00:02:16,310 --> 00:02:18,880
+nhóm khách hàng doanh nghiệp
+và công việc của chúng tôi hiện tại.
+
+58
+00:02:18,880 --> 00:02:20,350
+Sau đó tôi sẽ nói qua
+
+59
+00:02:20,350 --> 00:02:22,050
+về những yếu tố chính
+
+60
+00:02:22,050 --> 00:02:26,600
+đã thay đổi trong lĩnh vực
+phần mềm doanh nghiệp
+
+61
+00:02:26,600 --> 00:02:28,880
+khiến cho việc khởi nghiệp
+ở lĩnh vực này trở nên khả thi.
+
+62
+00:02:28,880 --> 00:02:30,360
+Cuối cùng, tôi sẽ
+trình bày về
+
+63
+00:02:30,360 --> 00:02:34,420
+một số xu hướng hiện nay
+các bạn có thể tận dụng,
+
+64
+00:02:34,420 --> 00:02:37,770
+làm sao để nhận diện
+các xu hướng này và 
+
+65
+00:02:37,770 --> 00:02:39,860
+cách thức tự xây dựng một
+công ty phần mềm doanh nghiệp.
+
+66
+00:02:41,410 --> 00:02:44,760
+Mong rằng đây sẽ là những
+lời khuyên hữu ích, thiết thực.
+
+67
+00:02:44,760 --> 00:02:46,890
+Nhân tiện nhắc trước
+với các bạn là giọng tôi
+
+68
+00:02:46,890 --> 00:02:48,848
+bị thế này vì mấy ngày 
+vừa qua tôi phải nói rất nhiều.
+
+69
+00:02:48,848 --> 00:02:51,600
+Mong rằng tôi vẫn nói 
+được đến phần thứ ba.
+
+70
+00:02:51,600 --> 00:02:55,120
+Chúng ta sẽ xem xem tôi
+còn nói được đến 
+
+71
+00:02:55,120 --> 00:02:57,520
+lúc ấy không. Tôi sẽ tạm dừng
+nhiều lần để uống nước
+
+72
+00:02:57,520 --> 00:02:59,300
+nên xin lỗi các bạn
+trước nhé.
+
+73
+00:02:59,300 --> 00:03:01,420
+Xây dựng phần mềm
+doanh nghiệp
+
+74
+00:03:01,420 --> 00:03:03,020
+sẽ là chủ đề của
+buổi thuyết trình hôm nay.
+
+75
+00:03:03,020 --> 00:03:05,668
+Sau đây là một vài
+thống kê tổng quan về Box.
+
+76
+00:03:05,668 --> 00:03:07,884
+Chúng tôi có khoảng
+240 nghìn doanh nghiệp
+
+77
+00:03:07,884 --> 00:03:09,080
+khách hàng.
+
+78
+00:03:09,080 --> 00:03:12,402
+Có hơn 27 triệu người dùng
+đã mua ứng dụng Box
+
+79
+00:03:12,402 --> 00:03:15,723
+cho công ty và sử dụng
+với tư cách cá nhân.
+
+80
+00:03:15,723 --> 00:03:18,550
+99% các doanh nghiệp trong
+bảng xếp hạng Fortune 500 sử dụng Box.
+
+81
+00:03:18,550 --> 00:03:21,340
+Thật không may, 1% còn lại là Microsoft.
+
+82
+00:03:21,340 --> 00:03:23,539
+Có vẻ họ không muốn
+mua sản phẩm của chúng tôi.
+
+83
+00:03:23,539 --> 00:03:24,930
+So.
+
+84
+00:03:24,930 --> 00:03:27,452
+Chúng tôi sẽ phải nỗ lực
+hơn một chút.
+
+85
+00:03:27,452 --> 00:03:30,630
+Nhưng đây chắc chắn
+là những con số thông kê ấn tượng.
+
+86
+00:03:30,630 --> 00:03:33,050
+Rất nhiều người dùng
+đã mua ứng dụng Box
+
+87
+00:03:33,050 --> 00:03:34,870
+cho doanh nghiệp của họ,
+và có nhiều 
+
+88
+00:03:34,870 --> 00:03:38,120
+tổ chức lớn cũng đang 
+sử dụng sản phẩm này.
+
+89
+00:03:38,120 --> 00:03:41,980
+Khách hàng của chúng tôi
+đến từ đa ngành nghề,
+
+90
+00:03:41,980 --> 00:03:45,290
+từ sản xuất, sản phẩm
+tiêu dùng, đến những công ty
+
+91
+00:03:45,290 --> 00:03:45,910
+như General Electric.
+
+92
+00:03:46,940 --> 00:03:49,960
+Stanford Healthcare
+còn sử dụng sản phẩm này
+
+93
+00:03:49,960 --> 00:03:52,370
+vì mục đích hợp tác
+trong ngành y tế
+
+94
+00:03:52,370 --> 00:03:53,600
+cũng như nghiên cứu.
+
+95
+00:03:53,600 --> 00:03:57,510
+Ngoài các ngành y tế,
+truyền thông và sản xuất
+
+96
+00:03:57,510 --> 00:03:58,740
+chúng tôi còn phục vụ
+
+97
+00:03:58,740 --> 00:03:59,997
+rất nhiều công ty ở
+nhiều ngành công nghiệp khác.
+
+98
+00:03:59,997 --> 00:04:02,660
+Câu hỏi là: làm thế nào chúng tôi
+phát triển được như hiện tại?
+
+99
+00:04:02,660 --> 00:04:04,902
+Ban đầu chúng tôi 
+thành lập công ty không 
+
+100
+00:04:04,902 --> 00:04:06,982
+phải vì mục đích xây dựng 
+phần mềm doanh nghiệp,
+
+101
+00:04:06,982 --> 00:04:09,780
+dù đó lại là công việc
+hiện tại của chúng tôi.
+
+102
+00:04:09,780 --> 00:04:12,430
+So when we started the
+product, so
+
+103
+00:04:12,430 --> 00:04:14,070
+Chúng tôi triển khai 
+công ty vào năm 2005.
+
+104
+00:04:14,070 --> 00:04:17,740
+Thực ra chúng tôi đã lên ý tưởng này
+hồi học đại học năm 2004.
+
+105
+00:04:17,740 --> 00:04:21,760
+Có ai ở đây đã dùng
+Internet năm 2004 chưa?
+
+106
+00:04:21,760 --> 00:04:22,260
+Rất tốt.
+
+107
+00:04:23,910 --> 00:04:25,440
+Tôi không biết 
+
+108
+00:04:26,550 --> 00:04:29,750
+dân 8x, 9x thời ấy
+đã dùng Internet rồi cơ đấy.
+
+109
+00:04:29,750 --> 00:04:30,260
+Xin lỗi.
+
+110
+00:04:30,260 --> 00:04:30,971
+Không đùa về
+tuổi tác nữa.
+
+111
+00:04:30,971 --> 00:04:31,772
+Quay lại vấn đề chính.
+
+112
+00:04:31,772 --> 00:04:34,959
+Chắc các bạn nhớ
+vào năm 2004 trên Internet
+
+113
+00:04:34,959 --> 00:04:36,377
+cũng không có nhiều thứ
+để làm lắm.
+
+114
+00:04:36,377 --> 00:04:37,629
+Thực ra nó khá là
+chán đúng không?
+
+115
+00:04:38,650 --> 00:04:40,160
+Thời ấy chưa có Facebook,
+
+116
+00:04:40,160 --> 00:04:42,220
+chắc chắn là chưa có
+Snapchat.
+
+117
+00:04:42,220 --> 00:04:43,680
+Bạn không có nhiều
+dịch vụ để sử dụng,
+
+118
+00:04:43,680 --> 00:04:46,230
+bạn không thể gửi những
+tin nhắn hay tranh ảnh
+
+119
+00:04:46,230 --> 00:04:47,220
+biến mất chỉ trong vòng 15 giây,
+
+120
+00:04:47,220 --> 00:04:49,090
+vì bạn còn chẳng có
+điện thoại di động mà gửi.
+
+121
+00:04:50,660 --> 00:04:53,470
+Vào năm 2004, Internet không có gì mấy.
+
+122
+00:04:53,470 --> 00:04:56,090
+Về cơ bản thì Internet
+hồi ấy trông như thế này.
+
+123
+00:04:56,090 --> 00:04:59,240
+Một vùng hoang mạc cằn cỗi,
+
+124
+00:04:59,240 --> 00:05:01,770
+để tôi giải thích cho các bạn,
+
+125
+00:05:01,770 --> 00:05:05,049
+con lạc đà vui vẻ là Google
+còn con lạc đà buồn bã là Yahoo!
+
+126
+00:05:05,049 --> 00:05:07,677
+Đây chính xác là
+
+127
+00:05:07,677 --> 00:05:11,115
+Internet năm 2004.
+
+128
+00:05:11,115 --> 00:05:13,240
+Yahoo! giờ cũng cải tiến
+nhiều rồi nhưng
+
+129
+00:05:13,240 --> 00:05:14,300
+vào giữa những năm 2000
+
+130
+00:05:14,300 --> 00:05:16,360
+thì họ vẫn đang nỗ lực
+tìm kiếm một lối đi,
+
+131
+00:05:16,360 --> 00:05:19,500
+còn Google thì đang dần
+thống trị cả thế giới.
+
+132
+00:05:19,500 --> 00:05:22,300
+Nhưng cả thế giới thì
+cũng chỉ ở mức độ như vậy.
+
+133
+00:05:22,300 --> 00:05:25,403
+Năm 2004 khi học đại học,
+chúng tôi nhận ra 
+
+134
+00:05:25,403 --> 00:05:27,263
+một điều có thể
+
+135
+00:05:27,263 --> 00:05:28,441
+không đúng với ngày nay,
+
+136
+00:05:28,441 --> 00:05:31,530
+nhưng khi ấy việc chia sẻ
+file dữ liệu rất khó khăn.
+
+137
+00:05:31,530 --> 00:05:35,960
+Ngày nay việc ấy 
+vô cùng đơn giản, nhưng nếu
+
+138
+00:05:35,960 --> 00:05:39,730
+bạn quay ngược về mốc
+10 năm trước, 
+
+139
+00:05:39,730 --> 00:05:40,390
+việc chuyển dữ liệu qua
+hệ thống mạng của công ty
+
+140
+00:05:40,390 --> 00:05:42,755
+nếu không tốn kém thì cũng rất khó khăn.
+
+141
+00:05:42,755 --> 00:05:44,870
+Lúc ấy tôi đang
+đi thực tập,
+
+142
+00:05:44,870 --> 00:05:49,380
+và hầu hết công việc
+có sử dụng đến dữ liệu
+
+143
+00:05:49,380 --> 00:05:53,080
+là sao chép các trang
+giấy được in ra
+
+144
+00:05:53,080 --> 00:05:54,160
+rồi cất vào tủ.
+
+145
+00:05:55,570 --> 00:05:56,550
+Đấy là nhiệm vụ
+
+146
+00:05:56,550 --> 00:05:59,990
+của các thực tập sinh không
+theo ngành khoa học máy tính.
+
+147
+00:06:01,410 --> 00:06:03,595
+Tôi rất giỏi sao chép giấy tờ.
+
+148
+00:06:03,595 --> 00:06:06,640
+Không may là giờ, kỹ năng ấy
+
+149
+00:06:06,640 --> 00:06:08,045
+không còn hữu ích lắm.
+
+150
+00:06:08,045 --> 00:06:10,060
+Nhưng hồi đó chia sẻ
+dữ liệu rất khó khăn.
+
+151
+00:06:10,060 --> 00:06:11,980
+Trong lớp học tôi 
+cũng phải
+
+152
+00:06:11,980 --> 00:06:13,950
+liên tục làm việc với
+các sinh viên khác,
+
+153
+00:06:13,950 --> 00:06:15,370
+và để gửi file cho họ
+cũng rất khó khăn.
+
+154
+00:06:17,550 --> 00:06:18,860
+Sau đó tôi học
+ở Đại học Nam California.
+
+155
+00:06:18,860 --> 00:06:22,560
+Ở đây họ cấp cho sinh viên 50 MB
+để lưu trữ thông tin
+
+156
+00:06:22,560 --> 00:06:24,010
+trên tài khoản email.
+
+157
+00:06:24,010 --> 00:06:24,920
+50 MB.
+
+158
+00:06:24,920 --> 00:06:27,760
+Bạn chỉ chứa được
+1 file là cùng.
+
+159
+00:06:27,760 --> 00:06:30,210
+Mà nó còn tự động 
+xóa dữ liệu 6 tháng một lần.
+
+160
+00:06:32,030 --> 00:06:34,390
+Tôi không biết hồi ấy ai
+quản lý công nghệ thông tin
+
+161
+00:06:34,390 --> 00:06:36,520
+nhưng chắc chắn là họ
+không mua ổ cứng.
+
+162
+00:06:36,520 --> 00:06:39,320
+Vậy hồi ấy việc lưu trữ
+và chia sẻ file
+
+163
+00:06:39,320 --> 00:06:39,880
+rất khó khăn.
+
+164
+00:06:39,880 --> 00:06:41,260
+Thế là chúng tôi bảo nhau:
+
+165
+00:06:41,260 --> 00:06:43,380
+tại sao chúng ta không
+đơn giản hóa việc lưu trữ
+
+166
+00:06:43,380 --> 00:06:44,320
+và chia sẻ dữ liệu ở mọi nơi?
+
+167
+00:06:44,320 --> 00:06:46,100
+Chúng tôi nghĩ ra 1 ý tưởng
+
+168
+00:06:46,100 --> 00:06:48,230
+mà hồi đó gọi là box.net.
+
+169
+00:06:48,230 --> 00:06:51,380
+Và chúng tôi nhận thấy
+có rất nhiều yếu tố
+
+170
+00:06:51,380 --> 00:06:55,040
+đã thay đổi trong 
+thế giới phần mềm.
+
+171
+00:06:55,040 --> 00:06:57,720
+Yếu tố thứ nhất là: 
+chi phí lưu trữ
+
+172
+00:06:57,720 --> 00:06:59,010
+đang giảm đáng kể.
+
+173
+00:06:59,010 --> 00:07:02,490
+Trong lĩnh vực của chúng tôi,
+cứ cách 1-2 năm
+
+174
+00:07:02,490 --> 00:07:05,450
+dung lượng lưu trữ dữ liệu của ổ cứng
+
+175
+00:07:05,450 --> 00:07:07,122
+lại tăng gấp đôi.
+
+176
+00:07:07,122 --> 00:07:12,390
+Vậy điều mà 2 hay 3
+năm trước còn tốn kém
+
+177
+00:07:12,390 --> 00:07:15,040
+bỗng nhiên trở nên thiết thực
+bởi chi phí
+
+178
+00:07:15,040 --> 00:07:16,580
+điện toán và lưu trữ đã giảm xuống.
+
+179
+00:07:18,150 --> 00:07:21,076
+Ngày càng xuất hiện nhiều
+trình duyệt và mạng lưới mạnh hơn
+
+180
+00:07:21,076 --> 00:07:24,618
+như Firefox, người ta
+dùng Internet
+
+181
+00:07:24,618 --> 00:07:27,159
+tốc độ cao hơn 
+cả ở nhà
+
+182
+00:07:27,159 --> 00:07:28,840
+và ở trên lớp.
+
+183
+00:07:28,840 --> 00:07:30,810
+Người dùng có nhu cầu
+lưu trữ và chia sẻ
+
+184
+00:07:30,810 --> 00:07:32,400
+thông tin ở nhiều
+chỗ hơn.
+
+185
+00:07:32,400 --> 00:07:34,740
+Vậy đây là 3 yếu tố
+
+186
+00:07:34,740 --> 00:07:36,300
+đã xuất hiện 
+một cách đột ngột.
+
+187
+00:07:36,300 --> 00:07:38,490
+Tôi sẽ nói kỹ về những
+yếu tố này sau
+
+188
+00:07:38,490 --> 00:07:40,850
+khi đưa ra các lời khuyên
+cho các bạn. 
+
+189
+00:07:40,850 --> 00:07:44,210
+Nhưng điều đầu tiên các bạn
+cần nhớ là: luôn luôn
+
+190
+00:07:44,210 --> 00:07:46,180
+phát hiện những biến đổi
+trong công nghệ.
+
+191
+00:07:46,180 --> 00:07:48,823
+Bởi thị trường nào có một
+yếu tố quan trọng thay đổi,
+
+192
+00:07:48,823 --> 00:07:51,196
+dù là nguyên liệu thô
+
+193
+00:07:51,196 --> 00:07:54,180
+hay các yếu tố thuận lợi,
+thì thị trường ấy
+
+194
+00:07:54,180 --> 00:07:56,167
+chuẩn bị trải qua
+sự biến đổi to lớn.
+
+195
+00:07:56,167 --> 00:07:59,553
+Chúng tôi rất may mắn
+
+196
+00:07:59,553 --> 00:08:02,846
+là nhu cầu lưu trữ 
+dữ liệu trên mạng 
+
+197
+00:08:02,846 --> 00:08:05,133
+ngày càng lên cao,
+và việc này càng được
+
+198
+00:08:05,133 --> 00:08:09,560
+đơn giản hóa và
+chi phí cũng giảm nhanh chóng.
+
+199
+00:08:09,560 --> 00:08:11,918
+Vậy chúng tôi quyết định
+phát triển một 
+
+200
+00:08:11,918 --> 00:08:14,219
+phiên bản sơ khai của Box
+có tên là box.net.
+
+201
+00:08:14,219 --> 00:08:17,800
+Ý tưởng của chúng tôi là đơn giản hóa
+tối đa việc chia sẻ dữ liệu.
+
+202
+00:08:17,800 --> 00:08:20,380
+Và ý tưởng này
+đã thành công.
+
+203
+00:08:20,380 --> 00:08:22,320
+Chúng tôi được một người
+tên là Mark Cuban đầu tư khởi điểm.
+
+204
+00:08:23,670 --> 00:08:25,110
+Thời điểm này chưa có
+Shark Tank, nhưng
+
+205
+00:08:25,110 --> 00:08:26,520
+vụ đầu tư cũng khá giống
+chương trình ấy.
+
+206
+00:08:26,520 --> 00:08:29,120
+Khi đã có vốn, 
+chúng tôi quyết định
+
+207
+00:08:29,120 --> 00:08:30,790
+đây sẽ là hành trình
+đầy thú vị.
+
+208
+00:08:30,790 --> 00:08:33,060
+Chúng tôi sẽ bỏ học đại học.
+
+209
+00:08:33,060 --> 00:08:34,450
+Chúng tôi sẽ chuyển đến
+sống ở Bay Area,
+
+210
+00:08:34,450 --> 00:08:35,510
+một cuộc sống tuyệt vời đang chờ đón.
+
+211
+00:08:36,780 --> 00:08:38,460
+And when you drop out of
+college.
+
+212
+00:08:38,460 --> 00:08:40,130
+Có ai ở đây bỏ học không?
+
+213
+00:08:40,130 --> 00:08:41,565
+Tốt, đừng bỏ học.
+
+214
+00:08:41,565 --> 00:08:44,340
+Nói về bỏ học đại học,
+người ta thường
+
+215
+00:08:44,340 --> 00:08:46,090
+hình dung nó rất tuyệt vời,
+
+216
+00:08:46,090 --> 00:08:48,750
+Bill Gates cũng bỏ học cơ mà.
+
+217
+00:08:48,750 --> 00:08:50,012
+Bỏ học ta sẽ được như
+Bill Gates.
+
+218
+00:08:50,012 --> 00:08:51,676
+Hay Michael Dell,
+cuộc đời ta
+
+219
+00:08:51,676 --> 00:08:53,695
+sẽ thú vị như Michael Dell,
+
+220
+00:08:53,695 --> 00:08:55,309
+hay Steve Jobs.
+
+221
+00:08:55,309 --> 00:08:56,970
+Người ta hình dung 
+như vậy đấy.
+
+222
+00:08:56,970 --> 00:08:59,270
+Nhưng không ai nhớ rằng
+gã này cũng
+
+223
+00:08:59,270 --> 00:08:59,890
+bỏ học đại học.
+
+224
+00:09:01,840 --> 00:09:05,160
+Vậy, bỏ học không có nghĩa
+
+225
+00:09:05,160 --> 00:09:06,085
+là bạn sẽ thành công.
+
+226
+00:09:06,085 --> 00:09:09,290
+Mà quan trọng là bạn làm gì.
+
+227
+00:09:09,290 --> 00:09:11,130
+Thực ra tôi cũng không biết
+tay này có bỏ học không.
+
+228
+00:09:12,710 --> 00:09:14,510
+Nhưng trông có vẻ là
+hắn phải bỏ học.
+
+229
+00:09:18,400 --> 00:09:19,787
+Tôi xin lỗi nếu đây
+là người thân của ai nhé.
+
+230
+00:09:19,787 --> 00:09:21,261
+Đây chỉ là bức ảnh
+vui trên mạng thôi.
+
+231
+00:09:21,261 --> 00:09:22,629
+So.
+
+232
+00:09:22,629 --> 00:09:24,744
+Vậy chúng tôi quyết định
+
+233
+00:09:24,744 --> 00:09:25,280
+sẽ bỏ học.
+
+234
+00:09:25,280 --> 00:09:27,670
+Ban đầu chúng tôi
+chuyển đến Berkley
+
+235
+00:09:27,670 --> 00:09:30,245
+rồi sau đó đến Palo Alto.
+
+236
+00:09:30,245 --> 00:09:33,427
+Chúng tôi quyết định
+sẽ cho người dùng sử dụng
+
+237
+00:09:33,427 --> 00:09:34,100
+sản phẩm miễn phí.
+
+238
+00:09:34,100 --> 00:09:36,920
+Chúng tôi có hàng
+trăm ngàn người dùng
+
+239
+00:09:36,920 --> 00:09:39,470
+đăng ký sử dụng 
+sản phẩm mỗi tháng.
+
+240
+00:09:39,470 --> 00:09:42,533
+Nếu bạn vào box.net,
+
+241
+00:09:42,533 --> 00:09:45,893
+bạn sẽ được tặng 1 GB miễn phí
+
+242
+00:09:45,893 --> 00:09:47,986
+để lưu trữ file,
+
+243
+00:09:47,986 --> 00:09:51,224
+vào năm 2006 thì 1 GB
+cũng khá nhiều đấy.
+
+244
+00:09:51,224 --> 00:09:53,097
+Nhưng chúng tôi bắt đầu
+có quá nhiều người dùng,
+
+245
+00:09:53,097 --> 00:09:56,099
+và chúng tôi cố gắng
+giải quyết vấn đề này.
+
+246
+00:09:56,099 --> 00:09:59,195
+Vậy chúng tôi đã gặp phải
+một vấn đề phổ biến
+
+247
+00:09:59,195 --> 00:10:02,220
+mà mọi công ty khởi nghiệp
+đều gặp phải, nhưng trong 
+
+248
+00:10:02,220 --> 00:10:05,534
+mô hình kinh doanh của chúng tôi
+thì vấn đề này lộ rất rõ.
+
+249
+00:10:05,534 --> 00:10:09,690
+Đó là sản phẩm của chúng tôi rất
+hữu ích và toàn diện cho khách hàng cá nhân,
+
+250
+00:10:09,690 --> 00:10:11,175
+nhưng lại quá nhỏ nhặt
+
+251
+00:10:11,175 --> 00:10:14,940
+cho khách hàng doanh nghiệp.
+
+252
+00:10:14,940 --> 00:10:18,800
+Chúng tôi xây dựng
+
+253
+00:10:18,800 --> 00:10:22,030
+rất nhiều tính năng mà
+người dùng có thể mua,
+
+254
+00:10:22,030 --> 00:10:24,070
+nhưng thường các cá nhân
+không cần đến tính năng ấy.
+
+255
+00:10:24,070 --> 00:10:25,020
+Còn với khách hàng doanh nghiệp,
+
+256
+00:10:25,020 --> 00:10:27,500
+tính năng bảo mật
+lại không đủ mạnh.
+
+257
+00:10:27,500 --> 00:10:30,310
+Chúng tôi không có đủ tính năng để đáp ứng
+
+258
+00:10:30,310 --> 00:10:32,220
+nhu cầu sử dụng dữ liệu
+của các doanh nghiệp.
+
+259
+00:10:32,220 --> 00:10:34,330
+Vậy về cơ bản, chúng tôi
+xây dựng thừa tính năng
+
+260
+00:10:34,330 --> 00:10:37,080
+cho khách hàng cá nhân và
+thiếu tính năng cho các doanh nghiệp.
+
+261
+00:10:37,080 --> 00:10:39,420
+Vậy là vào lúc đó,
+
+262
+00:10:39,420 --> 00:10:42,380
+chúng tôi cảm thấy
+
+263
+00:10:42,380 --> 00:10:45,090
+thật khó để tìm ra
+
+264
+00:10:45,090 --> 00:10:46,820
+một hướng đi cho công ty,
+
+265
+00:10:46,820 --> 00:10:47,890
+vậy nên chúng tôi
+phải ra quyết định.
+
+266
+00:10:47,890 --> 00:10:52,360
+Con đường chia hai ngả
+
+267
+00:10:52,360 --> 00:10:53,380
+và chúng tôi phải chọn
+
+268
+00:10:53,380 --> 00:10:55,090
+đi theo một ngả.
+
+269
+00:10:55,090 --> 00:11:00,760
+Lúc đó là nửa cuối năm 2006,
+
+270
+00:11:00,760 --> 00:11:02,970
+khi đó tôi 23 tuổi.
+
+271
+00:11:02,970 --> 00:11:04,150
+Bạn đồng sáng lập 
+của tôi 22 tuổi.
+
+272
+00:11:04,150 --> 00:11:07,625
+Đội ngũ sáng lập 
+còn trẻ tuổi hơn nữa
+
+273
+00:11:07,625 --> 00:11:09,540
+khi bọn tôi đồng loạt
+bỏ học đại học.
+
+274
+00:11:09,540 --> 00:11:14,365
+Vậy vào cuối năm 2006,
+đầu năm 2007, chúng tôi
+
+275
+00:11:14,365 --> 00:11:18,580
+mường tượng ra hai con đường,
+hai thế giới này rất khác nhau.
+
+276
+00:11:18,580 --> 00:11:21,150
+Nếu công ty hướng tới khách hàng cá nhân,
+
+277
+00:11:21,150 --> 00:11:23,280
+công việc sẽ rất vui.
+
+278
+00:11:23,280 --> 00:11:24,050
+And, you know?
+
+279
+00:11:24,050 --> 00:11:25,770
+Có thể tiệc tùng suốt ngày.
+
+280
+00:11:25,770 --> 00:11:27,902
+Mọi chuyện đều
+vô cùng thú vị.
+
+281
+00:11:27,902 --> 00:11:29,330
+Còn nhắm tới khách hàng doanh nghiệp
+
+282
+00:11:29,330 --> 00:11:32,900
+thì sẽ phải đấu lại
+những doanh nghiệp tên tuổi.
+
+283
+00:11:32,900 --> 00:11:34,700
+Mô hình này gần như
+
+284
+00:11:34,700 --> 00:11:35,730
+không đem lại lợi lộc gì.
+
+285
+00:11:35,730 --> 00:11:38,330
+Nhìn chung người ta không thích
+phần mềm doanh nghiệp.
+
+286
+00:11:38,330 --> 00:11:40,805
+Đó là hình dung của
+chúng tôi về
+
+287
+00:11:40,805 --> 00:11:43,260
+hai con đường này,
+và chúng tôi phải chọn
+
+288
+00:11:43,260 --> 00:11:44,340
+một trong hai thế giới.
+
+289
+00:11:45,440 --> 00:11:46,340
+Chúng tôi nhìn vào và bảo:
+
+290
+00:11:46,340 --> 00:11:48,170
+OK, con đường khách hàng
+cá nhân có vẻ vui,
+
+291
+00:11:48,170 --> 00:11:49,450
+còn con đường doanh nghiệp
+thì khó khăn quá.
+

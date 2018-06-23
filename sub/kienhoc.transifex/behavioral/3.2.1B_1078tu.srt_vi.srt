@@ -1,0 +1,469 @@
+1
+00:00:00,399 --> 00:00:05,780
+Hãy cùng tìm hiểu phương pháp thứ 2 
+để phân tích kết quả thí nghiệm
+
+2
+00:00:05,780 --> 00:00:08,000
+ gọi là phương pháp hồi quy.
+
+3
+00:00:08,000 --> 00:00:10,719
+Khi nào thì ta sử dụng hồi quy?
+
+4
+00:00:10,719 --> 00:00:15,969
+Hồi quy đặc biệt hữu ích trong 2 trường hợp sau.
+
+5
+00:00:15,969 --> 00:00:21,580
+Thứ nhất, có rất nhiều biến số mà
+ ta nghĩ là gây ra kết quả
+
+6
+00:00:21,580 --> 00:00:26,680
+và thứ hai, khi các biến số này không đi cùng nhau
+
+7
+00:00:26,680 --> 00:00:29,859
+nhưng lại tạo ra chuỗi các biến liên tiếp.
+
+8
+00:00:29,859 --> 00:00:36,710
+Khi xét đến phương pháp ANOVA, ta đã lấy ví dụ 
+về ảnh hưởng của cơ cấu "vài xu lẻ mỗi ngày"
+
+9
+00:00:36,710 --> 00:00:38,900
+lên việc chi tiêu.
+
+10
+00:00:38,900 --> 00:00:42,120
+Ta đã nói là người tham gia có thể
+ được xếp vào điều kiện 
+
+11
+00:00:42,120 --> 00:00:48,880
+khi chi phí nằm ở dạng "vài xu lẻ" hoặc hiển hiện như
+một giá trị tựu chung cộng gộp.
+
+12
+00:00:48,880 --> 00:00:53,260
+Đó là biến số duy nhất giải thích cho khoản chi tiêu.
+
+13
+00:00:53,260 --> 00:00:56,890
+Tuy thế, ta còn phải suy xét đến trường hợp ta phải
+dùng đến nhiều biến
+
+14
+00:00:56,890 --> 00:00:58,990
+để dự đoán chi tiêu.
+
+15
+00:00:58,990 --> 00:01:02,030
+Đây là lúc hồi quy trở nên có ích.
+
+16
+00:01:02,030 --> 00:01:07,850
+Trong trường hợp "vài xu lẻ mỗi ngày", 
+biến số ở đây có tính phân loại.
+
+17
+00:01:07,850 --> 00:01:11,590
+Nói cách khác, bạn chỉ có thể ở trong điều kiện "vài xu lẻ"
+
+18
+00:01:11,590 --> 00:01:13,620
+hoặc giá trị tựu chung.
+
+19
+00:01:13,620 --> 00:01:15,220
+Một trong 2 điều kiện đó thôi.
+
+20
+00:01:15,220 --> 00:01:17,321
+Hãy cùng xem 1 ví dụ khác.
+
+21
+00:01:17,321 --> 00:01:21,100
+Bạn đang nghiên cứu ảnh hưởng
+ của mức hạn chế tín dụng
+
+22
+00:01:21,100 --> 00:01:26,640
+đối với sự bằng lòng khi chi tiêu.
+
+23
+00:01:26,640 --> 00:01:30,160
+Hạn chế tín dụng không phải là 1 biến phân loại.
+
+24
+00:01:30,160 --> 00:01:32,040
+Nó là biến số liên tục.
+
+25
+00:01:32,040 --> 00:01:34,860
+Bạn có thể có tất cả các loại hạn chế tín dụng.
+
+26
+00:01:34,860 --> 00:01:40,230
+5000 đô, 1000 đô, 3600 đô.
+
+27
+00:01:40,230 --> 00:01:45,010
+Bất cứ giá trị nào cũng có thể là 
+mức hạn chế tín dụng của bạn
+
+28
+00:01:45,010 --> 00:01:48,130
+và đó là khi hồi quy đặc biệt hữu ích.
+
+29
+00:01:48,130 --> 00:01:54,640
+Bây giờ giả sử bạn đang làm một thí nghiệm.
+
+30
+00:01:54,640 --> 00:01:59,370
+Bạn thu thập số liệu về mức hạn chế tín dụng
+ của nhiều người.
+
+31
+00:01:59,370 --> 00:02:01,140
+Ta hãy gọi nó là x.
+
+32
+00:02:01,140 --> 00:02:06,580
+Ta có thể đo lường cùng ở những người đó một biến
+khác là y.
+
+33
+00:02:06,580 --> 00:02:10,779
+Ta hãy tưởng tượng nó là mức độ bằng lòng
+chi trả.
+
+34
+00:02:10,779 --> 00:02:15,400
+Bây giờ, với mỗi người, bạn có dữ liệu trên 2 bình diện.
+
+35
+00:02:15,400 --> 00:02:26,080
+Ví dụ, với người này, bạn biết đây là 
+hạn chế tín dụng của người đó
+
+36
+00:02:26,080 --> 00:02:30,739
+ còn đây là mức bằng lòng chi trả.
+
+37
+00:02:30,739 --> 00:02:35,249
+Hồi quy làm gì khi ta có số liệu từ những người này?
+
+38
+00:02:35,249 --> 00:02:39,690
+Nó sẽ cố gắng vẽ ra 1 đường thẳng mô tả đúng nhất 
+
+39
+00:02:39,690 --> 00:02:45,379
+mối quan hệ giữa x và y,
+
+40
+00:02:45,379 --> 00:02:48,349
+và trông giông giống thế này.
+
+41
+00:02:48,349 --> 00:02:52,060
+Đường này thể hiện điều gì?
+
+42
+00:02:52,060 --> 00:02:54,269
+Giả sử bạn có đường kẻ chấm này.
+
+43
+00:02:54,269 --> 00:02:58,469
+Như tôi đã nói, đường này 
+biểu thị quan hệ giữa x và y.
+
+44
+00:02:58,469 --> 00:03:08,439
+Tuy nhiên nếu nhìn vào bất cứ người nào ở đây, 
+dữ liệu thật của họ đi lệch với đường này.
+
+45
+00:03:08,439 --> 00:03:11,659
+Ta gọi đây là lỗi.
+
+46
+00:03:11,659 --> 00:03:15,809
+Mỗi người sẽ có 1 lỗi.
+
+47
+00:03:15,809 --> 00:03:22,290
+Ta có thể gom các lỗi này lại, bình phương lên,
+ và cộng lại với nhau.
+
+48
+00:03:22,290 --> 00:03:30,329
+Đường đúng nhất là đường mà 
+tổng các bình phương này là nhỏ nhất.
+
+49
+00:03:30,329 --> 00:03:34,769
+Như thế, thực tế thì hồi quy hoạt động thế nào?
+
+50
+00:03:34,769 --> 00:03:40,290
+Hồi quy là phương pháp chọn ra 1 đường
+ mà tổng của bình phương các lỗi
+
+51
+00:03:40,290 --> 00:03:41,719
+là nhỏ nhất.
+
+52
+00:03:41,719 --> 00:03:47,859
+Ta gọi đây là OLS (Ordinary Least Square), phương pháp lấy bình phương 
+nhỏ nhất đối với hồi quy.
+
+53
+00:03:47,859 --> 00:03:54,109
+Giờ đây khi ta đã có 1 đường như thế, 
+ta có thể dự đoán giá trị của y
+
+54
+00:03:54,109 --> 00:03:55,389
+dựa trên giá trị x.
+
+55
+00:03:55,389 --> 00:04:02,239
+Điều gì xảy ra nếu x là một giá trị mặc định?
+
+56
+00:04:02,239 --> 00:04:03,530
+Giá trị đó là đây.
+
+57
+00:04:03,530 --> 00:04:07,889
+Ta có thể vẽ ra 1 đường, và dự đoán
+
+58
+00:04:07,889 --> 00:04:11,670
+giá trị y sẽ như thế nào.
+
+59
+00:04:11,670 --> 00:04:16,180
+Đường hồi quy này được viết dưới dạng
+ 1 phương trình đơn giản
+
+60
+00:04:16,180 --> 00:04:18,199
+mà ta sẽ nói đến trong vài phút nữa.
+
+61
+00:04:18,199 --> 00:04:20,069
+Giờ hãy tưởng tượng tình huống này.
+
+62
+00:04:20,069 --> 00:04:23,950
+Điều gì xảy ra nếu x bằng 0?
+
+63
+00:04:23,950 --> 00:04:24,950
+Điều gì xảy ra ở điểm này?
+
+64
+00:04:24,950 --> 00:04:29,520
+Ta biết là vẫn còn một số chủ ý chi tiêu cơ bản
+
+65
+00:04:29,520 --> 00:04:35,151
+và chủ ý đó là cái mà ta gọi là
+
+66
+00:04:35,151 --> 00:04:37,639
+hệ số chặn.
+
+67
+00:04:37,639 --> 00:04:39,919
+Vậy a là gì?
+
+68
+00:04:39,919 --> 00:04:43,139
+a ở đây là hệ số chặn.
+
+69
+00:04:43,139 --> 00:04:47,210
+Nó là giá trị của y khi x bằng 0.
+
+70
+00:04:47,210 --> 00:04:51,060
+Còn b là độ dốc của đường này.
+
+71
+00:04:51,060 --> 00:04:55,870
+Đồng thời, đường hồi quy có thể thu được
+ thông qua phương trình này
+
+72
+00:04:55,870 --> 00:04:58,960
+y = a + bx.
+
+73
+00:04:58,960 --> 00:05:02,009
+Đó là hình dạng của 1 đường hồi quy.
+
+74
+00:05:02,009 --> 00:05:08,789
+Nếu ta có nhiều giá trị x, nhiều biến số 
+mà ta nghĩ là có thể giải thích cho y
+
+75
+00:05:08,789 --> 00:05:14,560
+thì đường hồi quy sẽ có chút phức tạp hơn.
+
+76
+00:05:14,560 --> 00:05:18,419
+Nhưng đây là dạng đơn giản nhất của đường hồi quy.
+
+77
+00:05:18,419 --> 00:05:21,050
+Vậy ta thấy gì từ nó?
+
+78
+00:05:21,050 --> 00:05:24,730
+Khi x bằng 0, mức hạn chế tín dụng bằng 0,
+
+79
+00:05:24,730 --> 00:05:27,530
+ nhưng vẫn có một số chủ ý chi tiêu cơ bản khác.
+
+80
+00:05:27,530 --> 00:05:28,530
+Ta gọi đó là a.
+
+81
+00:05:28,530 --> 00:05:34,449
+b là độ dốc, tức là ảnh hưởng 
+của mức hạn chế tín dụng
+
+82
+00:05:34,449 --> 00:05:35,540
+lên mức bằng lòng chi trả.
+
+83
+00:05:35,540 --> 00:05:42,550
+Độ dốc càng lớn, ví dụ nếu như đường hồi quy của tôi
+rất dốc,
+
+84
+00:05:42,550 --> 00:05:46,810
+thì khi tôi thêm 1 giá trị nhỏ vào x
+
+85
+00:05:46,810 --> 00:05:49,710
+ta sẽ thu được giá trị y cao hơn rất nhiều.
+
+86
+00:05:49,710 --> 00:05:57,729
+Nếu đường chỉ bằng phẳng hoặc dốc nhẹ 
+thì ảnh hưởng của x lên y rất ít.
+
+87
+00:05:57,729 --> 00:06:03,460
+Như ta đã nói, nếu có nhiều giá trị của x
+ thì đường hồi quy
+
+88
+00:06:03,460 --> 00:06:04,990
+sẽ có dạng thế này.
+
+89
+00:06:04,990 --> 00:06:12,310
+khi đó, y = a + b1.x1 + b2.x2
+
+90
+00:06:12,310 --> 00:06:18,189
+trong đó x1, x2 là các biến số khác nhau.
+
+91
+00:06:18,189 --> 00:06:21,289
+Cuối cùng, trong ví dụ mà ta đã xét,
+
+92
+00:06:21,289 --> 00:06:23,719
+y là một biến số liên tục.
+
+93
+00:06:23,719 --> 00:06:28,470
+Ta hỏi mọi người, khả năng bạn chi tiền
+ mua hàng là bao nhiêu?
+
+94
+00:06:28,470 --> 00:06:33,229
+Nhưng nếu giả sử biến số có tính phân loại.
+
+95
+00:06:33,229 --> 00:06:38,270
+Nếu ta thay đổi mức hạn chế tín dụng, 
+ta sẽ hỏi người ta rằng
+
+96
+00:06:38,270 --> 00:06:41,639
+bạn có mua sản phẩm ấy nữa không.
+
+97
+00:06:41,639 --> 00:06:47,020
+thường thì có thể có nhiều cấp độ, như nếu ta hỏi mọi người
+chọn A, B
+
+98
+00:06:47,020 --> 00:06:50,979
+hay C.
+ Trực giác sau phân tích hồi quy là giống nhau,
+
+99
+00:06:50,979 --> 00:06:54,830
+nhưng kiểu phân tích mà ta dùng
+
+100
+00:06:54,830 --> 00:06:58,220
+thì lại có biến đổi.
+
+101
+00:06:58,220 --> 00:07:01,270
+Nó được gọi là hồi quy logit.
+
+102
+00:07:01,270 --> 00:07:09,370
+Ta dùng hồi quy logit khi các giá trị x liên tục
+
+103
+00:07:09,370 --> 00:07:13,840
+nhưng biến phụ thuộc y là biến phân loại.
+
+104
+00:07:13,840 --> 00:07:20,830
+Tóm lại, hồi quy rất tiện dụng với dữ liệu 
+phức tạp và liên tục
+
+105
+00:07:20,830 --> 00:07:24,249
+với rất nhiều biến số đều giải thích
+ cho giá trị y nhất định.
+
+106
+00:07:24,249 --> 00:07:26,889
+Đó là một công cụ tuyệt vời.
+
+107
+00:07:26,889 --> 00:07:31,199
+Trong những bài tiếp theo, ta sẽ xem nhiều ví dụ
+
+108
+00:07:31,199 --> 00:07:35,650
+dùng phân tích hồi quy
+
+109
+00:07:35,650 --> 00:07:39,620
+cũng như phương pháp ANOVA, để đi đến kết luận.
+

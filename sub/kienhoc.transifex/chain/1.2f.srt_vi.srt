@@ -1,0 +1,612 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/maWGmeD4DYY
+
+1
+00:00:00,499 --> 00:00:03,340
+Vậy làm sao để đo lường chất lượng một dự báo?
+
+2
+00:00:03,340 --> 00:00:05,660
+Ta có thể nghĩ nó là một sự đánh đổi.
+
+3
+00:00:05,660 --> 00:00:08,130
+Và vậy, nếu tôi nghĩ về dự báo của mình ở đây--
+
+4
+00:00:08,130 --> 00:00:11,090
+và tôi có một đồ thị - trục hoành
+
+5
+00:00:11,090 --> 00:00:13,390
+biểu thị độ dự báo chính xác.
+
+6
+00:00:13,390 --> 00:00:17,380
+Vậy khi tôi tăng lên, ở đây nó trở nên chính xác hơn, phải không?
+
+7
+00:00:17,380 --> 00:00:20,150
+Và ở dưới đây thì ít chính xác hơn.
+
+8
+00:00:20,150 --> 00:00:23,690
+Và bạn có thể nghĩ tới chi phí ở trục tung.
+
+9
+00:00:23,690 --> 00:00:26,840
+Ta có thể nghĩ tới chi phí sai sót trong dự báo
+
+10
+00:00:26,840 --> 00:00:29,660
+Khi tôi tăng độ dự báo chính xác của mình,
+
+11
+00:00:29,660 --> 00:00:32,280
+tôi mong một số chi phí sẽ giảm xuống.
+
+12
+00:00:32,280 --> 00:00:36,040
+Đây là những chi phí phát sinh khi ta xư lí dự báo chất lượng thấp.
+
+13
+00:00:36,040 --> 00:00:40,660
+Làm lại, loại bỏ một số mặt hàng, xúc tiến các mặt hàng.
+
+14
+00:00:40,660 --> 00:00:42,630
+Nếu nhu cầu của tôi trở nên chính xác hơn, thì tôi
+
+15
+00:00:42,630 --> 00:00:46,060
+mong muốn có ít sản phẩm cũ hơn.
+
+16
+00:00:46,060 --> 00:00:47,790
+Tôi sẽ không phải giảm giá nhiều.
+
+17
+00:00:47,790 --> 00:00:51,010
+Vậy tôi có thể nghĩ tới một loạt các chi phí dự báo sai sót khác nhau
+
+18
+00:00:51,010 --> 00:00:53,520
+giảm đi khi tôi cải thiện
+
+19
+00:00:53,520 --> 00:00:59,070
+chất lượng độ dự báo chính xác của dự báo của mình.
+
+20
+00:00:59,070 --> 00:01:01,110
+Giờ, một mặt khác mà rất nhiều người 
+
+21
+00:01:01,110 --> 00:01:03,490
+không nghĩ tới, liệu có chi phí
+
+22
+00:01:03,490 --> 00:01:05,846
+cho dự báo chính xác hơn không?
+
+23
+00:01:05,846 --> 00:01:07,220
+Một số những thứ sau đây sẽ là
+
+24
+00:01:07,220 --> 00:01:09,790
+chi phí cho hệ thống được sử dụng.
+
+25
+00:01:09,790 --> 00:01:12,640
+Bạn sẽ có một hệ thống mắc hơn nhiều.
+
+26
+00:01:12,640 --> 00:01:16,000
+Nhưng thậm chí quan trọng hơn cả, sẽ luôn tồn tại một khía cạnh thời gian.
+
+27
+00:01:16,000 --> 00:01:18,230
+Tốn nhiều thời gian hơn để đưa ra dự báo này.
+
+28
+00:01:18,230 --> 00:01:20,470
+Vậy trong khi đưa ra dự báo đó lại xuất hiện sự trì hoãn.
+
+29
+00:01:20,470 --> 00:01:22,350
+Ta cũng tiêu tốn nhiều thời gian và công sức
+
+30
+00:01:22,350 --> 00:01:24,560
+hơn để đưa ra dự báo đó.
+
+31
+00:01:24,560 --> 00:01:27,880
+Cũng như khi tôi có các dự báo chính xác hơn
+
+32
+00:01:27,880 --> 00:01:31,380
+và dành nhiều thời gian hơn cho chúng, thì chúng thường trở nên bất ổn hơn
+
+33
+00:01:31,380 --> 00:01:32,330
+Chúng cứ nhảy xung quanh.
+
+34
+00:01:32,330 --> 00:01:34,140
+Chúng không bất định.
+
+35
+00:01:34,140 --> 00:01:36,470
+Vậy ý tưởng ở đây là,
+
+36
+00:01:36,470 --> 00:01:39,690
+có những chi phí cho việc dành quá nhiều thời gian - hay dành thời gian
+
+37
+00:01:39,690 --> 00:01:43,380
+thừa thải cho độ dự báo chính xác.
+
+38
+00:01:43,380 --> 00:01:46,690
+Về mặt ý tưởng, điều bạn muốn làm sẽ nằm đâu đó ở giữa.
+
+39
+00:01:46,690 --> 00:01:48,830
+Vậy bạn xem xét phí tổng này
+
+40
+00:01:48,830 --> 00:01:51,170
+và bạn nói, OK, tôi muốn ở trong vùng nào,
+
+41
+00:01:51,170 --> 00:01:54,720
+ở vùng chấp nhận được ở giữa này hay sao?
+
+42
+00:01:54,720 --> 00:01:57,550
+Bạn không muốn quá mức với
+
+43
+00:01:57,550 --> 00:01:59,480
+mô hình nhân quả của mình, và bạn không
+
+44
+00:01:59,480 --> 00:02:02,850
+muốn trở nên quá ngây thơ trong các mô hình ấy
+
+45
+00:02:02,850 --> 00:02:04,356
+Đây chỉ là khái niệm thôi.
+
+46
+00:02:04,356 --> 00:02:05,730
+Chỉ là khung chung.
+
+47
+00:02:05,730 --> 00:02:08,430
+Nhưng tôi nghĩ quan trọng là ta phải ghi nhớ điều này.
+
+48
+00:02:08,430 --> 00:02:12,280
+Bởi ta có thể vướng phải vấn đề dành quá nhiều thời gian
+
+49
+00:02:12,280 --> 00:02:14,370
+để dự báo vì dự báo.
+
+50
+00:02:14,370 --> 00:02:17,910
+Và đó là ý tưởng nảy sinh ra những dự báo hết sức
+
+51
+00:02:17,910 --> 00:02:19,950
+phức tạp, chi tiết.
+
+52
+00:02:19,950 --> 00:02:23,660
+Và ta quên đi chi phí thực hiện việc đó là bao nhiêu.
+
+53
+00:02:23,660 --> 00:02:26,640
+Hãy quay trở lại ý chất lượng dự báo là gì.
+
+54
+00:02:26,640 --> 00:02:30,220
+Tôi có thể xác định một dự báo tốt hay không như thế nào?
+
+55
+00:02:30,220 --> 00:02:31,670
+Ta muốn kết thúc với
+
+56
+00:02:31,670 --> 00:02:33,600
+một số liệu, hoặc một chuỗi số liệu.
+
+57
+00:02:33,600 --> 00:02:35,430
+Vậy hãy lấy một ví dụ.
+
+58
+00:02:35,430 --> 00:02:37,030
+Đây là một ví dụ rất đơn giản.
+
+59
+00:02:37,030 --> 00:02:40,120
+Thời gian nằm trên trục hoành,
+
+60
+00:02:40,120 --> 00:02:42,960
+và trục tung là nhu cầu.
+
+61
+00:02:42,960 --> 00:02:44,630
+Vậy tôi có hai dự báo.
+
+62
+00:02:44,630 --> 00:02:47,590
+Dự báo thứ nhất là dự báo hình vuông màu xanh.
+
+63
+00:02:47,590 --> 00:02:50,820
+Và cho mỗi khoảng thời gian bạn có thể thấy chúng dự báo gì.
+
+64
+00:02:50,820 --> 00:02:53,690
+Cho khoảng thời gian một, chúng dự báo 900.
+
+65
+00:02:53,690 --> 00:02:56,140
+Khoảng thời gian hai, chúng dự báo 1,100.
+
+66
+00:02:56,140 --> 00:02:58,320
+Khoảng thời gian ba, chúng dự báo nhu cầu
+
+67
+00:02:58,320 --> 00:03:00,780
+sẽ trở về 900, vân vân.
+
+68
+00:03:00,780 --> 00:03:02,480
+Một dự báo khác được phát triển
+
+69
+00:03:02,480 --> 00:03:04,870
+là dự báo tam giác màu xanh lá.
+
+70
+00:03:04,870 --> 00:03:07,110
+Và chúng dự báo, hoặc ước đoán,
+
+71
+00:03:07,110 --> 00:03:11,980
+rằng nhu cầu sẽ không đổi, vẫn 1,1000 cho mỗi thời kỳ.
+
+72
+00:03:11,980 --> 00:03:13,470
+Vậy đây là hai dự báo.
+
+73
+00:03:13,470 --> 00:03:15,050
+Điều gì đã xảy ra?
+
+74
+00:03:15,050 --> 00:03:16,180
+Đây là thực tế.
+
+75
+00:03:16,180 --> 00:03:20,470
+Những vòng tròn đỏ này là giá trị nhu cầu thực tế.
+
+76
+00:03:20,470 --> 00:03:23,010
+Câu hỏi đặt ra là, dự báo nào
+
+77
+00:03:23,010 --> 00:03:25,590
+tốt hơn, hình vuông hay hình tam giác?
+
+78
+00:03:25,590 --> 00:03:28,250
+Nó đi vào trọng tâm của câu hỏi là,
+
+79
+00:03:28,250 --> 00:03:30,550
+bạn đo chất lượng một dự báo như thế nào.
+
+80
+00:03:30,550 --> 00:03:32,280
+Bởi vì hãy xem xét nó.
+
+81
+00:03:32,280 --> 00:03:36,410
+Cả hai dự báo đều có cùng mức chính xác.
+
+82
+00:03:36,410 --> 00:03:38,150
+Nói cách khác, mỗi dự báo,
+
+83
+00:03:38,150 --> 00:03:41,160
+dự đó là dự báo hình vuông màu xanh dương hay dự báo tam giác xanh lá
+
+84
+00:03:41,160 --> 00:03:45,510
+là chính xác 100 đơn vị cách biệt nhu cầu thực tế.
+
+85
+00:03:45,510 --> 00:03:49,910
+Trong mỗi trường hợp, tôi trừ đi 100 đơn vị.
+
+86
+00:03:49,910 --> 00:03:52,240
+Vậy ở đây cái nào tốt hơn?
+
+87
+00:03:52,240 --> 00:03:55,410
+Một cách khác để xem xét nó là dựa vào độ chênh lệch.
+
+88
+00:03:55,410 --> 00:03:57,250
+Dựa vào độ chênh lệch tức là sao?
+
+89
+00:03:57,250 --> 00:03:58,930
+Thì, hãy xem xét tam giác màu xanh lá.
+
+90
+00:03:58,930 --> 00:04:01,640
+Nó luôn luôn trên thực tế.
+
+91
+00:04:01,640 --> 00:04:02,970
+Nó trên 100 đơn vị.
+
+92
+00:04:02,970 --> 00:04:05,110
+Nó là lệch dương.
+
+93
+00:04:05,110 --> 00:04:08,710
+Dự báo của tôi sẽ luôn cao hơn nhu cầu thực tế.
+
+94
+00:04:08,710 --> 00:04:11,470
+Nếu tôi quan sát các hình vuông màu xanh, nó lại không vậy.
+
+95
+00:04:11,470 --> 00:04:12,400
+Không có độ chênh lệch
+
+96
+00:04:12,400 --> 00:04:14,530
+Tôi bằng trên hoặc bằng dưới.
+
+97
+00:04:14,530 --> 00:04:16,570
+Vậy câu hỏi đặt ra là, cái nào tốt hơn ở đó?
+
+98
+00:04:16,570 --> 00:04:20,399
+Tôi sẽ tranh luận rằng có lẽ tốt hơn hết là không có độ chênh lệch nhỉ?
+
+99
+00:04:20,399 --> 00:04:22,200
+Bởi nếu tôi chênh lệch quá mức thì
+
+100
+00:04:22,200 --> 00:04:23,640
+tôi sẽ luôn dự báo thừa.
+
+101
+00:04:23,640 --> 00:04:28,200
+Nếu tôi chênh lệch âm, thì tôi luôn dự báo thiếu.
+
+102
+00:04:28,200 --> 00:04:30,190
+Tuy nhiên, nếu tôi rơi vào một tình huống
+
+103
+00:04:30,190 --> 00:04:32,700
+và tôi xác định tôi sẽ muốn rơi vào tình huống nào,
+
+104
+00:04:32,700 --> 00:04:34,600
+tình huống mà tôi có
+
+105
+00:04:34,600 --> 00:04:37,830
+các dự báo hình vuông màu xanh này hay các hình tam giác màu xanh lá ?
+
+106
+00:04:37,830 --> 00:04:39,600
+Nó dễ sửa độ chênh lệch hơn.
+
+107
+00:04:39,600 --> 00:04:42,760
+Nếu tôi đi vào và thấy rằng tôi đang quá lệch quá nhiều,
+
+108
+00:04:42,760 --> 00:04:46,980
+dự đoán trên 20%, thì đó là cái dễ chỉnh.
+
+109
+00:04:46,980 --> 00:04:49,380
+Tôi giảm đi 20%.
+
+110
+00:04:49,380 --> 00:04:53,170
+Và vậy tôi thà rơi vào tình huống đó để sửa nó.
+
+111
+00:04:53,170 --> 00:04:54,560
+Mặc dù thế, cuối cùng ta 
+
+112
+00:04:54,560 --> 00:04:57,070
+vẫn muốn một dự báo không chênh lệch gì.
+
+113
+00:04:57,070 --> 00:04:59,210
+Hãy xem xét điều này sâu thêm một chút
+
+114
+00:04:59,210 --> 00:05:00,720
+xác định ý ta muốn ở đây khi
+
+115
+00:05:00,720 --> 00:05:02,920
+bàn về độ chính xác và chênh lệch.
+
+116
+00:05:02,920 --> 00:05:05,960
+Độ chính xác về cơ bản có nghĩa là gần
+
+117
+00:05:05,960 --> 00:05:08,330
+với các quan sát thực tế.
+
+118
+00:05:08,330 --> 00:05:10,830
+Độ chênh lệch là xu hướng liên tục
+
+119
+00:05:10,830 --> 00:05:13,760
+để hoặc dự báo hơn hoặc dự báo thiếu.
+
+120
+00:05:13,760 --> 00:05:18,210
+Vậy ta có thể nghĩ về hai thuật ngữ này như hai chiều khác nhau.
+
+121
+00:05:18,210 --> 00:05:20,500
+Khi chúng trở nên chính xác hơn, tôi không nhất thiết
+
+122
+00:05:20,500 --> 00:05:22,880
+chênh lệch ít hay nhiều.
+
+123
+00:05:22,880 --> 00:05:25,620
+Vậy trong dự báo ta có hai chiều.
+
+124
+00:05:25,620 --> 00:05:28,160
+Tôi có thể để hai đối hai.
+
+125
+00:05:28,160 --> 00:05:30,390
+Vậy ở trục tung, tôi có độ chính xác,
+
+126
+00:05:30,390 --> 00:05:32,380
+và trục hoành là độ chênh lệch.
+
+127
+00:05:32,380 --> 00:05:36,440
+Vậy trong trường hợp tốt nhất, tôi có dự báo cực kì chính xác
+
+128
+00:05:36,440 --> 00:05:38,190
+Ý tôi là, đây là các bia bắn, đúng chứ?
+
+129
+00:05:38,190 --> 00:05:40,400
+Tất cả đều nằm ở tâm phải không?
+
+130
+00:05:40,400 --> 00:05:42,360
+Khó để thấy màu đỏ trên đỏ.
+
+131
+00:05:42,360 --> 00:05:44,330
+Và chúng không lệch, trong đó chúng đều
+
+132
+00:05:44,330 --> 00:05:48,004
+khá chắc chắn ở đây - đối lập
+
+133
+00:05:48,004 --> 00:05:49,170
+với dự báo chính xác.
+
+134
+00:05:49,170 --> 00:05:52,620
+Một lần nữa, nó là sự lan truyền chặt chẽ, tốt đẹp.
+
+135
+00:05:52,620 --> 00:05:53,600
+Nhưng nó bị lệch.
+
+136
+00:05:53,600 --> 00:05:56,830
+Tất cả đều dương và có chút nghiêng về phía phải.
+
+137
+00:05:56,830 --> 00:05:59,420
+Sau đó tôi có thể nghĩ tới việc có một dự báo không chính xác,
+
+138
+00:05:59,420 --> 00:06:00,320
+đúng chứ?
+
+139
+00:06:00,320 --> 00:06:01,290
+Và không bị lệch
+
+140
+00:06:01,290 --> 00:06:04,540
+Bởi nếu tôi nhìn nó, nó lan đều hết xung quanh,
+
+141
+00:06:04,540 --> 00:06:06,960
+nhưng lại không hề chính xác.
+
+142
+00:06:06,960 --> 00:06:09,440
+Và ở dưới đây -- ý, bấm lộn rồi.
+
+143
+00:06:09,440 --> 00:06:11,851
+Cái cuối cùng, nó không chính xác lắm.
+
+144
+00:06:11,851 --> 00:06:13,100
+Nó vẫn dạng như lan ra.
+
+145
+00:06:13,100 --> 00:06:13,900
+Nhưng nó bị lệch.
+
+146
+00:06:13,900 --> 00:06:16,240
+Mọi điểm bắn đều hướng về phía dưới trái.
+
+147
+00:06:16,240 --> 00:06:19,680
+Nên bạn có thể nghĩ về hai số liệu, độ chính xác và độ chênh lệch.
+
+148
+00:06:19,680 --> 00:06:21,160
+Và bất cứ khi nào tôi xem xét các dự báo,
+
+149
+00:06:21,160 --> 00:06:23,680
+tôi muốn nghĩ về cả hai chiều.
+
+150
+00:06:23,680 --> 00:06:25,561
+Chúng không hoàn toàn có thể thay thế được.
+
+151
+00:06:25,561 --> 00:06:27,060
+Chúng là các chiều khác nhau và bạn
+
+152
+00:06:27,060 --> 00:06:30,650
+muốn nắm bắt và xem xét mỗi cái riêng biệt.
+

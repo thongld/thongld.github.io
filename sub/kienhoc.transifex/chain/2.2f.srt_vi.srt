@@ -1,0 +1,320 @@
+0
+00:00:00,000 --> 00:00:00,290
+https://youtu.be/dN7ORKYlyYs
+
+1
+00:00:00,290 --> 00:00:00,790
+OK.
+
+2
+00:00:00,790 --> 00:00:02,760
+Các điểm chính rút ra được từ bài học này là gì?
+
+3
+00:00:02,760 --> 00:00:05,020
+Tất cả những gì ta nói là giới thiệu
+
+4
+00:00:05,020 --> 00:00:06,900
+các mô hình liên tiến lũy thùa.
+
+5
+00:00:06,900 --> 00:00:08,260
+Và ta giới thiệu hai loại
+
+6
+00:00:08,260 --> 00:00:11,550
+Đầu tiên là mô hình đơn giản hay mô hình đơn giản san bằng,
+
+7
+00:00:11,550 --> 00:00:14,170
+và nó chỉ được sử dụng khi ta có một mức độ.
+
+8
+00:00:14,170 --> 00:00:15,830
+Ta chỉ cho rằng xu hướng duy  nhất ta thấy
+
+9
+00:00:15,830 --> 00:00:18,770
+là mức thời kỳ hay nhu cầu không đổi.
+
+10
+00:00:18,770 --> 00:00:21,210
+Sau đó ta cũng em xét Mô hình Holt, 
+
+11
+00:00:21,210 --> 00:00:24,300
+mô hình cho rằng cả mức độ và xu hướng dù đang tăng
+
+12
+00:00:24,300 --> 00:00:28,410
+hay đăng giảm, và cái ta xem xét là các xu hướng tuyến tính.
+
+13
+00:00:28,410 --> 00:00:31,860
+Và vậy nếu bạn xem xét những thứ này, chúng rất giống nhau
+
+14
+00:00:31,860 --> 00:00:36,610
+và với phương trình dự báo cho mẫu đơn giản này
+
+15
+00:00:36,610 --> 00:00:38,690
+hoặc chỉ là mức độ này, đơn giản là nó sẽ 
+
+16
+00:00:38,690 --> 00:00:43,310
+có alpha này, cái lần nữa là hệ số liên tiến,
+
+17
+00:00:43,310 --> 00:00:45,560
+alpha càng cao, giữa 0 và 1, 
+
+18
+00:00:45,560 --> 00:00:48,020
+bạn sẽ càng đi cân đong thông tin mới, 
+
+19
+00:00:48,020 --> 00:00:50,440
+trong trường hợp này là số liệu mới.
+
+20
+00:00:50,440 --> 00:00:52,470
+Và 1 - alpha cho bạn biết 
+
+21
+00:00:52,470 --> 00:00:54,740
+bạn sẽ cân đong bao nhiêu lượng thông tin cũ.
+
+22
+00:00:54,740 --> 00:00:59,010
+Và trong trường hợp này, nó là x (t-1) cho t, 
+
+23
+00:00:59,010 --> 00:01:01,910
+về cơ bản là dự báo từ ngày hôm qua
+
+24
+00:01:01,910 --> 00:01:03,080
+cho hôm nay
+
+25
+00:01:03,080 --> 00:01:08,750
+Nó cân bằng alpha nhân số liệu gần đây nhất của tôi
+
+26
+00:01:08,750 --> 00:01:13,000
++ (1- alpha) nhân dự báo gần đây nhất của tôi.
+
+27
+00:01:13,000 --> 00:01:14,840
+Đó là toàn bộ quá trình liên tiến.
+
+28
+00:01:14,840 --> 00:01:16,940
+Và sau đó, khi ta giới thiệu mức độ và xu hướng,
+
+29
+00:01:16,940 --> 00:01:18,245
+bạn cũng làm tương tự.
+
+30
+00:01:18,245 --> 00:01:20,750
+Tất cả những việc ta đang làm bây giờ là giới thiệu một số hạng mới.
+
+31
+00:01:20,750 --> 00:01:23,580
+Số hạng b này là số hạng liên tiến
+
+32
+00:01:23,580 --> 00:01:26,120
+hay dự báo cho xu hướng
+
+33
+00:01:26,120 --> 00:01:29,450
+Và nó sẽ bằng với beta, nhân tố liên tiến
+
+34
+00:01:29,450 --> 00:01:32,940
+giữa 0 và 1, nhân thông tin mới nhất của tôi, đó chỉ là
+
+35
+00:01:32,940 --> 00:01:37,450
+sự khác biệt giữa hai mức độ ước đoán của tôi cộng
+
+36
+00:01:37,450 --> 00:01:41,680
+(1- beta) nhân lần ước đoán xu hướng gần đây
+
+37
+00:01:41,680 --> 00:01:42,570
+nhất của tôi
+
+38
+00:01:42,570 --> 00:01:47,240
+Vậy thì lần nữa, thông tin mới cân bằng với thông tin cũ.
+
+39
+00:01:47,240 --> 00:01:48,990
+Và bạn đang san bằng các nhân tố nói cho bạn biết
+
+40
+00:01:48,990 --> 00:01:52,120
+bạn sẽ cân đong bao nhiêu thông tin mới và cũ.
+
+41
+00:01:52,120 --> 00:01:55,180
+Nó chỉ là sự kết hợp tuyến tính, bởi alpha trong 
+
+42
+00:01:55,180 --> 00:01:57,980
+(1- alpha) và beta trong (1-beta),
+
+43
+00:01:57,980 --> 00:02:01,210
+rõ ràng là nó tổng thành một.
+
+44
+00:02:01,210 --> 00:02:04,130
+Sau khi ta thực hiện việc này, ta xem xét một số mô hình liên tiến khác,
+
+45
+00:02:04,130 --> 00:02:06,340
+Và bạn có thể thấy đây là một cách rất dễ dàng
+
+46
+00:02:06,340 --> 00:02:08,870
+để hợp thông tin mới với cũ,
+
+47
+00:02:08,870 --> 00:02:11,790
+và ta sử dụng nó để theo dõi sai số toàn phương trung bình.
+
+48
+00:02:11,790 --> 00:02:14,700
+Và vậy ta sử dụng số hạng omega này để cố
+
+49
+00:02:14,700 --> 00:02:17,910
+cân bằng sai số toàn phương trung bình, cho ta
+
+50
+00:02:17,910 --> 00:02:21,229
+ước đoán nhất quán hơn hoặc dè dặt hơn 
+
+51
+00:02:21,229 --> 00:02:22,520
+về sai số toàn phương trung bình nên là bao nhiêu.
+
+52
+00:02:22,520 --> 00:02:27,030
+Nó không phải dễ thay đổi, cứ lên xuống mỗi tháng
+
+53
+00:02:27,030 --> 00:02:29,370
+Sau đó ta cũng xem xét các xu hướng giảm.
+
+54
+00:02:29,370 --> 00:02:31,240
+Với các xu hướng giảm, ý tưởng là
+
+55
+00:02:31,240 --> 00:02:34,090
+một xu hướng không bất định mãi mãi.
+
+56
+00:02:34,090 --> 00:02:37,290
+Trong thực tế, chúng thường giảm dần
+
+57
+00:02:37,290 --> 00:02:39,500
+Vậy ta sử dụng phi này, và ta cho thấy
+
+58
+00:02:39,500 --> 00:02:41,920
+cách nó có thể được sử dụng để làm giảm dần xu hướng
+
+59
+00:02:41,920 --> 00:02:44,220
+đặc biệt cái này cực kì giúp ích khi
+
+60
+00:02:44,220 --> 00:02:48,440
+tôi đang xem xét các ước đoán hoặc dự báo lâu dài.
+
+61
+00:02:48,440 --> 00:02:48,940
+OK.
+
+62
+00:02:48,940 --> 00:02:51,080
+Nhưng nhình tổng thể, các khái niệm cốt lõi
+
+63
+00:02:51,080 --> 00:02:53,930
+từ liên tiến lũy thừa là gì?
+
+64
+00:02:53,930 --> 00:02:58,200
+Khái niệm lớn đầu tiên là giá trị thông tin giảm sút theo thời gian.
+
+65
+00:02:58,200 --> 00:03:01,880
+Số liệu càng cũ, giá trị càng ít, trọng lượng mà tôi
+
+66
+00:03:01,880 --> 00:03:03,080
+sẽ đặt vào cảng giảm.
+
+67
+00:03:03,080 --> 00:03:06,940
+Số hạng liên tiến đó cho tôi biết tôi sẽ đặt vào bao nhiêu trọng lượng.
+
+68
+00:03:06,940 --> 00:03:09,460
+Rồi một khái niệm khác là giữa thông tin cũ
+
+69
+00:03:09,460 --> 00:03:12,890
+và thông tin mới có sự cân bằng, dù nó
+
+70
+00:03:12,890 --> 00:03:15,610
+có xem xét thông tin theo mức độ
+
+71
+00:03:15,610 --> 00:03:18,157
+hay thông tin theo xu hướng hay gì đó khác.
+
+72
+00:03:18,157 --> 00:03:19,740
+Ta đang xem xét sự cân bằng, bởi ta
+
+73
+00:03:19,740 --> 00:03:22,410
+muốn nói, tôi cân bao nhiêu thông tin mới
+
+74
+00:03:22,410 --> 00:03:26,040
+và tôi cân bao nhiêu thông tin chống lại thông tin cũ?
+
+75
+00:03:26,040 --> 00:03:27,490
+Được rồi, chỉ thế thôi.
+
+76
+00:03:27,490 --> 00:03:29,500
+Hy vọng là nếu bạn có bất kì câu hỏi, bình luận,
+
+77
+00:03:29,500 --> 00:03:31,290
+hay đề nghị nào, xin hãy dùng phần thảo luận.
+
+78
+00:03:31,290 --> 00:03:33,370
+Đừng ngần ngại như chú chó Lexi nhé.
+
+79
+00:03:33,370 --> 00:03:35,270
+Hãy sử dụng phần thảo luận.
+

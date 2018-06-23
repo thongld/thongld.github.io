@@ -1,0 +1,418 @@
+659
+00:28:41,970 --> 00:28:44,980
+https://youtu.be/G721cooZXgs
+Python, than to teach
+Python to listen
+
+660
+00:28:44,980 --> 00:28:47,390
+to whatever you have to say.
+
+661
+00:28:47,390 --> 00:28:50,210
+Things like Google make
+it seem intelligent,
+
+662
+00:28:50,210 --> 00:28:53,120
+so that you kind of type
+anything to Google, right?
+
+663
+00:28:53,120 --> 00:28:56,300
+Well, yeah, billions of dollars
+later, Google for at least
+
+664
+00:28:56,300 --> 00:28:58,430
+like short things,
+can seem like it knows
+
+665
+00:28:58,430 --> 00:29:01,200
+what you're talking about.
+
+666
+00:29:01,200 --> 00:29:03,780
+In terms of programming,
+it's a lot easier for you
+
+667
+00:29:03,780 --> 00:29:07,270
+to figure out the exact, precise
+way to say it, rather than make
+
+668
+00:29:07,270 --> 00:29:10,095
+it so that we have to spend a
+billion dollars on something
+
+669
+00:29:10,095 --> 00:29:13,300
+like Python to figure out what
+you mean in your programs.
+
+670
+00:29:13,300 --> 00:29:17,870
+So, let's start
+talking to Python.
+
+671
+00:29:17,870 --> 00:29:19,640
+We're talking to Python.
+
+672
+00:29:19,640 --> 00:29:22,700
+So if you've installed
+Python properly,
+
+673
+00:29:22,700 --> 00:29:27,440
+whether it's on a Mac or a
+Windows or on a Raspberry Pi,
+
+674
+00:29:27,440 --> 00:29:30,020
+at some point you'll be
+in a terminal program
+
+675
+00:29:30,020 --> 00:29:34,196
+and you'll type Python to make
+Python run in interactive mode.
+
+676
+00:29:34,196 --> 00:29:36,570
+You might have type C colon
+backslash something something
+
+677
+00:29:36,570 --> 00:29:38,170
+Python in Windows.
+
+678
+00:29:38,170 --> 00:29:40,730
+But at some point,
+you're running Python.
+
+679
+00:29:40,730 --> 00:29:43,270
+Now Python, itself,
+is a program.
+
+680
+00:29:43,270 --> 00:29:45,840
+It's a program
+that is asking you
+
+681
+00:29:45,840 --> 00:29:47,701
+to type the Python language.
+
+682
+00:29:47,701 --> 00:29:49,200
+Now the interesting
+thing is, you've
+
+683
+00:29:49,200 --> 00:29:53,640
+got this Chevron
+prompt here, and it's
+
+684
+00:29:53,640 --> 00:29:55,810
+kind of another
+version of what's next.
+
+685
+00:29:55,810 --> 00:29:57,260
+I told you that
+this hardware was
+
+686
+00:29:57,260 --> 00:30:01,020
+designed to always want the
+next instruction to come in.
+
+687
+00:30:01,020 --> 00:30:04,540
+Well, Python, once we
+start it, it really
+
+688
+00:30:04,540 --> 00:30:05,620
+has no idea what to do.
+
+689
+00:30:05,620 --> 00:30:08,960
+It is waiting for you
+tell it what to do, OK?
+
+690
+00:30:08,960 --> 00:30:13,730
+So, let me see if I can
+pop something up here.
+
+691
+00:30:13,730 --> 00:30:14,790
+So here we go.
+
+692
+00:30:14,790 --> 00:30:16,510
+Clear that.
+
+693
+00:30:16,510 --> 00:30:20,610
+And now I'm going to type--
+get this a little closer--
+
+694
+00:30:20,610 --> 00:30:21,900
+I'm going to start Python.
+
+695
+00:30:21,900 --> 00:30:24,450
+So it's the operating system
+now is asking me, what next?
+
+696
+00:30:24,450 --> 00:30:26,590
+And I'm saying, oh, the
+thing I want to do next
+
+697
+00:30:26,590 --> 00:30:29,420
+is I want to run Python.
+
+698
+00:30:29,420 --> 00:30:30,690
+So, here we are.
+
+699
+00:30:30,690 --> 00:30:32,750
+We're sitting in the
+Python interpreter.
+
+700
+00:30:32,750 --> 00:30:36,360
+And it's asking, what next?
+
+701
+00:30:36,360 --> 00:30:37,320
+OK?
+
+702
+00:30:37,320 --> 00:30:43,160
+Now, it's like I just
+landed on a planet,
+
+703
+00:30:43,160 --> 00:30:48,620
+and it's like, take
+me to your leader.
+
+704
+00:30:48,620 --> 00:30:51,460
+
+705
+00:30:51,460 --> 00:30:52,890
+Take me to your leader.
+
+706
+00:30:52,890 --> 00:30:55,240
+That's what you always say
+when you land on a planet
+
+707
+00:30:55,240 --> 00:30:57,730
+and are confronted by
+some kind of a robot.
+
+708
+00:30:57,730 --> 00:31:01,560
+And it says, syntax error.
+
+709
+00:31:01,560 --> 00:31:02,710
+Remember it's a dog.
+
+710
+00:31:02,710 --> 00:31:04,105
+It should just say, arf, right?
+
+711
+00:31:04,105 --> 00:31:05,730
+I could say, take me
+me to your leader.
+
+712
+00:31:05,730 --> 00:31:06,770
+Arf.
+
+713
+00:31:06,770 --> 00:31:07,270
+OK?
+
+714
+00:31:07,270 --> 00:31:10,530
+
+715
+00:31:10,530 --> 00:31:12,585
+Are you friendly?
+
+716
+00:31:12,585 --> 00:31:17,070
+
+717
+00:31:17,070 --> 00:31:19,990
+I don't think I
+spelled friendly right.
+
+718
+00:31:19,990 --> 00:31:20,890
+Syntax error.
+
+719
+00:31:20,890 --> 00:31:25,340
+
+720
+00:31:25,340 --> 00:31:27,290
+Are you dumb?
+
+721
+00:31:27,290 --> 00:31:30,130
+
+722
+00:31:30,130 --> 00:31:31,620
+Syntax error.
+
+723
+00:31:31,620 --> 00:31:34,100
+Pretty dumb.
+
+724
+00:31:34,100 --> 00:31:35,710
+I hate computers.
+
+725
+00:31:35,710 --> 00:31:41,590
+
+726
+00:31:41,590 --> 00:31:42,990
+Syntax error.
+
+727
+00:31:42,990 --> 00:31:45,561
+It doesn't seem to
+have a sense of humor.
+
+728
+00:31:45,561 --> 00:31:46,060
+Try this.
+
+729
+00:31:46,060 --> 00:31:49,940
+Knock knock Knock knock.
+
+730
+00:31:49,940 --> 00:31:52,750
+
+731
+00:31:52,750 --> 00:31:55,760
+No sense of humor.
+
+732
+00:31:55,760 --> 00:31:58,850
+So here's the
+problem, it wants us--
+
+733
+00:31:58,850 --> 00:32:02,910
+it doesn't hate
+us-- it just wants
+
+734
+00:32:02,910 --> 00:32:05,920
+to know what we want done.
+
+735
+00:32:05,920 --> 00:32:09,280
+So, we need to know
+the Python language.
+
+736
+00:32:09,280 --> 00:32:11,440
+Luckily, I know a bit of Python.
+
+737
+00:32:11,440 --> 00:32:14,345
+So I'm going to say,
+hmm, hey, Python,
+
+738
+00:32:14,345 --> 00:32:16,350
+I'm going to want some data.
+
+739
+00:32:16,350 --> 00:32:19,520
+I want to make a variable
+named x-- just a little place
+
+740
+00:32:19,520 --> 00:32:21,040
+in your memory, go find it.
+
+741
+00:32:21,040 --> 00:32:24,250
+Go find one of your
+spare places in memory.
+
+742
+00:32:24,250 --> 00:32:29,450
+And I want you to
+put 100 in that, OK?
+
+743
+00:32:29,450 --> 00:32:30,400
+Do that.
+
+744
+00:32:30,400 --> 00:32:34,390
+Now, it's happy, because
+I know the language.
+
+745
+00:32:34,390 --> 00:32:36,371
+Bonjour.
+
+746
+00:32:36,371 --> 00:32:38,580
+So we know the language.
+
+747
+00:32:38,580 --> 00:32:39,940
+But it's saying, what next?
+
+748
+00:32:39,940 --> 00:32:42,740
+So we have to put a program in.
+
+749
+00:32:42,740 --> 00:32:44,480
+So, let's see.
+
+750
+00:32:44,480 --> 00:32:47,952
+I'm going to say,
+hey, Python, I'm
+
+751
+00:32:47,952 --> 00:32:49,410
+going to make a
+variable called y--
+
+752
+00:32:49,410 --> 00:32:51,750
+another area in your
+memory-- labeled y,
+

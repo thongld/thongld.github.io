@@ -1,0 +1,481 @@
+1
+00:00:01,870 --> 00:00:04,680
+Hãy nói về phân tích dữ liệu thực nghiệm.
+
+2
+00:00:04,680 --> 00:00:11,930
+Có 2 phương thức cơ bản để phân tích dữ liệu
+ thu được trong một thí nghiệm.
+
+3
+00:00:11,930 --> 00:00:15,240
+Phương pháp đầu tiên là dùng phương sai
+ hay còn gọi là ANOVA (ANalysis Of VAriance).
+
+4
+00:00:15,240 --> 00:00:17,780
+Thứ hai là phương pháp hồi quy.
+
+5
+00:00:17,780 --> 00:00:23,660
+Mỗi phương pháp đều tính toán kiểm định thống kê 
+thường được thể hiện bằng giá trị p.
+
+6
+00:00:23,660 --> 00:00:28,420
+Bạn có thể coi trị số này như mức độ tin cậy
+
+7
+00:00:28,420 --> 00:00:30,950
+mà chúng ta đạt được trong kết quả.
+
+8
+00:00:30,950 --> 00:00:36,949
+Ở mô-đun này và trong khóa, ta sẽ tập trung vào những khái niệm
+ cơ bản 
+
+9
+00:00:36,949 --> 00:00:41,199
+trong phân tích dữ liệu thực nghiệm
+và đưa ra những tính toán thực
+
+10
+00:00:41,199 --> 00:00:43,070
+phục vụ cho những khóa học nâng cao hơn.
+
+11
+00:00:43,070 --> 00:00:47,350
+Trọng tâm là hiểu được những khái niệm chính
+
+12
+00:00:47,350 --> 00:00:51,489
+và phán đoán thông qua trực giác 
+phân tích với dữ liệu thực nghiệm.
+
+13
+00:00:51,489 --> 00:00:56,660
+Nhưng ta sẽ không đi vào số liệu thực ở học phần này.
+
+14
+00:00:56,660 --> 00:01:01,339
+Hãy bắt đầu với một thí nghiệm
+ đơn giản dùng 2 điều kiện.
+
+15
+00:01:01,339 --> 00:01:06,060
+Quay trở lại ví dụ trước đó, 
+một giá trị được diễn tả như một giá tựu chung
+
+16
+00:01:06,060 --> 00:01:12,230
+và một giá trị đại biểu cho "vài xu lẻ mỗi ngày".
+
+17
+00:01:12,230 --> 00:01:15,290
+Khi bạn thu thập dữ liệu từ
+ một lượng người tham gia
+
+18
+00:01:15,290 --> 00:01:20,570
+nếu xét trong điều kiện tổ hợp,
+ dữ liệu đó có thể được phân bổ như sau.
+
+19
+00:01:20,570 --> 00:01:27,410
+Có một  giá trị trung bình x,
+ và một vài người đưa ra đáp án lớn hơn x
+
+20
+00:01:27,410 --> 00:01:30,780
+và những người khác đưa ra đáp án nhỏ hơn x.
+
+21
+00:01:30,780 --> 00:01:35,920
+Tương tự, trong điều kiện "vài xu lẻ",
+ bạn cũng sẽ có một giá trị trung bình khác.
+
+22
+00:01:35,920 --> 00:01:37,410
+Hãy gọi đó là y.
+
+23
+00:01:37,410 --> 00:01:39,960
+Một vài người đưa ra đáp án lớn hơn y
+
+24
+00:01:39,960 --> 00:01:42,590
+và số khác đưa ra đáp án nhỏ hơn y.
+
+25
+00:01:42,590 --> 00:01:50,670
+Câu hỏi đặt ra là liệu y có thể nào
+
+26
+00:01:50,670 --> 00:01:56,710
+lớn hơn x không.
+
+27
+00:01:56,710 --> 00:01:58,240
+Các giá trị trung bình của chúng có khác nhau?
+
+28
+00:01:58,240 --> 00:02:01,590
+Nếu bạn đặt 2 phân bố vào cùng 1 thang đo,
+
+29
+00:02:01,590 --> 00:02:03,880
+bạn có thể thấy được những thứ như thế này.
+
+30
+00:02:03,880 --> 00:02:05,960
+Đây là y.
+
+31
+00:02:05,960 --> 00:02:07,430
+Đây là x.
+
+32
+00:02:07,430 --> 00:02:14,370
+Câu hỏi đặt ra là tại sao theo thống kê y lại lớn hơn x?
+
+33
+00:02:14,370 --> 00:02:20,299
+Ở bất kỳ phân tích thực nghiệm nào, 
+giả thiết không hay còn gọi là giả thiết mặc định
+
+34
+00:02:20,299 --> 00:02:22,680
+chính là không có sự khác biệt giữa 
+
+35
+00:02:22,680 --> 00:02:23,680
+x và y.
+
+36
+00:02:23,680 --> 00:02:29,340
+Nghĩa là cả 2 sự phân bố này
+ đều được suy ra từ cùng 1 phân bố chuẩn
+
+37
+00:02:29,340 --> 00:02:34,250
+và có cùng giá trị trung bình cơ bản.
+
+38
+00:02:34,250 --> 00:02:38,599
+Chúng ta đề cập đến giả định không 
+như giả thiết không.
+
+39
+00:02:38,599 --> 00:02:41,010
+Đó là giả thiết mà chúng ta sẽ thử và kiểm định.
+
+40
+00:02:41,010 --> 00:02:46,139
+T-score là chỉ số so sánh sự khác nhau 
+giữa các giá trị trung bình
+
+41
+00:02:46,139 --> 00:02:50,459
+được tính bằng cách nhìn vào tỷ lệ giữa sự khác nhau 
+trong các giá trị trung bình
+
+42
+00:02:50,459 --> 00:02:54,760
+và tính biến thiên.
+
+43
+00:02:54,760 --> 00:02:57,480
+Gỉa sử không có sự biến thiên.
+
+44
+00:02:57,480 --> 00:03:02,480
+Gỉa sử rằng những người thấy điều kiện "vài xu lẻ" đưa ra
+
+45
+00:03:02,480 --> 00:03:06,689
+giá trị cao cho mức bằng lòng chi trả.
+
+46
+00:03:06,689 --> 00:03:13,520
+Sử dụng phạm vi từ 1 đến 10,
+ mọi người đều trả lời là 8.
+
+47
+00:03:13,520 --> 00:03:14,909
+ở điều kiện "vài xu lẻ".
+
+48
+00:03:14,909 --> 00:03:18,889
+Mọi người trả lời là 4 trong điều kiện tựu chung.
+
+49
+00:03:18,889 --> 00:03:25,859
+Trong trường hợp này, không có sự biến thiên 
+và chúng ta có thể thấy rằng
+
+50
+00:03:25,859 --> 00:03:30,409
+mức bằng lòng chi trả trung bình lớn hơn vì 8 lớn hơn 4.
+
+51
+00:03:30,409 --> 00:03:32,680
+Tuyệt đối không có sự biến thiên.
+
+52
+00:03:32,680 --> 00:03:35,689
+Tuy nhiên ở trong đời thực, vẫn sẽ có sự biến thiên.
+
+53
+00:03:35,689 --> 00:03:38,879
+Và sẽ trông như thế này.
+
+54
+00:03:38,879 --> 00:03:42,700
+Khi tính biến thiên tăng, độ tin cậy 
+rằng y lớn hơn x thực ra giảm
+
+55
+00:03:42,700 --> 00:03:47,620
+vì phạm vi chồng chéo
+
+56
+00:03:47,620 --> 00:03:51,099
+giữa 2 vùng phân phối tăng lên.
+
+57
+00:03:51,099 --> 00:03:57,110
+Người trả lời ở mức độ này có thể nằm trong phân bố này
+
+58
+00:03:57,110 --> 00:04:00,380
+ cũng có thể là trong phân phối kia.
+
+59
+00:04:00,380 --> 00:04:03,290
+Kiểm định t về sự khác nhau và các giá trị trung bình 
+đưa ra khả năng
+
+60
+00:04:03,290 --> 00:04:08,989
+rằng không ở đây là sai, hay ta có thể nói,
+ giả thiết không bị bác bỏ.
+
+61
+00:04:08,989 --> 00:04:14,829
+Khi t-score tăng, khả năng cao là giá trị không cho rằng
+
+62
+00:04:14,829 --> 00:04:18,979
+ giá trị của x và y giống nhau sẽ bị bác bỏ.
+
+63
+00:04:18,979 --> 00:04:23,620
+Đó là những gì chúng ta thử và thực hiện
+ trong phân tích thực nghiệm.
+
+64
+00:04:23,620 --> 00:04:28,210
+Hãy chuyển từ thực nghiệm 2 điều kiện 
+đến một thực nghiệm 
+
+65
+00:04:28,210 --> 00:04:30,050
+mà có nhiều điều kiện hơn.
+
+66
+00:04:30,050 --> 00:04:35,259
+Những dữ liệu này khi đó được phân tích 
+bởi một quá trình gọi là ANOVA.
+
+67
+00:04:35,259 --> 00:04:38,490
+ANOVA là viết tắt của phân tích phương sai.
+
+68
+00:04:38,490 --> 00:04:44,740
+Lại lần nữa, giá trị không biểu thị giá trị trung bình 
+của các nhóm đều tương đương.
+
+69
+00:04:44,740 --> 00:04:48,450
+Gỉả thiết đối của nó là không phải tất cả các giá trị trung bình
+ đều tương đương.
+
+70
+00:04:48,450 --> 00:04:53,690
+Trong thực tế, nếu không tìm được minh chứng cho giả thiết không
+ hay nếu bạn bác bỏ giả thiết không
+
+71
+00:04:53,690 --> 00:04:57,560
+bạn có thể kết luận rằng các giá trị trung bình
+ đáp ứng những điều kiện của bạn 
+
+72
+00:04:57,560 --> 00:04:59,389
+là khác nhau.
+
+73
+00:04:59,389 --> 00:05:03,699
+Tuy nhiên, hãy nhớ rằng phân tích này không nói lên 
+
+74
+00:05:03,699 --> 00:05:05,280
+các giá trị trung bình này khác nhau 
+như thế nào và ở phương diện nào.
+
+75
+00:05:05,280 --> 00:05:11,400
+Bạn có thể kiểm chứng điều đó bằng cách
+ thực hiện so sánh nhiểu nhóm.
+
+76
+00:05:11,400 --> 00:05:15,229
+Đôi khi, ta gọi nó là hiệu ứng tương phản.
+
+77
+00:05:15,229 --> 00:05:25,370
+Một lần nữa, ANOVA sẽ cho bạn biết rằng
+ mô hình tổng thể thì khác nhau
+
+78
+00:05:25,370 --> 00:05:29,310
+nhưng không cho bạn biết chúng khác nhau thế nào
+ và ở mặt nào.
+
+79
+00:05:29,310 --> 00:05:33,159
+Tuy nhiên có thể dễ dàng kiểm định điều này
+ bằng việc so sánh nhiều nhóm.
+
+80
+00:05:33,159 --> 00:05:36,409
+Vậy ý nghĩa cơ bản của ANOVA là gì?
+
+81
+00:05:36,409 --> 00:05:39,270
+ANOVA xem xét 2 nguồn biến thiên trong dữ liệu
+
+82
+00:05:39,270 --> 00:05:44,580
+và so sánh kích thước tương đối của chúng.
+
+83
+00:05:44,580 --> 00:05:48,770
+Đầu tiên hãy nhìn vào các điều kiện biến thiên.
+
+84
+00:05:48,770 --> 00:05:52,099
+Quay trở lại với ví dụ trước đó về "vài xu lẻ".
+
+85
+00:05:52,099 --> 00:05:55,759
+Giả sử bạn đang thu thập - ở trên thang điểm 10- 
+
+86
+00:05:55,759 --> 00:06:01,060
+mức bằng lòng chi trả để xem liệu nguyên nhân là
+
+87
+00:06:01,060 --> 00:06:04,889
+giá trị cơ cấu ở dạng "vài xu lẻ"  hay ở điều kiện tựu chung.
+
+88
+00:06:04,889 --> 00:06:08,860
+ ANOVA sẽ xem xét sự khác nhau
+
+89
+00:06:08,860 --> 00:06:14,610
+giữa giá trị trung bình của điều kiện
+ và giá trị trung bình tổng thể.
+
+90
+00:06:14,610 --> 00:06:18,460
+Nó cũng xem xét sự biến thiên trong từng nhóm.
+
+91
+00:06:18,460 --> 00:06:23,409
+Nó xem xét cùng một biến số, mức bằng lòng chi trả
+
+92
+00:06:23,409 --> 00:06:27,909
+và sự khác nhau giữa giá trị của mỗi người tham gia
+
+93
+00:06:27,909 --> 00:06:34,070
+trong một nhóm nhất định
+ và giá trị trung bình của nhóm đó.
+
+94
+00:06:34,070 --> 00:06:41,289
+Nhìn vào biểu đồ đơn giản này.
+
+95
+00:06:41,289 --> 00:06:44,690
+Trong trường hợp này, bạn có 3 điều kiện.
+
+96
+00:06:44,690 --> 00:06:54,070
+Chúng ta gọi chúng là A, B, C. Trung bình của A là xA.
+
+97
+00:06:54,070 --> 00:06:57,139
+Của B là xB.
+
+98
+00:06:57,139 --> 00:07:04,250
+Của C là xC, và trung bình tổng thể là x.
+
+99
+00:07:04,250 --> 00:07:18,229
+Giữa điều kiện biến thiên so sánh lần lượt xA, xB, xC với x.
+
+100
+00:07:18,229 --> 00:07:21,389
+Ta so sánh biến thiên trong từng nhóm
+ hay trong từng điều kiện
+
+101
+00:07:21,389 --> 00:07:30,520
+và so sánh xA với từng giá trị của x trong nhóm A.
+
+102
+00:07:30,520 --> 00:07:35,129
+Trị thống kê tổng thể f là tỷ số giữa biến thiên giữa nhóm
+
+103
+00:07:35,129 --> 00:07:38,170
+chia cho biến thiên trong nhóm.
+
+104
+00:07:38,170 --> 00:07:46,250
+Khi f càng lớn, biến thiên đi qua hoặc giữa các nhóm
+
+105
+00:07:46,250 --> 00:07:50,080
+sẽ lớn hơn biến thiên trong từng nhóm
+
+106
+00:07:50,080 --> 00:07:51,740
+hay từng điều kiện.
+
+107
+00:07:51,740 --> 00:07:57,610
+Do đó, khi f càng lớn thì minh chứng 
+bác bỏ giả thiết không -- cho rằng
+
+108
+00:07:57,610 --> 00:08:03,300
+ tất cả các nhóm hay các điều kiện
+đều có cùng một giá trị trung bình--càng lớn. 
+
+109
+00:08:03,300 --> 00:08:08,520
+Do đó khi f càng lớn thì bạn sẽ càng
+chắn chắn là mình bác bỏ giả thiết không
+
+110
+00:08:08,520 --> 00:08:14,980
+và chứng tỏ thực tế có sự khác nhau
+ trong giá trị trung bình ở các nhóm thực nghiệm.
+

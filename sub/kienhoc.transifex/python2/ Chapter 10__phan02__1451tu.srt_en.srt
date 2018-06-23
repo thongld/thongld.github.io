@@ -1,0 +1,878 @@
+190
+00:08:30,394 --> 00:08:31,810
+https://youtu.be/odIMpHInDbA
+going through a
+dictionary and you
+
+191
+00:08:31,810 --> 00:08:34,020
+want to see both the
+keys and the values.
+
+192
+00:08:34,020 --> 00:08:38,830
+And then use this method inside
+of dictionary called d.items.
+
+193
+00:08:38,830 --> 00:08:40,789
+Another thing that's
+cool about tuples
+
+194
+00:08:40,789 --> 00:08:47,570
+are that they're comparable,
+so less than, greater than,
+
+195
+00:08:47,570 --> 00:08:48,880
+equals.
+
+196
+00:08:48,880 --> 00:08:54,610
+And so they first compare
+the first leftmost thing.
+
+197
+00:08:54,610 --> 00:08:56,610
+Then if that matches,
+they go to the second one.
+
+198
+00:08:56,610 --> 00:08:59,000
+And then if that one matches,
+they go to the third one.
+
+199
+00:08:59,000 --> 00:09:01,766
+And so if we're asking
+is 0, 1, 2 less than 5,
+
+200
+00:09:01,766 --> 00:09:04,270
+1, 2, and the answer is true.
+
+201
+00:09:04,270 --> 00:09:07,040
+And it only looks at the 0 and
+the 5, and that's less than.
+
+202
+00:09:07,040 --> 00:09:09,220
+So away we go.
+
+203
+00:09:09,220 --> 00:09:14,270
+If we ask is 0, 2, 2 million
+less than 0, 3, 4, well, 0 on 0
+
+204
+00:09:14,270 --> 00:09:14,900
+match.
+
+205
+00:09:14,900 --> 00:09:17,890
+So it goes to the
+second one, 1 and 3.
+
+206
+00:09:17,890 --> 00:09:20,020
+Well, they don't match
+and they're less than.
+
+207
+00:09:20,020 --> 00:09:22,030
+So 1 is less than 3.
+
+208
+00:09:22,030 --> 00:09:23,050
+So it's true.
+
+209
+00:09:23,050 --> 00:09:24,800
+And it doesn't even
+look at these numbers,
+
+210
+00:09:24,800 --> 00:09:25,830
+because it doesn't have to.
+
+211
+00:09:25,830 --> 00:09:26,020
+Right?
+
+212
+00:09:26,020 --> 00:09:28,240
+In this one, it doesn't
+look at those numbers.
+
+213
+00:09:28,240 --> 00:09:34,700
+And now if we say is Jones,
+Sally less than Jones, Fred,
+
+214
+00:09:34,700 --> 00:09:36,760
+well, it compares this.
+
+215
+00:09:36,760 --> 00:09:37,880
+They're equal.
+
+216
+00:09:37,880 --> 00:09:39,960
+So then it has to look
+to the second one,
+
+217
+00:09:39,960 --> 00:09:41,721
+is Sally less than Fred?
+
+218
+00:09:41,721 --> 00:09:42,220
+Well, no.
+
+219
+00:09:42,220 --> 00:09:47,010
+Because S is not less than F.
+And so that answer is false.
+
+220
+00:09:47,010 --> 00:09:52,440
+Is Jones, Sally greater
+than Adams, Sam?
+
+221
+00:09:52,440 --> 00:09:54,480
+Well, Jones is
+greater than Adams,
+
+222
+00:09:54,480 --> 00:09:56,610
+so it never looks
+at these variables.
+
+223
+00:09:56,610 --> 00:09:59,490
+And that turns out to be true.
+
+224
+00:09:59,490 --> 00:10:02,290
+So these are
+comparable, which means
+
+225
+00:10:02,290 --> 00:10:05,930
+we can use the less than,
+less than or equal to, greater
+
+226
+00:10:05,930 --> 00:10:09,350
+than or equal to, equal
+to, or not equal to.
+
+227
+00:10:09,350 --> 00:10:12,980
+So we can use these
+operators on whole tuples.
+
+228
+00:10:12,980 --> 00:10:15,490
+Now, this turns out
+to be quite nice.
+
+229
+00:10:15,490 --> 00:10:21,390
+Because things that can be
+compared can also be sorted.
+
+230
+00:10:21,390 --> 00:10:22,810
+OK.
+
+231
+00:10:22,810 --> 00:10:28,250
+So here is A, B,
+and C. A maps to 10.
+
+232
+00:10:28,250 --> 00:10:29,030
+B maps to 1.
+
+233
+00:10:29,030 --> 00:10:30,570
+C maps to 22.
+
+234
+00:10:30,570 --> 00:10:33,190
+If I look at the
+items, I get back
+
+235
+00:10:33,190 --> 00:10:36,770
+a list of two tuples,
+three two tuples.
+
+236
+00:10:36,770 --> 00:10:41,830
+They are not sorted, because
+dictionaries aren't sorted.
+
+237
+00:10:41,830 --> 00:10:42,610
+A maps to 10.
+
+238
+00:10:42,610 --> 00:10:43,350
+C maps to 22.
+
+239
+00:10:43,350 --> 00:10:44,270
+And B maps to 1.
+
+240
+00:10:44,270 --> 00:10:47,150
+The order that these come
+out in is not something
+
+241
+00:10:47,150 --> 00:10:49,410
+that we can control.
+
+242
+00:10:49,410 --> 00:10:53,840
+But if we put these items
+into a variable, called it t,
+
+243
+00:10:53,840 --> 00:10:56,800
+t is the list of
+tuples basically,
+
+244
+00:10:56,800 --> 00:10:59,130
+and then we tell it
+to sort, it can do
+
+245
+00:10:59,130 --> 00:11:02,800
+comparisons between all these.
+
+246
+00:11:02,800 --> 00:11:04,140
+And it can sort them.
+
+247
+00:11:04,140 --> 00:11:08,470
+And now they're sorted in
+key order, A, B, C. Now,
+
+248
+00:11:08,470 --> 00:11:10,160
+you'll never get
+any keys that match.
+
+249
+00:11:10,160 --> 00:11:12,180
+So it never looks at
+the second one, right?
+
+250
+00:11:12,180 --> 00:11:15,850
+Because there's one and
+only one key A or B or C.
+
+251
+00:11:15,850 --> 00:11:17,900
+The value 10 never
+gets looked at.
+
+252
+00:11:17,900 --> 00:11:26,580
+So this ends up sort
+by key, sort by keys.
+
+253
+00:11:26,580 --> 00:11:29,310
+So this a way to sort by keys.
+
+254
+00:11:29,310 --> 00:11:31,770
+We take a dictionary,
+we get back a list
+
+255
+00:11:31,770 --> 00:11:33,830
+of tuples, key value tuples.
+
+256
+00:11:33,830 --> 00:11:35,960
+Then we sort that
+dictionary-- I mean,
+
+257
+00:11:35,960 --> 00:11:38,200
+sort that list of
+key value tuples.
+
+258
+00:11:38,200 --> 00:11:39,850
+And then it's sorted by key.
+
+259
+00:11:39,850 --> 00:11:40,350
+OK.
+
+260
+00:11:40,350 --> 00:11:43,380
+So that's one sort.
+
+261
+00:11:43,380 --> 00:11:51,090
+There is a built-in function
+in Python called sorted,
+
+262
+00:11:51,090 --> 00:11:53,270
+which takes as a
+parameter a list
+
+263
+00:11:53,270 --> 00:11:56,130
+and gives you back a sorted
+version of that list.
+
+264
+00:11:56,130 --> 00:11:58,820
+So we can collapse
+these operations
+
+265
+00:11:58,820 --> 00:12:04,150
+by saying, well, d sub items is
+this list of tuples non-sorted.
+
+266
+00:12:04,150 --> 00:12:08,210
+But sorted of d sub items
+is that same list of tuples,
+
+267
+00:12:08,210 --> 00:12:09,100
+but then sorted.
+
+268
+00:12:09,100 --> 00:12:15,270
+So immediately in one step,
+we have A, B, and C properly
+
+269
+00:12:15,270 --> 00:12:16,480
+sorted.
+
+270
+00:12:16,480 --> 00:12:19,340
+And we can combine all
+this into one nice little
+
+271
+00:12:19,340 --> 00:12:24,000
+for statement, where we say for
+k, v in sorted of d sub items.
+
+272
+00:12:24,000 --> 00:12:27,520
+So this is now going to
+first sort the key value
+
+273
+00:12:27,520 --> 00:12:31,530
+pairs by key, and then k, v
+is going to run through them.
+
+274
+00:12:31,530 --> 00:12:35,990
+So k's going to be A 10,
+then k is going to be B.
+
+275
+00:12:35,990 --> 00:12:37,660
+v is going to be 1.
+
+276
+00:12:37,660 --> 00:12:40,580
+k is going to be C.
+B is going to be 22.
+
+277
+00:12:40,580 --> 00:12:42,400
+So now we've printed
+these things out
+
+278
+00:12:42,400 --> 00:12:44,650
+in alphabetical key order.
+
+279
+00:12:44,650 --> 00:12:45,440
+OK.
+
+280
+00:12:45,440 --> 00:12:47,470
+So by adding sorted
+to d.items, that
+
+281
+00:12:47,470 --> 00:12:54,170
+means that this loop is going
+to run in key sorted order,
+
+282
+00:12:54,170 --> 00:12:56,300
+key sorted order.
+
+283
+00:12:56,300 --> 00:12:59,050
+And that's because
+sorted takes a list,
+
+284
+00:12:59,050 --> 00:13:03,080
+and then returns-- takes a
+list as unsorted list as input
+
+285
+00:13:03,080 --> 00:13:04,665
+and returns a sorted list.
+
+286
+00:13:04,665 --> 00:13:07,525
+
+287
+00:13:07,525 --> 00:13:09,850
+OK?
+
+288
+00:13:09,850 --> 00:13:14,020
+Now if we're doing something
+like our common problem
+
+289
+00:13:14,020 --> 00:13:15,640
+of what's the most
+common word, what
+
+290
+00:13:15,640 --> 00:13:19,080
+if we want to say what's
+the five most common words?
+
+291
+00:13:19,080 --> 00:13:23,210
+In that case, we probably want
+to sort in descending order
+
+292
+00:13:23,210 --> 00:13:26,590
+by the values not the key.
+
+293
+00:13:26,590 --> 00:13:28,830
+OK?
+
+294
+00:13:28,830 --> 00:13:32,230
+So we want to sort by the
+values instead of the key.
+
+295
+00:13:32,230 --> 00:13:34,160
+So this is a situation
+where we're going
+
+296
+00:13:34,160 --> 00:13:36,790
+to create a temporary variable.
+
+297
+00:13:36,790 --> 00:13:39,520
+So here's how we're
+going to do it.
+
+298
+00:13:39,520 --> 00:13:42,580
+Here is our
+dictionary with A 10.
+
+299
+00:13:42,580 --> 00:13:44,580
+And we want to sort,
+now, by the values.
+
+300
+00:13:44,580 --> 00:13:48,610
+We want to maybe see the most
+common or sort by the values.
+
+301
+00:13:48,610 --> 00:13:52,322
+And so we're going to
+make a temporary list.
+
+302
+00:13:52,322 --> 00:13:54,280
+And then we're going to
+loop through the items.
+
+303
+00:13:54,280 --> 00:13:56,979
+
+304
+00:13:56,979 --> 00:13:58,770
+So this is going to
+just loop through them.
+
+305
+00:13:58,770 --> 00:14:01,800
+And it's going to loop through
+them in non-sorted order.
+
+306
+00:14:01,800 --> 00:14:05,930
+And we are going to add
+using the append operation
+
+307
+00:14:05,930 --> 00:14:08,020
+to this little list
+that we're making.
+
+308
+00:14:08,020 --> 00:14:14,280
+But we're going to add a
+tuple that is value, key.
+
+309
+00:14:14,280 --> 00:14:18,300
+So if we make the value
+first and the key second,
+
+310
+00:14:18,300 --> 00:14:19,310
+in this tuple.
+
+311
+00:14:19,310 --> 00:14:22,790
+So this syntax here of
+this parentheses v,k,
+
+312
+00:14:22,790 --> 00:14:27,210
+that means make a two tuple
+with values from the v and k
+
+313
+00:14:27,210 --> 00:14:30,330
+variable and append to list.
+
+314
+00:14:30,330 --> 00:14:34,660
+So you're going to end up
+with a list of two tuples.
+
+315
+00:14:34,660 --> 00:14:37,960
+So if we take a look when
+we're all done with this,
+
+316
+00:14:37,960 --> 00:14:39,380
+each of these is a tuple.
+
+317
+00:14:39,380 --> 00:14:40,770
+10A gets appended.
+
+318
+00:14:40,770 --> 00:14:44,030
+22C gets appended.
+
+319
+00:14:44,030 --> 00:14:46,810
+And it was simply
+the opposite order.
+
+320
+00:14:46,810 --> 00:14:49,190
+Each of the tuples
+now has the value
+
+321
+00:14:49,190 --> 00:14:53,690
+first and the key second, value
+first, key second, value first,
+
+322
+00:14:53,690 --> 00:14:54,410
+key second.
+
+323
+00:14:54,410 --> 00:14:57,690
+So this is a bit of temporary
+data that we've created.
+
+324
+00:14:57,690 --> 00:15:00,830
+This is a bit of temporary
+data that we've created.
+
+325
+00:15:00,830 --> 00:15:05,070
+Then what we do is we
+call the sort method.
+
+326
+00:15:05,070 --> 00:15:07,990
+Take this list--
+lists are mutable.
+
+327
+00:15:07,990 --> 00:15:09,860
+The individual tuples
+can't be changed.
+
+328
+00:15:09,860 --> 00:15:11,810
+But the order of the
+tuples can be changed,
+
+329
+00:15:11,810 --> 00:15:14,130
+because they are in a list.
+
+330
+00:15:14,130 --> 00:15:15,980
+Temp dot sort, and
+then we're going
+
+331
+00:15:15,980 --> 00:15:17,660
+to say reverse equals true.
+
+332
+00:15:17,660 --> 00:15:21,390
+So we sort from the
+highest down to the lowest.
+
+333
+00:15:21,390 --> 00:15:22,470
+OK.
+
+334
+00:15:22,470 --> 00:15:24,840
+And now temp has been sorted.
+
+335
+00:15:24,840 --> 00:15:27,852
+And now it is in a
+new order, 22, 10,
+
+336
+00:15:27,852 --> 00:15:30,480
+1 is what caused
+it to be sorted.
+
+337
+00:15:30,480 --> 00:15:33,090
+So we know that
+the biggest value
+
+338
+00:15:33,090 --> 00:15:38,370
+is 22, the key of C. Next
+biggest is 10 with a key of A.
+
+339
+00:15:38,370 --> 00:15:42,290
+And the smallest is a
+value of 1 with a key of B.
+
+340
+00:15:42,290 --> 00:15:46,370
+So the trick here is if we
+want to sort in some other way,
+
+341
+00:15:46,370 --> 00:15:49,272
+we just construct a list
+where we put it in the order
+
+342
+00:15:49,272 --> 00:15:50,230
+that we want it sorted.
+
+343
+00:15:50,230 --> 00:15:53,270
+And this is more important now,
+the value is more important,
+
+344
+00:15:53,270 --> 00:15:54,620
+than the key.
+
+345
+00:15:54,620 --> 00:16:02,500
+Now if we had 22 f, it
+would sort first on the 22,
+
+346
+00:16:02,500 --> 00:16:06,537
+and then it would sort
+the f, 1 after the c, 1.
+
+347
+00:16:06,537 --> 00:16:07,870
+So we don't have any duplicates.
+
+348
+00:16:07,870 --> 00:16:10,815
+But we could have
+the key of C to 22.
+
+349
+00:16:10,815 --> 00:16:12,400
+And we could have F also to 22.
+
+350
+00:16:12,400 --> 00:16:14,800
+
+351
+00:16:14,800 --> 00:16:15,300
+OK.
+
+352
+00:16:15,300 --> 00:16:18,050
+So take some time on this.
+
+353
+00:16:18,050 --> 00:16:20,210
+Get this one right.
+
+354
+00:16:20,210 --> 00:16:22,660
+So now I want to
+show you a program
+
+355
+00:16:22,660 --> 00:16:26,090
+that is going to show you
+the 10 most common words.
+
+356
+00:16:26,090 --> 00:16:35,410
+We did a loop before, where
+we did the most common word
+
+357
+00:16:35,410 --> 00:16:37,530
+by doing a maximum
+loop at the end
+
+358
+00:16:37,530 --> 00:16:40,610
+by looking through all of
+the counts in a dictionary,
+
+359
+00:16:40,610 --> 00:16:42,130
+and then picking the maximum.
+
+360
+00:16:42,130 --> 00:16:44,130
+But if you wanted the top 10?
+
+361
+00:16:44,130 --> 00:16:44,724
+Right?
+
+362
+00:16:44,724 --> 00:16:46,390
+You don't want to
+write a loop for that.
+
+363
+00:16:46,390 --> 00:16:47,700
+So we're going to use sorting.
+
+364
+00:16:47,700 --> 00:16:49,990
+So here's what
+we're going to do.
+
+365
+00:16:49,990 --> 00:16:52,630
+We're going to open a file.
+
+366
+00:16:52,630 --> 00:16:55,870
+We're going to create a
+empty counts dictionary.
+
+367
+00:16:55,870 --> 00:17:00,560
+Then we're going to write a
+for loop that reads each line,
+
+368
+00:17:00,560 --> 00:17:02,470
+for line in fhand.
+
+369
+00:17:02,470 --> 00:17:04,720
+Then I'm going to
+split each line
+
+370
+00:17:04,720 --> 00:17:09,349
+into words based on the
+spaces using the dot split.
+
+371
+00:17:09,349 --> 00:17:13,540
+Then I'm going to loop through
+each word in each line and use
+
+372
+00:17:13,540 --> 00:17:18,410
+our histogram or
+dictionary pattern,
+
+373
+00:17:18,410 --> 00:17:21,900
+where I say count sub word
+equals counts.get, word,zero.
+
+374
+00:17:21,900 --> 00:17:25,410
+That basically says
+go look in counts.
+
+375
+00:17:25,410 --> 00:17:28,910
+If the word key exists, give me
+back the value that's in that.
+
+376
+00:17:28,910 --> 00:17:30,410
+Otherwise, give me 0.
+
+377
+00:17:30,410 --> 00:17:34,120
+So this both creates the
+new entries and updates
+
+378
+00:17:34,120 --> 00:17:37,590
+old entries all in one
+nice simple statement.
+

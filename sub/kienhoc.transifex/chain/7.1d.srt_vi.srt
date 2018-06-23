@@ -1,0 +1,508 @@
+0
+00:00:00,000 --> 00:00:01,290
+tangoclinhh_23/10/2017
+
+1
+00:00:01,290 --> 00:00:03,240
+Giờ hãy cùng nhau mở rộng những gì chúng ta đã học
+
+2
+00:00:03,240 --> 00:00:05,970
+từ tình huống có các đơn hàng chờ giao được dự tính trước
+
+3
+00:00:05,970 --> 00:00:08,420
+với nhu cầu tất yếu, và giờ là trường hợp
+
+4
+00:00:08,420 --> 00:00:11,070
+ta có nhu cầu theo xác suất và ngẫu nhiên.
+
+5
+00:00:11,070 --> 00:00:13,210
+Trước tiên ta sẽ tập trung vào mô hình đơn giản nhất,
+
+6
+00:00:13,210 --> 00:00:15,960
+đó là bài toán người bán báo
+
+7
+00:00:15,960 --> 00:00:18,070
+hay mô hình hàng hóa một thời kỳ.
+
+8
+00:00:18,070 --> 00:00:21,220
+Hãy bắt đầu xem xét các giả định.
+
+9
+00:00:21,220 --> 00:00:24,870
+Với các mô hình một thời kỳ mà ta sắp xây dựng,
+
+10
+00:00:24,870 --> 00:00:26,920
+ta có một vài sự thay đổi về giả định.
+
+11
+00:00:26,920 --> 00:00:29,250
+Đầu tiên là nhu cầu.
+
+12
+00:00:29,250 --> 00:00:33,030
+Thay vì nhu cầu cố định và biết trước,
+
+13
+00:00:33,030 --> 00:00:34,380
+giờ nó sẽ biến thiên và ngẫu nhiên.
+
+14
+00:00:34,380 --> 00:00:36,950
+Bởi vì ta có nhu cầu ngẫu nhiên,
+
+15
+00:00:36,950 --> 00:00:39,620
+xác suất tôi bị dư hàng
+
+16
+00:00:39,620 --> 00:00:40,920
+sẽ cao hơn.
+
+17
+00:00:40,920 --> 00:00:42,210
+Tương tự, xác suất thiếu hàng cũng vậy.
+
+18
+00:00:42,210 --> 00:00:46,030
+Vậy ta sẽ làm gì với các trường hợp ngắn này?
+
+19
+00:00:46,030 --> 00:00:48,260
+Ta sẽ bị mất một số đơn hàng.
+
+20
+00:00:48,260 --> 00:00:49,990
+Và cuối cùng, sự thay đổi lớn nhất
+
+21
+00:00:49,990 --> 00:00:52,520
+đối với mô hình một thời kỳ này,
+
+22
+00:00:52,520 --> 00:00:54,710
+là ta chuyển từ chu kỳ kế hoạch vô hạn
+
+23
+00:00:54,710 --> 00:00:57,840
+sang một thời kỳ.
+
+24
+00:00:57,840 --> 00:01:01,940
+Vậy kế hoạch của tôi sẽ là một thời kỳ bán hàng
+
+25
+00:01:01,940 --> 00:01:05,310
+và tôi cần quyết định sẽ đặt trước bao nhiêu hàng
+
+26
+00:01:05,310 --> 00:01:08,650
+và không thể bổ sung hàng trong khoảng thời gian đó được.
+
+27
+00:01:08,650 --> 00:01:10,920
+Đây được gọi là bài toán người bán báo.
+
+28
+00:01:10,920 --> 00:01:14,910
+Hãy mở rộng bài toán này bằng cách xét một ví dụ.
+
+29
+00:01:14,910 --> 00:01:18,810
+Ví dụ này dựa trên một luận điểm năm 2004.
+
+30
+00:01:18,810 --> 00:01:20,290
+Tình huống là có một công ty
+
+31
+00:01:20,290 --> 00:01:24,080
+tên là Reebok, vào năm 2002,
+
+32
+00:01:24,080 --> 00:01:28,000
+họ được độc quyền bán áo thun NFL.
+
+33
+00:01:28,000 --> 00:01:31,480
+Những chiếc áo thun này được bán cho người hâm mộ ở Liên bang Mỹ,
+
+34
+00:01:31,480 --> 00:01:35,030
+Liên đoàn Bóng đá Quốc gia, viết tắt là NFL,
+
+35
+00:01:35,030 --> 00:01:37,250
+là một trong những tổ chức thể thao nổi tiếng nhất.
+
+36
+00:01:37,250 --> 00:01:39,860
+Bóng đá Mỹ là một môn thể thao chuyên nghiệp,
+
+37
+00:01:39,860 --> 00:01:45,040
+có 32 đội, mỗi đội có 50 người chơi, và những người hâm mộ
+
+38
+00:01:45,040 --> 00:01:48,690
+thích mua những chiếc áo thun này
+
+39
+00:01:48,690 --> 00:01:51,820
+để thể hiện rằng họ là một thành viên của đội.
+
+40
+00:01:51,820 --> 00:01:53,432
+Đây là một bức ảnh, trong đó có
+
+41
+00:01:53,432 --> 00:01:55,930
+Tom Brady của đội New England Patriots
+
+42
+00:01:55,930 --> 00:01:57,940
+và áo thun của anh ấy mang số 12.
+
+43
+00:01:57,940 --> 00:02:00,790
+Mọi người thích mua áo số 12 của đội New England Patriots
+
+44
+00:02:00,790 --> 00:02:03,740
+với chữ Brady trên lưng. 
+
+45
+00:02:03,740 --> 00:02:06,340
+Mỗi chiếc áo thun có một tên và số trên đó
+
+46
+00:02:06,340 --> 00:02:09,300
+nên có rất nhiều mã SKU.
+
+47
+00:02:09,300 --> 00:02:12,960
+Đây là cách mà chúng được bán ra:
+
+48
+00:02:12,960 --> 00:02:15,390
+Có một khoảng thời gian đỉnh điểm cuối mùa hè
+
+49
+00:02:15,390 --> 00:02:19,220
+trước khi mùa thu bắt đầu, khoảng 8 tháng.
+
+50
+00:02:19,220 --> 00:02:22,780
+Phần lớn áo thun được bán ra vào thời điểm đó.
+
+51
+00:02:22,780 --> 00:02:25,680
+Những chiếc áo thun được sản xuất
+
+52
+00:02:25,680 --> 00:02:28,180
+từ việc liên kết giữa các nhà sản xuất
+
+53
+00:02:28,180 --> 00:02:30,540
+và cần khoảng từ 12 đến 16 tuần
+
+54
+00:02:30,540 --> 00:02:34,550
+để hoàn thành đơn hàng bởi vì chúng được làm từ các nước khác nhau.
+
+55
+00:02:34,550 --> 00:02:36,350
+Bạn có thể thấy vấn đề ở đây là
+
+56
+00:02:36,350 --> 00:02:40,020
+họ phải đặt hàng trong 16 tuần
+
+57
+00:02:40,020 --> 00:02:42,580
+và chỉ có 8 tuần để bán hàng.
+
+58
+00:02:42,580 --> 00:02:45,600
+Do đó, đây chính là bài toán một thời kỳ.
+
+59
+00:02:45,600 --> 00:02:49,590
+Vấn đề là Reebok phải quy ước trước một đơn hàng
+
+60
+00:02:49,590 --> 00:02:53,670
+với một số lượng áo cho mỗi cầu thủ của mỗi đội
+
+61
+00:02:53,670 --> 00:02:56,670
+trong khi nhu cầu phát sinh trong suốt 8 tuần bán hàng
+
+62
+00:02:56,670 --> 00:02:59,390
+là hoàn toàn không cố định,
+
+63
+00:02:59,390 --> 00:03:02,010
+nên họ không thể trở tay trong thời kỳ bán hàng được.
+
+64
+00:03:02,010 --> 00:03:04,790
+Nếu một chiếc áo thun bắt đầu được bán chạy,
+
+65
+00:03:04,790 --> 00:03:07,480
+họ không thể đột nhiên đặt nhiều hàng hơn và ngược lại.
+
+66
+00:03:07,480 --> 00:03:10,940
+Họ không thể giảm đơn hàng trong thời kỳ bán hàng được.
+
+67
+00:03:10,940 --> 00:03:12,580
+Câu hỏi mà Reebok đặt ra là
+
+68
+00:03:12,580 --> 00:03:16,580
+họ nên đặt hàng bao nhiêu áo đối với mỗi cầu thủ?
+
+69
+00:03:16,580 --> 00:03:19,410
+Nghe có vẻ như đây là một vấn đề rất đặc biệt,
+
+70
+00:03:19,410 --> 00:03:21,040
+nhưng không hề.
+
+71
+00:03:21,040 --> 00:03:23,670
+Bài toán này rất phổ biến, không có gì lạ.
+
+72
+00:03:23,670 --> 00:03:26,440
+Nó được gọi là bài toán người bán báo bởi vì
+
+73
+00:03:26,440 --> 00:03:30,060
+nó xuất phát từ ý tưởng một người bán báo,
+
+74
+00:03:30,060 --> 00:03:32,300
+mỗi ngày họ phải đi
+
+75
+00:03:32,300 --> 00:03:34,840
+mua một số lượng báo từ đại lý
+
+76
+00:03:34,840 --> 00:03:36,360
+và bán chúng trên phố.
+
+77
+00:03:36,360 --> 00:03:40,720
+Cuối ngày, với mỗi tờ báo không bán được,
+
+78
+00:03:40,720 --> 00:03:42,780
+họ sẽ phải ăn chúng hoặc vứt chúng đi.
+
+79
+00:03:42,780 --> 00:03:45,490
+Họ không thể bán báo đó vào ngày mai được.
+
+80
+00:03:45,490 --> 00:03:48,080
+Chẳng ai muốn mua báo từ ngày hôm qua cả.
+
+81
+00:03:48,080 --> 00:03:49,839
+Và nếu trong ngày hôm đó
+
+82
+00:03:49,839 --> 00:03:51,380
+có nhiều người muốn mua báo hơn số báo có sẵn,
+
+83
+00:03:51,380 --> 00:03:52,900
+người bán báo không thể bổ sung hàng được.
+
+84
+00:03:52,900 --> 00:03:56,050
+Vậy nên bài toán người bán báo, về cơ bản
+
+85
+00:03:56,050 --> 00:03:57,820
+chính là bài toán hàng hóa một thời kỳ.
+
+86
+00:03:57,820 --> 00:04:01,020
+Cách để bạn nhận biết chúng là bất cứ khi nào
+
+87
+00:04:01,020 --> 00:04:04,665
+một doanh nghiệp phải đánh cược xem đặt bao nhiêu hàng,
+
+88
+00:04:04,665 --> 00:04:08,670
+một Q* trong một thời kỳ đơn lẻ cố định nào đó
+
+89
+00:04:08,670 --> 00:04:11,520
+khi họ không thể bổ sung hàng kịp,
+
+90
+00:04:11,520 --> 00:04:12,740
+ và nhu cầu thị trường là không cố định trong giai đoạn đó.
+
+91
+00:04:12,740 --> 00:04:15,260
+Để tôi cho bạn thêm một vài dữ liệu trong bài toán này.
+
+92
+00:04:15,260 --> 00:04:17,950
+
+
+93
+00:04:17,950 --> 00:04:20,800
+Chi phí mà Reebok phải trả cho một chiếc áo thun là
+
+94
+00:04:20,800 --> 00:04:22,630
+khoảng 10,9$.
+
+95
+00:04:22,630 --> 00:04:27,050
+Họ bán chúng cho các đại lý bán lẻ với giá 24$ một chiếc.
+
+96
+00:04:27,050 --> 00:04:29,540
+Và họ dự đoán rằng nhu cầu trong 8 tuần bán hàng
+
+97
+00:04:29,540 --> 00:04:32,350
+sẽ là khoảng 32000 chiếc áo thun.
+
+98
+00:04:32,350 --> 00:04:35,640
+Đó là ước tính cho áo thun của Tom Brady,
+
+99
+00:04:35,640 --> 00:04:36,510
+với sai số tiêu chuẩn là 11000 chiếc.
+
+100
+00:04:36,510 --> 00:04:39,980
+Họ thấy rằng áo được phân phối theo cách bình thường.
+
+101
+00:04:39,980 --> 00:04:44,320
+Thứ họ muốn tìm là Q*,
+
+102
+00:04:44,320 --> 00:04:47,500
+chính là số lượng đặt hàng mà ở đó lợi nhuận của họ là tối đa.
+
+103
+00:04:47,500 --> 00:04:50,520
+Hãy nhớ rằng điều này khác với mọi thứ ta đã làm với EOQ.
+
+104
+00:04:50,520 --> 00:04:52,930
+Với EOQ, ta muốn tối thiểu hóa chi phí.
+
+105
+00:04:52,930 --> 00:04:55,200
+Còn ở đây ta muốn tối đa hóa lợi nhuận.
+
+106
+00:04:55,200 --> 00:04:56,820
+Hàm số lợi nhuận của ta là gì?
+
+107
+00:04:56,820 --> 00:05:00,070
+Đơn giản nó sẽ là p - giá mua
+
+108
+00:05:00,070 --> 00:05:04,790
+nhân với con số nhỏ nhất của hoặc nhu cầu mua hàng
+
+109
+00:05:04,790 --> 00:05:07,960
+hoặc q - số lượng hàng mà tôi đã đặt.
+
+110
+00:05:07,960 --> 00:05:09,950
+Tôi không thể bán ra nhiều hơn số hàng tôi đã đặt
+
+111
+00:05:09,950 --> 00:05:12,360
+và cũng không thể bán nhiều hơn số người muốn mua.
+
+112
+00:05:12,360 --> 00:05:14,360
+Số nhỏ hơn trong 2 số đó
+
+113
+00:05:14,360 --> 00:05:16,474
+sẽ là số lượng hàng mà tôi có thể bán ra.
+
+114
+00:05:16,474 --> 00:05:17,890
+Sau đó tôi sẽ trừ đi
+
+115
+00:05:17,890 --> 00:05:20,500
+c nhân q, tức là
+
+116
+00:05:20,500 --> 00:05:22,220
+trừ đi lượng mà tôi đã đặt.
+
+117
+00:05:22,220 --> 00:05:24,150
+Vấn đề là ta không biết x là bao nhiêu,
+
+118
+00:05:24,150 --> 00:05:26,750
+nó là một giá trị ngẫu nhiên.
+
+119
+00:05:26,750 --> 00:05:28,250
+Đó chính là chỗ đánh đố.
+
+120
+00:05:28,250 --> 00:05:29,952
+Vậy tôi sẽ xác định chính sách tốt nhất như thế nào?
+
+121
+00:05:29,952 --> 00:05:31,910
+Trong 2 video tiếp theo 
+
+122
+00:05:31,910 --> 00:05:33,610
+ta sẽ tìm hiểu 2 cách khác nhau.
+
+123
+00:05:33,610 --> 00:05:35,300
+Tôi sẽ bắt đầu với một bảng dữ liệu
+
+124
+00:05:35,300 --> 00:05:37,130
+và sau đó đi phân tích biên.
+
+125
+00:05:37,130 --> 00:05:40,205
+Vậy tiếp theo hãy cùng bắt đầu với bảng dữ liệu.
+
+126
+00:05:40,205 --> 00:05:40,705
+
+

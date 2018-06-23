@@ -1,0 +1,188 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/-RLDOq-sW6g
+
+1
+00:00:00,000 --> 00:00:00,437
+
+2
+00:00:00,437 --> 00:00:02,770
+DR. JONATHAN VALVANO: So
+here's our stepper motor robot.
+
+3
+00:00:02,770 --> 00:00:04,880
+And let's review the components.
+
+4
+00:00:04,880 --> 00:00:07,810
+Up here is the launch pad.
+
+5
+00:00:07,810 --> 00:00:12,370
+And we have two stepper motors,
+each one tied to a wheel.
+
+6
+00:00:12,370 --> 00:00:14,595
+There's one stepper motor
+tied to the left wheel,
+
+7
+00:00:14,595 --> 00:00:17,250
+and another one to the right wheel.
+
+8
+00:00:17,250 --> 00:00:19,060
+We have two sensors.
+
+9
+00:00:19,060 --> 00:00:24,510
+We have the left bumper sensor
+here, which is just a switch
+
+10
+00:00:24,510 --> 00:00:28,210
+and the right bumper switch as well.
+
+11
+00:00:28,210 --> 00:00:32,910
+On the protoboard here are
+the L293 motor drivers.
+
+12
+00:00:32,910 --> 00:00:38,490
+Here's the one driver, and
+over here is the second driver.
+
+13
+00:00:38,490 --> 00:00:41,840
+This pretty black chip
+here is the regulator,
+
+14
+00:00:41,840 --> 00:00:45,630
+which takes power from the
+battery, the 8.4 volts,
+
+15
+00:00:45,630 --> 00:00:50,720
+and generates 5 volts out
+to power the launch pad.
+
+16
+00:00:50,720 --> 00:00:56,460
+DR. RAMESH YERRABALLI: The two sensors
+are connected to port E pins 1 and 0,
+
+17
+00:00:56,460 --> 00:01:01,970
+and the two stepper motors
+are connected to port B.
+
+18
+00:01:01,970 --> 00:01:04,260
+And what are those back sensors, Jon?
+
+19
+00:01:04,260 --> 00:01:05,600
+DR. JONATHAN VALVANO: Oh.
+
+20
+00:01:05,600 --> 00:01:08,750
+Well, every robot has to
+protect itself, and you
+
+21
+00:01:08,750 --> 00:01:12,070
+don't want to run into
+things going backwards,
+
+22
+00:01:12,070 --> 00:01:14,685
+so the back ones are
+for future development.
+
+23
+00:01:14,685 --> 00:01:16,060
+DR. RAMESH YERRABALLI: All right.
+
+24
+00:01:16,060 --> 00:01:16,894
+So let's try it out.
+
+25
+00:01:16,894 --> 00:01:19,143
+DR. JONATHAN VALVANO: All
+right, here's the on switch.
+
+26
+00:01:19,143 --> 00:01:20,160
+Look out.
+
+27
+00:01:20,160 --> 00:01:21,140
+Stand back.
+
+28
+00:01:21,140 --> 00:01:23,180
+It might explode.
+
+29
+00:01:23,180 --> 00:01:26,570
+DR. RAMESH YERRABALLI: And this
+an approaching from the side
+
+30
+00:01:26,570 --> 00:01:29,280
+where it turns in response.
+
+31
+00:01:29,280 --> 00:01:36,710
+Now, if you want to try the
+other configuration, where
+
+32
+00:01:36,710 --> 00:01:40,810
+this is going to approach
+from the other angle,
+
+33
+00:01:40,810 --> 00:01:45,340
+it should turn according to that
+finite state machine design.
+
+34
+00:01:45,340 --> 00:01:53,080
+Now, it's going to be harder for us
+to simulate, or envision the situation
+
+35
+00:01:53,080 --> 00:01:56,820
+where both bumpers hit at the same time.
+
+36
+00:01:56,820 --> 00:02:01,040
+It's unlikely, so because
+this one struck first,
+
+37
+00:02:01,040 --> 00:02:03,517
+it's going to turn to the right.
+
+38
+00:02:03,517 --> 00:02:04,850
+DR. JONATHAN VALVANO: All right.
+
+39
+00:02:04,850 --> 00:02:09,062
+Will this robot protect itself,
+or will it fall off the table?
+
+40
+00:02:09,062 --> 00:02:11,620
+DR. RAMESH YERRABALLI: It
+will fall off the table.
+
+41
+00:02:11,620 --> 00:02:12,120

@@ -1,0 +1,204 @@
+0
+00:00:00,000 --> 00:00:01,040
+https://youtu.be/OPzh_IoCmLE
+
+1
+00:00:01,040 --> 00:00:03,360
+In this lesson we're going to expand
+
+2
+00:00:03,360 --> 00:00:05,250
+our discussion of inventory models
+
+3
+00:00:05,250 --> 00:00:08,940
+to where we allow there to be stockouts, or shortages.
+
+4
+00:00:08,940 --> 00:00:12,180
+We're going to eventually focus in on single period models.
+
+5
+00:00:12,180 --> 00:00:15,380
+But initially, I want to first look back at the simple EOQ
+
+6
+00:00:15,380 --> 00:00:17,600
+model we developed in the last lesson,
+
+7
+00:00:17,600 --> 00:00:20,880
+but this time allow a certain assumption to be loosened --
+
+8
+00:00:20,880 --> 00:00:24,550
+that is, that we allow planned backorders, at some cost.
+
+9
+00:00:24,550 --> 00:00:26,750
+And this fundamental change in assumptions
+
+10
+00:00:26,750 --> 00:00:29,700
+will help lead us in to how we can handle uncertainty
+
+11
+00:00:29,700 --> 00:00:30,780
+in demand.
+
+12
+00:00:30,780 --> 00:00:32,837
+So let's look at our list of assumptions.
+
+13
+00:00:32,837 --> 00:00:35,170
+And so now we want to come up with a list of assumptions
+
+14
+00:00:35,170 --> 00:00:36,950
+for planned backorders.
+
+15
+00:00:36,950 --> 00:00:41,060
+So I'm going to allow you to have backordered demand,
+
+16
+00:00:41,060 --> 00:00:42,950
+but it's going to be at some certain cost.
+
+17
+00:00:42,950 --> 00:00:45,320
+So the only assumption that we're loosening
+
+18
+00:00:45,320 --> 00:00:49,270
+is that there can be excess demand, because before, we
+
+19
+00:00:49,270 --> 00:00:51,079
+assumed that there would be none.
+
+20
+00:00:51,079 --> 00:00:53,620
+And we're going to assume that if there is any excess demand,
+
+21
+00:00:53,620 --> 00:00:56,245
+then we're going to assume that those orders are backordered --
+
+22
+00:00:56,245 --> 00:00:59,250
+that we still will deliver them.
+
+23
+00:00:59,250 --> 00:01:03,230
+So what we determined in the last lesson is this simple
+
+24
+00:01:03,230 --> 00:01:06,375
+saw-tooth diagram, and we figured out and showed ways
+
+25
+00:01:06,375 --> 00:01:09,280
+to determine Q*, the optimal order quantity,
+
+26
+00:01:09,280 --> 00:01:12,190
+the Economic Order Quantity, and T*,
+
+27
+00:01:12,190 --> 00:01:15,390
+which is just the order frequency.
+
+28
+00:01:15,390 --> 00:01:18,310
+So the question is: Is it better to do this and order
+
+29
+00:01:18,310 --> 00:01:21,720
+when our inventory level is zero, right?
+
+30
+00:01:21,720 --> 00:01:25,470
+When Inventory On Hand is zero, you order Q*.
+
+31
+00:01:25,470 --> 00:01:28,490
+Or if we allow inventory to go negative,
+
+32
+00:01:28,490 --> 00:01:30,185
+so there will be backorders, does
+
+33
+00:01:30,185 --> 00:01:33,420
+it make sense to order at this point?
+
+34
+00:01:33,420 --> 00:01:35,900
+And we're going to call this quantity b.
+
+35
+00:01:35,900 --> 00:01:41,260
+And so the idea here is that I have this amount of inventory,
+
+36
+00:01:41,260 --> 00:01:46,000
+which we know, and is treated as C_e, that excess inventory.
+
+37
+00:01:46,000 --> 00:01:50,890
+But I'm introducing this amount, and we're
+
+38
+00:01:50,890 --> 00:01:53,682
+going to call this C_s, or the shortage cost.
+
+39
+00:01:53,682 --> 00:01:55,640
+And so the question we're trying to figure out,
+
+40
+00:01:55,640 --> 00:01:59,120
+if I allow it to go negative, and it costs me a little bit
+
+41
+00:01:59,120 --> 00:02:03,919
+to be out of stock, but does the optimal quantity make sense
+
+42
+00:02:03,919 --> 00:02:05,460
+to go negative, or is it always going
+
+43
+00:02:05,460 --> 00:02:08,389
+to be to make sure you always have inventory on hand?
+
+44
+00:02:08,389 --> 00:02:12,350
+And so before we dive into the math, what I want to do
+
+45
+00:02:12,350 --> 00:02:14,270
+is test your intuition.
+
+46
+00:02:14,270 --> 00:02:16,640
+So on the next question, the little problem,
+
+47
+00:02:16,640 --> 00:02:18,520
+I want you to answer the question:
+
+48
+00:02:18,520 --> 00:02:21,860
+What do you think will happen to Q* and T* if we allow
+
+49
+00:02:21,860 --> 00:02:23,760
+for planned backorders, at some cost,
+
+50
+00:02:23,760 --> 00:02:26,580
+that C_s that I talked about?
+

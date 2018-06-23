@@ -1,0 +1,304 @@
+0
+00:00:00,000 --> 00:00:00,270
+https://youtu.be/I0xGhKumD90
+
+1
+00:00:00,270 --> 00:00:02,009
+OK, bây giờ hãy nhìn vào mô hình thứ hai,
+
+2
+00:00:02,009 --> 00:00:04,650
+và tôi sẽ thử xem liệu trọng lượng có ảnh hưởng.
+
+3
+00:00:04,650 --> 00:00:08,640
+Vậy tôi sẽ nói mô hình của tôi có dạng beta 0
+
+4
+00:00:08,640 --> 00:00:10,590
+cộng với beta 1 nhân khoảng cách.
+
+5
+00:00:10,590 --> 00:00:13,000
+Tôi sẽ giữ nguyên điều đó, vì nó quá mạnh.
+
+6
+00:00:13,000 --> 00:00:15,750
+Cộng beta 2 nhân trọng lượng.
+
+7
+00:00:15,750 --> 00:00:18,214
+Và trọng lượng tính bằng pound.
+
+8
+00:00:18,214 --> 00:00:20,130
+Vậy nếu tôi nhìn vào điều này, chúng ta hãy bắt đầu từ trên đầu
+
+9
+00:00:20,130 --> 00:00:21,261
+và xuống dưới.
+
+10
+00:00:21,261 --> 00:00:23,760
+r bình phương của tôi, tôi sẽ đi thẳng tới r bình phương được điều chỉnh
+
+11
+00:00:23,760 --> 00:00:25,760
+vì đó là tất cả những thứ quan trọng.
+
+12
+00:00:25,760 --> 00:00:27,532
+Bạn thấy cách khoảng cách lớn hơn một chút
+
+13
+00:00:27,532 --> 00:00:28,740
+từ r bình phương tại thời điểm này.
+
+14
+00:00:28,740 --> 00:00:31,920
+Đó là vì tôi có thêm một biến độc lập
+
+15
+00:00:31,920 --> 00:00:33,670
+được cộng vào mô hình này.
+
+16
+00:00:33,670 --> 00:00:36,900
+Vậy chúng ta thấy rằng chúng ta vẫn đang giải thích 82% mô hình.
+
+17
+00:00:36,900 --> 00:00:39,030
+Vẫn khá tốt.
+
+18
+00:00:39,030 --> 00:00:40,140
+Tôi có được sai số tiêu chuẩn của tôi.
+
+19
+00:00:40,140 --> 00:00:42,070
+Tôi có thể nhìn vào tổng các bình phương của tôi.
+
+20
+00:00:42,070 --> 00:00:45,160
+Chúng ta hãy nhìn vào từng hệ số.
+
+21
+00:00:45,160 --> 00:00:47,880
+Vậy tôi có thể nhìn và xem phần mặt phẳng bị chắn
+
+22
+00:00:47,880 --> 00:00:51,810
+nó cao hơn một chút so với trước đó là 1.354.
+
+23
+00:00:51,810 --> 00:00:54,990
+Và khoảng cách 1,538 mỗi dặm.
+
+24
+00:00:54,990 --> 00:00:59,280
+Và tôi nhận được một trọng lượng âm, âm 0,003.
+
+25
+00:00:59,280 --> 00:01:00,850
+Vậy điều này có nghĩa là gì?
+
+26
+00:01:00,850 --> 00:01:04,680
+Điều này có nghĩa là với mỗi pound tôi thêm vào trọng lượng của tôi,
+
+27
+00:01:04,680 --> 00:01:06,780
+mô hình mà tôi đang nói có sự gia tăng - tốt,
+
+28
+00:01:06,780 --> 00:01:11,650
+là với mỗi 10 pound, tôi tăng $0,03 cho mỗi trọng tải.
+
+29
+00:01:11,650 --> 00:01:14,110
+Vì vậy, ta nói rằng có một mối quan hệ tỷ lệ nghịch.
+
+30
+00:01:14,110 --> 00:01:18,190
+Hãy nhìn nhanh vào các giá trị p.
+
+31
+00:01:18,190 --> 00:01:22,590
+Vậy với cả hai mặt phẳng bị chắn, đó là một giá trị p rất mạnh.
+
+32
+00:01:22,590 --> 00:01:24,510
+Và điều tương tự xảy ra với khoảng cách.
+
+33
+00:01:24,510 --> 00:01:28,230
+Hãy nhìn cái này cho trọng lượng. b2, khá nhỏ.
+
+34
+00:01:28,230 --> 00:01:32,730
+Nó chỉ là một xác suất 46% mà tôi sẽ
+
+35
+00:01:32,730 --> 00:01:34,150
+từ chối các giả thuyết bằng 0.
+
+36
+00:01:34,150 --> 00:01:37,260
+Ở đây tôi sẽ không từ chối giả thuyết bằng 0
+
+37
+00:01:37,260 --> 00:01:41,220
+mà b2 sẽ bằng 0.
+
+38
+00:01:41,220 --> 00:01:45,324
+Nên tôi có lẽ sẽ không chấp nhận mô hình này vì điều đó.
+
+39
+00:01:45,324 --> 00:01:46,740
+Một cách khác để nhìn vào nó,
+
+40
+00:01:46,740 --> 00:01:49,560
+là nhìn vào các khoảng tin cậy.
+
+41
+00:01:49,560 --> 00:01:52,890
+Lưu ý rằng đối với b2, khoảng tin cậy thấp hơn
+
+42
+00:01:52,890 --> 00:01:56,250
+là âm và khoảng tin cậy trên
+
+43
+00:01:56,250 --> 00:01:57,240
+là dương.
+
+44
+00:01:57,240 --> 00:02:02,400
+Vậy, có nghĩa là 0 là trong giới hạn của tôi,
+
+45
+00:02:02,400 --> 00:02:03,660
+khoảng tin cậy 95% của tôi.
+
+46
+00:02:03,660 --> 00:02:04,570
+Có vẻ điên rồ.
+
+47
+00:02:04,570 --> 00:02:07,290
+Nên tôi không nghĩ rằng mô hình này sẽ có nhiều ý nghĩa.
+
+48
+00:02:07,290 --> 00:02:09,600
+Nhưng chúng ta hãy nói về nó một chút nữa,
+
+49
+00:02:09,600 --> 00:02:11,520
+bắt đầu với việc giải thích mô hình này.
+
+50
+00:02:11,520 --> 00:02:13,380
+82%, vẫn khá tốt.
+
+51
+00:02:13,380 --> 00:02:14,820
+Nó là một mô hình mạnh.
+
+52
+00:02:14,820 --> 00:02:16,200
+Nó dự đoán khá nhiều.
+
+53
+00:02:16,200 --> 00:02:19,290
+Nó thực sự giải thích rất nhiều biến đổi.
+
+54
+00:02:19,290 --> 00:02:23,790
+Tuy nhiên, lưu ý rằng trong khi bản thân r bình phương được cải thiện,
+
+55
+00:02:23,790 --> 00:02:26,670
+vì trong mô hình trước, hãy nhớ tới mô hình một,
+
+56
+00:02:26,670 --> 00:02:28,740
+dây là 0,818.
+
+57
+00:02:28,740 --> 00:02:30,870
+Nhưng r bình phương được điều chỉnh thực tế
+
+58
+00:02:30,870 --> 00:02:35,430
+đã giảm từ 0,816 xuống 0,815.
+
+59
+00:02:35,430 --> 00:02:38,670
+Vậy đây là lý do tại sao chúng ta có r bình phương được điều chỉnh.
+
+60
+00:02:38,670 --> 00:02:41,490
+Nó điều chỉnh chỉ vì các biến số
+
+61
+00:02:41,490 --> 00:02:42,482
+độc lập bổ sung đó.
+
+62
+00:02:42,482 --> 00:02:45,840
+
+
+63
+00:02:45,840 --> 00:02:48,210
+Vậy chúng ta nhìn vào riêng từng hệ số đơn lẻ,
+
+64
+00:02:48,210 --> 00:02:49,890
+beta 0 và beta 1.
+
+65
+00:02:49,890 --> 00:02:51,640
+Chúng trông vẫn rất đáng tin cậy.
+
+66
+00:02:51,640 --> 00:02:52,470
+Các giá trị p tốt.
+
+67
+00:02:52,470 --> 00:02:55,440
+Chúng có ý nghĩa về cường độ và sin.
+
+68
+00:02:55,440 --> 00:02:57,360
+Tuy nhiên, b2 không có ý nghĩa, phải không?
+
+69
+00:02:57,360 --> 00:02:58,910
+Tại sao trọng lượng chiếm ít hơn?
+
+70
+00:02:58,910 --> 00:03:00,060
+Không có ý nghĩa gì cả.
+
+71
+00:03:00,060 --> 00:03:01,230
+Có một giá trị p kém.
+
+72
+00:03:01,230 --> 00:03:04,590
+Nên tôi có lẽ sẽ không tiếp tục với mô hình này.
+
+73
+00:03:04,590 --> 00:03:05,580
+Nhưng bạn đã khám phá ra.
+
+74
+00:03:05,580 --> 00:03:08,490
+Bạn thử xem, OK, trọng lượng có ảnh hưởng không?
+
+75
+00:03:08,490 --> 00:03:11,750
+OK, tiếp theo chúng ta sẽ xem xét một số yếu tố khác.
+

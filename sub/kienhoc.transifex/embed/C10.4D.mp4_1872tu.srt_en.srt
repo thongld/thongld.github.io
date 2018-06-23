@@ -1,0 +1,972 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/kgABPjf9qLI
+
+1
+00:00:00,000 --> 00:00:00,405
+
+2
+00:00:00,405 --> 00:00:03,030
+DR. JONATHAN VALVANO: What are
+we going to learn in this video?
+
+3
+00:00:03,030 --> 00:00:04,800
+DR. RAMESH YERRABALLI: We're going
+to go through the motions of how
+
+4
+00:00:04,800 --> 00:00:06,640
+a finite-state machine works.
+
+5
+00:00:06,640 --> 00:00:08,350
+We're going to start from scratch.
+
+6
+00:00:08,350 --> 00:00:13,250
+We're looking at an example
+of a traffic lights system.
+
+7
+00:00:13,250 --> 00:00:19,140
+So we're going to connect a
+traffic light to our LaunchPad.
+
+8
+00:00:19,140 --> 00:00:22,580
+So we have two inputs.
+
+9
+00:00:22,580 --> 00:00:25,380
+Those are our inputs.
+
+10
+00:00:25,380 --> 00:00:26,620
+We have six outputs.
+
+11
+00:00:26,620 --> 00:00:29,170
+
+12
+00:00:29,170 --> 00:00:32,570
+So our input is going
+to be a 2-bit input,
+
+13
+00:00:32,570 --> 00:00:37,060
+and our output is going
+to be a 6-bit output.
+
+14
+00:00:37,060 --> 00:00:41,300
+And the six outputs are our
+red, yellow, and green lights.
+
+15
+00:00:41,300 --> 00:00:47,230
+And our two inputs are the car sensors
+in the north and east direction.
+
+16
+00:00:47,230 --> 00:00:50,870
+So let's understand what
+our different inputs mean.
+
+17
+00:00:50,870 --> 00:01:00,140
+So first, we have an input of 00, which
+basically tells us there are no cars.
+
+18
+00:01:00,140 --> 00:01:09,690
+An input of 01, which means there
+are cars in the east direction.
+
+19
+00:01:09,690 --> 00:01:15,070
+And then we have an input
+of 10, which tells us
+
+20
+00:01:15,070 --> 00:01:19,010
+that there are cars in
+the north direction.
+
+21
+00:01:19,010 --> 00:01:23,190
+And then we have the
+possibility of 11, which
+
+22
+00:01:23,190 --> 00:01:27,530
+means that there are
+cars in both directions.
+
+23
+00:01:27,530 --> 00:01:32,160
+So that is our meaning of our input.
+
+24
+00:01:32,160 --> 00:01:35,154
+DR. JONATHAN VALVANO: So how
+do we begin to make this graph?
+
+25
+00:01:35,154 --> 00:01:37,320
+DR. RAMESH YERRABALLI: So
+what we need to understand
+
+26
+00:01:37,320 --> 00:01:39,830
+is what state can we find ourselves in.
+
+27
+00:01:39,830 --> 00:01:41,970
+We have to start in some initial state.
+
+28
+00:01:41,970 --> 00:01:48,210
+We are assuming that we will give
+our importance to the north traffic.
+
+29
+00:01:48,210 --> 00:01:55,070
+So our initial state is we will let
+the traffic go in the north direction.
+
+30
+00:01:55,070 --> 00:01:58,190
+So what is the possible situation now?
+
+31
+00:01:58,190 --> 00:02:02,680
+So I'm in this state, and I can
+have any of these inputs possible.
+
+32
+00:02:02,680 --> 00:02:08,539
+So if I'm in the go-north state
+and there are no cars in my system,
+
+33
+00:02:08,539 --> 00:02:11,700
+then there's no point in
+changing the state of my system.
+
+34
+00:02:11,700 --> 00:02:14,950
+So I remain in go-north.
+
+35
+00:02:14,950 --> 00:02:21,180
+On the other hand, if I have input that
+says that there is contending traffic
+
+36
+00:02:21,180 --> 00:02:25,100
+in the north direction, which means
+that I've already given the north
+
+37
+00:02:25,100 --> 00:02:29,200
+traffic a go, and there is a
+car in the north direction.
+
+38
+00:02:29,200 --> 00:02:33,040
+So I continue the state as go.
+
+39
+00:02:33,040 --> 00:02:38,110
+Now there's a possibility that I
+have traffic in the east direction.
+
+40
+00:02:38,110 --> 00:02:44,920
+So since I've already given priority
+or access to the north traffic,
+
+41
+00:02:44,920 --> 00:02:50,530
+I should yield myself and give
+control to the east traffic.
+
+42
+00:02:50,530 --> 00:02:53,630
+So what I'm going to do is I'm
+going to go through a wait state.
+
+43
+00:02:53,630 --> 00:02:59,330
+So I'll wait the north
+traffic for a little bit.
+
+44
+00:02:59,330 --> 00:03:03,830
+And this is basically where I'm
+going to flash a yellow light.
+
+45
+00:03:03,830 --> 00:03:07,930
+And then, I'm going to eventually
+get to the other state.
+
+46
+00:03:07,930 --> 00:03:10,510
+Now, if there is traffic
+in both directions,
+
+47
+00:03:10,510 --> 00:03:14,405
+I'll do the same thing, because I've
+already given access to the north.
+
+48
+00:03:14,405 --> 00:03:18,350
+So I'm going to wait
+in the north direction.
+
+49
+00:03:18,350 --> 00:03:24,170
+So which begs the question, what output
+should I produce when I'm in go-north?
+
+50
+00:03:24,170 --> 00:03:34,900
+The output has to correspond to the
+fact that I have a red here in the east
+
+51
+00:03:34,900 --> 00:03:42,550
+and I have a green in
+the north direction.
+
+52
+00:03:42,550 --> 00:03:43,550
+That's what we know.
+
+53
+00:03:43,550 --> 00:03:47,680
+So let's produce an output
+that corresponds to that.
+
+54
+00:03:47,680 --> 00:03:56,260
+And that's going to be
+an output of 100001.
+
+55
+00:03:56,260 --> 00:04:00,770
+And so we've handled our first state.
+
+56
+00:04:00,770 --> 00:04:06,180
+In doing this, we've already created
+another state, which is wait-north.
+
+57
+00:04:06,180 --> 00:04:09,380
+So let's handle that
+state, which tells us
+
+58
+00:04:09,380 --> 00:04:14,720
+that there is a possibility that
+I'm in the wait-north state.
+
+59
+00:04:14,720 --> 00:04:18,050
+The wait-north state
+now says that I am going
+
+60
+00:04:18,050 --> 00:04:23,780
+to yield myself so that the
+east traffic gets a chance.
+
+61
+00:04:23,780 --> 00:04:27,210
+So let's see what can happen now.
+
+62
+00:04:27,210 --> 00:04:35,030
+So first, we know that the
+output has to be a 100010, which
+
+63
+00:04:35,030 --> 00:04:41,320
+is for the yellow on
+the north direction.
+
+64
+00:04:41,320 --> 00:04:45,240
+So now, let's handle what
+happens in this state.
+
+65
+00:04:45,240 --> 00:04:48,560
+In this state, this is kind
+of an in-between state.
+
+66
+00:04:48,560 --> 00:04:50,644
+That is, we're going to transition.
+
+67
+00:04:50,644 --> 00:04:52,060
+We're going to wait in this state.
+
+68
+00:04:52,060 --> 00:04:54,110
+And after some time,
+we're going to transition
+
+69
+00:04:54,110 --> 00:04:58,980
+to the obvious state, which is
+give access to the other direction.
+
+70
+00:04:58,980 --> 00:05:02,560
+So we go east-on if there are no cars.
+
+71
+00:05:02,560 --> 00:05:06,550
+If there are cars in the
+east direction, we go-east.
+
+72
+00:05:06,550 --> 00:05:08,750
+If there are cars in
+the north direction,
+
+73
+00:05:08,750 --> 00:05:12,870
+we still go-east, because we've
+just come from that state.
+
+74
+00:05:12,870 --> 00:05:17,830
+And we go-east in this state, also.
+
+75
+00:05:17,830 --> 00:05:22,000
+So this answers our second state.
+
+76
+00:05:22,000 --> 00:05:25,040
+So let's look at our new
+state that we've added.
+
+77
+00:05:25,040 --> 00:05:28,030
+So our new state is go-east.
+
+78
+00:05:28,030 --> 00:05:30,810
+Go-east kind of mimics go-north.
+
+79
+00:05:30,810 --> 00:05:34,950
+So what should be the output in go-east?
+
+80
+00:05:34,950 --> 00:05:41,910
+The output ought to be a 001100.
+
+81
+00:05:41,910 --> 00:05:47,970
+This is basically saying that
+we have a red for the north,
+
+82
+00:05:47,970 --> 00:05:54,140
+and we have a green for the east.
+
+83
+00:05:54,140 --> 00:05:57,380
+So let's go ahead and fill
+the rest of the output.
+
+84
+00:05:57,380 --> 00:06:02,370
+So now we say that if there
+are no cars, we remain go-east.
+
+85
+00:06:02,370 --> 00:06:07,070
+If there are cars in the east
+direction, we remain in go-east.
+
+86
+00:06:07,070 --> 00:06:11,650
+And if there is now a car that
+comes up on the north direction,
+
+87
+00:06:11,650 --> 00:06:14,820
+then we have to transition,
+just like we did before.
+
+88
+00:06:14,820 --> 00:06:19,560
+So we're going to go through an
+intermediate state, which a wait-east,
+
+89
+00:06:19,560 --> 00:06:23,420
+where we will do a yellow
+for the east direction.
+
+90
+00:06:23,420 --> 00:06:25,120
+And then we will eventually get out.
+
+91
+00:06:25,120 --> 00:06:28,690
+So this is going to
+be our wait-east here
+
+92
+00:06:28,690 --> 00:06:32,850
+also, because there's traffic in both
+directions, which kind of introduced
+
+93
+00:06:32,850 --> 00:06:35,160
+our last state.
+
+94
+00:06:35,160 --> 00:06:37,040
+Our last state is a wait-east.
+
+95
+00:06:37,040 --> 00:06:40,500
+
+96
+00:06:40,500 --> 00:06:45,210
+And so we're going to produce an
+output corresponding to the state,
+
+97
+00:06:45,210 --> 00:06:51,530
+which is a 010100.
+
+98
+00:06:51,530 --> 00:06:56,510
+Again, this is basically a
+yellow in this direction.
+
+99
+00:06:56,510 --> 00:06:58,500
+So let's go ahead and
+fill the rest of it.
+
+100
+00:06:58,500 --> 00:07:00,610
+The rest of it is
+pretty straightforward,
+
+101
+00:07:00,610 --> 00:07:03,070
+because we're in a transitional state.
+
+102
+00:07:03,070 --> 00:07:06,370
+Eventually, we're going to
+go to go-north, no matter
+
+103
+00:07:06,370 --> 00:07:08,060
+what state we're in.
+
+104
+00:07:08,060 --> 00:07:12,380
+
+105
+00:07:12,380 --> 00:07:18,150
+So we have our picture of how
+the system is supposed to work.
+
+106
+00:07:18,150 --> 00:07:24,010
+We can now actually draw
+a FSM graph for this.
+
+107
+00:07:24,010 --> 00:07:25,710
+This is a table.
+
+108
+00:07:25,710 --> 00:07:30,540
+The FSM graph is simply a
+representation of the same information
+
+109
+00:07:30,540 --> 00:07:32,140
+in a graphical way.
+
+110
+00:07:32,140 --> 00:07:37,200
+Let's look at the FSM graph that is a
+visual representation of this table.
+
+111
+00:07:37,200 --> 00:07:41,080
+So we have a go-north state.
+
+112
+00:07:41,080 --> 00:07:43,150
+We know what the output
+in this state is.
+
+113
+00:07:43,150 --> 00:07:46,550
+I'm going to write this output in hex.
+
+114
+00:07:46,550 --> 00:07:52,734
+So we will write this as 0x21, which
+is basically this value right here.
+
+115
+00:07:52,734 --> 00:07:55,650
+DR. JONATHAN VALVANO: And how long
+are we going to stay in that state?
+
+116
+00:07:55,650 --> 00:07:57,850
+DR. RAMESH YERRABALLI:
+And since we have to dwell
+
+117
+00:07:57,850 --> 00:08:02,830
+in the state for some time, I'm going
+to state that the dwell time in this
+
+118
+00:08:02,830 --> 00:08:04,317
+is 3,000--
+
+119
+00:08:04,317 --> 00:08:06,150
+DR. JONATHAN VALVANO:
+Times 10 milliseconds.
+
+120
+00:08:06,150 --> 00:08:08,108
+DR. RAMESH YERRABALLI:
+--times 10 milliseconds,
+
+121
+00:08:08,108 --> 00:08:10,510
+which is a three-second delay.
+
+122
+00:08:10,510 --> 00:08:15,940
+And then we will transition out
+of this as the input requires us.
+
+123
+00:08:15,940 --> 00:08:28,270
+So we say that an input of 00 or 10,
+we will remain in the same state.
+
+124
+00:08:28,270 --> 00:08:38,630
+On an input of 01 or 11, we
+will transition to a new state.
+
+125
+00:08:38,630 --> 00:08:41,279
+This is my state, which is a wait-north.
+
+126
+00:08:41,279 --> 00:08:45,510
+
+127
+00:08:45,510 --> 00:08:51,490
+And the output I will produce
+here, when I get there, is 0x22.
+
+128
+00:08:51,490 --> 00:08:59,410
+And the dwell time here is 500,
+or 0.5 seconds, half a second.
+
+129
+00:08:59,410 --> 00:09:02,500
+Again, we have to account
+for all the inputs here.
+
+130
+00:09:02,500 --> 00:09:09,910
+Any input, no matter what input
+I get-- 00, 01, 10, or 11--
+
+131
+00:09:09,910 --> 00:09:17,880
+all of those states will take me to the
+same new state, which is my go-east.
+
+132
+00:09:17,880 --> 00:09:24,460
+The output I produce here is a 0x0C.
+
+133
+00:09:24,460 --> 00:09:29,970
+And the dwell time here is
+3,000, or three seconds.
+
+134
+00:09:29,970 --> 00:09:40,210
+Again, if I get an input of either
+00 or 01, I remain in the same state.
+
+135
+00:09:40,210 --> 00:09:57,270
+And an input of either 10 or 11
+will take me to my wait-east state.
+
+136
+00:09:57,270 --> 00:10:01,670
+Now I have to complete
+the wait-east state.
+
+137
+00:10:01,670 --> 00:10:07,070
+The output in this state is a 0x14.
+
+138
+00:10:07,070 --> 00:10:09,830
+The dwell time is half a second.
+
+139
+00:10:09,830 --> 00:10:14,300
+And we know that no matter
+what input we get here,
+
+140
+00:10:14,300 --> 00:10:24,080
+we're going to go from here all the way
+to this, if I get a 00, 01, 10, or 11.
+
+141
+00:10:24,080 --> 00:10:32,950
+So what we see is there is
+a one-to-one correspondence
+
+142
+00:10:32,950 --> 00:10:36,010
+relationship between the
+table and the FSM graph.
+
+143
+00:10:36,010 --> 00:10:40,480
+In fact, we will see that there's a
+one-to-one correspondence between these
+
+144
+00:10:40,480 --> 00:10:44,400
+and the software we will write.
+
+145
+00:10:44,400 --> 00:10:49,140
+So let's do the one-to-one
+relationship between the graph
+
+146
+00:10:49,140 --> 00:10:51,210
+and the actual software.
+
+147
+00:10:51,210 --> 00:10:53,500
+So I'm going to use this space here.
+
+148
+00:10:53,500 --> 00:10:58,980
+We'll lay it out as it
+would show in our software.
+
+149
+00:10:58,980 --> 00:11:02,000
+So the way we're going
+to do this-- obviously,
+
+150
+00:11:02,000 --> 00:11:04,150
+there's some detail we're going to miss.
+
+151
+00:11:04,150 --> 00:11:06,840
+But we should be able to get all of it.
+
+152
+00:11:06,840 --> 00:11:13,270
+So let's put it up.
+
+153
+00:11:13,270 --> 00:11:16,160
+So here's the software.
+
+154
+00:11:16,160 --> 00:11:18,355
+So we have a state type.
+
+155
+00:11:18,355 --> 00:11:20,910
+
+156
+00:11:20,910 --> 00:11:23,560
+Our FSM is going to have four states.
+
+157
+00:11:23,560 --> 00:11:25,850
+So those are our four states.
+
+158
+00:11:25,850 --> 00:11:30,160
+And each state, we will have an output.
+
+159
+00:11:30,160 --> 00:11:35,150
+So there's my output for the first
+state, which is my GoN state.
+
+160
+00:11:35,150 --> 00:11:36,870
+This is my first state.
+
+161
+00:11:36,870 --> 00:11:37,930
+I'll call this 0.
+
+162
+00:11:37,930 --> 00:11:38,900
+I'll call this 1.
+
+163
+00:11:38,900 --> 00:11:39,895
+I'll call this 2.
+
+164
+00:11:39,895 --> 00:11:40,770
+And I'll call this 3.
+
+165
+00:11:40,770 --> 00:11:44,580
+So that's the indexes
+in my array of four.
+
+166
+00:11:44,580 --> 00:11:47,260
+So the first one has an output.
+
+167
+00:11:47,260 --> 00:11:51,360
+It has a delay, which is 3,000.
+
+168
+00:11:51,360 --> 00:11:55,570
+And it has the next states
+I can go to on each input.
+
+169
+00:11:55,570 --> 00:11:59,790
+On an input of 00, I can go to
+GoN, so I'm going to write that.
+
+170
+00:11:59,790 --> 00:12:04,710
+On an input of 01, I can go to WaitN.
+
+171
+00:12:04,710 --> 00:12:08,220
+On an input of 10, I go to GoN.
+
+172
+00:12:08,220 --> 00:12:14,450
+And an input of 11, I go to WaitN.
+
+173
+00:12:14,450 --> 00:12:18,870
+DR. JONATHAN VALVANO: Notice
+the similarity between the table
+
+174
+00:12:18,870 --> 00:12:21,310
+and the line in the software.
+
+175
+00:12:21,310 --> 00:12:22,320
+You see that?
+
+176
+00:12:22,320 --> 00:12:25,445
+It's the same thing.
+
+177
+00:12:25,445 --> 00:12:27,570
+DR. RAMESH YERRABALLI: So
+that's our first element.
+
+178
+00:12:27,570 --> 00:12:33,180
+Our next element is going to
+be corresponding to our WaitN.
+
+179
+00:12:33,180 --> 00:12:34,630
+So we close this.
+
+180
+00:12:34,630 --> 00:12:36,100
+We close that.
+
+181
+00:12:36,100 --> 00:12:37,800
+We have our first element.
+
+182
+00:12:37,800 --> 00:12:42,700
+Our second element is going
+to be 0x, output of 22,
+
+183
+00:12:42,700 --> 00:12:45,940
+which is right there,
+which is this output, which
+
+184
+00:12:45,940 --> 00:12:50,190
+is the same as that output, with a 500.
+
+185
+00:12:50,190 --> 00:12:53,490
+And we will write our list from here.
+
+186
+00:12:53,490 --> 00:13:02,890
+This list says, GoE, GoE, GoE, and GoE.
+
+187
+00:13:02,890 --> 00:13:06,850
+So I close that, and
+there's my second element.
+
+188
+00:13:06,850 --> 00:13:12,990
+My third element is
+the index 2 location.
+
+189
+00:13:12,990 --> 00:13:18,740
+And so this output corresponds to 0x0C.
+
+190
+00:13:18,740 --> 00:13:22,370
+The duration is 3,000.
+
+191
+00:13:22,370 --> 00:13:26,470
+And then we have our
+outputs, our next states,
+
+192
+00:13:26,470 --> 00:13:37,190
+which are GoE, GoE,
+a WaitE, and a WaitE.
+
+193
+00:13:37,190 --> 00:13:39,140
+We close that.
+
+194
+00:13:39,140 --> 00:13:43,310
+We're down to our last
+element, which is our output
+
+195
+00:13:43,310 --> 00:13:51,550
+of 0x14 and dwell time
+of 500, half a second.
+
+196
+00:13:51,550 --> 00:13:56,590
+And we go-north, no
+matter what the input.
+
+197
+00:13:56,590 --> 00:13:59,212
+
+198
+00:13:59,212 --> 00:14:00,920
+DR. JONATHAN VALVANO:
+So what we see here
+
+199
+00:14:00,920 --> 00:14:06,770
+is a one-to-one mapping between
+the state graph in picture form,
+
+200
+00:14:06,770 --> 00:14:09,840
+the state transition
+table here in table form,
+
+201
+00:14:09,840 --> 00:14:13,750
+and the software that we're going
+to program into the microcontroller.
+
+202
+00:14:13,750 --> 00:14:21,130
+DR. RAMESH YERRABALLI: So
+table, FSM graph are the same.
+
+203
+00:14:21,130 --> 00:14:24,270
+FSM graph and the software are the same.
+
+204
+00:14:24,270 --> 00:14:28,070
+The software and the table are the same.
+
+205
+00:14:28,070 --> 00:14:32,030
+So we start with either one of these.
+
+206
+00:14:32,030 --> 00:14:35,580
+Ideally, we would start with
+a very fleshed-out idea.
+
+207
+00:14:35,580 --> 00:14:38,100
+We'd start here.
+
+208
+00:14:38,100 --> 00:14:41,880
+We get visual clarity here.
+
+209
+00:14:41,880 --> 00:14:44,274
+And we do the development here.
+
+210
+00:14:44,274 --> 00:14:46,940
+DR. JONATHAN VALVANO: Ah, nice.
+
+211
+00:14:46,940 --> 00:14:51,350
+And you can see the software that runs
+the engine later on in this section.
+
+212
+00:14:51,350 --> 00:14:54,883
+But this is how we're going to
+develop finite-state machines.
+
+213
+00:14:54,883 --> 00:14:55,383

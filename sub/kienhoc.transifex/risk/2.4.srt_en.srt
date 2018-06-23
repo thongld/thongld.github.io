@@ -1,0 +1,436 @@
+0
+00:00:05,088 --> 00:00:09,390
+So now, remember we have talked about mean, standard deviation,
+https://youtu.be/S3HGUo-lDN0
+1
+00:00:09,390 --> 00:00:12,090
+covariance, correlation.
+
+2
+00:00:12,090 --> 00:00:19,404
+Turns out that the most used thing we&#39;ll do in risk and return is the next concept,
+
+3
+00:00:19,404 --> 00:00:24,289
+which we also have seen before which is, regression.
+
+4
+00:00:24,289 --> 00:00:30,540
+And, regression also must understand relationships, but in a different way.
+
+5
+00:00:30,540 --> 00:00:34,823
+So what I&#39;m going to do is I&#39;m going to write out the following equation.
+
+6
+00:00:34,823 --> 00:00:40,478
+R1i = Alpha i + Beta R
+
+7
+00:00:40,478 --> 00:00:44,951
+2 i + Epsilon i.
+
+8
+00:00:44,951 --> 00:00:48,415
+First thing you have to notice straight away is that I&#39;m just seeing
+
+9
+00:00:48,415 --> 00:00:50,010
+the regression between what?
+
+10
+00:00:50,010 --> 00:00:52,536
+Security 1 and security 2.
+
+11
+00:00:52,536 --> 00:00:55,040
+And I&#39;m not going to worry about this here.
+
+12
+00:00:55,040 --> 00:00:57,000
+We worry about it in the real world.
+
+13
+00:00:57,000 --> 00:01:02,575
+I focus on this variable because this is the measure of relationships
+
+14
+00:01:02,575 --> 00:01:06,913
+that we are interested in which is also called slope.
+
+15
+00:01:06,913 --> 00:01:09,480
+And here again I&#39;m just talking about security 1 and 2.
+
+16
+00:01:09,480 --> 00:01:14,761
+You&#39;ll see later that it may not make much sense to see the relationship
+
+17
+00:01:14,761 --> 00:01:19,427
+between security one and two in the large portfolio context but
+
+18
+00:01:19,427 --> 00:01:22,787
+between one and the whole portfolio return.
+
+19
+00:01:22,787 --> 00:01:26,670
+But here let&#39;s get mechanically going and calculate this number.
+
+20
+00:01:26,670 --> 00:01:33,042
+So what will Beta 1,2 at mean?
+
+21
+00:01:33,042 --> 00:01:34,630
+Let me just first calculate.
+
+22
+00:01:34,630 --> 00:01:36,520
+Then we&#39;ll go ahead and do this.
+
+23
+00:01:36,520 --> 00:01:39,217
+What will the numerator be?
+
+24
+00:01:39,217 --> 00:01:46,160
+Remember the numerator has to be Sigma 1,2 at covariants.
+
+25
+00:01:46,160 --> 00:01:49,178
+But we now standardize, it&#39;s likely different.
+
+26
+00:01:49,178 --> 00:01:56,128
+And the denominator here turns out to be Sigma 2 squared.
+
+27
+00:01:56,128 --> 00:02:00,415
+And the way to remember it, and though I don&#39;t like remembering things,
+
+28
+00:02:00,415 --> 00:02:04,013
+is that it&#39;s the variance of the right-hand side variable,
+
+29
+00:02:04,013 --> 00:02:08,668
+called the infinite variable that is in the denominator that we are scaling by.
+
+30
+00:02:08,668 --> 00:02:13,514
+And the good news is that whether you have left hand side square or
+
+31
+00:02:13,514 --> 00:02:19,096
+right hand side square, they are percentages right, and returns okay.
+
+32
+00:02:19,096 --> 00:02:27,795
+This will work out to be 5.81 divided by 2.90.
+
+33
+00:02:27,795 --> 00:02:33,420
+I think 2.90 was the variance of the second security, right?
+
+34
+00:02:33,420 --> 00:02:38,574
+So, the answer turns out to be 2.00.
+
+35
+00:02:38,574 --> 00:02:42,367
+So now, let me just pause for a second, have some fun,
+
+36
+00:02:42,367 --> 00:02:47,336
+ask some questions, make your tape, maybe not answer the questions.
+
+37
+00:02:47,336 --> 00:02:49,537
+But if I can&#39;t, that&#39;s my problem.
+
+38
+00:02:49,537 --> 00:02:51,497
+I ask a question in class, too.
+
+39
+00:02:51,497 --> 00:02:54,027
+And I&#39;m nuts, I mean, I can&#39;t wait.
+
+40
+00:02:54,027 --> 00:02:55,399
+And so I answer it.
+
+41
+00:02:55,399 --> 00:02:57,417
+I&#39;m extremely patient here.
+
+42
+00:02:57,417 --> 00:02:59,890
+I&#39;m not very patient face-to-face.
+
+43
+00:02:59,890 --> 00:03:03,880
+Not a good thing to do, but anyway.
+
+44
+00:03:03,880 --> 00:03:06,120
+So what does two mean?
+
+45
+00:03:06,120 --> 00:03:11,088
+Two means that if return two, in our case if it&#39;s Xerox
+
+46
+00:03:11,088 --> 00:03:15,314
+changes by 1%, how much does IBM change by?
+
+47
+00:03:15,314 --> 00:03:17,539
+Twice as much.
+
+48
+00:03:17,539 --> 00:03:20,378
+That&#39;s just a function of the statistics.
+
+49
+00:03:20,378 --> 00:03:22,614
+The first I should ask you is,
+
+50
+00:03:22,614 --> 00:03:27,188
+suppose I asked you what is the correlation between the two.
+
+51
+00:03:27,188 --> 00:03:27,940
+Do you know it?
+
+52
+00:03:27,940 --> 00:03:29,756
+The answer is 1.
+
+53
+00:03:29,756 --> 00:03:31,257
+Can correlation be two?
+
+54
+00:03:31,257 --> 00:03:36,178
+No, correlation can only be between -1 and +1.
+
+55
+00:03:36,178 --> 00:03:40,992
+And in fact, I purposely chose the highest possible one, +1.
+
+56
+00:03:40,992 --> 00:03:43,481
+But can Betas be different than 1?
+
+57
+00:03:43,481 --> 00:03:44,265
+Sure.
+
+58
+00:03:44,265 --> 00:03:48,832
+The sine is still positive as it should be because it&#39;s dependent on
+
+59
+00:03:48,832 --> 00:03:52,930
+the numerator which is 5.81, positive for both cases.
+
+60
+00:03:52,930 --> 00:03:56,830
+But how you scale it matters and changes the definition.
+
+61
+00:03:56,830 --> 00:04:00,410
+So here you&#39;re asking a very interesting question.
+
+62
+00:04:00,410 --> 00:04:04,779
+What are the percentage change in 1 if 2 changes by 1%?
+
+63
+00:04:04,779 --> 00:04:06,550
+In correlation, what are you asking?
+
+64
+00:04:06,550 --> 00:04:08,859
+What is the strength of the relationship?
+
+65
+00:04:08,859 --> 00:04:11,823
+Maximum, 1.
+
+66
+00:04:11,823 --> 00:04:12,737
+Everybody get it?
+
+67
+00:04:12,737 --> 00:04:15,220
+Now here&#39;s my trick question.
+
+68
+00:04:15,220 --> 00:04:20,040
+What will correlation 2, 1 be?
+
+69
+00:04:20,040 --> 00:04:21,972
+What would this number be?
+
+70
+00:04:28,433 --> 00:04:33,059
+And what would this number be?
+
+71
+00:04:34,488 --> 00:04:40,300
+Even without doing the calculations, tell me which one will not change.
+
+72
+00:04:41,610 --> 00:04:48,051
+The strength is measured by correlation, therefore it&#39;ll remain at 1, right?
+
+73
+00:04:48,051 --> 00:04:53,073
+Because you&#39;re standardizing, remember by both standard division 1 and
+
+74
+00:04:53,073 --> 00:04:56,532
+2, so you can flip them across it doesn&#39;t matter.
+
+75
+00:04:56,532 --> 00:05:01,628
+But the numerator&#39;s fixed across the two measures.
+
+76
+00:05:01,628 --> 00:05:02,590
+Now go to Beta.
+
+77
+00:05:03,920 --> 00:05:07,299
+Will it matter that I&#39;ve now flipped answers?
+
+78
+00:05:07,299 --> 00:05:12,427
+Yes because the numerator&#39;s the same but the denominator will change.
+
+79
+00:05:12,427 --> 00:05:13,700
+And what will it become?
+
+80
+00:05:13,700 --> 00:05:18,380
+It&#39;ll become the variance of security 1, right?
+
+81
+00:05:18,380 --> 00:05:20,267
+So please remember that.
+
+82
+00:05:20,267 --> 00:05:21,905
+That number is what?
+
+83
+00:05:21,905 --> 00:05:24,261
+11.61.
+
+84
+00:05:24,261 --> 00:05:28,045
+So the thing to remember is that correlations do
+
+85
+00:05:28,045 --> 00:05:32,589
+measure certain types of aspects of the relationship and
+
+86
+00:05:32,589 --> 00:05:38,187
+Beta measure a different type of relationship but both are unit free.
+
+87
+00:05:38,187 --> 00:05:40,388
+And both can be compared to each other.
+
+88
+00:05:40,388 --> 00:05:44,101
+Meaning Beta 1 is Beta between two different securities,
+
+89
+00:05:44,101 --> 00:05:46,189
+can be compared to other things.
+
+90
+00:05:46,189 --> 00:05:48,326
+And so can correlations.
+
+91
+00:05:48,326 --> 00:05:51,989
+What I&#39;m going to do now is when we take a break, take a pause.
+
+92
+00:05:51,989 --> 00:05:54,539
+I&#39;m going to change our mindset.
+
+93
+00:05:54,539 --> 00:05:59,730
+Do not the concepts because they never change, but the calculations and
+
+94
+00:05:59,730 --> 00:06:04,666
+the mindset will change from a hypothetical concocted set of numbers
+
+95
+00:06:04,666 --> 00:06:09,451
+which you&#39;ll see in your examples, too, will jump to real life.
+
+96
+00:06:09,451 --> 00:06:13,438
+The concepts won&#39;t change, the way we calculate stuff and
+
+97
+00:06:13,438 --> 00:06:16,639
+the fact that we use spreadsheets will change.
+
+98
+00:06:16,639 --> 00:06:19,990
+When we come back I&#39;ll first show you the data set.
+
+99
+00:06:19,990 --> 00:06:21,171
+Please pull it up.
+
+100
+00:06:21,171 --> 00:06:24,388
+Get familiar, it&#39;s called stock-data.
+
+101
+00:06:24,388 --> 00:06:26,959
+It&#39;s an Excel spreadsheet.
+
+102
+00:06:26,959 --> 00:06:29,090
+I&#39;ll pull it up, show it to you.
+
+103
+00:06:29,090 --> 00:06:31,250
+And then I will go off of it.
+
+104
+00:06:31,250 --> 00:06:35,861
+And I&#39;ll talk about how you can use various statistics for
+
+105
+00:06:35,861 --> 00:06:41,238
+the time being, just simple ways of doing it that you can relate to.
+
+106
+00:06:41,238 --> 00:06:46,563
+And then we&#39;ll do some calculations and then we&#39;ll wrap up this segment of it,
+
+107
+00:06:46,563 --> 00:06:50,223
+which remember is risk and statistics applications.
+
+108
+00:06:50,223 --> 00:06:51,740
+See you in a minute.
+

@@ -1,0 +1,153 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/5Cs1eU65E8I
+phuongmai201 24/10/2016
+
+1
+00:00:05,000 --> 00:00:09,528
+Chào mừng các bạn quay trở lại với khóa học " Quản trị vận hành". Ta sẽ tiếp tục
+
+2
+00:00:09,528 --> 00:00:14,539
+với bài học phân tích năng suất. Ta có vấn đề bổ trợ thứ 2 và đây là
+
+3
+00:00:14,539 --> 00:00:20,259
+phần 2. Tôi sẽ tiếp tục nói về công ty Amazing Shed. Nếu bạn còn nhớ
+
+4
+00:00:20,259 --> 00:00:25,350
+trong phần 1, công ty Amazing Shed sản xuất 3 loại nhà kho
+
+5
+00:00:25,350 --> 00:00:31,130
+thông thường, ưu việt và cao cấp. Việc ta đã làm trong phần cuối bài trước là
+
+6
+00:00:31,129 --> 00:00:36,858
+xác định lại rằng với nguồn lực hiện tại của họ, họ không thể 
+
+7
+00:00:36,859 --> 00:00:42,760
+hoàn thành được 40 nhà kho theo như yêu cầu. Trong tình huống 
+
+8
+00:00:42,759 --> 00:00:47,670
+cụ thể này, ta vẫn sẽ sử dụng những dữ kiện cơ bản như vậy nhưng bây giờ ta được cho biết trước
+
+9
+00:00:47,670 --> 00:00:52,170
+lợi nhuận cho mỗi nhà kho như liệt kê dưới đây.
+
+10
+00:00:52,170 --> 00:01:00,448
+loại thông thường $190, ưu việt $220 và cao cấp là $230. Bây giờ
+
+11
+00:01:00,448 --> 00:01:05,628
+công ty sẽ phải hoàn thành 20 nhà kho thông thường, 10 ưu việt và 10 cao cấp
+
+12
+00:01:05,628 --> 00:01:10,280
+trong vòng 1 tuần. Vậy lợi nhuận thực tế công ty
+
+13
+00:01:10,280 --> 00:01:18,780
+làm ra trong 1 tuần là bao nhiêu? Và nếu như công ty mất $800 để bổ sung thêm 1 nhóm 
+
+14
+00:01:18,780 --> 00:01:24,530
+thì có nên tiến hành không ? Nếu có thì nhóm đó nên được phân về bộ phận nào ? Vậy hãy 
+
+15
+00:01:24,530 --> 00:01:30,769
+nhìn vào những thông tin cơ bản ta đã có được ở  bài hôm trước. Ta 
+
+16
+00:01:30,769 --> 00:01:37,849
+đã tìm ra rằng điểm ứ đọng là resource pool cho việc lắp ráp. Họ chỉ có thể
+
+17
+00:01:37,849 --> 00:01:45,140
+làm được 33.8 nhà kho mỗi tuần và không thể hoàn thành được 40 nhà kho trong 1 tuần. Vậy giả sử 
+
+18
+00:01:45,140 --> 00:01:52,599
+rằng ta chỉ làm được 33.8 nhà kho, lợi nhuận tối đa ta làm ra được là $7013.50
+
+19
+00:01:52,599 --> 00:02:02,819
+Con số này được tính ra bằng cách lấy 50% của 33.8 nhà kho thông thường nhân với
+
+20
+00:02:02,819 --> 00:02:12,339
+lợi nhuận $190 cho mỗi nhà kho, cộng với tích của 25%  số lượng nhà kho ưu việt nhân với $220 và tích của 25%
+
+21
+00:02:12,340 --> 00:02:15,500
+số lượng nhà kho cao cấp nhân với $230. Bạn không thể sử dụng
+
+22
+00:02:15,500 --> 00:02:23,289
+tổng 40 nhà kho bởi vì số lượng nhà kho làm được tối đa mỗi tuần là 33.8. Vậy 
+
+23
+00:02:23,289 --> 00:02:29,759
+điều gì sẽ xảy ra nếu ta bổ sung thêm một đội. Ta biết rằng ta nên phân đội đó cho công đoạn lắp ráp
+
+24
+00:02:29,759 --> 00:02:34,750
+bởi vì đó là điểm ứ đọng. Thay vì làm được 40
+
+25
+00:02:34,750 --> 00:02:40,090
+nhà kho mỗi tuần, ta chỉ làm được 33.8 cái. Điều ta sẽ làm là ta
+
+26
+00:02:40,090 --> 00:02:46,159
+gia tăng thêm 1 đội vào công đoạn lắp ráp. Sau khi thực hiện điều đó, 
+
+27
+00:02:46,159 --> 00:02:53,259
+ta sẽ làm được 45.1 nhà kho trong một tuần và công đoạn lắp ráp không còn là
+
+28
+00:02:53,259 --> 00:03:01,870
+điểm ứ đọng. Điểm ứ đọng đã chuyển sang công đoạn chế tạo. Đội chế tạo chỉ có thể làm được
+
+29
+00:03:01,870 --> 00:03:07,849
+40 nhà kho trong một tuần. Vậy khi ta sửa chữa điểm ứ đọng ở một công đoạn này sẽ  
+
+30
+00:03:07,849 --> 00:03:14,930
+tạo nên điểm ứ đọng ở công đoạn kia. Lúc này, số lượng nhà kho làm được tối đa trong
+
+31
+00:03:14,930 --> 00:03:22,959
+1 tuần là 40. Ta tính lợi nhuận, sử dụng lợi nhuận của 50% nhà kho thông thường, 25% nhà kho ưu việt
+
+32
+00:03:22,959 --> 00:03:30,930
+và 25% nhà kho cao cấp. Ta có tổng lợi nhuận là $8300.00. Lợi nhuận lúc trước ta có khi 
+
+33
+00:03:30,930 --> 00:03:37,890
+chỉ làm được 33.8 nhà kho là $7013.50. Vậy là có sự chênh lệch 
+
+34
+00:03:37,889 --> 00:03:44,958
+tới $1286.50, khá là lớn so với $800
+
+35
+00:03:44,959 --> 00:03:52,409
+dành ra cho một đội bổ sung. Do đó, tất nhiên ta nên tăng thêm 1 đội vào
+
+36
+00:03:52,409 --> 00:03:56,609
+công đoạn chế tạo. Ta sẽ đạt được chỉ tiêu yêu cầu là 40 nhà kho mỗi tuần
+
+37
+00:03:56,610 --> 00:04:02,450
+cũng như tăng lợi nhuận. Rất mong được gặp lại các bạn trong phần 3 của bài học.
+

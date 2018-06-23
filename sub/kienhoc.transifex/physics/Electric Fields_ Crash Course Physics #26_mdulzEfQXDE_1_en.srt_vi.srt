@@ -1,0 +1,416 @@
+1
+00:00:02,859 --> 00:00:07,400
+Lần trước, chúng ta đã nói về cách các hạt mang điện tác dụng lực điện lên nhau. 
+
+2
+00:00:07,400 --> 00:00:15,640
+Chúng ta tính toán những lực này bằng cách sử dụng điện của mỗi hạt: cái nào là âm cái nào là dương, và khoảng cách giữa chúng, rồi tính toán theo Định luật Coulomb:
+
+3
+00:00:15,640 --> 00:00:20,039
+công thức cho chúng ta biết lực phát sinh bởi hai hạt tích điện vào nhau. 
+
+4
+00:00:20,039 --> 00:00:25,619
+Nhưng nếu chúng ta muốn nói sâu hơn về hai điện cực, hoặc nếu chúng ta phải đối mặt với những vật tích điện có hình dạng và kích cỡ khác nhau thì sao?
+
+5
+00:00:25,620 --> 00:00:32,780
+Định luật Coulomb giúp tìm ra lực giữa các vật nhỏ, giống như các hạt nhưng trong vật lý, chúng ta luôn phải đối mặt với tất cả mọi loại hình dạng và kích cỡ khác nhau. 
+
+6
+00:00:32,780 --> 00:00:39,120
+Các lực điện được sử dụng để cung cấp điện cho nhà, máy tính và làm sáng màn hình mà bạn đang sử dụng để xem video này. 
+
+7
+00:00:39,119 --> 00:00:44,599
+Những hiện tượng điện xảy ra hàng ngày này đòi hỏi những thiết bị vật lý điều khiển các hạt mang điện bằng nhiều cách vô cùng thú vị. 
+
+8
+00:00:44,600 --> 00:00:49,460
+Chúng ta sẽ tạo ra các thiết bị điện kích thích hàng triệu electron trong mỗi pixel trên màn hình này. 
+
+9
+00:00:49,460 --> 00:00:53,340
+Nhưng làm thế nào chúng ta có thể thiết kế chúng để truyền lượng lực điện chính xác?
+
+10
+00:00:53,340 --> 00:01:02,420
+Chúng ta có một số công thức và khái niệm rồi, nhưng chúng ta sẽ cần hiểu thêm nữa cách điều khiển các hạt mang điện và mở rộng các tiềm năng của điện. 
+
+11
+00:01:02,420 --> 00:01:14,540
+[Nhạc nền]
+
+12
+00:01:14,540 --> 00:01:20,600
+Vì vậy chúng tôi muốn mô tả các tình huống phức tạp liên quan đến các hạt mang điện mà phải sử dụng nhiều hơn chỉ một Định luật Coulomb. 
+
+13
+00:01:20,599 --> 00:01:26,659
+Nếu có một vật và biết tổng điện tích của nó, liệu ta có thể dự đoán các điện tích khác sẽ phản ứng ra sao khi chúng bay qua vật này?
+
+14
+00:01:26,659 --> 00:01:30,379
+Nhà khoa học Anh, Michael Faraday đã nghĩ ra một cách để thực hiện điều đó.
+
+15
+00:01:30,379 --> 00:01:38,599
+Ông giả thiết rằng tất cả các vật thể mang điện đều tạo ra một điện trường xung quanh nó và gây ra một lực lên tất cả các điện tích mà nó gặp.
+
+16
+00:01:38,599 --> 00:01:43,899
+Và ông ấy đã đúng: điện trường là một hiệu ứng có thể đo lường tính toán được tạo ra bởi bất kì một vật thể tích điện nào.
+
+17
+00:01:43,900 --> 00:01:48,560
+Điện trường mang năng lượng và truyền nó cho các vật chất mang điện khác bằng cách tác dụng lực điện.
+
+18
+00:01:48,560 --> 00:01:51,980
+Có nhiều cách để tìm hiểu hoạt động của điện trường.
+
+19
+00:01:51,980 --> 00:01:53,540
+Đầu tiên, có một thuật toán cổ.
+
+20
+00:01:53,540 --> 00:01:56,980
+Giả sử có một điện tích điểm dương, ta gọi là Q lớn.
+
+21
+00:01:56,980 --> 00:02:04,520
+Để tìm hiểu xem Q tác động lên các điện tích khác ra sao, ta dùng một điện tích dương để thử, gọi là q nhỏ, rồi đo lực tác dụng vào q.
+
+22
+00:02:04,519 --> 00:02:14,419
+Bây giờ, ta xây dựng phương trình, điện trường tạo ra từ một vật mang điện tích sẽ bằng lực điện giữa vật đó và điện tích thử, chia cho độ lớn của điện tích thử.
+
+23
+00:02:14,419 --> 00:02:16,799
+Để tìm F, bạn chỉ cần dùng định luật Coulomb.
+
+24
+00:02:16,800 --> 00:02:20,240
+Và bạn chỉ cần biết giá trị của điện tích điểm Q lớn.
+
+25
+00:02:20,240 --> 00:02:24,700
+Thực tế, bạn có thể dùng phương trình của định luật Coulomb để thay vào lực F.
+
+26
+00:02:24,699 --> 00:02:30,839
+Nếu thế, bạn sẽ thấy rằng độ lớn của điện tích thử q nhỏ sẽ bị triệt tiêu và kết quả ta nhận được chỉ còn phụ thuộc vào Q lớn.
+
+27
+00:02:30,840 --> 00:02:34,960
+Vậy là ta đã có một phương trình để tính điện trường tạo ra bởi bất kì một điện tích điểm nào.
+
+28
+00:02:34,960 --> 00:02:37,520
+Hãy làm cho vấn đề trở nên dễ hình dung hơn.
+
+29
+00:02:37,520 --> 00:02:44,480
+Một cách khác để hiểu rõ chuyện gì đang thực sự xảy ra giữa các điện tích, là dùng biểu đồ vectơ, sử dụng những kiến thức ta đã biết về định luật Coulomb và vectơ lực.
+
+30
+00:02:44,479 --> 00:02:51,619
+Một lần nữa, hãy bắt đầu với điện tích điểm dương Q lớn, đặt giữa điểm A và điện tích thử dương q nhỏ.
+
+31
+00:02:51,620 --> 00:02:58,759
+Trong khi cả Q lớn và q nhỏ đều tạo ra điện trường, ta giả sử độ lớn của Q lớn hơn của q rất nhiều.
+
+32
+00:02:58,759 --> 00:03:04,079
+Bây giờ, hãy vẽ các vectơ ứng với các vị trí đặt q nhỏ quanh Q lớn khác nhau.
+
+33
+00:03:04,080 --> 00:03:11,060
+Các vectơ này gọi là các đường sức điện và chúng cho thấy độ lớn và hướng của lực tác dụng lên bất cứ một điện tích thử dương nào nằm trong điện trường.
+
+34
+00:03:11,060 --> 00:03:19,099
+Độ dày của các đường sức điện thể hiện độ lớn của lực điện tác dụng lên q nhỏ, nếu q nhỏ càng gần Q lớn thì lực đó sẽ càng lớn.
+
+35
+00:03:19,099 --> 00:03:24,819
+Suy luận tương tự đối với điện tích âm mặc dù sẽ có một chút khác biệt.
+
+36
+00:03:24,819 --> 00:03:35,759
+Sơ đồ đường sức điện của điện tích điểm Q mang điện tích âm sẽ trông giống như khi mang điện tích dương, nhưng mũi tên hướng vào trong, thể hiện rằng diện tích thử dương q sẽ bị hút bởi Q
+
+37
+00:03:35,759 --> 00:03:39,340
+Bây giờ hãy tìm hiểu hình ảnh của điện trường trong một trường hợp phức tạp hơn.
+
+38
+00:03:39,340 --> 00:03:47,200
+Giả sử ta có một điện tích dương và một điện tích âm cách nhau một khoảng, với độ lớn điện tích bằng nhau nhưng trái dấu.
+
+39
+00:03:47,199 --> 00:03:50,379
+Hai điện tích như vậy được gọi là lưỡng cực điện.
+
+40
+00:03:50,379 --> 00:03:57,400
+Ta có hai điện tích và chúng tạo ra các điện trường riêng, ta có thể cộng lại để xác định điện trường tổng.
+
+41
+00:03:57,400 --> 00:03:59,640
+Đây là nguyên lý chồng chất điện trường.
+
+42
+00:03:59,639 --> 00:04:07,139
+Hãy cùng xem xét điện trường tạo bởi điện tích lưỡng cực này vì nó sẽ cho ta thấy bốn thuộc tính quan trọng của đường sức điện.
+
+43
+00:04:07,139 --> 00:04:11,599
+Thứ nhất: Các đường sức điện phải là đường tiếp tuyến với hướng của điện trường tại bất kì điểm nào.
+
+44
+00:04:11,599 --> 00:04:18,199
+Điều này nghĩa là nếu ta đặt một điện tích thử dương ở bất kì đâu, đường sức điện sẽ chỉ theo hướng của lực tác dụng lên điện tích thử dương đó.
+
+45
+00:04:18,199 --> 00:04:23,259
+Điều này cũng có nghĩa là một điện tích thử âm sẽ chịu một lực hoàn toàn ngược lại so với trên.
+
+46
+00:04:23,259 --> 00:04:27,079
+Thứ hai: Các đường sức càng dày, độ lớn điện trường càng lớn.
+
+47
+00:04:27,100 --> 00:04:33,840
+Khi một điện tích thử tiến gần tới một điện tích điểm cố định, lực tác dụng lên nó sẽ lớn hơn, do đó số lượng đường sức điện cũng lớn hơn.
+
+48
+00:04:33,839 --> 00:04:39,899
+Tất cả những điều này nghĩa là lượng đường sức đi ra từ một vật tích điện sẽ tỉ lệ với độ lớn điện tích của vật đó.
+
+49
+00:04:39,899 --> 00:04:46,039
+Nếu độ lớn của điện tích dương trong lưỡng cực điện tăng gấp đôi, thì lượng đường sức cũng tăng gấp đôi
+
+50
+00:04:46,040 --> 00:04:52,840
+Thứ ba: Các đường sức luôn bắt đầu từ vật thể mang điện tích dương và kết thúc ở vật thể mang điện tích âm.
+
+51
+00:04:52,839 --> 00:04:57,560
+Nếu không có vật mang điện tích âm xung quanh, các đường sức sẽ tiếp tục chạy xa mãi mãi.
+
+52
+00:04:57,560 --> 00:05:01,660
+Tới vô cực, tìm kiếm vật mang điện âm ở bất cứ đâu có thể.
+
+53
+00:05:01,660 --> 00:05:07,460
+Vậy là trong lưỡng cực điện, các đường sức sẽ bắt đầu từ điện tích dương và tiến tới điện tích âm.
+
+54
+00:05:07,459 --> 00:05:12,620
+Số đường sức đi ra từ mỗi điện tích là như nhau do độ lớn của chúng bằng nhau, nhưng trái dấu.
+
+55
+00:05:12,620 --> 00:05:17,060
+Thứ tư: Các đường sức không bao giờ cắt nhau.
+
+56
+00:05:17,060 --> 00:05:22,780
+Các đường sức cắt nhau có nghĩa là điện trường hoạt động theo các hướng khác nhau ở cùng một điểm, đây là một điều không thể.
+
+57
+00:05:22,779 --> 00:05:27,159
+Vậy là ta đã biết về các thuộc tính trên, và ta có thể vẽ các đường sức điện đối với bất kì vật thể mang điện nào.
+
+58
+00:05:27,160 --> 00:05:34,580
+Hãy cùng xem xét trường hợp có một điện tích âm -Q và một điện tích dương +2Q.
+
+59
+00:05:34,579 --> 00:05:43,639
+Nếu một điện tích thử dương được đặt ngay giữa chúng, lực tác dụng lên nó sẽ có hướng giống như hướng của điện trường chỉ về phía điện tích điểm âm.
+
+60
+00:05:43,639 --> 00:05:50,740
+Nhìn một cách tổng thể từ xa, bạn có thể thấy nó trông giống như các đường sức phát ra từ một điện tích điểm dương.
+
+61
+00:05:50,740 --> 00:05:55,139
+Hãy nhớ rằng, một nhóm các điện tích có thể trông hoàn toàn khác khi ta nhìn từ xa.
+
+62
+00:05:55,139 --> 00:06:02,620
+Hẳn là bạn đang tự hỏi tại sao chúng ta vẫn đang nói về các điện tích trong khi tôi đã nói về configurations của mọi vật mà ta thấy trong đời thực trước đó.
+
+63
+00:06:02,620 --> 00:06:10,939
+Giờ  ta đã biết cách xây dựng đường sức điện từ các vật thể mang điện, hãy thử làm điều ngược lại.
+
+64
+00:06:10,939 --> 00:06:17,180
+Giả sử ta muốn tạo ra một điện trường mà tất cả các điện tích thử dương chuyển động như nhau theo một hướng.
+
+65
+00:06:17,180 --> 00:06:23,540
+Ta có thể minh họa bởi một điện trường tạo ra bởi hai bản dẫn rất lớn, một dương và một âm.
+
+66
+00:06:23,540 --> 00:06:27,879
+Tất cả các điện tích thử dương giữa hai tấm dẫn sẽ di chuyển từ bản dương sang bản âm.
+
+67
+00:06:27,879 --> 00:06:32,740
+Ta sẽ biểu diễn điện trường bằng các đường đi từ bản dương sang âm.
+
+68
+00:06:32,740 --> 00:06:42,660
+Cặp bản dẫn này được gọi là tụ và là một phần rất quan trọng trong mọi hệ thống điện, vì nó có thể dùng điện trường của mình để tích trữ điện.
+
+69
+00:06:42,660 --> 00:06:47,380
+Chúng ta mới chỉ nói về điện trường giữa các vật mang điện như điện tích hay bản dẫn mang điện.
+
+70
+00:06:47,379 --> 00:06:52,879
+Liệu điện trường có tồn tại trong chất dẫn điện, nơi mà các electron có thể tự do di chuyển trong kim loại?
+
+71
+00:06:52,879 --> 00:06:58,939
+Để tìm hiểu, hãy tưởng tượng ta có một quả cầu dẫn điện mang điện âm, có nghĩa là nó mang trong mình rất rất nhiều các electron tự do.
+
+72
+00:06:58,939 --> 00:07:02,939
+Các electrons tự do thừa này muốn di chuyển càng ra xa nhau càng tốt.
+
+73
+00:07:02,939 --> 00:07:06,379
+Nghĩa là chúng tự tái phân bố lại vị trí trên bề mặt quả cầu.
+
+74
+00:07:06,379 --> 00:07:09,839
+Khi đó, chúng đạt tới cân bằng tĩnh điện.
+
+75
+00:07:09,839 --> 00:07:14,539
+Trong trạng thái này, các điện tích thừa sẽ di chuyển càng xa càng tốt để giảm lực tác dụng lên nhau.
+
+76
+00:07:14,540 --> 00:07:21,200
+Một khi đạt cân bằng, gia tốc của chúng bằng không, nghĩa là không còn lực tác dụng lên chúng nữa.
+
+77
+00:07:21,199 --> 00:07:28,759
+Và vì điện trường tác dụng lực điện lên các điện tích xung quanh, khi tổng hợp lực bằng không, điện trường cũng sẽ phải bằng không.
+
+78
+00:07:28,759 --> 00:07:30,539
+Vậy điều này cho ta biết gì?
+
+79
+00:07:30,540 --> 00:07:37,020
+Nó cho thấy điện trường bên trong chất dẫn luôn luôn bằng không khi nó đạt trạng thái cân bằng điện.
+
+80
+00:07:37,019 --> 00:07:40,079
+Nó cũng cho thấy tổng điện tích được phân bố trên bề mặt.
+
+81
+00:07:40,079 --> 00:07:42,879
+Các điều kiện này đúng cho mọi vật liệu dẫn điện.
+
+82
+00:07:42,879 --> 00:07:45,560
+Trong khi điện trường bên trong bằng 0,
+
+83
+00:07:45,560 --> 00:07:48,480
+bên ngoài bề mặt vật dẫn cũng tồn tại một điện trường.
+
+84
+00:07:48,480 --> 00:07:50,819
+Hãy xem lại tụ điện để hiểu điều đó nghĩa là gì.
+
+85
+00:07:50,819 --> 00:07:53,839
+Bạn có thể thấy rằng các diện tích bị dư thừa nằm trên bề mặt các bản.
+
+86
+00:07:53,839 --> 00:07:59,139
+Và trong khi không có điện trường tồn tại bên trong bản thân các bản đó, thì giữa hai bản có tồn tại một điện trường.
+
+87
+00:07:59,139 --> 00:08:05,060
+Bây giờ, nếu ta lấy một quả cầu chất dẫn trung hòa điện, làm rỗng bên trong và đặt một điện tích dương vào trung tâm thì sao?
+
+88
+00:08:05,060 --> 00:08:12,480
+điện tích dương bên trong quả cầu sẽ hút các điện tích âm bên trong lớp vỏ, đồng thời nó đẩy các điện tích dương ra bề mặt quả cầu.
+
+89
+00:08:12,480 --> 00:08:17,500
+Khi đạt cân bằng điện, những gì ta đã quan sát thấy lúc trước vẫn đúng.
+
+90
+00:08:17,500 --> 00:08:21,019
+Các điện tích ngừng chuyển động, và không có điện trường tồn tại bên trong.
+
+91
+00:08:21,019 --> 00:08:29,120
+Bây giờ bên trong lớp vỏ có một tổng điện tích âm do điện tích dương trung tâm đẩy và tạo ra phần ngoài vỏ một tổng điện tích dương.
+
+92
+00:08:29,120 --> 00:08:33,399
+Do đó một điện trường được tạo ra ở bên ngoài, do tồn tại một tổng điện tích dương.
+
+93
+00:08:33,399 --> 00:08:40,199
+Và trong khi không tồn tại điện trường ở bên trong lớp vỏ,  thì giữa các điểm trong trung tâm và bên trong bề mặt có tồn tại điện trường.
+
+94
+00:08:40,200 --> 00:08:45,700
+Bất kì điện tích thử dương nào nằm trong điện trường sẽ theo hướng các đường sức và bị đẩy về phía âm bên trong lớp vỏ.
+
+95
+00:08:45,700 --> 00:08:54,680
+Vậy ta đã dùng kiến thức về các điện tích và định luật Coulomb để tìm ra cách mô tả cách một vật tích điện tác dụng lên mọi thứ xung quanh nó.
+
+96
+00:08:54,679 --> 00:09:01,620
+Ở bài sau, ta sẽ học để biết rằng lực điện và điện trường mới chỉ là một nửa câu chuyện của điện từ học.
+
+97
+00:09:01,620 --> 00:09:06,700
+Hôm nay chúng ta đã học về  cách mọi vật thể tạo ra điện trường tác động lên các chất liệu tích điện khác ra sao.
+
+98
+00:09:06,700 --> 00:09:13,460
+Ta đã học cách xây dựng các đường sức điện và cách tính toán độ lớn và hướng của điện trường đối với một điện tích.
+
+99
+00:09:13,460 --> 00:09:17,639
+Cuối cùng, ta đã học về cách điện trường hoạt động trong tụ điện và các vật dẫn.
+
+100
+00:09:17,639 --> 00:09:21,600
+Crash Course Vật lý được sản xuất với sự liên kết cùng PBS Digital Studios.
+
+101
+00:09:21,600 --> 00:09:24,840
+Các bạn có thể truy cập kênh của họ và xem các tập mới nhất
+
+102
+00:09:24,840 --> 00:09:28,240
+của các chương trình như Gross Science, 
+
+103
+00:09:28,240 --> 00:09:32,279
+Tập hôm nay của Crash Course được quay tại Crash Course Studio của giáo sư Cheryl C Kinney,
+
+104
+00:09:32,279 --> 00:09:37,240
+cùng với sự giúp đỡ của những người tuyệt vời sau và đội đồ họa Thought Cafe.
+

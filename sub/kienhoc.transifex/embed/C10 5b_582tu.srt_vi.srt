@@ -1,0 +1,272 @@
+0
+00:00:00,000 --> 00:00:00,001
+Tung Dinh _ VGU
+http://youtu.be/GZnFAPGM9mw
+
+1
+00:00:00,000 --> 00:00:00,870
+
+2
+00:00:00,870 --> 00:00:04,580
+Ta sẽ tìm hiểu về code cho robot
+
+3
+00:00:04,580 --> 00:00:11,320
+Ta thiết lập chân PB7 tới PB4 cho motor phải
+
+4
+00:00:11,320 --> 00:00:14,420
+PB3 tới PB0 cho trái
+
+5
+00:00:14,420 --> 00:00:17,300
+PE1 cho công tắc trái
+
+6
+00:00:17,300 --> 00:00:22,490
+PE0 cho công tắc phải, cả hai đều
+là positive logic
+
+7
+00:00:22,490 --> 00:00:26,550
+Đó là phần khởi tạo, tương tự như lúc trước
+từng làm
+
+8
+00:00:26,550 --> 00:00:30,790
+Port B là output, và port E là input
+
+9
+00:00:30,790 --> 00:00:35,870
+
+10
+00:00:35,870 --> 00:00:40,430
+Ta sẽ dùng 1 struct để xác định thành phần
+của 1 trạng thái
+
+11
+00:00:40,430 --> 00:00:43,720
+Mỗi trạng thái sẽ có 1 output, có thời gian
+
+12
+00:00:43,720 --> 00:00:48,710
+là 10 ms để đợi, và 4 trạng thái tiếp theo
+
+13
+00:00:48,710 --> 00:00:54,590
+Nhắc lại, 4 trạng thái tiếp theo 00, nghĩa là ok
+
+14
+00:00:54,590 --> 00:00:55,930
+Chạy thẳng hết ga
+
+15
+00:00:55,930 --> 00:00:59,230
+01 nghĩa là công tắc phải bị nhấn
+
+16
+00:00:59,230 --> 00:01:01,650
+02 nghĩa là công tắc trái bị nhấn
+
+17
+00:01:01,650 --> 00:01:04,365
+và 03 nghĩa là va chạm phía trước
+
+18
+00:01:04,365 --> 00:01:06,340
+cả hai công tắc bị nhấn cùng lúc
+
+19
+00:01:06,340 --> 00:01:10,740
+Số 4 này tương đương với inputs
+
+20
+00:01:10,740 --> 00:01:12,440
+phải phản hồi
+
+21
+00:01:12,440 --> 00:01:13,815
+Chính xác
+
+22
+00:01:13,815 --> 00:01:16,540
+
+23
+00:01:16,540 --> 00:01:21,370
+Một điều quan trọng nữa về máy trạng thái hữu hạn,
+
+24
+00:01:21,370 --> 00:01:27,360
+là bởi cấu trúc 1-1 giữa các trạng thái ta vẽ
+
+25
+00:01:27,360 --> 00:01:29,780
+đồ thị chuyển trạng thái, và cấu trúc này
+
+26
+00:01:29,780 --> 00:01:32,910
+ta sẽ lưu trong máy tính
+
+27
+00:01:32,910 --> 00:01:37,790
+Mỗi trạng thái chỉ duy nhất có 1 output, và
+chúng đề có thời gian chờ
+
+28
+00:01:37,790 --> 00:01:42,560
+mỗi trạng thái có 4 trạng thái tiếp theo, biểu diễn ở đây
+
+29
+00:01:42,560 --> 00:01:46,680
+phụ thuộc vào input là 0 1 2 hay 3
+
+30
+00:01:46,680 --> 00:01:49,350
+Đó chính là cấu trúc 1-1
+
+31
+00:01:49,350 --> 00:01:54,850
+nghĩa là thông tin ở đây không hơn không kém 
+đồ thị chuyển trạng thái
+
+32
+00:01:54,850 --> 00:01:55,830
+graph.
+
+33
+00:01:55,830 --> 00:02:01,610
+Dữ liệu ở đây hoàn toàn xác định được
+máy sẽ làm gì
+
+34
+00:02:01,610 --> 00:02:05,460
+Ta sẽ lưu trạng thái hiện tại trong biến này
+
+35
+00:02:05,460 --> 00:02:09,410
+gọi là cState, nó sẽ có giá trị giữa 0 và 9
+
+36
+00:02:09,410 --> 00:02:14,350
+biẻu diễn trạng thái hiện tại
+
+37
+00:02:14,350 --> 00:02:19,200
+Việc khởi tạo sẽ bật clock, SysTick và ports
+
+38
+00:02:19,200 --> 00:02:23,650
+và cũng khởi tạo trạng thái đầu tiên, trạng thái 0
+
+39
+00:02:23,650 --> 00:02:26,970
+Ta cứ lập lại thôi
+
+40
+00:02:26,970 --> 00:02:31,250
+Đầu tiên là y chang giáo sư Yerraballi đấy
+
+41
+00:02:31,250 --> 00:02:34,600
+ta sẽ output ra phụ thuộc vào trạng thái hiện tại
+
+42
+00:02:34,600 --> 00:02:37,190
+cState là trạng thái hiện tại
+
+43
+00:02:37,190 --> 00:02:42,220
+và ta sẽ đưa output ra port B từ trạng thái đó 
+
+44
+00:02:42,220 --> 00:02:46,910
+Đó là 1 số ta thấy trong máy trạng thái hữu hạn
+
+45
+00:02:46,910 --> 00:02:50,600
+Tiếp theo, để chạy với tốc độ ta muốn
+
+46
+00:02:50,600 --> 00:02:54,300
+ta cần delay một khoảng thời gian
+
+47
+00:02:54,300 --> 00:02:58,479
+delay 2 nghĩa là delay 20ms
+
+48
+00:02:58,479 --> 00:03:00,270
+Vậy nó sẽ điều khiển
+
+49
+00:03:00,270 --> 00:03:04,337
+tốc độ motor quay?
+
+50
+00:03:04,337 --> 00:03:05,420
+Đúng vậy
+
+51
+00:03:05,420 --> 00:03:08,870
+Nếu ta đợi 20ms
+
+52
+00:03:08,870 --> 00:03:11,900
+nó sẽ là 1.8 độ cho 20ms
+
+53
+00:03:11,900 --> 00:03:14,850
+
+54
+00:03:14,850 --> 00:03:16,670
+Kế đến là input
+
+55
+00:03:16,670 --> 00:03:20,730
+Ta sẽ đưa input từ Port E bit 0 và 1
+
+56
+00:03:20,730 --> 00:03:25,130
+Biến này đây sẽ có giá trị 0 1 2
+
+57
+00:03:25,130 --> 00:03:30,000
+hoặc 3, phụ thuộc vào robot chạm cái gì hay không
+
+58
+00:03:30,000 --> 00:03:32,570
+Cuối cùng, ta sẽ thay đổi trạng thái, 
+
+59
+00:03:32,570 --> 00:03:35,780
+dựa vào cả input và trạng thái hiện tại
+
+60
+00:03:35,780 --> 00:03:39,780
+Trạng thái hiện tại sẽ xác định
+
+61
+00:03:39,780 --> 00:03:44,650
+và biến input ở đây 0 1 2 3 
+
+62
+00:03:44,650 --> 00:03:47,790
+sẽ xác định trạng thái tiếp theo là gì
+
+63
+00:03:47,790 --> 00:03:51,510
+dựa vào input và trạng thái hiện tại
+
+64
+00:03:51,510 --> 00:03:54,087
+
+65
+00:03:54,087 --> 00:03:56,420
+OK, giờ ta quan sát robot vận hành
+
+66
+00:03:56,420 --> 00:04:00,190
+thực tế
+
+67
+00:04:00,190 --> 00:04:01,347

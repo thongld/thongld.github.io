@@ -1,0 +1,233 @@
+1
+00:00:00,480 --> 00:00:04,080
+https://youtu.be/CmDGG1OcuOQ    NghiaNguyen
+"Cái gì xảy ra nếu..."
+Đây là tựa đề của video tuần này.
+
+2
+00:00:04,340 --> 00:00:08,880
+Ta đang nhìn vào bảng dữ liệu của quán cafe 
+và ta đang phân vân: Ta có ổn không?
+
+3
+00:00:08,880 --> 00:00:12,500
+Tình hình kinh doanh ra sao? Tất nhiên,
+điều đầu tiên bạn sẽ làm là:
+
+4
+00:00:12,500 --> 00:00:15,120
+Bạn nhìn vào dữ liệu và bạn ...
+
+5
+00:00:15,600 --> 00:00:17,859
+Thêm vào 1 PivotTable!
+
+6
+00:00:17,859 --> 00:00:24,470
+Và cái quan trọng ở đây là, lần này ta 
+không chọn "Add data to Data Model".
+
+7
+00:00:24,470 --> 00:00:27,090
+Tôi sẽ giải thích cho bạn 
+tại sao ta làm điều đó sau.
+
+8
+00:00:27,360 --> 00:00:30,220
+Ta đặt vào toàn bộ giá bán và ngày bán.
+
+9
+00:00:30,220 --> 00:00:33,260
+Hãy làm giá bán giống như tiền tệ thực sự.
+
+10
+00:00:33,260 --> 00:00:36,640
+Nó sẽ dễ nhìn hơn và dễ dàng 
+biết chuyện gì đang diễn ra.
+
+11
+00:00:37,100 --> 00:00:42,660
+Dù thế nào, giờ ta đang có doanh thu trong 1 ngày,
+và nó hơi khó để biết chuyện gì đang diễn ra.
+
+12
+00:00:42,910 --> 00:00:46,070
+Điều mà ta có thể làm trong 1 
+PivotTable là nhóm các dữ liệu lại.
+
+13
+00:00:46,070 --> 00:00:50,060
+Trong tháng, hay trong trường 
+hợp này ta muốn trong quý.
+
+14
+00:00:50,420 --> 00:00:55,760
+Ta có 1 cái nhìn tổng quan về 
+từng quý: Quý 1, Quý 2, Quý 3.
+
+15
+00:00:56,160 --> 00:01:02,040
+Đây là lý do mà ta bỏ chọn ô 
+"Adding data to data model".
+
+16
+00:01:02,280 --> 00:01:06,540
+Tôi cũng không hiểu tại sao việc 
+tính năng nhóm chỉ hoạt động ...
+
+17
+00:01:06,540 --> 00:01:11,060
+nếu dữ liệu của bạn ko nằm trong data model.
+Và ta phải xử lý điều đó.
+
+18
+00:01:11,760 --> 00:01:13,280
+Điều mà ta sắp sửa làm là ...
+
+19
+00:01:13,280 --> 00:01:17,000
+Đầu tiên, đổi tên worksheet này,
+bởi vì tên "Sheet2" không có ý nghĩa.
+
+20
+00:01:17,000 --> 00:01:20,820
+Hãy gọi là 'Sales Target', 
+bởi vì đó là cái ta sẽ tính toán.
+
+21
+00:01:21,120 --> 00:01:25,120
+Ta có mục tiêu cho 
+doanh thu theo từng quý.
+
+22
+00:01:25,120 --> 00:01:31,520
+Ta tự đặt mục tiêu doanh thu trung bình 
+$40000. Đấy là mục tiêu của ta.
+
+23
+00:01:31,680 --> 00:01:33,820
+Vậy ta sẽ làm thế nào để đạt được mục tiêu này.
+
+24
+00:01:33,820 --> 00:01:38,600
+Ta có gần tới đích chưa? Trong quý này, Quý 4, 
+ta chưa kiếm được doanh thu nào cả...
+
+25
+00:01:38,600 --> 00:01:44,020
+vậy đặt nó là 0.  Vậy ta có thể 
+tính giá trị trung bình hiện tại.
+
+26
+00:01:44,320 --> 00:01:47,660
+Ta lấy giá trị của 3 quý trước mà ta đã có...
+
+27
+00:01:48,440 --> 00:01:52,280
+kết hợp với doanh thu quý 4, hiện giờ vẫn là 0.
+
+28
+00:01:52,640 --> 00:01:57,300
+Bạn có thể thấy, ta chưa tới quý 4, 
+và chả có doanh thu nào cả.
+
+29
+00:01:57,300 --> 00:01:59,520
+Ta chỉ ở khoảng 28000.
+
+30
+00:02:00,780 --> 00:02:06,360
+Vậy câu hỏi là: Ta cần làm gì trong 
+quý 4 để đạt được mức trung bình.
+
+31
+00:02:06,360 --> 00:02:09,860
+Ta phải làm gì?
+Ta phải làm gì để đạt được mục tiêu?
+
+32
+00:02:11,120 --> 00:02:14,880
+Điều ta làm, tất nhiên, là tính 
+toán cái này với 1 công thức.
+
+33
+00:02:14,880 --> 00:02:18,440
+Ta có thể nói: được, tôi biết 
+tôi cần 40000 mỗi quý.
+
+34
+00:02:18,440 --> 00:02:22,980
+vậy 4 x 40000 là con số tôi 
+cần đạt được cho cả năm.
+
+35
+00:02:23,360 --> 00:02:29,460
+Tiếp theo, tôi trừ đi khoản doanh thu mà 
+tôi đã kiếm ở 3 quý và tôi sẽ có kết quả.
+
+36
+00:02:30,160 --> 00:02:33,520
+46000 hay con số nào đó là cái mà tôi cần đạt được.
+
+37
+00:02:33,780 --> 00:02:35,040
+Nhưng tốn nhiều công sức.
+
+38
+00:02:35,040 --> 00:02:40,760
+Tôi phải nghĩ về các công thức tôi cần.
+Tôi có thể để Excel nghĩ giùm,
+
+39
+00:02:40,760 --> 00:02:44,080
+bởi vì Excel là 1 công cụ tính toán tốt hơn.
+
+40
+00:02:44,320 --> 00:02:51,040
+Ta có thể dùng 1 hàm có tên là
+'Goal Seek' để tìm 1 mục tiêu cho ta.
+
+41
+00:02:51,040 --> 00:02:52,140
+Nó giống như thế này.
+
+42
+00:02:52,140 --> 00:02:55,040
+Ta sẽ xoá những công thức này, 
+ta không cần chúng nữa
+
+43
+00:02:55,040 --> 00:02:57,380
+bởi vì ta sẽ làm nó hiệu quả hơn.
+
+44
+00:02:57,540 --> 00:03:01,180
+Ta chọn tab Data và click 
+'What-If Analysis' -> 'Goal Seek'...
+
+45
+00:03:01,180 --> 00:03:04,880
+Và rồi, Excel sẽ yêu cầu chọn 1 ô.
+
+46
+00:03:04,880 --> 00:03:11,840
+Ta muốn có 1 con số trung bình 40000 và
+ta sẽ đạt được điều đó bằng cách đổi ô đó.
+
+47
+00:03:12,140 --> 00:03:18,800
+Ta sẽ đổi doanh thu của quý 4 và nó sẽ ....
+
+48
+00:03:19,030 --> 00:03:23,910
+Giá trị như cũ: 46000. Trong trường hợp này, 
+ta không cần 1 công thức nào cả.
+
+49
+00:03:24,159 --> 00:03:28,969
+Ta để Excel tính toán con số mà ta cần kiếm được.
+
+50
+00:03:28,969 --> 00:03:32,249
+Ta muốn Exel suy nghĩ thay ta.
+

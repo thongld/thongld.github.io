@@ -1,0 +1,171 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/PLsSwhjKQZs
+
+1
+00:00:00,000 --> 00:00:01,875
+DR. JONATHAN VALVANO:
+So Professor Yerrabali,
+
+2
+00:00:01,875 --> 00:00:03,415
+what are we going to learn today?
+
+3
+00:00:03,415 --> 00:00:05,165
+DR. RAMESH YERRABALI:
+We're going to learn
+
+4
+00:00:05,165 --> 00:00:08,770
+to use the SysTick timer
+to get precise delays.
+
+5
+00:00:08,770 --> 00:00:12,030
+Precision like this is
+required in real-time systems.
+
+6
+00:00:12,030 --> 00:00:14,850
+DR. JONATHAN VALVANO: So what kind
+of systems are we talking about?
+
+7
+00:00:14,850 --> 00:00:17,433
+DR. RAMESH YERRABALI: Systems
+where not meeting precise delays
+
+8
+00:00:17,433 --> 00:00:19,340
+can have consequences.
+
+9
+00:00:19,340 --> 00:00:26,490
+Consequences ranging from minor
+inconveniences to serious catastrophes.
+
+10
+00:00:26,490 --> 00:00:31,270
+DR. JONATHAN VALVANO: You mean like air
+traffic control or nuclear power plants
+
+11
+00:00:31,270 --> 00:00:34,300
+or even the anti-lock
+brakes in your car?
+
+12
+00:00:34,300 --> 00:00:35,850
+DR. RAMESH YERRABALI: Yes.
+
+13
+00:00:35,850 --> 00:00:41,440
+We will also build an abstraction
+called a finite state machine which
+
+14
+00:00:41,440 --> 00:00:46,140
+makes as design complex systems
+using a simple abstraction that
+
+15
+00:00:46,140 --> 00:00:49,232
+lends itself to provability of function.
+
+16
+00:00:49,232 --> 00:00:51,190
+DR. JONATHAN VALVANO: So
+a finite state machine
+
+17
+00:00:51,190 --> 00:00:55,270
+is a design process
+that is easy to verify?
+
+18
+00:00:55,270 --> 00:00:59,800
+DR. RAMESH YERRABALI: Yes, because
+there's a rich set of theory behind it.
+
+19
+00:00:59,800 --> 00:01:04,160
+And the best thing is the same engine
+that we build for one finite state
+
+20
+00:01:04,160 --> 00:01:08,600
+machine can be used no matter
+how complex a system is.
+
+21
+00:01:08,600 --> 00:01:13,440
+DR. JONATHAN VALVANO: So does that mean
+I can reuse your code, your engine,
+
+22
+00:01:13,440 --> 00:01:15,027
+in my finite state machine?
+
+23
+00:01:15,027 --> 00:01:16,610
+DR. RAMESH YERRABALI: That is correct.
+
+24
+00:01:16,610 --> 00:01:18,869
+That sounds good, but what
+are we going to build then?
+
+25
+00:01:18,869 --> 00:01:20,910
+DR. JONATHAN VALVANO:
+We're going to build things
+
+26
+00:01:20,910 --> 00:01:25,130
+with stepper motors which are common
+motors used in embedded systems
+
+27
+00:01:25,130 --> 00:01:30,560
+when we want to have
+something that moves.
+
+28
+00:01:30,560 --> 00:01:32,740
+DR. RAMESH YERRABALI: A
+stepper motor like this
+
+29
+00:01:32,740 --> 00:01:36,269
+is part of any embedded system that
+has movement as one of its features.
+
+30
+00:01:36,269 --> 00:01:38,060
+DR. JONATHAN VALVANO:
+Yeah, and we're going
+
+31
+00:01:38,060 --> 00:01:40,530
+to show you this autonomous robot.
+
+32
+00:01:40,530 --> 00:01:46,840
+It has a micro controller, a
+battery, two stepper motors,
+
+33
+00:01:46,840 --> 00:01:48,944
+and lots of sensors.
+
+34
+00:01:48,944 --> 00:01:50,360
+DR. RAMESH YERRABALI: Let's do it.
+
+35
+00:01:50,360 --> 00:01:51,860
+DR. JONATHAN VALVANO: Yeah, come on.
+
+36
+00:01:51,860 --> 00:01:52,360

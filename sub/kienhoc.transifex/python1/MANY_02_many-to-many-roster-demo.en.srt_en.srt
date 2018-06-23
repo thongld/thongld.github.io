@@ -1,0 +1,970 @@
+1
+00:00:08,738 --> 00:00:10,380
+https://youtu.be/3g-1sHzuMoY
+So now what we're going to
+do is write a bit of code.
+
+2
+00:00:10,380 --> 00:00:13,310
+And we're going to write code that
+implements the many-to-many relationship.
+
+3
+00:00:13,310 --> 00:00:17,569
+And so, if you recall from before,
+a many-to-many relationship is a situation
+
+4
+00:00:17,569 --> 00:00:21,288
+where you have many courses on one
+side and many users on the other side.
+
+5
+00:00:21,288 --> 00:00:25,470
+And there is many users that
+are members of many courses, and
+
+6
+00:00:25,470 --> 00:00:29,420
+a particular user can also be
+members of lots of courses.
+
+7
+00:00:29,420 --> 00:00:30,920
+So there's many on both sides.
+
+8
+00:00:30,920 --> 00:00:34,110
+And we don't have a way in a database to
+really represent this directly, so
+
+9
+00:00:34,110 --> 00:00:37,270
+we make this thing that Wikipedia
+calls a junction table.
+
+10
+00:00:37,270 --> 00:00:39,850
+I don't know, I call it
+a many-to-many table.
+
+11
+00:00:39,850 --> 00:00:42,610
+And what we do is we decompose
+the many-to-many relationship
+
+12
+00:00:42,610 --> 00:00:44,890
+into a pair of many-to-one relationships.
+
+13
+00:00:44,890 --> 00:00:49,480
+So you create this table that is the join
+table, the table to connect them together.
+
+14
+00:00:49,480 --> 00:00:53,470
+And it effectively has two
+foreign keys that point outwards.
+
+15
+00:00:53,470 --> 00:00:55,160
+And then you can also
+model certain things.
+
+16
+00:00:55,160 --> 00:00:59,670
+So sometimes you, in this case, we
+would model the role of the student or
+
+17
+00:00:59,670 --> 00:01:00,870
+your teacher or whatever.
+
+18
+00:01:00,870 --> 00:01:03,910
+So you're a member the course but
+there's something about your membership.
+
+19
+00:01:03,910 --> 00:01:06,860
+And there's sometimes a few other
+things that are sort of down here
+
+20
+00:01:06,860 --> 00:01:08,350
+on this connection.
+
+21
+00:01:08,350 --> 00:01:10,550
+But you have two foreign keys and
+
+22
+00:01:10,550 --> 00:01:13,540
+what's also interesting is
+there is no primary key, right?
+
+23
+00:01:13,540 --> 00:01:15,010
+No primary key.
+
+24
+00:01:15,010 --> 00:01:17,900
+And that's because we
+create a composite key
+
+25
+00:01:17,900 --> 00:01:19,750
+that is the combination
+of these two things.
+
+26
+00:01:19,750 --> 00:01:23,320
+So we basically say user_id and
+course_id together.
+
+27
+00:01:23,320 --> 00:01:25,540
+So 1, 1;, 1, 2; 1, 3.
+
+28
+00:01:25,540 --> 00:01:30,120
+Any combination of those numbers
+is itself a primary key.
+
+29
+00:01:30,120 --> 00:01:32,090
+We call that a composite key.
+
+30
+00:01:32,090 --> 00:01:32,670
+Okay?
+
+31
+00:01:32,670 --> 00:01:36,580
+So what we're going to do is we're going to talk
+about how we will insert data into a user
+
+32
+00:01:36,580 --> 00:01:38,830
+table, insert data into the course table,
+
+33
+00:01:38,830 --> 00:01:42,600
+and then insert data into this
+connector table, okay?
+
+34
+00:01:42,600 --> 00:01:44,080
+So let's take a look at the code.
+
+35
+00:01:44,080 --> 00:01:46,350
+And what we're going to do is
+we're going to actually in this case,
+
+36
+00:01:46,350 --> 00:01:47,860
+instead of reading XML or
+
+37
+00:01:47,860 --> 00:01:51,670
+reading from the Web, we're actually
+going to read some JSON data that I provide.
+
+38
+00:01:51,670 --> 00:01:54,680
+And what this is,
+is this is JSON that's a list of a list.
+
+39
+00:01:54,680 --> 00:01:58,850
+So each list here is a name,
+a course, and a role.
+
+40
+00:01:58,850 --> 00:02:03,650
+And so this is the instructor of si110,
+this is a student in si110,
+
+41
+00:02:03,650 --> 00:02:06,070
+and if you scroll down,
+you see then sooner or later,
+
+42
+00:02:06,070 --> 00:02:10,570
+after a while, we have si106 and
+then we have the instructor of si106.
+
+43
+00:02:10,570 --> 00:02:15,310
+So we're going to write
+a bit of code that reads
+
+44
+00:02:15,310 --> 00:02:18,400
+this JSON data, parses the JSON data, and
+
+45
+00:02:18,400 --> 00:02:22,550
+then loops through what effectively
+are JSON records one at a time.
+
+46
+00:02:22,550 --> 00:02:26,290
+Inserting into the User table,
+inserting into the Course table and
+
+47
+00:02:26,290 --> 00:02:30,080
+then using the foreign key to
+connect these things together, okay?
+
+48
+00:02:30,080 --> 00:02:33,920
+So Charley is on one side,
+si110 is on the other side, and
+
+49
+00:02:33,920 --> 00:02:35,610
+then we have to make the connection.
+
+50
+00:02:35,610 --> 00:02:38,890
+So what we really have to do is establish
+a primary key in the User table
+
+51
+00:02:38,890 --> 00:02:39,710
+for Charley.
+
+52
+00:02:39,710 --> 00:02:42,800
+Establish a primary key for
+si110 in the Course table.
+
+53
+00:02:42,800 --> 00:02:46,446
+And then we just insert a single row.
+which is pretty simple and pretty easy.
+
+54
+00:02:48,306 --> 00:02:49,950
+Okay, so let's take a look at the code.
+
+55
+00:02:49,950 --> 00:02:51,190
+Here's the code, roster.py.
+
+56
+00:02:51,190 --> 00:02:54,570
+Now some of these things are going to
+look pretty comfortable by now.
+
+57
+00:02:54,570 --> 00:02:57,890
+We import the json library,
+import sqlite3 library.
+
+58
+00:02:57,890 --> 00:03:01,640
+We make a connection to
+the database rosterdb.sqlite.
+
+59
+00:03:01,640 --> 00:03:04,030
+And we get a cursor so
+we can send commands.
+
+60
+00:03:04,030 --> 00:03:06,600
+So this next bit is a little bit
+different than we usually do.
+
+61
+00:03:06,600 --> 00:03:10,290
+Usually we say cur.execute but this time
+we're going to say executescript.
+
+62
+00:03:10,290 --> 00:03:12,140
+And that's the difference,
+we're saying executescript.
+
+63
+00:03:12,140 --> 00:03:16,580
+And this is a triple-quoted string, so
+that's one long string with newlines and
+
+64
+00:03:16,580 --> 00:03:17,790
+all that stuff.
+
+65
+00:03:17,790 --> 00:03:22,820
+And what we're able to do in executescript
+is have multiple SQL commands.
+
+66
+00:03:22,820 --> 00:03:26,370
+And so we can say DROP TABLE IF EXISTS,
+DROP TABLE IF EXISTS.
+
+67
+00:03:26,370 --> 00:03:27,330
+What we're doing here is,
+
+68
+00:03:27,330 --> 00:03:30,650
+we don't want to have to delete this
+file every time we restart, so
+
+69
+00:03:30,650 --> 00:03:34,310
+we want to start with fresh tables so
+we can drop them and recreate them.
+
+70
+00:03:35,400 --> 00:03:39,440
+And drop if exist means the first time
+when you first create it, it won't exist,
+
+71
+00:03:39,440 --> 00:03:41,150
+so this does absolutely nothing.
+
+72
+00:03:41,150 --> 00:03:43,610
+But by the time we get here
+those three tables will be gone.
+
+73
+00:03:43,610 --> 00:03:45,870
+We're going to create a User table and
+
+74
+00:03:45,870 --> 00:03:50,090
+the only thing we're doing different than
+we usually do is we've added this UNIQUE.
+
+75
+00:03:50,090 --> 00:03:55,670
+So what this basically says is within the
+table User the name column must be unique.
+
+76
+00:03:55,670 --> 00:04:00,590
+So there can't be two rows that have
+the word Chuck in them for the name.
+
+77
+00:04:00,590 --> 00:04:02,990
+And this is a rule that we're making for
+ourselves.
+
+78
+00:04:02,990 --> 00:04:09,130
+And if we violate the rule SQLite will
+yell at us, or fail, or whatever.
+
+79
+00:04:09,130 --> 00:04:11,690
+Now in a bit,
+we're going to use this to our advantage.
+
+80
+00:04:11,690 --> 00:04:14,230
+And so the same thing is true for
+the course.
+
+81
+00:04:14,230 --> 00:04:17,510
+We got a primary key and then we got
+a logical key that we're basically saying
+
+82
+00:04:17,510 --> 00:04:19,610
+the title of the course must be unique.
+
+83
+00:04:19,610 --> 00:04:21,560
+And then we have our
+little connector table.
+
+84
+00:04:21,560 --> 00:04:25,390
+Our junction table connector table
+and it has
+
+85
+00:04:25,390 --> 00:04:28,880
+two foreign keys that look just like
+every foreign key we've ever made
+
+86
+00:04:28,880 --> 00:04:32,400
+except what we're saying here is
+PRIMARY KEY user_id, course_id.
+
+87
+00:04:32,400 --> 00:04:35,250
+So we're saying we have
+a composite primary key here.
+
+88
+00:04:35,250 --> 00:04:38,910
+that is the combination.
+So 1, 1 or 2, 1 or 2, 1.
+
+89
+00:04:40,060 --> 00:04:43,710
+It's like these are concatenated
+together to make a unique key.
+
+90
+00:04:43,710 --> 00:04:45,960
+So neither of these two
+is the primary key.
+
+91
+00:04:45,960 --> 00:04:51,010
+But the primary key for the row
+is user_id course_id combination.
+
+92
+00:04:51,010 --> 00:04:53,680
+And this is also
+a uniqueness constraint so
+
+93
+00:04:53,680 --> 00:04:56,610
+that we can't doubly
+insert this stuff as well.
+
+94
+00:04:56,610 --> 00:04:59,601
+Okay? So that,
+when we're all done with that,
+
+95
+00:04:59,601 --> 00:05:03,684
+we've got three tables set up
+the way we want them to be, okay?
+
+96
+00:05:07,290 --> 00:05:12,640
+Okay, so we ask for a filename, we if hit
+Enter, it's going to be roster_data.json,
+
+97
+00:05:12,640 --> 00:05:16,370
+probably you'll just hit
+Enter on this all the time.
+
+98
+00:05:16,370 --> 00:05:18,490
+This is kind of the syntax of that file.
+
+99
+00:05:18,490 --> 00:05:21,970
+We're going to open the file,
+we're going to read the whole thing,
+
+100
+00:05:21,970 --> 00:05:24,416
+get that into string,
+we're going to loads it.
+
+101
+00:05:24,416 --> 00:05:27,730
+You could put try/excepts around here but
+hey, the data's going to work.
+
+102
+00:05:27,730 --> 00:05:29,640
+So it's just going to work.
+
+103
+00:05:29,640 --> 00:05:34,790
+So now json_data is a Python list.
+
+104
+00:05:34,790 --> 00:05:37,330
+So we're saying for entry in json_data.
+
+105
+00:05:37,330 --> 00:05:40,500
+So what that's going to do basically is
+entry is going to iterate through each of
+
+106
+00:05:40,500 --> 00:05:41,570
+these things.
+
+107
+00:05:41,570 --> 00:05:46,100
+So entry then is a three-element array,
+zero, one, and two.
+
+108
+00:05:46,100 --> 00:05:49,870
+And so it's like, oh, the name is entry
+sub zero and the title is entry sub one.
+
+109
+00:05:49,870 --> 00:05:52,660
+So we're pulling the name and
+the title out of this data.
+
+110
+00:05:53,955 --> 00:05:57,220
+We've read it. This is one of the things
+that everyone loves about JSON so much
+
+111
+00:05:57,220 --> 00:05:59,460
+is that the reading it, the parsing it,
+
+112
+00:05:59,460 --> 00:06:01,680
+the looping through it,
+the hunting things down,
+
+113
+00:06:01,680 --> 00:06:05,650
+is very instinctive because it's nothing
+but lists and dictionaries depending on
+
+114
+00:06:05,650 --> 00:06:10,610
+whether the bit of JSON starts with
+a square bracket or a curly bracket.
+
+115
+00:06:10,610 --> 00:06:13,000
+But other than that, it's all good.
+
+116
+00:06:13,000 --> 00:06:14,850
+Then we print the little guy out.
+
+117
+00:06:14,850 --> 00:06:20,060
+Now, this is where we're going to take
+advantage of the UNIQUE constraint.
+
+118
+00:06:20,060 --> 00:06:23,700
+So, we're going to say INSERT OR IGNORE.
+
+119
+00:06:23,700 --> 00:06:27,190
+So, what OR IGNORE really
+in general is saying is
+
+120
+00:06:27,190 --> 00:06:30,680
+if this insert would cause an error,
+do nothing.
+
+121
+00:06:30,680 --> 00:06:33,510
+So it says insert this or ignore it.
+
+122
+00:06:33,510 --> 00:06:36,020
+And the particular thing
+that's going to go wrong here
+
+123
+00:06:36,020 --> 00:06:39,750
+is a violation of the unique constraint
+that we put on the name column.
+
+124
+00:06:39,750 --> 00:06:40,710
+The name column.
+
+125
+00:06:40,710 --> 00:06:42,270
+So INSERT INTO User name.
+
+126
+00:06:42,270 --> 00:06:45,900
+Remember id's a primary key so we don't
+have to say that. And then we have values,
+
+127
+00:06:45,900 --> 00:06:46,540
+question mark.
+
+128
+00:06:46,540 --> 00:06:50,764
+And then we have a little tuple with one
+little extra comma guy, sorry about that
+
+129
+00:06:50,764 --> 00:06:52,748
+syntax but that's what we gotta do.
+
+130
+00:06:52,748 --> 00:06:57,856
+So what this does is if this is
+the first time we've seen name,
+
+131
+00:06:57,856 --> 00:07:01,800
+it inserts it and
+gives that a primary key.
+
+132
+00:07:01,800 --> 00:07:05,030
+If it's the second or later,
+it doesn't insert it.
+
+133
+00:07:05,030 --> 00:07:07,860
+We're kind of like behaving like
+a dictionary like we did in some of
+
+134
+00:07:07,860 --> 00:07:09,750
+the other database programs.
+
+135
+00:07:09,750 --> 00:07:13,010
+So this either inserts or does nothing.
+
+136
+00:07:13,010 --> 00:07:18,470
+But what we're sure of at this point,
+from this point forward,
+
+137
+00:07:18,470 --> 00:07:21,858
+we know that there's a record and
+a primary key.
+
+138
+00:07:21,858 --> 00:07:24,550
+So now what we're going to do is we're
+going to look up that primary key and
+
+139
+00:07:24,550 --> 00:07:26,290
+say what was the primary key,
+
+140
+00:07:26,290 --> 00:07:31,910
+either given immediately one
+statement earlier or a long time ago.
+
+141
+00:07:31,910 --> 00:07:36,660
+Whatever it is, select the primary
+key FROM User WHERE name equals name.
+
+142
+00:07:36,660 --> 00:07:41,530
+And so, we insert it or ignore it,
+then we do a select, this little,
+
+143
+00:07:41,530 --> 00:07:45,350
+this almost become an idiom by
+the time it's all said and done.
+
+144
+00:07:45,350 --> 00:07:49,380
+This little bit is an INSERT OR IGNORE
+and then SELECT and this says,
+
+145
+00:07:49,380 --> 00:07:51,800
+put it in or not and give me the
+primary key when you're done.
+
+146
+00:07:51,800 --> 00:07:56,226
+Then we just say user_id = cur.fetchone,
+say give me one row from this thing,
+
+147
+00:07:56,226 --> 00:07:57,818
+there should only be one row.
+
+148
+00:07:57,818 --> 00:08:00,778
+And then the sub zero
+element because we only
+
+149
+00:08:00,778 --> 00:08:04,300
+are selecting one column
+from the database. Okay.
+
+150
+00:08:05,440 --> 00:08:07,570
+Then we do the exact same thing again.
+
+151
+00:08:09,580 --> 00:08:13,370
+It's an idiom at this point.
+You just grab these three lines and
+
+152
+00:08:13,370 --> 00:08:14,900
+then we paste them down here.
+
+153
+00:08:14,900 --> 00:08:17,584
+Insert or ignore into the Course
+with the title with that's got
+
+154
+00:08:17,584 --> 00:08:18,500
+a UNIQUE constraint on it.
+
+155
+00:08:18,500 --> 00:08:22,390
+And then we're going to do a
+SELECT WHERE. And then
+
+156
+00:08:22,390 --> 00:08:24,500
+we're going to have a nice
+little integer number,
+
+157
+00:08:24,500 --> 00:08:29,180
+which is the primary key of the course,
+whether we just inserted it or not.
+
+158
+00:08:29,180 --> 00:08:31,410
+Okay? So that's in good shape.
+
+159
+00:08:31,410 --> 00:08:36,100
+So at this point we have inserted
+a record here, we've inserted
+
+160
+00:08:36,100 --> 00:08:40,770
+a record there, and we have the value for
+this and this sitting in two variables.
+
+161
+00:08:40,770 --> 00:08:42,080
+Like I've always said,
+
+162
+00:08:42,080 --> 00:08:46,020
+some of these things that you've got to put
+foreign keys in are easier in Python.
+
+163
+00:08:46,020 --> 00:08:50,830
+Because you don't have to write
+down like in a little cheat sheet.
+
+164
+00:08:50,830 --> 00:08:53,170
+Right, here is like
+a little cheat sheet here.
+
+165
+00:08:53,170 --> 00:08:54,370
+Like what are those numbers?
+
+166
+00:08:54,370 --> 00:08:57,470
+Well, we don't need to know
+what those numbers are.
+
+167
+00:08:57,470 --> 00:09:05,440
+Because we have them conveniently
+in variables, course_id, user_id.
+
+168
+00:09:05,440 --> 00:09:09,190
+It says give it to me whatever that number
+is, you don't have to write it down.
+
+169
+00:09:09,190 --> 00:09:12,432
+So we're just going to INSERT OR
+REPLACE,
+
+170
+00:09:12,432 --> 00:09:17,790
+this is because the combination of
+user_id and course_id is a primary key.
+
+171
+00:09:17,790 --> 00:09:22,620
+So if somehow we see the person in
+the course twice, it'll just update it.
+
+172
+00:09:22,620 --> 00:09:30,552
+So it's like this is a combination
+of an insert/update, D-A-T-E.
+
+173
+00:09:30,552 --> 00:09:34,280
+So INSERT OR REPLACE, it's just
+don't blow up if it's already there.
+
+174
+00:09:34,280 --> 00:09:38,840
+INTO Member user_id, course_id,
+two values, and then user_id, course_id.
+
+175
+00:09:38,840 --> 00:09:39,670
+And then we're done.
+
+176
+00:09:39,670 --> 00:09:43,840
+We really have established that little
+connector with the two foreign keys.
+
+177
+00:09:43,840 --> 00:09:46,520
+And then we commit to make
+sure we write it to disk, and
+
+178
+00:09:46,520 --> 00:09:50,130
+then we run this one time for
+each of the things. Okay?
+
+179
+00:09:50,130 --> 00:09:56,220
+So pretty easy, pretty
+straightforward, let's run the code.
+
+180
+00:09:56,220 --> 00:10:01,188
+Okay, so I am in the code/roster and
+so if I take an ls,
+
+181
+00:10:01,188 --> 00:10:05,086
+I have roster.json here and roster.py.
+
+182
+00:10:05,086 --> 00:10:09,304
+And to run the code I just
+say python roster.py.
+
+183
+00:10:09,304 --> 00:10:15,135
+And at this point a database
+has been created because the create,
+
+184
+00:10:15,135 --> 00:10:18,158
+the execute script was before that.
+
+185
+00:10:18,158 --> 00:10:20,880
+So let's take a look at
+the database structure.
+
+186
+00:10:20,880 --> 00:10:25,125
+There is no data in it, so
+let's do an Open Database,
+
+187
+00:10:25,125 --> 00:10:28,870
+rosterdb.sqlite.
+
+188
+00:10:28,870 --> 00:10:32,860
+So we've got these things, they're all
+created exactly the way we wanted.
+
+189
+00:10:32,860 --> 00:10:35,900
+Now you would normally not
+bother stopping and looking but
+
+190
+00:10:35,900 --> 00:10:39,105
+if we take a look at the data
+there is no data in here.
+
+191
+00:10:39,105 --> 00:10:41,720
+Okay? There is no data.
+
+192
+00:10:41,720 --> 00:10:43,060
+And so I'm just going to hit Enter,
+
+193
+00:10:43,060 --> 00:10:48,190
+which means it's going to
+assume the rosterdata.json.
+
+194
+00:10:48,190 --> 00:10:51,680
+Reads all those things, inserts all
+those things, commits all those things.
+
+195
+00:10:51,680 --> 00:10:54,730
+And now we can go back and
+take a look at the data.
+
+196
+00:10:54,730 --> 00:10:57,100
+And there it is,
+the data is already there.
+
+197
+00:10:57,100 --> 00:10:59,200
+Here's all the users in the User table.
+
+198
+00:10:59,200 --> 00:11:00,370
+Simple enough.
+
+199
+00:11:00,370 --> 00:11:03,240
+Courses in the Course table,
+simple enough.
+
+200
+00:11:03,240 --> 00:11:09,110
+Primary keys and then the Member table,
+which is nothing more than a bunch of rows
+
+201
+00:11:09,110 --> 00:11:14,170
+with two primary keys in them pointing to
+the course and to the user on either side.
+
+202
+00:11:14,170 --> 00:11:16,060
+And so there we go.
+
+203
+00:11:16,060 --> 00:11:24,377
+Pretty much that's all we really
+have to do to do to do, let's go up here.
+
+204
+00:11:26,627 --> 00:11:31,214
+To implement this picture of
+a many-to-many relationship that we've
+
+205
+00:11:31,214 --> 00:11:34,607
+decomposed into two
+many-to-one relationships.

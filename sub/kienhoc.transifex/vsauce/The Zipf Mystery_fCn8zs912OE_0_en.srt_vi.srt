@@ -1,0 +1,1039 @@
+1
+00:00:00,130 --> 00:00:08,350
+Xin chào. Michael đây. Khoảng 6% những thứ bạn nói
+và đọc hằng ngày đều có từ
+
+2
+00:00:08,349 --> 00:00:09,969
+"THE".
+
+3
+00:00:12,019 --> 00:00:18,239
+"The" là từ được sử dụng nhiều nhất trong Tiếng Anh.
+Khoảng 1 trong 16 từ
+
+4
+00:00:18,250 --> 00:00:25,079
+chúng ta gặp hằng ngày là chữ "the".
+20 từ phổ biến nhất trong Tiếng Anh
+
+5
+00:00:25,079 --> 00:00:32,210
+là "thế," "of," "and," "tô," "a," "in," "is," "I," "thất," "it," "for," "you,"
+
+6
+00:00:32,210 --> 00:00:39,460
+"was," "with," "on," "as," "have," "but," "be," "they."
+Một thông tin thú vị. Nhưng vẫn còn nhiều từ khác nữa.
+
+7
+00:00:39,460 --> 00:00:44,969
+Bạn thấy đấy, khi các từ được đem ra xếp hạng từ nào dùng nhiều nhất
+
+8
+00:00:44,969 --> 00:00:51,530
+trong một ngôn ngữ, trong một cuốn sách hay bài viết
+hầu hết đều có một hiện tượng lạ
+
+9
+00:00:51,530 --> 00:00:57,880
+xuất hiện. Từ dùng nhiều thứ 2 có số lần xuất hiện
+bằng một nửa từ dùng nhiều nhất.
+
+10
+00:00:57,880 --> 00:01:04,558
+Từ dùng nhiều thứ 3 đứng thứ 3.
+Từ dùng nhiều thứ 4 đứng thứ 4.
+
+11
+00:01:04,558 --> 00:01:10,640
+Từ dùng nhiều thứ 5 đứng thứ 5.
+Từ dùng nhiều thứ 6 đứng thứ 6, cứ như vậy.
+
+12
+00:01:10,640 --> 00:01:16,969
+Vì một lý do nào đó, tần suất sử dụng của một từ
+
+13
+00:01:16,969 --> 00:01:23,280
+tỉ lệ với thứ hạng của nó. Tần suất của từ và xếp hạng của nó
+trên đồ thị log - log
+
+14
+00:01:23,280 --> 00:01:30,909
+là một đường thẳng, tuân theo quy luật lũy thừa.
+Hiện tượng này tuân theo định luật Zipf và
+
+15
+00:01:30,909 --> 00:01:38,409
+nó không chỉ được áp dụng trong Tiếng Anh, mà còn 
+có thể áp dụng cho các ngôn ngữ khác nữa,
+
+16
+00:01:38,409 --> 00:01:39,380
+thậm chí là tất cả mọi ngôn ngữ.
+
+17
+00:01:39,390 --> 00:01:43,379
+Thậm chí là những ngôn ngữ cổ đại mà chúng ta chưa dịch ra được.
+
+18
+00:01:43,379 --> 00:01:50,349
+Và vấn đề ở chỗ này. Chúng ta không hề biết lý do tại sao.
+Thật ngạc nhiên là một thứ phức tạp
+
+19
+00:01:50,349 --> 00:01:56,390
+như thực tế lại có thể được gói gọn trong một thứ
+vô cùng sáng tạo là ngôn ngữ, theo cách
+
+20
+00:01:56,390 --> 00:02:03,560
+vô cùng dễ đoán. Dễ đoán đến cỡ nào?
+Các bạn xem này. Theo trang web WordCount.org,
+
+21
+00:02:03,560 --> 00:02:08,629
+trang web chuyên xếp hạng các từ hay sử dụng trong Tiếng Anh,
+từ "sauce" đứng thứ
+
+22
+00:02:08,629 --> 00:02:15,949
+5555 trong số những từ tiếng Anh hay dùng.
+Còn đây là danh sách số lần xuất hiện
+
+23
+00:02:15,949 --> 00:02:21,359
+của từng từ trên trang Wikipedia và khoảng 10000 đầu sách
+
+24
+00:02:21,360 --> 00:02:27,940
+ở trang web Gutenberg. Từ được sử dụng nhiều nhất, từ "the"
+xuất hiện khoảng
+
+25
+00:02:27,939 --> 00:02:34,469
+181 triệu lần. Biết được 2 thứ này, chúng ta có thể ước tính được
+
+26
+00:02:34,469 --> 00:02:39,539
+từ "sauce" xuất hiện khoảng 30000 lần 
+trên cả Wikipedia và Gutenberg cộng lại.
+
+27
+00:02:39,539 --> 00:02:45,219
+Cũng khá nhiều đấy chứ.
+
+28
+00:02:45,219 --> 00:02:51,099
+Vậy thì sao chứ? Thế giới vô cùng hỗn loạn. Mọi thứ phân bố theo nhiều cách khác nhau, không chỉ
+
+29
+00:02:51,099 --> 00:02:54,090
+theo định luật lũy thừa. Và ngôn ngữ là một thứ riêng biệt,
+
+30
+00:02:54,090 --> 00:03:00,520
+có chủ ý và riêng biệt. Vậy thì tại sao 
+các hoạt động và hành vi phức tạp của
+
+31
+00:03:00,520 --> 00:03:08,140
+thế giới và cả chúng ta tạo nên đều
+tuân theo 1 quy tắc cơ bản?
+
+32
+00:03:08,139 --> 00:03:13,739
+Thực sự chúng ta chưa biết. Hơn cả một thế kỷ nghiên cứu vẫn chưa tìm được.
+
+33
+00:03:13,740 --> 00:03:20,020
+Hơn thế nữa, định luật Zipf không chỉ bì mật diễn tả cách dùng từ.
+
+34
+00:03:20,020 --> 00:03:25,810
+Nó còn được áp dụng trong bài toán dân số,
+mật độ của bão mặt trời, số chuỗi protein và
+
+35
+00:03:25,810 --> 00:03:30,460
+thụ thể miễn dịch, lượng website bị nghẽn,
+cường độ động đất,
+
+36
+00:03:30,469 --> 00:03:34,979
+số lần trích dẫn tài liệu học thuật, tên họ,
+xung điện
+
+37
+00:03:34,979 --> 00:03:38,719
+của mạng lưới thần kinh, thành phần trong sách dạy nấu ăn,
+số cuộc gọi điện thoại
+
+38
+00:03:38,719 --> 00:03:42,359
+bề rộng của vết nứt trên Mặt trăng,
+số người chết
+
+39
+00:03:42,360 --> 00:03:47,620
+trong chiến tranh, nước đi đầu tiên trong chơi cờ,
+thậm chí là tần suất chúng ta quên mọi thứ.
+
+40
+00:03:47,620 --> 00:03:54,780
+Có rất nhiều giả thiết tại sao ngôn ngữ tuân theo định luật Zipf,
+nhưng không có kết luận chắc chắn nào
+
+41
+00:03:54,780 --> 00:04:00,219
+và đoạn video này cũng không có một giải thích nào cụ thể. 
+
+42
+00:04:00,219 --> 00:04:06,280
+Thật là chán khi chúng ta chỉ muốn biết thêm thông tin. Nhưng điều đó có nghĩa là 
+
+43
+00:04:06,280 --> 00:04:13,969
+chúng ta hỏi nhiều hơn chúng ta trả lời.
+Vậy nên bây giờ chúng ta sẽ đi tìm hiểu các nhánh khác
+
+
+44
+00:04:13,969 --> 00:04:18,439
+của định luật, một vài lời giải thích khả thi và các bí mật.
+
+45
+00:04:18,439 --> 00:04:23,319
+Định luật Zipf được phổ biến rộng rãi bởi George Zipf,
+
+46
+00:04:23,319 --> 00:04:29,659
+1 nhà ngôn ngữ học tại Đại học Harvard, là một dạng riêng biệt so với phân bố liên tục Pareto
+
+47
+00:04:29,660 --> 00:04:35,070
+là cái mà từ đó chúng ta có được nguyên lí Pareto.
+Nhưng bởi vì có
+
+
+48
+00:04:35,069 --> 00:04:40,069
+nhiều thứ trong tự nhiên tuân theo quy luật này,
+nguyên lý Pareto cho chúng ta biết rằng
+
+49
+00:04:40,069 --> 00:04:47,728
+chỉ có 20% nguyên nhân dẫn đến 80% 
+
+50
+00:04:47,728 --> 00:04:49,019
+kết quả,
+
+51
+00:04:49,019 --> 00:04:54,348
+giống như ngôn ngữ vậy, khoảng 18% số từ hay dùng 
+
+52
+00:04:54,348 --> 00:05:02,060
+sẽ xuất hiện trong khoảng 80% trường hợp.
+Vào năm 1896, Vilredo Pareto chứng minh rằng
+
+53
+00:05:02,060 --> 00:05:08,300
+khoảng 80% diện tích đất ở Ý là do 20% dân số sở hữu
+
+54
+00:05:08,300 --> 00:05:13,689
+Ngoài ra, ông còn chú ý rằng trong khu vườn của mình, khoảng 20% cây đậu
+
+55
+00:05:13,689 --> 00:05:20,439
+cho ra lượng đậu chiếm 80% so với tổng số đậu khi thu hoạch. Ông và các nhà nghiên cứu khác đã xem xét
+
+56
+00:05:20,439 --> 00:05:26,939
+các cơ sở dữ liệu khác và nhận thấy tỉ lệ 80-20 xuất hiện ở rất nhiều nơi trên thế giới.
+
+57
+00:05:26,939 --> 00:05:35,228
+20% số người giàu nhất có thu nhập chiếm 82,7% tổng thu nhập của loài người. Ở Mỹ, khoảng 20% bệnh nhân
+
+58
+00:05:35,228 --> 00:05:41,050
+tiêu thụ 80% nguồn lực chăm sóc sức khỏe.
+Vào năm 2002, Microsoft
+
+59
+00:05:41,050 --> 00:05:46,610
+cho biết khoảng 80% trục trặc trong Window và Office là do
+
+60
+00:05:46,610 --> 00:05:51,658
+khoảng 20% lỗi gây ra. Một quy luật thông thường trong kinh doanh là
+
+61
+00:05:51,658 --> 00:05:57,418
+khoảng 20% khách hàng sẽ quyết định 80% thu nhập của bạn
+
+62
+00:05:57,418 --> 00:06:02,109
+và 80% lời phàn nàn mà bạn nhận được sẽ đến từ 20% số khách mua hàng.
+
+63
+00:06:02,110 --> 00:06:08,639
+Một cuốn sách với tựa đề "Nguyên lý 80/20" thậm chí còn chỉ ra rằng ở nhà hay
+
+64
+00:06:08,639 --> 00:06:09,778
+văn phòng,
+
+65
+00:06:09,778 --> 00:06:16,918
+khoảng 20% số thảm bị mòn đến 80%. 
+Và Woody Allen đã phát biểu rằng
+
+66
+00:06:16,918 --> 00:06:24,908
+"Chỉ có 80% thành công là xuất hiện.". 
+Nguyên lý Pareto có ở khắp mọi nơi,
+
+67
+00:06:24,908 --> 00:06:27,699
+đó là điều chắc chắn.
+
+68
+00:06:27,699 --> 00:06:32,680
+Bằng cách tập trung vào 20% sai lầm, bạn có thể  khắc phục
+
+69
+00:06:32,680 --> 00:06:38,840
+80% vấn đền. Một loạt các nhân tố không liên quan khác làm cho
+
+70
+00:06:38,839 --> 00:06:43,638
+quy luật này đúng trong các trường hợp, nhưng nếu chúng ta đi tìm hiểu cái gì gây ra
+
+71
+00:06:43,639 --> 00:06:44,930
+hiện tượng trên,
+
+72
+00:06:44,930 --> 00:06:49,280
+có lẽ chúng ta sẽ tìm ra các cơ chế của
+
+73
+00:06:49,279 --> 00:06:55,929
+định luật Zipf trong ngôn ngữ. Bản thân 
+George Zipf nghĩ rằng sự phân bố
+
+74
+00:06:55,930 --> 00:07:00,978
+thứ hạng trong ngôn ngữ là kết quả của Nguyên lý tối giản.
+
+75
+00:07:00,978 --> 00:07:07,409
+Mọi thứ trong tự nhiên đều diễn ra theo hướng ít bị cản trở hơn.
+Zipf tin rằng
+
+76
+00:07:07,410 --> 00:07:12,840
+điều đó hình thành nên các hành vi của con người,
+và ông giả định rằng ngôn ngữ cũng như vậy,
+
+77
+00:07:12,839 --> 00:07:18,279
+tức là khi giao tiếp một cách tự nhiên, chúng ta
+sẽ cố gắng dùng càng ít từ càng tốt
+
+78
+00:07:18,279 --> 00:07:23,369
+để nói lên suy nghĩ của mình. Điều đó dễ thực hiện.
+Nhưng để hiểu được người đối diện
+
+79
+00:07:23,370 --> 00:07:25,598
+đang nói gì,
+
+80
+00:07:25,598 --> 00:07:30,990
+người nghe cần có một lượng từ vựng lớn hơn,
+giúp họ hiểu rõ hơn, từ đó
+
+81
+00:07:30,990 --> 00:07:36,639
+họ ít tốn công hơn. Zipf cảm thấy rằng
+sự thỏa hiệp giữa người nói và người nghe
+
+82
+00:07:36,639 --> 00:07:43,310
+dẫn đến tình trạng ngôn ngữ như hiện nay.
+1 vài từ được dùng đi dùng lại và rất nhiều từ
+
+83
+00:07:43,310 --> 00:07:47,129
+hiếm khi được sử dụng.
+
+84
+00:07:47,129 --> 00:07:52,039
+Những nghiên cứu gần đây cho thấy rằng
+việc sử dụng các từ ngắn, phổ thông
+
+85
+00:07:52,038 --> 00:07:57,748
+giúp làm loãng bớt thông tin cho người nghe,
+chỉ cho họ các từ quan trọng
+
+86
+00:07:57,749 --> 00:08:03,239
+để tốc độ truyền tải thông tin không đổi.
+Giả thiết trên cũng có lý, và đã được
+
+87
+00:08:03,238 --> 00:08:07,829
+nghiên cứu bằng cách áp dụng quy tắc tối giản cho những hành vi khác, nhưng
+
+88
+00:08:07,829 --> 00:08:13,288
+sau đó các nhà nghiên cứu tranh cãi rằng
+đối với ngôn ngữ, lời giải thích thậm chí
+
+89
+00:08:13,288 --> 00:08:19,028
+còn đơn giản hơn. Vài năm sau khi báo cáo của Zipf được công bố,
+Benoit Mandelbrot chứng minh rằng
+
+90
+00:08:19,028 --> 00:08:24,418
+có thể không có gì bí mật ở định luật Zipf cả,
+bởi vì ngay cả khi bạn
+
+91
+00:08:24,418 --> 00:08:29,668
+đánh chữ một cách ngẫu nhiên, các chữ vẫn sẽ phân bố
+
+92
+00:08:29,668 --> 00:08:35,629
+theo định luật Zipf. Giả thiết khá thú vị và đây là lý do tại sao.
+
+93
+00:08:35,629 --> 00:08:41,769
+Theo quy luật hàm mũ, có nhiều từ dài hơn từ ngắn.
+Ví dụ như trong tiếng Anh,
+
+94
+00:08:41,769 --> 00:08:48,970
+bảng chữ cái tiếng Anh có thể tạo nên 26 từ 1 chữ cái,
+nhưng lại tạo nên 26x26 từ 2 chữ cái
+
+95
+00:08:48,970 --> 00:08:55,709
+Và cũng như đánh máy một cách ngẫu nhiên,
+mỗi khi bấm phím "Spacebar" thì 1 từ lại xuất hiện.
+
+96
+00:08:55,708 --> 00:09:00,938
+Do vậy nên xác suất nhấn Spacebar tùy vào từ,
+từ càng dài thì
+
+97
+00:09:00,938 --> 00:09:03,068
+khoảng thời gian
+
+98
+00:09:03,068 --> 00:09:08,159
+giữa các lần bấm Spacebar càng lâu.
+Sự kết hợp các yếu tố trên
+
+99
+00:09:08,159 --> 00:09:14,719
+khá là giống với định luật Zipf.
+Nếu 26 chữ cái và phím Spacebar
+
+100
+00:09:14,720 --> 00:09:20,129
+có xác suất bấm là như nhau, 
+thì sau khi đánh chữ cái đầu tiên,
+
+101
+00:09:20,129 --> 00:09:25,389
+tiếp theo là đến nút Spacebar, thì xác suất đó sẽ là
+
+102
+00:09:25,389 --> 00:09:31,579
+1/27. Và một điều chắc chắn là, nếu bạn bấm ngẫu nhiên
+
+103
+00:09:31,578 --> 00:09:39,239
+1 phím hay thuê một con khỉ đánh máy,
+khoảng 1 trên 27 lần hay 3,7%
+
+104
+00:09:39,240 --> 00:09:44,769
+khoảng cách giữa các khoảng trống, là những chữ cái.
+Những từ 2 chữ cái
+
+105
+00:09:44,769 --> 00:09:50,919
+xuất hiện khi đánh 1 chữ cái bất kì, sau đó là 1 chữ nữa, thì xác suất là 26/27
+
+106
+00:09:50,919 --> 00:09:54,620
+và sau cùng là phím Spacebar.
+
+107
+00:09:54,620 --> 00:09:59,980
+Xác suất của từ 3 chữ cái là khả năng xuất hiện của 1 chữ cái, rồi 1 chữ nữa,
+và 1 chữ cuối cùng, và sau đó là khoảng trắng. 
+
+108
+00:09:59,980 --> 00:10:04,350
+Nếu chúng ta lấy độ dài của từ chia cho số từ,
+
+
+109
+00:10:04,350 --> 00:10:08,950
+chúng ta sẽ có được xác suất xuất hiện của từ,
+ngoại trừ các từ đã có sẵn.
+
+110
+00:10:08,950 --> 00:10:14,950
+Ví dụ, chữ "V" có xác suất xuất hiện là 0,142%
+
+111
+00:10:14,950 --> 00:10:24,440
+nếu đánh ngẫu nhiên. Từ "Vsauce" là 0.0000000993%.
+Các từ càng dài
+
+
+112
+00:10:24,440 --> 00:10:29,530
+thì xác suất càng thấp. 
+
+113
+00:10:29,529 --> 00:10:35,569
+
+Có 26 từ có 1 chữ cái,
+
+114
+00:10:35,570 --> 00:10:40,640
+vậy nên 26 thứ hạng đầu là của các từ 1 chữ cái.
+
+115
+00:10:40,639 --> 00:10:45,939
+676 hạng tiếp theo thuộc về 
+
+116
+00:10:45,940 --> 00:10:50,700
+các từ gồm 2 chữ cái.
+Nếu chúng ta mở rộng ra
+
+
+117
+00:10:50,700 --> 00:10:56,980
+dựa trên số chữ của từng từ, chúng ta sẽ có quy luật Zipf.
+Các nhà nghiên cứu 
+
+118
+00:10:56,980 --> 00:11:02,159
+đã chỉ ra rằng thay đổi điều kiện ban đầu có thể
+làm thay đổi kết quả.
+
+119
+00:11:02,159 --> 00:11:08,179
+Sự phân bố này được tạo ra 
+không từ cái gì khác ngoại trừ
+
+120
+00:11:08,179 --> 00:11:09,919
+toán học.
+
+121
+00:11:09,919 --> 00:11:16,000
+Có lẽ là không có bí mật gì cả.
+Có lẽ từ ngữ là kết quả ngẫu nhiên
+
+122
+00:11:16,000 --> 00:11:21,339
+từ quá trình con người quan sát thế giới và thiết lập nên
+bảng chữ cái và định luật Zipf
+
+123
+00:11:21,339 --> 00:11:26,739
+để mô tả quy luật đó. Vậy thôi.
+
+
+124
+00:11:27,480 --> 00:11:28,240
+Và như thường lệ
+
+125
+00:11:28,250 --> 00:11:31,559
+cám ơn vì....khoan đã!
+
+126
+00:11:31,559 --> 00:11:36,419
+Thực ra ngôn ngữ rất khác so với việc đánh máy.
+Sự giao tiếp
+
+127
+00:11:36,419 --> 00:11:41,039
+mang tính chủ quan ở một mức độ nào đó.
+Sự bày tỏ và các chủ đề xuất hiện dựa trên
+
+128
+00:11:41,039 --> 00:11:46,139
+những gì đã nói trước đó. Và lượng từ vựng 
+mà chúng ta sử dụng không chỉ là
+
+129
+00:11:46,139 --> 00:11:51,538
+kết quả sắp xếp các chữ cái một cách ngẫu nhiên.
+Chẳng hạn như khi con khỉ đánh máy thì nó không thể
+
+130
+00:11:51,539 --> 00:11:56,439
+giải thích tại sao tên của các nguyên tố, các hành tinh
+và các ngày
+
+131
+00:11:56,440 --> 00:12:02,040
+trong tuần lại sử dụng ngôn ngữ tuân theo định luật Zipf.
+Những thứ tôi vừa kể bị ràng buộc bởi
+
+132
+00:12:02,049 --> 00:12:06,409
+thế giới tự nhiên và chúng không phải là kết quả của
+quá trình phân chia ngẫu nhiên thế giới 
+
+133
+00:12:06,409 --> 00:12:12,269
+thành nhiều lĩnh vực. Hơn thế nữa, khi bạn có 1 danh sách các từ mà
+trước đây
+
+
+
+134
+00:12:12,269 --> 00:12:16,669
+bạn chưa bao giờ nghe hay dùng, chẳng hạn như khi
+viết một câu chuyện về sinh vật ngoài hành tinh
+
+135
+00:12:16,669 --> 00:12:21,929
+có tên lạ, theo tự nhiên người ta sẽ
+sử dụng tên của một trong những
+
+136
+00:12:21,929 --> 00:12:29,750
+người ngoài hành tinh từ 2 đến 3 lần.
+Và có vẻ như định luật Zipf
+
+137
+00:12:29,750 --> 00:12:35,549
+đã hình thành trong suy nghĩ của chúng ta.
+Có lẽ còn có cái gì đó trong cách suy nghĩ và
+
+138
+00:12:35,549 --> 00:12:40,528
+chủ đề thảo luận đã định hình nên định luật Zipf.
+
+139
+00:12:40,528 --> 00:12:44,838
+Quy luật phân bố của định luật Zipf xảy ra 
+thông qua quá trình làm thay đổi
+
+140
+00:12:44,839 --> 00:12:49,300
+trạng thái trước đó của nó.
+Chúng được gọi là quá trình
+
+141
+00:12:49,299 --> 00:12:55,208
+liên kết ưu tiên.
+Chúng xảy ra khi một thứ gì đó - tiền, quan điểm,
+
+142
+00:12:55,208 --> 00:12:59,989
+sự chú ý, sự khác nhau, bạn bè, công việc,
+bất kể thứ gì - được bộc lộ ra tùy vào
+
+143
+00:12:59,990 --> 00:13:05,749
+lượng ban đầu của nó là bao nhiêu.
+Quay trở lại ví dụ về tấm thảm, nếu hầu hết
+
+144
+00:13:05,749 --> 00:13:11,308
+mọi người đi từ phòng khách xuống nhà bếp 
+bằng một con đường cố định, đồ nội thất 
+
+145
+00:13:11,308 --> 00:13:17,990
+sẽ được đặt ở chỗ khác, làm cho hướng đi càng dễ chú ý.
+Một bài viết, hay video càng có 
+
+146
+00:13:17,990 --> 00:13:22,470
+nhiều lượt xem, thì xác suất nó được đề xuất
+
+147
+00:13:22,470 --> 00:13:28,209
+một cách tự động, hay được chú ý vì có nhiều lượt xem càng lớn,
+cả 2 yếu tố trên đều góp phần
+
+148
+00:13:28,208 --> 00:13:29,248
+làm tăng lượt xem của nó.
+
+149
+00:13:29,249 --> 00:13:34,600
+Giống như lăn một quả cầu tuyết xuống đồi tuyết vậy.
+Càng tích góp nhiều tuyết,
+
+150
+00:13:34,600 --> 00:13:38,949
+thì nó càng to ra và ngày càng thu được nhiều tuyết hơn
+
+và to ra nhanh hơn.
+
+151
+00:13:38,948 --> 00:13:43,789
+Chủ tâm của người thực hiện không ảnh hưởng đến quá trình.
+
+152
+00:13:43,789 --> 00:13:50,649
+Nó có thể xảy ra hoàn toàn ngẫu nhiên. Bạn hãy thử cái này.
+Lấy một đống kẹp giấy và lấy
+
+153
+00:13:50,649 --> 00:13:52,169
+2 cái bất kì.
+
+154
+00:13:52,169 --> 00:13:56,719
+Móc chúng lại với nhau rồi quăng chúng vô lại chỗ cũ.
+Lặp lại quá trình đó nhiều lần.
+
+155
+00:13:56,720 --> 00:14:02,019
+Nếu bạn lấy phải chuỗi kẹp giấy, vẫn tiến hành móc nó vào.
+
+156
+00:14:02,019 --> 00:14:06,100
+Sau một lát, bạn sẽ có được phân phối tuân theo quy luật Zipf.
+
+157
+00:14:06,110 --> 00:14:11,879
+Một số ít các chuỗi có số lượng kẹp giấy khác nhau.
+
+158
+00:14:11,879 --> 00:14:16,799
+Điều này đơn giản là do chuỗi càng dài, thì
+
+159
+00:14:16,799 --> 00:14:20,289
+lượng kẹp trong nó càng nhiều, thì xác suất
+
+160
+00:14:20,289 --> 00:14:26,189
+lấy phải nó trong tương lai sẽ cao hơn và
+kết quả là nó sẽ dài hơn.
+
+161
+00:14:26,190 --> 00:14:33,420
+Người giàu sẽ giàu hơn, và người nghèo sẽ nghèo hơn.
+Chỉ đơn giản là toán thôi.
+
+162
+00:14:33,419 --> 00:14:39,379
+Có lẽ bí mật của ngôn ngữ không liên quan 
+hay được củng cố bởi định luật Zipf.
+
+163
+00:14:39,389 --> 00:14:45,899
+Một khi 1 từ được sử dụng thì nó sẽ được
+sử dụng lại một lần nữa.
+
+164
+00:14:45,899 --> 00:14:49,419
+Mấu chốt vấn đề cũng có vai trò trong đó.
+
+165
+00:14:49,419 --> 00:14:54,559
+Viết và giao tiếp thường xoay quanh một chủ đề
+cho đến khi đến được điểm mấu chốt
+
+166
+00:14:54,559 --> 00:14:59,419
+và chủ đề thay đổi, làm từ vựng đổi theo.
+Quá trình như trên
+
+167
+00:14:59,419 --> 00:15:05,059
+là kết quả của định luật lũy thừa.
+Vậy nói tóm lại, cũng có vẻ hợp lý
+
+168
+00:15:05,059 --> 00:15:11,259
+khi nhìn nhận rằng định luật ZIpf cũng xuất hiện 
+trong ngôn ngữ.
+
+169
+00:15:11,259 --> 00:15:16,970
+Có lẽ một vài từ vựng và ngữ pháp được phát triển
+một cách ngẫu nhiên theo
+
+170
+00:15:16,970 --> 00:15:22,560
+giả thuyết của Mandelbrot. Và cách thức mà các cuộc thảo luận
+hay trò chuyện đều tuân theo
+
+171
+00:15:22,559 --> 00:15:26,948
+một vài các quy định và các điểm mấu chốt,
+đi kèm đó là sự tối thiểu hóa
+
+172
+00:15:26,948 --> 00:15:31,919
+khi nói hay viết, tất cả đều quyết định đến
+
+173
+00:15:31,919 --> 00:15:35,009
+thứ hạng của từ và tần suất suất hiện.
+
+174
+00:15:35,009 --> 00:15:40,169
+Thật đáng tiếc là câu trả lời không hề đơn giản hơn,
+nhưng cũng khá hay vì
+
+175
+00:15:40,169 --> 00:15:45,139
+kết quả thu được từ các cuộc nói chuyện.
+Nói một cách thẳng thắng,
+
+176
+00:15:45,139 --> 00:15:52,210
+và cũng thật ngạc nhiên là, gần 50% số lượng sách vở,
+cuộc đối thoại, các bài viết chủ yếu
+
+177
+00:15:52,210 --> 00:15:58,500
+gói gọn trong khoảng 50 đến 100 từ.
+Và 50% số từ đó chỉ
+
+178
+00:15:58,500 --> 00:16:04,870
+xuất hiện đúng một lần.
+Hoàn toàn không ngạc nhiên khi bạn
+
+179
+00:16:04,870 --> 00:16:11,690
+biết rằng 1 từ chiếm xác suất 6% trong những gì ta nói hằng ngày.
+
+
+180
+00:16:11,690 --> 00:16:18,300
+25 từ đầu tiên chiếm khoảng 1/3 những gì chúng ta nói
+và 100 từ đầu tiên thì chiếm 50%.
+
+181
+00:16:18,299 --> 00:16:25,399
+Ý tôi là mọi từ ngữ trong cuốn
+"Mùa hè ẩm ướt ở Mỹ", hay cuốn
+
+182
+00:16:25,399 --> 00:16:30,419
+"Các công trình hoàn chỉnh" của Plato, hay 
+các tác phẩm của Edgar Allan Poe
+
+183
+00:16:30,419 --> 00:16:37,919
+hay thậm chí là cả Kinh thánh, chỉ có khoảng 100 từ
+được sử dụng cho mọi tình huống 
+
+184
+00:16:37,919 --> 00:16:48,360
+trong tác phẩm. 44%, trong "Cuộc phiêu lưu của Alice ở Xứ thần tiên",
+và trong "Tom Sawyer" là 49.8%
+
+185
+00:16:48,360 --> 00:16:55,259
+và chỉ có một từ xuất hiện 1 lần trong cuốn sách.
+Từ đó được sử dụng
+
+186
+00:16:55,259 --> 00:17:01,299
+chỉ có một lần trong một mục nhỏ,
+đó là "hapax legomenon".
+
+187
+00:17:01,299 --> 00:17:06,119
+Hapax legomena cực kì quan trọng để hiểu một ngôn ngữ.
+Nếu có 1 từ xuất hiện
+
+188
+00:17:06,130 --> 00:17:11,699
+đúng một lần trong hàng ngàn từ khác của
+một ngôn ngữ cổ đại, thì vô cùng khó khăn
+
+189
+00:17:11,699 --> 00:17:17,640
+để tìm xem ý nghĩa của nó là gì.
+Trong tiếng Anh, không hề có bất kì bản ghi chép nào
+
+190
+00:17:17,640 --> 00:17:23,550
+về những chuyện đã nói hay viết,
+nhưng cũng có các bộ sưu tập vô cùng
+
+191
+00:17:23,549 --> 00:17:29,240
+đồ sộ, và khá là vui khi chúng ta săm soi để tìm các 
+"hapax legomena". Ví dụ như
+
+192
+00:17:29,240 --> 00:17:34,359
+từ này sẽ không còn như trước nữa khi tôi nói ra,
+nhưng từ "quizzaciously"
+
+193
+00:17:34,359 --> 00:17:41,599
+xuất hiện trong từ điển tiếng Anh Oxford,
+nhưng lại không xuất hiện trên Wikipedia, hay
+
+194
+00:17:41,599 --> 00:17:46,000
+bộ sách Gutenberg, sách của cục lưu trữ Anh quốc,
+sách của cục lưu trữ Hoa Kì
+
+195
+00:17:46,000 --> 00:17:53,650
+nhưng nó lại xuất hiên trên Google chỉ với một kết quả.
+
+
+196
+00:17:53,650 --> 00:18:01,730
+Trong cuốn "ElderSpeak" thì từ này lại được coi là từ hiếm.
+Nhân tiện, từ "quizzaciously"
+
+197
+00:18:01,730 --> 00:18:07,599
+có nghĩa là "với một phong thái chế nhạo" như trong câu
+"Thật đáng mỉa mai rằng thiên đường đã sụp đổ".
+
+198
+00:18:07,609 --> 00:18:12,918
+"XIn chào, Vsauce. Tôi là Michael. Nhưng Michael là ai 
+và anh ta nặng bao nhiêu kí?"
+
+199
+00:18:12,919 --> 00:18:20,590
+Hơi thất vọng là vì từ "quizzaciously" được sử dụng quá ít.
+
+200
+00:18:20,589 --> 00:18:26,909
+Từ đó nghe thật hài hước, nhưng đó là quy luật trong hệ thống của Zipf.
+Một số thứ thì vô cùng được ưa chuộng, một số thì không.
+
+201
+00:18:26,910 --> 00:18:33,540
+Hầu hết những trải nghiệm của các bạn hằng ngày
+
+202
+00:18:33,539 --> 00:18:39,909
+cũng sẽ mau chóng bị quên lãng. Từ điển của Obscure Sorrows,
+
+
+203
+00:18:39,910 --> 00:18:45,970
+có 1 từ miêu tả trạng thái này - Oleka - trạng thái nhận thức
+có chọn lọc những trải nghiệm của từng ngày
+
+204
+00:18:45,970 --> 00:18:52,170
+Tôi đã sống khoảng 11000 ngày,
+nhưng tôi vẫn không thể kể cho các bạn nghe về
+
+205
+00:18:52,170 --> 00:18:54,779
+từng ngày.
+
+206
+00:18:54,779 --> 00:19:00,730
+Hầu hết những cái chúng ta thấy, suy nghĩ, nói, nghe, cảm thấy đều rơi vào quên lãng
+
+207
+00:19:00,730 --> 00:19:07,509
+và cũng tuân theo quy luật Zipf vậy.
+Nếu một số lượng các nhân tố
+
+208
+00:19:07,509 --> 00:19:12,289
+được chọn lựa một cách ngẫu nhiên,
+trong đó công cụ là
+
+209
+00:19:12,289 --> 00:19:17,250
+định luật Zipf, thì cũng có lý khi chúng ta ghi nhớ các sự kiện
+cũng theo cách như vậy.
+
+210
+00:19:17,250 --> 00:19:24,609
+Một số thứ thì khá rõ, một số khác thì không.
+Nhưng nó làm tôi ngạc nhiên vì
+
+211
+00:19:24,609 --> 00:19:29,839
+điều đó có nghĩa là có rất nhiều thứ đã bị lãng quên,
+thậm chí là những thứ mà tại lúc đó bạn nghĩ
+
+212
+00:19:29,839 --> 00:19:33,500
+bạn sẽ không bao giờ quên được.
+Mã số tủ khóa của tôi
+
+213
+00:19:33,500 --> 00:19:38,230
+khi tôi học năm 3, trò đùa yêu thích khi tôi coi diễn viên hài trên sân khấu
+
+214
+00:19:38,230 --> 00:19:45,150
+tên của những người mà tôi gặp 10 năm về trước.
+Rất nhiều kí ức đã bị lãng quên.
+
+215
+00:19:45,150 --> 00:19:48,870
+Khi tôi nhìn lại toàn bộ những cuốn sách đã đọc
+và chợt nhận ra tôi không thể nhớ hết mọi chi tiết
+
+216
+00:19:48,869 --> 00:19:53,569
+Thật sự hơi thất vọng. Ý tôi là tại sao phải bận tâm nếu
+
+217
+00:19:53,569 --> 00:19:58,029
+nguyên tắc Pareto chỉ ra rằng tâm trí của tôi 
+một cách có ý thức sẽ ghi nhớ
+
+218
+00:19:58,029 --> 00:20:04,279
+nhiều nhất chỉ là tên và một vài phản ứng thôi.
+
+219
+00:20:04,279 --> 00:20:09,259
+Ralph Waldo Emerson làm tôi cảm thấy tốt hơn vì ông
+đã có lần phát biểu, "Tôi không thể nhớ những cuốn sách
+
+220
+00:20:09,259 --> 00:20:15,720
+mà tôi đã đọc nhiều lần hơn cả số bữa mà tôi đã ăn.
+Cho dù vậy, chúng đã định hình con người tôi".
+
+221
+00:20:17,089 --> 00:20:19,048
+Và như thường lệ,
+
+222
+00:20:19,048 --> 00:20:20,209
+cám ơn các bạn đã đón xem.
+

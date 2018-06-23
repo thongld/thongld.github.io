@@ -1,0 +1,647 @@
+0
+00:00:00,000 --> 00:00:00,200
+https://youtu.be/SnJO3m9DMDs
+
+1
+00:00:00,200 --> 00:00:00,980
+SPEAKER 1: Hello.
+
+2
+00:00:00,980 --> 00:00:03,930
+In this video, we'll see how to use the Autograder.
+
+3
+00:00:03,930 --> 00:00:06,840
+Again, we'll start from the edX website,
+
+4
+00:00:06,840 --> 00:00:09,180
+setting up the core software environment.
+
+5
+00:00:09,180 --> 00:00:11,470
+And we will click in the last tab here,
+
+6
+00:00:11,470 --> 00:00:14,280
+using the Course Autograder.
+
+7
+00:00:14,280 --> 00:00:16,320
+I will assume that you followed the instructions
+
+8
+00:00:16,320 --> 00:00:20,240
+in the previous video, and lab zero completed successfully.
+
+9
+00:00:20,240 --> 00:00:23,780
+This means that we have already completed the first step here.
+
+10
+00:00:23,780 --> 00:00:28,680
+Now, we'll go to step two, to use the Autograder notebook.
+
+11
+00:00:28,680 --> 00:00:30,240
+Let's see how this works.
+
+12
+00:00:30,240 --> 00:00:34,410
+Scroll a little bit down to see the detailed instructions.
+
+13
+00:00:34,410 --> 00:00:38,300
+So again, I will assume we are already logged in.
+
+14
+00:00:38,300 --> 00:00:41,000
+And then we do import [INAUDIBLE].
+
+15
+00:00:41,000 --> 00:00:44,390
+Right click, Import.
+
+16
+00:00:44,390 --> 00:00:46,826
+Here, we select a URL.
+
+17
+00:00:46,826 --> 00:00:52,016
+We copy and paste the URL.
+
+18
+00:00:52,016 --> 00:00:54,540
+We click Import.
+
+19
+00:00:54,540 --> 00:00:55,200
+Here we are.
+
+20
+00:00:55,200 --> 00:00:59,550
+We can see the notebook here.
+
+21
+00:00:59,550 --> 00:01:01,380
+Subsequently, the instructions tell
+
+22
+00:01:01,380 --> 00:01:04,760
+us to follow the instructions in the notebook.
+
+23
+00:01:04,760 --> 00:01:07,010
+Here's an overview of what we have already seen.
+
+24
+00:01:07,010 --> 00:01:09,700
+And we scroll a little down.
+
+25
+00:01:09,700 --> 00:01:12,410
+We ignore this cell, as instructed.
+
+26
+00:01:12,410 --> 00:01:14,650
+We go straight here.
+
+27
+00:01:14,650 --> 00:01:16,750
+When you see this in any of the notebooks,
+
+28
+00:01:16,750 --> 00:01:19,490
+it means that you actually have to do something.
+
+29
+00:01:19,490 --> 00:01:22,310
+Here, we are instructed to fill in our email.
+
+30
+00:01:22,310 --> 00:01:24,420
+This must be a valid email address.
+
+31
+00:01:24,420 --> 00:01:27,890
+Again, we press Shift Enter.
+
+32
+00:01:27,890 --> 00:01:31,680
+Since this is the first set with code we run in this notebook,
+
+33
+00:01:31,680 --> 00:01:35,200
+it prompts us to attach to the cluster.
+
+34
+00:01:35,200 --> 00:01:35,880
+Excellent.
+
+35
+00:01:35,880 --> 00:01:38,530
+We're now ready to run the next cell.
+
+36
+00:01:38,530 --> 00:01:40,085
+This is just the confirmation cell.
+
+37
+00:01:40,085 --> 00:01:41,980
+It prints our email.
+
+38
+00:01:41,980 --> 00:01:44,500
+Confirm that this email is correct.
+
+39
+00:01:44,500 --> 00:01:46,760
+Shift Enter again.
+
+40
+00:01:46,760 --> 00:01:48,220
+And we get here.
+
+41
+00:01:48,220 --> 00:01:51,650
+We press Shift Enter again.
+
+42
+00:01:51,650 --> 00:01:54,710
+Notice that if, at this point, you get any import error,
+
+43
+00:01:54,710 --> 00:01:57,040
+it just means, once again, you haven't set up
+
+44
+00:01:57,040 --> 00:01:59,270
+the spark mooc meta library.
+
+45
+00:01:59,270 --> 00:02:03,750
+Follow the steps on the previous videos to see how this is done.
+
+46
+00:02:03,750 --> 00:02:05,230
+A few seconds later, you're going
+
+47
+00:02:05,230 --> 00:02:08,570
+to receive an email like this on your email account.
+
+48
+00:02:08,570 --> 00:02:10,250
+Obviously, check your spam folder
+
+49
+00:02:10,250 --> 00:02:13,170
+if it doesn't arrive after a while.
+
+50
+00:02:13,170 --> 00:02:16,290
+So all we need from here is this private token.
+
+51
+00:02:16,290 --> 00:02:19,530
+We can copy it.
+
+52
+00:02:19,530 --> 00:02:21,830
+And as instructed here on the notebook,
+
+53
+00:02:21,830 --> 00:02:25,270
+we go back to the beginning of the notebook
+
+54
+00:02:25,270 --> 00:02:28,230
+and we disable the comment here.
+
+55
+00:02:28,230 --> 00:02:32,610
+Again, we fill in the token here.
+
+56
+00:02:32,610 --> 00:02:33,410
+Excellent.
+
+57
+00:02:33,410 --> 00:02:35,980
+We press Shift Enter.
+
+58
+00:02:35,980 --> 00:02:39,030
+Now we scroll back to part two.
+
+59
+00:02:39,030 --> 00:02:43,656
+Again, we press Shift Enter, and Shift Enter again.
+
+60
+00:02:43,656 --> 00:02:45,530
+And this is a way for us to confirm
+
+61
+00:02:45,530 --> 00:02:47,560
+that the token looks right.
+
+62
+00:02:47,560 --> 00:02:51,555
+So now, we'll need to perform a few steps back in lab zero.
+
+63
+00:02:51,555 --> 00:02:52,960
+The steps are here.
+
+64
+00:02:52,960 --> 00:02:54,750
+So in order to make our life easier,
+
+65
+00:02:54,750 --> 00:02:57,650
+we're going to open lab zero in another tab.
+
+66
+00:02:57,650 --> 00:03:04,200
+We click on Recent, right-click Open Link in Tab.
+
+67
+00:03:04,200 --> 00:03:05,250
+Excellent.
+
+68
+00:03:05,250 --> 00:03:08,610
+The first step is to restart our cluster.
+
+69
+00:03:08,610 --> 00:03:13,080
+We go back to lab zero, and we restart our cluster.
+
+70
+00:03:13,080 --> 00:03:16,120
+This will take about half a minute.
+
+71
+00:03:16,120 --> 00:03:16,690
+Great.
+
+72
+00:03:16,690 --> 00:03:20,450
+Now the cluster is sorted, and the notebook is attached.
+
+73
+00:03:20,450 --> 00:03:22,020
+Let's look at the next step.
+
+74
+00:03:22,020 --> 00:03:24,900
+It tells us to click Run All.
+
+75
+00:03:24,900 --> 00:03:25,740
+This is easy.
+
+76
+00:03:25,740 --> 00:03:29,210
+Just click Run All, and wait.
+
+77
+00:03:29,210 --> 00:03:31,480
+After a few seconds, this [INAUDIBLE] pattern
+
+78
+00:03:31,480 --> 00:03:34,190
+will go away, and we'll be back with a Run All pattern.
+
+79
+00:03:34,190 --> 00:03:36,860
+We are done.
+
+80
+00:03:36,860 --> 00:03:40,540
+Verify that your notebook passes all tests.
+
+81
+00:03:40,540 --> 00:03:42,550
+Again, we scroll down, and we visually
+
+82
+00:03:42,550 --> 00:03:46,200
+confirm that everything looks OK.
+
+83
+00:03:46,200 --> 00:03:48,460
+One test passed, another.
+
+84
+00:03:48,460 --> 00:03:50,620
+Excellent.
+
+85
+00:03:50,620 --> 00:03:54,570
+The next step is to click Publish Notebook.
+
+86
+00:03:54,570 --> 00:03:56,510
+We can find this on the File menu.
+
+87
+00:03:56,510 --> 00:03:58,990
+File, Publish.
+
+88
+00:03:58,990 --> 00:04:02,370
+And then we click Publish.
+
+89
+00:04:02,370 --> 00:04:03,930
+It then gives us a URL.
+
+90
+00:04:03,930 --> 00:04:06,350
+We right click and copy it.
+
+91
+00:04:06,350 --> 00:04:08,490
+Done.
+
+92
+00:04:08,490 --> 00:04:09,100
+Excellent.
+
+93
+00:04:09,100 --> 00:04:11,730
+We get back to the instructions.
+
+94
+00:04:11,730 --> 00:04:16,721
+We can see here it tells us to paste our notebook URL.
+
+95
+00:04:16,721 --> 00:04:17,220
+Great.
+
+96
+00:04:17,220 --> 00:04:19,430
+We can press Shift Enter.
+
+97
+00:04:19,430 --> 00:04:21,360
+You have to remember that, in the meanwhile,
+
+98
+00:04:21,360 --> 00:04:23,090
+we reset the cluster.
+
+99
+00:04:23,090 --> 00:04:26,530
+Both the lab zero notebook and the Autograder
+
+100
+00:04:26,530 --> 00:04:28,370
+run on the same cluster.
+
+101
+00:04:28,370 --> 00:04:30,490
+This means that the contents of the Autograder
+
+102
+00:04:30,490 --> 00:04:32,920
+were reset, as well.
+
+103
+00:04:32,920 --> 00:04:36,070
+So this is the right time to click Run All in the Autograder
+
+104
+00:04:36,070 --> 00:04:40,219
+notebook in order to re-evaluate the fields.
+
+105
+00:04:40,219 --> 00:04:42,260
+We should be able to see the next step evaluated.
+
+106
+00:04:42,260 --> 00:04:44,510
+And they're giving us our email.
+
+107
+00:04:44,510 --> 00:04:46,760
+Verify that that's correct.
+
+108
+00:04:46,760 --> 00:04:50,370
+Again verify that your private token is correct.
+
+109
+00:04:50,370 --> 00:04:53,710
+And finally, fill in the lab version here.
+
+110
+00:04:53,710 --> 00:04:58,700
+Indeed, this is lab zero, so we just copy/paste this one.
+
+111
+00:04:58,700 --> 00:05:01,007
+For subsequent labs, we will need to update this.
+
+112
+00:05:01,007 --> 00:05:04,350
+We press Shift Enter.
+
+113
+00:05:04,350 --> 00:05:06,150
+So essentially, all we have done up to now
+
+114
+00:05:06,150 --> 00:05:09,970
+is to put our email, our private token, and the public URL
+
+115
+00:05:09,970 --> 00:05:12,400
+for our lab zero.
+
+116
+00:05:12,400 --> 00:05:14,300
+Now, we're going to submit those.
+
+117
+00:05:14,300 --> 00:05:18,630
+We press Shift Enter on the cell 3F.
+
+118
+00:05:18,630 --> 00:05:20,500
+Success.
+
+119
+00:05:20,500 --> 00:05:23,640
+If [INAUDIBLE] submit too often, we might see this error message
+
+120
+00:05:23,640 --> 00:05:24,730
+at this step.
+
+121
+00:05:24,730 --> 00:05:28,300
+We'll have to wait for a bit.
+
+122
+00:05:28,300 --> 00:05:31,170
+We can now move to the next step.
+
+123
+00:05:31,170 --> 00:05:34,760
+Here, we have some utility functionality.
+
+124
+00:05:34,760 --> 00:05:37,020
+By running, for example, this cell,
+
+125
+00:05:37,020 --> 00:05:40,990
+I can see the status of my submission.
+
+126
+00:05:40,990 --> 00:05:45,180
+We can see right now the status is processing.
+
+127
+00:05:45,180 --> 00:05:47,760
+We can [INAUDIBLE] this one.
+
+128
+00:05:47,760 --> 00:05:50,240
+We can now see that there are no submissions found.
+
+129
+00:05:50,240 --> 00:05:53,690
+This means that the submission was successfully created.
+
+130
+00:05:53,690 --> 00:05:56,150
+We can now move to part five.
+
+131
+00:05:56,150 --> 00:05:59,260
+This gives us a utility function that we can call in order
+
+132
+00:05:59,260 --> 00:06:02,130
+to see all our submissions.
+
+133
+00:06:02,130 --> 00:06:04,900
+Again, Shift Enter.
+
+134
+00:06:04,900 --> 00:06:05,740
+Excellent.
+
+135
+00:06:05,740 --> 00:06:07,510
+So we can see our grade here.
+
+136
+00:06:07,510 --> 00:06:08,900
+And this is our submission ID.
+
+137
+00:06:08,900 --> 00:06:13,650
+We copy this one, and we can paste it into the next cell.
+
+138
+00:06:13,650 --> 00:06:16,410
+Again, we press Shift Enter.
+
+139
+00:06:16,410 --> 00:06:19,460
+And then we can use the cell 6A to see more details
+
+140
+00:06:19,460 --> 00:06:22,000
+about our submission.
+
+141
+00:06:22,000 --> 00:06:24,960
+We can see, in this case, this was a success [INAUDIBLE]
+
+142
+00:06:24,960 --> 00:06:27,640
+passed, and 100% score.
+
+143
+00:06:27,640 --> 00:06:29,440
+We can also run the next cell to see
+
+144
+00:06:29,440 --> 00:06:32,670
+all the output of our lab zero notebook as run
+
+145
+00:06:32,670 --> 00:06:36,090
+on the Autograder service.
+
+146
+00:06:36,090 --> 00:06:36,660
+Excellent.
+
+147
+00:06:36,660 --> 00:06:39,480
+So this was the process of using the Autograder.
+
+148
+00:06:39,480 --> 00:06:43,460
+Now we go back to edX in order to complete the third step.
+
+149
+00:06:43,460 --> 00:06:47,220
+We go at the very end of the course Autograder page.
+
+150
+00:06:47,220 --> 00:06:52,360
+And here, we fill in our user name and the submission ID.
+
+151
+00:06:52,360 --> 00:06:54,480
+Then we click Check.
+
+152
+00:06:54,480 --> 00:06:57,620
+After a few seconds, we can see the results here.
+
+153
+00:06:57,620 --> 00:07:00,910
+It's correct, and we just got 100 points.
+
+154
+00:07:00,910 --> 00:07:02,680
+We can also confirm those results
+
+155
+00:07:02,680 --> 00:07:05,010
+by clicking on the Progress tab.
+
+156
+00:07:05,010 --> 00:07:07,760
+Here's our 100%.
+
+157
+00:07:07,760 --> 00:07:09,100
+That was it.
+
+158
+00:07:09,100 --> 00:07:11,720
+You're now ready to move to second week's a little bit more
+
+159
+00:07:11,720 --> 00:07:13,380
+demanding labs.
+
+160
+00:07:13,380 --> 00:07:14,930
+Congratulations.
+
+161
+00:07:14,930 --> 00:07:15,744
+

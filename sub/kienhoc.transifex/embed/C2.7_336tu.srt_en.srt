@@ -1,0 +1,186 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/ndvwEznOyCc
+
+1
+00:00:00,000 --> 00:00:00,679
+
+2
+00:00:00,679 --> 00:00:02,470
+DR. RAMESH YERRABALLI:
+In this short video,
+
+3
+00:00:02,470 --> 00:00:04,870
+we'd like to look up
+the data sheet to learn
+
+4
+00:00:04,870 --> 00:00:09,674
+about the memory layout
+on the microcontroller.
+
+5
+00:00:09,674 --> 00:00:11,215
+So let's go to the table of contents.
+
+6
+00:00:11,215 --> 00:00:13,910
+
+7
+00:00:13,910 --> 00:00:19,465
+And we'll look up the overview of
+the microcontroller, which is 1.2.
+
+8
+00:00:19,465 --> 00:00:21,090
+DR. JONATHAN VALVANO: Click right here.
+
+9
+00:00:21,090 --> 00:00:22,890
+DR. RAMESH YERRABALLI: Yeah.
+
+10
+00:00:22,890 --> 00:00:27,160
+So we notice that these
+have been checked.
+
+11
+00:00:27,160 --> 00:00:33,240
+What we looking for is how
+much flash memory it has.
+
+12
+00:00:33,240 --> 00:00:36,700
+And how much system RAM it has.
+
+13
+00:00:36,700 --> 00:00:40,430
+The flash memory is where
+our code is going to go.
+
+14
+00:00:40,430 --> 00:00:45,380
+So we know that we have a
+capacity of 256 kilobytes.
+
+15
+00:00:45,380 --> 00:00:51,937
+And our data is going to go in the
+RAM, which is a limit of 32 kilobytes.
+
+16
+00:00:51,937 --> 00:00:55,020
+DR. JONATHAN VALVANO: All right, so
+the next question we might want to ask
+
+17
+00:00:55,020 --> 00:00:58,730
+is, where or what
+addresses are our memory?
+
+18
+00:00:58,730 --> 00:01:03,660
+So we go back to the table of contents
+and look for more things on memory.
+
+19
+00:01:03,660 --> 00:01:05,970
+DR. RAMESH YERRABALLI:
+So go to Section 2.4.
+
+20
+00:01:05,970 --> 00:01:07,762
+DR. JONATHAN VALVANO: Right there.
+
+21
+00:01:07,762 --> 00:01:10,220
+DR. RAMESH YERRABALLI: And that
+tells you our memory model.
+
+22
+00:01:10,220 --> 00:01:12,710
+DR. JONATHAN VALVANO:
+Here is our memory model.
+
+23
+00:01:12,710 --> 00:01:20,230
+We can see that we have 256 kilobytes
+of ROM located at these addresses.
+
+24
+00:01:20,230 --> 00:01:24,940
+And we have 32 kilobytes of
+RAM located at those addresses.
+
+25
+00:01:24,940 --> 00:01:31,190
+Also in this data sheet, it tells
+us what we use the memory for.
+
+26
+00:01:31,190 --> 00:01:33,320
+DR. RAMESH YERRABALLI:
+So this table, table 2.5,
+
+27
+00:01:33,320 --> 00:01:39,590
+tells us that we use the
+memory region here for Code.
+
+28
+00:01:39,590 --> 00:01:44,730
+This region from 0x2000.0000
+onwards is used for data.
+
+29
+00:01:44,730 --> 00:01:47,350
+
+30
+00:01:47,350 --> 00:01:51,820
+And then we have our device
+IO registers, which are here.
+
+31
+00:01:51,820 --> 00:01:54,670
+These are all our GPIO pins.
+
+32
+00:01:54,670 --> 00:01:57,550
+DR. JONATHAN VALVANO: But Ramesh,
+is that all the registers?
+
+33
+00:01:57,550 --> 00:01:59,716
+DR. RAMESH YERRABALLI:
+There's some extra registers.
+
+34
+00:01:59,716 --> 00:02:03,990
+These are our Private Peripheral Bus.
+
+35
+00:02:03,990 --> 00:02:09,030
+These are devices like
+our NVIC and our SYSTICK.
+
+36
+00:02:09,030 --> 00:02:10,617
+These are right here.
+
+37
+00:02:10,617 --> 00:02:11,950
+DR. JONATHAN VALVANO: All right.
+
+38
+00:02:11,950 --> 00:02:14,680
+So again, use the data
+sheet to look things up.
+
+39
+00:02:14,680 --> 00:02:17,600
+Don't be afraid to search around.
+
+40
+00:02:17,600 --> 00:02:20,670
+There's a lot of information in there.

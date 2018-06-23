@@ -1,0 +1,433 @@
+476
+00:21:57,640 --> 00:21:59,520
+https://youtu.be/IXXHH6ztsSA
+So it looks like those
+are kind of the same.
+
+477
+00:21:59,520 --> 00:22:01,145
+But they're quite
+different operations.
+
+478
+00:22:01,145 --> 00:22:04,080
+
+479
+00:22:04,080 --> 00:22:06,480
+So the type can
+get you in trouble.
+
+480
+00:22:06,480 --> 00:22:09,080
+Remember, Python is
+looking at the type.
+
+481
+00:22:09,080 --> 00:22:12,710
+So here we have a little
+problem, our first trace back,
+
+482
+00:22:12,710 --> 00:22:14,850
+first of many trace backs.
+
+483
+00:22:14,850 --> 00:22:19,072
+So here we have ee,
+which is hello there,
+
+484
+00:22:19,072 --> 00:22:20,280
+which is exactly what we did.
+
+485
+00:22:20,280 --> 00:22:21,120
+This is a string.
+
+486
+00:22:21,120 --> 00:22:22,340
+And this is a string.
+
+487
+00:22:22,340 --> 00:22:24,800
+So ee should be a string.
+
+488
+00:22:24,800 --> 00:22:27,050
+And then we try to add 1 to it.
+
+489
+00:22:27,050 --> 00:22:30,639
+And again, Python is saying
+oh, I see a plus sign here.
+
+490
+00:22:30,639 --> 00:22:31,930
+So I'm going to look over here.
+
+491
+00:22:31,930 --> 00:22:32,890
+Yeah, that's a string.
+
+492
+00:22:32,890 --> 00:22:35,015
+And I'm going to look over
+here, that's an integer.
+
+493
+00:22:35,015 --> 00:22:36,210
+It's like, ah.
+
+494
+00:22:36,210 --> 00:22:37,800
+And this is a trace back.
+
+495
+00:22:37,800 --> 00:22:41,110
+Now, here's a good time
+to talk about trace backs.
+
+496
+00:22:41,110 --> 00:22:43,390
+Trace backs, I colored them red.
+
+497
+00:22:43,390 --> 00:22:46,160
+Because you might
+think that Python
+
+498
+00:22:46,160 --> 00:22:48,960
+dislikes you or
+thinks that you're
+
+499
+00:22:48,960 --> 00:22:51,654
+unworthy of its brilliance.
+
+500
+00:22:51,654 --> 00:22:53,070
+And certainly the
+way these things
+
+501
+00:22:53,070 --> 00:22:55,710
+are worded it sounds like
+you're being scolded.
+
+502
+00:22:55,710 --> 00:22:58,200
+It's like, hey, type error.
+
+503
+00:22:58,200 --> 00:23:01,590
+You cannot concatenate
+stir an int objects.
+
+504
+00:23:01,590 --> 00:23:02,532
+Right?
+
+505
+00:23:02,532 --> 00:23:03,240
+I'm scolding you.
+
+506
+00:23:03,240 --> 00:23:05,770
+You bad, bad programmer.
+
+507
+00:23:05,770 --> 00:23:08,000
+And it does feel a
+bit like your scolded.
+
+508
+00:23:08,000 --> 00:23:10,970
+But if you go back
+to lecture one,
+
+509
+00:23:10,970 --> 00:23:13,920
+this is also the moment
+where really we shouldn't
+
+510
+00:23:13,920 --> 00:23:16,010
+think of this as like scolding.
+
+511
+00:23:16,010 --> 00:23:18,560
+We should think of this as
+Python sort of asking for help.
+
+512
+00:23:18,560 --> 00:23:21,670
+It's like, well, you
+gave me this line.
+
+513
+00:23:21,670 --> 00:23:25,374
+And I, Python, have no idea.
+
+514
+00:23:25,374 --> 00:23:27,040
+In all your greatness,
+could you give me
+
+515
+00:23:27,040 --> 00:23:30,860
+some possible clue as to what
+you really mean for me to do?
+
+516
+00:23:30,860 --> 00:23:32,260
+Because I'm so lost.
+
+517
+00:23:32,260 --> 00:23:34,680
+And given that I'm
+Python, and I am lost,
+
+518
+00:23:34,680 --> 00:23:37,820
+and you are the only
+purpose for my existence,
+
+519
+00:23:37,820 --> 00:23:41,390
+I must stop until you
+give me better guidance.
+
+520
+00:23:41,390 --> 00:23:44,400
+So don't look at trace
+backs as scolding.
+
+521
+00:23:44,400 --> 00:23:45,895
+They sound like scolding.
+
+522
+00:23:45,895 --> 00:23:49,520
+I'll stop coloring
+them red after a while.
+
+523
+00:23:49,520 --> 00:23:54,290
+So if Python is so obsessed
+with the type of things,
+
+524
+00:23:54,290 --> 00:23:57,040
+you should able to ask Python
+what the type of something is.
+
+525
+00:23:57,040 --> 00:23:59,750
+So there's a built-in
+function called type.
+
+526
+00:23:59,750 --> 00:24:02,975
+This is part of the Python
+language, type parenthese.
+
+527
+00:24:02,975 --> 00:24:04,770
+And you can put a
+variable in here.
+
+528
+00:24:04,770 --> 00:24:06,460
+What's the type of
+the variable ee?
+
+529
+00:24:06,460 --> 00:24:08,420
+And it says, oh, yeah,
+I know what that is.
+
+530
+00:24:08,420 --> 00:24:10,019
+That would be a string.
+
+531
+00:24:10,019 --> 00:24:12,310
+And then you could also put
+a constant in here and say,
+
+532
+00:24:12,310 --> 00:24:15,620
+what's the type of 'hello?'
+And that's a string, too.
+
+533
+00:24:15,620 --> 00:24:17,270
+And what's the type
+of the number one?
+
+534
+00:24:17,270 --> 00:24:19,020
+Well, that would be an integer.
+
+535
+00:24:19,020 --> 00:24:20,560
+So it's picky about the type.
+
+536
+00:24:20,560 --> 00:24:24,990
+But it'll also share with you
+what it believes the type is.
+
+537
+00:24:24,990 --> 00:24:28,120
+And there's several
+types of numbers.
+
+538
+00:24:28,120 --> 00:24:30,404
+As I've already mentioned,
+there are integers,
+
+539
+00:24:30,404 --> 00:24:31,570
+which are the whole numbers.
+
+540
+00:24:31,570 --> 00:24:33,834
+They can be positive
+and negative and zero.
+
+541
+00:24:33,834 --> 00:24:36,250
+And then there are the decimal
+numbers, the floating point
+
+542
+00:24:36,250 --> 00:24:42,040
+numbers, like 98.6 or
+negative 2.5 or 14.0.
+
+543
+00:24:42,040 --> 00:24:43,690
+Python knows these as well.
+
+544
+00:24:43,690 --> 00:24:45,290
+Because it does
+division different
+
+545
+00:24:45,290 --> 00:24:47,230
+if it's presented
+with two integers,
+
+546
+00:24:47,230 --> 00:24:49,690
+or an integer and a float,
+or a float and a float.
+
+547
+00:24:49,690 --> 00:24:54,070
+
+548
+00:24:54,070 --> 00:24:56,490
+And so here we have x is 1.
+
+549
+00:24:56,490 --> 00:24:57,620
+And we say, what is it?
+
+550
+00:24:57,620 --> 00:24:58,520
+It's an integer.
+
+551
+00:24:58,520 --> 00:25:00,396
+And we say it's 98.6.
+
+552
+00:25:00,396 --> 00:25:01,520
+And say, well, what's that?
+
+553
+00:25:01,520 --> 00:25:02,770
+It's a float.
+
+554
+00:25:02,770 --> 00:25:05,130
+And you could ask for both
+variables and constants.
+
+555
+00:25:05,130 --> 00:25:06,400
+So what's the type of 1?
+
+556
+00:25:06,400 --> 00:25:07,336
+It's an integer.
+
+557
+00:25:07,336 --> 00:25:08,460
+And what's the type of 1.0?
+
+558
+00:25:08,460 --> 00:25:11,670
+And it's a float.
+
+559
+00:25:11,670 --> 00:25:12,980
+It can also convert types.
+
+560
+00:25:12,980 --> 00:25:15,170
+It has a bunch of type
+conversion functions
+
+561
+00:25:15,170 --> 00:25:16,320
+built into it.
+
+562
+00:25:16,320 --> 00:25:18,570
+So there's an
+implicit conversion
+
+563
+00:25:18,570 --> 00:25:21,820
+going on when you're
+sort of saying divide
+
+564
+00:25:21,820 --> 00:25:23,150
+an integer by a floating point.
+
+565
+00:25:23,150 --> 00:25:25,610
+It says, OK, I
+looked to the sides.
+
+566
+00:25:25,610 --> 00:25:28,920
+And I will make the
+conversion for you.
+
+567
+00:25:28,920 --> 00:25:30,410
+But you can also be explicit.
+
+568
+00:25:30,410 --> 00:25:33,430
+So in this case we're
+going to say, take this 99
+
+569
+00:25:33,430 --> 00:25:36,530
+and convert it to a floating
+point version of itself, which
+
+570
+00:25:36,530 --> 00:25:39,210
+is 99.0, and then
+do the division.
+

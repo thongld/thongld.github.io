@@ -1,0 +1,300 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/qh1wXEejofM
+
+1
+00:00:00,500 --> 00:00:04,010
+So, part three-- suppose demand is instead uniformly
+
+2
+00:00:04,010 --> 00:00:07,370
+distributed with mean 0 and max 300.
+
+3
+00:00:07,370 --> 00:00:10,270
+What is the optimal order quantity?
+
+4
+00:00:10,270 --> 00:00:15,670
+So in the previous problem, we thought
+
+5
+00:00:15,670 --> 00:00:20,094
+that the demand distribution was normally distributed
+
+6
+00:00:20,094 --> 00:00:21,260
+looking something like this.
+
+7
+00:00:21,260 --> 00:00:23,280
+So we thought that different outcomes
+
+8
+00:00:23,280 --> 00:00:25,200
+had different probabilities.
+
+9
+00:00:25,200 --> 00:00:27,370
+Now we're saying this is not the case.
+
+10
+00:00:27,370 --> 00:00:31,810
+Instead, we think that demand, as long as it's anywhere
+
+11
+00:00:31,810 --> 00:00:36,850
+between 0 and 300, any the outcome is equally probable.
+
+12
+00:00:36,850 --> 00:00:39,440
+So it could be 52.
+
+13
+00:00:39,440 --> 00:00:41,730
+It could be 159.
+
+14
+00:00:41,730 --> 00:00:43,570
+It could be 3.
+
+15
+00:00:43,570 --> 00:00:46,740
+Any outcome between 0 and 300 are equally probable.
+
+16
+00:00:46,740 --> 00:00:48,410
+This is what we're saying.
+
+17
+00:00:48,410 --> 00:00:52,210
+So the question is-- we're changing this assumption,
+
+18
+00:00:52,210 --> 00:00:52,710
+right?
+
+19
+00:00:52,710 --> 00:00:58,110
+So how does this change in assumption impact our solution?
+
+20
+00:00:58,110 --> 00:01:00,350
+Well, remember from the previous problem
+
+21
+00:01:00,350 --> 00:01:02,850
+where it said that the solution that we have,
+
+22
+00:01:02,850 --> 00:01:07,310
+Q star equal to the inverse at a critical ratio, which
+
+23
+00:01:07,310 --> 00:01:09,700
+we found to be 0.6.
+
+24
+00:01:09,700 --> 00:01:12,370
+This solution is independent of the distribution.
+
+25
+00:01:12,370 --> 00:01:14,550
+So this was the first time-- once we
+
+26
+00:01:14,550 --> 00:01:16,370
+started evaluating this, that was
+
+27
+00:01:16,370 --> 00:01:18,110
+the first time that the distribution came
+
+28
+00:01:18,110 --> 00:01:19,440
+into the picture at all.
+
+29
+00:01:19,440 --> 00:01:21,650
+Before that, we just looked at calculus
+
+30
+00:01:21,650 --> 00:01:23,900
+without thinking about which type of distribution
+
+31
+00:01:23,900 --> 00:01:24,960
+we were looking at.
+
+32
+00:01:24,960 --> 00:01:27,970
+It was not until we used a spreadsheet software of choice
+
+33
+00:01:27,970 --> 00:01:31,530
+that we really had to evaluate using a specific distribution.
+
+34
+00:01:31,530 --> 00:01:33,950
+And in the previous exercise, that distribution
+
+35
+00:01:33,950 --> 00:01:35,730
+was a normal distribution.
+
+36
+00:01:35,730 --> 00:01:38,470
+Now, we're looking at a uniform distribution.
+
+37
+00:01:38,470 --> 00:01:42,860
+So really, this is still the optimal solution.
+
+38
+00:01:42,860 --> 00:01:46,420
+The only thing that's changed is this f.
+
+39
+00:01:46,420 --> 00:01:48,840
+So let's think about this f, the cumulative distribution
+
+40
+00:01:48,840 --> 00:01:53,350
+function for uniform distribution.
+
+41
+00:01:53,350 --> 00:01:55,550
+If we think of it in a general form,
+
+42
+00:01:55,550 --> 00:01:56,920
+it can be written like this.
+
+43
+00:01:56,920 --> 00:02:01,290
+x minus a divided by b minus a.
+
+44
+00:02:01,290 --> 00:02:05,240
+a will be the minimum and b is the maximum.
+
+45
+00:02:05,240 --> 00:02:09,630
+So really, what it's saying in our case
+
+46
+00:02:09,630 --> 00:02:11,330
+is that the cumulative distribution
+
+47
+00:02:11,330 --> 00:02:17,600
+function is equal to x minus 0 divided by 300 minus 0.
+
+48
+00:02:17,600 --> 00:02:20,860
+So really, x divided by 300.
+
+49
+00:02:20,860 --> 00:02:23,620
+So this is our cumulative distribution function.
+
+50
+00:02:23,620 --> 00:02:26,000
+We can show it graphically like this.
+
+51
+00:02:26,000 --> 00:02:29,180
+If we have x on the x-axis and we have the cumulative
+
+52
+00:02:29,180 --> 00:02:32,610
+on the y-axis, we know it's going to go between 0 and 1.
+
+53
+00:02:32,610 --> 00:02:36,150
+And down here, there's going to be no probability of any event
+
+54
+00:02:36,150 --> 00:02:37,470
+until we reach 0.
+
+55
+00:02:37,470 --> 00:02:39,270
+Once we reach 0, there's going to be
+
+56
+00:02:39,270 --> 00:02:43,041
+equal probability of all outcomes until we reach 300.
+
+57
+00:02:43,041 --> 00:02:45,040
+And after that, we reached our full probability,
+
+58
+00:02:45,040 --> 00:02:48,200
+because there's no probability of anything above 300.
+
+59
+00:02:48,200 --> 00:02:49,900
+We want to take the inverse.
+
+60
+00:02:49,900 --> 00:02:54,650
+So we have some kind of critical ratio, 0.6.
+
+61
+00:02:54,650 --> 00:03:01,090
+We want to take the inverse and see what Q star we end up with.
+
+62
+00:03:01,090 --> 00:03:05,200
+We know that the expression for this cumulative distribution
+
+63
+00:03:05,200 --> 00:03:07,530
+function is given by this, in our case.
+
+64
+00:03:07,530 --> 00:03:11,100
+So really, now we want to use this information in order
+
+65
+00:03:11,100 --> 00:03:13,020
+to find Q star.
+
+66
+00:03:13,020 --> 00:03:19,600
+So since Q star is equal to the inverse at 0.6,
+
+67
+00:03:19,600 --> 00:03:25,580
+it really means that f of Q star is equal to 0.6.
+
+68
+00:03:25,580 --> 00:03:27,620
+That's the same thing.
+
+69
+00:03:27,620 --> 00:03:31,730
+We know that f of q star, that is what we have over here.
+
+70
+00:03:31,730 --> 00:03:37,230
+We just plug in q star divided by 300 is equal to 0.6.
+
+71
+00:03:37,230 --> 00:03:38,680
+So what does that give us?
+
+72
+00:03:38,680 --> 00:03:41,660
+It gives us that the optimal order quantity, q star,
+
+73
+00:03:41,660 --> 00:03:44,760
+is equal to 180.
+
+74
+00:03:44,760 --> 00:03:46,560
+That's our solution.
+

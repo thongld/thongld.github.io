@@ -1,0 +1,447 @@
+189
+00:08:06,770 --> 00:08:10,580
+https://youtu.be/UR6a_wZ8ido
+done other than caret and
+dollar sign for the end of line
+
+190
+00:08:10,580 --> 00:08:14,780
+is the wild card characters.
+
+191
+00:08:14,780 --> 00:08:18,580
+And so we use cards
+possibly in like DOS
+
+192
+00:08:18,580 --> 00:08:21,600
+where we can use
+question mark or star in
+
+193
+00:08:21,600 --> 00:08:24,020
+like a dir command or
+dir dot star dot star
+
+194
+00:08:24,020 --> 00:08:27,105
+if you're familiar with that
+or even a Unix command like ls,
+
+195
+00:08:27,105 --> 00:08:29,890
+you know, star dot whatever.
+
+196
+00:08:29,890 --> 00:08:31,730
+This is not how regular
+expressions work.
+
+197
+00:08:31,730 --> 00:08:34,890
+And the problem is
+that dot, dot is--
+
+198
+00:08:34,890 --> 00:08:38,039
+it matches a single character
+in regular expressions.
+
+199
+00:08:38,039 --> 00:08:41,570
+Asterisk means any
+number of times.
+
+200
+00:08:41,570 --> 00:08:46,280
+So if I look at this
+and color code this
+
+201
+00:08:46,280 --> 00:08:50,970
+to make a little
+more sense, the caret
+
+202
+00:08:50,970 --> 00:08:55,201
+is actually kind of part of the
+regular expression programming
+
+203
+00:08:55,201 --> 00:08:55,700
+language.
+
+204
+00:08:55,700 --> 00:08:58,930
+Says, I'm a virtual character
+matching the beginning of line.
+
+205
+00:08:58,930 --> 00:09:00,630
+The x is a real character.
+
+206
+00:09:00,630 --> 00:09:03,040
+The dot is part of the
+regular programming
+
+207
+00:09:03,040 --> 00:09:04,610
+language-- any character.
+
+208
+00:09:04,610 --> 00:09:06,990
+Star is part of the regular
+expression programming that
+
+209
+00:09:06,990 --> 00:09:10,520
+says the immediate previous
+character many times s--
+
+210
+00:09:10,520 --> 00:09:12,310
+0 or more times.
+
+211
+00:09:12,310 --> 00:09:14,840
+And then colon
+matches the colon.
+
+212
+00:09:14,840 --> 00:09:16,820
+And so if you look
+at lines, these
+
+213
+00:09:16,820 --> 00:09:20,950
+are the kinds of lines that
+will give me a true because they
+
+214
+00:09:20,950 --> 00:09:24,850
+start with an x followed by some
+number of characters followed
+
+215
+00:09:24,850 --> 00:09:25,860
+by colon.
+
+216
+00:09:25,860 --> 00:09:26,910
+So that's true.
+
+217
+00:09:26,910 --> 00:09:29,630
+Start with x followed by
+some number of characters
+
+218
+00:09:29,630 --> 00:09:31,240
+followed by colon.
+
+219
+00:09:31,240 --> 00:09:35,150
+OK, and so that's
+basically how this works.
+
+220
+00:09:35,150 --> 00:09:40,980
+And so this five
+character string,
+
+221
+00:09:40,980 --> 00:09:43,900
+there are-- some of these
+things are like instructions
+
+222
+00:09:43,900 --> 00:09:46,480
+and some of them are the actual
+characters were looking for.
+
+223
+00:09:46,480 --> 00:09:49,650
+So the x and the colon are the
+characters we're looking for
+
+224
+00:09:49,650 --> 00:09:55,270
+and the caret, dot, and
+star are programming, right?
+
+225
+00:09:55,270 --> 00:10:00,000
+They are logic that we're
+adding to the string.
+
+226
+00:10:00,000 --> 00:10:04,520
+OK, so let's say for example
+you're-- part of any of these
+
+227
+00:10:04,520 --> 00:10:07,910
+things and part of the stuff
+we've done so far has to assume
+
+228
+00:10:07,910 --> 00:10:10,427
+that the data is some
+level of being clean.
+
+229
+00:10:10,427 --> 00:10:12,260
+And so the data that
+I've been giving you in
+
+230
+00:10:12,260 --> 00:10:15,620
+boxed up TXT is
+not inconsistent.
+
+231
+00:10:15,620 --> 00:10:17,930
+It doesn't have, like,
+too much weirdness in it.
+
+232
+00:10:17,930 --> 00:10:20,309
+I'm not trying to trick
+you and mislead you
+
+233
+00:10:20,309 --> 00:10:22,850
+although we had situations where
+you sort of get a trace back
+
+234
+00:10:22,850 --> 00:10:25,710
+because you think there's
+going to be five words.
+
+235
+00:10:25,710 --> 00:10:28,150
+You grab a line, you break it,
+and there's only two words.
+
+236
+00:10:28,150 --> 00:10:29,775
+And you get a trace
+back because you're
+
+237
+00:10:29,775 --> 00:10:32,720
+looking at the fifth word
+or something like that.
+
+238
+00:10:32,720 --> 00:10:36,310
+But if your data is less
+clean or even if you just
+
+239
+00:10:36,310 --> 00:10:39,840
+want to be real careful, you
+can fine tune your matching.
+
+240
+00:10:39,840 --> 00:10:42,570
+So here's that same match.
+
+241
+00:10:42,570 --> 00:10:45,790
+Give me a character x followed
+by any number of characters
+
+242
+00:10:45,790 --> 00:10:46,857
+followed by a colon.
+
+243
+00:10:46,857 --> 00:10:48,190
+And that's what I'm looking for.
+
+244
+00:10:48,190 --> 00:10:50,050
+Give me lines that
+match that pattern.
+
+245
+00:10:50,050 --> 00:10:52,230
+So this x starts at any
+number of characters.
+
+246
+00:10:52,230 --> 00:10:52,970
+Colon, great.
+
+247
+00:10:52,970 --> 00:10:55,304
+That's any number of
+characters-- great.
+
+248
+00:10:55,304 --> 00:10:56,720
+Oh wait, and there's
+an email that
+
+249
+00:10:56,720 --> 00:11:01,030
+says x plane is two weeks
+behind schedule colon two weeks.
+
+250
+00:11:01,030 --> 00:11:03,240
+Well, the regular
+expression didn't
+
+251
+00:11:03,240 --> 00:11:05,766
+know that dash made
+sense to you and you just
+
+252
+00:11:05,766 --> 00:11:07,890
+assumed that everything
+that started with a capital
+
+253
+00:11:07,890 --> 00:11:09,470
+x had a dash after it.
+
+254
+00:11:09,470 --> 00:11:14,750
+So x is what it starts with--
+any number of any character--
+
+255
+00:11:14,750 --> 00:11:16,030
+and then a colon.
+
+256
+00:11:16,030 --> 00:11:17,460
+So this becomes true.
+
+257
+00:11:17,460 --> 00:11:19,470
+This may not make you happy.
+
+258
+00:11:19,470 --> 00:11:21,290
+It may not be what
+you're looking
+
+259
+00:11:21,290 --> 00:11:24,640
+for because you haven't
+been specific enough
+
+260
+00:11:24,640 --> 00:11:26,260
+in your regular expression.
+
+261
+00:11:26,260 --> 00:11:30,540
+So we can be more specific
+in our regular expression.
+
+262
+00:11:30,540 --> 00:11:35,330
+So for example, this is a more
+specific regular expression.
+
+263
+00:11:35,330 --> 00:11:38,820
+It still says start with an
+x as the first character,
+
+264
+00:11:38,820 --> 00:11:41,230
+then a dash-- that's
+a real character,
+
+265
+00:11:41,230 --> 00:11:45,615
+not a-- then this next thing,
+instead of being a dot,
+
+266
+00:11:45,615 --> 00:11:49,526
+it's backslash capital
+S. It's on the sheet.
+
+267
+00:11:49,526 --> 00:11:51,530
+Oh, it's not on the sheet.
+
+268
+00:11:51,530 --> 00:11:52,370
+I lost the sheet.
+
+269
+00:11:52,370 --> 00:11:55,974
+Come back, sheet.
+
+270
+00:11:55,974 --> 00:11:57,125
+I lost the sheet.
+
+271
+00:11:57,125 --> 00:12:00,850
+I can't live without my sheet.
+
+272
+00:12:00,850 --> 00:12:06,430
+Backslash capital S means
+a non-whitespace character.
+
+273
+00:12:06,430 --> 00:12:09,010
+So that means
+spaces won't match.
+
+274
+00:12:09,010 --> 00:12:11,910
+And then I change
+the asterisk zero
+
+275
+00:12:11,910 --> 00:12:14,400
+or more times thing to a plus.
+
+276
+00:12:14,400 --> 00:12:16,350
+And that means
+one or more times.
+
+277
+00:12:16,350 --> 00:12:18,800
+Here's a character, a
+non-whitespace-- these two
+
+278
+00:12:18,800 --> 00:12:22,050
+things kind of work together--
+a non-whitespace character
+
+279
+00:12:22,050 --> 00:12:27,450
+at least one time as many
+as we like and then a colon.
+
+280
+00:12:27,450 --> 00:12:30,710
+So if we look here,
+it starts with x
+
+281
+00:12:30,710 --> 00:12:33,960
+dash any number of
+non-whitespace characters
+
+282
+00:12:33,960 --> 00:12:36,710
+and ends in colon--
+starts with x dash
+

@@ -1,0 +1,1020 @@
+1
+00:00:08,664 --> 00:00:10,820
+https://youtu.be/CFf6ZhCcfVs
+So, we're about to come full circle.
+
+2
+00:00:10,820 --> 00:00:13,820
+We just created these
+many database tables,
+
+3
+00:00:13,820 --> 00:00:18,650
+we've spread things out, we've linked them
+all back together with these numbers.
+
+4
+00:00:18,650 --> 00:00:21,130
+And it seems like we just
+created a mess of everything.
+
+5
+00:00:21,130 --> 00:00:25,490
+But now we're about to bring it
+all back together using the JOIN.
+
+6
+00:00:25,490 --> 00:00:28,140
+We finally have touched
+the relational power and
+
+7
+00:00:28,140 --> 00:00:33,540
+it may seem painful, but this is
+important, especially when data scales.
+
+8
+00:00:33,540 --> 00:00:36,320
+And if what you're doing matters,
+then data's going to scale.
+
+9
+00:00:36,320 --> 00:00:39,740
+You can't say, oh my data is so
+small I don't need to do this.
+
+10
+00:00:39,740 --> 00:00:44,940
+Well, if you're doing it, and it's big, and
+you're really doing data analysis,
+
+11
+00:00:44,940 --> 00:00:46,740
+and it's like something
+you're doing professionally,
+
+12
+00:00:46,740 --> 00:00:48,720
+you tend not to do small
+things professionally.
+
+13
+00:00:48,720 --> 00:00:50,850
+You tend to do large things.
+
+14
+00:00:50,850 --> 00:00:53,600
+So this notion of primary keys,
+and foreign keys, and
+
+15
+00:00:53,600 --> 00:00:56,960
+the little numbers that point to stuff,
+that's what it's all about.
+
+16
+00:00:58,210 --> 00:01:01,810
+So we need to reconstruct, for
+
+17
+00:01:01,810 --> 00:01:05,430
+our user interface, the data and
+reconnect all these connections.
+
+18
+00:01:06,500 --> 00:01:11,820
+And the SQL syntax that allows this
+to happen is the JOIN operation.
+
+19
+00:01:11,820 --> 00:01:16,440
+And the JOIN basically says, we are
+selecting data from more than one table.
+
+20
+00:01:16,440 --> 00:01:20,840
+And part of the JOIN operation is the ON
+clause that says when we want to connect
+
+21
+00:01:20,840 --> 00:01:24,990
+one row and one table with
+a corresponding row in a different table.
+
+22
+00:01:24,990 --> 00:01:29,130
+And so we have this example here of our data,
+
+23
+00:01:29,130 --> 00:01:33,682
+where we just want to sort of pull the
+artist title and the artist name out.
+
+24
+00:01:33,682 --> 00:01:38,160
+Except that the artist title
+is in the album field, and
+
+25
+00:01:38,160 --> 00:01:42,980
+the artist's name, because we did this
+relationally, is in the artist field, so
+
+26
+00:01:42,980 --> 00:01:46,220
+we don't have it in one field so
+we have to pull across two tables.
+
+27
+00:01:46,220 --> 00:01:49,110
+So that's where we say SELECT,
+and then we want the things.
+
+28
+00:01:49,110 --> 00:01:53,080
+Now this is a syntax here where
+you have table name, field name,
+
+29
+00:01:53,080 --> 00:01:55,320
+tablename.fieldname.
+
+30
+00:01:55,320 --> 00:02:01,010
+The title column from the Album table,
+the name column from the Artist table,
+
+31
+00:02:01,010 --> 00:02:03,310
+FROM, which is the same
+FROM we've done before.
+
+32
+00:02:03,310 --> 00:02:05,860
+Here's a table joined with another table.
+
+33
+00:02:05,860 --> 00:02:07,010
+And what we're doing is we're saying,
+
+34
+00:02:07,010 --> 00:02:12,630
+let's make a super table that
+really is the rows of this table,
+
+35
+00:02:12,630 --> 00:02:15,480
+as well as the rows from that table,
+and that's what the JOIN does.
+
+36
+00:02:15,480 --> 00:02:19,400
+It's like, we're not going to one table,
+we're going to two tables.
+
+37
+00:02:19,400 --> 00:02:22,010
+Then, in addition to
+the JOIN operation
+
+38
+00:02:22,010 --> 00:02:25,310
+saying we're going to do all these
+tables, the ON clause
+
+39
+00:02:25,310 --> 00:02:29,920
+decides when we connect a row in
+this table to a row in this table.
+
+40
+00:02:29,920 --> 00:02:36,320
+So row to row, row to row, and
+the ON clause that we're going to write
+
+41
+00:02:36,320 --> 00:02:40,540
+is when the album's artist_id
+that is from the Albums table,
+
+42
+00:02:40,540 --> 00:02:46,310
+the foreign key, the start of our
+little arrow, is equal to
+
+43
+00:02:46,310 --> 00:02:51,650
+the id field from Artist,
+Artist.id, so it is the destination.
+
+44
+00:02:51,650 --> 00:02:54,780
+So, this is the starting
+point of the arrow and
+
+45
+00:02:54,780 --> 00:02:56,560
+this is the ending point of the arrow.
+
+46
+00:02:56,560 --> 00:02:57,540
+So, this is the start.
+
+47
+00:02:57,540 --> 00:02:58,700
+This is the end.
+
+48
+00:02:58,700 --> 00:03:04,570
+So, that's matching, reconnecting all
+the arrows for all the corresponding rows.
+
+49
+00:03:04,570 --> 00:03:08,710
+Select these two fields, one field
+from each table, and then we got to
+
+50
+00:03:08,710 --> 00:03:13,260
+glom the two tables together, but
+only connect the rows when this is true.
+
+51
+00:03:13,260 --> 00:03:15,230
+For me, I would call this when.
+
+52
+00:03:16,600 --> 00:03:19,600
+Some people prefer to write
+this as a longer WHERE clause,
+
+53
+00:03:19,600 --> 00:03:21,570
+some databases prefer that.
+
+54
+00:03:21,570 --> 00:03:25,550
+I tend to like using the ON clause, so
+I don't kind of confuse my WHERE clauses.
+
+55
+00:03:25,550 --> 00:03:29,550
+But if you learn the WHERE clause trick,
+it's the same as the ON clause.
+
+56
+00:03:29,550 --> 00:03:31,530
+So let's run this one.
+
+57
+00:03:32,880 --> 00:03:33,600
+That's already in there.
+
+58
+00:03:33,600 --> 00:03:34,100
+Oops.
+
+59
+00:03:35,680 --> 00:03:36,280
+So I'll run it.
+
+60
+00:03:37,450 --> 00:03:38,085
+So here I go.
+
+61
+00:03:38,085 --> 00:03:40,439
+I've got the title.
+
+62
+00:03:40,439 --> 00:03:44,870
+Oops.
+I've got the title from one table and
+
+63
+00:03:44,870 --> 00:03:46,500
+the name from another table.
+
+64
+00:03:46,500 --> 00:03:47,880
+And we joined them all together.
+
+65
+00:03:47,880 --> 00:03:51,410
+And we had an ON clause that tells
+when they're supposed to be connected.
+
+66
+00:03:52,420 --> 00:03:53,790
+Okay?
+
+67
+00:03:53,790 --> 00:03:57,930
+So we can look a little more deeply
+into this relationship that we have, right?
+
+68
+00:03:57,930 --> 00:03:59,400
+We can, you know, clear this.
+
+69
+00:03:59,400 --> 00:04:02,410
+Look a little more deeply into
+the relationship that we have here
+
+70
+00:04:02,410 --> 00:04:06,870
+by actually looking at all the data
+that's actually participating in
+
+71
+00:04:06,870 --> 00:04:09,000
+the connection between these two rows.
+
+72
+00:04:09,000 --> 00:04:12,460
+So here we once again have our SELECT, and
+
+73
+00:04:12,460 --> 00:04:16,060
+our FROM clause goes between
+Album and Artist.
+
+74
+00:04:16,060 --> 00:04:19,300
+So we're kind of, this is our super row.
+
+75
+00:04:19,300 --> 00:04:22,210
+From the Album table and
+the Artist table.
+
+76
+00:04:22,210 --> 00:04:24,010
+That's Artist, that's Album.
+
+77
+00:04:24,010 --> 00:04:26,010
+And we have the foreign
+key relationship still.
+
+78
+00:04:27,150 --> 00:04:32,730
+And we're going to add to this SELECT
+these two fields.
+
+79
+00:04:32,730 --> 00:04:34,700
+Everything is the same as before,
+
+80
+00:04:34,700 --> 00:04:38,800
+except we're going to show you how
+this connection is made, okay?
+
+81
+00:04:38,800 --> 00:04:44,930
+So we're going to select the title,
+the artist_id, the artist's id, and name.
+
+82
+00:04:44,930 --> 00:04:48,720
+So you can see how we're seeing
+the whole table at this table.
+
+83
+00:04:48,720 --> 00:04:51,730
+These things have been joined together
+like there's glue in the middle
+
+84
+00:04:51,730 --> 00:04:52,710
+between them.
+
+85
+00:04:52,710 --> 00:04:54,610
+They've been glued together, and
+
+86
+00:04:54,610 --> 00:04:59,490
+they're glued together in the situation
+where these two things match.
+
+87
+00:04:59,490 --> 00:05:02,060
+So if you type that, that's what you see.
+
+88
+00:05:02,060 --> 00:05:05,850
+And so that's a way these don't
+really need to be shown, but
+
+89
+00:05:05,850 --> 00:05:08,950
+they are the source of the connection.
+
+90
+00:05:08,950 --> 00:05:09,590
+Okay?
+
+91
+00:05:09,590 --> 00:05:12,660
+So that's the source of the connection,
+and by just selecting them,
+
+92
+00:05:12,660 --> 00:05:13,860
+you can see what it looks like.
+
+93
+00:05:15,430 --> 00:05:18,010
+Okay, so let's construct another one.
+
+94
+00:05:18,010 --> 00:05:22,330
+Let's say we want the Tracks title and
+the Genre's name.
+
+95
+00:05:22,330 --> 00:05:26,490
+And if we take a look at the Track,
+right, we've got genre_id.
+
+96
+00:05:26,490 --> 00:05:28,420
+Now we have some replication here.
+
+97
+00:05:28,420 --> 00:05:30,910
+And then we do need to do this lookup,
+right?
+
+98
+00:05:30,910 --> 00:05:33,210
+And we want to see all the tracks.
+
+99
+00:05:33,210 --> 00:05:36,010
+Right?
+All the tracks along with their genres.
+
+100
+00:05:36,010 --> 00:05:36,560
+Right?
+
+101
+00:05:36,560 --> 00:05:37,720
+Rock, Rock, Metal, Metal.
+
+102
+00:05:37,720 --> 00:05:41,550
+So now we've reconstituted the duplicates.
+Right?
+
+103
+00:05:41,550 --> 00:05:44,010
+This is what the user wants to see.
+
+104
+00:05:44,010 --> 00:05:45,540
+But this is what we're
+storing in our database.
+
+105
+00:05:45,540 --> 00:05:46,880
+All right?
+
+106
+00:05:46,880 --> 00:05:49,060
+So again, we say SELECT Track.title.
+
+107
+00:05:49,060 --> 00:05:50,360
+That's this thing.
+
+108
+00:05:50,360 --> 00:05:51,270
+Genre.name. That's that thing
+from a different table.
+
+109
+00:05:51,270 --> 00:05:55,430
+FROM Track JOIN TO Genre.
+
+110
+00:05:55,430 --> 00:05:56,180
+So that makes,
+
+111
+00:05:56,180 --> 00:06:01,080
+like, this big blob thing that's a super
+row, that smears across two tables.
+
+112
+00:06:01,080 --> 00:06:03,420
+And then we have an ON clause.
+
+113
+00:06:03,420 --> 00:06:04,950
+And you'd think these are hard to construct.
+
+114
+00:06:04,950 --> 00:06:07,050
+But, oh this is the Track table.
+
+115
+00:06:07,050 --> 00:06:08,880
+There is a foreign key name named
+genre_id.
+
+116
+00:06:08,880 --> 00:06:11,580
+Oh, and that's going to be equal to
+tablename.id.
+
+117
+00:06:11,580 --> 00:06:12,170
+Right?
+
+118
+00:06:12,170 --> 00:06:14,560
+I almost cut and paste these things so
+fast as I write them.
+
+119
+00:06:14,560 --> 00:06:18,030
+And so they get easier and easier and easier,
+when you're going from the Track table to
+
+120
+00:06:18,030 --> 00:06:23,530
+the Genre table, and the syntax that I
+use for the connection is very canonical.
+
+121
+00:06:23,530 --> 00:06:26,410
+I do it over and over and over again.
+
+122
+00:06:26,410 --> 00:06:27,070
+Okay?
+
+123
+00:06:27,070 --> 00:06:29,990
+So let me run this guy and there we go.
+
+124
+00:06:29,990 --> 00:06:32,390
+We've reconstructed the replication.
+
+125
+00:06:32,390 --> 00:06:36,240
+But this also a good time to
+show you a little bit more
+
+126
+00:06:36,240 --> 00:06:39,800
+about what's going on
+underneath this join, right?
+
+127
+00:06:39,800 --> 00:06:44,550
+And now it all seems pretty and
+simple and this ON clause.
+
+128
+00:06:44,550 --> 00:06:50,690
+But what happens if we just
+take out the ON clause?
+
+129
+00:06:50,690 --> 00:06:55,350
+Select these two things from
+these guys glued together.
+
+130
+00:06:55,350 --> 00:06:58,080
+Somehow we've glued these
+two tables together.
+
+131
+00:06:58,080 --> 00:07:02,485
+So if you don't have an ON clause
+what happens is it basically says
+
+132
+00:07:02,485 --> 00:07:09,200
+all combinations. All combinations.
+
+133
+00:07:09,200 --> 00:07:12,200
+So there's four rows here and
+two rows here.
+
+134
+00:07:12,200 --> 00:07:14,150
+So all combination of each row here.
+
+135
+00:07:14,150 --> 00:07:18,660
+So this turns into 2, this turns into 2,
+this turns into 2, so that turns into 8.
+
+136
+00:07:18,660 --> 00:07:23,180
+Now if this had 100, and
+this had 100, that'd be 10,000.
+
+137
+00:07:23,180 --> 00:07:27,460
+And so if you don't have an ON clause
+it ends up with all combinations.
+
+138
+00:07:27,460 --> 00:07:28,830
+And we can show this.
+
+139
+00:07:28,830 --> 00:07:30,978
+So this is exactly
+the same SELECT statement.
+
+140
+00:07:30,978 --> 00:07:33,629
+Track.title, genre_id, Genre.id,
+
+141
+00:07:33,629 --> 00:07:38,200
+we're adding the middle joiner guys
+that would have been an ON clause.
+
+142
+00:07:38,200 --> 00:07:43,620
+And we're saying FROM Track,
+JOIN with Genre, and no ON clause.
+
+143
+00:07:43,620 --> 00:07:45,210
+Okay, that's the thing that's changed.
+
+144
+00:07:45,210 --> 00:07:49,860
+We added these two columns and
+we took away the ON clause.
+
+145
+00:07:49,860 --> 00:07:55,270
+So let's take a look at what
+happens when we run this one.
+
+146
+00:07:55,270 --> 00:07:57,030
+And lines don't matter, so
+
+147
+00:07:57,030 --> 00:08:00,000
+the fact that I put this on multiple
+lines you will see it doesn't care.
+
+148
+00:08:01,200 --> 00:08:04,710
+And so you can add spacing and
+lines to make your SQL look prettier.
+
+149
+00:08:04,710 --> 00:08:06,518
+I do that all the time, I indent them.
+
+150
+00:08:06,518 --> 00:08:13,490
+Indenting has no significance,
+but it is still very pretty.
+
+151
+00:08:13,490 --> 00:08:17,400
+So now we see that we're
+getting all the combinations. Right?
+
+152
+00:08:17,400 --> 00:08:20,930
+1, 1; 1, 2; 1, 1; so
+Black Dog has got both genres.
+
+153
+00:08:20,930 --> 00:08:25,760
+So it got genre 1 and genre 2.
+
+154
+00:08:25,760 --> 00:08:28,550
+Because we don't have an ON clause,
+so it's not interested in matching.
+
+155
+00:08:28,550 --> 00:08:29,910
+And so you can think of a JOIN,
+
+156
+00:08:29,910 --> 00:08:34,640
+you can think of a JOIN as building
+
+157
+00:08:34,640 --> 00:08:39,740
+across both tables all possible
+combinations between the tables.
+
+158
+00:08:39,740 --> 00:08:42,150
+The ON clause is throwing away
+the ones that don't match.
+
+159
+00:08:43,790 --> 00:08:49,120
+Or a better way to say it is it's
+picking the ones that do match, right?
+
+160
+00:08:49,120 --> 00:08:50,790
+We like this combination.
+
+161
+00:08:50,790 --> 00:08:52,060
+We like this combination.
+
+162
+00:08:52,060 --> 00:08:53,200
+We like this combination.
+
+163
+00:08:53,200 --> 00:08:54,920
+And we like this combination.
+
+164
+00:08:54,920 --> 00:08:57,540
+That's what the ON clause is doing,
+
+165
+00:08:57,540 --> 00:08:59,990
+is it's picking the ones
+where there's a match.
+
+166
+00:08:59,990 --> 00:09:03,000
+If you don't have the ON clause,
+then boom.
+
+167
+00:09:03,000 --> 00:09:06,080
+All combinations, 1 to 2.
+
+168
+00:09:06,080 --> 00:09:09,840
+This is one row and
+it's being combined with that.
+
+169
+00:09:09,840 --> 00:09:12,720
+This the the next row and
+we want both combinations.
+
+170
+00:09:12,720 --> 00:09:18,760
+This is the third row, all combinations;
+fourth row, all combinations,
+
+171
+00:09:18,760 --> 00:09:23,990
+and then the ON clause wipes
+out the non-matching ones.
+
+172
+00:09:25,880 --> 00:09:27,105
+Whoops, I did it wrong again.
+
+173
+00:09:27,105 --> 00:09:31,040
+I keep doing it wrong,
+but you get the idea.
+
+174
+00:09:31,040 --> 00:09:31,920
+So that's the ON clause.
+
+175
+00:09:33,210 --> 00:09:36,140
+That's really how it works, and frankly
+this is one of the things when I first
+
+176
+00:09:36,140 --> 00:09:38,800
+looked at, it must be doing that but
+it doesn't do that.
+
+177
+00:09:38,800 --> 00:09:42,068
+When it sees the ON clause it's
+really clever about pulling things in.
+
+178
+00:09:42,068 --> 00:09:44,199
+Super clever.
+
+179
+00:09:44,199 --> 00:09:46,450
+Again, that's not our problem.
+
+180
+00:09:46,450 --> 00:09:49,150
+So now it can get complex.
+
+181
+00:09:49,150 --> 00:09:51,480
+Because now what we want
+is the track title,
+
+182
+00:09:51,480 --> 00:09:54,660
+the artist name, the album title,
+and the genre name.
+
+183
+00:09:54,660 --> 00:09:58,410
+And this looks like a lot of stuff,
+but if you follow it, it's a pattern.
+
+184
+00:09:58,410 --> 00:10:01,290
+So we have a SELECT,
+these are the things we want.
+
+185
+00:10:01,290 --> 00:10:03,810
+That is the list of the output we want.
+
+186
+00:10:03,810 --> 00:10:08,380
+We're not interested in all the id's. And
+we have to have this long FROM clause,
+
+187
+00:10:08,380 --> 00:10:13,260
+that says, Track join with Genre
+join with Album join with Artist.
+
+188
+00:10:13,260 --> 00:10:18,660
+That's all the rows,
+all the tables concatenated together,
+
+189
+00:10:18,660 --> 00:10:23,310
+and then the ON clause, which seems
+kind of tricky, but now we start.
+
+190
+00:10:23,310 --> 00:10:24,720
+We start from Track and work out.
+
+191
+00:10:24,720 --> 00:10:29,730
+We have the foreign key in Track of 
+genre_id is equal to the genre's primary key.
+
+192
+00:10:29,730 --> 00:10:34,950
+And the Track's album_id is equal
+to the album's primary key, and
+
+193
+00:10:34,950 --> 00:10:39,380
+there's one more foreign key and that is
+the Album's artist_id equals the Artist.id.
+
+194
+00:10:39,380 --> 00:10:40,840
+So go back to that little
+picture that we had
+
+195
+00:10:40,840 --> 00:10:44,960
+this that pointed to this, that 
+pointed to that, that pointed to that.
+
+196
+00:10:46,400 --> 00:10:49,390
+We just look at this, the picture,
+and this is why the pictures are so
+
+197
+00:10:49,390 --> 00:10:51,900
+important, and we reconstruct all this.
+
+198
+00:10:51,900 --> 00:10:55,950
+And so this for me,
+it may look a little complex.
+
+199
+00:10:55,950 --> 00:10:57,030
+But after you do it a few times,
+
+200
+00:10:57,030 --> 00:11:01,480
+you realize that the naming convention
+really, really saves you, okay?
+
+201
+00:11:02,560 --> 00:11:05,810
+Let me show you that,
+select this whole monstrous mess.
+
+202
+00:11:09,916 --> 00:11:12,410
+Type her in, and then run it.
+
+203
+00:11:13,450 --> 00:11:15,730
+And we've reconstructed it, right?
+
+204
+00:11:15,730 --> 00:11:18,590
+Now, we've got replication here,
+but that's the output.
+
+205
+00:11:18,590 --> 00:11:22,900
+That's the beauty of databases,
+you reconstruct any replication, but
+
+206
+00:11:22,900 --> 00:11:25,060
+you don't actually store the replication.
+
+207
+00:11:25,060 --> 00:11:27,620
+And that's why you have to
+learn to write JOIN clauses.
+
+208
+00:11:28,800 --> 00:11:32,620
+So if we think about this,
+we've gone full circle.
+
+209
+00:11:32,620 --> 00:11:34,910
+it's taken us, just like any start-up,
+
+210
+00:11:34,910 --> 00:11:38,540
+it just took us like three
+days to build our product.
+
+211
+00:11:38,540 --> 00:11:42,560
+We started with a user interface that
+we designed that had replication.
+
+212
+00:11:42,560 --> 00:11:46,690
+Then we came up with a data, a logical
+data model, then a physical data model,
+
+213
+00:11:46,690 --> 00:11:47,810
+then we inserted all the data,
+
+214
+00:11:47,810 --> 00:11:50,900
+we connected things with
+numbers instead of strings.
+
+215
+00:11:50,900 --> 00:11:53,470
+And now we use a JOIN to reconstruct it.
+
+216
+00:11:53,470 --> 00:11:55,730
+And so, we start here.
+
+217
+00:11:55,730 --> 00:11:58,330
+We go through a step, a step, a step,
+a step, and then we come back to here,
+
+218
+00:11:58,330 --> 00:12:00,760
+and we're able to reconstruct, in effect,
+
+219
+00:12:00,760 --> 00:12:04,800
+the output that our end users
+are going to want to see.
+
+220
+00:12:04,800 --> 00:12:07,480
+Except now we can handle millions or
+billions of rows,
+
+221
+00:12:07,480 --> 00:12:10,600
+because we have carefully constructed
+a data model that makes sense.

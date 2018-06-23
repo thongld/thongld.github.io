@@ -1,0 +1,494 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/PcILSUry7Bk
+
+1
+00:00:00,500 --> 00:00:02,800
+Theo thời gian, người ta thường có nhu cầu với hầu hết các sản phẩm.
+
+2
+00:00:02,800 --> 00:00:05,340
+Đương nhiên, chúng ta có thể suy ngẫm về
+những dự báo về nhu cầu
+
+3
+00:00:05,340 --> 00:00:07,320
+bằng cách sử dụng phép phân tích chuỗi thời gian.
+
+4
+00:00:07,320 --> 00:00:10,920
+Hãy nhớ rằng, điều mà ta cần làm là tìm kiếm những mô hình.
+
+5
+00:00:10,920 --> 00:00:13,400
+Cách tốt nhất để tìm ra được mô hình
+
+6
+00:00:13,400 --> 00:00:17,530
+là các công cụ trực quan, bởi vì chúng ta đều là con người.
+
+7
+00:00:17,530 --> 00:00:21,400
+Như tôi đã từng nói trước đây, cách tốt nhất để xử lý dữ liệu là
+
+8
+00:00:21,400 --> 00:00:23,060
+thể hiện chúng trên biểu đồ.
+
+9
+00:00:23,060 --> 00:00:24,840
+Bởi vì, bằng phương pháp trực quan thì chúng ta có thể 
+nắm bắt vấn đề nhanh hơn,
+
+10
+00:00:24,840 --> 00:00:28,220
+so với thời gian máy tính tim ra được xu hướng chung.
+
+11
+00:00:28,220 --> 00:00:30,710
+Biểu đồ tôi đang trình chiếu trên đây 
+
+12
+00:00:30,710 --> 00:00:34,430
+là doanh thu theo tháng của một mặt hàng thực phẩm
+giá rẻ.
+
+13
+00:00:34,430 --> 00:00:36,030
+Doanh thu này dựa trên nhu cầu của thị trường Bắc Mỹ.
+
+14
+00:00:36,030 --> 00:00:39,010
+Trục hoành biểu thị khoảng thời gian
+
+15
+00:00:39,010 --> 00:00:43,210
+từ tháng 12 năm 2009 cho đến tận
+
+16
+00:00:43,210 --> 00:00:45,840
+tháng 11, năm 2012.
+
+17
+00:00:45,840 --> 00:00:48,940
+Vậy thì dữ liệu trong biểu đồ này được thu thập trong vòng ba năm.
+
+18
+00:00:48,940 --> 00:00:51,900
+Trên trục tung biểu hiện doanh số bán ra.
+
+19
+00:00:51,900 --> 00:00:55,720
+Bạn có thể nhìn thấy doanh số bán ra đạt đỉnh hơn 11 triệu
+
+20
+00:00:55,720 --> 00:00:59,480
+tại điểm này vào mùa hè năm 2012.
+
+21
+00:00:59,480 --> 00:01:02,810
+Nếu bạn nhìn vào biểu đồ này, bạn sẽ nhận ra xu hướng rõ ràng.
+
+22
+00:01:02,810 --> 00:01:05,640
+Bạn sẽ nhận thấy có những thời gian doanh số bán hàng tăng mạnh-
+đó là vào mùa hè
+
+23
+00:01:05,640 --> 00:01:08,200
+Trên biểu đồ này ta có những khoảng thời gian cao điểm trong mùa hè,
+
+24
+00:01:08,200 --> 00:01:10,560
+vào tất cả các mùa hè trong các năm.
+
+25
+00:01:10,560 --> 00:01:13,570
+Ngược lại doanh số lại giảm mạnh vào mùa đông.
+
+26
+00:01:13,570 --> 00:01:16,440
+Bạn có thể nhận thấy mô hình trong biểu đồ này,
+
+27
+00:01:16,440 --> 00:01:17,910
+giống như mùa bán hàng vậy.
+
+28
+00:01:17,910 --> 00:01:21,360
+Bởi vì đây là biểu đồ trong nhiều năm, vậy nên bạn có thể thấy doanh số bán hàng tăng giảm theo mùa, tức là mùa đông và mùa hè,
+
+29
+00:01:21,360 --> 00:01:23,670
+những mùa bán hàng thì không bị giới hạn
+
+30
+00:01:23,670 --> 00:01:25,852
+theo bốn mùa trong năm.
+
+31
+00:01:25,852 --> 00:01:27,060
+Hãy để tôi giải thích rõ hơn.
+
+32
+00:01:27,060 --> 00:01:28,730
+Hãy nhìn vào dữ liệu trong một tuần.
+
+33
+00:01:28,730 --> 00:01:31,770
+Tôi chỉ cần bẻ nhỏ dữ liệu,
+
+34
+00:01:31,770 --> 00:01:33,710
+mỗi điểm được nối với nhau bằng đường thẳng,
+
+35
+00:01:33,710 --> 00:01:36,570
+mỗi điểm thể hiện doanh số của tuần.
+
+36
+00:01:36,570 --> 00:01:38,470
+Bạn có thể nhận ra doanh số có nhiều biến động hơn
+
+37
+00:01:38,470 --> 00:01:41,180
+và bạn sẽ đoán trước được điều này bởi tôi đã từng giải thích điều này rồi.
+
+38
+00:01:41,180 --> 00:01:43,960
+Hãy nhớ lại bài học gần đây nhất,
+chúng ta học về cách tổng hợp,
+
+39
+00:01:43,960 --> 00:01:45,990
+đại loại là bạn sẽ phải dàn xếp dữ liệu.
+
+40
+00:01:45,990 --> 00:01:50,260
+Khi tôi phân tích dữ liệu, bạn sẽ nhận thấy sự biến động.
+
+41
+00:01:50,260 --> 00:01:53,090
+Dữ liệu còn có nhiều biến động hơn nếu tôi
+phân tích dữ liệu theo ngày.
+
+42
+00:01:53,090 --> 00:01:56,210
+Doanh số bán hàng không chỉ dao động theo mùa,
+
+43
+00:01:56,210 --> 00:02:00,320
+để tôi cho bạn thấy rõ hơn nhé,
+đây là dao động của doanh số bán hàng trong ba năm,
+
+44
+00:02:00,320 --> 00:02:03,160
+nhưng bạn cũng có thể nhận thấy những biến động
+
+45
+00:02:03,160 --> 00:02:05,470
+dù chỉ trong một tuần,
+
+46
+00:02:05,470 --> 00:02:07,670
+đây có vẻ như là mô hình theo tuần.
+
+47
+00:02:07,670 --> 00:02:09,830
+Ta còn có thể phân tích biến động doanh số theo tuần kỹ lưỡng hơn.
+
+48
+00:02:09,830 --> 00:02:12,630
+Nhưng, điều tôi muốn nhấn mạnh ở đây là,
+
+49
+00:02:12,630 --> 00:02:15,010
+công cụ trực quan có thể giúp bạn nhìn nhận ra vấn đề,
+
+50
+00:02:15,010 --> 00:02:18,480
+đặc biệt là nắm bắt được mô hình.
+
+51
+00:02:18,480 --> 00:02:21,807
+Nếu tôi trích một phần dữ liệu, để biến thanh biểu đồ cột.
+
+52
+00:02:21,807 --> 00:02:23,390
+Tôi sẽ chia ra bốn quý,
+
+53
+00:02:23,390 --> 00:02:28,110
+quý 1, quý 2, quý 3, quý 4.
+
+54
+00:02:28,110 --> 00:02:29,850
+Bạn có thể thấy rõ những các tháng 
+trong từng quý,
+
+55
+00:02:29,850 --> 00:02:32,460
+cũng như tổng doanh số bán ra.
+
+56
+00:02:32,460 --> 00:02:35,420
+Hãy nhìn vào đây, rõ ràng ở đây đã hình thành mô hình.
+
+57
+00:02:35,420 --> 00:02:39,000
+Chúng tôi bán được rất nhiều vào những tháng mùa xuân 
+
+58
+00:02:39,000 --> 00:02:39,730
+và mùa hè.
+
+59
+00:02:39,730 --> 00:02:42,850
+Chung tối lại không bán được hàng vào khoảng thời gian này,
+
+60
+00:02:42,850 --> 00:02:45,284
+tức là vào đầu mùa xuân, và cuối mùa đông.
+
+61
+00:02:45,284 --> 00:02:46,700
+Bạn có thể nhận thấy 
+
+62
+00:02:46,700 --> 00:02:48,970
+sự khác biệt theo mùa trong biểu đồ này.
+
+63
+00:02:48,970 --> 00:02:53,470
+Nhưng tôi cũng đã nói trước đây,
+
+64
+00:02:53,470 --> 00:02:56,740
+dường như có sự biến động ngay chỉ trong một tuần.
+
+65
+00:02:56,740 --> 00:02:58,400
+Nếu tôi nhìn vào các ngày trong tuần,
+
+66
+00:02:58,400 --> 00:03:01,370
+tất cả những gì tôi cần làm là phân loại doanh số 
+
+67
+00:03:01,370 --> 00:03:03,840
+theo các ngày trong tuần,
+
+68
+00:03:03,840 --> 00:03:04,720
+rõ ràng là chúng tôi không bán được nhiều vào cuối tuần.
+
+69
+00:03:04,720 --> 00:03:08,510
+Bởi vì, dữ liệu này không phải được thu thập tại những cửa hàng bản lẻ,
+
+70
+00:03:08,510 --> 00:03:11,800
+mà thực chất đây là số hàng được vận chuyển tới những cửa hàng bán lẻ
+
+71
+00:03:11,800 --> 00:03:13,770
+từ nhà máy sản xuất.
+
+72
+00:03:13,770 --> 00:03:16,240
+Rõ ràng bạn có thể nhận thấy
+
+73
+00:03:16,240 --> 00:03:17,900
+có rất ít nhu cầu vào cuối tuần.
+
+74
+00:03:17,900 --> 00:03:20,640
+Trên thực tế, có lẽ bạn chỉ mới nhận ra điều này.
+
+75
+00:03:20,640 --> 00:03:23,570
+Bạn có thể nhận thấy nhu cầu vào thứ Sáu
+
+76
+00:03:23,570 --> 00:03:27,290
+thấp hơn nhiều so với thứ Hai và thứ Ba.
+
+77
+00:03:27,290 --> 00:03:30,050
+Vậy là thời điểm bán được hàng đều thay đổi theo năm,
+
+78
+00:03:30,050 --> 00:03:33,450
+theo tháng, hay theo quý và thậm chí là theo tuần.
+
+79
+00:03:33,450 --> 00:03:35,170
+Những biến động này rất quan trọng 
+
+80
+00:03:35,170 --> 00:03:37,190
+bởi vì ta có thể sử dụng chúng để dự đoán.
+
+81
+00:03:37,190 --> 00:03:40,600
+Bởi vì mục đích chính để tìm ra mô hình trong quá khứ
+
+82
+00:03:40,600 --> 00:03:42,910
+là để định hình các dự án trong tương lai.
+
+83
+00:03:42,910 --> 00:03:44,650
+Vậy nếu đây là dữ liệu trong quá khứ.
+
+84
+00:03:44,650 --> 00:03:46,860
+Hãy nhớ rằng, đây là dữ liệu trong vòng ba năm qua.
+
+85
+00:03:46,860 --> 00:03:49,280
+Gỉa sử tôi đang ở tháng 11 năm 2012.
+
+86
+00:03:49,280 --> 00:03:53,150
+và điều tôi muốn xác định là doanh số trong tương lại sẽ ra sao?
+
+87
+00:03:53,150 --> 00:03:55,020
+Doanh số trong tương lại sẽ ra sao,
+
+88
+00:03:55,020 --> 00:03:58,940
+bởi vì tôi muốn sử dụng mô hình trong quá khứ,
+doanh số bán theo mùa,
+
+89
+00:03:58,940 --> 00:04:03,150
+để dự đoán và thống kê mô hình trong tương lai.
+
+90
+00:04:03,150 --> 00:04:04,730
+Có hai điều tôi muốn chỉ ra đó là.
+
+91
+00:04:04,730 --> 00:04:07,120
+Đầu tiên, bạn cần chú ý đến phạm vi.
+
+92
+00:04:07,120 --> 00:04:09,710
+Hãy nhớ lại tầm quan trọng của phạm vi.
+
+93
+00:04:09,710 --> 00:04:12,266
+Đây là phạm vi rất rộng,
+
+94
+00:04:12,266 --> 00:04:14,140
+nhưng dù sao thì nó vẫn khiến bạn cảm thấy tự tin phần nào.
+
+95
+00:04:14,140 --> 00:04:17,450
+Bạn nên cân nhắc đền điều này khi đưa ra dự đoán.
+
+96
+00:04:17,450 --> 00:04:20,829
+Điều còn lại là, đây chỉ là sự thông kê nhanh
+
+97
+00:04:20,829 --> 00:04:24,160
+mô hình
+
+98
+00:04:24,160 --> 00:04:27,260
+vào mùa hè và mùa xuân của năm 2013.
+
+99
+00:04:27,260 --> 00:04:30,780
+Mô hình này không đạt đỉnh điểm cao như
+mùa hè năm 2012.
+
+100
+00:04:30,780 --> 00:04:32,690
+Bạn có thể nhận thấy doanh số vào năm 2012 vượt trội hơn hẳn.
+
+101
+00:04:32,690 --> 00:04:34,720
+nó có vẻ vượt trội hơn so với trung binh của các năm trước,
+
+102
+00:04:34,720 --> 00:04:36,510
+nhưng nó lại có vẻ cân bằng so với hai doanh số này.
+
+103
+00:04:36,510 --> 00:04:38,400
+Chúng ta sẽ bàn luận về vấn đề này kỹ lưỡng hơn.
+
+104
+00:04:38,400 --> 00:04:41,080
+Bởi vì đây là những gì dự đoán đưa ra,
+
+105
+00:04:41,080 --> 00:04:43,820
+nếu đây doanh số cao nhất của năm 2012
+
+106
+00:04:43,820 --> 00:04:45,350
+thì không có nghĩa rằng
+
+107
+00:04:45,350 --> 00:04:48,240
+tôi sẽ dự đoán doanh số như thế này vào năm 2013.
+
+108
+00:04:48,240 --> 00:04:50,820
+Bạn có thể thấy dự đoán được đưa ra,
+
+109
+00:04:50,820 --> 00:04:53,410
+chúng ta sẽ còn thấy mô thêm những mô hình này thêm nữa trong tương lai,
+
+110
+00:04:53,410 --> 00:04:56,940
+tạo ra thông tin mới
+
+111
+00:04:56,940 --> 00:04:59,890
+dựa trên thông tin cũ.
+
+112
+00:04:59,890 --> 00:05:01,980
+Vậy nên chúng ta sẽ học gì trong buổi hôm nay?
+
+113
+00:05:01,980 --> 00:05:04,276
+ Chúng ta sẽ học về những thành phần trong chuối thời gian,
+
+114
+00:05:04,276 --> 00:05:06,150
+những mô hình ta cần tìm kiếm.
+
+115
+00:05:06,150 --> 00:05:08,525
+Sau đó thì ta sẽ bàn về những phương pháp dự đoán,
+
+116
+00:05:08,525 --> 00:05:12,200
+dự báo tích lũy, dự báo thô ráp,
+
+117
+00:05:12,200 --> 00:05:13,440
+và sự báo chuyển động trung bình.
+
+118
+00:05:13,440 --> 00:05:17,200
+Đây là một loạt những giai đoạn của phương pháp dự đoán
+
+119
+00:05:17,200 --> 00:05:19,140
+mà chúng ta sẽ nghiên cứu.
+
+120
+00:05:19,140 --> 00:05:21,040
+Hãy bắt đầu nào.
+

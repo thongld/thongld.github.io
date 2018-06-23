@@ -1,0 +1,672 @@
+1
+00:00:00,000 --> 00:00:03,922
+(intro music)
+
+2
+00:00:03,922 --> 00:00:06,005
+Hello, I'm Paul Henne
+
+3
+00:00:06,004 --> 00:00:09,166
+and I'm a philosophy graduate
+student at Duke University.
+
+4
+00:00:09,166 --> 00:00:12,483
+And in this video I'm
+going to discuss validity,
+
+5
+00:00:12,483 --> 00:00:16,666
+an important tool for
+evaluating deductive arguments.
+
+6
+00:00:17,035 --> 00:00:18,867
+You've probably heard someone say
+
+7
+00:00:18,867 --> 00:00:20,481
+"that's a valid point," or
+
+8
+00:00:20,481 --> 00:00:21,907
+maybe in an argument you've heard a friend
+
+9
+00:00:21,907 --> 00:00:24,661
+say something like
+"that's valid, but..."
+
+10
+00:00:24,661 --> 00:00:27,223
+In these everyday uses of the term
+
+11
+00:00:27,222 --> 00:00:29,785
+"valid" or "validity,"
+
+12
+00:00:29,785 --> 00:00:32,347
+people often mean to
+convey something like
+
+13
+00:00:32,347 --> 00:00:34,006
+"that's a good point," or
+
+14
+00:00:34,006 --> 00:00:35,783
+"that statement's true."
+
+15
+00:00:35,783 --> 00:00:36,886
+But I won't be talking,
+
+16
+00:00:36,886 --> 00:00:38,348
+in this video at least,
+
+17
+00:00:38,347 --> 00:00:40,368
+about those usages.
+
+18
+00:00:40,368 --> 00:00:42,981
+Instead, I'll be discussing the technical
+
+19
+00:00:42,981 --> 00:00:45,721
+philosophical notion of validity,
+
+20
+00:00:45,720 --> 00:00:48,181
+as in "a valid argument."
+
+21
+00:00:48,182 --> 00:00:51,618
+You already know that an
+argument is a set of statements,
+
+22
+00:00:51,618 --> 00:00:54,463
+and that one or more of these statements
+
+23
+00:00:54,463 --> 00:00:56,285
+is offered in support
+
+24
+00:00:56,284 --> 00:00:58,090
+of some other statements.
+
+25
+00:00:58,860 --> 00:01:01,439
+The statements doing the supporting
+
+26
+00:01:01,439 --> 00:01:03,518
+are called "premises,"
+
+27
+00:01:03,518 --> 00:01:05,641
+and the statements being supported
+
+28
+00:01:05,641 --> 00:01:07,611
+are called "conclusions."
+
+29
+00:01:08,135 --> 00:01:10,681
+Validity, in the sense
+that I'm talking about it,
+
+30
+00:01:10,680 --> 00:01:13,396
+applies to deductive arguments.
+
+31
+00:01:13,397 --> 00:01:16,808
+So an argument is valid or invalid.
+
+32
+00:01:16,808 --> 00:01:19,179
+Validity, then, isn't a
+property of statements
+
+33
+00:01:19,179 --> 00:01:20,560
+or anything of the like.
+
+34
+00:01:20,560 --> 00:01:23,968
+So, what exactly is a valid argument then?
+
+35
+00:01:23,968 --> 00:01:26,513
+Well, suppose that you make
+the following argument,
+
+36
+00:01:26,513 --> 00:01:29,627
+and here I'll use "P"s
+to stand for "premises"
+
+37
+00:01:29,626 --> 00:01:32,317
+and I'll use a "C" to
+stand for the conclusion.
+
+38
+00:01:33,025 --> 00:01:36,999
+(P1): All humans are mortal.
+
+39
+00:01:36,001 --> 00:01:39,145
+(P2): Iris Murdoch is a human.
+
+40
+00:01:39,144 --> 00:01:43,078
+(C): Therefore, Iris Murdoch is mortal.
+
+41
+00:01:44,138 --> 00:01:47,123
+Suppose that I say that
+your argument is valid.
+
+42
+00:01:47,123 --> 00:01:50,164
+Do I mean to say that
+your argument is good?
+
+43
+00:01:50,164 --> 00:01:52,323
+Do I mean to say that your conclusion,
+
+44
+00:01:52,322 --> 00:01:55,782
+or that all of the premises
+and the conclusion, are true?
+
+45
+00:01:55,783 --> 00:01:58,221
+While this might sound
+like what I'm saying,
+
+46
+00:01:58,221 --> 00:01:59,882
+validity has nothing to do
+
+47
+00:01:59,882 --> 00:02:01,924
+with the truth of the conclusion
+
+48
+00:02:01,924 --> 00:02:05,833
+or with how good the
+argument is in general.
+
+49
+00:02:06,402 --> 00:02:07,960
+So, let's define it.
+
+50
+00:02:08,266 --> 00:02:12,478
+An argument is valid if and only if
+
+51
+00:02:12,478 --> 00:02:14,544
+the truth of its premises
+
+52
+00:02:14,544 --> 00:02:18,253
+guarantees the truth of its conclusion.
+
+53
+00:02:18,252 --> 00:02:22,042
+That is, validity is a
+property of arguments,
+
+54
+00:02:22,043 --> 00:02:26,153
+such that if the premises
+of the arguments are true,
+
+55
+00:02:26,153 --> 00:02:29,526
+then the conclusion must be true.
+
+56
+00:02:30,234 --> 00:02:33,993
+So it's impossible for a valid argument
+
+57
+00:02:33,993 --> 00:02:36,682
+to have all true premises
+
+58
+00:02:36,682 --> 00:02:39,900
+unless the conclusion is also true.
+
+59
+00:02:40,515 --> 00:02:43,241
+When an argument is valid in this sense,
+
+60
+00:02:43,241 --> 00:02:47,676
+we say that the premises
+entail the conclusion.
+
+61
+00:02:48,122 --> 00:02:50,971
+So, let's back up for a second.
+
+62
+00:02:50,971 --> 00:02:53,598
+An argument is composed of statements.
+
+63
+00:02:53,598 --> 00:02:55,517
+Statements can be true or false,
+
+64
+00:02:55,516 --> 00:02:58,598
+like the statement "this
+square is orange."
+
+65
+00:02:58,598 --> 00:03:01,210
+Arguments cannot be true or false.
+
+66
+00:03:01,225 --> 00:03:04,508
+They can, however, be valid or invalid,
+
+67
+00:03:04,508 --> 00:03:06,322
+as well as other things.
+
+68
+00:03:06,322 --> 00:03:09,097
+And, if an argument is valid,
+
+69
+00:03:09,097 --> 00:03:11,198
+then if its premises are true,
+
+70
+00:03:11,198 --> 00:03:13,316
+its conclusion is true.
+
+71
+00:03:14,253 --> 00:03:17,480
+Notice that I have not
+said that a valid argument
+
+72
+00:03:17,480 --> 00:03:19,895
+has true or false premises
+
+73
+00:03:19,895 --> 00:03:22,060
+or a true and false conclusion.
+
+74
+00:03:22,061 --> 00:03:24,641
+I have said something conditional.
+
+75
+00:03:24,640 --> 00:03:27,578
+That is, if the argument is valid,
+
+76
+00:03:27,579 --> 00:03:29,437
+then the truth of its conclusion
+
+77
+00:03:29,437 --> 00:03:32,331
+follows from the truth of its premises.
+
+78
+00:03:32,838 --> 00:03:36,193
+Conversely, if the truth of the premises
+
+79
+00:03:36,193 --> 00:03:37,912
+entails the conclusion,
+
+80
+00:03:37,912 --> 00:03:40,724
+then the argument is valid.
+
+81
+00:03:41,848 --> 00:03:43,252
+Now, this all sounds very abstract,
+
+82
+00:03:43,252 --> 00:03:44,900
+so let's return to some examples.
+
+83
+00:03:44,900 --> 00:03:46,757
+Let's look at our previous example.
+
+84
+00:03:46,757 --> 00:03:47,918
+I have said that the argument
+
+85
+00:03:47,918 --> 00:03:51,390
+about the British philosopher,
+Iris Murdoch is valid.
+
+86
+00:03:51,389 --> 00:03:52,810
+Am I right?
+
+87
+00:03:52,811 --> 00:03:53,391
+Yes!
+
+88
+00:03:53,391 --> 00:03:55,953
+If the premises of the argument are true,
+
+89
+00:03:55,953 --> 00:03:58,817
+then the conclusion must
+be true, in this case.
+
+90
+00:03:59,371 --> 00:04:00,677
+Remember, it doesn't matter
+
+91
+00:04:00,676 --> 00:04:03,173
+if our premises are true or false.
+
+92
+00:04:03,174 --> 00:04:04,578
+Consider, for example, an argument
+
+93
+00:04:04,578 --> 00:04:06,920
+with all false premises in it.
+
+94
+00:04:06,919 --> 00:04:10,613
+(P1): All humans are immortal.
+
+95
+00:04:10,614 --> 00:04:13,800
+Premise (2): Iris Murdoch is a human.
+
+96
+00:04:13,800 --> 00:04:17,983
+Conclusion: Therefore,
+Iris Murdoch is immortal.
+
+97
+00:04:18,889 --> 00:04:21,322
+This argument is also valid,
+
+98
+00:04:21,322 --> 00:04:22,593
+just like the first argument.
+
+99
+00:04:22,593 --> 00:04:24,755
+The truth of the premises entails
+
+100
+00:04:24,755 --> 00:04:27,178
+the truth of the conclusion, right?
+
+101
+00:04:27,178 --> 00:04:30,916
+If it is the case that
+all humans are immortal,
+
+102
+00:04:30,916 --> 00:04:35,226
+and it is the case that Iris
+Murdoch is one of these humans,
+
+103
+00:04:35,226 --> 00:04:36,968
+then it's necessarily the case
+
+104
+00:04:36,968 --> 00:04:39,510
+that Iris Murdoch is immortal.
+
+105
+00:04:39,511 --> 00:04:41,610
+Let's try an example with premises
+
+106
+00:04:41,610 --> 00:04:43,763
+of which we don't know the truth.
+
+107
+00:04:44,100 --> 00:04:47,591
+(P1): All aliens speak English.
+
+108
+00:04:47,591 --> 00:04:50,656
+(P2): Splock is an alien.
+
+109
+00:04:50,656 --> 00:04:54,542
+Conclusion: Therefore,
+Splock speaks English.
+
+110
+00:04:54,541 --> 00:04:56,506
+We don't know if there are aliens,
+
+111
+00:04:56,507 --> 00:04:58,394
+let alone ones that can speak at all.
+
+112
+00:04:58,394 --> 00:05:00,449
+We don't know if they speak English.
+
+113
+00:05:00,449 --> 00:05:01,250
+It could be the case,
+
+114
+00:05:01,250 --> 00:05:02,771
+or it couldn't be the case.
+
+115
+00:05:02,771 --> 00:05:05,372
+But this argument, nonetheless, is valid.
+
+116
+00:05:05,372 --> 00:05:08,112
+If premise one and two are true,
+
+117
+00:05:08,112 --> 00:05:10,736
+then the conclusion must be true.
+
+118
+00:05:10,735 --> 00:05:12,945
+We could even use undefined terms.
+
+119
+00:05:12,946 --> 00:05:16,111
+(P1): All sliff are splat.
+
+120
+00:05:16,110 --> 00:05:19,094
+(P2): Sniff is a sliff.
+
+121
+00:05:19,095 --> 00:05:22,972
+Conclusion: Therefore, sniff is a splat.
+
+122
+00:05:22,971 --> 00:05:26,709
+Again, although the truth of
+the premises is undefined,
+
+123
+00:05:26,709 --> 00:05:28,415
+we have a valid argument.
+
+124
+00:05:28,415 --> 00:05:31,052
+This is just one type
+of valid argument form,
+
+125
+00:05:31,052 --> 00:05:32,411
+and you can learn about others
+
+126
+00:05:32,411 --> 00:05:34,035
+in upcoming videos.
+
+127
+00:05:34,035 --> 00:05:35,556
+Note now what it means
+
+128
+00:05:35,555 --> 00:05:37,403
+for an argument to be invalid.
+
+129
+00:05:37,403 --> 00:05:39,735
+The truth of the argument's premises
+
+130
+00:05:39,735 --> 00:05:42,801
+does not entail the
+truth of the conclusion.
+
+131
+00:05:43,601 --> 00:05:44,682
+For instance:
+
+132
+00:05:44,682 --> 00:05:47,682
+(P1): All dogs have fur.
+
+133
+00:05:47,682 --> 00:05:50,555
+(P2): Claire has a lot of fur.
+
+134
+00:05:50,555 --> 00:05:54,189
+Conclusion: Therefore, Claire is a dog.
+
+135
+00:05:54,189 --> 00:05:55,826
+Now, it could be the case
+
+136
+00:05:55,826 --> 00:05:57,875
+that all of the premises in this argument
+
+137
+00:05:57,875 --> 00:06:01,221
+are true, but the conclusion false.
+
+138
+00:06:01,221 --> 00:06:02,614
+The truth of this conclusion,
+
+139
+00:06:02,615 --> 00:06:03,569
+in other words,
+
+140
+00:06:03,569 --> 00:06:06,576
+does not follow from the premises, right?
+
+141
+00:06:06,576 --> 00:06:09,990
+Because cats also have a lot of fur.
+
+142
+00:06:09,990 --> 00:06:13,129
+So this is an invalid argument.
+
+143
+00:06:13,699 --> 00:06:16,747
+You may wonder why
+validity matters at all,
+
+144
+00:06:16,747 --> 00:06:19,545
+if the truth of the
+premises doesn't matter.
+
+145
+00:06:19,545 --> 00:06:20,788
+This is a good question to ask,
+
+146
+00:06:20,788 --> 00:06:22,795
+and it deserves a long discussion.
+
+147
+00:06:22,795 --> 00:06:25,013
+But the short answer is
+that validity is used
+
+148
+00:06:25,012 --> 00:06:27,949
+to determine whether or
+not an argument obeys
+
+149
+00:06:27,949 --> 00:06:31,512
+valid inference rules, the
+laws of deductive logic.
+
+150
+00:06:31,512 --> 00:06:34,834
+That is, we are ensuring that
+inferences in the argument
+
+151
+00:06:34,834 --> 00:06:37,139
+are good inferences to make.
+
+152
+00:06:37,831 --> 00:06:39,711
+I'll leave you with one last example,
+
+153
+00:06:39,711 --> 00:06:40,812
+and ask you to determine
+
+154
+00:06:40,812 --> 00:06:43,137
+its validity or invalidity.
+
+155
+00:06:43,584 --> 00:06:46,687
+(P1): All fruit is a chair.
+
+156
+00:06:46,687 --> 00:06:49,914
+(P2): Square is a chair.
+
+157
+00:06:49,915 --> 00:06:53,809
+Conclusion: Therefore, square is a fruit.
+
+158
+00:06:53,809 --> 00:06:55,486
+What do you think?
+
+159
+00:07:02,079 --> 00:07:05,079
+Subtitles by the Amara.org community
+

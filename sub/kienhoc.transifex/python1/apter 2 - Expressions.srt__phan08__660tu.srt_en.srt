@@ -1,0 +1,435 @@
+666
+00:30:01,320 --> 00:30:03,440
+https://youtu.be/IXXHH6ztsSA
+And so welcome is a literal.
+
+667
+00:30:03,440 --> 00:30:07,260
+And then Chuck is coming
+from this nam variable.
+
+668
+00:30:07,260 --> 00:30:09,410
+So this is a two-line program.
+
+669
+00:30:09,410 --> 00:30:13,100
+I think this is one of
+your assignments actually.
+
+670
+00:30:13,100 --> 00:30:15,960
+Well, it's one of the
+exercises in the book
+
+671
+00:30:15,960 --> 00:30:18,330
+to prompt for a user's
+name and then welcome them.
+
+672
+00:30:18,330 --> 00:30:21,410
+
+673
+00:30:21,410 --> 00:30:25,000
+So raw input is a function
+that issues a prompt,
+
+674
+00:30:25,000 --> 00:30:27,300
+waits, and then takes
+whatever string is entered,
+
+675
+00:30:27,300 --> 00:30:29,805
+and then returns it, and then
+puts it into that variable.
+
+676
+00:30:29,805 --> 00:30:33,450
+
+677
+00:30:33,450 --> 00:30:36,040
+So now we're going
+to create kind
+
+678
+00:30:36,040 --> 00:30:38,200
+of the first useful program.
+
+679
+00:30:38,200 --> 00:30:41,170
+It's not a powerful program.
+
+680
+00:30:41,170 --> 00:30:48,279
+It is an interesting problem of
+the fact that for some reason
+
+681
+00:30:48,279 --> 00:30:49,820
+there's a difference
+in the numbering
+
+682
+00:30:49,820 --> 00:30:51,930
+scheme of United
+States elevators
+
+683
+00:30:51,930 --> 00:30:54,210
+and European elevators.
+
+684
+00:30:54,210 --> 00:30:58,120
+European elevators, the
+floor that you walk out on
+
+685
+00:30:58,120 --> 00:30:59,770
+is the 0 floor.
+
+686
+00:30:59,770 --> 00:31:01,620
+The floor above
+that is the 1 floor.
+
+687
+00:31:01,620 --> 00:31:06,280
+And the floor below that, the
+basement, is the minus 1 floor.
+
+688
+00:31:06,280 --> 00:31:08,360
+And so you walk in
+and you can either
+
+689
+00:31:08,360 --> 00:31:11,610
+go up the elevator
+or down the elevator.
+
+690
+00:31:11,610 --> 00:31:15,030
+Of course, in the United States,
+the floor that you walk in
+
+691
+00:31:15,030 --> 00:31:16,290
+is the 1.
+
+692
+00:31:16,290 --> 00:31:18,110
+And then there's the
+2 floor above that.
+
+693
+00:31:18,110 --> 00:31:20,120
+And then there's the basement.
+
+694
+00:31:20,120 --> 00:31:24,620
+So this is the imagination that
+the Americans have as to how
+
+695
+00:31:24,620 --> 00:31:26,160
+to number floors.
+
+696
+00:31:26,160 --> 00:31:29,290
+The Europeans go 0, 1, minus 1.
+
+697
+00:31:29,290 --> 00:31:32,620
+So children who
+go to hotels learn
+
+698
+00:31:32,620 --> 00:31:35,279
+instantly the notion
+of zero and the notion
+
+699
+00:31:35,279 --> 00:31:37,320
+of positive and negative
+numbers and the symmetry
+
+700
+00:31:37,320 --> 00:31:39,310
+between positive and
+negative numbers.
+
+701
+00:31:39,310 --> 00:31:41,260
+I mean, I just wish the
+United States hotels
+
+702
+00:31:41,260 --> 00:31:47,530
+would switch to this I
+to teach young people 0
+
+703
+00:31:47,530 --> 00:31:50,340
+immediately and
+negative numbers.
+
+704
+00:31:50,340 --> 00:31:52,770
+So we somehow think that
+numbers in the United States
+
+705
+00:31:52,770 --> 00:31:55,946
+start at 1, and then there
+are no negative numbers.
+
+706
+00:31:55,946 --> 00:31:56,820
+There's the basement.
+
+707
+00:31:56,820 --> 00:31:59,716
+
+708
+00:31:59,716 --> 00:32:03,650
+I wonder why that
+is, but whatever.
+
+709
+00:32:03,650 --> 00:32:08,220
+For people to travel a lot,
+they may be confused by this.
+
+710
+00:32:08,220 --> 00:32:12,010
+They need a way to convert
+back and forth between the US
+
+711
+00:32:12,010 --> 00:32:15,480
+and European numbering system.
+
+712
+00:32:15,480 --> 00:32:18,140
+So this is a simple
+program that demonstrates
+
+713
+00:32:18,140 --> 00:32:22,140
+a real classic pattern of
+input processing and output.
+
+714
+00:32:22,140 --> 00:32:23,670
+It's just three lines.
+
+715
+00:32:23,670 --> 00:32:27,950
+But it has the essential
+things that all programs that
+
+716
+00:32:27,950 --> 00:32:31,310
+are useful-- they
+generally read some data,
+
+717
+00:32:31,310 --> 00:32:34,320
+do some work with the
+data, and then produce
+
+718
+00:32:34,320 --> 00:32:36,040
+some kind of results.
+
+719
+00:32:36,040 --> 00:32:42,780
+And so the first line is a raw
+input that effectively puts out
+
+720
+00:32:42,780 --> 00:32:44,600
+a prompt.
+
+721
+00:32:44,600 --> 00:32:45,550
+And the wait.
+
+722
+00:32:45,550 --> 00:32:47,950
+It says, please enter
+your Europe floor.
+
+723
+00:32:47,950 --> 00:32:49,180
+It sits there.
+
+724
+00:32:49,180 --> 00:32:50,940
+We type a 0.
+
+725
+00:32:50,940 --> 00:32:53,070
+Then 0 goes into int.
+
+726
+00:32:53,070 --> 00:32:55,280
+But it is a string.
+
+727
+00:32:55,280 --> 00:32:56,510
+It is not a number.
+
+728
+00:32:56,510 --> 00:32:57,700
+It is a string.
+
+729
+00:32:57,700 --> 00:32:59,820
+So we can't add to it.
+
+730
+00:32:59,820 --> 00:33:04,140
+But we can take and convert
+it to an integer with the int
+
+731
+00:33:04,140 --> 00:33:06,340
+function, int of imp.
+
+732
+00:33:06,340 --> 00:33:08,360
+That's a string being
+converted to an integer.
+
+733
+00:33:08,360 --> 00:33:11,040
+So now it's a real numeric 0.
+
+734
+00:33:11,040 --> 00:33:12,425
+We can add 1 to that.
+
+735
+00:33:12,425 --> 00:33:14,250
+And we sum that together.
+
+736
+00:33:14,250 --> 00:33:18,030
+And we put it into
+the variable usf.
+
+737
+00:33:18,030 --> 00:33:20,230
+And then we print
+US Floor comma,
+
+738
+00:33:20,230 --> 00:33:22,940
+and then whatever the
+variable for usf is.
+
+739
+00:33:22,940 --> 00:33:25,350
+And out come US Floor 1.
+
+740
+00:33:25,350 --> 00:33:28,720
+So you're written a very
+simple elevator floor
+
+741
+00:33:28,720 --> 00:33:33,306
+conversion from a European
+floor to a United States floor.
+
+742
+00:33:33,306 --> 00:33:34,680
+Don't ask about
+negative numbers.
+
+743
+00:33:34,680 --> 00:33:35,888
+It's not really good at that.
+
+744
+00:33:35,888 --> 00:33:38,880
+But from 0 and positive
+numbers, it works great.
+
+745
+00:33:38,880 --> 00:33:42,680
+
+746
+00:33:42,680 --> 00:33:47,020
+So another thing to think about
+in any programming language
+
+747
+00:33:47,020 --> 00:33:49,610
+is comments.
+
+748
+00:33:49,610 --> 00:33:52,030
+Comments are like commentary.
+
+749
+00:33:52,030 --> 00:33:57,180
+And basically, it's a way
+for us to add notations
+
+750
+00:33:57,180 --> 00:34:00,050
+for ourselves or for
+other humans interspersed
+
+751
+00:34:00,050 --> 00:34:01,460
+in the code.
+
+752
+00:34:01,460 --> 00:34:06,029
+And so in Python, anything
+after a pound sign is ignored.
+
+753
+00:34:06,029 --> 00:34:08,320
+You can have a pound sign at
+the beginning of the line,
+
+754
+00:34:08,320 --> 00:34:10,179
+and then the whole
+line is ignored.
+
+755
+00:34:10,179 --> 00:34:12,630
+There are two or three
+reasons why you could do this.
+
+756
+00:34:12,630 --> 00:34:15,389
+One is sort of like
+paragraph headings, where
+
+757
+00:34:15,389 --> 00:34:17,170
+you can say what's
+going to happen
+
+758
+00:34:17,170 --> 00:34:21,140
+in English or your language.
+
+759
+00:34:21,140 --> 00:34:22,639
+And you can write
+documentation that
+
+760
+00:34:22,639 --> 00:34:25,659
+says, this code was written
+by Charles Severance December,
+

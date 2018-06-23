@@ -1,0 +1,210 @@
+1
+00:00:02,070 --> 00:00:06,630
+http://youtube.com/watch?v=YapH1LPbe4Q
+
+Data visualization is both a science, and
+an art. You have to use your intelligence
+
+2
+00:00:06,630 --> 00:00:12,230
+to understand the data, and your creativity
+to make the data tell a story. For each visualization,
+
+3
+00:00:12,230 --> 00:00:17,480
+you have many options. First of all, there
+are the different plot types. And for each
+
+4
+00:00:17,480 --> 00:00:23,840
+plot, you can do an infinite number of customizations.
+You can change colors, shapes, labels, axes,
+
+5
+00:00:23,840 --> 00:00:28,470
+and so on. The choice depends on the (1) data,
+and (2), the story you want to tell with this
+
+6
+00:00:28,470 --> 00:00:30,099
+data.
+
+7
+00:00:30,099 --> 00:00:35,289
+Since there are a so many possible customizations,
+the best way to learn this, is by example.
+
+8
+00:00:35,289 --> 00:00:40,090
+In this video, we're going to customize the
+world population plot to make it look a lot
+
+9
+00:00:40,090 --> 00:00:44,840
+better. And in the exercises, you'll finally
+get to create Hans Rosling's famous world
+
+10
+00:00:44,840 --> 00:00:47,820
+development bubble chart.
+
+11
+00:00:47,820 --> 00:00:52,190
+Let's start with the code in this script to
+build a simple line plot. It shows the evolution
+
+12
+00:00:52,190 --> 00:00:57,879
+of the world population, with projections
+untill the year 2100, as forecasted by the
+
+13
+00:00:57,879 --> 00:01:02,100
+united nations. I like this plot, because
+it shows that the population explosion that
+
+14
+00:01:02,100 --> 00:01:06,470
+is going on right now, will have slowed down
+by the end of this century. But, there are
+
+15
+00:01:06,470 --> 00:01:11,229
+a lot of things that could be better. First,
+it should be more clear which data we are
+
+16
+00:01:11,229 --> 00:01:15,299
+displaying, especially to people who are seeing
+the graph for the first time. And second,
+
+17
+00:01:15,299 --> 00:01:20,320
+I want the story of the population explosion,
+with its beginning and end, to stand out more.
+
+18
+00:01:20,320 --> 00:01:25,009
+The first thing you always need to do is label
+your axes. Let's do this by adding the xlabel
+
+19
+00:01:25,009 --> 00:01:29,450
+and ylabel functions. Make sure to do this
+before calling the `show()` method. If you
+
+20
+00:01:29,450 --> 00:01:33,119
+run the script, this is the result.
+
+21
+00:01:33,119 --> 00:01:37,220
+We're also going to add a title to our plot,
+with the title function. We pass the actual
+
+22
+00:01:37,220 --> 00:01:41,399
+title, 'World Population Projections', as
+an argument.
+
+23
+00:01:41,399 --> 00:01:46,659
+Ok, so now at least we know what our plot
+is about! The next thing I want to change
+
+24
+00:01:46,659 --> 00:01:51,939
+is the ticks on the y-axis. It should be clear
+that we are talking about billions. And also,
+
+25
+00:01:51,939 --> 00:01:56,630
+the axis should start at zero, which puts
+the the population growth in perspective.
+
+26
+00:01:56,630 --> 00:02:00,909
+For this, you can use the yticks command.
+As an argument, add a list with all the ticks
+
+27
+00:02:00,909 --> 00:02:04,890
+that you want to display. We start from 0,
+up to 10.
+
+28
+00:02:04,890 --> 00:02:08,950
+We can add a second argument to the yticks
+function, which is a list with the display
+
+29
+00:02:08,950 --> 00:02:13,840
+names of the ticks. We'll use this to add
+the letter B, to show that the number is expressed
+
+30
+00:02:13,840 --> 00:02:16,020
+in Billions.
+
+31
+00:02:16,020 --> 00:02:20,490
+Next, let's add some more historical data
+to accentuate the population explosion in
+
+32
+00:02:20,490 --> 00:02:26,620
+the last 60 years. On wikipedia, we can find
+the world population data for the years 1800,
+
+33
+00:02:26,620 --> 00:02:31,610
+1850 and 1900. We write those data in list
+form and append them in front of our data
+
+34
+00:02:31,610 --> 00:02:36,890
+lists, with the plus sign. This will add three
+datapoints to the graph, and gives us a completer
+
+35
+00:02:36,890 --> 00:02:38,990
+picture.
+
+36
+00:02:38,990 --> 00:02:42,610
+The last thing I want to do is fill up the
+area under the graph, because I think it is
+
+37
+00:02:42,610 --> 00:02:46,670
+visually more appealing if you can really
+see the area expand over time, just like the
+
+38
+00:02:46,670 --> 00:02:50,760
+population. We do this by replacing the plot
+command with the 'fill_between' command. The
+
+39
+00:02:50,760 --> 00:02:55,120
+arguments are the x list, the y list, zero,
+to fill untill zero, and finally the color
+
+40
+00:02:55,120 --> 00:02:59,310
+of the fill, green in this case.
+
+41
+00:02:59,310 --> 00:03:09,090
+Now that's how you turn an average line plot
+into a clear visual that has a story to tell!
+
+42
+00:03:09,090 --> 00:03:13,870
+Over to you now. Head over to the exercises,
+and gradually customize a plot and become
+
+43
+00:03:13,870 --> 00:03:15,060
+the next Hans Rosling!
+

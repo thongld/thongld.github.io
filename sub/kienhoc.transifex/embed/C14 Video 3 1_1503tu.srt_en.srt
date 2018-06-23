@@ -1,0 +1,872 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/tXt4c7_Uz98
+
+1
+00:00:00,000 --> 00:00:00,012
+
+2
+00:00:00,012 --> 00:00:00,512
+PROF.
+
+3
+00:00:00,512 --> 00:00:02,220
+RAMESH YERRABALLI: So
+in the last module,
+
+4
+00:00:02,220 --> 00:00:11,520
+we saw how stimuli in the external
+world can be captured by our computer
+
+5
+00:00:11,520 --> 00:00:15,000
+as long as it's rendered as a voltage.
+
+6
+00:00:15,000 --> 00:00:18,320
+
+7
+00:00:18,320 --> 00:00:26,140
+So in this module, we'll look at how
+your micro-controller does this job.
+
+8
+00:00:26,140 --> 00:00:30,080
+That is, we'll look at the
+process of setting it up,
+
+9
+00:00:30,080 --> 00:00:34,270
+and then we'll look at the
+process of capturing the samples.
+
+10
+00:00:34,270 --> 00:00:43,420
+So on our micro-controller,
+which is our launchpad,
+
+11
+00:00:43,420 --> 00:00:49,750
+we have several of the GPIO
+pins that play dual roles.
+
+12
+00:00:49,750 --> 00:00:54,020
+So what we mean by the dual role is
+we'll choose their alternate function.
+
+13
+00:00:54,020 --> 00:01:03,170
+So there are 12 pins which
+are called 12 ADC pins which
+
+14
+00:01:03,170 --> 00:01:09,540
+are capable of receiving analog
+inputs, which are as rendered voltages,
+
+15
+00:01:09,540 --> 00:01:17,490
+and then converting them to 12-bit
+numbers using the ADC module on board.
+
+16
+00:01:17,490 --> 00:01:22,480
+So among these 12 ADC pins,
+two pins are the ones we
+
+17
+00:01:22,480 --> 00:01:25,340
+going to focus in this course.
+
+18
+00:01:25,340 --> 00:01:27,440
+One is PE2.
+
+19
+00:01:27,440 --> 00:01:31,140
+And the other is PD3.
+
+20
+00:01:31,140 --> 00:01:35,430
+This is referred to as Analog in 1.
+
+21
+00:01:35,430 --> 00:01:40,350
+And this is referred
+to as the Analog in 4.
+
+22
+00:01:40,350 --> 00:01:44,450
+By the way, we've already
+been using PD3 all along.
+
+23
+00:01:44,450 --> 00:01:48,680
+This is that analog pin that
+is used to measure voltages.
+
+24
+00:01:48,680 --> 00:01:56,320
+This was our way of measuring
+voltage on our circuit all along.
+
+25
+00:01:56,320 --> 00:01:59,760
+But AIN1, which is what
+we're going to use today,
+
+26
+00:01:59,760 --> 00:02:05,800
+is going to be used to measure
+voltages from an input device.
+
+27
+00:02:05,800 --> 00:02:09,320
+So let's get started on
+looking at all the device
+
+28
+00:02:09,320 --> 00:02:18,960
+registers that we have to
+manipulate to make ADC work.
+
+29
+00:02:18,960 --> 00:02:24,870
+So like any device that we've looked
+at, in order to manipulate the device,
+
+30
+00:02:24,870 --> 00:02:29,875
+we have to work with an
+initialization sequence.
+
+31
+00:02:29,875 --> 00:02:32,930
+The initialization
+sequence is done once,
+
+32
+00:02:32,930 --> 00:02:36,260
+or what we call as a set-up sequence.
+
+33
+00:02:36,260 --> 00:02:40,560
+And the setup sequence
+for ADC involves 13 steps.
+
+34
+00:02:40,560 --> 00:02:43,430
+I'm going to summarize
+the first few steps.
+
+35
+00:02:43,430 --> 00:02:49,610
+The first one through five steps
+are things that you already
+
+36
+00:02:49,610 --> 00:02:53,920
+area familiar with, which
+are make sure that the GPIO
+
+37
+00:02:53,920 --> 00:03:04,480
+pin-- here a GPIO pin for port E--
+pin 2-- is properly configured.
+
+38
+00:03:04,480 --> 00:03:09,180
+So which means we turn on the clock.
+
+39
+00:03:09,180 --> 00:03:12,590
+We make it an input.
+
+40
+00:03:12,590 --> 00:03:15,800
+So we manipulated the
+direction register.
+
+41
+00:03:15,800 --> 00:03:20,910
+We enable its alternate function, which
+is the most important thing, which
+
+42
+00:03:20,910 --> 00:03:24,100
+is different from what
+we were doing so far.
+
+43
+00:03:24,100 --> 00:03:27,640
+So we enable its alternate function.
+
+44
+00:03:27,640 --> 00:03:34,520
+And then we (disable) it.
+
+45
+00:03:34,520 --> 00:03:37,960
+DEN, we (disable digital) .
+
+46
+00:03:37,960 --> 00:03:42,580
+And once we are done with
+it, we have another one,
+
+47
+00:03:42,580 --> 00:03:44,390
+which is an AM select function.
+
+48
+00:03:44,390 --> 00:03:47,510
+
+49
+00:03:47,510 --> 00:03:48,680
+We do that.
+
+50
+00:03:48,680 --> 00:03:51,570
+So this is my five-step
+sequence, which is something
+
+51
+00:03:51,570 --> 00:03:54,290
+that you're already familiar with.
+
+52
+00:03:54,290 --> 00:03:59,510
+So what is different to
+make it an analog ADC pin
+
+53
+00:03:59,510 --> 00:04:01,090
+is the next sequence of steps.
+
+54
+00:04:01,090 --> 00:04:10,870
+So our first step that's specific
+to ADC is we turn ADC clock.
+
+55
+00:04:10,870 --> 00:04:13,600
+Like we turn on the clock
+here, we'll turn this one on.
+
+56
+00:04:13,600 --> 00:04:20,880
+We do that by making sure
+that RCGC0 bit 16 is set to 1.
+
+57
+00:04:20,880 --> 00:04:25,630
+So the next step we're going
+to do, which is step seven,
+
+58
+00:04:25,630 --> 00:04:27,530
+is we're going to configure the speed.
+
+59
+00:04:27,530 --> 00:04:30,520
+
+60
+00:04:30,520 --> 00:04:35,970
+And the speed is the speed at which
+we're going to capture our samples.
+
+61
+00:04:35,970 --> 00:04:41,240
+There are multiple speeds ranging from
+1 million samples per second all the way
+
+62
+00:04:41,240 --> 00:04:44,580
+to 125K samples per second.
+
+63
+00:04:44,580 --> 00:04:48,570
+And we effect that--
+we make that change--
+
+64
+00:04:48,570 --> 00:04:54,695
+by making sure that we
+manipulate these two bits.
+
+65
+00:04:54,695 --> 00:04:56,570
+And for now, I'm going
+to make these two bits
+
+66
+00:04:56,570 --> 00:05:01,950
+0 0, which says that
+I've chosen the 125K.
+
+67
+00:05:01,950 --> 00:05:05,370
+So that's 125K samples
+per second, which is
+
+68
+00:05:05,370 --> 00:05:08,900
+the minimum speed at which I can sample.
+
+69
+00:05:08,900 --> 00:05:13,880
+The eighth step, then, is our sequencer.
+
+70
+00:05:13,880 --> 00:05:15,530
+We have four sequencers.
+
+71
+00:05:15,530 --> 00:05:16,950
+We don't have to worry about them.
+
+72
+00:05:16,950 --> 00:05:18,980
+We're using sequencer 3.
+
+73
+00:05:18,980 --> 00:05:22,270
+Sequencer 3 is chosen.
+
+74
+00:05:22,270 --> 00:05:25,740
+And we also set the priority of it.
+
+75
+00:05:25,740 --> 00:05:31,770
+So because there are four sequencers,
+the priority is set by a two-bit number
+
+76
+00:05:31,770 --> 00:05:32,560
+here.
+
+77
+00:05:32,560 --> 00:05:39,530
+And we're making it the highest
+priority by making it 0 among the four.
+
+78
+00:05:39,530 --> 00:05:46,960
+The step nine is while I'm
+configuring the rest of the system,
+
+79
+00:05:46,960 --> 00:05:48,340
+I'm going to disable.
+
+80
+00:05:48,340 --> 00:05:52,650
+
+81
+00:05:52,650 --> 00:05:58,130
+And when I'm done at the end, which
+is my last step, which is step 13,
+
+82
+00:05:58,130 --> 00:06:01,180
+I will enable.
+
+83
+00:06:01,180 --> 00:06:06,260
+This way, I'm making sure
+that while I'm configuring it,
+
+84
+00:06:06,260 --> 00:06:11,490
+I can make sure that the
+sampling doesn't occur.
+
+85
+00:06:11,490 --> 00:06:16,140
+So I do that by manipulating this
+bit, which is my activation bit.
+
+86
+00:06:16,140 --> 00:06:18,450
+So I turn this off.
+
+87
+00:06:18,450 --> 00:06:21,510
+And I turn it on to affect that.
+
+88
+00:06:21,510 --> 00:06:25,550
+So it goes from 0 to 1 eventually.
+
+89
+00:06:25,550 --> 00:06:36,580
+So our next step is step 10,
+which is we choose the trigger.
+
+90
+00:06:36,580 --> 00:06:41,180
+That is, when we have
+analog input connected,
+
+91
+00:06:41,180 --> 00:06:43,420
+it can be triggered
+by various mechanisms.
+
+92
+00:06:43,420 --> 00:06:50,620
+But in this class, we're going to
+use a software-initiated trigger.
+
+93
+00:06:50,620 --> 00:06:53,270
+
+94
+00:06:53,270 --> 00:06:57,300
+So it means that I will not
+expect any interrupt or anything.
+
+95
+00:06:57,300 --> 00:07:02,140
+I'm simply going to tell when
+I want to choose to sample.
+
+96
+00:07:02,140 --> 00:07:06,880
+And when the sampling is
+done, I will read it myself.
+
+97
+00:07:06,880 --> 00:07:12,840
+So I do that by manipulating
+these four bits here.
+
+98
+00:07:12,840 --> 00:07:16,900
+And these four bits for us is going
+to be the simplest case, which
+
+99
+00:07:16,900 --> 00:07:24,000
+is all 0s, which says that I'm
+using software as a trigger.
+
+100
+00:07:24,000 --> 00:07:24,500
+PROF.
+
+101
+00:07:24,500 --> 00:07:26,541
+JONATHAN VALVANO: Professor
+Yerraballi, how do we
+
+102
+00:07:26,541 --> 00:07:28,150
+tell it which channel to sample?
+
+103
+00:07:28,150 --> 00:07:28,650
+PROF.
+
+104
+00:07:28,650 --> 00:07:31,710
+RAMESH YERRABALLI: OK, so everything
+we did here doesn't really
+
+105
+00:07:31,710 --> 00:07:34,710
+tell us anything about
+what channel we're using.
+
+106
+00:07:34,710 --> 00:07:39,700
+So our next step will
+involve exactly that,
+
+107
+00:07:39,700 --> 00:07:48,590
+which is my step 11, which says
+that I want to choose channel 1.
+
+108
+00:07:48,590 --> 00:07:50,290
+Remember, there are 12 channels.
+
+109
+00:07:50,290 --> 00:07:54,560
+They go from 0 through 11.
+
+110
+00:07:54,560 --> 00:07:57,920
+And so I'm going to choose
+channel 1 out of those.
+
+111
+00:07:57,920 --> 00:08:00,220
+So 1 is the I'm trying to choose.
+
+112
+00:08:00,220 --> 00:08:02,390
+So I need to specify that.
+
+113
+00:08:02,390 --> 00:08:08,300
+And I do that by
+writing a 0, 0 0 1 here.
+
+114
+00:08:08,300 --> 00:08:11,050
+And that's my channel select.
+
+115
+00:08:11,050 --> 00:08:14,940
+Channel is AIN1.
+
+116
+00:08:14,940 --> 00:08:17,045
+
+117
+00:08:17,045 --> 00:08:17,545
+PROF.
+
+118
+00:08:17,545 --> 00:08:20,370
+JONATHAN VALVANO: Now is channel
+1 always connected to PE2?
+
+119
+00:08:20,370 --> 00:08:21,767
+Or is that some kind of choice?
+
+120
+00:08:21,767 --> 00:08:22,267
+PROF.
+
+121
+00:08:22,267 --> 00:08:26,650
+RAMESH YERRABALLI: It is
+always connected to PE2.
+
+122
+00:08:26,650 --> 00:08:27,640
+And it's hard-wired.
+
+123
+00:08:27,640 --> 00:08:33,250
+And that's why we have selected
+the alternate function for PE2
+
+124
+00:08:33,250 --> 00:08:37,525
+to be its alternate function,
+which happens to be analog AIN1.
+
+125
+00:08:37,525 --> 00:08:38,025
+PROF.
+
+126
+00:08:38,025 --> 00:08:39,200
+JONATHAN VALVANO: Ah, OK.
+
+127
+00:08:39,200 --> 00:08:39,880
+One more step.
+
+128
+00:08:39,880 --> 00:08:40,380
+PROF.
+
+129
+00:08:40,380 --> 00:08:45,490
+RAMESH YERRABALLI: So we have
+one last step left, step 12,
+
+130
+00:08:45,490 --> 00:08:50,090
+which involves manipulating
+these four bits.
+
+131
+00:08:50,090 --> 00:08:56,980
+The only bit of real interest to us is
+this bit here, which is the IE0 bit.
+
+132
+00:08:56,980 --> 00:09:07,300
+And what it's telling us is that we want
+a flag to be set when the sampling is
+
+133
+00:09:07,300 --> 00:09:15,910
+complete-- set flag on sample capture.
+
+134
+00:09:15,910 --> 00:09:18,680
+
+135
+00:09:18,680 --> 00:09:29,470
+The other bits, for now, are going
+to be 0 here, a 1 here, and a 0 here.
+
+136
+00:09:29,470 --> 00:09:33,270
+So that's going to be 0
+1 1 0 into this, which
+
+137
+00:09:33,270 --> 00:09:35,292
+is a 6 is what we're going to write.
+
+138
+00:09:35,292 --> 00:09:35,792
+PROF.
+
+139
+00:09:35,792 --> 00:09:36,990
+JONATHAN VALVANO: So we do this once.
+
+140
+00:09:36,990 --> 00:09:38,823
+And so next, we're going
+to have to show you
+
+141
+00:09:38,823 --> 00:09:42,970
+how to write software that actually
+does the conversion-- starts, waits
+
+142
+00:09:42,970 --> 00:09:44,787
+for it to be done, and captures it.
+
+143
+00:09:44,787 --> 00:09:45,287
+PROF.
+
+144
+00:09:45,287 --> 00:09:47,410
+RAMESH YERRABALLI: That is correct.
+
+145
+00:09:47,410 --> 00:09:49,940
+So we looked at the
+initialization ritual.
+
+146
+00:09:49,940 --> 00:09:59,640
+Let's look at the sample
+capture procedure.
+
+147
+00:09:59,640 --> 00:10:04,040
+So to capture a sample, I'm
+going to follow this logic, which
+
+148
+00:10:04,040 --> 00:10:13,720
+says start with initialization after
+sampling by writing to this bit a 1.
+
+149
+00:10:13,720 --> 00:10:15,150
+So I make that bit a 1.
+
+150
+00:10:15,150 --> 00:10:18,600
+
+151
+00:10:18,600 --> 00:10:24,760
+And then the ADC device
+starts its capturing.
+
+152
+00:10:24,760 --> 00:10:27,000
+And then I'm going to check for a flag.
+
+153
+00:10:27,000 --> 00:10:37,270
+So I'm going to check whether RIS bit
+3 is a 0 to indicate that it is Busy.
+
+154
+00:10:37,270 --> 00:10:43,760
+So if it's busy, I keep
+checking back again and again.
+
+155
+00:10:43,760 --> 00:10:52,290
+And when it's 1, it tells me
+that the capture is complete.
+
+156
+00:10:52,290 --> 00:10:56,120
+So once the capture is complete,
+I'm going to read the data.
+
+157
+00:10:56,120 --> 00:11:06,080
+So I will read data, which means
+that I've done this busy step, which
+
+158
+00:11:06,080 --> 00:11:10,550
+I found this to be 0 for a good bit
+of time and eventually it became a 1.
+
+159
+00:11:10,550 --> 00:11:13,750
+So I come down here and then
+I'm going to read this data.
+
+160
+00:11:13,750 --> 00:11:14,645
+So read data.
+
+161
+00:11:14,645 --> 00:11:18,700
+
+162
+00:11:18,700 --> 00:11:26,520
+So the last thing I need to do is
+to make sure that I clear the flag.
+
+163
+00:11:26,520 --> 00:11:31,800
+I clear this flag by writing a 1 here.
+
+164
+00:11:31,800 --> 00:11:35,700
+So the act of writing a
+1 there will make sure
+
+165
+00:11:35,700 --> 00:11:42,020
+that this flag goes back to a 0
+so I'm ready for the next sample.
+
+166
+00:11:42,020 --> 00:11:42,868
+And then I return.
+
+167
+00:11:42,868 --> 00:11:43,368
+PROF.
+
+168
+00:11:43,368 --> 00:11:44,868
+JONATHAN VALVANO: I have a question.
+
+169
+00:11:44,868 --> 00:11:47,120
+Do these registers act like memory?
+
+170
+00:11:47,120 --> 00:11:49,685
+In other words, if I write a
+1 to them, it will become a 1?
+
+171
+00:11:49,685 --> 00:11:52,630
+And if I write a 0, it will become a 0?
+
+172
+00:11:52,630 --> 00:11:53,130
+PROF.
+
+173
+00:11:53,130 --> 00:11:56,670
+RAMESH YERRABALLI: Well, these
+are really not memory registers.
+
+174
+00:11:56,670 --> 00:11:57,915
+These are device registers.
+
+175
+00:11:57,915 --> 00:11:58,415
+PROF.
+
+176
+00:11:58,415 --> 00:11:59,080
+JONATHAN VALVANO: Oh.
+
+177
+00:11:59,080 --> 00:11:59,162
+PROF.
+
+178
+00:11:59,162 --> 00:12:01,365
+RAMESH YERRABALLI: So they
+don't behave like memory.
+
+179
+00:12:01,365 --> 00:12:04,530
+They behave more like inputs
+and outputs to a device.
+
+180
+00:12:04,530 --> 00:12:05,030
+PROF.
+
+181
+00:12:05,030 --> 00:12:07,030
+JONATHAN VALVANO: So if
+I write to one register,
+
+182
+00:12:07,030 --> 00:12:08,620
+it clears a bit in another register?
+
+183
+00:12:08,620 --> 00:12:08,742
+PROF.
+
+184
+00:12:08,742 --> 00:12:09,742
+RAMESH YERRABALLI: Yeah.
+
+185
+00:12:09,742 --> 00:12:12,832
+Because it's a memory-mapped I/O.
+
+186
+00:12:12,832 --> 00:12:13,332
+PROF.
+
+187
+00:12:13,332 --> 00:12:14,350
+JONATHAN VALVANO: I see.
+
+188
+00:12:14,350 --> 00:12:14,850
+Cool.
+
+189
+00:12:14,850 --> 00:12:19,050
+
+190
+00:12:19,050 --> 00:12:19,550
+All right.
+
+191
+00:12:19,550 --> 00:12:20,630
+Enough talking.
+
+192
+00:12:20,630 --> 00:12:21,330
+Let's build it.
+
+193
+00:12:21,330 --> 00:12:21,830
+PROF.
+
+194
+00:12:21,830 --> 00:12:23,180
+RAMESH YERRABALLI: All right.
+
+195
+00:12:23,180 --> 00:12:23,525

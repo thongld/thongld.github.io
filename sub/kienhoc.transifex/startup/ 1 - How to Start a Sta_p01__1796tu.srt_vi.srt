@@ -1,0 +1,1061 @@
+1
+00:00:00,740 --> 00:00:01,240
+Chào mừng các bạn.
+
+2
+00:00:02,298 --> 00:00:04,217
+Cái này bật được không vậy?
+
+3
+00:00:04,217 --> 00:00:07,381
+Có thể, ồ được rồi.
+
+4
+00:00:07,381 --> 00:00:09,090
+>> Mọi người ở phía sau có nghe được không?
+
+5
+00:00:09,090 --> 00:00:10,660
+>> Các bạn có nghe thấy tôi nói không?
+
+6
+00:00:10,660 --> 00:00:11,678
+Ủa mic bật chưa?
+
+7
+00:00:11,678 --> 00:00:18,038
+À chưa, anh có thể nhờ họ bật lên.
+
+8
+00:00:18,038 --> 00:00:19,490
+Có lẽ chúng ta nên... A được rồi.
+
+9
+00:00:19,490 --> 00:00:20,657
+Được rồi
+
+10
+00:00:20,657 --> 00:00:23,618
+Có lẽ chúng ta nên kiếm một
+hội trường lớn hơn nữa, để rồi xem.
+
+11
+00:00:23,618 --> 00:00:25,270
+Chào mừng các bạn đến với khóa học khởi nghiệp.
+
+12
+00:00:25,270 --> 00:00:25,950
+Tôi là Sam Altman
+
+13
+00:00:25,950 --> 00:00:27,930
+Tôi là chủ tịch của Y Combinator.
+
+14
+00:00:27,930 --> 00:00:29,780
+Chín năm trước, tôi là một sinh viên của trường Stanford và
+
+15
+00:00:29,780 --> 00:00:31,630
+sau đó tôi đã bỏ học để khởi nghiệp
+
+16
+00:00:31,630 --> 00:00:32,990
+Và vài năm qua tôi đã trở thành một nhà đầu tư.
+
+17
+00:00:34,010 --> 00:00:36,140
+Tại YC, chúng tôi hướng dẫn mọi người làm thế nào để
+
+18
+00:00:36,140 --> 00:00:38,440
+bắt đầu khởi nghiệp đã 9 năm nay.
+
+19
+00:00:38,440 --> 00:00:39,930
+Hầu hết các hướng dẫn được thực hành luôn và
+
+20
+00:00:39,930 --> 00:00:40,875
+cụ thể với từng công ty khởi nghiệp.
+
+21
+00:00:42,240 --> 00:00:45,180
+Nhưng 30% kiến thức này có thể
+áp dụng trong trường hợp chung.
+
+22
+00:00:45,180 --> 00:00:47,340
+Và chúng tôi nghĩ rằng chúng tôi có thể
+
+23
+00:00:47,340 --> 00:00:49,210
+giảng dạy 30% kiến thức đó ở lớp này.
+
+24
+00:00:49,210 --> 00:00:50,890
+Ngay cả khi chỉ được 30% chặng đường
+
+25
+00:00:50,890 --> 00:00:52,600
+thì hi vọng nó vẫn thật sự có ích cho các bạn.
+
+26
+00:00:53,800 --> 00:00:55,750
+Chúng tôi đã dạy rất nhiều về vấn đề này ở YC,
+
+27
+00:00:55,750 --> 00:00:56,520
+nhưng tất cả đều không được công khai.
+
+28
+00:00:56,520 --> 00:00:58,440
+Đây là lần đầu tiên  mà rất nhiều điều chúng tôi
+
+29
+00:00:58,440 --> 00:01:00,370
+dạy ở YC sẽ được công khai.
+
+30
+00:01:00,370 --> 00:01:02,360
+Những diễn giả giỏi nhất của chúng tôi đã được mời
+
+31
+00:01:02,360 --> 00:01:03,809
+đến diễn thuyết như họ vẫn làm ở YC.
+
+32
+00:01:04,870 --> 00:01:05,960
+Hiện tại chúng tôi đã tài trợ cho 720 công ty 
+
+33
+00:01:05,960 --> 00:01:07,620
+Và chúng tôi chắc chắn rằng
+
+34
+00:01:07,620 --> 00:01:09,460
+những lời khuyên này rất bổ ích.
+
+35
+00:01:10,960 --> 00:01:13,000
+Chúng tôi chưa thể tài trợ cho
+tất cả các công ty khởi nghiệp,
+
+36
+00:01:13,000 --> 00:01:16,710
+nhưng hi vọng chúng tôi có thể
+phổ biến những lời khuyên này.
+
+37
+00:01:16,710 --> 00:01:19,300
+Những diễn giả được mời tới sẽ dạy 17 trong 20 bài.
+
+38
+00:01:19,300 --> 00:01:20,010
+Tôi chỉ phụ trách 3 bài.
+
+39
+00:01:21,200 --> 00:01:22,600
+Tính cả YC, 
+
+40
+00:01:22,600 --> 00:01:25,820
+mọi diễn giả được mời đều đã từng tham gia thành lập 
+
+41
+00:01:25,820 --> 00:01:26,840
+một doanh nghiệp trị giá hơn một tỷ đô. 
+
+42
+00:01:27,860 --> 00:01:30,110
+Vì vậy những bài học sẽ không chỉ là lý thuyết suông
+
+43
+00:01:30,110 --> 00:01:33,680
+mà đều là kinh nghiệm đúc kết
+từ những người từng trải.
+
+44
+00:01:33,680 --> 00:01:34,270
+Tất cả những lời khuyên
+
+45
+00:01:34,270 --> 00:01:37,340
+trong lớp này đều hướng tới
+những người muốn lập doanh nghiệp
+
+46
+00:01:37,340 --> 00:01:39,360
+với mục tiêu là đạt tăng trưởng vượt bậc,
+
+47
+00:01:39,360 --> 00:01:41,700
+rồi sau cùng tạo ra một công ty cực kì lớn.
+
+48
+00:01:41,700 --> 00:01:43,360
+Có nhiều điều không thể áp dụng
+cho những trường hợp khác,
+
+49
+00:01:43,360 --> 00:01:44,950
+nên tôi muốn cảnh báo trước
+
+50
+00:01:44,950 --> 00:01:45,610
+rằng nếu bạn cố gắng
+
+51
+00:01:45,610 --> 00:01:47,730
+áp dụng những thứ này vào các công ty lớn
+
+52
+00:01:47,730 --> 00:01:49,640
+hoặc các dự án không phải khởi nghiệp
+thì sẽ không có tác dụng đâu.
+
+53
+00:01:49,640 --> 00:01:51,130
+Nhưng dù vậy chúng vẫn rất đáng xem xét.
+
+54
+00:01:51,130 --> 00:01:52,720
+Tôi thực sự nghĩ rằng khởi nghiệp
+
+55
+00:01:52,720 --> 00:01:55,060
+là hướng đi của tương lai,
+và rất đáng để tìm hiểu.
+
+56
+00:01:55,060 --> 00:01:56,470
+Nhưng công ty khởi nghiệp lại rất khác
+
+57
+00:01:56,470 --> 00:01:57,300
+so với các công ty bình thường.
+
+58
+00:01:58,970 --> 00:02:00,040
+Nên trong các buổi học hôm nay và thứ 5,
+
+59
+00:02:00,040 --> 00:02:02,660
+tôi sẽ cố gắng nêu tổng quan về 4 lĩnh vực
+
+60
+00:02:02,660 --> 00:02:04,580
+mà bạn cần phải làm thật tốt để
+
+61
+00:02:04,580 --> 00:02:06,930
+tăng tối đa khả năng thành công khi khởi nghiệp.
+
+62
+00:02:06,930 --> 00:02:08,490
+Và trong suốt khóa học, 
+các diễn giả khách mời
+
+63
+00:02:08,490 --> 00:02:10,750
+sẽ giúp các bạn đi sâu hơn vào các chi tiết.
+
+64
+00:02:12,020 --> 00:02:14,480
+4 lĩnh vực chính bạn cần là: một ý tưởng tốt,
+
+65
+00:02:14,480 --> 00:02:16,660
+một sản phẩm tốt, một đội ngũ tốt,
+và khâu thực hiện tốt.
+
+66
+00:02:18,020 --> 00:02:20,650
+Những cái này hơi chồng chéo nhau,
+tôi sẽ nói kĩ hơn về từng cái
+
+67
+00:02:20,650 --> 00:02:23,130
+để các bạn hiểu rõ hơn về bản chất của nó.
+
+68
+00:02:23,130 --> 00:02:25,600
+Nhưng các bạn vẫn có thể thất bại.
+
+69
+00:02:25,600 --> 00:02:28,230
+Thành quả đôi khi là kết quả của phép nhân
+
+70
+00:02:28,230 --> 00:02:31,300
+ý tưởng với sản phẩm, cách thực hiện,
+đội ngũ và may mắn.
+
+71
+00:02:31,300 --> 00:02:34,010
+Trong đó hệ số may mắn
+nằm ngẫu nhiên giữa 0 và 10.000.
+
+72
+00:02:34,010 --> 00:02:35,300
+Theo nghĩa đen đúng là vậy.
+
+73
+00:02:35,300 --> 00:02:37,500
+Nhưng nếu bạn làm thật tốt ở cả bốn lĩnh vực mà
+
+74
+00:02:37,500 --> 00:02:39,205
+bạn kiểm soát được, khả năng cao là
+
+75
+00:02:39,205 --> 00:02:40,637
+bạn sẽ đạt một mức thành công nhất định.
+
+76
+00:02:41,800 --> 00:02:43,771
+Một trong những thứ hay ho ở khởi nghiệp là
+
+77
+00:02:43,771 --> 00:02:46,590
+nó là một sân chơi công bằng đến bất ngờ.
+
+78
+00:02:46,590 --> 00:02:48,290
+Những người trẻ chưa có kinh nghiệm cũng làm được.
+
+79
+00:02:48,290 --> 00:02:50,500
+Người lớn tuổi kinh nghiệm đầy mình
+cũng hoàn toàn có thể làm được.
+
+80
+00:02:50,500 --> 00:02:52,885
+Và có một điều tôi đặc biệt thích về khởi nghiệp là
+
+81
+00:02:52,885 --> 00:02:55,700
+một số thứ có vẻ tồi tệ ở các công việc khác
+
+82
+00:02:55,700 --> 00:02:58,720
+như không tiền bạc, không danh tiếng lại là
+
+83
+00:02:58,720 --> 00:03:00,875
+những tài sản quý giá khi bắt đầu khởi nghiệp.
+
+84
+00:03:02,620 --> 00:03:04,340
+Trước khi chúng ta tìm hiểu sâu về cách thức,
+
+85
+00:03:04,340 --> 00:03:06,850
+tôi muốn nói đến lý do
+bạn nên khởi nghiệp trước.
+
+86
+00:03:06,850 --> 00:03:09,460
+Tôi cũng hơi ngập ngừng
+khi quyết định mở lớp học này, 
+
+87
+00:03:09,460 --> 00:03:11,110
+bởi vì bạn không bao giờ nên khởi nghiệp
+
+88
+00:03:11,110 --> 00:03:12,520
+chỉ vì nó hay ho.
+
+89
+00:03:12,520 --> 00:03:14,530
+Có rất nhiều cách dễ hơn
+để trở nên giàu có và
+
+90
+00:03:14,530 --> 00:03:16,220
+tất cả những ai khởi nghiệp đều nói rằng
+
+91
+00:03:16,220 --> 00:03:18,610
+họ không thể tưởng tượng được khởi nghiệp
+
+92
+00:03:18,610 --> 00:03:19,360
+lại gian nan khắc nghiệt đến vậy.
+
+93
+00:03:19,360 --> 00:03:22,330
+Bạn chỉ nên khởi nghiệp
+nếu bạn thực sự cảm thấy
+
+94
+00:03:22,330 --> 00:03:23,860
+bị thu hút bởi một vấn đề cụ thể nào đó.
+
+95
+00:03:23,860 --> 00:03:25,410
+Và bạn nghĩ rằng sáng lập một công ty
+
+96
+00:03:25,410 --> 00:03:27,120
+là cách tốt nhất để giải quyết vấn đề đó.
+
+97
+00:03:27,120 --> 00:03:29,090
+Niềm đam mê cụ thể nên
+
+98
+00:03:29,090 --> 00:03:30,510
+là lí do dẫn lối cho khởi nghiệp.
+
+99
+00:03:30,510 --> 00:03:31,240
+Trên thực tế,
+
+100
+00:03:31,240 --> 00:03:33,340
+tất cả các công ty thành công lớn ở YC
+đều tuân theo nguyên tắc này.
+
+101
+00:03:34,520 --> 00:03:36,510
+Nửa bài học sau của ngày hôm nay
+
+102
+00:03:36,510 --> 00:03:38,705
+Dustin Moskovitz, nhà đồng sáng lập
+Facebook và Asana
+
+103
+00:03:38,705 --> 00:03:40,330
+sẽ đứng lớp và nói về
+
+104
+00:03:40,330 --> 00:03:42,420
+lý do bạn nên khởi nghiệp.
+
+105
+00:03:42,420 --> 00:03:43,564
+Chúng tôi rất ngạc nhiên
+
+106
+00:03:43,564 --> 00:03:45,228
+khi lớp học nhận được sự quan tâm đông đảo của mọi người.
+
+107
+00:03:45,228 --> 00:03:45,930
+Vì vậy chúng tôi muốn dành nhiều thời gian
+
+108
+00:03:45,930 --> 00:03:46,890
+để nói về lý do khởi nghiệp.
+
+109
+00:03:48,570 --> 00:03:49,150
+OK.
+
+110
+00:03:49,150 --> 00:03:50,190
+Trong bốn phần chính thì
+
+111
+00:03:50,190 --> 00:03:50,770
+trước tiên là phải có ý tưởng tốt.
+
+112
+00:03:52,060 --> 00:03:52,980
+Vài năm gần đây
+
+113
+00:03:52,980 --> 00:03:55,640
+người ta hay nói rằng ý tưởng không quan trọng.
+
+114
+00:03:55,640 --> 00:03:58,310
+Chẳng hay ho gì khi mất quá nhiều thời gian
+
+115
+00:03:58,310 --> 00:04:00,010
+để suy nghĩ về ý tưởng khởi nghiệp.
+
+116
+00:04:00,010 --> 00:04:01,540
+Người ta cho rằng bạn chỉ cần cứ thế bắt đầu.
+
+117
+00:04:01,540 --> 00:04:02,280
+Thử đủ mọi cách
+
+118
+00:04:02,280 --> 00:04:03,770
+rồi xem xét xem cái nào khả thi.
+
+119
+00:04:03,770 --> 00:04:05,400
+Và không cần phải lăn tăn là
+
+120
+00:04:05,400 --> 00:04:06,600
+liệu nó có giá trị gì
+nếu như thành công không.
+
+121
+00:04:07,760 --> 00:04:08,810
+Họ cho rằng chuyển hướng ý tưởng là rất tốt.
+
+122
+00:04:08,810 --> 00:04:09,580
+Càng chuyển hướng nhiều càng tốt.
+
+123
+00:04:11,420 --> 00:04:13,380
+Điều này không phải hoàn toàn là sai.
+
+124
+00:04:13,380 --> 00:04:14,240
+Mọi thứ đều có thể biến hóa
+
+125
+00:04:14,240 --> 00:04:15,930
+ngoài khả năng dự đoán của chúng ta.
+
+126
+00:04:15,930 --> 00:04:17,850
+Và suy nghĩ mãi thì cũng chỉ đến thế thôi
+
+127
+00:04:17,850 --> 00:04:18,980
+nếu bạn không thực sự đưa sản phẩm
+
+128
+00:04:18,980 --> 00:04:19,760
+tới tay người dùng.
+
+129
+00:04:21,290 --> 00:04:22,400
+Làm tốt khâu thực hiện
+
+130
+00:04:22,400 --> 00:04:24,170
+còn quan trọng gấp ít nhất 10 lần
+
+131
+00:04:24,170 --> 00:04:25,490
+và khó gấp trăm lần nghĩ ra ý tưởng tốt.
+
+132
+00:04:26,630 --> 00:04:28,270
+Nhưng xu hướng này đã quá sai lệch rồi.
+
+133
+00:04:28,270 --> 00:04:30,990
+Ý tưởng tệ thì vẫn là tệ mà thôi.
+
+134
+00:04:30,990 --> 00:04:32,510
+Trong thế giới sẵn sàng chuyển hướng như ngày nay,
+
+135
+00:04:32,510 --> 00:04:34,660
+làm như vậy thực sự chưa được tối ưu.
+
+136
+00:04:34,660 --> 00:04:36,660
+Một ý tưởng tồi thì thực hiện thật tốt
+
+137
+00:04:36,660 --> 00:04:38,340
+cũng chẳng đi đến đâu được.
+
+138
+00:04:38,340 --> 00:04:40,360
+Đương nhiên vẫn có những ngoại lệ.
+
+139
+00:04:40,360 --> 00:04:41,640
+Nhưng hầu hết các công ty đều khởi đầu bằng
+
+140
+00:04:41,640 --> 00:04:44,470
+một ý tưởng hay chứ không phải chuyển hướng.
+
+141
+00:04:44,470 --> 00:04:47,130
+Nếu bạn để ý những ý tưởng
+chuyển hướng thành công,
+
+142
+00:04:47,130 --> 00:04:48,690
+đó thường là chuyển sang một vấn đề mà
+
+143
+00:04:48,690 --> 00:04:50,810
+bản thân các nhà sáng lập quan tâm
+chứ không phải bịa đại ra một ý tưởng.
+
+144
+00:04:51,980 --> 00:04:54,060
+Aribnb được thành lập vì Brian Chesky
+
+145
+00:04:54,060 --> 00:04:56,990
+không thể trả tiền thuê nhà,
+nhưng nhà anh ấy lại có chỗ trống.
+
+146
+00:04:56,990 --> 00:04:57,800
+Một cách tổng quát,
+
+147
+00:04:57,800 --> 00:04:59,860
+nhìn vào lịch sử những cú chuyển hướng,
+
+148
+00:04:59,860 --> 00:05:00,910
+ta thấy họ thường không trở thành những công ty lớn.
+
+149
+00:05:02,180 --> 00:05:03,970
+Tôi cũng từng tin rằng
+ý tưởng không quan trọng đến vậy,
+
+150
+00:05:03,970 --> 00:05:06,490
+nhưng giờ thì tôi chắc chắn là mình đã sai rồi.
+
+151
+00:05:08,170 --> 00:05:09,180
+Định nghĩa về ý tưởng,
+
+152
+00:05:09,180 --> 00:05:11,610
+như chúng ta đã nói, nó rất là rộng.
+
+153
+00:05:11,610 --> 00:05:13,930
+Nó bao gồm quy mô và tiềm lực 
+phát triển của thị trường đó,
+
+154
+00:05:13,930 --> 00:05:15,520
+chiến lược phát triển của công ty,
+
+155
+00:05:15,520 --> 00:05:17,838
+chiến lược ứng phó đối thủ cạnh tranh, v.v.
+
+156
+00:05:17,838 --> 00:05:18,810
+Khi đánh giá một ý tưởng,
+
+157
+00:05:18,810 --> 00:05:20,710
+bạn cần phải xem xét tất cả các hạng mục trên
+
+158
+00:05:20,710 --> 00:05:21,450
+chứ không chỉ là sản phẩm.
+
+159
+00:05:23,390 --> 00:05:25,500
+Nếu thành công, bạn sẽ làm việc với nó
+
+160
+00:05:25,500 --> 00:05:26,630
+khoảng chừng 10 năm.
+
+161
+00:05:26,630 --> 00:05:28,620
+Vậy bạn nên dành một khoảng thời gian
+
+162
+00:05:28,620 --> 00:05:29,910
+suy nghĩ về các giá trị lâu dài
+
+163
+00:05:29,910 --> 00:05:31,170
+để có thể duy trì khả năng cạnh tranh.
+
+164
+00:05:32,340 --> 00:05:34,770
+Mặc dù bản thân các kế hoạch không có giá trị gì,
+
+165
+00:05:34,770 --> 00:05:37,410
+quá trình lên kế hoạch lại rất giá trị và
+
+166
+00:05:37,410 --> 00:05:38,810
+hầu như không thấy có ở các dự án khởi nghiệp ngày nay.
+
+167
+00:05:39,940 --> 00:05:41,170
+Ở đâu cũng vậy, rất ít người biết
+
+168
+00:05:41,170 --> 00:05:43,612
+nhìn xa trông rộng, nhưng
+trong khởi nghiệp thì càng ít.
+
+169
+00:05:43,612 --> 00:05:44,900
+Nếu bạn làm được, đó sẽ là một lợi thế lớn.
+
+170
+00:05:46,550 --> 00:05:48,570
+Hãy nhớ rằng các ý tưởng luôn phát triển
+
+171
+00:05:48,570 --> 00:05:49,620
+và trở nên tham vọng hơn trong quá trình thực hiện.
+
+172
+00:05:49,620 --> 00:05:52,620
+Đương nhiên bạn cũng không cần thiết
+phải vạch rõ mọi chi tiết ngay từ đầu,
+
+173
+00:05:52,620 --> 00:05:54,630
+trên con đường tiến tới thống lĩnh thế giới.
+
+174
+00:05:54,630 --> 00:05:56,360
+Nhưng bạn thực sự cần một 
+cốt lõi tốt dể khởi đầu.
+
+175
+00:05:56,360 --> 00:05:58,930
+Bạn cần thứ gì đó có thể phát triển
+
+176
+00:05:58,930 --> 00:05:59,630
+theo những cách thú vị
+
+177
+00:06:00,770 --> 00:06:02,340
+Trong quá trình suy nghĩ về các ý tưởng,
+
+178
+00:06:02,340 --> 00:06:03,830
+một sai lầm các nhà sáng lập trẻ rất hay mắc là
+
+179
+00:06:03,830 --> 00:06:06,560
+sau này bạn cần phải xây dựng được
+
+180
+00:06:06,560 --> 00:06:08,860
+một doanh nghiệp mà không ai có thể bắt chước.
+
+181
+00:06:08,860 --> 00:06:10,160
+Đây là một phần quan trọng của ý tưởng tốt.
+
+182
+00:06:10,160 --> 00:06:14,536
+Tôi muốn nhắc lại điều này
+
+183
+00:06:14,536 --> 00:06:17,040
+vì nó thực sự rất quan trọng.
+
+184
+00:06:17,040 --> 00:06:18,200
+Trước tiên là phải có ý tưởng đã
+
+185
+00:06:18,200 --> 00:06:19,820
+rồi hãy nghĩ tới khởi nghiệp.
+
+186
+00:06:19,820 --> 00:06:21,350
+Hãy chờ đợi cho tới khi bạn nảy ra một ý tưởng
+
+187
+00:06:21,350 --> 00:06:23,150
+mà bạn cảm thấy thôi thúc muốn khám phá.
+
+188
+00:06:24,160 --> 00:06:24,940
+Đây cũng là cách để bạn chọn
+
+189
+00:06:24,940 --> 00:06:26,980
+khi có quá nhiều ý tưởng cùng một lúc.
+
+190
+00:06:26,980 --> 00:06:28,745
+Nếu bạn có một vài ý tưởng đều có vẻ khá tốt,
+
+191
+00:06:28,745 --> 00:06:31,800
+hãy chọn ý tưởng mà bạn hay nghĩ tới nhất
+
+192
+00:06:31,800 --> 00:06:33,820
+khi bạn không cố gắng nghĩ về công việc.
+
+193
+00:06:33,820 --> 00:06:35,940
+Các nhà sáng lập thường xuyên nói rằng
+
+194
+00:06:35,940 --> 00:06:38,070
+họ ước gì hồi đó họ đã đợi đến khi nảy ra ý tưởng
+
+195
+00:06:38,070 --> 00:06:39,460
+mà mình thật sự thích rồi mới khởi nghiệp.
+
+196
+00:06:41,390 --> 00:06:43,000
+Một cái nhìn khác về vấn đề này là các công ty
+
+197
+00:06:43,000 --> 00:06:45,550
+thành công nhất gần như luôn
+bám sát sứ mệnh của mình.
+
+198
+00:06:45,550 --> 00:06:47,400
+Muốn hướng cho một nhóm đông người đạt tới
+
+199
+00:06:47,400 --> 00:06:49,550
+độ tập trung và hiệu suất làm việc tối đa
+
+200
+00:06:49,550 --> 00:06:51,230
+để khởi nghiệp thành công là rất khó,
+
+201
+00:06:52,230 --> 00:06:54,660
+trừ khi công ty coi đó là một sứ mệnh cực kì quan trọng.
+
+202
+00:06:54,660 --> 00:06:57,620
+Và nếu không có ý tưởng nền tảng tốt thì
+
+203
+00:06:57,620 --> 00:06:58,220
+việc đó vô cùng khó khăn.
+
+204
+00:07:01,340 --> 00:07:03,000
+Một lợi ích nữa của các ý tưởng bám sát sứ mệnh
+
+205
+00:07:03,000 --> 00:07:05,550
+là bản thân bạn sẽ luôn tận tụy thực hiện ý tưởng đó.
+
+206
+00:07:06,900 --> 00:07:07,620
+Sẽ mất hàng năm trời,
+
+207
+00:07:07,620 --> 00:07:10,620
+thường là cả thập kỉ để gây dựng
+công ty khởi nghiệp thành công.
+
+208
+00:07:10,620 --> 00:07:11,170
+Nếu bạn không yêu thích và
+
+209
+00:07:11,170 --> 00:07:12,660
+không tin tưởng vào cái mà bạn đang xây dựng,
+
+210
+00:07:12,660 --> 00:07:14,340
+thì gần như chắc chắn là sẽ có lúc bạn bỏ cuộc thôi.
+
+211
+00:07:15,580 --> 00:07:17,430
+Tôi nghĩ không có cách nào để
+
+212
+00:07:17,430 --> 00:07:20,680
+vượt qua gian nan khởi nghiệp
+nếu không vững tin vào sứ mệnh.
+
+213
+00:07:20,680 --> 00:07:22,500
+Rất nhiều nhà sáng lập, đặc biệt là sinh viên
+
+214
+00:07:22,500 --> 00:07:24,332
+tin rằng dự án khởi nghiệp của họ chỉ mất khoảng
+
+215
+00:07:24,332 --> 00:07:25,690
+2 - 3 năm thôi, và sau đó họ có thể làm về
+
+216
+00:07:25,690 --> 00:07:27,310
+một lĩnh vực họ thực sự tâm huyết.
+
+217
+00:07:27,310 --> 00:07:28,480
+Những người này hầu như là thất bại.
+
+218
+00:07:28,480 --> 00:07:29,840
+Một dự án khởi nghiệp thành công
+thường mất khoảng 10 năm.
+
+219
+00:07:31,380 --> 00:07:32,710
+Lợi ích thứ ba của các công ty bám sát sứ mệnh
+
+220
+00:07:32,710 --> 00:07:34,350
+là những người ngoài cuộc cũng sẽ
+
+221
+00:07:34,350 --> 00:07:36,880
+sẵn sàng giúp đỡ bạn hơn.
+
+222
+00:07:36,880 --> 00:07:37,740
+Bạn sẽ được hỗ trợ nhiều
+
+223
+00:07:37,740 --> 00:07:40,700
+trong các dự án khó và quan trọng
+hơn là các dự án ăn theo.
+
+224
+00:07:40,700 --> 00:07:42,820
+Trong lĩnh vực khởi nghiệp,
+
+225
+00:07:42,820 --> 00:07:43,830
+có thể nói rằng bắt đầu với
+
+226
+00:07:43,830 --> 00:07:46,050
+một dự án khó thì dễ hơn là
+chọn một dự án dễ.
+
+227
+00:07:46,050 --> 00:07:47,580
+Đây là một điều phản trực giác.
+
+228
+00:07:47,580 --> 00:07:48,860
+Phải tốn một thời gian dài mọi người mới hiểu được.
+
+229
+00:07:51,320 --> 00:07:52,710
+Bám sát theo sứ mệnh
+
+230
+00:07:52,710 --> 00:07:54,270
+là việc cực kỳ quan trọng,
+
+231
+00:07:54,270 --> 00:07:56,230
+nên tôi muốn nhấn mạnh lại một lần cuối.
+
+232
+00:07:56,230 --> 00:07:58,240
+Các công ty ăn theo, tức là
+
+233
+00:07:58,240 --> 00:08:01,180
+sao chép ý tưởng có sẵn
+mà không đưa ra được cái gì mới
+
+234
+00:08:01,180 --> 00:08:03,240
+sẽ không khiến mọi người hứng thú
+và cũng không thể thôi thúc đội ngũ
+
+235
+00:08:03,240 --> 00:08:04,940
+làm việc thật chăm chỉ để thành công.
+
+236
+00:08:06,470 --> 00:08:07,790
+Tuần tới, Paul Graham sẽ giảng về
+
+237
+00:08:07,790 --> 00:08:09,870
+làm thế nào để có ý tưởng khởi nghiệp
+
+238
+00:08:09,870 --> 00:08:11,740
+Đó là thứ khiến rất nhiều nhà sáng lập phải chật vật,
+
+239
+00:08:11,740 --> 00:08:13,850
+nhưng tôi tin là càng làm nhiều
+
+240
+00:08:13,850 --> 00:08:15,040
+thì các bạn càng có thể tiến bộ.
+
+241
+00:08:15,040 --> 00:08:16,530
+Và nó cũng rất đáng để chúng ta
+nỗ lực trở nên tiến bộ hơn.
+
+242
+00:08:18,490 --> 00:08:19,590
+Phần khó nhất 
+
+243
+00:08:19,590 --> 00:08:20,950
+trong việc nảy ra ý tưởng tốt là
+
+244
+00:08:20,950 --> 00:08:24,010
+các ý tưởng tốt nhất lúc đầu
+thường không có vẻ khả quan.
+
+245
+00:08:24,010 --> 00:08:25,350
+Ví dụ, công cụ tìm kiếm thứ 13
+
+246
+00:08:25,350 --> 00:08:27,180
+mà không có đủ tính năng của 1 cổng thông tin mạng.
+
+247
+00:08:27,180 --> 00:08:29,930
+Hầu như ai cũng nghĩ nó chẳng để làm gì,
+công cụ tìm kiếm vẫn có sẵn,
+
+248
+00:08:29,930 --> 00:08:31,500
+có thêm cũng không quan trọng
+
+249
+00:08:31,500 --> 00:08:33,440
+vì giá trị nằm ở cổng thông tin kìa.
+
+250
+00:08:33,440 --> 00:08:34,870
+Hay mạng xã hội thứ 10,
+
+251
+00:08:34,870 --> 00:08:36,582
+chỉ dành riêng cho sinh viên đại học không có tiền?
+
+252
+00:08:36,582 --> 00:08:37,770
+Cũng tệ nốt.
+
+253
+00:08:37,770 --> 00:08:38,670
+Lúc đó MySpace đang thống trị,
+
+254
+00:08:38,670 --> 00:08:40,730
+ai lại muốn khách hàng là sinh viên?
+
+255
+00:08:40,730 --> 00:08:42,450
+Hoặc là một phương tiện để ngủ nhờ nhà người lạ?
+

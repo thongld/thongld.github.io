@@ -1,0 +1,448 @@
+0
+00:00:05,053 --> 00:00:06,280
+Chào các bạn.
+Giờ chúng ta sẽ sang phần đánh giá rủi ro của dự án.
+
+2
+00:00:11,400 --> 00:00:13,740
+Tôi sẽ nói lại lý do tại sao.
+
+3
+00:00:15,270 --> 00:00:18,250
+Khi xét rủi ro của dự án, chúng ta đều biết rằng
+
+4
+00:00:18,250 --> 00:00:21,500
+rủi ro không có liên hệ gì với các phương sai.
+
+5
+00:00:21,500 --> 00:00:26,418
+Nhưng sẽ có ảnh hưởng đến mối quan hệ của dự án,
+
+6
+00:00:26,418 --> 00:00:31,350
+đặc biệt là với những danh mục đầu tư lớn.
+
+7
+00:00:32,840 --> 00:00:36,140
+Rủi ro của một dự án, công ty đều phải được đánh giá dựa trên
+
+8
+00:00:36,140 --> 00:00:38,500
+mối quan hệ của dự án, công ty với những nhân tố khác.
+
+9
+00:00:38,500 --> 00:00:43,530
+Phương trình nổi tiếng nhất, được gọi là mô hình thị trường, 
+
+10
+00:00:43,530 --> 00:00:48,000
+Tôi sẽ cho các bạn phương trình để các bạn hiểu vì sao chúng ta lại phải học hồi quy.
+
+11
+00:00:49,280 --> 00:00:51,500
+Hãy quan sát phương trình sau.
+
+12
+00:00:51,500 --> 00:00:53,060
+Nó diễn dạt cái gì?
+
+13
+00:00:53,060 --> 00:00:57,550
+Giả sử như bạn chọn lấy 1 công ty từ
+
+14
+00:00:57,550 --> 00:00:59,180
+5 công ty mà tôi đã đưa cho bạn.
+
+15
+00:00:59,180 --> 00:01:03,800
+Chọn 1 thôi, và giả sử như nó là công ty Amazon.
+
+16
+00:01:04,950 --> 00:01:07,890
+Nhớ rằng chúng ta đã giả sử công ty đó là Amazon,
+
+17
+00:01:07,890 --> 00:01:10,410
+và chúng ta sẽ tiến hành phân tích nó.
+
+18
+00:01:10,410 --> 00:01:14,640
+Chúng ta sẽ xem lại các ví dụ tổng quát.
+
+19
+00:01:14,640 --> 00:01:18,470
+Tôi định dùng cách khác nhưng
+
+20
+00:01:18,470 --> 00:01:22,820
+nếu dùng thuật ngữ "rừng nhiệt đới" thì chúng ta sẽ dễ nhớ hơn.
+
+21
+00:01:22,820 --> 00:01:24,910
+ 
+
+22
+00:01:24,910 --> 00:01:27,690
+Ri là mức sinh lời của công ty Amazon.
+
+23
+00:01:27,690 --> 00:01:29,620
+Alpha 1 là phần giới hạn.
+
+24
+00:01:29,620 --> 00:01:37,390
+Beta 1 là đồ thị, Epsilon là sai số.
+
+25
+00:01:37,390 --> 00:01:39,830
+Đây là phép hồi quy như tôi đã nhắc mới nãy.
+
+26
+00:01:39,830 --> 00:01:41,600
+Cái hay của tài chính nằm ở đây.
+
+27
+00:01:42,990 --> 00:01:47,820
+Nếu các bạn quan sát phép hồi quy này, các bạn sẽ thấy mối quan hệ
+
+28
+00:01:47,820 --> 00:01:52,690
+giữa công ty Amazon và cả danh mục đầu tư.
+
+29
+00:01:53,890 --> 00:01:58,130
+Nhớ rằng vốn đầu tư trong danh mục chỉ nên tập trung vào các công ty lớn,
+
+30
+00:01:58,130 --> 00:02:02,680
+bởi vì các bạn đang tìm cách 
+
+31
+00:02:02,680 --> 00:02:04,870
+tính rủi ro thông thường của các công ty này.
+
+32
+00:02:04,870 --> 00:02:07,750
+Đó là lý do tại sao tôi nói các bạn nên thử tính với 2000 công ty.
+
+33
+00:02:08,840 --> 00:02:11,200
+Nếu vậy thì danh mục của chúng ta có gì?
+
+34
+00:02:11,200 --> 00:02:12,550
+Tài sản thực.
+
+35
+00:02:12,550 --> 00:02:13,920
+Ngoài ra còn có khế ước nữa.
+
+36
+00:02:13,920 --> 00:02:15,680
+Danh mục của chúng ta sẽ có những cái đó.
+
+37
+00:02:15,680 --> 00:02:19,320
+Rất may là tài sản thực thường không dùng để trao đổi.
+
+38
+00:02:20,490 --> 00:02:24,730
+Những cái nào được trao đổi một cách sòng phẳng đều có thể đo lường được.
+
+39
+00:02:24,730 --> 00:02:29,710
+Khế ước thường không dùng trong các giao dịch sòng phẳng nên trong nhiều trường hợp chúng được dùng để
+
+40
+00:02:29,710 --> 00:02:34,980
+chúng được dùng để cắt giảm bớt một số chi phí.
+
+41
+00:02:34,980 --> 00:02:35,780
+Hầu hết các loại chi phí.
+
+42
+00:02:37,040 --> 00:02:38,360
+Chúng ta tiếp tục nào.
+
+43
+00:02:38,360 --> 00:02:41,440
+Rm là lãi suất thị trường, đại lượng này có thể tính được.
+
+44
+00:02:41,440 --> 00:02:43,770
+Với Ri, liệu tôi có thể tính được lãi của Amazon không?
+
+45
+00:02:43,770 --> 00:02:44,270
+Được.
+
+46
+00:02:45,320 --> 00:02:46,690
+Vậy là các bạn có thể tiến hành phép toán hồi quy được rồi.
+
+47
+00:02:46,690 --> 00:02:49,980
+Khi sử dụng phép hồi quy, hệ số Beta bằng bao nhiêu?
+
+48
+00:02:51,140 --> 00:02:54,110
+Hệ số Beta ở phía trên, và các bạn phải quyết định.
+
+49
+00:02:54,110 --> 00:02:55,850
+Giờ tôi sẽ không ước lượng,
+
+50
+00:02:55,850 --> 00:02:56,630
+mà các bạn sẽ làm.
+
+51
+00:02:56,630 --> 00:02:57,950
+Đại lượng này không có mũ.
+
+52
+00:02:57,950 --> 00:03:00,020
+Sigma Im là gì?
+
+53
+00:03:00,020 --> 00:03:04,180
+Sigma Im là đại lượng đặc trưng cho mối quan hệ giữa Amazon,
+
+54
+00:03:04,180 --> 00:03:08,790
+ghi tắt là I, và danh mục đầu tư được đánh giá theo S&P 500 hay Russel 2000,
+
+55
+00:03:08,790 --> 00:03:12,670
+Tùy các bạn chọn thôi.
+
+56
+00:03:12,670 --> 00:03:17,490
+Hiện nay trên thế giới, chủ yếu người ta dùng danh mục đầu tư toàn cầu, không phải vì
+
+57
+00:03:17,490 --> 00:03:21,380
+tính toàn cầu mà vì các nhà đầu tư muốn có sự đa dạng hóa.
+
+58
+00:03:21,380 --> 00:03:25,570
+Nhớ lấy khái niệm này khi các bạn xét từ quan điểm của nhà đầu tư.
+
+59
+00:03:25,570 --> 00:03:31,000
+Những thứ này cực kì quan trọng, nhưng nhiều người không hiểu rõ và
+
+60
+00:03:31,000 --> 00:03:35,070
+do đó họ phân tích sai hay hiểu sai vấn đề.
+
+61
+00:03:36,360 --> 00:03:40,670
+Có bao nhiêu mối liên hệ?
+
+62
+00:03:40,670 --> 00:03:44,488
+Tôi hỏi lại, có bao nhiêu mối liên hệ đang được đánh giá
+
+63
+00:03:44,488 --> 00:03:51,120
+theo công ty này?
+
+64
+00:03:51,120 --> 00:03:53,570
+S&P 500 cho thấy
+
+65
+00:03:53,570 --> 00:03:57,024
+có bao nhiêu mối liên hệ đang được đánh giá?
+
+66
+00:03:59,860 --> 00:04:07,320
+499.
+Vì một trong những 500 công ty đó là Amazon.
+
+67
+00:04:07,320 --> 00:04:10,008
+Khi tính cho Amazon, các bạn kí hiệu như thế nào?
+
+68
+00:04:10,008 --> 00:04:13,840
+Sigma I bình phương.
+
+69
+00:04:13,840 --> 00:04:17,750
+Còn lại đều kí hiệu là Sigma i.
+
+70
+00:04:17,750 --> 00:04:19,870
+Có ai đó đã tính rồi.
+
+71
+00:04:19,870 --> 00:04:22,660
+Đại lượng chiếm ưu thế không phải số này
+
+72
+00:04:23,670 --> 00:04:25,880
+mà là 499.
+
+73
+00:04:25,880 --> 00:04:30,190
+Thực ra các bạn đang cố tìm tính đối xứng.
+
+74
+00:04:30,190 --> 00:04:31,910
+Còn nhiều nữa.
+
+75
+00:04:31,910 --> 00:04:34,470
+Gấp đôi số lượng hiện tại.
+
+76
+00:04:34,470 --> 00:04:37,710
+Sigma m bình phương là phương sai.
+
+77
+00:04:37,710 --> 00:04:40,770
+Sigma m là hiệp phương sai có m trong đó.
+
+78
+00:04:40,770 --> 00:04:46,450
+Beta là hệ số góc của đường hồi quy nhưng
+
+79
+00:04:46,450 --> 00:04:50,710
+trong lĩnh vực tài chính nó dùng để đánh giá đại lượng mà chúng ta gọi là
+
+80
+00:04:50,710 --> 00:04:53,860
+rủi ro của công ty Amazon trong danh mục.
+
+81
+00:04:53,860 --> 00:04:57,990
+Rủi ro của công ty Amazon không có nghĩa.
+
+82
+00:04:57,990 --> 00:05:00,365
+Nó chỉ có nghĩa khi xét trong danh mục.
+Các bạn biết gì chưa?
+
+83
+00:05:00,365 --> 00:05:05,240
+Hệ số đánh giá rủi ro này là Beta,
+
+84
+00:05:05,240 --> 00:05:09,430
+bởi vì hệ số của đường cong hồi quy được gọi là Beta.
+
+85
+00:05:09,430 --> 00:05:12,820
+Tôi nghĩ tài chính là lĩnh vực hấp dẫn vì
+
+86
+00:05:12,820 --> 00:05:17,000
+tài chính biến những khái niệm của con người thành số liệu thực tế.
+
+87
+00:05:17,000 --> 00:05:18,420
+Cũng giống như phép hồi quy,
+
+88
+00:05:18,420 --> 00:05:20,470
+chúng ta cũng mong chờ kết quả tài chính khả quan.
+
+89
+00:05:21,520 --> 00:05:24,850
+Chúng ta tạm dừng ở đây để suy nghĩ thêm về vấn đề này.
+
+90
+00:05:24,850 --> 00:05:28,570
+Tôi muốn các bạn suy nghĩ về cái hay của tài chính,
+
+91
+00:05:30,050 --> 00:05:32,770
+hệ số tương quan của, à không.
+
+92
+00:05:32,770 --> 00:05:33,970
+  
+
+93
+00:05:33,970 --> 00:05:38,530
+mối liên hệ giữa khái niệm
+
+94
+00:05:38,530 --> 00:05:43,710
+và khả năng tính toán, tuy không hoàn hảo nhưng tính được.
+
+95
+00:05:43,710 --> 00:05:45,590
+Đó là cái hay của tài chính.
+
+96
+00:05:45,590 --> 00:05:48,650
+Đây không chỉ là các phương trình.
+
+97
+00:05:48,650 --> 00:05:52,110
+Đây là cách dễ dàng để các bạn tính toán.
+
+98
+00:05:53,300 --> 00:05:58,230
+1 lưu ý quan trọng: Mỗi khi bạn ước lượng,
+
+99
+00:05:58,230 --> 00:06:03,380
+chẳng hạn như số Beta, chỉ cần làm nhanh và nhiều lần là chúng ta sẽ biết cách chọn đúng.
+
+100
+00:06:03,380 --> 00:06:08,370
+Nhiều khi những giả định mà các bạn lập ra đều không đúng.
+
+101
+00:06:08,370 --> 00:06:13,290
+Nguyên nhân là không dùng đúng dữ liệu, vi dụ sai, v.v
+
+102
+00:06:13,290 --> 00:06:18,950
+Có những cách khác chuyên nghiệp hơn.
+Đây là lĩnh vực mà tôi sẽ 
+
+103
+00:06:18,950 --> 00:06:24,140
+dùng thống kê hay những dịch vụ chuyên nghiệp như Morningstar.
+
+104
+00:06:24,140 --> 00:06:27,700
+Đó là một công ty con có khả năng làm những việc này.
+
+105
+00:06:27,700 --> 00:06:30,690
+Nó cũng có thể ước lượng được hệ số Beta và nhiều thứ khác nữa.
+
+106
+00:06:32,130 --> 00:06:34,330
+Hãy suy nghĩ về cái tôi nói.
+
+107
+00:06:34,330 --> 00:06:37,450
+Hệ số Beta mới quan trọng, Sigma không quan trọng với Amazon.
+
+108
+00:06:37,450 --> 00:06:39,480
+Tôi hi vọng các bạn hiểu được.
+
+109
+00:06:39,480 --> 00:06:44,920
+Ở bài học sau, tôi sẽ bỏ qua một bước và hướng dẫn cho các bạn,
+
+110
+00:06:44,920 --> 00:06:50,320
+từ cách tính rủi ro tới tính lãi suất.
+
+111
+00:06:51,550 --> 00:06:52,134
+Chào các bạn.
+

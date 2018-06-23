@@ -1,0 +1,268 @@
+57
+00:05:20,659 --> 00:05:25,979
+knh_beu_project48 https://youtu.be/4ReVHhUfdOI
+Có 2 đặc điểm để nhận diện 
+dạng đô thị. Chỉ số diện tích sàn 
+
+58
+00:05:25,979 --> 00:05:31,680
+(FSI) hoặc hệ số sử dụng đất (FAR) đại diển cho 
+cường độ xây dựng trong khu vực. 
+
+59
+00:05:31,680 --> 00:05:36,810
+Chỉ số diện tích đất nền (GSI) biểu diễn cho 
+độ khít giữa môi trường xây dựng của một khu vực 
+
+60
+00:05:36,810 --> 00:05:42,750
+(vd như áp lực xây dựng). 
+Hãy cùng đi vào tìm hiểu cách những chỉ số này được tính toán.
+
+61
+00:05:42,750 --> 00:05:46,260
+Trước hết ta cần phải nắm rõ ba biến số chính.
+
+62
+00:05:46,260 --> 00:05:51,620
+Đầu tiên, xét đến diện tích sàn xây dựng hay
+độ khả dụng của tỷ lệ diện tích sàn và vùng không gian trên các tầng
+
+63
+00:05:51,620 --> 00:05:57,479
+của một tòa nhà. Thứ hai là diện tích quy hoạch hay diện tích tham khảo. 
+
+64
+00:05:57,479 --> 00:06:04,020
+Diện tích này trong phạm vi của một tòa nhà thì có thể là vùng không được hoặc được xây riêng rẽ. Ví dụ như dựa vào đặc tính nào đó một tòa nhà được dựng lên.
+
+65
+00:06:04,020 --> 00:06:08,479
+Nó là lô đất. Nhưng cũng có thể là 
+diện tích bao gồm
+
+66
+00:06:08,479 --> 00:06:14,810
+khu vui chơi, bãi đậu xe hay các cơ sở hạ tầng 
+được gọi là đảo hay khối nhà. Hoặc là một quận 
+
+67
+00:06:14,810 --> 00:06:20,980
+bao gồm nhiều đảo, đường, khu vực nước chảy và không gian công cộng rộng lớn v.v...
+
+68
+00:06:20,980 --> 00:06:24,400
+Điều thứ ba và cũng là cuối cùng là dấu nền
+
+69
+00:06:24,400 --> 00:06:31,300
+hay còn gọi là nơi một tòa nhà được xây dựng lên. 
+Từ những biến số trên ta rút ra được hai kết luận.
+
+70
+00:06:31,300 --> 00:06:35,540
+Chỉ số diện tích sàn có thể chiếm từ 
+
+71
+00:06:35,550 --> 00:06:41,789
+0 đến bất kỳ số nào. Được tính toán
+bằng cách chia diện tích sàn cho diện tích tham khảo.
+
+72
+00:06:41,789 --> 00:06:46,219
+Nó trả lời cho câu hỏi diện tích sàn 
+chiếm bao nhiêu so với diện tích quy hoạch.
+
+73
+00:06:46,219 --> 00:06:51,969
+Chỉ số diện tích đất nền có thể đạt tới giá trị lớn nhất là 1. 
+Đồng nghĩa trả lời cho câu hỏi
+
+74
+00:06:51,969 --> 00:06:57,889
+không gian xây dựng chiếm bao nhiêu trong diện tích quy hoạch. 
+Tôi sẽ giải thích điều này, bằng một số khối lego.
+
+75
+00:06:57,889 --> 00:07:05,139
+Thử tưởng tượng khối màu vàng này đây là một tầng của căn nhà;
+
+76
+00:07:05,139 --> 00:07:14,289
+vậy nó đóng vai diện tích sàn. 
+Cứ thêm một khối, ta sẽ có gấp đôi diện tích 
+
+77
+00:07:14,289 --> 00:07:21,310
+sàn. Thêm một khối nữa,
+diện tích sẽ tăng gấp ba, và giả dụ
+
+78
+00:07:21,310 --> 00:07:26,960
+ta đặt lên khối thứ tư, diện tích sàn lúc này 
+đã gấp bốn lần lúc đầu.
+
+79
+00:07:26,960 --> 00:07:33,449
+Coi như đây là dấu nền móng của căn nhà; 
+nói cách khác, là vùng mà 
+
+80
+00:07:33,449 --> 00:07:39,270
+một căn nhà sẽ được xây lên. Giờ đã đủ cả hai thành phần 
+để hiểu ý nghĩa 
+
+81
+00:07:39,270 --> 00:07:47,129
+của hệ số sử dụng đất. 
+Ta có diện tích sàn và diện tích quy hoạch.
+
+82
+00:07:47,129 --> 00:07:59,110
+Nếu lúc này tôi chia đều phần diện tích sàn 
+trên diện tích quy hoạch, cứ như vậy,
+
+83
+00:07:59,110 --> 00:08:09,849
+tôi nhận được hệ số sử dụng đất bằng 1.
+Giờ thì tôi gỡ một cục ra và đặt nó lên cao, như ở đây,
+
+84
+00:08:09,849 --> 00:08:17,930
+thế có gì thay đổi không? 
+Và chỉ số diện tích ấy thay đổi sao? Bản chất là
+
+85
+00:08:17,930 --> 00:08:26,249
+chẳng có gì mới cả; nó vẫn là 1 mà thôi. 
+Cứ như vậy đặt một cục lên đây, chỉ số vẫn là 1. Và cứ thêm một cục ở đây,
+
+86
+00:08:26,249 --> 00:08:34,810
+kết quả vẫn là 1. 
+Điều ta nhận ra được rằng hệ số sử dụng đất
+
+87
+00:08:34,810 --> 00:08:39,909
+nói lên mối liên hệ 
+giữa phần diện tích và nền, khi phải so sánh với 
+
+88
+00:08:39,909 --> 00:08:56,690
+diện tích của khu vực được quy hoạch. Tôi sẽ trình bày lại 
+bằng cách thêm hai khối mới vào vào đây, ta có chỉ số diện tích sàn 
+
+89
+00:08:56,690 --> 00:09:04,779
+là 1.5. Thêm vào nữa 
+sẽ nhận được kết quả là 2.
+
+90
+00:09:04,779 --> 00:09:13,459
+Bây giờ ta hãy xét đến chỉ số diện tích đất nền. 
+Một lần nữa tôi có diện tích quy hoạch
+
+91
+00:09:13,459 --> 00:09:26,920
+hiện tại tôi đang có hệ số sử dụng đất là 1. 
+Đồng thời cũng có chỉ số
+
+92
+00:09:26,920 --> 00:09:35,320
+diện tích đất nền là 1. Mặt đất được bao phủ hết:
+dẫn đến chỉ số diện tích đất nền là 1. Nếu tôi di chuyển các khối
+
+93
+00:09:35,320 --> 00:09:43,110
+hướng này, diện tích đất nền lúc này sẽ giảm còn 0.5. 
+Điều nay có nghĩa giá trị lớn nhất của diện tích đất nền
+
+94
+00:09:43,110 --> 00:09:56,000
+chỉ có thể là 1. Tiếp theo nó giảm còn 0.25. 
+Nghĩa là chỉ chiếm 25% diện tích đất quy hoạch
+
+95
+00:09:56,000 --> 00:10:04,350
+được xây dựng. Định nghĩa này rất khác 
+so với hệ số sử dụng đất, khi mà nó vẫn luôn giữ giá trị là 1 
+
+96
+00:10:04,350 --> 00:10:10,600
+đối với cách sắp xếp này, dù cách tôi phân chia khoảng cách ra sao. 
+Nhưng chỉ số diện tích đất nền lại thay đổi
+
+97
+00:10:10,600 --> 00:10:17,639
+mỗi khi tôi đổi chỗ
+các khối.
+
+98
+00:10:17,639 --> 00:10:22,380
+Thế ta áp dụng nó sao đây? 
+Có thể so sánh hệ số sử dụng đất với 
+
+99
+00:10:22,380 --> 00:10:27,649
+chỉ số diện tích đất nền để từ đây 
+nhận xét mức độ đô thị hóa của khu vực.
+
+100
+00:10:27,649 --> 00:10:32,560
+Bạn cũng có thấy từ bức hình ở đây, 
+khu vực nông thôn thường là các khu vực thấp tầng với hệ số sử dụng đất thấp;
+
+101
+00:10:32,560 --> 00:10:37,600
+chả cố mấy được công trình xây dựng. 
+Có rất nhiều không gian mở và nhà cũng không được xây mấy cao. 
+
+102
+00:10:37,600 --> 00:10:45,440
+Khi di chuyển dọc trục y và ngang trục x, 
+các khu vực thêm phần
+
+103
+00:10:45,440 --> 00:10:52,160
+chặt khít và có tính đô thị. Nếu đặt Bijlmer 
+và Betondorp vào bức hình, Bijlmer 
+
+104
+00:10:52,160 --> 00:10:59,540
+mang tính nông thôn hơn nhiều. Lí do ư? 
+Nơi này sở hữu độ FSI cao hơn một chút, nhưng 
+
+105
+00:10:59,540 --> 00:11:05,320
+vẫn chưa có độ chặt chẽ về mặt xây dựng. Nó vẫn còn nhiều không gian mở, 
+vì điều này nên được xếp vào khu vực
+
+106
+00:11:05,320 --> 00:11:11,529
+nông thôn. Mặt khác, Betondorp lại có vẻ 
+của một thành phố hơn và có phần nén chặt, khoảng cách
+
+107
+00:11:11,529 --> 00:11:17,800
+giữa các tòa nhà ngắn. Có thể rút ra từ đây
+
+108
+00:11:17,800 --> 00:11:22,100
+hệ số sử dụng đất và Chỉ số diện tích nền đất 
+là những chỉ số hữu dụng để xác định 
+
+109
+00:11:22,100 --> 00:11:28,320
+cách sắp xếp mặt bằng của một thành phố; 
+và ta phải xem xét diện tích tham khảo tham khảo để xác định
+
+110
+00:11:28,320 --> 00:11:35,240
+mật độ FSI và GSI. 
+Vậy nên, tôi thách bạn hãy thử đánh giá 
+
+111
+00:11:35,240 --> 00:11:38,929
+mật độ đo đạc mà khám phá điểm khác nhau 
+giữa các dạng đô thị ở thành phố của bạn.
+

@@ -1,0 +1,444 @@
+0
+00:00:00,000 --> 00:00:00,620
+https://youtu.be/gLJRidY7OgI
+
+1
+00:00:00,620 --> 00:00:05,110
+Let's try to understand Sally's approach a little bit better.
+
+2
+00:00:05,110 --> 00:00:09,820
+So Sally is suggesting we go with the EOQ model.
+
+3
+00:00:09,820 --> 00:00:12,030
+So again, a quick recap.
+
+4
+00:00:12,030 --> 00:00:14,850
+What's the formula for our EOQ or Q*?
+
+5
+00:00:14,850 --> 00:00:17,500
+
+
+6
+00:00:17,500 --> 00:00:21,840
+So this is the square root of 2 times the transaction
+
+7
+00:00:21,840 --> 00:00:27,000
+cost times the demand, over the cost
+
+8
+00:00:27,000 --> 00:00:29,310
+of having excess inventory.
+
+9
+00:00:29,310 --> 00:00:31,190
+Do we have these numbers?
+
+10
+00:00:31,190 --> 00:00:32,369
+Yes, we do.
+
+11
+00:00:32,369 --> 00:00:35,270
+And how do we move?
+
+12
+00:00:35,270 --> 00:00:40,810
+2 times c_t is 100.
+
+13
+00:00:40,810 --> 00:00:44,210
+Our annual demand is 5,000.
+
+14
+00:00:44,210 --> 00:00:48,980
+Divided by c_e, which we can calculate from c times h ,
+
+15
+00:00:48,980 --> 00:00:56,260
+which was $2 per unit, times h was given to us as 0.28.
+
+16
+00:00:56,260 --> 00:01:08,640
+So this gives us a value of 1 million divided by 0.56.
+
+17
+00:01:08,640 --> 00:01:18,090
+And if you solve this, we'll get a value of 1,336 units.
+
+18
+00:01:18,090 --> 00:01:25,460
+OK, so now that we have our EOQ number, the unit of 1,336,
+
+19
+00:01:25,460 --> 00:01:30,490
+let's try and calculate the total cost using this EOQ.
+
+20
+00:01:30,490 --> 00:01:33,800
+Once again, we will calculate the purchase cost,
+
+21
+00:01:33,800 --> 00:01:38,840
+plus ordering cost, plus holding cost.
+
+22
+00:01:38,840 --> 00:01:42,110
+So what is our purchase cost?
+
+23
+00:01:42,110 --> 00:01:46,550
+Well, nothing has changed here, so we start at 2 per item
+
+24
+00:01:46,550 --> 00:01:56,480
+and we order of 5,000 units in a year, so this gives us 10,000.
+
+25
+00:01:56,480 --> 00:01:56,980
+OK.
+
+26
+00:01:56,980 --> 00:01:59,490
+What about the ordering cost?
+
+27
+00:01:59,490 --> 00:02:02,630
+Is this effective with an EOQ?
+
+28
+00:02:02,630 --> 00:02:04,340
+Yes, it is.
+
+29
+00:02:04,340 --> 00:02:08,280
+So the ordering cost is still 100 per order.
+
+30
+00:02:08,280 --> 00:02:10,780
+However, the number of orders we will make
+
+31
+00:02:10,780 --> 00:02:13,830
+will change, because this time it's 5,000
+
+32
+00:02:13,830 --> 00:02:20,000
+divided by 1,336 and not 500.
+
+33
+00:02:20,000 --> 00:02:24,950
+So this gives us a value of $374.
+
+34
+00:02:24,950 --> 00:02:26,620
+What about the holding cost?
+
+35
+00:02:26,620 --> 00:02:29,400
+Will this be affected with an EOQ?
+
+36
+00:02:29,400 --> 00:02:30,330
+Yes.
+
+37
+00:02:30,330 --> 00:02:34,480
+And the formula is c_e, cost of excess inventory,
+
+38
+00:02:34,480 --> 00:02:37,550
+times the average inventory on hand.
+
+39
+00:02:37,550 --> 00:02:39,780
+So we have done this before.
+
+40
+00:02:39,780 --> 00:02:43,600
+We have calculated c_e to be 0.56.
+
+41
+00:02:43,600 --> 00:02:46,510
+The average inventory, however, is Q/2,
+
+42
+00:02:46,510 --> 00:02:51,450
+and this time our Q is 1,336, divided by 2.
+
+43
+00:02:51,450 --> 00:02:54,290
+And this again gives us, coincidentally,
+
+44
+00:02:54,290 --> 00:02:57,410
+a value of $334.
+
+45
+00:02:57,410 --> 00:03:00,130
+So if we have the purchase cost, the ordering cost,
+
+46
+00:03:00,130 --> 00:03:04,600
+and the holding cost, can we calculate the total cost?
+
+47
+00:03:04,600 --> 00:03:05,100
+Yes.
+
+48
+00:03:05,100 --> 00:03:08,620
+We just add these three up, and this should give you
+
+49
+00:03:08,620 --> 00:03:13,590
+a value of $10,748.
+
+50
+00:03:13,590 --> 00:03:17,040
+Well, while we are here, can we also
+
+51
+00:03:17,040 --> 00:03:18,985
+calculate the order frequency?
+
+52
+00:03:18,985 --> 00:03:21,550
+
+
+53
+00:03:21,550 --> 00:03:26,190
+I think we were asked in the question about the order
+
+54
+00:03:26,190 --> 00:03:27,180
+frequency.
+
+55
+00:03:27,180 --> 00:03:28,530
+Yes.
+
+56
+00:03:28,530 --> 00:03:37,490
+So we order 5,000 units in batches of 1,336.
+
+57
+00:03:37,490 --> 00:03:41,680
+This gives a value of 3.74.
+
+58
+00:03:41,680 --> 00:03:43,620
+Let's round it off to 4.
+
+59
+00:03:43,620 --> 00:03:48,810
+What it means is roughly 4 times in a year,
+
+60
+00:03:48,810 --> 00:03:56,440
+or one order every three months.
+
+61
+00:03:56,440 --> 00:03:59,710
+This becomes our order frequency.
+
+62
+00:03:59,710 --> 00:04:02,880
+Let's now try to understand Bob's approach.
+
+63
+00:04:02,880 --> 00:04:08,830
+Bob doesn't suggest we change Q. So when we don't change Q,
+
+64
+00:04:08,830 --> 00:04:13,270
+would our total cost be different?
+
+65
+00:04:13,270 --> 00:04:14,680
+Let's calculate.
+
+66
+00:04:14,680 --> 00:04:19,279
+Again, this total cost will have a purchase cost component,
+
+67
+00:04:19,279 --> 00:04:23,380
+an ordering cost component, and a holding cost component.
+
+68
+00:04:23,380 --> 00:04:26,530
+Let's see which of these three is impacted
+
+69
+00:04:26,530 --> 00:04:30,660
+with Bob's suggestion, which is to put down
+
+70
+00:04:30,660 --> 00:04:36,780
+the ordering cost or the setup cost from more than 100 to 25.
+
+71
+00:04:36,780 --> 00:04:46,680
+So the purchase cost still is at $2 per unit, times 5,000 units
+
+72
+00:04:46,680 --> 00:04:49,356
+that we sell, or the Coop sells in a year.
+
+73
+00:04:49,356 --> 00:04:50,170
+Right.
+
+74
+00:04:50,170 --> 00:04:53,590
+So this gives us a value of $10,000.
+
+75
+00:04:53,590 --> 00:04:59,591
+I think this is the same as the first case, in part A.
+
+76
+00:04:59,591 --> 00:05:00,840
+So this is your purchase cost.
+
+77
+00:05:00,840 --> 00:05:02,930
+What about the ordering cost?
+
+78
+00:05:02,930 --> 00:05:04,590
+Is this impacted?
+
+79
+00:05:04,590 --> 00:05:09,150
+Well, the ordering price per unit
+
+80
+00:05:09,150 --> 00:05:13,280
+is now 25, in Bob's suggested approach.
+
+81
+00:05:13,280 --> 00:05:15,980
+But the number of orders still remains the same,
+
+82
+00:05:15,980 --> 00:05:24,390
+5,000 divided by 500, which gives me a total value of $250.
+
+83
+00:05:24,390 --> 00:05:25,885
+What about holding cost?
+
+84
+00:05:25,885 --> 00:05:27,670
+Will this change?
+
+85
+00:05:27,670 --> 00:05:32,410
+Well, what's the c_e?
+
+86
+00:05:32,410 --> 00:05:41,088
+c_e is C times h , and our C is again $2, our h was 0.28.
+
+87
+00:05:41,088 --> 00:05:45,160
+And this goes with average inventory on hand,
+
+88
+00:05:45,160 --> 00:05:50,340
+which is 500, divided by 2.
+
+89
+00:05:50,340 --> 00:05:52,080
+So this doesn't change.
+
+90
+00:05:52,080 --> 00:05:55,020
+We still get the old 140.
+
+91
+00:05:55,020 --> 00:05:57,210
+Can we calculate the total cost now?
+
+92
+00:05:57,210 --> 00:05:58,040
+Yes.
+
+93
+00:05:58,040 --> 00:05:59,900
+Add these three numbers up.
+
+94
+00:05:59,900 --> 00:06:05,450
+And what we get is a total cost of $10,390.
+
+95
+00:06:05,450 --> 00:06:11,140
+And yes, this is a little bit cheaper than Sally's solution.
+
+96
+00:06:11,140 --> 00:06:12,800
+How about order frequency?
+
+97
+00:06:12,800 --> 00:06:16,970
+Can we calculate the order frequency here?
+
+98
+00:06:16,970 --> 00:06:17,930
+Sure.
+
+99
+00:06:17,930 --> 00:06:25,350
+So we know the demand is 5,000 units in a year.
+
+100
+00:06:25,350 --> 00:06:32,110
+And we are in batches of 500, so we end up ordering 10 times
+
+101
+00:06:32,110 --> 00:06:41,150
+per year, one order every 1.2 months.
+
+102
+00:06:41,150 --> 00:06:44,920
+So this is the same as part A. Nothing changed here.
+
+103
+00:06:44,920 --> 00:06:49,440
+OK, so let's now move on to the next part, which is can we do
+
+104
+00:06:49,440 --> 00:06:51,352
+even better than Bob or Sally.
+
+105
+00:06:51,352 --> 00:06:52,810
+Between Bob and Sally, it does look
+
+106
+00:06:52,810 --> 00:06:55,510
+like Bob's approach is better.
+
+107
+00:06:55,510 --> 00:06:57,680
+But let's think a little bit more.
+
+108
+00:06:57,680 --> 00:07:03,030
+What else can we do to yet do better than Bob
+
+109
+00:07:03,030 --> 00:07:05,290
+and what Sally is suggesting.
+
+110
+00:07:05,290 --> 00:07:09,012
+
+

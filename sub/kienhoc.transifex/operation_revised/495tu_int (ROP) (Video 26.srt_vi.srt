@@ -1,0 +1,221 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/8jv806cvUlg
+phuongmai201 30/9
+
+1
+00:00:05,509 --> 00:00:08,289
+Rất vui được gặp lại và chào mừng các bạn trở lại với khóa học "Quản trị vận hành"
+
+2
+00:00:08,289 --> 00:00:11,689
+Trong phần hôm nay, chúng ta sẽ tiếp tục thảo luận về hàng tồn kho
+
+3
+00:00:11,690 --> 00:00:16,339
+và cụ thể bài này sẽ là về điểm đặt lại hàng.
+
+4
+00:00:16,339 --> 00:00:21,550
+Lần trước với lượng đặt hàng kinh tế ta đã xác định được
+
+5
+00:00:21,550 --> 00:00:24,740
+ta nên đặt lượng 
+
+6
+00:00:24,739 --> 00:00:28,320
+đặt hàng là bao nhiêu cho mỗi khối lượng
+
+7
+00:00:28,320 --> 00:00:31,480
+hàng tồn kho nhưng lần này, ta cố gắng tìm ra 
+
+8
+00:00:31,480 --> 00:00:35,170
+thời điểm nào thì nên đặt hàng. Đây được gọi là 
+
+9
+00:00:35,170 --> 00:00:38,850
+điểm đặt lại hàng. Vậy khi bạn đặt hàng
+
+10
+00:00:38,850 --> 00:00:42,950
+sẽ mất 1 khoảng thời gian từ khi bạn đặt đơn hàng
+
+11
+00:00:42,950 --> 00:00:44,780
+cho đến khi bạn nhận được chúng.
+
+12
+00:00:44,780 --> 00:00:48,899
+Cái đó được gọi là thời gian chờ hàng và lượng 
+
+13
+00:00:48,899 --> 00:00:52,429
+hàng tồn kho bạn sử dụng trong thời gian chờ hàng 
+
+14
+00:00:52,429 --> 00:00:55,649
+được gọi là cầu trong thời gian chờ hàng
+
+15
+00:00:55,649 --> 00:00:58,899
+thường được viết tắt là LTD.
+
+16
+00:00:58,899 --> 00:01:03,109
+Trong những tình huống cụ thể thì điểm đặt lại hàng
+
+17
+00:01:03,109 --> 00:01:08,620
+bằng với cầu trong thời gian chờ hàng, tức lượng hàng ta sử dụng từ thời điểm
+
+18
+00:01:08,620 --> 00:01:10,819
+ta đặt hàng đến lúc ta nhận chúng.
+
+19
+00:01:10,819 --> 00:01:15,339
+Nhìn vào đồ thị ta nhận thấy Q là lượng hàng ta 
+
+20
+00:01:15,340 --> 00:01:18,490
+đặt. Ở phía dưới cùng đồ thị 
+
+21
+00:01:18,489 --> 00:01:22,699
+là thời gian chờ hàng ta đã đặt ở thời điểm t 
+
+22
+00:01:22,700 --> 00:01:25,890
+và chúng sẽ được chuyển tới vào 1 thời điểm nào sau đó. 
+
+23
+00:01:25,890 --> 00:01:31,819
+Lượng hàng tồn kho chúng ta sử dụng trong suốt thời gian chờ hàng
+
+24
+00:01:31,819 --> 00:01:34,978
+tức cầu trong thời gian chờ hàng sẽ bằng với 
+
+25
+00:01:34,978 --> 00:01:41,250
+điểm đặt lại hàng. Rất đơn giản nhưng điều gì sẽ xảy ra nếu cầu biến đổi hay
+
+26
+00:01:41,250 --> 00:01:41,930
+thời gian chờ hàng
+
+27
+00:01:41,930 --> 00:01:46,090
+biến đổi hay cả cầu hàng và thời gian chờ hàng cùng biến đổi ?
+
+28
+00:01:46,090 --> 00:01:49,040
+Trong những trường hợp đó, ta thường muốn giữ một lượng hàng tồn kho
+
+29
+00:01:49,040 --> 00:01:52,830
+dư ra và nó được gọi là dự trữ bảo hiểm.
+
+30
+00:01:52,829 --> 00:01:56,359
+Vậy điểm đặt lại hàng không còn chỉ bằng
+
+31
+00:01:56,359 --> 00:02:00,179
+lượng cầu trong lúc chờ hàng mà nó bằng cầu trong thời gian chờ hàng
+
+32
+00:02:00,180 --> 00:02:04,440
+cộng với dự trữ bảo hiểm. Nếu ta nhìn nó trong đồ thị
+
+33
+00:02:04,439 --> 00:02:07,890
+ta sẽ thấy đồ thị thay đổi đôi chút.
+
+34
+00:02:07,890 --> 00:02:12,759
+Thay vì một đường cầu trượt thẳng thì nó lại khấp khiểng, biến đổi bởi vì ta không
+
+35
+00:02:12,759 --> 00:02:14,118
+chắn chắn hoàn toàn
+
+36
+00:02:14,118 --> 00:02:19,569
+lượng hàng cần được sử dụng tại một điểm bất kỳ. Ta vẫn có thời gian chờ hàng,
+
+37
+00:02:19,569 --> 00:02:23,109
+nên ta có cầu dự tính trong thời gian chờ hàng
+
+38
+00:02:23,110 --> 00:02:27,080
+ta nghĩ là ta sẽ sử dụng bao nhiêu trong khoảng thời gian từ khi
+
+39
+00:02:27,080 --> 00:02:30,380
+đặt hàng tới lúc nhận hàng.
+
+40
+00:02:30,379 --> 00:02:34,250
+Nhưng chú ý rằng ta không để nó bằng 0 
+
+41
+00:02:34,250 --> 00:02:37,580
+thay vào đó ta có đường màu vàng ở kia
+
+42
+00:02:37,580 --> 00:02:41,590
+và đó chính là dự trữ bảo hiểm. Vậy khi ta 
+
+43
+00:02:41,590 --> 00:02:46,060
+thêm lượng dự trữ bảo hiểm cùng với lượng cầu dự tính trong thời gian chờ hàng
+
+44
+00:02:46,060 --> 00:02:51,530
+ta sẽ có điểm đặt lại hàng khác. Nó lớn hơn cầu dự tính trong
+
+45
+00:02:51,530 --> 00:02:52,860
+thời gian chờ hàng 
+
+46
+00:02:52,860 --> 00:02:55,950
+nó bằng với cầu trong thời gian chờ hàng cộng với
+
+47
+00:02:55,949 --> 00:03:00,939
+dự trữ bảo hiểm. Vậy trong những trường hợp đơn giản, 
+
+48
+00:03:00,939 --> 00:03:05,870
+điểm đặt lại hàng bằng cầu trong thời gian chờ hàng. Nhưng nếu có một vài biến đổi
+
+49
+00:03:05,870 --> 00:03:07,620
+về cầu hay thời gian chờ hàng, 
+
+50
+00:03:07,620 --> 00:03:12,280
+ta sẽ thêm dự trữ bảo hiểm vào lượng cầu trong thời gian chờ hàng để tính
+
+51
+00:03:12,280 --> 00:03:16,079
+thời điểm đặt lại hàng. Bây giờ câu hỏi tiếp theo của khóa học là 
+
+52
+00:03:16,079 --> 00:03:20,659
+làm sao để ta biết lượng dự trữ bảo hiểm cần giữ là bao nhiêu. Đó là vấn đề ta sẽ tìm hiểu
+
+53
+00:03:20,659 --> 00:03:21,579
+trong bài tiếp theo
+
+54
+00:03:21,579 --> 00:03:22,320
+Hẹn gặp lại các bạn trong bài tới.
+

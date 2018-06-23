@@ -1,0 +1,1390 @@
+1
+00:00:00,008 --> 00:00:04,040
+https://www.youtube.com/watch?v=tFVDjrvQJdw
+Can we keep playing, wait,
+okay good.
+
+2
+00:00:07,942 --> 00:00:10,845
+Can we turn it up a little
+bit, so it's more pumped up?
+
+3
+00:00:10,845 --> 00:00:11,846
+>> That's loud.
+
+4
+00:00:11,846 --> 00:00:13,514
+>> Okay, here we go, okay.
+
+5
+00:00:19,420 --> 00:00:20,774
+>> Okay, so we gotta find
+the beat and
+
+6
+00:00:20,774 --> 00:00:21,999
+then we gotta clap to the
+beat.
+
+7
+00:00:25,760 --> 00:00:26,594
+>> Okay.
+
+8
+00:00:26,594 --> 00:00:27,361
+All right.
+
+9
+00:00:30,464 --> 00:00:31,632
+Okay, that's pretty good
+guys.
+
+10
+00:00:31,632 --> 00:00:32,333
+All right, we're good.
+
+11
+00:00:32,333 --> 00:00:32,833
+We're good.
+
+12
+00:00:32,833 --> 00:00:33,634
+Thank you.
+
+13
+00:00:33,634 --> 00:00:34,869
+Okay, please stop.
+
+14
+00:00:34,869 --> 00:00:36,303
+Okay, stop the music.
+
+15
+00:00:36,303 --> 00:00:36,803
+Thank you.
+
+16
+00:00:38,300 --> 00:00:39,049
+Okay, cool.
+Can you put on
+
+17
+00:00:39,049 --> 00:00:40,141
+the presentation, thank you.
+
+18
+00:00:42,243 --> 00:00:43,508
+>> That'll be the most
+pumped up
+
+19
+00:00:43,508 --> 00:00:45,734
+thing that ever happens in
+enterprise software, so
+
+20
+00:00:45,734 --> 00:00:48,223
+the rest is sort of downhill
+from here.
+
+21
+00:00:48,223 --> 00:00:51,870
+>> So, thank you for that
+intro,
+
+22
+00:00:51,870 --> 00:00:53,320
+that well-rehearsed intro,
+thank you.
+
+23
+00:00:54,555 --> 00:00:57,381
+>> Confirming the facts as
+you're saying them,
+
+24
+00:00:57,381 --> 00:00:58,600
+very good.
+
+25
+00:00:58,600 --> 00:01:01,744
+So I'm Aaron Levie, CEO and
+co-founder of Box.
+
+26
+00:01:01,744 --> 00:01:06,078
+Welcome to this edition of
+how to
+
+27
+00:01:06,078 --> 00:01:11,570
+build an enterprise software
+company.
+
+28
+00:01:11,570 --> 00:01:13,350
+That's my understanding.
+This is the course that
+
+29
+00:01:13,350 --> 00:01:16,110
+you're taking, right, is
+that correct?
+
+30
+00:01:16,110 --> 00:01:17,378
+>> No, okay, so.
+
+31
+00:01:18,946 --> 00:01:20,750
+>> Here's my job today.
+
+32
+00:01:20,750 --> 00:01:21,820
+My job is to try and
+
+33
+00:01:21,820 --> 00:01:25,210
+convince you that everybody
+else who speaks throughout
+
+34
+00:01:25,210 --> 00:01:28,040
+this whole class is wrong
+and that you
+
+35
+00:01:28,040 --> 00:01:30,060
+actually wanna build an
+enterprise software company.
+
+36
+00:01:30,060 --> 00:01:31,620
+And so hopefully we'll be
+able to
+
+37
+00:01:31,620 --> 00:01:33,900
+kinda work through this, and
+you'll have a good sense of
+
+38
+00:01:33,900 --> 00:01:37,740
+why it's super cool to be in
+the enterprise.
+
+39
+00:01:37,740 --> 00:01:40,570
+And why a lot of the
+perceptions of
+
+40
+00:01:40,570 --> 00:01:42,710
+going into the whole
+consumer space, where it's,
+
+41
+00:01:42,710 --> 00:01:44,300
+you know, so much fun and
+everything.
+
+42
+00:01:44,300 --> 00:01:45,520
+Why that's wrong and
+
+43
+00:01:45,520 --> 00:01:47,000
+why you wanna do enterprise
+software.
+
+44
+00:01:47,000 --> 00:01:49,260
+Who wants to build an
+enterprise software company?
+
+45
+00:01:49,260 --> 00:01:50,230
+Good, all right.
+
+46
+00:01:50,230 --> 00:01:51,420
+Thank you very much.
+
+47
+00:01:51,420 --> 00:01:53,782
+Hopefully we'll do a vote at
+the end and
+
+48
+00:01:53,782 --> 00:01:56,740
+hopefully that will not have
+shrunk.
+
+49
+00:01:56,740 --> 00:01:59,890
+So that's really actually
+the only goal I
+
+50
+00:01:59,890 --> 00:02:01,070
+have at this point.
+
+51
+00:02:01,070 --> 00:02:04,380
+So, we're gonna talk about
+three things today.
+
+52
+00:02:04,380 --> 00:02:07,780
+The first is the quick
+background and
+
+53
+00:02:07,780 --> 00:02:08,980
+history of Box.
+
+54
+00:02:08,980 --> 00:02:10,980
+Cuz when we started the
+company, we didn't know that
+
+55
+00:02:10,980 --> 00:02:13,960
+we wanted to do enterprise
+software and so I wanna kind
+
+56
+00:02:13,960 --> 00:02:16,310
+of get through a little bit
+about why we decided to
+
+57
+00:02:16,310 --> 00:02:18,880
+go after the enterprise and
+what we do today.
+
+58
+00:02:18,880 --> 00:02:20,350
+And then I'm gonna talk a
+little bit
+
+59
+00:02:20,350 --> 00:02:22,050
+about what are the major
+kind of factors that
+
+60
+00:02:22,050 --> 00:02:26,600
+have changed in enterprise
+software that make it
+
+61
+00:02:26,600 --> 00:02:28,880
+possible to do a start up
+today in this category.
+
+62
+00:02:28,880 --> 00:02:30,360
+And then finally we'll talk
+a little
+
+63
+00:02:30,360 --> 00:02:34,420
+about some patterns that you
+can kind of exploit and
+
+64
+00:02:34,420 --> 00:02:37,770
+some ways to recognize and
+ways to actually go
+
+65
+00:02:37,770 --> 00:02:39,860
+build an enterprise software
+company yourself and
+
+66
+00:02:41,410 --> 00:02:44,760
+hopefully that'll be some
+practical, useful advice.
+
+67
+00:02:44,760 --> 00:02:46,890
+Just as a forewarning, my
+voice,
+
+68
+00:02:46,890 --> 00:02:48,848
+as I've been speaking a lot
+the past couple days.
+
+69
+00:02:48,848 --> 00:02:51,600
+So hopefully, I'll be able
+to get to that third part of
+
+70
+00:02:51,600 --> 00:02:55,120
+the advice and actually be
+able to talk, so we'll see
+
+71
+00:02:55,120 --> 00:02:57,520
+how we make it but I'm gonna
+be downing a lot of water so
+
+72
+00:02:57,520 --> 00:02:59,300
+I apologize for that.
+
+73
+00:02:59,300 --> 00:03:01,420
+So building for the
+enterprise.
+
+74
+00:03:01,420 --> 00:03:03,020
+This is what we're gonna
+talk about.
+
+75
+00:03:03,020 --> 00:03:05,668
+So just quick kinda high
+level stats about Box.
+
+76
+00:03:05,668 --> 00:03:07,884
+We've about 240,000
+businesses that use
+
+77
+00:03:07,884 --> 00:03:09,080
+the product.
+
+78
+00:03:09,080 --> 00:03:12,402
+There are over 27 million
+users that have brought Box
+
+79
+00:03:12,402 --> 00:03:15,723
+into their organization and
+used it as individuals and
+
+80
+00:03:15,723 --> 00:03:18,550
+we're in about 99% of the
+Fortune 500.
+
+81
+00:03:18,550 --> 00:03:21,340
+Unfortunately that last 1%
+is really just Microsoft.
+
+82
+00:03:21,340 --> 00:03:23,539
+And they don't seem to wanna
+buy from us.
+
+83
+00:03:23,539 --> 00:03:24,930
+So.
+
+84
+00:03:24,930 --> 00:03:27,452
+>> We have to work on that a
+little bit.
+
+85
+00:03:27,452 --> 00:03:30,630
+But certainly, a decent
+amount of scale,
+
+86
+00:03:30,630 --> 00:03:33,050
+a lot of users that have
+brought Box into
+
+87
+00:03:33,050 --> 00:03:34,870
+enterprise environments,
+these are some of
+
+88
+00:03:34,870 --> 00:03:38,120
+the large organizations that
+are using the product.
+
+89
+00:03:38,120 --> 00:03:41,980
+So, a very wide range of
+industries, everything from
+
+90
+00:03:41,980 --> 00:03:45,290
+manufacturing and consumer
+products to companies like
+
+91
+00:03:45,290 --> 00:03:45,910
+General Electric.
+
+92
+00:03:46,940 --> 00:03:49,960
+Stanford Healthcare actually
+uses the product for
+
+93
+00:03:49,960 --> 00:03:52,370
+collaboration within the
+hospital environments and
+
+94
+00:03:52,370 --> 00:03:53,600
+the research.
+
+95
+00:03:53,600 --> 00:03:57,510
+But between healthcare,
+media, manufacturing.
+
+96
+00:03:57,510 --> 00:03:58,740
+These are the sort of the
+range of
+
+97
+00:03:58,740 --> 00:03:59,997
+industries that we serve.
+
+98
+00:03:59,997 --> 00:04:02,660
+So, the question's how did
+we get here?
+
+99
+00:04:02,660 --> 00:04:04,902
+Cuz we didn't really start
+the company to try and
+
+100
+00:04:04,902 --> 00:04:06,982
+go build an enterprise
+software company even
+
+101
+00:04:06,982 --> 00:04:09,780
+though that is how things
+ended up happening.
+
+102
+00:04:09,780 --> 00:04:12,430
+So when we started the
+product, so
+
+103
+00:04:12,430 --> 00:04:14,070
+we launched the company in
+2005.
+
+104
+00:04:14,070 --> 00:04:17,740
+We got the idea actually in
+college back in 2004.
+
+105
+00:04:17,740 --> 00:04:21,760
+And so, was anybody using
+the internet back in 2004?
+
+106
+00:04:21,760 --> 00:04:22,260
+Okay great.
+
+107
+00:04:23,910 --> 00:04:25,440
+So basically, I don't know
+if
+
+108
+00:04:26,550 --> 00:04:29,750
+millennials use the internet
+back then.
+
+109
+00:04:29,750 --> 00:04:30,260
+Sorry.
+
+110
+00:04:30,260 --> 00:04:30,971
+Okay, no more age jokes.
+
+111
+00:04:30,971 --> 00:04:31,772
+All right, here's the point.
+
+112
+00:04:31,772 --> 00:04:34,959
+So, back in 2004, you might
+remember that there wasn't
+
+113
+00:04:34,959 --> 00:04:36,377
+a lot to do on the internet.
+
+114
+00:04:36,377 --> 00:04:37,629
+It was actually kind of
+boring right?
+
+115
+00:04:38,650 --> 00:04:40,160
+This is before Facebook.
+
+116
+00:04:40,160 --> 00:04:42,220
+This is certainly before
+Snapchat.
+
+117
+00:04:42,220 --> 00:04:43,680
+So not a lot of things that
+you could go to,
+
+118
+00:04:43,680 --> 00:04:46,230
+you couldn't send people 15
+second messages and
+
+119
+00:04:46,230 --> 00:04:47,220
+photos that disappeared,
+
+120
+00:04:47,220 --> 00:04:49,090
+cuz you didn't even have a
+phone to send them photos.
+
+121
+00:04:50,660 --> 00:04:53,470
+So in the internet in 2004,
+there wasn't a lot going on.
+
+122
+00:04:53,470 --> 00:04:56,090
+This was basically what the
+internet looked like.
+
+123
+00:04:56,090 --> 00:04:59,240
+Sort of a barren, deserted
+landscape and
+
+124
+00:04:59,240 --> 00:05:01,770
+this was the internet and
+just to clarify,
+
+125
+00:05:01,770 --> 00:05:05,049
+the happy camel's Google and
+the sad camel's Yahoo!
+
+126
+00:05:05,049 --> 00:05:07,677
+>> And that was effectively
+the internet and
+
+127
+00:05:07,677 --> 00:05:11,115
+this is accurate, this is
+the internet in 2004.
+
+128
+00:05:11,115 --> 00:05:13,240
+Yahoo has done a lot better
+since then but,
+
+129
+00:05:13,240 --> 00:05:14,300
+but back in the middle 2000s
+
+130
+00:05:14,300 --> 00:05:16,360
+they were certainly trying
+to find their way and
+
+131
+00:05:16,360 --> 00:05:19,500
+Google was sort of taking
+over the world but
+
+132
+00:05:19,500 --> 00:05:22,300
+this was the entire, this
+was the extent of the world.
+
+133
+00:05:22,300 --> 00:05:25,403
+So, what we noticed in 2004
+in college was that it was,
+
+134
+00:05:25,403 --> 00:05:27,263
+for some reason, and this
+isn't so
+
+135
+00:05:27,263 --> 00:05:28,441
+much the case today but
+
+136
+00:05:28,441 --> 00:05:31,530
+back in 2004 it was like,
+really hard to share files.
+
+137
+00:05:31,530 --> 00:05:35,960
+And as simple of an idea as
+that is now, you go back
+
+138
+00:05:35,960 --> 00:05:39,730
+ten years and it was either
+really expensive or
+
+139
+00:05:39,730 --> 00:05:40,390
+it was really hard to
+
+140
+00:05:40,390 --> 00:05:42,755
+move data through different
+corporate networks.
+
+141
+00:05:42,755 --> 00:05:44,870
+So I had an internship at
+the time,
+
+142
+00:05:44,870 --> 00:05:49,380
+and in the internship, most
+of my job using data was
+
+143
+00:05:49,380 --> 00:05:53,080
+actually just to copy
+printed out pages and
+
+144
+00:05:53,080 --> 00:05:54,160
+then put them in cabinets.
+
+145
+00:05:55,570 --> 00:05:56,550
+That's what you do
+
+146
+00:05:56,550 --> 00:05:59,990
+as an intern if you're not a
+computer science student.
+
+147
+00:06:01,410 --> 00:06:03,595
+So I was really, really good
+at copying paper.
+
+148
+00:06:03,595 --> 00:06:06,640
+And unfortunately not a
+skill that has
+
+149
+00:06:06,640 --> 00:06:08,045
+really been useful today.
+
+150
+00:06:08,045 --> 00:06:10,060
+But, it was really hard to
+share files and
+
+151
+00:06:10,060 --> 00:06:11,980
+then in classroom
+environments you
+
+152
+00:06:11,980 --> 00:06:13,950
+were constantly working with
+lots of other people and
+
+153
+00:06:13,950 --> 00:06:15,370
+it was also hard to share
+files.
+
+154
+00:06:17,550 --> 00:06:18,860
+I went to USC.
+
+155
+00:06:18,860 --> 00:06:22,560
+And USC gave you 50
+megabytes of online storage
+
+156
+00:06:22,560 --> 00:06:24,010
+space in your email account.
+
+157
+00:06:24,010 --> 00:06:24,920
+50 megabytes.
+
+158
+00:06:24,920 --> 00:06:27,760
+So you can basically store
+about one file and
+
+159
+00:06:27,760 --> 00:06:30,210
+then it would auto-delete
+every six months.
+
+160
+00:06:32,030 --> 00:06:34,390
+I don't know who was running
+IT at the time but
+
+161
+00:06:34,390 --> 00:06:36,520
+they certainly didn't buy
+hard drives.
+
+162
+00:06:36,520 --> 00:06:39,320
+So, there was just really,
+really hard to store and
+
+163
+00:06:39,320 --> 00:06:39,880
+share files.
+
+164
+00:06:39,880 --> 00:06:41,260
+And so we said, well,
+
+165
+00:06:41,260 --> 00:06:43,380
+why don't we make it really
+easy to store and
+
+166
+00:06:43,380 --> 00:06:44,320
+share files from anywhere?
+
+167
+00:06:44,320 --> 00:06:46,100
+And so we got this idea for,
+
+168
+00:06:46,100 --> 00:06:48,230
+at the time it was called
+box.net.
+
+169
+00:06:48,230 --> 00:06:51,380
+And what we noticed was
+there were a bunch of
+
+170
+00:06:51,380 --> 00:06:55,040
+factors that had changed in
+the software world.
+
+171
+00:06:55,040 --> 00:06:57,720
+The first was that the cost
+of storage was sort of
+
+172
+00:06:57,720 --> 00:06:59,010
+dropping dramatically.
+
+173
+00:06:59,010 --> 00:07:02,490
+So, in our business,
+basically every year or
+
+174
+00:07:02,490 --> 00:07:05,450
+two, you can double the
+amount of data and
+
+175
+00:07:05,450 --> 00:07:07,122
+storage that goes in to a
+hard drive.
+
+176
+00:07:07,122 --> 00:07:12,390
+So, what was uneconomical
+two or three years ago,
+
+177
+00:07:12,390 --> 00:07:15,040
+all of the sudden becomes
+feasible because the cost of
+
+178
+00:07:15,040 --> 00:07:16,580
+computing and the cost of
+storage has dropped.
+
+179
+00:07:18,150 --> 00:07:21,076
+We had more powerful
+browsers and networks so
+
+180
+00:07:21,076 --> 00:07:24,618
+Firefox was just emerging,
+people were using the much
+
+181
+00:07:24,618 --> 00:07:27,159
+faster internet in both
+their homes and
+
+182
+00:07:27,159 --> 00:07:28,840
+in the classroom.
+
+183
+00:07:28,840 --> 00:07:30,810
+And then people had more
+locations that they
+
+184
+00:07:30,810 --> 00:07:32,400
+wanted to store and share
+information from.
+
+185
+00:07:32,400 --> 00:07:34,740
+And so we had these sort of
+three factors that all of
+
+186
+00:07:34,740 --> 00:07:36,300
+a sudden were emerging.
+
+187
+00:07:36,300 --> 00:07:38,490
+And I'm gonna sort of pull
+these factors back
+
+188
+00:07:38,490 --> 00:07:40,850
+later when I give some sort
+of tactical advice but
+
+189
+00:07:40,850 --> 00:07:44,210
+sort of the first point to
+remember is, always look for
+
+190
+00:07:44,210 --> 00:07:46,180
+these changing technology
+factors.
+
+191
+00:07:46,180 --> 00:07:48,823
+Cuz any market that has a
+significant change in
+
+192
+00:07:48,823 --> 00:07:51,196
+the underlying, either raw
+materials or
+
+193
+00:07:51,196 --> 00:07:54,180
+enabling factors is an
+environment that's about to
+
+194
+00:07:54,180 --> 00:07:56,167
+change in a very significant
+way.
+
+195
+00:07:56,167 --> 00:07:59,553
+And so we were very
+fortunate that basically
+
+196
+00:07:59,553 --> 00:08:02,846
+the need for data in the
+cloud was growing in
+
+197
+00:08:02,846 --> 00:08:05,133
+importance, and the cost and
+
+198
+00:08:05,133 --> 00:08:09,560
+the feasibility of doing it
+was also improving rapidly.
+
+199
+00:08:09,560 --> 00:08:11,918
+And so we decided to put
+together this really quick
+
+200
+00:08:11,918 --> 00:08:14,219
+version of Box, we launched
+it as box.net, and
+
+201
+00:08:14,219 --> 00:08:17,800
+the idea was, let's make it
+really easy to share files.
+
+202
+00:08:17,800 --> 00:08:20,380
+And it turned out that the
+idea clicked.
+
+203
+00:08:20,380 --> 00:08:22,320
+We got angel funding from
+this guy named Mark Cuban.
+
+204
+00:08:23,670 --> 00:08:25,110
+And this was before Shark
+Tank, but
+
+205
+00:08:25,110 --> 00:08:26,520
+it was very similar.
+
+206
+00:08:26,520 --> 00:08:29,120
+And so, we got this funding,
+and we decided that, okay.
+
+207
+00:08:29,120 --> 00:08:30,790
+This is gonna be super
+exciting.
+
+208
+00:08:30,790 --> 00:08:33,060
+We are going to drop out of
+college.
+
+209
+00:08:33,060 --> 00:08:34,450
+We're gonna move to the Bay
+Area, and
+
+210
+00:08:34,450 --> 00:08:35,510
+it's gonna be totally
+awesome.
+
+211
+00:08:36,780 --> 00:08:38,460
+And when you drop out of
+college.
+
+212
+00:08:38,460 --> 00:08:40,130
+Anybody drop out of college
+yet?
+
+213
+00:08:40,130 --> 00:08:41,565
+Okay, good, stay in school.
+
+214
+00:08:41,565 --> 00:08:44,340
+So when you drop out of
+college, like everyone sort
+
+215
+00:08:44,340 --> 00:08:46,090
+of pictures it, it's just
+gonna be, you know,
+
+216
+00:08:46,090 --> 00:08:48,750
+incredible, like Bill Gates
+dropped out of college.
+
+217
+00:08:48,750 --> 00:08:50,012
+It will be like Bill Gates,
+or
+
+218
+00:08:50,012 --> 00:08:51,676
+Michael Dell dropped out of
+college and
+
+219
+00:08:51,676 --> 00:08:53,695
+it'll be super exciting like
+Michael Dell, or
+
+220
+00:08:53,695 --> 00:08:55,309
+Steve Jobs dropped out of
+college, so
+
+221
+00:08:55,309 --> 00:08:56,970
+this is what people imagine.
+
+222
+00:08:56,970 --> 00:08:59,270
+But nobody ever remembers
+that this guy dropped out of
+
+223
+00:08:59,270 --> 00:08:59,890
+college also.
+
+224
+00:09:01,840 --> 00:09:05,160
+>> And, so it's not really a
+guarantee obviously that
+
+225
+00:09:05,160 --> 00:09:06,085
+it's gonna be successful.
+
+226
+00:09:06,085 --> 00:09:09,290
+But, it's what you do, and
+actually, funny,
+
+227
+00:09:09,290 --> 00:09:11,130
+I don't even know if this
+guy dropped out of college.
+
+228
+00:09:12,710 --> 00:09:14,510
+>> It just sort of looks
+like he had to.
+
+229
+00:09:18,400 --> 00:09:19,787
+>> I apologize if anyone's
+related to him,
+
+230
+00:09:19,787 --> 00:09:21,261
+it's just a funny picture on
+the internet.
+
+231
+00:09:21,261 --> 00:09:22,629
+So.
+
+232
+00:09:22,629 --> 00:09:24,744
+>> So basically we decided
+we would drop out of
+
+233
+00:09:24,744 --> 00:09:25,280
+college.
+
+234
+00:09:25,280 --> 00:09:27,670
+We moved up to first Berkley
+and
+
+235
+00:09:27,670 --> 00:09:30,245
+then we moved to Palo Alto a
+little bit thereafter.
+
+236
+00:09:30,245 --> 00:09:33,427
+And we decided that we were
+gonna open up the product
+
+237
+00:09:33,427 --> 00:09:34,100
+for free.
+
+238
+00:09:34,100 --> 00:09:36,920
+We got hundreds of thousands
+of people that would sign up
+
+239
+00:09:36,920 --> 00:09:39,470
+for the product every single
+month.
+
+240
+00:09:39,470 --> 00:09:42,533
+So, we had a free version of
+the product called,
+
+241
+00:09:42,533 --> 00:09:45,893
+if you went to box.net, you
+got a free one gigabyte of
+
+242
+00:09:45,893 --> 00:09:47,986
+file storage space, which
+was,
+
+243
+00:09:47,986 --> 00:09:51,224
+again, quite a bit back in
+2006 at this point.
+
+244
+00:09:51,224 --> 00:09:53,097
+But we were getting so many
+users and
+
+245
+00:09:53,097 --> 00:09:56,099
+we were trying to figure out
+what to do.
+
+246
+00:09:56,099 --> 00:09:59,195
+And what we ran into was a
+common problem that really
+
+247
+00:09:59,195 --> 00:10:02,220
+any startup runs into but
+was really pronounced by
+
+248
+00:10:02,220 --> 00:10:05,534
+our business model, which
+was that for consumers, we
+
+249
+00:10:05,534 --> 00:10:09,690
+had built a very robust, a
+very comprehensive product.
+
+250
+00:10:09,690 --> 00:10:11,175
+And for enterprises,
+
+251
+00:10:11,175 --> 00:10:14,940
+we had actually built too
+insignificant of a product.
+
+252
+00:10:14,940 --> 00:10:18,800
+So, for consumers, what we
+were running into was, we
+
+253
+00:10:18,800 --> 00:10:22,030
+had all these features that
+you could pay for but a lot
+
+254
+00:10:22,030 --> 00:10:24,070
+of the consumers didn't need
+all of those features.
+
+255
+00:10:24,070 --> 00:10:25,020
+And for enterprises,
+
+256
+00:10:25,020 --> 00:10:27,500
+we didn't really have
+enough, security.
+
+257
+00:10:27,500 --> 00:10:30,310
+And we didn't have enough
+capabilities around how
+
+258
+00:10:30,310 --> 00:10:32,220
+enterprises wanted to use
+their data.
+
+259
+00:10:32,220 --> 00:10:34,330
+So we basically had more
+functionality than what
+
+260
+00:10:34,330 --> 00:10:37,080
+a consumer wanted and less
+than what enterprise wanted.
+
+261
+00:10:37,080 --> 00:10:39,420
+And so we found ourselves at
+this juncture.
+
+262
+00:10:39,420 --> 00:10:42,380
+And we found ourselves
+basically in this
+
+263
+00:10:42,380 --> 00:10:45,090
+period where it's very
+difficult to figure out what
+
+264
+00:10:45,090 --> 00:10:46,820
+we wanted to go do with the
+business, so
+
+265
+00:10:46,820 --> 00:10:47,890
+we had to make a choice,
+right?
+
+266
+00:10:47,890 --> 00:10:52,360
+And so we were at this path
+where basically,
+
+267
+00:10:52,360 --> 00:10:53,380
+we're at a juncture where we
+had to
+
+268
+00:10:53,380 --> 00:10:55,090
+choose which path do go
+down.
+
+269
+00:10:55,090 --> 00:11:00,760
+And this was back in early,
+mid 2006, up to late 2006,
+
+270
+00:11:00,760 --> 00:11:02,970
+so I was, I think, 23 at the
+time.
+
+271
+00:11:02,970 --> 00:11:04,150
+The co-founder was, was 22.
+
+272
+00:11:04,150 --> 00:11:07,625
+Our founding team was even
+younger.
+
+273
+00:11:07,625 --> 00:11:09,540
+When we all dropped out of
+college.
+
+274
+00:11:09,540 --> 00:11:14,365
+And so back in 2006, 2007,
+we imagined these two
+
+275
+00:11:14,365 --> 00:11:18,580
+paths and the worlds were
+very, very different.
+
+276
+00:11:18,580 --> 00:11:21,150
+Like when you do a consumer
+start up,
+
+277
+00:11:21,150 --> 00:11:23,280
+it's basically just lots of
+fun.
+
+278
+00:11:23,280 --> 00:11:24,050
+And, you know?
+
+279
+00:11:24,050 --> 00:11:25,770
+You have parties all the
+time.
+
+280
+00:11:25,770 --> 00:11:27,902
+And it's just super
+exciting.
+
+281
+00:11:27,902 --> 00:11:29,330
+And then the enterprise,
+
+282
+00:11:29,330 --> 00:11:32,900
+you basically are battling
+these just large incumbents.
+
+283
+00:11:32,900 --> 00:11:34,700
+It's a fairly thankless, you
+know?
+
+284
+00:11:34,700 --> 00:11:35,730
+Model because you know?
+
+285
+00:11:35,730 --> 00:11:38,330
+People just generally hate
+enterprise software.
+
+286
+00:11:38,330 --> 00:11:40,805
+So that was sort of how we
+imagined that the two
+
+287
+00:11:40,805 --> 00:11:43,260
+paths was, we had to choose,
+you know,
+
+288
+00:11:43,260 --> 00:11:44,340
+one of these two worlds.
+
+289
+00:11:45,440 --> 00:11:46,340
+And so we looked at that and
+
+290
+00:11:46,340 --> 00:11:48,170
+we said okay, well consumer
+looks really fun,
+
+291
+00:11:48,170 --> 00:11:49,450
+enterprise looks really hard
+and,
+

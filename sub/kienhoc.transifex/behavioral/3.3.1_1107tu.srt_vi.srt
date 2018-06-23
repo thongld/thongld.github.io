@@ -1,0 +1,418 @@
+1
+00:00:02,500 --> 00:00:06,970
+Năm 2001, Drazen Prelec và Duncan Smister
+ đã tiến hành một vài thí nghiệm 
+
+2
+00:00:06,970 --> 00:00:10,350
+để tìm đáp án cho một câu hỏi rất đơn giản.
+
+3
+00:00:10,350 --> 00:00:16,390
+Liệu việc sử dụng thẻ tín dụng 
+có làm tăng chi tiêu?
+
+4
+00:00:16,390 --> 00:00:20,830
+Ý tưởng là kiểm tra xem
+ mức bằng lòng chi trả
+
+5
+00:00:20,830 --> 00:00:25,820
+có tăng lên khi dùng thẻ tín dụng
+thay tiền mặt không.
+
+6
+00:00:25,820 --> 00:00:31,240
+Báo cáo đưa ra 2 nghiên cứu nhưng 
+ ta sẽ chỉ tập trung vào một.
+
+7
+00:00:31,240 --> 00:00:34,320
+Đây là một thí nghiệm phòng lab 
+trong đó người tham gia đưa ra lựa chọn
+
+8
+00:00:34,320 --> 00:00:35,719
+dẫn đến kết quả trong thực tế.
+
+9
+00:00:35,719 --> 00:00:42,730
+Người tham dự gồm 64 nghiên cứu sinh chương trình MBA
+và thí nghiệm được thiết kế
+
+10
+00:00:42,730 --> 00:00:45,850
+dựa trên một yếu tố chia thành hai cấp độ.
+
+11
+00:00:45,850 --> 00:00:50,719
+Yếu tố này là phương thức thanh toán được sử dụng, 
+và người tham gia 
+
+12
+00:00:50,719 --> 00:00:54,649
+chọn dùng thẻ tín dụng hay tiền mặt.
+
+13
+00:00:54,649 --> 00:00:59,379
+Tiến trình của thí nghiệm này khá đơn giản.
+
+14
+00:00:59,379 --> 00:01:02,600
+Người tham gia thí nghiệm tham gia đấu giá
+
+15
+00:01:02,600 --> 00:01:04,820
+để mua một tấm vé vào một sự kiện thể thao.
+
+16
+00:01:04,820 --> 00:01:08,280
+Trên thực tế, họ được yêu cầu viết số tiền
+
+17
+00:01:08,280 --> 00:01:11,810
+mà họ sẽ bỏ ra cho 3 sản phẩm.
+
+18
+00:01:11,810 --> 00:01:16,710
+Đầu tiên là cặp vé cho trận đấu giữa 
+hai đội Boston Celtics và Miami,
+
+19
+00:01:16,710 --> 00:01:21,680
+thứ hai là cặp vé trận đấu có đội Red Sox Toronto,
+
+20
+00:01:21,680 --> 00:01:27,150
+và thứ ba là giải khuyến khích, gồm một biểu ngữ của đội Celtics
+
+21
+00:01:27,150 --> 00:01:30,380
+và một biểu ngữ của Red Sox.
+
+22
+00:01:30,380 --> 00:01:34,870
+Luật để quyết định ai là người thắng cuộc như sau.
+
+23
+00:01:34,870 --> 00:01:39,791
+Buổi đấu giá dựa theo hình thức đấu giá kín theo giá thứ hai
+
+24
+00:01:39,791 --> 00:01:44,630
+trong đó người thắng cuộc
+ là người đưa ra giá cao nhất,
+
+25
+00:01:44,630 --> 00:01:49,869
+nhưng giá bán ra sẽ bằng với giá cao thứ hai.
+
+26
+00:01:49,869 --> 00:01:54,420
+Ở trường hợp dùng thẻ tín dụng, người tham gia
+được biết rằng
+
+27
+00:01:54,420 --> 00:01:58,729
+việc thanh toán được thực hiện bằng thẻ tín dụng,
+ và họ được yêu cầu viết ra
+
+28
+00:01:58,729 --> 00:02:03,219
+chi tiết thẻ, loại thẻ, ngày hết hạn, vân vân
+
+29
+00:02:03,219 --> 00:02:07,740
+và vân vân, y như những gì cần làm
+ khi đặt hàng hay cần dịch vụ
+
+30
+00:02:07,740 --> 00:02:10,040
+sử dụng thẻ tín dụng.
+
+31
+00:02:10,040 --> 00:02:12,520
+Ở trường hợp dùng tiền mặt,
+ người tham gia được cho biết rằng
+
+32
+00:02:12,520 --> 00:02:14,630
+họ sẽ phải trả bằng tiền mặt.
+
+33
+00:02:14,630 --> 00:02:22,840
+Họ được dùng máy ATM, vì vậy việc có sẵn tiền mặt 
+hay không không phải là vấn đề.
+
+34
+00:02:22,840 --> 00:02:27,250
+Phương pháp phân tích dữ liệu chỉ đơn thuần
+ là so sánh phương tiện thanh toán giữa hai nhóm,
+
+35
+00:02:27,250 --> 00:02:30,760
+nhóm sử dụng thẻ và nhóm dùng tiền mặt,
+
+36
+00:02:30,760 --> 00:02:33,660
+và kết quả như sau.
+
+37
+00:02:33,660 --> 00:02:40,340
+Ở biểu đồ này, các cột màu xám thể hiện
+ trung bình chung
+
+38
+00:02:40,340 --> 00:02:45,010
+của nhóm trả bằng tiền mặt, còn cột màu đỏ
+
+39
+00:02:45,010 --> 00:02:48,200
+cho thấy trung bình chung của
+ nhóm dùng thẻ tín dụng.
+
+40
+00:02:48,200 --> 00:02:54,010
+Trong cả 3 giải thưởng, vé vào trận có Celtics, 
+có Red Sox
+
+41
+00:02:54,010 --> 00:03:00,290
+hay biểu ngữ, bạn thấy rằng các cột đỏ
+ luôn lớn hơn hay cao hơn
+
+42
+00:03:00,290 --> 00:03:03,519
+các cột màu xám.
+
+43
+00:03:03,519 --> 00:03:07,909
+Tuy nhiên, sự khác biệt giữa 2 cột rõ ràng 
+
+44
+00:03:07,909 --> 00:03:16,000
+với vé xem trận đấu của Celtics, của Red Sox,
+
+45
+00:03:16,000 --> 00:03:25,020
+nhưng không phải là biểu ngữ, 
+điều này được thể hiện qua các giá trị t.
+
+46
+00:03:25,020 --> 00:03:26,020
+Năm 2001, Drazen Prelec và Duncan Smister 
+đã tiến hành một vài thí nghiệm
+
+47
+00:03:26,020 --> 00:03:27,020
+ với một câu hỏi rất đơn giản: 
+Liệu sử dụng thẻ tín dụng có làm tăng chi tiêu?
+
+48
+00:03:27,020 --> 00:03:28,020
+Trong báo cáo, ý tưởng là kiểm tra xem
+mức bằng lòng chi trả có tăng không 
+
+49
+00:03:28,020 --> 00:03:29,020
+khi dùng thẻ tín dụng thay tiền mặt.
+
+50
+00:03:29,020 --> 00:03:30,020
+Báo cáo trình bày 2 nghiên cứu 
+nhưng ta sẽ chỉ tập trung vào một. 
+
+51
+00:03:30,020 --> 00:03:31,020
+Đây là một thí nghiệm phòng lab trong đó người tham dự đưa ra lựa chọn 
+
+52
+00:03:31,020 --> 00:03:32,020
+có thể có hiệu quả thật sự. Người tham gia gồm 64 nghiên cứu sinh chương trình thạc sĩ quản trị kinh doanh, 
+
+53
+00:03:32,020 --> 00:03:33,020
+và thí nghiệm được thiết kế dựa trên một yếu tố chia thành hai cấp độ. 
+
+54
+00:03:33,020 --> 00:03:34,020
+Yếu tố này là phương thức thanh toán được sử dụng, và người tham gia 
+
+55
+00:03:34,020 --> 00:03:35,020
+hoặc dùng thẻ tín dụng hay tiền mặt. 
+
+56
+00:03:35,020 --> 00:03:36,020
+Tiến trình của thí nghiệm này khá đơn giản. 
+
+57
+00:03:36,020 --> 00:03:37,020
+Người tham gia thí nghiệm tham gia đấu giá 
+
+58
+00:03:37,020 --> 00:03:38,020
+để mua một tấm vé vào một sự kiện thể thao. 
+
+59
+00:03:38,020 --> 00:03:39,020
+mà họ sẽ bỏ ra cho ba sản phẩm. 
+
+60
+00:03:39,020 --> 00:03:40,020
+Đầu tiên là một cặp vé cho trận đấu giữa hai đội Boston Celtics và Miami, 
+
+61
+00:03:40,020 --> 00:03:41,020
+thứ hai là cặp vé trận đấu có đội Red Sox Toronto 
+
+62
+00:03:41,020 --> 00:03:42,020
+và thứ ba là giải khuyến khích, gồm một biểu ngữ của đội Celtics 
+
+63
+00:03:42,020 --> 00:03:43,020
+và một biểu ngữ của Red Sox. Luật để quyết định ai là người thắng cuộc như sau. 
+
+64
+00:03:43,020 --> 00:03:44,020
+Buổi đấu giá dựa theo luật đấu giá giá cao thứ hai, tức là 
+
+65
+00:03:44,020 --> 00:03:45,020
+người thắng cuộc là người đưa ra giá cáo nhất,
+
+66
+00:03:45,020 --> 00:03:46,020
+nhưng giá bán ra sẽ bằng với giá cao thứ hai. 
+
+67
+00:03:46,020 --> 00:03:47,020
+Ở trường hợp dùng thẻ tín dụng, người tham được bảo rằng 
+
+68
+00:03:47,020 --> 00:03:48,020
+việc thanh toán được thực hiện bằng thẻ tín dụng, và được yêu cầu viết 
+
+69
+00:03:48,020 --> 00:03:49,020
+chi tiết thẻ của họ, gồm loại thẻ, ngày hết hạn, vân vân 
+
+70
+00:03:49,020 --> 00:03:50,020
+y như những gì họ cần làm khi đặt hàng hay dịch vụ 
+
+71
+00:03:50,020 --> 00:03:51,020
+mà sử dụng thẻ tín dụng. 
+
+72
+00:03:51,020 --> 00:03:52,020
+Ở trường hợp dùng tiền mặt, người tham gia được cho biết rằng 
+
+73
+00:03:52,020 --> 00:03:53,020
+họ sẽ phải trả bằng tiền mặt. Họ được dùng máy ATM, vì vậy việc có sẵn tiền mặt không phải là vấn đề. 
+
+74
+00:03:53,020 --> 00:03:54,020
+Phương pháp phân tích dữ liệu chỉ đơn thuần là so sánh giữa hai phương tiện thanh toán giữa hai nhóm, 
+
+75
+00:03:54,020 --> 00:03:55,020
+nhóm sử dụng thẻ và nhóm dùng tiền mặt, 
+
+76
+00:03:55,020 --> 00:03:56,020
+và kết quả như sau. 
+
+77
+00:03:56,020 --> 00:03:57,020
+Ở biểu đồ này, các cột màu xám thể hiện mặt bằng chung 
+
+78
+00:03:57,020 --> 00:03:58,020
+của nhóm trả bằng tiền mặt, còn cột màu đỏ 
+
+79
+00:03:58,020 --> 00:03:59,020
+cho thấy mặt bằng chung của nhóm dùng thẻ tín dụng. 
+
+80
+00:03:59,020 --> 00:04:00,020
+Trong cả ba giải thưởng, vé vào trận có Celtics, có Red Sox 
+
+81
+00:04:00,020 --> 00:04:01,020
+hay biểu ngữ, bạn thấy rằng các cột đỏ luôn lớn hơn hay cao hơn 
+
+82
+00:04:01,020 --> 00:04:02,020
+các cột màu xám. 
+
+83
+00:04:02,020 --> 00:04:03,020
+Tuy nhiên, sự khác biệt giữa hai cột là đáng kể 
+
+84
+00:04:03,020 --> 00:04:04,020
+đối với vé xem trận đấu của Celtics, của Red Sox, nhưng không phải là biểu ngữ, điều này được thể hiện qua các giá trị t 
+
+85
+00:04:04,020 --> 00:04:05,020
+Hãy nhớ là ta đã nói rằng kiểm định thống kê
+
+86
+00:04:05,020 --> 00:04:06,020
+có thể được chuyển thành giá trị điểm p.
+
+87
+00:04:06,020 --> 00:04:07,020
+Trong hầu hết các phân tích thí nghiệm,
+ nếu p nhỏ hơn 5% nghĩa là
+
+88
+00:04:07,020 --> 00:04:08,020
+sự chênh lệch rất lớn.
+Nếu p vượt quá 5%, tương đương 0.05
+
+89
+00:04:08,020 --> 00:04:09,020
+thì thực tế sự chênh lệch là không đáng kể,
+
+90
+00:04:09,020 --> 00:04:10,020
+hay chúng không khác nhau.
+
+91
+00:04:10,020 --> 00:04:11,020
+Thí nghiệm này cho thấy điều gì? 
+Sử dụng thiết kế 2 điều kiện đơn giản
+
+92
+00:04:11,020 --> 00:04:12,020
+Prelec và Simister cho thấy việc
+ mua một sản phẩm với thẻ tín dụng
+
+93
+00:04:12,020 --> 00:04:13,020
+thay vì tiền mặt làm tăng khả năng
+ chi tiêu của mọi người.
+
+94
+00:04:13,020 --> 00:04:14,020
+Như bạn có thể thấy, theo những số liệu này,
+
+95
+00:04:14,020 --> 00:04:15,810
+số tiền mà họ sẵn sàng chi là khoảng 113% cho vé Celtics
+
+96
+00:04:15,810 --> 00:04:22,490
+76%  cho vé Red Sox và 59% cho các biểu ngữ,
+
+97
+00:04:22,490 --> 00:04:25,320
+dù thế, một lần nữa, sự chênh lệch là không đáng kể.
+

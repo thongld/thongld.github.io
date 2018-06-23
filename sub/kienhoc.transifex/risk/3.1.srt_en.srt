@@ -1,0 +1,860 @@
+0
+00:00:05,199 --> 00:00:10,450
+Welcome, we have been talking about Project Risk Assessment.
+https://youtu.be/ay0zpJ1lHHM
+1
+00:00:10,450 --> 00:00:17,133
+And this is one area where we are using a lot of statistics.
+
+2
+00:00:17,133 --> 00:00:19,878
+So, we spent a lot of time on, first of all,
+
+3
+00:00:19,878 --> 00:00:24,730
+as always trying to understand why the heck are we talking about this.
+
+4
+00:00:24,730 --> 00:00:27,240
+Second, doing a lot of statistics.
+
+5
+00:00:27,240 --> 00:00:29,970
+And, I left you with some data last time.
+
+6
+00:00:29,970 --> 00:00:34,800
+I&#39;m not gonna put it up, you have it and the data showed two kinds of data.
+
+7
+00:00:34,800 --> 00:00:40,550
+One on portfolios to show how risk and return have gone hand in hand,
+
+8
+00:00:40,550 --> 00:00:44,950
+over the last several decades, that was the US data.
+
+9
+00:00:45,950 --> 00:00:49,620
+And some startling numbers as high as over 20% for
+
+10
+00:00:49,620 --> 00:00:52,320
+small portfolios, and so on so forth.
+
+11
+00:00:52,320 --> 00:00:55,710
+So, we talked about that just to set things up.
+
+12
+00:00:56,750 --> 00:01:01,310
+Because what we are headed towards is how do you measure risk and
+
+13
+00:01:01,310 --> 00:01:06,340
+how do you relate it to return which in the end, becomes the cost of capital?
+
+14
+00:01:06,340 --> 00:01:09,710
+A lot of steps, but we have to go carefully.
+
+15
+00:01:09,710 --> 00:01:14,309
+The second piece of data I left you with was should 11 stocks
+
+16
+00:01:15,720 --> 00:01:19,830
+and they were taken from the US Stock Market data, and
+
+17
+00:01:19,830 --> 00:01:22,920
+showed you the validity or standard deviation.
+
+18
+00:01:22,920 --> 00:01:25,770
+When I say validity, standard deviation,
+
+19
+00:01:25,770 --> 00:01:29,370
+I&#39;m just trying to distinguish between variance and standard deviation.
+
+20
+00:01:30,740 --> 00:01:32,605
+And I showed you some data for
+
+21
+00:01:32,605 --> 00:01:37,436
+11 stocks over a reasonably long period of time, and then S&amp;P 500.
+
+22
+00:01:37,436 --> 00:01:41,130
+And I had left you with the question, what&#39;s going on?
+
+23
+00:01:41,130 --> 00:01:46,535
+And by that I meant, why is it that the average of the 11
+
+24
+00:01:46,535 --> 00:01:51,825
+individual stocks chosen across a lot of industries,
+
+25
+00:01:51,825 --> 00:01:56,655
+not just one, was so much higher than the standard
+
+26
+00:01:56,655 --> 00:02:01,144
+deviation of the portfolio as simply 500?
+
+27
+00:02:01,144 --> 00:02:05,390
+You could also do an interesting exercise, which we will do today, actually.
+
+28
+00:02:05,390 --> 00:02:11,380
+Combine securities into portfolios and then see the effect on volatility.
+
+29
+00:02:11,380 --> 00:02:14,670
+But wanted to set up some interesting data.
+
+30
+00:02:14,670 --> 00:02:19,745
+And I think if you average the 11 individual securities
+
+31
+00:02:19,745 --> 00:02:26,087
+you get about 27% there about, whereas the S&amp;P 500 is 15% and
+
+32
+00:02:26,087 --> 00:02:32,790
+it&#39;s the lowest of all 12, 11 stocks and then, that should be right.
+
+33
+00:02:32,790 --> 00:02:35,840
+So that&#39;s giving you a hint of what&#39;s going on.
+
+34
+00:02:35,840 --> 00:02:40,550
+And what&#39;s going on rarely is the reason why we hold portfolio as
+
+35
+00:02:40,550 --> 00:02:44,009
+risk of those people is that you&#39;ll diversify risk.
+
+36
+00:02:45,170 --> 00:02:49,330
+And today what we are going to talk about is, what is diversification?
+
+37
+00:02:49,330 --> 00:02:50,660
+How does it work?
+
+38
+00:02:50,660 --> 00:02:56,100
+We&#39;ll step by step use again some data, so I&#39;ll pull up some
+
+39
+00:02:56,100 --> 00:03:01,550
+data again from stock-data file so that we&#39;re up to speed.
+
+40
+00:03:01,550 --> 00:03:04,600
+And is you recall I have an S&amp;P 500 in there.
+
+41
+00:03:04,600 --> 00:03:07,130
+So, there&#39;s a reason for that.
+
+42
+00:03:07,130 --> 00:03:10,870
+So please go back and forth with the data file when you do it.
+
+43
+00:03:10,870 --> 00:03:14,950
+And I&#39;m gonna spend a ton of time on it, because we also have an assignment, but
+
+44
+00:03:14,950 --> 00:03:17,860
+enough so that you can do the assignment on your own.
+
+45
+00:03:17,860 --> 00:03:19,440
+So let&#39;s get started.
+
+46
+00:03:19,440 --> 00:03:21,900
+So diversification is the concept
+
+47
+00:03:21,900 --> 00:03:26,250
+of reduction in the standard deviation of volatility.
+
+48
+00:03:26,250 --> 00:03:30,300
+For portfolio of stocks combined and
+
+49
+00:03:30,300 --> 00:03:34,430
+if you were to average the risk of the stocks,
+
+50
+00:03:34,430 --> 00:03:39,960
+measuring standard deviation, it would be much higher than the standard
+
+51
+00:03:39,960 --> 00:03:45,410
+deviation of the portfolio of stocks so be careful and we&#39;ll see why.
+
+52
+00:03:45,410 --> 00:03:46,330
+Okay.
+
+53
+00:03:46,330 --> 00:03:47,260
+Remember though,
+
+54
+00:03:47,260 --> 00:03:51,060
+at the background, there are two types of risks underlying everything.
+
+55
+00:03:51,060 --> 00:03:53,230
+One is market.
+
+56
+00:03:53,230 --> 00:03:56,700
+One is specific to the stock, or the asset,
+
+57
+00:03:56,700 --> 00:03:59,700
+or whatever you are combining into a portfolio.
+
+58
+00:03:59,700 --> 00:04:02,160
+And hint, big picture.
+
+59
+00:04:02,160 --> 00:04:06,540
+Which of these two risks will get reduced.
+
+60
+00:04:06,540 --> 00:04:10,640
+In other words, will it be the market risk that&#39;s common to the stuff, or
+
+61
+00:04:10,640 --> 00:04:14,290
+will it be specific risk that will tend to cancel?
+
+62
+00:04:15,370 --> 00:04:16,870
+And the answer&#39;s pretty obvious.
+
+63
+00:04:16,870 --> 00:04:19,150
+And I&#39;ll leave it there for a second and come back to it.
+
+64
+00:04:20,950 --> 00:04:23,840
+So Diversification, 1 asset.
+
+65
+00:04:23,840 --> 00:04:25,540
+Let&#39;s start slowly.
+
+66
+00:04:25,540 --> 00:04:31,220
+Suppose for some reason you just decide that Google is your portfolio,
+
+67
+00:04:31,220 --> 00:04:37,370
+in other words, you buy the Google stock and that comprises your portfolio.
+
+68
+00:04:37,370 --> 00:04:41,790
+We&#39;ll go very slowly, I won&#39;t even right here often,
+
+69
+00:04:41,790 --> 00:04:44,179
+because I want you to kind of write for yourself.
+
+70
+00:04:45,210 --> 00:04:46,430
+First question.
+
+71
+00:04:46,430 --> 00:04:48,520
+How would you measure the risk of Google?
+
+72
+00:04:48,520 --> 00:04:51,000
+Or that specific stock?
+
+73
+00:04:51,000 --> 00:04:55,120
+And the answer is the standard deviation of Google.
+
+74
+00:04:55,120 --> 00:05:00,480
+So, you&#39;ll get a bunch of returns, like we have in our database,
+
+75
+00:05:00,480 --> 00:05:05,750
+and you can do this for yourself by going to Google, getting the data download.
+
+76
+00:05:05,750 --> 00:05:08,260
+Going to Yahoo Finance or some other data source.
+
+77
+00:05:08,260 --> 00:05:11,060
+There&#39;s some better data sources than others but
+
+78
+00:05:11,060 --> 00:05:13,050
+right now let&#39;s just focus on the concept.
+
+79
+00:05:14,130 --> 00:05:15,790
+How do you measure the risk of Google?
+
+80
+00:05:15,790 --> 00:05:19,020
+Well you&#39;ll take five years worth of data or more.
+
+81
+00:05:19,020 --> 00:05:21,840
+Hopefully representative data.
+
+82
+00:05:21,840 --> 00:05:25,850
+You&#39;ll see the data set assignments I&#39;ve given you, I&#39;m trying to capture that.
+
+83
+00:05:25,850 --> 00:05:30,483
+What I mean by representative is, even five years picked in a bad time,
+
+84
+00:05:30,483 --> 00:05:35,210
+is not represented, because we don&#39;t fortunately only see bad times.
+
+85
+00:05:36,240 --> 00:05:37,830
+So, how would you measure the risk?
+
+86
+00:05:37,830 --> 00:05:38,700
+The standard deviation.
+
+87
+00:05:40,420 --> 00:05:42,900
+How would you measure the risk of your portfolio?
+
+88
+00:05:42,900 --> 00:05:45,250
+Remember, right now, for
+
+89
+00:05:45,250 --> 00:05:50,380
+some reason you have chosen to have only one asset in your whole portfolio.
+
+90
+00:05:50,380 --> 00:05:52,870
+So what will be the risk of the portfolio?
+
+91
+00:05:52,870 --> 00:05:57,287
+I promised you that I wouldn&#39;t talk about
+
+92
+00:05:57,287 --> 00:06:01,540
+right and I&#39;m gonna stick to that for a little while.
+
+93
+00:06:01,540 --> 00:06:06,160
+So standard deviation of Google is equal to standard division of your portfolio.
+
+94
+00:06:07,450 --> 00:06:08,190
+If instead,
+
+95
+00:06:08,190 --> 00:06:12,970
+you only invested in Microsoft, what would be the risk of your portfolio?
+
+96
+00:06:12,970 --> 00:06:17,350
+The volatility or standard deviation of Microsoft&#39;s return.
+
+97
+00:06:18,500 --> 00:06:21,730
+So it&#39;s pretty straightforward and simple.
+
+98
+00:06:21,730 --> 00:06:24,170
+So another question which is not up there.
+
+99
+00:06:24,170 --> 00:06:27,830
+What will be the expected return of your portfolio?
+
+100
+00:06:27,830 --> 00:06:32,010
+Expected return of you portfolio is easy, so we won&#39;t spend too much time on it.
+
+101
+00:06:32,010 --> 00:06:34,650
+Except when we do some examples.
+
+102
+00:06:34,650 --> 00:06:39,120
+The expected return in this case has to be the expected return on Google or
+
+103
+00:06:39,120 --> 00:06:39,920
+Microsoft.
+
+104
+00:06:39,920 --> 00:06:41,890
+Remember you&#39;re holding only one.
+
+105
+00:06:41,890 --> 00:06:45,030
+This is an artificial exercise.
+
+106
+00:06:45,030 --> 00:06:47,990
+So quick going back to risk
+
+107
+00:06:47,990 --> 00:06:53,720
+what is the relationship between the risk of your portfolio and the risk of Google?
+
+108
+00:06:53,720 --> 00:06:55,370
+They&#39;re identical.
+
+109
+00:06:55,370 --> 00:06:57,380
+So there&#39;s nothing to worry about.
+
+110
+00:06:57,380 --> 00:07:00,270
+But the world is not simple.
+
+111
+00:07:00,270 --> 00:07:05,980
+We do not hold one security and the reason is very simple it does diversification.
+
+112
+00:07:05,980 --> 00:07:09,560
+We do not want to put all our eggs in one basket.
+
+113
+00:07:09,560 --> 00:07:13,270
+Which by the way makes a lot of sense if you&#39;re risk averse right?
+
+114
+00:07:13,270 --> 00:07:18,120
+Because if you are risk averse, why would you ride on only one thing?
+
+115
+00:07:18,120 --> 00:07:21,460
+You may have fun but you may fall drastically and
+
+116
+00:07:21,460 --> 00:07:23,740
+lose everything especially in stocks.
+
+117
+00:07:25,470 --> 00:07:27,810
+So let&#39;s go on to two assets.
+
+118
+00:07:27,810 --> 00:07:29,610
+Set up the intuition and
+
+119
+00:07:29,610 --> 00:07:33,500
+then we&#39;ll take a little bit of a break before we get into the mechanics of it.
+
+120
+00:07:33,500 --> 00:07:37,220
+So today I&#39;m going to do both the intuition and the mechanics and the data.
+
+121
+00:07:39,190 --> 00:07:42,060
+Suppose instead you say, no, no, no.
+
+122
+00:07:42,060 --> 00:07:43,870
+This was not a good exercise.
+
+123
+00:07:43,870 --> 00:07:47,321
+Let&#39;s imagine I have two securities in my portfolio.
+
+124
+00:07:47,321 --> 00:07:49,970
+And let&#39;s say they&#39;re Google and Microsoft.
+
+125
+00:07:49,970 --> 00:07:51,460
+Remember later we&#39;ll use data,
+
+126
+00:07:51,460 --> 00:07:56,050
+and right now I&#39;m just having fun with names of well-known companies.
+
+127
+00:07:56,050 --> 00:07:58,390
+So I have Google and Microsoft.
+
+128
+00:07:58,390 --> 00:08:02,870
+How would you measure the risk of each of the two stocks.
+
+129
+00:08:04,370 --> 00:08:09,970
+Again, how would you measure the risk of each of the two stocks in isolation?
+
+130
+00:08:09,970 --> 00:08:10,600
+Very simple.
+
+131
+00:08:12,080 --> 00:08:16,330
+The risk of Microsoft will be sigma hat, Microsoft.
+
+132
+00:08:17,490 --> 00:08:18,390
+So let me right it.
+
+133
+00:08:19,620 --> 00:08:24,708
+So sigma hat MS is Microsoft&#39;s risk.
+
+134
+00:08:24,708 --> 00:08:30,460
+Sigma hat, Google.
+
+135
+00:08:30,460 --> 00:08:31,210
+Yes?
+
+136
+00:08:31,210 --> 00:08:33,710
+Google. They have symbols, MSFD,
+
+137
+00:08:33,710 --> 00:08:36,490
+I think is the symbol, and so on and so forth.
+
+138
+00:08:36,490 --> 00:08:37,830
+But here I&#39;m just having fun.
+
+139
+00:08:37,830 --> 00:08:40,350
+Okay, so this is very simple.
+
+140
+00:08:40,350 --> 00:08:42,570
+You also know how to calculate, right?
+
+141
+00:08:42,570 --> 00:08:44,790
+So if I gave you data on Microsoft and
+
+142
+00:08:44,790 --> 00:08:48,420
+Google, in fact I encourage you to, go ahead and try to get it.
+
+143
+00:08:49,790 --> 00:08:55,370
+Second, how would you measure the average risk of the two?
+
+144
+00:08:55,370 --> 00:08:58,113
+So this goes back to the graph I showed you last time.
+
+145
+00:08:58,113 --> 00:09:02,260
+I showed 11 stocks and I asked you, what is the average of the standard deviation?
+
+146
+00:09:02,260 --> 00:09:04,780
+What would you do if it&#39;s a simple average?
+
+147
+00:09:04,780 --> 00:09:06,546
+You&#39;ll just take half.
+
+148
+00:09:08,008 --> 00:09:15,390
+And add sigma hat Google, plus sigma hat Microsoft.
+
+149
+00:09:15,390 --> 00:09:17,440
+It&#39;s pretty straightforward, right?
+
+150
+00:09:17,440 --> 00:09:24,510
+So to lie, everything is nice, but now comes the trick question.
+
+151
+00:09:25,580 --> 00:09:28,440
+How would you measure the risk of your portfolio?
+
+152
+00:09:30,100 --> 00:09:33,510
+So this is where things become really really tricky.
+
+153
+00:09:33,510 --> 00:09:34,780
+Why?
+
+154
+00:09:34,780 --> 00:09:39,310
+Because the risk of your portfolio is a combination of the two.
+
+155
+00:09:40,660 --> 00:09:45,810
+And let us assume for simplicity that you&#39;re putting, we&#39;ll see this.
+
+156
+00:09:45,810 --> 00:09:49,465
+You&#39;re putting half of your money, your $100,
+
+157
+00:09:49,465 --> 00:09:52,889
+you put $50 in Microsoft and $50 in Google.
+
+158
+00:09:52,889 --> 00:09:55,273
+So that&#39;s the first thing you have to decide.
+
+159
+00:09:55,273 --> 00:09:59,315
+As soon as you decide a portfolio, you have to figure out how much in one,
+
+160
+00:09:59,315 --> 00:10:01,390
+how much in the other.
+
+161
+00:10:01,390 --> 00:10:05,830
+If you&#39;re investing all in one the weight on 100% is on Google.
+
+162
+00:10:05,830 --> 00:10:08,454
+If all in Microsoft, 100% rate.
+
+163
+00:10:08,454 --> 00:10:12,940
+So as soon as you form a portfolio, you&#39;re essentially, first question you have to
+
+164
+00:10:12,940 --> 00:10:17,280
+decide today, because you&#39;re the decision maker, is how much in each?
+
+165
+00:10:17,280 --> 00:10:21,380
+And by the way, a lot of financial companies try to
+
+166
+00:10:21,380 --> 00:10:26,200
+make you feel like it is they who are helping you make the decision, and
+
+167
+00:10:26,200 --> 00:10:27,790
+therefore, charging you for it.
+
+168
+00:10:27,790 --> 00:10:28,850
+No.
+
+169
+00:10:28,850 --> 00:10:32,020
+If you understand the basics of what we are talking about you will have
+
+170
+00:10:32,020 --> 00:10:34,180
+very simple strategies and
+
+171
+00:10:34,180 --> 00:10:39,700
+you can minimize transaction costs by holding diversified portfolios.
+
+172
+00:10:39,700 --> 00:10:44,550
+That is assuming you&#39;re risk averse and assuming you&#39;re willing to buy the notion
+
+173
+00:10:44,550 --> 00:10:47,240
+that if trading is happening at the stock market,
+
+174
+00:10:47,240 --> 00:10:51,900
+it&#39;s very very difficult to beat the stock market.
+
+175
+00:10:51,900 --> 00:10:53,800
+All of us think we can.
+
+176
+00:10:53,800 --> 00:10:55,230
+So this is where we are headed.
+
+177
+00:10:55,230 --> 00:10:57,920
+What is the risk of the portfolio?
+
+178
+00:10:57,920 --> 00:11:02,150
+And I will call that, for simplicity, sigma p hat.
+
+179
+00:11:05,230 --> 00:11:08,390
+Okay, so just contextually.
+
+180
+00:11:08,390 --> 00:11:14,160
+And I will leave it here to make you kind of think about what that means.
+
+181
+00:11:14,160 --> 00:11:19,369
+And let me write down the portfolio return as xa
+
+182
+00:11:19,369 --> 00:11:25,460
+Ra + xb Rb.
+
+183
+00:11:26,490 --> 00:11:30,290
+So the portfolio now becomes a weighted average of the two.
+
+184
+00:11:30,290 --> 00:11:33,440
+So we&#39;ll do these xaRas and all that soon.
+
+185
+00:11:33,440 --> 00:11:37,070
+And I&#39;ll reintroduce talk very carefully about them.
+
+186
+00:11:37,070 --> 00:11:37,730
+What is xa?
+
+187
+00:11:37,730 --> 00:11:39,800
+The weight in a.
+
+188
+00:11:39,800 --> 00:11:40,580
+What is a?
+
+189
+00:11:40,580 --> 00:11:42,230
+In our case, Google, what is b?
+
+190
+00:11:42,230 --> 00:11:43,810
+In our case, Microsoft.
+
+191
+00:11:43,810 --> 00:11:47,390
+So a and b are very generic, so it&#39;s the weight in R.
+
+192
+00:11:47,390 --> 00:11:51,220
+So see how our portfolio return depends now on both.
+
+193
+00:11:51,220 --> 00:11:55,960
+So what is the measure of the standard deviation of this guy
+
+194
+00:11:57,140 --> 00:12:00,330
+is what becomes the risk of the portfolio and that is what we are after.
+
+195
+00:12:01,770 --> 00:12:07,180
+Is the portfolio risk the same as the average risk of the two assets?
+
+196
+00:12:07,180 --> 00:12:09,790
+And you know that answer already.
+
+197
+00:12:09,790 --> 00:12:14,540
+Because last time I left you with 11th security then ask you this question and
+
+198
+00:12:14,540 --> 00:12:15,810
+your answer should be what?
+
+199
+00:12:17,470 --> 00:12:18,960
+No.
+
+200
+00:12:18,960 --> 00:12:26,290
+Randomly chosen two securities also are unlikely to have an average risk of two,
+
+201
+00:12:26,290 --> 00:12:30,710
+that&#39;s your average sigma hat of one, sigma hat of two.
+
+202
+00:12:30,710 --> 00:12:35,169
+That number cannot be the same as the standard deviation of
+
+203
+00:12:35,169 --> 00:12:40,091
+a portfolio of those two which will tend to be low almost always.
+
+204
+00:12:42,139 --> 00:12:46,866
+The one that&#39;s the portfolio and the reason is very simple.
+
+205
+00:12:46,866 --> 00:12:49,350
+It&#39;s diversification.
+
+206
+00:12:49,350 --> 00:12:50,970
+Quick question.
+
+207
+00:12:50,970 --> 00:12:54,640
+If you are adding Microsoft and Google together, and
+
+208
+00:12:54,640 --> 00:12:57,140
+you&#39;re jumping ahead a little bit, but that&#39;s my style.
+
+209
+00:12:57,140 --> 00:12:58,840
+I want you to think.
+
+210
+00:12:58,840 --> 00:13:04,120
+When will it be the case that the standard deviation of the combination of the two,
+
+211
+00:13:04,120 --> 00:13:05,570
+which we are calling a portfolio,
+
+212
+00:13:06,710 --> 00:13:10,140
+be the same as the average of the two standard deviations.
+
+213
+00:13:11,960 --> 00:13:16,660
+Leave it there, we&#39;ll come back in a minute, we&#39;ll start with that.
+
+214
+00:13:16,660 --> 00:13:18,579
+Take care, see you soon.
+

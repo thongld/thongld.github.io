@@ -1,0 +1,197 @@
+0
+00:00:00,000 --> 00:00:00,075
+https://youtu.be/mIkirw2QDOQ
+
+1
+00:00:00,075 --> 00:00:00,700
+SPEAKER: Hello.
+
+2
+00:00:00,700 --> 00:00:03,290
+In this video, we're going to explore the Databricks
+
+3
+00:00:03,290 --> 00:00:05,440
+Community Edition website.
+
+4
+00:00:05,440 --> 00:00:07,540
+I assume that you already opened an account
+
+5
+00:00:07,540 --> 00:00:09,540
+and logged in at community.cloud.databricks.com.
+
+6
+00:00:09,540 --> 00:00:11,970
+
+7
+00:00:11,970 --> 00:00:15,760
+So you should be seeing the welcome screen right now.
+
+8
+00:00:15,760 --> 00:00:17,410
+I would like to draw your attention
+
+9
+00:00:17,410 --> 00:00:19,430
+on this bar on the left.
+
+10
+00:00:19,430 --> 00:00:21,520
+This is the bar that gives you access to most
+
+11
+00:00:21,520 --> 00:00:23,210
+features of your account.
+
+12
+00:00:23,210 --> 00:00:25,300
+You're right now in the welcome page.
+
+13
+00:00:25,300 --> 00:00:27,930
+No matter where you are, you can always click over here
+
+14
+00:00:27,930 --> 00:00:31,950
+on the first icon to return to the welcome page.
+
+15
+00:00:31,950 --> 00:00:34,000
+The next two buttons, Home and Workspace,
+
+16
+00:00:34,000 --> 00:00:36,390
+give you access to your workspace.
+
+17
+00:00:36,390 --> 00:00:39,360
+Through this workspace menu, you can browse different content
+
+18
+00:00:39,360 --> 00:00:41,610
+that is available to you.
+
+19
+00:00:41,610 --> 00:00:44,540
+The Home icon takes you directly into your own space
+
+20
+00:00:44,540 --> 00:00:46,260
+inside the workspace.
+
+21
+00:00:46,260 --> 00:00:48,390
+Users, this will be your username.
+
+22
+00:00:48,390 --> 00:00:51,210
+And you will be able to see your files here.
+
+23
+00:00:51,210 --> 00:00:53,700
+There are important options provided to you
+
+24
+00:00:53,700 --> 00:00:55,460
+by doing right-click.
+
+25
+00:00:55,460 --> 00:00:57,380
+For example, by right-clicking on a file,
+
+26
+00:00:57,380 --> 00:01:00,500
+you can clone, rename, move, delete, and export it.
+
+27
+00:01:00,500 --> 00:01:03,060
+And by right-clicking on the white space in a folder,
+
+28
+00:01:03,060 --> 00:01:05,990
+you can create new notebooks, libraries, and folders
+
+29
+00:01:05,990 --> 00:01:10,850
+or import existing files from your file system or a URL.
+
+30
+00:01:10,850 --> 00:01:13,740
+You can see here you can easily import any relevant source file
+
+31
+00:01:13,740 --> 00:01:16,020
+format.
+
+32
+00:01:16,020 --> 00:01:17,800
+By using the Recent button over here,
+
+33
+00:01:17,800 --> 00:01:21,830
+you can have quick access to content you recently browsed.
+
+34
+00:01:21,830 --> 00:01:24,310
+By using the Search button on the bottom of the bar,
+
+35
+00:01:24,310 --> 00:01:28,350
+you can find the relevant content quickly.
+
+36
+00:01:28,350 --> 00:01:30,820
+Finally, by using the Clusters button,
+
+37
+00:01:30,820 --> 00:01:33,350
+you can create a new cluster for yourself.
+
+38
+00:01:33,350 --> 00:01:36,450
+You can give a cluster name-- for example, my-cluster.
+
+39
+00:01:36,450 --> 00:01:41,760
+Select here Spark 1.6.1 and then Create Cluster.
+
+40
+00:01:41,760 --> 00:01:43,740
+A few seconds later, a new cluster's
+
+41
+00:01:43,740 --> 00:01:46,041
+going to be provisioned for you.
+
+42
+00:01:46,041 --> 00:01:48,030
+You can see here on the right a few actions
+
+43
+00:01:48,030 --> 00:01:50,220
+you can take, like restart the cluster
+
+44
+00:01:50,220 --> 00:01:51,972
+or actually terminate it.
+
+45
+00:01:51,972 --> 00:01:54,640
+
+46
+00:01:54,640 --> 00:01:58,160
+We'll see more relevant information in later videos.
+
+47
+00:01:58,160 --> 00:02:00,550
+This was a quick overview of features of the Databricks
+
+48
+00:02:00,550 --> 00:02:02,448
+Community Edition account.
+
+49
+00:02:02,448 --> 00:02:02,948
+

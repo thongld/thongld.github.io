@@ -1,0 +1,323 @@
+1
+00:00:01,689 --> 00:00:06,790
+https://youtu.be/JJ_Cq4cdVf0
+
+By now, you are aware that the Python list
+is pretty powerful: A list can hold any type
+
+2
+00:00:06,790 --> 00:00:12,450
+and can hold different types at the same time.
+You can also change, add and remove elements.
+
+3
+00:00:12,450 --> 00:00:17,520
+This is wonderful, but one feature is missing,
+a feature that is super important for aspiring
+
+4
+00:00:17,520 --> 00:00:22,910
+data scientists as yourself. When analyzing
+data, you'll often want to carry out operations
+
+5
+00:00:22,910 --> 00:00:27,789
+over entire collections of values, and you
+want to do this fast. With lists, this is
+
+6
+00:00:27,789 --> 00:00:29,289
+a problem.
+
+7
+00:00:29,289 --> 00:00:34,089
+Let's retake the heights of your family and
+yourself. Suppose you've also asked for everybody's
+
+8
+00:00:34,089 --> 00:00:39,879
+weight. It's not very polite, but everything
+for science, right? You end up with two lists,
+
+9
+00:00:39,879 --> 00:00:45,550
+`height`, and `weight`. The first person is
+1.73 meters tall and weighs 65.4 kilograms.
+
+10
+00:00:45,550 --> 00:00:50,420
+If you now want to calculate the Body Mass
+Index for each family member, you'd hope that
+
+11
+00:00:50,420 --> 00:00:54,059
+this call can work, making the calculations
+element-wise.
+
+12
+00:00:54,059 --> 00:00:59,639
+Unfortunately, Python throws an error, because
+it has no idea how to do calculations with
+
+13
+00:00:59,639 --> 00:01:03,889
+lists. You could solve this by going through
+each list element one after the other, and
+
+14
+00:01:03,889 --> 00:01:08,750
+calculating the BMI for each person separately,
+but this is terribly inefficient and tiresome
+
+15
+00:01:08,750 --> 00:01:10,660
+to write.
+
+16
+00:01:10,660 --> 00:01:16,230
+A way more elegant solution is to use NumPy,
+or Numeric Python. It's a Python package that,
+
+17
+00:01:16,230 --> 00:01:22,040
+among others, provides a alternative to the
+regular python list: the Numpy array. The
+
+18
+00:01:22,040 --> 00:01:25,640
+Numpy array is pretty similar to a regular
+Python list, but has one additional feature:
+
+19
+00:01:25,640 --> 00:01:31,680
+you can perform calculations over all entire
+arrays. It's really easy, and super-fast as
+
+20
+00:01:31,680 --> 00:01:32,490
+well.
+
+21
+00:01:32,490 --> 00:01:36,730
+The Numpy package is already installed on
+DataCamp's servers, but if you want to work
+
+22
+00:01:36,730 --> 00:01:41,940
+with it on your own system, go to the command
+line and execute `pip3 install numpy`.
+
+23
+00:01:41,940 --> 00:01:46,730
+Next, to actually use Numpy in your Python
+session, you can import the numpy package
+
+24
+00:01:46,730 --> 00:01:49,250
+in your session, like this.
+
+25
+00:01:49,250 --> 00:01:53,680
+Let's start with _creating_ a numpy array.
+You do this with Numpy's `array()` function:
+
+26
+00:01:53,680 --> 00:01:59,530
+the input is a regular Python list. I'm using
+`array()` twice here, to create Numpy versions
+
+27
+00:01:59,530 --> 00:02:03,450
+of the `height` and `weight` lists from before:
+`np_height` and `np_weight`:
+
+28
+00:02:03,450 --> 00:02:08,810
+Let's try to calculate everybody's BMI with
+a single call again:
+
+29
+00:02:08,810 --> 00:02:14,030
+This time, it worked fine: the calculations
+were performed element-wise. The first person's
+
+30
+00:02:14,030 --> 00:02:18,200
+BMI was calculated by dividing the first element
+in `np_weight` by the square of the first
+
+31
+00:02:18,200 --> 00:02:22,350
+element in `np_height`, the second person's
+BMI was calculated with the second height
+
+32
+00:02:22,350 --> 00:02:25,030
+and weight elements, and so on.
+
+33
+00:02:25,030 --> 00:02:29,670
+Let's do a quick comparison here. First, we
+tried to do calculations with regular lists,
+
+34
+00:02:29,670 --> 00:02:33,870
+like this, but this gave us an error, because
+Python doesn't now how to do calculations
+
+35
+00:02:33,870 --> 00:02:39,640
+with lists like we want them to. Next, these
+regular lists where converted to Numpy arrays.
+
+36
+00:02:39,640 --> 00:02:44,870
+The same operations now work without any problem:
+Numpy knows how to work with arrays as if
+
+37
+00:02:44,870 --> 00:02:48,290
+they are single values, which is pretty awesome
+if you ask me.
+
+38
+00:02:48,290 --> 00:02:52,810
+You should still pay attention, though. First
+of all, Numpy can do all of this so easily
+
+39
+00:02:52,810 --> 00:02:57,740
+because it assumes that your Numpy array can
+only contain values of a single type. It's
+
+40
+00:02:57,740 --> 00:03:02,750
+either an array of floats, either an array
+of booleans, and so on. If you do try to create
+
+41
+00:03:02,750 --> 00:03:06,870
+an array with different types, like this for
+example, <PAUSE> The resulting Numpy array
+
+42
+00:03:06,870 --> 00:03:10,780
+will contain a single type, string in this
+case. The boolean and the float were both
+
+43
+00:03:10,780 --> 00:03:12,720
+converted to strings.
+
+44
+00:03:12,720 --> 00:03:17,540
+Second, you should know that a Numpy array
+is simply a new kind of Python type, like
+
+45
+00:03:17,540 --> 00:03:22,380
+the float, string and list types from before.
+This means that it comes with its own methods,
+
+46
+00:03:22,380 --> 00:03:27,590
+which can behave differently than you'd expect.
+Take this Python list and this numpy array,
+
+47
+00:03:27,590 --> 00:03:28,319
+for example:
+
+48
+00:03:28,319 --> 00:03:33,930
+If you do `python_list + python_list`, the
+list elements are pasted together, generating
+
+49
+00:03:33,930 --> 00:03:38,520
+a list with 6 elements. If you do this with
+the numpy arrays, on the other hand, Python
+
+50
+00:03:38,520 --> 00:03:41,459
+will do an element-wise sum of the array:
+
+51
+00:03:41,459 --> 00:03:45,209
+Just make sure to pay attention when you're
+juggling around with different Python types,
+
+52
+00:03:45,209 --> 00:03:48,550
+because the outcome can differ a lot!
+
+53
+00:03:48,550 --> 00:03:52,239
+Apart from these subtleties, you can work
+with Numpy arrays pretty much the same as
+
+54
+00:03:52,239 --> 00:03:56,370
+you can with regular Python lists. When you
+want to get elements from your array, for
+
+55
+00:03:56,370 --> 00:04:00,459
+example, you can again use square brackets.
+Suppose you want to get the `bmi` for the
+
+56
+00:04:00,459 --> 00:04:04,930
+second person, so at index 1. This will od
+the trick:
+
+57
+00:04:04,930 --> 00:04:09,220
+Specifically for Numpy, there's also another
+way to do list subsetting: using an array
+
+58
+00:04:09,220 --> 00:04:15,879
+of booleans. Say you want to get all BMI values
+in the bmi array that are over 23. A first
+
+59
+00:04:15,879 --> 00:04:19,239
+step is using the greater than sign, like
+this:
+
+60
+00:04:19,239 --> 00:04:24,820
+The result is a Numpy array containing booleans:
+True if the corresponding bmi is above 23,
+
+61
+00:04:24,820 --> 00:04:29,550
+False if it's below. Next, you can use this
+boolean array inside square brackets to do
+
+62
+00:04:29,550 --> 00:04:34,880
+subsetting. Only the elements in `bmi` that
+are above 23, so for which the corresponding
+
+63
+00:04:34,880 --> 00:04:40,260
+boolean value is True, is selected. There's
+only one BMI that's above 23, so we end up
+
+64
+00:04:40,260 --> 00:04:45,220
+with a Numpy array with a single value, that
+BMI.
+
+65
+00:04:45,220 --> 00:04:49,060
+Using the result of a comparison to make a
+selection of your data is a very common way
+
+66
+00:04:49,060 --> 00:04:54,020
+to get surprising insights. Learn all about
+it and the other Numpy basics in the exercises!
+

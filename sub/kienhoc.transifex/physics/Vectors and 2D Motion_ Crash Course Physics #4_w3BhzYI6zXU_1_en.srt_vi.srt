@@ -1,0 +1,557 @@
+1
+00:00:02,879 --> 00:00:06,580
+Giang Na 9/11/2016
+mới đây ta đã dành thời gian dự đoán chuyển động: vị trí vật
+
+2
+00:00:06,580 --> 00:00:08,419
+đích đến và tốc độ chuyển động của vật
+
+3
+00:00:08,419 --> 00:00:12,620
+nhưng ta đã quên một điều, về Harry Styles
+
+4
+00:00:12,619 --> 00:00:14,359
+hôm nay ta sẽ giải quyết vấn đề đó
+
+5
+00:00:14,359 --> 00:00:17,780
+ta đang nói về hiện tượng xảy ra khi bạn ném bóng lên trời
+
+6
+00:00:17,780 --> 00:00:19,620
+hay lái xe trên đường thẳng
+
+7
+00:00:19,620 --> 00:00:23,500
+dạng chuyển động này khá là đơn giản vì chỉ có một trục tham gia quá trình
+
+8
+00:00:23,500 --> 00:00:27,769
+chiếc xe di chuyển tiến hay lùi. quả bóng chuyển động lên hay xuống
+
+9
+00:00:27,769 --> 00:00:29,699
+không phải bàn cãi về một chiều thứ hai nào
+
+10
+00:00:29,699 --> 00:00:34,250
+nhưng đây là vật lý. ta có thể rút gọn tính toán để tiết kiệm thời gian, nhưng ta vẫn muốn
+
+11
+00:00:34,250 --> 00:00:35,880
+mô tả thế giới thực một cách tốt nhất có thể
+
+12
+00:00:35,880 --> 00:00:40,320
+trong đời sống, khi bạn cần nhiều hơn một hướng, bạn sẽ dùng đến véc-tơ
+
+13
+00:00:40,320 --> 00:00:50,280
+[nhạc nền]
+
+14
+00:00:50,280 --> 00:00:53,359
+giả sử bạn có một chiếc máy dọc, như cái bạn dùng để tập bóng chày
+
+15
+00:00:53,359 --> 00:00:57,879
+ta sẽ dùng nó rất nhiều trong chương này, nên ta sẽ làm quen với nguyên lý hoạt động của nó
+
+16
+00:00:57,880 --> 00:01:02,219
+ta có thể đưa vào máy một số quả bóng chày và máy sẽ ném chúng ra với bất cứ vận tốc nào mà bạn muốn
+
+17
+00:01:02,219 --> 00:01:06,439
+lên đến 50 m/s. độ cao của bóng có thể thay đổi được
+
+18
+00:01:06,438 --> 00:01:10,379
+và ta có thể xoay dọc để bóng có thể được ném ở bất kỳ góc nào
+
+19
+00:01:10,379 --> 00:01:15,879
+có thể được cài đặt ngẫu nhiên, khi đó máy tự cài vận tốc, độ cao hay góc bóng
+
+20
+00:01:15,879 --> 00:01:19,719
+bỗng nhiên ta có nhiều lựa chọn hơn chứ không chỉ ném bóng trên một đường thẳng
+
+21
+00:01:19,719 --> 00:01:24,539
+bây giờ bóng có thể có các đặc tính ngang và dọc cùng một lúc
+
+22
+00:01:24,540 --> 00:01:29,180
+trước đây ta có thể dùng phương trình gia tốc cố định để biểu diễn
+
+23
+00:01:29,189 --> 00:01:32,759
+chuyển động ngang hay dọc, nhưng ta không bao giờ dùng cả hai một lúc
+
+24
+00:01:32,760 --> 00:01:34,600
+và hôm nay ta cũng sẽ không làm vậy
+
+25
+00:01:34,599 --> 00:01:38,798
+thay vào đó, ta sẽ chia chuyển động quả bóng thành 2 phần, ta sẽ nói về hiện tượng xảy ra
+
+26
+00:01:38,799 --> 00:01:42,500
+cả phương dọc và ngang, nhưng hoàn toàn tách biệt
+
+27
+00:01:42,500 --> 00:01:44,849
+và ta sẽ dùng lý thuyết véc-tơ để giải thích
+
+28
+00:01:44,849 --> 00:01:49,219
+véc-tơ cũng như các con số bình thường, được gọi là đại lượng vô hướng
+
+29
+00:01:49,219 --> 00:01:51,840
+vì chúng có độ lớn, cho biết quy mô của nó
+
+30
+00:01:51,840 --> 00:01:55,000
+nhưng ta cũng có một đặc tính khác là chiều
+
+31
+00:01:55,000 --> 00:01:59,959
+rõ ràng ta có thể nói rằng vận tốc của một quả bóng là 5 mét/giây, và giả sử
+
+32
+00:01:59,969 --> 00:02:03,450
+ta chọn hướng đi xuống làm chiều dương, ta biết quả bóng sẽ rơi xuống
+
+33
+00:02:03,450 --> 00:02:05,950
+vì vận tốc là số dương
+
+34
+00:02:05,950 --> 00:02:10,229
+nói cách khác, ta đang tìm hiểu về chiều, nhưng chỉ có thể mô tả chiều
+
+35
+00:02:10,229 --> 00:02:15,780
+bằng một số âm hoặc một số dương. do đó có 2 chiều trên một trục
+
+36
+00:02:15,780 --> 00:02:20,439
+nhưng véc-tơ sẽ thay đổi điều đó. thay vì 2 chiều, ta có thể có bất kỳ chiều nào
+
+37
+00:02:20,439 --> 00:02:24,139
+nếu ta nghĩ véc-tơ giống như mũi tên trong bản đồ kho báu thì dễ hiểu hơn. bạn có thể vẽ
+
+38
+00:02:24,139 --> 00:02:29,000
+một mũi tên biểu diễn 5 km trên bản đồ. độ dài đó sẽ là độ lớn của vec-tơ
+
+39
+00:02:29,000 --> 00:02:33,719
+nhưng bạn phải đánh dấu theo một hướng nhất định để người ta có thể tìm ra kho báu
+
+40
+00:02:33,719 --> 00:02:38,370
+nhưng điều quan trọng là cách các nhà vật lý biểu thị véc-tơ. lấy 2 trục như thường
+
+41
+00:02:38,370 --> 00:02:42,189
+đánh dấu hướng của véc-tơ, và vẽ một mũi tên như độ lớn của nó
+
+42
+00:02:42,189 --> 00:02:46,740
+nếu máy ném một quả bóng ở góc 30 độ từ mặt phẳng ngang
+
+43
+00:02:46,740 --> 00:02:49,319
+với vận tốc khởi đầu là 5 m/s
+
+44
+00:02:49,318 --> 00:02:53,359
+ta sẽ vẽ một véc-tơ với độ lớn là 5 và hướng 30 độ
+
+45
+00:02:53,360 --> 00:02:56,770
+giả sử người bắt bóng không bắt bóng đúng cách và làm rơi
+
+46
+00:02:56,770 --> 00:03:01,620
+thì trước khi bóng chạm đất, vận tốc có thể là 3 m/s 
+
+47
+00:03:01,620 --> 00:03:06,140
+và hướng 270 độ, ta có thể vẽ như thế này
+
+48
+00:03:06,139 --> 00:03:09,859
+đó là lý do tại sao véc-tơ rất hữu ích: bạn có thể biểu diễn bất kỳ hướng nào mà bạn muốn
+
+49
+00:03:09,860 --> 00:03:14,220
+nhưng vấn đề là, có thể bạn thấy rằng bạn không thể cộng hay nhân các véc-tơ
+
+50
+00:03:14,229 --> 00:03:18,409
+như các con số thông thường, vì chúng không phải là con số
+
+51
+00:03:18,409 --> 00:03:21,019
+để làm được như vậy, ta phải biểu diễn véc-tơ theo một cách khác
+
+52
+00:03:21,019 --> 00:03:24,939
+khi vẽ một véc-tơ, nó sẽ giống như cạnh huyền của một tam giác vuông
+
+53
+00:03:24,939 --> 00:03:29,590
+độ lớn vec-tơ cho biết độ dài cạnh huyền, và bạn có thể dùng góc 
+
+54
+00:03:29,590 --> 00:03:31,069
+để vẽ tiếp tam giác
+
+55
+00:03:31,068 --> 00:03:35,128
+tam giác vuông thú vị ở chỗ: bạn chỉ cần biết vài yếu tố
+
+56
+00:03:35,128 --> 00:03:38,979
+như độ dài một cạnh và số đo một góc, là có thể vẽ được phần còn lại
+
+57
+00:03:38,979 --> 00:03:43,239
+đó là lượng giác, liên hệ giữa góc và cạnh qua sin và cô-sin
+
+58
+00:03:43,240 --> 00:03:48,200
+đó là lý do tại sao bạn có thể biểu diễn một véc tơ bằng cách viết ra độ dài của hai cạnh kia
+
+59
+00:03:48,199 --> 00:03:53,079
+thực tế, 2 cạnh này rất hữu ích trong việc biểu diễn một véc tơ mà các nhà vật lý gọi là các hợp phần
+
+60
+00:03:53,080 --> 00:03:57,820
+hãy quay lại ví dụ về chiếc máy. ta nói
+
+61
+00:03:57,819 --> 00:04:03,400
+véc tơ vận tốc ban đầu của quả bóng có độ lớn là 5 và hướng 30 độ trên mặt phẳng ngang
+
+62
+00:04:03,400 --> 00:04:07,080
+ta có thể vẽ như thế này. đó là về lượng giác
+
+63
+00:04:07,080 --> 00:04:13,420
+độ dài cạnh nằm ngang, hay hợp phần, là 5cos30, bằng 4,33
+
+64
+00:04:13,430 --> 00:04:18,090
+ta cũng tính tương tự với cạnh đứng, thay cos bằng sin
+
+65
+00:04:18,089 --> 00:04:23,269
+ta có độ dài cạnh đứng là 5sin30, bằng 2,5
+
+66
+00:04:23,269 --> 00:04:28,719
+vậy véc tơ có thành phần nằm ngang là 4,33 và thành phần nằm dọc là 2,5
+
+67
+00:04:28,720 --> 00:04:36,960
+về ký hiệu véc tơ đơn vị, ta biểu diễn véc tơ này là v = 4,33i + 2,5j
+
+68
+00:04:36,959 --> 00:04:40,930
+mũi tên trên đầu véc tơ cho biết đó là một véc tơ, và dấu mũ trên đầu i và j
+
+69
+00:04:40,930 --> 00:04:46,319
+cho biết nó là đơn vị véc tơ và họ đặt hướng cho mỗi véc tơ
+
+70
+00:04:46,319 --> 00:04:51,999
+i là chiều của trục x và j là chiều của trục y
+
+71
+00:04:52,000 --> 00:04:56,160
+đôi khi bạn gặp một ký hiệu k khác, biểu diễn trục z
+
+72
+00:04:56,168 --> 00:05:00,688
+và nếu bạn muốn cộng hay trừ 2 véc tơ, rất đơn giản
+
+73
+00:05:00,689 --> 00:05:05,109
+ta chỉ cần tách các thành phần ra và cộng hay từng thành phần tương ứng với nhau
+
+74
+00:05:05,108 --> 00:05:17,948
+vậy 2i +3j cộng với 5i +6j được 7i + 9j. và -2i + 3j cộng 5i - 6j được 3i -3j
+
+75
+00:05:17,949 --> 00:05:21,680
+hoặc nếu nhân với một đại lượng vô hướng cũng không khó, bạn chỉ cần nhân các thành phần với số đó
+
+76
+00:05:21,680 --> 00:05:27,278
+vậy 2i +3j nhân 3 bằng 6i + 9j
+
+77
+00:05:27,278 --> 00:05:31,939
+ký hiệu véc tơ đơn vị thực chất cũng vận dụng phép nhân này
+
+78
+00:05:31,939 --> 00:05:37,659
+i, j và k được gọi là véc tơ đơn vị vì những véc tơ này có độ lớn đúng bằng một đơn vị
+
+79
+00:05:37,658 --> 00:05:41,248
+mỗi véc tơ đều chỉ hướng trên một trục khác nhau
+
+80
+00:05:41,249 --> 00:05:46,769
+chẳng hạn, khi bạn viết 2i, ta hiểu rằng lấy véc tơ đơn vị i và gấp đôi chiều dài
+
+81
+00:05:46,769 --> 00:05:52,430
+nhưng nó không giống như nhân một véc tơ với một số, đây là chủ đề của một chương khác
+
+82
+00:05:52,430 --> 00:05:57,088
+vậy ta đã biết một véc tơ có 2 phần: độ lớn và hướng, và 
+
+83
+00:05:57,088 --> 00:05:59,418
+giải thích véc tơ về các thành phần của nó
+
+84
+00:05:59,418 --> 00:06:03,948
+và khi bạn chia một véc tơ thành các thành phần, chúng hoàn toàn tách biệt
+
+85
+00:06:03,949 --> 00:06:09,300
+nói cách khác, thay đổi một véc tơ ngang không ảnh hưởng đến thành phần nằm ngang và ngược lại
+
+86
+00:06:09,300 --> 00:06:11,490
+ta có thể kiểm chứng rất đơn giản
+
+87
+00:06:11,490 --> 00:06:15,340
+giả sử bạn có 2 quả bóng chày, và bạn thả chúng đồng thời từ cùng một độ cao
+
+88
+00:06:15,339 --> 00:06:19,859
+nhưng nếu bạn quăng bóng A để nó tiếp đất với vận tốc thẳng đứng ban đầu
+
+89
+00:06:19,860 --> 00:06:21,840
+còn bóng B bạn chỉ thả 
+
+90
+00:06:21,839 --> 00:06:25,639
+thì bóng A sẽ chạm đất trước vì bạn thả nó trước
+
+91
+00:06:25,649 --> 00:06:30,110
+bây giờ hãy xem hiện tượng xảy ra nếu làm lại thí nghiệm đó, nhưng lần này bạn cho bóng A sang ngang một chút
+
+92
+00:06:30,110 --> 00:06:34,729
+và chỉ thả bóng B thẳng đứng. bóng nào sẽ chạm đất trước?
+
+93
+00:06:34,728 --> 00:06:38,788
+đây là một câu hỏi khó, vì thực tế chúng tiếp đất đồng thời
+
+94
+00:06:38,788 --> 00:06:43,278
+không quan trọng độ lớn véc tơ ngang của bóng A là bao nhiêu, nó sẽ không tiếp đất nhanh hơn
+
+95
+00:06:43,278 --> 00:06:49,218
+vì véc tơ chuyển động phương ngang không liên quan đến chuyển động phương ngang của nó
+
+96
+00:06:49,218 --> 00:06:52,449
+để ý điều này, hãy trở lại với chiếc máy của chúng ta, ta sẽ thiết lập
+
+97
+00:06:52,449 --> 00:06:56,338
+để nó ném bóng theo phương ngang, đúng bằng 1 mét trên mặt đất
+
+98
+00:06:56,338 --> 00:07:01,238
+sau đó, ta cho máy ném một quả bóng, giả sử chiều lên và chiều sang phải là chiều dương
+
+99
+00:07:01,240 --> 00:07:04,000
+làm sao tính được mất bao lâu để quả bóng chạm đất?
+
+100
+00:07:04,009 --> 00:07:08,199
+rất đơn giản, ta chỉ việc quên đi thành phần nằm ngang 
+
+101
+00:07:08,199 --> 00:07:10,879
+và dùng phương trình động lượng như ta vẫn thường dùng
+
+102
+00:07:10,879 --> 00:07:15,959
+ở đây ta cần phương trình đường cong chuyển vị, là phương trình này
+
+103
+00:07:15,959 --> 00:07:21,799
+ta chỉ thêm y ở bên dưới vận tốc và gia tốc, vì ta chỉ tập trung vào những đặc tính này
+
+104
+00:07:21,800 --> 00:07:23,860
+theo chiều dọc
+
+105
+00:07:23,860 --> 00:07:25,879
+bây giờ ta sẽ thay số vào
+
+106
+00:07:25,879 --> 00:07:30,620
+chuyển vị của quả bóng bên trái phương trình chỉ bằng -1 mét
+
+107
+00:07:30,620 --> 00:07:34,740
+không có vận tốc thẳng đứng ban đầu vì chiếc máy đang chỉ về hướng ngang
+
+108
+00:07:34,740 --> 00:07:37,759
+và gia tốc thẳng đứng chỉ là lực hấp dẫn
+
+109
+00:07:37,759 --> 00:07:44,560
+bây giờ việc cần làm là giải quyết thời gian t, và thấy rằng mất 0,452 giây để quả bóng chạm đất
+
+110
+00:07:44,560 --> 00:07:48,519
+chuyển động phương ngang không ảnh hưởng đến chuyển động thẳng đứng
+
+111
+00:07:48,528 --> 00:07:52,829
+nhưng đôi khi vấn đề trở nên phức tạp hơn, chẳng hạn với những quả bóng ném ra
+
+112
+00:07:52,829 --> 00:07:58,400
+với vận tốc ban đầu 5 mét/giây nhưng với góc 30 độ?
+
+113
+00:07:58,399 --> 00:08:02,500
+ta vẫn có thể nói về chuyển động phương ngang và chuyển động thẳng đứng của nó một cách riêng biệt
+
+114
+00:08:02,500 --> 00:08:05,959
+ta chỉ cần tách véc tơ vận tốc thành các thành phần thôi
+
+115
+00:08:05,959 --> 00:08:12,359
+như ở trên, ta có thể dùng lượng giác để tính vận tốc chuyển động phương ngang ban đầu là 4,33 mét/ giây
+
+116
+00:08:12,360 --> 00:08:16,199
+và vận tốc chuyển động thẳng đứng ban đầu là 2,5 mét/ giây
+
+117
+00:08:16,199 --> 00:08:21,459
+giờ ta đã có đủ các yếu tố để trả lời các câu hỏi về chuyển động phương ngang và thẳng đứng của quả bóng
+
+118
+00:08:21,459 --> 00:08:24,959
+một câu là: mất bao nhiêu lâu để quả bóng đạt tới điểm cao nhất?
+
+119
+00:08:24,959 --> 00:08:28,560
+điều quan trọng ở đây là
+
+120
+00:08:28,560 --> 00:08:32,479
+tại điểm cuối cùng, vận tốc thẳng đứng quả bóng phải bằng 0
+
+121
+00:08:32,479 --> 00:08:36,060
+bởi vì như ta đã nói, khi bạn chuyển hướng
+
+122
+00:08:36,059 --> 00:08:41,239
+vận tốc phải bằng 0, ít nhất là thời điểm đó, trước khi bạn chuyển động hướng khác
+
+123
+00:08:41,250 --> 00:08:46,078
+vậy ở đây, vận tốc thẳng đứng ban đầu là 2,5 mét/giây
+
+124
+00:08:46,078 --> 00:08:50,798
+và vận tốc thẳng đứng tại điểm cao nhất bằng 0
+
+125
+00:08:50,799 --> 00:08:54,899
+cuối cùng, gia tốc thẳng đứng sinh ra từ lực hấp dẫn
+
+126
+00:08:54,899 --> 00:09:00,240
+bằng -9,81 m/s^2, vì trục phía trên là trục dương
+
+127
+00:09:00,240 --> 00:09:02,198
+và ta cần tìm thời gian t
+
+128
+00:09:02,198 --> 00:09:06,838
+rất may là có một phương trình động học thỏa mãn trường hợp này
+
+129
+00:09:06,839 --> 00:09:09,180
+phương trình định nghĩa gia tốc
+
+130
+00:09:09,179 --> 00:09:16,258
+thay số vào ta có: quả bóng mất 0,255 giây để đạt tới điểm cao nhất
+
+131
+00:09:16,259 --> 00:09:21,139
+vậy, biểu diễn chuyển động theo nhiều hướng thực chất không quá khác hay phức tạp
+
+132
+00:09:21,139 --> 00:09:23,960
+bạn chỉ cần dùng tam giác
+
+133
+00:09:23,970 --> 00:09:28,540
+ở chương này, bạn đã học về véc tơ, cách xử lý các thành phần
+
+134
+00:09:28,539 --> 00:09:33,939
+và cách cộng hay trừ các thành phần. ta cũng nói về cách dùng phương trình động học
+
+135
+00:09:33,940 --> 00:09:37,480
+để biểu diễn chuyển động đối với mỗi chiều riêng biệt
+
+136
+00:09:37,509 --> 00:09:41,610
+khóa học vật lý cấp tốc được phát triển với sự hợp tác của hãng phim PBS
+
+137
+00:09:41,610 --> 00:09:46,669
+bạn có thể chuyển sang kênh của họ để xem các chương trình thú vị như  The Art Assignment, The Chatterbox, và Blank on Blank.
+
+138
+00:09:46,669 --> 00:09:51,610
+chương này được quay ở phim trường Doctor Cheryl C. Kinney 
+
+139
+00:09:51,610 --> 00:09:55,899
+với sự hỗ trợ của những người nhiệt tình và nhóm đồ họa tuyệt vời của chúng tôi là Thought Cafe
+

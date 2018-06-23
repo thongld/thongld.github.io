@@ -1,0 +1,439 @@
+377
+00:16:22,860 --> 00:16:24,670
+https://youtu.be/G721cooZXgs
+There's nothing
+to fear from this.
+
+378
+00:16:24,670 --> 00:16:27,050
+It's just not that smart.
+
+379
+00:16:27,050 --> 00:16:29,580
+So, this is the thing
+that's program to ask
+
+380
+00:16:29,580 --> 00:16:31,450
+the question, what's next?
+
+381
+00:16:31,450 --> 00:16:33,800
+And then we have to have
+a set of instructions
+
+382
+00:16:33,800 --> 00:16:36,420
+that feed this thing really
+fast-- billions of times
+
+383
+00:16:36,420 --> 00:16:37,470
+a second.
+
+384
+00:16:37,470 --> 00:16:38,610
+And that's what this.
+
+385
+00:16:38,610 --> 00:16:40,580
+This is the random
+access memory.
+
+386
+00:16:40,580 --> 00:16:43,620
+And we have memory chips and
+they're connected together
+
+387
+00:16:43,620 --> 00:16:45,000
+through the motherboard.
+
+388
+00:16:45,000 --> 00:16:49,500
+So we have the main memory and
+we have the central processing
+
+389
+00:16:49,500 --> 00:16:50,070
+unit.
+
+390
+00:16:50,070 --> 00:16:53,630
+And this is where our high
+speed instructions come from,
+
+391
+00:16:53,630 --> 00:16:55,550
+this where a high
+speed data is stored,
+
+392
+00:16:55,550 --> 00:16:57,460
+and this is the thing
+that asks, what next?
+
+393
+00:16:57,460 --> 00:16:59,127
+And it reads its
+instructions from here.
+
+394
+00:16:59,127 --> 00:17:01,501
+And you see that can-- boop--
+they're not quite connected
+
+395
+00:17:01,501 --> 00:17:03,910
+together, but eventually
+they're connecting together.
+
+396
+00:17:03,910 --> 00:17:06,230
+Don't feel too bad about
+this hardware, it's all old,
+
+397
+00:17:06,230 --> 00:17:08,890
+and it's all broken
+and can't be hurt.
+
+398
+00:17:08,890 --> 00:17:12,810
+So, the next thing we got
+is input/output device.
+
+399
+00:17:12,810 --> 00:17:14,720
+I'll go back to my Raspberry Pi.
+
+400
+00:17:14,720 --> 00:17:17,550
+So the Raspberry Pi
+has a USB that you can
+
+401
+00:17:17,550 --> 00:17:20,060
+connect a mouse or a keyboard.
+
+402
+00:17:20,060 --> 00:17:24,220
+It has an HDMI that you
+can connect a monitor to,
+
+403
+00:17:24,220 --> 00:17:25,640
+it has an ethernet connector.
+
+404
+00:17:25,640 --> 00:17:30,160
+So these are all examples
+of input/output devices.
+
+405
+00:17:30,160 --> 00:17:32,806
+
+406
+00:17:32,806 --> 00:17:36,930
+And then, the last thing on the
+screen is the secondary memory.
+
+407
+00:17:36,930 --> 00:17:39,660
+So this RAM, on
+the Raspberry Pi,
+
+408
+00:17:39,660 --> 00:17:42,390
+the CPU, the central
+processing unit, and the RAM
+
+409
+00:17:42,390 --> 00:17:44,570
+are all in this one
+chip in the middle.
+
+410
+00:17:44,570 --> 00:17:46,670
+It's called SoC, or
+system on a chip,
+
+411
+00:17:46,670 --> 00:17:49,080
+where they put more parts there.
+
+412
+00:17:49,080 --> 00:17:56,510
+So in a sense, they've
+collapsed this and this,
+
+413
+00:17:56,510 --> 00:18:02,110
+and a lot of this, all down in a
+Raspberry Pi to one little guy.
+
+414
+00:18:02,110 --> 00:18:04,530
+But it's still architecturally
+the same thing.
+
+415
+00:18:04,530 --> 00:18:05,977
+There's a central
+processing unit.
+
+416
+00:18:05,977 --> 00:18:06,810
+There's main memory.
+
+417
+00:18:06,810 --> 00:18:11,170
+There's graphics
+cards, et cetera.
+
+418
+00:18:11,170 --> 00:18:13,410
+So input/output
+devices-- oh and this guy
+
+419
+00:18:13,410 --> 00:18:17,580
+has input/output devices, too,
+like USB, keyboard, monitor, et
+
+420
+00:18:17,580 --> 00:18:18,080
+cetera.
+
+421
+00:18:18,080 --> 00:18:20,530
+So there are very similar,
+it's just this is new
+
+422
+00:18:20,530 --> 00:18:21,890
+and this is old.
+
+423
+00:18:21,890 --> 00:18:25,370
+Everything gets smaller
+when it gets newer.
+
+424
+00:18:25,370 --> 00:18:25,870
+OK.
+
+425
+00:18:25,870 --> 00:18:29,060
+
+426
+00:18:29,060 --> 00:18:31,250
+OK, so last thing we're
+going to talk about
+
+427
+00:18:31,250 --> 00:18:32,670
+is the secondary memory.
+
+428
+00:18:32,670 --> 00:18:35,430
+
+429
+00:18:35,430 --> 00:18:38,850
+When the power goes off,
+these things sort of go away.
+
+430
+00:18:38,850 --> 00:18:40,990
+The data in this RAM goes away.
+
+431
+00:18:40,990 --> 00:18:44,550
+It's just designed to be
+really fast, but not permanent.
+
+432
+00:18:44,550 --> 00:18:46,190
+So we need a place
+that's permanent.
+
+433
+00:18:46,190 --> 00:18:47,710
+That's what
+secondary storage is.
+
+434
+00:18:47,710 --> 00:18:50,370
+That's what this
+secondary storage is for.
+
+435
+00:18:50,370 --> 00:18:52,640
+This is permanent.
+
+436
+00:18:52,640 --> 00:18:55,340
+This is fast.
+
+437
+00:18:55,340 --> 00:18:58,515
+And it cha cha cha
+cha really fast.
+
+438
+00:18:58,515 --> 00:19:01,450
+But this is permanent
+and this is slower.
+
+439
+00:19:01,450 --> 00:19:02,000
+OK?
+
+440
+00:19:02,000 --> 00:19:03,475
+So the secondary
+memory-- you got
+
+441
+00:19:03,475 --> 00:19:08,030
+two kinds of secondary memory--
+oh, dropped it on the floor.
+
+442
+00:19:08,030 --> 00:19:09,840
+Two kinds of a secondary memory.
+
+443
+00:19:09,840 --> 00:19:11,575
+I'll start with
+the Raspberry Pi.
+
+444
+00:19:11,575 --> 00:19:16,010
+The secondary memory of the
+Raspberry Pi is this SD card.
+
+445
+00:19:16,010 --> 00:19:17,470
+It's like a disk drive.
+
+446
+00:19:17,470 --> 00:19:20,560
+It still is permanent,
+does not require power
+
+447
+00:19:20,560 --> 00:19:23,180
+to maintain it's data,
+the data stays permanent.
+
+448
+00:19:23,180 --> 00:19:27,210
+So in the future, we will
+see more of these flash style
+
+449
+00:19:27,210 --> 00:19:29,300
+drives and SD style drives.
+
+450
+00:19:29,300 --> 00:19:32,160
+So the Raspberry Pi is kind
+of alluding to the future.
+
+451
+00:19:32,160 --> 00:19:33,770
+There's a disk drive in here.
+
+452
+00:19:33,770 --> 00:19:36,340
+It's not really a disk,
+it's also flash memory.
+
+453
+00:19:36,340 --> 00:19:42,620
+But in the old days, in the good
+old days back when I was a kid,
+
+454
+00:19:42,620 --> 00:19:47,220
+our secondary memory
+was a disk drive.
+
+455
+00:19:47,220 --> 00:19:50,123
+And it had platters,
+and it spun,
+
+456
+00:19:50,123 --> 00:19:52,850
+and it made a satisfying noise.
+
+457
+00:19:52,850 --> 00:19:54,710
+And it would move in
+and out to read data.
+
+458
+00:19:54,710 --> 00:19:57,290
+And I'll show you a
+video of this just a bit.
+
+459
+00:19:57,290 --> 00:20:00,200
+And so these would record the
+data on the magnetic platters,
+
+460
+00:20:00,200 --> 00:20:01,700
+and then when the
+power's taken off,
+
+461
+00:20:01,700 --> 00:20:03,470
+the data would
+still be magnetized.
+
+462
+00:20:03,470 --> 00:20:05,590
+And then it would go and
+move to the right spot,
+
+463
+00:20:05,590 --> 00:20:07,450
+spin it around,
+and read the data.
+
+464
+00:20:07,450 --> 00:20:11,840
+And again, this is kind of
+messed up in a pretty bad way.
+
+465
+00:20:11,840 --> 00:20:14,410
+So, there we go.
+
+466
+00:20:14,410 --> 00:20:18,870
+Central processing unit
+brings the operation.
+
+467
+00:20:18,870 --> 00:20:23,040
+Main memory, fast but goes
+away when we power off.
+
+468
+00:20:23,040 --> 00:20:25,120
+Input/output devices--
+keyboards, et cetera.
+
+469
+00:20:25,120 --> 00:20:30,850
+And then storage that maintains
+its data across power cycles.
+
+470
+00:20:30,850 --> 00:20:31,940
+OK.
+

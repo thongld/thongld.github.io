@@ -1,0 +1,370 @@
+1
+00:00:04,865 --> 00:00:08,600
+https://youtu.be/7xQ6LaQj7NE
+Let's do the power of saving regularly,
+the same simple idea.
+
+2
+00:00:10,40 --> 00:00:13,669
+On the deck which you should be
+able to see now on the camera,
+
+3
+00:00:14,720 --> 00:00:19,410
+you'll see a problem which says how much
+will you have in your bank account 50
+
+4
+00:00:19,410 --> 00:00:26,80
+years from now if you save $1,000
+every year at either 5% or 15%?
+
+5
+00:00:26,80 --> 00:00:31,639
+You remember I did this in the past
+in a one period, one cash flow problem.
+
+6
+00:00:32,759 --> 00:00:36,650
+And here,
+the previous problem that we just did
+
+7
+00:00:36,650 --> 00:00:40,310
+was you wanting to go to college and
+saving $1,000.
+
+8
+00:00:40,310 --> 00:00:43,860
+This is a more long-term problem
+where you're trying to save, say,
+
+9
+00:00:43,860 --> 00:00:44,460
+for retirement.
+
+10
+00:00:44,460 --> 00:00:47,590
+And you're starting as
+soon as you start working.
+
+11
+00:00:47,590 --> 00:00:48,690
+So think you're about 25,
+
+12
+00:00:48,690 --> 00:00:53,699
+and you're saving and wanting to know
+how much you'll have when you're 75.
+
+13
+00:00:53,700 --> 00:01:00,250
+First of all, saving is a good thing,
+of course, if you have cash flows.
+
+14
+00:01:00,250 --> 00:01:03,470
+And what that does is, this
+also shows you the power.
+
+15
+00:01:03,470 --> 00:01:09,908
+So this is what's going on, let's quickly
+take a second to see what's going on.
+
+16
+00:01:09,908 --> 00:01:17,477
+I'm going to draw the time line with you,
+zero, one, how many years?
+
+17
+00:01:17,477 --> 00:01:18,200
+Fifty years.
+
+18
+00:01:20,90 --> 00:01:21,60
+Now what are you doing?
+
+19
+00:01:21,60 --> 00:01:23,796
+You're saving $1,000.
+
+20
+00:01:23,796 --> 00:01:25,750
+How many times?
+
+21
+00:01:25,750 --> 00:01:26,690
+50 times.
+
+22
+00:01:26,690 --> 00:01:30,610
+And the question you are asking is,
+
+23
+00:01:31,650 --> 00:01:35,350
+N is 50, PMT.
+
+24
+00:01:37,810 --> 00:01:41,670
+I promised you my handwriting
+was terrible, is 1,000.
+
+25
+00:01:41,670 --> 00:01:49,430
+But I'm giving you r of either 5% or 15%.
+
+26
+00:01:49,430 --> 00:01:52,680
+So I'm really showing you
+the power of two things.
+
+27
+00:01:52,680 --> 00:01:56,330
+One is time and
+the other is the interest rate combined.
+
+28
+00:01:56,330 --> 00:01:59,160
+And time is more powerful
+here because you're
+
+29
+00:01:59,160 --> 00:02:01,259
+making investments over and over again.
+
+30
+00:02:01,260 --> 00:02:05,449
+Before we start this, and I'm going
+to go to Excel to do this with you,
+
+31
+00:02:05,449 --> 00:02:10,220
+though it's not too complicated, you
+know what to look for, the FV function.
+
+32
+00:02:10,220 --> 00:02:12,460
+Before we go there,
+let me ask you a simple question.
+
+33
+00:02:12,460 --> 00:02:16,883
+Think about how much would you have
+if there was no Time Value of Money.
+
+34
+00:02:16,883 --> 00:02:21,830
+Life would be very simple in terms of
+calculating, because you'll take 50 and
+
+35
+00:02:21,830 --> 00:02:23,698
+multiply it by 1,000.
+
+36
+00:02:23,698 --> 00:02:26,624
+So you'll have 50,000, right?
+
+37
+00:02:26,624 --> 00:02:30,704
+But life becomes very interesting,
+and I'm going to go over to
+
+38
+00:02:30,705 --> 00:02:36,500
+Excel, And do it with you, one shot.
+
+39
+00:02:36,500 --> 00:02:41,790
+So if you go to Excel,
+let's go to cell A1, and
+
+40
+00:02:41,790 --> 00:02:48,929
+I'm going to stick there and
+try to do the problem with you.
+
+41
+00:02:48,930 --> 00:02:55,3
+So you press equal sign, you press FV,
+and then you press what?
+
+42
+00:02:55,3 --> 00:03:00,519
+0.05, then I press
+
+43
+00:03:00,520 --> 00:03:05,900
+50, and
+I then press how much? Thousand.
+
+44
+00:03:06,930 --> 00:03:11,520
+If you notice,
+I don't need to press anything in PV or
+
+45
+00:03:11,520 --> 00:03:13,840
+FV that comes, then I hit it.
+
+46
+00:03:13,840 --> 00:03:15,870
+Return, how much do you get?
+
+47
+00:03:15,870 --> 00:03:19,916
+We should get about $209,348.
+
+48
+00:03:19,916 --> 00:03:23,49
+I think we do get that.
+
+49
+00:03:23,49 --> 00:03:27,248
+So, that was the first part,
+now the cool thing is if you look at it,
+
+50
+00:03:27,248 --> 00:03:31,269
+how much did yo have if you didn't
+have any Time Value of Money?
+
+51
+00:03:31,270 --> 00:03:34,430
+You had five $1,000 50 times, $50,000.
+
+52
+00:03:34,430 --> 00:03:38,980
+You already have at 5%, 4 times that.
+
+53
+00:03:38,980 --> 00:03:42,516
+And the difference between 50 and
+$209,000,
+
+54
+00:03:42,516 --> 00:03:44,296
+about $159,000
+
+55
+00:03:44,296 --> 00:03:50,720
+is because of compounding, right? Interest with compounding,
+obviously.
+
+56
+00:03:50,720 --> 00:03:54,990
+So I'm going to now change
+this a little bit right here.
+
+57
+00:03:54,990 --> 00:03:59,940
+The other thing was,
+take a guess how much will it be at 15%.
+
+58
+00:03:59,940 --> 00:04:06,859
+Many people will think, look, you know,
+5%, 15% should be about 3 times.
+
+59
+00:04:06,860 --> 00:04:08,480
+What are they ignoring?
+
+60
+00:04:08,480 --> 00:04:12,200
+They're ignoring the fact,
+that actually there is compounding,
+
+61
+00:04:12,200 --> 00:04:13,484
+which is highly non-linear.
+
+62
+00:04:14,680 --> 00:04:18,170
+So I've changed the 0.05
+to 0.15 right there.
+
+63
+00:04:18,170 --> 00:04:21,680
+I hit enter and I am just double
+checking with my numbers so
+
+64
+00:04:21,680 --> 00:04:25,800
+that, because this is online and we don't
+want to keep typing small mistakes even
+
+65
+00:04:25,800 --> 00:04:29,690
+though I'll make them, I do the numbers
+a little bit ahead of time.
+
+66
+00:04:29,690 --> 00:04:31,883
+Turns out it's $7 million.
+
+67
+00:04:31,883 --> 00:04:37,311
+And plus $217,716, so actually,
+
+68
+00:04:37,311 --> 00:04:43,15
+it's about $7 million more
+than what we found at 5%.
+
+69
+00:04:43,16 --> 00:04:46,350
+So, I mean, think about it.
+
+70
+00:04:46,350 --> 00:04:47,490
+Isn't that cool?
+
+71
+00:04:47,490 --> 00:04:47,990
+First.
+
+72
+00:04:47,990 --> 00:04:52,500
+Second, it shows you
+that life can get very,
+
+73
+00:04:52,500 --> 00:04:56,440
+very complicated when we do non-linear
+stuff, and as I said earlier,
+
+74
+00:04:57,560 --> 00:05:03,920
+many people are surprised, including me,
+to see, how powerful compounding can be.
+
+75
+00:05:03,920 --> 00:05:06,320
+It looks very cool moving forward.
+
+76
+00:05:06,320 --> 00:05:10,870
+But it can be devastating,
+when you go do PVs.
+
+77
+00:05:10,870 --> 00:05:17,220
+And, incredibly valuable things in the
+future, could look, of very little value
+
+78
+00:05:17,220 --> 00:05:22,510
+today if you use high interest rates,
+which may or may not be justified.
+
+79
+00:05:22,510 --> 00:05:23,490
+That's a whole debate.
+
+80
+00:05:24,800 --> 00:05:28,570
+In very long term investments,
+right? For future generations.
+

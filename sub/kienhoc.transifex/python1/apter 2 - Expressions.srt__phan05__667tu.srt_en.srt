@@ -1,0 +1,435 @@
+381
+00:17:51,860 --> 00:17:56,710
+https://youtu.be/IXXHH6ztsSA
+But for now, in Python
+2, 9 over 2 is 4.
+
+382
+00:17:56,710 --> 00:18:00,940
+And 99 over 100 is 0.
+
+383
+00:18:00,940 --> 00:18:02,590
+Now that seems rather
+counterintuitive.
+
+384
+00:18:02,590 --> 00:18:04,040
+But it is a truncating division.
+
+385
+00:18:04,040 --> 00:18:05,680
+It's not a rounding division.
+
+386
+00:18:05,680 --> 00:18:07,150
+It is a truncated division.
+
+387
+00:18:07,150 --> 00:18:09,690
+Now interestingly, if you
+make either of these numbers
+
+388
+00:18:09,690 --> 00:18:14,380
+have a decimal, make them what
+we call floating point numbers,
+
+389
+00:18:14,380 --> 00:18:16,310
+then the division is
+done in floating point.
+
+390
+00:18:16,310 --> 00:18:18,860
+
+391
+00:18:18,860 --> 00:18:21,790
+So 10.0 over 2.0 is 5.0.
+
+392
+00:18:21,790 --> 00:18:24,100
+Now these are different.
+
+393
+00:18:24,100 --> 00:18:26,590
+This is an integer number,
+and this is a floating point
+
+394
+00:18:26,590 --> 00:18:27,430
+number.
+
+395
+00:18:27,430 --> 00:18:28,350
+It's 5.0.
+
+396
+00:18:28,350 --> 00:18:32,285
+And then 99.0 100.0 is
+exactly as you would expect.
+
+397
+00:18:32,285 --> 00:18:33,660
+And it's a floating
+point number.
+
+398
+00:18:33,660 --> 00:18:36,840
+
+399
+00:18:36,840 --> 00:18:40,080
+Now you can also mix integers
+and floating point numbers
+
+400
+00:18:40,080 --> 00:18:41,380
+as you go.
+
+401
+00:18:41,380 --> 00:18:43,390
+So here we have 99 over 100.
+
+402
+00:18:43,390 --> 00:18:47,530
+Those are both integers,
+integer, integer.
+
+403
+00:18:47,530 --> 00:18:50,020
+And it comes out with zero,
+because it's truncating.
+
+404
+00:18:50,020 --> 00:18:53,580
+Now if we have an integer
+and a floating point number,
+
+405
+00:18:53,580 --> 00:18:58,340
+99 over other 100.0, then
+that comes out as 0.99.
+
+406
+00:18:58,340 --> 00:19:00,824
+The either one, if
+we have 99 over 100,
+
+407
+00:19:00,824 --> 00:19:02,740
+that's a floating point
+and that's an integer,
+
+408
+00:19:02,740 --> 00:19:04,323
+we still end up with
+a floating point.
+
+409
+00:19:04,323 --> 00:19:06,490
+So this is a floating
+point, floating point,
+
+410
+00:19:06,490 --> 00:19:11,140
+and even in complex
+expressions as it evaluates,
+
+411
+00:19:11,140 --> 00:19:12,219
+when it sees an integer.
+
+412
+00:19:12,219 --> 00:19:13,760
+So the first thing
+you would evaluate
+
+413
+00:19:13,760 --> 00:19:15,650
+is this would become 6.
+
+414
+00:19:15,650 --> 00:19:20,930
+So it would be 1 plus
+6 over 4.0 minus 5.
+
+415
+00:19:20,930 --> 00:19:23,240
+Then it would be
+doing this 6 over 4.0,
+
+416
+00:19:23,240 --> 00:19:25,780
+and that would be 1.5.
+
+417
+00:19:25,780 --> 00:19:29,460
+1 plus 1.5 minus 5.
+
+418
+00:19:29,460 --> 00:19:32,080
+And so this is an integer,
+and that's a floating point.
+
+419
+00:19:32,080 --> 00:19:33,780
+And the result becomes
+a floating point.
+
+420
+00:19:33,780 --> 00:19:35,280
+And then the rest
+of the calculation
+
+421
+00:19:35,280 --> 00:19:38,790
+is done floating point to the
+point where the ultimate is
+
+422
+00:19:38,790 --> 00:19:41,170
+a floating point negative 2.5.
+
+423
+00:19:41,170 --> 00:19:44,580
+So you can throw a floating
+point into a calculation.
+
+424
+00:19:44,580 --> 00:19:47,630
+And as soon as the calculation
+touches the floating point,
+
+425
+00:19:47,630 --> 00:19:50,482
+the remainder of the calculation
+is done in floating point.
+
+426
+00:19:50,482 --> 00:19:52,190
+It kind of converts
+it to floating point.
+
+427
+00:19:52,190 --> 00:19:54,610
+But it doesn't want
+to convert it back.
+
+428
+00:19:54,610 --> 00:19:57,840
+Because it considers floating
+point sort of the more general
+
+429
+00:19:57,840 --> 00:19:59,023
+of the representations.
+
+430
+00:19:59,023 --> 00:20:01,800
+
+431
+00:20:01,800 --> 00:20:06,520
+So here we are talking about
+integers and floating points.
+
+432
+00:20:06,520 --> 00:20:08,990
+These are a concept in
+programming languages
+
+433
+00:20:08,990 --> 00:20:11,840
+and in Python called type.
+
+434
+00:20:11,840 --> 00:20:15,620
+Variables and
+constants have a type.
+
+435
+00:20:15,620 --> 00:20:19,630
+We can see that if
+you say 1 versus 1.0,
+
+436
+00:20:19,630 --> 00:20:22,080
+it works differently, it
+functions differently.
+
+437
+00:20:22,080 --> 00:20:25,650
+And so Python keeps
+track of both variables
+
+438
+00:20:25,650 --> 00:20:30,030
+and literal slash constants
+and having them have a type.
+
+439
+00:20:30,030 --> 00:20:32,260
+And we've seen this, right?
+
+440
+00:20:32,260 --> 00:20:34,230
+Now, the interesting
+thing is Python
+
+441
+00:20:34,230 --> 00:20:37,860
+is very aware of the type
+and can use the same syntax
+
+442
+00:20:37,860 --> 00:20:40,010
+to accomplish different things.
+
+443
+00:20:40,010 --> 00:20:43,369
+So if we look at this line
+here, where we say dd = 1.4,
+
+444
+00:20:43,369 --> 00:20:45,660
+well, it looks at the 1 and
+it looks at the 4 and says,
+
+445
+00:20:45,660 --> 00:20:47,050
+oh, those are two integers.
+
+446
+00:20:47,050 --> 00:20:49,720
+I will add those together
+and give you a 5.
+
+447
+00:20:49,720 --> 00:20:51,370
+So it gives you an
+integer and integer,
+
+448
+00:20:51,370 --> 00:20:54,010
+and an integer comes back.
+
+449
+00:20:54,010 --> 00:20:56,590
+And then ee = hello plus there.
+
+450
+00:20:56,590 --> 00:20:58,930
+Well, these are two
+strings, hello and there.
+
+451
+00:20:58,930 --> 00:21:02,330
+And it says, hm, this
+must be a concatenation.
+
+452
+00:21:02,330 --> 00:21:04,880
+
+453
+00:21:04,880 --> 00:21:06,810
+So I'm going to
+concatenate those together.
+
+454
+00:21:06,810 --> 00:21:08,000
+Because those are strings.
+
+455
+00:21:08,000 --> 00:21:10,050
+And I know how to
+concatenate strings.
+
+456
+00:21:10,050 --> 00:21:14,040
+And that's kind of like
+string addition, right?
+
+457
+00:21:14,040 --> 00:21:17,170
+And so we see hello
+there as a result.
+
+458
+00:21:17,170 --> 00:21:20,016
+Now the interesting thing is
+where did this space come from?
+
+459
+00:21:20,016 --> 00:21:21,990
+Let me change colors here.
+
+460
+00:21:21,990 --> 00:21:22,690
+Oops.
+
+461
+00:21:22,690 --> 00:21:24,310
+Where did that space come from?
+
+462
+00:21:24,310 --> 00:21:27,080
+Well, the plus does
+not add the space.
+
+463
+00:21:27,080 --> 00:21:28,510
+There's a space right there.
+
+464
+00:21:28,510 --> 00:21:29,780
+And that's the space.
+
+465
+00:21:29,780 --> 00:21:33,060
+So I concatenated
+hello space plus there.
+
+466
+00:21:33,060 --> 00:21:35,050
+And that's how I
+got hello there.
+
+467
+00:21:35,050 --> 00:21:39,590
+But the key thing is is
+this plus operator, clear.
+
+468
+00:21:39,590 --> 00:21:43,480
+This plus operator looks
+to either side and says,
+
+469
+00:21:43,480 --> 00:21:44,810
+oh, they're strings.
+
+470
+00:21:44,810 --> 00:21:46,740
+I think you mean concatenation.
+
+471
+00:21:46,740 --> 00:21:48,880
+Here, it looks at
+either side and says,
+
+472
+00:21:48,880 --> 00:21:50,240
+oh, those are integers.
+
+473
+00:21:50,240 --> 00:21:51,910
+I think you mean addition.
+
+474
+00:21:51,910 --> 00:21:54,340
+So Python is very aware of type.
+
+475
+00:21:54,340 --> 00:21:57,640
+And type informs Python
+what you really mean.
+

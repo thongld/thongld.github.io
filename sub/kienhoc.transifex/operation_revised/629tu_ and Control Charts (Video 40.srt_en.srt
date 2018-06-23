@@ -1,0 +1,328 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/BJ56oU5xSLU
+
+1
+00:00:06,120 --> 00:00:08,789
+hello again and welcome back to  operations
+management
+
+2
+00:00:08,789 --> 00:00:12,568
+in this session we're gonna be continuing our
+discussion on statistical process
+
+3
+00:00:12,568 --> 00:00:13,330
+control
+
+4
+00:00:13,330 --> 00:00:16,929
+and talking about inspection and control
+charts
+
+5
+00:00:16,929 --> 00:00:20,320
+the purpose of inspection
+
+6
+00:00:20,320 --> 00:00:23,500
+is so that we can actually monitor
+
+7
+00:00:23,500 --> 00:00:26,809
+what is happening with the process what
+we can do
+
+8
+00:00:26,809 --> 00:00:30,059
+is we can take samples of product or
+we can take a look
+
+9
+00:00:30,059 --> 00:00:34,299
+the service that's happening during our
+process and then we're going to evaluate
+
+10
+00:00:34,299 --> 00:00:35,460
+that
+
+11
+00:00:35,460 --> 00:00:39,770
+against a series of standards that's
+what we're doing with inspection
+
+12
+00:00:39,770 --> 00:00:43,820
+if you're thinking about levels of 
+quality cost
+
+13
+00:00:43,820 --> 00:00:47,750
+this would be part of the appraisal cost
+now inspection
+
+14
+00:00:47,750 --> 00:00:52,308
+can be performed any point in the
+process but it's very important to
+
+15
+00:00:52,308 --> 00:00:54,709
+remember that you can't inspect
+
+16
+00:00:54,710 --> 00:00:58,649
+quality into a product or service all
+inspection does
+
+17
+00:00:58,649 --> 00:01:02,420
+is identify whether or not there're
+areas in your process
+
+18
+00:01:02,420 --> 00:01:07,270
+we can be talking about two different
+kinds of inspection
+
+19
+00:01:07,270 --> 00:01:11,680
+one is attributes inspection and the
+other one is variables inspection
+
+20
+00:01:11,680 --> 00:01:15,220
+and attribute inspection is a simple
+
+21
+00:01:15,219 --> 00:01:19,879
+good versus defect we're going to be
+looking at the product or the service
+
+22
+00:01:19,879 --> 00:01:23,199
+and identifying whether there're  defects
+in the product
+
+23
+00:01:23,200 --> 00:01:27,400
+whether the product itself is defective
+now
+
+24
+00:01:27,400 --> 00:01:30,850
+variables inspection is a little bit
+different because
+
+25
+00:01:30,849 --> 00:01:34,319
+not only are we trying to figure out
+whether there's a problem with the
+
+26
+00:01:34,319 --> 00:01:35,059
+process
+
+27
+00:01:35,060 --> 00:01:39,200
+we're looking at it on a continuum scale
+up a dimension
+
+28
+00:01:39,200 --> 00:01:42,380
+we're going to be looking at the overall
+length wat
+
+29
+00:01:42,379 --> 00:01:47,099
+time thickness something that we can
+actually measure numerically
+
+30
+00:01:47,099 --> 00:01:50,959
+so those are the two different kinds of
+inspections that we will be looking at
+
+31
+00:01:50,959 --> 00:01:55,009
+some common control charts
+
+32
+00:01:55,009 --> 00:01:58,719
+when we do inspection for variables are
+
+33
+00:01:58,719 --> 00:02:02,259
+The X bar and the R chart now the
+
+34
+00:02:02,259 --> 00:02:06,930
+X bar tracks the mean of samples so
+that would give us a measure of
+
+35
+00:02:06,930 --> 00:02:08,310
+central tendency
+
+36
+00:02:08,310 --> 00:02:12,319
+the R chart will track the range
+
+37
+00:02:12,319 --> 00:02:15,519
+of the samples so that will give us a
+measure of dispersion
+
+38
+00:02:15,520 --> 00:02:19,850
+so if are looking at a dimension we want
+to see
+
+39
+00:02:19,849 --> 00:02:23,090
+what the average of the dimension is as
+well as
+
+40
+00:02:23,090 --> 00:02:26,849
+the range of numbers in that dimension
+
+41
+00:02:26,849 --> 00:02:31,210
+that's why the X bar and the R
+chart always used together
+
+42
+00:02:31,210 --> 00:02:34,950
+because the X bar gives you the
+measure of a central tendency
+
+43
+00:02:34,949 --> 00:02:40,250
+and the R chart gives us a measure of
+dispersion for
+
+44
+00:02:40,250 --> 00:02:43,789
+the attribute charts we're looking at the 
+P- chart
+
+45
+00:02:43,789 --> 00:02:46,879
+and a C-chart a P-chart can
+
+46
+00:02:46,879 --> 00:02:49,919
+track percent or fraction defective
+
+47
+00:02:49,919 --> 00:02:53,309
+in a sample so that'll tell us
+
+48
+00:02:53,310 --> 00:02:56,810
+out of a sample how many or what
+percent
+
+49
+00:02:56,810 --> 00:03:01,270
+of defective unit we actually have where
+is the C- chart
+
+50
+00:03:01,270 --> 00:03:04,290
+just tracks the number or a count of
+
+51
+00:03:04,289 --> 00:03:09,449
+defects in a sample the big difference
+between the P-chart and C-chart
+
+52
+00:03:09,449 --> 00:03:13,099
+is the C-chart allows us to count
+defects
+
+53
+00:03:13,099 --> 00:03:17,159
+that occur on a product and there can be
+more than one
+
+54
+00:03:17,159 --> 00:03:22,239
+defect on a product so that's a big
+difference between the P-chart and the
+
+55
+00:03:22,239 --> 00:03:23,060
+C-chart
+
+56
+00:03:23,060 --> 00:03:27,709
+so if you trying to figure out what kind
+of control chart to use
+
+57
+00:03:27,709 --> 00:03:31,770
+the first thing you have to identify is
+are you measuring
+
+58
+00:03:31,770 --> 00:03:35,680
+variables such as a size weight or
+something like that
+
+59
+00:03:35,680 --> 00:03:39,870
+much case you are you looking at the
+variables control charts
+
+60
+00:03:39,870 --> 00:03:43,640
+in which case would be using X-bar
+and in our chart
+
+61
+00:03:43,639 --> 00:03:48,619
+always together but if that's not what
+we're doing are we just counting
+
+62
+00:03:48,620 --> 00:03:52,920
+or trying to figure out a percent
+defective then we're looking at accurate
+
+63
+00:03:52,919 --> 00:03:53,939
+control charts
+
+64
+00:03:53,939 --> 00:03:59,500
+so if we're measuring a fraction or
+percent defectives wouldn't be looking at
+
+65
+00:03:59,500 --> 00:04:03,659
+P chart and if we're just counting the
+total number of defects
+
+66
+00:04:03,659 --> 00:04:07,120
+then we're going to be looking at C
+chart
+
+67
+00:04:07,120 --> 00:04:11,170
+on our next video we gonna be taking a look at
+exploring our charts and how we can
+
+68
+00:04:11,169 --> 00:04:13,280
+actually developed to control limit
+
+69
+00:04:13,280 --> 00:04:15,068
+I'll see you then
+

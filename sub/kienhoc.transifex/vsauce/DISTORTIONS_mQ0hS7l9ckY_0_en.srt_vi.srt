@@ -1,0 +1,701 @@
+1
+00:00:07,219 --> 00:00:10,558
+phuongphuong 5/2
+Này, Vsauce. Michael đây.
+Tôi đã bị bóp méo.
+
+2
+00:00:10,558 --> 00:00:13,959
+Những điểm ảnh bạn đang nhìn thấy đã bị chuyển đổi thời gian.
+
+3
+00:00:13,960 --> 00:00:18,179
+Chúng đã được chuyển thành một đường gradient 
+
+4
+00:00:18,179 --> 00:00:21,778
+và khu vực chuyển đổi càng tối bao nhiêu thì chúng càng bị chậm hơn bấy nhiêu.
+
+5
+00:00:21,778 --> 00:00:25,589
+Hiệu ứng này thực sự rất vui nhộn nhưng chắc chắn không phải là thật.
+
+6
+00:00:25,589 --> 00:00:28,589
+Hay là thật?
+
+7
+00:00:31,230 --> 00:00:35,820
+Rất nhiều máy ảnh kĩ thuật số phải chịu cảnh biến dạng do hiện tượng bị chậm (lag) gây ra,
+
+8
+00:00:35,820 --> 00:00:39,020
+giống hệt như những gì bạn vừa mới thấy, 
+chỉ khác là chúng tinh tế hơn rất nhiều.
+
+9
+00:00:39,020 --> 00:00:42,460
+Thông thường hiện tượng lag này hoàn toàn không thể phát hiện ra.
+
+10
+00:00:42,460 --> 00:00:45,710
+Hiện tượng này được gọi là màn trập lăn.
+
+11
+00:00:45,710 --> 00:00:48,789
+Thay vì chụp toàn bộ mặt phơi sáng một lần
+
+12
+00:00:48,789 --> 00:00:52,198
+chúng sẽ nhanh chóng quét các dải trong mỗi khung. 
+Việc này thường không thể phát hiện được thấy.
+
+13
+00:00:52,198 --> 00:00:56,710
+Nhưng khi vật thể thay đổi nhanh hơn
+
+14
+00:00:56,710 --> 00:00:57,550
+tốc độ quét của máy ảnh,
+
+15
+00:00:57,549 --> 00:01:03,209
+bạn sẽ thấy hiện tượng màn trập lăn rung rung geloey nổi tiếng. 
+
+16
+00:01:03,210 --> 00:01:06,799
+Những thứ cực kì nhanh, ví dụ như các dây guitar khi rung hay là các cánh quạt máy bay,
+
+17
+00:01:06,799 --> 00:01:11,709
+là những đối tượng bị ảnh hưởng ta vẫn thường biết đến, và ngay cả con người cũng có thể bị ảnh hưởng.
+Luke Mandel đã đăng bức ảnh này lên Boing Boing[.net].
+
+18
+00:01:11,709 --> 00:01:16,618
+Máy ảnh của anh ấy đã quét từ trái sang phải, và trong ví dụ này,
+
+19
+00:01:16,618 --> 00:01:20,209
+đã chụp được một cái nhắm mắt khi máy quét bắt đầu
+
+20
+00:01:20,209 --> 00:01:25,169
+và sau đó mở ra trong quá trình ánh xạ quét được của 1 phần của một giây sau đó.
+
+21
+00:01:25,170 --> 00:01:28,739
+Nhưng hiệu ứng màn trập lăn
+
+22
+00:01:28,739 --> 00:01:32,699
+không phải chỉ là một sự tò mò. Nó biểu hiện cho 
+
+23
+00:01:32,700 --> 00:01:36,130
+sự biến dạng cơ bản và không thể trốn thoát
+
+24
+00:01:36,129 --> 00:01:39,709
+có ảnh hưởng đến mọi vật mà ta thấy. Màn trập lăn hay không.
+
+25
+00:01:39,709 --> 00:01:44,118
+Trước hết, hãy cùng nói về các sự bóp méo.
+
+26
+00:01:44,118 --> 00:01:47,409
+Ảo giác chính là một hình thức biến dạng của thực tế
+
+27
+00:01:47,409 --> 00:01:51,390
+khi không có kích thích rõ rệt nào. Nếu bạn đang hiểu sai một kích thích thực sự,
+
+28
+00:01:51,390 --> 00:01:55,700
+thì đó là một ảo giác.
+
+29
+00:01:55,700 --> 00:01:59,909
+Nhưng có nhiều biến dạng xảy ra trước khi các giác quan và đầu óc ta kịp nhận ra.
+
+30
+00:01:59,909 --> 00:02:03,180
+Những biến dạng đó được gọi là hiện tượng quang học.
+
+31
+00:02:03,180 --> 00:02:08,340
+Chúng không phải là do giác quan hoặc nhận thức sai lầm.
+
+32
+00:02:08,340 --> 00:02:13,659
+Ngược lại, hiện tượng quang học là các biến dạng bị gây ra bởi tỉ lệ ánh sáng
+
+33
+00:02:13,659 --> 00:02:14,500
+và các vấn đề trong chính bản thân hiện tượng này.
+
+34
+00:02:14,500 --> 00:02:17,969
+Nếu bạn nhìn lên trời
+
+35
+00:02:17,969 --> 00:02:21,639
+và thấy xuất hiện một bầu nước khổng lồ vô cùng sinh động,
+
+36
+00:02:21,639 --> 00:02:24,899
+thì bạn đang bị ảo giác.
+Nhưng nếu bạn nhìn thấy 
+
+37
+00:02:24,900 --> 00:02:29,000
+mặt phẳng hai chiều với các chấm nhỏ liên kết với nhau, thì bạn đang thấy một ảo ảnh.
+
+38
+00:02:29,000 --> 00:02:32,289
+Đó là ảo ảnh bởi vì những chấm nhỏ này chỉ xuất hiện trên cùng một mặt phẳng,
+
+39
+00:02:32,289 --> 00:02:37,509
+chẳng hạn như những lỗ nhỏ đâm vào vòm tối tăm của bầu trời.
+
+40
+00:02:37,509 --> 00:02:40,608
+Trên thực tế, những chấm nhỏ đó là các ngôi sao
+
+41
+00:02:40,609 --> 00:02:44,730
+cách xa nhau nhiều năm ánh sáng trong không gian 3 chiều.
+
+42
+00:02:44,729 --> 00:02:48,840
+Như hình dung không gian thực 3 chiều của Celestron đã chỉ ra,
+
+43
+00:02:48,840 --> 00:02:52,439
+từ nhiều quan điểm khác nhau,
+
+44
+00:02:52,439 --> 00:02:56,409
+những ngôi sao này trông không giống lắm một chòm Đại hùng hoặc Đại hùng tinh.
+
+45
+00:02:56,409 --> 00:02:59,659
+Thực tế, tất cả các chòm sao đều là ảo ảnh địa tâm.
+
+46
+00:02:59,659 --> 00:03:03,650
+Xét từ quan điểm rộng hơn
+
+47
+00:03:03,650 --> 00:03:06,730
+các phác thảo của chúng đều hướng vào trong,
+
+48
+00:03:06,729 --> 00:03:09,789
+tới một điểm thông thường trong không gian tạo nên tên gọi của chúng.
+
+49
+00:03:09,789 --> 00:03:13,560
+Nhưng bạn không thể đổ lỗi cho chúng ta.
+
+50
+00:03:13,560 --> 00:03:18,400
+Ý tôi là, Trái đất là góc nhìn duy nhất mà con người có.
+
+51
+00:03:18,419 --> 00:03:22,199
+Và thậm chí cả con tàu Voyager 1, vật thể nhân tạo được phóng xa nhất,
+
+52
+00:03:22,209 --> 00:03:26,060
+cũng không tiến được đủ gần tới các chùm sao
+
+53
+00:03:26,060 --> 00:03:29,759
+để quan sát được những gì khác biệt hơn so với những gì ở Trái đất quan sát được.
+
+54
+00:03:29,759 --> 00:03:33,569
+Đó cũng không phải là lỗi của chúng ta, không phải lỗi của mắt hay não bộ của ta,
+
+55
+00:03:33,569 --> 00:03:37,108
+những ngôi sao xa xôi đó không được bao gồm
+
+56
+00:03:37,109 --> 00:03:40,810
+trong trò chơi ban đầu nghiên cứu về các chòm sao.
+
+57
+00:03:40,810 --> 00:03:44,079
+Chắc chắn rồi, thị lực của ta có thể tốt hơn,
+
+58
+00:03:44,079 --> 00:03:47,129
+nhưng hiện tượng quang học cũng là nguyên do cần nhắc đến.
+
+59
+00:03:47,129 --> 00:03:52,349
+Nếu không phải là vì quá trình hóa đỏ, định luật vuông đổi chiều và tuyệt chủng ánh sáng,
+
+60
+00:03:52,349 --> 00:03:55,599
+thì ta có thể quan sát thấy những ngôi sao xa xôi đó trong vẻ đẹp rực rỡ nhất của nó.
+
+61
+00:03:55,599 --> 00:03:59,819
+Bầu trời ban đêm trông cũng sẽ phi thường. Có rất nhiều cấu trúc khổng lồ ở trên đó.
+
+62
+00:03:59,819 --> 00:04:03,150
+Chỉ có điều là chúng quá mờ
+
+63
+00:04:03,150 --> 00:04:06,849
+để đánh giá được sự to lớn mà chúng có.
+
+64
+00:04:06,849 --> 00:04:11,870
+Khi ta quan sát các bức ảnh chụp các vật thể xa xôi thực hiện bởi Kính viễn vọng không gian Hubble, ví dụ như Tinh vân Helix,
+
+65
+00:04:11,870 --> 00:04:15,509
+ta thường cho rằng, nếu không có kính viễn vọng phóng ảnh lên,
+
+66
+00:04:15,509 --> 00:04:19,289
+thì vật thể đó chỉ là một chấm nhỏ trên bầu trời.
+
+67
+00:04:19,290 --> 00:04:23,419
+Nhưng thực tế thì, dù cho Tinh vân Helix
+
+68
+00:04:23,418 --> 00:04:26,680
+cách xa 700 năm ánh sáng, thì bề mặt của nó cũng trải rộng 3 năm ánh sáng.
+
+69
+00:04:26,680 --> 00:04:31,160
+Nếu ta có thể khiến Tinh vân Helix ít mờ nhạt hơn,
+
+70
+00:04:31,160 --> 00:04:34,340
+nếu mắt ta có thể tiếp xúc rất lâu với nó, 
+
+71
+00:04:34,339 --> 00:04:37,728
+thì ta có thể thấy Tinh vân Helix đích thực
+
+72
+00:04:37,728 --> 00:04:42,839
+với đường kính rõ ràng gần 70% so với mặt trăng.
+
+73
+00:04:42,839 --> 00:04:47,379
+Đây là một bức tranh nghiêm túc. Nó thể hiện mức to lớn mà Tinh vân Helix
+
+74
+00:04:47,379 --> 00:04:50,800
+sẽ xuất hiện trên bầu trời đêm nếu nhìn từ vị trí trái đất
+
+75
+00:04:50,800 --> 00:04:54,360
+trong điều kiện không quá mờ nhạt. 
+Tiện thể thì mặt trăng cũng rất nhỏ trên bầu trời.
+
+76
+00:04:54,360 --> 00:04:59,199
+Ta dễ nghĩ rằng mặt trăng là vật thể khổng lồ có kích thước bằng quả bóng chày
+
+77
+00:04:59,199 --> 00:05:02,909
+được treo trên trời, nhưng đó lại chỉ là ảo ảnh.
+
+78
+00:05:02,910 --> 00:05:06,960
+Nếu lần tới ngắm trăng, bạn hãy thử điều này. Hãy giật một tờ giấy trắng của quyển vở
+
+79
+00:05:06,959 --> 00:05:10,299
+và bạn sẽ thấy rằng đường kính góc của mặt trăng
+
+80
+00:05:10,300 --> 00:05:14,840
+bằng với ddownwgf kính của cái lỗ nhỏ này khi đặt xa một cánh tay.
+
+81
+00:05:14,839 --> 00:05:19,879
+Nghiêm túc đấy, hãy thử làm việc này. 
+Nó sẽ chỉ ra mặt trăng nhỏ của chúng ta đáng yêu và bé nhỏ đến mức nào.
+
+82
+00:05:19,879 --> 00:05:23,620
+Tinh vân Orion dường như sẽ còn lớn hơn nữa,
+
+83
+00:05:23,620 --> 00:05:27,100
+nếu ta nhìn được toàn bộ ánh sáng của nó.
+
+84
+00:05:27,100 --> 00:05:30,180
+Và Dải ngân hà Andromeda thì sao?
+
+85
+00:05:30,180 --> 00:05:34,970
+Chỉ là một đường mờ trên bầu trời qua con mắt của ta thôi.
+Nhưng nếu mắt ta tốt hơn trong việc thu thập các ánh sáng mờ,
+
+86
+00:05:34,970 --> 00:05:38,420
+thì ta sẽ thấy được kích cỡ thực sự của Dải Andromeda trên bầu trời.
+
+87
+00:05:38,420 --> 00:05:41,689
+Tất nhiên là bầu trời đêm của ta trông không giống thế.
+
+88
+00:05:41,689 --> 00:05:44,719
+Các vật thể xa xôi càng mờ dần.
+
+89
+00:05:44,720 --> 00:05:49,520
+Nhưng ánh sáng vẫn giành chiến thắng khi ta nói tới tốc độ.
+
+90
+00:05:49,519 --> 00:05:55,319
+Ánh sáng di chuyển với tốc độ nhanh nhất. 
+Thực tế, trong môi trường chân không,
+
+91
+00:05:55,329 --> 00:05:57,969
+ánh sáng di chuyển với tốc độ 300 000 km/s.
+
+92
+00:05:58,540 --> 00:05:59,400
+Thế là nhanh rồi.
+
+93
+00:06:01,069 --> 00:06:04,629
+Nhưng lại không hẳn. Ý tôi là, không so sánh với khoảng cách của các vật thể trong vũ trụ.
+
+94
+00:06:04,629 --> 00:06:08,199
+Sydney, Australia cách London
+
+95
+00:06:08,199 --> 00:06:12,279
+1/14 giây ánh sáng.
+
+96
+00:06:12,279 --> 00:06:13,919
+Nhưng Dải ngân hà Andromeda cách London 
+
+97
+00:06:13,920 --> 00:06:18,540
+tới 2500000 năm ánh sáng.
+
+98
+00:06:18,550 --> 00:06:22,829
+Để hình dung ra điều này, hãy cùng thực hiện một chuyến du hành bằng tốc đô ánh sáng từ London đến Sydney.
+
+99
+00:06:22,829 --> 00:06:25,810
+Trông nó sẽ như thế này.... Sẵn sàng chưa?
+
+100
+00:06:25,810 --> 00:06:29,550
+3, 2, 1, xuất phát!
+
+101
+00:06:30,850 --> 00:06:35,230
+Tuyệt vời! Đây là Dải Andromeda.
+
+102
+00:06:35,230 --> 00:06:40,520
+Được rồi, giờ hãy bỏ các hiệu ứng tương đối sang một bên,
+hãy cùng quan sát xem mọi thứ sẽ ra sao
+
+103
+00:06:40,519 --> 00:06:43,180
+khi di chuyển đến Dải Andromeda bằng tốc độ ánh sáng.
+
+104
+00:06:43,180 --> 00:06:46,019
+Sẵn sàng chưa? Được rồi.
+
+105
+00:06:46,019 --> 00:06:50,539
+3, 2, 1, xuất phát!
+
+106
+00:06:54,360 --> 00:06:57,439
+nghiêm túc mà nói thì, việc này khá là khập khiễng.
+
+107
+00:06:57,449 --> 00:07:01,349
+Ngay cả với tốc độ ánh sáng,
+
+108
+00:07:01,350 --> 00:07:05,230
+tốc độ nhanh nhất có thể, thì một năm nữa tính từ thời điểm này
+
+109
+00:07:05,230 --> 00:07:09,000
+ta cũng không thể chạm tới một phần một triệu con đường tới đó.
+
+110
+00:07:09,000 --> 00:07:11,319
+Đó là khoảng cách để tới Andromeda.
+
+111
+00:07:11,329 --> 00:07:14,979
+Thật đáng buồn.
+
+112
+00:07:14,980 --> 00:07:20,290
+Nhưng chính việc này mang ta trở lại với hiệu ứng màn trập lăn.
+
+113
+00:07:20,290 --> 00:07:25,960
+Dải Andromeda là vô cùng lớn. Bề mặt của nó rộng hơn một trăm ngàn năm ánh sáng
+
+114
+00:07:25,959 --> 00:07:29,589
+và tầm nhiền của ta về nó bị nghiêng.
+
+115
+00:07:29,589 --> 00:07:33,819
+Điều này nghĩa là, trên mặt phẳng mà ta quan sát dải Andromeda, ánh sáng từ mặt sau
+
+116
+00:07:33,819 --> 00:07:39,240
+thể hiện hình dạng của Andromeda trông như thế nào cả ngàn năm 
+
+117
+00:07:39,240 --> 00:07:42,329
+trước khi ánh sáng từ mặt trước được thể hiện.
+
+118
+00:07:42,329 --> 00:07:45,689
+Những thay đổi trong ngoại hình chạm đến chúng ta từ mặt trước sớm hơn từ mặt sau.
+
+119
+00:07:45,689 --> 00:07:50,269
+Andromeda đang quay, với vận tốc hàng trăm km/s
+
+120
+00:07:50,269 --> 00:07:51,909
+ở một số nơi.
+
+121
+00:07:51,910 --> 00:07:55,670
+sự chậm trễ giữa ánh sáng từ các điểm gần và xa trên một vật thể đang quay
+
+122
+00:07:55,670 --> 00:07:58,879
+sẽ tạo nên một hình ảnh hình thoi lệch.
+
+123
+00:07:58,879 --> 00:08:03,689
+Hiệu ứng màn trập lăn trên phạm vi vũ trụ
+
+124
+00:08:03,689 --> 00:08:06,699
+được áp dụng cho một bàn cờ, nhìn thấy mặt trước trước khi thấy mặt sau
+
+125
+00:08:06,699 --> 00:08:10,409
+là điều khá thú vị và tuyệt vời.
+
+126
+00:08:11,259 --> 00:08:13,779
+Có phải điều đó nghĩa là ta thấy một phiên bản màn trập lăn
+
+127
+00:08:13,790 --> 00:08:18,200
+của Andromeda và các dải ngân hà xa xôi khác hay không?
+
+128
+00:08:18,199 --> 00:08:21,670
+Nói nghiêm túc thì là như thế,
+
+129
+00:08:21,670 --> 00:08:26,660
+nhưng sự biến dạng là không đáng kể.
+
+130
+00:08:26,660 --> 00:08:30,020
+Và có thể bị bỏ qua. 
+Tại sao lại thế?
+
+131
+00:08:30,019 --> 00:08:33,669
+các tốc độ được sử dụng trong những hình dung này không tính đến quy mô.
+
+132
+00:08:33,669 --> 00:08:38,250
+Trung bình, vật chất trong các quỹ đạo ngân hà 
+
+133
+00:08:38,250 --> 00:08:41,700
+tâm ngân hà có tốc độ hàng trăm km/s
+
+134
+00:08:41,700 --> 00:08:45,560
+nhưng các ngân hà lớn đến mức mà 
+
+135
+00:08:45,559 --> 00:08:49,209
+phải mất hàng trăm triệu năm mới hoàn thành được một vòng quay.
+
+136
+00:08:49,210 --> 00:08:53,740
+Hay nói cách khác, sự chậm trễ giữa ánh sáng chạm tới bạn
+
+137
+00:08:53,740 --> 00:08:57,000
+từ các điểm gần và xa trên một dải ngân hà,
+
+138
+00:08:57,000 --> 00:09:00,289
+chẳng là gì khi so sánh với lượng thời gian cần có
+
+139
+00:09:00,289 --> 00:09:03,860
+để vật chất trong ngân hà đó di chuyển với cùng khoảng cách đó.
+
+140
+00:09:03,860 --> 00:09:06,990
+Trong trường hợp của Andromeda, nếu bạn khăng khăng là
+
+141
+00:09:06,990 --> 00:09:10,379
+nhìn được kích thước và hình dạng thực của Andromeda,
+
+142
+00:09:10,379 --> 00:09:15,559
+thì điều đó là đúng với bất kì sự chậm trễ nào gây ra bởi sự thật rằng
+
+143
+00:09:15,559 --> 00:09:18,799
+tốc độ ánh sáng là có hạn, điểm cực xa nhất trên dải Ngân hà
+
+144
+00:09:18,799 --> 00:09:23,039
+chỉ cần được chỉnh lại khoảng 1/10000 chiều rộng của bất kì bức ảnh nào.
+
+145
+00:09:23,039 --> 00:09:26,419
+Trong trường hợp này là ít hơn 1 pixel.
+
+146
+00:09:26,419 --> 00:09:30,799
+Vậy nên nó không phải là một vấn đề lớn. Nhưng cũng không có nghĩa là không phải vấn đề.
+
+147
+00:09:30,799 --> 00:09:34,529
+Nó là thực. 
+Mọi thứ mà ta nhìn vào, bằng cách nào đó,
+
+148
+00:09:34,529 --> 00:09:37,669
+đều bị biến dạng bởi tốc độ của ánh sáng là hữu hạn.
+
+149
+00:09:37,669 --> 00:09:40,750
+Hai bàn chân của bạn cách xa đôi mắt bạn
+
+150
+00:09:40,750 --> 00:09:47,139
+khoảng 5 - 6 nano giây ánh sáng,
+điều này nghĩa là khi bạn nhìn vào đôi chân của mình
+
+151
+00:09:47,139 --> 00:09:50,949
+bạn đang nhìn vào chỗ chúng cách 5 -6 nano giây ánh sáng.
+
+152
+00:09:50,950 --> 00:09:55,230
+5 - 6 nano giây trong quá khứ.
+
+153
+00:09:55,230 --> 00:09:58,250
+Tất nhiên là sự trì hoãn ngắn ngủi đó rất khó để phát hiện ra
+
+154
+00:09:58,250 --> 00:10:01,879
+nhưng vẫn có thể tính toán được. 
+Nếu điều này khiến bạn buồn bã
+
+155
+00:10:01,879 --> 00:10:05,220
+khi biết rằng thậm chí với đầu óc sắc nhọn nhất hoặc các công cụ tốt nhất, 
+
+156
+00:10:05,220 --> 00:10:09,550
+thì ngoại hình vẫn phụ thuộc vào vị trí của bạn.
+
+157
+00:10:09,549 --> 00:10:13,139
+Hiện tượng quang học đó đảm bảo
+
+158
+00:10:13,139 --> 00:10:17,679
+các ngoại hình luôn là tương đối(?).
+Đừng thất vọng.
+
+159
+00:10:17,679 --> 00:10:21,669
+Ta gọi những người gần gủi với ta nhất là họ hàng.
+
+160
+00:10:21,669 --> 00:10:25,069
+Ta thực sự chỉ là một gia đình, một đại gia đình với các khung tham chiếu
+
+161
+00:10:25,070 --> 00:10:28,480
+mà giống như gia đình, không phải lúc nào cũng đồng tình với nhau
+
+162
+00:10:28,480 --> 00:10:31,570
+nhưng lại có vô vàn những điều thú vị để xem xét.
+
+163
+00:10:31,570 --> 00:10:35,490
+Xin cảm ơn biên tập viên Guy đã giúp đỡ tôi
+
+164
+00:10:35,490 --> 00:10:37,930
+với hiệu ứng màn trập lăn trong video này.
+
+165
+00:10:51,889 --> 00:10:54,448
+Và cũng xin cảm ơn các bạn,
+bởi như thường lệ,
+
+166
+00:10:54,448 --> 00:10:57,068
+cảm ơn các bạn đã chú ý theo dõi.
+
+167
+00:11:21,970 --> 00:11:23,009
+Ồ, còn điều thú vị này nữa.
+
+168
+00:11:23,009 --> 00:11:26,039
+Tôi sẽ sớm có mặt tại Lễ hội Fan Youtube cùng với HP tại Ấn Độ.
+
+169
+00:11:26,039 --> 00:11:29,579
+Hãy xem phần mô tả để biết thêm thông tin.
+
+170
+00:11:29,580 --> 00:11:30,070
+Nếu có thể,
+
+171
+00:11:30,070 --> 00:11:31,020
+tôi mong là sẽ gặp được các bạn ở đó.
+

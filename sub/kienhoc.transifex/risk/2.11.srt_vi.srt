@@ -1,0 +1,294 @@
+0
+00:00:05,047 --> 00:00:06,960
+Chào mừng các bạn quay trở lại khóa học.
+Tôi sẽ tổng kết mục này bằng một số ít
+
+2
+00:00:10,430 --> 00:00:15,600
+thông tin để giải thích một số thứ.
+
+3
+00:00:15,600 --> 00:00:16,880
+Và nó sẽ dẫn dắt chúng ta
+
+4
+00:00:16,880 --> 00:00:20,410
+qua mục tiếp theo.
+
+5
+00:00:20,410 --> 00:00:24,330
+Dữ liệu trên bảng là từ năm 1989 đến năm 2008
+
+6
+00:00:24,330 --> 00:00:30,420
+Một số cổ phần của một vài công ty và cổ phẩn của S&P 500, và tôi chỉ liệt kê độ lệch chuẩn thôi.
+
+7
+00:00:30,420 --> 00:00:32,680
+Và lý do mà tôi chỉ tính độ lệch chuẩn thôi là vì
+
+8
+00:00:32,680 --> 00:00:36,345
+lát nữa chúng ta sẽ dễ dàng tính được mức sinh lợi trung bình.
+
+9
+00:00:36,345 --> 00:00:41,400
+Chúng chỉ là trung bình của các con số trong danh mục đầu tư và chúng ta sẽ tính toán ở lần sau.
+
+10
+00:00:41,400 --> 00:00:45,271
+Điều thú vị trong lượng dữ liệu này là rủi ro,
+
+11
+00:00:45,271 --> 00:00:49,333
+độ lệch chuẩn của danh mục đầu tư, hay tính an toàn.
+
+12
+00:00:49,333 --> 00:00:54,060
+Trong danh sách có 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 cái tên,
+
+13
+00:00:54,060 --> 00:00:59,075
+Có Disney, AT&T, Pfizer, General Motors, Alcoa,
+
+14
+00:00:59,075 --> 00:01:05,650
+Home Depot, General Electric, Exxon, Intel, Citibank, Proctor & Gamble.
+
+15
+00:01:05,650 --> 00:01:09,530
+Những cái tên quen thuộc, tất cả đều có trong thị trường chứng khoán Hoa Kì.
+
+16
+00:01:10,940 --> 00:01:12,080
+Bạn chú ý đến cái gì?
+
+17
+00:01:12,080 --> 00:01:17,240
+Tôi đã tính độ lệch chuẩn trong khoảng thời gian 20 năm.
+
+18
+00:01:17,240 --> 00:01:20,190
+Không chỉ tính ở 5 năm.
+
+19
+00:01:20,190 --> 00:01:23,520
+Tôi đã tính độ lệch chuẩn và sau đó
+
+20
+00:01:23,520 --> 00:01:29,024
+tính cả độ lệch chuẩn của S&P 500.
+
+21
+00:01:29,024 --> 00:01:32,720
+Câu hỏi đầu tiên tôi muốn hỏi các bạn là
+
+22
+00:01:33,890 --> 00:01:39,770
+các giá trị độ lệch chuẩn có khác nhau theo từng mức rủi ro không?
+
+23
+00:01:40,850 --> 00:01:42,200
+Và câu trả lời là gì?
+
+24
+00:01:44,040 --> 00:01:45,480
+Có.
+
+25
+00:01:45,480 --> 00:01:47,110
+Chúng khá là khác nhau đấy
+
+26
+00:01:47,110 --> 00:01:48,850
+Vậy giá trị cao nhất là bao nhiêu?
+
+27
+00:01:48,850 --> 00:01:52,993
+Của công ty Intel vào lúc đó là 40%, và giá trị thấp nhất là bao nhiêu?
+
+28
+00:01:52,993 --> 00:01:59,260
+Nếu là Exxon thì tôi nghĩ là khoảng 16%
+
+29
+00:01:59,260 --> 00:02:01,100
+Và đây là mức sinh lời.
+
+30
+00:02:01,100 --> 00:02:03,480
+Nhớ rằng đây là mức biến động hay
+
+31
+00:02:03,480 --> 00:02:09,240
+căn bậc hai của phương sai của độ lệch chuẩn,
+múc độ an toàn cá nhân.
+
+32
+00:02:09,240 --> 00:02:09,960
+Câu hỏi số hai.
+
+33
+00:02:11,070 --> 00:02:13,930
+Có ai chỉ đầu tư vào một danh mục không?
+
+34
+00:02:15,170 --> 00:02:18,985
+Câu trả lời là bạn không nên làm vậy nếu bạn được phép.
+
+35
+00:02:18,985 --> 00:02:20,710
+Giả sử như bạn là người né tránh rủi ro.
+
+36
+00:02:21,870 --> 00:02:26,790
+Thậm chí Bill Gates còn không đầu tư toàn bộ tiền của mình vào cổ phần ở Microsoft
+
+37
+00:02:26,790 --> 00:02:31,000
+hay là một nhân viên của Microsoft không nên chỉ dầu tư vào Microsoft
+
+38
+00:02:31,000 --> 00:02:34,680
+nếu nhân viên đó là người né tránh rủi ro.
+
+39
+00:02:34,680 --> 00:02:37,280
+Lý do rất đơn giản. Bạn làm việc cho Microsoft,
+
+40
+00:02:37,280 --> 00:02:41,920
+nên rủi ro công việc của bạn đều liên quan đến Microsoft.
+
+41
+00:02:41,920 --> 00:02:46,640
+Trên hết là rủi ro tài chính của bạn cũng dính với Microsoft.
+
+42
+00:02:46,640 --> 00:02:49,850
+Nếu bạn là người tránh rủi ro, thì làm vậy có vẻ không khôn ngoan lắm.
+
+43
+00:02:49,850 --> 00:02:52,590
+Và hầu hết mọi người đều thuộc tuýp né tránh rủi ro.
+
+44
+00:02:52,590 --> 00:02:54,510
+Vậy tình huống cực đoan ở đây là gì?
+
+45
+00:02:55,790 --> 00:03:00,469
+Độ lệch chuẩn của chúng ta trong khoảng từ 16% đến 40%
+
+46
+00:03:00,469 --> 00:03:05,390
+và tôi khuyến khích các bạn suy nghĩ tai sao một độ lệch chuẩn
+
+47
+00:03:05,390 --> 00:03:10,210
+càng ngày càng cao cho tới khi nó đạt giá trị cao nhất?
+
+48
+00:03:10,210 --> 00:03:13,160
+Độ lệch chuẩn của Citybank khá là cao, và ngày càng cao hơn.
+
+49
+00:03:13,160 --> 00:03:18,170
+Nhưng điều quan trọng hơn là tôi muốn các bạn suy nghĩ về mối quan hệ giữa
+
+50
+00:03:18,170 --> 00:03:26,070
+độ lệch chuẩn của S&P 500 và mối quan hệ của nó với những thứ khác ở trên cùng.
+
+51
+00:03:26,070 --> 00:03:29,120
+Bạn chú ý dến gì khi danh mục đầu tiên xuất hiện?
+
+52
+00:03:29,120 --> 00:03:34,210
+Tôi hỏi bạn đó là thứ gì và sau đó chúng ta sẽ để ngỏ câu hỏi.
+
+53
+00:03:35,350 --> 00:03:41,610
+Hóa ra độ lệch chuẩn thấp nhất, trong số tất cả các giá trị có ở đây,
+
+54
+00:03:41,610 --> 00:03:46,870
+là của S&P 500 và giá trị đó là 15%/năm.
+
+55
+00:03:46,870 --> 00:03:49,670
+Thấp thứ hai là của Exxon với 16%.
+
+56
+00:03:49,670 --> 00:03:52,760
+Và những giá trị khác còn cao hơn nhiều.
+
+57
+00:03:52,760 --> 00:03:59,690
+Tại sao lại có hiện tượng này, và hiện tượng gì đang xảy ra?
+
+58
+00:03:59,690 --> 00:04:04,480
+Nhớ là tôi không dồn hết vô toàn bộ số cổ phẩn trong một tập đoàn.
+
+59
+00:04:04,480 --> 00:04:08,110
+Tôi chọn các cổ phần từ hầu hết các tập đoàn.
+
+60
+00:04:08,110 --> 00:04:12,610
+Nói cách khác, sự khác biệt chính giữa S&P 500 và
+
+61
+00:04:12,610 --> 00:04:17,150
+những công ty khác không hề đơn giản vì tôi đã chọn tất cả từ một ngành.
+
+62
+00:04:17,149 --> 00:04:23,600
+Chọn ngẫu nhiên một vài ngành, công ty ở trên cùng có mức độ an toàn cao.
+
+63
+00:04:23,600 --> 00:04:26,240
+Vậy câu hỏi tôi đặt ra cho các bạn là
+
+64
+00:04:26,240 --> 00:04:31,020
+tại sao giá trị độ lệch chuẩn lại thấp nhất?
+
+65
+00:04:31,020 --> 00:04:37,180
+Cách để xác định là hãy tính độ lệch chuẩn trung bình.
+
+66
+00:04:37,180 --> 00:04:42,030
+Hãy tính độ lệch chuẩn trung bình với mức độ rủi ro
+
+67
+00:04:42,030 --> 00:04:46,960
+đã cho trước, và cho tôi biết nó lớn hơn 15% khoảng bao nhiêu.
+
+68
+00:04:46,960 --> 00:04:52,130
+Chúng ta sẽ giải thích về mức chênh lệch đó, tầm quan trọng của nó và
+
+69
+00:04:52,130 --> 00:04:56,534
+cách mọi người khắc phục là gì ở bài học sau.
+
+70
+00:04:56,534 --> 00:05:03,890
+Chúng ta sẽ suy xét và giải thích 2 vấn đề trên trong 2 tiết học tiếp theo,
+
+71
+00:05:03,890 --> 00:05:08,640
+nội dung sẽ đa dạng hơn, và sử dụng vốn đầu tư làm mô hình tính toán chi phí.
+
+72
+00:05:10,670 --> 00:05:13,970
+Chúng ta sẽ dùng tất cả lượng dữ liệu này, chúng là vẻ đẹp của ngành tài chính
+
+73
+00:05:13,970 --> 00:05:16,510
+Chào các bạn và hẹn gặp lại.
+

@@ -1,0 +1,413 @@
+0
+00:00:00,000 --> 00:00:00,001
+phungdo_vgu KienHoc.vn http://youtu.be/cnlLBQc32Y0
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:12,350
+TS. Yerraballi: Chúng ta đã tìm hiểu PLL
+có thể thay đổi system clock
+
+3
+00:00:12,350 --> 00:00:18,370
+như thế nào rồi.
+
+4
+00:00:18,370 --> 00:00:23,470
+Cụ thể, ta có thể làm cho hệ
+thống hoạt động tại một tốc độ
+
+5
+00:00:23,470 --> 00:00:27,710
+nhanh hơn hay chậm hơn bằng 
+cách chọn thích hợp các giá trị
+
+6
+00:00:27,710 --> 00:00:32,259
+trong thanh ghi của thiết bị
+mà liên quan với Phase-Looked Loop.
+
+7
+00:00:32,259 --> 00:00:37,520
+Bắt đầu tính toán nào.
+
+8
+00:00:37,520 --> 00:00:41,350
+Ta đặt chạy ở 80MHz.
+
+9
+00:00:41,350 --> 00:00:45,390
+Nếu tôi đặt 80Mhz,
+thì chúng ta đều biết
+
+10
+00:00:45,390 --> 00:00:48,730
+đó là một clock đơn--
+80Mhz cho ta biết
+
+11
+00:00:48,730 --> 00:00:57,260
+một clock đang điểm 1 tích tắc--
+1 tích tắc đơn của clock là
+
+12
+00:00:57,260 --> 00:01:14,890
+bằng với 1 chia 80*10^-6 
+tương đương 12.5 nano giây,
+
+13
+00:01:14,890 --> 00:01:23,370
+Điều đó có nghĩa là nếu ta dùng bộ đếm
+SysTick.--- Bộ đếm SysTick mà ta biết,
+
+14
+00:01:23,370 --> 00:01:30,310
+chứa được 24-bit giá trị--
+Nó sẽ bị giảm đi 1.
+
+15
+00:01:30,310 --> 00:01:32,710
+Hãy nhớ rằng, nó là một giá trị đếm xuống.
+
+16
+00:01:32,710 --> 00:01:40,080
+Vậy nên nó giảm đi 1 
+mỗi 12.5 nano giây.
+
+17
+00:01:40,080 --> 00:01:45,850
+Nếu tôi muốn viết một hàm con delay.
+Hãy nhớ, hàm con delay mà ta viết
+
+18
+00:01:45,850 --> 00:01:51,280
+trong đoạn code video trước
+cho đến nay liên quan đến
+
+19
+00:01:51,280 --> 00:01:53,220
+việc thực hiện một số hoạt động tùy ý.
+
+20
+00:01:53,220 --> 00:01:56,090
+Bây giờ, ta sẽ viết một 
+SysTick, đó chính là
+
+21
+00:01:56,090 --> 00:02:00,500
+SysTick_Wait, thứ mà tôi đã viết ở đây.
+
+22
+00:02:00,500 --> 00:02:01,900
+Nhưng tôi sẽ đi với nó.
+
+23
+00:02:01,900 --> 00:02:03,990
+Nhưng ta muốn chạy một
+SysTick_Wait để có thể
+
+24
+00:02:03,990 --> 00:02:07,810
+đợi một khoảng thời gian 
+chính xác mà ta cần.
+
+25
+00:02:07,810 --> 00:02:09,880
+Vì vậy, hãy lấy 1 ví dụ đơn giản.
+
+26
+00:02:09,880 --> 00:02:12,160
+Ta muốn SysTick đợi
+--
+
+27
+00:02:12,160 --> 00:02:16,770
+10 milli giây.
+
+28
+00:02:16,770 --> 00:02:18,850
+Vì vậy, nói cách khác,
+Tôi gọi một hàm con 
+
+29
+00:02:18,850 --> 00:02:21,030
+tên là SysTick_Wait và truyền cho nó thông tin.
+
+30
+00:02:21,030 --> 00:02:23,700
+Và nó phải đợi đúng 
+10 ms, có nghĩa 
+
+31
+00:02:23,700 --> 00:02:28,060
+điều tôi đang làm là bắt đầu
+dùng bộ đếm SysTick.
+
+32
+00:02:28,060 --> 00:02:30,200
+Và đặt vài giá trị khởi tạo vào.
+
+33
+00:02:30,200 --> 00:02:33,480
+Giá trị nạp lại của tôi sẽ là số nào đó.
+
+34
+00:02:33,480 --> 00:02:36,900
+Đây là giá trị hiện thời.
+
+35
+00:02:36,900 --> 00:02:40,470
+Đây là giá trị nạp lại.
+
+36
+00:02:40,470 --> 00:02:43,850
+
+37
+00:02:43,850 --> 00:02:48,770
+Và tôi đặt giá trị nạp lại bằng một số
+nhất định để những gì mà tôi đã thiết đặt
+
+38
+00:02:48,770 --> 00:02:53,550
+ở đây cho tôi biết cần bao lâu để
+đếm ngược về 0.
+
+39
+00:02:53,550 --> 00:02:56,380
+Cái tôi nên đặt là
+10 milli giây.
+
+40
+00:02:56,380 --> 00:03:07,220
+Nói cách khác thì, count nhân với--
+--vì mỗi tích tắc là-- 12.5 nano giây
+
+41
+00:03:07,220 --> 00:03:11,090
+nên bằng 10 mili giây.
+
+42
+00:03:11,090 --> 00:03:28,270
+Vậy nên biến "count" sẽ bằng 
+10*10^-3 chia 12.5*10^-9
+
+43
+00:03:28,270 --> 00:03:34,480
+--10 nhân 10 mũ -3
+-- nhân với--
+
+44
+00:03:34,480 --> 00:03:37,660
+10 nhân 10 mũ 9.
+
+45
+00:03:37,660 --> 00:03:50,790
+Nó sẽ bằng 800 000.
+
+46
+00:03:50,790 --> 00:03:58,650
+Điều này cho ta biết nếu
+đặt giá trị này bằng 800 000
+
+47
+00:03:58,650 --> 00:04:03,870
+và cho bộ đếm chạy-- thì hãy
+nhớ rằng bộ đếm chạy ở 0
+
+48
+00:04:03,870 --> 00:04:09,220
+0--
+và rồi nó trừ đi 1.
+
+49
+00:04:09,220 --> 00:04:13,430
+Từ 0, chạy đến 800 000,
+bởi vì đó là một giá trị nạp lại,
+
+50
+00:04:13,430 --> 00:04:16,640
+đếm 800,000 trừ 1,
+trừ 2, trử 3, 
+
+51
+00:04:16,640 --> 00:04:23,690
+và cứ như thế đến khi chạm 
+giá trị 0 một lần nữa.
+
+52
+00:04:23,690 --> 00:04:28,120
+Khi đi từ 1 đến 
+chỗ dịch chuyển số 0--
+
+53
+00:04:28,120 --> 00:04:31,780
+Có thể đi đến 
+bất kì giá trị nào đã hoàn thành.
+
+54
+00:04:31,780 --> 00:04:38,720
+Khi chuyển từ 1 sang 0,
+ta thiết đặt bit 16 của
+
+55
+00:04:38,720 --> 00:04:43,590
+thanh ghi control
+bằng 1 để thông báo rằng
+
+56
+00:04:43,590 --> 00:04:47,610
+có tràn bộ nhớ, nếu bạn muốn điều đó.
+
+57
+00:04:47,610 --> 00:04:52,500
+Code của ta sẽ dựa trên
+tập quán này.
+
+58
+00:04:52,500 --> 00:04:57,420
+Ta sẽ viết một hàm con gọi là
+SysTick_Wait.
+
+59
+00:04:57,420 --> 00:04:59,989
+Và truyền cho nó 
+giá trị 800000.
+
+60
+00:04:59,989 --> 00:05:01,405
+Ta gọi SysTick_Wait ra.
+
+61
+00:05:01,405 --> 00:05:07,770
+
+62
+00:05:07,770 --> 00:05:14,590
+và truyền cho nó giá trị
+800000, nghĩa là
+
+63
+00:05:14,590 --> 00:05:19,320
+khi ta gọi hàm con này, thì
+giá trị delay là 800000.
+
+64
+00:05:19,320 --> 00:05:23,770
+Ta khởi tạo giá trị RELOAD
+bằng delay-1;
+
+65
+00:05:23,770 --> 00:05:27,950
+Đó là vì giá trị 0 
+cũng có nghĩa ở đây.
+
+66
+00:05:27,950 --> 00:05:32,120
+Không chỉ 800000 đến 1,
+nhưng là đếm từ 800000 đến 0.
+
+67
+00:05:32,120 --> 00:05:38,500
+Ta đặt giá trị RELOAD ban đầu
+bằng 800000-1
+
+68
+00:05:38,500 --> 00:05:43,470
+Ta cũng đặt giá trị ban 
+đầu bằng 0.
+
+69
+00:05:43,470 --> 00:05:46,600
+Thứ này sẽ đặt giá trị bằng 0.
+
+70
+00:05:46,600 --> 00:05:49,230
+Và bộ đếm bắt đầu đếm tích tắc.
+
+71
+00:05:49,230 --> 00:05:52,240
+Khi đang chạy tích tắc, thì ta
+sẽ kiểm tra liên tục.
+
+72
+00:05:52,240 --> 00:05:55,770
+Đây là đoạn code để kiểm
+tra liên tục bit 16.
+
+73
+00:05:55,770 --> 00:06:05,880
+Ta sẽ tiếp tục kiểm tra bit
+16 nếu thấy nó bằng 1 chưa.
+
+74
+00:06:05,880 --> 00:06:09,760
+Điều này đồng nghĩa với không làm gì cả
+và tiếp tục kiểm tra nếu bit 16 vẫn bằng 0.
+
+75
+00:06:09,760 --> 00:06:12,590
+Vòng lặp while này không có
+code bên trong vì nó
+
+76
+00:06:12,590 --> 00:06:16,830
+lặp liên tục và không làm gì cả,
+đợi đến khi bit 16 đó bằng 1.
+
+77
+00:06:16,830 --> 00:06:19,460
+Khi bit 16 đó bằng 1, thì 
+ra khỏi vòng lặp, nghĩa là
+
+78
+00:06:19,460 --> 00:06:24,140
+thời gian để chạy vòng lặp này, hàm 
+con này, kết thúc 
+
+79
+00:06:24,140 --> 00:06:29,580
+đúng bằng 10 mili giây.
+
+80
+00:06:29,580 --> 00:06:36,460
+Nhưng nếu ta muốn "get my clock to"
+chương trình con, để làm một cái gì đó 
+
+81
+00:06:36,460 --> 00:06:39,180
+mà ta đã xem xét, 
+tỉ như 0.1 giây?
+
+82
+00:06:39,180 --> 00:06:42,270
+Có thể thứ tôi thực sự 
+muốn làm không phải
+
+83
+00:06:42,270 --> 00:06:52,990
+10 mili giây, mà là 100 mili giây,
+hay 0.1 giây.
+
+84
+00:06:52,990 --> 00:06:54,420
+Ta cần thay đổi gì?
+
+85
+00:06:54,420 --> 00:06:58,580
+Tất cả những gì tôi làm là gọi
+hàm con với thêm một số 0 nữa
+
+86
+00:06:58,580 --> 00:07:00,040
+vào đây-- 8,000,000.
+
+87
+00:07:00,040 --> 00:07:07,660
+Lớn hơn 800 000, tôi thêm 
+1 số 0 thì thành 8 triệu.
+
+88
+00:07:07,660 --> 00:07:15,510
+Và điều này sẽ làm cho
+chương trình con của ta đợi 0.1 giây.

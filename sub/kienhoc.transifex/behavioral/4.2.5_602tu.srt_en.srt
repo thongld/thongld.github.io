@@ -1,0 +1,283 @@
+1
+00:00:07,200 --> 00:00:09,320
+https://youtu.be/vWKAmqM-8tI
+Think about intuition again.
+
+2
+00:00:09,320 --> 00:00:13,120
+We said earlier that you could model intuition
+using regression by an
+
+3
+00:00:13,120 --> 00:00:18,890
+equation that might look like this--
+judgment equals to some constant plus B1 times
+
+4
+00:00:18,890 --> 00:00:23,670
+Q1 plus B2 times Q2 and so on
+and so forth.
+
+5
+00:00:23,670 --> 00:00:26,700
+Why would we actually look at our own judgments
+and use
+
+6
+00:00:26,700 --> 00:00:28,340
+regression to model them?
+
+7
+00:00:28,340 --> 00:00:31,660
+This at least three reasons why this can be
+beneficial.
+
+8
+00:00:31,660 --> 00:00:36,219
+The first is it gives you insight into your
+own decision making policy and
+
+9
+00:00:36,219 --> 00:00:38,590
+your own judgment policy.
+
+10
+00:00:38,590 --> 00:00:42,000
+It's almost like opening up your head and
+figuring out how you make choices
+
+11
+00:00:42,000 --> 00:00:43,980
+and how you make decisions.
+
+12
+00:00:43,980 --> 00:00:47,433
+In particular, if you find yourself in a situation
+where you say, well, gee,
+
+13
+00:00:47,433 --> 00:00:50,540
+I know I want to choose, but I'm not quite
+sure why.
+
+14
+00:00:50,540 --> 00:00:53,470
+This might be a wonderful technique.
+
+15
+00:00:53,470 --> 00:00:56,500
+Looking at the coefficients of the different
+Qs will let you understand
+
+16
+00:00:56,500 --> 00:01:00,670
+what you consider important and conversely
+what you don't.
+
+17
+00:01:00,670 --> 00:01:04,430
+And perhaps once you have insight into that
+process, you can then start
+
+18
+00:01:04,430 --> 00:01:08,790
+making changes and corrections to your own
+judgment policy.
+
+19
+00:01:08,790 --> 00:01:12,350
+Perhaps you thought you were weighing price
+to a great degree in your
+
+20
+00:01:12,350 --> 00:01:15,400
+decisions, but the data tells you that you
+don't.
+
+21
+00:01:15,400 --> 00:01:19,829
+So simply looking a your own equation gives
+you A, a better insight, and B,
+
+22
+00:01:19,829 --> 00:01:24,240
+avenues for improving the quality of your
+decision making.
+
+23
+00:01:24,240 --> 00:01:29,560
+Second, you can actually use a model like
+this to track changes in your own
+
+24
+00:01:29,560 --> 00:01:33,340
+decision making policy as a function of time.
+
+25
+00:01:33,340 --> 00:01:36,569
+You could run regressions like this at every
+six months intervals.
+
+26
+00:01:36,569 --> 00:01:39,369
+You can see if the importance of certain attributes
+has
+
+27
+00:01:39,369 --> 00:01:41,850
+gone up or gone down.
+
+28
+00:01:41,850 --> 00:01:45,049
+And again, you can perhaps more explicit about
+whether, in fact, those
+
+29
+00:01:45,049 --> 00:01:48,880
+attributes should have become more important--
+or not.
+
+30
+00:01:48,880 --> 00:01:53,929
+Third, you can use the model of other people
+that you consider as good
+
+31
+00:01:53,929 --> 00:01:58,369
+judges as a benchmark into your own decision
+making.
+
+32
+00:01:58,369 --> 00:01:59,951
+Let's imagine you're a doctor.
+
+33
+00:01:59,951 --> 00:02:03,709
+And let's imagine that there is a physician
+whose judgment you trust.
+
+34
+00:02:03,709 --> 00:02:06,549
+This physician always makes the right diagnosis.
+
+35
+00:02:06,549 --> 00:02:07,689
+And you wonder how they do it.
+
+36
+00:02:07,689 --> 00:02:11,830
+What you could do is you could try and convince
+that physician to run a
+
+37
+00:02:11,830 --> 00:02:14,920
+judgment bootstrap of their own clinical diagnosis.
+
+38
+00:02:14,920 --> 00:02:18,629
+At the end of that process, you end up with
+an equation.
+
+39
+00:02:18,629 --> 00:02:21,510
+And that equation well tell you the likelihood
+of the patient having
+
+40
+00:02:21,510 --> 00:02:25,810
+disease A verses disease B in a regression
+form.
+
+41
+00:02:25,810 --> 00:02:30,030
+You could then potentially compare your own
+judgment policy with the
+
+42
+00:02:30,030 --> 00:02:32,110
+policy of this expert.
+
+43
+00:02:32,110 --> 00:02:34,520
+You could actually make this process a bit
+more complex.
+
+44
+00:02:34,520 --> 00:02:39,140
+Let's imagine that you have two or three experts,
+one who is an expert in
+
+45
+00:02:39,140 --> 00:02:43,969
+domain A, a second one in domain B, a third
+one in domain C.
+
+46
+00:02:43,969 --> 00:02:47,269
+So let's say Doctor A is great at making judgments
+about children's
+
+47
+00:02:47,269 --> 00:02:52,000
+illnesses, Doctor B at neurological problems,
+Doctor
+
+48
+00:02:52,000 --> 00:02:53,780
+C at cardiac problems.
+
+49
+00:02:53,780 --> 00:02:57,659
+What you could do is you can then create different
+models
+
+50
+00:02:57,659 --> 00:02:58,939
+for each one of them.
+
+51
+00:02:58,939 --> 00:03:03,090
+There you could draw Doctor A's expertise
+in one domain and Doctor B's
+
+52
+00:03:03,090 --> 00:03:05,410
+in a second and Doctor C's in a third.
+
+53
+00:03:05,410 --> 00:03:09,469
+And you can become a lot more nuanced with
+modeling the intuition that you
+
+54
+00:03:09,469 --> 00:03:12,460
+have of these different positions.
+
+55
+00:03:12,460 --> 00:03:16,909
+So in some, decision analysis is interesting
+because it not only lets
+
+56
+00:03:16,909 --> 00:03:20,329
+you understand your own decision making process,
+but it also lets you
+
+57
+00:03:20,329 --> 00:03:23,650
+benchmark and improve that process with time.
+
+58
+00:03:23,650 --> 00:03:28,280
+And as we look in week five and week six of
+this course, we actually look
+
+59
+00:03:28,280 --> 00:03:32,560
+at some very specific ways in which you could
+use this insight in
+
+60
+00:03:32,560 --> 00:03:34,519
+improving your own decision making.
+

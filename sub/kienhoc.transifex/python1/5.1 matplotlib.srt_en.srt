@@ -1,0 +1,211 @@
+1
+00:00:01,880 --> 00:00:07,660
+http://youtube.com/watch?v=tSwEOb9cVGM
+
+This chapter is about data visualization,
+which is a very important part of data analysis.
+
+2
+00:00:07,660 --> 00:00:12,430
+First of all, you will use it continuously
+to explore your dataset. The better you understand
+
+3
+00:00:12,430 --> 00:00:16,500
+your data, the better you'll be able to extract
+insights. <<Show example?>> And once you've
+
+4
+00:00:16,500 --> 00:00:21,449
+found those insights, again, you'll need visualization
+to be able to share your precious insights
+
+5
+00:00:21,449 --> 00:00:26,989
+with other people. Because as you know, people
+are -humans-. To understand data, we need
+
+6
+00:00:26,989 --> 00:00:32,079
+to see it. And by seeing, i don't mean in
+the form of an Excel table. I'm talking about
+
+7
+00:00:32,079 --> 00:00:34,430
+beautiful plots! Such as this one...
+
+8
+00:00:34,430 --> 00:00:39,640
+It's made by the the Swedish professor Hans
+Rosling. His talks about global development
+
+9
+00:00:39,640 --> 00:00:44,430
+have been viewed millions of times. And what
+makes them so intreguing, is that by making
+
+10
+00:00:44,430 --> 00:00:49,530
+beautiful plots, he allows the data to tell
+their own story. Here we see a bubble chart,
+
+11
+00:00:49,530 --> 00:00:54,520
+where each bubble represents a country. The
+bigger the bubble, the bigger the country's
+
+12
+00:00:54,520 --> 00:00:57,570
+population, so the two biggest bubbles here
+are China, and India.
+
+13
+00:00:57,570 --> 00:01:04,500
+There are 2 axes. The horizontal axis shows
+the GPD per capita, in US dollar. The vertical
+
+14
+00:01:04,500 --> 00:01:09,450
+axis shows life expectancy. We clearly see
+that people live longer in countries with
+
+15
+00:01:09,450 --> 00:01:14,859
+a higher GDP per capita. Still, there is a
+huge difference in life expectancy between
+
+16
+00:01:14,859 --> 00:01:18,109
+countries on the same income level.
+
+17
+00:01:18,109 --> 00:01:23,179
+Now why do I tell you all of this? To fight
+ignorance ofcourse! But also because by the
+
+18
+00:01:23,179 --> 00:01:29,189
+end of this chapter, you'll be able to build
+this beautiful plot yourself!
+
+19
+00:01:29,189 --> 00:01:34,090
+The father of all visualization packages in
+python is -matplotlib-. Inside the matplotlib
+
+20
+00:01:34,090 --> 00:01:38,729
+package, there's the pyplot subpackage. Let's
+start by importing it; by convention, you
+
+21
+00:01:38,729 --> 00:01:42,020
+give it the local name `plt`.
+
+22
+00:01:42,020 --> 00:01:45,909
+Now let's gain some insight in the evolution
+of the world population. I have a list with
+
+23
+00:01:45,909 --> 00:01:50,990
+years here, and a list with corresponding
+populations, expressed in billions. To plot
+
+24
+00:01:50,990 --> 00:01:56,689
+this data as a line chart, we call plt.plot()
+and use our two lists as arguments. The first
+
+25
+00:01:56,689 --> 00:02:01,659
+list corresponds to the horizontal axis, and
+the second list to the vertical axis. The
+
+26
+00:02:01,659 --> 00:02:06,619
+plot function gives python all the ingredients
+to build a plot. But python is lazy. It will
+
+27
+00:02:06,619 --> 00:02:11,140
+wait for the .show() function to actually
+build the plot. The reason for this is that
+
+28
+00:02:11,140 --> 00:02:14,910
+you might want to add some things to your
+plot before actually displaying it, but more
+
+29
+00:02:14,910 --> 00:02:17,360
+on that later.
+
+30
+00:02:17,360 --> 00:02:22,050
+When we look at our plot, we see that the
+years are shown on the horizontal axis, and
+
+31
+00:02:22,050 --> 00:02:26,140
+the populations on the vertical axis. There
+are four datapoints, and Python draws a line
+
+32
+00:02:26,140 --> 00:02:32,570
+between them. In 1950, the world population
+was around 2 point 5 billion. In 2010, it
+
+33
+00:02:32,570 --> 00:02:37,610
+was around 7 billion. So the world population
+has almost tripled in sixty years, that's
+
+34
+00:02:37,610 --> 00:02:41,920
+pretty scary. What if the population keeps
+on growing like that? Will the world become
+
+35
+00:02:41,920 --> 00:02:44,760
+over populated? You'll find out in the exercises.
+
+36
+00:02:44,760 --> 00:02:51,220
+But first, I want to introduce you to another
+type of plot. It's the scatter plot. A scatter
+
+37
+00:02:51,220 --> 00:02:56,750
+plot is useful to see all the individual datapoints.
+Unlike in the line plot, these datapoints
+
+38
+00:02:56,750 --> 00:03:01,520
+will not be connected by a line. To generate
+a scatter plot, the code is exactly the same
+
+39
+00:03:01,520 --> 00:03:06,720
+as before, but you're using a different function
+this time: 'scatter'. We can use the `year`
+
+40
+00:03:06,720 --> 00:03:08,970
+and `population` lists we've created before.
+
+41
+00:03:08,970 --> 00:03:13,510
+You could say that this is a more -honest-
+way of plotting your data, because you can
+
+42
+00:03:13,510 --> 00:03:17,680
+clearly see that the plot is based on just
+four data points.
+
+43
+00:03:17,680 --> 00:03:22,110
+Now that you know about the basics of Matplotlib,
+it's your turn to build some awesome plots!
+

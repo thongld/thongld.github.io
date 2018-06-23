@@ -1,0 +1,443 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/JzzfmEIyvLk
+
+1
+00:00:05,000 --> 00:00:09,890
+hello again and welcome back to
+operations management we're talking
+
+2
+00:00:09,890 --> 00:00:14,320
+about capacity analysis and I have
+another problem for you this is
+
+3
+00:00:14,320 --> 00:00:19,259
+supplementary problem number two and
+this is can be divided into three parts
+
+4
+00:00:19,259 --> 00:00:22,990
+because it's gonna be fairly
+comprehensive so we'll get started
+
+5
+00:00:22,989 --> 00:00:29,459
+we're gonna be talking about the amazing
+shed company this company produces three
+
+6
+00:00:29,460 --> 00:00:34,420
+different kinds of sheds basic superior
+premium each of the sheds uses the
+
+7
+00:00:34,420 --> 00:00:39,800
+same resources fabrication teams
+assembly teams painted teams and
+
+8
+00:00:39,799 --> 00:00:45,069
+inspection teams the company has
+received orders for twenty basic 10
+
+9
+00:00:45,070 --> 00:00:50,200
+superior and 10 premium sheds to be
+completed in one week we're going to
+
+10
+00:00:50,200 --> 00:00:52,359
+assume five days in the week
+
+11
+00:00:52,359 --> 00:00:57,609
+the question is can they meet their
+order requirement and why and what is
+
+12
+00:00:57,609 --> 00:01:03,019
+the minimum number of teams needed for
+each resource so the information about
+
+13
+00:01:03,020 --> 00:01:09,469
+the shed and the shed company and their
+different resource pools is on the slide 
+
+14
+00:01:09,469 --> 00:01:13,560
+here you can see we have four different
+resource pools fabrication assembly
+
+15
+00:01:13,560 --> 00:01:20,379
+paint and inspection and there are three
+different sheds that are being done so
+
+16
+00:01:20,379 --> 00:01:27,719
+there are different unit loads for each
+type of shed the basic shed has two
+
+17
+00:01:27,719 --> 00:01:33,978
+hours for fabrication 3 for assembly 1 for paint
+1.5 for inspection superior
+
+18
+00:01:33,978 --> 00:01:39,759
+2.5; 3.5;  1.25; 1.5 respectively
+
+19
+00:01:39,759 --> 00:01:45,739
+the premium shed 2.5; 3.8;  2
+and 1.5 respectively
+
+20
+00:01:45,739 --> 00:01:51,339
+you can see that each different kind of
+shed has a different unit load in the
+
+21
+00:01:51,340 --> 00:01:55,159
+fabrication area there are four teams
+available
+
+22
+00:01:55,159 --> 00:02:00,719
+3 for assembly 2 for paint and 2 for inspection
+and when we look at the number of hours
+
+23
+00:02:00,719 --> 00:02:06,019
+available per team per day you can see
+there seven hours available in
+
+24
+00:02:06,019 --> 00:02:07,869
+fabrication 7 and 
+
+25
+00:02:07,870 --> 00:02:15,490
+a half assembly 7 for paint and 6 for
+inspection so the first thing we need to
+
+26
+00:02:15,490 --> 00:02:20,390
+do is we need to figure out what the
+average unit load is we have three
+
+27
+00:02:20,389 --> 00:02:25,319
+different kinds of sheds and each one
+has a different unit load so we need to
+
+28
+00:02:25,319 --> 00:02:30,560
+find out what that average unit load
+is to do that we have to take a
+
+29
+00:02:30,560 --> 00:02:36,319
+weighted average we know that we're
+doing twenty basic 10 superior and 10
+
+30
+00:02:36,319 --> 00:02:42,689
+premium sheds in a week that gives us
+a total of forty sheds so our product
+
+31
+00:02:42,689 --> 00:02:53,810
+mix is actually 50% basic 25% superior
+and 25% premium using this product mix
+
+32
+00:02:53,810 --> 00:03:01,009
+we can then calculate the average unit
+load for each of the different resource
+
+33
+00:03:01,009 --> 00:03:07,479
+pools so when we get to fabrication our
+weighted average unit load is two and a
+
+34
+00:03:07,479 --> 00:03:10,869
+quarter hours assembly three and a third paint
+
+35
+00:03:10,870 --> 00:03:17,239
+1.31 inspection 1.5 and if you look at
+the bottom half of the slide you can see
+
+36
+00:03:17,239 --> 00:03:22,810
+how that is calculated so now that we
+know how much time we need per shed the
+
+37
+00:03:22,810 --> 00:03:28,849
+next thing we need to do is figure out
+how much time we have available so to
+
+38
+00:03:28,849 --> 00:03:33,430
+calculate the available times per day we
+take the number of teams for each
+
+39
+00:03:33,430 --> 00:03:38,830
+resource times number of hours available
+per team per day and that's how we get
+
+40
+00:03:38,830 --> 00:03:44,500
+our available time per day so we have
+four teams available on fabrication each
+
+41
+00:03:44,500 --> 00:03:50,469
+team work seven hours and that gives us
+28 hours we did the same calculations
+
+42
+00:03:50,469 --> 00:03:57,849
+for assembly paint inspection so you can
+see those hours on the bottom left of the slide
+
+43
+00:03:57,849 --> 00:04:04,549
+next we then have to calculate the
+capacity per day capacity how much time
+
+44
+00:04:04,550 --> 00:04:09,719
+do we have how much time do we need we
+have twenty eight hours available and we
+
+45
+00:04:09,719 --> 00:04:17,250
+need two and a quarter hours per shed so
+that gives us 12.44 sheds in fabrication
+
+46
+00:04:17,250 --> 00:04:19,419
+we have twenty two and a half
+
+47
+00:04:19,419 --> 00:04:25,459
+hours in the assembly and we need three
+and a third so that gives us 6.77 and
+
+48
+00:04:25,459 --> 00:04:28,819
+for paint we have 14 hours available
+
+49
+00:04:28,819 --> 00:04:36,209
+divide that by 1.31 that's 10.67 and for
+inspection we have 12 hours available divided
+
+50
+00:04:36,209 --> 00:04:43,899
+by one and a half and that's 8 so it gives us our
+capacity per day and we have five days
+
+51
+00:04:43,899 --> 00:04:49,579
+in a week so we multiply our capacity
+per day by five and that tells us how
+
+52
+00:04:49,579 --> 00:04:56,079
+much we can get done in the week and as
+you can see our bottleneck is assembly
+
+53
+00:04:56,079 --> 00:05:07,829
+we can only do 33.8 sheds in a week when we
+required to do 40 so our bottleneck is
+
+54
+00:05:07,829 --> 00:05:10,009
+assembly right there
+
+55
+00:05:10,009 --> 00:05:17,879
+33.8 sheds so when we look at this we
+said can they meet their order
+
+56
+00:05:17,879 --> 00:05:20,009
+requirement and why
+
+57
+00:05:20,009 --> 00:05:23,779
+well no they cannot because the
+maximum number of sheds that they can
+
+58
+00:05:23,779 --> 00:05:30,199
+produce is 33.8 so now we know that they
+can't meet the requirement the next
+
+59
+00:05:30,199 --> 00:05:36,978
+question is how many teams for each
+resource should we have so let's take a
+
+60
+00:05:36,978 --> 00:05:42,819
+look at that now when we do the number
+of resources needed we look at things
+
+61
+00:05:42,819 --> 00:05:44,209
+a little bit differently
+
+62
+00:05:44,209 --> 00:05:50,159
+instead of how much time do we have and
+how much time do we need we try and
+
+63
+00:05:50,160 --> 00:05:57,979
+figure out with how much time overall
+do we need for those forty sheds then we
+
+64
+00:05:57,978 --> 00:06:02,849
+work backwards to get the number of
+resources needed so when I look at the
+
+65
+00:06:02,850 --> 00:06:09,039
+time needed per week we know we need 
+2.25 hours per shed in
+
+66
+00:06:09,038 --> 00:06:17,529
+fabrication and we need to produce forty
+sheds so 40 times 2.25 is 90 hours
+
+67
+00:06:17,529 --> 00:06:25,029
+we did the same type of calculation for each
+of the other teams the assembly we need
+
+68
+00:06:25,029 --> 00:06:27,168
+3.33 hours per shed
+
+69
+00:06:27,168 --> 00:06:29,128
+we multiply that by 40 that's
+
+70
+00:06:29,129 --> 00:06:35,330
+133.2 for pain we end up with
+52.4 hours and
+
+71
+00:06:35,329 --> 00:06:43,519
+inspection 60 now we break that down to
+time needed per day so we know how many
+
+72
+00:06:43,519 --> 00:06:48,819
+hours per week we're going to divide
+that by five days in the week so now
+
+73
+00:06:48,819 --> 00:07:00,309
+that tells us how many hours are needed
+per day so 90 divided by 5 is 18  133.2 divided by
+5 is 26
+
+74
+00:07:00,309 --> 00:07:08,088
+points 64 52.4 divided by five is
+10.48 and 60 divided by 5 is
+
+75
+00:07:08,088 --> 00:07:15,069
+12 so this is how much time we need per
+day we also know how many hours are
+
+76
+00:07:15,069 --> 00:07:22,209
+available per team per day that was
+given originally if we divide those 2 the
+
+77
+00:07:22,209 --> 00:07:28,168
+time needed per day by the number of
+hours of available per team per day we
+
+78
+00:07:28,168 --> 00:07:37,109
+end up with the number of teams we need
+so 18 divided by seven is 2.57 26.64 
+
+79
+00:07:37,110 --> 00:07:50,229
+divided by 7.5 is 3.55 10.48
+divided by 7 is 1.5 and 12 divided by 6 is 2 so
+
+80
+00:07:50,228 --> 00:07:56,438
+when we look at it overall we currently
+have four fabrication teams and we only
+
+81
+00:07:56,439 --> 00:08:04,749
+need  2.57 assembly which was our
+bottleneck we only have three teams but
+
+82
+00:08:04,749 --> 00:08:12,550
+we actually need 3.55 paint we currently
+have 2 we need one and a half
+
+83
+00:08:12,550 --> 00:08:18,759
+inspection we currently have 2 and we
+need 2 so we have excess capacity in
+
+84
+00:08:18,759 --> 00:08:24,459
+fabrication and not enough capacity in
+assembly so when we're thinking about
+
+85
+00:08:24,459 --> 00:08:29,329
+making changes to the resources
+available for the amazing shed company
+
+86
+00:08:29,329 --> 00:08:34,439
+we will be thinking about reducing the
+number of teams in fabrication and
+
+87
+00:08:34,439 --> 00:08:37,639
+increasing the number of teams in assembly
+
+88
+00:08:37,639 --> 00:08:43,799
+so when we think about capacity analysis this
+really helps us understand that if we
+
+89
+00:08:43,799 --> 00:08:48,379
+place the right resources in the right
+locations
+
+90
+00:08:48,379 --> 00:08:52,210
+it really improved the throughput I'll see you for
+part two
+

@@ -1,0 +1,184 @@
+0
+00:00:06,540 --> 00:00:10,670
+Câu hỏi đầu tiên là về tiêu chuẩn của bài test.
+
+1
+00:00:10,670 --> 00:00:15,250
+Câu hỏi này thực chất là: Mức độ làm bài trung bình là gì? 
+
+2
+00:00:15,250 --> 00:00:17,950
+Mức điểm trung bình là bao nhiêu?
+
+3
+00:00:17,950 --> 00:00:21,800
+Điểm thay đổi quanh mức trung bình như thế nào? 
+
+4
+00:00:21,800 --> 00:00:26,560
+Để tìm ra đáp án, ta phải đưa bài test cho nhiều người làm 
+
+5
+00:00:26,560 --> 00:00:30,320
+Dựa vào điểm của họ để tìm ra điểm trung bình
+
+6
+00:00:30,320 --> 00:00:33,080
+và độ biến thiên quanh mức điểm trung bình
+
+7
+00:00:33,080 --> 00:00:37,770
+Một điểm quan trọng là ta phải biết nhóm người này là ai.
+
+8
+00:00:37,770 --> 00:00:42,010
+Ví dụ, nếu tôi muốn viết một bài test trí tuệ cho sinh viên,
+
+9
+00:00:42,010 --> 00:00:46,650
+Tôi sẽ lấy tiêu chuẩn bài test từ một lượng lớn các bạn sinh viên.
+
+10
+00:00:46,650 --> 00:00:51,060
+Hãy tưởng tượng nếu tôi muốn viết bài test cho sinh viên 
+
+11
+00:00:51,060 --> 00:00:55,280
+nhưng không lấy tiêu chuẩn từ sinh viên mà lại lấy từ học sinh các trường tiểu học 
+
+12
+00:00:55,280 --> 00:00:57,600
+ở khắp Brisbane vì một số lí do nào đó.
+
+13
+00:00:57,600 --> 00:01:01,610
+Tôi nhờ các bạn học sinh làm bài test để tìm ra mức điểm trung bình
+
+14
+00:01:01,610 --> 00:01:04,980
+và mức biến thiên quanh điểm trung bình của bài test.
+
+15
+00:01:04,980 --> 00:01:09,329
+Rõ ràng tôi không thể lấy được dữ liệu cần thiết về mức làm bài trung bình
+
+16
+00:01:09,329 --> 00:01:13,950
+để áp dụng cho sinh viên khi làm test sau này. 
+
+17
+00:01:13,950 --> 00:01:18,990
+Đối tượng dùng để làm tiêu chuẩn cho bài test phải có liên quan
+
+18
+00:01:18,990 --> 00:01:20,340
+đến người làm bài sau này.
+
+19
+00:01:20,340 --> 00:01:23,040
+Đây là vấn đề đầu tiên của rất nhiều bài test.
+
+20
+00:01:23,040 --> 00:01:27,690
+Chắn hẳn tình trạng chung bây giờ là tiêu chuẩn nhiều bài test chỉ dựa vào
+
+21
+00:01:27,690 --> 00:01:28,690
+một lượng đối tượng hạn chế.
+
+22
+00:01:28,690 --> 00:01:33,580
+Ở các nước phương Tây, thường thì đối tượng dễ tiếp cận nhất là sinh viên
+
+23
+00:01:33,580 --> 00:01:36,500
+và người dân bình thường.
+
+24
+00:01:36,500 --> 00:01:41,040
+Nhiều bài test vẫn lấy tiêu chuẩn dựa theo các đối tượng này.
+
+25
+00:01:41,040 --> 00:01:45,090
+Để so sánh trình độ làm một bài test giữa hai người từ hai nền văn hóa khác biệt 
+
+26
+00:01:45,090 --> 00:01:48,119
+là khá khó khăn.
+
+27
+00:01:48,119 --> 00:01:51,770
+Đây là một vấn đề khó với câu trả lời khác phức tạp, 
+
+28
+00:01:51,770 --> 00:01:53,710
+nhưng chúng ta sẽ nói đến vấn đề này sau.
+
+29
+00:01:53,710 --> 00:01:57,939
+Chắc các bạn cũng đoán được lí do ta quan tâm đến sự chuẩn hóa 
+
+30
+00:01:57,939 --> 00:02:01,770
+là vì nó cho ta biết khả năng làm test của một người.
+
+31
+00:02:01,770 --> 00:02:07,650
+Nếu tôi nói IQ của tôi là 115, bạn có biết mức đó thấp hay cao không?
+
+32
+00:02:07,650 --> 00:02:12,700
+Để biết được IQ 115 là cao hay thấp ta cần phải biết mức trung bình,
+
+33
+00:02:12,700 --> 00:02:16,430
+nói một cách chính xác hơn là điểm IQ trung bình của bài test dó
+
+34
+00:02:16,430 --> 00:02:21,680
+Ta cần phải biết điểm của mọi người cao hay thấp hơn mức trung bình bao nhiêu, 
+
+35
+00:02:21,680 --> 00:02:27,220
+đây chính là tỉ lệ điểm được đo bằng đô lệch tiêu chuẩn.
+
+36
+00:02:27,220 --> 00:02:33,359
+Điều quan trọng ta cần biết là tỉ lệ phân bố điểm như thế nào và nó có đặc tính gì.
+
+37
+00:02:33,359 --> 00:02:37,319
+Khi chuẩn hóa bài test, ta sẽ lấy được các dữ liệu này.
+
+38
+00:02:37,319 --> 00:02:38,810
+Tôi sẽ lấy một ví dụ
+
+39
+00:02:38,810 --> 00:02:40,389
+về chiều cao.
+
+40
+00:02:40,389 --> 00:02:45,580
+Nếu bạn đo các chỉ số của nhiều người, ví dụ như đo chiều cao 
+
+41
+00:02:45,580 --> 00:02:47,349
+rồi đưa chỉ số lên một biểu đồ như thế này...
+
+42
+00:02:47,349 --> 00:02:53,739
+Ta có số người tham gia trên trục Y và chiều cao của họ trên trục X
+
+43
+00:02:53,739 --> 00:02:56,640
+ta sẽ thu được một tỉ lệ phân bổ bình thường. 
+
+44
+00:02:56,640 --> 00:03:02,029
+Tỉ lệ phân bố bình thường có các tính chất mà ta có thể sử dụng 
+
+45
+00:03:02,029 --> 00:03:02,749
+để ước tính các đặc tính của tỉ lệ phân bổ.
+

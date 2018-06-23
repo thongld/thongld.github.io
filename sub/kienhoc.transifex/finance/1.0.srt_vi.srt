@@ -1,0 +1,753 @@
+1
+00:00:04,843 --> 00:00:10,965
+Xin chào các bạn. Trong phần này, chúng ta sẽ học 
+những kiến thức cơ bản về giá trị tiền tệ theo thời gian 
+
+2
+00:00:10,965 --> 00:00:15,094
+Các bạn có thể dành bao nhiêu thời gian tùy theo khả năng để hoàn thành học phần này, tuy nhiên
+
+3
+00:00:15,094 --> 00:00:19,952
+tôi sẽ chia nội dung thành nhiều phần nhỏ 
+
+4
+00:00:19,952 --> 00:00:25,694
+Một điều khác tôi muốn nhấn mạnh là trong mỗi học phần, tôi sẽ làm rất nhiều bài tập, 
+
+5
+00:00:25,694 --> 00:00:29,590
+Đó là cách thể hiện rằng nhưng gì tôi làm trong lĩnh vực tài chính đều có tính ứng dụng cao
+
+6
+00:00:29,590 --> 00:00:31,456
+Như vậy, tôi sẽ bắt đầu  bằng các bài tập
+
+7
+00:00:31,456 --> 00:00:38,740
+Theo đó, tôi cũng khuyến khích các bạn
+sử dụng công nghệ và có thể nhấn nút tạm dừng.
+
+8
+00:00:38,740 --> 00:00:44,470
+Nếu tôi có đặt ra một bài tập thực hành, thì bạn hãy cố gắng tự giải bài tập đó 
+thật nhanh, và sau đó chúng ta sẽ cùng nhau giải bài tập.
+
+9
+00:00:44,470 --> 00:00:49,370
+Nhưng tôi không muốn bạn sử dụng nút Tạm dừng
+quá nhiều để cứ khoảng sau 2 phút.
+
+10
+00:00:49,370 --> 00:00:52,220
+chúng ta có thể tạm dừng để
+
+11
+00:00:53,260 --> 00:00:55,782
+có thể thống nhất về nội dung, đại ý như vậy
+
+12
+00:00:55,782 --> 00:00:57,759
+Hãy nhớ rằng, tôi sẽ để clip chạy liên tục. 
+
+13
+00:00:57,759 --> 00:00:59,317
+Tôi sẽ trình bày theo trình tự liên tục
+
+14
+00:00:59,317 --> 00:01:01,630
+Và hy vọng rằng điều này sẽ giúp ích cho bạn.
+
+15
+00:01:01,630 --> 00:01:03,780
+Nhưng hãy nhớ thực hành, thực hành, và thực hành
+
+16
+00:01:03,780 --> 00:01:08,200
+Điều thứ hai là
+hãy làm các bài đánh giá và bài tập.
+
+17
+00:01:08,200 --> 00:01:11,649
+Nhưng cũng nhớ thêm là, 
+bạn không phải làm ngay 
+
+18
+00:01:11,649 --> 00:01:13,870
+Hãy làm khi nào bạn thấy thoải mái.
+
+19
+00:01:13,870 --> 00:01:18,336
+Những bài tập đó sẽ hơi khó một chút
+và chúng nằm trong những phần tôi giảng trên lớp.
+
+20
+00:01:18,336 --> 00:01:22,280
+Nói cách khác, những phần bài tập được đưa ra sẽ liên quan 
+đến học phần mà tôi đang giảng 
+
+21
+00:01:22,280 --> 00:01:23,810
+các bài đánh giá cũng sẽ liên quan đến những nội dung đó.
+
+22
+00:01:25,060 --> 00:01:29,113
+Mặt khác, bạn cũng có thể làm cách khác là
+học cả khóa và
+
+23
+00:01:29,113 --> 00:01:30,702
+sau đó làm bài đánh giá cũng được
+
+24
+00:01:30,702 --> 00:01:32,090
+Điều này hoàn toàn phụ thuộc vào bạn.
+
+25
+00:01:33,390 --> 00:01:38,308
+Đôi khi, tôi cũng khuyến khích bạn nên làm luôn 
+trong quá trình đang học, bởi đây cũng là một cách hữu ích.
+
+26
+00:01:38,308 --> 00:01:40,672
+Nhưng như tôi đã nói, việc đó hoàn toàn phụ thuộc vào bạn.
+
+27
+00:01:40,672 --> 00:01:46,410
+Nếu cảm thấy cần phải học chương kế hay học phần kế tiếp trước 
+để hỗ trợ bản thân, bạn có thể làm như vậy.
+
+28
+00:01:46,410 --> 00:01:47,771
+Bây giờ chúng ta cùng bắt đầu thôi.
+
+29
+00:01:47,771 --> 00:01:52,930
+Khóa học này nói về bản chất của việc ra quyết định 
+
+30
+00:01:52,930 --> 00:01:57,263
+Tôi nói điều này để những ai 
+lần đầu tham gia học được biết
+
+31
+00:01:57,263 --> 00:02:01,651
+Như tôi đã nói trong video giới thiệu
+về lớp học này
+
+32
+00:02:01,651 --> 00:02:06,510
+mọi quyết định chúng ta đưa ra đều
+ảnh hưởng tới chúng ta trong tương lai.
+
+33
+00:02:06,510 --> 00:02:10,830
+Trong hầu hết mọi trường hợp
+quyết định mà bạn đưa ra trong ngày hôm nay
+
+34
+00:02:10,830 --> 00:02:13,712
+đều dẫn tới hệ quả cho bạn trong tương lai
+
+35
+00:02:13,712 --> 00:02:18,830
+Hãy ghi nhớ điều đó, bởi vì điều này có
+liên quan mật thiết việc ra quyết định,
+
+36
+00:02:18,830 --> 00:02:21,590
+giá trị tiền tệ theo thời gian, và nhiều yếu tố khác.
+
+37
+00:02:21,590 --> 00:02:27,160
+Điều thứ hai, tôi cũng tin rằng 
+những quyết định quan trọng thường có xu hướng
+
+38
+00:02:27,160 --> 00:02:31,060
+ảnh hưởng tới chúng ta nhiều hơn và
+lâu dài hơn
+
+39
+00:02:31,060 --> 00:02:34,870
+Như vậy, một ví dụ có thể xem xét 
+theo tôi là internet
+
+40
+00:02:34,870 --> 00:02:37,630
+ một phát minh vĩ đại mà chúng ta có được
+
+41
+00:02:37,630 --> 00:02:41,877
+Phải tốn rất nhiều nguồn lực để sáng tạo
+rất nhiều ý tưởng thiên tài, tuy vậy
+
+42
+00:02:41,877 --> 00:02:44,390
+internet sẽ còn tồn tại lâu dài với chúng ta 
+
+43
+00:02:44,390 --> 00:02:47,190
+Vậy, những quyết định quan trọng.
+
+44
+00:02:47,190 --> 00:02:50,716
+Đầu tư là tốn kém, nhưng 
+đầu tư cũng là những khoản sẽ ở lại với bạn trong thời gian dài 
+
+45
+00:02:50,716 --> 00:02:53,693
+Thế nên,  việc hiểu giá trị thời gian 
+của  tiền tệ thực sự có vai trò vô cùng
+
+46
+00:02:53,693 --> 00:02:56,490
+quan trọng đối với bất kỳ quyết định nào, dù lớn hay nhỏ.
+
+47
+00:02:58,280 --> 00:03:03,224
+Vì vậy, bạn cần kiên nhẫn và 
+tôi sẽ đi thật chậm và xây dựng 
+
+48
+00:03:03,224 --> 00:03:08,428
+từng phần kiến thức như trò chơi ghép hình Lego mà bạn cần để hiểu 
+điều gì xảy ra khi thời gian trôi qua.
+
+49
+00:03:08,428 --> 00:03:10,490
+Tôi thực sự muốn nhấn mạnh một điều.
+
+50
+00:03:11,580 --> 00:03:16,105
+Trong khóa này, 
+tôi sẽ không phân tích cụ thể về rủi ro, tuy nhiên
+
+51
+00:03:16,105 --> 00:03:20,010
+rủi ro luôn xuất hiện ở mọi nơi
+khi chúng ta nói về nó
+
+52
+00:03:20,010 --> 00:03:22,394
+Sao tôi lại không phân tích cụ thể về rủi ro?
+
+53
+00:03:22,394 --> 00:03:24,936
+Bởi vì có cả một chủ đề riêng cho rủi ro
+
+54
+00:03:24,936 --> 00:03:29,601
+Tôi cho rằng để làm vậy cần có nhiều kiến thức 
+về thống kê và nhiều kiến thức khác
+
+55
+00:03:29,601 --> 00:03:34,541
+Bạn có nhớ tôi đã kể rằng tôi từng thực hiện một khóa MOOC
+ở cấp độ nâng cao dành cho
+
+56
+00:03:34,541 --> 00:03:39,225
+hầu hết mọi người, và một phần nguyên nhân 
+đây là khóa nâng cao là vì các kiến thức về rủi ro 
+
+57
+00:03:39,225 --> 00:03:42,481
+phải cần đến cả một bộ 
+công cụ hoàn toàn mới để hiếu
+
+58
+00:03:42,481 --> 00:03:46,658
+Vậy nên trong khóa này, nội dung chính là
+tập trung vào giá trị tiền tệ theo thời gian
+
+59
+00:03:46,658 --> 00:03:48,762
+và bạn sẽ ngạc nhiên khi thấy mức độ kiến thức của mình được mở rộng thêm
+
+60
+00:03:48,762 --> 00:03:55,520
+Chúng ta sẽ hiểu cô đọng lại với mục tiêu rõ ràng 
+là đưa ra các quyết định đúng đắn
+
+61
+00:03:55,520 --> 00:03:59,715
+Và việc tôi thường làm sẽ là đưa ra các ví dụ
+các ví dụ, các ví dụ và
+
+62
+00:03:59,715 --> 00:04:02,816
+cách tôi truyền đạt kiến thức cho bạn
+là thông qua những ví dụ.
+
+63
+00:04:02,816 --> 00:04:04,460
+Vậy tại sao môn học này lại dành cho mọi người?
+
+64
+00:04:04,460 --> 00:04:08,865
+Đó là bởi vì tôi đảm bảo với bạn rằng, 
+sẽ có một số, nếu không muốn nói là hầu hết các vấn đề
+
+65
+00:04:08,865 --> 00:04:12,720
+bạn sẽ thấy liên quan tới bản thân, 
+và đó là cách tôi sẽ giúp bạn hiểu bài
+
+66
+00:04:12,720 --> 00:04:17,650
+Nhớ là, việc học chỉ xảy ra khi bạn
+muốn học, chứ không phải khi tôi muốn dạy.
+
+67
+00:04:17,650 --> 00:04:22,565
+Và, có một điều khác rất tuyệt 
+về công nghệ là bạn không cần
+
+68
+00:04:22,565 --> 00:04:23,417
+phải lắng nghe tôi
+
+69
+00:04:23,417 --> 00:04:25,780
+Bạn có thể tua đi nếu thích
+
+70
+00:04:25,780 --> 00:04:30,738
+Nếu ngồi trong lớp học của tôi, bạn sẽ  
+phải chịu đựng tôi trong khoảng hai tiếng và 
+
+71
+00:04:30,738 --> 00:04:33,772
+sẽ là bất lịch sự nếu bạn tự nhiên đi ra
+khỏi lớp
+
+72
+00:04:33,772 --> 00:04:35,182
+Nhưng tại đây, bạn là bạn.
+
+73
+00:04:35,182 --> 00:04:38,240
+Nhấp một ngụm cà phê,
+và vừa uống cà phê vừa học 
+
+74
+00:04:38,240 --> 00:04:39,436
+Tôi nghĩ rằng điều đó thật tuyệt vời.
+
+75
+00:04:39,436 --> 00:04:43,685
+Vậy, điều đầu tiên tôi muốn nói
+trước khi chúng ta bắt đầu
+
+76
+00:04:43,685 --> 00:04:48,410
+về những công cụ là tầm quan trọng 
+của thời gian, và các bạn biết không
+
+77
+00:04:48,410 --> 00:04:53,392
+Nói thật là tôi không nghĩ 
+chữ viết của tôi đẹp đâu, tuy nhiên
+
+78
+00:04:53,392 --> 00:04:58,120
+tôi vẫn sẽ viết rất nhiều và đó là 
+cách tôi thể hiện sự nhiệt tình và
+
+79
+00:04:58,120 --> 00:05:00,240
+cũng như cho các bạn thấy tôi đang làm gì.
+
+80
+00:05:00,240 --> 00:05:05,696
+Nhưng nhớ rằng, bạn luôn có thể lắng nghe tôi 
+và bạn luôn có thể nghe lại,
+
+81
+00:05:05,696 --> 00:05:11,242
+nhưng điều đầu tiên tôi muốn làm là
+đảm bảo bạn hiểu rõ về trục thời gian và
+
+82
+00:05:11,242 --> 00:05:13,590
+một quy ước rất quan trọng.
+
+83
+00:05:14,610 --> 00:05:16,626
+Như vậy, trục thời gian được mô tả như sau
+
+84
+00:05:16,626 --> 00:05:17,930
+Bạn ra một quyết định.
+
+85
+00:05:22,101 --> 00:05:26,291
+Tại thời gian 0, và để 
+đơn giản thể hiện thời điểm bắt đầu
+
+86
+00:05:26,291 --> 00:05:31,757
+ta sẽ giả định rằng quyết định đó chỉ ảnh hưởng tới bạn, 
+tại mốc thời gian 1. 
+
+87
+00:05:31,757 --> 00:05:33,250
+Dĩ nhiên, điều đó không đúng.
+
+88
+00:05:33,250 --> 00:05:37,980
+Vậy nên điều mà chúng ta sẽ làm là chia nhỏ
+trục thời gian này thành nhiều đoạn 
+
+89
+00:05:37,980 --> 00:05:40,170
+1, 2, 3, 4, 5, 6
+
+90
+00:05:40,170 --> 00:05:43,896
+Nhưng tại thời điểm bắt đầu, chúng ta sẽ bắt đầu với 
+1 và sau đó chúng ta sẽ vẽ thêm các đoạn khác thêm
+
+91
+00:05:43,896 --> 00:05:49,894
+Một số quy ước cần nhớ đó là 
+bất kể khi nào tôi nói kỳ một.
+
+92
+00:05:49,894 --> 00:05:53,240
+trong thuật ngữ tài chính, 
+ta hiểu rằng đó là  kết thúc một giai đoạn.
+
+93
+00:05:53,240 --> 00:05:57,150
+Vậy nên nếu có sự kiện nào xảy ra ở cuối 
+kỳ đó, sự kiện đó sẽ xuất hiện tại đây.
+
+94
+00:05:58,200 --> 00:05:59,707
+Mốc thời gian là gì?
+
+95
+00:05:59,707 --> 00:06:05,646
+1 và 0, nhưng 
+kỳ sẽ là khoảng kéo dài từ 0 tới 1.
+
+96
+00:06:05,646 --> 00:06:11,130
+Những điều đơn giản này rất quan trọng và
+lý do, một lần nữa, chính là việc ra quyết định.
+
+97
+00:06:11,130 --> 00:06:15,760
+Bạn ra một quyết định ngày hôm nay và
+nó ảnh hưởng tới bạn trong tương lai.
+
+98
+00:06:15,760 --> 00:06:18,982
+Hiện tại, tôi sẽ chỉ dừng ở 1 kỳ
+
+99
+00:06:18,982 --> 00:06:22,732
+Nhưng khi đi sâu hơn, bạn sẽ thấy,
+có rất nhiều kỳ.
+
+100
+00:06:22,732 --> 00:06:26,598
+Trên thực tế, mức độ đa dạng
+của việc ra quyết định, như tôi đã nói
+
+101
+00:06:26,598 --> 00:06:29,030
+là bạn muốn tạo ra tác động tồn tại mãi mãi
+
+102
+00:06:29,030 --> 00:06:33,440
+Đây là cảm xúc rất con người thôi,
+bạn muốn thay đổi thế giới
+
+103
+00:06:34,470 --> 00:06:36,720
+nhưng bạn muốn thay đổi thế giới
+để tác động đó tồn tại mãi mãi
+
+104
+00:06:38,380 --> 00:06:43,220
+Điều tôi muốn nói ngắn gọn là
+một vài thuật ngữ rất 
+
+105
+00:06:43,220 --> 00:06:48,280
+quan trọng và 
+thuật ngữ  thường được coi là tiếng lóng trong ngành tài chính
+
+106
+00:06:48,280 --> 00:06:55,010
+Cái hay là cùng 1 thuật ngữ có thể được sử dụng 
+thường xuyên trên các phương tiện khác nhau
+
+107
+00:06:55,010 --> 00:06:59,366
+Vậy tôi sẽ nói về nó luôn, nhưng nó
+cũng được sử dụng trên Excel và trong nhiều ngữ cảnh khác.
+
+108
+00:06:59,366 --> 00:07:01,990
+Đầu tiên, bạn phải nhớ là, 
+trục thời gian là ngày hôm nay.
+
+109
+00:07:03,090 --> 00:07:09,501
+Và tại điểm 0, tương đương với ngày hôm nay,
+Chúng ta sử dụng một thuật ngữ gọi là PV, Giá trị hiện tại
+
+110
+00:07:09,501 --> 00:07:11,650
+Vậy PV là viết tắt của từ gì? 
+
+111
+00:07:11,650 --> 00:07:17,931
+PV- Present Value là Giá trị hiện tại, và vì nó thể hiện mốc thời gian, 
+nên được đo lường thông qua một số loại tiền tệ 
+
+112
+00:07:17,931 --> 00:07:21,717
+Nó là một ngôn ngữ kinh doanh, 
+một ngôn ngữ của sự sống.
+
+113
+00:07:21,717 --> 00:07:24,993
+Vậy nên tôi sẽ dùng đồng đô-la và
+tôi xin lỗi vì điều đó,
+
+114
+00:07:24,993 --> 00:07:30,124
+bởi vì tôi quen dùng loại tiền tệ này, nhưng
+bạn có thể sử dụng bất kỳ loại tiền tệ nào khác mà bạn quen thuộc
+
+115
+00:07:30,124 --> 00:07:32,143
+bạn có thể sử dụng cả bò nếu muốn.
+
+116
+00:07:32,143 --> 00:07:37,740
+Tuy vậy, tôi chỉ nói đùa thôi, nhưng
+Giá trị hiện tại là giá trị tại thời điểm 0.
+
+117
+00:07:37,740 --> 00:07:42,279
+Thuật ngữ kế tiếp mà tôi muốn bạn sử dụng, hãy nhớ, 
+chúng ta bắt đầu từ trục thời gian từ 0 đến 1
+
+118
+00:07:42,279 --> 00:07:46,020
+Vậy, hiện tại, ta chỉ dùng một kỳ thôi
+
+119
+00:07:46,020 --> 00:07:48,484
+Vậy, tại thời điểm 0, ta có PV
+
+120
+00:07:48,484 --> 00:07:54,270
+Tại thời điểm 1, ta gọi đó là FV, Giá trị tương lai
+
+121
+00:07:54,270 --> 00:07:57,902
+Hãy nhớ rằng, ở cả hai thời điểm này, 
+chúng ta đều đo giá trị bằng đồng đô-la
+
+122
+00:07:57,902 --> 00:08:01,230
+Một điểm có giá trị là PV, một điểm có giá trị là FV
+
+123
+00:08:01,230 --> 00:08:05,728
+Thuật ngữ thứ ba ta sẽ sử dụng thường xuyên là n
+
+124
+00:08:05,728 --> 00:08:08,609
+Có nhiều khi người ta cũng gọi là t
+
+125
+00:08:08,609 --> 00:08:10,280
+Vậy n có nghĩa là gì?
+
+126
+00:08:10,280 --> 00:08:16,277
+Đó là số lượng các kỳ và 
+được tính theo đơn vị số.
+
+127
+00:08:16,277 --> 00:08:18,843
+Như vậy, bạn xác định kỳ
+
+128
+00:08:18,843 --> 00:08:20,387
+Và thương chúng ta hay nói, một kỳ
+
+129
+00:08:20,387 --> 00:08:22,342
+Nhưng bạn sẽ xác định đó là một năm,
+
+130
+00:08:22,342 --> 00:08:25,460
+hay một tháng, 
+tùy theo bản chất của vấn đề.
+
+131
+00:08:25,460 --> 00:08:27,777
+Và khi ta làm bài tập,
+bạn sẽ hiểu ý tôi ngay.
+
+132
+00:08:27,777 --> 00:08:31,640
+Vậy, tới thời điểm này,
+chúng ta mới đang tiếp cận vấn đề một cách đơn giản
+
+133
+00:08:31,640 --> 00:08:33,889
+Có mốc thời gian 0, có mốc thời gian 1
+
+134
+00:08:33,889 --> 00:08:40,510
+PV là  giá trị tại thời điểm 0, 
+FV là giá trị tại thời điểm 1, và n thì sao?
+
+135
+00:08:40,510 --> 00:08:41,036
+1
+
+136
+00:08:41,036 --> 00:08:42,654
+n là số lượng các kỳ
+
+137
+00:08:42,654 --> 00:08:44,355
+Điều này dĩ nhiên sẽ thay đổi nhanh thôi
+
+138
+00:08:45,645 --> 00:08:49,425
+Cuối cùng, có một khái niệm đó là
+Tôi có thể dạy nguyên một lớp
+
+139
+00:08:49,425 --> 00:08:50,505
+về cái gọi là Lãi suất
+
+140
+00:08:51,545 --> 00:08:54,475
+Lãi suất cũng được xác định theo giá trị thời gian
+
+141
+00:08:54,475 --> 00:08:55,847
+Vậy thì Lãi suất là gì?
+
+142
+00:08:55,847 --> 00:09:00,879
+Lãi Suất, tôi sẽ dành thêm một chút
+thời gian để nói về nó, đó tỷ suất lợi nhuận
+
+143
+00:09:00,879 --> 00:09:02,050
+được tính theo giá trị phần trăm
+
+144
+00:09:02,050 --> 00:09:06,140
+Nó không tính bằng đô la, 
+cũng chẳng phải số kỳ
+
+145
+00:09:06,140 --> 00:09:12,470
+Đó là số phần trăm. Chúng ta sẽ giả định, dù
+đây là một giả định khá chắc chắn nhưng 
+
+146
+00:09:12,470 --> 00:09:17,220
+nhưng cũng không chắc chắn bằng những giả định khác,
+chúng ta sẽ cứ giả sử giá trị là số dương 
+
+147
+00:09:18,600 --> 00:09:22,860
+Như vây, lãi suất sẽ là lãi suất dương
+từ giờ chúng ta sẽ luôn dùng giả định đó
+
+148
+00:09:23,980 --> 00:09:26,492
+Có những lúc lãi
+suất là âm.
+
+149
+00:09:26,492 --> 00:09:30,152
+Và như tôi đã nói, đây có thể
+là cả một vấn đề lớn khác để bàn luận và
+
+150
+00:09:30,152 --> 00:09:34,870
+chúng ta có thể nghiên cứu mãi cũng không hết, nhưng cứ tạm cho rằng
+lãi suất mang giá trị dương 
+
+151
+00:09:36,040 --> 00:09:39,000
+Hãy nhớ rằng, không có gì là chắc chắn cả
+
+152
+00:09:39,000 --> 00:09:41,810
+Vậy thì ta sẽ không nói về số liệu thống kê,
+rủi ro và nhiều yếu tố khác
+
+153
+00:09:41,810 --> 00:09:45,440
+nhưng chúng ta sẽ phải ngầm hiểu về rủi ro 
+
+154
+00:09:45,440 --> 00:09:46,262
+Tôi hỏi bạn điều này
+
+155
+00:09:46,262 --> 00:09:52,000
+Giả sử là bạn đầu tư vào một lĩnh vực nào đó rủi ro cao
+so với một lĩnh vực không hề có rủi ro
+
+156
+00:09:52,000 --> 00:09:53,409
+Như vậy, lấy ví dụ là một tài khoản ngân hàng. 
+
+157
+00:09:53,409 --> 00:09:58,468
+Bạn chuyển tiền vào tài khoản,
+giống như một khoản tiền gửi, và so với việc đem tiền
+
+158
+00:09:58,468 --> 00:10:03,870
+đầu tư vào một sáng kiến hoàn toàn mới, người ta hay gọi là
+đầu tư mạo hiểm 
+
+159
+00:10:03,870 --> 00:10:05,929
+Thường thì bên nào có nhiều rủi ro hơn?
+
+160
+00:10:05,929 --> 00:10:09,440
+Dĩ nhiên là lĩnh vực nào
+có nhiều yếu tố không chắc chắn hơn
+
+161
+00:10:09,440 --> 00:10:14,929
+Như vậy, vì sao bạn thấy đầu tư vào đó hấp dẫn, 
+đó là do kỳ vọng vào một lợi nhuận cao hơn phải không?
+
+162
+00:10:14,929 --> 00:10:18,570
+Vậy rủi ro cao,
+và lợi nhuận cao thường đi đôi với nhau.
+
+163
+00:10:18,570 --> 00:10:23,094
+Như vậy chúng ta đang ngầm hiểu về rủi ro 
+mà không nói một cách trực tiếp,
+
+164
+00:10:23,094 --> 00:10:28,040
+bởi vì điều này đòi hỏi cả 
+một lượng lớn kiến thức, thống kê và nhiều yếu tố khác.
+

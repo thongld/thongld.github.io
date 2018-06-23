@@ -1,0 +1,228 @@
+0
+00:00:00,000 --> 00:00:00,769
+anlynguyenphuoc_gtc_Y2VjYm 07/09/2016
+
+1
+00:00:00,769 --> 00:00:02,560
+Để giúp bạn bắt đầu với Spark
+
+2
+00:00:02,560 --> 00:00:05,480
+và trở thành nhà phát triển Spark thành thạo,
+
+3
+00:00:05,480 --> 00:00:09,040
+có rất nhiều tài liệu có sẵn.
+
+4
+00:00:09,040 --> 00:00:11,180
+Vậy nơi đầu tiên để bắt đầu,
+
+5
+00:00:11,180 --> 00:00:13,880
+chính là tài liệu trực tuyến của Spark.
+
+6
+00:00:13,880 --> 00:00:19,660
+Bạn có thể truy cập vào spark.apache.org/docs/latest
+
+7
+00:00:19,660 --> 00:00:26,270
+rồi chọn Python trong mục xổ xuống API docs
+
+8
+00:00:26,270 --> 00:00:29,730
+Một nguồn tham khảo có kèm ví dụ khác
+
+9
+00:00:29,730 --> 00:00:31,330
+là hướng dẫn của Databricks. (Databricks Guide)
+
+10
+00:00:31,330 --> 00:00:33,120
+Nhấp vào dấu chấm hỏi
+
+11
+00:00:33,120 --> 00:00:35,140
+sau đó nhấp vào Databricks Guide.
+
+12
+00:00:35,140 --> 00:00:36,460
+Rồi xem qua các bài học.
+
+13
+00:00:36,460 --> 00:00:39,180
+Bạn có thể sao chép chúng vào môi trường làm việc
+
+14
+00:00:39,180 --> 00:00:45,110
+và chạy các ví dụ trong các bài học đó.
+
+15
+00:00:45,110 --> 00:00:48,830
+Một nguồn tham khảo tốt khác
+chính là các blog kỹ thuật
+
+16
+00:00:48,830 --> 00:00:50,610
+Đây là ba blog kỹ thuật
+
+17
+00:00:50,610 --> 00:00:52,670
+hẳn sẽ thú vị với bạn.
+
+18
+00:00:52,670 --> 00:00:54,670
+Chúng có tin tức mới về Spark, cũng như
+
+19
+00:00:54,670 --> 00:00:58,010
+các ví dụ cách thực hành
+
+20
+00:00:58,010 --> 00:01:00,220
+những mẫu việc thông thường bằng Spark.
+
+21
+00:01:00,220 --> 00:01:02,110
+Đây là blog của Databricks,
+
+22
+00:01:02,110 --> 00:01:06,110
+của Cloudera và IBM.
+
+23
+00:01:06,110 --> 00:01:08,880
+Bạn cũng có thể tìm Spark trên Youtube.
+
+24
+00:01:08,880 --> 00:01:13,410
+Hãy xem qua kênh Youtube Apache Spark
+
+25
+00:01:13,410 --> 00:01:16,540
+Ngoài ra còn có cộng đồng Spark khá lớn.
+
+26
+00:01:16,540 --> 00:01:20,910
+Bạn có thể gia nhập bằng cách
+vào trang spark.apache.org
+
+27
+00:01:20,910 --> 00:01:23,710
+và đến community.html
+
+28
+00:01:23,710 --> 00:01:26,390
+Bạn sẽ thấy có hai nhóm danh sách email.
+
+29
+00:01:26,390 --> 00:01:28,780
+Danh sách email cho người dùng,
+
+30
+00:01:28,780 --> 00:01:31,490
+và danh sách email cho nhà phát triển.
+
+31
+00:01:31,490 --> 00:01:36,510
+Ngoài ra có các sự kiện, các buổi họp mặt sắp diễn ra.
+
+32
+00:01:36,510 --> 00:01:40,720
+Có một cộng đồng meet up về Apache Spark,
+
+33
+00:01:40,720 --> 00:01:43,660
+với vài trăm nghìn thành viên,
+
+34
+00:01:43,660 --> 00:01:48,490
+và hàng trăm buổi họp mặt diễn ra khắp hành tinh.
+
+35
+00:01:48,490 --> 00:01:51,850
+Truy cập spark.meetup.com,
+
+36
+00:01:51,850 --> 00:01:56,360
+bạn sẽ thấy các buổi họp mặt gần đây.
+
+37
+00:01:56,360 --> 00:02:00,140
+Diễn đàn Databricks, forums.databricks.com,
+
+38
+00:02:00,140 --> 00:02:02,890
+là diễn đàn dành cho
+cộng đồng người dùng Databricks.
+
+39
+00:02:02,890 --> 00:02:06,550
+Vì vậy bạn sẽ thấy chủ yếu là các câu hỏi
+và câu trả lời về Databricks
+
+40
+00:02:06,550 --> 00:02:10,120
+cùng một số câu hỏi, cũng như câu trả lời chung chung
+
+41
+00:02:10,120 --> 00:02:12,700
+về Spark.
+
+42
+00:02:12,700 --> 00:02:16,480
+Bạn có thể tìm trong kho dữ liệu Spark Packages
+
+43
+00:02:16,480 --> 00:02:19,560
+các gói phần mềm cho Spark.
+
+44
+00:02:19,560 --> 00:02:23,270
+Chúng là các tiện ích mở rộng cho Spark,
+do người dùng viết ra và phát triển,
+
+45
+00:02:23,270 --> 00:02:24,930
+và được cộng đồng đánh giá.
+
+46
+00:02:24,930 --> 00:02:27,230
+Do đó bạn sẽ nhận biết được tiện ích nào thật sự tốt,
+
+47
+00:02:27,230 --> 00:02:29,703
+và tiện ích nào cần được cải thiện.
+
+48
+00:02:29,703 --> 00:02:32,270
+
+49
+00:02:32,270 --> 00:02:35,220
+Nếu bạn thật sự hứng thú về cách hoạt động của Spark,
+
+50
+00:02:35,220 --> 00:02:37,600
+hãy tìm đến kho dữ liệu GitHub.
+
+51
+00:02:37,600 --> 00:02:40,580
+Apache Spark là mã nguồn mở hoàn toàn.
+
+52
+00:02:40,580 --> 00:02:42,990
+Vì thế bạn có thể xem những dòng code 
+
+53
+00:02:42,990 --> 00:02:45,910
+chạy mọi thứ có trong Spark.
+
+54
+00:02:45,910 --> 00:02:48,220
+Các ghi chú (comment) có trong code
+
+55
+00:02:48,220 --> 00:02:50,170
+sẽ giải thích chi tiết hơn.
+

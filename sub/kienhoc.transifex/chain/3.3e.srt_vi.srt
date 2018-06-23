@@ -1,0 +1,492 @@
+0
+00:00:00,000 --> 00:00:00,170
+https://youtu.be/LCyR13RWcgw
+
+1
+00:00:00,170 --> 00:00:01,795
+Được rồi, hãy bắt đầu xây dựng các mô hình.
+
+2
+00:00:01,795 --> 00:00:04,010
+Và mô hình đầu tiên của chúng ta sẽ là đơn giản nhất.
+
+3
+00:00:04,010 --> 00:00:05,880
+Chúng ta sẽ nói rằng chi phí cho mỗi trọng tải
+
+4
+00:00:05,880 --> 00:00:08,080
+sẽ là một hàm của khoảng cách.
+
+5
+00:00:08,080 --> 00:00:10,710
+Nên mẫu hàm của chúng ta sẽ là chi phí cho mỗi trọng tải
+
+6
+00:00:10,710 --> 00:00:14,390
+bằng beta 0, chi phí cố định, cộng beta 1 nhân với khoảng cách,
+
+7
+00:00:14,390 --> 00:00:18,280
+trong đó beta 1 là chi phí biến thiên trên mỗi dặm.
+
+8
+00:00:18,280 --> 00:00:20,610
+Nên chúng ta sẽ có được đầu ra như thế này.
+
+9
+00:00:20,610 --> 00:00:23,260
+Nếu bạn chạy cùng một mô hình, bạn sẽ nhận được các con số tương tự.
+
+10
+00:00:23,260 --> 00:00:25,960
+Có thể ở một định dạng khác và theo một trình tự khác,
+
+11
+00:00:25,960 --> 00:00:28,710
+nhưng bạn sẽ nhận được các số giống hệt nhau
+
+12
+00:00:28,710 --> 00:00:33,240
+nếu bạn chạy một mô hình hồi quy của mẫu này.
+
+13
+00:00:33,240 --> 00:00:36,240
+Nên hãy xem qua các kết quả, đầu ra,
+
+14
+00:00:36,240 --> 00:00:37,950
+và sau đó chúng ta sẽ nói về nó.
+
+15
+00:00:37,950 --> 00:00:41,970
+Điều đầu tiên bạn có thể nhận thấy là r bình phương của 0,818,
+
+16
+00:00:41,970 --> 00:00:44,190
+hay xấp xỉ 82%.
+
+17
+00:00:44,190 --> 00:00:46,230
+Và sau đó r bình phương được điều chỉnh ngay dưới nó
+
+18
+00:00:46,230 --> 00:00:47,790
+chỉ một chút nhỏ hơn.
+
+19
+00:00:47,790 --> 00:00:50,490
+Nó sẽ luôn luôn nhỏ hơn r bình phương,
+
+20
+00:00:50,490 --> 00:00:52,500
+vì bạn đang sửa số lượng các biến độc lập
+
+21
+00:00:52,500 --> 00:00:56,940
+mà bạn có trong mô hình.
+
+22
+00:00:56,940 --> 00:01:00,570
+Hãy nhìn vào điều này, và chúng ta có thể giải thích điều này như đã nói
+
+23
+00:01:00,570 --> 00:01:05,069
+ nói rằng tôi đang giải thích về 82% sự biến đổi chi phí
+
+24
+00:01:05,069 --> 00:01:07,020
+cho mỗi trọng tải với khoảng cách.
+
+25
+00:01:07,020 --> 00:01:08,460
+Nó cao đến kỳ lạ.
+
+26
+00:01:08,460 --> 00:01:09,450
+Thật tuyệt.
+
+27
+00:01:09,450 --> 00:01:11,460
+Tôi cũng có lỗi sai số tiêu chuẩn của mô hình
+
+28
+00:01:11,460 --> 00:01:12,900
+mà chúng ta có thể sử dụng sau này.
+
+29
+00:01:12,900 --> 00:01:14,730
+Và tôi có tổng bình phương thặng dư
+
+30
+00:01:14,730 --> 00:01:16,470
+và tổng số các bình phương.
+
+31
+00:01:16,470 --> 00:01:21,150
+Giờ nếu tôi lấy tỷ lệ của những cái này, đặt RSS trên TSS,
+
+32
+00:01:21,150 --> 00:01:25,751
+trừ đi từ 1, tôi sẽ nhận được r bình phương.
+
+33
+00:01:25,751 --> 00:01:26,250
+Bạn còn nhớ chứ?
+
+34
+00:01:26,250 --> 00:01:28,170
+Đó là tất cả những gì chúng ta sẽ giải thích ở đây
+
+35
+00:01:28,170 --> 00:01:30,934
+là Tổng Bình Phương Thặng Dư chia cho
+
+36
+00:01:30,934 --> 00:01:32,100
+Tổng Bình Phương.
+
+37
+00:01:32,100 --> 00:01:34,560
+Tôi sẽ giải thích như thế nào?
+
+38
+00:01:34,560 --> 00:01:36,300
+Và sau đó bảng dưới cùng cho thấy, với mỗi
+
+39
+00:01:36,300 --> 00:01:39,460
+hệ số, thông tin đầu ra nhất định.
+
+40
+00:01:39,460 --> 00:01:42,180
+Nên tôi có mặt phẳng chắn và khoảng cách
+
+41
+00:01:42,180 --> 00:01:44,130
+hệ số hoặc giá trị ước tính,
+
+42
+00:01:44,130 --> 00:01:47,415
+các sai số tiêu chuẩn cho ước tính đó, thống kê t, giá trị p
+
+43
+00:01:47,415 --> 00:01:49,980
+nhớ là cho các bài kiểm tra giả thuyết
+
+44
+00:01:49,980 --> 00:01:55,470
+mà giá trị bằng 0 với các giả thuyết thay thế
+
+45
+00:01:55,470 --> 00:01:59,480
+đó là nó không bằng 0, do đó một giá trị thấp hơn,
+
+46
+00:01:59,480 --> 00:02:04,050
+một giá trị p thấp hơn có nghĩa là bạn có thể từ chối
+
+47
+00:02:04,050 --> 00:02:06,960
+giả thuyết bằng 0.
+
+48
+00:02:06,960 --> 00:02:10,139
+Bạn đang tìm kiếm giá trị p thực sự thấp
+
+49
+00:02:10,139 --> 00:02:14,850
+sau đó tôi cũng có khoảng tin cậy cao và thấp hơn 95%
+
+50
+00:02:14,850 --> 00:02:17,260
+cho mỗi hệ số.
+
+51
+00:02:17,260 --> 00:02:19,340
+Vậy tôi có thể làm gì với cái này?
+
+52
+00:02:19,340 --> 00:02:20,980
+Tôi sẽ giải thích điều này như thế nào?
+
+53
+00:02:20,980 --> 00:02:23,427
+Một điều bạn có thể làm là có mô hình ước tính của bạn,
+
+54
+00:02:23,427 --> 00:02:25,260
+vì đó là những gì bạn đã tìm ra ở đây.
+
+55
+00:02:25,260 --> 00:02:29,490
+Bằng cách sử dụng các hệ số, bây giờ tôi có thể lắp chúng vào.
+
+56
+00:02:29,490 --> 00:02:34,920
+Ước tính của tôi cho beta 0 là 1.282 và ước tính của tôi cho beta 1
+
+57
+00:02:34,920 --> 00:02:36,960
+là 1,532.
+
+58
+00:02:36,960 --> 00:02:40,500
+Vậy chúng ta có thể nói, nếu tôi dự đoán hoặc ước tính
+
+59
+00:02:40,500 --> 00:02:44,310
+chi phí cho mỗi trọng tải cho lô hàng
+
+60
+00:02:44,310 --> 00:02:46,200
+ở một khoảng cách nhất định, sẽ là
+
+61
+00:02:46,200 --> 00:02:52,410
+$1.282 cộng 1,532 nhân với khoảng cách
+
+62
+00:02:52,410 --> 00:02:54,234
+của chiều dài quãng đường vận chuyển.
+
+63
+00:02:54,234 --> 00:02:54,900
+Thật tuyệt.
+
+64
+00:02:54,900 --> 00:02:56,670
+Đó là cách chúng ta có thể sử dụng mô hình này.
+
+65
+00:02:56,670 --> 00:02:59,102
+Nhưng hãy nói thêm một chút về cách chúng ta giải thích nó.
+
+66
+00:02:59,102 --> 00:03:00,810
+Tôi luôn luôn muốn nhìn vào bức tranh lớn,
+
+67
+00:03:00,810 --> 00:03:02,650
+và sau đó đi xuống các tham số.
+
+68
+00:03:02,650 --> 00:03:05,580
+Trên bức tranh lớn, luôn nhìn vào các r bình phương được điều chỉnh.
+
+69
+00:03:05,580 --> 00:03:08,370
+Và những gì chúng ta đang nói là chúng ta đang giải thích khoảng 82%
+
+70
+00:03:08,370 --> 00:03:10,770
+tổng biến thiên của chi phí cho mỗi lần tải.
+
+71
+00:03:10,770 --> 00:03:11,610
+Thật kỳ lạ.
+
+72
+00:03:11,610 --> 00:03:15,090
+Đó là một mô hình rất mạnh.
+
+73
+00:03:15,090 --> 00:03:17,550
+Trong thực tế, bạn có thể thấy những kết quả thấp hơn.
+
+74
+00:03:17,550 --> 00:03:19,930
+Đặc biệt đối với một số lĩnh vực nghiên cứu,
+
+75
+00:03:19,930 --> 00:03:22,890
+đôi khi bạn sẽ thấy tương quan rất thấp.
+
+76
+00:03:22,890 --> 00:03:25,770
+Nếu tôi nhìn vào các biến độc lập,
+
+77
+00:03:25,770 --> 00:03:27,960
+cả các số hạng beta 0 và beta 1
+
+78
+00:03:27,960 --> 00:03:31,860
+dường như có ý nghĩa cả về độ lớn và ký hiệu.
+
+79
+00:03:31,860 --> 00:03:36,140
+Ví dụ, nếu hệ số khoảng cách, b1,
+
+80
+00:03:36,140 --> 00:03:38,220
+nếu đó là âm, có thể nói,
+
+81
+00:03:38,220 --> 00:03:40,740
+tôi càng lái xe, chi phí càng ít hơn.
+
+82
+00:03:40,740 --> 00:03:42,310
+Vì vậy, sẽ không có ý nghĩa gì.
+
+83
+00:03:42,310 --> 00:03:45,590
+Nên bạn luôn cố gắng tìm kiếm dấu hiệu có ý nghĩa
+
+84
+00:03:45,590 --> 00:03:47,190
+và độ lớn có ý nghĩa?
+
+85
+00:03:47,190 --> 00:03:49,990
+Vì bạn luôn muốn đi vào, theo ý kiến của tôi,
+
+86
+00:03:49,990 --> 00:03:52,620
+với một giả thuyết bạn nghĩ thế nào
+
+87
+00:03:52,620 --> 00:03:53,340
+về mối quan hệ này.
+
+88
+00:03:53,340 --> 00:03:55,800
+Và bạn hoặc là sẽ xác nhận tính hợp lệ hoặc làm mất tính hợp lệ
+
+89
+00:03:55,800 --> 00:03:57,970
+giả thuyết của bạn.
+
+90
+00:03:57,970 --> 00:04:01,050
+Tuy nhiên, cả hai biến này đều rất mạnh.
+
+91
+00:04:01,050 --> 00:04:04,020
+Nên tất cả những gì tôi cần làm là nhìn vào giá trị p đó.
+
+92
+00:04:04,020 --> 00:04:10,320
+Điều này cho tôi biết rằng nó rõ ràng là 0,01%.
+
+93
+00:04:10,320 --> 00:04:12,160
+Nó mạnh một cách khác thường.
+
+94
+00:04:12,160 --> 00:04:14,250
+Nên tôi luôn nhìn vào giá trị p.
+
+95
+00:04:14,250 --> 00:04:17,040
+Thật tốt khi biết sai số tiêu chuẩn và thống kê t,
+
+96
+00:04:17,040 --> 00:04:19,680
+nhưng thực sự bạn sẽ sử dụng giá trị p.
+
+97
+00:04:19,680 --> 00:04:21,600
+Đây là mô hình đầu tiên.
+
+98
+00:04:21,600 --> 00:04:23,310
+Và câu hỏi tiếp theo chúng ta có là
+
+99
+00:04:23,310 --> 00:04:24,970
+chúng ta sẽ đi đâu từ đây?
+
+100
+00:04:24,970 --> 00:04:26,500
+Chúng ta có thể cải thiện nó như thế nào?
+
+101
+00:04:26,500 --> 00:04:28,440
+Tôi có thể bổ sung những tiềm năng gì?
+
+102
+00:04:28,440 --> 00:04:30,580
+Loại thiết bị có quan trọng không?
+
+103
+00:04:30,580 --> 00:04:31,810
+Tôi có nên bao gồm thời gian chỉ dẫn?
+
+104
+00:04:31,810 --> 00:04:32,670
+Liệu nó có ảnh hưởng?
+
+105
+00:04:32,670 --> 00:04:34,294
+Chiều dài xe moóc có ảnh hưởng không?
+
+106
+00:04:34,294 --> 00:04:35,640
+Trọng lượng ảnh hưởng như thế nào?
+
+107
+00:04:35,640 --> 00:04:38,010
+Có hiệu ứng chéo không?
+
+108
+00:04:38,010 --> 00:04:39,900
+Có một mối quan hệ phi tuyến tính
+
+109
+00:04:39,900 --> 00:04:41,880
+với khoảng cách hoặc trọng lượng không?
+
+110
+00:04:41,880 --> 00:04:43,650
+Tất cả những thứ khác này là những câu hỏi
+
+111
+00:04:43,650 --> 00:04:47,100
+bạn có thể kiểm tra bằng các mô hình hồi quy.
+
+112
+00:04:47,100 --> 00:04:49,380
+Tuy nhiên điều quan trọng là bạn phải lô-gic
+
+113
+00:04:49,380 --> 00:04:51,240
+trong cách tiếp cận và khám phá của bạn.
+
+114
+00:04:51,240 --> 00:04:54,570
+Giống như tôi đã nói, tôi nghĩ điều quan trọng là phải có một loại
+
+115
+00:04:54,570 --> 00:04:56,220
+ giả thuyết nào đó.
+
+116
+00:04:56,220 --> 00:04:59,090
+Cá nhân tôi không phải là một fan hâm mộ của bất kỳ mô hình nào
+
+117
+00:04:59,090 --> 00:05:01,800
+ở đó bạn đặt mọi thứ vào và xem ta được những gì.
+
+118
+00:05:01,800 --> 00:05:03,600
+Đó là một bộ kỹ thuật khác,
+
+119
+00:05:03,600 --> 00:05:05,440
+và chúng ta sẽ nói về những cái đó trong các khóa học sau này.
+
+120
+00:05:05,440 --> 00:05:07,480
+Nhưng đối với hồi quy, điều đó rất quan trọng,
+
+121
+00:05:07,480 --> 00:05:10,320
+tôi nghĩ rằng, để hiểu một số đặc tính cơ bản
+
+122
+00:05:10,320 --> 00:05:13,520
+của hệ thống mà bạn đang thử làm mô hình.
+

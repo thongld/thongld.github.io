@@ -1,0 +1,577 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/2Gm1ARyz8ik
+
+1
+00:00:00,500 --> 00:00:02,430
+Và chúng ta bàn về dự báo tích lũy
+
+2
+00:00:02,430 --> 00:00:05,620
+mà ở đó các vấn đề từng xảy ra được xử lý như nhau.
+
+3
+00:00:05,620 --> 00:00:08,029
+Sau đó chúng ta nói về dự báo mộc, mà ở đó
+
+4
+00:00:08,029 --> 00:00:11,810
+bạn chỉ sử dụng lịch sử gần đây nhất,
+quan sát gần đây nhất--
+
+5
+00:00:11,810 --> 00:00:13,235
+chỉ các vấn đề của hôm qua.
+
+6
+00:00:13,235 --> 00:00:15,110
+Và có thể bạn sẽ nghĩ là điều này là cực đoan,
+
+7
+00:00:15,110 --> 00:00:16,840
+chắc chắn phải có một chút thỏa hiệp.
+
+8
+00:00:16,840 --> 00:00:17,550
+Và đúng là có.
+
+9
+00:00:17,550 --> 00:00:19,490
+Đó là dự đoán trung bình động.
+
+10
+00:00:19,490 --> 00:00:21,100
+Và thực tế ta có thể xem điều này không chỉ
+
+11
+00:00:21,100 --> 00:00:23,840
+như một sự thỏa hiệp giữa hai yếu tố.
+
+12
+00:00:23,840 --> 00:00:25,950
+Đó luôn là một cách để khái quát hóa.
+
+13
+00:00:25,950 --> 00:00:28,150
+Vậy mô hình này sẽ có hình dạng ra sao?
+
+14
+00:00:28,150 --> 00:00:31,840
+Việc chúng ta làm là không cần phải bao gồm tất cả dữ liệu.
+
+15
+00:00:31,840 --> 00:00:34,905
+Chúng ta chỉ cần bao gồm M cuối cùng, bất kể M là gì.
+
+16
+00:00:34,905 --> 00:00:36,530
+M là một số biến thiên.
+
+17
+00:00:36,530 --> 00:00:38,770
+Chúng ta bao gồm vào đó nhiều quan sát.
+
+18
+00:00:38,770 --> 00:00:40,530
+Và như tôi đã nói, điều này là một thỏa hiệp
+
+19
+00:00:40,530 --> 00:00:42,430
+giữa dự báo tích lũy và dự báo mộc.
+
+20
+00:00:42,430 --> 00:00:43,760
+Hãy cùng xem xét nó.
+
+21
+00:00:43,760 --> 00:00:46,730
+Mô hình cơ bản vẫn là mô hình tĩnh,
+
+22
+00:00:46,730 --> 00:00:49,540
+ở đó cầu theo thời gian tại giai đoạn thời gian t
+
+23
+00:00:49,540 --> 00:00:52,010
+sẽ bằng với mức cân bằng nào đó,
+
+24
+00:00:52,010 --> 00:00:55,220
+cộng với số hạng sai số, một số biến thiên nào đó quanh nó,
+dữ liệu vô nghĩa.
+
+25
+00:00:55,220 --> 00:00:57,330
+Và số biến thiên đó, dự liệu vô nghĩa đó hay còn gọi là sai số,
+
+26
+00:00:57,330 --> 00:01:03,090
+sẽ có giá trị trung bình là 0 và một số biến thiên
+của một số biến thiên nào đó.
+
+27
+00:01:03,090 --> 00:01:06,660
+Nhưng điều quan trọng là trung bình bằng 0,
+nên chúng ta sẽ không bị thiên lệch.
+
+28
+00:01:06,660 --> 00:01:09,690
+Vậy mô hình dự báo cho cái này, trông có vẻ phức tạp,
+
+29
+00:01:09,690 --> 00:01:11,220
+nhưng thực ra lại dễ hiểu.
+
+30
+00:01:11,220 --> 00:01:14,200
+Vậy dự báo của tôi cho cầu tại giai đoạn thời gian t
+
+31
+00:01:14,200 --> 00:01:17,270
+cho giai đoạn thời gian t trừ 1 sẽ bằng với
+
+32
+00:01:17,270 --> 00:01:22,370
+tổng cầu trên các giai đoạn m cuối cùng,
+
+33
+00:01:22,370 --> 00:01:25,540
+chia cho m, là số giai đoạn mà tôi tính vào.
+
+34
+00:01:25,540 --> 00:01:29,740
+Vậy só hạng này, tôi cho bằng với t trừ 1 trừ m,
+
+35
+00:01:29,740 --> 00:01:31,840
+đơn giản là quay lại giai đoạn m.
+
+36
+00:01:31,840 --> 00:01:36,630
+Vậy nếu tôi trong giai đoạn 6 và m của tôi bằng 4,
+
+37
+00:01:36,630 --> 00:01:40,840
+thì tôi sẽ quay lại 6, 5, 4, 3, 2.
+
+38
+00:01:40,840 --> 00:01:44,830
+Vậy nó sẽ quay lại nhiều giai đoạn thời gian.
+
+39
+00:01:44,830 --> 00:01:47,180
+Nên ở đây tôi có cùng dữ liệu mà tôi đang tìm.
+
+40
+00:01:47,180 --> 00:01:49,250
+Cột đầu tiêu là giai đoạn thời gian.
+
+41
+00:01:49,250 --> 00:01:51,130
+Cột thứ hai là cầu.
+
+42
+00:01:51,130 --> 00:01:53,510
+Và sau đó tôi có cột màu đỏ là dự báo mộc.
+
+43
+00:01:53,510 --> 00:01:55,710
+Và chúng ta sẽ trình bày cách làm điều đó.
+
+44
+00:01:55,710 --> 00:01:58,340
+Trong phần màu xanh lá ở cuối bảng
+
+45
+00:01:58,340 --> 00:02:00,450
+là dự báo tích lũy.
+
+46
+00:02:00,450 --> 00:02:03,990
+Trong những cột này, trong năm cột cuối này,
+
+47
+00:02:03,990 --> 00:02:06,220
+đây là cầu được dự báo được đưa ra
+
+48
+00:02:06,220 --> 00:02:10,770
+tại giai đoạn thời gian t cho giai đoạn thời gian t trừ 1/
+
+49
+00:02:10,770 --> 00:02:14,040
+Nên với nhăm cột này ở bên phải,
+
+50
+00:02:14,040 --> 00:02:19,100
+chúng ta nhìn vào dự báo cầu giai đoạn tiếp theo.
+
+51
+00:02:19,100 --> 00:02:22,590
+Vậy ta hãy vẽ đồ thi cho những cái này.
+
+52
+00:02:22,590 --> 00:02:24,710
+Và ở đây tôi đưa thực tế vào.
+
+53
+00:02:24,710 --> 00:02:29,970
+Tôi đã kết nối các vùng thực tế với đường kẻ này.
+
+54
+00:02:29,970 --> 00:02:32,270
+Và đây là dự báo mộc.
+
+55
+00:02:32,270 --> 00:02:34,400
+Nó chỉ là dịch chuyển của một.
+
+56
+00:02:34,400 --> 00:02:37,290
+Bạn có thể thấy nó rất dễ thay đổi, rất không ổn định.
+
+57
+00:02:37,290 --> 00:02:39,250
+Và hãy xem M2 là gì.
+
+58
+00:02:39,250 --> 00:02:42,640
+M2 là trung bình động của hai giai đoạn.
+
+59
+00:02:42,640 --> 00:02:45,500
+Vậy trung bình động mà dự đoán đưa ra
+
+60
+00:02:45,500 --> 00:02:49,490
+tại giai đoạn hai cho giai đoạn tiếp theo, giai đoạn ba,
+
+61
+00:02:49,490 --> 00:02:52,030
+chúng ta sẽ nói là 100,5
+
+62
+00:02:52,030 --> 00:02:56,419
+là trung bình của 109 cộng 92.
+
+63
+00:02:56,419 --> 00:02:57,960
+Và nó sẽ ngay ở đây.
+
+64
+00:02:57,960 --> 00:03:01,970
+Và ở giai đoạn tiếp theo, dự báo
+
+65
+00:03:01,970 --> 00:03:05,090
+được đưa ra tại giai đoạn ba cho giai đoạn bốn,
+
+66
+00:03:05,090 --> 00:03:08,142
+sẽ là 95, là trung bình của hai cái này.
+
+67
+00:03:08,142 --> 00:03:09,850
+Chúng ta sẽ chỉ tính trung bình động.
+
+68
+00:03:09,850 --> 00:03:12,410
+Bạn đang tính trung bình của các giai đoạn m cuối cùng.
+
+69
+00:03:12,410 --> 00:03:13,370
+Trong trường hợp này, đó là m2.
+
+70
+00:03:13,370 --> 00:03:16,310
+
+
+71
+00:03:16,310 --> 00:03:22,970
+Sau đó bạn có thể thấy điều tương tự xảy ra với M4 và M6.
+
+72
+00:03:22,970 --> 00:03:27,950
+Có thể rút ra hai điều-- một là tôi không thể
+bắt đầu dự báo M2
+
+73
+00:03:27,950 --> 00:03:30,150
+cho tới hai giai đoạn sau đó.
+
+74
+00:03:30,150 --> 00:03:33,500
+Tôi cần hai giai đoạn để tính trung bình.
+
+75
+00:03:33,500 --> 00:03:35,480
+Tương tự với giai đoạn bốn -- M4,
+
+76
+00:03:35,480 --> 00:03:38,060
+tôi cần bốn giai đoạn để có thể tính.
+
+77
+00:03:38,060 --> 00:03:40,450
+M6, tôi cần sáu giai đoạn.
+
+78
+00:03:40,450 --> 00:03:45,750
+Vậy một điều đó là khi tôi sử dụng nhiều dữ kiện hơn
+cho mô hình dự báo của tôi
+
+79
+00:03:45,750 --> 00:03:47,840
+tôi cần thêm dữ kiện.
+
+80
+00:03:47,840 --> 00:03:49,800
+Với mô hình mộc, tôi không cần dữ kiện nào cả.
+
+81
+00:03:49,800 --> 00:03:51,520
+Tôi chỉ cần những gì đã xảy ra hôm qua.
+
+82
+00:03:51,520 --> 00:03:53,020
+Đó là dữ kiện duy nhất tôi cần.
+
+83
+00:03:53,020 --> 00:03:56,260
+Với những mô hình khác, tôi cần hai giai đoạn, bốn giai đoạn,
+
+84
+00:03:56,260 --> 00:04:00,420
+hay sáu giai đoạn, vì đó là khoảng thời gian cần tính trung bình.
+
+85
+00:04:00,420 --> 00:04:02,450
+Những thứ khác là, lưu ý những gì xảy ra.
+
+86
+00:04:02,450 --> 00:04:04,790
+Chúng tiệm cận mô hình tích lũy.
+
+87
+00:04:04,790 --> 00:04:09,580
+Chúng ít giao động hơn khi tôi tăng số giai đoạn.
+
+88
+00:04:09,580 --> 00:04:13,440
+Nên khi M lớn hơn, tôi có ít giao động hơn.
+
+89
+00:04:13,440 --> 00:04:16,680
+Còn với mô hình mộc, cơ bản tương đương với gì?
+
+90
+00:04:16,680 --> 00:04:18,630
+M bằng 1.
+
+91
+00:04:18,630 --> 00:04:21,510
+Nên tại M bằng 1, nó rất hay thay đổi.
+
+92
+00:04:21,510 --> 00:04:26,136
+Khi M tiệm cận nó, nó bắt đầu trở nên rất ít giao động.
+
+93
+00:04:26,136 --> 00:04:27,980
+Nên đó là lý do tại sao đó là một sự đánh đổi.
+
+94
+00:04:27,980 --> 00:04:30,570
+Và thực tế, nó thực sự chỉ là một sự khái quát hóa.
+
+95
+00:04:30,570 --> 00:04:33,570
+Nếu tôi cho M bằng với t vào, tất cả dữ liệu,
+
+96
+00:04:33,570 --> 00:04:35,720
+tôi sẽ có mô hình tích lũy.
+
+97
+00:04:35,720 --> 00:04:39,930
+Nếu tôi cho M bằng với 1 vào, tôi sẽ có mô hình mộc.
+
+98
+00:04:39,930 --> 00:04:42,680
+Vậy đó là thứ gì đó ở giữa thỏa hiệp.
+
+99
+00:04:42,680 --> 00:04:44,230
+Nhưng bạn có thể vẽ mô hình một trong hai
+
+100
+00:04:44,230 --> 00:04:49,040
+bằng cách chọn M thích hợp.
+Vậy M nên lớn cỡ nào?
+
+101
+00:04:49,040 --> 00:04:51,110
+Nếu nó quá nhỏ thì bạn sẽ
+
+102
+00:04:51,110 --> 00:04:52,910
+phản ứng thái quá với sự giao động.
+
+103
+00:04:52,910 --> 00:04:54,243
+Bạn sẽ rất lo lắng.
+
+104
+00:04:54,243 --> 00:04:57,630
+Bạn sẽ có dự báo rất hay thay đổi đó,
+
+105
+00:04:57,630 --> 00:04:58,230
+dự báo mộc.
+
+106
+00:04:58,230 --> 00:05:00,710
+Còn nếu nó quá lớn, bạn sẽ bỏ sót những bước thay đổi.
+
+107
+00:05:00,710 --> 00:05:03,050
+Bạn sẽ tính trung bình tất cả các giao động đó.
+
+108
+00:05:03,050 --> 00:05:05,690
+Nên sẽ không có ai chỉ luôn sử dụng
+
+109
+00:05:05,690 --> 00:05:09,020
+giá trị M này. Người ta thường sử dụng giá trị thực tế.
+
+110
+00:05:09,020 --> 00:05:11,460
+Nếu tôi đang nhìn vào dự báo các tháng,
+
+111
+00:05:11,460 --> 00:05:14,920
+tôi có thể thực hiện cho sáu, dôi khi là ba.
+
+112
+00:05:14,920 --> 00:05:16,590
+Vậy là bạn đang tính trung bình theo quý.
+
+113
+00:05:16,590 --> 00:05:18,620
+Hoặc nếu đó là một khoảng thời gian dài,
+bạn có thể tính trung bình động
+
+114
+00:05:18,620 --> 00:05:20,760
+theo 12 tháng.
+
+115
+00:05:20,760 --> 00:05:21,780
+Nên nó còn tùy thuộc.
+
+116
+00:05:21,780 --> 00:05:24,030
+Bạn muốn xem mục đích là gì.
+
+117
+00:05:24,030 --> 00:05:26,390
+Nếu mục đích là để xem xu hướng dài hạn,
+
+118
+00:05:26,390 --> 00:05:28,677
+bạn có thể lấy M dài hơn.
+
+119
+00:05:28,677 --> 00:05:31,260
+Nếu là cho mục đích khác, bạn có thể muốn rút ngắn lại.
+
+120
+00:05:31,260 --> 00:05:34,470
+Nhưng không có nguyên tắc cứng nhắc nào đối với M.
+
+121
+00:05:34,470 --> 00:05:37,150
+Không có giá trị tùy ý.
+
+122
+00:05:37,150 --> 00:05:39,450
+Hai ý, mặc dù ý chính tôi muốn nói
+
+123
+00:05:39,450 --> 00:05:41,360
+trước khi chúng ta tiếp tục đó là
+
+124
+00:05:41,360 --> 00:05:44,170
+lưu ý rằng mô hình trung bình động này sẽ luôn
+
+125
+00:05:44,170 --> 00:05:46,350
+trì hoãn thay đổi.
+
+126
+00:05:46,350 --> 00:05:47,560
+Và đó là vì hai lý do.
+
+127
+00:05:47,560 --> 00:05:49,230
+Lý do thứ nhất là chúng ta vẫn đang giả sử rằng
+
+128
+00:05:49,230 --> 00:05:51,220
+đó là cầu tĩnh (cầu không thay đổi).
+
+129
+00:05:51,220 --> 00:05:54,450
+Nhớ rằng chúng ta vẫn đang giả sử mô hình này,
+
+130
+00:05:54,450 --> 00:05:59,690
+dự báo này sẽ bằng với một mức cân bằng
+cộng với một biến động nào đó.
+
+131
+00:05:59,690 --> 00:06:01,190
+Vậy nên tôi đang giả sử mức cân bằng này.
+
+132
+00:06:01,190 --> 00:06:03,970
+Nếu điều gì đó xảy ra, một xu hướng hay một bước thay đổi,
+
+133
+00:06:03,970 --> 00:06:06,020
+nếu điều gì đó di chuyển thì tôi sẽ bỏ lỡ điều đó,
+
+134
+00:06:06,020 --> 00:06:08,010
+vì tôi đang giả sử là cầu không thay đổi.
+
+135
+00:06:08,010 --> 00:06:11,330
+Tôi sẽ giả sử rằng đó chỉ là biến động nào đó.
+
+136
+00:06:11,330 --> 00:06:14,740
+Và M càng lớn thì độ trễ càng dài,
+
+137
+00:06:14,740 --> 00:06:17,880
+và sẽ mất nhiều thời gian hơn để thay dổi, bước thay đổi,
+
+138
+00:06:17,880 --> 00:06:19,330
+hay xu hướng đó xuất hiện.
+
+139
+00:06:19,330 --> 00:06:20,860
+Và chúng ta sẽ nói kỹ hơn về điều này.
+
+140
+00:06:20,860 --> 00:06:23,050
+Và đây cũng là một hàm số
+
+141
+00:06:23,050 --> 00:06:25,470
+vì chúng ta có được cầu không thay đổi đó.
+

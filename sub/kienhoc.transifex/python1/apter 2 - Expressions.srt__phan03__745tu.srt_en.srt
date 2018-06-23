@@ -1,0 +1,452 @@
+191
+00:08:46,500 --> 00:08:48,030
+https://youtu.be/IXXHH6ztsSA
+does over 1 minus
+x, which gives you
+
+192
+00:08:48,030 --> 00:08:51,860
+0.4, then it multiplies
+these three things together,
+
+193
+00:08:51,860 --> 00:08:53,540
+giving 0.93.
+
+194
+00:08:53,540 --> 00:08:58,490
+And then what it is all
+done with all of that,
+
+195
+00:08:58,490 --> 00:09:03,615
+it takes that 0.93, and
+then puts it back into x.
+
+196
+00:09:03,615 --> 00:09:05,240
+And so this is just
+sort of emphasizing
+
+197
+00:09:05,240 --> 00:09:09,580
+how the right-hand side is
+computed to produce a value,
+
+198
+00:09:09,580 --> 00:09:13,040
+then it is moved
+into the variable.
+
+199
+00:09:13,040 --> 00:09:15,990
+And that is why you can
+have x on both sides.
+
+200
+00:09:15,990 --> 00:09:20,690
+Because this is like the
+old, and this is the new.
+
+201
+00:09:20,690 --> 00:09:23,520
+The old x participates
+in the calculation.
+
+202
+00:09:23,520 --> 00:09:27,445
+And then when the calculation
+is done, it becomes the new x.
+
+203
+00:09:27,445 --> 00:09:29,580
+I hope that makes sense.
+
+204
+00:09:29,580 --> 00:09:33,070
+So this on the right-hand side
+here is a numeric expression.
+
+205
+00:09:33,070 --> 00:09:35,590
+So we have a number of
+different operators.
+
+206
+00:09:35,590 --> 00:09:39,160
+Some of them are instinctive,
+intuitive, the plus
+
+207
+00:09:39,160 --> 00:09:40,260
+and the minus.
+
+208
+00:09:40,260 --> 00:09:43,320
+The reason some of these are
+so weird is in really old days,
+
+209
+00:09:43,320 --> 00:09:45,920
+we didn't have too many
+things on the keyboard.
+
+210
+00:09:45,920 --> 00:09:48,054
+And a lot of programs
+are very mathematical.
+
+211
+00:09:48,054 --> 00:09:50,720
+And so they figured out what was
+on the keyboard of the computer
+
+212
+00:09:50,720 --> 00:09:52,710
+equipment of the
+day, and then they
+
+213
+00:09:52,710 --> 00:09:55,080
+had to fake certain things.
+
+214
+00:09:55,080 --> 00:09:58,710
+So it turns out that plus and
+minus were on the keyboard.
+
+215
+00:09:58,710 --> 00:10:01,500
+And so plus and minus are
+addition and subtraction
+
+216
+00:10:01,500 --> 00:10:02,620
+respectively.
+
+217
+00:10:02,620 --> 00:10:06,570
+There was no kind of times
+operator for multiplication.
+
+218
+00:10:06,570 --> 00:10:08,460
+And dot was used
+for decimal point.
+
+219
+00:10:08,460 --> 00:10:10,470
+So they used asterisks
+for multiplication.
+
+220
+00:10:10,470 --> 00:10:14,530
+So in computers, languages,
+nearly all of them,
+
+221
+00:10:14,530 --> 00:10:17,770
+they basically use a
+times for multiplication.
+
+222
+00:10:17,770 --> 00:10:19,860
+Slash is used for division.
+
+223
+00:10:19,860 --> 00:10:24,820
+So we say like 8/2,
+which is 8 divided by 2.
+
+224
+00:10:24,820 --> 00:10:28,700
+Raising something to the
+power, like 4 squared,
+
+225
+00:10:28,700 --> 00:10:32,260
+that is double asterisk.
+
+226
+00:10:32,260 --> 00:10:38,140
+And then remainder is if
+you do a division that
+
+227
+00:10:38,140 --> 00:10:40,540
+gives you the remainder
+rather than divisor.
+
+228
+00:10:40,540 --> 00:10:44,300
+So 8 over 2 is 4, remainder 0.
+
+229
+00:10:44,300 --> 00:10:48,006
+So the remainder is what you get
+with this particular operator.
+
+230
+00:10:48,006 --> 00:10:49,380
+There's a few cool
+things that we
+
+231
+00:10:49,380 --> 00:10:52,640
+can do with remainder that we
+won't talk about right away.
+
+232
+00:10:52,640 --> 00:10:54,670
+But it's there.
+
+233
+00:10:54,670 --> 00:10:59,130
+And so here's just a couple
+of sample expressions.
+
+234
+00:10:59,130 --> 00:11:01,976
+I
+
+235
+00:11:01,976 --> 00:11:05,000
+Let's give me green, OK.
+
+236
+00:11:05,000 --> 00:11:06,760
+So again, I'm using
+a Python interpreter.
+
+237
+00:11:06,760 --> 00:11:08,360
+So this is just the prompt.
+
+238
+00:11:08,360 --> 00:11:10,790
+The chevrons are the prompt.
+
+239
+00:11:10,790 --> 00:11:13,700
+Create the variable
+xx, and assign it to 2.
+
+240
+00:11:13,700 --> 00:11:16,550
+Retrieve the old
+value in an addition.
+
+241
+00:11:16,550 --> 00:11:20,680
+Then print it out and put it
+back into xx, so xx has 4.
+
+242
+00:11:20,680 --> 00:11:22,630
+yy, this is a multiplication.
+
+243
+00:11:22,630 --> 00:11:26,250
+440 times 12 is 5,280.
+
+244
+00:11:26,250 --> 00:11:30,500
+yy over 1,000, this is
+little counterintuitive.
+
+245
+00:11:30,500 --> 00:11:33,350
+Because yy is an
+integer, it then
+
+246
+00:11:33,350 --> 00:11:35,180
+does it in a truncated division.
+
+247
+00:11:35,180 --> 00:11:41,340
+So 5,280 divided by 1,000 is 5.
+
+248
+00:11:41,340 --> 00:11:44,230
+And so that's an
+integer division.
+
+249
+00:11:44,230 --> 00:11:48,010
+We'll see in a second about
+floating point division.
+
+250
+00:11:48,010 --> 00:11:51,550
+Now we take the variable
+jj and we set it to 23.
+
+251
+00:11:51,550 --> 00:11:54,980
+And now we're going to use
+the modulo or remainder
+
+252
+00:11:54,980 --> 00:11:59,280
+operator to say what
+is the remainder when
+
+253
+00:11:59,280 --> 00:12:01,694
+we divide this jj by 5.
+
+254
+00:12:01,694 --> 00:12:03,110
+And so if you think
+about this, we
+
+255
+00:12:03,110 --> 00:12:06,920
+take old long division, 23
+divided by 5, you end up
+
+256
+00:12:06,920 --> 00:12:10,620
+with 4, and then remainder 3.
+
+257
+00:12:10,620 --> 00:12:13,590
+The modulo operator, or the
+percent, or the remainder
+
+258
+00:12:13,590 --> 00:12:16,110
+operator, gives us
+back this number.
+
+259
+00:12:16,110 --> 00:12:19,420
+And so that's why kk is 3.
+
+260
+00:12:19,420 --> 00:12:22,630
+It is the remainder
+of 23 when divided
+
+261
+00:12:22,630 --> 00:12:27,140
+by 5 or the remainder of
+the division of 5 and 23.
+
+262
+00:12:27,140 --> 00:12:34,770
+And the raising to the
+power 4 cubed is 4**3.
+
+263
+00:12:34,770 --> 00:12:37,480
+And so that end up being 64.
+
+264
+00:12:37,480 --> 00:12:39,950
+So that's just operations.
+
+265
+00:12:39,950 --> 00:12:43,520
+Now just like in
+algebra and mathematics,
+
+266
+00:12:43,520 --> 00:12:49,670
+we have rules about which
+operations happen first.
+
+267
+00:12:49,670 --> 00:12:51,920
+In general, things
+like the power
+
+268
+00:12:51,920 --> 00:12:54,120
+happens before the
+multiplication and division,
+
+269
+00:12:54,120 --> 00:12:56,500
+and then the addition
+and subtraction happen.
+
+270
+00:12:56,500 --> 00:13:00,070
+So there are some rules when
+you're looking at an expression
+
+271
+00:13:00,070 --> 00:13:02,490
+and trying to calculate
+what its value is.
+
+272
+00:13:02,490 --> 00:13:05,930
+If you don't have parentheses,
+it follows these rules.
+
+273
+00:13:05,930 --> 00:13:11,350
+And so the rule that sort
+of trumps all the rules
+
+274
+00:13:11,350 --> 00:13:14,390
+is that parentheses
+are always respected.
+
+275
+00:13:14,390 --> 00:13:18,360
+So a lot of us just write these
+with parentheses in place, even
+
+276
+00:13:18,360 --> 00:13:21,100
+sometimes, though,
+you don't need it.
+
+277
+00:13:21,100 --> 00:13:23,030
+Then after parentheses
+have been handled,
+
+278
+00:13:23,030 --> 00:13:24,950
+then it does exponentiation.
+
+279
+00:13:24,950 --> 00:13:28,340
+Then it does multiplication,
+division, and remainder.
+
+280
+00:13:28,340 --> 00:13:30,150
+And then it does
+addition and subtraction.
+
+281
+00:13:30,150 --> 00:13:34,110
+And then, all else being equal,
+it just works left to right.
+
+282
+00:13:34,110 --> 00:13:37,930
+So let's look
+through an example.
+
+283
+00:13:37,930 --> 00:13:46,040
+So here is a calculation
+that is 1 plus 2 times 3
+
+284
+00:13:46,040 --> 00:13:47,450
+divided by 4 over 5.
+
+285
+00:13:47,450 --> 00:13:50,340
+And the question is what
+order does this happen?
+

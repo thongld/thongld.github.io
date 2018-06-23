@@ -1,0 +1,220 @@
+1
+00:00:00,179 --> 00:00:02,170
+Xin chào các bạn! Chào mừng quay trở lại.
+
+2
+00:00:02,170 --> 00:00:09,170
+Khác những video trước, trong video này
+chúng ta sẽ không tập trung vào biểu đồ
+
+3
+00:00:09,170 --> 00:00:14,290
+mà sẽ tập trung vào bảng. Ở đây ta thấy
+một bảng báo cáo lãi lỗ hoàn chỉnh.
+
+4
+00:00:14,290 --> 00:00:19,590
+Mới nhìn bạn có thể nghĩ: "Ồ, cái này dễ mà.
+
+5
+00:00:19,590 --> 00:00:22,750
+Chỉ cần tạo bảng trong Excel, copy,
+dán, thế là xong."
+
+6
+00:00:22,750 --> 00:00:30,779
+Nhưng dashboard của ta được thiết kế có lưới đường kẻ.
+Và tôi đảm bảo với các bạn, lưới đường kẻ ấy
+
+7
+00:00:30,779 --> 00:00:34,720
+sẽ không khớp với vị trí các cột trong bảng này.
+
+8
+00:00:34,720 --> 00:00:38,880
+Tuy nhiên ta vẫn muốn cho nó vào.
+Các bạn có thể thấy lưới đường kẻ 
+
+9
+00:00:38,880 --> 00:00:44,500
+nằm sau bảng, nhìn nó rất lộn xộn.
+Vậy ta có một giải pháp cho việc này.
+
+10
+00:00:44,500 --> 00:00:47,590
+Tôi sẽ cho các bạn xem giải pháp ấy trên Excel.
+
+11
+00:00:47,590 --> 00:00:52,579
+Bảng của chúng ta ở đây. Nếu bạn 
+tự nhìn vào file bạn sẽ thấy
+
+12
+00:00:52,579 --> 00:00:59,090
+ta lấy tất cả các thông tin này với hàm SUMIF ra sao.
+
+13
+00:00:59,090 --> 00:01:04,250
+Tuy nhiên việc ta cần làm là copy 
+những dữ liệu này sang dashboard.
+
+14
+00:01:04,250 --> 00:01:13,659
+Ta bắt đầu như sau. Tôi sẽ chọn tất cả
+các dữ liệu tôi cần,
+
+15
+00:01:13,659 --> 00:01:25,930
+ấn "ctrl+c" là dữ liệu đã được copy.
+Tôi sang dashboard, đặt con trỏ chuột
+
+16
+00:01:25,930 --> 00:01:28,880
+ở đúng vị trí. Tôi muốn dán bảng vào ô này.
+
+17
+00:01:28,880 --> 00:01:32,630
+Nhưng các bạn có thể tưởng tượng nếu tôi dán vào...
+
+18
+00:01:32,630 --> 00:01:39,700
+Hãy cứ dán đi, các bạn sẽ thấy nó sẽ thành
+một đống lộn xộn.
+
+19
+00:01:39,700 --> 00:01:45,189
+Ta không muốn làm thế. Ta ấn "ctrl+z" để hoàn tác.
+
+20
+00:01:45,189 --> 00:01:51,900
+Ta sẽ chọn ô này, và thay vì dán thông thường
+
+21
+00:01:51,900 --> 00:02:01,079
+tôi sẽ dán dữ liệu dưới dạng "tranh liên kết".
+Đây là một tính năng rất hay.
+
+22
+00:02:01,079 --> 00:02:05,079
+Trong các phiên bản trước của Excel
+tính năng này được giấu rất kỹ.
+
+23
+00:02:05,079 --> 00:02:09,109
+Nó được gọi là "cameral tool". Nhưng giờ
+nó đã nằm ở menu "paste special".
+
+24
+00:02:09,109 --> 00:02:15,870
+Ta chọn option "linked picture".
+Tính năng này rất hay ở chỗ...
+
+25
+00:02:15,870 --> 00:02:23,230
+Được rồi. Các dữ liệu tồn tại dưới dạng
+một bức tranh, nếu muốn ta có thể
+
+26
+00:02:23,230 --> 00:02:28,219
+xoay nó đi, nhưng nó vẫn liên kết với dữ liệu.
+
+27
+00:02:28,219 --> 00:02:33,239
+Vậy nếu tôi biến đổi dữ liệu...Hãy làm thế nhé.
+Tôi không thích các giá trị âm màu đen,
+
+28
+00:02:33,239 --> 00:02:37,909
+nên để là màu đỏ. Vậy ta sẽ thay đổi màu.
+
+29
+00:02:37,909 --> 00:02:49,959
+Ở đây tôi sẽ chọn tất cả các giá trị là chữ số.
+
+30
+00:02:49,959 --> 00:02:59,299
+Phím tắt "ctrl+1" sẽ đưa ta đến các thuộc tính của ô.
+
+31
+00:02:59,299 --> 00:03:11,150
+Lúc này tôi muốn chọn định dạng này.
+
+32
+00:03:11,150 --> 00:03:18,919
+Nhưng giờ các con số lại quá to, vậy 
+ta sẽ phải căn chỉnh một chút bằng cách
+
+33
+00:03:18,919 --> 00:03:27,680
+chỉnh các số này về phần nghìn. Chữ "red"
+đằng sau dấu ; tức là
+
+34
+00:03:27,680 --> 00:03:30,829
+nếu giá trị là âm thì nó sẽ có màu đỏ.
+
+35
+00:03:30,829 --> 00:03:37,839
+Vậy nếu tôi làm thế và quay lại dashboard,
+sự thay đổi cũng sẽ được phản ánh 
+
+36
+00:03:37,839 --> 00:03:50,040
+trong bức tranh liên kết được xoay nghiêng hài hước kia.
+Để xem ta có xoay nó về thẳng được không.
+
+37
+00:03:50,040 --> 00:03:54,799
+Được rồi. Giờ ta phải căn chỉnh định dạng một chút.
+
+38
+00:03:54,799 --> 00:04:00,459
+Ở đây tôi lại dùng phím "alt" để đảm bảo
+
+39
+00:04:00,459 --> 00:04:09,040
+bức tranh sẽ giữ nguyên lưới đường kẻ 
+khi di chuyển. Tôi sẽ ăn gian một chút.
+
+40
+00:04:09,040 --> 00:04:14,779
+Vậy ta đã nhập xong dữ liệu. Bức tranh này
+được liên kết, vì vậy nếu có bất kỳ con số nào
+
+41
+00:04:14,779 --> 00:04:21,189
+thay đổi thì bảng này cũng thay đổi.
+Giờ ta nên xóa các tiêu đề cho sẵn này đi.
+
+42
+00:04:21,189 --> 00:04:25,620
+Ta sẽ xóa tiêu đề của biểu đồ, chân biểu đồ,
+
+43
+00:04:25,620 --> 00:04:36,860
+tiêu đề biểu đồ, chân biểu đồ. Cả tiêu đề miền nữa.
+
+44
+00:04:36,860 --> 00:04:42,669
+Phần còn lại sẽ được xóa sau. 
+Ở đây ta đã làm xong bảng.
+
+45
+00:04:42,669 --> 00:04:46,400
+Vừa rồi ta đã học về một dạng khác,
+không phải biểu đồ mà là bảng.
+
+46
+00:04:46,400 --> 00:04:51,259
+Cùng xem trong video tới sẽ nói về chủ đề gì nhé.
+
+47
+00:04:51,259 --> 00:04:56,569
+Chúng ta sẽ làm việc với một tính năng 
+mà các bạn đã xem trong các bài giảng trước,
+
+48
+00:04:56,569 --> 00:04:58,250
+đó là biểu đồ thu nhỏ sparkline.
+Hẹn gặp lại các bạn!
+

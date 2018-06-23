@@ -1,0 +1,439 @@
+377
+00:17:24,730 --> 00:17:27,220
+https://youtu.be/UR6a_wZ8ido
+you can think of this
+as pushing outward.
+
+378
+00:17:27,220 --> 00:17:31,230
+So if we look at a line
+here that has from colon
+
+379
+00:17:31,230 --> 00:17:36,520
+using the colon character,
+it will try to expand.
+
+380
+00:17:36,520 --> 00:17:41,569
+So it certainly has to match the
+F. And it's looking for a colon
+
+381
+00:17:41,569 --> 00:17:42,610
+any number of characters.
+
+382
+00:17:42,610 --> 00:17:44,235
+But it's trying to
+make the string that
+
+383
+00:17:44,235 --> 00:17:46,960
+matches as big as possible.
+
+384
+00:17:46,960 --> 00:17:50,489
+So it skips over this colon
+and goes to that colon.
+
+385
+00:17:50,489 --> 00:17:52,030
+And so the thing
+that we get is here.
+
+386
+00:17:52,030 --> 00:17:55,620
+And so it ignored this and said,
+I will make as large a string
+
+387
+00:17:55,620 --> 00:17:57,220
+as I can.
+
+388
+00:17:57,220 --> 00:17:59,520
+So that's the plus
+that's doing it.
+
+389
+00:17:59,520 --> 00:18:02,625
+Dot plus pushes.
+
+390
+00:18:02,625 --> 00:18:06,720
+It's like, I got a colon, but is
+there another colon out there?
+
+391
+00:18:06,720 --> 00:18:08,130
+So push it.
+
+392
+00:18:08,130 --> 00:18:10,980
+OK, so that's a greedy matching.
+
+393
+00:18:10,980 --> 00:18:15,510
+It can get you in some trouble
+like being greedy in general.
+
+394
+00:18:15,510 --> 00:18:18,890
+And both asterisk and plus
+sort of behave in a greedy way
+
+395
+00:18:18,890 --> 00:18:21,600
+because they're zero or more
+or one or more characters.
+
+396
+00:18:21,600 --> 00:18:23,920
+So they can sort
+of push outward.
+
+397
+00:18:23,920 --> 00:18:28,044
+OK, now you can turn this off.
+
+398
+00:18:28,044 --> 00:18:29,210
+It's a programming language.
+
+399
+00:18:29,210 --> 00:18:31,790
+We can tweak it, OK?
+
+400
+00:18:31,790 --> 00:18:35,780
+And so we add a question mark.
+
+401
+00:18:35,780 --> 00:18:38,460
+So this is a three
+character sequence now.
+
+402
+00:18:38,460 --> 00:18:43,400
+So if you say dot plus question
+mark, that says one or more
+
+403
+00:18:43,400 --> 00:18:47,010
+of any characters
+push-- but instead
+
+404
+00:18:47,010 --> 00:18:50,130
+of being greedy and
+pushing as far as you can,
+
+405
+00:18:50,130 --> 00:18:52,760
+this means stop at the first.
+
+406
+00:18:52,760 --> 00:18:57,490
+Stop at the first.
+
+407
+00:18:57,490 --> 00:18:59,540
+Oops-- stop at the first.
+
+408
+00:18:59,540 --> 00:19:01,820
+I can never draw on
+this thing fast enough.
+
+409
+00:19:01,820 --> 00:19:04,010
+Stop at the first, OK?
+
+410
+00:19:04,010 --> 00:19:04,620
+And that's it.
+
+411
+00:19:04,620 --> 00:19:05,640
+Just don't be greedy.
+
+412
+00:19:05,640 --> 00:19:08,290
+Don't try to make the
+string as large as possible.
+
+413
+00:19:08,290 --> 00:19:11,140
+Go with the smaller one--
+the smaller possible one.
+
+414
+00:19:11,140 --> 00:19:14,400
+We still need to find an F and
+we still need to find a colon.
+
+415
+00:19:14,400 --> 00:19:16,620
+But when you find the
+first colon, stop.
+
+416
+00:19:16,620 --> 00:19:18,640
+And so what this does
+is this changes it
+
+417
+00:19:18,640 --> 00:19:20,890
+so that what we
+match is from colon
+
+418
+00:19:20,890 --> 00:19:22,720
+instead of going all the way.
+
+419
+00:19:22,720 --> 00:19:25,950
+So the greedy match
+pushes as far as it can.
+
+420
+00:19:25,950 --> 00:19:28,220
+The non greedy
+match is satisfied
+
+421
+00:19:28,220 --> 00:19:32,810
+with the first thing that meets
+the criterion of the string.
+
+422
+00:19:32,810 --> 00:19:34,880
+So this is a little three
+character programming
+
+423
+00:19:34,880 --> 00:19:38,890
+sequence-- any character one
+or more times and not greedy.
+
+424
+00:19:38,890 --> 00:19:48,470
+
+425
+00:19:48,470 --> 00:19:51,130
+If, for example, we were trying
+to solve the problem of pulling
+
+426
+00:19:51,130 --> 00:19:57,290
+the email address
+out of a string,
+
+427
+00:19:57,290 --> 00:20:00,860
+we can make good use of
+this non blank character.
+
+428
+00:20:00,860 --> 00:20:04,220
+And so the at sign
+is just a character.
+
+429
+00:20:04,220 --> 00:20:07,200
+And then we can say,
+I want at least one
+
+430
+00:20:07,200 --> 00:20:09,450
+non blank character
+before it and at least
+
+431
+00:20:09,450 --> 00:20:11,470
+one non blank
+character after it.
+
+432
+00:20:11,470 --> 00:20:14,070
+So the way regular
+expressions does, it says, OK.
+
+433
+00:20:14,070 --> 00:20:19,434
+I find my at sign and I push
+in a greedy manner outwards
+
+434
+00:20:19,434 --> 00:20:21,100
+as long as they're
+non blank characters.
+
+435
+00:20:21,100 --> 00:20:24,130
+Push, push, push, push, push,
+push, push, whoops, stop.
+
+436
+00:20:24,130 --> 00:20:26,590
+Push, push, push,
+push, push, stop.
+
+437
+00:20:26,590 --> 00:20:31,100
+OK, so it's some number of non
+blank characters, an at sign,
+
+438
+00:20:31,100 --> 00:20:33,100
+followed by some number
+of non blank characters.
+
+439
+00:20:33,100 --> 00:20:37,020
+So that's using greedy matching.
+
+440
+00:20:37,020 --> 00:20:38,620
+Its doing that, OK?
+
+441
+00:20:38,620 --> 00:20:41,720
+And so this is where we
+get Stephen Marquard.
+
+442
+00:20:41,720 --> 00:20:45,114
+And we would know if it wasn't
+there by the empty list, right?
+
+443
+00:20:45,114 --> 00:20:46,780
+And so we get
+stephenmarquard@uct.ac.za.
+
+444
+00:20:46,780 --> 00:20:53,080
+
+445
+00:20:53,080 --> 00:20:59,360
+Now, we can also fine tune
+what we extract, right?
+
+446
+00:20:59,360 --> 00:21:02,570
+In the previous
+slide, we extracted
+
+447
+00:21:02,570 --> 00:21:06,090
+whatever matched, right?
+
+448
+00:21:06,090 --> 00:21:09,330
+Whatever this matched, it
+looked across the whole string
+
+449
+00:21:09,330 --> 00:21:09,940
+and found it.
+
+450
+00:21:09,940 --> 00:21:12,380
+It found the thing,
+shoved it over,
+
+451
+00:21:12,380 --> 00:21:14,650
+and gave us what it matched.
+
+452
+00:21:14,650 --> 00:21:17,650
+But it's possible to
+make the match larger
+
+453
+00:21:17,650 --> 00:21:20,460
+than what's extracted to
+extract a subset of the match.
+
+454
+00:21:20,460 --> 00:21:23,800
+And we'll see that on
+this next slide OK?
+
+455
+00:21:23,800 --> 00:21:29,630
+So here's this same
+thing, which is an at
+
+456
+00:21:29,630 --> 00:21:32,080
+and then with non blank
+characters as far as the eye
+
+457
+00:21:32,080 --> 00:21:33,910
+can see in either direction.
+
+458
+00:21:33,910 --> 00:21:38,910
+But I'm going to add
+to it caret from space.
+
+459
+00:21:38,910 --> 00:21:42,940
+So this has to start with--
+the first character is
+
+460
+00:21:42,940 --> 00:21:44,559
+to be a caret.
+
+461
+00:21:44,559 --> 00:21:45,850
+It's got to have the word from.
+
+462
+00:21:45,850 --> 00:21:47,720
+It's got to have one space.
+
+463
+00:21:47,720 --> 00:21:50,600
+And then immediately, it's
+got to find this, right?
+
+464
+00:21:50,600 --> 00:21:53,110
+It's got to find a series
+of non blanks followed
+
+465
+00:21:53,110 --> 00:21:55,590
+by an and sign followed
+by another series of one
+
+466
+00:21:55,590 --> 00:21:57,120
+or more non blanks.
+
+467
+00:21:57,120 --> 00:21:59,700
+And then what we
+do-- so if we didn't
+
+468
+00:21:59,700 --> 00:22:02,230
+put these parentheses
+in, it would match
+
+469
+00:22:02,230 --> 00:22:03,910
+and we would get
+all of this data.
+
+470
+00:22:03,910 --> 00:22:05,916
+It would go to here.
+

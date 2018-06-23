@@ -1,0 +1,245 @@
+1
+00:00:08,810 --> 00:00:11,524
+dungpham12002 08.07.2016 Thao reviewed
+Giờ ta sẽ tìm hiểu một chút thuật ngữ liên quan
+
+2
+00:00:11,524 --> 00:00:13,221
+đến lập trình hướng đối tượng.
+
+3
+00:00:13,221 --> 00:00:14,650
+Có 2 cách để các bạn học thuật ngữ.
+
+4
+00:00:14,650 --> 00:00:16,983
+Một là để tôi có thể viết câu hỏi
+kiểm tra về các thuật ngữ.
+
+5
+00:00:16,983 --> 00:00:19,615
+Và hai là sau này, tôi có thể sử dụng các thuật ngữ
+
+6
+00:00:19,615 --> 00:00:21,186
+và mặc định là các bạn tự hiểu.
+
+7
+00:00:21,186 --> 00:00:26,387
+Đây là một số từ được sử dụng rất nhiều
+trong lập trình hướng đối tượng.
+
+8
+00:00:26,387 --> 00:00:29,625
+Đầu tiên là lớp (class). Nó giống
+như một khuôn mẫu vậy.
+
+9
+00:00:29,625 --> 00:00:32,145
+Tôi thích so sánh nó với
+cái khuôn cắt bánh quy.
+
+10
+00:00:32,145 --> 00:00:36,154
+Một cái khuôn không phải là cái bánh quy,
+nhưng nếu bạn có bột,
+
+11
+00:00:36,154 --> 00:00:40,562
+bạn có thể làm được rất nhiều bánh quy
+mà đều dựa trên mẫu đó.
+
+12
+00:00:40,562 --> 00:00:43,046
+Vậy đó là thuật ngữ đầu tiên.
+
+13
+00:00:43,046 --> 00:00:48,363
+Trong một lớp có phần code, tức năng lực
+của nó, nhưng giống hàm nhiều hơn.
+
+14
+00:00:48,363 --> 00:00:49,778
+Ta gọi đó là phương thức (method).
+
+15
+00:00:49,778 --> 00:00:53,749
+Có người gọi nó là thông điệp (message),
+2 cách gọi này là tương đương.
+
+16
+00:00:53,749 --> 00:00:57,720
+Bạn có thể 'gọi một phương thức trong lớp'
+hay 'gửi một thông điệp đến lớp'. 
+
+17
+00:00:57,720 --> 00:01:01,468
+Khi bạn làm vậy, bạn sẽ kích hoạt
+một đoạn code nhỏ
+
+18
+00:01:01,468 --> 00:01:03,408
+trong lớp đó, cũng giống như
+là làm một con chó sủa.
+
+19
+00:01:03,408 --> 00:01:06,684
+Ví dụ như bạn có đoạn code mà
+sẽ khiến một tiếng sủa nhỏ
+
+20
+00:01:06,684 --> 00:01:08,040
+phát ra từ loa của mình vậy.
+
+21
+00:01:08,040 --> 00:01:09,970
+Sau đó sẽ có code trong dữ liệu,
+
+22
+00:01:09,970 --> 00:01:12,911
+và phương thức sẽ giúp ta
+truy cập được code trong đối tượng.
+
+23
+00:01:12,911 --> 00:01:15,176
+Tiếp theo, dữ liệu giống như một trường (field)
+hoặc thuộc tính (attribute),
+
+24
+00:01:15,176 --> 00:01:18,309
+thực ra nó là một biến
+nằm trong lớp.
+
+25
+00:01:18,309 --> 00:01:23,227
+Rồi ta đến đối tượng (object) mà ta sẽ
+sử dụng, còn gọi là thực thể (instance).
+
+26
+00:01:23,227 --> 00:01:25,356
+Trong ví dụ về khuôn cắt bánh quy,
+
+27
+00:01:25,356 --> 00:01:30,198
+lớp là cách bạn làm bánh quy,
+nhưng cái bánh quy thì chính là thực thể.
+
+28
+00:01:30,198 --> 00:01:34,179
+Và ta có thể có rất rất nhiều
+cái bánh quy, đúng vậy không?
+
+29
+00:01:34,179 --> 00:01:36,826
+Vậy lớp sẽ mô tả
+những đặc tính trừu tượng,
+
+30
+00:01:36,826 --> 00:01:40,312
+bao gồm tất cả các phương thức - 
+là tất cả dữ liệu,
+
+31
+00:01:40,312 --> 00:01:41,889
+tất cả phần code nằm trong đó.
+
+32
+00:01:41,889 --> 00:01:46,497
+Bạn có thể nghĩ về lớp như là một
+bản vẽ kỹ thuật hay một nhà máy sản xuất
+
+33
+00:01:46,497 --> 00:01:50,374
+một vật nào đó, chứ không phải
+sản phẩm từ nhà máy.
+
+34
+00:01:50,374 --> 00:01:53,394
+Nó cũng giống như một mẫu
+so sánh với chính vật thể vậy.
+
+35
+00:01:53,394 --> 00:01:57,538
+Đó là thứ ta cần thấy có ở mọi đối tượng.
+
+36
+00:01:57,538 --> 00:02:01,825
+Ví dụ khi ta nhìn vào phần tài liệu về chuỗi,
+ta thấy có phương thức startswith,
+
+37
+00:02:01,825 --> 00:02:06,778
+có nghĩa là tất cả các chuỗi kí tự
+đều có phương thức startswith.
+
+38
+00:02:06,778 --> 00:02:11,126
+Điều đó không có nghĩa là lớp
+sẽ định rõ những thứ gì nên có,
+
+39
+00:02:11,126 --> 00:02:12,723
+nhưng nó không phải là bản thân thứ ấy.
+
+40
+00:02:12,723 --> 00:02:16,089
+Thực thể chính là biến
+mà ta sẽ sử dụng.
+
+41
+00:02:16,089 --> 00:02:21,350
+Giả sử trong chương trình ta viết,
+ta có thể có 40 biến đều là các chuỗi kí tự,
+
+42
+00:02:21,350 --> 00:02:22,786
+điều đó hoàn toàn bình thường.
+
+43
+00:02:22,786 --> 00:02:26,364
+Vậy tức là 40 thực thể của đối tượng chuỗi.
+
+44
+00:02:26,364 --> 00:02:30,250
+Nói cách khác, ta có 40 thực thể
+trong một lớp chuỗi.
+
+45
+00:02:30,250 --> 00:02:34,512
+Lớp là cả một hạng mục lớn bao gồm
+những thứ đều giống như chuỗi,
+
+46
+00:02:34,512 --> 00:02:38,305
+chúng khá giống nhau, nhưng
+có cái là x, y, z, có cái là a, b, c.
+
+47
+00:02:38,305 --> 00:02:44,448
+Đó là những thực thể, ta thường dùng
+các từ 'đối tượng' hoặc 'thực thể'.
+
+48
+00:02:44,448 --> 00:02:47,817
+Như tôi đã nói, ngoài dữ liệu,
+các lớp sẽ có chứa code,
+
+49
+00:02:47,817 --> 00:02:50,635
+và phương thức sẽ là cách
+ta kích hoạt phần code đó.
+
+50
+00:02:50,635 --> 00:02:55,533
+Về cơ bản nó là một hàm
+được gắn vào một lớp.
+
+51
+00:02:55,533 --> 00:02:57,541
+Vậy đó là phần tóm tắt nhanh
+về thuật ngữ.
+
+52
+00:02:57,541 --> 00:02:59,950
+Tiếp theo, chúng ta sẽ học cách
+xây dựng các thứ này.

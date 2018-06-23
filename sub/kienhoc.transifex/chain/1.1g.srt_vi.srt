@@ -1,0 +1,980 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/HM3CxufYOFA
+
+1
+00:00:00,499 --> 00:00:02,590
+Giờ hãy bàn về cách ta xử lí tính không chắc chắn.
+
+2
+00:00:02,590 --> 00:00:05,030
+Bởi trong chuỗi cung ứng xuất hiện rất nhiều tính không chắc chắn.
+
+3
+00:00:05,030 --> 00:00:07,890
+Trong nhu cầu xuất hiện rất nhiều sự biến động.
+
+4
+00:00:07,890 --> 00:00:10,620
+Có rất nhiều sự biến động trong thời gian chờ hàng hay thời gian trung chuyển.
+
+5
+00:00:10,620 --> 00:00:13,900
+Có rất nhiều sự biến động trong sản xuất hay 
+
+6
+00:00:13,900 --> 00:00:15,380
+lợi suất gia công cũng như thời gian.
+
+7
+00:00:15,380 --> 00:00:19,710
+Tính không chắc chắn và biến động xảy ra khắp nơi.
+
+8
+00:00:19,710 --> 00:00:23,250
+Bởi vì nó xảy ra trong mọi mặt của chuỗi cung ứng,
+
+9
+00:00:23,250 --> 00:00:26,794
+ta không thể chỉ quản lý hay lên kế hoạch tới mức trung bình hay giá trị trung bình.
+
+10
+00:00:26,794 --> 00:00:28,210
+Như thế sẽ không hiệu quả.
+
+11
+00:00:28,210 --> 00:00:32,110
+Ta muốn hiểu nó biến động thế nào.
+
+12
+00:00:32,110 --> 00:00:34,530
+Sự phân phối theo nhu cầu biến động thế nào?
+
+13
+00:00:34,530 --> 00:00:37,010
+Thời gian chờ hàng phân phối biến động như thế nào?
+
+14
+00:00:37,010 --> 00:00:40,730
+Nói chung, ta sẽ sử dụng ba loại phân phối
+
+15
+00:00:40,730 --> 00:00:42,560
+trong suốt khóa học này.
+
+16
+00:00:42,560 --> 00:00:45,330
+Loại thứ nhất ta đã quá quen, Phân phối Chuẩn,
+
+17
+00:00:45,330 --> 00:00:46,800
+ta sẽ sử dụng nó nhiều.
+
+18
+00:00:46,800 --> 00:00:49,200
+Một chút nữa ta sẽ giải thích về nó trong mỗi trường hợp
+
+19
+00:00:49,200 --> 00:00:50,350
+ta sử dụng.
+
+20
+00:00:50,350 --> 00:00:52,080
+Nhưng ta nên làm quen với nó.
+
+21
+00:00:52,080 --> 00:00:54,700
+Nó là đường cong hình chuông đối xứng
+
+22
+00:00:54,700 --> 00:00:58,640
+biểu hiện 2 tham số, muy là tham số trung bình,
+
+23
+00:00:58,640 --> 00:01:01,120
+và xích ma là độ lệch chuẩn.
+
+24
+00:01:01,120 --> 00:01:04,569
+Tôi sẽ nói rằng tôi phân phối chuẩn với một muy
+
+25
+00:01:04,569 --> 00:01:06,580
+và độ lệch chuẩn xích ma.
+
+26
+00:01:06,580 --> 00:01:08,210
+Đây là một biến liên tục
+
+27
+00:01:08,210 --> 00:01:10,840
+đi từ âm vô cực tới dương vô cực.
+
+28
+00:01:10,840 --> 00:01:12,160
+Và nó đối xứng.
+
+29
+00:01:12,160 --> 00:01:15,750
+Nó đối xứng ở giá trị trung bình.
+
+30
+00:01:15,750 --> 00:01:20,120
+Điều đó có nghĩa là lượng bên phải
+
+31
+00:01:20,120 --> 00:01:21,490
+sẽ bằng lượng bên trái.
+
+32
+00:01:21,490 --> 00:01:24,480
+Giá trị trung bình, giá trị giữa và giá trị xuất hiện thường xuyên nhất trong tập hợp đều như nhau.
+
+33
+00:01:24,480 --> 00:01:26,090
+Và đây là cái được sử dụng phổ biến nhất.
+
+34
+00:01:26,090 --> 00:01:30,440
+Ta sẽ bàn thêm về việc nó lợi hay hại
+
+35
+00:01:30,440 --> 00:01:32,620
+Rồi ta có phân phối loga chuẩn.
+
+36
+00:01:32,620 --> 00:01:37,320
+Điều thú vị ở đây là nó nghiêng về phía phải
+
+37
+00:01:37,320 --> 00:01:40,830
+và giá trị trung bình và giá trị giữa không giống nhau.
+
+38
+00:01:40,830 --> 00:01:43,850
+Nó có đuôi dài ở bên phải.
+
+39
+00:01:43,850 --> 00:01:46,860
+Tính liên tục của nó sẽ lớn hơn 0.
+
+40
+00:01:46,860 --> 00:01:50,230
+Một thuộc tính có tính quyết định
+
+41
+00:01:50,230 --> 00:01:52,110
+trong phân phối loga chuẩn là bạn
+
+42
+00:01:52,110 --> 00:01:54,540
+không thể có giá trị âm.
+
+43
+00:01:54,540 --> 00:01:56,380
+Nó ít được sử dụng hơn.
+
+44
+00:01:56,380 --> 00:01:58,685
+Ta sẽ bắt đầu sử dụng nó sau trong khóa học khi
+
+45
+00:01:58,685 --> 00:02:00,470
+ta nói về việc vận tải.
+
+46
+00:02:00,470 --> 00:02:02,710
+Bởi vận tải, như những người
+
+47
+00:02:02,710 --> 00:02:05,337
+từng chờ máy bay hay xe buýt đều biết,
+
+48
+00:02:05,337 --> 00:02:07,170
+bạn có thể có số lượt đi - về trung bình nhưng bạn có thể
+
+49
+00:02:07,170 --> 00:02:09,449
+một số lần chờ đợi khá lâu.
+
+50
+00:02:09,449 --> 00:02:12,200
+Vậy bạn có phân phối loga chuẩn.
+
+51
+00:02:12,200 --> 00:02:14,904
+Ta sẽ nói về nó một chút nữa.
+
+52
+00:02:14,904 --> 00:02:16,820
+Loại phân phối thứ ba mà ta sẽ sử dụng
+
+53
+00:02:16,820 --> 00:02:18,630
+là Phân phối Poisson.
+
+54
+00:02:18,630 --> 00:02:21,780
+Nó chỉ có một tham số là lamda.
+
+55
+00:02:21,780 --> 00:02:25,410
+Ta sẽ nói hàng hóa được phân phối Poisson với một lamda.
+
+56
+00:02:25,410 --> 00:02:28,730
+Lamba thật ra là giá trị trung bình và phương sai.
+
+57
+00:02:28,730 --> 00:02:30,070
+Và đây là phân phối rời rạc.
+
+58
+00:02:30,070 --> 00:02:31,440
+Đó là lí do ta sử dụng nó.
+
+59
+00:02:31,440 --> 00:02:33,030
+Lợi ích lớn nhất của nó là
+
+60
+00:02:33,030 --> 00:02:35,170
+phân phối rời rạc ngược với liên tục.
+
+61
+00:02:35,170 --> 00:02:36,430
+to continuous.
+
+62
+00:02:36,430 --> 00:02:41,040
+Nó cũng chỉ có số dương hay không phải số 0, số không âm.
+
+63
+00:02:41,040 --> 00:02:41,980
+numbers, rather.
+
+64
+00:02:41,980 --> 00:02:43,600
+Nó có giá trị lớn hơn bằng 0.
+
+65
+00:02:43,600 --> 00:02:46,520
+Như thế rất thích hợp cho những món có giá trị thấp.
+
+66
+00:02:46,520 --> 00:02:50,940
+Vậy nếu nhu cầu của tôi là 1,6 món mỗi tuần, thì
+
+67
+00:02:50,940 --> 00:02:52,940
+có lẽ nó quan trọng.
+
+68
+00:02:52,940 --> 00:02:54,315
+Và tôi có giá trị thấp ở đây, rồi
+
+69
+00:02:54,315 --> 00:02:56,310
+tôi muốn phân phối rời rạc.
+
+70
+00:02:56,310 --> 00:02:59,660
+Ta sẽ dành hầu hết thời gian nói về phân phối chuẩn
+
+71
+00:02:59,660 --> 00:03:00,844
+và phân phối Poisson.
+
+72
+00:03:00,844 --> 00:03:02,760
+Và sau đó ta sẽ dành thời gian nói về phân phối loga chuẩn.
+
+73
+00:03:02,760 --> 00:03:06,220
+Nhưng kế tiếp hãy nói về phân phối chuẩn và phân phối Poisson.
+
+74
+00:03:06,220 --> 00:03:09,010
+Phân phối chuẩn trông như thế này.
+
+75
+00:03:09,010 --> 00:03:12,700
+Trên góc phải có một hàm mật độ xác suất (PDF).
+
+76
+00:03:12,700 --> 00:03:14,230
+Bạn thấy nó lập biểu đồ ở đây
+
+77
+00:03:14,230 --> 00:03:16,150
+Giá trị trung bình là muy.
+
+78
+00:03:16,150 --> 00:03:19,220
+Bạn thấy nó đối xứng ở chỗ giá trị trung bình.
+
+79
+00:03:19,220 --> 00:03:24,760
+Trục hoành ở đây biểu hiện biến x bất kì hay x0.
+
+80
+00:03:24,760 --> 00:03:27,460
+Và trục tung biểu hiện xác suất.
+
+81
+00:03:27,460 --> 00:03:30,890
+Đó là fx(x0), PDF.
+
+82
+00:03:30,890 --> 00:03:32,800
+Lần nữa, ta đã nói rằng nó được phân phối chuẩn
+
+83
+00:03:32,800 --> 00:03:35,970
+với một giá trị trung bình muy và một độ lệch chuẩn xích ma.
+
+84
+00:03:35,970 --> 00:03:39,460
+Vậy nếu tôi chọn một điểm, ví dụ giá trị này là x,
+
+85
+00:03:39,460 --> 00:03:42,020
+thì nó sẽ bằng với muy, giá trị trung bình,
+
+86
+00:03:42,020 --> 00:03:45,060
+thêm một con số độ lệch chuẩn nhất định
+
+87
+00:03:45,060 --> 00:03:48,940
+ở bên phải, đó là k nhân xích ma x.
+
+88
+00:03:48,940 --> 00:03:51,510
+Ví dụ như tôi chọn điểm này.
+
+89
+00:03:51,510 --> 00:03:55,650
+Khi đó tôi có thể thấy hai xác suất.
+
+90
+00:03:55,650 --> 00:03:57,650
+Vùng dưới đường cong bên trái của nó
+
+91
+00:03:57,650 --> 00:04:00,980
+được đánh dấu bằng những đường vạch xanh,
+
+92
+00:04:00,980 --> 00:04:04,280
+xác suất biến x bất kì 
+
+93
+00:04:04,280 --> 00:04:08,210
+sẽ nhỏ hơn giá trị muy + k xích ma x.
+
+94
+00:04:08,210 --> 00:04:09,420
+x.
+
+95
+00:04:09,420 --> 00:04:12,310
+Vùng dưới đường cong bên phải, 
+
+96
+00:04:12,310 --> 00:04:15,310
+được tô màu đỏ, nó bằng với xác suất
+
+97
+00:04:15,310 --> 00:04:20,519
+của x, sẽ lớn hơn giá trị đó, là muy + k xích ma x.
+
+98
+00:04:20,519 --> 00:04:22,380
+Nhìn đồ thị bạn có thể thấy
+
+99
+00:04:22,380 --> 00:04:24,670
+tổng xác suất phải bằng 1.
+
+100
+00:04:24,670 --> 00:04:28,170
+Vậy vùng màu đỏ bằng 1 - vùng
+
+101
+00:04:28,170 --> 00:04:29,650
+màu xanh và ngược lại.
+
+102
+00:04:29,650 --> 00:04:31,860
+Bởi chúng phải đạt tối đa tới 1.
+
+103
+00:04:31,860 --> 00:04:33,550
+Việc này sẽ rất quan trọng khi ta
+
+104
+00:04:33,550 --> 00:04:35,960
+bắt đầu nói về phân phối theo nhu cầu, khi
+
+105
+00:04:35,960 --> 00:04:39,220
+ta muốn biết, tôi khiến giá trị này lớn bao nhiêu
+
+106
+00:04:39,220 --> 00:04:43,140
+để đảm bảo rằng, 90% thời gian rằng nhu cầu của tôi
+
+107
+00:04:43,140 --> 00:04:45,190
+sẽ không thiếu hàng.
+
+108
+00:04:45,190 --> 00:04:47,800
+Tôi có thể làm vậy - tôi có thể sử dụng bảng tính để tìm các giá trị này.
+
+109
+00:04:47,800 --> 00:04:49,140
+spreadsheets.
+
+110
+00:04:49,140 --> 00:04:51,380
+Ở đây ta có hai hàm, hàm nghịch đảo chuẩn
+
+111
+00:04:51,380 --> 00:04:53,040
+và hàm phân phối chuẩn.
+
+112
+00:04:53,040 --> 00:04:54,840
+Tôi sẽ liệt kê các tham số ở đó.
+
+113
+00:04:54,840 --> 00:04:58,500
+Nhưng thường ta sử dụng bảng định mức đơn vị.
+
+114
+00:04:58,500 --> 00:05:02,750
+Tôi dùng bảng này để biến đổi phân phối chuẩn thành 
+
+115
+00:05:02,750 --> 00:05:05,840
+phân phối định mức đơn vị hay chuẩn tắc.
+
+116
+00:05:05,840 --> 00:05:09,020
+Đó là phân phối chuẩn với giá trị trung bình là 0
+
+117
+00:05:09,020 --> 00:05:11,480
+và độ lệch chuẩn là 1.
+
+118
+00:05:11,480 --> 00:05:12,990
+Tôi biến đổi thế nào?
+
+119
+00:05:12,990 --> 00:05:14,710
+Tôi tạo ra các giá trị k.
+
+120
+00:05:14,710 --> 00:05:16,280
+Một số sách gọi là giá trị z.
+
+121
+00:05:16,280 --> 00:05:17,030
+Không quan trọng.
+
+122
+00:05:17,030 --> 00:05:18,290
+Như nhau thôi.
+
+123
+00:05:18,290 --> 00:05:22,550
+Tôi lấy biến x bất kì trừ đi
+
+124
+00:05:22,550 --> 00:05:26,600
+giá trị trung bình và chia cho độ lệch chuẩn.
+
+125
+00:05:26,600 --> 00:05:29,800
+Công thức đó sẽ biến đổi phân phối chuẩn của tôi
+
+126
+00:05:29,800 --> 00:05:32,530
+thành định mức đơn vị ở đây, dưới bên phải.
+
+127
+00:05:32,530 --> 00:05:35,950
+Bạn có thể thấy hàm mật độ xác suất và nếu bạn muốn thì hãy dừng lại quan sát.
+
+128
+00:05:35,950 --> 00:05:38,250
+Nó giống y chang hàm ở trên góc phải
+
+129
+00:05:38,250 --> 00:05:43,800
+trừ việc giá trị của muy = 0 và xích ma = 1
+
+130
+00:05:43,800 --> 00:05:47,210
+Vậy định mức đơn vị này có gì hay?
+
+131
+00:05:47,210 --> 00:05:50,210
+Nó áp dụng được cho mọi phân phối chuẩn.
+
+132
+00:05:50,210 --> 00:05:55,270
+Tôi có thể dùng cái này nếu giờ tôi chọn một giá trị, gọi là k đi.
+
+133
+00:05:55,270 --> 00:05:59,100
+Đây sẽ là giá trị của một biến bất kì,
+
+134
+00:05:59,100 --> 00:06:03,240
+giờ nó là u0 cho định mức đơn vị.
+
+135
+00:06:03,240 --> 00:06:04,460
+Áp dụng tương tự.
+
+136
+00:06:04,460 --> 00:06:07,300
+Tôi quan sát xác suất ở dưới đường cong định mức đơn vị này.
+
+137
+00:06:07,300 --> 00:06:09,020
+Ở đây nó được tô màu đỏ.
+
+138
+00:06:09,020 --> 00:06:12,280
+Đây là xác suất mà u, nhu cầu của tôi,
+
+139
+00:06:12,280 --> 00:06:13,950
+lớn hơn bằng k.
+
+140
+00:06:13,950 --> 00:06:16,130
+Ở bên trái, vùng được vạch xanh,
+
+141
+00:06:16,130 --> 00:06:17,680
+dưới vùng nằm dưới đường cong,
+
+142
+00:06:17,680 --> 00:06:21,710
+là xác suất nhu cầu của tôi sẽ nhỏ hơn giá trị k.
+
+143
+00:06:21,710 --> 00:06:24,080
+Cái hay về định mức đơn vị,
+
+144
+00:06:24,080 --> 00:06:26,320
+dù loại phân phối của tôi là gì,
+
+145
+00:06:26,320 --> 00:06:27,820
+là nó có thể là bất kỳ số gì.
+
+146
+00:06:27,820 --> 00:06:30,500
+Có thể là 1,000, 600, 200, gì cũng được.
+
+147
+00:06:30,500 --> 00:06:32,760
+Nó có thể có vô số dạng.
+
+148
+00:06:32,760 --> 00:06:35,630
+Tôi luôn có thể biến đổi chúng thành định mức đơn vị hay ho này.
+
+149
+00:06:35,630 --> 00:06:38,480
+
+
+150
+00:06:38,480 --> 00:06:40,600
+Trong bảng tính, các hàm tương tự
+
+151
+00:06:40,600 --> 00:06:43,450
+trừ cái tôi dùng s cho tiêu chuẩn.
+
+152
+00:06:43,450 --> 00:06:47,570
+Vậy hàm NORMSINV của xác suất sẽ cho tôi giá trị k.
+
+153
+00:06:47,570 --> 00:06:50,310
+Và hàm NORMSDIST, nếu bạn đặt giá trị k vào,
+
+154
+00:06:50,310 --> 00:06:51,870
+sẽ cho bạn xác suất.
+
+155
+00:06:51,870 --> 00:06:54,080
+Nó cho bạn xác suất tích lũy
+
+156
+00:06:54,080 --> 00:06:57,390
+ở vùng màu xanh ở đây, xác suất
+
+157
+00:06:57,390 --> 00:07:01,320
+định mức đơn vị nhỏ hơn k.
+
+158
+00:07:01,320 --> 00:07:03,990
+Giờ tôi cũng có thể sử dụng những bảng chuẩn này,
+
+159
+00:07:03,990 --> 00:07:05,070
+việc đó khá hay.
+
+160
+00:07:05,070 --> 00:07:08,240
+Những bảng tính này được thêm vào video này.
+
+161
+00:07:08,240 --> 00:07:12,270
+Ý tưởng ở đây là, nếu tôi chọn một giá trị k ở đây,
+
+162
+00:07:12,270 --> 00:07:18,700
+ví dụ 0.55, thì tôi biết xác suất u sẽ
+
+163
+00:07:18,700 --> 00:07:23,490
+ít hơn bằng k là 70.8%.
+
+164
+00:07:23,490 --> 00:07:25,460
+Và vậy bạn sẽ sử dụng các bảng này rất nhiều.
+
+165
+00:07:25,460 --> 00:07:27,210
+Hy vọng bạn quen với chúng.
+
+166
+00:07:27,210 --> 00:07:28,585
+Hãy thực hành một số bài tập.
+
+167
+00:07:28,585 --> 00:07:30,120
+Tôi sẽ giải thích chi tiết cho bạn.
+
+168
+00:07:30,120 --> 00:07:32,620
+Nhưng bạn có thể sử dụng các bảng định mức đơn vị.
+
+169
+00:07:32,620 --> 00:07:35,890
+Đó là lí do tại sao sử dụng các bảng định mức đơn vị lại có ích như thế.
+
+170
+00:07:35,890 --> 00:07:39,970
+Một điều khác để nghĩ về phân phối chuẩn
+
+171
+00:07:39,970 --> 00:07:42,560
+là cách nó biểu thị.
+
+172
+00:07:42,560 --> 00:07:43,580
+Nó đối xứng.
+
+173
+00:07:43,580 --> 00:07:46,930
+Nếu tôi quan sát giá trị trung bình cộng hoặc trừ 1 độ lệch chuẩn,
+
+174
+00:07:46,930 --> 00:07:51,890
+tôi sẽ nhận 68% tổng phân phối.
+
+175
+00:07:51,890 --> 00:07:54,630
+Nếu tôi thêm 2 độ lệch chuẩn, 
+
+176
+00:07:54,630 --> 00:08:00,030
+nó bao trùm 95.5%, 3 độ lệch chuẩn, 99.7%.
+
+177
+00:08:00,030 --> 00:08:02,250
+Bạn có thể thấy số liệu thể hiện.
+
+178
+00:08:02,250 --> 00:08:06,410
+Ý tưởng là nó đối xứng quanh giá trị muy.
+
+179
+00:08:06,410 --> 00:08:07,830
+Bạn có thể thấy cách nó được phân phối.
+
+180
+00:08:07,830 --> 00:08:11,600
+Ta sẽ sử dụng cái này rất nhiều, nhất là với bảng định mức đơn vị.
+
+181
+00:08:11,600 --> 00:08:14,560
+Giờ hãy nói về phân phối Poisson
+
+182
+00:08:14,560 --> 00:08:16,880
+Lần nữa, một tham số đơn.
+
+183
+00:08:16,880 --> 00:08:18,740
+Về cơ bản, nó là xác suất
+
+184
+00:08:18,740 --> 00:08:21,950
+x sự kiện xảy ra trong một khoảng thời gian.
+
+185
+00:08:21,950 --> 00:08:25,840
+Tham số đơn, lamda, đều là giá trị trung bình và phương sai.
+
+186
+00:08:25,840 --> 00:08:28,380
+Đây là hàm khối xác suất.
+
+187
+00:08:28,380 --> 00:08:30,640
+Đó là hàm rời rạc.
+
+188
+00:08:30,640 --> 00:08:35,110
+Vậy với x0 = 0, 1, 2, xác suất
+
+189
+00:08:35,110 --> 00:08:41,440
+sự kiện đó xảy ra, P_x0 = với phép tính này:
+
+190
+00:08:41,440 --> 00:08:45,520
+e tới lamda âm x lamda tới x0 âm
+
+191
+00:08:45,520 --> 00:08:48,640
+chia cho tổ hợp của x0.
+
+192
+00:08:48,640 --> 00:08:51,940
+Bạn cũng có thể thấy phân phối tích lũy
+
+193
+00:08:51,940 --> 00:08:53,930
+và đơn giản tổng tất cả các giá trị đó
+
+194
+00:08:53,930 --> 00:08:56,200
+đến giá trị của x0.
+
+195
+00:08:56,200 --> 00:08:58,920
+Nếu tôi vẽ biểu đồ những giá trị này, ở đây tôi đang cho bạn thấy
+
+196
+00:08:58,920 --> 00:09:00,750
+biểu đồ biểu hiện ba giá trị
+
+197
+00:09:00,750 --> 00:09:03,410
+đều là lamda.
+
+198
+00:09:03,410 --> 00:09:06,130
+Cột màu xanh lá là lambda 2.2
+
+199
+00:09:06,130 --> 00:09:08,390
+Cột màu vàng là lambda 4.
+
+200
+00:09:08,390 --> 00:09:10,330
+Và cột màu xanh dương là lambda 8.
+
+201
+00:09:10,330 --> 00:09:12,600
+Nếu bạn quan sát các giá trị này, bạn sẽ thấy rằng
+
+202
+00:09:12,600 --> 00:09:16,110
+khi giá trị của lambda tăng lên, biểu đồ trở nên đối xứng hơn.
+
+203
+00:09:16,110 --> 00:09:18,400
+Nó bắt đầu gần giống như phiên bản rời rạc
+
+204
+00:09:18,400 --> 00:09:21,650
+của phân phối chuẩn.
+
+205
+00:09:21,650 --> 00:09:24,540
+Vậy tôi sẽ highlight, giờ, các cột xanh lá,
+
+206
+00:09:24,540 --> 00:09:28,780
+bạn thấy cách độ cao các cột rớt dần và sau đó là cột màu xanh.
+
+207
+00:09:28,780 --> 00:09:31,420
+Bạn có thể thấy khi giá trị lamda tăng lên,
+
+208
+00:09:31,420 --> 00:09:34,000
+biểu đồ sẽ trở nên đối xứng hơn một chút.
+
+209
+00:09:34,000 --> 00:09:37,260
+Trong bảng tính, ở hàm Poisson,
+
+210
+00:09:37,260 --> 00:09:39,730
+tôi đặt x0, giá trị tôi
+
+211
+00:09:39,730 --> 00:09:41,510
+đang cố tìm xác suất,
+
+212
+00:09:41,510 --> 00:09:46,130
+lambda - giá trị trung bình của sự phân phối.
+
+213
+00:09:46,130 --> 00:09:48,610
+Rồi tôi có thể sử dụng cờ 0 hay 1.
+
+214
+00:09:48,610 --> 00:09:51,340
+0 cho tôi hàm khối xác suất, xác suất
+
+215
+00:09:51,340 --> 00:09:53,860
+của giá trị đó, x0 xảy ra.
+
+216
+00:09:53,860 --> 00:09:57,620
+Hàm lũy tích F(x0), nếu tôi đặt lá 1,
+
+217
+00:09:57,620 --> 00:09:59,530
+điều đó có nghĩa xác suất tích lũy
+
+218
+00:09:59,530 --> 00:10:04,210
+rằng giá trị của tôi sẽ nhỏ hơn x0.
+
+219
+00:10:04,210 --> 00:10:06,420
+Chúng tôi cũng cho bạn các bảng.
+
+220
+00:10:06,420 --> 00:10:09,790
+Các bảng được thiết lập tương tự như các bảng chuẩn trong
+
+221
+00:10:09,790 --> 00:10:12,260
+đó mỗi cột là cho lamda.
+
+222
+00:10:12,260 --> 00:10:14,950
+Ở đây ta chỉ có những lamda nhất định
+
+223
+00:10:14,950 --> 00:10:16,400
+Ta không thể làm được tất cả.
+
+224
+00:10:16,400 --> 00:10:20,950
+Đáng buồn, chẳng có bảng Poisson chuẩn đơn vị.
+
+225
+00:10:20,950 --> 00:10:24,870
+Rồi mỗi dòng là hàm lũy tích của x0 đã cho.
+
+226
+00:10:24,870 --> 00:10:27,860
+Ví dụ, phân phối của tôi có
+
+227
+00:10:27,860 --> 00:10:32,050
+lamda của Poisson là 1.
+
+228
+00:10:32,050 --> 00:10:34,800
+Tôi muốn tìm xác suất, xác suất tích lũy,
+
+229
+00:10:34,800 --> 00:10:40,340
+rằng tôi sẽ có 3 hoặc ít số liệu hơn trong khoảng thời gian đó.
+
+230
+00:10:40,340 --> 00:10:41,080
+period.
+
+231
+00:10:41,080 --> 00:10:44,660
+Tôi sẽ đi từ hàm 3 ở đây.
+
+232
+00:10:44,660 --> 00:10:47,690
+Xác suất mà tôi sẽ có 3 hoặc ít hơn
+
+233
+00:10:47,690 --> 00:10:52,560
+sẽ bằng 98%, 98.101.
+
+234
+00:10:52,560 --> 00:10:55,690
+Từ đó cho tôi biết xác suất tích lũy của tôi
+
+235
+00:10:55,690 --> 00:10:59,310
+để nhận được 3 hoặc ít hơn các số liệu.
+
+236
+00:10:59,310 --> 00:11:01,020
+Với cùng phân phối lamda,
+
+237
+00:11:01,020 --> 00:11:03,100
+nếu tôi muốn thấy xác suất mà tôi
+
+238
+00:11:03,100 --> 00:11:07,040
+chẳng thấy số liệu nào xuất hiện, không có nhu cầu,
+
+239
+00:11:07,040 --> 00:11:12,290
+chuyện đó xảy ra khỏang 36.78% thời gian.
+
+240
+00:11:12,290 --> 00:11:15,320
+OK, đây là phân phối chuẩn và Poisson.
+
+241
+00:11:15,320 --> 00:11:17,720
+Ta đưa ra một đống vấn đề trong phần thực hành.
+
+242
+00:11:17,720 --> 00:11:19,809
+Cứ thoải mái với mấy bài tập này nhé.
+
+243
+00:11:19,809 --> 00:11:21,600
+Bạn nên làm quen và thoải mái
+
+244
+00:11:21,600 --> 00:11:25,540
+với cả phân phối chuẩn và Poisson.
+

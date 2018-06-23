@@ -1,0 +1,361 @@
+1
+00:00:00,000 --> 00:00:10,380
+https://youtu.be/k5ZnaUIYil0
+
+
+2
+00:00:10,380 --> 00:00:13,240
+Trong chủ đề lần trước, ta đã
+tìm hiểu cách mà các pixel
+
+3
+00:00:13,240 --> 00:00:17,370
+định rõ và xây dựng các chi tiết
+trong hình ảnh của ta
+
+4
+00:00:17,370 --> 00:00:21,230
+và một hình ảnh kĩ thuật số có những 
+giá trị riêng độc nhất
+
+5
+00:00:21,230 --> 00:00:22,700
+cho mỗi pixel.
+
+6
+00:00:22,700 --> 00:00:24,950
+Giờ ta sẽ tìm hiểu về tông 
+và các mức độ.
+
+7
+00:00:24,950 --> 00:00:27,140
+Và các quy tắc tương tự cũng được áp dụng.
+
+8
+00:00:27,140 --> 00:00:30,480
+Nếu bạn nhìn vào cánh tay tôi ở đây,
+bạn có thể rằng có rất nhiều 
+
+9
+00:00:30,480 --> 00:00:33,870
+tông màu khác nhau bao 
+xung quanh và tạo ra
+
+10
+00:00:33,870 --> 00:00:35,930
+thuộc tính có chiều hướng trong không gian của cánh tay tôi.
+
+11
+00:00:35,930 --> 00:00:39,460
+Nhưng bạn không thể đếm 
+số lượng các tông màu có ở đó
+
+12
+00:00:39,460 --> 00:00:43,610
+cũng như không thể phân biệt được
+tông này với tông nằm kế tiếp nó.
+
+13
+00:00:43,610 --> 00:00:45,780
+Đây là điều đặc biệt của nhiếp ảnh.
+
+14
+00:00:45,780 --> 00:00:48,530
+Đây là điều mà nhiếp ảnh
+làm tốt nhất.
+
+15
+00:00:48,530 --> 00:00:52,950
+Nó tạo ra những hình ảnh với 
+một tông màu mượt mà và liền mạch.
+
+16
+00:00:52,950 --> 00:00:57,030
+Trong bức ảnh ở đây, bạn có thể thấy
+các mức độ khác nhau của tông
+
+17
+00:00:57,030 --> 00:01:00,540
+mối quan hệ giữa thuộc tính có chiều hướng 
+trong không gian và cách mà
+
+18
+00:01:00,540 --> 00:01:02,890
+tông đó xuất hiện trong bức hình.
+
+19
+00:01:02,890 --> 00:01:05,690
+Từ dưới lên, bạn có hai màu
+đen và trắng
+
+20
+00:01:05,690 --> 00:01:09,050
+và dần lên trên bạn càng có nhiều
+thật nhiều các tông khác.
+
+21
+00:01:09,050 --> 00:01:11,869
+Và mặc dù có một ảo ảnh 
+về sự liền mạch
+
+22
+00:01:11,870 --> 00:01:14,690
+và độ mượt mà, thực tế
+nó chính là một ảo ảnh.
+
+23
+00:01:14,690 --> 00:01:19,220
+Và bạn có thể đếm được
+từng tông một trong bức ảnh.
+
+24
+00:01:19,220 --> 00:01:23,800
+Vậy câu hỏi thật sự ở đây là,
+nếu đó là cách mà các mức độ của tông
+
+25
+00:01:23,800 --> 00:01:27,460
+được hình thành trong những 
+bức ảnh chụp của ta, thì liệu có bao nhiêu
+
+26
+00:01:27,460 --> 00:01:31,710
+mức độ của tông mà ta cần 
+để đạt được ảo ảnh về sự 
+
+27
+00:01:31,710 --> 00:01:33,570
+mượt mà và liền mạch đó?
+
+28
+00:01:33,570 --> 00:01:36,720
+Để trả lời câu hỏi đó, ta cần 
+
+29
+00:01:36,720 --> 00:01:37,610
+tính toán một chút.
+
+30
+00:01:37,610 --> 00:01:39,330
+Và một lần nữa, mong bạn 
+sẽ kiên nhẫn.
+
+31
+00:01:39,330 --> 00:01:43,950
+Ta đang nói về dữ liệu nhị phân, 
+vốn bắt đầu ở dạng thô sơ nhất của nó
+
+32
+00:01:43,950 --> 00:01:48,630
+như thể tắt hoặc mở,
+hay như trắng và đen.
+
+33
+00:01:48,630 --> 00:01:51,640
+Do đó chúng ta có hai tông.
+
+34
+00:01:51,640 --> 00:01:55,110
+2 lũy thừa của 1,
+ta có 2.
+
+35
+00:01:55,110 --> 00:01:58,490
+Vậy nghĩa là ta sẽ 
+có trắng hoặc đen.
+
+36
+00:01:58,490 --> 00:02:00,570
+Trắng và đen không thể cung cấp
+
+37
+00:02:00,570 --> 00:02:01,820
+đủ các sắc điệu.
+
+38
+00:02:01,820 --> 00:02:06,610
+Do đó ta cần tiếp tục tìm
+cho đến khi 
+
+39
+00:02:06,610 --> 00:02:08,250
+ta có đủ các tông.
+
+40
+00:02:08,250 --> 00:02:12,760
+2 bình phương
+đơn gỉan là bằng 2 nhân 2.
+
+41
+00:02:12,760 --> 00:02:13,820
+Nghĩa là bằng 4.
+
+42
+00:02:13,820 --> 00:02:15,590
+Bấy nhiêu vẫn chưa đủ.
+
+43
+00:02:15,590 --> 00:02:18,180
+Nhưng nếu ta cứ tiếp tục 
+tiếp tục như thế.
+
+44
+00:02:18,180 --> 00:02:23,110
+Và ta có được 2 lũy thừa 8,
+nghĩa là 2 nhân với 2 nhân với 2
+
+45
+00:02:23,110 --> 00:02:30,040
+8 lần như thế thì ta được 256.
+
+46
+00:02:30,040 --> 00:02:35,769
+256 là số tông đủ để tạo
+một ảo ảnh của sự liền mạch
+
+47
+00:02:35,770 --> 00:02:37,020
+và mềm mượt rồi.
+
+48
+00:02:37,020 --> 00:02:44,100
+Và ý tưởng về số 8 này cho ta
+hình ảnh dạng 8-bit.
+
+49
+00:02:44,100 --> 00:02:45,359
+Hình ảnh 8 bit.
+
+50
+00:02:45,360 --> 00:02:47,650
+Và đó là con số kì diệu.
+
+51
+00:02:47,650 --> 00:02:50,760
+Và có lẽ bạn đã nhìn thấy nó
+
+52
+00:02:50,760 --> 00:02:54,209
+trong một vài tài liệu
+hoặc những bài giải thích kĩ thuật
+
+53
+00:02:54,210 --> 00:02:55,540
+về hình ảnh kĩ thuật số.
+
+54
+00:02:55,540 --> 00:02:56,590
+8 bit
+
+55
+00:02:56,590 --> 00:02:59,020
+256 mức độ của tông.
+
+56
+00:02:59,020 --> 00:03:02,440
+Tôi có một video ở đây
+để cho bạn thấy một cách trực quan
+
+57
+00:03:02,440 --> 00:03:05,640
+cách chúng thực sự vận hành
+và ý nghĩa của chúng đối với
+
+58
+00:03:05,640 --> 00:03:07,220
+cách mà ta nhìn những bức ảnh.
+
+59
+00:03:07,220 --> 00:03:11,330
+Ở đây ta có một bức ảnh dài
+đúng tiêu chuẩn mà tôi sắp chuyển
+
+60
+00:03:11,330 --> 00:03:15,440
+thành ảnh có dải màu xám (grayscale),
+bắt đầu với màu đen và chuyển dần
+
+61
+00:03:15,440 --> 00:03:19,060
+sang màu trắng, hoặc dải shadows,
+dải midtones, dải highlights.
+
+62
+00:03:19,060 --> 00:03:21,260
+Và nếu tôi chỉ dùng một trong những
+tính năng điều chỉnh trong Photoshop
+
+63
+00:03:21,260 --> 00:03:25,549
+và lọc bớt màu (posterise) của dải màu,
+bạn có thể thấy
+
+64
+00:03:25,550 --> 00:03:27,460
+hai màu trắng và đen trông như thế nào.
+
+65
+00:03:27,460 --> 00:03:30,630
+Trong lúc tôi tiếp tục và gấp đôi
+các con số này lên,
+
+66
+00:03:30,630 --> 00:03:35,549
+tôi bắt đầu nhận được nhiều hơn 
+các sắc độ khác nhau của bức ảnh.
+
+67
+00:03:35,550 --> 00:03:37,090
+16 sắc độ.
+
+68
+00:03:37,090 --> 00:03:38,270
+32 sắc độ.
+
+69
+00:03:38,270 --> 00:03:39,600
+Vẫn chưa đủ lắm.
+
+70
+00:03:39,600 --> 00:03:41,370
+Cứ thế tôi tiếp tục, 64 sắc độ.
+
+71
+00:03:41,370 --> 00:03:42,810
+Tôi vẫn còn thấy những chỗ hở.
+
+72
+00:03:42,810 --> 00:03:44,380
+Vẫn còn đếm được các sắc độ.
+
+73
+00:03:44,380 --> 00:03:48,250
+Nếu tôi cho đến 128,
+ảnh nhìn có vẻ khá tốt.
+
+74
+00:03:48,250 --> 00:03:50,090
+Nhưng nó vẫn chưa đủ độ mượt.
+
+75
+00:03:50,090 --> 00:03:50,970
+Phải tiếp tục thôi.
+
+76
+00:03:50,970 --> 00:03:53,250
+255.
+
+77
+00:03:53,250 --> 00:03:59,130
+255 cộng 0, vì 0 cũng 
+là một giá trị, tôi có được 256 sắc độ.
+
+78
+00:03:59,130 --> 00:04:00,920
+Và đây là bức ảnh với một 
+tông màu mượt mà và liên tục.
+
+79
+00:04:00,920 --> 00:04:02,553
+
+

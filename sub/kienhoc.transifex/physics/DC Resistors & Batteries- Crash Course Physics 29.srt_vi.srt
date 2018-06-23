@@ -1,0 +1,476 @@
+1
+00:00:03,580 --> 00:00:06,780
+Tập này được hỗ trợ bởi Prudential. 
+
+2
+00:00:06,780 --> 00:00:13,260
+Các điện trở, pin và tụ điện - đó mới chỉ là một vài trong số các công cụ sử dụng để lắp đặt các mạch và cung cấp nguồn điện cho thế giới quanh ta. 
+
+3
+00:00:13,260 --> 00:00:20,160
+Hôm nay, chúng ta sẽ lắp đặt một số mạch cơ bản sử dụng các điện trở và pin để xem xét chúng phản ứng và thay đổi phụ thuộc vào cấu hình của chúng như thế nào.
+
+4
+00:00:20,170 --> 00:00:24,250
+Ví dụ, ở mạch này, 
+tôi nối pin với một bóng đèn điện. 
+
+5
+00:00:24,250 --> 00:00:25,420
+Dễ đúng không?
+
+6
+00:00:25,420 --> 00:00:32,580
+Pin cung cấp một điện áp, giải phóng dòng điện chạy qua toàn mạch, làm sáng bóng đèn được kết nối nhờ điện trở của nó. 
+
+7
+00:00:32,580 --> 00:00:35,820
+Vậy nếu bạn lắp hai bóng đèn riêng biệt ở cùng một hàng?
+
+8
+00:00:35,820 --> 00:00:37,360
+Dòng điện sẽ thay đổi như thế nào?
+
+9
+00:00:37,360 --> 00:00:38,780
+Độ sáng của mỗi bóng sẽ ra sao?
+
+10
+00:00:38,780 --> 00:00:45,280
+Và giả sử, thay vì hai bóng đèn nối cùng một dây, bạn nối bóng đèn thứ 2 với một dây riêng nối vào pin thì sẽ như thế nào?
+
+11
+00:00:45,280 --> 00:00:53,320
+Tất cả chúng đều là mạch dòng điện một chiều, bao gồm các pin và điện trở đi kèm với dòng điện không đổi chạy qua pin theo một hướng. 
+
+12
+00:00:53,320 --> 00:00:59,40
+Chúng ta sẽ thảo luận về các dòng điện thay đổi sau này, còn bây giờ, chúng ta sẽ cùng tìm hiểu về mạch điện một chiều trước. 
+
+13
+00:00:59,40 --> 00:01:03,180
+Và hi vọng là, sau khi tìm hiểu kĩ, 
+những chiếc bóng đèn ở đây sẽ không phải là những cái duy nhất phát sáng!
+
+14
+00:01:03,180 --> 00:01:15,620
+[Nhạc nền]
+
+15
+00:01:15,620 --> 00:01:20,79
+Hãy cũng bắt đầu việc tìm hiểu bài học về mạch của chúng ta 
+với nguồn năng lượng: pin. 
+
+16
+00:01:20,80 --> 00:01:27,39
+Một chiếc pin lý tưởng là khi cung cấp điện áp không đổi cho mạch, được nạp năng lượng nhờ việc chuyển hóa nguồn năng lượng hóa học dự trữ sang nguồn năng lượng điện. 
+
+17
+00:01:27,40 --> 00:01:36,300
+Các nhà khoa học nói răng pin là nguồn lực điện động, bởi vì nó nhận điện để di chuyển - nhưng nó không thực sự cung cấp lực nhưng thay vào đó nó tạo ra sự khác biệt về điện thế. 
+
+18
+00:01:36,300 --> 00:01:40,220
+Tóm lại là điện áp lý tưởng 
+cung cấp bởi pin chính là lực điện động của nó. 
+
+
+19
+00:01:40,220 --> 00:01:44,279
+Lý tưởng nhất là pin sử dụng tất cả điện áp của nó 
+cung cấp năng lượng cho các thiết bị trong mạch. 
+
+20
+00:01:44,279 --> 00:01:47,539
+Nhưng giống như tất cả mọi thứ trên đời này, 
+pin không hoàn hảo. 
+
+21
+00:01:47,540 --> 00:01:55,480
+Mặc dù mục đích của pin là cung cấp điện áp ổn định, cấu tạo bên trong của nó vẫn chứa các vật liệu dẫn điện có thể tự nhiên mất năng lượng dưới dạng nhiệt. 
+
+22
+00:01:55,480 --> 00:01:59,000
+Giống như khi bạn xem Crash Course trên điện thoại trong 3 giờ đồng hồ và nó nóng lên. 
+
+23
+00:01:59,000 --> 00:02:08,119
+Lượng nhiệt này một phần là do các thành phần bên trong pin có điện trở, và bạn biết đấy, khi có điện trở trong dòng điện, điện năng sẽ bị hút và giải phóng - thường là dưới dạng nhiệt. 
+
+24
+00:02:08,120 --> 00:02:12,760
+Trong một mạch, bạn có thể mô hình hóa ảnh hưởng này như là một điện trở trong giữa các cực của pin. 
+
+25
+00:02:12,760 --> 00:02:19,399
+Khi bạn tính toán điện áp thực sự giữa các cực của pin, bạn sẽ nhận được giá trị nhỏ hơn điện thế lý tưởng của chúng ta.  
+
+26
+00:02:19,400 --> 00:02:21,959
+Điện áp thực được gọi là điện cực. 
+
+27
+00:02:21,960 --> 00:02:30,420
+Và bạn tính toán điện cực bằng cách trừ đi lượng điện áp sụt giảm do điện trở trong khỏi suất điện động ban đầu được cung cấp, được chỉ định viết tắt là E. 
+
+28
+00:02:30,420 --> 00:02:36,440
+Lượng điện áp trong sụt giảm này, theo định luật Ôm, thì bằng với cường độ dòng điện chạy qua mạch nhân với điện trở trong. 
+
+29
+00:02:36,440 --> 00:02:45,520
+Điện trở trong thường nhỏ hơn điện trở của bất kì thiết bị nào được kết nối, vì thế điện cực thường nhỏ hơn một chút so với suất điện động E. 
+
+30
+00:02:45,520 --> 00:02:52,400
+Ví dụ, giả sử bạn có một pin 12 Volt và không có điện trở trong, pin được kết nối với mạch có điện trở 100 Ôm. 
+
+31
+00:02:52,400 --> 00:02:57,160
+Bạn có thể sử dụng định luật Ôm để tìm ra dòng điện có kết quả là 0,120 Ampe. 
+
+32
+00:02:57,160 --> 00:02:59,840
+Ta có thể kết luận là pin có điện trở trong là 1 Ôm. 
+
+33
+00:02:59,840 --> 00:03:08,620
+Nếu bạn thay định luật Ôm vào công thức cho điện cực của chúng ta và giải phương trình với cả điện trở trong và điện trở toàn mạch, 
+
+34
+00:03:08,620 --> 00:03:12,800
+bạn sẽ thấy dòng điện chạy qua mạch 
+bây giờ là 0,119 Ampe. 
+
+35
+00:03:12,800 --> 00:03:15,940
+So sánh với pin lý tưởng. 
+nó chỉ chênh lệch 1 miliampe. 
+
+36
+00:03:15,940 --> 00:03:22,960
+Để tìm chính xác lượng điện mất đi do điện trở trong của pin, bạn có thể sử dụng công thức điện chúng ta đã sử dụng trong bài học lần trước:
+
+37
+00:03:22,960 --> 00:03:25,500
+công suất bằng cường độ dòng điện nhân điện áp. 
+
+38
+00:03:25,500 --> 00:03:33,180
+Bởi vì công thức trên cho thấy tỉ lệ năng lượng được chuyển hóa từ điện sang dạng năng lượng khác, như là nhiệt, ánh sáng hay năng lượng cơ học. 
+
+39
+00:03:33,180 --> 00:03:40,440
+Nhưng do chúng ta không biết lượng điện áp chạy qua điện trở trong, bạn có thể sử dụng định luật Ôm và thay "cường độ dòng điện nhân điện trở" cho điện áp. 
+
+40
+00:03:40,440 --> 00:03:46,340
+Từ công thức này, bạn có thể thấy điện trở trong làm cho pin tiêu tốn khoảng 14mW công suất. 
+
+41
+00:03:46,340 --> 00:03:53,140
+Bạn có thể thấy trong ví dụ này rằng mặc dù giá trị của 2 điện trở là khác nhau, 
+dòng điện chạy qua toàn mạch là như nhau. 
+
+42
+00:03:53,140 --> 00:04:01,100
+Khi ít nhất 2 điện trở được kết nối theo cùng một đường, chúng được nối theo chuỗi, và bất cứ thiết bị nào nối vào chuỗi đều có cùng dòng điện chạy qua. 
+
+43
+00:04:01,100 --> 00:04:07,19
+Và mặc dù tất cả điện trở đều trên cùng một dây, có cùng một dòng điện, chúng đều có điện áp sụt giảm khác nhau chạy qua chúng. 
+
+44
+00:04:07,20 --> 00:04:14,220
+Theo định luật bảo toàn năng lượng, tổng điện áp cung cấp cho hệ thống bằng tổng điện áp của tất cả các điện áp trong mạch. 
+
+45
+00:04:14,220 --> 00:04:19,298
+Tưởng tượng nó là một con sông như chúng ta đã từng làm, với mỗi điện trở là một đống đá chắn ngang mặt nước. 
+
+46
+00:04:19,300 --> 00:04:26,760
+Dòng điện sẽ đều đi qua mỗi đống đá, cho dù nó là một đống đá cuội lớn, với điện trở cao, hay là một đống sỏi nhỏ, với điện trở thấp. 
+
+47
+00:04:26,760 --> 00:04:32,500
+Bởi vì dòng điện đi qua những viên sỏi nhỏ dễ dàng hơn, năng lượng dành cho việc đi qua chúng thấp. 
+
+48
+00:04:32,500 --> 00:04:36,730
+Đối với đá cuội lớn, có điện trở cao, 
+sẽ mất nhiều năng lượng hơn. 
+
+49
+00:04:36,730 --> 00:04:40,80
+Và sự thay đổi điện thế này chính là sự sụt giảm điện áp. 
+
+50
+00:04:40,80 --> 00:04:46,700
+Cùng một dòng điện, điện áp sụt giảm khi qua các điện trở lớn hơn thì cao hơn điện áp sụt giảm khi đi qua điện trở thấp. 
+
+51
+00:04:46,700 --> 00:04:49,500
+Nhưng hãy cùng tìm hiểu cách biểu thị điều này theo toán học. 
+
+52
+00:04:49,500 --> 00:04:58,820
+Nếu điện áp cung cấp bởi pin bằng tổng tất cả các điện áp sụt giảm khi đi qua điện trở, giả sử có 3 điện trở mắc nối tiếp, bạn có thể thay thế mỗi điện trở theo Định luật Ôm. 
+
+53
+00:04:58,820 --> 00:05:02,580
+Lượng điện áp sụt giảm khi đi qua mỗi điện trở tỷ lệ thuận với điện trở của nó. 
+
+54
+00:05:02,580 --> 00:05:10,960
+Hơn nữa, bởi vì cường độ dòng điện dòng điện là bằng nhau với tất cả các thành phần, bạn có thể thay điện trở toàn mạch bằng tổng tất cả các điện trở trong mạch nối tiếp. 
+
+55
+00:05:10,960 --> 00:05:13,99
+Tổng này được gọi là điện trở tương đương. 
+
+56
+00:05:13,100 --> 00:05:18,980
+Có một cách khác giúp bạn kết hợp điện trở trong mạch - bằng cách tách một đường dòng điện thành 2 hoặc nhiều nhánh. 
+
+57
+00:05:18,980 --> 00:05:25,820
+Khi các điện trở được sắp đặt sao cho dòng điện chia thành nhiều nhánh từ một nguồn duy nhất, chúng được gọi là mạch điện nối song song. 
+
+58
+00:05:25,820 --> 00:05:31,940
+Và trong trường hợp nối song song, bạn cần chú ý đến nguyên tắc được gọi là bảo toàn điện. 
+
+59
+00:05:31,940 --> 00:05:38,960
+Quy tắc này nhấn mạnh tất cả các dòng điện chạy đến đoạn giao cắt bằng với tất cả các dòng điện chạy ngoài đoạn giao. 
+
+60
+00:05:38,960 --> 00:05:41,400
+Tóm lại là những gì đi vào thì chắc chắn phải đi ra!
+
+61
+00:05:41,400 --> 00:05:46,580
+Với mỗi nhánh, lượng điện đi qua nó phụ thuộc vào điện trở tương đương của nó. 
+
+62
+00:05:46,580 --> 00:05:51,800
+Và bởi vì không còn dòng điện đơn lẻ chạy qua toàn mạch, điện không bị giới hạn theo một đường. 
+
+63
+00:05:51,800 --> 00:05:54,420
+Hãy cùng tưởng tượng nó một lần nữa 
+giống như dòng nước đang chảy. 
+
+64
+00:05:54,420 --> 00:06:02,680
+Nếu một con sông bị tách thành 2 nhánh riêng biệt, và có một nhánh có nhiều điện trở còn nhánh kia thì có ít, theo bạn nước sông sẽ hầu hết chảy về đâu?
+
+65
+00:06:02,680 --> 00:06:04,440
+Con đường có ít điện trở nhất!
+
+66
+00:06:04,440 --> 00:06:06,280
+Không phải tất cả lượng nước đều chảy vào con đường dễ đi. 
+
+67
+00:06:06,280 --> 00:06:09,750
+Sẽ vẫn có lượng nước chảy qua nhánh nhiều đá sỏi, nhưng không nhiều. 
+
+68
+00:06:09,750 --> 00:06:17,290
+Và trên dòng sông giả tưởng của chúng ta, cả hai nhánh, dù nhiều đá hay không, đều bắt đầu và kết thúc với độ cao như nhau, làm cho chúng có nguồn lực là như nhau. 
+
+69
+00:06:17,290 --> 00:06:24,270
+Trên phương diện điện năng, điều này có nghĩa là mỗi nhánh trong mạch nối song song, điện áp là như nhau cho dù điện trở cao hay thấp. 
+
+70
+00:06:24,270 --> 00:06:29,990
+Vì thế, đối với mạch mắc nối tiếp, cường độ dòng điện là như nhau cho tất cả các điện trở, và điện áp sụt giảm thay đổi. 
+
+71
+00:06:29,990 --> 00:06:35,940
+Nhưng trong mạch mắc song song, điện áp là như nhau đối với tất cả điện trở, và cường độ dòng điện chạy qua thay đổi. 
+
+72
+00:06:35,940 --> 00:06:41,780
+Hãy nhớ lại xem làm thế nào bạn cộng tất cả các điện trở lại để tìm điện trở tương đương cho các điện trở trong mạch nối tiếp?
+
+73
+00:06:41,780 --> 00:06:43,599
+Điều đó có đúng với mạch song song không?
+
+74
+00:06:43,600 --> 00:06:45,960
+Hãy cùng xem xét điều này theo toán học. 
+
+75
+00:06:45,960 --> 00:06:51,560
+Bảo toàn năng lượng nói rằng cường độ dòng điện trong dây trước khi tách bằng với cường độ dòng điện chạy ra ngoài. 
+
+76
+00:06:51,560 --> 00:06:55,420
+Nếu chúng ta có 3 nhánh, 
+dòng điện sẽ đi theo 3 hướng. 
+
+77
+00:06:55,420 --> 00:07:00,390
+Chúng ta có thể thay định luật Ôm cho mỗi dòng để có công thức tính theo điện áp và điện trở. 
+
+78
+00:07:00,400 --> 00:07:09,419
+Và bởi vì điện áp cho mỗi điện trở là tương đương trong mạch song song, bạn có thể lược bỏ điện áp ra khỏi toàn bộ công thức và chúng ta chỉ còn công thức tính điện trở tương đương cho mạch song song. 
+
+79
+00:07:09,420 --> 00:07:17,80
+Điều này chỉ ra rằng điện trở tương đương của mạch có điện trở mắc song song sẽ nhỏ hơn bất kì điện trở nào trong số các điện trở trong mạch. 
+
+80
+00:07:17,80 --> 00:07:20,99
+Và điều này có vẻ dễ hiểu hơn nếu bạn quay lại với giả tưởng về dòng sông của chúng ta. 
+
+81
+00:07:20,100 --> 00:07:28,140
+Thậm chí nếu một trong 2 nhánh của dòng sông vô cùng tắc, vẫn có nhiều dòng hơn chảy qua toàn hệ thống hơn là khi nhánh sông bị tắc đó không tồn tại. 
+
+82
+00:07:28,140 --> 00:07:35,20
+Vì thế bất kì nhánh thêm vào nào sẽ đều làm giảm tổng điện trở của hệ thống, và tăng cường độ dòng điện chạy qua toàn mạch. 
+
+83
+00:07:35,20 --> 00:07:42,919
+Chúng ta đã cùng học về mạch mắc nối tiếp và song song, giờ hãy cùng quay lại với những loại mạch mà chúng ta nói ở phần đầu và xem xem điều gì sẽ xảy ra khi bạn thực sự nối chúng. 
+
+84
+00:07:42,920 --> 00:07:47,360
+Khi bạn nối một bóng đèn điện với pin, 
+bạn thấy nó sáng rõ như thế nào. 
+
+85
+00:07:47,360 --> 00:07:51,40
+Điều gì sẽ xảy ra khi bạn thêm một bóng vào 
+và mắc theo kiểu mắc nối tiếp?
+
+86
+00:07:51,40 --> 00:07:56,420
+Bởi vì mỗi bóng đèn có điện trở riêng, vì thế điện trở trong mạch sẽ nhân đôi lên. 
+
+87
+00:07:56,420 --> 00:08:00,460
+Và điều này dẫn đến việc cường độ dòng điện 
+chỉ còn một nửa so với khi nối một bóng. 
+
+88
+00:08:00,460 --> 00:08:06,140
+Và chắc chắn là, một khi bạn hoàn thành mạch điện, bạn sẽ thấy các bóng đèn sáng yếu hơn ban đầu khi mạch chỉ có một bóng. 
+
+89
+00:08:06,140 --> 00:08:11,539
+Và nếu bạn thêm vào nhiều bóng đèn hơn nữa mắc nối tiếp, bạn sẽ thấy độ sáng sẽ tiếp tục giảm dần với mỗi bóng đèn thêm vào. 
+
+90
+00:08:11,540 --> 00:08:20,160
+Hãy cũng tạo một mạch điện một bóng, và thêm một bóng mắc song song, dòng điện được chia thành 2 nhánh khác nhau, mỗi nhánh có điện trở tương đương nhau. 
+
+91
+00:08:20,160 --> 00:08:23,640
+Bạn có thể thấy mỗi bóng có độ sáng tương tự 
+như khi nối mạch một bóng!
+
+92
+00:08:23,640 --> 00:08:24,840
+Tại sao lại như vậy?
+
+93
+00:08:24,840 --> 00:08:32,699
+Trong mạch song song, dòng điện có thêm một con đường nhưng giống hệt nhau để đi qua, vì thế tổng điện trở chỉ bằng một nửa khi nó vẫn là mạch một dây. 
+
+94
+00:08:32,700 --> 00:08:39,840
+Bởi vì điện trở tương đương bằng một nửa, điện áp không thay đổi, cường độ dòng điện tăng gấp đôi so với ban đầu. 
+
+95
+00:08:39,840 --> 00:08:48,200
+Nhưng bởi vì dòng điện cần phải chia đều cho mỗi đường, chúng ta có 2 bóng có cùng cường độ dòng điện chảy qua chúng tương đương với mạch một bóng. 
+
+96
+00:08:48,200 --> 00:08:49,800
+Điều này thật sự vô cùng hữu ích.
+
+97
+00:08:49,800 --> 00:08:56,599
+Hãy nghĩ về việc tất cả các ổ điện trong nhà bạn - chúng đều được nối song song, vì thế cho dù có bao nhiêu thiết bị được cắm vào, chúng đều nhận lượng điện áp như nhau. 
+
+98
+00:08:56,600 --> 00:09:01,600
+Nhưng! Điều gì sẽ xảy ra khi bạn tạo mạch 
+kết hợp các nối song song và nối nối tiếp?
+
+99
+00:09:01,600 --> 00:09:11,380
+Chúng ta đã có các công cụ để giải quyết hầu hết mọi cách sắp xếp mạch mà bạn gặp phải, vì vậy lần tới chúng ta sẽ xem xét một số ví dụ mấu chốt, về mặt toán học và điện học, vì thế đừng quên mang theo những chiếc bóng đèn!
+
+100
+00:09:11,380 --> 00:09:17,340
+Hôm nay, chúng ta đã học về pin và cách điện cực tạo ra từ điện trở tự nhiên của mọi loại pin. 
+
+101
+00:09:17,340 --> 00:09:24,180
+Chúng ta đã thảo luận về cấu hình mạch nối tiếp và song song, cũng như các định luật bảo toàn ảnh hưởng đến cường độ và điện áp của mỗi loại. 
+
+102
+00:09:24,180 --> 00:09:29,520
+Cuối cùng, chúng ta xem xét việc nối song song và nối tiếp có ảnh hưởng như thế nào đến các mạch điện trong ví dụ về mạch bóng đèn của chúng ta. 
+
+103
+00:09:29,520 --> 00:09:32,000
+Tập này được hỗ trợ bởi Prudential. 
+
+104
+00:09:32,000 --> 00:09:38,400
+Khoảng thời gian giữa lúc con người nghĩ họ nên bắt đầu tiết kiệm cho lúc về hưu và lúc họ thực sự về hưu được gọi là Action Gap. 
+
+105
+00:09:38,400 --> 00:09:46,140
+Theo một nghiên cứu gần đây được thực hiện bởi Prudential, trung bình người Mỹ bắt đầu tiết kiệm cho khi về hưu muộn hơn 7 năm so với lúc họ nghĩ là tốt nhất.
+
+106
+00:09:46,140 --> 00:09:52,240
+Điều này tiêu tốn của bạn 410.675,92 đô la trong toàn bộ cuộc đời.
+
+107
+00:09:52,240 --> 00:09:57,640
+Prudential cũng thấy rằng 80% người Mỹ chưa bao giờ tính toán lượng tiền họ sẽ tiêu khi về hưu. 
+
+108
+00:09:57,640 --> 00:10:04,140
+Cứ 3 người Mỹ lại có 1 người không tiết kiệm đủ cho khi về hưu, và hơn một nửa không đi đúng hướng để duy trì mức sống hiện tại của họ khi về hưu. 
+
+109
+00:10:04,140 --> 00:10:08,000
+Hãy truy cập Raceforretirement.com để xem xem 
+Action Gap ảnh hưởng đến bạn như thế nào. 
+
+110
+00:10:08,10 --> 00:10:11,760
+Khóa học Vật lý Cấp tốc được sản xuất với sự hỗ trợ của hãng phim PBS. 
+
+111
+00:10:11,760 --> 00:10:16,500
+Bạn có thể ghé qua trang của họ và tìm kiếm các tập mới nhất của các chương trình như là:
+
+112
+00:10:16,500 --> 00:10:19,720
+Deep Look, PBS Idea Channel, và The Art Assignment.
+
+113
+00:10:19,730 --> 00:10:23,840
+Tập này của Khóa học cấp tốc được quay 
+ở Xưởng phim khóa học cấp tốc của Tiến sĩ Cheryl C. Kinney
+
+114
+00:10:23,840 --> 00:10:28,260
+với sự hỗ trợ của những con người tuyệt vời cùng với đội ngũ đồ họa tuyệt vời không kém, Thought Cafe. 
+

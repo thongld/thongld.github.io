@@ -1,0 +1,320 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/Y6A3kajLgP0
+
+1
+00:00:00,000 --> 00:00:01,800
+
+2
+00:00:01,800 --> 00:00:01,820
+RAMESH YERRABALLI: Xin chào
+
+3
+00:00:01,820 --> 00:00:03,100
+Tôi là Ramesh Yerraballi.
+
+4
+00:00:03,100 --> 00:00:04,830
+JON VALVANO: và tôi là Jon Valvano.
+
+5
+00:00:04,830 --> 00:00:08,310
+Trong video này, chúng tôi sẽ hướng dẫn bạn bộ kit thí nghiệm cho lab.
+
+6
+00:00:08,310 --> 00:00:12,420
+Để thêm phần thú vị, chúng tôi sẽ demo
+
+7
+00:00:12,420 --> 00:00:13,890
+những lab đã hoàn thành.
+
+8
+00:00:13,890 --> 00:00:16,620
+RAMESH YERRABALLI: chúng ta bắt đầu.
+
+9
+00:00:16,620 --> 00:00:18,970
+JON VALVANO: phần quan trọng nhất của kit là
+
+10
+00:00:18,970 --> 00:00:20,520
+board vi điều khiển.
+
+11
+00:00:20,520 --> 00:00:25,690
+Các bạn nên mua 1 bộ kit Tiva LaunchPad,
+
+12
+00:00:25,690 --> 00:00:28,090
+kèm theo cáp USB.
+
+13
+00:00:28,090 --> 00:00:32,229
+Đây là vi xử lý ARM Cortex-M.
+
+14
+00:00:32,229 --> 00:00:37,070
+Bạn sẽ dùng board này để hoàn thành 5 bài lab.
+
+15
+00:00:37,070 --> 00:00:40,010
+RAMESH YERRABALLI: những lab còn lại còn thú vị hơn.
+
+16
+00:00:40,010 --> 00:00:41,810
+những sẽ phải đòi thêm vài phần mở rộng.
+
+17
+00:00:41,810 --> 00:00:48,270
+Những thiết bị bạn cần là vài điện trở với trở kháng khác nhau,
+
+18
+00:00:48,270 --> 00:00:53,470
+1 vài đèn LED khác màu, 1 vài công tắc,
+
+19
+00:00:53,470 --> 00:00:56,010
+và jack âm thanh.
+
+20
+00:00:56,010 --> 00:00:59,260
+JON VALVANO: chúng ta sẽ dùng 1 biến trở dạng thanh.
+
+21
+00:00:59,260 --> 00:01:01,950
+Tuỳ bạn mua ở đâu, mà nó sẽ ngắn
+
+22
+00:01:01,950 --> 00:01:03,320
+hay dài.
+
+23
+00:01:03,320 --> 00:01:06,170
+Cái nào cũng được.
+
+24
+00:01:06,170 --> 00:01:09,360
+RAMESH YERRABALLI: để ráp tất cả lại với nhau, bạn cần vài sợi cáp
+
+25
+00:01:09,360 --> 00:01:10,930
+và 1 breadboard.
+
+26
+00:01:10,930 --> 00:01:16,950
+Bạn có thể mua riêng lẻ hay nguyên bộ kit.
+
+27
+00:01:16,950 --> 00:01:18,240
+Chẳng vấn đề gì.
+
+28
+00:01:18,240 --> 00:01:21,370
+Kích cỡ cũng không quan trọng.
+
+29
+00:01:21,370 --> 00:01:24,910
+JON VALVANO: hướng dẫn mua thiết bị có sẵn trên website.
+
+30
+00:01:24,910 --> 00:01:27,920
+Bây giờ tôi sẽ giới thiệu những bài lab theo thứ tự
+
+31
+00:01:27,920 --> 00:01:29,400
+bạn sẽ hoàn thành.
+
+32
+00:01:29,400 --> 00:01:32,230
+RAMESH YERRABALLI: như Jon đã nói, ở những lab đầu tiên
+
+33
+00:01:32,230 --> 00:01:37,560
+ta sẽ chỉ dùng launchpad và 1 sợi cáp để nối với máy tính.
+
+34
+00:01:37,560 --> 00:01:40,640
+JON VALVANO: ở lab "Giao tiếp", bạn sẽ giao tiếp với
+
+35
+00:01:40,640 --> 00:01:42,335
+1 công tắc và 1 đèn LED.
+
+36
+00:01:42,335 --> 00:01:45,580
+
+37
+00:01:45,580 --> 00:01:49,010
+RAMESH YERRABALLI: ở lab điều khiển đèn giao thông,
+
+38
+00:01:49,010 --> 00:01:52,870
+bạn sẽ dùng 1 máy trạng thái để làm bộ điều khiển đèn giao thông,
+
+39
+00:01:52,870 --> 00:01:59,540
+và giao tiếp với 1 số công tắc cho giao thông
+
+40
+00:01:59,540 --> 00:02:02,230
+và 1 công tắc làm nút bấm cho người đi bộ.
+
+41
+00:02:02,230 --> 00:02:06,520
+JON VALVANO: trong lab chỉnh âm thanh cho đàn ghita, ta sẽ dùng interrupt để tạo ra
+
+42
+00:02:06,520 --> 00:02:11,500
+âm thanh cho phím La.
+
+43
+00:02:11,500 --> 00:02:14,530
+RAMESH YERRABALLI: Jon, còn gì nữa không?
+
+44
+00:02:14,530 --> 00:02:18,200
+JON VALVANO: à, ngoài labs ra,
+
+45
+00:02:18,200 --> 00:02:22,380
+có vài project nữa, tôi sẽ cho bạn thấy nó hoạt động như thế nào.
+
+46
+00:02:22,380 --> 00:02:27,020
+Đây là xe xài động cơ bước, là sự kết hợp
+
+47
+00:02:27,020 --> 00:02:28,530
+của tất cả bài lab trước đó.
+
+48
+00:02:28,530 --> 00:02:30,325
+Bạn thấy không, nó chạy được.
+
+49
+00:02:30,325 --> 00:02:36,248
+
+50
+00:02:36,248 --> 00:02:39,490
+Thầy Yerraballi, còn những lab khác thú vị hơn.
+
+51
+00:02:39,490 --> 00:02:41,270
+RAMESH YERRABALLI: đúng rồi, chúng đây.
+
+52
+00:02:41,270 --> 00:02:42,980
+JON VALVANO: đây là lab đàn piano điện tử.
+
+53
+00:02:42,980 --> 00:02:48,520
+Bạn sẽ giao tiếp với những công tắc và làm 1 bộ chuyển đổi tín hiệu số sang tín hiệu tương tự.
+
+54
+00:02:48,520 --> 00:02:50,120
+Kết hợp lại, chúng tạo ra âm thanh.
+
+55
+00:02:50,120 --> 00:02:51,500
+[nhạc đang chơi
+
+56
+00:02:51,500 --> 00:02:55,650
+
+57
+00:02:55,650 --> 00:02:58,805
+Âm thanh có thể tạo thành âm nhạc.
+
+58
+00:02:58,805 --> 00:03:00,068
+[tiếng nhạc beep beep]
+
+59
+00:03:00,068 --> 00:03:03,460
+
+60
+00:03:03,460 --> 00:03:06,220
+RAMESH YERRABALLI: đây là lab thu thập dữ liệu.
+
+61
+00:03:06,220 --> 00:03:11,320
+Bạn sẽ giao tiếp 1 biến trở dạng thanh kéo,
+
+62
+00:03:11,320 --> 00:03:17,200
+vị trí của thanh kéo sẽ được hiện trên 1 màn hình LCD.
+
+63
+00:03:17,200 --> 00:03:21,350
+JON VALVANO: kết hợp với nhau, ta có 1 máy chơi game cầm tay,
+
+64
+00:03:21,350 --> 00:03:27,100
+với cần điều khiển, âm thanh, và đây là game
+
+65
+00:03:27,100 --> 00:03:29,430
+kẻ xâm lăng vũ trụ.
+
+66
+00:03:29,430 --> 00:03:32,810
+RAMESH YERRABALLI: chúng ta sẽ làm 1 phiên bản của game đó,
+
+67
+00:03:32,810 --> 00:03:35,830
+chạy trên board này.
+
+68
+00:03:35,830 --> 00:03:41,230
+Bạn cũng có cần điều khiển và phím bấm để chơi game.
+
+69
+00:03:41,230 --> 00:03:44,300
+
+70
+00:03:44,300 --> 00:03:47,070
+Jon, đây là gì vậy?
+
+71
+00:03:47,070 --> 00:03:49,840
+JON VALVANO: giống như trước, đây là những project
+
+72
+00:03:49,840 --> 00:03:50,850
+chúng tôi làm sẵn cho bạn.
+
+73
+00:03:50,850 --> 00:03:54,260
+Đây là bộ chuyển đổi tín hiệu số sang tín hiệu tương tự, hơi khác cái mà
+
+74
+00:03:54,260 --> 00:03:55,630
+bạn làm trong lab.
+
+75
+00:03:55,630 --> 00:03:58,940
+Đây là robot tự động.
+
+76
+00:03:58,940 --> 00:04:03,430
+Khi kết hợp tất cả với nhau, lớp này sẽ làm 1 robot
+
+77
+00:04:03,430 --> 00:04:06,580
+chạy được trên đường.
+
+78
+00:04:06,580 --> 00:04:07,790
+Đây, bạn có nó.
+
+79
+00:04:07,790 --> 00:04:11,230
+Tôi hi vọng bạn sẽ tìm thấy nhiều niềm vui trong lớp này
+
+80
+00:04:11,230 --> 00:04:12,480
+như chúng tôi đã cố chuẩn bị cho bạn.
+
+81
+00:04:12,480 --> 00:04:13,793

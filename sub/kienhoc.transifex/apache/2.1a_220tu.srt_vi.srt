@@ -1,0 +1,130 @@
+0
+00:00:00,000 --> 00:00:00,760
+anlynguyenphuoc_gtc_Y2VjYm 30/08/2016
+
+1
+00:00:00,760 --> 00:00:02,260
+Trong bài học này, ta sẽ tìm hiểu
+
+2
+00:00:02,260 --> 00:00:06,530
+các vấn đề về dữ liệu lớn
+gồm cách phân tán công việc,
+
+3
+00:00:06,530 --> 00:00:09,350
+xử lý sự cố và máy tính chạy chậm.
+
+4
+00:00:09,350 --> 00:00:12,770
+Ngoài ra ta sẽ học về phần cứng và
+phần mềm cho dữ liệu lớn,
+
+5
+00:00:12,770 --> 00:00:15,810
+bao gồm MapReduce và Apache Spark.
+
+6
+00:00:15,810 --> 00:00:19,330
+Ta sẽ tìm hiểu ngôn ngữ truy vấn có cấu trúc, SQL,
+
+7
+00:00:19,330 --> 00:00:22,770
+và cách Spark thực hiện truy vấn - Spark SQL.
+
+8
+00:00:22,770 --> 00:00:26,840
+Ngoài ra ta sẽ tìm hiểu tài liệu về Apache Spark
+
+9
+00:00:26,840 --> 00:00:29,270
+và cộng đồng Apache Spark.
+
+10
+00:00:29,270 --> 00:00:33,490
+Cuối cùng, ta sẽ xem qua bài tập tuần này
+
+11
+00:00:33,490 --> 00:00:35,795
+đó là làm việc với tập tin web server log trên Apache.
+
+12
+00:00:35,795 --> 00:00:38,370
+
+13
+00:00:38,370 --> 00:00:40,480
+Apache Spark là gì?
+
+14
+00:00:40,480 --> 00:00:44,610
+Nó là công cụ phân tích dữ liệu lớn
+hiệu quả và có khả năng mở rộng.
+
+15
+00:00:44,610 --> 00:00:47,520
+Trong bài học này, ta sẽ tìm hiểu làm thế nào
+
+16
+00:00:47,520 --> 00:00:51,570
+Apache Spark lại hiệu quả và có khả năng mở rộng.
+
+17
+00:00:51,570 --> 00:00:55,220
+Điều khó khăn ở đây là
+dữ liệu lớn phát triển nhanh hơn
+
+18
+00:00:55,220 --> 00:00:57,430
+tốc độ xử lý.
+
+19
+00:00:57,430 --> 00:01:01,310
+Và dữ liệu phát triển nhanh hơn
+so với khả năng lưu trữ của máy.
+
+20
+00:01:01,310 --> 00:01:06,470
+Ta không thể xử lý và lưu trữ
+tất cả dữ liệu trong một máy duy nhất.
+
+21
+00:01:06,470 --> 00:01:10,300
+Nhưng cũng có hướng giải quyết,
+đó là điện toán đám mây.
+
+22
+00:01:10,300 --> 00:01:14,850
+Điện toán đám mây giúp ta có
+hàng triệu máy tính trong tay
+
+23
+00:01:14,850 --> 00:01:18,190
+và cho phép ta tận dụng các tài nguyên nói trên
+
+24
+00:01:18,190 --> 00:01:19,860
+để giải quyết dữ liệu lớn.
+
+25
+00:01:19,860 --> 00:01:24,190
+Vấn đề là, ta sẽ lập trình điện toán đám mây như thế nào?
+
+26
+00:01:24,190 --> 00:01:27,560
+Điện toán đám mây chính là thứ thay đổi cuộc chơi.
+
+27
+00:01:27,560 --> 00:01:31,290
+Nó cung cấp khả năng lưu trữ và điện toán giá rẻ
+
+28
+00:01:31,290 --> 00:01:34,080
+và chi phí đang giảm theo từng năm.
+
+29
+00:01:34,080 --> 00:01:37,880
+Nhưng vấn đề là cách ta lập trình với nguồn tài nguyên này.
+
+30
+00:01:37,880 --> 00:01:38,521
+

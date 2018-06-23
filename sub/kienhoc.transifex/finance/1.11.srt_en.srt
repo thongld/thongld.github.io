@@ -1,0 +1,229 @@
+1
+00:00:08,10 --> 00:00:11,629
+https://youtu.be/1miAU6IFtLc
+Welcome back, now let me show you
+power of discounting
+
+2
+00:00:11,630 --> 00:00:16,59
+which is kind of power of compounding in
+reverse, right? So let´s
+
+3
+00:00:16,59 --> 00:00:22,169
+stare at what I'm asking you to do.
+Remember? I asked you to figure out
+
+4
+00:00:22,169 --> 00:00:29,29
+changing N, N is very important, but
+the combination of N and interest rate is
+
+5
+00:00:29,29 --> 00:00:30,560
+what it's all about.
+
+6
+00:00:30,560 --> 00:00:35,900
+So the lower the N and the lower the
+interest rate, less you´ll see the power of
+
+7
+00:00:35,900 --> 00:00:40,720
+compounding and discounting, right? So
+let's do power of discounting. What are
+
+8
+00:00:40,720 --> 00:00:46,239
+the Present Values of receiving a
+billion dollars, remember billion dollars,
+
+9
+00:00:46,239 --> 00:00:47,800
+it´s a lot of money,
+
+10
+00:00:47,800 --> 00:00:52,89
+nine zeros, I always forget how many
+zeros in a million, billion, but you can always
+
+11
+00:00:52,89 --> 00:00:58,920
+google. So at 5 percent versus 15, remember
+where I'm pulling these 5 and 15, I'm
+
+12
+00:00:58,920 --> 00:01:06,180
+pulling them from historical data
+admittedly peculiar to the US, but I'm
+
+13
+00:01:06,180 --> 00:01:12,270
+choosing 50 years from today instead
+of 90, just to see what happens. So
+
+14
+00:01:12,270 --> 00:01:22,579
+formulaically, it's very tough and I'm
+going to talk and write as I talk, Okay? So what
+
+15
+00:01:22,579 --> 00:01:27,8
+is the first one, let's write down the
+formula, so you take the first at 5 percent
+
+16
+00:01:27,9 --> 00:01:37,960
+will be, you´ll be taking a billion dollars
+and
+
+17
+00:01:37,960 --> 00:01:48,149
+dividing by 1.05 raised to power, how much? 50.
+This is the calculation you're doing
+
+18
+00:01:48,150 --> 00:01:53,220
+and the second one is figure out the
+Present Value at which interest rate? At
+
+19
+00:01:53,220 --> 00:01:59,600
+15 percent, so you´ll just replace this
+0.05 or 1.05, this whole
+
+20
+00:01:59,600 --> 00:02:08,609
+thing by 1.15, of course raised to power what? 50.
+So these are the two different
+
+21
+00:02:08,610 --> 00:02:12,800
+calculations I'm asking you to do. Now if you stare at this and if you can do it in
+
+22
+00:02:12,800 --> 00:02:17,360
+your head, as I said earlier, there's
+something really bizarre about you, but
+
+23
+00:02:17,360 --> 00:02:22,60
+we'll assume that you're not going to
+do it in your head and so we´re going to use Excel, so what
+
+24
+00:02:22,60 --> 00:02:29,370
+I'm going to do is, show you what Excel
+will do a little bit, so that you can figure
+
+25
+00:02:29,370 --> 00:02:35,930
+out. So going to Excel, we still
+have our old buddy over there and we´re going to
+
+26
+00:02:35,930 --> 00:02:43,160
+delete it, we're going to now write the
+numbers. So let's write equals, but now after
+
+27
+00:02:43,160 --> 00:02:51,820
+pressing equals, what will you enter?
+You´ll enter not FV, but PV and then open
+
+28
+00:02:51,820 --> 00:02:57,140
+parenthesis. When you open the parenthesis, you´ll
+clearly identify what all you're looking
+
+29
+00:02:57,140 --> 00:03:05,268
+at, right? So the first number is rate, so
+let's put 0.05 and let's
+
+30
+00:03:05,269 --> 00:03:09,150
+put number of periods, how much...how much
+did we have in our problem? I think we
+
+31
+00:03:09,150 --> 00:03:18,850
+had 50 years. Did we have any payments
+in between? Answer is no, so you gotta put 0, you know, when I
+
+32
+00:03:18,850 --> 00:03:22,420
+do this many times, I am just doing it
+quickly and I forget that PMT isn´t
+
+33
+00:03:22,420 --> 00:03:26,958
+there, just be careful, because you're
+taking advantage of Excel, but Excel has
+
+34
+00:03:26,959 --> 00:03:32,950
+rules to follow too, right? So how much are you
+getting paid? Now here, enter a bunch of zeros,
+
+35
+00:03:32,950 --> 00:03:44,649
+1 000 000 000 and then press ENTER, you
+should get and I'm just looking over to
+
+36
+00:03:44,650 --> 00:03:49,210
+make sure, we have the right numbers. You
+should get,
+
+37
+00:03:49,210 --> 00:03:56,140
+let me just make sure I'm getting all
+this. You should get I think, at 5
+
+38
+00:03:56,140 --> 00:04:02,760
+percent, 50 years one billion dollars,
+you should get 87 million, two hundred
+
+39
+00:04:02,760 --> 00:04:11,730
+and three, seven twenty six, or almost seven twenty seven, 87,203,727
+
+40
+00:04:11,730 --> 00:04:19,820
+dollars. That's gone down,
+but not drastically. Now what I'm going
+
+41
+00:04:19,820 --> 00:04:25,610
+to do? I'm going to keep this Excel spreadsheet open and going to press 0.15
+
+42
+00:04:25,610 --> 00:04:31,80
+and what do you think is going to happen?
+
+43
+00:04:31,80 --> 00:04:38,219
+You´re left with how much? Only nine hundred and
+twenty-two thousand dollars, eight hundred.
+
+44
+00:04:38,220 --> 00:04:50,260
+922,800 dollars, eight hundred and one, so the number should be
+922800.84. What I´m going to do is, I´m going to
+
+45
+00:04:50,260 --> 00:04:54,000
+let you take a break, do this on your own  and when
+we come back, I´ll
+
+46
+00:04:54,000 --> 00:04:59,500
+pick up where we left, give you the two
+numbers and move on to more, more
+
+47
+00:04:59,500 --> 00:05:01,830
+exciting stuff. See you soon. Bye.
+

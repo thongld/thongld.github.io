@@ -1,0 +1,248 @@
+1
+00:00:00,700 --> 00:00:05,760
+Trong video trước ta đã tính được lợi nhuận
+cao nhất có thể bằng cách thay đổi lượng đường
+
+2
+00:00:05,760 --> 00:00:09,940
+trong nước chanh. Nhưng để làm việc đó
+ta phải sử dụng rất nhiều ô trên bảng Excel.
+
+3
+00:00:09,950 --> 00:00:14,030
+Ta cũng phải tư duy rất nhiều.
+
+4
+00:00:14,180 --> 00:00:18,700
+Công thức là gì? Thêm Data Table như thế nào?
+Thêm CF như thế nào?
+
+5
+00:00:18,880 --> 00:00:23,020
+Mà tôi lại hứa với các bạn rằng ta sẽ khiến
+Excel tư duy hộ chúng ta.
+
+6
+00:00:23,160 --> 00:00:28,530
+Vậy trong video này tôi sẽ giúp bạn 
+tìm ra lợi nhuận cao nhất còn dễ hơn nữa
+
+7
+00:00:28,530 --> 00:00:34,150
+bằng một công cụ trong Excel gọi là Solver.
+Solver đã được xây dựng sẵn trong Excel.
+
+8
+00:00:34,150 --> 00:00:37,790
+Tuy nhiên trước khi sử dụng 
+bạn phải kích hoạt nó.
+
+9
+00:00:38,000 --> 00:00:41,440
+Cách làm như thế này.
+Ta vào các options của Excel,
+
+10
+00:00:43,360 --> 00:00:47,200
+vào mục Add-ins và nhấp chuột vào
+Excel Add-ins. Công cụ Solver đây rồi.
+
+11
+00:00:47,200 --> 00:00:50,560
+Bạn chỉ việc tick vào, và nó sẽ
+xuất hiện ở ngay kia.
+
+12
+00:00:50,570 --> 00:00:55,690
+Bạn không cần khởi động lại Excel mà
+có thể sử dụng ngay vì nó đã được kích hoạt.
+
+13
+00:00:56,120 --> 00:01:00,080
+Vậy Solver có công dụng gì?
+Solver hơi giống với Goal Seek,
+
+14
+00:01:00,080 --> 00:01:05,260
+nhưng mạnh hơn. Vì chúng ta không chỉ
+tìm kiếm mục tiêu,
+
+15
+00:01:05,260 --> 00:01:10,260
+ta còn có thể cực đại hay cực tiểu hóa giá trị
+và xét nhiều ô cùng một lúc.
+
+16
+00:01:10,260 --> 00:01:12,000
+Hãy cùng xem nó như thế nào nhé.
+
+17
+00:01:12,000 --> 00:01:15,579
+Chúng ta sẽ xóa hết những ô này,
+không cần Data Table nữa
+
+18
+00:01:15,579 --> 00:01:21,039
+vì chúng ta sẽ trực tiếp tìm ra giá trị đúng.
+Ta nhấp chuột vào Solver, được rồi.
+
+19
+00:01:21,560 --> 00:01:25,200
+Giờ ta sẽ chọn ô mà ta muốn phân tích: chính ô đó.
+
+20
+00:01:25,200 --> 00:01:29,620
+Chúng ta sẽ đặt là "cực đại"
+qua việc thay đổi giá trị của đường.
+
+21
+00:01:29,620 --> 00:01:36,380
+Ta thấy công cụ này khá gióng với Goal Seek.
+Ở trên trang tính...Để tôi di chuyển.
+
+22
+00:01:36,389 --> 00:01:41,309
+Bạn đã có giá trị rồi đó. Thấy chưa? 
+Nó xuất hiện ngay lập tức trước mắt chúng ta.
+
+23
+00:01:41,560 --> 00:01:46,060
+Chúng ta có giá trị lớn nhất là 120 gì đó.
+Rất chính xác.
+
+24
+00:01:46,060 --> 00:01:49,360
+Chúng ta không cần Data Table hay CF.
+
+25
+00:01:49,360 --> 00:01:51,740
+Chúng ta không cần nhiều ô trên trang Excel.
+
+26
+00:01:51,740 --> 00:01:55,720
+Mà chúng ta vẫn có ngay giá trị. Hay đúng không?
+
+27
+00:01:55,720 --> 00:02:00,940
+Solver còn giỏi hơn thế nữa cơ! Ta có thể
+làm nhiều việc hữu ích hơn nữa.
+
+28
+00:02:01,220 --> 00:02:07,060
+Hãy xem chúng ta còn có thể làm được gì.
+Chúng ta cũng có thể thay đổi lượng nước và chanh.
+
+29
+00:02:07,060 --> 00:02:11,780
+Chúng ta không cần giới hạn chỉ xét một
+giá trị là đường như với Goal Seek.
+
+30
+00:02:12,180 --> 00:02:18,520
+Ở đây ta có thể xét nhiều ô khác nhau.
+Ta viết: thay đổi cả nước và chanh.
+
+31
+00:02:19,700 --> 00:02:25,280
+Một lần nữa ta đã có đáp án. Tuy nhiên
+giờ ta có giá trị nước và chanh là 0.
+
+32
+00:02:25,640 --> 00:02:26,740
+Đừng làm vậy.
+
+33
+00:02:26,740 --> 00:02:33,020
+Hãy quay ngược lại giá trị cũ. Nếu Solver
+giải ra thứ gì đó mà bạn không muốn,
+
+34
+00:02:33,020 --> 00:02:38,160
+bạn luôn có thể chọn option này để quay lại
+kết quả trước khi chạy Solver.
+
+35
+00:02:38,160 --> 00:02:41,680
+Bạn không nên lo lắng rằng Solver
+sẽ làm rối tung toàn bộ trang tính của mình
+
+36
+00:02:41,680 --> 00:02:45,940
+vì bạn luôn có thể chọn option này
+và mọi thứ sẽ quay về như ban đầu.
+
+37
+00:02:46,680 --> 00:02:47,980
+Vậy đây không phải là kết quả
+mà chúng ta muốn.
+
+38
+00:02:47,980 --> 00:02:52,160
+0 quả chanh và 0 ml nước. Chúng ta muốn 
+thứ gì đó thực tế hơn cơ.
+
+39
+00:02:52,420 --> 00:02:55,620
+Solver có thể hỗ trợ điều này
+bằng cách đưa vào các hạn mức,
+
+40
+00:02:55,620 --> 00:02:58,900
+tức là những quy định mà Solver phải nghe theo.
+
+41
+00:02:58,900 --> 00:03:05,240
+Ví dụ ta có thể viết: Phải có ít nhất
+3 quả chanh và lượng nước tối thiểu
+
+42
+00:03:05,240 --> 00:03:12,100
+phải gấp 3 lần lượng đường, 
+nếu không nước chanh sẽ lạ lắm.
+
+43
+00:03:12,359 --> 00:03:17,849
+Vậy nếu chúng ta đặt ra các quy tắc này,
+Solver sẽ tìm ra phương án trong khuôn khổ
+các quy tắc đó.
+
+44
+00:03:17,849 --> 00:03:24,749
+Thật không may, như bạn thấy ta có chính xác
+lượng nước nhiều gấp 3 lần lượng đường
+
+45
+00:03:24,749 --> 00:03:28,920
+và chính xác 3 quả chanh. Tất nhiên 
+điều này không có gì là lạ,
+
+46
+00:03:28,920 --> 00:03:33,120
+vì quy định mà ta đặt ra cho mức bán hàng
+mong muốn chỉ phụ thuộc vào đường.
+
+47
+00:03:33,120 --> 00:03:37,100
+Vậy nước và chanh thay đổi đến mấy
+cũng không có tác động.
+
+48
+00:03:37,340 --> 00:03:40,390
+Trong bài tập về nhà tuần này,
+bạn sẽ phải thay đổi điều đó.
+
+49
+00:03:40,390 --> 00:03:45,650
+Chúng tôi sẽ cho các bạn một công thức mới
+cho lượng bán hàng mong muốn. Công thức này
+sẽ xét đến cả lượng nước và chanh.
+
+50
+00:03:45,920 --> 00:03:50,890
+Sau đó mục tiêu của bạn là dùng Solver
+để tìm ra món nước chanh hoàn hảo.
+
+51
+00:03:50,890 --> 00:03:52,050
+Chúc may mắn!
+

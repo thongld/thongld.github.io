@@ -1,0 +1,411 @@
+941
+00:40:59,940 --> 00:41:04,680
+https://youtu.be/G721cooZXgs
+In this case, since x
+is 5, we execute it,
+
+942
+00:41:04,680 --> 00:41:07,350
+then we come back here,
+we're going to another one.
+
+943
+00:41:07,350 --> 00:41:10,390
+If x is greater than 20-- well
+this turns out to be false.
+
+944
+00:41:10,390 --> 00:41:12,910
+
+945
+00:41:12,910 --> 00:41:14,610
+So we skip that.
+
+946
+00:41:14,610 --> 00:41:16,370
+So bigger does not run.
+
+947
+00:41:16,370 --> 00:41:17,590
+That line never runs.
+
+948
+00:41:17,590 --> 00:41:22,130
+So the output is
+smaller, [? finni. ?]
+
+949
+00:41:22,130 --> 00:41:25,890
+Now, here, we can take a look
+at it in the picture diagram.
+
+950
+00:41:25,890 --> 00:41:29,230
+We run x equals 5,
+we ask a question--
+
+951
+00:41:29,230 --> 00:41:31,490
+this doesn't hurt x
+to ask the question.
+
+952
+00:41:31,490 --> 00:41:32,960
+Is x less than 10?
+
+953
+00:41:32,960 --> 00:41:33,810
+The answer is yes.
+
+954
+00:41:33,810 --> 00:41:36,780
+So we drive down this little
+path, we print smaller.
+
+955
+00:41:36,780 --> 00:41:39,780
+And then we rejoin the freeway.
+
+956
+00:41:39,780 --> 00:41:41,870
+Is x less than 20?
+
+957
+00:41:41,870 --> 00:41:42,380
+No.
+
+958
+00:41:42,380 --> 00:41:45,340
+So we skip and we continue.
+
+959
+00:41:45,340 --> 00:41:47,710
+So this never gets executed.
+
+960
+00:41:47,710 --> 00:41:49,330
+So you can think
+of it either way.
+
+961
+00:41:49,330 --> 00:41:53,280
+You can think of it either sort
+of like gestalt. Say, if this
+
+962
+00:41:53,280 --> 00:41:55,100
+is true, do what's indented.
+
+963
+00:41:55,100 --> 00:41:58,600
+Or you can imagine a little car
+driving down a highway making
+
+964
+00:41:58,600 --> 00:42:00,500
+turn choices as it goes.
+
+965
+00:42:00,500 --> 00:42:02,300
+They're equivalent.
+
+966
+00:42:02,300 --> 00:42:04,900
+Over time, it's probably
+you'll just start seeing this
+
+967
+00:42:04,900 --> 00:42:06,404
+and start thinking this way.
+
+968
+00:42:06,404 --> 00:42:08,070
+But sometimes it helps
+to think about it
+
+969
+00:42:08,070 --> 00:42:11,810
+this way for a little while.
+
+970
+00:42:11,810 --> 00:42:13,100
+OK.
+
+971
+00:42:13,100 --> 00:42:16,410
+Now, the next thing I want to
+show you is repeated steps.
+
+972
+00:42:16,410 --> 00:42:19,760
+Steps that happen over
+and over and over again.
+
+973
+00:42:19,760 --> 00:42:20,970
+OK?
+
+974
+00:42:20,970 --> 00:42:23,280
+And that again, when
+I said, oh, computers
+
+975
+00:42:23,280 --> 00:42:25,030
+are good at handling
+a billion words, well
+
+976
+00:42:25,030 --> 00:42:27,870
+that means it has to have a
+loop, or a repeated section.
+
+977
+00:42:27,870 --> 00:42:28,692
+One for each word.
+
+978
+00:42:28,692 --> 00:42:30,400
+It's going to do
+something for each word.
+
+979
+00:42:30,400 --> 00:42:33,930
+
+980
+00:42:33,930 --> 00:42:37,540
+So here we go, and
+in Python-- let's
+
+981
+00:42:37,540 --> 00:42:39,880
+pick a different festive color.
+
+982
+00:42:39,880 --> 00:42:41,910
+Let's pick purple
+as a festive color.
+
+983
+00:42:41,910 --> 00:42:43,990
+So here's our program,
+starts at the beginning.
+
+984
+00:42:43,990 --> 00:42:48,252
+Sets the variable n to 5, and
+then a key word, reserve word,
+
+985
+00:42:48,252 --> 00:42:49,350
+while.
+
+986
+00:42:49,350 --> 00:42:53,300
+While n greater than 0-- again,
+this is asking a question.
+
+987
+00:42:53,300 --> 00:42:57,080
+This is asking a question--
+is n greater than 0?
+
+988
+00:42:57,080 --> 00:42:58,240
+That's a question.
+
+989
+00:42:58,240 --> 00:42:59,580
+If yes, we're going to do this.
+
+990
+00:42:59,580 --> 00:43:00,990
+If no, we're going to do that.
+
+991
+00:43:00,990 --> 00:43:02,750
+Over here, if it's
+true, we're going
+
+992
+00:43:02,750 --> 00:43:05,060
+to execute the
+indented part, and then
+
+993
+00:43:05,060 --> 00:43:06,720
+come back and do it again.
+
+994
+00:43:06,720 --> 00:43:09,280
+If it's false, we're
+going to skip down.
+
+995
+00:43:09,280 --> 00:43:13,020
+So it's kind of like an if,
+except it keeps doing it
+
+996
+00:43:13,020 --> 00:43:15,440
+over and over and over again.
+
+997
+00:43:15,440 --> 00:43:17,690
+So it comes in, sets n to 5.
+
+998
+00:43:17,690 --> 00:43:18,740
+Is n greater than 0?
+
+999
+00:43:18,740 --> 00:43:19,950
+Yeah, sure.
+
+1000
+00:43:19,950 --> 00:43:23,090
+So we print n, outcomes 5.
+
+1001
+00:43:23,090 --> 00:43:24,800
+Then it says, n
+equals n minus 1.
+
+1002
+00:43:24,800 --> 00:43:27,190
+So n becomes 4.
+
+1003
+00:43:27,190 --> 00:43:28,910
+We can change colors.
+
+1004
+00:43:28,910 --> 00:43:31,935
+Then it goes back up.
+
+1005
+00:43:31,935 --> 00:43:35,690
+Goes back up, and asks
+the question again.
+
+1006
+00:43:35,690 --> 00:43:40,290
+n is 4, it's still greater
+than 0, so it comes through.
+
+1007
+00:43:40,290 --> 00:43:45,010
+Prints out 4, subtracts
+1, so n is now 3.
+
+1008
+00:43:45,010 --> 00:43:45,800
+Goes back up.
+
+1009
+00:43:45,800 --> 00:43:48,700
+
+1010
+00:43:48,700 --> 00:43:49,620
+Is n greater 0?
+
+1011
+00:43:49,620 --> 00:43:50,690
+Yes, it is.
+
+1012
+00:43:50,690 --> 00:43:52,350
+Print out 3.
+
+1013
+00:43:52,350 --> 00:43:55,290
+Subtract 1, now it's 2.
+
+1014
+00:43:55,290 --> 00:43:58,200
+So outcome 3 and 2.
+
+1015
+00:43:58,200 --> 00:43:59,890
+And it goes back up.
+
+1016
+00:43:59,890 --> 00:44:00,960
+Still greater than 0?
+
+1017
+00:44:00,960 --> 00:44:02,040
+Yes, it is.
+
+1018
+00:44:02,040 --> 00:44:04,790
+
+1019
+00:44:04,790 --> 00:44:07,570
+Now it's 1.
+
+1020
+00:44:07,570 --> 00:44:11,000
+Now we subtract 1, it becomes 0.
+
+1021
+00:44:11,000 --> 00:44:11,890
+Is it greater than 0?
+
+1022
+00:44:11,890 --> 00:44:12,590
+No.
+
+1023
+00:44:12,590 --> 00:44:15,370
+And we finally leave.
+
+1024
+00:44:15,370 --> 00:44:17,440
+And we finally drop down.
+
+1025
+00:44:17,440 --> 00:44:21,280
+And so the last thing
+becomes the printer blastoff.
+
+1026
+00:44:21,280 --> 00:44:22,810
+So this is a loop.
+
+1027
+00:44:22,810 --> 00:44:25,910
+The notion that we're going
+to run this little bit of code
+
+1028
+00:44:25,910 --> 00:44:26,445
+five times.
+
+1029
+00:44:26,445 --> 00:44:33,060
+
+1030
+00:44:33,060 --> 00:44:36,130
+We're going to run this
+little bit of code five times.
+
+1031
+00:44:36,130 --> 00:44:39,830
+And loops have these things
+we call iteration variables.
+
+1032
+00:44:39,830 --> 00:44:41,590
+And that is this n.
+
+1033
+00:44:41,590 --> 00:44:43,530
+It's a variable
+that specifically
+
+1034
+00:44:43,530 --> 00:44:45,930
+is changing each time it
+goes through the loop.
+

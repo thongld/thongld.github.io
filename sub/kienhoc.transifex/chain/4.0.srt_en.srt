@@ -1,0 +1,956 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/EduASIz6cBc
+
+1
+00:00:00,500 --> 00:00:03,850
+Welcome to week 4 of SC1X Supply Chain Fundamentals.
+
+2
+00:00:03,850 --> 00:00:06,330
+Now we're going to turn from doing forecasting, which
+
+3
+00:00:06,330 --> 00:00:08,189
+we spent the previous three weeks on,
+
+4
+00:00:08,189 --> 00:00:11,260
+and we're going focus in on inventory.
+
+5
+00:00:11,260 --> 00:00:13,740
+So you'll see that the primary driver
+
+6
+00:00:13,740 --> 00:00:17,230
+for the way that you manage inventory for the most part,
+
+7
+00:00:17,230 --> 00:00:19,740
+it's a function of what you assume your demand is.
+
+8
+00:00:19,740 --> 00:00:22,770
+If demand is very sporadic, if it's got a lot of randomness,
+
+9
+00:00:22,770 --> 00:00:24,240
+if it's steady state.
+
+10
+00:00:24,240 --> 00:00:28,290
+Each of these assumptions will dictate the type tool or type
+
+11
+00:00:28,290 --> 00:00:30,790
+of method that you manage your inventory with.
+
+12
+00:00:30,790 --> 00:00:33,120
+So let's start with a simple case.
+
+13
+00:00:33,120 --> 00:00:35,190
+Let's assume that I've got demand--
+
+14
+00:00:35,190 --> 00:00:37,920
+this is demand for my product, single item--
+
+15
+00:00:37,920 --> 00:00:41,580
+is known as deterministic and it's constant.
+
+16
+00:00:41,580 --> 00:00:43,230
+So it's constant demand.
+
+17
+00:00:43,230 --> 00:00:44,700
+So what does this mean?
+
+18
+00:00:44,700 --> 00:00:46,200
+This means I'm going to place orders
+
+19
+00:00:46,200 --> 00:00:47,820
+at a certain period of time.
+
+20
+00:00:47,820 --> 00:00:50,430
+And I'm going to order a certain amount.
+
+21
+00:00:50,430 --> 00:00:52,459
+And I'm going to call that order quantity Q.
+
+22
+00:00:52,459 --> 00:00:55,000
+And we'll find out that's the thing we're really looking for.
+
+23
+00:00:55,000 --> 00:00:57,540
+What is the best Q to use?
+
+24
+00:00:57,540 --> 00:00:59,380
+And you're going to find out that I'm
+
+25
+00:00:59,380 --> 00:01:03,210
+going to have to order this Q periodically.
+
+26
+00:01:03,210 --> 00:01:06,180
+And since it's a uniform deterministic demand,
+
+27
+00:01:06,180 --> 00:01:07,530
+these periods will be the same.
+
+28
+00:01:07,530 --> 00:01:09,030
+Makes sense because it's going to be
+
+29
+00:01:09,030 --> 00:01:11,440
+happening over and over again.
+
+30
+00:01:11,440 --> 00:01:14,160
+Now I place an order and then what happens?
+
+31
+00:01:14,160 --> 00:01:18,090
+Well, at some point I will receive that same amount.
+
+32
+00:01:18,090 --> 00:01:21,140
+And I will receive the same amount Q.
+
+33
+00:01:21,140 --> 00:01:22,860
+And so let me just draw those in.
+
+34
+00:01:22,860 --> 00:01:25,500
+And this is the product that I'm receiving.
+
+35
+00:01:25,500 --> 00:01:27,940
+And you'll notice that they aren't-- let me just do this
+
+36
+00:01:27,940 --> 00:01:28,440
+one.
+
+37
+00:01:28,440 --> 00:01:32,010
+If I draw this line down, it's not happening at the same time.
+
+38
+00:01:32,010 --> 00:01:34,650
+That's because we live in the real world.
+
+39
+00:01:34,650 --> 00:01:37,210
+And that's called your lead time,
+
+40
+00:01:37,210 --> 00:01:40,590
+L. So I have some lead time between when I place the order
+
+41
+00:01:40,590 --> 00:01:42,279
+and then when the product shows up.
+
+42
+00:01:42,279 --> 00:01:43,570
+And we'll play with this a lot.
+
+43
+00:01:43,570 --> 00:01:45,510
+This is transportation, this is the amount of time
+
+44
+00:01:45,510 --> 00:01:47,093
+it takes to actually make the product,
+
+45
+00:01:47,093 --> 00:01:48,570
+to do the order of the product.
+
+46
+00:01:48,570 --> 00:01:51,480
+All those different things go into that L.
+
+47
+00:01:51,480 --> 00:01:53,340
+But the end result here is I can see
+
+48
+00:01:53,340 --> 00:01:55,310
+how this affects my inventory.
+
+49
+00:01:55,310 --> 00:01:57,330
+So what I have down here in this lower chart
+
+50
+00:01:57,330 --> 00:01:59,340
+is what my inventory is going to look like.
+
+51
+00:01:59,340 --> 00:02:00,760
+And so what will this look like?
+
+52
+00:02:00,760 --> 00:02:02,850
+Well, I'm going to receive this order,
+
+53
+00:02:02,850 --> 00:02:06,587
+so my inventory, assuming I'm at 0 here is going to go up.
+
+54
+00:02:06,587 --> 00:02:07,920
+And then what's going to happen?
+
+55
+00:02:07,920 --> 00:02:11,700
+My demand is going to go down.
+
+56
+00:02:11,700 --> 00:02:14,260
+And then I'm going to receive a new order, up.
+
+57
+00:02:14,260 --> 00:02:16,140
+And then it's going to go down.
+
+58
+00:02:16,140 --> 00:02:18,549
+And it's going to go back up again and continue.
+
+59
+00:02:18,549 --> 00:02:20,590
+And you can actually see that this would actually
+
+60
+00:02:20,590 --> 00:02:22,570
+go back this way as well.
+
+61
+00:02:22,570 --> 00:02:24,910
+This is known as the sawtooth diagram.
+
+62
+00:02:24,910 --> 00:02:27,640
+This is what inventory tends to look like.
+
+63
+00:02:27,640 --> 00:02:30,040
+Now if this demand is a little more random,
+
+64
+00:02:30,040 --> 00:02:31,780
+then this won't be a straight line.
+
+65
+00:02:31,780 --> 00:02:32,780
+But you can think of it.
+
+66
+00:02:32,780 --> 00:02:35,580
+You have a bunch of stuff there, it gets sold,
+
+67
+00:02:35,580 --> 00:02:37,180
+and then you get a bunch of stuff in.
+
+68
+00:02:37,180 --> 00:02:40,660
+So this sawtooth diagram is key and core
+
+69
+00:02:40,660 --> 00:02:42,970
+to all inventory models.
+
+70
+00:02:42,970 --> 00:02:46,517
+Now you might say well, when I place my order though,
+
+71
+00:02:46,517 --> 00:02:48,100
+I might have already placed money out.
+
+72
+00:02:48,100 --> 00:02:52,390
+So we want to actually compare between what I have on hand
+
+73
+00:02:52,390 --> 00:02:54,260
+and what I drew down there is actually
+
+74
+00:02:54,260 --> 00:03:00,430
+what's known as the inventory on hand.
+
+75
+00:03:00,430 --> 00:03:03,760
+That's what I physically have sitting there versus what
+
+76
+00:03:03,760 --> 00:03:05,980
+my inventory position is.
+
+77
+00:03:05,980 --> 00:03:08,680
+So what that is when I place this order--
+
+78
+00:03:08,680 --> 00:03:10,900
+if I follow this down-- I've now placed
+
+79
+00:03:10,900 --> 00:03:12,580
+an order for a certain amount.
+
+80
+00:03:12,580 --> 00:03:16,139
+And while it's not sitting at my location,
+
+81
+00:03:16,139 --> 00:03:17,680
+I've already placed the order for it.
+
+82
+00:03:17,680 --> 00:03:19,096
+I might have put money out for it.
+
+83
+00:03:19,096 --> 00:03:20,710
+It's in transit.
+
+84
+00:03:20,710 --> 00:03:23,230
+And so I can actually look at again,
+
+85
+00:03:23,230 --> 00:03:25,450
+here, I placed this order.
+
+86
+00:03:25,450 --> 00:03:28,180
+Up a little bit, and so this inventory,
+
+87
+00:03:28,180 --> 00:03:30,980
+it isn't at my location, it's what's
+
+88
+00:03:30,980 --> 00:03:33,110
+known as being in transit.
+
+89
+00:03:33,110 --> 00:03:35,660
+And depending on the terms, you might own it and already
+
+90
+00:03:35,660 --> 00:03:37,250
+pay for it, or it might be something
+
+91
+00:03:37,250 --> 00:03:38,490
+you receive at the end.
+
+92
+00:03:38,490 --> 00:03:39,865
+But it's something you need to be
+
+93
+00:03:39,865 --> 00:03:43,750
+aware of because then this line is what's known
+
+94
+00:03:43,750 --> 00:03:47,330
+as your inventory position.
+
+95
+00:03:47,330 --> 00:03:49,640
+It's not just what you have on hand,
+
+96
+00:03:49,640 --> 00:03:52,319
+it's what you have on hand plus what you have on order.
+
+97
+00:03:52,319 --> 00:03:54,860
+And that becomes very important when we develop our inventory
+
+98
+00:03:54,860 --> 00:03:56,660
+models.
+
+99
+00:03:56,660 --> 00:03:59,840
+So we want to try to figure out what is the best
+
+100
+00:03:59,840 --> 00:04:01,997
+Q that minimizes my total cost.
+
+101
+00:04:01,997 --> 00:04:03,830
+Because that's what we're trying to do here,
+
+102
+00:04:03,830 --> 00:04:06,692
+minimize our total cost of ownership.
+
+103
+00:04:06,692 --> 00:04:08,150
+So we're going to go back and start
+
+104
+00:04:08,150 --> 00:04:10,040
+developing that total cost equation I
+
+105
+00:04:10,040 --> 00:04:11,710
+talked about earlier.
+
+106
+00:04:11,710 --> 00:04:16,790
+And it's going to consist of, for this purpose, three terms,
+
+107
+00:04:16,790 --> 00:04:19,910
+my purchasing cost, what does it cost to actually buy
+
+108
+00:04:19,910 --> 00:04:28,000
+the stuff, plus what is the cost of actually placing an order,
+
+109
+00:04:28,000 --> 00:04:32,190
+plus what's the cost of holding it, of having the inventory
+
+110
+00:04:32,190 --> 00:04:33,000
+there.
+
+111
+00:04:33,000 --> 00:04:35,090
+Three terms.
+
+112
+00:04:35,090 --> 00:04:37,900
+And so because we're a quantitative course,
+
+113
+00:04:37,900 --> 00:04:39,730
+we're going to turn this into an equation.
+
+114
+00:04:39,730 --> 00:04:40,980
+What do I need to do for that?
+
+115
+00:04:40,980 --> 00:04:43,140
+Well, I need to define some terms.
+
+116
+00:04:43,140 --> 00:04:44,931
+We need to define our demand.
+
+117
+00:04:44,931 --> 00:04:46,430
+And we're going to use the letter D.
+
+118
+00:04:46,430 --> 00:04:47,950
+Where does this demand come from?
+
+119
+00:04:47,950 --> 00:04:50,100
+It comes from your forecast.
+
+120
+00:04:50,100 --> 00:04:52,920
+That's how forecasting ties in inventory management.
+
+121
+00:04:52,920 --> 00:04:54,750
+And we'll see later on when we loosen
+
+122
+00:04:54,750 --> 00:04:58,470
+the assumption of deterministic demand, how this influences
+
+123
+00:04:58,470 --> 00:05:00,340
+my variability of demand.
+
+124
+00:05:00,340 --> 00:05:02,700
+And that influences my safety stock and other things.
+
+125
+00:05:02,700 --> 00:05:05,040
+But for right now, forecasting is just
+
+126
+00:05:05,040 --> 00:05:07,380
+determining that annual demand.
+
+127
+00:05:07,380 --> 00:05:09,900
+I need to know what my order quantity is going to be.
+
+128
+00:05:09,900 --> 00:05:11,700
+That's when I'm going to solve for.
+
+129
+00:05:11,700 --> 00:05:15,570
+I'd have a purchase cost, what I'm paying to get the product.
+
+130
+00:05:15,570 --> 00:05:18,900
+The order cost, this is what it costs me to place an order.
+
+131
+00:05:18,900 --> 00:05:21,960
+Think of this as transportation, the cost of using the system.
+
+132
+00:05:21,960 --> 00:05:25,050
+Whatever-- all of those costs to place an order, irregardless
+
+133
+00:05:25,050 --> 00:05:27,112
+of the size of the order.
+
+134
+00:05:27,112 --> 00:05:28,570
+And then I've got the holding cost.
+
+135
+00:05:28,570 --> 00:05:31,470
+How much does it cost to keep inventory sitting here?
+
+136
+00:05:31,470 --> 00:05:33,447
+Because if I have inventory here, remember,
+
+137
+00:05:33,447 --> 00:05:34,530
+it's costing me something.
+
+138
+00:05:34,530 --> 00:05:35,820
+I paid money for that.
+
+139
+00:05:35,820 --> 00:05:37,380
+So that money is just sitting there.
+
+140
+00:05:37,380 --> 00:05:39,180
+You could think of inventory as a stack
+
+141
+00:05:39,180 --> 00:05:42,300
+of dollar bills, a stack of money, sitting there.
+
+142
+00:05:42,300 --> 00:05:44,580
+If I have inventory sitting there,
+
+143
+00:05:44,580 --> 00:05:45,870
+that's money that's tied up.
+
+144
+00:05:45,870 --> 00:05:48,690
+That capital that's tied up.
+
+145
+00:05:48,690 --> 00:05:50,370
+So I have these terms.
+
+146
+00:05:50,370 --> 00:05:53,070
+How do I come up with an equation here?
+
+147
+00:05:53,070 --> 00:05:55,574
+We'll go into detail, but basically you
+
+148
+00:05:55,574 --> 00:05:57,240
+can think of it if I purchase something,
+
+149
+00:05:57,240 --> 00:06:01,650
+it's going to cost me C, purchase cost for every item
+
+150
+00:06:01,650 --> 00:06:04,450
+that I use that year for my demand.
+
+151
+00:06:04,450 --> 00:06:09,440
+My ordering cost is going to be that C sub t
+
+152
+00:06:09,440 --> 00:06:11,150
+every time I place an order.
+
+153
+00:06:11,150 --> 00:06:12,740
+How many times will I order?
+
+154
+00:06:12,740 --> 00:06:15,620
+Well, that's going to be my annual demand divided
+
+155
+00:06:15,620 --> 00:06:18,600
+by the units that I order each time.
+
+156
+00:06:18,600 --> 00:06:20,851
+So this will tell me the number of times that I order.
+
+157
+00:06:20,851 --> 00:06:23,058
+And don't worry if you don't get this the first time.
+
+158
+00:06:23,058 --> 00:06:25,190
+We'll go over this in detail in the lectures.
+
+159
+00:06:25,190 --> 00:06:27,680
+I just wanted to set the stage for you.
+
+160
+00:06:27,680 --> 00:06:29,210
+Then I've holding cost.
+
+161
+00:06:29,210 --> 00:06:32,300
+That's going to be C sub e, that holding cost that's
+
+162
+00:06:32,300 --> 00:06:34,310
+dollar per dollar per time.
+
+163
+00:06:34,310 --> 00:06:35,840
+And what will that be?
+
+164
+00:06:35,840 --> 00:06:37,765
+Well, this is what kind of confuses students
+
+165
+00:06:37,765 --> 00:06:38,390
+the first time.
+
+166
+00:06:38,390 --> 00:06:39,790
+It confused me the first time.
+
+167
+00:06:39,790 --> 00:06:41,015
+It's Q over 2.
+
+168
+00:06:41,015 --> 00:06:43,100
+Why is it Q over 2?
+
+169
+00:06:43,100 --> 00:06:47,580
+Because when I order, remember this amount, this level is Q.
+
+170
+00:06:47,580 --> 00:06:50,030
+And so you can think of the average inventory
+
+171
+00:06:50,030 --> 00:06:53,450
+that I have on hand is going to be this area
+
+172
+00:06:53,450 --> 00:06:55,160
+under these triangles.
+
+173
+00:06:55,160 --> 00:06:56,450
+And so what is that?
+
+174
+00:06:56,450 --> 00:06:58,060
+Q over 2.
+
+175
+00:06:58,060 --> 00:07:00,540
+And so that's the average inventory.
+
+176
+00:07:00,540 --> 00:07:03,980
+So I've got these three cost components
+
+177
+00:07:03,980 --> 00:07:05,420
+to give me my total cost.
+
+178
+00:07:05,420 --> 00:07:08,300
+And we'll find out very quickly that purchase cost doesn't
+
+179
+00:07:08,300 --> 00:07:11,117
+affect my decision of how much to order.
+
+180
+00:07:11,117 --> 00:07:12,200
+It doesn't have a Q in it.
+
+181
+00:07:12,200 --> 00:07:14,240
+And we'll talk more about that in the lesson,
+
+182
+00:07:14,240 --> 00:07:16,100
+but at the end of the day, we have
+
+183
+00:07:16,100 --> 00:07:18,320
+two major costs that are competing,
+
+184
+00:07:18,320 --> 00:07:20,750
+the ordering cost and the holding cost.
+
+185
+00:07:20,750 --> 00:07:24,260
+And what we can do is chart these two costs to show
+
+186
+00:07:24,260 --> 00:07:27,060
+how the trade-offs are made.
+
+187
+00:07:27,060 --> 00:07:30,420
+So let's go with a holding cost, and that
+
+188
+00:07:30,420 --> 00:07:31,930
+looks something like this.
+
+189
+00:07:31,930 --> 00:07:33,250
+It's a straight line.
+
+190
+00:07:33,250 --> 00:07:35,130
+This is my holding cost.
+
+191
+00:07:35,130 --> 00:07:37,980
+And that if I increase my Q, I'm going
+
+192
+00:07:37,980 --> 00:07:39,600
+to have higher holding costs.
+
+193
+00:07:39,600 --> 00:07:43,710
+Because if I order a lot, more of it will sit around longer.
+
+194
+00:07:43,710 --> 00:07:46,890
+So my total costs will increase, my holding costs
+
+195
+00:07:46,890 --> 00:07:49,980
+will increase as my Q gets bigger.
+
+196
+00:07:49,980 --> 00:07:53,490
+Now for my ordering costs, it's just the opposite.
+
+197
+00:07:53,490 --> 00:07:55,026
+If I order very small quantities,
+
+198
+00:07:55,026 --> 00:07:56,650
+I'm going to be ordering a lot of time,
+
+199
+00:07:56,650 --> 00:07:58,500
+so that cost will go up.
+
+200
+00:07:58,500 --> 00:08:05,294
+As my Q gets bigger, than my ordering cost gets smaller.
+
+201
+00:08:05,294 --> 00:08:07,460
+So if I look at both of these and put these together
+
+202
+00:08:07,460 --> 00:08:10,970
+for my total cost, then what it's going to look like
+
+203
+00:08:10,970 --> 00:08:13,110
+is something like this if I add them together.
+
+204
+00:08:13,110 --> 00:08:16,230
+
+
+205
+00:08:16,230 --> 00:08:18,450
+And what we're trying to find is what
+
+206
+00:08:18,450 --> 00:08:24,130
+is the Q that minimizes this total cost equation?
+
+207
+00:08:24,130 --> 00:08:26,740
+It looks like a convex continuous function.
+
+208
+00:08:26,740 --> 00:08:27,700
+We know how to do that.
+
+209
+00:08:27,700 --> 00:08:29,770
+We want this point which you'll see
+
+210
+00:08:29,770 --> 00:08:33,130
+is actually where these two values meet.
+
+211
+00:08:33,130 --> 00:08:37,299
+And we're going to, call that Q star.
+
+212
+00:08:37,299 --> 00:08:39,190
+And so what is Q star?
+
+213
+00:08:39,190 --> 00:08:44,900
+That's also known as the economic order quantity.
+
+214
+00:08:44,900 --> 00:08:46,970
+That's the Q that you want to use
+
+215
+00:08:46,970 --> 00:08:50,870
+to minimize your total cost of ordering and holding.
+
+216
+00:08:50,870 --> 00:08:52,790
+And as I said before, the order size
+
+217
+00:08:52,790 --> 00:08:54,660
+doesn't affect my total purchase cost.
+
+218
+00:08:54,660 --> 00:08:58,209
+So it's irrelevant to this discussion.
+
+219
+00:08:58,209 --> 00:08:59,250
+So how would I find this?
+
+220
+00:08:59,250 --> 00:09:02,650
+Well, I can do it graphically, but we also know a better way.
+
+221
+00:09:02,650 --> 00:09:05,010
+You can take a first order condition, take a derivative,
+
+222
+00:09:05,010 --> 00:09:08,010
+solve for Q, and you'll find that the economic order
+
+223
+00:09:08,010 --> 00:09:14,760
+quantity is 2 times C sub t times D over C sub e.
+
+224
+00:09:14,760 --> 00:09:19,560
+This is your economic order equation, order quantity.
+
+225
+00:09:19,560 --> 00:09:21,390
+And you'll be using this a lot.
+
+226
+00:09:21,390 --> 00:09:25,200
+Every inventory system essentially relies on the EOQ
+
+227
+00:09:25,200 --> 00:09:26,020
+to start.
+
+228
+00:09:26,020 --> 00:09:28,620
+And all that it is is a way of making
+
+229
+00:09:28,620 --> 00:09:32,730
+the trade-off between ordering cost and holding cost.
+
+230
+00:09:32,730 --> 00:09:34,470
+And it's part of that total cost equation
+
+231
+00:09:34,470 --> 00:09:38,430
+that we're developing over the course of this course.
+
+232
+00:09:38,430 --> 00:09:39,540
+Big week this week.
+
+233
+00:09:39,540 --> 00:09:40,620
+Three lessons.
+
+234
+00:09:40,620 --> 00:09:44,190
+Lots of practice problems to get your arms around how
+
+235
+00:09:44,190 --> 00:09:45,870
+to do this inventory modeling.
+
+236
+00:09:45,870 --> 00:09:48,060
+This is the first step of the next four weeks
+
+237
+00:09:48,060 --> 00:09:50,840
+where we'll be dealing with inventory.
+
+238
+00:09:50,840 --> 00:09:52,490
+Have fun.
+

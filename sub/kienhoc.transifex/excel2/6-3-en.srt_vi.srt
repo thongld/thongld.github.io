@@ -1,0 +1,341 @@
+1
+00:00:02,080 --> 00:00:06,259
+dungpham12002 23.08.2016
+Xin chào mọi người!
+Ở đây là bảng điều khiển lớn mà
+
+2
+00:00:06,259 --> 00:00:09,709
+ta sẽ thiết kế. Trong bài này,
+ta sẽ tập trung vào
+
+3
+00:00:09,709 --> 00:00:16,640
+biểu đồ đầu tiên: doanh số theo danh mục sản phẩm.
+Ta sẽ phóng to nó ra cho dễ nhìn.
+
+4
+00:00:16,640 --> 00:00:22,840
+Trong bài này, tôi nghĩ nó là biểu đồ dễ làm nhất,
+và tôi nghĩ 90% số người
+
+5
+00:00:22,840 --> 00:00:25,890
+sẽ trình bày dữ liệu này bằng
+biểu đồ hình tròn (pie chart).
+
+6
+00:00:25,890 --> 00:00:31,840
+Nhưng có lẽ bạn không nằm trong 90% đó
+vì bạn đã lắng nghe bài giảng trước,
+
+7
+00:00:31,840 --> 00:00:35,699
+và bạn biết bánh nướng (pie) nên được
+để dành làm món tráng miệng.
+
+8
+00:00:35,699 --> 00:00:40,699
+Nhưng điều ta cần thể hiện
+vẫn không thay đổi, là
+
+9
+00:00:40,699 --> 00:00:45,790
+ta có ba danh mục hàng hóa lớn:
+rau củ, sản phẩm bơ sữa và thịt.
+
+10
+00:00:45,790 --> 00:00:51,290
+Ta muốn biết doanh số của mỗi danh mục
+hàng hóa chiếm bao nhiêu phần trăm,
+
+11
+00:00:51,290 --> 00:00:56,690
+Đó là lý do tôi thêm các tỉ lệ phần trăm
+làm các nhãn dữ liệu vào biểu đồ.
+
+12
+00:00:56,690 --> 00:01:00,890
+Giờ ta sẽ xem cách thực hiện điều này trong Excel.
+
+13
+00:01:00,890 --> 00:01:09,230
+Giờ ta đã mở tập tin ra.
+Ta cần vẽ biểu đồ đầu tiên.
+
+14
+00:01:09,230 --> 00:01:19,380
+Tôi có một quy tắc là mỗi biểu đồ trong
+bảng điều khiển sẽ nằm ở một bảng tính riêng.
+
+15
+00:01:19,380 --> 00:01:25,270
+Trong trường hợp này, tôi cần bảng tính ghi
+các chi tiết bán hàng.
+
+16
+00:01:25,270 --> 00:01:29,670
+Ở đây tôi có ba hạng mục và
+ba tỉ lệ phần trăm.
+
+17
+00:01:29,670 --> 00:01:40,940
+Tôi sẽ chọn chúng,
+và từ đó vẽ biểu đồ.
+
+18
+00:01:40,940 --> 00:01:46,520
+Ở đây, ta sử dụng biểu đồ cột,
+một trong những dạng biểu đồ cơ bản.
+
+19
+00:01:46,520 --> 00:01:51,960
+Ta luôn dùng cột 2D.
+Đừng bao giờ dùng cột 3D.
+
+20
+00:01:51,960 --> 00:01:59,040
+Và đây chính là biểu đồ cột Excel tạo ra
+theo mặc định. Nó trông khá ổn,
+
+21
+00:01:59,040 --> 00:02:03,479
+nhưng nó sẽ không vừa bảng điều khiển.
+Vậy, ta phải chỉnh sửa một chút.
+
+22
+00:02:03,479 --> 00:02:09,170
+Bạn có thể thêm tên cho biểu đồ của bạn, 
+nhưng thường thì tôi không làm vậy.
+
+23
+00:02:09,170 --> 00:02:16,980
+Tôi thêm chúng vào các ô trong bảng tính.
+Vì vậy, tôi sẽ bỏ tên biểu đồ ở đây. 
+
+24
+00:02:16,980 --> 00:02:24,920
+Tôi nghĩ rằng khoảng cách giữa các cột là hơi nhiều.
+
+25
+00:02:24,920 --> 00:02:27,010
+Tôi sẽ chỉnh lại nó.
+
+26
+00:02:27,010 --> 00:02:35,620
+Tôi sẽ chọn các cột, và nhấn chuột phải.
+Sau đó, tôi sẽ chọn 'Format Data Series'.
+
+27
+00:02:35,620 --> 00:02:43,490
+Một cửa sổ mới sẽ hiện ra. Ở đó,
+tôi sẽ chỉnh lại khoảng cách giữa các cột.
+
+28
+00:02:43,490 --> 00:02:49,610
+Tôi muốn có ít khoảng trắng hơn, nên
+tôi sẽ giảm tỉ lệ này xuống.
+
+29
+00:02:49,610 --> 00:02:57,760
+Tôi đã giảm nó xuống 75%, và giờ
+biểu đồ trông khá đẹp.
+
+30
+00:02:57,760 --> 00:03:01,550
+Giờ tôi cần biết biểu đồ
+phải có kích thước là gì.
+
+31
+00:03:01,550 --> 00:03:04,880
+Tôi có một mẹo nhỏ để làm việc này,
+và tôi sẽ nói cho bạn biết.
+
+32
+00:03:04,880 --> 00:03:24,709
+Tôi đang mở bảng điều khiển ở đây.
+Giờ tôi sẽ thêm một hình chữ nhật và đặt nó ở đây.
+
+33
+00:03:24,709 --> 00:03:31,720
+Tôi nghĩ biểu đồ ta đang vẽ cần phải ở đây,
+nhưng ta sẽ kiểm tra điều đó sau.
+
+34
+00:03:31,720 --> 00:03:37,739
+Giờ, tôi có một mẹo nhỏ. Nếu tôi di chuyển
+một vật thể trong một bảng tính Excel,
+
+35
+00:03:37,739 --> 00:03:43,290
+và đồng thời nhấn giữ phím 'alt', như tôi
+đang làm trên bàn phím máy tính này,
+
+36
+00:03:43,290 --> 00:03:50,270
+thì khi di chuyển, vật thể sẽ lập tức
+nằm thẳng trên các đường kẻ của các ô.
+
+37
+00:03:50,270 --> 00:03:58,690
+Điều đó sẽ giúp ta vẽ hình chữ nhật có cùng kích cỡ
+với khoảng trống dành cho biểu đồ dễ hơn rất nhiều.
+
+38
+00:03:58,690 --> 00:04:05,319
+Theo quan sát của tôi, 
+kích cỡ của nó là 2.15" x 2.27".
+
+39
+00:04:05,319 --> 00:04:09,970
+Giờ tôi sẽ dùng kích cỡ ấy để
+chỉnh sửa biểu đồ cho phù hợp.
+
+40
+00:04:09,970 --> 00:04:21,319
+Bây giờ ta sẽ xóa hình chữ nhật
+và quay về bảng 'Sales Details'.
+
+41
+00:04:21,319 --> 00:04:26,759
+Tôi sẽ chọn biểu đồ.
+Bạn có thể thấy
+
+42
+00:04:26,759 --> 00:04:30,979
+khi mở thẻ Format,
+phần đang được chọn là cả biểu đồ,
+
+43
+00:04:30,979 --> 00:04:45,000
+đúng như tôi mong muốn. Giờ
+tôi cần chỉnh kích cỡ của nó thành 2.15" x 2.27".
+
+44
+00:04:45,000 --> 00:04:51,409
+Bây giờ nó đã có định dạng đúng.
+Vấn đề tiếp theo là: biểu đồ có nền trắng,
+
+45
+00:04:51,409 --> 00:04:55,650
+và tôi không thích thế.
+Vì thế tôi sẽ phải bỏ phần nền đi.
+
+46
+00:04:55,650 --> 00:05:01,159
+Tôi sẽ chọn 'Format Chart Area'.
+Cửa sổ định dạng biểu đồ sẽ hiện ra ở đây.
+
+47
+00:05:01,159 --> 00:05:07,180
+Tôi chọn 'Fill', và nhấp chuột
+vào 'No fill' để bỏ nền đi.
+
+48
+00:05:07,180 --> 00:05:12,819
+Tôi cũng sẽ xóa các đường viền,
+vì tôi không thích có chúng.
+
+49
+00:05:12,819 --> 00:05:17,289
+Người ta nói 'đơn giản là nhất' [less is more],
+nên tôi sẽ bỏ các đường lưới đi.
+
+50
+00:05:17,289 --> 00:05:20,800
+Chúng không quan trọng lắm.
+Nhưng chúng ta vẫn cần nhãn dữ liệu ở đây.
+
+51
+00:05:20,800 --> 00:05:33,509
+Vì thế, tôi sẽ chọn biểu đồ,
+
+52
+00:05:33,509 --> 00:05:50,509
+sau đó thêm một vật thể vào biểu đồ.
+Ta sẽ thêm các nhãn dữ liệu.
+
+53
+00:05:50,509 --> 00:05:54,610
+Chúng bây giờ ở cạnh các cột;
+tôi không thích thế. Tôi muốn chúng ở trong các cột.
+
+54
+00:05:54,610 --> 00:06:01,569
+Vì vậy, tôi sẽ chọn các nhãn.
+Phần này cho thấy là chúng đang được chọn.
+
+55
+00:06:01,569 --> 00:06:06,460
+Giờ tôi sẽ chọn sao cho chúng
+ở trong cột, ngay cạnh trục dọc.
+
+56
+00:06:06,460 --> 00:06:11,080
+Nhưng chữ đen trên nền xanh không hợp lắm,
+nên ta cần chỉnh màu chữ.
+
+57
+00:06:11,080 --> 00:06:18,899
+Từ phần 'Label Options', tôi sẽ chọn 'Text Options'
+và tiếp tục chọn 'Text Fill' để đổi màu chữ
+
+58
+00:06:18,899 --> 00:06:22,969
+sang màu trắng.
+Ta xong rồi.
+
+59
+00:06:22,969 --> 00:06:29,610
+Giờ tôi sẽ chọn cả biểu đồ.
+Tôi sẽ cắt nó bằng cách nhấn Ctrl + X.
+
+60
+00:06:29,610 --> 00:06:36,619
+Tôi sẽ sang bảng điều khiển,
+và chọn ô phù hợp để dán nó vào.
+
+61
+00:06:36,619 --> 00:06:43,139
+Ta sẽ xem qua bảng điều khiển mẫu
+để xem biểu đồ ở ô nào.
+
+62
+00:06:43,139 --> 00:06:48,550
+Nó cần phải ở đây.
+Giờ ta trở về bảng điều khiển.
+
+63
+00:06:48,550 --> 00:06:53,189
+Đóng cửa sổ này lại.. Vì đây là 
+cột cuối trong bảng, nên biểu đồ
+
+64
+00:06:53,189 --> 00:06:56,830
+nên nằm ở cột này.
+Nếu tôi đưa con trỏ về ô phù hợp 
+
+65
+00:06:56,830 --> 00:07:05,039
+thì khi tôi dán biểu đồ vào, nó sẽ
+vừa khít khoảng trống tôi để dành cho nó.
+
+66
+00:07:05,039 --> 00:07:19,189
+Tên biểu đồ ở đây là 'Doanh thu theo hạng mục sản phẩm'.
+Việc trình bày dữ liệu trong đó bằng tỉ lệ phần trăm rất hiệu quả.
+
+67
+00:07:19,189 --> 00:07:27,610
+Đây chính là thành phẩm của ta.
+Trong bài học tiếp theo, ta sẽ
+
+68
+00:07:27,610 --> 00:07:31,879
+vẽ một biểu đồ nữa -- biểu đồ thể hiện
+giá trị trung bình của đơn hàng.
+
+69
+00:07:31,879 --> 00:07:32,499
+Hẹn gặp lại bạn lần sau!
+

@@ -1,0 +1,300 @@
+1
+00:00:00,900 --> 00:00:03,650
+Chào mừng các bạn trở lại với khóa Quản trị Điều hành.
+
+2
+00:00:03,650 --> 00:00:07,310
+Trong phần này, chúng ta sẽ xử lý toàn bộ các vấn đề liên quan đến hàng tồn kho.
+
+3
+00:00:07,310 --> 00:00:08,310
+Chào mừng các bạn trở lại với khóa Quản trị Điều hành.
+
+4
+00:00:08,310 --> 00:00:09,310
+rong phần này, chúng ta sẽ xử lý toàn bộ các vấn đề liên quan đến hàng tồn kho.
+
+5
+00:00:09,310 --> 00:00:11,509
+Đến thời điểm này, chúng ta đã có hai bài về hàng tồn kho
+
+6
+00:00:11,509 --> 00:00:14,120
+và chúng ta sẽ tổng hợp chúng lại qua một vấn đề.
+
+7
+00:00:14,120 --> 00:00:18,160
+Xem chúng ta có gì nào.
+
+8
+00:00:18,160 --> 00:00:21,470
+Công ty M. Pod là một chuỗi bán lẻ chuyên về
+
+9
+00:00:21,470 --> 00:00:24,970
+thiết bị cắm trại. Họ sản xuất lều trại có thiết kế đặc biệt
+
+10
+00:00:24,970 --> 00:00:28,960
+dành cho vùng có độ cao lớn so với mặt nước biển. Nhu cầu thường rơi vào khoảng
+
+11
+00:00:28,960 --> 00:00:32,320
+20 cái mỗi tuần với sai lệch là 3.
+
+12
+00:00:32,320 --> 00:00:37,950
+Cửa hàng mở cửa 52 tuần một năm. Giá mỗi cái trại là 150 đô và chi phí lưu kho
+
+13
+00:00:37,950 --> 00:00:42,390
+(bao gồm chi phí lưu cơ hội và vật chất) là 15%.
+
+14
+00:00:42,390 --> 00:00:47,440
+Phí đặt hàng là 55 đô. Thời gian nhanh nhất để nhận được hàng
+
+15
+00:00:47,440 --> 00:00:54,510
+từ khi đặt là 6 tuần và khá cố định. Họ chỉ có khoảng 5% cơ hội bị thiếu hàng.
+
+16
+00:00:54,510 --> 00:00:57,360
+Bây giờ hãy sử dụng các thông tin này
+
+17
+00:00:57,360 --> 00:01:04,750
+để tính toán sô lượng đặt hàng tối ưu, dự trữ bảo hiểm, điểm mua hàng,
+
+18
+00:01:04,750 --> 00:01:11,180
+dự trữ bình quân và thời gian trung bình một sản phẩm lưu kho là bao lâu.
+
+19
+00:01:11,180 --> 00:01:14,950
+Chúng ta sẽ xử lý vấn đề này và giờ ta sẽ xem xát đến phần đầu tiên
+
+20
+00:01:14,950 --> 00:01:17,850
+vì phần này cho ta các thông tin cơ bản 
+
+21
+00:01:17,850 --> 00:01:22,790
+để tính toán số lương đặt hàng tối ưu.
+
+22
+00:01:22,790 --> 00:01:28,240
+Ta biết rằng nhu cầu thông thường là 20 sản phẩm mỗi tuần với sai lệch tiêu chuẩn 
+
+23
+00:01:28,240 --> 00:01:31,590
+là 3. Cửa hàng mở 52 tuần một năm.
+
+24
+00:01:31,590 --> 00:01:37,159
+Giá mỗi cái trại là 150 đô và phí lưu kho bằng 15%.
+
+25
+00:01:37,159 --> 00:01:43,670
+Phí đặt hàng là 55 đô. Vậy ta tính nhu cầu cả năm bằng cách nhân 20
+
+26
+00:01:43,670 --> 00:01:48,210
+mỗi tuần với 52 tuần một năm. Ta có 1040.
+
+27
+00:01:48,210 --> 00:01:54,790
+Tiếp đến ta biết giá là 150 đô. Chúng ta cần tính phí lưu kho.
+
+28
+00:01:54,790 --> 00:02:03,270
+Là 15% nhân với 150 đô. Vậy phí lưu kho trên một đơn vị sản phẩm mỗi năm là 22.5 đô.
+
+29
+00:02:03,270 --> 00:02:08,429
+Phí lắp đặt hay phí đặt hàng là 55 đô.
+
+30
+00:02:08,429 --> 00:02:15,049
+Vậy với các biến đã có, chúng ta có thể dùng đẳng thức EOQ: căn bậc 2 của
+
+31
+00:02:15,049 --> 00:02:20,269
+2RS trên H. Chúng ta thay số vào và được kết quả của
+
+32
+00:02:20,269 --> 00:02:24,769
+số lượng đặt hàng tối ưu là 71.3 đơn vị.
+
+33
+00:02:24,769 --> 00:02:28,920
+Bước tiếp theo là tìm mức dự trữ bảo hiểm.
+
+34
+00:02:28,920 --> 00:02:34,379
+Để làm được điều này, ta cần nhóm một số thông tin lại.
+
+35
+00:02:34,379 --> 00:02:37,829
+Ta biết rằng họ chỉ muốn 5% cơ hội hết hàng.
+
+36
+00:02:37,829 --> 00:02:42,090
+Ta cũng biết cầu thông thường là 20 một tuần
+
+37
+00:02:42,090 --> 00:02:48,640
+vói sai lệch tiêu chuẩn là 3. Và thời gian giao hành ở mức cố định là 6 tuần.
+
+38
+00:02:48,640 --> 00:02:53,150
+Biết rằng thời gian giao hàng luôn cố định chúng ta chỉ phải xử lý độ biến thiên và lượng cầu. 
+
+39
+00:02:53,150 --> 00:02:57,690
+Vậy ta sẽ tính toán lượng cầu theo thời gian giao hàng
+
+40
+00:02:57,690 --> 00:03:01,109
+bằng cách lấy số tuần cần thiết
+
+41
+00:03:01,109 --> 00:03:05,860
+để giao hàng, ở đây là 6, và nhân với 20 cái mỗi tuần.
+
+42
+00:03:05,860 --> 00:03:10,420
+Vậy nhu cầu thời gian giao hàng là 120.
+
+43
+00:03:10,420 --> 00:03:15,720
+Sau đó ta cần tính độ lệch tiêu chuẩn của nhu cầu theo thời gian giao hàng.
+
+44
+00:03:15,720 --> 00:03:20,150
+Sự biến thiên chỉ có ở lượng cầu, nên ta sẽ lấy căn bậc hai của
+
+45
+00:03:20,150 --> 00:03:23,569
+thời gian giao hàng rồi nhân với độ lệch tiêu chuẩn
+
+46
+00:03:23,569 --> 00:03:27,489
+của cầu. Vậy căn bậc hai của 6 là 2.
+
+47
+00:03:27,489 --> 00:03:35,260
+45, nhân với độ lệch tiêu chuẩn là 3, và ta có 7.
+
+48
+00:03:35,260 --> 00:03:38,790
+39. Mức dịch vụ là thứ tiếp theo
+
+49
+00:03:38,790 --> 00:03:41,769
+cần tính. Ta biết rằng ta không muốn hơn 
+
+50
+00:03:41,769 --> 00:03:47,900
+5% cơ hội hết hàng. Vậy, để tính mức dịch vụ lấy 1 trừ đi
+
+51
+00:03:47,900 --> 00:03:53,109
+xác suất bị hết hàng. Vậy ta có mức dịch vụ là 95%.
+
+52
+00:03:53,109 --> 00:03:56,319
+Từ đây, ta có thể tính dự trữ bảo hiểm.
+
+53
+00:03:56,319 --> 00:04:02,279
+Chúng ta cần tính con số z liên đới với mức dịch vụ 95%.
+
+54
+00:04:02,279 --> 00:04:11,650
+Dùng Excel/ ta tính được nó là 1.645. Vậy lấy mức dịch vụ z nhân với
+
+55
+00:04:11,650 --> 00:04:19,319
+độ lệch chuẩn của cầu theo thời gian giao hàng, ta có 1.645 nhân với 7.39
+
+56
+00:04:19,319 --> 00:04:27,620
+Vậy dự trữ bảo hiểm sẽ là 12.09, nhưng ta luôn phải làm tròn
+
+57
+00:04:27,620 --> 00:04:34,581
+nên hàng đơn vị, nên nó sẽ là 13. Vậy ta có dự trữ an toàn, có cầu theo thời gian giao hàng,
+
+58
+00:04:34,581 --> 00:04:42,270
+vậy ta có thể tính điểm mua hàng ROP. Ta có cầu theo thời gian giao hàng là 120,
+
+59
+00:04:42,270 --> 00:04:47,990
+dự trữ bảo hiểm 13, vậy khi ta xuống mức 133 trại ở trong kho, 
+
+60
+00:04:47,990 --> 00:04:55,460
+đó là lúc ta cần đặt thêm hàng.
+
+61
+00:04:55,460 --> 00:05:03,090
+Để tính mức dự trữ bình quân, ta lấy Q/2, là số lượng ta đặt
+
+62
+00:05:03,090 --> 00:05:06,270
+chia cho 2, sau đó cộng với dự trữ bảo hiểm.
+
+63
+00:05:06,270 --> 00:05:10,810
+Đó là vì ta không bao giờ bị xuống mức 0 do ta có dự trữ bảo hiểm.
+
+64
+00:05:10,810 --> 00:05:19,720
+Giờ ta có dự trữ bình quân bằng số lượng đặt hàng là 71.3 chia cho 2,
+
+65
+00:05:19,720 --> 00:05:27,740
+cộng với 13, vậy là bằng 48.65. Vậy mất bao lâu để dự trữ bình quân lưu lại trong kho,
+
+66
+00:05:27,740 --> 00:05:33,099
+chúng ta sẽ dùng định luật của Little: l bằng R nhân T. 
+
+67
+00:05:33,099 --> 00:05:37,199
+Ta có giá trị dự trữ bình quân vừa tính được.
+
+68
+00:05:37,199 --> 00:05:42,720
+Chúng ta có giá trị sản lượng, chính là cầu hàng năm là 1040.
+
+69
+00:05:42,720 --> 00:05:51,720
+Vậy ta tính thời gian lưu kho bằng cách lấy l chia R, sẽ được .0478 năm.
+
+70
+00:05:51,720 --> 00:05:57,310
+Nhưng ta phải đổi ra tuần, nên sẽ nhân với 52 tuần.
+
+71
+00:05:57,310 --> 00:06:02,009
+Vậy kết quả là 2.43 tuần. Vậy chúng ta đã kiên kết tất cả với nhau,
+
+72
+00:06:02,009 --> 00:06:06,610
+để trả lời cho các câu hỏi của vấn đề cơ bản này.
+
+73
+00:06:06,610 --> 00:06:12,020
+Phần tiếp theo sẽ là về điều gì xảy ra khi ta tập hợp kho hàng,
+
+74
+00:06:12,020 --> 00:06:17,310
+khi ta tập trung tất cả hàng tồn kho lại thay vì để chúng ở các nơi riêng rẽ.
+
+75
+00:06:17,310 --> 00:06:18,580
+Hẹn gặp lại các bạn.
+

@@ -1,0 +1,254 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/Y_nk7VjX2k0
+
+1
+00:00:00,500 --> 00:00:02,750
+Đâu là những điểm chính trong bài học này?
+
+2
+00:00:02,750 --> 00:00:03,930
+Có một vài điểm chính.
+
+3
+00:00:03,930 --> 00:00:07,820
+Thứ nhất, toàn bộ ý tưởng của Hệ thống Đẩy và Kéo,
+
+4
+00:00:07,820 --> 00:00:11,280
+trong đó đẩy là tôi chủ động đối phó, và tôi ra quyết định
+
+5
+00:00:11,280 --> 00:00:12,990
+dựa trên cầu được dự đoán.
+
+6
+00:00:12,990 --> 00:00:15,610
+Tôi sẽ đưa ra quyết định dựa trên dự đoán, đánh giá tốt nhất.
+
+7
+00:00:15,610 --> 00:00:19,130
+Kéo là phản ứng, và nó dựa trên cầu thực tế.
+
+8
+00:00:19,130 --> 00:00:20,650
+Nghĩ về cửa hàng bánh sandwich.
+
+9
+00:00:20,650 --> 00:00:23,290
+Đẩy là tôi đưa ra những chiếc bánh sandwich được làm sẵn,
+
+10
+00:00:23,290 --> 00:00:25,870
+dựa trên dự đoán của tôi, hoặc
+
+11
+00:00:25,870 --> 00:00:26,840
+ đánh giá của tôi về cầu.
+
+12
+00:00:26,840 --> 00:00:30,340
+Đẩy là tôi sẽ làm những chiếc bánh theo đơn đặt hàng.
+
+13
+00:00:30,340 --> 00:00:32,610
+Có những điểm lợi khi kết hợp cả hai hệ thống này.
+
+14
+00:00:32,610 --> 00:00:36,336
+Và khi một hệ thống thay đổi từ đẩy sang kéo,
+
+15
+00:00:36,336 --> 00:00:37,960
+đó được gọi là điểm đẩy-kéo,
+
+16
+00:00:37,960 --> 00:00:40,180
+hay biên giới đẩy-kéo.
+
+17
+00:00:40,180 --> 00:00:42,240
+Ý tưởng ở đây là bạn muốn tối đa hóa
+
+18
+00:00:42,240 --> 00:00:45,420
+đa dạng từ bên ngoài - loại sản phẩm được tùy biến
+
+19
+00:00:45,420 --> 00:00:49,470
+Tôi có và giảm thiểu sự đa dạng bên trong.
+
+20
+00:00:49,470 --> 00:00:52,940
+Và một cách để làm điều đó là khái niệm RAP
+
+21
+00:00:52,940 --> 00:00:57,020
+Giữ cho mọi thứ tươi sống nhất có thể, được tạo từ
+nhiều bộ phận khác nhau, và trì hoãn.
+
+22
+00:00:57,020 --> 00:00:59,170
+Vì điều này có một lợi ích bổ sung
+
+23
+00:00:59,170 --> 00:01:02,620
+đó là nếu tôi có các bộ phận lắp ráp hoặc thành phần,
+
+24
+00:01:02,620 --> 00:01:04,560
+tôi có thể tập hợp lại cầu.
+
+25
+00:01:04,560 --> 00:01:07,270
+Nếu chúng cho ra nhiều sản phẩm cuối cùng và
+
+26
+00:01:07,270 --> 00:01:08,690
+việc dự đoán sẽ trở nên dễ dàng hơn.
+
+27
+00:01:08,690 --> 00:01:11,800
+Chúng ta sẽ nói nhiều về điều đó hơn
+
+28
+00:01:11,800 --> 00:01:14,260
+trong các bài giảng tiếp theo.
+
+29
+00:01:14,260 --> 00:01:17,530
+Nhưng ý tưởng ở đây là gần như tất cả các chuỗi cung
+
+30
+00:01:17,530 --> 00:01:20,250
+là một sự kết hợp của cả đẩy và kéo.
+
+31
+00:01:20,250 --> 00:01:23,770
+Và bạn muốn tận dụng điều này và sử dụng
+
+32
+00:01:23,770 --> 00:01:27,129
+ý tưởng trì hoãn để cải thiện vận hành.
+
+33
+00:01:27,129 --> 00:01:28,920
+Vậy chúng ta sẽ nói về các chiến lược phân khúc.
+
+34
+00:01:28,920 --> 00:01:32,400
+Vì nếu tôi có các chuỗi cung khác nhau trong công ty của tôi,
+
+35
+00:01:32,400 --> 00:01:36,220
+tôi muốn xác định cách thức các sản phẩm khác nhau
+
+36
+00:01:36,220 --> 00:01:38,410
+sẽ đi qua các chuỗi cung khác nhau đó.
+
+37
+00:01:38,410 --> 00:01:42,580
+Vậy ý tưởng về phân khúc là tôi tìm ra những cách khác nhau
+
+38
+00:01:42,580 --> 00:01:44,340
+để phân chia sản phẩm, khách hàng,
+
+39
+00:01:44,340 --> 00:01:46,020
+và có những phương án khác nhau cho từng cái.
+
+40
+00:01:46,020 --> 00:01:49,310
+Bạn luôn phân khúc theo mục đích.
+
+41
+00:01:49,310 --> 00:01:51,790
+Chúng ta đã nói về các sản phẩm mang tính chức năng
+và sản phẩm đổi mới.
+
+42
+00:01:51,790 --> 00:01:53,980
+Đó là ví dụ điển hình về phân khúc
+
+43
+00:01:53,980 --> 00:01:56,030
+của hai loại sản phẩm.
+
+44
+00:01:56,030 --> 00:01:57,850
+Phân khúc sản phẩm thường được thực hiện
+
+45
+00:01:57,850 --> 00:02:02,120
+kèm theo phân tích loại ABC, cầu như thế nào,
+
+46
+00:02:02,120 --> 00:02:04,050
+bao gồm cả vận tốc trong đó.
+
+47
+00:02:04,050 --> 00:02:06,870
+Các sản phẩm có giá trị cao hơn là các sản phẩm A.
+
+48
+00:02:06,870 --> 00:02:10,060
+A thường có vận tốc nhanh hơn.
+
+49
+00:02:10,060 --> 00:02:12,420
+Các sản phẩm có giá trị thấp hơn và chậm hơn là C.
+
+50
+00:02:12,420 --> 00:02:15,010
+Đó là một khởi đầu tốt, nhưng những công ty khác nhau
+
+51
+00:02:15,010 --> 00:02:18,030
+sẽ thêm những nét độc đáo khác nhau cho điều này.
+
+52
+00:02:18,030 --> 00:02:19,150
+Một số sẽ nhìn vào tính hay thay đổi.
+
+53
+00:02:19,150 --> 00:02:20,549
+Một số sẽ nhìn vào khả năng sinh lợi.
+
+54
+00:02:20,549 --> 00:02:22,590
+Bạn có thể làm theo nhiều cách khác nhau,
+
+55
+00:02:22,590 --> 00:02:28,020
+nhưng tất cả đều dự trên phân tích chuẩn ABC.
+
+56
+00:02:28,020 --> 00:02:30,425
+Vậy chúng ta sẽ nói nhanh về hai hình thức phân phối
+
+57
+00:02:30,425 --> 00:02:32,880
+mà chúng ta sẽ tập trung nhiều trong khóa học này,
+
+58
+00:02:32,880 --> 00:02:35,380
+Phân phối Chuẩn và Phân phối Poisson.
+
+59
+00:02:35,380 --> 00:02:37,737
+Vậy hy vọng là các bạn sẽ học được nhiều điều từ bài học này,
+
+60
+00:02:37,737 --> 00:02:40,070
+và nếu bạn có câu hỏi, bình luận hay gợi ý,
+
+61
+00:02:40,070 --> 00:02:41,010
+đừng ngần ngại.
+
+62
+00:02:41,010 --> 00:02:43,330
+Hãy sử dụng bảng thảo luận.
+

@@ -1,0 +1,320 @@
+0
+00:00:06,450 --> 00:00:09,940
+You might be getting the impression that there&#39;s lots of evidence for a single thing called
+
+1
+00:00:09,940 --> 00:00:15,980
+intelligence, G, because that&#39;s what the Raven’s Progressive Matrices and other tests are designed
+
+2
+00:00:15,980 --> 00:00:17,220
+to measure.
+
+3
+00:00:17,220 --> 00:00:21,510
+There is actually a way where we can basically tell whether intelligence is one thing or
+
+4
+00:00:21,510 --> 00:00:23,020
+multiple things.
+
+5
+00:00:23,020 --> 00:00:27,690
+And it is to do with comparing people’s performance on many different tests of intelligence,
+
+6
+00:00:27,690 --> 00:00:32,570
+like Spearman did, using a statistical technique called factor analysis.
+
+7
+00:00:32,570 --> 00:00:36,890
+This is an advanced statistical technique, so I’m just going to very briefly outline
+
+8
+00:00:36,890 --> 00:00:37,890
+the basics.
+
+9
+00:00:37,890 --> 00:00:40,570
+I will be simplifying things terribly here.
+
+10
+00:00:40,570 --> 00:00:44,660
+Really, all I would like you to take away from this is the underlying concept of factor
+
+11
+00:00:44,660 --> 00:00:45,820
+analysis.
+
+12
+00:00:45,820 --> 00:00:49,500
+Not how to do it or how to interpret the results from factor analysis.
+
+13
+00:00:49,500 --> 00:00:54,430
+Now, imagine that we have a couple of tests, and we measure people&#39;s performance on those
+
+14
+00:00:54,430 --> 00:00:58,790
+tests, and we plot them on a graph like this as a correlation.
+
+15
+00:00:58,790 --> 00:01:03,110
+We could plot a line there that&#39;s designed to summarize those scores and reduce the error
+
+16
+00:01:03,110 --> 00:01:06,640
+as much as possible in summarising those scores.
+
+17
+00:01:06,640 --> 00:01:11,119
+We can see how much error there is by looking at where the individual responses fall in
+
+18
+00:01:11,119 --> 00:01:13,439
+relation to that line.
+
+19
+00:01:13,439 --> 00:01:16,670
+What do you notice as scores get larger?
+
+20
+00:01:16,670 --> 00:01:19,770
+What happens to the amount of error as the scores get larger?
+
+21
+00:01:19,770 --> 00:01:24,319
+So what I’m asking is how far away are the scores from the line?
+
+22
+00:01:24,319 --> 00:01:29,659
+Well, the amount of error seems to increase as the scores get higher, the points of data
+
+23
+00:01:29,659 --> 00:01:32,679
+get further and further away from the line.
+
+24
+00:01:32,679 --> 00:01:38,039
+The scores seem to be clumping more together down here, but they’re spreading more apart
+
+25
+00:01:38,039 --> 00:01:39,299
+up there.
+
+26
+00:01:39,299 --> 00:01:44,729
+Therefore, this might suggest that using a single correlation or factor is not the best
+
+27
+00:01:44,729 --> 00:01:47,399
+way to describe this data.
+
+28
+00:01:47,399 --> 00:01:53,439
+What factor analysis does is it looks at whether one, two, or even three factors better describe
+
+29
+00:01:53,439 --> 00:01:54,439
+the data.
+
+30
+00:01:54,439 --> 00:01:58,249
+It goes up to any number it needs to describe the data.
+
+31
+00:01:58,249 --> 00:02:02,970
+How you know when it&#39;s adequately describing the data is the variation around those factors
+
+32
+00:02:02,970 --> 00:02:05,990
+is reduced to a statistical minimum.
+
+33
+00:02:05,990 --> 00:02:10,170
+It&#39;s not eliminated, but there is an optimal number where adding more won&#39;t get rid of
+
+34
+00:02:10,169 --> 00:02:11,170
+any more error.
+
+35
+00:02:11,170 --> 00:02:12,170
+In actual fact, it can induce more error.
+
+36
+00:02:12,170 --> 00:02:16,790
+So, we can statistically tell what number of factors we need to represent these scores.
+
+37
+00:02:16,790 --> 00:02:21,470
+The idea is, if we give people a bunch of intelligence tests, do factor analysis on
+
+38
+00:02:21,470 --> 00:02:26,209
+their performance, we should be able to work out how many factors we need to describe their
+
+39
+00:02:26,209 --> 00:02:27,319
+performance.
+
+40
+00:02:27,319 --> 00:02:32,540
+These statistical factors map onto how many factors intelligence has.
+
+41
+00:02:32,540 --> 00:02:37,030
+If we can use a single line to represent their performance, then there&#39;s a single factor,
+
+42
+00:02:37,030 --> 00:02:40,720
+and we might call it “G”, for general intelligence.
+
+43
+00:02:40,720 --> 00:02:44,939
+If we need seven lines to represent their performance on the tests, then there&#39;s seven
+
+44
+00:02:44,939 --> 00:02:47,760
+underlying factors to intelligence.
+
+45
+00:02:47,760 --> 00:02:52,590
+Using factor analysis, we can work out, statistically, the number of factors we need to describe
+
+46
+00:02:52,590 --> 00:02:53,590
+intelligence.
+
+47
+00:02:53,590 --> 00:03:01,420
+In 1938, Thurstone conducted a factor analysis of 56 tests to determine the nature of intelligence.
+
+48
+00:03:01,420 --> 00:03:07,439
+So, instead of two-dimensional space, like the example before, imagine 56-dimensional
+
+49
+00:03:07,439 --> 00:03:10,510
+space and doing a factor analysis on that.
+
+50
+00:03:10,510 --> 00:03:15,730
+Thurstone found seven factors underlying intelligence from the 56 tests.
+
+51
+00:03:15,730 --> 00:03:22,319
+These factors included: Verbal comprehension, verbal fluency, number, spatial visualisation,
+
+52
+00:03:22,319 --> 00:03:25,799
+memory, reasoning, and perception speed.
+
+53
+00:03:25,799 --> 00:03:30,599
+Therefore, the conclusion at that time was that there were seven discrete aspects to
+
+54
+00:03:30,599 --> 00:03:31,670
+intelligence.
+
+55
+00:03:31,670 --> 00:03:35,609
+Now, you can imagine people who were sort of already committed to thinking about this
+
+56
+00:03:35,609 --> 00:03:40,739
+notion of general intelligence, this would be a bit of a worry for them in terms of evidence,
+
+57
+00:03:40,739 --> 00:03:44,190
+because it&#39;s quite inconsistent with the idea of “G”.
+
+58
+00:03:44,190 --> 00:03:51,310
+In 1966, Horn and Cattell performed factor analysis on Thurstone’s seven factors.
+
+59
+00:03:51,310 --> 00:03:56,519
+Instead of finding seven factors like Thurstone found, they found two higher order factors
+
+60
+00:03:56,519 --> 00:03:59,560
+that described performance across those seven factors.
+
+61
+00:03:59,560 --> 00:04:05,530
+They called those higher order factors are fluid intelligence or Gf, which is performance
+
+62
+00:04:05,530 --> 00:04:12,690
+on culture-free tasks like Raven&#39;s Progressive Matrices, and crystallized intelligence, or
+
+63
+00:04:12,690 --> 00:04:17,579
+Gc, which is tasks requiring some sort of prior information––for example, what&#39;s
+
+64
+00:04:17,579 --> 00:04:19,780
+the capital of France?
+
+65
+00:04:19,779 --> 00:04:25,020
+Horn and Cattell suggested that you need both of those to describe test performance, because
+
+66
+00:04:25,020 --> 00:04:29,090
+both of those, although they&#39;re related, are not the same thing.
+
+67
+00:04:29,090 --> 00:04:33,030
+Here is an example of some of the fluid intelligence items.
+
+68
+00:04:33,030 --> 00:04:36,222
+These items are a little bit more extensive than just progressive matrices.
+
+69
+00:04:36,222 --> 00:04:39,860
+You certainly have matrices in these items, for example, you have to pick which of these
+
+70
+00:04:39,860 --> 00:04:42,670
+belongs there.
+
+71
+00:04:42,670 --> 00:04:46,480
+In case you were playing along at home, the answer is four.
+
+72
+00:04:46,480 --> 00:04:51,450
+There are also questions that assess analogies, but these don&#39;t require a lot of comprehension
+
+73
+00:04:51,450 --> 00:04:52,890
+of cultural concepts.
+
+74
+00:04:52,890 --> 00:04:55,681
+Here, you&#39;ve got to choose something to complete this sequence.
+
+75
+00:04:55,681 --> 00:05:01,060
+A square is to a triangle as four vertical lines is to...
+
+76
+00:05:01,060 --> 00:05:07,130
+I’ll let you think for a second ... The answer is three vertical lines, because of
+
+77
+00:05:07,130 --> 00:05:08,490
+the number of sides.
+
+78
+00:05:08,490 --> 00:05:14,070
+A lot of these questions tap into different abilities, but they do it in a way that doesn&#39;t
+
+79
+00:05:14,070 --> 00:05:16,720
+necessarily rely heavily on cultural knowledge.
+

@@ -1,0 +1,288 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/fWgV7fFLJ3k
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:03,880
+DR. RAMESH YERRABALLI: So to
+demonstrate our communication
+
+3
+00:00:03,880 --> 00:00:09,954
+using serial UART we're going
+to develop up a chat tool.
+
+4
+00:00:09,954 --> 00:00:11,870
+DR. JONATHAN VALVANO:
+So we can talk together?
+
+5
+00:00:11,870 --> 00:00:14,036
+DR. RAMESH YERRABALLI: So
+we can talk to each other.
+
+6
+00:00:14,036 --> 00:00:19,610
+And in any communication, to start
+with we have to define our protocol.
+
+7
+00:00:19,610 --> 00:00:24,170
+So the protocol we are going
+to use for our communication
+
+8
+00:00:24,170 --> 00:00:26,250
+is described visually here.
+
+9
+00:00:26,250 --> 00:00:28,083
+So we're going to have
+two microcontrollers.
+
+10
+00:00:28,083 --> 00:00:31,160
+
+11
+00:00:31,160 --> 00:00:32,740
+DR. JONATHAN VALVANO: Do I get one?
+
+12
+00:00:32,740 --> 00:00:33,865
+DR. RAMESH YERRABALLI: Yes.
+
+13
+00:00:33,865 --> 00:00:38,850
+This is a microcontroller which
+is the microcontroller for me.
+
+14
+00:00:38,850 --> 00:00:41,500
+And this is another microcontroller.
+
+15
+00:00:41,500 --> 00:00:43,850
+And we're going to
+connect them as we saw
+
+16
+00:00:43,850 --> 00:00:47,200
+using the serial
+communication, which means
+
+17
+00:00:47,200 --> 00:00:53,910
+that the transmit line(TxD) on mine
+will be connected to receive line(RxD)
+
+18
+00:00:53,910 --> 00:00:57,710
+on this interface, on
+this microcontroller.
+
+19
+00:00:57,710 --> 00:01:02,040
+And the receive line(RxD here will be
+connected to the transmit line(TxD)
+
+20
+00:01:02,040 --> 00:01:03,460
+here.
+
+21
+00:01:03,460 --> 00:01:05,310
+DR. JONATHAN VALVANO: What about ground?
+
+22
+00:01:05,310 --> 00:01:08,990
+DR. RAMESH YERRABALLI: And there will
+be the common ground as a reference.
+
+23
+00:01:08,990 --> 00:01:14,380
+So I'm not going to show that because
+we have already demonstrated that.
+
+24
+00:01:14,380 --> 00:01:17,890
+So, in addition what we're going
+to do is both of these machines
+
+25
+00:01:17,890 --> 00:01:19,890
+will have an interface.
+
+26
+00:01:19,890 --> 00:01:27,135
+One is a button which will
+allow us to choose a message.
+
+27
+00:01:27,135 --> 00:01:28,010
+So this is a Chooser.
+
+28
+00:01:28,010 --> 00:01:30,800
+
+29
+00:01:30,800 --> 00:01:36,530
+And another button
+which is a Send button.
+
+30
+00:01:36,530 --> 00:01:39,960
+So the same thing is
+going to be here as well.
+
+31
+00:01:39,960 --> 00:01:44,380
+So the Chooser will allow us to
+choose one of these messages.
+
+32
+00:01:44,380 --> 00:01:48,010
+And the idea is that there
+is the on board LED here.
+
+33
+00:01:48,010 --> 00:01:51,250
+Let's say this is my LED.
+
+34
+00:01:51,250 --> 00:01:54,560
+The on board LED is picked.
+
+35
+00:01:54,560 --> 00:02:02,230
+For example, if I pick the LED
+to be red, by using the Chooser,
+
+36
+00:02:02,230 --> 00:02:05,660
+then this is the message I want to
+send which says "Are you there".
+
+37
+00:02:05,660 --> 00:02:10,300
+And in response, so there's
+an LED here as well,
+
+38
+00:02:10,300 --> 00:02:15,140
+I could use the Chooser on the
+receiver side, pick an answer.
+
+39
+00:02:15,140 --> 00:02:22,620
+And answers are here in my color wheel.
+
+40
+00:02:22,620 --> 00:02:25,830
+And the questions are on the side.
+
+41
+00:02:25,830 --> 00:02:27,630
+So I could pick an answer.
+
+42
+00:02:27,630 --> 00:02:28,590
+I would say, "Yes".
+
+43
+00:02:28,590 --> 00:02:32,680
+So that's my white, and I choose my
+white, and it's going to transmit.
+
+44
+00:02:32,680 --> 00:02:36,380
+Now what's going to have
+to happen in this process
+
+45
+00:02:36,380 --> 00:02:40,630
+is, this protocol,
+which is human readable
+
+46
+00:02:40,630 --> 00:02:44,500
+will have to be converted
+to some binary message.
+
+47
+00:02:44,500 --> 00:02:47,940
+And my binary message
+for the transmitter
+
+48
+00:02:47,940 --> 00:02:55,950
+when Jon chooses that question red
+is going to be the message that he's
+
+49
+00:02:55,950 --> 00:03:02,720
+going to send is going to
+be a 0x30 that he transmits.
+
+50
+00:03:02,720 --> 00:03:05,120
+And I will send a response.
+
+51
+00:03:05,120 --> 00:03:09,260
+And that's going to be a
+response back saying "Yes".
+
+52
+00:03:09,260 --> 00:03:10,616
+And that will be a 0x36.
+
+53
+00:03:10,616 --> 00:03:15,560
+
+54
+00:03:15,560 --> 00:03:20,830
+So the encoding of the messages
+can be seen on the color wheel
+
+55
+00:03:20,830 --> 00:03:31,877
+as starting from 0x30, 0x31,
+that's hex 31, hex 32, hex 33.
+
+56
+00:03:31,877 --> 00:03:36,690
+
+57
+00:03:36,690 --> 00:03:42,050
+hex 34, 35, 36, and 37.
+
+58
+00:03:42,050 --> 00:03:46,550
+
+59
+00:03:46,550 --> 00:03:52,040
+So we'll show you how the code
+for the sender and the receiver
+
+60
+00:03:52,040 --> 00:03:53,090
+is going to look like.
+
+61
+00:03:53,090 --> 00:03:57,600
+They're going to be uniform code that's
+running on board the microcontrollers.
+
+62
+00:03:57,600 --> 00:04:01,890
+And we'll show you the
+configuration of the UART
+
+63
+00:04:01,890 --> 00:04:06,030
+and also show you
+sending of the messages.

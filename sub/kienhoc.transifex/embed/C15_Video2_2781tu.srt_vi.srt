@@ -1,0 +1,1495 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/hqTA4uJ6nBg
+
+1
+00:00:00,000 --> 00:00:00,422
+
+2
+00:00:00,422 --> 00:00:02,130
+DR. RAMESH YERRABALLI:
+So in this module,
+
+3
+00:00:02,130 --> 00:00:07,890
+we're going to look at the game
+from a modular design standpoint.
+
+4
+00:00:07,890 --> 00:00:16,170
+What we mean by that is we will design
+our system using three important tools.
+
+5
+00:00:16,170 --> 00:00:18,620
+The first one will be a call graph.
+
+6
+00:00:18,620 --> 00:00:22,580
+
+7
+00:00:22,580 --> 00:00:24,915
+The second will be a data flow graph.
+
+8
+00:00:24,915 --> 00:00:28,200
+
+9
+00:00:28,200 --> 00:00:33,679
+And the third will be a low
+level detail of flow charts.
+
+10
+00:00:33,679 --> 00:00:35,470
+DR. JONATHAN VALVANO:
+Professor Yerraballi,
+
+11
+00:00:35,470 --> 00:00:38,840
+why is modular design important?
+
+12
+00:00:38,840 --> 00:00:41,080
+DR. RAMESH YERRABALLI:
+So modular design allows
+
+13
+00:00:41,080 --> 00:00:45,970
+us to manage the complexity
+of a large project.
+
+14
+00:00:45,970 --> 00:00:48,100
+This project is going
+to be one of the largest
+
+15
+00:00:48,100 --> 00:00:50,910
+that you will handle in this class.
+
+16
+00:00:50,910 --> 00:00:59,870
+So what we want to do is be
+able to manage by modularizing,
+
+17
+00:00:59,870 --> 00:01:06,220
+which means that we break down
+our system into small modules.
+
+18
+00:01:06,220 --> 00:01:10,620
+This will allow us to manage change.
+
+19
+00:01:10,620 --> 00:01:15,320
+It will allow us to debug easily
+because if you break them up
+
+20
+00:01:15,320 --> 00:01:19,500
+into small modules, we test
+one module; make sure it works.
+
+21
+00:01:19,500 --> 00:01:23,760
+And then we can hide that
+module as if it were a box,
+
+22
+00:01:23,760 --> 00:01:27,860
+and look around it
+and see other modules.
+
+23
+00:01:27,860 --> 00:01:31,463
+As I said, it allows us
+to manage complexity.
+
+24
+00:01:31,463 --> 00:01:35,880
+
+25
+00:01:35,880 --> 00:01:39,450
+So now we'll look at
+each of these in turn.
+
+26
+00:01:39,450 --> 00:01:44,590
+We will look at the game overall
+and break it down into modules
+
+27
+00:01:44,590 --> 00:01:50,840
+where each module will be
+specified either as a circle,
+
+28
+00:01:50,840 --> 00:01:56,300
+if it's a software, or a
+square, if it's hardware.
+
+29
+00:01:56,300 --> 00:02:03,320
+And we will describe which module
+calls which module by using arrows.
+
+30
+00:02:03,320 --> 00:02:07,670
+This is what our call
+graph is going to be like.
+
+31
+00:02:07,670 --> 00:02:10,410
+DR. JONATHAN VALVANO: What are
+the three files that one normally
+
+32
+00:02:10,410 --> 00:02:12,210
+creates for a software module?
+
+33
+00:02:12,210 --> 00:02:16,201
+
+34
+00:02:16,201 --> 00:02:17,950
+DR. RAMESH YERRABALLI:
+The software module
+
+35
+00:02:17,950 --> 00:02:20,810
+is going to be managed by three files.
+
+36
+00:02:20,810 --> 00:02:25,030
+So let's take an example
+of the ADC module.
+
+37
+00:02:25,030 --> 00:02:27,890
+So when we look at a
+module like ADC, we will
+
+38
+00:02:27,890 --> 00:02:33,650
+have the specification
+of the module in a ADC.h.
+
+39
+00:02:33,650 --> 00:02:36,642
+
+40
+00:02:36,642 --> 00:02:38,600
+DR. JONATHAN VALVANO:
+And what's in the H file?
+
+41
+00:02:38,600 --> 00:02:49,673
+DR. RAMESH YERRABALLI: The H file lists
+the public functions as prototypes.
+
+42
+00:02:49,673 --> 00:02:51,281
+
+43
+00:02:51,281 --> 00:02:53,280
+DR. JONATHAN VALVANO: So
+these are the functions
+
+44
+00:02:53,280 --> 00:02:54,990
+that another module could call?
+
+45
+00:02:54,990 --> 00:02:56,614
+DR. RAMESH YERRABALLI: That is correct.
+
+46
+00:02:56,614 --> 00:03:00,250
+So this is what the module
+exposes to the outside world.
+
+47
+00:03:00,250 --> 00:03:02,610
+So we'll list all the functions.
+
+48
+00:03:02,610 --> 00:03:04,000
+And not just functions.
+
+49
+00:03:04,000 --> 00:03:06,460
+If there is any other data
+that needs to be exposed,
+
+50
+00:03:06,460 --> 00:03:11,920
+that's also going to be exposed
+in the header, as we call it.
+
+51
+00:03:11,920 --> 00:03:14,780
+
+52
+00:03:14,780 --> 00:03:26,557
+And then we will have an ADC.c,
+which will be the implementation.
+
+53
+00:03:26,557 --> 00:03:29,640
+DR. JONATHAN VALVANO: So this is where
+the code that actually runs exists.
+
+54
+00:03:29,640 --> 00:03:31,265
+DR. RAMESH YERRABALLI: That is correct.
+
+55
+00:03:31,265 --> 00:03:36,280
+And we want to hide the implementation
+and expose only the public function.
+
+56
+00:03:36,280 --> 00:03:38,800
+As we saw, this allows
+us the flexibility
+
+57
+00:03:38,800 --> 00:03:42,320
+of improving the implementation
+or changing the implementation
+
+58
+00:03:42,320 --> 00:03:46,778
+without changing how the
+users call this module.
+
+59
+00:03:46,778 --> 00:03:48,778
+DR. JONATHAN VALVANO: But
+what's the third file?
+
+60
+00:03:48,778 --> 00:03:53,852
+
+61
+00:03:53,852 --> 00:03:55,560
+DR. RAMESH YERRABALLI:
+And the third file
+
+62
+00:03:55,560 --> 00:04:00,850
+is not specific to the module
+itself, but how is the module used.
+
+63
+00:04:00,850 --> 00:04:09,210
+So the main.c, in our
+case, is going to be
+
+64
+00:04:09,210 --> 00:04:15,520
+the driver that will call this module.
+
+65
+00:04:15,520 --> 00:04:20,880
+The driver is also sometimes
+the tester of the module.
+
+66
+00:04:20,880 --> 00:04:23,730
+DR. JONATHAN VALVANO: So
+this file explicitly shows
+
+67
+00:04:23,730 --> 00:04:28,550
+how we're going to use the module,
+and how we tested the module?
+
+68
+00:04:28,550 --> 00:04:30,330
+DR. RAMESH YERRABALLI: That is correct.
+
+69
+00:04:30,330 --> 00:04:34,090
+And so at times when
+we're developing the code,
+
+70
+00:04:34,090 --> 00:04:38,520
+we will have in the
+main.c specific testing
+
+71
+00:04:38,520 --> 00:04:40,980
+code for each module
+that we are building.
+
+72
+00:04:40,980 --> 00:04:45,200
+And we test that module, and then
+we discard that piece of code
+
+73
+00:04:45,200 --> 00:04:51,309
+and we keep writing
+new testing software.
+
+74
+00:04:51,309 --> 00:04:53,100
+DR. JONATHAN VALVANO:
+Professor Yerraballi,
+
+75
+00:04:53,100 --> 00:04:58,377
+are there any guidelines
+in developing modular code?
+
+76
+00:04:58,377 --> 00:05:00,210
+DR. RAMESH YERRABALLI:
+There are guidelines.
+
+77
+00:05:00,210 --> 00:05:04,130
+These are something that
+you learn by practice.
+
+78
+00:05:04,130 --> 00:05:16,350
+But the general idea is to
+maximize the number of modules
+
+79
+00:05:16,350 --> 00:05:26,287
+by making sure that you
+minimize the interdependency.
+
+80
+00:05:26,287 --> 00:05:28,120
+DR. JONATHAN VALVANO:
+Give me some examples.
+
+81
+00:05:28,120 --> 00:05:31,490
+What you mean by interdependency?
+
+82
+00:05:31,490 --> 00:05:35,030
+DR. RAMESH YERRABALLI: So the first
+idea is the idea of maximizing modules.
+
+83
+00:05:35,030 --> 00:05:38,550
+Means that I'm going to
+have as many modules as it
+
+84
+00:05:38,550 --> 00:05:44,217
+takes to break down the problem in
+a divide and conquer sort of way.
+
+85
+00:05:44,217 --> 00:05:46,800
+That is I'm going to break it
+into one module, another module.
+
+86
+00:05:46,800 --> 00:05:50,590
+If I feel like some functionality
+needs its own module,
+
+87
+00:05:50,590 --> 00:05:53,760
+I'm going to build
+another module for it.
+
+88
+00:05:53,760 --> 00:05:59,610
+But by interdependency we mean modules
+are going to exchange information.
+
+89
+00:05:59,610 --> 00:06:03,600
+So there's going to be modules
+communicating with each other.
+
+90
+00:06:03,600 --> 00:06:05,760
+This module may call this module.
+
+91
+00:06:05,760 --> 00:06:08,400
+This module may in
+turn call this module.
+
+92
+00:06:08,400 --> 00:06:16,220
+But part of this is how
+much data do they exchange.
+
+93
+00:06:16,220 --> 00:06:19,850
+The volume of the data, if
+you will, that they exchange.
+
+94
+00:06:19,850 --> 00:06:23,260
+Now we want to make sure
+that these modules are not
+
+95
+00:06:23,260 --> 00:06:27,710
+exchanging huge amounts of data.
+
+96
+00:06:27,710 --> 00:06:30,720
+And if two modules are
+exchanging a lot of data,
+
+97
+00:06:30,720 --> 00:06:36,970
+maybe there's some reason to think
+of them as one single module.
+
+98
+00:06:36,970 --> 00:06:40,150
+And so we want to maximize
+number of modules,
+
+99
+00:06:40,150 --> 00:06:42,520
+but we also want to
+minimize interdependency
+
+100
+00:06:42,520 --> 00:06:44,700
+because exchange of data
+between modules where
+
+101
+00:06:44,700 --> 00:06:49,679
+it gets too much that
+communication becomes bottle-neck.
+
+102
+00:06:49,679 --> 00:06:51,720
+DR. JONATHAN VALVANO: So
+let's look at modularity
+
+103
+00:06:51,720 --> 00:06:53,590
+from the perspective of our game.
+
+104
+00:06:53,590 --> 00:06:54,640
+Where do we begin?
+
+105
+00:06:54,640 --> 00:06:57,890
+DR. RAMESH YERRABALLI: So as I said, the
+first thing we're going to look at it
+
+106
+00:06:57,890 --> 00:07:00,350
+is the call graph.
+
+107
+00:07:00,350 --> 00:07:08,025
+So for our game, the heart of our
+game is going to be our game engine.
+
+108
+00:07:08,025 --> 00:07:13,384
+
+109
+00:07:13,384 --> 00:07:15,300
+DR. JONATHAN VALVANO:
+So this is the main code
+
+110
+00:07:15,300 --> 00:07:17,860
+that controls all of the game function?
+
+111
+00:07:17,860 --> 00:07:21,410
+DR. RAMESH YERRABALLI: That is
+correct and so this game engine
+
+112
+00:07:21,410 --> 00:07:25,700
+is going to be using a
+bunch of different modules.
+
+113
+00:07:25,700 --> 00:07:31,470
+The first module I'm going to
+look at is that ADC module.
+
+114
+00:07:31,470 --> 00:07:38,380
+So the ADC module will encapsulate all
+functionality related to the slide pot.
+
+115
+00:07:38,380 --> 00:07:44,100
+
+116
+00:07:44,100 --> 00:07:46,490
+Remember the slide pot
+is a piece of hardware,
+
+117
+00:07:46,490 --> 00:07:47,980
+so I'm going to write it like that.
+
+118
+00:07:47,980 --> 00:07:56,675
+So this is encapsulating the information
+that we specify for the slide pot.
+
+119
+00:07:56,675 --> 00:07:59,380
+DR. JONATHAN VALVANO: What does
+that arrow mean you just drew?
+
+120
+00:07:59,380 --> 00:08:02,550
+DR. RAMESH YERRABALLI: So the
+arrow is the call, the interface,
+
+121
+00:08:02,550 --> 00:08:07,270
+where we say that the game engine
+calls the ADC module, which
+
+122
+00:08:07,270 --> 00:08:09,850
+calls the hardware
+which is our slide pot.
+
+123
+00:08:09,850 --> 00:08:12,400
+
+124
+00:08:12,400 --> 00:08:20,900
+So our second module we're going
+to look at is the switch hardware.
+
+125
+00:08:20,900 --> 00:08:22,887
+
+126
+00:08:22,887 --> 00:08:24,720
+DR. JONATHAN VALVANO:
+These are our buttons.
+
+127
+00:08:24,720 --> 00:08:26,594
+DR. RAMESH YERRABALLI:
+These are our buttons.
+
+128
+00:08:26,594 --> 00:08:31,150
+So all the buttons, all the
+switches, that we have on our system
+
+129
+00:08:31,150 --> 00:08:33,510
+are going to be managed by this module.
+
+130
+00:08:33,510 --> 00:08:37,460
+
+131
+00:08:37,460 --> 00:08:38,960
+The third module.
+
+132
+00:08:38,960 --> 00:08:43,860
+Obviously we want our game to
+be fun, and it should sound fun.
+
+133
+00:08:43,860 --> 00:08:45,605
+So we're going to have a sound module.
+
+134
+00:08:45,605 --> 00:08:48,540
+
+135
+00:08:48,540 --> 00:08:53,330
+And the sound module will
+interact with a piece
+
+136
+00:08:53,330 --> 00:08:58,360
+of hardware, which is going to be
+our DAC, which, as you remember,
+
+137
+00:08:58,360 --> 00:09:00,260
+is going to be connected
+to the headphones.
+
+138
+00:09:00,260 --> 00:09:05,840
+
+139
+00:09:05,840 --> 00:09:11,340
+So the last module is going
+to be our Nokia display
+
+140
+00:09:11,340 --> 00:09:15,210
+module, which is a Nokia 5110.
+
+141
+00:09:15,210 --> 00:09:17,800
+So this is our display module.
+
+142
+00:09:17,800 --> 00:09:20,780
+This is going to be responsible
+for all the graphics,
+
+143
+00:09:20,780 --> 00:09:29,630
+and it's going to be interfacing
+with our Nokia display 5110
+
+144
+00:09:29,630 --> 00:09:32,690
+hardware LCD display.
+
+145
+00:09:32,690 --> 00:09:36,170
+DR. JONATHAN VALVANO: Now if you haven't
+bought a Nokia display, no worries.
+
+146
+00:09:36,170 --> 00:09:38,520
+You can still build your
+game because we built
+
+147
+00:09:38,520 --> 00:09:41,550
+into the process a simulated Nokia.
+
+148
+00:09:41,550 --> 00:09:44,630
+So you can actually run
+your game even if you
+
+149
+00:09:44,630 --> 00:09:47,780
+don't have the hardware
+for the graphics.
+
+150
+00:09:47,780 --> 00:09:55,410
+
+151
+00:09:55,410 --> 00:09:58,350
+DR. RAMESH YERRABALLI: So we are
+indicating that simulated hardware
+
+152
+00:09:58,350 --> 00:10:05,261
+by this here, which is a cross
+between a square and a circle.
+
+153
+00:10:05,261 --> 00:10:08,260
+DR. JONATHAN VALVANO: You just invented
+something, Professor Yerraballi.
+
+154
+00:10:08,260 --> 00:10:08,820
+DR. RAMESH YERRABALLI: I did.
+
+155
+00:10:08,820 --> 00:10:10,018
+DR. JONATHAN VALVANO: A circle-square.
+
+156
+00:10:10,018 --> 00:10:11,643
+DR. RAMESH YERRABALLI: A circle-square.
+
+157
+00:10:11,643 --> 00:10:14,500
+
+158
+00:10:14,500 --> 00:10:18,500
+So now that we saw the
+call graph, Jon, do you
+
+159
+00:10:18,500 --> 00:10:21,600
+see interesting things about this graph?
+
+160
+00:10:21,600 --> 00:10:27,000
+DR. JONATHAN VALVANO: I see that
+we have five modules 1, 2, 3, 4, 5.
+
+161
+00:10:27,000 --> 00:10:30,270
+But there are only four
+arrows between this.
+
+162
+00:10:30,270 --> 00:10:35,220
+This means that we have a lot of
+modules and very little interdependence.
+
+163
+00:10:35,220 --> 00:10:36,830
+The switch doesn't call sound.
+
+164
+00:10:36,830 --> 00:10:40,490
+The Nokia doesn't call the ADC, and
+the ADC doesn't call the game engine.
+
+165
+00:10:40,490 --> 00:10:43,440
+This is a very simple call graph.
+
+166
+00:10:43,440 --> 00:10:47,200
+
+167
+00:10:47,200 --> 00:10:49,300
+DR. RAMESH YERRABALLI:
+So we saw the call graph,
+
+168
+00:10:49,300 --> 00:10:52,572
+now let's look at the data flow graph.
+
+169
+00:10:52,572 --> 00:10:54,280
+DR. JONATHAN VALVANO:
+The data flow graph
+
+170
+00:10:54,280 --> 00:10:58,590
+is another way to
+visualize the modularity.
+
+171
+00:10:58,590 --> 00:11:03,280
+DR. RAMESH YERRABALLI: So we see,
+we kind of recreated the call graph,
+
+172
+00:11:03,280 --> 00:11:05,060
+with five modules.
+
+173
+00:11:05,060 --> 00:11:11,340
+Our five modules are our game
+engine, our ADC, our switch, sound,
+
+174
+00:11:11,340 --> 00:11:15,250
+and the Nokia 5110 module.
+
+175
+00:11:15,250 --> 00:11:19,950
+Now we're going to see what the
+real exchange is going to be.
+
+176
+00:11:19,950 --> 00:11:22,700
+So let's look at one of them.
+
+177
+00:11:22,700 --> 00:11:26,920
+I see the slide pot, which is
+going to give us a position.
+
+178
+00:11:26,920 --> 00:11:31,490
+And we take the position, and
+we convert it into a voltage.
+
+179
+00:11:31,490 --> 00:11:35,960
+And we do this at 30Hz.
+
+180
+00:11:35,960 --> 00:11:40,360
+And what happens as I get
+this voltage into my system
+
+181
+00:11:40,360 --> 00:11:43,230
+is it's going to convert
+it to a 12-bit number,
+
+182
+00:11:43,230 --> 00:11:50,422
+and the 12-bit number is our measure
+of the position on the slide pot.
+
+183
+00:11:50,422 --> 00:11:52,380
+DR. JONATHAN VALVANO:
+But in a data flow graph,
+
+184
+00:11:52,380 --> 00:11:55,252
+what do the arrows mean this time?
+
+185
+00:11:55,252 --> 00:11:57,710
+DR. RAMESH YERRABALLI: So the
+arrows in the data flow graph
+
+186
+00:11:57,710 --> 00:12:00,900
+is the passage of information or data.
+
+187
+00:12:00,900 --> 00:12:09,570
+So in our case, the position,
+which is resistance if you will,
+
+188
+00:12:09,570 --> 00:12:11,550
+is going to be converted to a voltage.
+
+189
+00:12:11,550 --> 00:12:14,910
+Which is moving from the
+slide pot to the ADC.
+
+190
+00:12:14,910 --> 00:12:16,690
+Which is a zero to three volts.
+
+191
+00:12:16,690 --> 00:12:20,130
+Which is moving from
+the ADC to the driver.
+
+192
+00:12:20,130 --> 00:12:23,330
+Which is then moving from the
+driver to the game engine.
+
+193
+00:12:23,330 --> 00:12:26,300
+So it's the passage of information.
+
+194
+00:12:26,300 --> 00:12:29,140
+DR. JONATHAN VALVANO: And I can
+see we're passing 12 bits, 30 times
+
+195
+00:12:29,140 --> 00:12:30,036
+a second.
+
+196
+00:12:30,036 --> 00:12:31,660
+DR. RAMESH YERRABALLI: That is correct.
+
+197
+00:12:31,660 --> 00:12:35,170
+And so the other modules we'll
+see, we can quickly list.
+
+198
+00:12:35,170 --> 00:12:38,400
+So there are two inputs,
+our two switches.
+
+199
+00:12:38,400 --> 00:12:44,800
+And that is also being
+read at 30Hz, which
+
+200
+00:12:44,800 --> 00:12:47,150
+is going to be the two
+bits of information.
+
+201
+00:12:47,150 --> 00:12:48,860
+The two switches are two bits.
+
+202
+00:12:48,860 --> 00:12:51,556
+We pass that to the game engine.
+
+203
+00:12:51,556 --> 00:12:58,910
+These two together are what
+I think of as a interface.
+
+204
+00:12:58,910 --> 00:13:08,320
+And the interface is being sampled at
+30 Hz by using the SysTick interrupt.
+
+205
+00:13:08,320 --> 00:13:11,430
+And this is what comes into the system.
+
+206
+00:13:11,430 --> 00:13:14,910
+And this is what goes out of
+the system, which is a sound.
+
+207
+00:13:14,910 --> 00:13:17,640
+Which in our case is going to be 11kHz.
+
+208
+00:13:17,640 --> 00:13:20,360
+
+209
+00:13:20,360 --> 00:13:26,250
+Obviously, sound requires
+a more demanding timing.
+
+210
+00:13:26,250 --> 00:13:29,120
+So we have that flowing the other way.
+
+211
+00:13:29,120 --> 00:13:34,490
+So you see that there's a 4-bit DAC.
+
+212
+00:13:34,490 --> 00:13:38,670
+So the four bits go from the
+sound routine to the sound module
+
+213
+00:13:38,670 --> 00:13:48,100
+to the DAC, which is then fed to the
+headphones as a single analog signal.
+
+214
+00:13:48,100 --> 00:13:51,140
+And so this is our
+sound, which will also
+
+215
+00:13:51,140 --> 00:13:56,490
+be managed by a timing module--
+which is a timer, which
+
+216
+00:13:56,490 --> 00:13:58,942
+we're going to look at later.
+
+217
+00:13:58,942 --> 00:14:00,650
+DR. JONATHAN VALVANO:
+Well so far, you've
+
+218
+00:14:00,650 --> 00:14:03,610
+just put the pieces together
+from the last three labs.
+
+219
+00:14:03,610 --> 00:14:05,970
+But what's new in this lab?
+
+220
+00:14:05,970 --> 00:14:11,635
+DR. RAMESH YERRABALLI: So the new
+thing in this lab is the graphics.
+
+221
+00:14:11,635 --> 00:14:14,860
+
+222
+00:14:14,860 --> 00:14:23,120
+And the graphics are part of the LCD
+display, which is a Nokia display.
+
+223
+00:14:23,120 --> 00:14:27,650
+And we will try and abstract
+all the low level details
+
+224
+00:14:27,650 --> 00:14:33,510
+so that we can think of this as simply
+calling certain routines that either
+
+225
+00:14:33,510 --> 00:14:38,738
+display an image, clear the
+buffer, or redisplay a new buffer.
+
+226
+00:14:38,738 --> 00:14:41,550
+
+227
+00:14:41,550 --> 00:14:43,720
+DR. JONATHAN VALVANO: Also
+in this data flow graph,
+
+228
+00:14:43,720 --> 00:14:48,640
+we have shown you the
+explicit hardware connections
+
+229
+00:14:48,640 --> 00:14:53,150
+that you must perform in order to
+share your game with other students.
+
+230
+00:14:53,150 --> 00:14:59,770
+And we see that in order to run your
+game engine with other students,
+
+231
+00:14:59,770 --> 00:15:03,332
+you're going to have to
+tie the slide pot to PE2.
+
+232
+00:15:03,332 --> 00:15:06,620
+The two buttons, whatever
+they do in your game,
+
+233
+00:15:06,620 --> 00:15:10,770
+need to be connected to PE1 and PE0.
+
+234
+00:15:10,770 --> 00:15:14,440
+The DAC, in order to create
+sounds that other people can hear,
+
+235
+00:15:14,440 --> 00:15:19,990
+we will specify the DAC
+must be on PB3, 2, 1, and 0.
+
+236
+00:15:19,990 --> 00:15:24,680
+And lastly, the Nokia
+needs port A. And so we're
+
+237
+00:15:24,680 --> 00:15:31,490
+going to use these five
+bits on PA 2, 3, 5, 6, and 7
+
+238
+00:15:31,490 --> 00:15:34,930
+to interface a Nokia display.
+
+239
+00:15:34,930 --> 00:15:38,190
+DR. RAMESH YERRABALLI: This is the
+standard that we're talking about.
+
+240
+00:15:38,190 --> 00:15:42,120
+This will allow everybody to
+play everybody else's game.
+
+241
+00:15:42,120 --> 00:15:45,320
+
+242
+00:15:45,320 --> 00:15:52,800
+So the third piece of our
+modular design is flow charts.
+
+243
+00:15:52,800 --> 00:15:55,330
+DR. JONATHAN VALVANO:
+The flow chart is a way
+
+244
+00:15:55,330 --> 00:15:57,820
+to describe the software algorithm.
+
+245
+00:15:57,820 --> 00:16:00,180
+And you don't have to
+follow this explicitly,
+
+246
+00:16:00,180 --> 00:16:05,050
+but this is our advice on
+how we build our games.
+
+247
+00:16:05,050 --> 00:16:10,380
+Every software needs a main
+loop, so we have our main loop
+
+248
+00:16:10,380 --> 00:16:13,340
+which will begin when
+we hit the reset button.
+
+249
+00:16:13,340 --> 00:16:20,740
+As all embedded systems, we will begin
+our main loop with initializations.
+
+250
+00:16:20,740 --> 00:16:25,410
+So we'll initialize the PLL, the
+graphics, the DAC, the switches, the A
+
+251
+00:16:25,410 --> 00:16:26,840
+to D converter.
+
+252
+00:16:26,840 --> 00:16:30,730
+We'll initialize all of
+the components of our game.
+
+253
+00:16:30,730 --> 00:16:33,840
+And then after we've
+initialized everything,
+
+254
+00:16:33,840 --> 00:16:40,590
+we will enable interrupts In this
+way, all the initializations will
+
+255
+00:16:40,590 --> 00:16:45,270
+be complete before the
+interrupts are turned on.
+
+256
+00:16:45,270 --> 00:16:48,380
+In order to make the game
+extremely interactive,
+
+257
+00:16:48,380 --> 00:16:54,810
+our recommendation is that you do the
+LCD outputs, the graphical outputs,
+
+258
+00:16:54,810 --> 00:17:06,990
+do all the graphical output in the main
+loop in what we call the foreground.
+
+259
+00:17:06,990 --> 00:17:09,819
+So this is the foreground
+thread, here, which
+
+260
+00:17:09,819 --> 00:17:11,484
+executes when there's no interrupts.
+
+261
+00:17:11,484 --> 00:17:16,499
+
+262
+00:17:16,499 --> 00:17:21,680
+Of all the things we do, the
+LCD output will be the slowest.
+
+263
+00:17:21,680 --> 00:17:26,740
+It'll take on the order of
+milliseconds to generate actual output
+
+264
+00:17:26,740 --> 00:17:28,950
+to the graphics.
+
+265
+00:17:28,950 --> 00:17:35,260
+The other two things we're going to do
+is things that occur very, very slowly.
+
+266
+00:17:35,260 --> 00:17:41,530
+And this will be a SysTick
+interrupt occurring at 30Hz.
+
+267
+00:17:41,530 --> 00:17:47,190
+30 hertz is fast enough that
+our eyes can't tell it's moved.
+
+268
+00:17:47,190 --> 00:17:52,230
+30 hertz is right at that range
+where it will look smooth.
+
+269
+00:17:52,230 --> 00:17:55,190
+And in our SysTick
+interrupt service routine
+
+270
+00:17:55,190 --> 00:17:58,910
+is where the actual
+game engine will occur.
+
+271
+00:17:58,910 --> 00:18:08,500
+And so your game, whatever it is,
+is going to look at the switches
+
+272
+00:18:08,500 --> 00:18:12,690
+and do whatever it is supposed
+to happen with those switches.
+
+273
+00:18:12,690 --> 00:18:18,530
+You'll look at the A to D
+converter, the slide pot
+
+274
+00:18:18,530 --> 00:18:25,747
+and do whatever your game is
+supposed to do with a slide pot.
+
+275
+00:18:25,747 --> 00:18:27,330
+DR. RAMESH YERRABALLI: Maybe movement.
+
+276
+00:18:27,330 --> 00:18:29,705
+DR. JONATHAN VALVANO: Yeah,
+like moving your ship around,
+
+277
+00:18:29,705 --> 00:18:36,040
+firing missiles, whatever is
+supposed to happen in your game.
+
+278
+00:18:36,040 --> 00:18:44,080
+And then we will decide to move sprites.
+
+279
+00:18:44,080 --> 00:18:46,620
+And a sprite we'll define
+later, but a sprite
+
+280
+00:18:46,620 --> 00:18:52,510
+is one of the objects of your game, one
+of the virtual elements of your game.
+
+281
+00:18:52,510 --> 00:18:53,790
+We will decide to move it.
+
+282
+00:18:53,790 --> 00:18:55,890
+Now we're not doing the
+graphics, we're just
+
+283
+00:18:55,890 --> 00:18:58,369
+deciding where to draw all the sprites.
+
+284
+00:18:58,369 --> 00:19:00,910
+DR. RAMESH YERRABALLI: So the
+movement is a virtual movement.
+
+285
+00:19:00,910 --> 00:19:05,500
+A physical movement is always
+done by the main program
+
+286
+00:19:05,500 --> 00:19:10,315
+by rendering this
+movement on the screen.
+
+287
+00:19:10,315 --> 00:19:13,770
+DR. JONATHAN VALVANO: Yes, and
+this is a virtual movement.
+
+288
+00:19:13,770 --> 00:19:18,130
+And you notice the flow chart of my
+SysTick interrupt service routine
+
+289
+00:19:18,130 --> 00:19:22,340
+follows the classic;
+arrows only go down.
+
+290
+00:19:22,340 --> 00:19:26,260
+This way the execution time of
+this interrupt service routine
+
+291
+00:19:26,260 --> 00:19:28,610
+will be short and bounded.
+
+292
+00:19:28,610 --> 00:19:33,040
+One of the reasons we have threads
+is so we can separate or define
+
+293
+00:19:33,040 --> 00:19:36,570
+individual software processes.
+
+294
+00:19:36,570 --> 00:19:42,490
+And the other process, the other
+action, that we want to create is sound.
+
+295
+00:19:42,490 --> 00:19:46,430
+And so we are going to
+separate the thread which
+
+296
+00:19:46,430 --> 00:19:50,290
+produces sound from
+the thread which plays
+
+297
+00:19:50,290 --> 00:19:54,420
+the game by using two
+interrupt service routines.
+
+298
+00:19:54,420 --> 00:19:58,070
+This interrupt service routine
+is going to run a lot faster.
+
+299
+00:19:58,070 --> 00:20:04,140
+It's going to run at 11kHz
+and generate a sound.
+
+300
+00:20:04,140 --> 00:20:09,270
+And so if it's time or if
+we wish to play a sound,
+
+301
+00:20:09,270 --> 00:20:11,765
+we will do the output to a DAC.
+
+302
+00:20:11,765 --> 00:20:14,836
+
+303
+00:20:14,836 --> 00:20:19,690
+And if we wish to not play a sound,
+we won't do one output to the DAC.
+
+304
+00:20:19,690 --> 00:20:22,620
+And notice that this
+interrupt service routine
+
+305
+00:20:22,620 --> 00:20:27,150
+separates the action
+of playing the sound
+
+306
+00:20:27,150 --> 00:20:29,584
+from the action of playing the game.
+
+307
+00:20:29,584 --> 00:20:32,000
+DR. RAMESH YERRABALLI: So
+you're saying that it's possible
+
+308
+00:20:32,000 --> 00:20:37,680
+that when I choose to fire,
+I want to produce a sound.
+
+309
+00:20:37,680 --> 00:20:42,000
+And so I schedule the
+action, but the action
+
+310
+00:20:42,000 --> 00:20:46,980
+itself is performed in the Timer2A ISR.
+
+311
+00:20:46,980 --> 00:20:49,010
+DR. JONATHAN VALVANO: Excellent.
+
+312
+00:20:49,010 --> 00:20:53,770
+So we could start a sound in
+our game, but the actual sound
+
+313
+00:20:53,770 --> 00:20:55,990
+is going to occur with
+a second interrupt,
+
+314
+00:20:55,990 --> 00:20:58,089
+occurring at a much faster rate.
+
+315
+00:20:58,089 --> 00:20:59,880
+DR. RAMESH YERRABALLI:
+This will also allow
+
+316
+00:20:59,880 --> 00:21:03,100
+us to change sounds from
+one sound to another sound,
+
+317
+00:21:03,100 --> 00:21:07,460
+depending upon what action
+has caused the sound.
+
+318
+00:21:07,460 --> 00:21:09,910
+DR. JONATHAN VALVANO: Absolutely.
+
+319
+00:21:09,910 --> 00:21:13,030
+DR. RAMESH YERRABALLI: So
+we've looked at the design.
+
+320
+00:21:13,030 --> 00:21:16,340
+We've delved into the
+three aspects of design,
+
+321
+00:21:16,340 --> 00:21:21,680
+which are call graph, our data
+flow graph, and flow charts.
+
+322
+00:21:21,680 --> 00:21:25,810
+And we are now going
+to look at some details
+
+323
+00:21:25,810 --> 00:21:31,620
+that we haven't covered yet
+in the previous chapters.

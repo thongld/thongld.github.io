@@ -1,0 +1,341 @@
+tuần 1
+
+
+
+1.3
+
+1. Đổi file excel thành file csv và nhập nó trở lại excel. Có bao nhiêu đôi tất màu hồng đã được bán?
+
+Đáp án: 120
+
+Có bao nhiêu mặt hàng có màu hồng đã được ghi lại trong bảng tính?
+
+Nếu ta chọn tất cả các hạng mục ở bảng pivot trước đó ta sẽ có được chỉ những mặt hàng có màu hồng.
+
+Đáp án: 124
+
+2. Ta vừa nhận được dữ liệu cập nhật từ Tokyo (tokyo_updated). Hãy refresh file và xác định xem có thêm bao nhiêu hàng.
+
+File cũ có 1254 hàng + tiêu đề
+
+File mới có 1884 hàng + tiêu đề
+
+Đáp án: 630 hàng
+
+3. Có bao nhiêu pink running items ở bản cập nhật?
+
+Thực hiện giống với câu 1.
+
+Đáp án: 324
+
+1.4
+
+Dùng cmd concatenate tất cả 100 file csv (subpartTokyo_n.csv). Có bao nhiêu items màu vàng ở bảng tính mới vừa được tạo?
+
+Thực hiện giống với câu 1.
+
+Đáp án: 141
+
+1.5
+
+Tải xuống 5 bảng tính (5 màu). Chuyển chúng thành định dạng csv ...
+
+Có bao nhiêu chiếc quần?
+
+Thực hiện giống với câu 1.
+
+Đáp án: 338
+
+1.6
+
+1. Thử sao chép thành 2 tiêu đề và cho biết tổng số mặt hàng Nikes là bao nhiêu?
+
+Chỉ lọc ra nhãn hiệu Nike
+
+Đáp án: 2589
+
+2. Công ty nào được đề cập đến ở hàng 1702?
+
+Ta lọc "Store". Bằng cách này ta biết được ta có bao nhiêu tiêu đề và xóa chúng đi. 
+
+Ta hủy "lọc" và thêm vào tất cả các stores.
+
+Đáp án: Asics 
+
+3. Bạn đã xóa đi bao nhiêu hàng?
+
+Đáp án: 5 hàng
+
+4. Có những vấn đề gì ở bảng tính chuỗi trong video?
+
+- input mâu thuẫn = CORRECT  (“—“ ở cột Loyalty)
+
+- tiêu đề phụ = CORRECT (có thể thấy 5 cột bổ sung ở trang tính pivot)
+
+- sai định dạng ngày tháng
+
+- các từ không liên quan
+
+- các file không có cùng column organization
+
+Final assignment
+
+Ở video trước, bảng tính gốc có một số hàng mới bị sai. Hãy xóa toàn bộ bảng tính và trả lời các câu hỏi sau đây.
+
+- tên nhãn hiệu, loyalty và dạng  "???"
+
+- NY thay vì New York
+
+- giới tính "-" thay vì unisex (phi giới tính)
+
+- màu "Piink" thay vì "Pink" (màu hồng)
+
+- cột sales có các loại đầu vào khác nhau
+
+- 5 tiêu đề phụ
+
+1. Bạn có thể tìm thấy trong bảng tính bao nhiêu mặt hàng từ New York?
+
+Ta chọn các hàng NY và đổi chúng thành New York.
+
+Hoặc chọn cả NY và New York và bạn sẽ nhận được kết quả là:
+
+Đáp án: 2112
+
+2. Có bao nhiêu mặt hàng có màu hồng trong bảng tính?
+
+Thực hiện giống như với câu hỏi trước. Chọn Piink (nếu không thay đổi trước đó) và Pink.
+
+Đáp án: 1067
+
+3. Có bao nhiêu mặt hàng cả nam và nữ đều mặc được?
+
+Thực hiện giống như với câu hỏi trước. Chọn Unisex.
+
+Đáp án: 1971
+
+4. Doanh số bán giày là bao nhiêu?
+
+Doanh thu phải được chuyển sang dạng số (ban đầu nó có dạng văn bản).
+
+Sau đó tính TỔNG các giá trị cột sau khi chỉ lọc shoes.
+
+Đáp án: 206596
+
+
+
+
+
+tuần 2
+
+
+
+Đáp án Tuần 2
+
+2.1 Giới thiệu về Thăm dò dữ liệu
+
+Phần này không có câu hỏi.
+
+2.2 Bảng Pivot và biểu đồ Pivot
+
+PivotTable to PivotChart
+
+entities PivotTable nào dưới đây tương đương với entities PivotChart?
+
+Columns map to: Series (Legend items) Rows map to: Categories (Axis items)
+
+Dạng PivotTable
+
+Tưởng tượng sếp của bạn muốn biết với mỗi loại sản phẩm (Áo ngực, quần, v.v.) mặt hàng có màu gì bán chạy nhất (về doanh thu). Điều nào dưới đây ... để tạo một PivotChart có ích cho sếp của bạn?
+
+Màu sắc các cột - Hạng mục theo hàng - Tổng doanh thu theo giá trị
+
+Giải thích: Cách hiệu quả nhất là nhóm tất cả các màu sắc của một loại sản phẩm nào đó lại với nhau
+
+vì sếp của bạn muốn biết với mỗi hạng mục thì màu sắc nào
+
+được bán chạy nhất.
+
+Từ bảng Pivot đến Kết luận
+
+Sửa lại PivotTable và Chart trong bảng tính sao cho giống với phần trả lời của câu hỏi trước.
+
+Bây giờ hãy giả sử bạn đưa biểu đồ này vào bài thuyết trình cho sếp nghe. Theo bạn, kết luận nào sau đây sếp của bạn có thể suy ra khi nhìn vào biểu đồ này?
+
+- ĐÚNG: Không có tất màu xám được bán ra.
+
+- SAI: Không có tất màu xanh lá được bán ra.
+
+- SAI: Tổng số giày được bán nhiều hơn số bít tất.
+
+- SAI: Ta có doanh thu quần màu xanh nước biển nhiều hơn rất nhiều các loại quần có màu khác.
+
+- ĐÚNG: Doanh thu Áo ngực ít hơn doanh thu Giày.
+
+Giải thích: Không có bất kì cột nào trong biểu đồ biểu thị mặt hàng Tất màu xám, nhiều màu sắc và màu vàng. Không thể rút ra kết luận gì về số lượng hàng bán ra vì biểu đồ chỉ biểu diễn doanh thu là bao nhiêu và bít tất có giả rẻ hơn giày. Doanh thu quần màu đen cao nổi bật, chứ không phải quần màu xanh nước biển. 
+
+2.3 Biểu đồ Pivot (tiếp)
+
+Slicers và PivotCharts
+
+Chỉ sử dụng Slicers và PivotCharts đã cho ở bảng tính, hãy cho biết nhãn hiệu nào có doanh thu giày màu đen cao nhất ở New York?
+
+Adidas.
+
+
+
+Show your skills! (ungraded)
+
+Giờ bạn đã quen với PivotCharts, chúng tôi muốn bạn tạo một bảng dữ liệu dạng PivotCharts, chụp ảnh màn hình nó lại rồi đăng lên diễn đàn Thảo luận. Bạn cũng có thể sử dụng trang tính Catalog nếu muốn.
+
+Cảm ơn các bạn về những bài đăng trên trang thảo luận nhé!
+
+2.4 Power Pivot
+
+Slicers và PivotCharts
+
+Thêm cột weekday (các ngày trong tuần) vào mẫu dữ liệu và thêm một slicer cho weekday, như Felienne đã thực hiện trên video. Sử dụng slicer mới và PivotChart, hãy tìm xem (những) ngày nào dưới đây Nike có doanh thu mặt hàng tất xanh lá ở Tokyo cao hơn Asics. 
+
+- SAI: Thứ ba
+
+- ĐÚNG: Thứ tư
+
+- ĐÚNG: Thứ năm
+
+- SAI: Thứ bảy
+
+- SAI: Chủ nhật
+
+Giải thích: Với mỗi ngày, chọn nút the corresponding weekday slicer, trong khi Màu xanh lá và Bít tất được chọn ở hai slicer khác, và so sánh hai thanh (đại diện cho Nike và Asics) ở Tokyo.
+
+Hạng mục.
+
+2.5 Bài viết
+
+Các cỡ giày nào đã được bán?
+
+(Những) SizeRange nào dưới đây của các sản phẩm của cả nữ giới và unisex đều được bán? Bạn chỉ cần dùng các trường trong bảng Catalog ở PivotTable để trả lời câu hỏi này.
+
+- SAI: 36 đến 44
+
+- SAI: 36 đến 46
+
+- ĐÚNG: 36 đến 48
+
+- SAI: 65A đến 75F
+
+Doanh thu Size Ranges
+
+SizeRange nào có doanh thu lớn nhất?
+
+36 đến 46
+
+Doanh thu các sản phẩm ở SizeRange trong câu hỏi trước là bao nhiêu?
+
+990654
+
+Lợi nhuận cao nhất
+
+Loại sản phẩm nào của hãng Nike đem lại lợi nhuận cao nhất?
+
+Giày
+
+Chuẩn bị cho tuần 3!
+
+Phần này không có câu hỏi, chỉ có các hướng dẫn chuẩn bị cho tuần 3.
+
+
+
+Đáp án Tuần 3
+
+3.1 Giới thiệu về Xu hướng
+
+Phần này không có câu hỏi.
+
+3.2 Định dạng theo điều kiện
+
+Based on the screenshots of pivot tables that make use of Color Formatting, answer the following questions. WARNING: We do not consider or suggest that the following color formatting usage is best practice. However we do believe that in practice you are likely to encounter the default color formatting without any explanation given.
+
+Giá cả theo kiểu mặt hàng
+
+Ở ảnh chụp màn hình trên, định dạng màu sắc là: 
+
+Không phù hợp vì nó sẽ là không liên quan khi xem xét cả giá bán và doanh số cùng một lúc. 
+
+Giải thích: Các câu trả lời khác là sai vì việc so sánh những mặt hàng không liên quan đến nhau sẽ gây ra khó hiểu, các màu sắc sẽ giúp ta hiểu các xu hướng được thể hiện trong video.
+
+Giá cả theo Giới tính
+
+Ở ảnh chụp màn hình trên, định dạng màu sắc ở Cost (giá cả)
+
+Giá cả theo sheet Giới tính là:
+
+- ĐÚNG: Phù hợp định dạng màu sắc vì bạn có thể dễ dàng tìm ra mặt hàng nào có giá cao nhất với mỗi giới.
+
+- SAI: Không phù hợp vì chỉ một sắc độ màu sẽ gây ra sự rối nhiễu, khiến ta không tập trung vào giá trị cao nhất.
+
+- ĐÚNG: Phù hợp vì màu vàng ở cột tổng làm cho ta dễ nhìn ra mặt hàng nào có giá cao nhất trên tổng thể.
+
+- SAI: Không phù hợp vì tất cả các ô tính phải là màu đỏ.
+
+Giải thích: Các câu trả lời khác sai vì sử dụng các sắc độ màu sắc sẽ giúp dễ nhìn ra một giá trị nào đó, tuy nhiên các màu đậm thì lại quá rối mắt.
+
+Tổng doanh thu cho mỗi mặt hàng
+
+Ở ảnh chụp màn hình trên, sử dụng định dạng màu sắc 'top 10' cho cột thứ nhất có:
+
+Lợi thế của việc phát hiện ra distribution doanh số top 10 áo ngực bán chạy.
+
+... , mũi tên biểu thị cho:
+
+Doanh thu cao.
+
+3.3 Biểu đồ mini (Spark Lines) 
+
+CHÚ Ý: Ta không cần xem xét cài đặt mặc định của sparklines phù hợp nhất cho mọi tình huống.
+
+Ta sử dụng những cài đặt mặc định vì trong thực tế bạn rất có thể sẽ gặp phải chúng. Sparklines are not meant to be compared to each other, but to see the trend in a single data series. Đồ thị sẽ hữu ích hơn nhiều trong việc so sánh các hạng mục/bộ dữ liệu khác nhau.
+
+Sparkline
+
+Thay vì sử dụng classic sparkline đại diện cho xu hướng, hãy dùng thiết kế 'Win and Loss' trên cùng một dữ liệu Felienne đang dùng. Một Win Loss sparkline …
+
+...cho biết mỗi một giá trị là tích cực hay tiêu cực thay vì các giá trị cao hay thấp ra sao.
+
+Giải thích: Các câu trả lời khác sai vì một Win Loss sparkline không tập trung vào các giá trị riêng lẻ mà tập trung vào toàn bộ phạm vi lựa chọn không nhất thiết phải qua thời gian.
+
+3.4 Trend Plotting
+
+Xu hướng và Dự đoán
+
+Dự đoán sẽ có bao nhiêu tiền thu về từ việc bán bít tất ở tuần 50. Làm tròn tới 1 chữ số thập phân.
+
+7109.9 (± 0.1)
+
+Giải thích:
+
+27.158 × 50 + 5752 =7109.9
+
+Theo bạn mặt hàng nào sẽ đem lại doanh thu nhiều nhất sau 4 tuần tới (tuần 46 đến 49)? Sử dụng biểu đồ.
+
+Quần
+
+Giải thích: Có thể thấy đường màu xám đại diện cho Quần trên top khi ta kéo những đường xu hướng với 4 giai đoạn (các tuần).
+
+3.5 Bài viết
+
+Phương trình xu hướng
+
+Dựa vào bảng tính bạn vừa tải xuống, hãy tính toán hệ số của phương trình bán nước chanh. Đáp án câu hỏi này sẽ được dùng cho bài viết tuần tới!
+
+Xu hướng của giá bán nước chanh là a*x+b. Đường xu hướng này là với số lượng đơn vị hàng hóa đã bán chứ không phải doanh thu.
+
+Giá trị của B là gì (hằng số)?
+
+150 hoặc 150.6
+
+Giá trị của A là gì (hệ số góc)?
+
+0.6
+
+Giải thích: Tạo một PivotTable. Gợi ý: transform “Week n” to integer value n that can be ordered ascending)

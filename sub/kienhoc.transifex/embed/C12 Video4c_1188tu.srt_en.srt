@@ -1,0 +1,624 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/S9Jay8ib9yc
+
+1
+00:00:00,000 --> 00:00:00,510
+
+2
+00:00:00,510 --> 00:00:02,551
+PROFESSOR JONATHAN VALVANO:
+All right, let's look
+
+3
+00:00:02,551 --> 00:00:05,339
+at the software used
+to control the motor.
+
+4
+00:00:05,339 --> 00:00:06,880
+Let's begin with the initializations.
+
+5
+00:00:06,880 --> 00:00:09,510
+
+6
+00:00:09,510 --> 00:00:12,230
+We're going to use
+port A for the output.
+
+7
+00:00:12,230 --> 00:00:15,360
+So I'll activate its clock.
+
+8
+00:00:15,360 --> 00:00:18,710
+We have two global
+variables, H and L. And they
+
+9
+00:00:18,710 --> 00:00:20,840
+are going to be
+initialized to some value.
+
+10
+00:00:20,840 --> 00:00:23,580
+This value doesn't matter.
+
+11
+00:00:23,580 --> 00:00:25,880
+But they're initialized.
+
+12
+00:00:25,880 --> 00:00:31,750
+We're going to turn on port A bit 5 in
+the usual way-- no analog, direction
+
+13
+00:00:31,750 --> 00:00:33,280
+registers, and output.
+
+14
+00:00:33,280 --> 00:00:36,540
+I am going to set the 8
+milliamp output current
+
+15
+00:00:36,540 --> 00:00:39,790
+because this has to drive
+the base of the TIP120.
+
+16
+00:00:39,790 --> 00:00:43,830
+So I'll enable 8 milliamps out of PA5.
+
+17
+00:00:43,830 --> 00:00:50,300
+And I'll enable it, and
+then initially make PA5 low.
+
+18
+00:00:50,300 --> 00:00:52,650
+I want to run SysTick.
+
+19
+00:00:52,650 --> 00:00:57,260
+So I'm going to set the
+reload value equal to L,
+
+20
+00:00:57,260 --> 00:01:05,830
+and so it will run for
+this initial value 8,000.
+
+21
+00:01:05,830 --> 00:01:10,550
+And writing a 0 to the current
+will cause the counter to clear.
+
+22
+00:01:10,550 --> 00:01:15,900
+
+23
+00:01:15,900 --> 00:01:20,440
+In order to use interrupts,
+I need to set the priority.
+
+24
+00:01:20,440 --> 00:01:25,440
+And so in priority 3 register,
+these eight bits, or specifically
+
+25
+00:01:25,440 --> 00:01:27,880
+the top three bits of
+this register, will
+
+26
+00:01:27,880 --> 00:01:32,670
+specify the priority of the SysTick
+interrupt, which I'm going to set to 2.
+
+27
+00:01:32,670 --> 00:01:35,170
+This is interesting,
+because priority matters
+
+28
+00:01:35,170 --> 00:01:37,510
+because I have to interrupts running.
+
+29
+00:01:37,510 --> 00:01:39,860
+But I'm going to set it equal to 2.
+
+30
+00:01:39,860 --> 00:01:42,570
+And then to turn on
+SysTick interrupts, I'm
+
+31
+00:01:42,570 --> 00:01:47,160
+going to set the interrupt enable
+bit, at the clock source bit to 1,
+
+32
+00:01:47,160 --> 00:01:50,050
+and the turn on the SysTick to 1.
+
+33
+00:01:50,050 --> 00:01:52,610
+That's a 7 in the control register.
+
+34
+00:01:52,610 --> 00:01:55,250
+So now my system is initialized.
+
+35
+00:01:55,250 --> 00:02:06,300
+
+36
+00:02:06,300 --> 00:02:13,270
+Next, let's initialize the two buttons,
+switch 1 and switch 2, in port F.
+
+37
+00:02:13,270 --> 00:02:15,970
+Again, we're going to turn
+on the clock for port F
+
+38
+00:02:15,970 --> 00:02:19,220
+and wait for the clock to stabilize.
+
+39
+00:02:19,220 --> 00:02:22,880
+Since we're using PF0,
+we have to unlock it.
+
+40
+00:02:22,880 --> 00:02:26,170
+So we write this value
+to the lock register.
+
+41
+00:02:26,170 --> 00:02:31,005
+And then we can commit and
+allow us to write to those bits.
+
+42
+00:02:31,005 --> 00:02:35,100
+
+43
+00:02:35,100 --> 00:02:37,090
+This stuff in the middle
+is the usual stuff
+
+44
+00:02:37,090 --> 00:02:38,930
+we've been doing over and over again.
+
+45
+00:02:38,930 --> 00:02:41,850
+PF4 and 0 are inputs.
+
+46
+00:02:41,850 --> 00:02:46,270
+They're configured as general
+purpose I/O, no analog.
+
+47
+00:02:46,270 --> 00:02:50,160
+They do have a pull-up, because
+there's no pull-up on the board,
+
+48
+00:02:50,160 --> 00:02:55,340
+so we have software pull-ups or
+internal pull-ups in the chip.
+
+49
+00:02:55,340 --> 00:02:57,250
+Now comes the interesting part.
+
+50
+00:02:57,250 --> 00:03:00,480
+And that is to set up an
+edge trigger interrupt,
+
+51
+00:03:00,480 --> 00:03:06,500
+we need to specify it's edge-sensitive
+as opposed to level-sensitive.
+
+52
+00:03:06,500 --> 00:03:09,760
+And that's by clearing the
+bits in the IS register.
+
+53
+00:03:09,760 --> 00:03:12,740
+So it's edge-sensitive and not level.
+
+54
+00:03:12,740 --> 00:03:16,930
+We have to specify the edge by
+setting these two registers.
+
+55
+00:03:16,930 --> 00:03:22,140
+IBE is not both, but it is falling edge.
+
+56
+00:03:22,140 --> 00:03:27,870
+So we're going to zero the corresponding
+bits, bit 4 and bit 0, for all three
+
+57
+00:03:27,870 --> 00:03:28,570
+of these.
+
+58
+00:03:28,570 --> 00:03:36,530
+So it will be falling edge
+edge-triggered interrupt on port F.
+
+59
+00:03:36,530 --> 00:03:39,570
+I like to clear the flags in the ritual.
+
+60
+00:03:39,570 --> 00:03:42,470
+So the first interrupt
+occurs after I'm all done.
+
+61
+00:03:42,470 --> 00:03:45,786
+So when you write to the IC
+register, that'll clear the flags.
+
+62
+00:03:45,786 --> 00:03:47,910
+They probably weren't set,
+but I'm a little worried
+
+63
+00:03:47,910 --> 00:03:51,240
+about that sort of thing.
+
+64
+00:03:51,240 --> 00:03:52,740
+We do want to arm it.
+
+65
+00:03:52,740 --> 00:03:55,900
+And again, all of these bits
+could've caused an interrupt.
+
+66
+00:03:55,900 --> 00:04:00,540
+But in this case, we're only going
+to interrupt on bits 4 and bit 0
+
+67
+00:04:00,540 --> 00:04:01,470
+from the two switches.
+
+68
+00:04:01,470 --> 00:04:05,740
+
+69
+00:04:05,740 --> 00:04:07,800
+I mentioned priority with SysTick.
+
+70
+00:04:07,800 --> 00:04:11,420
+I'm going to mention priority
+again and set the edge trigger
+
+71
+00:04:11,420 --> 00:04:15,460
+to interrupt on port
+F, also to priority 2.
+
+72
+00:04:15,460 --> 00:04:19,709
+Because I'm going to share
+to global variables, H and L,
+
+73
+00:04:19,709 --> 00:04:23,750
+I need to make sure that they're
+always in a consistent state.
+
+74
+00:04:23,750 --> 00:04:27,460
+So if this interrupt is priority
+2 and the other one's interrupt
+
+75
+00:04:27,460 --> 00:04:31,950
+is priority 2, those two interrupts
+will never suspend each other.
+
+76
+00:04:31,950 --> 00:04:35,330
+They're equal brothers
+in the priority scheme.
+
+77
+00:04:35,330 --> 00:04:37,590
+So one will not interrupt the other.
+
+78
+00:04:37,590 --> 00:04:41,280
+So H and L will always be consistent.
+
+79
+00:04:41,280 --> 00:04:45,060
+Now, the edge trigger interrupt
+is an external device.
+
+80
+00:04:45,060 --> 00:04:48,310
+So we need to enable it in the
+nested vector interrupt controller.
+
+81
+00:04:48,310 --> 00:04:51,680
+That's here in register EN0.
+
+82
+00:04:51,680 --> 00:04:57,860
+This bit is interrupt 30, which is that
+edge-triggered interrupt on port F.
+
+83
+00:04:57,860 --> 00:05:00,340
+You notice I have not
+enabled interrupts yet.
+
+84
+00:05:00,340 --> 00:05:01,310
+Where do I do that?
+
+85
+00:05:01,310 --> 00:05:11,390
+
+86
+00:05:11,390 --> 00:05:13,170
+Let's look in the main program.
+
+87
+00:05:13,170 --> 00:05:18,470
+One of the good design practices is to
+go through the initialization process
+
+88
+00:05:18,470 --> 00:05:20,410
+with interrupts disabled.
+
+89
+00:05:20,410 --> 00:05:22,960
+That means no interrupts can happen.
+
+90
+00:05:22,960 --> 00:05:25,112
+Set the bus clock to 80.
+
+91
+00:05:25,112 --> 00:05:28,700
+Set the SysTick interrupts to be on.
+
+92
+00:05:28,700 --> 00:05:30,940
+Output enable PA5.
+
+93
+00:05:30,940 --> 00:05:35,810
+Arm and enable the PF4 and
+PF0 falling edge interrupts.
+
+94
+00:05:35,810 --> 00:05:40,140
+And then after the entire
+system is completely enabled,
+
+95
+00:05:40,140 --> 00:05:43,540
+initialized, then I
+will enable interrupts.
+
+96
+00:05:43,540 --> 00:05:48,480
+So the first interrupt has to occur
+after all the initializations.
+
+97
+00:05:48,480 --> 00:05:54,010
+So I'm not getting interrupts
+before I initialized.
+
+98
+00:05:54,010 --> 00:05:57,200
+The other interesting thing to
+observe in the main program,
+
+99
+00:05:57,200 --> 00:06:03,660
+and that is this entire robot controller
+is going to occur in the background.
+
+100
+00:06:03,660 --> 00:06:07,530
+So all the software to control the robot
+occurred in the two interrupt service
+
+101
+00:06:07,530 --> 00:06:09,630
+routines, which we'll
+look at in a moment.
+
+102
+00:06:09,630 --> 00:06:13,270
+But the main program is
+free to do other things.
+
+103
+00:06:13,270 --> 00:06:16,990
+And as grandma said, when you leave
+the room, turn off the lights.
+
+104
+00:06:16,990 --> 00:06:19,770
+So if there's nothing else
+to do, this will actually
+
+105
+00:06:19,770 --> 00:06:24,225
+enter a low-power wait state
+for those interrupts to occur.
+
+106
+00:06:24,225 --> 00:06:27,590
+All right, let's look at the interrupts.
+
+107
+00:06:27,590 --> 00:06:30,280
+Let's look at the SysTick
+interrupt service routine.
+
+108
+00:06:30,280 --> 00:06:33,850
+Again, this occurs
+twice every millisecond.
+
+109
+00:06:33,850 --> 00:06:44,320
+If the signal on PA5 is equal
+to a 1, this will be true,
+
+110
+00:06:44,320 --> 00:06:48,530
+and we will then set it equal to a 0.
+
+111
+00:06:48,530 --> 00:06:50,540
+We'll clear PA5.
+
+112
+00:06:50,540 --> 00:06:55,850
+And then we're going to run, for
+the following L minus 1 cycles,
+
+113
+00:06:55,850 --> 00:07:03,120
+with PA5 low by setting the
+reload value to L minus 1.
+
+114
+00:07:03,120 --> 00:07:09,520
+Well, if PA5 wasn't equal to a 1,
+it had to have been equal to a 0.
+
+115
+00:07:09,520 --> 00:07:10,770
+That's the else.
+
+116
+00:07:10,770 --> 00:07:15,600
+And so in that case, what
+we'll do is we'll turn PA5 on.
+
+117
+00:07:15,600 --> 00:07:20,530
+And then we will leave PA5
+on for H minus 1 bus cycles.
+
+118
+00:07:20,530 --> 00:07:23,440
+
+119
+00:07:23,440 --> 00:07:34,490
+So in this way, we have PA5, which is
+high for H cycles and low for L cycles.
+
+120
+00:07:34,490 --> 00:07:37,790
+And this whole time here is
+going to be one millisecond.
+
+121
+00:07:37,790 --> 00:07:41,417
+
+122
+00:07:41,417 --> 00:07:45,520
+All right, let's look at the
+other interrupt service routine.
+
+123
+00:07:45,520 --> 00:07:49,050
+OK, let's look at the
+interrupt service routine.
+
+124
+00:07:49,050 --> 00:07:54,350
+We saw that this could occur on
+the falling edge of either switch 1
+
+125
+00:07:54,350 --> 00:07:56,320
+or switch 2.
+
+126
+00:07:56,320 --> 00:08:01,690
+And the raw interrupt status register
+will let me know which one occurred.
+
+127
+00:08:01,690 --> 00:08:05,960
+So if the raw interrupt
+status bit 0 is set,
+
+128
+00:08:05,960 --> 00:08:09,780
+we know that switch 2 was
+the one it was touched.
+
+129
+00:08:09,780 --> 00:08:15,390
+And so what we're going to do is, if
+there's room, if the L is big enough,
+
+130
+00:08:15,390 --> 00:08:24,450
+we will then decrease L. Decreasing
+L will cause it to speed up.
+
+131
+00:08:24,450 --> 00:08:28,530
+And then after we looked at
+switch 2, we'll look at switch 1.
+
+132
+00:08:28,530 --> 00:08:35,940
+Again, the raw interrupt status bit 4
+will tell us if switch 1 was pressed.
+
+133
+00:08:35,940 --> 00:08:42,100
+And if switch 1 is pressed and if L
+is small enough, we'll make L bigger.
+
+134
+00:08:42,100 --> 00:08:52,810
+Making L bigger, as we saw,
+will cause it to slow down.
+
+135
+00:08:52,810 --> 00:08:59,580
+And then in all cases, we will force
+H plus L to be equal to 80,000.
+
+136
+00:08:59,580 --> 00:09:00,489

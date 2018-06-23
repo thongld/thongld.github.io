@@ -1,0 +1,632 @@
+0
+00:00:05,088 --> 00:00:10,430
+Chào các bạn.
+Giờ chúng ta sẽ qua phần tôi mong đợi
+Đây là phương trình, các bạn cần lưu ý chỗ này.
+
+2
+00:00:14,070 --> 00:00:19,140
+Tôi sẽ ghi một vài kí hiệu, và tôi yêu cầu các bạn nhớ kĩ.
+
+3
+00:00:19,140 --> 00:00:20,970
+Các kí hiệu đó được tô đậm.
+
+4
+00:00:20,970 --> 00:00:26,000
+Hãy nhìn vào phương trình trên, nó diễn đạt cái gì?
+
+5
+00:00:26,000 --> 00:00:29,290
+Lãi suất kì vọng Ri.
+
+6
+00:00:31,060 --> 00:00:35,210
+Khi tôi đến từ kì vọng, các bạn sẽ viết như sau.
+
+7
+00:00:38,090 --> 00:00:39,950
+Tôi hỏi các bạn:
+
+8
+00:00:39,950 --> 00:00:42,090
+Lãi suất kì vọng Ri là gì?
+
+9
+00:00:42,090 --> 00:00:45,580
+Nó biểu diễn giá trị trung bình của Ri.
+
+10
+00:00:45,580 --> 00:00:50,050
+Các bạn sẽ không biết trước xu hướng của Ri trong tương lai.
+
+11
+00:00:50,050 --> 00:00:51,940
+Trong trường hợp này, chúng ta đang tìm của công ty nào?
+
+12
+00:00:51,940 --> 00:00:53,270
+Amazon.
+
+13
+00:00:53,270 --> 00:00:56,360
+Lát nữa chúng ta sẽ quay lại khái niệm này.
+
+14
+00:00:56,360 --> 00:00:59,660
+Chúng ta đang xét Amazon để tính chi phí đầu tư.
+
+15
+00:00:59,660 --> 00:01:01,310
+ 
+
+16
+00:01:01,310 --> 00:01:06,550
+Lãi suất kì vọng Ri không phải là lãi suất của 1 công ty.
+
+17
+00:01:06,550 --> 00:01:09,420
+Các bạn đang cố dự đoán con số trung bình thôi.
+
+18
+00:01:09,420 --> 00:01:11,540
+Các bạn không biết được ngày mai nó sẽ ra sao.
+
+19
+00:01:11,540 --> 00:01:12,640
+Các bạn đang cố ước lượng con số này.
+
+20
+00:01:13,940 --> 00:01:14,880
+Tôi hỏi các bạn:
+
+21
+00:01:14,880 --> 00:01:17,230
+Tại sao tôi lại không nói Lãi suất kì vọng Rf?
+
+22
+00:01:18,520 --> 00:01:20,165
+Trước tiên, Rf là cái gì?
+
+23
+00:01:20,165 --> 00:01:24,588
+Rf là lãi suất của công ty không có rủi ro.
+
+24
+00:01:24,588 --> 00:01:29,328
+Đây là công ty phi rủi ro.
+
+25
+00:01:29,328 --> 00:01:34,870
+ 
+
+26
+00:01:34,870 --> 00:01:36,910
+Các bạn tính được rủi ro không?
+
+27
+00:01:38,190 --> 00:01:40,850
+Chúng ta đã học về công ty phi rủi ro chưa?
+
+28
+00:01:40,850 --> 00:01:42,010
+Rồi.
+
+29
+00:01:42,010 --> 00:01:47,680
+Nó là công ty có ngân khố bằng không, và
+
+30
+00:01:47,680 --> 00:01:51,430
+các công ty này được cấp phép ở Mỹ.
+Nó còn tạo ra khế ước không giá trị.
+
+31
+00:01:51,430 --> 00:01:52,330
+Tại sao lại không có giá trị?
+
+32
+00:01:52,330 --> 00:01:53,760
+Bởi vì nếu như các bạn chờ công ty phát triển,
+
+33
+00:01:53,760 --> 00:01:59,060
+các bạn chắc chắn sẽ thu được lợi nhuận trừ phi chính phủ phá sản.
+
+34
+00:01:59,060 --> 00:02:03,800
+Mà điều đó hoàn toàn không có thực, nên rủi ro của công ty thuộc nhóm rủi ro đặc định.
+
+35
+00:02:03,800 --> 00:02:06,200
+Bởi vì chúng ta đã biết trước, nên chúng ta cũng không mong đợi gì nhiều.
+
+36
+00:02:07,340 --> 00:02:08,550
+ Số này là số nào?
+
+37
+00:02:08,550 --> 00:02:11,240
+Nhớ rằng chúng ta đang thảo luận về mức sinh lời của thị trường.
+
+38
+00:02:11,240 --> 00:02:13,300
+Vậy nên số này là tham số kì vọng.
+
+39
+00:02:14,600 --> 00:02:19,340
+Nếu kí hiệu đúng thì phải kí hiệu như thế này.
+
+40
+00:02:19,340 --> 00:02:21,880
+Nhớ ghi hoa chữ đầu tiên.
+
+41
+00:02:21,880 --> 00:02:24,650
+Thỉnh thoảng tôi lại viết hoa, thỉnh thoảng thì không.
+
+42
+00:02:24,650 --> 00:02:28,950
+Nhưng thường cái đó cũng không quan trọng lắm.
+
+43
+00:02:28,950 --> 00:02:31,860
+Chúng ta đang học về CAPM, nội dung của nó là gì?
+
+44
+00:02:31,860 --> 00:02:36,793
+CAOM định nghĩa rằng lãi suất kỳ vọng của Amazon, hay Google, hay
+
+45
+00:02:36,793 --> 00:02:42,609
+của bất kì công ty nào, đều bằng lãi suất kỳ vọng, là rf cộng với chi phí phát sinh.
+
+46
+00:02:45,788 --> 00:02:48,000
+Đây là chi phí phát sinh.
+
+47
+00:02:48,000 --> 00:02:49,910
+Tại sao chúng ta lại trả phần chi phí phát sinh này.
+
+48
+00:02:49,910 --> 00:02:54,450
+Chúng ta trả nó là vì hầu hết mọi người thuộc tuýp né tránh rủi ro.
+
+49
+00:02:55,770 --> 00:02:58,480
+Chi phí phát sinh gồm 2 phần.
+
+50
+00:02:58,480 --> 00:03:02,390
+1 là chi phí phát sinh trung bình của rủi ro thị trường.
+
+51
+00:03:02,390 --> 00:03:07,820
+Tức là sự chênh lệch giữa rủi ro của danh mục đầu tư
+
+52
+00:03:07,820 --> 00:03:13,600
+và rủi ro của tài sản.
+
+53
+00:03:13,600 --> 00:03:16,429
+Vậy chúng ta sử dụng gì trong dữ liệu để tính rủi ro thị trường?
+
+54
+00:03:17,460 --> 00:03:18,410
+Chúng ta sẽ lấy 500.
+
+55
+00:03:18,410 --> 00:03:22,000
+Thực tế các bạn có thể lấy 200 hay cao hơn.
+
+56
+00:03:22,000 --> 00:03:24,930
+Đúng không?
+
+57
+00:03:24,930 --> 00:03:27,200
+Hiệu của phép tính này,
+
+58
+00:03:27,200 --> 00:03:28,360
+các bạn biết sao không,
+
+59
+00:03:28,360 --> 00:03:31,930
+rất khó dự đoán được.
+
+60
+00:03:31,930 --> 00:03:34,040
+Trong ví dụ tôi đã nêu trước đây,
+
+61
+00:03:34,040 --> 00:03:39,780
+ở Mỹ, trước đây mọi người đều nghĩ nó chỉ vào khoảng 7%.
+
+62
+00:03:39,780 --> 00:03:41,740
+Bởi vì các bạn không thể dự đoán được tương lai, đúng không?
+
+63
+00:03:41,740 --> 00:03:43,190
+Nên các bạn sẽ lấy số liệu cũ.
+
+64
+00:03:43,190 --> 00:03:45,348
+Hiện nay hầu hết mọi người đều nghĩ giá trị này vào khoảng 5%.
+
+65
+00:03:45,348 --> 00:03:51,962
+Đây là biến số cực kì quan trọng với những cái chúng ta tính,
+
+66
+00:03:51,962 --> 00:03:55,700
+và cũng rất khó để dự đoán chính xác.
+
+67
+00:03:55,700 --> 00:04:01,430
+Và nếu các bạn dùng 7% thay vì 5%, kết quả sẽ ra khác hoàn toàn.
+
+68
+00:04:01,430 --> 00:04:04,257
+Vì sao?
+Bởi vì có sự đa hợp trong đó.
+
+69
+00:04:04,257 --> 00:04:08,640
+Chênh lệch 2% thậm chí có thể tạo nên sự khác biệt lớn.
+
+70
+00:04:08,640 --> 00:04:11,360
+Vậy dây là rủi ro thị trường, còn đây là gì?
+
+71
+00:04:13,690 --> 00:04:17,280
+Đây là rủi ro của công ty Amazon.
+
+72
+00:04:18,649 --> 00:04:22,180
+ 
+
+73
+00:04:23,290 --> 00:04:24,600
+Tôi hỏi các bạn câu này:
+
+74
+00:04:24,600 --> 00:04:26,450
+Các bạn xác đinh được hết các số này không?
+
+75
+00:04:26,450 --> 00:04:28,680
+Câu trả lời là có.
+
+76
+00:04:28,680 --> 00:04:31,380
+Chỉ cần tra cứu là chúng ta sẽ tính được thôi.
+
+77
+00:04:31,380 --> 00:04:33,355
+Các bạn có thể tra cứu chỉ số rủi ro,
+
+78
+00:04:33,355 --> 00:04:39,040
+thật ra không làm cũng không sao, các bạn lấy bằng 5% cũng được.
+
+79
+00:04:39,040 --> 00:04:44,270
+Mọi người đều đang suy xét chọn 1 số để dùng chung.
+
+80
+00:04:44,270 --> 00:04:47,210
+7% thì lại quá cao.
+
+81
+00:04:47,210 --> 00:04:49,370
+Và như tôi đã nói, người ta vẫn đang cố tìm số thích hợp,
+
+82
+00:04:49,370 --> 00:04:53,410
+và còn có nhiều bất đồng xoay quanh việc này.
+
+83
+00:04:53,410 --> 00:04:56,660
+Ngoài ra, số này cũng ảnh hưởng đến quá trình tính toán nữa.
+
+84
+00:04:56,660 --> 00:04:58,170
+Chúng ta tính được Beta i không?
+
+85
+00:04:58,170 --> 00:04:58,670
+Được.
+
+86
+00:04:59,923 --> 00:05:03,034
+Nếu tôi cho các bạn lãi suất của công ty Amazon thay vì công ty 1, hay là
+
+87
+00:05:03,034 --> 00:05:07,890
+tôi nói các bạn công ty 1 là công ty Amazon, thì các bạn đều biết được số này, đúng không?
+
+88
+00:05:07,890 --> 00:05:13,050
+Cái hay của lãi suất là nó dễ tính.
+
+89
+00:05:13,050 --> 00:05:15,770
+Chúng ta có thể tính được trong vòng vài giây.
+
+90
+00:05:15,770 --> 00:05:19,230
+Tôi sẽ cho các bạn xem đồ thị CAPM để
+
+91
+00:05:19,230 --> 00:05:20,890
+các bạn nắm bắt được những gì tôi nói.
+
+92
+00:05:22,240 --> 00:05:24,670
+ 
+
+93
+00:05:24,670 --> 00:05:27,660
+đồ thị CAPM khá dễ hiểu.
+
+94
+00:05:27,660 --> 00:05:30,720
+Đồ thị là một đường thẳng, và được mô tả bằng phương trình bên cạnh.
+
+95
+00:05:31,790 --> 00:05:34,210
+Làm sao để vẽ được đường này?
+
+96
+00:05:34,210 --> 00:05:36,097
+Các bạn cần bao nhiêu điểm?
+
+97
+00:05:36,097 --> 00:05:39,179
+Các bạn cần 2 điểm, 
+
+98
+00:05:39,179 --> 00:05:45,450
+sau đó nối 2 điểm lại là xong.
+
+99
+00:05:45,450 --> 00:05:46,960
+Tôi đoán được số Rf không?
+
+100
+00:05:46,960 --> 00:05:47,460
+Được.
+
+101
+00:05:49,130 --> 00:05:52,000
+Hầu hết mọi người đều chọn
+
+102
+00:05:54,500 --> 00:05:58,390
+thời hạn của khế ước là 10 năm, chúng ta cũng sẽ làm vậy.
+
+103
+00:05:58,390 --> 00:06:02,480
+Các bạn thêm vào 1 số các bạn biết.
+
+104
+00:06:02,480 --> 00:06:03,600
+Tôi có biết số này không?
+
+105
+00:06:03,600 --> 00:06:04,990
+Có.
+
+106
+00:06:04,990 --> 00:06:07,480
+Còn ở đây chúng ta sẽ điền vốn đầu tư vào.
+
+107
+00:06:07,480 --> 00:06:09,890
+Hệ số Beta của danh mục đầu tư là bao nhiêu?
+
+108
+00:06:11,500 --> 00:06:13,170
+Các bạn còn nhớ cách tính không?
+
+109
+00:06:13,170 --> 00:06:17,240
+Sigma im chia cho Sigma m bình phương.
+
+110
+00:06:18,330 --> 00:06:21,120
+Vậy hệ số Beta của m và n bằng bao nhiêu?
+
+111
+00:06:22,770 --> 00:06:27,150
+Sigma MM chia cho sigma m bình phương.
+
+112
+00:06:27,150 --> 00:06:29,067
+Đây là công thức tính.
+
+113
+00:06:29,067 --> 00:06:31,468
+Sigma MM, rồi đến sigma MM 1.
+
+114
+00:06:31,468 --> 00:06:35,720
+Xong.
+
+115
+00:06:35,720 --> 00:06:39,980
+Nếu Beta thay đổi 1% thì thị trường sẽ biến động như thế nào?
+
+116
+00:06:39,980 --> 00:06:40,480
+Thay đổi 1%.
+
+117
+00:06:41,750 --> 00:06:47,110
+Kết quả này bằng 1,
+
+118
+00:06:47,110 --> 00:06:51,860
+Và hệ số Beta ở đây thì bằng 0 vì đây là trường hợp phi rủi ro.
+
+119
+00:06:51,860 --> 00:06:53,590
+Tôi có biết lãi suất kì vọng của thị trường không?
+
+120
+00:06:53,590 --> 00:06:58,342
+Có, tôi có thể đi kiểm tra lãi suất kì vọng theo S&P 500
+
+121
+00:06:58,342 --> 00:07:02,470
+trong vòng hơn 90 năm trở lại đây.
+
+122
+00:07:02,470 --> 00:07:07,050
+Và đó có lẽ là dự đoán tốt nhất tôi đưa ra, đúng không?
+
+123
+00:07:07,050 --> 00:07:09,190
+Bởi vì tôi đang làm phép phân tích,
+
+124
+00:07:09,190 --> 00:07:12,530
+Các bạn có thể dùng thêm nhiều thông tin nữa, nhưng tôi khuyên là nên dùng cái này.
+
+125
+00:07:12,530 --> 00:07:15,610
+Một khi đã có 2 điểm,
+
+126
+00:07:15,610 --> 00:07:17,800
+nhưng trước hết chúng ta hãy quan sát đồ thị.
+
+127
+00:07:17,800 --> 00:07:20,340
+Tôi hỏi các bạn:
+
+128
+00:07:20,340 --> 00:07:22,620
+Phương trình của trục hoành này là gì?
+
+129
+00:07:22,620 --> 00:07:26,240
+B + M x C
+
+130
+00:07:30,570 --> 00:07:38,090
+b là phần bị chắn của rf.
+
+131
+00:07:38,090 --> 00:07:38,990
+M là độ dốc.
+
+132
+00:07:40,120 --> 00:07:41,910
+C là gì?
+
+133
+00:07:41,910 --> 00:07:43,020
+Beta i.
+
+134
+00:07:43,020 --> 00:07:44,550
+Và hệ số góc của đường này 
+
+135
+00:07:44,550 --> 00:07:45,300
+bằng bao nhiêu?
+
+136
+00:07:45,300 --> 00:07:46,571
+ 
+
+137
+00:07:46,571 --> 00:07:53,838
+Hệ số góc bằng đoạn này chia đoạn này.
+
+138
+00:07:53,838 --> 00:07:54,390
+Đoạn này chia đoạn này.
+
+139
+00:07:54,390 --> 00:07:56,150
+Nhưng số này bằng bao nhiêu?
+
+140
+00:07:56,150 --> 00:07:56,650
+1
+
+141
+00:07:58,950 --> 00:08:01,790
+Vậy nên tôi chỉ cần tính được đoạn này thôi.
+
+142
+00:08:01,790 --> 00:08:03,638
+Nhưng đoạn này bằng bao nhiêu?
+
+143
+00:08:03,638 --> 00:08:11,850
+Bằng Rm trừ rf.
+
+144
+00:08:11,850 --> 00:08:16,555
+Cũng khá dễ hiểu, các bạn có thể làm những cách khác
+
+145
+00:08:16,555 --> 00:08:21,847
+làm những cách khác mà vẫn tính được
+
+146
+00:08:21,847 --> 00:08:26,368
+thông số quan trọng nhất đó là lãi suất kỳ vọng.
+
+147
+00:08:26,368 --> 00:08:30,251
+Và thông số này cũng liên hệ mật thiết với vốn đầu tư,
+
+148
+00:08:30,251 --> 00:08:32,573
+tùy thuộc vào khả năng tài chính.
+
+149
+00:08:32,573 --> 00:08:38,580
+Nếu các bạn tính được lãi suất kì vọng của Amazon, và nếu như Amazon không có nợ,
+
+150
+00:08:38,580 --> 00:08:41,510
+Lúc đó lãi suất của Amazon như thế nào?
+
+151
+00:08:41,510 --> 00:08:42,630
+Vẫn như cũ.
+
+152
+00:08:42,630 --> 00:08:46,800
+Các bạn nhớ rằng ban đầu chúng ta giả sử Amazon không có nợ.
+
+153
+00:08:46,800 --> 00:08:48,260
+Chúng ta sẽ quay lại sau.
+
+154
+00:08:48,260 --> 00:08:49,770
+Tôi sẽ tổng kết lại bài học.
+
+155
+00:08:49,770 --> 00:08:52,760
+Các bạn cố làm nhanh các bài tập.
+
+156
+00:08:52,760 --> 00:08:57,970
+Và các bạn sẽ thấy mọi thứ có liên hệ như thế nào, và các bạn sẽ hiểu được cái hay ho của tài chính.
+
+157
+00:08:57,970 --> 00:08:58,503
+Chào các bạn.
+

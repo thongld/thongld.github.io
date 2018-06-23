@@ -1,0 +1,856 @@
+1
+00:00:01,510 --> 00:00:04,500
+https://youtu.be/COu9nzRF74A
+In this segment, we'll ask ourselves what
+the building blocks
+
+2
+00:00:04,500 --> 00:00:09,080
+of experiments are and get to know the key
+terminology as we think about
+
+3
+00:00:09,080 --> 00:00:12,440
+designing experiments.
+
+4
+00:00:12,440 --> 00:00:16,269
+But before we do that, let's think about why
+experiments are done in the
+
+5
+00:00:16,269 --> 00:00:17,310
+first place.
+
+6
+00:00:17,310 --> 00:00:21,140
+There are five reasons for doing experiments.
+
+7
+00:00:21,140 --> 00:00:24,590
+The first is to document behavioral phenomena.
+
+8
+00:00:24,590 --> 00:00:29,460
+Any major phenomena, like decision biases
+or strategies used for making
+
+9
+00:00:29,460 --> 00:00:33,649
+decisions, are typically documented by doing
+a series of experiments over
+
+10
+00:00:33,649 --> 00:00:38,109
+time that converge towards the same conclusion.
+
+11
+00:00:38,109 --> 00:00:43,059
+Second, experiments are often run to develop
+a theory to explain the
+
+12
+00:00:43,059 --> 00:00:46,769
+phenomena that have been documented, as we
+discussed earlier.
+
+13
+00:00:46,769 --> 00:00:51,379
+Third, we often do experiments to study the
+effect sizes
+
+14
+00:00:51,379 --> 00:00:52,789
+of different phenomena.
+
+15
+00:00:52,789 --> 00:00:58,100
+For instance, how large is the effect caused
+by, let's say, something like
+
+16
+00:00:58,100 --> 00:01:03,210
+information framing or presenting something
+as pennies a day on the
+
+17
+00:01:03,210 --> 00:01:04,769
+final measure of interest?
+
+18
+00:01:04,769 --> 00:01:08,710
+Which, in this case, could be the likelihood
+that people make a purchase
+
+19
+00:01:08,710 --> 00:01:10,150
+or a donation.
+
+20
+00:01:10,150 --> 00:01:13,490
+A fourth reason for running experiments is
+to reconcile and test
+
+21
+00:01:13,490 --> 00:01:18,150
+across theories that make conflicting predictions.
+
+22
+00:01:18,150 --> 00:01:22,150
+And finally, we often do experiments to test
+for the efficacy of what we
+
+23
+00:01:22,150 --> 00:01:27,980
+call in behavioral economics as nudges or
+behavior changing interventions.
+
+24
+00:01:27,980 --> 00:01:35,450
+So these are five good reasons for why experiments
+are typically conducted.
+
+25
+00:01:35,450 --> 00:01:38,520
+Every experiment studies the relationship
+between one variable,
+
+26
+00:01:38,520 --> 00:01:42,450
+that we call a cause, and it's consequence,
+which is
+
+27
+00:01:42,450 --> 00:01:44,420
+often called an effect.
+
+28
+00:01:44,420 --> 00:01:49,880
+In a nutshell, every experiment tries to show
+that a particular cause
+
+29
+00:01:49,880 --> 00:01:53,560
+results in a specific effect.
+
+30
+00:01:53,560 --> 00:01:58,230
+For example, framing a price as pennies a
+day, or framing a request
+
+31
+00:01:58,230 --> 00:02:03,670
+for a contribution as pennies a day, results
+in greater spending or perhaps
+
+32
+00:02:03,670 --> 00:02:06,130
+a greater likelihood of donation.
+
+33
+00:02:06,130 --> 00:02:10,929
+Likewise, in a sunk cost setting, increasing
+the amount that people
+
+34
+00:02:10,929 --> 00:02:15,769
+prepay for a basketball game ticket increases
+the likelihood that they
+
+35
+00:02:15,769 --> 00:02:18,870
+will fall prey to the sunk cost effect.
+
+36
+00:02:18,870 --> 00:02:23,680
+In this case, the framing of the price as
+pennies a day or the dollars that
+
+37
+00:02:23,680 --> 00:02:28,670
+are spent in prepaying for a given ticket
+are the cause, while the
+
+38
+00:02:28,670 --> 00:02:32,049
+greater spending that occurs as a result,
+or the greater sunk cost
+
+39
+00:02:32,049 --> 00:02:37,790
+effect that occurs as a result, will be the
+effect.
+
+40
+00:02:37,790 --> 00:02:40,209
+Let's focus a minute on the pennies a day.
+
+41
+00:02:40,209 --> 00:02:44,779
+The idea behind the pennies a day research
+was that taking a particular
+
+42
+00:02:44,779 --> 00:02:49,810
+price and framing that as a pennies a day
+expense, let's say $1 a day,
+
+43
+00:02:49,810 --> 00:02:55,159
+increases the likelihood that people will
+spend on that product or service.
+
+44
+00:02:55,159 --> 00:02:57,769
+Why does this happen?
+
+45
+00:02:57,769 --> 00:03:01,739
+John Gourville's work suggested that when
+a price is framed as a pennies a
+
+46
+00:03:01,739 --> 00:03:07,019
+day price, it increases the perception of
+affordability of the product,
+
+47
+00:03:07,019 --> 00:03:10,840
+thereby resulting in greater spending.
+
+48
+00:03:10,840 --> 00:03:16,139
+This intermediate variable between the cause
+and the effect is often called a
+
+49
+00:03:16,139 --> 00:03:18,630
+mediating variable.
+
+50
+00:03:18,630 --> 00:03:24,819
+So in this case, the cause results in the
+mediator, which in turn results in
+
+51
+00:03:24,819 --> 00:03:30,659
+the effect of interest, i.e.
+pennies a day changes the perception of affordability,
+
+52
+00:03:30,659 --> 00:03:36,120
+which itself results
+in greater spending.
+
+53
+00:03:36,120 --> 00:03:41,129
+Let's go back and think again about the basic
+cause and effect medium.
+
+54
+00:03:41,129 --> 00:03:44,450
+Again going back to pennies a day, the research
+suggested that framing
+
+55
+00:03:44,450 --> 00:03:48,680
+something as pennies a day increases in greater
+spending.
+
+56
+00:03:48,680 --> 00:03:52,590
+But if you remember, this effect happens only
+when the pennies a day
+
+57
+00:03:52,590 --> 00:03:58,169
+frame results in a dollar amount that can
+be compared easily to other
+
+58
+00:03:58,169 --> 00:04:02,499
+expenses that the consumer might make that
+are in the range
+
+59
+00:04:02,499 --> 00:04:03,519
+of pennies a day.
+
+60
+00:04:03,519 --> 00:04:09,260
+If in fact, the per day expense goes up to
+a certain level, let's say it's
+
+61
+00:04:09,260 --> 00:04:14,849
+$25 or $20, then the pennies a day effect
+might backfire because now the
+
+62
+00:04:14,849 --> 00:04:19,900
+consumer cannot recall anything else they
+do that routinely cost them $15
+
+63
+00:04:19,900 --> 00:04:23,560
+or $20 or $25 a day.
+
+64
+00:04:23,560 --> 00:04:28,340
+In other words, pennies a day will result
+in greater spending, but only
+
+65
+00:04:28,340 --> 00:04:33,660
+for small daily amounts and not when, in fact,
+the daily amount or the daily
+
+66
+00:04:33,660 --> 00:04:36,600
+equivalent is large.
+
+67
+00:04:36,600 --> 00:04:41,310
+In the language of experimental design, this
+third variable is called
+
+68
+00:04:41,310 --> 00:04:43,210
+a moderator variable.
+
+69
+00:04:43,210 --> 00:04:47,250
+A cause results in an effect.
+
+70
+00:04:47,250 --> 00:04:53,840
+And that relationship between cause and effect
+is changed as a function of
+
+71
+00:04:53,840 --> 00:04:54,840
+the moderator.
+
+72
+00:04:54,840 --> 00:04:57,060
+The moderator, in this case, eliminates the
+effect.
+
+73
+00:04:57,060 --> 00:05:01,860
+But it could also strengthen or weaken the
+effect in question.
+
+74
+00:05:01,860 --> 00:05:07,170
+Now, let's think about some other elements
+of an experiment.
+
+75
+00:05:07,170 --> 00:05:10,940
+We've talked a little bit earlier about a
+control condition and a
+
+76
+00:05:10,940 --> 00:05:13,600
+treatment condition.
+
+77
+00:05:13,600 --> 00:05:17,390
+A control condition is one in which there
+is typically the
+
+78
+00:05:17,390 --> 00:05:20,400
+absence of the cause.
+
+79
+00:05:20,400 --> 00:05:24,630
+In the kinds of experiments that we often
+run in behavioral economics, a
+
+80
+00:05:24,630 --> 00:05:28,590
+control conditioned represents a condition
+where the intervention, or
+
+81
+00:05:28,590 --> 00:05:32,310
+the nudge , that you're trying to test is
+absent.
+
+82
+00:05:32,310 --> 00:05:37,000
+Or it typically represents the status quo
+or the way in which a choice is
+
+83
+00:05:37,000 --> 00:05:40,280
+typically currently being made.
+
+84
+00:05:40,280 --> 00:05:43,910
+In a treatment condition, we often add in
+the intervention that we
+
+85
+00:05:43,910 --> 00:05:45,550
+are trying to test.
+
+86
+00:05:45,550 --> 00:05:50,250
+Or more broadly speaking, we try and add in
+the factor that we call the
+
+87
+00:05:50,250 --> 00:05:54,620
+cause, to see if, in fact, it changes the
+effect.
+
+88
+00:05:54,620 --> 00:05:59,080
+Now, oftentimes in an experiment we could
+have multiple causes or multiple
+
+89
+00:05:59,080 --> 00:06:03,390
+treatments that are employed simultaneously.
+
+90
+00:06:03,390 --> 00:06:08,400
+A condition refers to the collection of specific
+tasks and stimuli that the
+
+91
+00:06:08,400 --> 00:06:11,590
+experimenter presents to a participant.
+
+92
+00:06:11,590 --> 00:06:17,810
+In a given condition, we might have two or
+three or perhaps even one
+
+93
+00:06:17,810 --> 00:06:24,750
+factor that has been manipulated by the researcher.
+
+94
+00:06:24,750 --> 00:06:27,100
+Treatments themselves may take the form of
+many factors.
+
+95
+00:06:27,100 --> 00:06:29,510
+Each factor could have multiple levels.
+
+96
+00:06:29,510 --> 00:06:34,230
+For example, in one of the experiments we
+saw earlier, price framing is a
+
+97
+00:06:34,230 --> 00:06:39,240
+factor that has simply two levels, an aggregate
+level or an at a
+
+98
+00:06:39,240 --> 00:06:41,370
+pennies a day level.
+
+99
+00:06:41,370 --> 00:06:44,850
+But you could think of many factors that are
+multiple levels.
+
+100
+00:06:44,850 --> 00:06:46,360
+Think about the sunk cost effect.
+
+101
+00:06:46,360 --> 00:06:50,770
+We could run an experiment in which a ticket
+that has been purchased for a
+
+102
+00:06:50,770 --> 00:06:58,320
+basketball game has been obtained for free,
+for $10, for $20, or for $30.
+
+103
+00:06:58,320 --> 00:07:02,550
+In this case, the price that has been prepaid
+for the ticket is the
+
+104
+00:07:02,550 --> 00:07:06,580
+treatment in question, in fact, the factor
+that we are studying.
+
+105
+00:07:06,580 --> 00:07:12,340
+But it has four levels, 0, 10, 20, and 30.
+
+106
+00:07:12,340 --> 00:07:15,810
+And finally, there are a number of things
+we could measure as the effect
+
+107
+00:07:15,810 --> 00:07:17,890
+variable or the outcome variable.
+
+108
+00:07:17,890 --> 00:07:24,090
+In experiments, you could study the effect
+of a cause on the attitudes or
+
+109
+00:07:24,090 --> 00:07:30,150
+on the strength of preference or on the choices
+that participants make.
+
+110
+00:07:30,150 --> 00:07:34,550
+In behavioral economics, we typically study
+the effect only on choices.
+
+111
+00:07:34,550 --> 00:07:39,140
+Although, some researchers do study effects
+on attitudes, as well as the
+
+112
+00:07:39,140 --> 00:07:41,150
+strength of preference.
+
+113
+00:07:41,150 --> 00:07:46,520
+Now, we've often used the word "manipulation"
+in this course.
+
+114
+00:07:46,520 --> 00:07:47,810
+What is a manipulation?
+
+115
+00:07:47,810 --> 00:07:52,240
+It is any aspect of a process or a task that
+the experimenter changes
+
+116
+00:07:52,240 --> 00:07:54,180
+across experimental groups.
+
+117
+00:07:54,180 --> 00:08:00,360
+When we visited the lab, we heard Julie say
+that the entire set of
+
+118
+00:08:00,360 --> 00:08:05,760
+experiences that a participant goes through
+can be potentially manipulated
+
+119
+00:08:05,760 --> 00:08:10,440
+from the way the information is presented,
+the font in which a text is
+
+120
+00:08:10,440 --> 00:08:14,780
+written, or even the color or temperature
+or different elements of
+
+121
+00:08:14,780 --> 00:08:16,270
+the background.
+
+122
+00:08:16,270 --> 00:08:21,200
+So any element of the task that is changed
+by the experimenter across
+
+123
+00:08:21,200 --> 00:08:26,120
+groups is called a manipulation.
+
+124
+00:08:26,120 --> 00:08:29,560
+A couple of other terms to keep in mind when
+we think about experiments.
+
+125
+00:08:29,560 --> 00:08:32,550
+The first is background variables.
+
+126
+00:08:32,550 --> 00:08:34,710
+What's a background variable?
+
+127
+00:08:34,710 --> 00:08:39,400
+Any set of variables that are given in an
+experiment and are not manipulated
+
+128
+00:08:39,400 --> 00:08:41,010
+are background variables.
+
+129
+00:08:41,010 --> 00:08:46,490
+Oftentimes, the location, at which data has
+been collected, or the
+
+130
+00:08:46,490 --> 00:08:51,120
+ethnicity of the participants or the gender
+or the education level, all
+
+131
+00:08:51,120 --> 00:08:55,400
+represent background variables that are given
+in the context of an
+
+132
+00:08:55,400 --> 00:08:56,400
+experiment.
+
+133
+00:08:56,400 --> 00:09:00,650
+We have to make sure that we interpret the
+experiments in the context of the
+
+134
+00:09:00,650 --> 00:09:05,430
+background of that experimental setting.
+
+135
+00:09:05,430 --> 00:09:10,520
+In particular, care must be taken in order
+not to generalize too much from
+
+136
+00:09:10,520 --> 00:09:15,330
+a given set of background variables and push
+the results of the experiment
+
+137
+00:09:15,330 --> 00:09:19,150
+into other conditions of background variables.
+
+138
+00:09:19,150 --> 00:09:22,080
+And in fact, that's why replication of the
+key
+
+139
+00:09:22,080 --> 00:09:24,290
+experimental results are important.
+
+140
+00:09:24,290 --> 00:09:28,960
+It is important to replicate the experiment
+across different sets of
+
+141
+00:09:28,960 --> 00:09:32,580
+background variables, so that the researcher
+has greater confidence in
+
+142
+00:09:32,580 --> 00:09:34,630
+the results.
+
+143
+00:09:34,630 --> 00:09:38,980
+Randomization refers to the act of allocating
+participants to different
+
+144
+00:09:38,980 --> 00:09:42,180
+conditions randomly.
+
+145
+00:09:42,180 --> 00:09:45,310
+Why this is important is that it minimizes
+what is called selection
+
+146
+00:09:45,310 --> 00:09:48,440
+bias or allocation bias.
+
+147
+00:09:48,440 --> 00:09:54,930
+For example, think about doing a field study
+of consumers that use credit
+
+148
+00:09:54,930 --> 00:09:59,090
+cards versus cash or checks when they make
+purchases.
+
+149
+00:09:59,090 --> 00:10:03,670
+If you simply observe what's happening in
+the field, you might notice that
+
+150
+00:10:03,670 --> 00:10:06,790
+people that use credit cards spend more than
+people
+
+151
+00:10:06,790 --> 00:10:09,520
+that use cash or checks.
+
+152
+00:10:09,520 --> 00:10:13,570
+But it could be that people who expect to
+spend more decide to use credit
+
+153
+00:10:13,570 --> 00:10:14,570
+cards in the first place.
+
+154
+00:10:14,570 --> 00:10:18,839
+And so here what you're seeing is the true
+cause is the
+
+155
+00:10:18,839 --> 00:10:20,700
+actual level of spending.
+
+156
+00:10:20,700 --> 00:10:24,680
+The effect is the credit card versus cash
+choice.
+
+157
+00:10:24,680 --> 00:10:27,420
+And if you make the opposite conclusion, if
+you make the conclusion
+
+158
+00:10:27,420 --> 00:10:31,830
+that the payment mechanism actually changes
+how much people spend, that
+
+159
+00:10:31,830 --> 00:10:38,940
+would be a confound or, what is called, a
+bias, as it happens in the
+
+160
+00:10:38,940 --> 00:10:39,940
+experiment.
+
+161
+00:10:39,940 --> 00:10:43,630
+Likewise, experimenters or research assistants
+who actually collect the
+
+162
+00:10:43,630 --> 00:10:50,090
+data are typically blinded to the cause of
+the experiment, so that we
+
+163
+00:10:50,090 --> 00:10:54,540
+minimize the chance of any allocation biases,
+minimize the chance that they
+
+164
+00:10:54,540 --> 00:10:58,650
+aim to allocate participants to certain conditions
+that they think
+
+165
+00:10:58,650 --> 00:11:05,110
+would push the results as they expected.
+
+166
+00:11:05,110 --> 00:11:08,360
+Triangulation refers to the use of multiple
+methods with the view to
+
+167
+00:11:08,360 --> 00:11:12,680
+double check or triple check the results.
+
+168
+00:11:12,680 --> 00:11:16,440
+You could triangulate across many different
+factors.
+
+169
+00:11:16,440 --> 00:11:18,910
+You could triangulate by changing the dependent
+measures.
+
+170
+00:11:18,910 --> 00:11:23,150
+For instance, in some cases, participants
+might choose between
+
+171
+00:11:23,150 --> 00:11:24,680
+options a and b.
+
+172
+00:11:24,680 --> 00:11:29,681
+In the second case, they may indicate the
+strength of preference or they may
+
+173
+00:11:29,681 --> 00:11:31,940
+indicate their willingness to pay.
+
+174
+00:11:31,940 --> 00:11:36,010
+But across multiple experiments, the use of
+different dependent measures
+
+175
+00:11:36,010 --> 00:11:41,410
+will strengthen the belief that the experimental
+results all converge
+
+176
+00:11:41,410 --> 00:11:43,090
+towards the same conclusion.
+
+177
+00:11:43,090 --> 00:11:48,160
+Similarly, one could triangulate by changing
+methods across experiments,
+
+178
+00:11:48,160 --> 00:11:52,830
+by using multiple sets of background variables
+and finally, even by
+
+179
+00:11:52,830 --> 00:11:57,480
+changing the data analysis techniques across
+different groups of
+
+180
+00:11:57,480 --> 00:11:58,839
+experiments.
+
+181
+00:11:58,839 --> 00:12:02,839
+Triangulating across multiple experiments
+that all try and test the
+
+182
+00:12:02,839 --> 00:12:07,700
+same basic idea, the same basic cause and
+effect relationship, will increase
+
+183
+00:12:07,700 --> 00:12:11,300
+the confidence in the conclusion that the
+researcher comes up with.
+

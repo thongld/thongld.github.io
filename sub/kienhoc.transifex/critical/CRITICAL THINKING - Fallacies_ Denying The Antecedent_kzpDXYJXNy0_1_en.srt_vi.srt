@@ -1,0 +1,317 @@
+1
+00:00:00,000 --> 00:00:02,722
+(nhạc mở đầu)
+
+2
+00:00:04,108 --> 00:00:05,835
+Xin chào, tôi là Matthew Harris
+
+3
+00:00:05,835 --> 00:00:08,089
+Tôi là tiến sĩ chuyên ngành triết học tại trường đại học Duke [br]
+
+4
+00:00:08,089 --> 00:00:09,266
+và hôm nay tôi sẽ nói về
+
+5
+00:00:09,266 --> 00:00:12,173
+phép ngụy biện hình thức phủ định vế trước
+
+6
+00:00:12,173 --> 00:00:14,407
+phủ định vế trước là một phép ngụy biện hình thức
+
+7
+00:00:14,407 --> 00:00:17,597
+nghĩa là lập luận có một kẽ hở
+
+8
+00:00:17,597 --> 00:00:20,482
+dưới hình thức logic của nó
+
+9
+00:00:20,483 --> 00:00:21,437
+Điều này rất quan trọng bởi vì
+
+10
+00:00:21,437 --> 00:00:23,610
+bất cứ khi nào kiểu lập luận này xảy ra,
+
+11
+00:00:23,611 --> 00:00:25,501
+bất kể là chủ đề hay nội dung gì
+
+12
+00:00:25,501 --> 00:00:27,560
+thì lập luận sẽ luôn luôn trở nên thiếu chặt chẽ
+
+13
+00:00:28,609 --> 00:00:29,564
+Vậy làm thế nào để nhận biết
+
+14
+00:00:29,565 --> 00:00:31,909
+khi phép ngụy biện phủ định vế trước này xảy ra?
+
+15
+00:00:32,978 --> 00:00:34,502
+hiện tượng này xảy ra khi ta nhầm lẫn
+
+16
+00:00:34,502 --> 00:00:36,777
+chiều của câu điều kiện
+
+17
+00:00:36,777 --> 00:00:39,161
+hay nhầm lẫn câu điều kiện thành điều kiện 2 chiều
+
+18
+00:00:40,759 --> 00:00:41,917
+Và nó bắt nguồn bằng sự phủ định
+
+19
+00:00:41,917 --> 00:00:44,435
+vế trước của mệnh đề điều kiện
+
+20
+00:00:44,435 --> 00:00:47,360
+sau đó kéo theo sự phủ định kết quả của mệnh đề đó
+
+21
+00:00:48,356 --> 00:00:50,085
+Cấu trúc logic của lập luận
+
+22
+00:00:50,085 --> 00:00:53,984
+mắc phải phép ngụy biện phủ định vế trước
+sẽ có dạng như sau
+
+23
+00:00:53,984 --> 00:00:56,381
+"Nếu P, thì Q"
+
+24
+00:00:56,381 --> 00:00:59,062
+"Không P, do đó không Q."
+
+25
+00:01:00,487 --> 00:01:02,822
+Bây giờ hãy cùng xem mệnh đề điều kiện sau
+
+26
+00:01:02,822 --> 00:01:07,395
+"nếu bạn là một giáo viên trượt tuyết
+bạn đã có một công việc"
+
+27
+00:01:07,394 --> 00:01:09,506
+Vế trước của mệnh đề điều kiện này
+
+28
+00:01:09,507 --> 00:01:11,621
+là "bạn là một giáo viên trượt tuyết"
+
+29
+00:01:11,620 --> 00:01:15,581
+và vế sau là "bạn có một công việc"
+
+30
+00:01:15,581 --> 00:01:17,247
+Nhưng giả sử ai đó đưa ra một lập luận
+
+31
+00:01:17,248 --> 00:01:20,072
+với mệnh đề điều kiện như tiền đề thứ nhất
+
+32
+00:01:20,072 --> 00:01:24,156
+Tiền đề (1): Nếu bạn là một giáo viên trượt tuyết
+thì bạn có một công việc
+
+33
+00:01:24,156 --> 00:01:27,853
+Tiền đề (2): Nhưng bạn không phải là một giáo viên trượt tuyết
+
+34
+00:01:27,853 --> 00:01:30,594
+Kết luận: Do đó, bạn không có công việc.
+
+35
+00:01:31,632 --> 00:01:35,920
+Ở đây, tiền đề 2 là sự phủ định vế trước
+
+36
+00:01:35,920 --> 00:01:37,728
+Tiền đề này không nói lên rằng
+
+37
+00:01:37,727 --> 00:01:39,942
+chỉ những giáo viên trượt tuyết mới có công việc
+
+38
+00:01:39,942 --> 00:01:42,603
+Vậy, dù mệnh đề điều kiện đúng
+
+39
+00:01:42,603 --> 00:01:44,858
+(rằng giáo viên trượt tuyết có công việc)
+
+40
+00:01:44,858 --> 00:01:49,713
+ta cũng không thể nói rằng
+nếu bạn không phải là giáo viên trượt tuyết
+
+41
+00:01:49,713 --> 00:01:52,051
+thì bạn thất nghiệp
+
+42
+00:01:52,051 --> 00:01:53,859
+Một mệnh đề điều kiện có thể
+
+43
+00:01:53,859 --> 00:01:56,480
+được sử dụng một cách chặt chẽ để biện luận 
+cho tính chính xác của kết quả
+
+44
+00:01:56,480 --> 00:01:59,039
+bằng việc xác nhận vế trước
+
+45
+00:01:59,040 --> 00:02:00,137
+Ta thấy điều này trong các lập luận
+
+46
+00:02:00,137 --> 00:02:02,290
+được gọi là "suy diễn tin cậy"
+
+47
+00:02:04,018 --> 00:02:07,064
+Cũng sẽ là hợp lệ nếu biện luận từ việc phủ định kết luận
+
+48
+00:02:07,064 --> 00:02:09,478
+rồi đến phủ định vế trước
+
+49
+00:02:09,479 --> 00:02:14,479
+Nhưng sẽ không bao giờ là hợp lệ nếu phủ định vế trước
+
+50
+00:02:14,644 --> 00:02:16,145
+để phủ định kết luận
+
+51
+00:02:17,865 --> 00:02:19,754
+Hãy xét một ví dụ khác:
+
+52
+00:02:19,753 --> 00:02:23,155
+"Nếu bạn là chủ sở hữu tài sản
+thì bạn là con người"
+
+53
+00:02:24,426 --> 00:02:26,804
+"Nhưng nếu bạn không phải chủ sở hữu tài sản"
+
+54
+00:02:26,804 --> 00:02:28,253
+"thì bạn không phải con người"
+
+55
+00:02:29,548 --> 00:02:31,171
+Vế trước, bạn là chủ sở hữu tài sản
+
+56
+00:02:31,171 --> 00:02:33,651
+đã bị phủ định
+
+57
+00:02:33,651 --> 00:02:36,738
+Mặc dù bạn cần phải là con người
+để có thể sở hữu tài sản
+
+58
+00:02:36,739 --> 00:02:38,483
+nhưng không có nghĩa bạn không phải người
+
+59
+00:02:38,483 --> 00:02:41,181
+nếu bạn không sở hữu tài sản
+
+60
+00:02:41,181 --> 00:02:43,403
+Chẳng hạn như sinh viên chưa ra trường
+
+61
+00:02:43,402 --> 00:02:45,658
+Hãy xét ví dụ cuối cùng:
+
+62
+00:02:45,658 --> 00:02:48,096
+"Nếu ai đó đang xem video này"
+
+63
+00:02:48,097 --> 00:02:49,926
+"thì là họ đang truy cập internet"
+
+64
+00:02:49,925 --> 00:02:52,708
+"Có một vài người không đang xem video này"
+
+65
+00:02:52,709 --> 00:02:55,003
+"Vì vậy, họ không đang truy cập internet"
+
+66
+00:02:55,003 --> 00:02:57,341
+Một lần nữa, phủ định vế trước
+
+67
+00:02:57,342 --> 00:02:58,885
+Việc chỉ ra rằng không phải ai
+
+68
+00:02:58,884 --> 00:03:00,936
+cũng đang xem video này
+
+69
+00:03:00,937 --> 00:03:04,005
+không chứng minh một cách chặt chẽ cho phủ định kết luận
+
+70
+00:03:04,004 --> 00:03:06,646
+rằng họ không đang truy cập internet
+
+71
+00:03:06,646 --> 00:03:09,450
+Có một số tình huống mà tôi hi vọng sẽ có thể
+
+72
+00:03:09,450 --> 00:03:12,314
+tránh được phép ngụy biện hình thức này
+trong lập luận của các bạn
+
+73
+00:03:12,314 --> 00:03:15,382
+để hiểu rõ thêm về phép ngụy biện phủ định vế trước này
+
+74
+00:03:15,382 --> 00:03:18,349
+tôi khuyên các bạn nên theo dõi thêm các video liên quan
+
+75
+00:03:18,348 --> 00:03:21,332
+về các phép ngụy biện hình thức và phi hình thức,
+
+76
+00:03:21,332 --> 00:03:25,082
+ngụy biện ngộ nhận kết quả
+và ngụy biện câu điều kiện
+
+77
+00:03:32,080 --> 00:03:35,080
+phụ đề bởi kienhoc.vn
+

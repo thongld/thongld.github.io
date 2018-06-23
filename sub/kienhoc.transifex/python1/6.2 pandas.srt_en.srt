@@ -1,0 +1,225 @@
+0
+00:00:01,880 --> 00:00:06,400
+http://youtube.com/watch?v=X5cTzNKXFxU
+As a data scientist, you'll often be working with tons of data. You already know about
+
+1
+00:00:06,400 --> 00:00:11,390
+the 2D numpy array, to house data in a rectangular structure. But there&#39;s a downside to this:
+
+2
+00:00:11,390 --> 00:00:16,230
+you can only have data of the same type in there. In practice, you&#39;ll be working with
+
+3
+00:00:16,230 --> 00:00:21,279
+data of different types: numerical values, strings, booleans and so on.
+
+4
+00:00:21,279 --> 00:00:25,939
+To easily and efficiently handle this data, there&#39;s the Pandas package. Pandas is a high
+
+5
+00:00:25,939 --> 00:00:30,890
+level data manipulation tool, used by data scientists all over the world.
+
+6
+00:00:30,890 --> 00:00:36,760
+In pandas, we store data in a so-called dataframe. Have a look at this data frame, called `brics`.
+
+7
+00:00:36,760 --> 00:00:42,140
+It contains some basic information on the so called &#39;brics&#39; countries: Brazil, Russia,
+
+8
+00:00:42,140 --> 00:00:43,980
+India, China and South Africa.
+
+9
+00:00:43,980 --> 00:00:50,240
+A dataframe is a table: the rows represent different entries or observations, which are
+
+10
+00:00:50,240 --> 00:00:55,760
+countries in this case. Each row has unique row label: BR for brazil, RU for russia and
+
+11
+00:00:55,760 --> 00:00:57,370
+so on.
+
+12
+00:00:57,370 --> 00:01:01,390
+The columns represent different properties, and are identified by their column labels:
+
+13
+00:01:01,390 --> 00:01:06,509
+country, population, area and capital. The columns can have differnt types. The country
+
+14
+00:01:06,509 --> 00:01:09,799
+column is string, while the population column is numeric for example.
+
+15
+00:01:09,799 --> 00:01:15,140
+You typically don&#39;t build a pandas data frame manually. Instead, you import data from an
+
+16
+00:01:15,140 --> 00:01:18,840
+external file that contains all this data. The brics data that I showed you before comes
+
+17
+00:01:18,840 --> 00:01:23,759
+from this CSV file, which is short for comma separated values.
+
+18
+00:01:23,759 --> 00:01:28,799
+The first line are the column names and the other lines are the rows of the table. CSV
+
+19
+00:01:28,799 --> 00:01:33,709
+files are a very common way to store datasets, so let&#39;s try to import this data ourselves.
+
+20
+00:01:33,709 --> 00:01:39,759
+We start by importing the pandas packages as `pd`. Now, you can use the `read_csv()`
+
+21
+00:01:39,759 --> 00:01:44,020
+function, and pass the path to your csv file as an argument, like this:
+
+22
+00:01:44,020 --> 00:01:50,529
+If you now print brics, there&#39;s still something wrong. The row labels, also called row indexes,
+
+23
+00:01:50,529 --> 00:01:55,509
+are seen as a column in their own right. To solve this, we&#39;ll have to tell the `read_csv()`
+
+24
+00:01:55,509 --> 00:02:01,039
+function that the first column contain the row indexes. You do this iwht hte `index_col`
+
+25
+00:02:01,039 --> 00:02:02,899
+argument, like this:
+
+26
+00:02:02,899 --> 00:02:06,939
+This time `brics` contains the data frame we started with in this video. It nicely contains
+
+27
+00:02:06,939 --> 00:02:10,300
+the row and column labels.
+
+28
+00:02:10,300 --> 00:02:14,560
+One of the things that makes Pandas so powerful, is the ease with which you can select columns
+
+29
+00:02:14,560 --> 00:02:16,280
+and rows in different ways.
+
+30
+00:02:16,280 --> 00:02:21,000
+To access our nicely named columns, you use the notation with square brackets, like this
+
+31
+00:02:21,000 --> 00:02:26,480
+example, where I selected the country column of brics. You can also use the dot notation.
+
+32
+00:02:26,480 --> 00:02:30,810
+Notice that in this case, you don&#39;t have to use quotation marks.
+
+33
+00:02:30,810 --> 00:02:34,630
+Even adding a column is easy. You can use the same square brackets for this, but this
+
+34
+00:02:34,630 --> 00:02:36,860
+time you assign a list to it.
+
+35
+00:02:36,860 --> 00:02:41,360
+You can even go further, and make a column, based on other columns.
+
+36
+00:02:41,360 --> 00:02:45,980
+Here we make a column with the population density. Because pandas is based on numpy,
+
+37
+00:02:45,980 --> 00:02:50,890
+we can simply divide the population by the area. We multiply with one million because
+
+38
+00:02:50,890 --> 00:02:56,090
+the population columns is expressed in millions. That&#39;s nice, we calculated a new feature in
+
+39
+00:02:56,090 --> 00:03:02,290
+one line! Apparently, India is the most densily populated of the brics countries, with 380
+
+40
+00:03:02,290 --> 00:03:07,280
+people per square kilometer. And not surprisingly, Russia, being the largest country in the world,
+
+41
+00:03:07,280 --> 00:03:10,340
+has only 8 people per square kilometer.
+
+42
+00:03:10,340 --> 00:03:14,390
+So now you know that to access a column, you typically use square brackets with the column
+
+43
+00:03:14,390 --> 00:03:17,800
+label. To access a row, you&#39;ll need another method,
+
+44
+00:03:17,800 --> 00:03:22,300
+though, since pandas has to know we are talking about row labels instead of column labels.
+
+45
+00:03:22,300 --> 00:03:27,790
+You&#39;ll want to use `loc`. For brics, we type brics dot loc and then the row index of the
+
+46
+00:03:27,790 --> 00:03:33,020
+row we want to access as a string inside square brackets. The result is the row information,
+
+47
+00:03:33,020 --> 00:03:37,960
+displayed as a column. Now. it&#39;s easy to tell that Brazil currently has a population of
+
+48
+00:03:37,960 --> 00:03:40,650
+200 million people, for example.
+
+49
+00:03:40,650 --> 00:03:44,590
+To get just one element in the table, you can specify both column and row label in the
+
+50
+00:03:44,590 --> 00:03:50,370
+loc function, like this. There are also other ways to do this. First select the column and
+
+51
+00:03:50,370 --> 00:03:56,100
+then use loc to select a row, like here, or the other way around, like this. This is the
+
+52
+00:03:56,100 --> 00:03:59,960
+cool thing about Pandas, you can work with it in many different ways.
+
+53
+00:03:59,960 --> 00:04:05,650
+I hope these basic functionalities have already aroused you to start using pandas. From my
+
+54
+00:04:05,650 --> 00:04:09,630
+own experience I can tell you that the more you&#39;ll use pandas, the more you&#39;ll love it!
+
+55
+00:04:09,630 --> 00:04:10,730
+It&#39;s time to get some practice!
+

@@ -1,0 +1,484 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/PcILSUry7Bk
+
+1
+00:00:00,500 --> 00:00:02,800
+So demand for most products happens over time.
+
+2
+00:00:02,800 --> 00:00:05,340
+So naturally, we can think of demand forecasting
+
+3
+00:00:05,340 --> 00:00:07,320
+using time series analysis.
+
+4
+00:00:07,320 --> 00:00:10,920
+And remember, what we're doing here is looking for patterns.
+
+5
+00:00:10,920 --> 00:00:13,400
+So one of the best ways to look for patterns
+
+6
+00:00:13,400 --> 00:00:17,530
+is, because we're all human, is visualization tools.
+
+7
+00:00:17,530 --> 00:00:21,400
+And so as I said before, the best thing you can do with data
+
+8
+00:00:21,400 --> 00:00:23,060
+is to map it out, graph it.
+
+9
+00:00:23,060 --> 00:00:24,840
+Because visually, we can pick things
+
+10
+00:00:24,840 --> 00:00:28,220
+up much faster lot of times then a computer can pick up a trend.
+
+11
+00:00:28,220 --> 00:00:30,710
+So what I'm showing here is sales
+
+12
+00:00:30,710 --> 00:00:34,430
+by month for a low cost food item.
+
+13
+00:00:34,430 --> 00:00:36,030
+And it's for North American Demand.
+
+14
+00:00:36,030 --> 00:00:39,010
+So on my horizontal axis is the time
+
+15
+00:00:39,010 --> 00:00:43,210
+from December, 2009 all the way up to fall just
+
+16
+00:00:43,210 --> 00:00:45,840
+before, I think goes to November, 2012.
+
+17
+00:00:45,840 --> 00:00:48,940
+So about three years worth of data here.
+
+18
+00:00:48,940 --> 00:00:51,900
+And on the vertical axis is the number of units sold.
+
+19
+00:00:51,900 --> 00:00:55,720
+And you can see it peaks to just over 11 million
+
+20
+00:00:55,720 --> 00:00:59,480
+up here in the summer of 2012.
+
+21
+00:00:59,480 --> 00:01:02,810
+So if you look at this, you see an obvious trend.
+
+22
+00:01:02,810 --> 00:01:05,640
+You see some kind of seasons-- it looks like during the summer
+
+23
+00:01:05,640 --> 00:01:08,200
+I might have some peak times right here in the summer,
+
+24
+00:01:08,200 --> 00:01:10,560
+here in the summer, here in the summer.
+
+25
+00:01:10,560 --> 00:01:13,570
+And conversely, it's kind of low in the winter.
+
+26
+00:01:13,570 --> 00:01:16,440
+So you can kind of see that there's some kind of patterns
+
+27
+00:01:16,440 --> 00:01:17,910
+here, some kind of seasonality.
+
+28
+00:01:17,910 --> 00:01:21,360
+And just because these follow this season, summer and winter,
+
+29
+00:01:21,360 --> 00:01:23,670
+seasonality isn't just restricted
+
+30
+00:01:23,670 --> 00:01:25,852
+to the four seasons of the year.
+
+31
+00:01:25,852 --> 00:01:27,060
+But let's go a little deeper.
+
+32
+00:01:27,060 --> 00:01:28,730
+Let's look at it now by week.
+
+33
+00:01:28,730 --> 00:01:31,770
+And so all that I've done is broken up and each point,
+
+34
+00:01:31,770 --> 00:01:33,710
+it's connected by a line, but each point
+
+35
+00:01:33,710 --> 00:01:36,570
+is the amount of sales nationally per week.
+
+36
+00:01:36,570 --> 00:01:38,470
+And you see there's even more volatility
+
+37
+00:01:38,470 --> 00:01:41,180
+and you would expect this because I'm disaggregating.
+
+38
+00:01:41,180 --> 00:01:43,960
+Remember in our last lesson, we talked about how you aggregate,
+
+39
+00:01:43,960 --> 00:01:45,990
+it kind of smooths things over.
+
+40
+00:01:45,990 --> 00:01:50,260
+Well as I disaggregate, you see the volatility.
+
+41
+00:01:50,260 --> 00:01:53,090
+And then even more so if I go by day.
+
+42
+00:01:53,090 --> 00:01:56,210
+And so not only do we see this seasonality-- let me just
+
+43
+00:01:56,210 --> 00:02:00,320
+highlight it over the course of a year, this is three years--
+
+44
+00:02:00,320 --> 00:02:03,160
+but you can also see that there's some kind of volatility
+
+45
+00:02:03,160 --> 00:02:05,470
+or seasonality maybe within a week,
+
+46
+00:02:05,470 --> 00:02:07,670
+that there seems to be a weekly pattern.
+
+47
+00:02:07,670 --> 00:02:09,830
+And this is something we can explore further.
+
+48
+00:02:09,830 --> 00:02:12,630
+But the point here, using visualization tools really
+
+49
+00:02:12,630 --> 00:02:15,010
+helps you spot something quickly,
+
+50
+00:02:15,010 --> 00:02:18,480
+and especially for patterns.
+
+51
+00:02:18,480 --> 00:02:21,807
+So if I break this into a bar chart, this is the same data.
+
+52
+00:02:21,807 --> 00:02:23,390
+And what I've done here is I've broken
+
+53
+00:02:23,390 --> 00:02:28,110
+into four quarters; Q1, Q2, Q3, Q4.
+
+54
+00:02:28,110 --> 00:02:29,850
+And you can see the months that fall
+
+55
+00:02:29,850 --> 00:02:32,460
+with that and then the total units sold.
+
+56
+00:02:32,460 --> 00:02:35,420
+Looking at this, it's obvious there's some kind of pattern.
+
+57
+00:02:35,420 --> 00:02:39,000
+We sell a lot in the summer, spring and summer months,
+
+58
+00:02:39,000 --> 00:02:39,730
+in this time.
+
+59
+00:02:39,730 --> 00:02:42,850
+And we don't sell too much here and a little bit
+
+60
+00:02:42,850 --> 00:02:45,284
+in the early spring, late winter, a little bit more.
+
+61
+00:02:45,284 --> 00:02:46,700
+But you can see there's definitely
+
+62
+00:02:46,700 --> 00:02:48,970
+seasonal differences here.
+
+63
+00:02:48,970 --> 00:02:53,470
+But also as we said earlier, there
+
+64
+00:02:53,470 --> 00:02:56,740
+seems to be some seasonality here within the week.
+
+65
+00:02:56,740 --> 00:02:58,400
+So if I look at day of week, and all I
+
+66
+00:02:58,400 --> 00:03:01,370
+did was classify all the sales on a Monday, Tuesday,
+
+67
+00:03:01,370 --> 00:03:03,840
+Wednesday, and so forth, obviously the weekends
+
+68
+00:03:03,840 --> 00:03:04,720
+they don't do much.
+
+69
+00:03:04,720 --> 00:03:08,510
+Because this data is actually not at the retail store,
+
+70
+00:03:08,510 --> 00:03:11,800
+it's what is shipped out to the retail stores
+
+71
+00:03:11,800 --> 00:03:13,770
+from the manufacturing plant.
+
+72
+00:03:13,770 --> 00:03:16,240
+So you can see that there's definitely
+
+73
+00:03:16,240 --> 00:03:17,900
+very little demand on the weekends.
+
+74
+00:03:17,900 --> 00:03:20,640
+In fact, you could probably just knock those out.
+
+75
+00:03:20,640 --> 00:03:23,570
+But then you could see that on Friday there's
+
+76
+00:03:23,570 --> 00:03:27,290
+much lower demand then on a Monday or a Tuesday.
+
+77
+00:03:27,290 --> 00:03:30,050
+So there is seasonality both across the year by month
+
+78
+00:03:30,050 --> 00:03:33,450
+or quarter and within the week.
+
+79
+00:03:33,450 --> 00:03:35,170
+So this is very important because we
+
+80
+00:03:35,170 --> 00:03:37,190
+can use this to forecast.
+
+81
+00:03:37,190 --> 00:03:40,600
+Because the whole purpose of looking at patterns in the past
+
+82
+00:03:40,600 --> 00:03:42,910
+is to see how they'll project to the future.
+
+83
+00:03:42,910 --> 00:03:44,650
+So here's my same data.
+
+84
+00:03:44,650 --> 00:03:46,860
+And remember, this is just the past three years.
+
+85
+00:03:46,860 --> 00:03:49,280
+We're assuming I'm in November, 2012,
+
+86
+00:03:49,280 --> 00:03:53,150
+and what I want to figure out is what does the future look like?
+
+87
+00:03:53,150 --> 00:03:55,020
+What is it going to look like, because I
+
+88
+00:03:55,020 --> 00:03:58,940
+want to use my patterns in the past, the seasonality,
+
+89
+00:03:58,940 --> 00:04:03,150
+to predict and estimate what my pattern will be in the future.
+
+90
+00:04:03,150 --> 00:04:04,730
+Two things I want to point out.
+
+91
+00:04:04,730 --> 00:04:07,120
+First, notice that there's a range here.
+
+92
+00:04:07,120 --> 00:04:09,710
+Remember how we talked about how the importance of a range.
+
+93
+00:04:09,710 --> 00:04:12,266
+It's a very big range, but still, it
+
+94
+00:04:12,266 --> 00:04:14,140
+gives you an idea of the level of confidence.
+
+95
+00:04:14,140 --> 00:04:17,450
+You should always try to include that in a forecast.
+
+96
+00:04:17,450 --> 00:04:20,829
+The other thing is-- and this is just a very quick estimation
+
+97
+00:04:20,829 --> 00:04:24,160
+that was done-- is that they're estimating, with this model,
+
+98
+00:04:24,160 --> 00:04:27,260
+that in the spring and summer of 2013,
+
+99
+00:04:27,260 --> 00:04:30,780
+it's not going to be as high of a peak as here in summer of 12.
+
+100
+00:04:30,780 --> 00:04:32,690
+You can see it kind of levels out,
+
+101
+00:04:32,690 --> 00:04:34,720
+it's kind of taking not quite the average,
+
+102
+00:04:34,720 --> 00:04:36,510
+but it's balancing between those two.
+
+103
+00:04:36,510 --> 00:04:38,400
+And we'll talk more about that.
+
+104
+00:04:38,400 --> 00:04:41,080
+Because what this forecast is saying,
+
+105
+00:04:41,080 --> 00:04:43,820
+is that yes, this peak in 2012, it was there,
+
+106
+00:04:43,820 --> 00:04:45,350
+but it doesn't mean that I'm going
+
+107
+00:04:45,350 --> 00:04:48,240
+to go up to here in the next time.
+
+108
+00:04:48,240 --> 00:04:50,820
+So you can see here that the forecast,
+
+109
+00:04:50,820 --> 00:04:53,410
+and we'll see this more and more when we go into time series,
+
+110
+00:04:53,410 --> 00:04:56,940
+is bouncing off new information with some
+
+111
+00:04:56,940 --> 00:04:59,890
+of the old information.
+
+112
+00:04:59,890 --> 00:05:01,980
+So what will we talk about in this lecture?
+
+113
+00:05:01,980 --> 00:05:04,276
+Well, we're going to talk about time series components,
+
+114
+00:05:04,276 --> 00:05:06,150
+those patterns we're going to be looking for.
+
+115
+00:05:06,150 --> 00:05:08,525
+Then we're going to talk about three types of forecasting
+
+116
+00:05:08,525 --> 00:05:12,200
+methods; cumulative forecast, naive forecast, and moving
+
+117
+00:05:12,200 --> 00:05:13,440
+average forecast.
+
+118
+00:05:13,440 --> 00:05:17,200
+This kind of sets the stage for all the other forecasting
+
+119
+00:05:17,200 --> 00:05:19,140
+methods that we're going to work with.
+
+120
+00:05:19,140 --> 00:05:21,040
+So let's get started.
+

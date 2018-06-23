@@ -1,0 +1,521 @@
+1
+00:00:10,290 --> 00:00:17,290
+https://youtu.be/FFT2YDpPOww
+In many real-world situations, we have to
+make decisions not only when we don't know
+
+2
+00:00:20,250 --> 00:00:24,830
+the probability that one or another outcome
+will happen, but we don't even know what all
+
+3
+00:00:24,830 --> 00:00:31,830
+the possible outcomes are. This kind of ignorance
+is "sample space ignorance". It corresponds
+
+4
+00:00:32,480 --> 00:00:36,910
+fairly closely to the "absence" term in my
+taxonomy.
+
+5
+00:00:36,910 --> 00:00:42,680
+Why is sample space ignorance important? There
+are two main reasons. First, we tend to under-estimate
+
+6
+00:00:42,680 --> 00:00:48,250
+the probability that something new will happen.
+Second, our intuitive judgments about the
+
+7
+00:00:48,250 --> 00:00:54,570
+probabilities of outcomes depend on how many
+outcomes we think there are. I'll explain
+
+8
+00:00:54,570 --> 00:00:59,670
+both of these reasons and how they're connected,
+starting with the first one.
+
+9
+00:00:59,670 --> 00:01:05,750
+Back in 1978, Baruch Fischhoff, Paul Slovic,
+and Sarah Lichtenstein studied people's assignments
+
+10
+00:01:05,750 --> 00:01:11,920
+of probabilities to possible causes of an
+event, such as an automobile's failure to
+
+11
+00:01:11,920 --> 00:01:17,750
+start. They found that those causes that were
+explicitly listed received higher probabilities
+
+12
+00:01:17,750 --> 00:01:23,570
+than when the same causes were implicitly
+bundled into a "Catch-All" category of additional
+
+13
+00:01:23,570 --> 00:01:29,140
+causes . One explanation proposed for this
+effect amounts to the old proverb "out of
+
+14
+00:01:29,140 --> 00:01:34,840
+sight, out of mind", and the effect has since
+been referred to as the "Catch-All Underestimation
+
+15
+00:01:34,840 --> 00:01:39,990
+Bias". The Catch-All Underestimation Bias
+has been replicated in many studies since
+
+16
+00:01:39,990 --> 00:01:46,369
+then, and there have been attempts to elaborate
+it into a general theory of how we make probability
+
+17
+00:01:46,369 --> 00:01:50,510
+judgments when we don't have a complete picture
+of all possible outcomes.
+
+18
+00:01:50,510 --> 00:01:57,510
+One of the most important implications of
+the Catch-All Underestimation Bias is that
+
+19
+00:01:57,580 --> 00:02:03,840
+we tend to under-estimate the probability
+of causes or events that we haven't yet seen.
+
+20
+00:02:03,840 --> 00:02:10,590
+All of these unseen events are bundled together
+into a single category and so we will tend
+
+21
+00:02:10,590 --> 00:02:16,780
+to under-estimate the likelihood of any of
+them appearing sometime in the future.
+
+22
+00:02:16,780 --> 00:02:22,859
+There are two key factors driving the Catch-All
+Underestimation Bias. First, there is what
+
+23
+00:02:22,859 --> 00:02:29,859
+Amos Tversky and Derek Kohler called "packing"
+versus "unpacking" possible events. Unpacking
+
+24
+00:02:30,450 --> 00:02:37,180
+a compound event (e.g., cancer) into disjoint
+components (breast cancer, lung cancer, stomach
+
+25
+00:02:37,180 --> 00:02:43,379
+cancer, and so on) tends to increase the perceived
+likelihood of that event. An immediate implication
+
+26
+00:02:43,379 --> 00:02:49,559
+is that unpacking a hypothesis and/or packing
+up its opposite will increase the apparent
+
+27
+00:02:49,559 --> 00:02:55,519
+likelihood of that hypothesis. We humans are
+not behaving according to probability theory
+
+28
+00:02:55,519 --> 00:03:01,469
+here, so what are we doing instead? A plausible
+explanation is that we intuitively evaluate
+
+29
+00:03:01,469 --> 00:03:07,499
+the likelihood of an event by the number of
+ways we think that it can happen. The more
+
+30
+00:03:07,499 --> 00:03:12,819
+distinct paths to an outcome we're aware of,
+the more likely that outcome seems.
+
+31
+00:03:12,819 --> 00:03:19,540
+And that leads us to the second driver of
+the Catch-All Underestimation Bias. After
+
+32
+00:03:19,540 --> 00:03:24,699
+the Tversky-Kohler study, Yuval Rottenstreich
+and Amos Tversky demonstrated that although
+
+33
+00:03:24,699 --> 00:03:30,900
+unpacking a compound event increases its apparent
+likelihood, separate probability assessments
+
+34
+00:03:30,900 --> 00:03:37,900
+of the unpacked sub-events increases the total
+subjective probability even more. Craig Fox
+
+35
+00:03:38,379 --> 00:03:43,120
+and Yuval Rottenstreich picked up on this
+finding and found that people's judgments
+
+36
+00:03:43,120 --> 00:03:48,579
+of the probabilities of a collection of events
+are strongly influenced by the number of events
+
+37
+00:03:48,579 --> 00:03:54,379
+being considered. In one of their experiments
+they asked half of their participants how
+
+38
+00:03:54,379 --> 00:04:00,980
+likely Sunday is to be the hottest day of
+the week, and asked the other half how likely
+
+39
+00:04:00,980 --> 00:04:05,769
+Sunday is to be the hottest day out of the
+seven days in the week. The first group of
+
+40
+00:04:05,769 --> 00:04:11,079
+participants thought of the possibilities
+as two-fold: Either Sunday will or it won't
+
+41
+00:04:11,079 --> 00:04:17,380
+be the hottest day. So, many of them answered
+1/2. The second group was reminded that there
+
+42
+00:04:17,380 --> 00:04:23,699
+are seven days in the week, so most of them
+answered correctly with 1/7.
+
+43
+00:04:23,699 --> 00:04:30,070
+This phenomenon is "partition dependence".
+If we think there are K possible events, in
+
+44
+00:04:30,070 --> 00:04:34,620
+the absence of any other knowledge about how
+likely they are, we will be inclined to rate
+
+45
+00:04:34,620 --> 00:04:40,670
+the probability of each of them as 1/K. Even
+when we have evidence that indicates one event
+
+46
+00:04:40,670 --> 00:04:47,670
+is more likely than another, we still will
+be influenced by this 1/K intuition. If we
+
+47
+00:04:48,200 --> 00:04:53,540
+get an incorrect value for K, as the participants
+did in the Fox-Rottenstreich study, then we'll
+
+48
+00:04:53,540 --> 00:04:58,970
+be using the wrong partition of events.
+Does partition dependence present problems
+
+49
+00:04:58,970 --> 00:05:05,500
+in the real world? Yes, it can. Our intuitions
+can mislead us to the wrong partition. Suppose
+
+50
+00:05:05,500 --> 00:05:09,650
+you know that three pharmaceutical companies
+have been developing a new class of cancer-fighting
+
+51
+00:05:09,650 --> 00:05:14,980
+drugs (A, B, and C). You have just learned
+that an independent laboratory compared the
+
+52
+00:05:14,980 --> 00:05:21,840
+effectiveness of A and C, finding definitively
+that A is more effective than C. If you had
+
+53
+00:05:21,840 --> 00:05:26,590
+to choose between administering drugs A or
+B to a cancer patient on the basis of the
+
+54
+00:05:26,590 --> 00:05:33,590
+current evidence, should you prefer A or not?
+According to a 2005 study by Fox and Levav,
+
+55
+00:05:33,960 --> 00:05:37,840
+many of us will reason that C has been eliminated
+as the strongest drug, so that leaves two
+
+56
+00:05:37,840 --> 00:05:43,300
+equally likely possibilities for the strongest
+drug: A or B. Therefore, the probability that
+
+57
+00:05:43,300 --> 00:05:49,320
+A is the strongest of the three is 1/2 and
+there is no reason to prefer A over B. Here,
+
+58
+00:05:49,320 --> 00:05:55,830
+we're reasoning on the basis of a two-fold
+partition: Either A or B is the stronger drug.
+
+59
+00:05:55,830 --> 00:05:59,860
+The correct answer is arrived at by evaluating
+the probability that a study comparing all
+
+60
+00:05:59,860 --> 00:06:06,860
+three drugs will conclude that A is more effective
+than both B and C. We need to consider all
+
+61
+00:06:06,860 --> 00:06:10,780
+the possible orderings among the drugs that
+could result from this study. The possible
+
+62
+00:06:10,780 --> 00:06:17,780
+orderings are {ABC, ACB, BAC, BCA, CAB, CBA},
+where the sequence of the letters indicates
+
+63
+00:06:18,540 --> 00:06:24,810
+their ranking. For instance, ABC indicates
+that A > B > C. The last three orderings,
+
+64
+00:06:24,810 --> 00:06:29,630
+BCA, CAB, and CBA, have been ruled out because
+they are the ones in which drug C outranks
+
+65
+00:06:29,630 --> 00:06:36,360
+A. That leaves us with ABC, ACB, and BAC,
+a three-fold partition, not a two-fold one.
+
+66
+00:06:36,360 --> 00:06:40,200
+Drug A is the strongest in two out of the
+first three orderings, so the probability
+
+67
+00:06:40,200 --> 00:06:44,300
+that a study comparing all three drugs will
+conclude that A is the most effective drug i
+
+68
+00:06:44,300 --> 00:06:51,300
+ is 2/3. On the balance of probabilities,
+we should definitely prefer A over B.
+
+69
+00:06:51,590 --> 00:06:55,550
+Once you know to look for them, you can find
+partition dependence issues in many places.
+
+70
+00:06:55,550 --> 00:07:02,050
+Some of the most intriguing examples are where
+people construct their own partitions. Law
+
+71
+00:07:02,050 --> 00:07:07,270
+provides a good case in point. In most Western
+legal systems, juries in criminal trials are
+
+72
+00:07:07,270 --> 00:07:13,800
+required to return one of two verdicts: Conviction
+or acquittal. This is a two-fold partition:
+
+73
+00:07:13,800 --> 00:07:19,380
+Either the defendant is guilty or not. Jurors
+usually are instructed to return a conviction
+
+74
+00:07:19,380 --> 00:07:24,740
+verdict only if they consider the defendant
+to be guilty "beyond reasonable doubt", which
+
+75
+00:07:24,740 --> 00:07:30,920
+many people interpret to mean a very high
+probability of guilt. Anything less than a
+
+76
+00:07:30,920 --> 00:07:34,550
+very high probability should result in an
+acquittal.
+
+77
+00:07:34,550 --> 00:07:40,010
+An exception is the Scottish legal tradition,
+which has allowed a third, middle option:
+
+78
+00:07:40,010 --> 00:07:47,010
+"Not Proven". So jurors have a three-fold
+partition: The defendant is guilty, or innocent,
+
+79
+00:07:47,030 --> 00:07:52,000
+or they're not sure. In debates about whether
+this option should be introduced into other
+
+80
+00:07:52,000 --> 00:07:57,410
+nations' legal criminal trials, a widespread
+belief by legal scholars and other stakeholders
+
+81
+00:07:57,410 --> 00:08:04,280
+has been that introducing the Not Proven alternative
+would result in fewer convictions. The argument
+
+82
+00:08:04,280 --> 00:08:10,740
+is that jurors will favor this option as a
+less painful choice than convicting someone.
+
+83
+00:08:10,740 --> 00:08:16,080
+Another argument has been put that when the
+Not Proven alternative is available, jurors
+
+84
+00:08:16,080 --> 00:08:21,930
+will become more stringent about how certain
+they must be before returning a conviction.
+
+85
+00:08:21,930 --> 00:08:28,860
+Two of my Honours students, Sara Deady and
+Lavinia Gracik, and I put the legal scholars'
+
+86
+00:08:28,860 --> 00:08:34,810
+speculations to a test of empirical evidence.
+We ran a series of experimental studies of
+
+87
+00:08:34,810 --> 00:08:39,829
+mock-trials in which half the participants
+had a Not Proven alternative available to
+
+88
+00:08:39,829 --> 00:08:45,559
+them and the other half did not, so the latter
+half could only choose either a conviction
+
+89
+00:08:45,559 --> 00:08:51,579
+or an acquittal.
+Did the participants in the Not Proven condition
+
+90
+00:08:51,579 --> 00:08:58,579
+return fewer convictions? No, and in fact
+they returned fewer acquittals. Their standard
+
+91
+00:08:59,449 --> 00:09:04,639
+of proof for acquittal became much stricter
+than those who could only either convict or
+
+92
+00:09:04,639 --> 00:09:09,930
+acquit, whereas their standard of proof for
+conviction remained the same as those in the
+
+93
+00:09:09,930 --> 00:09:14,529
+convict-or-acquit condition. We found the
+judged probability of guilt for those participants
+
+94
+00:09:14,529 --> 00:09:20,180
+returning a Not Proven verdict was firmly
+in the middle range of the scale, higher than
+
+95
+00:09:20,180 --> 00:09:26,779
+those returning an acquittal and lower than
+those returning a conviction. The speculations
+
+96
+00:09:26,779 --> 00:09:33,779
+in the legal literature were 100% wrong. The
+main effect of introducing the Scottish alternative
+
+97
+00:09:33,829 --> 00:09:39,050
+is that it makes it harder for a defendant
+to obtain an outright acquittal and get off,
+
+98
+00:09:39,050 --> 00:09:43,920
+well, Scot-free.
+At this point, you should be fairly persuaded
+
+99
+00:09:43,920 --> 00:09:48,910
+that people act as if there are different
+kinds of unknowns, and that they may even
+
+100
+00:09:48,910 --> 00:09:54,470
+prefer some kinds to others. But does the human
+brain actually operate as though there are
+
+101
+00:09:54,470 --> 00:09:59,170
+different kinds? What goes on in the brain
+when it is confronted with unknowns arising
+
+102
+00:09:59,170 --> 00:10:05,680
+from probability, ambiguity, conflict, or
+sample space ignorance? Do different structures
+
+103
+00:10:05,680 --> 00:10:11,249
+in the brain get activated, or is there a
+unified "ignorance center" like the "reward
+
+104
+00:10:11,249 --> 00:10:16,729
+center" claimed by neuroeconomists? Let's
+look into the brain in the next lecture.
+

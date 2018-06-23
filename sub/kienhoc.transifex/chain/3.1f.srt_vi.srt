@@ -1,0 +1,740 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/Y8b7miGTIdM
+
+
+1
+00:00:00,500 --> 00:00:03,030
+Ok, vài nhận xét cuối cùng về làm bằng số mũ,
+
+2
+00:00:03,030 --> 00:00:07,200
+vài mối quan tâm thực tế, đầu tiên là dữ liệu.
+
+3
+00:00:07,200 --> 00:00:08,840
+Chúng ta sẽ nói nhanh về điều này, nhưng tôi nghĩ
+
+4
+00:00:08,840 --> 00:00:10,790
+rất cần phải nhấn mạnh lại thực tế rằng
+
+5
+00:00:10,790 --> 00:00:13,250
+bạn cần ba bộ dữ liệu khác nhau.
+
+6
+00:00:13,250 --> 00:00:16,030
+Bạn phải cố gắng có được ba bộ dữ liệu khác nhau.
+
+7
+00:00:16,030 --> 00:00:19,670
+Đầu tiên là dự đoán thông số bất kỳ, 
+
+8
+00:00:19,670 --> 00:00:21,800
+mức cân bằng của xu hướng hay các yếu tố mùa vụ.
+
+9
+00:00:21,800 --> 00:00:25,160
+Nếu tôi có hoài nghi yếu tố mùa vụ nào
+
+10
+00:00:25,160 --> 00:00:26,919
+thì tôi cần nhân mùa vụ lên.
+
+11
+00:00:26,919 --> 00:00:28,460
+Thực tế là tôi không biết bạn sẽ thử xem
+
+12
+00:00:28,460 --> 00:00:30,910
+liệu có tính mùa vụ không
+
+13
+00:00:30,910 --> 00:00:33,620
+cho tới khi bạn nhân mùa vụ ở đó lên.
+
+14
+00:00:33,620 --> 00:00:35,280
+Sau đó bạn muốn có sẵn một bộ dữ liệu
+
+15
+00:00:35,280 --> 00:00:37,520
+để xác định các thông số làm bằng.
+
+16
+00:00:37,520 --> 00:00:39,700
+Và cuối cùng khi bạn đã có chúng,
+
+17
+00:00:39,700 --> 00:00:42,880
+bạn muốn có một bộ dữ liệu mới hoặc
+bộ dữ liệu sau đó
+
+18
+00:00:42,880 --> 00:00:45,350
+và đánh giá chất lượng, độ chính xác và độ thiên lệch
+
+19
+00:00:45,350 --> 00:00:48,130
+của dự đoán, và xem nó ổn cỡ nào.
+
+20
+00:00:48,130 --> 00:00:51,570
+Cố gắng tránh khởi chạy, tập dượt và kiểm tra
+
+21
+00:00:51,570 --> 00:00:55,830
+với cùng một bộ dữ liệu.
+
+22
+00:00:55,830 --> 00:00:59,247
+Làm thế nào để tôi có thể chọn dữ liệu
+được sử dụng trong công thức mẫu?
+
+23
+00:00:59,247 --> 00:01:00,830
+Vấn đề nằm ở chỗ này.
+
+24
+00:01:00,830 --> 00:01:01,960
+Có một sự đánh đổi.
+
+25
+00:01:01,960 --> 00:01:04,730
+Tôi muốn nó dài nhất có thể,
+
+26
+00:01:04,730 --> 00:01:06,920
+nhưng nó vẫn phải có liên quan.
+
+27
+00:01:06,920 --> 00:01:11,120
+Và bạn cũng muốn dọn sạch những sự kiện không định kỳ này.
+
+28
+00:01:11,120 --> 00:01:14,050
+Một trong những vấn đề phổ biến có thể xảy ra là
+
+29
+00:01:14,050 --> 00:01:18,250
+có một chiến dịch khuyến mại
+được chạy vào một giai đoạn trước đó.
+
+30
+00:01:18,250 --> 00:01:20,780
+Và nó vẫn còn sót lại trong mô hình làm bằng số mũ
+
+31
+00:01:20,780 --> 00:01:23,540
+cho thời gian lịch sử sau này.
+
+32
+00:01:23,540 --> 00:01:25,200
+Sau đó bạn sẽ sử dụng chiến dịch khuyến mại đó,
+
+33
+00:01:25,200 --> 00:01:30,460
+thường là cao điểm bán hàng--
+
+34
+00:01:30,460 --> 00:01:32,100
+bạn sẽ thấy đỉnh điểm này trong cầu
+
+35
+00:01:32,100 --> 00:01:33,910
+và mong là nó sẽ lặp lại vào năm tới,
+
+36
+00:01:33,910 --> 00:01:35,880
+khi nó có thể không được như vậy.
+
+37
+00:01:35,880 --> 00:01:38,910
+Vậy bạn muốn loại bỏ tất cả chiến dịch khuyến mại
+
+38
+00:01:38,910 --> 00:01:41,770
+và thực tế khi ta nói về phân tích nguyên nhân-kết quả,
+
+39
+00:01:41,770 --> 00:01:43,520
+chúng ta sẽ nói về có lẽ là bạn muốn đo
+
+40
+00:01:43,520 --> 00:01:45,980
+hiệu quả của khuyến mại,
+
+41
+00:01:45,980 --> 00:01:49,050
+vậy nên bạn đã có thể tạo nên cầu được kỳ vọng
+
+42
+00:01:49,050 --> 00:01:50,660
+nếu bạn chạy một chiến dịch khuyến mại.
+
+43
+00:01:50,660 --> 00:01:52,714
+Vì đó là một công cụ rất mạnh.
+
+44
+00:01:52,714 --> 00:01:54,630
+Nhưng bạn cần đảm bảo rằng dữ liệu bạn dùng
+
+45
+00:01:54,630 --> 00:01:57,360
+cho lịch sử là lịch sử thật
+
+46
+00:01:57,360 --> 00:01:59,870
+và bạn đã loại bỏ những sự kiện không định kỳ
+
+47
+00:01:59,870 --> 00:02:03,210
+như các chương trình khuyến mại hay đại loại như vậy.
+
+48
+00:02:03,210 --> 00:02:07,100
+Các yếu tố làm bằng thích hợp,
+ở đây không có các quy tắc cứng nhắc,
+
+49
+00:02:07,100 --> 00:02:10,080
+chỉ một vài gợi ý từ những nguồn khác nhau.
+
+50
+00:02:10,080 --> 00:02:14,150
+Mức cân bằng, tôi sẽ chọn thông số làm bằng alpha
+
+51
+00:02:14,150 --> 00:02:17,130
+thuộc từ 0,01 đến 0,3 hay 0,1 là hợp lý.
+
+52
+00:02:17,130 --> 00:02:19,990
+Nếu nó là một phần của một mô hình lớn hơn,
+như Holt-Winter,
+
+53
+00:02:19,990 --> 00:02:21,940
+trong đó ta có xu hướng và tính mùa vụ,
+
+54
+00:02:21,940 --> 00:02:24,490
+thì bạn có thể muốn tăng nó lên một chút.
+
+55
+00:02:24,490 --> 00:02:27,440
+0,19 là hợp lý, nhưng bạn cần cân nhắc
+
+56
+00:02:27,440 --> 00:02:29,240
+và chọn lấy một khoảng.
+
+57
+00:02:29,240 --> 00:02:34,700
+Với beta sẽ là số bất kỳ thuộc 0,005 và 0,176
+
+58
+00:02:34,700 --> 00:02:36,695
+và bạn sẽ thấy gamma cho tính mùa vụ.
+
+59
+00:02:36,695 --> 00:02:39,750
+Phạm vi tốt là từ 0,05 đến 0,5,
+
+60
+00:02:39,750 --> 00:02:41,570
+trong đó 0,1 là hợp lý.
+
+61
+00:02:41,570 --> 00:02:45,750
+Giờ giả sử bạn không giỏi lắm và bạn đã dùng
+cùng một bộ dữ liệu
+
+62
+00:02:45,750 --> 00:02:48,500
+để khởi chạy và tập dượt với dữ liệu của bạn.
+
+63
+00:02:48,500 --> 00:02:54,330
+Và bạn đang cố gắng tìm alpha, beta và gamma
+
+64
+00:02:54,330 --> 00:02:57,630
+tốt nhất để có được tổng nhỏ nhất của các bình phương
+
+65
+00:02:57,630 --> 00:02:59,040
+tức là bình phương sai số.
+
+66
+00:02:59,040 --> 00:03:02,160
+Vậy là tôi đang cố tìm những số tốt nhất để
+có được kết quả phù hợp nhất.
+
+67
+00:03:02,160 --> 00:03:04,910
+Khả năng là alpha của bạn sẽ rất cao,
+
+68
+00:03:04,910 --> 00:03:07,370
+beta sẽ rất cao, gamma của bạn
+
+69
+00:03:07,370 --> 00:03:09,540
+có thể là hỗn độn, còn tùy thuộc.
+
+70
+00:03:09,540 --> 00:03:10,510
+Tại sao?
+
+71
+00:03:10,510 --> 00:03:14,380
+Vì bạn đang cố gắng tìm mức cân bằng alpha tốt nhất
+
+72
+00:03:14,380 --> 00:03:16,920
+và hệ số làm bằng xu hướng tốt nhất - beta,
+
+73
+00:03:16,920 --> 00:03:22,530
+phù hợp nhất có thể với dữ liệu đó.
+
+74
+00:03:22,530 --> 00:03:24,200
+Vậy nên bạn sẽ tạo ra
+
+75
+00:03:24,200 --> 00:03:26,640
+những dự đoán rất đáng lo ngại.
+
+76
+00:03:26,640 --> 00:03:28,240
+Chúng sẽ chắc chắn là những thứ sau đây.
+
+77
+00:03:28,240 --> 00:03:31,200
+Đó là những thông số rất không ổn định, nhớ rằng
+
+78
+00:03:31,200 --> 00:03:33,710
+tôi đang đánh giá thông tin mới của tôi nhiều hơn,
+
+79
+00:03:33,710 --> 00:03:37,720
+khả năng là khi bạn kiểm tra những thông số đó
+
+80
+00:03:37,720 --> 00:03:39,020
+trong một bộ dữ liệu khác, chúng sẽ cho kết quả nghèo nàn.
+
+81
+00:03:39,020 --> 00:03:42,000
+Vậy bạn cần quan tâm tới việc quá phù hợp.
+
+82
+00:03:42,000 --> 00:03:45,670
+Thường thì sinh viên hay những người mới làm quen với dự báo
+
+83
+00:03:45,670 --> 00:03:48,390
+sẽ tăng các hệ số alpha và beta,
+
+84
+00:03:48,390 --> 00:03:51,970
+vì nó có vẻ như là nó sẽ rất khớp
+
+85
+00:03:51,970 --> 00:03:53,520
+với đường cong này, và thực tế là sẽ khớp.
+
+86
+00:03:53,520 --> 00:03:55,910
+Nhưng hãy nhớ rằng, mục đích của mô hình này là
+
+87
+00:03:55,910 --> 00:03:59,640
+dự báo sau này, chứ không phải là khớp với lịch sử nhất.
+
+88
+00:03:59,640 --> 00:04:01,860
+Vài điều nữa.
+
+89
+00:04:01,860 --> 00:04:03,720
+Khi làm việc, như bạn thấy,
+
+90
+00:04:03,720 --> 00:04:06,270
+và nếu bạn làm điều này, đó là kế toán.
+
+91
+00:04:06,270 --> 00:04:07,972
+Bạn chỉ phải theo dõi mọi thứ,
+
+92
+00:04:07,972 --> 00:04:10,055
+đặc biệt là khi bạn sử dụng mô hình Holt-Winters.
+
+93
+00:04:10,055 --> 00:04:12,545
+Bạn có rất nhiều chỉ số mùa vụ
+
+94
+00:04:12,545 --> 00:04:15,170
+mà bạn phải giữ cho chúng bình thường và cập nhật.
+
+95
+00:04:15,170 --> 00:04:17,290
+Và sau một thời gian, bạn thấy các quy trình của nó,
+
+96
+00:04:17,290 --> 00:04:20,589
+nhưng đó là lý do tại sao tôi sẽ xét nhiều ví dụ,
+
+97
+00:04:20,589 --> 00:04:23,280
+để bạn thấy được và biết được nhiều quy trình.
+
+98
+00:04:23,280 --> 00:04:24,760
+Phải thuộc lòng rất nhiều.
+
+99
+00:04:24,760 --> 00:04:28,585
+Việc khởi chạy các quy trình có thể mang tính tùy tiện,
+
+100
+00:04:28,585 --> 00:04:29,960
+bạn có thể tìm thấy một số trung bình,
+
+101
+00:04:29,960 --> 00:04:31,980
+và đưa ra dự đoán tốt nhất.
+
+102
+00:04:31,980 --> 00:04:35,960
+Nhưng các tiến triển trong dự đoán, những dự đoán ban đầu,
+
+103
+00:04:35,960 --> 00:04:38,910
+cuối cùng sẽ mất đi.
+
+104
+00:04:38,910 --> 00:04:41,770
+Và tính mùa vụ, khi nó còn quan trọng,
+
+105
+00:04:41,770 --> 00:04:44,110
+nó gần như luôn ở đó, và nó khiến cho
+
+106
+00:04:44,110 --> 00:04:46,710
+công việc bạn làm trở nên phức tạp rất nhiều.
+
+107
+00:04:46,710 --> 00:04:48,510
+Một việc lúc nào bạn cũng phải làm đó là
+
+108
+00:04:48,510 --> 00:04:52,130
+đo mức độ thiên lệch đang diễn ra trong dự đoán của bạn.
+
+109
+00:04:52,130 --> 00:04:53,840
+Một cách để làm điều này là duy trì một tổng,
+
+110
+00:04:53,840 --> 00:04:57,720
+một tổng sai số cộng dồn liên tục,
+
+111
+00:04:57,720 --> 00:04:59,280
+của các sai số tuyệt đối của bạn.
+
+112
+00:04:59,280 --> 00:05:01,890
+Bạn chỉ cần cộng lại ở đây.
+
+113
+00:05:01,890 --> 00:05:05,760
+Tôi có C chỉ số dưới t bằng với C chỉ số dưới t trừ 1,
+
+114
+00:05:05,760 --> 00:05:09,650
+giai đoạn cuối cùng, cộng số hạng sai số mới.
+
+115
+00:05:09,650 --> 00:05:11,830
+Tôi có thể bình thường hóa cái này bằng cách
+
+116
+00:05:11,830 --> 00:05:14,110
+chia cho bình phương căn của bình phương sai số trung bình
+
+117
+00:05:14,110 --> 00:05:15,400
+mà tôi vừa ước đoán.
+
+118
+00:05:15,400 --> 00:05:19,810
+Và tôi có được một số bình thường hơn.
+
+119
+00:05:19,810 --> 00:05:23,430
+Nhưng điều quan trọng là bạn phải giao động quanh 0.
+
+120
+00:05:23,430 --> 00:05:28,920
+Số này, nếu đây là 0, nếu tôi bình thường nó,
+
+121
+00:05:28,920 --> 00:05:31,240
+hy vọng bạn sẽ có được kết quả như thế này.
+
+122
+00:05:31,240 --> 00:05:34,720
+Nếu bạn thấy rằng bạn có xu hướng đi lên hay đi xuống,
+
+123
+00:05:34,720 --> 00:05:36,670
+thì bạn đã gặp phải vấn đề thiên lệch.
+
+124
+00:05:36,670 --> 00:05:42,420
+Nên việc theo dõi và nắm được điều gì đang diễn ra là quan trọng.
+
+125
+00:05:42,420 --> 00:05:44,320
+Vậy là chúng ta đã nói về nhiều mô hình,
+
+126
+00:05:44,320 --> 00:05:47,360
+nhưng chúng ta chưa đụng đến những gì ở ngoài đó.
+
+127
+00:05:47,360 --> 00:05:50,170
+Phạm vi của chúng ta là dự đoán.
+
+128
+00:05:50,170 --> 00:05:53,190
+Bạn có thể học toàn bộ khóa, một loạt các khóa học,
+
+129
+00:05:53,190 --> 00:05:55,150
+có được một tấm bằng về toán kinh tế
+
+130
+00:05:55,150 --> 00:05:58,210
+có thể được dùng cho tạo mô hình cầu và dự đoán.
+
+131
+00:05:58,210 --> 00:06:00,390
+Trong bảng dưới dây tôi sẽ cho bạn thấy
+
+132
+00:06:00,390 --> 00:06:03,960
+có thể làm gì với làm bằng số mũ và
+
+133
+00:06:03,960 --> 00:06:06,730
+các mô hình chúng ta vừa làm sẽ được lắp vào đâu.
+
+134
+00:06:06,730 --> 00:06:09,760
+Chúng ta đã xem xét tính mùa vụ,
+
+135
+00:06:09,760 --> 00:06:12,160
+bạn có thể có một mô hình không có tính mùa vụ,
+
+136
+00:06:12,160 --> 00:06:15,490
+tính mùa vụ bổ sung, hay tính mùa vụ nhiều nếp gấp.
+
+137
+00:06:15,490 --> 00:06:17,620
+Bạn có thể nghĩ tới mô hình tương tự cho xu hướng.
+
+138
+00:06:17,620 --> 00:06:20,600
+Bạn có thể không có xu hướng nếu bạn giả sử
+điều đó trong mô hình.
+
+139
+00:06:20,600 --> 00:06:23,680
+Bạn có thể có xu hướng bổ xung hoặc
+xu hướng nhiều nếp gấp.
+
+140
+00:06:23,680 --> 00:06:25,520
+Bạn có thể giảm bớt các xu hướng.
+
+141
+00:06:25,520 --> 00:06:27,020
+Có thể có hoặc không.
+
+142
+00:06:27,020 --> 00:06:30,850
+Nhớ rằng đó là nơi xu hướng giảm dần theo thời gian.
+
+143
+00:06:30,850 --> 00:06:32,950
+Tôi có ở đây là một biểu đồ đơn giản
+
+144
+00:06:32,950 --> 00:06:35,970
+cột này là các thành phần mang tính mùa vụ,
+
+145
+00:06:35,970 --> 00:06:39,060
+không có, bổ sung, và nhiều nếp gấp.
+
+146
+00:06:39,060 --> 00:06:41,329
+Và các hàng là các thành phần xu hướng khác nhau,
+
+147
+00:06:41,329 --> 00:06:43,370
+các cách khác nhau chúng ta có thể đo lường xu hướng.
+
+148
+00:06:43,370 --> 00:06:45,420
+Chúng ta giả sử là chúng ta luôn cân bằng.
+
+149
+00:06:45,420 --> 00:06:47,370
+Vậy ở đây không có xu hướng.
+
+150
+00:06:47,370 --> 00:06:49,090
+Chúng ta có xu hướng bổ sung, bổ sung giảm dần,
+
+151
+00:06:49,090 --> 00:06:51,970
+nhiều nếp gấp và nhiều nếp gấp giảm dần.
+
+152
+00:06:51,970 --> 00:06:54,700
+Và bạn có thể thấy các mô hình này khớp vào đâu.
+
+153
+00:06:54,700 --> 00:06:56,720
+Chúng ta xét năm mô hình khác nhau,
+
+154
+00:06:56,720 --> 00:06:58,330
+làm bằng số mũ đơn giản,
+
+155
+00:06:58,330 --> 00:07:02,310
+là ở mức cân bằng, không có xu hướng, không có tính mùa vụ.
+
+156
+00:07:02,310 --> 00:07:04,910
+Sau đó chúng ta xét mô hình Holt,
+
+157
+00:07:04,910 --> 00:07:09,640
+có xu hướng bổ sung, không có tính mùa vụ, ở mức cân bằng.
+
+158
+00:07:09,640 --> 00:07:11,840
+Sau đó ta xét Holt giảm dần, ở đó chúng ta
+
+159
+00:07:11,840 --> 00:07:15,360
+giảm dần thành phần xu hướng.
+
+160
+00:07:15,360 --> 00:07:17,960
+Sau đó ta giới thiệu làm bằng số mũ kép,
+
+161
+00:07:17,960 --> 00:07:23,830
+có một mức cân bằng, không có xu hướng,
+nhưng có tính mùa vụ nhiều nếp gấp.
+
+162
+00:07:23,830 --> 00:07:25,510
+Và sau đó chúng ta làm Holt-Winters.
+
+163
+00:07:25,510 --> 00:07:29,050
+Nhưng nhìn vào tất cả những mô hình mở
+mà chúng ta chưa xét.
+
+164
+00:07:29,050 --> 00:07:32,860
+Vậy là bạn có thể có rất nhiều kết hợp khác nhau
+
+165
+00:07:32,860 --> 00:07:34,270
+giữa các mô hình.
+
+166
+00:07:34,270 --> 00:07:37,390
+Bạn cũng có thể xét một số kiểu mô hình khác.
+
+167
+00:07:37,390 --> 00:07:39,770
+Và có lẽ phổ biến nhất là kiểu mà chúng ta
+
+168
+00:07:39,770 --> 00:07:41,780
+sẽ không nói tới, nhưng đáng để khám phá,
+
+169
+00:07:41,780 --> 00:07:44,310
+nếu bạn quan tâm và muốn đào sâu thêm,
+
+170
+00:07:44,310 --> 00:07:47,790
+đó là Box-Jenkins cho trung bình động
+
+171
+00:07:47,790 --> 00:07:50,300
+tích hợp tự động hồi quy, ARIMA.
+
+172
+00:07:50,300 --> 00:07:51,730
+Bạn sẽ thấy nhiều điều trong mô hình này.
+
+173
+00:07:51,730 --> 00:07:53,146
+Nếu bạn quan tâm về lĩnh vực này,
+
+174
+00:07:53,146 --> 00:07:56,090
+có lẽ bước tiếp theo là bạn nên tìm hiểu sâu hơn.
+
+175
+00:07:56,090 --> 00:07:57,590
+Đó là toàn bộ nội dung
+
+176
+00:07:57,590 --> 00:07:59,630
+chúng ta nói về làm bằng số mũ.
+
+177
+00:07:59,630 --> 00:08:01,880
+Hy vọng, nếu bạn có câu hỏi, nhận xét,
+
+178
+00:08:01,880 --> 00:08:03,920
+hay gợi ý, thì hãy sử dụng phần bình luận,
+
+179
+00:08:03,920 --> 00:08:06,530
+bạn sẽ không thấy khó hiểu như Ginger Belle.
+
+180
+00:08:06,530 --> 00:08:08,030
+Bạn sẽ sử dụng phần thảo luận để giúp
+
+181
+00:08:08,030 --> 00:08:10,150
+giải quyết những thắc mắc của bạn.
+

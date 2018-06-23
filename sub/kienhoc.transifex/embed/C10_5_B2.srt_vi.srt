@@ -1,0 +1,142 @@
+0
+00:00:00,000 --> 00:00:00,010
+Khang_vgu
+
+
+1
+00:00:00,610 --> 00:00:04,420
+ta biết về cách hoạt động của bộ phân tích 
+logic trong trình mô phỏng 
+
+2
+00:00:04,420 --> 00:00:07,250
+giờ ta sẽ xem 1 bộ phân tích 
+logic thật 
+
+3
+00:00:07,250 --> 00:00:13,519
+đầu tiên, kết nối các tín hiệu trong 
+mạch vào bộ phân tích logic
+
+4
+00:00:13,519 --> 00:00:18,790
+là ta kết nối 4 pin cho motor bên trái 
+
+5
+00:00:18,790 --> 00:00:23,440
+4 cái cho motor bên phải và 2 pin 
+liên kết với các cảm biến 
+
+6
+00:00:23,440 --> 00:00:27,320
+nghĩa là ta kết nối 10 pin vào 
+bộ phân tích logic
+
+7
+00:00:27,320 --> 00:00:28,640
+ok
+
+8
+00:00:28,640 --> 00:00:34,160
+đây là cửa sổ ghi lại thời gian thực 
+khi motor quay 
+
+9
+00:00:34,160 --> 00:00:39,690
+cả 2 cảm biến đều tắt, nên các motor
+quay cùng 1 hướng 
+
+10
+00:00:39,690 --> 00:00:44,829
+4 pin này, 4 tín hiệu này là cho 1 motor
+
+11
+00:00:44,829 --> 00:00:47,489
+và đây là 5 - 01, 01
+
+12
+00:00:47,489 --> 00:00:51,070
+4 pin này cho motor khác 
+
+13
+00:00:51,070 --> 00:00:52,460
+ở đây là 5 
+
+14
+00:00:52,460 --> 00:00:58,630
+khi motor turn , ta thấy các motor sẽ
+chuyển qua các mẫu tiếp này 
+
+15
+00:00:58,630 --> 00:01:00,190
+là các mẫu ta đã lập trình trước 
+
+16
+00:01:00,190 --> 00:01:06,190
+đây là cách để kiểm tra phần cứng hoạt động
+
+17
+00:01:06,190 --> 00:01:11,570
+ê John, sẽ như thế nào nếu tôi nhấn nút cảm biến ở bên trái này 
+
+18
+00:01:11,570 --> 00:01:14,950
+cảm biến xác định tường
+
+19
+00:01:14,950 --> 00:01:19,460
+bạn thấy đó, tốc độ sẽ giảm nửa
+
+20
+00:01:19,460 --> 00:01:23,170
+1 motor sẽ quay theo 1 hướng
+
+21
+00:01:23,170 --> 00:01:26,190
+các còn lại quay theo hướng khác
+
+22
+00:01:27,590 --> 00:01:28,590
+nhấn nút khác 
+
+23
+00:01:28,590 --> 00:01:29,590
+ok 
+
+24
+00:01:29,590 --> 00:01:30,640
+để tôi thử nút khác 
+
+25
+00:01:30,640 --> 00:01:37,470
+nhấn tiếp nút bên phải, 1 bánh xe
+sẽ quay ở hướng ngược lai
+
+26
+00:01:37,470 --> 00:01:40,210
+và giảm tốc độ xuống 1 nửa
+
+27
+00:01:42,950 --> 00:01:51,900
+qua đó, ta sẽ kiểm định chức năng của
+mạch logic, bằng cách quan sát 
+
+
+28
+00:01:51,900 --> 00:01:56,740
+và giám sát trên bô phân tích logic
+
+29
+00:01:56,740 --> 00:02:02,329
+1 thứ khác mà ta quan tâm là
+thời gian giữa mỗi bước là chính xác 20 ms
+
+30
+00:02:02,329 --> 00:02:04,229
+20 ms
+
+31
+00:02:04,229 --> 00:02:08,670
+và 20 ms này được tạo bởi 
+SysTick periodic interrupt
+

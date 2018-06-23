@@ -1,0 +1,605 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/flieNnN2wPY
+
+1
+00:00:00,500 --> 00:00:03,720
+Chào mừng đến với tuần 3 của SC1x nguyên tắc cơ bản của chuỗi cung ứng.
+
+2
+00:00:03,720 --> 00:00:07,655
+Đây sẽ là bài giảng thứ 3  và cũng là bài giảng cuối cùng hoặc là 
+
+3
+00:00:07,655 --> 00:00:08,280
+tuần cuối cùng theo dự tính.
+
+4
+00:00:08,280 --> 00:00:11,060
+Chúng ta sẽ kết thúc vấn đề này ở đây trước khi
+
+5
+00:00:11,060 --> 00:00:14,119
+chuyển qua tồn kho và vận tải.
+
+6
+00:00:14,119 --> 00:00:15,660
+Vậy chúng ta sẽ làm gì trong tuần này?
+
+7
+00:00:15,660 --> 00:00:18,034
+Chúng ta sẽ kết thúc với
+
+8
+00:00:18,034 --> 00:00:18,990
+ làm bằng số mũ trước.
+
+9
+00:00:18,990 --> 00:00:22,080
+Và chúng tôi sẽ giới thiệu về tính thời vụ.
+
+10
+00:00:22,080 --> 00:00:25,650
+Vậy hãy nói rằng bạn giống như cầu của bạn là một cái gì đó
+
+11
+00:00:25,650 --> 00:00:26,749
+như thế này.
+
+12
+00:00:26,749 --> 00:00:28,290
+Bạn đang tìm kiếm nó ở khắp nơi.
+
+13
+00:00:28,290 --> 00:00:29,880
+Đây là thời gian.
+
+14
+00:00:29,880 --> 00:00:32,380
+Và nếu bạn nhìn vào điều này, bạn sẽ bắt đầu thấy một kiểu.
+
+15
+00:00:32,380 --> 00:00:34,421
+Và bạn nói rằng có vẻ như
+
+16
+00:00:34,421 --> 00:00:35,540
+có một sự cân bằng ở đó, phải không?
+
+17
+00:00:35,540 --> 00:00:36,990
+Một sự cân bằng, một xu hướng.
+
+18
+00:00:36,990 --> 00:00:40,770
+Nhưng cũng có đại loại như tính thời vụ.
+
+19
+00:00:40,770 --> 00:00:43,920
+Vậy đây là cách chúng tôi muốn phù hợp với mô kiểu cùng đó.
+
+20
+00:00:43,920 --> 00:00:47,320
+Chúng tôi đã cho thấy cách đưa sự cân bằng vào, xu hướng vào,
+
+21
+00:00:47,320 --> 00:00:49,890
+và cách đối phó với sự ngẫu nhiên, số hạng sai số đó.
+
+22
+00:00:49,890 --> 00:00:52,770
+Giờ chúng ta sẽ nói về điều gì sẽ xảy ra với tính thời vụ.
+
+23
+00:00:52,770 --> 00:00:54,210
+Và những gì chúng ta sẽ làm ở đây là
+
+24
+00:00:54,210 --> 00:00:58,310
+chúng ta sẽ giới thiệu một loạt các số hạng khác nhau.
+
+25
+00:00:58,310 --> 00:01:00,200
+Và cuối cùng bạn sẽ thấy
+
+26
+00:01:00,200 --> 00:01:02,430
+là nó sẽ là một hàm,
+
+27
+00:01:02,430 --> 00:01:06,530
+dự báo của bạn tại khoảng thời gian T cho T cộng tau,
+
+28
+00:01:06,530 --> 00:01:08,660
+trong đó tau là số giai đoạn trong tương lai,
+
+29
+00:01:08,660 --> 00:01:14,020
+sẽ là một hàm ước tính mức cân bằng,
+
+30
+00:01:14,020 --> 00:01:20,790
+cộng tau nhân với ước tính của tôi, ước tính hiện tại của tôi,
+
+31
+00:01:20,790 --> 00:01:25,900
+cho xu hướng nhân với ước tính hiện tại của tôi.
+
+32
+00:01:25,900 --> 00:01:30,320
+Để tôi sử dụng một màu khác ở đó, cho tính thời vụ.
+
+33
+00:01:30,320 --> 00:01:35,450
+Và đây là tính thời vụ cho khoảng thời gian này
+
+34
+00:01:35,450 --> 00:01:39,200
+cộng tau trừ p.
+
+35
+00:01:39,200 --> 00:01:41,660
+Và chúng tôi sẽ giải thích điều đó, nhưng về cơ bản nó là
+
+36
+00:01:41,660 --> 00:01:45,030
+nếu tôi có tính thời vụ theo tháng của năm,
+
+37
+00:01:45,030 --> 00:01:46,880
+tôi nhìn vào cùng tháng đó của năm ngoái.
+
+38
+00:01:46,880 --> 00:01:48,650
+Vậy nếu giờ đang là vào tháng mười một,
+
+39
+00:01:48,650 --> 00:01:50,210
+Tôi sẽ nhìn vào tháng 11 của năm ngoái.
+
+40
+00:01:50,210 --> 00:01:52,910
+Nếu đó là tháng 10, tôi sẽ nhìn vào tháng 10 của năm ngoái.
+
+41
+00:01:52,910 --> 00:01:55,170
+Bạn nhìn vào giai đoạn tương tự.
+
+42
+00:01:55,170 --> 00:01:57,860
+Và những gì chúng ta có ở đây là ba số hạng.
+
+43
+00:01:57,860 --> 00:02:00,870
+Và chúng ta có một mức cân bằng bạn sẽ ước tính.
+
+44
+00:02:00,870 --> 00:02:04,290
+Và tôi sẽ chỉ cho bạn cách cập nhật điều đó.
+
+45
+00:02:04,290 --> 00:02:07,959
+Bạn sẽ có một xu hướng.
+
+46
+00:02:07,959 --> 00:02:10,250
+Và bạn thấy nó được nhân với tau
+
+47
+00:02:10,250 --> 00:02:11,750
+vì đó là thời gian tôi muốn dự đoán.
+
+48
+00:02:11,750 --> 00:02:13,850
+Hãy nhớ là vì đó là một xu hướng tuyến tính.
+
+49
+00:02:13,850 --> 00:02:15,980
+Và điều cuối cùng bạn có là tính thời vụ đó.
+
+50
+00:02:15,980 --> 00:02:19,300
+
+
+51
+00:02:19,300 --> 00:02:23,760
+Và chúng ta sẽ dành nhiều thời gian để phát triển cái này.
+
+52
+00:02:23,760 --> 00:02:26,070
+Và những gì bạn sẽ thấy khi làm điều này một số lần
+
+53
+00:02:26,070 --> 00:02:29,160
+là phần thực sự khó khăn là kế toán.
+
+54
+00:02:29,160 --> 00:02:32,280
+Theo dõi tất cả các số hạng, khởi tạo các số hạng,
+
+55
+00:02:32,280 --> 00:02:34,720
+và đảm bảo tất cả các số hạng được đồng bộ.
+
+56
+00:02:34,720 --> 00:02:37,681
+Vậy đó là bài học mà tôi muốn bạn rút ra từ đó.
+
+57
+00:02:37,681 --> 00:02:40,180
+Sau đó, trong bài học thứ hai, chúng ta sẽ chuyển sang các trường hợp đặc biệt.
+
+58
+00:02:40,180 --> 00:02:41,971
+Và chúng ta sẽ nói qua ba trường hợp đặc biệt
+
+59
+00:02:41,971 --> 00:02:43,450
+mà bạn sẽ thấy trong thực tế.
+
+60
+00:02:43,450 --> 00:02:45,256
+Đầu tiên là phân tích nguyên nhân.
+
+61
+00:02:45,256 --> 00:02:46,380
+Và chúng ta đã làm điều này lúc trước.
+
+62
+00:02:46,380 --> 00:02:47,580
+Đây được gọi là hồi quy.
+
+63
+00:02:47,580 --> 00:02:51,370
+Chúng ta sẽ sử dụng hồi qui bình phương thông thường nhỏ nhất
+như là kỹ thuật của chúng ta.
+
+64
+00:02:51,370 --> 00:02:54,870
+Nên đây là trường hợp có thể cầu của tôi là số lượng
+
+65
+00:02:54,870 --> 00:02:56,250
+cây kem mà tôi cung cấp được.
+
+66
+00:02:56,250 --> 00:02:58,500
+Tôi có khả năng cung cấp kem và
+
+67
+00:02:58,500 --> 00:02:59,820
+tôi bán được bao nhiêu kem.
+
+68
+00:02:59,820 --> 00:03:04,884
+Và tôi nghĩ đó là một hàm của nhiệt độ.
+
+69
+00:03:04,884 --> 00:03:07,300
+Và tôi nghĩ nó cũng là một hàm xem đó là một ngày cuối tuần
+
+70
+00:03:07,300 --> 00:03:08,570
+hay không.
+
+71
+00:03:08,570 --> 00:03:11,760
+Và để nhớ lại những gì chúng ta đã làm trong buổi học trước đó
+
+72
+00:03:11,760 --> 00:03:13,710
+với hồi quy bình phương thông thường nhỏ nhất,
+
+73
+00:03:13,710 --> 00:03:16,950
+tôi biết rằng tôi có thể thiết lập một phương trình tuyến tính ở đây
+
+74
+00:03:16,950 --> 00:03:19,590
+nếu tôi có dữ liệu trong quá khứ cho điều này.
+
+75
+00:03:19,590 --> 00:03:21,195
+Và tôi có thể tạo ra một biểu thức tuyến tính
+
+76
+00:03:21,195 --> 00:03:25,380
+ở đó nhiệt độ cộng với beta 2 nhân với x nếu đó là cuối tuần.
+
+77
+00:03:25,380 --> 00:03:28,200
+Và đó sẽ là một biến nhị phân, 1 0.
+
+78
+00:03:28,200 --> 00:03:34,120
+Và tôi có thể ước tính các số hạng này cho beta 0, beta 1 và beta 2.
+
+79
+00:03:34,120 --> 00:03:36,490
+Và như vậy tôi sẽ sử dụng điều này để dự báo.
+
+80
+00:03:36,490 --> 00:03:39,840
+Tôi sẽ sử dụng mô hình hồi quy của tôi để ước tính hoặc dự báo
+
+81
+00:03:39,840 --> 00:03:40,800
+cầu của tôi.
+
+82
+00:03:40,800 --> 00:03:42,750
+Và chúng ta sẽ nói về khi nào thì điều này có ý nghĩa,
+
+83
+00:03:42,750 --> 00:03:45,120
+khi nào thì không, cách so sánh với làm bằng số mũ
+
+84
+00:03:45,120 --> 00:03:47,610
+trong bài giảng này.
+
+85
+00:03:47,610 --> 00:03:50,790
+Điều tiếp theo chúng ta sẽ nói đến là sản phẩm mới.
+
+86
+00:03:50,790 --> 00:03:52,290
+Và đây là một khu vực rộng lớn.
+
+87
+00:03:52,290 --> 00:03:54,479
+Bạn sẽ dành nhiều thời gian ở đây nếu bạn đi,
+
+88
+00:03:54,479 --> 00:03:55,770
+bất cứ bộ phận nào bạn làm việc trong các công ty.
+
+89
+00:03:55,770 --> 00:03:57,228
+Đặc biệt nếu bạn trong ngành hàng tiêu dùng nhanh
+
+90
+00:03:57,228 --> 00:03:59,640
+hay công nghệ cao.
+
+91
+00:03:59,640 --> 00:04:02,760
+Vậy ý tưởng ở đây là có rất nhiều ý tưởng
+
+92
+00:04:02,760 --> 00:04:05,160
+bước vào một công ty với các sản phẩm mới
+
+93
+00:04:05,160 --> 00:04:08,430
+và họ được ném vào những gì mà hầu hết các công ty gọi là
+
+94
+00:04:08,430 --> 00:04:10,050
+cái phễu.
+
+95
+00:04:10,050 --> 00:04:14,100
+Và kênh này chứa tất cả hàng triệu ý tưởng tốt đó
+
+96
+00:04:14,100 --> 00:04:17,970
+và nói OK, chúng ta sẽ thực sự hành động dựa trên ý tưởng nào.
+
+97
+00:04:17,970 --> 00:04:21,100
+Và đó là một cái gì đó được gọi là quy trình giai đoạn.
+
+98
+00:04:21,100 --> 00:04:21,910
+Quy trình giai đoạn.
+
+99
+00:04:21,910 --> 00:04:25,630
+
+
+100
+00:04:25,630 --> 00:04:30,220
+Ở đó, tất cả những ý tưởng mới này phải vượt qua những rào cản nhất định
+
+101
+00:04:30,220 --> 00:04:34,000
+khi chúng tìm đường để trở thành một sản phẩm thực tế.
+
+102
+00:04:34,000 --> 00:04:36,360
+Tại sao tôi lại nói về điều này trong dự báo?
+
+103
+00:04:36,360 --> 00:04:38,800
+Vì các sản phẩm mới là đặc biệt
+
+104
+00:04:38,800 --> 00:04:40,000
+vì bạn không có lịch sử.
+
+105
+00:04:40,000 --> 00:04:41,830
+Bạn không có lịch sử để chạy hồi quy.
+
+106
+00:04:41,830 --> 00:04:45,160
+Bạn không có lịch sử để khớp với một kiểu nào.
+
+107
+00:04:45,160 --> 00:04:48,910
+Vậy bạn có dự báo được gì nếu bạn không có lịch sử?
+
+108
+00:04:48,910 --> 00:04:50,440
+Đó là những gì bạn cần biết.
+
+109
+00:04:50,440 --> 00:04:52,660
+Điều thú vị khác cho sản phẩm mới là khi tôi
+
+110
+00:04:52,660 --> 00:04:55,450
+di chuyển xuống con đường này, kỹ thuật dự báo của tôi
+
+111
+00:04:55,450 --> 00:04:56,260
+sẽ thay đổi.
+
+112
+00:04:56,260 --> 00:04:59,320
+Và những gì bạn cần để dự báo sẽ thay đổi.
+
+113
+00:04:59,320 --> 00:05:01,720
+Vậy sản phẩm mới, khu vực hấp dẫn.
+
+114
+00:05:01,720 --> 00:05:03,730
+Chúng ta sẽ dành nhiều thời gian ở đó.
+
+115
+00:05:03,730 --> 00:05:06,220
+Kiểu cuối cùng là nhu cầu không liên tục.
+
+116
+00:05:06,220 --> 00:05:07,079
+Hãy nghĩ tới các bộ phận phụ tùng.
+
+117
+00:05:07,079 --> 00:05:08,620
+Đây là trường hợp đặc biệt, và điều này sẽ
+
+118
+00:05:08,620 --> 00:05:11,800
+xảy ra với bất cứ ai trong ngành ô tô, sản xuất lớn
+
+119
+00:05:11,800 --> 00:05:14,980
+ở đó nhu cầu của bạn là rất không liên tục.
+
+120
+00:05:14,980 --> 00:05:16,000
+Nó rải rác.
+
+121
+00:05:16,000 --> 00:05:17,560
+Vậy ở đây tôi có một biểu đồ.
+
+122
+00:05:17,560 --> 00:05:19,297
+Đây là thời gian và đây là cầu.
+
+123
+00:05:19,297 --> 00:05:21,630
+Và nếu kiểu cầu của tôi trông giống như thế này thì sao?
+
+124
+00:05:21,630 --> 00:05:23,830
+Trong thời gian, cầu bằng không ở đây.
+
+125
+00:05:23,830 --> 00:05:25,990
+Vậy là tôi không có gì cho một số giai đoạn.
+
+126
+00:05:25,990 --> 00:05:27,350
+Sau đó, tôi có một số cầu.
+
+127
+00:05:27,350 --> 00:05:28,570
+Sau đó tôi không có gì cả.
+
+128
+00:05:28,570 --> 00:05:29,790
+Sau đó tôi có cầu.
+
+129
+00:05:29,790 --> 00:05:32,770
+Sau đó tôi không có gì cả trong một thời gian dài.
+
+130
+00:05:32,770 --> 00:05:34,840
+Sau đó tôi có cầu khác ở đây.
+
+131
+00:05:34,840 --> 00:05:37,450
+Vậy là tôi đã có cầu rất rời rạc như thế này.
+
+132
+00:05:37,450 --> 00:05:38,980
+Nó rất không liên tục.
+
+133
+00:05:38,980 --> 00:05:42,580
+Rất khó để có dự báo phù hợp với mô hình hàng tồn kho
+
+134
+00:05:42,580 --> 00:05:44,100
+như thế này.
+
+135
+00:05:44,100 --> 00:05:45,400
+Rất nhọn.
+
+136
+00:05:45,400 --> 00:05:47,170
+Vì vậy, nó gây ra vấn đề, đặc biệt là
+
+137
+00:05:47,170 --> 00:05:49,339
+nếu tôi cố gắng sử dụng làm bằng số mũ.
+
+138
+00:05:49,339 --> 00:05:51,130
+Vậy điều tôi sẽ giới thiệu là
+
+139
+00:05:51,130 --> 00:05:52,500
+Phương pháp Croston.
+
+140
+00:05:52,500 --> 00:05:56,220
+Và điều đó cho phép bạn làm bằng
+
+141
+00:05:56,220 --> 00:05:59,800
+cầu này với mục đích lên kế hoạch cho hàng tồn kho.
+
+142
+00:05:59,800 --> 00:06:03,111
+Vậy đó là phương pháp làm bằng cầu không liên tục.
+
+143
+00:06:03,111 --> 00:06:05,040
+OK, vì vậy để tóm lược tất cả mọi thứ lại
+
+144
+00:06:05,040 --> 00:06:06,900
+chúng ta sẽ nói về dự báo.
+
+145
+00:06:06,900 --> 00:06:11,020
+Chúng ta sẽ hoàn thành nó trong bài học này
+
+146
+00:06:11,020 --> 00:06:13,240
+và nói về làm bằng số mũ,
+
+147
+00:06:13,240 --> 00:06:15,430
+và sau đó nói về một số trường hợp đặc biệt.
+
+148
+00:06:15,430 --> 00:06:16,030
+Được rồi.
+
+149
+00:06:16,030 --> 00:06:18,640
+Vậy hãy xem các video, làm việc các câu hỏi vấn đáp,
+
+150
+00:06:18,640 --> 00:06:22,440
+làm việc các câu hỏi nhanh và các bài toán thực hành, chúc vui nhé.
+

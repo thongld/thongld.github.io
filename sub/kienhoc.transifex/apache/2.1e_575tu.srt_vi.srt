@@ -1,0 +1,291 @@
+0
+00:00:00,000 --> 00:00:00,570
+anlynguyenphuoc_gtc_Y2VjYm 08/09/2016
+
+1
+00:00:00,570 --> 00:00:03,770
+SquarkSQL và Spark DataFrames hỗ trợ join.
+
+2
+00:00:03,770 --> 00:00:06,460
+Đây là cú pháp của một join.
+
+3
+00:00:06,460 --> 00:00:09,525
+Bạn nhập vào bảng bên trái; cùng với việc nhập vào other,
+
+4
+00:00:09,525 --> 00:00:12,490
+tức là bảng bên phải.
+
+5
+00:00:12,490 --> 00:00:17,270
+sau đó là tên cột bạn muốn dùng để nối, hoặc một danh sách tên các cột,
+
+6
+00:00:17,270 --> 00:00:19,070
+hoặc một biểu thức nối;
+
+7
+00:00:19,070 --> 00:00:21,350
+cuối cùng là cách bạn muốn thực hiện phép join.
+
+8
+00:00:21,350 --> 00:00:26,570
+Các loại join là inner -- loại mặc định, outer, left outer, right outer
+
+9
+00:00:26,570 --> 00:00:28,890
+hoặc left semi.
+
+10
+00:00:28,890 --> 00:00:33,030
+Ta sẽ xem một số ví dụ về thực hiện các phép join trong Spark.
+
+11
+00:00:33,030 --> 00:00:35,690
+Ở đây, ta sẽ tạo hai DataFrame.
+
+12
+00:00:35,690 --> 00:00:39,670
+DataFrame đầu tiên có hai hàng và hai cột.
+
+13
+00:00:39,670 --> 00:00:43,120
+Trong hàng đầu, name là Alice, age là 1.
+
+14
+00:00:43,120 --> 00:00:46,540
+Trong hàng thứ hai, name là Bob và age là 2.
+
+15
+00:00:46,540 --> 00:00:49,750
+Vậy có hai cột là name và age.
+
+16
+00:00:49,750 --> 00:00:54,090
+DataFrame thứ hai cũng có hai hàng và hai cột.
+
+17
+00:00:54,090 --> 00:00:57,700
+Trong hàng đầu, name là Chris, còn height là 80.
+
+18
+00:00:57,700 --> 00:01:02,260
+Hàng thứ hai có name là Bob, height là 85.
+
+19
+00:01:02,260 --> 00:01:05,840
+Giờ nếu ta thực hiện phép join giữa DataFrame đầu tiên
+
+20
+00:01:05,840 --> 00:01:09,700
+và DataFrame thứ hai ở cột name,
+
+21
+00:01:09,700 --> 00:01:15,040
+phép inner join sẽ được thực hiện, theo mặc định.
+
+22
+00:01:15,040 --> 00:01:19,810
+Khi đó, kết quả là chỉ có một hàng được trả về,
+
+23
+00:01:19,810 --> 00:01:21,950
+bởi chỉ có một cái tên
+
+24
+00:01:21,950 --> 00:01:24,370
+xuất hiện ở cả hai DataFrame --
+
+25
+00:01:24,370 --> 00:01:25,730
+đó là Bob.
+
+26
+00:01:25,730 --> 00:01:29,410
+Vậy kết quả là hàng có name Bob được trả về --
+
+27
+00:01:29,410 --> 00:01:31,400
+hàng này có giá trị age là 2,
+
+28
+00:01:31,400 --> 00:01:34,590
+và giá trị height là 85.
+
+29
+00:01:34,590 --> 00:01:38,060
+Đó chính là phép inner join.
+
+30
+00:01:38,060 --> 00:01:41,500
+Đây là một ví dụ khác về phép inner join,
+
+31
+00:01:41,500 --> 00:01:44,630
+nhưng lần này, ta sẽ chỉ chọn hai cột:
+
+32
+00:01:44,630 --> 00:01:47,230
+cột name từ DataFrame đầu tiên,
+
+33
+00:01:47,230 --> 00:01:51,307
+và cột height của DataFrame thứ hai.
+
+34
+00:01:51,307 --> 00:01:53,930
+
+35
+00:01:53,930 --> 00:01:57,190
+Trong ví dụ thứ ba, ta sẽ thực hiện phép outer join.
+
+36
+00:01:57,190 --> 00:01:59,400
+Vì vậy, ta cần nhập tham số outer vào.
+
+37
+00:01:59,400 --> 00:02:02,896
+Ta sẽ sử dụng hai DataFrame ta đã tạo ra ban đầu.
+
+38
+00:02:02,896 --> 00:02:04,990
+Bạn có thể thấy khi thực hiện phép outer join,
+
+39
+00:02:04,990 --> 00:02:06,830
+DataFrame được trả về sẽ gồm các hàng
+
+40
+00:02:06,830 --> 00:02:10,939
+có cột cols trong X hoặc Y --
+
+41
+00:02:10,939 --> 00:02:12,730
+khác với phép inner join, trong đó chỉ có
+
+42
+00:02:12,730 --> 00:02:16,420
+những hàng có cột cols trong cả X và Y được trả về.
+
+43
+00:02:16,420 --> 00:02:20,610
+Ta có thể thấy kết quả là 3 hàng và 3 cột được trả về.
+
+44
+00:02:20,610 --> 00:02:24,790
+Hàng đầu có name là Chris, không có dữ liệu về age --
+
+45
+00:02:24,790 --> 00:02:27,460
+vì ta chưa gán tuổi cho Chris --
+
+46
+00:02:27,460 --> 00:02:30,580
+và height là 80.
+
+47
+00:02:30,580 --> 00:02:35,840
+Hàng thứ hai có name là Alice, age là 1 và không có dữ liệu về height --
+
+48
+00:02:35,840 --> 00:02:38,660
+vì ta chưa gán cho Alice số liệu về chiều cao.
+
+49
+00:02:38,660 --> 00:02:43,330
+Hàng cuối có name là Bob, age là 2 và height là 85.
+
+50
+00:02:43,330 --> 00:02:45,950
+
+51
+00:02:45,950 --> 00:02:48,260
+Còn đây là ví dụ thứ tư --
+
+52
+00:02:48,260 --> 00:02:51,430
+chỉ khác ví dụ thứ ba ở chỗ: ta chỉ chọn cột name
+
+53
+00:02:51,430 --> 00:02:52,970
+và height.
+
+54
+00:02:52,970 --> 00:02:56,710
+Ta làm vậy bằng cách ghi tên cột dưới dạng chuỗi kí tự.
+
+55
+00:02:56,710 --> 00:02:59,408
+Giờ, bạn thấy kết quả là ba hàng và hai cột
+
+56
+00:02:59,408 --> 00:02:59,907
+được trả về.
+
+57
+00:02:59,907 --> 00:03:02,710
+
+58
+00:03:02,710 --> 00:03:05,980
+Đây là phép left outer join, và ta thực hiện nó
+
+59
+00:03:05,980 --> 00:03:09,180
+bằng cách nhập vào tham số left_outer.
+
+60
+00:03:09,180 --> 00:03:11,510
+Lúc này, sẽ chỉ có hai hàng được trả về,
+
+61
+00:03:11,510 --> 00:03:14,330
+bởi DataFrame được trả về trong trường hợp này
+
+62
+00:03:14,330 --> 00:03:17,900
+gồm các hàng có cột cols trong X.
+
+63
+00:03:17,900 --> 00:03:20,790
+Do ta nối hai bảng ở cột name, nên các hàng được trả về là
+
+64
+00:03:20,790 --> 00:03:25,150
+Alice, với age là 1 và không có dữ liệu về height,
+
+65
+00:03:25,150 --> 00:03:29,456
+và Bob, age là 2 và height là 85.
+
+66
+00:03:29,456 --> 00:03:33,410
+
+67
+00:03:33,410 --> 00:03:36,700
+Tiếp theo, ta sẽ thực hiện phép right outer join.
+
+68
+00:03:36,700 --> 00:03:38,950
+Phép này sẽ trả lại một DataFrame gồm các hàng
+
+69
+00:03:38,950 --> 00:03:42,990
+trong Y có cột cols.
+
+70
+00:03:42,990 --> 00:03:45,280
+Và bạn sẽ thấy ta có hai hàng.
+
+71
+00:03:45,280 --> 00:03:49,440
+Hàng đầu tiên có name giá trị Chris, age None và height 80.
+
+72
+00:03:49,440 --> 00:03:54,670
+Hàng thứ hai có name Bob, với age 2 và height 85.
+
+73
+00:03:54,670 --> 00:03:55,170
+

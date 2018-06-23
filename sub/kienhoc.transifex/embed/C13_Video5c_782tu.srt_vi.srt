@@ -1,0 +1,409 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/FTOcCjC5gbU
+
+1
+00:00:00,000 --> 00:00:00,210
+
+2
+00:00:00,210 --> 00:00:02,210
+DR. JONATHAN VALVANO:
+Let's look at the software
+
+3
+00:00:02,210 --> 00:00:05,310
+needed to create the sound wave.
+
+4
+00:00:05,310 --> 00:00:07,760
+We saw the wave is periodic.
+
+5
+00:00:07,760 --> 00:00:10,880
+And we're going to use a
+data structure which contains
+
+6
+00:00:10,880 --> 00:00:21,360
+the numbers 4, 5, 6, 7, 7, 7,
+6, 5, 4, 3, 2, 1, 1, 1, 2, 3.
+
+7
+00:00:21,360 --> 00:00:24,170
+This data structure,
+this array, is going
+
+8
+00:00:24,170 --> 00:00:29,460
+to contain the numbers which
+represent the shape of my wave.
+
+9
+00:00:29,460 --> 00:00:37,510
+We'll have an index which varies from
+0 to 15 as we index into this array.
+
+10
+00:00:37,510 --> 00:00:45,030
+And the output is going to be the
+DAC, as a function of this index,
+
+11
+00:00:45,030 --> 00:00:46,850
+is going to represent the shape.
+
+12
+00:00:46,850 --> 00:00:55,590
+4, 5, 6, 7, 7, 7, 6, 5,
+4, 3, 2, 1, 1, 1, 2, 3.
+
+13
+00:00:55,590 --> 00:01:00,180
+And then what will happen is the
+wave will repeat over and over again,
+
+14
+00:01:00,180 --> 00:01:04,290
+4, 5, 6, 7, 7, 7, 7.
+
+15
+00:01:04,290 --> 00:01:06,820
+DR. RAMESH YERRABALLI:
+OK, so let's take a look
+
+16
+00:01:06,820 --> 00:01:09,725
+at the initialization of this DAC.
+
+17
+00:01:09,725 --> 00:01:12,230
+
+18
+00:01:12,230 --> 00:01:17,020
+First, we'll look at
+the port initialization.
+
+19
+00:01:17,020 --> 00:01:19,760
+DR. JONATHAN VALVANO: And
+so the DAC initialization
+
+20
+00:01:19,760 --> 00:01:29,460
+will produce 3-bit output
+on port PB2, PB1, PB0.
+
+21
+00:01:29,460 --> 00:01:36,127
+And these three bits are connected to
+our DAC that we saw in the last video.
+
+22
+00:01:36,127 --> 00:01:37,210
+DR. RAMESH YERRABALLI: OK.
+
+23
+00:01:37,210 --> 00:01:41,579
+And now we will look at the
+initialization for the SysTick
+
+24
+00:01:41,579 --> 00:01:42,370
+periodic interrupt.
+
+25
+00:01:42,370 --> 00:01:51,390
+
+26
+00:01:51,390 --> 00:01:53,580
+DR. JONATHAN VALVANO:
+We've used SysTick before.
+
+27
+00:01:53,580 --> 00:01:57,310
+The important thing for us to
+remember is this reload value
+
+28
+00:01:57,310 --> 00:02:02,220
+here will specify the rate
+at which SysTick interrupts.
+
+29
+00:02:02,220 --> 00:02:07,040
+And this will be an important
+design parameter for our system.
+
+30
+00:02:07,040 --> 00:02:10,310
+DR. RAMESH YERRABALLI: Next, let's
+look at the interrupt service routine.
+
+31
+00:02:10,310 --> 00:02:13,530
+So the SysTick handler is the
+interrupt service routine,
+
+32
+00:02:13,530 --> 00:02:18,820
+which gets executed every time
+the SysTick interrupt occurs.
+
+33
+00:02:18,820 --> 00:02:21,350
+DR. JONATHAN VALVANO: So recall
+that what we want to create
+
+34
+00:02:21,350 --> 00:02:29,760
+is this wave, 4, 5, 6, 7, 7, 7,
+6, 5, 4, 3, 2, 1, 1, 1, 2, 3.
+
+35
+00:02:29,760 --> 00:02:33,110
+And then it will repeat
+over and over again.
+
+36
+00:02:33,110 --> 00:02:35,130
+This is our DAC output.
+
+37
+00:02:35,130 --> 00:02:41,510
+But now what we're going to do
+is change this access to time.
+
+38
+00:02:41,510 --> 00:02:46,525
+And we're going to do that by
+generating a SysTick interrupt.
+
+39
+00:02:46,525 --> 00:02:51,590
+And in the SysTick interrupt, I
+am going to do one DAC output.
+
+40
+00:02:51,590 --> 00:02:54,340
+
+41
+00:02:54,340 --> 00:03:00,080
+And if I do exactly one DAC
+output, if I write to port B
+
+42
+00:03:00,080 --> 00:03:03,680
+exactly once per
+interrupt, what'll happen
+
+43
+00:03:03,680 --> 00:03:09,430
+is the time between these
+two numbers is going
+
+44
+00:03:09,430 --> 00:03:14,090
+to be a function of the period
+of the SysTick interrupts.
+
+45
+00:03:14,090 --> 00:03:21,170
+And so we can see that
+every 16 SysTick interrupts,
+
+46
+00:03:21,170 --> 00:03:25,330
+we're going to have one
+cycle of our sound wave.
+
+47
+00:03:25,330 --> 00:03:29,180
+
+48
+00:03:29,180 --> 00:03:34,270
+We've got to finish and
+update our Index so that we're
+
+49
+00:03:34,270 --> 00:03:39,300
+pointing to the next entry of the table.
+
+50
+00:03:39,300 --> 00:03:40,100
+And then we quit.
+
+51
+00:03:40,100 --> 00:03:44,960
+So right here, we see we're
+going to increment the Index.
+
+52
+00:03:44,960 --> 00:03:48,210
+And when it gets to 16,
+we'll roll it back over.
+
+53
+00:03:48,210 --> 00:03:52,640
+So the Index goes 0,
+1, 2, 3, up to 14, 15.
+
+54
+00:03:52,640 --> 00:03:56,100
+next time, it'll be 0 again.
+
+55
+00:03:56,100 --> 00:04:02,400
+So in summary, we're going to produce
+one output to the DAC every interrupt.
+
+56
+00:04:02,400 --> 00:04:06,520
+And we're going to control the
+frequency, the pitch, of this sound
+
+57
+00:04:06,520 --> 00:04:12,310
+by adjusting the rate at which
+we SysTick our interrupts.
+
+58
+00:04:12,310 --> 00:04:15,918
+DR. RAMESH YERRABALLI: So what
+about a plan for testing this, Jon?
+
+59
+00:04:15,918 --> 00:04:17,459
+DR. JONATHAN VALVANO: Real important.
+
+60
+00:04:17,459 --> 00:04:20,670
+We're going to do two types of tests.
+
+61
+00:04:20,670 --> 00:04:23,540
+The first is a heartbeat.
+
+62
+00:04:23,540 --> 00:04:27,040
+And a heartbeat is a minimally-intrusive
+debugging instrument.
+
+63
+00:04:27,040 --> 00:04:28,870
+Every time we're going
+to get an interrupt,
+
+64
+00:04:28,870 --> 00:04:32,780
+we're going to toggle port F, bit 3.
+
+65
+00:04:32,780 --> 00:04:38,210
+And so if we looked along this curve,
+we're going to see port F, bit 3
+
+66
+00:04:38,210 --> 00:04:41,820
+toggle every time there's an interrupt.
+
+67
+00:04:41,820 --> 00:04:47,740
+So in this way, we can see whether
+our software is living, or is it dead.
+
+68
+00:04:47,740 --> 00:04:51,300
+The second instrument
+is a non-intrusive.
+
+69
+00:04:51,300 --> 00:04:56,490
+We're going to use the oscilloscope
+and actually look at the DAC wave,
+
+70
+00:04:56,490 --> 00:05:00,390
+and see if we get this picture.
+
+71
+00:05:00,390 --> 00:05:03,760
+DR. RAMESH YERRABALLI: So
+let's look at the main, then.
+
+72
+00:05:03,760 --> 00:05:07,040
+DR. JONATHAN VALVANO: The main
+program initializes our devices.
+
+73
+00:05:07,040 --> 00:05:10,190
+And if the switch is
+pressed, what we'll do
+
+74
+00:05:10,190 --> 00:05:14,070
+is enable interrupts and
+set up the SysTick so
+
+75
+00:05:14,070 --> 00:05:16,610
+that it generates a periodic interrupt.
+
+76
+00:05:16,610 --> 00:05:19,910
+And if the switch is not
+pressed, we'll disable
+
+77
+00:05:19,910 --> 00:05:22,110
+interrupts, which will stop the sound.
+
+78
+00:05:22,110 --> 00:05:26,160
+Let's see how we calculate
+this number 50,000.
+
+79
+00:05:26,160 --> 00:05:29,820
+We know we want 100 Hertz sine wave.
+
+80
+00:05:29,820 --> 00:05:34,750
+And we know that there
+are exactly 16 outputs
+
+81
+00:05:34,750 --> 00:05:40,800
+of the DAC per one cycle of
+the sine wave, the output wave.
+
+82
+00:05:40,800 --> 00:05:47,650
+And we know we have an 80 Megahertz
+bus clock that's controlling SysTick.
+
+83
+00:05:47,650 --> 00:05:51,180
+And if we perform this
+calculation, we will
+
+84
+00:05:51,180 --> 00:05:55,427
+get the 50,000 used in this program.
+
+85
+00:05:55,427 --> 00:05:57,760
+DR. RAMESH YERRABALLI: OK,
+so we've designed everything.
+
+86
+00:05:57,760 --> 00:05:59,510
+So let's build the system.
+
+87
+00:05:59,510 --> 00:06:02,860
+DR. JONATHAN VALVANO: All
+right, let's build it.
+
+88
+00:06:02,860 --> 00:06:03,971

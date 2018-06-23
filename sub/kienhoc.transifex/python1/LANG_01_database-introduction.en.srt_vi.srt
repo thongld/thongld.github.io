@@ -1,0 +1,1077 @@
+1
+00:00:08,880 --> 00:00:11,860
+Luu_Huong_Minh, 7/8/2016
+Bây giờ chúng ta sẽ bàn về
+cơ sở dữ liệu.
+
+2
+00:00:11,860 --> 00:00:15,520
+Có thể sẽ hơi lạ khi chúng ta sẽ bàn về
+cơ sở dữ liệu trong một ngôn ngữ lập trình
+
+3
+00:00:15,520 --> 00:00:18,770
+Nhưng ở đây, chúng ta đang dùng ngôn ngữ lập trình
+
+4
+00:00:18,770 --> 00:00:20,000
+để phân tích dữ liệu
+
+5
+00:00:20,000 --> 00:00:24,990
+Thực ra thì việc làm này khá là cần thiết
+khi ta cần trích dữ liệu
+
+6
+00:00:24,990 --> 00:00:29,290
+đặt biệt là trích dữ liệu thông qua 1 mạng máy tính
+bị giới hạn băng thông,
+
+7
+00:00:29,290 --> 00:00:30,920
+hoặc khi ta cần lưu dữ liệu vào một cơ sở dữ liệu.
+
+8
+00:00:30,920 --> 00:00:34,140
+Ta có 1  trình sẽ nhận dữ liệu
+và lưu vào cơ sở dữ liệu,
+
+9
+00:00:34,140 --> 00:00:36,400
+và sau đó ta có thể phân tích dữ liệu
+trong cơ sở dữ liệu đó.
+
+10
+00:00:36,400 --> 00:00:38,370
+Nhờ đó, các t trình phân tích
+sẽ được thực hiện nhanh hơn.
+
+11
+00:00:38,370 --> 00:00:40,820
+Ta có thể dễ dàng thay đổi phép phân tích,
+
+12
+00:00:40,820 --> 00:00:44,450
+mà không bị bó buộc
+bởi việc truy xuất thông tin.
+
+13
+00:00:44,450 --> 00:00:48,400
+Qua đó, tiến độ công việc sẽ được cải thiện.
+Tuy nhiên, bạn cần học rất nhiều thứ 
+
+14
+00:00:48,400 --> 00:00:51,410
+để có thể đưa thông tin
+vào cơ sở dữ liệu.
+
+15
+00:00:51,410 --> 00:00:55,820
+Đầu tiên, ta cần phải cài đặt 
+một trình duyệt cơ sở dữ liệu.
+
+16
+00:00:55,820 --> 00:00:58,080
+Có nhiều cách để đọc và ghi các tập tin này.
+
+17
+00:00:58,080 --> 00:00:59,850
+Ta sẽ dùng Python để thực hiện việc này,
+
+18
+00:00:59,850 --> 00:01:02,730
+tuy nhiên, ta cần có phần mềm có thể 
+trực tiếp đọc và ghi cơ sở dữ liệu.
+
+19
+00:01:02,730 --> 00:01:07,020
+Đây là một phần mềm trong số đó,
+chạy được trên cả Mac, Windows lẫn Linux.
+
+20
+00:01:08,880 --> 00:01:12,200
+Ngoài ra còn có một plugin 
+xử lý SQLite trên Chrome.
+
+21
+00:01:12,200 --> 00:01:14,160
+Bạn có thể dùng những phần mềm này
+để thực hiện tất cả những bài tập trong khoá.
+
+22
+00:01:14,160 --> 00:01:17,900
+Cách bạn đạt được những gì cần đạt được 
+qua khoá học này không quan trọng,
+
+23
+00:01:17,900 --> 00:01:22,430
+vì không thể đánh giá khả năng
+dựa trên công cụ,
+
+24
+00:01:22,430 --> 00:01:27,690
+mà phải dựa trên thành quả đạt được,
+là những cơ sở dữ liệu mà bạn tạo ra.
+
+25
+00:01:27,690 --> 00:01:30,920
+Hãy tạm dừng video lại, rồi download 
+và cài đặt công cụ này.
+
+26
+00:01:30,920 --> 00:01:33,410
+Việc này rất đơn giản và dễ dàng.
+
+27
+00:01:33,410 --> 00:01:35,690
+Nhớ tham khảo các forum
+khi gặp khó khăn.
+
+28
+00:01:37,100 --> 00:01:41,940
+Cơ sở dữ liệu quan hệ thật sự là 
+một tiểu ngành của khoa học máy tính.
+
+29
+00:01:41,940 --> 00:01:48,640
+Để hiểu vai trò của nó, ta hãy hình dung cuộc sống
+không có cơ sở dữ liệu quan hệ sẽ thế nào
+
+30
+00:01:48,640 --> 00:01:54,020
+và cách bạn dùng nó cả ngàn lần một ngày
+dù rằng không biết điều đó.
+
+31
+00:01:54,020 --> 00:02:00,670
+Hãy tưởng tượng, có một hệ thống
+quản lý tài nguyên học tập,
+
+32
+00:02:00,670 --> 00:02:04,830
+nơi có hàng trăm ngàn người dùng,
+và hàng terabytes hay petabytes dữ liệu.
+
+33
+00:02:04,830 --> 00:02:08,960
+Khi bạn đăng nhập, trong vòng nửa giây,
+nó sẽ hiện ra những gì bạn cần.
+
+34
+00:02:08,960 --> 00:02:14,810
+Dĩ nhiên, bạn không thể tự mình 
+dò hết cả 1 petabyte dữ liệu.
+
+35
+00:02:14,810 --> 00:02:20,350
+Ngày xưa, chúng ta có rất ít dữ liệu 
+
+36
+00:02:22,010 --> 00:02:24,700
+và bộ nhớ máy tính cũng
+rất giới hạn.
+
+37
+00:02:24,700 --> 00:02:28,900
+Do đó, người ta thường
+sử dụng băng từ
+
+38
+00:02:28,900 --> 00:02:32,670
+cho việc lưu trữ và sắp xếp dữ liệu.
+
+39
+00:02:32,670 --> 00:02:38,040
+Ví dụ, khi số dư tài khoản và các giao dịch 
+được lưu trên một băng từ,
+
+40
+00:02:38,040 --> 00:02:42,890
+ta có thể đọc số dư, kiểm tra xem
+có giao dịch mới không,
+
+41
+00:02:42,890 --> 00:02:44,260
+và lưu lại số dư mới.
+
+42
+00:02:44,260 --> 00:02:48,290
+Ta có 1 băng từ lưu số dư hôm qua,
+1 băng từ lưu số dư hôm nay,
+
+43
+00:02:48,290 --> 00:02:50,850
+ngày mai lại có 1 băng từ mới
+để lưu số dư,
+
+44
+00:02:50,850 --> 00:02:52,760
+và ta phải đọc và ghi số dư mới
+bằng một tá băng từ đó.
+
+45
+00:02:52,760 --> 00:02:59,050
+Đó là cách người ta lưu trữ dữ liệu vào
+thập niên 60 và 70 thế kỉ trước.
+
+46
+00:02:59,050 --> 00:03:02,890
+Nếu bạn từng nhìn thấy những thứ quay quay
+trong các video về máy tính thời xưa,
+
+47
+00:03:02,890 --> 00:03:05,583
+chúng chính là những băng từ,
+
+48
+00:03:05,583 --> 00:03:10,587
+và phần lớn dữ liệu được
+lưu trữ trên những băng từ đó.
+
+49
+00:03:10,587 --> 00:03:14,249
+Khi máy tính trở nên nhanh hơn,
+có bộ nhớ lớn hơn,
+
+50
+00:03:14,249 --> 00:03:18,061
+ta bắt đầu lưu trữ nhiều dữ liệu hơn.
+
+51
+00:03:18,061 --> 00:03:20,826
+Đồng thời, ổ cứng hoạt động
+theo một cách khác,
+
+52
+00:03:20,826 --> 00:03:26,171
+do đó ta không cần phải dò tất cả
+tài khoản bắt đầu bằng chữ cái nào đó,
+
+53
+00:03:26,171 --> 00:03:31,019
+ta không còn phải dò hết dữ liệu từ a tới s
+
+54
+00:03:31,019 --> 00:03:33,210
+chỉ để tìm 1 tài khoản bắt đầu bằng chữ s.
+
+55
+00:03:33,210 --> 00:03:34,570
+Hẳn bạn sẽ tự hỏi:
+
+56
+00:03:34,570 --> 00:03:39,170
+Nếu với ổ đĩa, ta có thể 
+nhảy đến dữ liệu cần thiết
+
+57
+00:03:39,170 --> 00:03:44,890
+vậy làm sao để đảm bảo với
+cách đọc dữ liệu ngẫu nhiên này 
+
+58
+00:03:44,890 --> 00:03:50,430
+ta có thể lưu trữ dữ liệu một cách
+hiệu quả và nhanh chóng?
+
+59
+00:03:50,430 --> 00:03:53,710
+Việc đọc dữ liệu một cách ngẫu nhiên
+không có nghĩa là nó sẽ nhanh hơn.
+
+60
+00:03:53,710 --> 00:03:57,970
+Ta vẫn phải xem xét dữ liệu cụ thể
+theo 1 trình tự nhất định.
+
+61
+00:03:57,970 --> 00:04:02,970
+Cơ sở dữ liệu quan hệ chính là 
+một phương pháp sử dụng hiệu quả
+
+62
+00:04:02,970 --> 00:04:07,440
+bộ nhớ truy cập ngẫu nhiên nói trên,
+chủ yếu là bằng ổ đĩa cứng.
+
+63
+00:04:09,310 --> 00:04:12,000
+Phương pháp này xuất hiện vào
+thập niên 60 và 70,
+
+64
+00:04:12,000 --> 00:04:15,480
+với những công ty mới ra đời như Oracle.
+
+65
+00:04:18,980 --> 00:04:23,060
+Oracle được thành lập bởi những người
+
+66
+00:04:23,060 --> 00:04:25,260
+giải quyết được vấn đề trên
+trước những người khác.
+
+67
+00:04:25,260 --> 00:04:26,760
+And so they got to form a company and
+
+68
+00:04:26,760 --> 00:04:30,730
+Ngày nay, Oracle là nhà cung cấp
+cơ sở dữ liệu hàng đầu thế giới,
+
+69
+00:04:30,730 --> 00:04:34,830
+với lợi nhuận chủ yếu từ các cơ sở dữ liệu
+và các sản phẩm dựa trên chúng.
+
+70
+00:04:34,830 --> 00:04:41,030
+Thực sự thì đến tận 1960, vẫn chưa có
+khái niệm gọi là cơ sở dữ liệu.
+
+71
+00:04:41,030 --> 00:04:45,490
+Nó xuất phát từ bộ nhớ và những gì
+chúng ta muốn thực hiện trên máy tính.
+
+72
+00:04:45,490 --> 00:04:50,460
+Ngày nay, nếu ta thật sự cần dùng
+băng từ để đăng nhập vào máy tính 
+
+73
+00:04:50,460 --> 00:04:53,700
+ta có thể mất tới 4 tiếng
+mới đăng nhập xong.
+
+74
+00:04:53,700 --> 00:04:55,410
+Điều đó không thể chấp nhận được
+trong thời đại ngày nay.
+
+75
+00:04:56,610 --> 00:05:00,620
+Như đã nói, cơ sở dữ liệu là 
+một công nghệ hình thành 
+
+76
+00:05:00,620 --> 00:05:03,480
+nhờ vào phân tích lý thuyết
+
+77
+00:05:03,480 --> 00:05:07,000
+và nền tảng của cơ sở dữ liệu 
+dựa trên toán học rất nhiều.
+
+78
+00:05:08,040 --> 00:05:11,990
+Và những khái niệm toán học đó
+đã trở thành
+
+79
+00:05:11,990 --> 00:05:16,310
+một số thuật ngữ dùng để miêu tả
+cơ sở dữ liệu.
+
+80
+00:05:16,310 --> 00:05:20,080
+Do đó, có 2 nhóm thuật ngữ
+mà bạn sẽ gặp phải:
+
+81
+00:05:20,080 --> 00:05:23,080
+Dạng thứ nhất, thường được dùng
+trong các sách về cơ sở dữ liệu,
+
+82
+00:05:23,080 --> 00:05:28,890
+là dạng thuật ngữ dựa trên toán học
+
+83
+00:05:28,890 --> 00:05:34,060
+với những từ như "quan hệ", "tuple", "thuộc tính"...
+
+84
+00:05:34,060 --> 00:05:36,720
+Đây là cách gọi mang tính hàn lâm.
+
+85
+00:05:36,720 --> 00:05:39,960
+Nhưng đối với các lập trình viên,
+
+86
+00:05:39,960 --> 00:05:43,690
+họ thường dùng những tư đơn giản như
+"bảng", "hàng", "cột"...
+
+87
+00:05:43,690 --> 00:05:48,850
+Tuy rằng cách gọi này không chuẩn xác
+
+88
+00:05:48,850 --> 00:05:52,210
+nếu ta muốn tìm hiểu mặt toán học
+của cơ sở dữ liệu.
+
+89
+00:05:54,010 --> 00:05:58,690
+Nhưng ta chưa cần phải quan tâm
+đến mặt toán học.
+
+90
+00:05:58,690 --> 00:06:01,160
+Chỉ cần nhớ là khi tham khảo
+tài liệu về vấn đề này,
+
+91
+00:06:01,160 --> 00:06:07,270
+đừng ngạc nhiên nếu tác giả
+dùng những thuật ngữ cao siêu.
+
+92
+00:06:07,270 --> 00:06:13,470
+Cơ bản thì dữ liệu được sắp xếp 
+dựa trên mối quan hệ,
+
+93
+00:06:13,470 --> 00:06:17,640
+chứ không chỉ đơn giản là
+một mớ dữ liệu liên tiếp nhau.
+
+94
+00:06:17,640 --> 00:06:22,740
+Ý tưởng là nếu ta coi mọi thứ
+gồm có các mối liên hệ,
+
+95
+00:06:22,740 --> 00:06:26,360
+Mỗi vật thể là một mối liên hệ giữa
+thứ này, thứ kia và những thứ khác...
+
+96
+00:06:26,360 --> 00:06:29,110
+Ý tưởng sắp xếp mọi thứ
+dựa trên các mối liên hệ
+
+97
+00:06:29,110 --> 00:06:33,500
+là cơ sở toán học giúp đọc và ghi 
+cơ sở dữ liệu nhanh chóng,
+
+98
+00:06:33,500 --> 00:06:37,190
+nhưng các lập trình viên chúng ta
+chỉ cần coi đó là hàng và cột.
+
+99
+00:06:37,190 --> 00:06:41,130
+Đây là hình screenshot một
+bảng tính mà tôi đã làm.
+
+100
+00:06:41,130 --> 00:06:44,340
+Ở dưới cùng màn hình là
+tên của các bảng tính phụ
+
+101
+00:06:44,340 --> 00:06:47,580
+gồm: bài hát, album, ca sĩ, thể loại.
+
+102
+00:06:47,580 --> 00:06:51,040
+Các bảng tính phụ này khá
+giống với bảng cơ sở dữ liệu.
+
+103
+00:06:51,040 --> 00:06:56,900
+Với mỗi bảng gồm có
+các hàng và các cột.
+
+104
+00:06:56,900 --> 00:06:58,260
+Đây là các cột của bảng tính.
+
+105
+00:06:58,260 --> 00:07:01,960
+Bảng này có 3 cột và 
+rất nhiều hàng.
+
+106
+00:07:01,960 --> 00:07:03,930
+Ngoài ra, khi ta sử dụng bảng tính,
+
+107
+00:07:03,930 --> 00:07:07,460
+ta cần phải nghĩ ra một cách để
+
+108
+00:07:07,460 --> 00:07:10,002
+dễ dàng nhận biết được 
+cột đầu tiên là tên bài hát,
+
+109
+00:07:10,002 --> 00:07:12,630
+cột thứ hai là xếp hạng, nếu không 
+thì bảng này không có ý nghĩa.
+
+110
+00:07:12,630 --> 00:07:17,130
+Do đó, ở hàng đầu tiên của bảng tính,
+
+111
+00:07:17,130 --> 00:07:21,200
+ta thường ghi nhóm số liệu 
+của mỗi cột.
+
+112
+00:07:21,200 --> 00:07:25,225
+Bảng tính này không biết ràng
+ta đang làm việc đó.
+
+113
+00:07:25,225 --> 00:07:28,745
+Tuy nhiên, ta vẫn có thể 
+cài đặt để bảng tính
+
+114
+00:07:28,745 --> 00:07:32,535
+không sắp xếp hàng đầu tiên
+vì đó là hàng tựa đề,
+
+115
+00:07:32,535 --> 00:07:36,085
+bởi vì thường thì ta chỉ cần
+sắp xếp phần dưới của bảng tính,
+
+116
+00:07:36,085 --> 00:07:37,625
+và phần mềm biết rằng
+đây là hàng tựa đề.
+
+117
+00:07:37,625 --> 00:07:40,495
+Trong ngữ cảnh cơ sở dữ liệu,
+ta gọi những quy tắc này là schema,
+
+118
+00:07:42,580 --> 00:07:43,974
+bao gồm các tựa đề
+
+119
+00:07:43,974 --> 00:07:46,813
+và các quy tắc, như trong 2 cột này 
+chỉ được có các số nguyên,
+
+120
+00:07:46,813 --> 00:07:50,421
+còn trong cột này chỉ được có
+các chuỗi kí tự không quá 128 chữ.
+
+121
+00:07:50,421 --> 00:07:55,222
+Nói cách khác, khi tạo ra schema, 
+ta đặt ra những quy tắc cụ thể
+
+122
+00:07:55,222 --> 00:07:59,587
+khá giống với những gì 
+ta đang làm với bảng tính này,
+
+123
+00:07:59,587 --> 00:08:04,790
+nhưng phức tạp và chi tiết hơn nhiều.
+
+124
+00:08:04,790 --> 00:08:08,460
+Thay vì làm 1 việc có thể làm với cơ sở dữ liệu,
+như là sắp xếp các bản nhạc,
+
+125
+00:08:08,460 --> 00:08:13,090
+ta lại làm bằng bảng tính, 
+thì ta sẽ thấy rằng
+
+126
+00:08:13,090 --> 00:08:15,890
+bảng tính không phải là
+công cụ thích hợp
+
+127
+00:08:15,890 --> 00:08:16,660
+vì có nhiều dữ liệu
+trùng lặp với nhau.
+
+128
+00:08:16,660 --> 00:08:18,590
+Ta sẽ giải quyết vấn đề đó
+bằng cơ sở dữ liệu.
+
+129
+00:08:19,930 --> 00:08:23,320
+Như đã nói, ý tưởng ban đầu về cơ sở
+dữ liệu, xuất hiện vào thập niên 60
+
+130
+00:08:23,320 --> 00:08:27,240
+& 70, đó là 1 cách thức
+sắp xếp dữ liệu trên đĩa cứng,
+
+131
+00:08:27,240 --> 00:08:29,290
+để có thể đọc một cách ngẫu nhiên,
+
+132
+00:08:29,290 --> 00:08:33,300
+đồng thời có các con trỏ
+đến các dữ liệu khác.
+
+133
+00:08:33,300 --> 00:08:38,310
+Từ ban đầu, người ta đã tìm ra kĩ thuật
+nhanh chóng truy cập nhiều dữ liệu
+
+134
+00:08:38,310 --> 00:08:43,710
+bằng cách nhảy giữa các dữ liệu
+khác nhau, đánh chỉ mục, v.v...
+
+135
+00:08:43,710 --> 00:08:48,120
+Ban đầu, người ta lập trình 
+những cơ sở dữ liệu này
+
+136
+00:08:48,120 --> 00:08:52,450
+bằng cách truy cập dữ liệu
+từ cấp thấp để có thể
+
+137
+00:08:52,450 --> 00:08:54,540
+đọc dữ liệu này, rồi
+nhảy sang dữ liệu khác,
+
+138
+00:08:54,540 --> 00:08:57,480
+và tiếp tục như vậy.
+
+139
+00:08:57,480 --> 00:08:59,190
+Việc này rất là khó khăn.
+
+140
+00:08:59,190 --> 00:09:02,550
+Lập trình viên khi đó phải viết
+các chương trình rất phức tạp,
+
+141
+00:09:02,550 --> 00:09:05,620
+nhưng nếu thành công thì
+chúng sẽ chạy rất nhanh.
+
+142
+00:09:05,620 --> 00:09:11,110
+Sau đó, thay vì để chương trình
+đọc trực tiếp dữ liệu từ
+
+143
+00:09:11,110 --> 00:09:12,296
+cơ sở dữ liệu,
+
+144
+00:09:12,296 --> 00:09:16,787
+người ta tạo ra một lớp
+ngăn cách mới,
+
+145
+00:09:16,787 --> 00:09:22,004
+gọi là chương trình cơ sở dữ liệu.
+
+146
+00:09:22,004 --> 00:09:24,130
+Xin lỗi nếu tôi vẽ không được đẹp.
+
+147
+00:09:24,130 --> 00:09:27,560
+Ta có thể hình dung độ phức tạp
+của cơ sở dữ liệu này.
+
+148
+00:09:27,560 --> 00:09:31,390
+Và ban đầu, ta phải đối phó
+trực tiếp với những phức tạp đó,
+
+149
+00:09:31,390 --> 00:09:34,550
+nhưng khi có chương trình
+cơ sở dữ liệu
+
+150
+00:09:34,550 --> 00:09:37,820
+Phần mềm của ta có thể
+tương tác với chương trình đó,
+
+151
+00:09:37,820 --> 00:09:40,340
+và chương trình đó sẽ tương tác
+với cơ sở dữ liệu.
+
+152
+00:09:40,340 --> 00:09:43,800
+Đây gọi là lớp trừu tượng
+trong khoa học máy tính.
+
+153
+00:09:43,800 --> 00:09:47,450
+Những thứ ta cần làm ở đây trở nên
+
+154
+00:09:47,450 --> 00:09:51,770
+dễ dàng hơn vì chương trình này sẽ 
+giải quyết những chỗ phức tạp.
+
+155
+00:09:51,770 --> 00:09:54,200
+Vậy câu hỏi đặt ra là:
+
+156
+00:09:54,200 --> 00:09:58,820
+Ta sẽ tương tác với chương trình
+cơ sở dữ liệu này bằng cách nào?
+
+157
+00:09:58,820 --> 00:10:00,670
+Những quá trình gì xảy ra ở đây?
+
+158
+00:10:00,670 --> 00:10:02,300
+Phương thức tương tác là gì?
+
+159
+00:10:02,300 --> 00:10:06,040
+Ta có thể gọi đây là API,
+giao diện lập trình ứng dụng.
+
+160
+00:10:06,040 --> 00:10:07,260
+Đây là ứng dụng của ta,
+
+161
+00:10:08,440 --> 00:10:12,590
+Cơ sở dữ liệu cũng là một ứng dụng.
+
+162
+00:10:12,590 --> 00:10:14,780
+Và ta cần có một giao diện để
+
+163
+00:10:14,780 --> 00:10:17,840
+ứng dụng của ta có thể
+tương tác với các ứng dụng khác
+
+164
+00:10:17,840 --> 00:10:20,730
+Ta gọi đây là một dịch vụ.
+
+165
+00:10:20,730 --> 00:10:21,962
+Dịch vụ này sẽ giải quyết
+vấn đề nói trên.
+
+166
+00:10:21,962 --> 00:10:24,004
+And ultimately,
+let me change the color here.
+
+167
+00:10:24,004 --> 00:10:28,270
+Và ta có thể coi toàn bộ những thứ này,
+
+168
+00:10:28,270 --> 00:10:32,630
+gồm dữ liệu và các phần mềm
+đọc được dữ liệu đó,
+
+169
+00:10:32,630 --> 00:10:36,920
+là một dịch vụ trong một
+cấu trúc hướng dịch vụ.
+
+170
+00:10:36,920 --> 00:10:42,221
+Và để sử dụng một cấu trúc hướng dịch vụ,
+
+171
+00:10:42,221 --> 00:10:44,746
+ta cần định nghĩa điểm giao cắt.
+
+172
+00:10:44,746 --> 00:10:49,390
+Đâu là điểm giao cắt giữa
+ứng dụng của ta và thứ kì diệu này?
+
+173
+00:10:49,390 --> 00:10:52,290
+Và chủ nhân của những thứ này là Oracle.
+
+174
+00:10:52,290 --> 00:10:54,600
+Những thứ này đã đem lại
+rất nhiều tiền cho Oracle.
+
+175
+00:10:54,600 --> 00:10:57,710
+Và thật sự thì đây là
+những phần mềm rất tốt.
+
+176
+00:10:57,710 --> 00:10:59,150
+Oracle thật sự tốt.
+
+177
+00:10:59,150 --> 00:11:00,100
+Microsoft cũng vậy.
+
+178
+00:11:01,230 --> 00:11:04,760
+Một lúc nào đó, người ta quyết định
+tạo ra một tiêu chuẩn chung,
+
+179
+00:11:04,760 --> 00:11:05,900
+cụ thể là các công ty lớn
+đã làm việc này.
+
+180
+00:11:05,900 --> 00:11:09,330
+Họ đã hợp tác với Việc Tiêu chuẩn
+và Kĩ thuật Quốc gia, NIST,
+
+181
+00:11:09,330 --> 00:11:12,130
+để tiêu chuẩn hoá một ngôn ngữ
+
+182
+00:11:12,130 --> 00:11:16,390
+được coi là API giữa một ứng dụng
+và một hệ thống cơ sở dữ liệu.
+
+183
+00:11:16,390 --> 00:11:21,950
+Nó được gọi là SQL,
+
+184
+00:11:21,950 --> 00:11:25,560
+hay ngôn ngữ truy vấn cấu trúc.
+
+185
+00:11:25,560 --> 00:11:28,700
+Tôi cần phải vẽ lại hình mới.
+
+186
+00:11:28,700 --> 00:11:31,200
+I have to start over again and
+draw another picture.
+
+187
+00:11:31,200 --> 00:11:31,840
+Right?
+
+188
+00:11:31,840 --> 00:11:33,870
+Ở đây ta có thể có
+phần mềm của Oracle,
+
+189
+00:11:33,870 --> 00:11:35,546
+còn ở đây là phần mèm của Microsoft.
+
+190
+00:11:35,546 --> 00:11:38,712
+Ta có ứng dụng 1,
+
+191
+00:11:38,712 --> 00:11:41,171
+và đây là ứng dụng 2,
+
+192
+00:11:43,129 --> 00:11:47,087
+Ứng dụng 1 sẽ tương tác với Oracle,
+hoặc với MySQL.
+
+193
+00:11:47,087 --> 00:11:50,940
+Và ứng dụng 2 cũng có thể tương tác
+với Oracle hoặc MySQL.
+
+194
+00:11:50,940 --> 00:11:54,100
+Đó là vì phương thức tương tác
+không thay đổi, dù đó là với Oracle hay MySQL.
+
+195
+00:11:54,100 --> 00:11:57,260
+Do đó, ta chỉ cần viết một chương trình,
+nhưng có thể sử dụng nó với
+
+196
+00:11:57,260 --> 00:11:59,530
+nhiều loại cơ sở dữ liệu khác nhau.
+
+197
+00:11:59,530 --> 00:12:03,160
+SQL thật sự là một ngôn ngữ rất đẹp.
+
+198
+00:12:03,160 --> 00:12:05,190
+it's just a gorgeous language.
+
+199
+00:12:05,190 --> 00:12:08,390
+Lý do tôi không dạy SQL trước là vì
+
+200
+00:12:08,390 --> 00:12:09,090
+bạn sẽ bị cám dỗ
+
+201
+00:12:10,540 --> 00:12:14,830
+và không còn muốn lập trình
+bằng bất cứ ngôn ngữ nào khác nữa.
+
+202
+00:12:14,830 --> 00:12:18,000
+Tôi nghĩ đây là một trong những
+ngôn ngữ đẹp nhất tôi từng biết.
+
+203
+00:12:18,000 --> 00:12:22,770
+Nó đẹp nhờ sự đơn giản và
+khả năng diễn đạt của nó.
+
+204
+00:12:22,770 --> 00:12:27,510
+SQL vừa mạnh lại vừa đẹp và tao nhã.
+
+205
+00:12:27,510 --> 00:12:33,205
+Vấn đề đối với SQL là
+nó yêu cầu dữ liệu cũng phải đẹp.
+
+206
+00:12:33,205 --> 00:12:37,705
+Nó là một cách rất tốt để 
+viết phần mềm xử lý dữ liệu đẹp.
+
+207
+00:12:37,705 --> 00:12:40,205
+Một trong số những thứ ta sẽ học
+là cách để làm cho dữ liệu đẹp,
+
+208
+00:12:40,205 --> 00:12:42,315
+và viết những chương trình thật sự thú vị.
+
+209
+00:12:42,315 --> 00:12:45,925
+Với Python thì hơi khó khăn hơn một tí,
+
+210
+00:12:45,925 --> 00:12:50,375
+Nhưng nó lại không gặp vấn đề
+với dữ liệu bừa bộn, hay
+
+211
+00:12:50,375 --> 00:12:52,195
+dữ liệu không hoàn hảo.
+
+212
+00:12:52,195 --> 00:12:54,090
+Và ta có thể chỉ tiếp tục sử dụng Python.
+
+213
+00:12:54,090 --> 00:12:57,130
+Có lúc bạn sẽ nghĩ rằng
+việc này khó hơn bạn tưởng trước đó.
+
+214
+00:12:57,130 --> 00:12:58,630
+Ta cần có một câu lệnh if ở đây,
+
+215
+00:12:58,630 --> 00:13:01,380
+một câu lệnh if ở kia,
+và nhiều thứ khác nữa.
+
+216
+00:13:01,380 --> 00:13:06,220
+Nhưng Python xử lý dữ liệu thô
+tốt hơn cơ sở dữ liệu rất nhiều.
+
+217
+00:13:06,220 --> 00:13:10,720
+Do đó, Python cùng với SQL
+là một cặp đôi hoàn hảo.
+
+218
+00:13:10,720 --> 00:13:12,250
+Python sắp xếp lại dữ liệu.
+
+219
+00:13:12,250 --> 00:13:15,290
+Còn SQL có thể lưu trữ
+và truy xuất dữ liệu rất tốt.
+
+220
+00:13:15,290 --> 00:13:18,180
+Có 4 hàm SQL cơ bản.
+
+221
+00:13:18,180 --> 00:13:19,150
+Ta gọi chúng là CRUD.
+
+222
+00:13:19,150 --> 00:13:23,200
+Tạo (C), đọc (R), cập nhật (U), và xoá (D).
+
+223
+00:13:23,200 --> 00:13:24,090
+Update is missing here.
+
+224
+00:13:26,990 --> 00:13:28,000
+CRUD.
+
+225
+00:13:29,240 --> 00:13:30,340
+Và đây là một thuật ngữ
+trong cơ sở dữ liệu.
+
+226
+00:13:30,340 --> 00:13:32,340
+CRUD: tạo, đọc, cập nhật, và xoá.
+
+227
+00:13:32,340 --> 00:13:36,320
+Tiếp theo, ta sẽ bàn về cách 
+một lập trình viên có thể
+
+228
+00:13:36,320 --> 00:13:39,150
+tương tác với cơ sở dữ liệu, 
+dù làm một dự án lớn hay nhỏ.
+
+229
+00:13:39,150 --> 00:13:42,230
+Những gì ta sắp thực hiện sẽ giống với
+một dự án nhỏ hơn.
+
+230
+00:13:42,230 --> 00:13:44,420
+Ta sẽ bàn một tí về vấn đề trên, và
+
+231
+00:13:44,420 --> 00:13:47,470
+cách ta dùng các phần mềm
+để tương tác với cơ sở dữ liệu.

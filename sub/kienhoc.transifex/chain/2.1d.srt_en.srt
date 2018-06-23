@@ -1,0 +1,568 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/2Gm1ARyz8ik
+
+1
+00:00:00,500 --> 00:00:02,430
+So we talked about the cumulative forecast
+
+2
+00:00:02,430 --> 00:00:05,620
+where all the history matters and is treated equally.
+
+3
+00:00:05,620 --> 00:00:08,029
+Then we talked about the naive forecast, where you only
+
+4
+00:00:08,029 --> 00:00:11,810
+use the latest history, the latest observation--
+
+5
+00:00:11,810 --> 00:00:13,235
+only yesterday matters.
+
+6
+00:00:13,235 --> 00:00:15,110
+And you might think, well, these are extreme,
+
+7
+00:00:15,110 --> 00:00:16,840
+there must be some kind of compromise.
+
+8
+00:00:16,840 --> 00:00:17,550
+And there is.
+
+9
+00:00:17,550 --> 00:00:19,490
+It's the moving average forecast.
+
+10
+00:00:19,490 --> 00:00:21,100
+And this can actually be seen not just
+
+11
+00:00:21,100 --> 00:00:23,840
+as a compromise between the two.
+
+12
+00:00:23,840 --> 00:00:25,950
+It's a way to generalize.
+
+13
+00:00:25,950 --> 00:00:28,150
+So what does this model look like?
+
+14
+00:00:28,150 --> 00:00:31,840
+What we do is we don't include all the data necessarily.
+
+15
+00:00:31,840 --> 00:00:34,905
+We only include the last M, whatever M is.
+
+16
+00:00:34,905 --> 00:00:36,530
+M is a variable.
+
+17
+00:00:36,530 --> 00:00:38,770
+We include that many observations.
+
+18
+00:00:38,770 --> 00:00:40,530
+And this is, like I said, a compromise
+
+19
+00:00:40,530 --> 00:00:42,430
+between the cumulative and the naive.
+
+20
+00:00:42,430 --> 00:00:43,760
+So let's look at it.
+
+21
+00:00:43,760 --> 00:00:46,730
+The underlying model is still that stationary model,
+
+22
+00:00:46,730 --> 00:00:49,540
+where the demand for time in time period t
+
+23
+00:00:49,540 --> 00:00:52,010
+is going to be equal to some level,
+
+24
+00:00:52,010 --> 00:00:55,220
+plus the error term, some variance around it, some noise.
+
+25
+00:00:55,220 --> 00:00:57,330
+And that variance, that noise or the error,
+
+26
+00:00:57,330 --> 00:01:03,090
+is going to have a mean of 0 and a variance of some variance.
+
+27
+00:01:03,090 --> 00:01:06,660
+But the big thing is that mean is 0, so we're not biased.
+
+28
+00:01:06,660 --> 00:01:09,690
+So the forecasting model for this, it looks complicated,
+
+29
+00:01:09,690 --> 00:01:11,220
+but it's really straightforward.
+
+30
+00:01:11,220 --> 00:01:14,200
+So my forecast for demand sitting in time period
+
+31
+00:01:14,200 --> 00:01:17,270
+t for time period t plus 1 is going
+
+32
+00:01:17,270 --> 00:01:22,370
+to be equal to the sum of the demand over the last m periods,
+
+33
+00:01:22,370 --> 00:01:25,540
+divided by m, the number of periods I'm including.
+
+34
+00:01:25,540 --> 00:01:29,740
+So this term, I equals t plus 1 minus m,
+
+35
+00:01:29,740 --> 00:01:31,840
+simply goes back m periods.
+
+36
+00:01:31,840 --> 00:01:36,630
+So if I'm in time period six and my m is 4,
+
+37
+00:01:36,630 --> 00:01:40,840
+then I'm going to go back six, five, four, three, two.
+
+38
+00:01:40,840 --> 00:01:44,830
+So it's just going back that many time periods.
+
+39
+00:01:44,830 --> 00:01:47,180
+So here I have the same data we've been looking at.
+
+40
+00:01:47,180 --> 00:01:49,250
+The first column is the time period.
+
+41
+00:01:49,250 --> 00:01:51,130
+The second column is the demand.
+
+42
+00:01:51,130 --> 00:01:53,510
+And then I've got in the red the naive forecast.
+
+43
+00:01:53,510 --> 00:01:55,710
+And we showed how to do that.
+
+44
+00:01:55,710 --> 00:01:58,340
+In the green on the other end of the table
+
+45
+00:01:58,340 --> 00:02:00,450
+is the cumulative forecast.
+
+46
+00:02:00,450 --> 00:02:03,990
+And again, in those columns, in these last five columns,
+
+47
+00:02:03,990 --> 00:02:06,220
+this is the forecasted demand made
+
+48
+00:02:06,220 --> 00:02:10,770
+at time period t for the next time period t plus 1.
+
+49
+00:02:10,770 --> 00:02:14,040
+So for these five columns on the right,
+
+50
+00:02:14,040 --> 00:02:19,100
+we're all looking at the next period demand forecast.
+
+51
+00:02:19,100 --> 00:02:22,590
+So let's plot these.
+
+52
+00:02:22,590 --> 00:02:24,710
+And here, I put the actual.
+
+53
+00:02:24,710 --> 00:02:29,970
+And again, I connected the actual domains with the line.
+
+54
+00:02:29,970 --> 00:02:32,270
+And here's the naive.
+
+55
+00:02:32,270 --> 00:02:34,400
+And again, it's just a shift of one.
+
+56
+00:02:34,400 --> 00:02:37,290
+You can see it's very volatile, very noisy.
+
+57
+00:02:37,290 --> 00:02:39,250
+And now let's see what the M2 is.
+
+58
+00:02:39,250 --> 00:02:42,640
+The M2 is the moving average of two periods.
+
+59
+00:02:42,640 --> 00:02:45,500
+So the moving average that the forecast
+
+60
+00:02:45,500 --> 00:02:49,490
+made at time two for the next period, time three,
+
+61
+00:02:49,490 --> 00:02:52,030
+we're going to say is 100.5, which
+
+62
+00:02:52,030 --> 00:02:56,419
+is just the average of 109 plus 92.
+
+63
+00:02:56,419 --> 00:02:57,960
+And so that's going to be right here.
+
+64
+00:02:57,960 --> 00:03:01,970
+And then the next period, the forecast
+
+65
+00:03:01,970 --> 00:03:05,090
+made at time three for time period four,
+
+66
+00:03:05,090 --> 00:03:08,142
+is going to be 95, which is just the average of these two.
+
+67
+00:03:08,142 --> 00:03:09,850
+So you're just making the moving average.
+
+68
+00:03:09,850 --> 00:03:12,410
+You're averaging the last m periods.
+
+69
+00:03:12,410 --> 00:03:13,370
+In this case, it's m2.
+
+70
+00:03:13,370 --> 00:03:16,310
+
+
+71
+00:03:16,310 --> 00:03:22,970
+And then you can see the same thing happens for M4 and M6.
+
+72
+00:03:22,970 --> 00:03:27,950
+Two things to point out-- one is I can't start the M2 forecast
+
+73
+00:03:27,950 --> 00:03:30,150
+until two periods after.
+
+74
+00:03:30,150 --> 00:03:33,500
+I need two periods to have something to average.
+
+75
+00:03:33,500 --> 00:03:35,480
+Same thing for the four-- the M4,
+
+76
+00:03:35,480 --> 00:03:38,060
+I need four periods to be able to do something.
+
+77
+00:03:38,060 --> 00:03:40,450
+M6, I need six periods.
+
+78
+00:03:40,450 --> 00:03:45,750
+So one of the things is, as I use more history in my forecast
+
+79
+00:03:45,750 --> 00:03:47,840
+model, I need more history.
+
+80
+00:03:47,840 --> 00:03:49,800
+For the naive model, I don't need any history.
+
+81
+00:03:49,800 --> 00:03:51,520
+I just need what happened yesterday.
+
+82
+00:03:51,520 --> 00:03:53,020
+That's the only history I need.
+
+83
+00:03:53,020 --> 00:03:56,260
+For these other models, I need two periods, four periods,
+
+84
+00:03:56,260 --> 00:04:00,420
+or six periods, because that's how long it takes to average.
+
+85
+00:04:00,420 --> 00:04:02,450
+The other thing is, notice what happens.
+
+86
+00:04:02,450 --> 00:04:04,790
+They approach the cumulative model.
+
+87
+00:04:04,790 --> 00:04:09,580
+They get calmer and calmer as I increase the number of periods.
+
+88
+00:04:09,580 --> 00:04:13,440
+So as M gets bigger, I get calmer.
+
+89
+00:04:13,440 --> 00:04:16,680
+Versus the naive, which is essentially equivalent to what?
+
+90
+00:04:16,680 --> 00:04:18,630
+M equals 1.
+
+91
+00:04:18,630 --> 00:04:21,510
+So at M equals 1, it's very volatile.
+
+92
+00:04:21,510 --> 00:04:26,136
+As M approaches t, it starts getting very calm.
+
+93
+00:04:26,136 --> 00:04:27,980
+So this is why it's a trade off.
+
+94
+00:04:27,980 --> 00:04:30,570
+And in fact, it's really just a generalization.
+
+95
+00:04:30,570 --> 00:04:33,570
+If I plug in M is equal to t, all the data,
+
+96
+00:04:33,570 --> 00:04:35,720
+I will have the cumulative model.
+
+97
+00:04:35,720 --> 00:04:39,930
+If I plug in M is equal to 1, I will be the naive model.
+
+98
+00:04:39,930 --> 00:04:42,680
+So it's something in between is that compromise.
+
+99
+00:04:42,680 --> 00:04:44,230
+But you can model either of them just
+
+100
+00:04:44,230 --> 00:04:49,040
+by picking the appropriate M. So how big should M be?
+
+101
+00:04:49,040 --> 00:04:51,110
+Well, if it's too small, then you're
+
+102
+00:04:51,110 --> 00:04:52,910
+going to be overly responsive to noise.
+
+103
+00:04:52,910 --> 00:04:54,243
+You're going to be very nervous.
+
+104
+00:04:54,243 --> 00:04:57,630
+You're going to have that very volatile forecast, the naive
+
+105
+00:04:57,630 --> 00:04:58,230
+forecast.
+
+106
+00:04:58,230 --> 00:05:00,710
+And if it's too big, you're going to miss step changes.
+
+107
+00:05:00,710 --> 00:05:03,050
+You're going to average out all that noise.
+
+108
+00:05:03,050 --> 00:05:05,690
+So there's no one definite always
+
+109
+00:05:05,690 --> 00:05:09,020
+use this value of M. People typically use practical value.
+
+110
+00:05:09,020 --> 00:05:11,460
+So if I'm looking at months of forecast,
+
+111
+00:05:11,460 --> 00:05:14,920
+I might do it over six sometimes three.
+
+112
+00:05:14,920 --> 00:05:16,590
+So you're averaging over the quarter.
+
+113
+00:05:16,590 --> 00:05:18,620
+Or you might average, if it's a long period,
+
+114
+00:05:18,620 --> 00:05:20,760
+over a 12 month moving average.
+
+115
+00:05:20,760 --> 00:05:21,780
+So it really depends.
+
+116
+00:05:21,780 --> 00:05:24,030
+You want to see what the purpose is.
+
+117
+00:05:24,030 --> 00:05:26,390
+If the purpose is to see a long term trend,
+
+118
+00:05:26,390 --> 00:05:28,677
+you can go for a longer M.
+
+119
+00:05:28,677 --> 00:05:31,260
+If it's used for other purposes, you might want to shorten it.
+
+120
+00:05:31,260 --> 00:05:34,470
+But there's no hard and fast rules of what your M should be.
+
+121
+00:05:34,470 --> 00:05:37,150
+There's no optimal value.
+
+122
+00:05:37,150 --> 00:05:39,450
+Two points, though-- or the main point
+
+123
+00:05:39,450 --> 00:05:41,360
+I want to make before we move on is
+
+124
+00:05:41,360 --> 00:05:44,170
+to note that this moving average model will always
+
+125
+00:05:44,170 --> 00:05:46,350
+lag any change.
+
+126
+00:05:46,350 --> 00:05:47,560
+And this is for two reasons.
+
+127
+00:05:47,560 --> 00:05:49,230
+The first is we're still assuming
+
+128
+00:05:49,230 --> 00:05:51,220
+that's stationary demand.
+
+129
+00:05:51,220 --> 00:05:54,450
+Remember, we're still assuming that the model, the forecast,
+
+130
+00:05:54,450 --> 00:05:59,690
+is going to be equal to a level plus some kind of noise.
+
+131
+00:05:59,690 --> 00:06:01,190
+And so I'm assuming this level.
+
+132
+00:06:01,190 --> 00:06:03,970
+So if something happens, a trend or a step change,
+
+133
+00:06:03,970 --> 00:06:06,020
+if something moves, I'm going to miss that,
+
+134
+00:06:06,020 --> 00:06:08,010
+because I'm assuming a stationary demand.
+
+135
+00:06:08,010 --> 00:06:11,330
+I'm going to assume that that's just some noise.
+
+136
+00:06:11,330 --> 00:06:14,740
+And the larger the M, the longer that lag is going to be,
+
+137
+00:06:14,740 --> 00:06:17,880
+the longer it'll take for that change, that step change,
+
+138
+00:06:17,880 --> 00:06:19,330
+that trend to show up.
+
+139
+00:06:19,330 --> 00:06:20,860
+And we'll talk more about this.
+
+140
+00:06:20,860 --> 00:06:23,050
+And this is also a function because we've
+
+141
+00:06:23,050 --> 00:06:25,470
+got that stationary demand.
+

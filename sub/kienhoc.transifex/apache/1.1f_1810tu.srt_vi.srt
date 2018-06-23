@@ -1,0 +1,924 @@
+0
+00:00:00,000 --> 00:00:00,610
+https://youtu.be/jleReJ4ABs0        NghiaNguyen
+
+1
+00:00:00,610 --> 00:00:03,270
+Hãy thảo luận về transformations trong Spark.
+
+2
+00:00:03,270 --> 00:00:04,920
+Transformations là 1 cách tạo 1 Data Frame mới
+
+3
+00:00:04,920 --> 00:00:08,990
+từ 1 cái có sẵn, hay từ 1 nguồn dữ liệu.
+
+4
+00:00:08,990 --> 00:00:12,340
+Spark sử dụng lazy evaluation với transformations.
+
+5
+00:00:12,340 --> 00:00:14,810
+Nghĩa là kết quả sẽ không được xử lý ngay lập tức.
+
+6
+00:00:14,810 --> 00:00:17,530
+Thay vào, Spark ghi nhớ các transformations mà bạn yêu cầu
+
+7
+00:00:17,530 --> 00:00:20,060
+và rồi áp dụng những cái đó cho DataFrame ban đầu.
+
+8
+00:00:20,060 --> 00:00:22,120
+và rồi áp dụng những cái đó cho DataFrame nguồn.
+
+9
+00:00:22,120 --> 00:00:24,680
+Spark sử dụng Catalyst Optimizer
+
+10
+00:00:24,680 --> 00:00:27,720
+để tối ưu các tính toán bắt buộc,
+
+11
+00:00:27,720 --> 00:00:30,820
+và Spark còn có thể tự động phục hồi dữ liệu khi có lỗi
+
+12
+00:00:30,820 --> 00:00:32,900
+hoặc worker làm việc chậm trong cụm máy chủ.
+
+13
+00:00:32,900 --> 00:00:34,830
+Vậy, cách mà ta hiểu về transformations là
+
+14
+00:00:34,830 --> 00:00:39,370
+ta có 1 công thức tạo ra 1 kết quả.
+
+15
+00:00:39,370 --> 00:00:42,490
+Hãy bắt đầu với transformations theo cột.
+
+16
+00:00:42,490 --> 00:00:47,000
+Áp dụng phương thức sau đây để tạo ra 1 DataFrame mới từ 1 cột.
+
+17
+00:00:47,000 --> 00:00:50,200
+Ở đây, ta có DataFrame people với 2 cột,
+
+18
+00:00:50,200 --> 00:00:54,800
+như tên và tuổi, và ta chọn cột tuổi.
+
+19
+00:00:54,800 --> 00:00:57,050
+Ta tạo DataFrame mới với 1 cột duy nhất 1 cột tuổi.
+
+20
+00:00:57,050 --> 00:01:00,160
+Ta tạo Data Frame mới với 1 cột duy nhất 1 cột tuổi.
+
+21
+00:01:00,160 --> 00:01:02,840
+Nếu ta muốn chọn 1 hoặc nhiều cột từ 1 DataFrame,
+
+22
+00:01:02,840 --> 00:01:05,690
+ta có thể dùng transformation select.
+
+23
+00:01:05,690 --> 00:01:07,980
+Nếu ta truyền vào dấu sao *, 
+
+24
+00:01:07,980 --> 00:01:09,550
+nó sẽ chọn tất cả các cột và 
+
+25
+00:01:09,550 --> 00:01:11,470
+tạo 1 DataFrame có tương đương số cột 
+
+26
+00:01:11,470 --> 00:01:14,520
+như DataFrame ban đầu.
+
+27
+00:01:14,520 --> 00:01:17,090
+Ta cũng có thể chọn 1 cột bất kì nào --
+
+28
+00:01:17,090 --> 00:01:20,760
+như ví dụ, cột name và cột age.
+
+29
+00:01:20,760 --> 00:01:23,070
+Ta đặt chúng trong dấu nháy đơn.
+
+30
+00:01:23,070 --> 00:01:26,240
+Ta cũng có thể dùng dấu chấm . --
+
+31
+00:01:26,240 --> 00:01:31,280
+df.name hay df.age để chỉ ra 1 cột xác định.
+
+32
+00:01:31,280 --> 00:01:33,900
+Ta cũng có thể tạo các cột mới dựa theo 
+
+33
+00:01:33,900 --> 00:01:37,130
+dữ liệu của cột cũ với một vài hàm được áp dụng lên nó.
+
+34
+00:01:37,130 --> 00:01:37,810
+dữ liệu của cột cũ với một vài hàm được áp dụng lên nó.
+
+35
+00:01:37,810 --> 00:01:39,710
+Trong trường hợp này, ta lấy cột age và
+
+36
+00:01:39,710 --> 00:01:43,060
+ta tăng tất cả mọi người thêm 10 tuổi.
+
+37
+00:01:43,060 --> 00:01:45,620
+Và ta đặt tên cho nó, như age, 
+
+38
+00:01:45,620 --> 00:01:47,555
+bằng cách dùng transformation alias.
+
+39
+00:01:47,555 --> 00:01:50,410
+
+40
+00:01:50,410 --> 00:01:52,162
+Nếu ta có quá nhiều cột và ta muốn
+
+41
+00:01:52,162 --> 00:01:53,870
+lấy chỉ vài cột trong đó,
+
+42
+00:01:53,870 --> 00:01:55,670
+ta có thể dùng phương thức drop, phương thức này sẽ 
+
+43
+00:01:55,670 --> 00:02:00,200
+trả về 1 DataFrame mới bỏ đi các cột được chỉ định.
+
+44
+00:02:00,200 --> 00:02:02,050
+Vậy trong trường hợp này, ta bỏ đi cột age,
+
+45
+00:02:02,050 --> 00:02:05,910
+và giờ ta có 1 DataFrame chứa 
+
+46
+00:02:05,910 --> 00:02:08,259
+1 cột name duy nhất.
+
+47
+00:02:08,259 --> 00:02:10,479
+Một chút ghi chú trong Python.
+
+48
+00:02:10,479 --> 00:02:12,830
+Python cung cấp các hàm lambda.
+
+49
+00:02:12,830 --> 00:02:14,660
+Các hàm này là hàm nhỏ, các hàm không tên,
+
+50
+00:02:14,660 --> 00:02:16,370
+không có 1 tên định danh.
+
+51
+00:02:16,370 --> 00:02:19,220
+Ở đây là 1 ví dụ -- ta có 1 hàm với 2 đối số truyền vào
+
+52
+00:02:19,220 --> 00:02:22,260
+A và B, và trả về tổng của 2 đối số.
+
+53
+00:02:22,260 --> 00:02:24,262
+A và B, và trả về tổng của 2 đối số.
+
+54
+00:02:24,262 --> 00:02:25,720
+Không có tên hàm ---
+
+55
+00:02:25,720 --> 00:02:27,640
+đó là những hàm không tên.
+
+56
+00:02:27,640 --> 00:02:29,710
+Bạn có thể dùng 1 hàm lambda ở bất kì nơi nào
+
+57
+00:02:29,710 --> 00:02:32,080
+bắt buộc phải có 1 hàm đối tượng.
+
+58
+00:02:32,080 --> 00:02:35,870
+Nhưng, nó bị giới hạn chỉ trong 1 biểu thức đơn.
+
+59
+00:02:35,870 --> 00:02:39,990
+Hãy nhìn vào ví dụ về các ta sử dụng 1 hàm lambda.
+
+60
+00:02:39,990 --> 00:02:43,120
+Ở đây, ta sẽ sử dụng 1 transformation
+
+61
+00:02:43,120 --> 00:02:44,480
+do người dùng định nghĩa
+
+62
+00:02:44,480 --> 00:02:49,020
+Ta sẽ lấy -- và tạo -- 1 hàm mới mà ta
+
+63
+00:02:49,020 --> 00:02:51,150
+có thể áp dụng cho 1 DataFrame.
+
+64
+00:02:51,150 --> 00:02:53,570
+Nó được gọi là Hàm định nghĩa người dùng User Defined Function.
+
+65
+00:02:53,570 --> 00:02:58,260
+Giờ ta sẽ dùng các toán tử UDF để làm cái này.
+
+66
+00:02:58,260 --> 00:03:03,070
+Ta truyền vào 1 lambda, và hàm lambda đó
+
+67
+00:03:03,070 --> 00:03:07,800
+nhận 1 chuỗi, và trả lại độ dài của chuỗi đó.
+
+68
+00:03:07,800 --> 00:03:10,330
+Hàm đó trả về 1 số nguyên integer.
+
+69
+00:03:10,330 --> 00:03:13,780
+Ta cần thông báo Spark rằng hàm đó sẽ trả về 1 số nguyên.
+
+70
+00:03:13,780 --> 00:03:16,632
+Ta làm điều đó bằng cách import kiểu integer
+
+71
+00:03:16,632 --> 00:03:17,590
+từ pyspark.sql.types.
+
+72
+00:03:17,590 --> 00:03:20,850
+
+73
+00:03:20,850 --> 00:03:22,470
+Bây giờ, ta sẽ tạo UDF,
+
+74
+00:03:22,470 --> 00:03:24,380
+và ta tạo nó bằng cách truyền vào hàm lambda này,
+
+75
+00:03:24,380 --> 00:03:28,080
+và kiểu số nguyên.
+
+76
+00:03:28,080 --> 00:03:32,920
+Giờ ta sẽ áp dụng cái đó để tạo 1 DataFrame mới
+
+77
+00:03:32,920 --> 00:03:37,370
+chỉ có 1 cột duy nhất,
+
+78
+00:03:37,370 --> 00:03:39,900
+chính là độ dài chuỗi tên của cột name 
+
+79
+00:03:39,900 --> 00:03:41,820
+trong DataFrame ban đầu.
+
+80
+00:03:41,820 --> 00:03:45,070
+Ta làm điều này bằng cách truyền vào cột đó
+
+81
+00:03:45,070 --> 00:03:47,110
+User Defined Function.
+
+82
+00:03:47,110 --> 00:03:49,840
+Và ta đổi tên cột đó thành slen.
+
+83
+00:03:49,840 --> 00:03:54,320
+Vậy giờ ta có 1 DataFrame mới với 2 hàng, 1 cột,
+
+84
+00:03:54,320 --> 00:03:56,260
+với tên là slen.
+
+85
+00:03:56,260 --> 00:03:58,730
+Hàng đầu tiên là 5 do tên Alice có 5 chữ cái,
+
+86
+00:03:58,730 --> 00:04:03,900
+và hàng thứ 2 là 3 bởi vì độ dài chuỗi Bob là 3.
+
+87
+00:04:03,900 --> 00:04:05,960
+Có rất nhiều transformation hữu dụng khác 
+
+88
+00:04:05,960 --> 00:04:07,230
+mà Spark cung cấp.
+
+89
+00:04:07,230 --> 00:04:11,350
+Ví dụ, Spark cung cấp transformation filter,
+
+90
+00:04:11,350 --> 00:04:13,960
+để tạo 1 DataFrame mới,
+
+91
+00:04:13,960 --> 00:04:18,839
+chỉ chứa những hàng mà hàm filter trả về True.
+
+92
+00:04:18,839 --> 00:04:20,740
+chỉ chứa những hàng mà hàm filter trả về True.
+
+93
+00:04:20,740 --> 00:04:25,370
+"Where" chỉ là 1 alias cho filter, và distinct
+
+94
+00:04:25,370 --> 00:04:29,100
+là 1 transformation trả về 1 DataFrame mới 
+
+95
+00:04:29,100 --> 00:04:32,010
+chứa những hàng nhất định của DataFrame gốc.
+
+96
+00:04:32,010 --> 00:04:34,200
+Nếu ta có nhiều hàng giống hệt nhau,
+
+97
+00:04:34,200 --> 00:04:37,960
+bạn nên xoá chúng và giữ lại 1 dòng duy nhất.
+
+98
+00:04:37,960 --> 00:04:40,500
+Và còn có 2 transformation hữu dụng khác
+
+99
+00:04:40,500 --> 00:04:44,390
+để sắp sếp các hàng của 1 DataFrame, orderBy và sort.
+
+100
+00:04:44,390 --> 00:04:47,240
+Chúng cho phép ta sắp sếp 1 DataFrame
+
+101
+00:04:47,240 --> 00:04:50,330
+theo những chiều nhất định.
+
+102
+00:04:50,330 --> 00:04:53,590
+Cuối cùng, transformation explode
+
+103
+00:04:53,590 --> 00:04:58,170
+trả về 1 hàng mới cho mỗi phần tử trong 1 cột chỉ định.
+
+104
+00:04:58,170 --> 00:05:00,880
+
+105
+00:05:00,880 --> 00:05:03,080
+Hãy xem cách ta dùng những transformation đó 
+
+106
+00:05:03,080 --> 00:05:04,330
+khi làm bài tập.
+
+107
+00:05:04,330 --> 00:05:06,430
+Ta sẽ tạo 1 DataFrame, sử dụng
+
+108
+00:05:06,430 --> 00:05:09,550
+sqlContext.createDataFrame, ta sẽ truyền vào data --
+
+109
+00:05:09,550 --> 00:05:11,450
+và data ở đây là 1 list
+
+110
+00:05:11,450 --> 00:05:16,310
+chứa 2 phần tử, Alice với 1, và Bob với 2.
+
+111
+00:05:16,310 --> 00:05:20,550
+Và ta nói rằng tên của 2 cột là name và age.
+
+112
+00:05:20,550 --> 00:05:23,840
+Bây giờ, Spark sẽ tạo 1 DataFrame mới
+
+113
+00:05:23,840 --> 00:05:25,820
+với 2 hàng, 2 cột.
+
+114
+00:05:25,820 --> 00:05:32,710
+Ta có thể sử dụng UDF để nhân đôi cột age.
+
+115
+00:05:32,710 --> 00:05:35,520
+Ta tạo 1 UDF nhận 1 giá trị,
+
+116
+00:05:35,520 --> 00:05:37,680
+và trả về giá trị nhân đôi.
+
+117
+00:05:37,680 --> 00:05:40,400
+Và là 1 kiểu số nguyên, ta nói Spark
+
+118
+00:05:40,400 --> 00:05:43,730
+rằng UDF có kiểu số nguyên.
+
+119
+00:05:43,730 --> 00:05:48,120
+Giờ, ta có thể dùng select để tạo 1 DataFrame mới
+
+120
+00:05:48,120 --> 00:05:53,340
+mà các cột là cột name từ DataFrame ban đầu,
+
+121
+00:05:53,340 --> 00:05:58,520
+và áp dụng UDF nhân đôi cho cột age,
+
+122
+00:05:58,520 --> 00:06:00,590
+và ta đặt tên cột mới là age.
+
+123
+00:06:00,590 --> 00:06:03,480
+Vậy, ta sẽ có 1 Data Framemới chứa 
+
+124
+00:06:03,480 --> 00:06:08,620
+2 hàng, 2 cột -- 1 cột tên là name,
+
+125
+00:06:08,620 --> 00:06:11,280
+cột thứ 2 tên là age, giá trị gấp đôi
+
+126
+00:06:11,280 --> 00:06:15,130
+giá trị từ DataFrame ban đầu.
+
+127
+00:06:15,130 --> 00:06:19,220
+Sau đây là 1 ví dụ khác -- hàm filter.
+
+128
+00:06:19,220 --> 00:06:23,330
+Ta truyền vào 1 hàm Boolean, hàm này là
+
+129
+00:06:23,330 --> 00:06:27,370
+tuổi lớn hơn 3?
+
+130
+00:06:27,370 --> 00:06:30,490
+Ta áp dụng cho DataFrame mà ta mới vừa tạo,
+
+131
+00:06:30,490 --> 00:06:33,870
+và có 1 hàng duy nhất phù hợp,
+
+132
+00:06:33,870 --> 00:06:38,240
+và đó là Bob vì tuổi là 4.
+
+133
+00:06:38,240 --> 00:06:41,840
+1 ví dụ transformation khác,
+
+134
+00:06:41,840 --> 00:06:47,060
+ta bắt đầu với 1 list có Alice với 1, Bob với 2,
+
+135
+00:06:47,060 --> 00:06:48,620
+Bob với 2.
+
+136
+00:06:48,620 --> 00:06:50,480
+Giờ ta tạo 1 DataFrame, ta kết thúc
+
+137
+00:06:50,480 --> 00:06:56,740
+với 3 hàng, 2 trong 3 hàng đó giống nhau, Bob và 2.
+
+138
+00:06:56,740 --> 00:07:00,620
+Nếu ta dùng distinct, ta sẽ kết thúc với chỉ 2 hàng.
+
+139
+00:07:00,620 --> 00:07:05,080
+Hàng thứ 2 -- hàng trùng với Bob -- bị xoá.
+
+140
+00:07:05,080 --> 00:07:07,780
+
+141
+00:07:07,780 --> 00:07:13,370
+Và cuối cùng, 1 ví dụ khác -- sau đây, ta sẽ dùng sort,
+
+142
+00:07:13,370 --> 00:07:15,770
+và ta sẽ sort cột age.
+
+143
+00:07:15,770 --> 00:07:18,550
+Ta chỉ định cột age bằng cách dùng dấu nháy kép.
+
+144
+00:07:18,550 --> 00:07:22,270
+Ta cũng có thể sử dụng df2.age, và ascending false
+
+145
+00:07:22,270 --> 00:07:24,960
+nghĩa là ta sẽ sắp sếp theo thứ tự giảm dần.
+
+146
+00:07:24,960 --> 00:07:28,780
+Và bạn có thể thấy kết quả Bob 2 
+
+147
+00:07:28,780 --> 00:07:34,240
+và Alice 1.
+
+148
+00:07:34,240 --> 00:07:38,430
+Và 1 transformation khác sau đây, 
+
+149
+00:07:38,430 --> 00:07:41,190
+ta bắt đầu tạo 1 hàng có 2 cột
+
+150
+00:07:41,190 --> 00:07:45,740
+cột đầu tiên là A, cột thứ 2 là 
+
+151
+00:07:45,740 --> 00:07:48,780
+intlist, chứa 1 list các số nguyên.
+
+152
+00:07:48,780 --> 00:07:53,470
+Ta sẽ áp dụng transformation explode.
+
+153
+00:07:53,470 --> 00:07:57,450
+Ta sẽ tạo 1 DataFrame bằng cách sử dụng select,
+
+154
+00:07:57,450 --> 00:08:02,130
+ta áp dụng explode vào cột intlist của Data Frame.
+
+155
+00:08:02,130 --> 00:08:03,340
+ta áp dụng explode vào cột intlist của DataFrame.
+
+156
+00:08:03,340 --> 00:08:08,240
+Và ta sẽ đổi tên cột kết quả là anInt.
+
+157
+00:08:08,240 --> 00:08:11,400
+explode sẽ lấy từng phần tử trong list
+
+158
+00:08:11,400 --> 00:08:14,790
+và tạo ra 1 hàng mới với phần tử đó,
+
+159
+00:08:14,790 --> 00:08:17,960
+và rồi ta chỉ select cột đó.
+
+160
+00:08:17,960 --> 00:08:22,600
+Và ta có kết quả là 3 hàng -- hàng đầu tiên là
+
+161
+00:08:22,600 --> 00:08:27,520
+anInt, 1, hàng thứ 2 là anInt, giá trị 2,
+
+162
+00:08:27,520 --> 00:08:32,950
+và hàng thứ 3 là anInit, giá trị 3.
+
+163
+00:08:32,950 --> 00:08:35,120
+Đó là cách sử dụng các transformation.
+
+164
+00:08:35,120 --> 00:08:38,450
+Bây giờ, ta sẽ thảo luận về transformation GroupedData.
+
+165
+00:08:38,450 --> 00:08:42,039
+GroupBy nhóm DataFrame sử dụng các cột nhất định,
+
+166
+00:08:42,039 --> 00:08:45,960
+vậy ta có thể chạy tổ hợp các cột.
+
+167
+00:08:45,960 --> 00:08:49,050
+Đây là 3 ví dụ về hàm GroupedData --
+
+168
+00:08:49,050 --> 00:08:54,310
+aggregate tính toán tổ hợp -- ví dụ, trung bình average, lớn nhất,
+
+169
+00:08:54,310 --> 00:08:58,550
+nhỏ nhất, tổng, hay đếm -- và trả về kết quả
+
+170
+00:08:58,550 --> 00:09:00,310
+dưới dạng 1 DataFrame.
+
+171
+00:09:00,310 --> 00:09:03,810
+Count sẽ đếm số lượng bản ghi trong mỗi nhóm,
+
+172
+00:09:03,810 --> 00:09:06,500
+và average sẽ tính toán giá trị trung bình
+
+173
+00:09:06,500 --> 00:09:09,850
+cho cột số của mỗi nhóm.
+
+174
+00:09:09,850 --> 00:09:13,110
+Ở đây là ví dụ đầu tiên -- ta có
+
+175
+00:09:13,110 --> 00:09:19,580
+4 hàng, hàng đầu là Alice 1, 6, hàng thứ 2 là
+
+176
+00:09:19,580 --> 00:09:24,790
+Bob 2 và 8, hàng thứ 3 là Alice 3 và 9, 
+
+177
+00:09:24,790 --> 00:09:28,100
+và hàng thứ 4 là Bob 4 và 7.
+
+178
+00:09:28,100 --> 00:09:31,120
+Ta sẽ tạo 1 DataFrame với các cột 
+
+179
+00:09:31,120 --> 00:09:34,389
+name, age, grade.
+
+180
+00:09:34,389 --> 00:09:36,430
+Tiếp theo, ta sẽ tạo 1 DataFrame mới để 
+
+181
+00:09:36,430 --> 00:09:40,220
+ta nhóm theo name, và rồi ta sẽ thực hiện
+
+182
+00:09:40,220 --> 00:09:45,960
+aggregation để đếm số lượng phần tử 
+
+183
+00:09:45,960 --> 00:09:48,910
+trong mỗi một group.
+
+184
+00:09:48,910 --> 00:09:53,390
+Ta có thể thấy có 2 hàng của Alice và 2 hàng của Bob,
+
+185
+00:09:53,390 --> 00:09:55,870
+và như những gì được dự tính khi ta nhóm theo name,
+
+186
+00:09:55,870 --> 00:10:00,070
+ta kết thúc với count bằng 2 cho Alice
+
+187
+00:10:00,070 --> 00:10:03,760
+và count bằng 2 cho Bob.
+
+188
+00:10:03,760 --> 00:10:08,340
+Dưới đây là 1 ví dụ khác, thay vì ta làm như trên,
+
+189
+00:10:08,340 --> 00:10:12,390
+ta chỉ cần dùng transformation count
+
+190
+00:10:12,390 --> 00:10:14,310
+sau groupBy.
+
+191
+00:10:14,310 --> 00:10:18,240
+Trong trường hợp này, ta nhận được kết quả tương tự, 
+
+192
+00:10:18,240 --> 00:10:21,660
+nhưng cách thức đơn giản hơn chút xíu.
+
+193
+00:10:21,660 --> 00:10:24,920
+Sau đây là 1 ví dụ khác -- ta bắt đầu
+
+194
+00:10:24,920 --> 00:10:31,410
+data gồm 4 bộ tuple.
+
+195
+00:10:31,410 --> 00:10:37,690
+Đầu tiên là Alice và 1 và 6, cái thứ 2 là Bob và 2 và 8,
+
+196
+00:10:37,690 --> 00:10:41,610
+cái thứ 3 là Alice và 3 và 9, cái thứ 4
+
+197
+00:10:41,610 --> 00:10:44,480
+là Bob và 4 và 7.
+
+198
+00:10:44,480 --> 00:10:47,480
+Giờ ta sẽ tạo 1 Data Frame với các cột 
+
+199
+00:10:47,480 --> 00:10:51,700
+name, age, và grade.
+
+200
+00:10:51,700 --> 00:10:57,160
+Nếu ta dùng groupBy và theo sau là average,
+
+201
+00:10:57,160 --> 00:11:03,070
+ta sẽ có 1 hàng đơn trong DataFrame mới 
+
+202
+00:11:03,070 --> 00:11:09,000
+với giá trị trung bình 2.5 bởi vì đó là giá trị trung bình
+
+203
+00:11:09,000 --> 00:11:11,590
+của age ở 4 tuple, hay các hàng, 
+
+204
+00:11:11,590 --> 00:11:15,750
+và grade 7.5 bởi vì đó là giá trị trung bình
+
+205
+00:11:15,750 --> 00:11:19,200
+của grade trong tất cả các hàng.
+
+206
+00:11:19,200 --> 00:11:24,410
+Đáng lẽ, ta sẽ nhóm theo tên,
+
+207
+00:11:24,410 --> 00:11:26,190
+và yêu cầu, trung bình age và grade 
+
+208
+00:11:26,190 --> 00:11:29,060
+là bao nhiêu?
+
+209
+00:11:29,060 --> 00:11:37,360
+Trong trường hợp này, ta sẽ có Alice trung bình là 2.0,
+
+210
+00:11:37,360 --> 00:11:41,400
+bởi vì đó là giá trị trung bình của Alice - 1 và Alice 3,
+
+211
+00:11:41,400 --> 00:11:43,680
+và trung bình grade là 7.5 bởi vì đó là 
+
+212
+00:11:43,680 --> 00:11:47,810
+giá trị trung bình của 6 và 9.
+
+213
+00:11:47,810 --> 00:11:53,960
+Hàng thứ 2 có tên là Bob, và tuổi trung bình là 3,
+
+214
+00:11:53,960 --> 00:11:58,660
+bởi vì trung bình của 2 và 4, và trung bình grade là 7.5,
+
+215
+00:11:58,660 --> 00:12:04,170
+bởi vì trung bình của 8 và 7.
+
+216
+00:12:04,170 --> 00:12:07,080
+Vậy khi ta chuyển đổi 1 DataFrame,
+
+217
+00:12:07,080 --> 00:12:09,390
+ta luôn bắt đầu với vài nguồn dữ liệu.
+
+218
+00:12:09,390 --> 00:12:13,070
+Sau đây là ví dụ, ta đọc dữ liệu từ 1 file text.
+
+219
+00:12:13,070 --> 00:12:17,020
+Ta dùng sqlContext.read.text, và truyền tên file vào,
+
+220
+00:12:17,020 --> 00:12:19,610
+và 1 linesDF được tạo ra
+
+221
+00:12:19,610 --> 00:12:23,180
+bởi vì ta sẽ đọc từng dòng của file nhập vào.
+
+222
+00:12:23,180 --> 00:12:25,190
+Rồi ta có thể lọc các dòng là chú thích
+
+223
+00:12:25,190 --> 00:12:28,210
+bằng cách dùng transformation filter
+
+224
+00:12:28,210 --> 00:12:32,019
+và 1 hàm được áp dụng cho từng dòng
+
+225
+00:12:32,019 --> 00:12:33,810
+để xác định dòng này là có phải là chú thích hay không.
+
+226
+00:12:33,810 --> 00:12:37,010
+Cái này cho phép ta tạo ra 1 comments DF.
+
+227
+00:12:37,010 --> 00:12:38,890
+Bởi vì ta đang dùng lazy evaluation,
+
+228
+00:12:38,890 --> 00:12:42,050
+nghĩa là không có gì được thực thi
+
+229
+00:12:42,050 --> 00:12:43,300
+khi ta chạy 2 lệnh này.
+
+230
+00:12:43,300 --> 00:12:46,080
+Thay vào đó, Spark lưu lại các câu lệnh
+
+231
+00:12:46,080 --> 00:12:48,860
+dùng để chuyển đổi dữ liệu ban đầu.
+

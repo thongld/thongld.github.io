@@ -1,0 +1,226 @@
+1
+00:00:01,000 --> 00:00:05,460
+Ah, biểu đồ - dù thích hay ghét, 
+thì nó vẫn là công cụ cực kỳ thiết yếu
+
+2
+00:00:05,460 --> 00:00:10,550
+ cho việc phân tích hành vi kinh tế. 
+Nếu bạn là chuyên gia về biểu đồ
+
+3
+00:00:10,550 --> 00:00:15,530
+bạn có thể tắt video này ngay. 
+Vì tôi sẽ chỉ nói những điều rất cơ bản thôi.
+
+4
+00:00:15,530 --> 00:00:22,109
+OK, hãy nhắc lại theo tôi: "Biểu đồ rất dễ.
+Tôi đọc được. Tôi chỉ cần đếm thôi."
+
+5
+00:00:22,109 --> 00:00:27,090
+Không, thật đấy! Một trục số cơ bản chính là
+một biểu đồ còn gì. Tất nhiên, chúng ta sẽ
+
+6
+00:00:27,090 --> 00:00:31,670
+cần xem xét mối tương quan giữa nhiều thứ,
+nên ta cần phải đếm được hai thứ cùng một lúc.
+
+7
+00:00:31,670 --> 00:00:37,800
+Tôi có thể làm điều đó bằng cách thêm một trục số thứ hai.
+Tin vui là ta thường không cần xem cả đồ thị này.
+
+8
+00:00:37,800 --> 00:00:42,819
+Bởi vì chúng ta hiếm khi phải xem xét số liệu âm.
+
+9
+00:00:42,820 --> 00:00:47,010
+Ta có thể bỏ phần này ra, và ta chỉ còn
+2 đường kẻ ngang và dọc
+
+10
+00:00:47,010 --> 00:00:53,110
+rất quen thuộc.
+Hai đường này, tức các trục, sẽ cho phép ta
+
+11
+00:00:53,110 --> 00:00:57,750
+đo lường những tương quan giữa hai biến số
+(Tôi sẽ gọi chung các biến này là
+
+12
+00:00:57,750 --> 00:00:59,940
+X và Y).
+
+13
+00:00:59,940 --> 00:01:06,280
+Có thể giữa X và Y có mối liên hệ thuận,
+hoặc mối liên hệ trực tiếp.
+
+14
+00:01:06,280 --> 00:01:11,670
+Nếu tỉ lệ thuận, X và Y sẽ di chuyển cùng nhau,
+tức là cùng tăng
+
+15
+00:01:11,670 --> 00:01:16,970
+hoặc cùng giảm. Để tôi cho bạn
+một ví dụ: nếu tôi thay X
+
+16
+00:01:16,970 --> 00:01:22,770
+bằng số điểm A mà tiến sĩ McGlasson cho trong học kỳ này,
+và thay Y bằng
+
+17
+00:01:22,770 --> 00:01:28,539
+số sinh viên sẽ đăng ký học lớp này kỳ tới.
+
+18
+00:01:28,540 --> 00:01:32,689
+Nếu tôi không bao giờ cho điểm A,
+mọi người sẽ không dám đăng ký vào lớp
+
+19
+00:01:32,689 --> 00:01:39,250
+và lớp sẽ rất ít người học. 
+Nhưng nếu tôi cho rất nhiều điểm A, lớp sẽ được yêu thích,
+
+20
+00:01:39,250 --> 00:01:45,759
+mọi người sẽ kéo tới đăng ký học.
+Vậy, ta thấy một mối liên hệ thuận hay trực tiếp
+
+21
+00:01:45,759 --> 00:01:49,320
+giữa số điểm A được cho và số sinh viên
+
+22
+00:01:49,320 --> 00:01:52,398
+đăng ký tham gia lớp sau này.
+
+23
+00:01:52,399 --> 00:01:59,399
+Ở tình huống khác, X và Y có thể 
+có mối liên hệ nghịch, hoặc liên hệ gián tiếp.
+
+24
+00:02:00,110 --> 00:02:06,909
+X và Y sẽ di chuyển ngược nhau
+một cái tăng, cái kia giảm
+
+25
+00:02:06,909 --> 00:02:13,680
+Ví dụ, tôi sẽ thay X là số điểm A
+bằng số điểm F mà tiến sĩ cho,
+
+26
+00:02:13,680 --> 00:02:17,870
+còn Y vẫn giữ nguyên là
+số sinh viên đăng ký học lớp này.
+
+27
+00:02:17,870 --> 00:02:23,980
+Nếu tôi đánh rớt tất cả mọi người trong lớp
+
+28
+00:02:23,980 --> 00:02:30,980
+thì sau này ai mà dám học lớp tôi nữa?
+Như vậy cho nhiều điểm F sẽ
+
+29
+00:02:31,080 --> 00:02:37,959
+đồng nghĩa với việc ít sinh viên sẽ theo học lớp tôi.
+Nhưng nếu tôi gần như không đánh rớt ai cả
+
+30
+00:02:37,959 --> 00:02:44,849
+rất ít khi cho điểm F thì sẽ có nhiều sinh viên đăng ký lớp tôi.
+
+31
+00:02:44,849 --> 00:02:50,349
+Đó là mối liên hệ nghịch giữa
+
+32
+00:02:50,349 --> 00:02:57,349
+số điểm F tôi cho và tỉ lệ tham gia lớp trong tương lai
+Mối liên hệ nghịch giữa hai biến này
+
+33
+00:02:58,489 --> 00:03:03,090
+được thể hiện bằng đường dốc xuống.
+
+34
+00:03:03,090 --> 00:03:09,110
+Và còn một khả năng cuối cùng: X và Y có thể
+có quan hệ không đổi, tức quan hệ độc lập.
+
+35
+00:03:09,110 --> 00:03:14,450
+Để tôi cho bạn ví dụ về hai biến hoàn toàn độc lập.
+
+36
+00:03:14,450 --> 00:03:20,459
+Nếu trục ngang biểu diễn số sinh viên đăng ký học,
+
+37
+00:03:20,459 --> 00:03:26,220
+và trục dọc biểu diễn số chó mà tiến sĩ McGlasson nuôi?
+
+38
+00:03:26,220 --> 00:03:27,060
+(Nhà tôi có hai con chó)
+
+39
+00:03:27,060 --> 00:03:34,060
+Bây giờ, dù lớp tôi không có sinh viên, 50 hay 150 sinh viên
+thì tôi vẫn sẽ có hai con chó.
+
+40
+00:03:37,049 --> 00:03:43,150
+Nếu không ai học lớp tôi? 2 con chó. 50 người học?
+2 con chó. 150 người? Vẫn 2 con chó.
+
+41
+00:03:43,150 --> 00:03:48,530
+Trong mối quan hệ độc lập,
+đường biểu diễn là đường thẳng nằm ngang
+
+42
+00:03:48,530 --> 00:03:55,209
+không đi lên hay đi xuống gì cả,
+độ dốc bằng 0.
+
+43
+00:03:55,209 --> 00:04:00,849
+Số lượng chó nhà tôi sẽ mãi không đổi
+dù số sinh viên có thay đổi
+
+44
+00:04:00,849 --> 00:04:05,329
+Trong suốt khóa học, tôi sẽ hỏi
+các bạn có nhận biết được quan hệ
+
+45
+00:04:05,330 --> 00:04:10,650
+thuận hay nghịch không. Cho nên bạn hãy
+tự nghĩ ra những ví dụ
+
+46
+00:04:10,650 --> 00:04:17,019
+cho từng trường hợp
+để tự luyện tập về phần này
+
+47
+00:04:17,019 --> 00:04:21,889
+Tiếp theo: Làm sao để biểu diễn
+sự khan hiếm và lựa chọn trên biểu đồ?
+
+48
+00:04:21,889 --> 00:04:22,139
+TRANSCRIPT00EPISODE 6: GRAPHS
+

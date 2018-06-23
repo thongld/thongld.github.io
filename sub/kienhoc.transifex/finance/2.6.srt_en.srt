@@ -1,0 +1,362 @@
+1
+00:00:04,580 --> 00:00:06,190
+https://youtu.be/HCPMHVvJWAI
+Now for probably one of
+
+2
+00:00:06,190 --> 00:00:11,480
+my favorite problems in finance, which is
+very, very powerful. We will do it in a
+
+3
+00:00:11,480 --> 00:00:14,760
+simple way first and then we'll shred it
+
+4
+00:00:14,760 --> 00:00:19,890
+to bits and try to understand how
+finances is so awesome. This little problem
+
+5
+00:00:19,890 --> 00:00:24,810
+reflects so much, that we can squeeze out
+so much value out of it. But in the beginning
+
+6
+00:00:24,810 --> 00:00:31,349
+I just want you to understand how things
+work, so read the problem it says, again
+
+7
+00:00:31,350 --> 00:00:37,850
+kind of a PV problem. You plan to attend an
+in-state college and for those of
+
+8
+00:00:37,850 --> 00:00:44,190
+you who are not in the US and most of you
+probably are not in the US, in-state, it
+
+9
+00:00:44,190 --> 00:00:48,510
+means when you are studying in a
+university like Michigan, you have a
+
+10
+00:00:48,510 --> 00:00:54,580
+lower tuition because we are a public
+university if you are from Michigan and
+
+11
+00:00:54,580 --> 00:00:59,720
+there are certain rules that apply for
+you to qualify like you're born here, you
+
+12
+00:00:59,720 --> 00:01:04,830
+are a resident. Then your tuition is
+less but still it's a lot and higher
+
+13
+00:01:04,830 --> 00:01:11,610
+education is really worried about how
+the cost of education cannot just keep, I
+
+14
+00:01:11,610 --> 00:01:16,450
+mean, the tuition we charge cannot keep
+going up. Even in-state tuition is pretty
+
+15
+00:01:16,450 --> 00:01:22,520
+high. So here a student coming to
+Michigan is saying, "Okay my parents will
+
+16
+00:01:22,520 --> 00:01:28,330
+have to take a loan of about $100,000 at 6% and choosing an interest rate
+
+17
+00:01:28,330 --> 00:01:32,380
+pretty much randomly but I'm changing
+them over time hopefully the interest
+
+18
+00:01:32,380 --> 00:01:37,770
+rate is lower. So you're taking a loan and
+you're taking a loan today. You will make
+
+19
+00:01:37,770 --> 00:01:42,580
+yearly payments and you'll have five
+years to pay back the loan. Starting
+
+20
+00:01:42,580 --> 00:01:47,300
+pretty much in year 1, now this could change and we'll do more complicated stuff where you
+
+21
+00:01:47,300 --> 00:01:51,970
+take a loan today and you could have two
+years of no payments and then starting
+
+22
+00:01:51,970 --> 00:02:01,280
+later but we're taking a simple loan. So let's write out the timeline of this again.
+
+23
+00:02:01,300 --> 00:02:08,759
+This time we have red and we'll have fun with it.
+Zero, five, so we figured out N is equal to
+
+24
+00:02:08,759 --> 00:02:22,470
+to 5. 1..2. So this is a PV problem but
+unlike the previous problem we are given
+
+25
+00:02:22,470 --> 00:02:29,859
+the PV. So the PV is $100,000 right? And we are going
+
+26
+00:02:29,860 --> 00:02:38,380
+to now trying to figure out the PMT, so
+we're trying to figure out what are the
+
+27
+00:02:38,380 --> 00:02:44,850
+yearly. And if you notice, if you looked at
+the problem first, please start doing it
+
+28
+00:02:44,850 --> 00:02:50,859
+on your own. You can pause, but I'll keep
+going because we can't take too many
+
+29
+00:02:50,860 --> 00:02:56,70
+mini breaks, right? So this problem is, we now get a feel of it, we should be able to do it.
+
+30
+00:02:56,70 --> 00:03:01,549
+Do it with Excel or do it on your own and come
+back and see what it's like, right?
+
+31
+00:03:01,550 --> 00:03:06,430
+The thing I wanted to emphasize is the thing in bold; I say
+yearly payment, this is simplifying
+
+32
+00:03:06,430 --> 00:03:12,320
+things. Why? Because typically, payments
+will be monthly, but we'll come back to
+
+33
+00:03:12,320 --> 00:03:16,440
+that in a second, in a more complicated
+problem. Okay, so for now let's stick with
+
+34
+00:03:16,440 --> 00:03:17,780
+five years now.
+
+35
+00:03:17,780 --> 00:03:22,280
+Ok it's actually not very complicated if
+you are using Excel to make it monthly.
+
+36
+00:03:22,280 --> 00:03:27,510
+Five years, so the question is what is
+that question mark? And the question mark
+
+37
+00:03:27,510 --> 00:03:37,70
+is the PMT. Before we start let's again
+do the simple exercise. Suppose
+
+38
+00:03:37,70 --> 00:03:46,250
+you borrow $100,000 and the interest rate is 6%, how much will you pay every year if, interest
+
+39
+00:03:46,250 --> 00:03:53,740
+rates were zero? First of all, the 100,000 will be positive for you today but negative for
+
+40
+00:03:53,750 --> 00:03:57,830
+the bank. I'm just repeating what Excel
+is going to do, you put a positive get a
+
+41
+00:03:57,830 --> 00:04:03,790
+negative. You put a negative, you get a positive.
+
+42
+00:04:03,790 --> 00:04:08,160
+For the bank its negative, for you, I'm laughing
+
+43
+00:04:08,160 --> 00:04:13,170
+because I am also like, what the heck going on? $100,000 you get
+positive, but then you have to put a
+
+44
+00:04:13,170 --> 00:04:17,849
+bunch of negatives five times. So if there
+was no interest at all how much would
+
+45
+00:04:17,850 --> 00:04:19,30
+you pay every year?
+
+46
+00:04:19,29 --> 00:04:25,590
+$20,000. So think of the interest as the
+use for money, so I'll let you do that but,
+
+47
+00:04:25,590 --> 00:04:33,380
+this time let's start with PMT, as soon
+as you do that in Excel and I hope you
+
+48
+00:04:33,380 --> 00:04:40,300
+you have Excel open next to you. You can actually use the formalus too. And for those who are
+
+49
+00:04:40,300 --> 00:04:41,790
+geeks like I used to be
+
+50
+00:04:41,790 --> 00:04:45,700
+use the formula to double check but
+Excel is useful. Once you know what
+
+51
+00:04:45,700 --> 00:04:46,210
+you're doing
+
+52
+00:04:46,210 --> 00:04:57,570
+Put rate 0.06. N is how much? 5 years.
+And I believe and if I said something wrong
+
+53
+00:04:57,570 --> 00:05:01,640
+like this it's a silly wrong because you can
+always check. I think the next number is
+
+54
+00:05:01,640 --> 00:05:07,680
+PV and the final number you can enter
+is an FV. So the PV turns out to be,
+
+55
+00:05:07,680 --> 00:05:17,590
+don't enter commas where they are not
+applicable in the excel formula, right? because
+
+56
+00:05:17,590 --> 00:05:22,260
+otherwise It'll get confused, it'll think
+if you put a comma here, it'll think it's PV
+
+57
+00:05:22,260 --> 00:05:27,270
+is only hundred, so just write out the
+hundred thousand, if I by mistake but a
+
+58
+00:05:27,270 --> 00:05:28,130
+comma, say
+
+59
+00:05:28,130 --> 00:05:38,60
+Gautham is a bozo, which I am, and move
+on. So PMT, the answer will be what? Twenty three thousand, seven hundred
+
+60
+00:05:38,60 --> 00:05:56,450
+and thirty nine point six four. $23,739.64. It is 3,739
+dollars more per year than the if interest
+
+61
+00:05:56,450 --> 00:05:59,990
+rate was zero. Does that make sense?
+
+62
+00:05:59,990 --> 00:06:06,940
+Sure, here it's hurting you. Why? Because you're paying. So if you put this as a positive,
+
+63
+00:06:06,940 --> 00:06:11,860
+this will come out as a negative. So if
+this was a positive, this will be a
+
+64
+00:06:11,860 --> 00:06:16,440
+negative, which in this sense makes sense from your perspective. From the banks
+
+65
+00:06:16,440 --> 00:06:20,670
+perspective, this was a negative
+outflow, they'll get a positive
+
+66
+00:06:20,670 --> 00:06:29,30
+of these. Again, isn't this cool? It's so simple, so powerful, let me again repeat one thing
+
+67
+00:06:29,40 --> 00:06:34,960
+though, how much control you or your
+parents have over the decision making?
+
+68
+00:06:34,960 --> 00:06:40,340
+You decide based on whatever your needs are,
+that you need a $100,000 over
+
+69
+00:06:40,340 --> 00:06:42,20
+five years
+
+70
+00:06:42,20 --> 00:06:46,950
+collectively with your parents and then
+you take a loan, after that you choose
+
+71
+00:06:46,950 --> 00:06:49,810
+how many years you want to take to pay it
+back.
+
+72
+00:06:49,810 --> 00:06:55,640
+Typically you will have a choice over that a
+little bit and then the interest rate,
+
+73
+00:06:55,640 --> 00:07:00,969
+everybody thinks that you know is under
+your control, its not, that's why markets
+
+74
+00:07:00,970 --> 00:07:01,880
+are so beautiful.
+
+75
+00:07:01,880 --> 00:07:08,770
+Nobody in this marketplace really
+individually control 6%, it's
+
+76
+00:07:08,770 --> 00:07:16,650
+determined collectively by all of us. Do
+this problem and you see how easy Excel
+
+77
+00:07:16,650 --> 00:07:21,739
+makes life for you. You can make N 500 too and it'll get an answer.
+

@@ -1,0 +1,640 @@
+0
+00:00:00,000 --> 00:00:00,790
+https://youtu.be/tccXGUG6EP4
+
+1
+00:00:00,790 --> 00:00:03,990
+So, let's solve the NFL jersey problem.
+
+2
+00:00:03,990 --> 00:00:05,520
+So remember the data that we had.
+
+3
+00:00:05,520 --> 00:00:08,740
+We knew the cost per jersey was $10.90.
+
+4
+00:00:08,740 --> 00:00:11,910
+The selling price was $24.00 a jersey,
+
+5
+00:00:11,910 --> 00:00:15,860
+and the expected value was 32,000,
+
+6
+00:00:15,860 --> 00:00:18,040
+with a standard deviation of 11,000.
+
+7
+00:00:18,040 --> 00:00:20,400
+And we assumed it was distributed normally
+
+8
+00:00:20,400 --> 00:00:23,220
+for that eight week selling period.
+
+9
+00:00:23,220 --> 00:00:26,630
+So the solution -- remember, when we did marginal analysis,
+
+10
+00:00:26,630 --> 00:00:29,090
+we're going to try to figure out the cost of the short
+
+11
+00:00:29,090 --> 00:00:32,119
+and the cost of the excess to come up with a Critical Ratio.
+
+12
+00:00:32,119 --> 00:00:35,240
+So, if I have a shortage, what is my cost?
+
+13
+00:00:35,240 --> 00:00:38,540
+Well, that's one jersey I could have sold, so I lose my margin.
+
+14
+00:00:38,540 --> 00:00:41,860
+Which is just the selling price minus the cost --
+
+15
+00:00:41,860 --> 00:00:45,772
+24 minus 10.90 comes out to $13.10.
+
+16
+00:00:45,772 --> 00:00:48,230
+Then, I want to look for what is the cost if I have excess,
+
+17
+00:00:48,230 --> 00:00:51,950
+if I have an inventory of a jersey that I didn't sell?
+
+18
+00:00:51,950 --> 00:00:53,000
+And what do I lose?
+
+19
+00:00:53,000 --> 00:00:56,750
+The price that I paid for it, the $10.90.
+
+20
+00:00:56,750 --> 00:00:59,840
+So, I want to come up with my Critical Ratio, which
+
+21
+00:00:59,840 --> 00:01:03,190
+is going to be equal to the c_s, the cost of the Shortage, which
+
+22
+00:01:03,190 --> 00:01:05,720
+is p - c.
+
+23
+00:01:05,720 --> 00:01:08,920
+Divide that by the sum of the Cost of the Excess
+
+24
+00:01:08,920 --> 00:01:14,050
+and the Cost of the Shortage, which is c + p - c.
+
+25
+00:01:14,050 --> 00:01:20,310
+Which simplifies just to (p - c) / p.
+
+26
+00:01:20,310 --> 00:01:22,660
+So, this becomes my Critical Ratio
+
+27
+00:01:22,660 --> 00:01:24,800
+which, if I just look at the numbers, do the math,
+
+28
+00:01:24,800 --> 00:01:27,370
+comes out to 0.546.
+
+29
+00:01:27,370 --> 00:01:30,110
+So, this means that I want to cover
+
+30
+00:01:30,110 --> 00:01:34,350
+54.6% of the demand distribution.
+
+31
+00:01:34,350 --> 00:01:37,900
+So, I want to find a Q, such that the probability that x
+
+32
+00:01:37,900 --> 00:01:42,850
+is less than that, where x is the demand that is realized,
+
+33
+00:01:42,850 --> 00:01:44,920
+is equal to a 0.546.
+
+34
+00:01:44,920 --> 00:01:46,240
+How do I do this?
+
+35
+00:01:46,240 --> 00:01:47,020
+Couple of ways.
+
+36
+00:01:47,020 --> 00:01:50,210
+First, I can use a normal table, or I can use a spreadsheet.
+
+37
+00:01:50,210 --> 00:01:51,800
+So, let's use the normal table.
+
+38
+00:01:51,800 --> 00:01:55,350
+And you have this as an attachment to the unit.
+
+39
+00:01:55,350 --> 00:01:57,860
+And so I have the standard unit normal table
+
+40
+00:01:57,860 --> 00:01:59,880
+here that we've been using before,
+
+41
+00:01:59,880 --> 00:02:03,620
+where the first column is the k value.
+
+42
+00:02:03,620 --> 00:02:06,280
+And then I have the probability that x is less than k
+
+43
+00:02:06,280 --> 00:02:07,330
+in the second column.
+
+44
+00:02:07,330 --> 00:02:09,660
+The third column is a unit normal loss function,
+
+45
+00:02:09,660 --> 00:02:12,020
+which we'll talk about in future talks.
+
+46
+00:02:12,020 --> 00:02:15,700
+And this repeats for all different values of k.
+
+47
+00:02:15,700 --> 00:02:19,390
+So, if I want to find the probability of x being less
+
+48
+00:02:19,390 --> 00:02:22,900
+than Q where it's equal to 0.546, so what do I do?
+
+49
+00:02:22,900 --> 00:02:27,960
+Well, I look down the second column to 0.546.
+
+50
+00:02:27,960 --> 00:02:32,540
+I see that it's going to fall between these two values.
+
+51
+00:02:32,540 --> 00:02:36,770
+So my k is going to be somewhere between 0.11 and 0.12.
+
+52
+00:02:36,770 --> 00:02:39,890
+If I interpolate between that, it's roughly 2/3
+
+53
+00:02:39,890 --> 00:02:42,550
+in, or almost halfway in between.
+
+54
+00:02:42,550 --> 00:02:47,510
+And it turns out that it would come out to be that k = 0.115,
+
+55
+00:02:47,510 --> 00:02:50,220
+right in the middle, between those.
+
+56
+00:02:50,220 --> 00:02:51,970
+So, now I know this.
+
+57
+00:02:51,970 --> 00:02:56,100
+I recall that k is equal -- This is a normalization,
+
+58
+00:02:56,100 --> 00:02:59,810
+where I take the Q that I'm trying to find minus the mean
+
+59
+00:02:59,810 --> 00:03:03,690
+of the distribution, divided by the standard deviation.
+
+60
+00:03:03,690 --> 00:03:06,730
+And so, what I want to find is the Q that gives this to me.
+
+61
+00:03:06,730 --> 00:03:09,550
+So, I just solve for Q, and it turns out
+
+62
+00:03:09,550 --> 00:03:13,659
+that that comes out to be 33,267 units.
+
+63
+00:03:13,659 --> 00:03:15,950
+So, this is how you can find it using the normal table.
+
+64
+00:03:15,950 --> 00:03:19,580
+Again, I just start with the probability
+
+65
+00:03:19,580 --> 00:03:22,770
+that I need to cover, which is the Critical Ratio.
+
+66
+00:03:22,770 --> 00:03:24,910
+I can also do this in Excel, using
+
+67
+00:03:24,910 --> 00:03:27,740
+this norm-inverse function that we've talked about previously,
+
+68
+00:03:27,740 --> 00:03:31,500
+with three input terms: the Critical Ratio,
+
+69
+00:03:31,500 --> 00:03:34,630
+the mean of the distribution, the standard deviation
+
+70
+00:03:34,630 --> 00:03:36,290
+of the distribution, right?
+
+71
+00:03:36,290 --> 00:03:38,590
+And that will return the exact same value.
+
+72
+00:03:38,590 --> 00:03:42,350
+This is the Profit-Maximizing Quantity that I would order,
+
+73
+00:03:42,350 --> 00:03:46,160
+the Q*, that would maximize my total profit for that eight
+
+74
+00:03:46,160 --> 00:03:48,210
+week period.
+
+75
+00:03:48,210 --> 00:03:52,180
+But what if I can sell those leftover jerseys at a discount?
+
+76
+00:03:52,180 --> 00:03:55,190
+Because it's kind of unrealistic if I have extra jerseys
+
+77
+00:03:55,190 --> 00:03:56,630
+I just throw them away.
+
+78
+00:03:56,630 --> 00:03:59,410
+Maybe I can sell them, but at a lower rate.
+
+79
+00:03:59,410 --> 00:04:02,520
+So, what that's known is Salvage Value.
+
+80
+00:04:02,520 --> 00:04:05,240
+So, let's consider two other costs here.
+
+81
+00:04:05,240 --> 00:04:07,220
+The first is this Salvage Value.
+
+82
+00:04:07,220 --> 00:04:09,072
+So, suppose that if I sell a jersey:
+
+83
+00:04:09,072 --> 00:04:10,780
+I don't sell it in the eight week period,
+
+84
+00:04:10,780 --> 00:04:13,900
+but if I sell it later, I can get a little value for it.
+
+85
+00:04:13,900 --> 00:04:17,610
+Not as much as I normally would, but it's a discounted version
+
+86
+00:04:17,610 --> 00:04:18,130
+amount.
+
+87
+00:04:18,130 --> 00:04:22,390
+So, there's some Salvage Value to it.
+
+88
+00:04:22,390 --> 00:04:24,670
+Then I can also think of another cost,
+
+89
+00:04:24,670 --> 00:04:27,970
+a B, which is a penalty for not satisfying the demand,
+
+90
+00:04:27,970 --> 00:04:29,740
+over and above the lost profit.
+
+91
+00:04:29,740 --> 00:04:32,450
+Let's say, I see there's a loss of customer goodwill
+
+92
+00:04:32,450 --> 00:04:34,500
+and I could put a dollar value on that.
+
+93
+00:04:34,500 --> 00:04:38,100
+That would be the B. So, every item that I'm short, I get
+
+94
+00:04:38,100 --> 00:04:41,900
+dinged another B that I get charged for that.
+
+95
+00:04:41,900 --> 00:04:43,490
+So, if we think of those, then I can
+
+96
+00:04:43,490 --> 00:04:46,650
+create and look at my cost of being short.
+
+97
+00:04:46,650 --> 00:04:50,220
+So, it's the loss of the margin, p - c.
+
+98
+00:04:50,220 --> 00:04:52,510
+But I also lose that B, that penalty
+
+99
+00:04:52,510 --> 00:04:54,420
+for not satisfying demand.
+
+100
+00:04:54,420 --> 00:04:57,795
+And my cost of excess is going to be the c, right? --
+
+101
+00:04:57,795 --> 00:04:59,910
+how much I paid for it.
+
+102
+00:04:59,910 --> 00:05:02,580
+But I subtract off this g, this Salvage Value,
+
+103
+00:05:02,580 --> 00:05:04,900
+because I don't lose as much anymore --
+
+104
+00:05:04,900 --> 00:05:08,030
+because I can get some of that money back by selling it
+
+105
+00:05:08,030 --> 00:05:09,550
+at a discount.
+
+106
+00:05:09,550 --> 00:05:12,310
+So, if I carry the math out, I come up
+
+107
+00:05:12,310 --> 00:05:17,080
+with another equation for the Critical Ratio.
+
+108
+00:05:17,080 --> 00:05:18,830
+But the important thing is to always think
+
+109
+00:05:18,830 --> 00:05:21,920
+of this in terms of, what is my Cost of a Shortage, what
+
+110
+00:05:21,920 --> 00:05:25,420
+is my Cost of Excess, and then just do the ratio.
+
+111
+00:05:25,420 --> 00:05:26,930
+So, let's look at this in the case
+
+112
+00:05:26,930 --> 00:05:28,570
+where I have a Salvage Value.
+
+113
+00:05:28,570 --> 00:05:30,990
+So, let's look at our problem again.
+
+114
+00:05:30,990 --> 00:05:33,090
+And all this information is the same.
+
+115
+00:05:33,090 --> 00:05:37,840
+Jerseys cost me $10.90, the selling price is $24.00
+
+116
+00:05:37,840 --> 00:05:39,580
+a jersey.
+
+117
+00:05:39,580 --> 00:05:43,640
+My forecast demand is 32,000 with a standard deviation
+
+118
+00:05:43,640 --> 00:05:44,860
+of 11,000.
+
+119
+00:05:44,860 --> 00:05:47,830
+But now the only difference is, if I don't sell my jerseys
+
+120
+00:05:47,830 --> 00:05:51,466
+within that eight week period, I can discount them and I can
+
+121
+00:05:51,466 --> 00:05:53,430
+sell them for $7.00 a jersey.
+
+122
+00:05:53,430 --> 00:05:55,720
+What does this do?
+
+123
+00:05:55,720 --> 00:05:59,420
+Well, I can look at my Cost of Shortage and my Cost of Excess,
+
+124
+00:05:59,420 --> 00:06:02,160
+as we just showed on the previous slide.
+
+125
+00:06:02,160 --> 00:06:05,380
+And it comes out to $13.10 for the Cost of Shortage,
+
+126
+00:06:05,380 --> 00:06:08,270
+and $3.90 for the Cost of Excess.
+
+127
+00:06:08,270 --> 00:06:12,310
+So, my Critical Ratio becomes 0.771.
+
+128
+00:06:12,310 --> 00:06:13,650
+So, what is this saying?
+
+129
+00:06:13,650 --> 00:06:15,870
+This is saying that I should order
+
+130
+00:06:15,870 --> 00:06:20,520
+Q that covers 77.1% of the probability distribution.
+
+131
+00:06:20,520 --> 00:06:23,250
+Notice that my Q is a lot bigger.
+
+132
+00:06:23,250 --> 00:06:26,470
+I can cover more of the demand here.
+
+133
+00:06:26,470 --> 00:06:29,520
+And so I want to select a Q where the probability of x
+
+134
+00:06:29,520 --> 00:06:32,112
+is less than Q is equal to that 0.771.
+
+135
+00:06:32,112 --> 00:06:34,070
+And again, I can solve that with a normal table
+
+136
+00:06:34,070 --> 00:06:35,050
+in the spreadsheet.
+
+137
+00:06:35,050 --> 00:06:36,508
+You might want to look at the table
+
+138
+00:06:36,508 --> 00:06:38,180
+to see if you get the same number.
+
+139
+00:06:38,180 --> 00:06:44,310
+But you end up with a Q* of 40.149, or 40,149 units.
+
+140
+00:06:44,310 --> 00:06:47,490
+This is the Profit-Maximizing Quantity.
+
+141
+00:06:47,490 --> 00:06:49,800
+So, we're using the same principles.
+
+142
+00:06:49,800 --> 00:06:53,390
+All we're doing now is adding in this other term, this discount.
+
+143
+00:06:53,390 --> 00:06:56,050
+And we can find out what the Critical Ratio is.
+
+144
+00:06:56,050 --> 00:06:58,990
+Notice that this is a lot bigger than our previous value, which
+
+145
+00:06:58,990 --> 00:06:59,600
+was what?
+
+146
+00:06:59,600 --> 00:07:02,990
+33,849.
+
+147
+00:07:02,990 --> 00:07:07,290
+By having this discount, this Salvage Value, that means I'm
+
+148
+00:07:07,290 --> 00:07:09,490
+willing to buy a little more.
+
+149
+00:07:09,490 --> 00:07:12,910
+I can buy a lot more because the risk of having too much went
+
+150
+00:07:12,910 --> 00:07:15,360
+way down because of that discount.
+
+151
+00:07:15,360 --> 00:07:17,550
+So, we figured out how to find the Optimal Quantity.
+
+152
+00:07:17,550 --> 00:07:19,610
+What we haven't figured out yet is
+
+153
+00:07:19,610 --> 00:07:21,960
+how do I determine the profitability.
+
+154
+00:07:21,960 --> 00:07:24,100
+And that's what we'll do in the next lesson.
+
+155
+00:07:24,100 --> 00:07:27,600
+So, let's wrap this lesson up, and then do some problems.
+
+156
+00:07:27,600 --> 00:07:29,440
+And then come back and we'll learn
+
+157
+00:07:29,440 --> 00:07:31,210
+how to determine the profitability
+
+158
+00:07:31,210 --> 00:07:32,900
+of these situations.
+
+159
+00:07:32,900 --> 00:07:33,763
+
+

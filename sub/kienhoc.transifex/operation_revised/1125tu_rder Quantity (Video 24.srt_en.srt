@@ -1,0 +1,574 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/ROLT2OsbLVA
+
+1
+00:00:06,078 --> 00:00:09,259
+hello again and welcome back to operations
+management
+
+2
+00:00:09,259 --> 00:00:13,019
+we're continuing with our talk on
+inventory
+
+3
+00:00:13,019 --> 00:00:17,349
+in our last session we did the turtle
+annual cost equation
+
+4
+00:00:17,349 --> 00:00:21,019
+and this one we're going to be looking
+at EOQ
+
+5
+00:00:21,019 --> 00:00:26,559
+the economic order quantity if you
+recall from last session we had that
+
+6
+00:00:26,559 --> 00:00:27,739
+total cost
+
+7
+00:00:27,739 --> 00:00:31,409
+equation and that referred to cost over
+a year
+
+8
+00:00:31,410 --> 00:00:34,750
+EOQ is going to minimize that
+cost
+
+9
+00:00:34,750 --> 00:00:37,960
+so we're going to take that total annual
+cost
+
+10
+00:00:37,960 --> 00:00:41,539
+we're gonna try and find a way to make it
+the smallest
+
+11
+00:00:41,539 --> 00:00:44,619
+amount over a year EOQ
+
+12
+00:00:44,619 --> 00:00:48,878
+is the starting point for inventory
+analysis we use
+
+13
+00:00:48,878 --> 00:00:52,409
+certain assumptions they are not very
+realistic
+
+14
+00:00:52,409 --> 00:00:55,628
+but they are a way to give us a starting
+point
+
+15
+00:00:55,628 --> 00:00:59,729
+so those assumptions include that the
+demand is known
+
+16
+00:00:59,729 --> 00:01:04,919
+its constant which means we never have
+fluctuations
+
+17
+00:01:04,920 --> 00:01:08,319
+we know exactly how much we are going to
+be using
+
+18
+00:01:08,319 --> 00:01:12,510
+at any given time the lead time is known
+and constant
+
+19
+00:01:12,510 --> 00:01:16,299
+which means from the time we place an
+order to the time we get it
+
+20
+00:01:16,299 --> 00:01:19,770
+we know exactly how long it's going to
+take.
+
+21
+00:01:19,769 --> 00:01:22,929
+and that never changes either and when we
+
+22
+00:01:22,930 --> 00:01:26,159
+get the inventory we get it all at once
+
+23
+00:01:26,159 --> 00:01:29,650
+we never get partial orders so there's
+never any problems with it
+
+24
+00:01:29,650 --> 00:01:33,140
+so these are key assumptions with the EU
+Q equation
+
+25
+00:01:33,140 --> 00:01:38,290
+admittedly they're not very realistic
+but it is a starting point for analyzing
+
+26
+00:01:38,290 --> 00:01:39,100
+inventory
+
+27
+00:01:39,099 --> 00:01:43,349
+so when we look at the EOQ model
+
+28
+00:01:43,349 --> 00:01:47,000
+you notice it is a saw-tooth if you take a
+look
+
+29
+00:01:47,000 --> 00:01:50,489
+right up here we have the order
+quantity:
+
+30
+00:01:50,489 --> 00:01:55,188
+Q when we place an order this is the
+amount that we're ordering
+
+31
+00:01:55,188 --> 00:02:00,578
+and that overtime because our our demand
+rate is constant
+
+32
+00:02:00,578 --> 00:02:06,758
+its has a slope down so looking at that
+secondary you can see how there's a very
+
+33
+00:02:06,759 --> 00:02:09,240
+smooth line going from the top
+
+34
+00:02:09,240 --> 00:02:13,149
+point down to 0 which means our
+
+35
+00:02:13,149 --> 00:02:16,800
+average inventory is going to be Q
+over 2
+
+36
+00:02:16,800 --> 00:02:21,480
+we takin the highest amount which is
+the amount we
+
+37
+00:02:21,479 --> 00:02:25,299
+order which is Q our lowest amount is 0
+
+38
+00:02:25,300 --> 00:02:28,390
+and we average 2 of them and that's
+how we get
+
+39
+00:02:28,389 --> 00:02:34,549
+Q over 2 now when we take a look at the
+total cost equation
+
+40
+00:02:34,550 --> 00:02:39,140
+we notice a couple of things one is the
+setup cost which is the
+
+41
+00:02:39,139 --> 00:02:43,589
+ordering cost is a curved line starting
+very high
+
+42
+00:02:43,590 --> 00:02:46,930
+and it flattens out and it gets lower and
+lower
+
+43
+00:02:46,930 --> 00:02:50,230
+that's because we're spreading the cost
+of
+
+44
+00:02:50,229 --> 00:02:54,268
+ordering depending on how many items we
+are ordering at 
+
+45
+00:02:54,269 --> 00:02:57,430
+once if we're only going to order
+
+46
+00:02:57,430 --> 00:03:02,069
+five times a year it's going to cost
+more
+
+47
+00:03:02,068 --> 00:03:05,859
+than if we order three times a year
+
+48
+00:03:05,860 --> 00:03:09,190
+or one time a year so the more times we
+
+49
+00:03:09,189 --> 00:03:12,560
+order the costs go up so if there is more
+
+50
+00:03:12,560 --> 00:03:16,060
+in the order we don't have to orders
+many times
+
+51
+00:03:16,060 --> 00:03:21,680
+so that that's how that curve goes down
+the second line the holding cost
+
+52
+00:03:21,680 --> 00:03:26,510
+well the more we hold on to at any given
+time our cost is going to increase
+
+53
+00:03:26,509 --> 00:03:30,959
+that's why that one is heading upwards
+we bring the two of those together
+
+54
+00:03:30,959 --> 00:03:35,199
+along with the cost to the product
+itself we have a total cost
+
+55
+00:03:35,199 --> 00:03:38,699
+and that is another curve there bringing
+the two together
+
+56
+00:03:38,699 --> 00:03:44,209
+something interesting happens if you
+notice that the lowest point of that
+
+57
+00:03:44,209 --> 00:03:45,689
+total cost curve
+
+58
+00:03:45,689 --> 00:03:49,079
+is at the same point where the ordering
+cost
+
+59
+00:03:49,080 --> 00:03:52,719
+is equal to the holding cost so
+
+60
+00:03:52,719 --> 00:03:57,979
+when that happens we can actually
+calculate that value for Q
+
+61
+00:03:57,979 --> 00:04:01,329
+to find out what that quantity
+
+62
+00:04:01,330 --> 00:04:06,760
+is to minimize the total cost all we
+have to do is set the ordering cost
+
+63
+00:04:06,759 --> 00:04:10,539
+equal to the holding cost and that's
+what we're doing here
+
+64
+00:04:10,539 --> 00:04:14,628
+we take a set-up costs which is the
+ordering costs
+
+65
+00:04:14,628 --> 00:04:18,429
+we set it equal to the annual holding
+cost and
+
+66
+00:04:18,430 --> 00:04:22,199
+we just do some basic algebra to
+determine
+
+67
+00:04:22,199 --> 00:04:25,239
+the quantity now we end up with a
+quantity
+
+68
+00:04:25,238 --> 00:04:28,849
+equalling the square root of 2 
+times
+
+69
+00:04:28,850 --> 00:04:33,120
+R which is your annual demand and
+your throughput rate
+
+70
+00:04:33,120 --> 00:04:37,790
+times S which is your set up cost divided
+a by a holding cost
+
+71
+00:04:37,790 --> 00:04:43,550
+we use asterisk next Q indicate that
+we got this value
+
+72
+00:04:43,550 --> 00:04:48,168
+by using the economic order quantity
+calculation
+
+73
+00:04:48,168 --> 00:04:51,689
+so what does this really mean let's do a
+quick example
+
+74
+00:04:51,689 --> 00:04:55,279
+and you'll see let's say
+
+75
+00:04:55,279 --> 00:05:00,539
+we purchase batteries from a
+supplier for unit cost of ten dollars
+
+76
+00:05:00,540 --> 00:05:05,509
+and we make smoke detectors on average
+we gonna use 54,400
+
+77
+00:05:05,509 --> 00:05:10,360
+batteries each year and every time we
+place an order
+
+78
+00:05:10,360 --> 00:05:14,710
+we have a big ordering cost of a
+thousand dollars
+
+79
+00:05:14,709 --> 00:05:18,359
+whether we order one battery or
+whether we order a hundred batteries
+
+80
+00:05:18,360 --> 00:05:22,189
+or 2 thousand batteries it's still going to be
+a thousand dollars
+
+81
+00:05:22,189 --> 00:05:27,310
+every time we place an order our cost of
+capitalist is 10 percent per year
+
+82
+00:05:27,310 --> 00:05:31,500
+and our cost of holding is seven percent
+of the unit cost per year
+
+83
+00:05:31,500 --> 00:05:34,870
+so now how many battery should be
+purchased
+
+84
+00:05:34,870 --> 00:05:39,459
+at a time so in other words what is your
+quantity when we place that order
+
+85
+00:05:39,459 --> 00:05:42,529
+then also what is your total annual
+ordering cost
+
+86
+00:05:42,529 --> 00:05:46,288
+holding cost and the total cost
+
+87
+00:05:46,288 --> 00:05:50,379
+let's step through this your key
+variables
+
+88
+00:05:50,379 --> 00:05:54,538
+C the cost per unit ten dollars
+
+89
+00:05:54,538 --> 00:05:58,300
+R the annual demand or annual throughput
+rate
+
+90
+00:05:58,300 --> 00:06:01,560
+is fifty four thousand four hundred S
+
+91
+00:06:01,560 --> 00:06:05,889
+our set up cost every time we place that
+order is a thousand dollars
+
+92
+00:06:05,889 --> 00:06:10,019
+and we need H which is the overall
+holding cost
+
+93
+00:06:10,019 --> 00:06:13,639
+so we're gonna take our physical holding
+cost
+
+94
+00:06:13,639 --> 00:06:18,360
+and our cost of capital and multiply it by a
+cost per unit
+
+95
+00:06:18,360 --> 00:06:23,259
+and we get a capital H equalling one
+point seven dollars
+
+96
+00:06:23,259 --> 00:06:26,960
+now let's plug that into the EOQ
+equation
+
+97
+00:06:26,959 --> 00:06:30,180
+there it is we put everything in
+
+98
+00:06:30,180 --> 00:06:33,550
+now we have to square it of 2RS over H
+
+99
+00:06:33,550 --> 00:06:37,009
+and we come up with 8,000 we should
+order
+
+100
+00:06:37,009 --> 00:06:41,160
+8 thousand batteries at a time
+
+101
+00:06:41,160 --> 00:06:45,740
+so what is our total set up cost
+
+102
+00:06:45,740 --> 00:06:50,960
+S times R over Q  $6800
+
+
+103
+00:06:50,959 --> 00:06:54,870
+our total holding costs
+
+104
+00:06:54,870 --> 00:06:58,038
+six thousand eight hundred dollars as
+well
+
+105
+00:06:58,038 --> 00:07:02,300
+which should not be a surprise because
+we calculated
+
+106
+00:07:02,300 --> 00:07:06,870
+the minimum cost at the point where the
+holding cost was
+
+107
+00:07:06,870 --> 00:07:10,240
+equal to the setup cost so those two
+numbers
+
+108
+00:07:10,240 --> 00:07:14,949
+should be the same when we're using the
+economic order quantity
+
+109
+00:07:14,949 --> 00:07:20,848
+now lastly our total annual cost says
+we're going to take our setup costs
+
+110
+00:07:20,848 --> 00:07:25,089
+holding costs and our unit costs
+
+111
+00:07:25,089 --> 00:07:28,109
+and add them all together and we end up
+with
+
+112
+00:07:28,110 --> 00:07:31,620
+$557,600 
+
+113
+00:07:31,620 --> 00:07:35,288
+so that's how we use economic order
+quantity
+
+114
+00:07:35,288 --> 00:07:38,500
+key things to remember our first of all
+
+115
+00:07:38,500 --> 00:07:42,399
+it's an idealized situation we know
+everything
+
+116
+00:07:42,399 --> 00:07:46,620
+demand leadtime we never get partial
+orders
+
+117
+00:07:46,620 --> 00:07:51,000
+and when we calculate the EOQ 
+annual setup cost
+
+118
+00:07:51,000 --> 00:07:54,579
+will equal our annual holding costs
+
+119
+00:07:54,579 --> 00:07:58,620
+now we're gonna make some changes to
+this equation in our next session 
+
+120
+00:07:58,620 --> 00:07:59,160
+I'll see you then
+

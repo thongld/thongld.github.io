@@ -1,0 +1,406 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/FD9o2iz6gq0
+
+1
+00:00:06,948 --> 00:00:08,179
+chào mừng trở lại
+
+2
+00:00:08,179 --> 00:00:12,009
+với hoạt động quản lý chúng ta đang tiếp tục với việc kiểm soát quá trình thống kê
+
+3
+00:00:12,009 --> 00:00:16,388
+và bây giờ hãy xem xét cách mà chúng tôi tạo ra giới hạn kiểm soát cho biểu đồ P và
+
+4
+00:00:16,388 --> 00:00:19,768
+biểu đồ C
+Nếu bạn nhớ lại biểu đồ P và biểu đồ C
+
+5
+00:00:19,768 --> 00:00:23,039
+được dùng để kiểm tra thuộc tính định kỳ
+
+6
+00:00:23,039 --> 00:00:26,600
+có một khiếm khiếp không phải là khiếm khuyết
+
+7
+00:00:26,600 --> 00:00:31,160
+biểu đồ P được dùng để giám sát các phần trăm hoặc phân số
+
+8
+00:00:31,160 --> 00:00:35,010
+của các đơn vị bị lỗi trong một mẫu, vì vậy khi bạn nghĩ về
+
+9
+00:00:35,010 --> 00:00:39,280
+biểu đồ P,hãy nghĩ về phần trăm khiếm khuyết mà chúng ta có,con số tổng
+
+10
+00:00:39,280 --> 00:00:42,390
+khoản mục trong mẫu vật và chúng đang đếm xem có bao nhiêu
+
+11
+00:00:42,390 --> 00:00:45,489
+có lỗi khi mà chúng tôi tạo ra
+
+12
+00:00:45,488 --> 00:00:49,289
+giới hạn trên và dưới quyền kiểm soát
+như chúng tôi đã làm trước khi chúng tôi
+
+13
+00:00:49,289 --> 00:00:49,929
+lấy
+
+14
+00:00:49,929 --> 00:00:54,289
+ý nghĩa và chúng tôi thêm số vào
+độ lệch chuẩn
+
+15
+00:00:54,289 --> 00:00:59,649
+trên trung bình và chúng ta sẽ lấy cái trung bình đó trừ đi con số
+
+16
+00:00:59,649 --> 00:01:02,780
+của tiêu chuẩn độ lệch dưới mức trung bình
+
+17
+00:01:02,780 --> 00:01:07,549
+cho việc thấp hơn giới hạn kiểm soát một việc
+nhớ biểu đồ P chúng ta
+
+18
+00:01:07,549 --> 00:01:10,408
+thật sự phải tính toán độ lệch tiêu chuẩn của
+
+19
+00:01:10,409 --> 00:01:13,439
+và làm việc mà chúng ta cần thiết
+
+20
+00:01:13,438 --> 00:01:16,679
+có nghĩa là phần trăm khiếm khuyết hoặc trung bình phần trăm khiếm khuyết
+
+21
+00:01:16,680 --> 00:01:19,799
+và chúng ta cũng cần kích thước mẫu
+
+22
+00:01:19,799 --> 00:01:23,409
+nên trong trường hợp này nó là hình vuông
+căn bậc hai của thanh p
+
+23
+00:01:23,409 --> 00:01:26,430
+nhân 1 trừ P hơn trong thanh 
+
+24
+00:01:26,430 --> 00:01:30,000
+bây giờ thường chúng ta sử dụng 3 hoặc z
+
+25
+00:01:30,000 --> 00:01:33,549
+bởi vì chúng ta thường sử dụng ba độ lệch tiêu chuẩn ra khỏi bình
+
+26
+00:01:33,549 --> 00:01:36,570
+chúng ta có ví dụ
+
+27
+00:01:36,569 --> 00:01:41,169
+công ty LRDR đang cố gắng để theo dõi số lượng pin của khiếm khuyết mà
+
+28
+00:01:41,170 --> 00:01:41,978
+họ làm ra
+
+29
+00:01:41,978 --> 00:01:45,390
+nó được xác định là trung bình
+phần trăm hiệu quả
+
+30
+00:01:45,390 --> 00:01:49,849
+trong một mẫu hoặc của năm mươi là hai phần trăm
+chúng ta sẽ sử dụng 3 báo hiệu
+
+31
+00:01:49,849 --> 00:01:53,129
+giới hạn kiểm soát và tính toán giới hạn trên và kiếm soát thấp hơn cho
+
+32
+00:01:53,129 --> 00:01:58,699
+biểu đồ P, cho nên việc đầu tiên chúng ta phải làm là chúng ta cần tính toánT
+
+33
+00:01:58,700 --> 00:02:03,040
+độ lệch chuẩn của p chúng ta biết rằng 
+phần trăm khiếm khuyết
+
+34
+00:02:03,040 --> 00:02:06,490
+là hai phần trăm, nghĩa là .02
+
+35
+00:02:06,489 --> 00:02:09,670
+và cỡ mẫu mà chúng tôi được cho là 50
+
+36
+00:02:09,670 --> 00:02:13,378
+và chúng tôi thay thế biểu đồ p
+.02
+
+37
+00:02:13,378 --> 00:02:17,289
+và n là 50 và chúng tôi có thể tính toán là
+
+38
+00:02:17,289 --> 00:02:21,409
+độ lệch chuẩn mẫu cho phần trăm khiếm khuyết
+
+39
+00:02:21,409 --> 00:02:25,359
+từ đó chúng ta có thể tạo và giới hạn kiếm soát thấp hơn
+
+40
+00:02:25,360 --> 00:02:28,690
+biểu đồ p cộng với 3 lần độ lệch tiêu chuẩn
+
+41
+00:02:28,689 --> 00:02:31,919
+biểu đồ p trừ ba lần độ lệch tiêu chuẩn
+
+42
+00:02:31,919 --> 00:02:35,859
+và chúng tôi mức điều khiển giới hạn của chúng tôi là .0398
+
+43
+00:02:35,860 --> 00:02:40,480
+và giới hạn điều khiển thấp của chúng tôi là .0002
+
+44
+00:02:40,479 --> 00:02:43,789
+khi chúng tôi có giới hạn kiềm soát
+
+45
+00:02:43,789 --> 00:02:48,449
+và chúng tôi có biểu đồ giới hạn mà thấp hơn mức giới hạn kiểm soát
+thấp hơn hàng trên
+
+46
+00:02:48,449 --> 00:02:49,089
+ểu đồ
+
+47
+00:02:49,090 --> 00:02:52,700
+và giới hạn trên điều khiển là dòng trên biểu đồ của chúng tôi
+
+48
+00:02:52,699 --> 00:02:57,129
+ngay khi mà dữ liệu chúng tôi làm dấu chúng tôi sẽ thu thập mẫu
+
+49
+00:02:57,129 --> 00:03:01,329
+của dữ liệu tính toán phần trăm khiếm khuyết trong mẫu
+
+50
+00:03:01,329 --> 00:03:05,829
+ngay khi phần trăm khiếm khuyết tụt giảm
+giữa hai giới hạn
+
+51
+00:03:05,829 --> 00:03:09,560
+chúng tôi xem xét quá trình kiểm soát nếu nó tụt giảm
+
+52
+00:03:09,560 --> 00:03:12,818
+bên ngoài giới hạn kiểm soát chúng tôi nói là nó không ở trong vòng kiểm soát
+
+53
+00:03:12,818 --> 00:03:18,979
+và chúng ta bắt đầu tìm kiếm nguyên nhân chuyển nhượng
+biểu đồ C thì hơi khác một chút
+
+54
+00:03:18,979 --> 00:03:22,509
+thay vì dùng phần trăm khiếm khuyết
+thật ra chúng tôi tìm kiếm
+
+55
+00:03:22,509 --> 00:03:25,699
+theo thống kê các khiếm khuyết của mẫu
+
+56
+00:03:25,699 --> 00:03:29,189
+có nghĩa là có thể có nhiều hơn một khiếm khuyết
+
+57
+00:03:29,189 --> 00:03:34,669
+một sản phẩm cụ thể ví dụ cho
+nhìn vào một chiếc xe có thể là lỗ hổng
+
+58
+00:03:34,669 --> 00:03:37,939
+trong sơn có thể có một lỗ hổng trong kinh chắn gió
+
+59
+00:03:37,939 --> 00:03:41,139
+có thể có lỗ hổng ánh sang
+
+60
+00:03:41,139 --> 00:03:44,769
+có thể có 3 lỗ hổng phân biệt và mỗi cái đó
+
+61
+00:03:44,769 --> 00:03:49,269
+đếm về phía biểu đồ C cho nên có thể có nhiều hơn một
+
+62
+00:03:49,269 --> 00:03:56,269
+khuyết điểm từng phần nên chúng ta tính toán 
+giới hạn trên điều khiển bằng cách sử dụng biểu đồ c cộng với
+
+63
+00:03:58,439 --> 00:04:02,719
+z lần căn bậc hai của thanh c và giới hạn kiểm soát thấp hơn
+
+64
+00:04:02,719 --> 00:04:06,169
+của thanh c trừ n lần z thanh c
+
+65
+00:04:06,169 --> 00:04:11,430
+và thường ngược lại với z là ba nên chúng ta có ba độ lệch chuẩn từ
+
+66
+00:04:11,430 --> 00:04:11,959
+nghĩa
+
+67
+00:04:11,959 --> 00:04:15,009
+and c bar is the average number of defects
+
+68
+00:04:15,009 --> 00:04:18,279
+or the mean
+
+69
+00:04:18,279 --> 00:04:20,879
+so here we have another example this
+one
+
+70
+00:04:20,879 --> 00:04:24,870
+is concerned with the number defects in
+painted panels
+
+71
+00:04:24,870 --> 00:04:29,329
+and the average number of defects in a
+sample of 100 is 2
+
+72
+00:04:29,329 --> 00:04:32,800
+the company wants to monitor the process
+we're going to use
+
+73
+00:04:32,800 --> 00:04:37,650
+3 sigma control limits and now we're going to
+calculate the upper and lower control
+
+74
+00:04:37,649 --> 00:04:39,079
+limits for C chart
+
+75
+00:04:39,079 --> 00:04:42,279
+we know the average number of defects
+
+76
+00:04:42,279 --> 00:04:47,669
+2 so that's c bar and then we simply create
+the upper and lower control limits
+
+77
+00:04:47,670 --> 00:04:51,930
+by taking c bar plus three times the
+square root of c bar
+
+78
+00:04:51,930 --> 00:04:55,009
+and c bar minus three times the square
+root of c bar
+
+79
+00:04:55,009 --> 00:04:58,089
+are so we have 6.24
+
+80
+00:04:58,089 --> 00:05:01,929
+is our upper control  limit 
+and negative 2.24 is
+
+81
+00:05:01,930 --> 00:05:04,949
+lower and you can't have a negative
+number of
+
+82
+00:05:04,949 --> 00:05:09,529
+defects so in this case we converted
+that lower control limit
+
+83
+00:05:09,529 --> 00:05:13,949
+to 0 and in fact anytime we have a control
+limit
+
+84
+00:05:13,949 --> 00:05:18,689
+where it's negative and it is possible to
+have a negative number
+
+85
+00:05:18,689 --> 00:05:23,500
+we convert that to 0 that's all there
+is to creating the
+
+86
+00:05:23,500 --> 00:05:26,660
+control limits for C chart and for R
+charts
+
+87
+00:05:26,660 --> 00:05:30,380
+when we use them on a control chart the
+
+88
+00:05:30,379 --> 00:05:34,879
+upper control limit is the upper line the
+lower control limit is the lower line
+
+89
+00:05:34,879 --> 00:05:39,860
+and then we just plotting the data in between
+as long as that data points stays between
+
+90
+00:05:39,860 --> 00:05:42,110
+those lines our process is in control
+
+91
+00:05:42,110 --> 00:05:45,360
+if it falls outside we say it's not in
+control
+
+92
+00:05:45,360 --> 00:05:49,120
+that's it for control charts have a good
+day
+

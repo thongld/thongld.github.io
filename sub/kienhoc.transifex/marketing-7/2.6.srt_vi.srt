@@ -1,0 +1,537 @@
+0
+00:00:00,000 --> 00:00:06,320
+.
+
+1
+00:00:06,320 --> 00:00:11,790
+PAUL: Chà, những bộ phim của BMW thật có sức ảnh hưởng.
+
+2
+00:00:11,790 --> 00:00:15,430
+Chúng làm người ta muốn xem đi xem lại,
+ và tôi đang tưởng tượng
+
+3
+00:00:15,430 --> 00:00:18,310
+ liệu một vài bạn chưa từng xem qua chúng 
+
+4
+00:00:18,310 --> 00:00:19,540
+đã tìm xem toàn bộ series chứ.
+
+5
+00:00:19,540 --> 00:00:21,800
+Có tổng cộng 8 tập.
+
+6
+00:00:21,800 --> 00:00:26,820
+Rất vui, nhưng đúng như Darren đã kể, 
+
+7
+00:00:26,820 --> 00:00:30,090
+có rất nhiều phương thức marketing 
+
+8
+00:00:30,090 --> 00:00:33,620
+đằng sau những bộ phim đó.
+
+9
+00:00:33,620 --> 00:00:40,720
+Điều quan trọng là hiểu được phân khúc thị trường
+
+10
+00:00:40,720 --> 00:00:44,940
+và cách phân khúc thị trường cho phép 
+ta tiếp cận các mục tiêu khác nhau.
+
+11
+00:00:44,940 --> 00:00:47,030
+Tôi muốn các bạn suy xét thế này,
+
+12
+00:00:47,030 --> 00:00:48,970
+ở quy mô là toàn bộ thị trường tiềm năng,
+
+13
+00:00:48,970 --> 00:00:52,760
+có rất nhiều cách để ta có thể chia thị trường
+
+14
+00:00:52,760 --> 00:00:55,730
+thành những phân khúc nhỏ hơn.
+
+15
+00:00:55,730 --> 00:00:58,710
+Sai lầm mọi người thường mắc phải là
+
+16
+00:00:58,710 --> 00:01:01,410
+họ nói, tôi muốn có một nhóm người dùng rộng lớn.
+
+17
+00:01:01,410 --> 00:01:03,330
+Họ muốn một thị trường lớn.
+
+18
+00:01:03,330 --> 00:01:07,790
+Nhưng rất khó và gần như không thể nào
+ đáp ứng mọi nhu cầu của mọi người.
+
+19
+00:01:07,790 --> 00:01:11,040
+Do đó, hãy tìm ra phân khúc thị trường
+
+20
+00:01:11,040 --> 00:01:15,160
+có thể liên kết được với sản phẩm 
+
+21
+00:01:15,160 --> 00:01:18,920
+hoặc dịch vụ của bạn, liên kết với thiết lập định vị 
+
+22
+00:01:18,920 --> 00:01:20,970
+ cùng tuyên bố giá trị bạn đặt ra.
+
+23
+00:01:20,970 --> 00:01:22,390
+Điều đó sẽ được bàn đến trong mô-đun tiếp theo.
+
+24
+00:01:22,390 --> 00:01:24,020
+Hãy chú ý điều đó.
+
+25
+00:01:24,020 --> 00:01:29,800
+Còn bây giờ, ta sẽ cố gắng kết nối giữa phân khúc,
+
+26
+00:01:29,800 --> 00:01:33,680
+đối tượng, lựa chọn phân khúc, và thực hiện định vị.
+
+27
+00:01:33,680 --> 00:01:35,880
+Ta làm thế nào để phù hợp với định vị
+
+28
+00:01:35,880 --> 00:01:39,610
+và tuyên bố giá trị của phân khúc đó?
+
+29
+00:01:39,610 --> 00:01:43,270
+Trong những bài tiếp theo, những thứ này
+ sẽ cùng song hành với nhau.
+
+30
+00:01:43,270 --> 00:01:46,230
+Ở đây, ta đang phân tách chúng,
+
+31
+00:01:46,230 --> 00:01:48,700
+chia chúng về những phần nhỏ để 
+
+32
+00:01:48,700 --> 00:01:54,090
+hiểu cách ta sử dụng chúng
+ và rồi gom chúng về với nhau.
+
+33
+00:01:54,090 --> 00:01:56,410
+Hãy tiếp tục với bải học nào.
+
+34
+00:01:56,410 --> 00:01:58,910
+Bạn sẽ tiếp cận phân khúc như thế nào?
+
+35
+00:01:58,910 --> 00:02:02,430
+Chúng ta đều biết rằng phân chia phân khúc quan trọng.
+
+36
+00:02:02,430 --> 00:02:08,120
+Vậy tiêu chí nào ta cần cân nhắc khi phân chia?
+
+37
+00:02:08,120 --> 00:02:13,210
+Đầu tiên, hãy quan sát bảng dữ liệu nhân khẩu.
+
+38
+00:02:13,210 --> 00:02:16,550
+Đó thường là những thông tin bạn thường thấy
+ trong điều tra dân số.
+
+39
+00:02:16,550 --> 00:02:17,970
+Vậy ta thấy được gì ở đây?
+
+40
+00:02:17,970 --> 00:02:19,380
+Chúng ta nhìn vào tuổi.
+
+41
+00:02:19,380 --> 00:02:21,730
+Chúng ta nhìn vào giới tính.
+
+42
+00:02:21,730 --> 00:02:24,770
+Chúng ta nhìn vào địa lý nơi mọi người sống.
+
+43
+00:02:24,770 --> 00:02:27,630
+Chúng ta nhìn vào quy mô hộ gia đình,...
+
+44
+00:02:27,630 --> 00:02:33,410
+Đó là xét trong mô hình doanh nghiệp - người tiêu dùng, 
+
+45
+00:02:33,410 --> 00:02:36,200
+nhưng nhiều bạn sẽ làm việc trong môi trường 
+doanh nghiệp - doanh nghiệp.
+
+46
+00:02:36,200 --> 00:02:39,555
+Khi đó bạn không quan tâm về tuổi 
+hay giới tính của khách hàng,
+
+47
+00:02:39,555 --> 00:02:41,690
+mà sẽ quan tâm về địa điểm.
+
+48
+00:02:41,690 --> 00:02:44,430
+Bạn sẽ quan tâm đến những phương diện khác
+
+49
+00:02:44,430 --> 00:02:49,310
+trong mô hình này, như quy mô của công ty
+
+50
+00:02:49,310 --> 00:02:55,020
+và lĩnh vực mà họ hoạt động,...
+
+51
+00:02:55,020 --> 00:02:59,530
+Điều tra nhân khẩu cho phép ta phân loại thông tin
+
+52
+00:02:59,530 --> 00:03:04,130
+toàn diện với các mô hình kinh doanh này.
+
+53
+00:03:04,130 --> 00:03:06,280
+Một diểm khởi đầu thuận lợi.
+
+54
+00:03:06,280 --> 00:03:12,430
+Thật ra, nếu bạn xem nó là một bộ lọc 
+thì nó chỉ là một bộ lọc thô thôi.
+
+55
+00:03:12,430 --> 00:03:15,390
+Sẽ có nhiều thứ lọt qua các lỗ hổng.
+
+56
+00:03:15,390 --> 00:03:19,950
+Vì thế tôi muốn bạn cân nhắc xem 
+mình sẽ làm như thế nào
+
+57
+00:03:19,950 --> 00:03:26,190
+để tìm được một bộ lọc khác có thể giúp bạn
+
+58
+00:03:26,190 --> 00:03:30,930
+đến với những phân khúc nhỏ hơn.
+
+59
+00:03:30,930 --> 00:03:37,550
+Vậy hãy lấy ví dụ điển hình mà marketer thường dùng.
+
+60
+00:03:37,550 --> 00:03:40,280
+Đó là một từ khá kì lạ, psychographics,
+
+61
+00:03:40,280 --> 00:03:47,030
+nhưng hãy nghĩ nó như sự kết hợp giữa phần biểu đồ
+
+62
+00:03:47,030 --> 00:03:49,100
+của bảng diều tra nhân khẩu và tâm lý học.
+
+63
+00:03:49,100 --> 00:03:52,870
+Đó là cách tiếp cận phân khúc theo tâm lý.
+
+64
+00:03:52,870 --> 00:04:00,830
+Có rất nhiều cách để tiếp cận psychographics.
+
+65
+00:04:00,830 --> 00:04:05,790
+Một từ viết tắt hay được phổ cập 
+nhờ công ty nghiên cứu thị trường
+
+66
+00:04:05,790 --> 00:04:08,720
+SRI, là VAL.
+
+67
+00:04:08,720 --> 00:04:12,270
+VAL viết tắt cho những từ sau.
+
+68
+00:04:12,270 --> 00:04:17,055
+Giá trị (Value), Thái độ (Attitude), và Cách sống (Lifestyle).
+
+69
+00:04:17,055 --> 00:04:19,579
+
+
+70
+00:04:19,579 --> 00:04:21,329
+Bạn sẽ thấy chúng tôi để ở dưới các bài đọc
+
+71
+00:04:21,329 --> 00:04:27,190
+về psychographics và những tiểu mục nhỏ về giá trị,
+
+72
+00:04:27,190 --> 00:04:28,650
+thái độ, và cách sống.
+
+73
+00:04:28,650 --> 00:04:34,660
+Nào, bạn muốn biết các giá trị của khách hàng đến từ đâu.
+
+74
+00:04:34,660 --> 00:04:39,380
+Có thể là từ nền văn hóa, sự nuôi dạy, 
+thái độ ảnh hưởng từ bạn bè,
+
+75
+00:04:39,380 --> 00:04:41,600
+lối sống, hoạt động của họ.
+
+76
+00:04:41,600 --> 00:04:46,020
+Bạn còn muốn biết xem, kết hợp với số liệu nhân khẩu, 
+chúng sẽ khiến
+
+77
+00:04:46,020 --> 00:04:48,550
+bạn chọn các tiểu phân khúc thế nào.
+
+78
+00:04:48,550 --> 00:04:53,350
+Quay lại ví dụ BMW, ta đã nói về tuổi tác,
+
+79
+00:04:53,350 --> 00:04:56,060
+ta đã nói về thái độ và cách sống.
+
+80
+00:04:56,060 --> 00:04:59,860
+Ta sẽ chia nhỏ chúng ra nhé.
+
+81
+00:04:59,860 --> 00:05:01,230
+Không cần dừng lại ở đó.
+
+82
+00:05:01,230 --> 00:05:04,790
+Hãy tiếp tục thu hẹp phạm vi nếu điều đó mang lại hiệu quả.
+
+83
+00:05:04,790 --> 00:05:09,380
+Một điều ta có thể nhận ra từ ví dụ của BMW
+
+84
+00:05:09,380 --> 00:05:12,700
+là phân khúc giá cả.
+
+85
+00:05:12,700 --> 00:05:18,910
+Có những phân khúc giá cao, trung bình và thấp.
+
+86
+00:05:18,910 --> 00:05:25,255
+Ta nhận ra rằng có một số khách hàng 
+
+87
+00:05:25,255 --> 00:05:30,460
+tự xem xét và chọn lọc dựa trên khả năng 
+và sự bằng lòng
+
+88
+00:05:30,460 --> 00:05:31,690
+chi trả của họ.
+
+89
+00:05:31,690 --> 00:05:36,480
+Cuối cùng, tôi muốn đề cập đến một thứ
+ thường bị bỏ qua,
+
+90
+00:05:36,480 --> 00:05:39,830
+ta gọi đó là phân khúc trung thành.
+
+91
+00:05:39,830 --> 00:05:42,720
+Với phân khúc trung thành, tôi muốn
+
+92
+00:05:42,720 --> 00:05:46,080
+các bạn nghĩ đến khi ta làm việc với ai đó
+
+93
+00:05:46,080 --> 00:05:49,560
+trung thành với nhãn hiệu của công ty.
+
+94
+00:05:49,560 --> 00:05:52,610
+Có nghĩa là, họ là khách hàng thường xuyên.
+
+95
+00:05:52,610 --> 00:05:54,970
+Họ đã mua BMW và năm năm sau
+
+96
+00:05:54,970 --> 00:05:58,080
+họ sẽ mua một cái nữa.
+
+97
+00:05:58,080 --> 00:06:03,250
+Họ có phải là người thay đổi, nhưng lại có lợi cho ta?
+
+98
+00:06:03,250 --> 00:06:08,370
+Ví dụ, họ mua từ chúng ta nhiều hơn
+ từ các nhãn hàng khác,
+
+99
+00:06:08,370 --> 00:06:11,020
+nhưng đôi khi họ cũng thay đổi.
+
+100
+00:06:11,020 --> 00:06:13,520
+Tôi mua 5 cái xe trong vòng 20 năm qua.
+
+101
+00:06:13,520 --> 00:06:17,526
+3 cái của BMW, nhưng đôi khi tôi mua 
+của hãng khác nữa.
+
+102
+00:06:17,526 --> 00:06:20,650
+Hay họ là những người bàng quan với nhãn hàng,
+
+103
+00:06:20,650 --> 00:06:23,140
+ kiểu như không có một hãng yêu thích nào.
+
+104
+00:06:23,140 --> 00:06:28,525
+Người bàng quan với nhãn hàng thường hướng đến giá thấp.
+
+105
+00:06:28,525 --> 00:06:34,420
+Hoặc liệu họ có phải là những người thay đổi
+ mang lại bất lợi không?
+
+106
+00:06:34,420 --> 00:06:39,690
+Ví như họ rất có thể mua hàng
+ của một nhãn hàng đối thủ.
+
+107
+00:06:39,690 --> 00:06:42,530
+Họ có trung thành với nhãn hàng khác?
+
+108
+00:06:42,530 --> 00:06:43,960
+Họ có thể trung thành với một cái tên khác chứ.
+
+109
+00:06:43,960 --> 00:06:46,290
+Chúng ta sẽ phải thuyết phục họ thay đổi.
+
+110
+00:06:46,290 --> 00:06:49,180
+Ví dụ là họ rất thích mua xe Audi 
+
+111
+00:06:49,180 --> 00:06:52,780
+do đó họ không muốn sở hữu xe BMW chẳng hạn.
+
+112
+00:06:52,780 --> 00:06:56,030
+Sau hết, yếu tố thường bị bỏ qua,
+
+113
+00:06:56,030 --> 00:07:02,300
+ và cũng là đối tượng mà BMW chú trọng,
+
+114
+00:07:02,300 --> 00:07:04,810
+là người dùng mới.
+
+115
+00:07:04,810 --> 00:07:06,890
+Tôi đã viết một loạt các từ viết tắt ra đây
+
+116
+00:07:06,890 --> 00:07:11,210
+để dùng cho tiện.
+
+117
+00:07:11,210 --> 00:07:13,850
+Nhưng bạn đã nghe tôi nói chúng viết tắt cho cái gì rồi,
+
+118
+00:07:13,850 --> 00:07:17,460
+bạn cũng có thể xem phần bản ghi kèm theo video
+
+119
+00:07:17,460 --> 00:07:19,880
+để nhớ kĩ hơn.
+
+120
+00:07:19,880 --> 00:07:22,440
+Nào hãy tóm tắt lại nhé.
+
+121
+00:07:22,440 --> 00:07:25,860
+Có rất nhiều cách để chúng ta tiếp cận phân khúc.
+
+122
+00:07:25,860 --> 00:07:27,980
+Không cần phải làm phức tạp nó lên đâu.
+
+123
+00:07:27,980 --> 00:07:30,660
+Không phải là nhiều hơn thì sẽ tốt hơn.
+
+124
+00:07:30,660 --> 00:07:34,480
+Bạn nên thử kết hợp các kĩ thuật
+ phân khúc khác nhau
+
+125
+00:07:34,480 --> 00:07:38,320
+để giúp bạn thu hẹp
+
+126
+00:07:38,320 --> 00:07:43,190
+một phần thị trường tiềm năng, 
+nhằm biểu hiện tốt hơn dối thủ
+
+127
+00:07:43,190 --> 00:07:47,990
+và khiến công việc kinh doanh thuận lợi hơn.
+
+128
+00:07:47,990 --> 00:07:55,150
+
+

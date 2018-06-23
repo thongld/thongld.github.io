@@ -1,0 +1,740 @@
+1
+00:00:04,808 --> 00:00:09,750
+https://youtu.be/sFam50PtXcM
+We will talk about three things for
+a zero coupon bond.
+
+2
+00:00:09,750 --> 00:00:14,721
+The face value, because there's no coupon,
+the interest rate
+
+3
+00:00:14,721 --> 00:00:19,518
+5%, in the previous example,
+and then we figured out price.
+
+4
+00:00:19,518 --> 00:00:23,537
+As I said,
+if Time Value of Money is positive, and
+
+5
+00:00:23,537 --> 00:00:29,955
+another cool thing about treasury bills
+like a zero-coupon bond, there are so
+
+6
+00:00:29,955 --> 00:00:36,910
+many cool things about it, is that, it is
+the most fundamental security out there.
+
+7
+00:00:36,910 --> 00:00:38,290
+In other words,
+
+8
+00:00:38,290 --> 00:00:43,339
+if you hold it till maturity,
+you are going to get $100,000, why?
+
+9
+00:00:43,340 --> 00:00:45,680
+Because as we'll see later,
+
+10
+00:00:45,680 --> 00:00:50,140
+we believe that any other entity
+except the government will pay up.
+
+11
+00:00:50,140 --> 00:00:54,570
+The governments are unique in many
+ways that they tend not to default.
+
+12
+00:00:54,570 --> 00:01:01,90
+Having said that, I have to be careful,
+because default can happen to anybody.
+
+13
+00:01:01,90 --> 00:01:05,250
+But if you were to ask anybody which
+is the safest security in the world,
+
+14
+00:01:05,250 --> 00:01:10,270
+they'd probably say a zero coupon bond
+because if you hold it till maturity,
+
+15
+00:01:10,270 --> 00:01:13,339
+you will get the money
+that you were promised.
+
+16
+00:01:13,340 --> 00:01:17,830
+Of course, there's inflation risk, and
+there are instruments to take care of
+
+17
+00:01:17,830 --> 00:01:22,920
+that, but
+let's stick with the basic security.
+
+18
+00:01:22,920 --> 00:01:24,720
+So, what is yield to maturity?
+
+19
+00:01:24,720 --> 00:01:26,210
+Remember there are three things.
+
+20
+00:01:26,210 --> 00:01:34,210
+One is the face value, the second is
+the price, the third is, built in,
+
+21
+00:01:34,210 --> 00:01:38,250
+between the price and the face value,
+is something called yield to maturity.
+
+22
+00:01:38,250 --> 00:01:42,984
+So let's talk about it a sec,
+and we'll see a lot
+
+23
+00:01:42,984 --> 00:01:47,539
+in the real world about yield to maturity.
+
+24
+00:01:47,540 --> 00:01:50,310
+And therefore I want to capture it.
+
+25
+00:01:50,310 --> 00:01:55,300
+The return built into the pricing of
+a bond is called yield to maturity and
+
+26
+00:01:55,300 --> 00:01:57,820
+so let's think about it.
+
+27
+00:01:57,820 --> 00:02:00,913
+And in an example,
+suppose for simplicity,
+
+28
+00:02:00,913 --> 00:02:06,710
+we have a 5-year zero-coupon bond,
+and the simplicity is the following.
+
+29
+00:02:06,710 --> 00:02:10,639
+Compounding is happening every year,
+not every six months.
+
+30
+00:02:10,639 --> 00:02:15,679
+We'll change that in a second,
+we'll go back and forth on that small issue.
+
+31
+00:02:15,680 --> 00:02:16,750
+But fully agree,
+
+32
+00:02:16,750 --> 00:02:21,300
+that is nothing compared to
+the complexity we just did in module two.
+
+33
+00:02:21,300 --> 00:02:24,490
+So for now, five years means five years.
+
+34
+00:02:24,490 --> 00:02:25,980
+Five years means five periods.
+
+35
+00:02:27,100 --> 00:02:31,555
+If you look up it's a zero coupon bond
+that the face value of $100,000 and
+
+36
+00:02:31,555 --> 00:02:35,417
+the current price is $74,726.
+
+37
+00:02:35,417 --> 00:02:37,430
+So what happened?
+
+38
+00:02:37,430 --> 00:02:43,385
+So imagine, there is a auctioneer,
+I love that, saying, I'm the government,
+
+39
+00:02:43,385 --> 00:02:48,484
+I'm promising to pay you back $100,000,
+so people bid with each other and
+
+40
+00:02:48,485 --> 00:02:53,855
+go back and forth and they decide that
+the price is 74,726, and it clears at that.
+
+41
+00:02:56,985 --> 00:03:00,610
+That clearing price also determines
+
+42
+00:03:00,610 --> 00:03:04,170
+the yield to maturity built into the bond,
+okay?
+
+43
+00:03:04,170 --> 00:03:07,640
+So that's what we're
+trying to do right now.
+
+44
+00:03:07,640 --> 00:03:12,260
+So let's draw a timeline as always and
+try to solve the problem.
+
+45
+00:03:12,260 --> 00:03:17,870
+And I'll tell you how to do
+it using a function in Excel.
+
+46
+00:03:19,80 --> 00:03:21,80
+I'm looking down to get hold of the pen.
+
+47
+00:03:22,190 --> 00:03:27,671
+Okay so you have five years, and
+we are assuming five distinct
+
+48
+00:03:27,671 --> 00:03:31,690
+compounding intervals.
+
+49
+00:03:31,690 --> 00:03:34,656
+And you're going to be
+paid 100,000 over here.
+
+50
+00:03:37,898 --> 00:03:40,399
+This is in your... think about it,
+what will it be?
+
+51
+00:03:40,399 --> 00:03:41,898
+Future Value or Present Value?
+
+52
+00:03:41,898 --> 00:03:43,999
+It'll be Future Value.
+
+53
+00:03:43,999 --> 00:03:48,385
+We also know the PV and
+
+54
+00:03:48,385 --> 00:03:55,420
+it is $74,726, okay?
+
+55
+00:03:55,420 --> 00:03:59,780
+So this is what we know, and
+I'm not putting commas simply because I'm
+
+56
+00:03:59,780 --> 00:04:04,120
+trying to think ahead, and
+I know I don't put commas in Excel.
+
+57
+00:04:04,120 --> 00:04:05,310
+How much coupon?
+
+58
+00:04:05,310 --> 00:04:06,166
+Coupon is zero.
+
+59
+00:04:06,166 --> 00:04:09,820
+It's a zero-coupon bond.
+
+60
+00:04:09,820 --> 00:04:14,245
+So, the question here is,
+what is the per year rate of return
+
+61
+00:04:14,245 --> 00:04:19,160
+built-into it, if I hold
+the bond till maturity.
+
+62
+00:04:19,160 --> 00:04:24,370
+What is the rate of return built into
+it if I hold the bond till maturity?
+
+63
+00:04:24,370 --> 00:04:25,552
+So I know this.
+
+64
+00:04:25,552 --> 00:04:32,834
+I know that 74,726, I put a comma,
+
+65
+00:04:32,834 --> 00:04:39,104
+is equal to 100,000/1+,
+
+66
+00:04:39,104 --> 00:04:44,768
+I'll call it yield to maturity,
+
+67
+00:04:46,185 --> 00:04:48,440
+power five.
+
+68
+00:04:48,440 --> 00:04:50,80
+Remember what we are trying to calculate.
+
+69
+00:04:50,80 --> 00:04:56,78
+We're trying to calculate that rate of
+return that's built into the bond pricing.
+
+70
+00:04:56,78 --> 00:04:57,558
+Remembering what?
+
+71
+00:04:57,558 --> 00:04:59,200
+Two important things.
+
+72
+00:04:59,200 --> 00:05:03,380
+One is that I'm going to hold till maturity,
+yield to maturity.
+
+73
+00:05:03,380 --> 00:05:06,40
+The second is what's
+the compounding interval?
+
+74
+00:05:06,40 --> 00:05:09,40
+By the nature of the formula
+that I had wrote,
+
+75
+00:05:09,40 --> 00:05:11,300
+what do you think is
+the compounding interval?
+
+76
+00:05:11,300 --> 00:05:15,10
+The compounding interval is a year.
+
+77
+00:05:15,10 --> 00:05:17,510
+As I said, I'll change that in a second.
+
+78
+00:05:17,510 --> 00:05:22,890
+Now if you look at the five, that creates
+the problem because it's raised to power
+
+79
+00:05:24,10 --> 00:05:31,250
+five because of compounding, and we are
+quoting a number that's on a yearly basis.
+
+80
+00:05:31,250 --> 00:05:35,610
+So now you have problem because
+it's a one equation, one unknown.
+
+81
+00:05:35,610 --> 00:05:38,660
+But raise to power five is very,
+very tough to figure out.
+
+82
+00:05:40,170 --> 00:05:44,10
+Turns out that there's another name for
+yield to maturity, we'll do later.
+
+83
+00:05:44,10 --> 00:05:49,610
+It's called internal rate of return built
+into this, which makes sense again, right?
+
+84
+00:05:49,610 --> 00:05:51,800
+Internal to the cash flows.
+
+85
+00:05:51,800 --> 00:05:57,650
+So let's try to do it using Excel,
+and I'm going to do that with you.
+
+86
+00:05:57,650 --> 00:06:01,984
+But I'll introduce a function,
+and that function,
+
+87
+00:06:01,985 --> 00:06:07,876
+if you think about is, and look up,
+please look up a function called rate.
+
+88
+00:06:13,48 --> 00:06:16,470
+Say =RATE(
+
+89
+00:06:17,500 --> 00:06:22,370
+And if you open parentheses, you will
+see the following symbols jump at you.
+
+90
+00:06:22,370 --> 00:06:24,730
+The first one won't be R.
+
+91
+00:06:26,190 --> 00:06:26,780
+Why?
+
+92
+00:06:26,780 --> 00:06:30,849
+Because you're figuring out R, right? the reverse, so
+this is the slight twist.
+
+93
+00:06:30,850 --> 00:06:35,180
+The first one will be number of and
+I'm going to write it as n.
+
+94
+00:06:36,690 --> 00:06:39,700
+The second number that
+will jump at you is PMT.
+
+95
+00:06:42,100 --> 00:06:45,80
+The third number that
+will jump at you is PV.
+
+96
+00:06:46,440 --> 00:06:52,678
+And the fourth, you'll see (FV).
+
+97
+00:06:52,678 --> 00:06:54,938
+And what have I done to the FV?
+
+98
+00:06:54,938 --> 00:06:57,238
+I've put it in parenthesis.
+
+99
+00:06:57,238 --> 00:07:02,273
+Now, the key here is, that both PV and
+FV can't be positive,
+
+100
+00:07:02,273 --> 00:07:07,930
+because if they are,
+you're assuming you have a money machine.
+
+101
+00:07:07,930 --> 00:07:10,430
+You're getting money, you're getting
+money, you're getting money.
+
+102
+00:07:10,430 --> 00:07:14,10
+One of them has to be negative in
+order to figure out rate of return.
+
+103
+00:07:14,10 --> 00:07:14,950
+So be very careful.
+
+104
+00:07:16,60 --> 00:07:17,380
+What is N?
+
+105
+00:07:17,380 --> 00:07:20,520
+N is the number of periods,
+so let's figure it out.
+
+106
+00:07:20,520 --> 00:07:21,933
+How much will you put?
+
+107
+00:07:21,933 --> 00:07:24,528
+5, then the comma?
+
+108
+00:07:24,528 --> 00:07:26,308
+How much will you put for PMT?
+
+109
+00:07:29,768 --> 00:07:33,277
+Because it's a zero-coupon bond.
+
+110
+00:07:33,278 --> 00:07:35,248
+How much will you put for PV?
+
+111
+00:07:35,248 --> 00:07:38,65
+We know the number, and I'm looking here.
+
+112
+00:07:38,65 --> 00:07:39,265
+It's 74,726
+
+113
+00:07:42,54 --> 00:07:46,722
+but I've put in a positive number, so
+
+114
+00:07:46,723 --> 00:07:49,723
+what does the FV have to be?
+
+115
+00:07:49,723 --> 00:07:55,212
+Negative, so negative is -100,000,
+
+116
+00:07:55,212 --> 00:08:00,152
+you know? I was going to put a parenthesis,
+but...
+
+117
+00:08:00,152 --> 00:08:08,80
+So, this what I'll do, for each number, Right?
+
+118
+00:08:08,80 --> 00:08:11,407
+Match it and when you press enter,
+what will you find?
+
+119
+00:08:11,408 --> 00:08:20,469
+You'll find 0.06 or 6%.
+
+120
+00:08:20,469 --> 00:08:22,301
+You'll find this, okay?
+
+121
+00:08:22,301 --> 00:08:27,39
+So, very easy to execute, but
+
+122
+00:08:27,40 --> 00:08:32,770
+if you have Excel and
+the culprit here is the five.
+
+123
+00:08:32,770 --> 00:08:37,289
+And imagine,
+this could be actually greater than five,
+
+124
+00:08:37,289 --> 00:08:42,439
+can be in fractional terms, and
+let's talk, do a real world twist.
+
+125
+00:08:42,440 --> 00:08:43,918
+What do I mean by that?
+
+126
+00:08:43,918 --> 00:08:46,598
+Typically the compounding interval.
+
+127
+00:08:51,516 --> 00:08:59,478
+Interval is determined, is six months.
+
+128
+00:08:59,478 --> 00:09:01,218
+What do I mean by that?
+
+129
+00:09:01,218 --> 00:09:04,836
+Is built into all pricing
+of government bonds,
+
+130
+00:09:04,836 --> 00:09:08,440
+the interval for
+compounding is six months.
+
+131
+00:09:08,440 --> 00:09:11,650
+So when we go to a government
+bond that pays coupon,
+
+132
+00:09:11,650 --> 00:09:15,209
+it pays coupon every six months.
+
+133
+00:09:15,210 --> 00:09:19,740
+That is just a technicality that will make
+your life a little bit miserable, but
+
+134
+00:09:19,740 --> 00:09:22,20
+not too miserable, right?
+
+135
+00:09:22,20 --> 00:09:24,150
+So what do I have to do here?
+
+136
+00:09:24,150 --> 00:09:27,590
+As soon as I know the compounding
+interval is six months,
+
+137
+00:09:27,590 --> 00:09:32,438
+I will do five years.
+
+138
+00:09:32,438 --> 00:09:36,560
+I'll change it to 10 periods.
+
+139
+00:09:39,470 --> 00:09:42,920
+And that's a real world twist I want
+you to think about, okay? And
+
+140
+00:09:42,920 --> 00:09:44,860
+when you are doing it in real time data.
+
+141
+00:09:44,860 --> 00:09:48,990
+And at the end of this module, we'll
+go to actually finance.yahoo.com, and
+
+142
+00:09:48,990 --> 00:09:54,510
+I'll do that even for stocks to show
+you how common all of this is and
+
+143
+00:09:54,510 --> 00:09:56,110
+across the world you can do this.
+
+144
+00:09:56,110 --> 00:09:59,110
+So I'll replace this by 10.
+
+145
+00:09:59,110 --> 00:10:06,40
+So I'll do, rate 10,
+comma, coupon's are zero.
+
+146
+00:10:06,40 --> 00:10:11,219
+Suppose the price is still the same, which
+it won't be, but suppose that's the price.
+
+147
+00:10:11,220 --> 00:10:15,970
+But we are making it realistic,
+-100,000.
+
+148
+00:10:15,970 --> 00:10:21,390
+Quick question, what will this number be?
+
+149
+00:10:21,390 --> 00:10:23,540
+And this is a quiz for you.
+
+150
+00:10:23,540 --> 00:10:25,10
+Think about it.
+
+151
+00:10:25,10 --> 00:10:26,790
+Let me ask you the following.
+
+152
+00:10:26,790 --> 00:10:29,719
+Most people will be inclined to take 6%,
+
+153
+00:10:29,720 --> 00:10:34,420
+which they've already calculated,
+and divide by 2.
+
+154
+00:10:34,420 --> 00:10:40,189
+That answer can't be right
+because of? Compounding.
+
+155
+00:10:40,190 --> 00:10:43,930
+So the answer is,
+because interest earns interest,
+
+156
+00:10:43,930 --> 00:10:48,178
+the number will be less than
+half of what we've calculated.
+
+157
+00:10:48,178 --> 00:10:55,515
+And I think it'll turn out to be 2.96%.
+
+158
+00:10:55,515 --> 00:10:57,630
+One last comment.
+
+159
+00:10:57,630 --> 00:11:02,10
+If and when we see payment,
+which is coupon,
+
+160
+00:11:02,10 --> 00:11:08,740
+we will also divide the coupon by two,
+because the coupons are stated annually.
+
+161
+00:11:08,740 --> 00:11:11,170
+And so, when you take a coupon, and
+
+162
+00:11:11,170 --> 00:11:15,790
+it's being split up every six months,
+we'll have to divide that by two.
+
+163
+00:11:15,790 --> 00:11:17,160
+More on that later.
+

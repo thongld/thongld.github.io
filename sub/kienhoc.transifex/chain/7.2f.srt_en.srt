@@ -1,0 +1,344 @@
+0
+00:00:00,000 --> 00:00:00,850
+https://youtu.be/N_Hq56O9bsk
+
+1
+00:00:00,850 --> 00:00:03,050
+So what are the key points from this lesson?
+
+2
+00:00:03,050 --> 00:00:04,530
+Well, there are two of them.
+
+3
+00:00:04,530 --> 00:00:06,390
+And the first one is the whole idea
+
+4
+00:00:06,390 --> 00:00:09,220
+of being able to calculate the expected profitability.
+
+5
+00:00:09,220 --> 00:00:11,630
+And it all rests upon a couple concepts.
+
+6
+00:00:11,630 --> 00:00:14,690
+The first is that we can calculate the expected units
+
+7
+00:00:14,690 --> 00:00:16,480
+that we're going to be able to sell.
+
+8
+00:00:16,480 --> 00:00:19,800
+And that's calculated by looking at the expected demand
+
+9
+00:00:19,800 --> 00:00:22,600
+and subtracting out the expected units short.
+
+10
+00:00:22,600 --> 00:00:24,720
+And we use that same equation when
+
+11
+00:00:24,720 --> 00:00:27,350
+we determine the number of units that we expect
+
+12
+00:00:27,350 --> 00:00:32,400
+to be sold at a Salvage Value if we allow a Salvage Value g.
+
+13
+00:00:32,400 --> 00:00:34,540
+And the second thing is kind of tied to this.
+
+14
+00:00:34,540 --> 00:00:37,570
+And that's the idea of the whole expected units short.
+
+15
+00:00:37,570 --> 00:00:39,760
+It's usually a new concept to students,
+
+16
+00:00:39,760 --> 00:00:41,500
+and it's a hard one to get used to.
+
+17
+00:00:41,500 --> 00:00:43,124
+So you should work through the problems
+
+18
+00:00:43,124 --> 00:00:45,250
+to make sure you get a really good understanding.
+
+19
+00:00:45,250 --> 00:00:48,810
+And the big thing that I think you take away is that the Loss
+
+20
+00:00:48,810 --> 00:00:51,250
+function is -- it's simply an expectation.
+
+21
+00:00:51,250 --> 00:00:53,870
+You're finding an expected value where there's --
+
+22
+00:00:53,870 --> 00:00:57,090
+it's a discrete case or a continuous case --
+
+23
+00:00:57,090 --> 00:01:01,330
+and you can tabulate the loss function for any distribution.
+
+24
+00:01:01,330 --> 00:01:05,160
+And what we did is we tabulated it for the Normal distribution.
+
+25
+00:01:05,160 --> 00:01:07,600
+And so we found the Unit Normal Loss
+
+26
+00:01:07,600 --> 00:01:09,920
+function is g_k, which we will use
+
+27
+00:01:09,920 --> 00:01:12,620
+a lot of in future lectures, and you
+
+28
+00:01:12,620 --> 00:01:14,940
+can calculate it using the table,
+
+29
+00:01:14,940 --> 00:01:16,990
+or you can use a spreadsheet.
+
+30
+00:01:16,990 --> 00:01:19,110
+So those are the two big key points,
+
+31
+00:01:19,110 --> 00:01:21,180
+but there's some even bigger takeaways
+
+32
+00:01:21,180 --> 00:01:23,190
+that you might not have noticed.
+
+33
+00:01:23,190 --> 00:01:25,750
+So what I have here is the demand distribution
+
+34
+00:01:25,750 --> 00:01:28,930
+for our jerseys and let's take the case
+
+35
+00:01:28,930 --> 00:01:35,300
+where we allowed a Salvage Value of $7 per jersey per unit.
+
+36
+00:01:35,300 --> 00:01:41,150
+And I found that my Q* here was equal to, if I'm not mistaken,
+
+37
+00:01:41,150 --> 00:01:45,530
+40,149.
+
+38
+00:01:45,530 --> 00:01:49,810
+So here's my demand distribution and my expected value
+
+39
+00:01:49,810 --> 00:01:51,740
+is 32,000 jerseys.
+
+40
+00:01:51,740 --> 00:01:54,120
+And we ordered just over 40,000.
+
+41
+00:01:54,120 --> 00:01:56,120
+So let me just draw that up.
+
+42
+00:01:56,120 --> 00:01:59,970
+This was our Q* for the case 2 that we solved.
+
+43
+00:01:59,970 --> 00:02:04,440
+And so what I can say here, is that for any demand that is
+
+44
+00:02:04,440 --> 00:02:11,500
+less than Q*, this is when the probability of my demand is
+
+45
+00:02:11,500 --> 00:02:17,460
+less than Q, any time this happens, I am in stock.
+
+46
+00:02:17,460 --> 00:02:21,110
+I have enough jerseys for the expected demand.
+
+47
+00:02:21,110 --> 00:02:23,150
+I'm probably not going to run out.
+
+48
+00:02:23,150 --> 00:02:27,640
+Now, to the right, when the demand is higher than Q* ,
+
+49
+00:02:27,640 --> 00:02:32,580
+this is where the probability of my demand is greater than Q.
+
+50
+00:02:32,580 --> 00:02:37,090
+And here, this is where I am stocked out.
+
+51
+00:02:37,090 --> 00:02:39,360
+I will have a stockout.
+
+52
+00:02:39,360 --> 00:02:42,265
+And so we've calculated this, but thinking about it
+
+53
+00:02:42,265 --> 00:02:44,620
+a little more, what we've actually figured out
+
+54
+00:02:44,620 --> 00:02:46,920
+is how frequently this will happen.
+
+55
+00:02:46,920 --> 00:02:49,340
+Because remember, to figure this out,
+
+56
+00:02:49,340 --> 00:02:53,340
+the probability that the demand is less than Q, what is that?
+
+57
+00:02:53,340 --> 00:02:55,820
+That's the Critical Ratio that we determined.
+
+58
+00:02:55,820 --> 00:03:01,380
+And that is the area under this part of the probability
+
+59
+00:03:01,380 --> 00:03:03,000
+distribution.
+
+60
+00:03:03,000 --> 00:03:08,260
+So we know that this was equal to 77%
+
+61
+00:03:08,260 --> 00:03:10,570
+because that was what our Critical Ratio was.
+
+62
+00:03:10,570 --> 00:03:13,770
+So we're saying that 77% of the time, I'll
+
+63
+00:03:13,770 --> 00:03:15,660
+have enough inventory.
+
+64
+00:03:15,660 --> 00:03:21,890
+What this tells us conversely, on this side of the curve,
+
+65
+00:03:21,890 --> 00:03:26,890
+this is the probability that I'm going to stock out.
+
+66
+00:03:26,890 --> 00:03:31,570
+And it's going to be equal to 1 minus this Critical Ratio
+
+67
+00:03:31,570 --> 00:03:37,050
+or the probability that I don't, so 1 - 0.77 in this case.
+
+68
+00:03:37,050 --> 00:03:40,020
+So it's 23%.
+
+69
+00:03:40,020 --> 00:03:48,350
+So by picking a Q* of 40,149, this is saying that 77%
+
+70
+00:03:48,350 --> 00:03:50,840
+of the time I'll have enough inventory.
+
+71
+00:03:50,840 --> 00:03:54,770
+But 23% of the time, I will stock out.
+
+72
+00:03:54,770 --> 00:03:57,520
+How many units will I expect to stock out?
+
+73
+00:03:57,520 --> 00:03:59,600
+That's the expected units short.
+
+74
+00:03:59,600 --> 00:04:04,550
+So what we've done is calculated two levels of service,
+
+75
+00:04:04,550 --> 00:04:06,310
+and we're going to be using these
+
+76
+00:04:06,310 --> 00:04:08,240
+in all the other inventory models that we
+
+77
+00:04:08,240 --> 00:04:10,430
+create in future lectures.
+
+78
+00:04:10,430 --> 00:04:12,530
+These are the two big takeaways --
+
+79
+00:04:12,530 --> 00:04:16,490
+the idea that we can now calculate the Level of Service,
+
+80
+00:04:16,490 --> 00:04:20,740
+both in terms of the probability of stocking out at all,
+
+81
+00:04:20,740 --> 00:04:23,030
+and then the expected units, number of units,
+
+82
+00:04:23,030 --> 00:04:24,440
+that I'm going to stock out.
+
+83
+00:04:24,440 --> 00:04:26,014
+OK, so that's it for this lecture.
+
+84
+00:04:26,014 --> 00:04:28,180
+If you have any questions, comments, or suggestions,
+
+85
+00:04:28,180 --> 00:04:31,250
+I encourage you to use the discussion.
+

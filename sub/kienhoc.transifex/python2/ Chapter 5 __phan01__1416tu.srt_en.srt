@@ -1,0 +1,838 @@
+1
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/6KgArgGi6Mk
+
+2
+00:00:00,500 --> 00:00:03,680
+Hello, and welcome to chapter
+five, loops and iteration.
+
+3
+00:00:03,680 --> 00:00:06,830
+As always, this lecture is
+copyright Creative Commons
+
+4
+00:00:06,830 --> 00:00:09,460
+attribution, including
+the audio, and the video,
+
+5
+00:00:09,460 --> 00:00:12,620
+and the slides,
+and the book, even.
+
+6
+00:00:12,620 --> 00:00:18,770
+So now we're getting to
+our fourth basic pattern.
+
+7
+00:00:18,770 --> 00:00:20,710
+We've talked about
+sequential, where
+
+8
+00:00:20,710 --> 00:00:22,180
+steps happen one after another.
+
+9
+00:00:22,180 --> 00:00:24,596
+We've talked about conditional,
+where steps may or may not
+
+10
+00:00:24,596 --> 00:00:25,096
+happen.
+
+11
+00:00:25,096 --> 00:00:27,762
+In chapter four, we talked about
+the store and retrieve pattern,
+
+12
+00:00:27,762 --> 00:00:30,150
+and now we're going to talk
+about the looping pattern.
+
+13
+00:00:30,150 --> 00:00:33,220
+And the looping pattern is the
+last of our really foundational
+
+14
+00:00:33,220 --> 00:00:33,720
+ones.
+
+15
+00:00:33,720 --> 00:00:35,960
+And it potentially is
+the most important one,
+
+16
+00:00:35,960 --> 00:00:39,920
+because it's the thing that
+allows us to get computers
+
+17
+00:00:39,920 --> 00:00:43,560
+to do lots of things that,
+say, humans might get tired of,
+
+18
+00:00:43,560 --> 00:00:45,750
+but computers don't tire of.
+
+19
+00:00:45,750 --> 00:00:49,970
+And so after this,
+we'll start becoming
+
+20
+00:00:49,970 --> 00:00:52,710
+a little more skilled in the
+basic language capabilities.
+
+21
+00:00:52,710 --> 00:00:56,120
+We'll talk about strings, and
+then start talking about files,
+
+22
+00:00:56,120 --> 00:00:58,890
+and start doing some real work
+after we get done with this.
+
+23
+00:00:58,890 --> 00:01:01,700
+So bear with us, it's
+going to be a while,
+
+24
+00:01:01,700 --> 00:01:04,319
+but we'll get there.
+
+25
+00:01:04,319 --> 00:01:07,070
+So welcome to repeated steps.
+
+26
+00:01:07,070 --> 00:01:12,130
+This is the example that I had
+in the first lecture, chapter
+
+27
+00:01:12,130 --> 00:01:13,180
+one.
+
+28
+00:01:13,180 --> 00:01:15,360
+And the basic idea,
+just to review,
+
+29
+00:01:15,360 --> 00:01:18,270
+is that you have
+this while keyword.
+
+30
+00:01:18,270 --> 00:01:21,370
+The while keyword functions
+like an if in that it implicitly
+
+31
+00:01:21,370 --> 00:01:23,860
+has a decision
+that's going to make.
+
+32
+00:01:23,860 --> 00:01:27,630
+And it's either going to do
+the code in the indented block
+
+33
+00:01:27,630 --> 00:01:30,060
+or or skip it, basically.
+
+34
+00:01:30,060 --> 00:01:33,030
+So you either do
+it, or you skip it.
+
+35
+00:01:33,030 --> 00:01:34,920
+The difference between
+the while and the if
+
+36
+00:01:34,920 --> 00:01:38,920
+is that it's going to do it many
+times as long as this question
+
+37
+00:01:38,920 --> 00:01:42,500
+that we have remains true.
+
+38
+00:01:42,500 --> 00:01:46,060
+And so in this case, n is 5.
+
+39
+00:01:46,060 --> 00:01:48,160
+While n greater than zero,
+functions like an if.
+
+40
+00:01:48,160 --> 00:01:49,670
+So yes, it's going to run it.
+
+41
+00:01:49,670 --> 00:01:53,000
+Prints out 5, subtracts
+one, so it's four.
+
+42
+00:01:53,000 --> 00:01:56,822
+Goes back up and asks
+the question again.
+
+43
+00:01:56,822 --> 00:01:58,030
+Is n still greater than zero?
+
+44
+00:01:58,030 --> 00:02:00,880
+Well, since it's four,
+yes, we'll continue on.
+
+45
+00:02:00,880 --> 00:02:03,400
+Out comes four, then
+n gets subtracted.
+
+46
+00:02:03,400 --> 00:02:06,650
+Three, two.
+
+47
+00:02:06,650 --> 00:02:09,680
+And then we come
+through, we print one.
+
+48
+00:02:09,680 --> 00:02:10,979
+We subtract n to zero.
+
+49
+00:02:10,979 --> 00:02:13,200
+We go back up.
+
+50
+00:02:13,200 --> 00:02:17,230
+n is now not greater
+than zero, so we come up
+
+51
+00:02:17,230 --> 00:02:19,500
+and we execute outside the loop.
+
+52
+00:02:19,500 --> 00:02:20,690
+We leave the loop.
+
+53
+00:02:20,690 --> 00:02:22,510
+And that really means
+in the Python code,
+
+54
+00:02:22,510 --> 00:02:26,020
+we skip to whatever's lined
+up with the while statement.
+
+55
+00:02:26,020 --> 00:02:29,240
+The in same indent level
+as the while statement.
+
+56
+00:02:29,240 --> 00:02:30,550
+And so that's how it works.
+
+57
+00:02:30,550 --> 00:02:33,445
+And I just print n at the
+end here to remind ourselves
+
+58
+00:02:33,445 --> 00:02:34,980
+that n ended up at zero.
+
+59
+00:02:34,980 --> 00:02:35,715
+Not at one.
+
+60
+00:02:35,715 --> 00:02:40,790
+The last thing we printed
+out in the loop was the one,
+
+61
+00:02:40,790 --> 00:02:41,980
+but n ended up at 0.
+
+62
+00:02:41,980 --> 00:02:44,830
+Because this loop was
+going to run as long as n
+
+63
+00:02:44,830 --> 00:02:48,450
+was greater than zero, so it
+had to be not greater than zero
+
+64
+00:02:48,450 --> 00:02:50,410
+to get out the loop.
+
+65
+00:02:50,410 --> 00:02:54,020
+So that's basically a
+review of what we've done.
+
+66
+00:02:54,020 --> 00:02:58,600
+Now-- oh, wait, something else.
+
+67
+00:02:58,600 --> 00:03:00,960
+Iteration variables.
+
+68
+00:03:00,960 --> 00:03:04,440
+So the key to this is these
+loops can't run forever.
+
+69
+00:03:04,440 --> 00:03:06,000
+We don't want them
+to run forever.
+
+70
+00:03:06,000 --> 00:03:08,420
+We want them to run as long
+as we want them to run,
+
+71
+00:03:08,420 --> 00:03:11,089
+they may run a very long
+time, but not forever.
+
+72
+00:03:11,089 --> 00:03:12,880
+There's got to be a
+way to get out of them,
+
+73
+00:03:12,880 --> 00:03:14,963
+otherwise we call them
+infinite loops, which we'll
+
+74
+00:03:14,963 --> 00:03:16,730
+talk about in the next slide.
+
+75
+00:03:16,730 --> 00:03:18,440
+So the iteration
+variable is generally
+
+76
+00:03:18,440 --> 00:03:22,030
+some variable that is changing
+each time through the loop,
+
+77
+00:03:22,030 --> 00:03:25,859
+and we are changing it by
+subtracting one from it.
+
+78
+00:03:25,859 --> 00:03:27,650
+And so this thing is
+going to keep running,
+
+79
+00:03:27,650 --> 00:03:29,300
+and we can pretty
+much see that, oh,
+
+80
+00:03:29,300 --> 00:03:31,070
+this is going to exit, right?
+
+81
+00:03:31,070 --> 00:03:31,742
+Whatever n is.
+
+82
+00:03:31,742 --> 00:03:33,700
+It could be a large
+number, but eventually it's
+
+83
+00:03:33,700 --> 00:03:35,510
+going to get to zero.
+
+84
+00:03:35,510 --> 00:03:39,550
+So the iteration variable
+controls how many times
+
+85
+00:03:39,550 --> 00:03:41,690
+the loop runs,
+and it also allows
+
+86
+00:03:41,690 --> 00:03:43,600
+us to do something
+different inside the loop.
+
+87
+00:03:43,600 --> 00:03:45,349
+And of course, this
+is like a trivia loop,
+
+88
+00:03:45,349 --> 00:03:47,430
+where we're just printing
+the iteration variable.
+
+89
+00:03:47,430 --> 00:03:50,454
+But it just means that this
+loop is going to run five times,
+
+90
+00:03:50,454 --> 00:03:52,620
+and it's going to do something
+potentially different
+
+91
+00:03:52,620 --> 00:03:53,491
+each time.
+
+92
+00:03:53,491 --> 00:03:55,740
+If you just ran the loop
+that did the same thing over,
+
+93
+00:03:55,740 --> 00:03:57,698
+and over, and over again
+with no data changing,
+
+94
+00:03:57,698 --> 00:04:00,120
+that's dull and pointless.
+
+95
+00:04:00,120 --> 00:04:02,610
+So just because you have
+an iteration variable
+
+96
+00:04:02,610 --> 00:04:05,490
+doesn't mean that you've
+properly constructed your loop.
+
+97
+00:04:05,490 --> 00:04:09,260
+It's a common problem, or
+something we want to avoid,
+
+98
+00:04:09,260 --> 00:04:10,590
+is an infinite loop.
+
+99
+00:04:10,590 --> 00:04:13,040
+And here is a carefully
+constructed loop.
+
+100
+00:04:13,040 --> 00:04:15,520
+We start n at five
+at the beginning.
+
+101
+00:04:15,520 --> 00:04:18,700
+We have a good question at the
+end, while n greater than zero,
+
+102
+00:04:18,700 --> 00:04:23,090
+it's going to run this as long
+as n is greater than zero.
+
+103
+00:04:23,090 --> 00:04:25,780
+But the problem is, we don't
+change in the little block,
+
+104
+00:04:25,780 --> 00:04:27,190
+we don't change the n.
+
+105
+00:04:27,190 --> 00:04:28,690
+Which means it's
+going to come back,
+
+106
+00:04:28,690 --> 00:04:29,860
+and n is going to be five.
+
+107
+00:04:29,860 --> 00:04:31,760
+And that's going to run this,
+and n's going to be five.
+
+108
+00:04:31,760 --> 00:04:34,100
+And it's going to run this,
+and it's going to be five.
+
+109
+00:04:34,100 --> 00:04:36,224
+And so this an infinite
+loop, which means this loop
+
+110
+00:04:36,224 --> 00:04:37,080
+will never exit.
+
+111
+00:04:37,080 --> 00:04:39,580
+It will never get out.
+
+112
+00:04:39,580 --> 00:04:41,580
+It's just going to
+run forever in here,
+
+113
+00:04:41,580 --> 00:04:43,350
+because n's not changing.
+
+114
+00:04:43,350 --> 00:04:45,230
+Neither of these
+statements change n.
+
+115
+00:04:45,230 --> 00:04:46,670
+So part of the
+iteration variable
+
+116
+00:04:46,670 --> 00:04:48,560
+is there needs to
+be something that
+
+117
+00:04:48,560 --> 00:04:51,810
+changes so that the loop
+will ultimately make progress
+
+118
+00:04:51,810 --> 00:04:54,340
+to accomplish what it is
+and know when to stop.
+
+119
+00:04:54,340 --> 00:04:55,700
+So this is an infinite loop.
+
+120
+00:04:55,700 --> 00:04:58,650
+And, of course, lather,
+rinse, repeat is commonly
+
+121
+00:04:58,650 --> 00:05:01,450
+put on shampoo and conditioner.
+
+122
+00:05:01,450 --> 00:05:03,839
+And so you can next time
+you're in the shower
+
+123
+00:05:03,839 --> 00:05:05,630
+take a look at your
+shampoo and conditioner
+
+124
+00:05:05,630 --> 00:05:08,380
+and find the
+infinite loop that's
+
+125
+00:05:08,380 --> 00:05:14,370
+on most bottles of
+shampoo and conditioner.
+
+126
+00:05:14,370 --> 00:05:18,940
+Now here's another
+loop just to emphasize
+
+127
+00:05:18,940 --> 00:05:21,120
+that it's possible to
+structure these loops in a way
+
+128
+00:05:21,120 --> 00:05:22,810
+that they never run.
+
+129
+00:05:22,810 --> 00:05:25,010
+So this function is an if.
+
+130
+00:05:25,010 --> 00:05:27,480
+The while functions as an if.
+
+131
+00:05:27,480 --> 00:05:31,720
+And so when n is set to zero
+and we ask the question,
+
+132
+00:05:31,720 --> 00:05:33,530
+it is literally going
+to make the decision
+
+133
+00:05:33,530 --> 00:05:34,738
+based on n greater than zero.
+
+134
+00:05:34,738 --> 00:05:36,810
+Well, it is not
+greater than zero,
+
+135
+00:05:36,810 --> 00:05:39,030
+so it's going to go
+right by it over here.
+
+136
+00:05:39,030 --> 00:05:41,520
+It's going to come here
+and go right to there,
+
+137
+00:05:41,520 --> 00:05:44,710
+and never run these
+lines of code.
+
+138
+00:05:44,710 --> 00:05:49,690
+And we call this a zero
+trip loop, and that's OK.
+
+139
+00:05:49,690 --> 00:05:53,590
+I mean, this is a
+silly one, of course.
+
+140
+00:05:53,590 --> 00:05:57,270
+It just shows that the test,
+the question that's being asked
+
+141
+00:05:57,270 --> 00:06:00,760
+is above the lines that make
+up the body of the loop.
+
+142
+00:06:00,760 --> 00:06:03,290
+And if it's false,
+the loop never runs.
+
+143
+00:06:03,290 --> 00:06:07,780
+So it's possible that these
+loops have zero trips.
+
+144
+00:06:07,780 --> 00:06:09,110
+So that's a loop.
+
+145
+00:06:09,110 --> 00:06:15,545
+Now there are more than one way
+to control the flow of a loop.
+
+146
+00:06:15,545 --> 00:06:17,920
+The basic flow of the loop is
+when it gets to the bottom,
+
+147
+00:06:17,920 --> 00:06:20,445
+it goes back up to the
+while and does the check.
+
+148
+00:06:20,445 --> 00:06:22,600
+This is a different way of
+getting out of the loop,
+
+149
+00:06:22,600 --> 00:06:24,720
+or controlling the
+execution of a loop.
+
+150
+00:06:24,720 --> 00:06:27,690
+There is a key word, or a
+part of the Python language,
+
+151
+00:06:27,690 --> 00:06:30,924
+called-- what color do I got?
+
+152
+00:06:30,924 --> 00:06:33,980
+Nope, Green's over here.
+
+153
+00:06:33,980 --> 00:06:35,249
+Called break.
+
+154
+00:06:35,249 --> 00:06:36,790
+If you looked back
+at reserved words,
+
+155
+00:06:36,790 --> 00:06:38,540
+break is one of
+the reserved words.
+
+156
+00:06:38,540 --> 00:06:42,940
+Break says, hey, if I'm
+in a loop, stop the loop.
+
+157
+00:06:42,940 --> 00:06:45,410
+Get out of this loop,
+I'm done with this loop.
+
+158
+00:06:45,410 --> 00:06:47,570
+And so here's this loop.
+
+159
+00:06:47,570 --> 00:06:49,270
+Now the interesting
+thing we've done
+
+160
+00:06:49,270 --> 00:06:51,561
+is I just got done talking
+to you about infinite loops.
+
+161
+00:06:51,561 --> 00:06:54,030
+We have just constructed
+an infinite loop.
+
+162
+00:06:54,030 --> 00:06:58,820
+Because the question is right
+there, and the answer is yes,
+
+163
+00:06:58,820 --> 00:06:59,320
+true.
+
+164
+00:06:59,320 --> 00:07:01,327
+And that's a way to
+construct an infinite loop.
+
+165
+00:07:01,327 --> 00:07:03,910
+We've done this because we have
+a different way of getting out
+
+166
+00:07:03,910 --> 00:07:04,410
+of the loop.
+
+167
+00:07:04,410 --> 00:07:07,080
+So we've constructed loop
+just on the face of it,
+
+168
+00:07:07,080 --> 00:07:10,170
+just looking at that line,
+looks like an infinite loop.
+
+169
+00:07:10,170 --> 00:07:13,360
+So what this loop does is
+it reads a line of input,
+
+170
+00:07:13,360 --> 00:07:17,260
+checks to see if it's the string
+that we've entered as done.
+
+171
+00:07:17,260 --> 00:07:20,661
+And if it is, we're going
+to skip out with this break
+
+172
+00:07:20,661 --> 00:07:21,660
+and get out of the loop.
+
+173
+00:07:21,660 --> 00:07:23,250
+Otherwise, we're
+going to print it.
+
+174
+00:07:23,250 --> 00:07:25,370
+So at a high level, what
+this loop is going to do
+
+175
+00:07:25,370 --> 00:07:29,917
+is prompt for strings of
+characters until we enter done.
+
+176
+00:07:29,917 --> 00:07:31,250
+And that's exactly what it does.
+
+177
+00:07:31,250 --> 00:07:33,375
+It prompts, we say hello
+there, it prints that out.
+
+178
+00:07:33,375 --> 00:07:35,320
+So we say finished,
+it prints that out.
+

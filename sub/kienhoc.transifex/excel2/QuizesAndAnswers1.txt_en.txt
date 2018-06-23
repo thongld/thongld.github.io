@@ -1,0 +1,341 @@
+week1
+
+
+
+1.3
+
+1. Convert the excel file to csv and import it back to excel. How many pink socks were sold?
+
+Answer: 120
+
+How many pink items are recorded in the spreadsheet?
+
+If we select all categories in the previous pivot table we get only pink items.
+
+Answer: 214
+
+2. We just received updated data from Tokyo (tokyo_updated). Refresh the file and determine how many additional rows there are.
+
+Old file has 1254 + header
+
+New file has 1884 + header
+
+Answer: 630
+
+3. How many pink running items are there in the updated version?
+
+Same approach as for 1.
+
+Answer: 324
+
+1.4
+
+Using the cmd concatenate all 100 csv files (subpartTokyo_n.csv). How many yellow items are there in the newly created spreadsheet?
+
+Same approach as for 1.
+
+Answer:141
+
+1.5
+
+Download the 5 spreadsheets(5 colours). Convert them to csv format using the script and then concatenate them in order to be able to count certain items from the final concatenated spreadsheet.
+
+How many pants are there?
+
+Same approach as for 1.
+
+Answer: 338
+
+1.6
+
+1. Try to fix the header duplication and let us know how many Nike items are there in total?
+
+Filter out only the Nike brand
+
+Answer:2589
+
+2. What company is mentioned on row 1702?
+
+We filter the stores: “Store”. This way we see how many headers we have and delete them.
+
+We cancel the filter and add back all the stores.
+
+Answer: Asics 
+
+3. How many rows did you delete?
+
+Answer: 5
+
+4. What are the problems in the concatenated spreadsheet from the video?
+
+- inconsistent input = CORRECT (“—“ on Loyalty column)
+
+- extra headers = CORRECT (5 extra column can be noticed in the pivot sheet)
+
+- wrong format of date
+
+- unrelated words
+
+- files do not have the same column organization
+
+Final assignment
+
+The original spreadsheet from the last video has some new erroneous rows. Clean the whole spreadsheet and answer the following questions.
+
+- brand name, loyalty and type “???”
+
+- NY instead of New York
+
+- gender “-” instead of unisex
+
+- color “Piink “instead of “Pink”
+
+- sales column has different types of input
+
+- 5 extra headers
+
+1. How many items from New York can you find in the spreadsheet?
+
+We select the NY rows and change them to New York.
+
+Or just select both NY and New York and you get:
+
+Answer: 2112
+
+2. How many pink items are in the spreadsheet?
+
+Same approach as previous question. Select (if not previously changed) Piink and Pink.
+
+Answer: 1067
+
+3. How many items can be worn by both man and female?
+
+Same approach as previous question. Select (if not previously changed) - and Unisex.
+
+Answer: 1971
+
+4. How much money were earned from selling shoes?
+
+The sale price must be converted to a number where initially it has a text format.
+
+Then SUM the column values after filtering just the shoes.
+
+Answer: 206596
+
+
+
+
+
+week2
+
+
+
+Answers Week 2
+
+2.1 Introduction Data Exploration
+
+This section contained no questions.
+
+2.2 PivotTables and PivotCharts
+
+PivotTable to PivotChart
+
+Which of the following PivotTable entities are equivalent to which of the PivotChart entities?
+
+Columns map to: Series (Legend items) Rows map to: Categories (Axis items)
+
+PivotTable Configuration
+
+Image your boss wants to know for each product category (Bras, Pants, etc.) what color sells best (in terms of revenue). Which one of the following would be the best configuration of fields to PivotTable entities to create a useful PivotChart for your boss?
+
+Color in Columns - Category in Rows - Sum of Sales Price in Values
+
+Explanation: It is most useful when all colors of a product category are
+
+grouped together, since your boss wants to know which color per
+
+category sells best.
+
+From PivotTable to Conclusions
+
+Adapt the PivotTable and Chart in the spreadsheet to be like the answer of the previous question.
+
+Now suppose you put this nice chart in a presentation for your boss. Which of the following conclusions can he deduce from only this graph?
+
+- TRUE: No grey socks were sold.
+
+- FALSE: No green socks were sold.
+
+- FALSE: In total more shoes were sold than socks.
+
+- FALSE: We make far more revenue of blue pants than of any other color pants.
+
+- TRUE: Less revenue is made on Bras than on Shoes.
+
+Explanation: There are no bars in the graph for category Socks, color grey, multicolor and yellow. No conclusions can be drawn about the number of sales, because the graph shows how much money is made and socks are probably cheaper than shoes. The strikingly high revenue in pants is not for blue pants, but for black pants.
+
+2.3 PivotCharts Continued
+
+Slicers and PivotCharts
+
+Using only the slicers and the PivotChart provided in the spreadsheet, can you tell which brand makes the most money on black shoes in New York?
+
+Adidas.
+
+
+
+Show your skills! (ungraded)
+
+Now you are familiar with PivotCharts, we would like you to make a nice PivotChart of the data and post a screenshot of it in the Discussion forum. You may also use the Catalog worksheet if you like.
+
+Thank you for your beautiful posts on the discussion thread!
+
+2.4 Power Pivot
+
+Slicers and PivotCharts
+
+Add the weekday column to the data model and add a slicer for weekday, like Felienne showed in the video. Using the new slicer and the PivotChart, find out on which of the following weekday(s) Nike makes more revenue in Tokyo on green socks than Asics. Keep in mind what day of the week a weekday number represents!
+
+- FALSE: Tuesday
+
+- TRUE: Wednesday
+
+- TRUE: Thursday
+
+- FALSE: Saturday
+
+- FALSE: Sunday
+
+Explanation: For each day, select the corresponding weekday slicer button, while Green and Socks are selected in the other two slicers, and compare the two bars (representing Nike and Asics) in the Tokyo
+
+Category.
+
+2.5 Assignment
+
+Which sizes were sold?
+
+In which of the following SizeRange(s) are both Female and Unisex products being sold? You should only need to use fields from the Catalog table in your PivotTable to answer this question.
+
+- FALSE: 36 to 44
+
+- FALSE: 36 to 46
+
+- TRUE: 36 to 48
+
+- FALSE: 65A to 75F
+
+Revenue on Size Ranges
+
+In which SizeRange is the highest revenue made?
+
+36 to 46
+
+How much revenue is made on products in the SizeRange of the previous question?
+
+990654
+
+Highest Profit
+
+On which product category does Nike (Brand) make the highest profit?
+
+Shoes
+
+Prepare for week 3! (ungraded)
+
+This section contained no questions, only instructions to prepare for week 3.
+
+
+
+Answers Week 3
+
+3.1 Introduction to Trends
+
+This section contained no questions.
+
+3.2 Conditional Formatting
+
+Based on the screenshots of pivot tables that make use of Color Formatting, answer the following questions. WARNING: We do not consider or suggest that the following color formatting usage is best practice. However we do believe that in practice you are likely to encounter the default color formatting without any explanation given.
+
+Prices per Item Type
+
+In the screenshot above, the color formatting is:
+
+Inappropriate because it is irrelevant to consider both sales and cost price at the same time 
+
+Explanation: The other answers are false because comparing unrelated items is misleading and colors can help understand trends as shown in the video.
+
+Price per Gender
+
+In the screenshot above, the color formatting in the Cost
+
+Price per Gender sheet is:
+
+- TRUE: Appropriate, color formatting because you can easily find which item costs most money for each gender.
+
+- FALSE: Inappropriate, because only one shade of colors is distracting and prevent the eye from focusing on the highest value.
+
+- TRUE: Appropriate, because the yellow in the grand total column makes it easy to see which item costs the most money overall.
+
+- FALSE: Inappropriate, because all important cells should be red.
+
+Explanation: The other answers are wrong because using color shades guides the eye to a certain value, however bold colors are too distracting.
+
+Sum Sales per Item
+
+In the screenshot above, using the 'top 10' color formatting on the first column has:
+
+Advantage of being able to spot the distribution of the top 10 bra sales.
+
+For Socks sales in week (row labels column) 36, the arrow indicates:
+
+The revenue is high.
+
+3.3 Spark Lines
+
+WARNING: We do not necessarily consider the default setting of sparklines most suited for every situation.
+
+We use the default settings because in practice you will most likely be faced with them. Sparklines are not meant to be compared to each other, but to see the trend in a single data series. Graphs are much more useful to compare different categories/datasets.
+
+Sparkline
+
+Instead of using the classic sparkline to represent the trend, apply the 'Win and Loss' design on the same data Felienne is using. A Win Loss sparkline …
+
+…shows whether each value is positive or negative instead of how high or low the values are.
+
+Explanation: The other answers are wrong because a Win Loss sparkline does not focus on individual values but on the entire selected range that is not necessarily over time.
+
+3.4 Trend Plotting
+
+Trends and Predictions
+
+Predict how much money will be earned by selling socks in week 50. Round to one decimal place.
+
+7109.9 (± 0.1)
+
+Explanation: 
+
+27.158 × 50 + 5752 =7109.9
+
+Which item do you expect to bring in most money over the next four weeks (weeks 46-49)? Use the chart.
+
+Pants.
+
+Explanation: We can see the gray line representing pants on top when we extend the trend lines with 4 periods (weeks).
+
+3.5 Assignment
+
+Trend Equation
+
+Based on the spreadsheet you just downloaded, compute the coefficients for the equation for LEMONADE sales. You will use the answer to this assignment next week!
+
+The trend of lemonade sales is a*x+b. This trend line is for the number of sold units, not the revenue!
+
+What is the value of B (the constant)?
+
+150 or 150.6
+
+What is the value of A (the slope)?
+
+0.6
+
+Explanation: Create a PivotTable. Suggestion: transform “Week n” to integer value n that can be ordered ascending)

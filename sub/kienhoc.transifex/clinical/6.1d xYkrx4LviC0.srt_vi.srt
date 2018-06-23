@@ -1,0 +1,240 @@
+0
+00:00:06,779 --> 00:00:11,190
+Câu hỏi tiếp theo là về độ tin cậy của bài test.
+
+1
+00:00:11,190 --> 00:00:15,480
+Nếu muốn đo một thứ gì đó, chiều cao của người này chẳng hạn,
+
+2
+00:00:15,480 --> 00:00:17,390
+ta có thể dùng thước dây như thế này.
+
+3
+00:00:17,390 --> 00:00:21,520
+Thước dây chỉ ra chiều cao của cô ấy là xxx cm.
+
+4
+00:00:21,520 --> 00:00:26,689
+Nếu muốn chắc chắn hơn, ta có thể đo chiều cao cô ấy một lần nữa bằng 
+
+5
+00:00:26,689 --> 00:00:27,689
+thước dây.
+
+6
+00:00:27,689 --> 00:00:31,689
+Nhưng chiếc thước lại hay rung và rất khó sử dụng
+
+7
+00:00:31,689 --> 00:00:34,280
+do tôi keo kiệt khi chỉ mua một chiếc thước quá rẻ.
+
+8
+00:00:34,280 --> 00:00:38,760
+Nên lần đo này lại cho kết qua cao hơn lần đo đầu tiên,
+
+9
+00:00:38,760 --> 00:00:40,600
+xxx cm.
+
+10
+00:00:40,600 --> 00:00:45,320
+Do kết quả lần đo thứ hai khác so với lần đo thứ nhất, 
+
+11
+00:00:45,320 --> 00:00:49,059
+ta có thể kết luận chiếc thước này không đáng tin cậy.
+
+12
+00:00:49,059 --> 00:00:52,569
+Nếu một phép đo cho kết quả nhất quán ở mọi lần đo 
+
+13
+00:00:52,569 --> 00:00:53,569
+thì phép đo đó có độ tin cậy cao.
+
+14
+00:00:53,569 --> 00:00:59,429
+Độ tin cậy của bài test thể hiện tính chất nhất quán về điểm số 
+
+15
+00:00:59,429 --> 00:01:00,850
+ở từng người khi làm bài.
+
+16
+00:01:00,850 --> 00:01:05,280
+Đối với bài test trí thông minh, ta không thẻ đánh giá độ tin cậy 
+
+17
+00:01:05,280 --> 00:01:09,750
+dựa vào cảm quang như với chiêc thước rẻ tiền hay rung của tôi.
+
+18
+00:01:09,750 --> 00:01:14,960
+Ta có các phương thức khác nhau để đánh giá độ tin cậy của một bài test.
+
+19
+00:01:14,960 --> 00:01:22,340
+Bao gồm: Độ tin cậy hình thức, độ tin cậy bán phần vầ độ tin cậy kiểm chứng trước - sau 
+
+20
+00:01:22,340 --> 00:01:27,590
+Độ tin cậy hình thức đánh giá hai phiên bản khác nhau của cùng một bài test.
+
+21
+00:01:27,590 --> 00:01:31,899
+Điểm thu được từ hai bài sẽ được so sánh để kiểm tra độ tin cậy.
+
+22
+00:01:31,899 --> 00:01:36,790
+Ví dụ, tưởng tưởng rằng nhóm nghiên cứu của tôi được tài trợ một triệu đô
+
+23
+00:01:36,790 --> 00:01:40,170
+để viết ra một bài test trí thông minh cho sinh viên.
+
+24
+00:01:40,170 --> 00:01:44,030
+Chúng tôi dùng hai nửa số tiền để phát triển hai phiên bản
+
+25
+00:01:44,030 --> 00:01:47,609
+khác nhau của bài test.
+
+26
+00:01:47,609 --> 00:01:52,250
+Để thử độ tin cậy của bài test mới phát triển, chúng tôi nhờ
+
+27
+00:01:52,250 --> 00:01:57,840
+ rất nhiều bạn sinh viên làm thử cả hai phiên bản của bài test.
+
+28
+00:01:57,840 --> 00:02:03,539
+Sau đó chúng tôi so sánh kết quả làm bài ở hai phiên bản với nhau.
+
+29
+00:02:03,539 --> 00:02:05,560
+Và lập biểu đồ như thế này.
+
+30
+00:02:05,560 --> 00:02:12,790
+Có người được khoảng 10 diểm ở cả phiên bản 1 lẫn phiên bản 2. 
+
+31
+00:02:12,790 --> 00:02:19,170
+Có người được dưới 40 điểm ở phiên bản 1 và khoảng 40 điểm ở phiên bản 2.
+
+32
+00:02:19,170 --> 00:02:25,540
+Còn người này được khoảng 70 điểm ở cả hai phiên bản.
+
+33
+00:02:25,540 --> 00:02:26,659
+Bạn nhận thấy điều gì ở đây?
+
+34
+00:02:26,659 --> 00:02:31,340
+Bạn có để ý thấy tương quan thuận giữa điểm số
+
+35
+00:02:31,340 --> 00:02:33,069
+ở hai phiên bản?
+
+36
+00:02:33,069 --> 00:02:36,470
+Khi điểm ở phiên bản 1 tăng thì điểm ở phiên bản 2 cũng tăng.
+
+37
+00:02:36,470 --> 00:02:40,599
+Nhìn lên đường chéo kia, bạn có thể thấy rằng chúng khá sát nhau.
+
+38
+00:02:40,599 --> 00:02:44,209
+Không có nhiều lỗi sai hay biến số giữa các điểm số.
+
+39
+00:02:44,209 --> 00:02:48,690
+Chúng tăng theo cùng một tỉ lệ.
+
+40
+00:02:48,690 --> 00:02:52,760
+Nếu nhận ra, bạn sẽ thấy tỉ lệ mối tương quan thấp nhất là 0.8. 
+
+41
+00:02:52,760 --> 00:02:54,550
+Đó là một tỉ lệ tương quan khá phù hợp.
+
+42
+00:02:54,550 --> 00:02:59,560
+Vì hai phiên bản của bài test đưa ra kết quả gần như bằng nhau
+
+43
+00:02:59,560 --> 00:03:02,490
+nên phép đo của chúng ta là đáng tin cậy.
+
+44
+00:03:02,490 --> 00:03:07,200
+Độ tin cậy bán phần cũng liên quan đến việc đánh giá hai bài test.
+
+45
+00:03:07,200 --> 00:03:12,580
+Tuy nhiên trong một số trường hợp, do hạn chế về tài chính và thời gian
+
+46
+00:03:12,580 --> 00:03:15,739
+các nhà nghiên cứu không thể viết hai phiên bản cho một bài test.
+
+47
+00:03:15,739 --> 00:03:20,409
+Khi đó ta sẽ phải chia một bài test ra làm hai.
+
+48
+00:03:20,409 --> 00:03:25,519
+Sau đó ta tiếp tục nhờ các bạn sinh viên làm bài test
+
+49
+00:03:25,519 --> 00:03:29,769
+rồi so sánh điểm số giữa phần đầu
+
+50
+00:03:29,769 --> 00:03:33,459
+và phần sau của bài test với nhau.
+
+51
+00:03:33,459 --> 00:03:36,170
+Ta lập một biểu đồ giống với biểu đồ trước.
+
+52
+00:03:36,170 --> 00:03:40,500
+Các dữ liệu cũng như nhau vì ý tưởng thực hiện là giống nhau.
+
+53
+00:03:40,500 --> 00:03:44,420
+Phương thức này nhằm đánh giá xem sinh viên có trả lời
+
+54
+00:03:44,420 --> 00:03:48,430
+nửa đầu và nửa sau bài test giống nhau hay không.
+
+55
+00:03:48,430 --> 00:03:51,980
+Tính toán tỉ lệ tương đối cho kết quả xấp xỉ 0.8.
+
+56
+00:03:51,980 --> 00:03:55,650
+Từ đó ta có thể kết luận bài test này đáng tin cậy.
+
+57
+00:03:55,650 --> 00:03:57,370
+Đây có phải một phương pháp hợp lý không?
+
+58
+00:03:57,370 --> 00:04:01,750
+Bạn thấy có vấn đề gì khi chia đôi một bài test để kiểm chứng
+
+59
+00:04:01,750 --> 00:04:02,600
+độ tin cậy của nó không?
+

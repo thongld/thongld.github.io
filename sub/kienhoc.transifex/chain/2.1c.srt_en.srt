@@ -1,0 +1,956 @@
+0
+00:00:00,000 --> 00:00:00,610
+https://youtu.be/aXuvXHMVV10
+
+1
+00:00:00,610 --> 00:00:03,100
+So now we're going to develop some time series models.
+
+2
+00:00:03,100 --> 00:00:05,470
+And the two models we're going to do first,
+
+3
+00:00:05,470 --> 00:00:08,150
+are the cumulative and naive forecasts.
+
+4
+00:00:08,150 --> 00:00:10,730
+We'll explain why in a second.
+
+5
+00:00:10,730 --> 00:00:13,020
+So developing any kind of time series models--
+
+6
+00:00:13,020 --> 00:00:15,520
+let's understand where we're going to use these.
+
+7
+00:00:15,520 --> 00:00:17,872
+And for supply chain, the predominant use
+
+8
+00:00:17,872 --> 00:00:21,490
+of series analysis is for forecasting the product demand
+
+9
+00:00:21,490 --> 00:00:24,450
+of a mature product at the SKU level
+
+10
+00:00:24,450 --> 00:00:27,200
+over a short time horizon, whether that's weeks, months,
+
+11
+00:00:27,200 --> 00:00:31,850
+quarters, a year, where the demand of items is independent.
+
+12
+00:00:31,850 --> 00:00:34,410
+Critical pieces here are it's mature.
+
+13
+00:00:34,410 --> 00:00:35,550
+That means I have history.
+
+14
+00:00:35,550 --> 00:00:37,020
+I have something I can use.
+
+15
+00:00:37,020 --> 00:00:38,250
+It's at the SKU level.
+
+16
+00:00:38,250 --> 00:00:40,270
+So that means it's very disaggregated.
+
+17
+00:00:40,270 --> 00:00:42,230
+It's a short time horizon.
+
+18
+00:00:42,230 --> 00:00:47,060
+So I'm not looking at a very long period of analysis.
+
+19
+00:00:47,060 --> 00:00:48,970
+And the demand for items is independent,
+
+20
+00:00:48,970 --> 00:00:51,320
+which means that I can model them separately.
+
+21
+00:00:51,320 --> 00:00:54,215
+I don't need to understand the demand of another product that
+
+22
+00:00:54,215 --> 00:00:56,390
+is a complement or a substitute.
+
+23
+00:00:56,390 --> 00:00:59,270
+Later on, we will loosen some of these assumptions
+
+24
+00:00:59,270 --> 00:01:01,170
+for other types of forecasting.
+
+25
+00:01:01,170 --> 00:01:03,470
+For example, new products-- you don't
+
+26
+00:01:03,470 --> 00:01:06,360
+have history for a new product launch.
+
+27
+00:01:06,360 --> 00:01:09,990
+You might want to look at a whole series of items.
+
+28
+00:01:09,990 --> 00:01:12,670
+You might want to look for a very long time horizon.
+
+29
+00:01:12,670 --> 00:01:14,950
+I might be looking at 5, 10 years out.
+
+30
+00:01:14,950 --> 00:01:18,607
+So as these things change, your model will change.
+
+31
+00:01:18,607 --> 00:01:20,190
+But for right now, we're going to stay
+
+32
+00:01:20,190 --> 00:01:23,415
+with the traditional time series model looking
+
+33
+00:01:23,415 --> 00:01:25,990
+at mature product, SKU level, short time
+
+34
+00:01:25,990 --> 00:01:28,570
+horizon, with independent products.
+
+35
+00:01:28,570 --> 00:01:32,370
+So we're going to be using our four main trends here-- level,
+
+36
+00:01:32,370 --> 00:01:36,220
+trend, seasonality, and error, our four patterns.
+
+37
+00:01:36,220 --> 00:01:37,760
+OK, so what's the procedure?
+
+38
+00:01:37,760 --> 00:01:38,800
+Straightforward.
+
+39
+00:01:38,800 --> 00:01:42,400
+First, you pick a model for the demand pattern over time.
+
+40
+00:01:42,400 --> 00:01:45,070
+You estimate and calibrate the parameters for the model.
+
+41
+00:01:45,070 --> 00:01:48,960
+You use those parameters to predict or estimate the future.
+
+42
+00:01:48,960 --> 00:01:51,710
+And then the critical step, step four,
+
+43
+00:01:51,710 --> 00:01:54,200
+which is often ignored in many companies,
+
+44
+00:01:54,200 --> 00:01:55,860
+is to review the model performance
+
+45
+00:01:55,860 --> 00:01:58,620
+and adjust the parameters and model accordingly.
+
+46
+00:01:58,620 --> 00:02:01,380
+These forecasts are living, so you should always
+
+47
+00:02:01,380 --> 00:02:05,250
+check and make sure the parameters still make sense.
+
+48
+00:02:05,250 --> 00:02:07,730
+OK, so we're going to develop two models, like I said,
+
+49
+00:02:07,730 --> 00:02:10,520
+the cumulative and the naive model.
+
+50
+00:02:10,520 --> 00:02:13,510
+And where they differ, they differ on a basic assumption.
+
+51
+00:02:13,510 --> 00:02:16,800
+And this basic assumption is how important
+
+52
+00:02:16,800 --> 00:02:20,680
+is the history, how much do you value the historical data.
+
+53
+00:02:20,680 --> 00:02:23,240
+And there's two extreme assumptions.
+
+54
+00:02:23,240 --> 00:02:26,076
+One is I treat them all very importantly.
+
+55
+00:02:26,076 --> 00:02:27,950
+And the other is, they're not that important,
+
+56
+00:02:27,950 --> 00:02:29,390
+they're not important at all.
+
+57
+00:02:29,390 --> 00:02:30,973
+And so let's start with the first one.
+
+58
+00:02:30,973 --> 00:02:32,460
+This is the cumulative forecast.
+
+59
+00:02:32,460 --> 00:02:36,230
+So in each of these cases, I'm looking at a level demand.
+
+60
+00:02:36,230 --> 00:02:39,640
+So you can also call this a stationary demand.
+
+61
+00:02:39,640 --> 00:02:42,960
+So we assume the only pattern here is a level.
+
+62
+00:02:42,960 --> 00:02:46,760
+And so the demand for period t, xt,
+
+63
+00:02:46,760 --> 00:02:48,360
+is going to be equal to the level,
+
+64
+00:02:48,360 --> 00:02:50,245
+a, plus some error term, some randomness.
+
+65
+00:02:50,245 --> 00:02:51,600
+It's going up and down.
+
+66
+00:02:51,600 --> 00:02:54,570
+And we assume that random term is identically
+
+67
+00:02:54,570 --> 00:02:58,350
+and independently distributed with a mean of 0
+
+68
+00:02:58,350 --> 00:03:00,690
+and some variance.
+
+69
+00:03:00,690 --> 00:03:02,820
+Now, why do we assume that the mean is zero?
+
+70
+00:03:02,820 --> 00:03:04,010
+Well, what if it wasn't?
+
+71
+00:03:04,010 --> 00:03:07,520
+What if I said the mean of the error was 10?
+
+72
+00:03:07,520 --> 00:03:09,940
+Well, that means I'm just biased 10.
+
+73
+00:03:09,940 --> 00:03:11,760
+I'm always going to be positively biased.
+
+74
+00:03:11,760 --> 00:03:15,280
+So the mean of your errors should always be zero,
+
+75
+00:03:15,280 --> 00:03:17,462
+because if not, I'm biased either positively
+
+76
+00:03:17,462 --> 00:03:18,045
+or negatively.
+
+77
+00:03:18,045 --> 00:03:20,680
+
+
+78
+00:03:20,680 --> 00:03:22,335
+Let me just clean that up.
+
+79
+00:03:22,335 --> 00:03:23,210
+So this is our model.
+
+80
+00:03:23,210 --> 00:03:26,320
+And why it's called a cumulative model is because what
+
+81
+00:03:26,320 --> 00:03:27,890
+our forecasting model's going to be,
+
+82
+00:03:27,890 --> 00:03:30,030
+it's going to be saying that x hat-- and x hat
+
+83
+00:03:30,030 --> 00:03:37,510
+is the forecast of demand made at time t-- for time t plus 1.
+
+84
+00:03:37,510 --> 00:03:39,900
+Now, to generalize this, I have it down here.
+
+85
+00:03:39,900 --> 00:03:44,040
+It's x hat t comma t plus tau.
+
+86
+00:03:44,040 --> 00:03:49,000
+And that simply is the forecast made at the end of period t
+
+87
+00:03:49,000 --> 00:03:52,460
+for the demand in period t plus tau, where tau is one, two,
+
+88
+00:03:52,460 --> 00:03:55,230
+three, four, whatever time periods in the future.
+
+89
+00:03:55,230 --> 00:03:59,860
+So this forecasting model right here is for the next period.
+
+90
+00:03:59,860 --> 00:04:02,910
+We'll do a lot of these analysis for next period model.
+
+91
+00:04:02,910 --> 00:04:06,240
+So I'm sitting in today forecasting for tomorrow.
+
+92
+00:04:06,240 --> 00:04:09,900
+I'm sitting in this month forecasting for next month.
+
+93
+00:04:09,900 --> 00:04:12,640
+And that's simply going to be for the cumulative model
+
+94
+00:04:12,640 --> 00:04:15,530
+the sum of all the demands divided
+
+95
+00:04:15,530 --> 00:04:16,760
+by the number of periods.
+
+96
+00:04:16,760 --> 00:04:18,810
+So it's going to find the mean or the average.
+
+97
+00:04:18,810 --> 00:04:22,720
+So I'm saying that all history matters equally.
+
+98
+00:04:22,720 --> 00:04:23,740
+Makes sense.
+
+99
+00:04:23,740 --> 00:04:25,214
+Now let's go to the other extreme.
+
+100
+00:04:25,214 --> 00:04:26,880
+Let's say history doesn't matter at all.
+
+101
+00:04:26,880 --> 00:04:29,640
+This is known as the naive forecast.
+
+102
+00:04:29,640 --> 00:04:31,610
+And so what we assume here is that the most
+
+103
+00:04:31,610 --> 00:04:34,850
+recent observation dictates the next.
+
+104
+00:04:34,850 --> 00:04:38,630
+This is sometimes called the random walk or last is next.
+
+105
+00:04:38,630 --> 00:04:42,700
+So we have the same kind of level forecast,
+
+106
+00:04:42,700 --> 00:04:44,700
+but what we're saying is, the underlying model
+
+107
+00:04:44,700 --> 00:04:48,150
+is, my demand in period t is going
+
+108
+00:04:48,150 --> 00:04:51,625
+to be equal to my demand that actually happened yesterday
+
+109
+00:04:51,625 --> 00:04:55,350
+in t minus 1, plus some error term, some randomness.
+
+110
+00:04:55,350 --> 00:04:57,280
+So the only thing that's going to change
+
+111
+00:04:57,280 --> 00:04:59,320
+is some of that random term.
+
+112
+00:04:59,320 --> 00:05:01,160
+So again, my error term is distributed
+
+113
+00:05:01,160 --> 00:05:05,230
+with a mean of 0 and some variance.
+
+114
+00:05:05,230 --> 00:05:08,760
+And so my forecasting model is much simpler.
+
+115
+00:05:08,760 --> 00:05:12,600
+The forecast of demand for sitting in today for tomorrow,
+
+116
+00:05:12,600 --> 00:05:16,630
+t plus 1, is equal to the demand today.
+
+117
+00:05:16,630 --> 00:05:18,630
+So I'm assuming that what happens
+
+118
+00:05:18,630 --> 00:05:20,070
+tomorrow is what happened today.
+
+119
+00:05:20,070 --> 00:05:21,030
+That's my forecast.
+
+120
+00:05:21,030 --> 00:05:22,905
+Now, I know it won't be exactly, because I've
+
+121
+00:05:22,905 --> 00:05:26,160
+got that error term that's going to put some noise around it.
+
+122
+00:05:26,160 --> 00:05:28,340
+But the difference in the forecasting models,
+
+123
+00:05:28,340 --> 00:05:31,070
+or the cumulative model, assumes it's
+
+124
+00:05:31,070 --> 00:05:33,740
+going to be the average of everything I've seen so far.
+
+125
+00:05:33,740 --> 00:05:36,530
+I'm creating all the history equally.
+
+126
+00:05:36,530 --> 00:05:40,104
+Versus the naive model, all that matters is yesterday.
+
+127
+00:05:40,104 --> 00:05:42,020
+What happened last period, that's what I think
+
+128
+00:05:42,020 --> 00:05:44,200
+is going to happen next period.
+
+129
+00:05:44,200 --> 00:05:46,020
+So let's see what these look like.
+
+130
+00:05:46,020 --> 00:05:47,660
+So here's some data we have.
+
+131
+00:05:47,660 --> 00:05:49,640
+And in this first column here in the table,
+
+132
+00:05:49,640 --> 00:05:52,230
+it's just the time period from 1 to 10.
+
+133
+00:05:52,230 --> 00:05:56,370
+xt is the demand at that period, t.
+
+134
+00:05:56,370 --> 00:06:01,360
+So in period four, we had 96 units actually demanded.
+
+135
+00:06:01,360 --> 00:06:03,474
+And over to the right, I have the chart
+
+136
+00:06:03,474 --> 00:06:04,890
+that's showing where that happens.
+
+137
+00:06:04,890 --> 00:06:09,180
+So what would be my forecast if I'm sitting here at t
+
+138
+00:06:09,180 --> 00:06:12,710
+and I want to predict the demand in the next period?
+
+139
+00:06:12,710 --> 00:06:18,000
+So that would be x hat 10 comma 11, because tau in this case
+
+140
+00:06:18,000 --> 00:06:18,780
+would be 1.
+
+141
+00:06:18,780 --> 00:06:21,130
+So this is a next period forecast.
+
+142
+00:06:21,130 --> 00:06:22,470
+So what would it be?
+
+143
+00:06:22,470 --> 00:06:26,290
+Well, for the naive, it's going to be what actually
+
+144
+00:06:26,290 --> 00:06:28,090
+happened this most recent period.
+
+145
+00:06:28,090 --> 00:06:30,300
+So what happened in period 10?
+
+146
+00:06:30,300 --> 00:06:31,200
+Well, 96.
+
+147
+00:06:31,200 --> 00:06:34,820
+So that's my forecast for the next period.
+
+148
+00:06:34,820 --> 00:06:37,440
+For the cumulative, it's a little more complicated,
+
+149
+00:06:37,440 --> 00:06:38,960
+a little more intensive.
+
+150
+00:06:38,960 --> 00:06:40,820
+I go and I sum the average.
+
+151
+00:06:40,820 --> 00:06:43,130
+And if I sum these up-- and you can check my math--
+
+152
+00:06:43,130 --> 00:06:46,170
+the sum here is going to be equal to 995.
+
+153
+00:06:46,170 --> 00:06:50,050
+Divide that by 10, 10 observations, and you get 99.5.
+
+154
+00:06:50,050 --> 00:06:52,925
+So this is my cumulative forecast.
+
+155
+00:06:52,925 --> 00:06:55,680
+
+
+156
+00:06:55,680 --> 00:06:58,600
+So this is very simple math.
+
+157
+00:06:58,600 --> 00:07:01,960
+But if I want to look instead of doing just for that period,
+
+158
+00:07:01,960 --> 00:07:04,340
+suppose I wanted to create a series of next period
+
+159
+00:07:04,340 --> 00:07:05,370
+forecasts.
+
+160
+00:07:05,370 --> 00:07:08,657
+So let's see what it would look like if I was in period one
+
+161
+00:07:08,657 --> 00:07:10,740
+and I didn't know anything else that was happening
+
+162
+00:07:10,740 --> 00:07:13,100
+and I'm making my forecast for period two.
+
+163
+00:07:13,100 --> 00:07:14,680
+Then in period two, for period three.
+
+164
+00:07:14,680 --> 00:07:16,590
+And in the period three, for period four.
+
+165
+00:07:16,590 --> 00:07:18,330
+What would that look like?
+
+166
+00:07:18,330 --> 00:07:19,680
+Well, that's what this chart is.
+
+167
+00:07:19,680 --> 00:07:22,650
+So again, the first column is just the time period.
+
+168
+00:07:22,650 --> 00:07:26,850
+The xt column is just the demand in time period t.
+
+169
+00:07:26,850 --> 00:07:29,940
+The third column in green is the cumulative forecast
+
+170
+00:07:29,940 --> 00:07:32,410
+at that time for the next period.
+
+171
+00:07:32,410 --> 00:07:34,390
+And then the red, the fourth column,
+
+172
+00:07:34,390 --> 00:07:36,710
+is the same thing for the naive forecast.
+
+173
+00:07:36,710 --> 00:07:39,900
+So let's look at period 10.
+
+174
+00:07:39,900 --> 00:07:43,480
+So in period 10, my actual demand was 96.
+
+175
+00:07:43,480 --> 00:07:48,800
+And my forecast in period 10 for period 11 under cumulative
+
+176
+00:07:48,800 --> 00:07:51,150
+is 99.5.
+
+177
+00:07:51,150 --> 00:07:58,790
+My naive forecast, x hat 10 in period 10 for period 11, is 96.
+
+178
+00:07:58,790 --> 00:08:01,180
+And that's in that row at the bottom.
+
+179
+00:08:01,180 --> 00:08:04,020
+So I can chart these as well.
+
+180
+00:08:04,020 --> 00:08:05,507
+And this is the same thing.
+
+181
+00:08:05,507 --> 00:08:06,590
+This is the actual demand.
+
+182
+00:08:06,590 --> 00:08:09,220
+I just drew a line on it so it would be easier to see.
+
+183
+00:08:09,220 --> 00:08:11,360
+And here's the naive forecast.
+
+184
+00:08:11,360 --> 00:08:12,870
+And this is, again, the next period.
+
+185
+00:08:12,870 --> 00:08:15,000
+So this is the forecast made at the end
+
+186
+00:08:15,000 --> 00:08:17,060
+of each period for the next period.
+
+187
+00:08:17,060 --> 00:08:19,500
+And it's almost like you have double vision,
+
+188
+00:08:19,500 --> 00:08:21,060
+because all it did is what?
+
+189
+00:08:21,060 --> 00:08:22,150
+Shifted by one.
+
+190
+00:08:22,150 --> 00:08:23,860
+It just shifted to the right by one,
+
+191
+00:08:23,860 --> 00:08:25,334
+because it's a naive forecast.
+
+192
+00:08:25,334 --> 00:08:27,000
+It's saying whatever happened yesterday,
+
+193
+00:08:27,000 --> 00:08:29,325
+yeah that's what's going to happen tomorrow.
+
+194
+00:08:29,325 --> 00:08:30,700
+Now let's look at the cumulative.
+
+195
+00:08:30,700 --> 00:08:32,070
+This is in the green.
+
+196
+00:08:32,070 --> 00:08:34,640
+And you can see it evens out, because as I
+
+197
+00:08:34,640 --> 00:08:39,440
+add more information in, it takes a bigger
+
+198
+00:08:39,440 --> 00:08:42,380
+swing to move that, because I'm taking the average at each
+
+199
+00:08:42,380 --> 00:08:43,760
+of these points.
+
+200
+00:08:43,760 --> 00:08:46,180
+Now, the only thing that you might be puzzled at
+
+201
+00:08:46,180 --> 00:08:47,870
+is what did I do here.
+
+202
+00:08:47,870 --> 00:08:50,170
+And for the first period, just for simplicity,
+
+203
+00:08:50,170 --> 00:08:53,310
+I assumed that the forecast for each were the actual, just
+
+204
+00:08:53,310 --> 00:08:54,060
+to get it started.
+
+205
+00:08:54,060 --> 00:08:56,460
+We'll talk more about how you initialize forecasts.
+
+206
+00:08:56,460 --> 00:08:59,180
+But for right now, just assume I made
+
+207
+00:08:59,180 --> 00:09:01,380
+an assumption of what it was.
+
+208
+00:09:01,380 --> 00:09:04,730
+But looking at this chart here at the bottom,
+
+209
+00:09:04,730 --> 00:09:06,030
+you see some big things.
+
+210
+00:09:06,030 --> 00:09:08,540
+And this is kind of the crux of a lot of forecasting
+
+211
+00:09:08,540 --> 00:09:09,830
+trade-offs.
+
+212
+00:09:09,830 --> 00:09:12,040
+You look at the difference between the red
+
+213
+00:09:12,040 --> 00:09:13,930
+or the naive forecast and the green
+
+214
+00:09:13,930 --> 00:09:16,050
+or the cumulative forecast, and you
+
+215
+00:09:16,050 --> 00:09:19,000
+can see that the cumulative forecast, the green one,
+
+216
+00:09:19,000 --> 00:09:20,600
+is very calm.
+
+217
+00:09:20,600 --> 00:09:22,610
+It's going to even things out.
+
+218
+00:09:22,610 --> 00:09:25,930
+While the naive one is very volatile, very nervous,
+
+219
+00:09:25,930 --> 00:09:28,620
+because it's going to reflect any change in the underlying
+
+220
+00:09:28,620 --> 00:09:29,810
+demand.
+
+221
+00:09:29,810 --> 00:09:32,540
+And so this trade off between calm and nervousness
+
+222
+00:09:32,540 --> 00:09:36,124
+will be common across all the forecasting that we do.
+
+223
+00:09:36,124 --> 00:09:37,540
+And you might say, well, obviously
+
+224
+00:09:37,540 --> 00:09:38,990
+the calm one is better.
+
+225
+00:09:38,990 --> 00:09:41,390
+But you have to look at the downside for that.
+
+226
+00:09:41,390 --> 00:09:44,610
+Naive models are much more responsive to a change
+
+227
+00:09:44,610 --> 00:09:45,960
+then the cumulative model.
+
+228
+00:09:45,960 --> 00:09:48,290
+The cumulative model will always be slower
+
+229
+00:09:48,290 --> 00:09:50,240
+to respond to any changes.
+
+230
+00:09:50,240 --> 00:09:51,890
+And that's a key feature.
+
+231
+00:09:51,890 --> 00:09:53,970
+So this trade off between the cumulative
+
+232
+00:09:53,970 --> 00:09:55,610
+using all the data that you have,
+
+233
+00:09:55,610 --> 00:09:57,750
+all the history, and the naive forecast,
+
+234
+00:09:57,750 --> 00:10:01,070
+only using the most recent, is at the core, the most basic
+
+235
+00:10:01,070 --> 00:10:02,280
+trade off in forecasting.
+
+236
+00:10:02,280 --> 00:10:05,044
+And we'll see this in more refined formats later.
+
+237
+00:10:05,044 --> 00:10:07,210
+But at the core of it, this is what it's getting at.
+
+238
+00:10:07,210 --> 00:10:10,150
+How much information do I want to use?
+

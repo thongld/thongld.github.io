@@ -1,0 +1,443 @@
+1
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/VXyRfgnzL2o
+
+2
+00:00:00,500 --> 00:00:04,860
+Hello, and welcome to chapter
+3 of Python for Informatics.
+
+3
+00:00:04,860 --> 00:00:06,990
+Chapter 1, chapter
+2-- now we're going
+
+4
+00:00:06,990 --> 00:00:08,880
+to get to something
+kind of program-y.
+
+5
+00:00:08,880 --> 00:00:13,800
+I mean, assignment statements
+and reserved words--
+
+6
+00:00:13,800 --> 00:00:15,590
+that's just kind of gurgling.
+
+7
+00:00:15,590 --> 00:00:18,010
+Now we're going to start
+seeing composition.
+
+8
+00:00:18,010 --> 00:00:21,230
+We're going to start seeing
+that conditional execution gets
+
+9
+00:00:21,230 --> 00:00:23,545
+us started sort of seeing
+the power of computers, where
+
+10
+00:00:23,545 --> 00:00:25,450
+you're starting
+to make decisions.
+
+11
+00:00:25,450 --> 00:00:29,930
+So as always, this lecture--
+and audio, video, and slides
+
+12
+00:00:29,930 --> 00:00:33,270
+are also available-- are
+copyright Creative Commons
+
+13
+00:00:33,270 --> 00:00:34,810
+attribution.
+
+14
+00:00:34,810 --> 00:00:39,680
+So conditional steps are
+steps that may or may not
+
+15
+00:00:39,680 --> 00:00:40,310
+be executed.
+
+16
+00:00:40,310 --> 00:00:43,560
+So here's a bit of code.
+
+17
+00:00:43,560 --> 00:00:45,390
+And I draw these pictures.
+
+18
+00:00:45,390 --> 00:00:48,100
+I won't draw too many of these
+pictures on the left-hand side.
+
+19
+00:00:48,100 --> 00:00:50,790
+If you've taken a programming
+class, you may have seen these.
+
+20
+00:00:50,790 --> 00:00:52,990
+They're sometimes
+called flow charts.
+
+21
+00:00:52,990 --> 00:00:55,690
+Sometimes people really
+think these are important.
+
+22
+00:00:55,690 --> 00:00:58,950
+I don't think they're all that
+important for understanding.
+
+23
+00:00:58,950 --> 00:01:01,160
+The Python code is here
+on the right-hand side.
+
+24
+00:01:01,160 --> 00:01:03,480
+And there's pictures
+on the left-hand side.
+
+25
+00:01:03,480 --> 00:01:06,760
+And the reality
+is that this may.
+
+26
+00:01:06,760 --> 00:01:10,300
+Initially, make more sense
+cognitively to you than this.
+
+27
+00:01:10,300 --> 00:01:13,710
+But this part on the right-hand
+side is what's important.
+
+28
+00:01:13,710 --> 00:01:15,840
+I like to call these road
+maps, so you can sort of
+
+29
+00:01:15,840 --> 00:01:19,610
+trace where the code is going
+by driving down a little road.
+
+30
+00:01:19,610 --> 00:01:22,490
+That's kind of something
+that you do once or twice.
+
+31
+00:01:22,490 --> 00:01:24,930
+And then pretty soon, you
+just start reading the code.
+
+32
+00:01:24,930 --> 00:01:26,763
+So I'm going to start
+on the right-hand side
+
+33
+00:01:26,763 --> 00:01:28,750
+here and just walk
+through the code.
+
+34
+00:01:28,750 --> 00:01:30,910
+Remember, code
+operates in sequence.
+
+35
+00:01:30,910 --> 00:01:36,657
+Well, there is a if, which
+is a special, reserved word.
+
+36
+00:01:36,657 --> 00:01:38,990
+It's one of those things that
+you can't-- you can't name
+
+37
+00:01:38,990 --> 00:01:41,150
+a variable if.
+
+38
+00:01:41,150 --> 00:01:45,320
+And it is our
+indication to Python
+
+39
+00:01:45,320 --> 00:01:47,670
+that the next statement
+that we're going to do
+
+40
+00:01:47,670 --> 00:01:50,240
+may or may not be executed-- if.
+
+41
+00:01:50,240 --> 00:01:52,080
+And the thing that
+comes on the same line
+
+42
+00:01:52,080 --> 00:01:57,120
+as the if, up to including the
+little colon is a question.
+
+43
+00:01:57,120 --> 00:01:58,950
+This is a question.
+
+44
+00:01:58,950 --> 00:02:01,020
+You're asking a question.
+
+45
+00:02:01,020 --> 00:02:05,320
+So an assignment statement is
+moving a value into a variable.
+
+46
+00:02:05,320 --> 00:02:08,120
+And an if statement
+is asking a question.
+
+47
+00:02:08,120 --> 00:02:10,440
+In this case, we're asking
+a question about a variable.
+
+48
+00:02:10,440 --> 00:02:13,700
+So always think, when
+you're sort of here,
+
+49
+00:02:13,700 --> 00:02:16,170
+that this is a
+question to be asked.
+
+50
+00:02:16,170 --> 00:02:18,890
+And you'll notice when I'm
+doing the same thing over here
+
+51
+00:02:18,890 --> 00:02:20,120
+I put a question mark there.
+
+52
+00:02:20,120 --> 00:02:22,780
+Is x less than 10, yes or no?
+
+53
+00:02:22,780 --> 00:02:24,740
+It's a question that
+has a yes or no.
+
+54
+00:02:24,740 --> 00:02:27,840
+And so the way this
+works is this statement
+
+55
+00:02:27,840 --> 00:02:31,010
+that's indented after
+the if is either
+
+56
+00:02:31,010 --> 00:02:34,450
+executed or not executed, based
+on the result of that question.
+
+57
+00:02:34,450 --> 00:02:38,090
+So the way to sort of read
+this in English is set x to 5.
+
+58
+00:02:38,090 --> 00:02:42,624
+If x is less than 10, which
+it is, because x is 5, then
+
+59
+00:02:42,624 --> 00:02:43,790
+we're going to execute this.
+
+60
+00:02:43,790 --> 00:02:45,759
+So print "Smaller" comes out.
+
+61
+00:02:45,759 --> 00:02:47,550
+And then we come back
+out, and we continue.
+
+62
+00:02:47,550 --> 00:02:50,460
+Say, OK, now I have another
+if statement and then a bit
+
+63
+00:02:50,460 --> 00:02:52,310
+of a block of indented code.
+
+64
+00:02:52,310 --> 00:02:55,770
+If x < 20-- that's the question.
+
+65
+00:02:55,770 --> 00:02:59,430
+The answer to that is no, and
+so it does not run that line,
+
+66
+00:02:59,430 --> 00:03:00,960
+and sort runs finis.
+
+67
+00:03:00,960 --> 00:03:05,080
+So the print out of this program
+is smaller, followed by finis.
+
+68
+00:03:05,080 --> 00:03:08,910
+What happens is this
+line never executes,
+
+69
+00:03:08,910 --> 00:03:11,345
+because the answer to
+this question is false.
+
+70
+00:03:11,345 --> 00:03:15,010
+
+71
+00:03:15,010 --> 00:03:16,625
+So let's go through
+that a faster.
+
+72
+00:03:16,625 --> 00:03:17,970
+Set x to 5.
+
+73
+00:03:17,970 --> 00:03:20,960
+If x < 10, print "Smaller".
+
+74
+00:03:20,960 --> 00:03:24,460
+Then, if x > 20, which
+it's not, skip that,
+
+75
+00:03:24,460 --> 00:03:26,180
+and then print "Finis".
+
+76
+00:03:26,180 --> 00:03:28,170
+That's the short version of it.
+
+77
+00:03:28,170 --> 00:03:30,730
+Conditional steps-- this
+step is conditional.
+
+78
+00:03:30,730 --> 00:03:32,030
+This step is conditional.
+
+79
+00:03:32,030 --> 00:03:34,400
+They may or may not
+be executed, based
+
+80
+00:03:34,400 --> 00:03:36,160
+on the result of the question.
+
+81
+00:03:36,160 --> 00:03:38,810
+Now, if we're thinking
+of this as like a GPS
+
+82
+00:03:38,810 --> 00:03:41,820
+roadmap or something, we can
+look at this right-hand side.
+
+83
+00:03:41,820 --> 00:03:44,710
+So the CPU comes
+roaring down here.
+
+84
+00:03:44,710 --> 00:03:45,580
+x equals 5.
+
+85
+00:03:45,580 --> 00:03:46,800
+OK, I'll run that.
+
+86
+00:03:46,800 --> 00:03:49,710
+Then it's faced with a choice.
+
+87
+00:03:49,710 --> 00:03:52,230
+Is x less than 10, yes or no?
+
+88
+00:03:52,230 --> 00:03:55,690
+If it is yes, and it
+is, I will go this way.
+
+89
+00:03:55,690 --> 00:03:57,590
+If it was no, I
+would go that way.
+
+90
+00:03:57,590 --> 00:03:58,742
+So if it's yes, I go here.
+
+91
+00:03:58,742 --> 00:04:00,950
+And I run this little thing
+and print smaller, great.
+
+92
+00:04:00,950 --> 00:04:02,250
+And I follow the little road.
+
+93
+00:04:02,250 --> 00:04:04,060
+And now the road
+takes me to here.
+
+94
+00:04:04,060 --> 00:04:05,870
+And it's asking
+another question.
+
+95
+00:04:05,870 --> 00:04:07,470
+Is x greater than 20?
+

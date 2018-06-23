@@ -1,0 +1,460 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/P42CwF29AUM
+
+1
+00:00:00,499 --> 00:00:02,950
+So our third forecasting truism is
+
+2
+00:00:02,950 --> 00:00:06,220
+that shorter horizon forecasts are more accurate.
+
+3
+00:00:06,220 --> 00:00:09,350
+The idea here is it's easier to predict the temperature
+
+4
+00:00:09,350 --> 00:00:12,140
+tomorrow than a year from tomorrow.
+
+5
+00:00:12,140 --> 00:00:14,470
+And it makes sense, because you have
+
+6
+00:00:14,470 --> 00:00:16,430
+more knowledge about the shorter term, what's
+
+7
+00:00:16,430 --> 00:00:17,930
+happening right now, than what might
+
+8
+00:00:17,930 --> 00:00:19,620
+be happening a year from now.
+
+9
+00:00:19,620 --> 00:00:22,020
+But this applies to shorter time horizons as well.
+
+10
+00:00:22,020 --> 00:00:24,590
+So let's go back to my favorite sandwich shop.
+
+11
+00:00:24,590 --> 00:00:27,390
+And just like it's easier to forecast for tomorrow
+
+12
+00:00:27,390 --> 00:00:29,250
+than a year from tomorrow, it's easier
+
+13
+00:00:29,250 --> 00:00:33,230
+to forecast on a very short time frame, say, a half an hour,
+
+14
+00:00:33,230 --> 00:00:35,870
+than it is for a whole day in advance.
+
+15
+00:00:35,870 --> 00:00:37,890
+So let's think about my sandwich shop here.
+
+16
+00:00:37,890 --> 00:00:39,829
+And I've got these four sandwiches over here
+
+17
+00:00:39,829 --> 00:00:40,370
+on the right.
+
+18
+00:00:40,370 --> 00:00:41,430
+
+
+19
+00:00:41,430 --> 00:00:42,610
+You see these guys.
+
+20
+00:00:42,610 --> 00:00:44,000
+And this is a time frame.
+
+21
+00:00:44,000 --> 00:00:48,300
+And I expect them to be consumed at noon on the following day.
+
+22
+00:00:48,300 --> 00:00:50,960
+And so this is going backwards in time.
+
+23
+00:00:50,960 --> 00:00:54,840
+So this is at 9 o'clock, or 2100 hours, the day before.
+
+24
+00:00:54,840 --> 00:00:58,080
+And let's say I have to make my sandwiches at that point.
+
+25
+00:00:58,080 --> 00:00:59,780
+Well, if I'm doing that, I'm making
+
+26
+00:00:59,780 --> 00:01:01,920
+a forecast for the next day.
+
+27
+00:01:01,920 --> 00:01:05,640
+And that's nine hours in advance.
+
+28
+00:01:05,640 --> 00:01:06,510
+And that's fine.
+
+29
+00:01:06,510 --> 00:01:07,830
+I can probably do that.
+
+30
+00:01:07,830 --> 00:01:10,560
+But I'm going to have a coefficient of variation.
+
+31
+00:01:10,560 --> 00:01:14,490
+So if I knew the variance of the demand for each one of these,
+
+32
+00:01:14,490 --> 00:01:16,665
+I could figure out what my coefficient of variation
+
+33
+00:01:16,665 --> 00:01:17,860
+would be.
+
+34
+00:01:17,860 --> 00:01:19,750
+But what if I did something different?
+
+35
+00:01:19,750 --> 00:01:23,690
+What if instead of making them all into a forecast,
+
+36
+00:01:23,690 --> 00:01:27,920
+make to stock the night before, instead I
+
+37
+00:01:27,920 --> 00:01:30,300
+will slice the ham that I think I will need.
+
+38
+00:01:30,300 --> 00:01:33,240
+And I'll have them ready so that one hour before, once I
+
+39
+00:01:33,240 --> 00:01:35,340
+see what the day is shaping up, I
+
+40
+00:01:35,340 --> 00:01:37,460
+make them at a much shorter time.
+
+41
+00:01:37,460 --> 00:01:39,620
+So I start making right before noon,
+
+42
+00:01:39,620 --> 00:01:41,510
+but I make my forecast for how much ham
+
+43
+00:01:41,510 --> 00:01:43,770
+I slice the day before.
+
+44
+00:01:43,770 --> 00:01:45,310
+What are we doing here?
+
+45
+00:01:45,310 --> 00:01:46,800
+Well, we're postponing.
+
+46
+00:01:46,800 --> 00:01:48,790
+We're postponing the final consumption
+
+47
+00:01:48,790 --> 00:01:53,170
+instead of making of four those items, each of those sandwiches
+
+48
+00:01:53,170 --> 00:01:56,760
+back here the day before, hoping to guess
+
+49
+00:01:56,760 --> 00:01:59,040
+what the demand for each would be.
+
+50
+00:01:59,040 --> 00:02:02,512
+I'm waiting and I'm pooling that demand for the ham
+
+51
+00:02:02,512 --> 00:02:03,970
+and I'm slicing that ahead of time.
+
+52
+00:02:03,970 --> 00:02:06,740
+And I'm not making that final customization
+
+53
+00:02:06,740 --> 00:02:08,240
+until the very end.
+
+54
+00:02:08,240 --> 00:02:12,020
+So this is another example of risk pooling and postponement.
+
+55
+00:02:12,020 --> 00:02:16,220
+So this will increase the forecast accuracy of the ham,
+
+56
+00:02:16,220 --> 00:02:19,020
+because what I'm doing is if I know the CV of each
+
+57
+00:02:19,020 --> 00:02:21,420
+of these sandwiches separately-- and let's say
+
+58
+00:02:21,420 --> 00:02:24,170
+they're identical, just for the sake of argument--
+
+59
+00:02:24,170 --> 00:02:28,260
+then I know my CV for ham for here
+
+60
+00:02:28,260 --> 00:02:33,620
+will be half of the CV for each of the individual items.
+
+61
+00:02:33,620 --> 00:02:34,510
+Why?
+
+62
+00:02:34,510 --> 00:02:39,760
+Because it's going to decrease by a factor square root of n. n
+
+63
+00:02:39,760 --> 00:02:42,880
+is 4 here-- one, two, three, four.
+
+64
+00:02:42,880 --> 00:02:46,920
+So the CV of the individual one divided by the square root of 4
+
+65
+00:02:46,920 --> 00:02:48,160
+is divided by 2.
+
+66
+00:02:48,160 --> 00:02:49,290
+So it's 1/2.
+
+67
+00:02:49,290 --> 00:02:52,660
+So my coefficient of variation is cut in half by postponing.
+
+68
+00:02:52,660 --> 00:02:54,020
+
+
+69
+00:02:54,020 --> 00:02:57,200
+So this is a simple example, but you see postponement
+
+70
+00:02:57,200 --> 00:02:57,980
+all the time.
+
+71
+00:02:57,980 --> 00:03:00,700
+And this is why we try to think about that concept as raw
+
+72
+00:03:00,700 --> 00:03:01,390
+as possible.
+
+73
+00:03:01,390 --> 00:03:03,200
+We talked about it in the first week.
+
+74
+00:03:03,200 --> 00:03:06,420
+The idea is you want to push and postpone
+
+75
+00:03:06,420 --> 00:03:09,260
+the final customization for as late as you can,
+
+76
+00:03:09,260 --> 00:03:11,860
+whether it's a high end electronics
+
+77
+00:03:11,860 --> 00:03:16,000
+item, a car, or even something as simple as a sandwich.
+
+78
+00:03:16,000 --> 00:03:18,250
+So let's look at all three of the truisms.
+
+79
+00:03:18,250 --> 00:03:21,170
+The first one is forecasts are always wrong.
+
+80
+00:03:21,170 --> 00:03:23,070
+People will say this to try to discount
+
+81
+00:03:23,070 --> 00:03:24,600
+the value of forecasting.
+
+82
+00:03:24,600 --> 00:03:26,470
+And it's really a bad argument.
+
+83
+00:03:26,470 --> 00:03:28,040
+The idea is that forecasts are wrong.
+
+84
+00:03:28,040 --> 00:03:28,810
+Yeah, it's true.
+
+85
+00:03:28,810 --> 00:03:29,930
+They will always be wrong.
+
+86
+00:03:29,930 --> 00:03:33,470
+But to combat that, you should use a range forecast.
+
+87
+00:03:33,470 --> 00:03:35,302
+You should track your forecast error,
+
+88
+00:03:35,302 --> 00:03:36,760
+because that's what you can use to,
+
+89
+00:03:36,760 --> 00:03:39,970
+one, improve your forecasting capabilities,
+
+90
+00:03:39,970 --> 00:03:42,110
+but also understand how it is used
+
+91
+00:03:42,110 --> 00:03:43,500
+within your different operations,
+
+92
+00:03:43,500 --> 00:03:45,680
+whether it's your inventory or capacity planning.
+
+93
+00:03:45,680 --> 00:03:46,730
+
+
+94
+00:03:46,730 --> 00:03:49,990
+The second truism is that aggregated forecasts are always
+
+95
+00:03:49,990 --> 00:03:51,120
+more accurate.
+
+96
+00:03:51,120 --> 00:03:53,690
+And this is true, and this gets the idea of risk pooling,
+
+97
+00:03:53,690 --> 00:03:56,720
+because risk pooling reduces the coefficient of variation.
+
+98
+00:03:56,720 --> 00:03:59,050
+And when you reduce the coefficient of variation,
+
+99
+00:03:59,050 --> 00:04:01,740
+it makes it easier and more accurate to do a forecast.
+
+100
+00:04:01,740 --> 00:04:03,390
+
+
+101
+00:04:03,390 --> 00:04:06,270
+And then the third truism was that shorter time horizon
+
+102
+00:04:06,270 --> 00:04:07,590
+forecasts are more accurate.
+
+103
+00:04:07,590 --> 00:04:09,080
+Again, it's true.
+
+104
+00:04:09,080 --> 00:04:10,214
+It's a truism.
+
+105
+00:04:10,214 --> 00:04:11,630
+And this leads to the idea that we
+
+106
+00:04:11,630 --> 00:04:14,710
+want to postpone customization as late as possible.
+
+107
+00:04:14,710 --> 00:04:17,230
+That raw as possible concept, keep
+
+108
+00:04:17,230 --> 00:04:21,320
+products as raw and customize as late as possible.
+
+109
+00:04:21,320 --> 00:04:23,850
+So these three truisms, yes, they're true.
+
+110
+00:04:23,850 --> 00:04:25,710
+But they lead to actions that you
+
+111
+00:04:25,710 --> 00:04:27,874
+should take within your supply chain.
+
+112
+00:04:27,874 --> 00:04:29,290
+And then the rest of the lectures,
+
+113
+00:04:29,290 --> 00:04:32,880
+we'll talk about how each of these impact the forecasting,
+
+114
+00:04:32,880 --> 00:04:36,950
+the inventory planning, as well as the transportation design.
+

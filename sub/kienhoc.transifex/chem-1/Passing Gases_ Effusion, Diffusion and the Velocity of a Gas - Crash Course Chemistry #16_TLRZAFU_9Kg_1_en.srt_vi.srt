@@ -1,0 +1,690 @@
+1
+00:00:00,540 --> 00:00:06,379
+tran.trann64 30/11
+Chào mừng bạn đến với một phiên bản khác của Crash Course! Ngày hôm này - mùi gì thế? ÔI, cảm ơn vì những quả trứng thối.
+
+2
+00:00:06,378 --> 00:00:09,410
+Ai vậy? Ai? Tại sao ta đang làm như thế này?
+
+3
+00:00:09,410 --> 00:00:13,219
+Ý tôi là, chúng ta sẽ sử dụng chúng để miêu tả một định luật khoa học nào sao?
+
+4
+00:00:13,220 --> 00:00:18,278
+Vì ta đã có thể dùng hoa đinh hương hay thứ gì đó khác trứng.
+
+5
+00:00:18,280 --> 00:00:24,320
+Như tôi đang nói, "Tôi có thể ngửi thấy chúng khi tôi đứng gần như vầy, nhưng nếu tôi đứng ở xa, tôi không thể ngửi thấy chúng."
+
+6
+00:00:24,320 --> 00:00:28,699
+Trứng sản sinh ra khí hydrogen sulfide khi chúng trở nên ôi thiu, ngửi như mùi lưu huỳnh.
+
+7
+00:00:28,699 --> 00:00:31,099
+Đó là những gì ta nghĩ đến khi ta nghĩ đến mùi lưu huỳnh.
+
+8
+00:00:31,099 --> 00:00:35,359
+Cần một khoảng thời gian để các phân tử hydrogen sulfide đi đến mũi tôi.
+
+9
+00:00:35,359 --> 00:00:38,600
+Vì rõ ràng là khí không di chuyển từ nơi này sang nơi khác ngay lập tức.
+
+10
+00:00:38,600 --> 00:00:41,480
+Nó cần thời gian vì, như ta đã được học trong những tuần vừa qua
+
+11
+00:00:41,479 --> 00:00:45,809
+Khí có những cản trở thật sự khi chúng di chuyển trong một môi trường không lý tưởng.
+
+12
+00:00:45,810 --> 00:00:49,120
+Có những luật để quyết định mức độ nhanh chậm một chiếc bánh xe lủng sẽ bị xì hơi.
+
+13
+00:00:49,119 --> 00:00:55,280
+Hay tại sao những quả bong bóng chứa khí helium không tồn tại mãi, và tại sao, ở đâu, khi nào, chúng ta ngửi thấy mọi thứ.
+
+14
+00:00:55,280 --> 00:01:01,219
+Một điểm máu chốt đẻ hiểu những về khí là vận tốc của nó, đó là tốc độ và hướng mà nó di chuyển.
+
+15
+00:01:01,219 --> 00:01:04,299
+Và đó phụ thuộc vào một số yếu tố vật chất.
+
+16
+00:01:04,308 --> 00:01:06,009
+Bạn đã sẵn sàng để học thêm chưa? Hãy cùng bắt đầu.
+
+17
+00:01:06,009 --> 00:01:07,980
+Mùi đó đến từ những quả trứng đúng không?
+
+18
+00:01:07,980 --> 00:01:17,180
+[nhạc nền]
+
+19
+00:01:17,180 --> 00:01:22,020
+"Vận tốc của một chất khí". Nó có nghĩa là gì? Ý tôi là, ta dễ dàng hiểu vận tốc của một chiếc xe.
+
+20
+00:01:22,019 --> 00:01:27,158
+Bạn có thẻ tìm vận tốc bằng cách chia quãng đường mà vật di chuyển với thời gian vật di chuyển.
+
+21
+00:01:27,159 --> 00:01:29,920
+Và sau đó cho biết nó đang di chuyển hướng nào, thế là xong.
+
+22
+00:01:29,920 --> 00:01:34,719
+Nhưng vận tốc của chất khí được miêu tả khó hơn, vì chúng di chuyển sang nhiều hướng củng một lúc.
+
+23
+00:01:34,719 --> 00:01:38,959
+Và hình dạng, thể tích của khối khí có thể thay đổi liên tục.
+
+24
+00:01:38,959 --> 00:01:42,829
+Để hiểu thêm về vận tốc của khí, ta phải biết những yếu tố nào ảnh hướng nó và ảnh hưởng như thể nào.
+
+25
+00:01:42,829 --> 00:01:45,890
+Như bạn có thể đoán được, nó có liên quan đến toán học.
+
+26
+00:01:45,890 --> 00:01:48,599
+Có hai cách để học và nói về các chất khí.
+
+27
+00:01:48,599 --> 00:01:53,559
+Đầu tiên, ta có thể coi chúng như một tập hợp các phân tử hay nguyên tử cùng nhau tạo thành một hệ thống.
+
+28
+00:01:53,560 --> 00:01:56,090
+Khi làm vậy, ta thường nói về tổng hợp vận tốc.
+
+29
+00:01:56,090 --> 00:01:59,130
+Hay mức độ nhanh chậm một khối khí di chuyển từ nơi này sang nơi khác.
+
+30
+00:01:59,129 --> 00:02:01,399
+Như mùi của quá trứng thối phảng phất đến mũi tôi.
+
+31
+00:02:01,400 --> 00:02:06,260
+Ở những thời điểm khác, ta tập trung vào cá nhân từng nguyên tử và phân tử tạo nên khí.
+
+32
+00:02:06,260 --> 00:02:10,158
+Lúc đó, ta dùng vận tốc trung bình cho mỗi phân tử.
+
+33
+00:02:10,159 --> 00:02:15,579
+Đó là ý nghĩa về tốc độ của các nguyên tử hay phân tử trong hệ thống.
+
+34
+00:02:15,580 --> 00:02:19,379
+Luôn có những phần tử nhanh hơn và những phần tử chậm hơn, nhưng trung bình thì chúng bằng nhau.
+
+35
+00:02:19,379 --> 00:02:24,659
+Tổng hợp vận tốc của một chất khí ở bất kì hướng nào cũng sẽ bé hơn vận tốc trung bình của từng phân tử.
+
+36
+00:02:24,669 --> 00:02:29,469
+Vì nói chung sự vận động của chất khí bị cản trở do va chạm giữa các phân tử.
+
+37
+00:02:29,468 --> 00:02:35,269
+Như mọi thứ khác trong hoá học, cũng như trong cuộc sống, mức độ nhanh chậm mà khí di chuyển phức tạp hơn bản chất ban đầu của nó.
+
+38
+00:02:35,269 --> 00:02:40,278
+Từng phần tử trong chất khi không bao giờ di chuyển với một vận tốc hay một hướng nhất định trong một khoảng thời gian dài.
+
+39
+00:02:40,280 --> 00:02:45,539
+Mặt khác, chúng va vào nhau điên cuồng, và vào thành của bình chứa và va vào lẫn nhau liên tục.
+
+40
+00:02:45,539 --> 00:02:47,278
+Nó  tương tự như một nhóm trẻ ở hành lang.
+
+41
+00:02:47,278 --> 00:02:51,188
+Từng cá nhân chúng có thể di chuyển nhanh, nhưng chúng va vào xung quang rất nhiều và bị phân tâm.
+
+42
+00:02:51,188 --> 00:02:53,180
+Cuối cùng chúng sẽ đi đến phòng ăn trưa.
+
+43
+00:02:53,180 --> 00:02:57,879
+Nhưng tốc độ chung của cả nhóm sẽ chậm hơn tốc độ của cá nhân từng đứa trẻ.
+
+44
+00:02:57,879 --> 00:03:00,939
+Vậy cái gì làm khí di chuyển nhanh hơn hay chậm hơn?
+
+45
+00:03:00,949 --> 00:03:04,730
+Ta đã biết các nguyên tử và phân tử khí chuyển động nhanh hơn khi nhiệt độ tăng.
+
+46
+00:03:04,729 --> 00:03:08,329
+Chúng ta có thể hiểu vì sao nó xảy ra bằng cách nhớ ra nhiệt độ thật sự là gì
+
+47
+00:03:08,330 --> 00:03:11,919
+Nhiệt độ là tính chất của vật chất mà tương xứng với mức trung bình
+
+48
+00:03:11,919 --> 00:03:15,680
+hay động năng của mọi nguyên tử hay phân tử trong hệ thống
+
+49
+00:03:15,680 --> 00:03:20,340
+Ta thưởng nghĩ đến nhiệt độ khi đo lường độ nóng, không phải độ nóng đó!
+
+50
+00:03:20,340 --> 00:03:24,229
+Mức độ lạnh hay nóng của một nguyên liệu, và nó liên quan đến chúng.
+
+51
+00:03:24,229 --> 00:03:28,840
+Nhưng khi bạn thật sự nói về nó đó chỉ là một cách để thể hiện động năng trung bình.
+
+52
+00:03:28,840 --> 00:03:32,740
+Lí do cái lò làm bạn phỏng là những phân tử di chuyển nhanh của cái lò
+
+53
+00:03:32,748 --> 00:03:37,748
+làm cho những phần tử trong tay bạn di chuyển nhanh đến mức chúng tách những tế bào và mô của bạn ra.
+
+54
+00:03:37,748 --> 00:03:39,840
+Nó chỉ là chuyển hoá động năng.
+
+55
+00:03:39,848 --> 00:03:43,840
+Và động năng thì liên quan gì đến vận tốc?
+Mọi thứ.
+
+56
+00:03:43,840 --> 00:03:48,239
+Nó cũng mô tả mối liên hệ giữa vận tốc của một phân tử và khối lượng của nó.
+
+57
+00:03:48,240 --> 00:03:52,520
+Vậy hiểu biết tốt về động năng sẽ giúp rất nhiều khi ta học về sự chuyển động của khí
+
+58
+00:03:52,528 --> 00:03:57,408
+Đầu tiền, công thử của động năng là một nửa m nhân v bình phương.
+
+59
+00:03:57,408 --> 00:04:02,048
+Như bạn đã thấy, mọi sự thay đổi của động năng đều trực tiếp liên hệ đến thay đổi trong vận tốc.
+
+60
+00:04:02,049 --> 00:04:05,278
+Nếu ta sắp xếp lại công thức, ta thấy rằng vận tốc bằng
+
+61
+00:04:05,278 --> 00:04:09,789
+căn bậc hai của hai lần động năng chia cho khối lượn của nó
+
+62
+00:04:09,789 --> 00:04:12,400
+Bài tập toán nho nhỏ này đánh dấu hai ý quan trọng.
+
+63
+00:04:12,400 --> 00:04:17,959
+Một: vì khối lượng là mẫu số, ta có thể nói rằng nó tỉ lệ thuận với vận tốc.
+
+64
+00:04:17,959 --> 00:04:22,680
+nghĩa là vật có khối lượng lớn hơn di chuyển chậm hơn vật nhỏ hơn với cùng động năng.
+
+65
+00:04:22,680 --> 00:04:26,780
+Hai: vận tốc tỉ lệ thuận với căn bậc hai của khối lượng
+
+66
+00:04:26,779 --> 00:04:31,139
+nghĩa là cần một sự thay đổi lớn ở khối lượng để tạo nên sự thay đổi về vận tốc.
+
+67
+00:04:31,149 --> 00:04:34,789
+Vậy giờ ta có thể mô tả vận tốc của chất khí liên hệ như thế nào với nhiệt độ của nó
+
+68
+00:04:34,790 --> 00:04:38,560
+động năng trung bình của nó, và khối lượng của phân tử.
+
+69
+00:04:38,560 --> 00:04:41,069
+Nhưng làm sao để ta nối chúng lại?
+
+70
+00:04:41,069 --> 00:04:43,899
+Đây là lúc cần nhà hoá học người Scotland Thomas Graham.
+
+71
+00:04:43,899 --> 00:04:47,639
+Năm 1846, Graham xuất bản nghiên cứu của ổng về chuyển động của các phân tử chất khí.
+
+72
+00:04:47,639 --> 00:04:52,050
+Ông thực hiện bằng cách dẫn khí qua một màng xốp.
+
+73
+00:04:52,050 --> 00:04:56,920
+Qúa trình chất khí đi qua lỗ hổng là sự xì thoát.
+
+74
+00:04:56,920 --> 00:04:59,800
+Graham rất hứng thú về việc chất khí di chuyển nhanh chậm như thế nào qua màng.
+
+75
+00:04:59,800 --> 00:05:03,090
+Nhưng cái này gọi là mức độ xì thoát, không phải vận tốc.
+
+76
+00:05:03,089 --> 00:05:07,339
+Lý do là vì ở đây chúng ta đo lượng khí đi qua ở mọi thời điểm
+
+77
+00:05:07,339 --> 00:05:09,729
+không phải khoảng cách mà chúng di chuyển trong khoảng thời gian đó
+
+78
+00:05:09,730 --> 00:05:14,860
+Chúng ta có thể đo số mol hay thể tích, nhưng mức độ xì thoát không bao giờ dùng khoảng cách.
+
+79
+00:05:14,860 --> 00:05:18,100
+Một thứ nữa trước khi ta đi tiếp, đừng để những kí hiệu làm bạn bối rối.
+
+80
+00:05:18,100 --> 00:05:24,640
+Chú ý rằng chữ v nhỏ cho biết vận tốc và chữ V lớn cho biết thể tích - sự gian nan của những kí hiệu.
+
+81
+00:05:24,639 --> 00:05:27,199
+Thomas Graham đo lường mức độ của sự xì thoát đối với nhiều loại khí.
+
+82
+00:05:27,199 --> 00:05:31,550
+và kết quả của ông hoàn toàn khớp với những gì chúng ta đã biết: khối lượng chất khi càng lớn
+
+83
+00:05:31,550 --> 00:05:32,780
+nó càng di chuyển chậm.
+
+84
+00:05:32,779 --> 00:05:37,259
+Từ quan sát của ông, Graham xây dựng một công thức, nay được biết là Định luật Graham của sự xì thoát.
+
+85
+00:05:37,269 --> 00:05:40,419
+để so sánh mức độ xì thoát của nhiều chất khí khác nhau.
+
+86
+00:05:40,420 --> 00:05:46,280
+Nó cho biết: ở điều kiện giống nhau,  tỉ số giữa mức độ xì thoát của khí a so với khí b
+
+87
+00:05:46,279 --> 00:05:52,439
+bằng tỉ số giữa căn bậc hai của khối lượng phân tử gam khí b so với căn bậc hai của khối lượng phân tử gam khí a
+
+88
+00:05:52,449 --> 00:05:55,930
+Qủa thật là rất dài, nhưng nó chỉ đảm bảo rằng điều chúng ta lập luận từ trước:
+
+89
+00:05:55,930 --> 00:06:01,280
+mức độ di chuyển của chất khí tỉ lệ thuận với căn bậc hai của khối lượng của nó
+
+90
+00:06:01,279 --> 00:06:05,479
+Ví dụ, nếu mất 4,5 phút để 1,0 lít khí helium khuếch tán qua màng xốp
+
+91
+00:06:05,480 --> 00:06:11,240
+mất bao lâu để 1,0 lít khí clo khuếch tán ở điều kiện tương đương?
+
+92
+00:06:11,240 --> 00:06:13,460
+Những gì ta cần để tìm ra điều này là Định luật Graham.
+
+93
+00:06:13,459 --> 00:06:16,479
+Hãy cho khí helium là khí a, và khí clo là khí b.
+
+94
+00:06:16,480 --> 00:06:21,160
+Đầu tiên ta phải tìm mức độ xì thoát của khí helium - trong trường hợp này, ta dùng thể tích vởi chữ V viết hoa.
+
+95
+00:06:21,160 --> 00:06:26,730
+Đối với khí helium, 1,0 lít trong 4,5 phút cho biết mức độ là 0,22 lít mỗi phút.
+
+96
+00:06:26,730 --> 00:06:32,509
+Vậy ta thay nó vào công thức - khí clo có khối lượng phân tử gam gấp 2 lần nguyên tử clo.
+
+97
+00:06:32,509 --> 00:06:38,370
+35,5 nhân hai bằng 70,9 và khối lượng phân tử gam của helium là 4,00
+
+98
+00:06:38,370 --> 00:06:39,639
+Cho hai số đó vào nữa
+
+99
+00:06:39,639 --> 00:06:46,599
+Tính toán cẩn thận cho thấy mức độ xì thoát của Cl2 trong điều kiện đó sẽ bằng 0,052 lít một phút.
+
+100
+00:06:46,600 --> 00:06:48,680
+thấp hơn đáng kể so với khí helium
+
+101
+00:06:48,680 --> 00:06:52,129
+Đây là điều đương nhiên vì Cl2 nặng hơn nhiều so với helium.
+
+102
+00:06:52,129 --> 00:06:54,930
+Phần lớn Graham nghiên cứu các chất khi đi qua lỗ hổng của màng,
+
+103
+00:06:54,930 --> 00:06:58,829
+nhưng các chất khí thường không bị mắc kẹt trong lỗ hổng của mảng.
+
+104
+00:06:58,829 --> 00:07:03,209
+Chúng thường có khả năng di chuyển tự do, vậy làm thế nào để ta nghiên cứu về chuyển động của chúng trong những điều kiện đó?
+
+105
+00:07:03,209 --> 00:07:04,609
+Khi các chất khí được phép di chuyển tự do
+
+106
+00:07:04,610 --> 00:07:08,569
+chúng thường di chuyển từ nơi có nồng độ cao sang nơi có nồng độ thấp.
+
+107
+00:07:08,569 --> 00:07:11,199
+Nói cách khác, chúng di chuyển ra khỏi những nơi đông đúc
+
+108
+00:07:11,199 --> 00:07:13,750
+và đến những nơi có nhiều ngóc ngách hơn.
+
+109
+00:07:13,750 --> 00:07:17,839
+Sự khác biệt trong nồng độ của hai điểm được gọi là nồng độ Gradient
+
+110
+00:07:17,839 --> 00:07:22,909
+nó cũng khác giống một cái đồi mà vật chất lăn xuống, luôn di chuyển từ cao xuống thấp.
+
+111
+00:07:22,910 --> 00:07:26,960
+Chất khí phân tán như vậy cho đến khi chúng phân bố đều suốt khoảng không gian cho phép.
+
+112
+00:07:26,959 --> 00:07:28,759
+Qúa trình này gọi là sự khuếch tán.
+
+113
+00:07:28,759 --> 00:07:34,819
+Rất quan trọng bạn cần nhớ rằng các phần tử trong chất khi không hợp tác để di chuyển về một hướng nhất định.
+
+114
+00:07:34,819 --> 00:07:37,199
+Nhớ những đứa trẻ đi trên hành lang không?
+
+115
+00:07:37,199 --> 00:07:39,339
+Chúng đều biết phòng ăn trưa ở đâu, và chúng đang đói
+
+116
+00:07:39,339 --> 00:07:43,560
+vậy nên cho dù có nhiều sự phân tâm, chúng đều di chuyển có chủ đích đến địa điểm của chúng.
+
+117
+00:07:43,560 --> 00:07:47,079
+Mặt khác, những chất khí chỉ thường di chuyển theo một hướng nhất định.
+
+118
+00:07:47,079 --> 00:07:52,859
+Thật sự chúng chỉ là sự van chạm đẩy những nguyên tử đi xa, vì vậy nên làm chúng lan toả ra nhiều hướng.
+
+119
+00:07:52,860 --> 00:07:57,879
+Nói cách khác, chất khí mùi trứng thối mà tôi ngửi trước kia không chỉ di chuyển vào mũi tôi.
+
+120
+00:07:57,889 --> 00:08:00,829
+những phân tử của nó lan toả ra theo nhiều hướng từ quả trứng
+
+121
+00:08:00,829 --> 00:08:04,449
+và đơn giản là mũi tôi nhận ra những nguyên tử đã lan toả theo hướng đó
+
+122
+00:08:04,449 --> 00:08:07,149
+Do sự khuếch tán là một chuyển động hoàn toàn tự do,
+
+123
+00:08:07,149 --> 00:08:09,829
+để tính toán chuyển động của từng phân tử khá phức tạp
+
+124
+00:08:09,829 --> 00:08:13,418
+Giờ ta sẽ không đi vào những phép toán phức tạp của những sự va chạm này
+
+125
+00:08:13,418 --> 00:08:16,859
+nhưng ta có thể có những ước tính về tổng hợp vận tốc của các chất khí.
+
+126
+00:08:16,860 --> 00:08:22,080
+đơn giản bằng cách loại bỏ sự va chạm và áp dụng định luật xì thoát khí của Graham vào sự khuếch tán.
+
+127
+00:08:22,089 --> 00:08:25,789
+Cách thức hoạt động: đây là một ống làm bằng acrylic - không có gì sang trọng cả.
+
+128
+00:08:25,790 --> 00:08:29,460
+Ở một đầu, ta có một viên bông gòn thấm amoniac đậm đặc.
+
+129
+00:08:29,459 --> 00:08:33,149
+và ở đầu khác là một viên bông gòn thấm acid hydrochloric đậm đặc.
+
+130
+00:08:33,149 --> 00:08:35,490
+đó là lý do ta đang thực hiện ở phòng thí nghiệm chứ không phải ở bàn làm việc của tôi
+
+131
+00:08:35,490 --> 00:08:39,198
+Hai chất này đều rất hôi vì chúng bốc mùi
+
+132
+00:08:39,198 --> 00:08:43,848
+hay nói cách khác có rất nhiều nguyên tử trong dung dịch đang thoát ra dưới dạng khí.
+
+133
+00:08:43,849 --> 00:08:49,469
+Khi ta cho hai viên bông gòn vào ống thuỷ tinh và đóng chặt hai đầu, những khí đó tiếp tục lan toả.
+
+134
+00:08:49,470 --> 00:08:52,899
+nhưng chúng không có chỗ để di chuyển ngoại trừ đi xa hơn vào ống.
+
+135
+00:08:52,899 --> 00:08:58,699
+Sự thật thú vị: amoniac và acid hydrochloric phản ứng với nhau tạo thành một chất rắn - ammnonium chloride
+
+136
+00:08:58,700 --> 00:09:03,540
+Đó là phản ứng kết tủa, nhưng lần này nó đang xảy ra với hỗn hợp chất khí chứ không phải dung dịch
+
+137
+00:09:03,539 --> 00:09:06,000
+Vì ammonium chloride là một chát rắn ở nhiệt độ phòng
+
+138
+00:09:06,009 --> 00:09:09,519
+nó tạo thành một loại bột trắng nhuyễn nơi gặp nhau giữa hai chất khí trong ống
+
+139
+00:09:09,519 --> 00:09:13,979
+vì vậy ta sẽ có thể nói chính xác khoảng cách mỗi khí đã di chuyển trước khi chúng gặp nhau
+
+140
+00:09:13,980 --> 00:09:15,860
+Hãy thử tìm ra nơi đó ở đâu.
+
+141
+00:09:15,870 --> 00:09:19,730
+Đầu tiên, nhớ rằng định luật của Graham chỉ là một ước tính khi áp dụng cho sự khuếch tán
+
+142
+00:09:19,730 --> 00:09:22,499
+nhưng ước tính đó đủ để áp dụng vào mục đích của chúng ta ở đây
+
+143
+00:09:22,500 --> 00:09:29,198
+Khối lượng phân tử gam của ammoniac, ta gọi là khí a, là 17 và khối lượng phân tử gam của acid hydrochloric, khí b, là 36.
+
+144
+00:09:29,198 --> 00:09:33,049
+Nếu ta thay vào công thức, và đặt mức khuếch tán của acid hydrochloric là 1,0
+
+145
+00:09:33,049 --> 00:09:35,838
+vì ta chỉ tìm tỉ lệ
+
+146
+00:09:35,840 --> 00:09:41,639
+ta sẽ thấy rằng mức khuếch tán của amoniac nhanh hơn 1,5 lần so với acid hydrochloric
+
+147
+00:09:41,639 --> 00:09:46,939
+Nghĩa là ammonium chloride sẽ hình thành ở khoảng 3/5 ống cách NH3
+
+148
+00:09:46,948 --> 00:09:49,728
+và khoảng 2/5 ống cách HCl
+
+149
+00:09:49,729 --> 00:09:55,229
+Và đây rồi. Thấy khói trắng đó không? Đó là chất bột ammonium chloride đang hình thành.
+
+150
+00:09:55,229 --> 00:09:56,740
+Cuối cùng nó sẽ ổn định trong ống.
+
+151
+00:09:56,740 --> 00:10:01,360
+nhưng nó nhuyễn đến mức cả những dòng dịch chuyển nhỏ nhất xảy ra khi hai chất khí trộn lẫn cũng đủ để đảo lộn nó
+
+152
+00:10:01,360 --> 00:10:04,519
+Amoniac đã di chuyển vào 3/5 ống
+
+153
+00:10:04,528 --> 00:10:08,220
+Trong khi đó acid hydrochloric chỉ di chuyển 2/5 ống.
+
+154
+00:10:08,220 --> 00:10:11,389
+Vậy ta đã chứng minh thành công định luật của Graham.
+
+155
+00:10:11,389 --> 00:10:16,700
+Khoảng cách mà hai chất khí di chuyển tỉ lệ thuận với khối lượng phân tử gam của chúng. Có lý.
+
+156
+00:10:16,700 --> 00:10:21,300
+Đó là một điều thú vị về khoa học: nó luôn có lý, một khi bạn biết bạn đang tìm thứ gì.
+
+157
+00:10:21,299 --> 00:10:24,878
+Vậy là kết thúc tập này của Crash Course Chemistry. Cảm ơn vì đã theo dõi.
+
+158
+00:10:24,879 --> 00:10:28,850
+Nếu bạn nghe cẩn thận, bạn đã học về sự khác nhau giữa tổng hợp vận tốc của một chất khí
+
+159
+00:10:28,850 --> 00:10:30,920
+và vận tốc trung bình của các phân tử
+
+160
+00:10:30,919 --> 00:10:34,868
+và hai thứ đó liên quan nhiều đến khối lượng và động năng của các phân tử.
+
+161
+00:10:34,869 --> 00:10:38,949
+Bạn đã học về sự xì thoát và định luật xì thoát của Thomas Graham
+
+162
+00:10:38,948 --> 00:10:42,568
+và định luật xì thoát cũng có thể áp dụng cho sự khuếch tán như thế nào, dù không đáng tin cậy lắm.
+
+163
+00:10:42,568 --> 00:10:45,990
+Bạn cũng đã học được rằng sự va chạm xảy ra giữa các phân tử chất khí
+
+164
+00:10:45,990 --> 00:10:50,210
+có tác động to lớn đến chuyển động của chất khí và cách ta thử tính toán.
+
+165
+00:10:50,210 --> 00:10:52,300
+Bạn đã học được nồng độ Gradient là gì
+
+166
+00:10:52,299 --> 00:10:56,028
+và cuối cùng, bạn biết cách tạo một phản ứng kết tủa với những chất khí.
+
+167
+00:10:56,028 --> 00:10:58,328
+Nội dung của tập này được viết bởi Edi González.
+
+168
+00:10:58,328 --> 00:11:02,149
+người mà tôi phải ca ngợi vì chỉ viết một câu đùa trong toàn bộ kịch bản!
+
+169
+00:11:02,149 --> 00:11:04,789
+Kịch bản được sửa bởi Blake de Pastino và tôi.
+
+170
+00:11:04,789 --> 00:11:07,188
+Cố vấn hoá học là Tiến sĩ Dr. Helko Langner.
+
+171
+00:11:07,188 --> 00:11:11,419
+Nội dung được biên tập chỉnh sửa, đạo diễn và dàn dựng bởi Nicholas Jenkins. Giám sát kịch bản là Caitlin Hofmeister.
+
+172
+00:11:11,419 --> 00:11:15,079
+Thiết kế âm thanh là Michael Aranda và đội ngũ đồ hoạ là Thought Cafe.
+

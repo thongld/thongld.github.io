@@ -1,0 +1,139 @@
+1
+00:00:04,650 --> 00:00:12,889
+'https://youtu.be/zcIU2YH6QuU
+Nào, bây giờ tôi sẽ đưa ra một vài ví dụ nhỏ, 
+đại loại là để giúp các bạn có một số ý niệm
+
+2
+00:00:12,889 --> 00:00:17,20
+về sức mạnh của việc tính lãi kép, 
+và tiện thể, như tôi thường nói
+
+3
+00:00:17,20 --> 00:00:21,580
+là nếu bạn hiểu được 
+cách tính lãi kép là bạn đã thành công rồi đó, bởi vì
+
+4
+00:00:21,580 --> 00:00:26,28
+đây là một khái niêm khá phức tạp, 
+phi tuyến tính và rất  khó 
+
+5
+00:00:26,29 --> 00:00:31,800
+hiểu. Và , giờ tôi cũng sẽ 
+giới thiệu công cụ exel , chúng ta cùng làm một bài tập  
+
+6
+00:00:31,800 --> 00:00:37,830
+Bài tập đó đây. Giả sử bạn đầ tư $1000
+bằng cách gửi vào ngân hàng với lãi suất 10%.
+
+7
+00:00:37,830 --> 00:00:44,70
+Chúng ta vẫn sẽ dùng số làm tròn để 
+dễ tính. Chúng ta đã tính xong cho 1 kỳ, chúng ta đã tính xong cho 2 kỳ
+
+8
+00:00:44,70 --> 00:00:48,30
+Tính cho kỳ đẩu rất dễ,  bạn có thể 
+chỉ cần tính nhẩm trong đầu
+
+9
+00:00:48,30 --> 00:00:53,50
+Tính cho 2 kỳ bắt đầu trở nên 
+phức tạp hơn một chút. Đúng không ạ? Như vậy, chúng ta có gì
+
+
+10
+00:00:53,50 --> 00:00:58,99
+rồi nào. Để tính cho 2 kỳ, chúng ta cần quan tâm tới cái gì ?
+Không chỉ là số tiền $100 có được sau 1 năm
+
+11
+00:00:58,100 --> 00:01:02,210
+tính trên khoản tiền ban đầu $1000, 
+mà là điều gì xảy ra với $100 này sau
+
+12
+00:01:02,210 --> 00:01:08,180
+một năm. Khoản tiền này cũng phải sinh ra tiền. Điều đó 
+chẳng sai trái gì cả. Đúng không ạ? Tiền cả mà
+
+13
+00:01:08,180 --> 00:01:16,310
+Đây, mở rộng ra cho 10 kỳ. Như vậy, để tôi vẽ
+trục thời gian. Tôi sẽ hỏi bạn thế này
+
+14
+00:01:16,310 --> 00:01:23,420
+Bạn gửi $1000 vào ngân hàng và 
+sau 10 năm bạn sẽ có bao nhiêu ?
+
+15
+00:01:23,420 --> 00:01:33,860
+Bao nhiêu kỳ đã trôi qua? 10. Vậy,  tôi đang hỏi 
+giá trị tương lai của khoản tiền này là bao nhiêu? Phải không ạ?
+
+16
+00:01:33,860 --> 00:01:44,820
+Để tôi ghi lại các con số. Chúng ta có P, 
+nhân với (1+R). Lũy thừa lên bao nhiêu?
+
+17
+00:01:44,820 --> 00:01:55,630
+Không phải là 2 nữa mà giờ là 10. Giờ hãy thay số
+ vào. Như vậy, P = 1000, và  ta có 1 + 0.1
+
+18
+00:01:55,630 --> 00:02:01,560
+Hãy nhớ tỷ suất lợi nhuận 
+luôn được để ở dạng thập phân. Đúng không ạ? Bạn
+
+19
+00:02:01,560 --> 00:02:07,330
+sẽ không muốn thấy ghi là 10 ở đây đâu. Điều đó sẽ thật kinh khủng, và lũy thừa lên
+
+20
+00:02:07,330 --> 00:02:12,590
+10. Giờ, nếu nhìn vào đây, và nếu bạn 
+còn tính nhẩm được thì 
+
+21
+00:02:12,590 --> 00:02:13,700
+có thể bạn đã tính rất sai rồi đấy
+
+22
+00:02:13,700 --> 00:02:17,549
+Bạn biết không? Ý tôi là bạn không nên
+tự chuốc lấy kết quả sai bằng cách tính nhẩm mấy cái đó
+
+23
+00:02:17,550 --> 00:02:23,910
+vì cuộc sống này còn đầy thứ thú vị hơn cho bạn làm.
+ Cho nên, việc tôi sẽ làm tiếp theo, khi 
+
+24
+00:02:23,910 --> 00:02:29,650
+ chúng ta quay lại bài học, là tôi muốn giới thiệu 
+excel cho các bạn, nhưng hãy nhớ rằng những hàm ta sử dụng  
+
+25
+00:02:29,650 --> 00:02:34,280
+sẽ tương tự với những thuật ngữ mà ta 
+đã biết trước đây
+
+26
+00:02:34,280 --> 00:02:38,790
+Được rồi, vậy hãy chuẩn bị và tôi mong các bạn 
+sẽ dành chút thời gian, cố gắng tìm xem
+
+27
+00:02:38,790 --> 00:02:43,190
+Excel nằm ở đâu. Mở bảng tính excel ra nếu 
+các bạn chưa từng dùng excel bao giờ. Và sau đó chúng ta sẽ
+
+28
+00:02:43,190 --> 00:02:43,750
+cùng làm
+

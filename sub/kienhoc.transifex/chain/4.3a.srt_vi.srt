@@ -1,0 +1,132 @@
+0
+00:00:00,000 --> 00:00:00,790
+tangoclinhh_1/10/2017
+
+1
+00:00:00,790 --> 00:00:03,730
+Trong bài học này, ta sẽ mở rộng thêm về
+
+2
+00:00:03,730 --> 00:00:04,400
+mô hình EOQ.
+
+3
+00:00:04,400 --> 00:00:06,925
+Ta đã thấy mô hình này hữu ích như thế nào trong bài học trước,
+
+4
+00:00:06,925 --> 00:00:08,300
+và giờ ta sẽ xem ta có thể vận dụng
+
+5
+00:00:08,300 --> 00:00:12,417
+mô hình cực kỳ đơn giản này vào các trường hợp khác nhau như thế nào.
+
+6
+00:00:12,417 --> 00:00:14,375
+Và nếu tôi trở về những giả định mà ta đã đưa ra,
+
+7
+00:00:14,375 --> 00:00:17,410
+ta sẽ nới lỏng một số giả định
+
+8
+00:00:17,410 --> 00:00:20,980
+để tạo ra những tình huống giống với thực tế hơn.
+
+9
+00:00:20,980 --> 00:00:22,850
+Đầu tiên ta sẽ
+
+10
+00:00:22,850 --> 00:00:25,550
+nới lỏng thời gian chờ hàng.
+
+11
+00:00:25,550 --> 00:00:27,550
+Ta sẽ không giả định rằng
+
+12
+00:00:27,550 --> 00:00:29,310
+thời gian chờ hàng là ngay tức khắc nữa,
+
+13
+00:00:29,310 --> 00:00:33,200
+mà sẽ cho nó ở mức cố định để có một
+
+14
+00:00:33,200 --> 00:00:34,170
+thời gian chờ hàng dương và có thực.
+
+15
+00:00:34,170 --> 00:00:36,350
+Sau đó ta sẽ chuyển sang chiết khấu.
+
+16
+00:00:36,350 --> 00:00:39,020
+Ta sẽ xem điều gì sẽ xảy ra nếu
+
+17
+00:00:39,020 --> 00:00:41,760
+giá bán của một sản phẩm mà tôi đưa ra
+
+18
+00:00:41,760 --> 00:00:43,520
+là một hàm số của giá mà tôi đặt sản phẩm đó về.
+
+19
+00:00:43,520 --> 00:00:46,470
+Ta sẽ xem xét 3 loại chiết khấu khác nhau,
+
+20
+00:00:46,470 --> 00:00:50,290
+đó là mua tất cả các đơn vị, mua tăng dần và mua một lần.
+
+21
+00:00:50,290 --> 00:00:51,876
+Và cuối cùng, ta sẽ
+
+22
+00:00:51,876 --> 00:00:53,250
+trở lại với thời gian chờ hàng,
+
+23
+00:00:53,250 --> 00:00:57,890
+ta sẽ nghiên cứu khái niệm
+
+24
+00:00:57,890 --> 00:00:58,630
+bổ sung hàng nội bộ.
+
+25
+00:00:58,630 --> 00:01:01,190
+Thay vì nhận tất cả sản phẩm ngay lập tức
+
+26
+00:01:01,190 --> 00:01:03,910
+trong một lần giao hàng lớn,
+
+27
+00:01:03,910 --> 00:01:06,530
+ta sẽ nghiên cứu trường hợp
+
+28
+00:01:06,530 --> 00:01:09,160
+tôi tự tạo ra hàng hóa của mình khi cần đặt hàng.
+
+29
+00:01:09,160 --> 00:01:12,060
+Do đó tôi sẽ dần dần bổ sung hàng nhiều hơn.
+
+30
+00:01:12,060 --> 00:01:14,370
+Đó là 3 sự mở rộng
+
+31
+00:01:14,370 --> 00:01:16,790
+ta sẽ đưa ra trong bài học này.
+
+32
+00:01:16,790 --> 00:01:17,530
+
+

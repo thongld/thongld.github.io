@@ -1,0 +1,392 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/-S9ohEF1o7c
+
+1
+00:00:00,500 --> 00:00:03,580
+OK, let's go over the key points from this lesson.
+
+2
+00:00:03,580 --> 00:00:07,040
+The first one is the forecasting is a means not
+
+3
+00:00:07,040 --> 00:00:08,530
+an end by itself.
+
+4
+00:00:08,530 --> 00:00:10,570
+It's part of a larger demand shaping,
+
+5
+00:00:10,570 --> 00:00:13,590
+demand planning, demand management process.
+
+6
+00:00:13,590 --> 00:00:15,580
+And it's not just being forecasting
+
+7
+00:00:15,580 --> 00:00:17,350
+for forecasting sake.
+
+8
+00:00:17,350 --> 00:00:20,080
+It's being used for a purpose, whether it's
+
+9
+00:00:20,080 --> 00:00:22,840
+to plan your inventory, plan your capacity,
+
+10
+00:00:22,840 --> 00:00:24,310
+plan your operations.
+
+11
+00:00:24,310 --> 00:00:26,040
+But it's part of a larger process.
+
+12
+00:00:26,040 --> 00:00:27,873
+And it's important to remember that whenever
+
+13
+00:00:27,873 --> 00:00:30,400
+you do any kind of forecasting.
+
+14
+00:00:30,400 --> 00:00:32,396
+Then we talked about three truisms.
+
+15
+00:00:32,396 --> 00:00:33,770
+And the interesting thing-- these
+
+16
+00:00:33,770 --> 00:00:35,250
+are always fun to talk about.
+
+17
+00:00:35,250 --> 00:00:37,970
+But what's more interesting is what are the implications.
+
+18
+00:00:37,970 --> 00:00:41,440
+So first, we talked about that all forecasts are wrong.
+
+19
+00:00:41,440 --> 00:00:42,490
+This is true.
+
+20
+00:00:42,490 --> 00:00:43,491
+But what does this mean?
+
+21
+00:00:43,491 --> 00:00:44,990
+Well, this means you should probably
+
+22
+00:00:44,990 --> 00:00:46,210
+think about range forecasts.
+
+23
+00:00:46,210 --> 00:00:49,840
+Get at a range of possible values that you're estimating.
+
+24
+00:00:49,840 --> 00:00:51,710
+And also look at the error terms.
+
+25
+00:00:51,710 --> 00:00:53,620
+Capture your forecast errors, because that'll
+
+26
+00:00:53,620 --> 00:00:58,910
+help you create a more robust forecast.
+
+27
+00:00:58,910 --> 00:01:01,350
+The second truism is that aggregated forecasts
+
+28
+00:01:01,350 --> 00:01:02,910
+are more accurate.
+
+29
+00:01:02,910 --> 00:01:05,209
+And the idea here is that yes, you
+
+30
+00:01:05,209 --> 00:01:08,720
+want to aggregate over SKUs, over time, over locations
+
+31
+00:01:08,720 --> 00:01:09,930
+wherever possible.
+
+32
+00:01:09,930 --> 00:01:11,980
+And this is the idea of risk pooling, where
+
+33
+00:01:11,980 --> 00:01:14,140
+if I pool different things together,
+
+34
+00:01:14,140 --> 00:01:17,000
+I can share and minimize the overall risk
+
+35
+00:01:17,000 --> 00:01:19,910
+and the overall coefficient of variation.
+
+36
+00:01:19,910 --> 00:01:22,870
+And then the third one was that shorter horizon forecasts
+
+37
+00:01:22,870 --> 00:01:24,990
+are more accurate than longer horizon.
+
+38
+00:01:24,990 --> 00:01:27,200
+It's easier to predict tomorrow's temperature
+
+39
+00:01:27,200 --> 00:01:29,070
+than a year from tomorrow.
+
+40
+00:01:29,070 --> 00:01:31,830
+And this suggests the idea of postponement.
+
+41
+00:01:31,830 --> 00:01:35,160
+I want to move that point of final customization
+
+42
+00:01:35,160 --> 00:01:39,190
+as close to the final point of consumption as possible.
+
+43
+00:01:39,190 --> 00:01:41,750
+Because then I'm predicting my forecasts
+
+44
+00:01:41,750 --> 00:01:43,650
+over a much shorter horizon.
+
+45
+00:01:43,650 --> 00:01:45,620
+So all three of these truisms, while they're
+
+46
+00:01:45,620 --> 00:01:48,880
+fun to talk about, have direct implications
+
+47
+00:01:48,880 --> 00:01:51,830
+of how you want to manage your operations.
+
+48
+00:01:51,830 --> 00:01:54,420
+Then we went into different approaches for forecasting.
+
+49
+00:01:54,420 --> 00:01:57,260
+We talked about subjective and objective approaches.
+
+50
+00:01:57,260 --> 00:01:58,870
+On the subjective side, we looked
+
+51
+00:01:58,870 --> 00:02:01,590
+at judgemental approaches.
+
+52
+00:02:01,590 --> 00:02:04,580
+And these are the idea where someone, somewhere knows
+
+53
+00:02:04,580 --> 00:02:07,290
+what the forecast is, what the actual demand is going to be.
+
+54
+00:02:07,290 --> 00:02:09,950
+And our job is to try to extract that from as many people
+
+55
+00:02:09,950 --> 00:02:12,620
+and find out what the real answer is.
+
+56
+00:02:12,620 --> 00:02:14,910
+Then we talked about experimental.
+
+57
+00:02:14,910 --> 00:02:16,490
+Another subjective approach, and this
+
+58
+00:02:16,490 --> 00:02:21,680
+is where you test on a small sample
+
+59
+00:02:21,680 --> 00:02:24,540
+and you extrapolate to the larger market.
+
+60
+00:02:24,540 --> 00:02:28,240
+We talked about two objective approaches, causal analysis,
+
+61
+00:02:28,240 --> 00:02:30,650
+and this is where we think there's an underlying driving
+
+62
+00:02:30,650 --> 00:02:33,900
+factor for demand that we can capture and measure ahead
+
+63
+00:02:33,900 --> 00:02:34,730
+of time.
+
+64
+00:02:34,730 --> 00:02:38,250
+And I use that as a proxy to forecast demand.
+
+65
+00:02:38,250 --> 00:02:39,800
+Then we talked about time series,
+
+66
+00:02:39,800 --> 00:02:41,240
+which is very different.
+
+67
+00:02:41,240 --> 00:02:42,810
+It's a black box approach.
+
+68
+00:02:42,810 --> 00:02:46,050
+And then we look at past history and we look at patterns.
+
+69
+00:02:46,050 --> 00:02:49,960
+And we try to find what patterns exist and use those patterns
+
+70
+00:02:49,960 --> 00:02:51,680
+to predict the future.
+
+71
+00:02:51,680 --> 00:02:54,080
+So all four of these approaches are used.
+
+72
+00:02:54,080 --> 00:02:55,250
+They're all valid.
+
+73
+00:02:55,250 --> 00:02:57,710
+In fact, most companies use a combination of these.
+
+74
+00:02:57,710 --> 00:02:59,540
+You don't just use one type.
+
+75
+00:02:59,540 --> 00:03:03,070
+You use a wide range that gives you more information.
+
+76
+00:03:03,070 --> 00:03:05,960
+So while we'll talk about them individually,
+
+77
+00:03:05,960 --> 00:03:07,650
+you should think about when you use,
+
+78
+00:03:07,650 --> 00:03:10,440
+when you're developing for forecasting any kind of models,
+
+79
+00:03:10,440 --> 00:03:12,280
+you want to look at all of these approaches,
+
+80
+00:03:12,280 --> 00:03:15,889
+because they're all valid in different situations.
+
+81
+00:03:15,889 --> 00:03:17,430
+And finally, we wrapped up by talking
+
+82
+00:03:17,430 --> 00:03:19,360
+about forecasting metrics.
+
+83
+00:03:19,360 --> 00:03:22,140
+And the idea that we first talked about
+
+84
+00:03:22,140 --> 00:03:26,050
+was the idea of accuracy and bias and how those trade off.
+
+85
+00:03:26,050 --> 00:03:28,860
+You need to capture both bias and accuracy.
+
+86
+00:03:28,860 --> 00:03:30,760
+And then we talked about three metrics--
+
+87
+00:03:30,760 --> 00:03:33,230
+the mean absolute deviation, root mean square
+
+88
+00:03:33,230 --> 00:03:35,567
+error, and the mean absolute percent error,
+
+89
+00:03:35,567 --> 00:03:36,400
+and some other ones.
+
+90
+00:03:36,400 --> 00:03:38,690
+But these are the three common ones.
+
+91
+00:03:38,690 --> 00:03:40,900
+So we'll be using all these different metrics
+
+92
+00:03:40,900 --> 00:03:43,750
+when we talk about the different forecasting methods.
+
+93
+00:03:43,750 --> 00:03:45,697
+And for the rest of the lecture going forward,
+
+94
+00:03:45,697 --> 00:03:47,530
+we'll start using these different techniques
+
+95
+00:03:47,530 --> 00:03:48,889
+and approaches.
+
+96
+00:03:48,889 --> 00:03:51,180
+So if you have any questions, comments, or suggestions,
+
+97
+00:03:51,180 --> 00:03:53,470
+please use the discussion.
+

@@ -1,0 +1,853 @@
+1
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/O0wE2M8-ois
+
+2
+00:00:00,500 --> 00:00:03,110
+Welcome to chapter 7, Python
+for Informatics Exploring
+
+3
+00:00:03,110 --> 00:00:03,780
+Information.
+
+4
+00:00:03,780 --> 00:00:05,321
+I'm Charles Severance,
+I'm the author
+
+5
+00:00:05,321 --> 00:00:06,490
+of the book and your host.
+
+6
+00:00:06,490 --> 00:00:09,760
+And as always this
+is brought to you by,
+
+7
+00:00:09,760 --> 00:00:13,410
+no I'm sorry it is all creative
+copyright Creative Commons
+
+8
+00:00:13,410 --> 00:00:17,700
+attribution, the audio, the
+video, the slides, and even
+
+9
+00:00:17,700 --> 00:00:18,730
+the book.
+
+10
+00:00:18,730 --> 00:00:24,350
+So here we go, oh
+and so frankly where
+
+11
+00:00:24,350 --> 00:00:31,140
+we've been working
+all along, is we
+
+12
+00:00:31,140 --> 00:00:34,290
+have been writing code
+and talking to the CPU,
+
+13
+00:00:34,290 --> 00:00:39,260
+hang on let me go get my CPU and
+stuff hang on, be right back.
+
+14
+00:00:39,260 --> 00:00:44,376
+
+15
+00:00:44,376 --> 00:00:44,875
+Ah.
+
+16
+00:00:44,875 --> 00:00:49,542
+
+17
+00:00:49,542 --> 00:00:53,760
+OK here we go, here we go.
+
+18
+00:00:53,760 --> 00:00:55,000
+Here's all that stuff.
+
+19
+00:00:55,000 --> 00:01:00,880
+Remember that stuff
+from the first lecture?
+
+20
+00:01:00,880 --> 00:01:03,070
+There we go with that.
+
+21
+00:01:03,070 --> 00:01:05,860
+Remember the mother board
+from the first lecture?
+
+22
+00:01:05,860 --> 00:01:07,380
+This is kind of a
+picture of what's
+
+23
+00:01:07,380 --> 00:01:11,140
+on the screen, the motherboard,
+the CPU plugs in here,
+
+24
+00:01:11,140 --> 00:01:12,930
+memory plugs in here.
+
+25
+00:01:12,930 --> 00:01:18,020
+And remember how the CPU
+is sort of the brains,
+
+26
+00:01:18,020 --> 00:01:20,840
+as much brains as there
+is for the operation.
+
+27
+00:01:20,840 --> 00:01:24,240
+The CPU is asking what
+next, the instructions
+
+28
+00:01:24,240 --> 00:01:26,270
+come in through
+these little pins.
+
+29
+00:01:26,270 --> 00:01:28,550
+There's data inside
+and it stores
+
+30
+00:01:28,550 --> 00:01:30,030
+sort of semi permanent data.
+
+31
+00:01:30,030 --> 00:01:34,810
+Variables are all stored
+pretty much here in RAM.
+
+32
+00:01:34,810 --> 00:01:37,209
+And we write our programs,
+and so your Python programs
+
+33
+00:01:37,209 --> 00:01:39,000
+they're sitting here
+in this RAM in they're
+
+34
+00:01:39,000 --> 00:01:44,200
+being fed to this CPU,
+through those chips,
+
+35
+00:01:44,200 --> 00:01:46,019
+through those pins
+right the pins,
+
+36
+00:01:46,019 --> 00:01:47,810
+I mean it doesn't really
+connect like that,
+
+37
+00:01:47,810 --> 00:01:50,260
+and so frankly up
+to now everything
+
+38
+00:01:50,260 --> 00:01:53,480
+that we've been doing is
+just the Python programming
+
+39
+00:01:53,480 --> 00:01:54,510
+language.
+
+40
+00:01:54,510 --> 00:01:59,660
+And so the only place we've
+really been operating is here.
+
+41
+00:01:59,660 --> 00:02:02,800
+We have been putting
+Python into the main memory
+
+42
+00:02:02,800 --> 00:02:07,610
+and-- the main memory, and we
+have been effectively feeding
+
+43
+00:02:07,610 --> 00:02:11,390
+instructions to the CPU, the
+central processing unit as it
+
+44
+00:02:11,390 --> 00:02:14,050
+needed them and the
+program would stop.
+
+45
+00:02:14,050 --> 00:02:15,560
+And everything
+we've done so far,
+
+46
+00:02:15,560 --> 00:02:20,480
+everything is just sort
+of fiddling around here.
+
+47
+00:02:20,480 --> 00:02:22,290
+We have never escaped it.
+
+48
+00:02:22,290 --> 00:02:25,560
+So now we are finally
+going to escape
+
+49
+00:02:25,560 --> 00:02:29,190
+from the central processing
+unit and the memory.
+
+50
+00:02:29,190 --> 00:02:32,930
+We'll still write programs
+and have variables in here,
+
+51
+00:02:32,930 --> 00:02:38,530
+but now we're going to use a
+disk, the secondary storage,
+
+52
+00:02:38,530 --> 00:02:41,040
+the permanent media.
+
+53
+00:02:41,040 --> 00:02:46,110
+So if I go grab my Raspberry
+Pi, that just goes right there,
+
+54
+00:02:46,110 --> 00:02:48,010
+here's my Raspberry Pi.
+
+55
+00:02:48,010 --> 00:02:49,870
+So here we've got
+Raspberry Pi which
+
+56
+00:02:49,870 --> 00:02:55,900
+is the small version, which
+of course has a CPU, memory.
+
+57
+00:02:55,900 --> 00:02:58,810
+and graphics processor all on
+this little chip right here,
+
+58
+00:02:58,810 --> 00:03:01,690
+but the secondary
+memory for the,
+
+59
+00:03:01,690 --> 00:03:05,070
+is this little SD card that
+is the secondary memory
+
+60
+00:03:05,070 --> 00:03:06,066
+for Raspberry Pi.
+
+61
+00:03:06,066 --> 00:03:07,440
+So the structure
+the Raspberry Pi
+
+62
+00:03:07,440 --> 00:03:10,610
+is exactly the same structure
+any other personal computer,
+
+63
+00:03:10,610 --> 00:03:13,141
+it's just smaller
+and less expensive.
+
+64
+00:03:13,141 --> 00:03:14,640
+And so in the
+Raspberry Pi if you're
+
+65
+00:03:14,640 --> 00:03:16,400
+programming the
+Raspberry Pi, you're
+
+66
+00:03:16,400 --> 00:03:17,790
+sort of finally escaping.
+
+67
+00:03:17,790 --> 00:03:21,170
+All your programs are in
+here your CPU's in here,
+
+68
+00:03:21,170 --> 00:03:24,370
+and that's pretty much
+how far you've got to run.
+
+69
+00:03:24,370 --> 00:03:27,530
+But now, of course when
+you save your files you
+
+70
+00:03:27,530 --> 00:03:29,150
+save them to here.
+
+71
+00:03:29,150 --> 00:03:30,800
+But now we're going
+to start looking
+
+72
+00:03:30,800 --> 00:03:32,760
+at data on the disk drive.
+
+73
+00:03:32,760 --> 00:03:38,160
+And so it's time to escape
+to the secondary memory.
+
+74
+00:03:38,160 --> 00:03:40,915
+OK time to escape to
+the secondary memory.
+
+75
+00:03:40,915 --> 00:03:43,130
+Oh Raspberry Pi you
+can go right there.
+
+76
+00:03:43,130 --> 00:03:43,940
+OK?
+
+77
+00:03:43,940 --> 00:03:45,860
+So it's time to find
+some data to mess with.
+
+78
+00:03:45,860 --> 00:03:48,410
+So a lot of what we've
+been doing so far
+
+79
+00:03:48,410 --> 00:03:51,110
+is just kind of the pre
+work to get to the point
+
+80
+00:03:51,110 --> 00:03:52,780
+where we can do this.
+
+81
+00:03:52,780 --> 00:03:54,572
+And in here we're going
+to have data files.
+
+82
+00:03:54,572 --> 00:03:55,946
+Now we've been
+making data files,
+
+83
+00:03:55,946 --> 00:03:58,440
+you've been writing-- every
+Python program that you write
+
+84
+00:03:58,440 --> 00:04:00,970
+on your computer
+gets saved as a file,
+
+85
+00:04:00,970 --> 00:04:04,390
+then Python reads
+the file and runs it.
+
+86
+00:04:04,390 --> 00:04:08,980
+But, now we're actually going
+to start messing with some data.
+
+87
+00:04:08,980 --> 00:04:11,610
+And so files are where we're
+going to be working with.
+
+88
+00:04:11,610 --> 00:04:15,440
+And so, one of the things
+about secondary memory,
+
+89
+00:04:15,440 --> 00:04:18,790
+is it's much larger.
+
+90
+00:04:18,790 --> 00:04:21,085
+And this main memory of
+computer is pretty large,
+
+91
+00:04:21,085 --> 00:04:23,630
+it's just not large
+enough to hold everything
+
+92
+00:04:23,630 --> 00:04:26,020
+that the computer is
+capable of holding.
+
+93
+00:04:26,020 --> 00:04:28,740
+So the files that we're going to
+work with, no we're not talking
+
+94
+00:04:28,740 --> 00:04:31,390
+about image files or
+Quicktime movies or things
+
+95
+00:04:31,390 --> 00:04:33,950
+like that, we're going
+to work with text files.
+
+96
+00:04:33,950 --> 00:04:37,422
+Because the theme of this
+course is digging through text.
+
+97
+00:04:37,422 --> 00:04:39,130
+Sometimes we'll pull
+it off the internet,
+
+98
+00:04:39,130 --> 00:04:41,155
+sometimes we'll
+read files, but it's
+
+99
+00:04:41,155 --> 00:04:43,280
+digging through and using
+all the things that we've
+
+100
+00:04:43,280 --> 00:04:46,050
+learned so far looping and
+strings and all those things
+
+101
+00:04:46,050 --> 00:04:50,600
+to make sense of a
+sequence of information.
+
+102
+00:04:50,600 --> 00:04:51,550
+OK?
+
+103
+00:04:51,550 --> 00:04:55,410
+Now to access file
+information we
+
+104
+00:04:55,410 --> 00:04:57,680
+have to do this thing
+called opening the file.
+
+105
+00:04:57,680 --> 00:04:59,620
+We can't just say,
+yo the information
+
+106
+00:04:59,620 --> 00:05:02,290
+is just omnipresent,
+because there
+
+107
+00:05:02,290 --> 00:05:05,470
+are so much data that you
+can't have Python sort of know
+
+108
+00:05:05,470 --> 00:05:06,180
+all the data.
+
+109
+00:05:06,180 --> 00:05:07,980
+You literally have
+hundreds of thousands
+
+110
+00:05:07,980 --> 00:05:11,890
+of files on your
+computer's hard drive
+
+111
+00:05:11,890 --> 00:05:13,460
+and which one are
+you going to read.
+
+112
+00:05:13,460 --> 00:05:15,790
+So there's a step
+that you have to do,
+
+113
+00:05:15,790 --> 00:05:19,860
+but you call this built
+in function, called open,
+
+114
+00:05:19,860 --> 00:05:21,860
+and say oh this is the
+file I want to work with,
+
+115
+00:05:21,860 --> 00:05:23,570
+of the hundreds of
+thousands, and then
+
+116
+00:05:23,570 --> 00:05:27,510
+once you do you've kind of got
+this little connector into it.
+
+117
+00:05:27,510 --> 00:05:31,820
+And the open is a built
+in function inside Python
+
+118
+00:05:31,820 --> 00:05:33,930
+so let's say goodbye to that.
+
+119
+00:05:33,930 --> 00:05:37,780
+The open function is built
+in function in Python
+
+120
+00:05:37,780 --> 00:05:39,820
+and it takes two parameters.
+
+121
+00:05:39,820 --> 00:05:45,810
+The first parameter is the name
+of the file, like M box dot txt
+
+122
+00:05:45,810 --> 00:05:47,947
+and then the second is how
+you're going to read it.
+
+123
+00:05:47,947 --> 00:05:49,530
+Are you going to
+read it are you going
+
+124
+00:05:49,530 --> 00:05:51,710
+to write it, et cetera,
+now most the time we'll
+
+125
+00:05:51,710 --> 00:05:53,170
+be reading our files.
+
+126
+00:05:53,170 --> 00:05:55,350
+So we call the open
+function, and pass it
+
+127
+00:05:55,350 --> 00:05:57,810
+in the name of the
+file we want to open,
+
+128
+00:05:57,810 --> 00:05:59,330
+and then how we want to read it.
+
+129
+00:05:59,330 --> 00:06:02,050
+Now you can leave this
+second parameter off
+
+130
+00:06:02,050 --> 00:06:04,650
+and it assumes that you're
+going to want to read the file.
+
+131
+00:06:04,650 --> 00:06:10,490
+Now, when the open
+is successful,
+
+132
+00:06:10,490 --> 00:06:12,970
+it doesn't actually
+read all of the data,
+
+133
+00:06:12,970 --> 00:06:17,720
+because the memory is small,
+small compared to a hard drive
+
+134
+00:06:17,720 --> 00:06:21,470
+so you have to sort of step
+through the data you'll tell it
+
+135
+00:06:21,470 --> 00:06:22,610
+when to read it.
+
+136
+00:06:22,610 --> 00:06:26,670
+So the act of opening it is not
+actually reading all the data
+
+137
+00:06:26,670 --> 00:06:31,190
+it is creating kind of like a
+connection between the memory
+
+138
+00:06:31,190 --> 00:06:32,940
+and the data that's
+on the hard drive,
+
+139
+00:06:32,940 --> 00:06:39,975
+right, it's connecting between--
+that's going to fall down.
+
+140
+00:06:39,975 --> 00:06:41,915
+Are you going to
+stand up that way?
+
+141
+00:06:41,915 --> 00:06:43,790
+Should come up with a
+way to make that stand.
+
+142
+00:06:43,790 --> 00:06:46,490
+
+143
+00:06:46,490 --> 00:06:49,230
+So it's a connection,
+so that your programs
+
+144
+00:06:49,230 --> 00:06:53,380
+kind of running in here and the
+file handle is just sort of a,
+
+145
+00:06:53,380 --> 00:06:57,290
+it's like a phone call between
+your memory and your disk
+
+146
+00:06:57,290 --> 00:06:57,790
+drive.
+
+147
+00:06:57,790 --> 00:06:59,498
+It's not the actual
+data, the actual data
+
+148
+00:06:59,498 --> 00:07:01,920
+is still sitting
+on the disk drive.
+
+149
+00:07:01,920 --> 00:07:06,030
+OK, so a graphical way
+to take a look at this,
+
+150
+00:07:06,030 --> 00:07:10,420
+is this file handle, the
+thing that comes back
+
+151
+00:07:10,420 --> 00:07:14,070
+from the open request, the open
+goes and finds the file out
+
+152
+00:07:14,070 --> 00:07:16,500
+on the disk drive
+yada yada yada,
+
+153
+00:07:16,500 --> 00:07:18,710
+and then the handle
+is something that
+
+154
+00:07:18,710 --> 00:07:22,160
+lives in the memory that is
+sort of like the thing that
+
+155
+00:07:22,160 --> 00:07:25,820
+maintains its connection
+to where all the data is
+
+156
+00:07:25,820 --> 00:07:28,890
+on the disk or on the
+SD RAM that's in it.
+
+157
+00:07:28,890 --> 00:07:30,430
+So the handle is
+not all the data,
+
+158
+00:07:30,430 --> 00:07:34,170
+but it is a mechanism that you
+can use to get at the data.
+
+159
+00:07:34,170 --> 00:07:35,780
+So if you print
+it out, it doesn't
+
+160
+00:07:35,780 --> 00:07:40,110
+have all the data from the file,
+it says I am a file handle,
+
+161
+00:07:40,110 --> 00:07:44,100
+that's opened this file
+and we're in read mode.
+
+162
+00:07:44,100 --> 00:07:45,790
+So it doesn't
+actually have the data
+
+163
+00:07:45,790 --> 00:07:48,402
+even though this is the
+data that's in the file.
+
+164
+00:07:48,402 --> 00:07:49,860
+And then we have
+operations that we
+
+165
+00:07:49,860 --> 00:07:52,380
+do to the handle like open
+it, close it, read it, write
+
+166
+00:07:52,380 --> 00:07:53,779
+it, so we do things to those.
+
+167
+00:07:53,779 --> 00:07:55,570
+So the handle, and then
+through the handle,
+
+168
+00:07:55,570 --> 00:07:57,180
+it actually changes
+what's on the disk
+
+169
+00:07:57,180 --> 00:07:59,480
+or reads what's on the
+disk, so the handle
+
+170
+00:07:59,480 --> 00:08:02,910
+is kind of a thing
+that's not there.
+
+171
+00:08:02,910 --> 00:08:06,182
+If you attempt to open a file,
+and the name of the file--
+
+172
+00:08:06,182 --> 00:08:07,640
+now the way we're
+going to do these
+
+173
+00:08:07,640 --> 00:08:11,550
+is, these need to be in the
+same folder on your computer
+
+174
+00:08:11,550 --> 00:08:14,159
+as your Python code.
+
+175
+00:08:14,159 --> 00:08:15,700
+Now there are trickier
+ways to do it,
+
+176
+00:08:15,700 --> 00:08:17,210
+but we're going
+to keep it simple.
+
+177
+00:08:17,210 --> 00:08:19,620
+This is the name of a
+file in the same folder,
+
+178
+00:08:19,620 --> 00:08:22,760
+as the Python code
+that you're running.
+

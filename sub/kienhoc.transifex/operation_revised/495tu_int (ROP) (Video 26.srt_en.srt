@@ -1,0 +1,254 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/8jv806cvUlg
+
+1
+00:00:05,509 --> 00:00:08,289
+hello again and welcome back operations
+management
+
+2
+00:00:08,289 --> 00:00:11,689
+in this session we can be continuing our
+discussion of inventory
+
+3
+00:00:11,690 --> 00:00:16,339
+and in this one in particular it will be
+about the reorder point.
+
+4
+00:00:16,339 --> 00:00:21,550
+Previously in with the economic order
+quantity we've determined
+
+5
+00:00:21,550 --> 00:00:24,740
+how much we place in terms of
+
+6
+00:00:24,739 --> 00:00:28,320
+order for inventory that RQ a quantity per
+
+7
+00:00:28,320 --> 00:00:31,480
+inventory but we're trying to figure out
+
+8
+00:00:31,480 --> 00:00:35,170
+when we actually place the order this
+is
+
+9
+00:00:35,170 --> 00:00:38,850
+the reorder point so when you place an
+order
+
+10
+00:00:38,850 --> 00:00:42,950
+they usually have an amount of time it
+takes from the time you place the order
+
+11
+00:00:42,950 --> 00:00:44,780
+and the time to receive
+
+12
+00:00:44,780 --> 00:00:48,899
+that's known as the lead time and
+the amount of
+
+13
+00:00:48,899 --> 00:00:52,429
+inventory that you use during that lead 
+time
+
+14
+00:00:52,429 --> 00:00:55,649
+is known as the lead time demand
+
+15
+00:00:55,649 --> 00:00:58,899
+frequently abbreviated as LTD
+
+16
+00:00:58,899 --> 00:01:03,109
+and in very simple situations th reorder point
+
+17
+00:01:03,109 --> 00:01:08,620
+is just equal to the Ltd which is the
+amount that we use from the time we
+
+18
+00:01:08,620 --> 00:01:10,819
+placed the order to the time it's
+received
+
+19
+00:01:10,819 --> 00:01:15,339
+we look at it graphically we notice Q is
+the amount that we're actually
+
+20
+00:01:15,340 --> 00:01:18,490
+ordering now down at the bottom of the
+graph
+
+21
+00:01:18,489 --> 00:01:22,699
+is the lead time we've placed the order
+at some point t
+
+22
+00:01:22,700 --> 00:01:25,890
+and then it's going to arrive sometime
+later
+
+23
+00:01:25,890 --> 00:01:31,819
+the amount of inventory that we used
+during that lead time
+
+24
+00:01:31,819 --> 00:01:34,978
+is lead time demand and that's what equals to
+
+25
+00:01:34,978 --> 00:01:41,250
+reorder point very simple but what
+happens if the demand varies or
+
+26
+00:01:41,250 --> 00:01:41,930
+the lead time
+
+27
+00:01:41,930 --> 00:01:46,090
+varies or both demand and all the lead time
+varies
+
+28
+00:01:46,090 --> 00:01:49,040
+in those cases we usually want to keep
+extra
+
+29
+00:01:49,040 --> 00:01:52,830
+inventory on hand and that's known as
+safety stock
+
+30
+00:01:52,829 --> 00:01:56,359
+so the reorder point is no longer
+
+31
+00:01:56,359 --> 00:02:00,179
+just the lead time demand it's the
+lead time demand
+
+32
+00:02:00,180 --> 00:02:04,440
+plus the safety stock if we look at that
+graphically
+
+33
+00:02:04,439 --> 00:02:07,890
+the the chart much little bit different
+
+34
+00:02:07,890 --> 00:02:12,759
+set up a nice smooth demand it it
+wiggles it varies because we're not
+
+35
+00:02:12,759 --> 00:02:14,118
+exactly sure
+
+36
+00:02:14,118 --> 00:02:19,569
+how much is going to be used at any
+given point we still have a lead time
+
+37
+00:02:19,569 --> 00:02:23,109
+so we have an expected lead time demand
+
+38
+00:02:23,110 --> 00:02:27,080
+how much we think we're going to use
+during that period of
+
+39
+00:02:27,080 --> 00:02:30,380
+placing new order and it's being received
+
+40
+00:02:30,379 --> 00:02:34,250
+but notice we don't let it go all the
+way down to zero
+
+41
+00:02:34,250 --> 00:02:37,580
+instead we had that yellow line there
+
+42
+00:02:37,580 --> 00:02:41,590
+and that's known as the safety stock so
+when we
+
+43
+00:02:41,590 --> 00:02:46,060
+at the safety stock with the expected
+lead time demand
+
+44
+00:02:46,060 --> 00:02:51,530
+now we have a different reorder point
+its greater than just the expected lead
+
+45
+00:02:51,530 --> 00:02:52,860
+time demand
+
+46
+00:02:52,860 --> 00:02:55,950
+its equal to the lead time demand plus
+
+47
+00:02:55,949 --> 00:03:00,939
+the safety stock so in very simple
+situations the
+
+48
+00:03:00,939 --> 00:03:05,870
+reorder point is to the lead time demand
+but if there's some sort of variation in
+
+49
+00:03:05,870 --> 00:03:07,620
+demand  the lead time 
+
+50
+00:03:07,620 --> 00:03:12,280
+will add in safety stock to the lead time on
+demand to get to their
+
+51
+00:03:12,280 --> 00:03:16,079
+reorder point now the next question of
+course is
+
+52
+00:03:16,079 --> 00:03:20,659
+how do we know how much safety stock to
+keep well that's what we're gonna do in
+
+53
+00:03:20,659 --> 00:03:21,579
+the next session
+
+54
+00:03:21,579 --> 00:03:22,320
+I see it then
+

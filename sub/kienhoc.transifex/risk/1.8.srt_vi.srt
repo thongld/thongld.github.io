@@ -1,0 +1,653 @@
+0
+00:00:05,016 --> 00:00:06,300
+Chào mừng trở lại. 
+Tôi mong rằng bạn đã có chút khái niệm về việc
+
+2
+00:00:09,030 --> 00:00:10,900
+tại sao ta lại nghĩ về những mối quan hệ.
+
+3
+00:00:12,080 --> 00:00:16,630
+Và lí do thì căn bản là vì sự ác cảm với rủi ro,
+
+4
+00:00:16,630 --> 00:00:18,980
+nên ta đã phải cập nhật toàn bộ danh sách đầu tư.
+
+5
+00:00:18,980 --> 00:00:22,900
+So I&#39;m going to stick with two returns in a portfolio, or
+
+6
+00:00:22,900 --> 00:00:27,660
+two returns because if you make it more complex right away it&#39;ll become tough.
+
+7
+00:00:27,660 --> 00:00:31,330
+So think of two securities, two things.
+
+8
+00:00:31,330 --> 00:00:35,860
+One distribution is here, another distribution is here.
+
+9
+00:00:35,860 --> 00:00:42,000
+And let&#39;s for, just for the fun, call this Amazon,
+
+10
+00:00:42,000 --> 00:00:47,192
+and let&#39;s, for fun, call this Microsoft.
+
+11
+00:00:49,209 --> 00:00:53,000
+Two companies most people have dealt with, know about, and so on.
+
+12
+00:00:54,410 --> 00:00:56,160
+So you have Amazon, you have Microsoft.
+
+13
+00:00:56,160 --> 00:01:01,457
+The question then becomes, can you calculate the return on Amazon?
+
+14
+00:01:01,457 --> 00:01:06,546
+Yes, I can calculate the return, I&#39;ll call it RA.
+
+15
+00:01:09,619 --> 00:01:15,750
+Z just for the heck of it, RAZ bar, and sigma hat AZ.
+
+16
+00:01:17,160 --> 00:01:24,700
+Here I can calculate R Microsoft bar and sigma hat Microsoft.
+
+17
+00:01:24,700 --> 00:01:29,830
+For being able to calculate it, which I promise you we will do with real data.
+
+18
+00:01:29,830 --> 00:01:30,670
+What do you need?
+
+19
+00:01:30,670 --> 00:01:32,460
+You need data to be able to do it.
+
+20
+00:01:32,460 --> 00:01:36,110
+Either continuous data, or discrete data and usually we&#39;ll have continuous data but
+
+21
+00:01:36,110 --> 00:01:37,350
+I&#39;ll do both.
+
+22
+00:01:37,350 --> 00:01:42,796
+Because you need to understand concepts, data applications very clearly.
+
+23
+00:01:42,796 --> 00:01:47,405
+Okay, so you&#39;ve done both, but what do I want to also measure?
+
+24
+00:01:47,405 --> 00:01:51,648
+Because they&#39;re both sitting in my portfolio, of risk averse person.
+
+25
+00:01:51,648 --> 00:01:56,311
+Assuming you can afford to invest, I guarantee you that if you&#39;re a risk averse
+
+26
+00:01:56,311 --> 00:01:59,799
+person, they are somehow showing up in a broad portfolio.
+
+27
+00:01:59,799 --> 00:02:07,626
+So the measure of relationship is called covariance.
+
+28
+00:02:11,948 --> 00:02:17,530
+And covariance is interesting, why, because what does it measure?
+
+29
+00:02:17,530 --> 00:02:21,426
+It measures how these two move together.
+
+30
+00:02:21,426 --> 00:02:25,686
+So if RAZ- RAZ bar,
+
+31
+00:02:25,686 --> 00:02:31,213
+what would you call that?
+
+32
+00:02:31,213 --> 00:02:36,176
+It would be at this point, this distance.
+
+33
+00:02:36,176 --> 00:02:39,261
+At this point it would be this distance.
+
+34
+00:02:39,261 --> 00:02:41,044
+This would have a what sign?
+
+35
+00:02:41,044 --> 00:02:44,940
+Negative sign, this would have a positive sign.
+
+36
+00:02:44,940 --> 00:02:47,860
+So this is negative, this is positive.
+
+37
+00:02:47,860 --> 00:02:52,142
+Similarly, there
+
+38
+00:02:52,142 --> 00:02:57,600
+will be RMS- RMS bar.
+
+39
+00:02:57,600 --> 00:03:02,090
+Quick question, what do you need to know to calculate which?
+
+40
+00:03:02,090 --> 00:03:06,578
+You need to know all RSZs to calculate this or RMS.
+
+41
+00:03:06,578 --> 00:03:09,998
+So this changes, this is a number,
+
+42
+00:03:09,998 --> 00:03:14,677
+one number based on all the data you have, okay?
+
+43
+00:03:14,677 --> 00:03:17,724
+So suppose you&#39;re looking at this item.
+
+44
+00:03:19,449 --> 00:03:21,717
+And then you ask yourself,
+
+45
+00:03:21,717 --> 00:03:26,260
+what is happening to Microsoft when this is negative?
+
+46
+00:03:26,260 --> 00:03:27,670
+How will you measure that?
+
+47
+00:03:27,670 --> 00:03:32,039
+You&#39;ll go measure a specific instance of that,
+
+48
+00:03:32,039 --> 00:03:37,440
+multiply the two that shows you how they&#39;re related.
+
+49
+00:03:37,440 --> 00:03:39,160
+But how many of them are there?
+
+50
+00:03:40,330 --> 00:03:45,890
+So if you&#39;ll take the regular formula, the longer formula, it is sigma i p i.
+
+51
+00:03:47,370 --> 00:03:54,538
+So the probability of event i, RAZ how is related to its mean?
+
+52
+00:03:54,538 --> 00:04:00,160
+And multiply that by RNZ, how it&#39;s related to risk.
+
+53
+00:04:00,160 --> 00:04:03,037
+So basically what it&#39;s measuring is,
+
+54
+00:04:03,037 --> 00:04:08,188
+over the entire full set of possibilities, i, how are they related?
+
+55
+00:04:08,188 --> 00:04:11,160
+So let me ask you a simple question.
+
+56
+00:04:11,160 --> 00:04:17,360
+Suppose when this is negative, this also tends to be negative.
+
+57
+00:04:17,360 --> 00:04:21,900
+Not by the same amount, necessarily, not exactly the same amount.
+
+58
+00:04:21,899 --> 00:04:27,580
+But, and when this tends to be positive, this also tends to be positive.
+
+59
+00:04:27,580 --> 00:04:30,250
+On average, what will this number be?
+
+60
+00:04:30,250 --> 00:04:32,420
+Greater than 0.
+
+61
+00:04:32,420 --> 00:04:35,420
+But on the other hand,
+
+62
+00:04:35,420 --> 00:04:39,990
+which happens rarely in the stock market between two stocks, we&#39;ll see why.
+
+63
+00:04:39,990 --> 00:04:44,990
+If this tends to be positive, this tends to be negative, the sign will be negative.
+
+64
+00:04:46,420 --> 00:04:48,640
+And in a very strange circumstance,
+
+65
+00:04:48,640 --> 00:04:54,110
+suppose Amazon does whatever it does return, has nothing to do with Microsoft.
+
+66
+00:04:54,110 --> 00:04:57,140
+So when it&#39;s negative, this then should be positive and when it&#39;s positive,
+
+67
+00:04:57,140 --> 00:04:59,020
+this then should be negative.
+
+68
+00:04:59,020 --> 00:05:01,120
+The relationship is 0.
+
+69
+00:05:01,120 --> 00:05:06,120
+Very, very unlikely, in the real world, in the stock market.
+
+70
+00:05:06,120 --> 00:05:10,960
+The two returns, you&#39;ll see when it will happen, and you&#39;ll see why it&#39;s unlikely.
+
+71
+00:05:10,960 --> 00:05:12,706
+So what is covariance measuring?
+
+72
+00:05:12,706 --> 00:05:17,770
+Covariance is measuring the relationship between risk,
+
+73
+00:05:17,770 --> 00:05:20,280
+I mean between two different companies.
+
+74
+00:05:20,280 --> 00:05:24,820
+And we can think of it many pairs of company, okay.
+
+75
+00:05:24,820 --> 00:05:26,410
+There is a problem with the covariance.
+
+76
+00:05:27,460 --> 00:05:31,591
+And what I&#39;m going to do is show you why.
+
+77
+00:05:34,794 --> 00:05:38,890
+I will repeat this whole exercise and show you why there&#39;s a problem.
+
+78
+00:05:38,890 --> 00:05:44,336
+So I&#39;m going to now go from covariance to something called correlation.
+
+79
+00:05:46,771 --> 00:05:50,804
+Okay, so remember
+
+80
+00:05:50,804 --> 00:05:57,107
+the covariances were sigma,
+
+81
+00:05:57,107 --> 00:06:01,391
+bi, RAZ- RAZ bar,
+
+82
+00:06:01,391 --> 00:06:05,940
+times RMS- RMS bar.
+
+83
+00:06:08,970 --> 00:06:14,913
+The trouble with covariance is there are two things.
+
+84
+00:06:14,913 --> 00:06:19,850
+One, that it is dependent on the units, so let me distract for
+
+85
+00:06:19,850 --> 00:06:22,000
+a second from Amazon and Microsoft.
+
+86
+00:06:22,000 --> 00:06:24,850
+And actually that&#39;s what I love about statistics.
+
+87
+00:06:24,850 --> 00:06:28,802
+Suppose this is rainforest, I mean this is rain.
+
+88
+00:06:28,802 --> 00:06:31,540
+[LAUGH] And this is crops.
+
+89
+00:06:31,540 --> 00:06:36,600
+So suppose this is measured in inches and this is measured in bushels.
+
+90
+00:06:37,770 --> 00:06:42,330
+Bushels is a way of measuring how much output you have in a crop.
+
+91
+00:06:42,330 --> 00:06:44,020
+What will be the unit of measurement?
+
+92
+00:06:45,610 --> 00:06:51,600
+Inches, bushels, two different units, very confusing.
+
+93
+00:06:52,980 --> 00:06:55,993
+In the case of returns because they are measured in percentage terms,
+
+94
+00:06:55,993 --> 00:06:57,226
+it doesn&#39;t jump out at you.
+
+95
+00:06:57,226 --> 00:07:03,249
+But it&#39;s very important to recognize that covariance is unit measurement dependent.
+
+96
+00:07:03,249 --> 00:07:08,445
+Point number one, not a good thing because you cannot compare rain and
+
+97
+00:07:08,445 --> 00:07:13,830
+bushels with returns, or with advertising dollars&#39; effect on sales.
+
+98
+00:07:13,830 --> 00:07:19,828
+So units shouldn&#39;t matter to something, if you want to compare things.
+
+99
+00:07:19,828 --> 00:07:23,380
+So, covariance is a very, very important concept, but
+
+100
+00:07:23,380 --> 00:07:25,530
+it suffers from unit dependence.
+
+101
+00:07:25,530 --> 00:07:29,990
+The second problem it suffers from, and I&#39;ll spend a little bit of time.
+
+102
+00:07:29,990 --> 00:07:33,690
+There&#39;s a little bit lengthy because I want to finish relationships
+
+103
+00:07:33,690 --> 00:07:36,880
+all at once rather than keep doing snippets of it.
+
+104
+00:07:38,110 --> 00:07:40,980
+The other problem, so first is unit dependent.
+
+105
+00:07:43,830 --> 00:07:47,990
+The second problem is I can make its magnitude big or
+
+106
+00:07:47,990 --> 00:07:51,200
+small, and it doesn&#39;t mean much.
+
+107
+00:07:51,200 --> 00:07:52,870
+What do I mean by that?
+
+108
+00:07:52,870 --> 00:07:56,780
+So, suppose we take the examples of inches and bushels.
+
+109
+00:07:56,780 --> 00:08:01,190
+Instead of measuring inches, suppose I decided to measure in millimeters.
+
+110
+00:08:02,320 --> 00:08:05,730
+There are a lot of millimeters in inches, and, suddenly, the number will blow up.
+
+111
+00:08:06,730 --> 00:08:09,640
+So, it&#39;s also the magnitude
+
+112
+00:08:11,470 --> 00:08:15,420
+doesn&#39;t necessarily tell you anything, which is not a good thing, right?
+
+113
+00:08:15,420 --> 00:08:20,650
+So you would imagine 500 is more than 300, it should matter somewhat.
+
+114
+00:08:20,650 --> 00:08:24,840
+No, so the main value of covariance is
+
+115
+00:08:24,840 --> 00:08:29,010
+that you have to calculate it to figure out relationships.
+
+116
+00:08:29,010 --> 00:08:33,570
+The problem is that it&#39;s unit dependent and its magnitude may not make sense.
+
+117
+00:08:34,850 --> 00:08:37,100
+But why do you have to calculate it?
+
+118
+00:08:37,100 --> 00:08:41,240
+It&#39;s sign that is most important.
+
+119
+00:08:41,240 --> 00:08:47,130
+Meaning if it is greater than zero, less than zero, or zero, tells
+
+120
+00:08:47,130 --> 00:08:51,560
+you the nature of the relationship, but nothing about the units of the magnitude.
+
+121
+00:08:52,700 --> 00:08:54,550
+Those are very confusing.
+
+122
+00:08:54,550 --> 00:08:57,350
+So how do you go from here to something?
+
+123
+00:08:57,350 --> 00:09:02,130
+That measures the relationships, retains the beauty of covariance, but
+
+124
+00:09:02,130 --> 00:09:04,570
+adjusts it for the two problems.
+
+125
+00:09:05,740 --> 00:09:07,330
+What do you do?
+
+126
+00:09:07,330 --> 00:09:08,480
+You standardize it.
+
+127
+00:09:09,750 --> 00:09:14,655
+You divide it by standard deviation,
+
+128
+00:09:14,655 --> 00:09:19,567
+easy, and standard deviation of MS.
+
+129
+00:09:21,847 --> 00:09:23,260
+What have you done?
+
+130
+00:09:23,260 --> 00:09:29,192
+You&#39;ve created something called correlation.
+
+131
+00:09:34,257 --> 00:09:37,651
+What I want to emphasize about correlation is
+
+132
+00:09:37,651 --> 00:09:42,250
+that correlation gets rid of units issue of covariance.
+
+133
+00:09:42,250 --> 00:09:43,630
+First thing, why?
+
+134
+00:09:43,630 --> 00:09:45,700
+Because think of this as what?
+
+135
+00:09:45,700 --> 00:09:48,540
+Inches of rain and this is bushels.
+
+136
+00:09:48,540 --> 00:09:50,715
+This is inches, this is inches, cancels.
+
+137
+00:09:51,760 --> 00:09:54,550
+This is bushels, this is bushels, cancels.
+
+138
+00:09:54,550 --> 00:09:56,273
+It becomes a number.
+
+139
+00:09:56,273 --> 00:09:59,720
+In other words, you can compare numbers.
+
+140
+00:09:59,720 --> 00:10:04,585
+It&#39;s unit free, so it&#39;s unit free, yeah.
+
+141
+00:10:04,585 --> 00:10:08,480
+Pretty obvious, excellent quality to have.
+
+142
+00:10:08,480 --> 00:10:13,980
+The second very good quality about correlation is you can show
+
+143
+00:10:13,980 --> 00:10:18,880
+that it will be between + and -1.
+
+144
+00:10:18,880 --> 00:10:20,620
+Now that&#39;s awesome too.
+
+145
+00:10:20,620 --> 00:10:24,902
+So when you see correlation of 0.8 positive
+
+146
+00:10:24,902 --> 00:10:29,527
+versus 0.6 positive, which one is stronger?
+
+147
+00:10:29,527 --> 00:10:31,470
+0.8, you can say that.
+
+148
+00:10:31,470 --> 00:10:33,880
+You couldn&#39;t say that about covariance.
+
+149
+00:10:33,880 --> 00:10:39,780
+But finally, do not forget that covariance is playing a very, very important role.
+
+150
+00:10:39,780 --> 00:10:43,520
+You cannot calculate correlation without covariance, why?
+
+151
+00:10:43,520 --> 00:10:45,340
+Because it&#39;s determining the sign.
+
+152
+00:10:46,670 --> 00:10:51,090
+So the basic nature of the relationship has been determined by covariance.
+
+153
+00:10:52,110 --> 00:10:56,060
+We&#39;ll take a break now, come back with one final concept,
+
+154
+00:10:56,060 --> 00:11:00,890
+which is related to all of this and it&#39;s called regression.
+
+155
+00:11:00,890 --> 00:11:04,869
+We&#39;ll spend one more segment on it within the context,
+
+156
+00:11:04,869 --> 00:11:07,419
+hopefully a reasonably short one.
+
+157
+00:11:07,419 --> 00:11:11,756
+And then we&#39;ll come back to applications and applications with data,
+
+158
+00:11:11,756 --> 00:11:13,357
+revisit our everything.
+
+159
+00:11:13,357 --> 00:11:18,764
+But we will have covered the fundamentals of statistics that you need to know for
+
+160
+00:11:18,764 --> 00:11:22,360
+finance, at least the introductory finance.
+
+161
+00:11:22,360 --> 00:11:27,520
+And of course, you could apply it to many other things like we talked about, rain,
+
+162
+00:11:27,520 --> 00:11:29,610
+and bushels, and so on, so forth.
+
+163
+00:11:29,610 --> 00:11:33,658
+See you in a minute for another five minutes or so.
+

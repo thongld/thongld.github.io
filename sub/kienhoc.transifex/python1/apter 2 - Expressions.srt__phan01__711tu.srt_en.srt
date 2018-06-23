@@ -1,0 +1,447 @@
+1
+00:00:00,000 --> 00:00:00,370
+https://youtu.be/IXXHH6ztsSA
+
+2
+00:00:00,370 --> 00:00:00,870
+Hello.
+
+3
+00:00:00,870 --> 00:00:02,670
+And welcome to chapter two.
+
+4
+00:00:02,670 --> 00:00:04,560
+Hope you enjoyed chapter one.
+
+5
+00:00:04,560 --> 00:00:06,850
+It was the one longer
+lectures, trying
+
+6
+00:00:06,850 --> 00:00:08,930
+to motivate you a little bit.
+
+7
+00:00:08,930 --> 00:00:12,150
+And now we're going to kind
+of go back to the basics.
+
+8
+00:00:12,150 --> 00:00:14,350
+Chapter one covered sort
+of the first four or five
+
+9
+00:00:14,350 --> 00:00:15,850
+chapters of the book.
+
+10
+00:00:15,850 --> 00:00:19,940
+So as always, this
+video, the slides
+
+11
+00:00:19,940 --> 00:00:23,145
+are copyright Creative
+Commons Attribution as well as
+
+12
+00:00:23,145 --> 00:00:24,770
+the audio.
+
+13
+00:00:24,770 --> 00:00:27,690
+And so now we're going
+to talk about sort
+
+14
+00:00:27,690 --> 00:00:29,700
+of the really low
+level things that
+
+15
+00:00:29,700 --> 00:00:33,700
+make up the Python language.
+
+16
+00:00:33,700 --> 00:00:36,090
+Constants-- some of
+this is terminology
+
+17
+00:00:36,090 --> 00:00:38,650
+just so I can say
+the word constant
+
+18
+00:00:38,650 --> 00:00:40,660
+and you won't freak out.
+
+19
+00:00:40,660 --> 00:00:43,860
+Constant is as
+contrasted with something
+
+20
+00:00:43,860 --> 00:00:45,300
+that changes, is variable.
+
+21
+00:00:45,300 --> 00:00:47,310
+We'll talk about variables
+in the next slide.
+
+22
+00:00:47,310 --> 00:00:48,850
+But for now, constants.
+
+23
+00:00:48,850 --> 00:00:51,520
+Constants are
+things that are sort
+
+24
+00:00:51,520 --> 00:00:57,430
+of natural and instinctive,
+things like numbers, 123, 98.6,
+
+25
+00:00:57,430 --> 00:00:59,170
+or hello world.
+
+26
+00:00:59,170 --> 00:01:02,322
+And so what I'm
+doing here is we're
+
+27
+00:01:02,322 --> 00:01:03,530
+using the Python interpreter.
+
+28
+00:01:03,530 --> 00:01:06,180
+And that's how you can
+tell the Chevron prompt.
+
+29
+00:01:06,180 --> 00:01:08,110
+And I'm saying print 123.
+
+30
+00:01:08,110 --> 00:01:10,480
+And then Python
+responds with 123.
+
+31
+00:01:10,480 --> 00:01:16,440
+Print 98.6, Python responds with
+98.6 and print 'hello world.'
+
+32
+00:01:16,440 --> 00:01:19,500
+So the constants
+are the 123, 98.6,
+
+33
+00:01:19,500 --> 00:01:22,780
+and 'hello world.'
+So these are things,
+
+34
+00:01:22,780 --> 00:01:25,820
+we can use either single
+quotes or double quotes to make
+
+35
+00:01:25,820 --> 00:01:26,910
+strings.
+
+36
+00:01:26,910 --> 00:01:29,629
+And so programs kind of
+work with numbers and work
+
+37
+00:01:29,629 --> 00:01:30,170
+with strings.
+
+38
+00:01:30,170 --> 00:01:34,370
+And we have these non-varying
+values that we call constants.
+
+39
+00:01:34,370 --> 00:01:39,930
+So the other side of the
+picture is the variable.
+
+40
+00:01:39,930 --> 00:01:42,100
+And the way I like to
+characterize a variable
+
+41
+00:01:42,100 --> 00:01:46,100
+is it's a place in the
+memory of the computer.
+
+42
+00:01:46,100 --> 00:01:47,580
+We give it a name
+as a programmer.
+
+43
+00:01:47,580 --> 00:01:49,530
+We pick the variable name.
+
+44
+00:01:49,530 --> 00:01:55,270
+In this, I'm saying x
+equals 12.2 and y equals 14.
+
+45
+00:01:55,270 --> 00:01:56,870
+I am choosing the name.
+
+46
+00:01:56,870 --> 00:01:59,540
+And I'm choosing
+what to put in there.
+
+47
+00:01:59,540 --> 00:02:03,330
+This is a statement called
+an assignment statement.
+
+48
+00:02:03,330 --> 00:02:05,430
+And the way to think of
+the assignment statement
+
+49
+00:02:05,430 --> 00:02:08,360
+is that it sort of
+has a direction.
+
+50
+00:02:08,360 --> 00:02:12,010
+We're saying, dear Python,
+go find some memory.
+
+51
+00:02:12,010 --> 00:02:16,260
+I will use the label x later
+to refer to that memory.
+
+52
+00:02:16,260 --> 00:02:20,430
+And take the number 12.2
+and stick it into x.
+
+53
+00:02:20,430 --> 00:02:21,450
+This is sequential code.
+
+54
+00:02:21,450 --> 00:02:22,950
+Then the next thing
+I want you to do
+
+55
+00:02:22,950 --> 00:02:26,080
+is I'd like you to go find
+some more memory, call it y.
+
+56
+00:02:26,080 --> 00:02:30,780
+I will call it y later,
+and stick 14 in there.
+
+57
+00:02:30,780 --> 00:02:34,310
+And so that ends up sort
+of with two little areas
+
+58
+00:02:34,310 --> 00:02:38,690
+of memory, one labeled x.
+
+59
+00:02:38,690 --> 00:02:40,080
+And here's a little
+cell in which
+
+60
+00:02:40,080 --> 00:02:41,940
+we'd like a draw or something.
+
+61
+00:02:41,940 --> 00:02:44,360
+And one labeled y,
+and we put 12.2.
+
+62
+00:02:44,360 --> 00:02:47,880
+After these lines run, we
+have 12.2 in one and 14
+
+63
+00:02:47,880 --> 00:02:49,570
+in the other.
+
+64
+00:02:49,570 --> 00:02:54,020
+Then for example, if there's
+another line that's down here,
+
+65
+00:02:54,020 --> 00:02:56,920
+so there's this third line
+after this has happened,
+
+66
+00:02:56,920 --> 00:02:59,070
+after this has
+happened, x equals 100.
+
+67
+00:02:59,070 --> 00:03:02,320
+Remember, this has kind
+of got a direction to it.
+
+68
+00:03:02,320 --> 00:03:04,800
+Oh, remember that x that I had?
+
+69
+00:03:04,800 --> 00:03:07,490
+I would like now
+to put 100 in that.
+
+70
+00:03:07,490 --> 00:03:08,920
+So as I'm thinking
+this through, I
+
+71
+00:03:08,920 --> 00:03:10,370
+think of that as
+sort of removing
+
+72
+00:03:10,370 --> 00:03:14,980
+the 12.2 or overriding the 12.2
+and putting 100 in its place.
+
+73
+00:03:14,980 --> 00:03:18,920
+And so at the end here,
+x is left with 100.
+
+74
+00:03:18,920 --> 00:03:21,820
+And y is left with 14.
+
+75
+00:03:21,820 --> 00:03:24,380
+So these variables can kind
+of have one value in them.
+
+76
+00:03:24,380 --> 00:03:26,910
+And we can look at them, and
+we can reuse them and put
+
+77
+00:03:26,910 --> 00:03:30,900
+different values in if we want.
+
+78
+00:03:30,900 --> 00:03:33,870
+There's some rules for
+naming your variables.
+
+79
+00:03:33,870 --> 00:03:37,350
+Again, you get to pick
+the variable names.
+
+80
+00:03:37,350 --> 00:03:39,550
+Often, we pick variables
+that makes some sense.
+
+81
+00:03:39,550 --> 00:03:41,580
+We'll talk about
+that in a second.
+
+82
+00:03:41,580 --> 00:03:44,910
+In Python, variables can
+start with an underscore.
+
+83
+00:03:44,910 --> 00:03:48,090
+We tend not to, as normal
+programmers, use those.
+
+84
+00:03:48,090 --> 00:03:52,330
+We let libraries use those.
+
+85
+00:03:52,330 --> 00:03:57,370
+It has to have letters, numbers,
+and underscores and start
+
+86
+00:03:57,370 --> 00:04:00,010
+with a letter or an underscore.
+
+87
+00:04:00,010 --> 00:04:06,000
+Case matters, so spam
+is good. eggs is good.
+
+88
+00:04:06,000 --> 00:04:08,340
+spam23 is good, because
+the number is not
+
+89
+00:04:08,340 --> 00:04:09,590
+the first character.
+
+90
+00:04:09,590 --> 00:04:11,880
+_speed, that's also
+perfectly fine,
+
+91
+00:04:11,880 --> 00:04:15,830
+because it starts with an
+underscore or a letter.
+
+92
+00:04:15,830 --> 00:04:20,839
+23spam starts with a
+number, so that's bad.
+
+93
+00:04:20,839 --> 00:04:24,360
+This starts with something other
+than a letter or an underscore.
+
+94
+00:04:24,360 --> 00:04:27,520
+And you can't use a dot
+in the variable name.
+
+95
+00:04:27,520 --> 00:04:30,280
+It turns out the dot
+has meaning to Python
+

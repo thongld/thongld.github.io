@@ -1,0 +1,378 @@
+753
+00:32:51,750 --> 00:32:53,250
+MHTHANH
+và tôi muốn bạn quay lại, có nhớ
+
+754
+00:32:53,250 --> 00:32:54,630
+biến x tôi nói trước đây chứ?
+
+755
+00:32:54,630 --> 00:32:59,350
+Lấy lại biến đó, cộng thêm 50, và lưu lại vào y
+
+756
+00:32:59,350 --> 00:33:02,600
+Giờ thì tôi có nội dung trong x và nội dung trong y
+
+757
+00:33:02,600 --> 00:33:05,110
+Hãy in y ra nào
+
+758
+00:33:05,110 --> 00:33:07,970
+
+759
+00:33:07,970 --> 00:33:09,060
+Trong y có gì?
+
+760
+00:33:09,060 --> 00:33:12,570
+Hãy nhìn vào y ở chỗ bạn để nó và in nó ra
+
+761
+00:33:12,570 --> 00:33:14,200
+150
+
+762
+00:33:14,200 --> 00:33:17,120
+Ta đang làm những thứ đơn giản
+
+763
+00:33:17,120 --> 00:33:19,802
+Thật sự là, phần lớn của việc lập trình là làm những thứ đơn giản
+
+764
+00:33:19,802 --> 00:33:21,760
+Số các câu lệnh khác nhau
+
+765
+00:33:21,760 --> 00:33:25,130
+mà bạn có thể viết, thì khá là nhỏ
+
+766
+00:33:25,130 --> 00:33:29,450
+Vậy là ta đang nói chuyện với Python
+
+767
+00:33:29,450 --> 00:33:30,880
+Hãy quay lại slides
+
+768
+00:33:30,880 --> 00:33:31,960
+Đây rồi
+
+769
+00:33:31,960 --> 00:33:36,960
+Ta đưa cho nó một chuỗi các lệnh
+
+770
+00:33:36,960 --> 00:33:39,440
+bạn có thể làm y như vậy trên máy tính của mình
+
+771
+00:33:39,440 --> 00:33:42,800
+bạn gõ exit() hoặc quit(), đừng quên dấu ngoặc
+
+772
+00:33:42,800 --> 00:33:44,460
+để thoát ra khi đã xong việc
+
+773
+00:33:44,460 --> 00:33:46,120
+Kết thúc phiên làm việc tương tác
+
+774
+00:33:46,120 --> 00:33:47,680
+Đây là chương trình Python tương tác
+
+775
+00:33:47,680 --> 00:33:50,080
+nó hỏi chúng ta từ lệnh này qua lệnh khác
+
+776
+00:33:50,080 --> 00:33:52,270
+và biên dịch, hoặc chạy các lệnh đấy
+
+777
+00:33:52,270 --> 00:33:54,620
+khi ta hoàn tất
+
+778
+00:33:54,620 --> 00:33:58,270
+Bạn làm việc trong một cửa sổ nào đó
+
+779
+00:33:58,270 --> 00:34:00,170
+Trên hệ điều hành Windows, có một cách khác để làm
+
+780
+00:34:00,170 --> 00:34:02,710
+Tài liệu hướng dẫn cài đặt trên pythonlearn.com
+
+781
+00:34:02,710 --> 00:34:05,960
+cho bạn biết mọi thứ cần làm
+
+782
+00:34:05,960 --> 00:34:08,830
+Về cơ bản, ta đang nói chuyện với Python
+
+783
+00:34:08,830 --> 00:34:11,199
+Ngôn ngữ gì vậy?
+
+784
+00:34:11,199 --> 00:34:14,320
+Tôi sẽ vẫn dạy bạn ngôn ngữ này
+
+785
+00:34:14,320 --> 00:34:16,790
+Ta nói gì với Python?
+
+786
+00:34:16,790 --> 00:34:18,810
+Có những thứ gì?
+
+787
+00:34:18,810 --> 00:34:23,659
+Như mọi ngôn ngữ của con người, có bộ từ vựng
+
+788
+00:34:23,659 --> 00:34:26,860
+có các từ cơ bản, các biến
+
+789
+00:34:26,860 --> 00:34:28,830
+và các từ dành riêng trong Python
+
+790
+00:34:28,830 --> 00:34:31,300
+Sau đó ta kết hợp chúng thành các dòng
+
+791
+00:34:31,300 --> 00:34:33,590
+các cấu trúc giống câu, mà bản thân chúng
+
+792
+00:34:33,590 --> 00:34:34,710
+chưa phải là một câu chuyện hoàn chỉnh
+
+793
+00:34:34,710 --> 00:34:37,020
+Rồi ta tạo nên một câu chuyện từ chúng
+
+794
+00:34:37,020 --> 00:34:40,120
+Câu chuyện này viết bằng ngôn ngữ Python
+
+795
+00:34:40,120 --> 00:34:42,989
+không phải tiếng Anh hay tiếng Pháp, những ngôn ngữ của con người
+
+796
+00:34:42,989 --> 00:34:46,800
+nhưng nó vẫn là một chuỗi các mảnh ghép nhỏ
+
+797
+00:34:46,800 --> 00:34:49,000
+cùng nhau tạo nên những mảnh ghép lớn hơn
+
+798
+00:34:49,000 --> 00:34:50,630
+và sau đó tạo thành một chương trình hoàn chỉnh
+
+799
+00:34:50,630 --> 00:34:54,590
+Đây vẫn là chương trình bạn đã thấy
+
+800
+00:34:54,590 --> 00:34:55,230
+phải không?
+
+801
+00:34:55,230 --> 00:34:57,100
+Chương trình đếm
+
+802
+00:34:57,100 --> 00:34:59,520
+từ phổ biến nhất trong tập tin
+
+803
+00:34:59,520 --> 00:35:02,900
+Tôi đã nói, nó bắt đầu bằng việc mở tập tin
+
+804
+00:35:02,900 --> 00:35:07,590
+đọc dữ liệu từ tập tin, tách ra thành các từ
+
+805
+00:35:07,590 --> 00:35:09,700
+đếm số lượng tất cả, và tìm số lớn nhất
+
+806
+00:35:09,700 --> 00:35:11,230
+rồi in ra
+
+807
+00:35:11,230 --> 00:35:16,940
+"name" là một từ, "=" là một từ khác, "raw" là một từ
+
+808
+00:35:16,940 --> 00:35:19,420
+Tất cả những thứ này là từ, mỗi thứ này
+
+809
+00:35:19,420 --> 00:35:21,740
+là một câu
+
+810
+00:35:21,740 --> 00:35:24,680
+Có những khối các câu, là những đoạn văn
+
+811
+00:35:24,680 --> 00:35:26,985
+Có một đoạn văn, một đoạn văn
+
+812
+00:35:26,985 --> 00:35:29,230
+có lẽ tôi nên dùng một màu khác ở đây
+
+813
+00:35:29,230 --> 00:35:33,500
+Đây là một đoạn văn, một đoạn văn, và một đoạn văn
+
+814
+00:35:33,500 --> 00:35:36,050
+Cuối cùng, khi bạn đã hiểu nó
+
+815
+00:35:36,050 --> 00:35:38,300
+bạn sẽ hiểu trước khi kết thúc bài giảng
+
+816
+00:35:38,300 --> 00:35:40,520
+cái này giống như một câu chuyện
+
+817
+00:35:40,520 --> 00:35:41,020
+đúng không?
+
+818
+00:35:41,020 --> 00:35:43,330
+Nó kết dính với nhau, có phần mở đầu, phần thân
+
+819
+00:35:43,330 --> 00:35:44,840
+và phần kết
+
+820
+00:35:44,840 --> 00:35:47,190
+Đừng lo lắng về các chi tiết
+
+821
+00:35:47,190 --> 00:35:49,520
+Ta sẽ nói về các chi tiết này trong nhiều chương tiếp theo
+
+822
+00:35:49,520 --> 00:35:51,490
+Đừng lo lắng về chương trình cụ thể này
+
+823
+00:35:51,490 --> 00:35:54,520
+Tôi chỉ cần bạn cảm nhận là bạn sẽ hiểu
+
+824
+00:35:54,520 --> 00:35:56,640
+Ta sẽ bắt đầu một cách đơn giản
+
+825
+00:35:56,640 --> 00:35:58,830
+Điều đầu tiên bạn cần biết
+
+826
+00:35:58,830 --> 00:36:04,040
+làm thế nào với Python, 
+chính là biết những thứ không được làm
+
+827
+00:36:04,040 --> 00:36:06,140
+Khi bạn dùng những từ dành riêng này
+
+828
+00:36:06,140 --> 00:36:09,380
+chúng có ý nghĩa rất đặc biệt với Python
+
+829
+00:36:09,380 --> 00:36:11,510
+Như là khi bạn nói với một chú chó, tôi không nghĩ
+
+830
+00:36:11,510 --> 00:36:13,900
+bạn sẽ nhận được thức ăn ngày hôm nay
+
+831
+00:36:13,900 --> 00:36:16,660
+Chú chó nghe từ "food" và không có gì nữa
+
+832
+00:36:16,660 --> 00:36:18,880
+"food" là một từ dành riêng cho chó
+
+833
+00:36:18,880 --> 00:36:21,580
+"walk" và "bath" là những từ dành riêng khác
+
+834
+00:36:21,580 --> 00:36:24,080
+Nghĩa là, bạn không thể dùng những từ này với bất kỳ ý nghĩa nào khác
+
+835
+00:36:24,080 --> 00:36:26,520
+với ý nghĩa riêng mà Python hiểu
+
+836
+00:36:26,520 --> 00:36:29,400
+Lệnh "print" yêu cầu Python in ra các thứ
+
+837
+00:36:29,400 --> 00:36:32,350
+Lệnh "return" được dùng trong các hàm
+
+838
+00:36:32,350 --> 00:36:35,600
+"Else" và "if" là những từ mà nếu Python thấy
+
+839
+00:36:35,600 --> 00:36:39,450
+thì nó hiểu theo một nghĩa riêng
+
+840
+00:36:39,450 --> 00:36:41,830
+Đừng dùng nó cho bất kỳ mục đích nào khác ngoài những mục đích
+
+841
+00:36:41,830 --> 00:36:44,630
+đã được xác định.
+Ta sẽ học về chúng
+
+842
+00:36:44,630 --> 00:36:47,970
+Câu trong Python
+
+843
+00:36:47,970 --> 00:36:50,750
+là một dòng với những mảnh ghép bên trong
+
+844
+00:36:50,750 --> 00:36:53,880
+Đây là 3 dòng mã
+
+845
+00:36:53,880 --> 00:36:55,300
+Đầu tiên là x = 2
+
+846
+00:36:55,300 --> 00:37:00,240
+Nghĩa là, tìm và lấy cho tôi một vùng nhớ trong RAM
+

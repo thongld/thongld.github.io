@@ -1,0 +1,500 @@
+0
+00:00:05,179 --> 00:00:08,790
+Rất vui được gặp lại bạn, mọi thứ ngày càng trở nên thú vị.
+https://youtu.be/cAn3P2TYk3s
+1
+tôi sẽ không giới thiệu thêm những kiến thức mới
+
+2
+00:00:13,210 --> 00:00:17,260
+bởi vì tôi muốn bạn hiểu hơn về mọi thứ
+trước khi ta tiến hành phân tích dữ liệu.
+
+3
+00:00:17,260 --> 00:00:20,190
+Vậy tạm thời ta sẽ gạt những dữ liệu sang một bên.
+
+4
+00:00:20,190 --> 00:00:23,680
+Câu hỏi đặt ra lúc này là,
+chúng ta còn cần phải biết thêm điều gì nữa?
+
+5
+00:00:23,680 --> 00:00:26,370
+Ta đã biết về lãi suất, về những rủi ro.
+
+6
+00:00:26,370 --> 00:00:30,550
+Ta đã biết về lãi suất trung bình,
+và muốn có được chúng càng cao càng tốt.
+
+7
+00:00:30,550 --> 00:00:32,490
+Ta không thích độ lệch chuẩn.
+
+8
+00:00:32,490 --> 00:00:34,000
+Còn điều gì chưa được nhắc đến?
+
+9
+00:00:35,020 --> 00:00:41,810
+Đó là chủ đề mà nhờ vào đó người ta đã đạt hai giải Nobel.
+
+10
+00:00:41,810 --> 00:00:43,140
+Sắp tới ta sẽ nói về nó.
+
+11
+00:00:44,470 --> 00:00:46,240
+Giờ đây câu hỏi được đặt ra là,
+
+12
+00:00:46,240 --> 00:00:51,840
+nếu mỗi chúng ta đều đang giữ duy nhất một cổ phiếu,
+bạn có mua cổ phiếu của IBM chứ?
+
+13
+00:00:51,840 --> 00:00:55,550
+Còn tôi đang có cổ phiếu của Xerox,
+vậy là chúng ta đều ổn.
+
+14
+00:00:55,550 --> 00:00:59,030
+Ta đều biết cách tính mức sinh lời và rủi ro của IBM.
+
+15
+00:00:59,030 --> 00:01:02,050
+Chỉ cần lấy dữ liệu, tính toán,
+thế là ta có được kết quả.
+
+16
+00:01:03,400 --> 00:01:06,050
+Tôi gọi điện cho IBM và chúng ta đều thấy rất ổn.
+
+17
+00:01:07,160 --> 00:01:11,350
+Nhưng chúng ta hóa ra lại là những người thích rủi ro.
+
+18
+00:01:11,350 --> 00:01:16,000
+Vì chỉ có những người thích rủi ro
+mới đặt tất cả số trứng vào cùng một rổ.
+
+19
+00:01:16,000 --> 00:01:16,960
+Chúng ta là ai?
+
+20
+00:01:16,960 --> 00:01:17,900
+Những người sợ rủi ro.
+
+21
+00:01:19,090 --> 00:01:23,580
+Mọi thứ thực ra rất phức tạp,
+nhưng cũng rất thú vị.
+
+22
+00:01:23,580 --> 00:01:26,910
+Vậy là một người sợ rủi ro, ta sẽ nắm lấy điều gì?
+
+23
+00:01:26,910 --> 00:01:31,190
+Ta sẽ không bao giờ chỉ giữ duy nhất một thứ.
+
+24
+00:01:31,190 --> 00:01:37,230
+Ta sẽ giữ nhiều thứ khác nhau.
+
+25
+00:01:39,490 --> 00:01:40,620
+Chúng ta trở thành
+
+26
+00:01:40,620 --> 00:01:41,230
+những nhà đầu tư.
+
+27
+00:01:42,450 --> 00:01:44,600
+Nên nhớ, ta có thể là chủ một công ty
+
+28
+00:01:44,600 --> 00:01:48,580
+nhưng ở ngoài đời mọi thứ cũng diễn ra như thế.
+
+29
+00:01:48,580 --> 00:01:54,440
+Ta đều giữ nhiều thứ cùng một lúc,
+và đó là gọi là danh mục đầu tư.
+
+30
+00:01:56,310 --> 00:01:58,980
+Đầu tiên tôi muốn bạn làm quen một chút,
+
+31
+00:01:58,980 --> 00:02:03,524
+rồi sau đó mới đi vào chi tiết của sự đa dạng hóa
+
+32
+00:02:03,524 --> 00:02:07,330
+bởi vì trong đó có những phép tính rất phức tạp.
+
+33
+00:02:07,330 --> 00:02:10,820
+Ngay bây giờ tôi sẽ nói về nó.
+
+34
+00:02:10,820 --> 00:02:12,740
+Gỉa sử bạn có cổ phiếu của IBM.
+
+35
+00:02:14,280 --> 00:02:17,550
+nếu như bạn chỉ giữ duy nhất cổ phiếu của IBM,
+rủi ro là gì?
+
+36
+00:02:20,310 --> 00:02:22,545
+Còn lãi suất kỳ vọng là gì?
+
+37
+00:02:25,239 --> 00:02:28,370
+Ta phải đặt thêm mũ, vì đây chỉ là ước lượng.
+
+38
+00:02:28,370 --> 00:02:29,740
+Xong.
+
+39
+00:02:29,740 --> 00:02:31,800
+Nhưng bạn sẽ không chỉ giữ duy nhất IBM.
+
+40
+00:02:32,815 --> 00:02:35,380
+Bạn sẽ thật ngu ngốc nếu làm như vậy.
+
+41
+00:02:35,380 --> 00:02:36,130
+Tại sao?
+
+42
+00:02:36,130 --> 00:02:38,240
+Tại vì nếu là người sợ rủi ro,
+thì sao bạn lại dại dột như vậy?
+
+43
+00:02:39,740 --> 00:02:43,510
+Ôm lấy cả đống rủi ro,
+mà chẳng được gì cả.
+
+44
+00:02:43,510 --> 00:02:46,167
+Là những người sợ rủi ro nên chúng ta sẽ làm gì?
+
+45
+00:02:46,167 --> 00:02:51,640
+Ta kết hợp mua cổ phiếu IBM
+với Xerox, một công ty khác.
+
+46
+00:02:51,640 --> 00:02:54,230
+Ta kết hợp mua thêm cố phiếu Walmart
+
+47
+00:02:56,360 --> 00:02:59,240
+và cổ phiếu của nhiều công ty khác nữa
+
+48
+00:02:59,240 --> 00:03:04,890
+nhiều lúc người ta cũng mua các chỉ số,
+điều này đang trở nên khá phổ biến.
+
+49
+00:03:04,890 --> 00:03:06,320
+Đầu tư theo chỉ số.
+
+50
+00:03:06,320 --> 00:03:10,080
+Bạn có thể đầu tư vào một danh mục như S&P 500
+
+51
+00:03:11,750 --> 00:03:13,570
+S&P 500 là gì?
+
+52
+00:03:13,570 --> 00:03:18,180
+Dành cho những người chưa biết,
+đó là 500 loại cổ phiếu của công ty Standard & Poor
+
+53
+00:03:18,180 --> 00:03:20,910
+Là một danh mục đầu tư có thể trao đổi,
+và bạn có thể theo dõi nó.
+
+54
+00:03:20,910 --> 00:03:22,655
+Bạn có thể theo dõi khi vào trang Yahoo Finance.
+
+55
+00:03:22,655 --> 00:03:27,460
+Bạn cũng có thể theo dõi chỉ số Dow Jones,
+chỉ số này chỉ có 30, hoặc 10 loại,
+
+56
+00:03:27,460 --> 00:03:30,940
+vấn đề là bạn đang muốn tìm kiếm loại chỉ số nào,
+hay bạn có thể theo dõi chỉ số Russell 2000,
+
+57
+00:03:30,940 --> 00:03:35,240
+con số kia để chỉ số lượng cổ phiếu có trong đó.
+
+58
+00:03:35,240 --> 00:03:39,320
+Ngày nay mọi người đều giữ những danh mục lớn,
+lên đến 500 loại cổ phiếu, với 2 lý do như sau.
+
+59
+00:03:39,320 --> 00:03:42,210
+Thứ nhất, họ cần một danh mục đầu tư
+
+60
+00:03:42,210 --> 00:03:44,565
+vì họ không muốn đặt tất cả mọi thứ vào một cái rổ.
+
+61
+00:03:44,565 --> 00:03:46,738
+Nhưng tại sao lại chọn S&P 500?
+
+62
+00:03:46,738 --> 00:03:53,590
+Bởi vì bạn chỉ có thể giữ 60 cổ phiếu,
+nhưng bạn không thể mua một lúc 60 cái.
+
+63
+00:03:53,590 --> 00:03:56,820
+Cho nên bạn phải mua lần lượt từng cổ phiếu,
+và trong lúc đó
+
+64
+00:03:56,820 --> 00:04:01,242
+bạn có thể mua được một danh mục có sẵn
+bởi vì chi phí giao dịch thường giảm rất mạnh.
+
+65
+00:04:01,242 --> 00:04:07,310
+Trong số các công ty thì Vanguard
+là công ty đầu tiên bắt đầu xu hướng này
+
+66
+00:04:07,310 --> 00:04:14,730
+vấn đề đang gây ra nhiều tranh cãi,
+đó là có rất nhiều công ty đầu tư
+
+67
+00:04:14,730 --> 00:04:19,320
+đang tạo ra những danh mục 
+mà không hề đảm bảo về lãi suất.
+
+68
+00:04:19,320 --> 00:04:22,000
+Họ tạo ra chúng chỉ để kiếm tiền
+
+69
+00:04:22,000 --> 00:04:25,510
+mỗi khi bạn mua hay bán cổ phiếu trong đó.
+
+70
+00:04:25,510 --> 00:04:28,860
+Bạn phải trả chi phí giao dịch,
+còn ai là người hưởng lợi?
+
+71
+00:04:28,860 --> 00:04:30,284
+Những nhà môi giới, ở cả 2 bên mua và bán.
+
+72
+00:04:30,284 --> 00:04:32,974
+Bất kể là bạn đang bán để lấy tiền lời
+
+73
+00:04:32,974 --> 00:04:37,333
+hay bán vì lo lắng thua lỗ.
+
+74
+00:04:37,333 --> 00:04:38,430
+Quay lại với S&P 500.
+
+75
+00:04:38,430 --> 00:04:40,070
+Có bao nhiêu cổ phiếu trong đó?
+
+76
+00:04:40,070 --> 00:04:41,470
+con số là 500.
+
+77
+00:04:41,470 --> 00:04:44,920
+Đã có lần tôi hỏi câu này trên lớp.
+
+78
+00:04:46,640 --> 00:04:50,280
+Vậy, điều gì sẽ xảy ra?
+
+79
+00:04:50,280 --> 00:04:54,880
+IBM lúc này không còn là một cổ phiếu đơn lẻ
+
+80
+00:04:54,880 --> 00:04:58,620
+mà được đặt trong một danh mục gồm 500 loại cổ phiếu
+
+81
+00:04:58,620 --> 00:05:03,420
+điều đó đã thay đổi định nghĩa về độ rủi ro của IBM.
+
+82
+00:05:03,420 --> 00:05:09,970
+Lúc này độ rủi ro của IBM không còn
+chỉ phụ thuộc vào độ lệch chuẩn của nó
+
+83
+00:05:09,970 --> 00:05:12,310
+Tôi sẽ nhảy cóc một chút,
+rồi chúng ta sẽ quay trở lại sau,
+
+84
+00:05:12,310 --> 00:05:16,700
+bởi vì nó thực sự rất thú vị
+nhưng cũng hơi phức tạp một chút.
+
+85
+00:05:18,020 --> 00:05:22,045
+Độ rủi ro của IBM không còn chỉ tính bằng
+độ lệch chuẩn của nó.
+
+86
+00:05:22,045 --> 00:05:28,280
+mà phụ thuộc vào vị trí của nó trong danh mục này.
+
+87
+00:05:28,280 --> 00:05:35,264
+Nói cách khác, nó phụ thuộc vào mức sinh lời
+của IBM khi so sánh với 499 cổ phiếu còn lại
+
+88
+00:05:37,020 --> 00:05:38,180
+Tôi xin nhắc lại.
+
+89
+00:05:38,180 --> 00:05:44,890
+Nếu bạn chỉ giữ duy nhất IBM,
+mức độ rủi ro là quá rõ ràng.
+
+90
+00:05:44,890 --> 00:05:49,090
+Nhưng bạn sẽ chẳng bao giờ làm thế,
+bạn luôn giữ cổ phiếu IBM trong một danh mục.
+
+91
+00:05:49,090 --> 00:05:54,780
+Một khi đã ở trong một danh mục,
+những chuyển động của IBM
+
+92
+00:05:54,780 --> 00:05:59,980
+sẽ có liên quan đến những cố phiếu khác
+chứ không chỉ riêng mình nó.
+
+93
+00:06:01,690 --> 00:06:05,450
+Bạn nhớ không, tôi đã nói rằng có hai loại rủi ro
+
+94
+00:06:05,450 --> 00:06:08,320
+rủi ro thị trường và rủi ro đặc định
+và nó có liên quan đến phần này.
+
+95
+00:06:09,460 --> 00:06:14,850
+Sắp tới chúng ta sẽ làm một số thống kê
+để hiểu về cách tính toán các mối liên hệ
+
+96
+00:06:14,850 --> 00:06:20,190
+bởi vì IBM không bao giờ đứng riêng một mình
+mà luôn được đặt trong một danh mục.
+
+97
+00:06:20,190 --> 00:06:25,840
+Khi đó ta bắt đầu cần quan tâm
+đến mối liên hệ của nó với các cổ phiếu khác
+
+98
+00:06:25,840 --> 00:06:29,850
+chúng ta sẽ trở lại phần lý thuyết tính toán này sau.
+
+99
+00:06:30,920 --> 00:06:33,410
+Tôi xin được tổng kết lại phần này như sau
+
+100
+00:06:33,410 --> 00:06:37,830
+Tất cả phần này tập trung nhiều về mặt khái niệm.
+
+101
+00:06:37,830 --> 00:06:40,010
+Nhưng như tôi đã nói, nếu bạn không hiểu khái niệm
+
+102
+00:06:40,010 --> 00:06:44,460
+đặc biệt là khái niệm về rủi ro và mức sinh lời,
+nếu bạn không hiểu tại sao lại phải học chúng
+
+103
+00:06:44,460 --> 00:06:50,010
+bạn sẽ gặp rất nhiều khó khăn khi thực hành,
+hay thậm chí bạn sẽ bị choáng 
+
+104
+00:06:50,010 --> 00:06:54,290
+với những thống kê và dữ liệu tôi đưa cho bạn,
+bạn sẽ không hiểu bạn đang làm cái gì.
+
+105
+00:06:54,290 --> 00:06:56,840
+Tôi rất sợ tình huống thứ hai xảy ra.
+
+106
+00:06:56,840 --> 00:07:02,300
+Tôi sẽ lo lắng nhiều hơn cho một người
+sẵn sàng tiến hành làm nhưng không hiểu bản chất
+
+107
+00:07:02,300 --> 00:07:07,280
+so với một người muốn hiểu thật rõ
+
+108
+00:07:07,280 --> 00:07:11,510
+về cách xử lý dữ liệu trước khi bắt đầu tiến hành làm.
+
+109
+00:07:11,510 --> 00:07:13,620
+Chúng ta sẵn có rất nhiều dữ liệu.
+
+110
+00:07:13,620 --> 00:07:16,620
+Thật là tuyệt vời, nhưng cũng rất đáng sợ.
+
+111
+00:07:16,620 --> 00:07:21,500
+Thật đáng sợ với số lượng những phân tích thiếu tính toán
+ngay trong những tổ chức hàng đầu
+
+112
+00:07:22,520 --> 00:07:27,730
+người ta phó mặc cho dữ liệu làm chủ phân tích
+thay vì sử dụng cái đầu của mình.
+
+113
+00:07:27,730 --> 00:07:29,380
+Gặp lại bạn sau.
+

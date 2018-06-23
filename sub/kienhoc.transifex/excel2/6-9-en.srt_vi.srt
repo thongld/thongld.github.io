@@ -1,0 +1,269 @@
+1
+00:00:00,849 --> 00:00:04,029
+Xin chào tất cả mọi người! 
+Trong bài này, ta sẽ tập trung vào
+
+2
+00:00:04,029 --> 00:00:08,240
+sparklines. Chúng ta sẽ kết hợp
+nó với một danh sách top 10
+
+3
+00:00:08,240 --> 00:00:12,880
+Bạn có thể xem chi tiết ở đây.
+Tôi có hai danh sách top 10.
+
+4
+00:00:12,880 --> 00:00:15,960
+Đây là top 10 khách hàng,
+cùng với doanh số từ họ
+
+5
+00:00:15,960 --> 00:00:20,340
+Đây là top 10 sản phẩm và doanh số
+
+6
+00:00:20,340 --> 00:00:25,030
+Nhưng cả hai đều là doanh số từ
+đầu năm đến nay. Nhưng tôi lại muốn
+
+7
+00:00:25,030 --> 00:00:28,830
+nhìn thấy xu hướng.
+Đó là công dụng của sparkline.
+
+8
+00:00:28,830 --> 00:00:34,550
+Cùng học cách tạo sparkline trong Excel.
+Chúng ta trở lại file
+
+9
+00:00:34,550 --> 00:00:38,960
+Ta cần hai danh sách Top 10 ở đây.
+
+10
+00:00:38,960 --> 00:00:43,480
+Dữ liệu đã được chuẩn bị sẵn.
+Đây là top 10 khách hàng
+
+11
+00:00:45,580 --> 00:00:57,300
+Cách tôi làm điều đó là sử dụng chức năng
+top 10 của Excel, trong PivotTable
+
+12
+00:00:57,309 --> 00:01:02,109
+Trong bộ lọc, bạn chọn top-ten
+
+13
+00:01:02,109 --> 00:01:09,299
+Vậy, ta sẽ luôn có 10 giá trị.
+Sau đó ta dùng một hàm lookup
+
+14
+00:01:09,299 --> 00:01:15,740
+Một hàm index để sao chép dữ liệu qua đây.
+Để ta có thể dán nó vào dashboard (báo cáo tổng quan)
+
+15
+00:01:15,740 --> 00:01:23,880
+Và ta cần một số dữ liệu bổ sung của 12 tháng
+gần đây để lập các sparkline
+
+16
+00:01:23,880 --> 00:01:27,020
+Các sparklines là đối tượng đầu tiên
+ta sẽ tạo
+
+17
+00:01:27,020 --> 00:01:33,490
+Tôi muốn nó nằm đây, nên tôi chọn
+cột xu hướng
+
+18
+00:01:33,490 --> 00:01:42,929
+Rồi ta chèn, không phải sparkline mà
+là sparkline dạng cột
+
+19
+00:01:42,929 --> 00:01:45,310
+Sau đó, chương trình yêu câu dữ liệu cần
+dùng nằm ở đâu
+
+20
+00:01:45,310 --> 00:01:49,770
+Cái hay của sparkline là ta có thể chọn cả nhóm
+
+21
+00:01:49,770 --> 00:01:53,920
+rồi sau đó chọn dữ liệu phù hợp với nó
+
+22
+00:01:58,320 --> 00:02:02,560
+Vậy là xong.
+Và ta tạo được các sparklines
+
+23
+00:02:02,560 --> 00:02:05,880
+Rất tiện lợi khi các sparkline được xếp
+vào thành nhóm 
+
+24
+00:02:05,880 --> 00:02:10,060
+Nên ta có thể chỉnh sửa chúng chỉ trong một bước
+
+25
+00:02:10,060 --> 00:02:17,140
+Và tôi muốn chọn màu khác, màu này xấu
+
+26
+00:02:17,140 --> 00:02:22,120
+Xong rồi. À, cái này thì ta cũng làm vầy được
+
+27
+00:02:22,120 --> 00:02:27,830
+Thế là xong cái sparkline
+
+28
+00:02:27,830 --> 00:02:32,250
+Rồi ta sẽ trình bày nó y như cách ta
+làm cái bảng P&L
+
+29
+00:02:32,250 --> 00:02:44,330
+Ta chọn nó, trở về báo cáo dashboard
+
+30
+00:02:44,330 --> 00:02:56,400
+Đưa trỏ chuột vào.
+Và dán nó dưới dạng hình ảnh liên kết
+
+31
+00:02:56,400 --> 00:03:06,370
+Rồi chỉnh kích cỡ lại.
+Xong. 
+
+32
+00:03:06,370 --> 00:03:11,620
+Rồi ta làm tương tự với top 10 sản phẩm.
+
+33
+00:03:13,200 --> 00:03:26,780
+Ta lại chọn cột xu hướng.
+Ta chèn một sparkline.
+
+34
+00:03:26,790 --> 00:03:44,480
+Chọn dữ liệu.
+Đổi màu.
+
+35
+00:03:44,480 --> 00:03:56,980
+Rồi sao chép bảng
+về báo cáo dashboard
+
+36
+00:03:56,980 --> 00:04:05,330
+Rồi dán nó dưới dạng hình ảnh liên kết
+(linked picture), rồi cuối cùng
+
+37
+00:04:05,330 --> 00:04:24,010
+ta chỉnh kích cỡ.
+Xong.
+
+38
+00:04:24,010 --> 00:04:30,160
+Gần như là xong hết rồi.
+
+39
+00:04:30,160 --> 00:04:34,700
+Tất cả các đồ thị đã điền xong.
+Chỉ còn một vấn đề
+
+40
+00:04:34,700 --> 00:04:39,930
+Là ở góc phải ta có một khoảng trống
+
+41
+00:04:39,930 --> 00:04:43,950
+dành cho legend (nhãn dữ liệu).
+Bạn có thể tự suy nghĩ cách
+
+42
+00:04:43,950 --> 00:04:48,050
+để sao chép nhãn đó vào.
+Tôi cho bạn một gợi ý:
+
+43
+00:04:48,050 --> 00:04:51,770
+Bạn cũng có thể dùng ảnh liên kết.
+Tìm trong tệp tin, bạn sẽ thấy
+
+44
+00:04:51,770 --> 00:04:56,950
+Một sheet gọi là 'legend,' trong đó có
+một vùng bạn có thể sao chép
+
+45
+00:04:56,950 --> 00:05:00,740
+Một điều nữa bạn phải làm là
+chỉnh lại đống màu sắc
+
+46
+00:05:00,740 --> 00:05:06,100
+Bởi vì cái này xấu quá xấu.
+Nãy giờ là ta học cách thể hiện thông tin trên ô.
+
+47
+00:05:06,100 --> 00:05:12,470
+Còn muốn trình bày thì như vầy mới coi được.
+Ta để phông nền màu xám đằng sau
+
+48
+00:05:12,470 --> 00:05:17,070
+các biểu đồ, còn mấy màu kia ta bỏ đi
+
+49
+00:05:17,070 --> 00:05:23,350
+Ta cũng thấy nhãn ở phía bên phải.
+Vậy là ta đã kết thúc loạt giáo trình
+
+50
+00:05:23,350 --> 00:05:27,090
+Chúng tôi có hai bất ngờ dành cho bạn,
+hai bài học khuyến mãi nho nhỏ
+
+51
+00:05:27,090 --> 00:05:33,240
+bạn có thể xem ra. Nhưng bài học
+thì đến đây là hết.
+
+52
+00:05:33,240 --> 00:05:41,000
+Vậy: ta đã dành rất nhiều thời gian
+học các chiêu để tạo một dashboard đẹp
+
+53
+00:05:41,000 --> 00:05:44,310
+trong Excel, nhưng điều quan trọng 
+bạn cần nhớ là
+
+54
+00:05:44,310 --> 00:05:48,389
+trước khi bạn bắt tay vào làm gì trong Excel,
+bạn hãy nghĩ xem: "Tôi cần trình bày cho người
+
+55
+00:05:48,389 --> 00:05:52,290
+xem cái dashboard ấy biết những thông tin gì?"
+
+56
+00:05:52,290 --> 00:05:58,169
+Hy vọng bạn thích loạt giáo trình này.
+Mong gặp lại bạn ở hai bài học thêm
+
+57
+00:05:58,169 --> 00:06:00,889
+Hẹn gặp lại!
+

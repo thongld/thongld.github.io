@@ -1,0 +1,584 @@
+0
+00:00:05,150 --> 00:00:10,060
+Hãy bắt đầu với những thứ cơ bản trước đã.
+Các bạn hãy xem các câu hỏi sau.
+
+2
+00:00:14,900 --> 00:00:17,660
+Mức thu lợi trung bình của mức an toàn 1 và 2 là bao nhiêu?
+
+3
+00:00:17,660 --> 00:00:19,920
+Như tôi đã nói, tôi sẽ chỉ tập trung vào 1 và
+
+4
+00:00:19,920 --> 00:00:23,610
+2 bởi vì các bạn chỉ cần 2 cái đó để hiểu được cái chúng ta đang làm là gì.
+
+5
+00:00:23,610 --> 00:00:27,625
+Bạn có thể dễ dàng làm được hết và tôi cũng khuyến khích bạn nên làm hết cả 4 cột.
+
+6
+00:00:28,810 --> 00:00:29,790
+Với mức an toàn 1.
+
+7
+00:00:29,790 --> 00:00:31,590
+Mức thu lợi trung bình là bao nhiêu?
+
+8
+00:00:31,590 --> 00:00:33,320
+Chúng ta tính nó bằng cách nào?
+
+9
+00:00:33,320 --> 00:00:37,260
+Tôi sẽ gọi nó là R1 gạch.
+
+10
+00:00:37,260 --> 00:00:42,301
+Giá trị tôi cần tính là sigma Bi và
+
+11
+00:00:42,301 --> 00:00:45,186
+Ri, được chứ?
+
+12
+00:00:45,186 --> 00:00:48,290
+Khá là rõ ràng.
+
+13
+00:00:48,290 --> 00:00:50,540
+Hãy tự hỏi mình xác suất là bao nhiêu
+
+14
+00:00:50,540 --> 00:00:51,360
+và bạn đang làm cái gì?
+
+15
+00:00:51,360 --> 00:00:57,150
+Hãy quay lại bảng số liệu.
+
+16
+00:00:57,150 --> 00:00:59,650
+Tôi sẽ đi qua phần này, trình bày sơ lược về nó để các bạn có thể hiểu được nó.
+
+17
+00:00:59,650 --> 00:01:00,990
+Tôi đang làm gì á?
+
+18
+00:01:00,990 --> 00:01:03,653
+Tôi đang nhân xác suất với mức sinh lời.
+
+19
+00:01:03,653 --> 00:01:07,900
+0.1 nhân 5% là 0.5%.
+
+20
+00:01:07,900 --> 00:01:11,352
+0.4 nhân 7 bằng bao nhiêu?
+
+21
+00:01:11,352 --> 00:01:12,461
+2.8
+
+22
+00:01:12,461 --> 00:01:16,867
+0.3 nhân 6 là 1.8
+
+23
+00:01:16,867 --> 00:01:22,290
+và 0.2 nhân -2 bằng -0.04
+
+24
+00:01:22,290 --> 00:01:26,590
+Cũng đừng lo nếu như các bạn đặt nhầm dấu phẩy
+
+25
+00:01:26,590 --> 00:01:28,820
+Hy vọng là các bạn tính được.
+
+26
+00:01:28,820 --> 00:01:34,852
+Và phép tính này cho ra kết quả là 4.70%.
+
+27
+00:01:34,852 --> 00:01:40,430
+Những gì các bạn cần làm là nhân xác suất với mức sinh lợi.
+
+28
+00:01:40,430 --> 00:01:44,530
+Tôi sẽ nhấn mạnh điểm quan trọng này.
+
+29
+00:01:44,530 --> 00:01:47,980
+Cái này hay đi kèm với dấu ngã.
+
+30
+00:01:47,980 --> 00:01:49,810
+Dấu ngã ở đây, và
+
+31
+00:01:49,810 --> 00:01:54,870
+lý do của việc này là vì mỗi giá trị sẽ có một mức sinh lợi khác nhau.
+
+32
+00:01:54,870 --> 00:01:56,940
+Mỗi trạng thái sẽ có một mức sinh lãi khác nhau.
+
+33
+00:01:58,050 --> 00:02:03,740
+Đó là lý do tại sao các giá trị Ri thay đổi, nhưng R1 gạch lại không đổi, đúng không?
+
+34
+00:02:03,740 --> 00:02:04,546
+ 
+
+35
+00:02:04,546 --> 00:02:12,466
+Số thứ hai cần tính là R2 gạch.
+
+36
+00:02:12,466 --> 00:02:16,866
+gồm sigma pi nhân với Ri.
+
+37
+00:02:16,866 --> 00:02:20,780
+Tất nhiên là khi tôi nhắc đến Ri, thì tôi đang nói đến chỉ số an toàn thứ 2.
+
+38
+00:02:20,780 --> 00:02:27,427
+Và đáp án, tôi nghĩ là 3.35%.
+
+39
+00:02:27,427 --> 00:02:28,840
+Tại sao điều này lại quan trọng đến vậy?
+
+40
+00:02:28,840 --> 00:02:33,428
+Bởi vì trong quy luật phân bố,
+
+41
+00:02:33,428 --> 00:02:37,818
+tôi rất hứng thú với những thứ liên quan đến giá trị trung bình.
+
+42
+00:02:39,467 --> 00:02:43,614
+Trong tài chính, nó còn được gọi là mức sinh lời kì vọng.
+
+43
+00:02:43,614 --> 00:02:48,420
+bởi vì đây là giá trị bạn đang kì vọng khi tính trung bình.
+
+44
+00:02:48,420 --> 00:02:53,860
+Vì vậy, nếu giả sử như Ri là IBM và r2 là Xerox, và khi tính toán,
+
+45
+00:02:53,860 --> 00:02:59,180
+bạn sẽ cho rằng trung bình IBM sẽ trả cho bạn 4.7% và
+
+46
+00:03:00,440 --> 00:03:05,200
+Xerox sẽ trả 3.35%.
+
+47
+00:03:05,200 --> 00:03:08,660
+Thứ đầu tiên các bạn phải nhớ là những giá trị này có xuất hiện trong thực tế,
+
+48
+00:03:08,660 --> 00:03:11,180
+và tôi nghĩ nó cũng không có giá trị thực tiễn cho lắm.
+
+49
+00:03:12,190 --> 00:03:17,160
+Họ cho rằng Ri gạch cao hơn R2 gạch, đúng vậy.
+
+50
+00:03:18,160 --> 00:03:25,067
+Nhưng họ cũng ám chỉ rằng IBM cho bạn mức sinh lời cao hơn so với R2 gạch,
+
+51
+00:03:25,067 --> 00:03:31,480
+và nếu vậy thì đó sẽ là khoản đầu tư tốt hơn.
+
+52
+00:03:31,480 --> 00:03:32,235
+Hoàn toàn sai.
+
+53
+00:03:32,235 --> 00:03:39,760
+Không phải là tốt hơn hay dở hơn, đây chỉ là giá trị bù trừ trung bình
+
+54
+00:03:39,760 --> 00:03:44,392
+cho bạn khi bạn chấp nhận rủi ro, tất nhiên là tôi chỉ đang giả sử thôi.
+
+55
+00:03:44,392 --> 00:03:49,360
+Rất ít khi bạn sẽ nhận được mức sinh lời cao nhưng
+
+56
+00:03:49,360 --> 00:03:50,890
+lại có nguy cơ thấp,
+
+57
+00:03:50,890 --> 00:03:56,100
+nhưng có một số chiến thuật mà nhiều người lúc nào cũng hay áp dụng.
+
+58
+00:03:56,100 --> 00:03:59,520
+Và do đó, nên thị trường vận hành rất là trơn tru.
+
+59
+00:03:59,520 --> 00:04:02,320
+Không phải lúc nào cũng vậy, nhưng thường là như vậy.
+
+60
+00:04:02,320 --> 00:04:07,170
+Hãy nhớ rằng việc 4.70 lớn
+
+61
+00:04:07,170 --> 00:04:11,520
+hơn 3.35 không có ý nghĩa lắm, được chứ?
+
+62
+00:04:11,520 --> 00:04:15,330
+Nhưng mục đích của chúng ta ở đây là tính những con số này dựa trên
+
+63
+00:04:15,330 --> 00:04:16,710
+những cái mà tôi đã nói cho các bạn biết.
+
+64
+00:04:16,709 --> 00:04:23,590
+Vì thế nên hãy quay lại và viết lại 2 giá trị chỉ số an toàn.
+
+65
+00:04:23,590 --> 00:04:26,740
+Giờ chúng ta sẽ qua phần phương sai và độ lệch chuẩn.
+
+66
+00:04:26,740 --> 00:04:30,838
+Phương sai và độ lệch chuẩn của 2 giá trị trên là bao nhiêu?
+
+67
+00:04:30,838 --> 00:04:36,070
+Tôi sẽ làm như vầy, thay vì cứ bật tới bật lui, bật tới bật lui thì
+
+68
+00:04:36,070 --> 00:04:39,880
+tôi sẽ viết công thức ra và các bạn có thể
+
+69
+00:04:39,880 --> 00:04:44,610
+dành ra chút thời gian để làm không?
+
+70
+00:04:44,610 --> 00:04:46,150
+Công thức tính như thế nào?
+
+71
+00:04:47,390 --> 00:04:51,360
+Sigma 1 bình phương
+
+72
+00:04:51,360 --> 00:04:53,110
+Số 1 ở đây tượng trưng cho cái gì?
+
+73
+00:04:53,110 --> 00:04:54,000
+Của mức độ an toàn 1.
+
+74
+00:04:54,000 --> 00:04:55,390
+Còn số mũ tượng trưng cho cái gì?
+
+75
+00:04:55,390 --> 00:04:56,640
+Sự ước lượng.
+
+76
+00:04:56,640 --> 00:05:02,030
+Thỉnh thoảng chúng ta có thể dùng chữ "s" làm phương sai ước lượng.
+
+77
+00:05:02,030 --> 00:05:02,950
+Còn bình phương
+
+78
+00:05:02,950 --> 00:05:03,470
+thì sao?
+
+79
+00:05:03,470 --> 00:05:05,270
+Bởi vì đây là phương sai.
+
+80
+00:05:05,270 --> 00:05:06,660
+ 
+
+81
+00:05:06,660 --> 00:05:08,430
+Bằng tổng các giá trị pi.
+
+82
+00:05:10,790 --> 00:05:13,090
+Cái gì quyết định xác suất?
+
+83
+00:05:14,630 --> 00:05:17,380
+Tự nhiên.
+Bạn không thể kiểm soát xác suất.
+
+84
+00:05:17,380 --> 00:05:21,750
+Bời vì nếu như bạn kiểm soát nó thì tôi nghĩ cuộc sống này sẽ rất là chán.
+
+85
+00:05:21,750 --> 00:05:22,850
+Hiểu ý tôi nói không?
+
+86
+00:05:22,850 --> 00:05:24,830
+Cuộc sống sẽ không còn thú vị nữa.
+
+87
+00:05:24,830 --> 00:05:26,910
+Do vậy nên sẽ không có rủi ro nào cả.
+
+88
+00:05:26,910 --> 00:05:29,270
+Vậy có những thứ mà bạn không kiểm soát được.
+
+89
+00:05:30,310 --> 00:05:32,000
+Các bạn tính phương sai như thế nào?
+
+90
+00:05:33,600 --> 00:05:35,945
+R1i.
+
+91
+00:05:35,945 --> 00:05:39,100
+Tôi đang làm kí hiệu phức tạp hơn một chút, đúng không?
+
+92
+00:05:39,100 --> 00:05:40,030
+Tại sao lại tính R1l?
+
+93
+00:05:41,080 --> 00:05:43,700
+l là trạng thái của từ.
+
+94
+00:05:43,700 --> 00:05:51,230
+1 đại diện cho mức độ an toàn 1, sau đó là trừ đi R1,
+nhưng nếu tôi dừng lại ở đây, các bạn sẽ có gì?
+
+95
+00:05:52,730 --> 00:05:55,495
+Nếu tôi dừng lại ở đây, các bạn sẽ có 0.
+
+96
+00:05:56,520 --> 00:05:59,986
+Nhưng tôi biết rằng tôi sẽ không dừng lại ở đây, do đó nên tôi sẽ lấy bình phương.
+
+97
+00:05:59,986 --> 00:06:05,030
+Sau khi lấy bình phương, tôi nhân với xác suất rồi cộng tất cả lại.
+
+98
+00:06:05,030 --> 00:06:06,620
+  
+
+99
+00:06:06,620 --> 00:06:07,953
+ 
+
+100
+00:06:10,431 --> 00:06:15,747
+Tôi sẽ lấy các độ dài này, nhân với xác suất,
+
+101
+00:06:15,747 --> 00:06:18,890
+nhưng trước đó tôi phải bình phương lên trước đã.
+
+102
+00:06:18,890 --> 00:06:19,820
+Nếu không thì chúng sẽ tự triệt tiêu nhau.
+
+103
+00:06:20,860 --> 00:06:25,702
+Và trong trường hợp này, số chúng ta tính ra là 11.61.
+
+104
+00:06:27,280 --> 00:06:27,881
+Được chứ?
+
+105
+00:06:31,160 --> 00:06:34,360
+Tuy nhiên, tốt hơn hết là chúng ta nên giải quyết cái gì?
+
+106
+00:06:34,360 --> 00:06:38,420
+Độ lệch chuẩn, vì chúng không có bình phương.
+
+107
+00:06:38,420 --> 00:06:45,120
+Do đó, mức sinh lợi sẽ dễ hiểu hơn nhiều.
+
+108
+00:06:45,120 --> 00:06:49,965
+Độ lệch chuẩn, căn bậc hai của giá trị này,
+
+109
+00:06:49,965 --> 00:06:52,986
+bằng 3.41, được chứ?
+
+110
+00:06:55,860 --> 00:07:00,980
+Giờ hãy xét đến sigma 2 bình phương.
+
+111
+00:07:00,980 --> 00:07:04,930
+Tôi đang coi lại để chắc chắn rằng mình tính đúng.
+
+112
+00:07:04,930 --> 00:07:07,244
+Số pi sẽ là bao nhiêu?
+
+113
+00:07:07,244 --> 00:07:14,990
+Giờ các bạn đã có R2l và R2 bình phương rồi đúng không?
+
+114
+00:07:14,990 --> 00:07:17,860
+Nhớ rằng tôi làm giá trị R2 thay đổi.
+
+115
+00:07:17,860 --> 00:07:22,770
+Không có sự thay đổi nên nó vẫn là R2
+
+116
+00:07:22,770 --> 00:07:24,990
+chỉ một con số trong ví dụ này thôi.
+
+117
+00:07:24,990 --> 00:07:26,820
+Và những số đó là gì?
+
+118
+00:07:26,820 --> 00:07:29,855
+Tôi nghĩ ở đây là 4.7 và ở đây là 3.35.
+
+119
+00:07:29,855 --> 00:07:32,570
+Tôi hỏi lại, bạn sẽ làm gì với
+
+120
+00:07:32,570 --> 00:07:38,650
+các dạng phân bố khác nhau khi bạn đã hiểu rõ ý nghĩa của từng loại?
+
+121
+00:07:38,650 --> 00:07:44,220
+Và hầu như chúng ta đều lo lắng, chẳng hạn như ở khía cạnh này.
+
+122
+00:07:44,220 --> 00:07:49,748
+Số này hóa ra là 2.90 và
+
+123
+00:07:49,748 --> 00:07:53,441
+độ lệch chuẩn
+
+124
+00:07:56,619 --> 00:08:00,593
+hóa ra lại là 1.70.
+
+125
+00:08:03,676 --> 00:08:06,440
+Còn đây là sigma 2 mũ.
+
+126
+00:08:06,440 --> 00:08:08,351
+Để tôi kiểm tra lại xem có đúng không.
+
+127
+00:08:08,351 --> 00:08:12,432
+11.61 và 3.41 cho giá trị thứ nhất.
+
+128
+00:08:12,432 --> 00:08:16,400
+2.9 và 1.741.
+Vậy chúng ta đã tính những gì?
+
+129
+00:08:16,400 --> 00:08:22,780
+Chúng ta đã tính phương sai, và cả độ lệch chuẩn nữa.
+
+130
+00:08:22,780 --> 00:08:24,860
+Vậy phương sai của mức an toàn 1 là bao nhiêu?
+
+131
+00:08:24,860 --> 00:08:32,713
+Phương sai của mức an toàn 1 là giá trị trung bình của thanh R1, đó là 4.70%.
+
+132
+00:08:32,712 --> 00:08:37,417
+Và của R2 là 
+
+133
+00:08:37,417 --> 00:08:42,128
+3.35%.
+
+134
+00:08:42,128 --> 00:08:43,880
+Câu hỏi nhanh.
+
+135
+00:08:43,880 --> 00:08:47,590
+Nếu tôi chỉ đầu tư vào một cột, 
+
+136
+00:08:47,590 --> 00:08:51,170
+chẳng hạn như tôi và bạn cùng đầu tư vào mức an toàn 1,
+
+137
+00:08:52,590 --> 00:08:55,120
+Chúng ta đều có thông tin chúng ta cần.
+
+138
+00:08:55,120 --> 00:08:59,010
+Tuy nhiên, vấn đề là cả hai chúng ta
+
+139
+00:08:59,010 --> 00:09:02,380
+đều sẽ không chỉ đầu tư vào một mức an toàn.
+
+140
+00:09:02,380 --> 00:09:08,000
+Hình dung là có 2 mức an toàn cho chúng ta chọn, thì chúng ta sẽ tự nhiên muốn
+
+141
+00:09:08,000 --> 00:09:14,330
+đa dạng hóa và trải đều số tiền ra, không chỉ dồn hết trứng vô cùng một rổ.
+
+142
+00:09:14,330 --> 00:09:19,580
+Hãy giải lao một tí, bởi vì để tính toán được rủi ro
+
+143
+00:09:19,580 --> 00:09:24,150
+với một mức an toàn, không chỉ trong phạm vi đầu tư, 
+
+144
+00:09:24,150 --> 00:09:26,660
+thì đó lại là chuyện khác.
+
+145
+00:09:26,660 --> 00:09:27,718
+Hẹn gặp lại các bạn.
+

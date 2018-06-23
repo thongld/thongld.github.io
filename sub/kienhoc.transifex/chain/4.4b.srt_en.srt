@@ -1,0 +1,484 @@
+0
+00:00:00,000 --> 00:00:00,560
+https://youtu.be/kHNN0BYWSrw
+
+1
+00:00:00,560 --> 00:00:02,060
+So let's look at the first question.
+
+2
+00:00:02,060 --> 00:00:05,520
+What are the annual purchase, holding, order, and total cost
+
+3
+00:00:05,520 --> 00:00:07,740
+for the current policy?
+
+4
+00:00:07,740 --> 00:00:11,620
+How frequently does the Coop place its order?
+
+5
+00:00:11,620 --> 00:00:13,580
+Let's look into the information that
+
+6
+00:00:13,580 --> 00:00:16,920
+has been given on the first line of the problem statement
+
+7
+00:00:16,920 --> 00:00:20,080
+that I read out to you, which is, the Coop sells
+
+8
+00:00:20,080 --> 00:00:23,740
+5,000 units annually.
+
+9
+00:00:23,740 --> 00:00:25,560
+What does that imply?
+
+10
+00:00:25,560 --> 00:00:28,750
+Well, we can assume that these 5,000
+
+11
+00:00:28,750 --> 00:00:31,620
+units are the annual demand.
+
+12
+00:00:31,620 --> 00:00:35,550
+And it orders in batches of 500 units.
+
+13
+00:00:35,550 --> 00:00:37,750
+So what is this 500?
+
+14
+00:00:37,750 --> 00:00:42,600
+Well, this becomes our Q. And the Coop
+
+15
+00:00:42,600 --> 00:00:47,140
+pays a price of $2 per unit.
+
+16
+00:00:47,140 --> 00:00:51,640
+Well this becomes our purchase or variable cost.
+
+17
+00:00:51,640 --> 00:00:53,920
+In order to place an order, the Coop
+
+18
+00:00:53,920 --> 00:01:02,610
+pays $100, which means this $100 is our cost of transaction,
+
+19
+00:01:02,610 --> 00:01:05,200
+or the ordering price.
+
+20
+00:01:05,200 --> 00:01:06,110
+What else?
+
+21
+00:01:06,110 --> 00:01:11,720
+Well, we see, the holding charge, or the carrying cost,
+
+22
+00:01:11,720 --> 00:01:20,470
+has also been given as $0.28 per dollar of inventory per year.
+
+23
+00:01:20,470 --> 00:01:23,410
+There's also, interestingly, a selling price and the Coop
+
+24
+00:01:23,410 --> 00:01:27,860
+sells for $10 per unit.
+
+25
+00:01:27,860 --> 00:01:33,270
+Well, does this selling price matter or impact in any way
+
+26
+00:01:33,270 --> 00:01:35,270
+the inventory policy?
+
+27
+00:01:35,270 --> 00:01:36,630
+The answer is not.
+
+28
+00:01:36,630 --> 00:01:41,390
+So this is something that's not relevant.
+
+29
+00:01:41,390 --> 00:01:46,660
+We can ignore it- So this has no impact on the inventory policy.
+
+30
+00:01:46,660 --> 00:01:47,310
+Quick recap.
+
+31
+00:01:47,310 --> 00:01:50,770
+So what's the formula or how do we calculate the total cost?
+
+32
+00:01:50,770 --> 00:01:54,970
+The total cost is the purchase cost,
+
+33
+00:01:54,970 --> 00:01:59,090
+plus the ordering cost, plus the holding cost,
+
+34
+00:01:59,090 --> 00:02:02,020
+plus the shortage cost.
+
+35
+00:02:02,020 --> 00:02:05,260
+Well, demand has been fairly stable.
+
+36
+00:02:05,260 --> 00:02:06,540
+No variations.
+
+37
+00:02:06,540 --> 00:02:09,419
+And for this problem, let's assume
+
+38
+00:02:09,419 --> 00:02:11,880
+there is no shortage cost.
+
+39
+00:02:11,880 --> 00:02:15,660
+So in the next few slides, let's go ahead and calculate
+
+40
+00:02:15,660 --> 00:02:20,710
+the purchase cost, the ordering cost, and the holding cost.
+
+41
+00:02:20,710 --> 00:02:23,230
+Let's calculate the purchase cost here.
+
+42
+00:02:23,230 --> 00:02:27,690
+What has been given to us is the purchase price
+
+43
+00:02:27,690 --> 00:02:30,935
+per unit item, or c, is $2.
+
+44
+00:02:30,935 --> 00:02:34,300
+
+
+45
+00:02:34,300 --> 00:02:38,190
+So what are the number of units that we are buying in a year?
+
+46
+00:02:38,190 --> 00:02:46,910
+So number of units purchased in a year, this number
+
+47
+00:02:46,910 --> 00:02:51,990
+has been given to us in the problem as 5,000.
+
+48
+00:02:51,990 --> 00:02:53,040
+Pretty straightforward.
+
+49
+00:02:53,040 --> 00:02:54,070
+So 5,000 units.
+
+50
+00:02:54,070 --> 00:02:55,810
+Every unit costs $2.
+
+51
+00:02:55,810 --> 00:03:01,340
+So total purchase cost then becomes
+
+52
+00:03:01,340 --> 00:03:13,280
+5,000 units times $2 per unit, which gives us $10,000.
+
+53
+00:03:13,280 --> 00:03:16,660
+So this is our annual total purchase cost.
+
+54
+00:03:16,660 --> 00:03:20,290
+Let's move onto the ordering cost.
+
+55
+00:03:20,290 --> 00:03:23,580
+So what has been given to us is the cost of transaction.
+
+56
+00:03:23,580 --> 00:03:27,630
+Or to place a single order, it cost dollar $100
+
+57
+00:03:27,630 --> 00:03:30,020
+to place an order.
+
+58
+00:03:30,020 --> 00:03:33,220
+How many orders do we need in a year?
+
+59
+00:03:33,220 --> 00:03:34,540
+How do we calculate that?
+
+60
+00:03:34,540 --> 00:03:38,760
+Well, we know the demand is 5,000.
+
+61
+00:03:38,760 --> 00:03:41,970
+The order in batches of 500.
+
+62
+00:03:41,970 --> 00:03:54,330
+This gives us number of orders as 5,000 divided by 500 is 10.
+
+63
+00:03:54,330 --> 00:04:01,580
+So the total ordering cost then becomes 10 times number
+
+64
+00:04:01,580 --> 00:04:09,100
+$100, which is equal to 1,000.
+
+65
+00:04:09,100 --> 00:04:12,360
+Pretty straight forward.
+
+66
+00:04:12,360 --> 00:04:15,390
+Let's try to calculate the holding cost now.
+
+67
+00:04:15,390 --> 00:04:22,600
+So what is the cost of holding excess inventory, or c_e?
+
+68
+00:04:22,600 --> 00:04:24,850
+Let's try to do the units first.
+
+69
+00:04:24,850 --> 00:04:32,780
+So we know this is dollars per unit per time, $1 per unit time
+
+70
+00:04:32,780 --> 00:04:33,750
+as we call it.
+
+71
+00:04:33,750 --> 00:04:35,350
+And how did we get here?
+
+72
+00:04:35,350 --> 00:04:41,960
+We get it by c h , where c is you purchase or variable cost,
+
+73
+00:04:41,960 --> 00:04:44,760
+and h is the holding charge.
+
+74
+00:04:44,760 --> 00:04:51,470
+So we know that c has been given to us as $2 per unit,
+
+75
+00:04:51,470 --> 00:04:59,900
+and h has been given to us as $0.28 per dollar
+
+76
+00:04:59,900 --> 00:05:02,670
+inventory per year.
+
+77
+00:05:02,670 --> 00:05:20,540
+So our c_e then becomes $0.56 per unit time.
+
+78
+00:05:20,540 --> 00:05:21,750
+OK?
+
+79
+00:05:21,750 --> 00:05:22,770
+So let's move on.
+
+80
+00:05:22,770 --> 00:05:28,800
+And this c_e or c_h is the cost of holding excess inventory.
+
+81
+00:05:28,800 --> 00:05:32,810
+How much of this inventory are we holding?
+
+82
+00:05:32,810 --> 00:05:34,860
+So quick recap.
+
+83
+00:05:34,860 --> 00:05:39,120
+If you recall the sawtooth model that we did,
+
+84
+00:05:39,120 --> 00:05:42,620
+the sawtooth graph that we did, and using that we calculated
+
+85
+00:05:42,620 --> 00:05:45,730
+the average inventory on hold.
+
+86
+00:05:45,730 --> 00:05:47,650
+And how much was that?
+
+87
+00:05:47,650 --> 00:05:50,820
+Well, if Q is our order quantity,
+
+88
+00:05:50,820 --> 00:05:56,030
+average inventory on hold becomes Q/2 units.
+
+89
+00:05:56,030 --> 00:06:01,360
+So now that we know that Q has been given to us as 500,
+
+90
+00:06:01,360 --> 00:06:07,940
+we can calculate Q / 2, which is our average inventory on hold.
+
+91
+00:06:07,940 --> 00:06:09,700
+If you know this, can we calculate
+
+92
+00:06:09,700 --> 00:06:12,700
+the total annual holding cost?
+
+93
+00:06:12,700 --> 00:06:13,900
+Yes.
+
+94
+00:06:13,900 --> 00:06:15,260
+Should be straightforward.
+
+95
+00:06:15,260 --> 00:06:20,640
+So let's calculate the total annual holding
+
+96
+00:06:20,640 --> 00:06:31,110
+cost, which now becomes c_e times inventory on hold, which
+
+97
+00:06:31,110 --> 00:06:42,730
+is-- you have your $0.56 units per time
+
+98
+00:06:42,730 --> 00:06:48,350
+times your average inventory-- 250 units.
+
+99
+00:06:48,350 --> 00:06:59,880
+And this gives us $140 per time- time being in year,
+
+100
+00:06:59,880 --> 00:07:05,080
+we get our annual holding cost for this item.
+
+101
+00:07:05,080 --> 00:07:07,040
+So now that we have the purchase cost,
+
+102
+00:07:07,040 --> 00:07:10,280
+the ordering cost, and the holding cost,
+
+103
+00:07:10,280 --> 00:07:13,090
+let's calculate the total cost, which again,
+
+104
+00:07:13,090 --> 00:07:14,940
+is pretty straightforward.
+
+105
+00:07:14,940 --> 00:07:20,140
+Purchase cost plus ordering cost plus holding cost,
+
+106
+00:07:20,140 --> 00:07:22,810
+and we have these numbers now, which
+
+107
+00:07:22,810 --> 00:07:31,390
+is 10,000 plus ordering cost we calculated as 1,000,
+
+108
+00:07:31,390 --> 00:07:35,780
+plus the holding cost, we just came out to be 140.
+
+109
+00:07:35,780 --> 00:07:42,440
+This gives us $11,140.
+
+110
+00:07:42,440 --> 00:07:42,940
+OK.
+
+111
+00:07:42,940 --> 00:07:47,360
+So that's the total cost for the year.
+
+112
+00:07:47,360 --> 00:07:49,190
+And the last question that we had was,
+
+113
+00:07:49,190 --> 00:07:51,210
+what is the order frequency?
+
+114
+00:07:51,210 --> 00:07:55,960
+I think we have already calculated this.
+
+115
+00:07:55,960 --> 00:07:59,950
+And let me do it one more time.
+
+116
+00:07:59,950 --> 00:08:07,380
+So we are aware that we make 10 orders in a year.
+
+117
+00:08:07,380 --> 00:08:14,260
+Or we want to say 10 orders every 12 months.
+
+118
+00:08:14,260 --> 00:08:22,650
+And then surely this means is one order every 1.2 month.
+
+119
+00:08:22,650 --> 00:08:25,100
+And that's our order frequency.
+
+120
+00:08:25,100 --> 00:08:27,007
+
+

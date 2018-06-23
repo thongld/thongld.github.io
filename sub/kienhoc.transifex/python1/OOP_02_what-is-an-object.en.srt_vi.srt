@@ -1,0 +1,349 @@
+1
+00:00:08,450 --> 00:00:11,910
+NghiaNguyen Thao reviewed
+Giờ chúng ta bắt đầu tìm hiểu
+phương pháp lập trình hướng đối tượng.
+
+2
+00:00:11,910 --> 00:00:13,670
+Như tôi đã nói, các bạn 
+đã đều dùng qua rồi.
+
+3
+00:00:13,670 --> 00:00:16,283
+Bạn tạo 1 đối tượng string, 
+1 đối tượng dictionary.
+
+4
+00:00:16,283 --> 00:00:20,725
+Nhưng ý tưởng đầy đủ của 
+lập trình hướng đối tượng là  
+
+5
+00:00:20,725 --> 00:00:23,561
+chúng ta kết nối những công cụ
+mạnh mẽ này với nhau.
+
+6
+00:00:23,561 --> 00:00:27,567
+Chương trình là 1 sự kết hợp
+
+7
+00:00:27,567 --> 00:00:31,730
+của nhiều thứ khác nhau và 
+tính năng của từng cái.
+
+8
+00:00:31,730 --> 00:00:35,670
+Và ta gọi tất cả những thứ đó là các đối tượng.
+
+9
+00:00:35,670 --> 00:00:39,690
+Một đối tượng gồm có code và dữ liệu.
+
+10
+00:00:39,690 --> 00:00:43,960
+Nó không giống với hàm chỉ có
+code, mà nó có cả code và dữ liệu.
+
+11
+00:00:43,960 --> 00:00:48,590
+Nếu dựa trên khái niệm của hàm thì 
+bạn đang thêm vào dữ liệu cục bộ và 
+
+12
+00:00:48,590 --> 00:00:49,720
+các thực thể.
+
+13
+00:00:49,720 --> 00:00:54,790
+Một trong những mục tiêu của phương pháp 
+đối tượng là chia các vấn đề khó
+
+14
+00:00:54,790 --> 00:00:58,630
+thành các phần nhỏ hơn.
+
+15
+00:00:58,630 --> 00:01:03,091
+Và giấu đi độ phức tạp trong từng phần.
+
+16
+00:01:03,091 --> 00:01:06,435
+Ví dụ, khi bạn xây dựng 
+1 chương trình sử dụng 
+
+17
+00:01:06,435 --> 00:01:12,160
+cơ sở dữ liệu SQL, phần code ở trong đây.
+
+18
+00:01:12,160 --> 00:01:14,561
+Nó rất lớn và phức tạp.
+
+19
+00:01:14,561 --> 00:01:16,198
+Việc ta cần làm là giấu độ phức tạp đó đi.
+
+20
+00:01:16,198 --> 00:01:17,277
+Ta rào quanh nó,
+giống như thế này,
+
+21
+00:01:17,277 --> 00:01:17,985
+OK.
+
+22
+00:01:17,985 --> 00:01:19,623
+Ta giữ cho nó đơn giản.
+
+23
+00:01:19,623 --> 00:01:20,807
+Thực ra nó vẫn còn phức tạp,
+
+24
+00:01:20,807 --> 00:01:23,000
+nhưng ta nhìn nhận nó một cách thật đơn giản.
+
+25
+00:01:23,000 --> 00:01:27,520
+Vậy bên cạnh đó ta cũng phải
+giấu đi các chi tiết phức tạp.
+
+26
+00:01:27,520 --> 00:01:30,580
+Như tôi đã nói, chúng ta vẫn luôn
+dùng những cái này.
+
+27
+00:01:31,752 --> 00:01:35,960
+OK. Ta bắt đầu dựng bố cục
+chương trình, có dữ liệu vào
+
+28
+00:01:35,960 --> 00:01:36,810
+và dữ liệu ra.
+
+29
+00:01:36,810 --> 00:01:39,810
+Nhưng giờ nó là mạng lưới các 
+đối tượng sẽ được dùng.
+
+30
+00:01:39,810 --> 00:01:42,020
+Đối tượng chuỗi, 
+đối tượng dictionary.
+
+31
+00:01:42,020 --> 00:01:44,825
+Và còn có thể có những 
+đối tượng do bạn định nghĩa.
+
+32
+00:01:44,825 --> 00:01:47,363
+Và bạn sẽ phối hợp tất cả
+các đối tượng này trong đoạn code,
+
+33
+00:01:47,363 --> 00:01:50,501
+chẳng hạn như lấy dữ liệu từ 1 dictionary 
+rồi đưa nó vào 1 tuple.
+
+34
+00:01:50,501 --> 00:01:52,940
+Sau đó sắp xếp lại chúng 
+rồi in ra màn hình.
+
+35
+00:01:52,940 --> 00:01:57,240
+Bạn phối hợp tất cả để
+có được kết quả đầu ra tổng thể.
+
+36
+00:01:57,240 --> 00:01:59,120
+Đó là 1 cách làm khác.
+
+37
+00:01:59,120 --> 00:02:02,160
+Tới giờ, chúng ta vẫn chưa 
+xây dựng đối tượng của mình.
+
+38
+00:02:02,160 --> 00:02:05,789
+Nhưng ta đã dùng các đối tượng 
+như dictionary, chuỗi và
+
+39
+00:02:05,789 --> 00:02:08,058
+các tính năng trong chuỗi
+
+40
+00:02:08,058 --> 00:02:12,458
+như chuyển chuỗi qua dạng 
+chữ in hoa, hoặc cắt chuỗi.
+
+41
+00:02:12,458 --> 00:02:16,143
+Và mỗi đối tượng này đều có những tính năng
+
+42
+00:02:16,143 --> 00:02:16,880
+để chúng ta sử dụng.
+
+43
+00:02:16,880 --> 00:02:20,816
+Và mỗi đối tượng cũng có 
+code và dữ liệu trong nó.
+
+44
+00:02:20,816 --> 00:02:25,734
+Giống như hàm, nhưng điểm khác là
+hàm không có những dữ liệu riêng rẽ
+
+45
+00:02:25,734 --> 00:02:29,697
+cho mỗi bản khác nhau của đối tượng.
+
+46
+00:02:29,697 --> 00:02:32,611
+Như tôi đã nói, 1 phần mục tiêu 
+là ẩn đi các chi tiết bên trong.
+
+47
+00:02:32,611 --> 00:02:35,659
+Và ở một cấp độ nào đó, nếu bạn
+làm việc trong đối tượng này,
+
+48
+00:02:35,659 --> 00:02:39,920
+bạn có thể viết code thật phức tạp, 
+cần phải khôn khéo, suy nghĩ hết sức.
+
+49
+00:02:39,920 --> 00:02:43,042
+Nhưng sau đó ta không cần phải nghĩ 
+về phần còn lại của chương trình nữa.
+
+50
+00:02:43,042 --> 00:02:45,808
+Với phương pháp này bạn
+không cần lo lắng những điều đó.
+
+51
+00:02:45,808 --> 00:02:49,360
+Vậy, ta đặt vào vài thứ phức tạp như SQL,
+
+52
+00:02:50,910 --> 00:02:51,480
+hoặc, nó là 1 chuỗi mà.
+
+53
+00:02:51,480 --> 00:02:54,889
+Bản thân chuỗi rất mạnh.
+
+54
+00:02:54,889 --> 00:02:56,770
+Đó là 1 chuỗi hay dictionary gì đó,
+
+55
+00:02:56,770 --> 00:02:58,523
+những thứ này đều rất mạnh.
+
+56
+00:02:58,523 --> 00:03:04,150
+Nhưng khi bạn là người xây dựng 
+code cho đối tượng chuỗi,
+
+57
+00:03:05,450 --> 00:03:06,910
+bạn phải suy nghĩ thật kỹ càng.
+
+58
+00:03:06,910 --> 00:03:09,500
+Nhưng chúng ta đang nghĩ 
+về nó ở chiều ngược lại.
+
+59
+00:03:09,500 --> 00:03:12,420
+Kiểu như, ôi ai để ý mấy cái
+trò phức tạp đó làm gì?
+
+60
+00:03:12,420 --> 00:03:14,880
+Tôi chỉ để ý đến những 
+thứ mà tôi có thể làm.
+
+61
+00:03:14,880 --> 00:03:18,160
+Đó là cách chia nhỏ cái phức tạp và
+
+62
+00:03:18,160 --> 00:03:24,180
+tạo ra 1 giao diện tương đối đơn giản,
+ẩn đi độ phức tạp ở cả 2 bên.
+
+63
+00:03:24,180 --> 00:03:26,570
+Nếu bạn là người tạo ra 
+đối tượng, bạn có thể nói:
+
+64
+00:03:26,570 --> 00:03:28,082
+Tôi không cần quan tâm chương trình
+này sẽ dùng đối tượng thế nào.
+
+65
+00:03:28,082 --> 00:03:30,840
+Tôi cứ việc cung cấp đối tượng cho nó thôi.
+
+66
+00:03:30,840 --> 00:03:31,730
+Tôi sẽ đối phó với nó.
+
+67
+00:03:31,730 --> 00:03:33,340
+Cách đó sẽ giúp tôi giải quyết vấn đề.
+
+68
+00:03:33,340 --> 00:03:34,910
+Tôi có thể làm bất cứ cái gì.
+
+69
+00:03:34,910 --> 00:03:39,250
+Công việc của tôi khá phức tạp, và 
+phần việc bên còn lại có thể cũng phức tạp.
+
+70
+00:03:39,250 --> 00:03:40,750
+Nhưng tôi chỉ quan tâm đến cái này.
+
+71
+00:03:40,750 --> 00:03:43,086
+Và độ phức tạp có thể được phân chia ra.
+
+72
+00:03:43,086 --> 00:03:45,291
+Vậy thực sự độ phức tạp nằm ở cả 2 bên.
+
+73
+00:03:45,291 --> 00:03:49,889
+Mỗi bên có thể bỏ qua 
+độ phức tạp của bên còn lại.
+
+74
+00:03:49,889 --> 00:03:54,643
+Vậy đó là sơ qua về cách tạo chương trình
+
+75
+00:03:54,643 --> 00:03:56,117
+từ nhiều đối tượng khác nhau.
+
+76
+00:03:56,117 --> 00:03:59,194
+Tiếp theo, ta sẽ tìm hiểu về vài thuật ngữ.
+
+77
+00:03:59,194 --> 00:04:02,160
+Và tìm hiểu làm thế nào định nghĩa 
+đối tượng trong Python.

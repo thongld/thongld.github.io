@@ -1,0 +1,332 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/wfFd7Ln3W88
+
+1
+00:00:00,500 --> 00:00:03,770
+OK, we're going to talk about three forecasting truisms.
+
+2
+00:00:03,770 --> 00:00:07,030
+And a truism is something that's so self-evident and so
+
+3
+00:00:07,030 --> 00:00:09,390
+obvious it's too obvious to even mention.
+
+4
+00:00:09,390 --> 00:00:11,300
+But it's worth mentioning.
+
+5
+00:00:11,300 --> 00:00:13,140
+So the first truism we're going to go into
+
+6
+00:00:13,140 --> 00:00:16,000
+is that forecasts are always wrong.
+
+7
+00:00:16,000 --> 00:00:18,490
+And you'll always see this whenever someone talks
+
+8
+00:00:18,490 --> 00:00:19,360
+about forecasting.
+
+9
+00:00:19,360 --> 00:00:21,090
+It's the first thing they say.
+
+10
+00:00:21,090 --> 00:00:22,960
+Forecasting is especially difficult,
+
+11
+00:00:22,960 --> 00:00:26,680
+especially when you talk about the future, is a common quote.
+
+12
+00:00:26,680 --> 00:00:30,618
+And so why are forecasts always wrong?
+
+13
+00:00:30,618 --> 00:00:32,409
+Well, we can think of demand as essentially
+
+14
+00:00:32,409 --> 00:00:33,970
+a continuous variable.
+
+15
+00:00:33,970 --> 00:00:36,570
+And think back so when you learned all about continuous
+
+16
+00:00:36,570 --> 00:00:38,200
+versus discrete variables.
+
+17
+00:00:38,200 --> 00:00:42,540
+If I have some distribution with a probability of 90,
+
+18
+00:00:42,540 --> 00:00:45,800
+then the probability that I will pick something up
+
+19
+00:00:45,800 --> 00:00:51,660
+and it'll have a value of 89.62397 is essentially zero.
+
+20
+00:00:51,660 --> 00:00:53,250
+So the ability to pick a point out
+
+21
+00:00:53,250 --> 00:00:56,020
+of a continuous distribution is very hard.
+
+22
+00:00:56,020 --> 00:00:57,920
+It almost approaches zero.
+
+23
+00:00:57,920 --> 00:01:01,720
+So the idea of having a point forecast, be correct, it's
+
+24
+00:01:01,720 --> 00:01:02,570
+very random.
+
+25
+00:01:02,570 --> 00:01:04,120
+It never happens.
+
+26
+00:01:04,120 --> 00:01:06,910
+So yes, forecasts are always wrong.
+
+27
+00:01:06,910 --> 00:01:08,300
+The other thing to think about is
+
+28
+00:01:08,300 --> 00:01:10,120
+it every estimate has an error band.
+
+29
+00:01:10,120 --> 00:01:12,580
+So a forecast is just an estimate.
+
+30
+00:01:12,580 --> 00:01:14,590
+And what you're doing with this estimate,
+
+31
+00:01:14,590 --> 00:01:16,090
+you're making with a different level
+
+32
+00:01:16,090 --> 00:01:17,920
+of confidence or degree of confidence.
+
+33
+00:01:17,920 --> 00:01:20,050
+So that's that error band that you
+
+34
+00:01:20,050 --> 00:01:24,080
+think-- it's 89 point whatever plus or minus 2.
+
+35
+00:01:24,080 --> 00:01:27,750
+And so you have an idea of what your band is.
+
+36
+00:01:27,750 --> 00:01:30,110
+Also, forecasts are highly disaggregated.
+
+37
+00:01:30,110 --> 00:01:33,120
+Typically in supply chains, you don't
+
+38
+00:01:33,120 --> 00:01:36,890
+need to just forecast, say, the number of blue blazers
+
+39
+00:01:36,890 --> 00:01:38,524
+that will be sold across the country.
+
+40
+00:01:38,524 --> 00:01:40,315
+You need to know the number of blue blazers
+
+41
+00:01:40,315 --> 00:01:42,520
+that are going to be sold in Boston,
+
+42
+00:01:42,520 --> 00:01:46,000
+and not just in Boston, but at this store, and not just blue
+
+43
+00:01:46,000 --> 00:01:49,540
+blazers at this store, but on this date or this week
+
+44
+00:01:49,540 --> 00:01:50,750
+of this size.
+
+45
+00:01:50,750 --> 00:01:53,585
+So you have this highly disaggregated level
+
+46
+00:01:53,585 --> 00:01:54,680
+of forecast.
+
+47
+00:01:54,680 --> 00:01:59,710
+Usually it's a SKU, location, time combination forecast.
+
+48
+00:01:59,710 --> 00:02:03,270
+And as we'll see, as you get more and more disaggregated,
+
+49
+00:02:03,270 --> 00:02:05,510
+it gets harder and harder to forecast,
+
+50
+00:02:05,510 --> 00:02:08,610
+leading to your forecast always be wrong.
+
+51
+00:02:08,610 --> 00:02:10,430
+Also, things always happen.
+
+52
+00:02:10,430 --> 00:02:11,170
+Things change.
+
+53
+00:02:11,170 --> 00:02:15,170
+So the idea that a forecast would always be correct just
+
+54
+00:02:15,170 --> 00:02:17,250
+doesn't make sense anyway.
+
+55
+00:02:17,250 --> 00:02:18,430
+So that's the truism.
+
+56
+00:02:18,430 --> 00:02:19,581
+So what do you do about it?
+
+57
+00:02:19,581 --> 00:02:21,080
+And we'll talk more about this as we
+
+58
+00:02:21,080 --> 00:02:23,610
+go through the different lectures.
+
+59
+00:02:23,610 --> 00:02:26,760
+But essentially, the big point is, don't focus,
+
+60
+00:02:26,760 --> 00:02:29,980
+don't fixate on the point value of a forecast.
+
+61
+00:02:29,980 --> 00:02:33,150
+Think about it as a guide, as a directional guide.
+
+62
+00:02:33,150 --> 00:02:35,630
+And you want to try to use range forecasts.
+
+63
+00:02:35,630 --> 00:02:37,670
+You want to get some kind of estimate
+
+64
+00:02:37,670 --> 00:02:40,160
+not just of what you think the exact point will be,
+
+65
+00:02:40,160 --> 00:02:41,890
+but what a range of that will be.
+
+66
+00:02:41,890 --> 00:02:43,940
+And a good way to do that is to capture
+
+67
+00:02:43,940 --> 00:02:46,910
+the error of your forecast, because that will naturally
+
+68
+00:02:46,910 --> 00:02:48,420
+give you a range.
+
+69
+00:02:48,420 --> 00:02:51,080
+As you capture this over time, you'll be able to say, well,
+
+70
+00:02:51,080 --> 00:02:55,600
+my forecast is usually correct plus or minus 15%.
+
+71
+00:02:55,600 --> 00:02:57,670
+So as you get this error forecast,
+
+72
+00:02:57,670 --> 00:03:00,860
+you can use that for your future forecasting.
+
+73
+00:03:00,860 --> 00:03:03,600
+And specifically, we'll see in later lectures,
+
+74
+00:03:03,600 --> 00:03:06,570
+you'll use that error of the forecast to help
+
+75
+00:03:06,570 --> 00:03:10,750
+set up your safety stock or your buffer capacity for inventory.
+
+76
+00:03:10,750 --> 00:03:12,350
+So we'll talk more about this.
+
+77
+00:03:12,350 --> 00:03:15,640
+But the first truism is that forecasts are always wrong.
+
+78
+00:03:15,640 --> 00:03:16,820
+And it's true.
+
+79
+00:03:16,820 --> 00:03:17,990
+It's a cliche.
+
+80
+00:03:17,990 --> 00:03:20,750
+But it's not that planning and forecasting
+
+81
+00:03:20,750 --> 00:03:23,960
+is a futile activity, it helps you set a potential planning
+
+82
+00:03:23,960 --> 00:03:25,510
+target.
+

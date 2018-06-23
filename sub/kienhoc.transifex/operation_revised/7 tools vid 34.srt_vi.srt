@@ -1,0 +1,264 @@
+1
+00:00:01,430 --> 00:00:04,180
+Chào mừng các bạn đến với khóa học "Quản trị vận hành".
+
+2
+00:00:04,180 --> 00:00:08,500
+Chúng ta tiếp tục bài học về 7 công cụ quản lí chất lượng
+
+3
+00:00:08,500 --> 00:00:11,980
+Và trong lần này, chúng ta sẽ nói đến biểu đồ phân tán
+
+4
+00:00:11,980 --> 00:00:16,150
+Biểu đồ phân tán hay sơ đồ phân tán, đồ thị phân tán
+
+5
+00:00:16,150 --> 00:00:17,780
+Những thuật ngữ này được sử dụng thay thế cho nhau
+
+6
+00:00:17,780 --> 00:00:23,980
+Cụ thể hơn, điều ta cần làm là xác định 2 biến số trên đồ thị
+
+7
+00:00:23,980 --> 00:00:30,210
+và tìm mối quan hệ giữa 2 biến số đó. Vậy trong đồ thị phân tán, ta cố gắng
+
+8
+00:00:30,210 --> 00:00:36,700
+xác định mối quan hệ giữa 2 biến số, thể hiện mối quan hệ đó trên đồ thị 
+
+9
+00:00:36,700 --> 00:00:41,230
+ từ đó tìm kiếm xu hướng, và mối tương quan nào đó giữa các biến số.
+
+10
+00:00:41,230 --> 00:00:45,220
+Bây giờ ta thử xem xét 1 vài biểu đồ ví dụ 
+
+11
+00:00:45,220 --> 00:00:51,100
+Ở đây ta có 1 biểu đồ bên trái cho biết mối quan hệ giữa khối lượng xe hơi và lượng tiêu hao nhiên liệu
+
+12
+00:00:51,100 --> 00:00:54,190
+Khối lượng xe hơi được biểu thị ở trục x
+
+13
+00:00:54,190 --> 00:00:59,649
+Và trục y biểu thị lượng nhiên liệu tiêu hao, ta sử dụng hệ tọa độ X-Y
+
+14
+00:00:59,649 --> 00:01:05,970
+Với một mức khối lượng xe, ta có một mức nhiên liệu tiêu hao tương ứng được biểu thị 
+
+15
+00:01:05,970 --> 00:01:06,970
+trên đồ thị
+
+16
+00:01:06,970 --> 00:01:11,240
+Đồ thị trông khá rải rác, vì lý do đó nó được gọi là đồ thị phân tán
+
+17
+00:01:11,240 --> 00:01:16,170
+Tuy chúng trông khá rải rác như vậy, nhưng ta vẫn có thể nhìn ra một vài mối quan hệ 
+
+18
+00:01:16,170 --> 00:01:20,040
+giữa chúng và nó trông có vẻ như nếu khối lượng  
+
+19
+00:01:20,040 --> 00:01:25,310
+xe hơi tăng lên thì lượng nhiên liệu tiêu hao sẽ giảm xuống
+
+20
+00:01:25,310 --> 00:01:31,299
+Biểu đồ bên phải thể hiện mối quan hệ giữa khoảng cách hãm xe 
+
+21
+00:01:31,299 --> 00:01:33,810
+và vận tốc di chuyển 
+
+22
+00:01:33,810 --> 00:01:39,840
+Vận tốc được thể hiện ở trục X, khoảng cách hãm được thể hiện ở cột Y giống như
+
+23
+00:01:39,840 --> 00:01:43,900
+trong trường hợp trước với khối lượng xe, ta thấy một vài chấm nhỏ phân tán dọc theo
+
+24
+00:01:43,900 --> 00:01:49,520
+biểu đồ tương ứng với từng cặp vận tốc và khoảng cách hãm 
+
+25
+00:01:49,520 --> 00:01:54,880
+Một lần nữa ta có thể nhận thấy có mối liên hệ giữa 2 biến số
+
+26
+00:01:54,880 --> 00:01:59,579
+Lần này, khi vận tốc tăng thì khoảng cách hãm cũng tăng theo
+
+27
+00:01:59,579 --> 00:02:04,950
+Để nhìn thấy rõ ràng hơn, ta vẽ thêm đường xu hướng
+
+28
+00:02:04,950 --> 00:02:10,470
+Đường xu hướng là một đường tuyến tính thể hiện mối quan hệ giữa 2 biến số
+
+29
+00:02:10,470 --> 00:02:16,459
+Ta không hi vọng đường xu hướng sẽ đi qua tất cả các chấm nhưng 
+
+30
+00:02:16,459 --> 00:02:23,180
+nhưng tất cả các chấm đều được tính toán tới và góp phần tạo nên đường tuyến tính này.
+
+31
+00:02:23,180 --> 00:02:24,879
+Vậy những đường tuyến tính này thể hiện điều gì?
+
+32
+00:02:24,879 --> 00:02:29,840
+Đó là khi đường xu hướng đi xuống, nó cho biết sự tương quan tỷ lệ nghịch 
+
+33
+00:02:29,840 --> 00:02:34,810
+giữa các biến số. Tỷ lệ nghịch nghĩa là khi biến này tăng 
+
+34
+00:02:34,810 --> 00:02:36,959
+thì biến kia giảm
+
+35
+00:02:36,959 --> 00:02:43,769
+Vậy trong trường hợp này, khi trọng lượng xe tăng lên đồng nghĩa với việc nhiên liệu tiêu hao giảm xuống
+
+36
+00:02:43,769 --> 00:02:48,409
+Đường xu hướng tăng lên nghĩa là giữa 2 biến có quan hệ tỷ lệ thuận
+
+37
+00:02:48,409 --> 00:02:53,829
+có nghĩa là biến này tăng thì biến kia cũng tăng theo.
+
+38
+00:02:53,829 --> 00:02:58,549
+Như khi vận tốc tăng thì khoảng cách hãm cũng tăng 
+
+39
+00:02:58,549 --> 00:03:00,290
+Cũng có thể có nhiều khả năng khác
+
+40
+00:03:00,290 --> 00:03:03,750
+Có thể không phải đường tuyến tính, mà là đường tuần hoàn,  đường pattern
+
+41
+00:03:03,750 --> 00:03:06,829
+Tất cả những thứ như vậy đều có thể xảy ra trong đồ thị phân tán.
+
+42
+00:03:06,829 --> 00:03:12,019
+Tôi vừa cho các bạn xem một vài đồ thị, vậy làm thế nào để làm được đồ thị phân tán?
+
+43
+00:03:12,019 --> 00:03:16,459
+Ở trong Excel, ta có thể nhập dữ liệu vào 2 cột
+
+44
+00:03:16,459 --> 00:03:21,699
+Một cột biểu thị cho tọa độ X và một cột biểu thị cho tọa độ Y
+
+45
+00:03:21,699 --> 00:03:25,819
+Trong trường hợp này, ta xét kích thước theo lô và số lỗi 
+
+46
+00:03:25,819 --> 00:03:32,339
+Ta sẽ có tọa độ của kích thước lô và tọa độ của số lỗi 
+
+47
+00:03:32,339 --> 00:03:37,829
+Sau đó ta sẽ lựa chọn X,Y hoặc đồ thị phân tán từ mục công cụ biểu đồ 
+
+48
+00:03:37,829 --> 00:03:43,019
+và nó sẽ tự tạo đồ thị cho chúng ta và sau đó ta có thể chèn nó vào và chỉnh sửa tên tọa độ
+
+49
+00:03:43,019 --> 00:03:49,939
+Bạn có thể thấy những điểm dữ liệu ở trên biểu đồ
+
+50
+00:03:49,939 --> 00:03:56,939
+tiếp đó ta thêm vào đường xu hường hoặc có thể dùng trị só R bình phương (hay hệ số xác định bội)
+
+51
+00:03:56,939 --> 00:04:00,900
+Và đường xu hướng đó đặc biệt bắt đầu 
+
+52
+00:04:00,900 --> 00:04:06,769
+bằng một đường tuyến tính, đó là default, và nó thể hiện mối quan hệ giữa các biến số
+
+53
+00:04:06,769 --> 00:04:11,420
+Trong trường hợp này, khi kích thước lô tăng lên thì số lỗi cũng tăng lên
+
+54
+00:04:11,420 --> 00:04:17,180
+Đó là một đường thẳng đi lên do vậy mối quan hệ giữa 2 biến số là 
+
+55
+00:04:17,180 --> 00:04:24,370
+tỷ lệ thuận. Ta sẽ nhìn sang trị số R bình phương, hệ số xác định bội
+
+56
+00:04:24,370 --> 00:04:29,020
+Nó sẽ rơi vào khoảng từ 0 đến 1 và những giá trị cao hơn cho thấy 
+
+57
+00:04:29,020 --> 00:04:33,210
+đường xu hướng ta thêm vào giải thích mối quan hệ giữa các biến
+
+58
+00:04:33,210 --> 00:04:39,210
+Ta cũng có thể nhìn vào hệ số tương quan R hay 
+
+59
+00:04:39,210 --> 00:04:41,900
+căn bậc 2 của hệ số xác định bội
+
+60
+00:04:41,900 --> 00:04:48,680
+Giá trị của R càng cao thì mối quan hệ giữa 2 biến số càng chặt chẽ
+
+61
+00:04:48,680 --> 00:04:54,960
+Ta cũng có thể nói rằng nó chặt chẽ nếu giá trị của nó lớn hơn 0.8 và nêú nó nhỏ hơn 0.5
+
+62
+00:04:54,960 --> 00:04:59,370
+thì được coi là yếu. Đó là những gì liên quan tới đồ thị phân tán
+
+63
+00:04:59,370 --> 00:05:02,120
+ta nhìn vào mối quan hệ giữa 2 biến số
+
+64
+00:05:02,120 --> 00:05:08,840
+xem xét xem đó là mối quan hệ gì và trong lần tới, ta sẽ tìm hiểu thêm 1 loại công cụ khác trong 7 loại công cụ
+
+65
+00:05:08,840 --> 00:05:10,419
+của quản lí chất lượng 
+
+66
+00:05:10,419 --> 00:05:11,539
+Cảm ơn các bạn.
+

@@ -1,0 +1,804 @@
+0
+00:00:00,000 --> 00:00:00,510
+https://youtu.be/VvzikKOTAKw
+
+1
+00:00:00,510 --> 00:00:03,780
+Trong bài giảng này, ta sẽ giới thiệu liên tiến lũy thừa.
+
+2
+00:00:03,780 --> 00:00:06,620
+Cụ thể, ta sẽ xem xét liên tiến lũy thừa
+
+3
+00:00:06,620 --> 00:00:09,950
+ở cả mức độ và các mẫu xu hướng trong dữ liệu.
+
+4
+00:00:09,950 --> 00:00:12,900
+Nhưng trước khi vào vấn đề chính, hãy quay lại các mô hình
+
+5
+00:00:12,900 --> 00:00:14,814
+dự báo ta đã nghiên cứu.
+
+6
+00:00:14,814 --> 00:00:16,980
+Các mô hình khác nhau mà ta đã xem xét có
+
+7
+00:00:16,980 --> 00:00:18,100
+những khác biệt.
+
+8
+00:00:18,100 --> 00:00:20,500
+Chúng đều xử lý lịch sử đại loại như nhau.
+
+9
+00:00:20,500 --> 00:00:23,390
+Chúng xử lý lượng lịch sử khác nhau.
+
+10
+00:00:23,390 --> 00:00:26,170
+Nhưng cách chúng xử lý thì như nhau.
+
+11
+00:00:26,170 --> 00:00:28,510
+Ví dụ, khi tôi xem tích lũy
+
+12
+00:00:28,510 --> 00:00:32,009
+trong các mô hình bình quân diễn tiến gia trọng, chúng áp dụng trọng số như nhau
+
+13
+00:00:32,009 --> 00:00:33,360
+cho tất cả các số liệu.
+
+14
+00:00:33,360 --> 00:00:35,090
+Giờ, chúng cân nhắc các lượng khác nhau.
+
+15
+00:00:35,090 --> 00:00:39,750
+Vậy tích lũy, quan tâm tới t, tất cả các dữ liệu bạn có.
+
+16
+00:00:39,750 --> 00:00:43,370
+Và bình quân diễn tiến, quan tâm tới M, các thời kỳ M cuối cùng của dữ liệu.
+
+17
+00:00:43,370 --> 00:00:48,070
+Nhưng trong mỗi trường hợp, nó xử lý hoặc dữ liệu đầu hoặc dữ liệu cũ nhất
+
+18
+00:00:48,070 --> 00:00:49,630
+như nhau.
+
+19
+00:00:49,630 --> 00:00:51,660
+Chúng đều được xử lý như nhau
+
+20
+00:00:51,660 --> 00:00:55,110
+Giờ, tại một cực khác, ta có mô hình giản đơn.
+
+21
+00:00:55,110 --> 00:00:57,010
+Mô hình này chỉ có duy nhất một số liệu.
+
+22
+00:00:57,010 --> 00:01:00,250
+Nó đưa ra 100% giá trị của nó của trọng số
+
+23
+00:01:00,250 --> 00:01:02,870
+cho số liệu gần đây nhất.
+
+24
+00:01:02,870 --> 00:01:07,520
+Vậy giữa hai cái ta có ở đây,
+
+25
+00:01:07,520 --> 00:01:12,970
+bạn có trọng số bằng với cái mới 100%
+
+26
+00:01:12,970 --> 00:01:15,046
+Có lẽ có gì đó ở giữa hai loại này.
+
+27
+00:01:15,046 --> 00:01:16,170
+Vậy đó là câu hỏi.
+
+28
+00:01:16,170 --> 00:01:18,460
+Giữa hai cực này, có gì đặc biệt
+
+29
+00:01:18,460 --> 00:01:20,525
+trong cách ta xử lý dữ liệu không?
+
+30
+00:01:20,525 --> 00:01:21,900
+Vậy câu hỏi đặt ra là, ta có nên
+
+31
+00:01:21,900 --> 00:01:24,980
+xử lý dữ liệu lịch sử khác vì nó cũ rồi không?
+
+32
+00:01:24,980 --> 00:01:28,330
+Giá trị của dữ liệu có giảm sút theo thời gian?
+
+33
+00:01:28,330 --> 00:01:30,910
+Và ta có nên cân đong các số liệu mới hơn
+
+34
+00:01:30,910 --> 00:01:33,010
+những số liệu cũ hơn không?
+
+35
+00:01:33,010 --> 00:01:35,890
+Đây chính xác là nhiệm vụ của liên tiến lũy thừa.
+
+36
+00:01:35,890 --> 00:01:37,650
+Mỗi số liệu được đưa lên bàn cân.
+
+37
+00:01:37,650 --> 00:01:41,640
+Và các trọng số giảm theo hàm mũ khi các số liệu cũ đi
+
+38
+00:01:41,640 --> 00:01:43,320
+Đây là công thức bạn sẽ
+
+39
+00:01:43,320 --> 00:01:44,479
+rất quen thuộc sau này.
+
+40
+00:01:44,479 --> 00:01:46,270
+Giờ hãy để tôi nói về nó một chút.
+
+41
+00:01:46,270 --> 00:01:48,260
+Và ta sẽ tìm hiểu sâu hơn nhiều.
+
+42
+00:01:48,260 --> 00:01:52,130
+Nhưng về cơ bản, bạn có hằng số liên tiến alpha.
+
+43
+00:01:52,130 --> 00:01:55,240
+Alpha này có giá trị từ 0 tới 1.
+
+44
+00:01:55,240 --> 00:01:57,360
+Về cơ bản, đây là một trọng số
+
+45
+00:01:57,360 --> 00:01:59,990
+biểu hiện tôi sẽ định xt của tôi có giá trị bao nhiêu, đó
+
+46
+00:01:59,990 --> 00:02:02,090
+là số liệu mới nhất của tôi.
+
+47
+00:02:02,090 --> 00:02:08,770
+Rồi 1 trừ alpha là dự báo lịch sử của tôi là bao nhiêu.
+
+48
+00:02:08,770 --> 00:02:10,770
+Phương trình này cho biết điều gì?
+
+49
+00:02:10,770 --> 00:02:13,350
+Nhớ là x có mũ tức là nó là một dự báo
+
+50
+00:02:13,350 --> 00:02:17,870
+trong khi x thực không có mũ là số liệu thực tế.
+
+51
+00:02:17,870 --> 00:02:20,860
+Điều này nói rằng dự báo bắt đầu
+
+52
+00:02:20,860 --> 00:02:25,050
+trong thời gian t cho t+ 1, cơ bản là cứ giữ yên như thế
+
+53
+00:02:25,050 --> 00:02:27,270
+trong suốt thời kỳ này tới thời kỳ sau,
+
+54
+00:02:27,270 --> 00:02:29,150
+bằng với alpha - đó gọi là hằng số liên tiến.
+
+55
+00:02:29,150 --> 00:02:33,670
+nhân số liệu gần đây nhất của tôi xt.
+
+56
+00:02:33,670 --> 00:02:36,930
+Vậy đó là thông tin mới, cộng 1
+
+57
+00:02:36,930 --> 00:02:41,360
+trừ alpha nhân dự báo gần đây nhất
+
+58
+00:02:41,360 --> 00:02:46,650
+Đó là cái tôi đã dự báo trong thời gian (t-1) cho t.
+
+59
+00:02:46,650 --> 00:02:50,250
+Vậy nếu bạn nghĩ về t như  hôm nay, thì phương trình này
+
+60
+00:02:50,250 --> 00:02:54,390
+đang xem dự báo giữ nguyên trong hôm nay cho ngày mai
+
+61
+00:02:54,390 --> 00:02:58,400
+và bằng với alpha nhân số liệu có được hôm nay nhân 1 trừ
+
+62
+00:02:58,400 --> 00:03:02,560
+alpha cho số liệu tôi đã dự báo ngày hôm qua cho hôm nay.
+
+63
+00:03:02,560 --> 00:03:05,250
+Vậy bạn có thể tự hỏi, tại sao đây được gọi là
+
+64
+00:03:05,250 --> 00:03:07,710
+liên tiến lũy thừa?
+
+65
+00:03:07,710 --> 00:03:10,740
+Nếu ta quan sát phương trình này và ta nghiên cứu
+
+66
+00:03:10,740 --> 00:03:13,850
+nó một chút, và ta quan sát số hạng này
+
+67
+00:03:13,850 --> 00:03:16,900
+ở đây -- đó là, hãy nhớ, dự báo trong khoảng thời gian t
+
+68
+00:03:16,900 --> 00:03:21,006
+trừ 1 cho thời gian t - ta biết nó sẽ như thế nào.
+
+69
+00:03:21,006 --> 00:03:24,330
+Nó sẽ bằng với alpha nhân số liệu
+
+70
+00:03:24,330 --> 00:03:26,980
+có được trong thời gian t trừ 1, ngày hôm qua,
+
+71
+00:03:26,980 --> 00:03:29,940
+nhân 1 trừ alpha nhân số liệu dự báo
+
+72
+00:03:29,940 --> 00:03:33,870
+của hai ngày trước cho hôm nay.
+
+73
+00:03:33,870 --> 00:03:36,220
+Ta cứ tiếp tục tính lùi như thế.
+
+74
+00:03:36,220 --> 00:03:44,532
+Và ở đây, nếu tôi bỏ đống này vô đây, tôi nhận được số hạng này
+
+75
+00:03:44,532 --> 00:03:46,240
+Sau đó tôi chỉ đơn giản hóa đi một chút,
+
+76
+00:03:46,240 --> 00:03:47,260
+thu gọn lại một chút.
+
+77
+00:03:47,260 --> 00:03:49,259
+Hãy ngưng video nếu bạn cần quan sát cách thực hiện.
+
+78
+00:03:49,259 --> 00:03:51,510
+Nó chỉ là đại số.
+
+79
+00:03:51,510 --> 00:03:53,350
+Rồi ta có thể tiếp tục thay thế.
+
+80
+00:03:53,350 --> 00:03:56,470
+Vậy tôi tìm thấy -- phương trình cho 
+
+81
+00:03:56,470 --> 00:03:57,310
+ước đoán này là gì?
+
+82
+00:03:57,310 --> 00:04:00,860
+Tôi dự báo, và tôi thêm ngược nó vào, và tiếp tục
+
+83
+00:04:00,860 --> 00:04:02,540
+thay thế.
+
+84
+00:04:02,540 --> 00:04:03,850
+Kết quả tôi nhận được là gì?
+
+85
+00:04:03,850 --> 00:04:06,160
+Tôi sẽ nhận được dạng tổng quát này.
+
+86
+00:04:06,160 --> 00:04:10,680
+Để tôi xóa đi vài nét đã để nó không gây xao nhãng
+
+87
+00:04:10,680 --> 00:04:14,180
+Vậy phương trình dưới đây nghĩa là gì?
+
+88
+00:04:14,180 --> 00:04:16,950
+Nó nói rằng dự báo trong thời gian 
+
+89
+00:04:16,950 --> 00:04:19,850
+t cho thời gian t+1.
+
+90
+00:04:19,850 --> 00:04:21,970
+Vậy nó là dự báo trong hôm nay
+
+91
+00:04:21,970 --> 00:04:25,670
+cho ngày mai bằng với alpha nhân 1 - alpha
+
+92
+00:04:25,670 --> 00:04:29,640
+tới thứ 0, nó giảm tới 1 nhân số liệu của ngày hôm nay,
+
+93
+00:04:29,640 --> 00:04:30,140
+xt
+
+94
+00:04:30,140 --> 00:04:32,750
+
+
+95
+00:04:32,750 --> 00:04:36,090
+Cộng alpha nhân 1 trừ alpha lần thứ 1
+
+96
+00:04:36,090 --> 00:04:39,320
+nhân số liệu hôm qua, x (t trừ 1).
+
+97
+00:04:39,320 --> 00:04:42,800
+Cộng alpha nhân 1 trừ alpha bình phương
+
+98
+00:04:42,800 --> 00:04:48,020
+nhân số liệu hôm qua tại x (t trừ 2), hai ngày trước, và vân vân.
+
+99
+00:04:48,020 --> 00:04:49,087
+Bạn có thể thấy dạng của nó
+
+100
+00:04:49,087 --> 00:04:51,170
+Bạn nên gọi đây là liên tiến hình học,
+
+101
+00:04:51,170 --> 00:04:53,680
+bởi đây là một cấp số nhân.
+
+102
+00:04:53,680 --> 00:04:57,370
+Tôi muốn bạn quan sát khi các con số lớn dần theo thời gian -
+
+103
+00:04:57,370 --> 00:05:00,840
+và đây là các số liệu, xt, x t trừ 1, 
+
+104
+00:05:00,840 --> 00:05:05,270
+x t trừ 2, x t trừ 3, chúng không phải dự báo.
+
+105
+00:05:05,270 --> 00:05:08,590
+Chúng là những gì đã xảy ra vào những thời điểm đó.
+
+106
+00:05:08,590 --> 00:05:11,200
+Vậy khi tôi đi về phía bên phải phương trình này
+
+107
+00:05:11,200 --> 00:05:15,670
+khi tôi đi như vậy nó sẽ kéo dài mãi mãi -
+
+108
+00:05:15,670 --> 00:05:18,320
+có nghĩa là x sẽ lớn dần.
+
+109
+00:05:18,320 --> 00:05:20,070
+Chúng là các số liệu cũ dần
+
+110
+00:05:20,070 --> 00:05:24,030
+Vậy các hệ số, bạn có thể thấy, nhỏ dần.
+
+111
+00:05:24,030 --> 00:05:26,900
+Alpha nhân 1 trừ alpha bình phương
+
+112
+00:05:26,900 --> 00:05:29,760
+lớn hơn alpha nhân 1 trừ alpha bậc 3, 
+
+113
+00:05:29,760 --> 00:05:30,860
+vân vân.
+
+114
+00:05:30,860 --> 00:05:33,850
+Khi các số này lớn dần, hệ số nhỏ dần.
+
+115
+00:05:33,850 --> 00:05:35,540
+Đây là trọng số.
+
+116
+00:05:35,540 --> 00:05:40,660
+Bạn có thể tự hỏi, trọng số đó là bao nhiêu?
+
+117
+00:05:40,660 --> 00:05:42,710
+Nếu ta quan sát các alpha khác nhau 
+
+118
+00:05:42,710 --> 00:05:45,990
+và ở đây bạn có thể thấy mỗi cột có một alpha khác,
+
+119
+00:05:45,990 --> 00:05:49,560
+alpha 0.2, alpha 0.4, alpha 0.6--
+
+120
+00:05:49,560 --> 00:05:53,200
+và mỗi dòng là một số liệu cũ dần.
+
+121
+00:05:53,200 --> 00:05:54,670
+t là thời gian gần nhất.
+
+122
+00:05:54,670 --> 00:05:58,320
+Thì t trừ 1 là một thời kỳ trước, hai thời kỳ trước,
+
+123
+00:05:58,320 --> 00:06:00,880
+ba thời kỳ trước, vân vân.
+
+124
+00:06:00,880 --> 00:06:04,470
+Nếu tôi có một alpha bằng 0.2, thì tôi
+
+125
+00:06:04,470 --> 00:06:08,430
+xử lý quan sát gần đây nhất được 20%.
+
+126
+00:06:08,430 --> 00:06:12,460
+Sau đó 80% kết hợp kia cho toàn bộ lịch sử.
+
+127
+00:06:12,460 --> 00:06:16,390
+Và bạn có thể thấy cách nó hoạt động là các tỷ số là gì,
+
+128
+00:06:16,390 --> 00:06:17,820
+nó trở thành gì.
+
+129
+00:06:17,820 --> 00:06:23,320
+Về cơ bản, số hạng này là t trừ 1, dòng đó
+
+130
+00:06:23,320 --> 00:06:28,920
+về cơ bản nói rằng alpha của 0.2 là alpha 0.2 nhân 1 trừ 0.2
+
+131
+00:06:28,920 --> 00:06:33,040
+0.8 cho số hạng đầu.
+
+132
+00:06:33,040 --> 00:06:36,080
+Bạn có thể thấy mỗi một cái này đều là các hệ số.
+
+133
+00:06:36,080 --> 00:06:39,830
+Thế giờ, như bạn thấy alpha lớn dần thế nào,
+
+134
+00:06:39,830 --> 00:06:41,100
+nó đang làm gì?
+
+135
+00:06:41,100 --> 00:06:43,090
+Gia trọng cho các số liệu 
+
+136
+00:06:43,090 --> 00:06:44,780
+gần đây hơn.
+
+137
+00:06:44,780 --> 00:06:48,800
+Bạn thấy với số liệu t, một alpha của 0.6
+
+138
+00:06:48,800 --> 00:06:53,150
+cho 60% trọng số cho số liệu gần đây nhất,
+
+139
+00:06:53,150 --> 00:07:00,370
+trong khi alpha của 0.2 thì cho đi chỉ 0.2, hay 20%.
+
+140
+00:07:00,370 --> 00:07:05,230
+Nếu tôi nhìn dưới đây, ví dụ số liệu cũ nhất thứ 5,
+
+141
+00:07:05,230 --> 00:07:07,950
+hay t trừ 5, bạn có thể thấy nó chuyển đi đâu.
+
+142
+00:07:07,950 --> 00:07:12,010
+Nó ngày càng nhỏ đi.
+
+143
+00:07:12,010 --> 00:07:16,120
+Với alpha bằng 0.2, nó là 0.06
+
+144
+00:07:16,120 --> 00:07:18,880
+Với một alpha 0.6, bởi nó có tỷ trọng quá cao ở đây
+
+145
+00:07:18,880 --> 00:07:24,100
+cho thời gian gần đây nhất, nó giảm còn 0.006144
+
+146
+00:07:24,100 --> 00:07:26,630
+Vậy alpha này đang làm gì?
+
+147
+00:07:26,630 --> 00:07:28,740
+Alpha này về cơ bản cho thấy rằng
+
+148
+00:07:28,740 --> 00:07:31,300
+tôi nên định giá trị là bao nhiêu, tôi nên cân nhắc thêm bao nhiêu lượng
+
+149
+00:07:31,300 --> 00:07:34,490
+thông tin gần đây -- ui, để tôi quay lại --
+
+150
+00:07:34,490 --> 00:07:36,750
+với dữ liệu cũ hơn.
+
+151
+00:07:36,750 --> 00:07:42,110
+Vậy alpha là công cụ, công cụ liên tiến.
+
+152
+00:07:42,110 --> 00:07:44,030
+Nếu tôi muốn quan sát trên đồ thị, 
+
+153
+00:07:44,030 --> 00:07:45,540
+ở đây tôi có độ tuổi của số liệu.
+
+154
+00:07:45,540 --> 00:07:49,240
+Đây sẽ là x thay t.
+
+155
+00:07:49,240 --> 00:07:53,600
+Đây là t trừ 1, trừ 2, trừ 3, vân vân
+
+156
+00:07:53,600 --> 00:07:56,380
+Trên trục tung là trọng số hiệu quả.
+
+157
+00:07:56,380 --> 00:07:59,600
+Bạn có thể thấy thế nào với alpha của 0.1--
+
+158
+00:07:59,600 --> 00:08:02,250
+đó là đường đen đậm ở ngay đây.
+
+159
+00:08:02,250 --> 00:08:05,570
+Tại xt có độ tuổi 0,
+
+160
+00:08:05,570 --> 00:08:08,580
+số liệu gần đây nhất, là 0.1
+
+161
+00:08:08,580 --> 00:08:10,300
+Kế tiếp là alpha 0.3
+
+162
+00:08:10,300 --> 00:08:13,742
+Bạn có thể thấy ở thời gian gần đây nhất, nó là 0.3
+
+163
+00:08:13,742 --> 00:08:15,700
+Để tôi cho hiện những đường còn lại luôn.
+
+164
+00:08:15,700 --> 00:08:21,690
+Đây là alpha của 0.5, alpha của 0.7, và alpha của 0.9
+
+165
+00:08:21,690 --> 00:08:23,340
+Chuyện gì đang xảy ra ở đây?
+
+166
+00:08:23,340 --> 00:08:27,310
+Khi alpha của tôi tăng lên, tôi gia trọng
+
+167
+00:08:27,310 --> 00:08:29,830
+dữ liệu gần đây nhất.
+
+168
+00:08:29,830 --> 00:08:34,809
+Tôi nói với alpha của 0.9, tôi nói rằng 90% dự báo của tôi
+
+169
+00:08:34,809 --> 00:08:37,460
+sẽ là cái đã xảy ra trong thời gian gần đây nhất, 
+
+170
+00:08:37,460 --> 00:08:39,230
+số liệu ngày hôm qua.
+
+171
+00:08:39,230 --> 00:08:42,960
+Vậy nếu bạn nghĩ về điều này, giá trị alpha này đang làm gì,
+
+172
+00:08:42,960 --> 00:08:44,580
+thì đó là đánh đổi.
+
+173
+00:08:44,580 --> 00:08:47,680
+Nó đang đổi thông tin mới, tỷ trọng
+
+174
+00:08:47,680 --> 00:08:50,880
+của thông tin mới tôi có, bất kì số liệu mới nào
+
+175
+00:08:50,880 --> 00:08:54,070
+với thông tin cũ, số liệu tôi đã có trong quá khứ.
+
+176
+00:08:54,070 --> 00:08:58,570
+Bởi số hạng này, x có mũ t trừ 1 t, 
+
+177
+00:08:58,570 --> 00:09:01,660
+tóm gọn mọi thứ trong lịch sử của tôi.
+
+178
+00:09:01,660 --> 00:09:03,910
+Đây là một cách dùng khá tuyệt vời về liên tiến lũy thừa,
+
+179
+00:09:03,910 --> 00:09:07,790
+bởi tôi chỉ phải nắm bắt và theo dõi hai mảnh dữ liệu --
+
+180
+00:09:07,790 --> 00:09:10,960
+dữ liệu gần đây nhất và dự báo gần đây nhất của tôi.
+
+181
+00:09:10,960 --> 00:09:14,360
+Bơi số hạng x có mũ t trừ 1, t
+
+182
+00:09:14,360 --> 00:09:18,200
+này nắm bắt tất cả các dữ liệu lịch sử cũ khác.
+
+183
+00:09:18,200 --> 00:09:21,890
+Vậy nhiệm vụ của alpha là, một cách để nghĩ về nó
+
+184
+00:09:21,890 --> 00:09:24,830
+là nó tiếp cận các điểm giới hạn của mình, hoặc 0
+
+185
+00:09:24,830 --> 00:09:25,850
+hoặc 1.
+
+186
+00:09:25,850 --> 00:09:28,540
+Khi alpha đạt giá trị 1, chuyện gì sẽ xảy ra?
+
+187
+00:09:28,540 --> 00:09:29,850
+Ta gần như đơn giản. 
+
+188
+00:09:29,850 --> 00:09:31,650
+Ta đang tiến tới liên tiến nhanh
+
+189
+00:09:31,650 --> 00:09:34,190
+Nó sẽ rất bất định, dễ thay đổi.
+
+190
+00:09:34,190 --> 00:09:36,760
+Đó là một dạng dự báo đơn giản.
+
+191
+00:09:36,760 --> 00:09:41,090
+Khi nó tiến tới tiếp cận 0, nó chậm hơn.
+
+192
+00:09:41,090 --> 00:09:43,400
+Nó sẽ ổn định, không đổi, gần
+
+193
+00:09:43,400 --> 00:09:45,910
+dự báo tích lũy hơn khi mọi thứ được gia trọng,
+
+194
+00:09:45,910 --> 00:09:48,840
+không bằng nhau, nhưng bằng nhau hơn
+
+195
+00:09:48,840 --> 00:09:52,070
+nếu tôi có 0.9, nó sẽ đưa tất cả các tỷ trọng
+
+196
+00:09:52,070 --> 00:09:55,560
+lên trước thông tin mới hơn.
+
+197
+00:09:55,560 --> 00:09:57,690
+Về cơ bản, bạn có thê 3nghĩ
+
+198
+00:09:57,690 --> 00:10:01,300
+alpha kiểm soát tốc độ dự báo.
+
+199
+00:10:01,300 --> 00:10:03,280
+Ta sẽ sử dụng cái này và bàn nhiều về nó
+
+200
+00:10:03,280 --> 00:10:06,950
+khi phát triển các mô hình liên tiến lũy thừa còn lại.
+

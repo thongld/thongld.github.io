@@ -1,0 +1,857 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/MMUl7rl5PzE
+
+1
+00:00:00,500 --> 00:00:03,180
+Vậy là chúng ta đã giới thiệu sáu loại sản phẩm mới
+
+2
+00:00:03,180 --> 00:00:05,900
+và bây giờ chúng ta phải đặt câu hỏi, đó là gì?
+
+3
+00:00:05,900 --> 00:00:07,144
+Tại sao điều đó lại quan trọng?
+
+4
+00:00:07,144 --> 00:00:09,560
+Vấn đề là vì chúng ta muốn xử lý chúng theo một cách khác
+
+5
+00:00:09,560 --> 00:00:11,374
+và chúng có các đặc tính khác nhau.
+
+6
+00:00:11,374 --> 00:00:13,040
+Dưới đây là các loại sản phẩm khác nhau
+
+7
+00:00:13,040 --> 00:00:15,850
+mà chúng ta đã giới thiệu, mới với thế giới, mới với công ty,
+
+8
+00:00:15,850 --> 00:00:17,410
+mở rộng dòng sản phẩm và cải tiến sản phẩm.
+
+9
+00:00:17,410 --> 00:00:18,826
+Và hãy nhớ, sự khác biệt ở đó là
+
+10
+00:00:18,826 --> 00:00:21,990
+có dòng sản phẩm mở rộng bổ sung cho các sản phẩm hiện có.
+
+11
+00:00:21,990 --> 00:00:25,270
+Các cải tiến về sản phẩm thay thế những sản phẩm hiện có.
+
+12
+00:00:25,270 --> 00:00:27,420
+Và sau đó là hai điều cuối cùng, định vị lại sản phẩm
+
+13
+00:00:27,420 --> 00:00:29,490
+và giảm chi phí.
+
+14
+00:00:29,490 --> 00:00:32,240
+Trên thị trường, phần trăm sản phẩm giới thiệu
+
+15
+00:00:32,240 --> 00:00:34,280
+giao động và chúng rất đa dạng.
+
+16
+00:00:34,280 --> 00:00:36,360
+Điều này đến từ nhiều nguồn,
+
+17
+00:00:36,360 --> 00:00:38,210
+ nên đó là lý do tại sao có một loạt các giá trị này.
+
+18
+00:00:38,210 --> 00:00:41,830
+Nhưng nhìn chung, chúng ta đang nhìn vào 20% đến 30% mới đối với công ty,
+
+19
+00:00:41,830 --> 00:00:43,910
+mới với thế giới, những sản phẩm mang tính sáng tạo cao
+
+20
+00:00:43,910 --> 00:00:45,284
+chưa bao giờ có trước đó 
+
+21
+00:00:45,284 --> 00:00:47,130
+hoặc là mới đối với công ty.
+
+22
+00:00:47,130 --> 00:00:51,420
+Khoảng một nửa hoặc hơn một nửa một chút, gần hai phần ba,
+
+23
+00:00:51,420 --> 00:00:54,100
+ là mở rộng các sản phẩm hiện có hoặc cải tiến
+
+24
+00:00:54,100 --> 00:00:55,610
+các sản phẩm hiện có.
+
+25
+00:00:55,610 --> 00:00:59,300
+Và sau đó bạn có 15% đến gần 20% còn lại
+
+26
+00:00:59,300 --> 00:01:03,320
+là tái định vị sản phẩm hoặc giảm chi phí.
+
+27
+00:01:03,320 --> 00:01:06,065
+Vì vậy, bạn có thể thấy rằng thị phần lớn
+rơi vào phần mở rộng
+
+28
+00:01:06,065 --> 00:01:09,509
+ và cải tiến các sản phẩm hiện có.
+
+29
+00:01:09,509 --> 00:01:12,050
+Như bạn mong đợi giờ chúng ta có độ chính xác khác nhau
+
+30
+00:01:12,050 --> 00:01:13,780
+ của dự báo cho những điều này.
+
+31
+00:01:13,780 --> 00:01:17,854
+Như bạn có lẽ mong đợi, điều khó dự đoán nhất là
+
+32
+00:01:17,854 --> 00:01:19,520
+những điều mới với thế giới và mới với công ty.
+
+33
+00:01:19,520 --> 00:01:22,850
+Những gì tôi có ở đây là tính chính xác của dự báo,
+
+34
+00:01:22,850 --> 00:01:26,310
+bằng 1 trừ MAPE, Phần trăm Sai số Trung bình Tuyệt đối.
+
+35
+00:01:26,310 --> 00:01:29,150
+Bạn có thể thấy điều tồi tệ nhất là những sản phẩm
+mới với thế giới hay mới với công ty
+
+36
+00:01:29,150 --> 00:01:31,120
+vì bạn không có nhiều lịch sử.
+
+37
+00:01:31,120 --> 00:01:33,380
+Và bạn có thể thấy tốt nhất là giảm chi phí,
+
+38
+00:01:33,380 --> 00:01:36,030
+và điều đó có lý bởi vì chúng ta nghĩ rằng chúng ta đã
+
+39
+00:01:36,030 --> 00:01:39,060
+có sản phẩm, chúng ta biết nó hoạt động như thế nào với một mức giá.
+
+40
+00:01:39,060 --> 00:01:40,700
+Chúng ta nên có ít nhất một cái nhìn thông suốt
+
+41
+00:01:40,700 --> 00:01:44,200
+về cách nó sẽ vận hành nếu tôi thay đổi giá đó.
+
+42
+00:01:44,200 --> 00:01:46,890
+Và bạn có thể thấy chúng giảm như thế nào theo đó.
+
+43
+00:01:46,890 --> 00:01:50,290
+Khi tôi chuyển từ sáng tạo hơn lên ở đây, mới với thế giới,
+
+44
+00:01:50,290 --> 00:01:52,750
+mới với thị trường, xuống các sản phẩm
+đã có từ lâu hoặc hiện có,
+
+45
+00:01:52,750 --> 00:01:56,600
+tính chính xác dự báo của tôi cải thiện,
+
+46
+00:01:56,600 --> 00:01:59,564
+và điều đó khá hợp lý.
+
+47
+00:01:59,564 --> 00:02:01,980
+Chúng ta cũng có thể nhìn vào
+độ dài thời gian cần thiết để tung sản phẩm,
+
+48
+00:02:01,980 --> 00:02:04,340
+và chút nữa chúng ta sẽ nói thêm về
+
+49
+00:02:04,340 --> 00:02:06,230
+quá trình ra mắt sản phẩm mới.
+
+50
+00:02:06,230 --> 00:02:09,710
+Mới với thế giới và mới với công ty chiếm nhiều thời gian nhất.
+
+51
+00:02:09,710 --> 00:02:11,530
+Như bạn thấy, nó mất ít thời gian tham gia hơn
+
+52
+00:02:11,530 --> 00:02:13,520
+khi tôi di chuyển xuống.
+
+53
+00:02:13,520 --> 00:02:15,060
+Và rồi tỷ lệ thành công.
+
+54
+00:02:15,060 --> 00:02:16,810
+Điều này có thể gây ngạc nhiên cho một số người
+
+55
+00:02:16,810 --> 00:02:20,170
+vì thường bạn chỉ nghe thấy một trong 20 sản phẩm
+
+56
+00:02:20,170 --> 00:02:21,580
+là thành công.
+
+57
+00:02:21,580 --> 00:02:25,820
+Trên thực tế, tỷ lệ thành công cao hơn nhiều mọi người nghĩ.
+
+58
+00:02:25,820 --> 00:02:27,660
+Nó phụ thuộc vào cách nó được đo lường và
+
+59
+00:02:27,660 --> 00:02:29,590
+thành công được đo lường trong mắt của người xem.
+
+60
+00:02:29,590 --> 00:02:31,350
+Điều này dựa trên một số nghiên cứu
+
+61
+00:02:31,350 --> 00:02:34,030
+đã xem xét cách các công ty có vẻ thành công,
+
+62
+00:02:34,030 --> 00:02:37,260
+và các tiêu chí nói chung trên thị trường
+
+63
+00:02:37,260 --> 00:02:39,450
+vẫn tạo ra doanh thu tích cực sau hai năm.
+
+64
+00:02:39,450 --> 00:02:40,450
+Vì vậy, nó vẫn ở ngoài đó.
+
+65
+00:02:40,450 --> 00:02:43,935
+Nó đã không được rút khỏi sau sáu tháng hoặc một năm.
+
+66
+00:02:43,935 --> 00:02:45,310
+Và bạn có thể thấy các sản phẩm mới với thế giới,
+
+67
+00:02:45,310 --> 00:02:51,690
+mới với công ty, tỷ lệ thành công 40% đến 60%.
+
+68
+00:02:51,690 --> 00:02:53,320
+Và như bạn mong đợi, khi tôi di chuyển xuống
+
+69
+00:02:53,320 --> 00:02:55,430
+cho định vị lại và giảm chi phí này,
+
+70
+00:02:55,430 --> 00:02:56,830
+nó sẽ cao hơn một chút.
+
+71
+00:02:56,830 --> 00:02:59,700
+Nhưng nhìn chung, chúng khá thành công.
+
+72
+00:02:59,700 --> 00:03:03,410
+Vì vậy ý tưởng rằng chỉ có một trong 20 sản phẩm
+
+73
+00:03:03,410 --> 00:03:05,470
+thành công là không thực sự đúng.
+
+74
+00:03:05,470 --> 00:03:09,430
+Các nghiên cứu không xác nhận điều đó.
+
+75
+00:03:09,430 --> 00:03:12,235
+Chúng ta thấy rằng chúng khác nhau về
+mức độ chính xác tôi có thể dự báo chúng
+
+76
+00:03:12,235 --> 00:03:15,880
+và tất cả những thứ khác, nhưng tại sao tôi quan tâm?
+
+77
+00:03:15,880 --> 00:03:17,960
+Ta hãy đặt điều này vào một khung khác.
+
+78
+00:03:17,960 --> 00:03:20,820
+Khung này xuất phát từ Ken Kahn trong cuốn sách của ông,
+
+79
+00:03:20,820 --> 00:03:23,560
+và ông nói khi chúng ta nhìn vào các sản phẩm mới,
+
+80
+00:03:23,560 --> 00:03:25,890
+chúng ta muốn nhìn vào hỗn hợp sản phẩm-thị trường
+
+81
+00:03:25,890 --> 00:03:27,935
+vì một sản phẩm mới, công nghệ hoặc là mới hoặc là hiện có,
+
+82
+00:03:27,935 --> 00:03:32,140
+hoặc thị trường hoặc là mới hoặc đã có từ lâu
+
+83
+00:03:32,140 --> 00:03:35,810
+trên thị trường đang có hoặc hiện tại.
+
+84
+00:03:35,810 --> 00:03:38,990
+Vì vậy, bạn có thể phủ các loại sản phẩm khác nhau ở đây,
+
+85
+00:03:38,990 --> 00:03:41,710
+và bạn có thể nghĩ tới sản phẩm
+mới với công ty mới và mới với thế giới
+
+86
+00:03:41,710 --> 00:03:46,420
+cũng như cả công nghệ mới và thị trường mới.
+
+87
+00:03:46,420 --> 00:03:49,770
+Bạn có thể nghĩ về mở rộng dòng sản phẩm
+như là một công nghệ mới.
+
+88
+00:03:49,770 --> 00:03:52,190
+Tôi sẽ thêm một hương vị hoặc thêm điều gì đó vào nó,
+
+89
+00:03:52,190 --> 00:03:54,405
+nhưng tôi đang ở trong cùng một thị trường,
+
+90
+00:03:54,405 --> 00:03:57,310
+nên tôi đang ở trong thị trường hiện tại.
+
+91
+00:03:57,310 --> 00:03:58,880
+Định vị lại sản phẩm.
+
+92
+00:03:58,880 --> 00:04:00,810
+Tôi đang ở với công nghệ hiện tại.
+
+93
+00:04:00,810 --> 00:04:01,880
+Nghĩ tới Bayer Aspirin.
+
+94
+00:04:01,880 --> 00:04:05,710
+Nó đã không thay đổi, nhưng tôi đi đến một thị trường mới,
+
+95
+00:04:05,710 --> 00:04:09,200
+ ngăn ngừa đột quỵ and và chăm sóc tim.
+
+96
+00:04:09,200 --> 00:04:13,020
+Và sau đó ít sáng tạo nhất, hoặc ít mới nhất,
+
+97
+00:04:13,020 --> 00:04:15,024
+là giảm chi phí và cải tiến sản phẩm
+
+98
+00:04:15,024 --> 00:04:16,940
+ở đó tôi đang gắn với công nghệ hiện tại,
+
+99
+00:04:16,940 --> 00:04:20,540
+điều chỉnh nó một chút, và tôi đang ở trong thị trường hiện tại của tôi.
+
+100
+00:04:20,540 --> 00:04:22,770
+Tôi sẽ không theo đuổi một thị trường mới.
+
+101
+00:04:22,770 --> 00:04:26,250
+Vì vậy, bạn có các lớp sản phẩm khác nhau,
+
+102
+00:04:26,250 --> 00:04:28,380
+nhưng chúng được giới thiệu vì nhiều lý do khác nhau.
+
+103
+00:04:28,380 --> 00:04:30,060
+Các chiến lược khác nhau.
+
+104
+00:04:30,060 --> 00:04:34,450
+Vì vậy, nếu tôi giới thiệu cái gì đó
+cho một thị trường mới và công nghệ mới,
+
+105
+00:04:34,450 --> 00:04:35,810
+tôi đang sẽ gì?
+
+106
+00:04:35,810 --> 00:04:39,647
+Tôi đang cố gắng đặt chân vào một lĩnh vực kinh doanh
+hoàn toàn mới và không liên quan.
+
+107
+00:04:39,647 --> 00:04:40,230
+Tôi đang mở rộng.
+
+108
+00:04:40,230 --> 00:04:41,790
+Tôi đang đa dạng hóa.
+
+109
+00:04:41,790 --> 00:04:44,230
+Đây là những gì Apple đã làm khi hãng này giới thiệu hoặc
+
+110
+00:04:44,230 --> 00:04:47,820
+nhảy vào mảng gian điện thoại và nhảy vào mảng âm nhạc di động.
+
+111
+00:04:47,820 --> 00:04:49,640
+Nó đa dạng hóa thị trường của nó.
+
+112
+00:04:49,640 --> 00:04:51,325
+Nó đang cố gắng bước chân vào các ngành mới.
+
+113
+00:04:51,325 --> 00:04:54,450
+
+
+114
+00:04:54,450 --> 00:04:57,740
+Ở đây khi tôi giới thiệu một dòng mở rộng,
+
+115
+00:04:57,740 --> 00:05:00,320
+tôi đang cố gắng đa dạng hóa danh mục đầu tư của tôi.
+
+116
+00:05:00,320 --> 00:05:01,930
+Tôi đang ở trong thị trường hiện tại của tôi,
+
+117
+00:05:01,930 --> 00:05:04,020
+nhưng tôi đang cố gắng có thêm nhiều người
+
+118
+00:05:04,020 --> 00:05:07,510
+sử dụng các sản phẩm của tôi trong cùng một thị trường đó.
+
+119
+00:05:07,510 --> 00:05:09,820
+Đây là nơi hương vị được thêm vào và những điều tương tự.
+
+120
+00:05:09,820 --> 00:05:14,541
+Tôi sẽ thêm một hương vị mà ai đó có thể thích.
+
+121
+00:05:14,541 --> 00:05:16,640
+Trong phát triển thị trường, điều tôi thực sự tập trung vào
+
+122
+00:05:16,640 --> 00:05:19,300
+là mở rộng khối lượng doanh số bán hàng của tôi.
+
+123
+00:05:19,300 --> 00:05:23,680
+Tôi đang định vị lại vào các thị trường mới.
+
+124
+00:05:23,680 --> 00:05:28,014
+Và cuối cùng, ở góc phần tư phía trên bên trái này
+là thâm nhập thị trường.
+
+125
+00:05:28,014 --> 00:05:29,180
+Tôi sẽ làm gì ở đây?
+
+126
+00:05:29,180 --> 00:05:30,620
+Tôi sẽ tăng thị phần.
+
+127
+00:05:30,620 --> 00:05:32,240
+Tôi đang giảm giá để tăng
+
+128
+00:05:32,240 --> 00:05:34,700
+thị phần cho thị trường hiện tại của tôi
+
+129
+00:05:34,700 --> 00:05:37,570
+bằng công nghệ hiện tại của tôi.
+
+130
+00:05:37,570 --> 00:05:40,260
+Mỗi chiến lược này khác nhau
+
+131
+00:05:40,260 --> 00:05:42,850
+dựa trên sự kết hợp của sản phẩm trên thị trường và
+
+132
+00:05:42,850 --> 00:05:46,650
+chúng cần một kiểu dự báo khác nhau.
+
+133
+00:05:46,650 --> 00:05:48,780
+Bắt đầu ở đây ở phía trên bên trái
+
+134
+00:05:48,780 --> 00:05:51,910
+nơi tôi có công nghệ hiện có trong một thị trường hiện có,
+
+135
+00:05:51,910 --> 00:05:53,870
+bạn có thể nghĩ rằng phương pháp dự báo của tôi
+
+136
+00:05:53,870 --> 00:05:55,810
+sẽ là định lượng nhất.
+
+137
+00:05:55,810 --> 00:05:58,880
+Tôi muốn xem xét các tình huống tương tự
+bằng cách sử dụng phân tích chuỗi thời gian,
+
+138
+00:05:58,880 --> 00:06:02,451
+hồi quy, các mô hình khác bởi vì tôi có rất nhiều lịch sử
+
+139
+00:06:02,451 --> 00:06:04,700
+vì tôi đã hoạt động trong thị trường này trong một thời gian
+
+140
+00:06:04,700 --> 00:06:07,010
+nên tôi biết cách chúng vận hành,
+
+141
+00:06:07,010 --> 00:06:10,380
+và tôi đang cung cấp bằng công nghệ này,
+
+142
+00:06:10,380 --> 00:06:14,100
+nên tôi có một số lịch sử ở đó.
+
+143
+00:06:14,100 --> 00:06:17,430
+Khi tôi bước vào mở rộng dòng, cách tiếp cận
+
+144
+00:06:17,430 --> 00:06:20,750
+cách tiếp cận ở đây là để tìm những thứ tương tự.
+
+145
+00:06:20,750 --> 00:06:22,660
+Tôi giới thiệu hương việt quất.
+
+146
+00:06:22,660 --> 00:06:24,500
+Có lẽ tôi muốn xem hương vị quả man việt quất
+
+147
+00:06:24,500 --> 00:06:25,730
+trước đó được đón nhận ra sao.
+
+148
+00:06:25,730 --> 00:06:28,690
+Tôi đã có một số kinh nghiệm trước đó về
+
+149
+00:06:28,690 --> 00:06:32,250
+kiểu như phân tích hoặc dự báo tương tự.
+
+150
+00:06:32,250 --> 00:06:35,125
+Tôi có thể nhìn vào những điều tương tự
+và có thể tạo một phần mở rộng
+
+151
+00:06:35,125 --> 00:06:38,940
+và ngoại suy cách nó hoạt động với cách sản phẩm mới này sẽ 
+
+152
+00:06:38,940 --> 00:06:41,750
+hoạt động.
+
+153
+00:06:41,750 --> 00:06:44,070
+Khi tôi xuống đây để phát triển thị trường,
+
+154
+00:06:44,070 --> 00:06:47,500
+tôi thực sự nhìn vào, làm thế nào để tôi hiểu thị trường mới này?
+
+155
+00:06:47,500 --> 00:06:50,870
+Dự báo của tôi sẽ tập trung vào các xu hướng lớn hơn,
+
+156
+00:06:50,870 --> 00:06:53,780
+cách những khách hàng và thị trường đó phản ứng,
+
+157
+00:06:53,780 --> 00:06:56,414
+để hiểu được môi trường thị trường mới cụ thể đó
+
+158
+00:06:56,414 --> 00:06:58,330
+vì đó là sự khác biệt lớn.
+
+159
+00:06:58,330 --> 00:07:02,840
+Tôi sẽ đến một thị trường mới
+nên tôi cần phải hiểu điều đó.
+
+160
+00:07:02,840 --> 00:07:05,720
+Và cuối cùng, để đa dạng hóa,
+
+161
+00:07:05,720 --> 00:07:09,620
+khi tôi nói các sản phẩm mới với công ty hoặc mới với thế giới,
+
+162
+00:07:09,620 --> 00:07:11,770
+cách tiếp cận dự báo là rất chớp nhoáng.
+
+163
+00:07:11,770 --> 00:07:15,000
+Đó là lập kế hoạch viễn cảnh tương lai nhiều hơn và
+
+164
+00:07:15,000 --> 00:07:17,480
+hiểu các yếu tố thúc đẩy và các yếu tố không chắc chắn.
+
+165
+00:07:17,480 --> 00:07:20,880
+Vậy bạn có thể nghĩ khi tôi di chuyển từ phía trên bên trái này xuống
+
+166
+00:07:20,880 --> 00:07:24,680
+phía trên bên phải này, tôi di chuyển từ số liệu khách quan hơn,
+
+167
+00:07:24,680 --> 00:07:28,520
+phân tích chủ động, đến các số liệu chủ quan hơn nhiều ở đây.
+
+168
+00:07:28,520 --> 00:07:30,900
+Giờ tôi sẽ không nói xuống ở đây khi
+
+169
+00:07:30,900 --> 00:07:32,750
+tôi giới thiệu sản phẩm mới cho thế giới,
+
+170
+00:07:32,750 --> 00:07:34,634
+mà tôi không có phân tích khắt khe,
+
+171
+00:07:34,634 --> 00:07:36,050
+nhưng bạn không có nhiều lịch sử
+
+172
+00:07:36,050 --> 00:07:39,230
+như khi bạn làm một số loại công việc chủ quan hơn, như
+
+173
+00:07:39,230 --> 00:07:41,787
+trái với ở trên đây cho việc thâm nhập thị trường,
+
+174
+00:07:41,787 --> 00:07:43,370
+nơi tôi có một số lịch sử để làm việc với
+
+175
+00:07:43,370 --> 00:07:45,840
+và tôi sẽ nhớ điều đó.
+
+176
+00:07:45,840 --> 00:07:49,092
+Câu hỏi cuối cùng để kết thúc video này
+
+177
+00:07:49,092 --> 00:07:50,800
+là đặt câu hỏi, tại sao các công ty thậm chí
+
+178
+00:07:50,800 --> 00:07:52,787
+tung sản phẩm mới ở nơi đầu tiên này?
+
+179
+00:07:52,787 --> 00:07:53,995
+Đây là một câu hỏi rất dễ.
+
+180
+00:07:53,995 --> 00:07:56,070
+Đó là vì đó là nơi tất cả tiền có ở đó.
+
+181
+00:07:56,070 --> 00:07:59,500
+Các công ty kiếm được từ 20% đến 48% doanh thu của họ
+
+182
+00:07:59,500 --> 00:08:03,430
+từ các sản phẩm mới ra mắt trong hai năm trở cuối cùng.
+
+183
+00:08:03,430 --> 00:08:07,150
+Lợi nhuận từ 20% đến 50%, tùy thuộc vào ngành.
+
+184
+00:08:07,150 --> 00:08:09,180
+Nếu bạn nhìn vào các ngành khác nhau,
+
+185
+00:08:09,180 --> 00:08:11,760
+ đối với hàng tiêu dùng nhanh, mọi thứ
+
+186
+00:08:11,760 --> 00:08:15,410
+đi qua cửa hàng tạp hóa, doanh thu và lợi nhuận của họ
+
+187
+00:08:15,410 --> 00:08:18,040
+vào khoảng 24% thu được từ các sản phẩm
+
+188
+00:08:18,040 --> 00:08:19,770
+được giới thiệu trong hai năm gần đây nhất.
+
+189
+00:08:19,770 --> 00:08:22,600
+Bạn có thể thấy rằng điều này là khá quan trọng đối với nhiều hãng.
+
+190
+00:08:22,600 --> 00:08:25,880
+Nếu bạn nhìn vào công nghệ, đó gần một nửa doanh thu
+
+191
+00:08:25,880 --> 00:08:29,600
+và 44% lợi nhuận thu được từ các sản phẩm
+
+192
+00:08:29,600 --> 00:08:31,390
+được giới thiệu trong hai năm qua.
+
+193
+00:08:31,390 --> 00:08:32,909
+Những con số này chỉ đi lên.
+
+194
+00:08:32,909 --> 00:08:36,030
+Những con số này khoảng 8 đến 10 tuổi,
+
+195
+00:08:36,030 --> 00:08:38,340
+vì vậy bạn có thể tưởng tượng rằng nó đang tăng
+
+196
+00:08:38,340 --> 00:08:43,230
+vì như chúng ta thấy, chu kỳ sản phẩm đã rút ngắn.
+
+197
+00:08:43,230 --> 00:08:45,190
+Mọi người đang giới thiệu sản phẩm mới,
+
+198
+00:08:45,190 --> 00:08:46,580
+và không phải vì sản phẩm
+
+199
+00:08:46,580 --> 00:08:48,860
+đang yếu đi hay sụp đổ.
+
+200
+00:08:48,860 --> 00:08:51,780
+Đó là vì những sản phẩm này không thể duy trì được
+
+201
+00:08:51,780 --> 00:08:55,270
+giá của chúng, vì vậy bạn sẽ thấy giá sụt giảm mạnh.
+
+202
+00:08:55,270 --> 00:08:59,490
+Nếu bạn nhìn vào chip cho những chiếc điện thoại,
+
+203
+00:08:59,490 --> 00:09:03,010
+bạn sẽ thấy sự giảm giá rõ nét ở đó
+
+204
+00:09:03,010 --> 00:09:03,980
+trong một khoảng thời gian rất ngắn.
+
+205
+00:09:03,980 --> 00:09:05,500
+Hầu hết các sản phẩm sẽ tiếp tục giảm,
+
+206
+00:09:05,500 --> 00:09:07,450
+và do đó khi giá giảm xuống,
+
+207
+00:09:07,450 --> 00:09:10,490
+một sản phẩm mới cần được giới thiệu.
+
+208
+00:09:10,490 --> 00:09:12,900
+Đây là lý do tại sao các công ty ra mắt sản phẩm mới.
+
+209
+00:09:12,900 --> 00:09:15,390
+Điều tiếp theo chúng ta sẽ nói cách các công ty
+
+210
+00:09:15,390 --> 00:09:18,080
+bắt tay vào việc giới thiệu sản phẩm mới.
+

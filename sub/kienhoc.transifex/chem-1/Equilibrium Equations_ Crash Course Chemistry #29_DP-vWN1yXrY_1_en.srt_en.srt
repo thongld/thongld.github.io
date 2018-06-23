@@ -1,0 +1,660 @@
+1
+00:00:00,089 --> 00:00:02,499
+Last week, I told you about equilibrium, which
+is proof,
+
+2
+00:00:02,499 --> 00:00:05,580
+if you ever needed proof, that the universe
+is trying to mess with us,
+
+3
+00:00:05,580 --> 00:00:10,280
+because even though we think and talk about chemical reactions as being a straightforward process,
+
+4
+00:00:10,279 --> 00:00:12,410
+often times they're also going backwards.
+
+5
+00:00:12,410 --> 00:00:16,530
+At the same time, the reactants are combining to form products like nitrogen and hydrogen to make ammonia,
+
+6
+00:00:16,530 --> 00:00:18,800
+or hydrogen and fluorine to make hydrogen
+fluoride.
+
+7
+00:00:18,809 --> 00:00:21,769
+The products are also breaking back apart
+into the reactants.
+
+8
+00:00:21,769 --> 00:00:23,059
+So there's a sweet spot.
+
+9
+00:00:23,059 --> 00:00:28,159
+One particular ratio of reactants to products where the products form at the same rate that they break down.
+
+10
+00:00:28,160 --> 00:00:31,618
+When a reaction hits that spot, it's said
+to be in its equilibrium state.
+
+11
+00:00:31,618 --> 00:00:32,859
+A bit of a kick in the head.
+
+12
+00:00:32,859 --> 00:00:35,119
+But of course you're not totally at chemistry's
+mercy;
+
+13
+00:00:35,119 --> 00:00:39,049
+you can tinker with chemical equilibrium by
+altering the concentration of the substances
+
+14
+00:00:39,049 --> 00:00:41,979
+and their temperature and if they're gases,
+the pressure on them.
+
+15
+00:00:41,979 --> 00:00:45,759
+For example, adding pressure to the Haber
+Process that we use to create ammonia essentially
+
+16
+00:00:45,759 --> 00:00:48,119
+shifts the position of equilibrium,
+
+17
+00:00:48,119 --> 00:00:52,308
+so the result of the reaction is more ammonia
+being produced than nitrogen and hydrogen.
+
+18
+00:00:52,308 --> 00:00:54,468
+But, wouldn't it be a lot more helpful if
+you knew
+
+19
+00:00:54,469 --> 00:00:59,448
+how much pressure you'd have to add to produce
+the exact amount of ammonia you needed,
+
+20
+00:00:59,448 --> 00:01:03,329
+or how much hydrogen fluoride it takes to
+refine a certain volume of gasoline.
+
+21
+00:01:03,329 --> 00:01:07,868
+Math, of course, is the way to answer questions like these, so today I'm going to show you some simple,
+
+22
+00:01:07,868 --> 00:01:12,049
+totally non-scary calculations that will help
+you get a handle on chemical equilibrium.
+
+23
+00:01:12,049 --> 00:01:21,588
+[Theme Music]
+
+24
+00:01:21,588 --> 00:01:27,519
+The first and most important thing you need to do equilibrium calculations is the equilibrium constant.
+
+25
+00:01:27,519 --> 00:01:30,498
+This number is unique for every reaction and
+represents
+
+26
+00:01:30,498 --> 00:01:36,048
+a molar ratio of products over reactants when
+a reaction is at equilibrium.
+
+27
+00:01:36,049 --> 00:01:39,609
+Equilibrium constants are easy to set up but
+hard to explain,
+
+28
+00:01:39,608 --> 00:01:43,848
+so let's start with an example using this
+obviously fake chemical equation.
+
+29
+00:01:43,849 --> 00:01:46,639
+The capital letters stand for the reactants
+and the products
+
+30
+00:01:46,638 --> 00:01:49,248
+and the lowercase letters stand for their
+coefficients.
+
+31
+00:01:49,248 --> 00:01:53,738
+The equilibrium constant, or Keq, is equal to the product of the molar concentration of the products
+
+32
+00:01:53,739 --> 00:01:56,679
+divided by the product of the molar concentration
+of the reactants.
+
+33
+00:01:56,679 --> 00:02:00,558
+Each concentration is raised to the power
+of its coefficient in the balanced equation.
+
+34
+00:02:00,558 --> 00:02:04,239
+Now this is important; we're using the coefficients
+as exponents here
+
+35
+00:02:04,239 --> 00:02:08,239
+because we're multiplying all the products
+and all the reactants,
+
+36
+00:02:08,239 --> 00:02:11,599
+not adding them like you would do in a balanced
+equation.
+
+37
+00:02:11,599 --> 00:02:18,379
+Generations of students have messed up test scores by getting this part wrong, but you will not do that.
+
+38
+00:02:18,379 --> 00:02:24,120
+So again, it's the product of the products of the product of the reactants and the coefficients become exponents.
+
+39
+00:02:24,120 --> 00:02:25,319
+Actually pretty simple.
+
+40
+00:02:25,318 --> 00:02:29,938
+The square brackets in the formula are used
+by chemists to represent molar concentration,
+
+41
+00:02:29,938 --> 00:02:32,959
+or molarity: moles of solute per liter of
+solution.
+
+42
+00:02:32,959 --> 00:02:36,000
+These equilibrium constant equations and the
+constants themselves
+
+43
+00:02:36,000 --> 00:02:39,449
+are one of the few places where you don't
+need to write them with every number.
+
+44
+00:02:39,449 --> 00:02:42,968
+Just remember to convert everything into molarities
+before plugging numbers into the equation.
+
+45
+00:02:42,968 --> 00:02:45,938
+One last thing before we do a calculation:
+as we learned in the last episode,
+
+46
+00:02:45,938 --> 00:02:49,328
+a change in temperature changes the position
+of equilibrium.
+
+47
+00:02:49,329 --> 00:02:53,480
+Therefore, the equilibrium constant is only
+true for a specific temperature.
+
+48
+00:02:53,479 --> 00:02:57,738
+Constants are normally calculated at 25 degrees
+Celsius, which is close enough for most situations,
+
+49
+00:02:57,739 --> 00:03:00,620
+but the temperature should always be mentioned
+along with the constant.
+
+50
+00:03:00,620 --> 00:03:05,800
+Fortunately for us, chemists have already figured out the equilibrium constants for most common reactions.
+
+51
+00:03:05,800 --> 00:03:10,040
+Carbonic acid, for instance, which is basically
+just carbon dioxide dissolved in water,
+
+52
+00:03:10,039 --> 00:03:12,679
+dissociates to form carbonate ions and hydrogen
+ions.
+
+53
+00:03:12,680 --> 00:03:17,498
+You'll see this reaction again later when we talk in depth about carbon and the planet's carbon cycles.
+
+54
+00:03:17,500 --> 00:03:25,560
+More importantly, right now, the reaction is perfectly reversible with an equilibrium constant of 1.66 x 10^-17.
+
+55
+00:03:25,560 --> 00:03:31,219
+For this reaction, Keq equals the product of the molar concentration of the carbonate ion
+
+56
+00:03:31,219 --> 00:03:33,560
+and the molar concentration of the hydrogen
+ion,
+
+57
+00:03:33,568 --> 00:03:37,498
+which is squared because hydrogen's coefficient
+in the balanced equation is 2,
+
+58
+00:03:37,498 --> 00:03:40,098
+all divided by the molar concentration of
+carbonic acid.
+
+59
+00:03:40,098 --> 00:03:42,119
+Now, let's not be boring and throw a bunch
+of numbers around.
+
+60
+00:03:42,120 --> 00:03:49,519
+What you need to see is that the quotient on the right must always yield the same number because it's a constant.
+
+61
+00:03:49,519 --> 00:03:54,519
+So, if the amount of CO2 in the atmosphere increases leading to more H2CO3 in the earth's water,
+
+62
+00:03:54,520 --> 00:04:01,080
+the concentration of carbonate ions and/or hydrogen ions must also increase so the total will match the Keq.
+
+63
+00:04:01,090 --> 00:04:04,468
+You should also notice that any change to
+the concentration of hydrogen ions
+
+64
+00:04:04,468 --> 00:04:08,318
+will have a huge effect on the denominator
+because its square.
+
+65
+00:04:08,319 --> 00:04:12,959
+So an increase in hydrogen ions, like if the water were somehow acidified by an outside source,
+
+66
+00:04:12,960 --> 00:04:18,100
+would require a huge decrease in carbonate
+ions or a huge increase in carbonic acid —
+
+67
+00:04:18,108 --> 00:04:21,948
+carbon dioxide pulled in from the atmosphere
+to satisfy the equilibrium condition again.
+
+68
+00:04:21,949 --> 00:04:26,549
+We can attack this problem from another direction, too, depending on what information we have to begin with.
+
+69
+00:04:26,548 --> 00:04:29,759
+Chemists often know not only the equilibrium
+constant for a reaction,
+
+70
+00:04:29,769 --> 00:04:32,560
+but also how much of each reactant is available.
+
+71
+00:04:32,560 --> 00:04:36,720
+And all they need to figure out is exactly how much of each substance will be present at equilibrium.
+
+72
+00:04:36,728 --> 00:04:40,418
+This type of calculation is easiest using
+a format called a RICE table.
+
+73
+00:04:40,418 --> 00:04:43,930
+RICE stands for Reaction, Initial, Change,
+and Equilibrium.
+
+74
+00:04:43,930 --> 00:04:48,418
+On the R line at the top of the table, we
+write the chemical equation of reaction,
+
+75
+00:04:48,418 --> 00:04:52,839
+leaving space between each part so we'll have
+room to add more information below.
+
+76
+00:04:52,839 --> 00:04:55,638
+On the I line we write the initial concentrations
+of each substance.
+
+77
+00:04:55,639 --> 00:05:01,240
+Some of those will almost always be zero, since products generally aren't present until the reaction begins.
+
+78
+00:05:01,240 --> 00:05:05,490
+The C line is where we map out how much of
+each substance will change during the reaction.
+
+79
+00:05:05,490 --> 00:05:08,930
+We often don't know exactly how much this
+is until we do the math,
+
+80
+00:05:08,930 --> 00:05:11,579
+so we start out with x, where the amount is
+unknown.
+
+81
+00:05:11,579 --> 00:05:16,918
+The E line is where we put the final result: how much of each substance will be present at equilibrium.
+
+82
+00:05:16,918 --> 00:05:21,079
+Since the final amount is just the initial
+amount plus any changes that have occurred,
+
+83
+00:05:21,079 --> 00:05:24,740
+this line is the sum of the initial line and
+the change line.
+
+84
+00:05:24,740 --> 00:05:30,319
+Let's do this for hydrogen fluoride, or HF, an integral part of the process of refining gasoline.
+
+85
+00:05:30,319 --> 00:05:36,598
+It can be formed in the gaseous state by an equilibrium reaction between hydrogen gas and fluorine gas.
+
+86
+00:05:36,598 --> 00:05:38,550
+Start by writing the balanced equation.
+
+87
+00:05:38,550 --> 00:05:39,960
+For our initial concentrations,
+
+88
+00:05:39,959 --> 00:05:47,478
+let's use 3.00 mol of H2 and 6.00 mol of F2
+in a 3.00 liter container at a certain temperature.
+
+89
+00:05:47,478 --> 00:05:52,769
+That makes the initial concentration of H2
+3 moles in 3 liters, or a 1.00 molar solution.
+
+90
+00:05:52,769 --> 00:05:57,930
+Similarly, the initial concentration of the
+F2 is 6 moles per 3 liters, or 2 molar.
+
+91
+00:05:57,930 --> 00:06:01,098
+No HF has formed yet, so it's initial concentration
+is 0.
+
+92
+00:06:01,100 --> 00:06:03,460
+So what we're trying to figure out is how
+much of the hydrogen and the fluorine
+
+93
+00:06:03,459 --> 00:06:06,388
+will react to form hydrogen fluoride under
+these conditions.
+
+94
+00:06:06,389 --> 00:06:08,519
+So we'll call the change 'x' for now.
+
+95
+00:06:08,519 --> 00:06:13,370
+Since 1 mole of H2 and 1 mole of F2, combine
+to form 2 moles of HF.
+
+96
+00:06:13,370 --> 00:06:20,199
+We can say that the H2 and F2 will each lose 'x' moles per liter while the HF gains 2x moles per liter.
+
+97
+00:06:20,199 --> 00:06:22,439
+That's on the change line of your table.
+
+98
+00:06:22,439 --> 00:06:25,978
+So that leaves the equilibrium line where
+you write your totals.
+
+99
+00:06:25,978 --> 00:06:32,860
+For H2 we have a total of 1.00 - x molar.
+For F2 the total is 2.00 - x.
+
+100
+00:06:32,860 --> 00:06:35,199
+For the HF the total is 2x molar.
+
+101
+00:06:35,199 --> 00:06:39,009
+Now we apply these figures to our formula
+for the equilibrium constant.
+
+102
+00:06:39,009 --> 00:06:44,081
+Based on the table in the back of my textbook, the Keq for this reaction is 115 at the given temperature.
+
+103
+00:06:44,098 --> 00:06:47,459
+We plug in the numbers from our RICE table
+and solve for x.
+
+104
+00:06:47,459 --> 00:06:51,609
+And we end up with this. Which you probably
+recognize as a quadratic equation.
+
+105
+00:06:51,610 --> 00:06:56,490
+Just so you know that doesn't happen with every equilibrium calculation, but it's an extremely common result.
+
+106
+00:06:56,490 --> 00:06:59,740
+To solve the quadratic equation we have to
+use the quadratic formula.
+
+107
+00:06:59,740 --> 00:07:05,590
+And to do that we have to think of the coefficients
+of our equation as a, b, and c in that order.
+
+108
+00:07:05,589 --> 00:07:09,119
+Then we plug them in the corresponding positions
+in this formula:
+
+109
+00:07:09,120 --> 00:07:15,348
+-b +/- the square root of b2 - 4ac, all divided
+by 2a.
+
+110
+00:07:15,348 --> 00:07:17,500
+Once we finally get all the numbers in the
+right places,
+
+111
+00:07:17,500 --> 00:07:20,550
+it becomes a matter of grinding through some
+basic algebra.
+
+112
+00:07:20,550 --> 00:07:24,680
+And because of the way the quadratic formula
+works, we'll get 2 possible answers.
+
+113
+00:07:24,680 --> 00:07:28,620
+To figure out which one is the right one,
+think back to the beginning of the problem.
+
+114
+00:07:28,620 --> 00:07:35,300
+I said the initial concentration of the H2 was 1 molar, and the initial concentration of the F2 was 2 molar.
+
+115
+00:07:35,300 --> 00:07:38,340
+And x is the amount that each one lost, right?
+
+116
+00:07:38,348 --> 00:07:43,240
+Well neither the H2 nor the F2 could possibly
+lose 2.13 moles per liter
+
+117
+00:07:43,240 --> 00:07:45,598
+when they both started with less than that
+already.
+
+118
+00:07:45,598 --> 00:07:50,259
+So clearly, the correct answer has to be 0.968
+molar.
+
+119
+00:07:50,259 --> 00:07:54,080
+Using that then, we can calculate the actual
+equilibrium amounts for each substance.
+
+120
+00:07:54,079 --> 00:07:59,089
+At equilibrium, under these specific conditions
+the concentration of HF is 2x,
+
+121
+00:07:59,089 --> 00:08:02,718
+or 2 x 0.968,
+which equals 1.94 molar.
+
+122
+00:08:02,718 --> 00:08:07,509
+The concentration of hydrogen will be 1 - 0.968
+or 0.032 molar.
+
+123
+00:08:07,509 --> 00:08:12,979
+And the concentration of fluorine will be
+2 - 0.968 or 1.03 molar.
+
+124
+00:08:12,978 --> 00:08:16,668
+As we learned last week, those values can
+be shifted.
+
+125
+00:08:16,668 --> 00:08:21,680
+For instance, to maximize the hydrogen fluoride production by adding or removing some of the substances.
+
+126
+00:08:21,680 --> 00:08:24,250
+Or by changing the pressure or temperature
+on the system.
+
+127
+00:08:24,250 --> 00:08:27,079
+That's why these calculations are so valuable
+to scientists.
+
+128
+00:08:27,079 --> 00:08:31,120
+Just a little bit of algebra allows us to
+maximize the benefit that we receive from
+
+129
+00:08:31,120 --> 00:08:33,279
+the things that nature is already doing anyway.
+
+130
+00:08:33,279 --> 00:08:37,980
+If the universe really is try to take advantage of us, we've certainly figured out how to take advantage right back.
+
+131
+00:08:37,980 --> 00:08:41,600
+So the next time you're wondering why you
+learned this stuff in math class, now you know.
+
+132
+00:08:41,600 --> 00:08:43,820
+Thanks for watching this episode of Crash
+Course Chemistry.
+
+133
+00:08:43,820 --> 00:08:49,600
+Today you've learned some mathematical tools to help us make more efficient use of equilibrium reactions in real life.
+
+134
+00:08:49,600 --> 00:08:52,399
+You've learned how to calculate an equilibrium
+constant, Keq.
+
+135
+00:08:52,399 --> 00:08:57,319
+You've learned how to calculate the equilibrium conditions of reactions just from knowing their initial conditions.
+
+136
+00:08:57,320 --> 00:09:01,640
+And you've learned that a RICE table isn't
+just a place where you eat sushi.
+
+137
+00:09:01,649 --> 00:09:04,419
+And you may even have learned a little bit
+about the quadratic equation.
+
+138
+00:09:04,419 --> 00:09:08,610
+This episode was written by Edi González.
+The script was edited by Blake de Pastino.
+
+139
+00:09:08,610 --> 00:09:11,169
+And our chemistry consultant was Dr. Heiko
+Langner.
+
+140
+00:09:11,169 --> 00:09:15,349
+It was filmed, edited, and directed by Nicholas Jenkins. The script supervisor was Katherine Green.
+
+141
+00:09:15,350 --> 00:09:18,909
+The sound designer is Michael Aranda. And
+our graphics team is Thought Café.
+

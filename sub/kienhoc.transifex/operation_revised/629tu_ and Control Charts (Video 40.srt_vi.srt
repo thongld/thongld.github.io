@@ -1,0 +1,306 @@
+0
+00:00:00,000 --> 00:00:00,001
+knh_argentwei 07/10/2016
+
+1
+00:00:06,120 --> 00:00:08,789
+Rất vui được gặp lại và chào mừng đến với khóa học "Quản trị vận hành"
+
+2
+00:00:08,789 --> 00:00:12,568
+Trong phần này, chúng ta sẽ tiếp tục phần thảo luận về kiểm soát quy trình bằng phương pháp thống kê
+
+3
+00:00:12,568 --> 00:00:13,330
+control
+
+4
+00:00:13,330 --> 00:00:16,929
+và nói về vấn đề kiểm tra và kiểm soát
+
+5
+00:00:16,929 --> 00:00:20,320
+mục đích của việc kiểm tra
+
+6
+00:00:20,320 --> 00:00:23,500
+là chúng ta có thể thật sự giám sát 
+
+7
+00:00:23,500 --> 00:00:26,809
+những gì đang diễn ra trong quy trình
+
+
+8
+00:00:26,809 --> 00:00:30,059
+là ta có thể lấy mẫu sản phẩm hoặc
+ta có thể quan sát
+
+9
+00:00:30,059 --> 00:00:34,299
+những giai đoạn đang diễn ra trong suốt quy trình
+và chúng ta có thể phỏng đoán được
+
+10
+00:00:34,299 --> 00:00:35,460
+that
+
+11
+00:00:35,460 --> 00:00:39,770
+chuỗi các tiêu chuẩn mà 
+chúng ta cần để kiểm tra
+
+12
+00:00:39,770 --> 00:00:43,820
+Nếu bạn đang suy nghĩ về chi phí chất lượng
+
+13
+00:00:43,820 --> 00:00:47,750
+thì đó là một phần của phí kiểm định
+Việc kiểm tra
+
+14
+00:00:47,750 --> 00:00:52,308
+có thể diễn ra ở bất kì khâu nào của quy trình
+Nhưng quan trọng là, 
+
+15
+00:00:52,308 --> 00:00:54,709
+bạn phải ghi nhớ rằng bạn không thể kiểm tra 
+
+16
+00:00:54,710 --> 00:00:58,649
+chất lượng của mọi sản phẩm hoặc dịch vụ
+
+17
+00:00:58,649 --> 00:01:02,420
+Việc kiểm tra chỉ có thể xác định liệu có sai phạm hay không trong quy trình của bạn
+
+18
+00:01:02,420 --> 00:01:07,270
+Chúng ta tiếp tục nói về 2 khía cạnh của
+việc kiểm tra
+
+19
+00:01:07,270 --> 00:01:11,680
+Một là kiểm định thuộc tính và hai là
+kiểm định theo biến
+
+20
+00:01:11,680 --> 00:01:15,220
+Kiểm định thuộc tính thì đơn giản
+
+21
+00:01:15,219 --> 00:01:19,879
+điểm tốt và khuyết điểm
+Chúng ta sẽ quan sát sản phẩm hoặc dịch vụ
+
+22
+00:01:19,879 --> 00:01:23,199
+và định nghĩa là có khuyết điểm trên sản phẩm
+
+23
+00:01:23,200 --> 00:01:27,400
+hay sản phẩm là hàng kém chất lượng
+
+24
+00:01:27,400 --> 00:01:30,850
+Kiểm định theo biến thì có chút khác biệt
+
+25
+00:01:30,849 --> 00:01:34,319
+Vì ta không chỉ cố để tìm ra
+những vấn đề của quy trình
+
+26
+00:01:34,319 --> 00:01:35,059
+process
+
+27
+00:01:35,060 --> 00:01:39,200
+à ta còn mở rộng quá trình kiểm định theo một chiều khác
+
+28
+00:01:39,200 --> 00:01:42,380
+ta kiểm định trên tổng thể, cả chiều rộng lẫn chiều ngang
+
+29
+00:01:42,379 --> 00:01:47,099
+của sản phẩm để ta có thể
+có những số liệu đo lường 
+
+30
+00:01:47,099 --> 00:01:50,959
+Đó là hai khía cạnh khác nhau của việc kiểm định 
+mà chúng ta sẽ thấy trong
+
+31
+00:01:50,959 --> 00:01:55,009
+một vài bản kiểm soát thông thường
+
+32
+00:01:55,009 --> 00:01:58,719
+khi chúng ta kiểm định theo biến sẽ gồm
+
+33
+00:01:58,719 --> 00:02:02,259
+một thanh X và một bảng R
+
+34
+00:02:02,259 --> 00:02:06,930
+Thanh X là thanh trung bình của sản phẩm
+giúp chúng ta đo lường
+
+35
+00:02:06,930 --> 00:02:08,310
+theo xu hướng trung tâm
+
+36
+00:02:08,310 --> 00:02:12,319
+Bảng R sẽ theo dõi phạm vi 
+
+37
+00:02:12,319 --> 00:02:15,519
+của sản phẩm và cho ta 
+số liệu đo lường về sự phân tán
+
+38
+00:02:15,520 --> 00:02:19,850
+Nếu ta nhìn vào trục 
+
+39
+00:02:19,849 --> 00:02:23,090
+ta sẽ thấy được chiều hướng trung bình của trục
+cũng như là
+
+40
+00:02:23,090 --> 00:02:26,849
+giới hạn các số trên trục
+
+41
+00:02:26,849 --> 00:02:31,210
+Đó là lí do tại sao thanh X và bảng R
+luôn được sử dụng chung
+
+42
+00:02:31,210 --> 00:02:34,950
+vì thanh X cung cấp
+mức độ của xu hướng trung tâm
+
+43
+00:02:34,949 --> 00:02:40,250
+và bảng R cung cấp số liệu đo lường
+của sự phân tán
+
+44
+00:02:40,250 --> 00:02:43,789
+Những bản đặt tính ta nhìn thấy trong bảng P
+
+45
+00:02:43,789 --> 00:02:46,879
+Bảng C và bảng P có thể dùng để
+
+46
+00:02:46,879 --> 00:02:49,919
+theo dõi phần trăm hoặc phần khiếm khuyết
+
+47
+00:02:49,919 --> 00:02:53,309
+ví dụ sẽ cho ta thấy rõ hơn
+
+48
+00:02:53,310 --> 00:02:56,810
+ngoài ví dụ có bao nhiêu 
+
+49
+00:02:56,810 --> 00:03:01,270
+phần trăm của đơn vị khiếm khuyết ta thật sự có
+
+50
+00:03:01,270 --> 00:03:04,290
+Bảng C chỉ theo dõi số liệu hoặc tính toán
+
+51
+00:03:04,289 --> 00:03:09,449
+những sai sót trong ví dụ về sự khác biệt
+giữa bảng P và bảng C
+
+52
+00:03:09,449 --> 00:03:13,099
+Bảng C cho phép ta tính toán những sai sót
+
+53
+00:03:13,099 --> 00:03:17,159
+xảy ra trên sản phẩm và có thể
+
+54
+00:03:17,159 --> 00:03:22,239
+có nhiều hơn một sai sót 
+Dẫn đến sự khác biệt giữa bảng P và bảng C
+
+55
+00:03:22,239 --> 00:03:23,060
+C-chart
+
+56
+00:03:23,060 --> 00:03:27,709
+Nên nếu bạn muốn xác định cách kiểm soát mà bảng sử dụng
+
+57
+00:03:27,709 --> 00:03:31,770
+thì điều đầu tiên bạn cần là 
+xác định bạn đã kiểm tra 
+
+58
+00:03:31,770 --> 00:03:35,680
+những giá trị khác nhau như kích thước, trọng lượng
+hoặc những giá trị tương tự
+
+59
+00:03:35,680 --> 00:03:39,870
+Trong nhiều trường hợp bạn đang xem xét
+những bản kiểm soát giá trị khác nhau
+
+60
+00:03:39,870 --> 00:03:43,640
+thì trong trường hợp phải sử dụng thanh X
+
+61
+00:03:43,639 --> 00:03:48,619
+và những bản luôn đi cùng nhau 
+Nhưng nếu đó không phải những việc ta đang làm
+
+62
+00:03:48,620 --> 00:03:52,920
+mà ta chỉ đơn thuần là đếm hoặc cố xác định tỷ lệ sai sót
+
+63
+00:03:52,919 --> 00:03:53,939
+Vậy chúng ta cần xem xét những bản số liệu chuẩn
+
+64
+00:03:53,939 --> 00:03:59,500
+Nếu ta tính toán phần hoặc tỷ lệ sai sót mà 
+không cần quan tâm đến bảng P
+
+65
+00:03:59,500 --> 00:04:03,659
+mà ta chỉ tính toán trên tổng số sai sót
+
+66
+00:04:03,659 --> 00:04:07,120
+vậy thì ta chỉ cần nhìn vào bảng C
+
+67
+00:04:07,120 --> 00:04:11,170
+trong video tiếp theo ta sẽ nói về cách
+khám phá các bảng 
+
+68
+00:04:11,169 --> 00:04:13,280
+và làm thế nào ta có thể thật sự phát triển để kiểm soát sự giới hạn
+
+69
+00:04:13,280 --> 00:04:15,068
+Hẹn gặp lại bạn trong bài tới.
+

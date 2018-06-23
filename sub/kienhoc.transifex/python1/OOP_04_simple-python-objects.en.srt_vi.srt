@@ -1,0 +1,701 @@
+1
+00:00:09,038 --> 00:00:11,800
+Thao reviewed
+Vậy là xong phần hình ảnh với thuật ngữ.
+
+2
+00:00:11,800 --> 00:00:13,010
+Đã đến lúc viết code
+
+3
+00:00:13,010 --> 00:00:14,660
+Và chúng ta sẽ viết một ví dụ về lớp.
+
+4
+00:00:14,660 --> 00:00:17,950
+Nó không có công dụng gì mấy
+nhưng kệ nó, ta bắt đầu nào.
+
+5
+00:00:17,950 --> 00:00:21,970
+Ở đây ta có lớp PartyAnimal.
+
+6
+00:00:21,970 --> 00:00:29,270
+Đấy là một loại động vật. Trong đây,
+class là một từ dành riêng mới.
+
+7
+00:00:29,270 --> 00:00:33,310
+Một từ dành riêng giống như
+def, break hay là continue.
+
+8
+00:00:34,700 --> 00:00:37,490
+Ở đây ta đang định nghĩa một lớp,
+cũng tương tự như def.
+
+9
+00:00:37,490 --> 00:00:40,830
+Nhớ rằng def chưa thực thi lệnh,
+nó chỉ là để ghi nhớ.
+
+10
+00:00:40,830 --> 00:00:46,720
+Đoạn class này nghĩa là hãy ghi nhớ
+khuôn mẫu này với cái tên Party Animal.
+
+11
+00:00:46,720 --> 00:00:49,180
+Tôi vẫn chưa tạo đối tượng nào
+nhưng đây là một lớp.
+
+12
+00:00:51,120 --> 00:00:56,080
+Trong khối lệnh, ta lùi đầu dòng
+và chỉ đơn giản viết x = 0.
+
+13
+00:00:56,080 --> 00:01:00,160
+Đó sẽ là một biến có trong
+tất cả các thực thể của lớp này.
+
+14
+00:01:00,160 --> 00:01:04,256
+Sau đó, nếu muốn viết một phương thức,
+ta viết vài dòng code như lệnh def ở đây,
+
+15
+00:01:04,256 --> 00:01:05,756
+được lùi đầu dòng.
+
+16
+00:01:05,756 --> 00:01:10,072
+Và sau đó nó lùi vào xa hơn.
+Ban đầu lùi vào để biểu thị
+
+17
+00:01:10,072 --> 00:01:13,660
+nó thuộc vào lớp này. Sau đó
+chúng ta viết lệnh def như thế này.
+
+18
+00:01:13,660 --> 00:01:17,421
+Ta có thể viết nhiều cái như vậy,
+đây mới chỉ là một thôi.
+
+19
+00:01:17,421 --> 00:01:21,102
+Vậy ta có tên của phương thức là party và
+
+20
+00:01:21,102 --> 00:01:23,340
+sau đó ta có một tham số.
+
+21
+00:01:23,340 --> 00:01:28,350
+Nếu so với các ngôn ngữ
+hướng đối tượng khác,
+
+22
+00:01:28,350 --> 00:01:33,210
+điểm khác biệt của Python
+là nó có khái niệm
+
+23
+00:01:34,580 --> 00:01:38,530
+một biến là bí danh (alias)
+của một thực thể.
+
+24
+00:01:38,530 --> 00:01:40,260
+Chúng ta sẽ nói chi tiết hơn về nó sau.
+
+25
+00:01:40,260 --> 00:01:44,690
+Thông thường, tham số đầu tiên luôn là self,
+
+26
+00:01:44,690 --> 00:01:46,800
+tuy không bắt buộc phải vậy.
+
+27
+00:01:46,800 --> 00:01:49,020
+Nếu sau đó còn nhiều tham số khác,
+bạn có thể đặt chúng ngay sau đây.
+
+28
+00:01:49,020 --> 00:01:51,919
+Mọi phương thức đều có ít nhất một tham số
+
+29
+00:01:51,919 --> 00:01:54,387
+để kết nối đến các biến thực thể.
+
+30
+00:01:54,387 --> 00:01:57,957
+Trong đoạn code này có
+một thứ gọi là self,
+
+31
+00:01:57,957 --> 00:02:01,715
+nó cho thấy sẽ có rất nhiều x
+mà ta sẽ thấy sau.
+
+32
+00:02:01,715 --> 00:02:04,470
+self.x là cách gọi
+
+33
+00:02:04,470 --> 00:02:08,100
+trong một thực thể của một đối tượng
+để chỉ tới x trong đối tượng cụ thể ta cần.
+
+34
+00:02:08,100 --> 00:02:10,950
+Những đoạn này sẽ trỏ tới x.
+
+35
+00:02:10,950 --> 00:02:13,780
+Ta có thể viết a = 2 ở đây.
+
+36
+00:02:13,780 --> 00:02:18,110
+Đó không phải là biến trong cả đối tượng
+mà chỉ là biến cục bộ trong đoạn code này.
+
+37
+00:02:18,110 --> 00:02:20,730
+Tôi sẽ giải thích về self.x sau.
+
+38
+00:02:20,730 --> 00:02:24,808
+Vậy trong này có một đoạn code, vài quy tắc,
+
+39
+00:02:24,808 --> 00:02:26,950
+tham số self, tôi sẽ giải thích thêm sau.
+
+40
+00:02:26,950 --> 00:02:31,150
+Sau đó đoạn này được lưu trữ lại
+
+41
+00:02:31,150 --> 00:02:33,520
+dưới cái tên là PartyAnimal.
+
+42
+00:02:33,520 --> 00:02:37,690
+Bây giờ, ta tạo ra một đối tượng thực sự.
+
+43
+00:02:37,690 --> 00:02:40,680
+Vừa rồi là một lớp, giờ ta
+sẽ tạo một thực thể của nó.
+
+44
+00:02:40,680 --> 00:02:45,780
+Ta bảo: Hãy gọi ra mẫu PartyAnimal
+và tạo một đối tượng PartyAnimal,
+
+45
+00:02:45,780 --> 00:02:50,830
+trả kết quả là đối tượng
+và đặt nó trong biến 'an'.
+
+46
+00:02:50,830 --> 00:02:55,310
+Tại thời điểm này, biến 'an' là một đối tượng và
+
+47
+00:02:55,310 --> 00:02:58,710
+chúng ta có thể làm những thứ dựa trên
+định nghĩa của lớp này
+
+48
+00:02:58,710 --> 00:03:02,590
+Vậy ta có thể gọi phương thức party,
+
+49
+00:03:02,590 --> 00:03:04,120
+gọi lại, rồi gọi lại tiếp.
+
+50
+00:03:05,430 --> 00:03:10,180
+Các bạn chưa cần hiểu hết ngay,
+nhưng tôi muốn nói rõ một điều.
+
+51
+00:03:10,180 --> 00:03:15,820
+Vì biến 'an' thuộc kiểu PartyAnimal,
+
+52
+00:03:17,060 --> 00:03:20,920
+chương trình sẽ gọi phương thức PartyAnimal.party
+
+53
+00:03:20,920 --> 00:03:26,420
+tức đoạn code này, và đưa vào
+biến thực thể 'an'.
+
+54
+00:03:26,420 --> 00:03:30,160
+Bạn có thể hiểu nó gần như là
+chuyển đổi cú pháp,
+
+55
+00:03:30,160 --> 00:03:33,870
+trong đó dòng code này được gọi,
+biến được đưa vào
+
+56
+00:03:33,870 --> 00:03:37,410
+và đó là cách self trở thành
+bí danh của biến 'an'.
+
+57
+00:03:39,030 --> 00:03:42,950
+Nhắc lại, tôi sẽ giải thích thêm sau,
+lúc đó nó sẽ dễ hiểu hơn.
+
+58
+00:03:42,950 --> 00:03:49,550
+Giờ tôi chỉ muốn chỉ ra cái này
+là dạng rút gọn của cái kia. OK?
+
+59
+00:03:49,550 --> 00:03:54,380
+Và nếu chúng ta xem đoạn code này chạy,
+như tôi đã nói
+
+60
+00:03:54,380 --> 00:03:58,450
+Python đọc từ class này như một lệnh def
+
+61
+00:03:58,450 --> 00:04:03,700
+và nó chỉ lưu trữ và định nghĩa
+khái niệm mới là PartyAnimal.
+
+62
+00:04:03,700 --> 00:04:07,600
+Vậy nên chương trình này
+không có kết quả đầu ra,
+
+63
+00:04:07,600 --> 00:04:11,720
+nó chỉ ghi nhớ một khuôn mẫu,
+một khuôn bánh quy tên là PartyAnimal.
+
+64
+00:04:11,720 --> 00:04:14,430
+Tôi có thể tạo ra thật nhiều
+PartyAnimal tùy thích.
+
+65
+00:04:14,430 --> 00:04:18,034
+Rồi tới dòng này tức là
+tạo cho tôi một PartyAnimal và
+
+66
+00:04:18,034 --> 00:04:20,418
+trả lại cho tôi một thực thể của PartyAnimal
+
+67
+00:04:20,418 --> 00:04:23,993
+Cái này giống như một hàm
+trả cho ta một thực thể,
+
+68
+00:04:23,993 --> 00:04:26,358
+rồi tới một phép gán viết rằng
+
+69
+00:04:26,358 --> 00:04:29,660
+hãy đưa đối tượng đó vào biến 'an'.
+
+70
+00:04:31,000 --> 00:04:37,080
+Lúc này, Python sử dụng lớp này
+để tạo ra một biến được gọi là 'an'.
+
+71
+00:04:38,270 --> 00:04:42,960
+Bên trong 'an' có một biến x
+
+72
+00:04:42,960 --> 00:04:45,150
+và một đoạn code được gọi là party.
+
+73
+00:04:45,150 --> 00:04:49,880
+Ô màu xanh ở đây chính là đối tượng,
+bên trong nó có nhiều thứ.
+
+74
+00:04:49,880 --> 00:04:54,586
+Có các code và dữ liệu.
+Đối tượng này được tạo ra
+
+75
+00:04:54,586 --> 00:04:59,703
+khi chúng ta khởi tạo một Party Animal mới
+
+76
+00:04:59,703 --> 00:05:04,486
+Giờ ta sẽ gọi phương thức lần đầu tiên.
+
+77
+00:05:04,486 --> 00:05:09,830
+Phương thức party được gọi ra
+để chạy đoạn code này.
+
+78
+00:05:09,830 --> 00:05:14,680
+self.x là cái này, bây giờ
+
+79
+00:05:14,680 --> 00:05:19,890
+nó thay đổi từ 0 sang 1,
+và nó in ra "So far 1". OK?
+
+80
+00:05:19,890 --> 00:05:24,000
+Rồi nó quay trở lại chương trình chính,
+
+81
+00:05:24,000 --> 00:05:28,170
+giống như là một hàm.
+Ta tiếp tục gọi party lần nữa.
+
+82
+00:05:28,170 --> 00:05:32,270
+Nó sẽ quay lại lần nữa và
+chạy đoạn code đó
+
+83
+00:05:32,270 --> 00:05:35,800
+1 cộng thêm 1 bằng 2,
+sau đó in ra "So far 2".
+
+84
+00:05:35,800 --> 00:05:38,460
+Sau đó nó quay trở lại đây
+
+85
+00:05:38,460 --> 00:05:42,430
+Và chạy đoạn code lần nữa
+
+86
+00:05:42,430 --> 00:05:48,020
+Khi chạy đoạn code này
+x chuyển từ 2 sang 3.
+
+87
+00:05:48,020 --> 00:05:51,960
+Sau đó in ra "So far 3"
+rồi quay lại chỗ này.
+
+88
+00:05:51,960 --> 00:05:55,840
+Vậy hàm này có thể truy cập tất cả dữ liệu
+
+89
+00:05:55,840 --> 00:05:59,310
+nằm trong đối tượng khi nó được thực thi.
+
+90
+00:05:59,310 --> 00:06:03,110
+Và nó truy cập thông qua self.
+
+91
+00:06:04,230 --> 00:06:10,210
+Vì vậy bạn có thể hiểu
+self là một bí danh của 'an'.
+
+92
+00:06:10,210 --> 00:06:12,925
+Ở ngoài đây ta có 'an' là một biến,
+
+93
+00:06:12,925 --> 00:06:15,431
+và ta có thể thao tác với biến 'an'
+trong chương trình chính.
+
+94
+00:06:15,431 --> 00:06:21,176
+Trong đây thì ta không biết gì về 'an'.
+Nhưng khi đoạn code này đang chạy,
+
+95
+00:06:21,176 --> 00:06:27,700
+khi ta gọi an.party, self trở thành
+bí danh của 'an' nhờ đoạn code này. OK?
+
+96
+00:06:27,700 --> 00:06:31,460
+Vậy self như là một biến toàn cục
+trong cả đoạn này.
+
+97
+00:06:31,460 --> 00:06:35,750
+Và nó là cách ta truy cập
+vào một thực thể của đối tượng.
+
+98
+00:06:35,750 --> 00:06:37,540
+Thấy chưa, tôi đã bảo cái này vui lắm mà.
+
+99
+00:06:37,540 --> 00:06:38,705
+Tôi đùa đấy.
+
+100
+00:06:38,705 --> 00:06:42,960
+Đến giờ chúng ta đã nói về lớp,
+nó là một khuôn mẫu.
+
+101
+00:06:42,960 --> 00:06:46,950
+Nhắc lại một tí, phương thức hoặc thông điệp
+là đoạn code được viết ở đây.
+
+102
+00:06:46,950 --> 00:06:50,080
+Ngoài ra còn có trường và thuộc tính,
+chính là những dữ liệu trong này.
+
+103
+00:06:50,080 --> 00:06:54,080
+Và một thực thể của đối tượng
+là khi bạn dùng lớp
+
+104
+00:06:54,080 --> 00:06:55,460
+để tạo một đối tượng.
+
+105
+00:06:55,460 --> 00:06:57,070
+Đó là một thực thể cụ thể của một lớp.
+
+106
+00:06:58,460 --> 00:07:01,080
+Nhìn lại những gì đang làm,
+
+107
+00:07:01,080 --> 00:07:05,350
+ta thấy thực chất ta đang tạo ra
+các kiểu biến mới, đúng không nào?
+
+108
+00:07:05,350 --> 00:07:09,060
+Ta đã có số nguyên, số thực, chuỗi ký tự,
+
+109
+00:07:09,060 --> 00:07:10,920
+boolean, v.v.
+
+110
+00:07:10,920 --> 00:07:14,690
+Nhưng với lớp, ta tạo ra một kiểu biến mới.
+
+111
+00:07:14,690 --> 00:07:16,830
+Hãy nhớ rằng khi ta tạo một list
+
+112
+00:07:16,830 --> 00:07:21,260
+và dùng lệnh type để xác định
+kiểu dữ liệu, nó hiện ra là một list.
+
+113
+00:07:21,260 --> 00:07:24,140
+Còn lệnh dir thì cho ta biết
+
+114
+00:07:24,140 --> 00:07:26,230
+các tính năng của kiểu dữ liệu này.
+
+115
+00:07:26,230 --> 00:07:29,850
+Có một từ để gọi cái này.
+
+116
+00:07:29,850 --> 00:07:33,980
+Những thứ trong list như là extend,
+count, pop, remove, reverse, sort
+
+117
+00:07:33,980 --> 00:07:35,380
+là các phương thức.
+
+118
+00:07:37,770 --> 00:07:41,590
+List là một lớp đã được xây dựng từ trước.
+
+119
+00:07:41,590 --> 00:07:46,940
+x là một đối tượng lấy từ lớp đó.
+Khi ta hỏi x là kiểu dữ liệu gì,
+
+120
+00:07:46,940 --> 00:07:48,420
+chương trình trả lời nó là đối tượng list.
+
+121
+00:07:48,420 --> 00:07:52,330
+Còn khi chúng ta gọi dir(x) nghĩa là
+x có khả năng làm những gì?
+
+122
+00:07:52,330 --> 00:07:54,700
+Và chúng ta thấy tất cả các phương thức
+
+123
+00:07:54,700 --> 00:07:58,220
+Append, index, insert được
+gọi là những phương thức.
+
+124
+00:07:58,220 --> 00:08:00,660
+Và chúng ta vẫn thường dùng đến chúng.
+
+125
+00:08:02,030 --> 00:08:09,440
+Vậy trước giờ ta vẫn dùng dir và type
+với các lớp và thực thể.
+
+126
+00:08:09,440 --> 00:08:12,430
+Hãy nhớ khi ta dùng dir với một chuỗi,
+
+127
+00:08:12,430 --> 00:08:16,960
+ta tạo một đối tượng chuỗi mới,
+gán nó vào biến y.
+
+128
+00:08:16,960 --> 00:08:18,220
+Đấy là phiên bản đầy đủ của nó.
+
+129
+00:08:18,220 --> 00:08:19,210
+Rồi ta hỏi trong đó có gì?
+
+130
+00:08:19,210 --> 00:08:23,760
+À, ta có rindex, split, expandtabs, v.v.
+
+131
+00:08:23,760 --> 00:08:26,670
+Ta có tất cả những phương thức này.
+
+132
+00:08:29,480 --> 00:08:33,513
+Trên này cũng là các phương thức,
+chúng có tên đặc biệt để
+
+133
+00:08:33,513 --> 00:08:37,984
+hỗ trợ so sánh lớn hơn,
+hỗ trợ toán tử so sánh lớn hơn.
+
+134
+00:08:37,984 --> 00:08:42,944
+Và __lt__ được gọi ra khi
+
+135
+00:08:42,944 --> 00:08:48,700
+ta có cú pháp dạng như x < y
+mà đây là các chuỗi ký tự.
+
+136
+00:08:49,860 --> 00:08:52,460
+Nhưng bạn không cần biết về nó.
+
+137
+00:08:52,460 --> 00:08:56,010
+rindex hay isupper cũng là những
+phương thức gọi ra để hoàn thành các thao tác.
+
+138
+00:08:56,010 --> 00:09:00,000
+Vậy tất cả các chuỗi đều có
+các phương thức như vậy.
+
+139
+00:09:01,140 --> 00:09:03,580
+Giờ hãy nhìn lại thứ ta vừa khởi tạo.
+
+140
+00:09:03,580 --> 00:09:05,930
+Chúng ta tạo ra một lớp PartyAnimal.
+
+141
+00:09:05,930 --> 00:09:08,930
+Python đọc đoạn này và tạo ra một khuôn mẫu
+
+142
+00:09:08,930 --> 00:09:12,520
+tên là PartyAnimal, có dạng PartyAnimal.
+
+143
+00:09:12,520 --> 00:09:16,570
+Trong đó có một đoạn code và một biến.
+
+144
+00:09:16,570 --> 00:09:19,460
+Rồi chúng ta tạo ra một thực thể
+của nó và gán thực thể này
+
+145
+00:09:19,460 --> 00:09:24,640
+vào biến 'an'. Bây giờ chúng ta hỏi
+'an' là kiểu dữ liệu gì?
+
+146
+00:09:24,640 --> 00:09:25,160
+In kiểu dữ liệu của nó ra.
+
+147
+00:09:25,160 --> 00:09:28,340
+Sau đó dir sẽ in tất cả các phương thức.
+
+148
+00:09:29,410 --> 00:09:32,160
+Lệnh type cho biết nó là instance,
+
+149
+00:09:32,160 --> 00:09:36,380
+tức là một thực thể của một đối tượng
+hoặc của một lớp.
+
+150
+00:09:36,380 --> 00:09:40,007
+dir cho thấy ta có thể gọi các
+phương thức dựng sẵn __doc__ và __module__.
+
+151
+00:09:40,007 --> 00:09:43,080
+party ở đây là phương thức ta đã tạo.
+
+152
+00:09:43,080 --> 00:09:49,230
+x là biến x ta tạo. Vậy là
+Python biết các hàm và
+
+153
+00:09:49,230 --> 00:09:53,295
+thuộc tính nằm trong lớp mà ta tạo ra.
+
+154
+00:09:53,295 --> 00:09:56,715
+OK. Về cơ bản chúng ta đã đi qua cú pháp,
+
+155
+00:09:56,715 --> 00:09:59,799
+khái niệm self là bí danh của thực thể,
+
+156
+00:09:59,799 --> 00:10:04,184
+và ta sẽ tiếp tục đi sâu hơn ở bài sau.

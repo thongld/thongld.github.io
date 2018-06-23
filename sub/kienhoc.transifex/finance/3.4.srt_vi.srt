@@ -1,0 +1,612 @@
+1
+00:00:04,640 --> 00:00:11,180
+narcissusdale 03/08/16
+https://youtu.be/C9R3maDPt8g
+Chào mừng các bạn. Ta đang làm bài tập ứng dụng
+và tôi gọi chúng là các bài toán lớn
+
+2
+00:00:11,180 --> 00:00:17,220
+Chúng là những bài toán lớn trong phạm vi ứng dụng này, đúng không? Tôi muốn các bạn biết rằng chúng không quá lớn
+
+3
+00:00:17,230 --> 00:00:22,210
+vì ta ngày càng tiến bộ, các bài toán có lời văn trở nên ngày càng phức tạp hơn
+
+4
+00:00:22,210 --> 00:00:29,850
+Bài đầu tiên ta đã thực hiện rất chi tiết và 
+tôi hy vọng ta cũng làm bài này thật chi tiết
+
+5
+00:00:29,850 --> 00:00:35,420
+Hai bài tiếp theo tôi sẽ để các bạn tự làm nhiều hơn 
+và tôi sẽ hướng dẫn các bạn, nhưng 2 bài đầu tiên
+
+6
+00:00:35,420 --> 00:00:41,879
+có độ phức tạp cao so với trình độ này.
+Trên màn hình, 
+
+7
+00:00:41,879 --> 00:00:45,89
+các bạn sẽ nhìn thấy bài toán và
+tôi sẽ đọc cùng các bạn 1 cách chậm rãi
+
+8
+00:00:45,90 --> 00:00:50,690
+Học phí đại học đã đang tăng 2.5% mỗi năm
+
+9
+00:00:50,690 --> 00:00:56,290
+đây là dấu hiệu tiêu biểu cho thấy lạm phát đang xảy ra, ít ra là ở Hoa Kỳ,
+
+10
+00:00:56,290 --> 00:01:03,710
+và tôi chắc chắn là ở những nơi khác nữa, thật không may thay vì học phí tăng sẽ không có lợi cho nhiều gia đình, đúng không?
+
+11
+00:01:03,710 --> 00:01:08,869
+Hiện nay, mức học phí trung bình của 1 trường đại học công lập là $10,000
+
+12
+00:01:08,869 --> 00:01:14,930
+Đại học công lập nghĩa là 1 trường đại học dành cho sinh viên trong bang của họ ở Mỹ
+
+13
+00:01:14,930 --> 00:01:19,119
+tôi có sử dụng nhiều ví dụ về Mỹ nhưng
+tôi chắc rằng ở các nơi khác cũng có mô hình tương tự
+
+14
+00:01:19,119 --> 00:01:24,899
+5 năm nữa, con gái của Emilia là Jessica sẽ học đại học 
+
+15
+00:01:24,899 --> 00:01:28,679
+Vấn đề phức tạp đầu tiên là tôi đã đưa các bạn đến tương lai
+và đó là lý do tại sao tôi liên tục quảng cáo
+
+16
+00:01:28,679 --> 00:01:34,539
+các bạn xem phim Ma trận, và nếu hiểu được phim
+các bạn sẽ hiểu được Tài chính. vậy là 5 năm tới
+
+17
+00:01:34,539 --> 00:01:41,110
+Hồ sơ tiết kiệm của Emilia có mức lãi suất 5% mỗi năm. Emilia, người mẹ
+
+18
+00:01:41,110 --> 00:01:47,390
+đã tiết kiệm tiền cho Jessica đi học đại học
+
+19
+00:01:47,390 --> 00:01:52,610
+Hiện nay Emilia cần để dành bao nhiêu tiền để 
+chi trả cho 4 năm học phí đại học của Jessica?
+
+20
+00:01:52,610 --> 00:01:58,489
+Tình huống bài toán có lời văn được viết lên trong bối cảnh
+
+21
+00:01:58,489 --> 00:02:04,330
+cách học của chúng ta hiện nay là
+chúng có thể khiến thế giới thực tế hơn nhiều
+
+22
+00:02:04,330 --> 00:02:08,929
+Có thể có người sẽ cảm thấy mơ hồ. Một phần lý do
+tôi giải bài toán này là 
+
+23
+00:02:08,929 --> 00:02:16,80
+để làm rõ xem lời văn trong bài toán được hiểu ra sao trên thực tế
+
+24
+00:02:16,80 --> 00:02:20,709
+Trên thực tế, mọi thứ có thể đơn giản hơn theo một cách nào đó, đúng không?
+
+25
+00:02:20,709 --> 00:02:24,400
+Vì bạn biết rõ khi nào bạn sẽ để dành tiền, để làm gì
+
+26
+00:02:24,400 --> 00:02:30,790
+vân vân. Trước tiên cho phép tôi làm việc mà
+tôi thường khuyên mọi người làm,
+
+27
+00:02:30,790 --> 00:02:37,70
+đó là vẽ trục thời gian và việc đó thực sự hữu ích. 
+Tôi sẽ triển khai phần này thật chậm
+
+28
+00:02:37,70 --> 00:02:50,369
+Ta bắt đầu ở mốc thời gian 0, chính là hiện tại 
+rồi tiếp tục tiến lên mốc thời gian 1, 2
+
+29
+00:02:50,369 --> 00:02:56,649
+Mốc thời gian tiếp theo tôi sẽ ghi là 5
+Lý do tôi ghi 5 là vì
+
+30
+00:02:56,649 --> 00:03:01,260
+5 năm kể từ giờ sẽ là khi Emilia đi học đại học, đúng không?
+
+31
+00:03:01,269 --> 00:03:09,729
+Đó là lúc phải trả học phí lần đầu. Sau đó là 6,7,8
+
+32
+00:03:09,729 --> 00:03:12,580
+Một điểm thú vị khác về học phí
+
+33
+00:03:12,580 --> 00:03:17,879
+và bạn cũng sẽ gặp ở bài toán sau
+hay tôi sẽ gọi nó là khuynh hướng đầu tư 
+
+34
+00:03:17,879 --> 00:03:24,298
+một năm trước khi dòng tiền xảy ra, ví dụ,
+
+35
+00:03:24,299 --> 00:03:29,599
+khi bạn thành lập 1 công ty, bạn có xu hướng chi tiền mua sắm thiết bị và đồ đạc tương tự
+
+36
+00:03:29,599 --> 00:03:34,599
+ trước khi bạn thực sự kinh doanh, đúng không?
+Đây là bản năng quái thú, vậy trong trường hợp này
+
+37
+00:03:34,599 --> 00:03:41,668
+bạn sẽ đóng học phí vào các năm 5,6,7, và 8
+
+38
+00:03:41,680 --> 00:03:47,60
+và thông thường là đóng vào đầu các năm học, đúng không?
+Đó là bản chất vấn đề
+
+39
+00:03:47,60 --> 00:03:51,640
+Tôi chỉ đang nhấn mạnh bức tranh thế giới thực thôi, được chứ?
+Cách giải bài toán này là
+
+40
+00:03:51,640 --> 00:03:58,700
+đầu tiên cần nhận ra những yếu tố quan trọng, ở đây
+
+41
+00:03:58,709 --> 00:04:07,310
+và sau đó bạn có rồi dòng tiền ở đây, ở đây và đây nữa.
+Điển hình là những số này sẽ là số âm, đúng chưa nào?
+
+42
+00:04:07,310 --> 00:04:12,599
+Những số âm ở đây chính là học phí
+
+43
+00:04:12,599 --> 00:04:17,238
+nhưng trọng tâm bài toán ta đang cố giải nằm ở đây.
+Điều đầu tiên bạn phải nhận ra là
+
+44
+00:04:17,238 --> 00:04:23,18
+có 1 khoảng trống 5 năm 
+và làm sao để giải quyết, đúng không?
+
+45
+00:04:23,20 --> 00:04:28,198
+Bạn nên nhận thức được những điều như vậy
+Bước đầu tiên để giải bài toán này là
+
+46
+00:04:28,199 --> 00:04:32,460
+vẽ trục thời gian và tôi sẽ
+nhấn mạnh 1 số điểm khi giải bài này
+
+47
+00:04:32,460 --> 00:04:37,969
+vì tôi sẽ làm giống như trong Excel
+mà không thực sự dùng Excel timel
+
+48
+00:04:37,969 --> 00:04:41,599
+để các bạn có thể mở Excel và làm theo những gì tôi nói
+như vậy sẽ rất có ích
+
+49
+00:04:41,599 --> 00:04:47,349
+Các bạn có cả 1 cuốn sổ tay về cách thực hành Excel
+và mục đích của tôi là khiến các bạn dùng Excel
+
+50
+00:04:47,349 --> 00:04:53,409
+nhưng không phải chỉ để thực hành
+Đầu tiên cần hiểu vấn đề là gì
+
+51
+00:04:53,410 --> 00:05:01,10
+Câu hỏi là: thứ tôi cần biết và có thể biết là số tiền học phí
+
+52
+00:05:01,10 --> 00:05:04,650
+tôi sẽ phải đóng và vào năm nào trong tương lai?
+
+53
+00:05:04,650 --> 00:05:09,549
+Vấn đề này khá hóc búa vì tiền học phí thay đổi hàng năm
+
+54
+00:05:09,550 --> 00:05:15,90
+do lạm phát và thực tế đó khiến cho bài toán này
+
+55
+00:05:15,90 --> 00:05:22,450
+quá phức tạp so với trình độ của ta. Ta hãy tiếp tục, chia nhỏ vấn đề,
+
+56
+00:05:22,450 --> 00:05:42,200
+sử dụng các công cụ tài chính để giải quyết từng phần. Ta hãy bắt đầu.
+Tôi sẽ gọi đây là  A, B, C, D, E, F, G, H, I, được chưa?
+
+57
+00:05:42,200 --> 00:05:47,20
+Tôi sẽ viết cả ra, và nếu bạn để ý,
+có bao nhiêu chữ cái?
+
+58
+00:05:47,20 --> 00:05:54,700
+1,2,3,4,5,6,7,8,9. Hãy mở bảng tính và
+bạn sẽ thấy có sẵn trục thời gian tự nhiên
+
+59
+00:05:54,710 --> 00:06:04,250
+mà Excel cung cấp cho bạn, ok?
+Giờ tôi sẽ làm gì ở đây? Tôi sẽ viết 10,000
+
+60
+00:06:04,250 --> 00:06:15,180
+là học phí hiện nay, cũng là học phí tại mốc 0
+Đó là dòng thời gian tự nhiên
+
+61
+00:06:15,180 --> 00:06:24,160
+1,2,3,4,5,6,7,8 
+
+62
+00:06:24,160 --> 00:06:29,260
+Tôi xin lỗi vì giải bài khá chậm nhưng tôi nghĩ rằng
+một khi các bạn đã hiểu ví dụ này thì nó sẽ rất hữu ích khi làm mọi thứ khác
+
+63
+00:06:29,260 --> 00:06:34,680
+Dòng tiền ở thời điểm này, học phí sẽ là bao nhiêu?
+
+64
+00:06:34,680 --> 00:06:44,620
+Khá là đơn giản, tôi sẽ viết luôn ra. Sẽ là 10,250. Tôi đã biết trước rồi, vậy làm sao tôi lại biết?
+
+65
+00:06:44,620 --> 00:06:54,700
+Vì tôi sẽ lấy 10,000 nhân với 1.025. Các bạn có thể thực hiện phép tính này trên Excel
+
+66
+00:06:54,710 --> 00:07:04,700
+một cách rất đơn giản, bằng cách lấy mục A nhân với 1.025 để được mục B
+và nếu tiếp tục làm vậy
+
+67
+00:07:04,700 --> 00:07:11,140
+bạn sẽ tính ra số ở mỗi hàng nhưng
+đâu là con số tôi thực sự quan tâm?
+
+68
+00:07:11,140 --> 00:07:15,950
+Tôi thực sự hứng thú và sẽ viết con số đó ra
+
+69
+00:07:15,950 --> 00:07:29,140
+11314.08. Đó là con số đầu tiên tôi thực sự quan tâm
+Làm sao tôi biết điều đó?
+
+70
+00:07:29,140 --> 00:07:36,560
+Vì nó ở cột số 5 tương ứng với năm thứ 5
+và làm sao tôi tính ra con số đó?
+
+71
+00:07:36,560 --> 00:07:41,610
+Hãy chú ý những gì tôi làm ở trên đầu,
+nếu đây là con số tương ứng ở cột 1, cột 2
+
+72
+00:07:41,610 --> 00:07:48,830
+cột 3, tôi chỉ việc tiếp tục thay số, đây là con số tương ứng ở cột 4 và cột 5
+
+73
+00:07:48,830 --> 00:07:55,280
+Con số này vừa xinh là Giá trị tương lai 5 năm kể từ bây giờ
+Nhưng giá trị tương lai của cái gì?
+
+74
+00:07:55,280 --> 00:07:59,909
+Các bạn phải thật thận trọng.
+Đó là giá trị tương lai của học phí, 
+
+75
+00:07:59,910 --> 00:08:07,40
+bởi tỷ lệ lạm phát không nhất thiết và hy vọng là không đồng nhất với tỷ suất chiết khấu
+
+76
+00:08:07,40 --> 00:08:12,980
+Tỷ suất chiết khấu trong bài toán của ta là,
+để tôi viết ra, là 5%
+
+77
+00:08:12,980 --> 00:08:18,260
+Đó là 2 thứ khác hẳn nhau, đúng không? 
+
+78
+00:08:18,260 --> 00:08:24,920
+Tỷ suất chiết khấu được cho là bằng tỷ lệ lạm phát cộng thêm, đúng không? Vậy là 113
+
+79
+00:08:24,930 --> 00:08:32,570
+11596.93 
+
+80
+00:08:32,570 --> 00:08:49,60
+11886.86 và 12184.03. Nếu tôi có lầm lẫn,
+hãy tìm ra và sửa cho đúng nhé
+
+81
+00:08:49,60 --> 00:08:54,689
+Hy vọng rằng tôi không lầm lẫn gì, đúng không?
+
+82
+00:08:54,690 --> 00:08:59,850
+Vậy bước đầu tiên là tính ra học phí và dường như 
+có vẻ ổn thoả, vì sao? Vì nó không phải 1 số nguyên
+
+83
+00:08:59,850 --> 00:09:05,150
+Điều quan trọng cần nhận ra là mặc dù
+đến tận năm thứ 5 cô ấy mới đi học đại học
+
+84
+00:09:05,150 --> 00:09:11,500
+lạm phát chẳng chờ đợi cô, đúng không nào?
+Lạm phát vẫn đang diễn ra
+
+85
+00:09:11,500 --> 00:09:17,230
+Xin lỗi, tôi thường cười chính những câu nói đùa của mình
+Giờ ta đã biết được dữ liệu đầu tiên, 
+
+86
+00:09:17,230 --> 00:09:21,880
+phần dữ liệu rất nhỏ đầu tiên là mức học phí 4 năm cần trả
+và hãy nhớ đặc trưng của học phí là phải đóng từ đầu năm, 
+
+87
+00:09:21,880 --> 00:09:28,320
+Dù cho cô ấy đi học đại học các kiểu thì cô ấy cũng sẽ tốt nghiệp vào năm thứ 9 
+
+88
+00:09:28,320 --> 00:09:33,260
+Chỉ là chú ý vậy thôi nhưng học phí sẽ phải đóng vào năm thứ 8
+
+89
+00:09:33,270 --> 00:09:39,949
+Đó là bản chất của vấn đề, ok? Các bạn đã có được con số đầu tiên. Tôi chân thành khuyên các bạn
+
+90
+00:09:39,950 --> 00:09:47,590
+cố đưa tất cả những ô này vào Excel, được chứ?
+Ta đang ở hàng nào rồi?
+
+91
+00:09:47,590 --> 00:09:55,260
+Ta đang ở hàng số 1. Ta có thể ở bất kỳ hàng nào
+Tôi đang đợi các bạn nhập tất cả các ô đó
+
+92
+00:09:55,260 --> 00:10:02,60
+Giờ chuyển sang bước thứ 2,
+Đây là bước thứ nhất
+
+93
+00:10:02,60 --> 00:10:08,540
+Bước thứ 2 là tính giá trị của dòng tiền này.
+
+94
+00:10:08,540 --> 00:10:16,189
+Giờ bản năng tự nhiên là chuyển trực tiếp tới hôm nay, đúng không?
+Nhưng sẽ hợp lý hơn nếu bạn có thể dùng Excel
+
+95
+00:10:16,190 --> 00:10:23,40
+hoặc sử dụng công thức. Dù thủ thuật ở đây là,
+bạn muốn áp dụng công thức PV, đúng không?
+
+96
+00:10:23,40 --> 00:10:27,630
+Nếu bạn dùng công thức PV, khi nào sẽ tính ra 
+giá trị dòng tiền? Bạn sẽ tính ra giá trị
+
+97
+00:10:27,630 --> 00:10:32,880
+ở điểm 4. Sẽ là tại điểm 4, vì hãy nhớ quy ước
+
+98
+00:10:32,880 --> 00:10:39,630
+gắn với tất cả các công thức trừ phi bạn muốn biến đổi chúng
+là dòng tiền đầu tiên xảy ra
+
+99
+00:10:39,630 --> 00:10:43,580
+trước 1 năm hoặc 1 kỳ hạn
+
+100
+00:10:43,580 --> 00:10:48,860
+Nếu dòng tiền xảy ra vào năm 5, 
+công thức sẽ cho kết quả vào thời điểm năm 4
+
+101
+00:10:48,860 --> 00:10:53,000
+Đây là một điều rất quan trọng cần phải nhớ,
+nhưng còn một điều khác các bạn cần biết
+
+102
+00:10:53,000 --> 00:10:59,150
+là nếu bạn dùng hàm PV, bạn sẽ không thể thực hiện điều này
+
+103
+00:10:59,150 --> 00:11:05,850
+và lý do là hàm PV tính đến FV hoặc PMT
+
+104
+00:11:05,850 --> 00:11:11,260
+và bản chất PMT không thể sử dụng ở đây
+vì nó thường được giả định là 1 số cố định
+
+105
+00:11:11,260 --> 00:11:18,540
+Giờ tôi sẽ giới thiệu cho các bạn một hàm khác
+Dùng hàm NPV và tôi tự nhắc nhở mình rằng
+
+106
+00:11:18,540 --> 00:11:25,250
+sẽ tính được giá trị vào năm 4.
+Vì sao? Vì nếu dòng tiền đầu tiên
+
+107
+00:11:25,250 --> 00:11:32,560
+xảy ra vào năm 5, nếu tôi chỉ sử dụng hàm NPV,
+đó là những gì sẽ xảy ra. Giờ tôi viết 
+
+108
+00:11:32,560 --> 00:11:38,930
+=NPV4 tự nhắc nhở bản thân rằng trong Excel sẽ là = NPV
+các bạn lưu ý con số đầu tiên sẽ là
+
+109
+00:11:38,930 --> 00:11:50,150
+lãi suất. Nhập 0.05, được chưa?
+Ta sẽ tìm hiểu N có nghĩa là gì sau
+
+110
+00:11:50,150 --> 00:11:56,130
+nhưng Excel gần như không thể phân biệt PV 
+
+111
+00:11:56,130 --> 00:12:01,70
+và NPV. Nên tôi dùng hàm NPV như 1 cách 
+tính dòng tiền thay đổi theo thời gian
+
+112
+00:12:01,70 --> 00:12:05,890
+Đó là những gì tôi tự nhắc nhở bản thân, được chứ? 0.05. Đây là 1 thủ thuật
+
+113
+00:12:05,890 --> 00:12:19,590
+Con số đầu tiên nằm ở ô nào?
+F1, đúng chưa? Còn con số cuối cùng nằm ở ô nào?
+
+114
+00:12:19,590 --> 00:12:25,420
+Đây là lý do vì sao tôi thích Excel. Excel chỉ cần biết 
+vị trí các con số. Nếu con số đầu tiên
+
+115
+00:12:25,420 --> 00:12:37,780
+nằm ở cột F, hàng 1, thì tôi nhập F1
+và con số cuối cùng F, G, H, I. Tôi đã nhập rồi
+
+116
+00:12:37,780 --> 00:12:41,939
+và kết quả là? Tôi ấn Lợi nhuận
+và tôi sẽ chăm chú nhìn
+
+117
+00:12:41,940 --> 00:12:50,580
+tôi sẽ được 41,586.22,
+
+118
+00:12:50,590 --> 00:12:59,150
+Đúng chưa? Cơ bản đây chính là Giá trị hiện tại
+nhưng vào năm nào? Năm 4, được chưa?
+
+119
+00:12:59,150 --> 00:13:05,680
+Ta đã hoàn thành bước 2, nhưng vẫn còn 1 bước nữa
+Tôi không hỏi các bạn là người mẹ cần có bao nhiêu tiền
+
+120
+00:13:05,680 --> 00:13:12,699
+Emilia cần có tiền gửi trong quỹ tín thác 
+1 năm trước khi con gái cô bắt đầu học đại học
+
+121
+00:13:12,700 --> 00:13:21,590
+Giờ tôi sẽ hỏi các bạn. Bước 3 chính là tính giá trị ở mốc thời gian 0
+
+122
+00:13:21,590 --> 00:13:32,60
+Các bạn có thể tính được giá trị này 1 cách dễ dàng
+= PV, con số đầu tiên bạn nhập ở hàm PV là?
+
+123
+00:13:32,60 --> 00:13:41,260
+Lãi suất 0.05. Giờ  các bạn cần nhập N, và N =4
+
+124
+00:13:41,260 --> 00:13:47,200
+Một lần nữa, hãy ghi nhớ, tôi sẽ giải thích thật chậm rãi. Tại sao lại là 4?
+
+125
+00:13:47,200 --> 00:13:54,840
+Chính vì bản chất cách công thức thường được thiết lập, 
+được chưa? Vậy là 4, nhưng PMT = 0, rồi đến
+
+126
+00:13:54,840 --> 00:14:05,850
+Giá trị tương lai là 41,586.22.
+Điều thú vị ở Excel là
+
+127
+00:14:05,850 --> 00:14:12,100
+nếu con số này nằm ở cột nào đó, 
+bạn chỉ cần nhập tên cột đó thay vì
+
+128
+00:14:12,100 --> 00:14:15,980
+viết cả con số đó ra đây.
+Thành ra, khi bạn gõ Enter
+
+129
+00:14:15,980 --> 00:14:30,160
+bạn sẽ được con số 34,213.09. Xin hãy bớt chút thời gian, dừng video lại
+
+130
+00:14:30,160 --> 00:14:35,420
+tính lại bài toán này. Khi trở lại,
+tôi, tôi sẽ giải bài toán khác nhưng
+
+131
+00:14:35,420 --> 00:14:40,400
+lúc đó tôi sẽ không giải chi tiết nữa.
+Mặt khác, giống như ở bài tập ứng dụng đầu tiên, 
+
+132
+00:14:40,400 --> 00:14:45,199
+tôi muốn làm bài tập ứng dụng này và rút ra tất cả các kiến thức có trong đó
+
+133
+00:14:45,200 --> 00:14:49,40
+Ta sẽ quay lại trong giây lát. Xin hãy xem lại bài.
+

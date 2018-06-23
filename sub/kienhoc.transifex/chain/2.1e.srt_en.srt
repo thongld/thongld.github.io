@@ -1,0 +1,624 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/IYiXqrifdms
+
+1
+00:00:00,500 --> 00:00:02,700
+So what are the key points from this lesson?
+
+2
+00:00:02,700 --> 00:00:04,210
+We covered a lot actually in here.
+
+3
+00:00:04,210 --> 00:00:07,120
+First, we introduced the idea of time series analysis.
+
+4
+00:00:07,120 --> 00:00:08,920
+And all that it is is pattern matching
+
+5
+00:00:08,920 --> 00:00:11,910
+of data that is distributed over time.
+
+6
+00:00:11,910 --> 00:00:13,990
+We looked at five components.
+
+7
+00:00:13,990 --> 00:00:16,360
+We're focused really on the first four.
+
+8
+00:00:16,360 --> 00:00:21,640
+And these were the level, which we used by the letter a;
+
+9
+00:00:21,640 --> 00:00:24,430
+the trend, which is a persistent change in either direction,
+
+10
+00:00:24,430 --> 00:00:27,940
+which we denote by the b; and then some kind
+
+11
+00:00:27,940 --> 00:00:30,070
+of seasonality factor, where this
+
+12
+00:00:30,070 --> 00:00:32,520
+is a known periodic change, whether it's over
+
+13
+00:00:32,520 --> 00:00:36,670
+a day, a week, a year, a month, whatever, and that's
+
+14
+00:00:36,670 --> 00:00:40,380
+donated by the F. And we also mentioned the error term,
+
+15
+00:00:40,380 --> 00:00:44,080
+and that's just the randomness that's left over after we've
+
+16
+00:00:44,080 --> 00:00:46,260
+accounted for these different components.
+
+17
+00:00:46,260 --> 00:00:47,740
+And then you have the cyclical one,
+
+18
+00:00:47,740 --> 00:00:49,770
+which is a business cycle, those kind of things,
+
+19
+00:00:49,770 --> 00:00:51,890
+where you don't know the length of the period.
+
+20
+00:00:51,890 --> 00:00:54,650
+It's not constant and known.
+
+21
+00:00:54,650 --> 00:00:56,560
+We have these four major components
+
+22
+00:00:56,560 --> 00:01:00,080
+we're going to focus on, like I said, cyclical components.
+
+23
+00:01:00,080 --> 00:01:01,600
+It's a different discussion.
+
+24
+00:01:01,600 --> 00:01:03,070
+It's in a different class.
+
+25
+00:01:03,070 --> 00:01:04,879
+So we're going to focus on those four.
+
+26
+00:01:04,879 --> 00:01:07,130
+And we could think about how we combine them.
+
+27
+00:01:07,130 --> 00:01:10,160
+And we can combine them making some assumptions.
+
+28
+00:01:10,160 --> 00:01:12,114
+One is that I only have a level demand.
+
+29
+00:01:12,114 --> 00:01:13,530
+And so my demand is actually going
+
+30
+00:01:13,530 --> 00:01:14,540
+to look something like this.
+
+31
+00:01:14,540 --> 00:01:15,956
+And I could model it, because it's
+
+32
+00:01:15,956 --> 00:01:19,430
+very stable as a level demand, with just some movement
+
+33
+00:01:19,430 --> 00:01:21,340
+around with the error term.
+
+34
+00:01:21,340 --> 00:01:25,262
+Or I can assume a level plus a trend.
+
+35
+00:01:25,262 --> 00:01:26,970
+And that's going to be something actually
+
+36
+00:01:26,970 --> 00:01:29,100
+up here, where I have this level.
+
+37
+00:01:29,100 --> 00:01:30,520
+That's a.
+
+38
+00:01:30,520 --> 00:01:32,380
+And then whatever the trend is.
+
+39
+00:01:32,380 --> 00:01:35,190
+So my data is going to look something like this.
+
+40
+00:01:35,190 --> 00:01:38,370
+Or I might have something where its seasonality is included.
+
+41
+00:01:38,370 --> 00:01:40,870
+And that's where you might have variance around.
+
+42
+00:01:40,870 --> 00:01:43,590
+So you have these observations around.
+
+43
+00:01:43,590 --> 00:01:46,496
+And you're trying to find what the seasonality effect is.
+
+44
+00:01:46,496 --> 00:01:48,870
+So these are three of the models we're going to focus on.
+
+45
+00:01:48,870 --> 00:01:51,036
+And we'll look at one or two other ones in addition.
+
+46
+00:01:51,036 --> 00:01:53,510
+But those are the main ones we're going to focus on.
+
+47
+00:01:53,510 --> 00:01:55,070
+But we introduce those.
+
+48
+00:01:55,070 --> 00:02:00,290
+And then finally, we introduced three models, a way to do this.
+
+49
+00:02:00,290 --> 00:02:04,330
+And they're all assuming level trend, level demand rather.
+
+50
+00:02:04,330 --> 00:02:06,680
+So where all of these three models we did
+
+51
+00:02:06,680 --> 00:02:11,680
+assumed this first type of model that we have stationary demand.
+
+52
+00:02:11,680 --> 00:02:14,420
+So we're focusing on this.
+
+53
+00:02:14,420 --> 00:02:17,344
+So the first one was cumulative.
+
+54
+00:02:17,344 --> 00:02:19,010
+That's the idea that everything matters.
+
+55
+00:02:19,010 --> 00:02:23,410
+So we assume that the forecasted demand made
+
+56
+00:02:23,410 --> 00:02:27,040
+at time t for time t plus 1 is going
+
+57
+00:02:27,040 --> 00:02:30,070
+to be equal to the sum of all the demand from period one
+
+58
+00:02:30,070 --> 00:02:31,740
+up to that period t.
+
+59
+00:02:31,740 --> 00:02:32,860
+That's the cumulative.
+
+60
+00:02:32,860 --> 00:02:35,620
+So I'm saying the forecast for the next period
+
+61
+00:02:35,620 --> 00:02:40,190
+is the average of all the demand up to that point.
+
+62
+00:02:40,190 --> 00:02:42,490
+Then we looked at the other extreme, the naive,
+
+63
+00:02:42,490 --> 00:02:44,300
+where only yesterday matters.
+
+64
+00:02:44,300 --> 00:02:47,230
+And we're saying the forecasted demand made at time t
+
+65
+00:02:47,230 --> 00:02:51,240
+for time t plus 1, for today, for tomorrow
+
+66
+00:02:51,240 --> 00:02:54,780
+is going to be equal to what happened today, xt.
+
+67
+00:02:54,780 --> 00:02:56,630
+And you can see that these are two extremes.
+
+68
+00:02:56,630 --> 00:02:58,540
+Then we went into the moving average, where
+
+69
+00:02:58,540 --> 00:03:01,570
+we can select how much history we want to include,
+
+70
+00:03:01,570 --> 00:03:02,580
+how much matters.
+
+71
+00:03:02,580 --> 00:03:05,330
+And that's that M, M time periods.
+
+72
+00:03:05,330 --> 00:03:10,250
+And so the forecast for demand made at time t4, t plus 1
+
+73
+00:03:10,250 --> 00:03:13,300
+is going to be equal to the average of all
+
+74
+00:03:13,300 --> 00:03:16,490
+the demand over the last M periods.
+
+75
+00:03:16,490 --> 00:03:19,060
+And that's what my forecast is going to be.
+
+76
+00:03:19,060 --> 00:03:22,700
+It's the average over those last M time periods, the most
+
+77
+00:03:22,700 --> 00:03:24,050
+recent.
+
+78
+00:03:24,050 --> 00:03:26,860
+So what are the differences between these models?
+
+79
+00:03:26,860 --> 00:03:29,380
+Well, it's obvious if I look at those
+
+80
+00:03:29,380 --> 00:03:31,255
+that there's a different level of volatility.
+
+81
+00:03:31,255 --> 00:03:34,810
+
+
+82
+00:03:34,810 --> 00:03:39,020
+The naive mile down here is very volatile.
+
+83
+00:03:39,020 --> 00:03:42,940
+And the cumulative one up here is very calm.
+
+84
+00:03:42,940 --> 00:03:46,640
+And the moving average is going to be something in the middle.
+
+85
+00:03:46,640 --> 00:03:52,520
+But I can change it depending on what I pick for my M.
+
+86
+00:03:52,520 --> 00:03:56,260
+But another difference is the amount of data that you need.
+
+87
+00:03:56,260 --> 00:03:59,600
+So if you look at both the naive and the cumulative,
+
+88
+00:03:59,600 --> 00:04:01,860
+how much data do I need to include?
+
+89
+00:04:01,860 --> 00:04:04,690
+Well, I only need to keep one piece of information
+
+90
+00:04:04,690 --> 00:04:07,290
+for each SKU, because for naive, all
+
+91
+00:04:07,290 --> 00:04:10,230
+I need to remember is the last one.
+
+92
+00:04:10,230 --> 00:04:14,070
+For the cumulative, all I need is the new piece,
+
+93
+00:04:14,070 --> 00:04:16,250
+because then I know what my t always is.
+
+94
+00:04:16,250 --> 00:04:19,529
+So I just divide t'th of that, 1/t of it,
+
+95
+00:04:19,529 --> 00:04:23,660
+and add that in, because I can always add that to my average.
+
+96
+00:04:23,660 --> 00:04:25,920
+However, for the moving average, you
+
+97
+00:04:25,920 --> 00:04:28,420
+have to keep M items for each SKU,
+
+98
+00:04:28,420 --> 00:04:33,470
+because let's say I've got these in my last four observations.
+
+99
+00:04:33,470 --> 00:04:35,430
+And now I'm going to this fifth one.
+
+100
+00:04:35,430 --> 00:04:39,050
+I've got to throw this last one out and include this new one.
+
+101
+00:04:39,050 --> 00:04:42,630
+So I need to know the value of that last observation
+
+102
+00:04:42,630 --> 00:04:45,290
+before I can figure out what the moving average is.
+
+103
+00:04:45,290 --> 00:04:49,140
+So the moving average calculation requires more data.
+
+104
+00:04:49,140 --> 00:04:50,720
+And you might think, well, who cares?
+
+105
+00:04:50,720 --> 00:04:51,450
+Data is cheap.
+
+106
+00:04:51,450 --> 00:04:53,090
+It's easy to store stuff.
+
+107
+00:04:53,090 --> 00:04:55,790
+But when you're talking about 100,000 SKUs
+
+108
+00:04:55,790 --> 00:04:59,607
+and I'm storing these at say 2,000 to 3,000 stores
+
+109
+00:04:59,607 --> 00:05:01,690
+and I'm doing this over different periods of time,
+
+110
+00:05:01,690 --> 00:05:02,880
+it adds up.
+
+111
+00:05:02,880 --> 00:05:05,000
+And so you can think about this.
+
+112
+00:05:05,000 --> 00:05:07,800
+The cumulative and the naive take less data.
+
+113
+00:05:07,800 --> 00:05:09,880
+And we'll talk about this more as we go on,
+
+114
+00:05:09,880 --> 00:05:12,730
+because different techniques we'll use will be more or less
+
+115
+00:05:12,730 --> 00:05:15,700
+data intensive.
+
+116
+00:05:15,700 --> 00:05:18,140
+So equally important to what the differences are,
+
+117
+00:05:18,140 --> 00:05:19,680
+let's talk about the similarities
+
+118
+00:05:19,680 --> 00:05:21,471
+between these three models, because they're
+
+119
+00:05:21,471 --> 00:05:23,660
+more similar than you might think.
+
+120
+00:05:23,660 --> 00:05:26,930
+So the first thing is they're all assuming level demand.
+
+121
+00:05:26,930 --> 00:05:29,080
+We all assume stationary demand.
+
+122
+00:05:29,080 --> 00:05:31,030
+So it's looking something like this.
+
+123
+00:05:31,030 --> 00:05:34,047
+So we're all trying to find what that level is.
+
+124
+00:05:34,047 --> 00:05:35,130
+All three of these models.
+
+125
+00:05:35,130 --> 00:05:35,963
+There's no trending.
+
+126
+00:05:35,963 --> 00:05:37,030
+There's no steps.
+
+127
+00:05:37,030 --> 00:05:39,660
+There's no seasonality.
+
+128
+00:05:39,660 --> 00:05:42,620
+Therefore, all of these models lag to some degree.
+
+129
+00:05:42,620 --> 00:05:46,390
+Even the naive one will lag a little bit.
+
+130
+00:05:46,390 --> 00:05:50,160
+So if there's a trend underlying and I use one of these models,
+
+131
+00:05:50,160 --> 00:05:53,590
+I will always lag.
+
+132
+00:05:53,590 --> 00:05:56,190
+The other thing that they do is that they whatever
+
+133
+00:05:56,190 --> 00:05:59,540
+the amount of history that they choose to consider,
+
+134
+00:05:59,540 --> 00:06:02,680
+whether it's all the history, only yesterday,
+
+135
+00:06:02,680 --> 00:06:07,770
+or a certain amount, M, we always use equal weighting.
+
+136
+00:06:07,770 --> 00:06:09,340
+So for naive, there's only one.
+
+137
+00:06:09,340 --> 00:06:11,620
+So it's going to be 100%.
+
+138
+00:06:11,620 --> 00:06:15,510
+For cumulative, if I have 100 observations,
+
+139
+00:06:15,510 --> 00:06:17,910
+each observation counts 1/100.
+
+140
+00:06:17,910 --> 00:06:22,150
+If my M is 4, then each observation counts 1/4.
+
+141
+00:06:22,150 --> 00:06:24,930
+So I'm treating all my history the same.
+
+142
+00:06:24,930 --> 00:06:26,720
+The only difference here is how much
+
+143
+00:06:26,720 --> 00:06:29,475
+history do I actually consider.
+
+144
+00:06:29,475 --> 00:06:31,865
+But how I treat them is the same.
+
+145
+00:06:31,865 --> 00:06:33,460
+It's equal weighting.
+
+146
+00:06:33,460 --> 00:06:36,680
+So my most recent observation matters just as much
+
+147
+00:06:36,680 --> 00:06:38,500
+as my oldest observation that I'm
+
+148
+00:06:38,500 --> 00:06:41,400
+considering, whether it's all the history
+
+149
+00:06:41,400 --> 00:06:46,900
+for cumulative, or just M periods for moving average.
+
+150
+00:06:46,900 --> 00:06:48,242
+So we introduced a lot in here.
+
+151
+00:06:48,242 --> 00:06:49,950
+These are simple models, but they kind of
+
+152
+00:06:49,950 --> 00:06:51,730
+get to the core of a lot of trade offs
+
+153
+00:06:51,730 --> 00:06:53,270
+we make for forecasting.
+
+154
+00:06:53,270 --> 00:06:55,780
+So if you have any questions, comments, suggestions,
+
+155
+00:06:55,780 --> 00:06:57,670
+use the discussion.
+

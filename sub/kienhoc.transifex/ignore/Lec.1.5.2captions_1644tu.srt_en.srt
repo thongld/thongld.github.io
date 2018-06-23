@@ -1,0 +1,567 @@
+1
+00:00:18,550 --> 00:00:24,449
+https://youtu.be/VZSTVqoX3jY
+There is a widely held intuition that if we
+use a well-reasoned, evidence-based approach
+
+2
+00:00:24,449 --> 00:00:29,989
+to making decisions under uncertainty then
+we'll make the right decision most of the
+
+3
+00:00:29,989 --> 00:00:36,600
+time. Sure, we'll make some bad calls but
+the majority of the time we'll get it right.
+
+4
+00:00:36,600 --> 00:00:42,100
+Or will we? It turns out that there are circumstances
+where we can do everything right in making
+
+5
+00:00:42,100 --> 00:00:47,530
+our decision, and still get the decision wrong
+most of the time. I'll provide some real-world
+
+6
+00:00:47,530 --> 00:00:54,309
+illustrations of these circumstances to demonstrate
+that they are surprisingly common.
+
+7
+00:00:54,309 --> 00:00:59,750
+What does any of this have to do with the
+futility of seeking greater certainty? Even
+
+8
+00:00:59,750 --> 00:01:05,440
+in the difficult circumstances I've just mentioned,
+greater certainty would improve our decision
+
+9
+00:01:05,440 --> 00:01:12,160
+making. The catch, as we'll see, is that the
+amount of certainty required to do this is
+
+10
+00:01:12,160 --> 00:01:13,090
+unattainable.
+
+11
+00:01:13,090 --> 00:01:20,090
+Here's an example from law enforcement. Suppose
+you're the commanding officer in a local police
+
+12
+00:01:20,429 --> 00:01:27,429
+jurisdiction, and you have to decide how to
+allocate resources to a missing person case.
+
+13
+00:01:27,440 --> 00:01:33,500
+A worst-case scenario is that the missing
+person ends up as a murder victim. Although
+
+14
+00:01:33,500 --> 00:01:39,640
+police are required to treat all missing persons
+cases seriously, as most do not involve foul
+
+15
+00:01:39,640 --> 00:01:46,140
+play, it would be grossly inefficient to treat
+all missing persons as potential homicides.
+
+16
+00:01:46,140 --> 00:01:50,280
+A large majority of missing persons are found
+safe and well, within a week of their going
+
+17
+00:01:50,280 --> 00:01:55,890
+missing, and almost all of them are found
+within a month. Nevertheless, according to
+
+18
+00:01:55,890 --> 00:02:02,890
+standard procedure, if the missing person
+isn't found within 24 hours , you'll undertake
+
+19
+00:02:02,890 --> 00:02:08,450
+a risk analysis, considering issues such as
+whether the circumstances are suspicious or
+
+20
+00:02:08,450 --> 00:02:15,060
+out of character, or there is evidence that
+a crime may have been committed.
+
+21
+00:02:15,060 --> 00:02:21,110
+What would be your best approach to this risk
+analysis, and how likely would you be to come
+
+22
+00:02:21,110 --> 00:02:28,060
+to the right decision? A landmark British
+study examined 32,705 cases of missing persons
+
+23
+00:02:28,060 --> 00:02:34,650
+in the UK between 2000 and 2002, and determined
+that 0.6 percent were found dead, although
+
+24
+00:02:34,650 --> 00:02:40,350
+not necessary victims of homicide. That's
+a very low percentage, and it turns out to
+
+25
+00:02:40,350 --> 00:02:45,390
+be the source of a major headache for you,
+as the commander responsible for deciding
+
+26
+00:02:45,390 --> 00:02:51,250
+what resources to allocate to your case.
+You have years of experience, wisdom handed
+
+27
+00:02:51,250 --> 00:02:58,250
+down from seasoned investigators who came
+before you, and you've read the relevant literature.
+
+28
+00:02:58,460 --> 00:03:03,950
+You know that where a missing person is found
+to have been a victim of foul play, risk factors
+
+29
+00:03:03,950 --> 00:03:09,810
+include age and sex, involvement in prostitution
+or drug trade, last being seeing in a public
+
+30
+00:03:09,810 --> 00:03:15,660
+place and an absence of a history of suicide
+attempts or mental health problems.
+
+31
+00:03:15,660 --> 00:03:22,160
+So, you're going to make a decision whether
+to allocate more resources to a missing persons
+
+32
+00:03:22,160 --> 00:03:28,680
+case investigation based on some diagnostic
+criteria which I'll call "D". The criteria
+
+33
+00:03:28,680 --> 00:03:34,569
+included in D are all of the indicators that
+the missing person may have died. There are
+
+34
+00:03:34,569 --> 00:03:39,569
+four commonly used indicators of evaluating
+how good D is:
+
+35
+00:03:39,569 --> 00:03:46,230
+Sensitivity, the probability that D was present
+when a missing person was found dead;
+
+36
+00:03:46,230 --> 00:03:53,230
+Specificity, the probability that D was absent
+when a missing person was found alive;
+
+37
+00:03:53,780 --> 00:03:59,630
+Positive Predictive Value, the probability
+that the person was found dead when D was
+
+38
+00:03:59,630 --> 00:04:03,819
+present; and
+Negative Predictive Value, the probability
+
+39
+00:04:03,819 --> 00:04:09,430
+that the person was found alive when D was
+absent.
+
+40
+00:04:09,430 --> 00:04:14,470
+Sensitivity and specificity measure the probability
+of finding that D is present when there is
+
+41
+00:04:14,470 --> 00:04:21,289
+a death but absent when there is no death.
+Predictive value, on the other hand, tells
+
+42
+00:04:21,289 --> 00:04:27,380
+us the probability of making a correct diagnosis
+(death versus no death) based on D.
+
+43
+00:04:27,380 --> 00:04:34,380
+Now, suppose D has a sensitivity of .99 and
+specificity of .99. These levels are far better
+
+44
+00:04:36,430 --> 00:04:42,389
+than can be obtained from the otherwise worthwhile
+predictors identified by the UK study, so
+
+45
+00:04:42,389 --> 00:04:47,930
+we're dealing with an unrealistically high
+level of certainty here. The table in this
+
+46
+00:04:47,930 --> 00:04:54,840
+slide shows how well D would perform in distinguishing
+between cases ending in death and cases not
+
+47
+00:04:54,840 --> 00:05:00,120
+ending in death.
+Because sensitivity is .99, D is absent only
+
+48
+00:05:00,120 --> 00:05:07,120
+in .01 times 198 or just 2 cases involving deaths, and
+correctly present in the remaining 196. Likewise,
+
+49
+00:05:07,990 --> 00:05:14,990
+because specificity is .99, D is present in
+.01 times 32507 or 325 cases that do not involve
+
+50
+00:05:15,479 --> 00:05:21,580
+death. That is, there are 325 missing persons
+with D who will be found alive. But
+
+51
+00:05:21,580 --> 00:05:27,150
+325 is large compared to the number of correctly
+identified deaths (196). So positive predictive
+
+52
+00:05:27,150 --> 00:05:32,550
+value is poor: The probability that the person
+will be found dead when D is present = 196/(196
+
+53
+00:05:32,550 --> 00:05:38,439
++ 325) is just .376. The rate of incorrect positive
+diagnosis, that is, a "false positive", is
+
+54
+00:05:38,439 --> 00:05:45,210
+1 - .376 or .624. If you, as commander, decided
+to allocate more resources to cases where
+
+55
+00:05:45,210 --> 00:05:51,120
+D is present you could expect to be wrong
+about 62% of the time.
+
+56
+00:05:51,120 --> 00:05:55,719
+Can this false positive rate be reduced? An
+obvious and frequently recommended remedy
+
+57
+00:05:55,719 --> 00:05:59,719
+is further investigation into factors that
+may predict the likelihood of a missing person
+
+58
+00:05:59,719 --> 00:06:05,289
+ending up dead and, conditional on death,
+being a homicide victim. These investigations
+
+59
+00:06:05,289 --> 00:06:11,949
+could be combined with sophisticated analysis
+of the kind employed in the UK study, to improve
+
+60
+00:06:11,949 --> 00:06:17,529
+either sensitivity, specificity, or both.
+But how effective can we expect this remedy
+
+61
+00:06:17,529 --> 00:06:22,969
+to be? It turns out that improving sensitivity
+would have only a negligible effect on positive
+
+62
+00:06:22,969 --> 00:06:29,169
+predictive value. What about improving specificity?
+That looks promising initially, until you
+
+63
+00:06:29,169 --> 00:06:33,939
+crunch the numbers. To get to the point where
+positive predictive value was an even-money
+
+64
+00:06:33,939 --> 00:06:40,939
+bet (.5) would require specificity to be .994.
+To move positive predictive value to .9 would
+
+65
+00:06:42,740 --> 00:06:48,909
+require specificity to be .9993. Thus the
+test would have to be incredibly accurate
+
+66
+00:06:48,909 --> 00:06:54,719
+in order to avoid being wrong most of the
+time. These are unachievable standards.
+
+67
+00:06:54,719 --> 00:06:59,240
+Police will inevitably face a considerable
+error-rate in making resource allocation decisions
+
+68
+00:06:59,240 --> 00:07:04,650
+regarding missing persons cases. Of course,
+this does not imply that improving predictions
+
+69
+00:07:04,650 --> 00:07:10,619
+of homicide in missing persons cases is entirely
+futile, but it is futile if we expect such
+
+70
+00:07:10,619 --> 00:07:16,789
+improvements to raise the probability of a
+correct decision to a desirable level. Instead,
+
+71
+00:07:16,789 --> 00:07:23,619
+you, as commander, are very likely to be chastised
+by higher-ups and perhaps the media for "wasting"
+
+72
+00:07:23,619 --> 00:07:28,499
+money and resources on all those cases where
+D was present but the missing person turned
+
+73
+00:07:28,499 --> 00:07:32,210
+up alive and well.
+
+74
+00:07:32,210 --> 00:07:39,059
+The source of our difficulty is that the outcomes
+we want to predict or diagnose occurs at a
+
+75
+00:07:39,059 --> 00:07:45,360
+low rate in the population. The rarer this
+outcome is, the more likely that even with
+
+76
+00:07:45,360 --> 00:07:50,669
+very high sensitivity and specificity rates,
+we will suffer from a high false-positive
+
+77
+00:07:50,669 --> 00:07:52,279
+rate.
+
+78
+00:07:52,279 --> 00:07:58,719
+This kind of problem occurs regularly in preventative
+medical testing. For example pregnant women
+
+79
+00:07:58,719 --> 00:08:04,050
+may wish to test for the possibility that
+their unborn baby has Downs Syndrome. According
+
+80
+00:08:04,050 --> 00:08:10,300
+to an Australian government health assessment
+document released in 2002, when used as a
+
+81
+00:08:10,300 --> 00:08:15,689
+single modality, the standard screening by
+measurement of Nuchal Translucency in the
+
+82
+00:08:15,689 --> 00:08:22,689
+first trimester has a detection rate for Downs
+of approximately 73% to 82%. Additional ultrasound
+
+83
+00:08:24,069 --> 00:08:28,740
+cues can further increase detection rates
+for Down syndrome to around 95%.
+
+84
+00:08:28,740 --> 00:08:35,740
+The table in this slide shows the most optimistic
+scenario according to those figures, i.e.,
+
+85
+00:08:38,529 --> 00:08:45,089
+sensitivity and specificity of 95%. At the
+time, about 12.8 per 10,000 births yielded
+
+86
+00:08:45,089 --> 00:08:50,110
+a baby with Downs, so I've included that rate
+in the table. Downs Syndrome is rare. The
+
+87
+00:08:50,110 --> 00:08:57,040
+result, as you can see, is a positive predictive
+value of just 2.38%. Given a test result that
+
+88
+00:08:57,040 --> 00:09:02,089
+says the baby has Downs, the probability that
+it really does have Downs is about 2.4 chances
+
+89
+00:09:02,089 --> 00:09:07,870
+in 100. If these procedures were applied to
+all pregnant women, there would be many needlessly
+
+90
+00:09:07,870 --> 00:09:14,870
+upset pregnant women and partners--about 97.6%
+of the positive test results would be false.
+
+91
+00:09:15,480 --> 00:09:21,190
+In July 2010 there was a furore over a study
+published in the Journal of the American Medical
+
+92
+00:09:21,190 --> 00:09:28,190
+Association. The study found that of 2176
+participants free of HIV infection who received
+
+93
+00:09:30,430 --> 00:09:37,430
+a vaccine product, 908 tested positive for
+HIV. That's a false positive rate of about
+
+94
+00:09:37,560 --> 00:09:42,839
+41.7%. Now, suppose a successful vaccine is
+developed but it also has this reactivity
+
+95
+00:09:42,839 --> 00:09:48,019
+problem, with about 42% of vaccinated people
+testing positive for HIV. In any country where
+
+96
+00:09:48,019 --> 00:09:52,910
+the rate of HIV infection is low, the combination
+of a large proportion of the population being
+
+97
+00:09:52,910 --> 00:09:58,290
+vaccinated and tested could be a major disaster
+because a large proportion of people would
+
+98
+00:09:58,290 --> 00:10:05,120
+be told they have HIV when they do not. This
+is not to say that an HIV vaccine is a bad
+
+99
+00:10:05,120 --> 00:10:11,160
+idea; the point is that it could play havoc
+with HIV detection.
+
+100
+00:10:11,160 --> 00:10:15,170
+The chief difference between the medical preventative
+testing quandary and the police commander's
+
+101
+00:10:15,170 --> 00:10:21,629
+problem is that the negative consequences
+of the wrong diagnosis fall on the patient
+
+102
+00:10:21,629 --> 00:10:27,170
+instead of the decision maker. Yet this issue
+is seldom aired in public debates regarding
+
+103
+00:10:27,170 --> 00:10:32,980
+medical testing. Perhaps understandably, the
+bulk of medical research effort in this domain
+
+104
+00:10:32,980 --> 00:10:39,540
+goes into devising more accurate tests. But
+hang on: In the Downs test scenario, even
+
+105
+00:10:39,540 --> 00:10:46,540
+with a sensitivity rate of 100% the specificity rate
+would have to be 99.87% to raise the positive
+
+106
+00:10:47,459 --> 00:10:53,339
+predictive value to a mere 50%. And for a
+positive predictive value of 90%? Sensitivity
+
+107
+00:10:53,339 --> 00:11:00,339
+would have to be about 99.99%, a crazily unrealistic
+target. Realistically, the tests will never
+
+108
+00:11:00,610 --> 00:11:06,569
+be accurate enough to avoid the problem posed
+by low positive predictive values for rare
+
+109
+00:11:06,569 --> 00:11:07,850
+disorders.
+
+110
+00:11:07,850 --> 00:11:12,819
+What can a decision maker do? The final point
+to all this is that in settings where you're
+
+111
+00:11:12,819 --> 00:11:18,579
+doomed to a high decisional error-rate despite
+using the best available methods, it may be
+
+112
+00:11:18,579 --> 00:11:24,000
+better to direct your energies toward handling
+the flak instead of persisting in a futile
+
+113
+00:11:24,000 --> 00:11:30,050
+quest for unattainably accurate predictors
+or diagnostic cues. Greater certainty won't
+
+114
+00:11:30,050 --> 00:11:34,699
+help when the required degree of certainty
+simply is out of reach.
+

@@ -1,0 +1,337 @@
+0
+00:00:00,000 --> 00:00:00,001
+
+
+
+1
+00:00:05,610 --> 00:00:08,259
+Rất vui được gặp lại và chào mừng các bạn quay trở lại với khóa học "Quản trị vận hành".
+
+2
+00:00:08,259 --> 00:00:11,990
+Trong phần hôm nay, ta tiếp tục nói về vấn đề nêu ra trong
+
+3
+00:00:11,990 --> 00:00:12,870
+bài trước
+
+4
+00:00:12,870 --> 00:00:16,399
+về công ty giặt là LRDR
+
+5
+00:00:16,399 --> 00:00:20,670
+và trong bài này, thay vì cố gắng xác định liệu ta có thể đạt được
+
+6
+00:00:20,670 --> 00:00:24,368
+một mức công suất nhất định, ta sẽ tìm hiểu xem liệu có bao nhiêu 
+
+7
+00:00:24,368 --> 00:00:28,410
+nguồn lực cần thiết để đạt được công suất đó.
+
+8
+00:00:28,410 --> 00:00:34,439
+Có một chút khác biệt so với bài trước. Nào hãy bắt đầu. Nếu bạn còn nhớ, công ty
+
+9
+00:00:34,439 --> 00:00:37,200
+giặt ủi LRDR cung cấp dịch vụ giặt ủi
+
+10
+00:00:37,200 --> 00:00:41,640
+cho các doanh nghiệp mà nhân viên của họ mặc đồng phục. Xấp xỉ 10% 
+
+11
+00:00:41,640 --> 00:00:42,179
+số đồ giặt 
+
+12
+00:00:42,179 --> 00:00:45,590
+là đồ giặt nặng, còn lại là đồ giặt thường
+
+13
+00:00:45,590 --> 00:00:48,730
+đồ giặt thường tốn 30 phút giặt máy, 80 phút
+
+14
+00:00:48,729 --> 00:00:53,968
+sấy khô. Đồ giặt nặng tốn 45 phút giặt máy và 120 phút 
+
+15
+00:00:53,969 --> 00:00:54,590
+sấy khô. 
+
+16
+00:00:54,590 --> 00:00:59,620
+Công ty có 2 máy giặt và 4 máy sấy. Máy giặt và máy sấy có thể chạy
+
+17
+00:00:59,619 --> 00:01:05,209
+22 tiếng mỗi ngày, 7 ngày trong tuần. Và câu hỏi thường gặp là liệu họ có thể hoàn thành được
+
+18
+00:01:05,210 --> 00:01:07,359
+khối lượng yêu cầu là 500 đơn vị hàng trong 1 tuần. 
+
+19
+00:01:07,359 --> 00:01:10,900
+Khi chúng ta 
+
+20
+00:01:10,900 --> 00:01:14,780
+giải quyết vấn đề trong bài trước, mấu chốt là phải
+
+21
+00:01:14,780 --> 00:01:18,359
+xác định điểm ứ đọng. Điểm ứ đọng
+
+22
+00:01:18,359 --> 00:01:21,810
+là resource pool chậm nhất. Nó 
+
+23
+00:01:21,810 --> 00:01:25,400
+cản trở ta hoàn thành
+
+24
+00:01:25,400 --> 00:01:29,000
+yêu cầu bắt buộc. Trong trường hợp này
+
+25
+00:01:29,000 --> 00:01:32,299
+khi ta nhìn vào nó, ta thấy rằng resource pool 
+
+26
+00:01:32,299 --> 00:01:37,159
+của máy giặt có thể hoàn thành được yêu cầu là 500 đơn vị mỗi tuần.
+
+27
+00:01:37,159 --> 00:01:41,909
+Trên thức tế, nó có thể hoàn thành 586.7 đơn vị hàng mỗi tuần.
+
+28
+00:01:41,909 --> 00:01:45,240
+Nhưng máy sấy chỉ có thể làm được
+
+29
+00:01:45,239 --> 00:01:50,239
+429.8 đơn vị hàng. Vậy công suất máy sấy
+
+30
+00:01:50,239 --> 00:01:54,368
+thấp hơn so với công suất máy giặt. Ta nói rằng
+
+31
+00:01:54,368 --> 00:01:58,390
+đây là điểm ứ đọng cho dù ta có tới 4 cái máy sấy.
+
+32
+00:01:58,390 --> 00:02:03,269
+Lượng hàng có thể hoàn thành trong resource pool đó 
+
+33
+00:02:03,269 --> 00:02:07,989
+thấp hơn so với máy giặt.
+
+34
+00:02:07,989 --> 00:02:13,019
+Vậy điều ta cần làm là xác định cần có bao nhiêu máy sấy
+
+35
+00:02:13,019 --> 00:02:16,620
+để đạt được yêu cầu 500 đơn vị hàng mỗi tuần.
+
+36
+00:02:16,620 --> 00:02:19,930
+Nếu bạn còn nhớ,
+
+37
+00:02:19,930 --> 00:02:24,280
+ta điền vào thông tin được đơn giản hóa để xác định ta cần 
+
+38
+00:02:24,280 --> 00:02:27,469
+bao nhiêu phút cho mỗi đơn vị hàng.
+
+39
+00:02:27,469 --> 00:02:32,080
+Ta sử dụng thời gian trung bình của hàng nặng và hàng thông thường
+
+40
+00:02:32,080 --> 00:02:35,330
+để tìm được thời gian trung bình cho 1 đơn vị hàng. Máy giặt 
+
+41
+00:02:35,330 --> 00:02:38,750
+tốn trung bình 31.5 phút cho một 
+
+42
+00:02:38,750 --> 00:02:44,909
+đơn vị hàng trong khi máy giặt mất 86 phút. Vậy vấn đề tiếp theo cần làm là tìm ra khoảng
+
+43
+00:02:44,909 --> 00:02:46,889
+thời gian cần thiết
+
+44
+00:02:46,889 --> 00:02:53,039
+để hoàn thành 500 đơn vị hàng trong một tuần. Lấy 500 đơn vị hàng
+
+45
+00:02:53,039 --> 00:02:56,590
+nhân với thời gian trung bình cho một đơn vị hàng
+
+46
+00:02:56,590 --> 00:03:00,829
+ta sẽ được khoảng thời gian ta cần. Vậy khoảng thời gian cần thiết
+
+47
+00:03:00,829 --> 00:03:04,069
+bằng thời gian cho 1 đơn vị hàng nhân với 500 đơn vị.
+
+48
+00:03:04,068 --> 00:03:07,268
+Lấy 500 nhân 31.5
+
+49
+00:03:07,269 --> 00:03:13,349
+ta được 15750 phút. Còn đối với máy sấy
+
+50
+00:03:13,349 --> 00:03:17,349
+lấy 86 phút mỗi đơn vị hàng nhân 500 
+
+51
+00:03:17,349 --> 00:03:20,608
+vậy ta cần 43000 phút
+
+52
+00:03:20,609 --> 00:03:24,629
+giặt khô trong một tuần để có thể hoàn thành
+
+53
+00:03:24,629 --> 00:03:27,969
+500 đơn vị hàng. 
+
+54
+00:03:27,969 --> 00:03:32,500
+Bây giờ ta cũng biết khoảng thời gian sẵn có của mỗi đơn vị nguồn lực
+
+55
+00:03:32,500 --> 00:03:36,500
+trong một tuần. Ta có 22 tiếng 
+
+56
+00:03:36,500 --> 00:03:39,560
+mỗi ngày, mỗi tiếng là 60
+
+57
+00:03:39,560 --> 00:03:45,009
+phút hay 1 giờ và có 7 ngày trong tuần. Vậy ta lấy 22 giờ mỗi ngày 
+
+58
+00:03:45,009 --> 00:03:48,759
+nhân với 60 phút mỗi giờ nhân 7 ngày trong tuần.
+
+59
+00:03:48,759 --> 00:03:53,789
+Vậy một máy giặt có thể làm 9240 phút.
+
+60
+00:03:53,789 --> 00:03:58,889
+Một máy sấy cũng có thể làm trong 9240 phút. 
+
+61
+00:03:58,889 --> 00:04:02,689
+Vậy làm thế nào để xác định số máy cần thiết. 
+
+62
+00:04:02,689 --> 00:04:08,310
+Ta sẽ lấy khoảng thời gian cần thiết cho 500 đơn vị hàng
+
+63
+00:04:08,310 --> 00:04:12,670
+chia cho thời gian hoạt động của
+
+64
+00:04:12,669 --> 00:04:16,929
+mỗi máy và kết quả sẽ cho ta biết số lượng máy ta cần
+
+65
+00:04:16,930 --> 00:04:21,269
+Vậy số lượng máy cần thiết 
+
+66
+00:04:21,269 --> 00:04:24,780
+bằng tổng thời gian cần thiết
+
+67
+00:04:24,779 --> 00:04:28,399
+chia cho tổng thời gian hoạt động
+
+68
+00:04:28,399 --> 00:04:33,788
+của mỗi máy. Vậy ta lấy 15750
+
+69
+00:04:33,788 --> 00:04:36,819
+chia cho 9240
+
+70
+00:04:36,819 --> 00:04:40,629
+và nó cho kết quả là 1.7 máy giặt.
+
+71
+00:04:40,629 --> 00:04:44,848
+Ta có tới 2 máy vậy tất nhiên ta hoàn thành được yêu cầu.
+
+72
+00:04:44,848 --> 00:04:47,959
+Đối với máy sấy, ta cần
+
+73
+00:04:47,959 --> 00:04:51,989
+43000 phút để hoàn thành 500 đơn vị hàng
+
+74
+00:04:51,990 --> 00:04:55,228
+chia cho 9240 
+
+75
+00:04:55,228 --> 00:05:00,300
+phút hoạt động của mỗi máy, vậy ta cần 4.65 máy.
+
+76
+00:05:00,300 --> 00:05:04,430
+Ta chỉ có 4 điều đó lý giải tại sao máy sấy 
+
+77
+00:05:04,430 --> 00:05:08,160
+là điểm ứ đọng. Ta cần tăng lượng máy sấy
+
+78
+00:05:08,160 --> 00:05:12,680
+để đạt mức công suất yêu cầu là 500
+
+79
+00:05:12,680 --> 00:05:16,650
+đơn vị hàng trong một tuần.
+
+80
+00:05:16,649 --> 00:05:19,959
+Trong bài tới, ta sẽ sử dụng vấn đề 
+
+81
+00:05:19,959 --> 00:05:23,839
+tương tự nhưng tôi sẽ thêm vào giá trị tiền. 
+
+82
+00:05:23,839 --> 00:05:27,779
+Ta sẽ xem xét khả năng lợi nhuận của công ty LRDR.
+
+83
+00:05:27,779 --> 00:05:28,500
+Hẹn gặp lại các bạn. 
+

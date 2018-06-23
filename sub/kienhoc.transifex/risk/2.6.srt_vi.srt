@@ -1,0 +1,390 @@
+0
+00:00:05,089 --> 00:00:08,110
+Giờ chúng ta sẽ tính toán.
+Lượng dữ liệu này được gọi là dữ liệu liên tục,
+
+2
+00:00:11,480 --> 00:00:13,650
+nó cũng có liên hệ với tệp dữ liệu trước.
+
+3
+00:00:13,650 --> 00:00:15,610
+Hãy bắt đầu với phần căn bản nhất.
+
+4
+00:00:16,660 --> 00:00:21,002
+Chúng ta có 5 mức sinh lời, 5 công ty.
+
+5
+00:00:21,002 --> 00:00:24,300
+Chúng ta sẽ làm mức sinh lời trước.
+
+6
+00:00:24,300 --> 00:00:27,190
+Câu hỏi đầu tiên luôn là mức sinh lời trung bình là bao nhiêu?
+
+7
+00:00:28,410 --> 00:00:33,370
+Để có được sự thống nhất 
+
+8
+00:00:33,370 --> 00:00:39,370
+và tránh bị trùng lắp khi tính toán thì chúng ta phải vẽ biểu đồ phân bố ra trước.
+
+9
+00:00:41,610 --> 00:00:44,000
+Đây là của cái thứ nhất, còn đây là của cái thứ hai.
+
+10
+00:00:45,070 --> 00:00:48,820
+Các bạn hãy tập trung vào những đặc điểm chính của hàm phân bố,
+
+11
+00:00:48,820 --> 00:00:50,850
+đừng lan man nếu không chúng ta sẽ bị rối.
+
+12
+00:00:50,850 --> 00:00:52,910
+Giả thiết đầu tiên chúng ta có là gì?
+
+13
+00:00:52,910 --> 00:00:59,190
+Đó là lượng dữ liệu mà chúng ta có mang tính đại diện cho công ty.
+
+14
+00:01:00,610 --> 00:01:02,520
+Có thể không đúng lắm, phải không?
+
+15
+00:01:02,520 --> 00:01:05,090
+Bởi vì chúng ta chỉ chọn có 5 năm thôi.
+
+16
+00:01:05,090 --> 00:01:09,590
+Và nếu các bạn trúng ngay giai đoạn mà tuân theo một xu hướng hay quy luật nào đó thì
+
+17
+00:01:10,630 --> 00:01:12,230
+điều đó không bình thường tí nào.
+
+18
+00:01:12,230 --> 00:01:14,910
+Vì vậy khi chọn thời gian để tính mức sinh lợi trung bình mong đợi của một công ty nào đó,
+
+19
+00:01:14,910 --> 00:01:18,280
+các bạn phải cân nhắc đến thời điểm tốt hay xấu của công ty.
+
+20
+00:01:18,280 --> 00:01:19,100
+Các bạn phải nghĩ đến việc
+
+21
+00:01:20,630 --> 00:01:24,870
+chọn lựa sao cho không chỉ có một khía cạnh của chu trình kinh doanh.
+
+22
+00:01:24,870 --> 00:01:29,660
+Thuật ngữ "mong đợi" ở đây xét về khía cạnh lâu dài trong đầu tư,
+
+23
+00:01:29,660 --> 00:01:33,140
+và nhiều người cũng nghĩ rằng đây là một hình thức đầu tư đúng đăn
+
+24
+00:01:33,140 --> 00:01:36,030
+thay vì phải đi làm để kiếm tiền.
+
+
+25
+00:01:36,030 --> 00:01:38,680
+Nó cũng không có ích lợi gì nhiều, vì bạn có thể mất khá nhiều tiền khi đầu tư.
+
+26
+00:01:39,750 --> 00:01:40,870
+Bắt đầu nào.
+
+27
+00:01:40,870 --> 00:01:44,460
+Số đầu tiên tôi sẽ tính là R1 trung bình.
+
+28
+00:01:46,620 --> 00:01:50,370
+Ở đây tôi có bao nhiêu số liệu.
+
+29
+00:01:50,370 --> 00:01:52,250
+60 con số.
+
+30
+00:01:52,250 --> 00:01:55,090
+Tôi sẽ giả sử như sau:
+
+31
+00:01:55,090 --> 00:01:58,330
+tôi sẽ tính như sau:
+
+32
+00:02:00,490 --> 00:02:04,130
+1 chia N, sau đó nhân với sigma R1i.
+
+33
+00:02:06,470 --> 00:02:07,650
+Vậy giả thiết của tôi là gì?
+
+34
+00:02:09,520 --> 00:02:13,840
+Các bạn không cần phải mất nhiều thời gian để biết rằng tôi đang giả sử
+
+35
+00:02:13,840 --> 00:02:16,910
+xác suất các trường hợp xảy ra là như nhau.
+
+36
+00:02:18,480 --> 00:02:23,760
+Và vì tôi có 60 điểm dữ liệu nên mỗi số n đều mang giá trị từ 1 đến 60.
+
+37
+00:02:23,760 --> 00:02:31,550
+Khi tính toán các bạn cũng có thể dùng phần mềm.
+
+38
+00:02:31,550 --> 00:02:33,300
+Tôi chỉ dùng các biểu tượng đơn giản.
+
+39
+00:02:33,300 --> 00:02:38,100
+Để phân tích dữ liệu thì các bạn có thể sử dụng Excel và
+
+40
+00:02:38,100 --> 00:02:39,240
+các chương trình tương tự, nếu như các bạn có.
+
+41
+00:02:39,240 --> 00:02:41,695
+Hoặc là các bạn có thể thực hiện bằng Bảng tính Google.
+
+42
+00:02:41,695 --> 00:02:42,603
+Tính trung bình trước.
+
+43
+00:02:46,219 --> 00:02:49,510
+Tôi quên mất, các bạn hãy nhập lệnh vào trước.
+
+44
+00:02:49,510 --> 00:02:53,090
+Hãy cho tôi biết, các giá trị mức sinh lời của chỉ số an toàn 1 nằm ở đâu?
+
+45
+00:02:55,680 --> 00:03:03,290
+Nó nằm ở cột A, cột B hay cột C?
+
+46
+00:03:03,290 --> 00:03:04,310
+Ghi chú lại kẻo quên.
+
+47
+00:03:04,310 --> 00:03:08,770
+Tôi sẽ ghi như sau: (C2:C61)
+
+48
+00:03:08,770 --> 00:03:16,590
+Để tôi kiểm tra lại cho chắc, C2:C61.
+
+49
+00:03:16,590 --> 00:03:20,100
+Nếu tôi ghi sai thì các bạn cứ việc sửa lại.
+
+50
+00:03:20,100 --> 00:03:22,020
+Vì các bạn cũng biết đôi khi tôi cũng hay nhầm.
+
+51
+00:03:22,020 --> 00:03:24,370
+Các bạn có thể đổi cột nếu muốn.
+
+52
+00:03:24,370 --> 00:03:26,150
+ 
+
+53
+00:03:26,150 --> 00:03:27,380
+Cái này,
+
+54
+00:03:27,380 --> 00:03:32,310
+Các bạn không cần viết công thức khi tính toán bằng Excel.
+
+55
+00:03:32,310 --> 00:03:34,280
+Các bạn có thể dùng hàm trung bình.
+
+56
+00:03:34,280 --> 00:03:35,800
+Vậy các bạn cần khai báo gì?
+
+57
+00:03:35,800 --> 00:03:36,840
+Các ô dữ liệu
+
+58
+00:03:36,840 --> 00:03:39,960
+Vậy số ô dữ liệu từ hàng 2 đến hàng 61 là 60 ô.
+
+59
+00:03:39,960 --> 00:03:41,620
+Tại sao tôi lại bắt đầu tại số 1?
+
+60
+00:03:41,620 --> 00:03:44,581
+Vì đó là hàng dùng để ghi tên các đại lượng.
+
+61
+00:03:44,581 --> 00:03:50,344
+Và câu trả lời là 2.18%
+
+62
+00:03:54,113 --> 00:04:03,200
+R2 trung bình bằng 1/N nhân với sigma R2i.
+
+63
+00:04:03,200 --> 00:04:07,800
+Các bạn có thể dùng công thức trực tiếp cũng được, các bạn có thể tính từng bước,
+
+64
+00:04:07,800 --> 00:04:10,860
+nhưng tại sao lại tính một cái đơn giản như thế này mà lại tính từng cái,
+
+65
+00:04:10,860 --> 00:04:16,170
+khi mà Excel có thể làm hết được.
+
+66
+00:04:16,170 --> 00:04:24,565
+Tôi sẽ giả sử cột này là từ D2 đến D61.
+
+67
+00:04:25,800 --> 00:04:29,070
+Nếu tôi viết sai thì các bạn cứ tự sửa lại, nhé?
+
+68
+00:04:29,070 --> 00:04:32,650
+Các bạn phải biết dữ liệu mình cần đang nằm ở ô nào.
+
+69
+00:04:32,650 --> 00:04:34,630
+Điều này rất quan trọng,
+
+70
+00:04:34,630 --> 00:04:38,220
+vì bạn sẽ xác định được vùng dữ liệu mà bạn cần dùng.
+
+71
+00:04:38,220 --> 00:04:44,724
+Đáp án ở đây là 3.25%.
+
+72
+00:04:46,790 --> 00:04:48,262
+Để tôi kiểm tra lại.
+
+73
+00:04:48,262 --> 00:04:48,880
+2.18, 3.2.
+
+74
+00:04:48,880 --> 00:04:51,210
+Vậy các bạn có nhận xét gì?
+
+75
+00:04:51,210 --> 00:04:56,640
+Các bạn có thể thấy rằng mức sinh lời của chỉ số an toàn 2 tốt hơn mức sinh lời của chỉ số an toàn 1.
+
+76
+00:04:56,640 --> 00:04:57,900
+À không, cao hơn chứ.
+
+77
+00:04:59,160 --> 00:05:00,950
+Ghi chú lại.
+
+78
+00:05:00,950 --> 00:05:04,070
+Mức sinh lời trung bình cao hơn, không ai bác bỏ điều đó cả.
+
+79
+00:05:04,070 --> 00:05:08,340
+Đầu tiên, các bạn cần nhớ khoảng thời giản mình đang xét là bao lâu,
+
+80
+00:05:09,510 --> 00:05:11,560
+khoảng thời gian 60 tháng.
+
+81
+00:05:11,560 --> 00:05:16,459
+Và dữ liệu chúng ta có tương ứng là từ năm 2009 đến năm 2013.
+
+82
+00:05:16,459 --> 00:05:20,210
+   
+
+83
+00:05:20,210 --> 00:05:22,710
+Đúng, mức sinh lời cao hơn, nhưng nó có lợi hơn không?
+
+84
+00:05:22,710 --> 00:05:26,080
+Bạn chưa thể trả lời ngay được.
+
+85
+00:05:26,080 --> 00:05:29,813
+Và bạn không thể khẳng định là nó tốt hơn.
+
+86
+00:05:29,813 --> 00:05:33,910
+Tât nhiên mức sinh lời là 3.25 thì tốt hơn so với 2.18, nhưng
+
+87
+00:05:33,910 --> 00:05:37,750
+rủi ro đi kèm với nó sẽ cao hơn.
+
+88
+00:05:37,750 --> 00:05:42,490
+Đó là ý mà tôi muốn truyền đạt, bất kể các bạn phân tích mức sinh lời như thế nào đi nữa.
+
+89
+00:05:42,490 --> 00:05:47,200
+Thông thường các bạn sẽ tính được mức sinh lời và mức sinh lời trung bình,
+
+90
+00:05:47,200 --> 00:05:48,550
+và xuất ra kết quả.
+
+91
+00:05:48,550 --> 00:05:51,780
+Luôn nhớ các khái niệm theo cặp,
+
+92
+00:05:51,780 --> 00:05:57,310
+mức sinh lời với rủi ro, mức sinh lời - rủi ro, mức sinh lời - rủi ro.
+
+93
+00:05:57,310 --> 00:06:00,560
+Chúng ta nghỉ một lát, lát nữa tôi muốn các bạn làm tiếp và
+
+94
+00:06:00,560 --> 00:06:02,460
+tính cho cột 3, 4 và 5.
+
+95
+00:06:03,490 --> 00:06:05,810
+Thời gian để các bạn tính toán
+
+96
+00:06:05,810 --> 00:06:08,790
+chỉ khoảng vài giây thôi.
+
+97
+00:06:08,790 --> 00:06:10,350
+Chào các bạn.
+

@@ -1,0 +1,427 @@
+189
+00:07:56,710 --> 00:07:58,960
+https://youtu.be/G721cooZXgs
+It's really-- I think
+it's very creative.
+
+190
+00:07:58,960 --> 00:08:00,960
+And it's what attracted
+me to being a programmer
+
+191
+00:08:00,960 --> 00:08:01,810
+in the first place.
+
+192
+00:08:01,810 --> 00:08:05,630
+That I could leverage the
+capabilities inside of here,
+
+193
+00:08:05,630 --> 00:08:08,940
+and I could do things, the cool
+things, on behalf of the user.
+
+194
+00:08:08,940 --> 00:08:13,620
+So code, software, a program.
+
+195
+00:08:13,620 --> 00:08:19,530
+So, let's get a non-technical
+example of this.
+
+196
+00:08:19,530 --> 00:08:22,896
+So, I'll have you link out
+to the YouTube for this.
+
+197
+00:08:22,896 --> 00:08:25,010
+This is the Macarena.
+
+198
+00:08:25,010 --> 00:08:30,470
+The Macarena is a song that
+has with it a well known dance
+
+199
+00:08:30,470 --> 00:08:33,970
+that everyone seems to know, or
+either get taught very quickly.
+
+200
+00:08:33,970 --> 00:08:37,289
+So, I'll stop and let you
+will watch the Macarena
+
+201
+00:08:37,289 --> 00:08:38,100
+and then come back.
+
+202
+00:08:38,100 --> 00:08:41,280
+
+203
+00:08:41,280 --> 00:08:42,799
+So welcome back.
+
+204
+00:08:42,799 --> 00:08:45,020
+I hope you enjoyed that.
+
+205
+00:08:45,020 --> 00:08:48,690
+In a sense, what we've
+got there, is a program.
+
+206
+00:08:48,690 --> 00:08:51,220
+A program for human beings.
+
+207
+00:08:51,220 --> 00:08:53,800
+And maybe you learned that
+the club or something and they
+
+208
+00:08:53,800 --> 00:08:55,380
+told you what to do next.
+
+209
+00:08:55,380 --> 00:08:58,100
+Well, I can teach you how to
+do the Macarena by writing
+
+210
+00:08:58,100 --> 00:09:00,440
+a simple program right now.
+
+211
+00:09:00,440 --> 00:09:02,850
+So here's my Macarena.
+
+212
+00:09:02,850 --> 00:09:05,150
+While the music plays, it
+means you do it over and over
+
+213
+00:09:05,150 --> 00:09:06,469
+and over again, to the beat.
+
+214
+00:09:06,469 --> 00:09:08,760
+That's kind of like computers
+they do things in a beat;
+
+215
+00:09:08,760 --> 00:09:11,110
+they happen at 3
+billion beats a second,
+
+216
+00:09:11,110 --> 00:09:14,204
+but as it were-- we're going
+to this multiple times.
+
+217
+00:09:14,204 --> 00:09:15,995
+So we have this whole
+group of instructions
+
+218
+00:09:15,995 --> 00:09:18,370
+that we're going to do, right?
+
+219
+00:09:18,370 --> 00:09:20,690
+Left hand out and
+up, right hand out
+
+220
+00:09:20,690 --> 00:09:23,920
+and up, flip left
+hand, flip right hand,
+
+221
+00:09:23,920 --> 00:09:29,880
+left hand to right shoulder,
+right hand to left shoulder,
+
+222
+00:09:29,880 --> 00:09:31,180
+et cetera, et cetera.
+
+223
+00:09:31,180 --> 00:09:36,250
+Now, this particular little
+program has a mistake in it.
+
+224
+00:09:36,250 --> 00:09:37,460
+Actually several.
+
+225
+00:09:37,460 --> 00:09:40,440
+I want you look and see if
+you can find the mistakes
+
+226
+00:09:40,440 --> 00:09:41,065
+in the program.
+
+227
+00:09:41,065 --> 00:09:48,330
+
+228
+00:09:48,330 --> 00:09:49,030
+OK.
+
+229
+00:09:49,030 --> 00:09:52,400
+So here are the places
+that have the mistake.
+
+230
+00:09:52,400 --> 00:09:52,900
+Right?
+
+231
+00:09:52,900 --> 00:09:59,030
+The mistake is right ham
+to the back of the head,
+
+232
+00:09:59,030 --> 00:10:03,040
+and left hand to
+right hit, not hip.
+
+233
+00:10:03,040 --> 00:10:06,340
+Now, if you're in a
+bar and you take a ham
+
+234
+00:10:06,340 --> 00:10:08,250
+and you hit somebody in
+the back of the head,
+
+235
+00:10:08,250 --> 00:10:11,490
+that's not very nice when
+you're dancing to this song.
+
+236
+00:10:11,490 --> 00:10:13,380
+These are what's called bugs.
+
+237
+00:10:13,380 --> 00:10:16,750
+Now, a human reading
+this would say,
+
+238
+00:10:16,750 --> 00:10:20,010
+I think they meant
+to say hand here.
+
+239
+00:10:20,010 --> 00:10:22,500
+But a computer is much
+more literal than people.
+
+240
+00:10:22,500 --> 00:10:25,852
+We'll see a couple of exercises
+where we'll see that people can
+
+241
+00:10:25,852 --> 00:10:28,940
+correct little mistakes
+like this, but computers,
+
+242
+00:10:28,940 --> 00:10:29,940
+they cannot.
+
+243
+00:10:29,940 --> 00:10:30,860
+Right?
+
+244
+00:10:30,860 --> 00:10:32,891
+So we have to fix these bugs.
+
+245
+00:10:32,891 --> 00:10:34,640
+And we have to say,
+right hand and we have
+
+246
+00:10:34,640 --> 00:10:36,260
+to say, hip when we mean hip.
+
+247
+00:10:36,260 --> 00:10:37,400
+So we have to be explicit.
+
+248
+00:10:37,400 --> 00:10:39,960
+Computers do exactly
+what we say they
+
+249
+00:10:39,960 --> 00:10:41,830
+don't do what we mean to do.
+
+250
+00:10:41,830 --> 00:10:43,900
+So let's clear that.
+
+251
+00:10:43,900 --> 00:10:45,690
+Here's another example.
+
+252
+00:10:45,690 --> 00:10:48,010
+OK, let's see how
+this comes out.
+
+253
+00:10:48,010 --> 00:10:53,650
+
+254
+00:10:53,650 --> 00:10:56,590
+You're supposed to count
+the number of times
+
+255
+00:10:56,590 --> 00:11:01,290
+the word "the" appears
+in this sentence.
+
+256
+00:11:01,290 --> 00:11:03,360
+Count it.
+
+257
+00:11:03,360 --> 00:11:04,900
+The word "the", how many times?
+
+258
+00:11:04,900 --> 00:11:15,810
+
+259
+00:11:15,810 --> 00:11:17,816
+OK.
+
+260
+00:11:17,816 --> 00:11:18,440
+It's your turn.
+
+261
+00:11:18,440 --> 00:11:25,660
+
+262
+00:11:25,660 --> 00:11:31,360
+Now here, this is not
+something humans are good at.
+
+263
+00:11:31,360 --> 00:11:33,930
+I moved it around, I played a
+little music, I confused you,
+
+264
+00:11:33,930 --> 00:11:37,045
+I put a picture of a clown car
+in the upper left hand corner,
+
+265
+00:11:37,045 --> 00:11:39,350
+et cetera, et cetera, et cetera.
+
+266
+00:11:39,350 --> 00:11:42,420
+Now it turns out,
+that computers,
+
+267
+00:11:42,420 --> 00:11:46,600
+once we tell them what to do,
+are very good at concentration.
+
+268
+00:11:46,600 --> 00:11:49,900
+It can easily go
+through 30 words
+
+269
+00:11:49,900 --> 00:11:53,020
+and find the most common
+word, or 3 million words
+
+270
+00:11:53,020 --> 00:11:54,350
+and find the most common word.
+
+271
+00:11:54,350 --> 00:11:55,770
+And it'll never make a mistake.
+
+272
+00:11:55,770 --> 00:11:58,780
+But we first have to give
+it a set of instructions.
+
+273
+00:11:58,780 --> 00:12:01,540
+So, I don't want you to
+learn this right now,
+
+274
+00:12:01,540 --> 00:12:03,780
+but this is a Python program.
+
+275
+00:12:03,780 --> 00:12:08,890
+Let's say that I wanted let
+you count words in files, OK?
+
+276
+00:12:08,890 --> 00:12:11,430
+I say, hey, I know
+how to program Python.
+
+277
+00:12:11,430 --> 00:12:13,820
+I'll send you an email and
+I'll send you this program.
+
+278
+00:12:13,820 --> 00:12:17,720
+Just stick it into Python and
+it will count words for you.
+
+279
+00:12:17,720 --> 00:12:19,970
+You got a million words,
+a million lines in a file,
+
+280
+00:12:19,970 --> 00:12:23,990
+you want to find the
+most common word.
+
+281
+00:12:23,990 --> 00:12:27,230
+So I will send you this
+file called words.py.
+
+282
+00:12:27,230 --> 00:12:29,890
+I spent little time, it's
+a friendly gift to you.
+

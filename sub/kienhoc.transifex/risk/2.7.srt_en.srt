@@ -1,0 +1,636 @@
+0
+00:00:05,157 --> 00:00:10,720
+Welcome back, we are talking about the datas I&#39;ve provided you.
+https://youtu.be/wiX7R6JiPh0
+1
+00:00:10,720 --> 00:00:15,888
+And we are now going to look at variances and standard deviations of 1 and 2.
+
+2
+00:00:15,888 --> 00:00:18,520
+And I&#39;ll show you the formulas.
+
+3
+00:00:18,520 --> 00:00:22,470
+And I&#39;ll show you also the Excel way of calculating what is the thing.
+
+4
+00:00:22,470 --> 00:00:24,130
+They&#39;re pretty self-explanatory.
+
+5
+00:00:24,130 --> 00:00:27,730
+If I make a mistake, doesn&#39;t matter.
+
+6
+00:00:27,730 --> 00:00:32,720
+What I&#39;ll do is, the mistake is likely to be I give the long column or whatever.
+
+7
+00:00:32,720 --> 00:00:35,487
+But remember, how many data points, 60?
+
+8
+00:00:35,487 --> 00:00:38,290
+How many securities we are looking at, 1 and 2?
+
+9
+00:00:38,290 --> 00:00:41,010
+Please do 3, 4, 5 in your time.
+
+10
+00:00:41,010 --> 00:00:46,288
+And I will also give you, you have an assignment with rich stuff to do.
+
+11
+00:00:46,288 --> 00:00:53,390
+So sigma 1 square-hat, how will you calculate it?
+
+12
+00:00:53,390 --> 00:00:57,560
+1/N, That&#39;s the probability.
+
+13
+00:00:57,560 --> 00:01:01,152
+You can take it out of the parenthesis because it&#39;s a fixed number.
+
+14
+00:01:01,152 --> 00:01:06,708
+I&#39;ve assumed all data points are equally likely, like a lot of people do.
+
+15
+00:01:06,708 --> 00:01:10,306
+Okay, so now what?
+
+16
+00:01:10,306 --> 00:01:16,468
+(R1i- R1-bar) squared.
+
+17
+00:01:18,237 --> 00:01:26,805
+The function that you&#39;ll use In Excel is variance, VAR.S.
+
+18
+00:01:26,805 --> 00:01:33,230
+And the .S and .P means, .P means population, .S means sample.
+
+19
+00:01:33,230 --> 00:01:36,990
+And because this is a sample and not the entire population,
+
+20
+00:01:36,990 --> 00:01:41,130
+I would suggest using .SN.
+
+21
+00:01:41,130 --> 00:01:46,180
+That tells me that I&#39;ve forgotten to subtract 1, and that&#39;s the difference.
+
+22
+00:01:46,180 --> 00:01:50,920
+And this subtraction is called adjustment for degrees of freedom.
+
+23
+00:01:50,920 --> 00:01:55,001
+And I don&#39;t have the time, or it&#39;s not that important to get into it.
+
+24
+00:01:55,001 --> 00:01:59,030
+Because we&#39;ll use large data sets, so N and N-1 are not very different.
+
+25
+00:01:59,030 --> 00:02:02,900
+But you lose degrees of freedom when you look at your data sets.
+
+26
+00:02:02,900 --> 00:02:07,170
+So you&#39;ve calculated the mean already, and, therefore,
+
+27
+00:02:07,170 --> 00:02:09,510
+it&#39;s called loss of degrees of freedom.
+
+28
+00:02:09,509 --> 00:02:17,351
+And the answer here, I believe, turns out to be, 0.0127.
+
+29
+00:02:18,484 --> 00:02:19,667
+Okay?
+
+30
+00:02:19,667 --> 00:02:26,200
+And I&#39;m going to quickly say, what is the standard deviation?
+
+31
+00:02:26,200 --> 00:02:35,662
+sigma1-hat=0.1125%, okay?
+
+32
+00:02:35,662 --> 00:02:36,270
+Why?
+
+33
+00:02:36,270 --> 00:02:39,957
+Because I&#39;ve done the square root, blah, blah, blah.
+
+34
+00:02:39,957 --> 00:02:42,426
+Remember, returns are in percentages.
+
+35
+00:02:42,426 --> 00:02:49,402
+sigma2-hat squared, I hope I&#39;m not going too fast.
+
+36
+00:02:49,402 --> 00:02:55,983
+Summation (R2i- R2-bar) squared
+
+37
+00:02:55,983 --> 00:03:01,880
+will turn out to be .0102.
+
+38
+00:03:01,880 --> 00:03:07,352
+And the standard deviation sigma2-hat
+
+39
+00:03:07,352 --> 00:03:12,201
+will turn out to be 0.1008%.
+
+40
+00:03:12,201 --> 00:03:19,790
+So we now have variances and standard deviations for both securities 1 and 2.
+
+41
+00:03:19,790 --> 00:03:21,470
+So let me ask you a trick question.
+
+42
+00:03:22,790 --> 00:03:28,082
+If you were to compare these two, And
+
+43
+00:03:28,082 --> 00:03:32,658
+you said, I&#39;m only going to make an investment in 1 or in 2.
+
+44
+00:03:32,658 --> 00:03:35,690
+We&#39;re done, we don&#39;t have worry about anything else.
+
+45
+00:03:35,690 --> 00:03:40,710
+However, also remember that we&#39;ll never do that.
+
+46
+00:03:40,710 --> 00:03:43,762
+Even if there were only two securities available, we are risk-averse.
+
+47
+00:03:43,762 --> 00:03:46,050
+We&#39;ll try to spread our money across them.
+
+48
+00:03:47,610 --> 00:03:49,090
+When will it not matter?
+
+49
+00:03:49,090 --> 00:03:51,460
+You&#39;ll see, when they are perfectly correlated.
+
+50
+00:03:51,460 --> 00:03:53,700
+Remember the example I did in the concocted?
+
+51
+00:03:53,700 --> 00:03:57,420
+If they&#39;re perfectly correlated, the diversification doesn&#39;t help.
+
+52
+00:03:57,420 --> 00:04:00,810
+Spreading money in two things that look different.
+
+53
+00:04:00,810 --> 00:04:05,250
+I mean, they&#39;re called different, but are identical in behavior, there&#39;s not much.
+
+54
+00:04:05,250 --> 00:04:06,440
+They&#39;re the same thing, okay?
+
+55
+00:04:06,440 --> 00:04:09,790
+So that&#39;s another important element to remember.
+
+56
+00:04:09,790 --> 00:04:12,660
+So I&#39;ve calculated sigma1-hat, sigma2-hat.
+
+57
+00:04:12,660 --> 00:04:15,450
+And what I&#39;m going to do is I&#39;m going to keep going because I know
+
+58
+00:04:15,450 --> 00:04:17,030
+I don&#39;t have to stop here.
+
+59
+00:04:17,029 --> 00:04:20,760
+Because they&#39;re already living in a world where they are covariances.
+
+60
+00:04:20,760 --> 00:04:23,720
+One huge caution I&#39;ll give you.
+
+61
+00:04:23,720 --> 00:04:28,080
+Don&#39;t think these are the numbers that will work always, even for
+
+62
+00:04:28,080 --> 00:04:29,150
+these two stocks.
+
+63
+00:04:29,150 --> 00:04:29,990
+Why?
+
+64
+00:04:29,990 --> 00:04:34,455
+Because I repeat that I have picked a period of five years
+
+65
+00:04:34,455 --> 00:04:39,650
+that may not be representative of what happens normally.
+
+66
+00:04:39,650 --> 00:04:44,750
+Especially in times where there has been lot of volatility, okay?
+
+67
+00:04:44,750 --> 00:04:45,890
+So please, remember that.
+
+68
+00:04:45,890 --> 00:04:50,934
+So for example, if you looked at data and the US stock market,
+
+69
+00:04:50,934 --> 00:04:56,078
+that whole data, itself, the average returns are very high.
+
+70
+00:04:56,078 --> 00:05:00,054
+But if you look at stock markets in the world in general over time,
+
+71
+00:05:00,054 --> 00:05:02,453
+the average returns are not that high.
+
+72
+00:05:02,453 --> 00:05:07,790
+So many people believe that it actually is unusual circumstance.
+
+73
+00:05:07,790 --> 00:05:10,422
+The whole history of 80 years worth of data, or
+
+74
+00:05:10,422 --> 00:05:12,650
+90 years worth of data for the US.
+
+75
+00:05:12,650 --> 00:05:16,745
+Because when you&#39;re thinking of the stock market, when you&#39;re thinking averages,
+
+76
+00:05:16,745 --> 00:05:19,840
+when you&#39;re thinking variances, you&#39;re thinking long term.
+
+77
+00:05:20,870 --> 00:05:25,890
+So when you say expected value, it means something much deeper than,
+
+78
+00:05:25,890 --> 00:05:28,950
+it&#39;s just a simple average calculation based on two, three things.
+
+79
+00:05:28,950 --> 00:05:32,450
+That&#39;s the conceptual thing that you have to keep in mind.
+
+80
+00:05:32,450 --> 00:05:34,970
+You&#39;re not just calculating averages for the heck of it.
+
+81
+00:05:34,970 --> 00:05:38,230
+You&#39;re calling them the expected returns.
+
+82
+00:05:38,230 --> 00:05:39,600
+So let&#39;s keep going.
+
+83
+00:05:39,600 --> 00:05:45,220
+And what I&#39;m going to do now is going to calculate the covariance between 1 and 2.
+
+84
+00:05:45,220 --> 00:05:51,220
+And remember, the covariance between 1 and 2 is relatively easy to do.
+
+85
+00:05:51,220 --> 00:05:53,334
+Why? Because it shows variance in
+
+86
+00:05:53,334 --> 00:05:54,547
+a different form.
+
+87
+00:05:54,547 --> 00:05:57,309
+Instead of 1 minus 1-bar square,
+
+88
+00:05:57,309 --> 00:06:02,037
+it&#39;s 1 minus 1-bar, 2 minus 2-bar, and summing them.
+
+89
+00:06:02,037 --> 00:06:04,597
+So here&#39;s the how you&#39;d calculate covariance.
+
+90
+00:06:08,297 --> 00:06:16,190
+Which we also call, Okay, so these are just symbols, used differently.
+
+91
+00:06:16,190 --> 00:06:21,952
+We know that this covariance will be calculated
+
+92
+00:06:21,952 --> 00:06:26,566
+as 1/N and, again, -1, right?
+
+93
+00:06:26,566 --> 00:06:30,862
+Summation (R1i-
+
+94
+00:06:30,862 --> 00:06:38,449
+R1-bar)(R2i- R2-bar).
+
+95
+00:06:38,449 --> 00:06:43,240
+The function you will use is COV,
+
+96
+00:06:43,240 --> 00:06:48,214
+and with an S, okay, for sample.
+
+97
+00:06:48,214 --> 00:06:51,210
+You can do, this but let&#39;s do the number here.
+
+98
+00:06:51,210 --> 00:06:57,735
+It turns out to be 0.0007.
+
+99
+00:06:57,735 --> 00:07:02,070
+So the only thing I can answer when I see this number is the following question.
+
+100
+00:07:02,070 --> 00:07:05,740
+What kind of relationship do securities 1 and 2 have?
+
+101
+00:07:05,740 --> 00:07:06,839
+And what will the answer be?
+
+102
+00:07:07,985 --> 00:07:11,280
+That they have a positive relationship.
+
+103
+00:07:11,280 --> 00:07:15,410
+Always qualify during this 5-year time period.
+
+104
+00:07:16,580 --> 00:07:21,050
+Chances, however, are, as we&#39;ll see later, that the relationships, if you randomly
+
+105
+00:07:21,050 --> 00:07:26,540
+calculate them across two stocks across a lot of time, they&#39;ll tend to be positive.
+
+106
+00:07:26,540 --> 00:07:29,768
+And you&#39;ll see the reason for it as we go along.
+
+107
+00:07:29,768 --> 00:07:31,760
+I don&#39;t mean to keep it a secret.
+
+108
+00:07:31,760 --> 00:07:36,130
+I want you to kind of figure out, why is it saying that?
+
+109
+00:07:36,130 --> 00:07:39,980
+Go scratch that itch if you may, intellectual itch.
+
+110
+00:07:39,980 --> 00:07:41,950
+And try to figure out what&#39;s going on.
+
+111
+00:07:41,950 --> 00:07:43,370
+What&#39;s the problem with covariance?
+
+112
+00:07:43,370 --> 00:07:48,020
+I don&#39;t even know what to make of 0.0007, right?
+
+113
+00:07:48,020 --> 00:07:52,950
+It just doesn&#39;t make, intensity, doesn&#39;t tell you, it doesn&#39;t tell you beta,
+
+114
+00:07:52,950 --> 00:07:55,080
+it doesn&#39;t tell you correlation.
+
+115
+00:07:55,080 --> 00:08:02,160
+So let&#39;s go and calculate the correlation version of it and the beta version of it.
+
+116
+00:08:02,160 --> 00:08:05,170
+Then what I&#39;ll do is I&#39;ll take a pause
+
+117
+00:08:05,170 --> 00:08:08,740
+where you then go calculate different numbers for all of them.
+
+118
+00:08:08,740 --> 00:08:12,390
+Get familiar with the data, and we can then come back.
+
+119
+00:08:12,390 --> 00:08:19,120
+So let&#39;s calculate correlation 1 and 2.
+
+120
+00:08:19,120 --> 00:08:22,120
+And the correlation of 1 and 2 will be what?
+
+121
+00:08:23,930 --> 00:08:29,429
+sigma 1, 2 hat /,
+
+122
+00:08:34,808 --> 00:08:37,610
+Okay, make sense?
+
+123
+00:08:37,610 --> 00:08:41,940
+You can also write this as covariance, standard deviation,
+
+124
+00:08:41,940 --> 00:08:44,090
+standard deviation other symbols.
+
+125
+00:08:44,090 --> 00:08:47,291
+So let me ask you this, do I know this number?
+
+126
+00:08:47,291 --> 00:08:50,124
+The answer is yes,
+
+127
+00:08:50,124 --> 00:08:55,650
+I know this number is 0.0007.
+
+128
+00:08:55,650 --> 00:09:00,768
+Do I know the numbers in the bottom part?
+
+129
+00:09:00,768 --> 00:09:05,804
+sigma1-hat, sigma2-hat, I&#39;m looking here to get the right numbers.
+
+130
+00:09:05,804 --> 00:09:10,457
+0.1125 *, this is
+
+131
+00:09:10,457 --> 00:09:16,381
+multiplied by, 0.1008.
+
+132
+00:09:16,381 --> 00:09:23,956
+And if I&#39;m correct, the answer works out to be 0.062.
+
+133
+00:09:23,956 --> 00:09:30,469
+Can I interpret this in a way that is more meaningful then 0.0007?
+
+134
+00:09:30,469 --> 00:09:31,960
+The answer is yes.
+
+135
+00:09:31,960 --> 00:09:36,480
+So if I asked you, how strongly they correlated?
+
+136
+00:09:36,480 --> 00:09:39,280
+First you&#39;ll say the relationship is positive,
+
+137
+00:09:39,280 --> 00:09:42,500
+which you could have said just by covariances.
+
+138
+00:09:42,500 --> 00:09:46,480
+But then you say, not too strong positive.
+
+139
+00:09:46,480 --> 00:09:47,260
+Why?
+
+140
+00:09:47,260 --> 00:09:50,450
+Because what is the strongest positive it could be?
+
+141
+00:09:50,450 --> 00:09:52,515
+It could have gone up to +.
+
+142
+00:09:54,360 --> 00:09:59,830
+Very unlikely, but so the correlation is fine, but it&#39;s not great.
+
+143
+00:09:59,830 --> 00:10:01,460
+It&#39;s not strongly positive.
+
+144
+00:10:01,460 --> 00:10:04,740
+And I don&#39;t mean it be, it should be strongly positive or not.
+
+145
+00:10:04,740 --> 00:10:06,220
+It&#39;s not a good/bad thing.
+
+146
+00:10:06,220 --> 00:10:08,970
+It&#39;s just, how do you interpret it?
+
+147
+00:10:08,970 --> 00:10:10,124
+Quick question.
+
+148
+00:10:12,957 --> 00:10:14,988
+What will that be?
+
+149
+00:10:14,988 --> 00:10:20,720
+And you should straight up and jump and say, heck, it&#39;ll be the same as this.
+
+150
+00:10:22,600 --> 00:10:25,170
+I had planned to go step on the next one.
+
+151
+00:10:25,170 --> 00:10:29,120
+But let&#39;s take a pause here because I think the beta by itself is
+
+152
+00:10:29,120 --> 00:10:30,090
+an important thing.
+
+153
+00:10:30,090 --> 00:10:32,140
+So I will spend some time on it.
+
+154
+00:10:32,140 --> 00:10:38,600
+But here, what I will recommend you do, do 1-3, 1-4, 1-5, 2-3.
+
+155
+00:10:38,600 --> 00:10:44,042
+Do all the correlations and covariances among themselves, and just practice that.
+
+156
+00:10:44,042 --> 00:10:45,650
+It&#39;s a good, it&#39;s fun, and
+
+157
+00:10:45,650 --> 00:10:49,590
+you have a lot of data to mess around with and play around with.
+
+158
+00:10:49,590 --> 00:10:50,948
+See you in a minute.
+

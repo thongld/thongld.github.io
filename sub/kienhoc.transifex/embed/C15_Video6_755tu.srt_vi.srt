@@ -1,0 +1,402 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/BPLeKETEUIs
+
+1
+00:00:00,000 --> 00:00:02,680
+JONATHAN VALVANO: Next,
+we want to show you
+
+2
+00:00:02,680 --> 00:00:07,050
+another periodic
+interrupt called Timer2.
+
+3
+00:00:07,050 --> 00:00:10,390
+Timer2 is a lot like SysTick.
+
+4
+00:00:10,390 --> 00:00:14,580
+It has, essentially, two registers.
+
+5
+00:00:14,580 --> 00:00:21,230
+One of them is a counter, and
+just like SysTick, it counts down.
+
+6
+00:00:21,230 --> 00:00:29,700
+Another one is a reload value, in our
+particular case it's called T-A-I-L-R,
+
+7
+00:00:29,700 --> 00:00:32,090
+and it's the reload value.
+
+8
+00:00:32,090 --> 00:00:38,130
+Just like SysTick, when this
+counter goes from a one to a zero,
+
+9
+00:00:38,130 --> 00:00:41,960
+it will set the trigger flag.
+
+10
+00:00:41,960 --> 00:00:45,360
+This trigger flag is going to
+cause an interrupt to happen.
+
+11
+00:00:45,360 --> 00:00:48,890
+
+12
+00:00:48,890 --> 00:00:55,710
+Also like SysTick, the value
+we put into the reload value
+
+13
+00:00:55,710 --> 00:01:00,120
+will determine the rate
+at which it interrupts.
+
+14
+00:01:00,120 --> 00:01:04,660
+Different than SysTick is, this
+timer and this reload value,
+
+15
+00:01:04,660 --> 00:01:08,140
+is now a full 32 bits wide.
+
+16
+00:01:08,140 --> 00:01:12,440
+The code shown here on the
+page is the initialization code
+
+17
+00:01:12,440 --> 00:01:15,200
+for this Timer2 periodic interrupt.
+
+18
+00:01:15,200 --> 00:01:19,970
+We're going to pass in the value
+that we want to interrupt at.
+
+19
+00:01:19,970 --> 00:01:23,960
+In our particular case, since
+we're running at 80 MHz,
+
+20
+00:01:23,960 --> 00:01:31,410
+the interrupt rate will be this
+value, period, times 12.5 nanoseconds.
+
+21
+00:01:31,410 --> 00:01:35,500
+Because that's the bus period.
+
+22
+00:01:35,500 --> 00:01:40,390
+Like all modules, we have
+to turn on its clock,
+
+23
+00:01:40,390 --> 00:01:44,960
+and so this is the clock
+bit for the Timer2 register.
+
+24
+00:01:44,960 --> 00:01:48,440
+And after we turn on the
+clock, we will wait a while
+
+25
+00:01:48,440 --> 00:01:50,360
+for the clock to stabilize.
+
+26
+00:01:50,360 --> 00:01:54,080
+I have a couple of global
+variables that I use to debug with.
+
+27
+00:01:54,080 --> 00:01:58,070
+This one will count the number
+of times the interrupt occurs,
+
+28
+00:01:58,070 --> 00:02:04,080
+and this is a semaphore flag
+which gets set every interrupt.
+
+29
+00:02:04,080 --> 00:02:07,780
+The 10 steps used to initialize
+the timer are now shown.
+
+30
+00:02:07,780 --> 00:02:11,860
+We disable the timer
+during set up, we set it up
+
+31
+00:02:11,860 --> 00:02:18,870
+as a periodic interrupt with a 32-bit
+counter, the value of period minus one
+
+32
+00:02:18,870 --> 00:02:23,210
+is stored into the reload value,
+so again, the interrupt rate
+
+33
+00:02:23,210 --> 00:02:28,580
+will be the value, period,
+times 12.5 nanoseconds.
+
+34
+00:02:28,580 --> 00:02:32,730
+We set the resolution to
+run at the bus clock, which
+
+35
+00:02:32,730 --> 00:02:36,530
+is going to be 12.5 nanoseconds.
+
+36
+00:02:36,530 --> 00:02:41,160
+I like to clear the interrupt service
+flag in the ritual, that's step six.
+
+37
+00:02:41,160 --> 00:02:48,190
+We then arm that bit for
+interrupts, we set its priority
+
+38
+00:02:48,190 --> 00:02:54,930
+by setting three bits of
+the priority five register,
+
+39
+00:02:54,930 --> 00:02:58,190
+we enable-- this is
+interrupt 23, and so we
+
+40
+00:02:58,190 --> 00:03:03,150
+will enable interrupt 23 and the
+nested vector interrupt controller.
+
+41
+00:03:03,150 --> 00:03:05,870
+Then after the entire
+thing is initialized,
+
+42
+00:03:05,870 --> 00:03:09,530
+we will then enable Timer2A.
+
+43
+00:03:09,530 --> 00:03:12,450
+If the main program executes
+at interrupt enable,
+
+44
+00:03:12,450 --> 00:03:16,555
+then interrupts at this period
+will occur periodically.
+
+45
+00:03:16,555 --> 00:03:19,970
+RAMESH YERRABALLI: So we saw
+the initialization ritual
+
+46
+00:03:19,970 --> 00:03:23,550
+for the interrupt service
+routine, so we now
+
+47
+00:03:23,550 --> 00:03:28,110
+have interrupts happening on Timer2A.
+
+48
+00:03:28,110 --> 00:03:33,150
+When an interrupt occurs, the
+handler, which is the Timer2A handler,
+
+49
+00:03:33,150 --> 00:03:38,055
+is called, and so we're going to look at
+what we have to do within this handler.
+
+50
+00:03:38,055 --> 00:03:40,690
+JONATHAN VALVANO: All right.
+
+51
+00:03:40,690 --> 00:03:49,310
+So the main thread will
+enable interrupts and then
+
+52
+00:03:49,310 --> 00:03:53,430
+perform some task over and over.
+
+53
+00:03:53,430 --> 00:03:56,250
+
+54
+00:03:56,250 --> 00:04:01,260
+But when the timer goes
+from a one to a zero,
+
+55
+00:04:01,260 --> 00:04:09,030
+it will set a bit in the
+timer raw interrupt status.
+
+56
+00:04:09,030 --> 00:04:13,620
+This is the trigger flag which
+will cause the interrupt to occur.
+
+57
+00:04:13,620 --> 00:04:18,839
+So our handler, then, here,
+will then be executed.
+
+58
+00:04:18,839 --> 00:04:22,900
+Like most interrupts, we have
+to acknowledge that interrupt
+
+59
+00:04:22,900 --> 00:04:26,170
+by clearing the trigger flag.
+
+60
+00:04:26,170 --> 00:04:29,030
+The trigger flag happens
+to be in bit zero,
+
+61
+00:04:29,030 --> 00:04:33,270
+and to clear the
+Timer2A timeout flag, we
+
+62
+00:04:33,270 --> 00:04:37,050
+are going to write a one to
+the interrupt clear register.
+
+63
+00:04:37,050 --> 00:04:42,162
+When I write a one to bit zero, it
+will clear the raw interrupt status bit
+
+64
+00:04:42,162 --> 00:04:46,370
+zero, which is our trigger flag,
+acknowledging the interrupt.
+
+65
+00:04:46,370 --> 00:04:49,440
+Then these two steps are
+the body or the function
+
+66
+00:04:49,440 --> 00:04:52,830
+of what we want to happen in
+the interrupt service routine.
+
+67
+00:04:52,830 --> 00:04:56,700
+In this case, I'm just going to
+increment a counter as a debugging way
+
+68
+00:04:56,700 --> 00:04:58,720
+to say yes, this is running.
+
+69
+00:04:58,720 --> 00:05:04,190
+And then we could use a semaphore
+flag to signal other threads
+
+70
+00:05:04,190 --> 00:05:06,490
+that this interrupt occurs.
+
+71
+00:05:06,490 --> 00:05:09,210
+RAMESH YERRABALLI: So for
+example, the main program
+
+72
+00:05:09,210 --> 00:05:14,620
+could be checking this flag,
+and only when this flag is on,
+
+73
+00:05:14,620 --> 00:05:16,920
+it could perform a certain function.
+
+74
+00:05:16,920 --> 00:05:19,200
+When it's off, it's going
+to skip that function
+
+75
+00:05:19,200 --> 00:05:21,780
+and keep checking this
+flag again and again.
+
+76
+00:05:21,780 --> 00:05:24,510
+JONATHAN VALVANO: Yes.
+
+77
+00:05:24,510 --> 00:05:28,340
+So this is how semaphore works.
+
+78
+00:05:28,340 --> 00:05:37,570
+This semaphore flag here is set
+in the interrupt service routine,
+
+79
+00:05:37,570 --> 00:05:40,770
+and then the main loop
+will look for that flag.
+
+80
+00:05:40,770 --> 00:05:44,810
+If the flag is set, then
+it will clear the flag,
+
+81
+00:05:44,810 --> 00:05:49,650
+perform some function
+associated with the semaphore,
+
+82
+00:05:49,650 --> 00:05:53,890
+and this whole process is
+repeated over and over again
+
+83
+00:05:53,890 --> 00:05:58,190
+So we have two threads, the foreground
+thread and the background thread,
+
+84
+00:05:58,190 --> 00:06:00,730
+connected by a semaphore flag.
+
+85
+00:06:00,730 --> 00:06:01,348

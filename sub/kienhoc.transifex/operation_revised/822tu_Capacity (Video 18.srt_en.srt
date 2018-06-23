@@ -1,0 +1,412 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/5Xmvr_UUqfA
+
+1
+00:00:05,339 --> 00:00:08,240
+hello again and welcome back operations
+management
+
+2
+00:00:08,240 --> 00:00:11,919
+in our last session we're talking about
+process capacity
+
+3
+00:00:11,919 --> 00:00:15,609
+in this session we'll be talking about
+effective capacity
+
+4
+00:00:15,609 --> 00:00:18,839
+effective capacity tells us that
+
+5
+00:00:18,839 --> 00:00:24,519
+for our existing process how many units
+we can actually get out of that process
+
+6
+00:00:24,519 --> 00:00:25,059
+per
+
+7
+00:00:25,059 --> 00:00:29,009
+period of time so let's take a look at
+this
+
+8
+00:00:29,010 --> 00:00:32,840
+we're trying to figure out how many
+units the process can produce
+
+9
+00:00:32,840 --> 00:00:37,829
+so  another question we have is are we
+able to meet our customer demand
+
+10
+00:00:37,829 --> 00:00:41,460
+how can we increase the number of units
+if we need to
+
+11
+00:00:41,460 --> 00:00:45,039
+and the big question are do we have
+enough resources
+
+12
+00:00:45,039 --> 00:00:50,070
+and are those resources in the right
+places if you recall when we look at
+
+13
+00:00:50,070 --> 00:00:53,840
+the basics of a process we have inputs
+being transformed to
+
+14
+00:00:53,840 --> 00:00:57,030
+output but in order to have that happen
+
+15
+00:00:57,030 --> 00:01:00,039
+we have to have resources so with
+
+16
+00:01:00,039 --> 00:01:04,300
+effective capacity we're gonna be taking
+a harder look at those resources
+
+17
+00:01:04,299 --> 00:01:08,590
+to do that we have to get through a
+little bit of terminology
+
+18
+00:01:08,590 --> 00:01:12,010
+we're gonna start with something called
+a resource unit
+
+19
+00:01:12,010 --> 00:01:16,670
+a unit within a resource pool not very
+clear
+
+20
+00:01:16,670 --> 00:01:20,150
+but if we think about a laundromat and
+
+21
+00:01:20,150 --> 00:01:24,750
+we think about doing laundry and there's
+a big pile of washing machines
+
+22
+00:01:24,750 --> 00:01:28,310
+well that big pile of washing machines
+can be considered
+
+23
+00:01:28,310 --> 00:01:31,969
+a resource pool a collection of
+interchangeable
+
+24
+00:01:31,969 --> 00:01:35,170
+resources that perform an identical set
+of activities
+
+25
+00:01:35,170 --> 00:01:40,240
+in this case washing clothing so an
+individual washer
+
+26
+00:01:40,239 --> 00:01:45,810
+would be a unit within that resource
+pool resource pooling says we're going
+
+27
+00:01:45,810 --> 00:01:47,090
+to be able to combine
+
+28
+00:01:47,090 --> 00:01:50,299
+separate different pools into a single
+flexible pool
+
+29
+00:01:50,299 --> 00:01:55,530
+so our terminology says we have an
+individual resource unit
+
+30
+00:01:55,530 --> 00:01:58,950
+and that unit belongs to a resource pool
+
+31
+00:01:58,950 --> 00:02:02,000
+we also need to know
+
+32
+00:02:02,000 --> 00:02:05,609
+for that individual unit how long it
+needs
+
+33
+00:02:05,609 --> 00:02:08,908
+to process a flow unit so for example
+
+34
+00:02:08,908 --> 00:02:12,270
+a washing machine may take 30 minutes to
+process
+
+35
+00:02:12,269 --> 00:02:15,318
+a load of wash so that is the 
+
+36
+00:02:15,318 --> 00:02:19,829
+average amount of time required by the
+resource unit to process
+
+37
+00:02:19,830 --> 00:02:24,629
+a flow unit so the effective capacity
+of the unit which is the
+
+38
+00:02:24,628 --> 00:02:29,500
+inverse of the unit load is if we have 30
+minutes per load of wash
+
+39
+00:02:29,500 --> 00:02:32,568
+that means we can get 2 loads done
+in an hour
+
+40
+00:02:32,568 --> 00:02:36,060
+right so we have the time we take the
+inverse
+
+41
+00:02:36,060 --> 00:02:39,489
+and we have the effective capacity now
+
+42
+00:02:39,489 --> 00:02:43,939
+we have a bunch of washers together that
+means the effective capacity
+
+43
+00:02:43,939 --> 00:02:47,199
+in that of all those washers combined
+
+44
+00:02:47,199 --> 00:02:51,848
+so it's not just how long it takes one
+individual to wash
+
+45
+00:02:51,848 --> 00:02:55,039
+and says we can get 2 done per hour
+
+46
+00:02:55,039 --> 00:02:58,729
+if we work bunch of them it's 2 per washing
+machine
+
+47
+00:02:58,729 --> 00:03:02,929
+per hour so that's the effective capacity of
+the resource pool
+
+48
+00:03:02,930 --> 00:03:07,790
+what I'd like to do next is use a very
+very simple example
+
+49
+00:03:07,789 --> 00:03:12,979
+just using one resource pool I'm walking
+through calculating that effective
+
+50
+00:03:12,979 --> 00:03:18,979
+capacity let's say we have a teacher who
+takes 10 minutes to grade a paper
+
+51
+00:03:18,979 --> 00:03:23,009
+and that teacher has available time of
+three hours a day
+
+52
+00:03:23,009 --> 00:03:26,199
+what is the effective capacity of the
+teacher
+
+53
+00:03:26,199 --> 00:03:30,060
+so let's say the resource pool is the
+teacher
+
+54
+00:03:30,060 --> 00:03:34,699
+and in this case we have one teacher and
+it takes that teacher
+
+55
+00:03:34,699 --> 00:03:37,759
+10 minutes to grade a paper that's our unit
+load
+
+56
+00:03:37,759 --> 00:03:41,639
+and our available time is three hours
+per day
+
+57
+00:03:41,639 --> 00:03:44,829
+we have a total of 180 minutes
+
+
+58
+00:03:44,830 --> 00:03:49,409
+per day to grade papers so this is our
+available time
+
+59
+00:03:49,408 --> 00:03:53,128
+180 minutes it takes 10 minutes per
+paper
+
+60
+00:03:53,128 --> 00:03:57,188
+so our effective capacity is 18 papers
+per day
+
+61
+00:03:57,188 --> 00:04:02,900
+that's it we only have one resource in
+our resource pools so our effective
+
+62
+00:04:02,900 --> 00:04:04,819
+capacity is 18 per day
+
+63
+00:04:04,818 --> 00:04:07,839
+now let's see what happens if we change
+the number of
+
+64
+00:04:07,840 --> 00:04:11,400
+resources when we change the number
+
+65
+00:04:11,400 --> 00:04:14,459
+resources we still have the
+resource pool of teacher
+
+66
+00:04:14,459 --> 00:04:19,649
+and the unit load hasn't changed
+either and the individual available time
+
+67
+00:04:19,649 --> 00:04:20,629
+per teacher
+
+68
+00:04:20,629 --> 00:04:24,370
+that also hasn't changed but now we have
+
+69
+00:04:24,370 --> 00:04:28,850
+three resources so our effective
+capacity has
+
+70
+00:04:28,850 --> 00:04:31,970
+actually tripled we now have
+
+71
+00:04:31,970 --> 00:04:35,139
+3 resources instead of one so instead
+
+72
+00:04:35,139 --> 00:04:41,009
+18 papers per day we now have 54 papers
+per day
+
+73
+00:04:41,009 --> 00:04:44,680
+that's all it takes when we're thinking
+about effective capacity
+
+74
+00:04:44,680 --> 00:04:49,949
+for a resource we take how much time we
+have available
+
+75
+00:04:49,949 --> 00:04:55,340
+for all the resources in the pool and we're going
+to be dividing it up by the unit load
+
+76
+00:04:55,339 --> 00:04:59,359
+and that gives us our effective capacity
+
+77
+00:04:59,360 --> 00:05:02,970
+now that was an example with just a
+single resource pool
+
+78
+00:05:02,970 --> 00:05:06,860
+but in most cases we have multiple
+resource pools for particular
+
+79
+00:05:06,860 --> 00:05:08,280
+process
+
+80
+00:05:08,279 --> 00:05:11,599
+so what we do have to deal with is
+something called the bottleneck
+
+81
+00:05:11,600 --> 00:05:15,990
+and the bottleneck tells us that it's
+the slowest resource pool
+
+82
+00:05:15,990 --> 00:05:21,680
+up the entire process and that drives
+the effective capacity of the process
+
+83
+00:05:21,680 --> 00:05:25,879
+this will be a lot clearer when we do a
+larger example
+
+84
+00:05:25,879 --> 00:05:28,889
+and that's what we'll be doing next time
+we're gonna take the
+
+85
+00:05:28,889 --> 00:05:32,069
+effective capacity and do a step-by-step
+example
+
+86
+00:05:32,069 --> 00:05:34,990
+using more than one resource pool. I'll see you then.
+

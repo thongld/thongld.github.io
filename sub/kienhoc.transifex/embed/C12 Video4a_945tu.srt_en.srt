@@ -1,0 +1,523 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/O33fg9621QI
+
+1
+00:00:00,000 --> 00:00:00,520
+
+2
+00:00:00,520 --> 00:00:03,065
+JONATHAN VALVANO: Let's look
+at how the DC motor works.
+
+3
+00:00:03,065 --> 00:00:05,660
+
+4
+00:00:05,660 --> 00:00:15,905
+We have a north magnet,
+and a south magnet.
+
+5
+00:00:15,905 --> 00:00:20,380
+
+6
+00:00:20,380 --> 00:00:26,140
+And this will produce a B field, and
+this will create a magnetic field from
+
+7
+00:00:26,140 --> 00:00:27,750
+north to south.
+
+8
+00:00:27,750 --> 00:00:30,420
+
+9
+00:00:30,420 --> 00:00:33,280
+Next we're going to have a wire.
+
+10
+00:00:33,280 --> 00:00:41,050
+This is a course on robots and embedded
+systems, so we're going to have wires.
+
+11
+00:00:41,050 --> 00:00:44,360
+And through this wire, a
+current is going to flow.
+
+12
+00:00:44,360 --> 00:00:47,440
+
+13
+00:00:47,440 --> 00:00:50,700
+So if current flows through
+this wire, and this wire
+
+14
+00:00:50,700 --> 00:00:54,670
+is perpendicular to the
+magnet, then what will happen
+
+15
+00:00:54,670 --> 00:01:03,610
+is a force will be induced on the
+wire such that the magnetic field--
+
+16
+00:01:03,610 --> 00:01:07,850
+the electrical current and the force--
+are all orthogonal to each other.
+
+17
+00:01:07,850 --> 00:01:10,420
+
+18
+00:01:10,420 --> 00:01:17,960
+The actual interface to create
+these magnets, these electromagnets,
+
+19
+00:01:17,960 --> 00:01:22,070
+will be to have a winding-- and
+we saw that in our stepper motor--
+
+20
+00:01:22,070 --> 00:01:27,120
+such that if I were to drive
+current through this circular path,
+
+21
+00:01:27,120 --> 00:01:33,230
+that will create a magnetic
+field in this direction.
+
+22
+00:01:33,230 --> 00:01:37,730
+From an electrical standpoint, we
+will see the motor has three parts.
+
+23
+00:01:37,730 --> 00:01:44,780
+The resistance of the windings, the
+inductance of the coil, and then we're
+
+24
+00:01:44,780 --> 00:01:50,240
+going to have this magic
+electromotive force.
+
+25
+00:01:50,240 --> 00:01:56,090
+Interestingly enough, this
+conversion is two directional.
+
+26
+00:01:56,090 --> 00:02:00,820
+So mechanical force can be
+converted to electrical energy,
+
+27
+00:02:00,820 --> 00:02:05,520
+and electrical energy can be
+converted to mechanical energy.
+
+28
+00:02:05,520 --> 00:02:10,280
+So the micro-controller, in order
+to generate electrical energy,
+
+29
+00:02:10,280 --> 00:02:14,380
+has to produce current through the coil.
+
+30
+00:02:14,380 --> 00:02:20,780
+And this current, times the voltage
+across the coil, as you know is power.
+
+31
+00:02:20,780 --> 00:02:25,470
+And if we take power and we do
+it for a certain amount of time,
+
+32
+00:02:25,470 --> 00:02:28,050
+we're going to have energy.
+
+33
+00:02:28,050 --> 00:02:31,720
+So this is the essential conversion
+here, that occurs in the interface.
+
+34
+00:02:31,720 --> 00:02:34,470
+
+35
+00:02:34,470 --> 00:02:36,960
+So let's look at this interface.
+
+36
+00:02:36,960 --> 00:02:41,890
+We're going to have an output
+port of the microcontroller.
+
+37
+00:02:41,890 --> 00:02:47,075
+This will be a digital output
+as you know, zero or 3.3 volts.
+
+38
+00:02:47,075 --> 00:02:52,220
+
+39
+00:02:52,220 --> 00:02:54,740
+And it's going to go
+through a 1K resistor.
+
+40
+00:02:54,740 --> 00:02:58,070
+
+41
+00:02:58,070 --> 00:03:01,540
+The currents through these
+motors are quite large.
+
+42
+00:03:01,540 --> 00:03:06,480
+The one on our stepper motor car
+will vary from either 100 milliamps
+
+43
+00:03:06,480 --> 00:03:11,060
+all the way up to one amp depending
+upon how much load there is.
+
+44
+00:03:11,060 --> 00:03:14,650
+And these currents are way too large
+to connect to a microcontroller.
+
+45
+00:03:14,650 --> 00:03:17,475
+So we're going to use a current
+amplifier, or transistor.
+
+46
+00:03:17,475 --> 00:03:27,450
+
+47
+00:03:27,450 --> 00:03:33,035
+And so this is the coil, which as you
+saw contains some R some L and EMF.
+
+48
+00:03:33,035 --> 00:03:35,610
+
+49
+00:03:35,610 --> 00:03:42,890
+And to prevent things from exploding,
+I'm going add a snubber diode.
+
+50
+00:03:42,890 --> 00:03:45,630
+Right there, that's a 1N914.
+
+51
+00:03:45,630 --> 00:03:48,720
+And because this is a
+one AMP motor, I'm going
+
+52
+00:03:48,720 --> 00:03:53,200
+to use a transistor which can
+drive lots more than one amp.
+
+53
+00:03:53,200 --> 00:03:56,320
+I'm going to use a TIP120.
+
+54
+00:03:56,320 --> 00:04:04,130
+This is an NPN Darlington which
+essentially amplifies current.
+
+55
+00:04:04,130 --> 00:04:08,730
+And so I'm going to have current on
+the order of milliamps driving out
+
+56
+00:04:08,730 --> 00:04:14,720
+of the microcontroller, into
+the base, down to the emitter.
+
+57
+00:04:14,720 --> 00:04:18,450
+And this current is going
+to be amplified such
+
+58
+00:04:18,450 --> 00:04:24,540
+that I can have up to an amp of
+current flowing out of my battery,
+
+59
+00:04:24,540 --> 00:04:28,630
+across the motor, across the
+collector, down to the emitter,
+
+60
+00:04:28,630 --> 00:04:29,790
+and down to ground.
+
+61
+00:04:29,790 --> 00:04:34,180
+
+62
+00:04:34,180 --> 00:04:35,640
+Here's our circuit again.
+
+63
+00:04:35,640 --> 00:04:39,040
+Let me remind you how to connect
+it up to the microcontroller,
+
+64
+00:04:39,040 --> 00:04:41,540
+without exploding the microcontroller.
+
+65
+00:04:41,540 --> 00:04:46,520
+Because now we have lots
+and lots of current.
+
+66
+00:04:46,520 --> 00:04:55,540
+The battery here, it's
+going to control the robot.
+
+67
+00:04:55,540 --> 00:04:58,780
+And it's is important to
+connect the battery such
+
+68
+00:04:58,780 --> 00:05:10,170
+that the current flow comes out
+of the battery, across the motor,
+
+69
+00:05:10,170 --> 00:05:14,510
+and it will flow across the
+collector of this transistor,
+
+70
+00:05:14,510 --> 00:05:16,220
+and back to the battery.
+
+71
+00:05:16,220 --> 00:05:19,580
+And the current-- this
+one amp of current
+
+72
+00:05:19,580 --> 00:05:22,640
+is not going to flow into
+the micro-controller.
+
+73
+00:05:22,640 --> 00:05:28,780
+Now we are going to need to
+power the microcontroller.
+
+74
+00:05:28,780 --> 00:05:33,090
+So we're going to take
+this 8.4 into a regulator--
+
+75
+00:05:33,090 --> 00:05:38,870
+just like we did with the stepper
+motor car-- to get a 5 volt output,
+
+76
+00:05:38,870 --> 00:05:42,030
+and tie this into VBUS.
+
+77
+00:05:42,030 --> 00:05:43,940
+But these currents here are very tiny.
+
+78
+00:05:43,940 --> 00:05:50,000
+
+79
+00:05:50,000 --> 00:05:54,610
+So the microcontroller
+current, the lower current--
+
+80
+00:05:54,610 --> 00:05:58,830
+which is on the order
+of 10 to 50 milliamps--
+
+81
+00:05:58,830 --> 00:06:05,040
+to control the board, that's going
+to flow through this direction
+
+82
+00:06:05,040 --> 00:06:07,510
+and back to the battery.
+
+83
+00:06:07,510 --> 00:06:09,910
+And so we see we've got
+two separate current paths.
+
+84
+00:06:09,910 --> 00:06:14,280
+One for the motor, and
+one to drive the board.
+
+85
+00:06:14,280 --> 00:06:19,580
+And so we have our LaunchPad
+powered in this way.
+
+86
+00:06:19,580 --> 00:06:23,920
+OK, now it's time to
+write some software.
+
+87
+00:06:23,920 --> 00:06:31,910
+We saw that the energy applied to the
+motor is a function of the voltage.
+
+88
+00:06:31,910 --> 00:06:36,370
+Which in our case, is
+fixed at 8.4 volts.
+
+89
+00:06:36,370 --> 00:06:43,000
+The current, which is also
+fixed, from 100 milliamps to one
+
+90
+00:06:43,000 --> 00:06:47,400
+amp depending upon the load and time.
+
+91
+00:06:47,400 --> 00:06:50,780
+And it's the time parameter
+that we're going to control.
+
+92
+00:06:50,780 --> 00:06:54,540
+So I'm going to connect
+the circuit to PA5.
+
+93
+00:06:54,540 --> 00:06:57,310
+I could've used any output pin.
+
+94
+00:06:57,310 --> 00:07:05,510
+And I'm going to create what's called
+a pulse width modulated signal.
+
+95
+00:07:05,510 --> 00:07:08,320
+
+96
+00:07:08,320 --> 00:07:11,830
+Basically I'm going to
+adjust the parameter time.
+
+97
+00:07:11,830 --> 00:07:13,850
+And the way I'm going
+to do a pulse width
+
+98
+00:07:13,850 --> 00:07:18,600
+modulated signal is going
+to create a pattern, such
+
+99
+00:07:18,600 --> 00:07:22,770
+that the period-- or the
+frequency of this wave-- is fixed.
+
+100
+00:07:22,770 --> 00:07:25,550
+
+101
+00:07:25,550 --> 00:07:33,250
+But the duty cycle is going to vary.
+
+102
+00:07:33,250 --> 00:07:38,200
+So if I labeled this time H for
+high, and this time L for low,
+
+103
+00:07:38,200 --> 00:07:40,570
+that's the time.
+
+104
+00:07:40,570 --> 00:07:42,590
+And there's an H and
+there's an L and there's
+
+105
+00:07:42,590 --> 00:07:51,025
+an H. I'm going to fix the period by
+forcing H plus L to be a constant.
+
+106
+00:07:51,025 --> 00:07:54,130
+
+107
+00:07:54,130 --> 00:08:05,200
+And I'm going to control the duty
+cycle, by having H over H plus L vary.
+
+108
+00:08:05,200 --> 00:08:09,530
+
+109
+00:08:09,530 --> 00:08:17,890
+And so the microcontroller
+can make the motor spin faster
+
+110
+00:08:17,890 --> 00:08:21,310
+by increasing the duty cycle.
+
+111
+00:08:21,310 --> 00:08:26,640
+Or even-- or even faster.
+
+112
+00:08:26,640 --> 00:08:33,740
+
+113
+00:08:33,740 --> 00:08:42,230
+And we can see here that the period of
+each of these waves, which is H plus L,
+
+114
+00:08:42,230 --> 00:08:44,090
+is fixed.
+
+115
+00:08:44,090 --> 00:08:47,610
+But the duty cycle will vary.
+
+116
+00:08:47,610 --> 00:08:49,019

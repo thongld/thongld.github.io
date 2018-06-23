@@ -1,0 +1,371 @@
+1
+00:00:04,865 --> 00:00:08,600
+narcissusdale 22/07/2016
+https://youtu.be/7xQ6LaQj7NE
+Chúng ta hãy cùng trải nghiệm sức mạnh của việc tiết kiệm thường xuyên,
+cùng một ý tưởng đơn giản
+
+2
+00:00:10,40 --> 00:00:13,669
+Trên tai liệu mà giờ các bạn 
+sẽ thấy trên màn hình, 
+
+3
+00:00:14,720 --> 00:00:19,410
+bạn sẽ thấy một bài toán hỏi 50 năm 
+sau bạn sẽ có bao nhiêu tiền trong tài khoản ngân hàng 
+
+4
+00:00:19,410 --> 00:00:26,80
+nếu  từ giờ mỗi năm bạn gửi tiết kiệm $1000 
+với mức lãi suất 5% hoặc 15%
+
+5
+00:00:26,80 --> 00:00:31,639
+Các bạn còn nhớ lúc trước tôi đã giải bài toán này
+trong bài toán 1 kỳ, 1 dòng tiền
+
+6
+00:00:32,759 --> 00:00:36,650
+Và ở đây, 
+bài toán lần trước ta làm
+
+7
+00:00:36,650 --> 00:00:40,310
+là khi bạn muốn học đại học và
+gửi tiết kiệm $1000
+
+8
+00:00:40,310 --> 00:00:43,860
+Đây là bài toán dài hạn hơn
+giả sử như khi bạn đang cố tiết kiệm tiền
+
+9
+00:00:43,860 --> 00:00:44,460
+để dùng khi nghỉ hưu
+
+10
+00:00:44,460 --> 00:00:47,590
+Và bạn bắt đầu tiết kiệm ngay khi
+bắt đầu đi làm
+
+11
+00:00:47,590 --> 00:00:48,690
+Vậy, hãy nghĩ bạn khoảng 25 tuổi
+
+12
+00:00:48,690 --> 00:00:53,699
+và bạn đang tiết kiệm, và muốn biết
+đến năm 75 tuổi bạn có bao nhiêu tiền?
+
+13
+00:00:53,700 --> 00:01:00,250
+Trước tiên, dĩ nhiên tiết kiệm là việc làm đúng đắn
+nếu bạn có dòng tiền
+
+14
+00:01:00,250 --> 00:01:03,470
+Điều đó có nghĩa là gì, điều này cũng
+cho bạn thấy sức mạnh của tiết kiệm
+
+15
+00:01:03,470 --> 00:01:09,908
+Vây, đây là những gì đang diễn ra, chúng ta hãy cùng 
+xem nhanh việc gì đang diễn ra 
+
+16
+00:01:09,908 --> 00:01:17,477
+Tôi sẽ vẽ trục thời gian cùng bạn
+0, 1, bao nhiêu năm?
+
+17
+00:01:17,477 --> 00:01:18,200
+50 năm
+
+18
+00:01:20,90 --> 00:01:21,60
+Giờ bạn đang làm gì?
+
+19
+00:01:21,60 --> 00:01:23,796
+Bạn đang tiết kiệm $1000
+
+20
+00:01:23,796 --> 00:01:25,750
+Bao nhiêu lần?
+
+21
+00:01:25,750 --> 00:01:26,690
+50 lần
+
+22
+00:01:26,690 --> 00:01:30,610
+Câu hỏi bạn đang đặt ra là,
+
+23
+00:01:31,650 --> 00:01:35,350
+N = 50, PMT
+
+24
+00:01:37,810 --> 00:01:41,670
+tôi đã báo trước cho các bạn rằng chữ của tôi rất xấu,
+là 1000
+
+25
+00:01:41,670 --> 00:01:49,430
+Nhưng tôi sẽ cho bạn mức lãi suất 5% hoặc 15%
+
+26
+00:01:49,430 --> 00:01:52,680
+Tôi sẽ chỉ cho bạn 
+sức mạnh của 2 thứ
+
+27
+00:01:52,680 --> 00:01:56,330
+Một là thời gian và
+thứ còn lại là lãi suất kết hợp với nhau
+
+28
+00:01:56,330 --> 00:01:59,160
+Ở đây thời gian có uy quyền hơn 
+ở đây vì bạn
+
+29
+00:01:59,160 --> 00:02:01,259
+đang đầu tư nhiều lần
+
+30
+00:02:01,260 --> 00:02:05,449
+Trước khi ta bắt đầu, tôi sẽ vào 
+Excel để thực hiện cùng các bạn,
+
+31
+00:02:05,449 --> 00:02:10,220
+mặc dù nó không quá phức tạp, các bạn 
+đã biết phải tìm cái gì rồi đấy, hàm FV
+
+32
+00:02:10,220 --> 00:02:12,460
+Trước khi ta đến bước đó, 
+tôi sẽ hỏi các bạn 1 câu hỏi đơn giản
+
+33
+00:02:12,460 --> 00:02:16,883
+Hãy nghĩ xem bạn sẽ có bao nhiêu tiền 
+nếu không có Giá trị thời gian của tiền tệ
+
+34
+00:02:16,883 --> 00:02:21,830
+Xét về mặt tính toán, cuộc sống sẽ rất đơn giản
+vì các bạn chỉ cần lấy 50 và
+
+35
+00:02:21,830 --> 00:02:23,698
+nhân với 1000
+
+36
+00:02:23,698 --> 00:02:26,624
+Vậy là các bạn sẽ có 50 000 đúng không?
+
+37
+00:02:26,624 --> 00:02:30,704
+Nhưng cuộc sống trở nên rất thú vị
+và tôi sẽ mở 
+
+38
+00:02:30,705 --> 00:02:36,500
+Excel và thực hiện cùng các bạn, thử một lần
+
+39
+00:02:36,500 --> 00:02:41,790
+Vậy, nếu bạn vào Excel
+hãy cùng vào ô A1, và
+
+40
+00:02:41,790 --> 00:02:48,929
+Tôi sẽ ở nguyên đây
+và cố giải bài toán này cùng các bạn
+
+41
+00:02:48,930 --> 00:02:55,3
+Các bạn nhập dấu =, nhấn FV
+rồi đến gì nữa?
+
+42
+00:02:55,3 --> 00:03:00,519
+0.05, sau đó tôi nhấn
+
+43
+00:03:00,520 --> 00:03:05,900
+50 và
+sau đó tôi ấn bao nhiêu nữa? 1000
+
+44
+00:03:06,930 --> 00:03:11,520
+Nếu các bạn chú ý sẽ thấy
+tôi không cần ấn gì ở PV cả hoặc
+
+45
+00:03:11,520 --> 00:03:13,840
+hoặc FV nữa, rồi tôi nhấn để tính 
+
+46
+00:03:13,840 --> 00:03:15,870
+lợi nhuận, các bạn nhận được bao nhiêu?
+
+47
+00:03:15,870 --> 00:03:19,916
+Ta sẽ có khoảng $209,348.
+
+48
+00:03:19,916 --> 00:03:23,49
+Tôi nghĩ ta đã có chừng ấy
+
+49
+00:03:23,49 --> 00:03:27,248
+Đó là phần đầu
+giờ việc thú vị là nếu bạn nhìn vào nó,
+
+50
+00:03:27,248 --> 00:03:31,269
+Bạn sẽ có bao nhiêu tiền nếu không có 
+Giá trị thời gian của tiền tệ?
+
+51
+00:03:31,270 --> 00:03:34,430
+Các bạn sẽ có 5 lần $1000, 50 lần $50.000
+
+52
+00:03:34,430 --> 00:03:38,980
+Bạn đã có mức lãi suất 5%, 4 lần số đó
+
+53
+00:03:38,980 --> 00:03:42,516
+Va sự khác biệt giữa 50 và
+$209,000,
+
+54
+00:03:42,516 --> 00:03:44,296
+khoảng $159,000
+
+55
+00:03:44,296 --> 00:03:50,720
+là vì việc tính lãi kép, đúng không? Lãi suất cộng với tính lãi kép,
+hiển nhiên là như vấy
+
+56
+00:03:50,720 --> 00:03:54,990
+Giờ tôi sẽ thay đổi 
+1 chút ở ngay đây
+
+57
+00:03:54,990 --> 00:03:59,940
+Một điều khác là
+hãy đoán xem bạn có bao nhiêu tiền nếu mức lãi suất là 15%
+
+58
+00:03:59,940 --> 00:04:06,859
+Nhiều người sẽ cho rằng, coi này, bạn biết không
+5%, 15% sẽ là gấp 3 lần
+
+59
+00:04:06,860 --> 00:04:08,480
+Họ đang bỏ sót điều gì?
+
+60
+00:04:08,480 --> 00:04:12,200
+Họ đang lờ đi sự thật rằng
+thật ra còn có lãi kép
+
+61
+00:04:12,200 --> 00:04:13,484
+mà lãi kép thì rất phi tuyến tính
+
+62
+00:04:14,680 --> 00:04:18,170
+Như vậy, tôi đã đổi 0.05 
+thành 0.15 ngay tại đó
+
+63
+00:04:18,170 --> 00:04:21,680
+Tôi đã gõ enter và tôi đã kiểm
+tra các con số 2 lần 
+
+64
+00:04:21,680 --> 00:04:25,800
+vì đây là khoá học trực tuyến, và ta không muốn
+liên tục gõ sai những lỗi không đáng
+
+65
+00:04:25,800 --> 00:04:29,690
+dù tôi vẫn sẽ mắc lỗi, tôi đã tính 
+toán số liệu từ trước
+
+66
+00:04:29,690 --> 00:04:31,883
+Kết quả là 7 triệu đô
+
+67
+00:04:31,883 --> 00:04:37,311
+Và cộng thêm $217,716, nên thực ra
+
+68
+00:04:37,311 --> 00:04:43,15
+nó là khoảng hơn 7 triệu đô, 
+nhiều hơn so với mức lãi suất 5%
+
+69
+00:04:43,16 --> 00:04:46,350
+Vậy, ý tôi là hãy suy ngẫm về việc này.
+
+70
+00:04:46,350 --> 00:04:47,490
+Chẳng phải rất hay sao?
+
+71
+00:04:47,490 --> 00:04:47,990
+Đầu tiên,
+
+72
+00:04:47,990 --> 00:04:52,500
+Thứ hai, nó cho bạn thấy rằng
+cuộc sống có thể trở nên rất 
+
+73
+00:04:52,500 --> 00:04:56,440
+rất phức tạp khi ta làm những việc phi tuyến tính, 
+và như tôi nói lúc trước
+
+74
+00:04:57,560 --> 00:05:03,920
+nhiều người, trong đó có bản thân tôi đã lấy làm ngạc nhiên,
+khi thấy được việc tính lãi kép có thể có sức mạnh ghê gớm thế nào 
+
+75
+00:05:03,920 --> 00:05:06,320
+Nếu cứ thế tiến lên thì sẽ rất tuyệt 
+
+76
+00:05:06,320 --> 00:05:10,870
+Nhưng nó cũng có là thảm họa 
+khi bạn tính PV
+
+77
+00:05:10,870 --> 00:05:17,220
+Và những thứ có giá trị cực lớn trong
+tương lai lại có thể không mấy giá trị 
+
+78
+00:05:17,220 --> 00:05:22,510
+ở hiện tại nếu bạn dùng lãi suất cao
+vốn có thể được hoặc không được điều chỉnh
+
+79
+00:05:22,510 --> 00:05:23,490
+Đó là toàn bộ các nội dung phản biện
+
+80
+00:05:24,800 --> 00:05:28,570
+Trong các lần đầu tư dài hạn,
+đúng không ạ? Cho các thế hệ tương lai
+

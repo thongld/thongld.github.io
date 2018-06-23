@@ -1,0 +1,408 @@
+1
+00:00:00,000 --> 00:00:10,290
+Tên tôi là Ian Olav
+Tôi là sinh viên cao học tại Đại học Thành phố New York
+
+2
+00:00:10,290 --> 00:00:14,579
+Hôm nay tôi muốn nói đến định lý Bayes
+Định lý này nói về  xác suất
+
+3
+00:00:14,580 --> 00:00:18,570
+Một phiên bản của định lý này lần đầu
+được khám phá vào thế kỷ 18
+
+4
+00:00:18,570 --> 00:00:22,830
+bởi Thomas Bayes
+Định lý này là đóng góp nổi tiếng nhất của Bayes
+
+5
+00:00:22,830 --> 00:00:24,630
+cho lý thuyết xác suất trong lĩnh vực toán học
+
+6
+00:00:24,630 --> 00:00:28,590
+Định lý này có rất nhiều ứng dụng
+và một số triết gia còn nghĩ nó là chìa khóa
+
+7
+00:00:28,590 --> 00:00:31,560
+để hiểu được tư duy hợp lý là gì
+
+8
+00:00:31,560 --> 00:00:34,530
+Tuy nhiên để hiểu được định lý này
+chúng ta phải có hiểu biết sơ bộ
+
+9
+00:00:34,530 --> 00:00:38,940
+về xác suất
+Xác suất của một vấn đề là cơ hội 
+
+10
+00:00:38,940 --> 00:00:41,460
+hay khả năng vấn đề đó xảy ra
+
+11
+00:00:41,460 --> 00:00:45,629
+Giả sử bạn biết trong một lớp học 20 sinh viên
+có một người bị cúm
+
+12
+00:00:45,629 --> 00:00:46,440
+nhưng bạn không biết chính xác đó là ai
+
+13
+00:00:46,440 --> 00:00:50,218
+Nếu bạn biết Sally là sinh viên trong lớp này
+bạn sẽ nói rằng
+
+14
+00:00:50,219 --> 00:00:57,90
+xác suất Sally bị cúm là 1/20, hay 5%, hay 0,05
+Ta có thể gọi đây là
+
+15
+00:00:57,90 --> 00:00:59,579
+xác suất tiền định mà Sally có thể bị cúm
+
+16
+00:00:59,579 --> 00:01:03,960
+vì đó là xác suất bạn có được trước khi
+tìm ra các thông tin mới
+
+17
+00:01:03,960 --> 00:01:11,310
+Ta sẽ ký hiệu P là xác suất Sally bị cúm và bằng 0,05
+
+18
+00:01:11,310 --> 00:01:14,729
+Bây giờ giả sử có 5 nữ và 15 nam trong lớp
+
+19
+00:01:14,729 --> 00:01:17,909
+và bạn không biết người bị cúm trong lớp
+là nam hay nữ
+
+20
+00:01:17,909 --> 00:01:21,240
+nhưng nếu bạn biết người bị cúm là nữ
+thì xác suất của bạn
+
+21
+00:01:21,240 --> 00:01:26,339
+rằng Sally bị cúm sẽ tăng lên thành 1/5 hay 20% hay 0,2
+
+22
+00:01:26,340 --> 00:01:29,909
+Mặt khác, nếu bạn biết người bị cúm là nam
+
+23
+00:01:29,909 --> 00:01:34,259
+thì xác suất Sally bị cúm sẽ bằng 0 
+
+24
+00:01:34,259 --> 00:01:35,430
+Vì ta chưa chắc chắn về những điều này
+
+25
+00:01:35,430 --> 00:01:38,549
+Nhớ là bạn chưa biết người bị cúm là nam hay nữ
+
+26
+00:01:39,210 --> 00:01:43,530
+ta gọi đây là các xác suất có điều kiện
+
+27
+00:01:43,530 --> 00:01:44,880
+Xác suất Sally bị cúm
+
+28
+00:01:44,880 --> 00:01:50,130
+với điều kiện người bị cúm là nữ là 0,2
+
+29
+00:01:50,130 --> 00:01:51,89
+Xác suất Sally bị cúm
+
+30
+00:01:51,90 --> 00:01:57,479
+với điều kiện người bị cúm là nam sẽ là 0
+Ta ký hiệu 
+
+31
+00:01:57,479 --> 00:01:58,200
+xác suất Sally bị cúm là P
+
+32
+00:01:58,200 --> 00:02:04,380
+với điều kiện người bị cúm là nữ sẽ là bằng 0,2 và
+
+33
+00:02:04,380 --> 00:02:07,649
+với điều kiện người bị cúm là nam sẽ là bằng 0
+
+34
+00:02:07,649 --> 00:02:10,979
+Đường sổ dọc nhỏ này cho biết
+ta đang nói đến
+
+35
+00:02:10,979 --> 00:02:12,150
+xác suất có điều kiện
+
+36
+00:02:12,150 --> 00:02:13,470
+Vấn đề ở đây là
+
+37
+00:02:13,470 --> 00:02:17,160
+đôi khi bạn không biết xác suất có điều kiện của bạn là gì
+
+38
+00:02:17,160 --> 00:02:21,30
+Nói cách khác, bạn biết rằng trong tương lai
+bạn có thể bắt gặp một vài dấu hiệu mới nào đó
+
+39
+00:02:21,30 --> 00:02:24,990
+nhưng bạn chưa biết dấu hiệu đó
+có ảnh hưởng như thế nào đến xác suất của bạn
+
+40
+00:02:24,990 --> 00:02:26,940
+Bạn được gán cho một số giả thuyết
+
+41
+00:02:26,940 --> 00:02:31,50
+Đây là cơ sở của định lý Bayes
+Nó chỉ cho bạn cách tìm ra
+
+42
+00:02:31,50 --> 00:02:35,880
+xác suất có điều kiện của bạn là gì
+Vậy thực chất nội dung của định lý Bayes này là gì?
+
+43
+00:02:35,880 --> 00:02:40,79
+Hãy nhớ ký hiệu xác suất trong một số giả thiết ta gọi là H
+
+44
+00:02:40,80 --> 00:02:43,350
+và điều kiện với một số dấu hiệu mới ta gọi là E
+
+45
+00:02:44,10 --> 00:02:50,820
+Ta sẽ có là P ( H | E )
+Định lý Bayes cho chúng ta biết như sau
+
+46
+00:02:51,420 --> 00:02:59,160
+P(H | E) = P(E | H) x P(H) / P(E)
+
+47
+00:02:59,700 --> 00:03:03,899
+Nói cách khác biểu thức cho ta biết
+có 3 thành phần ảnh hưởng đến xác suất 
+
+48
+00:03:03,900 --> 00:03:08,730
+của một giả thiết với điều kiện dựa trên một vài dấu hiệu, 
+
+49
+00:03:08,730 --> 00:03:13,49
+xác suất của dấu hiệu trong điều kiện giả thiết,
+xác suất tiền định của giả thiết
+
+50
+00:03:13,50 --> 00:03:15,330
+và xác suất tiền định của dấu hiệu
+
+51
+00:03:15,330 --> 00:03:19,950
+Xét ví dụ sau
+Tưởng tượng một buổi sáng bạn thấy không khỏe
+
+52
+00:03:19,950 --> 00:03:22,470
+bạn truy cập trang WebMD để hiểu vấn đề
+
+53
+00:03:22,470 --> 00:03:27,30
+trong lúc tìm và xem thông tin, bạn thấy một bệnh
+giống với triệu chứng của bạn, đó là giả thuyết
+
+54
+00:03:27,30 --> 00:03:31,200
+sau khi xem xét, bạn xem đấy là giả thuyết của mình 
+
+55
+00:03:31,200 --> 00:03:34,440
+khi bạn đọc hết các triệu chứng của bệnh
+
+56
+00:03:35,10 --> 00:03:38,880
+bạn nhận ra rằng bạn có tất cả các triệu chứng đó
+Nói cách khác, bạn có tất cả các triệu chứng
+
+57
+00:03:38,880 --> 00:03:42,359
+có thể có nếu bạn giả thuyết như vậy
+
+58
+00:03:42,360 --> 00:03:49,920
+Vậy ta có, P( E | H) hay 
+xác suất của triệu chứng dựa trên giả thuyết 
+
+59
+00:03:49,920 --> 00:03:54,660
+bằng 0,95. bạn bắt đầu hoảng sợ
+nhưng rồi bạn nhớ lại định lý Bayes
+
+60
+00:03:55,200 --> 00:03:58,140
+còn đề cập tới 2 yếu tố nữa mà bạn cần biết
+
+61
+00:03:58,140 --> 00:04:01,859
+để xác định xác suất cho giả thuyết của bạn
+Đó là xác suất tiền định mà bạn có được từ giả thuyết
+
+62
+00:04:01,860 --> 00:04:06,180
+và xác suất tiền định
+
+63
+00:04:06,180 --> 00:04:09,360
+rằng bạn sẽ có các triệu chứng mà bạn đang có
+
+64
+00:04:09,360 --> 00:04:12,660
+Nếu tra cứu thêm, bạn sẽ thấy chứng bệnh này cực kỳ hiếm
+
+65
+00:04:12,660 --> 00:04:19,620
+chỉ 1/100,000 người mắc phải
+nên xác suất của giả thuyết sẽ là 0,00001
+
+66
+00:04:19,620 --> 00:04:21,239
+bây giờ là thành phần cuối cùng
+
+67
+00:04:21,238 --> 00:04:26,219
+Các triệu chứng đó là gì? 
+
+68
+00:04:26,220 --> 00:04:26,639
+Giả sử các triệu chứng đó rất phổ biến
+
+69
+00:04:26,639 --> 00:04:31,289
+như đau đầu và chảy nước mũi
+Rất nhiều người có triệu chứng này
+
+70
+00:04:31,289 --> 00:04:36,479
+Google cho biết đó là 1/100 do đó, 
+xác suất của triệu chứng, hay xác suất tiền định
+
+71
+00:04:36,479 --> 00:04:39,568
+có được từ triệu chứng là 0,01
+
+72
+00:04:39,569 --> 00:04:43,680
+Cuối cùng bạn đã biết mọi thứ bạn cần để xác định xác suất
+
+73
+00:04:43,680 --> 00:04:46,680
+của giả thuyết dựa trên triệu chứng
+
+74
+00:04:47,400 --> 00:04:53,279
+Định lý Bayes cho biết
+xác suất của giả thuyết dựa trên triệu chứng
+
+75
+00:04:53,279 --> 00:05:00,300
+bằng xác suất của triệu chứng dựa trên giả thuyết
+nhân xác suất của giả thuyết, chia cho xác suất của triệu chứng
+
+76
+00:05:00,300 --> 00:05:08,580
+Nói cách khác, xác suất của giả thuyết dựa trên triệu chứng
+bằng 0,00095 hay ít hơn 1/1000
+
+77
+00:05:08,580 --> 00:05:13,409
+Định lý Bayes rất hữu ích vì khi xác định
+
+78
+00:05:13,409 --> 00:05:15,750
+điều cần làm dựa trên các dấu hiệu
+
+79
+00:05:15,750 --> 00:05:19,949
+người ta thường bỏ qua xác suất tiền định của giả thuyết 
+
+80
+00:05:19,949 --> 00:05:25,949
+hoặc nhầm lẫn giữa P(H | E) với P(E | H)
+ Sai sót này đôi khi được gọi là
+
+81
+00:05:25,949 --> 00:05:29,249
+ngụy biện tỷ lệ căn bản.
+Trong trường hợp ta chỉ quan tâm
+
+82
+00:05:29,249 --> 00:05:35,69
+đến xác suất của giả thuyết dựa trên triệu chứng rất khác so với
+xác suất của triệu chứng dựa trên giả thuyết: 1 < 1/10 của 1%
+
+83
+00:05:35,69 --> 00:05:39,779
+so với 95%
+Nếu không có định lý Bayes
+
+84
+00:05:39,779 --> 00:05:42,899
+có thể bạn sẽ phải làm việc với giả thiết nhiều hơn cần thiết
+
+85
+00:05:42,899 --> 00:05:47,909
+Tóm lại, định lý Bayes là một công thức giúp bạn
+
+86
+00:05:47,909 --> 00:05:51,659
+tính toán xác suất tiền định hay xác suất gán cho 
+
+87
+00:05:51,659 --> 00:05:54,419
+một số giả thuyết dựa trên một số dấu hiệu
+
+88
+00:05:54,419 --> 00:05:57,930
+Nếu bạn quên công thức,
+hãy cố nhớ xác suất có điều kiện
+
+89
+00:05:57,930 --> 00:06:02,520
+của H dựa trên E được xác định bằng 3 yếu tố
+
+90
+00:06:02,520 --> 00:06:07,198
+là xác suất có điều kiện của E dựa trên H,
+xác suất tiền định của H và xác suất tiền định của E
+
+91
+00:06:07,199 --> 00:06:11,339
+Nếu bạn quên một trong 3 yếu tố này
+
+92
+00:06:11,339 --> 00:06:12,389
+bạn sẽ không thể tính một cách trọn vẹn
+

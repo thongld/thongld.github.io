@@ -1,0 +1,586 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/PNvly8Y6O98
+
+1
+00:00:00,500 --> 00:00:03,840
+Hãy nhìn vào các thước đo dự đoán khác nhau.
+
+2
+00:00:03,840 --> 00:00:05,930
+Vậy cho dù bạn sử dụng thước đo nào
+
+3
+00:00:05,930 --> 00:00:08,690
+chúng đều dựa trên số hạng sai số.
+
+4
+00:00:08,690 --> 00:00:12,100
+Và sai số được định nghĩa đơn giản là số lượng thực tế
+
+5
+00:00:12,100 --> 00:00:15,420
+tại thời điểm t, bất kể khả năng quan sát, trừ đi
+
+6
+00:00:15,420 --> 00:00:18,360
+dự đoán của tôi tại thời điểm đó.
+
+7
+00:00:18,360 --> 00:00:21,310
+Hiện nay, một số sách có đưa ra định nghĩa trái ngược.
+
+8
+00:00:21,310 --> 00:00:25,300
+Trong đó, sai số được định nghĩa là dự đoán trừ đi số lượng thực tế.
+
+9
+00:00:25,300 --> 00:00:26,310
+Không có vấn đề gì cả.
+
+10
+00:00:26,310 --> 00:00:29,490
+Một nửa số sách đưa ra một kiểu định nghĩa,
+một nửa khác đưa ra định nghĩa khác.
+
+11
+00:00:29,490 --> 00:00:31,230
+Sau tất cả, vấn đề là ở
+
+12
+00:00:31,230 --> 00:00:33,500
+sự khác nhau giữa hai định nghĩa.
+
+13
+00:00:33,500 --> 00:00:35,700
+Sai số đơn giản là sự khác nhau.
+
+14
+00:00:35,700 --> 00:00:37,805
+Vậy tôi có thể nhìn vào các loại thước đo khác nhau
+
+15
+00:00:37,805 --> 00:00:41,280
+được sử dụng để đo lường chất lượng dự đoán.
+
+16
+00:00:41,280 --> 00:00:42,950
+Một kiểu là độ lệch trung bình.
+
+17
+00:00:42,950 --> 00:00:46,070
+Điều tôi đang làm ở đây là tóm tắt
+
+18
+00:00:46,070 --> 00:00:48,660
+các lỗi của từng khả năng quan sát.
+
+19
+00:00:48,660 --> 00:00:51,470
+Sau đó tôi chia cho n, là số lần quan sát,
+
+20
+00:00:51,470 --> 00:00:54,970
+để tìm trung bình, hay độ lệch trung bình.
+
+21
+00:00:54,970 --> 00:00:56,710
+Hãy xem lại ví dụ mà chúng ta đã làm
+
+22
+00:00:56,710 --> 00:00:59,850
+với các ô vuông xanh dương và tam giác xanh lá cây.
+
+23
+00:00:59,850 --> 00:01:02,440
+Trong trường hợp đó, ô vuông xanh dương,
+đây là độ lệch trung bình,
+
+24
+00:01:02,440 --> 00:01:03,700
+sẽ là 0.
+
+25
+00:01:03,700 --> 00:01:06,190
+Vì nếu điều gì đó hoàn toàn không bị thiên lệch,
+
+26
+00:01:06,190 --> 00:01:08,170
+các dự đoán bên trên sẽ cân bằng
+
+27
+00:01:08,170 --> 00:01:10,760
+với các dự đoán bên dưới, và chúng sẽ triệt tiêu nhau.
+
+28
+00:01:10,760 --> 00:01:13,430
+Điều đó không có vẻ chính xác.
+
+29
+00:01:13,430 --> 00:01:15,830
+Vậy mọi người thường làm theo cách
+
+30
+00:01:15,830 --> 00:01:18,670
+lấy giá trị tuyệt đối của số hạng sai số.
+
+31
+00:01:18,670 --> 00:01:21,120
+Vậy giá trị tuyệt đối của sai số trung bình của MAD
+
+32
+00:01:21,120 --> 00:01:24,810
+bạn chỉ cần tính tổng các giá trị tuyệt đối của từng số hạng
+
+33
+00:01:24,810 --> 00:01:27,230
+sai số và chia cho n.
+
+34
+00:01:27,230 --> 00:01:30,650
+Một cách khác để loại bỏ giá trị âm dương đó
+
+35
+00:01:30,650 --> 00:01:34,100
+là thay vì lấy giá trị tuyệt đối,
+
+36
+00:01:34,100 --> 00:01:35,810
+bạn bình phương số hạng đó.
+
+37
+00:01:35,810 --> 00:01:39,680
+Đó là toàn bộ nội dung về bình phương sai số trung bình.
+
+38
+00:01:39,680 --> 00:01:43,375
+Vậy tôi ddang bình phương từng số hạng sai số,
+tính tổng chúng, chia chúng cho n,
+
+39
+00:01:43,375 --> 00:01:46,640
+vậy là tôi đang tìm giá trị trung bình hay bình phương sai số trung bình.
+
+40
+00:01:46,640 --> 00:01:50,150
+Một lần nữa, dự đoán trên và dự đoán dưới
+
+41
+00:01:50,150 --> 00:01:52,030
+ sẽ bị triệt tiêu.
+
+42
+00:01:52,030 --> 00:01:55,330
+Nhưng có một vài điều tinh vi hơn
+
+43
+00:01:55,330 --> 00:01:58,530
+làm thiên lệch dự đoán, hay sai số
+
+44
+00:01:58,530 --> 00:02:01,610
+bị ảnh hưởng bởi yếu tố bên ngoài lớn hơn.
+
+45
+00:02:01,610 --> 00:02:05,240
+Nếu tôi dự đoán theo cách đó,
+
+46
+00:02:05,240 --> 00:02:08,284
+thì sự chênh lệch đó sẽ được bình phương.
+
+47
+00:02:08,284 --> 00:02:10,159
+Và nó sẽ có ảnh hưởng lớn hơn.
+
+48
+00:02:10,159 --> 00:02:13,170
+Và chúng ta sẽ nói nhiều hơn về điều này trong phần
+
+49
+00:02:13,170 --> 00:02:17,230
+phân tích hồi quy và nguyên nhân - kết quả,
+do tác động của nó.
+
+50
+00:02:17,230 --> 00:02:19,490
+Trong thực tế, chúng ta lấy căn bậc hai của cái này.
+
+51
+00:02:19,490 --> 00:02:22,000
+Và nó được gọi là căn bậc hai của sai số trung bình.
+
+52
+00:02:22,000 --> 00:02:24,100
+Chúng ta làm như vậy là để đưa nó về số hạng
+
+53
+00:02:24,100 --> 00:02:27,030
+giống như giá trị kỳ vọng của biến ngẫu nhiên.
+
+54
+00:02:27,030 --> 00:02:30,571
+Vậy, thay vì là các số bình phương, nó có dạng số đơn lẻ.
+
+55
+00:02:30,571 --> 00:02:31,570
+Nhưng cùng thể hiện một giá trị.
+
+56
+00:02:31,570 --> 00:02:34,470
+Nó là căn bậc hai của tổng các sai số bình phương
+
+57
+00:02:34,470 --> 00:02:35,905
+chia cho số lần quan sát.
+
+58
+00:02:35,905 --> 00:02:39,260
+
+
+59
+00:02:39,260 --> 00:02:42,450
+Tất cả bốn giá trị mà chúng ta đã nói tới
+
+60
+00:02:42,450 --> 00:02:43,380
+đều là giá trị tuyệt đối.
+
+61
+00:02:43,380 --> 00:02:46,800
+Nếu tôi đưa ra dự đoán là 1000 đơn vị
+
+62
+00:02:46,800 --> 00:02:50,310
+thì sai số của tôi là 10, và điều này sẽ tốt hơn so với
+
+63
+00:02:50,310 --> 00:02:54,410
+dự đoán là 100 đơn vị và sai số là 10.
+
+64
+00:02:54,410 --> 00:02:57,710
+Nhưng tất cả những thước đo này-- độ lệch trung bình,
+
+65
+00:02:57,710 --> 00:03:00,900
+giá trị tuyệt đối của độ lệch trung bình, bình phương sai số trung bình,
+
+66
+00:03:00,900 --> 00:03:03,390
+căn bậc hai của sai số trung bình, sẽ không có gì khác biệt.
+
+67
+00:03:03,390 --> 00:03:05,800
+Đó là lý do tại sao tôi giới thiệu những thước đo này
+
+68
+00:03:05,800 --> 00:03:07,860
+khi chúng xem xét phần trăm sai số trung bình.
+
+69
+00:03:07,860 --> 00:03:10,600
+Bạn nhìn vào sai số được chia cho số lượng thực tế.
+
+70
+00:03:10,600 --> 00:03:14,520
+Nó cho bạn phần trăm thực tế bạn đã bỏ qua.
+
+71
+00:03:14,520 --> 00:03:17,900
+Và bạn tính trung bình của số đó.
+
+72
+00:03:17,900 --> 00:03:20,590
+Nhưng thước đo này vẫn có vấn đề tương tự
+
+73
+00:03:20,590 --> 00:03:22,520
+như độ lệch trung bình,
+
+74
+00:03:22,520 --> 00:03:26,600
+trong dự đoán thiên lệch và không thiên lệch,
+
+75
+00:03:26,600 --> 00:03:28,172
+hàng hóa dư thừa và hàng hóa thiếu hụt sẽ bị triệt tiêu.
+
+76
+00:03:28,172 --> 00:03:29,630
+Vậy mọi người thường làm là
+
+77
+00:03:29,630 --> 00:03:32,850
+nhìn vào phần trăm giá trị tuyệt đối của sai số trung bình, hay MAPE.
+
+78
+00:03:32,850 --> 00:03:36,030
+Và nó đơn giản là tổng các giá trị tuyệt đối
+
+79
+00:03:36,030 --> 00:03:40,150
+của mỗi quan sát chia cho các giá trị thực tế
+
+80
+00:03:40,150 --> 00:03:42,340
+được chia cho n để ra giá trị trung bình.
+
+81
+00:03:42,340 --> 00:03:43,840
+Hãy xem chúng được vận dụng ra sao.
+
+82
+00:03:43,840 --> 00:03:46,350
+Lấy lại ví dụ đơn giản từ cửa hàng sandwich,
+
+83
+00:03:46,350 --> 00:03:48,820
+cửa hàng bánh mỳ vòng.
+
+84
+00:03:48,820 --> 00:03:52,380
+Biểu đồ này cho thấy những dự đoán của tôi về cầu
+
+85
+00:03:52,380 --> 00:03:55,900
+của mỗi ngày trong tuần và thực tế đã xảy ra.
+
+86
+00:03:55,900 --> 00:03:58,300
+Bạn có thể thấy dự đoán từ thứ 2 đến thứ 5,
+
+87
+00:03:58,300 --> 00:04:00,900
+khá ổn định ở mức 50.
+
+88
+00:04:00,900 --> 00:04:03,400
+Và vì mọi người thích bánh mỳ vòng vào thứ 6,
+
+89
+00:04:03,400 --> 00:04:07,250
+Tôi đã dự đoán là sẽ tăng, cầu sẽ tăng từ 50 lên 75%.
+
+90
+00:04:07,250 --> 00:04:11,297
+Bạn có thể thấy giá trị cầu thực tế.
+
+91
+00:04:11,297 --> 00:04:12,880
+Vậy chúng ta sẽ tính toán
+
+92
+00:04:12,880 --> 00:04:14,900
+giá trị tuyệt đối của độ lệch trung bình,
+
+93
+00:04:14,900 --> 00:04:19,070
+căn bậc hai của sai số trung bình, và
+phần trăm của giá trị tuyệt đối của sai số trung bình.
+
+94
+00:04:19,070 --> 00:04:20,290
+Tôi sẽ làm như thế nào?
+
+95
+00:04:20,290 --> 00:04:21,490
+Tôi có số liệu.
+
+96
+00:04:21,490 --> 00:04:23,740
+Và điều đầu tiên bạn cần làm
+
+97
+00:04:23,740 --> 00:04:24,850
+là vẽ biểu đồ với các số liệu này.
+
+98
+00:04:24,850 --> 00:04:27,040
+Nhìn vào nó, vì con người
+
+99
+00:04:27,040 --> 00:04:30,090
+rất giỏi chọn các kiểu và xác định mọi thứ
+
+100
+00:04:30,090 --> 00:04:31,090
+bằng trực quan.
+
+101
+00:04:31,090 --> 00:04:32,300
+Nên chúng ta hãy nhìn vào biểu đồ này.
+
+102
+00:04:32,300 --> 00:04:35,720
+Và chúng ta sẽ biết dự đoán của mình ở đâu.
+
+103
+00:04:35,720 --> 00:04:37,590
+Và giờ hãy tìm các thước đo thực tế.
+
+104
+00:04:37,590 --> 00:04:40,010
+Tôi sẽ mở rộng bảng số liệu này.
+
+105
+00:04:40,010 --> 00:04:43,290
+Phần này chúng ta đã có từ trước.
+
+106
+00:04:43,290 --> 00:04:45,320
+Mỗi hàng là một ngày.
+
+107
+00:04:45,320 --> 00:04:47,440
+Cột đầu tiên là dự đoán của tôi.
+
+108
+00:04:47,440 --> 00:04:50,060
+Cột thứ hai là thực tế đã xảy ra.
+
+109
+00:04:50,060 --> 00:04:52,490
+Và cột thứ ba là số hạng sai số.
+
+110
+00:04:52,490 --> 00:04:56,270
+Nó là kết quả có được khi lấy thực tế trừ cho dự đoán.
+
+111
+00:04:56,270 --> 00:04:59,500
+Và bạn có thể thấy trong trường hợp này,
+tôi đã tính tổng chúng ở đây.
+
+112
+00:04:59,500 --> 00:05:02,620
+Và cái này có được khi cộng với không.
+
+113
+00:05:02,620 --> 00:05:05,120
+Và nếu tôi nhìn vào đây ở giá trị trung bình,
+
+114
+00:05:05,120 --> 00:05:08,070
+sẽ thấy giá trị trung bình của 0 là 0.
+
+115
+00:05:08,070 --> 00:05:10,084
+Đó là cột sai số.
+
+116
+00:05:10,084 --> 00:05:11,750
+Sau đó tôi cộng cột khác,
+
+117
+00:05:11,750 --> 00:05:13,590
+là giá trị tuyệt đối của số hạng sai số.
+
+118
+00:05:13,590 --> 00:05:16,080
+Và bạn sẽ thấy, nó sẽ mất ký hiệu này.
+
+119
+00:05:16,080 --> 00:05:20,210
+Và bạn có thể thấy tổng này bằng 54,
+
+120
+00:05:20,210 --> 00:05:21,520
+vì tôi không triệt tiêu nữa.
+
+121
+00:05:21,520 --> 00:05:24,050
+Và giá trị trung bình của nó là 10,8.
+
+122
+00:05:24,050 --> 00:05:26,830
+Sau đó tôi thêm một cột bình phương của sai số.
+
+123
+00:05:26,830 --> 00:05:28,940
+Và bạn có thể thấy ở đây.
+
+124
+00:05:28,940 --> 00:05:32,010
+Sau đó tôi cũng thêm một cột
+
+125
+00:05:32,010 --> 00:05:35,360
+giá trị tuyệt đối của sai số trên giá trị thực tế.
+
+126
+00:05:35,360 --> 00:05:38,364
+Và khi tôi có được điều này,
+
+127
+00:05:38,364 --> 00:05:39,530
+sẽ rất dễ để hình dung ra thước đo này.
+
+128
+00:05:39,530 --> 00:05:42,190
+Tôi chỉ cần cộng từng cột lại
+
+129
+00:05:42,190 --> 00:05:44,600
+và tìm giá trị trung bình.
+
+130
+00:05:44,600 --> 00:05:46,306
+Vậy giá trị tuyệt đối của độ lệch trung bình,
+
+131
+00:05:46,306 --> 00:05:47,710
+tôi nhìn vào giá trị tuyệt đối của độ lệch này.
+
+132
+00:05:47,710 --> 00:05:51,840
+Nó sẽ là 10,8 khi lấy 54 chia cho 5.
+
+133
+00:05:51,840 --> 00:05:53,879
+Có 5 ngày.
+
+134
+00:05:53,879 --> 00:05:55,420
+Về căn bậc hai của sai số trung bình,
+
+135
+00:05:55,420 --> 00:05:59,170
+tôi sẽ lấy trung bình của bình phương các cột, là 126,8
+
+136
+00:05:59,170 --> 00:06:00,190
+và lấy căn.
+
+137
+00:06:00,190 --> 00:06:02,030
+Kết quả sẽ là 11,3.
+
+138
+00:06:02,030 --> 00:06:05,550
+Và sau đó MAPE là 21% có được khi lấy
+
+139
+00:06:05,550 --> 00:06:08,180
+tổng là 104% chia cho 5.
+
+140
+00:06:08,180 --> 00:06:10,390
+Vậy là rất dễ để tính được các thước đo này.
+
+141
+00:06:10,390 --> 00:06:12,260
+Chúng ta sẽ nói nhiều hơn về cách thức đánh đối giữa chúng
+
+142
+00:06:12,260 --> 00:06:15,191
+và cách bạn xử lý với chúng, và cách chúng
+
+143
+00:06:15,191 --> 00:06:17,440
+ảnh hưởng lẫn nhau-- hay cách chúng có liên quan tới nhau
+
+144
+00:06:17,440 --> 00:06:21,510
+trong bài giảng tới.
+

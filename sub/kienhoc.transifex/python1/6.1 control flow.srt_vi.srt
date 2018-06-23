@@ -1,0 +1,326 @@
+1
+00:00:01,939 --> 00:00:07,140
+quangdutran Thao reviewed
+Các bạn đã học về các kiểu dữ liệu khác nhau
+trong Python, trong đó có kiểu boolean.
+
+Before, you already learned about different
+Python types. Among those was the Boolean.
+
+2
+00:00:07,140 --> 00:00:10,610
+Các bạn còn nhớ cách dùng boolean để
+lấy một tập con của một mảng theo điều kiện chứ?
+
+3
+00:00:10,610 --> 00:00:15,599
+Trong bài này, tôi sẽ giảng thêm về
+các toán tử quan hệ như là dấu lớn hơn.
+
+4
+00:00:15,599 --> 00:00:21,450
+Bạn sẽ dùng chúng để biết hai giá trị trong Python
+quan hệ với nhau ra sao. Ví dụ,
+
+5
+00:00:21,450 --> 00:00:27,430
+bạn muốn kiểm tra 2 < 3 không. Bạn gõ 2 < 3
+sau đó ấn Enter. Vì kết quả đúng
+
+6
+00:00:27,430 --> 00:00:32,050
+nên chương trình trả về true. Bạn cũng có thể 
+kiểm tra hai giá trị có bằng nhau không
+
+7
+00:00:32,050 --> 00:00:38,059
+với dấu ==. Từ trường hợp này, ta thấy 2 == 3
+trả về kết quả false.
+
+8
+00:00:38,059 --> 00:00:43,530
+Bạn cũng có thể dùng toán tử quan hệ
+trực tiếp trên biến như thế này:
+
+9
+00:00:43,530 --> 00:00:47,390
+Đây là bảng tóm tắt các toán tử quan hệ.
+
+10
+00:00:47,390 --> 00:00:54,100
+Bạn đã biết dấu lớn hơn, nhỏ hơn, bằng,
+
+11
+00:00:54,100 --> 00:00:59,499
+lớn hơn hoặc bằng, nhỏ hơn hoặc bằng
+và không bằng. Sau này
+
+12
+00:00:59,499 --> 00:01:01,469
+sẽ có nhiều bài tập về toán tử.
+
+13
+00:01:01,469 --> 00:01:03,549
+Bước tiếp theo là kết hợp các giá trị boolean.
+
+14
+00:01:03,549 --> 00:01:10,100
+Bạn có thể dùng toán tử logic. Ba toán tử 
+thường thấy nhất là AND, OR và NOT.
+
+15
+00:01:10,100 --> 00:01:15,330
+AND sẽ hoạt động như cái tên của nó.
+Nó lấy hai giá trị boolean và trả về 'True' chỉ khi
+
+16
+00:01:15,330 --> 00:01:19,930
+cả hai giá trị là 'True'.
+Có nghĩa là 'true' AND 'true' bằng 'true'.
+
+17
+00:01:19,930 --> 00:01:24,390
+nhưng 'false' AND 'true' hoặc 'true' AND 'false'
+hoặc 'false' AND 'false' sẽ đều bằng
+
+18
+00:01:24,390 --> 00:01:25,680
+'false'.
+
+19
+00:01:25,680 --> 00:01:31,170
+Thay vì dùng boolean, ta có thể 
+dùng kết quả của các phép so sánh.
+
+20
+00:01:31,170 --> 00:01:35,630
+Ta có biến x = 12. Để kiểm tra xem x 
+có lớn hơn 5 và nhỏ hơn 15 không,
+
+21
+00:01:35,630 --> 00:01:42,140
+ta có thể dùng x > 5 AND x < 15. 
+Như bạn đã học,
+
+22
+00:01:42,140 --> 00:01:46,990
+phần đầu trả về 'true'. Phần thứ hai cũng
+trả về 'true'.
+
+23
+00:01:46,990 --> 00:01:53,080
+Vậy kết quả của biểu thức là 'true'.
+Kết quả này có lí vì 12 nằm giữa 5
+
+24
+00:01:53,080 --> 00:01:53,840
+và 15.
+
+25
+00:01:53,840 --> 00:01:58,330
+Toán tử OR cũng tương tự, nhưng sự khác biệt
+là chỉ cần ít nhất một trong hai giá trị boolean
+
+26
+00:01:58,330 --> 00:02:03,280
+là 'true' thì kết quả của toán tử OR
+là 'true'.
+
+27
+00:02:03,280 --> 00:02:08,030
+'true' OR 'true' = 'true,
+'true' OR 'false' hoặc 'false' OR 'true'
+
+28
+00:02:08,030 --> 00:02:14,450
+cũng bằng 'true'. Chỉ có 'false' OR 'false'
+thì mới bằng 'false'. Bạn có thể kết hợp
+
+29
+00:02:14,450 --> 00:02:19,550
+với biến, ví dụ kiểm tra biến y = 5, có nhỏ hơn
+
+30
+00:02:19,550 --> 00:02:27,550
+hoặc bằng 7 hay lớn hơn 13 không.
+5 < 7 là 'true', 7 > 13 là 'false'
+
+31
+00:02:27,550 --> 00:02:29,120
+Toán tử OR trả về 'true'.
+
+32
+00:02:29,120 --> 00:02:34,120
+Cuối cùng là toán tử NOT, viết bằng dấu chấm than.
+Đơn giản, nó sẽ phủ định
+
+33
+00:02:34,120 --> 00:02:40,450
+giá trị boolean mà bạn đang dùng.
+NOT true = false, NOT false = true.
+
+34
+00:02:40,450 --> 00:02:44,060
+Sẽ rất thú vị khi bạn có thể dùng
+các toán tử quan hệ và toán tử logic
+
+35
+00:02:44,060 --> 00:02:49,790
+để thay đổi hành động của chương trình.
+Tùy theo kết quả của phép so sánh,
+
+36
+00:02:49,790 --> 00:02:54,040
+bạn có thể sẽ muốn code chạy khác đi.
+Bạn có thể làm điều này
+
+37
+00:02:54,040 --> 00:02:58,440
+với các câu lệnh điều kiện if, else và elif.
+
+38
+00:02:58,440 --> 00:03:03,770
+Bắt đầu viết code nhé, control.py.
+Giả sử bạn có biến z = 4.
+
+39
+00:03:03,770 --> 00:03:10,209
+Nếu giá trị chẵn, in ra "z chẵn".
+Phần code này sẽ kiểm tra.
+
+40
+00:03:10,209 --> 00:03:15,069
+Nếu z chẵn thì toán tử % chia 2
+sẽ trả về số dư là 0.
+
+41
+00:03:15,069 --> 00:03:19,590
+Nếu chạy đoạn code này, Python sẽ kiểm tra
+điều kiện. Nếu đúng thì đoạn code tương ứng
+
+42
+00:03:19,590 --> 00:03:23,380
+sẽ được thực thi: z chẵn
+sẽ được in ra
+
+43
+00:03:23,380 --> 00:03:27,000
+Cùng so sánh nó với công thức
+cho một mệnh đề if
+
+44
+00:03:27,000 --> 00:03:32,720
+Nó thực hiện như sau: Nếu điều kiện đúng,
+thực thi biểu thức. Chú ý dấu hai chấm ở cuối và
+
+45
+00:03:32,720 --> 00:03:36,880
+bạn phải lùi vào đầu dòng 4 ô
+để nói cho Python biết
+
+46
+00:03:36,880 --> 00:03:42,209
+là bạn muốn làm gì nếu điều kiện đúng.
+Có thể thêm nhiều dòng nữa
+
+47
+00:03:42,209 --> 00:03:46,880
+ví dụ như thế này. Nếu bạn cho chạy
+code này, sẽ có 2 dòng được in ra.
+
+48
+00:03:46,880 --> 00:03:52,430
+Nếu điều kiện sai, biểu thức
+sẽ không được thực hiện, nếu ta đổi
+
+49
+00:03:52,430 --> 00:03:56,930
+z = 5 và chạy code thì
+sẽ không có gì in ra cả
+
+50
+00:03:56,930 --> 00:04:02,290
+Giả sử bạn muốn in ra là "x lẻ" 
+trong trường hợp này. Làm thế nào?
+
+51
+00:04:02,290 --> 00:04:06,530
+Bạn có thể dùng mệnh đề else như thế này.
+Nếu ta chạy code với z = 5
+
+52
+00:04:06,530 --> 00:04:12,540
+điều kiện sẽ sai, biểu thức trong phần else
+sẽ được thực thi.
+
+53
+00:04:12,540 --> 00:04:18,000
+Công thức chung là thế này: với mệnh đề else,
+bạn không cần đưa ra điều kiện,
+
+54
+00:04:18,000 --> 00:04:22,220
+Biểu thức của else sẽ được thực thi
+nếu điều kiện của mệnh đề if
+
+55
+00:04:22,220 --> 00:04:23,320
+là sai.
+
+56
+00:04:23,320 --> 00:04:29,310
+Có nhiều trường hợp bạn cần chương trình
+hành động tùy theo các điều kiện cụ thể.
+
+57
+00:04:29,310 --> 00:04:34,000
+Ví dụ bạn muốn in ra các số chia hết cho 2 và 3.
+Bạn có thể dùng elif
+
+58
+00:04:34,000 --> 00:04:37,900
+để hoàn thành việc đó. Ví dụ:
+
+59
+00:04:37,900 --> 00:04:42,650
+Bạn nghĩ đoạn code này sẽ in ra gì khi chạy?
+Nếu z = 3, điều kiện đầu tiên
+
+60
+00:04:42,650 --> 00:04:48,050
+là FALSE, nó sẽ nhảy đến điều kiện tiếp theo.
+Điều kiện này đúng nên 
+
+61
+00:04:48,050 --> 00:04:54,900
+câu lệnh print được thực thi.
+Giả sử z = 6. Cả hai mệnh đề if và elif
+
+62
+00:04:54,900 --> 00:05:00,850
+đều thỏa mãn. Liệu nó có in ra cả hai?
+Không. Khi Python gặp một điều kiện đúng,
+
+63
+00:05:00,850 --> 00:05:05,180
+nó thực hiện luôn phần code tương ứng
+và bỏ qua phần điều kiện còn lại.
+
+64
+00:05:05,180 --> 00:05:10,470
+Có nghĩa là điều kiện thứ hai này
+sẽ không bao giờ được thực thi
+
+65
+00:05:10,470 --> 00:05:13,830
+nên sẽ không có gì in ra.
+
+66
+00:05:13,830 --> 00:05:18,520
+Giờ bạn đã biết thêm về toán tử quan hệ,
+toán tử logic, điều khiển hướng thực thi,
+
+67
+00:05:18,520 --> 00:05:20,620
+đã đến lúc làm bài tập.
+

@@ -1,0 +1,497 @@
+1
+00:00:03,040 --> 00:00:05,379
+Thanh Loc
+Bạn có một cái hộp, một cái nhẫn và một hòn bi
+
+2
+00:00:05,389 --> 00:00:09,468
+Và chúng đều đang ở trên đỉnh một con dốc. Vì bạn biết vật lý học thường liên quan đến các con dốc đến thế nào
+
+3
+00:00:09,468 --> 00:00:14,838
+Đặc biệt là những con dốc mang tính giả thuyết. Gỉa sử con dốc này cho phép ma sát nghỉ nhưng không cho phép ma sát trượt
+
+4
+00:00:14,839 --> 00:00:18,530
+Bây giờ, hãy để cho cả ba vật thể tự trôi xuống cùng một lúc để cho chiếc hộp bắt đầu trượt 
+
+5
+00:00:18,530 --> 00:00:20,980
+và chiếc nhẫn và hòn bi lăn tròn cùng một lúc
+
+6
+00:00:20,980 --> 00:00:23,240
+Vậy, vật nào sẽ chạm đáy trước?
+
+7
+00:00:23,239 --> 00:00:25,209
+Câu trả lời có thể sẽ không như những gì bạn mong đợi
+
+8
+00:00:25,210 --> 00:00:29,130
+Ý tôi là chúng ta đều biết rằng khi bạn thả rơi hai vật thể từ cùng một độ cao -  ít nhất là trong môi trường chân không
+
+9
+00:00:29,129 --> 00:00:34,089
+thì chúng sẽ chạm mặt đất cùng lúc. Thậm chí bạn có cố thử với một tấm da hay một quả bóng bowling đi chăng nữa
+
+10
+00:00:34,090 --> 00:00:37,650
+Vậy bạn có thể nghĩ rằng tất cả ba vật thể sẽ trôi xuống chân dốc cùng lúc
+
+11
+00:00:37,649 --> 00:00:39,119
+Nhưng sự thực lại không như vậy
+
+12
+00:00:39,119 --> 00:00:43,309
+Lý do mà chúng ta phải làm như vậy là để xem năng lượng được phân bố ở một vật thể như thế nào khi nó đang lăn 
+
+13
+00:00:43,310 --> 00:00:49,340
+Và để hiểu được ai sẽ chiến thắng trong cuộc đua con dốc này và tại sao thì chúng ta phải nghiên cứu một vài đặc tính của chuyển động quay
+
+14
+00:00:49,340 --> 00:00:52,240
+Đặc biệt là mô men lực và mô men quán tính
+
+15
+00:00:52,240 --> 00:01:04,159
+[nhạc nền]
+
+16
+00:01:04,159 --> 00:01:06,280
+Bạn đã từng giữ chặt chốt cửa bằng một cái cờ lê chưa?
+
+17
+00:01:06,280 --> 00:01:08,180
+Hay đẩy một cái cửa mở? Tôi cũng đã từng như vậy
+
+18
+00:01:08,180 --> 00:01:12,360
+Khi chúng ta làm những việc này, thì chiếc cờ lê và tay nắm cửa đang thực hiện chức năng của mình bằng việc sử dụng mô men lực`
+
+19
+00:01:12,359 --> 00:01:16,179
+Chúng đã tác dụng một lực vuông góc với trục quay và khiến chốt cửa quay và cánh cửa mở 
+
+20
+00:01:16,180 --> 00:01:19,580
+Đó là do mô men lực- nó khiến cho mọi vật quay nhanh hơn hay chậm hơn
+
+21
+00:01:19,579 --> 00:01:22,310
+Nói cách khác, mô men lực làm thay đổi vận tốc góc của vật thể
+
+22
+00:01:22,310 --> 00:01:27,560
+Trong một vài tuần đầu của khóa học này, chúng ta đã mô tả lực tổng hợp khi thay đổi vận tốc tuyến tính 
+
+23
+00:01:27,560 --> 00:01:30,260
+di chuyển nhanh như thế nào qua không gian và hướng của chúng
+
+24
+00:01:30,260 --> 00:01:33,480
+Về cơ bản mô men lực cũng làm những việc tương tự nhưng là đối với chuyển động quay
+
+25
+00:01:33,480 --> 00:01:38,719
+Điều này có nghĩa là có rất nhiều mối liên hệ và các phương trình tác dụng lực sẽ tác dụng mô men lực theo cách tương tự
+
+26
+00:01:38,719 --> 00:01:43,739
+Nhưng trước hết,  hãy bàn về cách tính mô men lực như thế nào, bằng việc phân tích những gì đã diễn ra khi bạn mở cánh cửa 
+
+27
+00:01:43,739 --> 00:01:48,879
+Bạn càng kéo nắm cửa mạnh thì bạn sẽ càng gây ra nhiều mô men lực, và bạn sẽ càng thay đổi vận tốc góc của cánh cửa
+
+28
+00:01:48,879 --> 00:01:53,060
+Càng nhiều mô men lực tổng hợp tức là cánh cửa bắt đầu di chuyển nhanh hơn ở điểm chốt cửa
+
+29
+00:01:53,060 --> 00:01:56,900
+Do vậy, độ lớn của lực tác dụng là một nhân tố ảnh hưởng đến mô men lực
+
+30
+00:01:56,900 --> 00:02:01,140
+Và một nhân tố khác nữa đó là khoảng cách giữa lực và trục quay- hay còn gọi là bán kính
+
+31
+00:02:01,140 --> 00:02:03,500
+Bán kính càng lớn tức là càng nhiều mô men lực
+
+32
+00:02:03,500 --> 00:02:07,299
+Bạn chắc biết điều này nếu bạn đã từng cố gắng mở cánh cửa mà nắm đấm cửa lại quá gần với điểm chốt cửa
+
+33
+00:02:07,299 --> 00:02:10,788
+Tôi đoán rằng bạn chưa từng làm điều đó vì tay nắm cửa
+
+34
+00:02:10,788 --> 00:02:12,639
+thường được đặt xa với điểm chốt cửa
+
+35
+00:02:12,639 --> 00:02:16,579
+Cánh cửa mà tay nắm cửa lại gần với điểm chốt cửa sẽ khó mở hơn, vì bạn nhận được ít mô men lực hơn
+
+36
+00:02:16,580 --> 00:02:18,590
+cho cùng một lực`
+
+37
+00:02:18,590 --> 00:02:22,450
+Nhân tố cuối cùng ảnh hưởng đến mô men lực là góc giữa lực tác dụng và bán kính
+
+38
+00:02:22,449 --> 00:02:26,889
+Nếu bạn cố mở cánh cửa bằng cách kéo nắm cửa, giả sử song song với cánh cửa-
+
+39
+00:02:26,889 --> 00:02:30,189
+hướng đối diện từ điểm chốt cửa- cánh cửa sẽ không di chuyển
+
+40
+00:02:30,189 --> 00:02:33,849
+Vì phần duy nhất của lực ảnh hưởng đến sự quay của cánh cửa là lực
+
+41
+00:02:33,849 --> 00:02:35,379
+mà vuông góc với bán kính
+
+42
+00:02:35,389 --> 00:02:40,348
+Để đưa ý tưởng này vào từ ngữ toán học, mô men lực- ký hiệu bằng chữ cái Hy Lạp tẩu- 
+
+43
+00:02:40,348 --> 00:02:42,969
+bằng lực vuông góc nhân với bán kính
+
+44
+00:02:42,969 --> 00:02:46,870
+Và các bạn biết rằng chuyển động tịnh tiến , một lực tổng hợp trên một vật thể
+
+45
+00:02:46,870 --> 00:02:49,310
+bằng gia tốc của nó nhân với khối lượng?
+
+46
+00:02:49,310 --> 00:02:52,090
+Nó cũng khá giống khi áp dụng với chuyển động quay:
+
+47
+00:02:52,090 --> 00:02:58,140
+Lực tổng hợp trên một vật thể tương đương với gia tốc góc nhân với mô men quán tính
+
+48
+00:02:58,139 --> 00:03:01,878
+Chúng ta vừa mới nói về quán tính , ít nhất là nó liên quan đến chuyển động tịnh tiến
+
+49
+00:03:01,878 --> 00:03:05,278
+Về cơ bản,  vật thể có xu hướng tiếp tục làm những gì nó đang làm 
+
+50
+00:03:05,280 --> 00:03:08,598
+Một vật thể với nhiều quán tính thì khó tăng tốc hay giảm tốc độ hơn
+
+51
+00:03:08,598 --> 00:03:12,128
+Và trong chuyển động tịnh tiến, quán tính của một vật thể phụ thuộc vào khối lượng
+
+52
+00:03:12,128 --> 00:03:15,929
+Mô men quán tính hoạt động khá giống với chuyển động quay...
+
+53
+00:03:15,929 --> 00:03:18,360
+nhưng cách tốt nhất để định nghĩa là theo toán học
+
+54
+00:03:18,370 --> 00:03:22,239
+Cụ thể ,mô men quán tính bằng tổng các điểm khối lượng riêng của một vật thể 
+
+55
+00:03:22,239 --> 00:03:25,939
+nhân với bình phương khoảng cách từ trục quay
+
+56
+00:03:25,939 --> 00:03:30,359
+Cũng giống như việc quán tính liên quan đến khối lượng của vật thể trong chuyển động tịnh tiến 
+
+57
+00:03:30,360 --> 00:03:34,980
+mô men quán tính cũng liên quan đến khối lượng nhưng nó phụ thuộc vào việc khối lượng đó được phân tán như thế nào
+
+58
+00:03:34,979 --> 00:03:39,419
+khối lượng càng xa trục quay thì mô men quán tính của vật thể càng cao
+
+59
+00:03:39,430 --> 00:03:43,090
+Có thể suy ra phương trình cho mô men quán tính của vật thể
+
+60
+00:03:43,090 --> 00:03:46,340
+bằng việc lấy tích phân bình phương bán kính của vật thể 
+
+61
+00:03:46,348 --> 00:03:48,359
+Nhưng các tích phân này có thể rất phức tạp
+
+62
+00:03:48,360 --> 00:03:51,500
+Do vậy đây là một trong những trường hợp hiếm nếu bạn được yêu cầu giải quyết vấn đề 
+
+63
+00:03:51,500 --> 00:03:56,280
+sử dụng mô men quán tính và bạn vẫn chưa biết đến các phương trình, chắc là đáng để ghi nhớ chúng
+
+64
+00:03:56,289 --> 00:03:58,929
+Mô men lực và các lực cũng có một điểm chung khác
+
+65
+00:03:58,930 --> 00:04:03,090
+và đó sẽ là chìa khóa để tính toán vật thể nào sẽ chiến thắng trong cuộc đua đường dốc
+
+66
+00:04:03,090 --> 00:04:06,120
+Cụ thể là: mô men lực, cũng giống như các lực khác có khả năng làm việc
+
+67
+00:04:06,128 --> 00:04:10,268
+Có lẽ bạn vẫn nhớ ở bài trước về công việc và năng lượng, công việc được thực hiện bởi một lực
+
+68
+00:04:10,269 --> 00:04:13,049
+chỉ là tích phân của lực trên một khoảng cách nhất định
+
+69
+00:04:13,049 --> 00:04:17,709
+Tương tự, công việc được hoàn thành bởi mô men lực là tích phân của lực đó trên một một góc nhất định
+
+70
+00:04:17,709 --> 00:04:21,918
+Tức là bạn càng tác dụng nhiều mô men lực trong khi đang quay một vật thể thì bạn càng thực hiện được nhiều việc
+
+71
+00:04:21,918 --> 00:04:24,519
+Chúng ta cũng biết rằng công việc có thể thay đổi năng lượng của một hệ thống
+
+72
+00:04:24,519 --> 00:04:28,978
+Ví dụ, nó có thể thay đổi động năng- năng lượng của chuyển động
+
+73
+00:04:28,980 --> 00:04:34,740
+Trong trường hợp các vật thể di chuyển mà không quay, tất cả động năng trở thành chuyển động tịnh tiến
+
+74
+00:04:34,740 --> 00:04:38,579
+Trong trường hợp này, hãy nhớ rằng như chúng ta đã đề cập trước đó, động năng
+
+75
+00:04:38,579 --> 00:04:43,139
+của chuyển động tịnh tiến bằng 1/2 khối lượng vật thể, nhân với bình phương vận tốc
+
+76
+00:04:43,139 --> 00:04:48,598
+Nhưng khi một vật thể không quay, một vài trong động năng đó có hình thức của chuyển động quay
+
+77
+00:04:48,598 --> 00:04:51,918
+Và việc tính toán động năng của chuyển động quay khá dễ dàng
+
+78
+00:04:51,920 --> 00:04:57,720
+Trước tiên, vì mô men quán tính ảnh hưởng tới chuyển động quay tương tự cách mà khối lượng tác động tới chuyển động tịnh tiến
+
+79
+00:04:57,728 --> 00:05:03,158
+và thứ hai là vật thể đang quay có vận tốc góc chỉ như các vật thể tịnh tiến có vận tốc tuyến tính 
+
+80
+00:05:03,160 --> 00:05:09,720
+Do vậy, động năng của một vật thể trong chuyển động quay chỉ bằng 1/2 mô men quán tính nhân với bình phương vận tốc góc
+
+81
+00:05:09,720 --> 00:05:16,400
+Chỉ còn một nhân cuối cùng chúng ta cần cân nhắc trước khi chúng ta quay trở lại câu chuyện chiếc hộp, viên đá và chiếc nhẫn lăn xuống dốc
+
+82
+00:05:16,399 --> 00:05:18,259
+Và tác nhân đó là mô men động lượng
+
+83
+00:05:18,259 --> 00:05:22,598
+Chúng ta đã đề cập đến mô men tuyến tính và nó bằng với khối lượng vật thể nhân với vận tốc
+
+84
+00:05:22,600 --> 00:05:28,040
+Cũng có mô men động lượng bằng mô men quán tính của vật thể nhân với vận tốc góc
+
+85
+00:05:28,040 --> 00:05:31,460
+Cũng giống như mô men tuyến tính, mô men động lượng luôn được bảo toàn
+
+86
+00:05:31,459 --> 00:05:34,620
+Đó là một trong số những nguyên lý siêu cơ bản của vật lý học:
+
+87
+00:05:34,620 --> 00:05:38,680
+Bạn không thể tạo ra hay phá hủy mô men động lượng. Nó luôn phải phát đi nơi nào đó
+
+88
+00:05:38,680 --> 00:05:41,999
+Vậy nên bây giờ hãy quay trở lại với cuộc đua con dốc trong Khóa học vật lý cấp tốc 
+
+89
+00:05:41,999 --> 00:05:45,619
+Cả ba vật thể- chiếc hộp, viên bi và chiếc nhẫn đang ở cùng khoảng cách
+
+90
+00:05:45,619 --> 00:05:48,649
+Và những gì chúng ta muốn biết đó là chúng đạt được khoảng cách đó nhanh đến thế nào?
+
+91
+00:05:48,649 --> 00:05:52,809
+Câu trả lời với những gì đã diễn ra với năng lượng của mỗi vật thể khi nó di chuyển xuống con dốc
+
+92
+00:05:52,809 --> 00:05:57,800
+Khi chúng ở trên đỉnh con dốc, tất cả năng lượng của mỗi vật thể dưới hình thức cơ năng hấp dẫn
+
+93
+00:05:57,800 --> 00:06:01,759
+và nó bằng khối lượng vật thể nhân với g, nhân với chiều cao con dốc
+
+94
+00:06:01,759 --> 00:06:06,480
+Khi chúng di chuyển xuống con dốc , tất cả những cơ năng đó dần được chuyển hóa thành động năng 
+
+95
+00:06:06,480 --> 00:06:11,720
+Trong trường hợp chiếc hộp, tất cả cơ năng sẽ được chuyển hóa thành động năng tịnh tiến 
+
+96
+00:06:11,720 --> 00:06:13,740
+vì đó là loại chuyển động duy nhất mà chúng có
+
+97
+00:06:13,740 --> 00:06:17,100
+Vậy nên vật thể xuống dưới chân con dốc  đầu tiên chính là chiếc hộp
+
+98
+00:06:17,100 --> 00:06:22,780
+Bởi vì đối với cả viên bi và chiếc nhẫn, một vài cơ năng được chuyển hóa thành động năng quay
+
+99
+00:06:22,779 --> 00:06:26,938
+Và năng lượng quay đó không được sử dụng để khiến chúng di chuyển nhanh hơn xuống con dốc
+
+100
+00:06:26,939 --> 00:06:31,419
+Vậy nên bất cứ thứ gì trượt ít nhất là trên con dốc giả thuyết này mà không có ma sát động
+
+101
+00:06:31,418 --> 00:06:33,788
+sẽ tới chân dốc trước bất cứ vật gì lăn
+
+102
+00:06:33,788 --> 00:06:37,568
+Và khối lượng của vật thể thậm chí không có ảnh hưởng gì vì năng lượng của vật thể 
+
+103
+00:06:37,569 --> 00:06:40,639
+với khối lượng nhiều hay ít sẽ tăng hay giảm một cách phù hợp
+
+104
+00:06:40,639 --> 00:06:41,809
+Vậy nên chiếc hộp thắng
+
+105
+00:06:41,809 --> 00:06:42,729
+Nhưng vật nào là á quân?
+
+106
+00:06:42,728 --> 00:06:45,100
+Liệu chiếc nhận sẽ tới chân dốc tiếp theo hay viên bi?
+
+107
+00:06:45,100 --> 00:06:50,100
+Câu hỏi này có chút phức tạp, nhưng hóa ra viên bi lại tới trước chiếc nhẫn
+
+108
+00:06:50,100 --> 00:06:52,560
+Vì mô men quán tính của nó tháp hơn
+
+109
+00:06:52,569 --> 00:06:56,360
+Viên bi là một hình cầu đặc, nên khối lượng của nó được phân bổ gần trung tâm hơn
+
+110
+00:06:56,360 --> 00:07:01,169
+Nhưng khối lượng của chiếc nhẫn lại được phân bổ trong chiếc nhẫn- vậy nên khói lượng được phân bố xa phần giữa hơn
+
+111
+00:07:01,168 --> 00:07:03,908
+và khiến nó có mô men quán tính cao hơn
+
+112
+00:07:03,908 --> 00:07:06,248
+Nó có tác động gì đến tốc độ của viên bi so với của chiếc nhẫn?
+
+113
+00:07:06,249 --> 00:07:11,059
+Vì viên bi có mô men quán tính thấp hơn nên nó có thể chiếm phần vận tốc trong động năng lớn hơn
+
+114
+00:07:11,059 --> 00:07:14,689
+tức là nó di chuyển xuống dốc nhanh hơn
+
+115
+00:07:14,689 --> 00:07:15,899
+Vậy, kết quả chung cuộc là gì?
+
+116
+00:07:15,899 --> 00:07:19,209
+Chiếc hộp thắng, viên bi đến thứ hai  và chiếc nhẫn cuối cùng 
+
+117
+00:07:19,209 --> 00:07:22,869
+Hôm nay, các bạn đã học về mô men quay và mối liên hệ của nó đến gia tốc góc của vật thể
+
+118
+00:07:22,869 --> 00:07:27,319
+và mô men quán tính. Chúng ta cũng học về cách tính toán mô men quán tính
+
+119
+00:07:27,319 --> 00:07:31,479
+mô men động lượng, và thực tế rằng mô men quay có thể hoạt động. Cuối cùng chúng ta cũng tính toán 
+
+120
+00:07:31,478 --> 00:07:34,778
+điều gì xảy ra nếu bạn để một chiếc hộp, viên bi và chiếc nhẫn di chuyển xuống một con dốc
+
+121
+00:07:34,778 --> 00:07:38,949
+Khóa học vật lý cấp tốc được sản xuất với sự hợp tác của Xưởng phim kỹ thuật số PBS
+
+122
+00:07:38,949 --> 00:07:43,749
+Bạn có thể ghé qua kênh của họ để xem các chương trình thú vị như PBS Idea Channel, Blank on Blank, and Physics Girl.
+
+123
+00:07:43,749 --> 00:07:48,129
+chương này được quay phim ở hãng phim Doctor Cheryl C. Kinney
+
+124
+00:07:48,129 --> 00:07:53,028
+với sự hỗ trợ của những người nhiệt tình và nhóm đồ họa tuyệt vời của chúng tôi là Thought Cafe
+

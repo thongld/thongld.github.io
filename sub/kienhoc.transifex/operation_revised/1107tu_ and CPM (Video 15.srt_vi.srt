@@ -1,0 +1,536 @@
+0
+00:00:00,000 --> 00:00:00,001
+Thiện Ngô 15/10/2016
+
+1
+00:00:05,900 --> 00:00:08,519
+chào mừng  mọi người đã trở lại với khóa học quản trị vận hành
+
+2
+00:00:08,519 --> 00:00:11,620
+trong phần này, chúng ta sẽ tiếp tục với khái niệm
+
+3
+00:00:11,620 --> 00:00:15,070
+"đường tới hạn" và thời gian trì hoãn
+
+4
+00:00:15,070 --> 00:00:18,880
+và cách tính thời gian trì hoãn bằng phương pháp đường tới hạn
+
+5
+00:00:18,880 --> 00:00:22,420
+Hãy bắt đầu bằng cách nói đến thời gian trì hoãn là gì
+
+6
+00:00:22,420 --> 00:00:26,289
+Khi trải nghiệm một  dòng quy trình
+
+7
+00:00:26,289 --> 00:00:30,010
+có rất nhiều các hoạt đông khác nhau
+
+8
+00:00:30,010 --> 00:00:33,829
+nhiều trong số các hoạt động này được thục hiện theo những con đường khác nhau trog quá trình
+
+9
+00:00:33,829 --> 00:00:37,500
+một số các hoạt động khác không nhất thiết phải bắt đầu
+
+10
+00:00:37,500 --> 00:00:41,539
+đúng lúc, chúng ta biết rằng đường tới hạn
+
+11
+00:00:41,539 --> 00:00:45,469
+là con đường dài nhất xuyên suốt một quá trình không ngừng nghỉ
+
+12
+00:00:45,469 --> 00:00:49,179
+nhưng có một số con đường ngắn hơn thời gian, nghĩa là
+
+13
+00:00:49,179 --> 00:00:52,609
+có chỗ cho sự trì hoãn
+
+14
+00:00:52,609 --> 00:00:57,109
+chúng ta cần phải xác định được thời gian chênh lệch
+
+15
+00:00:57,109 --> 00:01:00,109
+giữa một hoạt động
+
+16
+00:01:00,109 --> 00:01:03,390
+có thể được bắt đầu tại thời điểm sớm nhất có thể
+
+17
+00:01:03,390 --> 00:01:06,569
+so với khi hoạt động đó phải được bắt đầu tại thời điểm muộn nhất phải bắt đầu
+
+18
+00:01:06,569 --> 00:01:10,510
+vậy thì thời gian trì hoãn
+
+19
+00:01:10,510 --> 00:01:13,710
+có thể nói là thời gian chênh lệch giữa
+
+20
+00:01:13,709 --> 00:01:16,949
+thời gian bắt đầu muộn nhất LST với
+
+21
+00:01:16,950 --> 00:01:21,060
+thời gian bắt đầu sớm nhất EST, nó cho chúng ta biết
+
+22
+00:01:21,060 --> 00:01:24,060
+một hoạt động có thể trì hoãn trong bao lâu
+
+23
+00:01:24,060 --> 00:01:27,909
+trước khi nó phải được thực hiện
+
+24
+00:01:27,909 --> 00:01:32,340
+để xác định thời gian trì hoãn, chúng ta sử dụng phương pháp đường tới hạn
+
+25
+00:01:32,340 --> 00:01:35,640
+chúng ta sẽ thực hiện bước tính xuôi thông qua mô hình dòng
+
+26
+00:01:35,640 --> 00:01:39,290
+để xác định khi nào tất cả các hoạt động
+
+27
+00:01:39,290 --> 00:01:42,350
+có thể bắt đầu ở thời điểm sớm
+
+28
+00:01:42,349 --> 00:01:47,519
+cũng như thời điểm sớm nhất họ sẽ hoàn thành, đó chính là
+
+29
+00:01:47,519 --> 00:01:48,069
+thời gian hoàn thành sớm
+
+30
+00:01:48,069 --> 00:01:51,298
+sau đó thực hiện bước tính ngược
+
+31
+00:01:51,299 --> 00:01:55,520
+thông qua mô hình dòng này để tìm ra thời gian muộn nhất
+
+32
+00:01:55,519 --> 00:01:58,920
+mỗi hoạt động bắt đầu và thời gian muộn nhất
+
+33
+00:01:58,920 --> 00:02:02,219
+mỗi hoạt động hoàn thành, đó là
+
+34
+00:02:02,218 --> 00:02:05,539
+thời gian bắt đầu muộn nhất LST và thời gian hoàn thành muộn nhất LFT
+
+35
+00:02:05,540 --> 00:02:09,100
+sau đó chúng ta so sánh hai kết quả với nhau,
+
+36
+00:02:09,099 --> 00:02:12,478
+nếu như có sự chênh lệch giữa thời gian bắt đầu sớm
+
+37
+00:02:12,478 --> 00:02:17,789
+và thời gian bắt đầu muộn thì sẽ có thời gian trì hoãn. chúng ta sẽ sử dụng
+
+38
+00:02:17,789 --> 00:02:20,000
+ ví dụ từ các vấn đề đường tới hạn
+
+39
+00:02:20,000 --> 00:02:23,280
+trước khi lau dọn một cơ quan
+
+40
+00:02:23,280 --> 00:02:27,110
+nếu chúng ta vẫn còn nhớ thì có sáu hoạt động, mỗi hoạt động ở
+
+41
+00:02:27,110 --> 00:02:27,900
+những thời điểm khác nhau.
+
+42
+00:02:27,900 --> 00:02:32,870
+và khi gộp chúng lại thì ta có một mô hình dòng quá trình giống như thế này
+
+43
+00:02:32,870 --> 00:02:36,810
+có ba con đường có thể thực hiện trong quá trình này
+
+44
+00:02:36,810 --> 00:02:40,890
+ABEF ACEF và ADF
+
+45
+00:02:40,889 --> 00:02:46,929
+mỗi con đường tốn một lượng thời gian khác nhau cho nên chúng ta cần chỉ ra
+
+46
+00:02:46,930 --> 00:02:51,340
+có bao nhiêu thời gian trì hoãn cho mỗi hoạt động khác nhau
+
+47
+00:02:51,340 --> 00:02:55,340
+trong quá trình. Ta sẽ thực hiện bước tính xuôi
+
+48
+00:02:55,340 --> 00:02:59,080
+đối với mô hình dòng bắt đầu với hoạt động A
+
+49
+00:02:59,080 --> 00:03:02,090
+nó bắt đầu ngay thời điểm 0
+
+50
+00:03:02,090 --> 00:03:05,110
+nó là hoạt động đầu tiên trong quá trình này
+
+51
+00:03:05,110 --> 00:03:08,700
+thời điểm 0 là khi hoạt động có thể bắt đầu
+
+52
+00:03:08,699 --> 00:03:12,179
+sau đó ta thêm 55 giây
+
+53
+00:03:12,180 --> 00:03:16,060
+mà hoạt động này kéo dài, vậy chúng ta biết là hoạt động này kết thúc
+
+54
+00:03:16,060 --> 00:03:19,128
+ở thời điểm 55. Ta bắt đầu ở thời điểm 0
+
+55
+00:03:19,128 --> 00:03:23,098
+cộng 55 giây cho hoạt động và hoàn thành ở thời điểm 55
+
+56
+00:03:23,098 --> 00:03:26,840
+bây giờ sang hoạt động B
+
+57
+00:03:26,840 --> 00:03:30,039
+phải chờ cho đến khi hoạt động A
+
+58
+00:03:30,039 --> 00:03:34,199
+được hoàn thành, nghĩa là hoạt động B không thể bắt đầu
+
+59
+00:03:34,199 --> 00:03:38,229
+cho đến khi hoạt động A hoàn thành, cho nên thời gian sớm nhất có thể bắt đầu
+
+60
+00:03:38,229 --> 00:03:43,969
+là giây thứ 55. Ta cộng 300 giây hoạt động đó kéo dài
+
+61
+00:03:43,969 --> 00:03:48,139
+cho nên hoạt động B kết thúc ở giây 355
+
+62
+00:03:48,139 --> 00:03:53,369
+chúng ta thực hiện tương tự với hoạt động C, nó có thể bắt đầu ở giây 55
+
+63
+00:03:53,370 --> 00:03:57,688
+và kết thúc ở giây 145, hoạt động D
+
+64
+00:03:57,688 --> 00:04:02,719
+bắt đầu ở giây 55 và kết thúc sau 360 giây
+
+65
+00:04:02,719 --> 00:04:07,449
+tức là tại giây 415, bây giờ hãy nhìn hoạt động E
+
+66
+00:04:07,449 --> 00:04:10,530
+hãy nhớ rằng hoạt động E
+
+67
+00:04:10,530 --> 00:04:13,750
+không thể bắt đầu cho đến khi hoạt động B và C
+
+68
+00:04:13,750 --> 00:04:17,048
+được hoàn thành, cho nên mặc dù
+
+69
+00:04:17,048 --> 00:04:20,509
+hoạt động C có thể hoàn thành ở giây thứ 145
+
+70
+00:04:20,509 --> 00:04:23,529
+hoạt động E không thể bắt đầu được
+
+71
+00:04:23,529 --> 00:04:27,059
+nó phải chờ cho hoạt động B được hoàn tất cho nên
+
+72
+00:04:27,060 --> 00:04:30,790
+thời gian bắt đầu sớm của E là giây thứ 355
+
+73
+00:04:30,790 --> 00:04:34,150
+Ta cộng thêm 40 giây cho hoạt động đó
+
+74
+00:04:34,149 --> 00:04:38,029
+thành 395 giây
+
+75
+00:04:38,029 --> 00:04:42,289
+như vậy hoạt động E hoàn thành ở giây 395
+
+76
+00:04:42,290 --> 00:04:46,479
+và hoạt động D hoàn thành ở giây 415
+
+77
+00:04:46,478 --> 00:04:50,779
+cả hai đều phải hoàn thành trước khi hoạt động F bắt đầu
+
+78
+00:04:50,779 --> 00:04:54,399
+hoạt động D hoàn thành sau E
+
+79
+00:04:54,399 --> 00:04:57,429
+cho nên thời gian bắt đầu sớm của F
+
+80
+00:04:57,430 --> 00:05:00,829
+là ở giây 450, sau đó cộng thêm 40 giây
+
+81
+00:05:00,829 --> 00:05:05,159
+của hoạt động này chúng ta có thời gian hoàn thành của nó là tại giây 455
+
+82
+00:05:05,160 --> 00:05:09,210
+đó là bước tính xuôi thông qua mô hình dòng quá trình này
+
+83
+00:05:09,209 --> 00:05:13,288
+và chúng ta đã tìm ra thời gian khi mọi thứ bắt đầu
+
+84
+00:05:13,288 --> 00:05:19,019
+bây giờ hãy thực hiện tính ngược
+
+85
+00:05:19,019 --> 00:05:25,879
+hoạt động F là hoạt động cuối cùng hoàn thành ở giây 455
+
+86
+00:05:25,879 --> 00:05:29,409
+vì vậy thời điểm sớm nhất nó có thể bắt đầu là giây thứ 415
+
+87
+00:05:29,410 --> 00:05:32,789
+và thời điểm muộn nhất có thể bắt đầu cũng là 415
+
+88
+00:05:32,788 --> 00:05:36,180
+vậy hoạt động đó có thời gian trì hoãn là 0
+
+89
+00:05:36,180 --> 00:05:39,910
+bây giờ hãy trở lại với hoạt động E
+
+90
+00:05:39,910 --> 00:05:44,139
+hoạt động E phải được hoàn thành trước giây 415
+
+91
+00:05:44,139 --> 00:05:48,418
+đó là thời gian hoàn thành muộn nhất là giây 450
+
+92
+00:05:48,418 --> 00:05:52,469
+nghĩa là khi trừ đi 40 giây của hoạt động này
+
+93
+00:05:52,470 --> 00:05:56,210
+thời gian muộn nhất có thể bắt đầu là giây 375
+
+94
+00:05:56,209 --> 00:05:59,668
+vậy là có sự chênh lệch giữa thời gian bắt đầu sớm và 
+
+95
+00:05:59,668 --> 00:06:03,038
+và thời gian bắt đầu muộn là 20 giây
+
+96
+00:06:03,038 --> 00:06:07,318
+đó là thời gian trì hoàn cho hoạt động E
+
+97
+00:06:07,319 --> 00:06:11,400
+thực hiện một phép tính khác ở hoạt động B
+
+98
+00:06:11,399 --> 00:06:15,649
+hoạt động B phải được hoàn thành ở giây 45
+
+99
+00:06:15,649 --> 00:06:18,899
+bởi vì đó là hoạt động muộn nhất F bắt đầu
+
+100
+00:06:18,899 --> 00:06:23,068
+nếu nó phải hoàn thành trước thời gian hoàn thành muộn giây 415
+
+101
+00:06:23,069 --> 00:06:26,910
+ta trừ ra 360 giây
+
+102
+00:06:26,910 --> 00:06:30,810
+thời gian cho D thì tìm được thời gian bắt đầu sớm nhất là
+
+103
+00:06:30,810 --> 00:06:34,459
+giây 55, không có chênh lệch giữa thời gian bắt đầu muộn
+
+104
+00:06:34,459 --> 00:06:38,288
+và thời gian bắt đầu sớm nên thời gian trì hoãn bằng không
+
+105
+00:06:38,288 --> 00:06:41,639
+hãy thực hiện một cái khác ở hoạt động B
+
+106
+00:06:41,639 --> 00:06:46,030
+nếu hoạt động B phải hoàn thành trước 
+
+107
+00:06:46,029 --> 00:06:49,349
+giây 375 bởi vì đó là hoạt động muộn nhất
+
+108
+00:06:49,350 --> 00:06:53,479
+có thể bắt đầu, chú ý rằng thời gian bắt đầu muộn nhất
+
+109
+00:06:53,478 --> 00:06:57,139
+của hoạt động sau nó
+
+110
+00:06:57,139 --> 00:07:00,840
+là thời gian hoàn thành muộn nhất của hoạt động đó
+
+111
+00:07:00,839 --> 00:07:04,269
+như vậy thời gian hoàn thành muộn nhất là giây 375
+
+112
+00:07:04,269 --> 00:07:08,478
+trừ ra 300 giây thời gian của hoạt động này
+
+113
+00:07:08,478 --> 00:07:12,240
+để có thời gian bắt đầu muộn là giây 75, ta có thời gian trì hoãn là
+
+114
+00:07:12,240 --> 00:07:16,490
+20 giây, thực hiện tương tự đối với hoạt động C
+
+115
+00:07:16,490 --> 00:07:20,699
+sau đó trở lại với hoạt động A
+
+116
+00:07:20,699 --> 00:07:23,960
+xem thử
+
+117
+00:07:23,959 --> 00:07:28,500
+hoạt động A phải được hoàn thành vào lúc nào
+
+118
+00:07:28,500 --> 00:07:31,610
+nó phải hoàn thành vào thời gian sớm nhất
+
+119
+00:07:31,610 --> 00:07:35,848
+của tất cả các hoạt động theo sau nó
+
+120
+00:07:35,848 --> 00:07:40,959
+như vậy hoạt động B phải bắt đầu ở giây 75
+
+121
+00:07:40,959 --> 00:07:45,689
+hoạt động C không phải bắt đầu cho đến giây 295
+
+122
+00:07:45,689 --> 00:07:49,610
+hoạt động D phải bắt đầu ở giây 55
+
+123
+00:07:49,610 --> 00:07:54,650
+nên thời gian muộn nhất có thể hoạt động A hoàn thành là giây 55
+
+124
+00:07:54,649 --> 00:07:58,388
+nên thời gian muộn nhất có thể bắt đầu là giây 0
+
+125
+00:07:58,389 --> 00:08:03,030
+do đó không có thời gian trì hoãn cho A, rất quan trọng để nhận ra rằng
+
+126
+00:08:03,029 --> 00:08:06,429
+khi bạn xem xét mô hình dòng quá trình này
+
+127
+00:08:06,430 --> 00:08:09,759
+tất cả các hoạt động trên đường tới hạn
+
+128
+00:08:09,759 --> 00:08:14,500
+sẽ luôn có một thời gian trì hoãn là 0
+
+129
+00:08:14,500 --> 00:08:18,459
+có thể phải mất vài lần để hiểu được điều này, tôi đề nghị các bạn
+
+130
+00:08:18,459 --> 00:08:20,628
+xem ví dụ này tầm hai lần
+
+131
+00:08:20,629 --> 00:08:25,569
+để đảm bảo mình hiểu được phép tính xuôi và phép tính ngược
+
+132
+00:08:25,569 --> 00:08:28,990
+trong bài tiếp theo chúng ta có thể sẽ nói về hiệu suất quá trình
+
+133
+00:08:28,990 --> 00:08:29,519
+gặp lại các bạn trong bài tiếp theo nhé.
+

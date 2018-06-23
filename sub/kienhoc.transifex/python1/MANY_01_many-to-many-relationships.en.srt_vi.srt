@@ -1,0 +1,1326 @@
+1
+00:00:09,789 --> 00:00:11,470
+DANGTHANH 05/08 Thao reviewed
+Ta đã học về cách sử dụng khóa ngoại trong cơ sở dữ liệu.
+
+2
+00:00:11,470 --> 00:00:12,840
+Ta đã học về phép nối JOIN
+
+3
+00:00:12,840 --> 00:00:17,260
+Ta cũng đã học về cách chuẩn hóa dữ liệu 
+để loại bỏ những thông tin trùng lặp
+
+4
+00:00:17,260 --> 00:00:20,770
+Nhưng vẫn còn một mô hình dữ liệu
+cơ bản khác mà ta cần phải học 
+
+5
+00:00:20,770 --> 00:00:23,640
+Đó là quan hệ nhiều - nhiều
+
+6
+00:00:23,640 --> 00:00:27,460
+Cho đến nay ta mới chỉ học về
+mối quan hệ một - nhiều.
+
+7
+00:00:27,460 --> 00:00:30,640
+Như một album có nhiều bài hát
+
+8
+00:00:30,640 --> 00:00:35,050
+Ở cuối các mũi tên, như ta thấy trên những sơ đồ
+mô hình dữ liệu dạng chân chim (crow's foot),
+
+9
+00:00:35,050 --> 00:00:38,720
+một đầu gồm nhiều trường dữ liệu
+và đầu kia chỉ có một.
+
+10
+00:00:38,720 --> 00:00:42,310
+Như một bên là album và bên kia là nhiều bài hát
+
+11
+00:00:42,310 --> 00:00:44,450
+Đó là những gì ta đã học
+
+12
+00:00:44,450 --> 00:00:47,250
+Ta có một khóa ngoại ở phía nhiều.
+
+13
+00:00:47,250 --> 00:00:51,640
+Điều này cho phép có 
+rất rất nhiều bài hát trong một album
+
+14
+00:00:51,640 --> 00:00:54,550
+Và một album khác cũng lại có rất rất nhiều bài hát.
+
+15
+00:00:54,550 --> 00:00:55,730
+Phải chứ? Về ý tưởng là vậy.
+
+16
+00:00:55,730 --> 00:01:00,210
+Có một nhóm các bài hát
+cùng chung album, đây chính là
+
+17
+00:01:00,210 --> 00:01:06,210
+sự trùng lặp thông tin ta đã học, gọi là
+quan hệ nhiều - một hoặc một - nhiều, OK?
+
+18
+00:01:06,210 --> 00:01:11,660
+Đây là một dạng mô hình dữ liệu 
+và cũng là dạng phổ biến nhất.
+
+19
+00:01:11,660 --> 00:01:17,160
+Ta có thể thấy điều này trong các bảng
+có chứa các trường dữ liệu genre_id hoặc album_id
+
+20
+00:01:17,160 --> 00:01:21,700
+Ở đây có sự trùng lặp dữ liệu. Đây là phía nhiều
+trong quan hệ một - nhiều, do đó có
+
+21
+00:01:21,700 --> 00:01:23,660
+rất nhiều genre_id cho mỗi cái bên này.
+
+22
+00:01:23,660 --> 00:01:27,640
+Cũng giống như mối quan hệ sinh học giữa mẹ và trẻ.
+
+23
+00:01:27,640 --> 00:01:30,730
+Về mặt sinh học, một bà mẹ có thể có nhiều con
+
+24
+00:01:30,730 --> 00:01:32,870
+Đây cũng là một sơ đồ chân chim
+
+25
+00:01:32,870 --> 00:01:38,270
+Chân chim biểu thị cho bên nhiều,
+còn bên một thì được biểu thị ở ngay đây.
+
+26
+00:01:39,270 --> 00:01:41,510
+Khi ta vẽ những sơ đồ mô hình dữ liệu này,
+
+27
+00:01:41,510 --> 00:01:43,380
+việc này ta chưa đề cập nhiều,
+
+28
+00:01:43,380 --> 00:01:47,110
+ta luôn vẽ chúng làm sao để thể hiện được sự nhiều,
+
+29
+00:01:47,110 --> 00:01:49,290
+hoặc số phần tử ở mỗi đầu của mối quan hệ.
+
+30
+00:01:49,290 --> 00:01:51,410
+Đó là quan hệ một - nhiều
+
+31
+00:01:51,410 --> 00:01:56,530
+Tuy vậy, đôi khi ta có mối quan hệ nhiều - nhiều giữa các dữ liệu
+
+32
+00:01:56,530 --> 00:02:01,000
+như dữ liệu về âm nhạc mà chúng ta đã thực hành,
+
+33
+00:02:01,000 --> 00:02:04,130
+tôi đã đề cập rằng có nhiều nghệ sĩ trong một album.
+
+34
+00:02:04,130 --> 00:02:06,830
+Lúc đó tôi bảo chưa cần bận tâm làm gì,
+nhưng bây giờ ta sẽ học về điều này.
+
+35
+00:02:06,830 --> 00:02:10,070
+Một ví dụ khác mà tôi lấy từ Wikipedia
+là mối quan hệ giữa sách và các tác giả
+
+36
+00:02:10,070 --> 00:02:13,296
+Tất nhiên có nhiều tác giả và nhiều sách
+
+37
+00:02:13,296 --> 00:02:18,630
+Một tác giả có thể viết nhiều sách
+
+38
+00:02:18,630 --> 00:02:23,490
+và một quyển sách có thể gắn với nhiều tác giả.
+
+39
+00:02:23,490 --> 00:02:26,460
+Do đó đây không phải là quan hệ một - nhiều.
+
+40
+00:02:26,460 --> 00:02:28,580
+Ta gọi đó là quan hệ nhiều - nhiều
+
+41
+00:02:28,580 --> 00:02:31,170
+Cả hai đầu của mối quan hệ này đều là nhiều - nhiều.
+
+42
+00:02:31,170 --> 00:02:36,840
+Tuy vậy, không có cách nào để thực hiện
+đối với các bảng trong cơ sở dữ liệu
+
+43
+00:02:36,840 --> 00:02:39,970
+Chúng ta không thể đặt một khóa ngoại đơn
+ở phía này
+
+44
+00:02:39,970 --> 00:02:41,410
+Quay lại nào.
+
+45
+00:02:41,410 --> 00:02:44,370
+Ta không thể chỉ đặt 1 khóa ngoại trong bảng này
+để chỉ về phía bảng Books (sách).
+
+46
+00:02:44,370 --> 00:02:47,390
+Và ta cũng không thể chỉ đặt 1 khóa ngoại
+trong bảng Books chỉ về phía bảng Authors (tác giả).
+
+47
+00:02:47,390 --> 00:02:49,390
+Bởi vì như thế mỗi đầu sẽ chỉ có một.
+
+48
+00:02:49,390 --> 00:02:53,130
+Bởi vậy, ta cần phải xây dựng một bảng trung gian.
+
+49
+00:02:53,130 --> 00:02:58,240
+Trong Wikipedia, người ta gọi đó là bảng nối (junction table),
+và còn nhiều tên gọi khác.
+
+50
+00:02:58,240 --> 00:03:00,960
+Để làm điều này chúng ta sẽ tạo ra một bảng nhỏ
+
+51
+00:03:00,960 --> 00:03:03,380
+Ta sẽ vẫn có bảng Books và bảng Authors
+
+52
+00:03:03,380 --> 00:03:07,970
+Nhưng ta có thêm 1 bảng chỉ để dựng
+mối liên kết giữa 2 bảng Books và Authors.
+
+53
+00:03:07,970 --> 00:03:13,010
+Như vậy chúng ta đã tách mối quan hệ nhiều - nhiều
+
+54
+00:03:13,010 --> 00:03:18,130
+thành một quan hệ nhiều - một ở đây,
+và một quan hệ nhiều - một ở kia.
+
+55
+00:03:18,130 --> 00:03:22,710
+Sau đó ta có thể mô hình hóa bình thường theo các kỹ thuật
+
+56
+00:03:22,710 --> 00:03:23,630
+mà ta vẫn dùng.
+
+57
+00:03:23,630 --> 00:03:29,030
+Cuối cùng ta có một bảng với
+hai khóa ngoại và không có khóa chính.
+
+58
+00:03:29,030 --> 00:03:33,880
+Giờ ta hãy xem khi ta thật sự xây dựng
+mô hình thì nó có dạng như thế nào.
+
+59
+00:03:33,880 --> 00:03:39,650
+Đây là một mối quan hệ tôi rất quan tâm:
+khóa học và người dùng.
+
+60
+00:03:39,650 --> 00:03:44,080
+Một người có thể là thành viên của nhiều khóa học 
+
+61
+00:03:44,080 --> 00:03:48,650
+và một khóa học có thể có nhiều người dùng.
+Đó chính là mối quan hệ giữa khóa học và người dùng,
+
+62
+00:03:48,650 --> 00:03:52,050
+tức mối quan hệ thành viên, có dạng nhiều - nhiều.
+
+63
+00:03:52,050 --> 00:03:54,410
+Nhưng chúng ta không thể mô phỏng điều này một cách trực tiếp
+
+64
+00:03:54,410 --> 00:03:57,360
+Vậy ta cần tạo thêm một bảng nhỏ trung gian.
+
+65
+00:03:57,360 --> 00:04:01,190
+Ta gọi đây là bảng thành viên và đặt tên là Member
+
+66
+00:04:01,190 --> 00:04:03,480
+Ta vẫn có các bảng User (người dùng) và Course (khóa học).
+
+67
+00:04:03,480 --> 00:04:06,140
+Và trong mỗi bảng Course và User, ta có một khóa chính.
+
+68
+00:04:06,140 --> 00:04:09,610
+Ta có bảng Member gồm 2 khóa ngoại
+
+69
+00:04:09,610 --> 00:04:11,270
+nằm trên các dòng.
+
+70
+00:04:11,270 --> 00:04:15,100
+Đây là một liên kết,
+nếu tất cả các khóa học ở một phía,
+
+71
+00:04:15,100 --> 00:04:17,060
+và tất cả người dùng ở một phía khác,
+
+72
+00:04:17,060 --> 00:04:20,350
+thì mỗi mối liên kết, có thể là bạn bè của họ,
+
+73
+00:04:20,350 --> 00:04:23,070
+sẽ có một dòng
+
+74
+00:04:23,070 --> 00:04:26,870
+liên kết một khóa cụ thể với một người dùng cụ thể.
+
+75
+00:04:26,870 --> 00:04:28,560
+Đó là cách mà liên kết nhiều - nhiều hoạt động.
+
+76
+00:04:28,560 --> 00:04:32,930
+Nguyên lý là tách mối quan hệ nhiều - nhiều
+
+77
+00:04:32,930 --> 00:04:36,110
+thành hai quan hệ nhiều - một,
+
+78
+00:04:36,110 --> 00:04:40,140
+cách này sẽ giúp mô phỏng mối quan hệ nhiều - nhiều
+giữa hai bảng
+
+79
+00:04:40,140 --> 00:04:42,680
+Ta không tạo ra một id ở bảng Member
+
+80
+00:04:42,680 --> 00:04:46,080
+Bởi vì ta có thể dùng một khóa phức hợp,
+
+81
+00:04:46,080 --> 00:04:49,930
+ở đây, hai trường dữ liệu này
+kết hợp tạo thành khóa chính cho bảng.
+
+82
+00:04:49,930 --> 00:04:53,530
+Hai trường dữ liệu này đều có dạng số
+nên cho phép trùng lặp,
+
+83
+00:04:53,530 --> 00:04:55,420
+điều này thật tuyệt.
+
+84
+00:04:55,420 --> 00:05:00,040
+Đôi khi, ta có thể đặt một vai trò ở đây để nêu rõ
+
+85
+00:05:00,040 --> 00:05:01,350
+đó là các khóa học và người dùng.
+
+86
+00:05:01,350 --> 00:05:06,328
+Ta có thể chỉ ra rằng trong cặp này
+thì người dùng là giáo viên,
+
+87
+00:05:06,328 --> 00:05:10,629
+còn trong cặp kia thì là sinh viên chẳng hạn.
+
+88
+00:05:10,629 --> 00:05:15,337
+Đôi khi ta có thể thêm một số thông tin
+phụ trên bảng liên kết
+
+89
+00:05:15,337 --> 00:05:18,388
+vào dưới đây.
+
+90
+00:05:18,388 --> 00:05:19,448
+Được chứ?
+
+91
+00:05:19,448 --> 00:05:23,246
+Vậy ta tạo ra một bảng trung gian nhỏ.
+Giờ ta sẽ thực hành với một số cơ sở dữ liệu.
+
+92
+00:05:23,246 --> 00:05:27,669
+Tôi sẽ bắt đầu với một cơ sở dữ liệu trắng.
+Tôi sẽ tạo ra bảng User,
+
+93
+00:05:27,669 --> 00:05:31,844
+điểm khác biệt chính là tôi sẽ
+thiết lập khóa chính cho người dùng.
+
+94
+00:05:31,844 --> 00:05:36,081
+Tôi sẽ tạo bảng Course. Và đây là
+dạng khóa chính tiêu chuẩn.
+
+95
+00:05:36,081 --> 00:05:40,300
+Bảng Users sẽ có tên và email của người dùng,
+và bảng Course sẽ có tên khóa học
+
+96
+00:05:40,300 --> 00:05:43,520
+Đây là những điều bình thường chúng ta vẫn làm.
+
+97
+00:05:43,520 --> 00:05:46,310
+Nhưng bây giờ ta sẽ tạo ra một bảng nhỏ
+dùng để liên kết
+
+98
+00:05:46,310 --> 00:05:49,870
+bảng này sẽ có hai trường dữ liệu
+đặt tên là role_id và course_id.
+
+99
+00:05:49,870 --> 00:05:52,210
+Tôi nhầm, phải là user_id và course_id.
+
+100
+00:05:52,210 --> 00:05:56,360
+Ta sẽ đưa vào một ít dữ liệu ngay ở giữa đây.
+
+101
+00:05:56,360 --> 00:05:57,360
+Rồi ta sẽ đưa vào vai trò của người dùng.
+
+102
+00:05:57,360 --> 00:06:02,330
+Điều này cho phép ta biết được đây là giáo viên hay sinh viên.
+
+103
+00:06:02,330 --> 00:06:05,190
+Tiếp theo ta tạo vật thay thế cho khóa chính này
+
+104
+00:06:05,190 --> 00:06:09,690
+bằng cách kết hợp 2 cột lại thành một khóa chính.
+
+105
+00:06:09,690 --> 00:06:11,200
+Đây là một sự kết hợp.
+
+106
+00:06:11,200 --> 00:06:12,770
+Như vậy nó sẽ buộc phải là giá trị duy nhất.
+
+107
+00:06:14,550 --> 00:06:19,140
+Sự kết hợp giữa user_id và course_id phải là duy nhất.
+
+108
+00:06:19,140 --> 00:06:19,640
+OK?
+
+109
+00:06:21,730 --> 00:06:22,890
+Hãy cùng xem nào.
+
+110
+00:06:24,070 --> 00:06:26,300
+Giờ ta sẽ chạy một số đoạn mã.
+
+111
+00:06:26,300 --> 00:06:34,120
+Tôi khuyên rằng bạn nên khởi đầu
+với một cơ sở dữ liệu mới.
+
+112
+00:06:34,120 --> 00:06:35,630
+Chỉ cần ấn vào New Database. Phải không?
+
+113
+00:06:36,810 --> 00:06:43,910
+Tôi sẽ đặt tên nó là sql3, bấm vào New Database.
+
+114
+00:06:43,910 --> 00:06:47,358
+Tôi sẽ không tạo ra bảng ở kia
+mà chạy Execute SQL,
+
+115
+00:06:47,358 --> 00:06:51,530
+hy vọng các bạn đã quen dùng cách này.
+
+116
+00:06:51,530 --> 00:06:52,830
+Sau đó, tôi sẽ chép lại nó.
+
+117
+00:06:52,830 --> 00:06:59,820
+Tôi sẽ chép hai cái này.
+
+118
+00:06:59,820 --> 00:07:02,099
+Đầu tiên, ta sẽ chép hai câu lệnh CREATE TABLE.
+
+119
+00:07:05,559 --> 00:07:08,700
+Tôi sẽ đặt dấu chấm phẩy ở cuối,
+như vậy ta có thể thực thi cả hai.
+
+120
+00:07:08,700 --> 00:07:12,560
+Hãy xem chúng có hoạt động không.
+
+121
+00:07:13,570 --> 00:07:17,090
+Rồi, tôi đã có khóa học và người dùng
+gồm khóa chính, tựa đề, id, tên,
+
+122
+00:07:17,090 --> 00:07:18,720
+chính xác những gì ta cần.
+
+123
+00:07:18,720 --> 00:07:22,060
+Và bây giờ chúng ta sẽ
+
+124
+00:07:22,060 --> 00:07:24,330
+thực thi câu lệnh SQL để tạo ra bảng nối.
+
+125
+00:07:30,000 --> 00:07:33,090
+Tôi sẽ dán nó vào đây và chạy câu lệnh.
+
+126
+00:07:35,990 --> 00:07:39,150
+Xem nó có hiệu quả không nào... Được rồi.
+
+127
+00:07:39,150 --> 00:07:40,980
+Tất cả đều tốt.
+
+128
+00:07:42,410 --> 00:07:44,160
+Bây giờ ta sẽ nhập một số thông tin vào.
+
+129
+00:07:44,160 --> 00:07:45,230
+Nào cùng xem một số dữ liệu.
+
+130
+00:07:45,230 --> 00:07:49,440
+Khi thao tác xong ta sẽ được cái này.
+
+131
+00:07:49,440 --> 00:07:52,180
+Và ta sẽ thêm một số người dùng
+và một số khóa học vào,
+
+132
+00:07:52,180 --> 00:07:54,370
+hãy nhìn qua dữ liệu trước khi ta thêm vào.
+
+133
+00:07:55,920 --> 00:08:00,100
+Bởi vì khóa chính được tự thêm vào
+theo thứ tự tăng dần
+
+134
+00:08:00,100 --> 00:08:03,650
+ta chỉ cần thêm vào tên và email là jane@tsugi.org
+
+135
+00:08:03,650 --> 00:08:07,210
+Ta thêm vào ba người dùng
+và ta sẽ có id của các người dùng.
+
+136
+00:08:07,210 --> 00:08:10,660
+Ta cũng sẽ thêm vào ba khóa học
+là Python, SQL và PHP.
+
+137
+00:08:11,680 --> 00:08:12,680
+Ta sẽ chỉ thêm như vậy.
+
+138
+00:08:12,680 --> 00:08:14,070
+Không có gì đặc biệt cả.
+
+139
+00:08:14,070 --> 00:08:16,738
+Không có gì khác với những gì ta vẫn thường làm.
+
+140
+00:08:25,109 --> 00:08:26,046
+Đến phần thực thi câu SQL.
+
+141
+00:08:26,046 --> 00:08:29,699
+Các câu lệnh này có dấu chấm phẩy ở cuối để ngăn cách.
+
+142
+00:08:33,539 --> 00:08:36,050
+Tất cả câu lệnh đã chạy xong, ta sẽ xem qua dữ liệu.
+
+143
+00:08:36,050 --> 00:08:36,940
+Ta xem thông tin khóa học trước.
+
+144
+00:08:36,940 --> 00:08:39,350
+Và sau đó đến dữ liệu người dùng.
+
+145
+00:08:39,350 --> 00:08:41,920
+Và chưa có gì về thông tin thành viên.
+
+146
+00:08:41,920 --> 00:08:45,730
+Nghĩa là cơ sở dữ liệu chưa biết
+ta đã làm một số việc như thế.
+
+147
+00:08:45,730 --> 00:08:47,740
+Ta mới chỉ nhập một số thông tin ở đây.
+
+148
+00:08:47,740 --> 00:08:50,420
+Và ta thiết lập khóa chính
+
+149
+00:08:50,420 --> 00:08:51,050
+cho cột id này.
+
+150
+00:08:51,050 --> 00:08:52,600
+Python có khóa chính là 1.
+
+151
+00:08:52,600 --> 00:08:54,910
+SQL là 2 và PHP là 3.
+
+152
+00:08:54,910 --> 00:08:58,499
+Bây giờ, ta sẽ nhập một số thông tin
+vào bảng Member (thành viên),
+
+153
+00:08:58,499 --> 00:09:00,550
+gồm cột user_id, course_id và role.
+
+154
+00:09:00,550 --> 00:09:02,790
+Ta sẽ nối một người dùng đến một khóa học
+
+155
+00:09:02,790 --> 00:09:05,380
+và gán vai trò thành viên cho người đó.
+
+156
+00:09:05,380 --> 00:09:11,500
+Đây là thông tin thành viên, ai là thành viên
+của khóa nào và một số thông tin khác.
+
+157
+00:09:11,500 --> 00:09:13,420
+Có một số thứ khác mà bạn có thể
+
+158
+00:09:13,420 --> 00:09:15,560
+tạo thêm cột để thể hiện.
+
+159
+00:09:15,560 --> 00:09:18,980
+Vậy hãy xem ta phải làm gì để
+
+160
+00:09:18,980 --> 00:09:20,690
+thêm người dùng vào khóa học.
+
+161
+00:09:20,690 --> 00:09:21,380
+Đúng không?
+
+162
+00:09:21,380 --> 00:09:23,120
+Ta có các con số này.
+
+163
+00:09:23,120 --> 00:09:27,050
+Rồi việc tiếp theo ta cần làm 
+
+164
+00:09:27,050 --> 00:09:32,990
+là thêm vào bảng Member
+thông tin ghi danh cho khóa học.
+
+165
+00:09:32,990 --> 00:09:36,610
+Ta sẽ đưa vào user_id, course_id, khóa ngoại và vai trò.
+
+166
+00:09:36,610 --> 00:09:39,770
+Dòng này nghĩa là người dùng 1 sẽ học khóa 1
+
+167
+00:09:39,770 --> 00:09:42,300
+Ta gán cho người dùng 1 là giáo viên, OK?
+
+168
+00:09:42,300 --> 00:09:43,520
+Và ta gán
+
+169
+00:09:44,680 --> 00:09:47,390
+người dùng 2 của khóa 1 là một sinh viên.
+
+170
+00:09:47,390 --> 00:09:50,350
+Người dùng 3 của khóa 1 tiếp tục là sinh viên.
+
+171
+00:09:50,350 --> 00:09:52,640
+Người dùng 1 của khóa 2 là sinh viên.
+
+172
+00:09:52,640 --> 00:09:55,220
+Người dùng 2 của khóa 2 là một giáo viên.
+
+173
+00:09:55,220 --> 00:09:57,030
+Cứ thế tiếp tục...
+
+174
+00:09:57,030 --> 00:10:01,470
+Ta biết những con số này mang ý nghĩa gì nên
+
+175
+00:10:01,470 --> 00:10:03,430
+ta sẽ biết cần phải dùng số nào.
+
+176
+00:10:03,430 --> 00:10:04,950
+Khi biết cần phải dùng số nào
+
+177
+00:10:04,950 --> 00:10:07,370
+ta có thể nhập đúng con số cần
+trong câu lệnh chèn.
+
+178
+00:10:07,370 --> 00:10:09,250
+Đó là cách ta tạo ra các liên kết.
+
+179
+00:10:10,770 --> 00:10:17,590
+Ta sẽ tiếp tục chạy các câu lệnh,
+
+180
+00:10:20,590 --> 00:10:25,470
+đến SQL và chèn tất cả vào.
+
+181
+00:10:25,470 --> 00:10:25,970
+Ấn chuột.
+
+182
+00:10:28,349 --> 00:10:30,179
+Hi vọng là tôi không ấn nhầm thành 2 lần.
+
+183
+00:10:33,219 --> 00:10:34,370
+Tốt rồi, tôi không nhầm.
+
+184
+00:10:34,370 --> 00:10:35,720
+Mừng quá!
+
+185
+00:10:35,720 --> 00:10:37,810
+Để tôi refresh cho chắc chắn là
+không làm nhầm thành 2 lần.
+
+186
+00:10:37,810 --> 00:10:42,550
+OK, đây là các con số được đưa vào
+qua các câu lệnh vừa rồi.
+
+187
+00:10:42,550 --> 00:10:46,230
+Giáo viên, giáo iên, giáo viên,
+khóa học và sinh viên. OK?
+
+188
+00:10:46,230 --> 00:10:49,670
+Bây giờ những gì ta có là
+
+189
+00:10:49,670 --> 00:10:55,390
+trong cơ sở dữ liệu, ta đã kết nối
+những cái này lại với nhau.
+
+190
+00:10:55,390 --> 00:10:56,725
+Chúng đã liên kết với nhau phải không?
+
+191
+00:10:56,725 --> 00:11:00,700
+Ta có bảng User, bảng Course,
+
+192
+00:11:00,700 --> 00:11:05,920
+ta có liên kết từ đây sang đây
+và từ đây sang đây.
+
+193
+00:11:05,920 --> 00:11:08,720
+Và ta tạo nên một ít thông tin
+
+194
+00:11:08,720 --> 00:11:11,020
+về mối liên kết.
+
+195
+00:11:11,020 --> 00:11:13,340
+Ta gọi nó như vậy, OK?
+
+196
+00:11:13,340 --> 00:11:16,860
+Nào, hãy truy xuất một số thông tin từ bảng này.
+
+197
+00:11:16,860 --> 00:11:21,817
+Ta sẽ viết câu lệnh lựa chọn,
+
+198
+00:11:21,817 --> 00:11:25,069
+SELECT User.name, Member.role, và sau đó Course.title.
+
+199
+00:11:25,069 --> 00:11:28,340
+Ta sẽ chọn những thông tin đó từ User,
+
+200
+00:11:28,340 --> 00:11:32,453
+nối với Member, nối với Course.
+
+201
+00:11:32,453 --> 00:11:37,328
+Ta sẽ nối tất cả lại với nhau
+vào một hàng dài.
+
+202
+00:11:37,328 --> 00:11:42,983
+Sử dụng mệnh đề ON khi
+Member.user_id bằng với id của người dùng,
+
+203
+00:11:42,983 --> 00:11:50,320
+và ở bên khóa học thì id khóa học
+trong Member bằng với id trong Course.
+
+204
+00:11:50,320 --> 00:11:52,290
+Member.course_id bằng với Course.id
+
+205
+00:11:52,290 --> 00:11:54,810
+Giờ ta sẽ làm một điều rất tuyệt.
+
+206
+00:11:54,810 --> 00:11:57,760
+Ta sẽ sắp xếp theo tên khóa học
+rồi đến vai trò của thành viên.
+
+207
+00:11:57,760 --> 00:11:58,390
+The way these.
+
+208
+00:11:58,390 --> 00:12:01,590
+Vai trò của thành viên giảm dần,
+và sau đó là tên người dùng.
+
+209
+00:12:01,590 --> 00:12:06,790
+Có nghĩa là, quyền ưu tiên sẽ
+thuộc về tựa đề khóa học.
+
+210
+00:12:06,790 --> 00:12:08,990
+Vai trò của thành viên là ưu tiên quan trọng tiếp theo.
+
+211
+00:12:08,990 --> 00:12:10,540
+Ta sẽ sắp nó theo thứ tự giảm dần.
+
+212
+00:12:10,540 --> 00:12:13,380
+Và tên người dùng là ưu tiên thứ ba.
+
+213
+00:12:13,380 --> 00:12:18,690
+Như vậy, đầu tiên dữ liệu sẽ được sắp xếp theo khóa học.
+
+214
+00:12:18,690 --> 00:12:23,710
+Trong từng khóa thì sắp xếp theo vai trò thành viên.
+Còn những người cùng vai trò
+
+215
+00:12:23,710 --> 00:12:28,270
+như ví dụ này, các giáo viên được
+xếp trước rồi mới đến sinh viên
+
+216
+00:12:28,270 --> 00:12:33,060
+theo thứ tự bảng chữ cái bởi vì
+vai trò của giáo viên đánh số 1
+
+217
+00:12:33,060 --> 00:12:34,750
+còn sinh viên đánh số 0.
+
+218
+00:12:34,750 --> 00:12:39,140
+Đó là kết quả nhận được khi ta thực hiện phép nối này,
+
+219
+00:12:39,140 --> 00:12:41,580
+ta tạo ra một danh sách ghi danh khóa học.
+
+220
+00:12:41,580 --> 00:12:46,140
+Nếu thêm mệnh đề WHERE đặt điều kiện
+ta có thể truy xuất thông tin về một khóa học cụ thể, v.v.
+
+221
+00:12:46,140 --> 00:12:48,210
+Ta hãy chạy câu lệnh lựa chọn.
+
+222
+00:12:48,210 --> 00:12:52,218
+Mọi việc cứ ổn thỏa thì cũng chán nhỉ.
+
+223
+00:12:52,218 --> 00:12:58,608
+Chọn Execute SQL.
+
+224
+00:12:58,608 --> 00:13:00,810
+Dán câu SQL vào.
+
+225
+00:13:00,810 --> 00:13:02,710
+Và chạy lệnh SQL.
+
+226
+00:13:02,710 --> 00:13:07,530
+Những gì ta thấy được sắp xếp theo khóa học,
+sau đó là vai trò người dùng,
+
+227
+00:13:07,530 --> 00:13:12,350
+nếu người dùng có cùng vai trò,
+sắp xếp theo tên.
+
+228
+00:13:12,350 --> 00:13:15,220
+OK? Đó là ví dụ về sắp xếp theo ba đối tượng
+
+229
+00:13:15,220 --> 00:13:16,040
+trong mệnh đề ORDER BY.
+
+230
+00:13:18,070 --> 00:13:21,060
+Bạn có thể thấy cách thức hoạt động này
+
+231
+00:13:21,060 --> 00:13:22,870
+ở nhiều mô hình dữ liệu khác nhau.
+
+232
+00:13:22,870 --> 00:13:29,260
+Ví dụ như mô hình dữ liệu của
+hệ thống chấm điểm tự động.
+
+233
+00:13:29,260 --> 00:13:31,800
+Nó sử dụng một phần mềm là Tsugi.
+
+234
+00:13:31,800 --> 00:13:34,210
+Sự tương tác giữa hệ thống học tập và Tsugi
+
+235
+00:13:34,210 --> 00:13:38,140
+cần phải dựng mô hình những thứ như
+bạn tham gia khóa học nào,
+
+236
+00:13:38,140 --> 00:13:43,110
+đóng vai trò gì, có phải giáo viên không.
+Nhìn vào sơ đồ này,
+
+237
+00:13:43,110 --> 00:13:47,070
+các bạn không cần nhìn kĩ chi tiết đâu,
+đây là một phần mềm tạo sản phẩm
+
+238
+00:13:47,070 --> 00:13:51,330
+có bảng User, bảng Context tương tự như bảng khóa học Course,
+
+239
+00:13:51,330 --> 00:13:57,700
+và sau đó là bảng Membership, 
+gồm nhiều mối quan hệ nhiều - một.
+
+240
+00:13:57,700 --> 00:14:01,030
+Vậy ta có mối quan hệ nhiều - nhiều
+giữa những người dùng và các khóa học,
+
+241
+00:14:01,030 --> 00:14:05,270
+ta mô phỏng điều này với bảng nhỏ gọi là bảng liên kết.
+
+242
+00:14:05,270 --> 00:14:06,820
+Còn vai trò người dùng thì ở kia.
+
+243
+00:14:06,820 --> 00:14:09,150
+Trong bất kỳ môi trường dạy và học nào ta cũng cần
+
+244
+00:14:09,150 --> 00:14:12,470
+theo dõi vai trò của người dùng. 
+Ở đây tôi có role_override để ghi đè vai trò.
+
+245
+00:14:12,470 --> 00:14:17,240
+Tôi còn có 2 dòng dưới này
+để theo dõi thời gian cập nhật.
+
+246
+00:14:17,240 --> 00:14:19,930
+Hãy cùng xem nào.
+
+247
+00:14:20,940 --> 00:14:21,760
+So some of these.
+
+248
+00:14:21,760 --> 00:14:22,320
+Vậy
+
+249
+00:14:22,320 --> 00:14:24,060
+đó là mối quan hệ nhiều - nhiều.
+
+250
+00:14:24,060 --> 00:14:26,360
+Hầu hết các mối quan hệ khác là nhiều - một.
+
+251
+00:14:26,360 --> 00:14:28,460
+Đây là một quan hệ nhiều - một.
+
+252
+00:14:28,460 --> 00:14:30,820
+Đây là một sơ đồ chân chim được sửa đổi.
+
+253
+00:14:30,820 --> 00:14:34,200
+Đây là một mối quan hệ nhiều - một
+giữa các liên kết khóa học.
+
+254
+00:14:34,200 --> 00:14:35,840
+Cái này là đường liên kết mà bạn nhấn chuột vào.
+
+255
+00:14:35,840 --> 00:14:37,120
+Vân vân.
+
+256
+00:14:37,120 --> 00:14:39,100
+Còn đây là kết quả điểm.
+
+257
+00:14:39,100 --> 00:14:42,000
+Những kết quả thật tuyệt,
+và nhiều kết quả được truy cập qua một liên kết,
+
+258
+00:14:42,000 --> 00:14:46,820
+đó bởi vì mỗi sinh viên có mức điểm riêng.
+
+259
+00:14:46,820 --> 00:14:49,260
+Vậy đó chính là mô hình dữ liệu
+
+260
+00:14:49,260 --> 00:14:54,520
+của phần mềm bạn vẫn sử dụng
+có lẽ đã vài tháng nay rồi.
+
+261
+00:14:54,520 --> 00:14:57,690
+Nhưng giờ bạn thấy được một mối quan hệ nhiều - nhiều.
+
+262
+00:14:58,910 --> 00:15:03,960
+OK. Vậy tại sao ta phải làm như thế?
+
+263
+00:15:03,960 --> 00:15:05,630
+Tại sao phải làm tất cả những thứ này?
+
+264
+00:15:05,630 --> 00:15:09,800
+Tại sao ta cần phải tạo ra các số nguyên nhỏ này?
+Tại sao tôi dạy bạn phép JOIN?
+
+265
+00:15:09,800 --> 00:15:11,620
+Tại sao ta học về quan hệ nhiều - nhiều?
+
+266
+00:15:11,620 --> 00:15:16,800
+Tại sao phải làm cho dữ liệu trông thật
+phức tạp? Tất cả là vì tốc độ.
+
+267
+00:15:16,800 --> 00:15:19,860
+Bạn có thể bảo bạn không quan tâm về tốc độ.
+
+268
+00:15:20,900 --> 00:15:22,850
+Thực ra có rất nhiều chương trình
+
+269
+00:15:22,850 --> 00:15:23,930
+không cần tốc độ.
+
+270
+00:15:23,930 --> 00:15:27,450
+Ví dụ như chương trình nhỏ để tính số tầng kiểu Mỹ
+
+271
+00:15:27,450 --> 00:15:28,320
+từ số tầng kiểu châu Âu.
+
+272
+00:15:28,320 --> 00:15:29,796
+Tốc độ không quan trọng.
+
+273
+00:15:29,796 --> 00:15:35,340
+Đọc 10.000 dòng từ một tập tin không cần tốc độ.
+Nhưng khi bạn xây dựng một
+
+274
+00:15:35,340 --> 00:15:39,900
+ứng dụng SAN trực tuyến hoặc phân tích nhiều dữ liệu,
+tốc độ sẽ trở thành vấn đề.
+
+275
+00:15:39,900 --> 00:15:43,930
+Rồi sẽ đến lúc chương trình trở nên quá chậm.
+
+276
+00:15:43,930 --> 00:15:47,390
+Và cách duy nhất làm cho nó chạy nhanh 
+là thật sự làm cho nó chạy nhanh.
+
+277
+00:15:47,390 --> 00:15:51,820
+Khi sử dụng cơ sở dữ liệu, bạn có thể
+làm một số việc vô cùng nhanh.
+
+278
+00:15:51,820 --> 00:15:54,700
+Tất cả thông qua việc chuẩn hóa dữ liệu,
+
+279
+00:15:54,700 --> 00:15:57,910
+giảm đi lượng dữ liệu cần lưu trữ hay quét.
+
+280
+00:15:57,910 --> 00:15:59,900
+Đây không hẳn là một sự đánh đổi.
+
+281
+00:15:59,900 --> 00:16:03,610
+Hoặc là dữ liệu rất nhỏ đến mức 
+bạn không cần phải làm điều gì, 
+
+282
+00:16:03,610 --> 00:16:07,060
+hoặc bạn phải làm vậy nếu không ứng dụng sẽ sập.
+
+283
+00:16:07,060 --> 00:16:08,150
+Đó là lý do tại sao
+
+284
+00:16:08,150 --> 00:16:09,960
+đây là kỹ năng quan trọng cần có.
+
+285
+00:16:10,960 --> 00:16:15,340
+Ta đã học nhiều câu lệnh SQL 
+trong một thời gian ngắn.
+
+286
+00:16:15,340 --> 00:16:16,950
+Nhưng vẫn còn nhiều điều khác để học.
+
+287
+00:16:16,950 --> 00:16:20,370
+Mọi người vẫn luôn hỏi tôi,
+có khóa học về SQL nâng cao không?
+
+288
+00:16:20,370 --> 00:16:25,110
+Tôi bảo: Thường là học khóa SQL cơ bản
+rồi dành cả đời ra học tiếp.
+
+289
+00:16:25,110 --> 00:16:28,030
+Bạn luôn có thể học những cái mới
+về SQL và cách hoạt động
+
+290
+00:16:28,030 --> 00:16:31,300
+của cơ sở dữ liệu, cái gì thực hiện nhanh, cái gì không nhanh.
+
+291
+00:16:31,300 --> 00:16:32,740
+Sau đây là một số chủ đề
+
+292
+00:16:32,740 --> 00:16:35,240
+ta chưa học kĩ mà bạn có thể tìm hiểu thêm:
+
+293
+00:16:35,240 --> 00:16:39,920
+Khóa chỉ (index), liên quan tới khóa logic
+và tìm kiếm nhanh các chuỗi.
+
+294
+00:16:39,920 --> 00:16:40,740
+Những hạn chế.
+
+295
+00:16:40,740 --> 00:16:42,800
+Ví dụ ta đã gặp NOT NULL.
+
+296
+00:16:42,800 --> 00:16:45,120
+Còn những hạn chế khác
+bạn có thể thiết lập cho dữ liệu.
+
+297
+00:16:45,120 --> 00:16:46,030
+Và những giao dịch cơ sở dữ liệu.
+
+298
+00:16:46,030 --> 00:16:50,450
+Đó là cách để nhóm các hoạt động lại,
+ví dụ nếu một phép đọc bắt đầu
+
+299
+00:16:50,450 --> 00:16:52,500
+sẽ không có phép đọc khác
+cho đến khi một hoạt động ghi xảy ra.
+
+300
+00:16:52,500 --> 00:16:59,300
+Nó là cách cản trở một số hoạt động,
+và đây là một chủ để hết sức quan trọng.
+
+301
+00:16:59,300 --> 00:17:02,930
+Các cơ sở dữ liệu quan hệ đủ sức
+trở thành một ngành riêng ấy chứ.
+
+302
+00:17:02,930 --> 00:17:05,020
+Biết cách tạo ra cơ sở dữ liệu đã là rất ấn tượng rồi.
+
+303
+00:17:05,020 --> 00:17:07,000
+Thiết kế một cơ sở dữ liệu cũng thật ấn tượng.
+
+304
+00:17:07,000 --> 00:17:09,870
+Tôi hi vọng rằng điều này giúp 
+nâng tầm hiểu biết của các bạn
+
+305
+00:17:09,870 --> 00:17:13,346
+để hiểu được kiến thức nền tảng,
+và tiếp tục học tập về sau.
+
+306
+00:17:13,346 --> 00:17:14,873
+OK?
+
+307
+00:17:14,873 --> 00:17:15,413
+Hẹn gặp lại

@@ -1,0 +1,742 @@
+1
+00:00:08,806 --> 00:00:11,924
+dungpham12002 22.07.2016 Thao reviewed
+Vậy trước bữa trưa, ta đã xây dựng một mô hình logic,
+
+2
+00:00:11,924 --> 00:00:15,050
+sau bữa trưa, ta đã xây dựng
+một mô hình thực.
+
+3
+00:00:16,380 --> 00:00:19,260
+Sau đó ta đưa nó vào cơ sở dữ liệu
+và kết thúc ngày làm việc.
+
+4
+00:00:19,260 --> 00:00:24,200
+Giờ đã là sáng hôm sau, ta sẽ phải
+thêm dữ liệu vào các bảng.
+
+5
+00:00:24,200 --> 00:00:27,360
+Bạn sẽ cần phải nhớ tất cả các khóa,
+các trường,.. những thứ như vậy.
+
+6
+00:00:28,850 --> 00:00:32,950
+Ta sẽ nhập dữ liệu từ những
+thứ ngoài rìa, đơn giản
+
+7
+00:00:32,950 --> 00:00:37,380
+đến những thứ ở trung tâm,
+giống như ta hay làm.
+
+8
+00:00:37,380 --> 00:00:38,190
+Được chứ?
+
+9
+00:00:38,190 --> 00:00:40,279
+Và ta sẽ sử dụng lệnh INSERT INTO,
+
+10
+00:00:40,279 --> 00:00:45,135
+Và đây sẽ là thời điểm thích hợp
+để chỉ ra rằng với các từ khóa SQL,
+
+11
+00:00:45,135 --> 00:00:48,081
+như 'insert into', việc viết hoa hay không
+không quan trọng.
+
+12
+00:00:48,081 --> 00:00:51,419
+Tên các bảng và các cột tùy trường hợp
+có thể phân biệt chữ hoa - chữ thường, còn
+
+13
+00:00:51,419 --> 00:00:55,520
+phần dữ liệu bạn nhập sẽ phân biệt
+chữ hoa - chữ thường.
+
+14
+00:00:55,520 --> 00:00:58,260
+Giờ tôi sẽ nhập 'INSERT INTO Artist'.
+
+15
+00:00:58,260 --> 00:01:02,800
+Điều quan trọng ở đây là
+ta không định rõ trường 'id'.
+
+16
+00:01:02,800 --> 00:01:09,750
+Nếu bạn còn nhớ, thì ở trong bảng 'Artist',
+ta có một trường 'id' và một trường 'name'.
+
+17
+00:01:09,750 --> 00:01:15,710
+Nhưng nếu như bạn nhìn qua đây,
+bạn sẽ thấy trường 'id' sẽ được tạo tự động--
+
+18
+00:01:15,710 --> 00:01:17,970
+phần này không hiển thị 
+đầy đủ bởi ta có cột 'Type' rỗng.
+
+19
+00:01:17,970 --> 00:01:19,980
+Trường 'id' được tạo tự động
+
+20
+00:01:19,980 --> 00:01:21,450
+nên khi tôi viết SQL,
+
+21
+00:01:24,110 --> 00:01:28,283
+tôi không cần phải ghi rõ ID,
+bởi tôi đã quy ước là
+
+22
+00:01:28,283 --> 00:01:31,410
+cơ sở dữ liệu chịu trách nhiệm gán ID.
+
+23
+00:01:31,410 --> 00:01:36,502
+Bây giờ tôi sẽ chạy lệnh này -
+'INSERT INTO Artist' với tên 'Led Zeppelin'.
+
+24
+00:01:36,502 --> 00:01:40,435
+Nếu ta vào phần 'Browse Data' ta sẽ thấy 
+chương trình đã gán số 1 cho nghệ sĩ ta vừa thêm,
+
+25
+00:01:40,435 --> 00:01:44,429
+không nằm ngoài dự đoán. Bạn có thể
+đoán số tiếp theo được gán sẽ là gì.
+
+26
+00:01:44,429 --> 00:01:48,731
+điều tiếp theo ta sẽ làm
+là nhập thêm một nghệ sĩ nữa -
+
+27
+00:01:48,731 --> 00:01:50,528
+ta sẽ nhập thêm AC/DC.
+
+28
+00:01:50,528 --> 00:02:00,200
+Và ta đã nhập xong.
+
+29
+00:02:00,200 --> 00:02:03,070
+Giờ, khi ta xem lại dữ liệu, 
+ta thấy số 2 đã được gán.
+
+30
+00:02:03,070 --> 00:02:06,027
+Nếu ta nhập thêm một bản ghi nữa,
+chương trình sẽ tự cung cấp ID cho nó, đúng không?
+
+31
+00:02:06,027 --> 00:02:10,333
+Ta có thể đổi ID này, nhưng chương trình
+sẽ mặc định cho số bản ghi tiếp theo là 3.
+
+32
+00:02:10,333 --> 00:02:13,261
+Vậy ở đây, ta đã thêm
+một bản ghi mới;
+
+33
+00:02:13,261 --> 00:02:16,980
+đồng thời ta đã thiết lập trong
+cơ sở dữ liệu này các con số mới.
+
+34
+00:02:16,980 --> 00:02:22,396
+1 ứng với Led Zeppelin,
+và 2 ứng với AC/DC.
+
+35
+00:02:22,396 --> 00:02:27,204
+Việc ta cần làm tiếp theo
+là nhập dữ liệu về thể loại -
+
+36
+00:02:27,204 --> 00:02:31,560
+ta đang làm việc từ bảng phụ đến
+bảng chính - và nhập các giá trị Rock
+
+37
+00:02:31,560 --> 00:02:35,943
+và Metal. Ở đây tôi sẽ chỉ cho bạn
+một mánh khóe nhỏ.
+
+38
+00:02:35,943 --> 00:02:40,376
+Trong giao diện người dùng
+của hầu hết những thứ như thế này,
+
+39
+00:02:40,376 --> 00:02:45,360
+bạn có thể nhập nhiều hơn một lệnh, miễn là
+
+40
+00:02:45,360 --> 00:02:47,518
+bạn đặt dấu chấm phẩy
+để ngăn cách các lệnh đó.
+
+41
+00:02:47,518 --> 00:02:51,234
+Vậy tôi sẽ đặt một dấu chấm phẩy
+ở cuối dòng này.
+
+42
+00:02:51,234 --> 00:02:54,479
+Tôi sẽ nhập lệnh 'INSERT INTO Genre'
+với 'Rock' và
+
+43
+00:02:54,479 --> 00:02:58,234
+một lệnh 'INSERT INTO Genre' với
+'Metal' và cho chạy SQL.
+
+44
+00:03:00,277 --> 00:03:02,548
+Hình như tôi vừa chạy lệnh
+hai lần thì phải.
+
+45
+00:03:02,548 --> 00:03:05,359
+Đúng vậy.
+
+46
+00:03:05,359 --> 00:03:07,110
+Nên tôi sẽ xóa những bản ghi thừa.
+
+47
+00:03:07,110 --> 00:03:07,810
+Tạm biệt.
+
+48
+00:03:07,810 --> 00:03:08,570
+Xóa cả bản ghi này nữa.
+
+49
+00:03:08,570 --> 00:03:09,379
+Tạm biệt.
+
+50
+00:03:09,379 --> 00:03:12,109
+Vì tôi đã nhập hai lệnh cùng lúc
+và bấm nút chạy hai lần,
+
+51
+00:03:12,109 --> 00:03:14,579
+nên thành ra cả hai
+bản ghi lại bị nhập vào hai lần.
+
+52
+00:03:14,579 --> 00:03:21,030
+Vậy từ giờ đến hết phần bài này,
+'Rock' có giá trị là 1, còn 'Metal' có giá trị là 2.
+
+53
+00:03:22,070 --> 00:03:25,480
+Do vậy, khi ta đang làm bảng 'Track',
+ta không cần phải nhập 'Rock',
+
+54
+00:03:25,480 --> 00:03:28,000
+mà chỉ cần nhập số 1.
+
+55
+00:03:28,000 --> 00:03:31,790
+Vì 1 không phải là chuỗi kí tự mà là một con số 
+nên sẽ không có vấn đề gì xảy ra cả.
+
+56
+00:03:33,480 --> 00:03:37,330
+Giờ ta sẽ nhìn vào bảng album -
+
+57
+00:03:37,330 --> 00:03:42,020
+đây là trường hợp đầu tiên mà ta
+phải tạo một khóa ngoại, đúng không?
+
+58
+00:03:42,020 --> 00:03:43,760
+Ta đang có bảng Album,
+
+59
+00:03:43,760 --> 00:03:48,110
+và bảng Album có một khóa chính,
+được tạo tự động cho ta,
+
+60
+00:03:48,110 --> 00:03:49,910
+và một khóa ngoại, gọi là 'artist_id'.
+
+61
+00:03:49,910 --> 00:03:53,180
+Bởi vì album thuộc về nghệ sĩ.
+
+62
+00:03:54,410 --> 00:03:57,521
+Ta chỉ thêm dữ liệu tại gốc
+của các mũi tên này; và
+
+63
+00:03:57,521 --> 00:03:59,053
+đó là điều ta sẽ làm.
+
+64
+00:03:59,053 --> 00:04:03,179
+Ở đây, ta sẽ phải thêm một tên bài hát - title,
+nhưng ta không phải nhập vào ID của nó;
+
+65
+00:04:03,179 --> 00:04:06,798
+nhưng ta sẽ phải tự gán một artist_id
+cho bản nhạc. Vậy với lệnh
+
+66
+00:04:06,798 --> 00:04:11,850
+INSERT INTO Album, ta sẽ có một title
+và một artist_id.
+
+67
+00:04:11,850 --> 00:04:18,603
+Ta cần nhớ rằng giá trị của AC/DC là 2,
+còn của Led Zeppelin là 1.
+
+68
+00:04:18,603 --> 00:04:21,567
+Khi ta làm một cách thủ công,
+nó sẽ hơi khó khăn một chút,
+
+69
+00:04:21,567 --> 00:04:24,652
+và bạn có thể sẽ phải mở đi mở lại
+các bảng để nhớ xem
+
+70
+00:04:24,652 --> 00:04:27,391
+Led Zeppelin ứng với mấy?
+AC/DC ứng với mấy?
+
+71
+00:04:27,391 --> 00:04:31,471
+Nhìn trước mắt thì việc nhập chuỗi kí tự
+vào sẽ dễ dàng hơn, nhưng
+
+72
+00:04:31,471 --> 00:04:33,939
+nhưng đó chính là thứ
+ta đang cố tránh.
+
+73
+00:04:33,939 --> 00:04:38,765
+Vậy với các khóa ngoại, ta phải 
+nhập vào các số cụ thể
+
+74
+00:04:38,765 --> 00:04:42,880
+bởi vì ta, hoặc phần code ta viết
+sẽ phải ghi nhớ chúng.
+
+75
+00:04:42,880 --> 00:04:47,177
+Việc ghi nhớ xem những con số,
+ở đây là 1 và 2, ứng với gì sẽ
+
+76
+00:04:47,177 --> 00:04:51,040
+dễ dàng cho máy tính hơn là cho bạn nhiều.
+
+77
+00:04:51,040 --> 00:04:53,178
+Thường thì bạn sẽ không
+phải nhập những thứ này,
+
+78
+00:04:53,178 --> 00:04:56,438
+mà phần code sẽ nhập giúp bạn,
+nên bạn có thể dễ dàng nói rằng:
+
+79
+00:04:56,438 --> 00:05:00,170
+'Tôi vừa nhập một thể loại -
+Rock, và chương trình trả lại số 2.'
+
+80
+00:05:00,170 --> 00:05:04,160
+Vậy vì bạn có thể nhận lại các con số như thế,
+nên bạn không cần phải ghi nhớ chúng.
+
+81
+00:05:05,210 --> 00:05:06,070
+Bây giờ ta sẽ chạy các lệnh này.
+
+82
+00:05:07,770 --> 00:05:10,470
+Đây là lần đầu ta nhập
+cùng lúc nhiều lệnh.
+
+83
+00:05:10,470 --> 00:05:18,030
+Tôi sẽ đặt một dấu chấm phẩy ở đây
+để ta có thể cùng lúc chạy tất cả các lệnh.
+
+84
+00:05:18,030 --> 00:05:19,420
+Và tôi sẽ chỉ bấm nút
+này một lần.
+
+85
+00:05:21,760 --> 00:05:25,040
+Nếu ta vào phần 'Browse Data'
+và nhìn vào bảng Album,
+
+86
+00:05:26,960 --> 00:05:30,230
+ID được tạo tự động, 'artist_id'
+do ta tự chọn, còn
+
+87
+00:05:30,230 --> 00:05:33,840
+còn tên bản nhạc cũng do ta nhập;
+mọi thứ hiện tại đều ổn cả.
+
+88
+00:05:33,840 --> 00:05:36,380
+Việc cuối cùng ta sẽ làm
+có lẽ là phức tạp nhất.
+
+89
+00:05:38,030 --> 00:05:38,530
+Thực tế không phải vậy.
+
+90
+00:05:40,260 --> 00:05:45,130
+Ta có ID được tạo tự động,
+tên bài hát là dữ liệu,
+
+91
+00:05:45,130 --> 00:05:47,380
+thời lượng, đánh giá và số lượt nghe
+cũng chỉ là dữ liệu.
+
+92
+00:05:47,380 --> 00:05:52,415
+Ta đã có hai mũi tên,
+lần lượt chỉ đến Album và Thể loại;
+
+93
+00:05:52,415 --> 00:05:55,860
+vậy nên ta có hai khóa ngoại.
+
+94
+00:05:55,860 --> 00:05:58,740
+Đây là chỗ ta thấy có sự trùng lặp;
+
+95
+00:05:58,740 --> 00:06:05,250
+vậy hai bài này sẽ thuộc cùng album,
+hai bài này sẽ thuộc cùng album.
+
+96
+00:06:05,250 --> 00:06:07,650
+Hai bài này cùng thể loại;
+và hai bài này cũng thế.
+
+97
+00:06:07,650 --> 00:06:11,570
+Có sự trùng lặp hoàn toàn chấp nhận được
+nếu như dữ liệu trùng lặp là số.
+
+98
+00:06:11,570 --> 00:06:13,170
+Đó chính là bản chất
+của việc ta đã làm -
+
+99
+00:06:13,170 --> 00:06:15,820
+Ta như vừa đi hết
+một vòng tròn lớn vậy.
+
+100
+00:06:15,820 --> 00:06:19,220
+Ta lấy các chuỗi kí tự trùng lặp
+và biến chúng thành các con số trùng lặp
+
+101
+00:06:19,220 --> 00:06:20,790
+và điều đó hoàn toàn ổn.
+
+102
+00:06:20,790 --> 00:06:21,710
+Rồi việc bạn cần làm
+
+103
+00:06:21,710 --> 00:06:23,620
+sẽ là lấy từng hàng một..
+
+104
+00:06:23,620 --> 00:06:25,070
+Ta không cần cái này.
+
+105
+00:06:25,070 --> 00:06:26,040
+Tôi sẽ xóa đi.
+
+106
+00:06:26,040 --> 00:06:28,730
+ta sẽ lấy từng hàng một, và
+dữ liệu trong đó bạn cũng nắm gần hết rồi.
+
+107
+00:06:28,730 --> 00:06:33,220
+Ta sẽ nhập vào tên bản nhạc, cũng như
+album_id, độ dài bản nhạc,
+
+108
+00:06:33,220 --> 00:06:34,060
+đánh giá, và số lần nghe.
+
+109
+00:06:34,060 --> 00:06:35,000
+Ta sẽ nhập tất cả chúng vào -
+
+110
+00:06:36,180 --> 00:06:39,280
+riêng cái này được tạo tự động.
+
+111
+00:06:39,280 --> 00:06:42,949
+Ta sẽ nhập tên, độ dài, số lượt nghe,
+album_id, genre_id.
+
+112
+00:06:42,949 --> 00:06:47,250
+Sau đó là các giá trị, còn đây là
+giá trị của hai khóa ngoại.
+
+113
+00:06:47,250 --> 00:06:49,110
+Chúng sẽ chỉ đến hàng này.
+
+114
+00:06:49,110 --> 00:06:52,910
+Đây lại là lúc mà bạn cần có một
+tờ giấy đã viết sẵn cho bạn
+
+115
+00:06:52,910 --> 00:06:55,280
+những con số này ứng với cái gì
+nếu như bạn đang làm thủ công.
+
+116
+00:06:56,600 --> 00:06:57,210
+Cũng không vất vả lắm đâu.
+
+117
+00:06:59,130 --> 00:07:01,890
+May mắn thay cho tôi, các lệnh đã được
+viết ra trước; nên mọi việc với tôi khá dễ dàng.
+
+118
+00:07:01,890 --> 00:07:05,394
+Nếu bạn đang theo dõi, bạn chỉ cần 
+cắt và dán những lệnh này.
+
+119
+00:07:05,394 --> 00:07:09,816
+Tôi sẽ trở nên siêu lười và
+sao chép cả bốn câu lệnh SQL,
+
+120
+00:07:09,816 --> 00:07:14,617
+rồi sang đây, dán nó vào đây.
+Rồi tôi sẽ cẩn thận đặt dấu chấm phẩy,
+
+121
+00:07:14,617 --> 00:07:18,581
+không phải ở cuối mỗi dòng,
+mà ở cuối các dòng có từ 'values', trừ dòng cuối.
+
+122
+00:07:18,581 --> 00:07:21,590
+Tôi sẽ đặt dấu chấm phẩy
+ở cuối mỗi dòng ấy--
+
+123
+00:07:21,590 --> 00:07:24,360
+Suýt quên chấm phẩy để
+ngăn cách hai lệnh nhập cuối.
+
+124
+00:07:27,378 --> 00:07:30,710
+Sau đó tôi sẽ cho chạy lệnh,
+và nhìn vào phần dữ liệu.
+
+125
+00:07:30,710 --> 00:07:32,480
+Tôi sẽ xem phần dữ liệu về
+bản nhạc - 'Track'.
+
+126
+00:07:33,980 --> 00:07:34,970
+Vậy là ta đã xong.
+
+127
+00:07:34,970 --> 00:07:35,760
+Mọi thứ đã được nhập vào.
+
+128
+00:07:35,760 --> 00:07:38,153
+Ta sẽ kéo bảng này rộng ra.
+
+129
+00:07:38,153 --> 00:07:41,860
+Đây chính là dữ liệu về các bản nhạc,
+tất cả được ta khai báo.
+
+130
+00:07:41,860 --> 00:07:45,450
+Nếu nhìn lại vào các bảng, bạn sẽ thấy
+ta tạo bảng từ bảng phụ đến bảng chính.
+
+131
+00:07:45,450 --> 00:07:48,621
+Ta bắt đầu từ các bảng Thể loại
+và bảng Nghệ sĩ, từ đó tiến tới bảng gốc;
+
+132
+00:07:48,621 --> 00:07:51,501
+qua đó ta thiết lập các con số này để liên kết tới
+
+133
+00:07:51,501 --> 00:07:55,407
+các bảng sử dụng chúng khi nhập
+dữ liệu vào bảng Album.
+
+134
+00:07:55,407 --> 00:07:59,731
+Vậy, các khóa ngoại là điểm xuất phát,
+các khóa chủ là đích đến
+
+135
+00:07:59,731 --> 00:08:03,374
+và ta tạo từ đích về điểm xuất phát.
+Trong cột này có trùng lặp các số
+
+136
+00:08:03,374 --> 00:08:05,450
+nhưng không trùng lặp chuỗi kí tự.
+
+137
+00:08:05,450 --> 00:08:07,750
+Nếu bạn nhìn vào toàn bộ dữ liệu, 
+bạn thấy từ 'Rock' (chỉ thể loại)..
+
+138
+00:08:08,760 --> 00:08:11,674
+Mà thôi, để tôi lấy ví dụ khác hay hơn.
+
+139
+00:08:11,674 --> 00:08:15,550
+Từ 'Metal' là ví dụ tốt hơn;
+
+140
+00:08:15,550 --> 00:08:18,466
+từ 'Rock' vừa bị gạch chỉ nằm trong 
+tên bản nhạc chứ không chỉ thể loại Rock.
+
+141
+00:08:18,466 --> 00:08:22,717
+Từ 'Metal' - chỉ một thể loại nhạc
+chỉ xuất hiện một lần trong toàn bộ
+
+142
+00:08:22,717 --> 00:08:23,810
+cơ sở dữ liệu.
+
+143
+00:08:23,810 --> 00:08:29,000
+Ta sẽ thấy lợi ích của việc này khi giả sử
+có một triệu cái này chẳng hạn.
+
+144
+00:08:29,000 --> 00:08:29,890
+Một triệu.
+
+145
+00:08:29,890 --> 00:08:33,020
+Bạn có thể thắc mắc: "Thế cái từ 'metal'
+
+146
+00:08:33,020 --> 00:08:35,200
+với số 2 này thì
+
+147
+00:08:35,200 --> 00:08:36,090
+khác gì nhau?"
+
+148
+00:08:36,090 --> 00:08:40,400
+Nếu có hàng triệu từ 'metal', 
+chúng không chỉ chiếm nhiều bộ nhớ,
+
+149
+00:08:40,400 --> 00:08:43,590
+chúng còn làm tăng
+lượng dữ liệu cần được scan.
+
+150
+00:08:43,590 --> 00:08:47,825
+Vậy trong các cơ sở dữ liệu,
+ta cần cố gắng giảm lượng dữ liệu
+
+151
+00:08:47,825 --> 00:08:51,176
+cần phải scan để tìm được
+một phần dữ liệu cụ thể.
+
+152
+00:08:51,176 --> 00:08:56,168
+Vậy sự khác biệt giữa 'Metal' - một chuỗi kí tự
+có thể lên đến 128 kí tự, và
+
+153
+00:08:56,168 --> 00:09:00,939
+một số thực ra chỉ có bốn kí tự - là rất lớn.
+Và không phải là
+
+154
+00:09:00,939 --> 00:09:05,710
+ta không thể lưu trữ trên ổ đĩa - chúng
+có dung lượng lớn; chỉ là ta không thể
+
+155
+00:09:05,710 --> 00:09:10,655
+scan dữ liệu đủ nhanh và không thể
+tạo các chỉ mục để làm điều đó nhanh hơn nữa.
+
+156
+00:09:10,655 --> 00:09:13,682
+Vậy những gì ta đã làm
+trong phần này là
+
+157
+00:09:13,682 --> 00:09:18,009
+ta đã thêm tất cả các dữ liệu vào,
+liên kết chúng với nhau
+
+158
+00:09:18,009 --> 00:09:23,225
+cũng như tạo dựng các quan hệ và
+điểm liên kết chứ không chỉ sao chép dữ liệu.

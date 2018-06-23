@@ -1,0 +1,478 @@
+0
+00:00:00,000 --> 00:00:00,680
+https://youtu.be/oPS9wd3tjtU        NghiaNguyen
+
+1
+00:00:00,680 --> 00:00:03,855
+DataFrame là tính trừu tượng căn bản trong Spark.
+
+2
+00:00:03,855 --> 00:00:06,970
+Và nó không thể thay đổi được khi mà nó được tạo ra.
+
+3
+00:00:06,970 --> 00:00:08,830
+Spark theo dõi thông tin tuyến tính
+
+4
+00:00:08,830 --> 00:00:11,800
+theo cách bạn tạo và vận dụng hay thay đổi
+
+5
+00:00:11,800 --> 00:00:15,820
+một DataFrame để xử lý hiệu quả bất kỳ mất mát dữ liệu nào,
+
+6
+00:00:15,820 --> 00:00:18,950
+hay cụm máy chủ có lỗi,
+
+7
+00:00:18,950 --> 00:00:20,840
+DataFrame cho phép bạn thao tác
+
+8
+00:00:20,840 --> 00:00:25,010
+trên các bộ dữ liệu song song cùng lúc.
+
+9
+00:00:25,010 --> 00:00:27,560
+Bạn có thể xây dựng 1 DataFrame bằng cách
+
+10
+00:00:27,560 --> 00:00:30,850
+sử dụng 1 bộ dữ liệu có sẵn của Python, ví dụ như 1 danh sách list,
+
+11
+00:00:30,850 --> 00:00:35,630
+hoặc chuyển đổi DataFrame có sẵn của Spark hay pandas.
+
+12
+00:00:35,630 --> 00:00:37,910
+Hoặc bạn có thể xây dựng 1 DataFrame 
+
+13
+00:00:37,910 --> 00:00:40,870
+từ 1 file trong Hadoop Distributed File System
+
+14
+00:00:40,870 --> 00:00:43,010
+hay từ bất kỳ hệ thống lưu trữ nào.
+
+15
+00:00:43,010 --> 00:00:47,500
+Ta sẽ đi qua vài ví dụ ngay sau đây.
+
+16
+00:00:47,500 --> 00:00:51,170
+Mỗi hàng của 1 DataFrame là 1 đối tượng hàng.
+
+17
+00:00:51,170 --> 00:00:53,890
+Và các trường dữ liệu trong 1 hàng có thể được truy vấn
+
+18
+00:00:53,890 --> 00:00:55,890
+giống như các thuộc tính Python.
+
+19
+00:00:55,890 --> 00:00:58,010
+Ở đây ta có 1 ví dụ về việc tạo 1 hàng có 2 cột.
+
+20
+00:00:58,010 --> 00:01:01,110
+Ở đây ta có 1 ví dụ về việc tạo 1 hàng có 2 cột.
+
+21
+00:01:01,110 --> 00:01:07,270
+Cột đầu tiên có tên là name và giá trị Alice.
+
+22
+00:01:07,270 --> 00:01:12,980
+Và cột thứ 2 có tên là age và giá trị 11.
+
+23
+00:01:12,980 --> 00:01:18,140
+Ta có thể truy vấn các phần tử của các hàng, các cột, 
+
+24
+00:01:18,140 --> 00:01:21,530
+bằng cách dùng dấu ngoặc vuông và ký hiệu trong nháy đơn
+
+25
+00:01:21,530 --> 00:01:25,830
+ví dụ, row['name'].
+
+26
+00:01:25,830 --> 00:01:29,360
+Hay sử dụng dấu chấm. 
+
+27
+00:01:29,360 --> 00:01:33,220
+row.name và row.age.
+
+28
+00:01:33,220 --> 00:01:35,570
+Bởi vì đây là cách đơn giản nhất, dễ nhất, 
+
+29
+00:01:35,570 --> 00:01:38,300
+nên đa số bạn dùng dấu chấm.
+
+30
+00:01:38,300 --> 00:01:40,020
+row.name hoặc row.age.
+
+31
+00:01:40,020 --> 00:01:42,744
+
+32
+00:01:42,744 --> 00:01:44,285
+Có 2 loại thao tác mà bạn có thể làm với DataFrame:
+
+33
+00:01:44,285 --> 00:01:47,860
+transformations và actions.
+
+34
+00:01:47,860 --> 00:01:48,930
+transformations và actions.
+
+
+35
+00:01:48,930 --> 00:01:52,300
+Và ý nghĩa 2 thao tác này hơi khác với cái mà nó làm.
+
+36
+00:01:52,300 --> 00:01:55,160
+Transformations cụ thể là làm biếng.
+
+37
+00:01:55,160 --> 00:01:58,440
+Nó không thực thi ngay lập tức.
+
+38
+00:01:58,440 --> 00:02:02,670
+Transformations chỉ được thực thi khi mà có 1 action 
+
+39
+00:02:02,670 --> 00:02:06,520
+được thực hiện trên DataFrame.
+
+40
+00:02:06,520 --> 00:02:09,070
+Bạn có thể lưu DataFrame trong bộ nhớ đệm
+
+41
+00:02:09,070 --> 00:02:11,174
+hoặc ổ cứng,
+
+42
+00:02:11,174 --> 00:02:12,340
+để không cần phải xử lý lại dữ liệu.
+
+43
+00:02:12,340 --> 00:02:15,180
+
+44
+00:02:15,180 --> 00:02:17,300
+Khi bạn làm việc với DataFrame,
+
+45
+00:02:17,300 --> 00:02:20,330
+bạn nên làm theo quy trình sau đây.
+
+46
+00:02:20,330 --> 00:02:22,870
+Bạn tạo 1 DataFrame từ 1 nguồn dữ liệu,
+
+47
+00:02:22,870 --> 00:02:26,070
+từ ổ đĩa hoặc từ 1 đối tượng trong Python.
+
+48
+00:02:26,070 --> 00:02:28,770
+Bạn áp dụng transformations cho DataFrame đó,
+
+49
+00:02:28,770 --> 00:02:30,910
+như select và filter.
+
+50
+00:02:30,910 --> 00:02:33,800
+Kế tiếp bạn áp dụng actions cho Data Frame,
+
+51
+00:02:33,800 --> 00:02:35,850
+như show và count.
+
+52
+00:02:35,850 --> 00:02:37,480
+Sau đây là 1 ví dụ.
+
+53
+00:02:37,480 --> 00:02:39,530
+Ta bắt đầu với 1 list.
+
+54
+00:02:39,530 --> 00:02:42,660
+Ta chỉ định tạo 1 DataFrame.
+
+55
+00:02:42,660 --> 00:02:44,870
+Rồi ta thực hiện 1 bộ lọc filter
+
+56
+00:02:44,870 --> 00:02:46,610
+để tạo ra 1 DataFrame mới.
+
+57
+00:02:46,610 --> 00:02:50,300
+Rồi ta chỉ định rằng ta muốn thực thi 1 "select" để tạo 
+
+58
+00:02:50,300 --> 00:02:52,120
+DataFrame khác.
+
+59
+00:02:52,120 --> 00:02:55,100
+Bây giờ, không có gì xảy ra cả cho tới khi ta
+
+60
+00:02:55,100 --> 00:02:57,770
+thực hiện 1 action 'show'.
+
+61
+00:02:57,770 --> 00:02:59,630
+Khi action 'show' được thực thi,
+
+62
+00:02:59,630 --> 00:03:02,200
+Spark bắt đầu làm việc.
+
+63
+00:03:02,200 --> 00:03:04,620
+Nó tạo ra Data Frame, rồi thực hiện
+
+64
+00:03:04,620 --> 00:03:06,490
+1 transformation loại filter,
+
+65
+00:03:06,490 --> 00:03:09,420
+rồi nó thực thi transformation loại select,
+
+66
+00:03:09,420 --> 00:03:13,150
+và rồi nó chạy action show để hiển thị kết quả.
+
+67
+00:03:13,150 --> 00:03:16,390
+
+68
+00:03:16,390 --> 00:03:20,020
+Bây giờ, ta có thể tạo DataFrame từ bộ dữ liệu của Python,
+
+69
+00:03:20,020 --> 00:03:21,900
+ví dụ như list.
+
+70
+00:03:21,900 --> 00:03:25,550
+Ở đây, ta có 1 list gồm 2 tuple.
+
+71
+00:03:25,550 --> 00:03:30,330
+Tuple đầu tiên có Alice và 1.
+
+72
+00:03:30,330 --> 00:03:35,710
+Và tuple thứ 2 có Bob và 2.
+
+73
+00:03:35,710 --> 00:03:40,900
+Giờ ta có thể dùng sqlContext and phương thức createDataFrame
+
+74
+00:03:40,900 --> 00:03:43,200
+để chỉ định rằng ta muốn tạo 1 DataFrame
+
+75
+00:03:43,200 --> 00:03:46,190
+từ list Python đó.
+
+76
+00:03:46,190 --> 00:03:51,310
+Không có gì xảy ra khi ta chạy câu lệnh này.
+
+77
+00:03:51,310 --> 00:03:53,870
+Tất cả xảy ra là Spark chỉ đơn giản ghi nhớ
+
+78
+00:03:53,870 --> 00:03:55,090
+cách tạo DataFrame.
+
+79
+00:03:55,090 --> 00:03:57,712
+
+80
+00:03:57,712 --> 00:04:00,460
+Một chút thông tin ngoài lề.
+
+81
+00:04:00,460 --> 00:04:03,740
+Pandas là thư viện phân tích dữ liệu của Python.
+
+82
+00:04:03,740 --> 00:04:06,760
+Đây là 1 thư viện nguồn mở về phân tích dữ liệu, mô hình hoá
+
+83
+00:04:06,760 --> 00:04:10,950
+là 1 sự thay thế tuyệt vời cho R.
+
+84
+00:04:10,950 --> 00:04:13,890
+Và nó làm việc trong mội trường Python.
+
+85
+00:04:13,890 --> 00:04:17,300
+Trong pandas, nó sử dụng ý tưởng tương tự DataFrame.
+
+86
+00:04:17,300 --> 00:04:19,579
+Nó là 1 bảng với các cột được đặt tên.
+
+87
+00:04:19,579 --> 00:04:22,880
+Và nó thường xuyên được sử dụng đối tượng pandas.
+
+88
+00:04:22,880 --> 00:04:25,680
+Nó được xem như là 1 dictionary trong Python.
+
+89
+00:04:25,680 --> 00:04:28,240
+Tên của một cột được gán với 1 series.
+
+90
+00:04:28,240 --> 00:04:32,810
+Và mỗi đối tượng series của pandas thể hiện 1 cột.
+
+91
+00:04:32,810 --> 00:04:34,460
+Nó là 1 mảng 1 chiều 
+
+92
+00:04:34,460 --> 00:04:38,320
+có khả năng chưa bấy kì kiểu dữ liệu nào.
+
+93
+00:04:38,320 --> 00:04:43,350
+Và R cũng có 1 dạng DataFrame tương tự.
+
+94
+00:04:43,350 --> 00:04:47,430
+Rất dễ để tạo Data Frame của PySpark từ pandas
+
+95
+00:04:47,430 --> 00:04:49,490
+và từ DataFrame của R.
+
+96
+00:04:49,490 --> 00:04:52,805
+Bạn chỉ đơn giản nói sqlContext.createDataFrame
+
+97
+00:04:52,805 --> 00:04:57,786
+và bạn truyền vào DataFrame của pandas.
+
+98
+00:04:57,786 --> 00:05:01,440
+
+99
+00:05:01,440 --> 00:05:05,340
+Bạn cũng có thể tạo DataFrame từ Hadoop Distributed File System,
+
+100
+00:05:05,340 --> 00:05:09,170
+từ file text, từ file JSON,
+
+101
+00:05:09,170 --> 00:05:13,140
+từ Apache Parquet hay Hypertable hay Amazon S3
+
+102
+00:05:13,140 --> 00:05:17,830
+hay Apache HBase hay chuỗi các file hay bất kì định dạng Hadoop
+
+103
+00:05:17,830 --> 00:05:22,390
+hay từ 1 thư mục.
+
+104
+00:05:22,390 --> 00:05:25,980
+Bạn chỉ cần dùng phương thức phù hợp với sqlContext.read.
+
+105
+00:05:25,980 --> 00:05:28,706
+
+106
+00:05:28,706 --> 00:05:30,580
+Ở đây ta có 1 ví dụ về cách tạo 1 DataFrame 
+
+107
+00:05:30,580 --> 00:05:32,230
+từ 1 file dạng text.
+
+108
+00:05:32,230 --> 00:05:36,500
+
+109
+00:05:36,500 --> 00:05:39,740
+Khi ta muốn tạo 1 DataFrame từ 1 file,
+
+110
+00:05:39,740 --> 00:05:43,240
+ta chỉ đơn giản sử dụng sqlContext.read.text,
+
+111
+00:05:43,240 --> 00:05:45,360
+và ta truyền tên file vào.
+
+112
+00:05:45,360 --> 00:05:48,340
+Trong trường hợp này, nó là 1 file dạng text.
+
+113
+00:05:48,340 --> 00:05:50,670
+Và câu lệnh này nói với Spark rằng ta muốn
+
+114
+00:05:50,670 --> 00:05:52,690
+tải từ file và trả về 1 DataFrame 
+
+115
+00:05:52,690 --> 00:05:57,970
+với 1 cột kiểu chuỗi với tên là value.
+
+116
+00:05:57,970 --> 00:06:01,240
+Mỗi dòng trong file text là 1 hàng.
+
+117
+00:06:01,240 --> 00:06:03,410
+Bây giờ, bởi vì đó là lazy evaluation,
+
+118
+00:06:03,410 --> 00:06:05,670
+nghĩa là không có lệnh thực thi nào thực sự xảy ra
+
+119
+00:06:05,670 --> 00:06:07,010
+khi ta chạy câu lệnh này.
+
+120
+00:06:07,010 --> 00:06:11,010
+Nó sẽ không xảy ra cho đến khi ta thực hiện 1 action.
+

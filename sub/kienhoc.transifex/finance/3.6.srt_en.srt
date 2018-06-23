@@ -1,0 +1,718 @@
+1
+00:00:05,60 --> 00:00:11,629
+https://youtu.be/YuXpXw21W0k
+Mega example or application number three,
+and I call it financial planning.
+
+2
+00:00:11,630 --> 00:00:16,90
+I would draw your attention to the problem
+and take a few minutes to write it down.
+
+3
+00:00:16,90 --> 00:00:17,210
+I'll read it out for you.
+
+4
+00:00:17,210 --> 00:00:20,990
+Abebi, who has just
+celebrated her 25th birthday,
+
+5
+00:00:20,990 --> 00:00:23,439
+plans to retire on her 55th birthday.
+
+6
+00:00:24,570 --> 00:00:26,270
+So what should you be doing right away?
+
+7
+00:00:26,270 --> 00:00:28,189
+Drawing a timeline.
+
+8
+00:00:28,190 --> 00:00:30,790
+She has just set up a retirement fund
+
+9
+00:00:30,790 --> 00:00:35,60
+to pay her an annual income
+starting on her retirement day.
+
+10
+00:00:35,60 --> 00:00:36,93
+When does she retire?
+
+11
+00:00:36,93 --> 00:00:37,590
+Age 55.
+
+12
+00:00:37,590 --> 00:00:40,990
+And to continue paying for 20 more years.
+
+13
+00:00:40,990 --> 00:00:47,510
+Now, sometimes the wording of a problem
+becomes complex by just writing it.
+
+14
+00:00:47,510 --> 00:00:51,870
+So let me ask you, how many retirement
+incomes does she want annual?
+
+15
+00:00:53,50 --> 00:00:57,930
+She wants the first on her 55th
+birthday and 20 more, so 21.
+
+16
+00:00:57,930 --> 00:01:01,490
+Remember, n is important
+in all our calculation.
+
+17
+00:01:01,490 --> 00:01:06,499
+Abebi's goal is to receive $50,000 for
+each of these 20 years.
+
+18
+00:01:07,540 --> 00:01:11,780
+So the good news is, that you know
+exactly what planning you've done.
+
+19
+00:01:11,780 --> 00:01:16,290
+And how much you'll need every year,
+based on looking forward,
+
+20
+00:01:16,290 --> 00:01:18,20
+figuring out how much money you want.
+
+21
+00:01:18,20 --> 00:01:23,130
+This is again your decision,
+based on your needs, right?
+
+22
+00:01:23,130 --> 00:01:27,820
+Abebi has committed to set aside equal
+investments at the end of each year for
+
+23
+00:01:27,820 --> 00:01:32,740
+the next 29 years,
+starting on her 26th birthday.
+
+24
+00:01:32,740 --> 00:01:37,50
+And I'm laying this all out for
+you in a way that makes it easy for
+
+25
+00:01:37,50 --> 00:01:38,950
+you to use standard formulas.
+
+26
+00:01:38,950 --> 00:01:43,100
+But when you get into Excel and feel
+very comfortable, you can just rock and
+
+27
+00:01:43,100 --> 00:01:44,119
+roll over time.
+
+28
+00:01:44,120 --> 00:01:47,800
+But right now,
+I'm making sure you understand.
+
+29
+00:01:47,800 --> 00:01:52,54
+The annual interest rate is 5%.
+
+30
+00:01:52,55 --> 00:01:54,698
+And the question says,
+
+31
+00:01:54,698 --> 00:02:00,122
+how much does she need to save every year,
+okay? So,
+
+32
+00:02:03,699 --> 00:02:08,50
+this problem is a little bit complex,
+because it's similar to the previous one,
+
+33
+00:02:08,50 --> 00:02:11,620
+but in my book,
+with a different kind of perspective.
+
+34
+00:02:11,620 --> 00:02:16,20
+The perspective of the previous
+one was tuition for college.
+
+35
+00:02:16,20 --> 00:02:19,190
+This is the perspective for retirement.
+
+36
+00:02:19,190 --> 00:02:24,390
+And I said I'll try very hard to
+bring you into the course, based on
+
+37
+00:02:24,390 --> 00:02:29,339
+what you wanna do and
+what is appealing to you.
+
+38
+00:02:29,340 --> 00:02:34,121
+So this is kind of a different mindset of a person than the person going to college.
+
+39
+00:02:34,121 --> 00:02:37,370
+Okay, so let's draw the timeline first.
+
+40
+00:02:37,370 --> 00:02:40,10
+And that'll help us break up the problem.
+
+41
+00:02:40,10 --> 00:02:42,344
+So the timeline is this.
+
+42
+00:02:49,728 --> 00:02:54,316
+And I'm going to interpret the problem,
+which will make it simpler for
+
+43
+00:02:54,316 --> 00:02:55,710
+you, okay?
+
+44
+00:02:55,710 --> 00:03:00,802
+So your timeline is this, 0,
+which in this case happens to be what?
+
+45
+00:03:00,802 --> 00:03:02,930
+Age 25.
+
+46
+00:03:02,930 --> 00:03:04,550
+So I'm writing the age of the person so
+
+47
+00:03:04,550 --> 00:03:07,220
+that it becomes easy,
+but time 0 means today, right?
+
+48
+00:03:08,300 --> 00:03:11,740
+So that's the 1.
+
+49
+00:03:11,740 --> 00:03:15,640
+What's the next age that's important?
+
+50
+00:03:15,640 --> 00:03:17,450
+55.
+
+51
+00:03:17,450 --> 00:03:20,10
+Why is it important?
+
+52
+00:03:20,10 --> 00:03:23,320
+Because that's the decision
+point at which things will,
+
+53
+00:03:23,320 --> 00:03:27,420
+that's a point in the future which
+is a life event, they call it,
+
+54
+00:03:27,420 --> 00:03:31,839
+where you'll suddenly become from the saver
+to spender because you're retiring.
+
+55
+00:03:31,840 --> 00:03:38,90
+You're of course spending too while
+you're up to age 55, but you know things.
+
+56
+00:03:38,90 --> 00:03:42,310
+So starting at the retirement,
+what does it say?
+
+57
+00:03:42,310 --> 00:03:46,610
+That she has just set up a retirement
+fund to pay her annual income
+
+58
+00:03:46,610 --> 00:03:48,410
+on her retirement day,
+
+59
+00:03:48,410 --> 00:03:52,809
+and to continue paying for 20 years.
+
+60
+00:03:52,809 --> 00:04:02,293
+So the first payment is 50,000... 50,000.
+
+61
+00:04:02,294 --> 00:04:04,580
+How many times?
+
+62
+00:04:04,580 --> 00:04:06,480
+n is 21,
+
+63
+00:04:06,480 --> 00:04:09,700
+where this n is for what?
+
+64
+00:04:09,700 --> 00:04:10,660
+Retirement income.
+
+65
+00:04:11,710 --> 00:04:13,440
+Remember there are two Ns.
+
+66
+00:04:13,440 --> 00:04:16,817
+One is for how do you solve the problem
+of what you need in the future?
+
+67
+00:04:16,817 --> 00:04:20,530
+The other n is how many
+times will you save, okay?
+
+68
+00:04:20,529 --> 00:04:25,450
+So this is fine, and
+you know you need this 21 times,
+
+69
+00:04:26,730 --> 00:04:29,180
+and you need it in the future.
+
+70
+00:04:29,180 --> 00:04:33,360
+So 75 will go on, I mean,
+25 will go on till 75, okay?
+
+71
+00:04:34,460 --> 00:04:38,409
+We know now what the problem looks like,
+but what don't we know?
+
+72
+00:04:38,410 --> 00:04:46,180
+We don't know the saving every year needed
+which is also a PMT problem, all right?
+
+73
+00:04:46,180 --> 00:04:51,420
+I could make it complex like last time,
+by making the saving grow every year.
+
+74
+00:04:51,420 --> 00:04:55,490
+But I'm not going to do it,
+because this is already pretty complex.
+
+75
+00:04:55,490 --> 00:05:01,120
+So given this timeline, can you now
+break it up into bite size pieces?
+
+76
+00:05:01,120 --> 00:05:02,180
+Let's do that.
+
+77
+00:05:02,180 --> 00:05:04,803
+And let's try to solve the problem, okay?
+
+78
+00:05:04,803 --> 00:05:09,806
+So the first solving the problem
+
+79
+00:05:09,806 --> 00:05:15,000
+issue is, what is the PV of return?
+
+80
+00:05:16,150 --> 00:05:17,140
+So think about it.
+
+81
+00:05:17,140 --> 00:05:22,902
+The interest rate turns out to be,
+
+82
+00:05:22,903 --> 00:05:29,80
+is, I'm just looking at 0.05.
+
+83
+00:05:29,80 --> 00:05:32,852
+And how many years will you
+need retirement income?
+
+84
+00:05:32,852 --> 00:05:34,799
+21.
+
+85
+00:05:34,800 --> 00:05:41,40
+And what will be the retirement income you
+need annually, is it a PMT or a FV?
+
+86
+00:05:41,40 --> 00:05:43,74
+It's a PMT of 50,000.
+
+87
+00:05:46,350 --> 00:05:50,310
+This is very straightforward, but
+remember, the key here is to remember,
+
+88
+00:05:50,310 --> 00:05:56,470
+the first payment is year 55,
+second one is year 56.
+
+89
+00:05:56,470 --> 00:05:59,520
+Remember, you are going forward in time.
+
+90
+00:05:59,520 --> 00:06:03,349
+So when you do this PV,
+in which year will this PV be?
+
+91
+00:06:03,350 --> 00:06:04,440
+It'll be in year 54.
+
+92
+00:06:04,440 --> 00:06:09,60
+I almost feel like apologizing but
+that's the convention.
+
+93
+00:06:09,60 --> 00:06:12,700
+The convention is, the first
+payment is one year from now, and
+
+94
+00:06:12,700 --> 00:06:16,80
+you will slip up on this, everybody does.
+
+95
+00:06:16,80 --> 00:06:20,308
+So this PV turns out to be,
+
+96
+00:06:20,308 --> 00:06:25,883
+if I calculate it, it will turn out
+
+97
+00:06:25,883 --> 00:06:30,902
+to be 641,057.64.
+
+98
+00:06:30,902 --> 00:06:33,549
+So, what do I know?
+
+99
+00:06:33,549 --> 00:06:38,7
+I know in year 54, I need to have
+
+100
+00:06:38,7 --> 00:06:43,510
+$641,057.64 to do what?
+
+101
+00:06:43,510 --> 00:06:46,930
+To be able to finance
+$50,000 how many times?
+
+102
+00:06:46,930 --> 00:06:48,270
+51 times.
+
+103
+00:06:48,270 --> 00:06:52,560
+That's based on me, Abebi's projection.
+
+104
+00:06:52,560 --> 00:06:54,197
+Now what's the next step?
+
+105
+00:06:54,197 --> 00:06:59,910
+Figure out PMT.
+
+106
+00:06:59,910 --> 00:07:03,80
+Think about it for a minute,
+can you, answer is yes.
+
+107
+00:07:04,320 --> 00:07:07,530
+But you have to recognize
+the nature of the beast so
+
+108
+00:07:07,530 --> 00:07:10,609
+when are you starting to save?
+
+109
+00:07:10,610 --> 00:07:12,570
+And when are you ending to save?
+
+110
+00:07:12,570 --> 00:07:19,701
+You're starting to save pretty much in
+the year 26, you're starting at year 25.
+
+111
+00:07:19,701 --> 00:07:23,380
+26 will be your first payment, and
+the last one will be in year 54.
+
+112
+00:07:23,380 --> 00:07:26,289
+So you have 29 payments.
+
+113
+00:07:26,289 --> 00:07:32,200
+26,27,28,29,30,31,32,33 and
+so on and so forth, right?
+
+114
+00:07:32,200 --> 00:07:37,222
+So this n turns out to be 29.
+
+115
+00:07:37,222 --> 00:07:42,260
+And you've clarified that and
+I did it with you on the timeline.
+
+116
+00:07:42,260 --> 00:07:44,890
+Now in the real world,
+this will become much easier.
+
+117
+00:07:44,890 --> 00:07:48,507
+Because when you're doing your own
+problem, you know your timeline,
+
+118
+00:07:48,507 --> 00:07:49,925
+whatever that is, and so on.
+
+119
+00:07:49,925 --> 00:07:51,360
+So this is a key number.
+
+120
+00:07:53,170 --> 00:07:59,700
+We are assuming r is 5%, okay?
+
+121
+00:07:59,700 --> 00:08:01,630
+Now what do I need to do?
+
+122
+00:08:01,630 --> 00:08:06,310
+I know n, I know r,
+do I need to solve a PV problem?
+
+123
+00:08:06,310 --> 00:08:08,210
+An FV problem?
+
+124
+00:08:08,210 --> 00:08:09,820
+PMT problem?
+
+125
+00:08:09,820 --> 00:08:12,10
+What combination do I need?
+
+126
+00:08:12,10 --> 00:08:17,920
+Well, I know, I know my number that
+I need at year 54.
+
+127
+00:08:17,920 --> 00:08:20,850
+So I have to be thinking Future Value.
+
+128
+00:08:20,850 --> 00:08:22,450
+I cannot be thinking PV.
+
+129
+00:08:22,450 --> 00:08:28,580
+I could do PV by bringing this back to
+year 25, but that is an unnecessary step.
+
+130
+00:08:28,580 --> 00:08:30,680
+Why?
+Because I know how to solve for
+
+131
+00:08:30,680 --> 00:08:33,390
+PMT with Future Value too.
+
+132
+00:08:33,390 --> 00:08:39,199
+So, I do PMT, 0.05, what is n?
+
+133
+00:08:40,260 --> 00:08:42,980
+I've done it, so these two numbers I know.
+
+134
+00:08:42,980 --> 00:08:47,505
+And then finally,
+I know that the first function is 0,
+
+135
+00:08:47,505 --> 00:08:50,794
+because it's PV, so you put a 0 there.
+
+136
+00:08:50,794 --> 00:08:52,326
+And then put what?
+
+137
+00:08:52,326 --> 00:09:00,150
+641057.64.
+
+138
+00:09:00,150 --> 00:09:01,170
+So what do I get?
+
+139
+00:09:01,170 --> 00:09:08,98
+I get all the numbers in, and if I press
+Enter, you should get an answer of,
+
+140
+00:09:10,728 --> 00:09:16,679
+required saving is 10,286.10.
+
+141
+00:09:16,679 --> 00:09:21,516
+So if you save $10,286,
+
+142
+00:09:21,516 --> 00:09:26,000
+you will save how many times?
+
+143
+00:09:26,000 --> 00:09:27,190
+29 times.
+
+144
+00:09:27,190 --> 00:09:30,723
+How much will you have after 54,
+at age 54?
+
+145
+00:09:30,723 --> 00:09:36,579
+641,000, which is a lot of money, right?
+
+146
+00:09:36,580 --> 00:09:40,390
+So if you were saving $10,000,
+approximately, and
+
+147
+00:09:40,390 --> 00:09:44,856
+there was no interest,
+the amount would be what after 29 years?
+
+148
+00:09:44,856 --> 00:09:47,970
+Little less than 300,000.
+
+149
+00:09:47,970 --> 00:09:49,380
+How did I get that?
+
+150
+00:09:49,380 --> 00:09:50,890
+I multiplied 10,000 by 30.
+
+151
+00:09:50,890 --> 00:09:52,550
+I had 300,000.
+
+152
+00:09:52,550 --> 00:09:55,776
+Now you get a lot more money,
+you get 641,000.
+
+153
+00:09:55,777 --> 00:09:59,377
+Because the interest rate is 5%,
+reasonably high, but
+
+154
+00:09:59,377 --> 00:10:01,880
+what's important is, you're working.
+
+155
+00:10:01,880 --> 00:10:05,40
+The money is working for you and
+you're repeatedly putting money.
+
+156
+00:10:05,40 --> 00:10:06,490
+29, over 29 years.
+
+157
+00:10:06,490 --> 00:10:10,630
+So this solves the problem.
+
+158
+00:10:10,630 --> 00:10:14,496
+Let's take a break before we
+do the next mega problem.
+
+159
+00:10:14,496 --> 00:10:18,703
+And then we'll be done with
+the application phase, for
+
+160
+00:10:18,703 --> 00:10:23,714
+the first component of this course,
+which I call the basics of Time
+
+161
+00:10:23,715 --> 00:10:28,480
+Value of Money, applied to more and
+more complex situations.
+

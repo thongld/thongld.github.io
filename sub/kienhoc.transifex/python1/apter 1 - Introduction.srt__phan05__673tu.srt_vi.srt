@@ -1,0 +1,410 @@
+377
+00:16:22,860 --> 00:16:24,670
+wermarter 20/05/16
+Không phải sợ thứ này
+
+378
+00:16:24,670 --> 00:16:27,050
+Nó không hề thông minh đến thế
+
+379
+00:16:27,050 --> 00:16:29,580
+Đây là thứ được lập trình để hỏi
+
+380
+00:16:29,580 --> 00:16:31,450
+Tiếp theo là gì?
+
+381
+00:16:31,450 --> 00:16:33,800
+Lúc này, ta phải có 
+một tập hợp các câu lệnh
+
+382
+00:16:33,800 --> 00:16:36,420
+để đưa vào nó với tốc độ rất cao,
+hàng tỉ lần
+
+383
+00:16:36,420 --> 00:16:37,470
+mỗi giây
+
+384
+00:16:37,470 --> 00:16:38,610
+Đó là vai trò của thứ này
+
+385
+00:16:38,610 --> 00:16:40,580
+Đây là bộ nhớ truy cập ngẫu nhiên (RAM)
+
+386
+00:16:40,580 --> 00:16:43,620
+bao gồm nhiều chip bộ nhớ
+liên kết với nhau
+
+387
+00:16:43,620 --> 00:16:45,000
+thông qua bo mạch chủ
+
+388
+00:16:45,000 --> 00:16:49,500
+Bây giờ, ta đã có bộ nhớ chính (RAM)
+và bộ phận xử lí trung tâm (CPU)
+
+389
+00:16:49,500 --> 00:16:50,070
+ 
+
+390
+00:16:50,070 --> 00:16:53,630
+RAM là nơi lưu các chỉ lệnh 
+để có thể đưa vào CPU với tốc độ cao
+
+391
+00:16:53,630 --> 00:16:55,550
+và cũng là nơi lưu trữ dữ liệu 
+để có thể truy cập rất nhanh
+
+392
+00:16:55,550 --> 00:16:57,460
+CPU sẽ hỏi, tiếp theo là gì?
+
+393
+00:16:57,460 --> 00:16:59,127
+Nó đọc các chỉ lệnh từ chỗ này
+
+394
+00:16:59,127 --> 00:17:01,501
+Hai bộ phận này không thể 
+kết nối với nhau trực tiếp được
+
+395
+00:17:01,501 --> 00:17:03,910
+nhưng sẽ được kết nối
+với nhau một cách gián tiếp.
+
+396
+00:17:03,910 --> 00:17:06,230
+Đừng quan tâm tới hai thứ này, 
+chúng đã cũ
+
+397
+00:17:06,230 --> 00:17:08,890
+và không thể bị đau
+
+398
+00:17:08,890 --> 00:17:12,810
+Kế đến, ta sẽ tìm hiểu
+về thiết bị nhập xuất
+
+399
+00:17:12,810 --> 00:17:14,720
+Trở lại với chiếc Raspberry Pi
+
+400
+00:17:14,720 --> 00:17:17,550
+nó có một cổng USB để
+
+401
+00:17:17,550 --> 00:17:20,060
+kết nối với chuột hoặc bàn phím.
+
+402
+00:17:20,060 --> 00:17:24,220
+Ngoài ra, còn có cổng HDMI
+để kết nối với màn hình
+
+403
+00:17:24,220 --> 00:17:25,640
+và cổng mạng dây (Ethernet).
+
+404
+00:17:25,640 --> 00:17:30,160
+Đó là tất cả ví dụ về
+thiết bị nhập xuất điển hình của máy tính.
+
+405
+00:17:30,160 --> 00:17:32,806
+
+406
+00:17:32,806 --> 00:17:36,930
+Phần cuối cùng trên sơ đồ là 
+bộ nhớ phụ (secondary memory)
+
+407
+00:17:36,930 --> 00:17:39,660
+Trên chiếc Raspberry Pi này ta có
+
+408
+00:17:39,660 --> 00:17:42,390
+RAM, CPU
+
+409
+00:17:42,390 --> 00:17:44,570
+tất cả nằm trên một chip tại trung tâm
+
+410
+00:17:44,570 --> 00:17:46,670
+Nó được gọi là SoC (System On a Chip)
+tức là hệ thống trên một chip.
+
+411
+00:17:46,670 --> 00:17:49,080
+Nơi mà nhà sản xuất sẽ đặt 
+nhiều bộ phận vào một chip duy nhất.
+
+412
+00:17:49,080 --> 00:17:56,510
+Nói chung, tất cả những thứ này
+
+413
+00:17:56,510 --> 00:18:02,110
+nén lại thành một chiếc
+Raspberry Pi nhỏ nhắn xinh xắn
+
+414
+00:18:02,110 --> 00:18:04,530
+nhưng vẫn giữ nguyên vẹn
+về mặt cấu trúc hệ thống.
+
+415
+00:18:04,530 --> 00:18:05,977
+Một bộ phận xử lí trung tâm (CPU),
+
+416
+00:18:05,977 --> 00:18:06,810
+Bộ nhớ chính (main memory),
+
+417
+00:18:06,810 --> 00:18:11,170
+Và card đồ hoạ, v.v...
+
+418
+00:18:11,170 --> 00:18:13,410
+Cũng như các thiết bị nhập xuất
+
+419
+00:18:13,410 --> 00:18:17,580
+Cái này cũng có các thiết bị nhập xuất, 
+như là cổng USB, bàn phím, màn hình
+
+420
+00:18:17,580 --> 00:18:18,080
+vân vân
+
+421
+00:18:18,080 --> 00:18:20,530
+Chúng rất giống nhau,
+chỉ là cái này thì mới
+
+422
+00:18:20,530 --> 00:18:21,890
+còn cái này thì cũ.
+
+423
+00:18:21,890 --> 00:18:25,370
+Thiết bị càng mới thì càng nhỏ.
+
+424
+00:18:25,370 --> 00:18:25,870
+OK
+
+425
+00:18:25,870 --> 00:18:29,060
+
+426
+00:18:29,060 --> 00:18:31,250
+OK. Cuối cùng ta sẽ nói đến
+
+427
+00:18:31,250 --> 00:18:32,670
+bộ nhớ phụ.
+
+428
+00:18:32,670 --> 00:18:35,430
+
+429
+00:18:35,430 --> 00:18:38,850
+Khi nguồn điện ngắt, những thông tin
+lưu trữ trên đây sẽ mất đi.
+
+430
+00:18:38,850 --> 00:18:40,990
+Dữ liệu trên RAM sẽ bị xoá hết.
+
+431
+00:18:40,990 --> 00:18:44,550
+RAM chỉ được thiết kế cho tốc độ nhanh
+nhưng không mang tính bền vững,
+
+432
+00:18:44,550 --> 00:18:46,190
+Vì thế, ta cần một nơi có thể lưu trữ lâu bền
+
+433
+00:18:46,190 --> 00:18:47,710
+Đó chính là bộ nhớ phụ.
+
+434
+00:18:47,710 --> 00:18:50,370
+Đó chính là vai trò của bộ nhớ phụ.
+
+435
+00:18:50,370 --> 00:18:52,640
+Cái này lưu trữ thông tin bền vững
+
+436
+00:18:52,640 --> 00:18:55,340
+Cái này làm việc rất nhanh
+
+437
+00:18:55,340 --> 00:18:58,515
+cực kì nhanh chóng
+
+438
+00:18:58,515 --> 00:19:01,450
+còn cái này thì bền vững
+nhưng lại chậm hơn rất nhiều
+
+439
+00:19:01,450 --> 00:19:02,000
+OK?
+
+440
+00:19:02,000 --> 00:19:03,475
+Đối với bộ nhớ phụ,
+
+441
+00:19:03,475 --> 00:19:08,030
+chúng ta có 2 loại
+
+442
+00:19:08,030 --> 00:19:09,840
+2 loại bộ nhớ phụ
+
+443
+00:19:09,840 --> 00:19:11,575
+Trở lại với chiếc Raspberry Pi,
+
+444
+00:19:11,575 --> 00:19:16,010
+Bộ nhớ phụ của nó là thẻ nhớ SD
+
+445
+00:19:16,010 --> 00:19:17,470
+cũng giống như đĩa cứng
+
+446
+00:19:17,470 --> 00:19:20,560
+Nó lưu trữ thông tin lâu bền
+mà không cần điện
+
+447
+00:19:20,560 --> 00:19:23,180
+để duy trì dữ liệu,
+thông tin luôn được lưu giữ.
+
+448
+00:19:23,180 --> 00:19:27,210
+Trong tương lai, ta sẽ 
+gặp các ổ đĩa dạng flash
+
+449
+00:19:27,210 --> 00:19:29,300
+và dạng SD nhiều hơn.
+
+450
+00:19:29,300 --> 00:19:32,160
+Vì thế có thể nói Raspberry Pi
+đang hướng tới tương lai của thiết bị điện tử.
+
+451
+00:19:32,160 --> 00:19:33,770
+Đây là một ổ đĩa cứng
+
+452
+00:19:33,770 --> 00:19:36,340
+À không phải, thực chất
+nó là bộ nhớ flash.
+
+453
+00:19:36,340 --> 00:19:42,620
+Khi tôi còn nhỏ,
+
+454
+00:19:42,620 --> 00:19:47,220
+bộ nhớ phụ thường là
+một ổ đĩa cứng.
+
+455
+00:19:47,220 --> 00:19:50,123
+Nó có những đĩa từ,
+nó quay
+
+456
+00:19:50,123 --> 00:19:52,850
+và tạo ra âm thanh khá "dễ chịu"
+
+457
+00:19:52,850 --> 00:19:54,710
+Cần di chuyển đầu đọc 
+sẽ dịch chuyển qua lại để đọc dữ liệu
+
+458
+00:19:54,710 --> 00:19:57,290
+Tôi sẽ cho bạn xem video về nó
+
+459
+00:19:57,290 --> 00:20:00,200
+Dữ liệu được lưu trữ trên các đĩa từ
+
+460
+00:20:00,200 --> 00:20:01,700
+và khi ngắt nguồn điện,
+
+461
+00:20:01,700 --> 00:20:03,470
+dữ liệu đã được từ hoá
+nên không bị mất đi
+
+462
+00:20:03,470 --> 00:20:05,590
+Cần di chuyển đầu đọc
+dịch chuyển tới vị trí chính xác của dữ liệu
+
+463
+00:20:05,590 --> 00:20:07,450
+Xoay đĩa và đọc dữ liệu.
+
+464
+00:20:07,450 --> 00:20:11,840
+Nó được tổ chức và hoạt động 
+một cách khá lộn xộn
+
+465
+00:20:11,840 --> 00:20:14,410
+Tổng kết lại
+
+466
+00:20:14,410 --> 00:20:18,870
+CPU xử lí các tiến trình
+
+467
+00:20:18,870 --> 00:20:23,040
+Bộ nhớ chính (RAM) tuy nhanh 
+nhưng mất dữ liệu khi ngắt nguồn,
+
+468
+00:20:23,040 --> 00:20:25,120
+Thiết bị đầu cuối như
+chuột, bàn phím, v.v...
+
+469
+00:20:25,120 --> 00:20:30,850
+Và cuối cùng là bộ nhớ phụ
+- nơi lưu trữ thông tin lâu dài kể cả khi mất điện
+
+470
+00:20:30,850 --> 00:20:31,940
+OK.
+

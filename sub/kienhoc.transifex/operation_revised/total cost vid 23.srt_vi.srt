@@ -1,0 +1,233 @@
+1
+00:00:00,840 --> 00:00:02,840
+phuongmai201 8/10/2016
+Rất vui được gặp lại và chào mừng các bạn trở lại với khóa học " Quản trị vận hành"
+
+2
+00:00:02,840 --> 00:00:06,450
+Chúng ta tiếp tục với chủ đề về hàng tồn kho.
+
+3
+00:00:06,450 --> 00:00:12,080
+Trong phần trước, ta đã được giới thiệu qua về hàng tồn kho, tại sao ta lại sử dụng nó,
+
+4
+00:00:12,080 --> 00:00:16,170
+và trong phần này, ta sẽ nói về phương trình tổng chi phí.
+
+5
+00:00:16,170 --> 00:00:23,220
+Phương trình tổng chi phí này rất là quan trọng bởi vì nó giúp chúng ta xác định lượng
+
+6
+00:00:23,220 --> 00:00:28,609
+hàng cần đặt ở một thời điểm xác định. Nào chúng ta cùng bắt đầu. 
+
+7
+00:00:28,609 --> 00:00:34,000
+Có 3 thành phần cấu thành nên tổng chi phí về hàng tồn kho cho một năm.
+
+8
+00:00:34,000 --> 00:00:39,800
+Thành phần đầu tiên là chi phí ta bỏ ra để đặt hàng tồn kho.
+
+9
+00:00:39,800 --> 00:00:45,210
+Mỗi lần ta đặt hàng, sẽ có một khoản chi phí đi liền với việc đặt hàng.
+
+10
+00:00:45,210 --> 00:00:49,320
+Khía cạnh thứ 2 của phương tình là chi phí bỏ ra 
+
+11
+00:00:49,320 --> 00:00:55,310
+để tồn trữ hàng tồn kho, và đây chính là chi phí vật chất và chi phí cơ hội 
+
+12
+00:00:55,310 --> 00:01:02,079
+cho việc dự trữ hàng tồn kho. Và phần thứ 3 của phương trình là chi phí 
+
+13
+00:01:02,079 --> 00:01:06,170
+của bản thân hàng tồn kho đó. Vậy là có 3 thành phần.
+
+14
+00:01:06,170 --> 00:01:12,490
+Tôi sẽ phát triển một phương trình bao gồm cả 3 thành phần này. 
+
+15
+00:01:12,490 --> 00:01:17,770
+Để làm được điều đó ta cần xem xét một vài biến số.
+
+16
+00:01:17,770 --> 00:01:23,259
+Chữ Q hoa tượng trưng cho khối lượng hàng hóa.
+
+17
+00:01:23,259 --> 00:01:26,350
+Khi ta đặt một đơn hàng, ta phải đặt một số lượng 
+
+18
+00:01:26,350 --> 00:01:28,480
+đơn vị hàng nhất định và đó chính là ý nghĩa của Q.
+
+19
+00:01:28,480 --> 00:01:32,709
+Đó là số lượng đơn vị hàng được đặt tại một thời điểm cho sẵn. 
+
+20
+00:01:32,709 --> 00:01:39,389
+R là nhu cầu hằng năm. Hay nói cách khác, lượng hàng ta sẽ sử dụng 
+
+21
+00:01:39,389 --> 00:01:43,179
+trong 1 năm. Đôi khi, nó còn được biết đến là nhu cầu nhưng hãy nhớ rằng 
+
+22
+00:01:43,179 --> 00:01:49,419
+đây là phương trình tổng chi phí hằng năm. Vì vậy mọi thứ ta giải quyết ở đây là 
+
+23
+00:01:49,419 --> 00:01:54,739
+cho 1 năm. C là chi phí cho một đơn vị hàng hóa. 
+
+24
+00:01:54,739 --> 00:02:00,399
+Hay bạn phải trả bao nhiêu cho một đơn vị hàng. S là chi phí thiết lập đơn hàng.
+
+25
+00:02:00,399 --> 00:02:08,319
+Mỗi khi bạn đặt một đơn hàng thì đây là chi phí đặc biêt gắn liền với việc đặt hàng đó. 
+
+26
+00:02:08,319 --> 00:02:11,980
+Bây giờ hãy nhìn xuống chữ cái phía dưới đây. Đó là chữ H hoa. 
+
+27
+00:02:11,980 --> 00:02:15,310
+Đây là chi phí tồn trữ cho 1 đơn vị hàng trong 1 năm.
+
+28
+00:02:15,310 --> 00:02:23,219
+Nếu các bạn còn nhớ, hàng tồn kho có chi phí  lưu trữ vật chất cũng như chi phí cơ hội.
+
+29
+00:02:23,219 --> 00:02:30,290
+Vậy bạn có thể thấy chữ H hoa là sự kết hợp của cả chi phí lưu trữ vật chất, h nhỏ
+
+30
+00:02:30,290 --> 00:02:35,069
+cộng với chi phí cơ hội, r nhỏ,
+
+31
+00:02:35,069 --> 00:02:40,019
+nhân với chi phí 1 đơn vị hàng hóa. Đó là những gì chúng ta sẽ sử dụng.
+
+32
+00:02:40,019 --> 00:02:45,239
+Ta sẽ sử dụng chữ H lớn nhưng nó thực ra được hợp thành bởi cả chi phí vật chất và chi phí cơ hội.
+
+33
+00:02:45,239 --> 00:02:50,810
+Với những biến số này, hãy đến với thành phần đầu tiên của phương trình.
+
+34
+00:02:50,810 --> 00:02:56,959
+Đây là chi phí đặt 1 đơn hàng. Vậy chi phí thiết lập đơn hàng là mỗi khi 
+
+35
+00:02:56,959 --> 00:03:05,269
+ta đặt hàng, ta phải chịu một khoản phí. Nếu ta đặt hàng 5 lần, ta sẽ lấy chi phí
+
+36
+00:03:05,269 --> 00:03:10,400
+đặt hàng và nhân với 5. Nếu ta đặt 10 lần, ta lấy chi phí 
+
+37
+00:03:10,400 --> 00:03:15,390
+đặt hàng và nhân nó với 10. Nhưng để xác định số lần bạn
+
+38
+00:03:15,390 --> 00:03:19,090
+đặt hàng, ta lấy tổng mức tiêu thụ,
+
+39
+00:03:19,090 --> 00:03:23,719
+hay R và chia cho lượng hàng đặt trong một lần.
+
+40
+00:03:23,719 --> 00:03:28,239
+Vậy R/Q sẽ cho ta biết số lần bạn đặt hàng
+
+41
+00:03:28,239 --> 00:03:31,240
+và ta nhân nó với S, chi phí đặt hàng. 
+
+42
+00:03:31,240 --> 00:03:39,930
+Chúng cho bạn thấy chi phí đặt hàng trong một năm. Tiếp đến là chi phí tồn trữ 1 năm.
+
+43
+00:03:39,930 --> 00:03:47,709
+Cái ta cần là lượng hàng tồn kho trung bình, thường được xác định bằng Q/2.
+
+44
+00:03:47,709 --> 00:03:53,529
+Bởi vì đây là lượng hàng đặt và khi ta xuống còn 0, ta sẽ đặt lại hàng.
+
+45
+00:03:53,529 --> 00:04:00,810
+Vậy lượng hàng tồn kho trung bình được thể hiện là Q/2, ta nhân nó với chi phí tồn trữ 
+
+46
+00:04:00,810 --> 00:04:09,459
+Đó chính là chi phí tồn trữ trong 1 năm. Tiếp đến là chi phí thực tế để mua
+
+47
+00:04:09,459 --> 00:04:14,510
+hàng hóa. Nó chính là chi phí của một đơn vị hàng nhân với tổng lượng 
+
+48
+00:04:14,510 --> 00:04:17,110
+hàng hóa ta sẽ dùng trong một năm, hay R.
+
+49
+00:04:17,110 --> 00:04:22,949
+Vậy là C nhân R. Ta đã giải nghĩa được 3 khía cạnh của 
+
+50
+00:04:22,949 --> 00:04:27,810
+của phương trình tổng chi phí và khi ta gộp chúng lại thì nó sẽ thành
+
+51
+00:04:27,810 --> 00:04:34,020
+như thế này: Tổng chi phí 1 năm bằng chi phí đặt hàng
+
+52
+00:04:34,020 --> 00:04:40,400
+1 năm ( S nhân R/Q) cộng với chi phí tồn trữ 1 năm ( H nhân Q
+
+53
+00:04:40,400 --> 00:04:45,750
+chia 2) và chi phí của hàng hóa mua vào ( C nhân R)
+
+54
+00:04:45,750 --> 00:04:51,810
+Đó chính là phương trình tổng chi phí trong 1 năm. Bây giờ ta sẽ dùng phương trình
+
+55
+00:04:51,810 --> 00:04:56,430
+trong video tiếp theo và nói về lượng đặt hàng kinh tế
+
+56
+00:04:56,430 --> 00:05:01,680
+ở đó ta sẽ tìm hiểu giá trị thực của Q,
+
+57
+00:05:01,680 --> 00:05:07,280
+lượng đặt hàng trong 1 lần là bao nhiều để tối thiểu tổng chi phí.
+
+58
+00:05:07,280 --> 00:05:07,900
+Hẹn gặp lại các bạn trong bài tới.
+

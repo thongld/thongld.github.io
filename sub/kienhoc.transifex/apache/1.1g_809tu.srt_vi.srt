@@ -1,0 +1,451 @@
+0
+00:00:00,000 --> 00:00:00,830
+dungpham12002 30.08.2016
+
+1
+00:00:00,830 --> 00:00:04,010
+Giờ ta sẽ bàn luận về các action trong Spark.
+
+2
+00:00:04,010 --> 00:00:07,150
+Chúng là thứ khiến Spark xử lý công thức
+
+3
+00:00:07,150 --> 00:00:11,370
+để biến một nguồn thành các data frame,
+
+4
+00:00:11,370 --> 00:00:13,940
+và hơn cả, nó là cơ chế để thu được thông tin
+
+5
+00:00:13,940 --> 00:00:15,860
+từ Spark.
+
+6
+00:00:15,860 --> 00:00:18,280
+Một số action hữu dụng mà bạn có thể sử dụng
+
+7
+00:00:18,280 --> 00:00:22,320
+bao gồm show, trả về n hàng đầu tiên
+
+8
+00:00:22,320 --> 00:00:25,390
+của một data frame; và take,
+
+9
+00:00:25,390 --> 00:00:29,930
+trả về n hàng đầu tiên của một data frame
+dưới dạng một list các hàng.
+
+10
+00:00:29,930 --> 00:00:32,820
+Collect là một action trả về
+
+11
+00:00:32,820 --> 00:00:37,040
+trả về tất cả các dứ liệu trong data frame
+dưới dạng list của các hàng.
+
+12
+00:00:37,040 --> 00:00:39,560
+Bạn cần cân nhắc kĩ trước khi dùng collect,
+
+13
+00:00:39,560 --> 00:00:42,570
+bởi nó sẽ trả lại tất cả dữ liệu.
+
+14
+00:00:42,570 --> 00:00:44,570
+Điều đó có nghĩa là tất cả
+các dữ liệu được phân tán
+
+15
+00:00:44,570 --> 00:00:46,111
+thuộc về data frame của bạn, được lưu trữ
+
+16
+00:00:46,111 --> 00:00:48,100
+trên tất cả các máy của các worker
+
+17
+00:00:48,100 --> 00:00:50,900
+sẽ được trả về, và bộ nhớ của trình điều khiển
+phải lưu trữ được
+
+18
+00:00:50,900 --> 00:00:51,920
+tất cả dữ liệu.
+
+19
+00:00:51,920 --> 00:00:54,420
+Nếu dữ liệu trả về quá lớn so với 
+dung lượng bộ nhớ của trình điều khiển,
+
+20
+00:00:54,420 --> 00:00:56,090
+sẽ xảy ra lỗi 'không đủ dung lượng lưu trữ'
+
+21
+00:00:56,090 --> 00:00:58,240
+và chương trình sẽ bị thoát ra đột ngột.
+
+22
+00:00:58,240 --> 00:01:00,950
+Vì vậy tôi khuyên bạn không nên sử dụng collect,
+
+23
+00:01:00,950 --> 00:01:05,640
+mà thay vào đó sử dụng take hoặc show.
+
+24
+00:01:05,640 --> 00:01:09,560
+Bạn không bao giờ được sử dụng collect
+trong production,
+
+25
+00:01:09,560 --> 00:01:11,660
+nhưng nó đôi khi có ích
+trong việc sửa lỗi.
+
+26
+00:01:11,660 --> 00:01:15,540
+Vậy, bạn hãy cẩn thận khi sử dụng nó.
+
+27
+00:01:15,540 --> 00:01:18,220
+Một action hữu dụng khác là count.
+
+28
+00:01:18,220 --> 00:01:21,550
+Nó sẽ trả về số hàng của một data frame.
+
+29
+00:01:21,550 --> 00:01:25,500
+Ta vừa được biết count là một transformation,
+
+30
+00:01:25,500 --> 00:01:27,980
+nhưng đó là khi bạn đang làm về
+nhóm dữ liệu.
+
+31
+00:01:27,980 --> 00:01:30,470
+Vậy khi làm về nhóm dữ liệu,
+
+32
+00:01:30,470 --> 00:01:32,420
+count là một transformation, nhưng
+
+33
+00:01:32,420 --> 00:01:37,990
+khi bạn đang làm việc với data frame,
+count là một action.
+
+34
+00:01:37,990 --> 00:01:40,590
+Cuối cùng, ta có describe.
+
+35
+00:01:40,590 --> 00:01:44,460
+Action này rất có ích trong việc
+phân tích dữ liệu thăm dò.
+
+36
+00:01:44,460 --> 00:01:49,350
+Nó sẽ tính toán các số liệu thống kê của 
+các cột đã được định rõ,
+
+37
+00:01:49,350 --> 00:01:51,140
+chứa dữ liệu có dạng số.
+
+38
+00:01:51,140 --> 00:01:52,870
+Các số liệu này bao gồm
+
+39
+00:01:52,870 --> 00:01:56,980
+số bản ghi, trung bình cộng,
+độ lệch chuẩn, các giá trị nhỏ nhất
+
+40
+00:01:56,980 --> 00:01:58,780
+và lớn nhất.
+
+41
+00:01:58,780 --> 00:02:03,105
+Giờ chúng ta sẽ xem các
+action này được ứng dụng ra sao.
+
+42
+00:02:03,105 --> 00:02:03,980
+Đây là một ví dụ.
+
+43
+00:02:03,980 --> 00:02:05,396
+Ta tạo ra một data frame như trước,
+
+44
+00:02:05,396 --> 00:02:08,410
+với hai hàng và hai cột.
+
+45
+00:02:08,410 --> 00:02:13,330
+Hàng đầu ghi tên Alice, một tuổi,
+và hàng hai ghi tên Bob, hai tuổi.
+
+46
+00:02:13,330 --> 00:02:17,910
+Nếu ta sử dụng show, thay vì collect,
+
+47
+00:02:17,910 --> 00:02:21,080
+ta sẽ nhận được một
+phiên bản in đẹp
+
+48
+00:02:21,080 --> 00:02:24,070
+của data frame đó.
+
+49
+00:02:24,070 --> 00:02:26,880
+Nếu ta sử dụng count --
+ở đây là một action,
+
+50
+00:02:26,880 --> 00:02:28,500
+ta sẽ thấy mỗi số 2 thôi, bởi vì
+
+51
+00:02:28,500 --> 00:02:32,410
+data frame của ta có hai hàng.
+
+52
+00:02:32,410 --> 00:02:35,310
+Nếu ta sử dụng take và 
+gán giá trị 1 cho đối số,
+
+53
+00:02:35,310 --> 00:02:38,900
+ta sẽ nhận lại hàng đầu tiên
+trong data frame của ta.
+
+54
+00:02:38,900 --> 00:02:42,870
+Và nếu ta sử dụng describe, thì bởi vì
+nó chỉ được áp dụng
+
+55
+00:02:42,870 --> 00:02:45,230
+với các cột có dữ liệu dạng số,
+nên nó sẽ không trả về kết quả gì
+
+56
+00:02:45,230 --> 00:02:46,090
+với cột tên.
+
+57
+00:02:46,090 --> 00:02:47,465
+Tuy nhiên với cột tuổi, nó sẽ
+
+58
+00:02:47,465 --> 00:02:50,180
+trả về các kết quả là: 
+có hai bản ghi ứng với hai hàng,
+
+59
+00:02:50,180 --> 00:02:53,290
+giá trị trung bình là 1.5, độ lệch chuẩn
+
+60
+00:02:53,290 --> 00:02:56,560
+là một số thực rất dài;
+giá trị nhỏ nhất là 1,
+
+61
+00:02:56,560 --> 00:03:00,290
+và giá trị lớn nhất là 2.
+
+62
+00:03:00,290 --> 00:03:03,440
+Tôi nhắc lại, mô hình lập trình
+của Spark là
+
+63
+00:03:03,440 --> 00:03:06,250
+ta có thể thực hiện một transformation,
+
+64
+00:03:06,250 --> 00:03:09,590
+sqlContext.read.text. Nó sẽ đọc tập tin,
+
+65
+00:03:09,590 --> 00:03:13,210
+nhưng sẽ không có gì xảy ra
+cho đến khi ta thực hiện một action.
+
+66
+00:03:13,210 --> 00:03:15,160
+Khi ta thực hiện 
+một action như yêu cầu
+
+67
+00:03:15,160 --> 00:03:19,440
+như print linesDF.count(), nó sẽ
+
+68
+00:03:19,440 --> 00:03:22,280
+khiến Spark đọc dữ liệu.
+
+69
+00:03:22,280 --> 00:03:25,570
+Sau đó nó sẽ thực hiện phép tính tổng ở từng
+
+70
+00:03:25,570 --> 00:03:27,890
+phân vùng với mỗi worker,
+
+71
+00:03:27,890 --> 00:03:31,350
+sau đó cộng lại tất cả các tổng đó
+trong trình điều khiển
+
+72
+00:03:31,350 --> 00:03:35,070
+để in ra giá trị.
+
+73
+00:03:35,070 --> 00:03:38,840
+Ở đây, ta đã thêm một transformation nữa:
+đó là hàm filter --
+
+74
+00:03:38,840 --> 00:03:41,070
+nó sẽ chỉ lọc ra những hàng
+
+75
+00:03:41,070 --> 00:03:43,290
+là các bình luận.
+
+76
+00:03:43,290 --> 00:03:46,100
+Giờ ta muốn in ra cả con số chỉ
+
+77
+00:03:46,100 --> 00:03:51,720
+số hàng trong linesDF, và số hàng
+
+78
+00:03:51,720 --> 00:03:53,100
+trong commentsDF.
+
+79
+00:03:53,100 --> 00:03:56,420
+Khi chương trình in ra số chỉ
+số hàng trong commentsDF --
+
+80
+00:03:56,420 --> 00:03:59,010
+nó sẽ làm vậy nếu ta yêu cầu thực hiện action count --
+
+81
+00:03:59,010 --> 00:04:02,510
+Spark sẽ tính lại số hàng trong data frame
+
+82
+00:04:02,510 --> 00:04:05,580
+một lần nữa, tức là nó sẽ đọc lại 
+dữ liệu trong ổ đĩa từ đầu,
+
+83
+00:04:05,580 --> 00:04:07,760
+sau đó tính tổng của
+
+84
+00:04:07,760 --> 00:04:10,730
+từng phân vùng cho commentsDF,
+
+85
+00:04:10,730 --> 00:04:14,010
+sau đó cộng chúng lại trong trình điều khiển.
+
+86
+00:04:14,010 --> 00:04:17,720
+Nếu ta muốn tránh bước tính toán lại,
+
+87
+00:04:17,720 --> 00:04:22,620
+ta có thể yêu cầu Spark lưu linesDF
+vào bộ nhớ đệm. 
+
+88
+00:04:22,620 --> 00:04:24,460
+Lệnh sẽ yêu cầu lưu linesDF vào bộ nhớ,
+
+89
+00:04:24,460 --> 00:04:26,750
+vì ta sẽ sử dụng nó lúc sau.
+
+90
+00:04:26,750 --> 00:04:30,690
+Giờ, khi thực hiện action count cho commentsDF,
+
+91
+00:04:30,690 --> 00:04:34,540
+thông tin sẽ được đọc từ bộ nhớ, thay vì từ ổ đĩa;
+
+92
+00:04:34,540 --> 00:04:40,290
+và linesDF, khi vẫn còn trong bộ nhớ, sẽ được sử dụng lại.
+
+93
+00:04:40,290 --> 00:04:42,730
+Đó chính là chu trình của một
+chương trình Spark:
+
+94
+00:04:42,730 --> 00:04:47,370
+bạn tạo ra một data frame từ
+dữ liệu lấy từ bên ngoài như từ ổ đĩa,
+
+95
+00:04:47,370 --> 00:04:50,980
+hay từ việc thu thập dữ liệu
+
+96
+00:04:50,980 --> 00:04:53,530
+trong trình điều khiển.
+
+97
+00:04:53,530 --> 00:04:56,830
+Tiếp theo, chương trình biến đổi
+các data frame, một cách lười biếng,
+
+98
+00:04:56,830 --> 00:05:00,690
+thành các data frame mới,
+nên bạn cần nêu rõ công thức.
+
+99
+00:05:00,690 --> 00:05:02,440
+Bạn có thể lưu một số data frame
+vào bộ nhớ đệm
+
+100
+00:05:02,440 --> 00:05:04,310
+nếu bạn cần tái sử dụng chúng.
+
+101
+00:05:04,310 --> 00:05:06,820
+Và khi thực hiện các action -- là những thứ
+
+102
+00:05:06,820 --> 00:05:10,250
+khiến cho các công thức ấy được xử lý cùng lúc
+
+103
+00:05:10,250 --> 00:05:14,760
+để trả lại kết quả.
+

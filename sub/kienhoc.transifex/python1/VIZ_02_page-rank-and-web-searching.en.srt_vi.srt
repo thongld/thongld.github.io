@@ -1,0 +1,951 @@
+1
+00:00:08,511 --> 00:00:12,991
+Thao reviewed
+Ví dụ tiếp theo: mô phỏng thuật toán 
+xếp hạng trang web của Google
+
+2
+00:00:12,991 --> 00:00:17,751
+Trước Google đã có nhiều công cụ tìm kiếm khác, 
+và họ có nhiều cách để chọn
+
+3
+00:00:17,751 --> 00:00:21,570
+trang nào sẽ hiện ra khi bạn gõ
+"Tốc độ chạy của báo gấm".
+
+4
+00:00:21,570 --> 00:00:23,340
+Trang nào quan trọng?
+
+5
+00:00:23,340 --> 00:00:28,680
+Google đã sớm tìm ra rằng thay vì chỉ dựa vào
+
+6
+00:00:28,680 --> 00:00:32,210
+các từ trên trang web, ta có thể
+dựa vào liên kết giữa các trang.
+
+7
+00:00:32,210 --> 00:00:35,210
+Thuật toán xếp hạng trang
+về cơ bản coi trọng các đường link.
+
+8
+00:00:35,210 --> 00:00:40,250
+Một trang web có nhiều link dẫn tới sẽ được đánh giá cao.
+
+9
+00:00:40,250 --> 00:00:44,952
+Nhưng ta phải xác định được đó là link rác hay link tốt?
+
+10
+00:00:44,952 --> 00:00:48,980
+Như vậy link tới từ các trang web tốt
+sẽ được đánh giá cao hơn.
+
+11
+00:00:48,980 --> 00:00:50,240
+Cứ tiếp tục như vậy
+
+12
+00:00:50,240 --> 00:00:52,070
+cho tới khi nắm được toàn bộ Internet.
+
+13
+00:00:52,070 --> 00:00:53,835
+Việc đó như thể có một người chỉ tới tất cả mọi người.
+
+14
+00:00:53,835 --> 00:00:56,665
+Thuật toán xếp hạng trang web này
+
+15
+00:00:56,665 --> 00:01:01,575
+dựa vào một dòng chảy chất lượng xuyên suốt Internet.
+
+16
+00:01:01,575 --> 00:01:03,645
+Bây giờ, ta sẽ xây dựng
+thuật toán xếp hạng trang.
+
+17
+00:01:03,645 --> 00:01:06,005
+Các dòng code đã được viết sẵn,
+nên bạn không phải lo lắng.
+
+18
+00:01:06,005 --> 00:01:09,795
+Nhưng bản chất là nó dựa trên chất lượng của các đường link.
+
+19
+00:01:09,795 --> 00:01:12,695
+Nếu đường link này tốt và có nhiều link dẫn ra ngoài
+
+20
+00:01:12,695 --> 00:01:16,880
+thì nó chia sẻ chất lượng đó với các link dẫn ra ngoài của nó.
+
+21
+00:01:16,880 --> 00:01:20,990
+Rồi nó lại nhận được chất lượng từ những đường link dẫn về nó.
+
+22
+00:01:20,990 --> 00:01:23,340
+Việc này được thực hiện liên tục
+
+23
+00:01:23,340 --> 00:01:27,080
+cho đến khi các luồng chảy đó trở nên ổn định,
+
+24
+00:01:27,080 --> 00:01:31,340
+lượng liên kết ra ngoài và dẫn tới trang bằng nhau,
+đó được gọi là xếp hạng trang.
+
+25
+00:01:31,340 --> 00:01:36,450
+Google làm như vậy. Bức hình này
+minh họa khoảng 15 website nhỏ,
+
+26
+00:01:36,450 --> 00:01:39,970
+so với Google xếp hạng trang trên toàn Internet.
+
+27
+00:01:39,970 --> 00:01:42,950
+Ta không phải lo lắng nhiều về
+việc xếp hạng trang, mà nên chú tâm
+
+28
+00:01:42,950 --> 00:01:45,930
+vào xây dựng web crawler (trình thu thập web)
+rồi chạy các phép tính
+
+29
+00:01:45,930 --> 00:01:48,110
+và tạo nên một hình biểu diễn thật đẹp.
+
+30
+00:01:49,210 --> 00:01:52,910
+Các công cụ tìm kiếm cơ bản
+hoạt động theo cách sau.
+
+31
+00:01:52,910 --> 00:01:57,860
+Quá trình tìm kiếm được chia nhỏ thành 3 bước:
+
+32
+00:01:57,860 --> 00:02:01,450
+Một là crawl các web, tức là giai đoạn thu thập dữ liệu
+
+33
+00:02:01,450 --> 00:02:03,980
+ta đã nhắc tới khi học về phân tích dữ liệu nhiều bước.
+
+34
+00:02:03,980 --> 00:02:07,510
+Tiếp theo: xây dựng index (chỉ mục),
+ở đây ta sẽ xếp hạng trang web.
+
+35
+00:02:07,510 --> 00:02:10,640
+Tức là ta giải mã các dữ liệu nhận được sau khi crawl.
+
+36
+00:02:10,640 --> 00:02:13,590
+Cuối cùng là bước tìm kiếm, nhìn vào dữ liệu đã có
+
+37
+00:02:13,590 --> 00:02:15,650
+và tính xem phải hiện ra trang web nào.
+
+38
+00:02:15,650 --> 00:02:19,081
+Nhưng ta sẽ không thực hiện bước tìm kiếm này
+mà thay bằng minh họa hình ảnh
+
+39
+00:02:19,081 --> 00:02:22,080
+cho kết quả của index mà ta xây dựng được.
+
+40
+00:02:22,080 --> 00:02:23,380
+Vậy bây giờ ta sẽ thực hiện các việc sau:
+
+41
+00:02:23,380 --> 00:02:25,760
+Crawl các trang web, xây dựng index,
+
+42
+00:02:25,760 --> 00:02:28,480
+và minh họa kết quả bằng hình ảnh thay vì tìm kiếm.
+
+43
+00:02:28,480 --> 00:02:31,890
+Nhưng nếu muốn, bạn có thể viết một công cụ tìm kiếm
+
+44
+00:02:31,890 --> 00:02:34,050
+để đọc cơ sở dữ liệu khi ta dựng xong index.
+
+45
+00:02:34,050 --> 00:02:36,260
+Thường thì các trình duyệt sẽ làm theo cách này.
+
+46
+00:02:36,260 --> 00:02:40,000
+Lớp học này không học về ứng dụng tương tác
+
+47
+00:02:40,000 --> 00:02:41,920
+mà thường làm những việc ngoại tuyến,
+
+48
+00:02:41,920 --> 00:02:44,490
+nên ta sẽ thay bằng minh họa qua hình ảnh.
+
+49
+00:02:44,490 --> 00:02:49,450
+Web crawler là thuật ngữ để gọi phần mềm
+
+50
+00:02:49,450 --> 00:02:54,090
+đọc qua một danh sách các trang web.
+
+51
+00:02:54,090 --> 00:02:57,820
+Nó sử dụng những công cụ như Beautiful Soup để
+lấy ra tất cả đường link từ các trang đó,
+
+52
+00:02:57,820 --> 00:03:01,550
+thêm các đường link đó vào
+danh sách trang web cần crawl.
+
+53
+00:03:01,550 --> 00:03:03,785
+Khi nào xong, nó tiếp tục đọc
+trang tiếp theo trên danh sách.
+
+54
+00:03:03,785 --> 00:03:10,455
+Quá trình đó dựng nên một danh sách.
+Mỗi lần đọc một trang web, ta lại được các link mới.
+
+55
+00:03:10,455 --> 00:03:13,225
+Nếu bạn là Google thì dần dần
+bạn sẽ đọc hết toàn bộ.
+
+56
+00:03:13,225 --> 00:03:16,110
+Nhưng web crawler của chúng ta bắt đầu từ một trang
+
+57
+00:03:16,110 --> 00:03:18,890
+thì sẽ tốn rất nhiều thời gian
+và dần dần ta sẽ hết băng thông.
+
+58
+00:03:18,890 --> 00:03:22,320
+Vì thế nên ta sẽ chỉ crawl một góc nhỏ của Web thôi.
+
+59
+00:03:22,320 --> 00:03:25,655
+Nhưng ý tưởng cơ bản là lên một
+danh sách trang web cần crawl,
+
+60
+00:03:25,655 --> 00:03:30,481
+chọn một trang trong danh sách để đọc,
+tìm tất cả các link
+
+61
+00:03:30,481 --> 00:03:32,721
+rồi lại thêm các link mới đó vào cuối danh sách.
+
+62
+00:03:32,721 --> 00:03:34,531
+Sau đó quay ra crawl trang tiếp theo
+
+63
+00:03:34,531 --> 00:03:36,480
+và thêm những link mới vào danh sách.
+
+64
+00:03:36,480 --> 00:03:39,880
+Đây là cách hoạt động cơ bản của web crawler.
+
+65
+00:03:41,300 --> 00:03:42,780
+Ta cũng sẽ thực hiện như vậy.
+
+66
+00:03:42,780 --> 00:03:45,180
+Ta có một danh sách các đường dẫn URL.
+
+67
+00:03:45,180 --> 00:03:48,880
+Ta lượm lặt vài dữ liệu, phân tích, tìm tất cả link.
+
+68
+00:03:48,880 --> 00:03:52,540
+Đưa vào các link mới, rồi ta lại
+đọc trang web tiếp theo, cứ như thế.
+
+69
+00:03:52,540 --> 00:03:58,340
+Song song với quá trình này, ta sẽ đặt toàn bộ
+các trang HTML đó vào một cơ sở dữ liệu.
+
+70
+00:03:58,340 --> 00:04:00,610
+Ta cứ lặp đi lặp lại như vậy.
+
+71
+00:04:00,610 --> 00:04:03,410
+Đây là một cách thức rất cơ bản.
+
+72
+00:04:03,410 --> 00:04:07,100
+Nếu các bạn đã làm bài tập lần trước,
+trong đó ta dùng Beautiful Soup
+
+73
+00:04:07,100 --> 00:04:10,750
+để lấy các link, việc kế là
+chuyển đến trang tiếp theo thôi.
+
+74
+00:04:10,750 --> 00:04:11,720
+Đó là những gì chúng ta sẽ làm.
+
+75
+00:04:11,720 --> 00:04:12,430
+Bạn đã làm việc tương tự rồi.
+
+76
+00:04:12,430 --> 00:04:14,740
+Bạn đã phải duyệt qua tầm 7 trang gì đó.
+
+77
+00:04:15,830 --> 00:04:18,308
+Những tổ chức như Google làm web crawling chuyên nghiệp,
+
+78
+00:04:18,308 --> 00:04:21,490
+còn chúng ta sẽ không làm chuyên
+như vậy trong lớp này.
+
+79
+00:04:21,490 --> 00:04:25,165
+Nhưng ta vẫn phải định rõ nên ưu tiên trang nào,
+khi nào thì kiểm tra lại các trang
+
+80
+00:04:25,165 --> 00:04:27,370
+tùy theo tần suất thay đổi của chúng.
+
+81
+00:04:27,370 --> 00:04:29,470
+Làm sao để tránh làm sập các website,
+
+82
+00:04:29,470 --> 00:04:32,060
+ví dụ như vì sao Google không làm quá tải trang web
+
+83
+00:04:32,060 --> 00:04:35,380
+đến mức nhà cung cấp mạng phải quan ngại.
+
+84
+00:04:35,380 --> 00:04:37,830
+Cuối cùng, bạn có thể dùng kết hợp
+nhiều web crawler khác nhau.
+
+85
+00:04:37,830 --> 00:04:41,140
+Ta sẽ không viết chương trình phức tạp thế này.
+
+86
+00:04:41,140 --> 00:04:42,760
+Nhưng đó là những điều bạn nên cân nhắc.
+
+87
+00:04:44,050 --> 00:04:45,900
+Ngoài ra, về vấn đề crawling,
+
+88
+00:04:45,900 --> 00:04:48,850
+mặc dù code ta viết không chủ đích tìm cái này
+
+89
+00:04:48,850 --> 00:04:52,900
+nhưng nếu bạn đang xây dựng website,
+bạn có thể gửi tín hiệu cho web crawler
+
+90
+00:04:52,900 --> 00:04:57,280
+thông qua một file tên là robots.txt đặt trên đầu trang.
+
+91
+00:04:57,280 --> 00:05:02,550
+Về cơ bản, đó là một thông báo rằng
+crawler không được tới trang này,
+
+92
+00:05:02,550 --> 00:05:07,600
+hoặc là được phép tới trang kia, v.v.
+
+93
+00:05:07,600 --> 00:05:09,990
+Thông báo này không bắt buộc
+mà do bạn tự nguyện thiết lập.
+
+94
+00:05:09,990 --> 00:05:16,050
+Tôi nhớ cách làm này có từ khi
+web crawler mới ra đời,
+
+95
+00:05:16,050 --> 00:05:21,550
+có ai đó viết ra một thông báo.
+Lúc đó còn rất ít người làm web server
+
+96
+00:05:21,550 --> 00:05:25,410
+nên họ đều thống nhất như vậy,
+và từ đó người ta cứ theo cách ấy mà làm.
+
+97
+00:05:25,410 --> 00:05:28,060
+Tôi nghĩ bây giờ nó mang tính tiêu chuẩn hơn trước kia,
+
+98
+00:05:28,060 --> 00:05:34,510
+đó là một ví dụ hay về một
+tiêu chuẩn đơn giản mà hữu hiệu,
+
+99
+00:05:34,510 --> 00:05:39,310
+nhanh chóng được áp dụng, giải quyết
+được vấn đề và ai cũng sử dụng.
+
+100
+00:05:39,310 --> 00:05:45,470
+Khi đã có web crawler đang
+tạo dữ liệu trong kho chứa,
+
+101
+00:05:45,470 --> 00:05:47,610
+bạn sẽ dùng đến một trình index (indexer).
+
+102
+00:05:47,610 --> 00:05:51,240
+Nó làm việc với kho chứa, dọn dẹp dữ liệu.
+
+103
+00:05:51,240 --> 00:05:55,930
+Sau đó công cụ tìm kiếm lấy
+các thông tin này và giải mã chúng.
+
+104
+00:05:55,930 --> 00:06:00,340
+Vậy trình index tìm kiếm
+làm công việc phân tích text.
+
+105
+00:06:00,340 --> 00:06:02,340
+Crawler thu thập các text,
+
+106
+00:06:02,340 --> 00:06:06,580
+rồi trình index tìm kiếm xem xét
+nội dung text có từ khoá gì,
+
+107
+00:06:06,580 --> 00:06:10,160
+trong các đường link có những từ gì, dẫn tới URL nào.
+
+108
+00:06:10,160 --> 00:06:14,890
+Đây có giống như trang web spam
+hay chứa nội dung xấu không, v.v.
+
+109
+00:06:14,890 --> 00:06:16,530
+Giống như nó tìm kiếm
+
+110
+00:06:16,530 --> 00:06:19,450
+ý nghĩa hữu ích trong mỗi trang web.
+
+111
+00:06:19,450 --> 00:06:22,100
+Đây là crawler nho nhỏ của ta.
+
+112
+00:06:22,100 --> 00:06:25,660
+Nó phức tạp hơn cái ta làm lần trước một chút.
+
+113
+00:06:27,130 --> 00:06:31,340
+Về cơ bản, ta có một ứng dụng
+
+114
+00:06:31,340 --> 00:06:35,440
+gọi là spider.py và ta cấp cho nó một điểm bắt đầu.
+
+115
+00:06:35,440 --> 00:06:36,760
+Chương trình hỏi: Bạn muốn bắt đầu ở đâu?
+
+116
+00:06:37,920 --> 00:06:40,710
+Vậy ban đầu nó chưa có trang web nào để crawl.
+
+117
+00:06:42,330 --> 00:06:44,437
+Sau đó nó nhận được một trang,
+
+118
+00:06:44,437 --> 00:06:46,843
+lấy trang đó về
+
+119
+00:06:46,843 --> 00:06:49,986
+đưa vào cơ sở dữ liệu và đọc hết mọi link.
+
+120
+00:06:49,986 --> 00:06:53,501
+Rồi nó tạo thêm các slot rỗng trong cơ sở dữ liệu cho
+
+121
+00:06:53,501 --> 00:06:54,680
+các trang mới cần crawl.
+
+122
+00:06:54,680 --> 00:06:58,440
+Rồi nó quay lại đầu vòng lặp,
+chọn lấy một trang mở kế tiếp,
+
+123
+00:06:58,440 --> 00:07:00,880
+mang trang đó về và thêm một số text vào đây,
+
+124
+00:07:00,880 --> 00:07:04,170
+đọc hết mọi link trong đó
+rồi thêm link vào cuối danh sách.
+
+125
+00:07:04,170 --> 00:07:09,340
+Vậy danh sách cần crawl thực chất
+nằm trong cơ sở dữ liệu.
+
+126
+00:07:09,340 --> 00:07:11,870
+Ta có các URL đã được lấy về,
+
+127
+00:07:11,870 --> 00:07:13,290
+ta đã có dữ liệu của các URL đó.
+
+128
+00:07:13,290 --> 00:07:15,440
+Và còn có các URL mà ta chưa lấy về.
+
+129
+00:07:15,440 --> 00:07:20,440
+Về cơ bản, ta truy vấn cơ sở dữ liệu
+để tìm ra URL nào chưa được lấy về.
+
+130
+00:07:20,440 --> 00:07:23,540
+Bởi vì phạm vi làm việc của ta nhỏ,
+
+131
+00:07:23,540 --> 00:07:26,680
+không phải như Google, nên
+danh sách này sẽ dài ra rất nhanh.
+
+132
+00:07:26,680 --> 00:07:28,990
+Ta sẽ có một số trang nhất định trong này,
+
+133
+00:07:28,990 --> 00:07:32,940
+nhưng danh sách các trang
+chưa được lấy sẽ tiếp tục đầy thêm.
+
+134
+00:07:32,940 --> 00:07:36,810
+Đó là tại sao mà code vẫn đứng yên
+một website và không đi lang thang,
+
+135
+00:07:36,810 --> 00:07:39,300
+vì nếu nó lang thang thì ta sẽ không bao giờ có
+
+136
+00:07:39,300 --> 00:07:42,180
+được thứ hay ho như là một 
+trang sẽ chỉ đến trang khác.
+
+137
+00:07:42,180 --> 00:07:44,480
+Sẽ mất rất nhiều thời gian để thu thập đủ dữ liệu
+
+138
+00:07:45,780 --> 00:07:48,370
+từ toàn bộ Internet để tạo nên
+những hình minh họa có ý nghĩa.
+
+139
+00:07:48,370 --> 00:07:53,000
+Vì vậy ta sẽ tự tạo cho các trang web liên kết đến nhau
+
+140
+00:07:53,000 --> 00:07:54,060
+để ta có thể nghịch.
+
+141
+00:07:54,060 --> 00:07:59,910
+Kết quả là cơ sở dữ liệu có một danh sách URL,
+một số là trang web, một số rỗng.
+
+142
+00:07:59,910 --> 00:08:00,720
+OK?
+
+143
+00:08:00,720 --> 00:08:05,554
+Cũng như các quá trình thu thập khác,
+cái này có thể bị sập.
+
+144
+00:08:05,554 --> 00:08:12,110
+Bạn có thể dừng với phím Ctrl+C
+hoặc Ctrl+Z, hay tắt máy luôn.
+
+145
+00:08:12,110 --> 00:08:13,126
+Nó có thể khởi động lại được.
+
+146
+00:08:15,086 --> 00:08:18,506
+Vì ta vẫn lưu dữ liệu trong ổ đĩa, khi nào bị lỗi
+
+147
+00:08:18,506 --> 00:08:20,310
+bạn có thể khởi động lại.
+
+148
+00:08:20,310 --> 00:08:23,650
+Tiếp tục lấy thêm 1000 trang,
+rồi lấy tiếp 1000 trang nữa.
+
+149
+00:08:23,650 --> 00:08:27,910
+Vậy bất cứ khi nào bạn muốn,
+
+150
+00:08:27,910 --> 00:08:30,490
+bạn luôn có thể lấy thêm thật nhiều trang.
+
+151
+00:08:30,490 --> 00:08:34,270
+Nhưng khi nào đã lấy đủ thì bạn
+dừng lại và bắt tay vào xử lý.
+
+152
+00:08:35,930 --> 00:08:40,380
+Ta dùng code thực hiện các phép tính.
+Giờ ta đã có hết các trang
+
+153
+00:08:40,380 --> 00:08:45,030
+và một số dữ liệu, cũng như
+trang nào nối tới trang nào.
+
+154
+00:08:45,030 --> 00:08:47,010
+Trang này nối với trang kia,
+trang kia lại nối với trang khác,
+
+155
+00:08:47,010 --> 00:08:48,620
+cứ như vậy.
+
+156
+00:08:48,620 --> 00:08:54,320
+Ta xếp hạng các trang,
+và đây là chương trình sprank.
+
+157
+00:08:54,320 --> 00:08:56,820
+Nó xếp hạng các trang đã được thu thập.
+
+158
+00:08:56,820 --> 00:09:02,590
+sprank đọc các trang rồi tính toán ra xếp hạng mới,
+
+159
+00:09:02,590 --> 00:09:06,120
+nó cũng là một vòng lặp để cập nhật xếp hạng trang.
+
+160
+00:09:06,120 --> 00:09:09,910
+sprank bắt dầu với trang này chỉ đến trang kia, nhưng
+
+161
+00:09:09,910 --> 00:09:14,990
+nó sẽ đi xa hơn nữa đến nhiều link hơn nữa.
+
+162
+00:09:14,990 --> 00:09:18,500
+Xếp hạng trang được chia sẻ
+với mọi trang web, đúng không?
+
+163
+00:09:18,500 --> 00:09:21,270
+Bạn càng làm việc này nhiều hơn,
+
+164
+00:09:21,270 --> 00:09:25,770
+như tôi đã nói là sẽ đến lúc chất lượng
+được chia sẻ với các link dẫn ra ngoài
+
+165
+00:09:25,770 --> 00:09:27,870
+và chất lượng từ các link khác lại chảy vào.
+
+166
+00:09:27,870 --> 00:09:30,300
+Đến lúc con số này ổn định,
+
+167
+00:09:30,300 --> 00:09:35,080
+nghĩa là bạn có thể làm tiếp mà
+các con số xếp hạng trang không đổi,
+
+168
+00:09:35,080 --> 00:09:37,660
+thì bạn biết mình đã đạt tới điểm ổn định.
+
+169
+00:09:37,660 --> 00:09:40,630
+Chương trình này có thể chạy 500 lần hay 50 lần
+
+170
+00:09:40,630 --> 00:09:43,350
+tới khi xếp hạng trang ổn định.
+
+171
+00:09:44,600 --> 00:09:48,660
+Chương trình đơn giản này
+gọi là spreset, nó đặt tất cả
+
+172
+00:09:48,660 --> 00:09:51,840
+số hạng thành mặc định để
+có thể bắt đầu tiến trình lại.
+
+173
+00:09:51,840 --> 00:09:55,860
+Đơn giản là nó reset xếp hạng trang về giá trị ban đầu,
+
+174
+00:09:55,860 --> 00:09:58,930
+sau đó bạn chạy xếp hạng trang thật nhiều lần.
+
+175
+00:09:58,930 --> 00:10:01,610
+Bạn có thể hình dung là Google
+
+176
+00:10:01,610 --> 00:10:03,160
+làm tất cả những việc này trong cùng một lúc.
+
+177
+00:10:03,160 --> 00:10:06,540
+2 giờ sáng rồi, server của họ đang chán,
+
+178
+00:10:06,540 --> 00:10:08,427
+nên họ bắt đầu lấy vào nhiều trang hơn.
+
+179
+00:10:08,427 --> 00:10:11,993
+2 giờ sáng, khi server đang chán,
+
+180
+00:10:11,993 --> 00:10:14,773
+họ cứ tà tà tính toán lại xếp hạng các trang để cập nhật
+
+181
+00:10:14,773 --> 00:10:16,207
+thêm các trang web mới đưa vào.
+
+182
+00:10:16,207 --> 00:10:18,714
+Những việc này được làm liên tục bên trong Google
+
+183
+00:10:18,714 --> 00:10:20,690
+hay bất kì công cụ tìm kiếm nào.
+
+184
+00:10:20,690 --> 00:10:24,170
+Ta thì sẽ làm việc này, rồi lại làm việc kia một lúc,
+
+185
+00:10:24,170 --> 00:10:28,760
+rồi khi đã có dữ liệu tốt
+và tính toán xếp hạng trang xong,
+
+186
+00:10:28,760 --> 00:10:31,800
+nếu sau đó ta lấy thêm các trang mới
+thì ta phải chạy xếp hạng trang lại
+
+187
+00:10:31,800 --> 00:10:34,160
+để tự ổn định lại dựa trên các trang mới.
+
+188
+00:10:34,160 --> 00:10:37,290
+Bạn có thể làm bao nhiêu lần cũng được,
+muốn vui bao nhiêu cũng được.
+
+189
+00:10:37,290 --> 00:10:41,390
+Rồi ta sẽ có vài dòng code
+kiểu như công cụ tìm kiếm vậy,
+
+190
+00:10:41,390 --> 00:10:44,170
+ta có thể tạo một chương trình spsearch.
+
+191
+00:10:46,330 --> 00:10:48,380
+Nó sẽ lấy đầu vào là một số ký tự, v.v.
+
+192
+00:10:48,380 --> 00:10:50,240
+Bạn sẽ phải viết nhiều code hơn,
+tôi không có sẵn cho bạn đâu.
+
+193
+00:10:50,240 --> 00:10:55,150
+Nhưng tôi có chương trình spdump.py để in ra các thứ.
+
+194
+00:10:55,150 --> 00:10:58,490
+Nó xem xét tất cả các trang và
+xác định xếp hạng trang hiện tại là gì.
+
+195
+00:10:58,490 --> 00:11:00,790
+Hiện tại xếp hạng của tất cả các trang đều là 1.
+
+196
+00:11:00,790 --> 00:11:05,150
+Đây là một trang, xếp hạng trang là 1,
+các trang liên kết là gì, v.v.
+
+197
+00:11:05,150 --> 00:11:08,020
+Những thứ này được in ra như cái ta đã làm.
+
+198
+00:11:08,020 --> 00:11:09,570
+Nó in ra một văn bản sạch đẹp.
+
+199
+00:11:10,720 --> 00:11:15,350
+Còn chương trình spjson này đọc toàn bộ xếp hạng trang
+
+200
+00:11:15,350 --> 00:11:18,640
+rồi tạo một số dữ liệu theo định dạng JavaScript.
+
+201
+00:11:18,640 --> 00:11:20,950
+Nếu đọc bạn sẽ thấy nó là định dạng JSON.
+
+202
+00:11:20,950 --> 00:11:22,880
+Ta đã nói về JSON rồi.
+
+203
+00:11:22,880 --> 00:11:27,720
+Tôi cũng đã viết cái này, một trang 
+HTML sử dụng hệ thống minh họa hình ảnh
+
+204
+00:11:27,720 --> 00:11:33,530
+gọi là d3.js . Bạn có thể tự tìm hiểu thêm
+cách hệ thống minh họa hình ảnh d3 hoạt động.
+
+205
+00:11:33,530 --> 00:11:35,250
+Hãy cám ơn tôi đã viết hết mấy cái này cho các bạn.
+
+206
+00:11:35,250 --> 00:11:39,310
+Khi trang này load xong, nó sẽ lấy hết dữ liệu vào
+
+207
+00:11:39,310 --> 00:11:43,700
+rồi tạo ra hình minh họa trực quan tuyệt vời
+mà bạn có thể di chuyển.
+
+208
+00:11:43,700 --> 00:11:46,860
+Tôi sẽ giải thích cách hoạt động của nó khi
+
+209
+00:11:46,860 --> 00:11:48,310
+đi vào ví dụ này.
+
+210
+00:11:48,310 --> 00:11:52,660
+Cuối cùng, ta có được một quy trình nhiều bước gồm
+
+211
+00:11:52,660 --> 00:11:57,520
+bước thu thập dữ liệu, bước điều chỉnh dữ liệu,
+
+212
+00:11:57,520 --> 00:12:00,240
+rồi đến bước in ra và vẽ hình minh họa.
+
+213
+00:12:00,240 --> 00:12:04,290
+Ta thực hiện tất cả xung quanh cơ sở dữ liệu spider.sqlite
+
+214
+00:12:04,290 --> 00:12:06,425
+để các bước quy trình đều hoạt động.
+
+215
+00:12:06,425 --> 00:12:07,355
+OK?
+
+216
+00:12:07,355 --> 00:12:11,745
+Trong video tới, ta sẽ quay lại và
+đi sâu hơn về dữ liệu email,
+
+217
+00:12:11,745 --> 00:12:14,885
+giờ ta sẽ bắt tay làm việc trên
+hàng GB dữ liệu email
+
+218
+00:12:14,885 --> 00:12:17,525
+chứ không phải chỉ vài ngàn
+ký tự của dữ liệu email.

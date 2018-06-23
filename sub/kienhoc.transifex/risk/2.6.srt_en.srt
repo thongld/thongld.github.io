@@ -1,0 +1,392 @@
+0
+00:00:05,089 --> 00:00:08,110
+So now for some calculations.
+https://youtu.be/fwNurWd5zKk
+1
+00:00:08,109 --> 00:00:11,480
+I call it continuous data available in stock,
+
+2
+00:00:11,480 --> 00:00:13,650
+the data related to the previous dataset.
+
+3
+00:00:13,650 --> 00:00:15,610
+So let&#39;s start off with the basics.
+
+4
+00:00:16,660 --> 00:00:21,002
+We have five returns, stocks and it&#39;s simplify one.
+
+5
+00:00:21,002 --> 00:00:24,300
+Let&#39;s focus on the security returns first.
+
+6
+00:00:24,300 --> 00:00:27,190
+So the first question is always what is the average return?
+
+7
+00:00:28,410 --> 00:00:33,370
+Again, in the interest of being consistent
+
+8
+00:00:33,370 --> 00:00:39,370
+even at the risk of being repetitive, let&#39;s try to draw the distribution.
+
+9
+00:00:41,610 --> 00:00:44,000
+That&#39;s what this is one, this is two.
+
+10
+00:00:45,070 --> 00:00:48,820
+You want to capture the main characteristics of the distribution,
+
+11
+00:00:48,820 --> 00:00:50,850
+because otherwise we are going nuts.
+
+12
+00:00:50,850 --> 00:00:52,910
+So what assumption will we first make.
+
+13
+00:00:52,910 --> 00:00:59,190
+The first assumption we make is the data we pulled is representative of the stock.
+
+14
+00:01:00,610 --> 00:01:02,520
+Now that may not be true, right?
+
+15
+00:01:02,520 --> 00:01:05,090
+Because we are only picking five years.
+
+16
+00:01:05,090 --> 00:01:09,590
+And if you pick the period of time when there was a certain trend,
+
+17
+00:01:10,630 --> 00:01:12,230
+it&#39;s not normal.
+
+18
+00:01:12,230 --> 00:01:14,910
+So when you think of expected average returns for
+
+19
+00:01:14,910 --> 00:01:18,280
+a stock, you have to think about both good and bad times.
+
+20
+00:01:18,280 --> 00:01:19,100
+You have to think about
+
+21
+00:01:20,630 --> 00:01:24,870
+capturing not just one aspect of the business cycle or whatever.
+
+22
+00:01:24,870 --> 00:01:29,660
+So expected really means long run by a whole kind of investor.
+
+23
+00:01:29,660 --> 00:01:33,140
+Which by the way many people believe is the right kind of investing
+
+24
+00:01:33,140 --> 00:01:36,030
+instead of trying to make money, right?
+
+25
+00:01:36,030 --> 00:01:38,680
+Doesn&#39;t help, you can lose a lot of money when you do that.
+
+26
+00:01:39,750 --> 00:01:40,870
+So let&#39;s get started.
+
+27
+00:01:40,870 --> 00:01:44,460
+So the first number I&#39;ll calculate is R1 bar.
+
+28
+00:01:46,620 --> 00:01:50,370
+Remember how many datapoints do I have.
+
+29
+00:01:50,370 --> 00:01:52,250
+I have 60 datapoints.
+
+30
+00:01:52,250 --> 00:01:55,090
+And the assumption I&#39;m going to make is the following,
+
+31
+00:01:55,090 --> 00:01:58,330
+which is made by a lot of people, I&#39;m going to calculate it as
+
+32
+00:02:00,490 --> 00:02:04,130
+one over N, submission R1i.
+
+33
+00:02:06,470 --> 00:02:07,650
+What assumption have I made?
+
+34
+00:02:09,520 --> 00:02:13,840
+It shouldn&#39;t take you long to assume that I&#39;m assuming that
+
+35
+00:02:13,840 --> 00:02:16,910
+I&#39;m just speaking equally likely events.
+
+36
+00:02:18,480 --> 00:02:23,760
+And I&#39;ve 60 data points so each n is one over n is one over 60.
+
+37
+00:02:23,760 --> 00:02:31,550
+And when you do these calculation you can also do it in spreadsheet.
+
+38
+00:02:31,550 --> 00:02:33,300
+And I&#39;ll use simple symbols.
+
+39
+00:02:33,300 --> 00:02:38,100
+You can use data analysis bags which you can bring into Excel and
+
+40
+00:02:38,100 --> 00:02:39,240
+so on if you have.
+
+41
+00:02:39,240 --> 00:02:41,695
+Or you can do it on a Google spreadsheet so let&#39;s do this.
+
+42
+00:02:41,695 --> 00:02:42,603
+Average.
+
+43
+00:02:46,219 --> 00:02:49,510
+Sorry, print this and then you have return the data.
+
+44
+00:02:49,510 --> 00:02:53,090
+So tell me, where are the returns of security 1 sitting?
+
+45
+00:02:55,680 --> 00:03:03,290
+Is it in Column A, is it in Column B or is it in Column C.
+
+46
+00:03:03,290 --> 00:03:04,310
+So match that.
+
+47
+00:03:04,310 --> 00:03:08,770
+So, I&#39;m going to write out (C2:C61).
+
+48
+00:03:08,770 --> 00:03:16,590
+I&#39;m making sure I&#39;ve got it right, C2:C61.
+
+49
+00:03:16,590 --> 00:03:20,100
+If I have this column wrong Go fix them.
+
+50
+00:03:20,100 --> 00:03:22,020
+Because I&#39;m, you know?
+
+51
+00:03:22,020 --> 00:03:24,370
+You can always change the columns.
+
+52
+00:03:24,370 --> 00:03:26,150
+Run around, make sense.
+
+53
+00:03:26,150 --> 00:03:27,380
+What I&#39;m pointing out is,
+
+54
+00:03:27,380 --> 00:03:32,310
+when you calculate on the Excel, you don&#39;t need to use the formula.
+
+55
+00:03:32,310 --> 00:03:34,280
+You can use the average function.
+
+56
+00:03:34,280 --> 00:03:35,800
+And what do you need to tell them?
+
+57
+00:03:35,800 --> 00:03:36,840
+The data points.
+
+58
+00:03:36,840 --> 00:03:39,960
+So how many data points two through 61 is 60.
+
+59
+00:03:39,960 --> 00:03:41,620
+Why did I start at one?
+
+60
+00:03:41,620 --> 00:03:44,581
+Because that was the row further naming convention.
+
+61
+00:03:44,581 --> 00:03:50,344
+And the answer turns out to be 2.18%.
+
+62
+00:03:54,113 --> 00:04:03,200
+R2 bar, 1/N submission R2i.
+
+63
+00:04:03,200 --> 00:04:07,800
+You can literally do it with the formula if you want to, you can go step it by and
+
+64
+00:04:07,800 --> 00:04:10,860
+do it, but there’s no point going through something this simple,
+
+65
+00:04:10,860 --> 00:04:16,170
+step by it, when quickly Excel can do it.
+
+66
+00:04:16,170 --> 00:04:24,565
+So I’m going to assume that this column is D2:D61.
+
+67
+00:04:25,800 --> 00:04:29,070
+Again, if I&#39;m getting the wrong symbols don&#39;t worry about it, all right?
+
+68
+00:04:29,070 --> 00:04:32,650
+You have to know which column that data is residing in.
+
+69
+00:04:32,650 --> 00:04:34,630
+Important point is this should be,
+
+70
+00:04:34,630 --> 00:04:38,220
+you should cover the range of data you want to cover.
+
+71
+00:04:38,220 --> 00:04:44,724
+And the answer turns out to be 3.25%.
+
+72
+00:04:46,790 --> 00:04:48,262
+So, let me make sure.
+
+73
+00:04:48,262 --> 00:04:48,880
+2.18, 3.2.
+
+74
+00:04:48,880 --> 00:04:51,210
+So, what can you say right now?
+
+75
+00:04:51,210 --> 00:04:56,640
+You can say that security 2 has a better average return, than security 1.
+
+76
+00:04:56,640 --> 00:04:57,900
+Higher, sorry.
+
+77
+00:04:59,160 --> 00:05:00,950
+You&#39;ll note, that I&#39;ll be a little bit picky.
+
+78
+00:05:00,950 --> 00:05:04,070
+Higher average return, nobody&#39;s going to argue.
+
+79
+00:05:04,070 --> 00:05:08,340
+First thing, you should remember it&#39;s over which period of time,
+
+80
+00:05:09,510 --> 00:05:11,560
+the period of 60 months I gave you.
+
+81
+00:05:11,560 --> 00:05:16,459
+And they just in the sake are corresponding to about 2009 to &#39;13,
+
+82
+00:05:16,459 --> 00:05:20,210
+the dataset.
+
+83
+00:05:20,210 --> 00:05:22,710
+Yes, it is high return, but is it better?
+
+84
+00:05:22,710 --> 00:05:26,080
+Answer is you cannot answer that question.
+
+85
+00:05:26,080 --> 00:05:29,813
+And you cannot typically say, it&#39;s better, because that&#39;s silly.
+
+86
+00:05:29,813 --> 00:05:33,910
+Of course 3.25 is better than 2.18 but
+
+87
+00:05:33,910 --> 00:05:37,750
+it&#39;s likely to also be a little bit riskier, okay.
+
+88
+00:05:37,750 --> 00:05:42,490
+So that&#39;s the notion I&#39;m trying to push is that whenever you do return analysis,
+
+89
+00:05:42,490 --> 00:05:47,200
+it&#39;s likely to suggest that you run with returns and average returns and
+
+90
+00:05:47,200 --> 00:05:48,550
+report them.
+
+91
+00:05:48,550 --> 00:05:51,780
+But remember, think in pairs, average,
+
+92
+00:05:51,780 --> 00:05:57,310
+return with risk, return, risk, return, risk.
+
+93
+00:05:57,310 --> 00:06:00,560
+Let&#39;s take a quick break because I want you to just go ahead and
+
+94
+00:06:00,560 --> 00:06:02,460
+do calculations for three, four, five.
+
+95
+00:06:03,490 --> 00:06:05,810
+And if you&#39;re, while you&#39;re at it,
+
+96
+00:06:05,810 --> 00:06:08,790
+it should take you a second or two or maybe a few seconds.
+
+97
+00:06:08,790 --> 00:06:10,350
+See you in a minute.
+

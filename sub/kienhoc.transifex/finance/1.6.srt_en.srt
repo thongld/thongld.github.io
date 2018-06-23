@@ -1,0 +1,307 @@
+1
+00:00:04,864 --> 00:00:07,672
+https://youtu.be/0YP8HO594Jg
+If you notice now, and
+you look at the screen,
+
+2
+00:00:07,672 --> 00:00:10,990
+I will talk, and you watch what I'm doing.
+
+3
+00:00:10,990 --> 00:00:13,620
+But please remember that
+I could make mistakes.
+
+4
+00:00:13,620 --> 00:00:17,930
+So I have notes created for
+you of how to use Excel.
+
+5
+00:00:17,930 --> 00:00:20,550
+And if I make a silly mistake,
+we can fix it.
+
+6
+00:00:20,550 --> 00:00:22,510
+So what was the problem
+we are talking about?
+
+7
+00:00:22,510 --> 00:00:28,830
+The problem we were talking about was,
+what is the future value
+
+8
+00:00:28,830 --> 00:00:33,800
+of a thousand bucks after how many years,
+10 years and interest rate was 10%?
+
+9
+00:00:33,800 --> 00:00:40,860
+Now, if you notice on the function button,
+I should write equal first.
+
+10
+00:00:40,860 --> 00:00:44,500
+Put that, and follow it by what
+you're trying to calculate,
+
+11
+00:00:44,500 --> 00:00:45,720
+which is future value.
+
+12
+00:00:45,720 --> 00:00:47,870
+As soon as you press future value and
+
+13
+00:00:47,871 --> 00:00:53,780
+open the parenthesis,
+you'll notice that it asks you for input.
+
+14
+00:00:53,780 --> 00:00:57,450
+And the input is pretty easy to
+understand, barring one term,
+
+15
+00:00:57,450 --> 00:01:01,980
+which I will talk about very briefly,
+and then we'll get to later.
+
+16
+00:01:01,980 --> 00:01:03,680
+So the first term is rate.
+
+17
+00:01:03,680 --> 00:01:05,330
+What does the rate mean?
+
+18
+00:01:05,330 --> 00:01:09,620
+Rate is the interest rate,
+and please put it in
+
+19
+00:01:10,640 --> 00:01:14,850
+the form it's supposed to be,
+which is 0.1, right?
+
+20
+00:01:14,850 --> 00:01:17,539
+Don't put it in percentage terms.
+
+21
+00:01:17,540 --> 00:01:21,750
+Some calculators allow you to do that,
+but Excel, you put it as 0.1 not 10.
+
+22
+00:01:21,750 --> 00:01:27,400
+Then put a comma.
+
+23
+00:01:27,400 --> 00:01:32,190
+And if you notice, the next thing
+it asks for is number of periods.
+
+24
+00:01:32,190 --> 00:01:33,740
+Now, you know how many periods, right?
+
+25
+00:01:33,740 --> 00:01:34,520
+Excel does.
+
+26
+00:01:34,520 --> 00:01:37,896
+So the problem dictates, as I said,
+number of periods, so you see.
+
+27
+00:01:37,896 --> 00:01:43,290
+If you put ten, and
+then you put a comma again,
+
+28
+00:01:43,290 --> 00:01:47,860
+now comes a little bit tricky thing,
+which we haven't covered until now.
+
+29
+00:01:47,860 --> 00:01:51,590
+We are looking at one payment
+carried ten years forward.
+
+30
+00:01:51,590 --> 00:01:56,80
+What PMT stands for,
+you could get payments every year, right?
+
+31
+00:01:56,80 --> 00:01:59,808
+So for now, you're not getting
+anything beyond point zero.
+
+32
+00:01:59,808 --> 00:02:06,280
+So for PMT, which is a term for payment,
+we'll see very soon, you'll put zero.
+
+33
+00:02:06,280 --> 00:02:10,690
+Because if you saw the timeline,
+nothing is happening between zero and ten.
+
+34
+00:02:10,690 --> 00:02:15,178
+At zero, you put in 1000 bucks, and you're
+not putting in more at time one, two,
+
+35
+00:02:15,178 --> 00:02:16,667
+three, four, five, six.
+
+36
+00:02:16,667 --> 00:02:19,995
+If you were,
+this PMT would come into play.
+
+37
+00:02:19,995 --> 00:02:25,748
+So put zero for PMT and
+then it asks you PV.
+
+38
+00:02:25,748 --> 00:02:27,745
+And we know what the PV is.
+
+39
+00:02:27,745 --> 00:02:31,818
+PV was thousand bucks, so
+
+40
+00:02:31,818 --> 00:02:36,75
+the answer turns out to be,
+
+41
+00:02:36,75 --> 00:02:40,518
+it should be staring at you,
+
+42
+00:02:40,518 --> 00:02:44,237
+$2,593.74.
+
+43
+00:02:44,237 --> 00:02:48,490
+And you know, sometimes I tease,
+let's drop the cents, and so on.
+
+44
+00:02:48,490 --> 00:02:52,47
+But sometimes if the billions
+of dollars are involved,
+
+45
+00:02:52,47 --> 00:02:54,627
+you don't want to approximate things.
+
+46
+00:02:54,627 --> 00:02:58,635
+So here, what happened to the $1000?
+
+47
+00:02:58,635 --> 00:03:05,70
+$1000 became $2,593, almost $2,600.
+
+48
+00:03:05,70 --> 00:03:08,230
+Just pause for a second, and
+think about what's going on.
+
+49
+00:03:08,230 --> 00:03:12,280
+So suppose there was no compounding,
+how much will you have after ten years?
+
+50
+00:03:13,830 --> 00:03:15,810
+And as I said,
+you can pause and think, but
+
+51
+00:03:15,810 --> 00:03:17,870
+I will keep talking about simple things.
+
+52
+00:03:17,870 --> 00:03:23,280
+If there was only simple interest,
+you will get 100 bucks every year,
+
+53
+00:03:23,280 --> 00:03:24,830
+which is 10% of the thousand.
+
+54
+00:03:26,20 --> 00:03:27,790
+And so how much will you have?
+
+55
+00:03:27,790 --> 00:03:31,799
+A thousand bucks,
+hundred multiplied by ten.
+
+56
+00:03:31,800 --> 00:03:34,915
+Add that to the original amount,
+how much do you have?
+
+57
+00:03:34,915 --> 00:03:42,284
+2,000, but you now are getting
+2,600 almost, 2,593.74.
+
+58
+00:03:42,284 --> 00:03:45,640
+You're getting that extra amount
+
+59
+00:03:45,640 --> 00:03:50,640
+entirely because of the fact
+that interest earns interest.
+
+60
+00:03:50,640 --> 00:03:52,730
+I hope you found this useful.
+
+61
+00:03:52,730 --> 00:03:56,310
+I would encourage you to pull
+up the Excel spreadsheet.
+
+62
+00:03:56,310 --> 00:04:01,360
+And I know I'm doing very sharp
+clips right now but with a purpose.
+
+63
+00:04:01,360 --> 00:04:05,370
+I want you to not only understand the
+concept, I want you to be able to do it
+
+64
+00:04:05,370 --> 00:04:09,970
+with me, because right now,
+we are in very simple territory.
+
+65
+00:04:09,970 --> 00:04:12,518
+I made it very complex intellectually but
+
+66
+00:04:12,518 --> 00:04:15,660
+very simple to execute if
+you know how to use Excel.
+

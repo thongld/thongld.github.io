@@ -1,0 +1,368 @@
+1
+00:00:04,600 --> 00:00:08,600
+narcissusdale 19/07/2016
+https://youtu.be/TigbnH07Zkk
+Chào mừng trở lại. Bây giờ tôi sẽ
+
+2
+00:00:08,600 --> 00:00:12,730
+chỉ cho các bạn quyền năng thực sự của việc tính lãi kép.
+Ta đã tính cho mười kỳ. Vậy tốt rồi. Hãy để tôi
+
+3
+00:00:12,730 --> 00:00:17,500
+chỉ cho các bạn quyền năng thực sự của việc tính lãi kép
+Như vậy, câu hỏi đặt ra là, bạn hãy viết 
+
+4
+00:00:17,500 --> 00:00:18,690
+ ra
+
+5
+00:00:18,690 --> 00:00:24,970
+đâu là giá trị tương lai của việc đầu tư
+ 1000 đô la với lãi suất 5% so với 
+
+6
+00:00:24,970 --> 00:00:31,460
+15% trong vòng 90 năm. Tại sao tôi lại đặt ra câu hỏi này?
+Có một hàm ý thú vị đằng sau điều này. Hoá ra rằng
+
+7
+00:00:31,460 --> 00:00:38,160
+dữ liệu trên thị trường chứng khoán Mỹ trở luôn luôn 
+có sẵn, dữ liệu rất đáng tin cậy bắt đầu từ
+
+8
+00:00:38,160 --> 00:00:39,110
+ khoảng
+
+9
+00:00:39,110 --> 00:00:44,239
+đầu năm 1926, trường cũ của tôi, 
+Đại học Chicago tham gia sâu vào 
+
+10
+00:00:44,239 --> 00:00:50,430
+việc tạo ra một trong những tập hợp dữ liệu được 
+sử dụng nhiều nhất. Như vậy, dữ liệu bắt đầu có ... Như vậy, 90 năm đã
+
+11
+00:00:50,430 --> 00:00:55,300
+trôi qua. Câu hỏi thú vị khiến mọi người luôn
+băn khoăn là, điều gì đã có thể xảy ra
+
+12
+00:00:55,300 --> 00:00:59,530
+nếu tôi đã đầu tư vào khoản có
+rủi ro thấp? Tôi đã nói rằng tôi sẽ bàn về rủi ro
+
+13
+00:00:59,530 --> 00:01:04,339
+và các khoản đầu tư cá nhân trong cả khóa học này
+Giả sử bạn đầu tư 1000 đô
+
+14
+00:01:04,339 --> 00:01:10,940
+cụ của bạn hoặc ông bà đã 
+để dành cho bạn, một khoản đầu tư có mức rủi ro tương đối thấp
+
+15
+00:01:10,940 --> 00:01:15,860
+như là mua trái phiếu chính phủ,
+đó vốn là chứng nhận nghĩa vụ nợ của chính phủ,
+
+16
+00:01:15,860 --> 00:01:20,420
+ta sẽ bàn kỹ hơn về việc này trên lớp sau
+Mặt khác, giả sử họ
+
+17
+00:01:20,420 --> 00:01:27,259
+đầu tư vào cổ phiếu và, và cũng khoản tiền đó,
+đầu tư vào các công ty khác, cũng cùng khoản tiền đó, 
+
+18
+00:01:27,259 --> 00:01:35,49
+vào các công ty rủi ro hơn. Tóm lại, cuối cùng, đây
+đây sẽ là là tỷ suất lợi nhuận mà bạn
+
+19
+00:01:35,49 --> 00:01:39,789
+có thể có được trong vòng 90 năm
+trong bối cảnh ở Mỹ, đúng chưa? Đó là lý do tại sao tôi
+
+20
+00:01:39,789 --> 00:01:45,479
+đưa ra những con số này và khi tôi làm vậy
+và bạn tính toán xong, bạn sẽ rất 
+
+21
+00:01:45,479 --> 00:01:52,469
+sốc với kết quả tính được. Như vậy, hãy dùng Excel và tôi 
+sẽ cùng tính toán với các bạn. Đâu là
+
+22
+00:01:52,469 --> 00:02:02,219
+Giá trị tương lai khi đầu tư $1000 với lãi suất 5%
+hoặc $1000 với lãi suất 15%, sau bao nhiêu năm? 90
+
+23
+00:02:02,219 --> 00:02:07,839
+năm. Như vậy, việc tôi sẽ làm, thay vì quay đi quay lại bảng Excel 
+tôi sẽ dùng
+
+24
+00:02:07,840 --> 00:02:14,69
+bút để viết ra những gì bạn phải nhập
+vào ô trong bảng tính. Như vậy, bạn hãy chọn ô đầu tiên
+
+25
+00:02:14,69 --> 00:02:20,720
+gọi nó là A1 và di chuyển lên chỗ nhập hàm tính
+như tôi đã chỉ cho các bạn và nhập số
+
+26
+00:02:20,720 --> 00:02:21,220
+ vào đó
+
+27
+00:02:21,220 --> 00:02:26,880
+Được rồi, bắt đầu nào. Vậy, bạn nhập dấu "=" vào 
+ô hàm tính, sau đó tôi đã bảo gì nào ?
+
+28
+00:02:26,880 --> 00:02:35,470
+Nhập vào "FV" và tính ở mức 5%
+Các bạn hãy mở Excel ra và làm với tôi nào
+
+29
+00:02:35,470 --> 00:02:41,50
+Sau đó, phải nhập bao nhiêu nào?
+Đầu tiên là tỷ suất lợi nhuận, đâu là tỷ suất 
+
+30
+00:02:41,50 --> 00:02:47,940
+lợi nhuận phải nhập? Phương án đầu tiên của ta 
+là 0,05. Hãy nhớ rằng các bạn phải 
+
+31
+00:02:47,940 --> 00:02:54,320
+khi nhập tỷ suất lợi nhuận. Phải là 0,05, chứ không phải 5.
+
+32
+00:02:54,320 --> 00:03:00,920
+không viết dưới dạng %. Được chưa ạ? Tôi biết chúng ta 
+viết dưới dạng %, nhưng điều tôi đang nói là trên thực tế 
+
+33
+00:03:00,920 --> 00:03:08,920
+các bạn viết là 0.05. Bao nhiêu kỳ? Được, tôi sẽ chọn 90 bởi vì hiện tại là
+
+34
+00:03:08,920 --> 00:03:17,350
+năm 2015, khoảng 90 năm đã trôi qua
+Đúng không ạ? 90, rồi sau đó PMT là bao nhiêu? 
+
+35
+00:03:17,350 --> 00:03:21,799
+hãy nhớ PMT là khoản mà bạn nhận được
+hàng năm nhưng ngay lúc này đây chúng ta chỉ
+
+36
+00:03:21,800 --> 00:03:27,670
+nhận được gì nào? Đầu tư tiền bạc ngay hôm nay
+và tính Giá trị tương lai. Như vậy, PMT sẽ
+
+37
+00:03:27,670 --> 00:03:32,988
+là 0.  Xin lỗi về điều đó, chúng ta sẽ nói ngay về PMT. Và sau đó thì sao, PV là bao nhiêu?
+
+38
+00:03:32,989 --> 00:03:40,959
+1000. Bạn không cần viết kí hiệu
+đô la hay những ký hiệu tương tự. Vậy, 
+
+39
+00:03:40,959 --> 00:03:47,959
+không dùng kí hiệu %, $, vân vân
+sau đó ấn vào lợi nhuận. Tôi sẽ 
+
+40
+00:03:47,959 --> 00:03:52,590
+ viết ra con số mà các bạn sẽ nhận được
+Tôi sẽ ăn gian 1 chút. Tôi đã tính sẵn rồi
+
+41
+00:03:52,590 --> 00:04:00,840
+Vậy, tôi sẽ viết ra con số đó
+80730 đô la
+
+42
+00:04:00,840 --> 00:04:09,989
+và tôi sẽ viết cả phần thập phân
+37 xu. Vậy, nếu bạn đầu tư $1000
+
+43
+00:04:09,989 --> 00:04:14,900
+ai đó thay mặt bạn đầu tư $1000
+90 năm trước với mức lãi suất 5%
+
+44
+00:04:14,900 --> 00:04:22,300
+Bạn sẽ có bao nhiêu tiền?
+Bạn sẽ có khoảng 80730. Đây là một số tiền
+
+45
+00:04:22,300 --> 00:04:27,970
+khá lớn, đúng không ạ? Hãy giả sử là thay vào đó
+bạn đầu tư vào lĩnh vực nơi ít mạo hiểm hơn
+
+46
+00:04:27,970 --> 00:04:32,400
+con số nào sẽ phải thay đổi toàn bộ công thức này?
+Chỉ 1 con số thôi, đó là cái hay của Excel
+
+47
+00:04:32,400 --> 00:04:34,90
+các bạn quay lại và chỉ cần thay đổi 1 con số
+
+48
+00:04:34,90 --> 00:04:40,10
+con số đó là 0.05, các bạn có thể thay đổi. Tuy nhiên, lần này hãy tăng lên thay vì giảm đi
+
+49
+00:04:40,10 --> 00:04:45,780
+Vậy, giờ tôi sẽ giải quyết phần thứ hai của câu hỏi,
+điều sẽ khiến bạn khó tin
+
+50
+00:04:45,780 --> 00:04:53,760
+Đâu là giá trị trương lai nếu thay vì 5%,
+1 khoản đầu tư có rủi ro khá thấp
+
+51
+00:04:53,760 --> 00:05:01,130
+chứ không phải không có rủi ro, ta sẽ 
+đầu tư vào cổ phiếu các công ty nhỏ?
+
+52
+00:05:01,130 --> 00:05:05,20
+hoặc những công ty khá nhỏ vốn thường có tỷ lệ rủi ro
+và lợi nhuận kỳ vọng cao hơn
+
+53
+00:05:05,20 --> 00:05:09,900
+và nhân tiện, đây là những con số gần đúng theo
+
+54
+00:05:09,900 --> 00:05:14,929
+kinh nghiệm tại thị trường Mỹ. Như vậy, con số duy nhất bạn 
+phải thay đổi, nhưng tôi sẽ viết ra
+
+55
+00:05:14,930 --> 00:05:21,410
+là 0.05. Tôi hy vọng các bạn đang tính cùng tôi
+Nếu không, tôi sẽ thất vọng lắm đấy
+
+56
+00:05:21,410 --> 00:05:28,610
+Và, các bạn biết đấy, bằng cách nào đó tôi vẫn biết được
+điều này bất kể bạn đang ở đâu, ok? Vậy, bạn làm đi, con số duy nhất 
+
+57
+00:05:28,610 --> 00:05:34,919
+đã thay đổi là con số nào? Nhưng giờ 
+khi các bạn nhấn Enter
+
+58
+00:05:34,919 --> 00:05:39,400
+Các bạn sẽ choáng đấy vì tôi sẽ
+chỉ viết con số gần đúng
+
+59
+00:05:39,400 --> 00:05:56,810
+mà không viết phần thập phân, đó là 290272 và 325. sau đó là 0.21, nhưng hãy nhìn
+
+60
+00:05:56,810 --> 00:06:04,360
+xem điều gì đã xảy ra? Con số đó có làm bạn ngẩn người ra không?
+Nếu ai đó đầu tư $1000
+
+61
+00:06:04,360 --> 00:06:15,280
+vào 1 danh mục cổ phiếu nhỏ, bạn có thể
+ý tôi là về mặt kỹ thuật, đơn giản đây chỉ là thực tế
+
+62
+00:06:15,280 --> 00:06:19,840
+Nhưng các bạn đã có thể có 290 triệu đô trong ngân hàng
+
+63
+00:06:19,840 --> 00:06:25,840
+Hãy nhìn tôi đi. Ý tôi là đó chỉ la cấp độ khuếch đại
+Như vậy, mức lãi suất chỉ là gấp 3 lần
+
+64
+00:06:25,840 --> 00:06:30,270
+nhưng nhìn vào số tiền mà xem
+Con số đó nói lên điều gì?
+
+65
+00:06:30,270 --> 00:06:35,490
+Giá trị tương lai và việc tính lãi kép thực sự có một quyền năng rất lớn
+Nó hoạt động theo cơ chế ngược lại
+
+66
+00:06:35,490 --> 00:06:36,639
+với khi bạn tính 
+
+67
+00:06:36,639 --> 00:06:37,830
+Giá trị hiện tại và ta sẽ tính
+
+68
+00:06:37,830 --> 00:06:41,550
+giá trị đó. Tuy nhiên, tôi muốn các bạn nghĩ đến nó
+nhìn kỹ nó và nói cho tôi biết đâu là
+
+69
+00:06:41,550 --> 00:06:47,70
+hai yếu tố khiến con số này 
+cao lạ thường? Điều đầu tiên 
+
+70
+00:06:47,70 --> 00:06:53,310
+là Giá trị theo thời gian của tiền tệ,
+chính là 15%, thực ra 5% đã khá 
+
+71
+00:06:53,310 --> 00:07:00,350
+cao rồi. Nhưng, yếu tố khác đóng 
+vai trò giống lãi suất và giúp
+
+72
+00:07:00,350 --> 00:07:05,220
+việc tính lãi kép là số kỳ
+Ở đây ta có bao nhiên năm? Không phải một, hai
+
+73
+00:07:05,220 --> 00:07:12,310
+chẳng phải 10, mà là 90 năm. Và đó là 
+ sự kết hợp của 2 yếu tố, tạo nên
+
+74
+00:07:12,310 --> 00:07:19,230
+lượng hiệu ứng lãi kép  vô cùng lớn
+Hãy nhìn kĩ đi. Thật là choáng váng. Như tôi
+
+75
+00:07:19,230 --> 00:07:22,70
+đã nói, ngay cả Anhxtanh cũng phải thốt lên
+"Tôi không hiểu nổi chuyện gì đang diễn ra."
+
+76
+00:07:22,70 --> 00:07:23,90
+Hẹn sớm gặp lại các bạn
+
+

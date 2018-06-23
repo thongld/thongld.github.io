@@ -1,0 +1,475 @@
+1
+00:00:07,480 --> 00:00:10,800
+https://youtu.be/2kfPIbO7jRM
+A decision support system simply refers to
+the use of any
+
+2
+00:00:10,800 --> 00:00:14,530
+computer-based data delivery system that can
+help people
+
+3
+00:00:14,530 --> 00:00:16,240
+make a better decision.
+
+4
+00:00:16,240 --> 00:00:18,111
+We talked about two kinds of DSSs.
+
+5
+00:00:18,111 --> 00:00:22,850
+The first one is a model based decision support
+system.
+
+6
+00:00:22,850 --> 00:00:27,480
+The second one is a case based, or a data
+based, decision support system.
+
+7
+00:00:27,480 --> 00:00:30,520
+In this segment, I'm going to draw on some
+research that was done by Steve
+
+8
+00:00:30,520 --> 00:00:34,590
+Hoch and David Schkade where they talked about
+these two different kinds
+
+9
+00:00:34,590 --> 00:00:37,760
+of DSSs, and actually compared the two.
+
+10
+00:00:37,760 --> 00:00:40,760
+But before we go to the comparison, let's
+try and understand exactly what
+
+11
+00:00:40,760 --> 00:00:43,370
+those DSSs do.
+
+12
+00:00:43,370 --> 00:00:47,910
+Let's think first about a model based decision
+support system.
+
+13
+00:00:47,910 --> 00:00:50,609
+So if you think about the example we looked
+at before.
+
+14
+00:00:50,609 --> 00:00:55,130
+You're a loan officer, somebody comes to you
+with a loan application you now
+
+15
+00:00:55,130 --> 00:01:00,120
+have to make a judgment about the credit worthiness
+of this given applicant.
+
+16
+00:01:00,120 --> 00:01:03,100
+Let's imagine there are four criteria that
+you're going to use, four
+
+17
+00:01:03,100 --> 00:01:04,100
+attributes.
+
+18
+00:01:04,100 --> 00:01:08,920
+Their debt ratio, the cash flow, the revenue
+trend, and the location of
+
+19
+00:01:08,920 --> 00:01:10,360
+this company.
+
+20
+00:01:10,360 --> 00:01:13,410
+And what you might actually end up with is
+a model that looks like this,
+
+21
+00:01:13,410 --> 00:01:18,040
+where the credit rating is some a plus b1
+times the debt ratio, plus b2 times
+
+22
+00:01:18,040 --> 00:01:20,400
+the cash flow, and so on.
+
+23
+00:01:20,400 --> 00:01:26,640
+You could actually get estimates for a and
+b1 and b2 and b3 and b4 from a
+
+24
+00:01:26,640 --> 00:01:28,320
+number of different sources.
+
+25
+00:01:28,320 --> 00:01:32,110
+One, you could have a bunch of managers or
+experts who sit down
+
+26
+00:01:32,110 --> 00:01:36,910
+together to come up with their expert judgments
+on what these a's and b's
+
+27
+00:01:36,910 --> 00:01:38,280
+should look like.
+
+28
+00:01:38,280 --> 00:01:42,690
+Alternately, you could keep track of previous
+applications where you had
+
+29
+00:01:42,690 --> 00:01:47,040
+information on these attributes, or the cues,
+as we call them, monitor the
+
+30
+00:01:47,040 --> 00:01:51,150
+success of these companies, and then use a
+regression kind of analysis to
+
+31
+00:01:51,150 --> 00:01:57,020
+come up with thee true values of a and b1
+and b2 and b2 that best describe
+
+32
+00:01:57,020 --> 00:01:58,220
+that success.
+
+33
+00:01:58,220 --> 00:02:03,200
+Finally, you could simply bootstrap your own
+past judgments and use the
+
+34
+00:02:03,200 --> 00:02:08,209
+bootstrap, the regression, to tell you what
+the a's and b's are going to be.
+
+35
+00:02:08,209 --> 00:02:12,069
+So now, if you had a computer system that
+used this equation, all it's
+
+36
+00:02:12,069 --> 00:02:14,950
+going to ask you to do is it's going to ask
+you to plug in the values of
+
+37
+00:02:14,950 --> 00:02:18,680
+the four attributes, and it would then give
+you as output the
+
+38
+00:02:18,680 --> 00:02:19,709
+credit rating score.
+
+39
+00:02:19,709 --> 00:02:23,030
+And you can then make a decision based on
+that, whether you would like to
+
+40
+00:02:23,030 --> 00:02:25,450
+give it a loan or not.
+
+41
+00:02:25,450 --> 00:02:30,040
+So that's a simple model based decision support
+system.
+
+42
+00:02:30,040 --> 00:02:32,820
+Let's think about a case based DSS.
+
+43
+00:02:32,820 --> 00:02:36,650
+What happens in a case based DSS is you get
+an application, you're going
+
+44
+00:02:36,650 --> 00:02:40,959
+to ask the system to find a previous instance
+of an applicant that looks
+
+45
+00:02:40,959 --> 00:02:43,730
+similar to this particular application.
+
+46
+00:02:43,730 --> 00:02:48,650
+Here's what an interface for a case based
+decision support
+
+47
+00:02:48,650 --> 00:02:49,650
+system might look like.
+
+48
+00:02:49,650 --> 00:02:52,160
+What you see on the top is a new applicant.
+
+49
+00:02:52,160 --> 00:02:57,870
+Let's say, company XYZ, that has a debt ratio
+of 2.7, cash flow off 1.8,
+
+50
+00:02:57,870 --> 00:03:02,000
+revenue trend of 14, and is located in the
+American Midwest.
+
+51
+00:03:02,000 --> 00:03:04,260
+And you need to make a judgment about what
+their credit
+
+52
+00:03:04,260 --> 00:03:06,639
+rating is going to be.
+
+53
+00:03:06,639 --> 00:03:11,730
+What you can ask the computer to do is to
+identify a number of past cases
+
+54
+00:03:11,730 --> 00:03:16,730
+that you already now have information about
+their credit rating.
+
+55
+00:03:16,730 --> 00:03:19,319
+What the computer is going to do is it's going
+to follow a simple
+
+56
+00:03:19,319 --> 00:03:22,720
+algorithm which is called the minimization
+of least squares, or
+
+57
+00:03:22,720 --> 00:03:27,280
+minimizing the Euclidean distance in the four
+dimensional space between the
+
+58
+00:03:27,280 --> 00:03:30,840
+new applicant and its existing database of
+cases.
+
+59
+00:03:30,840 --> 00:03:34,760
+And it might pull out, for example, these
+three companies.
+
+60
+00:03:34,760 --> 00:03:39,239
+Jayrod, Lansco, Lobsen, and MS and Z.
+
+61
+00:03:39,239 --> 00:03:43,390
+So four companies it has pulled out
+that, based on the criteria that the model
+
+62
+00:03:43,390 --> 00:03:47,180
+uses, are
+similar to the new applicant.
+
+63
+00:03:47,180 --> 00:03:50,939
+You now have data on each of those four, and
+you also know what the
+
+64
+00:03:50,939 --> 00:03:53,939
+credit rating is for those four, because you've
+actually had an
+
+65
+00:03:53,939 --> 00:03:56,530
+experience dealing with those four companies.
+
+66
+00:03:56,530 --> 00:04:01,329
+What you could do next is to say, well, gee,
+do I think that XYZ is most
+
+67
+00:04:01,329 --> 00:04:03,530
+like one of these four?
+
+68
+00:04:03,530 --> 00:04:06,599
+See what happened to those, and then make
+a judgment about what you think
+
+69
+00:04:06,599 --> 00:04:08,599
+is going to happen to this one.
+
+70
+00:04:08,599 --> 00:04:11,829
+The psychological process that we follow to
+make these kinds of
+
+71
+00:04:11,829 --> 00:04:15,629
+judgments is called anchoring and adjustment.
+
+72
+00:04:15,629 --> 00:04:18,459
+The DSS gives you a past case to anchor on.
+
+73
+00:04:18,459 --> 00:04:24,250
+So let's say you decided that XYZ is most
+similar to MS and Z. MS and Z had
+
+74
+00:04:24,250 --> 00:04:25,250
+a score of 45.
+
+75
+00:04:25,250 --> 00:04:27,720
+You're going to anchor on the 45.
+
+76
+00:04:27,720 --> 00:04:28,720
+And you're going to make adjustments.
+
+77
+00:04:28,720 --> 00:04:31,170
+You're going to say, well, yeah, they had
+45, but they
+
+78
+00:04:31,170 --> 00:04:32,600
+were on the East Coast.
+
+79
+00:04:32,600 --> 00:04:34,120
+This is a Midwestern company.
+
+80
+00:04:34,120 --> 00:04:37,590
+How does that change your prediction of the
+score?
+
+81
+00:04:37,590 --> 00:04:40,840
+So that's a DSS based system.
+
+82
+00:04:40,840 --> 00:04:45,340
+Now in a series of experiments, Hoch and Schkade
+actually compared these
+
+83
+00:04:45,340 --> 00:04:46,630
+two different kinds of systems.
+
+84
+00:04:46,630 --> 00:04:49,820
+They had managers come in and make judgments.
+
+85
+00:04:49,820 --> 00:04:53,850
+Managers were either given a case based decision
+support system or a
+
+86
+00:04:53,850 --> 00:04:57,080
+model based system, or in some cases, both.
+
+87
+00:04:57,080 --> 00:04:58,210
+And here's what they found.
+
+88
+00:04:58,210 --> 00:05:02,090
+They found that when environments are stable,
+nothing major is happening in
+
+89
+00:05:02,090 --> 00:05:07,250
+terms of changes, no new products being launched,
+no income shocks,
+
+90
+00:05:07,250 --> 00:05:11,150
+nothing dramatic is happening, the model based
+decision support systems
+
+91
+00:05:11,150 --> 00:05:15,260
+actually outperform the case based decision
+support systems.
+
+92
+00:05:15,260 --> 00:05:19,380
+In other words, managers that use the model
+based systems end up making more
+
+93
+00:05:19,380 --> 00:05:22,890
+accurate judgments or predictions than managers
+that use
+
+94
+00:05:22,890 --> 00:05:23,970
+the case based systems.
+
+95
+00:05:23,970 --> 00:05:28,070
+Turns out, though, when the environment is
+noisy, when in fact
+
+96
+00:05:28,070 --> 00:05:32,720
+there is, let's say, a recession or a new
+product has been launched, or some
+
+97
+00:05:32,720 --> 00:05:37,440
+new regulation, where now the old model might
+not be true anymore, the
+
+98
+00:05:37,440 --> 00:05:40,070
+case based system actually is a little bit
+better than
+
+99
+00:05:40,070 --> 00:05:41,350
+the model based system.
+
+100
+00:05:41,350 --> 00:05:45,930
+But interestingly, no matter what the environment
+is, having both
+
+101
+00:05:45,930 --> 00:05:48,190
+outperforms having just one of them.
+
+102
+00:05:48,190 --> 00:05:51,940
+And that's an interesting key lesson to take
+away from their research.
+

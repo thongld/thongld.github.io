@@ -1,0 +1,320 @@
+0
+00:00:00,000 --> 00:00:00,290
+https://youtu.be/dN7ORKYlyYs
+
+1
+00:00:00,290 --> 00:00:00,790
+OK.
+
+2
+00:00:00,790 --> 00:00:02,760
+What were the key points from this lesson?
+
+3
+00:00:02,760 --> 00:00:05,020
+Well, all that we did was introduced
+
+4
+00:00:05,020 --> 00:00:06,900
+exponential smoothing models.
+
+5
+00:00:06,900 --> 00:00:08,260
+And we introduced two types.
+
+6
+00:00:08,260 --> 00:00:11,550
+First is the simple model or simple smoothing,
+
+7
+00:00:11,550 --> 00:00:14,170
+and this only looked at when we had a level.
+
+8
+00:00:14,170 --> 00:00:15,830
+We only assumed the only trend we saw
+
+9
+00:00:15,830 --> 00:00:18,770
+was a level period or stationary demand.
+
+10
+00:00:18,770 --> 00:00:21,210
+Then we also looked at the Holt Model, which
+
+11
+00:00:21,210 --> 00:00:24,300
+assumes both a level and a trend with whether it's
+
+12
+00:00:24,300 --> 00:00:28,410
+upward or downward, and what we looked at is linear trends.
+
+13
+00:00:28,410 --> 00:00:31,860
+And so if you look at these, they're very similar
+
+14
+00:00:31,860 --> 00:00:36,610
+and for the forecasting equation for the simple model
+
+15
+00:00:36,610 --> 00:00:38,690
+or for just level, it's simply going
+
+16
+00:00:38,690 --> 00:00:43,310
+to have this alpha, which again is the smoothing coefficient,
+
+17
+00:00:43,310 --> 00:00:45,560
+the higher the alpha is between 0 and 1,
+
+18
+00:00:45,560 --> 00:00:48,020
+the more you're going to weight the new information, which
+
+19
+00:00:48,020 --> 00:00:50,440
+in this case is the new observation.
+
+20
+00:00:50,440 --> 00:00:52,470
+And 1 minus alpha tells you how much
+
+21
+00:00:52,470 --> 00:00:54,740
+you're going to weight the old information.
+
+22
+00:00:54,740 --> 00:00:59,010
+And in this case, it's x hat t minus 1 for t,
+
+23
+00:00:59,010 --> 00:01:01,910
+which is essentially the forecast from yesterday
+
+24
+00:01:01,910 --> 00:01:03,080
+for today.
+
+25
+00:01:03,080 --> 00:01:08,750
+So it's balancing alpha times my most recent observation
+
+26
+00:01:08,750 --> 00:01:13,000
+plus 1 minus alpha times my most recent forecast.
+
+27
+00:01:13,000 --> 00:01:14,840
+So that's the whole smoothing.
+
+28
+00:01:14,840 --> 00:01:16,940
+And then when we introduced level and trend,
+
+29
+00:01:16,940 --> 00:01:18,245
+you're doing the same thing.
+
+30
+00:01:18,245 --> 00:01:20,750
+All that we're doing now is introducing a new term.
+
+31
+00:01:20,750 --> 00:01:23,580
+This b term, which is the smoothing
+
+32
+00:01:23,580 --> 00:01:26,120
+term or the estimate for the trend.
+
+33
+00:01:26,120 --> 00:01:29,450
+And it's going to be equal to beta, which is smoothing factor
+
+34
+00:01:29,450 --> 00:01:32,940
+between 0 and 1 times my new information, which
+
+35
+00:01:32,940 --> 00:01:37,450
+is just the difference between my two estimated levels plus 1
+
+36
+00:01:37,450 --> 00:01:41,680
+minus beta times my most recent estimate of what
+
+37
+00:01:41,680 --> 00:01:42,570
+the trend should be.
+
+38
+00:01:42,570 --> 00:01:47,240
+So again, it's new information balanced with old information.
+
+39
+00:01:47,240 --> 00:01:48,990
+And you're smoothing factors will tell you
+
+40
+00:01:48,990 --> 00:01:52,120
+how much you're going to weight the new and the old.
+
+41
+00:01:52,120 --> 00:01:55,180
+It's just a linear combination, because the alpha in 1
+
+42
+00:01:55,180 --> 00:01:57,980
+minus alpha and beta in one minus beta,
+
+43
+00:01:57,980 --> 00:02:01,210
+it sums to one obviously.
+
+44
+00:02:01,210 --> 00:02:04,130
+So after we did this, we looked at some other smoothing models.
+
+45
+00:02:04,130 --> 00:02:06,340
+And you can see this is a very easy way
+
+46
+00:02:06,340 --> 00:02:08,870
+to incorporate new information with old,
+
+47
+00:02:08,870 --> 00:02:11,790
+and we used it to track mean square error.
+
+48
+00:02:11,790 --> 00:02:14,700
+And so we use this omega term to try
+
+49
+00:02:14,700 --> 00:02:17,910
+to balance out what the mean square error will be to give us
+
+50
+00:02:17,910 --> 00:02:21,229
+a more consistent or conservative estimate for what
+
+51
+00:02:21,229 --> 00:02:22,520
+the mean square error would be.
+
+52
+00:02:22,520 --> 00:02:27,030
+So it's not as volatile, jumping up and down with each month.
+
+53
+00:02:27,030 --> 00:02:29,370
+And then we also looked at dampen trends.
+
+54
+00:02:29,370 --> 00:02:31,240
+And for damped trends, this is the idea
+
+55
+00:02:31,240 --> 00:02:34,090
+that a trend does not go on forever unchanged.
+
+56
+00:02:34,090 --> 00:02:37,290
+And in practice, they tend to taper off.
+
+57
+00:02:37,290 --> 00:02:39,500
+And so we use this phi, and we showed
+
+58
+00:02:39,500 --> 00:02:41,920
+how that can be used to damp the trend,
+
+59
+00:02:41,920 --> 00:02:44,220
+especially this is very useful when
+
+60
+00:02:44,220 --> 00:02:48,440
+I'm looking at longer term estimates or forecasts.
+
+61
+00:02:48,440 --> 00:02:48,940
+OK.
+
+62
+00:02:48,940 --> 00:02:51,080
+But overall, what are the core concepts
+
+63
+00:02:51,080 --> 00:02:53,930
+from the exponential smoothing?
+
+64
+00:02:53,930 --> 00:02:58,200
+The big one is that the value of information degrades over time.
+
+65
+00:02:58,200 --> 00:03:01,880
+So the older the observation, the less value, the less weight
+
+66
+00:03:01,880 --> 00:03:03,080
+I will put on it.
+
+67
+00:03:03,080 --> 00:03:06,940
+And that smoothing term tells me how much I'm going to put on.
+
+68
+00:03:06,940 --> 00:03:09,460
+And then the other is that it's a balance
+
+69
+00:03:09,460 --> 00:03:12,890
+of old and new information, whether it's
+
+70
+00:03:12,890 --> 00:03:15,610
+looking at the information on the level
+
+71
+00:03:15,610 --> 00:03:18,157
+or information on the trend or anything else.
+
+72
+00:03:18,157 --> 00:03:19,740
+We're looking at a balance, because we
+
+73
+00:03:19,740 --> 00:03:22,410
+want to say, how much do I weight that new information
+
+74
+00:03:22,410 --> 00:03:26,040
+and how much I weigh it against the old information?
+
+75
+00:03:26,040 --> 00:03:27,490
+All right, so that's it.
+
+76
+00:03:27,490 --> 00:03:29,500
+Hopefully, if you have any questions, comments,
+
+77
+00:03:29,500 --> 00:03:31,290
+or suggestions, please use the discussion.
+
+78
+00:03:31,290 --> 00:03:33,370
+Don't be confused like Lexi the dog.
+
+79
+00:03:33,370 --> 00:03:35,270
+Use the discussion.
+

@@ -1,0 +1,422 @@
+1
+00:00:01,000 --> 00:00:01,870
+http://open.umich.edu/sites/default/files/py4inf-01-intro.pdf https://youtu.be/G721cooZXgs
+Hello.
+
+2
+00:00:01,870 --> 00:00:04,080
+And welcome to Python for Informatics.
+
+3
+00:00:04,080 --> 00:00:05,630
+Right now we're going to cover Chapter
+One.
+
+4
+00:00:05,630 --> 00:00:07,650
+I'm Charles Severance from the University
+of Michigan.
+
+5
+00:00:07,650 --> 00:00:09,190
+And I'm the author.
+
+6
+00:00:09,190 --> 00:00:13,590
+And I'll be your lecturer, for this online
+lecture of the first chapter of the book.
+
+7
+00:00:15,570 --> 00:00:19,910
+This lecture and my slides, and the book,
+as a matter of fact, are all open.
+
+8
+00:00:19,910 --> 00:00:21,930
+Open content, open materials.
+
+9
+00:00:23,380 --> 00:00:25,520
+They're copyright Creative Commons
+Attribution.
+
+10
+00:00:25,520 --> 00:00:29,510
+And this video recording is also
+copyright Creative Commons Attribution.
+
+11
+00:00:29,510 --> 00:00:31,440
+It's important to be explicit about
+copyright, and
+
+12
+00:00:31,440 --> 00:00:33,630
+so I say it right at the beginning.
+
+13
+00:00:35,690 --> 00:00:39,580
+So, computers basically want to be
+helpful.
+
+14
+00:00:39,580 --> 00:00:41,255
+They are programmed.
+
+15
+00:00:41,255 --> 00:00:44,940
+[SOUND] Matter of fact, this is a
+microprocessor.
+
+16
+00:00:44,940 --> 00:00:47,260
+This is really just an electrical part.
+
+17
+00:00:47,260 --> 00:00:50,280
+It's got wires and circuits inside of it.
+
+18
+00:00:50,280 --> 00:00:55,190
+And somebody spent a lot of engineering
+time, to make it so that these pins in the
+
+19
+00:00:55,190 --> 00:01:00,580
+back take instructions from us, from
+operating systems,
+
+20
+00:01:00,580 --> 00:01:02,960
+from the hard drive, from the memory.
+
+21
+00:01:02,960 --> 00:01:05,330
+Instructions come into here and then
+results come out.
+
+22
+00:01:05,330 --> 00:01:07,710
+It's really sort of a very programmable
+hand
+
+23
+00:01:07,710 --> 00:01:10,690
+calculator and it's our job to put
+instructions in.
+
+24
+00:01:10,690 --> 00:01:13,950
+This thing, in a sense, is wired to
+
+25
+00:01:13,950 --> 00:01:17,570
+be curious about what's next, right?
+It's like
+
+26
+00:01:18,900 --> 00:01:21,260
+It, it's, like, tell me what you want to
+do next.
+
+27
+00:01:21,260 --> 00:01:22,170
+What do you want to do next?
+
+28
+00:01:22,170 --> 00:01:24,510
+What do you want to do next, and after
+that, what do you want to do next,
+
+29
+00:01:24,510 --> 00:01:27,950
+and it just happens to do that a
+billion or so times a second.
+
+30
+00:01:27,950 --> 00:01:32,120
+And, so that's sort of the, the low-level
+piece, and, but you can also think, if
+
+31
+00:01:32,120 --> 00:01:35,350
+you have, like, a PDA, something like
+this,
+
+32
+00:01:35,350 --> 00:01:38,690
+all the buttons on here are some kind of,
+
+33
+00:01:38,690 --> 00:01:40,580
+you know, "what's next?"
+
+34
+00:01:40,580 --> 00:01:41,290
+Right?
+
+35
+00:01:41,290 --> 00:01:43,090
+Each of those is sort of something begging
+
+36
+00:01:43,090 --> 00:01:46,620
+for my attention, some application
+developer who's built a
+
+37
+00:01:46,620 --> 00:01:49,940
+really cool application and says please
+use me, please
+
+38
+00:01:49,940 --> 00:01:52,510
+click me, I am sort of nothing without
+you.
+
+39
+00:01:52,510 --> 00:01:56,460
+We humans are the things that sort of
+cause computers to start doing
+
+40
+00:01:56,460 --> 00:02:00,976
+something and this will sit here happily
+until I caused it to do something.
+
+41
+00:02:00,976 --> 00:02:04,370
+Now, [SOUND] whoa!
+
+42
+00:02:04,370 --> 00:02:05,220
+Whoa.
+
+43
+00:02:05,220 --> 00:02:06,950
+Hope it's still okay.
+
+44
+00:02:06,950 --> 00:02:08,480
+Yeah, it seems to be fine.
+
+45
+00:02:08,480 --> 00:02:09,420
+Seems to be fine.
+
+46
+00:02:09,420 --> 00:02:11,080
+Takes a lickin', and keeps on tickin'.
+
+47
+00:02:11,080 --> 00:02:14,790
+So, these, anyone can use, right?
+
+48
+00:02:14,790 --> 00:02:18,800
+They say even animals can use a Macintosh,
+smartphone.
+
+49
+00:02:18,800 --> 00:02:21,070
+And so you don't have to be a programmer.
+
+50
+00:02:21,070 --> 00:02:24,580
+But to get this to do what you want
+
+51
+00:02:24,580 --> 00:02:27,030
+you need to learn a different language,
+and we need to
+
+52
+00:02:27,030 --> 00:02:30,940
+learn the language of the instructions to
+tell it what to do.
+
+53
+00:02:30,940 --> 00:02:32,410
+So, that's what we're going to do.
+
+54
+00:02:32,410 --> 00:02:34,420
+We're going to learn how to talk to this.
+
+55
+00:02:34,420 --> 00:02:35,420
+Yo!
+
+56
+00:02:35,420 --> 00:02:38,320
+because it's asking us a question, we have
+to give the answer.
+
+57
+00:02:40,870 --> 00:02:42,770
+So, what's a programmer?
+
+58
+00:02:42,770 --> 00:02:44,490
+A programmer is somebody who
+
+59
+00:02:44,490 --> 00:02:49,470
+writes a program, which is a script or a
+set of instructions that tell
+
+60
+00:02:49,470 --> 00:02:53,810
+one of these kinds of things what it is
+that they're supposed to do.
+
+61
+00:02:53,810 --> 00:02:57,870
+And sometimes you're running a program
+like Moodle, an open source
+
+62
+00:02:57,870 --> 00:02:59,550
+learning management system, or Sakai,
+
+63
+00:02:59,550 --> 00:03:02,010
+another open source learning management
+system.
+
+64
+00:03:02,010 --> 00:03:04,330
+And sometimes you'll even get paid to do
+that, right?
+
+65
+00:03:04,330 --> 00:03:05,800
+Sometimes you do it for free, sometimes
+you
+
+66
+00:03:05,800 --> 00:03:08,500
+get paid, sometimes you write things for
+yourself.
+
+67
+00:03:10,050 --> 00:03:12,900
+And and but, if you think about it, all
+these
+
+68
+00:03:12,900 --> 00:03:16,690
+applications on my iPhone, somebody's
+making some money off of these.
+
+69
+00:03:16,690 --> 00:03:19,430
+They may not be able to quit their job,
+but a surprising number
+
+70
+00:03:19,430 --> 00:03:20,990
+have been able to quit their job or
+start
+
+71
+00:03:20,990 --> 00:03:24,170
+small companies, maybe not gigantic
+companies, but small companies.
+
+72
+00:03:26,380 --> 00:03:29,840
+So these people that can put
+applications inside of our computers
+
+73
+00:03:29,840 --> 00:03:35,160
+are programmers, because they understand
+the way that we talk to these computers.
+
+74
+00:03:35,160 --> 00:03:38,920
+And part of what I'm going to try to do is
+to get you to move from
+
+75
+00:03:38,920 --> 00:03:43,850
+the mindset of the end user who thinks of
+this as something just to click on
+
+76
+00:03:43,850 --> 00:03:46,500
+to the mindset of the programmer, who's
+kind of
+
+77
+00:03:46,500 --> 00:03:49,680
+on the inside trying to get out to you.
+
+78
+00:03:49,680 --> 00:03:51,870
+So that's, as we sort of move from user to
+
+79
+00:03:51,870 --> 00:03:55,090
+programmer, we move from outside to inside
+and we think
+
+80
+00:03:55,090 --> 00:03:56,420
+of the world out there and it's like what
+are
+
+81
+00:03:56,420 --> 00:03:59,100
+they going to put, push, what button are
+they going to push.
+
+82
+00:03:59,100 --> 00:04:00,450
+So here's kind of a picture of that.
+
+83
+00:04:01,800 --> 00:04:04,550
+So on the outside, we're users, we click
+on buttons, we click
+
+84
+00:04:04,550 --> 00:04:08,600
+on websites, we click on buttons on our
+phones, et cetera, et cetera.
+
+85
+00:04:08,600 --> 00:04:12,980
+But what's really going on inside all of
+that is there's a computer with
+
+86
+00:04:12,980 --> 00:04:17,810
+a bunch of hardware inside of that, and it
+has inside of it data,
+
+87
+00:04:17,810 --> 00:04:24,490
+networks, other information. And software
+is what makes all that make sense.
+
+88
+00:04:25,660 --> 00:04:28,550
+And so, part of what I want you to do is
+I want you to stop
+
+89
+00:04:28,550 --> 00:04:30,420
+thinking about how to use these things
+from
+
+90
+00:04:30,420 --> 00:04:34,380
+the outside, and we move to becoming a
+programmer.
+
+91
+00:04:34,380 --> 00:04:35,610
+We're someone on the inside.
+

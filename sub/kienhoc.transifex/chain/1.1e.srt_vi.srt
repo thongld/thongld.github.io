@@ -1,0 +1,788 @@
+0
+00:00:00,000 --> 00:00:00,500
+Bây giờ các loại hàng hóa dưới đây ở phía dưới bên phải,
+
+2
+00:00:03,170 --> 00:00:05,680
+Cách phổ biến nhất mà phân khúc
+
+3
+00:00:05,680 --> 00:00:08,600
+hỗ trợ sản phẩm, đó là sử dụng một cái gì đó gọi là Phân tích ABC,
+
+4
+00:00:08,600 --> 00:00:12,280
+và nó không phải là viết tắt của từ Hoạt động Định giá.
+
+5
+00:00:12,280 --> 00:00:14,590
+Đó là một kỹ thuật hoàn toàn khác.
+
+6
+00:00:14,590 --> 00:00:18,150
+Nhưng ABC chỉ là một phương pháp mà bạn tạo ra.
+
+7
+00:00:18,150 --> 00:00:20,965
+Bạn tạo ra loại A, loại B, và loại C,
+
+8
+00:00:20,965 --> 00:00:23,230
+và nó có tên Phân tích ABC.
+
+9
+00:00:23,230 --> 00:00:26,560
+Vì thế khi bạn chia phân khúc, bạn muốn tìm hàng hóa loại A.
+
+10
+00:00:26,560 --> 00:00:28,250
+Chúng là những loại hàng hóa quan trọng có số lượng ít.
+
+11
+00:00:28,250 --> 00:00:30,662
+Và có rất ít hàng hóa tạo ảnh hưởng lớn. 
+
+12
+00:00:30,662 --> 00:00:33,120
+Đó là các loại hàng hóa mà bạn muốn chú ý nhiều nhất,
+
+13
+00:00:33,120 --> 00:00:34,820
+bởi vì chúng quan trọng.
+
+14
+00:00:34,820 --> 00:00:39,570
+Và bạn hy vọng có ngoại lệ cho các sản phẩm này.
+
+15
+00:00:39,570 --> 00:00:41,900
+Vì thế có thể bạn không có một quy trình tiêu chuẩn.
+
+16
+00:00:41,900 --> 00:00:43,400
+Bạn muốn xử lý các điều này khác nhau.
+
+17
+00:00:43,400 --> 00:00:45,794
+Chúng 
+
+18
+00:00:45,794 --> 00:00:46,960
+Rồi bạn có các hàng hóa loại B.
+
+19
+00:00:46,960 --> 00:00:48,335
+Chúng là các loại hàng hóa ở trung gian.
+
+20
+00:00:48,335 --> 00:00:50,630
+Chúng ta dành nhiều thời gian cho hàng hóa loại B
+
+21
+00:00:50,630 --> 00:00:53,530
+khi chúng ta bàn về sự kiểm kê.
+
+22
+00:00:53,530 --> 00:00:55,150
+Chúng không gây ảnh hưởng lớn lắm.
+
+23
+00:00:55,150 --> 00:00:57,050
+Và lý do chúng ta dành thời gian cho chúng chính là 
+
+24
+00:00:57,050 --> 00:00:59,080
+chúng ta sẽ bàn về các cách khác nhau 
+
+25
+00:00:59,080 --> 00:01:00,410
+mà chúng ta có thể tự động hóa việc điều khiển.
+
+26
+00:01:00,410 --> 00:01:03,200
+Bởi vì chúng ta thiết lập các chính sách khác nhau mà bạn có thể sử dụng. 
+
+27
+00:01:03,200 --> 00:01:05,090
+Bây giờ, các nguyên tắc có thể được sử dụng cho A,
+
+28
+00:01:05,090 --> 00:01:06,780
+vậy bạn có thể triển khai các chính sách này cho B
+
+29
+00:01:06,780 --> 00:01:10,280
+rồi bạn chỉnh sửa chúng một chút, cho A chẳng hạn.
+
+30
+00:01:10,280 --> 00:01:12,319
+Nhưng điều quan trọng chính là hàng hóa loại A 
+
+31
+00:01:12,319 --> 00:01:13,610
+được xử lý khác một chút.
+
+32
+00:01:13,610 --> 00:01:14,940
+Chúng là hàng hóa quan trọng.
+
+33
+00:01:14,940 --> 00:01:18,350
+Tôi muốn tự động hóa cho hàng hóa loại B.
+
+34
+00:01:18,350 --> 00:01:20,352
+Và hàng hóa loại C, hàng hóa không quan trọng.
+
+35
+00:01:20,352 --> 00:01:22,060
+Có rất nhiều thứ bạn muốn làm. 
+
+36
+00:01:22,060 --> 00:01:25,250
+Có thể bạn muốn tiết kiệm thời gian
+
+37
+00:01:25,250 --> 00:01:26,260
+mà bạn dành cho chúng.
+
+38
+00:01:26,260 --> 00:01:28,210
+Có thể bạn thật sự muốn giảm bớt 
+
+39
+00:01:28,210 --> 00:01:30,834
+hàng hóa loại C, "cái đuôi dài" đó.
+
+40
+00:01:30,834 --> 00:01:32,250
+Nhưng bạn muốn chắc rằng mình
+
+41
+00:01:32,250 --> 00:01:33,952
+không dành quá nhiều thời gian cho chúng.
+
+42
+00:01:33,952 --> 00:01:35,910
+Và bạn làm cho hệ thống điều khiển và tất cả mọi thứ 
+
+43
+00:01:35,910 --> 00:01:37,900
+đơn giản nhất có thể.
+
+44
+00:01:37,900 --> 00:01:40,010
+Vì thế có rất nhiều việc tạo nhóm và phân loại.
+
+45
+00:01:40,010 --> 00:01:44,150
+Chúng ta sẽ bàn nhiều về nó khi chúng ta đi sâu vào bản tóm tắt.
+
+46
+00:01:44,150 --> 00:01:48,290
+Vì thế việc quan trọng là, chúng ta bàn về ABC, và nó lan rộng.
+
+47
+00:01:48,290 --> 00:01:50,730
+Khi chúng ta bàn về Phân tích ABC,
+
+48
+00:01:50,730 --> 00:01:52,540
+tất cả mọi người đều biết điều bạn đang nói đến.
+
+49
+00:01:52,540 --> 00:01:54,600
+Nhưng có hai điều tôi muốn đề cập.
+
+50
+00:01:54,600 --> 00:01:57,750
+Một loại đó là bất kỳ.
+
+51
+00:01:57,750 --> 00:02:00,610
+Cái bạn gọi hàng hóa loại A, có thể là một phần của 
+
+52
+00:02:00,610 --> 00:02:02,270
+B hay B+.
+
+53
+00:02:02,270 --> 00:02:04,160
+So there's a lot of arbitrariness to this.
+
+54
+00:02:04,160 --> 00:02:06,600
+Vì thế chúng ta có các quy tắc chung.
+
+55
+00:02:06,600 --> 00:02:11,130
+Điều thứ hai đó là, hàng hóa không dừng lại ở loại C.
+
+56
+00:02:11,130 --> 00:02:15,400
+Bạn có thể có loại D, E, F, hai F, ba F.
+
+57
+00:02:15,400 --> 00:02:17,920
+Khi bạn nghĩ về ngành công nghiệp phụ tùng thay thế,
+
+58
+00:02:17,920 --> 00:02:21,320
+họ có thể có các loại hàng hóa làm dịch chuyển ngành bán phụ tùng thay thế 
+
+59
+00:02:21,320 --> 00:02:23,620
+năm năm một lần hay thậm chí là lâu hơn.
+
+60
+00:02:23,620 --> 00:02:25,640
+Bởi vì họ có thể có máy kéo trong ngành này 
+
+61
+00:02:25,640 --> 00:02:27,680
+mà có lẽ đã ở trong ngành được 50 năm năm rồi.
+
+62
+00:02:27,680 --> 00:02:31,450
+Và vì thế chúng ta thường bàn về ABC,
+
+63
+00:02:31,450 --> 00:02:34,625
+nhưng vài ngành công nghiệp có các cái đuôi dài hơn.
+
+64
+00:02:34,625 --> 00:02:36,250
+Và họ quản lý chúng rất khác nhau.
+
+65
+00:02:36,250 --> 00:02:40,300
+Đặc biệt là, như tôi đã nói, ngành công nghiệp phụ tùng thay thế.
+
+66
+00:02:40,300 --> 00:02:41,340
+Vậy làm thế nào chúng ta làm được điều đó?
+
+67
+00:02:41,340 --> 00:02:43,610
+Đó là một quá trình rất đơn giản.
+
+68
+00:02:43,610 --> 00:02:44,550
+Tôi có tất cả các phần của mình.
+
+69
+00:02:44,550 --> 00:02:47,260
+Và đây là một ví dụ đơn giản có một vài Đơn vị Lưu Kho.
+
+70
+00:02:47,260 --> 00:02:50,210
+Và đây là phần chứng minh nhân dân ở cột đầu tiên.
+
+71
+00:02:50,210 --> 00:02:53,530
+Ở cột thứ hai, tôi có giá của mỗi mặt hàng hay c_i.
+
+72
+00:02:53,530 --> 00:02:56,080
+Theo tôi, đó là giá tiền của mỗi mặt hàng.
+
+73
+00:02:56,080 --> 00:02:59,440
+Và bạn có thể thấy giá tiền rơi vào khoảng 25 đô la Mỹ
+
+74
+00:02:59,440 --> 00:03:02,460
+xuống còn 15 dô la Mỹ.
+
+75
+00:03:02,460 --> 00:03:04,490
+Đơn hàng hằng năm--đó là D_i--
+
+76
+00:03:04,490 --> 00:03:06,740
+đơn hàng hằng năm cho mỗi sản phẩm và bạn có thể thấy cách nó
+
+77
+00:03:06,740 --> 00:03:07,980
+thay đổi.
+
+78
+00:03:07,980 --> 00:03:09,800
+Và cái tôi tạo ra cho cột thứ tư này,
+
+79
+00:03:09,800 --> 00:03:12,550
+Tôi chỉ nhân giá tiền với đơn hàng,
+
+80
+00:03:12,550 --> 00:03:15,440
+bởi vì kết quả là giá trị hằng năm.
+
+81
+00:03:15,440 --> 00:03:19,300
+Thông thường, đối với Phân tích ABC, điều thúc đẩy nó chính là
+
+82
+00:03:19,300 --> 00:03:20,930
+giá trị.
+
+83
+00:03:20,930 --> 00:03:23,200
+Giá trị hằng năm mà sản phẩm
+
+84
+00:03:23,200 --> 00:03:27,470
+mang lại, dù nó là tổng chi phí hay tổng thu nhập.
+
+85
+00:03:27,470 --> 00:03:29,310
+Dù trong trường hợp nào, luôn có hai tính năng.
+
+86
+00:03:29,310 --> 00:03:32,150
+Một là giá tiền của mỗi loại hàng và đơn hàng.
+
+87
+00:03:32,150 --> 00:03:38,210
+Vậy sản phẩm, làm cách nào để tôi tính giá trị những cái này.
+
+88
+00:03:38,210 --> 00:03:40,530
+Hãy nghĩ về bóng chày và khúc côn cầu.
+
+89
+00:03:40,530 --> 00:03:41,070
+Đúng không nào?
+
+90
+00:03:41,070 --> 00:03:44,820
+Điều ta tập trung ở c thì khá giống nhau.
+
+91
+00:03:44,820 --> 00:03:48,020
+so với bóng chày.
+
+92
+00:03:48,020 --> 00:03:50,350
+Nhưng các D thay đổi.
+
+93
+00:03:50,350 --> 00:03:51,330
+Đó chính là đơn hàng.
+
+94
+00:03:51,330 --> 00:03:54,500
+Và vì thế bạn có thể nghĩ về thay vì đơn hàng hằng năm,
+
+95
+00:03:54,500 --> 00:03:57,170
+có lẽ là đơn hàng hằng tháng -- bạn có thể thay đổi điều đó.
+
+96
+00:03:57,170 --> 00:03:59,110
+Nhưng bất kỳ trường hợp nào, cuối cùng thì, 
+
+97
+00:03:59,110 --> 00:04:02,070
+tôi có giá trị hằng năm này dành cho từng hàng hóa.
+
+98
+00:04:02,070 --> 00:04:04,780
+Vì thế điều tôi đã thực hiện đó là tôi kiếm giá trị cho từng sản phẩm,
+
+99
+00:04:04,780 --> 00:04:06,240
+bây giờ tôi sẽ phân loại nó.
+
+100
+00:04:06,240 --> 00:04:07,780
+Tôi sẽ phân loại nó.
+
+101
+00:04:07,780 --> 00:04:12,010
+Và đây là, bạn thấy 20 Đơn vị Lưu kho, hơn 4 000 đơn vị một chút,
+
+102
+00:04:12,010 --> 00:04:15,940
+tổng cộng 22 000 đô la Mỹ.
+
+103
+00:04:15,940 --> 00:04:18,011
+Tôi vừa mới giải quyết nó.
+
+104
+00:04:18,011 --> 00:04:18,510
+Đúng không nào?
+
+105
+00:04:18,510 --> 00:04:21,630
+Và tôi đã phân loại, trong cột này, giá trị hàng năm.
+
+106
+00:04:21,630 --> 00:04:27,520
+Vậy tôi có phần 55K2 là giá trị hàng năm cao nhất.
+
+107
+00:04:27,520 --> 00:04:29,130
+Tôi tạo một cột mới.
+
+108
+00:04:29,130 --> 00:04:31,530
+Đây là tích lũy, nên nó chỉ tính tổng
+
+109
+00:04:31,530 --> 00:04:34,400
+vào giá trị tích lũy của tất cả sản phẩm.
+
+110
+00:04:34,400 --> 00:04:36,320
+Vậy tôi chỉ lấy một phần trăm của nó.
+
+111
+00:04:36,320 --> 00:04:45,140
+Vậy lấy 8 347 chia cho tổng giá trị, 21 984, có nghĩa là 38%. 
+
+112
+00:04:45,140 --> 00:04:50,900
+Và rồi, 13 544 chia cho 21 984 cho tôi kết quả 62%.
+
+113
+00:04:50,900 --> 00:04:54,010
+Tôi có giá trị hàng năm theo phần trăm.
+
+114
+00:04:54,010 --> 00:04:55,200
+Vậy tôi sẽ làm gì với nó?
+
+115
+00:04:55,200 --> 00:04:57,370
+Tôi đã sẵn sàng để phân loại.
+
+116
+00:04:57,370 --> 00:05:02,430
+Vì thế tôi chọn 20% đầu của Đơn vị Lưu kho, khoảng 80% giá trị.
+
+117
+00:05:02,430 --> 00:05:05,380
+Tôi sẽ chọn cái tiếp theo - khoảng 15%
+
+118
+00:05:05,380 --> 00:05:08,570
+giá trị, rồi hàng hóa loại C cho tôi phần trăm giá trị còn lại.
+
+119
+00:05:08,570 --> 00:05:12,150
+Bạn sẽ thấy nó hơi thất thường, nhưng điều thông dụng ở đây,
+
+120
+00:05:12,150 --> 00:05:14,360
+các công ty thực sự tìm kiếm tỷ lệ 80-20 này.
+
+121
+00:05:14,360 --> 00:05:16,340
+Thỉnh thoảng họ gọi nó là Luật 80-20.
+
+122
+00:05:16,340 --> 00:05:19,010
+Nó không phải lúc nào cũng được áp dụng, nhưng đối với trường hợp này,
+
+123
+00:05:19,010 --> 00:05:20,610
+nó chỉ là một ví dụ.
+
+124
+00:05:20,610 --> 00:05:21,910
+Nên tôi chia nhỏ nó ra.
+
+125
+00:05:21,910 --> 00:05:25,090
+Và nếu tôi đặt nó vào, cùng một biểu đồ mà tôi
+
+126
+00:05:25,090 --> 00:05:27,340
+sử dụng cho cửa hàng tạp hóa, tỷ lệ phần trăm
+
+127
+00:05:27,340 --> 00:05:30,686
+Đơn vị Lưu kho và tỷ lệ phần trăm giá trị hằng năm,
+
+128
+00:05:30,686 --> 00:05:31,810
+tôi chỉ nhận cùng một kết quả.
+
+129
+00:05:31,810 --> 00:05:33,230
+Tôi có rất ít hàng hóa quan trọng.
+
+130
+00:05:33,230 --> 00:05:34,750
+Những hàng hóa quan trọng.
+
+131
+00:05:34,750 --> 00:05:36,610
+Hàng hóa loại A ở đây.
+
+132
+00:05:36,610 --> 00:05:38,950
+Tôi có rất nhiều hàng hóa loại C,
+
+133
+00:05:38,950 --> 00:05:41,260
+và tôi sẽ xử lý chúng khác nhau.
+
+134
+00:05:41,260 --> 00:05:43,860
+Và rồi hàng hóa loại B nằm ở giữa.
+
+135
+00:05:43,860 --> 00:05:46,110
+Đúng không nào?
+
+136
+00:05:46,110 --> 00:05:48,890
+Đây là một cách tốt để bắt đầu phân khúc.
+
+137
+00:05:48,890 --> 00:05:50,870
+Mỗi công ty đều có một hình thức phân khúc nào đó,
+
+138
+00:05:50,870 --> 00:05:52,480
+nhưng họ không dừng ở đó.
+
+139
+00:05:52,480 --> 00:05:54,820
+Ví dụ, tôi có thể muốn xem xét 
+
+140
+00:05:54,820 --> 00:05:56,700
+sự đa dạng của đơn hàng.
+
+141
+00:05:56,700 --> 00:05:59,530
+Và đó là cái tôi có trên trục tung này.
+
+142
+00:05:59,530 --> 00:06:00,600
+Sự đa dạng của đơn hàng.
+
+143
+00:06:00,600 --> 00:06:02,070
+Tại sao điều đó lại quan trọng?
+
+144
+00:06:02,070 --> 00:06:05,800
+Bởi vì tôi sẽ thực hiện Phân tích A,B và C, đúng không nào?
+
+145
+00:06:05,800 --> 00:06:07,670
+Giống như cách chúng ta đã thực hiện ở slide trước.
+
+146
+00:06:07,670 --> 00:06:10,040
+Nhưng sự đa dạng trong đơn hàng có thể quan trọng.
+
+147
+00:06:10,040 --> 00:06:14,160
+Ví dụ, giả sử tôi bán 250 sản phẩm
+
+148
+00:06:14,160 --> 00:06:15,690
+trong suốt một năm.
+
+149
+00:06:15,690 --> 00:06:18,770
+Điều đó sẽ trở nên quan trọng nếu tôi bán 250 sản phẩm
+
+150
+00:06:18,770 --> 00:06:23,030
+chỉ trong một ngày hay ngược lại tôi chỉ bản được một sản phẩm mỗi ngày 
+
+151
+00:06:23,030 --> 00:06:25,160
+trong 250 ngày làm việc.
+
+152
+00:06:25,160 --> 00:06:28,590
+Vì thế việc có tình trạng bán hàng ổn định, một sản phẩm một ngày, trái ngược với tất cả 
+
+153
+00:06:28,590 --> 00:06:29,900
+đơn hàng chỉ trong một ngày.
+
+154
+00:06:29,900 --> 00:06:30,920
+Hai trường hợp này khác xa nhau.
+
+155
+00:06:30,920 --> 00:06:33,450
+Vậy họ có sự đa dạng đơn hàng khác nhau,
+
+156
+00:06:33,450 --> 00:06:36,320
+và có lẽ tôi muốn xử lý các loại hàng hóa có tính đa dạng cao
+
+157
+00:06:36,320 --> 00:06:40,480
+khác so với sự đa dạng thấp và ổn định của mình.
+
+158
+00:06:40,480 --> 00:06:43,590
+Vậy đây chỉ là một cách tiếp cận mà các công ty khác nhau
+
+159
+00:06:43,590 --> 00:06:47,290
+sử dụng: đầu tiên, họ chia phân khúc theo ABC.
+
+160
+00:06:47,290 --> 00:06:49,560
+Nhưng họ cũng xem xét tính đa dạng,
+
+161
+00:06:49,560 --> 00:06:51,800
+rồi họ giảm.
+
+162
+00:06:51,800 --> 00:06:54,150
+Và thông thường nó là hệ số của sự biến đổi,
+
+163
+00:06:54,150 --> 00:06:57,430
+cái này là độ lệch chuẩn của nhu cầu so với giá trị trung bình,
+
+164
+00:06:57,430 --> 00:06:58,434
+hay giá trị trung bình.
+
+165
+00:06:58,434 --> 00:07:00,100
+Và bạn phải giảm, rồi bạn
+
+166
+00:07:00,100 --> 00:07:02,820
+xác định liệu nó là hàng hóa có tính đa dạng cao
+
+167
+00:07:02,820 --> 00:07:04,870
+hay thấp.
+
+168
+00:07:04,870 --> 00:07:06,910
+Rồi bạn có thể nghĩ về ba loại hàng quan trọng,
+
+169
+00:07:06,910 --> 00:07:08,550
+cách bạn quản lý chúng.
+
+170
+00:07:08,550 --> 00:07:11,590
+Đối với mặt hàng trên cùng, nó không ổn định.
+
+171
+00:07:11,590 --> 00:07:14,720
+Tôi sẽ sử dụng kỹ thuật rất phức tạp,
+
+172
+00:07:14,720 --> 00:07:17,960
+thường xuyên theo dõi chúng, và dành nhiều thời gian cho chúng.
+
+173
+00:07:17,960 --> 00:07:19,980
+ Những loại hàng hóa ở phía dưới cùng bên phải,
+
+174
+00:07:19,980 --> 00:07:22,040
+những loại hàng hóa ổn định này,
+
+175
+00:07:22,040 --> 00:07:24,770
+tôi có thể tự động hóa một vài thói quen này, ít theo dõi hơn,
+
+176
+00:07:24,770 --> 00:07:29,490
+và có lẽ sử dụng việc quản lý làm ngoại lệ.
+
+177
+00:07:29,490 --> 00:07:31,869
+Vì thế, nó ẽ là những loại hàng hóa có giá trị cao và quan trọng,
+
+178
+00:07:31,869 --> 00:07:33,410
+mà tôi dành rất nhiều thời gian.
+
+179
+00:07:33,410 --> 00:07:34,760
+Những loại hàng hóa này, tôi dành ít thời gian hơn.
+
+180
+00:07:34,760 --> 00:07:36,430
+Và những loại hàng hóa này, hàng hóa loại C,
+
+181
+00:07:36,430 --> 00:07:38,840
+dù tính đa dạng của nó cao hay thấp,
+
+182
+00:07:38,840 --> 00:07:41,170
+tôi sẽ đơn giản nó nhất có thể.
+
+183
+00:07:41,170 --> 00:07:42,460
+Rất không thường xuyên.
+
+184
+00:07:42,460 --> 00:07:44,310
+Nhưng điều chúng ta đã thực hiện ở đây chính là giới thiệu
+
+185
+00:07:44,310 --> 00:07:46,750
+những cách phân loại khác.
+
+186
+00:07:46,750 --> 00:07:49,570
+Vì như tôi nói, phân khúc 
+
+187
+00:07:49,570 --> 00:07:50,900
+thiên về nghệ thuật hơn là khoa học.
+
+188
+00:07:50,900 --> 00:07:52,990
+Chằng có quy luật gì cả.
+
+189
+00:07:52,990 --> 00:07:55,090
+Nó dễ thay đổi tại thời điểm nào đó.
+
+190
+00:07:55,090 --> 00:07:58,829
+Nhưng điểm mấu chốt chính là chia các sản phẩm ra thành các phân khúc.
+
+191
+00:07:58,829 --> 00:08:00,120
+và bạn xử lý mỗi phân khúc khác nhau.
+
+192
+00:08:00,120 --> 00:08:01,900
+Bạn sẽ xử lý theo cách khác.
+
+193
+00:08:01,900 --> 00:08:05,490
+Tôi sẽ quản lý các sản phẩm đỏ này khác 
+
+194
+00:08:05,490 --> 00:08:07,380
+so với các sản phẩm màu nâu và cũng khác so với
+
+195
+00:08:07,380 --> 00:08:08,930
+các sản phẩm màu xanh lá.
+
+196
+00:08:08,930 --> 00:08:12,340
+Tôi xử lý chúng giống nhau, vậy tại sao lại phải phân chia chúng.
+
+197
+00:08:12,340 --> 00:08:15,450
+À thì bạn luôn có mục đích để phân chia chúng.
+

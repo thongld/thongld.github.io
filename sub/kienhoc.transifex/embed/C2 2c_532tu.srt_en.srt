@@ -1,0 +1,322 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/R7RFjNFycyU
+
+1
+00:00:00,000 --> 00:00:00,770
+
+2
+00:00:00,770 --> 00:00:06,310
+DR. JONATHAN VALVANO: Because the focus
+of this class will be on I/O,
+
+3
+00:00:06,310 --> 00:00:15,020
+let's look, let's overview the
+type of I/O on our TM4C123.
+
+4
+00:00:15,020 --> 00:00:17,635
+We have a Cortex M4 processor.
+
+5
+00:00:17,635 --> 00:00:20,290
+
+6
+00:00:20,290 --> 00:00:21,780
+And we have RAM.
+
+7
+00:00:21,780 --> 00:00:27,010
+
+8
+00:00:27,010 --> 00:00:29,030
+And on another bus, we have ROM.
+
+9
+00:00:29,030 --> 00:00:33,450
+
+10
+00:00:33,450 --> 00:00:36,460
+But let's look at the I/O devices.
+
+11
+00:00:36,460 --> 00:00:41,510
+The Cortex M has ports.
+
+12
+00:00:41,510 --> 00:01:00,820
+And they're labeled port A,
+port B, port C, port D--
+
+13
+00:01:00,820 --> 00:01:01,650
+there's a lot of them.
+
+14
+00:01:01,650 --> 00:01:02,900
+It's really important--
+
+15
+00:01:02,900 --> 00:01:05,519
+
+16
+00:01:05,519 --> 00:01:11,680
+port E, and port F. OK.
+
+17
+00:01:11,680 --> 00:01:16,530
+And the idea of a port-- and again,
+they're all connected up here on the
+
+18
+00:01:16,530 --> 00:01:23,550
+system bus so that the processor of your
+programs can access these ports.
+
+19
+00:01:23,550 --> 00:01:25,930
+And each of these ports have pins.
+
+20
+00:01:25,930 --> 00:01:27,920
+Like, port A has got eight pins--
+
+21
+00:01:27,920 --> 00:01:31,196
+1, 2, 3, 4, 5, 6, 7, 8.
+
+22
+00:01:31,196 --> 00:01:34,040
+
+23
+00:01:34,040 --> 00:01:35,370
+Port B has got eight.
+
+24
+00:01:35,370 --> 00:01:38,880
+And we'll draw it this
+way, a bit quicker.
+
+25
+00:01:38,880 --> 00:01:41,290
+Port E has six.
+
+26
+00:01:41,290 --> 00:01:45,380
+Port F has five.
+
+27
+00:01:45,380 --> 00:01:50,370
+Port D has eight.
+
+28
+00:01:50,370 --> 00:01:52,440
+And port C is special.
+
+29
+00:01:52,440 --> 00:01:54,610
+We're going to have access to four.
+
+30
+00:01:54,610 --> 00:02:04,660
+Let me be the first to tell you to not
+to attach to PC3, PC2, PC1, and PC0.
+
+31
+00:02:04,660 --> 00:02:07,750
+Those we're going to reserve for our
+debugger, so don't touch those.
+
+32
+00:02:07,750 --> 00:02:10,558
+
+33
+00:02:10,558 --> 00:02:12,620
+Leave those alone.
+
+34
+00:02:12,620 --> 00:02:14,940
+You'll be happier.
+
+35
+00:02:14,940 --> 00:02:19,745
+Let's look at the types
+of I/O we have.
+
+36
+00:02:19,745 --> 00:02:26,380
+We have parallel, which means that, all
+at once, we can set all six bits
+
+37
+00:02:26,380 --> 00:02:29,380
+of this port E all at once.
+
+38
+00:02:29,380 --> 00:02:36,970
+Then, we have serial I/O. And we'll see
+a couple of types of serial I/O.
+
+39
+00:02:36,970 --> 00:02:41,485
+And this allows us to send
+one bit at a time.
+
+40
+00:02:41,485 --> 00:02:45,280
+
+41
+00:02:45,280 --> 00:02:49,525
+I'll make the analogy of how
+do you send Morse code.
+
+42
+00:02:49,525 --> 00:02:53,690
+
+43
+00:02:53,690 --> 00:02:56,232
+You've all played this game before
+[voice is wrong, should be]--
+
+44
+00:02:56,232 --> 00:03:03,530
+short, short, short, pause,
+long, long, long, pause,
+
+45
+00:03:03,530 --> 00:03:05,282
+short, short, short.
+
+46
+00:03:05,282 --> 00:03:09,900
+That is code for SOS--
+
+47
+00:03:09,900 --> 00:03:11,580
+save our ship.
+
+48
+00:03:11,580 --> 00:03:18,020
+So serial I/O will be used to
+communicate with other devices or
+
+49
+00:03:18,020 --> 00:03:19,510
+other computers.
+
+50
+00:03:19,510 --> 00:03:21,190
+Very important for communication.
+
+51
+00:03:21,190 --> 00:03:27,820
+We have other types of I/O. We have
+analog I/O. Analog I/O can be either
+
+52
+00:03:27,820 --> 00:03:37,410
+an input to measure what goes on in the
+external world, or it could be an
+
+53
+00:03:37,410 --> 00:03:46,050
+output to generate signals
+like sound or motion.
+
+54
+00:03:46,050 --> 00:03:52,370
+And the third very important type
+of I/O that we will do is time.
+
+55
+00:03:52,370 --> 00:03:55,555
+Time can be measured as an input.
+
+56
+00:03:55,555 --> 00:03:58,780
+
+57
+00:03:58,780 --> 00:04:02,890
+And time can also be produced
+as an output, to
+
+58
+00:04:02,890 --> 00:04:05,820
+generate pulses and signals.
+
+59
+00:04:05,820 --> 00:04:10,500
+So time, as we saw, is an important
+aspect of embedded systems, and
+
+60
+00:04:10,500 --> 00:04:15,720
+therefore, an important aspect
+of I/O that we will produce.
+
+61
+00:04:15,720 --> 00:04:16,550
+OK.
+
+62
+00:04:16,550 --> 00:04:21,790
+Now what I want to do is
+to focus on this part.
+
+63
+00:04:21,790 --> 00:04:31,080
+This is a microcontroller because it
+contains an entire computer, including
+
+64
+00:04:31,080 --> 00:04:36,530
+the I/O, including the pins for the I/O.
+And let me show you the one we're
+
+65
+00:04:36,530 --> 00:04:38,727
+going to use in this class.
+
+66
+00:04:38,727 --> 00:04:42,860
+All right, I'd like to show you the
+microcontroller we're going to use in
+
+67
+00:04:42,860 --> 00:04:44,090
+this class.
+
+68
+00:04:44,090 --> 00:04:50,890
+This big chip here in the center
+of this board is the TM4C123.
+
+69
+00:04:50,890 --> 00:04:52,850
+And it is a microcontroller.
+
+70
+00:04:52,850 --> 00:04:58,110
+The pins that I described in the
+previous slide are those wires coming
+
+71
+00:04:58,110 --> 00:04:59,390
+out of this chip.
+
+72
+00:04:59,390 --> 00:05:02,130
+So this is the microcontroller.
+
+73
+00:05:02,130 --> 00:05:07,470
+And this is a board which we will
+use to develop code for that
+
+74
+00:05:07,470 --> 00:05:08,720
+microcontroller.
+
+75
+00:05:08,720 --> 00:05:09,381

@@ -1,0 +1,287 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/sNGe_UR5LVY
+
+1
+00:00:00,000 --> 00:00:00,550
+
+2
+00:00:00,550 --> 00:00:04,070
+PROFESSOR RAMESH YERRABALLI: So let's
+take a look at how the ADC works
+
+3
+00:00:04,070 --> 00:00:07,206
+and get that information
+from the data sheet.
+
+4
+00:00:07,206 --> 00:00:10,330
+PROFESSOR JONATHAN VALVANO: All right,
+the first one we're going to look up
+
+5
+00:00:10,330 --> 00:00:12,750
+is PSSI.
+
+6
+00:00:12,750 --> 00:00:14,720
+OK, so we go to the data sheet.
+
+7
+00:00:14,720 --> 00:00:19,500
+I'm going to use my bookmark.
+
+8
+00:00:19,500 --> 00:00:23,830
+And the ADC is Chapter 13.
+
+9
+00:00:23,830 --> 00:00:27,310
+And I want to find the registers.
+
+10
+00:00:27,310 --> 00:00:33,964
+And I'm going to look for PSSI, PSSI.
+
+11
+00:00:33,964 --> 00:00:36,050
+Come on-- there it is.
+
+12
+00:00:36,050 --> 00:00:41,530
+This is the processor sample
+sequence initiate register.
+
+13
+00:00:41,530 --> 00:00:44,030
+OK, so in here, it'll
+show us how it works.
+
+14
+00:00:44,030 --> 00:00:46,620
+
+15
+00:00:46,620 --> 00:00:50,100
+We're going to write to bit three,
+which will start sequencer three.
+
+16
+00:00:50,100 --> 00:00:54,740
+
+17
+00:00:54,740 --> 00:00:58,090
+PROFESSOR RAMESH YERRABALLI:
+Hence the value 8 here.
+
+18
+00:00:58,090 --> 00:01:02,020
+PROFESSOR JONATHAN VALVANO: All right,
+let's look up the raw interrupt status
+
+19
+00:01:02,020 --> 00:01:04,099
+register, which has our flags in it.
+
+20
+00:01:04,099 --> 00:01:07,210
+
+21
+00:01:07,210 --> 00:01:11,630
+So again, I'm going
+to use the bookmarks.
+
+22
+00:01:11,630 --> 00:01:16,420
+Again, I'm going to use the
+bookmarks to search for the register.
+
+23
+00:01:16,420 --> 00:01:20,950
+And the register I want is
+RIS, Raw Interrupt Status.
+
+24
+00:01:20,950 --> 00:01:23,920
+There it is.
+
+25
+00:01:23,920 --> 00:01:27,470
+So here, it will show us
+that each of the sequencers
+
+26
+00:01:27,470 --> 00:01:30,540
+has a raw interrupt status.
+
+27
+00:01:30,540 --> 00:01:35,110
+And bit three is associated
+with sequencer three.
+
+28
+00:01:35,110 --> 00:01:39,610
+PROFESSOR RAMESH YERRABALLI: So we just
+check for that bit to see the sample
+
+29
+00:01:39,610 --> 00:01:40,564
+is completed.
+
+30
+00:01:40,564 --> 00:01:42,230
+PROFESSOR JONATHAN VALVANO: There we go.
+
+31
+00:01:42,230 --> 00:01:44,830
+What else do I need?
+
+32
+00:01:44,830 --> 00:01:47,135
+PROFESSOR RAMESH YERRABALLI:
+Let's look at the result,
+
+33
+00:01:47,135 --> 00:01:48,650
+where to read the result from.
+
+34
+00:01:48,650 --> 00:01:51,650
+PROFESSOR JONATHAN VALVANO: OK, so
+again, we're searching each register.
+
+35
+00:01:51,650 --> 00:01:54,080
+So we go back.
+
+36
+00:01:54,080 --> 00:01:56,180
+So we go back to our bookmarks.
+
+37
+00:01:56,180 --> 00:02:00,795
+And we're looking for the
+FIFO sequencer three register.
+
+38
+00:02:00,795 --> 00:02:03,280
+And there are a lot of
+registers of the ADC converter,
+
+39
+00:02:03,280 --> 00:02:04,480
+so we need a way to find it.
+
+40
+00:02:04,480 --> 00:02:06,220
+There it is.
+
+41
+00:02:06,220 --> 00:02:11,580
+Click on it, and we can see this
+register is not very interesting.
+
+42
+00:02:11,580 --> 00:02:15,690
+But we can see that it is
+a 12-bit register, which
+
+43
+00:02:15,690 --> 00:02:17,710
+will contain the conversion result.
+
+44
+00:02:17,710 --> 00:02:21,380
+
+45
+00:02:21,380 --> 00:02:27,790
+One more register-- that's
+called the ISC register.
+
+46
+00:02:27,790 --> 00:02:30,460
+PROFESSOR RAMESH YERRABALLI:
+This is our acknowledge register.
+
+47
+00:02:30,460 --> 00:02:34,530
+This is the one we
+have to make sure we do
+
+48
+00:02:34,530 --> 00:02:37,309
+to indicate that we've
+read the converted value.
+
+49
+00:02:37,309 --> 00:02:39,600
+PROFESSOR JONATHAN VALVANO:
+There we go, let's find it.
+
+50
+00:02:39,600 --> 00:02:47,812
+
+51
+00:02:47,812 --> 00:02:49,520
+PROFESSOR RAMESH
+YERRABALLI: Right there.
+
+52
+00:02:49,520 --> 00:02:54,010
+PROFESSOR JONATHAN VALVANO: Right
+there-- there it is, the ISC register,
+
+53
+00:02:54,010 --> 00:02:55,060
+click.
+
+54
+00:02:55,060 --> 00:02:57,770
+And this is one of those
+interesting registers here.
+
+55
+00:02:57,770 --> 00:03:00,720
+And you can see that it
+is a read/write register.
+
+56
+00:03:00,720 --> 00:03:05,250
+But when we write a 1 to
+it, it will clear the bit.
+
+57
+00:03:05,250 --> 00:03:07,650
+So this is one of
+those interesting bits.
+
+58
+00:03:07,650 --> 00:03:12,980
+Let's go down and look
+at it in the description
+
+59
+00:03:12,980 --> 00:03:18,510
+right here, that if we
+write a 1 to this bit,
+
+60
+00:03:18,510 --> 00:03:25,570
+it will clear the corresponding
+bit into the raw interrupt status.
+
+61
+00:03:25,570 --> 00:03:26,830
+There we go.
+
+62
+00:03:26,830 --> 00:03:28,940
+Again, don't be afraid
+of the data sheet.
+
+63
+00:03:28,940 --> 00:03:30,568
+It's your friend.
+
+64
+00:03:30,568 --> 00:03:31,068

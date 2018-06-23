@@ -1,0 +1,771 @@
+1
+00:00:04,874 --> 00:00:10,890
+https://youtu.be/LP1mByqT4Ls
+Welcome back, this is mega problem or
+mega application number four.
+
+2
+00:00:12,140 --> 00:00:20,560
+And the reason I want to do this one is to
+show you how you can do things smarter.
+
+3
+00:00:21,590 --> 00:00:23,460
+And, I hope you enjoy this one.
+
+4
+00:00:23,460 --> 00:00:25,940
+It looks simple, but
+
+5
+00:00:25,940 --> 00:00:30,540
+can get very complicated if you
+start worrying about how to do it.
+
+6
+00:00:30,540 --> 00:00:34,420
+You can do it in a very simple way or
+a very complicated way.
+
+7
+00:00:34,420 --> 00:00:38,330
+And by the way all the problems I'm
+using now, should help you with
+
+8
+00:00:38,330 --> 00:00:43,210
+solving the assignments, because
+the assignments can get tricky, and
+
+9
+00:00:43,210 --> 00:00:46,825
+if you work through these, it will
+really help you do the assignments.
+
+10
+00:00:46,825 --> 00:00:47,610
+Okay?
+
+11
+00:00:47,610 --> 00:00:49,897
+So let's get started,
+please stare at the screen.
+
+12
+00:00:49,898 --> 00:00:56,840
+You've invested $75,000 in a trust fund
+at 7.5% for your child's education.
+
+13
+00:00:57,930 --> 00:01:01,630
+Your child will draw $12,000
+per year from this fund for
+
+14
+00:01:01,630 --> 00:01:04,940
+four years starting at
+the end of year seven.
+
+15
+00:01:04,940 --> 00:01:09,539
+What will be the amount that
+will be left over in this fund
+
+16
+00:01:10,590 --> 00:01:14,900
+at end of year ten, after the child
+has withdrawn the fourth time?
+
+17
+00:01:16,580 --> 00:01:20,610
+This sounds similar to the first problem,
+I'm taking away a little bit of
+
+18
+00:01:20,610 --> 00:01:27,30
+the complexity to show you a way of going
+quickly in solving problems, right?
+
+19
+00:01:27,30 --> 00:01:33,250
+So the complexity I've removed is that
+tuition is not changing with inflation,
+
+20
+00:01:33,250 --> 00:01:37,460
+but what I've thrown in is, I'm
+asking you a question where,
+
+21
+00:01:37,460 --> 00:01:41,449
+your trust fund will have some
+money left after ten years.
+
+22
+00:01:41,450 --> 00:01:44,460
+Rather than taking a loan and
+paying it all off, right?
+
+23
+00:01:45,640 --> 00:01:47,900
+Let's see,
+whether you have money left, or not.
+
+24
+00:01:49,50 --> 00:01:51,820
+So let's draw the timeline as always.
+
+25
+00:01:51,820 --> 00:01:54,378
+So how many points in time?
+
+26
+00:01:54,379 --> 00:01:57,408
+You start off with zero and then ten more.
+
+27
+00:02:01,923 --> 00:02:03,750
+What do we know?
+
+28
+00:02:03,750 --> 00:02:06,590
+And let's place that on the board.
+
+29
+00:02:06,590 --> 00:02:10,800
+We know you have $75,000 at this point,
+plus.
+
+30
+00:02:12,410 --> 00:02:16,70
+However, we know starting in year seven
+
+31
+00:02:16,70 --> 00:02:20,200
+in some senses we did a more
+complex problem first, right?
+
+32
+00:02:20,200 --> 00:02:23,200
+Because of the complexity of inflation.
+
+33
+00:02:23,200 --> 00:02:25,160
+You start withdrawing 12k.
+
+34
+00:02:33,461 --> 00:02:33,961
+Yeah?
+
+35
+00:02:35,290 --> 00:02:38,820
+So the question is, this.
+
+36
+00:02:39,970 --> 00:02:42,890
+How much is left at the end of 10 years?
+
+37
+00:02:42,890 --> 00:02:45,279
+Now you can do a very simple
+way of thinking about it.
+
+38
+00:02:45,280 --> 00:02:49,885
+And the simple way is, ignore
+all Time Value on Money and
+
+39
+00:02:49,885 --> 00:02:52,595
+make me feel very sad about it.
+
+40
+00:02:52,595 --> 00:02:57,765
+But remember, the interest Time Value of Money is 7.5%,
+so ignoring it is much more
+
+41
+00:02:57,765 --> 00:03:03,964
+drastic than if it was close to 0% which
+is basically no Time Value of Money.
+
+42
+00:03:03,965 --> 00:03:08,533
+So the simplistic way of saying
+this would be, I have 75 and
+
+43
+00:03:08,533 --> 00:03:13,640
+then let's subtract 12,000
+four times which is about 48,
+
+44
+00:03:13,640 --> 00:03:16,70
+yeah? 12 times 4 is 48.
+
+45
+00:03:16,70 --> 00:03:18,560
+So you're left with what?
+
+46
+00:03:18,560 --> 00:03:20,970
+75 minus 48,000 is $27,000.
+
+47
+00:03:20,970 --> 00:03:26,890
+That's the very simplistic naive way,
+but let's do it smarter way.
+
+48
+00:03:26,890 --> 00:03:32,700
+Many people start doing it one step at a
+time, so they'll take this to year seven,
+
+49
+00:03:32,700 --> 00:03:35,690
+then take this to year eight,
+and start subtracting.
+
+50
+00:03:35,690 --> 00:03:40,810
+We did something like that to show you
+the confirmation of the result, right?
+
+51
+00:03:40,810 --> 00:03:45,460
+Let's do it in a way that's pretty simple.
+
+52
+00:03:45,460 --> 00:03:47,860
+Break up the problem into two pieces.
+
+53
+00:03:47,860 --> 00:03:53,590
+And the two pieces is, don't mix
+the value of the trust fund
+
+54
+00:03:53,590 --> 00:03:58,160
+with the payments being made annually,
+starting in year seven, right?
+
+55
+00:03:58,160 --> 00:04:01,770
+Even if they will be made starting
+in year one, it would be complex.
+
+56
+00:04:01,770 --> 00:04:02,610
+Do what?
+
+57
+00:04:02,610 --> 00:04:05,370
+Separate the negatives from the positive.
+
+58
+00:04:06,710 --> 00:04:09,330
+Let's break it up into two pieces.
+
+59
+00:04:11,110 --> 00:04:13,60
+The positive piece,
+
+60
+00:04:13,60 --> 00:04:18,860
+which I'll call positive is 75K
+carried forward how many years?
+
+61
+00:04:18,860 --> 00:04:20,890
+Ten years, can you do this?
+
+62
+00:04:20,890 --> 00:04:23,789
+Answer is yes,
+it's a Future Value problem.
+
+63
+00:04:25,580 --> 00:04:26,888
+What is the interest rate?
+
+64
+00:04:26,888 --> 00:04:30,138
+0.075.
+
+65
+00:04:30,138 --> 00:04:32,210
+What is n?
+
+66
+00:04:32,210 --> 00:04:33,440
+10.
+
+67
+00:04:33,440 --> 00:04:35,430
+What is PMT?
+
+68
+00:04:35,430 --> 00:04:36,433
+Zero.
+
+69
+00:04:36,433 --> 00:04:38,647
+What is PV?
+
+70
+00:04:38,648 --> 00:04:41,88
+75,000.
+
+71
+00:04:41,88 --> 00:04:44,570
+And how much does this work out to be?
+
+72
+00:04:44,570 --> 00:04:50,710
+If my numbers are right, press Enter.
+
+73
+00:04:50,710 --> 00:04:53,866
+You get 154,577.37.
+
+74
+00:04:53,866 --> 00:04:58,30
+This is the amount of money you will have.
+
+75
+00:04:58,30 --> 00:05:01,140
+Now clearly, more than double and
+
+76
+00:05:01,140 --> 00:05:05,419
+the reason is quite simple,
+actually there are two reasons.
+
+77
+00:05:05,420 --> 00:05:11,400
+One is the interest rate is high, the
+second is that ten is not a small number, it's....
+
+78
+00:05:11,400 --> 00:05:17,10
+Ten years is a fairly long time for
+the money to work, right?
+
+79
+00:05:17,10 --> 00:05:20,920
+Now this one, then do the negative,
+what is the negative?
+
+80
+00:05:23,250 --> 00:05:25,30
+Negative is draw the timeline.
+
+81
+00:05:25,30 --> 00:05:26,969
+Negative first one is 12 k.
+
+82
+00:05:28,370 --> 00:05:31,200
+Second one is time period 12 k,
+
+83
+00:05:31,200 --> 00:05:37,219
+12 k, negative 12 k.
+
+84
+00:05:39,280 --> 00:05:40,520
+Okay?
+
+85
+00:05:40,520 --> 00:05:42,930
+So what are you seeing over here is,
+
+86
+00:05:42,930 --> 00:05:46,230
+if you mix the two it might
+become very very complex.
+
+87
+00:05:46,230 --> 00:05:47,510
+Right you can do that for fun.
+
+88
+00:05:47,510 --> 00:05:51,440
+Like I did it earlier to see how
+you can confirm your results.
+
+89
+00:05:51,440 --> 00:05:53,530
+And we'll do a little bit of that here.
+
+90
+00:05:53,530 --> 00:05:57,469
+But this is pretty straight forward.
+
+91
+00:05:57,470 --> 00:06:01,885
+Do the Future Value of what?
+
+92
+00:06:01,885 --> 00:06:07,243
+It's not a one time,
+it's a annuity.
+
+93
+00:06:07,243 --> 00:06:11,375
+So, what is the interest rate?
+
+94
+00:06:11,375 --> 00:06:15,870
+0.075, and remember I'm gonna
+press in a positive number, but
+
+95
+00:06:15,870 --> 00:06:18,804
+I know it's negative
+that I'm paying right?
+
+96
+00:06:18,804 --> 00:06:22,159
+So 0.075, what is n?
+
+97
+00:06:22,160 --> 00:06:23,170
+N is four.
+
+98
+00:06:23,170 --> 00:06:27,10
+Remember I'm doing Future Value
+because I want to be in time 10.
+
+99
+00:06:27,10 --> 00:06:29,140
+N is four.
+
+100
+00:06:29,140 --> 00:06:30,800
+PMT is how much?
+
+101
+00:06:33,420 --> 00:06:35,220
+Now, here you can press the negative 12,000 but
+
+102
+00:06:35,220 --> 00:06:37,770
+I'm not going to as I said, worry about it.
+
+103
+00:06:37,770 --> 00:06:39,370
+And why did I close the parenthesis?
+
+104
+00:06:39,370 --> 00:06:40,850
+Because there's nothing else.
+
+105
+00:06:40,850 --> 00:06:41,610
+Right?
+
+106
+00:06:41,610 --> 00:06:42,610
+There's nothing else.
+
+107
+00:06:42,610 --> 00:06:49,790
+You can make it more interesting but
+I won't right now.
+
+108
+00:06:49,790 --> 00:06:53,653
+And it turns out to be
+
+109
+00:06:53,653 --> 00:06:59,350
+$53,675.06.
+
+110
+00:06:59,350 --> 00:07:01,60
+So you now know the two pieces.
+
+111
+00:07:01,60 --> 00:07:04,840
+One piece is 154,577.37.The
+other piece is negative and
+
+112
+00:07:04,840 --> 00:07:10,349
+now I'll make it negative
+because I know I am paying.
+
+113
+00:07:11,950 --> 00:07:20,26
+So what is the net fund balance?
+
+114
+00:07:20,26 --> 00:07:25,350
+In which year? Year ten.
+
+115
+00:07:25,350 --> 00:07:30,80
+It turns out to be take
+154,577.37 subtract 53,675.06 and
+
+116
+00:07:30,80 --> 00:07:34,680
+And, I think the answer
+
+117
+00:07:34,680 --> 00:07:39,790
+will work out to be $100,000.
+
+118
+00:07:39,790 --> 00:07:40,480
+902.
+
+119
+00:07:40,480 --> 00:07:48,390
+I'm a bozo, I keep laughing at myself.
+
+120
+00:07:48,390 --> 00:07:49,80
+And 30 cents.
+
+121
+00:07:49,80 --> 00:07:51,140
+So how much will you have?
+
+122
+00:07:51,140 --> 00:07:55,849
+You'll have $100,000, almost $101,000,
+even after you've paid off 12K four times.
+
+123
+00:07:55,850 --> 00:08:00,640
+And this shows you
+the power of compounding.
+
+124
+00:08:00,640 --> 00:08:02,900
+Because you had a reasonable
+amount of money.
+
+125
+00:08:04,140 --> 00:08:07,50
+Stick with me for a minute,
+and we'll be done for today.
+
+126
+00:08:07,50 --> 00:08:08,660
+Do this for me.
+
+127
+00:08:08,660 --> 00:08:12,110
+Now let's confirm that
+this is indeed true.
+
+128
+00:08:12,110 --> 00:08:15,280
+So do this for me, and I'll be thrilled.
+
+129
+00:08:16,490 --> 00:08:21,290
+Let's start and
+do it the more complicated way.
+
+130
+00:08:21,290 --> 00:08:28,700
+Let's start with $75,000 and carry it
+forward to which year? Year seven.
+
+131
+00:08:30,350 --> 00:08:31,80
+Can you do that?
+
+132
+00:08:32,130 --> 00:08:36,799
+Let's call that x7.
+
+133
+00:08:39,809 --> 00:08:41,569
+Then from that, what will you subtract?
+
+134
+00:08:43,750 --> 00:08:44,250
+12K.
+
+135
+00:08:45,270 --> 00:08:49,270
+You're left with, net x7.
+
+136
+00:08:50,270 --> 00:08:51,220
+Don't you like that?
+
+137
+00:08:51,220 --> 00:08:51,820
+Net x7.
+
+138
+00:08:53,540 --> 00:08:55,849
+Then what will you do in year eight?
+
+139
+00:08:55,850 --> 00:08:58,930
+You will carry this forward, at 7.5%.
+
+140
+00:08:58,930 --> 00:09:00,319
+To get y7, which is
+
+141
+00:09:02,920 --> 00:09:11,310
+the amount in your bank or your trust fund
+
+142
+00:09:11,310 --> 00:09:17,609
+after you have paid off the first 12k and
+you are left with whatever remains.
+
+143
+00:09:17,610 --> 00:09:19,000
+Then subtract what?
+
+144
+00:09:19,000 --> 00:09:20,15
+Another 12k.
+
+145
+00:09:20,15 --> 00:09:25,766
+Keep going, and in year 10,
+what should we have here?
+
+146
+00:09:25,766 --> 00:09:27,99
+Approximately 101K.
+
+147
+00:09:27,100 --> 00:09:34,410
+And I'm saying approximately,
+because it's slightly less than that.
+
+148
+00:09:35,420 --> 00:09:38,969
+Please do this, and
+the force will be with you.
+
+149
+00:09:38,970 --> 00:09:43,790
+We have done a lot of problems and
+I have done them purposely.
+
+150
+00:09:44,900 --> 00:09:49,770
+Even with my bad handwriting and
+not going to Excel on purpose, so
+
+151
+00:09:49,770 --> 00:09:52,480
+that you understand
+the logic of timelines.
+
+152
+00:09:52,480 --> 00:09:56,90
+But remember,
+go to Excel especially if what's true.
+
+153
+00:09:57,940 --> 00:10:01,100
+You know that your cash flows
+are changing over time.
+
+154
+00:10:01,100 --> 00:10:05,900
+You know you have to use functions
+different than PMT, PV, and so
+
+155
+00:10:05,900 --> 00:10:08,670
+on, for which there are simple formulas.
+
+156
+00:10:08,670 --> 00:10:09,740
+So when will that happen?
+
+157
+00:10:09,740 --> 00:10:11,570
+When the cash flows
+are changing in nature.
+
+158
+00:10:11,570 --> 00:10:15,10
+So for example, the growth intuition,
+if this were happening now.
+
+159
+00:10:15,10 --> 00:10:16,600
+Try this out.
+
+160
+00:10:16,600 --> 00:10:20,460
+Assuming that the 12K is
+increasing over time.
+
+161
+00:10:20,460 --> 00:10:25,450
+It's 12K today and
+it'll increase at say, 3% a year.
+
+162
+00:10:25,450 --> 00:10:28,500
+You'll go back to the first
+application and you can redo it all.
+
+163
+00:10:29,630 --> 00:10:31,620
+May the force be with you.
+
+164
+00:10:31,620 --> 00:10:34,679
+And next time, next module, what we'll do is,
+
+165
+00:10:36,20 --> 00:10:40,630
+a real world application of this,
+and it would be called bonds.
+
+166
+00:10:40,630 --> 00:10:42,380
+But don't worry about the name.
+
+167
+00:10:42,380 --> 00:10:46,689
+Bonds basically is a very
+sophisticated name for loans.
+
+168
+00:10:46,690 --> 00:10:48,336
+And there are all kinds of loans,
+
+169
+00:10:48,336 --> 00:10:52,710
+loans taken by governments,
+loans taken by corporations.
+
+170
+00:10:52,710 --> 00:10:56,580
+We have largely focused on loans
+taken by individuals here.
+
+171
+00:10:56,580 --> 00:10:58,310
+But next time we'll get excited and
+
+172
+00:10:58,310 --> 00:11:02,328
+do more interesting loans
+taken by different entities.
+
+173
+00:11:02,328 --> 00:11:03,654
+See you.
+

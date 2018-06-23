@@ -1,0 +1,605 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/Kt_pVkFPj3c             NghiaNguyen
+
+1
+00:00:00,000 --> 00:00:00,610
+
+2
+00:00:00,610 --> 00:00:04,940
+DR. JONATHAN VALVANO: Tiếp theo, ta sẽ tìm hiểu 
+về việc chuyển ngữ cảnh -- Context Switch
+
+3
+00:00:04,940 --> 00:00:08,340
+Khi trigger xảy ra, và 
+chuyển ngữ cảnh là trình tự
+
+4
+00:00:08,340 --> 00:00:17,980
+chuyển tiếp từ chương trình main vào trong
+
+5
+00:00:17,980 --> 00:00:22,630
+interrupt service routine.
+
+6
+00:00:22,630 --> 00:00:26,820
+Ta đang thực thi ở chỗ này 
+trong chương trình main.
+
+7
+00:00:26,820 --> 00:00:31,110
+Khi trigger xuất hiện, 
+ta sẽ di chuyển vào 
+
+8
+00:00:31,110 --> 00:00:32,782
+vùng interrupt service routine.
+
+9
+00:00:32,782 --> 00:00:34,490
+DR. RAMESH YERRABALLI: 
+Bạn có thể chỉ cho tôi thấy
+
+10
+00:00:34,490 --> 00:00:37,980
+chi tiết của chương trình đang chạy không?
+
+11
+00:00:37,980 --> 00:00:40,320
+Có thể là 1 câu lệnh hoặc
+cái gì đó bị ngắt quãng?
+
+12
+00:00:40,320 --> 00:00:41,444
+DR. JONATHAN VALVANO: Okay.
+
+13
+00:00:41,444 --> 00:00:49,230
+Chương trình main có thể đang 
+đọc và lưu trữ dữ liệu.
+
+14
+00:00:49,230 --> 00:00:57,060
+
+15
+00:00:57,060 --> 00:01:03,630
+Vậy thanh ghi Program Counter  
+chỉ tới câu lệnh mà nó thực thi.
+
+16
+00:01:03,630 --> 00:01:06,790
+DR. RAMESH YERRABALLI: Vậy đây là 
+đoạn code assembly của code C mà 
+
+17
+00:01:06,790 --> 00:01:10,305
+ta đã viết, và là thứ đang 
+được chạy bây giờ?
+
+18
+00:01:10,305 --> 00:01:11,430
+DR. JONATHAN VALVANO: Yeah.
+
+19
+00:01:11,430 --> 00:01:14,230
+Vậy ta đang ở một chỗ nào đó 
+trong chương trình main.
+
+20
+00:01:14,230 --> 00:01:16,580
+Thanh Program Counter 
+trỏ đến nơi mà ta đang ở.
+
+21
+00:01:16,580 --> 00:01:19,600
+Và giờ 1 trigger xảy ra.
+
+22
+00:01:19,600 --> 00:01:23,810
+Điều đầu tiên xảy ra là 
+giả sử độ ưu tiển đủ cao,
+
+23
+00:01:23,810 --> 00:01:26,350
+và nó được kích hoạt, và I bit là 0,
+
+24
+00:01:26,350 --> 00:01:29,360
+giống ta đã làm ở trước, 
+điều đầu tiên sẽ xảy ra là
+
+25
+00:01:29,360 --> 00:01:32,390
+nó sẽ hoàn thành câu lệnh hiện tại.
+
+26
+00:01:32,390 --> 00:01:35,065
+Các câu lênh thường tốn 1 
+khoảng thời gian để thực thi.
+
+27
+00:01:35,065 --> 00:01:38,520
+
+28
+00:01:38,520 --> 00:01:43,730
+Vậy câu lệnh mà ta đang 
+thực thi này sẽ hoàn thành.
+
+29
+00:01:43,730 --> 00:01:50,730
+Điều thứ 2 xảy ra là 
+ta phải tạm dừng.
+
+30
+00:01:50,730 --> 00:01:55,160
+Tạm dừng nghĩa là lưu lại 
+dữ liệu về nơi mà ta đang thực thi.
+
+31
+00:01:55,160 --> 00:01:59,600
+ Và có thể nằm trong bộ nhớ stack.
+
+32
+00:01:59,600 --> 00:02:02,370
+
+33
+00:02:02,370 --> 00:02:07,700
+Và con trỏ stack sẽ trỏ 
+đến đỉnh của stack.
+
+34
+00:02:07,700 --> 00:02:16,890
+Và khi ngắt xảy ra, ta sẽ
+push R0, R1, R2, R3.
+
+35
+00:02:16,890 --> 00:02:23,410
+Push R12, R14 - là thanh ghi liên kết.
+
+36
+00:02:23,410 --> 00:02:27,640
+R15 là thanh ghi Program Counter.
+
+37
+00:02:27,640 --> 00:02:31,560
+Và nó sẽ push thanh ghi Program Status.
+
+38
+00:02:31,560 --> 00:02:35,840
+Vào theo sắp xếp, ta có 
+Program Status ở đây
+
+39
+00:02:35,840 --> 00:02:46,620
+Program Counter, than ghi liên kết,
+R12 và nhiều thanh ghi khác - R3, R2, R1, R0,
+
+40
+00:02:46,620 --> 00:02:51,700
+như là 1 con trỏ stack mới,
+trỏ tới thông tin ở đây,
+
+41
+00:02:51,700 --> 00:02:54,890
+và 8 thanh ghi đã được lưu vào Stack.
+
+42
+00:02:54,890 --> 00:02:57,780
+DR. RAMESH YERRABALLI: vậy tại sao ta chỉ
+lưu chỉ những thanh ghi này?
+
+43
+00:02:57,780 --> 00:03:00,920
+Và những thanh ghi khác 
+thì sao, từ R4 đến R11?
+
+44
+00:03:00,920 --> 00:03:04,639
+
+45
+00:03:04,639 --> 00:03:06,430
+DR. JONATHAN VALVANO: 8 thanh ghi vừa nãy
+
+46
+00:03:06,430 --> 00:03:09,190
+thực tế không lưu trong stack.
+
+47
+00:03:09,190 --> 00:03:15,110
+và khi mà chương trình truy suất
+interrupt service routine,
+
+48
+00:03:15,110 --> 00:03:20,320
+các thanh ghi R4 tới R11 
+không được sử dụng.
+
+49
+00:03:20,320 --> 00:03:23,199
+Các thanh ghi đó không được sử dụng 
+trong interrupt service routine.
+
+50
+00:03:23,199 --> 00:03:25,490
+DR. RAMESH YERRABALLI: Vậy 
+không cần lưu chúng lại.
+
+51
+00:03:25,490 --> 00:03:26,740
+DR. JONATHAN VALVANO: Chính xác.
+
+52
+00:03:26,740 --> 00:03:32,050
+Bước thứ 3 là gán 1 giá trị 
+đặc biệt vào thanh khi Link.
+
+53
+00:03:32,050 --> 00:03:34,606
+Giá trị đặc biệt là 0xFFFFFFF9.
+
+54
+00:03:34,606 --> 00:03:41,120
+
+55
+00:03:41,120 --> 00:03:44,520
+Bạn thông báo rằng thanh ghi Link 
+đang trống, nó chứa giá trị rác.
+
+56
+00:03:44,520 --> 00:03:52,290
+Chuỗi giá trị này nghĩa là tôi đang
+sử dụng interrupt service routine.
+
+57
+00:03:52,290 --> 00:03:56,145
+
+58
+00:03:56,145 --> 00:03:59,270
+DR. RAMESH YERRABALLI: Và ta sẽ thấy
+tại sao giá trị đặc biệt này là bắt buộc
+
+59
+00:03:59,270 --> 00:04:04,030
+khi ta thấy chi tiết của việc làm thế nào
+ta quay trở lại chương trình main 
+
+60
+00:04:04,030 --> 00:04:07,250
+từ 1 ngắt.
+
+61
+00:04:07,250 --> 00:04:09,054
+DR. JONATHAN VALVANO: Chính xác.
+
+62
+00:04:09,054 --> 00:04:15,780
+Thanh ghi IPSR sẽ được gán cho số ngắt.
+
+63
+00:04:15,780 --> 00:04:17,700
+Có hàng trăm ngắt trong hệ thống.
+
+64
+00:04:17,700 --> 00:04:23,150
+Và thanh ghi này sẽ chứa số thứ tự ngắt
+
+65
+00:04:23,150 --> 00:04:28,006
+của thiết bị đang thực thi trong ISR.
+
+66
+00:04:28,006 --> 00:04:31,550
+Và cuối cùng, thanh ghi PC chứa
+
+67
+00:04:31,550 --> 00:04:35,830
+địa chỉ của interrupt service routine.
+
+68
+00:04:35,830 --> 00:04:37,525
+Và cái này gọi là Vector.
+
+69
+00:04:37,525 --> 00:04:40,700
+
+70
+00:04:40,700 --> 00:04:43,110
+DR. RAMESH YERRABALLI: Vậy
+với 5 bước trong quy trình này,
+
+71
+00:04:43,110 --> 00:04:47,610
+ta tạm dừng chương trình hiện tại,
+chính là chương trình main -- 
+
+72
+00:04:47,610 --> 00:04:53,220
+ta gọi là Main Thread -- và ta chuyển tiếp
+
+73
+00:04:53,220 --> 00:04:56,120
+quyền điều khiển cho thread 
+của interrupt service routine.
+
+74
+00:04:56,120 --> 00:04:58,652
+Vậy ta có 2 thread --
+thread main, 
+
+75
+00:04:58,652 --> 00:05:00,360
+và thread interrupt service routine.
+
+76
+00:05:00,360 --> 00:05:04,716
+Và quyền điều khiển bây giờ
+thuộc về interrupt service routine.
+
+77
+00:05:04,716 --> 00:05:06,966
+DR. JONATHAN VALVANO: Có phải 
+bạn muốn thấy việc ta quay trở lại thế nào?
+
+78
+00:05:06,966 --> 00:05:08,132
+DR. RAMESH YERRABALLI: Yeah.
+
+79
+00:05:08,132 --> 00:05:09,390
+Nhìn vào đây.
+
+80
+00:05:09,390 --> 00:05:12,560
+DR. JONATHAN VALVANO: Ngay ở đây, 
+chỗ kết thúc của interrupt service routine
+
+81
+00:05:12,560 --> 00:05:16,050
+là 1 câu lệnh BX LR.
+
+82
+00:05:16,050 --> 00:05:21,570
+Và câu lệnh đó sẽ lấy thanh ghi LINK register
+cho vào thanh ghi program counter.
+
+83
+00:05:21,570 --> 00:05:26,920
+Nhưng bởi vì thanh ghi Link Register
+đang chứa giá trị đặc biệt này,
+
+84
+00:05:26,920 --> 00:05:29,950
+thay vì chứa giá trị của 
+thanh ghi program counter
+
+85
+00:05:29,950 --> 00:05:36,120
+và nhảy tới vùng nhớ ày,
+
+86
+00:05:36,120 --> 00:05:42,840
+Câu lệnh BX LR này sẽ đẩy 8 
+thanh ghi này ra khỏi stack,
+
+87
+00:05:42,840 --> 00:05:46,110
+bao gồm cả Program Counter.
+
+88
+00:05:46,110 --> 00:05:51,670
+Và câu lệnh ở đây cũng giúp ta 
+quay trở về nơi mà ta tạm dừng.
+
+89
+00:05:51,670 --> 00:05:54,070
+DR. RAMESH YERRABALLI:
+Điều này giúp thanh ghi
+
+90
+00:05:54,070 --> 00:05:58,960
+program counter trỏ tới lệnh tiếp theo,
+bởi vì thông tin đó đã đc lưu trên stack.
+
+91
+00:05:58,960 --> 00:06:00,220
+DR. JONATHAN VALVANO: Hoàn hảo.
+
+92
+00:06:00,220 --> 00:06:04,300
+DR. RAMESH YERRABALLI: 
+Ngắt là 1 cơ chế cực mạnh.
+
+93
+00:06:04,300 --> 00:06:09,930
+Nhưng sức mạnh này phần lớn đến từ
+
+94
+00:06:09,930 --> 00:06:12,410
+interrupt service routine,
+
+95
+00:06:12,410 --> 00:06:18,740
+bạn phải cẩn thận và chắc chắn khi làm.
+
+96
+00:06:18,740 --> 00:06:22,570
+DR. JONATHAN VALVANO: 
+Giờ ta sẽ bắt đầu với thực hành.
+
+97
+00:06:22,570 --> 00:06:27,460
+1 trong những điều quan trọng cần làm
+với interrupt service routine là 
+
+98
+00:06:27,460 --> 00:06:28,535
+trả lời.
+
+99
+00:06:28,535 --> 00:06:32,620
+
+100
+00:06:32,620 --> 00:06:37,570
+Trả lời nghĩa là xoá cờ trigger.
+
+101
+00:06:37,570 --> 00:06:42,020
+Ghi nhớ, cờ trigger gây ra ngắt.
+
+102
+00:06:42,020 --> 00:06:48,060
+Và chương trình nên xoá nó.
+
+103
+00:06:48,060 --> 00:06:51,080
+DR. RAMESH YERRABALLI: 
+Nếu không xoá cờ trigger 
+
+104
+00:06:51,080 --> 00:06:56,970
+có thể dẫn tới việc bộ ngắt không hoạt động.
+
+105
+00:06:56,970 --> 00:07:02,010
+Và sau đó, bộ ngắt tiếp tục được gọi liên tục,
+
+106
+00:07:02,010 --> 00:07:04,180
+vậy bạn kẹt trong interrupt service routine.
+
+107
+00:07:04,180 --> 00:07:07,650
+DR. JONATHAN VALVANO:
+Yeah, ta gọi đó là lỗi.
+
+108
+00:07:07,650 --> 00:07:08,400
+Nó không tốt.
+
+109
+00:07:08,400 --> 00:07:11,380
+Vậy ta sẽ trả lời lại.
+
+110
+00:07:11,380 --> 00:07:13,980
+Điều thứ 2 mà ta sẽ làm, nghĩ về,
+
+111
+00:07:13,980 --> 00:07:20,040
+khi ta viết interrupt service routine
+là viết nó thật ngắn gọn.
+
+112
+00:07:20,040 --> 00:07:23,150
+Với 1 interrupt service 
+routine ngắn, ta sẽ
+
+113
+00:07:23,150 --> 00:07:29,940
+đảm bảo rằng tất cả 
+các ngắt sẽ đc phục vụ.
+
+114
+00:07:29,940 --> 00:07:36,450
+
+115
+00:07:36,450 --> 00:07:42,130
+Tốt, trong khi nói về điều ta cần làm,
+hãy thảo luận về điều không được làm.
+
+116
+00:07:42,130 --> 00:07:48,590
+
+117
+00:07:48,590 --> 00:07:56,750
+Tôi nghĩ rằng 1 interrupt service routines 
+hoàn hảo sẽ không có độ trễ trong loop.
+
+118
+00:07:56,750 --> 00:08:01,980
+Điều này nghĩa là tôi không nghĩ rằng
+khi bạn vào 1 interrupt service routines
+
+119
+00:08:01,980 --> 00:08:06,420
+và chờ trong đó, hay lặp,
+nhiều và nhiều hơn.
+
+120
+00:08:06,420 --> 00:08:10,210
+
+121
+00:08:10,210 --> 00:08:15,640
+Điều thứ 2 mà ta phải làm là
+ta truy vấn ngắt có thường xuyên?
+
+122
+00:08:15,640 --> 00:08:19,100
+Tóm gọn lại.
+
+123
+00:08:19,100 --> 00:08:26,990
+Theo nghĩa khác, nếu ngắt 
+xảy ra với chu kì thế này,
+
+124
+00:08:26,990 --> 00:08:34,169
+việc quan trọng cho ta là 
+interrupt service routine
+
+125
+00:08:34,169 --> 00:08:44,930
+không được chiếm tài nguyên 
+lâu hơn giữa 2 ngắt liên tiếp.
+
+126
+00:08:44,930 --> 00:08:53,260
+Vậy lưu ý là chu kì của 
+interrupt service routine
+
+127
+00:08:53,260 --> 00:08:56,380
+là thời gian giữa 2 ngắt liên tiếp.
+
+128
+00:08:56,380 --> 00:08:59,410
+Thời gian này nên dài hơn
+so với thời gian tốn
+
+129
+00:08:59,410 --> 00:09:02,520
+để thực thi interrupt service routine.
+
+130
+00:09:02,520 --> 00:09:08,065
+
+131
+00:09:08,065 --> 00:09:10,690
+DR. RAMESH YERRABALLI: Điều này
+là rõ ràng,bởi vì nếu không, 
+
+132
+00:09:10,690 --> 00:09:14,625
+bạn sẽ có 1 ngắt đang được chờ
+và ngắt này sẽ không bao giờ đc phục vụ.
+
+133
+00:09:14,625 --> 00:09:15,750
+DR. JONATHAN VALVANO: Yeah.
+
+134
+00:09:15,750 --> 00:09:18,580
+Ta thấy trong trường hợp này,
+ta thực sự chiếm lấy ngắt 
+
+135
+00:09:18,580 --> 00:09:21,930
+để làm task này, chương 
+trình này có thể bị hư.
+
+136
+00:09:21,930 --> 00:09:25,040
+để làm task này, chương 
+trình này có thể bị hư.

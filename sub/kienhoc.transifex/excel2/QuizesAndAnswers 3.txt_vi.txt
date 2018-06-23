@@ -1,0 +1,262 @@
+
+Đáp án Tuần 5 
+
+5.1 Giới thiệu Cảm ơn các bạn đã chia sẻ kinh nghiệm với các biểu đồ được thiết kế sơ sài trên diễn đàn thảo luận. 
+
+5.2 Biểu diễn cho tôi các con số 
+
+Đồ thị hay Bảng 
+
+Bạn sẽ dùng loại gì trong tình huống sau đây? 
+
+Ta muốn nêu bật xu hướng số bệnh nhân bị bệnh tiểu đường đang gia tăng ở bệnh viện trong vùng. 
+
+Đồ thị 
+
+Giải thích: Đồ thị biểu diễn xu hướng dựa trên dữ liệu số hiệu quả hơn bảng. 
+
+Ta muốn nhanh chóng tìm ra lượng insulin mà bệnh nhân hiện đang cần dựa trên tiền sử bệnh án, cân nặng, giới tính và tuổi tác của người đó. 
+
+Bảng 
+
+Giải thích: Có quá nhiều yếu tố để thể hiện trên đồ thị và ta muốn tìm một giá trị chính xác. 
+
+5.3 Thiết kế kết cấu của bảng 
+
+Chọn bảng nào đúng 
+
+Ta muốn biết lượng hàng bán được cho mỗi loại và mỗi giới tính theo từng nhãn hàng là bao nhiêu. 
+
+Bảng nào dưới đây làm gần đúng nhất theo quy tắc đã giải thích ở trước? Vấn đề dãn cách cột ở đây một phần là do chủ quan nên bạn không cần để ý đến trong câu hỏi này. 
+
+Bảng 3 
+
+Giải thích: (Xem các bảng ở trang sau) 
+
+- Bảng 1: Cho ba mức dữ liệu vào cùng một bảng một chiều là quá nhiều. - Bảng 2: Lưới đường kẻ trong bảng này quá dày. Các đường kẻ không có ý nghĩa gì đối với kết cấu của bảng. Ngoài ra những ai không tạo ra bảng hay Dataset sẽ không thể hiểu được ý nghĩa của các nhãn dữ liệu chỉ Giới tính. 
+
+- Bảng 3: Bảng này cũng chưa hoàn hảo, nhưng các nhãn dữ liệu rõ ràng hơn nhiều, không cần đến lưới đường kẻ thừa thãi, dãn cách cột cũng vừa đủ rộng để nhận biết giá trị nào nằm ở cột nào. 
+
+Bảng 1 Bảng 2 
+
+  
+
+Bảng 3 
+
+ 
+
+ 
+
+Ta có thể làm gì để cải thiện bảng 3 trong từng thành phần dữ liệu? Chọn tất cả các phương án thích hợp. 
+
+Hình nền 
+
+- ĐÚNG: Xóa tất cả các sắc độ màu hiện tại - SAI: Thêm màu - SAI: Tô mỗi ô một sắc độ màu khác nhau để làm nổi bật giá trị lớn nhất và nhỏ nhất - ĐÚNG: Gia tăng khoảng trắng giữa các dòng - SAI: Xếp các cột gần nhau hơn để dễ so sánh các giá trị hơn - SAI: Mỗi nhãn hàng tô một màu khác nhau để tìm ra các giá trị cụ thể nhanh hơn 
+
+  
+
+Giải thích: 
+
+- Theo quy tắc của Bas, ta nên dùng khoảng trắng thay vì tô hai màu luân phiên để phân biệt từng hàng (và từng cột) với nhau; - Mục đích của bảng là so sánh lượng bán hàng theo loại sản phẩm và theo giới tính. Làm nổi bật giá trị lớn nhất và nhỏ nhất không phải là ý hay vì người dùng bảng này có thể cần mọi thông tin khái quát hoặc cụ thể liên quan đến một mặt hàng; - Tô mỗi nhãn hàng một màu riêng khá hiệu quả trong đồ thị, như bản thân kết cấu của bảng đã nêu rõ giá trị nào nằm ở thành phần dữ liệu nào. Vì vậy, các cột không cần xếp gần nhau, càng dãn cách rộng càng dễ nhìn.  
+
+Dấu phân cách dữ liệu 
+
+- SAI: Sử dụng toàn bộ lưới đường kẻ cho bảng - SAI: Dùng lưới đường kẻ quanh các ô chứa giá trị - ĐÚNG: Thêm đường kẻ để phân biệt phần đầu và chân bảng với thân bảng - SAI: Thêm lưới đường kẻ vào phần đầu bảng - ĐÚNG: Kẻ một đường kẻ mảnh giữa tên các nhãn hàng và các kiểu con của giới tính để thể hiện các cột nào thuộc nhãn hàng nào - SAI: Bao viền cột của từng nhãn hàng 
+
+Giải thích: 
+
+- Dùng lưới đường kẻ toàn bộ (cho phần đầu bảng) hoặc bao quanh từng ô chứa giá trị và bao viền các cột không đem lại ý nghĩa gì cho bảng. - Các đường kẻ phân cách thân bảng với đầu và chân bảng sẽ hình thành kết cấu cho bảng. - Ngoài ra, vì trong các cột chứa nhiều thành phần hoặc thành phần được phân cấp nên thêm một đường kẻ mảnh giữa tên các nhãn hàng và nhãn dữ liệu giới tính sẽ khiến bảng dễ đọc hơn. 
+
+5.4 Những kỹ năng hay nhất trong Thiết kế Bảng 
+
+Cải thiện bảng 
+
+Bảng phía trên thể hiện một số thông tin về các kiểu tàu hỏa đi qua Hà Lan. 
+
+Bảng này có một số vấn đề về việc căn lề và độ chuẩn xác. Dựa trên những quy tắc căn lề và độ chuẩn xác trong video, ta có thể làm gì để cải thiện bảng này?
+
+- SAI: Cột A căn lề phải [văn bản nên căn lề trái] - ĐÚNG: Cột C căn lề trái [như trên] - SAI: Cột C căn giữa [như trên] - ĐÚNG: Giảm độ chuẩn xác ở cột D (cho ít số thập phân hơn) [các số được tạo ra chỉ có thể là các số nguyên] - SAI: Cột E căn lề phải [văn bản nên căn lề trái] - ĐÚNG: Cột F căn lề phải [giá trị chữ số nên căn lề phải] - SAI: Cột G căn lề trái [như trên] - ĐÚNG: Tăng độ chuẩn xác ở cột H [không cần thêm mức độ chuẩn xác để chỉ ra sự khác nhau] - SAI: Giảm độ chuẩn xác ở cột H [sự khác biệt giữa các giá trị thập phân không mang ý nghĩa so sánh với các giá trị trong cột]  - SAI: Cột I căn giữa [giá trị chữ số nên căn lề phải] 
+
+Định dạng chữ số tùy chỉnh 
+
+Áp dụng quy tắc định dạng chữ số tùy chỉnh vào các ô trong bảng tính trong video này (liên kết ở trên video): #,##0.0;#,##0_0 
+
+Quy tắc này tác động thế nào đến cách biểu diễn giá trị? 
+
+Giá trị âm nhìn như các giá trị dương. 
+
+Giải thích: Phần đầu của biểu diễn (#,##0.0) thể hiện định dạng chữ số có giá trị dương. Các dấu # làm hiện các dấu ngăn cách phần nghìn lên. 0.0 nghĩa là luôn hiện một chữ số sau dấu ngăn cách thập phân. Phần thứ hai của biểu diễn (#,##0_0) thể hiện định dạng chữ số có giá trị âm. Nó chỉ khác với định dạng số dương ở phần cuối: _0 thay vì .0. Vậy sau dấu ngăn cách thập phân sẽ không hiện chữ số nào. Như Bas đã giải thích, dấu _ khiến Excel chừa ra khoảng cách cho ký tự theo sau nó, nhưng nó không hiện ký tự ấy ra. Việc các số âm nhìn giống các số dương là vì không có dấu - hay dấu ( ) để thể hiện các số âm. Giá trị âm và giá trị dương không được căn thẳng hàng, vì không có khoảng cách chừa ra cho dấu ngăn cách thập phân khi thể hiện giá trị âm. 
+
+5.5 Thiết kế đồ thị: Các loại biểu đồ 
+
+Chọn biểu đồ 
+
+Ta muốn nhanh chóng nhìn ra nhãn hiệu nào bán được nhiều mặt hàng nhất. Chọn biểu đồ phù hợp nhất cho mục đích này. 
+
+Biểu đồ 2 
+
+Giải thích: Như Bas đã giải thích, biểu đồ tròn (biểu đồ 1) được khuyến khích không nên dùng. Biểu đồ chồng dữ liệu 100% (biểu đồ 3) khiến ta không thể so sánh các giá trị. Biểu đồ 4 tức là biểu đồ cột nhìn có vẻ rõ ràng, nhưng nó không cho phép ta nhìn ra nhanh đâu là nhãn hiệu bán được nhiều mặt hàng nhất vì các dữ liệu bị chia tách theo giới tính. 
+
+Biểu đồ 1: Biểu đồ 2:  
+
+Biểu đồ 3: Biểu đồ 4: 
+
+Giả sử bạn là nhân viên của Nike. Bạn đang sử dụng biểu đồ sau để giúp nhân viên bán hàng biết được rằng lượng hàng bán ra hiện tại đang cao của Adidas. Tuy nhiên, bạn đang bán ít hơn Asics và bạn muốn gây dựng chiến lược để là nhãn hàng bán chạy số một. 
+
+Cải thiện biểu đồ 
+
+Trong hoàn cảnh vừa được miêu tả, làm thế nào để cải thiện biểu đồ này* hơn nữa? (* biểu đồ 2 trong câu hỏi trước) 
+
+- ĐÚNG: Xóa các nút bấm [chúng chỉ có mục đích thay đổi thông tin biểu đồ trong Excel] - SAI: Mỗi nhãn hàng dùng một màu khác nhau [kết cấu của biểu đồ đã phân riêng các nhãn hàng ra rồi] - ĐÚNG: Xóa các số ở dưới vì bạn không quan tâm đến lượng hàng bán ra chính xác - ĐÚNG: Xóa cột chú thích [không có nhiều chuỗi dữ liệu nên không cần cột chú thích] - SAI: Chi tiết hóa cột chú thích [như trên] - ĐÚNG: Xóa các nhãn hiệu "trống" [sót lại từ công cụ PivotTable và không có ý nghĩa gì cả] - SAI: Dùng một font chữ nghệ thuật hơn - SAI: Thêm các nhãn hàng bán ít hơn Adidas [mục đích của bạn là so sánh với Asics để tìm ra chiến lược trở thành nhãn hàng bán chạy nhất, thêm các nhãn hàng nhỏ hơn vào không giúp truyền đạt thông điệp này]  
+
+Cải thiện tiêu đề biểu đồ 
+
+Tiêu đề của Biểu đồ 2 có thể cải thiện như thế nào? 
+
+Đổi tiêu đề thành: "Nike bán chạy thứ hai" 
+
+Giải thích: Tiêu đề này tóm lược thông điệp ta muốn truyền tải trong biểu đồ hiệu quả nhất 
+
+"Nike bán chạy hơn Adidas" không đưa ta đến mục đích là soán ngôn Asics. Đặt tiêu đề là "Adidas bán được 200 mặt hàng" không liên quan đến vị trí của chúng ta.  
+
+5.6 Các kỹ năng hay nhất trong Thiết kế Đồ thị 
+
+Chọn biểu đồ 
+
+Ta đang xem xét số lượng thành viên mới đăng ký tập gym hàng tháng trong năm 2015 
+
+Biểu đồ nào thể hiện xu hướng này dựa trên 12 điểm dữ liệu trên một chuỗi thời gian hiệu quả nhất? 
+
+Biểu đồ 1 
+
+Giải thích: (Xem các biểu đồ ở trang sau) 
+
+Trong biểu đồ 1 ta có thể nhìn ra xu hướng rất rõ ràng. Vì có đến hơn 5 thành phần dữ liệu (trong trường hợp này thành phần là các tháng) nên dùng biểu đồ đường sẽ tiện hơn biểu đồ cột, như biểu đồ 4. Ngoài ra, biểu đồ 4 lại có hiệu ứng 3D không cần thiết. Biểu đồ 2 thể hiện chuỗi thời gian (tháng) trên trục tung. Như đã giải thích, ta nên biểu diễn chuỗi thời gian trên trục hoành. Biểu đồ 3 có rất nhiều vấn đề: Không có đủ các tháng và khó nhìn ra xu hướng từ cách trình bày này. Ngoài ra, tỉ lệ dữ liệu-mực in rất thấp vì toàn bộ lưới đường kẻ và độ rộng của trục hoành không được sử dụng để thể hiện dữ liệu. 
+
+  
+
+Biểu đồ 1 Biểu đồ 2 
+
+   
+
+Biểu đồ 3 Biểu đồ 4 
+
+   
+
+ 
+
+5.7 Bài tập Bài tập kết thúc tuần này không có tài liệu được phân loại. 
+
+Ta muốn so sánh lượng bán hàng của Giày, Quần dài và Tất theo từng nhãn hàng. Dùng biểu đồ cột và áp dụng các nguyên lý mà Bas đã giải thích. Hãy chia sẻ biểu đồ đẹp đẽ của bạn trên trang diễn đàn My Beautiful Chart. Hãy đưa ra giải thích nếu bạn chọn thiết kế theo những kiểu nhất định. 
+
+Cảm ơn đã đăng rất nhiều biểu đồ lên My Beautiful Chart Trang diễn đàn My Beautiful Chart  
+
+Một số bình luận khái quát về các biểu đồ được đăng lên diễn đàn: 
+
+- Chỉ có một vài biểu đồ là có tiêu đề mang tính miêu tả. Nhớ rằng tiêu đề như "Lượng bán hàng theo Nhãn hàng" không tóm lược được thông điệp bạn muốn truyền tải. Một số tiêu đề hay hơn là "Asics không có đối thủ trong kinh doanh quần dài" và "Adidas là nhãn hàng bán giày chạy nhất"; - Chúng tôi thấy có vài biểu đồ xắp xếp các thành phần dữ liệu theo kiểu phân cấp trên trục hoành nhưng lại không được phân biệt bằng màu sắc. Việc này khiến ta khó so sánh các giá trị của một mặt hàng trong thành phần X với mặt hàng tương ứng của thành phần Y, ví dụ so sánh giày nữ của Nike với giày nữ của Asics. 
+
+
+
+Đáp án Tuần 6 - Thiết kế Dashboard 
+
+6.1 Giới thiệu Mục này không có tài liệu được phân loại. 
+
+6.2 Tổng quan về Dashboard 
+
+Bas sẽ làm gì? Bas đã đưa ra những bí quyết gì trong bài giảng cuối cùng? Bạn phải cân nhắc loại phương tiện (giấy in, màn hình (kích cỡ), v..v) dùng cho dashboard sau cùng. 
+
+6.3 Biểu đồ thanh 
+
+Theo Bas, mọi biểu đồ hay bảng trong dashboard cần có một trang làm việc riêng. 
+
+6.4 Biểu đồ cột 
+
+Tạo dựng biểu đồ Nếu bạn chú ý đến phần tạo biểu đồ mẫu của Bas trong video, bạn có thể nhận thấy anh ấy đã vi phạm một quy tắc quan trọng đã giải thích ở tuần 5. Bas đã vi phạm quy tắc nào? 
+
+Trục tung nên bắt đầu từ 0. Giải thích: Như Bas đã chỉ ra ở tuần 5, nếu không bắt đầu trục tung từ 0 thì xu hướng sẽ bị phóng đại và khiến người đọc hiểu sai. 
+
+Hãy sử dụng biểu đồ phân tán khi bạn muốn giải thích mối quan hệ giữa các biến số. 
+
+6.5 Loại biểu đồ hỗn hợp Mục này không chứa tài liệu được phân loại.   
+
+6.6 Biểu đồ nhiệt kế 
+
+Tăng chiều rộng của cột Trong ảnh chụp màn hình phía trên bạn có thể thấy ô Format Chart Area. Ta nên thay đổi gì ở biểu đồ này để khiến các cột rộng hơn? Giảm phần trăm ở "Gap Width". 
+
+6.7 Biểu đồ nhiệt kế nằm ngang 
+
+Nên sử dụng biểu đồ nhiệt kế khi bạn muốn so sánh các biến số tương đương. 
+
+6.8 Bảng Lãi & lỗ 
+
+Tranh liên kết Khi bạn dán một tranh liên kết bạn có thể (chọn tất cả các phương án phù hợp): - ĐÚNG: thay đổi dữ liệu gốc là tranh liên kết cũng cập nhật luôn - ĐÚNG: quay bảng như quay một bức tranh [Tranh liên kết có các option giống với tranh bình thường] - SAI: lọc dữ liệu trong tranh liên kết mà xuất hiện ở dữ liệu gốc [Ta không thể thay đổi nội dung trong tranh liên kết. Mọi thay đổi về nội dung được thực hiện ở dữ liệu gốc] - SAI: phiên bản được dán hoạt động độc lập với dữ liệu gốc [Nội dung của tranh liên kết phụ thuộc vào dữ liệu gốc] - ĐÚNG: thay đổi định dạng dữ liệu gốc là tranh liên kết cũng cập nhật luôn [Bên cạnh nội dung, các định dạng cũng được liên kết] - SAI: thay đổi dữ liệu được dán là dữ liệu gốc cũng cập nhật luôn  [Nội dung của tranh liên kết không thể chỉnh sửa được] 
+
+6.9 Biểu đồ thu nhỏ Mục này không chứa tài liệu được phân loại.. Cảm ơn đã gửi trang tính của bạn. 
+
+6.10 NỘI DUNG THÊM: Slicer Mục này không chứa tài liệu được phân loại. 
+
+6.11 NỘI DUNG THÊM: Tự động tải lại Mục này không chứa tài liệu được phân loại.   
+
+6.12 Bài tập Cảm ơn bạn đã chia sẻ Dashboard đã hoàn thiện của mình và đóng góp vào nghiên cứu của SpreadsheetLab! Chúng tôi đã xem nhiều Dashboard rất đẹp trên trang diễn đàn My Functional Dashboard. Một vài Dashboard đã được phản hồi cụ thể bởi cộng đồng TA và nhân viên của khóa học. Một số phản hồi khái quát của Bas: 
+
+ 
+
+Lỗi thường gặp nhất chúng tôi thấy ở bài tập cuối khóa này là các biểu đồ có trục tung không bắt đầu từ số 0. Gần như không bao giờ nên làm việc này. Bạn đang thao túng dữ liệu và phóng đại mức độ biến đổi trong biểu đồ. 
+
+ 
+
+Chú ý định dạng số trên các trục. Trong ví dụ này nên để là 53% thay vì 0.53. 
+
+ 
+
+1) Căn lề văn bản từ trái sang phải bất cứ khi nào có thể. Tôi thích biểu đồ bên phải hơn. 2) Tránh để văn bản nằm chéo. Trong trường hợp này, nhãn dữ liệu vừa khít nhưng vẫn khó đọc. 
+
+3) Mắc lỗi tương tự. Nhãn dữ liệu trên trục hoành thì vừa nhưng không ai đọc được cả. ↓ Khi nhãn dữ liệu dài thì nên dùng biểu đồ thanh chứ đừng dùng biểu đồ cột. 
+
+1) 2) 3) 
+
+   
+
+ 
+
+Tôi đồng ý là "càng súc tích càng tốt", nhưng biểu đồ vẫn cần một vài thông tin. Trong trường hợp này, cả hai trục và nhãn dữ liệu đều không có, hơn nữa trục tung không nhìn thấy kia cũng không bắt đầu từ 0. Biểu đồ thể hiện sự biến đổi lớn trong lượng đơn đặt hàng trung bình mỗi ngày, trong khi thực tế lượng đơn đặt hàng khá ổn định. 
+
+ 
+
+Tôi không thích dùng nhãn dữ liệu. Theo tôi chúng khiến biểu đồ bị phân cụm. Ta có thể giải quyết việc này bằng cách sử dụng trục tung và nếu cần thiết thì dùng lưới đường kẻ. 
+
+ 
+
+↘ Chú ý khoảng trắng giữa các cột. Tôi nghĩ biểu đồ bên phải dễ nhìn hơn. 
+
+ 
+
+ 
+
+ 
+
+Biểu đồ Dashboard mới Sử dụng dashboard đã hoàn thiện của các bạn để trả lời những câu hỏi dưới đây: 
+
+1. Hệ số biên lợi nhuận gộp % trên 50 
+
+2. Nhóm mặt hàng nào bán chạy nhất? Phô mai 
+
+3. Lượng đơn đặt hàng trung bình một ngày là: Trêm 25 
+
+ 
+
+ 
+
+CÂU HỎI 1 
+
+ 
+
+CÂU HỎI 2 
+
+ 
+
+CÂU HỎI 3 
+
+ 
+
+File excel chứa bảng dashboard mẫu đã hoàn thiện hiện đã có trên mục Đáp án của tuần này trên edX. 

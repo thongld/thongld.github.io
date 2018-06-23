@@ -1,0 +1,368 @@
+1
+00:00:04,600 --> 00:00:08,600
+https://youtu.be/TigbnH07Zkk
+Welcome back. What I'm going to do now is
+I'm going
+
+2
+00:00:08,600 --> 00:00:12,730
+to show you the real power of compounding.
+We did ten periods. That is ok. Let me
+
+3
+00:00:12,730 --> 00:00:17,500
+show you the real power of compounding.
+So, the question here is, and please write it
+
+4
+00:00:17,500 --> 00:00:18,690
+out,
+
+5
+00:00:18,690 --> 00:00:24,970
+what are the Future Values of investing
+1000 dollars at 5 percent versus
+
+6
+00:00:24,970 --> 00:00:31,460
+15% for 90 years. Why am I asking this question? There's an
+interesting background. Turns out that
+
+7
+00:00:31,460 --> 00:00:38,160
+data on US stock markets became really
+available, very reliable data starting in
+
+8
+00:00:38,160 --> 00:00:39,110
+about,
+
+9
+00:00:39,110 --> 00:00:44,239
+beginning of 1926, and my alma mater,
+University of Chicago was very deeply
+
+10
+00:00:44,239 --> 00:00:50,430
+involved in creating one of the most used
+data sets. So, it started... So, 90 years have
+
+11
+00:00:50,430 --> 00:00:55,300
+passed. So, the interesting question people
+always wonder about is, what would have
+
+12
+00:00:55,300 --> 00:00:59,530
+happened if I had invested in a low
+risk? I told I'll talk about risk and
+
+13
+00:00:59,530 --> 00:01:04,339
+personal investing throughout this class.
+Suppose you had put your 1000 bucks, your
+
+14
+00:01:04,339 --> 00:01:10,940
+great grandparents or grandparents had
+put away for you, in a relatively low risk
+
+15
+00:01:10,940 --> 00:01:15,860
+investment, like buying a government bond,
+which government bond is where they take
+
+16
+00:01:15,860 --> 00:01:20,420
+a loan, and we'll talk about this later in
+the class. On the other hand, suppose they
+
+17
+00:01:20,420 --> 00:01:27,259
+had invested in stocks and that too,
+invested in companies and that too, more
+
+18
+00:01:27,259 --> 00:01:35,49
+risky companies. Turns out, this is kind
+of approximately what rate of return you
+
+19
+00:01:35,49 --> 00:01:39,789
+could have made over the last 90 years
+in the US context, right? So, that's why I'm
+
+20
+00:01:39,789 --> 00:01:45,479
+throwing out these numbers, and when I throw these
+numbers out and you do it, it's pretty
+
+21
+00:01:45,479 --> 00:01:52,469
+shocking what you get. So, use Excel and I
+will stay with you and do it. What is the
+
+22
+00:01:52,469 --> 00:02:02,219
+Future Value of a $1000 at 5 percent or a
+$1000 at 15%? And, after how many years? 90
+
+23
+00:02:02,219 --> 00:02:07,839
+years. So, what I'm going to do is, instead of go back
+and forth with Excel, I'm going to use a
+
+24
+00:02:07,840 --> 00:02:14,69
+pen to write out what you should write
+in a cell. So, pick the first cell.
+
+25
+00:02:14,69 --> 00:02:20,720
+call it A1 and go up to the function
+area, which like I showed you, and write
+
+26
+00:02:20,720 --> 00:02:21,220
+this.
+
+27
+00:02:21,220 --> 00:02:26,880
+So here you go. So, you put ¨=¨ sign in the
+function thing ,and then what did I tell
+
+28
+00:02:26,880 --> 00:02:35,470
+you? Write "FV" And, let's do it at 5
+percent. Do this with me, with an Excel
+
+29
+00:02:35,470 --> 00:02:41,50
+open. Then, write how much? The first is
+the rate of return, and what is the rate
+
+30
+00:02:41,50 --> 00:02:47,940
+of return? The first option we have is
+0.05. Please remember you have to
+
+31
+00:02:47,940 --> 00:02:54,320
+be very careful entering the rate of return. It should be 0.05, not 5. Not in
+
+32
+00:02:54,320 --> 00:03:00,920
+percentage terms. Okay? I know we write it in
+percentage terms, but what I'm saying in
+
+33
+00:03:00,920 --> 00:03:08,920
+reality, you want to write 0.05. How many periods? Well, I picked 90 because now is
+
+34
+00:03:08,920 --> 00:03:17,350
+2015, about 90 years have passed.
+Right? 90, then what was PMT? PMT
+
+35
+00:03:17,350 --> 00:03:21,799
+remember is...something that you're getting
+every year, but right now we're only
+
+36
+00:03:21,800 --> 00:03:27,670
+getting what? Putting money today, and
+figuring its Future Value. So, the PMT will
+
+37
+00:03:27,670 --> 00:03:32,988
+be 0. Apologize for that we come to PMT in a minute. And then, PV is how
+
+38
+00:03:32,989 --> 00:03:40,959
+much? A thousand. You don't need to write
+signs, dollars, or stuff like that. So,
+
+39
+00:03:40,959 --> 00:03:47,959
+no percentages, no signs of dollars
+and so on, and then, press return. I will
+
+40
+00:03:47,959 --> 00:03:52,590
+write what you should get, and I'm going
+to cheat a little bit. I've done it
+
+41
+00:03:52,590 --> 00:04:00,840
+already. So, I'll write out the number.
+It's 80730 dollars
+
+42
+00:04:00,840 --> 00:04:09,989
+and I'm going to be
+painful, 37 cents. So, if you put a thousand
+
+43
+00:04:09,989 --> 00:04:14,900
+bucks in, somebody on your behalf put a
+thousand bucks, 90 years ago at a 5%
+
+44
+00:04:14,900 --> 00:04:22,300
+interest rate, how much would you have? You should
+get about 80730. This is a fair
+
+45
+00:04:22,300 --> 00:04:27,970
+amount of money, right? Suppose instead, you 
+had invested in a less risky thing, which
+
+46
+00:04:27,970 --> 00:04:32,400
+number would have changed in this whole
+setup? Only one number, and that's the beauty of
+
+47
+00:04:32,400 --> 00:04:34,90
+Excel, you go back and change that
+
+48
+00:04:34,90 --> 00:04:40,10
+one number, and that one number is 0.05, you can change it. But, let's go up instead of going down.
+
+49
+00:04:40,10 --> 00:04:45,780
+So now, I'm doing the second part of the
+question which will be mind-boggling for
+
+50
+00:04:45,780 --> 00:04:53,760
+you. What is the future value instead of
+5%, a relatively low-risk investment not
+
+51
+00:04:53,760 --> 00:05:01,130
+zero risk, but as opposed to that, we are
+investing in stocks of small companies?
+
+52
+00:05:01,130 --> 00:05:05,20
+Or smallish companies which tend to
+have a high risk and high, higher
+
+53
+00:05:05,20 --> 00:05:09,900
+expected return, and these are by the way
+approximately ballpark numbers in the
+
+54
+00:05:09,900 --> 00:05:14,929
+US experience. So, the only number you
+really need to change but I'll write it
+
+55
+00:05:14,930 --> 00:05:21,410
+out is the 0.05. I hope you're
+doing this with me, otherwise I'll get upset.
+
+56
+00:05:21,410 --> 00:05:28,610
+And, you know somehow I'll know, regardless
+of where you are, okay? So, you do this, the only
+
+57
+00:05:28,610 --> 00:05:34,919
+number that has changed is which one? But now
+when you press Enter,
+
+58
+00:05:34,919 --> 00:05:39,400
+it will blow your mind because I'm going to
+write only the approximate number
+
+59
+00:05:39,400 --> 00:05:56,810
+without decimals, it´s 290272 and 325. It is 0.21 after that, but see
+
+60
+00:05:56,810 --> 00:06:04,360
+what happens? Doesn't that kind of
+make you pause? If somebody had put 1000 dollars
+
+61
+00:06:04,360 --> 00:06:15,280
+in a small portfolio of stocks, you could, I mean
+technically, this is just after the fact.
+
+62
+00:06:15,280 --> 00:06:19,840
+But, you could have 290 Million dollars in the bank.
+
+63
+00:06:19,840 --> 00:06:25,840
+Look at my face. I mean it's like orders of magnitude.
+So, the interest rate is only three
+
+64
+00:06:25,840 --> 00:06:30,270
+times larger, but look at the amount of
+money. So, what does this tell you? That
+
+65
+00:06:30,270 --> 00:06:35,490
+Future Value and compounding are very
+powerful. It'll work in reverse
+
+66
+00:06:35,490 --> 00:06:36,639
+when you are doing
+
+67
+00:06:36,639 --> 00:06:37,830
+Present Value and we´ll
+
+68
+00:06:37,830 --> 00:06:41,550
+do that. But, I want you to think about it,
+stare at it, and tell me, what are the
+
+69
+00:06:41,550 --> 00:06:47,70
+two things that are driving this number
+to be phenomenally high? The first thing
+
+70
+00:06:47,70 --> 00:06:53,310
+obviously is the Time Value of Money,
+which is 15%. In fact, the 5% was pretty
+
+71
+00:06:53,310 --> 00:07:00,350
+high already. But, the other thing which
+is acting like interest and helping
+
+72
+00:07:00,350 --> 00:07:05,220
+compounding is the number of periods.
+Here, we have had how many years? Not one, not two
+
+73
+00:07:05,220 --> 00:07:12,310
+not ten, but ninety. And, it is the
+combination of the two, that creates
+
+74
+00:07:12,310 --> 00:07:19,230
+huge amount of effects of compounding.
+Stare at this. It's just mind-boggling. As I
+
+75
+00:07:19,230 --> 00:07:22,70
+said even Einstein said, "Man, I don't know
+what's going on."
+
+76
+00:07:22,70 --> 00:07:23,90
+See you soon.
+

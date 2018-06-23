@@ -1,0 +1,980 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/HM3CxufYOFA
+
+1
+00:00:00,499 --> 00:00:02,590
+So let's talk about how we handle uncertainty.
+
+2
+00:00:02,590 --> 00:00:05,030
+Because there's a lot of uncertainty in supply chains.
+
+3
+00:00:05,030 --> 00:00:07,890
+There's a lot of variability in demand.
+
+4
+00:00:07,890 --> 00:00:10,620
+There's a lot of variability in the lead time or transit time.
+
+5
+00:00:10,620 --> 00:00:13,900
+There's a lot of variability in manufacturing or processing
+
+6
+00:00:13,900 --> 00:00:15,380
+yields as well as time.
+
+7
+00:00:15,380 --> 00:00:19,710
+So there's uncertainty and variability all over the place.
+
+8
+00:00:19,710 --> 00:00:23,250
+So because it occurs in all aspects of the supply chain,
+
+9
+00:00:23,250 --> 00:00:26,794
+we can't just manage or plan to the average or the mean.
+
+10
+00:00:26,794 --> 00:00:28,210
+That's not going to be sufficient.
+
+11
+00:00:28,210 --> 00:00:32,110
+So what we want to do is understand how that varies.
+
+12
+00:00:32,110 --> 00:00:34,530
+How does the demand distribution look?
+
+13
+00:00:34,530 --> 00:00:37,010
+How does the distribution lead time look?
+
+14
+00:00:37,010 --> 00:00:40,730
+We're going to use three families of distributions,
+
+15
+00:00:40,730 --> 00:00:42,560
+generally, throughout this course.
+
+16
+00:00:42,560 --> 00:00:45,330
+The first one is our old friend, the Normal Distribution,
+
+17
+00:00:45,330 --> 00:00:46,800
+we'll use a lot.
+
+18
+00:00:46,800 --> 00:00:49,200
+We'll explain why a little later for each of the cases
+
+19
+00:00:49,200 --> 00:00:50,350
+where we use it.
+
+20
+00:00:50,350 --> 00:00:52,080
+But we should be very familiar with this.
+
+21
+00:00:52,080 --> 00:00:54,700
+It's the symmetric bell-shaped curve
+
+22
+00:00:54,700 --> 00:00:58,640
+where you've got two parameters, mu which is the average,
+
+23
+00:00:58,640 --> 00:01:01,120
+and the sigma which is the standard deviation.
+
+24
+00:01:01,120 --> 00:01:04,569
+So I'll say that I'm normally distributed with a mean of mu
+
+25
+00:01:04,569 --> 00:01:06,580
+and the standard deviation of sigma.
+
+26
+00:01:06,580 --> 00:01:08,210
+This is for a continuous variable
+
+27
+00:01:08,210 --> 00:01:10,840
+that goes from negative infinity to positive infinity.
+
+28
+00:01:10,840 --> 00:01:12,160
+And it's symmetric.
+
+29
+00:01:12,160 --> 00:01:15,750
+It's symmetric around the mean.
+
+30
+00:01:15,750 --> 00:01:20,120
+So that means that there's an even amount on the right side
+
+31
+00:01:20,120 --> 00:01:21,490
+as the left side.
+
+32
+00:01:21,490 --> 00:01:24,480
+The mean, the median, and the mode are all the same value.
+
+33
+00:01:24,480 --> 00:01:26,090
+And this is most commonly used.
+
+34
+00:01:26,090 --> 00:01:30,440
+Whether that's good or bad, we'll talk more about that.
+
+35
+00:01:30,440 --> 00:01:32,620
+Then there's the Log-normal distribution.
+
+36
+00:01:32,620 --> 00:01:37,320
+A little more interesting in that it's skewed right
+
+37
+00:01:37,320 --> 00:01:40,830
+and that the mean and the median are not the same.
+
+38
+00:01:40,830 --> 00:01:43,850
+There's this long tail over here on the right.
+
+39
+00:01:43,850 --> 00:01:46,860
+So it's continuous greater than 0.
+
+40
+00:01:46,860 --> 00:01:50,230
+So that's one real strong attribute
+
+41
+00:01:50,230 --> 00:01:52,110
+of the Log-normal distribution is that you
+
+42
+00:01:52,110 --> 00:01:54,540
+can't have negative values.
+
+43
+00:01:54,540 --> 00:01:56,380
+It's less commonly used.
+
+44
+00:01:56,380 --> 00:01:58,685
+We will start using it later on in the course when
+
+45
+00:01:58,685 --> 00:02:00,470
+we talk about transportation.
+
+46
+00:02:00,470 --> 00:02:02,710
+Because transportation, as anyone
+
+47
+00:02:02,710 --> 00:02:05,337
+who's waited for a plane or a bus knows,
+
+48
+00:02:05,337 --> 00:02:07,170
+you might have this average but you can have
+
+49
+00:02:07,170 --> 00:02:09,449
+some really long wait times.
+
+50
+00:02:09,449 --> 00:02:12,200
+So you get this log-normal distribution.
+
+51
+00:02:12,200 --> 00:02:14,904
+So we'll talk more about this a little later.
+
+52
+00:02:14,904 --> 00:02:16,820
+Then the third distribution we're going to use
+
+53
+00:02:16,820 --> 00:02:18,630
+is the Poisson Distribution.
+
+54
+00:02:18,630 --> 00:02:21,780
+And this has a single parameter, lambda.
+
+55
+00:02:21,780 --> 00:02:25,410
+We'll say things are distributed Poisson with a lambda.
+
+56
+00:02:25,410 --> 00:02:28,730
+The lambda is actually the mean and the variance.
+
+57
+00:02:28,730 --> 00:02:30,070
+And this is discrete.
+
+58
+00:02:30,070 --> 00:02:31,440
+That's why we use it.
+
+59
+00:02:31,440 --> 00:02:33,030
+That's one great benefit of it is
+
+60
+00:02:33,030 --> 00:02:35,170
+that it's a discrete distribution as opposed
+
+61
+00:02:35,170 --> 00:02:36,430
+to continuous.
+
+62
+00:02:36,430 --> 00:02:41,040
+It's also only positive numbers or non-zero, non-negative
+
+63
+00:02:41,040 --> 00:02:41,980
+numbers, rather.
+
+64
+00:02:41,980 --> 00:02:43,600
+So it's greater than equal to 0.
+
+65
+00:02:43,600 --> 00:02:46,520
+That's great for items with low values.
+
+66
+00:02:46,520 --> 00:02:50,940
+So if I have demand of 1.6 items per week, then
+
+67
+00:02:50,940 --> 00:02:52,940
+maybe it matters.
+
+68
+00:02:52,940 --> 00:02:54,315
+And I have low values there, then
+
+69
+00:02:54,315 --> 00:02:56,310
+I want to have a discrete distribution.
+
+70
+00:02:56,310 --> 00:02:59,660
+So we're going to spend most of our time with the Normal
+
+71
+00:02:59,660 --> 00:03:00,844
+and with the Poisson.
+
+72
+00:03:00,844 --> 00:03:02,760
+And later on we'll spend time with Log-normal.
+
+73
+00:03:02,760 --> 00:03:06,220
+But let's talk about the normal and the Poisson next.
+
+74
+00:03:06,220 --> 00:03:09,010
+So the Normal distribution looks something like this.
+
+75
+00:03:09,010 --> 00:03:12,700
+This is the PDF up here in the top right corner.
+
+76
+00:03:12,700 --> 00:03:14,230
+You see it charted here.
+
+77
+00:03:14,230 --> 00:03:16,150
+The mean is this mu.
+
+78
+00:03:16,150 --> 00:03:19,220
+So you see it's symmetric around the mean.
+
+79
+00:03:19,220 --> 00:03:24,760
+The horizontal axis here is the random variable x or x0.
+
+80
+00:03:24,760 --> 00:03:27,460
+And the vertical axis is the probability.
+
+81
+00:03:27,460 --> 00:03:30,890
+That's the fx(x0), the PDF.
+
+82
+00:03:30,890 --> 00:03:32,800
+So again, we said it's distributed normally
+
+83
+00:03:32,800 --> 00:03:35,970
+with a mean of mu and a standard deviation of sigma.
+
+84
+00:03:35,970 --> 00:03:39,460
+So if I pick a point, let's say this value of x,
+
+85
+00:03:39,460 --> 00:03:42,020
+and it's going to be equal to the mu, the average,
+
+86
+00:03:42,020 --> 00:03:45,060
+plus a certain number of standard deviations
+
+87
+00:03:45,060 --> 00:03:48,940
+over to the right, that's k times sigma x.
+
+88
+00:03:48,940 --> 00:03:51,510
+So let's say I pick this point.
+
+89
+00:03:51,510 --> 00:03:55,650
+Then by doing that, I can find two probabilities.
+
+90
+00:03:55,650 --> 00:03:57,650
+The area under the curve to the left
+
+91
+00:03:57,650 --> 00:04:00,980
+of that that's highlighted in that blue hash mark, that's
+
+92
+00:04:00,980 --> 00:04:04,280
+the probability that the random variable x is
+
+93
+00:04:04,280 --> 00:04:08,210
+going to be less than this value, which is mu plus k sigma
+
+94
+00:04:08,210 --> 00:04:09,420
+x.
+
+95
+00:04:09,420 --> 00:04:12,310
+The area under the curve to the right, that's
+
+96
+00:04:12,310 --> 00:04:15,310
+highlighted in red, this is equal to the probability
+
+97
+00:04:15,310 --> 00:04:20,519
+of x is going to be greater than that value, mu plus k sigma x.
+
+98
+00:04:20,519 --> 00:04:22,380
+You can see just by looking at it,
+
+99
+00:04:22,380 --> 00:04:24,670
+the total probability has to be equal to 1.
+
+100
+00:04:24,670 --> 00:04:28,170
+So the area in the red is equal to 1 minus the area
+
+101
+00:04:28,170 --> 00:04:29,650
+in the blue and vice versa.
+
+102
+00:04:29,650 --> 00:04:31,860
+Because they have to add up to 1.
+
+103
+00:04:31,860 --> 00:04:33,550
+This will become critical when we
+
+104
+00:04:33,550 --> 00:04:35,960
+start talking about demand distributions, when
+
+105
+00:04:35,960 --> 00:04:39,220
+we want to know, how big do I make this value
+
+106
+00:04:39,220 --> 00:04:43,140
+to guarantee that, 90% of the time, my demand
+
+107
+00:04:43,140 --> 00:04:45,190
+won't be stocked out.
+
+108
+00:04:45,190 --> 00:04:47,800
+So I can do this-- I can find these values using
+
+109
+00:04:47,800 --> 00:04:49,140
+spreadsheets.
+
+110
+00:04:49,140 --> 00:04:51,380
+So here are the two functions, the norm inverse
+
+111
+00:04:51,380 --> 00:04:53,040
+and norm distribution function.
+
+112
+00:04:53,040 --> 00:04:54,840
+I list the parameters there.
+
+113
+00:04:54,840 --> 00:04:58,500
+But what we typically do is we use the unit normal table.
+
+114
+00:04:58,500 --> 00:05:02,750
+This is where I transform the normal distribution to one
+
+115
+00:05:02,750 --> 00:05:05,840
+that's known as the unit normal or standard normal.
+
+116
+00:05:05,840 --> 00:05:09,020
+That is a normal distribution with a mean of 0
+
+117
+00:05:09,020 --> 00:05:11,480
+and a standard deviation of 1.
+
+118
+00:05:11,480 --> 00:05:12,990
+How do I transform it?
+
+119
+00:05:12,990 --> 00:05:14,710
+Well, I create these k values.
+
+120
+00:05:14,710 --> 00:05:16,280
+Some books call them z values.
+
+121
+00:05:16,280 --> 00:05:17,030
+It doesn't matter.
+
+122
+00:05:17,030 --> 00:05:18,290
+Same thing.
+
+123
+00:05:18,290 --> 00:05:22,550
+All I do is I take that random variable, x, subtract off
+
+124
+00:05:22,550 --> 00:05:26,600
+the mean and divide by the standard deviation.
+
+125
+00:05:26,600 --> 00:05:29,800
+That transforms my normal distribution
+
+126
+00:05:29,800 --> 00:05:32,530
+to this unit normal which is down here in the lower right.
+
+127
+00:05:32,530 --> 00:05:35,950
+You can see the PDF and if you want to pause, you look at it.
+
+128
+00:05:35,950 --> 00:05:38,250
+The PDF is just the same as the one in the upper right
+
+129
+00:05:38,250 --> 00:05:43,800
+corner except with the values of mu equals 0 and sigma equals 1.
+
+130
+00:05:43,800 --> 00:05:47,210
+So what's beautiful about this unit normal?
+
+131
+00:05:47,210 --> 00:05:50,210
+It applies to any normal distribution.
+
+132
+00:05:50,210 --> 00:05:55,270
+So I can use this if I pick a value now, let's call it k.
+
+133
+00:05:55,270 --> 00:05:59,100
+This is going to be a value of the random variable that's
+
+134
+00:05:59,100 --> 00:06:03,240
+now u0 for the unit normal.
+
+135
+00:06:03,240 --> 00:06:04,460
+Then the same thing applies.
+
+136
+00:06:04,460 --> 00:06:07,300
+I look at the probability under this unit normal curve.
+
+137
+00:06:07,300 --> 00:06:09,020
+That's what's in the red here.
+
+138
+00:06:09,020 --> 00:06:12,280
+This is the probability that my u, my demand,
+
+139
+00:06:12,280 --> 00:06:13,950
+is greater than equal to that k.
+
+140
+00:06:13,950 --> 00:06:16,130
+To the left, in the blue hash mark,
+
+141
+00:06:16,130 --> 00:06:17,680
+under the area under the curve there,
+
+142
+00:06:17,680 --> 00:06:21,710
+is the probability my demand will be less than that value k.
+
+143
+00:06:21,710 --> 00:06:24,080
+So the beautiful thing about the unit normal,
+
+144
+00:06:24,080 --> 00:06:26,320
+no matter what my distribution is,
+
+145
+00:06:26,320 --> 00:06:27,820
+because this could be anything.
+
+146
+00:06:27,820 --> 00:06:30,500
+This could be 1,000, 600, 200, whatever.
+
+147
+00:06:30,500 --> 00:06:32,760
+These can take an infinite number of forms.
+
+148
+00:06:32,760 --> 00:06:35,630
+I can always transform them to this beautiful unit normal.
+
+149
+00:06:35,630 --> 00:06:38,480
+
+
+150
+00:06:38,480 --> 00:06:40,600
+In spreadsheets, it's the same functions
+
+151
+00:06:40,600 --> 00:06:43,450
+except I use this s for standard.
+
+152
+00:06:43,450 --> 00:06:47,570
+So NORMSINV of the probability will give me that k value.
+
+153
+00:06:47,570 --> 00:06:50,310
+And NORMSDIST, if you put the k value in,
+
+154
+00:06:50,310 --> 00:06:51,870
+will give you the probability.
+
+155
+00:06:51,870 --> 00:06:54,080
+It gives you the cumulative probability
+
+156
+00:06:54,080 --> 00:06:57,390
+in this area in the blue here, the probability
+
+157
+00:06:57,390 --> 00:07:01,320
+that unit normal is less than k.
+
+158
+00:07:01,320 --> 00:07:03,990
+Now I can also use these standard tables,
+
+159
+00:07:03,990 --> 00:07:05,070
+which is really nice.
+
+160
+00:07:05,070 --> 00:07:08,240
+These are attached to this video.
+
+161
+00:07:08,240 --> 00:07:12,270
+So the idea here is, if I pick a k value here, let's
+
+162
+00:07:12,270 --> 00:07:18,700
+say 0.55, then I know that the probability that my u will be
+
+163
+00:07:18,700 --> 00:07:23,490
+less than equal to k is 70.8%.
+
+164
+00:07:23,490 --> 00:07:25,460
+And so you'll use these tables a lot.
+
+165
+00:07:25,460 --> 00:07:27,210
+Hopefully you're familiar with those.
+
+166
+00:07:27,210 --> 00:07:28,585
+Do some of the practice problems.
+
+167
+00:07:28,585 --> 00:07:30,120
+We'll take you through those.
+
+168
+00:07:30,120 --> 00:07:32,620
+But you can use the unit normal tables.
+
+169
+00:07:32,620 --> 00:07:35,890
+That's why using the unit normal is so helpful.
+
+170
+00:07:35,890 --> 00:07:39,970
+The other thing to think about with the normal distribution
+
+171
+00:07:39,970 --> 00:07:42,560
+is how it's shaped.
+
+172
+00:07:42,560 --> 00:07:43,580
+So it's symmetric.
+
+173
+00:07:43,580 --> 00:07:46,930
+So if I look at the mean plus or minus 1 standard deviation,
+
+174
+00:07:46,930 --> 00:07:51,890
+I'm going to capture 68% of that total distribution.
+
+175
+00:07:51,890 --> 00:07:54,630
+If I add 2 standard deviations, that's
+
+176
+00:07:54,630 --> 00:08:00,030
+covering 95.5%, 3 standard deviations, 99.7%.
+
+177
+00:08:00,030 --> 00:08:02,250
+You can see what captures.
+
+178
+00:08:02,250 --> 00:08:06,410
+So the idea is that it's symmetric around the mu.
+
+179
+00:08:06,410 --> 00:08:07,830
+You can see how it's distributed.
+
+180
+00:08:07,830 --> 00:08:11,600
+We'll use this a lot, especially the unit normal.
+
+181
+00:08:11,600 --> 00:08:14,560
+Now let's talk about the Poisson.
+
+182
+00:08:14,560 --> 00:08:16,880
+So again, a single parameter.
+
+183
+00:08:16,880 --> 00:08:18,740
+Essentially, it's the probability
+
+184
+00:08:18,740 --> 00:08:21,950
+that x events occur within a time period.
+
+185
+00:08:21,950 --> 00:08:25,840
+The single parameter, lambda, is both the mean and the variance.
+
+186
+00:08:25,840 --> 00:08:28,380
+Here is the probability mass function.
+
+187
+00:08:28,380 --> 00:08:30,640
+Again, it's a discrete function.
+
+188
+00:08:30,640 --> 00:08:35,110
+So for x0 equals 0, 1, 2, the probability
+
+189
+00:08:35,110 --> 00:08:41,440
+that that event happens, the P_x0 is equal to this equation:
+
+190
+00:08:41,440 --> 00:08:45,520
+e to the negative lambda times lambda to the negative x0
+
+191
+00:08:45,520 --> 00:08:48,640
+divided by combinatorial of x0.
+
+192
+00:08:48,640 --> 00:08:51,940
+You can see the cumulative distribution as well
+
+193
+00:08:51,940 --> 00:08:53,930
+and simply the summation of all those
+
+194
+00:08:53,930 --> 00:08:56,200
+values up to that value of x0.
+
+195
+00:08:56,200 --> 00:08:58,920
+If I plot these, in here I'm showing
+
+196
+00:08:58,920 --> 00:09:00,750
+that I plotted three of the values
+
+197
+00:09:00,750 --> 00:09:03,410
+where these are all lambdas.
+
+198
+00:09:03,410 --> 00:09:06,130
+The green is a lambda of 2.2.
+
+199
+00:09:06,130 --> 00:09:08,390
+The yellow is a lambda of 4.
+
+200
+00:09:08,390 --> 00:09:10,330
+And the blue is a lambda of 8.
+
+201
+00:09:10,330 --> 00:09:12,600
+If you look at these, what's happening is,
+
+202
+00:09:12,600 --> 00:09:16,110
+as lambda gets bigger, it gets more symmetric.
+
+203
+00:09:16,110 --> 00:09:18,400
+It starts approaching a discrete version
+
+204
+00:09:18,400 --> 00:09:21,650
+of the normal distribution.
+
+205
+00:09:21,650 --> 00:09:24,540
+So I'm going to highlight, now, these green,
+
+206
+00:09:24,540 --> 00:09:28,780
+you see how they fall out and then the blue.
+
+207
+00:09:28,780 --> 00:09:31,420
+You can see that as the lambda gets bigger,
+
+208
+00:09:31,420 --> 00:09:34,000
+it gets a little more symmetric.
+
+209
+00:09:34,000 --> 00:09:37,260
+So in spreadsheets, it's a straight Poisson function
+
+210
+00:09:37,260 --> 00:09:39,730
+where I put in that x0, the value I'm
+
+211
+00:09:39,730 --> 00:09:41,510
+trying to find the probability of,
+
+212
+00:09:41,510 --> 00:09:46,130
+the lambda, which is the mean of the distribution.
+
+213
+00:09:46,130 --> 00:09:48,610
+Then I can either use a flag of 0 or 1.
+
+214
+00:09:48,610 --> 00:09:51,340
+A 0 gives me my PMF, the probability
+
+215
+00:09:51,340 --> 00:09:53,860
+of that value, x0 occurring.
+
+216
+00:09:53,860 --> 00:09:57,620
+The cumulative function F(x0), if I put the flag to 1,
+
+217
+00:09:57,620 --> 00:09:59,530
+that tells me the cumulative probability
+
+218
+00:09:59,530 --> 00:10:04,210
+that my value is less than that x0.
+
+219
+00:10:04,210 --> 00:10:06,420
+Also we give you tables.
+
+220
+00:10:06,420 --> 00:10:09,790
+So the tables are set up similar to the normal tables in that
+
+221
+00:10:09,790 --> 00:10:12,260
+every column is for a lambda.
+
+222
+00:10:12,260 --> 00:10:14,950
+We only did certain lambdas here.
+
+223
+00:10:14,950 --> 00:10:16,400
+We couldn't do every single one.
+
+224
+00:10:16,400 --> 00:10:20,950
+There is no-- sadly, no unit standard Poisson table.
+
+225
+00:10:20,950 --> 00:10:24,870
+Then each row is the cumulative function of a given x0.
+
+226
+00:10:24,870 --> 00:10:27,860
+So for example, let's say I have a distribution where
+
+227
+00:10:27,860 --> 00:10:32,050
+the lambda of the Poisson is 1.
+
+228
+00:10:32,050 --> 00:10:34,800
+I want to find the probability, the cumulative probability,
+
+229
+00:10:34,800 --> 00:10:40,340
+that I will have three or less observations over that time
+
+230
+00:10:40,340 --> 00:10:41,080
+period.
+
+231
+00:10:41,080 --> 00:10:44,660
+So I go from 3 to here.
+
+232
+00:10:44,660 --> 00:10:47,690
+The probability that I'll have 3 or less
+
+233
+00:10:47,690 --> 00:10:52,560
+is going to be equal to 98%, 98.101.
+
+234
+00:10:52,560 --> 00:10:55,690
+So this is telling me my cumulative probability
+
+235
+00:10:55,690 --> 00:10:59,310
+of getting 3 or less observations.
+
+236
+00:10:59,310 --> 00:11:01,020
+So for the same lambda distribution,
+
+237
+00:11:01,020 --> 00:11:03,100
+if I want to see the probability that I
+
+238
+00:11:03,100 --> 00:11:07,040
+get no observation showing up, no demand showing up,
+
+239
+00:11:07,040 --> 00:11:12,290
+that happens 36.78% of the time.
+
+240
+00:11:12,290 --> 00:11:15,320
+OK, so this is the Normal and the Poisson distribution.
+
+241
+00:11:15,320 --> 00:11:17,720
+We put a bunch of problems in the practice session.
+
+242
+00:11:17,720 --> 00:11:19,809
+So get comfortable with these.
+
+243
+00:11:19,809 --> 00:11:21,600
+You should be very familiar and comfortable
+
+244
+00:11:21,600 --> 00:11:25,540
+with both Normal distribution and the Poisson.
+

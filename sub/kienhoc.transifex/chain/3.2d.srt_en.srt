@@ -1,0 +1,844 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/MMUl7rl5PzE
+
+1
+00:00:00,500 --> 00:00:03,180
+So we introduced the six different types of new product
+
+2
+00:00:03,180 --> 00:00:05,900
+categories and now we have to ask the question, so what?
+
+3
+00:00:05,900 --> 00:00:07,144
+Why does it matter?
+
+4
+00:00:07,144 --> 00:00:09,560
+Well, it matters because we want to treat them differently
+
+5
+00:00:09,560 --> 00:00:11,374
+and they have different characteristics.
+
+6
+00:00:11,374 --> 00:00:13,040
+Here are the different types of products
+
+7
+00:00:13,040 --> 00:00:15,850
+that we introduced, the new to world, new to company, the line
+
+8
+00:00:15,850 --> 00:00:17,410
+extensions and product improvements.
+
+9
+00:00:17,410 --> 00:00:18,826
+And remember, the difference there
+
+10
+00:00:18,826 --> 00:00:21,990
+is line extensions complement the existing products.
+
+11
+00:00:21,990 --> 00:00:25,270
+Product improvements replace those existing products.
+
+12
+00:00:25,270 --> 00:00:27,420
+And then the last two, product repositioning
+
+13
+00:00:27,420 --> 00:00:29,490
+and cost reductions.
+
+14
+00:00:29,490 --> 00:00:32,240
+In the marketplace, the percent of introductions
+
+15
+00:00:32,240 --> 00:00:34,280
+range and they vary differently.
+
+16
+00:00:34,280 --> 00:00:36,360
+This came from multiple sources, so that's
+
+17
+00:00:36,360 --> 00:00:38,210
+why there's a range of these values.
+
+18
+00:00:38,210 --> 00:00:41,830
+But generally, we're looking at 20% to 30% on new to company,
+
+19
+00:00:41,830 --> 00:00:43,910
+new to world, those highly innovative products
+
+20
+00:00:43,910 --> 00:00:45,284
+that have never been there before
+
+21
+00:00:45,284 --> 00:00:47,130
+or are new to the company.
+
+22
+00:00:47,130 --> 00:00:51,420
+About half or a little over half, almost to two thirds,
+
+23
+00:00:51,420 --> 00:00:54,100
+are extensions of existing products or improvements
+
+24
+00:00:54,100 --> 00:00:55,610
+of existing products.
+
+25
+00:00:55,610 --> 00:00:59,300
+And then you have the remaining 15% to almost 20%
+
+26
+00:00:59,300 --> 00:01:03,320
+that are product repositioning or cost reductions.
+
+27
+00:01:03,320 --> 00:01:06,065
+So you can see that the lion's share falls within extensions
+
+28
+00:01:06,065 --> 00:01:09,509
+and improvements of existing products.
+
+29
+00:01:09,509 --> 00:01:12,050
+Now, we have different accuracy of the forecasting for these,
+
+30
+00:01:12,050 --> 00:01:13,780
+as you would expect.
+
+31
+00:01:13,780 --> 00:01:17,854
+As you would probably expect, the hardest to forecast
+
+32
+00:01:17,854 --> 00:01:19,520
+are the new to world and new to company.
+
+33
+00:01:19,520 --> 00:01:22,850
+What I have here is the forecast accuracy, which is just 1
+
+34
+00:01:22,850 --> 00:01:26,310
+minus the MAPE, the Mean Absolute Percent Error.
+
+35
+00:01:26,310 --> 00:01:29,150
+You can see the worst are these new to world or new to company
+
+36
+00:01:29,150 --> 00:01:31,120
+because you don't have much history.
+
+37
+00:01:31,120 --> 00:01:33,380
+And you can see the best are the cost reductions,
+
+38
+00:01:33,380 --> 00:01:36,030
+and that makes sense because we'd think that we already
+
+39
+00:01:36,030 --> 00:01:39,060
+have the product, we know how it behaves at one price.
+
+40
+00:01:39,060 --> 00:01:40,700
+We should have at least a little bit
+
+41
+00:01:40,700 --> 00:01:44,200
+of insight into how it will behave if I change that price.
+
+42
+00:01:44,200 --> 00:01:46,890
+And you can see how they fall accordingly.
+
+43
+00:01:46,890 --> 00:01:50,290
+As I move from more innovative up here, new to world,
+
+44
+00:01:50,290 --> 00:01:52,750
+new to market, down to the more established
+
+45
+00:01:52,750 --> 00:01:56,600
+or existing products, my forecast accuracy improves,
+
+46
+00:01:56,600 --> 00:01:59,564
+and that makes sense.
+
+47
+00:01:59,564 --> 00:02:01,980
+We can also look at the length of time it takes to launch,
+
+48
+00:02:01,980 --> 00:02:04,340
+and we'll talk more about the new product launch
+
+49
+00:02:04,340 --> 00:02:06,230
+process in a second.
+
+50
+00:02:06,230 --> 00:02:09,710
+The new to world and new to company take the most time.
+
+51
+00:02:09,710 --> 00:02:11,530
+As you can see, it gets less and less time
+
+52
+00:02:11,530 --> 00:02:13,520
+involved as I move down.
+
+53
+00:02:13,520 --> 00:02:15,060
+And then success rate.
+
+54
+00:02:15,060 --> 00:02:16,810
+This might be surprising to some people
+
+55
+00:02:16,810 --> 00:02:20,170
+because usually you hear only one in 20 products
+
+56
+00:02:20,170 --> 00:02:21,580
+are successful.
+
+57
+00:02:21,580 --> 00:02:25,820
+Actually, the success rate is much higher than people think.
+
+58
+00:02:25,820 --> 00:02:27,660
+It depends how it's measured, and success
+
+59
+00:02:27,660 --> 00:02:29,590
+is measured in the eye of the beholder.
+
+60
+00:02:29,590 --> 00:02:31,350
+This is based off of some studies that
+
+61
+00:02:31,350 --> 00:02:34,030
+have looked at how companies deem success,
+
+62
+00:02:34,030 --> 00:02:37,260
+and the criteria is generally being in the market still
+
+63
+00:02:37,260 --> 00:02:39,450
+generating positive revenue after two years.
+
+64
+00:02:39,450 --> 00:02:40,450
+So it's still out there.
+
+65
+00:02:40,450 --> 00:02:43,935
+It wasn't pulled out after six months or a year.
+
+66
+00:02:43,935 --> 00:02:45,310
+And you can see the new to world,
+
+67
+00:02:45,310 --> 00:02:51,690
+new to company products, roughly 40% to 60% success rate.
+
+68
+00:02:51,690 --> 00:02:53,320
+And as you would expect, as I move down
+
+69
+00:02:53,320 --> 00:02:55,430
+to these repositioning and cost reductions,
+
+70
+00:02:55,430 --> 00:02:56,830
+it gets a little bit higher.
+
+71
+00:02:56,830 --> 00:02:59,700
+But overall, they're fairly successful.
+
+72
+00:02:59,700 --> 00:03:03,410
+So the idea that only one out of every 20 products
+
+73
+00:03:03,410 --> 00:03:05,470
+are successful is not really true.
+
+74
+00:03:05,470 --> 00:03:09,430
+The studies don't bear that out.
+
+75
+00:03:09,430 --> 00:03:12,235
+We see that they differ in terms of how accurate I can forecast
+
+76
+00:03:12,235 --> 00:03:15,880
+them and all those other things, but still, why do I care?
+
+77
+00:03:15,880 --> 00:03:17,960
+Well, let's put this into a different framework.
+
+78
+00:03:17,960 --> 00:03:20,820
+This framework comes from Ken Kahn in his book,
+
+79
+00:03:20,820 --> 00:03:23,560
+and he says when we look at new products,
+
+80
+00:03:23,560 --> 00:03:25,890
+we want to look at the product-market mix
+
+81
+00:03:25,890 --> 00:03:27,935
+because a new product, the technology
+
+82
+00:03:27,935 --> 00:03:32,140
+is either new or current, or the market is either a new market
+
+83
+00:03:32,140 --> 00:03:35,810
+or established in the existing or current market.
+
+84
+00:03:35,810 --> 00:03:38,990
+So you can overlay the different product types here,
+
+85
+00:03:38,990 --> 00:03:41,710
+and you can think of the new to company and new to world
+
+86
+00:03:41,710 --> 00:03:46,420
+as both a new technology and new market.
+
+87
+00:03:46,420 --> 00:03:49,770
+You can think of line extensions as being a new technology.
+
+88
+00:03:49,770 --> 00:03:52,190
+I'm adding a flavor or adding something to it,
+
+89
+00:03:52,190 --> 00:03:54,405
+but I'm staying in the same market,
+
+90
+00:03:54,405 --> 00:03:57,310
+so I'm staying in the current market.
+
+91
+00:03:57,310 --> 00:03:58,880
+Product repositionings.
+
+92
+00:03:58,880 --> 00:04:00,810
+I'm staying with the current technology.
+
+93
+00:04:00,810 --> 00:04:01,880
+Think of Bayer Aspirin.
+
+94
+00:04:01,880 --> 00:04:05,710
+It didn't change, but I go to a new market, the stroke
+
+95
+00:04:05,710 --> 00:04:09,200
+prevention and heart care.
+
+96
+00:04:09,200 --> 00:04:13,020
+And then the least innovative, or the least new,
+
+97
+00:04:13,020 --> 00:04:15,024
+is cost reductions and product improvements
+
+98
+00:04:15,024 --> 00:04:16,940
+where I'm staying with the current technology,
+
+99
+00:04:16,940 --> 00:04:20,540
+modifying it slightly, and I'm staying in my current market.
+
+100
+00:04:20,540 --> 00:04:22,770
+I'm not going after a new market.
+
+101
+00:04:22,770 --> 00:04:26,250
+So you have how the different products overlay,
+
+102
+00:04:26,250 --> 00:04:28,380
+but they're introduced for different reasons.
+
+103
+00:04:28,380 --> 00:04:30,060
+The strategies differ.
+
+104
+00:04:30,060 --> 00:04:34,450
+So if I introduce something to a new market and new technology,
+
+105
+00:04:34,450 --> 00:04:35,810
+what am I doing?
+
+106
+00:04:35,810 --> 00:04:39,647
+I'm trying to get into a whole new unrelated business.
+
+107
+00:04:39,647 --> 00:04:40,230
+I'm expanding.
+
+108
+00:04:40,230 --> 00:04:41,790
+I'm diversifying.
+
+109
+00:04:41,790 --> 00:04:44,230
+This is what Apple did when it introduced or jumped
+
+110
+00:04:44,230 --> 00:04:47,820
+into the phone space and jumped into the portable music space.
+
+111
+00:04:47,820 --> 00:04:49,640
+It's diversifying its market.
+
+112
+00:04:49,640 --> 00:04:51,325
+It's trying to get into new industries.
+
+113
+00:04:51,325 --> 00:04:54,450
+
+
+114
+00:04:54,450 --> 00:04:57,740
+Up here when I introduce a line extension,
+
+115
+00:04:57,740 --> 00:05:00,320
+I'm trying to diversify my portfolio.
+
+116
+00:05:00,320 --> 00:05:01,930
+I'm staying in my current market,
+
+117
+00:05:01,930 --> 00:05:04,020
+but I'm trying to get more people
+
+118
+00:05:04,020 --> 00:05:07,510
+to use my products within that same market.
+
+119
+00:05:07,510 --> 00:05:09,820
+This is where flavors get added and things like that.
+
+120
+00:05:09,820 --> 00:05:14,541
+I'm adding another flavor that someone might be interested in.
+
+121
+00:05:14,541 --> 00:05:16,640
+In the market development, what I'm
+
+122
+00:05:16,640 --> 00:05:19,300
+really focused on is expanding my sales volume.
+
+123
+00:05:19,300 --> 00:05:23,680
+I'm repositioning into new markets.
+
+124
+00:05:23,680 --> 00:05:28,014
+And finally, in this top left quadrant is market penetration.
+
+125
+00:05:28,014 --> 00:05:29,180
+What am I really doing here?
+
+126
+00:05:29,180 --> 00:05:30,620
+I'm increasing market share.
+
+127
+00:05:30,620 --> 00:05:32,240
+I'm reducing my price to increase
+
+128
+00:05:32,240 --> 00:05:34,700
+market share for my current market
+
+129
+00:05:34,700 --> 00:05:37,570
+with my current technology.
+
+130
+00:05:37,570 --> 00:05:40,260
+Each of these strategies differ based
+
+131
+00:05:40,260 --> 00:05:42,850
+on the mix of product in market and they
+
+132
+00:05:42,850 --> 00:05:46,650
+need a different type of forecasting.
+
+133
+00:05:46,650 --> 00:05:48,780
+Starting up here in the top left where
+
+134
+00:05:48,780 --> 00:05:51,910
+I have existing technology in an existing market,
+
+135
+00:05:51,910 --> 00:05:53,870
+you can think that my forecasting approach
+
+136
+00:05:53,870 --> 00:05:55,810
+would be the most quantitative.
+
+137
+00:05:55,810 --> 00:05:58,880
+I'd look at similar situations using time series analysis,
+
+138
+00:05:58,880 --> 00:06:02,451
+regression, other models because I have a lot of history
+
+139
+00:06:02,451 --> 00:06:04,700
+because I've been operating in this market for a while
+
+140
+00:06:04,700 --> 00:06:07,010
+so I kind of know how they behave,
+
+141
+00:06:07,010 --> 00:06:10,380
+and I've been offering with this technology,
+
+142
+00:06:10,380 --> 00:06:14,100
+so I have some history there.
+
+143
+00:06:14,100 --> 00:06:17,430
+When I get into line extensions, the approach
+
+144
+00:06:17,430 --> 00:06:20,750
+here is to look for similar things.
+
+145
+00:06:20,750 --> 00:06:22,660
+I introduced a blueberry flavor.
+
+146
+00:06:22,660 --> 00:06:24,500
+Maybe I want to see how the cranberry
+
+147
+00:06:24,500 --> 00:06:25,730
+flavor did previously.
+
+148
+00:06:25,730 --> 00:06:28,690
+I've got some previous experience of looks
+
+149
+00:06:28,690 --> 00:06:32,250
+like analysis or analogous forecasting.
+
+150
+00:06:32,250 --> 00:06:35,125
+I can look at similar things and maybe make an extension
+
+151
+00:06:35,125 --> 00:06:38,940
+and extrapolate how that behaved to how this new product will
+
+152
+00:06:38,940 --> 00:06:41,750
+behave.
+
+153
+00:06:41,750 --> 00:06:44,070
+When I get down here to market development,
+
+154
+00:06:44,070 --> 00:06:47,500
+I'm really looking at, how do I understand this new market?
+
+155
+00:06:47,500 --> 00:06:50,870
+My forecasting will focus on larger trends,
+
+156
+00:06:50,870 --> 00:06:53,780
+how those customers and how that market behaves,
+
+157
+00:06:53,780 --> 00:06:56,414
+to understand that specific new market
+
+158
+00:06:56,414 --> 00:06:58,330
+environment because that's the big difference.
+
+159
+00:06:58,330 --> 00:07:02,840
+I'm going to a new marketplace so I need to understand that.
+
+160
+00:07:02,840 --> 00:07:05,720
+And then finally, for diversification,
+
+161
+00:07:05,720 --> 00:07:09,620
+when I'm talking new to company or new to world products,
+
+162
+00:07:09,620 --> 00:07:11,770
+the forecasting approach is very ephemeral.
+
+163
+00:07:11,770 --> 00:07:15,000
+It's more scenario planning and understanding
+
+164
+00:07:15,000 --> 00:07:17,480
+driving factors and uncertainties.
+
+165
+00:07:17,480 --> 00:07:20,880
+So you can think as I move from this top left down
+
+166
+00:07:20,880 --> 00:07:24,680
+to this top right, I move from more objective metrics,
+
+167
+00:07:24,680 --> 00:07:28,520
+hardcore analytics, to much more subjective ones down here.
+
+168
+00:07:28,520 --> 00:07:30,900
+Now, I'm not saying that down here when
+
+169
+00:07:30,900 --> 00:07:32,750
+I introduce new products to the world,
+
+170
+00:07:32,750 --> 00:07:34,634
+that I don't have some rigorous analytics,
+
+171
+00:07:34,634 --> 00:07:36,050
+but you don't have as much history
+
+172
+00:07:36,050 --> 00:07:39,230
+so you're doing some more subjective kind of work, as
+
+173
+00:07:39,230 --> 00:07:41,787
+opposed to up here for market penetration,
+
+174
+00:07:41,787 --> 00:07:43,370
+where I have some history to work with
+
+175
+00:07:43,370 --> 00:07:45,840
+and I'm going to mind that.
+
+176
+00:07:45,840 --> 00:07:49,092
+One last question to finish up this video
+
+177
+00:07:49,092 --> 00:07:50,800
+is to ask the question, why do firms even
+
+178
+00:07:50,800 --> 00:07:52,787
+launch new products in the first place?
+
+179
+00:07:52,787 --> 00:07:53,995
+This is a very easy question.
+
+180
+00:07:53,995 --> 00:07:56,070
+It's because that's where all the money is.
+
+181
+00:07:56,070 --> 00:07:59,500
+Companies earn between 20% and 48% of their revenue
+
+182
+00:07:59,500 --> 00:08:03,430
+from new products launched within the last two years.
+
+183
+00:08:03,430 --> 00:08:07,150
+Profit anywhere from 20% to 50%, depending on the industry.
+
+184
+00:08:07,150 --> 00:08:09,180
+If you look at different industries,
+
+185
+00:08:09,180 --> 00:08:11,760
+for fast moving consumer goods, things
+
+186
+00:08:11,760 --> 00:08:15,410
+that go through grocery stores, their revenue and their profit
+
+187
+00:08:15,410 --> 00:08:18,040
+is roughly around 24% driven by products
+
+188
+00:08:18,040 --> 00:08:19,770
+introduced in the last two years.
+
+189
+00:08:19,770 --> 00:08:22,600
+You can see that this is pretty significant for many.
+
+190
+00:08:22,600 --> 00:08:25,880
+If you look at technology, it's almost half of revenue
+
+191
+00:08:25,880 --> 00:08:29,600
+and 44% of profit driven by products
+
+192
+00:08:29,600 --> 00:08:31,390
+introduced in the last two years.
+
+193
+00:08:31,390 --> 00:08:32,909
+These numbers are only going up.
+
+194
+00:08:32,909 --> 00:08:36,030
+These numbers are about eight to 10 years old,
+
+195
+00:08:36,030 --> 00:08:38,340
+so you can imagine that it's increasing
+
+196
+00:08:38,340 --> 00:08:43,230
+because as we observed, product life cycle is shortening.
+
+197
+00:08:43,230 --> 00:08:45,190
+People are introducing new products,
+
+198
+00:08:45,190 --> 00:08:46,580
+and it's not because the products
+
+199
+00:08:46,580 --> 00:08:48,860
+are breaking or falling apart.
+
+200
+00:08:48,860 --> 00:08:51,780
+It's because these products are unable to maintain
+
+201
+00:08:51,780 --> 00:08:55,270
+their pricing, so you see dramatic price drops.
+
+202
+00:08:55,270 --> 00:08:59,490
+If you look at chips going into phones,
+
+203
+00:08:59,490 --> 00:09:03,010
+you see the dramatic price drop there over a very short period
+
+204
+00:09:03,010 --> 00:09:03,980
+of time.
+
+205
+00:09:03,980 --> 00:09:05,500
+Most products will continue to drop,
+
+206
+00:09:05,500 --> 00:09:07,450
+and therefore when that price drops,
+
+207
+00:09:07,450 --> 00:09:10,490
+a new product needs to get introduced.
+
+208
+00:09:10,490 --> 00:09:12,900
+This is why firms launch new products.
+
+209
+00:09:12,900 --> 00:09:15,390
+The next thing we'll talk about is how do firms
+
+210
+00:09:15,390 --> 00:09:18,080
+go about introducing new products.
+

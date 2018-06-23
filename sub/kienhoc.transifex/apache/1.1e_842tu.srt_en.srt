@@ -1,0 +1,477 @@
+0
+00:00:00,000 --> 00:00:00,680
+https://youtu.be/oPS9wd3tjtU
+
+1
+00:00:00,680 --> 00:00:03,855
+SPEAKER 1: Dad frames are the primary abstraction in Spark.
+
+2
+00:00:03,855 --> 00:00:06,970
+And they're immutable once they're constructed.
+
+3
+00:00:06,970 --> 00:00:08,830
+Now Spark tracks the lineage information
+
+4
+00:00:08,830 --> 00:00:11,800
+of how you created and manipulated or transformed
+
+5
+00:00:11,800 --> 00:00:15,820
+a data frame to efficiently recompute any lost data,
+
+6
+00:00:15,820 --> 00:00:18,950
+should machine in your cluster fail.
+
+7
+00:00:18,950 --> 00:00:20,840
+Now data frames enable operations
+
+8
+00:00:20,840 --> 00:00:25,010
+on collections of elements to be performed in parallel.
+
+9
+00:00:25,010 --> 00:00:27,560
+You construct a data frame by parallelizing
+
+10
+00:00:27,560 --> 00:00:30,850
+an existing Python collection, like for example a list,
+
+11
+00:00:30,850 --> 00:00:35,630
+or by transforming an existing Spark or pandas data frame.
+
+12
+00:00:35,630 --> 00:00:37,910
+Or you can construct a data frame
+
+13
+00:00:37,910 --> 00:00:40,870
+from a file in the Hadoop Distributed File System
+
+14
+00:00:40,870 --> 00:00:43,010
+or any other storage system.
+
+15
+00:00:43,010 --> 00:00:47,500
+We'll go through some examples in just a moment.
+
+16
+00:00:47,500 --> 00:00:51,170
+Now each row of a data frame is a row object.
+
+17
+00:00:51,170 --> 00:00:53,890
+And the fields in a row can be accessed just
+
+18
+00:00:53,890 --> 00:00:55,890
+like Python attributes.
+
+19
+00:00:55,890 --> 00:00:58,010
+So here we have an example of creating
+
+20
+00:00:58,010 --> 00:01:01,110
+a row that has two columns.
+
+21
+00:01:01,110 --> 00:01:07,270
+The first column has name name and value Alice.
+
+22
+00:01:07,270 --> 00:01:12,980
+And the second column has name age and value 11.
+
+23
+00:01:12,980 --> 00:01:18,140
+Now we can access the elements of that row, the columns,
+
+24
+00:01:18,140 --> 00:01:21,530
+either by using bracket and quote notation-- so
+
+25
+00:01:21,530 --> 00:01:25,830
+for example, row, bracket, quote name quote, bracket.
+
+26
+00:01:25,830 --> 00:01:29,360
+Or by using dotted notation.
+
+27
+00:01:29,360 --> 00:01:33,220
+So row.name and row.age age.
+
+28
+00:01:33,220 --> 00:01:35,570
+Because it's simplest and easiest, most of the time,
+
+29
+00:01:35,570 --> 00:01:38,300
+you'll find that you use the dotted notation.
+
+30
+00:01:38,300 --> 00:01:40,020
+Again, row.name name or row.age.
+
+31
+00:01:40,020 --> 00:01:42,744
+
+32
+00:01:42,744 --> 00:01:44,285
+Now there are two types of operations
+
+33
+00:01:44,285 --> 00:01:47,860
+that you can perform on data frames: transformations
+
+34
+00:01:47,860 --> 00:01:48,930
+and actions.
+
+35
+00:01:48,930 --> 00:01:52,300
+And they're quite different in terms of what they do.
+
+36
+00:01:52,300 --> 00:01:55,160
+Transformations in particular are lazy.
+
+37
+00:01:55,160 --> 00:01:58,440
+They're not computed immediately.
+
+38
+00:01:58,440 --> 00:02:02,670
+Transformations are only executed when an action
+
+39
+00:02:02,670 --> 00:02:06,520
+is performed on the data frame.
+
+40
+00:02:06,520 --> 00:02:09,070
+Now, you can persist or cache data frames
+
+41
+00:02:09,070 --> 00:02:11,174
+in memory or on disk, so that they
+
+42
+00:02:11,174 --> 00:02:12,340
+don't have to be recomputed.
+
+43
+00:02:12,340 --> 00:02:15,180
+
+44
+00:02:15,180 --> 00:02:17,300
+So when you work with data frames,
+
+45
+00:02:17,300 --> 00:02:20,330
+you follow the following life cycle.
+
+46
+00:02:20,330 --> 00:02:22,870
+You create a data frame from a data source,
+
+47
+00:02:22,870 --> 00:02:26,070
+from disk or from a Python object.
+
+48
+00:02:26,070 --> 00:02:28,770
+You apply transformations to that data frame,
+
+49
+00:02:28,770 --> 00:02:30,910
+like select and filter.
+
+50
+00:02:30,910 --> 00:02:33,800
+And then you apply actions to the data frame,
+
+51
+00:02:33,800 --> 00:02:35,850
+like show and count.
+
+52
+00:02:35,850 --> 00:02:37,480
+So here we have an example.
+
+53
+00:02:37,480 --> 00:02:39,530
+We start with a list.
+
+54
+00:02:39,530 --> 00:02:42,660
+We specify that we want to create a data frame.
+
+55
+00:02:42,660 --> 00:02:44,870
+We specify we want to perform a filter
+
+56
+00:02:44,870 --> 00:02:46,610
+to create a new data frame.
+
+57
+00:02:46,610 --> 00:02:50,300
+Then we specify that we want to perform a select to create yet
+
+58
+00:02:50,300 --> 00:02:52,120
+another data frame.
+
+59
+00:02:52,120 --> 00:02:55,100
+Now, nothing actually happens until we
+
+60
+00:02:55,100 --> 00:02:57,770
+perform the show action.
+
+61
+00:02:57,770 --> 00:02:59,630
+Now when the show action is performed,
+
+62
+00:02:59,630 --> 00:03:02,200
+Spark literally springs into action.
+
+63
+00:03:02,200 --> 00:03:04,620
+It creates the data frame, then it
+
+64
+00:03:04,620 --> 00:03:06,490
+performs a filter transformation,
+
+65
+00:03:06,490 --> 00:03:09,420
+then it performs the select transformation,
+
+66
+00:03:09,420 --> 00:03:13,150
+and then it runs the show action to produce the results.
+
+67
+00:03:13,150 --> 00:03:16,390
+
+68
+00:03:16,390 --> 00:03:20,020
+Now we can create data frames from Python collections,
+
+69
+00:03:20,020 --> 00:03:21,900
+for example lists.
+
+70
+00:03:21,900 --> 00:03:25,550
+So here, we have a list consisting of two tuples.
+
+71
+00:03:25,550 --> 00:03:30,330
+The first tuple has elements Alice and 1.
+
+72
+00:03:30,330 --> 00:03:35,710
+And the second tuple has elements Bob and 2.
+
+73
+00:03:35,710 --> 00:03:40,900
+Now we can use the sqlContext and the createDataFrame method
+
+74
+00:03:40,900 --> 00:03:43,200
+to specify that we want to create a data
+
+75
+00:03:43,200 --> 00:03:46,190
+frame from that Python list.
+
+76
+00:03:46,190 --> 00:03:51,310
+Now nothing actually happens when we run this command.
+
+77
+00:03:51,310 --> 00:03:53,870
+All that happens is Spark simply records
+
+78
+00:03:53,870 --> 00:03:55,090
+how to create the data frame.
+
+79
+00:03:55,090 --> 00:03:57,712
+
+80
+00:03:57,712 --> 00:04:00,460
+Now a little bit of a side note.
+
+81
+00:04:00,460 --> 00:04:03,740
+Pandas this is the Python data analysis library.
+
+82
+00:04:03,740 --> 00:04:06,760
+It's an open source data analysis and modeling
+
+83
+00:04:06,760 --> 00:04:10,950
+library that provides a great alternative to using R.
+
+84
+00:04:10,950 --> 00:04:13,890
+And it works inside Python.
+
+85
+00:04:13,890 --> 00:04:17,300
+Now in pandas, it has the notion of a data frame.
+
+86
+00:04:17,300 --> 00:04:19,579
+It's a table with named columns.
+
+87
+00:04:19,579 --> 00:04:22,880
+And it's most commonly used pandas object.
+
+88
+00:04:22,880 --> 00:04:25,680
+It's represented as a Python dictionary.
+
+89
+00:04:25,680 --> 00:04:28,240
+So a column name is mapped to a series.
+
+90
+00:04:28,240 --> 00:04:32,810
+And each pandas series object represents a column.
+
+91
+00:04:32,810 --> 00:04:34,460
+So it's a one dimensional labeled
+
+92
+00:04:34,460 --> 00:04:38,320
+array that's capable of holding any data type.
+
+93
+00:04:38,320 --> 00:04:43,350
+And R also has a similar data frame type.
+
+94
+00:04:43,350 --> 00:04:47,430
+It's very easy to create PySpark data frames from pandas
+
+95
+00:04:47,430 --> 00:04:49,490
+and also from R data frames.
+
+96
+00:04:49,490 --> 00:04:52,805
+So from pandas, you just simply say sqlContext.createDataFrame
+
+97
+00:04:52,805 --> 00:04:57,786
+, and you give it the pandas data frame.
+
+98
+00:04:57,786 --> 00:05:01,440
+
+99
+00:05:01,440 --> 00:05:05,340
+You can also create data frames from Hadoop Distributed File
+
+100
+00:05:05,340 --> 00:05:09,170
+System, from text files, from JSON files,
+
+101
+00:05:09,170 --> 00:05:13,140
+from Apache Parquet or Hypertable or Amazon S3
+
+102
+00:05:13,140 --> 00:05:17,830
+or Apache HBase or sequence files or any other Hadoop input
+
+103
+00:05:17,830 --> 00:05:22,390
+format or from a directory.
+
+104
+00:05:22,390 --> 00:05:25,980
+You simply use the appropriate method with sqlContext.read.
+
+105
+00:05:25,980 --> 00:05:28,706
+
+106
+00:05:28,706 --> 00:05:30,580
+So here we have an example of creating a data
+
+107
+00:05:30,580 --> 00:05:32,230
+frame from a text file.
+
+108
+00:05:32,230 --> 00:05:36,500
+
+109
+00:05:36,500 --> 00:05:39,740
+Now when we want to create a data frame from a file,
+
+110
+00:05:39,740 --> 00:05:43,240
+we just simply specify sqlContext.read.text,
+
+111
+00:05:43,240 --> 00:05:45,360
+and we give it the name of the file.
+
+112
+00:05:45,360 --> 00:05:48,340
+In this case, it's a text file.
+
+113
+00:05:48,340 --> 00:05:50,670
+And what this tells Spark is that we
+
+114
+00:05:50,670 --> 00:05:52,690
+want it to load the file and return
+
+115
+00:05:52,690 --> 00:05:57,970
+a data frame that has a single string column named value.
+
+116
+00:05:57,970 --> 00:06:01,240
+Each line in the text file is a row.
+
+117
+00:06:01,240 --> 00:06:03,410
+Now again, because it's lazy evaluation,
+
+118
+00:06:03,410 --> 00:06:05,670
+it means no execution will actually happen
+
+119
+00:06:05,670 --> 00:06:07,010
+when we run this command.
+
+120
+00:06:07,010 --> 00:06:11,010
+It won't happen until we actually perform an action.
+

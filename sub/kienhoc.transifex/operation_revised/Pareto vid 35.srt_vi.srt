@@ -1,0 +1,164 @@
+1
+00:00:01,150 --> 00:00:03,900
+Chào mừng trở lại với " Operations Management"
+
+2
+00:00:03,900 --> 00:00:07,830
+Chúng ta sẽ tiếp tục với 7 loại công cụ kiểm soát chất lượng, và ở phần này
+
+3
+00:00:07,830 --> 00:00:14,049
+chúng ta sẽ nói về biểu đồ Pareto. Một loại biểu đồ Pareto đơn giản chỉ là biểu đồ cột
+
+4
+00:00:14,049 --> 00:00:18,480
+mà trong đó các cột được sắp xếp theo mức độ giảm dần từ trái sang phải 
+
+5
+00:00:18,480 --> 00:00:23,910
+đây là phương tiện hỗ trợ tuyệt vời khi thảo luận các vấn đề và nguyên nhân của các tình huống. 
+
+6
+00:00:23,910 --> 00:00:30,890
+Chúng tôi sử dụng biểu đồ pareto khi chúng ta muốn phân tích
+
+7
+00:00:30,890 --> 00:00:36,360
+tần suất của vấn đề và nguyên nhân và nếu chúng ta muốn tìm ra 
+
+8
+00:00:36,360 --> 00:00:41,020
+vấn đề quan trọng nhất hay nguyên nhân chủ yếu. 
+
+9
+00:00:41,020 --> 00:00:42,020
+Hãy xem biểu đồ Pareto.
+
+10
+00:00:42,020 --> 00:00:46,670
+Cái ở bên trái chỉ ra nguyên nhân cho những người đi muộn
+
+11
+00:00:46,670 --> 00:00:51,960
+Có các lý do như là chuông báo thức không hoạt động, ngủ nán, giao thông,
+
+12
+00:00:51,960 --> 00:00:56,330
+chuột rút, không có nước nóng.
+
+13
+00:00:56,330 --> 00:01:02,220
+Như các bạn thấy, các cột tần suất được sắp xếp từ cao đến thấp
+
+14
+00:01:02,220 --> 00:01:08,600
+Bạn cũng có thể thấy một đường thẳng thứ 2 ở đây, đây là đường tần suất tích lũy
+
+15
+00:01:08,600 --> 00:01:12,280
+ở đây chúng ta tổng tẩn suất của từng nguyên nhân và nó kết thúc ở 100%.
+
+16
+00:01:12,280 --> 00:01:17,510
+ của từng nguyên nhân  và nó kết thúc ở 100%.
+
+17
+00:01:17,510 --> 00:01:21,140
+Cái còn lại ở bên phải là những nguyên nhân cụ thể của việc trả lại phần mềm.
+
+18
+00:01:21,140 --> 00:01:27,860
+Chúng ta lại có thứ tự giảm dần từ cao xuống thấp và có đường tích lũy
+
+19
+00:01:27,860 --> 00:01:29,370
+nhưng ở đây có đến 2 đường thẳng.
+
+20
+00:01:29,370 --> 00:01:32,000
+Đường màu xanh ở đó chỉ 80%.
+
+21
+00:01:32,000 --> 00:01:38,540
+Phần lớn thời gian khi chúng ta sử dụng biểu đồ pareto, cái mà chúng ta chú ý là 
+
+22
+00:01:38,540 --> 00:01:44,530
+nguyên nhân chủ yếu của phần lớn vấn đề, chúng ta sẽ nhìn vào nhóm 80%
+
+23
+00:01:44,530 --> 00:01:53,470
+Ở trường hợp này đường màu xanh cắt màu đỏ tại lý do "đổi ý"
+
+24
+00:01:53,470 --> 00:02:01,299
+Chúng ta cùng xét các nguyên nhân "không tương thích", "không như mong đợi", "tìm được chỗ rẻ hơn", và "đổi ý" chiếm 80%
+
+25
+00:02:01,299 --> 00:02:09,030
+trong các nguyên nhân của việc trả lại phần mềm. Cho nên, khi chúng ta sử dụng biểu đồ pareto,
+
+26
+00:02:09,030 --> 00:02:13,909
+Chúng ta biết rằng tần suất lớn nhất ở bên trái, và nhỏ nhất ở bên phải
+
+27
+00:02:13,909 --> 00:02:19,900
+các đường tích lũy cùng với các cột có thể cung cấp thông tin
+
+28
+00:02:19,900 --> 00:02:25,879
+thông tin đó là sự tổng hợp các vấn đề, và chúng ta nhìn vào 80% của tất cả các vấn đề
+
+29
+00:02:25,879 --> 00:02:31,640
+Vẽ biểu đồ Pareto trong excel thì rất đơn giản.
+
+30
+00:02:31,640 --> 00:02:35,239
+Chúng ta nhập dữ liệu và phân loại từ cao đến thấp.
+
+31
+00:02:35,239 --> 00:02:38,480
+Chúng ta có các loại với tần suất.
+
+32
+00:02:38,480 --> 00:02:42,720
+Chúng ta cho tần suất tích lũy để chúng ta có thể thấy rằng 
+
+33
+00:02:42,720 --> 00:02:47,650
+Missing belts chiếm 38% 
+
+34
+00:02:47,650 --> 00:02:54,239
+nhưng Missing belt cộng với Wrong size chiếm 64% ...
+
+35
+00:02:54,239 --> 00:02:58,959
+Sau đó chúng ta đừng dữ liệu để vẽ biểu đồ. Chọn biểu đồ cột từ công cụ vẽ biểu đồ.
+
+36
+00:02:58,959 --> 00:03:04,170
+Sau đó chúng ta sửa lại biểu đồ bằng cách cho thêm dữ liệu tích lũy để vẽ biểu đồ đường
+
+37
+00:03:04,170 --> 00:03:09,340
+và sau đó chúng ta đặt nó vào trục thứ 2. Đó là cách thực hiện nó.
+
+38
+00:03:09,340 --> 00:03:12,400
+Rất dễ thực hiện, chúng ta có thể dựa vào vào thực tế
+
+39
+00:03:12,400 --> 00:03:17,309
+nhưng đây là cách dễ hiểu để xem xét các nguyên nhân,
+
+40
+00:03:17,309 --> 00:03:22,529
+những nguyên nhân phổ biến của một tình trạng mà chúng ta đang cố gắng sửa chữa.
+
+41
+00:03:22,529 --> 00:03:25,400
+Hẹn gặp lại các bạn ở các phần tiếp theo nói về các công cụ khác
+

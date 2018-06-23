@@ -1,0 +1,383 @@
+856
+00:38:30,270 --> 00:38:33,850
+mhthanh
+Một cách tốt hơn
+
+857
+00:38:33,850 --> 00:38:35,640
+là đặt tên biến thật đơn giản
+
+858
+00:38:35,640 --> 00:38:39,700
+và con người chúng ta có thể nhận thức được cái nào là cái nào
+
+859
+00:38:39,700 --> 00:38:42,605
+Vì nó vẫn chỉ là việc so khớp
+
+860
+00:38:42,605 --> 00:38:45,524
+a phải khớp với a
+
+861
+00:38:45,524 --> 00:38:46,700
+b khớp với b
+
+862
+00:38:46,700 --> 00:38:48,419
+các chữ c khớp với nhau
+
+863
+00:38:48,419 --> 00:38:49,960
+Đây chính là chương trình kia
+
+864
+00:38:49,960 --> 00:38:57,730
+a = 35, b = 12.5, c = a * b, và print c
+
+865
+00:38:57,730 --> 00:39:00,990
+Python xem 2 chương trình này là 1
+
+866
+00:39:00,990 --> 00:39:03,150
+Nó không quan tâm ta đặt tên các biến là gì
+
+867
+00:39:03,150 --> 00:39:06,660
+Một người thì sẽ rất biết ơn nếu bạn nói ở đây
+
+868
+00:39:06,660 --> 00:39:08,780
+bạn có thể viết thế này hoặc thế này
+
+869
+00:39:08,780 --> 00:39:10,905
+Nhưng thế này sẽ làm họ vui hơn nhiều
+
+870
+00:39:10,905 --> 00:39:13,460
+
+871
+00:39:13,460 --> 00:39:14,500
+OK?
+
+872
+00:39:14,500 --> 00:39:17,560
+Như thế kia chắc chắn dễ hơn về mặt nhận thức
+
+873
+00:39:17,560 --> 00:39:19,810
+nhưng nó không thật sự cho bạn cảm nhận gì
+
+874
+00:39:19,810 --> 00:39:23,330
+về việc đang diễn ra ở đây
+
+875
+00:39:23,330 --> 00:39:27,330
+Một cách thậm chí tốt hơn để viết chính chương trình này
+
+876
+00:39:27,330 --> 00:39:29,660
+làm những việc y hệt như vậy
+
+877
+00:39:29,660 --> 00:39:32,440
+là chọn các tên biến "hours", "rate",
+
+878
+00:39:32,440 --> 00:39:35,810
+và "pay", nếu thật sự đấy là những gì bạn đang tính toán
+
+879
+00:39:35,810 --> 00:39:39,452
+Bây giờ bạn nhìn vào và thấy, ồ, 35
+
+880
+00:39:39,452 --> 00:39:40,410
+là số giờ
+
+881
+00:39:40,410 --> 00:39:42,130
+12.5 là tỉ lệ mức lương
+
+882
+00:39:42,130 --> 00:39:44,531
+và tiền lương là bằng số giờ nhân tỉ lệ mức lương
+
+883
+00:39:44,531 --> 00:39:46,280
+Sau đó ta in ra tiền lương
+
+884
+00:39:46,280 --> 00:39:48,130
+Như thế rất dễ hiểu
+
+885
+00:39:48,130 --> 00:39:54,270
+Đây là sự mô tả tuyệt vời
+
+886
+00:39:54,270 --> 00:39:56,130
+Nếu đó là thứ bạn đang làm và nếu chúng
+
+887
+00:39:56,130 --> 00:39:58,280
+là hours, rate, pay,
+đó là những từ tuyệt vời
+
+888
+00:39:58,280 --> 00:40:00,040
+để đặt tên cho biến
+
+889
+00:40:00,040 --> 00:40:04,444
+Nhưng đây là chỗ các sinh viên mới cảm thấy khó hiểu
+
+890
+00:40:04,444 --> 00:40:06,110
+Nên đôi khi tôi sẽ viết theo kiểu này
+
+891
+00:40:06,110 --> 00:40:07,859
+và đôi khi tôi sẽ viết kiểu này
+
+892
+00:40:07,859 --> 00:40:09,400
+Vì bạn sẽ nhìn vào chỗ này cho đến khi
+
+893
+00:40:09,400 --> 00:40:12,150
+có kỹ năng hơn một chút
+
+894
+00:40:12,150 --> 00:40:17,530
+và hỏi, Python có biết gì về bảng lương hay không?
+
+895
+00:40:17,530 --> 00:40:19,400
+"hours" có phải là một từ dành riêng hay không?
+
+896
+00:40:19,400 --> 00:40:22,350
+"rate" và "pay" có phải là các từ dành riêng hay không?
+
+897
+00:40:22,350 --> 00:40:24,290
+Python có biết những thứ này không?
+
+898
+00:40:24,290 --> 00:40:26,350
+Câu trả lời là không
+
+899
+00:40:26,350 --> 00:40:30,270
+Python xem 3 chương trình này với cái tên giống nhau
+
+900
+00:40:30,270 --> 00:40:33,260
+Chỉ là người này thật sự chọn tên biến
+
+901
+00:40:33,260 --> 00:40:34,450
+rất tệ
+
+902
+00:40:34,450 --> 00:40:37,710
+Người này chọn tên biến ít tệ hơn
+
+903
+00:40:37,710 --> 00:40:39,620
+Và người này chọn tên biến thật sự tuyệt vời
+
+904
+00:40:39,620 --> 00:40:40,810
+Và người này chọn tên biến thật sự tuyệt vời
+
+905
+00:40:40,810 --> 00:40:45,090
+Sự khác nhau giữa 2 thứ này là phong cách
+
+906
+00:40:45,090 --> 00:40:47,220
+Chúng cùng là một chương trình
+
+907
+00:40:47,220 --> 00:40:50,610
+Python đều vui vẻ như nhau với chúng
+
+908
+00:40:50,610 --> 00:40:53,630
+Nhưng con người vui nhất khi các biến
+
+909
+00:40:53,630 --> 00:40:56,180
+có tên dễ nhớ và hơi một chút
+
+910
+00:40:56,180 --> 00:40:59,870
+có tính mô tả, nội dung mong đợi chúng sẽ chứa là gì
+
+911
+00:40:59,870 --> 00:41:02,980
+Tính trợ giúp trí nhớ giúp bạn nhớ
+
+912
+00:41:02,980 --> 00:41:05,700
+bạn đã định làm gì với biến đấy khi bạn viết chương trình
+
+913
+00:41:05,700 --> 00:41:08,742
+Vẫn hơi khó hiểu khi dùng
+
+914
+00:41:08,742 --> 00:41:09,950
+những tên biến rất ngắn chỉ 1 ký tự này
+
+915
+00:41:09,950 --> 00:41:12,070
+Nó vẫn hơi khó hiểu
+
+916
+00:41:12,070 --> 00:41:15,960
+Bạn có một vài bài tập
+
+917
+00:41:15,960 --> 00:41:17,120
+ở cuối chương
+
+918
+00:41:17,120 --> 00:41:20,280
+Một trong số đó yêu cầu viết 1 chương trình
+
+919
+00:41:20,280 --> 00:41:26,450
+hỏi người dùng nhập vào số giờ, tiền công theo giờ, và tính lương
+
+920
+00:41:26,450 --> 00:41:29,500
+Tôi sẽ không làm nó ở đây, nhưng
+
+921
+00:41:29,500 --> 00:41:33,091
+đây là vài thứ lặt vặt
+
+922
+00:41:33,091 --> 00:41:34,595
+Bạn sẽ dùng hàm raw_input
+
+923
+00:41:34,595 --> 00:41:37,130
+
+924
+00:41:37,130 --> 00:41:40,630
+Nhưng nhớ rằng nó trả về 1 chuỗi ký tự
+
+925
+00:41:40,630 --> 00:41:44,862
+Nên bạn phải dùng hàm float() để chuyển nó
+
+926
+00:41:44,862 --> 00:41:46,820
+thành 1 số thực, để bạn có thể thật sự
+
+927
+00:41:46,820 --> 00:41:48,350
+tính toán
+
+928
+00:41:48,350 --> 00:41:51,220
+Sau đó bạn phải dùng toán tử nhân và lệnh print
+
+929
+00:41:51,220 --> 00:41:55,190
+nhân và in
+
+930
+00:41:55,190 --> 00:41:59,130
+kết hợp hàm raw_input, số thực, phép nhân
+
+931
+00:41:59,130 --> 00:42:05,630
+và lệnh print, để chương trình của bạn làm chính xác điều này
+
+932
+00:42:05,630 --> 00:42:08,370
+Chương 2 đến đây là hết
+
+933
+00:42:08,370 --> 00:42:11,530
+Ta đã nói về kiểu dữ liệu, từ dành riêng, biến
+
+934
+00:42:11,530 --> 00:42:14,279
+cách chọn tên biến cho dễ nhớ
+
+935
+00:42:14,279 --> 00:42:16,820
+Ta sẽ nói về điều này vài lần nữa, 
+vì chọn tên cho biến
+
+936
+00:42:16,820 --> 00:42:19,780
+luôn gây khó khăn --
+ta cũng đã nói về các toán tử
+
+937
+00:42:19,780 --> 00:42:22,410
+quyền ưu tiên giữa các toán tử, 
+ví dụ như phép nhân được thực hiện trước
+
+938
+00:42:22,410 --> 00:42:24,600
+phép cộng,
+rồi các dấu ngoặc
+
+939
+00:42:24,600 --> 00:42:27,690
+Chia số nguyên thì hơi khác thường vì kết quả bị cắt cụt
+
+940
+00:42:27,690 --> 00:42:35,190
+
+941
+00:42:35,190 --> 00:42:38,790
+9/10 = 0
+
+942
+00:42:38,790 --> 00:42:41,070
+Cắt cụt kết quả chia số nguyên là như vậy
+
+943
+00:42:41,070 --> 00:42:44,965
+Chuyển đổi kiểu dữ liệu, 
+ví dụ như hàm int() và float()
+
+944
+00:42:44,965 --> 00:42:47,900
+
+945
+00:42:47,900 --> 00:42:50,020
+Nhận dữ liệu từ người dùng qua hàm raw_input
+
+946
+00:42:50,020 --> 00:42:52,110
+Các ghi chú, là cách
+
+947
+00:42:52,110 --> 00:42:55,720
+để bạn thêm vào các giải thích 
+dễ đọc bởi con người 
+trong chương trình
+
+948
+00:42:55,720 --> 00:42:56,620
+KIENHOC.VN
+
+949
+00:42:56,620 --> 00:42:58,470
+Hẹn gặp lại các bạn trong bài giảng tiếp theo
+     
+KIENHOC.VN
+

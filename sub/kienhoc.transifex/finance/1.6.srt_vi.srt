@@ -1,0 +1,306 @@
+1
+00:00:04,864 --> 00:00:07,672
+Bây giờ, nếu bạn chú ý, và 
+nhìn vào màn hình,
+
+2
+00:00:07,672 --> 00:00:10,990
+tôi sẽ nói, và bạn sẽ theo dõi cách tôi thực hiện.
+
+3
+00:00:10,990 --> 00:00:13,620
+Nhưng hãy nhớ rằng
+tôi cũng có thể làm sai
+
+4
+00:00:13,620 --> 00:00:17,930
+Vì thế tôi đã viết các ghi chú 
+cho bạn về cách dùng Excel.
+
+5
+00:00:17,930 --> 00:00:20,550
+và nếu tôi mắc một lỗi sai ngớ ngẩn,
+ta có thể sửa nó.
+
+6
+00:00:20,550 --> 00:00:22,510
+Vậy bài toán ta đang 
+đề cập đến là gì?
+
+7
+00:00:22,510 --> 00:00:28,830
+Bài toán chúng ta đang nói đến là về
+giá trị tương lai
+
+8
+00:00:28,830 --> 00:00:33,800
+của $1000 trong vòng bao nhiêu năm,
+10 năm và với lãi suất 10% ?
+
+9
+00:00:33,800 --> 00:00:40,860
+Giờ, nếu bạn nhìn vào thanh hàm,
+tôi sẽ viết dấu bằng trước.
+
+10
+00:00:40,860 --> 00:00:44,500
+Gõ dấu bằng, và sau đó bạn hãy nhập
+thông tin mà bạn muốn tính,
+
+11
+00:00:44,500 --> 00:00:45,720
+ở đây là giá trị tương lai.
+
+12
+00:00:45,720 --> 00:00:47,870
+Ngay sau khi bạn nhấn vào giá trị tương lai và
+
+13
+00:00:47,871 --> 00:00:53,780
+và mở ngoặc đơn,
+bạn sẽ thấy hệ thống hỏi dữ liệu đầu vào.
+
+14
+00:00:53,780 --> 00:00:57,450
+Dữ liệu đầu vào cũng khá dễ hiểu, 
+ngoại trừ một khái niệm
+
+15
+00:00:57,450 --> 00:01:01,980
+mà tôi sẽ đề cập rất vắn tắt,
+và sau đó ta sẽ quay trở lại.
+
+16
+00:01:01,980 --> 00:01:03,680
+Vậy, thuật ngữ đầu tiên là 'Rate'.
+
+17
+00:01:03,680 --> 00:01:05,330
+'Rate' nghĩa là gì?
+
+18
+00:01:05,330 --> 00:01:09,620
+'Rate' chính là lãi suất,
+hãy nhập lãi suất 
+
+19
+00:01:10,640 --> 00:01:14,850
+ở dạng đúng cần nhập vào
+nghĩa là 0.1, đúng không ạ?
+
+20
+00:01:14,850 --> 00:01:17,539
+Bạn đừng để ở dạng phần trăm.
+
+21
+00:01:17,540 --> 00:01:21,750
+Một số phần mềm tính sẽ cho phép bạn nhập như vậy,
+nhưng với Excel, bạn phải nhập 0.1 chứ không phải 10.
+
+22
+00:01:21,750 --> 00:01:27,400
+Sau đó để dấu phẩy.
+
+23
+00:01:27,400 --> 00:01:32,190
+VÀ nếu bạn để ý, tiếp theo, 
+hệ thống sẽ hỏi số kỳ .
+
+24
+00:01:32,190 --> 00:01:33,740
+Giờ bạn đã biết số kỳ là bao nhiêu rồi, đúng không?
+
+25
+00:01:33,740 --> 00:01:34,520
+Excel cũng vậy.
+
+26
+00:01:34,520 --> 00:01:37,896
+Như vậy, bài toán đã được ghi đủ thông tin, như tôi đã nói
+số kỳ, và bạn có thể thấy.
+
+27
+00:01:37,896 --> 00:01:43,290
+Nếu bạn nhập 10,
+và tiếp tục lại là một dấu phẩy,
+
+28
+00:01:43,290 --> 00:01:47,860
+bây giờ sẽ đến phần tương đối rắc rối
+mà ta chưa từng gặp phải.
+
+29
+00:01:47,860 --> 00:01:51,590
+Ta đang phải tính một khoản thanh toán
+được mang sang sau 10 năm nữa.
+
+30
+00:01:51,590 --> 00:01:56,80
+PMT là viết tắt của từ gì?
+Bạn có thể nhận khoản thanh toán hàng năm, đúng không?
+
+31
+00:01:56,80 --> 00:01:59,808
+Như vậy, hiện tại bạn không 
+nhận được gì sau mốc 0.
+
+32
+00:01:59,808 --> 00:02:06,280
+Vậy với PMT, một thuật ngữ chỉ khoản thanh toán,
+chúng ta sẽ sớm thấy thôi, bạn hãy nhập 0.
+
+33
+00:02:06,280 --> 00:02:10,690
+Vì nếu bạn nhìn vào trục thời gian,
+không có gì diễn ra giữa mốc 0 và 10.
+
+34
+00:02:10,690 --> 00:02:15,178
+Ở mốc 0, bạn nhập $1000,
+và bạn không nhập bất kỳ giá trị nào ở mốc 1, 2
+
+35
+00:02:15,178 --> 00:02:16,667
+3, 4, 5, 6.
+
+36
+00:02:16,667 --> 00:02:19,995
+Nếu bạn nhập,
+những khoản PMT này sẽ được thực hiện.
+
+37
+00:02:19,995 --> 00:02:25,748
+Vậy, hãy nhập 0 cho PMT, 
+và hệ thống sẽ hỏi bạn PV.
+
+38
+00:02:25,748 --> 00:02:27,745
+Và chúng ta biết PV là bao nhiêu rồi.
+
+39
+00:02:27,745 --> 00:02:31,818
+PV là $1000, vậy
+
+40
+00:02:31,818 --> 00:02:36,75
+câu trả lời bạn nhận được
+
+41
+00:02:36,75 --> 00:02:40,518
+sẽ hiển thị ngay trước mắt bạn
+
+42
+00:02:40,518 --> 00:02:44,237
+$2,593.74.
+
+43
+00:02:44,237 --> 00:02:48,490
+Bạn biết đấy, đôi khi tôi đùa rằng,
+hãy bỏ qua phần xu, và những con số đằng sau.
+
+44
+00:02:48,490 --> 00:02:52,47
+Nhưng đôi lúc, nếu con số
+là hàng tỷ đô la,
+
+45
+00:02:52,47 --> 00:02:54,627
+thì bạn sẽ không muốn tròn đâu.
+
+46
+00:02:54,627 --> 00:02:58,635
+Vậy, ở đây, điều gì đã xảy ra với $1000?
+
+47
+00:02:58,635 --> 00:03:05,70
+$1000 đã trở thành $2,593, gần $2,600.
+
+48
+00:03:05,70 --> 00:03:08,230
+Hãy tạm dừng một chút và
+suy nghĩ việc tiếp theo.
+
+49
+00:03:08,230 --> 00:03:12,280
+Vây, giả sử không tính lãi kép,
+bạn sẽ nhận được bao nhiêu sau 10 năm?
+
+50
+00:03:13,830 --> 00:03:15,810
+Như tôi đã nói,
+bạn có thể dừng lại và suy nghĩ,
+
+51
+00:03:15,810 --> 00:03:17,870
+nhưng tôi sẽ tiếp tục đề cập đến những vấn đề đơn giản.
+
+52
+00:03:17,870 --> 00:03:23,280
+Nếu chỉ có khoản lãi đơn,
+bạn sẽ nhận được $100 mỗi năm,
+
+53
+00:03:23,280 --> 00:03:24,830
+đây là khoản 10% của $1000.
+
+54
+00:03:26,20 --> 00:03:27,790
+Vậy bạn sẽ nhận được bao nhiêu?
+
+55
+00:03:27,790 --> 00:03:31,799
+Là $1000
+$100 nhân 10.
+
+56
+00:03:31,800 --> 00:03:34,915
+Cộng khoản này với số tiền ban đầu,
+bạn sẽ nhận được bao nhiêu?
+
+57
+00:03:34,915 --> 00:03:42,284
+Là $2000. Nhưng ở đây 
+bạn nhận được gần $2600, $2,593.74.
+
+58
+00:03:42,284 --> 00:03:45,640
+Bạn nhận được khoản tiền dôi ra như thế này
+
+59
+00:03:45,640 --> 00:03:50,640
+hoàn toàn là bởi vì trên thực tế,
+lãi sinh thêm lãi.
+
+60
+00:03:50,640 --> 00:03:52,730
+Tôi hy vọng bạn sẽ thấy bài học này bổ ích.
+
+61
+00:03:52,730 --> 00:03:56,310
+Tôi khuyến khích các bạn 
+sử dụng bảng tính Excel. 
+
+62
+00:03:56,310 --> 00:04:01,360
+Và tôi biết tôi đang thực hiện những đoạn phim xúc tích
+nhưng là có dụng ý cả
+
+63
+00:04:01,360 --> 00:04:05,370
+Tôi muốn bạn không chỉ hiểu khái niệm
+mà còn có khả năng
+
+64
+00:04:05,370 --> 00:04:09,970
+thực hành cùng tôi, bởi vì,
+bây giờ ta mới chỉ học những khái niệm đơn giản.
+
+65
+00:04:09,970 --> 00:04:12,518
+Tôi đã xây dựng bài giảng phức tạp về kiến thức nhưng
+
+66
+00:04:12,518 --> 00:04:15,660
+nhưng khi thực hành sẽ khá đơn giản
+nếu bạn biết cách sử dụng Excel.
+

@@ -1,0 +1,429 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/JLM0bQsdwKc
+
+1
+00:00:05,689 --> 00:00:08,359
+hello again and welcome back to operations
+management
+
+2
+00:00:08,359 --> 00:00:11,628
+in this lecture we are going to be
+talking about inventory
+
+3
+00:00:11,628 --> 00:00:15,879
+we're gonna start with just a brief
+introduction as to what
+
+4
+00:00:15,880 --> 00:00:20,849
+is inventory and the kinds of inventory:
+as well as the costs associated with
+
+5
+00:00:20,849 --> 00:00:21,710
+inventory
+
+6
+00:00:21,710 --> 00:00:25,789
+beginning with the types of inventory
+
+7
+00:00:25,789 --> 00:00:29,900
+we know that there're different kinds of
+inventory out there
+
+8
+00:00:29,899 --> 00:00:34,689
+the first is input inventory when you're
+thinking about a process
+
+9
+00:00:34,689 --> 00:00:37,738
+and you're looking at the items are
+going into the process
+
+10
+00:00:37,738 --> 00:00:41,629
+that's your input inventory if it's
+sitting and waiting
+
+11
+00:00:41,630 --> 00:00:45,120
+at the beginning of a process that's your
+input inventory
+
+12
+00:00:45,119 --> 00:00:50,479
+when it's in the process and it emits
+div activities or between activities
+
+13
+00:00:50,479 --> 00:00:51,898
+inside the process
+
+14
+00:00:51,899 --> 00:00:55,910
+that our in process inventory most
+
+15
+00:00:55,909 --> 00:01:00,119
+of commonly known as work in process or
+work in progress
+
+16
+00:01:00,119 --> 00:01:03,349
+and the output inventory are
+
+17
+00:01:03,350 --> 00:01:07,300
+items that have been completed but have
+not left the barrier
+
+18
+00:01:07,299 --> 00:01:11,219
+of the process you know we haven't
+shipped it out of the process
+
+19
+00:01:11,219 --> 00:01:16,170
+to the next process so these are the
+three kinds of inventory that we have
+
+20
+00:01:16,170 --> 00:01:20,810
+and when we add them together that's the total
+inventory for process
+
+21
+00:01:20,810 --> 00:01:24,390
+we know from Little's Law
+
+22
+00:01:24,390 --> 00:01:27,868
+that our average inventory equals to
+average throughput rate
+
+23
+00:01:27,868 --> 00:01:33,540
+times our average flow time we also
+know that there is a certain amount of
+
+24
+00:01:33,540 --> 00:01:35,479
+inventory that is needed
+
+25
+00:01:35,478 --> 00:01:40,908
+for any particular process but why do we
+use inventory
+
+26
+00:01:40,909 --> 00:01:45,329
+well processes can have
+
+27
+00:01:45,328 --> 00:01:48,759
+fluctuations so by having buffers
+
+28
+00:01:48,759 --> 00:01:52,868
+inventory is a buffer it allows
+
+29
+00:01:52,868 --> 00:01:56,239
+one process to be slightly separated from
+another
+
+30
+00:01:56,239 --> 00:02:00,560
+so if one process is running quickly and
+there's inventory
+
+31
+00:02:00,560 --> 00:02:05,460
+it can continue running if there's
+another process is running slowly
+
+32
+00:02:05,459 --> 00:02:09,509
+we can allow inventory to build-up so what
+happens is that
+
+33
+00:02:09,509 --> 00:02:13,459
+we have buffer that separate each of
+these processes from each other
+
+34
+00:02:13,459 --> 00:02:20,459
+as well as from the external environment
+when we actually think about inventory
+
+35
+00:02:21,360 --> 00:02:25,090
+we think about using it for four major
+reasons
+
+36
+00:02:25,090 --> 00:02:29,700
+one is economies of scale by using
+inventory
+
+37
+00:02:29,699 --> 00:02:32,729
+to allow us to build up production
+
+38
+00:02:32,729 --> 00:02:36,939
+or increase capacity we can spread fixed
+cost
+
+39
+00:02:36,939 --> 00:02:41,889
+over a large production quantity if you
+think about when you're buying a screen
+
+40
+00:02:41,889 --> 00:02:42,909
+printed shirt
+
+41
+00:02:42,909 --> 00:02:46,068
+no matter how many other item you buy
+
+42
+00:02:46,068 --> 00:02:50,030
+there is a cost to have the screen
+printing done
+
+43
+00:02:50,030 --> 00:02:53,769
+to actually designed the print whether you
+buy one
+
+44
+00:02:53,769 --> 00:02:57,140
+t-shirt 5 t-shirts a hundred t-shirts
+
+45
+00:02:57,139 --> 00:03:00,299
+there's one fixed cost so for
+
+46
+00:03:00,300 --> 00:03:04,159
+able to spread that fixed cost over a
+hundred T-shirts
+
+47
+00:03:04,158 --> 00:03:08,158
+the individual cost per t-shirt
+
+48
+00:03:08,158 --> 00:03:12,199
+goes down that we mean by spreading fix
+costs
+
+49
+00:03:12,199 --> 00:03:17,539
+over the large production quantity for
+production capacity smoothing
+
+50
+00:03:17,539 --> 00:03:21,919
+we know that demand fluctuates it is
+never ever
+
+51
+00:03:21,919 --> 00:03:26,568
+absolutely constant but we don't wanna
+keep hiring
+
+52
+00:03:26,568 --> 00:03:30,708
+or laying off people we don't wanna
+have to keep running second shifts
+
+53
+00:03:30,709 --> 00:03:34,209
+third shifts for production it's very
+
+54
+00:03:34,209 --> 00:03:37,439
+hmm not very efficient to do that
+
+55
+00:03:37,439 --> 00:03:40,519
+and so what we do is we use inventory
+
+56
+00:03:40,519 --> 00:03:43,569
+to smooth that out we allow inventory to
+
+57
+00:03:43,568 --> 00:03:47,798
+increase and decrease when demand
+fluctuates
+
+58
+00:03:47,799 --> 00:03:53,219
+for example when we considered the whole
+holiday season in December
+
+59
+00:03:53,219 --> 00:03:58,469
+there are some products don't have a lot
+of demand throughout the year
+
+60
+00:03:58,469 --> 00:04:02,019
+but have a very large demand in November
+and December
+
+61
+00:04:02,019 --> 00:04:05,469
+one way of handling that is to have
+
+62
+00:04:05,469 --> 00:04:09,639
+a smooth production all throughout the
+year
+
+63
+00:04:09,639 --> 00:04:15,268
+allowing inventory to build up so that
+we can meet that demand in November and
+
+64
+00:04:15,269 --> 00:04:15,980
+December
+
+65
+00:04:15,979 --> 00:04:19,199
+the third way we use inventory
+
+66
+00:04:19,199 --> 00:04:23,750
+is to prevent shortages that's what's
+known as stock out protection
+
+67
+00:04:23,750 --> 00:04:27,430
+we use safety stock this is extra
+
+68
+00:04:27,430 --> 00:04:30,939
+inventory to prevent us from running out
+
+69
+00:04:30,939 --> 00:04:36,019
+said that week can't disappoint our
+customers and so we don't have to stop a
+
+70
+00:04:36,019 --> 00:04:37,698
+process
+
+71
+00:04:37,699 --> 00:04:41,590
+and the last way we look at inventory
+is for price speculation
+
+72
+00:04:41,589 --> 00:04:45,849
+if we think that the price of a product
+that we use is gonna go up
+
+73
+00:04:45,850 --> 00:04:52,850
+we may buy more a bit now to prevent a
+cost later on
+
+74
+00:04:53,300 --> 00:04:57,020
+but all these good things about using
+inventory comes with
+
+75
+00:04:57,019 --> 00:05:01,649
+a cost there actual cost of holding
+inventory
+
+76
+00:05:01,649 --> 00:05:05,319
+they are the physical holding costs once
+we actually have
+
+77
+00:05:05,319 --> 00:05:10,120
+items in our process we have to store
+it somewhere
+
+78
+00:05:10,120 --> 00:05:13,689
+we have warehouses we have to keep track
+of it
+
+79
+00:05:13,689 --> 00:05:17,699
+sometimes we might be on climate control
+
+80
+00:05:17,699 --> 00:05:21,430
+all of these are physical holding costs
+the cost of
+
+81
+00:05:21,430 --> 00:05:26,840
+storing the inventory another kind of
+cost associated with inventory
+
+82
+00:05:26,839 --> 00:05:30,250
+is opportunity costs it's the cost of lost
+
+83
+00:05:30,250 --> 00:05:33,430
+investment the money that we have tied
+up in
+
+84
+00:05:33,430 --> 00:05:36,900
+inventory can't be used for anything
+else
+
+85
+00:05:36,899 --> 00:05:41,799
+you can't use this to find another
+project or even to put in a bank
+
+86
+00:05:41,800 --> 00:05:44,870
+gaining interest so even though we had
+
+87
+00:05:44,870 --> 00:05:49,860
+reasons to use inventory we also have to
+balance it with the cost
+
+88
+00:05:49,860 --> 00:05:54,360
+of inventory so that's an introduction
+to inventory
+
+89
+00:05:54,360 --> 00:05:59,280
+in the next session we're gonna
+talk about the total cost equation
+
+90
+00:05:59,279 --> 00:06:03,068
+so we can go on and try and figure out
+how much of
+
+91
+00:06:03,069 --> 00:06:06,289
+any particular item to order at a time. I'll see you then.
+

@@ -1,0 +1,887 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/Gagr_KyDYAA
+
+1
+00:00:00,000 --> 00:00:02,950
+DR. JONATHAN VALVANO: The fun
+problem we're going to solve,
+
+2
+00:00:02,950 --> 00:00:07,140
+is to build a robot that
+moves around in a box.
+
+3
+00:00:07,140 --> 00:00:14,920
+And so, we're going to
+have walls around our robot
+
+4
+00:00:14,920 --> 00:00:18,040
+and we're going to place it inside.
+
+5
+00:00:18,040 --> 00:00:20,520
+So the problem we're
+going to solve today,
+
+6
+00:00:20,520 --> 00:00:23,790
+is what happens when the
+robot approaches a wall.
+
+7
+00:00:23,790 --> 00:00:32,580
+So here's our stick figure robot
+and it is moving in this direction
+
+8
+00:00:32,580 --> 00:00:36,890
+and when it hits the wall, we're
+going to make it rotate so it follows
+
+9
+00:00:36,890 --> 00:00:39,970
+along the wall.
+
+10
+00:00:39,970 --> 00:00:46,660
+Similarly, if the robot is
+traveling in the other direction,
+
+11
+00:00:46,660 --> 00:00:53,110
+relative to the wall-- there's our robot
+and it is traveling in this direction,
+
+12
+00:00:53,110 --> 00:00:59,280
+we're going to turn in the other
+direction and follow the wall that way.
+
+13
+00:00:59,280 --> 00:01:03,400
+In order to make this happen, the
+robot's going to need a way to move.
+
+14
+00:01:03,400 --> 00:01:11,210
+So, we're going to place two
+stepper motors on the wheels, such
+
+15
+00:01:11,210 --> 00:01:15,610
+that if the stepper motors are
+both turned in the same direction,
+
+16
+00:01:15,610 --> 00:01:16,220
+it will move.
+
+17
+00:01:16,220 --> 00:01:18,800
+
+18
+00:01:18,800 --> 00:01:24,150
+So, if the stepper motors
+are rotating, it will move.
+
+19
+00:01:24,150 --> 00:01:27,840
+The second thing we're going
+to have to add, is sensors.
+
+20
+00:01:27,840 --> 00:01:31,150
+And so we're going to add two
+sensors, two bump sensors,
+
+21
+00:01:31,150 --> 00:01:38,965
+on the front of the robot, so I
+can tell if I've hit the wall.
+
+22
+00:01:38,965 --> 00:01:42,520
+DR. RAMESH YERRABALLI: So,
+in the scenario at the top,
+
+23
+00:01:42,520 --> 00:01:45,090
+you mean that when it
+hits the wall, it's
+
+24
+00:01:45,090 --> 00:01:48,240
+going to be the left sensor that's
+going to strike the wall first?
+
+25
+00:01:48,240 --> 00:01:50,110
+DR. JONATHAN VALVANO: OK, that's right.
+
+26
+00:01:50,110 --> 00:01:58,060
+So, if the left sensor hits first,
+we are then going to turn right.
+
+27
+00:01:58,060 --> 00:02:08,803
+Conversely, if the right sensor
+hits first, we will then turn left.
+
+28
+00:02:08,803 --> 00:02:10,594
+DR. RAMESH YERRABALLI:
+So, how are we going
+
+29
+00:02:10,594 --> 00:02:14,340
+to interface this robot
+to our microcontroller?
+
+30
+00:02:14,340 --> 00:02:17,280
+DR. JONATHAN VALVANO: Let's
+begin with the battery.
+
+31
+00:02:17,280 --> 00:02:23,287
+Because we have motors, we're not going
+to hook up the launchpad to the motors.
+
+32
+00:02:23,287 --> 00:02:24,120
+We'll use a battery.
+
+33
+00:02:24,120 --> 00:02:27,104
+
+34
+00:02:27,104 --> 00:02:29,530
+DR. RAMESH YERRABALLI: This
+will protect the launchpad
+
+35
+00:02:29,530 --> 00:02:31,520
+when the motors draw too much current.
+
+36
+00:02:31,520 --> 00:02:32,840
+DR. JONATHAN VALVANO:
+Excellent, excellent.
+
+37
+00:02:32,840 --> 00:02:33,340
+Yes.
+
+38
+00:02:33,340 --> 00:02:36,040
+
+39
+00:02:36,040 --> 00:02:40,090
+In order to make the launchpad
+run, we'll use a regulator.
+
+40
+00:02:40,090 --> 00:02:45,750
+And this will change our 8.4 volts,
+from the battery, into 5 volts.
+
+41
+00:02:45,750 --> 00:02:48,880
+And we'll tie that to
+Vbus to our launchpad.
+
+42
+00:02:48,880 --> 00:02:55,200
+
+43
+00:02:55,200 --> 00:02:56,690
+And the ground goes to ground.
+
+44
+00:02:56,690 --> 00:02:59,820
+
+45
+00:02:59,820 --> 00:03:02,630
+So, now the battery's
+running the launchpad.
+
+46
+00:03:02,630 --> 00:03:07,600
+To interface the motors, what I'm
+going to need is a motor driver.
+
+47
+00:03:07,600 --> 00:03:14,130
+And so I'm going to use two
+L293s to drive the motor.
+
+48
+00:03:14,130 --> 00:03:22,810
+And the stepper motors have two
+coils, A and B. We have two L293s
+
+49
+00:03:22,810 --> 00:03:25,270
+because we have two stepper motors.
+
+50
+00:03:25,270 --> 00:03:29,920
+The left stepper motor and
+the right stepper motor.
+
+51
+00:03:29,920 --> 00:03:38,290
+And we're going to connect, or control,
+the motors with a parallel output port.
+
+52
+00:03:38,290 --> 00:03:42,340
+So, this is going to be PB7 through PB4.
+
+53
+00:03:42,340 --> 00:03:45,330
+And this is the right motor.
+
+54
+00:03:45,330 --> 00:03:52,870
+And we're going to have PB3 through
+PB0 four pins going to the left motor.
+
+55
+00:03:52,870 --> 00:03:56,105
+It's very important
+to watch the current.
+
+56
+00:03:56,105 --> 00:04:01,560
+The current across the motors is going
+to come from the battery connected
+
+57
+00:04:01,560 --> 00:04:15,250
+to my L293s, go across the coil, out the
+ground pins, and back to the battery.
+
+58
+00:04:15,250 --> 00:04:19,089
+And this current here,
+across these coils,
+
+59
+00:04:19,089 --> 00:04:24,870
+does not pass through the
+launchpad or the microcontroller.
+
+60
+00:04:24,870 --> 00:04:28,690
+So, it goes directly from
+the battery, to the driver,
+
+61
+00:04:28,690 --> 00:04:31,480
+out the ground of the driver,
+and back to the battery.
+
+62
+00:04:31,480 --> 00:04:34,030
+DR. RAMESH YERRABALLI:
+What about the inputs, Jon?
+
+63
+00:04:34,030 --> 00:04:38,540
+DR. JONATHAN VALVANO: Yeah, we've got
+to connect up to inputs, don't we?
+
+64
+00:04:38,540 --> 00:04:44,320
+We've got two bump sensors, so we're
+going to tie them to PE0 and PE1.
+
+65
+00:04:44,320 --> 00:04:48,640
+The left bump sensor
+is going to go to PE1
+
+66
+00:04:48,640 --> 00:04:52,070
+and the right bump
+sensor will go to PE0.
+
+67
+00:04:52,070 --> 00:04:54,020
+These are going to be positive logic.
+
+68
+00:04:54,020 --> 00:04:58,004
+Again, if the right bumper
+hits, this will be a 1.
+
+69
+00:04:58,004 --> 00:04:59,920
+And if the left bumper
+hits, this will be a 1.
+
+70
+00:04:59,920 --> 00:05:02,420
+DR. RAMESH YERRABALLI: So, these
+are similar to the switches
+
+71
+00:05:02,420 --> 00:05:08,070
+we saw, except they look more like
+bump sensors and not switches.
+
+72
+00:05:08,070 --> 00:05:11,230
+DR. JONATHAN VALVANO:
+Yeah, just like those.
+
+73
+00:05:11,230 --> 00:05:16,350
+Let's look at how the microcontroller
+controls the stepper motors.
+
+74
+00:05:16,350 --> 00:05:21,810
+The stepper motors each have
+two coils, two windings.
+
+75
+00:05:21,810 --> 00:05:24,760
+One is called A and
+one is called B. There
+
+76
+00:05:24,760 --> 00:05:27,300
+are four pins, which
+output to the motors.
+
+77
+00:05:27,300 --> 00:05:34,400
+If we output a 5, which is
+going to be a 0, 1, 0, 1,
+
+78
+00:05:34,400 --> 00:05:40,750
+we see that current across the coil
+A will go up because there's a 1 here
+
+79
+00:05:40,750 --> 00:05:42,460
+and a 0 there.
+
+80
+00:05:42,460 --> 00:05:48,110
+Similarly, the current will
+go up across the B coil.
+
+81
+00:05:48,110 --> 00:05:53,610
+If we now change the output
+to a 6, what that will do,
+
+82
+00:05:53,610 --> 00:05:57,110
+is that will flip the
+current on the B coil.
+
+83
+00:05:57,110 --> 00:06:01,020
+The B coil is now going to
+have current which goes down.
+
+84
+00:06:01,020 --> 00:06:05,850
+The A current still goes up.
+
+85
+00:06:05,850 --> 00:06:11,810
+This step is going to affect
+a change in the motor.
+
+86
+00:06:11,810 --> 00:06:17,590
+And so, if this is the motor
+here and we look at the angle
+
+87
+00:06:17,590 --> 00:06:26,080
+that this motor is at,
+this change from 5 to a 6
+
+88
+00:06:26,080 --> 00:06:32,330
+will cause the motor to
+rotate by an angle, which
+
+89
+00:06:32,330 --> 00:06:35,080
+is determined by the
+physics of the motor.
+
+90
+00:06:35,080 --> 00:06:38,535
+In our case, this angle is
+going to be 1.8 degrees.
+
+91
+00:06:38,535 --> 00:06:41,490
+DR. RAMESH YERRABALLI: So
+when I buy stepper motors,
+
+92
+00:06:41,490 --> 00:06:46,040
+I choose my stepper
+motor based on what angle
+
+93
+00:06:46,040 --> 00:06:49,097
+it has to rotate in each step that
+I that I write to a stepper motor?
+
+94
+00:06:49,097 --> 00:06:50,180
+DR. JONATHAN VALVANO: Yes.
+
+95
+00:06:50,180 --> 00:06:58,380
+This one has 200 steps per
+rotation But we're not done.
+
+96
+00:06:58,380 --> 00:06:59,320
+We have two more.
+
+97
+00:06:59,320 --> 00:07:02,880
+If we output a 10, what
+will happen is we're
+
+98
+00:07:02,880 --> 00:07:07,490
+going to rotate, or flip the
+current, on the other coil.
+
+99
+00:07:07,490 --> 00:07:13,650
+And so now because the A coil sees
+a 1, 0, its current will go down.
+
+100
+00:07:13,650 --> 00:07:18,460
+The B coil is still 1, 0,
+so it is also going down.
+
+101
+00:07:18,460 --> 00:07:26,745
+And the motor will rotate
+one more time of 1.8 degrees.
+
+102
+00:07:26,745 --> 00:07:34,180
+We've got one more and that
+is a 9, which is a 1, 0, 0, 1.
+
+103
+00:07:34,180 --> 00:07:39,040
+You see each time we step it, we're
+flipping one of the currents in one
+
+104
+00:07:39,040 --> 00:07:41,890
+of the coils.
+
+105
+00:07:41,890 --> 00:07:50,570
+Again, the A coil remained down-- 1,
+0-- but the B coil flipped to be a 0, 1.
+
+106
+00:07:50,570 --> 00:07:55,560
+This pattern of 5, 6, 10, 9, is
+repeated over and over and over again.
+
+107
+00:07:55,560 --> 00:08:07,560
+So, it goes 5, 6, 10, 9, 5, 6, 10,
+9, repeated over and over again.
+
+108
+00:08:07,560 --> 00:08:13,390
+Each time we step to a new
+value, it rotates 1.8 degrees.
+
+109
+00:08:13,390 --> 00:08:20,980
+
+110
+00:08:20,980 --> 00:08:27,740
+So, it goes from a 5,
+6, 10, 9, 5, 6, 10, 9.
+
+111
+00:08:27,740 --> 00:08:29,240
+It rotates.
+
+112
+00:08:29,240 --> 00:08:32,330
+So, in order to move
+both motors clockwise,
+
+113
+00:08:32,330 --> 00:08:44,410
+we're going to output the pattern 0x55,
+0x66, 0xAA, 0x99, over and over again.
+
+114
+00:08:44,410 --> 00:08:49,850
+The speed at which it rotates is
+going to be 1.8 degrees divided
+
+115
+00:08:49,850 --> 00:08:54,180
+by the time in between outputs.
+
+116
+00:08:54,180 --> 00:08:56,440
+So, in summary, with a
+stepper motor, we could
+
+117
+00:08:56,440 --> 00:09:02,930
+control both the position of the
+shaft by stepping it 5,6, 10,9,
+
+118
+00:09:02,930 --> 00:09:06,130
+and we can also control
+the speed at which it runs,
+
+119
+00:09:06,130 --> 00:09:09,970
+by varying the time between steps.
+
+120
+00:09:09,970 --> 00:09:14,635
+So, let's build the
+finite state machine.
+
+121
+00:09:14,635 --> 00:09:18,100
+DR. RAMESH YERRABALLI: So, we
+can do a state transition graph,
+
+122
+00:09:18,100 --> 00:09:22,990
+but first we'll have to fill in all
+the elements of our finite state
+
+123
+00:09:22,990 --> 00:09:27,780
+machine, which is the set of inputs.
+
+124
+00:09:27,780 --> 00:09:29,190
+DR. JONATHAN VALVANO: Inputs.
+
+125
+00:09:29,190 --> 00:09:34,030
+And we saw here, we have
+PE1 and PE0 are our inputs.
+
+126
+00:09:34,030 --> 00:09:37,520
+DR. RAMESH YERRABALLI: And
+we have our set of outputs.
+
+127
+00:09:37,520 --> 00:09:40,330
+DR. JONATHAN VALVANO:
+OK, we have outputs,
+
+128
+00:09:40,330 --> 00:09:43,620
+which we saw were PB7 through PB0.
+
+129
+00:09:43,620 --> 00:09:47,474
+
+130
+00:09:47,474 --> 00:09:49,890
+DR. RAMESH YERRABALLI: And
+then we have the set of states.
+
+131
+00:09:49,890 --> 00:09:53,200
+DR. JONATHAN VALVANO: Ah, states.
+
+132
+00:09:53,200 --> 00:09:56,800
+We're going to have lots of states
+in our finite state machine.
+
+133
+00:09:56,800 --> 00:10:06,809
+
+134
+00:10:06,809 --> 00:10:08,600
+DR. RAMESH YERRABALLI:
+So, the state's will
+
+135
+00:10:08,600 --> 00:10:15,850
+correspond to all the configurations
+we can find the robot in.
+
+136
+00:10:15,850 --> 00:10:22,760
+DR. JONATHAN VALVANO: So, we will use
+the states to specify what we know,
+
+137
+00:10:22,760 --> 00:10:24,240
+what we believe to be true.
+
+138
+00:10:24,240 --> 00:10:29,686
+
+139
+00:10:29,686 --> 00:10:30,185
+Two more.
+
+140
+00:10:30,185 --> 00:10:34,640
+DR. RAMESH YERRABALLI: And then we
+need the state transition graph,
+
+141
+00:10:34,640 --> 00:10:38,672
+which is going to tell us how we
+move from one state to another.
+
+142
+00:10:38,672 --> 00:10:40,020
+DR. JONATHAN VALVANO: OK.
+
+143
+00:10:40,020 --> 00:10:47,080
+So, for instance, if no switches
+are pressed, no bumpers are pressed,
+
+144
+00:10:47,080 --> 00:10:52,780
+we are going to go in
+this direction and move.
+
+145
+00:10:52,780 --> 00:10:57,416
+There's one more and that
+is output determination.
+
+146
+00:10:57,416 --> 00:11:05,830
+Output determination will
+cause something to happen.
+
+147
+00:11:05,830 --> 00:11:10,340
+So, we're going to use the
+outputs to change our world.
+
+148
+00:11:10,340 --> 00:11:15,180
+And in particular, we saw
+to move the robot forward
+
+149
+00:11:15,180 --> 00:11:20,863
+we're going to output a
+0x55, 0x66, 0xAA, and 0x99.
+
+150
+00:11:20,863 --> 00:11:25,810
+That will rotate the motor forward.
+
+151
+00:11:25,810 --> 00:11:31,166
+DR. RAMESH YERRABALLI: But what if I
+want to rotate the robot backwards?
+
+152
+00:11:31,166 --> 00:11:32,665
+DR. JONATHAN VALVANO: Oh, backwards.
+
+153
+00:11:32,665 --> 00:11:35,180
+
+154
+00:11:35,180 --> 00:11:38,650
+To go backwards-- in other
+words, if both bumpers are hit--
+
+155
+00:11:38,650 --> 00:11:43,350
+I can actually rotate the
+motor in the other direction.
+
+156
+00:11:43,350 --> 00:11:52,260
+So, if I output a 0x99, 0xAA, 0x66,
+0x55, because both sensors were hit,
+
+157
+00:11:52,260 --> 00:11:55,357
+both motors will rotate
+in the other direction
+
+158
+00:11:55,357 --> 00:11:56,690
+and the robot will go backwards.
+
+159
+00:11:56,690 --> 00:11:59,780
+
+160
+00:11:59,780 --> 00:12:07,510
+If I hit the right bumper,
+I want to turn left.
+
+161
+00:12:07,510 --> 00:12:14,350
+And we can turn left by rotating
+one of the steppers in one direction
+
+162
+00:12:14,350 --> 00:12:16,830
+and the other in the other direction.
+
+163
+00:12:16,830 --> 00:12:21,230
+So, we see here, that one
+motor is going 5, 6, 10, 9,
+
+164
+00:12:21,230 --> 00:12:28,530
+while the other is going 5, 9, 10,
+6, and that will turn the robot left.
+
+165
+00:12:28,530 --> 00:12:33,030
+If I want to go right, in other
+words, if the other switches hit
+
+166
+00:12:33,030 --> 00:12:35,790
+and I want to turn
+right, I'll reverse it.
+
+167
+00:12:35,790 --> 00:12:43,340
+
+168
+00:12:43,340 --> 00:12:47,810
+In this way, one motor is going
+5, 9, 10, 6, and the other
+
+169
+00:12:47,810 --> 00:12:51,632
+is going 5, 6, 10, 9,
+and this will turn right.
+
+170
+00:12:51,632 --> 00:13:00,010
+
+171
+00:13:00,010 --> 00:13:04,760
+Again, the speed in
+which I rotate the motors
+
+172
+00:13:04,760 --> 00:13:09,820
+is dependent on the delta-t,
+the time between outputs,
+
+173
+00:13:09,820 --> 00:13:14,300
+so I can choose to speed
+in degrees per second
+
+174
+00:13:14,300 --> 00:13:17,365
+by specifying the time between states.
+
+175
+00:13:17,365 --> 00:13:19,280
+DR. RAMESH YERRABALLI:
+So, one of the things
+
+176
+00:13:19,280 --> 00:13:22,570
+we want to make sure when we
+have a state transition graph
+
+177
+00:13:22,570 --> 00:13:31,420
+is we will indicate every label,
+every arrow has to be labeled,
+
+178
+00:13:31,420 --> 00:13:36,420
+which means that we have to account
+for all inputs in all states.
+
+179
+00:13:36,420 --> 00:13:39,655
+So, Jon, will you complete the graph?
+
+180
+00:13:39,655 --> 00:13:41,350
+DR. JONATHAN VALVANO: Of course.
+
+181
+00:13:41,350 --> 00:13:45,630
+So, in this case, regardless
+of what the inputs going to be,
+
+182
+00:13:45,630 --> 00:13:52,030
+I'm going to rotate a whole way around.
+
+183
+00:13:52,030 --> 00:14:01,186
+And over here, regardless of what this
+one is, I'm going to rotate around.
+
+184
+00:14:01,186 --> 00:14:06,840
+And so, you can see the decision will
+be made when it gets to the top state.
+
+185
+00:14:06,840 --> 00:14:17,060
+Similarly here, this one is 11, 11, 11.
+
+186
+00:14:17,060 --> 00:14:20,640
+And this one is going to be a 01, 01.
+
+187
+00:14:20,640 --> 00:14:24,680
+
+188
+00:14:24,680 --> 00:14:35,280
+And this is going to be 00,
+01, 10, 00, 01, 10, 00, 01, 10.
+
+189
+00:14:35,280 --> 00:14:40,420
+So, we specified for every
+state, all possible next states.
+
+190
+00:14:40,420 --> 00:14:45,000
+So, each state has four next states.

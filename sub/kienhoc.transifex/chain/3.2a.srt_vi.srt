@@ -1,0 +1,160 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/f6iXAPQAGpo
+
+1
+00:00:00,500 --> 00:00:03,580
+Trong bài học này, ta sẽ bao trùm chương dự báo
+
+2
+00:00:03,580 --> 00:00:06,460
+bằng việc thảo luận về một số trường hợp đặc biệt hoặc kĩ thuật đặc biệt
+
+3
+00:00:06,460 --> 00:00:09,400
+mà bạn có thể dùng hoặc có thể bắt gặp trong sự nghiệp
+
+4
+00:00:09,400 --> 00:00:10,960
+dự báo của mình.
+
+5
+00:00:10,960 --> 00:00:13,780
+Thứ đầu tiên ta sẽ tập trung là phân tích quan hệ nguyên nhân - kết quả.
+
+6
+00:00:13,780 --> 00:00:15,730
+Giờ, ta đã thấy kĩ thuật này trước đây.
+
+7
+00:00:15,730 --> 00:00:18,220
+Ta sẽ sử dụng phương pháp hồi quy bình phương nhỏ nhất.
+
+8
+00:00:18,220 --> 00:00:20,560
+Và toàn bộ ý tưởng về phân tích quan hệ nguyên nhân - kết quả
+
+9
+00:00:20,560 --> 00:00:22,590
+là khác với phương pháp liên tiến lũy thừa, 
+
+10
+00:00:22,590 --> 00:00:25,330
+ở đó nó là một hộp đen, khi ta cho rằng đây là những mẫu
+
+11
+00:00:25,330 --> 00:00:27,980
+mà ta không rõ lí do, với phân tích quan hệ nguyên nhân - kết quả,
+
+12
+00:00:27,980 --> 00:00:30,130
+ta cho rằng ta hiểu đại khái về
+
+13
+00:00:30,130 --> 00:00:32,060
+nguyên nhân gây ra nhu cầu đó.
+
+14
+00:00:32,060 --> 00:00:33,850
+Vậy ta sẽ sử dụng phương pháp hồi quy
+
+15
+00:00:33,850 --> 00:00:38,020
+để cố gắng phát triển một mô hình mô tả và dự đoán
+
+16
+00:00:38,020 --> 00:00:42,617
+nhu cầu dựa trên các biến giải thích trên.
+
+17
+00:00:42,617 --> 00:00:44,950
+Sau đó ta sẽ chuyển sang giới thiệu sản phẩm mới.
+
+18
+00:00:44,950 --> 00:00:46,242
+Đây là một lĩnh vực rộng lớn.
+
+19
+00:00:46,242 --> 00:00:47,950
+Ta sẽ dành một vài đoạn
+
+20
+00:00:47,950 --> 00:00:49,658
+để nói về nó bởi nó khá thú vị.
+
+21
+00:00:49,658 --> 00:00:51,220
+Bạn sẽ bắt gặp nó rất nhiều, nhất là 
+
+22
+00:00:51,220 --> 00:00:54,610
+nếu bạn đi vào khu công nghệ cao hay công nghiệp đóng gói
+
+23
+00:00:54,610 --> 00:00:55,930
+hàng hóa tiêu thụ nhanh.
+
+24
+00:00:55,930 --> 00:00:57,790
+Toàn bộ ý tưởng là tôi giới thiệu sản phẩm thế nào,
+
+25
+00:00:57,790 --> 00:01:02,990
+hay tôi dự báo nhu cầu thế nào, cho một sản phẩm chưa từng được biết đến
+
+26
+00:01:02,990 --> 00:01:04,989
+Sau đó ta sẽ nói về một trường hợp đặc biệt khác, 
+
+27
+00:01:04,989 --> 00:01:08,980
+kiểu như một đầu khác, và đó là với nhu cầu gián đoạn.
+
+28
+00:01:08,980 --> 00:01:10,030
+Ý tôi ở đây là gì?
+
+29
+00:01:10,030 --> 00:01:13,250
+Đây là nơi nhu cầu trở nên rất bất thường.
+
+30
+00:01:13,250 --> 00:01:14,320
+Nó thưa thớt.
+
+31
+00:01:14,320 --> 00:01:16,642
+Vậy hãy nghĩ về các phần thừa.
+
+32
+00:01:16,642 --> 00:01:18,350
+Bạn không biết bạn sẽ cần chúng đâu.
+
+33
+00:01:18,350 --> 00:01:23,000
+Vậy nhu cầu không được phân phối liên tục, trơn tru như này.
+
+34
+00:01:23,000 --> 00:01:24,100
+Nó rất gián đoạn.
+
+35
+00:01:24,100 --> 00:01:28,180
+Và ta sẽ thảo luận một cách để giải quyết vấn đề đó
+
+36
+00:01:28,180 --> 00:01:30,220
+vì mục đích dự báo.
+
+37
+00:01:30,220 --> 00:01:32,560
+Và rồi cuối cùng, ta sẽ bao trùm chương 
+
+38
+00:01:32,560 --> 00:01:34,450
+và tôi sẽ đưa ra một số điểm chung
+
+39
+00:01:34,450 --> 00:01:36,960
+để dự báo.
+

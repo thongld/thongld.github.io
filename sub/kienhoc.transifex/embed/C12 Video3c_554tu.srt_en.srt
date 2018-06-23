@@ -1,0 +1,308 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/KIOJTpdS4d8
+
+1
+00:00:00,000 --> 00:00:00,016
+
+2
+00:00:00,016 --> 00:00:02,640
+DR. JONATHAN VALVANO: All right,
+let's put the pieces together.
+
+3
+00:00:02,640 --> 00:00:04,870
+This is the startup.s.
+
+4
+00:00:04,870 --> 00:00:09,750
+There's the Reset Handler, which is
+where it begins when you hit the reset.
+
+5
+00:00:09,750 --> 00:00:13,230
+Down here we see that
+SysTick_Handler, which we'll do next.
+
+6
+00:00:13,230 --> 00:00:16,980
+But the one we're doing
+today is the PortF_Handler.
+
+7
+00:00:16,980 --> 00:00:19,900
+So when we touch the
+switch, this location
+
+8
+00:00:19,900 --> 00:00:23,380
+will specify what
+software gets executed.
+
+9
+00:00:23,380 --> 00:00:24,700
+That is our vector.
+
+10
+00:00:24,700 --> 00:00:27,500
+All right, let's look
+at the initialization.
+
+11
+00:00:27,500 --> 00:00:31,770
+We're going to activate the
+clock, clear our counter.
+
+12
+00:00:31,770 --> 00:00:36,420
+The direction register is equal
+to a 0 because it's an input.
+
+13
+00:00:36,420 --> 00:00:41,550
+We're going to enable the
+pin for digital signals.
+
+14
+00:00:41,550 --> 00:00:46,340
+We don't care about the alternate
+function or PCTL, or the analog mux.
+
+15
+00:00:46,340 --> 00:00:48,680
+We do have to have a
+pull up because this
+
+16
+00:00:48,680 --> 00:00:53,850
+is PortF bit 4 on the LaunchPad,
+which requires a pull up.
+
+17
+00:00:53,850 --> 00:00:57,040
+And here are the four bits
+that we saw in the last video.
+
+18
+00:00:57,040 --> 00:00:58,690
+IS equals 0.
+
+19
+00:00:58,690 --> 00:01:00,780
+IBE equals 0.
+
+20
+00:01:00,780 --> 00:01:02,720
+IEV equals 0.
+
+21
+00:01:02,720 --> 00:01:07,335
+And to arm it, we're going to set
+the IM, or the arm bit equal to a 1.
+
+22
+00:01:07,335 --> 00:01:12,660
+When we write to the ICR,
+it will clear the flag.
+
+23
+00:01:12,660 --> 00:01:15,860
+This is the code which
+sets the priority 7
+
+24
+00:01:15,860 --> 00:01:19,170
+register to set the
+priority for this interrupt.
+
+25
+00:01:19,170 --> 00:01:24,840
+And then we're going to set
+bit 30 of the enable register
+
+26
+00:01:24,840 --> 00:01:28,400
+to enable the PortF edge trigger.
+
+27
+00:01:28,400 --> 00:01:34,050
+And lastly, we're going to enable
+all interrupts by clearing the I bit.
+
+28
+00:01:34,050 --> 00:01:37,260
+Here's our interrupt service routine.
+
+29
+00:01:37,260 --> 00:01:40,660
+On the trigger, which is
+the falling of the switch,
+
+30
+00:01:40,660 --> 00:01:45,190
+we're going to first acknowledge
+by clearing the trigger
+
+31
+00:01:45,190 --> 00:01:48,330
+flag by writing a 1 to the IC register.
+
+32
+00:01:48,330 --> 00:01:53,650
+And then we're going to
+increment the counter, which
+
+33
+00:01:53,650 --> 00:01:56,420
+will count the number of
+times a switch is pressed.
+
+34
+00:01:56,420 --> 00:02:00,580
+And then we'll return from
+interrupt by just simply returning.
+
+35
+00:02:00,580 --> 00:02:02,710
+The main program doesn't do much.
+
+36
+00:02:02,710 --> 00:02:06,597
+It initializes the system and
+then waits in this wait loop.
+
+37
+00:02:06,597 --> 00:02:08,620
+DR. RAMESH YERRABALLI: Now let's run it.
+
+38
+00:02:08,620 --> 00:02:10,449
+DR. JONATHAN VALVANO: Yeah.
+
+39
+00:02:10,449 --> 00:02:14,170
+All right, to run it, we'll download it.
+
+40
+00:02:14,170 --> 00:02:16,300
+And we're going to run debugger.
+
+41
+00:02:16,300 --> 00:02:19,680
+This is the real board.
+
+42
+00:02:19,680 --> 00:02:24,900
+We're going to set up a watch down here
+so that we count the number of edges.
+
+43
+00:02:24,900 --> 00:02:27,890
+And then we're going to
+hit the Go button up here.
+
+44
+00:02:27,890 --> 00:02:34,679
+And we're going to see down here
+in this window how many times we
+
+45
+00:02:34,679 --> 00:02:35,470
+pressed the button.
+
+46
+00:02:35,470 --> 00:02:38,422
+
+47
+00:02:38,422 --> 00:02:43,810
+DR. RAMESH YERRABALLI: Now I'm going
+to press the button and release it.
+
+48
+00:02:43,810 --> 00:02:47,800
+So that's the touch
+caused an increment by 1.
+
+49
+00:02:47,800 --> 00:02:50,914
+I'm going to press and
+release a second increment.
+
+50
+00:02:50,914 --> 00:02:52,205
+DR. JONATHAN VALVANO: It works.
+
+51
+00:02:52,205 --> 00:02:55,370
+DR. RAMESH YERRABALLI: And press
+and release the third increment.
+
+52
+00:02:55,370 --> 00:02:57,200
+DR. JONATHAN VALVANO: All right.
+
+53
+00:02:57,200 --> 00:03:06,350
+So in summary, we've seen that important
+events are set to trigger an interrupt.
+
+54
+00:03:06,350 --> 00:03:11,260
+We'll set the priority
+of that interrupt.
+
+55
+00:03:11,260 --> 00:03:15,910
+We'll set its vector
+so we know where to go.
+
+56
+00:03:15,910 --> 00:03:20,290
+We will arm it to say we're
+interested in interrupts.
+
+57
+00:03:20,290 --> 00:03:26,480
+We'll enable it in the nested
+vector interrupt controller.
+
+58
+00:03:26,480 --> 00:03:30,530
+And we'll clear the I bit so
+all interrupts can happen.
+
+59
+00:03:30,530 --> 00:03:33,780
+And when the trigger
+event occurs, we will
+
+60
+00:03:33,780 --> 00:03:38,890
+perform the action
+required by that interrupt,
+
+61
+00:03:38,890 --> 00:03:43,480
+and then acknowledge the interrupt,
+which is clearing the trigger flag.
+
+62
+00:03:43,480 --> 00:03:45,260
+DR. RAMESH YERRABALLI:
+So next, let's take
+
+63
+00:03:45,260 --> 00:03:48,304
+a look at another interrupt, a
+commonly used interrupt, which
+
+64
+00:03:48,304 --> 00:03:49,720
+is the periodic SysTick interrupt.
+
+65
+00:03:49,720 --> 00:03:51,780
+DR. JONATHAN VALVANO: Let's.
+
+66
+00:03:51,780 --> 00:03:52,314

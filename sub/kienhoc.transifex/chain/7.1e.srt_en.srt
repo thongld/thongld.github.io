@@ -1,0 +1,516 @@
+0
+00:00:00,000 --> 00:00:01,240
+https://youtu.be/KIDojXSRBKg
+
+1
+00:00:01,240 --> 00:00:01,740
+OK.
+
+2
+00:00:01,740 --> 00:00:04,890
+So let's find the optimal order quantity for the NFL Jersey
+
+3
+00:00:04,890 --> 00:00:07,390
+Problem using a data table.
+
+4
+00:00:07,390 --> 00:00:09,070
+So I'm going to set up a data table.
+
+5
+00:00:09,070 --> 00:00:12,190
+And the version I'm going to show you is in Excel.
+
+6
+00:00:12,190 --> 00:00:13,950
+And this is attached to the unit if you
+
+7
+00:00:13,950 --> 00:00:16,850
+want to follow along and see how the spreadsheet's set up.
+
+8
+00:00:16,850 --> 00:00:19,790
+There's also a version of Libra Office in there as well.
+
+9
+00:00:19,790 --> 00:00:21,780
+All the functions are the same.
+
+10
+00:00:21,780 --> 00:00:25,430
+Data tables are a great way to test and see
+
+11
+00:00:25,430 --> 00:00:28,400
+different relationships for an equation.
+
+12
+00:00:28,400 --> 00:00:30,890
+So all we're going to do here is try
+
+13
+00:00:30,890 --> 00:00:35,240
+for different values of x and q, demand and the amount I order,
+
+14
+00:00:35,240 --> 00:00:37,020
+what the profit function tells us.
+
+15
+00:00:37,020 --> 00:00:39,020
+What's the profitability if I order
+
+16
+00:00:39,020 --> 00:00:42,630
+a certain amount and a certain demand materializes.
+
+17
+00:00:42,630 --> 00:00:45,660
+So what I have here is my spreadsheet.
+
+18
+00:00:45,660 --> 00:00:49,500
+And up in cells B2 and 3, up here,
+
+19
+00:00:49,500 --> 00:00:51,070
+is the demand distribution.
+
+20
+00:00:51,070 --> 00:00:54,320
+Now, I put all my demand in units of 1,000.
+
+21
+00:00:54,320 --> 00:00:58,580
+So my mean is 32,000 units over the eight week
+
+22
+00:00:58,580 --> 00:01:01,260
+period with a standard deviation of 11.
+
+23
+00:01:01,260 --> 00:01:05,280
+I've got my price per unit, $24 per jersey.
+
+24
+00:01:05,280 --> 00:01:08,500
+$10.90 is the cost per jersey.
+
+25
+00:01:08,500 --> 00:01:10,590
+And then, I have each of the columns
+
+26
+00:01:10,590 --> 00:01:12,290
+is a potential order size.
+
+27
+00:01:12,290 --> 00:01:16,080
+So this column is saying, what if my order
+
+28
+00:01:16,080 --> 00:01:19,310
+size is 24,000 units?
+
+29
+00:01:19,310 --> 00:01:25,380
+This column is, what if my order size is 27,000 units?
+
+30
+00:01:25,380 --> 00:01:27,490
+Then, I've got each row.
+
+31
+00:01:27,490 --> 00:01:29,790
+And each row in my data table represents
+
+32
+00:01:29,790 --> 00:01:31,770
+a demand that materializes.
+
+33
+00:01:31,770 --> 00:01:34,330
+So for example, this row --let me
+
+34
+00:01:34,330 --> 00:01:36,570
+see if I can circle that-- is what
+
+35
+00:01:36,570 --> 00:01:39,690
+happens if 2000 units of demand materialize.
+
+36
+00:01:39,690 --> 00:01:44,060
+And down here, this row, is what if 20,000 units of demand
+
+37
+00:01:44,060 --> 00:01:45,340
+materialize.
+
+38
+00:01:45,340 --> 00:01:49,960
+So each cell is essentially an instance
+
+39
+00:01:49,960 --> 00:01:53,860
+where I look at a certain quantity was ordered,
+
+40
+00:01:53,860 --> 00:01:58,070
+in this case 25,000 units, and a certain demand occurred,
+
+41
+00:01:58,070 --> 00:01:59,580
+4,000 units.
+
+42
+00:01:59,580 --> 00:02:04,580
+So this cell, which is cell E8, is essentially
+
+43
+00:02:04,580 --> 00:02:06,900
+telling me what is the profitability
+
+44
+00:02:06,900 --> 00:02:10,580
+if I ordered 25,000 of these jerseys,
+
+45
+00:02:10,580 --> 00:02:13,990
+but only 4,000 units of demand showed up.
+
+46
+00:02:13,990 --> 00:02:19,020
+And that this is in this cell is this profit function up here.
+
+47
+00:02:19,020 --> 00:02:23,760
+And it's just tied in to the quantity and to the demand.
+
+48
+00:02:23,760 --> 00:02:26,040
+Now, this is for each instance.
+
+49
+00:02:26,040 --> 00:02:28,790
+I now need to figure out, well, how frequently will that
+
+50
+00:02:28,790 --> 00:02:29,780
+happen?
+
+51
+00:02:29,780 --> 00:02:34,100
+And so what I've done for each one of these instances
+
+52
+00:02:34,100 --> 00:02:37,610
+of demand, because that's what's random, the demand is random.
+
+53
+00:02:37,610 --> 00:02:40,860
+The q is something I'm going to pick.
+
+54
+00:02:40,860 --> 00:02:43,100
+I'm basing this off the normal distribution.
+
+55
+00:02:43,100 --> 00:02:45,050
+So here in Column A, what I've done
+
+56
+00:02:45,050 --> 00:02:48,990
+is the cumulative normal probability.
+
+57
+00:02:48,990 --> 00:02:50,980
+And so, you see I'm just using the norm dist
+
+58
+00:02:50,980 --> 00:02:52,840
+function that we've seen before.
+
+59
+00:02:52,840 --> 00:02:55,020
+And so for this cell that highlighted,
+
+60
+00:02:55,020 --> 00:02:58,880
+it's simply saying, what is the cumulative probability
+
+61
+00:02:58,880 --> 00:03:02,310
+that I will receive-- that my demand will be at least
+
+62
+00:03:02,310 --> 00:03:06,540
+eight units, 8,000 units or less?
+
+63
+00:03:06,540 --> 00:03:08,700
+And that's going to be 1.5%.
+
+64
+00:03:08,700 --> 00:03:12,280
+And that's based off of the mean of 32,000
+
+65
+00:03:12,280 --> 00:03:14,590
+and standard deviation of 11,000.
+
+66
+00:03:14,590 --> 00:03:17,130
+Then all that I do for the probability of each
+
+67
+00:03:17,130 --> 00:03:20,960
+of these demand values occur is the difference
+
+68
+00:03:20,960 --> 00:03:23,540
+between the two cumulative values.
+
+69
+00:03:23,540 --> 00:03:26,210
+So look at the spreadsheet and you can see how that works.
+
+70
+00:03:26,210 --> 00:03:29,770
+But the net effect is that each cell tells me
+
+71
+00:03:29,770 --> 00:03:31,950
+what the profitability will be given
+
+72
+00:03:31,950 --> 00:03:35,439
+a certain demand and a certain order quantity.
+
+73
+00:03:35,439 --> 00:03:37,480
+Now, here's what the whole spreadsheet looks like
+
+74
+00:03:37,480 --> 00:03:38,960
+or a larger piece of it.
+
+75
+00:03:38,960 --> 00:03:45,780
+And again, I've got each column is one demand quantity.
+
+76
+00:03:45,780 --> 00:03:47,880
+So the one that I just highlighted
+
+77
+00:03:47,880 --> 00:03:50,780
+is where I ordered 24,000 units.
+
+78
+00:03:50,780 --> 00:03:55,730
+And then each row, again, is the demand that materializes.
+
+79
+00:03:55,730 --> 00:03:59,940
+So that first row, Row 7, shows all the profitability
+
+80
+00:03:59,940 --> 00:04:03,020
+if only 2000 units of demand materialized.
+
+81
+00:04:03,020 --> 00:04:05,170
+So I have that for a bunch of different demands.
+
+82
+00:04:05,170 --> 00:04:08,430
+And you can see that the probability for those
+
+83
+00:04:08,430 --> 00:04:10,220
+go up to 100%.
+
+84
+00:04:10,220 --> 00:04:13,410
+So I go up to 70,000 units, which
+
+85
+00:04:13,410 --> 00:04:15,714
+is pretty unlikely to get.
+
+86
+00:04:15,714 --> 00:04:18,130
+And then, what I'm doing here is I want to find out, well,
+
+87
+00:04:18,130 --> 00:04:22,550
+what's the expected probability if I order a certain amount?
+
+88
+00:04:22,550 --> 00:04:25,920
+So for this column, Column E, which
+
+89
+00:04:25,920 --> 00:04:30,650
+is when I order 25,000 units, I have each instance here.
+
+90
+00:04:30,650 --> 00:04:34,009
+But I want to find out what's my expected profitability.
+
+91
+00:04:34,009 --> 00:04:35,550
+And that's simply going to be the sum
+
+92
+00:04:35,550 --> 00:04:42,250
+product of the probability that each one of those demand
+
+93
+00:04:42,250 --> 00:04:44,980
+values happen.
+
+94
+00:04:44,980 --> 00:04:46,530
+And that's going to be multiplied
+
+95
+00:04:46,530 --> 00:04:51,000
+by the profitability of each one of those occurrences.
+
+96
+00:04:51,000 --> 00:04:53,250
+So this sum product is essentially
+
+97
+00:04:53,250 --> 00:04:55,210
+finding the expected profitability
+
+98
+00:04:55,210 --> 00:04:58,570
+if I order 25,000 units.
+
+99
+00:04:58,570 --> 00:05:00,100
+And so if I look across here, you
+
+100
+00:05:00,100 --> 00:05:04,940
+can see that as I increase from 24,000 all the way up
+
+101
+00:05:04,940 --> 00:05:10,200
+to 33,000 units, that profitability is increasing
+
+102
+00:05:10,200 --> 00:05:13,166
+and it maximizes when I hit right around 34,000.
+
+103
+00:05:13,166 --> 00:05:16,260
+And you see I highlighted it green down here.
+
+104
+00:05:16,260 --> 00:05:19,120
+And then you can kind of see, as I increase further,
+
+105
+00:05:19,120 --> 00:05:21,560
+as my queue gets bigger, my profitability
+
+106
+00:05:21,560 --> 00:05:23,860
+starts dropping off.
+
+107
+00:05:23,860 --> 00:05:26,050
+And so what I have here is I actually
+
+108
+00:05:26,050 --> 00:05:28,080
+mapped this and charted this.
+
+109
+00:05:28,080 --> 00:05:32,790
+And so along the horizontal axis is simply
+
+110
+00:05:32,790 --> 00:05:36,390
+Row 5, which is the order quantity,
+
+111
+00:05:36,390 --> 00:05:40,520
+and along the vertical access is that bottom, Row 42
+
+112
+00:05:40,520 --> 00:05:42,890
+--let met just go back here-- this row
+
+113
+00:05:42,890 --> 00:05:48,720
+down here, this bottom row, that shows me the profitability
+
+114
+00:05:48,720 --> 00:05:53,050
+for each order quantity that I have.
+
+115
+00:05:53,050 --> 00:05:58,540
+So this is Row 42 from the spreadsheet.
+
+116
+00:05:58,540 --> 00:06:01,190
+And it's just showing my expected total profit.
+
+117
+00:06:01,190 --> 00:06:05,970
+And as it showed, is the total profitability increases,
+
+118
+00:06:05,970 --> 00:06:09,170
+peaks out at a certain point and then decreases.
+
+119
+00:06:09,170 --> 00:06:14,200
+And so the area to the left of that optimal quantity
+
+120
+00:06:14,200 --> 00:06:18,680
+is where I ordered too little.
+
+121
+00:06:18,680 --> 00:06:23,110
+
+
+122
+00:06:23,110 --> 00:06:29,080
+And over on the other side is when I ordered too much.
+
+123
+00:06:29,080 --> 00:06:33,350
+And so what we're finding here is that data tables helping me
+
+124
+00:06:33,350 --> 00:06:38,800
+find the zone where that order quantity will be maximal.
+
+125
+00:06:38,800 --> 00:06:41,300
+And so data tables or data spreadsheets
+
+126
+00:06:41,300 --> 00:06:43,700
+are great ways to explore a problem.
+
+127
+00:06:43,700 --> 00:06:46,250
+What we're going to do next is look at the marginal analysis
+
+128
+00:06:46,250 --> 00:06:50,020
+to find an analytical form for finding q star.
+

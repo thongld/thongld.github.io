@@ -1,0 +1,302 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/PCfkXtJ549s
+
+1
+00:00:00,000 --> 00:00:00,572
+
+2
+00:00:00,572 --> 00:00:02,780
+DR. JONATHAN VALVANO: There
+are two interrupt service
+
+3
+00:00:02,780 --> 00:00:05,030
+routines to run on a robot.
+
+4
+00:00:05,030 --> 00:00:08,300
+The first is a periodic
+interrupt called SysTick,
+
+5
+00:00:08,300 --> 00:00:13,850
+and it will generate the pulse
+width modulated output on PA5.
+
+6
+00:00:13,850 --> 00:00:20,410
+So we are going to see PA5 look like
+this, where the time when it's high
+
+7
+00:00:20,410 --> 00:00:25,880
+is an H and the time
+when it's low is an L.
+
+8
+00:00:25,880 --> 00:00:31,420
+The bus clock is
+running at 80 megahertz.
+
+9
+00:00:31,420 --> 00:00:34,790
+And this time here is going
+to be one millisecond.
+
+10
+00:00:34,790 --> 00:00:40,220
+And so these H plus L,
+which we saw was a constant,
+
+11
+00:00:40,220 --> 00:00:48,020
+is going to have to be 80,000 to get
+the period to be one millisecond.
+
+12
+00:00:48,020 --> 00:00:50,770
+So what I'm going to do
+in my SysTick interrupt
+
+13
+00:00:50,770 --> 00:00:55,090
+is I'm going to look
+and see what happens.
+
+14
+00:00:55,090 --> 00:01:00,260
+So in other words, if PA5
+is already equal to a 1,
+
+15
+00:01:00,260 --> 00:01:04,000
+I'm going to set PA5 equal to a 0.
+
+16
+00:01:04,000 --> 00:01:07,220
+
+17
+00:01:07,220 --> 00:01:13,650
+Then if PA5 is equal to a 0,
+I will set PA5 equal to a 1.
+
+18
+00:01:13,650 --> 00:01:17,902
+That will cause the output
+to toggle on every interrupt.
+
+19
+00:01:17,902 --> 00:01:22,842
+And we're going to get an
+interrupt on each of these times.
+
+20
+00:01:22,842 --> 00:01:24,850
+The interrupt's not
+entirely regular, but we're
+
+21
+00:01:24,850 --> 00:01:27,320
+going to get an interrupt
+on each of those times.
+
+22
+00:01:27,320 --> 00:01:31,490
+And the way I'm going to make this
+work is if the output is a low,
+
+23
+00:01:31,490 --> 00:01:39,090
+I'm going to set the reload
+value equal to L minus 1.
+
+24
+00:01:39,090 --> 00:01:46,852
+And if the output is a high, I'll set
+the reload value equal to H minus 1.
+
+25
+00:01:46,852 --> 00:01:49,960
+And the minus 1 is because, as
+you know, it counts down to 0.
+
+26
+00:01:49,960 --> 00:01:53,260
+
+27
+00:01:53,260 --> 00:01:57,120
+And that is my flow
+chart for the output.
+
+28
+00:01:57,120 --> 00:02:02,310
+And this will generate a
+pulse-width modulated signal on PA5.
+
+29
+00:02:02,310 --> 00:02:04,850
+
+30
+00:02:04,850 --> 00:02:07,790
+I'm going to use the two
+switches on the LaunchPad,
+
+31
+00:02:07,790 --> 00:02:11,520
+switch 1 and switch 2,
+to allow the operator
+
+32
+00:02:11,520 --> 00:02:14,890
+to select how much power
+is delivered to the motor.
+
+33
+00:02:14,890 --> 00:02:18,790
+And I'm going to create an
+edge-triggered interrupt such
+
+34
+00:02:18,790 --> 00:02:24,580
+that I get an interrupt on the falling
+edge of either of these two buttons.
+
+35
+00:02:24,580 --> 00:02:30,180
+And in order to communicate between
+this interrupt service routine, which
+
+36
+00:02:30,180 --> 00:02:34,080
+is edge-triggered, to this
+one, which is periodic,
+
+37
+00:02:34,080 --> 00:02:42,740
+I'm going to pass data through global
+variables H and L. And so if switch 2
+
+38
+00:02:42,740 --> 00:02:47,560
+has been pressed-- and I will
+look at its raw interrupt status
+
+39
+00:02:47,560 --> 00:02:50,310
+to see if that one caused the interrupt.
+
+40
+00:02:50,310 --> 00:02:57,380
+So what I'm going to do is speed
+it up by subtracting 8,000 from L.
+
+41
+00:02:57,380 --> 00:03:00,100
+That's going to change it by 10%.
+
+42
+00:03:00,100 --> 00:03:09,100
+Down here there will be a calculation
+of H which is equal to 80,000 minus L.
+
+43
+00:03:09,100 --> 00:03:12,130
+But in order to make sure
+it doesn't wrap around,
+
+44
+00:03:12,130 --> 00:03:20,430
+I'll make sure L is larger
+than 8,000, in order
+
+45
+00:03:20,430 --> 00:03:22,605
+to test so it doesn't
+go all the way to 0.
+
+46
+00:03:22,605 --> 00:03:27,530
+
+47
+00:03:27,530 --> 00:03:32,900
+If it's not switch 2,
+we'll look at switch 1.
+
+48
+00:03:32,900 --> 00:03:35,520
+And if its raw interrupt
+status is set, that
+
+49
+00:03:35,520 --> 00:03:38,600
+means I got it
+edge-triggered on switch 1.
+
+50
+00:03:38,600 --> 00:04:07,740
+And if its H is small enough, then
+I will add 8,000 to the L value.
+
+51
+00:04:07,740 --> 00:04:12,740
+So again, we'll look at the value
+of L. And if it's small enough,
+
+52
+00:04:12,740 --> 00:04:21,940
+then we will add 8,000-- which if I
+add 8,000 to L and then I calculate H,
+
+53
+00:04:21,940 --> 00:04:25,050
+this will slow it down
+or supply less power.
+
+54
+00:04:25,050 --> 00:04:35,040
+
+55
+00:04:35,040 --> 00:04:39,940
+And there's one last thing I have
+to do is acknowledge the interrupt.
+
+56
+00:04:39,940 --> 00:04:45,640
+And I acknowledge the interrupt by
+setting the interrupt clear register
+
+57
+00:04:45,640 --> 00:04:47,830
+and then return.
+
+58
+00:04:47,830 --> 00:04:50,150
+So this is a flow chart of the system.
+
+59
+00:04:50,150 --> 00:04:56,200
+The SysTick will produce the
+pulse-width modulated output,
+
+60
+00:04:56,200 --> 00:05:01,410
+And then the edge-triggered interrupt,
+the falling edge on either switch
+
+61
+00:05:01,410 --> 00:05:06,620
+1 or switch 2 will cause
+the power to the motor
+
+62
+00:05:06,620 --> 00:05:11,736
+to either be increased or decreased.
+
+63
+00:05:11,736 --> 00:05:12,450
+All right.
+
+64
+00:05:12,450 --> 00:05:14,520
+Let's look at the software.

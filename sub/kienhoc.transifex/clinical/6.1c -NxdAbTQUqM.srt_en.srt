@@ -1,0 +1,176 @@
+0
+00:00:06,490 --> 00:00:10,800
+Let&#39;s imagine that we measure the height from a bunch of people and graph them.
+
+1
+00:00:10,800 --> 00:00:13,230
+It might look a little like this.
+
+2
+00:00:13,230 --> 00:00:16,680
+The average height here is 170cm.
+
+3
+00:00:16,680 --> 00:00:19,740
+The average height is directly in the middle of the distribution here.
+
+4
+00:00:19,740 --> 00:00:24,619
+I&#39;ve conveniently marked off the standard deviation, which is 10 cms.
+
+5
+00:00:24,619 --> 00:00:28,679
+This represents how much the scores vary around the mean.
+
+6
+00:00:28,679 --> 00:00:33,150
+You can see, just visually inspecting the normal distribution, that a lot of scores
+
+7
+00:00:33,150 --> 00:00:35,620
+seem to clump close to the mean.
+
+8
+00:00:35,620 --> 00:00:39,280
+There are fewer scores further out in the region from one to two standard deviations,
+
+9
+00:00:39,280 --> 00:00:45,960
+and there are even fewer scores out beyond two standard deviations, and so on.
+
+10
+00:00:45,960 --> 00:00:50,190
+Because it&#39;s a normal distribution, if we find somebody, measure their height, and it
+
+11
+00:00:50,190 --> 00:00:55,890
+turns out that their height is 180cms, we can now work out whether they are tall or
+
+12
+00:00:55,890 --> 00:00:59,800
+not, relative to everybody else in our population of interest.
+
+13
+00:00:59,800 --> 00:01:05,420
+The way we do that is we convert the height values into standardised scores, in other
+
+14
+00:01:05,420 --> 00:01:10,570
+words we convert the distribution of scores into a standard normal distribution.
+
+15
+00:01:10,570 --> 00:01:15,299
+The standard normal distribution is just a normal distribution where the mean is zero
+
+16
+00:01:15,299 --> 00:01:17,340
+and the standard deviation is one.
+
+17
+00:01:17,340 --> 00:01:23,810
+The way we convert height to a standard score is by subtracting the mean, so 170, from the
+
+18
+00:01:23,810 --> 00:01:29,060
+height value, and dividing it by the standard deviation, which is 10.
+
+19
+00:01:29,060 --> 00:01:34,130
+For example, someone with a height of 180cms will now have a standardised score of 1 on
+
+20
+00:01:34,130 --> 00:01:35,810
+this standard normal distribution.
+
+21
+00:01:35,810 --> 00:01:41,009
+It’s clear to see here that they’re one standard deviation above the mean.
+
+22
+00:01:41,009 --> 00:01:46,149
+Now, we can tell how small or large this score is because we know the properties of the standard
+
+23
+00:01:46,149 --> 00:01:47,189
+normal distribution.
+
+24
+00:01:47,189 --> 00:01:52,749
+For example, we know that about 68 percent of scores are within the region of plus or
+
+25
+00:01:52,749 --> 00:01:55,350
+minus one standard deviation.
+
+26
+00:01:55,350 --> 00:02:00,020
+We know that about 95 percent are within two standard deviations.
+
+27
+00:02:00,020 --> 00:02:03,969
+Pretty much most of the scores are within three standard deviations.
+
+28
+00:02:03,969 --> 00:02:09,319
+With this information, we can work out how tall a 180cm person is by working out the
+
+29
+00:02:09,318 --> 00:02:13,590
+area under the curve up to that one standard deviation point.
+
+30
+00:02:13,590 --> 00:02:17,860
+All we have to do is add up the proportion of scores in this green region.
+
+31
+00:02:17,860 --> 00:02:22,420
+We know that this first proportion here represents half of the standard normal distribution,
+
+32
+00:02:22,420 --> 00:02:25,140
+so that&#39;s 50% of the scores.
+
+33
+00:02:25,140 --> 00:02:29,540
+We also know that the additional portion is half of the region between plus and minus
+
+34
+00:02:29,540 --> 00:02:31,080
+one standard deviation.
+
+35
+00:02:31,080 --> 00:02:34,910
+So, half of 68% is 34%.
+
+36
+00:02:34,910 --> 00:02:40,140
+We can just add these together to work out that our person who is 180 cms tall is taller
+
+37
+00:02:40,140 --> 00:02:41,940
+than 84% of people.
+
+38
+00:02:41,940 --> 00:02:43,610
+That’s pretty tall!
+
+39
+00:02:43,610 --> 00:02:47,200
+We could SAY that this person is taller than the majority of people.
+
+40
+00:02:47,200 --> 00:02:52,690
+This is why it’s important to standardise tests like intelligence tests, because, standardised
+
+41
+00:02:52,690 --> 00:02:57,290
+tests provide us with the information that helps us to work out exactly how somebody
+
+42
+00:02:57,290 --> 00:02:59,200
+has performed on a test.
+
+43
+00:02:59,200 --> 00:03:00,780
+This information is incredibly useful!
+

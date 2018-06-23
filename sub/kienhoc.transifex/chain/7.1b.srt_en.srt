@@ -1,0 +1,404 @@
+0
+00:00:00,000 --> 00:00:01,220
+https://youtu.be/SB-9Jmkv99E
+
+1
+00:00:01,220 --> 00:00:04,040
+OK, now let's take a closer look at the EOQ
+
+2
+00:00:04,040 --> 00:00:05,250
+with planned backorders.
+
+3
+00:00:05,250 --> 00:00:06,930
+Our notation hasn't changed.
+
+4
+00:00:06,930 --> 00:00:08,980
+You see we have all the same things.
+
+5
+00:00:08,980 --> 00:00:12,780
+The only thing we've added here is the shortage cost, c_s.
+
+6
+00:00:12,780 --> 00:00:14,640
+And notice the dimensions: it's dollars
+
+7
+00:00:14,640 --> 00:00:18,600
+per unit time, which is the same as the excess Holding
+
+8
+00:00:18,600 --> 00:00:20,900
+Cost for the c_e, which remember,
+
+9
+00:00:20,900 --> 00:00:23,390
+is just the cost of the item (the variable cost)
+
+10
+00:00:23,390 --> 00:00:25,930
+* (the carrying or holding charge).
+
+11
+00:00:25,930 --> 00:00:29,810
+So what you will see is that the planned backorder problem
+
+12
+00:00:29,810 --> 00:00:31,950
+really is just a trade-off between having excess
+
+13
+00:00:31,950 --> 00:00:34,900
+or too much inventory, and having too little
+
+14
+00:00:34,900 --> 00:00:36,210
+and being short.
+
+15
+00:00:36,210 --> 00:00:38,870
+It's really a trade-off -- and this is our lead-in to other
+
+16
+00:00:38,870 --> 00:00:40,870
+types of inventory models.
+
+17
+00:00:40,870 --> 00:00:43,030
+So what's the problem we're facing?
+
+18
+00:00:43,030 --> 00:00:47,040
+Well, looking at our inventory chart again, our standard EOQ.
+
+19
+00:00:47,040 --> 00:00:50,140
+Remember, our policy used to be: when inventory is at zero,
+
+20
+00:00:50,140 --> 00:00:51,150
+place your order.
+
+21
+00:00:51,150 --> 00:00:52,735
+So at each of these time periods,
+
+22
+00:00:52,735 --> 00:00:56,620
+I would place an order for Q. And the question we're raising
+
+23
+00:00:56,620 --> 00:01:00,660
+is: what happens if I allowed it to go to backorders?
+
+24
+00:01:00,660 --> 00:01:04,489
+So I'm allowing the situation to go to a backorder
+
+25
+00:01:04,489 --> 00:01:05,950
+or to stockout --
+
+26
+00:01:05,950 --> 00:01:09,190
+and so the questions we're trying to figure out are: 1.
+
+27
+00:01:09,190 --> 00:01:11,940
+What should my new Q be?
+
+28
+00:01:11,940 --> 00:01:15,930
+And then also, how far down should I be willing to go?
+
+29
+00:01:15,930 --> 00:01:17,940
+How much backorder, how much stockout
+
+30
+00:01:17,940 --> 00:01:20,010
+should I allow to happen?
+
+31
+00:01:20,010 --> 00:01:24,200
+So if we look at this situation, what we can see is that each
+
+32
+00:01:24,200 --> 00:01:28,450
+replenishment cycle -- remember the duration is T for that,
+
+33
+00:01:28,450 --> 00:01:31,350
+the length or duration of a replenishment cycle --
+
+34
+00:01:31,350 --> 00:01:36,890
+we can divide that into two: T1, which is the length of time
+
+35
+00:01:36,890 --> 00:01:40,800
+that I actually have inventory on hand, and T2,
+
+36
+00:01:40,800 --> 00:01:44,220
+the length of time of that replenishment cycle where
+
+37
+00:01:44,220 --> 00:01:46,630
+I'm backordered or stocked out.
+
+38
+00:01:46,630 --> 00:01:51,070
+So if I know the T1 and T2, I can naturally figure out what
+
+39
+00:01:51,070 --> 00:01:54,120
+my b is going to be -- and that's the quantity that
+
+40
+00:01:54,120 --> 00:01:55,850
+I'll be backordered.
+
+41
+00:01:55,850 --> 00:01:58,890
+And then I can figure out the maximum Inventory On Hand I'll
+
+42
+00:01:58,890 --> 00:02:02,970
+have, which is simply the order quantity Q minus that backorder
+
+43
+00:02:02,970 --> 00:02:05,420
+amount: Q - b.
+
+44
+00:02:05,420 --> 00:02:08,940
+So what we're going to try and figure out is essentially --
+
+45
+00:02:08,940 --> 00:02:13,480
+let me see if I can change my pen color here--
+
+46
+00:02:13,480 --> 00:02:17,030
+I'm going to look at the area of this triangle,
+
+47
+00:02:17,030 --> 00:02:20,530
+which is essentially the inventory I have on hand,
+
+48
+00:02:20,530 --> 00:02:24,540
+and I'm going to multiply that by c_e, the cost of excess.
+
+49
+00:02:24,540 --> 00:02:28,640
+And I'm going to compare that to this triangle --
+
+50
+00:02:28,640 --> 00:02:30,390
+I'm going to multiply this with c_s,
+
+51
+00:02:30,390 --> 00:02:32,650
+because this is going to be the cost of the shortage.
+
+52
+00:02:32,650 --> 00:02:35,330
+So again, we're trading off excess inventory
+
+53
+00:02:35,330 --> 00:02:36,790
+versus shortage.
+
+54
+00:02:36,790 --> 00:02:38,050
+How do I do that?
+
+55
+00:02:38,050 --> 00:02:40,380
+Total relevant cost equation.
+
+56
+00:02:40,380 --> 00:02:42,450
+Notice that I have two variables here.
+
+57
+00:02:42,450 --> 00:02:45,035
+One is the Q, which is the order quantity,
+
+58
+00:02:45,035 --> 00:02:47,180
+and the other is the b, how far I'm
+
+59
+00:02:47,180 --> 00:02:49,790
+willing to go into backorder.
+
+60
+00:02:49,790 --> 00:02:53,060
+Similar terms -- I've got the ordering cost:
+
+61
+00:02:53,060 --> 00:02:54,440
+c_t is cost / order.
+
+62
+00:02:54,440 --> 00:02:58,020
+D / Q, again, is the number of orders I will place over
+
+63
+00:02:58,020 --> 00:03:00,990
+my longer time period -- let's just say it's a year.
+
+64
+00:03:00,990 --> 00:03:05,330
+Then I've got my inventory Holding cost,
+
+65
+00:03:05,330 --> 00:03:07,560
+it's going to be c_e, the cost of the excess,
+
+66
+00:03:07,560 --> 00:03:10,710
+times the area of that triangle, of this triangle right here.
+
+67
+00:03:10,710 --> 00:03:12,240
+Let me highlight it again.
+
+68
+00:03:12,240 --> 00:03:16,330
+1/2, the base is going to be T1 / T --
+
+69
+00:03:16,330 --> 00:03:18,250
+it's essentially the percentage of the time
+
+70
+00:03:18,250 --> 00:03:23,480
+of the replenishment period that I will have inventory on hand,
+
+71
+00:03:23,480 --> 00:03:26,140
+times the height, Q - b.
+
+72
+00:03:26,140 --> 00:03:28,810
+Then I'm going to add in the shortage cost,
+
+73
+00:03:28,810 --> 00:03:31,110
+and that's going to be c_s, that cost of shortage
+
+74
+00:03:31,110 --> 00:03:33,590
+we talked about, times the area of this triangle.
+
+75
+00:03:33,590 --> 00:03:35,750
+Let me just highlight it again.
+
+76
+00:03:35,750 --> 00:03:39,280
+This triangle right in here.
+
+77
+00:03:39,280 --> 00:03:44,510
+OK, so it's going to be c_s * 1/2 * (T2/T) {the base} * b
+
+78
+00:03:44,510 --> 00:03:46,520
+{the height}.
+
+79
+00:03:46,520 --> 00:03:50,170
+Now I know by looking at these triangles and remembering back
+
+80
+00:03:50,170 --> 00:03:54,900
+to geometry that the relationship for the large
+
+81
+00:03:54,900 --> 00:04:01,280
+triangle, Q/T, is going to be the same as (Q-b)/T1 for this
+
+82
+00:04:01,280 --> 00:04:05,500
+triangle that I'm highlighting, and the same for the b / T2
+
+83
+00:04:05,500 --> 00:04:08,310
+for this small triangle that I highlighted here --
+
+84
+00:04:08,310 --> 00:04:10,220
+the ratios are all the same.
+
+85
+00:04:10,220 --> 00:04:16,700
+So that means the ratio of T1/T = (Q-b)/Q (just rearranging
+
+86
+00:04:16,700 --> 00:04:23,475
+terms) and T2/T = b/Q. Again, just rearranging terms so I get
+
+87
+00:04:23,475 --> 00:04:27,750
+it into a form that I can use.
+
+88
+00:04:27,750 --> 00:04:31,390
+So, using these relationships, I look back at my Total Relevant
+
+89
+00:04:31,390 --> 00:04:34,680
+Cost equation and I can clean it up a little bit.
+
+90
+00:04:34,680 --> 00:04:38,830
+Wherever I had a T1/T or a T2/T, I'm
+
+91
+00:04:38,830 --> 00:04:41,730
+just going to replace it with my new quantities.
+
+92
+00:04:41,730 --> 00:04:44,340
+So the total relevant cost equation is here,
+
+93
+00:04:44,340 --> 00:04:46,840
+and I can clean it up a little bit,
+
+94
+00:04:46,840 --> 00:04:49,880
+and so I get this Total Relevant Cost equation
+
+95
+00:04:49,880 --> 00:04:52,310
+as a function of the order quantity and the amount
+
+96
+00:04:52,310 --> 00:04:53,610
+I want to backorder.
+
+97
+00:04:53,610 --> 00:04:57,290
+And you can see the three terms -- the ordering cost,
+
+98
+00:04:57,290 --> 00:05:00,610
+the second term is the inventory Holding cost,
+
+99
+00:05:00,610 --> 00:05:03,640
+and the third term is the shortage cost.
+
+100
+00:05:03,640 --> 00:05:07,040
+Next video, we'll solve it!
+

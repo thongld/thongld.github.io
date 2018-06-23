@@ -1,0 +1,304 @@
+0
+00:00:00,000 --> 00:00:00,270
+https://youtu.be/I0xGhKumD90
+
+1
+00:00:00,270 --> 00:00:02,009
+OK, now let's look at a second model,
+
+2
+00:00:02,009 --> 00:00:04,650
+and I'm going to try and see if weight has an influence.
+
+3
+00:00:04,650 --> 00:00:08,640
+So I'm going to say my model takes the form of beta 0
+
+4
+00:00:08,640 --> 00:00:10,590
+plus beta 1 times distance.
+
+5
+00:00:10,590 --> 00:00:13,000
+I'm going to keep that in, because it was so strong.
+
+6
+00:00:13,000 --> 00:00:15,750
+Plus beta 2 times weight.
+
+7
+00:00:15,750 --> 00:00:18,214
+And weight is in pounds.
+
+8
+00:00:18,214 --> 00:00:20,130
+So if I look at this, let's start from the top
+
+9
+00:00:20,130 --> 00:00:21,261
+and work down.
+
+10
+00:00:21,261 --> 00:00:23,760
+My r squared, I'm just going to go straight to my adjusted r
+
+11
+00:00:23,760 --> 00:00:25,760
+squared, because that's all that really matters.
+
+12
+00:00:25,760 --> 00:00:27,532
+You see how the gap is a little bigger
+
+13
+00:00:27,532 --> 00:00:28,740
+from the r squared this time.
+
+14
+00:00:28,740 --> 00:00:31,920
+That's because I have an additional independent variable
+
+15
+00:00:31,920 --> 00:00:33,670
+added to the model.
+
+16
+00:00:33,670 --> 00:00:36,900
+So we see that we're still explaining 82% of the model.
+
+17
+00:00:36,900 --> 00:00:39,030
+It's still pretty good.
+
+18
+00:00:39,030 --> 00:00:40,140
+I get my standard error.
+
+19
+00:00:40,140 --> 00:00:42,070
+I can look at my sum of the squares.
+
+20
+00:00:42,070 --> 00:00:45,160
+Let's look at the individual coefficients.
+
+21
+00:00:45,160 --> 00:00:47,880
+So I can look and see for the intercept
+
+22
+00:00:47,880 --> 00:00:51,810
+it's a little higher than it was before 1,354.
+
+23
+00:00:51,810 --> 00:00:54,990
+And the distance 1.538 per mile.
+
+24
+00:00:54,990 --> 00:00:59,280
+And I get a weight as a negative, negative 0.003.
+
+25
+00:00:59,280 --> 00:01:00,850
+So what does this mean?
+
+26
+00:01:00,850 --> 00:01:04,680
+This means for every pound I add to my weight,
+
+27
+00:01:04,680 --> 00:01:06,780
+the model is saying I take off-- well,
+
+28
+00:01:06,780 --> 00:01:11,650
+let's say every 10 pounds, I take off $0.03 per load.
+
+29
+00:01:11,650 --> 00:01:14,110
+So it's saying there's a negative relationship.
+
+30
+00:01:14,110 --> 00:01:18,190
+Let's look real quick at the p values.
+
+31
+00:01:18,190 --> 00:01:22,590
+So for both the intercept, that's a very strong p value.
+
+32
+00:01:22,590 --> 00:01:24,510
+And same thing with the distance.
+
+33
+00:01:24,510 --> 00:01:28,230
+Look at this one for the weight. b2, that's quite poor.
+
+34
+00:01:28,230 --> 00:01:32,730
+So it's only a 46% probability that I would
+
+35
+00:01:32,730 --> 00:01:34,150
+reject the null hypothesis.
+
+36
+00:01:34,150 --> 00:01:37,260
+So I would not reject the null hypothesis here
+
+37
+00:01:37,260 --> 00:01:41,220
+that b2 would be equal to 0.
+
+38
+00:01:41,220 --> 00:01:45,324
+So I would probably not accept this model because of that.
+
+39
+00:01:45,324 --> 00:01:46,740
+Another way to look at it look at,
+
+40
+00:01:46,740 --> 00:01:49,560
+look at the confidence intervals.
+
+41
+00:01:49,560 --> 00:01:52,890
+Notice that for the b2, the lower confidence interval
+
+42
+00:01:52,890 --> 00:01:56,250
+is negative and the upper confidence interval
+
+43
+00:01:56,250 --> 00:01:57,240
+is positive.
+
+44
+00:01:57,240 --> 00:02:02,400
+So that means 0 is within my bounds, my 95% confidence
+
+45
+00:02:02,400 --> 00:02:03,660
+intervals.
+
+46
+00:02:03,660 --> 00:02:04,570
+That's kind of crazy.
+
+47
+00:02:04,570 --> 00:02:07,290
+So I don't think this model is going to make much sense.
+
+48
+00:02:07,290 --> 00:02:09,600
+But let's talk about it a little more,
+
+49
+00:02:09,600 --> 00:02:11,520
+starting with the model interpretation.
+
+50
+00:02:11,520 --> 00:02:13,380
+82%, still really good.
+
+51
+00:02:13,380 --> 00:02:14,820
+It's a strong model.
+
+52
+00:02:14,820 --> 00:02:16,200
+It's predicting a lot.
+
+53
+00:02:16,200 --> 00:02:19,290
+It's actually explaining a lot of the variability.
+
+54
+00:02:19,290 --> 00:02:23,790
+However, notice that while the r squared itself improved,
+
+55
+00:02:23,790 --> 00:02:26,670
+because in the previous model, remember for model one,
+
+56
+00:02:26,670 --> 00:02:28,740
+this was a 0.818.
+
+57
+00:02:28,740 --> 00:02:30,870
+But the adjusted r squared actually
+
+58
+00:02:30,870 --> 00:02:35,430
+went down from 0.816 to 0.815.
+
+59
+00:02:35,430 --> 00:02:38,670
+So this is why we have the adjusted r squared.
+
+60
+00:02:38,670 --> 00:02:41,490
+It corrects for just throwing in those additional independent
+
+61
+00:02:41,490 --> 00:02:42,482
+variables.
+
+62
+00:02:42,482 --> 00:02:45,840
+
+
+63
+00:02:45,840 --> 00:02:48,210
+So then we look at the individual coefficients,
+
+64
+00:02:48,210 --> 00:02:49,890
+the beta 0 and beta 1.
+
+65
+00:02:49,890 --> 00:02:51,640
+They're still looking solid.
+
+66
+00:02:51,640 --> 00:02:52,470
+Good p values.
+
+67
+00:02:52,470 --> 00:02:55,440
+They make sense in terms of magnitude and sine.
+
+68
+00:02:55,440 --> 00:02:57,360
+However, b2 doesn't make sense, right?
+
+69
+00:02:57,360 --> 00:02:58,910
+Why would more weight cost less?
+
+70
+00:02:58,910 --> 00:03:00,060
+Doesn't make sense.
+
+71
+00:03:00,060 --> 00:03:01,230
+Has a poor p value.
+
+72
+00:03:01,230 --> 00:03:04,590
+So I would probably not continue with this model.
+
+73
+00:03:04,590 --> 00:03:05,580
+But you explored.
+
+74
+00:03:05,580 --> 00:03:08,490
+You try to see, OK, does weight have an effect?
+
+75
+00:03:08,490 --> 00:03:11,750
+OK, so next we'll look at some other factors.
+

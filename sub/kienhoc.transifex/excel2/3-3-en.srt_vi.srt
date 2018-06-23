@@ -1,0 +1,125 @@
+1
+00:00:00,620 --> 00:00:06,360
+knh_alex_95
+Tuần này ta sẽ nói về phát hiện các xu hướng. Ở video lần trước ta đã sử dụng định dạng theo điều kiện,
+
+2
+00:00:06,360 --> 00:00:11,980
+thêm màu sắc vào dữ liệu để từ đó có được cái nhìn về xu hướng những sản phẩm nào bán chạy nhất.
+
+3
+00:00:12,320 --> 00:00:16,680
+Tuy nhiên có một rủi ro trong việc dùng màu sắc. Một số người bị mù màu và họ có thể
+
+4
+00:00:16,680 --> 00:00:21,860
+không phân biệt được sự khác nhau giữa màu đỏ và màu xanh. Ngoài ra một số người có thể nghĩ rằng
+
+5
+00:00:21,860 --> 00:00:27,700
+việc có một đống màu sắc trên bảng tính trông chẳng dễ coi gì cả, và một số trường hợp khác kiểu kiểu thế.
+
+6
+00:00:27,940 --> 00:00:32,880
+Do đó trong video này tôi sẽ giới thiệu với bạn một cách thăm dò dữ liệu nhanh chóng khác.
+
+7
+00:00:33,200 --> 00:00:38,860
+Cách này được gọi là biểu đồ mini (spark lines) do Edward Tufte thiết kế.
+
+8
+00:00:39,160 --> 00:00:44,880
+Ông được coi là cha đẻ của trực quan dữ liệu. Bên dưới video chúng tôi sẽ cung cấp một số đường dẫn
+
+9
+00:00:44,880 --> 00:00:47,320
+tới một vài cuốn sách của ông. Chúng thực sự rất tuyệt.
+
+10
+00:00:47,330 --> 00:00:52,490
+Nếu bạn muốn tìm hiểu thêm về cách trực quan hóa dữ liệu theo một cách ngắn gọn nhưng hấp dẫn
+
+11
+00:00:52,490 --> 00:00:56,740
+thì tôi thực sự khuyên bạn đọc những cuốn sách này. Một trong số những thứ ông ấy đã phát minh ra gọi là
+
+12
+00:00:56,749 --> 00:01:02,390
+sparklines (biểu đồ mini) và giờ nó đã được gắn vào Excel. Ta sẽ tạo một sparkline cho bảng dữ liệu này và
+
+13
+00:01:02,390 --> 00:01:07,080
+bình thường thì tôi sẽ để nó ở vị trí bên dưới này, ở đây. Nhưng vì lúc này ta không có chỗ trống trên màn hình
+
+14
+00:01:07,090 --> 00:01:10,980
+nên tôi sẽ để sparkline bên cạnh bảng dữ liệu.
+
+15
+00:01:10,989 --> 00:01:15,630
+Tôi sẽ sao chép tiêu đề. Và sau đó tôi sẽ đi tới chọn
+
+16
+00:01:15,630 --> 00:01:20,629
+'Insert' và 'Insert a line'. Nó không phải là 'spark line' mà chỉ là 'line',
+
+17
+00:01:20,629 --> 00:01:24,581
+hơi rắc rối một tí. Sau đó chọn dữ liệu ta muốn và đây: 
+
+18
+00:01:24,590 --> 00:01:30,490
+BAM! Ta thu được một hình đồ thị nhỏ xíu biểu diễn dòng chảy của dữ liệu, hay chính là xu hướng của dữ liệu.
+
+19
+00:01:30,490 --> 00:01:35,270
+Và bạn nhìn lên phía trên ngay chỗ đó, trên cùng của biểu đồ nó cũng giống với các ô tính màu xanh lá
+
+20
+00:01:35,270 --> 00:01:36,690
+ta đã có trước đó.
+
+21
+00:01:37,300 --> 00:01:40,620
+Thậm chí ta có thể chọn 'High point' (trên thanh ribbon) và bạn có được một điểm đánh dấu.
+
+22
+00:01:40,780 --> 00:01:43,679
+Giống với một công thức ta có thể kéo những spark line này
+
+23
+00:01:43,679 --> 00:01:48,539
+và máy tự động cho ra những đồ thị kiểu như thế với 'quần', 'giày', 'bít tất', và tổng số.
+
+24
+00:01:48,960 --> 00:01:53,379
+Bạn thấy mục 'bít tất' ở phía trên góc bên phải chỗ này giống với mục này phía trên bảng dữ liệu ta đang có.
+
+25
+00:01:53,379 --> 00:01:56,619
+Thật là một cách tuyệt vời!
+
+26
+00:01:56,860 --> 00:02:00,800
+Ngoài ra, cũng giống như định dạng theo điều kiện, có rất nhiều lựa chọn khác nhau bạn có thể sử dụng.
+
+27
+00:02:00,800 --> 00:02:06,260
+Ví dụ bạn có thể chuyển chúng thành dạng cột thay vì xu hướng cũng được.
+
+28
+00:02:06,540 --> 00:02:10,300
+Hơi khó nhìn xu hướng trong trường hợp này theo dạng cột
+
+29
+00:02:10,300 --> 00:02:13,460
+nhưng lại dễ nhìn ra hơn nhiều trong việc xem đâu là điểm cao nhất.
+
+30
+00:02:13,660 --> 00:02:18,160
+Còn một lựa chọn khác là 'Win/Loss'. Tôi sẽ nói về nó
+
+31
+00:02:18,160 --> 00:02:21,040
+vì đó là phần bạn sẽ thực hành làm bài tập.
+

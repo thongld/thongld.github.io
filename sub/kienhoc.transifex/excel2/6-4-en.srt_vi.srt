@@ -1,0 +1,325 @@
+1
+00:00:00,740 --> 00:00:04,340
+dungpham12002 24.08.2016
+Xin chào mọi người! Ta đã sẵn sàng
+vẽ biểu đồ tiếp theo chưa?
+
+2
+00:00:04,340 --> 00:00:10,120
+Ta sẽ vẽ biểu đồ thể hiện giá trị trung bình 
+của đơn hàng. Có lẽ bạn nhớ từ bài trước là
+
+3
+00:00:10,120 --> 00:00:14,570
+có ba loại biểu đồ cơ bản:
+biểu đồ cột hay biểu đồ thanh;
+
+4
+00:00:14,570 --> 00:00:17,130
+biểu đồ đường, và biểu đồ phân tán.
+
+5
+00:00:17,130 --> 00:00:23,009
+Bạn sẽ không thấy biểu đồ phân tán trong bảng điều khiển
+vì với bảng điều khiển dùng trong kinh doanh,
+
+6
+00:00:23,009 --> 00:00:28,980
+thường thì ta không sử dụng biểu đồ phân tán
+vì ta không cần phải thể hiện mối quan hệ
+
+7
+00:00:28,980 --> 00:00:34,250
+giữa các vật thể hoặc các biến số.
+Ta đã vẽ một biểu đồ thanh, nên bây giờ
+
+8
+00:00:34,250 --> 00:00:37,540
+ta chuyển sang loại biểu đồ cơ bản tiếp theo:
+biểu đồ cột.
+
+9
+00:00:37,540 --> 00:00:43,540
+Biểu đồ thể hiện giá trị trung bình của đơn hàng.
+Tôi sẽ dành chút thời gian để quan sát
+
+10
+00:00:43,540 --> 00:00:47,060
+trục hoành. Trên đó có ghi
+các mốc thời gian, và chúng bắt đầu từ
+
+11
+00:00:47,060 --> 00:00:54,930
+tháng 6/2015 đến tháng 6/2016.
+Có hai thứ đáng chú ý.
+
+12
+00:00:54,930 --> 00:00:59,780
+Đầu tiên, bạn không cần thêm vào mỗi 
+mốc thời gian làm nhãn dữ liệu năm của nó.
+
+13
+00:00:59,780 --> 00:01:04,600
+Nếu các mốc thời gian cùng trong một năm,
+người đọc sẽ biết rõ rằng
+
+14
+00:01:04,600 --> 00:01:07,840
+chúng đều là các tháng trong một năm,
+giúp biểu đồ có thêm ít khoảng trống.
+
+15
+00:01:07,840 --> 00:01:12,850
+Tôi không muốn thấy các chữ cái 
+bị viết theo hàng dọc hoặc bị xoay chiều.
+
+16
+00:01:12,850 --> 00:01:19,479
+Tôi muốn chúng được viết như bình thường.
+Điều thứ hai bạn thấy là: nếu bạn yêu cầu người khác
+
+17
+00:01:19,479 --> 00:01:26,009
+miêu tả xu hướng, họ thông thường
+sẽ chọn mười hai mốc thời gian để làm vậy,
+
+18
+00:01:26,009 --> 00:01:30,840
+bởi chúng gộp lại thành một năm.
+Nhưng ở đây, cũng như ở tất cả
+
+19
+00:01:30,840 --> 00:01:35,359
+các biểu đồ xu hướng khác trong
+bảng điều khiển, tôi đã chọn 13 tháng.
+
+20
+00:01:35,359 --> 00:01:43,329
+Lý do tôi làm vậy là bởi vì nếu chọn 13 tháng,
+tôi có thể so sánh năm nay với năm ngoái.
+
+21
+00:01:43,329 --> 00:01:45,340
+Bạn có thể làm vậy với biểu đồ này.
+
+22
+00:01:45,340 --> 00:01:52,600
+Bạn thấy số liệu của tháng 6/2016, và
+ta có thể so sánh nó với tháng 6/2015.
+
+23
+00:01:52,600 --> 00:01:58,560
+Đó là một mẹo nhỏ: hãy dùng 13 mốc thời gian.
+Giờ ta sẽ tìm hiểu cách tự tạo biểu đồ đó
+
+24
+00:01:58,560 --> 00:02:07,170
+trong Excel. Ta cần mở bảng
+'Average Order Size'.
+
+25
+00:02:07,170 --> 00:02:11,370
+Đây là dữ liệu thô.
+Đợi chút; nếu như bạn còn nhớ
+
+26
+00:02:11,370 --> 00:02:18,940
+thì trong biểu đồ, trong nhãn 201506,
+có một kí tự xuống dòng.
+
+27
+00:02:18,940 --> 00:02:24,340
+Đây là cách để bạn làm vậy.
+Giữa số chỉ năm và số chỉ tháng,
+
+28
+00:02:24,340 --> 00:02:28,440
+tôi thêm kí tự có mã là 13,
+tức là dấu ngắt dòng.
+
+29
+00:02:28,440 --> 00:02:32,830
+Điều đó giúp ta có thể ghi số chỉ năm ở một dòng
+và số chỉ tháng ở dòng khác.
+
+30
+00:02:32,830 --> 00:02:37,880
+Phần việc còn lại khá dễ dàng.
+Với dữ liệu ở đây,
+
+31
+00:02:37,880 --> 00:02:51,780
+vì tôi cần các số liệu về giá trị trung bình
+của đơn hàng, tôi sẽ chọn chúng.
+
+32
+00:02:51,780 --> 00:03:00,350
+Cách tôi thường dùng để tạo biểu đồ
+là lựa chọn dữ liệu, từ đó tạo ra
+
+33
+00:03:00,350 --> 00:03:05,590
+đồ thị, hoặc biểu đồ. Trong trường hợp này,
+tôi muốn tạo một biểu đồ cột.
+
+34
+00:03:05,590 --> 00:03:09,690
+Các thanh vẫn là thanh 2D.
+Và đây là thành phẩm.
+
+35
+00:03:09,690 --> 00:03:14,430
+Tôi đã mắc một lỗi nhỏ, nên tôi sẽ xóa
+biểu đồ đi; bởi ta muốn
+
+36
+00:03:14,430 --> 00:03:23,270
+chỉ cho Excel cái gì nên nằm ở trục hoành.
+Ở đây, đó là các mốc thời gian.
+
+37
+00:03:23,270 --> 00:03:40,620
+Tôi sẽ lại nhấn giữ phím 'ctrl'.
+Nó đang trêu đùa tôi thì phải..
+
+38
+00:03:45,600 --> 00:03:48,820
+Được rồi.
+
+39
+00:03:48,820 --> 00:03:51,790
+Giờ tôi có hai vùng được chọn: một vùng sẽ 
+nằm trên trục hoành, và một vùng làm dữ liệu về
+
+40
+00:03:51,790 --> 00:03:58,080
+giá trị trung bình của đơn hàng.
+Tôi chọn thẻ Insert, chọn biểu đồ cột,
+
+41
+00:03:58,080 --> 00:04:03,260
+và đây là thành phẩm. Tôi thấy
+bây giờ trục hoành trông ổn rồi.
+
+42
+00:04:03,260 --> 00:04:05,320
+Điều đầu tiên tôi nhận ra
+là tên biểu đồ lại xuất hiện.
+
+43
+00:04:05,320 --> 00:04:09,400
+Tôi sẽ xóa nó đi. Tôi vẫn không thích
+có nhiều khoảng trắng, nên tôi sẽ
+
+44
+00:04:09,400 --> 00:04:20,180
+chỉnh tỉ lệ xuống còn 75%. Một thứ khác mà
+lẽ ra tôi nên làm với biểu đồ này, cũng như
+
+45
+00:04:20,180 --> 00:04:27,870
+với biểu đồ trước, là giảm cỡ chữ xuống;
+
+46
+00:04:27,870 --> 00:04:33,030
+bởi bảng điều khiển có khá ít chỗ.
+
+47
+00:04:33,030 --> 00:04:49,050
+Thông thường, tôi sử dụng cỡ chữ 8.
+Tôi không cần các đường lưới,
+
+48
+00:04:49,050 --> 00:04:54,599
+cũng như nền, nên tôi sẽ bỏ chúng đi. Vậy nhiều khi, 
+có những thứ của biểu đồ mà ta
+
+49
+00:04:54,599 --> 00:04:57,560
+luôn phải chỉnh sửa.
+Tôi không muốn có nền ở biểu đồ này.
+
+50
+00:04:57,560 --> 00:05:01,449
+Để chắc chắn, tôi sẽ tự xóa các đường viền;
+bởi đôi khi, nếu tôi sử dụng các cài đặt mặc định,
+
+51
+00:05:01,449 --> 00:05:08,889
+Excel sẽ thêm đường viền.
+Tôi vẫn còn nhớ kích cỡ biểu đồ cần có.
+
+52
+00:05:08,889 --> 00:05:13,110
+Giờ tôi sẽ chỉnh kích cỡ.
+
+53
+00:05:13,110 --> 00:05:28,430
+Kích cỡ cần có là 2.15" x 2.27". Sau khi chỉnh, 
+định dạng biểu đồ sẽ đúng như yêu cầu.
+
+54
+00:05:28,430 --> 00:05:31,960
+Bây giờ, trục hoành trông
+không thoáng lắm.
+
+55
+00:05:31,960 --> 00:05:39,629
+Để giải quyết vấn đề này, tôi sẽ chọn trục hoành,
+và kiểm tra xem tôi đã chọn nó chưa
+
+56
+00:05:39,629 --> 00:05:44,740
+ở bên này. Giờ, tôi có thể
+tự xác định rằng tôi muốn các nhãn
+
+57
+00:05:44,740 --> 00:05:52,870
+xuất hiện sau ba khoảng chia trên trục,
+để trục hoành trông thoáng hơn.
+
+58
+00:05:52,870 --> 00:06:00,249
+Tôi nghĩ tôi khá hài lòng với biểu đồ bây giờ.
+Vậy tôi sẽ sao chép nó,
+
+59
+00:06:00,249 --> 00:06:16,870
+quay trở lại bảng điều khiển, và dán nó
+ở cạnh biểu đồ ta đã tạo trong phần trước.
+
+60
+00:06:16,870 --> 00:06:24,059
+Ta sẽ ghi đơn vị tính của giá trị trung bình
+đơn hàng là đô-la Mỹ,
+
+61
+00:06:24,059 --> 00:06:34,729
+và đặt tên biểu đồ là 'Biểu đồ thể hiện
+'giá trị trung bình của đơn hàng.'.
+
+62
+00:06:34,729 --> 00:06:42,490
+Vậy ta đã làm xong biểu đồ thể hiện
+giá trị trung bình của đơn hàng,
+
+63
+00:06:42,490 --> 00:06:45,259
+cũng như biểu đồ về doanh số
+bán hàng theo danh mục sản phẩm.
+
+64
+00:06:45,259 --> 00:06:50,580
+Ta đã tạo ra hai biểu đồ, nhưng bạn có thể thấy
+ta vẫn còn rất nhiều khoảng trống.
+
+65
+00:06:50,580 --> 00:06:53,779
+Trong bài tiếp theo, ta sẽ tìm hiểu
+biểu đồ về 'Xu hướng kinh doanh'.
+
+66
+00:06:53,779 --> 00:06:55,979
+Ta sẽ học về một loại biểu đồ mới.
+Hẹn gặp lại bạn lần sau!
+

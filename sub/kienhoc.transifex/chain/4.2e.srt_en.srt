@@ -1,0 +1,256 @@
+0
+00:00:00,000 --> 00:00:01,120
+https://youtu.be/G2L48evQeys
+
+1
+00:00:01,120 --> 00:00:04,260
+OK, so the key points from this whole lesson about introducing
+
+2
+00:00:04,260 --> 00:00:06,930
+economic order quantity, there's a couple things
+
+3
+00:00:06,930 --> 00:00:09,070
+you should take away.
+
+4
+00:00:09,070 --> 00:00:11,080
+The first thing is the EOQ model:
+
+5
+00:00:11,080 --> 00:00:13,010
+yes, it has restrictive assumptions,
+
+6
+00:00:13,010 --> 00:00:14,920
+you saw the whole list of assumptions,
+
+7
+00:00:14,920 --> 00:00:16,634
+but it's still widely used.
+
+8
+00:00:16,634 --> 00:00:18,050
+And whenever you have a case where
+
+9
+00:00:18,050 --> 00:00:20,400
+you have relatively stable demand,
+
+10
+00:00:20,400 --> 00:00:23,370
+it's a good place to start.
+
+11
+00:00:23,370 --> 00:00:25,340
+The second thing is to understand
+
+12
+00:00:25,340 --> 00:00:27,260
+what the EOQ model is doing because it's
+
+13
+00:00:27,260 --> 00:00:30,470
+kind of a simple, simple example of what we're going to be doing
+
+14
+00:00:30,470 --> 00:00:32,580
+throughout any inventory model.
+
+15
+00:00:32,580 --> 00:00:34,220
+You're trading off two things, you're
+
+16
+00:00:34,220 --> 00:00:36,880
+trading off these fixed costs-- these order costs,
+
+17
+00:00:36,880 --> 00:00:38,800
+and these variable holding costs.
+
+18
+00:00:38,800 --> 00:00:41,097
+And whenever you have the "value of one
+
+19
+00:00:41,097 --> 00:00:42,680
+goes up as the other goes down" you're
+
+20
+00:00:42,680 --> 00:00:44,240
+going to find an equilibrium, and that's
+
+21
+00:00:44,240 --> 00:00:45,190
+what we're doing here.
+
+22
+00:00:45,190 --> 00:00:48,650
+We're trading off the fixed and the variable costs.
+
+23
+00:00:48,650 --> 00:00:50,960
+We also showed that the EOQ was really
+
+24
+00:00:50,960 --> 00:00:54,640
+pretty insensitive to changes, or errors, or bad assumptions
+
+25
+00:00:54,640 --> 00:00:57,870
+in the order quantity-- so I can round up or round down
+
+26
+00:00:57,870 --> 00:00:59,070
+order quantities.
+
+27
+00:00:59,070 --> 00:01:02,110
+The cycle time, we saw that it's OK to round those up
+
+28
+00:01:02,110 --> 00:01:03,990
+to more practical times.
+
+29
+00:01:03,990 --> 00:01:06,920
+Errors in forecasting, as well as errors in the cost
+
+30
+00:01:06,920 --> 00:01:09,740
+parameters-- whether it's the cost of the item itself,
+
+31
+00:01:09,740 --> 00:01:12,610
+the ordering cost, the holding cost,
+
+32
+00:01:12,610 --> 00:01:14,870
+or the cost of holding any inventory.
+
+33
+00:01:14,870 --> 00:01:17,500
+It's pretty insensitive to those, so start with it
+
+34
+00:01:17,500 --> 00:01:19,850
+and it's got that nice bathtub function, where
+
+35
+00:01:19,850 --> 00:01:21,540
+it won't be dramatically off.
+
+36
+00:01:21,540 --> 00:01:23,790
+The other thing that we really haven't talked too much
+
+37
+00:01:23,790 --> 00:01:25,910
+about but something you should take away,
+
+38
+00:01:25,910 --> 00:01:28,760
+is that the EOQ helps you focus in on different process
+
+39
+00:01:28,760 --> 00:01:30,830
+improvements, helps you focus where
+
+40
+00:01:30,830 --> 00:01:32,750
+you should maybe spend some time.
+
+41
+00:01:32,750 --> 00:01:35,790
+And you want to understand if you do some analysis,
+
+42
+00:01:35,790 --> 00:01:37,580
+how should I lower my c_t?
+
+43
+00:01:37,580 --> 00:01:39,390
+Is that going to drive a lot of costs?
+
+44
+00:01:39,390 --> 00:01:41,550
+Should I lower my cost of each item?
+
+45
+00:01:41,550 --> 00:01:44,340
+Should I change or look at how the interest
+
+46
+00:01:44,340 --> 00:01:46,260
+rate affects my costs?
+
+47
+00:01:46,260 --> 00:01:48,410
+So it helps you focus and determine
+
+48
+00:01:48,410 --> 00:01:51,340
+where the most bang for your buck should be.
+
+49
+00:01:51,340 --> 00:01:53,350
+And finally, the thing I want you to take away--
+
+50
+00:01:53,350 --> 00:01:55,420
+that I hope you take away is that EOQ
+
+51
+00:01:55,420 --> 00:01:58,370
+is a pretty good starting point, but it's not always a place
+
+52
+00:01:58,370 --> 00:01:59,310
+to end with.
+
+53
+00:01:59,310 --> 00:02:02,110
+So you start with it and then you take some other assumptions
+
+54
+00:02:02,110 --> 00:02:03,037
+into effect.
+
+55
+00:02:03,037 --> 00:02:04,620
+But it's always a good place to start,
+
+56
+00:02:04,620 --> 00:02:06,920
+it's kind of like Wikipedia-- you want to start there,
+
+57
+00:02:06,920 --> 00:02:08,554
+it gets you up to speed really quickly,
+
+58
+00:02:08,554 --> 00:02:10,220
+but you might want to go a little deeper
+
+59
+00:02:10,220 --> 00:02:12,450
+to find your final answer.
+
+60
+00:02:12,450 --> 00:02:13,916
+OK, so that wraps up this lesson.
+
+61
+00:02:13,916 --> 00:02:16,040
+If you have any questions, comments, or suggestions
+
+62
+00:02:16,040 --> 00:02:18,270
+please use the discussion.
+
+63
+00:02:18,270 --> 00:02:19,156
+
+

@@ -1,0 +1,372 @@
+0
+00:00:00,000 --> 00:00:00,747
+dungpham12002 27.10.2016
+https://youtu.be/qZwP8-YvixU
+
+1
+00:00:00,747 --> 00:00:02,580
+Có hai khái niệm chính trong quản lý dữ liệu
+
+2
+00:00:02,580 --> 00:00:04,490
+mà bạn cần biết.
+
+3
+00:00:04,490 --> 00:00:08,010
+Thứ nhất là mô hình dữ liệu - là một tập các khái niệm
+
+4
+00:00:08,010 --> 00:00:09,860
+để mô tả dữ liệu.
+
+5
+00:00:09,860 --> 00:00:12,290
+Thứ hai là lược đồ - là sự mô tả
+
+6
+00:00:12,290 --> 00:00:14,560
+một tập hợp dữ liệu cụ thể,
+
+7
+00:00:14,560 --> 00:00:17,170
+sử dụng một mô hình dữ liệu cho trước.
+
+8
+00:00:17,170 --> 00:00:21,620
+Ta sẽ tìm hiểu kĩ hơn về chúng trong vài phút nữa.
+
+9
+00:00:21,620 --> 00:00:24,980
+Các loại dữ liệu nằm trên một phổ cấu trúc.
+
+10
+00:00:24,980 --> 00:00:28,570
+Ở bên phải của phổ là dữ liệu phi cấu trúc,
+
+11
+00:00:28,570 --> 00:00:32,460
+ví dụ như văn bản chữ thuần túy
+và dữ liệu từ các kênh truyền thông.
+
+12
+00:00:32,460 --> 00:00:35,070
+Loại dữ liệu này không có lược đồ,
+
+13
+00:00:35,070 --> 00:00:39,230
+và dữ liệu cũng không có dạng cụ thể.
+
+14
+00:00:39,230 --> 00:00:41,760
+Ở giữa phổ là dữ liệu nửa cấu trúc,
+
+15
+00:00:41,760 --> 00:00:45,230
+gồm những thứ như các văn bản, các văn bản ngôn ngữ
+
+16
+00:00:45,230 --> 00:00:49,850
+đánh dấu mở rộng - XML,
+các văn bản đánh dấu và các dữ liệu truyền thông.
+
+17
+00:00:49,850 --> 00:00:52,400
+Với loại dữ liệu này, ta có thể suy luận
+
+18
+00:00:52,400 --> 00:00:57,150
+các kiểu của dữ liệu được lưu trữ trong tập tin.
+
+19
+00:00:57,150 --> 00:01:01,740
+Dữ liệu có cấu trúc là khi ta biết kiểu
+
+20
+00:01:01,740 --> 00:01:03,320
+của tất cả dữ liệu.
+
+21
+00:01:03,320 --> 00:01:05,680
+ví dụ như cơ sở dữ liệu quan hệ
+
+22
+00:01:05,680 --> 00:01:09,370
+và thông điệp được định dạng.
+
+23
+00:01:09,370 --> 00:01:11,690
+Dữ liệu nửa cấu trúc thường
+
+24
+00:01:11,690 --> 00:01:14,380
+là dữ liệu dạng bảng --
+
+25
+00:01:14,380 --> 00:01:16,740
+một trong những định dạng dữ liệu phổ biến nhất.
+
+26
+00:01:16,740 --> 00:01:20,570
+Mỗi bảng là một tập hợp các hàng và các cột.
+
+27
+00:01:20,570 --> 00:01:24,790
+Mỗi cột có một cái tên, và mỗi ô có thể có
+
+28
+00:01:24,790 --> 00:01:26,900
+giá trị hoặc không.
+
+29
+00:01:26,900 --> 00:01:29,840
+Dữ liệu trong mỗi cột thuộc một kiểu nhất định,
+
+30
+00:01:29,840 --> 00:01:32,470
+ví dụ như kiểu chuỗi hay kiểu số nguyên.
+
+31
+00:01:32,470 --> 00:01:37,340
+Cùng với nhau, các dạng của dữ liệu trong các cột tạo thành lược đồ dữ liệu.
+
+32
+00:01:37,340 --> 00:01:41,150
+Có hai cách để xác định lược đồ:
+
+33
+00:01:41,150 --> 00:01:46,230
+Spark có thể chủ động suy ra lược đồ khi đọc từng hàng,
+
+34
+00:01:46,230 --> 00:01:52,780
+hoặc lập trình viên có thể chỉ ra ngay lược đồ.
+
+35
+00:01:52,780 --> 00:01:56,220
+Đây là một ví dụ về dữ liệu dạng bảng;
+
+36
+00:01:56,220 --> 00:02:01,300
+Đây là danh sách 500 công ty 'closely held'
+và công ty đại chúng lớn nhất ở Mỹ
+
+37
+00:02:01,300 --> 00:02:07,180
+do tạp chí Fortune công bố, dựa trên tổng doanh thu.
+
+38
+00:02:07,180 --> 00:02:11,210
+Trong bảng này, ta thấy có các hàng
+
+39
+00:02:11,210 --> 00:02:14,265
+và các cột được đặt tên.
+
+40
+00:02:14,265 --> 00:02:18,015
+Ta có thể nêu rõ dạng của dữ liệu trong các cột,
+
+41
+00:02:18,015 --> 00:02:20,340
+hoặc để chương trình tự suy luận ra.
+
+42
+00:02:20,340 --> 00:02:22,980
+Ví dụ, dữ liệu trong cột company có
+
+43
+00:02:22,980 --> 00:02:28,170
+dạng chuỗi; trong cột rank, dữ liệu có dạng số nguyên,
+
+44
+00:02:28,170 --> 00:02:33,090
+cũng giống như cột rank và cột profits.
+
+45
+00:02:33,090 --> 00:02:37,330
+Đây là một ví dụ nữa về dữ liệu nửa cấu trúc.
+
+46
+00:02:37,330 --> 00:02:40,002
+Đây chính là thông tin trích từ Ngân hàng dữ liệu Protein.
+
+47
+00:02:40,002 --> 00:02:42,510
+Bạn có thể thấy định dạng ở đây là
+
+48
+00:02:42,510 --> 00:02:46,410
+một tên miền, một con số và các giá trị.
+
+49
+00:02:46,410 --> 00:02:49,710
+Mô hình dữ liệu quan hệ là mô hình dữ liệu
+được sử dụng rộng rãi nhất
+
+50
+00:02:49,710 --> 00:02:52,700
+cho dữ liệu có cấu trúc; một quan hệ thực ra
+
+51
+00:02:52,700 --> 00:02:55,690
+chỉ là một bảng gồm các hàng và các cột.
+
+52
+00:02:55,690 --> 00:02:58,080
+Mỗi quan hệ có một lược đồ
+
+53
+00:02:58,080 --> 00:03:01,570
+quy định kiểu của dữ liệu trong mỗi cột, và lập trình viên phải
+
+54
+00:03:01,570 --> 00:03:04,140
+chỉ ra lược đồ.
+
+55
+00:03:04,140 --> 00:03:07,100
+Đây là một ví dụ về dữ liệu có cấu trúc --
+
+56
+00:03:07,100 --> 00:03:11,680
+cụ thể thì nó là một thực thể của quan hệ students.
+
+57
+00:03:11,680 --> 00:03:16,550
+Bạn có thể thấy tên của quan hệ này là students,
+
+58
+00:03:16,550 --> 00:03:19,060
+và nó có một vài cột.
+
+59
+00:03:19,060 --> 00:03:22,560
+Ba cột trong bảng có dữ liệu dạng chuỗi: cột SID, cột name
+
+60
+00:03:22,560 --> 00:03:24,146
+và cột login.
+
+61
+00:03:24,146 --> 00:03:27,050
+Với cột age - tuổi, dữ liệu có dạng số nguyên;
+
+62
+00:03:27,050 --> 00:03:29,790
+còn cột GPA có dữ liệu dạng số thực.
+
+63
+00:03:29,790 --> 00:03:31,246
+Bảng này gồm ba hàng.
+
+64
+00:03:31,246 --> 00:03:35,100
+
+65
+00:03:35,100 --> 00:03:40,060
+Tuy nhiên, dữ liệu có cấu trúc chỉ chiếm khoảng 20%
+
+66
+00:03:40,060 --> 00:03:42,670
+lượng dữ liệu ta có;
+
+67
+00:03:42,670 --> 00:03:45,629
+hầu hết dữ liệu ta có là dữ liệu phi cấu trúc.
+
+68
+00:03:45,629 --> 00:03:48,170
+Lượng dữ liệu có cấu trúc ngày cảng giảm đi vì những thứ như
+
+69
+00:03:48,170 --> 00:03:49,780
+các ứng dụng cho phép người dùng tạo ra
+
+70
+00:03:49,780 --> 00:03:53,180
+nội dung, và chúng là dữ liệu phi cấu trúc;
+
+71
+00:03:53,180 --> 00:03:55,210
+hay các ứng dụng tìm kiếm trong kinh doanh,
+
+72
+00:03:55,210 --> 00:03:59,790
+cho phép bạn xem danh mục dữ liệu của công ty trên mạng nội bộ.
+
+73
+00:03:59,790 --> 00:04:02,590
+Dữ liệu đó đôi khi là dữ liệu phi cấu trúc.
+
+74
+00:04:02,590 --> 00:04:05,370
+Cuối cùng, dữ liệu của
+các ứng dụng truyền thông thường
+
+75
+00:04:05,370 --> 00:04:06,430
+là dữ liệu phi cấu trúc.
+
+76
+00:04:06,430 --> 00:04:09,060
+
+77
+00:04:09,060 --> 00:04:12,820
+Với dữ liệu phi cấu trúc, ta sẽ chỉ có một cột,
+
+78
+00:04:12,820 --> 00:04:15,470
+và kiểu dữ liệu trong đó thường là kiểu chuỗi hoặc kiểu số nhị phân.
+
+79
+00:04:15,470 --> 00:04:18,579
+Ta có thể lấy rất nhiều ví dụ: một bài đăng trên Facebook, một hình ảnh
+
+80
+00:04:18,579 --> 00:04:22,670
+trên Instagram, một video trên Vine,
+một bài đăng trên blog, một bài báo,
+
+81
+00:04:22,670 --> 00:04:24,000
+nội dung do người dùng tạo ra...
+
+82
+00:04:24,000 --> 00:04:26,430
+Chúng thường là dữ liệu phi cấu trúc.
+
+83
+00:04:26,430 --> 00:04:29,570
+
+84
+00:04:29,570 --> 00:04:31,330
+Điều đó đặt ra một thử thách --
+
+85
+00:04:31,330 --> 00:04:34,620
+Ta muốn được làm việc với dữ liệu có cấu trúc và bán cấu trúc,
+
+86
+00:04:34,620 --> 00:04:37,820
+nhưng phần lớn dữ liệu ta phải làm việc cùng
+
+87
+00:04:37,820 --> 00:04:39,700
+là dữ liệu phi cấu trúc.
+
+88
+00:04:39,700 --> 00:04:43,360
+Điều đó có nghĩa ta phải thực hiện thao tác ETL - extract,
+
+89
+00:04:43,360 --> 00:04:45,310
+transform, load.
+
+90
+00:04:45,310 --> 00:04:47,290
+Đây là lúc ta sẽ lập ra một cấu trúc
+
+91
+00:04:47,290 --> 00:04:50,470
+cho dữ liệu phi cấu trúc.
+

@@ -1,0 +1,472 @@
+0
+00:00:00,000 --> 00:00:00,500
+ngotuyentrang_20/12/2017 https://youtu.be/VaihELODcHQ
+
+1
+00:00:00,500 --> 00:00:01,290
+Chào mọi người.
+
+2
+00:00:01,290 --> 00:00:03,180
+Chào mừng các bạn đến với phần trả lời miệng 
+
+3
+00:00:03,180 --> 00:00:05,010
+về việc quản lý hàng hóa tồn kho.
+
+4
+00:00:05,010 --> 00:00:06,450
+Tôi là Fredik Eng Larsson.
+
+5
+00:00:06,450 --> 00:00:08,650
+Và trong video này, chúng ta sẽ nói về giai đoạn tồn kho 
+
+6
+00:00:08,650 --> 00:00:11,447
+và mô hình từng giai đoạn.
+
+7
+00:00:11,447 --> 00:00:13,030
+Trong buổi này, tôi sẽ dành phần lớn thời gian
+
+8
+00:00:13,030 --> 00:00:15,600
+để bàn về một trong các vấn đề
+
+9
+00:00:15,600 --> 00:00:17,600
+mà bạn gặp phải trong số các vấn đề trong tuần này.
+
+10
+00:00:17,600 --> 00:00:20,270
+Tôi sẽ chỉ bạn cách nghĩ về vấn đề khi bạn giải quyết nó,
+
+11
+00:00:20,270 --> 00:00:21,570
+cách thật sự giải quyết nó.
+
+12
+00:00:21,570 --> 00:00:24,210
+Rồi sau đó, chúng ta sẽ nói một chút về các quan điểm 
+
+13
+00:00:24,210 --> 00:00:25,600
+về các giải pháp này.
+
+14
+00:00:25,600 --> 00:00:27,100
+Nhưng trước khi chúng ta đi thẳng vào vấn đề, tôi muốn
+
+15
+00:00:27,100 --> 00:00:29,420
+nói một chút về mô hình từng giai đoạn
+
+16
+00:00:29,420 --> 00:00:31,710
+và tiêu chí tạo ra mô hình từng giai doạn
+
+17
+00:00:31,710 --> 00:00:34,770
+và một chút về sự khác biệt của mô hình này với mô hình đặt hàng kinh tế
+
+18
+00:00:34,770 --> 00:00:36,540
+mà bạn từng bắt gặp trong quá khứ.
+
+19
+00:00:36,540 --> 00:00:39,050
+Vì thế, khi bạn nghe giảng,
+
+20
+00:00:39,050 --> 00:00:42,750
+thì đây thật sự là mô hình hay khuôn mẫu rất phổ biến.
+
+21
+00:00:42,750 --> 00:00:45,850
+Và bạn có thể nghĩ về nó như một bước ngoặt cho các mô hình giai đoạn tồn kho 
+
+22
+00:00:45,850 --> 00:00:47,780
+phức tạp hơn.
+
+23
+00:00:47,780 --> 00:00:49,830
+Vậy tại sao đây lại là khuôn mẫu hữu ích?
+
+24
+00:00:49,830 --> 00:00:52,820
+À thì, nó hiệu quả vì nó đề cập
+
+25
+00:00:52,820 --> 00:00:55,800
+đến sự cân bằng cơ bản mà bạn có thể tìm thấy khi đưa ra quyết định
+
+26
+00:00:55,800 --> 00:00:57,260
+khi không chắc chắn.
+
+27
+00:00:57,260 --> 00:01:01,130
+Nó chỉ cho chúng ta cách cân bằng giá đặt hàng hay sản xuất
+
+28
+00:01:01,130 --> 00:01:04,680
+quá ít một hàng nào đó so với giá đặt hàng hay tạo ra quá nhiều
+
+29
+00:01:04,680 --> 00:01:06,400
+mặt hàng nào đó.
+
+30
+00:01:06,400 --> 00:01:08,990
+Và vì thế nó giúp cân bằng khi chúng ta phải 
+
+31
+00:01:08,990 --> 00:01:12,770
+đưa ra quyết định về số lượng đặt hàng hay sản xuất
+
+32
+00:01:12,770 --> 00:01:15,647
+mà không biết rằng chúng ta sẽ bán được bao nhiêu.
+
+33
+00:01:15,647 --> 00:01:17,480
+We can think of this in terms of a timeline.
+
+34
+00:01:17,480 --> 00:01:20,340
+So here's a timeline, where we have time on the axis
+
+35
+00:01:20,340 --> 00:01:23,070
+here, and time is progressing as we move towards the right hand
+
+36
+00:01:23,070 --> 00:01:24,310
+side of the screen.
+
+37
+00:01:24,310 --> 00:01:27,400
+And what makes something at one-period model
+
+38
+00:01:27,400 --> 00:01:29,310
+are two characteristics.
+
+39
+00:01:29,310 --> 00:01:31,990
+First of all, we have a well-defined selling season
+
+40
+00:01:31,990 --> 00:01:33,200
+or sales period.
+
+41
+00:01:33,200 --> 00:01:36,470
+So we have some kind of start, and we have some kind of end.
+
+42
+00:01:36,470 --> 00:01:40,040
+And really, what's crucial here is at the end,
+
+43
+00:01:40,040 --> 00:01:42,920
+we can no longer sell the product at full price.
+
+44
+00:01:42,920 --> 00:01:46,160
+So somehow, the product becomes obsolete at the end
+
+45
+00:01:46,160 --> 00:01:47,840
+of the selling season.
+
+46
+00:01:47,840 --> 00:01:49,820
+That is the first key characteristic
+
+47
+00:01:49,820 --> 00:01:51,720
+of a single-period model.
+
+48
+00:01:51,720 --> 00:01:55,090
+The second key characteristic is that during this selling
+
+49
+00:01:55,090 --> 00:01:58,260
+season, we cannot replenish our inventory.
+
+50
+00:01:58,260 --> 00:02:01,220
+So if we're looking at a store, that means we cannot replenish
+
+51
+00:02:01,220 --> 00:02:03,547
+the store shelves during the selling season.
+
+52
+00:02:03,547 --> 00:02:05,380
+And if we're looking at a central warehouse,
+
+53
+00:02:05,380 --> 00:02:08,979
+it means we cannot replenish the inventory of the warehouse
+
+54
+00:02:08,979 --> 00:02:10,520
+during the selling season.
+
+55
+00:02:10,520 --> 00:02:11,970
+When is this the case?
+
+56
+00:02:11,970 --> 00:02:14,710
+Well, maybe more commonly than you would think.
+
+57
+00:02:14,710 --> 00:02:19,410
+And the key, sort of the most common context where
+
+58
+00:02:19,410 --> 00:02:21,570
+this is described and often referred to
+
+59
+00:02:21,570 --> 00:02:22,900
+is when you sell newspapers.
+
+60
+00:02:22,900 --> 00:02:26,307
+And it's sometimes referred to as a newsvendor type of model.
+
+61
+00:02:26,307 --> 00:02:28,140
+For newspapers, you have a very well-defined
+
+62
+00:02:28,140 --> 00:02:31,412
+and a very short selling season, because the newspapers that you
+
+63
+00:02:31,412 --> 00:02:33,120
+have in the morning, they're more or less
+
+64
+00:02:33,120 --> 00:02:36,532
+obsolete-- I mean, before the afternoon even.
+
+65
+00:02:36,532 --> 00:02:37,990
+Somewhere around lunch, you may not
+
+66
+00:02:37,990 --> 00:02:39,680
+be able to sell the newspapers anymore,
+
+67
+00:02:39,680 --> 00:02:41,050
+because the news are old.
+
+68
+00:02:41,050 --> 00:02:43,882
+So you have a very short, very well-defined selling season.
+
+69
+00:02:43,882 --> 00:02:46,340
+And you have to make a decision about how much to replenish
+
+70
+00:02:46,340 --> 00:02:48,700
+for that selling season, because basically once you're
+
+71
+00:02:48,700 --> 00:02:51,464
+standing in the-- the vendor is selling the papers,
+
+72
+00:02:51,464 --> 00:02:53,130
+there's no time or it's not economically
+
+73
+00:02:53,130 --> 00:02:56,910
+feasible to replenish the papers as the day progresses.
+
+74
+00:02:56,910 --> 00:02:58,590
+So that'll be one case.
+
+75
+00:02:58,590 --> 00:03:01,030
+Another case is when you have a long lead time.
+
+76
+00:03:01,030 --> 00:03:02,800
+So you can think of seasonal goods--
+
+77
+00:03:02,800 --> 00:03:05,040
+sports items or some fashion goods--
+
+78
+00:03:05,040 --> 00:03:08,100
+that are sold only during a short season of the year.
+
+79
+00:03:08,100 --> 00:03:10,430
+Many times, these goods have to be produced well
+
+80
+00:03:10,430 --> 00:03:13,352
+in advance in big batches somewhere far away.
+
+81
+00:03:13,352 --> 00:03:15,060
+That means that you have a very long lead
+
+82
+00:03:15,060 --> 00:03:17,700
+time from the time you place a production order until you're
+
+83
+00:03:17,700 --> 00:03:19,320
+able to sell the goods.
+
+84
+00:03:19,320 --> 00:03:22,870
+So when this lead time is much longer than the selling season,
+
+85
+00:03:22,870 --> 00:03:25,700
+that also means it's impossible to replenish during the selling
+
+86
+00:03:25,700 --> 00:03:27,560
+season.
+
+87
+00:03:27,560 --> 00:03:29,330
+So these are the two key characteristics
+
+88
+00:03:29,330 --> 00:03:31,560
+that make something a single-period model.
+
+89
+00:03:31,560 --> 00:03:34,540
+And basically, the decision that you're trying to find
+
+90
+00:03:34,540 --> 00:03:36,350
+is the quantity decision.
+
+91
+00:03:36,350 --> 00:03:39,070
+So before the selling season, you
+
+92
+00:03:39,070 --> 00:03:41,580
+have to make a decision about how much to make,
+
+93
+00:03:41,580 --> 00:03:43,065
+how much to order.
+
+94
+00:03:43,065 --> 00:03:44,440
+And you have to make the decision
+
+95
+00:03:44,440 --> 00:03:46,140
+without knowing how much you're going to sell
+
+96
+00:03:46,140 --> 00:03:47,360
+during the selling season.
+
+97
+00:03:47,360 --> 00:03:49,320
+So essentially, it's a model that
+
+98
+00:03:49,320 --> 00:03:51,640
+tells you how to place a bet.
+
+99
+00:03:51,640 --> 00:03:53,960
+You have to make a bet about how much you're
+
+100
+00:03:53,960 --> 00:03:55,990
+going to sell during the selling season.
+
+101
+00:03:55,990 --> 00:03:59,430
+And if you bet more, there's going to be some consequences.
+
+102
+00:03:59,430 --> 00:04:02,170
+If you bet less, there's going to be some other consequences.
+
+103
+00:04:02,170 --> 00:04:04,290
+So this model, like I said, it tells you
+
+104
+00:04:04,290 --> 00:04:06,590
+how to balance that trade-off.
+
+105
+00:04:06,590 --> 00:04:08,730
+And this is what makes these type
+
+106
+00:04:08,730 --> 00:04:10,980
+of models so useful as a framework for more
+
+107
+00:04:10,980 --> 00:04:12,780
+complicated models also.
+
+108
+00:04:12,780 --> 00:04:15,900
+So today, we're going to look at one of those decisions.
+
+109
+00:04:15,900 --> 00:04:17,331
+We make a quantity decision.
+
+110
+00:04:17,331 --> 00:04:19,539
+And you can think of, compared to an EOQ model, where
+
+111
+00:04:19,539 --> 00:04:22,740
+you have a timing decision and you decide when to order
+
+112
+00:04:22,740 --> 00:04:25,370
+and how much to order, now for this type of model,
+
+113
+00:04:25,370 --> 00:04:27,550
+we only make a decision about how much to order.
+
+114
+00:04:27,550 --> 00:04:29,260
+So it's a quantity decision.
+
+115
+00:04:29,260 --> 00:04:31,510
+And today, we're going to look at one context
+
+116
+00:04:31,510 --> 00:04:34,380
+where this is the decision that you have to make.
+
+117
+00:04:34,380 --> 00:04:37,080
+OK, let's get started.
+

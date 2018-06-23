@@ -1,0 +1,499 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/y-v2zJh53bk    NghiaNguyen
+
+1
+00:00:00,000 --> 00:00:00,157
+
+2
+00:00:00,157 --> 00:00:02,615
+DR. RAMESH YERRABALLI: Hôm nay ta sẽ
+thảo luận về ngắt là gì.
+
+3
+00:00:02,615 --> 00:00:07,050
+
+4
+00:00:07,050 --> 00:00:10,450
+Định nghĩa của 1 ngắt là 
+
+5
+00:00:10,450 --> 00:00:22,060
+1 trigger từ phần cứng lên phần mềm.
+
+6
+00:00:22,060 --> 00:00:25,460
+DR JONATHAN VALVANO: giáo sư Yerraballi,
+tôi sẽ làm gì nếu tôi có 2 task muốn làm.
+
+7
+00:00:25,460 --> 00:00:28,830
+DR JONATHAN VALVANO: giáo sư Yerraballi,
+tôi sẽ làm gì nếu tôi có 2 task muốn làm.
+
+8
+00:00:28,830 --> 00:00:34,360
+DR. RAMESH YERRABALLI: Giờ ta sẽ tìm hiểu
+về phương pháp busy-wait.
+
+9
+00:00:34,360 --> 00:00:36,980
+Giả sử đây là 2 task ta muốn làm.
+
+10
+00:00:36,980 --> 00:00:40,320
+Ta kiểm tra điều kiện cho task đầu tiên.
+
+11
+00:00:40,320 --> 00:00:42,910
+Bây giờ có phải là lúc làm task đầu tiên?
+
+12
+00:00:42,910 --> 00:00:47,240
+Và nếu kết quả điều kiện là NO, thì bây giờ 
+không phải là lúc làm task đầu tiên.
+
+13
+00:00:47,240 --> 00:00:49,370
+Và ta làm kiểm tra y hệt như vậy lần nữa.
+
+14
+00:00:49,370 --> 00:00:51,480
+Kết quả là NO.
+
+15
+00:00:51,480 --> 00:00:54,070
+Và ta tiếp tục kiểm tra.
+
+16
+00:00:54,070 --> 00:00:59,660
+Khi câu trả lời là YES, ta làm task này,
+cho dù công việc này có thể là -- Task 1, ví dụ.
+
+17
+00:00:59,660 --> 00:01:05,290
+Khi câu trả lời là YES, ta làm task này,
+cho dù công việc này có thể là -- Task 1, ví dụ.
+
+18
+00:01:05,290 --> 00:01:09,330
+Và ta tiếp tục, làm tương tự với task 2 --
+
+19
+00:01:09,330 --> 00:01:11,980
+khi mà điều kiện cho task 2 này thoả mãn.
+
+20
+00:01:11,980 --> 00:01:16,160
+Nếu không thỏa, tôi quay về, kiểm tra lại
+
+21
+00:01:16,160 --> 00:01:19,480
+Và nếu thỏa điều kiện, tôi sẽ thực hiện
+
+22
+00:01:19,480 --> 00:01:24,390
+task 2 bất kể công việc là gì.
+
+23
+00:01:24,390 --> 00:01:29,220
+Và tôi đi tiếp xuống và làm các việc khác.
+
+24
+00:01:29,220 --> 00:01:32,080
+
+25
+00:01:32,080 --> 00:01:34,810
+Đây là những việc khác mà tôi làm.
+
+26
+00:01:34,810 --> 00:01:40,200
+Khi xong, tôi sẽ trở lại đầu
+và lặp lại chương trình này.
+
+27
+00:01:40,200 --> 00:01:45,930
+Rõ ràng việc này rất lãng phí tài nguyên.
+
+28
+00:01:45,930 --> 00:01:50,480
+Bởi vì nếu task đầu tiên chưa 
+sẵn sàng nhưng task 2 đã sãn sàng,
+
+29
+00:01:50,480 --> 00:01:54,980
+thì tôi không thể làm task 2 được bởi vì
+tôi đang kẹt trong trạng thái chờ ở đây.
+
+30
+00:01:54,980 --> 00:01:59,610
+Và những công việc còn lại chỉ được làm
+khi 2 task trên hoàn tất.
+
+31
+00:01:59,610 --> 00:02:06,500
+Như đã đề cập, 1 đặc điểm 
+về giải pháp dựa trên ngắt
+
+32
+00:02:06,500 --> 00:02:13,690
+là ta không phải chờ công 
+việc cho tới khi sẵn sàng.
+
+33
+00:02:13,690 --> 00:02:15,710
+Khi mà việc sẵn sàng, nó sẽ
+báo lệnh ngắt tới ta.
+
+34
+00:02:15,710 --> 00:02:20,510
+Vậy ta có Task 1 ở đây.
+
+35
+00:02:20,510 --> 00:02:24,850
+Và ta làm Task 1 khi thấy có 1 ngắt.
+
+36
+00:02:24,850 --> 00:02:26,540
+Ví dụ đây là Interrupt 1.
+
+37
+00:02:26,540 --> 00:02:30,690
+Lệnh ngắt này là điều kiện để Task 1 được làm,
+
+38
+00:02:30,690 --> 00:02:39,415
+và ta quay trở lại ngắt.
+
+39
+00:02:39,415 --> 00:02:44,160
+
+40
+00:02:44,160 --> 00:02:49,590
+Tương tự, nếu task 2 sẵn sàng --
+điều kiện cho task 2 chạy  --
+
+41
+00:02:49,590 --> 00:02:54,370
+sẽ có 1 ngắt Interrupt 2 dùng để kích hoạt task này.
+
+42
+00:02:54,370 --> 00:02:57,110
+Ta làm Task 2.
+
+43
+00:02:57,110 --> 00:03:03,530
+Và ta quay trở lại ngắt quãng.
+
+44
+00:03:03,530 --> 00:03:12,880
+Giờ, điều tốt là, chương trình main, là 1 hàm loop,
+
+45
+00:03:12,880 --> 00:03:20,940
+sẽ làm phần cài đặt để kích hoạt ngắt quãng.
+
+46
+00:03:20,940 --> 00:03:26,060
+Và cả vài thứ khác -- 
+
+47
+00:03:26,060 --> 00:03:28,540
+những thứ tương tự với "other" ở đây,
+
+48
+00:03:28,540 --> 00:03:31,990
+Và tiếp tục làm những thứ khác, 
+
+49
+00:03:31,990 --> 00:03:35,270
+những thứ có thể quan trọng và dự đoán.
+
+50
+00:03:35,270 --> 00:03:42,000
+Và khi 1 ngắt xảy ra, ta tạm ngưng. 
+
+51
+00:03:42,000 --> 00:03:43,970
+Ta tạm ngưng.
+
+52
+00:03:43,970 --> 00:03:46,350
+Ta chạy các Task.
+
+53
+00:03:46,350 --> 00:03:49,240
+Chẳng hạn task này là task 1.
+
+54
+00:03:49,240 --> 00:03:54,370
+Khi ta quay lại chương trình từ ngắt,
+ta sẽ tiếp tục ở chỗ mà ta tạm dừng.
+
+55
+00:03:54,370 --> 00:03:58,120
+Cách này, ta sẽ đáp ứng các ngắt
+
+56
+00:03:58,120 --> 00:04:02,410
+mà không cần tiếp tục kiểm 
+tra xem các điều kiện cho task
+
+57
+00:04:02,410 --> 00:04:05,590
+có được thoả mãn hay không.
+
+58
+00:04:05,590 --> 00:04:09,970
+Vậy, ta đã có 1 cái nhìn tổng quát về ngắt.
+
+59
+00:04:09,970 --> 00:04:12,810
+Giờ ta sẽ nghiên cứu chi tiết.
+
+60
+00:04:12,810 --> 00:04:15,380
+Đầu tiên, ta sẽ nhìn vào điều kiện 
+
+61
+00:04:15,380 --> 00:04:20,250
+cần được thoả mãn cho 
+lệnh 1 ngắt để xảy ra.
+
+62
+00:04:20,250 --> 00:04:28,770
+Đây thường là 1 phần trong 
+phần cài đặt -- quy trình cài đặt.
+
+63
+00:04:28,770 --> 00:04:31,120
+Vậy các điều kiện sẽ là thứ 
+cần được thoả mãn,
+
+64
+00:04:31,120 --> 00:04:41,040
+điều kiện đầu tiên là ta phải trang bị 
+thiết bị -- thiết bị ngoại vi hay 
+
+65
+00:04:41,040 --> 00:04:49,550
+thiết bị nội vi, thứ sẽ ngắt vi xử lý.
+
+66
+00:04:49,550 --> 00:04:52,990
+Có vài cờ tưng ứng với việc ngắt,
+
+67
+00:04:52,990 --> 00:04:59,850
+dùng để thông báo rằng, từ giờ, 
+thiết bị này có thể ngắt bộ vi xử lý.
+
+68
+00:04:59,850 --> 00:05:02,010
+Điều thứ 2 mà ta sẽ làm là 
+
+69
+00:05:02,010 --> 00:05:13,580
+ta sẽ kích hoạt thiết bị.
+
+70
+00:05:13,580 --> 00:05:20,930
+Có 1 module trong bộ vi xử lý gọi là 
+Nested Vector Interrupt Controller,
+
+71
+00:05:20,930 --> 00:05:26,940
+là 1 dạng module để 
+
+72
+00:05:26,940 --> 00:05:30,710
+điều khiển toàn bộ các ngắt.
+
+73
+00:05:30,710 --> 00:05:37,274
+Vậy ta sẽ kích hoạt NVIC riêng 
+cho từng thiết bị một -- thiết bị riêng biệt.
+
+74
+00:05:37,274 --> 00:05:37,773
+Vậy ta sẽ kích hoạt NVIC riêng 
+cho từng thiết bị một -- thiết bị riêng biệt.
+
+75
+00:05:37,773 --> 00:05:43,310
+
+76
+00:05:43,310 --> 00:05:45,550
+Việc thứ 3 mà ta sẽ làm là
+
+77
+00:05:45,550 --> 00:05:48,910
+có 1 bit kích hoạt toàn cục gọi là I bit.
+
+78
+00:05:48,910 --> 00:05:54,620
+Đây là bit để kích hoạt ngắt toàn cục.
+
+79
+00:05:54,620 --> 00:05:58,142
+Ta phải chắc chắn rằng bit này là 0.
+
+80
+00:05:58,142 --> 00:06:06,100
+I bit được sử dụng thường xuyên để
+bật hoặc tắt toàn bộ các ngắt.
+
+81
+00:06:06,100 --> 00:06:06,790
+I bit được sử dụng thường xuyên để
+bật hoặc tắt toàn bộ các ngắt.
+
+82
+00:06:06,790 --> 00:06:12,810
+Nó là cờ ngắt chính.
+
+83
+00:06:12,810 --> 00:06:18,640
+Việc thứ 4 mà ta sẽ làm là đặt độ ưu tiên.
+
+84
+00:06:18,640 --> 00:06:26,260
+Nghĩa là, các thiết bị sẽ có 
+các độ ưu tiên tương ứng.
+
+85
+00:06:26,260 --> 00:06:30,010
+Mặt khác, các ngắt có thể 
+được chia ra theo độ ưu tiên.
+
+86
+00:06:30,010 --> 00:06:34,360
+Đó là, nếu bạn muốn thiết bị 
+của mình tạo ra 1 ngắt tới bộ xử lý,
+
+87
+00:06:34,360 --> 00:06:40,105
+thì thiết bị này phải có độ ưu tiên 
+cao hơn task đang được chạy.
+
+88
+00:06:40,105 --> 00:06:42,090
+thì thiết bị này phải có độ ưu tiên 
+cao hơn task đang được chạy.
+
+89
+00:06:42,090 --> 00:06:45,250
+Nếu bạn có 2 thiết bị thì 
+ta sẽ gán độ ưu tiên tương ứng
+
+90
+00:06:45,250 --> 00:06:47,920
+để ta quyết định thiết bị nào 
+có thể ngắt được thiết bị nào
+
+91
+00:06:47,920 --> 00:06:52,830
+trong khi chạy.
+
+92
+00:06:52,830 --> 00:06:58,910
+Việc cuối cùng là ta nhìn vào sự kiện trigger.
+
+93
+00:06:58,910 --> 00:07:03,640
+Không giống với những 
+bước ở đầu - 1, 2, 3, 
+
+94
+00:07:03,640 --> 00:07:13,030
+Bước 4 là 1 phần của việc cài đặt -
+Trigger là 1 sự kiện bất đồng bộ, 
+
+95
+00:07:13,030 --> 00:07:15,850
+Đây là thứ giúp việc ngắt xảy ra.
+
+96
+00:07:15,850 --> 00:07:19,940
+Giả sử thiết bị của ta là 1 công tắc --
+
+97
+00:07:19,940 --> 00:07:22,420
+nếu ta có 1 công tắc với 1 nút bấm.
+
+98
+00:07:22,420 --> 00:07:28,750
+Khi mà công tắc ở trạng thái mở,
+có thể nói rằng không có trigger nào.
+
+99
+00:07:28,750 --> 00:07:32,190
+Khi mà công tắc ở trạng thái mở,
+có thể nói rằng không có trigger nào.
+
+100
+00:07:32,190 --> 00:07:37,790
+Nhưng khi công tắc đóng, 
+điều này sẽ sinh ra 1 trigger.
+
+101
+00:07:37,790 --> 00:07:41,790
+Điều này nghĩa là thiết 
+bị này gây ra 1 ngắt 
+
+102
+00:07:41,790 --> 00:07:44,950
+đã được đăng ký trong hệ thống.
+
+103
+00:07:44,950 --> 00:07:47,900
+Và nó sẽ đáp trả lại.
+
+104
+00:07:47,900 --> 00:07:58,410
+Vậy trong trường hợp của ta, cái mà ta 
+sẽ thấy là sẽ có 1 bit - trong thanh ghi RIS.
+
+105
+00:07:58,410 --> 00:08:01,410
+Và sẽ có thêm vài bit ở đây,
+
+106
+00:08:01,410 --> 00:08:05,510
+nó sẽ được kích hoạt để thông 
+báo với ta rằng thấy 1 trigger.
+
+107
+00:08:05,510 --> 00:08:07,640
+DR JONATHAN VALVANO: RIS viết tắt cho cụm từ gì?
+
+108
+00:08:07,640 --> 00:08:08,973
+DR. RAMESH YERRABALLI: Oh, yeah.
+
+109
+00:08:08,973 --> 00:08:13,037
+RIS là viết tắt của Raw Interrupt Status.
+
+110
+00:08:13,037 --> 00:08:15,620
+DR JONATHAN VALVANO: Vậy, cái này là 
+nơi chứa các cờ trigger phải không?
+
+111
+00:08:15,620 --> 00:08:18,453
+DR. RAMESH YERRABALLI: Đúng, cái này là 
+nơi các cờ trigger được lưu.
+
+112
+00:08:18,453 --> 00:08:23,110
+Và đây là chỗ bộ xử lí kiểm tra 
+liên tục khi nó thấy 1 ngắt.
+
+113
+00:08:23,110 --> 00:08:26,070
+Và đây là chỗ bộ xử lí kiểm tra 
+liên tục khi nó thấy 1 ngắt.
+
+114
+00:08:26,070 --> 00:08:27,587

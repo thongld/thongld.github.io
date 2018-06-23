@@ -1,0 +1,236 @@
+0
+00:00:00,000 --> 00:00:00,780
+https://youtu.be/7rNF3UMC2AM
+
+1
+00:00:00,780 --> 00:00:01,280
+All right.
+
+2
+00:00:01,280 --> 00:00:03,196
+Let's go over the key points from this lesson,
+
+3
+00:00:03,196 --> 00:00:05,400
+the extensions to the EOQ model.
+
+4
+00:00:05,400 --> 00:00:07,730
+Hopefully by now, you're very comfortable with EOQ,
+
+5
+00:00:07,730 --> 00:00:09,650
+and you can see it's a great place to start.
+
+6
+00:00:09,650 --> 00:00:12,070
+It's very robust, it's simple to calculate,
+
+7
+00:00:12,070 --> 00:00:14,190
+and again, it's a great starting point.
+
+8
+00:00:14,190 --> 00:00:15,710
+And as you saw from this lesson, we
+
+9
+00:00:15,710 --> 00:00:18,300
+can extend it to cover many different variations.
+
+10
+00:00:18,300 --> 00:00:21,044
+First thing we did was we looked at the lead time.
+
+11
+00:00:21,044 --> 00:00:22,460
+Instead of it being instantaneous,
+
+12
+00:00:22,460 --> 00:00:25,480
+we said what happens if it was a positive, constant number.
+
+13
+00:00:25,480 --> 00:00:27,220
+We saw it had no effect on Q*.
+
+14
+00:00:27,220 --> 00:00:30,710
+It does not impact the optimal quantity you will order.
+
+15
+00:00:30,710 --> 00:00:34,116
+It does change how you want to monitor your inventory, though.
+
+16
+00:00:34,116 --> 00:00:35,490
+And as we said, you want to start
+
+17
+00:00:35,490 --> 00:00:37,900
+looking at the position of the inventory, not just what
+
+18
+00:00:37,900 --> 00:00:39,190
+you have on hand.
+
+19
+00:00:39,190 --> 00:00:41,610
+You have to include what's in the pipeline.
+
+20
+00:00:41,610 --> 00:00:43,610
+And your timing of the replenishment
+
+21
+00:00:43,610 --> 00:00:46,930
+changes-- you look at when your inventory position is
+
+22
+00:00:46,930 --> 00:00:50,610
+less than or equal to the demand times the lead time.
+
+23
+00:00:50,610 --> 00:00:53,000
+So essentially, you're going to place your order when
+
+24
+00:00:53,000 --> 00:00:55,700
+your inventory position is such that you only
+
+25
+00:00:55,700 --> 00:00:58,770
+have enough inventory to cover until your next replenishment
+
+26
+00:00:58,770 --> 00:01:01,024
+is supposed to arrive.
+
+27
+00:01:01,024 --> 00:01:02,190
+Then we looked at discounts.
+
+28
+00:01:02,190 --> 00:01:04,879
+We looked at the All Units, Incremental, and One Time Buy.
+
+29
+00:01:04,879 --> 00:01:06,670
+Very common in practice.
+
+30
+00:01:06,670 --> 00:01:08,750
+The first two, All Units and Incremental,
+
+31
+00:01:08,750 --> 00:01:11,880
+really look at the situation where
+
+32
+00:01:11,880 --> 00:01:13,690
+if you order above a certain amount,
+
+33
+00:01:13,690 --> 00:01:15,950
+your purchase price, c, changes.
+
+34
+00:01:15,950 --> 00:01:17,242
+Therefore, it becomes relevant.
+
+35
+00:01:17,242 --> 00:01:19,700
+And all we did there was look at the different break points
+
+36
+00:01:19,700 --> 00:01:22,450
+and compare and see whether it made sense to take the discount
+
+37
+00:01:22,450 --> 00:01:26,530
+or not, at that breakpoint volume.
+
+38
+00:01:26,530 --> 00:01:28,360
+Then we looked at One Time Buy, and that's
+
+39
+00:01:28,360 --> 00:01:32,230
+where you want to decide-- do I take advantage of this one time
+
+40
+00:01:32,230 --> 00:01:33,820
+deal, and if so, how much?
+
+41
+00:01:33,820 --> 00:01:37,060
+And what happens there is, we turn into a finite problem.
+
+42
+00:01:37,060 --> 00:01:39,740
+We want to look over the time frame
+
+43
+00:01:39,740 --> 00:01:44,570
+that it would take to deplete that Qg amount of quantity.
+
+44
+00:01:44,570 --> 00:01:46,650
+And then finally, we looked at the EPQ,
+
+45
+00:01:46,650 --> 00:01:48,400
+the economic production quantity.
+
+46
+00:01:48,400 --> 00:01:50,280
+This is where we have finite replenishments.
+
+47
+00:01:50,280 --> 00:01:52,960
+And so items become available incrementally over time,
+
+48
+00:01:52,960 --> 00:01:54,010
+as I make them.
+
+49
+00:01:54,010 --> 00:01:55,780
+They don't just come all at once.
+
+50
+00:01:55,780 --> 00:01:58,400
+And we saw what that leads to is a lower holding
+
+51
+00:01:58,400 --> 00:02:01,490
+cost because you're making stuff-- as you're making stuff,
+
+52
+00:02:01,490 --> 00:02:04,640
+you're not having it incur a holding cost,
+
+53
+00:02:04,640 --> 00:02:06,580
+and that leads to a higher EPQ.
+
+54
+00:02:06,580 --> 00:02:09,289
+So these are our three simple extensions.
+
+55
+00:02:09,289 --> 00:02:12,244
+And so hopefully this helped you understand EOQ a little more.
+
+56
+00:02:12,244 --> 00:02:14,410
+If you have any questions, comments, or suggestions,
+
+57
+00:02:14,410 --> 00:02:16,148
+please use the discussion.
+
+58
+00:02:16,148 --> 00:02:16,648
+
+

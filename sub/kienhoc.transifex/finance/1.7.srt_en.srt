@@ -1,0 +1,151 @@
+1
+00:00:04,560 --> 00:00:06,300
+https://youtu.be/-kcBMqUs3E0
+We just used Excel
+
+2
+00:00:06,440 --> 00:00:10,700
+and we are going to use it
+a lot, you more than me, because what I
+
+3
+00:00:10,710 --> 00:00:15,530
+want to focus on, in the videos is not so
+much Excel, but the thinking behind
+
+4
+00:00:15,530 --> 00:00:22,689
+problem-solving. Excel is just a tool, but a
+very useful one. So let me just go
+
+5
+00:00:22,689 --> 00:00:29,180
+back and clarify a confusion that could
+occur. So when you do...we did a FV
+
+6
+00:00:29,180 --> 00:00:37,170
+problem. We went to the function and we
+looked for the function FV. The first
+
+7
+00:00:37,170 --> 00:00:45,610
+number we put in was R, the second
+number we put in, it's called Rate. The second
+
+8
+00:00:45,610 --> 00:00:51,510
+number we put in was N, which is number
+of periods, the third number which we
+
+9
+00:00:51,510 --> 00:00:56,10
+haven't talked about and we will talk
+about pretty soon
+
+10
+00:00:56,10 --> 00:01:04,218
+is called PMT in the FV function,
+and then, obviously if there's this is
+
+11
+00:01:04,229 --> 00:01:10,260
+FV we had a PV. What you'll notice is,
+something little bit silly. When you
+
+12
+00:01:10,260 --> 00:01:17,60
+press enter, you'll get a negative number,
+and many people wonder why is Excel giving me...
+
+13
+00:01:17,60 --> 00:01:22,520
+giving me a negative number? So, in our
+case it was negative
+
+14
+00:01:22,520 --> 00:01:31,548
+2593 something something, decimals.
+And think about it a little bit. All
+
+15
+00:01:31,549 --> 00:01:39,510
+financial transactions have somebody
+who's gaining money and somebody who's
+
+16
+00:01:39,510 --> 00:01:43,350
+losing money. In fact, the really
+remarkable thing about financial
+
+17
+00:01:43,350 --> 00:01:48,710
+transactions is, you go borrow money from a bank, at that point
+
+18
+00:01:48,710 --> 00:01:52,589
+somebody's getting an outflow and
+somebody's getting an inflow and it
+
+19
+00:01:52,590 --> 00:01:59,799
+balances out, it's zero sum. So the bank gives you money,
+they´ll lose 100 bucks or whatever and
+
+20
+00:01:59,799 --> 00:02:05,200
+you get money, you gain, so the negative is
+coming because we put a positive number
+
+21
+00:02:05,200 --> 00:02:10,949
+here. It depends on the eye of the
+beholder. So basically if you put a
+
+22
+00:02:10,949 --> 00:02:14,399
+positive number in the PV you'll get a negative number in the
+
+23
+00:02:14,400 --> 00:02:20,829
+FV. And so you cannot basically count...Excel knows you can't be a money machine so you
+
+24
+00:02:20,829 --> 00:02:26,269
+can't have positive positive positive forever, because then
+we'll all be very rich. You gotta give up
+
+25
+00:02:26,269 --> 00:02:30,629
+something, get something in return. So
+don't get confused by that. That's why
+
+26
+00:02:30,629 --> 00:02:36,149
+timelines are critical, and Excel is like
+what you will see later as well, if you
+
+27
+00:02:36,150 --> 00:02:41,940
+don't know, is one timeline. It makes
+timeline problems very easy. However, when
+
+28
+00:02:41,960 --> 00:02:46,40
+you're pressing numbers you have a sense
+of whether you're losing money or gaining
+
+29
+00:02:46,40 --> 00:02:51,659
+money. So this negative, positive is in
+the eye of the beholder, and is not a big
+
+30
+00:02:51,659 --> 00:02:57,608
+deal, but it does throw people off and I
+wanted to just focus on that a little bit
+
+31
+00:02:57,609 --> 00:02:59,730
+without getting too carried away with Excel.
+

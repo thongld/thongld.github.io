@@ -1,0 +1,262 @@
+1
+00:00:00,919 --> 00:00:03,339
+phuongmai201 25/9/2016
+Chào mừng các bạn đến với khóa học Quản trị
+vận hành
+
+2
+00:00:03,339 --> 00:00:07,970
+Trong phần hôm nay,  ta sẽ nói về Chất lượng và Hệ thống 6 Sigma
+
+3
+00:00:07,970 --> 00:00:13,150
+Đến thời điểm này,  ta đã tìm hiểu được về quá trình và đã đánh giá chúng
+
+4
+00:00:13,150 --> 00:00:17,440
+về flow time, ta cũng đã tìm hiểu về ma trận, về hàng tồn kho, và 
+
+5
+00:00:17,440 --> 00:00:22,340
+về công suất. Hôm nay, ta sẽ chuyển sang tìm hiểu về chất lượng
+
+6
+00:00:22,340 --> 00:00:25,760
+và cách để ta có thể cải thiện được qui trình
+
+7
+00:00:25,760 --> 00:00:30,880
+Trước hết, thế nào là chất lượng?
+
+8
+00:00:30,880 --> 00:00:36,760
+Theo định nghĩa của Hội quản lí chất lượng Hoa Kỳ, chất lượng
+
+9
+00:00:36,760 --> 00:00:42,199
+là nhưng đặc điểm hay đặc trưng của một hàng hóa hoặc dịch vụ có thể làm thỏa mãn
+
+10
+00:00:42,199 --> 00:00:47,629
+những nhu cầu đã nêu ra hoặc nhu cầu tiềm ẩn. Tóm gọn lại
+
+11
+00:00:47,629 --> 00:00:52,660
+chất lượng là khả năng của một sản phẩm hay dịch vụ có thể thỏa mãn hoặc vượt xa cả mong đợi của khách hàng
+
+12
+00:00:52,660 --> 00:00:55,010
+Đó chính là chất lượng.
+
+13
+00:00:55,010 --> 00:01:00,979
+Chất lượng phụ thuộc vào con mắt của khách hàng. Vậy tại sao chúng ta cần quan tâm đến chất lượng?
+
+14
+00:01:00,979 --> 00:01:04,989
+Bởi vì chất lượng tất yếu gắn liền với tiếng tăm của công ty
+
+15
+00:01:04,989 --> 00:01:09,420
+Chất lượng mà càng tốt, sản phẩm càng tốt thì sẽ có nhiều khách hàng bỏ tiền ra mua sản phẩm
+
+16
+00:01:09,420 --> 00:01:12,270
+Nếu chất lượng sản phẩm kém, khách hàng sẽ
+
+17
+00:01:12,270 --> 00:01:17,380
+tránh xa nó. Nếu một khách hàng gặp nguy hiểm, bị thương hay gặp những điều tồi tệ hơn với
+
+18
+00:01:17,380 --> 00:01:21,090
+sản phẩm của bạn, thì bản sẽ phải đối mặt với trách nhiệm pháp lý
+
+19
+00:01:21,090 --> 00:01:27,070
+Và tất nhiên, nếu bạn còn phải làm việc với các khách hàng trên toàn cầu
+
+20
+00:01:27,070 --> 00:01:31,460
+thì bạn còn cần có những sản phẩm mang tính chuẩn hóa có thể sử dụng được ở rất nhiều
+
+21
+00:01:31,460 --> 00:01:35,799
+quốc gia. Điều ta muốn làm qua vấn đề chất lượng
+
+22
+00:01:35,799 --> 00:01:42,680
+là ta muốn tìm cách quản lý process flow bằng việc giảm bớt các biến số trong quá trình xử lý 
+
+23
+00:01:42,680 --> 00:01:46,189
+và trong cả sản phẩm, điều đó giúp cải thiện hiệu suất phí tổn
+
+24
+00:01:46,189 --> 00:01:52,749
+Hãy nhớ lại, nếu ta có càng nhiều biến số trong lead time and demand
+
+25
+00:01:52,749 --> 00:01:58,649
+ta càng cần phải có dự trữ bảo hiểm. Một khi có biến số ở trong process flow
+
+26
+00:01:58,649 --> 00:02:05,070
+sẽ có sự tăng lên trong dây chuyền và hàng tồn kho gây nên nhiều vấn đề 
+
+27
+00:02:05,070 --> 00:02:08,399
+Nếu ta có thể giảm bớt được những biến số đó trong qui trình
+
+28
+00:02:08,399 --> 00:02:15,879
+ta sẽ cải thiện được hiệu suất phí tổn. Có những chi phí gắn liền với chất lượng
+
+29
+00:02:15,879 --> 00:02:20,180
+và ta sẽ xem xét chúng ở 4 khía cạnh khác nhau. Đầu tiên là chi phí phòng ngừa
+
+30
+00:02:20,180 --> 00:02:24,700
+Đó là chi phí bỏ ra để ngăn ngừa lỗi xảy ra
+
+31
+00:02:24,700 --> 00:02:30,620
+Hay đó chính là chi phí, quá trình được  thiết kế để ngăn chặn vấn đề phát sinh
+
+32
+00:02:30,620 --> 00:02:34,120
+Thứ hai là chi phí thẩm định.
+
+33
+00:02:34,120 --> 00:02:37,860
+Ở đây, ta nghĩ tới chất lượng và thanh tra viên
+
+34
+00:02:37,860 --> 00:02:41,849
+và tất cả các công cụ gắn với việc thẩm định lỗi 
+
+35
+00:02:41,849 --> 00:02:47,930
+Chi phí thẩm định được sử dụng vào những việc như vậy.  Những sai hỏng bên trong tổ chức là những lỗi được tìm thấy và phát hiện
+
+36
+00:02:47,930 --> 00:02:53,680
+trong quá trình sản xuất trước khi hàng hóa đến tay người tiêu dùng.
+
+37
+00:02:53,680 --> 00:02:59,120
+Điều này có nghĩa là ta làm ra hay chi phí ta đã mất để làm ra một sản phẩm không thể bán được
+
+38
+00:02:59,120 --> 00:03:03,890
+ ta đã mất để làm ra một sản phẩm không thể bán được. Đó chính là chi phí sai hỏng bên trong tổ chức
+
+39
+00:03:03,890 --> 00:03:09,890
+Chi phí sai hỏng bên ngoài tổ chức là những chi phí cho những sai hỏng mà khách hàng tìm ra.
+
+40
+00:03:09,890 --> 00:03:16,079
+Và đó là điều tồi tệ nhất bởi bạn phải đối mặt với chi phí sửa chữa tình thế 
+
+41
+00:03:16,079 --> 00:03:22,640
+cũng như là khả năng mất đi sự tin tưởng của người khách hàng đã tìm tháy lỗi trong sản phẩm của bạn
+
+42
+00:03:22,640 --> 00:03:27,530
+Vậy ta phải làm thế nào để cải thiện chất lượng?
+
+43
+00:03:27,530 --> 00:03:30,360
+Có một quá trình cải thiện chất lượng toàn thể 
+
+44
+00:03:30,360 --> 00:03:35,360
+mà ở đó ta cần tính toán mọi thứ, đo đạc mọi thứ
+
+45
+00:03:35,360 --> 00:03:39,280
+để đảm bảo hàng hóa của ta đạt tiêu chuẩn
+
+46
+00:03:39,280 --> 00:03:43,920
+ta phân tích và kiểm soát toàn bộ quá trình, và khi ta kiểm soát được
+
+47
+00:03:43,920 --> 00:03:46,760
+ta cần cố gắng cải thiện quá trình sản xuất và thậm chí thiết kế lại quá trình nếu cần thiết
+
+48
+00:03:46,760 --> 00:03:50,329
+Đó chính là quá trình cải thiện chất lượng toàn thể
+
+49
+00:03:50,329 --> 00:03:53,160
+Vậy cụ thể ta cần làm những gì ?
+
+50
+00:03:53,160 --> 00:03:56,750
+Đến đây, ta cần nói về hệ thống 6 sigma
+
+51
+00:03:56,750 --> 00:04:04,959
+Cốt lõi của hệ thống 6 sigma là DMAIC, gọi tắt của xác định, đo lường, phân tích
+
+52
+00:04:04,959 --> 00:04:10,819
+cải tiến, và kiểm soát. Nếu ta mong muốn thay đổi quá trình sản xuất 
+
+53
+00:04:10,819 --> 00:04:17,080
+ta cần xác định vấn đề cần thay đổi. Đo lường mọi thứ để có thể tính toán được mọi 
+
+54
+00:04:17,080 --> 00:04:21,480
+biến động, phân tích những vấn đề, thay đổi 
+
+55
+00:04:21,480 --> 00:04:28,880
+cũng như cải tiến, kiểm soát và giám sát chúng để đảm bảo quá trình
+
+56
+00:04:28,880 --> 00:04:30,450
+đã được cải thiện hơn
+
+57
+00:04:30,450 --> 00:04:36,780
+Đó là cốt lõi của quá trình 6 sigma, nhưng cụ thể chúng ta cần làm những gì ?
+
+58
+00:04:36,780 --> 00:04:41,310
+Đây là lúc ta cần đề cập tới 7 công cụ của quản lí chất lượng
+
+59
+00:04:41,310 --> 00:04:45,470
+Hầu hết chúng rất là đơn giản nhưng hiệu quả
+
+60
+00:04:45,470 --> 00:04:50,970
+Chúng bao gồm phiếu kiểm soát, biểu đồ Pareto, biểu đồ mật độ phân bố, biểu đồ phân tán
+
+61
+00:04:50,970 --> 00:04:56,860
+Ishikawa hay gọi cách khác là biểu đồ xương cá, biểu đồ nhân quả, lưu đồ, số liệu
+
+62
+00:04:56,860 --> 00:05:01,510
+biểu đồ kiểm soát. Trong một vài bài tới, ta sẽ
+
+63
+00:05:01,510 --> 00:05:06,230
+tìm hiểu sâu hơn từng loại công cụ
+
+64
+00:05:06,230 --> 00:05:11,020
+và xem xét ta có thể học được gì từ chúng và làm thế nào để áp dụng chúng vào việc cải tiến qui trình
+
+65
+00:05:11,020 --> 00:05:12,260
+Hẹn gặp lại các bạn trong bài học tới. 
+

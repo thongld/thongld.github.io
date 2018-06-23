@@ -1,0 +1,661 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/vjboJ9rDEJM
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:04,070
+DR. RAMESH YERRABALLI: So let's
+take a look at communication.
+
+3
+00:00:04,070 --> 00:00:08,140
+I'm going to call those the
+inter-thread communication.
+
+4
+00:00:08,140 --> 00:00:18,580
+Remember that we talked about how
+we have our main program, which
+
+5
+00:00:18,580 --> 00:00:30,330
+is running some code repeatedly,
+and we have our background threads.
+
+6
+00:00:30,330 --> 00:00:34,412
+So background thread is some interrupt
+service routine that's being triggered.
+
+7
+00:00:34,412 --> 00:00:35,120
+That's triggered.
+
+8
+00:00:35,120 --> 00:00:41,630
+It performs some task, and it
+returns from the interrupt.
+
+9
+00:00:41,630 --> 00:00:44,880
+And there could be a
+second one and so on.
+
+10
+00:00:44,880 --> 00:00:48,920
+So the question is, how
+does information get
+
+11
+00:00:48,920 --> 00:00:57,396
+passed between the main thread
+and the background thread?
+
+12
+00:00:57,396 --> 00:01:10,240
+
+13
+00:01:10,240 --> 00:01:16,090
+So first, we might think that well,
+we could use something like variable,
+
+14
+00:01:16,090 --> 00:01:21,660
+a local variable if you will,
+or a register to put things in.
+
+15
+00:01:21,660 --> 00:01:27,120
+And we will realize that when we do a
+context which all that information is
+
+16
+00:01:27,120 --> 00:01:30,020
+lost because we have a new context.
+
+17
+00:01:30,020 --> 00:01:34,690
+So what can we use to
+communicate between the two?
+
+18
+00:01:34,690 --> 00:01:39,710
+So the part that is accessible to
+both the main and the background
+
+19
+00:01:39,710 --> 00:01:46,350
+is memory, so the global memory.
+
+20
+00:01:46,350 --> 00:01:49,680
+So let's see how this will work.
+
+21
+00:01:49,680 --> 00:01:51,870
+We will look at it in three examples.
+
+22
+00:01:51,870 --> 00:01:55,650
+The first example we will
+look at is communicating
+
+23
+00:01:55,650 --> 00:02:00,110
+between the background and
+foreground using a simple flag.
+
+24
+00:02:00,110 --> 00:02:04,750
+A flag like this could involve the
+main program is waiting for some event
+
+25
+00:02:04,750 --> 00:02:09,970
+to occur, and the background
+thread will allow the main program
+
+26
+00:02:09,970 --> 00:02:13,460
+to know that this event has
+occurred by raising a flag.
+
+27
+00:02:13,460 --> 00:02:16,960
+The second one is a
+little more substantial.
+
+28
+00:02:16,960 --> 00:02:19,440
+That is, we will
+communicate back and forth
+
+29
+00:02:19,440 --> 00:02:24,280
+using what I call the
+concept of a mailbox.
+
+30
+00:02:24,280 --> 00:02:31,400
+A mailbox involves actual data that
+is being communicated and a status.
+
+31
+00:02:31,400 --> 00:02:35,820
+So we have data and status.
+
+32
+00:02:35,820 --> 00:02:38,340
+So we'll use two global
+variables for this.
+
+33
+00:02:38,340 --> 00:02:43,200
+The third one is what
+good real time systems
+
+34
+00:02:43,200 --> 00:02:47,600
+should use because they allow for
+good asynchronous communication.
+
+35
+00:02:47,600 --> 00:02:48,730
+These are buffers.
+
+36
+00:02:48,730 --> 00:02:51,380
+
+37
+00:02:51,380 --> 00:02:54,882
+And specifically, we'll
+use a First in First Out
+
+38
+00:02:54,882 --> 00:02:58,710
+queue (FIFO), which allows us to buffer.
+
+39
+00:02:58,710 --> 00:03:02,550
+So the background thread, if it wants
+to communicate to the main thread,
+
+40
+00:03:02,550 --> 00:03:05,575
+adds to a buffer.
+
+41
+00:03:05,575 --> 00:03:08,750
+
+42
+00:03:08,750 --> 00:03:14,630
+And the main program is going
+to consume from this buffer.
+
+43
+00:03:14,630 --> 00:03:18,250
+So this will be the
+third one we'll look at.
+
+44
+00:03:18,250 --> 00:03:20,090
+So let's look at the first example.
+
+45
+00:03:20,090 --> 00:03:25,230
+The first example involves
+where the main program
+
+46
+00:03:25,230 --> 00:03:28,560
+wants to know whether
+an event has occurred.
+
+47
+00:03:28,560 --> 00:03:31,810
+
+48
+00:03:31,810 --> 00:03:38,820
+And the occurrence of this event is
+through an interrupt service routine.
+
+49
+00:03:38,820 --> 00:03:44,930
+So the occurrence of the event will
+be indicated by the interrupt service
+
+50
+00:03:44,930 --> 00:03:50,190
+routine by setting a flag-- which
+is a global variable-- to 1.
+
+51
+00:03:50,190 --> 00:03:53,400
+It sets that and it quits.
+
+52
+00:03:53,400 --> 00:04:01,600
+Now, the main program which was doing
+its work-- whatever that work was it.
+
+53
+00:04:01,600 --> 00:04:06,000
+This is the work of the main
+program, the task, the main task.
+
+54
+00:04:06,000 --> 00:04:11,480
+It was performing that task, but
+it periodically-- actually every so
+
+55
+00:04:11,480 --> 00:04:13,760
+often-- it'll check this flag.
+
+56
+00:04:13,760 --> 00:04:22,010
+And if the flag is set to
+1, then it does some work.
+
+57
+00:04:22,010 --> 00:04:29,510
+So it'll do some work
+associated with that event.
+
+58
+00:04:29,510 --> 00:04:37,640
+
+59
+00:04:37,640 --> 00:04:42,500
+And then it goes back and
+does its other calculations.
+
+60
+00:04:42,500 --> 00:04:46,050
+On the other hand, if
+the flag is not set,
+
+61
+00:04:46,050 --> 00:04:51,270
+then it'll just go back and do
+what it was normally meant to do,
+
+62
+00:04:51,270 --> 00:04:56,812
+which is repeat the core work
+that it was meant to design for.
+
+63
+00:04:56,812 --> 00:05:00,220
+
+64
+00:05:00,220 --> 00:05:04,010
+And one thing we have
+to be sure is that when
+
+65
+00:05:04,010 --> 00:05:12,350
+we have in fact done the work associated
+to the event, we will disable the flag.
+
+66
+00:05:12,350 --> 00:05:13,990
+We'll set it to 0.
+
+67
+00:05:13,990 --> 00:05:18,230
+This way, when I come back
+to check the flag again,
+
+68
+00:05:18,230 --> 00:05:28,340
+I'm not finding the flag to be on
+simply because I did not turn it off.
+
+69
+00:05:28,340 --> 00:05:32,710
+DR. JONATHAN VALVANO: We can
+extend this idea of a flag
+
+70
+00:05:32,710 --> 00:05:37,440
+to incorporate passing of
+data through a mailbox.
+
+71
+00:05:37,440 --> 00:05:42,020
+The mailbox has two components.
+
+72
+00:05:42,020 --> 00:05:46,230
+It has the flag, just
+like the previous example,
+
+73
+00:05:46,230 --> 00:05:48,795
+but we're going to add a data field.
+
+74
+00:05:48,795 --> 00:05:51,770
+
+75
+00:05:51,770 --> 00:05:55,360
+In this particular example
+of a mailbox, the purpose
+
+76
+00:05:55,360 --> 00:06:03,597
+will be to pass data from the interrupt
+service routine into the main program.
+
+77
+00:06:03,597 --> 00:06:05,430
+DR. RAMESH YERRABALLI:
+For example, the UART
+
+78
+00:06:05,430 --> 00:06:11,690
+could have been triggered by
+the arrival of a data packet.
+
+79
+00:06:11,690 --> 00:06:14,380
+And so the data that is
+being read from the UART
+
+80
+00:06:14,380 --> 00:06:21,040
+could be put into this data
+buffer, if you will, a mailbox.
+
+81
+00:06:21,040 --> 00:06:25,120
+And the flag is raised to
+indicate to the main program
+
+82
+00:06:25,120 --> 00:06:27,874
+that there is fresh data.
+
+83
+00:06:27,874 --> 00:06:30,290
+DR. JONATHAN VALVANO: So in
+the interrupt service routine,
+
+84
+00:06:30,290 --> 00:06:34,090
+we will read the data
+from the input, and we
+
+85
+00:06:34,090 --> 00:06:36,575
+will write it to a global variable.
+
+86
+00:06:36,575 --> 00:06:40,590
+
+87
+00:06:40,590 --> 00:06:45,710
+And then we will set the flag to a 1.
+
+88
+00:06:45,710 --> 00:06:51,400
+Now, the main program, which looks a
+lot like this, is checking the flag.
+
+89
+00:06:51,400 --> 00:06:55,340
+If the flag is 0, that
+means there is no data.
+
+90
+00:06:55,340 --> 00:06:57,460
+Then it will do something else.
+
+91
+00:06:57,460 --> 00:07:01,190
+But if the flag is a 1, there is data.
+
+92
+00:07:01,190 --> 00:07:10,660
+Then, we can process or observe
+or look at or enjoy this data.
+
+93
+00:07:10,660 --> 00:07:12,300
+It's called consuming the data.
+
+94
+00:07:12,300 --> 00:07:15,170
+We will use it up.
+
+95
+00:07:15,170 --> 00:07:18,950
+Whatever we're supposed to do
+with that data, we will do.
+
+96
+00:07:18,950 --> 00:07:25,870
+And then just like we did with
+the flag, we will clear the flag.
+
+97
+00:07:25,870 --> 00:07:35,880
+And so we notice that there is a clear
+definition of what this mailbox is.
+
+98
+00:07:35,880 --> 00:07:45,560
+If the flag is equal to 0, that means
+there is no data and the main program
+
+99
+00:07:45,560 --> 00:07:48,270
+is waiting.
+
+100
+00:07:48,270 --> 00:07:50,490
+DR. RAMESH YERRABALLI:
+Doing other things.
+
+101
+00:07:50,490 --> 00:08:00,130
+DR. JONATHAN VALVANO: But if the
+flag is 1, that means there is data,
+
+102
+00:08:00,130 --> 00:08:05,200
+and the main program, if it
+notices it, can take the data.
+
+103
+00:08:05,200 --> 00:08:07,630
+DR. RAMESH YERRABALLI: So
+this is a classic paradigm
+
+104
+00:08:07,630 --> 00:08:10,230
+called producer consumer paradigm.
+
+105
+00:08:10,230 --> 00:08:18,500
+The background thread is
+going to produce data.
+
+106
+00:08:18,500 --> 00:08:22,230
+And the foreground thread, which
+is our main thread, consumes data.
+
+107
+00:08:22,230 --> 00:08:25,940
+
+108
+00:08:25,940 --> 00:08:30,157
+So Jon, can we also have
+the other way around?
+
+109
+00:08:30,157 --> 00:08:31,240
+DR. JONATHAN VALVANO: Yes.
+
+110
+00:08:31,240 --> 00:08:35,240
+The main program could be the producer.
+
+111
+00:08:35,240 --> 00:08:42,539
+And what it would do is it would write
+into data and it would set the flag.
+
+112
+00:08:42,539 --> 00:08:49,230
+And the interrupt service
+routine could be the consumer
+
+113
+00:08:49,230 --> 00:08:53,370
+and it would check the
+flag and then use the data.
+
+114
+00:08:53,370 --> 00:08:57,050
+So data could flow in the
+other direction in a mailbox.
+
+115
+00:08:57,050 --> 00:08:59,410
+DR. RAMESH YERRABALLI: So
+this allows for communication
+
+116
+00:08:59,410 --> 00:09:01,025
+between any threads in any direction.
+
+117
+00:09:01,025 --> 00:09:02,400
+DR. JONATHAN VALVANO: Absolutely.
+
+118
+00:09:02,400 --> 00:09:04,990
+
+119
+00:09:04,990 --> 00:09:07,380
+Let's look at the third
+way to communicate,
+
+120
+00:09:07,380 --> 00:09:20,870
+and that's called a FIFO, or
+a First In, First Out buffer.
+
+121
+00:09:20,870 --> 00:09:25,830
+If we're passing data from
+the interrupt service routine,
+
+122
+00:09:25,830 --> 00:09:29,440
+this means this is
+probably an input device.
+
+123
+00:09:29,440 --> 00:09:41,770
+If we're passing data, we are
+going to put that data into a FIFO.
+
+124
+00:09:41,770 --> 00:09:47,840
+This is a buffer which
+will store this data.
+
+125
+00:09:47,840 --> 00:09:53,050
+When we put, we're going
+to put it into this FIFO.
+
+126
+00:09:53,050 --> 00:09:56,030
+It's a buffer that contains data.
+
+127
+00:09:56,030 --> 00:10:00,290
+
+128
+00:10:00,290 --> 00:10:07,220
+The main program, when it
+wants data, it will call Get.
+
+129
+00:10:07,220 --> 00:10:11,120
+So there are two functions with a FIFO.
+
+130
+00:10:11,120 --> 00:10:13,860
+And then it will consume
+that data or use it up.
+
+131
+00:10:13,860 --> 00:10:21,000
+
+132
+00:10:21,000 --> 00:10:30,480
+And so the data flows from the producer,
+which is, in this case, the interrupt,
+
+133
+00:10:30,480 --> 00:10:34,950
+through the FIFO into the main
+program, which is the consumer.
+
+134
+00:10:34,950 --> 00:10:37,490
+
+135
+00:10:37,490 --> 00:10:42,580
+There are two functions, Put,
+which stores data in, and Get,
+
+136
+00:10:42,580 --> 00:10:45,550
+which stores it out.
+
+137
+00:10:45,550 --> 00:10:49,620
+So the FIFO has a number
+of properties, one of which
+
+138
+00:10:49,620 --> 00:10:55,950
+is it is order preserving,
+which means the order in which I
+
+139
+00:10:55,950 --> 00:10:59,880
+put it will match the
+order in which I get it.
+
+140
+00:10:59,880 --> 00:11:09,320
+So data is streamed from
+one thread to another.
+
+141
+00:11:09,320 --> 00:11:14,000
+DR. RAMESH YERRABALLI: So the FIFO
+is extending the idea of a mailbox.
+
+142
+00:11:14,000 --> 00:11:17,020
+A mailbox is just one data item.
+
+143
+00:11:17,020 --> 00:11:24,290
+But now we've expanded it so that we
+can have n data items, many data items.
+
+144
+00:11:24,290 --> 00:11:28,168

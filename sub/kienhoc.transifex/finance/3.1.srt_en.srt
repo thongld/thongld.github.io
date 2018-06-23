@@ -1,0 +1,544 @@
+1
+00:00:04,650 --> 00:00:06,160
+https://youtu.be/l7sUANiIslM
+Welcome.
+
+2
+00:00:06,160 --> 00:00:09,780
+This is a little bit of a transition
+
+3
+00:00:09,780 --> 00:00:14,950
+though I, as you must have realized by now, I think
+
+4
+00:00:14,950 --> 00:00:20,860
+that finance is so applicable that everything
+we have done, even up to this point
+
+5
+00:00:20,860 --> 00:00:26,570
+simple though it is, is highly applicable. But now I'm going to do something that I
+
+6
+00:00:26,570 --> 00:00:32,119
+don't do with advanced students or advanced programs. Because this is finance for
+
+7
+00:00:32,119 --> 00:00:38,500
+everyone. I'm going to do some really,
+really interesting applications which will
+
+8
+00:00:38,500 --> 00:00:45,980
+show you how to problem-solve. I hope
+you've started doing assignments, already.
+
+9
+00:00:45,980 --> 00:00:51,980
+There was an assignment linked to every
+module there is, it's good to practice
+
+10
+00:00:51,980 --> 00:00:57,419
+but it's entirely up to you when you're
+comfortable doing that right? So it's no
+
+11
+00:00:57,420 --> 00:01:03,50
+that's the one thing I like about
+digital education is that, you are in
+
+12
+00:01:03,50 --> 00:01:07,689
+control, right? So what I'm going to do is
+complicated problems, the one thing that
+
+13
+00:01:07,689 --> 00:01:16,779
+will change probably is, I will not stick
+to 4 or 5 minutes videos if the situation so
+
+14
+00:01:16,780 --> 00:01:20,920
+demands. In fact I have a joke which I'd like to share with you is that, one of the
+
+15
+00:01:20,920 --> 00:01:24,869
+best practices of online education is to have short videos,
+
+16
+00:01:24,869 --> 00:01:32,289
+six minutes or so, but many times I don't remember my name and takes me about 2 minutes to figure it out,
+
+17
+00:01:32,289 --> 00:01:36,549
+if you wake up in the morning, who are
+you? And I'm wondering that's just too
+
+18
+00:01:36,549 --> 00:01:42,740
+deep for me to answer, so I'll keep going
+according to the dictate of the issue...
+
+19
+00:01:42,740 --> 00:01:46,658
+dictates of the issue, right? So just be
+patient. You can always pause, move
+
+20
+00:01:46,659 --> 00:01:51,850
+forward, watch in twice the speed and so on. So let's start, I call these mega
+
+21
+00:01:51,850 --> 00:01:52,749
+problems.
+
+22
+00:01:52,749 --> 00:01:58,609
+So mega problem number one. It's an application that you've seen before, but I'm going to
+
+23
+00:01:58,609 --> 00:02:06,568
+kind of show you the beauty of finance and beauty of the complex world. It's a loan and
+
+24
+00:02:06,569 --> 00:02:12,220
+a loan I will pick up is for college,
+you've done it before, and then I will
+
+25
+00:02:12,220 --> 00:02:17,40
+expand on it, so if you look at the
+screen, you'll see a very familiar
+
+26
+00:02:17,40 --> 00:02:23,819
+problem. You're planning to go to college
+and your parents and you get together
+
+27
+00:02:23,819 --> 00:02:25,959
+and figure out you need $100,000
+
+28
+00:02:25,960 --> 00:02:35,60
+and at time zero and you're going
+to take that loan and it's required to be
+
+29
+00:02:35,60 --> 00:02:49,380
+paid over five years, right? R is 6%, n is
+five years and PV is $100,000.  I put a
+
+30
+00:02:49,380 --> 00:02:54,500
+comma here but don't put it in Excel
+right, so just keep reminding you. So what
+
+31
+00:02:54,500 --> 00:03:02,320
+I'm trying to solve for here is, how much will you owe every period starting 1..5 times?
+
+32
+00:03:02,320 --> 00:03:15,000
+Okay? The thing I will retain is the yearly, so let's
+redo this in some senses very quickly. So
+
+33
+00:03:15,000 --> 00:03:23,590
+you'll do equal sign, PMT, right? And
+then you'll enter, sorry 0.06
+
+34
+00:03:23,590 --> 00:03:34,850
+n is five and PV is $100,000 and the answer you will get is, I'm just looking over to
+
+35
+00:03:34,850 --> 00:03:39,60
+make sure, 23,794
+
+36
+00:03:39,60 --> 00:03:53,310
+oh sorry, $23,739.64, okay.
+So $23,739.64 we did this problem before, what I'm going
+
+37
+00:03:53,310 --> 00:04:01,950
+to do is retain the ease of calculating
+this, by that I mean yearly payments even
+
+38
+00:04:01,950 --> 00:04:06,609
+though we'll make it more complex, so let's
+see one of my most nifty ways of
+
+39
+00:04:06,610 --> 00:04:11,240
+teaching finance. Stare at the screen and
+you'll find something called an
+
+40
+00:04:11,240 --> 00:04:17,480
+amortization table. Now this'll sound really complex but it's not and I will walk
+
+41
+00:04:17,480 --> 00:04:23,80
+through this with you, with this problem
+to teach you how a loan works. So what is
+
+42
+00:04:23,80 --> 00:04:31,430
+beginning balance? Just let me explain, so
+year is 1,2,3,4,5. Following
+
+43
+00:04:31,430 --> 00:04:36,380
+convention, everything is happening at the
+end of the period. So when we say yearly
+
+44
+00:04:36,380 --> 00:04:39,600
+payment, it's not happening at time 0,
+it's happening at a time
+
+45
+00:04:39,600 --> 00:04:49,910
+1,2,3,4,5 yeah? But, it's very important to
+remember that it's the beginning of the
+
+46
+00:04:49,910 --> 00:04:55,360
+period too. So the beginning balance that
+you notice on top, what will it be in the
+
+47
+00:04:55,360 --> 00:05:04,450
+first year? That's the amount you start
+off with. So let's write it out, $100,000. What I'm going
+
+48
+00:05:04,450 --> 00:05:11,849
+to do now here is work through how the
+loan works and you... if you have... if you
+
+49
+00:05:11,850 --> 00:05:16,750
+have the desire, start doing this in
+Excel, because you can set it up very well
+
+50
+00:05:16,750 --> 00:05:23,960
+in Excel. Question is 100,000
+beginning. Now what is the yearly payment?
+
+51
+00:05:23,960 --> 00:05:31,729
+We already know it. Another word for this is PMT and remember we solved that number
+
+52
+00:05:31,730 --> 00:05:45,220
+to be 23,739.64. Again, if I make
+some errors I'm going to try to catch
+
+53
+00:05:45,220 --> 00:05:50,470
+them, if not just say Gautam is a bozo, I know
+how to do this, So just write it out.
+
+54
+00:05:50,470 --> 00:06:02,610
+23,739.64. What I like about the amortization table is not the table in itself, but how
+
+55
+00:06:02,610 --> 00:06:07,150
+it works gives you a sense of how things
+are working in real life, now every
+
+56
+00:06:07,150 --> 00:06:12,770
+payment, virtually every payment has two components and sometimes one of the
+
+57
+00:06:12,770 --> 00:06:16,49
+components is 0, we talk about that later.
+
+58
+00:06:16,50 --> 00:06:20,620
+So what are the two components? The first component is interest, the second
+
+59
+00:06:20,620 --> 00:06:26,30
+component of this yearly payment is
+principal repayment, because that's how it
+
+60
+00:06:26,30 --> 00:06:29,719
+works, you pay interest for the use of
+money, but then you also pay some of the
+
+61
+00:06:29,720 --> 00:06:33,520
+money you borrowed 100,000
+because if you don't do that, you'll be
+
+62
+00:06:33,520 --> 00:06:35,430
+in what is called an interest-only loan
+
+63
+00:06:35,430 --> 00:06:42,270
+and the loan will stay forever. There are
+things like that, but let's stick with the most
+
+64
+00:06:42,270 --> 00:06:48,710
+normal stuff. So how much is interest? So
+the way to work this out is, you know the
+
+65
+00:06:48,710 --> 00:06:55,419
+annual interest is 0.06, right?
+Interest rate, but how much is the
+
+66
+00:06:55,420 --> 00:07:01,470
+interest you're playing in terms of
+dollars? This times the beginning balance.
+
+67
+00:07:01,470 --> 00:07:06,680
+So interest is how much is the percentage rate determined by the market place,
+
+68
+00:07:06,680 --> 00:07:11,890
+given to you by the bank and how much
+did you borrow at the beginning of the
+
+69
+00:07:11,890 --> 00:07:16,520
+period, right? Because the interest is for
+the use of the money. So how much is this?
+
+70
+00:07:16,520 --> 00:07:27,909
+0.06 times 100,000 is 6000.
+Very simple, but please remember that
+
+71
+00:07:27,910 --> 00:07:33,750
+interest is a function that you pay at
+the end of the year, the cash flow is a
+
+72
+00:07:33,750 --> 00:07:37,780
+function of what you borrow at the
+beginning, then how much is principal
+
+73
+00:07:37,780 --> 00:07:44,289
+repayment? Very simple. Take this yearly amount and subtract 6,000 from it. So how
+
+74
+00:07:44,290 --> 00:07:45,410
+much is left?
+
+75
+00:07:45,410 --> 00:07:57,270
+17,739.64. So now what's the next
+step? So you've done one payment at the
+
+76
+00:07:57,270 --> 00:08:02,760
+end of the first year, you know you
+paid an interest of 6,000, but 17,739
+
+77
+00:08:02,760 --> 00:08:07,810
+is what you paid on the beginning
+
+78
+00:08:07,810 --> 00:08:10,920
+balance. So what's the beginning balance
+at the beginning of the year two?
+
+79
+00:08:10,920 --> 00:08:19,900
+Beginning of year two beginning balance
+sounds pretty mouthful. It is this number
+
+80
+00:08:19,900 --> 00:08:34,299
+subtract repayment from it, how much are
+you left with? 82,260.36, I'm going to
+
+81
+00:08:34,299 --> 00:08:40,140
+be a little painful. As I said, I'm going to
+do these problems with you, so 82. How
+
+82
+00:08:40,140 --> 00:08:45,410
+much are you paying at the end of the
+second year? Same amount.
+
+83
+00:08:45,410 --> 00:08:52,199
+So think of this amount as a contract, think
+of this amount as a contract you're paying. Now
+
+84
+00:08:52,200 --> 00:08:59,339
+question is, how much interest is the
+component of this 23,000? Has it gone up
+
+85
+00:08:59,339 --> 00:09:04,970
+or down? It's gone down because 6 percent of 100,000 is more than 6 percent
+
+86
+00:09:04,970 --> 00:09:09,110
+of 82,260. How will you figure out the interest
+
+87
+00:09:09,110 --> 00:09:13,839
+component? Again, simple. Take 6 percent
+interest and multiply the beginning
+
+88
+00:09:13,839 --> 00:09:18,480
+period balance and I'm going to write
+it out because it's little bit more
+
+89
+00:09:18,480 --> 00:09:29,80
+difficult than multiplying 6% with the 1000. 935.62, right?
+ I'm in the right
+
+90
+00:09:29,80 --> 00:09:35,150
+direction because the number is going down, right? How
+much is...am I repaying now? Think about it, I'm
+
+91
+00:09:35,150 --> 00:09:40,250
+repaying more or less? I am repaying more
+because the payment I'm making is fixed
+
+92
+00:09:40,250 --> 00:09:45,540
+and the interest has gone down. So the amount
+I'm repaying is
+
+93
+00:09:45,540 --> 00:09:54,899
+18,804.42, right? As I
+
+94
+00:09:54,899 --> 00:09:59,529
+said, you can do this by yourself, you can
+now set up, I've done enough. You can set
+
+95
+00:09:59,529 --> 00:10:04,860
+up a spreadsheet which actually models
+all of this, right? It's
+
+96
+00:10:04,860 --> 00:10:09,279
+very very simple. You start off with a
+payment that's fixed, so let me just write all
+
+97
+00:10:09,279 --> 00:10:27,420
+these down, right? So you've got all the
+payments that you're paying, fixed amount
+
+98
+00:10:27,420 --> 00:10:31,219
+every year, what's changing is everything
+in the table, but in a very systematic
+
+99
+00:10:31,220 --> 00:10:36,850
+way, right? That is the interest is going
+down and the principal is going, repayment
+
+100
+00:10:36,850 --> 00:10:41,619
+is going up till what's happened at the end of year 5,
+you paid off everything. So let me
+
+101
+00:10:41,619 --> 00:10:52,249
+quickly enter these numbers. 63,456.34, how did I get that? I took
+
+102
+00:10:52,249 --> 00:10:58,339
+82,000 and subtracted 18,800 from
+it, right? What will this be? This will be a
+
+103
+00:10:58,339 --> 00:11:07,790
+number less, it's about 3807.38 and I'll have a number here that's
+
+104
+00:11:07,790 --> 00:11:14,529
+higher than 18 and it's 19,932.
+
+105
+00:11:14,529 --> 00:11:22,59
+26. I'm talking so that you can
+compensate for my bad handwriting, sorry
+
+106
+00:11:22,59 --> 00:11:36,689
+I'm laughing but it's kind of funny to me.
+This is 43,524.08, this is
+
+107
+00:11:36,689 --> 00:11:48,379
+2611.44 and this is 21,128.20.
+
+108
+00:11:48,379 --> 00:12:04,870
+This number is, this number minus the
+repayment, which is 22,395.89, you paid
+
+109
+00:12:04,870 --> 00:12:21,200
+this, interest is 1343.75 and 22,395.89. What is the cool thing about
+
+110
+00:12:21,200 --> 00:12:27,730
+it? This amount and this amount are equal which means what? The beginning of
+
+111
+00:12:27,730 --> 00:12:35,680
+balance at the beginning of year 6, which is end of year 5, how
+much we owe the bank? Nothing, so the
+
+112
+00:12:35,680 --> 00:12:41,630
+thing to remember here is, please use Excel
+and create this. Take the time to do  that.
+
+113
+00:12:41,630 --> 00:12:47,550
+You'll feel very cool. This is one
+application where, I will now take a
+
+114
+00:12:47,550 --> 00:12:52,400
+break, because I want you to work on this,
+create the Excel spreadsheet, we will come
+
+115
+00:12:52,400 --> 00:12:57,140
+back and then have some fun with this
+and I'll show you how beautiful finance
+
+116
+00:12:57,140 --> 00:12:57,640
+can be.
+

@@ -1,0 +1,776 @@
+0
+00:00:00,000 --> 00:00:00,032
+https://youtu.be/EcfD1Q8Tf9o
+
+1
+00:00:00,032 --> 00:00:02,490
+So now, let's talk about the development of the model using
+
+2
+00:00:02,490 --> 00:00:04,177
+linear regression.
+
+3
+00:00:04,177 --> 00:00:05,760
+So formally, what we're doing is we're
+
+4
+00:00:05,760 --> 00:00:08,840
+capturing the relationship in terms of a linear model.
+
+5
+00:00:08,840 --> 00:00:11,490
+The y, the dependent variable is a function
+
+6
+00:00:11,490 --> 00:00:15,060
+of a series of independent variables, one or more xes.
+
+7
+00:00:15,060 --> 00:00:17,550
+The data we're going to use, X i, Y i,
+
+8
+00:00:17,550 --> 00:00:19,050
+are the observed pairs from which
+
+9
+00:00:19,050 --> 00:00:21,030
+we try to estimate those coefficients,
+
+10
+00:00:21,030 --> 00:00:24,490
+those beta coefficients, to find the best fit.
+
+11
+00:00:24,490 --> 00:00:26,910
+Now, the error term, our epsilon,
+
+12
+00:00:26,910 --> 00:00:32,250
+is that data portion that is unaccounted for or unexplained.
+
+13
+00:00:32,250 --> 00:00:33,800
+Now, these error terms, we're going
+
+14
+00:00:33,800 --> 00:00:35,320
+to make an assumption on them.
+
+15
+00:00:35,320 --> 00:00:37,490
+And that is that they're going to be identically
+
+16
+00:00:37,490 --> 00:00:39,450
+and independently distributed following
+
+17
+00:00:39,450 --> 00:00:42,210
+a normal distribution with a mean of 0
+
+18
+00:00:42,210 --> 00:00:44,860
+and some standard deviation sigma.
+
+19
+00:00:44,860 --> 00:00:48,000
+So, I id is something we talked about in a previous lesson.
+
+20
+00:00:48,000 --> 00:00:52,050
+So now, the reason why we make sure the mean is 0
+
+21
+00:00:52,050 --> 00:00:54,556
+is because, if it was any other value, then
+
+22
+00:00:54,556 --> 00:00:55,680
+the errors would be biased.
+
+23
+00:00:55,680 --> 00:00:57,360
+If it was 100, then that would be
+
+24
+00:00:57,360 --> 00:01:00,420
+saying that, on average, my error is 100 units off.
+
+25
+00:01:00,420 --> 00:01:01,830
+It doesn't make sense.
+
+26
+00:01:01,830 --> 00:01:03,960
+So it makes sense that the mean is going
+
+27
+00:01:03,960 --> 00:01:06,690
+to be 0 for the error terms.
+
+28
+00:01:06,690 --> 00:01:08,880
+And these error terms catch all the factors
+
+29
+00:01:08,880 --> 00:01:11,880
+that are ignored or neglected in the model.
+
+30
+00:01:11,880 --> 00:01:13,860
+And so what we're trying to do is
+
+31
+00:01:13,860 --> 00:01:17,490
+develop a model that allows us to estimate
+
+32
+00:01:17,490 --> 00:01:24,330
+a dependent variable given one or more independent variables.
+
+33
+00:01:24,330 --> 00:01:27,660
+So what we have are these pairs of observed datas,
+
+34
+00:01:27,660 --> 00:01:30,330
+this capital Y i and this X i.
+
+35
+00:01:30,330 --> 00:01:32,300
+And we're going to estimate these unknowns,
+
+36
+00:01:32,300 --> 00:01:37,590
+this beta 0, a beta 1, and it's epsilon 1 or the error term.
+
+37
+00:01:37,590 --> 00:01:40,260
+So what we're doing here is using our known data,
+
+38
+00:01:40,260 --> 00:01:43,680
+our observed data, to calculate the coefficients.
+
+39
+00:01:43,680 --> 00:01:45,480
+Then we'll use those coefficients
+
+40
+00:01:45,480 --> 00:01:50,624
+for predictions or to capture, to describe the situation.
+
+41
+00:01:50,624 --> 00:01:52,290
+So essentially, what we're creating here
+
+42
+00:01:52,290 --> 00:01:55,470
+is a conditional expectation where
+
+43
+00:01:55,470 --> 00:01:59,730
+the expected value of y, that's the dependent variable, given
+
+44
+00:01:59,730 --> 00:02:01,860
+a set of independent variables is
+
+45
+00:02:01,860 --> 00:02:04,340
+going to be equal to beta 0 plus beta 1 times
+
+46
+00:02:04,340 --> 00:02:07,230
+x in this situation.
+
+47
+00:02:07,230 --> 00:02:09,810
+The standard deviation of y given x
+
+48
+00:02:09,810 --> 00:02:12,870
+is going to be that error term sigma.
+
+49
+00:02:12,870 --> 00:02:14,850
+OK.
+
+50
+00:02:14,850 --> 00:02:18,777
+So the important aspect here are those error terms.
+
+51
+00:02:18,777 --> 00:02:20,110
+And we give them a special name.
+
+52
+00:02:20,110 --> 00:02:21,810
+We call them residuals.
+
+53
+00:02:21,810 --> 00:02:25,110
+And it's just the amount, the difference
+
+54
+00:02:25,110 --> 00:02:28,705
+between what you actually had for the y minus the estimated
+
+55
+00:02:28,705 --> 00:02:32,550
+or predicted value of each observation.
+
+56
+00:02:32,550 --> 00:02:34,410
+And so these predicted or estimated values
+
+57
+00:02:34,410 --> 00:02:36,510
+are found by using the regression
+
+58
+00:02:36,510 --> 00:02:39,820
+coefficients, those beta terms that we'll talk about.
+
+59
+00:02:39,820 --> 00:02:42,420
+So here, I have this y hat and whenever
+
+60
+00:02:42,420 --> 00:02:44,490
+you have a hat on top of a variable,
+
+61
+00:02:44,490 --> 00:02:47,170
+that means it's an estimate or a prediction.
+
+62
+00:02:47,170 --> 00:02:50,760
+So y hat i is equal to beta 0 plus beta
+
+63
+00:02:50,760 --> 00:02:54,600
+1 times X i, that's for each of the observations I have,
+
+64
+00:02:54,600 --> 00:02:57,240
+i equals 1, 2, 3, whatever to n.
+
+65
+00:02:57,240 --> 00:03:01,470
+My error term is simply going to be the actual value of y
+
+66
+00:03:01,470 --> 00:03:04,675
+for that observation, Y i, minus the y hat
+
+67
+00:03:04,675 --> 00:03:07,950
+i, so the actual minus the estimate.
+
+68
+00:03:07,950 --> 00:03:10,470
+Now, we know the estimate is just that equation I had.
+
+69
+00:03:10,470 --> 00:03:16,560
+So it's going to be y i minus B0 plus B1 times x i.
+
+70
+00:03:16,560 --> 00:03:19,260
+And we want to find the best values for B
+
+71
+00:03:19,260 --> 00:03:21,565
+that minimize the residuals.
+
+72
+00:03:21,565 --> 00:03:23,190
+So that's what we're really looking to.
+
+73
+00:03:23,190 --> 00:03:26,560
+We want to minimize the error in terms or the residuals.
+
+74
+00:03:26,560 --> 00:03:28,680
+So here's our data.
+
+75
+00:03:28,680 --> 00:03:31,560
+And suppose I found that the regression
+
+76
+00:03:31,560 --> 00:03:37,680
+line or the linear relationship is equal to 1,000 for beta 0
+
+77
+00:03:37,680 --> 00:03:42,870
+or the intercept plus 1.75, or $1.75 a mile, for the distance.
+
+78
+00:03:42,870 --> 00:03:45,060
+So that's what that red line is.
+
+79
+00:03:45,060 --> 00:03:49,290
+So if that's what I come up with as my regression line,
+
+80
+00:03:49,290 --> 00:03:54,540
+then my beta 0 is 1000, the slope of the distance
+
+81
+00:03:54,540 --> 00:03:59,010
+is 1.75, that's my B1 term.
+
+82
+00:03:59,010 --> 00:04:01,080
+Then I can look for specific observation.
+
+83
+00:04:01,080 --> 00:04:05,040
+In this case, I'm going to observation number 32.
+
+84
+00:04:05,040 --> 00:04:08,790
+And this is where the distance is 1,007 miles,
+
+85
+00:04:08,790 --> 00:04:14,520
+and the corresponding actual observed cost is $2,346.
+
+86
+00:04:14,520 --> 00:04:17,040
+Now, if I go straight up from that x value
+
+87
+00:04:17,040 --> 00:04:20,160
+to where it hits on the red line, my regression line,
+
+88
+00:04:20,160 --> 00:04:21,839
+that's my estimate.
+
+89
+00:04:21,839 --> 00:04:25,890
+So for that distance of 1,007 miles,
+
+90
+00:04:25,890 --> 00:04:31,260
+I'm estimating it'll cost $2,762.25 in this case.
+
+91
+00:04:31,260 --> 00:04:34,330
+So that's my estimate, that's my y hat,
+
+92
+00:04:34,330 --> 00:04:39,970
+y hat 32 is the 32nd observation.
+
+93
+00:04:39,970 --> 00:04:43,360
+So the difference between these is the residual.
+
+94
+00:04:43,360 --> 00:04:45,810
+So the E or error term or residual,
+
+95
+00:04:45,810 --> 00:04:48,190
+you can use any different acronym there,
+
+96
+00:04:48,190 --> 00:04:55,710
+E32 is equal to 2,346, the observed, minus the estimate.
+
+97
+00:04:55,710 --> 00:04:58,320
+And the estimate is simply, for that given
+
+98
+00:04:58,320 --> 00:05:00,510
+x, where it is on the line, and that
+
+99
+00:05:00,510 --> 00:05:04,590
+ends up being minus $416.25.
+
+100
+00:05:04,590 --> 00:05:07,410
+So this kind of helps give you a better feel
+
+101
+00:05:07,410 --> 00:05:09,840
+for what a residual is, what the intercept is,
+
+102
+00:05:09,840 --> 00:05:11,700
+and all those different values.
+
+103
+00:05:11,700 --> 00:05:15,930
+But it begs the question, how do I come up with a best fit?
+
+104
+00:05:15,930 --> 00:05:16,931
+What's the method I use?
+
+105
+00:05:16,931 --> 00:05:18,763
+Because you can think of many different ways
+
+106
+00:05:18,763 --> 00:05:19,890
+that I would do it.
+
+107
+00:05:19,890 --> 00:05:21,814
+I could just minimize the some of the errors.
+
+108
+00:05:21,814 --> 00:05:23,730
+Well, that wouldn't make as much sense, right?
+
+109
+00:05:23,730 --> 00:05:27,660
+Because really high ones would cancel out really low ones.
+
+110
+00:05:27,660 --> 00:05:30,590
+What if I take a min sum of absolute error?
+
+111
+00:05:30,590 --> 00:05:32,970
+And so that would get rid of the canceling out.
+
+112
+00:05:32,970 --> 00:05:35,910
+But if I take an absolute value, it gets really intractable.
+
+113
+00:05:35,910 --> 00:05:38,640
+It's hard to actually calculate with that.
+
+114
+00:05:38,640 --> 00:05:40,830
+So instead, what we're going to do,
+
+115
+00:05:40,830 --> 00:05:42,570
+we're going to use the minimum sum
+
+116
+00:05:42,570 --> 00:05:44,340
+of the squares of the error.
+
+117
+00:05:44,340 --> 00:05:47,880
+So we're going to minimize the sum squared
+
+118
+00:05:47,880 --> 00:05:49,800
+of each of those error terms.
+
+119
+00:05:49,800 --> 00:05:51,340
+Why are we doing that?
+
+120
+00:05:51,340 --> 00:05:55,950
+Well, it's shown that it's a best estimate for the line,
+
+121
+00:05:55,950 --> 00:06:00,150
+it actually minimizes the amount of errors, it reduces the bias,
+
+122
+00:06:00,150 --> 00:06:03,040
+and it's much more accurate.
+
+123
+00:06:03,040 --> 00:06:06,120
+So this is why we call it ordinary least squares or OLS
+
+124
+00:06:06,120 --> 00:06:06,829
+regression.
+
+125
+00:06:06,829 --> 00:06:09,120
+And so what we're going to do is find the optimal value
+
+126
+00:06:09,120 --> 00:06:12,970
+of the coefficients, in this case, beta 0 and beta 1,
+
+127
+00:06:12,970 --> 00:06:16,300
+to minimize the sum of the squares of the errors,
+
+128
+00:06:16,300 --> 00:06:19,960
+or those residual terms that we talked about.
+
+129
+00:06:19,960 --> 00:06:24,330
+So this is the formal objective function, if you will.
+
+130
+00:06:24,330 --> 00:06:28,230
+And so I want to minimize the sum from i equals 1 to n
+
+131
+00:06:28,230 --> 00:06:33,930
+of why y sub i minus beta 0 minus beta 1 times x1 squared.
+
+132
+00:06:33,930 --> 00:06:35,797
+So this is just-- let's highlight
+
+133
+00:06:35,797 --> 00:06:39,300
+it-- an objective function that I want to minimize.
+
+134
+00:06:39,300 --> 00:06:40,260
+Why am I'm minimizing?
+
+135
+00:06:40,260 --> 00:06:42,720
+I want to minimize the sum of the squares.
+
+136
+00:06:42,720 --> 00:06:46,830
+And the beautiful thing here is we get a nice closed form
+
+137
+00:06:46,830 --> 00:06:51,590
+analytical solution for both the beta 0 and the beta 1 terms.
+
+138
+00:06:51,590 --> 00:06:54,370
+And so it kind of makes sense if you look at the beta 0,
+
+139
+00:06:54,370 --> 00:06:56,610
+it's saying that my intercept is going
+
+140
+00:06:56,610 --> 00:07:00,180
+to be equal to the average y value minus B1
+
+141
+00:07:00,180 --> 00:07:02,370
+times the average x value.
+
+142
+00:07:02,370 --> 00:07:05,370
+And then you can look at the beta 1 term,
+
+143
+00:07:05,370 --> 00:07:08,130
+and it looks like it kind of makes sense, right?
+
+144
+00:07:08,130 --> 00:07:12,060
+It looks like it's balancing out of the spread or the dispersion
+
+145
+00:07:12,060 --> 00:07:16,050
+for both the x and the y values dividing by the square
+
+146
+00:07:16,050 --> 00:07:18,240
+dispersion for the x values.
+
+147
+00:07:18,240 --> 00:07:22,020
+Now, these come out of the optimization
+
+148
+00:07:22,020 --> 00:07:24,640
+to minimize the sum of the squared errors.
+
+149
+00:07:24,640 --> 00:07:26,340
+So how would I figure that out?
+
+150
+00:07:26,340 --> 00:07:27,760
+Where did this come from?
+
+151
+00:07:27,760 --> 00:07:30,360
+Well, think way back to our first lesson
+
+152
+00:07:30,360 --> 00:07:32,880
+in this class where we talked about
+
+153
+00:07:32,880 --> 00:07:35,190
+unconstrained optimization.
+
+154
+00:07:35,190 --> 00:07:37,290
+All we did was use partial derivatives
+
+155
+00:07:37,290 --> 00:07:39,240
+to find the first order optimality condition
+
+156
+00:07:39,240 --> 00:07:40,860
+with respect to each variable.
+
+157
+00:07:40,860 --> 00:07:43,940
+Now, it's not important that you know how to do this by hand,
+
+158
+00:07:43,940 --> 00:07:47,165
+but I just want to make sure you guys understand it's not magic.
+
+159
+00:07:47,165 --> 00:07:49,470
+All that we're doing is taking-- we're
+
+160
+00:07:49,470 --> 00:07:52,980
+minimizing this objective function, it's unconstrained,
+
+161
+00:07:52,980 --> 00:07:55,410
+and we're coming out with a closed form solution.
+
+162
+00:07:55,410 --> 00:07:57,840
+Now, we're going to take that result and use it.
+
+163
+00:07:57,840 --> 00:08:01,020
+But I wanted to make sure you know where I came from,
+
+164
+00:08:01,020 --> 00:08:04,190
+just minimizing that objective function.
+
+165
+00:08:04,190 --> 00:08:04,800
+OK.
+
+166
+00:08:04,800 --> 00:08:06,970
+Now, we can also expand to multiple variables.
+
+167
+00:08:06,970 --> 00:08:10,050
+So far, we've only looked at one x variable.
+
+168
+00:08:10,050 --> 00:08:11,340
+We can have more.
+
+169
+00:08:11,340 --> 00:08:14,450
+We can have up to k variables, whatever that number is.
+
+170
+00:08:14,450 --> 00:08:19,170
+So you might have y sub i equals beta 0 plus beta 1 times x1 i
+
+171
+00:08:19,170 --> 00:08:23,820
+plus beta 2 times x2 i, and so forth, and so forth,
+
+172
+00:08:23,820 --> 00:08:26,880
+where the first subscript is the number
+
+173
+00:08:26,880 --> 00:08:29,430
+of the variable, the second subscript there
+
+174
+00:08:29,430 --> 00:08:33,100
+is the observation.
+
+175
+00:08:33,100 --> 00:08:35,520
+And you can see, it's the same expectation
+
+176
+00:08:35,520 --> 00:08:37,190
+and same standard deviation.
+
+177
+00:08:37,190 --> 00:08:39,120
+And all we're going to be doing here
+
+178
+00:08:39,120 --> 00:08:41,220
+is minimizing the sum of the square of the errors,
+
+179
+00:08:41,220 --> 00:08:43,350
+and it follows the same format.
+
+180
+00:08:43,350 --> 00:08:50,070
+So we're going to work with multiple variate regression.
+
+181
+00:08:50,070 --> 00:08:52,770
+The next step right after doing a single variable.
+
+182
+00:08:52,770 --> 00:08:55,290
+Theoretically, there are some differences in it,
+
+183
+00:08:55,290 --> 00:08:57,870
+but practically, it doesn't make any difference.
+
+184
+00:08:57,870 --> 00:09:00,480
+Now, I showed you the underlying math.
+
+185
+00:09:00,480 --> 00:09:03,150
+What you're going to be using are certain packages.
+
+186
+00:09:03,150 --> 00:09:05,730
+So make sure you work through the recitations
+
+187
+00:09:05,730 --> 00:09:08,370
+to get comfortable with one of the packages that you pick,
+
+188
+00:09:08,370 --> 00:09:10,770
+because what I'm going to cover for the remainder here
+
+189
+00:09:10,770 --> 00:09:13,482
+will be agnostic to the different packages.
+
+190
+00:09:13,482 --> 00:09:14,940
+But I'm going to assume that you're
+
+191
+00:09:14,940 --> 00:09:18,521
+going to be able to use one of the packages that we discuss.
+
+192
+00:09:18,521 --> 00:09:19,020
+All right.
+
+193
+00:09:19,020 --> 00:09:21,680
+So let's start building some models.
+

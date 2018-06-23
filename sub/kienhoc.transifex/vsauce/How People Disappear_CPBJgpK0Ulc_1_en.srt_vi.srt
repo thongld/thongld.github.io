@@ -1,0 +1,949 @@
+1
+00:00:00,260 --> 00:00:02,660
+Xin chào Vsauce. Tôi là Michael.
+
+2
+00:00:02,660 --> 00:00:03,639
+Vài năm trước
+
+3
+00:00:03,638 --> 00:00:08,199
+ở Minneapolis có 1 ông bố đang vô cùng giận dữ đã lao vào cửa hàng bán lẻ 
+
+4
+00:00:08,199 --> 00:00:11,579
+Target.
+Con gái ông ta, 1 học sinh trung học
+
+5
+00:00:11,580 --> 00:00:15,839
+đã nhận được phiếu mua hàng trong hộp thư điện tử từ cửa hàng cho những thứ như cũi
+
+6
+00:00:15,839 --> 00:00:19,778
+và tã lót.
+Phải chăng Target đang khuyến khích con gái ông ta,
+
+7
+00:00:19,778 --> 00:00:22,458
+1 đứa trẻ vị thành niên đi chơi và mang thai?
+
+8
+00:00:23,059 --> 00:00:28,699
+Cửa hàng đã xin lỗi nhưng vài ngày sau họ nhận được hồi âm từ người bố. Ông ta
+
+9
+00:00:28,710 --> 00:00:29,449
+nói với họ rằng
+
+10
+00:00:29,449 --> 00:00:32,859
+"vài thứ đang xảy ra trong gia đình tôi mà 
+
+11
+00:00:32,859 --> 00:00:36,500
+tôi không hề hay biết. Con gái tôi đến kỳ 
+
+12
+00:00:36,500 --> 00:00:40,700
+vào tháng 8. Tôi nợ anh 1 lời xin lỗi."
+Bạn thấy đấy, 
+
+13
+00:00:40,700 --> 00:00:44,520
+Thuật toán nội bộ của Target đang theo dõi 
+
+14
+00:00:44,520 --> 00:00:48,039
+và xử lí quá trình mua bán của con gái ông ta và gần đây
+
+15
+00:00:48,039 --> 00:00:51,260
+cô ta bắt đầu mua nhiều thứ đồ khác với thường ngày.
+
+16
+00:00:51,259 --> 00:00:56,179
+Những thứ như là vitamin, xà phòng không mùi và kem dưỡng da. 
+
+17
+00:00:56,179 --> 00:00:59,769
+Hệ thống cho rằng các hành vi này là dấu hiệu cho thấy
+
+18
+00:00:59,770 --> 00:01:03,559
+cô ta có thể mang thai, nên họ gửi cô ta các phiếu mua hàng. 
+
+19
+00:01:03,558 --> 00:01:08,349
+Và họ đã đúng. 
+Không cần phải nói,
+
+20
+00:01:08,349 --> 00:01:12,149
+Target biết rằng cô gái đã mang thai
+
+21
+00:01:12,150 --> 00:01:14,930
+trước cả bố cô. 
+
+22
+00:01:15,700 --> 00:01:20,700
+Giờ đây chúng ta bị giám sát và theo dõi bằng kỹ thuật số nhiều 
+
+23
+00:01:20,709 --> 00:01:26,309
+hơn hẳn trước đây.
+Chúng ta sống trong thế giới bị giám sát 24/7  bởi CCTV,
+
+24
+00:01:26,310 --> 00:01:30,879
+trình duyệt cookies, thẻ ghi nợ có thể theo dõi được, điện thoại, GPS, 
+
+25
+00:01:30,879 --> 00:01:34,640
+dấu vân tay và phân tích DNA. 
+Tuy nhiên,
+
+26
+00:01:34,640 --> 00:01:38,070
+mỗi năm
+
+27
+00:01:38,069 --> 00:01:42,478
+ở riêng nước Mỹ có hơn 2000 người
+
+28
+00:01:42,478 --> 00:01:46,438
+biến mất và không bao giờ được tìm thấy
+
+29
+00:01:46,438 --> 00:01:48,218
+còn sống hay đã chết.
+
+30
+00:01:48,780 --> 00:01:53,739
+Những người mất tích đó đi đâu?
+Họ biến mất như thế nào?
+
+31
+00:01:53,739 --> 00:01:56,859
+Điều gì sẽ xảy ra nếu bạn biến mất và 
+
+32
+00:01:56,859 --> 00:01:59,968
+làm thế nào bạn biết được mình vẫn chưa
+
+33
+00:01:59,968 --> 00:02:04,530
+biến mất? 
+Trong nhiều trường hợp, người biến mất là nạn nhân
+
+34
+00:02:04,530 --> 00:02:07,579
+của những vụ án không được giải quyết hoặc không được biết đến.
+
+35
+00:02:07,578 --> 00:02:11,049
+Họ có thể bị tai nạn
+hoặc tự kết liễu cuộc sống của mình
+
+36
+00:02:11,050 --> 00:02:16,450
+và cơ thể của họ không bao giờ được tìm thấy. 
+Hoặc có thể họ hoàn toàn ổn và chỉ đơn giản là
+
+37
+00:02:16,449 --> 00:02:21,280
+chạy trốn khỏi cuộc sống, bạn bè, gia đình, các món nợ và các nghĩa vụ để bắt đầu
+
+38
+00:02:21,280 --> 00:02:22,030
+1 cuộc sống mới
+
+39
+00:02:22,030 --> 00:02:26,219
+ở 1 nơi khác, có thể là như 1 người khác.
+
+40
+00:02:26,219 --> 00:02:29,930
+Mất bao lâu để người ta nhận ra 
+
+41
+00:02:29,930 --> 00:02:34,390
+nếu bạn mất tích?
+Nào, hãy nghĩ thử xem. Ý tôi là
+
+42
+00:02:34,389 --> 00:02:37,979
+nó còn tùy thuộc vào việc bạn là ai, bạn sống như thế nào
+
+43
+00:02:37,979 --> 00:02:42,969
+và bạn biến mất như thế nào.
+Trong hầu hết các quyền pháp lí thì sau 5 đến 7
+
+44
+00:02:42,969 --> 00:02:43,818
+năm,
+
+45
+00:02:43,818 --> 00:02:47,149
+nếu không ai biết tin tức gì về bạn,
+
+46
+00:02:47,150 --> 00:02:51,230
+bạn có thể bị công bố đã chết trong khi vắng mặt.
+
+47
+00:02:51,229 --> 00:02:53,829
+Đây là điều đã xảy ra với nhà thiên văn học người Pháp
+
+48
+00:02:53,830 --> 00:02:59,160
+Guillaume Le Gentil.
+Vào thế kỉ 18 hàng trăm người đã đi xa và rộng khắp
+
+49
+00:02:59,169 --> 00:03:02,339
+để quan sát quá trình chuyển dịch của sao Kim từ các vị trí khác nhau
+
+50
+00:03:02,340 --> 00:03:06,400
+trên trái đất. Họ biết rằng bằng cách so sánh các số liệu của mình họ có thể tính toán 
+
+51
+00:03:06,400 --> 00:03:10,680
+chính xác hơn 
+
+52
+00:03:10,680 --> 00:03:14,300
+mặt trời xa như thế nào. 
+Chính vì vậy, Le Gentil
+
+53
+00:03:14,300 --> 00:03:17,840
+rời Paris vào năm 1760 đến Pondicherry
+
+54
+00:03:17,840 --> 00:03:21,680
+ở Ấn Độ.
+Nhưng sau khi 1 cơn bão cuốn ông ta 
+
+55
+00:03:21,680 --> 00:03:25,840
+và những người Anh đang ở Pondicherry ra khơi, 
+ông buộc phải dành ngày 
+
+56
+00:03:25,840 --> 00:03:29,408
+dịch chuyển của sao Kim ở trên thuyền giữa biển, và nó rung lắc 
+
+57
+00:03:29,408 --> 00:03:33,048
+qúa nhiều để có thể lấy số liệu chính xác được. 
+Giờ đây, 
+
+58
+00:03:33,049 --> 00:03:37,360
+lần chuyển dịch tới sẽ xảy ra trong 8 năm nữa. 
+Nhưng sau đó, 
+
+59
+00:03:37,360 --> 00:03:40,480
+lần dịch chuyển tiếp nữa sẽ trong xảy ra trong vòng 100 năm nữa. 
+
+60
+00:03:40,479 --> 00:03:45,179
+Ông ta bị mắc kẹt lại đó. Ông không trở về Paris. Thay vào đó ông xây dựng 1 đài quan sát 
+
+61
+00:03:45,180 --> 00:03:48,860
+và chờ đợi.
+Cuối cùng khi ông ta trở về
+
+62
+00:03:48,860 --> 00:03:53,610
+Paris sau 11 năm rời đi, 
+ông mới biết rằng người ta tuyên bố ông
+
+63
+00:03:53,610 --> 00:03:57,140
+đã chết.
+Vợ ông đã tái hôn,
+
+64
+00:03:57,139 --> 00:04:00,878
+gia đình ông bị cướp bóc
+tài sản và vị trí của ông
+
+65
+00:04:00,878 --> 00:04:04,628
+ở Viện Khoa học Hoàng gia đã được trao cho người khác. 
+
+66
+00:04:04,628 --> 00:04:08,688
+Ông ta cũng không bao giờ thấy được sự chuyển dịch của sao Kim.
+
+67
+00:04:08,688 --> 00:04:12,280
+Vào ngày sự việc xảy ra, bâu trời phía trên ông 
+
+68
+00:04:12,280 --> 00:04:15,640
+đầy mây mù.
+
+69
+00:04:15,639 --> 00:04:19,469
+Ta biết dân số loài người
+
+70
+00:04:19,470 --> 00:04:20,330
+trên trái đất.
+
+71
+00:04:21,920 --> 00:04:22,939
+Có lẽ vậy.
+
+72
+00:04:22,949 --> 00:04:27,340
+Các con số và tính toán về dân số chỉ là sự ước lượng. 
+
+73
+00:04:27,339 --> 00:04:31,168
+Các cá nhân chỉ được tính toán chính xác nhất bằng người thực
+
+74
+00:04:31,168 --> 00:04:35,549
+trong cuộc sống thực của họ.
+Nhưng điều đó không thường xuyên
+
+75
+00:04:35,550 --> 00:04:36,970
+xảy ra.
+
+76
+00:04:36,970 --> 00:04:40,760
+Đầu năm nay Janet  Veal 
+đã qua đời trong căn hộ của cô 
+
+77
+00:04:40,759 --> 00:04:44,139
+ở Ringwood, Hampshire. 
+Phần lớn cơ thể của cô
+
+78
+00:04:44,139 --> 00:04:48,659
+đã bị bầy mèo cô nuôi ăn hết trước khi được phát hiện ra
+
+79
+00:04:48,660 --> 00:04:51,810
+vài tuần sau đó. 
+Và 7 năm trước
+
+80
+00:04:51,810 --> 00:04:55,149
+Joyce Carol Vincent được tìm thấy chết trên ghế sofa
+
+81
+00:04:55,149 --> 00:04:59,029
+ở Wood Green; hoặc ít nhất là bộ xương của cô 
+
+82
+00:04:59,029 --> 00:05:02,439
+được tìm thấy.
+Cô ấy đã chết dược ít nhất 3
+
+83
+00:05:02,439 --> 00:05:05,480
+năm và không 1 ai tìm cô.
+
+84
+00:05:05,480 --> 00:05:08,509
+Ti vi vẫn đang bật. 
+
+85
+00:05:08,509 --> 00:05:11,560
+Và 4 ngày sau vụ Timothy McVeigh ném bom 
+
+86
+00:05:11,560 --> 00:05:14,399
+1 toàn nhà liên bang ở thành phố Oklahoma, lấy đi
+
+87
+00:05:14,399 --> 00:05:18,419
+168 mạng người
+
+88
+00:05:18,430 --> 00:05:22,389
+1 chân trái bị đã dược tìm thấy trong chiếc giày cao su.  
+
+89
+00:05:22,389 --> 00:05:27,250
+Không 1 ai biết đấy là chân của ai.
+Chân của tất cả các nạn nhân khác đã được
+
+90
+00:05:27,250 --> 00:05:28,209
+kiểm tra
+
+91
+00:05:28,209 --> 00:05:31,389
+và không ai được báo mất chân. 
+
+92
+00:05:32,180 --> 00:05:36,019
+Phân tích DNA chỉ ra rằng chiếc chân 
+thuộc về Lakesha Levy,
+
+93
+00:05:36,029 --> 00:05:39,419
+nhưng cô ấy đã được chôn với cả 2 chân.
+
+94
+00:05:39,420 --> 00:05:43,069
+Chính vì vậy, họ đã đào thi thể của cô ấy lên.
+
+95
+00:05:43,069 --> 00:05:46,399
+Cô được chôn cùng với chân trái của 1 ai đó
+
+96
+00:05:46,399 --> 00:05:50,439
+những chiếc chân đã được đổi, nhưng bởi vì cơ thể cô đã được ướp hương
+
+97
+00:05:50,439 --> 00:05:54,740
+nên không thể xác định được DNA ở chiếc chân vô chủ.
+
+98
+00:05:54,740 --> 00:05:58,360
+Đến tận ngày nay không 1 ai biết chân đó
+
+99
+00:05:58,360 --> 00:06:01,509
+thuộc về ai. Nạn nhân thứ 169
+
+100
+00:06:01,509 --> 00:06:04,620
+vẫn còn là 1 bí ẩn.
+
+101
+00:06:04,620 --> 00:06:09,459
+Vài nhà thuyết âm mưu cho rằng
+chiếc chân có thể là của
+
+102
+00:06:09,459 --> 00:06:12,859
+kẻ ném bom thực sự,
+kẻ nào đó ngoài Timothy McVeigh,
+
+103
+00:06:12,860 --> 00:06:16,780
+người đứng gần với vụ nổ đủ để bị nổ tung hoàn toàn,
+
+104
+00:06:16,779 --> 00:06:20,659
+ngoại trừ 1 chân. 
+Dù sao đi nữa,
+
+105
+00:06:20,660 --> 00:06:25,010
+việc xảy ra chỉ ra rằng liệu có khả năng 
+để 1 người biến mầt
+
+106
+00:06:25,009 --> 00:06:29,120
+mà không có bất cứ ai hỏi họ đi đâu.
+
+107
+00:06:30,180 --> 00:06:33,980
+Thỉnh thoảng có người bị báo cáo đã chết hoặc mất tích
+
+108
+00:06:33,990 --> 00:06:37,590
+ngay cả khi họ họ vẫn còn đấy. Cáo phó sớm 
+
+109
+00:06:37,589 --> 00:06:41,468
+là điều rất phổ biến. 
+Nhiều người còn sống nhưng đã có sẵn 1 bản.
+
+110
+00:06:41,468 --> 00:06:46,339
+Nếu 1 người nổi tiếng chết,
+truyền thông, ti vi, báo, tạp chí, 
+
+111
+00:06:46,339 --> 00:06:49,549
+họ cần 1 câu chuyện đầy đủ nhanh nhất có thể. 
+Chính vì vậy, họ
+
+112
+00:06:49,550 --> 00:06:54,918
+chuẩn bị trước, cất giữ cẩn thận,
+chỉ trừ ngày tháng và tình huống
+
+113
+00:06:54,918 --> 00:06:56,560
+của cái chết để điền vào.
+
+114
+00:06:56,560 --> 00:06:59,930
+Có lí, nhưng khá là rắc rối 
+
+115
+00:06:59,930 --> 00:07:04,340
+khi chúng bị rò rỉ trước khi người đó chết. 
+Vào năm 2003
+
+116
+00:07:04,339 --> 00:07:10,188
+trang web của CNN vô tình đăng lên bản báo tử nháp 
+của những người còn sống 
+
+117
+00:07:10,189 --> 00:07:10,639
+có thể
+
+118
+00:07:10,639 --> 00:07:14,000
+truy cập vào được.
+Sẽ rất lúng túng nhưng
+
+119
+00:07:14,000 --> 00:07:18,468
+đối với người đọc được bản báo tử của chính họ, đó là cơ hội để làm gì đấy
+
+120
+00:07:18,468 --> 00:07:20,478
+mà hầu hết chúng ta không có cơ hội để làm.
+
+121
+00:07:20,478 --> 00:07:25,088
+Xem bạn sẽ được nhớ tới như thế nào sau khi bạn chết đi.
+
+122
+00:07:25,088 --> 00:07:29,028
+Alfred Nobel phát minh ra thuốc nổ.
+
+123
+00:07:29,028 --> 00:07:32,180
+Ông kiếm lời nhờ sản xuát và bán 
+
+124
+00:07:32,180 --> 00:07:36,379
+các vũ khí hủy diệt - súng đại bác và các loại vũ khí.
+Vào năm 1888
+
+125
+00:07:36,379 --> 00:07:41,060
+anh trai ông là Ludvig chết nhưng nhiều
+tờ báo bị nhẫm lẫn cho rằng ông
+
+126
+00:07:41,060 --> 00:07:41,819
+đã chết
+
+127
+00:07:41,819 --> 00:07:44,830
+và công bố các bản báo tử cho Alfred
+
+128
+00:07:44,829 --> 00:07:48,528
+Nobel.
+Chúng không hề tôn vinh ông.
+
+129
+00:07:48,528 --> 00:07:52,009
+1 tờ báo Pháp công bố
+" Người buôn cái chết
+
+130
+00:07:52,009 --> 00:07:55,288
+đã chết."
+Nobel đọc những
+
+131
+00:07:55,288 --> 00:07:59,860
+bản báo tử đó và vô cùng xấu hổ bởi
+những gì ông để lại rõ ràng
+
+132
+00:07:59,860 --> 00:08:03,360
+là cái gì. 
+Khi ông chết, ông để lại hầu hết
+
+133
+00:08:03,360 --> 00:08:07,218
+tiền cho mục đích tôn vinh con người. 
+
+134
+00:08:07,218 --> 00:08:11,788
+Ông đã sáng lập nên giải Nobel. 
+Marcus Garvey
+
+135
+00:08:11,788 --> 00:08:15,568
+lại không được may mắn như thế.
+Chuyện là sau khi bị 
+
+136
+00:08:15,569 --> 00:08:19,979
+1 tờ báo công bố bản báo tử 
+
+137
+00:08:19,978 --> 00:08:23,149
+với đầy chỉ trích, nói rằng ông chết trong bần cùng,
+
+138
+00:08:23,149 --> 00:08:28,430
+cô đơn và không ai biết tới.
+Quá sốc vì mình bị nhớ tới đầy tiêu cực
+
+139
+00:08:28,430 --> 00:08:33,690
+Garvey đã bị đột quỵ trong khi
+đọc bản báo tử của mình
+
+140
+00:08:33,690 --> 00:08:38,300
+và chết. 
+Vào tháng 4 năm 2006
+
+141
+00:08:38,299 --> 00:08:43,109
+5 học sinh Đại học Taylor chết
+trong 1 vụ tai nạn xe hơi thảm khốc.
+
+142
+00:08:43,110 --> 00:08:46,589
+1 học sinh khác sống sót, nhưng lại bị hôn mê. 
+
+143
+00:08:46,589 --> 00:08:50,019
+Cô được nhận dạng là Laura van Ryn.
+
+144
+00:08:50,019 --> 00:08:54,120
+Bạn cô Whitney Cerak lại không may mắn như vậy. 
+Cô được thông báo
+
+145
+00:08:54,120 --> 00:08:57,659
+là đã chết. 
+1 ngàn người đã tham dự tang lễ của cô
+
+146
+00:08:57,659 --> 00:09:00,990
+nhưng vài ngày sau khi Laura
+
+147
+00:09:00,990 --> 00:09:04,568
+tỉnh lại, cô bắt đầu nói chuyện
+và khi người ta hỏi tên cô,
+
+148
+00:09:04,568 --> 00:09:09,139
+Laura nói rằng cô là Whitney. 
+2 cô gái 
+
+149
+00:09:09,139 --> 00:09:12,250
+trông rất giống nhau.
+Hóa ra Laura
+
+150
+00:09:12,250 --> 00:09:15,629
+là người đã được chôn.
+Sau đó, Whitney
+
+151
+00:09:15,629 --> 00:09:18,708
+đã kết hôn ngay tại nhà thờ màn nhiều năm trước đó
+
+152
+00:09:18,708 --> 00:09:23,369
+đã tổ chức lễ truy điệu cho cô. 
+Chuyện gì sẽ xảy ra nếu bạn đang mất tích
+
+153
+00:09:23,370 --> 00:09:28,409
+và bạn không hề biết điều đó?
+Không ai biết rằng các bệnh viện thường hay
+
+154
+00:09:28,409 --> 00:09:31,750
+tình cờ tráo các trẻ sơ sinh như thế nào.
+
+155
+00:09:31,750 --> 00:09:36,440
+Các chính sách của các bệnh viện hiện đại làm 
+ta nghĩ nó khó xảy ra, nhưng bởi chúng ta không
+
+156
+00:09:36,440 --> 00:09:38,399
+tự dưng đi kiểm tra nhận diện mẹ
+
+157
+00:09:38,399 --> 00:09:42,519
+và cha cho vui,
+không có nhiều dữ liệu
+
+158
+00:09:42,519 --> 00:09:47,659
+cho hiện tượng này. Nhưng điều này có xảy ra. 
+Nó thường được phát hiện nhờ kiểm tra DNA
+
+159
+00:09:47,659 --> 00:09:51,100
+nhằm giải quyết tranh chấp quyền nuôi con. 
+
+160
+00:09:51,100 --> 00:09:55,120
+Hoặc, như trường hợp của người phụ nữ 35 tuổi,
+ở đảo Canary,
+
+161
+00:09:55,120 --> 00:10:00,810
+Vào năm 2001 một nhân viên ở 1 
+cửa hàng bạn đang mua sắm nhầm lẫn bạn 
+
+162
+00:10:00,809 --> 00:10:04,759
+với bạn thân của cô ta - bởi vì bạn trông hoàn toàn
+
+163
+00:10:04,759 --> 00:10:08,059
+giống cô ta, bởi vì cô ta là 
+
+164
+00:10:08,059 --> 00:10:11,669
+người chị em sinh đôi thất lạc từ lâu của bạn, bị chia cách 
+
+165
+00:10:11,669 --> 00:10:14,729
+từ khi mới sinh. 
+Và người chị gái bạn lớn lên cùng
+
+166
+00:10:14,730 --> 00:10:19,620
+nghĩ rằng đó là chị em sinh đôi của bạn, hóa ra lại 
+
+167
+00:10:19,620 --> 00:10:23,289
+là 1 người lạ. 
+Chuyện gì sẽ xảy ra nếu bạn đang mất tích 
+
+168
+00:10:23,289 --> 00:10:26,379
+nhưng chính quyền lại không biết?
+
+169
+00:10:26,379 --> 00:10:29,519
+Cuộc sống của người mất tích 
+
+170
+00:10:29,519 --> 00:10:33,209
+không được báo rất tồi tệ. 
+Những người ở bất hợp pháp ở 1 đất nước,
+
+171
+00:10:33,208 --> 00:10:36,578
+những người li gián khỏi gia đình và bạn bè mà
+
+172
+00:10:36,578 --> 00:10:39,828
+không có 1 bản ghi chép mất tích nào được lưu lại,
+
+173
+00:10:39,828 --> 00:10:44,250
+những đứa trẻ của những người mẹ vô gia cư.
+Những  người này không chỉ
+
+174
+00:10:44,250 --> 00:10:47,289
+đang mất tích, họ là những người được biết đến như
+
+175
+00:10:47,289 --> 00:10:49,569
+những người mất tích của người mất tích. 
+
+176
+00:10:49,570 --> 00:10:52,860
+Thông tin dử liệu Tội phạm Quốc gia của FBI 
+chứa
+
+177
+00:10:52,860 --> 00:10:57,149
+gần 50000 báo cáo trẻ em mất tích,
+
+178
+00:10:57,149 --> 00:11:01,448
+nhưng Outpost For Hope báo cáo lại rằng 
+có hơn 1 triệu
+
+179
+00:11:01,448 --> 00:11:05,188
+trẻ em ở Mỹ đang mất tích, mà không ai 
+
+180
+00:11:05,188 --> 00:11:09,500
+biết chúng đang mất tích. 
+Không hề trái luật khi 
+
+181
+00:11:09,500 --> 00:11:12,789
+1 người tự nguyện bị mất tích. 
+
+182
+00:11:12,789 --> 00:11:15,860
+Bạn có thể có các món nợ phải trả hay hợp đồng phải hoàn thành, 
+
+183
+00:11:15,860 --> 00:11:19,789
+nhưng nếu bạn là người trưởng thành, hành vi biến mất
+
+184
+00:11:19,789 --> 00:11:23,899
+theo bản chất là không phạm luật. 
+Bạn có quyền
+
+185
+00:11:23,899 --> 00:11:27,198
+mất tích. 
+Nhưng bạn tin chắc rằng sẽ không ai 
+
+186
+00:11:27,198 --> 00:11:32,649
+nhớ đến mình sao? Điều đó rất buồn cười và phản khoa học. 
+Các số liệu
+
+187
+00:11:32,649 --> 00:11:35,970
+cho ta thấy điều hoàn toàn khác. 
+David Wong
+
+188
+00:11:35,970 --> 00:11:39,990
+đã viết 1 trong những bài báo có sức ảnh hưởng nhất tôi đã từng đọc. 
+
+189
+00:11:39,990 --> 00:11:43,519
+Có rất nhiều thông tin
+
+190
+00:11:43,519 --> 00:11:47,559
+ngoài kia. 
+Thậm chí còn có 1 từ cho nó - infobesity. 
+
+191
+00:11:47,899 --> 00:11:50,480
+Phải mất cả 1 cuộc đời để 
+
+192
+00:11:50,480 --> 00:11:54,860
+trải nghiệm 1 số ít trong đó. 
+Rất dễ khi nghĩ rằng mọi người 
+
+193
+00:11:54,860 --> 00:11:58,200
+biết mọi thứ mà bạn biết. 
+Nhưng mỗi năm
+
+194
+00:11:58,200 --> 00:12:02,778
+có hơn 100 triệu người được
+sinh ra và không ai trong số chúng 
+
+195
+00:12:02,778 --> 00:12:03,500
+được sinh ra
+
+196
+00:12:03,500 --> 00:12:07,879
+mà biết được rằng chúng được tạo nên từ các nguyên tử
+hay biết rằng những lỗ đen đó
+
+197
+00:12:07,879 --> 00:12:11,028
+thật tuyệt diệu. 
+Ai đó cần phải ở đó 
+
+198
+00:12:11,028 --> 00:12:14,338
+để nói cho chúng biết, để chỉ cho chúng thấy. 
+
+199
+00:12:14,339 --> 00:12:17,540
+Bạn nghe bao nhiêu câu nói đùa mỗi ngày, 
+
+200
+00:12:17,539 --> 00:12:20,679
+mỗi tuần?
+Bạn nghe bao nhiêu câu đùa 
+
+201
+00:12:20,679 --> 00:12:23,699
+mỗi năm? 
+Có 1 ý kiến khá thú vị ở đây. 
+
+202
+00:12:23,700 --> 00:12:27,000
+Bằng cách xem xét tuổi thọ trung bình
+
+203
+00:12:27,000 --> 00:12:30,620
+và số chuyện đùa điển hình 
+1 người nghe trong 1 năm,
+
+204
+00:12:30,620 --> 00:12:33,649
+David Wong thừa nhận 1 ý kiến, 
+
+205
+00:12:33,649 --> 00:12:37,179
+hơi thô về độ chính xác, nhưng chính xác về độ cần thiết. 
+
+206
+00:12:37,179 --> 00:12:40,458
+Nếu bạn ở dưới tuổi 38 
+
+207
+00:12:40,458 --> 00:12:43,500
+lợi thế đó là câu đùa buồn cười nhất
+
+208
+00:12:43,500 --> 00:12:48,299
+bạn từng nghe chính là 1 câu đùa
+bạn chưa từng nghe bao giờ. 
+
+209
+00:12:48,299 --> 00:12:51,419
+Và, nếu bạn đã qua tuổi 38, 
+
+210
+00:12:51,419 --> 00:12:56,250
+lợi thế chính là bạn đã biết 1 câu đùa mà
+với nhiều người mà bạn chưa hề 
+
+211
+00:12:56,250 --> 00:12:57,370
+gặp
+
+212
+00:12:57,370 --> 00:13:01,179
+nó có thể là câu chuyện buồn cười nhất
+họ từng được nghe. 
+
+213
+00:13:01,179 --> 00:13:04,809
+Vậy nên, cho dù bạn ở đâu, chúng ta mừng là bạn ở đó.
+
+214
+00:13:05,279 --> 00:13:06,379
+Và như mọi khi, 
+
+215
+00:13:06,580 --> 00:13:07,580
+cảm ơn vì đã lắng nghe. 
+

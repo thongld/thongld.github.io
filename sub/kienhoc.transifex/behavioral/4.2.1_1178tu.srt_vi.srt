@@ -1,0 +1,576 @@
+1
+00:00:07,450 --> 00:00:10,110
+Mọi người nên đưa ra 
+một lựa chọn lí trí như thê nào?
+
+2
+00:00:10,110 --> 00:00:13,950
+Một vài tuần trước, chúng ta đã thấy
+ một mô hình đưa ra quyết định
+
+3
+00:00:13,950 --> 00:00:15,370
+trông giống như thế này.
+
+4
+00:00:15,370 --> 00:00:20,220
+Chúng ta đã nói rằng độ thỏa dụng 
+của 1 phương án hay 1 sản phẩm là
+
+5
+00:00:20,220 --> 00:00:24,520
+phù thuộc vào độ thỏa dụng tổng hợp
+
+6
+00:00:24,520 --> 00:00:25,630
+của các thuộc tính của lựa chọn ấy.
+
+7
+00:00:25,630 --> 00:00:29,960
+Cụ thể, nếu bạn phân tích 1 sản phẩm
+ thành nhiều thuộc tính, 
+
+8
+00:00:29,960 --> 00:00:34,140
+và bạn có thể đánh giá được tầm quan trọng
+ của mỗi thuộc tính ấy đến quyết định của bạn,
+
+9
+00:00:34,140 --> 00:00:37,980
+khi ấy độ thỏa dụng là tổng của  các tính gồm 
+w, trọng số mà bạn quy cho mỗi thuộc tính 
+
+10
+00:00:37,980 --> 00:00:42,870
+nhân với độ thỏa dụng của thuộc tính ấy
+
+11
+00:00:42,870 --> 00:00:45,630
+đối với tất cả các thuộc tính.
+
+12
+00:00:45,630 --> 00:00:49,579
+Một phiên bản đơn giản hơn của mô hình này 
+là phương trình thứ hai mà các bạn có thể thấy
+
+13
+00:00:49,579 --> 00:00:54,110
+từ biểu đồ này, chỉ cần nhân trọng số của một thuộc tính với 
+
+14
+00:00:54,110 --> 00:01:00,180
+giá trị của thuộc tính đó, wi nhân với xi 
+và cộng tổng các tích 
+
+15
+00:01:00,180 --> 00:01:01,649
+của tất cả các thuộc tính lại với nhau.
+
+16
+00:01:01,649 --> 00:01:05,881
+Nếu bạn suy xét đến hình thức có hệ thống của
+việc ra quyết định này, 
+
+17
+00:01:05,881 --> 00:01:07,850
+nó cần nhiều nỗ lực đấy.
+
+18
+00:01:07,850 --> 00:01:11,290
+Một khách hàng chọn lựa giữa 
+2 sản phầm A và B 
+
+19
+00:01:11,290 --> 00:01:12,610
+như thế nào?
+
+20
+00:01:12,610 --> 00:01:15,799
+Bằng cách nào 1 nhà hoạch định chính sách 
+có thể quyết định 
+
+21
+00:01:15,799 --> 00:01:16,799
+nên chọn chính sách nào?
+
+22
+00:01:16,799 --> 00:01:18,539
+Đây là những gì họ cần phải làm.
+
+23
+00:01:18,539 --> 00:01:22,799
+Họ cần phải phân tích chính sách 
+hay sản phẩm ấy thành 
+
+24
+00:01:22,799 --> 00:01:25,439
+nhiều thuộc tính mà họ cho là quan trọng.
+
+25
+00:01:25,439 --> 00:01:28,499
+Sau đó họ cần phải đánh giá tầm quan trọng 
+
+26
+00:01:28,499 --> 00:01:29,499
+của mỗi thuộc tính.
+
+27
+00:01:29,499 --> 00:01:34,749
+Cuối cùng, họ cần đánh giá mỗi thuộc tính
+ trên thang đo, nhân trọng số của mỗi thuộc tính với 
+
+28
+00:01:34,749 --> 00:01:38,920
+với giá trị của nó, sau đó cộng tổng tất cả các tích
+
+29
+00:01:38,920 --> 00:01:43,600
+để thấy được độ thỏa dụng hay giá trị 
+của mỗi giải pháp, và sau đó chọn giải pháp
+
+30
+00:01:43,600 --> 00:01:45,969
+cung cấp giá trị cao nhất.
+
+31
+00:01:45,969 --> 00:01:47,889
+Đây là một quá trình rất phức tạp.
+
+32
+00:01:47,889 --> 00:01:50,779
+Hầu hết chúng ta không tham gia vào quá trình ấy
+
+33
+00:01:50,779 --> 00:01:52,240
+khi đưa ra mỗi quyết định.
+
+34
+00:01:52,240 --> 00:01:56,560
+Thay vì đó, chúng ta làm theo thứ gọi là trực giác.
+
+35
+00:01:56,560 --> 00:01:57,560
+Trực giác là gì?
+
+36
+00:01:57,560 --> 00:02:01,069
+Tôi sẽ đọc cho các bạn nghe 
+định nghĩa về trực giác 
+
+37
+00:02:01,069 --> 00:02:03,630
+mà Robin Hogarth đề ra lần đầu tiên
+ trong sách của mình.
+
+38
+00:02:03,630 --> 00:02:07,389
+Ông ấy nói rằng lựa chọn hay sự đánh giá
+ mang tính trực giác được tạo ra 
+
+39
+00:02:07,389 --> 00:02:09,220
+mà không có sự nhận thức rõ ràng.
+
+40
+00:02:09,220 --> 00:02:13,610
+Trên thực tế, những lựa chọn hay sự đánh giá này
+ bao gồm rất ít sự suy xét có ý thức.
+
+41
+00:02:13,610 --> 00:02:16,650
+Thỉnh thoảng chúng ta đưa ra những đánh giá
+ mang tính trực giác trong tích tắc.
+
+42
+00:02:16,650 --> 00:02:18,489
+Chúng ta gọi nó là phản ứng theo linh cảm.
+
+43
+00:02:18,489 --> 00:02:20,850
+Chúng ta gọi đó là phản ứng theo bản năng.
+
+44
+00:02:20,850 --> 00:02:24,909
+Thỉnh thoảng khi đến một cửa hàng,
+ chúng ta có thể biết chúng ta sẽ mua gì
+
+45
+00:02:24,909 --> 00:02:27,270
+chỉ bằng cách nhìn vào sản phẩm.
+
+46
+00:02:27,270 --> 00:02:30,689
+Chúng ta nhìn các chính sách và biết cái gì là đúng.
+
+47
+00:02:30,689 --> 00:02:33,849
+Vậy, trực giác là gì và nó đến từ đâu?
+
+48
+00:02:33,849 --> 00:02:36,120
+Điều đầu tiên tôi muốn các bạn nhớ là trực giác 
+
+49
+00:02:36,120 --> 00:02:38,790
+không nhất thiết phải là một cảm xúc.
+
+50
+00:02:38,790 --> 00:02:41,569
+Khi bạn có trực giác tốt, việc ấy
+ không có nghĩa là bạn đang
+
+51
+00:02:41,569 --> 00:02:43,760
+hành động theo cảm xúc.
+
+52
+00:02:43,760 --> 00:02:48,909
+Thay vì đó, nó có nghĩa là bằng cách nào đấy
+ bạn đã phát triển 1 hướng tiếp cận nhanh chóng
+
+53
+00:02:48,909 --> 00:02:54,459
+ một cách tiếp cận tinh vi nhưng nhanh chóng
+ đối với việc đưa ra lựa chọn và đánh giá.
+
+54
+00:02:54,459 --> 00:02:56,760
+Sự tinh vi này đến từ đâu?
+
+55
+00:02:56,760 --> 00:02:58,319
+Thường thì nó đến từ sự thành thạo chuyên môn.
+
+56
+00:02:58,319 --> 00:03:00,360
+Hãy nghĩ về 1 bác sĩ.
+
+57
+00:03:00,360 --> 00:03:04,510
+1 bác sĩ đã dành 10 hay 15 năm cuộc đời 
+để khám cho những người bệnh 
+
+58
+00:03:04,510 --> 00:03:08,390
+có những triệu chứng cụ thể và đã học được
+
+59
+00:03:08,390 --> 00:03:12,489
+mối liên hệ giữa những triệu chứng này
+ với một căn bệnh cụ thể.
+
+60
+00:03:12,489 --> 00:03:15,250
+Đó không phải là do họ có một
+ phương trình toán học trong đầu.
+
+61
+00:03:15,250 --> 00:03:18,209
+Nhưng cứ mỗi lần họ thấy một loạt triệu chứng 
+xảy ra đồng thời, 
+
+62
+00:03:18,209 --> 00:03:24,329
+họ biết rằng đó có thê là bệnh a, 
+bệnh b hoặc bệnh c.
+
+63
+00:03:24,329 --> 00:03:25,819
+Đó chính là trực giác.
+
+64
+00:03:25,819 --> 00:03:29,799
+Đó chính là tập hợp trực giác học được,
+ bởi vì những gì chuyên gia đã làm là
+
+65
+00:03:29,799 --> 00:03:33,280
+tích lũy kiến thức theo thời gian.
+
+66
+00:03:33,280 --> 00:03:36,969
+Họ đã phần nào đánh giá được những mối liên hệ 
+giữa các biến số khác nhau.
+
+67
+00:03:36,969 --> 00:03:41,250
+Và họ phản ứng rất nhanh 
+với tập hợp các tác nhân kích thích 
+
+68
+00:03:41,250 --> 00:03:42,709
+riêng biệt đó.
+
+69
+00:03:42,709 --> 00:03:47,010
+Cũng giống như thế, 1 khách hàng 
+có thể có 1 tập hợp ưu tiên theo trực giác 
+
+70
+00:03:47,010 --> 00:03:48,630
+sử dụng khi đưa ra các quyết định.
+
+71
+00:03:48,630 --> 00:03:50,489
+Tôi biết tôi thích màu gì.
+
+72
+00:03:50,489 --> 00:03:53,040
+Tôi biết mùi hương yêu thích của mình.
+
+73
+00:03:53,040 --> 00:03:56,050
+Và tôi biết tôi muốn những dáng vẻ nào.
+
+74
+00:03:56,050 --> 00:03:59,569
+Khi tôi đến cửa hàng và chọn1 sản phẩm, 
+ví như 1 cái chăn hay 1 sản phẩm nghệ thuật
+
+75
+00:03:59,569 --> 00:04:03,480
+tôi không cần phải tốn thời gian phân tích
+ các sản phẩm ấy thành các
+
+76
+00:04:03,480 --> 00:04:07,019
+thuộc tính, vì tôi biết tôi thích gì 
+khi tôi nhìn sản phẩm ấy.
+
+77
+00:04:07,019 --> 00:04:09,489
+Một lần nữa, đó chính là trực giác.
+
+78
+00:04:09,489 --> 00:04:14,019
+Nói tóm lại, bạn có thể nghĩ trực giác 
+là một cái gì đấy xuất hiện từ
+
+79
+00:04:14,019 --> 00:04:18,269
+chuyên môn, nó nảy sinh từ kinh nghiệm 
+dày dặn ứng phó với 
+
+80
+00:04:18,269 --> 00:04:20,300
+công việc tương tự trong quá khứ.
+
+81
+00:04:20,300 --> 00:04:25,570
+Quá trình được sử dụng để đưa ra các đánh giá
+ mang tích trực giác ấy
+
+82
+00:04:25,570 --> 00:04:28,320
+được gọi là sự so khớp mẫu.
+
+83
+00:04:28,320 --> 00:04:29,320
+Sự so khớp mẫu là gì?
+
+84
+00:04:29,320 --> 00:04:34,560
+Đó là quá trình mà trong đó người ta
+ nhìn vào cơ sở dữ liệu lịch sử của họ, 
+
+85
+00:04:34,560 --> 00:04:38,331
+xem xét những lựa chọn tương tự, so sánh
+chúng, và rồi nói, gee, 
+
+86
+00:04:38,331 --> 00:04:42,940
+tình huống này rất giống những gì
+ mà tôi đã làm 2 năm trước,
+
+87
+00:04:42,940 --> 00:04:46,050
+ họ tìm lại từ trí nhớ những gì họ đã làm và áp dụng
+
+88
+00:04:46,050 --> 00:04:48,650
+vào tình huống hiện tại.
+
+89
+00:04:48,650 --> 00:04:53,070
+So khớp mẫu có thể là một quá trình
+ xảy ra rất nhanh chóng 
+
+90
+00:04:53,070 --> 00:04:57,260
+và có vẻ dễ dàng, nhưng không có nghĩa là
+ nó được tạo ra mà không cần động não.
+
+91
+00:04:57,260 --> 00:05:02,760
+Đơn giản là người ấy đang sử dụng
+ lịch sử  phong phú để đưa ra
+
+92
+00:05:02,760 --> 00:05:07,540
+quyết định nhanh chóng và mang tính trực giác.
+
+93
+00:05:07,540 --> 00:05:12,340
+Khi nào thì việc học tập tốt xảy ra 
+dựa trên những kinh nghiệm trong quá khứ?
+
+94
+00:05:12,340 --> 00:05:16,540
+Việc học tốt diễn ra khi bạn nhận được nhận xét,
+ khi mà nhận xét đó rất nhanh chóng 
+
+95
+00:05:16,540 --> 00:05:18,170
+và rõ ràng.
+
+96
+00:05:18,170 --> 00:05:21,200
+Hãy nghĩ về 1 người dự báo thời tiết.
+
+97
+00:05:21,200 --> 00:05:24,660
+Người dự báo thời tiết đưa ra dự đoán, 
+ví dụ như trời sắp mưa.
+
+98
+00:05:24,660 --> 00:05:28,590
+Trong vòng một ngày, người ta sẽ biết được
+liệu trời có mưa hay không.
+
+99
+00:05:28,590 --> 00:05:32,940
+Không có một sự mập mờ nào về việc 
+có mưa hay không mưa.
+
+100
+00:05:32,940 --> 00:05:34,320
+Ta có phản hồi rất nhanh chóng.
+
+101
+00:05:34,320 --> 00:05:38,070
+Chính vì lẽ đó, những người dự báo thời tiết
+ không chỉ nhận được nhận xét nhanh chóng và
+
+102
+00:05:38,070 --> 00:05:42,220
+rõ ràng, mà còn nhận rất nhiều nhận xét 
+vì họ đưa ra đánh giá như thế
+
+103
+00:05:42,220 --> 00:05:44,770
+mỗi ngày.
+
+104
+00:05:44,770 --> 00:05:47,310
+Các nghiên cứu đã chỉ ra rằng trên thực tế 
+những người dự báo thời tiết
+
+105
+00:05:47,310 --> 00:05:48,870
+có khả năng điều chỉnh khá tốt.
+
+106
+00:05:48,870 --> 00:05:49,870
+Điều ấy có nghĩa là gì?
+
+107
+00:05:49,870 --> 00:05:53,910
+Nó có nghĩa là họ có trực giác tốt
+ về lượng kiến thức họ biết.
+
+108
+00:05:53,910 --> 00:05:56,880
+Thực tế, khi họ nói là họ chắc chắn,  
+nói chung họ khá chắc chắn 
+
+109
+00:05:56,880 --> 00:05:59,650
+về kết quả sắp xảy ra.
+
+110
+00:05:59,650 --> 00:06:02,130
+Khi họ nói họ không chắc chắn cho lắm,
+ thực tế lúc ấy họ
+
+111
+00:06:02,130 --> 00:06:03,900
+không hề chắc chắn.
+
+112
+00:06:03,900 --> 00:06:06,940
+Nhưng họ có cách xử lí tốt 
+về những gì họ biết.
+
+113
+00:06:06,940 --> 00:06:11,630
+Cuối cùng, sẽ rất có ích nếu chúng ta so sánh 
+quá trình quyết định theo trực giác với
+
+114
+00:06:11,630 --> 00:06:14,280
+quá trình có nhiều sự phân tích hơn.
+
+115
+00:06:14,280 --> 00:06:18,570
+Một mặt, chúng ta đã nói về quá trình phân tích 
+
+116
+00:06:18,570 --> 00:06:20,720
+trông như thế nào.
+
+117
+00:06:20,720 --> 00:06:25,310
+Việc mà bạn làm chính là nhìn lại những kinh nghiệm, 
+quyết định trong quá khứ và
+
+118
+00:06:25,310 --> 00:06:29,930
+sử dụng những quyết định đó để 
+hình thành mô hình các thuộc tính liên quan,
+
+119
+00:06:29,930 --> 00:06:32,550
+và tầm quan trọng của các thuộc tính đó.
+
+120
+00:06:32,550 --> 00:06:35,990
+Sau đó, bạn sử dụng mô hình này theo lối hệ thống,
+ thận trọng
+
+121
+00:06:35,990 --> 00:06:39,670
+tính toán để sử dụng những số liệu từ 
+
+122
+00:06:39,670 --> 00:06:42,030
+những trường hợp có sẵn và đưa ra sự lựa chọn.
+
+123
+00:06:42,030 --> 00:06:46,960
+Quá trình mang tính trực giác
+ cũng sử dụng lịch sử, nhưng
+
+124
+00:06:46,960 --> 00:06:50,150
+là để phát triển cỗ máy gọi là trực giác.
+
+125
+00:06:50,150 --> 00:06:53,410
+Nghĩ đến trực giác như 1 phương trình hồi quy 
+trong đầu của bạn, 
+
+126
+00:06:53,410 --> 00:06:57,640
+nó rất nhanh chóng giúp bạn có thể 
+ra quyết định trong tích tắc.
+
+127
+00:06:57,640 --> 00:07:01,790
+trực giác có thể được rèn luyện một cách hiệu quả,
+ và bạn có thể học được 
+
+128
+00:07:01,790 --> 00:07:04,440
+trực giác bằng cách nhận những nhận xét hữu ích.
+

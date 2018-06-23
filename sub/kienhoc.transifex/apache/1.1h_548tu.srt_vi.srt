@@ -1,0 +1,305 @@
+0
+00:00:00,000 --> 00:00:00,830
+othyngn_gtc_YTY4YT 
+https://youtu.be/Rdg19pS_-mQ
+
+1
+00:00:00,830 --> 00:00:02,490
+Các lập trình viên spark mới đôi khi
+
+2
+00:00:02,490 --> 00:00:05,820
+nhầm lẫn về nơi code chạy
+
+3
+00:00:05,820 --> 00:00:08,109
+Liệu nó chạy ngay trong driver
+
+4
+00:00:08,109 --> 00:00:11,290
+hay phân tán trên các executor, hay ở cả driver và 
+
+5
+00:00:11,290 --> 00:00:12,630
+cả các executor?
+
+6
+00:00:12,630 --> 00:00:14,290
+Đây là câu hỏi rất quan trọng 
+
+7
+00:00:14,290 --> 00:00:16,760
+bởi vì các executor chạy song song,
+
+8
+00:00:16,760 --> 00:00:18,450
+và executor có bộ nhớ khả dụng lớn hơn rất nhiều
+
+9
+00:00:18,450 --> 00:00:21,760
+so với driver.
+
+10
+00:00:21,760 --> 00:00:24,616
+Hầu hết code Python đều chạy trong driver
+
+11
+00:00:24,616 --> 00:00:25,990
+ngoại trừ phần code
+
+12
+00:00:25,990 --> 00:00:28,220
+được chuyển qua các transformation.
+
+13
+00:00:28,220 --> 00:00:30,810
+Transformation chạy ở executor.
+
+14
+00:00:30,810 --> 00:00:35,660
+Và action thì chạy cả ở executor và driver
+
+15
+00:00:35,660 --> 00:00:37,630
+Ta hãy xem vài ví dụ.
+
+16
+00:00:37,630 --> 00:00:40,710
+Nếu bạn có lệnh a = a + 1,
+
+17
+00:00:40,710 --> 00:00:44,280
+Nó chạy ở driver,
+
+18
+00:00:44,280 --> 00:00:48,820
+Nếu bạn có lệnh linesDF.filter isComment,
+
+19
+00:00:48,820 --> 00:00:52,260
+nó sẽ chạy ở executor, cả transformation filter và
+
+20
+00:00:52,260 --> 00:00:55,320
+hàm isComment 
+
+21
+00:00:55,320 --> 00:00:59,960
+mà được đưa vào transformation này.
+
+22
+00:00:59,960 --> 00:01:03,650
+Nếu bạn có lệnh commentsDF.count,
+
+23
+00:01:03,650 --> 00:01:05,880
+lệnh này là một action và nó
+
+24
+00:01:05,880 --> 00:01:09,005
+chạy ở cả executor và driver.
+
+25
+00:01:09,005 --> 00:01:11,650
+
+26
+00:01:11,650 --> 00:01:15,630
+Giờ ta xem một ví dụ về code như thế nào thì không nên viết.
+
+27
+00:01:15,630 --> 00:01:20,420
+Giả sử bạn muốn hợp 2 Data Frame aDF và bDF.
+
+28
+00:01:20,420 --> 00:01:24,200
+Bạn nhớ rằng df.collect sẽ trả về một danh sách các hàng.
+
+29
+00:01:24,200 --> 00:01:28,800
+Trong Python, bạn có thể hợp 2 danh sách với toán tử cộng.
+
+30
+00:01:28,800 --> 00:01:32,250
+Vậy cách làm cơ bản là 
+
+31
+00:01:32,250 --> 00:01:38,450
+gọi a = aDF.collect, b = bDF.collect,
+
+32
+00:01:38,450 --> 00:01:42,080
+và cDF = sqlContext.createDataFrame
+
+33
+00:01:42,080 --> 00:01:44,010
+a + b
+
+34
+00:01:44,010 --> 00:01:47,570
+Thực ra đoạn code này sẽ chạy ở đâu?
+
+35
+00:01:47,570 --> 00:01:51,530
+Hai lệnh a = aDF.collect và b = bDF.collect
+
+36
+00:01:51,530 --> 00:01:55,170
+đều là action
+
+37
+00:01:55,170 --> 00:01:58,017
+và sẽ khiến tất cả dữ liệu phân tán của a và b
+
+38
+00:01:58,017 --> 00:02:01,260
+được gửi về driver.
+
+39
+00:02:01,260 --> 00:02:04,350
+Điều gì sẽ xảy ra nếu a hoặc b có kích thước lớn
+
+40
+00:02:04,350 --> 00:02:06,250
+hoặc cả hai đều rất lớn?
+
+41
+00:02:06,250 --> 00:02:08,400
+Driver có thể sẽ hết bộ nhớ.
+
+42
+00:02:08,400 --> 00:02:12,570
+Ta gọi đó là lỗi out of memory, hay lỗi OOM.
+
+43
+00:02:12,570 --> 00:02:15,460
+Còn nữa, việc gửi dữ liệu đến driver có thể tốn rất nhiều thời gian.
+
+44
+00:02:15,460 --> 00:02:18,030
+
+45
+00:02:18,030 --> 00:02:22,100
+Lệnh cuối cùng hợp hai danh sách 
+
+46
+00:02:22,100 --> 00:02:26,130
+sử dụng toán tử cộng của Python, và sau đó 
+
+47
+00:02:26,130 --> 00:02:28,300
+tạo một data frame mới.
+
+48
+00:02:28,300 --> 00:02:31,060
+Điều này sẽ khiến toàn bộ dữ liệu của lệnh a + b
+
+49
+00:02:31,060 --> 00:02:35,050
+bị gửi từ driver đến các executor.
+
+50
+00:02:35,050 --> 00:02:37,630
+Điều gì sẽ đến nếu danh sách thu được từ lệnh a + b
+
+51
+00:02:37,630 --> 00:02:38,720
+quá lớn?
+
+52
+00:02:38,720 --> 00:02:41,330
+Một lần nữa, driver có thể bị hết bộ nhớ.
+
+53
+00:02:41,330 --> 00:02:44,418
+Và sẽ tốn rất nhiều thời gian để gửi tất cả dữ liệu
+
+54
+00:02:44,418 --> 00:02:45,126
+đến các executor.
+
+55
+00:02:45,126 --> 00:02:47,840
+
+56
+00:02:47,840 --> 00:02:52,510
+Cách làm tốt nhất là tham khảo API của Data Frame
+
+57
+00:02:52,510 --> 00:02:58,640
+bạn sẽ thấy một hàm tên là unionAll.
+
+58
+00:02:58,640 --> 00:03:00,900
+Hàm này trả về một Data Frame mới
+
+59
+00:03:00,900 --> 00:03:03,820
+chứa hợp của các hàm trong frame này
+
+60
+00:03:03,820 --> 00:03:06,070
+và một frame khác
+
+61
+00:03:06,070 --> 00:03:08,560
+Hàm này chạy hoàn toàn ở executor.
+
+62
+00:03:08,560 --> 00:03:10,831
+Như vậy sẽ rất hiệu quả và dễ mở rộng.
+
+63
+00:03:10,831 --> 00:03:13,600
+
+64
+00:03:13,600 --> 00:03:15,900
+Vậy đây là một số kinh nghiệm lập trình.
+
+65
+00:03:15,900 --> 00:03:18,740
+Bạn nên sử dụng Transformation và Action khi làm việc với Spark
+
+66
+00:03:18,740 --> 00:03:20,780
+bất cứ khi nào có thể.
+
+67
+00:03:20,780 --> 00:03:22,617
+Hãy tham khảo tài liệu API của Data Frame
+
+68
+00:03:22,617 --> 00:03:24,200
+và bạn sẽ tìm thấy có trên 80
+
+69
+00:03:24,200 --> 00:03:27,340
+transformation và action.
+
+70
+00:03:27,340 --> 00:03:30,000
+Bạn không bao giờ nên dùng collect trong ứng dụng thật, 
+
+71
+00:03:30,000 --> 00:03:33,340
+và thay vào đó nên dùng take với tham số.
+
+72
+00:03:33,340 --> 00:03:35,910
+Bởi vì collect sẽ trả tất cả các bản ghi về driver
+
+73
+00:03:35,910 --> 00:03:39,830
+và có thể dẫn đến lỗi hết bộ nhớ.
+
+74
+00:03:39,830 --> 00:03:42,514
+Cuối cùng, nếu có một Data Frame nào đó phải dùng thường xuyên,
+
+75
+00:03:42,514 --> 00:03:44,055
+hãy lưu những Data Frame đó vào bộ nhớ đệm
+
+76
+00:03:44,055 --> 00:03:47,910
+để không phải tính lại mỗi lần bạn sử dụng chúng.
+

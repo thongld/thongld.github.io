@@ -1,0 +1,636 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/rv4wYPsns9c
+
+1
+00:00:00,499 --> 00:00:02,625
+So now let's include seasonality in a model
+
+2
+00:00:02,625 --> 00:00:05,530
+that includes both level and trend.
+
+3
+00:00:05,530 --> 00:00:07,720
+So this is sometimes called the Holt-Winter method
+
+4
+00:00:07,720 --> 00:00:09,409
+or Holt-Winter model.
+
+5
+00:00:09,409 --> 00:00:11,450
+And what we're going to have is an additive trend
+
+6
+00:00:11,450 --> 00:00:13,550
+in a multiplicative seasonality.
+
+7
+00:00:13,550 --> 00:00:17,290
+So I assume that I have some kind of standard level, this a,
+
+8
+00:00:17,290 --> 00:00:20,520
+plus some generally persistent trend, b,
+
+9
+00:00:20,520 --> 00:00:23,800
+and then there's some seasonality.
+
+10
+00:00:23,800 --> 00:00:25,860
+And my underlying model is simply
+
+11
+00:00:25,860 --> 00:00:29,020
+going to be that the demanded time period, t, is
+
+12
+00:00:29,020 --> 00:00:32,020
+equal to the level plus the trend times
+
+13
+00:00:32,020 --> 00:00:34,870
+t, the number of trends that I've had so far,
+
+14
+00:00:34,870 --> 00:00:36,990
+and that sum is going to be multiplied
+
+15
+00:00:36,990 --> 00:00:40,150
+by F sub t, the seasonality index for that period.
+
+16
+00:00:40,150 --> 00:00:42,190
+And I'm adding in my error term.
+
+17
+00:00:42,190 --> 00:00:44,700
+And that, again, is identical and independently distributed
+
+18
+00:00:44,700 --> 00:00:47,290
+with a mean of 0 and some variance.
+
+19
+00:00:47,290 --> 00:00:49,680
+The forecasting model will follow this.
+
+20
+00:00:49,680 --> 00:00:53,670
+So x hat for time period t, forecasting for time
+
+21
+00:00:53,670 --> 00:00:56,860
+period, t plus tau-- so I'm going tau units
+
+22
+00:00:56,860 --> 00:01:00,410
+into the future-- is going to be equal to the estimated
+
+23
+00:01:00,410 --> 00:01:04,426
+level I had at time t plus the number of units
+
+24
+00:01:04,426 --> 00:01:06,050
+I'm going forward in the future, number
+
+25
+00:01:06,050 --> 00:01:10,620
+of time periods, tau, times the estimate b
+
+26
+00:01:10,620 --> 00:01:14,400
+hat t, which is the estimate of the level at time t.
+
+27
+00:01:14,400 --> 00:01:18,400
+I'm going to multiply that sum times the seasonality
+
+28
+00:01:18,400 --> 00:01:21,620
+of the most recent similar period.
+
+29
+00:01:21,620 --> 00:01:26,010
+That's f hat t plus tau minus p.
+
+30
+00:01:26,010 --> 00:01:29,930
+So I have three patterns-- level, trend, and seasonality--
+
+31
+00:01:29,930 --> 00:01:32,370
+so I have three updating equations.
+
+32
+00:01:32,370 --> 00:01:34,750
+The first one should look very familiar.
+
+33
+00:01:34,750 --> 00:01:37,560
+It's the same one that we had for the double exponential
+
+34
+00:01:37,560 --> 00:01:39,870
+smoothing model in the last video.
+
+35
+00:01:39,870 --> 00:01:42,310
+The estimated level at time period t,
+
+36
+00:01:42,310 --> 00:01:45,400
+is at the end of time period t, equals alpha times
+
+37
+00:01:45,400 --> 00:01:46,370
+the new information.
+
+38
+00:01:46,370 --> 00:01:48,190
+And the new information is the new demand
+
+39
+00:01:48,190 --> 00:01:52,970
+that occurred, x sub t, divided by the most recent seasonality
+
+40
+00:01:52,970 --> 00:01:55,850
+for that time period t, f hat t minus p.
+
+41
+00:01:55,850 --> 00:01:58,060
+So I'm going p units of time back
+
+42
+00:01:58,060 --> 00:02:01,490
+to the most recent relevant time period.
+
+43
+00:02:01,490 --> 00:02:04,470
+I'm going to add 1 minus alpha times the old information.
+
+44
+00:02:04,470 --> 00:02:06,310
+The old information for the level
+
+45
+00:02:06,310 --> 00:02:11,680
+is the estimate of a hat t minus 1, plus b hat t minus 1.
+
+46
+00:02:11,680 --> 00:02:13,790
+So it's the estimates of the last period
+
+47
+00:02:13,790 --> 00:02:15,250
+for the level and the trend.
+
+48
+00:02:15,250 --> 00:02:18,630
+
+
+49
+00:02:18,630 --> 00:02:20,910
+The updating equation for the trend
+
+50
+00:02:20,910 --> 00:02:23,780
+is going to be identical to what we did in the Holt model.
+
+51
+00:02:23,780 --> 00:02:27,180
+So again, it's beta hat t equals, or b hat t,
+
+52
+00:02:27,180 --> 00:02:30,330
+equals beta times the new information--
+
+53
+00:02:30,330 --> 00:02:32,900
+which is the newly estimated level that we just
+
+54
+00:02:32,900 --> 00:02:36,540
+did-- minus the estimate of the level from the time period
+
+55
+00:02:36,540 --> 00:02:37,200
+before.
+
+56
+00:02:37,200 --> 00:02:40,560
+So this is my best estimate if there's a new trend.
+
+57
+00:02:40,560 --> 00:02:43,760
+Plus 1 minus beta times b hat t minus 1,
+
+58
+00:02:43,760 --> 00:02:46,610
+which is the estimate I had from the previous time
+
+59
+00:02:46,610 --> 00:02:48,260
+period for the level.
+
+60
+00:02:48,260 --> 00:02:51,410
+Excuse me, for the trend.
+
+61
+00:02:51,410 --> 00:02:53,800
+Finally, we have the seasonality update.
+
+62
+00:02:53,800 --> 00:02:59,070
+That's f hat t, and that's equal to gamma times xt over a hat t.
+
+63
+00:02:59,070 --> 00:03:00,270
+And what are we doing here?
+
+64
+00:03:00,270 --> 00:03:01,170
+We're deleveling.
+
+65
+00:03:01,170 --> 00:03:03,260
+I'm taking the actual demand and dividing it
+
+66
+00:03:03,260 --> 00:03:05,210
+by the estimate of the level.
+
+67
+00:03:05,210 --> 00:03:06,720
+So this is giving me an indication
+
+68
+00:03:06,720 --> 00:03:08,490
+if the seasonality is changed.
+
+69
+00:03:08,490 --> 00:03:12,240
+Plus 1 minus gamma, times f hat t minus p.
+
+70
+00:03:12,240 --> 00:03:15,180
+It's the seasonal term for the most recent similar time
+
+71
+00:03:15,180 --> 00:03:16,490
+period.
+
+72
+00:03:16,490 --> 00:03:17,670
+So let's look at an example.
+
+73
+00:03:17,670 --> 00:03:19,430
+We're still in our sandwich shop.
+
+74
+00:03:19,430 --> 00:03:20,930
+And now we're looking at the bagels,
+
+75
+00:03:20,930 --> 00:03:22,890
+and they have an additive trend and we
+
+76
+00:03:22,890 --> 00:03:24,800
+think a multiplicative seasonality.
+
+77
+00:03:24,800 --> 00:03:27,010
+Day of week, so there's five time periods
+
+78
+00:03:27,010 --> 00:03:30,360
+in our seasonality, so p equals five.
+
+79
+00:03:30,360 --> 00:03:33,080
+And so now it's Friday, time period 104.
+
+80
+00:03:33,080 --> 00:03:37,290
+And we've estimated that the level estimated at that time
+
+81
+00:03:37,290 --> 00:03:39,570
+period, 104, is about 121 bagels.
+
+82
+00:03:39,570 --> 00:03:43,076
+So on average, we sell about 121 bagels a day.
+
+83
+00:03:43,076 --> 00:03:44,700
+And we've noticed that we have a trend,
+
+84
+00:03:44,700 --> 00:03:48,020
+we're increasing sales of about 0.3 bagels per day.
+
+85
+00:03:48,020 --> 00:03:50,190
+Linear and it's positive.
+
+86
+00:03:50,190 --> 00:03:53,770
+So at the end of a week, we're selling about 1.5
+
+87
+00:03:53,770 --> 00:03:57,870
+more bagels a week-- just 5 times 0.3.
+
+88
+00:03:57,870 --> 00:04:00,840
+So the current seasonality factors are shown to the right,
+
+89
+00:04:00,840 --> 00:04:02,180
+in that little table.
+
+90
+00:04:02,180 --> 00:04:05,600
+And the smoothing factors are alpha is 0.1, beta is 0.08,
+
+91
+00:04:05,600 --> 00:04:07,420
+and gamma is 0.05.
+
+92
+00:04:07,420 --> 00:04:12,105
+So my forecast for Monday, so that's x hat 104, Friday, 4,
+
+93
+00:04:12,105 --> 00:04:15,120
+105 is for Monday.
+
+94
+00:04:15,120 --> 00:04:17,130
+It's one business day forward.
+
+95
+00:04:17,130 --> 00:04:18,870
+So I'm just going to plug and chug here,
+
+96
+00:04:18,870 --> 00:04:21,470
+and it's going to be equal to the recent estimate
+
+97
+00:04:21,470 --> 00:04:23,100
+of the level, which is 121.
+
+98
+00:04:23,100 --> 00:04:25,080
+I gave that to you.
+
+99
+00:04:25,080 --> 00:04:27,810
+Plus 0.3, is my most recent estimate
+
+100
+00:04:27,810 --> 00:04:31,850
+of the trend, multiplied by my most recent estimate of what
+
+101
+00:04:31,850 --> 00:04:34,020
+Monday seasonality is like, 0.5.
+
+102
+00:04:34,020 --> 00:04:37,270
+And that gives me an estimate of 60.7.
+
+103
+00:04:37,270 --> 00:04:40,510
+So now, let's suppose that in fact at the end of Monday,
+
+104
+00:04:40,510 --> 00:04:42,250
+it was a banner day for bagels.
+
+105
+00:04:42,250 --> 00:04:44,120
+We sold 76.
+
+106
+00:04:44,120 --> 00:04:45,170
+Big day.
+
+107
+00:04:45,170 --> 00:04:47,390
+So now I want to know what do I forecast
+
+108
+00:04:47,390 --> 00:04:50,490
+for demand for Tuesday, in time 106?
+
+109
+00:04:50,490 --> 00:04:52,760
+Now because it went up, that means
+
+110
+00:04:52,760 --> 00:04:55,160
+my seasonality might be increased, right?
+
+111
+00:04:55,160 --> 00:04:58,350
+So I'm going to take that new information into account.
+
+112
+00:04:58,350 --> 00:05:00,310
+So I did this in a spreadsheet.
+
+113
+00:05:00,310 --> 00:05:02,290
+This should look familiar to you by now.
+
+114
+00:05:02,290 --> 00:05:05,200
+Cell C1 is the alpha, the beta's in C2,
+
+115
+00:05:05,200 --> 00:05:08,320
+and the gamma's in cell C3.
+
+116
+00:05:08,320 --> 00:05:12,990
+And so my estimate for the level is down here in cell D11,
+
+117
+00:05:12,990 --> 00:05:16,290
+and it's simply alpha times the new demand divided
+
+118
+00:05:16,290 --> 00:05:20,040
+by the most recent seasonality, which is F6-- because remember,
+
+119
+00:05:20,040 --> 00:05:24,710
+I'm finding the estimate for the level in time period 105
+
+120
+00:05:24,710 --> 00:05:27,850
+for period for Monday, so that's why I'm dividing it
+
+121
+00:05:27,850 --> 00:05:32,920
+by a Monday seasonality-- plus 1 minus alpha times
+
+122
+00:05:32,920 --> 00:05:36,280
+the most recent estimates for the level
+
+123
+00:05:36,280 --> 00:05:39,240
+and the trend, D10 and E10.
+
+124
+00:05:39,240 --> 00:05:43,320
+And my estimate for the trend is going
+
+125
+00:05:43,320 --> 00:05:49,190
+to be beta, up here in cell C2, times the most recent estimates
+
+126
+00:05:49,190 --> 00:05:54,250
+of the level, D11 and D10, plus 1 minus beta, times my most
+
+127
+00:05:54,250 --> 00:05:58,860
+recent estimate of the trend itself, which is in cell E10
+
+128
+00:05:58,860 --> 00:06:01,040
+right here.
+
+129
+00:06:01,040 --> 00:06:03,370
+Then the last thing I do is my seasonality.
+
+130
+00:06:03,370 --> 00:06:06,090
+And that's simply going to be equal to the gamma
+
+131
+00:06:06,090 --> 00:06:10,890
+times the ratio of the C11, which is the most recent demand
+
+132
+00:06:10,890 --> 00:06:13,100
+that I have, divided by my level,
+
+133
+00:06:13,100 --> 00:06:16,490
+my most recent estimate of the level, D11, which I just did.
+
+134
+00:06:16,490 --> 00:06:19,920
+Plus 1 minus gamma times my most recent estimate
+
+135
+00:06:19,920 --> 00:06:23,330
+of that relevant time period's seasonality,
+
+136
+00:06:23,330 --> 00:06:25,530
+which is F6, which is the last Monday.
+
+137
+00:06:25,530 --> 00:06:27,030
+Because remember, this is telling me
+
+138
+00:06:27,030 --> 00:06:29,660
+that the new Monday estimate of seasonality
+
+139
+00:06:29,660 --> 00:06:31,180
+has gone up a little bit.
+
+140
+00:06:31,180 --> 00:06:31,680
+Right?
+
+141
+00:06:31,680 --> 00:06:36,430
+Because I had such a big banner day, it might be noise,
+
+142
+00:06:36,430 --> 00:06:38,710
+but it might also be an indicator
+
+143
+00:06:38,710 --> 00:06:41,350
+that I have more seasonality.
+
+144
+00:06:41,350 --> 00:06:44,410
+That maybe Mondays are picking up and I need to adjust those.
+
+145
+00:06:44,410 --> 00:06:49,380
+So then I can find my estimate for Tuesday off of this, right?
+
+146
+00:06:49,380 --> 00:06:52,790
+So it's just going to be the D11, which
+
+147
+00:06:52,790 --> 00:06:56,480
+is the estimate for level, plus 1 tau-- I've only
+
+148
+00:06:56,480 --> 00:06:59,320
+gone one period ahead-- times my new estimate
+
+149
+00:06:59,320 --> 00:07:02,730
+of the trend, which is 0.5.
+
+150
+00:07:02,730 --> 00:07:06,020
+And for this, I'm going to multiply it by F7.
+
+151
+00:07:06,020 --> 00:07:06,790
+Why is that?
+
+152
+00:07:06,790 --> 00:07:10,500
+Because this is a forecast, or a prediction, or an estimate,
+
+153
+00:07:10,500 --> 00:07:11,480
+for Tuesday.
+
+154
+00:07:11,480 --> 00:07:14,870
+So I'm going to the Tuesday.
+
+155
+00:07:14,870 --> 00:07:18,110
+So what I've done is I've taken the estimate of the level,
+
+156
+00:07:18,110 --> 00:07:20,160
+added the trend, multiplied by what
+
+157
+00:07:20,160 --> 00:07:23,500
+I expect to sell on a Tuesday-- which is a 0.75--
+
+158
+00:07:23,500 --> 00:07:27,230
+and that will give you my forecast for Tuesday, 93.7.
+

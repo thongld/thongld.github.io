@@ -1,0 +1,1615 @@
+1
+00:00:00,260 --> 00:00:03,799
+Thanh_Nguyễn
+Xin chào, Vsauce. Micheal đây.
+Có một cách nổi tiếng
+
+2
+00:00:03,799 --> 00:00:08,199
+để có vẻ như là tạo ra chocolate chẳng từ thứ gì cả.
+
+3
+00:00:08,199 --> 00:00:11,459
+Có thể bạn đã chứng kiến nó trước kia. Thanh chocolate này
+
+4
+00:00:11,460 --> 00:00:15,750
+4 nhân 8 hình vuông, nhưng nếu bạn cắt nó giống thế này
+
+5
+00:00:15,750 --> 00:00:19,189
+và sau đó giống thế này và cuối cùng giống như thế này
+
+6
+00:00:19,189 --> 00:00:22,198
+bạn có thể sắp xếp lại những mảnh giống như vậy
+
+7
+00:00:22,199 --> 00:00:25,660
+và kết thúc với thanh 4 nhân 8 tương tự
+
+8
+00:00:25,660 --> 00:00:29,539
+nhưng với một mảnh thừa ra, rõ ràng được tạo ra từ làn khí mỏng.
+
+9
+00:00:29,539 --> 00:00:33,239
+Cũng có một bộ phim hoạt hình về ảo giác này.
+
+10
+00:00:33,238 --> 00:00:37,058
+Tôi có thể gọi nó là ảo giác vì
+
+11
+00:00:37,058 --> 00:00:40,689
+nó chính là vậy. Giống như thật. Trên thực tế,
+
+12
+00:00:40,689 --> 00:00:44,460
+thanh cuối cùng nhỏ hơn một chút.
+
+13
+00:00:44,460 --> 00:00:50,030
+Nó chứa ít chocolate hơn nhiều. Mỗi ô vuông dọc theo đường cắt ngắn hơn
+
+14
+00:00:50,030 --> 00:00:50,910
+so với bản gốc,
+
+15
+00:00:50,909 --> 00:00:55,069
+nhưng đường cắt khiến nó khó để nhận ra ngay lập tức.
+
+16
+00:00:55,070 --> 00:00:58,579
+Hoạt họa đặc biệt lừa phỉnh, vì nó cố che đậy sự lừa dối của nó.
+
+17
+00:00:58,579 --> 00:01:02,799
+Độ dài bị mất của mỗi hình vuông được bí mật thêm vào
+
+18
+00:01:02,799 --> 00:01:06,349
+trong khi di chuyển các mảnh khiến nó khó để nhận biết hơn.
+
+19
+00:01:06,349 --> 00:01:10,938
+Ý tôi là, thôi nào, rõ ràng bạn không thể cắt một thanh chocolate
+
+20
+00:01:10,938 --> 00:01:14,678
+và sắp xếp lại các mảnh thành thành nhiều hơn cái lúc bạn bắt đầu với.
+
+21
+00:01:16,129 --> 00:01:19,199
+Hay bạn có thể?
+Một trong những định lý kì lạ nhất
+
+22
+00:01:19,200 --> 00:01:22,880
+trong toán học hiện đại là 
+
+23
+00:01:22,879 --> 00:01:24,339
+nghịch lý Banach-Tarski.
+
+24
+00:01:24,340 --> 00:01:28,640
+Nó chứng minh rằng thực tế có cách để lấy một vật
+
+25
+00:01:28,640 --> 00:01:31,959
+và chia nó thành 5 mảnh
+
+26
+00:01:31,959 --> 00:01:33,479
+khác nhau.
+
+27
+00:01:37,510 --> 00:01:40,859
+Và sau đó, với 5 mảnh đó, 
+
+28
+00:01:40,859 --> 00:01:44,709
+đơn giản sắp xếp chúng lại.
+Không cần đến sự kéo dài nào thành 
+
+29
+00:01:44,709 --> 00:01:48,719
+hai bản sao chính xác của vật  gốc.
+
+30
+00:01:48,719 --> 00:01:52,299
+Cùng độ dày, cùng kích thước,
+
+31
+00:01:52,299 --> 00:01:54,480
+cùng mọi thứ.
+
+32
+00:01:55,659 --> 00:01:58,709
+Nghiêm túc đó. Để đi sâu nghiên cứu về ảo giác,
+
+33
+00:01:58,709 --> 00:02:02,500
+nó là gì và cách nó cơ bản đặt thành vấn đề toán học
+
+34
+00:02:02,500 --> 00:02:06,790
+và bản thân chúng ta phải bắt đầu bằng cách đặt một vài câu hỏi.
+
+35
+00:02:07,620 --> 00:02:10,280
+Đầu tiên, vô hạn là gì?
+
+36
+00:02:11,099 --> 00:02:13,639
+Một số?
+Ý tôi là, nó chẳng ở đâu
+
+37
+00:02:13,639 --> 00:02:16,958
+trong dãy số cả, những chúng ta thường nó những thứ như
+
+38
+00:02:16,959 --> 00:02:21,009
+có một "số" vô hạn của bla-bla-bla.
+
+39
+00:02:21,009 --> 00:02:24,409
+Và như chúng ta biết, vô hạn có thể có đúng.
+
+40
+00:02:24,409 --> 00:02:27,620
+Vũ trụ có thể vô hạn về kích thước
+
+41
+00:02:27,620 --> 00:02:31,459
+và mặt phẳng, trải dài mãi mãi không có điểm kết thúc,
+
+42
+00:02:31,459 --> 00:02:34,500
+thậm chí vượt xa phần chúng ta có thể quan sát
+
+43
+00:02:34,500 --> 00:02:37,879
+và từng hy vọng được quan sát.
+
+44
+00:02:37,879 --> 00:02:41,530
+Đó chính xác là sự vô hạn.
+Về bản chất không phải là con số
+
+45
+00:02:41,530 --> 00:02:45,390
+mà là kích cỡ.
+Kích thước của một thứ không có điểm dừng.
+
+46
+00:02:45,389 --> 00:02:49,949
+Vô hạn không phải là con số lớn nhất,
+
+47
+00:02:49,949 --> 00:02:53,319
+thay vào đó là nó có bao nhiêu con số.
+
+48
+00:02:53,319 --> 00:02:57,370
+Nhưng có những kích cỡ vô hạn khác nhau.
+
+49
+00:02:57,370 --> 00:03:00,370
+Loại vô hạn nhỏ nhất là
+
+50
+00:03:00,370 --> 00:03:03,939
+vô hạn đếm được.
+Số giờ vô hạn.
+
+51
+00:03:03,939 --> 00:03:07,810
+Nó cũng là số của toàn bộ những con số mà ta có,
+
+52
+00:03:07,810 --> 00:03:10,830
+số tự nhiên, những số ta sử dụng khi đếm mọi thứ
+
+53
+00:03:10,830 --> 00:03:14,219
+như 1, 2, 3, 4, 5, 6 và vân vân.
+
+54
+00:03:14,219 --> 00:03:17,840
+Những dãy số như vậy là vô hạn,
+
+55
+00:03:17,840 --> 00:03:23,039
+nhưng chúng có thể đếm được. Có thể đếm được có nghĩa là bạn có thể đếm chúng
+
+56
+00:03:23,039 --> 00:03:26,269
+từ một nguyên tố đến bất cứ nguyên tố nào khác
+
+57
+00:03:26,270 --> 00:03:31,280
+trong một lượng thời gian hữu hạn, ngay cả khi lượng thời gian hữu hạn đó dài hơn
+
+58
+00:03:31,280 --> 00:03:32,159
+khoảng thời gian mà bạn sống
+
+59
+00:03:32,159 --> 00:03:36,270
+hoặc vũ trụ còn tồn tại, nó vẫn hữu hạn.
+
+60
+00:03:36,270 --> 00:03:40,060
+Vô hạn không đếm được, ngược lại, lớn hơn theo đúng nghĩa.
+
+61
+00:03:40,060 --> 00:03:43,370
+Thậm chí quá lớn để đếm.
+
+62
+00:03:43,370 --> 00:03:46,550
+Số những số thực tồn tại,
+
+63
+00:03:46,550 --> 00:03:50,020
+không chỉ toàn bộ những con số, mà tất cả những số vô hạn không đếm được.
+
+64
+00:03:50,020 --> 00:03:53,560
+Nghĩa đen bạn không thể đếm
+
+65
+00:03:53,560 --> 00:03:57,659
+thậm chí từ 0 đến 1 trong khoảng thời gian xác định bằng cách
+
+66
+00:03:57,659 --> 00:04:00,909
+kể tên mỗi một số thực giữa chúng.
+Ý tôi là
+
+67
+00:04:00,909 --> 00:04:04,030
+Bạn bắt đầu ở đâu?
+0, được rồi.
+
+68
+00:04:04,030 --> 00:04:10,939
+Nhưng số tiếp theo là gì? 0.000000...
+
+69
+00:04:10,939 --> 00:04:14,289
+Cuối cùng, chúng ta tưởng tượng rằng 1
+
+70
+00:04:14,289 --> 00:04:17,608
+sẽ ở đâu đó cuối cùng, nhưng không có điểm cuối cùng.
+
+71
+00:04:17,608 --> 00:04:21,509
+Chúng ta luôn có thể thêm một số 0 nữa vào.
+
+72
+00:04:21,509 --> 00:04:26,149
+Không đếm được biến dãy số này rộng hơn nhiều so với dãy của toàn bộ các số
+
+73
+00:04:26,149 --> 00:04:30,099
+giữa 0 và 1, có nhiều số hơn
+
+74
+00:04:30,100 --> 00:04:34,080
+toàn bộ các số trong toàn bộ dãy số vô hạn.
+
+75
+00:04:34,079 --> 00:04:37,120
+Lý luận đường chéo nổi tiếng của Georg Cantor giúp
+
+76
+00:04:37,120 --> 00:04:40,180
+minh họa điều này.
+Hãy hình dung liệt kê tất cả các số
+
+77
+00:04:40,180 --> 00:04:45,769
+giữa 0 và 1. Vì chúng không đếm được và không thể liệt kê được theo thứ tự,
+
+78
+00:04:45,769 --> 00:04:48,859
+hãy hình dung rằng ngẫu nhiên tạo ra chúng mãi mãi
+
+79
+00:04:48,860 --> 00:04:54,040
+không bị lặp lại. Mỗi số lặp lại có thể được ghép cặp với một số nguyên.
+
+80
+00:04:54,040 --> 00:04:59,819
+Nếu có sự tương ứng 1-1 giữa chúng,
+
+81
+00:04:59,819 --> 00:05:03,740
+vấn đề là nếu ta có thể nối một số nguyên với một số thực
+
+82
+00:05:03,740 --> 00:05:06,780
+trong danh sách của ta, điều đó có nghĩa là
+
+83
+00:05:06,779 --> 00:05:11,489
+những dãy đếm được và không đếm được có cùng độ lớn.
+Nhưng chúng ta không thể làm điều đó được,
+
+84
+00:05:11,490 --> 00:05:14,840
+cho dù danh sách này kéo dài mãi mãi.
+
+85
+00:05:14,839 --> 00:05:19,259
+Mãi mãi chưa đủ.
+Hãy xem cái này.
+
+86
+00:05:19,259 --> 00:05:23,060
+Nếu chúng ta đi giảm danh sách những số thực theo đường chéo,
+
+87
+00:05:23,060 --> 00:05:27,240
+và lấy số thập phân đầu tiên của số đầu tiên
+
+88
+00:05:27,240 --> 00:05:31,210
+và số thập phân thứ hai của số thứ hai, số thập phân thứ ba của số thứ ba và v.v.
+
+89
+00:05:31,209 --> 00:05:34,728
+và thêm 1 vào mỗi số, trừ 1
+
+90
+00:05:34,728 --> 00:05:38,278
+nếu nó là 9, chúng ta có thể tạo ra một số thực mới
+
+91
+00:05:38,278 --> 00:05:41,978
+rõ ràng nằm giữa 0 và 1,`
+
+92
+00:05:41,978 --> 00:05:44,990
+nhưng vì chúng ta xác định nó khác
+
+93
+00:05:44,990 --> 00:05:49,180
+so với các số trong danh sách vô hạn của chúng và tối thiểu một điều
+
+94
+00:05:49,180 --> 00:05:52,319
+rõ ràng nó không nằm trong danh sách.
+
+95
+00:05:52,319 --> 00:05:56,468
+Nói cách khác, chúng ta đã dùng hết tất cả các số nguyên,
+
+96
+00:05:56,468 --> 00:06:00,019
+phần vô hạn nguyên của chúng và tuy vậy chúng ta vẫn có thể
+
+97
+00:06:00,019 --> 00:06:05,408
+đưa ra nhiều số thực hơn.
+Dưới đây là một thứ khác đúng
+
+98
+00:06:05,408 --> 00:06:08,759
+nhưng khác thường.
+Có số lượng tương tự của những số chẵn 
+
+99
+00:06:08,759 --> 00:06:11,870
+như có những số chẵn và số lẻ.
+
+100
+00:06:11,870 --> 00:06:17,418
+Đầu tiên, điều này nghe có vẻ nực cười. Rõ ràng, chỉ có một nửa 
+
+101
+00:06:17,418 --> 00:06:17,818
+số chẵn trong toàn bộ các số,
+
+102
+00:06:17,819 --> 00:06:22,218
+nhưng trực giác đó sai.
+
+103
+00:06:22,218 --> 00:06:25,509
+Dãy toàn bộ các số dày đặc hơn
+
+104
+00:06:25,509 --> 00:06:28,710
+nhưng mỗi số chẵn có thể được kết hợp với một số nguyên.
+
+105
+00:06:28,709 --> 00:06:33,459
+Bạn sẽ không bao giờ dùng hết các số của hai dãy, do đó tính tương ứng 1-1 này
+
+106
+00:06:33,459 --> 00:06:37,068
+cho thấy hai dãy số có cùng độ lớn.
+
+107
+00:06:38,079 --> 00:06:41,538
+Nói cách khác, vô hạn được chia 2
+
+108
+00:06:41,538 --> 00:06:44,068
+thì vẫn bằng vô hạn.
+
+109
+00:06:44,069 --> 00:06:47,449
+Vô hạn nhân 1 vẫn bằng vô hạn.
+
+110
+00:06:47,449 --> 00:06:50,850
+Một ví dụ minh họa hay của điều này là nghịch lý Hilbert
+
+111
+00:06:50,850 --> 00:06:54,139
+lên Khách sạn Grand.
+Hãy hình dung một khách sạn
+
+112
+00:06:54,139 --> 00:06:57,900
+có số phòng vô hạn đếm được. Nhưng bây giờ,
+
+113
+00:06:57,899 --> 00:07:02,329
+hãy hình dung rằng có một người đặt tất cả các phòng đơn.
+
+114
+00:07:02,329 --> 00:07:07,139
+Dường như nó bị hết phòng, đúng không?
+Không.
+
+115
+00:07:07,839 --> 00:07:10,679
+Những dãy vô hạn đi ngược lại ý nghĩa thông thường.
+
+116
+00:07:10,680 --> 00:07:14,079
+Bạn thấy, nếu một khách mới đến và muốn một phòng,
+
+117
+00:07:14,079 --> 00:07:17,839
+mọi thứ khách sạn phải làm là chuyển khách trong phòng số 1
+
+118
+00:07:17,839 --> 00:07:22,000
+sang phòng số 2. Và khách trong phòng số 2 sang phòng số 3, và số 3 sang phòng số 4, và 4 sang phòng số 5
+
+119
+00:07:22,000 --> 00:07:23,209
+và v.v.
+
+120
+00:07:23,209 --> 00:07:26,649
+Vì số phfong không bao giờ kết thúc
+
+121
+00:07:26,649 --> 00:07:30,138
+chúng ta không thể hết phòng.
+
+122
+00:07:30,139 --> 00:07:34,030
+Vô hạn -1 cũng vẫn bằng vô hạn.
+
+123
+00:07:34,029 --> 00:07:37,158
+Nếu một vị khách rởi khỏi khách sạn, chúng ta có thể chuyển
+
+124
+00:07:37,158 --> 00:07:40,719
+mỗi vị khách theo cách khác. Khách số 2 sang phòng số 1,
+
+125
+00:07:40,720 --> 00:07:44,409
+3 sang 2, 4 sang 3, và v.v, vì chúng ta có số lượng vô hạn khách.
+
+126
+00:07:44,408 --> 00:07:48,908
+Đó là nguồn cung cấp khách vô tận.
+
+127
+00:07:48,908 --> 00:07:52,949
+Không có phòng nào bị để trống.
+Khi hóa ra vậy,
+
+128
+00:07:52,949 --> 00:07:56,610
+bạn có thể trừ bất cứ số hữu hạn nào từ tập vô hạn
+
+129
+00:07:56,610 --> 00:08:00,530
+và sẽ vẫn là vô hạn.
+Nó không quan tâm.
+
+130
+00:08:00,529 --> 00:08:04,529
+Nó là vô tận.  Banach-Tarski vẫn chưa bỏ quan điểm của chúng ta.
+
+131
+00:08:04,529 --> 00:08:07,609
+Tất cả điều này đều có liên hệ.
+Giờ chúng ta sẵn sàng chuyển sang phần những hình dạng.
+
+132
+00:08:07,610 --> 00:08:11,270
+Khách sạn Hilbert có thể được ứng dụng cho hình tròn.
+
+133
+00:08:11,269 --> 00:08:15,149
+Các điểm quanh đường tròn có thể được coi là những vị khách.
+
+134
+00:08:15,149 --> 00:08:19,370
+Nếu chúng ta di chuyển một điểm từ đường tròn
+
+135
+00:08:19,370 --> 00:08:24,579
+điểm đó biến mất, đúng không?
+Vô hạn cho ta biết nó không quan trọng.
+
+136
+00:08:24,579 --> 00:08:27,668
+Chu vi hình tròn là số vô tỷ.
+
+137
+00:08:27,668 --> 00:08:31,250
+Nó bằng bán kính nhân 2Pi.
+
+138
+00:08:31,250 --> 00:08:34,500
+Do đó, nếu chúng ta đánh dấu các điểm bắt đầu từ phần nguyên,
+
+139
+00:08:34,500 --> 00:08:38,899
+mỗi độ dài bán kính dọc theo đường tròn chạy theo kim đồng hồ,
+
+140
+00:08:38,899 --> 00:08:42,269
+chúng ta sẽ không bao giờ chạm vào cùng 1 điểm 2 lần,
+
+141
+00:08:42,269 --> 00:08:45,610
+mãi mãi.
+Ta có thể đếm mỗi điểm ta đánh dấu
+
+142
+00:08:45,610 --> 00:08:49,759
+với một số nguyên.
+Vì vậy dãy này là vô hạn,
+
+143
+00:08:49,759 --> 00:08:53,389
+nhưng có thể đếm được, giống như những vị khách và những căn phòng trong khách sạn Hilbert.
+
+144
+00:08:53,389 --> 00:08:56,669
+Và giống những vị khách kia,
+dù một người trả phòng,
+
+145
+00:08:56,669 --> 00:09:00,069
+ta vẫn có thể đổi số còn lại.
+Chuyển họ
+
+146
+00:09:00,070 --> 00:09:04,360
+ngược chiều kim đồng hồ và mỗi phòng sẽ lấp đầy
+
+147
+00:09:04,360 --> 00:09:07,590
+Điểm 1 chuyển đi để lấp đầy khoảng trống, điểm 2
+
+148
+00:09:07,590 --> 00:09:10,950
+lấp đầy nơi mà điểm 1 từng ở, 3 lấp đầy 2
+
+149
+00:09:10,950 --> 00:09:16,050
+và v.v. Vì chúng ta có nguồn cung cấp các điểm được đánh số vô hạn,
+
+150
+00:09:16,049 --> 00:09:19,129
+không có khoảng trống nào bị để trống.
+
+151
+00:09:19,129 --> 00:09:24,189
+Điểm thiếu bị lãng quên.
+Rõ ràng chúng ta chưa bao giờ cần nó
+
+152
+00:09:24,190 --> 00:09:28,600
+để hoàn thiện. Có một yêu cầu cuối cùng về kết quả của vô hạn
+
+153
+00:09:28,600 --> 00:09:32,980
+mà ta cần thảo luận trước khi giải quyết Banach-Tarski.
+
+154
+00:09:32,980 --> 00:09:36,259
+Ian Stewart nổi tiếng đề xuất một cuốn từ điển tuyệt vời.
+
+155
+00:09:36,259 --> 00:09:40,539
+Một thứ mà ông gọi là Hyperwebster.
+
+156
+00:09:40,539 --> 00:09:44,069
+Hyperwebster liệt kê tất cả các từ duy nhất có thể ở bất cứ độ dài nào
+
+157
+00:09:44,070 --> 00:09:47,560
+được hình thành từ 26 chữ cái trong bảng chữ cái Tiếng Anh.
+
+158
+00:09:47,559 --> 00:09:51,329
+Nó bắt đầu với "a", theo sau bởi "aa",
+
+159
+00:09:51,330 --> 00:09:54,410
+sau đó là "aaa", nữa là "aaaa."
+
+160
+00:09:54,409 --> 00:09:57,750
+Và sau một số vô hạn của những chữ đó, "'ab",
+
+161
+00:09:57,750 --> 00:10:01,950
+sau đó là "aba", tiếp là "abaa", "abaaa,"
+
+162
+00:10:01,950 --> 00:10:05,129
+và v.v cho đến "z," "za,"
+
+163
+00:10:05,129 --> 00:10:08,289
+"zaa," v.v, v.v, cho đến mục từ cuối cùng
+
+164
+00:10:08,289 --> 00:10:11,919
+theo thứ tự vô hạn của "z"s.
+
+165
+00:10:11,919 --> 00:10:14,990
+Một cuốn từ điển như vậy sẽ bao hàm tất cả các từ đơn.
+
+166
+00:10:14,990 --> 00:10:18,480
+Mỗi một tư tưởng,
+
+167
+00:10:18,480 --> 00:10:22,009
+khái niệm, sự mô tả, chân lí, dối trá, tên,
+
+168
+00:10:22,009 --> 00:10:25,240
+câu truyện.
+Điều xảy ra với Amelia Earhart sẽ có trong cuốn từ điển đó,
+
+169
+00:10:25,240 --> 00:10:29,220
+cũng như tất cả mọi thứ
+
+170
+00:10:29,220 --> 00:10:31,970
+chưa từng xảy ra vơi Amelia Earhart.
+
+171
+00:10:31,970 --> 00:10:35,259
+Mọi thứ có thể được cho là sử dụng bảng chữ cái của chúng ta.
+
+172
+00:10:35,259 --> 00:10:39,500
+Rõ ràng, nó sẽ rất lớn,
+
+173
+00:10:39,500 --> 00:10:43,009
+nhưng công ty xuất bản nó có thể nhận ra rằng họ có thể dùng shortcut.
+
+174
+00:10:43,009 --> 00:10:46,799
+Nếu họ đặt tất cả các từ bắt đầu với a
+
+175
+00:10:46,799 --> 00:10:49,959
+trong tập có tên là 'A',
+
+176
+00:10:49,960 --> 00:10:54,210
+họ sẽ không phải in chữ 'a' đầu tiên.
+Người đọc hiểu rằng chỉ cần thêm 'a' vào,
+
+177
+00:10:54,210 --> 00:10:57,320
+vì nó là tập chữ 'a'.
+Bằng cách bỏ chữ cái 'a' đầu tiên,
+
+178
+00:10:57,320 --> 00:11:00,760
+nhà xuất bản bỏ tất cả các từ 'a'
+
+179
+00:11:00,759 --> 00:11:04,309
+không có chữ 'a' đầu tiên, cái mà đáng ngạc nhiên
+
+180
+00:11:04,309 --> 00:11:07,909
+trở thành tất cả các từ có thể.
+
+181
+00:11:07,909 --> 00:11:12,819
+Chỉ một trong 26 tập đã bị phân tách thành một phần nguyên.
+
+182
+00:11:14,000 --> 00:11:17,620
+Giờ thì đến lúc chúng ta sẵn sàng nghiên cứu video
+
+183
+00:11:17,629 --> 00:11:21,269
+về nghịch lí titular.
+Điều gì xảy ra nếu ta biến 1 vật thể,
+
+184
+00:11:21,269 --> 00:11:24,710
+3D thành Hyperwebster?
+
+185
+00:11:24,710 --> 00:11:28,700
+Chúng ta có thể phân tách các mảnh của nó thành một thứ nguyên?
+
+186
+00:11:30,080 --> 00:11:32,360
+Có.
+Điều đầu tiên ta cần làm
+
+187
+00:11:32,360 --> 00:11:35,889
+là đặt tên cho tất cả các điểm đơn lẻ trên bề mặt khối cầu
+
+188
+00:11:35,889 --> 00:11:40,939
+và chỉ một cái tên thôi.
+Một cách hay để thực hiện điều này là đặt tên chúng theo cách chúng
+
+189
+00:11:40,940 --> 00:11:43,620
+có thể được với tới bởi một điểm bắt đầu cho trước.
+
+190
+00:11:43,620 --> 00:11:47,740
+Nếu chúng ta di chuyển điểm bắt đầu này ngang qua bề mặt hình cầu
+
+191
+00:11:47,740 --> 00:11:51,740
+theo các bước là độ dài phù hợp, dù bao nhiêu lần
+
+192
+00:11:51,740 --> 00:11:55,110
+hoặc theo hướng nào mà chúng ta quay, xa đến nỗi mà chúng ta không bao giờ quay về,
+
+193
+00:11:55,110 --> 00:11:58,419
+nó sẽ không bao giờ kết thúc tại cùng một điểm
+
+194
+00:11:58,419 --> 00:12:03,079
+hai lần. Chúng ta chỉ cần xoay theo bốn hướng để đạt được nghịch lí ngày.
+
+195
+00:12:03,080 --> 00:12:06,280
+Lên, xuống, trái, phải
+
+196
+00:12:06,279 --> 00:12:10,000
+quanh hai trục hai góc vuông. Ta sẽ cần
+
+197
+00:12:10,000 --> 00:12:13,230
+tất cả các trật tự có thể cái mà có thể được hợp thành
+
+198
+00:12:13,230 --> 00:12:17,269
+từ bất cứ độ dài xác định nào ngoài bốn góc quay này.
+
+199
+00:12:17,269 --> 00:12:20,269
+Điều đó có nghĩa là ta sẽ cần trái, phải,
+
+200
+00:12:20,269 --> 00:12:24,250
+trên và dưới cũng như trái trái,
+
+201
+00:12:24,250 --> 00:12:27,460
+trái trên, trái dưới, nhưng dĩ nhiên không có
+
+202
+00:12:27,460 --> 00:12:31,009
+trái phải, vì đó là quay lại. Sang trái
+
+203
+00:12:31,009 --> 00:12:34,759
+và sau đó qua phải nghĩa là bạn giống như bạn trước kia trước khi bạn làm bất cứ điều gì,
+
+204
+00:12:34,759 --> 00:12:37,870
+do đó không có phải trái, trái phải và không có dưới trên và không trên dưới.
+
+205
+00:12:37,870 --> 00:12:42,220
+Hãy chú ý rằng tôi đang viết các hướng quay theo trật tự
+
+206
+00:12:42,220 --> 00:12:45,300
+phải sang trái, do đó hướng quay cuối cùng
+
+207
+00:12:45,299 --> 00:12:48,949
+phải có chữ cái cuối cùng là bên trái.
+Sau này điều đó sẽ rất quan trọng.
+
+208
+00:12:48,950 --> 00:12:53,960
+Mặt khác. Danh sách tất cả các thứ tự có thể của các hướng quay hợp lệ là hữu hạn theo độ dài,
+
+209
+00:12:53,960 --> 00:12:57,040
+well,
+
+210
+00:12:57,039 --> 00:13:00,209
+lả rất lớn. Thực ra là vô hạn đếm được.
+
+211
+00:13:00,210 --> 00:13:03,580
+Nhưng nếu chúng ta ứng dụng một trong số chúng cho điểm bắt đầu màu xanh tại đây,
+
+212
+00:13:03,580 --> 00:13:06,879
+và sau đó đặt tên cho điểm chúng ta chạm tới
+
+213
+00:13:06,879 --> 00:13:09,929
+sau đó sự liên tiếp đưa chúng ta đến đó, ta có thể đặt tên
+
+214
+00:13:09,929 --> 00:13:13,189
+cho một chuỗi các điểm vô hạn đếm được trên bề mặt.
+
+215
+00:13:13,190 --> 00:13:17,050
+Hãy quan sát cách 4 chuỗi này trong danh sách của ta sẽ hoạt động như thế nào.
+
+216
+00:13:17,049 --> 00:13:21,849
+Phải trên trái. OK, xoay điểm bắt đầu theo cách này đưa chúng ta đến đây.
+
+217
+00:13:21,850 --> 00:13:27,259
+Hãy mã hóa màu cho điểm này dựa theo lần quay cuối cùng trong chuỗi của nó,
+
+218
+00:13:27,259 --> 00:13:31,189
+trong trường hợp này, nó là trái và do đó chúng ta sử dụng màu tím nhạt.
+
+219
+00:13:31,190 --> 00:13:34,339
+Tiếp theo là trên dưới dưới
+
+220
+00:13:34,339 --> 00:13:38,730
+Trật tự này đưa chúng ta đến đây.
+Ta đặt điểm này là DD
+
+221
+00:13:38,730 --> 00:13:41,959
+và tô nó màu xanh dương, vì chúng ta kết thúc với một hướng quay xuống dưới.
+
+222
+00:13:41,958 --> 00:13:46,099
+RDR, đó sẽ là tên của điểm này,
+
+223
+00:13:46,100 --> 00:13:49,879
+đưa chúng ta đến đây.
+Và với lần quay phải cuối cùng,
+
+224
+00:13:49,879 --> 00:13:52,990
+hãy sử dụng màu đỏ.
+Cuối cùng, với thứ tự kết thúc bằng bên trên,
+
+225
+00:13:52,990 --> 00:13:56,070
+hãy mã hóa màu điểm này màu cam.
+
+226
+00:13:56,070 --> 00:13:59,290
+Bây giờ, nếu ta hình dung hoàn thiện quá trình này với mỗi một thứ tự riêng lẻ,
+
+227
+00:13:59,289 --> 00:14:03,740
+ta sẽ có một số điểm vô hạn đếm được
+
+228
+00:14:03,740 --> 00:14:04,330
+được đặt tên
+
+229
+00:14:04,330 --> 00:14:07,509
+và được mã hóa màu.
+Thật tuyệt vời, nhưng
+
+230
+00:14:07,509 --> 00:14:11,269
+chưa đủ.
+Có một số lượng điểm vô hạn không đếm được
+
+231
+00:14:11,269 --> 00:14:15,110
+trên bề mặt của khối cầu.
+
+232
+00:14:15,110 --> 00:14:18,139
+Nhưng đừng lo lắng, chúng ta có thể chỉ cần chọn 1 điểm mà ta thiếu.
+
+233
+00:14:18,139 --> 00:14:21,559
+Bất cứ điểm nào và tô nó màu xanh, biến nó thành
+
+234
+00:14:21,559 --> 00:14:25,349
+điểm bắt đầu mới và sau đó chạy tất cả các thứ tự từ đây.
+
+235
+00:14:25,350 --> 00:14:28,659
+Sau khi tiến hành điều này 
+
+236
+00:14:28,659 --> 00:14:32,449
+với một số điểm bắt đầu vô hạn không đếm được mà thực ra ta đã đặt tên
+
+237
+00:14:32,450 --> 00:14:35,990
+và tô màu mỗi một điểm trên bề mặt
+
+238
+00:14:35,990 --> 00:14:39,709
+chỉ một lần.
+Ngoại trừ các cực.
+
+239
+00:14:39,708 --> 00:14:44,389
+Mỗi thứ tự có 2 cực của hướng quay.
+
+240
+00:14:44,389 --> 00:14:48,740
+Các ví trí trên hình cầu mà quay trở lại chính xác nơi chúng bắt đầu.
+
+241
+00:14:48,740 --> 00:14:52,129
+Với bất cứ thứ tự nào của hướng quay phải hay trái
+
+242
+00:14:52,129 --> 00:14:55,299
+các cực là bắc và nam.
+
+243
+00:14:55,299 --> 00:14:59,579
+Vấn đề với các cực này là có nhiều hơn một trật tự có thể dẫn ta
+
+244
+00:14:59,580 --> 00:15:00,280
+đến với chúng.
+
+245
+00:15:00,279 --> 00:15:03,850
+Chúng có thể được đặt têm nhiều hơn một lần và được tô
+
+246
+00:15:03,850 --> 00:15:08,290
+nhiều hơn một màu. Chẳng hạn, nếu bạn đi theo một số thứ tự khác
+
+247
+00:15:08,289 --> 00:15:09,679
+đến cực bắc hoặc nam,
+
+248
+00:15:09,679 --> 00:15:12,989
+bất cứ các hướng phải hay trái liên tiếp nào
+
+249
+00:15:12,990 --> 00:15:17,490
+sẽ là những cái tên có giá trị ngang nhau. Để giải quyết điều này,
+ta sẽ chỉ đếm chúng
+
+250
+00:15:17,490 --> 00:15:17,750
+khác với
+
+251
+00:15:17,750 --> 00:15:21,470
+nguyên tắc bình thường và tô tất cả chúng bằng màu vàng.
+Một thứ tự có hai cực,
+
+252
+00:15:21,470 --> 00:15:24,580
+vì vậy chúng là một lượng vô hạn đếm được.
+
+253
+00:15:24,580 --> 00:15:28,540
+Bây giờ, với mỗi điểm trên hình cầu được đặt một tên
+
+254
+00:15:28,539 --> 00:15:33,860
+và chỉ có một trong sáu màu,
+ta sẵn sàng để tách toàn bộ khối cầu ra.
+
+255
+00:15:33,860 --> 00:15:38,860
+Mỗi điểm trên bề mặt tương ứng với một đường các điểm duy nhất
+
+256
+00:15:38,860 --> 00:15:39,629
+bên dưới nó
+
+257
+00:15:39,629 --> 00:15:43,269
+tất cả các đường đến điểm trung tâm.
+Và chúng ta sẽ kéo đường của tất cả các điểm dọc theo nó.
+
+258
+00:15:43,269 --> 00:15:47,329
+Điểm trung tâm duy nhất này
+
+259
+00:15:47,330 --> 00:15:52,200
+chúng ta sẽ để sang một bên. OK, đầu tiên chúng ta cắt ra và lấy toàn bộ các cực màu vàng,
+
+260
+00:15:52,200 --> 00:15:55,370
+những điểm bắt đầu màu xanh lá cây,
+
+261
+00:15:55,370 --> 00:15:59,389
+những điểm bên trên màu cam, các điểm bên dưới màu xanh dương,
+
+262
+00:15:59,389 --> 00:16:02,730
+và các điểm trái và phải màu đỏ và tím.
+
+263
+00:16:03,539 --> 00:16:06,099
+Đó là toàn bộ khối cầu.
+
+264
+00:16:06,100 --> 00:16:10,590
+Chỉ với những mảnh này, bạn có thể xây dựng lên một thứ nguyên vẹn. Nhưng hãy nhìn vào mảnh bên trái.
+
+265
+00:16:10,590 --> 00:16:13,769
+Nó được xác định bởi một mảnh được hợp thành từ các điểm,
+
+266
+00:16:13,769 --> 00:16:17,220
+được tiếp cận thông qua một thứ tự kết thúc bằng chiều quay bên trái.
+
+267
+00:16:17,220 --> 00:16:21,340
+Nếu ta xoay mảnh này sang phải,
+
+268
+00:16:21,340 --> 00:16:24,730
+nó tương tự như thêm một chữ 'R'
+
+269
+00:16:24,730 --> 00:16:28,250
+vào tên tất cả các điểm.
+Nhưng trái sau đó phải
+
+270
+00:16:28,250 --> 00:16:32,200
+là một bước lùi, chúng loại bỏ nhau. Và hãy nhìn xem điều gì xảy ra
+
+271
+00:16:32,200 --> 00:16:32,980
+khi bạn giảm chúng đi.
+
+272
+00:16:32,980 --> 00:16:36,980
+Chuỗi đó trở nên giống như
+
+273
+00:16:36,980 --> 00:16:40,550
+chuỗi tất cả các điểm có tên kết thúc với chữ 'L',
+
+274
+00:16:40,549 --> 00:16:44,539
+hơn nữa U, D, và mỗi điểm được chạm đến mà không cần quay.
+
+275
+00:16:44,539 --> 00:16:47,870
+Đó là toàn bộ một dãy các điểm bắt đầu.
+
+276
+00:16:47,870 --> 00:16:53,039
+Ta biến nhỏ hơn 1/4 khối cầu thành xấp xỉ 3/4
+
+277
+00:16:53,039 --> 00:17:00,219
+bằng cách xoay nó. Ta không thêm gì cả. Nó giống như Hyperwebster. Nếu chúng ta
+
+278
+00:17:00,220 --> 00:17:00,920
+có phần bên phải
+
+279
+00:17:00,919 --> 00:17:05,649
+và các cực của hướng quay và điểm trung tâm, ta sẽ lại có toàn bộ khối cầu,
+
+280
+00:17:05,650 --> 00:17:09,759
+nhưng với phần bên trái bị bỏ lại.
+Để tạo ra một phiên bản thứ 2,
+
+281
+00:17:09,759 --> 00:17:13,259
+hãy xoay phần bên trên xuống dưới.
+
+282
+00:17:13,259 --> 00:17:16,959
+Các hướng trên dưới bị loại bỏ, vì
+nó giống như không đi đến đâu cả
+
+283
+00:17:16,959 --> 00:17:20,250
+và chúng ta được bỏ lại với một dãy tất cả các điểm bắt đầu, toàn bộ phần bên trên
+
+284
+00:17:20,250 --> 00:17:24,549
+phần phải và phần trái, nhưng ở đây có một vấn đề.
+
+285
+00:17:24,549 --> 00:17:28,730
+Ta không cần chuỗi phụ các điểm bắt đầu. Ta vẫn không sử dụng
+
+286
+00:17:28,730 --> 00:17:32,700
+những điểm ban đầu. Đừng lo lắng, hãy bắt đầu lại từ đầu.
+
+287
+00:17:32,700 --> 00:17:35,700
+Ta có thể di chuyển mọi thứ từ mảnh trên trên
+
+288
+00:17:35,700 --> 00:17:38,809
+cái mà biến thành một điểm bắt đầu khi được quay xuống dưới.
+
+289
+00:17:38,809 --> 00:17:42,629
+Điều đó có nghĩa là mỗi điểm có hướng quay cuối cùng là lên trên. Hãy đặt chúng thành một mảnh.
+
+290
+00:17:42,630 --> 00:17:47,400
+Dĩ nhiên, sau khi quay các điểm được đặt tên UU
+
+291
+00:17:47,400 --> 00:17:51,920
+sẽ chỉ chuyển thành các điểm được đặt tên U,
+và điều đó sẽ cho chúng ta một bản sao ở đây
+
+292
+00:17:51,920 --> 00:17:55,130
+và ở đây nữa.
+Do đó, hóa ra, chúng ta cần di chuyển tất cả các điểm
+
+293
+00:17:55,130 --> 00:17:58,770
+với bất kì cái tên nào chỉ là một chuỗi những chữ U.
+
+294
+00:17:58,769 --> 00:18:01,960
+Chúng ta sẽ đặt chúng vào mảnh bên dưới và xoay mảnh bên trên xuống,
+
+295
+00:18:01,960 --> 00:18:05,170
+khiến nó trở thành đồng đẳng với các mảnh phải trên
+
+296
+00:18:05,170 --> 00:18:09,039
+và trái, thêm vào mảnh bên dưới cùng với một số bên trên
+
+297
+00:18:09,039 --> 00:18:12,928
+và mảnh điểm bắt đầu và,
+chúng ta gần như đã hoàn thành.
+
+298
+00:18:12,929 --> 00:18:15,860
+Các cực của hướng quay và trung tâm bị khuyết
+
+299
+00:18:15,859 --> 00:18:18,788
+ở bản sao này, nhưng đừng lo lắng.
+Có một số vô hạn đếm được các lỗ hổng,
+
+300
+00:18:18,788 --> 00:18:22,658
+nơi mà từng là các cực của hướng quay,
+
+301
+00:18:22,659 --> 00:18:28,130
+có nghĩa là có một số cực quanh thứ mà ta có thể xoay khối cầu như vậy
+
+302
+00:18:28,130 --> 00:18:32,070
+để tất cả các quỹ đạo lỗ hổng cực xoay quanh mà không đập vào nhau.
+
+303
+00:18:32,069 --> 00:18:35,648
+Well, đây chỉ là một cụm các hình tròn với một điểm bị khuyết.
+
+304
+00:18:35,648 --> 00:18:40,519
+Ta lấp đầy chúng như ta từng làm trước đó.
+Và ta làm tương tự cho điểm trung tâm.
+
+305
+00:18:40,519 --> 00:18:44,038
+Hãy hình dung một hình tròn chứa nó bên trong khối cầu
+
+306
+00:18:44,038 --> 00:18:47,269
+và lấp đầy từ tập vô hạn và quan sát chúng ta đã làm gì.
+
+307
+00:18:47,269 --> 00:18:53,329
+Ta lấy một khối cầu và biến nó thành hai khối cầu giống hệt nhau
+
+308
+00:18:53,329 --> 00:18:56,678
+mà không cần thêm vào thứ gì.
+
+309
+00:18:56,679 --> 00:19:01,159
+1 nhân 1 bằng 1.
+Cần một lúc để hoàn thành,
+
+310
+00:19:01,159 --> 00:19:04,929
+nhưng những hệ lụy rất lớn.
+
+311
+00:19:04,929 --> 00:19:09,600
+Và các nhà toán học, các nhà khoa học và triết học vẫn đang tranh cãi về chúng.
+
+312
+00:19:09,599 --> 00:19:13,569
+Liệu một quá trình như vậy có thể diễn ra trong thế giới thực?
+
+313
+00:19:13,569 --> 00:19:18,788
+Ý tôi là, nó có thể xảy ra về mặt toán học và toán học cho phép ta phỏng đoán 
+
+314
+00:19:18,788 --> 00:19:21,319
+và mô tả trừu tượng rất nhiều thứ trong thế giới thực
+
+315
+00:19:21,319 --> 00:19:26,038
+với sự chính xác kinh ngạc, nhưng nghịch lý Banach-Tarski
+
+316
+00:19:26,038 --> 00:19:29,929
+có đưa nó đi quá xa không?
+Liệu nó có phải là nơi toán học và vật lý tách ra?
+
+317
+00:19:29,929 --> 00:19:33,330
+Ta vẫn chưa biết được.
+
+318
+00:19:33,329 --> 00:19:37,999
+Lịch sử chứa đầy những ví dụ về những khái niệm toán học được phát triển
+
+319
+00:19:37,999 --> 00:19:38,749
+trừu tượng
+
+320
+00:19:38,749 --> 00:19:42,589
+mà ta chưa từng nghĩ sẽ áp dụng trong thế giới thực
+
+321
+00:19:42,589 --> 00:19:47,089
+hàng năm, hàng thập kỉ, hàng thế kỉ liền, cho đến khi cuối cùng khoa học theo kịp và
+
+322
+00:19:47,089 --> 00:19:50,209
+nhận ra rằng chúng toàn toàn có thể ứng dụng và hữu ích.
+
+323
+00:19:50,210 --> 00:19:56,769
+Nghịch lí Banach-Tarsk thực tế có thể xảy ra trong thế giới thực của ta,
+
+324
+00:19:56,769 --> 00:20:01,200
+Dĩ nhiên, điểm mấu chốt duy nhất là 5 mảnh mà bạn chia vật thể của bạn ra
+
+325
+00:20:01,200 --> 00:20:05,440
+không là những hình dạng đơn giản.
+Chúng phải vô cùng phức tạp
+
+326
+00:20:05,440 --> 00:20:10,899
+và chi tiết. Điều đó là không thể thực hiện trong thế giới thực, nơi mà các phép đo
+
+327
+00:20:10,898 --> 00:20:12,339
+chỉ có thể có được quá nhỏ
+
+328
+00:20:12,339 --> 00:20:16,980
+và chỉ có lượng thời hữu hạn để làm bất cứ thứ gì, nhưng toán học cho rằng
+
+329
+00:20:16,980 --> 00:20:19,509
+về mặt lí thuyết nó hợp lí và một số nhà khoa học
+
+330
+00:20:19,509 --> 00:20:22,720
+nghĩ nó có thể hợp lí về mặt vật chất nữa.
+
+331
+00:20:23,420 --> 00:20:26,400
+Có một số bài bài được xuất bản cho rằng
+
+332
+00:20:26,409 --> 00:20:29,619
+mối liên kết giữa bởi Banach - Tarski
+
+333
+00:20:29,618 --> 00:20:32,949
+và cách hạt phần dưới nguyên tử cực cực nhỏ
+
+334
+00:20:32,950 --> 00:20:38,009
+có thể va chạm tại những mức năng lượng cao và tạo thành nhiều hạt hơn
+
+335
+00:20:38,009 --> 00:20:39,509
+khi chúng ta bắt đầu.
+
+336
+00:20:42,319 --> 00:20:46,619
+Chúng ta là những sinh vật hữu hạn.
+
+337
+00:20:46,619 --> 00:20:51,359
+Cuộc đời ta nhỏ bé và về mặt khoa học chỉ có thể xem là một phần nhỏ của thực tế.
+
+338
+00:20:51,359 --> 00:20:54,908
+Cái phổ biến với chúng ta chỉ là
+
+339
+00:20:54,909 --> 00:20:59,028
+một mảnh của cái có sẵn. Ta chỉ có thể thấy quá nhiều
+
+340
+00:20:59,028 --> 00:20:59,990
+phổ điện từ.
+
+341
+00:20:59,990 --> 00:21:03,429
+Chúng ta chỉ có thể đào sâu nghiên cứu về phần mở rộng của không gian.
+
+342
+00:21:03,429 --> 00:21:07,370
+Lẽ thường áp dụng cho cái chúng ta có thể tiếp cận.
+
+343
+00:21:07,369 --> 00:21:10,788
+Nhưng lẽ thường chỉ có vậy.
+
+344
+00:21:11,559 --> 00:21:14,019
+Thông thường.
+Nếu toàn bộ ý thức là cái chúng ta muốn,
+
+345
+00:21:14,028 --> 00:21:18,700
+thì ta nên sẵn sàng chấp nhận rằng ta không nên cho rằng vô hạn
+
+346
+00:21:18,700 --> 00:21:20,330
+kì quặc hay lạ lẫm.
+
+347
+00:21:20,329 --> 00:21:24,668
+Những hệ quả ta đạt được bởi việc chấp nhận nó là có căn cứ,
+
+348
+00:21:24,669 --> 00:21:28,919
+đúng trong phạm vi ta sử dụng để tìm hiểu, đo đạc, dự đoán và
+
+349
+00:21:28,919 --> 00:21:29,740
+sắp xếp vũ trụ.
+
+350
+00:21:29,740 --> 00:21:34,288
+Có thể những hệ thống này vẫn cần được hoàn thiện, nhưng vào lúc ngày tàn,
+
+351
+00:21:34,288 --> 00:21:38,980
+lịch sử tiếp tục cho ta thấy rằng vũ trụ không kì lạ.
+
+352
+00:21:40,480 --> 00:21:41,799
+Mà là chúng la.
+
+353
+00:21:42,950 --> 00:21:44,610
+Và như mọi khi,
+
+354
+00:21:44,609 --> 00:21:46,569
+cảm ơn vì đã theo dõi.
+
+355
+00:22:06,778 --> 00:22:10,690
+Cuối cùng, như mọi khi, bản mô tả đầy đủ các link để tìm hiểu sâu hơn.
+
+356
+00:22:10,690 --> 00:22:14,090
+Ngoài ra cũng có một số sách được liên kết ở dưới đó cái mà thực sự giúp tôi
+
+357
+00:22:14,089 --> 00:22:17,388
+tìm hiểu Banach-Tarski.
+
+358
+00:22:17,388 --> 00:22:22,329
+Đầu tiên, cuốn "The Pea and the Sun"  của Leonard Wapner. Cuốn sách này thật tuyệt vời và
+
+359
+00:22:22,329 --> 00:22:23,928
+và đầy đủ những điều sơ bộ cần thiết
+
+360
+00:22:23,929 --> 00:22:27,659
+để hiểu được bằng chứng sau này.
+Ông cũng nói nhiều
+
+361
+00:22:27,659 --> 00:22:28,940
+về sự phân nhánh
+
+362
+00:22:28,940 --> 00:22:33,019
+của điều Banach-Tarski và định lý của họ có thể có ý nghĩa đối với toán học.
+
+363
+00:22:33,019 --> 00:22:36,868
+Ngoài ra, nếu bạn muốn bàn về toán học và liệu nó có được phát hiện hoặc tạo ra,
+
+364
+00:22:36,868 --> 00:22:37,720
+liệu
+
+365
+00:22:37,720 --> 00:22:41,659
+nó thực sự sẽ lập lên bản đồ vũ trụ,
+
+366
+00:22:41,659 --> 00:22:45,090
+"The Outer Limits of Reason" của Yanofsky là một cuốn sách hay
+
+367
+00:22:45,089 --> 00:22:49,019
+Đây là cuốn sách yêu thích mà ta đã đọc trong năm nay. Một cuốn sách hay khác là
+
+368
+00:22:49,019 --> 00:22:50,138
+"Why Beliefs Matter" của E. Brian Davies.
+
+369
+00:22:50,138 --> 00:22:53,488
+Đây thực ra là cuốn sách ưa thích của Corn,
+
+370
+00:22:53,489 --> 00:22:57,389
+như bạn có thể thấy ở đó.
+Nó ngọt ngào và 
+
+371
+00:22:57,388 --> 00:22:59,758
+rất nhiều thông tin hay về những giới hạn của thứ ta có thể biết
+
+372
+00:22:59,759 --> 00:23:03,919
+và khoa học là gì và toán học là gì.
+
+373
+00:23:03,919 --> 00:23:08,399
+Nếu bạn yêu vô hạn và toán, tôi không thể đánh giá cao cuốn "Things to Make and Do in the Fourth Dimension" của Matt Parker hơn nữa.
+
+374
+00:23:08,398 --> 00:23:11,719
+Ông ấy hài hước và cuốn sách này
+
+375
+00:23:11,720 --> 00:23:11,960
+thực sự
+
+376
+00:23:11,960 --> 00:23:15,308
+rất rất hay trong việc giải thích một số điều khá tuyệt vời.
+
+377
+00:23:15,308 --> 00:23:19,230
+Vì vậy hãy tiếp tục đọc,
+và nếu bạn đang tìm kiếm thứ gì để xem,
+
+378
+00:23:19,230 --> 00:23:22,730
+tôi hy vọng rằng bạn đã xem bộ phim của Kevin Lieber về Field Day rồi.
+
+379
+00:23:22,730 --> 00:23:26,108
+Tôi đã làm một bộ phim tài liệu về Whittier, Alaska ở đó.
+
+380
+00:23:26,108 --> 00:23:29,618
+Kevin đã có một bộ phim ngắn tuyệt vời về việc dập tắt mọi thứ trên Internet
+
+381
+00:23:29,618 --> 00:23:32,808
+và khiến mọi người phản ứng lại chúng. Có tin đồn rằng Jake Roper có thể đang làm gì đó
+
+382
+00:23:32,808 --> 00:23:34,178
+trên Field Day sớm thôi.
+
+383
+00:23:34,179 --> 00:23:37,269
+Vì vậy hãy thử cái của tôi, thử cái của Kevin và
+
+384
+00:23:37,269 --> 00:23:41,138
+đăng kí kênh Field Day cho hành động sắp tới của Jake Roper, yeah?
+
+385
+00:23:41,138 --> 00:23:45,508
+Thực ra lúc này anh ấy đang ở trong phòng này,
+nói xin chào đi, Jake. [Jake:] Xin chào. Nhân tiện,
+
+386
+00:23:45,509 --> 00:23:46,028
+ cảm ơn đã quay phim tập này.
+
+387
+00:23:46,028 --> 00:23:49,950
+Guys, tôi thực sự đánh giá cao tất cả các bạn.
+
+388
+00:23:49,950 --> 00:23:51,630
+Và như mọi khi,
+
+389
+00:23:51,630 --> 00:23:52,750
+cảm ơn đã theo dõi.
+

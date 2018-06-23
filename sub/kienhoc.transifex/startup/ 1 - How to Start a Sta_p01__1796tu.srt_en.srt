@@ -1,0 +1,1218 @@
+1
+00:00:00,740 --> 00:00:01,240
+https://www.youtube.com/watch?v=CBYhVcO4WgI
+Welcome.
+
+2
+00:00:02,298 --> 00:00:04,217
+Can I turn this on?
+
+3
+00:00:04,217 --> 00:00:07,381
+Maybe, all right.
+
+4
+00:00:07,381 --> 00:00:09,090
+>> Can people hear in the
+back?
+
+5
+00:00:09,090 --> 00:00:10,660
+>> Can you guys hear me?
+
+6
+00:00:10,660 --> 00:00:11,678
+Is the mic on?
+
+7
+00:00:11,678 --> 00:00:18,038
+No, ah, maybe you can ask
+them to turn it on.
+
+8
+00:00:18,038 --> 00:00:19,490
+Maybe we can get a bigger,
+ah, there we go.
+
+9
+00:00:19,490 --> 00:00:20,657
+All right.
+
+10
+00:00:20,657 --> 00:00:23,618
+Maybe we can get a bigger
+auditorium, we'll see.
+
+11
+00:00:23,618 --> 00:00:25,270
+So welcome to CS183B.
+
+12
+00:00:25,270 --> 00:00:25,950
+I'm Sam Altman.
+
+13
+00:00:25,950 --> 00:00:27,930
+I'm the President of Y
+Combinator.
+
+14
+00:00:27,930 --> 00:00:29,780
+Nine years ago, I was a
+Stanford student and
+
+15
+00:00:29,780 --> 00:00:31,630
+then I dropped out to start
+a company.
+
+16
+00:00:31,630 --> 00:00:32,990
+And then I've been an
+investor for the last few.
+
+17
+00:00:34,010 --> 00:00:36,140
+So, at YC, we've been
+teaching people how to
+
+18
+00:00:36,140 --> 00:00:38,440
+start startups for nine
+years.
+
+19
+00:00:38,440 --> 00:00:39,930
+Most of it's very hands on
+and
+
+20
+00:00:39,930 --> 00:00:40,875
+specific to the startups.
+
+21
+00:00:42,240 --> 00:00:45,180
+But, 30% of it is pretty
+generally applicable.
+
+22
+00:00:45,180 --> 00:00:47,340
+And so, we think that we
+
+23
+00:00:47,340 --> 00:00:49,210
+can teach that 30% in this
+class.
+
+24
+00:00:49,210 --> 00:00:50,890
+And even though that's only
+30% of the way
+
+25
+00:00:50,890 --> 00:00:52,600
+there hopefully it'll still
+be really helpful.
+
+26
+00:00:53,800 --> 00:00:55,750
+We've taught a lot of this
+at YC already, but
+
+27
+00:00:55,750 --> 00:00:56,520
+it's all been off the
+record.
+
+28
+00:00:56,520 --> 00:00:58,440
+And this is the first time
+that a lot of what we
+
+29
+00:00:58,440 --> 00:01:00,370
+teach in YC is gonna be on
+the record.
+
+30
+00:01:00,370 --> 00:01:02,360
+So we've invited some of our
+best speakers to come and
+
+31
+00:01:02,360 --> 00:01:03,809
+give the same talks they
+give at YC.
+
+32
+00:01:04,870 --> 00:01:05,960
+We've now funded 720
+companies.
+
+33
+00:01:05,960 --> 00:01:07,620
+And so, we're pretty sure
+
+34
+00:01:07,620 --> 00:01:09,460
+that a lot of this advice is
+pretty good.
+
+35
+00:01:10,960 --> 00:01:13,000
+We can't fund every startup
+yet, but we can
+
+36
+00:01:13,000 --> 00:01:16,710
+hopefully make this advice
+very generally available.
+
+37
+00:01:16,710 --> 00:01:19,300
+Guest speakers are gonna
+teach 17 of the 20 classes.
+
+38
+00:01:19,300 --> 00:01:20,010
+I'm only teaching three.
+
+39
+00:01:21,200 --> 00:01:22,600
+Counting YC itself,
+
+40
+00:01:22,600 --> 00:01:25,820
+every guest speaker has been
+involved in the creation of
+
+41
+00:01:25,820 --> 00:01:26,840
+a billion plus dollar
+company.
+
+42
+00:01:27,860 --> 00:01:30,110
+So the advice shouldn't be
+that theoretical.
+
+43
+00:01:30,110 --> 00:01:33,680
+It's all been, it's all from
+people who have done it.
+
+44
+00:01:33,680 --> 00:01:34,270
+All of the advice in
+
+45
+00:01:34,270 --> 00:01:37,340
+this class is geared towards
+people starting a business
+
+46
+00:01:37,340 --> 00:01:39,360
+where the goal was
+hyper-growth.
+
+47
+00:01:39,360 --> 00:01:41,700
+And eventually building a
+very large company.
+
+48
+00:01:41,700 --> 00:01:43,360
+Much of it doesn't apply in
+other cases and
+
+49
+00:01:43,360 --> 00:01:44,950
+I wanna warn people up
+front.
+
+50
+00:01:44,950 --> 00:01:45,610
+That if you try and
+
+51
+00:01:45,610 --> 00:01:47,730
+do these things in a lot of
+big companies or
+
+52
+00:01:47,730 --> 00:01:49,640
+non startups, it won't work.
+
+53
+00:01:49,640 --> 00:01:51,130
+It should still be
+interesting.
+
+54
+00:01:51,130 --> 00:01:52,720
+I, I really do think that
+startups are the way of
+
+55
+00:01:52,720 --> 00:01:55,060
+the future and it's worth
+trying to understand them.
+
+56
+00:01:55,060 --> 00:01:56,470
+But startups are very
+different
+
+57
+00:01:56,470 --> 00:01:57,300
+than normal companies.
+
+58
+00:01:58,970 --> 00:02:00,040
+So over the course of today
+and
+
+59
+00:02:00,040 --> 00:02:02,660
+Thursday, I'm gonna try to
+give an overview of the four
+
+60
+00:02:02,660 --> 00:02:04,580
+areas that you need to excel
+at in order to
+
+61
+00:02:04,580 --> 00:02:06,930
+maximize your chances of
+success at a startup.
+
+62
+00:02:06,930 --> 00:02:08,490
+And then throughout the
+course, the guest speakers
+
+63
+00:02:08,490 --> 00:02:10,750
+are gonna drill into all of
+these in more detail.
+
+64
+00:02:12,020 --> 00:02:14,480
+So the four areas, you need
+a great idea,
+
+65
+00:02:14,480 --> 00:02:16,660
+a great product, a great
+team and great execution.
+
+66
+00:02:18,020 --> 00:02:20,650
+These overlap somewhat, but
+I'm gonna have to talk about
+
+67
+00:02:20,650 --> 00:02:23,130
+them somewhat individually
+to make it make sense.
+
+68
+00:02:23,130 --> 00:02:25,600
+You may still fail.
+
+69
+00:02:25,600 --> 00:02:28,230
+The outcome is something
+like idea times product
+
+70
+00:02:28,230 --> 00:02:31,300
+times execution times team
+times luck,
+
+71
+00:02:31,300 --> 00:02:34,010
+where luck is the random
+number between 0 and 10,000.
+
+72
+00:02:34,010 --> 00:02:35,300
+Literally that much.
+
+73
+00:02:35,300 --> 00:02:37,500
+But if you do really well in
+the four areas you can
+
+74
+00:02:37,500 --> 00:02:39,205
+control, you have a good
+chance of at
+
+75
+00:02:39,205 --> 00:02:40,637
+least some amount of
+success.
+
+76
+00:02:41,800 --> 00:02:43,771
+One of the exciting things
+about startups, is
+
+77
+00:02:43,771 --> 00:02:46,590
+that they are surprisingly
+even playing field.
+
+78
+00:02:46,590 --> 00:02:48,290
+Young and inexperienced, you
+can do this.
+
+79
+00:02:48,290 --> 00:02:50,500
+Old and very experienced,
+you can do this too.
+
+80
+00:02:50,500 --> 00:02:52,885
+And one of the things that I
+particularly like about
+
+81
+00:02:52,885 --> 00:02:55,700
+startups is that some of the
+things that are bad in
+
+82
+00:02:55,700 --> 00:02:58,720
+other work situations, like
+being poor and unknown are
+
+83
+00:02:58,720 --> 00:03:00,875
+actually huge assets when it
+comes to starting a startup.
+
+84
+00:03:02,620 --> 00:03:04,340
+Before we jump in on the
+how.
+
+85
+00:03:04,340 --> 00:03:06,850
+I want to talk about why you
+should start a startup.
+
+86
+00:03:06,850 --> 00:03:09,460
+I'm somewhat hesitant to be
+doing this class at all,
+
+87
+00:03:09,460 --> 00:03:11,110
+because you should never
+start a startup just for
+
+88
+00:03:11,110 --> 00:03:12,520
+the sake of doing so.
+
+89
+00:03:12,520 --> 00:03:14,530
+There are much easier ways
+to get rich and
+
+90
+00:03:14,530 --> 00:03:16,220
+everyone who starts a
+startup always says,
+
+91
+00:03:16,220 --> 00:03:18,610
+always, that they couldn't
+have imagined how hard and
+
+92
+00:03:18,610 --> 00:03:19,360
+painful it was going to be.
+
+93
+00:03:19,360 --> 00:03:22,330
+You should only start a
+startup if you com,
+
+94
+00:03:22,330 --> 00:03:23,860
+feel compelled by a
+particular problem.
+
+95
+00:03:23,860 --> 00:03:25,410
+And that you think starting
+a company is
+
+96
+00:03:25,410 --> 00:03:27,120
+the best way to solve it.
+
+97
+00:03:27,120 --> 00:03:29,090
+The specific passion should
+come first and
+
+98
+00:03:29,090 --> 00:03:30,510
+the startup second.
+
+99
+00:03:30,510 --> 00:03:31,240
+In fact, all of
+
+100
+00:03:31,240 --> 00:03:33,340
+the big successes we have at
+YC followed this.
+
+101
+00:03:34,520 --> 00:03:36,510
+So, for the second half of
+today's lecture,
+
+102
+00:03:36,510 --> 00:03:38,705
+Dustin Moskovitz the
+co-founder of Facebook and
+
+103
+00:03:38,705 --> 00:03:40,330
+Asana, is going to take over
+and
+
+104
+00:03:40,330 --> 00:03:42,420
+talk about why to start a
+startup.
+
+105
+00:03:42,420 --> 00:03:43,564
+We're so surprised by the
+amount of
+
+106
+00:03:43,564 --> 00:03:45,228
+attention that this class
+got.
+
+107
+00:03:45,228 --> 00:03:45,930
+That we wanna make sure we
+
+108
+00:03:45,930 --> 00:03:46,890
+spend a lot of time on the
+why.
+
+109
+00:03:48,570 --> 00:03:49,150
+Okay.
+So
+
+110
+00:03:49,150 --> 00:03:50,190
+the first of the four areas.
+
+111
+00:03:50,190 --> 00:03:50,770
+A great idea.
+
+112
+00:03:52,060 --> 00:03:52,980
+It's become popular in
+
+113
+00:03:52,980 --> 00:03:55,640
+recent years to say that the
+idea doesn't matter.
+
+114
+00:03:55,640 --> 00:03:58,310
+In fact, it's almost uncool
+to spend a lot of time
+
+115
+00:03:58,310 --> 00:04:00,010
+thinking about the idea for
+a startup.
+
+116
+00:04:00,010 --> 00:04:01,540
+You're just supposed to
+start.
+
+117
+00:04:01,540 --> 00:04:02,280
+Throw stuff at the walls.
+
+118
+00:04:02,280 --> 00:04:03,770
+See what sticks.
+
+119
+00:04:03,770 --> 00:04:05,400
+And not even spend any time
+thinking about if
+
+120
+00:04:05,400 --> 00:04:06,600
+it'll be valuable if it
+works.
+
+121
+00:04:07,760 --> 00:04:08,810
+And pivots are supposed to
+be great.
+
+122
+00:04:08,810 --> 00:04:09,580
+The more pivots, the better.
+
+123
+00:04:11,420 --> 00:04:13,380
+So this isn't totally wrong.
+
+124
+00:04:13,380 --> 00:04:14,240
+Things do evolve in
+
+125
+00:04:14,240 --> 00:04:15,930
+ways that are difficult to
+predict.
+
+126
+00:04:15,930 --> 00:04:17,850
+And there's a limit to how
+much you can figure out,
+
+127
+00:04:17,850 --> 00:04:18,980
+without actually getting a
+product in
+
+128
+00:04:18,980 --> 00:04:19,760
+the hands of users.
+
+129
+00:04:21,290 --> 00:04:22,400
+And great execution is at
+
+130
+00:04:22,400 --> 00:04:24,170
+least ten times more
+important and
+
+131
+00:04:24,170 --> 00:04:25,490
+a hundred times harder than
+a good idea.
+
+132
+00:04:26,630 --> 00:04:28,270
+But the pendulum has swung
+way out of whack here.
+
+133
+00:04:28,270 --> 00:04:30,990
+A bad idea is still bad.
+
+134
+00:04:30,990 --> 00:04:32,510
+In the pivot happy world
+that we're in today,
+
+135
+00:04:32,510 --> 00:04:34,660
+it feels really sub optimal.
+
+136
+00:04:34,660 --> 00:04:36,660
+Great execution towards a
+terrible idea
+
+137
+00:04:36,660 --> 00:04:38,340
+will get you nowhere.
+
+138
+00:04:38,340 --> 00:04:40,360
+There are exceptions, of
+course.
+
+139
+00:04:40,360 --> 00:04:41,640
+But most great companies
+start with
+
+140
+00:04:41,640 --> 00:04:44,470
+a great idea, not a pivot.
+
+141
+00:04:44,470 --> 00:04:47,130
+If you look at successful
+pivots, they almost always
+
+142
+00:04:47,130 --> 00:04:48,690
+are a pivot into something
+the founders
+
+143
+00:04:48,690 --> 00:04:50,810
+themselves wanted, not a
+random made up idea.
+
+144
+00:04:51,980 --> 00:04:54,060
+Airbnb happened because
+Brian Chesky couldn't pay
+
+145
+00:04:54,060 --> 00:04:56,990
+his rent, but he did have
+some extra space.
+
+146
+00:04:56,990 --> 00:04:57,800
+In general, though,
+
+147
+00:04:57,800 --> 00:04:59,860
+if you look at the track
+record of pivots,
+
+148
+00:04:59,860 --> 00:05:00,910
+they don't become big
+companies.
+
+149
+00:05:02,180 --> 00:05:03,970
+I myself used to believe
+ideas didn't matter that
+
+150
+00:05:03,970 --> 00:05:06,490
+much, but I'm very sure
+that's wrong now.
+
+151
+00:05:08,170 --> 00:05:09,180
+The definition of the idea,
+
+152
+00:05:09,180 --> 00:05:11,610
+as we talk about it, is very
+broad.
+
+153
+00:05:11,610 --> 00:05:13,930
+It includes the size and the
+growth of the market,
+
+154
+00:05:13,930 --> 00:05:15,520
+the growth strategy for the
+company,
+
+155
+00:05:15,520 --> 00:05:17,838
+the defensibility strategy
+and so on.
+
+156
+00:05:17,838 --> 00:05:18,810
+When you're evaluating an
+idea,
+
+157
+00:05:18,810 --> 00:05:20,710
+you need to think through
+all these things,
+
+158
+00:05:20,710 --> 00:05:21,450
+not just the product.
+
+159
+00:05:23,390 --> 00:05:25,500
+If it works out, you're
+gonna be working on this for
+
+160
+00:05:25,500 --> 00:05:26,630
+ten years.
+
+161
+00:05:26,630 --> 00:05:28,620
+So it's worth some real
+upfront time
+
+162
+00:05:28,620 --> 00:05:29,910
+to think we've a long term
+value in
+
+163
+00:05:29,910 --> 00:05:31,170
+the defensibility of the
+business.
+
+164
+00:05:32,340 --> 00:05:34,770
+Even though plans themselves
+are worthless,
+
+165
+00:05:34,770 --> 00:05:37,410
+to exercise a planning is
+really valuable and
+
+166
+00:05:37,410 --> 00:05:38,810
+totally missing in most
+startups today.
+
+167
+00:05:39,940 --> 00:05:41,170
+Long term thinking is so
+where,
+
+168
+00:05:41,170 --> 00:05:43,612
+anywhere, but especially in
+startups.
+
+169
+00:05:43,612 --> 00:05:44,900
+That it's a huge advantage
+if you do it.
+
+170
+00:05:46,550 --> 00:05:48,570
+Remember that the idea will
+expand and
+
+171
+00:05:48,570 --> 00:05:49,620
+become more ambitious as you
+go.
+
+172
+00:05:49,620 --> 00:05:52,620
+You certainly don't need to
+have everything figured out,
+
+173
+00:05:52,620 --> 00:05:54,630
+in a path from here to world
+domination.
+
+174
+00:05:54,630 --> 00:05:56,360
+But you really want a nice
+kernel to start with.
+
+175
+00:05:56,360 --> 00:05:58,930
+>> You want something that
+can develop in
+
+176
+00:05:58,930 --> 00:05:59,630
+interesting ways.
+
+177
+00:06:00,770 --> 00:06:02,340
+As you're thinking through
+ideas,
+
+178
+00:06:02,340 --> 00:06:03,830
+another thing that we see
+young founders get
+
+179
+00:06:03,830 --> 00:06:06,560
+wrong all the time, is that
+someday you need to
+
+180
+00:06:06,560 --> 00:06:08,860
+build a business that's
+difficult to replicate.
+
+181
+00:06:08,860 --> 00:06:10,160
+This is an important part of
+a good idea.
+
+182
+00:06:10,160 --> 00:06:14,536
+I wanna make this point
+again because it's
+
+183
+00:06:14,536 --> 00:06:17,040
+so important.
+
+184
+00:06:17,040 --> 00:06:18,200
+The idea should come first,
+and
+
+185
+00:06:18,200 --> 00:06:19,820
+the startup should come
+second.
+
+186
+00:06:19,820 --> 00:06:21,350
+Wait to start a startup,
+until you come up
+
+187
+00:06:21,350 --> 00:06:23,150
+with an idea you feel
+compelled to explore.
+
+188
+00:06:24,160 --> 00:06:24,940
+This is also the way to
+
+189
+00:06:24,940 --> 00:06:26,980
+chose between multiple
+ideas.
+
+190
+00:06:26,980 --> 00:06:28,745
+If you have several ideas
+that all seem pretty good,
+
+191
+00:06:28,745 --> 00:06:31,800
+work on the one that you
+think about most often when
+
+192
+00:06:31,800 --> 00:06:33,820
+you're not trying to think
+about work.
+
+193
+00:06:33,820 --> 00:06:35,940
+But we hear again and again
+from founders that they
+
+194
+00:06:35,940 --> 00:06:38,070
+wish they had waited to
+start a startup until they
+
+195
+00:06:38,070 --> 00:06:39,460
+came up with an idea that
+they really loved.
+
+196
+00:06:41,390 --> 00:06:43,000
+Another way of looking at
+this is that the best
+
+197
+00:06:43,000 --> 00:06:45,550
+companies are almost always
+mission oriented.
+
+198
+00:06:45,550 --> 00:06:47,400
+It's difficult to get large
+groups of people to
+
+199
+00:06:47,400 --> 00:06:49,550
+the extreme levels of focus
+and productivity that you
+
+200
+00:06:49,550 --> 00:06:51,230
+need for a startup to be
+successful,
+
+201
+00:06:52,230 --> 00:06:54,660
+unless the company feels
+like an important mission.
+
+202
+00:06:54,660 --> 00:06:57,620
+And it's usually really hard
+to get that without a great
+
+203
+00:06:57,620 --> 00:06:58,220
+founding idea.
+
+204
+00:07:01,340 --> 00:07:03,000
+A related advantage of
+mission oriented
+
+205
+00:07:03,000 --> 00:07:05,550
+ideas is that you yourself
+will be dedicated to them.
+
+206
+00:07:06,900 --> 00:07:07,620
+It takes years and
+
+207
+00:07:07,620 --> 00:07:10,620
+years, usually a decade to
+create a great startup.
+
+208
+00:07:10,620 --> 00:07:11,170
+If you don't love and
+
+209
+00:07:11,170 --> 00:07:12,660
+believe in what you're
+building,
+
+210
+00:07:12,660 --> 00:07:14,340
+you're likely to give up at
+some point along the way.
+
+211
+00:07:15,580 --> 00:07:17,430
+There's no way I know of to
+get through the pain of a
+
+212
+00:07:17,430 --> 00:07:20,680
+startup without belief that
+the mission really matters.
+
+213
+00:07:20,680 --> 00:07:22,500
+A lot of founders,
+especially students,
+
+214
+00:07:22,500 --> 00:07:24,332
+believe that their startup's
+only gonna take two or
+
+215
+00:07:24,332 --> 00:07:25,690
+three years and then after
+that they'll work on
+
+216
+00:07:25,690 --> 00:07:27,310
+what they're really
+passionate about.
+
+217
+00:07:27,310 --> 00:07:28,480
+That almost never works.
+
+218
+00:07:28,480 --> 00:07:29,840
+Good startups usually take
+ten years.
+
+219
+00:07:31,380 --> 00:07:32,710
+A third advantage of
+mission-oriented
+
+220
+00:07:32,710 --> 00:07:34,350
+companies is that people
+outside the company,
+
+221
+00:07:34,350 --> 00:07:36,880
+are more willing to help
+you.
+
+222
+00:07:36,880 --> 00:07:37,740
+You'll get more support on
+
+223
+00:07:37,740 --> 00:07:40,700
+a hard important project
+than a derivative one.
+
+224
+00:07:40,700 --> 00:07:42,820
+When it comes to starting
+startups,
+
+225
+00:07:42,820 --> 00:07:43,830
+in many ways it's easier to
+
+226
+00:07:43,830 --> 00:07:46,050
+start a hard startup than an
+easy startup.
+
+227
+00:07:46,050 --> 00:07:47,580
+This is one of those
+counter-intuitive things.
+
+228
+00:07:47,580 --> 00:07:48,860
+It takes people a long time
+to understand.
+
+229
+00:07:51,320 --> 00:07:52,710
+It's difficult to overstate
+how
+
+230
+00:07:52,710 --> 00:07:54,270
+important being
+mission-driven is, so
+
+231
+00:07:54,270 --> 00:07:56,230
+I wanna emphasize it one
+last time.
+
+232
+00:07:56,230 --> 00:07:58,240
+Derivative companies,
+companies that
+
+233
+00:07:58,240 --> 00:08:01,180
+copy an existing idea with
+very few new insights,
+
+234
+00:08:01,180 --> 00:08:03,240
+don't excite people and they
+don't compel the teams to
+
+235
+00:08:03,240 --> 00:08:04,940
+work hard enough to be
+successful.
+
+236
+00:08:06,470 --> 00:08:07,790
+Paul Graham is gonna talk
+about how to
+
+237
+00:08:07,790 --> 00:08:09,870
+get startup ideas next week.
+
+238
+00:08:09,870 --> 00:08:11,740
+It's something that a lot of
+founders struggle with but
+
+239
+00:08:11,740 --> 00:08:13,850
+it's something I believe you
+can get better with it,
+
+240
+00:08:13,850 --> 00:08:15,040
+better at with practice.
+
+241
+00:08:15,040 --> 00:08:16,530
+And it's definitely worth
+trying to get better at.
+
+242
+00:08:18,490 --> 00:08:19,590
+The hardest part about
+coming up
+
+243
+00:08:19,590 --> 00:08:20,950
+with great ideas is that
+
+244
+00:08:20,950 --> 00:08:24,010
+the best ideas often look
+terrible at the beginning.
+
+245
+00:08:24,010 --> 00:08:25,350
+The 13th search engine and
+
+246
+00:08:25,350 --> 00:08:27,180
+without all the features of
+web portal.
+
+247
+00:08:27,180 --> 00:08:29,930
+Most people thought that was
+pointless, search was done,
+
+248
+00:08:29,930 --> 00:08:31,500
+and anyway, it didn't matter
+that much,
+
+249
+00:08:31,500 --> 00:08:33,440
+Portal's where the value is
+at.
+
+250
+00:08:33,440 --> 00:08:34,870
+The tenth social network,
+and
+
+251
+00:08:34,870 --> 00:08:36,582
+limited only to college
+students with no money?
+
+252
+00:08:36,582 --> 00:08:37,770
+Also terrible.
+
+253
+00:08:37,770 --> 00:08:38,670
+MySpace had won, and
+
+254
+00:08:38,670 --> 00:08:40,730
+who wants college students
+as customers, or
+
+255
+00:08:40,730 --> 00:08:42,450
+a way to stay on strangers'
+couches?
+

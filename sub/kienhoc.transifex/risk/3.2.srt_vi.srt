@@ -1,0 +1,822 @@
+0
+00:00:05,066 --> 00:00:06,440
+Xin chào.
+Tôi hỏi các bạn câu này:
+
+2
+00:00:11,371 --> 00:00:16,618
+Nếu như chúng ta so sánh sigma p với
+
+3
+00:00:16,618 --> 00:00:21,231
+các bạn nhớ chúng ta có 2 công ty chứ,
+
+4
+00:00:21,231 --> 00:00:26,332
+trung bình của sigma a và sigma b,
+
+5
+00:00:29,248 --> 00:00:31,480
+ 
+
+6
+00:00:31,480 --> 00:00:32,890
+Cái nào sẽ lớn hơn.
+
+7
+00:00:35,020 --> 00:00:40,710
+Bên phải sẽ lớn hơn.
+Cái quan trọng là chúng ta tìm cách để giảm số này lại.
+
+8
+00:00:40,710 --> 00:00:44,850
+Số này sẽ giảm theo giá trị trung bình.
+
+9
+00:00:44,850 --> 00:00:49,020
+Ai cũng biết điều đó, nhưng giả sử như bạn là Google và Microsoft.
+
+10
+00:00:49,020 --> 00:00:53,590
+Giả sư như bạn tính trung bình 2 số sigma của 2 công ty được chọn ngẫu nhiên,
+
+11
+00:00:55,320 --> 00:01:02,410
+sẽ luôn ra kết quả là độ lệch chuẩn của lãi suất tổng
+
+12
+00:01:02,410 --> 00:01:06,530
+nhỏ hơn trung bình của 2 số độ lệch chuẩn.
+
+13
+00:01:07,540 --> 00:01:10,670
+Đây được gọi là ___.
+Lần trước tôi có hỏi các bạn 1 câu,
+
+14
+00:01:10,670 --> 00:01:12,950
+khi nào tình huống này không xảy ra?
+
+15
+00:01:12,950 --> 00:01:17,820
+Khi nào thì 2 số này bằng nhau?
+Nếu muốn, các bạn có thể thử mọi công thức các bạn muốn, và
+
+16
+00:01:17,820 --> 00:01:19,050
+chúng ta sẽ rút ra kết luận.
+
+17
+00:01:19,050 --> 00:01:20,690
+Vậy kết luận là gì?
+
+18
+00:01:20,690 --> 00:01:24,900
+Theo cảm tính thì trường hợp đó xảy ra khi chúng giống nhau, đúng không?
+
+19
+00:01:24,900 --> 00:01:28,800
+Sự đa dạng hóa sẽ không xảy ra nếu như 2 số đó giống nhau.
+
+20
+00:01:28,800 --> 00:01:30,970
+Vậy thì khi nào chúng giống nhau?
+
+21
+00:01:30,970 --> 00:01:34,150
+Nếu xét về bản chất thì hệ số tương quan lúc nào cũng dương.
+
+22
+00:01:35,600 --> 00:01:39,400
+Và điều đó hoàn toàn khác thường.
+
+23
+00:01:39,400 --> 00:01:41,010
+Chúng ta thử tìm cách giải thích xem.
+
+24
+00:01:41,010 --> 00:01:44,620
+Để trả lời câu hỏi này, hãy thử tìm xem số này bằng bao nhiêu.
+
+25
+00:01:45,680 --> 00:01:47,730
+Trước khi làm, tôi hỏi các bạn câu này.
+
+26
+00:01:47,730 --> 00:01:51,590
+Lãi suất kỳ vọng của danh mục đầu tư là bao nhiêu?
+
+27
+00:01:52,960 --> 00:02:00,053
+Lãi suất kỳ vọng được tính như sau.
+Ở đây tôi dùng biểu tượng mới.
+
+28
+00:02:04,361 --> 00:02:08,200
+Đây là công thức tính lãi suất kỳ vọng.
+
+29
+00:02:08,199 --> 00:02:12,600
+Trung bình có thể tính tổng được, xác suất thì không.
+
+30
+00:02:12,600 --> 00:02:14,750
+Lý do rất đơn giản.
+
+31
+00:02:14,750 --> 00:02:19,650
+Một cái là đường tuyến tính, trong khi đó phương sai,
+
+32
+00:02:19,650 --> 00:02:23,670
+được tính bằng căn bậc hai của độ lệch chuẩn, lại là đường phi tuyến.
+
+33
+00:02:23,670 --> 00:02:27,020
+Nhân tiện, con người chúng ta rất giỏi trong việc
+
+34
+00:02:27,020 --> 00:02:28,940
+giải quyết các vấn dề có tính chất tuyến tính.
+
+35
+00:02:28,940 --> 00:02:33,660
+Giỏi đến nỗi mà chúng ta còn xoay qua giải quyết những thứ có tính chất phi tuyến tính.
+
+36
+00:02:33,660 --> 00:02:39,770
+Vấn đề là những thứ phức tạp như rừng mưa nhiệt đới,
+
+37
+00:02:39,770 --> 00:02:44,752
+hay biến đổi khí hậu, đều rất khó hiểu đối với chúng ta.
+
+38
+00:02:44,752 --> 00:02:49,828
+Tuy chúng ta có khả năng nhưng thường chúng ta hay xem nhẹ
+
+39
+00:02:49,828 --> 00:02:54,341
+những vấn đề đáng quan tâm.
+
+40
+00:02:54,341 --> 00:02:57,301
+Nhân tiện, các bạn nên đọc cuốn sách "Think Fast, Think Slow"
+
+41
+00:02:57,301 --> 00:03:01,248
+và qua đó các bạn sẽ hiêu được
+
+42
+00:03:01,248 --> 00:03:05,950
+tại sao bộ não chúng ta xuất sắc đến vậy mà
+
+43
+00:03:05,950 --> 00:03:11,500
+chúng ta vẫn hay có xu hướng lựa chọn theo suy nghĩ tức thời.
+
+44
+00:03:11,500 --> 00:03:13,890
+Theo một số khía cạnh thì câu trả lời khá đơn giản,
+
+45
+00:03:13,890 --> 00:03:16,020
+chỉ cần suy nghĩ một tí thôi,
+
+46
+00:03:16,020 --> 00:03:19,390
+là chúng ta sẽ biết cách nhìn nhận vấn đề.
+
+47
+00:03:19,390 --> 00:03:20,906
+Tôi không nói về bằng cấp đại học.
+
+48
+00:03:20,906 --> 00:03:24,003
+Tôi đang nói về quan điểm cá nhân.
+
+49
+00:03:24,003 --> 00:03:25,690
+Thôi quay lại bài học nào.
+
+50
+00:03:25,690 --> 00:03:26,910
+Vậy số Xb bằng bao nhiêu?
+
+51
+00:03:26,910 --> 00:03:30,460
+Trong ví dụ này, chúng ta đã giả sử mỗi công ty chiếm khoản 50% thị phần.
+
+52
+00:03:30,460 --> 00:03:32,550
+Lãi suất trung bình của công ty A là bao nhiêu?
+
+53
+00:03:32,550 --> 00:03:33,660
+Chúng ta tính như thế nào?
+
+54
+00:03:33,660 --> 00:03:38,413
+Cũng giống như tính Ra trung bình thôi.
+Và cách tính cũng y như
+
+55
+00:03:38,413 --> 00:03:41,370
+chúng ta dự đoán ban đầu.
+
+56
+00:03:41,370 --> 00:03:43,400
+Còn đây là Rb5.
+
+57
+00:03:43,400 --> 00:03:46,190
+Cách tính này khá dễ hiểu.
+
+58
+00:03:46,190 --> 00:03:51,460
+Giờ chúng ta sẽ xét đến thuộc tính của danh mục đầu tư.
+
+59
+00:03:51,460 --> 00:03:55,660
+Để dễ hình dung thì tôi sẽ viết phương trình ra,
+
+60
+00:03:55,660 --> 00:03:57,680
+nó khá đơn giản.
+
+61
+00:03:57,680 --> 00:03:59,230
+Hướng tính toán như sau:
+
+62
+00:03:59,230 --> 00:04:05,630
+Để tính được độ lệch chuẩn, các bạn phải tính được số này.
+
+63
+00:04:05,630 --> 00:04:09,660
+Nhân tiện, kí hiệu ^ chỉ các đại lượng có tính dự đoán thôi.
+
+64
+00:04:09,660 --> 00:04:12,130
+Vì thế khi không có số mũ thì các bạn phải hiểu đó là khái niệm.
+
+65
+00:04:12,130 --> 00:04:15,440
+Khi có mũ thì đó là đại lượng dự đoán.
+
+66
+00:04:15,440 --> 00:04:18,730
+Chúng ta sẽ bỏ qua phần đó và xét đến khái niệm của từng cái.
+
+67
+00:04:18,730 --> 00:04:21,020
+Chúng ta đang xét gì?
+
+68
+00:04:21,019 --> 00:04:23,660
+Chúng ta đang xét phương sai của cái gì?
+
+69
+00:04:26,010 --> 00:04:33,104
+Chúng ta đang xét phương sai của danh mục đầu tư, 
+XaRa + XbRb, đúng không?
+
+70
+00:04:33,104 --> 00:04:37,390
+Giờ xét phương sai.
+
+71
+00:04:37,390 --> 00:04:43,900
+Đây là một thông số phức tạp.
+
+72
+00:04:43,900 --> 00:04:45,000
+Nó có dạng bình phương.
+
+73
+00:04:45,000 --> 00:04:46,750
+ 
+
+74
+00:04:46,750 --> 00:04:48,240
+Các bạn sẽ làm gì?
+
+75
+00:04:48,240 --> 00:04:50,880
+Các bạn sẽ chú ý đến số bình phương, nhưng
+
+76
+00:04:50,880 --> 00:04:56,740
+các bạn cũng cần chú ý đến mối liên hệ giữa số này và số này.
+
+77
+00:04:56,740 --> 00:04:57,390
+Tại sao à?
+
+78
+00:04:57,390 --> 00:05:01,170
+Vì khi bạn bình phương XaRA + XbRb,
+
+79
+00:05:01,170 --> 00:05:05,944
+thì bạn sẽ có 2 số bình phương
+
+80
+00:05:05,944 --> 00:05:08,840
+và 1 số gồm 2 biến.
+
+81
+00:05:08,840 --> 00:05:10,260
+ 
+
+82
+00:05:10,260 --> 00:05:13,270
+Số gồm 2 biến, nó khá thú vị.
+
+83
+00:05:14,710 --> 00:05:16,730
+Lát chúng ta sẽ tính,
+
+84
+00:05:16,730 --> 00:05:18,520
+tôi sẽ chỉ cho các bạn.
+
+85
+00:05:18,520 --> 00:05:22,250
+Giờ tôi sẽ tạm dừng để các bạn ghi lại phương này
+
+86
+00:05:22,250 --> 00:05:23,540
+ 
+
+87
+00:05:23,540 --> 00:05:25,730
+Tôi sẽ nói về phần này.
+
+88
+00:05:25,730 --> 00:05:29,630
+Phương sai của danh mục đầu tư mà các bạn phải tính
+
+89
+00:05:29,630 --> 00:05:34,840
+để qua đó tính được độ lệch chuẩn là 
+phương sai của a bình phương
+
+90
+00:05:35,920 --> 00:05:38,970
+Trong trường hợp này thì Xa chiếm 50%
+
+91
+00:05:38,970 --> 00:05:40,510
+nên Xa bình phương sẽ bằng 1/4.
+
+92
+00:05:40,510 --> 00:05:41,440
+Tại sao lại phải tính bình phương?
+
+93
+00:05:41,440 --> 00:05:43,000
+VÌ phương sai là bình phương
+
+94
+00:05:43,000 --> 00:05:47,320
+Nếu như bạn không bình phương và chỉ trừ đi giá trị trung bình
+
+95
+00:05:47,320 --> 00:05:49,150
+thì cộng hết lại các bạn sẽ được số gì?
+
+96
+00:05:49,150 --> 00:05:50,220
+ 
+
+97
+00:05:50,220 --> 00:05:52,200
+Đó là lý do mà các bạn phải tính phương sai trước, rồi
+
+98
+00:05:52,200 --> 00:05:53,620
+sau đó tính độ lệch chuẩn.
+
+99
+00:05:53,620 --> 00:05:56,090
+Ý tôi là lấy căn bình phương để tính độ lệch chuẩn.
+
+100
+00:05:56,090 --> 00:05:58,510
+Từ đó các bạn sẽ có  Xa bình phương nhân với Sigma a bình phương.
+
+101
+00:05:59,690 --> 00:06:02,360
+Đó là lý do tại sao toán thống kê lại rất quan trọng.
+
+102
+00:06:02,360 --> 00:06:05,630
+Tiếp đó là Xb bình phương nhân với Sigma b bình phương.
+
+103
+00:06:05,630 --> 00:06:07,640
+Sigma bình phương bằng bao nhiêu?
+
+104
+00:06:07,640 --> 00:06:11,750
+Phương sai của a tức là phương sai của Google.
+
+105
+00:06:11,750 --> 00:06:15,050
+Sigma b bình phương, phương sai của công ty nào?
+
+106
+00:06:16,160 --> 00:06:17,800
+B là công ty Microsoft.
+
+107
+00:06:17,800 --> 00:06:19,490
+Xb bình phương bằng bao nhiêu?
+
+108
+00:06:19,490 --> 00:06:22,640
+Bằng 1/2 nhân 1/2.
+
+109
+00:06:22,640 --> 00:06:28,340
+Ở đây lại có bình phương bởi vì phương sai là hàm phi tuyến tính.
+
+110
+00:06:28,340 --> 00:06:29,470
+ 
+
+111
+00:06:29,470 --> 00:06:35,000
+Luôn nhớ rằng mục tiêu của chúng ta là mức sinh lời của danh mục đầu tư.
+
+112
+00:06:35,000 --> 00:06:42,160
+Luôn nhớ Rp = XaRa + XbRb.
+
+113
+00:06:42,160 --> 00:06:46,490
+Các bạn cũng sẽ lấy bình phương số này, nên cần chú ý cái gì?
+
+114
+00:06:46,490 --> 00:06:49,740
+Cần chú ý Xa và Xb; Ra và Rb.
+
+115
+00:06:49,740 --> 00:06:54,763
+Chú ý đến Xa và Xb; Ra và Rb, và 2XaXb. 
+Tại sao?
+
+116
+00:06:54,763 --> 00:06:58,710
+Bởi vì số này nhân 2 lần.
+
+117
+00:06:58,710 --> 00:07:04,030
+ 
+
+118
+00:07:05,310 --> 00:07:06,885
+Vậy RaRb là gì?
+
+119
+00:07:06,885 --> 00:07:08,630
+Hiệp phương sai.
+
+120
+00:07:08,630 --> 00:07:13,110
+Khi bạn bình phương một số, thì số đó là phương sai, nhưng
+
+121
+00:07:13,110 --> 00:07:16,080
+khi bạn bình phương hai số thì gọi là hiệp phương sai.
+
+122
+00:07:16,080 --> 00:07:17,460
+Cũng giá dễ hiểu.
+
+123
+00:07:17,460 --> 00:07:18,560
+Kiến thức cũ thôi.
+
+124
+00:07:18,560 --> 00:07:22,950
+Các bạn cũng đã học rồi, và cũng đã quên.
+
+125
+00:07:22,950 --> 00:07:26,650
+Đó là khi bạn bình phương tổng của 2 số.
+
+126
+00:07:26,650 --> 00:07:29,810
+sẽ xuất hiện hiệp phương sai.
+
+127
+00:07:30,880 --> 00:07:33,550
+Cũng khá hấp dẫn.
+
+128
+00:07:33,550 --> 00:07:36,420
+Và cũng chính xác nữa.
+
+129
+00:07:36,420 --> 00:07:37,940
+Đó là cái hay của tài chính.
+
+130
+00:07:37,940 --> 00:07:41,640
+Tài chính có thể là toán học hay có thể là  nghệ thuật.
+
+131
+00:07:41,640 --> 00:07:43,950
+ 
+
+132
+00:07:43,950 --> 00:07:46,240
+ 
+
+133
+00:07:46,240 --> 00:07:50,780
+Tôi sẽ tính cái này với các bạn.
+
+134
+00:07:50,780 --> 00:07:58,060
+Có bao nhiêu biến số trong phương sai của danh mục đầu tư?
+Có cả thảy baoo nhiêu biến?
+
+135
+00:07:58,060 --> 00:08:03,970
+Biến số đầu tiên là số đầu tiên, biến số thứ hai là số thứ hai. 
+
+136
+00:08:03,970 --> 00:08:08,730
+Và có 2 biến số ở số cuối cùng, nên tất cả là 4 biến số.
+
+137
+00:08:08,730 --> 00:08:09,760
+Tại sao?
+
+138
+00:08:09,760 --> 00:08:11,440
+Bởi vì số cuối có tính giao hoán.
+
+139
+00:08:11,440 --> 00:08:16,260
+Sigma ab cũng bằng sigma ba.
+
+140
+00:08:18,170 --> 00:08:21,820
+Vì thế hiệp phương sai của a với b hay b với a thì cũng như nhau thôi.
+
+141
+00:08:21,820 --> 00:08:23,140
+Không như con người, đúng không?
+
+142
+00:08:23,140 --> 00:08:25,300
+Giả sử như Sean ngồi đằng kia, và
+
+143
+00:08:25,300 --> 00:08:29,830
+cá nhân tôi nghĩ mối quan hệ của mình với anh ta khá tốt.
+
+144
+00:08:30,890 --> 00:08:33,820
+Nhưng suy nghĩ của Sean về mối quan hệ của anh ta với tôi
+
+145
+00:08:33,820 --> 00:08:36,410
+thì tôi không biết.
+
+146
+00:08:36,409 --> 00:08:39,160
+Có thể là bình thường, có thể tiêu cực.
+
+147
+00:08:39,159 --> 00:08:41,500
+May mắn là 2 số này có tính giao hoán.
+
+148
+00:08:41,500 --> 00:08:46,270
+Vậy nên số Sigma ab 
+
+149
+00:08:46,270 --> 00:08:48,170
+có tính giao hoán.
+
+150
+00:08:48,170 --> 00:08:52,580
+Và cả hai số đều nhân với Xa và Xb, vì tỉ trọng của nó rất quan trọng.
+
+151
+00:08:52,580 --> 00:08:55,510
+Trong trường hợp này, các bạn thế số vô tính là xong.
+
+152
+00:08:55,510 --> 00:09:02,950
+Nếu Xa và Xb bằng 1/2 thì Xa bình phương là 1/4, Xb bình phương là 1/4, và XaXb bình phương cũng là 1/4.
+
+153
+00:09:02,950 --> 00:09:04,520
+Nhưng do nhân với 2 nên nó thành 1/2.
+
+154
+00:09:06,190 --> 00:09:07,170
+Đơn giản dễ hiểu.
+
+155
+00:09:08,320 --> 00:09:09,380
+Không khó khăn lắm.
+
+156
+00:09:09,380 --> 00:09:14,590
+Chúng ta đã tính xong từng số, cái phức tạp ở đây là 
+phương sai của sigma b bình phương
+
+157
+00:09:14,590 --> 00:09:20,800
+nó không như trung bình của 2 phương sai.
+
+158
+00:09:20,800 --> 00:09:23,510
+Đúng không?
+Vậy vì sao lại sai số?
+
+159
+00:09:23,510 --> 00:09:27,610
+Lý do sai số là
+
+160
+00:09:27,610 --> 00:09:29,720
+hiệp phương sai này.
+
+161
+00:09:30,740 --> 00:09:35,810
+Chúng ta sẽ lấy hiệp phương sai này và viết lại cho đúng.
+Các bạn còn nhớ công thức của hiệp phương sai không?
+
+162
+00:09:36,840 --> 00:09:45,140
+Hiệp phương sai của a và b chia cho sigma a và sigma b, và kết quả là gì?
+
+163
+00:09:45,140 --> 00:09:46,320
+Rho ab.
+
+164
+00:09:47,560 --> 00:09:55,238
+Điều này có nghĩa là nếu các bạn lấy sigma ab và
+
+165
+00:09:55,238 --> 00:10:02,524
+viết ra dưới dạng Rho ab nhân với sigma a và sigma b.
+
+166
+00:10:05,469 --> 00:10:06,680
+Vậy tại sao tôi lại làm vậy?
+
+167
+00:10:06,680 --> 00:10:08,710
+Bởi vì khái niệm Rho dễ hiểu hơn.
+
+168
+00:10:08,710 --> 00:10:14,490
+Hiệp phương sai quan trọng, nhưng người ta thường dựa vào Rho.
+
+169
+00:10:14,490 --> 00:10:19,430
+bởi vì họ có thể cộng, trừ, nhân, chia thoải mái.
+
+170
+00:10:19,430 --> 00:10:20,680
+ 
+
+171
+00:10:22,110 --> 00:10:28,070
+Tôi vừa lấy Sigma ab và trừ đi số này.
+
+172
+00:10:28,070 --> 00:10:29,110
+Do vậy nên chúng sẽ bằng nhau.
+
+173
+00:10:29,110 --> 00:10:30,290
+Rất đơn giản.
+
+174
+00:10:30,290 --> 00:10:31,890
+Câu hỏi 1 và
+
+175
+00:10:31,890 --> 00:10:34,600
+câu hỏi 2 chỉ là 2 cách tiếp cận cùng một vấn đề. 
+
+176
+00:10:34,600 --> 00:10:37,980
+Một cái là với hiệp phương sai, một cái là với hệ số tương quan.
+
+177
+00:10:37,980 --> 00:10:42,140
+Rất nhiều người thích dùng hệ số tương quan vì một vài lý do.
+
+178
+00:10:42,140 --> 00:10:43,930
+Tôi thì không quan tâm lắm.
+
+179
+00:10:43,930 --> 00:10:46,600
+Tại sao?
+Bởi vì mối liên hệ
+
+180
+00:10:46,600 --> 00:10:48,030
+mới là quan trọng.
+
+181
+00:10:48,030 --> 00:10:50,320
+Chúng ta đã xong 2 công ty.
+
+182
+00:10:51,390 --> 00:10:52,890
+Có bao nhiêu mối liên hệ?
+
+183
+00:10:52,890 --> 00:10:53,670
+Hai.
+
+184
+00:10:53,670 --> 00:10:54,560
+Nhưng chúng lại có tính giao hoán.
+
+185
+00:10:54,560 --> 00:10:57,560
+A với B hay B với A đều như nhau.
+
+186
+00:10:58,860 --> 00:11:03,280
+Trong danh mục đầu tư của một công ty, có bao nhiêu mối liên hệ?
+
+187
+00:11:03,280 --> 00:11:03,780
+ 
+
+188
+00:11:04,790 --> 00:11:06,080
+Có bao nhiêu phương sai?
+
+189
+00:11:06,080 --> 00:11:07,340
+Một.
+
+190
+00:11:07,340 --> 00:11:09,200
+Ở công ty số hai có bao nhiêu phương sai?
+
+191
+00:11:09,200 --> 00:11:12,120
+Hai, đó là A và B, nhưng có bao nhiêu hiệp phương sai?
+
+192
+00:11:12,120 --> 00:11:14,410
+Hai cái, nhưng chúng lại đối xứng nhau.
+
+193
+00:11:14,410 --> 00:11:16,660
+Vậy tổng cộng có bao nhiêu biến số?
+
+194
+00:11:16,660 --> 00:11:17,340
+Bốn biến số.
+
+195
+00:11:17,340 --> 00:11:20,850
+Chúng ta đi từ 1 vấn đề thành 2 vấn đề trong 1 công ty.
+
+196
+00:11:20,850 --> 00:11:23,700
+Vậy các bạn cần chú ý đến bao nhiêu số cái gì?
+
+197
+00:11:23,700 --> 00:11:24,830
+Bốn số, đúng không?
+
+198
+00:11:26,310 --> 00:11:31,770
+Sigma A bình phương, sigma B bình phương, sigma AB và sigma BA.
+
+199
+00:11:31,770 --> 00:11:33,915
+2 cái cuối cùng là như nhau.
+
+200
+00:11:33,915 --> 00:11:36,700
+Chúng ta sẽ dừng lại.
+
+201
+00:11:36,700 --> 00:11:38,030
+Các bạn cứ tiếp tục suy nghĩ.
+
+202
+00:11:38,030 --> 00:11:38,550
+Chúng ta sẽ tiếp tục sau.
+

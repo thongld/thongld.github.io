@@ -1,0 +1,435 @@
+283
+00:12:36,710 --> 00:12:39,920
+https://youtu.be/UR6a_wZ8ido
+any number of caret
+characters, ends in a colon.
+
+284
+00:12:39,920 --> 00:12:41,540
+True, true.
+
+285
+00:12:41,540 --> 00:12:45,700
+This one starts with an x but
+doesn't start with an x dash.
+
+286
+00:12:45,700 --> 00:12:48,200
+As a matter of fact, these
+characters are blanks.
+
+287
+00:12:48,200 --> 00:12:49,360
+So this becomes a false.
+
+288
+00:12:49,360 --> 00:12:51,110
+It does have an x
+and does have a colon
+
+289
+00:12:51,110 --> 00:12:52,850
+and matched the previous one.
+
+290
+00:12:52,850 --> 00:12:55,120
+But this one here
+is more specific.
+
+291
+00:12:55,120 --> 00:12:59,770
+
+292
+00:12:59,770 --> 00:13:01,397
+OK, so it's more specific.
+
+293
+00:13:01,397 --> 00:13:02,730
+And so it matches what you want.
+
+294
+00:13:02,730 --> 00:13:04,040
+Now, it depends on what
+you're looking for.
+
+295
+00:13:04,040 --> 00:13:06,373
+Maybe you do want this line
+and so you're looking for x.
+
+296
+00:13:06,373 --> 00:13:07,030
+I don't know.
+
+297
+00:13:07,030 --> 00:13:10,530
+But if you want, you
+can be increasingly
+
+298
+00:13:10,530 --> 00:13:13,210
+sophisticated in
+what you're looking
+
+299
+00:13:13,210 --> 00:13:15,120
+for in a regular expression.
+
+300
+00:13:15,120 --> 00:13:19,940
+So now let's talk
+about extracting data.
+
+301
+00:13:19,940 --> 00:13:23,564
+So everything we've done so far
+is, is it there or is it not?
+
+302
+00:13:23,564 --> 00:13:25,480
+But it's really common
+once you find something
+
+303
+00:13:25,480 --> 00:13:27,120
+that you want to
+break it into pieces.
+
+304
+00:13:27,120 --> 00:13:30,450
+So we can combine the
+searching and the parsing
+
+305
+00:13:30,450 --> 00:13:32,580
+into one statement.
+
+306
+00:13:32,580 --> 00:13:34,260
+And instead of
+using search, which
+
+307
+00:13:34,260 --> 00:13:38,440
+returns for us a true false,
+we're going to use find all.
+
+308
+00:13:38,440 --> 00:13:43,440
+So in this example, I'm going
+to show you a new syntax.
+
+309
+00:13:43,440 --> 00:13:49,750
+The square bracket, in
+regular expression language,
+
+310
+00:13:49,750 --> 00:13:52,960
+means a way to list
+a set of characters.
+
+311
+00:13:52,960 --> 00:13:57,720
+So this says-- this is a
+single character that says,
+
+312
+00:13:57,720 --> 00:14:01,920
+I want to match anything in
+the range zero through nine.
+
+313
+00:14:01,920 --> 00:14:04,730
+Plus means one or more of those.
+
+314
+00:14:04,730 --> 00:14:08,590
+So that says-- so this whole
+thing says one or more digits.
+
+315
+00:14:08,590 --> 00:14:11,600
+That's a regular expression
+that says one or more digits.
+
+316
+00:14:11,600 --> 00:14:14,840
+You can put other
+things inside here.
+
+317
+00:14:14,840 --> 00:14:19,530
+You can put, like-- you could
+make a thing that says a, b, c,
+
+318
+00:14:19,530 --> 00:14:20,364
+d.
+
+319
+00:14:20,364 --> 00:14:23,030
+And that would say, I'm going to
+match a single character that's
+
+320
+00:14:23,030 --> 00:14:25,070
+a or b or c or d.
+
+321
+00:14:25,070 --> 00:14:32,077
+Or you could say,
+like, 1357 bracket.
+
+322
+00:14:32,077 --> 00:14:34,410
+That's a single character
+that's either a one or a three
+
+323
+00:14:34,410 --> 00:14:35,590
+or a five or a seven.
+
+324
+00:14:35,590 --> 00:14:37,550
+So the bracket is a list
+of matching characters
+
+325
+00:14:37,550 --> 00:14:40,974
+in the dash inside the
+bracket-- means range.
+
+326
+00:14:40,974 --> 00:14:42,390
+We'll see in a
+second that you can
+
+327
+00:14:42,390 --> 00:14:44,280
+stick a not inside the bracket.
+
+328
+00:14:44,280 --> 00:14:45,206
+It's on the sheet.
+
+329
+00:14:45,206 --> 00:14:48,560
+So again, remember-- in
+this little mini language,
+
+330
+00:14:48,560 --> 00:14:49,970
+we are programming, right?
+
+331
+00:14:49,970 --> 00:14:52,820
+We are giving instructions
+to the regular expression
+
+332
+00:14:52,820 --> 00:14:54,770
+engine as it were, OK?
+
+333
+00:14:54,770 --> 00:14:58,080
+
+334
+00:14:58,080 --> 00:15:03,850
+So if we do this-- and here
+is an expression that says,
+
+335
+00:15:03,850 --> 00:15:09,340
+I would like to find things
+that are one or more digits.
+
+336
+00:15:09,340 --> 00:15:15,547
+And so it's one or more digits.
+
+337
+00:15:15,547 --> 00:15:17,130
+And so it's going
+to look through here
+
+338
+00:15:17,130 --> 00:15:20,550
+and it's going to find it
+as many times as it can.
+
+339
+00:15:20,550 --> 00:15:22,560
+So there is one or more digits.
+
+340
+00:15:22,560 --> 00:15:24,640
+There is one or more digits.
+
+341
+00:15:24,640 --> 00:15:26,690
+And there is one or more digits.
+
+342
+00:15:26,690 --> 00:15:30,510
+And so what find all gives
+us back is a list of strings.
+
+343
+00:15:30,510 --> 00:15:31,800
+So it found it.
+
+344
+00:15:31,800 --> 00:15:32,580
+Where do I match?
+
+345
+00:15:32,580 --> 00:15:33,288
+Where do I match?
+
+346
+00:15:33,288 --> 00:15:35,090
+Where-- it's looking
+the whole time.
+
+347
+00:15:35,090 --> 00:15:39,340
+And then it says, oh,
+I've got it-- 2, 19, 42.
+
+348
+00:15:39,340 --> 00:15:43,370
+So it actually extracts
+the strings that match
+
+349
+00:15:43,370 --> 00:15:47,590
+and gives you a Python list
+of strings-- Python list
+
+350
+00:15:47,590 --> 00:15:49,120
+of strings.
+
+351
+00:15:49,120 --> 00:15:52,570
+Kind of like split except
+it's like a super smart split,
+
+352
+00:15:52,570 --> 00:15:53,370
+right?
+
+353
+00:15:53,370 --> 00:15:56,630
+It's split, but I've
+directed it what to look for.
+
+354
+00:15:56,630 --> 00:16:04,560
+And if-- so here's an example
+of-- that's what I just did.
+
+355
+00:16:04,560 --> 00:16:06,910
+Find me one or more
+digits and then
+
+356
+00:16:06,910 --> 00:16:10,290
+extract them-- so 2, 19, 42.
+
+357
+00:16:10,290 --> 00:16:12,990
+Here I'm saying using
+the same bracket syntax
+
+358
+00:16:12,990 --> 00:16:17,630
+to look for a single character,
+a capital A, E, I, O,
+
+359
+00:16:17,630 --> 00:16:20,880
+or U, and one or more of those.
+
+360
+00:16:20,880 --> 00:16:24,480
+And if you look, there are no
+uppercase vowels in my string.
+
+361
+00:16:24,480 --> 00:16:26,360
+So it says I want to
+find all the things that
+
+362
+00:16:26,360 --> 00:16:32,500
+match A, E, I, O, U. So
+things like AA would match
+
+363
+00:16:32,500 --> 00:16:36,980
+and, you know, OU would match.
+
+364
+00:16:36,980 --> 00:16:40,550
+And so that's what we would
+get if they were in the string.
+
+365
+00:16:40,550 --> 00:16:43,705
+But because there are none,
+we get an empty string.
+
+366
+00:16:43,705 --> 00:16:45,830
+So even if there are none,
+you get an empty string.
+
+367
+00:16:45,830 --> 00:16:48,270
+So it always returns a string.
+
+368
+00:16:48,270 --> 00:16:51,340
+It may be a zero length string.
+
+369
+00:16:51,340 --> 00:16:55,290
+And that's what you
+have to check, OK?
+
+370
+00:16:55,290 --> 00:17:00,980
+
+371
+00:17:00,980 --> 00:17:06,490
+OK, now, matching has
+this notion of greedy
+
+372
+00:17:06,490 --> 00:17:11,510
+where when you put one of
+these pluses or asterisks,
+
+373
+00:17:11,510 --> 00:17:15,630
+it kind of has this outward
+pushing feeling, right?
+
+374
+00:17:15,630 --> 00:17:18,349
+And so when you say I'm
+looking for something
+
+375
+00:17:18,349 --> 00:17:21,540
+that starts with an F at the
+beginning of the line followed
+
+376
+00:17:21,540 --> 00:17:24,730
+by one or more characters
+followed by a colon,
+

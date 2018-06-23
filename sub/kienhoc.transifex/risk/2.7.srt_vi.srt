@@ -1,0 +1,639 @@
+0
+00:00:05,157 --> 00:00:10,720
+Chào các bạn, chúng ta đang thảo luận về dữ liệu mà tôi đã gửi các bạn ở lần trước.
+Bây giờ chúng ta sẽ đi tính các biến số và độ lệch chuẩn của 1 và 2.
+
+2
+00:00:15,888 --> 00:00:18,520
+Tôi sẽ cho các bạn công thức.
+
+3
+00:00:18,520 --> 00:00:22,470
+Tôi cũng sẽ chỉ cho các bạn phương pháp tính bằng Excel.
+
+4
+00:00:22,470 --> 00:00:24,130
+Chúng cũng khá là dễ hiểu.
+
+5
+00:00:24,130 --> 00:00:27,730
+Nếu tôi nhầm thì cũng không sao.
+
+6
+00:00:27,730 --> 00:00:32,720
+Thường thì tôi hay chọn số cột hay số hàng quá dài thôi.
+
+7
+00:00:32,720 --> 00:00:35,487
+Chúng ta có bao nhiêu số? 
+60.
+
+8
+00:00:35,487 --> 00:00:38,290
+Chúng ta đang xét công ty nào?
+1 và 2?
+
+9
+00:00:38,290 --> 00:00:41,010
+Các bạn có thể tự làm tương tự với 3, 4 và 5.
+
+10
+00:00:41,010 --> 00:00:46,288
+Tôi sẽ cho các bạn số liệu, các bạn sẽ có đủ thứ để làm.
+
+11
+00:00:46,288 --> 00:00:53,390
+Sigma 1 bình phương.
+Chúng ta tính như thế nào?
+
+12
+00:00:53,390 --> 00:00:57,560
+1/N.
+Đó là xác suất.
+
+13
+00:00:57,560 --> 00:01:01,152
+Các bạn có thể đưa số này ra khỏi dấu ngoặc vì đây là số cố định.
+
+14
+00:01:01,152 --> 00:01:06,708
+Chúng ta sẽ giả sử mọi điểm dữ liệu đều như nhau.
+
+15
+00:01:06,708 --> 00:01:10,306
+Giờ chúng ta tính cái gì?
+
+16
+00:01:10,306 --> 00:01:16,468
+ (R1i - R1 trung bình) rồi tính bình phương
+
+17
+00:01:18,237 --> 00:01:26,805
+Trong Excel, các bạn sẽ dùng hàm variance, viết tắt là VARS.
+
+18
+00:01:26,805 --> 00:01:33,230
+.P viết tắt cho Bao hàm (Population), .S viết tắt cho mẫu (Sample).
+
+19
+00:01:33,230 --> 00:01:36,990
+Và bởi vì chúng ta chỉ xét một mẫu, không phải toàn bộ,
+
+20
+00:01:36,990 --> 00:01:41,130
+nên tôi sẽ dùng kí hiệu .SN.
+
+21
+00:01:41,130 --> 00:01:46,180
+Tôi quên mất là phải trừ đi 1, khác biệt là ở chỗ đó.
+
+22
+00:01:46,180 --> 00:01:50,920
+Cái này được gọi là điều chỉnh bậc tự do.
+
+23
+00:01:50,920 --> 00:01:55,001
+Tôi cũng không có thời gian, và cái này cũng không quan trọng nên chúng ta sẽ đi lướt qua.
+
+24
+00:01:55,001 --> 00:01:59,030
+Bởi vì cơ sở dữ liệu của chúng ta rất nhiều nên dù N hay N-1 cũng không khác nhau lắm.
+
+25
+00:01:59,030 --> 00:02:02,900
+Nhưng các bạn sẽ mất đi số bậc tự do trong dữ liệu của mình.
+
+26
+00:02:02,900 --> 00:02:07,170
+Các bạn đã tính giá trị trung bình, do đó nên
+
+27
+00:02:07,170 --> 00:02:09,510
+bậc tự do sẽ bị giảm đi.
+
+28
+00:02:09,509 --> 00:02:17,351
+Kết quả là 0.0127.
+
+29
+00:02:18,484 --> 00:02:19,667
+Được chứ?
+
+30
+00:02:19,667 --> 00:02:26,200
+Còn độ lệch chuẩn là bao nhiêu?
+
+31
+00:02:26,200 --> 00:02:35,662
+sigma1 mũ = 0.1125%, được chứ?
+
+32
+00:02:35,662 --> 00:02:36,270
+Tại sao lại như vậy?
+
+33
+00:02:36,270 --> 00:02:39,957
+Bởi vì tôi đã lấy căn.
+
+34
+00:02:39,957 --> 00:02:42,426
+Luôn nhớ rằng mức sinh lời luôn ở dưới dạng phần trăm.
+
+35
+00:02:42,426 --> 00:02:49,402
+Sigma 2 bình phương.
+Hi vọng tôi không đi nhanh quá.
+
+36
+00:02:49,402 --> 00:02:55,983
+(R2i-R2 trung bình) rồi lấy bình phương.
+
+37
+00:02:55,983 --> 00:03:01,880
+Kết quả là 0.0102.
+
+38
+00:03:01,880 --> 00:03:07,352
+Độ lệch chuẩn 
+
+39
+00:03:07,352 --> 00:03:12,201
+có giá trị là 0.1008%.
+
+40
+00:03:12,201 --> 00:03:19,790
+Giờ chúng ta có cả 2 phương sai và độ lệch chuẩn cho cả 2 mức an toàn 1 và 2.
+
+41
+00:03:19,790 --> 00:03:21,470
+Để tôi hỏi các bạn câu này.
+
+42
+00:03:22,790 --> 00:03:28,082
+Nếu tiến hành so sánh hai công ty này, và
+
+43
+00:03:28,082 --> 00:03:32,658
+bạn chỉ được phép đầu tư vào công ty 1 hoặc công ty 2.
+
+44
+00:03:32,658 --> 00:03:35,690
+Bạn chọn cái nào, biết những yếu tố khác không đáng kể.
+
+45
+00:03:35,690 --> 00:03:40,710
+Tuy nhiên, trong thực tế thì không bao giờ chúng ta làm vậy
+
+46
+00:03:40,710 --> 00:03:43,762
+bởi vì chúng ta thuộc nhóm né tránh rủi ro, cho dù có đến tận 2 mức an toàn.
+
+47
+00:03:43,762 --> 00:03:46,050
+Chúng ta sẽ đầu tư vào cả hai công ty luôn.
+
+48
+00:03:47,610 --> 00:03:49,090
+Khi nào thì những yếu tố trên không còn quan trọng?
+
+49
+00:03:49,090 --> 00:03:51,460
+Khi chúng hoàn toàn liên hệ với nhau.
+
+50
+00:03:51,460 --> 00:03:53,700
+Nhớ cái ví dụ mà tôi làm hôm trước không?
+
+51
+00:03:53,700 --> 00:03:57,420
+Nếu chúng hoàn toàn có liên hệ với nhau thì đầu tư vào nhiều công ty hoàn toàn không có ý nghĩa gì cả.
+
+52
+00:03:57,420 --> 00:04:00,810
+Chia đều số tiền vào 2 thứ khác nhau.
+
+53
+00:04:00,810 --> 00:04:05,250
+Tuy là khác nhau nhưng chúng lại tương đồng nhau ở một vài điểm.
+
+54
+00:04:05,250 --> 00:04:06,440
+Bản chất của chúng là như nhau, được chứ?
+
+55
+00:04:06,440 --> 00:04:09,790
+Đó là yếu tố quan trọng khác cần phải nhớ.
+
+56
+00:04:09,790 --> 00:04:12,660
+Tôi sẽ tính sigma 1 mũ, sigma 2 mũ.
+
+57
+00:04:12,660 --> 00:04:15,450
+Tôi sẽ tiếp tục tính những số tiếp theo vì tôi biết rằng
+
+58
+00:04:15,450 --> 00:04:17,030
+tôi không nên dừng lại.
+
+59
+00:04:17,029 --> 00:04:20,760
+Bởi vì chúng đều là các hiệp phương sai.
+
+60
+00:04:20,760 --> 00:04:23,720
+Chú ý kĩ đấy.
+
+61
+00:04:23,720 --> 00:04:28,080
+Những con số này không phải lúc nào cũng có ích,
+
+62
+00:04:28,080 --> 00:04:29,150
+ngay cả trong 2 công ty này.
+
+63
+00:04:29,150 --> 00:04:29,990
+Tại sao à?
+
+64
+00:04:29,990 --> 00:04:34,455
+Bởi vì tôi đã chọn khoản thời gian là 5 năm.
+
+65
+00:04:34,455 --> 00:04:39,650
+Khoảng thời gian đó có thể không mang tính đại diện cho toàn bộ dữ liệu.
+
+66
+00:04:39,650 --> 00:04:44,750
+Đặc biệt là trong những giai đoạn biến động, được chứ?
+
+67
+00:04:44,750 --> 00:04:45,890
+Các bạn hãy nhớ kĩ điều đó.
+
+68
+00:04:45,890 --> 00:04:50,934
+Ví dụ, khi các bạn quan sát dữ liệu và đối chiếu với thị trường chứng khoán Hoa Kì,
+
+69
+00:04:50,934 --> 00:04:56,078
+các mức sinh lời trung bình của thị trường chứng khoán rất cao.
+
+70
+00:04:56,078 --> 00:05:00,054
+Nhưng nếu các bạn quan sát thị trường chứng khoán toàn cầu,
+
+71
+00:05:00,054 --> 00:05:02,453
+thì mức sinh lời trung bình lại không cao bằng.
+
+72
+00:05:02,453 --> 00:05:07,790
+Nhiều người cho rằng có gì đó hoàn toàn bất thường
+
+73
+00:05:07,790 --> 00:05:10,422
+ở lượng dữ liệu thu thập được trong 80 năm của thế giới nói chung hay
+
+74
+00:05:10,422 --> 00:05:12,650
+90 năm đối với Hoa Kì nói riêng.
+
+75
+00:05:12,650 --> 00:05:16,745
+Bởi vì khi bạn xét đến khía cạnh trung bình,
+
+76
+00:05:16,745 --> 00:05:19,840
+phương sai của thị trường chứng khoán, bạn đều xét trong khoảng thời gian dài hạn.
+
+77
+00:05:20,870 --> 00:05:25,890
+Vì thế mỗi khi dùng khái niệm "Giá trị kì vọng", thực ra nó còn có ý nghĩa sâu xa hơn thế.
+
+78
+00:05:25,890 --> 00:05:28,950
+Nó chỉ đơn giản là phép tính trung bình theo 2 hay 3 thông số khác.
+
+79
+00:05:28,950 --> 00:05:32,450
+Đó là khái niệm quan trọng mà các bạn cần phải nhớ.
+
+80
+00:05:32,450 --> 00:05:34,970
+Các bạn không chỉ tính giá trị trung bình,
+
+81
+00:05:34,970 --> 00:05:38,230
+mà các bạn còn tính mức sinh lời mong đợi.
+
+82
+00:05:38,230 --> 00:05:39,600
+Chúng ta đi tiếp nào.
+
+83
+00:05:39,600 --> 00:05:45,220
+Giờ tôi sẽ tính hiệp phương sai của 1 và 2.
+
+84
+00:05:45,220 --> 00:05:51,220
+Hiệp phương sai của 1 và 2 rất dễ tính.
+
+85
+00:05:51,220 --> 00:05:53,334
+Tại sao à?
+Bởi vì nó cho thấy phương sai
+
+86
+00:05:53,334 --> 00:05:54,547
+ở một dạng khác.
+
+87
+00:05:54,547 --> 00:05:57,309
+Thay vì tính (R1i-R1 trung bình) rồi bình phương
+
+88
+00:05:57,309 --> 00:06:02,037
+chúng ta sẽ tính (R1i-R1 trung bình), (R2i-R2 trung bình) và sau cùng cộng hết chúng lại,
+
+89
+00:06:02,037 --> 00:06:04,597
+Đây là cách các bạn tính hiệp phương sai.
+
+90
+00:06:08,297 --> 00:06:16,190
+Các kí hiệu này được dùng trong các trường hợp khác nhau.
+
+91
+00:06:16,190 --> 00:06:21,952
+Chúng ta đều biết rằng hiệp phương sai này
+
+92
+00:06:21,952 --> 00:06:26,566
+ sẽ được tính bằng 1/(N - 1), đúng không?
+
+93
+00:06:26,566 --> 00:06:30,862
+Nhân với sigma của tích số (R1i-R1 trung bình) và
+
+94
+00:06:30,862 --> 00:06:38,449
+ (R2i-R2 trung bình) 
+
+95
+00:06:38,449 --> 00:06:43,240
+Với Excel thì các bạn hãy dùng hàm COV.
+
+96
+00:06:43,240 --> 00:06:48,214
+Nhớ thêm chữ S vào.
+
+97
+00:06:48,214 --> 00:06:51,210
+Giờ chúng ta sẽ làm với các số này trước.
+
+98
+00:06:51,210 --> 00:06:57,735
+Kết quả chúng ta tính được là 0.0007.
+
+99
+00:06:57,735 --> 00:07:02,070
+Khi ra kết quả này, tôi có thể rút ra được kết luận từ câu hỏi sau.
+
+100
+00:07:02,070 --> 00:07:05,740
+Mối liên hệ giữa mức an toàn 1 và mức an toàn 2 như thế nào?
+
+101
+00:07:05,740 --> 00:07:06,839
+Câu trả lời là gì?
+
+102
+00:07:07,985 --> 00:07:11,280
+Tích của chúng mang dấu dương
+
+103
+00:07:11,280 --> 00:07:15,410
+Lúc nào cũng vậy trong khoảng thời gian 5 năm.
+
+104
+00:07:16,580 --> 00:07:21,050
+Lát nữa các bạn sẽ thấy rằng nếu như chúng ta chọn khoảng thời gian một cách ngẫu nhiên,
+
+105
+00:07:21,050 --> 00:07:26,540
+thì chúng vẫn ra số dương.
+
+106
+00:07:26,540 --> 00:07:29,768
+Các bạn sẽ hiểu tại sao khi chúng ta qua phần kế tiếp.
+
+107
+00:07:29,768 --> 00:07:31,760
+Không phải là tôi không muốn nói.
+
+108
+00:07:31,760 --> 00:07:36,130
+Tôi muốn tự các bạn khám phá ra rằng tại sao chúng ta có thể kết luận như vậy?
+
+109
+00:07:36,130 --> 00:07:39,980
+Hãy tự tìm câu trả lời nếu các bạn có thể.
+
+110
+00:07:39,980 --> 00:07:41,950
+Và cố gắng tìm xem đặc điểm của nó nữa.
+
+111
+00:07:41,950 --> 00:07:43,370
+Hiệp phương sai này có gì đáng lưu ý?
+
+112
+00:07:43,370 --> 00:07:48,020
+Thậm chí tôi cũng không biết phải làm gì với số 0.0007 nữa.
+
+113
+00:07:48,020 --> 00:07:52,950
+Nó không đặc trưng cho độ lớn, không cho các bạn tính số beta,
+
+114
+00:07:52,950 --> 00:07:55,080
+không cho các bạn biết hệ số tương quan.
+
+115
+00:07:55,080 --> 00:08:02,160
+Giờ chúng ta sẽ tính hệ số tương quan và số beta của kết quả vừa có được.
+
+116
+00:08:02,160 --> 00:08:05,170
+Sau đó tôi sẽ dừng lại một chút 
+
+117
+00:08:05,170 --> 00:08:08,740
+để các bạn tính tương tự như trên cho các số khác nhau.
+
+118
+00:08:08,740 --> 00:08:12,390
+Các bạn hãy làm quen với dữ liệu trước, rồi chúng ta sẽ đi tiếp.
+
+119
+00:08:12,390 --> 00:08:19,120
+Chúng ta sẽ tính hệ số tương quan của 1 và 2.
+
+120
+00:08:19,120 --> 00:08:22,120
+Hệ số tương quan của 1 và 2 sẽ tính theo công thức nào?
+
+121
+00:08:23,930 --> 00:08:29,429
+ Sigma 1,2 chia cho tích số của sigma 1 và sigma 2.
+
+122
+00:08:34,808 --> 00:08:37,610
+Các bạn hiểu chứ?
+
+123
+00:08:37,610 --> 00:08:41,940
+Các bạn cũng có thể viết lại theo hiệp phương sai, độ lệch chuẩn,
+
+124
+00:08:41,940 --> 00:08:44,090
+bằng những kí hiệu khác.
+
+125
+00:08:44,090 --> 00:08:47,291
+Tôi hỏi các bạn, chúng ta có biết số này không?
+
+126
+00:08:47,291 --> 00:08:50,124
+Câu trả lời là có.
+
+127
+00:08:50,124 --> 00:08:55,650
+Kết quả chúng ta tính lúc nãy là 0.0007.
+
+128
+00:08:55,650 --> 00:09:00,768
+Tôi có biết các số ở mẫu số không?
+
+129
+00:09:00,768 --> 00:09:05,804
+Tôi đang dò để tìm ra số dúng.
+
+130
+00:09:05,804 --> 00:09:10,457
+0.1125 nhân với 
+
+131
+00:09:10,457 --> 00:09:16,381
+0.1008.
+
+132
+00:09:16,381 --> 00:09:23,956
+Nếu tính đúng thì kết quả sẽ là 0.062.
+
+133
+00:09:23,956 --> 00:09:30,469
+Liệu tôi có thể cắt nghĩa theo một số khác ngoài số 0.0007 không?
+
+134
+00:09:30,469 --> 00:09:31,960
+Câu trả lời là có.
+
+135
+00:09:31,960 --> 00:09:36,480
+Nếu tôi hỏi các bạn mức độ liên hệ của chúng với nhau như thê nào?
+
+136
+00:09:36,480 --> 00:09:39,280
+Đầu tiên, các bạn sẽ thấy tích của chúng là số dương
+
+137
+00:09:39,280 --> 00:09:42,500
+bằng cách nhìn vào các hiệp phương sai.
+
+138
+00:09:42,500 --> 00:09:46,480
+Nhưng sau đó các bạn sẽ trả lời rằng số đó dương nhưng không lớn lắm.
+
+139
+00:09:46,480 --> 00:09:47,260
+Tại sao lại như vậy?
+
+140
+00:09:47,260 --> 00:09:50,450
+Nếu vậy thì độ lớn của nó như thế nào?
+
+141
+00:09:50,450 --> 00:09:52,515
+Nó có thể lên đến tận +1.
+
+142
+00:09:54,360 --> 00:09:59,830
+Tuy khác thường, nhưng hệ số tương quan của nó vẫn chấp nhận được.
+
+143
+00:09:59,830 --> 00:10:01,460
+Số đó không lớn lắm.
+
+144
+00:10:01,460 --> 00:10:04,740
+Tôi cũng không nhấn mạnh rằng nó nên dương hay âm.
+
+145
+00:10:04,740 --> 00:10:06,220
+Dương hay âm không phải tốt hay xấu.
+
+146
+00:10:06,220 --> 00:10:08,970
+Vấn đề là các bạn hiểu nó như thế nào?
+
+147
+00:10:08,970 --> 00:10:10,124
+Có câu hỏi cho các bạn đây.
+
+148
+00:10:12,957 --> 00:10:14,988
+Số này sẽ bằng bao nhiêu?
+
+149
+00:10:14,988 --> 00:10:20,720
+Các bạn sẽ vội vàng cho rằng nó sẽ bằng số này.
+
+150
+00:10:22,600 --> 00:10:25,170
+Tôi định sẽ nói tiếp ở phần tiếp theo.
+
+151
+00:10:25,170 --> 00:10:29,120
+Có lẽ chúng ta nên dừng lại tại đây vì theo tôi
+
+152
+00:10:29,120 --> 00:10:30,090
+số beta khá là quan trọng.
+
+153
+00:10:30,090 --> 00:10:32,140
+Nên tôi sẽ dành thêm một chút thời gian cho phần đó.
+
+154
+00:10:32,140 --> 00:10:38,600
+Các bạn nên làm các câu 1-3, 1-4, 1-5, 2-3.
+
+155
+00:10:38,600 --> 00:10:44,042
+Hãy luyện tập tính các hệ số tương quan và các hiệp phương sai.
+
+156
+00:10:44,042 --> 00:10:45,650
+Nó cũng khá hay, và cũng khá hấp dẫn.
+
+157
+00:10:45,650 --> 00:10:49,590
+vì lượng thông tin các bạn có cũng khá nhiều.
+
+158
+00:10:49,590 --> 00:10:50,948
+Hẹn gặp lại các bạn ở phần sau.
+

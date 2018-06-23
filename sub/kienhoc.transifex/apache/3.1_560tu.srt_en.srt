@@ -1,0 +1,291 @@
+0
+00:00:00,000 --> 00:00:00,870
+https://youtu.be/ko5wYyxMCF8
+
+1
+00:00:00,870 --> 00:00:06,420
+SPEAKER: In the lab, you'll be exploring semi-structured data.
+
+2
+00:00:06,420 --> 00:00:10,550
+In particular, you'll be looking at a semi-structured log file.
+
+3
+00:00:10,550 --> 00:00:13,240
+These types of log files are created by printf statements
+
+4
+00:00:13,240 --> 00:00:15,020
+and server processes.
+
+5
+00:00:15,020 --> 00:00:18,290
+So for example, web servers or database servers or network
+
+6
+00:00:18,290 --> 00:00:22,040
+file servers, or by operating system components.
+
+7
+00:00:22,040 --> 00:00:25,575
+These log files are in a human readable text file format.
+
+8
+00:00:25,575 --> 00:00:27,700
+This is kind of ironic, because they're very rarely
+
+9
+00:00:27,700 --> 00:00:29,880
+actually read by a human.
+
+10
+00:00:29,880 --> 00:00:32,590
+You can store these files also, or archive them,
+
+11
+00:00:32,590 --> 00:00:35,420
+in binary or compressed formats.
+
+12
+00:00:35,420 --> 00:00:37,260
+The format of these files is typically
+
+13
+00:00:37,260 --> 00:00:40,510
+published or sometimes defined by the code.
+
+14
+00:00:40,510 --> 00:00:44,810
+And it can be very difficult to parse these files.
+
+15
+00:00:44,810 --> 00:00:49,580
+So we're going to be using an Apache web server log file.
+
+16
+00:00:49,580 --> 00:00:51,790
+The Apache web server log file format
+
+17
+00:00:51,790 --> 00:00:54,760
+is specified by the Apache common log format
+
+18
+00:00:54,760 --> 00:00:56,790
+specification.
+
+19
+00:00:56,790 --> 00:01:01,750
+So here's an example line from an Apache web server log file.
+
+20
+00:01:01,750 --> 00:01:06,070
+Let's go through the components of this log line.
+
+21
+00:01:06,070 --> 00:01:09,880
+The first component is the client IP address.
+
+22
+00:01:09,880 --> 00:01:12,140
+This is the IP address of the web browser
+
+23
+00:01:12,140 --> 00:01:15,720
+that contacted the web server.
+
+24
+00:01:15,720 --> 00:01:19,210
+The second component is the user identity
+
+25
+00:01:19,210 --> 00:01:21,950
+from the remote machine, and the third component
+
+26
+00:01:21,950 --> 00:01:25,840
+is the user identity from local log in.
+
+27
+00:01:25,840 --> 00:01:28,040
+Now in both cases, this is typically
+
+28
+00:01:28,040 --> 00:01:30,165
+just a hyphen, which means that it's not available.
+
+29
+00:01:30,165 --> 00:01:33,170
+
+30
+00:01:33,170 --> 00:01:35,680
+The next component is the request time.
+
+31
+00:01:35,680 --> 00:01:40,000
+And this is when the web client contacted the web server.
+
+32
+00:01:40,000 --> 00:01:42,570
+
+33
+00:01:42,570 --> 00:01:45,870
+The next component is the request from the client.
+
+34
+00:01:45,870 --> 00:01:50,340
+This is what your web browser sends to the web server.
+
+35
+00:01:50,340 --> 00:01:53,480
+And it's made up of several sub components.
+
+36
+00:01:53,480 --> 00:01:56,290
+The first sub component is the request method.
+
+37
+00:01:56,290 --> 00:01:59,980
+For example, get or post or put.
+
+38
+00:01:59,980 --> 00:02:03,600
+And the next sub component is the endpoint.
+
+39
+00:02:03,600 --> 00:02:06,890
+And this is a uniform resource identifier.
+
+40
+00:02:06,890 --> 00:02:09,900
+This is the URL.
+
+41
+00:02:09,900 --> 00:02:13,165
+The last component is the client protocol version.
+
+42
+00:02:13,165 --> 00:02:16,360
+
+43
+00:02:16,360 --> 00:02:20,350
+So our last two components of the log file line
+
+44
+00:02:20,350 --> 00:02:24,190
+are the status code, and this is what the server sends back
+
+45
+00:02:24,190 --> 00:02:25,370
+to the client.
+
+46
+00:02:25,370 --> 00:02:28,810
+Typically, it's a 200 and says that everything was OK.
+
+47
+00:02:28,810 --> 00:02:34,990
+But there also other codes like 300 or 400 or 500 series codes.
+
+48
+00:02:34,990 --> 00:02:38,970
+And these typically indicate some type of error or problem.
+
+49
+00:02:38,970 --> 00:02:41,330
+The last component is the size of the object that's
+
+50
+00:02:41,330 --> 00:02:43,530
+being returned to the client.
+
+51
+00:02:43,530 --> 00:02:46,150
+Sometimes this will be a dash or a zero
+
+52
+00:02:46,150 --> 00:02:47,575
+if no content is returned.
+
+53
+00:02:47,575 --> 00:02:50,670
+
+54
+00:02:50,670 --> 00:02:55,480
+So in the lab, you will be exploring a NASA web server
+
+55
+00:02:55,480 --> 00:02:57,060
+access log.
+
+56
+00:02:57,060 --> 00:03:01,380
+This log covers 21 days from the 1st of August
+
+57
+00:03:01,380 --> 00:03:06,600
+and then the 3rd of August to the 22nd of August from 1995.
+
+58
+00:03:06,600 --> 00:03:10,010
+And it includes one million requests.
+
+59
+00:03:10,010 --> 00:03:11,870
+Now we've partially cleaned the log for you
+
+60
+00:03:11,870 --> 00:03:13,990
+by removing some very hard to parse requests.
+
+61
+00:03:13,990 --> 00:03:17,170
+
+62
+00:03:17,170 --> 00:03:22,040
+We can ask a number of basic log analysis questions.
+
+63
+00:03:22,040 --> 00:03:23,810
+So overall, there are questions like what
+
+64
+00:03:23,810 --> 00:03:26,500
+are the statistics for the content that's being returned?
+
+65
+00:03:26,500 --> 00:03:29,300
+Things like the sizes or statuses.
+
+66
+00:03:29,300 --> 00:03:31,630
+What are the types of the return codes?
+
+67
+00:03:31,630 --> 00:03:36,420
+Or how many 404-- that is, page not found errors-- are there?
+
+68
+00:03:36,420 --> 00:03:37,870
+There are also temporal questions
+
+69
+00:03:37,870 --> 00:03:40,740
+that we can ask, such as how many unique hosts are there
+
+70
+00:03:40,740 --> 00:03:44,280
+per day, how many requests are there per day,
+
+71
+00:03:44,280 --> 00:03:47,870
+or on average, how many requests are there per host?
+
+72
+00:03:47,870 --> 00:03:51,170
+And how many 404 errors are there per day?
+
+73
+00:03:51,170 --> 00:03:53,720
+Again, this is page not found.
+

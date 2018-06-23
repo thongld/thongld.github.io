@@ -1,0 +1,443 @@
+1
+00:00:07,480 --> 00:00:10,800
+Hệ thống hỗ trợ quyết định có liên quan đến
+
+
+2
+00:00:10,800 --> 00:00:14,530
+việc sử dụng hệ thống chuyển giao dữ liệu trên máy tính
+
+3
+00:00:14,530 --> 00:00:16,240
+để giúp con người quyết định tốt hơn.
+
+4
+00:00:16,240 --> 00:00:18,111
+Ta đã nói về 2 hệ hỗ trợ ra quyết định DSS
+(Decision Support System).
+
+5
+00:00:18,111 --> 00:00:22,850
+Đầu tiên là phương pháp hỗ trợ dựa trên mô hình dựng sẵn.
+
+6
+00:00:22,850 --> 00:00:27,480
+Thứ 2 là dựa trên tình huống, hay dữ liệu có sẵn.
+
+7
+00:00:27,480 --> 00:00:30,520
+Trong phần này, tôi sẽ đưa ra vài nghiên cứu 
+
+8
+00:00:30,520 --> 00:00:34,590
+của Steve Hoch và David Schkade
+ về 2 phương pháp khác nhau này
+
+9
+00:00:34,590 --> 00:00:37,760
+và so sánh chúng.
+
+10
+00:00:37,760 --> 00:00:40,760
+Nhưng trước khi đi vào so sánh, 
+hãy thử hình dung xem những phương pháp này 
+
+11
+00:00:40,760 --> 00:00:43,370
+ vận hành như thế nào.
+
+12
+00:00:43,370 --> 00:00:47,910
+Đầu tiên là phương pháp dựa trên mô hình dựng sẵn.
+
+13
+00:00:47,910 --> 00:00:50,609
+Hãy nghĩ đến ví dụ ta đã nói trước đó.
+
+14
+00:00:50,609 --> 00:00:55,130
+Nạn là 1 nhân viên cho vay tín dụng,
+ 1 công ty tìm đến bạn để đăng ký vay vốn,
+
+15
+00:00:55,130 --> 00:01:00,120
+bạn phải đánh giá xem công ty này
+ đủ điều kiện được vay hay không.
+
+16
+00:01:00,120 --> 00:01:03,100
+Hãy hình dung có 4 tiêu chí bạn sẽ dùng, 
+
+17
+00:01:03,100 --> 00:01:04,100
+cũng là 4 thuộc tính.
+
+18
+00:01:04,100 --> 00:01:08,920
+Tỷ lệ nợ, chu kỳ dòng tiền, lợi tức,
+
+19
+00:01:08,920 --> 00:01:10,360
+và vị trí của công ty.
+
+20
+00:01:10,360 --> 00:01:13,410
+Cái mà bạn sẽ đi đến là 1 mô hình như thế này,
+
+21
+00:01:13,410 --> 00:01:18,040
+với xếp hạng tín nhiệm là hằng số a cộng b1 nhân tỷ lệ nợ nần,
+ cộng b2 nhân dòng tiền
+
+22
+00:01:18,040 --> 00:01:20,400
+ và tương tự thế.
+
+23
+00:01:20,400 --> 00:01:26,640
+Thực chất bạn có thể ước tính giá trị 
+cho a, b1, b2, b3 và b4
+
+24
+00:01:26,640 --> 00:01:28,320
+từ số liệu của các nguồn khác nhau.
+
+25
+00:01:28,320 --> 00:01:32,110
+Bạn có thể thuê một nhóm các quản lý
+ hoặc chuyên gia
+
+26
+00:01:32,110 --> 00:01:36,910
+để cùng bàn bạc và đưa ra đánh giá chuyên nghiệp
+xem giá trị của các a và b
+
+27
+00:01:36,910 --> 00:01:38,280
+sẽ như thế nào.
+
+28
+00:01:38,280 --> 00:01:42,690
+Đồng thời, bạn có thể lưu lại 
+các mẫu đơn đăng ký trước
+
+29
+00:01:42,690 --> 00:01:47,040
+với thông tin về những thuộc tính này, hay các gợi ý
+
+30
+00:01:47,040 --> 00:01:51,150
+để khi cần dùng ta sẽ xác định
+ sự thành công của các công ty này,
+
+31
+00:01:51,150 --> 00:01:57,020
+sau đó dùng phân tích hồi quy để đưa ra giá trị thực
+ của a, b1 và b2
+
+32
+00:01:57,020 --> 00:01:58,220
+mô tả chính xác thành công đó.
+
+33
+00:01:58,220 --> 00:02:03,200
+Cuối cùng, bạn có thể đơn thuần
+ dùng đánh giá mà bạn đã có từ trước
+
+34
+00:02:03,200 --> 00:02:08,209
+cùng với phân tích hồi quy để biết 
+các giá trị a và b sẽ như thế nào.
+
+35
+00:02:08,209 --> 00:02:12,069
+Bây giờ, nếu bạn có hệ thống máy tính
+ dùng phương trình hồi quy này,
+
+36
+00:02:12,069 --> 00:02:14,950
+ nó sẽ yêu cầu bạn nhập giá trị của 4 thuộc tính
+
+37
+00:02:14,950 --> 00:02:18,680
+sau đó sẽ đưa ra kết quả xem công ty đó có đủ điều kiện 
+
+38
+00:02:18,680 --> 00:02:19,709
+cho vay hay không.
+
+39
+00:02:19,709 --> 00:02:23,030
+Bạn có thể đưa ra quyết định dựa trên mẫu này
+bất kể bạn có muốn
+
+40
+00:02:23,030 --> 00:02:25,450
+ cho vay hay không.
+
+41
+00:02:25,450 --> 00:02:30,040
+Đấy là hệ thống hỗ trợ quyết định 
+dựa trên mô hình đơn giản.
+
+42
+00:02:30,040 --> 00:02:32,820
+Hãy đến với DSS dựa trên tình huống có sẵn.
+
+43
+00:02:32,820 --> 00:02:36,650
+Với DSS dựa trên tình huống, 
+bạn nhận được 1 đơn đăng ký
+
+44
+00:02:36,650 --> 00:02:40,959
+và yêu cầu hệ thống tìm ra 1 tình huống đã có
+
+45
+00:02:40,959 --> 00:02:43,730
+tương tự với trường hợp này.
+
+46
+00:02:43,730 --> 00:02:48,650
+Giao diện của hệ thống hỗ trợ dựa trên tình huống
+
+47
+00:02:48,650 --> 00:02:49,650
+sẽ như thế này.
+
+48
+00:02:49,650 --> 00:02:52,160
+Ở trên cùng bạn thấy 1 ứng viên mới.
+
+49
+00:02:52,160 --> 00:02:57,870
+Chẳng hạn, công ty XYZ có tỷ lệ nợ nần là 2.7, 
+dòng tiền là 1.8,
+
+50
+00:02:57,870 --> 00:03:02,000
+xu hướng lợi tức là 14, và công ty này
+ ở vùng trung đông Hoa Kỳ.
+
+51
+00:03:02,000 --> 00:03:04,260
+Bạn cần đánh giá xem xếp hạng tín nhiệm
+ của công ty này
+
+52
+00:03:04,260 --> 00:03:06,639
+là bao nhiêu.
+
+53
+00:03:06,639 --> 00:03:11,730
+Bạn có thể yêu cầu máy tính xác địn
+h 1 con số trong các trường hợp trước
+
+54
+00:03:11,730 --> 00:03:16,730
+mà bạn đã có thông tin về xếp hạng tín nhiệm.
+
+55
+00:03:16,730 --> 00:03:19,319
+Máy tính sẽ thực hiện 1 thuật toán đơn giản
+
+56
+00:03:19,319 --> 00:03:22,720
+được gọi là giảm thiểu bình phương nhỏ nhất
+
+57
+00:03:22,720 --> 00:03:27,280
+hay giảm thiểu khoảng cách Ơ-clit 
+trong không gian 4 chiều
+
+58
+00:03:27,280 --> 00:03:30,840
+giữa ứng viên mới và dữ liệu 
+các tình huống đã có.
+
+59
+00:03:30,840 --> 00:03:34,760
+Giả sử máy tính chọn ra 4 công ty.
+
+60
+00:03:34,760 --> 00:03:39,239
+Jayrod, Lansco, Lobsen và MS và Z.
+
+61
+00:03:39,239 --> 00:03:43,390
+ 4 công ty này được chọn ra dựa trên tiêu chí
+ mà mô hình sử dụng
+
+62
+00:03:43,390 --> 00:03:47,180
+tương tự với ửng viên mới.
+
+63
+00:03:47,180 --> 00:03:50,939
+Bây giờ bạn đã có dữ liệu về 4 công ty này 
+
+64
+00:03:50,939 --> 00:03:53,939
+và xếp hạng tín nhiệm của họ,
+ vì thực chất bạn đã có kinh nghiệm 
+
+65
+00:03:53,939 --> 00:03:56,530
+xử lý số liệu của 4 công ty này.
+
+66
+00:03:56,530 --> 00:04:01,329
+Tiếp theo, bạn có thể nói, well, XYZ giống
+
+67
+00:04:01,329 --> 00:04:03,530
+ công ty nào nhất trong số 4 công ty?
+
+68
+00:04:03,530 --> 00:04:06,599
+Ta xem xét điều gì xảy ra với các công ty này,
+ và sau đó đánh giá 
+
+69
+00:04:06,599 --> 00:04:08,599
+xem điều gì sẽ xảy ra với công ty XYZ.
+
+70
+00:04:08,599 --> 00:04:11,829
+Quá trình tâm lý mà ta áp dụng
+ để đưa ra những đánh giá như thế
+
+71
+00:04:11,829 --> 00:04:15,629
+gọi là dùng mỏ nẻo và điều chỉnh.
+
+72
+00:04:15,629 --> 00:04:18,459
+DSS đưa ra các tình huống cũ để tạo ra mỏ neo.
+
+73
+00:04:18,459 --> 00:04:24,250
+Chẳng hạn bạn kết luận XYZ 
+giống với MS và Z nhất
+
+74
+00:04:24,250 --> 00:04:25,250
+ và MS và Z được 45 điểm.
+
+75
+00:04:25,250 --> 00:04:27,720
+Bạn sẽ đánh giá XYZ 45 điểm.
+
+76
+00:04:27,720 --> 00:04:28,720
+Sau đó bạn sẽ điều chỉnh một chút.
+
+77
+00:04:28,720 --> 00:04:31,170
+Bạn sẽ xét là, well, họ đạt 45 điểm
+
+78
+00:04:31,170 --> 00:04:32,600
+nhưng họ ở bờ Đông.
+
+79
+00:04:32,600 --> 00:04:34,120
+Còn XYZ là 1 công ty miền trung đông.
+
+80
+00:04:34,120 --> 00:04:37,590
+Điều đó thay dổi dự đoán điểm số của bạn ra sao?
+
+81
+00:04:37,590 --> 00:04:40,840
+Đó là hệ thống DSS.
+
+82
+00:04:40,840 --> 00:04:45,340
+Trong rất nhiều thí nghiệm, Hoch và Schkade đã so sánh
+
+83
+00:04:45,340 --> 00:04:46,630
+2 hệ thống khác nhau này.
+
+84
+00:04:46,630 --> 00:04:49,820
+Họ đã mời các quản lý đến và đánh giá.
+
+85
+00:04:49,820 --> 00:04:53,850
+Họ được phân vào 1 trong 2 hệ thống này,
+
+86
+00:04:53,850 --> 00:04:57,080
+có khi là cả 2.
+
+87
+00:04:57,080 --> 00:04:58,210
+Đây là kết quả.
+
+88
+00:04:58,210 --> 00:05:02,090
+Khi môi trường ổn định, không có thay đổi quan trọng nào,
+
+89
+00:05:02,090 --> 00:05:07,250
+không sản phẩm mới nào ra mắt,
+ không khủng hỏag thu nhập,
+
+90
+00:05:07,250 --> 00:05:11,150
+không có biến cố gì, thì hệ thống dựa trên mô hình 
+
+91
+00:05:11,150 --> 00:05:15,260
+ chính xác hơn hệ thống dựa trên tình huống.
+
+92
+00:05:15,260 --> 00:05:19,380
+Nói cách khác, những người dùng hệ thống dựa trên mô hình
+
+93
+00:05:19,380 --> 00:05:22,890
+đưa ra các đánh giá chính xác hơn
+
+94
+00:05:22,890 --> 00:05:23,970
+ người dùng hệ thống dựa trên tình huống.
+
+95
+00:05:23,970 --> 00:05:28,070
+Nhưng ngược lại, khi môi trường hỗn loạn,
+ có sự suy thoái kinh tế,
+
+96
+00:05:28,070 --> 00:05:32,720
+ một sản phẩm mới ra, hay có quy định mới
+
+97
+00:05:32,720 --> 00:05:37,440
+thì mô hình cũ không còn chính xác nữa 
+
+98
+00:05:37,440 --> 00:05:40,070
+mà lúc này hệ thống dựa trên tình huống
+ sẽ chính xác hơn.
+
+99
+00:05:40,070 --> 00:05:41,350
+hệ thống dựa trên mô hình.
+
+100
+00:05:41,350 --> 00:05:45,930
+Tuy nhiên, điều thú vị là, dù môi trường như thế nào
+
+101
+00:05:45,930 --> 00:05:48,190
+dùng cả 2 hệ thống sẽ chính xác hơn
+ chỉ làm 1 trong 2.
+
+102
+00:05:48,190 --> 00:05:51,940
+Đó là bài học mấu chốt rất thú vị 
+mà ta rút ra từ nghiên cứu của họ.
+

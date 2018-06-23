@@ -1,0 +1,530 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/y-v2zJh53bk
+
+1
+00:00:00,000 --> 00:00:00,157
+
+2
+00:00:00,157 --> 00:00:02,615
+DR. RAMESH YERRABALLI: So let's
+take a look at what interrupts are.
+
+3
+00:00:02,615 --> 00:00:07,050
+
+4
+00:00:07,050 --> 00:00:10,450
+The definition of an
+interrupt is that it's
+
+5
+00:00:10,450 --> 00:00:22,060
+a hardware triggered software action.
+
+6
+00:00:22,060 --> 00:00:25,460
+DR JONATHAN VALVANO: Professor
+Yerraballi, what if I had two tasks
+
+7
+00:00:25,460 --> 00:00:28,830
+I wanted my software to do?
+
+8
+00:00:28,830 --> 00:00:34,360
+DR. RAMESH YERRABALLI: Let's say
+we take a busy wait approach.
+
+9
+00:00:34,360 --> 00:00:36,980
+So there are two tasks
+that we want to perform.
+
+10
+00:00:36,980 --> 00:00:40,320
+We check for the condition
+for the first task.
+
+11
+00:00:40,320 --> 00:00:42,910
+Is it time to do the first task?
+
+12
+00:00:42,910 --> 00:00:47,240
+And the condition says, no, it's
+not time to do the first task.
+
+13
+00:00:47,240 --> 00:00:49,370
+So we repeat and check again.
+
+14
+00:00:49,370 --> 00:00:51,480
+So this says no.
+
+15
+00:00:51,480 --> 00:00:54,070
+So we keep checking.
+
+16
+00:00:54,070 --> 00:00:59,660
+And when the answer is yes,
+we perform the task, whatever
+
+17
+00:00:59,660 --> 00:01:05,290
+the task might be-- Task 1, let's say.
+
+18
+00:01:05,290 --> 00:01:09,330
+And then we go on, check the
+same thing for the second task--
+
+19
+00:01:09,330 --> 00:01:11,980
+whether the condition is
+satisfied for the second task.
+
+20
+00:01:11,980 --> 00:01:16,160
+If it's not satisfied,
+I go back, check again.
+
+21
+00:01:16,160 --> 00:01:19,480
+And then if it is
+satisfied, I will perform
+
+22
+00:01:19,480 --> 00:01:24,390
+the second task whatever
+the task might be.
+
+23
+00:01:24,390 --> 00:01:29,220
+And then I come down
+and perform other tasks.
+
+24
+00:01:29,220 --> 00:01:32,080
+
+25
+00:01:32,080 --> 00:01:34,810
+This is the other things that I perform.
+
+26
+00:01:34,810 --> 00:01:40,200
+And when I'm done, I'm going to go
+back there and repeat this process.
+
+27
+00:01:40,200 --> 00:01:45,930
+Now, this is obviously
+very wasteful of resources.
+
+28
+00:01:45,930 --> 00:01:50,480
+Because if the first task is not
+ready but the second task is ready,
+
+29
+00:01:50,480 --> 00:01:54,980
+I can't go to the second task
+because I'm stuck in this wait state.
+
+30
+00:01:54,980 --> 00:01:59,610
+And the others only get done when
+both the tasks have been performed.
+
+31
+00:01:59,610 --> 00:02:06,500
+So as we said, one of the things
+about an Interrupt-based solution
+
+32
+00:02:06,500 --> 00:02:13,690
+is that we do not have to wait for
+something that has to be ready.
+
+33
+00:02:13,690 --> 00:02:15,710
+When the task is ready,
+it will interrupt us.
+
+34
+00:02:15,710 --> 00:02:20,510
+So here we have our Task 1.
+
+35
+00:02:20,510 --> 00:02:24,850
+And we perform the Task 1
+when there is an interrupt.
+
+36
+00:02:24,850 --> 00:02:26,540
+So this is some Interrupt 1.
+
+37
+00:02:26,540 --> 00:02:30,690
+The interrupt causes the Task
+1 to perform the task, Task1
+
+38
+00:02:30,690 --> 00:02:39,415
+and we return from interrupt.
+
+39
+00:02:39,415 --> 00:02:44,160
+
+40
+00:02:44,160 --> 00:02:49,590
+So again, if the second task is ready--
+the conditions for the second task are
+
+41
+00:02:49,590 --> 00:02:54,370
+ready--there'll be an Interrupt
+2 that will trigger this task.
+
+42
+00:02:54,370 --> 00:02:57,110
+We perform the task, Task 2.
+
+43
+00:02:57,110 --> 00:03:03,530
+And we return from interrupt.
+
+44
+00:03:03,530 --> 00:03:12,880
+Now the good thing is, the main program,
+which is a loop, if you remember,
+
+45
+00:03:12,880 --> 00:03:20,940
+will perform some set up so
+that it enables the interrupts.
+
+46
+00:03:20,940 --> 00:03:26,060
+And it performs these other
+functions-- other interesting things,
+
+47
+00:03:26,060 --> 00:03:28,540
+which is the same as this.
+
+48
+00:03:28,540 --> 00:03:31,990
+And it continues to perform
+these other functions, which
+
+49
+00:03:31,990 --> 00:03:35,270
+may be of importance and
+which are predictable.
+
+50
+00:03:35,270 --> 00:03:42,000
+And when an interrupt
+occurs, we have a suspension.
+
+51
+00:03:42,000 --> 00:03:43,970
+We suspend.
+
+52
+00:03:43,970 --> 00:03:46,350
+We perform the task.
+
+53
+00:03:46,350 --> 00:03:49,240
+Let's say that this task is the one.
+
+54
+00:03:49,240 --> 00:03:54,370
+When the return from interrupt
+occurs, we resume where we left off.
+
+55
+00:03:54,370 --> 00:03:58,120
+This way, we are
+responsive to the interrupt
+
+56
+00:03:58,120 --> 00:04:02,410
+without having to continuously
+check for whether the conditions are
+
+57
+00:04:02,410 --> 00:04:05,590
+satisfied for the task.
+
+58
+00:04:05,590 --> 00:04:09,970
+So we saw the overall
+idea behind interrupts.
+
+59
+00:04:09,970 --> 00:04:12,810
+So let's delve into the details.
+
+60
+00:04:12,810 --> 00:04:15,380
+First, we'll look at
+the conditions that need
+
+61
+00:04:15,380 --> 00:04:20,250
+to be satisfied for
+an interrupt to occur.
+
+62
+00:04:20,250 --> 00:04:28,770
+This is usually part of our setup--
+our setup ritual, if you will.
+
+63
+00:04:28,770 --> 00:04:31,120
+So the conditions that
+need to be satisfied,
+
+64
+00:04:31,120 --> 00:04:41,040
+the first condition is we have to
+arm the device-- the external device
+
+65
+00:04:41,040 --> 00:04:49,550
+or the internal device that is going
+to interrupt the microcontroller.
+
+66
+00:04:49,550 --> 00:04:52,990
+There is some flag
+associated with it that
+
+67
+00:04:52,990 --> 00:04:59,850
+says that this device is now
+able to interrupt our processor.
+
+68
+00:04:59,850 --> 00:05:02,010
+The second thing that
+we're going to do is
+
+69
+00:05:02,010 --> 00:05:13,580
+we're going to enable
+the device specifics.
+
+70
+00:05:13,580 --> 00:05:20,930
+There is a module within our
+microcontroller called the Nested
+
+71
+00:05:20,930 --> 00:05:26,940
+Vectored Interrupt
+Controller, which is a
+
+72
+00:05:26,940 --> 00:05:30,710
+kind of the module that
+controls all interrupts.
+
+73
+00:05:30,710 --> 00:05:37,274
+So we enable the NVIC specifically
+for that particular device-- device
+
+74
+00:05:37,274 --> 00:05:37,773
+specific.
+
+75
+00:05:37,773 --> 00:05:43,310
+
+76
+00:05:43,310 --> 00:05:45,550
+Now the third thing
+we will do is there is
+
+77
+00:05:45,550 --> 00:05:48,910
+a global enable bit called the I bit.
+
+78
+00:05:48,910 --> 00:05:54,620
+This is a global interrupt enable.
+
+79
+00:05:54,620 --> 00:05:58,142
+We will make sure that
+this is equal to 0.
+
+80
+00:05:58,142 --> 00:06:06,100
+The I bit is used usually to turn all
+interrupts off or turn all interrupts
+
+81
+00:06:06,100 --> 00:06:06,790
+on.
+
+82
+00:06:06,790 --> 00:06:12,810
+It is the main interrupt flag.
+
+83
+00:06:12,810 --> 00:06:18,640
+The fourth thing that we
+have to do is the priority.
+
+84
+00:06:18,640 --> 00:06:26,260
+That is, devices can have
+associated priorities.
+
+85
+00:06:26,260 --> 00:06:30,010
+In other words, the interrupts
+can have specific priorities.
+
+86
+00:06:30,010 --> 00:06:34,360
+That is, if you want the device
+to interrupt the processor,
+
+87
+00:06:34,360 --> 00:06:40,105
+the device should have a priority
+higher than the task that
+
+88
+00:06:40,105 --> 00:06:42,090
+is currently being run.
+
+89
+00:06:42,090 --> 00:06:45,250
+If you have two devices,
+then we set their priorities
+
+90
+00:06:45,250 --> 00:06:47,920
+relatively so that we
+decide which device
+
+91
+00:06:47,920 --> 00:06:52,830
+can interrupt which device
+while it's being serviced.
+
+92
+00:06:52,830 --> 00:06:58,910
+The last thing that we want
+to look at is the trigger.
+
+93
+00:06:58,910 --> 00:07:03,640
+Unlike these steps--
+unlike the Steps 1, 2, 3,
+
+94
+00:07:03,640 --> 00:07:13,030
+4 which are part of the setup ritual--
+the trigger is an asynchronous event.
+
+95
+00:07:13,030 --> 00:07:15,850
+This is what causes
+the interrupt to occur.
+
+96
+00:07:15,850 --> 00:07:19,940
+So let's say our device
+were a switch-- if I
+
+97
+00:07:19,940 --> 00:07:22,420
+had a switch, a button if you will.
+
+98
+00:07:22,420 --> 00:07:28,750
+So when the switch is
+open, let's say there
+
+99
+00:07:28,750 --> 00:07:32,190
+is no trigger-- if that's
+what I'm looking for.
+
+100
+00:07:32,190 --> 00:07:37,790
+But once the switch is
+closed, that causes a trigger.
+
+101
+00:07:37,790 --> 00:07:41,790
+Which means that the device
+causes an interrupt, which
+
+102
+00:07:41,790 --> 00:07:44,950
+is registered by the module.
+
+103
+00:07:44,950 --> 00:07:47,900
+And it is reacted to.
+
+104
+00:07:47,900 --> 00:07:58,410
+So in our case, what we will see is
+there will be a bit-- an RIS register.
+
+105
+00:07:58,410 --> 00:08:01,410
+And there'll to be
+some bit here that will
+
+106
+00:08:01,410 --> 00:08:05,510
+be enabled to tell us that
+the trigger has occurred.
+
+107
+00:08:05,510 --> 00:08:07,640
+DR JONATHAN VALVANO:
+What does RIS stand for?
+
+108
+00:08:07,640 --> 00:08:08,973
+DR. RAMESH YERRABALLI: Oh, yeah.
+
+109
+00:08:08,973 --> 00:08:13,037
+RIS stands for Raw Interrupt Status.
+
+110
+00:08:13,037 --> 00:08:15,620
+DR JONATHAN VALVANO: So these
+are where the trigger flags are?
+
+111
+00:08:15,620 --> 00:08:18,453
+DR. RAMESH YERRABALLI: These are
+where the trigger flags are stored.
+
+112
+00:08:18,453 --> 00:08:23,110
+And this is what the processor is
+checking when it knows to figure it out
+
+113
+00:08:23,110 --> 00:08:26,070
+when it has to cause an interrupt.
+
+114
+00:08:26,070 --> 00:08:27,587

@@ -1,0 +1,176 @@
+0
+00:00:06,300 --> 00:00:11,820
+Bằng việc rút nửa bài test, ta đang mặc định rằng nửa đầu 
+
+1
+00:00:11,820 --> 00:00:14,929
+và nửa sau bài test đang đo cùng một thứ.
+
+2
+00:00:14,929 --> 00:00:20,330
+Nếu bài test có câu hỏi về trí thông minh ngôn ngữ ở nửa đầu và trí thông minh
+
+3
+00:00:20,330 --> 00:00:26,220
+cảm nhận không gian ở nửa sau, hai phần bài test không đo cùng một tiêu chí. 
+
+4
+00:00:26,220 --> 00:00:30,430
+Nếu ta chia đôi bài test và so sánh điểm số hai nửa với nhau,
+
+5
+00:00:30,430 --> 00:00:35,640
+điểm số có thể sẽ khác nhau - không phải do bài test không đáng tin cậy
+
+6
+00:00:35,640 --> 00:00:38,820
+mà do ta đang so sánh hai bài test đo hai tiêu chí khác nhau.
+
+7
+00:00:38,829 --> 00:00:43,860
+Ta có thể giải quyết vấn đề bằng cách chia bài test theo cách khác.
+
+8
+00:00:43,860 --> 00:00:46,500
+Có rất nhiều cách để chia đôi một bài test.
+
+9
+00:00:46,500 --> 00:00:53,130
+Có thể chia câu hỏi theo chẵn - lẻ hoặc xáo lẫn chúng rồi chia ngẫu nhiên ra hai nhóm.
+
+10
+00:00:53,130 --> 00:00:57,160
+Theo thống kê, độ tin cậy bán phần làm việc này rất tốt.
+
+11
+00:00:57,160 --> 00:01:01,320
+Phương thức này xáo lẫn và chia câu hỏi về tất cả các nửa phần có thể chia 
+
+12
+00:01:01,320 --> 00:01:04,309
+sau đó đưa ra tỉ lệ tương quan trung bình giữa các nửa phần.
+
+13
+00:01:04,309 --> 00:01:06,190
+Đây chính là chức năng của độ tin cậy bán phần.
+
+14
+00:01:06,190 --> 00:01:08,500
+Tuyệt vời đấy chứ!
+
+15
+00:01:08,500 --> 00:01:13,200
+Độ tin cậy kiểm chứng trước - sau yêu cầu người tham gia phải làm một bài test
+
+16
+00:01:13,200 --> 00:01:15,490
+hai lần.
+
+17
+00:01:15,490 --> 00:01:19,479
+Ví dụ, ta có thể nhờ một nhóm sinh viên làm bài test 
+
+18
+00:01:19,479 --> 00:01:24,220
+trong tuần đầu học kỳ, rồi nhờ họ làm lại lần nữa 
+
+19
+00:01:24,220 --> 00:01:26,229
+vào tuần cuối  của học kỳ.
+
+20
+00:01:26,229 --> 00:01:29,960
+Sau đó ta so sánh kết quả giữa hai lần làm test.
+
+21
+00:01:29,960 --> 00:01:34,510
+rồi đưa dữ liệu lên biểu đồ, tôi đoán đến đây các bạn đã biết tôi sẽ làm gì!
+
+22
+00:01:34,510 --> 00:01:38,610
+Đây chính là biểu đồ giống biểu đồ trước với ý tưởng thực hiện giống nhau.
+
+23
+00:01:38,610 --> 00:01:45,119
+Ta đang tìm những người có điểm thấp ở cả hai lần làm bài,
+
+24
+00:01:45,119 --> 00:01:49,980
+và những người được điểm cao ở cả hai lần làm.
+
+25
+00:01:49,980 --> 00:01:53,799
+Điểm số hai lần làm bài gần như bằng nhau. 
+
+26
+00:01:53,799 --> 00:01:57,049
+Đồng nghia với việc bài test có độ tin cậy cao.
+
+27
+00:01:57,049 --> 00:02:02,560
+Nhưng đây sẽ là điểm số nếu bài test không có độ tin cậy.
+
+28
+00:02:02,560 --> 00:02:06,760
+Ta không thấy mối tương quan giữa điểm số lần làm bài đầu tiên
+
+29
+00:02:06,760 --> 00:02:09,910
+và lần làm bài thứ hai.
+
+30
+00:02:09,910 --> 00:02:12,160
+Chúng thay đổi liên tục.
+
+31
+00:02:12,160 --> 00:02:16,300
+Đây chính là khái niệm và cách đánh giá độ tin cậy.
+
+32
+00:02:16,300 --> 00:02:22,190
+Độ tin cậy kiểm chứng trước - sau cho rằng những gì ta đo lại ở bài test là bất biến.
+
+33
+00:02:22,190 --> 00:02:28,390
+Ví dụ, mức độ thông minh của con người thường khá ổn định, 
+
+34
+00:02:28,390 --> 00:02:30,370
+tính cách cũng là bất biến.
+
+35
+00:02:30,370 --> 00:02:35,739
+Độ tin cậy kiểm chứng trước - sau cũng cho rằng những thay đổi trong câu trả lời 
+
+36
+00:02:35,739 --> 00:02:40,580
+không phải do người tham gia làm bài test này nhiều lần.
+
+37
+00:02:40,580 --> 00:02:45,280
+Ví dụ, có thể người tham gia đã biết cách làm bài tốt hơn sau lần làm thứ nhất
+
+38
+00:02:45,280 --> 00:02:48,300
+nên kết quả lần thứ hai của họ cao hơn.
+
+39
+00:02:48,300 --> 00:02:52,160
+Nếu làm lại các bài kiểm tra của khóa học này, chắc hẳn bạn sẽ đạt được điểm cao hơn
+
+40
+00:02:52,160 --> 00:02:56,480
+ở lần thứ hai vì bạn đã biết trước câu hỏi và cách trả lời tốt hơn.
+
+41
+00:02:57,810 --> 00:03:02,270
+Vì những lí do này, ta cần chú ý hơn khi vận dụng độ tin cậy kiểm chứng trước - sau,
+
+42
+00:03:02,270 --> 00:03:06,819
+đây cũng là lí do tại sao nhiều bài test được bảo hộ bởi các cơ quan chuyên môn 
+
+43
+00:03:06,819 --> 00:03:07,319
+nhằm tránh lộ câu hỏi.
+

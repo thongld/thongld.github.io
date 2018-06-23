@@ -1,0 +1,439 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/tMvmxwXB2Cw
+
+1
+00:00:00,500 --> 00:00:03,062
+Trong bài học này, chúng ta sẽ xây dựng các mô hình dự đoán.
+
+2
+00:00:03,062 --> 00:00:05,520
+Và đặc biệt, chúng ta sẽ sử dụng
+
+3
+00:00:05,520 --> 00:00:06,570
+hồi quy bình phương thông thường nhỏ nhất.
+
+4
+00:00:06,570 --> 00:00:09,300
+Đây sẽ là cách tiếp cận rất sát và thực tế
+
+5
+00:00:09,300 --> 00:00:09,660
+về vấn đề này.
+
+6
+00:00:09,660 --> 00:00:11,410
+Có rất nhiều nền tảng lý thuyết
+
+7
+00:00:11,410 --> 00:00:12,950
+mà chúng ta sẽ động chạm đến một chút.
+
+8
+00:00:12,950 --> 00:00:16,170
+Nhưng trọng tâm chính là hiểu được sự phát triển
+
+9
+00:00:16,170 --> 00:00:18,210
+và phân tích các mô hình.
+
+10
+00:00:18,210 --> 00:00:20,820
+Chúng ta sẽ sử dụng cùng một ví dụ xuyên suốt bài học
+
+11
+00:00:20,820 --> 00:00:22,830
+và đó là cho các Ngành Công nghiệp Duffy.
+
+12
+00:00:22,830 --> 00:00:25,440
+Robin Curtin là Phó Giám đốc Vận tải mới
+
+13
+00:00:25,440 --> 00:00:26,430
+cho công ty.
+
+14
+00:00:26,430 --> 00:00:28,230
+Và cô ấy đang cố gắng tìm hiểu xem
+
+15
+00:00:28,230 --> 00:00:31,390
+họ nên có mức giá nào cho dịch vụ xe tải chở đầy của họ.
+
+16
+00:00:31,390 --> 00:00:33,390
+Đây là phương tiện mới
+
+17
+00:00:33,390 --> 00:00:34,920
+họ chưa có dữ liệu.
+
+18
+00:00:34,920 --> 00:00:37,140
+Công ty sử dụng hợp đồng với các công ty vận tải đường bộ
+
+19
+00:00:37,140 --> 00:00:40,510
+cho vận chuyển hàng bằng xe tải chở đầy.
+
+20
+00:00:40,510 --> 00:00:43,460
+Vận chuyển xe tải đầy là những chuyến hàng chuyển từ địa điểm gốc
+
+21
+00:00:43,460 --> 00:00:46,350
+tới địa điểm đích, chẳng hạn một nhà máy sản xuất
+
+22
+00:00:46,350 --> 00:00:50,400
+tới một trung tâm phân phối mà không có các điểm dừng trung gian.
+
+23
+00:00:50,400 --> 00:00:52,222
+Hiện cô ấy chỉ có một mẩu dữ liệu
+
+24
+00:00:52,222 --> 00:00:54,180
+cho thấy chi phí và vài đặc điểm khác
+
+25
+00:00:54,180 --> 00:00:57,990
+về 100 chuyến hàng vận tải chở đầy từ một phương tiện khác.
+
+26
+00:00:57,990 --> 00:01:02,070
+Và cô ấy muốn tạo một hoặc nhiều mô hình
+
+27
+00:01:02,070 --> 00:01:03,370
+để trả lời cho các câu hỏi sau.
+
+28
+00:01:03,370 --> 00:01:05,850
+Một, đặc điểm nào quyết định đến mức giá
+
+29
+00:01:05,850 --> 00:01:07,056
+cho dịch vụ vận tải chở đầy?
+
+30
+00:01:07,056 --> 00:01:08,430
+Tôi có thể thay đổi những yếu tố nào?
+
+31
+00:01:08,430 --> 00:01:10,722
+Bằng cách nào để tôi có thể hạ thấp mức giá của tôi?
+
+32
+00:01:10,722 --> 00:01:12,930
+Và câu hỏi thứ hai là, tôi sẽ có mức giá nào
+
+33
+00:01:12,930 --> 00:01:15,210
+nếu tôi mở một vài làn mới?
+
+34
+00:01:15,210 --> 00:01:17,640
+Chúng ta sẽ tạo ra cả mô hình mô tả và
+
+35
+00:01:17,640 --> 00:01:19,950
+ mô hình dự đoán.
+
+36
+00:01:19,950 --> 00:01:22,410
+nếu bạn có dữ liệu,
+
+37
+00:01:22,410 --> 00:01:24,270
+và nó có sẵn ở phần cuối của video này,
+
+38
+00:01:24,270 --> 00:01:25,470
+bạn có thể xem nó.
+
+39
+00:01:25,470 --> 00:01:27,090
+Để tôi cho bạn một tóm tắt nhanh về
+
+40
+00:01:27,090 --> 00:01:29,520
+nội dung của tập dữ liệu đó vì chúng ta sẽ sử dụng
+dữ liệu này, như tôi đã nói,
+
+41
+00:01:29,520 --> 00:01:31,540
+trong suốt bài học.
+
+42
+00:01:31,540 --> 00:01:34,470
+Vậy trường đầu tiên, tất cả các cột là các trường.
+
+43
+00:01:34,470 --> 00:01:37,330
+Mỗi hàng cơ bản là một sự quan sát.
+
+44
+00:01:37,330 --> 00:01:40,410
+Vậy trường đầu tiên là ID hoặc nhận dạng duy nhất
+
+45
+00:01:40,410 --> 00:01:41,460
+của trọng tải.
+
+46
+00:01:41,460 --> 00:01:45,210
+Cột thứ hai là chi phí cho mỗi tải trọng hay viết tắt là CPL.
+
+47
+00:01:45,210 --> 00:01:47,100
+Cột thứ ba là khoảng cách tính bằng dặm
+
+48
+00:01:47,100 --> 00:01:49,620
+của mỗi làn hoặc từng lô hàng.
+
+49
+00:01:49,620 --> 00:01:51,900
+Thời gian dẫn là thời gian từ khi
+
+50
+00:01:51,900 --> 00:01:53,890
+công ty cung cấp tải trọng cho người vận chuyển
+
+51
+00:01:53,890 --> 00:01:55,300
+và họ phải nhận nó.
+
+52
+00:01:55,300 --> 00:01:59,310
+Vậy thời gian dẫn càng dài thì người vận chuyển càng có nhiều thời gian.
+
+53
+00:01:59,310 --> 00:02:02,295
+Nếu đó là 0, có nghĩa là trong cùng một ngày.
+
+54
+00:02:02,295 --> 00:02:04,320
+Cột tiếp theo là chiều dài xe moóc.
+
+55
+00:02:04,320 --> 00:02:06,920
+Và đó chỉ là chiều dài và chân của xe moóc.
+
+56
+00:02:06,920 --> 00:02:07,920
+Sau đó là trọng lượng.
+
+57
+00:02:07,920 --> 00:02:10,461
+Đó là trọng lượng của hàng hóa trong xe moóc
+
+58
+00:02:10,461 --> 00:02:11,190
+đang di chuyển được tính bằng pound.
+
+59
+00:02:11,190 --> 00:02:13,420
+Và cuối cùng, có một loại thiết bị,
+
+60
+00:02:13,420 --> 00:02:15,600
+dù đó là van khô hay làm lạnh.
+
+61
+00:02:15,600 --> 00:02:18,390
+Được làm lạnh chỉ đơn giản là có một đơn vị tủ lạnh trên đó
+
+62
+00:02:18,390 --> 00:02:20,740
+ giữ cho nó ở một nhiệt độ nhất định.
+
+63
+00:02:20,740 --> 00:02:23,550
+Đây là 7 hồ sơ hoặc quan sát đầu tiên.
+
+64
+00:02:23,550 --> 00:02:25,540
+Chúng ta có 100 trong bộ dữ liệu.
+
+65
+00:02:25,540 --> 00:02:28,306
+Vậy với số liệu tốt bất kỳ, bạn sẽ làm gì?
+
+66
+00:02:28,306 --> 00:02:30,180
+Bạn sẽ lấy vài số liệu thống kê nhanh, mọi thứ
+
+67
+00:02:30,180 --> 00:02:32,770
+chúng ta đã học được trong các bài học trước.
+
+68
+00:02:32,770 --> 00:02:35,850
+Ở đây tôi có cho chi phí cho mỗi tải trọng, khoảng cách,
+
+69
+00:02:35,850 --> 00:02:39,390
+thời gian dẫn, chiều dài xe moóc, và trọng lượng,
+số liệu thống kê tóm tắt.
+
+70
+00:02:39,390 --> 00:02:41,580
+Và bạn thấy là tôi đã đi qua mạn tàu ở đây,
+
+71
+00:02:41,580 --> 00:02:44,520
+giá trị nhỏ nhất, giá trị mốt, giá trị ở giữa,
+giá trị trung bình, giá trị lớn nhất,
+
+72
+00:02:44,520 --> 00:02:47,680
+phân vị, phạm vi, phạm vi bên trong góc phần tư phân vị,
+
+73
+00:02:47,680 --> 00:02:48,670
+độ lệch chuẩn.
+
+74
+00:02:48,670 --> 00:02:49,890
+Tôi có một mẫu.
+
+75
+00:02:49,890 --> 00:02:52,380
+Nếu bạn đã làm dân số, nó không khác biệt đáng kể
+
+76
+00:02:52,380 --> 00:02:54,330
+vì chúng ta có rất nhiều quan sát.
+
+77
+00:02:54,330 --> 00:02:56,430
+Và rồi tôi cũng đặt mối tương quan xuống đó.
+
+78
+00:02:56,430 --> 00:02:59,130
+Và mối tương quan đó là với mỗi cột
+
+79
+00:02:59,130 --> 00:03:02,500
+có chi phí cho mỗi cột tải trọng.
+
+80
+00:03:02,500 --> 00:03:04,530
+Và do đó bạn có thể xem xét điều này và kiểm tra dữ liệu của bạn.
+
+81
+00:03:04,530 --> 00:03:06,562
+Hy vọng rằng, bạn đưa ra cùng một con số.
+
+82
+00:03:06,562 --> 00:03:08,520
+Và khi tôi nhìn vào điều này,
+
+83
+00:03:08,520 --> 00:03:09,700
+tôi có thể có một vài câu hỏi.
+
+84
+00:03:09,700 --> 00:03:10,850
+Tiếp theo tôi phải làm gì?
+
+85
+00:03:10,850 --> 00:03:12,690
+Vì tôi có thể tóm tắt dữ liệu.
+
+86
+00:03:12,690 --> 00:03:13,440
+Điều này thật tuyệt.
+
+87
+00:03:13,440 --> 00:03:16,770
+Tôi biết trung bình tôi sẽ tốn khoảng 3.000 đô la
+
+88
+00:03:16,770 --> 00:03:19,050
+một tải trọng, sẽ là $3.132.
+
+89
+00:03:19,050 --> 00:03:21,030
+Khoảng cách trung bình là 1.200 dặm.
+
+90
+00:03:21,030 --> 00:03:25,200
+Tôi cho thời gian dẫn đầu, trung bình, chỉ dưới một tuần, 5,8 ngày.
+
+91
+00:03:25,200 --> 00:03:27,810
+Chiều dài xe moóc thực sự không có ý nghĩa
+
+92
+00:03:27,810 --> 00:03:30,000
+vì nó hoặc là 48 hoặc là 53.
+
+93
+00:03:30,000 --> 00:03:32,430
+Vậy nhìn vào giá trị trung bình thực sự không có ý nghĩa.
+
+94
+00:03:32,430 --> 00:03:35,596
+Nhưng trọng lượng trung bình khoảng 26.000 pound.
+
+95
+00:03:35,596 --> 00:03:36,720
+Có hàm chứa ý nghĩa nhất định.
+
+96
+00:03:36,720 --> 00:03:38,350
+Và tôi có thể thấy độ lệch chuẩn.
+
+97
+00:03:38,350 --> 00:03:40,840
+Nhưng những gì tôi thực sự muốn biết là
+
+98
+00:03:40,840 --> 00:03:43,410
+chi phí cho mỗi tác tải trọng ảnh hưởng
+
+99
+00:03:43,410 --> 00:03:45,510
+và bị ảnh hưởng bởi những giá trị biến đổi khác như thế nào?
+
+100
+00:03:45,510 --> 00:03:46,921
+Chúng ảnh hưởng đến nó như thế nào?
+
+101
+00:03:46,921 --> 00:03:49,170
+Tôi có thể phát triển một mô hình mô tả, ở đó chi phí cho mỗi tải trọng
+
+102
+00:03:49,170 --> 00:03:52,350
+là một hàm gồm các biến số
+
+103
+00:03:52,350 --> 00:03:54,630
+để cho tôi ước đoán tốt hơn xem đó sẽ là gì?
+
+104
+00:03:54,630 --> 00:03:57,027
+Vì điều này cũng có thể được sử dụng như là một mô hình tiên đoán.
+
+105
+00:03:57,027 --> 00:03:59,110
+Đó là những gì chúng ta sẽ làm trong phần còn lại
+
+106
+00:03:59,110 --> 00:03:59,735
+của bài học này.
+
+107
+00:03:59,735 --> 00:04:01,890
+Chúng ta sẽ lấy dữ liệu này và phát triển các mô hình
+
+108
+00:04:01,890 --> 00:04:06,610
+để giúp chúng ta trả lời những câu hỏi đầu tiên mà Robin đặt ra.
+

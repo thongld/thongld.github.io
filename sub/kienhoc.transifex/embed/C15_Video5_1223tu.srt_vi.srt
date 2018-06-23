@@ -1,0 +1,611 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/9BLtHUR5SME
+
+1
+00:00:00,000 --> 00:00:02,450
+JONATHAN VALVANO: In
+this video, we're going
+
+2
+00:00:02,450 --> 00:00:06,750
+to show you how to create
+and manage sprites.
+
+3
+00:00:06,750 --> 00:00:11,540
+A sprite is a living entity
+which will exist in our game.
+
+4
+00:00:11,540 --> 00:00:17,230
+We're going to use the struct to create
+a data structure to hold our sprite.
+
+5
+00:00:17,230 --> 00:00:22,010
+So in our data structure,
+we have attributes,
+
+6
+00:00:22,010 --> 00:00:29,730
+like the x position, which is where
+in the world is our sprite, its y
+
+7
+00:00:29,730 --> 00:00:39,730
+position, what it looks
+like, and rather than storing
+
+8
+00:00:39,730 --> 00:00:42,540
+the whole image into
+the structure, you can
+
+9
+00:00:42,540 --> 00:00:46,980
+see we're going to just have
+a pointer to that structure.
+
+10
+00:00:46,980 --> 00:00:52,470
+But this image pointer will then
+point to what the sprite looks like,
+
+11
+00:00:52,470 --> 00:00:57,840
+whether it's a bunker, or
+an enemy, or a missile.
+
+12
+00:00:57,840 --> 00:01:03,010
+And lastly, we have the
+status of this sprite.
+
+13
+00:01:03,010 --> 00:01:07,520
+We're going to have a very simple
+status in this initial demonstration,
+
+14
+00:01:07,520 --> 00:01:12,640
+where 0 means it's dead,
+and 1 means it's alive.
+
+15
+00:01:12,640 --> 00:01:16,610
+And so we're going to
+create this structure
+
+16
+00:01:16,610 --> 00:01:23,300
+by defining a new data
+type which has four fields.
+
+17
+00:01:23,300 --> 00:01:27,800
+We defined the struct, next,
+we're going to create a new type.
+
+18
+00:01:27,800 --> 00:01:29,940
+This is our sprite type.
+
+19
+00:01:29,940 --> 00:01:34,010
+So a type is like hair, long,
+short, except in this case,
+
+20
+00:01:34,010 --> 00:01:40,830
+it's going to create four elements
+of x, y, pointer, and life.
+
+21
+00:01:40,830 --> 00:01:44,456
+RAMESH YERRABALLI:
+The user defines type.
+
+22
+00:01:44,456 --> 00:01:50,470
+JONATHAN VALVANO: in this initial demo,
+we're going to create four sprites.
+
+23
+00:01:50,470 --> 00:01:55,310
+So we're going to create a RAM-based
+structure of four elements which
+
+24
+00:01:55,310 --> 00:01:58,790
+we will call the Enemy.
+
+25
+00:01:58,790 --> 00:02:02,880
+To manage the Enemy, we're going
+to initialize their position.
+
+26
+00:02:02,880 --> 00:02:09,960
+So we're going to have four,
+there's one, there's another one,
+
+27
+00:02:09,960 --> 00:02:13,950
+there's a third one, and
+here is a fourth one.
+
+28
+00:02:13,950 --> 00:02:17,650
+So this is my enemy,
+my array of sprites.
+
+29
+00:02:17,650 --> 00:02:22,940
+
+30
+00:02:22,940 --> 00:02:25,610
+And I'm going to
+initialize their position,
+
+31
+00:02:25,610 --> 00:02:31,340
+and so I'm going to set their
+x-position along the row.
+
+32
+00:02:31,340 --> 00:02:36,020
+I'm going to set them so that
+they occur on the screen in a row,
+
+33
+00:02:36,020 --> 00:02:41,020
+and they're going to pre-set their
+y-position to be all in the same spot,
+
+34
+00:02:41,020 --> 00:02:43,129
+so they'll all be next to each other.
+
+35
+00:02:43,129 --> 00:02:45,170
+I'm going to set what they
+look like, they're all
+
+36
+00:02:45,170 --> 00:02:47,780
+going to look like
+Enemy30s, and then I'm
+
+37
+00:02:47,780 --> 00:02:52,850
+going to give them life by setting
+their life parameter to a 1.
+
+38
+00:02:52,850 --> 00:02:58,658
+So when I execute this function,
+these enemies will come to life.
+
+39
+00:02:58,658 --> 00:03:01,300
+RAMESH YERRABALLI: So Jon,
+how do I move an enemy
+
+40
+00:03:01,300 --> 00:03:04,366
+from one position to another position?
+
+41
+00:03:04,366 --> 00:03:10,070
+JONATHAN VALVANO: Now, I could
+access the individual locations
+
+42
+00:03:10,070 --> 00:03:14,860
+by taking the first enemy,
+taking its parameter,
+
+43
+00:03:14,860 --> 00:03:17,320
+and I can move it wherever I want.
+
+44
+00:03:17,320 --> 00:03:24,960
+So if I were to execute this code
+here, I could set a value here,
+
+45
+00:03:24,960 --> 00:03:28,300
+I could set a value there,
+and now Enemy number 0
+
+46
+00:03:28,300 --> 00:03:32,020
+is now teleported to that location.
+
+47
+00:03:32,020 --> 00:03:35,910
+But rather, I'm going to
+use this move function,
+
+48
+00:03:35,910 --> 00:03:40,310
+and it turns out, if you look
+very carefully at the BMP image,
+
+49
+00:03:40,310 --> 00:03:51,760
+each enemy has a border 2 pixels
+on the left, 2 pixels on the right,
+
+50
+00:03:51,760 --> 00:03:56,105
+1 pixel on the top, and 1 pixel
+on the bottom that are black.
+
+51
+00:03:56,105 --> 00:04:00,210
+
+52
+00:04:00,210 --> 00:04:05,880
+So all of these sprites, all
+these images of these sprites,
+
+53
+00:04:05,880 --> 00:04:09,870
+have a black border around the edge.
+
+54
+00:04:09,870 --> 00:04:15,740
+This means, if I move an enemy 2 pixels
+to the left, 2 pixels to the right,
+
+55
+00:04:15,740 --> 00:04:20,930
+1 pixel down, or 1 pixel up,
+the movement of that enemy
+
+56
+00:04:20,930 --> 00:04:24,840
+will automatically erase where it was.
+
+57
+00:04:24,840 --> 00:04:29,040
+So in this function, I'm going to
+take all my enemies, 0 through 3,
+
+58
+00:04:29,040 --> 00:04:35,100
+and if the enemy is on the screen,
+if he's not too far to the right,
+
+59
+00:04:35,100 --> 00:04:38,260
+I'm going to move him to the right.
+
+60
+00:04:38,260 --> 00:04:43,570
+And when this enemy reaches
+the x-position of 72,
+
+61
+00:04:43,570 --> 00:04:48,090
+I will then kill that enemy
+by making its life equal to 0.
+
+62
+00:04:48,090 --> 00:04:53,940
+So this function, when I call it, will
+move all 4 of my enemies to the right
+
+63
+00:04:53,940 --> 00:04:56,820
+until they get to this
+threshold, in which case,
+
+64
+00:04:56,820 --> 00:05:00,560
+then they are going to be killed.
+
+65
+00:05:00,560 --> 00:05:03,250
+We have one more operation
+to write, and that
+
+66
+00:05:03,250 --> 00:05:06,430
+is the one that actually
+renders the image.
+
+67
+00:05:06,430 --> 00:05:11,630
+This function is going to be
+called inside our main loop.
+
+68
+00:05:11,630 --> 00:05:17,320
+Again, this function should be
+called at 30 Hz inside the main loop.
+
+69
+00:05:17,320 --> 00:05:20,980
+And to draw all of the
+sprites onto a single image,
+
+70
+00:05:20,980 --> 00:05:24,680
+I will begin by clearing the buffer.
+
+71
+00:05:24,680 --> 00:05:28,940
+Clearing the screen buffer,
+this is the array in RAM.
+
+72
+00:05:28,940 --> 00:05:34,830
+And then, one by one, if the enemy
+is alive, if the enemy has life,
+
+73
+00:05:34,830 --> 00:05:38,150
+it'll draw the image
+associated with that enemy
+
+74
+00:05:38,150 --> 00:05:41,360
+at the position of where they exist.
+
+75
+00:05:41,360 --> 00:05:44,750
+And that's the threshold that
+we've been using all along.
+
+76
+00:05:44,750 --> 00:05:51,410
+So this one element here will
+draw the enemy onto the screen.
+
+77
+00:05:51,410 --> 00:05:55,220
+Then this one will draw that
+enemy, and then this one
+
+78
+00:05:55,220 --> 00:05:57,930
+will draw that one, and that one.
+
+79
+00:05:57,930 --> 00:06:03,970
+So the four enemies will be drawn into
+the array which is located in RAM.
+
+80
+00:06:03,970 --> 00:06:10,090
+It's not until this display function
+that this RAM buffer is then
+
+81
+00:06:10,090 --> 00:06:12,461
+punched out to the screen.
+
+82
+00:06:12,461 --> 00:06:14,710
+RAMESH YERRABALLI: So
+what we are showing
+
+83
+00:06:14,710 --> 00:06:21,240
+you is just an example of how to manage
+the sprites, how to declare them,
+
+84
+00:06:21,240 --> 00:06:24,720
+how to move them, how to draw them.
+
+85
+00:06:24,720 --> 00:06:29,910
+So this is just an idea that
+you can base your own game on.
+
+86
+00:06:29,910 --> 00:06:33,710
+So let's look at how this idea is put
+together in a simple main program.
+
+87
+00:06:33,710 --> 00:06:35,100
+JONATHAN VALVANO: OK.
+
+88
+00:06:35,100 --> 00:06:42,270
+So here we have a main program,
+let's load it in, let's compile it.
+
+89
+00:06:42,270 --> 00:06:45,130
+Oops.
+
+90
+00:06:45,130 --> 00:06:47,500
+Let's compile it, build.
+
+91
+00:06:47,500 --> 00:06:48,810
+[DING]
+
+92
+00:06:48,810 --> 00:06:50,910
+Download.
+
+93
+00:06:50,910 --> 00:06:51,790
+Debug.
+
+94
+00:06:51,790 --> 00:06:53,790
+[DING]
+
+95
+00:06:53,790 --> 00:06:58,210
+So let's step over this main
+program and see what it does.
+
+96
+00:06:58,210 --> 00:07:01,590
+Step over, step over.
+
+97
+00:07:01,590 --> 00:07:06,750
+So again, the Nokia Init will
+initialize the hardware of the display.
+
+98
+00:07:06,750 --> 00:07:13,520
+The Init function that we just wrote
+will then place all of my sprites
+
+99
+00:07:13,520 --> 00:07:14,630
+into the structure.
+
+100
+00:07:14,630 --> 00:07:17,339
+So I'll have my four
+enemies that are created.
+
+101
+00:07:17,339 --> 00:07:20,005
+RAMESH YERRABALLI: This will only
+put them in the screen buffer.
+
+102
+00:07:20,005 --> 00:07:22,921
+JONATHAN VALVANO: No, this doesn't
+even put them in the screen buffer.
+
+103
+00:07:22,921 --> 00:07:25,780
+This puts them into
+the array of enemies.
+
+104
+00:07:25,780 --> 00:07:32,110
+The next one is going to take the
+enemy-- let's step into this one,
+
+105
+00:07:32,110 --> 00:07:43,070
+step into, step over-- here we cleared
+the buffer, and now one by one,
+
+106
+00:07:43,070 --> 00:07:46,280
+I'm going to put the enemies
+into the screen buffer.
+
+107
+00:07:46,280 --> 00:07:52,490
+Two, three, four.
+
+108
+00:07:52,490 --> 00:07:57,165
+Now when I execute this one, we see
+that the enemies are on the screen.
+
+109
+00:07:57,165 --> 00:08:00,630
+
+110
+00:08:00,630 --> 00:08:04,670
+The four enemies, near the
+top, all on the same row.
+
+111
+00:08:04,670 --> 00:08:07,005
+All right, keep stepping.
+
+112
+00:08:07,005 --> 00:08:08,500
+Step over.
+
+113
+00:08:08,500 --> 00:08:14,860
+And now, the main loop is
+going to move the enemies.
+
+114
+00:08:14,860 --> 00:08:17,040
+Now again, when I move
+the enemies, the screen
+
+115
+00:08:17,040 --> 00:08:20,620
+doesn't change, because I
+just moved their properties.
+
+116
+00:08:20,620 --> 00:08:23,434
+But when I draw it, they are now moved.
+
+117
+00:08:23,434 --> 00:08:24,850
+RAMESH YERRABALLI: Yes, they have.
+
+118
+00:08:24,850 --> 00:08:28,036
+JONATHAN VALVANO: All right,
+let's move them again.
+
+119
+00:08:28,036 --> 00:08:30,620
+Oh, let's just hit the
+Go button, because you
+
+120
+00:08:30,620 --> 00:08:35,110
+can see that this movement
+will occur 10 times a second.
+
+121
+00:08:35,110 --> 00:08:39,789
+So you'll actually be able to see them
+jump on the screen, so let's push Go.
+
+122
+00:08:39,789 --> 00:08:42,210
+So now you see the enemies
+move over, and when
+
+123
+00:08:42,210 --> 00:08:44,960
+they get to the end of the
+screen, they fall into the abyss,
+
+124
+00:08:44,960 --> 00:08:48,980
+their life is set to 0, and
+there are no more enemies now.
+
+125
+00:08:48,980 --> 00:08:51,520
+RAMESH YERRABALLI: So the
+interesting thing as we see here
+
+126
+00:08:51,520 --> 00:08:54,490
+is, the loop is still
+running, but there's
+
+127
+00:08:54,490 --> 00:08:59,930
+nothing to draw because we only
+draw when their life is not a 0.
+
+128
+00:08:59,930 --> 00:09:01,696
+JONATHAN VALVANO: Absolutely.
+
+129
+00:09:01,696 --> 00:09:03,650
+All right.

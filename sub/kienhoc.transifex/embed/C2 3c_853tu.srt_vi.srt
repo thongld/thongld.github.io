@@ -1,0 +1,395 @@
+0
+00:00:00,000 --> 00:00:00,001
+Tung Dinh_VGU
+http://youtu.be/u9UUVh8YoEg
+
+1
+00:00:00,000 --> 00:00:00,640
+
+2
+00:00:00,640 --> 00:00:04,100
+Giờ ta cùng tới phần cuối cùng của ISA
+
+3
+00:00:04,100 --> 00:00:05,840
+là tổ chức memory
+
+4
+00:00:05,840 --> 00:00:11,380
+
+5
+00:00:11,380 --> 00:00:15,050
+Có nhiều loại memory
+
+6
+00:00:15,050 --> 00:00:21,660
+RAM, ROM hoặc là Flash,
+
+7
+00:00:21,660 --> 00:00:25,000
+và cũng có multiple ROMs trong hệ thống
+
+8
+00:00:25,000 --> 00:00:31,370
+Và để thuận tiện, ta có thể truy xuất
+tất cả nếu chúng là 
+
+9
+00:00:31,370 --> 00:00:37,340
+phần trong bảng này
+
+10
+00:00:37,340 --> 00:00:40,450
+Ta có thể truy xuất chúng
+bằng location
+
+11
+00:00:40,450 --> 00:00:48,820
+Vậy, memory được truy xuất
+trên ARM ISA bằng 1 address 32-bit
+
+12
+00:00:48,820 --> 00:00:53,710
+
+13
+00:00:53,710 --> 00:00:58,850
+Address bắt đầu từ, đơn giản thì
+
+14
+00:00:58,850 --> 00:01:04,970
+từ x00000000, với 8 số 0
+
+15
+00:01:04,970 --> 00:01:06,700
+Đó là cái address thấp nhất
+
+16
+00:01:06,700 --> 00:01:10,620
+Và cái address nhớ cao nhất
+là 0xFFFFFFFF
+
+17
+00:01:10,620 --> 00:01:15,150
+
+18
+00:01:15,150 --> 00:01:26,000
+Tổng memory có thể truy xuất được thì
+đôi khi gọi là address space
+
+19
+00:01:26,000 --> 00:01:32,340
+Address space tạo ra số các địa chỉ
+
+20
+00:01:32,340 --> 00:01:33,690
+Ta có thể truy xuất
+
+21
+00:01:33,690 --> 00:01:40,050
+với address 32-bit, ta có thể truy xuất
+từ 0x00000000, 8 số 0
+
+22
+00:01:40,050 --> 00:01:42,600
+cho tới 8 số F
+
+23
+00:01:42,600 --> 00:01:50,780
+mỗi location sẽ giữ 
+8 bits thông tin
+
+24
+00:01:50,780 --> 00:02:00,120
+Ta nói rằng, mỗi location giữ
+8 bits thông tin
+
+25
+00:02:00,120 --> 00:02:07,480
+memory location 0 giữ 8 bits thông tin 
+và mọi location đều giữ
+
+26
+00:02:07,480 --> 00:02:08,850
+8 bits thông tin 
+
+27
+00:02:08,850 --> 00:02:12,830
+Mà là 1 byte
+
+28
+00:02:12,830 --> 00:02:17,370
+Rồi, hãy xem nhiều phần nhớ 
+trong memory
+
+29
+00:02:17,370 --> 00:02:25,900
+Memory được cấu thành từ 
+các vùng của memory
+
+30
+00:02:25,900 --> 00:02:37,590
+bắt đầu từ 0 hết, cho đến location 0x0003FFFF
+
+31
+00:02:37,590 --> 00:02:43,660
+tạo ra 256k Flash hoặc ROM
+
+32
+00:02:43,660 --> 00:02:47,040
+
+33
+00:02:47,040 --> 00:02:50,010
+Đây là chỗ để viết code
+
+34
+00:02:50,010 --> 00:02:55,510
+Đây là phần để bỏ code, constants, 
+
+35
+00:02:55,510 --> 00:03:00,530
+và những thứ như vậy vào
+
+36
+00:03:00,530 --> 00:03:03,460
+code, là instruction, và constants
+
+37
+00:03:03,460 --> 00:03:13,290
+Giờ thì ta tới phần nhớ tiếp theo của memory
+đó là RAM
+
+38
+00:03:13,290 --> 00:03:19,830
+Đây là 32k RAM trên board
+mà ta sử dụng, bắt đầu từ
+
+39
+00:03:19,830 --> 00:03:41,560
+memory location 0x20000000 cho tới
+0x20007FFFF
+
+40
+00:03:41,560 --> 00:03:53,360
+Đây là RAM mà ta sẽ lưu data, variables
+RAM sẽ không được lưu khi tắt máy
+
+41
+00:03:53,360 --> 00:03:56,980
+stack cũng sẽ nằm trong RAM
+
+42
+00:03:56,980 --> 00:04:03,030
+
+43
+00:04:03,030 --> 00:04:12,200
+Ta cũng có phần nhớ vô cùng quan trọng
+đó là I/O
+
+44
+00:04:12,200 --> 00:04:16,420
+Bạn cũng có thể hỏi tại sao lại là memory
+
+45
+00:04:16,420 --> 00:04:22,120
+và nói về I/O. Thật ra, chúng quan trọng
+vì liên quan đến 
+
+46
+00:04:22,120 --> 00:04:32,630
+cách truy xuất thiết bị nhập xuất, 
+phần I/O này bắt đầu từ 0x40000000
+và cho đến 
+
+47
+00:04:32,630 --> 00:04:33,880
+0x400FFFFF
+
+48
+00:04:33,880 --> 00:04:37,720
+
+49
+00:04:37,720 --> 00:04:50,410
+Nhưng, ta lại truy xuất I/O bằng
+memory-mapped I/O
+
+50
+00:04:50,410 --> 00:04:54,980
+Ý tưởng của memory-mapped I/O là
+khi ta cần truy xuất thiết bị
+
+51
+00:04:54,980 --> 00:05:00,270
+chỉ cần read hoặc write 1 location xác định
+trong memory
+
+52
+00:05:00,270 --> 00:05:04,680
+ví dụ, nếu tôi read thao tác 1 port nào đó
+
+53
+00:05:04,680 --> 00:05:09,960
+tôi sẽ tới location này, và 
+bit xác định này
+
+54
+00:05:09,960 --> 00:05:14,610
+ để truy xuất pin I/O
+
+55
+00:05:14,610 --> 00:05:18,240
+
+56
+00:05:18,240 --> 00:05:21,730
+và thao tác trên bit này thì
+tương đương với 
+
+57
+00:05:21,730 --> 00:05:23,890
+thao tác trên pin I/O này
+
+58
+00:05:23,890 --> 00:05:27,850
+Tóm lại, đậy là memory-mapped I/O
+
+59
+00:05:27,850 --> 00:05:34,030
+Cũng có những I/O khác. Một số location
+lại có thông tin khác
+
+60
+00:05:34,030 --> 00:05:40,440
+không phải đều truy xuất pins, 
+nói chung, những locations này 
+
+61
+00:05:40,440 --> 00:05:45,850
+dùng để truy xuất registers của thiết bị
+
+62
+00:05:45,850 --> 00:05:51,020
+
+63
+00:05:51,020 --> 00:06:08,500
+Và còn nhiều I/O khác, mà là I/O nội
+
+64
+00:06:08,500 --> 00:06:14,500
+nó ngược với lại I/O ngoại mà 
+thao tác với các register ngoại
+
+65
+00:06:14,500 --> 00:06:17,650
+thiết bị ngoại vi
+
+66
+00:06:17,650 --> 00:06:27,120
+bắt đầu từ 0xE0000000 và cho tới 0xE004FFFF
+
+67
+00:06:27,120 --> 00:06:34,890
+
+68
+00:06:34,890 --> 00:06:42,370
+Ta chú ý đến memory map, 
+
+69
+00:06:42,370 --> 00:06:44,190
+nơi có nhiều vùng nhớ
+
+70
+00:06:44,190 --> 00:06:52,430
+ta có 256k ROM, 32k RAM, 
+cổng I/O và I/O nội
+
+71
+00:06:52,430 --> 00:06:58,750
+và bạn chú ý đến những đoạn ở giữa mà tôi 
+
+72
+00:06:58,750 --> 00:06:59,600
+không đề cập đến
+
+73
+00:06:59,600 --> 00:07:10,980
+Những đoạn ở giữa này không được dùng tới, 
+vì ta không thể
+
+74
+00:07:10,980 --> 00:07:12,400
+truy cập chúng được
+
+75
+00:07:12,400 --> 00:07:17,130
+Truy cập những locations này gây ra lỗi
+
+76
+00:07:17,130 --> 00:07:23,740
+Đây không phải để mở rộng quy mô
+
+77
+00:07:23,740 --> 00:07:31,110
+Chú ý rằng 32k RAM ở đây và 256k ROM
+
+78
+00:07:31,110 --> 00:07:34,510
+chừa ra những khoẳng trống ở giữa
+
+79
+00:07:34,510 --> 00:07:43,900
+Để thuận tiện, tôi nói chúng nối tiếp nhau
+
+80
+00:07:43,900 --> 00:07:50,580
+và có cùng kích thước, nhưng
+thực ra, có rất nhiều khoảng trống
+
+81
+00:07:50,580 --> 00:07:52,430
+mà ta đề cập đến 
+
+82
+00:07:52,430 --> 00:07:58,270
+Do đó, trong module này, ta quan tâm đến
+những khái niệm quan trọng
+
+83
+00:07:58,270 --> 00:08:04,190
+Cái mà bạn phải hiểu và nhớ
+để học tiếp
+
+84
+00:08:04,190 --> 00:08:08,210
+bởi, ta đang hướng tới các hệ thống
+
+85
+00:08:08,210 --> 00:08:09,560
+để bạn biểu đạt
+
+86
+00:08:09,560 --> 00:08:15,280
+Ta quan tâm tới cái tâm của hệ thống nhúng
+là microcontroller, 
+
+87
+00:08:15,280 --> 00:08:21,660
+thế nào là ISA của processor, memory,
+
+88
+00:08:21,660 --> 00:08:23,430
+registers
+
+89
+00:08:23,430 --> 00:08:26,940
+Tất cả đều ý nghĩa, nếu bạn làm gì đó
+
+90
+00:08:26,940 --> 00:08:31,370
+Do đó, bắt đầu từ bây giờ, 
+bạn phải nhúng tay vào làm 
+
+91
+00:08:31,370 --> 00:08:32,729
+và chúc vui!
+
+92
+00:08:32,729 --> 00:08:36,015

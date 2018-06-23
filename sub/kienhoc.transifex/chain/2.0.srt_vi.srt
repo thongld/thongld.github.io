@@ -1,0 +1,692 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/rkIahRTD9oI
+
+1
+00:00:00,500 --> 00:00:02,355
+Chào mừng tới tuần hai của SC1x.
+
+2
+00:00:02,355 --> 00:00:03,980
+Trong tuần này, ta sẽ
+
+3
+00:00:03,980 --> 00:00:06,810
+đào sâu vào việc dự báo hơn một chút.
+
+4
+00:00:06,810 --> 00:00:11,770
+Và từ kháo cho tuần này là chuỗi thời gian.
+
+5
+00:00:11,770 --> 00:00:15,460
+Ta sẽ sử dụng các kỹ thuật chuỗi thời gian khác nhau để
+
+6
+00:00:15,460 --> 00:00:16,480
+dự báo tốt hơn.
+
+7
+00:00:16,480 --> 00:00:18,400
+Đây là tuần thứ hai ta bắt đầu 
+
+8
+00:00:18,400 --> 00:00:20,117
+nói về dự báo.
+
+9
+00:00:20,117 --> 00:00:21,700
+Điều đầu tiên bạn muốn nhận ra
+
+10
+00:00:21,700 --> 00:00:23,616
+khi xem xét nhu cầu, bởi đó thật sự là
+
+11
+00:00:23,616 --> 00:00:25,250
+những gì ta sẽ dự báo,
+
+12
+00:00:25,250 --> 00:00:27,220
+giả định ở đây cho chuỗi thời gian
+
+13
+00:00:27,220 --> 00:00:29,020
+chúng theo các mẫu.
+
+14
+00:00:29,020 --> 00:00:31,252
+Có các mẫu mã nhất định ngoài kia,
+
+15
+00:00:31,252 --> 00:00:33,710
+đây là bốn mẫu ta sẽ bàn tới
+
+16
+00:00:33,710 --> 00:00:36,160
+Mẫu đầu tiên là mức ta gọi là
+
+17
+00:00:36,160 --> 00:00:38,740
+a, và nó chỉ giả định rằng có một mức độ nào đó,
+
+18
+00:00:38,740 --> 00:00:41,680
+một mức độ nhu cầu căn bản nào đó.
+
+19
+00:00:41,680 --> 00:00:46,750
+Mẫu kế tiếp được biết đến là xu hướng, và đây là một thay đổi bền
+
+20
+00:00:46,750 --> 00:00:49,660
+ở nhu cầu theo thời gian.
+
+21
+00:00:49,660 --> 00:00:51,550
+Nó có thể là xu hướng tích cực.
+
+22
+00:00:51,550 --> 00:00:53,540
+Tôi cũng có thể có xu hướng âm.
+
+23
+00:00:53,540 --> 00:00:54,880
+Chẳng quan trọng.
+
+24
+00:00:54,880 --> 00:00:56,830
+Nhưng nó bất biến và nó là đường thẳng.
+
+25
+00:00:56,830 --> 00:00:58,900
+Nó là xu hướng tuyến tính.
+
+26
+00:00:58,900 --> 00:01:02,050
+Một mẫu khác mà ta thấy
+
+27
+00:01:02,050 --> 00:01:04,239
+gọi là tính thời vụ, và ở đây
+
+28
+00:01:04,239 --> 00:01:07,930
+bạn thấy một kiểu mẫu lặp đi lặp lại theo thời gian.
+
+29
+00:01:07,930 --> 00:01:11,290
+Ta gọi đây - ta sử dụng kí tự f cho nó.
+
+30
+00:01:11,290 --> 00:01:12,040
+Mùa vụ khác nhau.
+
+31
+00:01:12,040 --> 00:01:15,670
+Ta nói tính thời vụ, nhưng nó không có nghĩa là xuân,
+
+32
+00:01:15,670 --> 00:01:17,290
+hạ, thu, đông.
+
+33
+00:01:17,290 --> 00:01:19,850
+Nó có thể là các tháng trong một năm.
+
+34
+00:01:19,850 --> 00:01:21,520
+Nó có thể là các ngày trong tuần có
+
+35
+00:01:21,520 --> 00:01:22,960
+tính thời vụ khác nhau.
+
+36
+00:01:22,960 --> 00:01:24,670
+Nó có thể là các giờ trong ngày
+
+37
+00:01:24,670 --> 00:01:26,020
+có tính thời vụ khác nhau.
+
+38
+00:01:26,020 --> 00:01:29,290
+Nó là một kiểu mẫu lặp lại qua bất kì thời gian nào, không
+
+39
+00:01:29,290 --> 00:01:31,220
+nhất thiết phải là một năm.
+
+40
+00:01:31,220 --> 00:01:34,295
+Sau đó, cái cuối cùng ta sẽ bàn về là tính ngẫu nhiên.
+
+41
+00:01:34,295 --> 00:01:36,670
+Ta sẽ gọi đó là - nó thật sự là chỉ số sai,
+
+42
+00:01:36,670 --> 00:01:37,930
+và ta sẽ bàn về nó
+
+43
+00:01:37,930 --> 00:01:39,910
+Nhưng ở các bài học trước, ta biết
+
+44
+00:01:39,910 --> 00:01:43,930
+đó là khi bạn có một loại tính ngẫu nhiên. 
+
+45
+00:01:43,930 --> 00:01:47,220
+Vậy ta có 4 kiểu mẫu, thật ra chỉ ba kiểu mẫu này
+
+46
+00:01:47,220 --> 00:01:48,640
+là ta sẽ tập trung vào.
+
+47
+00:01:48,640 --> 00:01:50,015
+Và ta sẽ cố gắng
+
+48
+00:01:50,015 --> 00:01:52,909
+hợp nó để đưa ra một số dự báo.
+
+49
+00:01:52,909 --> 00:01:54,700
+Và cách ta đưa ra một dự báo,
+
+50
+00:01:54,700 --> 00:01:57,310
+cách ta sẽ tận dụng triệt để nó, là ta sẽ nói,
+
+51
+00:01:57,310 --> 00:02:00,070
+dự báo nhu cầu của tôi - đó là chỉ cái mũ nhỏ nhỏ - nó
+
+52
+00:02:00,070 --> 00:02:04,260
+có nghĩa là đó là một ước đoán hay một dự báo trong một khoảng thời gian
+
+53
+00:02:04,260 --> 00:02:08,590
+t - đó là hôm nay - cho dự báo của tôi cho t
+
+54
+00:02:08,590 --> 00:02:12,880
+cộng một - tức là ngày mai hoặc giai đoạn kế -
+
+55
+00:02:12,880 --> 00:02:14,626
+và ta muốn tìm ra đó là gì.
+
+56
+00:02:14,626 --> 00:02:16,000
+Và ta sẽ tìm ra 
+
+57
+00:02:16,000 --> 00:02:21,940
+một hàm chung cho tất cả các kiểu mẫu khác nhau này - mức độ,
+
+58
+00:02:21,940 --> 00:02:25,720
+xu hướng, tính thời vụ, sai số, và hàng loạt
+
+59
+00:02:25,720 --> 00:02:27,340
+các thứ khác.
+
+60
+00:02:27,340 --> 00:02:29,476
+Vậy ta sẽ sử dụng các dạng hàm khác nhau,
+
+61
+00:02:29,476 --> 00:02:30,850
+các mô hình khác nhau, và ta sẽ
+
+62
+00:02:30,850 --> 00:02:32,683
+đưa ra các giả định khác nhau, và đó sẽ
+
+63
+00:02:32,683 --> 00:02:35,530
+cho phép ta đưa ra dự đoán.
+
+64
+00:02:35,530 --> 00:02:37,679
+OK, hãy bắt đầu với các mô hình đơn giản nhất.
+
+65
+00:02:37,679 --> 00:02:39,220
+Ta sẽ bàn thêm về những mô hình này trong lớp
+
+66
+00:02:39,220 --> 00:02:42,900
+nhưng những mô hình đơn giản nhất - cái đầu tiên là mô hình tích lũy.
+
+67
+00:02:42,900 --> 00:02:46,240
+Và trong một mô hình tích lũy, dự báo của tôi
+
+68
+00:02:46,240 --> 00:02:49,210
+giữ yên trong ngày hôm nay cho giai đoạn kế tiếp.
+
+69
+00:02:49,210 --> 00:02:54,760
+t cộng 1 -- t, t cộng 1 -- bằng với tất cả các nhu cầu khác
+
+70
+00:02:54,760 --> 00:02:56,770
+khi x là biến bất kì của nhu cầu 
+
+71
+00:02:56,770 --> 00:02:59,770
+xảy ra trong thời gian đó, vậy xi là nhu cầu
+
+72
+00:02:59,770 --> 00:03:02,050
+đã xảy ra trong thời gian i.
+
+73
+00:03:02,050 --> 00:03:04,790
+Vậy với mô hình tích lũy, tôi sẽ tổng tất cả lại từ i
+
+74
+00:03:04,790 --> 00:03:07,750
+bằng 1 tới thời điểm hiện tại, t, hôm nay.
+
+75
+00:03:07,750 --> 00:03:10,390
+Vậy tôi sẽ quay ngược trở về ngày hôm nay,
+
+76
+00:03:10,390 --> 00:03:13,290
+và tôi sẽ chia cho t.
+
+77
+00:03:13,290 --> 00:03:15,850
+Bạn nên thấy nó quen thuộc.
+
+78
+00:03:15,850 --> 00:03:16,660
+Nó là một giá trị trung bình.
+
+79
+00:03:16,660 --> 00:03:19,118
+Đó là nhiệm vụ của mô hình tích lũy - giả sử
+
+80
+00:03:19,118 --> 00:03:22,150
+mọi số liệu trong quá khứ đều bằng nhau, và tôi sẽ lấy một nửa số đó.
+
+81
+00:03:22,150 --> 00:03:24,650
+Tôi sẽ lấy giá trị trung bình của nó.
+
+82
+00:03:24,650 --> 00:03:27,110
+Giờ, ở cực đối lập là mô hình giản đơn.
+
+83
+00:03:27,110 --> 00:03:30,460
+Với mô hình này, ta nói rằng sự ước đoán nhu cầu giữ yên
+
+84
+00:03:30,460 --> 00:03:34,060
+ngày hôm nay cho khoảng thời gian kế tiếp
+
+85
+00:03:34,060 --> 00:03:38,320
+sẽ bằng với cái đã xảy ra hôm nay.
+
+86
+00:03:38,320 --> 00:03:39,770
+Cái này thì ngược lại.
+
+87
+00:03:39,770 --> 00:03:42,340
+Cái này thì cái cuối là cái kế tiếp
+
+88
+00:03:42,340 --> 00:03:44,590
+Cái xảy ra ngày mai sẽ là cái đã xảy ra hôm nay.
+
+89
+00:03:44,590 --> 00:03:46,690
+Mô hình này không sử dụng lịch sử.
+
+90
+00:03:46,690 --> 00:03:48,490
+Nó sử dụng toàn bộ lịch sử.
+
+91
+00:03:48,490 --> 00:03:50,260
+Bạn có thể thấy những cái này như chuỗi liên tục
+
+92
+00:03:50,260 --> 00:03:52,014
+để bạn có thể dự báo.
+
+93
+00:03:52,014 --> 00:03:53,680
+Giờ cái nằm ở giữa đây
+
+94
+00:03:53,680 --> 00:03:57,200
+được gọi là trung bình động, 
+
+95
+00:03:57,200 --> 00:03:59,350
+cái mà bạn sẽ mong rằng rất hữu dụng.
+
+96
+00:03:59,350 --> 00:04:01,570
+Và ta làm gì ở đây?
+
+97
+00:04:01,570 --> 00:04:04,360
+Thay vì quay ngược lại lúc ban đầu,
+
+98
+00:04:04,360 --> 00:04:06,850
+tôi quay ngược lại m thời kỳ.
+
+99
+00:04:06,850 --> 00:04:08,350
+Tôi quay lại bao xa?
+
+100
+00:04:08,350 --> 00:04:13,330
+Tôi chỉ đi từ bằng t trừ m tới t. 
+
+101
+00:04:13,330 --> 00:04:16,089
+Tôi có thể đi ngược về trung bình động của 4 thời kỳ trước.
+
+102
+00:04:16,089 --> 00:04:18,279
+Tôi quay lại 4, và tôi tính trung bình của cả 4
+
+103
+00:04:18,279 --> 00:04:20,000
+hay của 12.
+
+104
+00:04:20,000 --> 00:04:21,850
+Vậy trung bình động đại loại là một thứ
+
+105
+00:04:21,850 --> 00:04:24,965
+nằm ở giữa hai cực.
+
+106
+00:04:24,965 --> 00:04:26,590
+Ta sẽ dành rất nhiều thời gian
+
+107
+00:04:26,590 --> 00:04:29,950
+vào cái cuối cùng được gọi là liên tiến lũy thừa
+
+108
+00:04:29,950 --> 00:04:32,860
+bởi nó rất thú vị bởi
+
+109
+00:04:32,860 --> 00:04:34,850
+nó làm được rất nhiều điều thú vị.
+
+110
+00:04:34,850 --> 00:04:37,820
+Nếu tôi xem xét các dự báo tích lũy và đơn giản
+
+111
+00:04:37,820 --> 00:04:42,110
+hãy nghĩ về cách nó đánh giá các số liệu cũ
+
+112
+00:04:42,110 --> 00:04:45,230
+Trên đồ thị dưới đây, tôi có trục tung
+
+113
+00:04:45,230 --> 00:04:48,400
+tỷ trọng của mỗi số liệu, và đây là các thời kỳ
+
+114
+00:04:48,400 --> 00:04:50,090
+khi tôi quay ngược lại.
+
+115
+00:04:50,090 --> 00:04:53,680
+Đây là hôm nay, t, t trừ 1 là thời kỳ cuối, hai thời kỳ trước,
+
+116
+00:04:53,680 --> 00:04:57,190
+3 thời kỳ trước, 4 thời kỳ trước, vân vân.
+
+117
+00:04:57,190 --> 00:04:59,940
+Nếu tôi nhìn vào mô hình tích lũy, nó
+
+118
+00:04:59,940 --> 00:05:03,300
+xử lý tất cả như nhau.
+
+119
+00:05:03,300 --> 00:05:07,440
+Tôi sẽ lấy trung bình của mỗi số liệu.
+
+120
+00:05:07,440 --> 00:05:10,490
+Nếu tôi nhìn vào mô hình đơn giản, nếu tôi thực hiện nó, 
+
+121
+00:05:10,490 --> 00:05:11,300
+nó làm được gì?
+
+122
+00:05:11,300 --> 00:05:14,300
+Nó xử lý một số liệu gần đây nhất, 100%
+
+123
+00:05:14,300 --> 00:05:17,220
+và tất cả cái còn lại tại 0.
+
+124
+00:05:17,220 --> 00:05:19,900
+Vậy bạn có thể đại loại thấy chúng khác biệt chỗ nào.
+
+125
+00:05:19,900 --> 00:05:21,630
+Nhưng bạn có thể đặt ra câu hỏi rằng
+
+126
+00:05:21,630 --> 00:05:24,960
+tại sao tôi lại xử lý số liệu như số liệu tích lũy này
+
+127
+00:05:24,960 --> 00:05:27,420
+bốn thời kỳ trước với cùng trọng số như hôm qua?
+
+128
+00:05:27,420 --> 00:05:29,940
+Không phải hôm qua hay thời kỳ trước thì đếm hơn à?
+
+129
+00:05:29,940 --> 00:05:32,610
+Chẳng phải thông tin gần đây nhất thì quan trọng hơn
+
+130
+00:05:32,610 --> 00:05:33,360
+sao?
+
+131
+00:05:33,360 --> 00:05:35,520
+Đó là nhiệm vụ của liên tiến lũy thừa.
+
+132
+00:05:35,520 --> 00:05:41,280
+Về cơ bản, nó nói rằng trọng số là một hàm biểu thị 
+
+133
+00:05:41,280 --> 00:05:42,660
+dữ liệu đang có gần bao nhiêu.
+
+134
+00:05:42,660 --> 00:05:44,396
+Vậy nó sử dụng hàm liên tiến này-
+
+135
+00:05:44,396 --> 00:05:46,770
+và ta sẽ nói về trong các bài giảng khác và lấy đạo hàm của nó--
+
+136
+00:05:46,770 --> 00:05:48,600
+thật ra nó là liên tiến hình học,
+
+137
+00:05:48,600 --> 00:05:50,550
+nhưng ta gọi nó là liên tiến lũy thừa.
+
+138
+00:05:50,550 --> 00:05:52,500
+Vậy kết quả nó cho ra là
+
+139
+00:05:52,500 --> 00:05:57,480
+dự báo cho ngày hôm nay cho thời gian
+
+140
+00:05:57,480 --> 00:06:00,150
+t cộng - tôi sẽ tới tau (tô) - tức là
+
+141
+00:06:00,150 --> 00:06:02,420
+tau thời kỳ trong tương lai - một, hai,
+
+142
+00:06:02,420 --> 00:06:05,520
+ba - vậy tôi có thể dự báo cho ngày mai và tau
+
+143
+00:06:05,520 --> 00:06:08,850
+sẽ là một, hoặc hai, hoặc ba - nó đang dự báo tôi muốn đi
+
+144
+00:06:08,850 --> 00:06:10,032
+bao xa trong tương lai.
+
+145
+00:06:10,032 --> 00:06:11,490
+Và ta đang nói nó sẽ
+
+146
+00:06:11,490 --> 00:06:14,010
+bằng hằng số liên tiến.
+
+147
+00:06:14,010 --> 00:06:16,650
+Ta gọi nó là alpha.
+
+148
+00:06:16,650 --> 00:06:21,000
+Và ta sẽ nhân nó với thông tin
+
+149
+00:06:21,000 --> 00:06:25,670
+gần đây nhất tôi có, số liệu nhu cầu gần đây nhất
+
+150
+00:06:25,670 --> 00:06:29,720
+cộng 1 trừ alpha nhân gì?
+
+151
+00:06:29,720 --> 00:06:36,510
+Dự báo gần đây nhất của tôi, đó là x mũ t trừ 1 của t.
+
+152
+00:06:36,510 --> 00:06:39,310
+Tôi đã dự báo gì hôm qua cho hôm nay?
+
+153
+00:06:39,310 --> 00:06:41,370
+Tôi đang làm ở đây - để tôi highlight cái này
+
+154
+00:06:41,370 --> 00:06:43,650
+bởi nó rất quan trọng.
+
+155
+00:06:43,650 --> 00:06:48,970
+Tôi đang tạo ra sự cân bằng giữa thông tin mới
+
+156
+00:06:48,970 --> 00:06:51,064
+và thông tin cũ.
+
+157
+00:06:51,064 --> 00:06:52,730
+Vậy đó là cái liên tiến lũy thừa
+
+158
+00:06:52,730 --> 00:06:55,070
+làm, những phương pháp khác không.
+
+159
+00:06:55,070 --> 00:06:59,540
+Nó xử lý độ tuổi của số liệu của dữ liệu
+
+160
+00:06:59,540 --> 00:07:00,470
+khác nhau
+
+161
+00:07:00,470 --> 00:07:02,570
+Liên tiến lũy thừa được sử dụng rộng rãi.
+
+162
+00:07:02,570 --> 00:07:04,010
+Nó nằm trong gói luôn, nên tôi
+
+163
+00:07:04,010 --> 00:07:05,551
+muốn đảm bảo bạn hiểu cái này
+
+164
+00:07:05,551 --> 00:07:08,930
+thật kĩ bởi bạn có thể không chỉ gia trọng nó
+
+165
+00:07:08,930 --> 00:07:12,410
+theo tuổi, bạn còn có thể hợp tất cả các xu hướng lại.
+
+166
+00:07:12,410 --> 00:07:14,744
+Trong tuần này, ta sẽ chỉ bắt đầu với mức độ và xu hướng.
+
+167
+00:07:14,744 --> 00:07:16,160
+Nhưng trong các tuần kế tiếp, ta sẽ bắt đầu
+
+168
+00:07:16,160 --> 00:07:18,304
+theo vào tính thời vụ và các thứ khác.
+
+169
+00:07:18,304 --> 00:07:20,720
+Được rồi, đây là cái ta sẽ bao trùm trong tuần này.
+
+170
+00:07:20,720 --> 00:07:23,720
+Có rất nhiều thứ để đào sâu vào dự báo.
+
+171
+00:07:23,720 --> 00:07:26,870
+Hãy xem video, ghi nhớ,
+
+172
+00:07:26,870 --> 00:07:29,650
+giải quyết các câu thỏi nhanh về các bài toán thực tế. 
+

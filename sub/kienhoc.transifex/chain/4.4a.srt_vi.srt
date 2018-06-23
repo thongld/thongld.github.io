@@ -1,0 +1,188 @@
+0
+00:00:00,000 --> 00:00:00,730
+tangoclinhh_5/10/2017
+
+1
+00:00:00,730 --> 00:00:02,080
+Chào mọi người.
+
+2
+00:00:02,080 --> 00:00:05,150
+Chào mừng đến với bài ôn tập
+
+3
+00:00:05,150 --> 00:00:07,520
+quản lý hàng hóa và nhu cầu tất yếu.
+
+4
+00:00:07,520 --> 00:00:11,210
+Hãy cùng ôn tập nhanh những gì ta đã học.
+
+5
+00:00:11,210 --> 00:00:13,140
+Ta đã mở đầu chủ đề về hàng tồn kho
+
+6
+00:00:13,140 --> 00:00:16,059
+bằng một phần giới thiệu chung về quản lý hàng tồn kho.
+
+7
+00:00:16,059 --> 00:00:20,140
+Ta đã tìm hiểu một số giả định
+
+8
+00:00:20,140 --> 00:00:23,280
+mà lát nữa ta sẽ đưa ra bằng một chính sách hàng tồn kho.
+
+9
+00:00:23,280 --> 00:00:25,480
+Chính sách hàng tồn kho là gì?
+
+10
+00:00:25,480 --> 00:00:28,710
+Đó là số lượng đặt hàng là bao nhiêu và khi nào.
+
+11
+00:00:28,710 --> 00:00:32,270
+Và sau đó ta thấy điều này có thể khá phức tạp.
+
+12
+00:00:32,270 --> 00:00:34,850
+Trong bài học số 2, EOQ đã được giới thiệu.
+
+13
+00:00:34,850 --> 00:00:39,960
+Tôi hi vọng giờ ta đã hiểu EOQ là gì.
+
+14
+00:00:39,960 --> 00:00:44,370
+Tác dụng của nó là cân bằng giữa
+
+15
+00:00:44,370 --> 00:00:46,130
+các biến số và chi phí cố định.
+
+16
+00:00:46,130 --> 00:00:49,340
+Đó là một điểm khởi đầu tốt.
+
+17
+00:00:49,340 --> 00:00:51,470
+Trong bài học số 3, ta tìm hiểu sâu hơn một chút.
+
+18
+00:00:51,470 --> 00:00:54,350
+Ta bỏ đi một số giả định mà ban đầu ta đưa ra.
+
+19
+00:00:54,350 --> 00:00:57,240
+Ta đã giới thiệu khái niệm
+
+20
+00:00:57,240 --> 00:01:00,230
+ thời gian chờ hàng khác 0 và chiết khấu -
+
+21
+00:01:00,230 --> 00:01:01,520
+3 loại chiết khấu khác nhau.
+
+22
+00:01:01,520 --> 00:01:05,930
+Và cuối cùng, ta đi tới các hệ thống bổ sung hữu hạn.
+
+23
+00:01:05,930 --> 00:01:08,540
+Điều ta sẽ làm trong bài này là 
+
+24
+00:01:08,540 --> 00:01:11,340
+củng cố một số khái niệm
+
+25
+00:01:11,340 --> 00:01:12,860
+mà ta đã được học.
+
+26
+00:01:12,860 --> 00:01:16,480
+Ta sẽ làm điều này bằng cách điểm qua
+
+27
+00:01:16,480 --> 00:01:17,800
+các đáp số bài toán từng bước một.
+
+28
+00:01:17,800 --> 00:01:20,630
+Hi vọng bạn sẽ thấy hữu ích.
+
+29
+00:01:20,630 --> 00:01:23,430
+Hãy đến với bài toán đầu tiên của chúng ta.
+
+30
+00:01:23,430 --> 00:01:25,980
+
+
+31
+00:01:25,980 --> 00:01:28,520
+Hãy nhìn vào bài toán.
+
+32
+00:01:28,520 --> 00:01:30,380
+Bạn được hợp tác xã MIT thuê
+
+33
+00:01:30,380 --> 00:01:33,220
+để giúp họ nâng cao sự vận hành chuỗi cung ứng của họ.
+
+34
+00:01:33,220 --> 00:01:34,930
+Người quản lý của hợp tác xã yêu cầu bạn
+
+35
+00:01:34,930 --> 00:01:37,180
+xem xét quản lý một trong những cuốn sổ tay
+
+36
+00:01:37,180 --> 00:01:39,060
+được phổ biến rộng rãi nhất viết về cuộc sống sinh viên.
+
+37
+00:01:39,060 --> 00:01:42,120
+Nhu cầu thị trường đối với cuốn sổ tay này là cực kỳ ổn định.
+
+38
+00:01:42,120 --> 00:01:44,970
+Có nghĩa là không có sự biến thiên nào hết.
+
+39
+00:01:44,970 --> 00:01:48,450
+Mỗi năm, hợp tác xã bán ra khoảng 5000 bản.
+
+40
+00:01:48,450 --> 00:01:52,560
+Giá mỗi bản là 10$.
+
+41
+00:01:52,560 --> 00:01:54,950
+Tập đoàn đặt hàng theo hình thức 
+
+42
+00:01:54,950 --> 00:01:56,810
+mỗi lần 500 cuốn.
+
+43
+00:01:56,810 --> 00:02:01,150
+Để đặt được mỗi đơn hàng như vậy, hợp tác xã phải trả 100$.
+
+44
+00:02:01,150 --> 00:02:03,310
+Bạn cũng thấy rằng hợp tác xã đang trả cho nhà xuất bản
+
+45
+00:02:03,310 --> 00:02:07,370
+2$ một cuốn, và chi phí giữ hàng là
+
+46
+00:02:07,370 --> 00:02:12,380
+0.28$ trên một đô la hàng trên một năm.
+

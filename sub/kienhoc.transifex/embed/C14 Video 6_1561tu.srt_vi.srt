@@ -1,0 +1,823 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/0PefsLtHGVw
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:04,270
+DR. RAMESH YERRABALLI: So we've
+looked at a transducer which
+
+3
+00:00:04,270 --> 00:00:10,570
+was a potentiometer that
+gave us a voltage value
+
+4
+00:00:10,570 --> 00:00:12,470
+from a corresponding
+variable resistance.
+
+5
+00:00:12,470 --> 00:00:15,520
+
+6
+00:00:15,520 --> 00:00:17,690
+Jon, can we look at a
+different device that
+
+7
+00:00:17,690 --> 00:00:22,760
+has some significance that we can
+then use to control something?
+
+8
+00:00:22,760 --> 00:00:25,810
+DR. JONATHAN VALVANO: Yeah,
+let's look at the sharp sensor.
+
+9
+00:00:25,810 --> 00:00:30,620
+The sharp sensor is an
+infrared distance sensor.
+
+10
+00:00:30,620 --> 00:00:36,210
+That means it takes a
+distance to an object
+
+11
+00:00:36,210 --> 00:00:40,350
+and it will convert it to a voltage.
+
+12
+00:00:40,350 --> 00:00:46,000
+This means if we connect it up
+to PE2 in our microcontroller
+
+13
+00:00:46,000 --> 00:00:48,770
+then our software has access.
+
+14
+00:00:48,770 --> 00:00:54,440
+Because it's an A to
+D, we can get a number
+
+15
+00:00:54,440 --> 00:01:02,435
+which is between 0 and 4,095
+which represents the distance.
+
+16
+00:01:02,435 --> 00:01:05,450
+
+17
+00:01:05,450 --> 00:01:08,670
+In order to understand
+this, we need to look
+
+18
+00:01:08,670 --> 00:01:15,260
+at the voltage created as a
+function of distance of this sensor.
+
+19
+00:01:15,260 --> 00:01:20,750
+And this is a very unusual and nonlinear
+sensor that has this sort of behavior.
+
+20
+00:01:20,750 --> 00:01:23,090
+It has two phases here.
+
+21
+00:01:23,090 --> 00:01:26,890
+This first phase where
+it's really close,
+
+22
+00:01:26,890 --> 00:01:32,500
+and that's less than 100 millimeters,
+it behaves in this weird way.
+
+23
+00:01:32,500 --> 00:01:38,250
+But after 100 millimeters it
+behaves in a very simple way
+
+24
+00:01:38,250 --> 00:01:46,730
+such that the distance is
+approximately equal to some constant
+
+25
+00:01:46,730 --> 00:01:48,480
+over the voltage.
+
+26
+00:01:48,480 --> 00:01:54,760
+And so I can use this relationship to
+write software such that my distance
+
+27
+00:01:54,760 --> 00:02:00,260
+variable-- this is now in
+software, in millimeters--
+
+28
+00:02:00,260 --> 00:02:05,630
+is equal to the sum
+calibration constant.
+
+29
+00:02:05,630 --> 00:02:07,200
+I did calibrate it.
+
+30
+00:02:07,200 --> 00:02:17,280
+And so the result I got was
+241,814 divided by this ADC value--
+
+31
+00:02:17,280 --> 00:02:20,450
+this number that comes from ADC.
+
+32
+00:02:20,450 --> 00:02:23,950
+So what we have is a
+software conversion here
+
+33
+00:02:23,950 --> 00:02:31,870
+which converts the number 0 to
+4,095 which is measured by the a
+
+34
+00:02:31,870 --> 00:02:40,530
+to d into a distance in millimeters
+which works from about 100
+
+35
+00:02:40,530 --> 00:02:44,050
+millimeters out to 700 millimeters.
+
+36
+00:02:44,050 --> 00:02:46,940
+
+37
+00:02:46,940 --> 00:02:49,240
+DR. RAMESH YERRABALLI:
+So just to recall,
+
+38
+00:02:49,240 --> 00:02:57,760
+the voltage to distance
+graph here is non-linear.
+
+39
+00:02:57,760 --> 00:03:03,110
+Whereas for our
+potentiometer the voltage
+
+40
+00:03:03,110 --> 00:03:06,410
+to distance-- if you think
+of the potential meter
+
+41
+00:03:06,410 --> 00:03:11,159
+as measuring distance-- then
+that would be a linear graph.
+
+42
+00:03:11,159 --> 00:03:12,700
+DR. JONATHAN VALVANO: That's correct.
+
+43
+00:03:12,700 --> 00:03:15,840
+And the software doesn't mind
+dealing with non-linearity
+
+44
+00:03:15,840 --> 00:03:19,850
+because we can just compensate
+for it in this equation.
+
+45
+00:03:19,850 --> 00:03:22,860
+But what do we use it for?
+
+46
+00:03:22,860 --> 00:03:26,030
+DR. RAMESH YERRABALLI:
+Well, we've been promising
+
+47
+00:03:26,030 --> 00:03:33,430
+that we will build a robot car that can
+avoid colliding with walls by sensing.
+
+48
+00:03:33,430 --> 00:03:35,507
+So let's put this to work.
+
+49
+00:03:35,507 --> 00:03:36,840
+DR. JONATHAN VALVANO: All right.
+
+50
+00:03:36,840 --> 00:03:42,000
+So the next step in our control
+system is to look at the blocks.
+
+51
+00:03:42,000 --> 00:03:46,230
+The parameter we want to control
+is called a state variable.
+
+52
+00:03:46,230 --> 00:03:48,800
+
+53
+00:03:48,800 --> 00:03:54,410
+In our case it will be
+where we are in the road.
+
+54
+00:03:54,410 --> 00:04:08,940
+We're then going to use transducers
+to estimate what we know
+
+55
+00:04:08,940 --> 00:04:12,530
+and learn where we are in the road.
+
+56
+00:04:12,530 --> 00:04:19,461
+And then we're going to use a
+control equation, which in our case
+
+57
+00:04:19,461 --> 00:04:20,169
+will be software.
+
+58
+00:04:20,169 --> 00:04:24,440
+
+59
+00:04:24,440 --> 00:04:35,700
+And then use these outputs to drive
+actuators that affect the real world.
+
+60
+00:04:35,700 --> 00:04:40,950
+So this is our world, which
+is our robot on the road.
+
+61
+00:04:40,950 --> 00:04:46,139
+And we're going to estimate
+where we are on the road--
+
+62
+00:04:46,139 --> 00:04:49,180
+DR. RAMESH YERRABALLI: By using a
+transducer that is our infrared sensor.
+
+63
+00:04:49,180 --> 00:04:53,362
+
+64
+00:04:53,362 --> 00:04:55,320
+DR. JONATHAN VALVANO:
+And the A to D converter.
+
+65
+00:04:55,320 --> 00:04:57,710
+
+66
+00:04:57,710 --> 00:04:59,710
+DR. RAMESH YERRABALLI:
+And we perform some logic
+
+67
+00:04:59,710 --> 00:05:02,590
+which is the control equation.
+
+68
+00:05:02,590 --> 00:05:05,384
+This is the intelligence
+part of our code.
+
+69
+00:05:05,384 --> 00:05:07,300
+DR. JONATHAN VALVANO:
+And we're actually going
+
+70
+00:05:07,300 --> 00:05:13,870
+to drive 2 pulse with modulated
+outputs for the left and right motors.
+
+71
+00:05:13,870 --> 00:05:18,760
+And you notice that a control
+system has a loop, a feedback loop.
+
+72
+00:05:18,760 --> 00:05:26,824
+And again, the desire is to drive the
+state variable to a certain set point.
+
+73
+00:05:26,824 --> 00:05:30,550
+All right, let's put
+the pieces together.
+
+74
+00:05:30,550 --> 00:05:33,340
+Let's look at more detail
+of the state variable.
+
+75
+00:05:33,340 --> 00:05:37,390
+
+76
+00:05:37,390 --> 00:05:38,125
+Here's our road.
+
+77
+00:05:38,125 --> 00:05:41,600
+
+78
+00:05:41,600 --> 00:05:45,700
+And we're going to have
+a wall and another wall.
+
+79
+00:05:45,700 --> 00:05:48,640
+And we want to avoid the wall.
+
+80
+00:05:48,640 --> 00:05:53,200
+And we're going to have
+our robot car here, which
+
+81
+00:05:53,200 --> 00:05:55,470
+is moving in this direction.
+
+82
+00:05:55,470 --> 00:06:00,000
+And we're going to have 2 sensors
+on the front of the robot.
+
+83
+00:06:00,000 --> 00:06:07,110
+And we're going to measure the distance
+between the robot and left wall
+
+84
+00:06:07,110 --> 00:06:08,990
+and the robot and the right wall.
+
+85
+00:06:08,990 --> 00:06:13,600
+So we'll call this Dleft, that's
+the distance to the left wall,
+
+86
+00:06:13,600 --> 00:06:15,040
+because we're going this way.
+
+87
+00:06:15,040 --> 00:06:18,660
+And this is the distance
+to the right wall.
+
+88
+00:06:18,660 --> 00:06:24,720
+And how do you know if we're
+in the middle of the road?
+
+89
+00:06:24,720 --> 00:06:27,656
+
+90
+00:06:27,656 --> 00:06:30,280
+DR. RAMESH YERRABALLI: I guess
+Dleft should be equal to Dright.
+
+91
+00:06:30,280 --> 00:06:32,529
+DR. JONATHAN VALVANO: Yeah,
+so what we're going to see
+
+92
+00:06:32,529 --> 00:06:35,290
+is, we're going to say we are
+going to look at our error.
+
+93
+00:06:35,290 --> 00:06:38,690
+In other words, we are
+going to be unhappy
+
+94
+00:06:38,690 --> 00:06:44,570
+if the distance to the
+left wall is different--
+
+95
+00:06:44,570 --> 00:06:49,040
+so we'll calculate the
+difference to the right wall.
+
+96
+00:06:49,040 --> 00:06:55,720
+And so the goal state is
+to drive the error to 0.
+
+97
+00:06:55,720 --> 00:07:02,600
+Because if this state variable error
+is 0 we're in the middle of the road.
+
+98
+00:07:02,600 --> 00:07:06,840
+So you remember our robot had 2 wheels.
+
+99
+00:07:06,840 --> 00:07:14,580
+And so what we have is PWM
+outputs for both wheels.
+
+100
+00:07:14,580 --> 00:07:18,280
+And so for each PWM
+outputs-- for instance
+
+101
+00:07:18,280 --> 00:07:34,620
+we have the right wheel high over the
+right wheel high plus right wheel low.
+
+102
+00:07:34,620 --> 00:07:38,190
+And this controls the
+power to the right motor.
+
+103
+00:07:38,190 --> 00:07:42,950
+In this example we're
+going to fix this to 40%.
+
+104
+00:07:42,950 --> 00:07:46,430
+So the right wheel is
+going to spin away at 40%.
+
+105
+00:07:46,430 --> 00:07:49,770
+The interesting part will
+be on the left wheel.
+
+106
+00:07:49,770 --> 00:07:55,890
+On the left wheel we're going to
+take the left high and let it change.
+
+107
+00:07:55,890 --> 00:08:00,240
+And again, the pulse with
+modulated signal for the left wheel
+
+108
+00:08:00,240 --> 00:08:05,750
+is the left high-- the time in
+which the left output is high
+
+109
+00:08:05,750 --> 00:08:09,130
+plus the time in which the left is low.
+
+110
+00:08:09,130 --> 00:08:16,850
+This pulse width modulation here,
+this duty cycle, is going to vary.
+
+111
+00:08:16,850 --> 00:08:23,510
+We're going to let it vary
+somewhere between 30% and 50%.
+
+112
+00:08:23,510 --> 00:08:26,730
+So as this varies
+between 30% or 50% it's
+
+113
+00:08:26,730 --> 00:08:29,174
+going to be going
+straight-- if its 40, 40.
+
+114
+00:08:29,174 --> 00:08:31,150
+40, 30 will turn one way.
+
+115
+00:08:31,150 --> 00:08:33,470
+40, 50 will turn the other way.
+
+116
+00:08:33,470 --> 00:08:39,650
+So this parameter here is the one I'm
+going to adjust in my control loop.
+
+117
+00:08:39,650 --> 00:08:43,929
+So let's look at the
+software flow chart.
+
+118
+00:08:43,929 --> 00:08:47,170
+This is a real time
+problem so we're going
+
+119
+00:08:47,170 --> 00:08:51,850
+to use SysTick interrupts
+to run our control loop.
+
+120
+00:08:51,850 --> 00:08:57,180
+So every periodic time, at
+about 100 times per second,
+
+121
+00:08:57,180 --> 00:09:00,970
+we're going to run this control loop.
+
+122
+00:09:00,970 --> 00:09:08,305
+We're going to measure the distance to
+the right and the distance to the left.
+
+123
+00:09:08,305 --> 00:09:13,350
+
+124
+00:09:13,350 --> 00:09:17,260
+We're going to calculate
+the error, which
+
+125
+00:09:17,260 --> 00:09:19,850
+we saw last time, which
+was the difference
+
+126
+00:09:19,850 --> 00:09:23,260
+between the left and the right.
+
+127
+00:09:23,260 --> 00:09:31,680
+
+128
+00:09:31,680 --> 00:09:32,970
+And now comes the fun part.
+
+129
+00:09:32,970 --> 00:09:34,560
+What do we do with it?
+
+130
+00:09:34,560 --> 00:09:42,520
+What I'm going to do with it is I'm
+going to actually look at the left high
+
+131
+00:09:42,520 --> 00:09:44,430
+and I'm going to adjust it.
+
+132
+00:09:44,430 --> 00:09:49,410
+Either spin it faster or slower,
+depending upon the error.
+
+133
+00:09:49,410 --> 00:09:54,540
+And I'm going to do this in a typical
+control way by using a number.
+
+134
+00:09:54,540 --> 00:09:57,780
+It's called the gain
+of this control system.
+
+135
+00:09:57,780 --> 00:10:02,630
+And I'm going to take the
+error and multiply it times 200
+
+136
+00:10:02,630 --> 00:10:04,010
+and subtract it off.
+
+137
+00:10:04,010 --> 00:10:06,470
+So if I'm too far to
+left, it'll turn right.
+
+138
+00:10:06,470 --> 00:10:08,740
+If I'm too far to the
+right, I'll turn left.
+
+139
+00:10:08,740 --> 00:10:12,940
+Notice what happens here
+if the error is equal to 0.
+
+140
+00:10:12,940 --> 00:10:15,900
+What happens if the error-- if I'm
+in the middle of the road, what
+
+141
+00:10:15,900 --> 00:10:19,280
+does my control system do?
+
+142
+00:10:19,280 --> 00:10:24,020
+DR. RAMESH YERRABALLI: So if the error
+is equal to 0, the left high stays put.
+
+143
+00:10:24,020 --> 00:10:25,230
+It doesn't change.
+
+144
+00:10:25,230 --> 00:10:27,790
+DR. JONATHAN VALVANO: So if
+we're happy, we'll stay happy.
+
+145
+00:10:27,790 --> 00:10:29,706
+DR. RAMESH YERRABALLI:
+And remember that we've
+
+146
+00:10:29,706 --> 00:10:32,220
+kept the right high at a constant.
+
+147
+00:10:32,220 --> 00:10:34,340
+So that doesn't change either.
+
+148
+00:10:34,340 --> 00:10:36,880
+So now we don't change either
+of them, we stay the course.
+
+149
+00:10:36,880 --> 00:10:38,880
+DR. JONATHAN VALVANO: So
+if we're in the middle,
+
+150
+00:10:38,880 --> 00:10:40,930
+we'll just keep being in the middle.
+
+151
+00:10:40,930 --> 00:10:43,820
+There's one more couple
+of problems we have
+
+152
+00:10:43,820 --> 00:10:48,010
+to deal with is that we have to make
+sure that it doesn't go below 30%.
+
+153
+00:10:48,010 --> 00:10:50,870
+
+154
+00:10:50,870 --> 00:10:58,000
+And so if the duty cycle goes below
+30%, we will set the duty cycle at 30%
+
+155
+00:10:58,000 --> 00:11:01,430
+so it doesn't completely stop
+or try to spin backwards.
+
+156
+00:11:01,430 --> 00:11:04,530
+
+157
+00:11:04,530 --> 00:11:09,680
+If it's OK then we will continue.
+
+158
+00:11:09,680 --> 00:11:15,390
+So if we look at the duty cycle here
+of the left wheel, if it is too slow
+
+159
+00:11:15,390 --> 00:11:17,660
+we'll fix it at too slow.
+
+160
+00:11:17,660 --> 00:11:21,880
+Similarly, if it's too fast,
+we'll look at the duty cycle.
+
+161
+00:11:21,880 --> 00:11:29,270
+If it is greater than 50% then we
+will set the duty cycle at 50%.
+
+162
+00:11:29,270 --> 00:11:41,210
+And these two comparisons will force
+the range here to between 30% and 50%.
+
+163
+00:11:41,210 --> 00:11:43,270
+We do have to calculate the other side.
+
+164
+00:11:43,270 --> 00:11:50,620
+The left low has to be set so that
+this number here is a constant.
+
+165
+00:11:50,620 --> 00:12:05,640
+And that constant is
+80,000 minus the left high.
+
+166
+00:12:05,640 --> 00:12:07,070
+And then we return.
+
+167
+00:12:07,070 --> 00:12:11,500
+So these are the steps
+of my control loop.
+
+168
+00:12:11,500 --> 00:12:14,160
+We sense our inputs.
+
+169
+00:12:14,160 --> 00:12:16,940
+We decide if we're were happy.
+
+170
+00:12:16,940 --> 00:12:22,540
+We adjust the actual actuator
+output so that we become more happy.
+
+171
+00:12:22,540 --> 00:12:25,170
+In other words, if we're too
+far to the left, we go right.
+
+172
+00:12:25,170 --> 00:12:27,500
+If we're too far to
+the right, we go left.
+
+173
+00:12:27,500 --> 00:12:29,250
+And this is a gain.
+
+174
+00:12:29,250 --> 00:12:32,020
+In other words, how fast do we turn?
+
+175
+00:12:32,020 --> 00:12:35,030
+In a control system we want to
+make sure we don't go crazy.
+
+176
+00:12:35,030 --> 00:12:40,400
+So we'll check and make sure we have
+a minimum and a maximum value that
+
+177
+00:12:40,400 --> 00:12:42,400
+makes sense for our actuator.
+
+178
+00:12:42,400 --> 00:12:44,460
+And then we perform the output.
+
+179
+00:12:44,460 --> 00:12:48,500
+And zoom, our robot is spinning.

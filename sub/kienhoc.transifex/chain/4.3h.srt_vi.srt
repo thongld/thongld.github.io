@@ -1,0 +1,236 @@
+0
+00:00:00,000 --> 00:00:00,780
+tangoclinhh_25/9/2017
+
+1
+00:00:00,780 --> 00:00:01,280
+Được rồi.
+
+2
+00:00:01,280 --> 00:00:03,196
+Hãy điểm qua những ý chính từ bài học này,
+
+3
+00:00:03,196 --> 00:00:05,400
+bài mở rộng của mô hình EOQ.
+
+4
+00:00:05,400 --> 00:00:07,730
+Hi vọng là từ giờ bạn đã rất quen thuộc với EOQ,
+
+5
+00:00:07,730 --> 00:00:09,650
+và bạn có thể thấy nó là một nơi tốt để bắt đầu.
+
+6
+00:00:09,650 --> 00:00:12,070
+Nó rất đáng tin cậy, cách tính đơn giản,
+
+7
+00:00:12,070 --> 00:00:14,190
+và một lần nữa, nó là một điểm khởi đầu tốt.
+
+8
+00:00:14,190 --> 00:00:15,710
+Và như bạn thấy từ bài học này,
+
+9
+00:00:15,710 --> 00:00:18,300
+ta có thể mở rộng nó để bao quát nhiều sự biến thiên khác nhau.
+
+10
+00:00:18,300 --> 00:00:21,044
+Điều đầu tiên mà ta đã làm là nhìn vào thời gian tiến hành.
+
+11
+00:00:21,044 --> 00:00:22,460
+Thay vì ngay lập tức,
+
+12
+00:00:22,460 --> 00:00:25,480
+ta đã nói về điều sẽ xảy ra nếu nó là một hằng số dương.
+
+13
+00:00:25,480 --> 00:00:27,220
+Ta đã thấy rằng nó không ảnh hưởng đến Q*.
+
+14
+00:00:27,220 --> 00:00:30,710
+Nó không ảnh hưởng đến lượng hàng tối ưu mà bạn sẽ đặt.
+
+15
+00:00:30,710 --> 00:00:34,116
+Tuy nhiên nó có thay đổi cách bạn giám sát hàng tồn kho của mình.
+
+16
+00:00:34,116 --> 00:00:35,490
+Và như chúng ta đã nói, bạn muốn bắt đầu
+
+17
+00:00:35,490 --> 00:00:37,900
+nhìn vào vị trí của hàng
+
+18
+00:00:37,900 --> 00:00:39,190
+chứ không chỉ nhìn vào thứ bạn có trong tay.
+
+19
+00:00:39,190 --> 00:00:41,610
+Bạn phải tính cả số hàng đang được chuyển đến nữa.
+
+20
+00:00:41,610 --> 00:00:43,610
+Và thời gian bổ sung hàng thay đổi -
+
+21
+00:00:43,610 --> 00:00:46,930
+bạn nhìn vào việc khi nào thì vị trí hàng của bạn
+
+22
+00:00:46,930 --> 00:00:50,610
+nhỏ hơn hoặc bằng thời gian yêu cầu thời gian thực hiện.
+
+23
+00:00:50,610 --> 00:00:53,000
+Về cơ bản, bạn sẽ đặt hàng khi
+
+24
+00:00:53,000 --> 00:00:55,700
+vị trí hàng của bạn
+
+25
+00:00:55,700 --> 00:00:58,770
+ở thời điểm mà bạn chỉ còn đủ hàng để bán
+
+26
+00:00:58,770 --> 00:01:01,024
+cho tới lúc đợt bổ sung hàng tiếp theo về đến nơi.
+
+27
+00:01:01,024 --> 00:01:02,190
+Sau đó ta xem xét sự chiết khấu.
+
+28
+00:01:02,190 --> 00:01:04,879
+Ta cũng đã nghiên cứu về All Units, Incremental và One Time Buy.
+
+29
+00:01:04,879 --> 00:01:06,670
+Rất phổ biến trong thực tế.
+
+30
+00:01:06,670 --> 00:01:08,750
+Hai cái đầu, All Units và Incremental,
+
+31
+00:01:08,750 --> 00:01:11,880
+tập trung vào tình huống
+
+32
+00:01:11,880 --> 00:01:13,690
+khi bạn đặt hàng nhiều hơn một mức nhất định,
+
+33
+00:01:13,690 --> 00:01:15,950
+chi phí mua hàng của bạn, C, sẽ thay đổi.
+
+34
+00:01:15,950 --> 00:01:17,242
+Vì vậy, nó trở nên có liên quan.
+
+35
+00:01:17,242 --> 00:01:19,700
+Và tất cả những điều ta đã làm là nhìn vào những điểm ngắt
+
+36
+00:01:19,700 --> 00:01:22,450
+để so sánh và xem liệu lấy chiết khấu có tác dụng gì không
+
+37
+00:01:22,450 --> 00:01:26,530
+ở mức điểm ngắt đó.
+
+38
+00:01:26,530 --> 00:01:28,360
+Sau đó ta xem xét One Time Buy,
+
+39
+00:01:28,360 --> 00:01:32,230
+đó là khi bạn muốn quyết định rằng liệu tôi có được lợi gì
+
+40
+00:01:32,230 --> 00:01:33,820
+từ một lần mua này không, nếu có thì bao nhiêu?
+
+41
+00:01:33,820 --> 00:01:37,060
+Điều xảy ra ở đó là ta đã trở thành một vấn đề hữu hạn.
+
+42
+00:01:37,060 --> 00:01:39,740
+Ta muốn nhìn vào khung thời gian
+
+43
+00:01:39,740 --> 00:01:44,570
+mà nó tốn để tiêu thụ hết lượng Qg đó.
+
+44
+00:01:44,570 --> 00:01:46,650
+Và cuối cùng, ta đã nghiên cứu EPQ,
+
+45
+00:01:46,650 --> 00:01:48,400
+số lượng sản phẩm kinh tế.
+
+46
+00:01:48,400 --> 00:01:50,280
+Đây là điểm mà ta có những sự bổ sung hữu hạn.
+
+47
+00:01:50,280 --> 00:01:52,960
+Vậy là số lượng hàng có sẵn tăng dần theo thời gian,
+
+48
+00:01:52,960 --> 00:01:54,010
+bởi vì tôi tạo ra điều đó.
+
+49
+00:01:54,010 --> 00:01:55,780
+Chúng không đến tất cả một lúc.
+
+50
+00:01:55,780 --> 00:01:58,400
+Và ta đã thấy nó dẫn tới một chi phí giữ hàng thấp hơn
+
+51
+00:01:58,400 --> 00:02:01,490
+bởi vì bạn đang tạo ra hàng, khi bạn tạo ra hàng,
+
+52
+00:02:01,490 --> 00:02:04,640
+bạn sẽ không phải chịu chi phí giữ hàng,
+
+53
+00:02:04,640 --> 00:02:06,580
+điều đó dẫn tới một EPQ cao hơn.
+
+54
+00:02:06,580 --> 00:02:09,289
+Đó là 3 sự mở rộng đơn giản của chúng ta.
+
+55
+00:02:09,289 --> 00:02:12,244
+Hi vọng rằng bài này đã giúp bạn hiểu EOQ hơn một chút.
+
+56
+00:02:12,244 --> 00:02:14,410
+Nếu bạn có bất kỳ câu hỏi, bình luận hay gợi ý nào,
+
+57
+00:02:14,410 --> 00:02:16,148
+xin hãy tham gia phần thảo luận.
+
+58
+00:02:16,148 --> 00:02:16,648
+
+

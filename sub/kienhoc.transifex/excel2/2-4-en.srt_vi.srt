@@ -1,0 +1,164 @@
+1
+00:00:00,280 --> 00:00:04,080
+Ta sẽ tìm hiểu dữ liệu hôm nay nhé, việc này xoay quanh câu hỏi:
+
+2
+00:00:04,320 --> 00:00:08,660
+'Có bao nhiêu đôi tất xanh lá Tokyo đã bán vào các ngày thứ tư?'
+
+3
+00:00:08,660 --> 00:00:13,820
+Hẳn là bạn đã quen với việc này ở video trước rồi. Ta có màu sắc và hạng mục.
+
+4
+00:00:14,380 --> 00:00:20,540
+Và một thứ còn thiếu đó là ngày: ngày thứ tư. Ta có thể thêm vào một lát cắt. 
+
+5
+00:00:20,540 --> 00:00:25,000
+Bạn thấy ở đây tôi thêm một lát cắt vào bằng cách sử dụng thanh ribbon. Đó là một cách.
+
+6
+00:00:25,220 --> 00:00:32,180
+Thêm một lát cắt cho ngày... Nhưng có rất nhiều ngày. Thử tưởng tượng ta phải lôi quyển lịch ra 
+
+7
+00:00:32,180 --> 00:00:35,620
+và xem trong số này những ngày nào là ngày thứ tư.
+
+8
+00:00:35,780 --> 00:00:39,460
+Thật là vô cùng mất công. Và tất nhiên đó không phải việc ta muốn.
+
+9
+00:00:39,539 --> 00:00:43,399
+Một điều quan trọng trong khóa học này là: Nếu bạn thấy việc nào đó sẽ mất rất nhiều thời gian
+
+10
+00:00:43,399 --> 00:00:49,459
+như kiểu một tiếng lao động chân tay, thì rất có thể có một cách khác tốt hơn để làm việc đó.
+
+11
+00:00:49,620 --> 00:00:51,840
+Và nó đúng trong hoàn cảnh này.
+
+12
+00:00:51,979 --> 00:00:55,679
+Tôi sẽ chỉ cho bạn cách thông minh hơn để lọc các ngày thứ tư.
+
+13
+00:00:56,289 --> 00:01:00,289
+Đây không phải cái ta muốn. Hãy xóa lát cắt kinh khủng với đầy ngày tháng chi chít này
+
+14
+00:01:00,500 --> 00:01:05,440
+ta sẽ chọn một cách khác. Ta sẽ thêm vào một công thức cho các ngày trong tuần.
+
+15
+00:01:05,440 --> 00:01:08,340
+Excel có một công thức CÁC NGÀY TRONG TUẦN, với nó bạn có thể
+
+16
+00:01:08,340 --> 00:01:13,860
+nhập vào một ngày, và bạn nhận được số ngày trong tuần từ ngày 1 vào chủ nhật và tương tự
+
+17
+00:01:14,220 --> 00:01:19,760
+Và đây là kết quả. Tuy nhiên, giờ ta đang trộn công thức với dữ liệu,
+
+18
+00:01:19,760 --> 00:01:23,580
+đây không phải là ý kiến hay. Hơn nữa, cột các ngày trong tuần này chưa được chuyển thành  
+
+19
+00:01:23,590 --> 00:01:28,090
+kiểu dữ liệu, nên ta sẽ phải tạo một bảng Pivot mới gồm ngày trong tuần.
+
+20
+00:01:28,440 --> 00:01:33,760
+Điều này chẳng hay tí nào, tôi không thích nó. Chắc phải có cách tốt hơn để thêm vào một trường.
+
+21
+00:01:33,869 --> 00:01:38,749
+Ta sẽ đổi tên của sheet này nữa, 'Sheet4' nghe không được hay cho lắm.
+
+22
+00:01:39,620 --> 00:01:43,960
+Cách tốt hơn để làm việc này là gì? Hãy sử dụng siêu năng lượng nào!
+
+23
+00:01:44,480 --> 00:01:50,000
+Nếu đã học bài giảng trước, chắc bạn đã biết về Power Pivot, một dạng kiểu như bảng Pivot
+
+24
+00:01:50,000 --> 00:01:53,780
+nhưng tính năng tuyệt hơn nhiều. Giống như bảng Pivot với siêu năng lượng vậy.
+
+25
+00:01:53,920 --> 00:01:59,180
+Nếu bạn chưa biết gì về Power Pivot, chúng tôi sẽ đăng một số đường dẫn ở dưới video này.
+
+26
+00:01:59,189 --> 00:02:04,030
+Hãy xem chúng trước nhé, vì nếu không bạn sẽ có thể không theo kịp khi xem giới thiệu về
+
+27
+00:02:04,030 --> 00:02:08,920
+Power Pivot ở tốc độ khá nhanh. Còn nếu bạn đã biết về nó thì cứ tiếp tục bài học
+
+28
+00:02:08,920 --> 00:02:13,260
+và hãy xem ta có thể giải quyết vấn đề dữ liệu bằng cách sử dụng Power Pivot thế nào
+
+29
+00:02:13,580 --> 00:02:17,659
+Nhấp chuột vào ô 'Manage' trên thanh ribbon và giờ ta có được kiểu mẫu dữ liệu.
+
+30
+00:02:17,659 --> 00:02:22,040
+Bạn đang thấy ở đây tất cả dữ liệu ta có. Ở đây ta có thể thêm một cột ngày trong tuần cũng hệt như
+
+31
+00:02:22,040 --> 00:02:26,840
+cách ta đã làm trong Excel: chỉ cần thêm một công thức: =WEEKDAY.
+
+32
+00:02:26,840 --> 00:02:31,360
+Ta có thể dùng bất cứ công thức nào của Excel ở đây. Và bạn có kết quả mong muốn.
+
+33
+00:02:31,360 --> 00:02:36,660
+Thậm chí bạn không cần phải kéo xuống. Power Pivot tự động cập nhật chúng cho mọi ghi chép
+
+34
+00:02:36,860 --> 00:02:40,200
+và tự động bổ sung nó vào bảng Pivot của bạn.
+
+35
+00:02:40,209 --> 00:02:46,089
+Nó đây. Bạn có thể thêm một lát cắt và giờ hãy đếm: Chủ nhật, Thứ hai, Thứ ba,
+
+36
+00:02:46,089 --> 00:02:52,709
+Thứ tư, đây rồi, nhấp vào. Ta có thông tin về số bít tất màu xanh lá ở Tokyo chỉ với ba cú nhấp chuột.
+
+37
+00:02:52,980 --> 00:02:55,620
+Giờ ta không chỉ tính được số lượng bít tất màu xanh lá
+
+38
+00:02:55,620 --> 00:03:00,980
+được bán ở Tokyo vào các ngày thứ tư, mà ta còn có một cái nhìn tổng quan cho phép phân tích
+
+39
+00:03:00,980 --> 00:03:04,680
+bất cứ màu sắc, hạng mục nào vào bất cứ ngày nào trong tuần.
+
+40
+00:03:04,819 --> 00:03:08,959
+Vậy là chúng ta đã biết cách khảo sát phân tích dữ liệu rồi đó.
+
+41
+00:03:09,320 --> 00:03:10,360
+Hẹn gặp lại bạn tuần sau!
+

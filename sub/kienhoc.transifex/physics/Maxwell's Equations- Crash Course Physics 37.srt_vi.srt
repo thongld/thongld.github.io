@@ -1,0 +1,464 @@
+1
+00:00:03,70 --> 00:00:07,720
+Cho tới thế kỉ thứ 19, chúng ta đã khá chắc rằng điện và từ có mối quan hệ nhất định nào đó với nhau.
+
+2
+00:00:07,720 --> 00:00:16,900
+Trước hết, vào những năm đầu của thập niên 1800, Michael Faraday đã chỉ ra rằng: từ trường biến thiên sẽ sinh ra suất điện động (emf) cảm ứng, tạo ra dòng điện.
+
+3
+00:00:16,900 --> 00:00:23,959
+Ông cũng tìm ra rằng điện trường đôi khi hành xử giống từ trường, từ đó phát triển các phương trình để tính toán lực gây ra bởi cả từ trường và điện trường.
+
+4
+00:00:23,960 --> 00:00:29,200
+Vào giữa thế kỉ 19, nhà Vật lý người Scotland James Maxwell cũng có chung suy nghĩ về hiện tượng này.
+
+5
+00:00:29,210 --> 00:00:34,290
+Vì vậy, ông ta quyết định thiết lập một hệ phương trình
+luôn đúng với mọi tương tác điện từ.
+
+6
+00:00:34,290 --> 00:00:40,160
+Và ông ấy đã thành công trong việc biên soạn một hệ phương trình thiết yếu của Vật lý giống như là các định luật chuyển động của Newton.
+
+7
+00:00:40,160 --> 00:00:46,220
+Và khi đang nghiên cứu về hệ phương trình bao-quát-tất-cả của mình, Maxwell dự đoán sự tồn tại của sóng điện từ (electromagnetic waves).
+
+8
+00:00:46,220 --> 00:00:53,120
+Nhờ những sóng này mà bạn có thể quan sát thế giới xung quanh, nói chuyện với bạn bè cách xa ngàn dặm, hay hâm nóng bánh burrito để chữa cơn thèm lúc nửa đêm.
+
+9
+00:00:53,120 --> 00:00:56,820
+Vậy Maxwell và những phương trình của ông, nói đơn giản, là một sự khai sáng
+
+10
+00:00:56,820 --> 00:01:09,320
+[Nhạc dạo]
+
+11
+00:01:09,320 --> 00:01:18,39
+Khi James Maxwell thiết lập "đội hình trong mơ" của các phươnh trình điện từ, ông bắt đầu với những ý tưởng - và công cụ toán học - mà các nhà Vật lý khác đã công bố rồi.
+
+12
+00:01:18,40 --> 00:01:22,820
+Nhưng ông đưa chúng về một nhà, để tạo ra một các hiểu mới,
+hoàn thiện hơn về điện từ trường
+
+13
+00:01:22,820 --> 00:01:31,699
+Phương trình đầu tiên của Maxwell ở dạng định luật Gauss: thông lượng điện trường/điện thông (electric flux) qua một mặt kín tỉ lệ thuận với tổng điện tích chứa bên trong mặt đó.
+
+14
+00:01:31,700 --> 00:01:39,680
+Một mặt kín trong trường hợp này là bề mặt với hình dạng bất kì bao bọc hoàn toàn điện tích, như là một mặt cầu hay bất kì hình 3 chiều nào khác.
+
+15
+00:01:39,680 --> 00:01:44,000
+Và điện thông được xác định bởi lượng điện trường xuyên qua một diện tích cho trước.
+
+16
+00:01:44,000 --> 00:01:54,180
+Về mặt toán học, phương trình này chỉ ra rằng điện thông là tích phân của điện trường (E) trên toàn bộ diện tích bề mặt (dA), nó bằng với tổng điện tích (q) được bao bọc bởi bề mặt, chia cho độ điện thẩm của chân không ( ε0) .
+
+17
+00:01:54,180 --> 00:02:03,340
+Tôi sẽ không trách bạn nếu không nhớ đâu, nhưng độ điện thẩm của chân không ( ε0) là một hằng số tỉ lệ mà chúng ta đã dùng trước đây. Nó liên hệ giữa điện tích và tác động vật lý của điện trường.
+
+18
+00:02:03,340 --> 00:02:08,399
+Nếu điện trường không đổi trên toàn bề mặt, vế trái phương trình trở thành E (điện trường) nhân A (diện tích). 
+
+19
+00:02:08,400 --> 00:02:14,240
+Phương trình thứ 2 của Maxwell cũng là một dạng của định luật Gauss, nhưng là với từ trường thay vì điện trường.
+
+20
+00:02:14,240 --> 00:02:21,260
+Nguồn từ trường luôn là lưỡng cực, với cực bắc và cực nam, và các đường sức từ luôn ra khỏi cực bắc (N) và vòng trở về cực nam (S).
+
+21
+00:02:21,260 --> 00:02:31,160
+Khi khảo sát tương tác của từ trường với một bề mặt bao xung quanh, bạn sẽ thấy rằng các đường sức rời khỏi bề mặt ở cực bắc sẽ phải quay trở lại thông qua bề mặt để tới cực nam.
+
+22
+00:02:31,160 --> 00:02:34,220
+Dẫn tới tổng thông lượng từ trường bằng không.
+
+23
+00:02:34,220 --> 00:02:41,380
+So sánh phương trình đầu tiên của Maxwell, phương trình này cũng chứa tích phân của từ trường (B) trên toàn bộ diện tích bề mặt (dA) và có cùng dạng.
+
+24
+00:02:41,380 --> 00:02:45,370
+Nhưng ở đây, tích phân này luôn có giá trị bằng 0
+với mọi mặt kín.
+
+25
+00:02:45,370 --> 00:02:48,490
+Còn bây giờ, phương trình thứ 3 của Maxwell
+thì lại hoàn toàn không liên quan tới định luật Gauss.
+
+26
+00:02:48,490 --> 00:02:52,930
+Thay vào đó là định luật Faraday, nhưng 
+ở dạng hơi khác so với chúng ta đã thấy trước đó.
+
+27
+00:02:52,930 --> 00:02:54,500
+Đây là phương trình mà chúng ta đã thấy trước đây.
+
+28
+00:02:54,500 --> 00:03:01,200
+Nếu bạn còn nhớ, định luật Faraday về cảm ứng điện từ nói rằng từ trường thay đổi sẽ tạo ra suất điện động cảm ứng trong một cuộn dây dẫn.
+
+29
+00:03:01,200 --> 00:03:06,880
+Phiên bản của Maxwell thì tổng quát hơn, đơn giản hoá định luật Faraday để chỉ ra giá trị của suất điện động cảm ứng đó.
+
+30
+00:03:06,880 --> 00:03:11,579
+Nó nói rằng suất điện động bằng với tích phân đường (line integral) của điện trường (E) trên một đường kín.
+
+31
+00:03:11,580 --> 00:03:16,980
+Phương trình này cho thấy mối quan hệ giữa từ trường thay đổi và điện trường cảm ứng.
+
+32
+00:03:16,980 --> 00:03:22,859
+Phương trình thứ tư và cũng là của cùng thì được Maxwell thay đổi nhiều nhất, để có thể áp dụng với mọi hiện tượng điện từ.
+
+33
+00:03:22,860 --> 00:03:30,860
+Phương trình thứ nhất và thứ hai rất tương tự với nhau - một cho điện trường và một cho từ trường - khiến ông nghĩ chắc hẳn phải có một phương trình nữa bổ sung với định luật Faraday.
+
+34
+00:03:30,860 --> 00:03:36,760
+Sau tất cả, nếu một từ thông thay đổi tạo ra điện trường, thì tại sao lại không có một định luật bổ sung khác nói điều ngược lại?
+
+35
+00:03:36,760 --> 00:03:40,700
+Tại sao điện thông thay đổi lại không tạo ra
+một từ trường cảm ứng?
+
+36
+00:03:40,700 --> 00:03:47,260
+Và thế là Maxwell bắt đầu với định luật Ampère: dòng điện trong một dây dẫn tạo ra một từ trường theo đường vòng xung quanh sợi dây.
+
+37
+00:03:47,260 --> 00:03:56,700
+Để phương trình này đúng với mọi hiện tượng điện từ, Maxwell đã phải xem xét trường hợp khi mà từ trường được tại ra không phải do dòng điện
+
+38
+00:03:56,700 --> 00:04:00,859
+Ví dụ, tưởng tượng một tụ điện đã nạp 
+nối với dây dẫn ở cả 2 đầu.
+
+39
+00:04:00,860 --> 00:04:08,80
+Khi tụ phóng điện, dòng điện chạy qua cả hai bên dây dẫn, tạo ra một thông lượng từ trường thay đổi, giống như trong định luật Ampère.
+
+40
+00:04:08,80 --> 00:04:13,460
+Nhưng một thông lượng từ trường thay đổi cũng được tạo ra ở khoảng giữa 2 bản tụ nơi mà không có dây dẫn kết nối.
+
+41
+00:04:13,460 --> 00:04:17,440
+Tuy nhiên, có một điện trường thay đổi,
+và nó hành xử như một dòng điện "không dây".
+
+42
+00:04:17,440 --> 00:04:21,339
+Để đối phó với thông lượng từ trường 
+tạo bởi "dòng điện không dây" này,
+
+43
+00:04:21,339 --> 00:04:26,60
+Maxwell đã thêm vào định luật Ampère một thứ được gọi là "dòng điện dịch" (displacement current), để hoàn thiện phương trình.
+
+44
+00:04:26,60 --> 00:04:29,460
+Cho dù được gọi là dòng điện dịch, 
+nó không thực sự là một dòng điện.
+
+45
+00:04:29,460 --> 00:04:33,719
+Nó chỉ được gọi như vậy vì trong phương trình
+nó có vai trò như là dòng điện thật.
+
+46
+00:04:33,720 --> 00:04:38,160
+Về mặt toán học, dòng điện dịch bằng với tốc độ thay đổi điện tích của tụ theo thời gian.
+
+47
+00:04:38,160 --> 00:04:43,580
+Và cũng bằng với tốc độ thay đổi điện thông theo thời gian, nhân với hằng số điện thẩm của chân không .
+
+48
+00:04:43,580 --> 00:04:46,960
+Với việc thay đổi, bổ sung định luật Ampère,
+hệ phương trình Maxwell đã hoàn thiện!
+
+49
+00:04:46,960 --> 00:04:51,239
+Ngày nay, sử dụng các định luật của Maxwell, chúng ta có thể thấy một quy luật
+trong sự sản sinh của điện trường và từ trường.
+
+50
+00:04:51,240 --> 00:05:00,300
+Phát ra một điện trường biến thiên sẽ tạo ra một từ trường cảm ứng, và rồi từ tường đó lại biến thiên tạo ra một điện trường cảm ứng, và chu trình cứ thế tiếp tục.
+
+51
+00:05:00,300 --> 00:05:06,840
+Những dạo dộng này là các sóng điện từ, và chúng được tạo ra từ sự biến thiên của điện trường và từ trường lan truyền trong không gian.
+
+52
+00:05:06,840 --> 00:05:11,429
+Maxwell tin rằng chúng ta có thể sản sinh sóng điện từ trong phòng thí nghiệm, và ông ấy đã đúng!
+
+53
+00:05:11,440 --> 00:05:17,440
+Để chứng minh điều đó, chúng ta hãy cùng khảo sát một vật mà có thể sản sinh và lan truyền sóng điện từ trong không khí: cái Ăng-ten!
+
+54
+00:05:17,440 --> 00:05:22,620
+Cái ăng-ten này được tạo ra bằng hai thanh dẫn điện,
+mỗi thanh được gắn với một đầu của máy pháy điện xoay chiều (AC generator).
+
+55
+00:05:22,620 --> 00:05:29,200
+Khi ăng-ten hoặt động, hai thanh này thay đổi qua lại giữa tích điện dương và âm, khi máy phát thay đổi điện thế.
+
+56
+00:05:29,210 --> 00:05:33,680
+Và khi một thanh được tích điện dương, 
+thanh còn lại tích điện âm và ngược lại.
+
+57
+00:05:33,680 --> 00:05:43,000
+Khi dòng điện đi lên trên một thanh, sử dụng quy tắc nắm tay phải, ngón tay cái bên phải hướng theo chiều dòng điện, bạn sẽ thấy chiều của từ trường chạy vòng quanh ăng-ten.
+
+58
+00:05:43,000 --> 00:05:49,460
+Bản thân điện trường phát ra từ ăng-ten rất dễ để theo dấu, vì chúng sẽ chỉ đi từ thanh tích điện dương sang thanh tích điện âm.
+
+59
+00:05:49,460 --> 00:05:54,979
+Nhưng vì chiều dòng điện thay đổi, chiều của cả điện trường và từ trường cũng thay đổi theo.
+
+60
+00:05:54,980 --> 00:06:01,420
+Và khi các thanh đổi dấu điện tích, sóng được phát ra bởi phân bố điện tích ban đầu tiếp tục lan truyền đi ra xa từ ăng-ten.
+
+61
+00:06:01,420 --> 00:06:08,20
+Vì vậy, nều bạn đứng cách xa ăng-ten, bạn có thể đo được từ trường và điện trường đều thay đổi liên tục.
+
+62
+00:06:08,20 --> 00:06:09,419
+Nó sẽ trông như thế nào?
+
+63
+00:06:09,420 --> 00:06:16,000
+Để hình dung hiệu ứng các trường thay đổi khi lan truyền, hãy cùng mô phỏng sóng điện từ khi nó truyền đi trong không gian 3 chiều.
+
+64
+00:06:16,10 --> 00:06:20,200
+Trước tiên, chọn hướng mà sóng lan truyền
+là chiều trục x.
+
+65
+00:06:20,200 --> 00:06:23,700
+Giờ hãy vẽ đồ thị của điện trường, dao động qua lại
+trên trục y.
+
+66
+00:06:23,700 --> 00:06:30,400
+Điện trường và từ trườn luôn luôn vuông góc với nhau, nên từ trường sẽ dao dộng trên trục z.
+
+67
+00:06:30,400 --> 00:06:34,479
+Chú ý rằng điện trường và từ trường 
+đạt cực đại cùng lúc, nên là chúng đồng pha.
+
+68
+00:06:34,480 --> 00:06:44,000
+Những sóng điện từ này là một dạng sóng ngang, nghĩa là cả hai trường, điện và từ, luôn dao động trên phương vuông góc với chiều lan truyền của sóng.
+
+69
+00:06:44,000 --> 00:06:45,760
+Và những sóng này lan truyền với tốc độ nào?
+
+70
+00:06:45,760 --> 00:06:51,960
+Maxwell đã tính toán vận tốc của mỗi sóng bằng với độ lớn của điện trường (E) chia cho độ lớn của từ trường (B).
+
+71
+00:06:51,960 --> 00:07:02,380
+Phương trình này đơn giản hoá thành phương trình với hai hằng số, độ điện thẩm của chân không cho điện trường, ε0 (ep-xi-lon không), và độ từ thẩm của chân không cho điện trường µ0 (muy không).
+
+72
+00:07:02,380 --> 00:07:07,180
+Tính ra thì tốc độ này là 3.00 nhân 10 mũ 8
+mét trên giây.
+
+73
+00:07:07,180 --> 00:07:13,100
+Ta kí hiệu đơn giản là c, và nó là tốc độ
+của tất cả các song điện từ trong chân không.
+
+74
+00:07:13,100 --> 00:07:14,980
+Bạn có lẽ sẽ biết đến nó nhiều hơn với tên gọi tốc độ ánh sáng.
+
+75
+00:07:14,980 --> 00:07:17,640
+Sau tất cả, ánh sáng củng là một sóng điện từ!
+
+76
+00:07:17,640 --> 00:07:22,979
+Mọi sóng điện từ đều truyền năng lượng trong không gian, và có thể phản xạ khỏi vật liệu này, nhưng lại truyền qua vật liệu khac
+
+77
+00:07:22,990 --> 00:07:27,220
+Nhưng ánh sáng nhìn thấy chỉ là một phần rất nhỏ
+trong cái gọi là phổ bức xạ điện từ.
+
+78
+00:07:27,220 --> 00:07:32,740
+Giống như sóng biển, các sóng điện từ có thể 
+khác nhau ở bước sóng, biên độ, và nguồn phát sóng.
+
+79
+00:07:32,740 --> 00:07:35,560
+Bước sóng là khoảng cách giữa hai ngọn sóng.
+
+80
+00:07:35,560 --> 00:07:38,440
+Và tần số là số lần sóng đạt cực đại (tại 1 điểm trên phương truyền sóng) trong 1 giây.
+
+81
+00:07:38,440 --> 00:07:44,100
+Có thể bạn nhớ khi chúng ta bàn về sóng chạy, chúng có tốc độ truyền sóng bằng tần số nhân với bước sóng.
+
+82
+00:07:44,100 --> 00:07:49,160
+Và vì tốc độ ánh sáng là không đổi, bạn có thể dễ dàng tính tần số nếu biết bước sóng và ngược lại.
+
+83
+00:07:49,160 --> 00:07:57,720
+Bây giờ, để tính năng lượng mang bởi bất kì sóng điện từ nào, bạn cần biết độ lớn của điện trường và từ trường tạo nên sóng đó.
+
+84
+00:07:57,720 --> 00:08:05,500
+Đặc biệt, bạn dùng những độ lớn này để tính cái gọi là mật độ năng lượng của từng trường, đó là lượng năng lượng chứa trong một trường trong một đơn vị thể tích.
+
+85
+00:08:05,500 --> 00:08:11,240
+Sau đó, bạn có thể kết hợn mật độ năng lượng của cả hai trường, tìm ra tổng năng lượng trên một đơn vị thể tích của toàn sóng.
+
+86
+00:08:11,240 --> 00:08:15,360
+Nhưng vì độ lớn của điện trường 
+và từ trường liên hệ trực tiếp với nhau,
+
+87
+00:08:15,360 --> 00:08:20,000
+bạn có thể thế độ lớn từ trường và điện trường cho nhau.
+
+88
+00:08:20,000 --> 00:08:25,800
+Từ đó, bạn sẽ có biểu thức của mật độ năng lượng bao gồn năng lượng từ cả hai trường, với ít biến số hơn.
+
+89
+00:08:25,800 --> 00:08:31,60
+Nên, đây là công thức tính tốc độ ánh sáng của Maxwell, và những hằng số được đơn giản hoá thành
+
+90
+00:08:31,60 --> 00:08:38,940
+Bạn có thể lấy phương trình mật độ năng lượng và thay thế độ lớn của từ trường, B, bằng điện trường, nhân với căn bậc hai của hằng số điện thẩm và từ thẩm.
+
+91
+00:08:38,940 --> 00:08:46,180
+Với biểu thức thu gọn này của mật độ năng lượng, bạn có thể thay thế độ lớn điện trường bằng tốc độ ánh sáng và độ lớn từ trường. 
+
+92
+00:08:46,180 --> 00:08:51,20
+Những phương trình này cho ta mật độ năng lượng
+của sóng điện từ (EM wave) ở bất kì điểm nào trong quá trình lan truyền sóng.
+
+93
+00:08:51,20 --> 00:08:58,120
+Đại lượng quan trọng cuối cùng trong vận chuyển năng lượng là cường độ, là năng lượng truyền bởi sóng trong 1 đơn vị thời gian, trên 1 đơn vị diện tích.
+
+94
+00:08:58,120 --> 00:09:06,640
+Về mặt toán học, năng lượng được vận chuyển bằng mật độ năng lượng nhân thể tích không gian mà trong đó năng lượng được truyền đi trong một khoảng thời gian
+
+95
+00:09:06,650 --> 00:09:10,490
+Rồi bạn có thể thay thế mật độ năng lượng với 
+một trong những phương trình đơn gian mà chúng ta dùng trước đó.
+
+96
+00:09:10,490 --> 00:09:16,10
+vậy thể tích không gian được chiếm bởi sóng bằng với diện tích (A) nhân với quãng đường đi được.
+
+97
+00:09:16,10 --> 00:09:19,840
+Và quãng đường đi được sẽ bằng tốc độ ánh sáng nhân với thời gian.
+
+98
+00:09:19,840 --> 00:09:29,860
+Sau khi tối giản những số hạng giống nhau, ta có một phương trình cho thấy lượng năng lượng trên một đơn vị diện tích dựa trên độ lớn của điện trường (hay cũng có thể thay thế bằng độ lớn từ trường).
+
+99
+00:09:29,860 --> 00:09:31,360
+Cực nhiều toán, tôi biết.
+
+100
+00:09:31,360 --> 00:09:41,400
+But the vast knowledge of electromagnetism that we have today, and the doors it has opened into the fields of relativity and quantum theory, are all based on the theories that Maxwell and his predecessors developed.
+
+101
+00:09:41,400 --> 00:09:53,959
+Albert Einstein praised Maxwell specifically for his contributions, but it was the combined effort of revolutionary minds like Maxwell, Faraday, and Gauss that we have to thank for our understanding of the interaction between electric and magnetic fields.
+
+102
+00:09:53,960 --> 00:09:58,740
+Today we learned about Maxwell’s equations
+and their unifying power in the field of electromagnetism.
+
+103
+00:09:58,740 --> 00:10:04,80
+We discussed electromagnetic waves and how changing electric and magnetic fields propagate through space.
+
+104
+00:10:04,80 --> 00:10:10,300
+We investigated the different types of waves on the electromagnetic spectrum as well as how to calculate the amount of energy they can carry.
+
+105
+00:10:10,300 --> 00:10:14,339
+Crash Course Physics is produced in association
+with PBS Digital Studios.
+
+106
+00:10:14,340 --> 00:10:18,100
+You can head over to their channel and check out a playlist of the latest episodes from shows like:
+
+107
+00:10:18,100 --> 00:10:20,720
+Shank’s FX, Physics Girl, and Deep Look.
+
+108
+00:10:20,720 --> 00:10:24,640
+This episode of Crash Course was filmed in
+the Doctor Cheryl C. Kinney Crash Course Studio
+
+109
+00:10:24,640 --> 00:10:29,60
+with the help of these amazing people and our equally amazing graphics team, is Thought Cafe.
+

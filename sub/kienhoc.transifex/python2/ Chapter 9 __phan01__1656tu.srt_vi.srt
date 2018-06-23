@@ -1,0 +1,819 @@
+1
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/FS-WZWUlPlM
+NghiaNguyen Thao reviewed
+
+2
+00:00:00,500 --> 00:00:05,020
+Chào các bạn, chào mừng tới chương 9,
+Python dictionaries. 
+
+3
+00:00:05,020 --> 00:00:08,520
+Như mọi khi, bài giảng này thuộc 
+bản quyền Creative Commons Attribution.
+
+4
+00:00:08,520 --> 00:00:12,990
+có nghĩa là âm thanh, hình ảnh, các slide, 
+
+5
+00:00:12,990 --> 00:00:16,570
+và cả mấy dòng viết ngoáy của tôi, bạn có thể dùng theo cách mình muốn.
+
+6
+00:00:16,570 --> 00:00:17,850
+Miễn là bạn nêu rõ bản quyền.
+
+7
+00:00:17,850 --> 00:00:20,117
+Đây là chương thứ 2
+
+8
+00:00:20,117 --> 00:00:21,450
+học về bộ dữ liệu.
+
+9
+00:00:21,450 --> 00:00:23,741
+Bộ dữ liệu giống như chiếc va li,
+
+10
+00:00:23,741 --> 00:00:27,890
+chúng ta có thể để nhiều thứ vào trong.
+
+11
+00:00:27,890 --> 00:00:29,470
+Các biến mà chúng ta đã học
+
+12
+00:00:29,470 --> 00:00:32,479
+bắt đầu từ chương 2 và chương 3
+
+13
+00:00:32,479 --> 00:00:34,520
+chỉ là những biến đơn giản.
+
+14
+00:00:34,520 --> 00:00:37,580
+Biến đơn, đó là loại biến mà bạn
+
+15
+00:00:37,580 --> 00:00:40,610
+có thể đưa lưu dữ liệu khác vào
+ghi đè lên dữ liệu trước đó.
+
+16
+00:00:40,610 --> 00:00:46,810
+Nếu bạn nhìn đoạn code này,
+x = 2 và x = 4
+
+17
+00:00:46,810 --> 00:00:51,220
+Câu hỏi ở đây là, số 2 
+đã biến mất đi đâu?
+
+18
+00:00:51,220 --> 00:00:53,230
+2 ở đây, x ở đây.
+
+19
+00:00:53,230 --> 00:00:55,490
+Ta có số 2 ở đây, và 
+sau đó chúng ta bỏ nó,
+
+20
+00:00:55,490 --> 00:00:56,720
+và đưa số 4 vào.
+
+21
+00:00:56,720 --> 00:00:59,180
+Đây là một phép toán cơ bản, phép gán,
+
+22
+00:00:59,180 --> 00:01:01,210
+nó là sự thay thế.
+
+23
+00:01:01,210 --> 00:01:04,060
+Nhưng 1 dictionary (từ điển)
+cho phép ta chứa nhiều thứ,
+
+24
+00:01:04,060 --> 00:01:06,140
+không theo cú pháp này, 
+nhưng nó cho phép ta có
+
+25
+00:01:06,140 --> 00:01:09,380
+1 biến chứa tập hợp nhiều giá trị.
+
+26
+00:01:09,380 --> 00:01:12,460
+Và sự khác biệt giữa 
+list và dictionary là
+
+27
+00:01:12,460 --> 00:01:16,080
+cách các giá trị được sắp xếp
+trong biến duy nhất đó.
+
+28
+00:01:16,080 --> 00:01:19,820
+List là 1 bộ dữ liệu tuyến tính,
+được đánh số bằng số nguyên từ 0, 1, 
+
+29
+00:01:19,820 --> 00:01:21,120
+2, 3.
+
+30
+00:01:21,120 --> 00:01:23,460
+Nếu có 5 giá trị thì chúng 
+sẽ nằm từ 0 đến 4.
+
+31
+00:01:23,460 --> 00:01:25,396
+giống y hệt ống khoai tây Pringles này,
+
+32
+00:01:25,396 --> 00:01:26,770
+các miếng khoai tây 
+được xếp chồng tuần tự
+
+33
+00:01:26,770 --> 00:01:30,880
+từ trên xuống dưới.
+
+34
+00:01:30,880 --> 00:01:32,730
+Chương trước ta đã học về list,
+
+35
+00:01:32,730 --> 00:01:35,660
+và ở chương này, ta sẽ học về dictionary.
+
+36
+00:01:35,660 --> 00:01:39,220
+Dictionary rất mạnh, và 
+sức mạnh của nó đến từ
+
+37
+00:01:39,220 --> 00:01:42,170
+cách sắp xếp dữ liệu khác biệt bên trong nó.
+
+38
+00:01:42,170 --> 00:01:44,370
+Nó là 1 túi dữ liệu, 
+
+39
+00:01:44,370 --> 00:01:48,200
+chứa đủ mọi thứ to nhỏ mà không có
+trình tự sắp xếp nào hết,
+
+40
+00:01:48,200 --> 00:01:50,729
+các thứ đều có label (nhãn).
+
+41
+00:01:50,729 --> 00:01:53,020
+Bạn có thể hình dung nó như
+1 túi xách chứa đủ thứ,
+
+42
+00:01:53,020 --> 00:01:55,480
+không được xếp thành chồng gì hết,
+
+43
+00:01:55,480 --> 00:01:57,690
+mọi thứ trong túi lẫn lộn khi ta di chuyển.
+
+44
+00:01:57,690 --> 00:02:01,560
+Và đó là cấu trúc rất hay cho dictionary.
+
+45
+00:02:01,560 --> 00:02:05,230
+Các dictionary phải có 1 label,
+bởi vì các thứ trong đó 
+
+46
+00:02:05,230 --> 00:02:05,930
+không theo trình tự gì cả.
+
+47
+00:02:05,930 --> 00:02:07,920
+Không có cái gì gọi là số thứ tự.
+
+48
+00:02:07,920 --> 00:02:10,066
+Như ở đây, có thứ mang label là perfume (nước hoa),
+
+49
+00:02:10,066 --> 00:02:11,690
+lại có label là candy (kẹo),
+
+50
+00:02:11,690 --> 00:02:14,080
+hay là money (tiền).
+
+51
+00:02:14,080 --> 00:02:17,520
+Vậy ta có thứ mang giá trị là tiền,
+
+52
+00:02:17,520 --> 00:02:19,410
+với label là money.
+
+53
+00:02:19,410 --> 00:02:24,800
+Ta gọi chúng là key (khóa) và value (giá trị).
+
+54
+00:02:24,800 --> 00:02:29,090
+Key chính là label, và value
+là bất cứ cái gì.
+
+55
+00:02:29,090 --> 00:02:31,890
+Các ô chữ màu hồng này đều là
+label cho những đồ vật khác nhau
+
+56
+00:02:31,890 --> 00:02:35,110
+mà bạn có thể bỏ vào túi, để ra lệnh cho cái túi:
+
+57
+00:02:35,110 --> 00:02:38,480
+Ê túi, đưa tao khăn giấy.
+Ê túi, đưa tao tiền.
+
+58
+00:02:38,480 --> 00:02:41,510
+Các thứ đều ở trong đó, túi sẽ nhả ra cho bạn
+
+59
+00:02:41,510 --> 00:02:44,300
+khăn giấy hay tiền.
+
+60
+00:02:44,300 --> 00:02:48,246
+Và bộ dữ liệu mạnh nhất trong Python chính
+
+61
+00:02:48,246 --> 00:02:48,870
+là dictionary.
+
+62
+00:02:48,870 --> 00:02:51,827
+Khi bạn sử dụng quen rồi,
+
+63
+00:02:51,827 --> 00:02:54,160
+bạn sẽ nhận thấy mình có thể dùng nó làm rất nhiều thứ.
+
+64
+00:02:54,160 --> 00:02:56,480
+Ban đầu thì bạn sẽ chỉ học
+
+65
+00:02:56,480 --> 00:02:59,417
+cách dùng nó cho đúng thôi.
+
+66
+00:02:59,417 --> 00:03:00,500
+Nhưng nó là một công cụ rất mạnh.
+
+67
+00:03:00,500 --> 00:03:01,870
+Giống như 1 cơ sở dữ liệu,
+
+68
+00:03:01,870 --> 00:03:05,870
+cho phép bạn chứa dữ liệu bất kỳ,
+
+69
+00:03:05,870 --> 00:03:08,020
+sắp xếp tùy ý
+
+70
+00:03:08,020 --> 00:03:10,661
+để giúp chương trình đạt được mục đích
+
+71
+00:03:10,661 --> 00:03:11,160
+mà bạn muốn.
+
+72
+00:03:11,160 --> 00:03:13,160
+Chúng ta mới chỉ ở phần đầu thôi,
+
+73
+00:03:13,160 --> 00:03:16,790
+nhưng khi học nhiều hơn rồi
+nó sẽ trở thành 1 công cụ
+
+74
+00:03:16,790 --> 00:03:20,770
+rất mạnh mẽ cho bạn.
+
+75
+00:03:20,770 --> 00:03:24,680
+Dictionary có nhiều tên khác nhau trong các ngôn ngữ khác nhau.
+
+76
+00:03:24,680 --> 00:03:28,920
+Perl hay Php gọi nó là Associative Arrays,
+
+77
+00:03:28,920 --> 00:03:32,010
+Java gọi là Property Map hay HashMap
+
+78
+00:03:32,010 --> 00:03:34,930
+và C# có thể gọi là Property Bag hay 
+
+79
+00:03:34,930 --> 00:03:35,430
+Attribute Bag.
+
+80
+00:03:35,430 --> 00:03:38,100
+Dù là ngôn ngữ nào thì
+
+81
+00:03:38,100 --> 00:03:40,620
+tất cả cũng cùng là một khái niệm
+
+82
+00:03:40,620 --> 00:03:42,560
+về key và value,
+
+83
+00:03:42,560 --> 00:03:43,657
+một công cụ rất mạnh.
+
+84
+00:03:43,657 --> 00:03:45,990
+Nếu bạn tra từ điển Wikipedia như ở đây,
+
+85
+00:03:45,990 --> 00:03:48,424
+bạn có thể thấy rằng nó chỉ là một khái niệm
+
+86
+00:03:48,424 --> 00:03:50,590
+mà mỗi ngôn ngữ lại gọi tên khác nhau.
+
+87
+00:03:50,590 --> 00:03:54,130
+Chung khái niệm, nhiều cách gọi tên.
+
+88
+00:03:54,130 --> 00:03:56,200
+Như tôi đã nói về sự khác biệt giữa 1 list
+
+89
+00:03:56,200 --> 00:03:59,560
+và 1 dictionary, cả 2 đều có thể chứa nhiều giá trị.
+
+90
+00:03:59,560 --> 00:04:02,030
+Câu hỏi là ta dán nhãn label như thế nào, lưu nó như thế nào,
+
+91
+00:04:02,030 --> 00:04:03,250
+và lấy giá trị như thế nào?
+
+92
+00:04:03,250 --> 00:04:05,630
+Ở đây là 1 ví dụ về dictionary.
+
+93
+00:04:05,630 --> 00:04:07,370
+Tôi khởi tạo 1 biến tên purse (túi xách),
+
+94
+00:04:07,370 --> 00:04:09,320
+và tôi sẽ lưu dữ liệu vào purse.
+
+95
+00:04:09,320 --> 00:04:12,830
+Đây là lệnh gán purse['money']
+nên nó không hề giống với
+
+96
+00:04:12,830 --> 00:04:15,100
+purse[0] , ở đây là "money".
+
+97
+00:04:15,100 --> 00:04:18,200
+Vậy tôi đang dùng một chuỗi ký tự làm label,
+
+98
+00:04:18,200 --> 00:04:21,029
+và tôi gán 12 vào purse,
+
+99
+00:04:21,029 --> 00:04:25,630
+giống như dán lên một tờ giấy nhớ ghi "đây là tiền của tôi".
+Tương tự, purse['candy'] là 3,
+
+100
+00:04:25,630 --> 00:04:27,290
+purse['tissues'] là 75.
+
+101
+00:04:27,290 --> 00:04:31,260
+Ở đây không chỉ là một list các số
+
+102
+00:04:31,260 --> 00:04:36,460
+12, 3 và 75, mà có một liên kết giữa money
+
+103
+00:04:36,460 --> 00:04:40,150
+và 12, tissue và 75, candy và 3.
+
+104
+00:04:40,150 --> 00:04:42,960
+Nói theo cặp key - value thì
+đây là key, kia là value.
+
+105
+00:04:42,960 --> 00:04:47,580
+Vậy candy là key
+còn 3 là value.
+
+106
+00:04:47,580 --> 00:04:51,390
+Giờ tôi có thể tìm các giá trị bằng tên nhãn,
+
+107
+00:04:51,390 --> 00:04:51,890
+in ra purse['candy'].
+
+108
+00:04:51,890 --> 00:04:56,580
+Giống như ta đang bảo, ê túi, đưa kẹo đây.
+
+109
+00:04:56,580 --> 00:04:59,690
+Nó tìm giá trị trong "candy" là số 3
+
+110
+00:04:59,690 --> 00:05:01,630
+và trả kết quả là 3.
+
+111
+00:05:01,630 --> 00:05:04,480
+Ta cũng có thể để purse['candy'] này ở
+
+112
+00:05:04,480 --> 00:05:04,980
+vế phải của phép gán.
+
+113
+00:05:04,980 --> 00:05:08,550
+purse['candy'] ở đây 
+sẽ là giá trị purse['candy'] trước đó
+
+114
+00:05:08,550 --> 00:05:11,340
+cộng thêm 2, kết quả là 5.
+
+115
+00:05:11,340 --> 00:05:15,900
+Rồi lưu 5 trở lại biến purse dưới label là "candy".
+
+116
+00:05:15,900 --> 00:05:18,470
+Và giờ ta sẽ thấy candy là 5.
+
+117
+00:05:18,470 --> 00:05:22,041
+Vậy cái này như một chỗ đựng, 
+bạn có thể làm tương tự với list
+
+118
+00:05:22,041 --> 00:05:23,290
+chỉ khác là chỗ đựng sẽ là con số.
+
+119
+00:05:23,290 --> 00:05:26,360
+Chẳng hạn như purse[2] = purse[2] + 2
+
+120
+00:05:26,360 --> 00:05:28,500
+gì đó.
+
+121
+00:05:28,500 --> 00:05:31,540
+Nhưng với dictionary thì nó là các label.
+
+122
+00:05:31,540 --> 00:05:32,940
+Label không phải chuỗi ký tự.
+
+123
+00:05:32,940 --> 00:05:35,140
+Chuỗi là một dạng label thông dụng trong dictionary,
+
+124
+00:05:35,140 --> 00:05:36,310
+nhưng label không phải lúc nào cũng là chuỗi.
+
+125
+00:05:36,310 --> 00:05:37,510
+Bạn có thể dùng những cái khác.
+
+126
+00:05:37,510 --> 00:05:39,930
+Ở bài này, chúng ta sẽ tập trung nhiều 
+vào label dạng chuỗi.
+
+127
+00:05:39,930 --> 00:05:42,100
+Bạn có thể dùng số nhưng
+
+128
+00:05:42,100 --> 00:05:44,940
+như thế sẽ hơi dễ nhầm lẫn.
+
+129
+00:05:44,940 --> 00:05:48,240
+Đây là 1 tấm hình mô tả cách hoạt động của nó.
+
+130
+00:05:48,240 --> 00:05:53,000
+Nếu ta nhìn vào dòng này, 
+purse['money'] = 12.
+
+131
+00:05:53,000 --> 00:05:56,360
+Giống như ta đang thiết lập liên kết key - value,
+
+132
+00:05:56,360 --> 00:06:00,690
+money là label cho 12, và ta cho cái này vào túi.
+
+133
+00:06:00,690 --> 00:06:04,330
+Và cái túi sẽ tự quyết định phải đặt gì ở đâu.
+
+134
+00:06:04,330 --> 00:06:06,800
+Ở dòng tiếp theo,
+
+135
+00:06:06,800 --> 00:06:11,290
+ta cho giá trị 3 vào túi với label "candy",
+
+136
+00:06:11,290 --> 00:06:14,490
+rồi cho giá trị 75 vào túi với label "tissues".
+
+137
+00:06:14,490 --> 00:06:17,270
+Khi ta gọi lệnh, in purse ra màn hình
+
+138
+00:06:17,270 --> 00:06:19,630
+nó sẽ lôi ra toàn bộ 
+mọi thứ trong túi.
+
+139
+00:06:19,630 --> 00:06:20,790
+và in ra màn hình.
+
+140
+00:06:20,790 --> 00:06:22,290
+Nó sẽ in ra cả
+
+141
+00:06:22,290 --> 00:06:23,728
+label và giá trị tương ứng.
+
+142
+00:06:23,728 --> 00:06:25,853
+Điều này là cần thiết bởi vì
+
+143
+00:06:25,853 --> 00:06:29,090
+chỉ có 12, 75 và 3 thì không rõ chúng là thứ gì.
+
+144
+00:06:29,090 --> 00:06:31,460
+Cú pháp với dấu ngoặc nhọn này
+
+145
+00:06:31,460 --> 00:06:34,880
+sẽ xuất hiện khi bạn in dictonary ra màn hình.
+
+146
+00:06:34,880 --> 00:06:37,630
+Còn việc in ra purse['candy']
+
+147
+00:06:37,630 --> 00:06:38,650
+cũng tương tự.
+
+148
+00:06:38,650 --> 00:06:39,390
+Đúng không?
+
+149
+00:06:39,390 --> 00:06:43,520
+Purse['candy'] giống như bạn bảo
+
+150
+00:06:43,520 --> 00:06:45,870
+trước tiên hãy tìm cái candy ra đây, tìm ở kia kìa,
+
+151
+00:06:45,870 --> 00:06:48,340
+ồ đấy đấy candy đây rồi.
+
+152
+00:06:48,340 --> 00:06:50,200
+Nhưng cái mà chúng ta cần là giá trị của candy,
+
+153
+00:06:50,200 --> 00:06:52,580
+vì vậy ta sẽ có 3 in ra ở đây.
+
+154
+00:06:52,580 --> 00:06:55,080
+Tìm dưới nhãn "candy" và lấy cho tôi giá trị
+
+155
+00:06:55,080 --> 00:06:57,242
+lưu trong đó.
+
+156
+00:06:57,242 --> 00:06:58,950
+Trên thực tế cái này còn phức tạp hơn nhiều,
+
+157
+00:06:58,950 --> 00:07:02,880
+trong bài này tôi chỉ nói đơn giản thôi.
+
+158
+00:07:02,880 --> 00:07:06,050
+Và khi ta viết purse['candy'] = purse['candy'] + 2,
+
+159
+00:07:06,050 --> 00:07:08,540
+nó lôi giá trị 3
+
+160
+00:07:08,540 --> 00:07:13,650
+ở trong label candy ra rồi tính 3 + 2,
+
+161
+00:07:13,650 --> 00:07:16,940
+ra kết quả 5 và gán 5 vào lại.
+
+162
+00:07:16,940 --> 00:07:19,460
+Rồi ta sẽ đặt số 5 vào trong
+
+163
+00:07:19,460 --> 00:07:22,930
+biến purse với label là "candy", từ đó
+
+164
+00:07:22,930 --> 00:07:26,460
+thay thế 3 bằng 5.
+
+165
+00:07:26,460 --> 00:07:29,570
+OK, và nếu ta in ra, ta sẽ
+
+166
+00:07:29,570 --> 00:07:35,390
+thấy giá trị mới của candy là 5.
+
+167
+00:07:35,390 --> 00:07:36,880
+OK?
+
+168
+00:07:36,880 --> 00:07:40,470
+Nếu ta so sánh list và 
+dictionary với nhau
+
+169
+00:07:40,470 --> 00:07:42,340
+thì ta tạo ra cả 2 theo cách tương tự nhau,
+
+170
+00:07:42,340 --> 00:07:44,960
+tạo 1 list trống và 1 dictionary trống.
+
+171
+00:07:44,960 --> 00:07:47,670
+Ở đây ta gọi phương thức append vì ta chỉ cần
+
+172
+00:07:47,670 --> 00:07:48,980
+thêm các thứ vào theo thứ tự.
+
+173
+00:07:48,980 --> 00:07:50,700
+Bạn đặt giá trị đầu tiên vào vị trí thứ nhất,
+
+174
+00:07:50,700 --> 00:07:53,120
+Và nó cũng không cho bạn biết vị trí nào,
+
+175
+00:07:53,120 --> 00:07:54,300
+nhưng bạn biết nó ở vị trí đầu tiên bởi vì
+
+176
+00:07:54,300 --> 00:07:56,800
+bạn bắt đầu với 1 list trống, và tiếp theo sẽ là vị trí thứ 2.
+
+177
+00:07:56,800 --> 00:08:00,120
+Chúng ta đưa vào 21 và 183, và in chúng ra.
+
+178
+00:08:00,120 --> 00:08:03,320
+OK, giá trị in ra là 21 và 183.
+
+179
+00:08:03,320 --> 00:08:05,600
+List sẽ quản lý thứ tự cho bạn.
+
+180
+00:08:05,600 --> 00:08:07,700
+Không có key mà chỉ có vị trí thôi.
+
+181
+00:08:07,700 --> 00:08:10,330
+Vị trí thứ tự chính là key ở đây.
+
+182
+00:08:10,330 --> 00:08:12,620
+Nếu tôi muốn đổi vị trí đầu tiên là 23,
+
+183
+00:08:12,620 --> 00:08:15,510
+tôi sẽ gán giá trị list tại vị trí 0
+
+184
+00:08:15,510 --> 00:08:16,890
+là 23.
+
+185
+00:08:16,890 --> 00:08:20,354
+Vậy đây là một cách tìm kiếm phần tử nào đó,
+
+186
+00:08:20,354 --> 00:08:22,770
+có thể đặt ở vế phải hay vế trái
+
+187
+00:08:22,770 --> 00:08:24,370
+của câu lệnh gán.
+
+188
+00:08:24,370 --> 00:08:27,710
+Còn ở trường hợp dictionary, tôi muốn gán 21
+
+189
+00:08:27,710 --> 00:08:30,160
+vào biến với label "age",
+
+190
+00:08:30,160 --> 00:08:33,530
+và 182 với label "course".
+
+191
+00:08:33,530 --> 00:08:36,440
+Vậy ta không phải tạo ra mục nào cả.
+
+192
+00:08:36,440 --> 00:08:39,850
+Label "age" không tồn tại sẵn nên chương trình tạo ra nó
+
+193
+00:08:39,850 --> 00:08:41,289
+và gán 21 vào đó.
+
+194
+00:08:41,289 --> 00:08:44,700
+Rồi lại tạo ra label "course" và gán 182 vào.
+
+195
+00:08:44,700 --> 00:08:48,240
+Chúng ta in nó ra, ồ, course là 182 và age là 21.
+
+196
+00:08:48,240 --> 00:08:54,720
+Điều này nhấn mạnh rằng dictionary không quan tâm thứ tự.
+
+197
+00:08:54,720 --> 00:08:57,054
+

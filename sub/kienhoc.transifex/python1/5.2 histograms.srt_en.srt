@@ -1,0 +1,155 @@
+1
+00:00:01,569 --> 00:00:06,760
+http://youtube.com/watch?v=dsKU9n5TW84
+
+In this video, I'll introduce the histogram.
+The histogram is a type of visualization that's
+
+2
+00:00:06,760 --> 00:00:11,900
+particularly useful to explore your data set.
+It can help you to get an idea about the distribution
+
+3
+00:00:11,900 --> 00:00:18,050
+of your variables. To see how it works, imagine
+12 values between 0 and 6. I've put them along
+
+4
+00:00:18,050 --> 00:00:23,070
+a number line here. To build a histogram for
+these values, you can devide the line into
+
+5
+00:00:23,070 --> 00:00:29,439
+equal chunks, called bins. Suppose we go for
+3 bins, that each have a width of 2. Next,
+
+6
+00:00:29,439 --> 00:00:34,680
+we count how many data points sit inside each
+bin. There's 4 variables in the first bin,
+
+7
+00:00:34,680 --> 00:00:40,600
+6 in the second bin and 2 in the third bin.
+FInally, you draw a bar for each bin. The
+
+8
+00:00:40,600 --> 00:00:45,010
+height of the bar corresponds to the number
+of data points that fall in this bin.
+
+9
+00:00:45,010 --> 00:00:51,840
+The result is a histogram, which gives us
+a nice overview on how the 12 values are distributed.
+
+10
+00:00:51,840 --> 00:00:55,620
+Most values are in the middle, and there are
+more values below 2 than there are values
+
+11
+00:00:55,620 --> 00:00:57,890
+above 4.
+
+12
+00:00:57,890 --> 00:01:03,059
+Of course, also matplotlib is able to build
+histograms. As before, you should start by
+
+13
+00:01:03,059 --> 00:01:08,500
+importing the pyplot package that's inside
+matplotlib. Next, you can use the `hist()`
+
+14
+00:01:08,500 --> 00:01:13,040
+function. Let's open up it's documentation.
+There's a bunch of arguments you can specify,
+
+15
+00:01:13,040 --> 00:01:18,380
+but the first two here are the most important
+ones. `x` should be a list of values you want
+
+16
+00:01:18,380 --> 00:01:23,320
+to build a histogram for. You can use the
+second argument, `bins`, to tell Python in
+
+17
+00:01:23,320 --> 00:01:28,340
+how many bins the data should be divided.
+Based on this number, `hist()` will automatically
+
+18
+00:01:28,340 --> 00:01:34,840
+find appropriate boundaries for all bins,
+and calculate how may values are in each one.
+
+19
+00:01:34,840 --> 00:01:40,430
+So to generate the histogram that you've seen
+before, let's start by building a list with
+
+20
+00:01:40,430 --> 00:01:44,159
+the 12 values. Next, you simply call hist
+on this list, and specify that you want three
+
+21
+00:01:44,159 --> 00:01:50,850
+bins. If you finally call the show function,
+a nice histogram results.
+
+22
+00:01:50,850 --> 00:01:55,360
+Histograms are really useful to give a bigger
+picture. As an example, have a look at this
+
+23
+00:01:55,360 --> 00:02:00,130
+so-called population pyramid. The age distribution
+is shown, for both males and females, in the
+
+24
+00:02:00,130 --> 00:02:00,909
+European union. Notice that the histograms
+are flipped 90 degrees; the bins are horizontal.
+
+25
+00:02:00,909 --> 00:02:05,030
+The bins are largest for the ages 40 to 44,
+where there are 20 million males and 20 million
+
+26
+00:02:05,030 --> 00:02:06,229
+females. They are the so called baby boomers.
+These are figures of the year 2010. What do
+
+27
+00:02:06,229 --> 00:02:13,000
+you think will have changed in 2050? Let's
+have a look. The distribution is flatter,
+
+28
+00:02:13,000 --> 00:02:17,580
+and the baby boom generation has gotten older.
+With the blink of an eye, you can easily see
+
+29
+00:02:17,580 --> 00:02:21,800
+how demographics will be changing over time.
+That's the true power of histograms at work
+
+30
+00:02:21,800 --> 00:02:22,560
+here!
+
+31
+00:02:22,560 --> 00:02:26,200
+Now head over to the exercises, to experiment
+with histograms yourself!
+

@@ -1,0 +1,456 @@
+0
+00:00:00,000 --> 00:00:00,890
+https://youtu.be/yERy4_NxJ0g
+
+1
+00:00:00,890 --> 00:00:02,265
+So let's dive into the first type
+
+2
+00:00:02,265 --> 00:00:06,900
+of quantity discount, the All Units discount.
+
+3
+00:00:06,900 --> 00:00:09,820
+So what we're looking at here is a case
+
+4
+00:00:09,820 --> 00:00:11,580
+where-- I've got really two cases here.
+
+5
+00:00:11,580 --> 00:00:14,030
+One is, I order a quantity that's
+
+6
+00:00:14,030 --> 00:00:17,350
+below this break point, Q1.
+
+7
+00:00:17,350 --> 00:00:22,030
+So if I order on this side of it, I'm going to be paying c0.
+
+8
+00:00:22,030 --> 00:00:24,470
+Or I order above that, and I'm going
+
+9
+00:00:24,470 --> 00:00:29,140
+to be ordering at a cost of c1 / item.
+
+10
+00:00:29,140 --> 00:00:31,610
+And so let me just clean this up.
+
+11
+00:00:31,610 --> 00:00:35,210
+The two cases are obviously if I'm below, I'm ordering at c0.
+
+12
+00:00:35,210 --> 00:00:39,310
+And if I'm above, I'm ordering at c1, where c1 is discounted.
+
+13
+00:00:39,310 --> 00:00:41,370
+And I just did it by this product
+
+14
+00:00:41,370 --> 00:00:43,100
+of this d1, this discount.
+
+15
+00:00:43,100 --> 00:00:51,192
+So if it's a 10% discount, if d1 = 0.1, then c1 = 90%,
+
+16
+00:00:51,192 --> 00:00:54,420
+or 0.9 * c0.
+
+17
+00:00:54,420 --> 00:00:57,290
+So when we're going to look at this, what happens
+
+18
+00:00:57,290 --> 00:00:59,031
+is the total relevant cost changes.
+
+19
+00:00:59,031 --> 00:01:00,530
+This is the first time-- this is why
+
+20
+00:01:00,530 --> 00:01:02,530
+we're doing this extension-- because you always
+
+21
+00:01:02,530 --> 00:01:04,260
+want to think about what is relevant.
+
+22
+00:01:04,260 --> 00:01:06,520
+And in this case, the Quantity is now relevant
+
+23
+00:01:06,520 --> 00:01:10,040
+because it changes how much I pay per item.
+
+24
+00:01:10,040 --> 00:01:12,570
+Before, it didn't matter and we didn't need to include it.
+
+25
+00:01:12,570 --> 00:01:13,830
+Now it does.
+
+26
+00:01:13,830 --> 00:01:17,330
+And so when we look at this and we think about it,
+
+27
+00:01:17,330 --> 00:01:20,190
+there's really only going to be three places or three
+
+28
+00:01:20,190 --> 00:01:23,810
+quantities where we're probably going to order.
+
+29
+00:01:23,810 --> 00:01:26,370
+One is, the original cost curve, and that's
+
+30
+00:01:26,370 --> 00:01:31,650
+this black line-- we could end up doing its EOQ.
+
+31
+00:01:31,650 --> 00:01:35,750
+Or this blue line, which is with the discount price,
+
+32
+00:01:35,750 --> 00:01:37,600
+and we're going to order that, if it's EOQ
+
+33
+00:01:37,600 --> 00:01:41,850
+is over here, to the right of that break point.
+
+34
+00:01:41,850 --> 00:01:44,960
+Or there might be a case where this doesn't occur there
+
+35
+00:01:44,960 --> 00:01:49,990
+and we want to order at this amount, which is just
+
+36
+00:01:49,990 --> 00:01:53,010
+enough to get that breakpoint, that discounted price.
+
+37
+00:01:53,010 --> 00:01:56,330
+So really those are the three spots that we want to look
+
+38
+00:01:56,330 --> 00:01:59,960
+at, because if you think about it, typically,
+
+39
+00:01:59,960 --> 00:02:03,550
+this Q* for the original price, this black line,
+
+40
+00:02:03,550 --> 00:02:06,390
+that's always going to be less than Q1.
+
+41
+00:02:06,390 --> 00:02:08,270
+What if it's greater than that?
+
+42
+00:02:08,270 --> 00:02:11,260
+Well, if it's greater than that, then what they're telling you
+
+43
+00:02:11,260 --> 00:02:14,294
+is "I know you already buy this amount,
+
+44
+00:02:14,294 --> 00:02:16,210
+and it's cheaper for you to buy this amount"--
+
+45
+00:02:16,210 --> 00:02:18,020
+but you're buying that amount anyway.
+
+46
+00:02:18,020 --> 00:02:20,150
+So it doesn't make sense.
+
+47
+00:02:20,150 --> 00:02:22,766
+If you're already buying above that discount level,
+
+48
+00:02:22,766 --> 00:02:24,390
+then why would they give you a discount
+
+49
+00:02:24,390 --> 00:02:26,140
+for doing what you're already doing?
+
+50
+00:02:26,140 --> 00:02:28,705
+So let's go in and see how we can find out
+
+51
+00:02:28,705 --> 00:02:30,830
+where you should buy, what your quantity should be,
+
+52
+00:02:30,830 --> 00:02:33,299
+with this given All Units discount.
+
+53
+00:02:33,299 --> 00:02:35,090
+So the procedure is pretty straightforward.
+
+54
+00:02:35,090 --> 00:02:36,850
+Let's just go through it with an example.
+
+55
+00:02:36,850 --> 00:02:38,920
+I've got my annual demand here.
+
+56
+00:02:38,920 --> 00:02:41,490
+I've got my holding cost at 25%.
+
+57
+00:02:41,490 --> 00:02:43,970
+My cost / transaction is $500.
+
+58
+00:02:43,970 --> 00:02:48,600
+My c0 is $50 / item.
+
+59
+00:02:48,600 --> 00:02:53,080
+And the discount for c1 is-- I take 15% off,
+
+60
+00:02:53,080 --> 00:02:57,070
+so c1 is going to simply be 50 * 0.15.
+
+61
+00:02:57,070 --> 00:03:00,480
+And that comes out to be $42.50.
+
+62
+00:03:00,480 --> 00:03:01,760
+Right?
+
+63
+00:03:01,760 --> 00:03:06,740
+So I'm saving 15% if I order above 800 units.
+
+64
+00:03:06,740 --> 00:03:08,040
+So let's go through it.
+
+65
+00:03:08,040 --> 00:03:11,790
+First step, find the optimal quantity
+
+66
+00:03:11,790 --> 00:03:15,030
+with the original price, and the optimal quantity, the EOQ,
+
+67
+00:03:15,030 --> 00:03:16,020
+with the new price.
+
+68
+00:03:16,020 --> 00:03:17,890
+And this is just straight EOQ.
+
+69
+00:03:17,890 --> 00:03:19,980
+You should be able to do this in your sleep now.
+
+70
+00:03:19,980 --> 00:03:26,630
+It's going to be = sqrt ( 2 * c_t * D / ch),
+
+71
+00:03:26,630 --> 00:03:32,290
+where c is the relevant price and h is that 25% holding rate.
+
+72
+00:03:32,290 --> 00:03:33,750
+So you should get these numbers.
+
+73
+00:03:33,750 --> 00:03:36,067
+If you don't, check your math.
+
+74
+00:03:36,067 --> 00:03:37,400
+Then you want to go to step two.
+
+75
+00:03:37,400 --> 00:03:41,080
+You say OK, does the quantity discount-- is it
+
+76
+00:03:41,080 --> 00:03:42,640
+greater than the breakpoint?
+
+77
+00:03:42,640 --> 00:03:44,570
+Does it qualify?
+
+78
+00:03:44,570 --> 00:03:47,790
+Does this quantity, which I've figured out with the new price,
+
+79
+00:03:47,790 --> 00:03:49,630
+comes out to be 434-- makes sense
+
+80
+00:03:49,630 --> 00:03:53,016
+if it costs less per item, I'm going to order more,
+
+81
+00:03:53,016 --> 00:03:54,890
+because the inventory holding cost goes down,
+
+82
+00:03:54,890 --> 00:03:57,450
+because it don't doesn't cost as much per unit--
+
+83
+00:03:57,450 --> 00:04:01,470
+but unfortunately, it doesn't pass my minimum quantity there.
+
+84
+00:04:01,470 --> 00:04:04,900
+I've got to do over 800 to get that discount.
+
+85
+00:04:04,900 --> 00:04:06,570
+So go to step three.
+
+86
+00:04:06,570 --> 00:04:09,660
+Now for step three what I'm doing is I'm saying OK,
+
+87
+00:04:09,660 --> 00:04:13,400
+let's look at what the original total relevant cost is
+
+88
+00:04:13,400 --> 00:04:16,450
+without the discount-- just normal every day--
+
+89
+00:04:16,450 --> 00:04:18,709
+and compare that to what the total relevant cost would
+
+90
+00:04:18,709 --> 00:04:20,880
+be if I buy at the break point.
+
+91
+00:04:20,880 --> 00:04:24,830
+So if I buy at 800 units-- because if I buy at 800 units,
+
+92
+00:04:24,830 --> 00:04:25,730
+what does that mean?
+
+93
+00:04:25,730 --> 00:04:27,870
+I get that discounted price.
+
+94
+00:04:27,870 --> 00:04:29,000
+So I just go right in.
+
+95
+00:04:29,000 --> 00:04:31,426
+We've already calculated this before.
+
+96
+00:04:31,426 --> 00:04:33,300
+And then I'm just going to do the same thing.
+
+97
+00:04:33,300 --> 00:04:35,820
+I just do it long ways here.
+
+98
+00:04:35,820 --> 00:04:41,300
+So this is the new c-- this is c1 times D.
+
+99
+00:04:41,300 --> 00:04:47,250
+And I've got (c_t * D) / Q1.
+
+100
+00:04:47,250 --> 00:04:51,340
+This is Q1, the quantity that I have to cross.
+
+101
+00:04:51,340 --> 00:04:57,020
+And then times, again, ch, 42.5, the new c1*h over my average
+
+102
+00:04:57,020 --> 00:04:59,060
+inventory, 800/2.
+
+103
+00:04:59,060 --> 00:05:02,580
+So that comes out to be-- if you do the math, $90,000.
+
+104
+00:05:02,580 --> 00:05:05,390
+And so if I look at these two, obviously this
+
+105
+00:05:05,390 --> 00:05:07,907
+is less than this.
+
+106
+00:05:07,907 --> 00:05:09,490
+So they are different from each other,
+
+107
+00:05:09,490 --> 00:05:11,710
+so I'm going to take the discount.
+
+108
+00:05:11,710 --> 00:05:14,420
+I'm going to order 800 units.
+
+109
+00:05:14,420 --> 00:05:17,490
+So my order quantity with this All Units discount
+
+110
+00:05:17,490 --> 00:05:19,390
+will be 800 units.
+
+111
+00:05:19,390 --> 00:05:21,710
+And I know I'm going to save-- just
+
+112
+00:05:21,710 --> 00:05:30,330
+comparing these two-- about $14,500 / year.
+
+113
+00:05:30,330 --> 00:05:32,926
+
+

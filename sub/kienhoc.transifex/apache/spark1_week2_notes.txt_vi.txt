@@ -1,0 +1,40 @@
+Trong bài giảng hôm nay, ta sẽ khám phá các chủ đề sau:
+
+Vấn đề về Dữ liệu lớn
+Các thử thách trong Điện toán cụm và Mô hình lập trình MapReduce
+Apache Spark: Xu hướng Công nghệ, Cơ hội và Lợi ích
+Dữ liệu có cấu trúc và Ngôn ngữ truy vấn có cấu trúc
+Spark SQL và Spark DataFrames
+Cộng đồng Spark và các tư liệu
+Các bài nghiên cứu về Spark
+
+Sử dụng bộ nhớ thay vì ổ đĩa mang lại hai lợi ích lớn. Lợi ích đầu tiên là bộ nhớ nhanh hơn nhiều so với ổ đĩa. Thời gian để đọc hoặc viết thêm một giá trị vào bộ nhớ là vài trăm nano-giây (100/1000000000 giây!), trong khi thời gian làm việc đó với ổ đĩa là vài chục mili-giây (10/1000 giây) -- tức là bộ nhớ nhanh gấp 100000 lần so với ổ đĩa. Lợi ích thứ hai là: việc lưu các kết quả trung gian trong bộ nhớ đồng nghĩa với việc không cần phải chuyển chúng sang định dạng có thể lưu được trên đĩa. Quá trình chuyển một đối tượng lưu trên bộ nhớ sang ổ đĩa gọi là serialization. Còn quá trình ngược lại, chuyển một đối tượng lưu trên ổ đĩa sang bộ nhớ, gọi là deserialization. Các quá trình này rất tốn kém và mất nhiều thời gian. Việc giữ các kết quả trung gian trong bộ nhớ sẽ giúp tránh được các quá trình đi kèm này.
+
+Việc kết hợp thời gian truy cập nhanh hơn cùng với việc tránh quá trình serialization/deserialization khiến Apache Spark có tốc độ làm việc nhanh hơn Apache Hadoop/Map Reduce lên đến 100 lần!
+
+Đây là một ví dụ cho thấy sự khác biệt về năng suất làm việc giữa Apache Hadoop và Apache Spark khi thực hiện hồi quy logistic, một phương pháp tiên đoán thông dụng:
+https://courses.edx.org/courses/course-v1:BerkeleyX+CS105x+1T2016/courseware/9d251397874d4f0b947b606c81ccf83c/3cf61a8718fe4ad5afcd8fb35ceabb6e/
+
+Đây là các đường dẫn đến các mô tả về những cơ sở dữ liệu lớn được đề cập đến trong bài giảng này:
+
+Sở Thuế vụ Mỹ (IRS): 150 Terabyte
+http://www.computerworld.com/article/2536160/business-intelligence/been-audited-lately--blame-the-irs-s-massive--superfast-data-warehouse.html
+
+Cục Số liệu Úc: 250 Terabyte
+http://www.dbms2.com/2009/09/19/oracle-database-siz/
+
+Dữ liệu cuộc gọi, hãng AT&T: 312 Terabyte
+http://www.comparebusinessproducts.com/fyi/10-largest-databases-in-the-world
+
+Cơ sở dữ liệu, eBay: 1.4 Petabyte
+http://www.comparebusinessproducts.com/fyi/10-largest-databases-in-the-world
+
+Cơ sở dữ liệu hãng Yahoo: 2 Petabyte
+http://www.computerworld.com/article/2535825/business-intelligence/size-matters--yahoo-claims-2-petabyte-database-is-world-s-biggest--busiest.html
+
+Đây là một số tài liệu về Ngôn ngữ truy vấn có cấu trúc và Spark SQL:
+https://prod-edx-mktg-edit.edx.org/course/querying-transact-sql-microsoft-dat201x-4
+
+Lưu ý: một điểm khác biệt lớn giữa SQL và Spark SQL là Spark SQL không hỗ trợ DELETE. Trong SQL, DELETE giúp bạn xóa đi các hàng trong một bảng. Nhớ rằng các DataFrame là bất biến, tức là chúng không thể được chỉnh sửa sau khi được tạo ra. Thay vì chỉnh sửa một DataFrame, bạn phải tạo một DataFrame mới từ DataFrame đó. Bạn có thể nghĩ rằng điều đó làm chúng trở nên rất đắt đỏ và chiếm nhiều dung lượng bộ nhớ, nhưng Spark xử lý việc thêm các DataFrame mới từ những cái đã có sẵn rất hiệu quả.
+
+Hãy tham gia cộng đồng Apache Spark! Bạn có thể tương tác với những người dùng Spark khác qua cộng đồng đang ngày càng phát triển này. Đây là đường dẫn đến trang của cộng đồng này: http://spark.apache.org/community.html

@@ -1,0 +1,1016 @@
+1
+00:00:08,462 --> 00:00:11,417
+DANGTHANH 20 08 https://youtu.be/mBTuV7VMIrI
+Giờ tôi muốn nói về việc làm cách nào để thiết lập cơ sở dữ liệu
+
+2
+00:00:11,417 --> 00:00:13,925
+và phần mềm cơ sở dữ liệu
+
+3
+00:00:13,925 --> 00:00:18,310
+trong mối liên hệ đến các mặt khác của môi trường lập trình 
+mà chúng ta sắp sửa xây dựng.
+
+4
+00:00:18,310 --> 00:00:20,980
+Ta sẽ bàn về hai thứ là 
+những dự án lớn và những dự án nhỏ.
+
+5
+00:00:20,980 --> 00:00:24,440
+Một dự án lớn có thể là một trang web.
+
+6
+00:00:24,440 --> 00:00:27,560
+Một ví dụ là bạn có thể xây dựng một trang web để
+theo dõi những quyển truyện tranh hoặc những thứ khác,
+
+7
+00:00:27,560 --> 00:00:29,590
+và bạn lưu tất cả thông tin cần vào cơ sở dữ liệu.
+
+8
+00:00:29,590 --> 00:00:33,610
+ta sẽ không làm những dự án lớn trong khoá học này
+
+9
+00:00:33,610 --> 00:00:36,510
+nhưng tôi đã hình dung rằng đã đến lúc
+ta học về cơ sở dữ liệu
+
+10
+00:00:36,510 --> 00:00:39,540
+để giúp các bạn có khái niệm về cách sử dụng chúng trong 
+các hệ thống trực tuyến.
+
+11
+00:00:39,540 --> 00:00:41,590
+Có thể trong một khóa học ở tương lai,
+bạn sẽ thấy cách chúng được sử dụng,
+
+12
+00:00:41,590 --> 00:00:45,040
+và học cách sử dụng chúng
+trong những dự án lớn.
+
+13
+00:00:45,040 --> 00:00:47,200
+Về mặt cơ bản có hai loại vai trò,
+
+14
+00:00:47,200 --> 00:00:49,530
+Một là
+người viết ứng dụng
+
+15
+00:00:49,530 --> 00:00:53,492
+tạo ra giao diện người dùng 
+cho ứng dụng và cho trang web.
+
+16
+00:00:53,492 --> 00:00:56,780
+và cũng có những người khác
+giám sát và điều chỉnh cơ sở dữ liệu,
+
+17
+00:00:56,780 --> 00:00:59,000
+và có người thì tham gia 
+quản trị cơ sở dữ liệu.
+
+18
+00:01:00,000 --> 00:01:01,800
+Thường trong một dự án lớn,
+
+19
+00:01:01,800 --> 00:01:05,960
+bạn sẽ có một số lời khuyên cho việc phát triển ứng dụng
+từ một người quản trị cơ sở dữ liệu.
+
+20
+00:01:05,960 --> 00:01:09,310
+Ý tưởng ở đây là
+
+21
+00:01:09,310 --> 00:01:13,250
+việc điều chỉnh và giám sát cơ sở dữ liệu
+là một nghề nghiệp đặc thù.
+
+22
+00:01:13,250 --> 00:01:16,200
+Do đó trong một môi trường chuyên nghiệp,
+
+23
+00:01:16,200 --> 00:01:20,030
+như là hệ thống quản lý học tập mã nguồn mở
+mà tôi đang làm việc trên đó có tên là Sakai,
+
+24
+00:01:20,030 --> 00:01:24,850
+trong quá trình sản xuất, tôi không cần một nhà phát triển
+bời đó chính là tôi.
+
+25
+00:01:24,850 --> 00:01:26,100
+Đây là tôi, nhà phát triển.
+
+26
+00:01:26,100 --> 00:01:29,650
+Tôi viết những đoạn mã chương trình,
+tôi tạo ra những widget gọn gàng cho người dùng cuối,
+
+27
+00:01:29,650 --> 00:01:32,750
+đây là người dùng trong một trình duyệt web,
+đang nói về những thứ tuyệt vời của tôi,
+
+28
+00:01:32,750 --> 00:01:35,270
+Tôi thêm vào một nút nhỏ
+và một thứ như cái đó.
+
+29
+00:01:35,270 --> 00:01:39,660
+Tôi viết mã kết nối vào cơ sở dữ liệu
+hệ thống cơ sở dữ liệu,
+
+30
+00:01:39,660 --> 00:01:43,640
+bao gồm cả mã
+cộng với thông tin lưu trữ.
+
+31
+00:01:43,640 --> 00:01:48,050
+Tôi viết một đoạn mã SQL truy vấn đến máy chủ cơ sở dữ liệu
+và truy suất thông tin về
+
+32
+00:01:48,050 --> 00:01:51,080
+và sau đó định dạng dữ liệu cho người dùng cuối,
+đó là những gì người phát triển làm.
+
+33
+00:01:51,080 --> 00:01:53,420
+Họ là những người 
+tạo ra phần mềm ứng dụng.
+
+34
+00:01:55,140 --> 00:01:59,660
+Người quản trị cơ sở dữ liệu,
+thông thường không cho người phát triển ứng dụng tác động trực tiếp lên cơ sở dữ liệu,
+
+35
+00:01:59,660 --> 00:02:04,950
+bởi vì họ sợ nhóm phát triển
+sẽ làm hỏng nó.
+
+36
+00:02:04,950 --> 00:02:07,900
+Điều này cũng hợp lý bởi vì 
+đã có nhiều trường hợp
+
+37
+00:02:07,900 --> 00:02:09,120
+người phát triển đã làm hỏng cơ sở dữ liệu.
+
+38
+00:02:09,120 --> 00:02:12,120
+Như vậy, ta có một người đặc biệt
+gọi là quản trị viên cơ sở dữ liệu.
+
+39
+00:02:12,120 --> 00:02:14,750
+Họ là những người
+được phép làm việc với cơ sở dữ liệu.
+
+40
+00:02:14,750 --> 00:02:17,210
+Bởi vì cơ sở dữ liệu bao gồm
+cả phần lưu trữ dữ liệu và phần mềm,
+
+41
+00:02:17,210 --> 00:02:22,210
+các câu truy vấn SQL có thể được thực thi từ
+nhiều nguồn khác nhau.
+
+42
+00:02:22,210 --> 00:02:25,640
+Cả từ ứng dụng hoặc các công cụ trên cơ sở dữ liệu.
+
+43
+00:02:25,640 --> 00:02:30,770
+Do đó, người quản trị cơ sở dữ liệu 
+có thể truy cập vào cơ sở dữ liệu một cách trực tiếp
+
+44
+00:02:30,770 --> 00:02:31,480
+và lấy dữ liệu.
+
+45
+00:02:31,480 --> 00:02:36,530
+Nếu có gì sai, và nó trở lên thực sự lớn,
+điều gì sẽ xảy ra?
+
+46
+00:02:36,530 --> 00:02:40,370
+Khi đó người quản trị cơ sở dữ liệu sẽ bắt đầu chạy các lệnh 
+trực tiếp lên cơ sở dữ liệu.
+
+47
+00:02:40,370 --> 00:02:44,570
+Trong khi người phát triển về cơ bản
+không thể truy cập cơ sở dữ liệu thực.
+
+48
+00:02:44,570 --> 00:02:47,530
+Sau cùng, ta có thể viết 
+một phiên bản mới của phần mềm ứng dụng.
+
+49
+00:02:47,530 --> 00:02:51,520
+Đây là một dạng phân quyền giữa 
+người phát triển
+
+50
+00:02:51,520 --> 00:02:53,740
+và người quản trị cơ sở dữ liệu trong một dự án lớn.
+
+51
+00:02:55,835 --> 00:03:00,135
+Người quản trị cơ sở dữ liệu thường giúp đỡ 
+trong việc thiết kế và thực thi.
+
+52
+00:03:00,135 --> 00:03:02,865
+Và thông thường một vai trò quản trị cơ sở dữ liệu
+được chia sẽ
+
+53
+00:03:02,865 --> 00:03:05,025
+suốt một loạt các dự án phần mềm.
+
+54
+00:03:05,025 --> 00:03:08,725
+Nhưng đó không phải chính xác những gì chúng ta sẽ làm,
+phải không?
+
+55
+00:03:08,725 --> 00:03:12,755
+Một ngày, bạn sẽ có thể có một công việc.
+
+56
+00:03:12,755 --> 00:03:15,375
+Có thể bạn có một công việc 
+như là quản trị viên cơ sở dữ liệu,
+
+57
+00:03:15,375 --> 00:03:16,975
+và nó là như thế đó.
+
+58
+00:03:16,975 --> 00:03:21,700
+Nhưng ngay tại đây, trong lớp học này,
+ta gặp người đồng thời là quản trị viên cơ sở dữ liệu
+
+59
+00:03:21,700 --> 00:03:25,880
+và là người phát triển ứng dụng,
+và đó là chính bạn.
+
+60
+00:03:25,880 --> 00:03:27,180
+OK? Họ là bạn.
+
+61
+00:03:27,180 --> 00:03:27,970
+Hoặc tôi.
+
+62
+00:03:27,970 --> 00:03:28,680
+Phải không?
+
+63
+00:03:28,680 --> 00:03:31,280
+Và những gì xảy ra bây giờ là 
+bạn đóng cả hai vai trò.
+
+64
+00:03:31,280 --> 00:03:33,690
+Sau đó bạn nếu bạn có một ai đó giúp bạn,
+
+65
+00:03:33,690 --> 00:03:35,560
+bạn có thể chuyển sang phía người phát triển,
+
+66
+00:03:35,560 --> 00:03:39,890
+hoặc sang phía quản trị viên cơ sở dữ liệu,
+điểu đó hoàn toàn ổn.
+
+67
+00:03:39,890 --> 00:03:43,600
+Ta có một hệ thống cơ sở dữ liệu, phải không?
+
+68
+00:03:43,600 --> 00:03:48,670
+Và có một logic rằng, 
+phần mềm làm cho cơ sở dữ liệu trở nên thông minh
+
+69
+00:03:48,670 --> 00:03:51,960
+và dữ liệu là chính nó, 
+ta sẽ làm việc với nó.
+
+70
+00:03:51,960 --> 00:03:55,600
+Chương trình mà ta sẽ sử dụng 
+ban đầu ngay lúc này,
+
+71
+00:03:55,600 --> 00:03:58,800
+là ta sẽ học về quản trị cơ sở dữ liệu 
+theo cách làm kinh doanh.
+
+72
+00:03:58,800 --> 00:04:01,770
+Ban sẽ học cách viết câu lệnh truy vấn SQL,
+bạn sẽ học cách ra lệnh cho phần mềm nhỏ này
+
+73
+00:04:01,770 --> 00:04:03,700
+cách để gửi những yêu cầu một cách trực tiếp.
+
+74
+00:04:03,700 --> 00:04:06,720
+Và bạn sẽ đóng vai trò là 
+quản trị viên cơ sở dữ liệu.
+
+75
+00:04:06,720 --> 00:04:09,750
+Ta sẽ tạo ra các bảng,
+thêm thông tin vào chúng
+
+76
+00:04:09,750 --> 00:04:15,460
+ta sẽ chỉ nhập một số thứ
+vào ứng dụng gọi là trình duyệt SQLite.
+
+77
+00:04:15,460 --> 00:04:18,570
+Có rất nhiều ứng dụng đạng này
+
+78
+00:04:18,570 --> 00:04:19,780
+dùng cho quản trị cơ sở dữ liệu.
+
+79
+00:04:19,780 --> 00:04:25,500
+Sau đó, ta sẽ bắt đầu
+viết các chương trình với Python.
+
+80
+00:04:25,500 --> 00:04:29,790
+Trong các chương trình đó
+ta sẽ liên kết đến các tập tin cơ sở dữ liệu tương tự sử dụng SQL.
+
+81
+00:04:29,790 --> 00:04:33,600
+Ta sẽ không viết những chương trình
+có giao diện web.
+
+82
+00:04:33,600 --> 00:04:38,030
+giống như Twitter hoặc Comicbookregistry.com
+hoặc bất kỳ thứ gì khác.
+
+83
+00:04:38,030 --> 00:04:39,710
+Ta sẽ có nhiều nguồn thông tin
+đầu vào khác nhau.
+
+84
+00:04:39,710 --> 00:04:42,670
+Đôi khi là các tập tin, đôi khi là từ mạng,
+
+85
+00:04:42,670 --> 00:04:45,150
+và ta sẽ viết một chương trình
+để đọc những cái đó.
+
+86
+00:04:45,150 --> 00:04:46,070
+Rồi dọn dẹp lại dữ liệu.
+
+87
+00:04:46,070 --> 00:04:47,240
+Thường thì có một bước dọn dẹp.
+
+88
+00:04:48,490 --> 00:04:51,690
+Sau đó ta sẽ ghi dữ liệu 
+vào một cơ sở dữ liệu.
+
+89
+00:04:51,690 --> 00:04:57,480
+Ta sẽ  phát triển dữ liệu này,
+điền thêm vào, như vậy là hoàn thành bước thu thập thông tin,
+
+90
+00:04:57,480 --> 00:05:01,860
+và các dữ liệu của ta sẽ nằm trong cơ sở dữ liệu.
+
+91
+00:05:01,860 --> 00:05:06,610
+Sau đó ta sẽ viết một chương trình Python khác
+để đọc những dữ liệu này
+
+92
+00:05:06,610 --> 00:05:08,450
+có thể tạo ra một tập tin.
+
+93
+00:05:08,450 --> 00:05:12,520
+Và sau đó trong khóa học này, ta sẽ phát triển đồ họa cho nó
+
+94
+00:05:12,520 --> 00:05:14,080
+hoặc gửi dữ liệu đến những nơi khác.
+
+95
+00:05:14,080 --> 00:05:17,200
+Bạn phải gửi thông tin đến R
+để phân tích thống kê,
+
+96
+00:05:17,200 --> 00:05:20,800
+hoặc Excel để tiến hành những phân tích cơ bản hoặc 
+mô phỏng đồ họa
+
+97
+00:05:20,800 --> 00:05:25,730
+hoặc ta sẽ dùng JavaScript để tạo
+ra những bức hình đẹp hoặc những thứ quay quay hay bất kỳ thứ gì.
+
+98
+00:05:25,730 --> 00:05:28,950
+Như vậy khuôn mẫu ở đây
+là giống nhau.
+
+99
+00:05:28,950 --> 00:05:33,580
+Ta sẽ có nhứng ứng dụng
+và sau đó ta có ứng dụng cơ sở dữ liệu.
+
+100
+00:05:33,580 --> 00:05:35,970
+Bạn làm cả hai vai trò.
+
+101
+00:05:35,970 --> 00:05:39,660
+Đầu tiên ta sẽ tập trung
+vào thứ này trước.
+
+102
+00:05:39,660 --> 00:05:43,520
+Cơ sở dữ liệu mà ta sẽ sử dụng gọi là SQLite
+
+103
+00:05:43,520 --> 00:05:46,800
+và phầm mềm mà ta sẽ dùng là cái mà tôi nói bạn
+cài đặt ở phần mở đầu, một khoảng về trước.
+
+104
+00:05:46,800 --> 00:05:50,220
+Hi vọng rằng bạn đã hoàn thành nó, trình duyệt SQLite,
+
+105
+00:05:50,220 --> 00:05:53,540
+bởi nếu không bạn không thể kết nối được với cơ sở dữ liệu,
+trừ khi bạn có một số thứ tương đương với cái này.
+
+106
+00:05:53,540 --> 00:05:54,730
+Và nó thật sự là có tồn tại.
+
+107
+00:05:54,730 --> 00:05:57,210
+Nhưng ở dạng đơn giản là, đọc thông tin
+hoặc làm sạch nó,
+
+108
+00:05:57,210 --> 00:06:00,660
+kết nối nó trong cơ sở dữ liệu theo một cách
+dễ hiểu và có tổ chức.
+
+109
+00:06:00,660 --> 00:06:03,900
+Và sau đó viết một số ứng dụng khác để làm cho
+nó trở lên có lý và phân tích thông tin.
+
+110
+00:06:03,900 --> 00:06:05,860
+Và đó là những gì ta sẽ làm sắp tới.
+
+111
+00:06:07,300 --> 00:06:13,840
+Khi xây dựng dữ liệu này,
+tôi đã đề cập đến từ lược đồ, phải không?
+
+112
+00:06:13,840 --> 00:06:15,540
+Ta sẽ bàn về định ước
+
+113
+00:06:15,540 --> 00:06:17,670
+cho chính xác cách mà thông tin 
+được hỗ trợ để xem.
+
+114
+00:06:17,670 --> 00:06:19,250
+Và với định ước này,
+
+115
+00:06:19,250 --> 00:06:22,520
+phần mềm cơ sở dữ liệu có thể
+sử dụng chính nó một cách tốt nhất, phải không?
+
+116
+00:06:22,520 --> 00:06:24,340
+Điều này có thể tạo lên việc sử dụng 
+hiệu quả ổ đĩa.
+
+117
+00:06:24,340 --> 00:06:26,540
+Nó cũng tạo ra việc sử dụng tốt
+cho những thứ khác.
+
+118
+00:06:26,540 --> 00:06:29,460
+Do đó ta gọi đây là mô hình cơ sở dữ liệu.
+
+119
+00:06:29,460 --> 00:06:30,940
+Đây là ý nghĩa quan trọng của một định ước.
+
+120
+00:06:32,435 --> 00:06:34,135
+OK, ta sẽ kết nối với tập tin này.
+
+121
+00:06:34,135 --> 00:06:36,185
+Sẽ có những điều kỳ diệu
+được lưu ở đây.
+
+122
+00:06:36,185 --> 00:06:37,995
+Chúng ta dùng phần mềm cơ sở dữ liệu này.
+
+123
+00:06:37,995 --> 00:06:42,525
+Và lược đồ là cách mà chúng ta
+
+124
+00:06:42,525 --> 00:06:46,405
+thông báo cho cơ sở dữ liệu biết chúng ta nghĩ như thế nào,
+ta sử dụng dữ liệu như thế nào
+
+125
+00:06:46,405 --> 00:06:49,445
+và giúp cơ sở dữ liệu chỉ ra cách để dùng chúng,
+nơi để đặt chúng.
+
+126
+00:06:49,445 --> 00:06:51,515
+Tôi sẽ đặt một số thứ ở đây,
+tôi đặt một số thứ khác ở đây,
+
+127
+00:06:51,515 --> 00:06:53,825
+và tôi tạo ra một shortcut ở đây.
+
+128
+00:06:53,825 --> 00:06:55,090
+Ta không cần quan tâm về điều đó.
+
+129
+00:06:55,090 --> 00:06:59,700
+Ta nói rằng đây là mô hình cơ sở dữ liệu mà ta sẽ làm việc với,
+
+130
+00:06:59,700 --> 00:07:03,900
+và mã cơ sở dữ liệu của bạn được hỗ trợ một cách thông minh 
+và chỉ ra làm thế nào để nó trở lên có lý.
+
+131
+00:07:03,900 --> 00:07:09,610
+Như vậy mô hình dữ liệu không chỉ là các câu truy vấn SQL,
+mà mô hình dữ liệu là 
+
+132
+00:07:09,610 --> 00:07:16,460
+một định ước về hình thái những
+gì chúng ta sẽ lưu trữ và truy suất trong cơ sở dữ liệu của ta.
+
+133
+00:07:17,770 --> 00:07:20,806
+Có một cơ số hệ thống cơ sở dữ liệu, 
+và tôi sẽ đề cập đến một vài trong số chúng.
+
+134
+00:07:20,806 --> 00:07:24,124
+Oracle thật là tuyệt.
+
+135
+00:07:24,124 --> 00:07:30,120
+Đây là công ty đã tạo ra một cách hiệu quả
+một hệ thống cơ sở dữ liệu.
+
+136
+00:07:30,120 --> 00:07:35,890
+và họ được thành lập trong sự ra đời của 
+phong trào quan hệ và chiến thắng
+
+137
+00:07:35,890 --> 00:07:38,620
+bởi vì họ rất tốt trong lĩnh vực đó.
+
+138
+00:07:38,620 --> 00:07:42,200
+Những công ty khác đã không chiến thắng
+bao gồm cả IBM,
+
+139
+00:07:42,200 --> 00:07:46,910
+mặc dù họ cũng có những cơ sở dữ liệu quan hệ.
+
+140
+00:07:46,910 --> 00:07:51,660
+Phần lớn những nhà cung cấp đó đã để 
+cho Oracle chiến thắng.
+
+141
+00:07:51,660 --> 00:07:54,480
+Oracle đã loại bỏ những nhà cung cấp đó
+
+142
+00:07:54,480 --> 00:07:58,690
+những người đã không nắm những quan hệ này.
+
+143
+00:07:58,690 --> 00:08:02,488
+Bởi vì tôi đang học khi mà 
+người ta thấy những thứ này xuất hiện
+
+144
+00:08:02,488 --> 00:08:06,629
+và một số người trong chúng tôi rất thích
+mối quan hệ này, quá nhiều toán.
+
+145
+00:08:06,629 --> 00:08:09,340
+Cho tôi những thứ nhanh và thô, phải không?
+
+146
+00:08:09,340 --> 00:08:12,800
+Đã mất một khoảng thời gian để
+mô hình quan hệ dữ liệu này chiến thắng,
+
+147
+00:08:12,800 --> 00:08:15,210
+nhưng khi thắng, nó thắng to.
+
+148
+00:08:15,210 --> 00:08:19,050
+Và Oracle là công ty đã đặt cược 
+vào sự thành công của nó.
+
+149
+00:08:19,050 --> 00:08:21,630
+Theo thời gian, chúng tôi tất cả đã nhận ra rằng,
+nó là một ý tưởng tuyệt vời,
+
+150
+00:08:21,630 --> 00:08:25,350
+mặc dù tất cả chúng tôi đã từng nghĩ rằng nó là một ý tưởng tổi
+
+151
+00:08:25,350 --> 00:08:28,650
+Oracle đã thực thi một ý tưởng tốt 
+
+152
+00:08:28,650 --> 00:08:29,980
+mà cuối cùng tất cả chúng ta mới nhận ra rằng
+đó là ý tưởng tốt.
+
+153
+00:08:29,980 --> 00:08:31,860
+Như thế, Oracle đã chiến thắng theo một dạng nào đó.
+
+154
+00:08:31,860 --> 00:08:36,810
+Sau đó những gì xảy ra là Oracle trở thành 
+một công ty kỳ cựu trên thương trường,
+
+155
+00:08:36,810 --> 00:08:41,540
+một thương hiệu xa xỉ, thương mại,
+và nhiều người nghĩ rằng đơn giản nó là số một.
+
+156
+00:08:41,540 --> 00:08:44,120
+Nhưng cũng có những lựa chọn khác
+khá tốt.
+
+157
+00:08:44,120 --> 00:08:46,760
+Đó là MySQL với mã nguồn mở.
+
+158
+00:08:48,250 --> 00:08:52,530
+MySql đã được Orcle thâu tóm,
+nhưng vẫn tiếp tục có dạng mã nguồn mở.
+
+159
+00:08:52,530 --> 00:08:57,585
+Nếu bạn thật sự muốn có mã nguồn mở,
+đó là MySql MariaDB.MariaDB, đó là cách gọi của nó.
+
+160
+00:08:58,120 --> 00:09:01,350
+Nó bắt đầu bằng chữ M
+
+161
+00:09:01,350 --> 00:09:04,110
+với mục đích là phần mềm mới có cùng một
+chứ cái với cái trước đó.
+
+162
+00:09:04,110 --> 00:09:08,990
+Như vậy MariaDB là một dạng sao chép
+của phần mềm mã nguồn mở của MySql
+
+163
+00:09:08,990 --> 00:09:14,110
+mà tại thời điểm hiện tại 
+MySql đã được mua lại
+
+164
+00:09:14,110 --> 00:09:17,370
+Nhưng MySql vẫn là một phần mềm mã nguồn mở
+với nhiều người sử dụng
+
+165
+00:09:17,370 --> 00:09:21,250
+MySql đang chuyển sang Maria,
+nhưng rất nhiều người vẫn dùng MySql.
+
+166
+00:09:21,250 --> 00:09:24,600
+và nếu Oracle làm gì sai với MySql,
+ta sẽ chuyển sang Maria
+
+167
+00:09:24,600 --> 00:09:25,790
+và những điều đó kết thúc ở đó.
+
+168
+00:09:25,790 --> 00:09:29,130
+Và tại điểm đó, Oracle đã không làm gì
+xấu với MySQL,
+
+169
+00:09:29,130 --> 00:09:30,930
+và nó ổn.
+
+170
+00:09:30,930 --> 00:09:37,765
+Ta có khuynh hướng sử dụng MySql cho 
+các trang web trực tuyến, rất nhiều những phần của trang web.
+
+171
+00:09:37,765 --> 00:09:41,295
+Oracle thường được dùng cho công việc
+của các doanh nghiệp.
+
+172
+00:09:41,295 --> 00:09:47,105
+Và có một thứ khác cũng rất phổ biến
+đó là SqlServer của Microsoft.
+
+173
+00:09:47,105 --> 00:09:49,135
+Bạn có thể đã sử dụng
+Microsoft Access
+
+174
+00:09:49,135 --> 00:09:52,300
+và bạn có thể đã làm những thứ như
+một màn hình nơi mà bạn có thể thả nhiều thứ xuống
+
+175
+00:09:52,300 --> 00:09:55,160
+nó là SQL đưới những vỏ bọc.
+
+176
+00:09:55,160 --> 00:09:57,750
+SqlServer của Microsoft
+là một sản phẩm rất tốt.
+
+177
+00:09:57,750 --> 00:10:02,640
+Một số tổ chức doanh nghiệp dùng tất cả của Microsoft
+và vậy nên họ dùng SqlServer.
+
+178
+00:10:02,640 --> 00:10:05,110
+Đừng cảm thấy chán, 
+mọi thứ tôi đang nói về là việc
+
+179
+00:10:05,110 --> 00:10:08,810
+ứng dụng ngang hàng trong SQL
+bởi vì SQl là một tiêu chuẩn và điều đó thật tốt.
+
+180
+00:10:08,810 --> 00:10:12,940
+Có một thứ khác gọi là Postgres
+và đó là mã nguồn mở
+
+181
+00:10:12,940 --> 00:10:17,540
+nó rất hay 
+một dạng tương tự như Oracle hơn là MySql.
+
+182
+00:10:17,540 --> 00:10:20,960
+MySql được thiết kế cho việc sử dụng đơn giản hơn
+và nhanh hơn
+
+183
+00:10:20,960 --> 00:10:24,200
+nhưng giải quyết ít vấn đề hơn Oracle,
+nên MySql rất nhanh.
+
+184
+00:10:24,200 --> 00:10:27,360
+Đó là lý do tại sao nó rất phổ biến
+trong các trang web.
+
+185
+00:10:27,360 --> 00:10:30,900
+Postgres là một dạng 
+cơ sở dữ liệu giàu
+
+186
+00:10:30,900 --> 00:10:33,490
+là một đối thủ trực tiếp 
+của Oracle.
+
+187
+00:10:33,490 --> 00:10:36,070
+MySql là thế giới của chúng ta.
+
+188
+00:10:36,070 --> 00:10:38,090
+Và chúng ta sẽ không sử dụng bất kỳ trong những cái này.
+
+189
+00:10:38,090 --> 00:10:41,890
+Nếu bạn học lớp về web,
+bạn có thể dùng MySql
+
+190
+00:10:41,890 --> 00:10:44,610
+và những gì tôi đang dạy bạn trong lớp này
+sẽ hữu dụng ở đó.
+
+191
+00:10:44,610 --> 00:10:46,450
+OK? Tất cả kiến thức, tất cả SQL.
+
+192
+00:10:46,450 --> 00:10:49,680
+Nhưng ta sẽ sử dụng một thứ gọi là SQLite.
+
+193
+00:10:49,680 --> 00:10:53,410
+Lite có nghĩa là nhỏ bé và không nặng nề.
+
+194
+00:10:53,410 --> 00:10:57,130
+SQLite là một dạng cơ sở dữ liệu nhúng.
+
+195
+00:10:58,702 --> 00:11:03,180
+MySQL và Oracle là một phầm mềm riêng biệt
+
+196
+00:11:03,180 --> 00:11:06,692
+là những hệ cơ sở dữ liệu mà ta liên kết
+thông qua kết nối mạng.
+
+197
+00:11:06,692 --> 00:11:10,620
+Nhưng SQLite thực sự là một phần của phần mềm,
+và được xây dựng bên trong phần mềm.
+
+198
+00:11:10,620 --> 00:11:14,159
+Xe của bạn, giả sử là một chiêc xe hiện đại,
+
+199
+00:11:14,159 --> 00:11:18,560
+có thể có năm bản SQLite trong đó, phải không?
+
+200
+00:11:18,560 --> 00:11:22,330
+Như vậy xe của bạn có SQLite.
+
+201
+00:11:22,330 --> 00:11:28,340
+Nếu bạn có một chương trình chơi nhạc trong xe,
+nó hẳn cũng sử dụng SQLite.
+
+202
+00:11:28,340 --> 00:11:33,630
+Nếu bạn có một iPhone,
+nó có lẽ sẽ có hẳn 30 bản của SQLite trong đó,
+
+203
+00:11:33,630 --> 00:11:37,720
+bởi vì SQLite được thiết kế rất nhỏ,
+nhỏ đến mức mà bạn không phải chia nó ra,
+
+204
+00:11:37,720 --> 00:11:40,930
+bạn chỉ cần xây dựng nó trong ứng dụng
+
+205
+00:11:40,930 --> 00:11:44,990
+và cái quan trọng với chung ta là
+nó xây dựng trong Python.
+
+206
+00:11:44,990 --> 00:11:46,370
+Nó đã được thiết kế để dùng với Python.
+
+207
+00:11:46,370 --> 00:11:47,640
+Điều đó quá tuyệt, phải không?
+
+208
+00:11:48,840 --> 00:11:53,930
+Nó nhanh 
+và có mục tiêu là làm nhỏ dữ liệu,
+
+209
+00:11:53,930 --> 00:11:58,490
+nhưng bởi vì trong Python, chúng ta cũng phân tích dữ liệu,
+nên chúng ta sẽ dùng tốt SQLite.
+
+210
+00:11:58,490 --> 00:12:00,840
+Và sự thực là những xây dựng của nó làm
+cuộc sống chúng ta đơn giản hơn.
+
+211
+00:12:00,840 --> 00:12:02,910
+Ta không cần phải cài nhiều phần mềm.
+
+212
+00:12:02,910 --> 00:12:07,510
+Python thực hiện mọi thứ với
+một câu lệnh nhập.
+
+213
+00:12:07,510 --> 00:12:08,780
+Bạn biết câu chuyện này diễn ra như thế nào.
+
+214
+00:12:08,780 --> 00:12:11,360
+Nếu bạn lập trình với Python
+và bạn biết cần phải hoàn thành một thứ gì đó,
+
+215
+00:12:11,360 --> 00:12:15,910
+điều đầu tiên phải chỉ ra là 
+câu lệnh nhập liệu nào bạn cần.
+
+216
+00:12:15,910 --> 00:12:16,590
+OK?
+
+217
+00:12:16,590 --> 00:12:20,020
+Điều này giúp ta liểu rõ
+những ứng dụng SQL mà ta đang sử dụng.
+
+218
+00:12:20,020 --> 00:12:22,740
+Ở phần tiếp theo 
+ta sẽ bắt đầu tập viết một số câu lệnh SQL.
+
+219
+00:12:22,740 --> 00:12:26,421
+Tạo cơ sở dữ liệu và đặt một số bảng vào đó,
+và nhập một số thông tin vào các bảng.

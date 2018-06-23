@@ -1,0 +1,345 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/YQAUOQCubG0
+phuongmai201 5/11/2016
+
+1
+00:00:06,230 --> 00:00:08,839
+Rất vui được chào mừng các bạn trở lại với khóa học " Quản trị vận hành".
+
+2
+00:00:08,839 --> 00:00:12,769
+Trong phần hôm nay, ta sẽ nói về việc tập hợp hàng tồn kho.
+
+3
+00:00:12,769 --> 00:00:17,558
+Sự tập hợp ở đây nghĩa là thực ra ta đang hợp nhất
+
+4
+00:00:17,558 --> 00:00:20,780
+các nhà kho hay kết hợp các khu chứa hàng tồn kho. 
+
+5
+00:00:20,780 --> 00:00:24,379
+Khi ta nghĩ về việc hợp nhất hàng tồn kho
+
+6
+00:00:24,379 --> 00:00:27,750
+thì có hai cách để cân nhắc tới. Một là 
+
+7
+00:00:27,750 --> 00:00:31,448
+sự tập trung về vật chất. Tức là ta lấy 
+
+8
+00:00:31,449 --> 00:00:34,750
+các nhà kho khác nhau, các phòng chứa khác nhau và kết hợp
+
+9
+00:00:34,750 --> 00:00:40,570
+tất cả các đơn vị đó thành một cơ sở. Một cách khác để cân nhắc tới là tập hợp ảo.
+
+10
+00:00:40,570 --> 00:00:44,409
+Thay vì tập hợp tất cả hàng tồn kho ở một nơi, ta sẽ chia sẻ chung một 
+
+11
+00:00:44,409 --> 00:00:48,609
+hệ thống dữ liệu về hàng tồn kho. Vậy các món hàng có thể được vận chuyển từ 
+
+12
+00:00:48,609 --> 00:00:53,390
+cơ này tới cơ sở khác nhưng tất cả hàng tồn kho chỉ được coi
+
+13
+00:00:53,390 --> 00:00:59,600
+như một đơn vị duy nhất. Khi ta sử dụng phương pháp này, có mặt lợi và mặt bất lợi. 
+
+14
+00:00:59,600 --> 00:01:04,680
+Mặt thuận lợi lớn của nó là ta sẽ có được sử chuẩn xác tốt hơn
+
+15
+00:01:04,680 --> 00:01:05,789
+trong việc dự đoán. 
+
+16
+00:01:05,789 --> 00:01:09,760
+Bởi khi ta kết hợp nhiều cơ sở với nhau, ta sẽ làm giảm bớt 
+
+17
+00:01:09,760 --> 00:01:10,820
+sự biến động
+
+18
+00:01:10,819 --> 00:01:14,389
+bởi vậy ta có được sự chính xác tốt hơn trong việc dự đoán. 
+
+19
+00:01:14,390 --> 00:01:19,680
+Một thuận lợi nữa là ta có thể có được dịch vụ chăm sóc khác hàng tốt hơn
+
+20
+00:01:19,680 --> 00:01:23,240
+về mặt mức độ dịch vụ 
+
+21
+00:01:23,239 --> 00:01:28,879
+với cùng một mức hàng tồn kho như khi ta sử dụng hệ thống phân tán.
+
+22
+00:01:28,879 --> 00:01:32,119
+Điểm bất lợi là nếu ta đặt ở cùng một nơi
+
+23
+00:01:32,120 --> 00:01:37,079
+thì ta có thể làm gia tăng thời gian đáp ứng khách hàng và còn có khả năng làm tăng
+
+24
+00:01:37,079 --> 00:01:38,179
+giá thành vận chuyển.
+
+25
+00:01:38,180 --> 00:01:41,380
+Khi mang tất cả
+
+26
+00:01:41,379 --> 00:01:44,959
+các sản phẩm giống nhau và tập hợp chúng lại
+
+27
+00:01:44,959 --> 00:01:49,549
+ta sẽ có dự trữ bảo hiểm hợp nhất. Phương trình này có lẽ sẽ trông
+
+28
+00:01:49,549 --> 00:01:50,829
+hơi quen thuộc đối với bạn. 
+
+29
+00:01:50,829 --> 00:01:54,439
+Bởi vì bạn đang tạo ra dự trữ bảo hiểm bằng việc sử dụng những thông số
+
+30
+00:01:54,439 --> 00:01:59,170
+gắn với mức dịch vụ và đô lệch chuẩn của nhu cầu trong thời gian chờ hàng. 
+
+31
+00:01:59,170 --> 00:02:04,250
+Điều khác biệt ở đây là chúng ta đang sử dụng độ lệch chuẩn của nhu cầu trong thời gian
+
+32
+00:02:04,250 --> 00:02:06,400
+chờ hàng cho một địa điểm 
+
+33
+00:02:06,400 --> 00:02:10,160
+và sau đó nhân nó với căn của số lượng
+
+34
+00:02:10,159 --> 00:02:14,280
+các địa điểm mà ta kết hợp. Chúng ta hãy cùng xem nó sẽ ra sao nhé. 
+
+35
+00:02:14,280 --> 00:02:18,539
+Một nhà bán lẻ trực tuyến có 7 nhà kho 
+
+36
+00:02:18,539 --> 00:02:21,989
+và ở mỗi nhà kho họ duy trì hàng tồn kho cho loại pin AA.
+
+37
+00:02:21,990 --> 00:02:26,409
+Nhu cầu trong thời gian giao hàng trung bình cho mỗi nhà kho là 200
+
+38
+00:02:26,409 --> 00:02:31,120
+cùng với độ lệch chuẩn là 30 và ta đang cố gắng có được mức độ phục vụ là 95%.
+
+39
+00:02:31,120 --> 00:02:34,409
+Ta sẽ xem xét nó theo hai cách.
+
+40
+00:02:34,409 --> 00:02:38,299
+Một là ta sẽ xem xét từng nhà kho riêng lẻ
+
+41
+00:02:38,300 --> 00:02:42,830
+và tìm ra dự trữ bảo hiểm lẫn điểm đặt lại hàng và sau đó ta cũng sẽ 
+
+42
+00:02:42,830 --> 00:02:44,900
+tìm hiểu điều gì sẽ xảy ra nếu ta kết hợp
+
+43
+00:02:44,900 --> 00:02:49,000
+cả 7 nhà kho lại với nhau, tính dự trữ bảo hiểm 
+
+44
+00:02:49,000 --> 00:02:52,909
+và điểm đặt lại hàng khi đó. Bắt đầu với
+
+45
+00:02:52,909 --> 00:02:57,239
+một nhà kho, khá là quen thuộc, ta có độ lệch chuẩn của nhu cầu trong thời gian
+
+46
+00:02:57,239 --> 00:02:57,769
+giao hàng 
+
+47
+00:02:57,769 --> 00:03:02,269
+là 30. Ta tính được biến z thông qua mức dịch vụ là 
+
+48
+00:03:02,269 --> 00:03:03,510
+95%
+
+49
+00:03:03,509 --> 00:03:08,799
+Vậy khi kết hợp chúng lại, ta có biến z bằng 1.645 
+
+50
+00:03:08,800 --> 00:03:12,709
+ta nhân nó với độ lệch chuẩn của nhu cầu trong thời gian chờ hàng là
+
+51
+00:03:12,709 --> 00:03:16,370
+30 và ta sẽ có lượng dự trữ bảo hiểm là 50 đơn vị
+
+52
+00:03:16,370 --> 00:03:18,939
+nhớ là chúng ta phải làm tròn. 
+
+53
+00:03:18,939 --> 00:03:22,378
+Tiếp theo hãy cùng tính điểm đặt lại hàng cho nhà kho đó. 
+
+54
+00:03:22,378 --> 00:03:25,429
+Nhu cầu trong thời gian chờ hàng là 200
+
+55
+00:03:25,430 --> 00:03:30,939
+ta thêm vào 50 đơn vị cho việc bảo hiểm và vậy khi ta xuống còn 250 đơn vị
+
+56
+00:03:30,939 --> 00:03:31,889
+hàng tồn kho
+
+57
+00:03:31,889 --> 00:03:35,889
+thì đó là lúc ta đặt hàng. Khá là đơn giản.
+
+58
+00:03:35,889 --> 00:03:39,068
+Bây giờ điều gì sẽ xảy ra nếu ta có 7 nhà kho
+
+59
+00:03:39,068 --> 00:03:43,030
+và ta kết hợp chúng lại với nhau? Bây giờ ta sẽ sử dụng
+
+60
+00:03:43,030 --> 00:03:46,269
+công thức trên để tính dự trữ bảo hiểm
+
+61
+00:03:46,269 --> 00:03:49,599
+kết hợp, sử dụng lại số z là 
+
+62
+00:03:49,598 --> 00:03:54,579
+1.645, độ lệch chuẩn tương tự của nhu cầu trong thời gian chờ hàng
+
+63
+00:03:54,580 --> 00:03:58,480
+là 30 nhưng bây giờ ta sẽ kết hợp 7 nhà kho với nhau.
+
+64
+00:03:58,479 --> 00:04:01,629
+Vậy ta sẽ nhân nó với căn của 7.
+
+65
+00:04:01,629 --> 00:04:06,560
+Vậy giờ đây tổng lượng bảo hiểm cho cả 7 nhà kho
+
+66
+00:04:06,560 --> 00:04:13,560
+kết hợp lại là 131 đơn vị. Hãy nhớ rằng bây giờ ta có 1 nhà kho duy nhất 
+
+67
+00:04:13,568 --> 00:04:16,870
+thay thế cho 7 nhà kho. 
+
+68
+00:04:16,870 --> 00:04:20,489
+Vậy điểm đặt lại hàng lúc này là 7 
+
+69
+00:04:20,489 --> 00:04:23,560
+nhân với 200 của nhu cầu trong thời gian chờ hàng.
+
+70
+00:04:23,560 --> 00:04:27,629
+200 chỉ là của một nhà chứa, ta đang xem xét tới 7 nhà chứa.
+
+71
+00:04:27,629 --> 00:04:31,579
+Ta công thêm dự trữ bảo hiểm là 131
+
+72
+00:04:31,579 --> 00:04:37,120
+vậy điểm đặt lại hàng cho nhà kho kết hợp là 1.531 đơn vị.
+
+73
+00:04:37,120 --> 00:04:41,129
+Bây giờ cùng xem ta tiết kiệm được tiền ở đâu.
+
+74
+00:04:41,129 --> 00:04:45,538
+Nếu ta có một nhà kho kết hợp,
+
+75
+00:04:45,538 --> 00:04:50,279
+thì ta cần 131 đơn vị dự trữ bảo hiểm. Nếu ta có 7 
+
+76
+00:04:50,279 --> 00:04:54,918
+nhà kho riêng lẻ thì mỗi nhà kho sẽ có mức dự trữ bảo hiểm 
+
+77
+00:04:54,918 --> 00:04:57,939
+là 50 nhưng giờ đây có tới 7 nhà kho
+
+78
+00:04:57,939 --> 00:05:01,319
+vậy ta cần 350 đơn vị bảo hiểm dự trữ. 
+
+79
+00:05:01,319 --> 00:05:07,060
+Đó là một sự khác biệt rất lớn, cách nhau tới 219 đơn vị
+
+80
+00:05:07,060 --> 00:05:12,910
+và điều đó có nghĩa là bạn sẽ không phải giữ 219 đơn vị đó và chi phí của 
+
+81
+00:05:12,910 --> 00:05:17,150
+219 đơn vị ấy có thể được sử dụng vào việc khác.
+
+82
+00:05:17,149 --> 00:05:20,509
+Vậy đó chính là lợi thế lớn của việc kết hợp hàng tồn kho.
+
+83
+00:05:20,509 --> 00:05:24,579
+Điều đó đã khép lại cả một chương về hàng tồn kho
+
+84
+00:05:24,579 --> 00:05:28,069
+và trong nhóm bài tới ta sẽ chuyển sang hệ thống 6 sigma.
+
+85
+00:05:28,069 --> 00:05:28,668
+Hẹn gặp lại các bạn trong bài học tới. 
+

@@ -1,0 +1,450 @@
+95
+00:04:06,220 --> 00:04:09,580
+https://youtu.be/UR6a_wZ8ido
+So I figured I'd make
+a tattoo and just
+
+96
+00:04:09,580 --> 00:04:11,910
+a part of my rough, tough image.
+
+97
+00:04:11,910 --> 00:04:14,140
+And actually,
+regular expressions
+
+98
+00:04:14,140 --> 00:04:16,370
+are indeed part of my
+rough, tough image.
+
+99
+00:04:16,370 --> 00:04:18,860
+Because I'm like, I'm down
+with regular expressions.
+
+100
+00:04:18,860 --> 00:04:22,050
+And people are like, impressed
+with my regular expression
+
+101
+00:04:22,050 --> 00:04:22,770
+knowledge.
+
+102
+00:04:22,770 --> 00:04:25,890
+But as impressive as I am,
+I still need a cheat sheet.
+
+103
+00:04:25,890 --> 00:04:28,545
+So I'll have a cheat sheet that
+you can download, hopefully,
+
+104
+00:04:28,545 --> 00:04:31,080
+on the Python [INAUDIBLE]
+website or whatever.
+
+105
+00:04:31,080 --> 00:04:32,790
+And it doesn't have to be much.
+
+106
+00:04:32,790 --> 00:04:34,840
+It's really just a crutch.
+
+107
+00:04:34,840 --> 00:04:37,140
+And these are the characters
+that have special meaning.
+
+108
+00:04:37,140 --> 00:04:39,890
+Like carrot or dollar sign match
+the beginning or end of line,
+
+109
+00:04:39,890 --> 00:04:40,935
+respectively.
+
+110
+00:04:40,935 --> 00:04:42,810
+So they're not really
+matching a dollar sign,
+
+111
+00:04:42,810 --> 00:04:46,400
+they match-- they mean something
+in our little mini string
+
+112
+00:04:46,400 --> 00:04:48,780
+like programming language.
+
+113
+00:04:48,780 --> 00:04:52,120
+So like many things that we
+do in Python going forward,
+
+114
+00:04:52,120 --> 00:04:54,220
+once you want some
+sophisticated capability,
+
+115
+00:04:54,220 --> 00:04:57,600
+it comes with Python, but it
+comes in the form of a library.
+
+116
+00:04:57,600 --> 00:04:59,460
+And so the regular
+expression library,
+
+117
+00:04:59,460 --> 00:05:02,430
+we have to say import RE at
+the beginning of our programs
+
+118
+00:05:02,430 --> 00:05:04,130
+to import to regular
+expression library.
+
+119
+00:05:04,130 --> 00:05:06,390
+Then we call
+RE.search to say I'm
+
+120
+00:05:06,390 --> 00:05:09,240
+looking for search from the
+regular expression library.
+
+121
+00:05:09,240 --> 00:05:12,740
+There's two basic
+basic capabilities
+
+122
+00:05:12,740 --> 00:05:14,740
+inside this library that
+we're going to look at.
+
+123
+00:05:14,740 --> 00:05:16,900
+One is search that
+replaces find.
+
+124
+00:05:16,900 --> 00:05:18,490
+It's like a smart find.
+
+125
+00:05:18,490 --> 00:05:22,310
+And then find all is a
+combination of a smart find
+
+126
+00:05:22,310 --> 00:05:24,140
+and automatic extraction.
+
+127
+00:05:24,140 --> 00:05:26,320
+So we'll look at both
+of those in turn.
+
+128
+00:05:26,320 --> 00:05:29,270
+And I'll do it by comparing
+them to existing Python
+
+129
+00:05:29,270 --> 00:05:31,300
+that you already should
+know at this point.
+
+130
+00:05:31,300 --> 00:05:34,480
+
+131
+00:05:34,480 --> 00:05:37,300
+So here's some code that's,
+say, looking for lines that have
+
+132
+00:05:37,300 --> 00:05:40,126
+the string from colon in them.
+
+133
+00:05:40,126 --> 00:05:41,626
+So we're going to
+open a file, we're
+
+134
+00:05:41,626 --> 00:05:44,490
+going to strip the white
+space, if we find--
+
+135
+00:05:44,490 --> 00:05:47,840
+if we hunt within
+line for from, if it's
+
+136
+00:05:47,840 --> 00:05:51,010
+greater than or equal to
+zero, then we'll print it.
+
+137
+00:05:51,010 --> 00:05:53,220
+And so this is just going
+to give us a number.
+
+138
+00:05:53,220 --> 00:05:54,790
+If it's not found,
+it's negative 1.
+
+139
+00:05:54,790 --> 00:05:58,040
+So it's only going to print
+the lines that from in them.
+
+140
+00:05:58,040 --> 00:06:00,730
+Here is the equivalent
+using regular expressions.
+
+141
+00:06:00,730 --> 00:06:03,240
+So these two things
+are equivalent.
+
+142
+00:06:03,240 --> 00:06:05,994
+So we have to import to library,
+like I mentioned before.
+
+143
+00:06:05,994 --> 00:06:07,410
+And all the rest
+of it's the same.
+
+144
+00:06:07,410 --> 00:06:11,570
+The IF test is RE.search that
+says, within the library,
+
+145
+00:06:11,570 --> 00:06:15,100
+RE, called the Search Utility.
+
+146
+00:06:15,100 --> 00:06:17,960
+And then pass in the
+string we're looking for
+
+147
+00:06:17,960 --> 00:06:21,080
+and the line, the actual
+text we're looking in.
+
+148
+00:06:21,080 --> 00:06:24,130
+So this is like look for from
+inside of line and return
+
+149
+00:06:24,130 --> 00:06:27,510
+me a true or false,
+whichever depending on
+
+150
+00:06:27,510 --> 00:06:28,635
+whether you find it or not.
+
+151
+00:06:28,635 --> 00:06:30,720
+Now, might say, you
+just got done telling me
+
+152
+00:06:30,720 --> 00:06:32,500
+that it was more dense.
+
+153
+00:06:32,500 --> 00:06:34,750
+And the answer is, there's
+a few more characters here.
+
+154
+00:06:34,750 --> 00:06:37,640
+But we'll see in a second how
+you can quickly add more power
+
+155
+00:06:37,640 --> 00:06:39,210
+to the regular expression.
+
+156
+00:06:39,210 --> 00:06:41,770
+Find you have to start adding
+more Python lines to make
+
+157
+00:06:41,770 --> 00:06:44,180
+it more sophisticated where
+in the regular expression,
+
+158
+00:06:44,180 --> 00:06:49,780
+you start changing-- you change
+the search string to give more
+
+159
+00:06:49,780 --> 00:06:51,640
+of the direction of
+what you're looking for.
+
+160
+00:06:51,640 --> 00:06:52,900
+And that's what we'll
+be doing pretty much
+
+161
+00:06:52,900 --> 00:06:54,570
+is changing the search string.
+
+162
+00:06:54,570 --> 00:06:58,160
+So now, if we want to switch
+to, say, wait, wait, wait,
+
+163
+00:06:58,160 --> 00:07:00,230
+we don't just want the
+from anywhere in the line.
+
+164
+00:07:00,230 --> 00:07:02,880
+We want it to start with from.
+
+165
+00:07:02,880 --> 00:07:05,207
+So we would change
+line.startswith('From').
+
+166
+00:07:05,207 --> 00:07:07,540
+And that's either going to
+be true or false depending on
+
+167
+00:07:07,540 --> 00:07:10,520
+whether or not the
+line starts with from.
+
+168
+00:07:10,520 --> 00:07:12,890
+Now, we do the same thing
+with regular expressions
+
+169
+00:07:12,890 --> 00:07:15,791
+by changing the search string.
+
+170
+00:07:15,791 --> 00:07:17,290
+So now we're in
+regular expressions.
+
+171
+00:07:17,290 --> 00:07:19,120
+So this really just
+isn't a string.
+
+172
+00:07:19,120 --> 00:07:20,750
+It's a string plus
+characters that
+
+173
+00:07:20,750 --> 00:07:24,840
+are interpreted as commands by
+the regular expression library.
+
+174
+00:07:24,840 --> 00:07:29,470
+So the caret, which is the first
+one on our regular expressions
+
+175
+00:07:29,470 --> 00:07:31,870
+sheet, matches the
+beginning of the line.
+
+176
+00:07:31,870 --> 00:07:33,130
+It's not actually a caret.
+
+177
+00:07:33,130 --> 00:07:35,940
+So that says, the first
+character, this two character
+
+178
+00:07:35,940 --> 00:07:39,640
+sequence, caret f means
+f but in column one
+
+179
+00:07:39,640 --> 00:07:41,470
+in the first
+character of the line.
+
+180
+00:07:41,470 --> 00:07:44,630
+So again, this is going
+to give us a true or false
+
+181
+00:07:44,630 --> 00:07:47,510
+if this regular
+expression matches.
+
+182
+00:07:47,510 --> 00:07:51,230
+The beginning of the line from:
+and it's the same as this.
+
+183
+00:07:51,230 --> 00:07:52,720
+It's, does it start with from?
+
+184
+00:07:52,720 --> 00:07:54,740
+So again, these
+two are equivalent.
+
+185
+00:07:54,740 --> 00:07:56,730
+But you see the
+pattern where we're
+
+186
+00:07:56,730 --> 00:08:00,560
+going to do something to this
+string using these characters
+
+187
+00:08:00,560 --> 00:08:04,460
+that have meaning, OK?
+
+188
+00:08:04,460 --> 00:08:06,770
+So the next thing
+that's most commonly
+

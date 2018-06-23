@@ -1,0 +1,830 @@
+713
+00:30:59,200 --> 00:31:00,950
+https://youtu.be/6KgArgGi6Mk
+for ourselves at the end.
+
+714
+00:31:00,950 --> 00:31:05,020
+
+715
+00:31:05,020 --> 00:31:07,330
+Finding the average of
+a sequence of values
+
+716
+00:31:07,330 --> 00:31:10,750
+is the combination of the
+two previous patterns.
+
+717
+00:31:10,750 --> 00:31:13,860
+This time, I'm going to use
+more mnemonic variables.
+
+718
+00:31:13,860 --> 00:31:17,480
+Other variable called count,
+everyone calls this count.
+
+719
+00:31:17,480 --> 00:31:20,830
+Sum, now, total would maybe
+be a better word for this.
+
+720
+00:31:20,830 --> 00:31:22,450
+The running total.
+
+721
+00:31:22,450 --> 00:31:25,920
+And then the count and
+the sum start out at zero.
+
+722
+00:31:25,920 --> 00:31:27,450
+And then each time
+through the loop,
+
+723
+00:31:27,450 --> 00:31:30,480
+count equals count plus 1,
+so we're adding one to count.
+
+724
+00:31:30,480 --> 00:31:32,100
+Sum equals sum plus
+value, so we're
+
+725
+00:31:32,100 --> 00:31:35,150
+adding one to sum-- I
+mean, adding the value.
+
+726
+00:31:35,150 --> 00:31:39,280
+Value, of course, being
+9, 41, 12, 3, 74, 15.
+
+727
+00:31:39,280 --> 00:31:42,400
+And then at the very end,
+we can print out the number.
+
+728
+00:31:42,400 --> 00:31:45,450
+We have six things
+with a total of 154,
+
+729
+00:31:45,450 --> 00:31:47,210
+and then we calculate
+the average.
+
+730
+00:31:47,210 --> 00:31:49,470
+Of course, these
+are integer numbers.
+
+731
+00:31:49,470 --> 00:31:51,760
+And so this is a
+truncating division.
+
+732
+00:31:51,760 --> 00:31:58,440
+So 154 over 6 equals 25,
+and not 25 point something.
+
+733
+00:31:58,440 --> 00:32:02,080
+If we were in Python 3000,
+Python 3, it'd be better.
+
+734
+00:32:02,080 --> 00:32:05,710
+So the integer averages of the
+numbers we just looked at it
+
+735
+00:32:05,710 --> 00:32:08,360
+is 25.
+
+736
+00:32:08,360 --> 00:32:10,390
+So sometimes we're
+searching, like for a needle
+
+737
+00:32:10,390 --> 00:32:11,610
+in a haystack.
+
+738
+00:32:11,610 --> 00:32:13,700
+Looking for something.
+
+739
+00:32:13,700 --> 00:32:15,804
+And again, you have to
+think of, like, your hand
+
+740
+00:32:15,804 --> 00:32:17,220
+is some amount of
+data, and you've
+
+741
+00:32:17,220 --> 00:32:18,630
+got to hunt for something.
+
+742
+00:32:18,630 --> 00:32:19,570
+And there might be
+a million things,
+
+743
+00:32:19,570 --> 00:32:20,710
+and you might only
+want five of them.
+
+744
+00:32:20,710 --> 00:32:22,210
+And you can use
+look by hand, or you
+
+745
+00:32:22,210 --> 00:32:24,418
+can write a loop that's got
+an if statement that says
+
+746
+00:32:24,418 --> 00:32:25,430
+found it.
+
+747
+00:32:25,430 --> 00:32:28,280
+Maybe I found it at line
+seven, or found it wherever.
+
+748
+00:32:28,280 --> 00:32:31,380
+So this is filtering, or
+finding, or searching,
+
+749
+00:32:31,380 --> 00:32:34,780
+looking for a needle in
+a haystack in a loop.
+
+750
+00:32:34,780 --> 00:32:38,920
+And so the idea basically
+is that we have this loop.
+
+751
+00:32:38,920 --> 00:32:42,990
+It's going to go through all
+the values, 9, 41, 12, 3, 74.
+
+752
+00:32:42,990 --> 00:32:46,270
+But we put in the loop,
+we embed an if statement.
+
+753
+00:32:46,270 --> 00:32:48,450
+If the value we're looking
+at is greater than 20,
+
+754
+00:32:48,450 --> 00:32:50,380
+print I found it.
+
+755
+00:32:50,380 --> 00:32:55,350
+So when value is nine, this
+is going to do nothing.
+
+756
+00:32:55,350 --> 00:32:57,930
+And just go and
+make value be 41.
+
+757
+00:32:57,930 --> 00:33:00,790
+And then value 41,
+oh, yup, there we go.
+
+758
+00:33:00,790 --> 00:33:03,850
+Print large number,
+so off this comes.
+
+759
+00:33:03,850 --> 00:33:06,330
+Then value becomes
+12, nothing happens.
+
+760
+00:33:06,330 --> 00:33:08,480
+Value becomes three,
+nothing happens.
+
+761
+00:33:08,480 --> 00:33:11,620
+Value becomes 74, oops, this
+time it's going to happen.
+
+762
+00:33:11,620 --> 00:33:13,940
+So out comes large number 74.
+
+763
+00:33:13,940 --> 00:33:16,990
+Then value becomes
+15, nothing happens.
+
+764
+00:33:16,990 --> 00:33:18,640
+And then value is all done.
+
+765
+00:33:18,640 --> 00:33:20,700
+And so it comes and finishes.
+
+766
+00:33:20,700 --> 00:33:25,260
+So this is the searching,
+or filtering, or catching,
+
+767
+00:33:25,260 --> 00:33:25,820
+or whatever.
+
+768
+00:33:25,820 --> 00:33:29,520
+
+769
+00:33:29,520 --> 00:33:32,560
+We can also, if we don't just
+want to print everything out,
+
+770
+00:33:32,560 --> 00:33:34,247
+we want to say, is
+something in there?
+
+771
+00:33:34,247 --> 00:33:35,830
+We'll look through
+this million things
+
+772
+00:33:35,830 --> 00:33:38,794
+and tell me if blah exists.
+
+773
+00:33:38,794 --> 00:33:40,210
+And in this, we're
+going introduce
+
+774
+00:33:40,210 --> 00:33:42,410
+the notion of Boolean variable.
+
+775
+00:33:42,410 --> 00:33:43,692
+Boolean is a true/false.
+
+776
+00:33:43,692 --> 00:33:45,400
+It only has two values,
+and we've already
+
+777
+00:33:45,400 --> 00:33:47,190
+used it in the wild, true.
+
+778
+00:33:47,190 --> 00:33:50,410
+So that capital True,
+that is a constant.
+
+779
+00:33:50,410 --> 00:33:56,191
+Just like seven, or
+42, or 99, or Sam.
+
+780
+00:33:56,191 --> 00:33:58,440
+And so we're going to make
+this variable called found.
+
+781
+00:33:58,440 --> 00:34:02,480
+Now found is mnemonic variable,
+it's just a name I picked.
+
+782
+00:34:02,480 --> 00:34:04,230
+So found equals False.
+
+783
+00:34:04,230 --> 00:34:06,970
+This is going to be false until
+we find what we're looking for,
+
+784
+00:34:06,970 --> 00:34:08,860
+and then it's going
+to switch to true.
+
+785
+00:34:08,860 --> 00:34:11,320
+So it starts out
+and it's false, then
+
+786
+00:34:11,320 --> 00:34:15,739
+we're going to run this
+bit of code three times.
+
+787
+00:34:15,739 --> 00:34:18,150
+And if the value that we
+are looking at is three,
+
+788
+00:34:18,150 --> 00:34:20,389
+then we're going to
+set found to be true,
+
+789
+00:34:20,389 --> 00:34:23,400
+and we'll print found
+value each time through.
+
+790
+00:34:23,400 --> 00:34:27,210
+So value's going to take
+on 9, 41, 12, 3, 74,
+
+791
+00:34:27,210 --> 00:34:29,770
+so we get a line of
+output for each one.
+
+792
+00:34:29,770 --> 00:34:32,030
+And the first time
+through, it's not
+
+793
+00:34:32,030 --> 00:34:33,920
+yet found, because
+we're looking at a nine.
+
+794
+00:34:33,920 --> 00:34:35,340
+Second time, we've
+not yet found,
+
+795
+00:34:35,340 --> 00:34:37,159
+we looked at 41, still false.
+
+796
+00:34:37,159 --> 00:34:39,960
+So it can stay false
+for a long time.
+
+797
+00:34:39,960 --> 00:34:41,109
+Oh, we found a true.
+
+798
+00:34:41,109 --> 00:34:43,400
+And then that means that this
+code's going to run once.
+
+799
+00:34:43,400 --> 00:34:46,440
+And so you can think of this
+found variable as sticky.
+
+800
+00:34:46,440 --> 00:34:48,909
+It's going to stay false,
+and then the rest of the loop
+
+801
+00:34:48,909 --> 00:34:52,392
+it's going to stay true,
+and at the end it is true.
+
+802
+00:34:52,392 --> 00:34:54,600
+Now the way we usually do
+these kinds of things is we
+
+803
+00:34:54,600 --> 00:34:56,225
+don't bother with
+this print statement,
+
+804
+00:34:56,225 --> 00:34:57,980
+so we wouldn't see
+all this stuff.
+
+805
+00:34:57,980 --> 00:35:00,477
+All we see is before
+false, after true.
+
+806
+00:35:00,477 --> 00:35:02,810
+And after it would just tell
+us that, yeah, we found it.
+
+807
+00:35:02,810 --> 00:35:06,330
+There was a three somewhere
+in that long list of numbers.
+
+808
+00:35:06,330 --> 00:35:09,560
+I'm just adding this print
+statement so we can trace it.
+
+809
+00:35:09,560 --> 00:35:12,920
+But basically, this
+loop from here to here
+
+810
+00:35:12,920 --> 00:35:17,075
+is asking the question, is there
+the number three in the list
+
+811
+00:35:17,075 --> 00:35:20,210
+that we're about to go through?
+
+812
+00:35:20,210 --> 00:35:25,870
+Now I'll just give you a second
+and ask you a quick question.
+
+813
+00:35:25,870 --> 00:35:29,130
+You can pause if you want.
+
+814
+00:35:29,130 --> 00:35:32,370
+How could you improve
+this loop using the break?
+
+815
+00:35:32,370 --> 00:35:34,900
+Where might you put a break
+to make this loop smarter?
+
+816
+00:35:34,900 --> 00:35:40,810
+
+817
+00:35:40,810 --> 00:35:44,340
+It's OK if it didn't
+jump out at you.
+
+818
+00:35:44,340 --> 00:35:48,410
+So if you think about
+it, once you hit true,
+
+819
+00:35:48,410 --> 00:35:51,480
+there's really little point in
+looking at the rest of them.
+
+820
+00:35:51,480 --> 00:35:53,220
+There just is no point.
+
+821
+00:35:53,220 --> 00:35:59,070
+So we could put a break right
+here, inside this block.
+
+822
+00:35:59,070 --> 00:36:01,220
+You say, look, I'm
+looking for a three.
+
+823
+00:36:01,220 --> 00:36:03,220
+All I care is whether
+I found it or not.
+
+824
+00:36:03,220 --> 00:36:06,150
+If I find it, I mark it
+to true that I found it,
+
+825
+00:36:06,150 --> 00:36:08,450
+and I get out of the loop.
+
+826
+00:36:08,450 --> 00:36:09,530
+Why bother?
+
+827
+00:36:09,530 --> 00:36:11,210
+Why do all these things?
+
+828
+00:36:11,210 --> 00:36:13,070
+Just get out.
+
+829
+00:36:13,070 --> 00:36:16,110
+So don't worry about it,
+I'm just pointing that out
+
+830
+00:36:16,110 --> 00:36:18,510
+that that's one of the places
+where break could be used.
+
+831
+00:36:18,510 --> 00:36:20,520
+The loop functions
+either way, it just
+
+832
+00:36:20,520 --> 00:36:24,620
+looks through all the
+rest of them as well.
+
+833
+00:36:24,620 --> 00:36:26,210
+OK.
+
+834
+00:36:26,210 --> 00:36:30,850
+So here's this largest
+value one I've used before.
+
+835
+00:36:30,850 --> 00:36:34,930
+And away we go.
+
+836
+00:36:34,930 --> 00:36:36,757
+We have largest so
+far, we check to see
+
+837
+00:36:36,757 --> 00:36:38,340
+if the one we're
+looking at is better.
+
+838
+00:36:38,340 --> 00:36:42,010
+And if it is, we keep
+it, and then away we go.
+
+839
+00:36:42,010 --> 00:36:44,840
+And then we find
+the largest is 17.
+
+840
+00:36:44,840 --> 00:36:50,870
+What if, what would you
+have to change in this code
+
+841
+00:36:50,870 --> 00:36:53,990
+to make this search for the
+smallest of all the values?
+
+842
+00:36:53,990 --> 00:36:56,920
+
+843
+00:36:56,920 --> 00:37:00,580
+Point where in the
+screen, what would you
+
+844
+00:37:00,580 --> 00:37:04,548
+have to change to make
+this look for the smallest
+
+845
+00:37:04,548 --> 00:37:05,464
+in the list of values?
+
+846
+00:37:05,464 --> 00:37:09,500
+
+847
+00:37:09,500 --> 00:37:11,910
+What's making this
+about being largest?
+
+848
+00:37:11,910 --> 00:37:13,950
+What would you have to change?
+
+849
+00:37:13,950 --> 00:37:16,270
+OK.
+
+850
+00:37:16,270 --> 00:37:17,060
+Pause if you like.
+
+851
+00:37:17,060 --> 00:37:19,840
+
+852
+00:37:19,840 --> 00:37:22,170
+So here is some things
+that you might do
+
+853
+00:37:22,170 --> 00:37:24,220
+to make it work about smallest.
+
+854
+00:37:24,220 --> 00:37:25,850
+So hey, one thing
+we would do, let's
+
+855
+00:37:25,850 --> 00:37:27,670
+change the name of the variable.
+
+856
+00:37:27,670 --> 00:37:29,670
+We had a variable
+named largest so far,
+
+857
+00:37:29,670 --> 00:37:33,702
+and now we'll change it to
+be called smallest so far.
+
+858
+00:37:33,702 --> 00:37:35,910
+Changing the variable name
+doesn't change the program
+
+859
+00:37:35,910 --> 00:37:36,760
+at all.
+
+860
+00:37:36,760 --> 00:37:40,230
+But it makes the program easier
+to read if the program works.
+
+861
+00:37:40,230 --> 00:37:42,180
+So it's like smallest so far.
+
+862
+00:37:42,180 --> 00:37:44,470
+But that didn't make
+it about being small.
+
+863
+00:37:44,470 --> 00:37:47,330
+The thing that made
+about being small
+
+864
+00:37:47,330 --> 00:37:51,260
+is change this greater
+than to a less than.
+
+865
+00:37:51,260 --> 00:37:53,300
+Because we're
+thinking when we're
+
+866
+00:37:53,300 --> 00:37:55,730
+doing largest so far, if
+the number we're looking at
+
+867
+00:37:55,730 --> 00:37:59,020
+is bigger than largest
+so far, we keep it.
+
+868
+00:37:59,020 --> 00:38:00,899
+If the number looking
+at in the smallest
+
+869
+00:38:00,899 --> 00:38:03,440
+is smaller than the smallest so
+far, then we want to keep it.
+
+870
+00:38:03,440 --> 00:38:06,330
+So this is like keep.
+
+871
+00:38:06,330 --> 00:38:08,420
+This line here is
+the keeping line.
+
+872
+00:38:08,420 --> 00:38:10,460
+And this is the when
+line, when to keep.
+
+873
+00:38:10,460 --> 00:38:13,830
+
+874
+00:38:13,830 --> 00:38:17,740
+We'll keep it if it's smaller.
+
+875
+00:38:17,740 --> 00:38:18,910
+So that's the key.
+
+876
+00:38:18,910 --> 00:38:22,400
+And so, yeah, so I name it
+smallest so far, whoopdy doo.
+
+877
+00:38:22,400 --> 00:38:23,720
+That's good.
+
+878
+00:38:23,720 --> 00:38:26,662
+But the real thing that had this
+being about largeness smallness
+
+879
+00:38:26,662 --> 00:38:28,620
+was whether this is less
+than and greater than,
+
+880
+00:38:28,620 --> 00:38:30,840
+and this was the
+repeated code that got
+
+881
+00:38:30,840 --> 00:38:33,840
+rechecked over and over again.
+
+882
+00:38:33,840 --> 00:38:36,850
+But this still has a bug in it.
+
+883
+00:38:36,850 --> 00:38:39,100
+So let's run this visually.
+
+884
+00:38:39,100 --> 00:38:42,310
+
+885
+00:38:42,310 --> 00:38:45,890
+So now we've got a variable
+called smallest so far.
+
+886
+00:38:45,890 --> 00:38:48,140
+We are going to check to
+see if a series of numbers
+
+887
+00:38:48,140 --> 00:38:50,570
+that I'm about to show you
+are smaller than the smallest
+
+888
+00:38:50,570 --> 00:38:53,120
+so far.
+
+889
+00:38:53,120 --> 00:38:55,920
+So the first number is 9.
+
+890
+00:38:55,920 --> 00:38:59,240
+Is that's smaller
+than negative 1?
+

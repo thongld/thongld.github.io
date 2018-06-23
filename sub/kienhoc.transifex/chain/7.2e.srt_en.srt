@@ -1,0 +1,624 @@
+0
+00:00:00,000 --> 00:00:01,020
+https://youtu.be/eUfP6vSObAs
+
+1
+00:00:01,020 --> 00:00:03,910
+OK, let's put it all together now and solve the NFL Jersey
+
+2
+00:00:03,910 --> 00:00:05,140
+problem.
+
+3
+00:00:05,140 --> 00:00:07,750
+Remember our situation here: We're
+
+4
+00:00:07,750 --> 00:00:09,530
+selling NFL replica jerseys.
+
+5
+00:00:09,530 --> 00:00:11,970
+We have an eight week period where we can sell them.
+
+6
+00:00:11,970 --> 00:00:14,600
+The expected demand during that time
+
+7
+00:00:14,600 --> 00:00:17,400
+is Normally distributed with a mean of 32,000
+
+8
+00:00:17,400 --> 00:00:19,740
+and a standard deviation of 11,000.
+
+9
+00:00:19,740 --> 00:00:22,300
+I buy the jerseys for $10.90 each.
+
+10
+00:00:22,300 --> 00:00:24,860
+I sell them for $24 a jersey.
+
+11
+00:00:24,860 --> 00:00:27,660
+And I want to know how many units to buy.
+
+12
+00:00:27,660 --> 00:00:31,720
+We looked at two different cases and the cases
+
+13
+00:00:31,720 --> 00:00:34,840
+differed whether I assumed a Salvage Value of 0
+
+14
+00:00:34,840 --> 00:00:37,550
+or Salvage Value of $7 a jersey.
+
+15
+00:00:37,550 --> 00:00:42,905
+In each case, the Critical Ratio was determined by the price
+
+16
+00:00:42,905 --> 00:00:48,880
+minus the cost over the price minus that salvage value g And
+
+17
+00:00:48,880 --> 00:00:50,680
+so we found what the Q* would be.
+
+18
+00:00:50,680 --> 00:00:53,570
+And as expected, if I have a Salvage Value,
+
+19
+00:00:53,570 --> 00:00:54,820
+my Q is going to be bigger.
+
+20
+00:00:54,820 --> 00:00:58,570
+In this case, it's 40,149 compared
+
+21
+00:00:58,570 --> 00:01:03,200
+to 33,267 without that Salvage Value.
+
+22
+00:01:03,200 --> 00:01:05,970
+OK, so what is the expected profit for each case?
+
+23
+00:01:05,970 --> 00:01:09,310
+So we're going to use this expected profit equation
+
+24
+00:01:09,310 --> 00:01:11,640
+that we were just talking about.
+
+25
+00:01:11,640 --> 00:01:14,620
+And here it is: and there are three terms for this,
+
+26
+00:01:14,620 --> 00:01:17,300
+and so let's calculate each of the terms for each
+
+27
+00:01:17,300 --> 00:01:17,850
+of the cases.
+
+28
+00:01:17,850 --> 00:01:22,330
+So this first term is just the expected demand, the EE[x],
+
+29
+00:01:22,330 --> 00:01:24,630
+expected demand over that period.
+
+30
+00:01:24,630 --> 00:01:27,590
+And you notice that it's the same for each of the two cases,
+
+31
+00:01:27,590 --> 00:01:30,490
+because how much I order the Salvage Value doesn't
+
+32
+00:01:30,490 --> 00:01:33,460
+change the demand over that time.
+
+33
+00:01:33,460 --> 00:01:36,360
+And the only difference is what I multiply it by: p minus g;
+
+34
+00:01:36,360 --> 00:01:42,530
+24 minus 0 for case one, 24 minus 7, or 17, for case two.
+
+35
+00:01:42,530 --> 00:01:46,640
+And you can see I get $768,000 for case one
+
+36
+00:01:46,640 --> 00:01:49,720
+and $544,000 for case two.
+
+37
+00:01:49,720 --> 00:01:53,100
+OK, let's go to the second term.
+
+38
+00:01:53,100 --> 00:01:55,500
+And now this differs for each of the two cases
+
+39
+00:01:55,500 --> 00:01:57,530
+because the Q's differ.
+
+40
+00:01:57,530 --> 00:01:59,130
+And I'm going to multiply each of them
+
+41
+00:01:59,130 --> 00:02:02,410
+by c minus its corresponding g.
+
+42
+00:02:02,410 --> 00:02:09,046
+And you can see the values I get, $362,610 for case one,
+
+43
+00:02:09,046 --> 00:02:13,490
+$156,581 for case two.
+
+44
+00:02:13,490 --> 00:02:16,380
+Now let's get to the third term and for this,
+
+45
+00:02:16,380 --> 00:02:19,990
+we're going to have to focus in on this expected units short.
+
+46
+00:02:19,990 --> 00:02:22,310
+So we're going to use this unit Normal loss
+
+47
+00:02:22,310 --> 00:02:26,730
+function, this G(k), to find the expected units short because we
+
+48
+00:02:26,730 --> 00:02:28,930
+have a Normal distribution.
+
+49
+00:02:28,930 --> 00:02:31,630
+So let's focus a little more into that.
+
+50
+00:02:31,630 --> 00:02:33,880
+So we're going to be looking at this third term.
+
+51
+00:02:33,880 --> 00:02:36,660
+And how are we going to find this expected units short?
+
+52
+00:02:36,660 --> 00:02:39,820
+We're going to transform our Demand Distribution
+
+53
+00:02:39,820 --> 00:02:43,750
+into a standard unit Normal by subtracting off the mean
+
+54
+00:02:43,750 --> 00:02:46,140
+and dividing by the standard deviation.
+
+55
+00:02:46,140 --> 00:02:49,180
+We're going to look up and calculate the G(k) for that k
+
+56
+00:02:49,180 --> 00:02:50,750
+that we just determined.
+
+57
+00:02:50,750 --> 00:02:52,660
+We're going to multiply that G(k)
+
+58
+00:02:52,660 --> 00:02:56,700
+times the standard deviation of our demand to transform it back
+
+59
+00:02:56,700 --> 00:02:58,444
+into units for our distribution.
+
+60
+00:02:58,444 --> 00:03:00,110
+And then we're just going to multiply it
+
+61
+00:03:00,110 --> 00:03:03,100
+by this term to find the value of the third term
+
+62
+00:03:03,100 --> 00:03:04,920
+of the profitability equation.
+
+63
+00:03:04,920 --> 00:03:10,370
+So for the first case, we know the Q* is 33,267.
+
+64
+00:03:10,370 --> 00:03:13,240
+We can find the k, just a straight transformation.
+
+65
+00:03:13,240 --> 00:03:16,890
+Take that 33,267, subtract off the mu,
+
+66
+00:03:16,890 --> 00:03:19,350
+or the mean of the Normal distribution divided
+
+67
+00:03:19,350 --> 00:03:20,860
+by the standard deviation.
+
+68
+00:03:20,860 --> 00:03:23,170
+I get 0.115.
+
+69
+00:03:23,170 --> 00:03:25,430
+I can calculate in a spreadsheet what
+
+70
+00:03:25,430 --> 00:03:27,270
+that means in terms of the G(k).
+
+71
+00:03:27,270 --> 00:03:30,270
+It'll give me a G(k) of 0.3441.
+
+72
+00:03:30,270 --> 00:03:31,300
+Check the math.
+
+73
+00:03:31,300 --> 00:03:32,810
+Play along at home.
+
+74
+00:03:32,810 --> 00:03:36,620
+But let's also look at the standard Normal table,
+
+75
+00:03:36,620 --> 00:03:39,160
+because this will make us do some interpolation, something
+
+76
+00:03:39,160 --> 00:03:41,530
+that people don't do as much these days.
+
+77
+00:03:41,530 --> 00:03:45,070
+So here's my table: You should be very familiar with this.
+
+78
+00:03:45,070 --> 00:03:51,380
+I've got a k of 0.115, so I want to find my G(0.115).
+
+79
+00:03:51,380 --> 00:03:54,740
+And I know it's going to fall between these two values.
+
+80
+00:03:54,740 --> 00:03:56,290
+And so what do I do?
+
+81
+00:03:56,290 --> 00:03:58,680
+Well, I know that the k, 0.115, is
+
+82
+00:03:58,680 --> 00:04:02,350
+right in the middle between 0.11 and 0.12.
+
+83
+00:04:02,350 --> 00:04:04,840
+So I can probably find the G(k) that's
+
+84
+00:04:04,840 --> 00:04:08,600
+right in the middle of these two values, the 0.3464
+
+85
+00:04:08,600 --> 00:04:10,670
+and the 0.3418.
+
+86
+00:04:10,670 --> 00:04:11,890
+So this is interpolating.
+
+87
+00:04:11,890 --> 00:04:15,700
+I take half that distance and it's going to be 0.023
+
+88
+00:04:15,700 --> 00:04:19,160
+and then I can either add that to the 0.3418
+
+89
+00:04:19,160 --> 00:04:23,020
+or subtract it off of the 0.3464.
+
+90
+00:04:23,020 --> 00:04:25,530
+And so I'm just going to add it onto the lower one.
+
+91
+00:04:25,530 --> 00:04:28,760
+And I get 0.3441, which is the same thing
+
+92
+00:04:28,760 --> 00:04:32,230
+I got by using the formula in a spreadsheet.
+
+93
+00:04:32,230 --> 00:04:34,160
+OK, so I have my G(k).
+
+94
+00:04:34,160 --> 00:04:37,720
+The next step is to find my expected units short.
+
+95
+00:04:37,720 --> 00:04:39,950
+And now I'm just transforming it back
+
+96
+00:04:39,950 --> 00:04:43,260
+into my distribution instead of the unit Normal distribution.
+
+97
+00:04:43,260 --> 00:04:46,370
+So I'm multiplying it by my sigma, my standard deviation
+
+98
+00:04:46,370 --> 00:04:47,540
+of the demand.
+
+99
+00:04:47,540 --> 00:04:49,850
+And so it's telling me I can expect
+
+100
+00:04:49,850 --> 00:04:54,980
+to be short 3,785 jerseys each eight week
+
+101
+00:04:54,980 --> 00:04:57,490
+planning sales period.
+
+102
+00:04:57,490 --> 00:05:05,140
+So multiplying it by this (p-g+B) term gives me 90,840.
+
+103
+00:05:05,140 --> 00:05:10,600
+So case two, with my higher Q* , with my Salvage Value of $7
+
+104
+00:05:10,600 --> 00:05:11,550
+a jersey.
+
+105
+00:05:11,550 --> 00:05:13,450
+Follow the exact same steps and you
+
+106
+00:05:13,450 --> 00:05:15,400
+can see what it goes down to.
+
+107
+00:05:15,400 --> 00:05:16,480
+Check the math at home.
+
+108
+00:05:16,480 --> 00:05:18,980
+Make sure you come up with my same numbers.
+
+109
+00:05:18,980 --> 00:05:21,880
+And again, for finding your G(k),
+
+110
+00:05:21,880 --> 00:05:25,680
+you can use either a table or you can use a spreadsheet.
+
+111
+00:05:25,680 --> 00:05:27,150
+So let's put it all together.
+
+112
+00:05:27,150 --> 00:05:30,140
+Here's my expected profit equation with the three terms
+
+113
+00:05:30,140 --> 00:05:32,830
+that we just talked about and I calculated them
+
+114
+00:05:32,830 --> 00:05:34,890
+both for the case where I have no Salvage
+
+115
+00:05:34,890 --> 00:05:39,550
+Value and the case where my Salvage Value was $7 a jersey.
+
+116
+00:05:39,550 --> 00:05:41,860
+And then here in the last column,
+
+117
+00:05:41,860 --> 00:05:43,640
+you see what the expected profit is.
+
+118
+00:05:43,640 --> 00:05:46,060
+And that's simply the sum of the first term
+
+119
+00:05:46,060 --> 00:05:48,900
+minus the second and third terms.
+
+120
+00:05:48,900 --> 00:05:51,060
+So what you should notice here is
+
+121
+00:05:51,060 --> 00:05:53,130
+that the profitability for the second case where
+
+122
+00:05:53,130 --> 00:05:57,270
+I have a Salvage Value of $7 a jersey is about $50,000
+
+123
+00:05:57,270 --> 00:06:00,780
+more than the expected profit when I don't have that.
+
+124
+00:06:00,780 --> 00:06:03,960
+That seems to make sense, but let's look a little deeper
+
+125
+00:06:03,960 --> 00:06:07,130
+and let's expand this profit equation,
+
+126
+00:06:07,130 --> 00:06:10,980
+as I had done previously, into these four terms.
+
+127
+00:06:10,980 --> 00:06:14,510
+And so this term that I'm highlighting,
+
+128
+00:06:14,510 --> 00:06:22,300
+the EE{x}-E[US] is actually the expected units that I sell
+
+129
+00:06:22,300 --> 00:06:24,630
+at the full price.
+
+130
+00:06:24,630 --> 00:06:27,290
+This term that I'm highlighting here,
+
+131
+00:06:27,290 --> 00:06:36,440
+the Q-EQ-E{x}-E[US] is the expected number of units I sell
+
+132
+00:06:36,440 --> 00:06:38,070
+at a discount.
+
+133
+00:06:38,070 --> 00:06:42,530
+What's interesting is, as I add a Salvage Value of $7 a unit,
+
+134
+00:06:42,530 --> 00:06:45,964
+notice the expected demand doesn't change, right?
+
+135
+00:06:45,964 --> 00:06:47,130
+Because that doesn't change.
+
+136
+00:06:47,130 --> 00:06:50,800
+But what changes is the amount that I order.
+
+137
+00:06:50,800 --> 00:06:53,490
+And as I order more, not only will I
+
+138
+00:06:53,490 --> 00:06:57,375
+be able to sell some at discount, 9,614 jerseys more
+
+139
+00:06:57,375 --> 00:06:59,150
+at discount than I would have at the case
+
+140
+00:06:59,150 --> 00:07:01,610
+where I don't allow it, but the amount
+
+141
+00:07:01,610 --> 00:07:03,610
+that I sell at full price goes up
+
+142
+00:07:03,610 --> 00:07:06,600
+by a little over 2,000 jerseys.
+
+143
+00:07:06,600 --> 00:07:10,490
+So by having the Salvage Value, what does that do?
+
+144
+00:07:10,490 --> 00:07:14,760
+That increases my Q because the downside
+
+145
+00:07:14,760 --> 00:07:17,270
+is much lower for having more inventory.
+
+146
+00:07:17,270 --> 00:07:20,450
+So having excess inventory doesn't cost me as much,
+
+147
+00:07:20,450 --> 00:07:22,400
+so therefore I'm going to order a little more.
+
+148
+00:07:22,400 --> 00:07:24,260
+If I order a little more, then I'm
+
+149
+00:07:24,260 --> 00:07:27,120
+going to be able to capture more of that demand
+
+150
+00:07:27,120 --> 00:07:29,500
+that I'll be able to sell at full price.
+
+151
+00:07:29,500 --> 00:07:33,100
+So having Salvage Value, not only does that
+
+152
+00:07:33,100 --> 00:07:34,640
+increase the number of units I can
+
+153
+00:07:34,640 --> 00:07:39,310
+sell at a discount at that Salvage Value of $7 per jersey,
+
+154
+00:07:39,310 --> 00:07:41,390
+it also increases the amount of demand
+
+155
+00:07:41,390 --> 00:07:45,170
+that I capture for selling at that full price.
+

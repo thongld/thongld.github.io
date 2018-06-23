@@ -1,0 +1,386 @@
+1
+00:00:04,640 --> 00:00:05,949
+https://youtu.be/htPez_vQsGg
+Ta vừa
+
+2
+00:00:05,950 --> 00:00:11,120
+tìm hiểu xong về sức mạnh của việc tính chiết khấu, chúng ta đã bàn về 
+sức mạnh của việc tính lãi kép, sức mạnh của
+
+3
+00:00:11,120 --> 00:00:18,299
+việc tính chiết khấu và bạn đã thấy tầm ảnh hưởng 
+của dòng thời gian rồi, phải không? Vậy, ta có
+
+4
+00:00:18,300 --> 00:00:23,630
+khoảng 87 triệu 
+đô-la. Và tôi muốn nhắc bạn rằng 
+
+5
+00:00:23,630 --> 00:00:28,738
+dấu âm hay dương của Excel là phụ thuộc vào
+việc bạn nhận tiền hay mất tiền, vậy nên
+
+6
+00:00:28,739 --> 00:00:34,850
+5% của 87 triệu và khoảng dưới
+một triệu và chín trăm ngàn gì đó,
+
+7
+00:00:34,850 --> 00:00:42,90
+nếu lãi suất là 15%, rõ ràng là nghịch đảo 
+của Giá trị tương lai, đúng không? Giờ chúng ta cùng
+
+8
+00:00:42,90 --> 00:00:50,170
+tìm hiểu phần mà tôi bảo là 
+có tính áp dụng thực tiễn hơn. Ta sẽ làm
+
+9
+00:00:50,170 --> 00:00:55,850
+theo trình tự. Tôi sẽ không nói
+tất mọi thứ vì sẽ khiến bạn nhầm lẫn khi làm
+
+10
+00:00:55,850 --> 00:01:01,90
+bài tập, mà ta sẽ đi từng bước nhưng 
+điểm thú vị là, mặc dù tôi
+
+11
+00:01:01,90 --> 00:01:07,659
+đi theo từng bước, ý nghĩa của từng khái niệm
+mà tôi trình bày là rất lớn
+
+12
+00:01:07,659 --> 00:01:13,999
+đến nỗi bạn có thể được áp dụng ngay trong 
+những việc cực kỳ đơn giản trong nhiều hoàn cảnh, đúng không ạ? Như vậy
+
+13
+00:01:13,999 --> 00:01:20,609
+chúng ta hãy bắt đầu với phần mà đến giờ ta vẫn
+mặc định  là sẽ không xảy ra.
+
+14
+00:01:20,609 --> 00:01:28,810
+Vậy, ta đã vẽ một trục thời gian và nhớ rằng trong
+trục này, chúng ta đi từ kỳ một,
+
+15
+00:01:28,810 --> 00:01:35,909
+tới kỳ N, nhưng giả định ta đặt ra cho tới giờ là hoặc có thể sự kiện 
+
+16
+00:01:35,909 --> 00:01:41,619
+xảy ra tại điểm 0 này hoặc là có sự kiện 
+xảy ra tại đây, nói cách khác ta đã
+
+17
+00:01:41,619 --> 00:01:47,49
+có các khoản thanh toán một lần, hoặc vào hôm nay hoặc trong 
+tương lai. Phần mà tôi đang giới thiệu với các bạn ở đây 
+
+18
+00:01:47,49 --> 00:01:52,749
+đó là định nghĩa về các thanh toán nhiều lần, 
+bởi vì phần lớn vấn đề trong cuộc sống hay hầu hết
+
+19
+00:01:52,749 --> 00:01:59,79
+vấn đề hoặc khái niệm, hay  việc áp dụng đều 
+liên quan tới thanh toán nhiều lần,
+
+20
+00:01:59,79 --> 00:02:04,630
+đúng chứ? Vậy chúng bắt đầu một cách bài bản
+về một yếu tố được gọi là
+
+21
+00:02:04,630 --> 00:02:13,640
+khoản thanh toán hàng năm. Khoản thanh toán hàng năm là khoản thanh toán mà bạn
+nhận được, chúng ta sẽ gọi nó là dòng tiền, C
+
+22
+00:02:13,640 --> 00:02:17,380
+thường là khoản cố định về số lượng và kéo dài qua
+
+23
+00:02:17,380 --> 00:02:22,930
+N kỳ. Thế nên, tại đây, những gì đang xảy ra, 
+thay vì nhận được, hay phải trả
+
+24
+00:02:22,930 --> 00:02:27,420
+$100 một lần, bạn sẽ được
+làm như vậy nhiều lần và bạn sẽ thấy
+
+25
+00:02:27,420 --> 00:02:31,829
+ứng dụng của nó một khi tôi tính toán, nhưng
+trước tiên, vì bạn đã biết Giá trị hiện tại và
+
+26
+00:02:31,830 --> 00:02:36,130
+Giá trị tương lai, ta hãy nghĩ về
+yếu tố này xét trên khía cạnh khái niệm. Tôi sẽ quay  còn quay  đi quay lại và
+
+27
+00:02:36,130 --> 00:02:40,480
+chỉ ra giữa cách ứng dụng và các khái niệm. 
+Một khi bạn nắm được vài khái niệm, lần tới tôi sẽ
+
+28
+00:02:40,480 --> 00:02:45,220
+đi vào khái niệm và sau đó đi vào
+tính ứng dụng, vân vân. Vậy, các khoản thanh toán nhiều lần
+
+29
+00:02:45,220 --> 00:02:51,410
+chúng ta hãy bàn một chút về khái niệm. Ta sẽ gọi
+gọi những khoản thanh toán này là C nhưng... giờ thì phần này liên quan đến
+
+30
+00:02:51,410 --> 00:02:56,140
+Excel, trong  Excel, người ta không gọi là
+dòng tiền, đúng không? Họ gọi là
+
+31
+00:02:56,140 --> 00:03:01,380
+là PMT và đó là dòng tiền và nó được gọi 
+là khoản thanh toán bởi vì, nó tương tự như một khoản thanh toán
+
+32
+00:03:01,380 --> 00:03:05,990
+cho mỗi kỳ và bạn sẽ thấy tất những thứ này 
+bắt đầu từ đâu. Về cơ bản, phần này là từ
+
+33
+00:03:05,990 --> 00:03:08,190
+cấu trúc của một khoản vay.
+
+34
+00:03:08,190 --> 00:03:15,700
+Được rồi, vậy, nếu bạn nhìn vào phần hình ảnh ở phía trên cùng, cái tôi
+muốn làm, như tôi đã nói, về mặt lý thuyết, trình bày một cách lý thuyết 
+
+35
+00:03:15,700 --> 00:03:22,200
+về những gì đang xảy ra. Vậy, dòng tiền trong
+một khoản thanh toán hàng năm thông thường và ở đây quy ước là
+
+36
+00:03:22,200 --> 00:03:24,250
+rất quan trọng,
+
+37
+00:03:24,250 --> 00:03:28,710
+nó không bắt đầu tại thời điểm 0 và 
+giả định là dòng tiền đầu tiên
+
+38
+00:03:28,710 --> 00:03:32,910
+diễn ra cuối kỳ 1, giờ đây mỗi kỳ có thể dài một năm, 
+
+39
+00:03:32,910 --> 00:03:37,650
+tháng, bao nhiêu cũng được, tùy thuộc vào
+bài toán. Vậy, việc chúng ta đang làm là,
+
+
+40
+00:03:37,650 --> 00:03:47,100
+chúng ta sẽ có một khoản thanh toán hàng năm đơn giản
+sẽ kéo dài trong N=3,  khoản này
+
+41
+00:03:47,100 --> 00:03:51,239
+có vai trò khá quan trọng bởi vì bạn muốn biết
+có bao nhiêu kỳ và trong mỗi kỳ đó, bạn sẽ
+
+42
+00:03:51,240 --> 00:03:55,580
+nhận được một khoản PMT
+
+43
+00:03:55,580 --> 00:04:02,30
+gọi là C. C rõ ràng sẽ là một con số trong các bài toán của chúng ta, đúng chứ? Và một lần nữa, tôi muốn
+
+44
+00:04:02,30 --> 00:04:05,620
+tôi muốn bắt đầu với khái niệm Giá trị tương lai 
+
+45
+00:04:05,620 --> 00:04:08,880
+thú vị, vậy, để tính được 
+giá trị tương lai, giờ bạn phải
+
+
+46
+00:04:08,880 --> 00:04:15,310
+nghĩ về nó dựa theo khái niệm như thế này.
+Còn bao nhiêu năm nữa nếu tính từ kỳ 0 tới
+
+47
+00:04:15,310 --> 00:04:22,200
+tương lai? Số năm còn lại, 3
+
+48
+00:04:22,200 --> 00:04:28,590
+Còn bao nhiêu năm nữa nếu tính từ kỳ 1 tới
+tương lai? Nhớ rằng tương lai là
+
+49
+00:04:28,590 --> 00:04:33,869
+tính từ lúc kết thúc ở kỳ 3 và kỳ 1, mỗi khi chúng ta nói một kỳ, chúng ta hiểu là khi kết thúc
+
+50
+00:04:33,870 --> 00:04:39,920
+kỳ đó. Điều này khiến nhiều người khó hiểu,
+ đó là lý do vì sao vẽ trục thời gian có vai trò
+
+51
+00:04:39,920 --> 00:04:47,950
+rất quan trọng. Đây là 1 và đây là 0. 
+Cái bạn sẽ thấy ở đây là, một cách khác để
+
+52
+00:04:47,950 --> 00:04:53,690
+viết trục thời gian và tôi sẽ chuẩn bị
+đi cực kỳ chậm ở phần này, bởi vì
+
+53
+00:04:53,690 --> 00:05:00,800
+chúng ta sẽ giả sử là ta có người mới học, không quen với
+những thứ này. Vậy thì C, C, C, đây là
+
+54
+00:05:00,800 --> 00:05:06,140
+cách nó vận hành, đúng chứ? Vậy thì có 
+bao nhiêu kỳ từ 0 tới đây, 3 kỳ, có bao nhiêu
+
+55
+00:05:06,140 --> 00:05:17,620
+kỳ từ 1 tới 3? 2 kỳ. 2 tới 3, 1 kỳ. Tại 3, 0 kỳ.
+Vậy đó là kết cấu giả định về một khoản thanh toán hàng năm, dĩ nhiên
+
+56
+00:05:17,620 --> 00:05:20,620
+bạn có thể thay đổi cấu trúc đó
+tùy thuộc vào bản chất của vấn đề,
+
+57
+00:05:20,620 --> 00:05:26,930
+nhưng bạn có thể tiến xa hơn nữa với loại 
+cấu trúc này, mặc dù nó có thể khá... Vậy
+
+58
+00:05:26,930 --> 00:05:31,840
+chúng ta hãy cùng xem Giá trị tương lai sẽ 
+ra sao và chúng ta sẽ đi chậm và
+
+59
+00:05:31,840 --> 00:05:37,570
+sau đó sẽ nghỉ giải lao và trở lại 
+với việc áp dụng. Giá trị tương lai sẽ là
+
+60
+00:05:37,570 --> 00:05:42,219
+0 và lý do đó là, tại điểm 0
+không có gì xảy ra đối với một
+
+61
+00:05:42,220 --> 00:05:48,170
+khoản thanh toán chuẩn. Giá trị tương lai của
+dòng tiền bạn sẽ có ở điểm 1 là bao nhiêu?
+
+62
+00:05:48,170 --> 00:05:55,860
+Còn nhớ thời gian 1 nghĩa là gì không? Tại
+thời điểm này, tại cuối năm thứ nhất. Nó sẽ là C
+
+63
+00:05:55,860 --> 00:06:10,240
+nhân 1+R, bao nhiêu? Bình phương, đúng chưa ạ? 
+Và chìa khóa là, con số này, bởi vì bạn 
+
+64
+00:06:10,240 --> 00:06:10,800
+sẽ
+
+65
+00:06:10,800 --> 00:06:19,500
+mang số C này sang 2 kỳ nữa. Chúng ta sẽ mang 
+sang bao nhiêu giá trị C này ? 1 kỳ, C(1+R)
+
+66
+00:06:19,500 --> 00:06:22,510
+và bạn sẽ mang sang bao nhiêu
+
+67
+00:06:22,510 --> 00:06:28,840
+giá trị C cuối cùng này? Không thêm giá trị nào cả, chỉ là C thôi. Vậy thì, khi tính Giá trị tương lai của một
+
+68
+00:06:28,840 --> 00:06:34,570
+khoản thanh toán hàng năm, về bản chất bạn cần phải mang sang ngay
+các dòng tiền, nhưng dòng tiền mang sang cuối cùng là dòng tiền ở
+
+69
+00:06:34,570 --> 00:06:40,530
+kỳ 3 và vì thế, ta không cần mang nó sang.
+Vậy thì điều này cho bạn thấy
+
+70
+00:06:40,530 --> 00:06:55,690
+khái niệm và công thức,
+Giá trị tương lai của một khoản thanh toán hàng năm trở thành C
+
+71
+00:06:55,690 --> 00:07:08,390
+1+R bình phương cộng với C(1+R) cộng C. Một lần nữa, đây là giá trị tại cuối 
+
+72
+00:07:08,390 --> 00:07:12,659
+kỳ thứ nhất, Giá trị tương lai của khoản này tại
+cuối kỳ thứ hai và cuối cùng
+
+73
+00:07:12,660 --> 00:07:32,20
+Giá trị tương lai của khoản thứ ba trong kỳ 3. Chú ý rằng
+bạn có thể lấy C,
+
+74
+00:07:32,20 --> 00:07:42,90
+bạn có thể viết lại, đây là công thức về khoản thanh toan hàng năm trong sách giáo khoa, những nội dung bạn có thể tìm thấy 
+cuối sách, con số này được tính toán và 
+
+75
+00:07:42,90 --> 00:07:55,508
+được gọi là hệ số giá trị thanh toán hàng năm theo giá trị tương lai và đó là một
+hàm của hai yếu tố R và N, số lượng 
+
+76
+00:07:55,509 --> 00:08:03,680
+các kỳ. Vậy, một lần nữa, rõ ràng là R
+có vai trò quan trọng bởi vì nó là Giá trị thời gian của tiền tệ,
+
+77
+00:08:03,680 --> 00:08:09,889
+nhưng thời gian cũng có vai trò quan trọng và nó là 3 năm. 
+Khác biệt quan trọng với
+
+78
+00:08:09,889 --> 00:08:16,289
+Giá trị tương lai đơn giản là giữa việc bạn được trả 
+một lần tại ngày hôm nay với việc bạn mang sang giá trị  hay 
+
+79
+00:08:16,289 --> 00:08:18,949
+bạn có dòng tiền phát sinh một lần, ở đây điều này xảy ra
+
+80
+00:08:18,949 --> 00:08:19,449
+ba lần
+

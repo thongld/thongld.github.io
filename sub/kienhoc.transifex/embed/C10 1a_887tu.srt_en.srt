@@ -1,0 +1,456 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/9tzjY1GURxc
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:06,690
+RAMESH YARRABALLI: We will
+revisit the SysTick Timer.
+
+3
+00:00:06,690 --> 00:00:12,600
+And we'll see how to
+make it more precise.
+
+4
+00:00:12,600 --> 00:00:18,800
+So we'll try to make it more precise.
+
+5
+00:00:18,800 --> 00:00:30,140
+We will do that by engaging the phase
+lock loop, otherwise called the PLL.
+
+6
+00:00:30,140 --> 00:00:33,550
+
+7
+00:00:33,550 --> 00:00:38,060
+So in order to understand
+what this entails,
+
+8
+00:00:38,060 --> 00:00:50,030
+first, I will make the observation that
+on the Cortex M4 microcontroller, which
+
+9
+00:00:50,030 --> 00:00:58,830
+is my TM4C microcontroller,
+there are two clock sources.
+
+10
+00:00:58,830 --> 00:01:10,940
+There's an internal
+oscillator, which runs
+
+11
+00:01:10,940 --> 00:01:24,350
+at 16 megahertz with a plus or minus
+1% deviation from the 16 megahertz.
+
+12
+00:01:24,350 --> 00:01:29,380
+It's not very precise, but
+it requires less power.
+
+13
+00:01:29,380 --> 00:01:38,060
+So the advantage, the positive,
+is that it requires low power.
+
+14
+00:01:38,060 --> 00:01:42,190
+But the negative is that it's imprecise.
+
+15
+00:01:42,190 --> 00:01:46,920
+
+16
+00:01:46,920 --> 00:01:53,270
+So we can also engage-- so this is the
+internal oscillator, which is built in.
+
+17
+00:01:53,270 --> 00:01:55,480
+There is an external oscillator.
+
+18
+00:01:55,480 --> 00:02:02,850
+
+19
+00:02:02,850 --> 00:02:10,410
+And we will see a picture of it
+later, where this is something
+
+20
+00:02:10,410 --> 00:02:16,940
+that you can choose to put on
+your board, which-- in your case,
+
+21
+00:02:16,940 --> 00:02:22,940
+it comes with an oscillator
+already soldered in.
+
+22
+00:02:22,940 --> 00:02:27,650
+This external oscillator
+is very precise.
+
+23
+00:02:27,650 --> 00:02:31,770
+
+24
+00:02:31,770 --> 00:02:33,300
+And it's very stable.
+
+25
+00:02:33,300 --> 00:02:38,090
+
+26
+00:02:38,090 --> 00:02:43,070
+This external oscillator, depending upon
+what has been chosen for your board--
+
+27
+00:02:43,070 --> 00:02:47,360
+the one that has already been soldered--
+is also a 16 megahertz crystal.
+
+28
+00:02:47,360 --> 00:02:50,640
+
+29
+00:02:50,640 --> 00:02:54,870
+But you can choose to put a
+different crystal if you want.
+
+30
+00:02:54,870 --> 00:03:01,510
+Now, what we have is
+the phase lock loop can
+
+31
+00:03:01,510 --> 00:03:05,080
+take advantage of an
+external oscillator.
+
+32
+00:03:05,080 --> 00:03:31,165
+And the idea is that the PLL allows
+us to speed up or slow down the clock.
+
+33
+00:03:31,165 --> 00:03:34,660
+
+34
+00:03:34,660 --> 00:03:39,610
+Now, one would wonder, why would I want
+to speed up or slow down the clock?
+
+35
+00:03:39,610 --> 00:03:48,680
+Well, speeding up is going
+to make the clock run faster,
+
+36
+00:03:48,680 --> 00:03:53,560
+which means that you
+are doing more work.
+
+37
+00:03:53,560 --> 00:03:57,760
+But at the same time, you're
+expending more energy rapidly.
+
+38
+00:03:57,760 --> 00:04:02,730
+When you slow down, you conserve energy.
+
+39
+00:04:02,730 --> 00:04:06,890
+And particularly, if you're
+trying to operate in a system
+
+40
+00:04:06,890 --> 00:04:10,920
+where you want long battery life,
+you want to slow down the clock,
+
+41
+00:04:10,920 --> 00:04:15,320
+particularly if the work that you're
+doing doesn't require the high speed.
+
+42
+00:04:15,320 --> 00:04:35,210
+So it's a trade off between
+the speed and power.
+
+43
+00:04:35,210 --> 00:04:38,720
+So the PLL allows you
+to choose where you
+
+44
+00:04:38,720 --> 00:04:43,020
+want to lie between this trade
+off between the speed and power.
+
+45
+00:04:43,020 --> 00:04:50,330
+So let's take a look at these two
+fields that we use to configure the PLL.
+
+46
+00:04:50,330 --> 00:04:55,540
+The two fields, as we mentioned,
+are-- X, T, A, L-- the XTAL field
+
+47
+00:04:55,540 --> 00:05:01,772
+and the SYSDIV2 field.
+
+48
+00:05:01,772 --> 00:05:08,435
+Now, the two device registers of
+PLL where these fields are present
+
+49
+00:05:08,435 --> 00:05:18,520
+are called SYSCTL_RCC device
+register, and another register,
+
+50
+00:05:18,520 --> 00:05:29,880
+which is the SYSCTL_RCC2 register.
+
+51
+00:05:29,880 --> 00:05:38,110
+So the XTAL field is bit 10 through 6.
+
+52
+00:05:38,110 --> 00:05:41,680
+It's a five bit field, the XTAL.
+
+53
+00:05:41,680 --> 00:05:49,975
+And the SYSDIV is from bit 28 through
+22, which makes it a 7 bit field.
+
+54
+00:05:49,975 --> 00:05:56,250
+
+55
+00:05:56,250 --> 00:06:02,602
+Right there-- this is 5
+bit, and that is 7 bit.
+
+56
+00:06:02,602 --> 00:06:11,300
+The XTAL bit field is going to be
+a 5 bit pattern, which is a 10101.
+
+57
+00:06:11,300 --> 00:06:13,040
+So that's what we're gonna write there.
+
+58
+00:06:13,040 --> 00:06:18,780
+And what this tells the system
+is it tells the microcontroller
+
+59
+00:06:18,780 --> 00:06:23,830
+that the external clock
+is a 16 megahertz clock.
+
+60
+00:06:23,830 --> 00:06:30,000
+Now, because the board you will
+be getting has a 16 megahertz
+
+61
+00:06:30,000 --> 00:06:34,350
+external crystal, this
+is a fixed number.
+
+62
+00:06:34,350 --> 00:06:36,150
+You will not change this.
+
+63
+00:06:36,150 --> 00:06:38,520
+If you had to change
+it-- for example, if you
+
+64
+00:06:38,520 --> 00:06:46,030
+had a different board, which had
+a 24 megahertz external crystal--
+
+65
+00:06:46,030 --> 00:06:56,730
+then you would write a
+pattern which is a 11010.
+
+66
+00:06:56,730 --> 00:06:58,550
+So that's the only difference.
+
+67
+00:06:58,550 --> 00:07:06,750
+Now, for this class, we expect you
+to be using the field to be 10101.
+
+68
+00:07:06,750 --> 00:07:11,090
+The second field is
+the SYSDIV field, which
+
+69
+00:07:11,090 --> 00:07:15,500
+can take values between 4 and 127.
+
+70
+00:07:15,500 --> 00:07:18,700
+And let's just represent that by n.
+
+71
+00:07:18,700 --> 00:07:26,300
+And this n bit number is used to
+configure the PLL at different speeds
+
+72
+00:07:26,300 --> 00:07:30,490
+that you want the system bus to run at.
+
+73
+00:07:30,490 --> 00:07:37,170
+So if n is set to some value--
+let's say n is set to 4--.
+
+74
+00:07:37,170 --> 00:07:43,480
+Then the clock is going to be 400
+megahertz divided by n plus 1,
+
+75
+00:07:43,480 --> 00:07:49,600
+where n is 4, which is going to
+be 400 divided by 4 plus 1, which
+
+76
+00:07:49,600 --> 00:07:53,992
+is a 5, which is 80 megahertz.
+
+77
+00:07:53,992 --> 00:07:55,950
+JONATHAN VALVANO: What
+if I want to run slower?
+
+78
+00:07:55,950 --> 00:07:58,450
+RAMESH YARRABALLI: So the
+slower you want to run,
+
+79
+00:07:58,450 --> 00:08:01,070
+the higher the n value is going to be.
+
+80
+00:08:01,070 --> 00:08:07,840
+So you can appropriately choose
+that to get to the desired speed.
+
+81
+00:08:07,840 --> 00:08:13,850
+So in essence, then, our
+PLL has given us two things.
+
+82
+00:08:13,850 --> 00:08:17,930
+One, using the PLL, the
+first thing that we are doing
+
+83
+00:08:17,930 --> 00:08:30,670
+is using a higher precision
+external crystal--
+
+84
+00:08:30,670 --> 00:08:32,669
+JONATHAN VALVANO: That
+means it's more accurate?
+
+85
+00:08:32,669 --> 00:08:35,360
+RAMESH YARRABALLI: --which means is
+very accurate and it's very stable.
+
+86
+00:08:35,360 --> 00:08:36,740
+JONATHAN VALVANO: Oh, good.
+
+87
+00:08:36,740 --> 00:08:39,281
+RAMESH YARRABALLI: And the second
+thing that we have achieved
+
+88
+00:08:39,281 --> 00:08:53,170
+is the configurability or the
+flexibility to choose our speed.
+
+89
+00:08:53,170 --> 00:08:55,520
+JONATHAN VALVANO: Why would
+we want to choose the speed?
+
+90
+00:08:55,520 --> 00:08:58,910
+RAMESH YARRABALLI: So
+the speed is chosen
+
+91
+00:08:58,910 --> 00:09:01,400
+according to the trade
+off we talked about.
+
+92
+00:09:01,400 --> 00:09:09,770
+The trade off is between
+being power and speed.
+
+93
+00:09:09,770 --> 00:09:15,920
+So if I want to operate at low
+power, maybe I choose a low speed.
+
+94
+00:09:15,920 --> 00:09:21,120
+If I want to operate at
+a higher speed, then I'm
+
+95
+00:09:21,120 --> 00:09:22,940
+going to be draining the battery faster.
+
+96
+00:09:22,940 --> 00:09:25,640
+So I'm gonna be consuming
+the power faster.
+
+97
+00:09:25,640 --> 00:09:29,620
+So by appropriately choosing
+that operating point,
+
+98
+00:09:29,620 --> 00:09:35,190
+you can run the system in
+the most efficient way.

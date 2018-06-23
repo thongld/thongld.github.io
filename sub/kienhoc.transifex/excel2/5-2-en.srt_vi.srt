@@ -1,0 +1,383 @@
+1
+00:00:00,099 --> 00:00:04,459
+DANGTHANH 05/09 https://youtu.be/iAiftEAPM3w
+Xin chào mọi người. Trước khi chúng ta tìm hiểm chủ đề này,
+hãy để tôi giới thiệu một chút về bản thân.
+
+2
+00:00:04,460 --> 00:00:09,020
+Tên tôi là Bas Jansen. Tôi đang làm nghiên cứu sinh 
+tại Đại học kỹ thuật Delft.
+
+3
+00:00:09,360 --> 00:00:12,720
+Tôi là một thành viên của phòng thí nghiệm Bảng tính,
+làm việc cùng với Felienne.
+
+4
+00:00:13,760 --> 00:00:19,780
+Bạn có thể thấy địa chỉ mail và Twitter của tôi trên slide,
+như vậy bạn có thể liên lạc với tôi.
+
+5
+00:00:20,660 --> 00:00:23,840
+Giờ tôi muốn bắt đầu chủ đề này.
+
+6
+00:00:25,480 --> 00:00:27,980
+Ta hiện sống trong một kỷ nguyên dữ liệu khổng lồ.
+
+7
+00:00:28,710 --> 00:00:34,270
+Ngày hôm qua, tôi đã đọc một trích dẫn hay:
+"Hàng triệu đô la được chi ra hàng năm trong việc thu thập ...
+
+8
+00:00:34,270 --> 00:00:39,110
+... thông tin, với một hy vọng ngây thơ rằng
+thông tin sẽ tự động được hiệu chỉnh ...
+
+9
+00:00:39,129 --> 00:00:44,089
+... ứng với điều kiện nghiên cứu. Mặc dù dữ liệu chính xác 
+và các sự thực có giá trị, khi nó ...
+
+10
+00:00:44,089 --> 00:00:50,649
+... tạo ra kết quả thì các thức trình bày kết quả thường
+quan trọng hơn chính sự thực."
+
+11
+00:00:51,620 --> 00:00:54,559
+Bạn có thể nói 'OK, đó là câu trích dẫn hay'.
+
+12
+00:00:54,559 --> 00:00:57,499
+Nhưng điều thực sự làm tôi ngạc nhiên
+là ngày của câu trích!
+
+13
+00:00:58,060 --> 00:01:03,900
+Câu trích dẫn này đã hơn 100 tuổi.
+Như vậy, sự thực là không có gì mới ở đây.
+
+14
+00:01:05,040 --> 00:01:10,720
+Thứ hai, cái mà tôi nghĩ rằng rất quan trọng,
+và tôi phải học một các chăm chỉ,...
+
+15
+00:01:11,400 --> 00:01:17,659
+là khi ta có kết quả thì cách trình bày thường lại 
+quan trọng hơn
+
+16
+00:01:17,659 --> 00:01:21,539
+chính sự thực.
+Như vậy nó không chỉ là các con số.
+
+17
+00:01:21,720 --> 00:01:27,039
+nó quan trọng ở cách bạn trình bày thông tin.
+Mặc dù bạn đã học ở trường cách để viết...
+
+18
+00:01:27,039 --> 00:01:34,170
+một bản báo cáo và cách để thuyết trình,
+rất ít nỗi lực được dùng cho việc hiển thị và minh họa
+
+19
+00:01:34,170 --> 00:01:37,760
+các thông tin định lượng.
+Và đó là chủ đề cùa ngày hôm nay.
+
+20
+00:01:37,760 --> 00:01:38,750
+Hãy cùng xem nào.
+
+21
+00:01:40,800 --> 00:01:45,540
+Một trong những người tiên phong,
+và Felienne cũng đã đề cập đến ở tuần trước, là Edward Tufte.
+
+22
+00:01:45,540 --> 00:01:51,360
+Ông ấy đã viết một quyển sách hay mà tôi khuyến nghị
+để đọc: 'The Visual Display of Quantitative Information'.
+
+23
+00:01:53,380 --> 00:02:00,040
+Ông ấy đặt ra một khái niệm và một định nghĩa.
+Đó là định nghĩa về tỉ lệ dữ liệu - mực.
+
+24
+00:02:01,460 --> 00:02:08,760
+Tỉ lệ dữ liệu - mực nghĩa là lượng dữ liệu - mực bạn sử dụng 
+được tính tỉ lệ trên tổng số
+
+25
+00:02:08,770 --> 00:02:14,570
+mực mà bạn dùng để in hình đồ họa. 
+Có lẽ cách tốt hơn để thể hiện điều này
+
+26
+00:02:14,570 --> 00:02:21,640
+là suy nghĩ như sau: nó là phần trừ
+đi tỉ lệ của biểu đồ mà có thể xóa đi
+
+27
+00:02:21,640 --> 00:02:23,600
+mà không làm mất đi thông tin dữ liệu.
+
+28
+00:02:25,100 --> 00:02:27,340
+Hãy để tôi minh họa với một ví dụ nhỏ.
+
+29
+00:02:27,700 --> 00:02:33,760
+Ta có một bảng ở đây, và bạn thấy rằng
+có một lưới chằng chịt quanh mỗi ô.
+
+30
+00:02:34,620 --> 00:02:40,860
+Câu hỏi ở đây là: mạng lưới có cung cấp cho chúng ta
+bất kỳ thông tin nào trong bảng?
+
+31
+00:02:41,880 --> 00:02:44,180
+Nếu không phải thế, chúng ta nên giảm bớt.
+
+32
+00:02:44,180 --> 00:02:52,300
+Ta có thể làm điều đó bằng cách làm cho lưới bớt dày đi.
+Nhưng nó thậm chí còn tốt hơn nếu bỏ lưới đi.
+
+33
+00:02:53,740 --> 00:02:57,660
+Mỗi dòng mà chúng ta thấy bây giờ có một chức năng.
+
+34
+00:02:57,660 --> 00:03:04,080
+Ta thấy dòng bên dưới các quốc gia.
+Điều đó cho ta biết rằng ba quốc gia phụ thuộc lẫn nhau.
+
+35
+00:03:04,660 --> 00:03:08,460
+Và ở dưới ta thấy một dòng dưới những người bán hàng.
+
+36
+00:03:08,460 --> 00:03:12,040
+Nó chia bảng ra thành một phần đầu trang và một phần thân.
+
+37
+00:03:12,500 --> 00:03:16,880
+Và tại phần cuối trang, ta có một mục Tổng cộng
+và ở đó ta cũng có một đường để chia nó ra.
+
+38
+00:03:16,880 --> 00:03:25,520
+Và bây giờ các đường kẻ không chỉ một nét vẽ trên màn hình,
+nhưng là những thông tin vô cùng hữu dụng.
+
+39
+00:03:25,520 --> 00:03:32,840
+giúp chúng ta giải thích về bảng.
+Như vậy tỷ lệ thông tin-mực có nghĩa là: Làm nhiều cần ít.
+
+40
+00:03:32,840 --> 00:03:38,040
+Sử dụng ít điểm nhất có thể để
+truyền đạt thông điệp đến khán giả.
+
+41
+00:03:41,280 --> 00:03:44,900
+Vậy, ta cần làm gì khi ta cần mô tả thông tin?
+
+42
+00:03:47,200 --> 00:03:53,480
+Những gì ta thấy Felienne làm trong phần giới thiệu
+là ngay lập tức cô ấy đi từ thông tin
+
+43
+00:03:53,480 --> 00:03:59,560
+đến định dạng thông điệp.
+Cô đã chọn thông tin và ấn vào tạo đồ thị.
+
+44
+00:04:00,320 --> 00:04:02,780
+Nhưng thực ra cô bỏ qua một số bước khi đó.
+
+45
+00:04:02,790 --> 00:04:05,110
+Những bước đó là những gì ta sẽ chú trọng trong hôm nay.
+
+46
+00:04:06,400 --> 00:04:10,920
+Đầu tiên, nếu bạn có thông tin
+và nếu bạn có kế hoạch truyền tải một số thứ về thông tin
+
+47
+00:04:10,920 --> 00:04:14,500
+thì bạn thực sự cần một mục tiêu,
+nếu không bạn sẽ không làm điều đó.
+
+48
+00:04:15,280 --> 00:04:18,560
+Bởi thế, phải chắc chắn là với bản thân là mục tiêu là gì.
+
+49
+00:04:18,560 --> 00:04:23,160
+Bạn muốn kể điều gì về thông tin?
+Và câu hỏi thứ hai là:
+
+50
+00:04:24,100 --> 00:04:27,600
+Ai là khán giả?
+Khán giả như thế nào?
+
+51
+00:04:28,060 --> 00:04:32,820
+Có phải họ là những người rất chi tiết
+muốn có đến sáu chữ số đằng sau dấu chấm thập phân?
+
+52
+00:04:33,060 --> 00:04:37,520
+Hoặc họ là những người rất rộng rãi có thể nói:
+"À, chỉ cần một đồ thị"?
+
+53
+00:04:38,400 --> 00:04:42,260
+Và nếu tôi biết mục tiêu là gì,
+thông điệp của tôi nên là gì?
+
+54
+00:04:42,260 --> 00:04:46,880
+Bạn muốn kể gì?
+Nếu nó rõ ràng với tôi, tôi có thể bắt đầu ...
+
+55
+00:04:46,880 --> 00:04:49,440
+suy nghĩ về việc tôi sẽ định dạng thông điệp như thế nào.
+
+56
+00:04:52,580 --> 00:04:57,660
+Khi bạn mường tượng dữ liệu và khi bạn
+mường tượng thông tin về số lượng ...
+
+57
+00:04:57,660 --> 00:05:00,300
+thực ra ta chỉ có hai công cụ mà ta có thể dùng.
+
+58
+00:05:00,300 --> 00:05:02,380
+Đó là bảng và đồ thị.
+
+59
+00:05:03,260 --> 00:05:06,380
+Giờ, tôi sẽ giải thích
+sự khác nhau cho bạn
+
+60
+00:05:07,220 --> 00:05:10,940
+tôi có một câu hỏi nhỏ chọ bạn
+là nghĩ một chút về ...
+
+61
+00:05:12,900 --> 00:05:15,920
+khi nào bạn dùng bảng 
+và khi nào bạn dùng đồ thị.
+
+62
+00:05:19,760 --> 00:05:26,060
+Với các bảng, bạn thường dùng chúng 
+để tìm các thông tin đơn.
+
+63
+00:05:26,260 --> 00:05:31,800
+Hãy nghĩ về danh bạ điện thoại,
+đó là một bảng rất lớn và bạn sử dụng để tìm kiếm dữ liệu.
+
+64
+00:05:32,000 --> 00:05:33,520
+Bảng rất tuyệt cho điều này.
+
+65
+00:05:35,500 --> 00:05:37,500
+Và một điều khác rất tiện lợi với một bảng là
+
+66
+00:05:37,510 --> 00:05:42,310
+bạn có thể kiểm tra từng giá trị đơn 
+và so sánh chúng với nhau.
+
+67
+00:05:44,420 --> 00:05:48,400
+Bảng rất tốt
+nếu bạn cần những giá trị chính xác.
+
+68
+00:05:52,320 --> 00:05:59,220
+Nào, tưởng tượng là bạn có một dạng chuỗi dữ kiện,
+một số là kilogam và một số là tốc độ.
+
+69
+00:05:59,840 --> 00:06:02,440
+Tưởng tượng cách để hiện thị chúng trên một đồ thị.
+
+70
+00:06:02,440 --> 00:06:06,910
+Nó rất khó bởi vì bạn có
+hai đơn vị đo lường khác nhau nên bạn không thể
+
+71
+00:06:06,910 --> 00:06:14,780
+vẽ trên cùng một trục, như vậy bạn cần nhiều hơn một trục,
+và nó rất khó để diễn giải đồ thị.
+
+72
+00:06:14,780 --> 00:06:17,720
+Như vậy một bảng có thể dễ hiểu hơn.
+
+73
+00:06:24,360 --> 00:06:29,940
+Cuối cùng, bạn có một chuỗi các dữ liệu trên mức độ tổng hợp,
+như là các tổng phụ,
+
+74
+00:06:29,940 --> 00:06:35,360
+và bạn có các thông tin chi tiết, 
+nó gần như không thể để thể hiện trên một đồ thị,
+
+75
+00:06:35,370 --> 00:06:38,290
+nhưng rất dể để thực hiện với một bảng.
+Đó là cách bạn dùng bảng.
+
+76
+00:06:39,320 --> 00:06:46,080
+Khi nào thì bạn dùng đồ thị? Bạn dùng đồ thị nếu
+thông điệp bạn muốn mang tới cho khán giả ...
+
+77
+00:06:46,080 --> 00:06:48,380
+là về hình dạng của thông tin mà bạn có.
+
+78
+00:06:48,600 --> 00:06:53,500
+có một số dạng mẫu mà bạn muốn biểu thị 
+hoặc một số khuynh hướng mà bạn muốn nhấn mạnh?
+
+79
+00:06:53,500 --> 00:06:56,220
+Đó là nơi mà đồ thị trở lên hữu dụng.
+
+80
+00:06:57,740 --> 00:07:03,720
+Một lựa chọn khác là khi bạn muốn thể hiện
+mối liên quan giữa hai chuỗi dữ liệu.
+
+81
+00:07:04,260 --> 00:07:09,620
+Các biến có liên quan với nhau hay không? 
+Bạn có thể dùng đồ thị cho điều đó.
+

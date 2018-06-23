@@ -1,0 +1,388 @@
+1
+00:00:02,169 --> 00:00:05,500
+Trong phần này, ta sẽ học sử dụng 
+các thí nghiệm thực địa trên quy mô lớn
+
+2
+00:00:05,500 --> 00:00:10,160
+bằng cách nhìn vào ví dụ nghiên cứu cụ thể 
+
+3
+00:00:10,160 --> 00:00:13,950
+của Marianne Bertrand và các đồng nghiệp
+ với vấn đề mấu chốt mà họ tìm câu trả lời
+
+4
+00:00:13,950 --> 00:00:17,760
+đó là, giá trị của các nội dung quảng cáo là gì?
+
+5
+00:00:17,760 --> 00:00:22,400
+Trước khi đi vào thí nghiệm thực, hãy nghĩ 
+
+6
+00:00:22,400 --> 00:00:26,130
+về những thử nghiệm quy mô lớn
+một cách tổng quát hơn.
+
+7
+00:00:26,130 --> 00:00:30,470
+Không như những thí nghiệm mà ta đã làm, 
+các thử nghiệm thực địa,
+
+8
+00:00:30,470 --> 00:00:35,269
+hay thực nghiệm đối chứng ngẫu nhiên, RCT
+(Randomized Controlled Trials)
+
+9
+00:00:35,269 --> 00:00:38,940
+dùng rất nhiều các yếu tố, 
+mỗi yếu tố với rất nhiều cấp độ.
+
+10
+00:00:38,940 --> 00:00:41,960
+Việc này đòi hỏi phải phân tích rất nhiều 
+các điều kiện khác nhau.
+
+11
+00:00:41,960 --> 00:00:46,079
+Thay vì dùng ANOVA, phân tích hồi quy trở thành
+
+12
+00:00:46,079 --> 00:00:50,819
+phương pháp phân tích dữ liệu đơn giản nhất.
+
+13
+00:00:50,819 --> 00:00:55,249
+Bây giờ hãy xem ví dụ cụ thể trong dự án 
+
+14
+00:00:55,249 --> 00:00:56,909
+của Marianne Bertrand và đồng nghiệp.
+
+15
+00:00:56,909 --> 00:01:00,899
+Mục đích của báo cáo là kiểm tra tính hiệu quả 
+của nội dung quảng cáo
+
+16
+00:01:00,899 --> 00:01:06,030
+trong việc chấp nhận đề nghị
+ cho vay trong 1 thí nghiệm thực địa
+
+17
+00:01:06,030 --> 00:01:09,700
+và ước tính sự thay đổi nhu cầu theo nội dung quảng cáo,
+so sánh nó với 
+
+18
+00:01:09,700 --> 00:01:14,150
+sự co giãn giá cả và sự thay đổi nhu cầu tới hạn.
+
+19
+00:01:14,150 --> 00:01:17,780
+Về lý thuyết, các tác giả đang cố gắng 
+thu hút sự quan tâm
+
+20
+00:01:17,780 --> 00:01:23,840
+đối với khoản cho vay mà trong đó họ kiểm soát
+
+21
+00:01:23,840 --> 00:01:28,229
+các đặc tính của khoản vay cũng như
+nội dung quảng cáo.
+
+22
+00:01:28,229 --> 00:01:31,189
+Họ cố gắng lý giải  xem việc thay đổi 
+nội dung quảng cáo
+
+23
+00:01:31,189 --> 00:01:36,130
+ảnh hưởng đến tỷ số tiếp nhận thế nào.
+
+24
+00:01:36,130 --> 00:01:40,189
+Đây là thí nghiệm thực địa được thực hiện 
+theo bản chất của 
+
+25
+00:01:40,189 --> 00:01:42,960
+thử nghiệm đối chứng ngẫu nhiên.
+
+26
+00:01:42,960 --> 00:01:48,710
+Các quảng cáo thay đổi theo 10 yếu tố,
+
+27
+00:01:48,710 --> 00:01:50,710
+cả các yếu tố về quảng cáo 
+và đặc tính khoản vay.
+
+28
+00:01:50,710 --> 00:01:54,109
+Mỗi yếu tố có 2 hoặc 3 cấp độ.
+
+29
+00:01:54,109 --> 00:01:58,470
+Ví dụ, yếu tố được dùng là hình ảnh
+
+30
+00:01:58,470 --> 00:02:00,799
+có 3 cấp độ.
+
+31
+00:02:00,799 --> 00:02:05,240
+Trong tình huống thứ nhất, không có bức ảnh nào
+ trên quảng cáo.
+
+32
+00:02:05,240 --> 00:02:08,649
+Trường hợp thứ hai, có 1 bức ảnh người phụ nữ.
+
+33
+00:02:08,649 --> 00:02:11,890
+Thứ ba là bức ảnh người đàn ông
+
+34
+00:02:11,890 --> 00:02:17,080
+Yếu tố thứ hai là số liệu ví dụ về khoản vay
+
+35
+00:02:17,080 --> 00:02:18,720
+có trên quảng cáo.
+
+36
+00:02:18,720 --> 00:02:21,510
+Một vài quảng cáo chỉ có 1 ví dụ.
+
+37
+00:02:21,510 --> 00:02:22,959
+Số khác có 4 ví dụ.
+
+38
+00:02:22,959 --> 00:02:25,510
+Đồng thời, thông tin về lãi suất 
+
+39
+00:02:25,510 --> 00:02:27,459
+có thể có hoặc không.
+
+40
+00:02:27,459 --> 00:02:33,360
+Gợi ý mục đích sử dụng khoản vay có thể cụ thể 
+hoặc không.
+
+41
+00:02:33,360 --> 00:02:38,990
+Có thể có so sánh với tỷ số bên ngoài hoặc không
+
+42
+00:02:38,990 --> 00:02:39,990
+và tương tự thế.
+
+43
+00:02:39,990 --> 00:02:47,150
+Tổng cộng có 10 yếu tố, mỗi yếu tố có 2 
+hoặc 3 cấp độ.
+
+44
+00:02:47,150 --> 00:02:51,379
+Bạn có thể thấy rằng tổng số các điều kiện
+
+45
+00:02:51,379 --> 00:02:53,940
+là cực kỳ lớn.
+
+46
+00:02:53,940 --> 00:03:00,819
+những người tham gia vào nghiên cứu
+ là 53,194 khách hàng cũ của 1 cơ sở cho vay
+
+47
+00:03:00,819 --> 00:03:05,569
+ở Nam Phi, cơ sở này đã nhận được mail
+ trực tiếp từ những người buôn bán.
+
+48
+00:03:05,569 --> 00:03:08,560
+Tất nhiên, như ta đã nói, sự quan tâm đó thay đổi
+
+49
+00:03:08,560 --> 00:03:12,880
+dựa trên các yếu tố và cấp độ của chúng.
+
+50
+00:03:12,880 --> 00:03:17,730
+Các nhà nghiên cứu dùng hồi quy probit 
+để tìm ra ảnh hưởng
+
+51
+00:03:17,730 --> 00:03:23,960
+của mỗi yếu tố trong việc tiếp nhận,
+ hoặc khả năng khoản vay
+
+52
+00:03:23,960 --> 00:03:27,849
+ thực sự được chấp nhận.
+
+53
+00:03:27,849 --> 00:03:29,560
+Đây là kết quả.
+
+54
+00:03:29,560 --> 00:03:33,260
+Bảng này là 1 tập hợp con của 
+1 bảng hoàn chỉnh
+
+55
+00:03:33,260 --> 00:03:34,920
+in trong báo cáo.
+
+56
+00:03:34,920 --> 00:03:39,980
+Nó chỉ đưa ra những ảnh hưởng có ý nghĩa 
+thống kê, như bạn thấy,
+
+57
+00:03:39,980 --> 00:03:42,099
+được đánh dấu sao.
+
+58
+00:03:42,099 --> 00:03:48,469
+Hãy cùng xem mẫu probit đầy đủ
+
+59
+00:03:48,469 --> 00:03:51,230
+kết quả của toàn bộ mẫu kết hợp với nhau.
+
+60
+00:03:51,230 --> 00:03:55,879
+Ta thấy có 4 biến số quan trọng.
+
+61
+00:03:55,879 --> 00:04:01,020
+Đầu tiên là tỷ lệ lãi suất thực tế.
+
+62
+00:04:01,020 --> 00:04:04,340
+Hệ số cho tỷ lệ lãi suất là âm và đáng kể.
+
+63
+00:04:04,340 --> 00:04:08,730
+Nó là hệ số nghịch biến vì khi tỷ lệ tăng lên,
+
+64
+00:04:08,730 --> 00:04:11,549
+khả năng chấp nhận khoản vay thấp đi.
+
+65
+00:04:11,549 --> 00:04:14,489
+Điều này luôn đúng với lý thuyết kinh tế,
+
+66
+00:04:14,489 --> 00:04:18,630
+khi quá trình quyết định là lý trí,
+ nghĩa là khi phải trả lãi cao hơn,
+
+67
+00:04:18,630 --> 00:04:20,580
+bạn sẽ ít muốn vay hơn.
+
+68
+00:04:20,580 --> 00:04:26,600
+Biến số thứ 2 đáng kể và đáng ngạc nhiên
+ theo lý thuyết kinh tế thuần túy
+
+69
+00:04:26,600 --> 00:04:31,810
+là sự xuất hiện bức ảnh người phụ nữ.
+
+70
+00:04:31,810 --> 00:04:36,400
+Đơn giản là thêm ảnh người phụ nữ vào quảng cáo 
+
+71
+00:04:36,400 --> 00:04:38,390
+lại làm tăng khả năng tiếp nhận khoản vay.
+
+72
+00:04:38,390 --> 00:04:44,930
+Tương tự, cung cấp thêm ví dụ của khoản vay 
+cũng làm tăng khả năng
+
+73
+00:04:44,930 --> 00:04:46,640
+tiếp nhận khoản vay.
+
+74
+00:04:46,640 --> 00:04:53,250
+Cuối cùng, không đề cập đến
+ việc sử dụng cụ thể khoản vay
+
+75
+00:04:53,250 --> 00:04:56,720
+cũng làm tăng khả năng đó.
+
+76
+00:04:56,720 --> 00:05:01,280
+Vậy trong khi yếu tố đầu tiên trong 4 yếu tố
+ được gọi là lý do lý trí
+
+77
+00:05:01,280 --> 00:05:06,001
+khi ảnh hưởng đến tỷ số tiếp nhận 
+thì 3 yếu tố còn lại
+
+78
+00:05:06,001 --> 00:05:10,250
+một phần của nội dung quảng cáo 
+cũng đóng vai trò quan trọng
+
+79
+00:05:10,250 --> 00:05:13,280
+đối với tỷ số tiếp nhận.
+
+80
+00:05:13,280 --> 00:05:20,010
+Tất cả các yếu tố trên có ảnh hưởng 
+đối với người vay là nam 
+
+81
+00:05:20,010 --> 00:05:27,940
+trong khi chỉ có tỷ lệ lãi suất có ảnh hưởng 
+đối với người vay là nữ.
+
+82
+00:05:27,940 --> 00:05:29,070
+Kết luận là gì?
+
+83
+00:05:29,070 --> 00:05:33,430
+Thông qua 8 đặc tính quảng cáo 
+đã được kiểm định,
+
+84
+00:05:33,430 --> 00:05:37,600
+3 biến thiên mà ta đã thấy ở đây
+ có tầm ảnh hưởng quan trọng
+
+85
+00:05:37,600 --> 00:05:39,000
+đối với việc đăng ký vay vốn.
+
+86
+00:05:39,000 --> 00:05:42,931
+Thêm ảnh 1 người phụ nữ quyến rũ, 1 ví dụ vay vốn,
+
+87
+00:05:42,931 --> 00:05:47,030
+và không nói đến việc sử dụng cụ thể khoản vay
+ sẽ làm tăng khả năng
+
+88
+00:05:47,030 --> 00:05:50,010
+vay vốn trước phút chót.
+

@@ -1,0 +1,417 @@
+191
+00:08:18,010 --> 00:08:19,720
+wermarter
+Ta gọi đây là
+quyết định một chiều,
+
+192
+00:08:19,720 --> 00:08:20,910
+khi bạn có một câu hỏi
+
+193
+00:08:20,910 --> 00:08:22,368
+và một số câu lệnh để thực hiện
+
+194
+00:08:22,368 --> 00:08:24,040
+nếu là câu trả lời là đúng.
+
+195
+00:08:24,040 --> 00:08:26,160
+Hoặc nếu sai thì
+
+196
+00:08:26,160 --> 00:08:30,070
+bạn bỏ qua toàn bộ.
+
+197
+00:08:30,070 --> 00:08:34,340
+Python là một trong
+một vài ngôn ngữ dùng
+
+198
+00:08:34,340 --> 00:08:39,700
+cú pháp lùi đầu dòng
+với ý nghĩa quan trọng.
+
+199
+00:08:39,700 --> 00:08:43,289
+Ta lùi đầu dòng những đoạn code
+đối với "for", "if" và
+
+200
+00:08:43,289 --> 00:08:44,770
+một lát nữa ta sẽ
+tìm hiểu về vòng lặp.
+
+201
+00:08:44,770 --> 00:08:48,440
+Mục đích của lùi đầu dòng
+là làm đoạn code trực quan hơn.
+
+202
+00:08:48,440 --> 00:08:51,130
+Dễ đọc hơn.
+
+203
+00:08:51,130 --> 00:08:53,040
+Bạn sẽ thấy được
+cái này là một phần của cái kia
+
+204
+00:08:53,040 --> 00:08:54,830
+Do đó, lùi đầu dòng
+rất hữu dụng.
+
+205
+00:08:54,830 --> 00:08:56,760
+Ta dùng nó để sắp xếp các phần
+
+206
+00:08:56,760 --> 00:08:58,340
+nhằm nhận thức tốt hơn
+
+207
+00:08:58,340 --> 00:09:02,636
+về những gì diễn ra
+bên trong chương trình.
+
+208
+00:09:02,636 --> 00:09:04,510
+Điều này rất quan trọng
+khi lập trình Python.
+
+209
+00:09:04,510 --> 00:09:07,390
+
+210
+00:09:07,390 --> 00:09:09,130
+Bạn phải xác định rằng lùi đầu dòng
+
+211
+00:09:09,130 --> 00:09:10,910
+là có chủ ý,
+
+212
+00:09:10,910 --> 00:09:13,280
+và lùi ra cũng có chủ ý.
+
+213
+00:09:13,280 --> 00:09:15,390
+Ta lùi đầu dòng
+
+214
+00:09:15,390 --> 00:09:17,764
+sau câu lệnh điều kiện if
+
+215
+00:09:17,764 --> 00:09:18,430
+hoặc các câu lệnh khác kết thúc
+bằng dấu hai chấm.
+
+216
+00:09:18,430 --> 00:09:21,670
+Lùi đầu dòng vào và sau đó
+
+217
+00:09:21,670 --> 00:09:22,760
+lại trở ra.
+
+218
+00:09:22,760 --> 00:09:26,460
+Duy trì lùi đầu dòng
+cho các đoạn code tuần tự.
+
+219
+00:09:26,460 --> 00:09:28,650
+Những dòng trống
+và ghi chú thì bỏ qua.
+
+220
+00:09:28,650 --> 00:09:31,789
+Khi ta có một dòng trống
+nó sẽ không ảnh hưởng gì đến
+
+221
+00:09:31,789 --> 00:09:32,580
+lùi đầu dòng.
+
+222
+00:09:32,580 --> 00:09:34,430
+Với các chú thích cũng vậy.
+
+223
+00:09:34,430 --> 00:09:38,730
+Ở đây tôi muốn tạm dừng
+
+224
+00:09:38,730 --> 00:09:41,403
+để cho các bạn một lời khuyên.
+
+225
+00:09:41,403 --> 00:09:44,140
+
+226
+00:09:44,140 --> 00:09:49,440
+Trong các trình soạn thảo bạn đang dùng như
+Notepad++,
+
+227
+00:09:49,440 --> 00:09:54,240
+TextEdit hoặc TextWrangler,
+nút TAB trên bàn phím có thể
+
+228
+00:09:54,240 --> 00:09:56,600
+có chức năng lùi dòng vào 4 khoảng cách.
+
+229
+00:09:56,600 --> 00:09:58,670
+Hoặc, bạn có thể thụt vào 4 ô
+
+230
+00:09:58,670 --> 00:10:01,170
+bằng cách nhấn
+phím cách 4 lần
+
+231
+00:10:01,170 --> 00:10:03,520
+Python sẽ coi hai trường hợp
+trên hoàn toàn khác nhau.
+
+232
+00:10:03,520 --> 00:10:07,100
+Ở các trình soạn thảo ta đều có thể
+
+233
+00:10:07,100 --> 00:10:11,180
+tùy chỉnh để nút TAB không tạo tab trong văn bản
+
+234
+00:10:11,180 --> 00:10:13,720
+mà lùi vào 4 khoảng cách.
+
+235
+00:10:13,720 --> 00:10:16,864
+Như thế khi bạn nhấn TAB
+hay 4 lần phím cách
+
+236
+00:10:16,864 --> 00:10:19,280
+thì ít ra là kết quả sẽ như nhau
+
+237
+00:10:19,280 --> 00:10:22,730
+và không làm Python khó hiểu.
+
+238
+00:10:22,730 --> 00:10:25,580
+Nếu không,
+nó sẽ hiện lỗi lùi đầu dòng.
+
+239
+00:10:25,580 --> 00:10:29,190
+Lỗi lùi đầu dòng là
+lỗi cú pháp trong Python
+
+240
+00:10:29,190 --> 00:10:31,460
+Nó khó chịu ở chỗ
+
+241
+00:10:31,460 --> 00:10:33,140
+nhìn trong trình soạn thảo thì không có vấn đề gì.
+
+242
+00:10:33,140 --> 00:10:36,020
+Ta có câu IF, khối lệnh lùi vào
+rồi lại trở ra.
+
+243
+00:10:36,020 --> 00:10:38,810
+Nhưng thực tế, có cái lùi là 4 lần cách, có cái lại là tab.
+
+244
+00:10:38,810 --> 00:10:40,530
+Khi đó Python sẽ kêu ca với bạn.
+
+245
+00:10:40,530 --> 00:10:42,260
+Python mà cứ liên tục kêu ca
+
+246
+00:10:42,260 --> 00:10:45,090
+thì khó chịu lắm.
+
+247
+00:10:45,090 --> 00:10:48,630
+Vì vậy, bạn vào trình soạn thảo của mình
+
+248
+00:10:48,630 --> 00:10:53,430
+vào tuỳ chỉnh, Properties hoặc Setting
+
+249
+00:10:53,430 --> 00:10:58,770
+Có thể trình bạn đang dùng sẽ khác,
+
+250
+00:10:58,770 --> 00:11:03,300
+nhưng đây là chỗ chỉnh
+Auto-expand Tabs (tự động thay thế TAB).
+
+251
+00:11:03,300 --> 00:11:05,850
+Ở đây là
+TextWrangler của Mac.
+
+252
+00:11:05,850 --> 00:11:09,620
+Và Notepad++ là 
+"Replace Tabs with Spaces" (thay tab bằng khoảng cách)
+
+253
+00:11:09,620 --> 00:11:11,270
+nằm bên dưới mục Preferences.
+
+254
+00:11:11,270 --> 00:11:12,580
+Bạn phải tìm chỗ chỉnh cái này.
+
+255
+00:11:12,580 --> 00:11:16,160
+Hãy dửng video này lại
+và chỉnh lại trình soạn thảo của bạn
+
+256
+00:11:16,160 --> 00:11:18,830
+ dễ không phải phát điên
+với nó sau này
+
+257
+00:11:18,830 --> 00:11:21,172
+OK, slide này nhìn có vẻ phức tạp
+
+258
+00:11:21,172 --> 00:11:22,630
+nhưng nó giúp bạn chú ý vào
+
+259
+00:11:22,630 --> 00:11:28,270
+vai trò của lùi đầu dòng và bỏ lùi đầu dòng.
+
+260
+00:11:28,270 --> 00:11:30,330
+Tôi sẽ đi lướt qua chỗ này.
+
+261
+00:11:30,330 --> 00:11:33,910
+Khi ta có hai dòng lệnh liền nhau
+
+262
+00:11:33,910 --> 00:11:36,290
+tức là chúng sẽ được thực hiện tuần tự.
+
+263
+00:11:36,290 --> 00:11:39,580
+Nếu ta thấy if hoặc for--
+
+264
+00:11:39,580 --> 00:11:44,470
+Hiện tại, ta chưa học đến for nhưng nó cũng tương tự if.
+
+265
+00:11:44,470 --> 00:11:46,610
+Việc đi từ dòng thứ hai
+đến dòng thứ ba
+
+266
+00:11:46,610 --> 00:11:48,360
+và lùi đầu dòng
+
+267
+00:11:48,360 --> 00:11:51,270
+là tạo nên một khối câu lệnh
+của if.
+
+268
+00:11:51,270 --> 00:11:53,430
+Và if và for
+
+269
+00:11:53,430 --> 00:11:55,980
+đều kết thúc bằng dấu hai chấm.
+
+270
+00:11:55,980 --> 00:11:58,760
+Ta có thể đưa print
+ra khỏi khối lệnh bằng cách bỏ lùi dòng
+
+271
+00:11:58,760 --> 00:12:02,440
+nhưng ta cần nó trong khối if
+nên phải duy trì lùi dòng.
+
+272
+00:12:02,440 --> 00:12:05,200
+Và khi kết thúc khối lệnh if,
+ta lại bỏ lùi dòng.
+
+273
+00:12:05,200 --> 00:12:08,390
+Vậy ta đặt print
+ngang với if
+
+274
+00:12:08,390 --> 00:12:11,090
+để đưa nó ra khỏi
+khối lệnh if.
+
+275
+00:12:11,090 --> 00:12:14,290
+Cấu trúc for này ta chưa học
+
+276
+00:12:14,290 --> 00:12:16,530
+nhưng nó cũng kết thúc bằng hai chấm.
+
+277
+00:12:16,530 --> 00:12:19,000
+Sau nó ta cũng phải
+lùi dòng vào
+
+278
+00:12:19,000 --> 00:12:21,130
+và duy trì lùi dòng.
+
+279
+00:12:21,130 --> 00:12:22,220
+Đây là một đoạn if.
+
+280
+00:12:22,220 --> 00:12:25,060
+Ở đây ta có cấu trúc if
+lồng trong cấu trúc for
+
+281
+00:12:25,060 --> 00:12:28,540
+với kết thúc là dấu hai chấm
+nên ta lùi dòng sâu hơn nữa
+
+282
+00:12:28,540 --> 00:12:29,910
+và tạo thành một khối lệnh.
+
+283
+00:12:29,910 --> 00:12:32,660
+Kết thúc khối lệnh,
+ta quay ra 4 khoảng cách (Tab)
+
+284
+00:12:32,660 --> 00:12:35,670
+để ngang với cấu trúc if ban đầu.
+
+285
+00:12:35,670 --> 00:12:38,780
+Ở cuối đoạn lùi đầu dòng này
+

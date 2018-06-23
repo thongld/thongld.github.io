@@ -1,0 +1,145 @@
+Đáp án Tuần 4 
+
+4.1 Giới thiệu Phần này không có câu hỏi. 
+
+4.2 Goal Seek 
+
+Doanh số bán bánh quế trung bình 
+
+Chúng tôi muốn bán trung bình 500 chiếc bánh quế mỗi tháng. Hãy xác định xem chúng tôi nên bán bao nhiêu chiếc vào tháng 10 để đạt được mục tiêu đó bằng việc sử dụng Goal Seek. 
+
+516 
+
+Giải thích: Đầu tiên, tạo một PivotTable liệt kê các tháng từ tháng 1 đến tháng 9 và the Count of Sales Price đã lọc loại sản phẩm là Bánh quế. Sau đó thêm ô tính cho doanh số Bánh quế tháng 10 (ô B15) và ô tính tính toán doanh số trung bình mỗi tháng (ô B16). 
+
+B16 =AVERAGE(B4:B12,B15) 
+
+Bây giờ chạy the Solver với: set cell $B$16, to value 500, by changing cell $B$15. 
+
+ 
+
+Lưu ý: Giải pháp file Excel sẽ mở trên edX phần Đáp án tuần này.  
+
+4.3 Profit Felienne hard copied the ingredient costs, nhưng có một worksheet phụ cho nó: Item Prices. 
+
+Dùng VLOOKUP tìm ra Item Costs mới, tính toán và làm tròn tất cả các đáp án đến chữ số thập phân thứ 2! 
+
+Chú ý! Làm tròn các đáp án cuối cùng theo kiểu thủ công. Đừng dùng ROUND() ở bảng tính nếu không các đáp án của bạn có thể sẽ khác đi, vì đáp án của hai câu hỏi đầu tiên là dữ liệu đầu vào cho kết quả của câu hỏi thứ ba. 
+
+Giá của một đơn vị (1gr) đường là bao nhiêu? 
+
+0.01 
+
+Giải thích: 
+
+=VLOOKUP(D2,'Item Prices'!$A:$C,3,FALSE)/VLOOKUP(D2,'Item Prices'!$A:$C,2,FALSE) 
+
+Giá của một quả chanh là bao nhiêu? 
+
+0.47 
+
+Giải thích: 
+
+=VLOOKUP(F2,'Item Prices'!$A:$C,3,FALSE)/VLOOKUP(F2,'Item Prices'!$A:$C,2,FALSE) 
+
+Lợi nhuận mỗi serving với mức giá mới và vừa filled in quantities là bao nhiêu? 
+
+1.51 
+
+Giải thích: 
+
+Tổng chi phí =SUMPRODUCT(D3:F3,D4:F4)/C3 
+
+Sales Price =VLOOKUP(A3,'Sales Prices'!A2:B13,2,FALSE) 
+
+Lợi nhuận Profit =B9-B8 
+
+ 
+
+Lưu ý: Giải pháp file Excel sẽ mở trên edX phần Đáp án tuần này.  
+
+4.4 Bảng dữ liệu 
+
+Có bao nhiêu quả chanh 
+
+Xét phương trình doanh số dự kiến là 60 + 0.2 * [số lượng chanh], nên dùng bao nhiêu chanh cho 4 servings để có được lợi nhuận cao nhất (làm tròn đến hai chữ số thập phân). 
+
+8 
+
+Giải thích: 
+
+Giá bán của nước chanh là 2.50. Chi phí cho mỗi ly nước chanh được tính bằng cách nhân khối lượng đường, nước và số lượng chanh với giá tương ứng của chúng, cộng tất cả lại, sau đó chia cho số lượng serving. 
+
+Lợi nhuận là giá bán của một ly nước chanh trừ đi chi phí làm ra một ly nước chanh. Nhiều chanh sẽ làm tăng chi phí mỗi serving, do đó làm giảm lợi nhuận trên mỗi serving. 
+
+Số lượng sale được xác định là 60+0.2 * [số lượng chanh]. Tức là tăng số lượng chanh sẽ làm tăng tổng số sale. 
+
+Lợi nhuận dự kiến là lợi nhuận mỗi serving nhân với số lượng hàng bán dự kiến. Với goal week ta có thể tìm ra chính xác số lượng chanh để cân bằng giữa chi phí và số lượng hàng bán ra. Với 8 quả chanh, lợi nhuận dự kiến sẽ là cao nhất. 
+
+ 
+
+Doanh số dự kiến: B10 =60+0.2*F3 
+
+E6 =B11 
+
+ 
+
+Từ các giá trị và định dạng theo điều kiện ở ô E7:E16 bạn có thể kết luận rằng lợi nhuận dự kiến cao nhất là trên phạm vi 6 đến 10 quả chanh. 
+
+ 
+
+Lưu ý: Giải pháp file Excel sẽ mở trên edX phần Đáp án tuần này. 
+
+  
+
+4.5 Solver Hầu hết khách hàng của chúng ta thích nước chanh ngọt. Một số người cũng thích vị chanh mạnh. Phương trình cho doanh số dự kiến là 40 + 0.6*[số gam đường] + 0.3*[số lượng chanh] 
+
+Tính cả các yêu cầu sau: 
+
+1. Mỗi ly nước chanh nên bao gồm ít nhất 50gr đường, 200ml nước và 2 quả chanh. 2. Ta cần nước nhiều hơn gấp 4 lần đường, tối thiểu là như vậy. 3. Lượng chanh sử dụng liên quan đến lượng nước nên ở mức giữa 0.01 và 0.05 (Chẳng hạn, với 100ml nước dùng với khoảng 1 đến 5 quả chanh). 
+
+Sử dụng the Solver: Dùng GRG Nonlinear Solving Method (đã được mặc định) và đừng thay đổi các lựa chọn. 
+
+Lợi nhuận bán nước chanh tối đa 
+
+Xem xét những hạn chế ở trên, lợi nhuận cao nhất chúng ta có thể có được là gì? 
+
+233.89 hoặc 234 
+
+Giải thích: 
+
+ 
+
+Lưu ý: Giải pháp file Excel sẽ mở trên edX phần Đáp án tuần này.  
+
+4.6 Bài luận Chúng ta có các nguyên liệu cơ bản để pha một tách cà phê Latte: Espresso và sữa.  
+
+Tính cả các yêu cầu sau: 
+
+1. Máy pha có công suất hoạt động tốt nhất là với 20 serving một lúc. 2. Một tách Latte bán với giá 2.50 đôla. 3. Số lượng tách espresso ít nhất là bằng một nửa số lượng serving. 4. Số lượng tách sữa ít nhất bằng 5 lần số lượng tách espresso. 5. Doanh số dự kiến là 100 + 0.3*[tách cà phê] + 0.4*[tách sữa]. 
+
+Sử dụng the Solver: Dùng GRG Nonlinear Solving Method (đã được mặc định) và đừng thay đổi các lựa chọn. 
+
+Một ly Latte nhiều sữa 
+
+Dùng hàm VLOOKUP tìm ra chi phí từ trang tính Item Price và xem xem chúng ta cần bao nhiêu cốc sữa để làm 20 serving Latte và lợi nhuận tối đa. 
+
+Bất cứ số nào nằm trong khoảng từ 971 đến 972. 
+
+Giải thích: Áp dụng các quy tắc đã cho, bạn đã thực hiện một số điều như sau đây: 
+
+1.  
+
+Run the Solver on maximizing $B$11 by changing $D$3:$E$3. 
+
+ 
+
+Lưu ý: Giải pháp file Excel sẽ mở trên edX phần Đáp án tuần này. 
+
+  
+
+Một công thức tốt hơn 
+
+Có thể bạn sẽ thấy các phương trình chúng tôi đưa ra cho bài kiểm tra và bài luận là không thực tế, hoặc trên thực tế nó không tạo ra một thức uống ngon lành. Bạn có thể nghĩ ra một công thức tốt hơn không? Latte socola bánh qui thì sao nhỉ? Dựa vào trực giác, hãy nghĩ ra phương trình của riêng bạn để dự đoán doanh số latte thơm ngon của bạn, và đăng chúng lên diễn đàn nhé. 
+
+Cảm ơn các bạn đã chia sẻ các công thức pha Latte rất tuyệt! 

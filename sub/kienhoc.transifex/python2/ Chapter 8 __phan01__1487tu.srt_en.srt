@@ -1,0 +1,879 @@
+1
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/nO8eU3uts0o
+
+2
+00:00:00,499 --> 00:00:04,500
+Hello and welcome to
+chapter eight, Python Lists.
+
+3
+00:00:04,500 --> 00:00:08,330
+So now we're sort of going to
+start taking care of business.
+
+4
+00:00:08,330 --> 00:00:11,820
+We are going to make lists
+and dictionaries and tuples
+
+5
+00:00:11,820 --> 00:00:13,540
+and really start
+manipulating this data
+
+6
+00:00:13,540 --> 00:00:17,280
+and doing real data analysis--
+laying the ground work
+
+7
+00:00:17,280 --> 00:00:18,250
+real data analysis.
+
+8
+00:00:18,250 --> 00:00:21,980
+As always, these lectures,
+audio, video, slides,
+
+9
+00:00:21,980 --> 00:00:25,730
+and even book are copyright
+Creative Commons attribution.
+
+10
+00:00:25,730 --> 00:00:29,320
+So lists, dictionaries
+and tuples,
+
+11
+00:00:29,320 --> 00:00:31,570
+the next real three big
+topics we're going talk about,
+
+12
+00:00:31,570 --> 00:00:33,610
+are collections.
+
+13
+00:00:33,610 --> 00:00:37,300
+And we've been doing
+lists already, right?
+
+14
+00:00:37,300 --> 00:00:40,730
+We've been doing lists when
+we were doing for loops.
+
+15
+00:00:40,730 --> 00:00:43,990
+A list in Python is something
+that has square braces.
+
+16
+00:00:43,990 --> 00:00:46,560
+This is a constant list.
+
+17
+00:00:46,560 --> 00:00:48,940
+Now when I first talked
+to you about variables,
+
+18
+00:00:48,940 --> 00:00:50,560
+I sort of oversimplified things.
+
+19
+00:00:50,560 --> 00:00:53,880
+I said if you put
+x equals 2 and then
+
+20
+00:00:53,880 --> 00:00:57,530
+put x equals 4, the 2 and
+the 4 override each other.
+
+21
+00:00:57,530 --> 00:01:00,776
+A collection is where you
+can put a bunch of things
+
+22
+00:01:00,776 --> 00:01:01,650
+in the same variable.
+
+23
+00:01:01,650 --> 00:01:05,560
+Now I have to have a way
+to find those things,
+
+24
+00:01:05,560 --> 00:01:11,890
+but it allows us to put more
+than one thing in a variable.
+
+25
+00:01:11,890 --> 00:01:14,541
+And so here we have friends,
+that has three strings, Joseph,
+
+26
+00:01:14,541 --> 00:01:16,040
+Glenn and Sally and
+we have carryon,
+
+27
+00:01:16,040 --> 00:01:18,290
+it has socks, shirt and perfume.
+
+28
+00:01:18,290 --> 00:01:20,110
+So that's the basic idea.
+
+29
+00:01:20,110 --> 00:01:21,730
+So what's not a collection?
+
+30
+00:01:21,730 --> 00:01:23,380
+Well, simple variables.
+
+31
+00:01:23,380 --> 00:01:25,150
+Simple variables
+are not collections.
+
+32
+00:01:25,150 --> 00:01:27,950
+Just like this example,
+I say, x equals
+
+33
+00:01:27,950 --> 00:01:31,250
+2 x equals 4 and print
+x and the 4 is in there
+
+34
+00:01:31,250 --> 00:01:33,430
+and the 2 is somehow gone.
+
+35
+00:01:33,430 --> 00:01:36,710
+It was there for a moment
+and then it's gone.
+
+36
+00:01:36,710 --> 00:01:39,300
+And so that's a normal variable,
+they're not collections,
+
+37
+00:01:39,300 --> 00:01:41,860
+you can't put more
+than one thing in it.
+
+38
+00:01:41,860 --> 00:01:43,990
+But when you put more
+than one thing in it,
+
+39
+00:01:43,990 --> 00:01:45,500
+then you have to
+have a way to find
+
+40
+00:01:45,500 --> 00:01:46,800
+the things that are in there.
+
+41
+00:01:46,800 --> 00:01:49,280
+We'll get to that.
+
+42
+00:01:49,280 --> 00:01:51,200
+So we've been using
+list constants
+
+43
+00:01:51,200 --> 00:01:53,110
+for the last couple
+of chapters just
+
+44
+00:01:53,110 --> 00:01:55,400
+because we have to use
+list constants, you know?
+
+45
+00:01:55,400 --> 00:01:57,630
+So we used it in the
+For loop chapter,
+
+46
+00:01:57,630 --> 00:02:00,540
+we did list of numbers.
+
+47
+00:02:00,540 --> 00:02:03,490
+We have done lists
+of strings, t that's
+
+48
+00:02:03,490 --> 00:02:06,470
+strings red, yellow and blue.
+
+49
+00:02:06,470 --> 00:02:11,520
+And you don't have
+to necessarily have
+
+50
+00:02:11,520 --> 00:02:13,680
+to have things all
+of the same type.
+
+51
+00:02:13,680 --> 00:02:18,120
+This is three item list
+that has a string red,
+
+52
+00:02:18,120 --> 00:02:21,340
+the number integer
+24 and 98.6 which
+
+53
+00:02:21,340 --> 00:02:23,010
+is a floating point number.
+
+54
+00:02:23,010 --> 00:02:25,820
+Here's an interesting
+thing just as a side note,
+
+55
+00:02:25,820 --> 00:02:28,630
+this shows that floating
+point numbers are not always
+
+56
+00:02:28,630 --> 00:02:32,050
+perfectly represented
+inside of the computer,
+
+57
+00:02:32,050 --> 00:02:34,680
+it's sort of an artifact
+of how they work.
+
+58
+00:02:34,680 --> 00:02:37,790
+And this is an example of
+98.6 is really 98 point
+
+59
+00:02:37,790 --> 00:02:38,990
+na-na-na-na-na.
+
+60
+00:02:38,990 --> 00:02:41,290
+So when you see something
+like that, don't freak out.
+
+61
+00:02:41,290 --> 00:02:44,750
+Floating point numbers are the
+ones that show this behavior.
+
+62
+00:02:44,750 --> 00:02:46,639
+So interestingly,
+you can always--
+
+63
+00:02:46,639 --> 00:02:48,180
+although we won't
+put a lot of energy
+
+64
+00:02:48,180 --> 00:02:51,540
+into this-- you can also
+have an element of a list,
+
+65
+00:02:51,540 --> 00:02:53,020
+be a list itself.
+
+66
+00:02:53,020 --> 00:02:57,460
+So this is a outer list that's
+got three elements: 1, 7
+
+67
+00:02:57,460 --> 00:03:00,120
+and then a list that's 5 and 6.
+
+68
+00:03:00,120 --> 00:03:02,570
+So if you look at
+the length of this,
+
+69
+00:03:02,570 --> 00:03:04,470
+there is three things in it.
+
+70
+00:03:04,470 --> 00:03:08,110
+Not four, three, because the
+outer list has one, two, three,
+
+71
+00:03:08,110 --> 00:03:09,910
+things in it.
+
+72
+00:03:09,910 --> 00:03:13,350
+An empty list is
+bracket, bracket, OK?
+
+73
+00:03:13,350 --> 00:03:16,780
+Like I said, we have been
+going through lists all along,
+
+74
+00:03:16,780 --> 00:03:20,910
+we have iteration variables
+For i in, this is a list,
+
+75
+00:03:20,910 --> 00:03:23,880
+we've been using it all along.
+
+76
+00:03:23,880 --> 00:03:25,740
+Similarly, we've
+been using lists,
+
+77
+00:03:25,740 --> 00:03:29,015
+indefinite loops are a great way
+to go through lists for friend
+
+78
+00:03:29,015 --> 00:03:33,090
+in friends, there we have goes
+through three times, outcome
+
+79
+00:03:33,090 --> 00:03:35,940
+three lines with the
+variable friend advancing
+
+80
+00:03:35,940 --> 00:03:38,520
+through the three
+successive items in the list
+
+81
+00:03:38,520 --> 00:03:40,400
+and away we go.
+
+82
+00:03:40,400 --> 00:03:44,870
+So again, lists are not
+completely foreign to us.
+
+83
+00:03:44,870 --> 00:03:51,700
+Now just like in
+a string, we can
+
+84
+00:03:51,700 --> 00:03:54,270
+use the index operator, the
+square bracket operator,
+
+85
+00:03:54,270 --> 00:04:00,350
+and we can look up items in
+the list-- Sub 1, friend sub 1.
+
+86
+00:04:00,350 --> 00:04:06,120
+Not surprisingly, using
+the European elevator rule,
+
+87
+00:04:06,120 --> 00:04:08,700
+the first item in
+a list is sub 0.
+
+88
+00:04:08,700 --> 00:04:11,780
+The second item is sub 1,
+and the third one is sub 2.
+
+89
+00:04:11,780 --> 00:04:13,370
+So here when I
+print friend sub 1,
+
+90
+00:04:13,370 --> 00:04:17,190
+I get Glenn, which is
+the second element.
+
+91
+00:04:17,190 --> 00:04:20,230
+Just like strings-- so once you
+kind of know it for strings,
+
+92
+00:04:20,230 --> 00:04:22,620
+lists and the rest of these
+things make a lot more sense.
+
+93
+00:04:22,620 --> 00:04:24,710
+Just remember that
+we're in Europe,
+
+94
+00:04:24,710 --> 00:04:27,720
+and things start with 0.
+
+95
+00:04:27,720 --> 00:04:31,210
+Some things in these data
+items that we work with
+
+96
+00:04:31,210 --> 00:04:33,460
+are not mutable, so
+for example, strings:
+
+97
+00:04:33,460 --> 00:04:35,500
+When we ask for a lowercase
+version of a string,
+
+98
+00:04:35,500 --> 00:04:37,490
+we're given a copy
+of that string
+
+99
+00:04:37,490 --> 00:04:40,180
+and that's because
+strings are not mutable.
+
+100
+00:04:40,180 --> 00:04:44,880
+And we can see this by doing
+something like saying, fruits
+
+101
+00:04:44,880 --> 00:04:46,700
+sub 0 equals lowercase b.
+
+102
+00:04:46,700 --> 00:04:49,000
+Now you'd think
+that, that would just
+
+103
+00:04:49,000 --> 00:04:53,050
+change this to be a lowercase
+b but it doesn't, OK?
+
+104
+00:04:53,050 --> 00:04:56,550
+It says string object
+does not support
+
+105
+00:04:56,550 --> 00:04:58,570
+item assignment, which
+means that you're not
+
+106
+00:04:58,570 --> 00:05:00,440
+allowed to reassign.
+
+107
+00:05:00,440 --> 00:05:03,160
+You can make a new string
+and put different things
+
+108
+00:05:03,160 --> 00:05:05,360
+in that string but once
+the strings are made,
+
+109
+00:05:05,360 --> 00:05:09,170
+they're not changeable and
+that's why we call fruit.lower,
+
+110
+00:05:09,170 --> 00:05:12,170
+we get a copy of
+it in lowercase.
+
+111
+00:05:12,170 --> 00:05:14,730
+And so x is a copy of
+the original string
+
+112
+00:05:14,730 --> 00:05:17,200
+but the original string,
+once we assign it into fruit,
+
+113
+00:05:17,200 --> 00:05:20,360
+is unchanged-- can't be changed.
+
+114
+00:05:20,360 --> 00:05:21,949
+This on the other
+hand, can be changed
+
+115
+00:05:21,949 --> 00:05:23,490
+and we can change
+them in the middle.
+
+116
+00:05:23,490 --> 00:05:25,640
+This is one of the things
+we like about them.
+
+117
+00:05:25,640 --> 00:05:29,340
+So here we have a list:
+2, 14, 26, 41 and 63.
+
+118
+00:05:29,340 --> 00:05:31,510
+Then we say lotto
+sub 2, of course
+
+119
+00:05:31,510 --> 00:05:33,680
+that is going to
+be the third item,
+
+120
+00:05:33,680 --> 00:05:35,645
+lotto sub 2 is equal to 28.
+
+121
+00:05:35,645 --> 00:05:38,370
+Then we print it and we
+see the new number there.
+
+122
+00:05:38,370 --> 00:05:41,200
+So all this is saying, is that
+we can change them, right?
+
+123
+00:05:41,200 --> 00:05:44,660
+Strings no, and lists yes.
+
+124
+00:05:44,660 --> 00:05:49,340
+You can change lists but
+you can't change strings.
+
+125
+00:05:49,340 --> 00:05:52,910
+So the lend function, we've
+used it for several things--
+
+126
+00:05:52,910 --> 00:05:57,310
+we can say lend is
+used for strings
+
+127
+00:05:57,310 --> 00:05:58,720
+and it's used for lists as well.
+
+128
+00:05:58,720 --> 00:06:02,122
+So the same function knows
+when its parameter is a string
+
+129
+00:06:02,122 --> 00:06:03,580
+and when its
+parameter is a string,
+
+130
+00:06:03,580 --> 00:06:06,050
+it gives us the number of
+characters in the string
+
+131
+00:06:06,050 --> 00:06:09,540
+and when it is a list, it
+gives us the number of elements
+
+132
+00:06:09,540 --> 00:06:10,640
+in the list.
+
+133
+00:06:10,640 --> 00:06:12,590
+And just because one
+of them is a string,
+
+134
+00:06:12,590 --> 00:06:15,960
+it's still one element from
+the point of view of this list
+
+135
+00:06:15,960 --> 00:06:21,040
+so it has one, two, three, four,
+four items in the list, OK?
+
+136
+00:06:21,040 --> 00:06:24,880
+
+137
+00:06:24,880 --> 00:06:27,640
+So the range function
+is a special function,
+
+138
+00:06:27,640 --> 00:06:31,470
+it's probably about time to
+talk about the range function.
+
+139
+00:06:31,470 --> 00:06:33,240
+The range function
+is a function that
+
+140
+00:06:33,240 --> 00:06:37,190
+generates a list, that produces
+a list and gives it back to us.
+
+141
+00:06:37,190 --> 00:06:38,870
+And so you give
+the range function
+
+142
+00:06:38,870 --> 00:06:41,690
+a parameter, how
+many items you want,
+
+143
+00:06:41,690 --> 00:06:44,500
+and the range function
+creates and gives us
+
+144
+00:06:44,500 --> 00:06:50,590
+back a list that is four numbers
+starting at 0, which is 0 up to
+
+145
+00:06:50,590 --> 00:06:52,860
+but not including, 3.
+
+146
+00:06:52,860 --> 00:06:53,990
+Sound familiar?
+
+147
+00:06:53,990 --> 00:06:56,120
+Yeah.
+
+148
+00:06:56,120 --> 00:06:58,420
+0 up to but not including 4.
+
+149
+00:06:58,420 --> 00:07:00,650
+And so the same
+thing is true here.
+
+150
+00:07:00,650 --> 00:07:04,620
+So we can combine the
+lend and the range
+
+151
+00:07:04,620 --> 00:07:10,660
+to say OK, we'll lend
+friends, that's three items
+
+152
+00:07:10,660 --> 00:07:14,950
+and range lend
+friends is 0, 1, 2.
+
+153
+00:07:14,950 --> 00:07:20,560
+And it also corresponds
+exactly to these items.
+
+154
+00:07:20,560 --> 00:07:23,380
+So we can actually
+use this to construct
+
+155
+00:07:23,380 --> 00:07:27,780
+loops to go through a list.
+
+156
+00:07:27,780 --> 00:07:30,950
+We already have a
+basic For loop, right?
+
+157
+00:07:30,950 --> 00:07:37,150
+We basically have a For
+loop for each friend
+
+158
+00:07:37,150 --> 00:07:41,230
+and friends and outcomes, Happy
+New Year Glenn and Joseph.
+
+159
+00:07:41,230 --> 00:07:44,910
+If we also want to know
+what position we're at
+
+160
+00:07:44,910 --> 00:07:47,150
+as the loop progresses,
+we can rewrite
+
+161
+00:07:47,150 --> 00:07:49,980
+the exact same loop
+a different way
+
+162
+00:07:49,980 --> 00:07:54,400
+and make i be our iteration
+variable and say i in range
+
+163
+00:07:54,400 --> 00:07:59,940
+lend friends, that turns this
+into 0, 1, 2, and then i goes
+
+164
+00:07:59,940 --> 00:08:02,730
+0, 1, 2, and then
+we can in the loop,
+
+165
+00:08:02,730 --> 00:08:04,450
+look up the
+particular friend that
+
+166
+00:08:04,450 --> 00:08:06,730
+is the particular one
+we're interested in,
+
+167
+00:08:06,730 --> 00:08:10,650
+using the index
+operator, friends sub i
+
+168
+00:08:10,650 --> 00:08:12,330
+and then print Happy New Year.
+
+169
+00:08:12,330 --> 00:08:17,890
+So these two loops
+are equivalent.
+
+170
+00:08:17,890 --> 00:08:22,280
+
+171
+00:08:22,280 --> 00:08:24,130
+This loop and this loop.
+
+172
+00:08:24,130 --> 00:08:28,620
+This loop is preferred unless
+you happen to need this value
+
+173
+00:08:28,620 --> 00:08:31,402
+i, which tells you where you're
+at, in case maybe you're going
+
+174
+00:08:31,402 --> 00:08:33,860
+to change something, you're
+going to look through something
+
+175
+00:08:33,860 --> 00:08:34,780
+and then change it.
+
+176
+00:08:34,780 --> 00:08:39,080
+So for what I've written here,
+they're exactly equivalent.
+
+177
+00:08:39,080 --> 00:08:42,559
+Prefer the simpler one unless
+you need the more complex one,
+
+178
+00:08:42,559 --> 00:08:46,190
+they both produce the
+same kind of output.
+
+179
+00:08:46,190 --> 00:08:49,480
+We can concatenate lists much
+like we concatenate strings
+
+180
+00:08:49,480 --> 00:08:50,260
+with a plus.
+
+181
+00:08:50,260 --> 00:08:54,730
+
+182
+00:08:54,730 --> 00:08:58,730
+And you can think of the Python
+operators looking to its right
+
+183
+00:08:58,730 --> 00:09:01,950
+and to its left and saying,
+oh, those are both lists,
+
+184
+00:09:01,950 --> 00:09:04,650
+I know what to do with lists,
+I'm going to put those together
+
+185
+00:09:04,650 --> 00:09:08,220
+and so that produces a two,
+three long lists become a six
+

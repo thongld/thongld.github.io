@@ -1,0 +1,364 @@
+1
+00:00:08,450 --> 00:00:11,910
+https://youtu.be/5HXEqVzA8Lk
+Now when we start looking at object
+oriented approaches to programming,
+
+2
+00:00:11,910 --> 00:00:13,670
+I mean, like I said,
+you've been using these all along.
+
+3
+00:00:13,670 --> 00:00:16,283
+You make a string object,
+a dictionary object.
+
+4
+00:00:16,283 --> 00:00:20,725
+But the whole idea of object oriented
+programming is there are pretty powerful
+
+5
+00:00:20,725 --> 00:00:23,561
+little gadgets that we
+are connecting together.
+
+6
+00:00:23,561 --> 00:00:27,567
+And so, the program itself is more
+of an orchestration of multiple
+
+7
+00:00:27,567 --> 00:00:31,730
+different kinds of things and the
+capabilities that those things have.
+
+8
+00:00:31,730 --> 00:00:35,670
+And so the word we use for
+all those little things is object.
+
+9
+00:00:35,670 --> 00:00:39,690
+And an object is a bit of
+self-contained code and data.
+
+10
+00:00:39,690 --> 00:00:43,960
+It's not like a function, which is
+bit of code, but it is code and data.
+
+11
+00:00:43,960 --> 00:00:48,590
+So if you're going to build on the concept of
+function, you're adding local data and
+
+12
+00:00:48,590 --> 00:00:49,720
+multiple instances.
+
+13
+00:00:49,720 --> 00:00:54,790
+And part of the goal of object
+orientation is to take a hard problem and
+
+14
+00:00:54,790 --> 00:00:58,630
+kind of break it into parts and
+to make each part smaller.
+
+15
+00:00:58,630 --> 00:01:03,091
+And then hide the complexity
+in one part or the other part.
+
+16
+00:01:03,091 --> 00:01:06,435
+Just for an example,
+when we build a program and
+
+17
+00:01:06,435 --> 00:01:12,160
+it's going to make use of a database,
+SQL, this code that's inside there,
+
+18
+00:01:12,160 --> 00:01:14,561
+that's really large and really complex.
+
+19
+00:01:14,561 --> 00:01:16,198
+So what we do is we is sort of
+hide it.
+
+20
+00:01:16,198 --> 00:01:17,277
+We firewall it, it's like
+
+21
+00:01:17,277 --> 00:01:17,985
+oh, okay.
+
+22
+00:01:17,985 --> 00:01:19,623
+We keep our little bit simple.
+
+23
+00:01:19,623 --> 00:01:20,807
+But that thing is really complex.
+
+24
+00:01:20,807 --> 00:01:23,000
+But we have a really simple
+way of looking at it.
+
+25
+00:01:23,000 --> 00:01:27,520
+So it's also a complexity hiding and
+detail hiding that goes along as well.
+
+26
+00:01:27,520 --> 00:01:30,580
+And like I said, we've been using
+these things all along.
+
+27
+00:01:31,752 --> 00:01:35,960
+Okay, and so then you start to model
+a program, and it still has input and
+
+28
+00:01:35,960 --> 00:01:36,810
+it still has output.
+
+29
+00:01:36,810 --> 00:01:39,810
+But now it's a network of
+objects that are making use.
+
+30
+00:01:39,810 --> 00:01:42,020
+And so the string object,
+the dictionary object.
+
+31
+00:01:42,020 --> 00:01:44,825
+And there might be objects
+that you define yourself.
+
+32
+00:01:44,825 --> 00:01:47,363
+And these objects you're
+orchestrating in your code,
+
+33
+00:01:47,363 --> 00:01:50,501
+saying we'll take this out of
+the dictionary and put it into a tuple.
+
+34
+00:01:50,501 --> 00:01:52,940
+And do this, and we'll sort this thing and
+then we'll print some stuff out.
+
+35
+00:01:52,940 --> 00:01:57,240
+And so you're still orchestrating it to
+produce the overall input and output.
+
+36
+00:01:57,240 --> 00:01:59,120
+It's kind of a different way.
+
+37
+00:01:59,120 --> 00:02:02,160
+Now, so far we haven't built our
+own object yet.
+
+38
+00:02:02,160 --> 00:02:05,789
+But we've been using things like
+dictionaries and strings and
+
+39
+00:02:05,789 --> 00:02:08,058
+inside a string is uppercase, right?
+
+40
+00:02:08,058 --> 00:02:12,458
+To make things go in full uppercase,
+or split is in here.
+
+41
+00:02:12,458 --> 00:02:16,143
+And so each of these objects has
+capabilities that we're going to
+
+42
+00:02:16,143 --> 00:02:16,880
+make use of.
+
+43
+00:02:16,880 --> 00:02:20,816
+And so, each of these things has a bit
+of code and a bit of data in it.
+
+44
+00:02:20,816 --> 00:02:25,734
+Kind of like a function, but the difference
+is, is that functions themselves don't
+
+45
+00:02:25,734 --> 00:02:29,697
+have separate copies of data for
+every separate copy of the object.
+
+46
+00:02:29,697 --> 00:02:32,611
+And like I said,
+part of the goal is to hide the detail.
+
+47
+00:02:32,611 --> 00:02:35,659
+And so, at some level,
+if you're working inside this object,
+
+48
+00:02:35,659 --> 00:02:39,920
+you can write real complex code, and
+be real clever, think really deeply.
+
+49
+00:02:39,920 --> 00:02:43,042
+But then, we don't have to think
+about the rest of the program.
+
+50
+00:02:43,042 --> 00:02:45,808
+Part of it is not to worry about it, okay?
+
+51
+00:02:45,808 --> 00:02:49,360
+So let's put some complexity,
+like SQL, or even.
+
+52
+00:02:50,910 --> 00:02:51,480
+It's a string.
+
+53
+00:02:51,480 --> 00:02:54,889
+The strings themselves
+are pretty powerful.
+
+54
+00:02:54,889 --> 00:02:56,770
+So that's a string or
+a dictionary or something.
+
+55
+00:02:56,770 --> 00:02:58,523
+All that stuff is very powerful.
+
+56
+00:02:58,523 --> 00:03:04,150
+But when you're the person
+building the string object code
+
+57
+00:03:05,450 --> 00:03:06,910
+you have to think deeply about it.
+
+58
+00:03:06,910 --> 00:03:09,500
+But we think about it
+exactly the opposite.
+
+59
+00:03:09,500 --> 00:03:12,420
+We're like, oh boy
+that complexity, who cares?
+
+60
+00:03:12,420 --> 00:03:14,880
+I just care about all
+of the cool stuff that I can do.
+
+61
+00:03:14,880 --> 00:03:18,160
+And so it's a way of isolating complexity and
+
+62
+00:03:18,160 --> 00:03:24,180
+presenting a relatively simple interface
+that hides complexity in both ways.
+
+63
+00:03:24,180 --> 00:03:26,570
+Both, if you are the maker of the object,
+you can say
+
+64
+00:03:26,570 --> 00:03:28,082
+I don't care how this
+program's going to use me.
+
+65
+00:03:28,082 --> 00:03:30,840
+I'm going to give these
+little things out to them.
+
+66
+00:03:30,840 --> 00:03:31,730
+I'll deal with this.
+
+67
+00:03:31,730 --> 00:03:33,340
+They'll help me do stuff.
+
+68
+00:03:33,340 --> 00:03:34,910
+I'll do whatever for them.
+
+69
+00:03:34,910 --> 00:03:39,250
+And my stuff is complex, and the other
+stuff, this side might be complex too.
+
+70
+00:03:39,250 --> 00:03:40,750
+But all we care about is this.
+
+71
+00:03:40,750 --> 00:03:43,086
+And so the complexity can be partitioned.
+
+72
+00:03:43,086 --> 00:03:45,291
+So there's really two
+domains of complexity.
+
+73
+00:03:45,291 --> 00:03:49,889
+And each domain can ignore
+the complexity on the other one.
+
+74
+00:03:49,889 --> 00:03:54,643
+And so that's a little bit about
+how we put programs together from
+
+75
+00:03:54,643 --> 00:03:56,117
+separate objects.
+
+76
+00:03:56,117 --> 00:03:59,194
+So up next, we're going to look about
+how look at some terminology.
+
+77
+00:03:59,194 --> 00:04:02,160
+And figure out how objects
+can be defined in Python.

@@ -1,0 +1,142 @@
+1
+00:00:00,440 --> 00:00:03,390
+https://youtu.be/lig6vDrvK-A     NghiaNguyen
+Chào mọi người!
+Hoan nghênh tới bài học tuần tiếp theo,
+
+2
+00:00:03,390 --> 00:00:08,969
+Tuần trước, ta học về cách 
+thiết kế bảng và đồ thị,
+
+3
+00:00:08,969 --> 00:00:14,549
+và hôm nay ta sẽ học về cách thiết kế bảng tóm tắt.
+
+4
+00:00:14,549 --> 00:00:19,750
+Tuần trước, 1 trong những điểm trọng tâm 
+ta thảo luận là khi bạn thiết kế 1 bảng,
+
+5
+00:00:19,750 --> 00:00:23,930
+hay khi bạn thiết kế 1 đồ thị, 
+bạn phải nghĩ về "Ai sẽ là người coi",
+
+6
+00:00:23,930 --> 00:00:29,750
+và "thông điệp bạn muốn nói là gì".
+
+7
+00:00:29,750 --> 00:00:33,109
+Và "mục tiêu của đồ thị là gì", 
+hay "mục tiêu của bảng này là gì."
+
+8
+00:00:33,109 --> 00:00:37,719
+Nhưng giờ ta có 1 bảng điều khiển. 
+Và ta có nhiều bảng và đồ thị.
+
+9
+00:00:37,719 --> 00:00:43,819
+Vậy ta phải nghĩ 1 ít về mục tiêu 
+nhắm tới hay thông điệp là gì.
+
+10
+00:00:43,819 --> 00:00:48,300
+Bảng điểu khiển, ta thấy nó 
+trong buồng lái của máy bay.
+
+11
+00:00:48,300 --> 00:00:57,229
+Ta cũng thấy nó trong xe hơi, những chiếc xe sang.
+Và câu hỏi là: "Tại sao ta cần bảng điều khiển?"
+
+12
+00:00:57,229 --> 00:01:02,190
+Tại sao máy bay có bảng điều khiển?
+Tại sao xe hơi có bảng điều khiển?
+
+13
+00:01:02,190 --> 00:01:07,940
+Và nếu bạn nghĩ 1 chút, [bạn có thể nhận ra] là 
+có ai đó đứng đằng sau bảng điều khiển.
+
+14
+00:01:07,940 --> 00:01:13,090
+Và người đó muốn đi từ điểm A tới điểm B.
+Và nó cần hướng dẫn máy móc.
+
+15
+00:01:13,090 --> 00:01:19,920
+Hoặc máy bay hoặc xe hơi. 
+Và nó còn cần thông tin.
+
+16
+00:01:19,920 --> 00:01:25,420
+Nếu bạn đang thiết kế bảng 
+điều khiển để trình bày lượng dữ liệu,
+
+17
+00:01:25,420 --> 00:01:30,440
+bạn nên hỏi chính mình câu hỏi như trên.
+Ai sẽ ngồi đằng sau bảng điều khiển?
+
+18
+00:01:30,440 --> 00:01:37,230
+Và anh ấy hoặc cô ấy sẽ điều khiển cái gì?
+Nó có phải là 1 tổ chức, hay 1 quy trình,
+
+19
+00:01:37,230 --> 00:01:43,600
+hay 1 dự án nghiên cứu? Nếu bạn 
+biết cái gì sẽ được điều khiển,
+
+20
+00:01:43,600 --> 00:01:51,160
+thì câu hỏi tiếp theo là: tôi cần loại thông tin nào để 
+tôi có thể điều khiển tổ chức hoặc quy trình đó.
+
+21
+00:01:51,160 --> 00:01:56,920
+Đó chính là điều mà ta sẽ tập trung ở bài học hôm nay.
+
+22
+00:01:56,920 --> 00:02:02,640
+Tôi sẽ cho bạn vài lời khuyên, mẹo vặt 
+để bạn có thể làm nó với Excel, nhưng thực sự,
+
+23
+00:02:02,640 --> 00:02:08,890
+với tôi, đây là thông điệp quan 
+trọng nhất của toàn bộ video này.
+
+24
+00:02:08,890 --> 00:02:12,590
+Trước khi bạn bắt đầu làm việc với Excel,
+hay phần mềm nào khác, bạn nên nghĩ 
+
+25
+00:02:12,590 --> 00:02:17,890
+"Cái gì nên được hiển thị trên bảng điều khiển? 
+Cái gì cần thiết để điều khiển quy trình cung cấp dữ liệu?"
+
+26
+00:02:17,890 --> 00:02:21,160
+Vậy, ta sẽ làm cái gì ngày hôm nay?
+
+27
+00:02:21,160 --> 00:02:27,569
+Ta sẽ quan sát bảng điều khiển này.
+Nó hoàn toàn được xây dựng trên Excel,
+
+28
+00:02:27,569 --> 00:02:33,230
+và ta sẽ xây dựng nó lại với nhau, từng bước một.
+Ta sẽ bắt đầu với 1 bảng tính trống, và ta sẽ từ từ
+
+29
+00:02:33,230 --> 00:02:37,950
+hoàn thiện toàn bộ bảng điều khiển.
+Hẹn gặp lại bạn ở video tiếp theo.
+

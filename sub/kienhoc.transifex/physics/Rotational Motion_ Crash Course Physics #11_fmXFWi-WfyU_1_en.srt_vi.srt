@@ -1,0 +1,553 @@
+1
+00:00:03,000 --> 00:00:06,439
+Giang Na 31/10/2016
+về vấn đề này, ta đã nói đến những điểm cơ bản về cách mọi vật chuyển động 
+
+2
+00:00:06,450 --> 00:00:10,589
+nhưng ta hầu hết tập trung vào một loại chuyển động là chuyển động tịnh tiến
+
+3
+00:00:10,589 --> 00:00:13,949
+là khi một vật chuyển động trong không gian, nhưng không xoay vòng
+
+4
+00:00:13,949 --> 00:00:17,500
+nhưng chuyển động quay cũng là một điểm quan trọng
+
+5
+00:00:17,500 --> 00:00:20,960
+chẳng hạn, một quả bóng xoay, cả trong bóng đá và các loại bóng khác
+
+6
+00:00:20,960 --> 00:00:22,720
+đều ảnh hưởng đến sự lơ lửng của trái bóng trong không gian
+
+7
+00:00:22,730 --> 00:00:27,660
+nhưng chuyển động quay không hẳn là khác hoàn toàn so với chuyển động tịnh tiến
+
+8
+00:00:27,660 --> 00:00:31,329
+đều bao gồm vị trí, vận tốc và gia tốc
+
+9
+00:00:31,329 --> 00:00:35,829
+có thể bạn sẽ biết nhiều phương trình mà bạn dùng để mô tả chuyển động quay 
+
+10
+00:00:35,829 --> 00:00:37,439
+nhưng có vài điểm khác biệt quan trọng
+
+11
+00:00:37,439 --> 00:00:39,128
+ví dụ, thay vì vị trí, ta có các góc
+
+12
+00:00:39,128 --> 00:00:42,248
+thay vì các điểm trên một hàng, ta có các điểm trên một vòng cung
+
+13
+00:00:42,249 --> 00:00:47,588
+có nhiều khi chuyển động quay có thể lý giải cho những thứ nghe rất phi lý, nhưng thực tế lại đúng
+
+14
+00:00:47,588 --> 00:00:50,868
+như một điểm trên một bánh xe đang quay, thực sự lại đứng yên
+
+15
+00:00:50,868 --> 00:00:52,619
+vậy thì, quy luật ở đây là như nhau
+
+16
+00:00:52,628 --> 00:00:57,468
+nhưng chuyển động quay có yếu tố bạn gọi là "logic xoay vòng"
+
+17
+00:00:57,469 --> 00:01:10,079
+[Theme Music] 
+
+18
+00:01:10,079 --> 00:01:14,480
+khi nhắc đến chuyển động tịnh tiến, ta thường nói đến các vị trí như x và y
+
+19
+00:01:14,480 --> 00:01:17,540
+khi nào thì nó chuyển động theo hướng ngang, khi nào thì hướng dọc?
+
+20
+00:01:17,549 --> 00:01:21,729
+ta có thể hiểu được những điều này, vì ta thường định hướng chuyển động của chúng theo những hướng này
+
+21
+00:01:21,728 --> 00:01:26,019
+nhưng với chuyển động quay, ta muốn biết góc của đối tượng, góc đó goi là theta
+
+22
+00:01:26,019 --> 00:01:28,578
+ta có một hình tròn lớn với một dấu chấm bên trên
+
+23
+00:01:28,579 --> 00:01:33,900
+nếu ta gọi điểm trên cùng là xuất phát điểm, thì khi điểm đó ở trên cùng, góc sẽ bằng 0
+
+24
+00:01:33,900 --> 00:01:38,759
+khi điểm đó ở bên trái, góc bằng 180 độ, bằng nửa đường tròn lớn
+
+25
+00:01:38,759 --> 00:01:42,519
+nhưng! mặc dù ta vẫn dùng độ để đo góc cho đến thời điểm này,
+
+26
+00:01:42,519 --> 00:01:47,939
+có một đơn vị khác mà các nhà vật lý rất hay dùng, và ta sẽ dùng nó trong suốt chương này và tiếp theo
+
+27
+00:01:47,950 --> 00:01:52,299
+đơn vị đó là radian, tên này xuất phát từ bán kính của đường tròn
+
+28
+00:01:52,299 --> 00:01:55,520
+nếu ta nhớ lại hình học cơ bản, ta thấy rằng chu vi đường tròn
+
+29
+00:01:55,519 --> 00:01:58,468
+bằng 2 nhân số pi nhân bán kính đường tròn, đúng không?
+
+30
+00:01:58,468 --> 00:02:03,699
+radian biểu hiện góc, cho ta biết phần chu vi đi qua một góc nhất định là bao nhiêu
+
+31
+00:02:03,700 --> 00:02:08,670
+vậy 360 độ, số đo của một đường tròn lớn, là 2 pi radian
+
+32
+00:02:08,669 --> 00:02:12,689
+180 độ, nửa đường tròn lớn, là pi radian
+
+33
+00:02:12,689 --> 00:02:18,419
+và nếu đổi từ đơn vị độ sang radian, bạn chỉ cần lấy độ nhân pi và chia cho 180
+
+34
+00:02:18,419 --> 00:02:21,439
+vậy ta đã biết làm thế nào để biểu diễn góc của một vật đang quay
+
+35
+00:02:21,439 --> 00:02:23,759
+vậy vận tốc của vòng quay đó ra sao?
+
+36
+00:02:23,759 --> 00:02:29,479
+ta đã biết các đường thẳng tịnh tiến, vận tốc là số đo sự thay đổi về vị trí của một vật
+
+37
+00:02:29,490 --> 00:02:33,379
+và tương tự, vận tốc quay là số đo sự thay đổi về góc của một vật
+
+38
+00:02:33,389 --> 00:02:37,699
+đây được gọi là vận tốc góc, và được bởi chữ cái thường Hy Lạp là Omega
+
+39
+00:02:37,699 --> 00:02:41,699
+tôi thấy nó hơi giống chữ W nhưng không phải là W
+
+40
+00:02:41,699 --> 00:02:45,219
+và như bạn có thể đoán được, vận tốc góc là dẫn xuất, hay tốc độ của sự thay đổi
+
+41
+00:02:45,219 --> 00:02:48,449
+của góc theo thời gian
+
+42
+00:02:48,449 --> 00:02:52,109
+nhưng ta cũng có thể biểu diễn góc quay của một vật theo vận tốc tiếp xúc
+
+43
+00:02:52,110 --> 00:02:56,970
+đây là dạng vận tốc tương tự khi ta nói về vật lý học của chuyển động quay
+
+44
+00:02:56,969 --> 00:02:59,060
+các bạn có nhớ không? một chiếc chìa khóa quay vòng trên một cái dây?
+
+45
+00:02:59,060 --> 00:03:00,719
+và 
+
+46
+00:03:00,719 --> 00:03:05,330
+trong những trường hợp này, ta biểu diễn cách thức và thời gian một vật chuyển động quay
+
+47
+00:03:05,330 --> 00:03:09,070
+vận tốc của nó vuông góc với bán kính đường tròn, theo hướng chuyển động
+
+48
+00:03:09,069 --> 00:03:13,759
+và khi bạn nghĩ về nó, bất kỳ một vật cố định nào quay quanh một trục cố định 
+
+49
+00:03:13,759 --> 00:03:16,549
+đều là một tập hợp điểm, tất cả đều chuyển động quanh những đường tròn
+
+50
+00:03:16,550 --> 00:03:20,530
+ở bất kỳ thời điểm nào, mỗi điểm đều có vận tốc tiếp tuyến 
+
+51
+00:03:20,530 --> 00:03:23,870
+phụ thuộc vào đường tròn mà nó đi qua, cụ thể là bán kính đường tròn đó
+
+52
+00:03:23,870 --> 00:03:28,259
+thực chất, vận tốc tiếp xúc của nó bằng vận tốc góc nhân với bán kính
+
+53
+00:03:28,259 --> 00:03:32,509
+bạn có thể dễ dàng hiểu điều này, nếu bạn chụp ảnh các tay quay của một bánh lái đang quay
+
+54
+00:03:32,509 --> 00:03:36,370
+tất cả các điểm trên mỗi tay quay đều có cùng vận tốc góc 
+
+55
+00:03:36,370 --> 00:03:39,689
+vì chúng đều đi qua cùng một khoảng cách trong cùng khoảng thời gian
+
+56
+00:03:39,689 --> 00:03:43,569
+nhưng để đi từ bên phải của đường tròn đến phía dưới cùng, các điểm bên ngoài bánh lái
+
+57
+00:03:43,569 --> 00:03:47,469
+sẽ đi qua một hình cung lớn hơn, chiếm nhiều không gian hơn
+
+58
+00:03:47,469 --> 00:03:49,359
+về cơ bản so với các điểm bên trong
+
+59
+00:03:49,370 --> 00:03:53,210
+vậy, nếu một điểm trên tay quay bánh lái càng xa trung tâm bánh lái,
+
+60
+00:03:53,210 --> 00:03:55,340
+vận tốc tiếp xúc của nó sẽ càng lớn hơn
+
+61
+00:03:55,340 --> 00:04:00,750
+giống như chuyển động xoay tròn, chuyển động quay cũng có thể mang tính chu kỳ, khi vòng quay lặp lại
+
+62
+00:04:00,750 --> 00:04:05,439
+sau khoảng thời gian định sẵn, được biểu diễn bởi chữ cái T, còn được gọi là Chu Kỳ
+
+63
+00:04:05,439 --> 00:04:09,319
+và những phương trình biểu diễn chuyển động chu kỳ tương tự như những phương trình
+
+64
+00:04:09,319 --> 00:04:11,840
+ta dùng để biểu diễn các điểm đơn lẻ chuyển động quanh đường tròn
+
+65
+00:04:11,840 --> 00:04:16,639
+vậy tính chu kỳ, hay số vòng quay mỗi giây, bằng 1 chia cho chu kỳ
+
+66
+00:04:16,639 --> 00:04:20,230
+nhưng số vòng quay và vận tốc góc là hai cách khác nhau để biểu diễn cùng một thứ
+
+67
+00:04:20,230 --> 00:04:23,090
+chỉ là khác đơn vị mà thôi
+
+68
+00:04:23,089 --> 00:04:27,439
+chu kỳ được đo bằng số vòng quay, hay số vòng quay của trục/ giây, 
+
+69
+00:04:27,439 --> 00:04:28,730
+và vận tốc góc được tính bằng radian/ giây
+
+70
+00:04:28,730 --> 00:04:32,960
+và một vòng quay bằng chu vi đường tròn: 2 pi radian
+
+71
+00:04:32,959 --> 00:04:36,689
+vậy để đổi từ chu kỳ sang vận tốc góc, bạn chỉ cần 
+
+72
+00:04:36,689 --> 00:04:37,889
+laays chu kỳ nhân với 2 pi
+
+73
+00:04:37,889 --> 00:04:41,449
+có một trường hợp đặc biệt đối với vận tốc của các vật đang quay,
+
+74
+00:04:41,449 --> 00:04:43,360
+được gọi là quay nhưng không đi lệch
+
+75
+00:04:43,360 --> 00:04:46,110
+kiểu chuyển động này xảy ra ở mọi thời điểm trong cuộc sống
+
+76
+00:04:46,110 --> 00:04:48,699
+điều gì xảy ra với lốp xe của bạn khi bạn lái xe trên đường
+
+77
+00:04:48,699 --> 00:04:51,159
+miễn là bạn không bị trượt, và hi vong bạn không bị trượt
+
+78
+00:04:51,160 --> 00:04:53,260
+và đó là hoạt động của bánh tàu hỏa khi chúng chuyển động trên đường ray
+
+79
+00:04:53,259 --> 00:04:57,719
+nhưng vận tốc tịnh tiến ở phía dưới cùng của bánh xe thì cực kỳ lạ
+
+80
+00:04:57,720 --> 00:05:03,080
+thông thường ở bất kỳ thời điểm nào, điểm nằm dưới cùng bánh xe đều không có vận tốc tịnh tiến
+
+81
+00:05:03,079 --> 00:05:05,680
+nói cách khác, nó thực sự không chuyển động
+
+82
+00:05:05,680 --> 00:05:08,290
+để biết tại sao thì hãy thử nghiệm với bánh xe đạp
+
+83
+00:05:08,290 --> 00:05:11,819
+nếu bạn quay bánh xe một vòng tròn trên sàn, nghĩa là toàn bộ chu vi bánh xe
+
+84
+00:05:11,819 --> 00:05:15,500
+tiếp xúc với mặt sàn, một điểm tại một thời điểm
+
+85
+00:05:15,500 --> 00:05:19,139
+và trọng tâm của bánh xe sẽ chuyển động về phía trước bằng một khoảng tương đương chu vi bánh xe
+
+86
+00:05:19,139 --> 00:05:22,120
+bằng bán kính nhân 2 pi
+
+87
+00:05:22,120 --> 00:05:25,530
+và thời gian di chuyển quãng đường đó, bằng chu kỳ chuyển động
+
+88
+00:05:25,529 --> 00:05:30,459
+vậy, vận tốc tịnh tiến của trọng tâm bánh xe bằng bán kính nhân vận tốc góc
+
+89
+00:05:30,459 --> 00:05:31,579
+vậy điểm trên cùng bánh xe thì sao?
+
+90
+00:05:31,579 --> 00:05:36,099
+nó bằng vận tốc tịnh tiến với trọng tâm bánh xe, cộng với vận tốc tiếp xúc
+
+91
+00:05:36,100 --> 00:05:39,990
+từ vòng quay của bánh xe. do ở trên cùng bánh xe, vận tốc tiếp xúc
+
+92
+00:05:39,990 --> 00:05:42,860
+đi theo hướng bánh xe đang quay
+
+93
+00:05:42,860 --> 00:05:46,680
+tương tự, điểm dưới cùng bánh xe bằng vận tốc tịnh tiến với trọng tâm,
+
+94
+00:05:46,680 --> 00:05:51,139
+ trừ đi vận tốc tịnh tiến từ vòng quay bánh xe
+
+95
+00:05:51,139 --> 00:05:56,240
+vì dưới cùng bánh xe, vận tốc tiếp xúc đi theo hướng ngược lại với hướng quay của bánh xe
+
+96
+00:05:56,240 --> 00:05:57,480
+sau đây là điểm kỳ lạ
+
+97
+00:05:57,480 --> 00:06:02,720
+ta thấy vận tốc tịnh tiến của bánh xe bằng bán kính nhân vận tốc góc
+
+98
+00:06:02,720 --> 00:06:06,470
+và thông thường, độ lớn vận tốc tiếp xúc bằng bán kính
+
+99
+00:06:06,470 --> 00:06:08,389
+nhân với vận tốc góc
+
+100
+00:06:08,389 --> 00:06:13,960
+vậy, điểm trên cùng sẽ di chuyển nhanh gấp 2 lần trong tâm bánh xe, đối với mặt sàn
+
+101
+00:06:13,959 --> 00:06:18,659
+vì để đo vận tốc tổng, bạn cộng vận tốc tịnh tiến vào vận tốc tiếp xúc
+
+102
+00:06:18,660 --> 00:06:23,230
+nhưng điểm dưới cùng bánh xe không chuyển động, do vận tốc tổng
+
+103
+00:06:23,230 --> 00:06:27,879
+bằng vận tốc tịnh tiến trừ vận tốc tiếp xúc, bởi vì chúng chuyển động theo các hướng ngược nhau
+
+104
+00:06:27,879 --> 00:06:31,668
+do đó, vận tốc tổng ở điểm dưới cùng bằng 0
+
+105
+00:06:31,668 --> 00:06:34,519
+mặc dù rõ ràng bánh xe chuyển động so với mặt sàn
+
+106
+00:06:34,519 --> 00:06:38,418
+nhưng nếu bạn quan sát chuyển động bánh xe ở bất kỳ điểm nào, bạn se thấy
+
+107
+00:06:38,418 --> 00:06:42,000
+bất kỳ điểm nào ở dưới cùng đều không chuyển động so vói mặt sàn
+
+108
+00:06:42,000 --> 00:06:45,389
+nếu nó chuyển động so với mặt sàn, ta sẽ gọi đó là trượt
+
+109
+00:06:45,389 --> 00:06:49,310
+giống như khi một chiếc ô tô trượt trên đường băng: bánh xe không quay, nhưng điểm dưới cùng 
+
+110
+00:06:49,310 --> 00:06:53,439
+đang chuyển động so với mặt đất, vì nó đang trượt dọc theo phần trên cùng
+
+111
+00:06:53,439 --> 00:06:58,860
+nhưng bánh xe không hề trượt, điểm dưới cùng có vận tốc tổng bằng 0, vì các vận tốc không tồn tại
+
+112
+00:06:58,860 --> 00:07:02,500
+OK, tôi vừa làm các bạn suy nghĩ nhiều, vậy khi các bạn thư giãn trở lại,
+
+113
+00:07:02,500 --> 00:07:06,569
+tôi muốn nói về một đặc điểm cơ bản của chuyển động quay là gia tốc góc
+
+114
+00:07:06,569 --> 00:07:11,089
+dựa theo những gì bạn đã biết về gia tốc, bạn có thể đoán được gia tốc góc
+
+115
+00:07:11,089 --> 00:07:13,019
+là phái sinh của vận tốc góc
+
+116
+00:07:13,019 --> 00:07:17,549
+nó được biểu diễn bởi chữ cái Hy Lạp alpha, và nó biểu diễn
+
+117
+00:07:17,550 --> 00:07:19,879
+sự thay đổi vận tốc góc theo thời gian của một vật
+
+118
+00:07:19,879 --> 00:07:24,810
+và khi một vật quay, mỗi điểm trên nó đều có thể tăng tốc theo 2 cách khác nhau
+
+119
+00:07:24,810 --> 00:07:29,370
+gia tốc quay là cách nói khác cho cái mà ta gọi là gia tốc hướng tâm cho đến thời điểm này
+
+120
+00:07:29,370 --> 00:07:34,129
+đó là gia tốc tại bất kỳ điểm nào trên vật thể quay, và bằng
+
+121
+00:07:34,129 --> 00:07:36,889
+vận tốc góc bình phương nhân bán kính
+
+122
+00:07:36,889 --> 00:07:41,790
+nhưng cũng tồn tại gia tốc tiếp xúc, biểu diễn sự tăng tốc hay giảm tốc
+
+123
+00:07:41,790 --> 00:07:43,939
+của một điểm bất kỳ trên vật thể quay
+
+124
+00:07:43,939 --> 00:07:48,279
+vậy, cũng giống như vận tốc tuyến tính, gia tốc tiếp xúc phụ thuộc vào khoảng cách giữa
+
+125
+00:07:48,279 --> 00:07:49,629
+một điểm và trọng tâm của vật
+
+126
+00:07:49,629 --> 00:07:53,500
+cụ thể là, nó bằng gia tốc góc nhân bán kính
+
+127
+00:07:53,500 --> 00:07:57,240
+vậy ta thấy, vị trí góc, vận tốc và gia tốc đều liên quan đến nhau
+
+128
+00:07:57,240 --> 00:08:00,800
+giống như vị trí đường thẳng, vận tốc, và gia tốc vậy
+
+129
+00:08:00,800 --> 00:08:04,470
+ta có thể nói đến chuyển động quay với các thuật ngữ và phương trình quen thuộc với ta
+
+130
+00:08:04,470 --> 00:08:07,919
+một khi ta đã biết những điều cơ bản về chuyển động tịnh tiến
+
+131
+00:08:07,920 --> 00:08:12,640
+lần sau, ta sẽ quan sát logic của chuyển động quay áp dụng cho một ý tưởng khác ra sao: đó là xung lượng
+
+132
+00:08:12,639 --> 00:08:17,000
+vậy thì bạn đã học được các đặc điểm của chuyển động quay, bao gồm vị trí góc
+
+133
+00:08:17,000 --> 00:08:21,129
+vận tốc góc, chu kỳ chuyển động, và trường hợp đặc biệt về quay nhưng không trượt
+
+134
+00:08:21,129 --> 00:08:25,899
+ta cũng nói về gia tốc góc, cũng như gia tốc góc không đổi
+
+135
+00:08:25,899 --> 00:08:30,159
+khóa học vật lý cấp tốc được phát triển với sự hợp tác của hãng phim PBS. bạn có thể chuyển sang
+
+136
+00:08:30,160 --> 00:08:36,099
+kênh của họ để xem các chương trình thú vị như It's Okay to be Smart, Blank on Blank, vad Shank's FX
+
+137
+00:08:36,099 --> 00:08:40,229
+chương này được quay phim ở hãng phim Doctor Cheryl C. Kinney 
+
+138
+00:08:40,229 --> 00:08:45,829
+với sự hỗ trợ của những người nhiệt tình và nhóm đồ họa tuyệt vời của chúng tôi là Thought Cafe 
+

@@ -1,0 +1,164 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/47E_7XvvDpo
+
+1
+00:00:00,000 --> 00:00:00,065
+
+2
+00:00:00,065 --> 00:00:01,940
+DR. JONATHAN VALVANO:
+Throughout this course,
+
+3
+00:00:01,940 --> 00:00:07,480
+we will present to you a series of short
+videos on how to read the data sheet.
+
+4
+00:00:07,480 --> 00:00:13,010
+Because this class deals with input
+and output, in this first video,
+
+5
+00:00:13,010 --> 00:00:15,715
+we'll show you how to look up IO pins.
+
+6
+00:00:15,715 --> 00:00:21,190
+
+7
+00:00:21,190 --> 00:00:24,770
+One of the convenient ways
+to search the data sheet
+
+8
+00:00:24,770 --> 00:00:27,640
+is to use the table of contents.
+
+9
+00:00:27,640 --> 00:00:31,500
+DR. RAMESH YERRABALLI: So
+let's go to Chapter 10, which
+
+10
+00:00:31,500 --> 00:00:35,211
+has information about the
+general purpose IO pins.
+
+11
+00:00:35,211 --> 00:00:37,960
+DR. JONATHAN VALVANO: All right,
+so I'm going to click right here.
+
+12
+00:00:37,960 --> 00:00:39,887
+And now we're in Chapter 10.
+
+13
+00:00:39,887 --> 00:00:42,220
+DR. RAMESH YERRABALLI: So
+what we find here in this page
+
+14
+00:00:42,220 --> 00:00:49,520
+is the description of the fact that they
+are 43 GPIO pins on our microcontroller
+
+15
+00:00:49,520 --> 00:00:52,250
+and they're called ports.
+
+16
+00:00:52,250 --> 00:00:57,454
+And there's port A, B, C, D, E, and F.
+
+17
+00:00:57,454 --> 00:00:59,870
+DR. JONATHAN VALVANO: So one
+of the questions we might ask
+
+18
+00:00:59,870 --> 00:01:02,320
+is, what's a pin?
+
+19
+00:01:02,320 --> 00:01:08,380
+So we go back to the table of contents
+and look for information on pins.
+
+20
+00:01:08,380 --> 00:01:14,160
+DR. RAMESH YERRABALLI: And
+we'll find it in Chapter 22.
+
+21
+00:01:14,160 --> 00:01:16,950
+DR. JONATHAN VALVANO:
+There it is, Chapter 22.
+
+22
+00:01:16,950 --> 00:01:19,200
+DR. RAMESH YERRABALLI: It
+should have the pin diagram.
+
+23
+00:01:19,200 --> 00:01:20,949
+DR. JONATHAN VALVANO:
+So we click on that.
+
+24
+00:01:20,949 --> 00:01:24,290
+All right, so here in Chapter
+22, we see the pin diagram.
+
+25
+00:01:24,290 --> 00:01:28,150
+And here's a picture
+of our microcontroller.
+
+26
+00:01:28,150 --> 00:01:31,120
+DR. RAMESH YERRABALLI: And so
+we can identify the pins here.
+
+27
+00:01:31,120 --> 00:01:34,610
+And in one of our first
+labs, we have these pins,
+
+28
+00:01:34,610 --> 00:01:38,800
+PF 1, 2, and 3 are going to be outputs.
+
+29
+00:01:38,800 --> 00:01:44,255
+And PF 0 and PF 4 are
+going to be inputs.
+
+30
+00:01:44,255 --> 00:01:46,380
+DR. JONATHAN VALVANO: So
+the answer to the question
+
+31
+00:01:46,380 --> 00:01:52,520
+is, a pin is an actual signal connected
+to the microcontroller with which we
+
+32
+00:01:52,520 --> 00:01:54,557
+are going to do our input and output.
+
+33
+00:01:54,557 --> 00:01:57,140
+DR. RAMESH YERRABALLI: And this
+is the actual, physical layout
+
+34
+00:01:57,140 --> 00:01:58,980
+at the chip level.
+
+35
+00:01:58,980 --> 00:02:00,530
+DR. JONATHAN VALVANO: Yup.

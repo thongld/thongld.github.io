@@ -1,0 +1,1025 @@
+1
+00:00:08,664 --> 00:00:10,820
+dungpham12002 02.08.2016 Thao reviewed
+Vậy là ta chuẩn bị hoàn thiện.
+
+2
+00:00:10,820 --> 00:00:13,820
+Ta vừa tạo xong các bảng
+trong cơ sở dữ liệu,
+
+3
+00:00:13,820 --> 00:00:18,650
+chia dữ liệu vào các bảng đó, và 
+nối lại chúng với nhau bằng các con số.
+
+4
+00:00:18,650 --> 00:00:21,130
+Dường như ta vừa làm
+mọi thứ trở nên lộn xộn.
+
+5
+00:00:21,130 --> 00:00:25,490
+Nhưng giờ ta sẽ sắp xếp lại
+sử dụng phép nối JOIN.
+
+6
+00:00:25,490 --> 00:00:28,140
+Ta cuối cùng đã bắt đầu
+tìm hiểu về sức mạnh liên kết.
+
+7
+00:00:28,140 --> 00:00:33,540
+Dù có vẻ phức tạp nhưng nó rất quan trọng,
+đặc biệt là khi lượng dữ liệu tăng lên.
+
+8
+00:00:33,540 --> 00:00:36,320
+Nếu việc bạn làm quan trọng
+thì lượng dữ liệu sẽ tăng lên.
+
+9
+00:00:36,320 --> 00:00:39,740
+Bạn không thể nói: 'Tôi có rất
+ít dữ liệu, tôi không cần dùng nó.'
+
+10
+00:00:39,740 --> 00:00:44,940
+Nhưng nếu như bạn đang làm một
+dự án lớn, bạn cần phân tích dữ liệu
+
+11
+00:00:44,940 --> 00:00:46,740
+một cách chuyên nghiệp,
+
+12
+00:00:46,740 --> 00:00:48,720
+dân chuyên nghiệp thường
+không làm những việc nhỏ.
+
+13
+00:00:48,720 --> 00:00:50,850
+Bạn thường sẽ làm những việc lớn.
+
+14
+00:00:50,850 --> 00:00:53,600
+Ta có các khái niệm về
+khóa chủ và khóa ngoại,
+
+15
+00:00:53,600 --> 00:00:56,960
+cũng như các con số trỏ đến
+dữ liệu khác, tất cả chỉ có vậy thôi.
+
+16
+00:00:58,210 --> 00:01:01,810
+Vậy ta cần phải xây dựng lại
+
+17
+00:01:01,810 --> 00:01:05,430
+dữ liệu cho giao diện người dùng,
+và thiết lập lại các liên kết.
+
+18
+00:01:06,500 --> 00:01:11,820
+Và cú pháp SQL cho phép làm
+điều đó là phép nối JOIN.
+
+19
+00:01:11,820 --> 00:01:16,440
+Về cơ bản, JOIN cho ta chọn dữ liệu
+từ nhiều hơn một bảng.
+
+20
+00:01:16,440 --> 00:01:20,840
+Và một phần của phép nối JOIN là
+mệnh đề ON, dùng để chỉ định liên kết
+
+21
+00:01:20,840 --> 00:01:24,990
+một hàng trong một bảng với
+hàng tương ứng ở bảng khác.
+
+22
+00:01:24,990 --> 00:01:29,130
+Ta lấy ví dụ với dữ liệu của ta ở đây.
+
+23
+00:01:29,130 --> 00:01:33,682
+Ta muốn lấy ra các cột về
+tên album và tên nghệ sĩ.
+
+24
+00:01:33,682 --> 00:01:38,160
+Cột tên album sẽ
+thuộc về trường Album, còn
+
+25
+00:01:38,160 --> 00:01:42,980
+vì ta đã lập cột tên nghệ sĩ theo kiểu quan hệ, 
+nên nó sẽ thuộc trường nghệ sĩ.
+
+26
+00:01:42,980 --> 00:01:46,220
+Vì hai cột không cùng trường nên
+ta sẽ cần kéo chúng từ hai bảng.
+
+27
+00:01:46,220 --> 00:01:49,110
+Vậy ta sẽ viết lệnh SELECT,
+sau đó là những thứ ta cần chọn.
+
+28
+00:01:49,110 --> 00:01:53,080
+Ở đây, cú pháp sẽ là
+tên bảng, theo sau là tên trường,
+
+29
+00:01:53,080 --> 00:01:55,320
+tức tênbảng.têntrường.
+
+30
+00:01:55,320 --> 00:02:01,010
+Hai cụm này lần lượt chỉ cột 'title' trong
+bảng Album và cột 'name' trong bảng Artist.
+
+31
+00:02:01,010 --> 00:02:03,310
+Tiếp theo, ta có mệnh đề con
+FROM ta đã tìm hiểu lúc trước.
+
+32
+00:02:03,310 --> 00:02:05,860
+Phần này cho thấy một bảng
+được nối với một bảng khác.
+
+33
+00:02:05,860 --> 00:02:07,010
+Việc ta đang làm ở đây
+
+34
+00:02:07,010 --> 00:02:12,630
+là ta sẽ tạo ra một bảng lớn
+mà thực chất là các hàng của bảng này
+
+35
+00:02:12,630 --> 00:02:15,480
+và các hàng của bảng kia gộp lại với nhau --
+đó là chức năng của phép nối JOIN.
+
+36
+00:02:15,480 --> 00:02:19,400
+Bây giờ, ta lấy được dữ liệu từ hai bảng
+cùng lúc, thay vì từ từng bảng một.
+
+37
+00:02:19,400 --> 00:02:22,010
+Sau đó, ngoài phần JOIN
+
+38
+00:02:22,010 --> 00:02:25,310
+nêu ra các bảng cần liên kết, mệnh đề ON
+
+39
+00:02:25,310 --> 00:02:29,920
+sẽ quyết định khi nào ta liên kết một hàng
+của bảng này đến một hàng của bảng này.
+
+40
+00:02:29,920 --> 00:02:36,320
+Vậy hai hàng này sẽ liên kết với nhau,
+và hai hàng này cũng thế. Mệnh đề ON ta sẽ viết
+
+41
+00:02:36,320 --> 00:02:40,540
+cần nêu điều kiện là khi artist_id
+của album ghi ở bảng Album,
+
+42
+00:02:40,540 --> 00:02:46,310
+tức khóa ngoại, hay điểm bắt đầu
+của mũi tên, bằng với
+
+43
+00:02:46,310 --> 00:02:51,650
+giá trị trường id ở bảng Artist là
+Artist.id, hay đích đến của mũi tên.
+
+44
+00:02:51,650 --> 00:02:54,780
+Vậy đây là điểm xuất phát,
+
+45
+00:02:54,780 --> 00:02:56,560
+còn đây là điểm kết thúc của mũi tên.
+
+46
+00:02:56,560 --> 00:02:57,540
+Tôi nhắc lại, đây là điểm xuất phát.
+
+47
+00:02:57,540 --> 00:02:58,700
+Còn đây là đích đến.
+
+48
+00:02:58,700 --> 00:03:04,570
+Chương trình sẽ nối lại các mũi tên
+cho tất cả các hàng tương ứng.
+
+49
+00:03:04,570 --> 00:03:08,710
+Ta chọn hai trường này, mỗi trường 
+thuộc một bảng khác nhau, rồi ta sẽ
+
+50
+00:03:08,710 --> 00:03:13,260
+liên kết hai bảng với nhau, nhưng các hàng 
+sẽ chỉ được liên kết khi điều này đúng.
+
+51
+00:03:13,260 --> 00:03:15,230
+Tôi nghĩ cái này đáng ra nên là 'when' (khi nào).
+
+52
+00:03:16,600 --> 00:03:19,600
+Một số người thích viết phần này
+là một mệnh đề WHERE dài hơn,
+
+53
+00:03:19,600 --> 00:03:21,570
+và một số cơ sở dữ liệu
+cũng vậy.
+
+54
+00:03:21,570 --> 00:03:25,550
+Tôi thường sử dụng mệnh đề ON, để 
+không nhầm lẫn với các mệnh đề WHERE.
+
+55
+00:03:25,550 --> 00:03:29,550
+Nhưng nếu bạn học về các mánh khóe
+với WHERE, thì nó cũng giống như với ON.
+
+56
+00:03:29,550 --> 00:03:31,530
+Giờ ta sẽ chạy lệnh này.
+
+57
+00:03:32,880 --> 00:03:33,600
+Nó có sẵn trong này rồi.
+
+58
+00:03:33,600 --> 00:03:34,100
+Tôi lỡ tay xóa rồi.
+
+59
+00:03:35,680 --> 00:03:36,280
+Giờ tôi sẽ chạy lệnh.
+
+60
+00:03:37,450 --> 00:03:38,085
+Và kết quả là đây.
+
+61
+00:03:38,085 --> 00:03:40,439
+Tôi có cột title --
+
+62
+00:03:40,439 --> 00:03:44,870
+Tôi có cột title từ một bảng và
+
+63
+00:03:44,870 --> 00:03:46,500
+cột name từ một bảng khác.
+
+64
+00:03:46,500 --> 00:03:47,880
+Ta đã nối chúng vào với nhau,
+
+65
+00:03:47,880 --> 00:03:51,410
+và có sử dụng một mệnh đề ON để nêu rõ
+khi nào chúng cần được liên kết.
+
+66
+00:03:52,420 --> 00:03:53,790
+Được chứ?
+
+67
+00:03:53,790 --> 00:03:57,930
+Giờ ta sẽ tìm hiểu kĩ hơn mối liên kết
+ta có ở đây;
+
+68
+00:03:57,930 --> 00:03:59,400
+ta sẽ làm rõ mối liên kết ấy.
+
+69
+00:03:59,400 --> 00:04:02,410
+Ta sẽ nhìn sâu hơn vào
+các mối liên kết ta có ở đây
+
+70
+00:04:02,410 --> 00:04:06,870
+bằng cách quan sát tất cả dữ liệu
+đang nằm trong
+
+71
+00:04:06,870 --> 00:04:09,000
+mối liên kết giữa hai hàng này.
+
+72
+00:04:09,000 --> 00:04:12,460
+Vậy ở đây, một lần nữa
+ta có lệnh SELECT,
+
+73
+00:04:12,460 --> 00:04:16,060
+và mệnh đề FROM liệt kê các bảng
+cần liên kết - Album và Artist.
+
+74
+00:04:16,060 --> 00:04:19,300
+Vậy các bảng này sẽ gộp lại
+thành một hàng dài.
+
+75
+00:04:19,300 --> 00:04:22,210
+Các bảng ấy là bảng Album
+và bảng Artist.
+
+76
+00:04:22,210 --> 00:04:24,010
+Phần này là bảng Artist,
+còn phần này là bảng Album.
+
+77
+00:04:24,010 --> 00:04:26,010
+Và ta vẫn có các
+liên kết khóa ngoại.
+
+78
+00:04:27,150 --> 00:04:32,730
+Ta cũng thêm vào lệnh SELECT
+hai trường này.
+
+79
+00:04:32,730 --> 00:04:34,700
+Mọi thứ vẫn giống như trước,
+
+80
+00:04:34,700 --> 00:04:38,800
+chỉ là tôi sẽ cho bạn thấy
+mối liên kết này được tạo ra như thế nào.
+
+81
+00:04:38,800 --> 00:04:44,930
+Bây giờ ta chọn các cột title (tên album), artist_id, 
+id (trong bảng Artist) và name (tên nghệ sĩ).
+
+82
+00:04:44,930 --> 00:04:48,720
+Bạn có thể thấy rằng bảng này
+chứa toàn bộ dữ liệu của tất cả các bảng.
+
+83
+00:04:48,720 --> 00:04:51,730
+Các bảng phía trên được gắn với nhau
+như thể có keo
+
+84
+00:04:51,730 --> 00:04:52,710
+dính chúng với nhau.
+
+85
+00:04:52,710 --> 00:04:54,610
+Chúng đã được liên kết với nhau,
+
+86
+00:04:54,610 --> 00:04:59,490
+và điều ấy xảy ra khi
+hai giá trị này bằng nhau.
+
+87
+00:04:59,490 --> 00:05:02,060
+Vậy nếu bạn nhập lệnh,
+đó sẽ là thứ chương trình trả về.
+
+88
+00:05:02,060 --> 00:05:05,850
+Vậy những con số ấy không
+nhất thiết phải được hiển thị,
+
+89
+00:05:05,850 --> 00:05:08,950
+nhưng chúng là điểm xuất phát
+của các mối liên kết.
+
+90
+00:05:08,950 --> 00:05:09,590
+Được chứ?
+
+91
+00:05:09,590 --> 00:05:12,660
+Chúng là điểm xuất phát của 
+mối liên kết, và nhờ việc chọn chúng,
+
+92
+00:05:12,660 --> 00:05:13,860
+bạn có thể biết
+chúng trông thế nào.
+
+93
+00:05:15,430 --> 00:05:18,010
+Bây giờ, ta sẽ xây dựng một bảng mới.
+
+94
+00:05:18,010 --> 00:05:22,330
+Giờ ta muốn có bảng gồm hai cột-
+Tên bản nhạc và tên thể loại.
+
+95
+00:05:22,330 --> 00:05:26,490
+Nếu ta nhìn vào bảng Track,
+ta sẽ thấy có cột genre_id.
+
+96
+00:05:26,490 --> 00:05:28,420
+Ta có sự trùng lặp ở đây.
+
+97
+00:05:28,420 --> 00:05:30,910
+Và ta cần tra cứu từ bảng này.
+
+98
+00:05:30,910 --> 00:05:33,210
+Ta muốn thấy tất cả các bản nhạc,
+
+99
+00:05:33,210 --> 00:05:36,010
+cùng với thể loại của chúng.
+
+100
+00:05:36,010 --> 00:05:36,560
+Đúng không?
+
+101
+00:05:36,560 --> 00:05:37,720
+Thể loại ở đây là Rock, Rock,
+Metal, Metal.
+
+102
+00:05:37,720 --> 00:05:41,550
+Vậy ta đã tái xây dựng phần dữ liệu
+trùng lặp, phải không?
+
+103
+00:05:41,550 --> 00:05:44,010
+Đây là thứ mà người dùng muốn thấy.
+
+104
+00:05:44,010 --> 00:05:45,540
+Tuy nhiên ở bên phải là
+thứ ta đang lưu trong cơ sở dữ liệu,
+
+105
+00:05:45,540 --> 00:05:46,880
+được chứ?
+
+106
+00:05:46,880 --> 00:05:49,060
+Vậy ta sẽ có lệnh SELECT Track.title.
+
+107
+00:05:49,060 --> 00:05:50,360
+Đó là cột này.
+
+108
+00:05:50,360 --> 00:05:51,270
+Tiếp theo là Genre.name -- là cột này,
+với dữ liệu lấy từ một bảng khác.
+
+109
+00:05:51,270 --> 00:05:55,430
+Sau đó là from Track join Genre.
+
+110
+00:05:55,430 --> 00:05:56,180
+Lệnh này sẽ
+
+111
+00:05:56,180 --> 00:06:01,080
+tạo ra một bảng lớn 
+gồm các hàng dài từ hai bảng này.
+
+112
+00:06:01,080 --> 00:06:03,420
+Rồi ta sẽ có mệnh đề ON.
+
+113
+00:06:03,420 --> 00:06:04,950
+Bạn có thể nghĩ rằng
+xây dựng cái này rất khó. 
+
+114
+00:06:04,950 --> 00:06:07,050
+Tuy nhiên, ta thấy đây là bảng Track.
+
+115
+00:06:07,050 --> 00:06:08,880
+Ta có một khóa ngoại là genre_id.
+
+116
+00:06:08,880 --> 00:06:11,580
+Vậy nó sẽ cần có giá trị
+giống như tênbảng.id.
+
+117
+00:06:11,580 --> 00:06:12,170
+Phải không?
+
+118
+00:06:12,170 --> 00:06:14,560
+Khi viết những lệnh này tôi gần như
+chỉ cần cắt dán thật nhanh.
+
+119
+00:06:14,560 --> 00:06:18,030
+Càng viết quen thì càng dễ, từ bảng Track
+
+120
+00:06:18,030 --> 00:06:23,530
+đến bảng Genre, và tôi chỉ việc
+tạo các quan hệ theo một cú pháp chuẩn.
+
+121
+00:06:23,530 --> 00:06:26,410
+Tôi thao tác như vậy rất nhiều lần.
+
+122
+00:06:26,410 --> 00:06:27,070
+Được chứ?
+
+123
+00:06:27,070 --> 00:06:29,990
+Giờ tôi sẽ chạy lệnh này
+và kết quả là đây.
+
+124
+00:06:29,990 --> 00:06:32,390
+Ta đã tái xây dựng những chi tiết trùng lặp.
+
+125
+00:06:32,390 --> 00:06:36,240
+Đây cũng là lúc thích hợp
+để cho bạn thấy kĩ hơn
+
+126
+00:06:36,240 --> 00:06:39,800
+những gì đã xảy ra
+để nối hai bảng với nhau.
+
+127
+00:06:39,800 --> 00:06:44,550
+Cho đến giờ, mọi thứ đều ổn
+và đơn giản với mệnh đề ON.
+
+128
+00:06:44,550 --> 00:06:50,690
+Nhưng điều gì sẽ xảy ra
+nếu ta bỏ mệnh đề ON đi?
+
+129
+00:06:50,690 --> 00:06:55,350
+Lúc đó, hai cột này sẽ được chọn từ 
+bảng được tạo bằng cách gắn hai bảng này với nhau.
+
+130
+00:06:55,350 --> 00:06:58,080
+Bằng cách nào đó, ta đã
+gắn hai bảng này với nhau.
+
+131
+00:06:58,080 --> 00:07:02,485
+Vậy nếu bạn không có mệnh đề ON,
+chương trình sẽ trả về
+
+132
+00:07:02,485 --> 00:07:09,200
+tất cả các cặp
+tên bản nhạc-thể loại.
+
+133
+00:07:09,200 --> 00:07:12,200
+Ta thấy có bốn hàng ở bảng này,
+và hai ở bảng kia.
+
+134
+00:07:12,200 --> 00:07:14,150
+Chương trình sẽ kết hợp từng hàng của bảng này 
+với từng hàng của bảng kia,
+
+135
+00:07:14,150 --> 00:07:18,660
+tức là ứng với mỗi hàng trong bảng này
+có 2 cặp, cho tổng cộng là 8 cặp.
+
+136
+00:07:18,660 --> 00:07:23,180
+Giả sử nếu mỗi bảng có 100
+bản ghi, sẽ có 10000 cặp.
+
+137
+00:07:23,180 --> 00:07:27,460
+Vậy nếu không có mệnh đề ON,
+tất cả các cặp sẽ được trả về.
+
+138
+00:07:27,460 --> 00:07:28,830
+Ta có thể thấy được điều đó sau đây.
+
+139
+00:07:28,830 --> 00:07:30,978
+Ở đây, câu lệnh SELECT
+vẫn giống hệt như trước,
+
+140
+00:07:30,978 --> 00:07:33,629
+có Track.title, genre_id (trong bảng Track),
+Genre.id,
+
+141
+00:07:33,629 --> 00:07:38,200
+và ta cũng có thêm những cột ở giữa
+mà đáng ra sẽ thuộc mệnh đề ON.
+
+142
+00:07:38,200 --> 00:07:43,620
+Vậy ta có lệnh FROM Track JOIN Genre,
+và không có mệnh đề ON.
+
+143
+00:07:43,620 --> 00:07:45,210
+Đó là điều đã thay đổi.
+
+144
+00:07:45,210 --> 00:07:49,860
+Ta thêm hai cột này, và bỏ đi
+mệnh đề ON.
+
+145
+00:07:49,860 --> 00:07:55,270
+Giờ ta sẽ quan sát điều gì
+sẽ xảy ra khi ta chạy lệnh này.
+
+146
+00:07:55,270 --> 00:07:57,030
+Ta không cần quan tâm
+nó chiếm mấy dòng, nên
+
+147
+00:07:57,030 --> 00:08:00,000
+bạn sẽ thấy rằng tôi viết lệnh chiếm
+nhiều dòng mà vẫn không sao cả.
+
+148
+00:08:01,200 --> 00:08:04,710
+Vậy bạn có thể giãn cách và thêm dòng 
+để làm SQL nhìn đẹp mắt hơn.
+
+149
+00:08:04,710 --> 00:08:06,518
+Tôi làm vậy rất nhiều;
+tôi còn lùi đầu dòng nữa.
+
+150
+00:08:06,518 --> 00:08:13,490
+Lùi đầu dòng tuy không cần thiết,
+nhưng nó trông vẫn rất đẹp.
+
+151
+00:08:13,490 --> 00:08:17,400
+Giờ ta có thể thấy tất cả
+các cặp đều hiện ra, đúng không?
+
+152
+00:08:17,400 --> 00:08:20,930
+1 - 1; 1 - 2 rồi lại 1 - 1. Chẳng hạn, 'Black Dog'
+ở đây thuộc cả hai thể loại.
+
+153
+00:08:20,930 --> 00:08:25,760
+Nó có bản ghi ứng với cả thể loại 1 và 2.
+
+154
+00:08:25,760 --> 00:08:28,550
+Vì ta không có mệnh đề ON nên
+chương trình sẽ không tìm kết quả trùng khớp.
+
+155
+00:08:28,550 --> 00:08:29,910
+Vậy khi nghĩ về phép nối JOIN..
+
+156
+00:08:29,910 --> 00:08:34,640
+bạn có thể coi nó như là
+
+157
+00:08:34,640 --> 00:08:39,740
+xây dựng tất cả các cặp
+dữ liệu có thể giữa 2 bảng.
+
+158
+00:08:39,740 --> 00:08:42,150
+Mệnh đề ON sẽ bỏ đi những bản ghi 
+có các con số không khớp nhau.
+
+159
+00:08:43,790 --> 00:08:49,120
+Nói cách khác, nó sẽ chọn những bản ghi
+với các con số trùng nhau, phải không?
+
+160
+00:08:49,120 --> 00:08:50,790
+Ta chọn cặp này.
+
+161
+00:08:50,790 --> 00:08:52,060
+Ta chọn cặp này.
+
+162
+00:08:52,060 --> 00:08:53,200
+Ta chọn cặp này.
+
+163
+00:08:53,200 --> 00:08:54,920
+Và ta cũng chọn cặp này.
+
+164
+00:08:54,920 --> 00:08:57,540
+Đó là việc mệnh đề ON làm,
+
+165
+00:08:57,540 --> 00:08:59,990
+nó sẽ chọn ra những bản ghi
+với hai con số khớp nhau.
+
+166
+00:08:59,990 --> 00:09:03,000
+Nếu bạn không có mệnh đề ON,
+
+167
+00:09:03,000 --> 00:09:06,080
+tất cả các cặp sẽ xuất hiện.
+
+168
+00:09:06,080 --> 00:09:09,840
+Đây là một hàng, và nó
+được nối với cả hai ID.
+
+169
+00:09:09,840 --> 00:09:12,720
+Đây là hàng tiếp theo
+và ta chọn cả hai cặp.
+
+170
+00:09:12,720 --> 00:09:18,760
+Với hàng thứ ba và thứ tư,
+ta cũng chọn cả hai cặp.
+
+171
+00:09:18,760 --> 00:09:23,990
+Nhưng sau đó, mệnh đề ON sẽ
+xóa đi những cặp không trùng khớp.
+
+172
+00:09:25,880 --> 00:09:27,105
+Ôi, tôi lại gạch nhầm rồi.
+
+173
+00:09:27,105 --> 00:09:31,040
+Tôi làm sai nhiều quá..
+Nhưng bạn hiểu ý tưởng rồi đó.
+
+174
+00:09:31,040 --> 00:09:31,920
+Vậy đó là mệnh đề ON.
+
+175
+00:09:33,210 --> 00:09:36,140
+Đó là cách nó hoạt động.
+Thực ra khi tiếp xúc cái này lần đầu,
+
+176
+00:09:36,140 --> 00:09:38,800
+tôi cứ nghĩ nó sẽ tự khớp
+nhưng hóa ra là không.
+
+177
+00:09:38,800 --> 00:09:42,068
+Khi có mệnh đề ON, chương trình sẽ 
+chọn dữ liệu phù hợp một cách rất thông minh.
+
+178
+00:09:42,068 --> 00:09:44,199
+Rất thông minh.
+
+179
+00:09:44,199 --> 00:09:46,450
+Tuy nhiên, đó không phải
+vấn đề của ta.
+
+180
+00:09:46,450 --> 00:09:49,150
+Bây giờ, mọi thứ có thể trở nên phức tạp.
+
+181
+00:09:49,150 --> 00:09:51,480
+Bởi lúc này, ta cần
+tên bản nhạc,
+
+182
+00:09:51,480 --> 00:09:54,660
+tên nghệ sĩ, tên album
+và tên thể loại.
+
+183
+00:09:54,660 --> 00:09:58,410
+Dù trông có vẻ là rất nhiều thứ,
+nhưng nếu bạn để ý sẽ thấy nó vẫn theo mẫu.
+
+184
+00:09:58,410 --> 00:10:01,290
+Đầu tiên ta có SELECT,
+theo sau là những thứ ta cần thấy.
+
+185
+00:10:01,290 --> 00:10:03,810
+Ở đây là danh sách những cột cần được trả lại.
+
+186
+00:10:03,810 --> 00:10:08,380
+Ta không chú ý đến các ID. Và sau đó
+ta phải có mệnh đề FROM rất dài này,
+
+187
+00:10:08,380 --> 00:10:13,260
+có ghi 'Track join Genre join Album join Artist'.
+
+188
+00:10:13,260 --> 00:10:18,660
+Điều đó nghĩa là tất cả các bảng
+sẽ được nối vào với nhau.
+
+189
+00:10:18,660 --> 00:10:23,310
+Tiếp theo là mệnh đề ON, trông khá
+phức tạp; giờ ta sẽ xử lí nó.
+
+190
+00:10:23,310 --> 00:10:24,720
+Ta sẽ bắt đầu với bảng Track, và
+từ đó làm tiếp.
+
+191
+00:10:24,720 --> 00:10:29,730
+Ta cần khóa ngoại genre_id trong bảng Track
+khớp với khóa chính của bảng Genre.
+
+192
+00:10:29,730 --> 00:10:34,950
+Ngoài ra, album_id trong bảng Track
+cần khớp với khóa chính của bảng Album,
+
+193
+00:10:34,950 --> 00:10:39,380
+cũng như khóa ngoại còn lại-- artist_id
+trong bảng Album khớp với Artist.id.
+
+194
+00:10:39,380 --> 00:10:40,840
+Giờ ta sẽ trở lại với sơ đồ ta đã vẽ
+
+195
+00:10:40,840 --> 00:10:44,960
+với các bảng được liên kết với nhau.
+
+196
+00:10:46,400 --> 00:10:49,390
+Ta sẽ nhìn vào sơ đồ để thấy vì sao nó lại
+
+197
+00:10:49,390 --> 00:10:51,900
+quan trọng, và ta sẽ tái xây dựng toàn bộ.
+
+198
+00:10:51,900 --> 00:10:55,950
+Với tôi, nó có vẻ hơi phức tạp.
+
+199
+00:10:55,950 --> 00:10:57,030
+Nhưng sau khi đã làm vài lần,
+
+200
+00:10:57,030 --> 00:11:01,480
+bạn sẽ nhận ra sự quan trọng
+của các quy ước đặt tên.
+
+201
+00:11:02,560 --> 00:11:05,810
+Để tôi cho các bạn xem.
+Giờ ta sẽ chọn cả cái đống này.
+
+202
+00:11:09,916 --> 00:11:12,410
+Dán nó vào đây, rồi cho chạy lệnh.
+
+203
+00:11:13,450 --> 00:11:15,730
+Vậy là tái xây dựng xong.
+
+204
+00:11:15,730 --> 00:11:18,590
+Ở đây cũng có trùng lặp,
+nhưng đó là kết quả đầu ra.
+
+205
+00:11:18,590 --> 00:11:22,900
+Đó là điểm kỳ diệu của cơ sở dữ liệu:
+Ta tái xây dựng tất cả dữ liệu trùng lặp, 
+
+206
+00:11:22,900 --> 00:11:25,060
+nhưng thực tế ta không
+lưu trữ sự trùng lặp ấy.
+
+207
+00:11:25,060 --> 00:11:27,620
+Đó là lý do vì sao bạn phải
+học cách viết các mệnh đề JOIN.
+
+208
+00:11:28,800 --> 00:11:32,620
+Vậy khi nghĩ lại, ta sẽ thấy
+mình đã đi hết một vòng tròn.
+
+209
+00:11:32,620 --> 00:11:34,910
+Giống như mọi dự án khởi nghiệp,
+
+210
+00:11:34,910 --> 00:11:38,540
+ta chỉ mất ba ngày
+để xây dựng sản phẩm của mình.
+
+211
+00:11:38,540 --> 00:11:42,560
+Ta bắt đầu với một giao diện người dùng
+do ta thiết kế, trong đó có sự trùng lặp.
+
+212
+00:11:42,560 --> 00:11:46,690
+Rồi ta đã xây dựng một mô hình logic,
+rồi mô hình thực tế,
+
+213
+00:11:46,690 --> 00:11:47,810
+sau đó là nhập tất cả dữ liệu,
+
+214
+00:11:47,810 --> 00:11:50,900
+liên kết các bảng với các con số
+thay vì dùng chuỗi kí tự.
+
+215
+00:11:50,900 --> 00:11:53,470
+Giờ, ta sử dụng phép nối JOIN
+để tái xây dựng nó.
+
+216
+00:11:53,470 --> 00:11:55,730
+Vậy, ta bắt đầu từ đây,
+
+217
+00:11:55,730 --> 00:11:58,330
+ta đi qua từng bước một,
+rồi ta đến được đây.
+
+218
+00:11:58,330 --> 00:12:00,760
+Theo đó, ta có thể tái xây dựng
+
+219
+00:12:00,760 --> 00:12:04,800
+sản phẩm đầu ra mà người dùng
+đầu cuối ưng ý.
+
+220
+00:12:04,800 --> 00:12:07,480
+Giờ đây ta còn có thể xử lí hàng triệu,
+thậm chí hàng tỉ hàng,
+
+221
+00:12:07,480 --> 00:12:10,600
+vì ta đã cẩn thận xây dựng
+một cấu trúc dữ liệu hợp lí.

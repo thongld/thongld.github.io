@@ -1,0 +1,375 @@
+1
+00:00:00,000 --> 00:00:04,591
+(nhạc mở đầu)
+
+2
+00:00:04,591 --> 00:00:06,562
+Xin chào, tôi là Matthew Harris,
+
+3
+00:00:06,562 --> 00:00:08,723
+tôi là sinh viên ngành triết học tại Đại học Duke
+
+4
+00:00:08,723 --> 00:00:10,851
+Và hôm nay tôi sẽ thảo luận về ngụy biện hình thức
+
+5
+00:00:10,851 --> 00:00:12,185
+ngộ nhận kết quả
+
+6
+00:00:12,185 --> 00:00:14,008
+và lí do tại sao nhiều khi bạn không thể kết luận rằng
+
+7
+00:00:14,007 --> 00:00:16,272
+bạn nên ngâm mình trong một bồn tắm đầy bơ lạc.
+
+8
+00:00:16,272 --> 00:00:17,771
+Ngộ nhận kết quả xảy ra
+
+9
+00:00:17,771 --> 00:00:19,489
+khi ai đó cố gắng phỏng đoán sự thật
+
+10
+00:00:19,489 --> 00:00:21,414
+về tiền đề của một câu điều kiện
+
+11
+00:00:21,414 --> 00:00:25,166
+từ bản chất thật của câu điều kiện và kết quả của nó
+
+12
+00:00:25,166 --> 00:00:27,068
+Nhưng hãy cùng tìm hiểu kĩ hơn điều về điều này.
+
+13
+00:00:27,068 --> 00:00:29,007
+Có hai loại ngụy biện lô-gic:
+
+14
+00:00:29,007 --> 00:00:30,491
+hình thức và phi hình thức
+
+15
+00:00:30,492 --> 00:00:33,093
+Cả hai loại đều là các dạng gây tranh cãi với các khiếm khuyết riêng.
+
+16
+00:00:33,093 --> 00:00:34,650
+Đầu tiên là về các ngụy biện phi hình thức
+
+17
+00:00:34,649 --> 00:00:36,774
+chúng thiếu sự tương trợ cho kết luận
+
+18
+00:00:36,774 --> 00:00:38,748
+bởi chúng có "tì vết" trong chính nội dung
+
+19
+00:00:38,749 --> 00:00:40,769
+Ta cũng có các ngụy biện hình thức
+
+20
+00:00:40,768 --> 00:00:43,170
+những thứ mà giống ngộ nhận kết quả ở chỗ
+
+21
+00:00:43,170 --> 00:00:45,945
+chúng có những thiếu sót trong hình thức lập luận
+
+22
+00:00:45,945 --> 00:00:47,733
+và chúng không hợp lệ
+
+23
+00:00:47,734 --> 00:00:50,426
+Để hiểu rõ hơn, hãy cùng xem xét
+một vài định nghĩa khác nữa
+
+24
+00:00:50,426 --> 00:00:52,807
+Ta tạo ra các câu điều kiện mọi lúc
+
+25
+00:00:52,807 --> 00:00:54,304
+Và nhìn chung là ta dễ nhận biết chúng
+
+26
+00:00:54,304 --> 00:00:55,848
+bởi vì chúng thường có dạng
+
+27
+00:00:55,848 --> 00:00:58,066
+"nếu P thì Q".
+
+28
+00:00:58,067 --> 00:01:00,331
+Trong đó, "P" là tiền đề
+
+29
+00:01:00,331 --> 00:01:01,653
+Cách dễ dàng để chỉ ra các tiền đề
+
+30
+00:01:01,652 --> 00:01:02,908
+là chúng thường theo sau
+
+31
+00:01:02,908 --> 00:01:04,903
+từ "nếu", dù là đứng ở vị trí đầu,
+
+32
+00:01:04,903 --> 00:01:07,131
+giữa, hay là cuối câu đi chăng nữa
+
+33
+00:01:07,132 --> 00:01:08,712
+Nếu bạn cần hỗ trợ trong việc ghi nhớ điều này,
+
+34
+00:01:08,712 --> 00:01:10,210
+thì chỉ cần nhớ rằng tiền đề xuất hiện
+
+35
+00:01:10,209 --> 00:01:12,147
+trước vế còn lại xét về mặt lô-gic,
+
+36
+00:01:12,147 --> 00:01:15,167
+và vế còn lại đó có vẻ chính là "vế sau"
+
+37
+00:01:15,167 --> 00:01:17,576
+Hệ quả của điều kiện
+
+38
+00:01:17,575 --> 00:01:18,552
+thông thường chính là phần theo sau
+
+39
+00:01:18,552 --> 00:01:20,328
+từ "thì"
+
+40
+00:01:20,328 --> 00:01:21,409
+Điều này chắc là dễ nhớ
+
+41
+00:01:21,409 --> 00:01:23,335
+bởi nó nghe có vẻ rất giống "kết quả"
+
+42
+00:01:23,335 --> 00:01:25,278
+và về cơ bản thì đúng là như vậy
+
+43
+00:01:26,448 --> 00:01:29,099
+Vì thế nên ta hãy cùng xét
+các câu điều kiện sau đây làm các ví dụ
+
+44
+00:01:29,099 --> 00:01:30,375
+Giả sử có ai đó nói với bạn
+
+45
+00:01:30,376 --> 00:01:32,560
+về các điều kiện thực và khẳng định sau đây:
+
+46
+00:01:32,560 --> 00:01:34,346
+"Nếu hàng xóm ăn thịt con vẹt của Susan,
+
+47
+00:01:34,346 --> 00:01:36,007
+thì Susan sẽ nổi giận,"
+
+48
+00:01:36,007 --> 00:01:38,481
+và "Susan nổi giận".
+
+49
+00:01:38,480 --> 00:01:40,418
+Vì là nếu đúng là hàng xóm 
+
+50
+00:01:40,418 --> 00:01:43,623
+ăn thịt con vẹt, thì cô ấy mới nổi giận,
+
+51
+00:01:43,623 --> 00:01:46,361
+và cũng đúng là cô ấy nổi giận,
+
+52
+00:01:46,361 --> 00:01:48,138
+thì không có nghĩa là cô ấy nổi giận
+
+53
+00:01:48,138 --> 00:01:51,283
+những người hàng xóm đã ăn mất con vẹt
+
+54
+00:01:51,284 --> 00:01:52,724
+Có lẽ cô ấy nổi đóa lên là vì con vẹt đó
+
+55
+00:01:52,724 --> 00:01:54,582
+không thú vị lắm
+
+56
+00:01:54,582 --> 00:01:56,323
+Hoặc có thể là cô ta nổi giận vì con vẹt không biết
+
+57
+00:01:56,323 --> 00:01:57,786
+cách sử dụng chiếc xe đồ chơi mà cô ta đã mất 
+
+58
+00:01:57,786 --> 00:01:59,736
+cả buổi chiều để làm cho nó
+
+59
+00:01:59,736 --> 00:02:02,162
+Tuy nhiên, nó không tuân theo sự kết hợp
+
+60
+00:02:02,162 --> 00:02:04,682
+của điều kiện đúng và hệ quả đúng
+
+61
+00:02:04,682 --> 00:02:07,790
+rằng tiền đề là đúng
+
+62
+00:02:07,790 --> 00:02:10,073
+Hãy cùng xem xét vài ví dụ nữa:
+
+63
+00:02:10,074 --> 00:02:11,978
+"Nếu Tom có lí do chính đáng để phàn nàn,
+
+64
+00:02:11,978 --> 00:02:14,974
+"thì Tom sẽ phàn nàn vào ngày mai"
+
+65
+00:02:14,973 --> 00:02:17,875
+Có thể là bạn biết rõ về anh chàng Tom này,
+
+66
+00:02:17,875 --> 00:02:19,836
+nên bạn biết rằng điều đó là đúng
+
+67
+00:02:19,836 --> 00:02:21,356
+Có thể bạn thậm chí còn biết rằng đúng là
+
+68
+00:02:21,356 --> 00:02:23,575
+Tom sẽ phàn nàn vào ngày mai
+
+69
+00:02:23,575 --> 00:02:24,911
+Nhưng điều này sẽ không dẫn tới việc
+
+70
+00:02:24,911 --> 00:02:27,140
+Tom có lí do chính đáng để phàn nàn
+
+71
+00:02:27,139 --> 00:02:28,496
+Có thể đơn giản là vì anh ta không biết
+
+72
+00:02:28,497 --> 00:02:30,692
+có cách nào tốt hơn cách này để thu hút sự chú ý
+
+73
+00:02:30,692 --> 00:02:33,073
+Giờ thì hãy cùng xem xét một ví dụ nữa
+
+74
+00:02:33,073 --> 00:02:36,230
+Hãy xem xét điều kiện và xác nhận này:
+
+75
+00:02:36,230 --> 00:02:38,133
+"Nếu anh bị dị ứng với bơ lạc,
+
+76
+00:02:38,133 --> 00:02:39,712
+"thì việc ngâm mình trong bồn tắm chứa bơ lạc
+
+77
+00:02:39,712 --> 00:02:41,918
+là ý tưởng hết sức tồi tệ,"
+
+78
+00:02:41,918 --> 00:02:44,168
+và "ngâm mình trong bồn tắm chứa bơ lạc
+
+79
+00:02:44,168 --> 00:02:46,556
+là ý tưởng tồi tệ;
+
+80
+00:02:46,556 --> 00:02:49,156
+do đó, bạn bị dị ứng với bơ lạc."
+
+81
+00:02:50,344 --> 00:02:51,557
+Chỉ vì đúng là
+
+82
+00:02:51,557 --> 00:02:54,043
+ việc ngâm mình trong bồn tắm chứa bơ lạc là ý tưởng tồi tệ 
+
+83
+00:02:54,043 --> 00:02:55,481
+nếu như bạn bị dị ứng,
+
+84
+00:02:55,481 --> 00:02:57,340
+và cũng đúng là nhìn chung
+ngâm mình trong bồn tắm chứa bơ lạc
+
+85
+00:02:57,340 --> 00:02:59,997
+ là ý tưởng tồi tệ
+
+86
+00:02:59,997 --> 00:03:02,818
+không có nghĩa là bạn bị dị ứng với bơ lạc.
+
+87
+00:03:02,818 --> 00:03:04,537
+Nếu bạn kết luận điều này,
+
+88
+00:03:04,538 --> 00:03:05,963
+thì bạn sẽ phạm phải ngụy biện
+
+89
+00:03:05,963 --> 00:03:07,914
+ngộ nhận kết quả
+
+90
+00:03:07,914 --> 00:03:08,936
+Vậy nên đó là ngụy biện hình thức
+
+91
+00:03:08,937 --> 00:03:10,237
+ngộ nhận kết quả,
+
+92
+00:03:10,237 --> 00:03:12,998
+và một vài ví dụ mà bạn có thể sử dụng trong tương lai.
+
+93
+00:03:23,080 --> 00:03:26,080
+Phụ đề bởi Nhóm Kiến học
+

@@ -1,0 +1,286 @@
+1
+00:00:00,840 --> 00:00:02,840
+Hello again and welcome back to Operations
+
+2
+00:00:02,840 --> 00:00:06,450
+Management
+We are continuing with the topic of inventory
+
+3
+00:00:06,450 --> 00:00:12,080
+In our last section, we gave an introduction
+to inventory, why we use it,
+
+4
+00:00:12,080 --> 00:00:16,170
+and in this one, we are going to talk about
+Total cost equation.
+
+5
+00:00:16,170 --> 00:00:23,220
+This total cost equation is very important
+because it helps us to determine how much
+
+6
+00:00:23,220 --> 00:00:28,609
+of an item to order at any given time
+Let’s get started
+
+7
+00:00:28,609 --> 00:00:34,000
+There are 3 main components to this Annual
+inventory total cost
+
+8
+00:00:34,000 --> 00:00:39,800
+The first piece is how much does this cost
+us to actually order the inventory
+
+9
+00:00:39,800 --> 00:00:45,210
+Every time we place an order, there is a cost
+to associate with it
+
+10
+00:00:45,210 --> 00:00:49,320
+The second aspect of this equation is how
+much does it cost
+
+11
+00:00:49,320 --> 00:00:55,310
+to physically hold on this inventory,
+and this is a physical and an opportunity
+
+12
+00:00:55,310 --> 00:01:02,079
+cost to hold on that inventory
+And the third part of the equation is how
+
+13
+00:01:02,079 --> 00:01:06,170
+much the inventory itself costs
+So those are the 3 pieces
+
+14
+00:01:06,170 --> 00:01:12,490
+So I am going to develop an equation that
+capture all of these three components
+
+15
+00:01:12,490 --> 00:01:17,770
+So in order to do that we have to take a look
+at certain number of variables
+
+16
+00:01:17,770 --> 00:01:23,259
+The capital letter Q: that represents quantity.
+
+17
+00:01:23,259 --> 00:01:26,350
+So when we place an order,
+we‘re actually going to order a certain
+
+18
+00:01:26,350 --> 00:01:28,480
+number of units and that’s what Q is.
+
+19
+00:01:28,480 --> 00:01:32,709
+It is the number of units ordered at a given
+time.
+
+20
+00:01:32,709 --> 00:01:39,389
+R is annual throughput rate
+In other word how much we are going to use
+
+21
+00:01:39,389 --> 00:01:43,179
+in a year
+Sometimes it’s known as demand but remember
+
+22
+00:01:43,179 --> 00:01:49,419
+this is a total annual cost equation
+So everything we are dealing with here is
+
+23
+00:01:49,419 --> 00:01:54,739
+for a year
+C is how much a unit cost
+
+24
+00:01:54,739 --> 00:02:00,399
+Just how much you pay for it
+S is the set-up cost
+
+25
+00:02:00,399 --> 00:02:08,319
+Every time you place an order this is a special
+cost associates with placing an order
+
+26
+00:02:08,319 --> 00:02:11,980
+Now let’s look at the bottom one here
+That’s the capital letter H
+
+27
+00:02:11,980 --> 00:02:15,310
+This is Annual holding cost of an individual
+unit
+
+28
+00:02:15,310 --> 00:02:23,219
+As we can recall, inventory has a physical
+holding as well as an opportunity cost
+
+29
+00:02:23,219 --> 00:02:30,290
+So you can see that capital H is the combination
+of both physical holding cost which is lowercase
+
+30
+00:02:30,290 --> 00:02:35,069
+h,
+plus the opportunity cost, which is lowercase,
+
+31
+00:02:35,069 --> 00:02:40,019
+multiplied by the unit cost
+So that’s what we’re going to use,
+
+32
+00:02:40,019 --> 00:02:45,239
+we’ll use capital H but it actually comprises
+both physical and opportunity cost
+
+33
+00:02:45,239 --> 00:02:50,810
+So with this variable let’s move on to the
+first piece of the equation
+
+34
+00:02:50,810 --> 00:02:56,959
+This is the cost of placing an order
+So the annual set-up costs are every time
+
+35
+00:02:56,959 --> 00:03:05,269
+we place an order we are incurring a cost
+So if we order 5 times, we‘ll take a set-up
+
+36
+00:03:05,269 --> 00:03:10,400
+cost and multiply it by 5
+If we order 10 times we’re taking a set-up
+
+37
+00:03:10,400 --> 00:03:15,390
+cost and multiply it by 10
+But to determine the number of times you are
+
+38
+00:03:15,390 --> 00:03:19,090
+placing an order,
+we take a total throughput rate,
+
+39
+00:03:19,090 --> 00:03:23,719
+which is R and divided by the amount of ordering
+at a time
+
+40
+00:03:23,719 --> 00:03:28,239
+So R over Q will tell us how many times you
+are placing an order
+
+41
+00:03:28,239 --> 00:03:31,240
+and we’re multiplying it by S, the set-up
+cost
+
+42
+00:03:31,240 --> 00:03:39,930
+They give you the annual set-up cost
+Next is your annual holding cost
+
+43
+00:03:39,930 --> 00:03:47,709
+So what we need is average inventory, which
+is typically identified as Q over 2
+
+44
+00:03:47,709 --> 00:03:53,529
+Because this is the amount of ordering and
+when we get down to 0, we order again
+
+45
+00:03:53,529 --> 00:04:00,810
+So average inventory is shown as Q over 2,
+we multiple that by holding cost
+
+46
+00:04:00,810 --> 00:04:09,459
+So that’s annual holding cost
+Next is the annual cost of actually acquiring
+
+47
+00:04:09,459 --> 00:04:14,510
+the product
+So that’s the cost for item times the total
+
+48
+00:04:14,510 --> 00:04:17,110
+number of items
+we are gonna use in a year, which is R
+
+49
+00:04:17,110 --> 00:04:22,949
+That’s C times R
+So now we’ve defined the 3 aspects of the
+
+50
+00:04:22,949 --> 00:04:27,810
+annual total cost equation
+and when we bring them together it looks like
+
+51
+00:04:27,810 --> 00:04:34,020
+this:
+A total annual cost is equal to annual set-up
+
+52
+00:04:34,020 --> 00:04:40,400
+costs (S times R over Q)
+plus annual holding costs (H times Q over
+
+53
+00:04:40,400 --> 00:04:45,750
+2) and annual cost of units purchased (C times
+R)
+
+54
+00:04:45,750 --> 00:04:51,810
+That’s total annual cost equation
+Now we are gonna take the equation in the
+
+55
+00:04:51,810 --> 00:04:56,430
+next video and talk about the economic order
+quantity,
+
+56
+00:04:56,430 --> 00:05:01,680
+which is trying to figure out what is the
+right value for Q,
+
+57
+00:05:01,680 --> 00:05:07,280
+how much order at a time in order minimize
+that total cost
+
+58
+00:05:07,280 --> 00:05:07,900
+I will see you then
+

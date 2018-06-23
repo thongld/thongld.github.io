@@ -1,0 +1,362 @@
+1
+00:00:04,580 --> 00:00:06,190
+https://youtu.be/HCPMHVvJWAI
+Đây có thể sẽ là một trong số
+
+2
+00:00:06,190 --> 00:00:11,480
+những bài toán tôi thích nhất về tài chính, bài tập vốn
+cực kỳ quan trọng. Đầu tiên, ta sẽ giải nó
+
+3
+00:00:11,480 --> 00:00:14,760
+theo cách đơn giản và sau đó là chia nhỏ ra
+
+4
+00:00:14,760 --> 00:00:19,890
+thành nhiều phần và tìm hiểu 
+vì sao mà tài chính lại tuyệt vời như thế. Bài toán nho nhỏ này
+
+5
+00:00:19,890 --> 00:00:24,810
+cho thấy rất nhiều điều, và ta có thể rút
+ra rất nhiều điều có ý nghĩa. Nhưng ở phần đầu
+
+6
+00:00:24,810 --> 00:00:31,349
+tôi chỉ muốn bạn hiểu cách mọi thứ 
+vận hành, vậy, các bạn hãy đọc đề bài, một lần nữa
+
+7
+00:00:31,350 --> 00:00:37,850
+đây là một dạng bài toán PV. Bạn định học tại một trường đại học
+nội bang, đối với những ai
+
+8
+00:00:37,850 --> 00:00:44,190
+không sống ở Mỹ, và phần lớn các bạn
+có thể không sống ở Mỹ, thì nội bang, đó
+
+9
+00:00:44,190 --> 00:00:48,510
+có nghĩa là nếu học ở 
+trường đại học, ví dụ như đại học Michigan, bạn sẽ được hưởng
+
+10
+00:00:48,510 --> 00:00:54,580
+mức học phí thấp hơn vì chúng tôi là trường công
+lập với điều kiện bạn là người dân ở Michigan và
+
+11
+00:00:54,580 --> 00:00:59,720
+có vài quy định nhất định áp dụng cho
+bạn để đủ tư cách, ví dụ như bạn phải sinh ra tại đây, bạn
+
+12
+00:00:59,720 --> 00:01:04,830
+cư dân ở đây. Khi đó, học phí của bạn
+sẽ thấp hơn nhưng vẫn sẽ là rất nhiều tiền và
+
+13
+00:01:04,830 --> 00:01:11,610
+nhiều người cũng quan ngại về giáo dục liên quan 
+đến việc chi phí giáo dục không thể cứ, ý tôi
+
+14
+00:01:11,610 --> 00:01:16,450
+là, học phí không thể cứ tăng mãi được. 
+Ngay cả tiền học phí nội bang cũng đã khá 
+
+15
+00:01:16,450 --> 00:01:22,520
+cao rồi. Vậy, ở đây, một sinh viên tới 
+Michigan nói rằng "Ba mẹ tôi sẽ sẽ
+
+16
+00:01:22,520 --> 00:01:28,330
+phải đi vay một khoản $100,000 với lãi suất 6%, việc chọn lãi suất
+
+17
+00:01:28,330 --> 00:01:32,380
+hầu như là ngẫu nhiên nhưng tôi sẽ
+thay đổi chúng theo thời gian với hy vọng rằng 
+
+18
+00:01:32,380 --> 00:01:37,770
+lãi suất sẽ thấp hơn. Vậy, bạn vay tiền và
+nhận khoản vay ngày hôm nay. Bạn sẽ thực hiện
+
+19
+00:01:37,770 --> 00:01:42,580
+thanh toán theo từng năm và bạn có năm
+năm để trả hết khoản nợ. Tính từ
+
+20
+00:01:42,580 --> 00:01:47,300
+năm 1, bây giờ điều này có thể thay đổi và chúng ta sẽ làm một việc phức tạp hơn, đó là
+
+21
+00:01:47,300 --> 00:01:51,970
+khi bạn vay nợ ngày hôm nay, bạn có thể không thực hiện thanh toán
+trong 2 năm và sau đó mới bắt đầu trả
+
+22
+00:01:51,970 --> 00:02:01,280
+nhưng ta đang nói về một khoản nợ đơn giản. Vậy hãy vẽ trục thời gian ra một lần nữa.
+
+23
+00:02:01,300 --> 00:02:08,759
+Lần này ta vẽ màu đỏ và cũng để cho chúng ta đỡ nhàm chán.
+0, 5, vậy ta cũng biết được N bằng
+
+24
+00:02:08,759 --> 00:02:22,470
+5. 1..2. Vậy, đây là bài toán về PV nhưng
+không như bài toán lần trước, PV được 
+
+25
+00:02:22,470 --> 00:02:29,859
+cho trước. Vậy, PV là $100,000 đúng không? Và chúng ta sẽ 
+
+26
+00:02:29,860 --> 00:02:38,380
+cố gắng tìm ra PMT, vậy 
+chúng ta sẽ cố gắng để tính ra đâu là
+
+27
+00:02:38,380 --> 00:02:44,850
+khoản tiền hằng năm. Và nếu bạn để ý, nếu như 
+bạn nhìn vào bài toán đầu tiên, hãy tự mình giải 
+
+28
+00:02:44,850 --> 00:02:50,859
+bài toán. Bạn có thể tạm dừng, nhưng tôi sẽ  đi tiếp 
+vì chúng ta không dừng quá nhiều được
+
+29
+00:02:50,860 --> 00:02:56,70
+đúng không ạ? Vậy, bài toán ở đây là, giờ khi đã phần nào hiểu vấn đề, ta sẽ có khả năng giải được nó.
+
+30
+00:02:56,70 --> 00:03:01,549
+Bạn hãy dùng Excel để giải hoặc tự tính cũng được
+Sau đó quay lại video và xem thế nào nhé, được không ạ?
+
+31
+00:03:01,550 --> 00:03:06,430
+Điểm tôi muốn nhấn mạnh vào chỗ in đậm ở đây, tôi nói
+là trả theo năm, tôi đang đơn giản hóa
+
+32
+00:03:06,430 --> 00:03:12,320
+vấn đề. Vì sao? Bởi vì thông thường, những khoản trả
+sẽ là hằng tháng, nhưng chúng ta sẽ quay trở lại
+
+33
+00:03:12,320 --> 00:03:16,440
+điều này ngay sau đây, trong một bài toàn phức tạp hơn. 
+Được rồi, bây giờ chúng ta hãy cứ coi là
+
+34
+00:03:16,440 --> 00:03:17,780
+5 năm đã.
+
+35
+00:03:17,780 --> 00:03:22,280
+Được rồi, thực sự nó không quá khó nếu
+bạn dùng Excel để tính theo tháng.
+
+36
+00:03:22,280 --> 00:03:27,510
+5 năm, vậy thì câu hỏi là cái dấu chấm hỏi
+đó là sao? Và cái dấu hỏi đó 
+
+37
+00:03:27,510 --> 00:03:37,70
+là PMT. Trước khi ta bắt đầu, hãy một lần nữa
+làm bài tập giản đơn này đã. Giả sử
+
+38
+00:03:37,70 --> 00:03:46,250
+bạn vay $100,000 và lãi suất là 6%, mỗi năm bạn sẽ phải trả bao nhiêu nếu, lãi suất
+
+39
+00:03:46,250 --> 00:03:53,740
+bằng 0? Đầu tiên, số tiền $100,000 hôm nay sẽ là số dương đối với bạn, nhưng là số âm 
+
+40
+00:03:53,750 --> 00:03:57,830
+đối với ngân hàng. Tôi chỉ đang lặp lại những gì Excel
+sẽ làm, bạn đặt một dấu dương để lấy một
+
+41
+00:03:57,830 --> 00:04:03,790
+dấu âm. Bạn đặt một dấu âm, bạn sẽ nhận được một dấu dương.
+
+42
+00:04:03,790 --> 00:04:08,160
+Với ngân hàng là âm, với bạn, tôi đang cười
+
+43
+00:04:08,160 --> 00:04:13,170
+bởi vì tôi cũng tự nhủ "chuyện quái gì chứ?" $100,000 bạn có 
+là dương, nhưng rồi bạn sẽ phải đặt 
+
+44
+00:04:13,170 --> 00:04:17,849
+tổng cộng là những năm lần dấu âm . Vậy thì nếu 
+như không có lãi suất nào, thì bạn sẽ 
+
+45
+00:04:17,850 --> 00:04:19,30
+phải trả bao nhiêu mỗi năm?
+
+46
+00:04:19,29 --> 00:04:25,590
+$20,000. Vậu, hãy coi lãi suất như
+công dụng của tiền, vậy, tôi sẽ để bạn làm điều đó nhưng
+
+47
+00:04:25,590 --> 00:04:33,380
+lần này, chúng ta hãy bắt đầu với PMT, ngay khi
+ bạn làm trong Excel và tôi hy vọng bạn
+
+48
+00:04:33,380 --> 00:04:40,300
+đang mở Excel kế bên rồi. Bạn có thể thật sử dụng những công thức đó luôn. Và với các bạn
+
+49
+00:04:40,300 --> 00:04:41,790
+thích vọc máy tính như tôi một thời
+
+50
+00:04:41,790 --> 00:04:45,700
+hãy dùng công thức để kiểm tra lần hai nhưng
+Excel rất hữu hiệu. Một khi bạn biết 
+
+51
+00:04:45,700 --> 00:04:46,210
+bạn đang làm điều gì.
+
+52
+00:04:46,210 --> 00:04:57,570
+Hãy điền lãi suất vào, 0.06. N là bao nhiêu? 5 năm. 
+Và tôi tin và nếu tôi có nói điều gì sai
+
+53
+00:04:57,570 --> 00:05:01,640
+như thế, đó chỉ là sai ngớ ngẩn bởi vì bạn
+luôn có thể kiểm tra. Tôi nghĩ con số kế tiếp là 
+
+54
+00:05:01,640 --> 00:05:07,680
+PV và con số cuối cùng bạn có thể nhập
+vào là FV. Vậy thì PV cuối cùng là, 
+
+55
+00:05:07,680 --> 00:05:17,590
+đừng nhập vào dấu phẩy vì nó 
+không dùng được trong công thức của excel, đúng không ạ? Bởi vì
+
+56
+00:05:17,590 --> 00:05:22,260
+không máy tính sẽ không hiểu, nó sẽ cho rằng,
+nếu bạn dùng dấu phẩy tại đây, nó sẽ hiểu rằng PV
+
+57
+00:05:22,260 --> 00:05:27,270
+chỉ có 100, vậy cứ viết ra
+một trăm ngàn, nếu tôi có lỡ 
+
+58
+00:05:27,270 --> 00:05:28,130
+bỏ dấu phẩy vào, bạn cứ bảo
+
+59
+00:05:28,130 --> 00:05:38,60
+thày Gautham thật lẩm cẩm, mà tối vốn như vậy, và bạn cứ 
+tiếp tục. Vậy PMT sẽ là gì đây? Hai mươi ba ngàn, bảy trăm 
+
+60
+00:05:38,60 --> 00:05:56,450
+và ba mươi chín phẩy sáu tư. $23,739.64. Giá trị này cao hơn là $3,739
+hàng năm so với trường hợp nếu lãi suất
+
+61
+00:05:56,450 --> 00:05:59,990
+là không. Điều đó có hợp lý không?
+
+62
+00:05:59,990 --> 00:06:06,940
+Chắc rồi, đây là chỗ đang làm bạn đau đầu. Vì sao? Bởi bạn đang phải trả nợ. Vậy, nếu bạn cho nó là một số dương,
+
+63
+00:06:06,940 --> 00:06:11,860
+thì nó sẽ cho ra số âm. Vậy nếu
+đây là dương thì đây là
+
+64
+00:06:11,860 --> 00:06:16,440
+số âm, nếu từ khía cạnh của bạn nhìn lại thì bối cảnh này khá hợp lý. Từ phía ngân hàng
+
+65
+00:06:16,440 --> 00:06:20,670
+đây là dòng tiền ra
+âm, họ sẽ có giá trị
+
+66
+00:06:20,670 --> 00:06:29,30
+số dương tương ứng. Một lần nữa, điều này thật tuyệt, phải không? Nó thật đơn giản, nhưng mạnh mẽ, để tôi nhắc lại một điều nữa
+
+67
+00:06:29,40 --> 00:06:34,960
+dù bạn hay cha mẹ bạn nắm bao nhiêu quyền kiểm soát 
+trong lúc đưa ra quyết định?
+
+68
+00:06:34,960 --> 00:06:40,340
+Bạn quyết định dựa trên những gì bạn cần, 
+rằng bạn cần $100,000 
+
+69
+00:06:40,340 --> 00:06:42,20
+trong 5 năm
+
+70
+00:06:42,20 --> 00:06:46,950
+chung với gia đình của bạn và rồi
+bạn nhận khoản vay, sau đó bạn chọn
+
+71
+00:06:46,950 --> 00:06:49,810
+bạn muốn trả nợ trong bao nhiêu 
+năm 
+
+72
+00:06:49,810 --> 00:06:55,640
+Thông thường, bạn sẽ có đôi chút lựa 
+chọn và sau đó, lãi suất,
+
+73
+00:06:55,640 --> 00:07:00,969
+mọi người nghĩ rằng bạn biết đang kiếm soát, 
+nhưng không phải thế, đó là lý do vì sao các thị trường
+
+74
+00:07:00,970 --> 00:07:01,880
+trông đều quá đỗi tươi đẹp.
+
+75
+00:07:01,880 --> 00:07:08,770
+Không có ai trong thị trường này thật sự
+một mình kiểm soát 6%, điều đó
+
+76
+00:07:08,770 --> 00:07:16,650
+được xác định chung bởi tất cả chúng ta. 
+Hãy giải bài toán này và bạn sẽ thấy Excel 
+
+77
+00:07:16,650 --> 00:07:21,739
+làm cuộc đời bạn dễ chịu như thế nào. Bạn cũng có thể tính với N=500 và nó sẽ cho bạn đáp án.
+

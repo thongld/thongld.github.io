@@ -1,0 +1,729 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/9s85rfrV6nc
+
+1
+00:00:00,000 --> 00:00:00,354
+
+2
+00:00:00,354 --> 00:00:01,395
+DR. JONATHAN VALVANO: Hi.
+
+3
+00:00:01,395 --> 00:00:06,540
+In this last video, we thought
+we would recap the journey
+
+4
+00:00:06,540 --> 00:00:13,700
+that you have taken with us by asking
+the question, what did we learn?
+
+5
+00:00:13,700 --> 00:00:18,120
+DR. RAMESH YERRABALLI: So the first lab
+you did introduced you to the Keil IDE;
+
+6
+00:00:18,120 --> 00:00:22,850
+the development process in general,
+which involves writing new code,
+
+7
+00:00:22,850 --> 00:00:29,100
+editing it, then compiling it,
+running it, testing, debugging,
+
+8
+00:00:29,100 --> 00:00:30,760
+and repeating this cycle.
+
+9
+00:00:30,760 --> 00:00:34,960
+You were introduced to
+the TM4C microcontroller
+
+10
+00:00:34,960 --> 00:00:39,180
+and you will encounter similar
+microcontrollers and similar IDEs.
+
+11
+00:00:39,180 --> 00:00:43,910
+The concepts will be easily
+translatable to other systems.
+
+12
+00:00:43,910 --> 00:00:48,400
+DR. JONATHAN VALVANO: In the next
+lab, we learned how to program in C.
+
+13
+00:00:48,400 --> 00:00:53,030
+And the first concept was this idea of
+functions, or a functional abstraction,
+
+14
+00:00:53,030 --> 00:00:58,120
+where we would encapsulate one idea and
+turn into a function and then use it.
+
+15
+00:00:58,120 --> 00:01:00,130
+We had if-thens and loops.
+
+16
+00:01:00,130 --> 00:01:02,500
+We did Character I/O with a printf.
+
+17
+00:01:02,500 --> 00:01:09,550
+And again, lab five was an introduction
+to the process of programming in C.
+
+18
+00:01:09,550 --> 00:01:12,160
+DR. RAMESH YERRABALLI:
+Lab six introduced you
+
+19
+00:01:12,160 --> 00:01:16,500
+to time, which is an important
+parameter in embedded systems.
+
+20
+00:01:16,500 --> 00:01:23,240
+We saw a visual rendering of events with
+respect to time using a logic analyzer.
+
+21
+00:01:23,240 --> 00:01:29,260
+And we were able to verify that
+the expected behavior is precisely
+
+22
+00:01:29,260 --> 00:01:34,440
+measured by visually checking
+it on a logic analyzer.
+
+23
+00:01:34,440 --> 00:01:36,490
+DR. JONATHAN VALVANO:
+Then in lab seven, we
+
+24
+00:01:36,490 --> 00:01:40,820
+introduced the development life
+cycle, the product life cycle.
+
+25
+00:01:40,820 --> 00:01:43,393
+And what we started with
+were specifications,
+
+26
+00:01:43,393 --> 00:01:49,010
+and then we went to design and
+implementation and testing.
+
+27
+00:01:49,010 --> 00:01:51,960
+And we did that whole
+process using a concept
+
+28
+00:01:51,960 --> 00:01:54,560
+called functional
+decomposition, which was
+
+29
+00:01:54,560 --> 00:01:59,320
+to break down a complicated
+problem into smaller pieces.
+
+30
+00:01:59,320 --> 00:02:03,920
+And again, timing was a big
+deal, and so we learned how
+
+31
+00:02:03,920 --> 00:02:05,570
+to both measure and control time.
+
+32
+00:02:05,570 --> 00:02:08,080
+
+33
+00:02:08,080 --> 00:02:10,720
+DR. RAMESH YERRABALLI: So lab
+eight was your first exposure
+
+34
+00:02:10,720 --> 00:02:16,070
+to building circuitry off board,
+which is we were using mainly
+
+35
+00:02:16,070 --> 00:02:19,320
+on board switches and
+lights, but now we have
+
+36
+00:02:19,320 --> 00:02:24,660
+to design knowing things
+like resistances measuring
+
+37
+00:02:24,660 --> 00:02:30,201
+voltages, currents, and appropriately
+choosing your components for the target
+
+38
+00:02:30,201 --> 00:02:30,700
+design.
+
+39
+00:02:30,700 --> 00:02:33,230
+
+40
+00:02:33,230 --> 00:02:35,610
+DR. JONATHAN VALVANO:
+And then in lab nine
+
+41
+00:02:35,610 --> 00:02:40,230
+was our first effort of proving
+that our software works.
+
+42
+00:02:40,230 --> 00:02:42,600
+Embedded systems, as
+you know, are deployed
+
+43
+00:02:42,600 --> 00:02:47,910
+in situations where life-critical
+functionality must be guaranteed.
+
+44
+00:02:47,910 --> 00:02:51,390
+And so we introduced this
+idea of functional debugging,
+
+45
+00:02:51,390 --> 00:02:56,370
+and we use an array to
+capture the input, the output,
+
+46
+00:02:56,370 --> 00:02:59,770
+but not only what they
+were, but when they occur.
+
+47
+00:02:59,770 --> 00:03:05,240
+And so this was a minimally
+intrusive dumping into an array, such
+
+48
+00:03:05,240 --> 00:03:10,390
+that we could demonstrate and verify
+that our software and hardware was
+
+49
+00:03:10,390 --> 00:03:13,190
+working as intended.
+
+50
+00:03:13,190 --> 00:03:18,280
+DR. RAMESH YERRABALLI: We know lab
+10 gave problems to some of you.
+
+51
+00:03:18,280 --> 00:03:21,230
+It was a little challenging,
+but what we want you to--
+
+52
+00:03:21,230 --> 00:03:23,480
+DR. JONATHAN VALVANO: You
+see my finite state machine?
+
+53
+00:03:23,480 --> 00:03:25,230
+That was my answer right there.
+
+54
+00:03:25,230 --> 00:03:28,270
+DR. RAMESH YERRABALLI: What we
+want you to take away from lab 10
+
+55
+00:03:28,270 --> 00:03:33,790
+is that finite state machines are
+a very effective tool that you
+
+56
+00:03:33,790 --> 00:03:38,990
+will have in your toolbox when designing
+complex systems because you separate
+
+57
+00:03:38,990 --> 00:03:44,250
+the engine from the data
+and you focus on the data,
+
+58
+00:03:44,250 --> 00:03:48,680
+and the engine is the same engine that
+you repeatedly use for any system.
+
+59
+00:03:48,680 --> 00:03:51,820
+And this was also your
+introduction to SysTick,
+
+60
+00:03:51,820 --> 00:03:55,420
+which allowed you to
+introduce time-related events
+
+61
+00:03:55,420 --> 00:03:58,130
+into your finite state machine.
+
+62
+00:03:58,130 --> 00:04:00,320
+DR. JONATHAN VALVANO: Then
+in lab 11, what you'll
+
+63
+00:04:00,320 --> 00:04:04,620
+notice that we communicated
+between one computer and another.
+
+64
+00:04:04,620 --> 00:04:07,150
+And we did something
+very simple, but this
+
+65
+00:04:07,150 --> 00:04:11,390
+is the essence of what people are
+now calling the internet of things,
+
+66
+00:04:11,390 --> 00:04:14,080
+where all the computers
+are connected up.
+
+67
+00:04:14,080 --> 00:04:17,540
+And in particular, embedded systems
+are out there at the forefront,
+
+68
+00:04:17,540 --> 00:04:23,010
+at the edge of the world, gathering
+information and affecting the world.
+
+69
+00:04:23,010 --> 00:04:28,270
+And so we saw the UART was a simple
+way to send data in serial fashion
+
+70
+00:04:28,270 --> 00:04:31,050
+from one computer to another.
+
+71
+00:04:31,050 --> 00:04:34,280
+We saw that we could
+represent non-integer values
+
+72
+00:04:34,280 --> 00:04:36,480
+using something called fixed point.
+
+73
+00:04:36,480 --> 00:04:40,090
+And we had a new programming
+tool called a string, which
+
+74
+00:04:40,090 --> 00:04:43,070
+was a variable length
+ASCII set of characters.
+
+75
+00:04:43,070 --> 00:04:46,080
+
+76
+00:04:46,080 --> 00:04:49,790
+DR. RAMESH YERRABALLI: Lab 12
+introduced interrupts in earnest.
+
+77
+00:04:49,790 --> 00:04:55,050
+Embedded systems derive the
+responsiveness in practice
+
+78
+00:04:55,050 --> 00:04:57,470
+because they support interrupts.
+
+79
+00:04:57,470 --> 00:05:00,100
+So what we did in lab
+12 is showed you how
+
+80
+00:05:00,100 --> 00:05:03,750
+you can use interrupts
+to generate sound,
+
+81
+00:05:03,750 --> 00:05:07,770
+and the sound needs to be
+at a particular frequency
+
+82
+00:05:07,770 --> 00:05:10,570
+and we can get a precise frequency
+because we're using interrupts.
+
+83
+00:05:10,570 --> 00:05:14,300
+
+84
+00:05:14,300 --> 00:05:17,420
+DR. JONATHAN VALVANO: Lab
+13 got harder and harder.
+
+85
+00:05:17,420 --> 00:05:20,090
+Now embedded systems
+must shape the world.
+
+86
+00:05:20,090 --> 00:05:25,370
+And so we need a way to connect
+the computer, which is essentially
+
+87
+00:05:25,370 --> 00:05:29,700
+a digital device into a
+continuous real world.
+
+88
+00:05:29,700 --> 00:05:33,670
+And one of the tools we used was
+the digital-to-analog converter.
+
+89
+00:05:33,670 --> 00:05:36,700
+And you built one yourself,
+right out of bare resistors.
+
+90
+00:05:36,700 --> 00:05:41,230
+And so it took a digital number
+and created an analog output.
+
+91
+00:05:41,230 --> 00:05:45,790
+Whenever we consider this conversion
+between digital and analog,
+
+92
+00:05:45,790 --> 00:05:51,280
+we must sample or discretize,
+both in amplitude and in time.
+
+93
+00:05:51,280 --> 00:05:53,050
+That's what we call sampling.
+
+94
+00:05:53,050 --> 00:05:56,610
+And once we do that, we need a famous
+theorem, the Nyquist theorem, which
+
+95
+00:05:56,610 --> 00:06:02,210
+tells us that if we're interested in
+oscillations up to a certain frequency,
+
+96
+00:06:02,210 --> 00:06:07,757
+f, then the data must be sampled
+at more than twice that frequency.
+
+97
+00:06:07,757 --> 00:06:08,965
+That was the Nyquist theorem.
+
+98
+00:06:08,965 --> 00:06:11,520
+
+99
+00:06:11,520 --> 00:06:15,430
+DR. RAMESH YERRABALLI: So lab
+14 addressed the counterpart.
+
+100
+00:06:15,430 --> 00:06:18,800
+If embedded systems
+have to shape the world,
+
+101
+00:06:18,800 --> 00:06:21,330
+they also have to input the world.
+
+102
+00:06:21,330 --> 00:06:26,750
+That is, they have to read the world
+in its analog form by digitizing it.
+
+103
+00:06:26,750 --> 00:06:30,530
+So we program the 12-bit
+ADC on the system.
+
+104
+00:06:30,530 --> 00:06:35,480
+We also made sure that we wrote
+a driver for the ADC, which
+
+105
+00:06:35,480 --> 00:06:37,500
+involved a set of subroutines.
+
+106
+00:06:37,500 --> 00:06:39,500
+We used a modular design.
+
+107
+00:06:39,500 --> 00:06:45,450
+We made sure that we calibrated
+the analog potentiometer
+
+108
+00:06:45,450 --> 00:06:50,047
+so that we have an accurate
+rendering of its behavior.
+
+109
+00:06:50,047 --> 00:06:51,380
+DR. JONATHAN VALVANO: All right.
+
+110
+00:06:51,380 --> 00:06:55,320
+Lab 15, which was
+optional, was the most fun.
+
+111
+00:06:55,320 --> 00:07:00,280
+We thought we'd put it all together
+in one hand-held video game.
+
+112
+00:07:00,280 --> 00:07:05,970
+We added more interrupts so you can
+have multiple operations occurring
+
+113
+00:07:05,970 --> 00:07:06,860
+in the background.
+
+114
+00:07:06,860 --> 00:07:08,200
+You've got your foreground.
+
+115
+00:07:08,200 --> 00:07:10,200
+And that's called multithreading.
+
+116
+00:07:10,200 --> 00:07:14,560
+This allows your game to be lifelike
+because more than one thing can
+
+117
+00:07:14,560 --> 00:07:16,650
+be happening at a time.
+
+118
+00:07:16,650 --> 00:07:21,170
+The graphical structures, the images
+that we generated on the screen,
+
+119
+00:07:21,170 --> 00:07:25,010
+we used a C programming
+concept called structures.
+
+120
+00:07:25,010 --> 00:07:29,950
+And we rendered those structures
+to produce the graphical image.
+
+121
+00:07:29,950 --> 00:07:34,100
+So again, the purpose of lab 15 was
+to put all the concepts together--
+
+122
+00:07:34,100 --> 00:07:38,580
+the D-to-A, the A-to-D, the interrupts,
+the C programming, the testing, all
+
+123
+00:07:38,580 --> 00:07:45,180
+of that into one program
+that's fun to play.
+
+124
+00:07:45,180 --> 00:07:48,760
+DR. RAMESH YERRABALLI: So I hope
+you enjoyed doing all these labs.
+
+125
+00:07:48,760 --> 00:07:55,730
+You learned something and you are going
+to use these concepts in your life
+
+126
+00:07:55,730 --> 00:07:59,490
+as you develop as an
+embedded systems engineer.
+
+127
+00:07:59,490 --> 00:08:02,480
+We would like to summarize
+some of the best practices.
+
+128
+00:08:02,480 --> 00:08:05,470
+These are by no means
+the only ones, but these
+
+129
+00:08:05,470 --> 00:08:10,410
+are things that we think are
+good things to take away.
+
+130
+00:08:10,410 --> 00:08:13,330
+So rather than talk
+about all these, we'll
+
+131
+00:08:13,330 --> 00:08:16,930
+talk about what is
+our favorite of these.
+
+132
+00:08:16,930 --> 00:08:19,830
+My favorite is try until you succeed.
+
+133
+00:08:19,830 --> 00:08:21,040
+Keep trying.
+
+134
+00:08:21,040 --> 00:08:21,850
+Be courageous.
+
+135
+00:08:21,850 --> 00:08:25,810
+The best programmers in the
+world didn't happen overnight.
+
+136
+00:08:25,810 --> 00:08:30,140
+They had enough failures
+to talk about, and that's
+
+137
+00:08:30,140 --> 00:08:35,799
+how they showed that they're courageous
+and not afraid to make mistakes.
+
+138
+00:08:35,799 --> 00:08:37,320
+And show your work to others.
+
+139
+00:08:37,320 --> 00:08:41,400
+That's how you make sure
+that people can correct you
+
+140
+00:08:41,400 --> 00:08:44,830
+and you can become a better engineer.
+
+141
+00:08:44,830 --> 00:08:48,740
+DR. JONATHAN VALVANO: This
+is my approach to life.
+
+142
+00:08:48,740 --> 00:08:53,440
+In order to be truly successful,
+you need other people around you
+
+143
+00:08:53,440 --> 00:08:55,670
+to support and encourage.
+
+144
+00:08:55,670 --> 00:09:00,240
+And so I know that I
+can only be better when
+
+145
+00:09:00,240 --> 00:09:03,750
+I'm surrounded by people
+who are smarter than I am.
+
+146
+00:09:03,750 --> 00:09:08,760
+So I go out in the world and find
+the nicest, and the happiest,
+
+147
+00:09:08,760 --> 00:09:13,740
+and the most intelligent people,
+and I ask, can I work with you?
+
+148
+00:09:13,740 --> 00:09:19,240
+And that way, I know that
+they will make me better.
+
+149
+00:09:19,240 --> 00:09:21,040
+DR. RAMESH YERRABALLI:
+So I hope this has
+
+150
+00:09:21,040 --> 00:09:23,620
+been a journey that
+was worthwhile for you.
+
+151
+00:09:23,620 --> 00:09:25,720
+It's been really worthwhile for us.
+
+152
+00:09:25,720 --> 00:09:26,977
+And we hope to see you again.
+
+153
+00:09:26,977 --> 00:09:28,060
+DR. JONATHAN VALVANO: Yup.
+
+154
+00:09:28,060 --> 00:09:29,610
+See you on the internet.

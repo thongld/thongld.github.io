@@ -1,0 +1,461 @@
+1
+00:00:03,100 --> 00:00:06,960
+Giang Na 4/11/2016
+chương này của khóa học vật lý cấp tốc được tài trợ bởi Audible
+
+2
+00:00:06,960 --> 00:00:09,400
+bạn đã từng để ý kỹ chiếc cầu gần nhà bạn chưa?
+
+3
+00:00:09,400 --> 00:00:13,640
+ta đã biết điều gì sẽ xảy ra với chiếc cầu nếu bạn không kiểm soát tất cả các biến số trước khi xây dựng
+
+4
+00:00:13,640 --> 00:00:17,859
+vậy với những cái cầu hoạt động bình thường, như cái mà bạn vẫn đi qua hằng ngày thì sao?
+
+5
+00:00:17,859 --> 00:00:21,640
+nếu bạn đã đi ngang qua và dừng lại nhìn, có thể bạn sẽ thấy có những đường nứt trên bê tông
+
+6
+00:00:21,640 --> 00:00:26,660
+những đường này chỉ dày vài cm, và có chứa các tấm chắn kim loại
+
+7
+00:00:26,660 --> 00:00:28,780
+những vết nứt và tấm chắn đó tồn tại vì một lý do
+
+8
+00:00:28,780 --> 00:00:33,500
+chúng được gọi là mối nối mở rộng, nếu không có chúng, chiếc cầu có thể đã sụp đổ từ rất lâu
+
+9
+00:00:33,500 --> 00:00:37,000
+nếu ở thành phố bạn ở cũng có nhiều cầu, thì chắc cũng có các mối nối mở rộng
+
+10
+00:00:37,000 --> 00:00:39,518
+vậy tại sao những mối nối nham nhở này lại quan trọng?
+
+11
+00:00:39,520 --> 00:00:44,240
+để biết được câu trả lời hãy tìm hiểu nhiệt động lực học: nghiên cứu về nhiệt độ, và ảnh hưởng đối với vật chất
+
+12
+00:00:44,240 --> 00:00:57,079
+[nhạc nền]
+
+13
+00:00:57,079 --> 00:00:58,960
+vậy nhiệt độ là gì?
+
+14
+00:00:58,960 --> 00:01:04,960
+về cơ bản, nhiệt độ là số đo độ lớn của động năng, hay năng lượng của chuyển động, trong một hệ thống
+
+15
+00:01:04,959 --> 00:01:07,439
+nếu vật càng nóng thì nhiệt độ càng cao
+
+16
+00:01:07,439 --> 00:01:11,640
+động năng sẽ cao hơn vì các nguyên tử và phân tử chuyển động xung quanh nhiều hơn
+
+17
+00:01:11,640 --> 00:01:17,200
+và cách đơn giản nhất để xem có sự chênh lệch nhiệt độ giữa hai hệ thống hay không là thông qua truyền nhiệt
+
+18
+00:01:17,200 --> 00:01:20,060
+cái nào nóng hơn sẽ truyền nhiệt cho cái lạnh hơn
+
+19
+00:01:20,069 --> 00:01:24,859
+và nếu không có sự truyền nhiệt giữa hai hệ thống thì gọi là cân bằng nhiệt
+
+20
+00:01:24,859 --> 00:01:29,399
+nhưng thông thường, sẽ có sự truyền nhiệt vì đấy là sự thay đổi nhiệt đông của một hệ thống
+
+21
+00:01:29,399 --> 00:01:33,659
+và khi nhiệt độ của một vật thay đổi, nó sẽ trải qua quá trình giãn nở vì nhiệt
+
+22
+00:01:33,659 --> 00:01:39,500
+thông thường, nhiệt độ tăng sẽ dẫn đến giãn nở vì nhiệt của chất rắn, và nếu nhiệt độ giảm sẽ làm nó co lại
+
+23
+00:01:39,500 --> 00:01:43,579
+có 2 cách để thay đổi kích thước của chất rắn, dựa vào sự thay đổi nhiệt độ
+
+24
+00:01:43,579 --> 00:01:47,420
+nó có thể tăng hay giảm độ dài, cũng có thể tăng hay giảm thể tích
+
+25
+00:01:47,420 --> 00:01:54,320
+sự thay đổi về độ dài hay thể tích cũng tương tự như thay đổi về sức căng hay biến dạng mà ta đã nói ở phần dẫn điện
+
+26
+00:01:54,319 --> 00:01:58,779
+trường hợp chiếc cầu, đó là thay đổi về độ dài, còn được gọi là giãn nở tuyến tính
+
+27
+00:01:58,780 --> 00:02:05,640
+và phương trình ta dùng để biểu diễn giãn nở tuyến tính cho biết, thay đổi độ dài bằng hệ số của giãn nở tuyến tính
+
+28
+00:02:05,640 --> 00:02:08,460
+x độ dài ban đầu x biến thiên nhiệt độ
+
+29
+00:02:08,460 --> 00:02:10,939
+hãy phân tích phương trình để xem nó vận hành ra sao
+
+30
+00:02:10,939 --> 00:02:14,419
+độ dài ban đầu của cầu càng lớn, nó sẽ càng giãn nở hay co lại
+
+31
+00:02:14,419 --> 00:02:18,219
+biến thiên nhiệt độ càng lớn nó sẽ càng giãn nở hay co lại
+
+32
+00:02:18,219 --> 00:02:24,639
+một yếu tố ảnh hưởng đến biến thiên độ dài nữa là hệ số giãn nở tuyến tính, ký hiệu bằng chữ cái Hy Lạp alpha
+
+33
+00:02:24,639 --> 00:02:33,099
+giá trị hệ số đó phụ thuộc vào vật liệu, hệ số càng lớn thì biến thiên độ dài càng lớn tương tự như biến thiên nhiệt độ
+
+34
+00:02:33,099 --> 00:02:35,319
+và lý do tại sao cầu có các mối nối mở rộng
+
+35
+00:02:35,319 --> 00:02:40,699
+là để tạo nên không gian cho bê tông giãn nở khi trời nóng và co lại khi trời lạnh
+
+36
+00:02:40,699 --> 00:02:44,359
+nếu không có các mối nối đó, bê tông sẽ chịu sức căng
+
+37
+00:02:44,360 --> 00:02:47,260
+và có khả năng cao là cây cầu sẽ bị gãy
+
+38
+00:02:47,270 --> 00:02:50,130
+các nguyên tắc này cũng được áp dụng cho các loại giãn nở khác
+
+39
+00:02:50,129 --> 00:02:55,079
+giãn nở kích thước cũng như giãn nở tuyến tính, ngoại trừ việc nó thay đổi theo không gian 3 chiều
+
+40
+00:02:55,080 --> 00:02:58,420
+phương trình giãn nỡ kích thước cho biết biến thiên kích thước bằng
+
+41
+00:02:58,419 --> 00:03:03,819
+hê số giãn nở kích thước x thể tích ban đầu x biến thiên nhiệt độ
+
+42
+00:03:03,819 --> 00:03:09,239
+với giãn nở tuyến tính, kích thước ban đầu của vật càng lớn, nó sẽ càng giãn nở hay co lại
+
+43
+00:03:09,240 --> 00:03:12,200
+và biến thiên nhiệt độ càng lớn sẽ dẫn đến biến thiên kích thước càng lớn
+
+44
+00:03:12,199 --> 00:03:18,599
+cuối cùng, biến thiên kích thước phụ thuộc vào khả năng độ lớn của một vật liệu cụ thể có thể giãn nở hay co lại
+
+45
+00:03:18,599 --> 00:03:22,859
+đó là hệ số của giãn nở kích thước, ký hiệu bằng chữ cái Hy Lạp beta
+
+46
+00:03:22,860 --> 00:03:26,820
+nhưng biến thiên nhiệt độ không chỉ ảnh hưởng đến chất rắn mà còn đến chất khí
+
+47
+00:03:26,819 --> 00:03:32,219
+đối với chất khí, nhiệt độ ảnh hưởng trực tiếp đến áp suất, kích thước, và lượng khí
+
+48
+00:03:32,219 --> 00:03:34,560
+4 đặc tính này ảnh hưởng lẫn nhau
+
+49
+00:03:34,560 --> 00:03:41,000
+nếu bạn tham gia một khóa hóa học, giống như khóa của Hank, có thể bạn sẽ quen với khái niệm khí lý tưởng
+
+50
+00:03:41,000 --> 00:03:45,419
+khí theo giả thuyết sẽ phải thỏa mãn một số quy tắc nhất định, để có thể mô tả đơn giản hơn
+
+51
+00:03:45,419 --> 00:03:46,679
+vậy những quy tắc đó là gì?
+
+52
+00:03:46,680 --> 00:03:50,099
+khí lý tưởng được tạo nên từ nhiều phân tử chuyển động tự do xung quanh
+
+53
+00:03:50,099 --> 00:03:53,819
+khi chúng chuyển động nhanh, chúng sẽ đụng vào nhau và hợp nhất với nhau
+
+54
+00:03:53,819 --> 00:03:57,199
+nhưng không tác dụng lực vào nhau, ngoài những cú va chạm này
+
+55
+00:03:57,199 --> 00:04:01,719
+và kích thước của các phân tử khí cấu thành rất nhỏ, so với kích thước của phân tử được hợp nhất
+
+56
+00:04:01,719 --> 00:04:06,180
+trong nhiều trường hợp, một chất khí giống với khí lý tưởng, giống như giả định đặt ra
+
+57
+00:04:06,180 --> 00:04:12,240
+ghĩa là ta có thể dùng phương trình biểu diễn khí lý tưởng để biểu diễn nhiều trường hợp thực tế
+
+58
+00:04:12,240 --> 00:04:16,800
+và mỗi nguyên lý này mang tên một nhân vật vĩ đại sống cách đây hàng trăm năm
+
+59
+00:04:16,800 --> 00:04:18,560
+nguyên lý đầu tiên là nguyên lý Boyle
+
+60
+00:04:18,560 --> 00:04:23,019
+nó cho nếu bạn tăng áp suất một chất khí mà vẫn giữ nguyên nhiệt độ
+
+61
+00:04:23,019 --> 00:04:25,659
+thể tích của nó sẽ giảm, và ngược lại
+
+62
+00:04:25,660 --> 00:04:30,640
+nếu bạn tăng áp suất là ép các phân tử vào với nhau, do đó sẽ chiếm ít không gian
+
+63
+00:04:30,639 --> 00:04:33,599
+nguyên lý thứ hai là nguyên lý Charles, cho biết
+
+64
+00:04:33,600 --> 00:04:39,879
+nếu bạn tăng nhiệt độ chất khí mà vẫn giữ nguyên áp suất, thể tích sẽ tăng, và ngược lại
+
+65
+00:04:39,879 --> 00:04:46,860
+tăng nhiệt độ sẽ cung cấp thêm năng lượng cho các phân tử, nghĩa là chúng sẽ chuyển động mạnh hơn, làm tăng kích thước của khối chất
+
+66
+00:04:46,860 --> 00:04:53,759
+ở trên ta đã nói về sự ảnh hưởng lẫn nhau của các đặc tính của khí lý tưởng khi giữ nguyên nhiệt độ, và khi giữ nguyên áp suất
+
+67
+00:04:53,759 --> 00:04:57,560
+bạn có thể đoán được nguyên lý thứ 3 là: nguyên lý Gay-Lussac
+
+68
+00:04:57,560 --> 00:05:04,280
+cho biết nếu bạn tăng nhiệt độ chất khí và giữ nguyên thể tích, áp suất sẽ tăng, và ngược lại
+
+69
+00:05:04,279 --> 00:05:09,859
+điều xảy ra ở đây là nếu tăng nhiệt độ lần nữa sẽ cung cấp thêm năng lượng cho các phân tử và làm chúng chuyển dộng nhanh hơn
+
+70
+00:05:09,860 --> 00:05:12,920
+nhưng ở đây, kích thước khối chất cố định
+
+71
+00:05:12,920 --> 00:05:18,360
+do đó các phân tử sẽ chạm vào thành nhiều hơn và tác động nhiều lực hơn, làm tăng áp suất bên trong
+
+72
+00:05:18,360 --> 00:05:25,720
+cả 3 nguyên lý này có thể gộp thành một phương trình lớn, được gọi là nguyên lý khí lý tưởng, nó còn cho biết lượng khí
+
+73
+00:05:25,720 --> 00:05:30,540
+áp suất x thể tích = số mon khí x R x nhiệt độ
+
+74
+00:05:30,540 --> 00:05:32,819
+hay P V = n R T
+
+75
+00:05:32,819 --> 00:05:34,959
+n là số mon khí
+
+76
+00:05:34,959 --> 00:05:41,199
+mon là đơn vị đo lượng chất, trong trường hợp này là khí, đối với số lượng phân tử
+
+77
+00:05:41,199 --> 00:05:46,740
+nếu bạn có 1 mon khí nghĩa là bạn có 6,02 x 10^23 phân tử khí
+
+78
+00:05:46,740 --> 00:05:49,759
+R được gọi là hằng số khí phổ biến
+
+79
+00:05:49,759 --> 00:05:54,980
+đó là 1 con số liên kết áp suất và thể tích khí với số lượng mon khí và nhiệt độ
+
+80
+00:05:54,980 --> 00:05:59,879
+đối với mỗi khí lý tưởng, miễn là đơn vị đo không đổi, R cũng sẽ không đổi
+
+81
+00:05:59,879 --> 00:06:03,519
+khí lý tưởng bao gồm 3 nguyên lý cơ bản mà ta đã nhắc đến
+
+82
+00:06:03,519 --> 00:06:08,719
+biến thiên áp suất theo thể tích, biến thiên nhiệt độ theo thể tích và biến thiên áp suất theo nhiệt dộ
+
+83
+00:06:08,720 --> 00:06:15,920
+nhưng thay vì nói đến các mối quan hệ một cách độc lập, bạn có thể liên kết 4 đặc tính của chất khí, bao gồm lượng khí bạn có
+
+84
+00:06:15,920 --> 00:06:20,699
+để chứng minh điều này, hãy xem nguyên lý khí lý tưởng áp dụng ra sao trong đời sống hằng ngày
+
+85
+00:06:20,699 --> 00:06:26,180
+như một thói quen, mỗi ngày bạn lái xe đến trường một lần vào buổi sáng và một lần buổi chiều
+
+86
+00:06:26,180 --> 00:06:32,060
+vào buổi sáng trong xe rất lạnh, khoảng 285 kelvin, và bạn không ngần ngại bật lò sưởi
+
+87
+00:06:32,060 --> 00:06:38,360
+đến chiều, ở trong xe ấm hơn nhiều, khoảng 300 kelvin, nhưng bạn không bật điều hòa
+
+88
+00:06:38,360 --> 00:06:42,060
+cái mà ta muốn biết là, có bao nhiêu mon không khí trong xe vào buổi chiều?
+
+89
+00:06:42,060 --> 00:06:45,280
+xe của bạn không kín khí, nên các phân tử khí dễ dàng ra vào
+
+90
+00:06:45,279 --> 00:06:49,619
+ta nói rằng thể tích bên trong xe nơi bạn ngồi là khoảng 5 mét khối
+
+91
+00:06:49,620 --> 00:06:51,639
+và nó sẽ không thay đổi nhiều
+
+92
+00:06:51,639 --> 00:07:00,579
+áp suất bên trong xe bằng áp suất bên ngoài, và đó là áp suất khí quyển tiêu chuẩn, khoảng 101.325 pascal
+
+93
+00:07:00,579 --> 00:07:04,019
+vậy có bao nhiêu mon không khí bên trong xe khi bạn lái xe đến trường vào buổi sáng?
+
+94
+00:07:04,019 --> 00:07:12,139
+theo nguyên lý khí lý tưởng, số mon khí bằng áp suất x thể tích chia cho nhiệt độ x hằng số khí phổ biến
+
+95
+00:07:12,139 --> 00:07:23,159
+và 101.325 pascal x 5 mét khối, chia cho hằng số khí phổ biến x 285 kelvin bằng 214 mon
+
+96
+00:07:23,160 --> 00:07:27,600
+vậy có khoảng 214v mon không khí trong xe khi bạn đến trường buổi sáng
+
+97
+00:07:27,600 --> 00:07:34,920
+vậy có bao nhiêu mon không khí trong xe khi bạn lái xe về nhà buổi chiều, khi nhiệt độ cao hơn 15 kelvin so với buổi sáng?
+
+98
+00:07:34,920 --> 00:07:38,900
+ta sẽ tính tương tự, chỉ là nhiệt độ thay bằng 300 kelvin
+
+99
+00:07:38,899 --> 00:07:43,579
+và kết quả là 203 mon khí trong xe vào buổi chiều
+
+100
+00:07:43,579 --> 00:07:45,159
+chênh lệch 11 mon
+
+101
+00:07:45,160 --> 00:07:50,560
+vậy là có ít hơn 5,2% không khí trong xe hơn buổi sáng do nhiệt độ bên ngoài ấm hơn
+
+102
+00:07:50,560 --> 00:07:52,220
+hôm nay ta đã học về nhiệt độ
+
+103
+00:07:52,220 --> 00:07:55,600
+ta nói về giãn nở nhiệt, bao gồm giãn nở tuyến tính và kích thước
+
+104
+00:07:55,600 --> 00:08:00,320
+ta cũng đã nói về nguyên lý khí lý tưởng và cách áp dụng để xác định số mon không khí trong xe
+
+105
+00:08:00,319 --> 00:08:03,579
+chương này của khóa học vật lý cấp tốc được hỗ trợ bởi Audible.com
+
+106
+00:08:03,579 --> 00:08:07,339
+hiện tại Audible đang cung cấp dịch vụ 30 ngày trải nghiệm
+
+107
+00:08:07,339 --> 00:08:16,060
+hãy truy cập vào audible.com/crashcourse để biết các chương trình và các đầu mục sách như,  A Brief History of Time của Stephen Hawking
+
+108
+00:08:16,060 --> 00:08:21,780
+những điều tuyệt vời mà Hawking tạo nên cực kỳ dễ hiểu mà bạ biết đấy, không phải là điều dễ dàng
+
+109
+00:08:21,779 --> 00:08:23,779
+thực tế thì khá là khó
+
+110
+00:08:23,779 --> 00:08:30,979
+hãy truy cập vào audible.com/crashcourse và vào đường link hỗ trợ chúng tôi và nhận cơ hội trải nghiệm cho bạn
+
+111
+00:08:30,980 --> 00:08:34,720
+khóa học vật lý cấp tốc được phát triển với sự hợp tác của hãng phim PBS.
+
+112
+00:08:34,720 --> 00:08:39,019
+bạn có thể chuyển sang kênh của họ để xem các chương mới nhất từ các show như 
+
+113
+00:08:39,019 --> 00:08:42,460
+First Person, PBS Off Book, và PBS Game/Show.
+
+114
+00:08:42,460 --> 00:08:46,300
+chương này được quay phim ở hãng phim Doctor Cheryl C. Kinney  
+
+115
+00:08:46,299 --> 00:08:50,599
+với sự hỗ trợ của những người nhiệt tình và nhóm đồ họa tuyệt vời của chúng tôi là Thought Cafe  
+

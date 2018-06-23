@@ -1,0 +1,187 @@
+1
+00:00:01,589 --> 00:00:05,670
+https://www.youtube.com/watch?v=nOZui0fh4ok
+
+Let's recreate the numpy arrays from the previous
+video:
+
+2
+00:00:05,670 --> 00:00:09,630
+If you ask for the type of these arrays, <PAUSE>,
+Python tells you that they are `numpy` dot
+
+3
+00:00:09,630 --> 00:00:15,930
+`ndarray`. `numpy` dot tells you it's a type
+that was defined in the numpy package. `ndarray`
+
+4
+00:00:15,930 --> 00:00:20,850
+stands for n-dimensional array. The arrays
+`np_height` and `np_weight` are one-dimensional
+
+5
+00:00:20,850 --> 00:00:25,250
+arrays, but it's perfectly possible to create
+2 dimensional, three dimensional, heck even
+
+6
+00:00:25,250 --> 00:00:28,960
+seven dimensional arrays! Let's stick to 2
+in this video though.
+
+7
+00:00:28,960 --> 00:00:34,350
+You can create a 2D numpy array from a regular
+Python list of lists. Let's try to create
+
+8
+00:00:34,350 --> 00:00:38,190
+one numpy array for all height and weight
+data of your family, like this:
+
+9
+00:00:38,190 --> 00:00:44,680
+If you print out `np_2d` now, you'll see that
+it is a rectangular data structure: Each sublist
+
+10
+00:00:44,680 --> 00:00:50,790
+in the list, corresponds to a row in the two
+dimensional numpy array. From `np_2d.shape`,
+
+11
+00:00:50,790 --> 00:00:55,510
+you can see that we indeed have 2 rows and
+5 columns. `shape` is a so-called attribute
+
+12
+00:00:55,510 --> 00:00:59,500
+of the `np2d` array, that can give you more
+information about what the data structure
+
+13
+00:00:59,500 --> 00:01:01,390
+looks like.
+
+14
+00:01:01,390 --> 00:01:06,259
+Also for 2D arrays, the Numpy rule applies:
+an array can only contain a single type. If
+
+15
+00:01:06,259 --> 00:01:11,139
+you change one float to be string, all the
+array elements will be coerced to strings,
+
+16
+00:01:11,139 --> 00:01:13,069
+to end up with a homogenous array.
+
+17
+00:01:13,069 --> 00:01:18,659
+You can think of the 2D numpy array as an
+improved list of lists: you can perform calculations
+
+18
+00:01:18,659 --> 00:01:23,849
+on the arrays, like I showed before, and you
+can do more advanced ways of subsetting.
+
+19
+00:01:23,849 --> 00:01:28,459
+Suppose you want the first row, and then the
+third element in that row. To select the row,
+
+20
+00:01:28,459 --> 00:01:30,729
+you need the index 0 in square brackets.
+
+21
+00:01:30,729 --> 00:01:34,939
+To then select the third element, you can
+extend the same call with another pair of
+
+22
+00:01:34,939 --> 00:01:39,840
+brackets, this time with the index 2, like
+this. Basically you're selecting the row,
+
+23
+00:01:39,840 --> 00:01:43,109
+and then from that row do another selection.
+
+24
+00:01:43,109 --> 00:01:47,939
+There's also an alternative way of subsetting,
+using single square brackets and a comma.
+
+25
+00:01:47,939 --> 00:01:52,349
+This call returns the exact same value as
+before. The value before the comma specifies
+
+26
+00:01:52,349 --> 00:01:57,209
+the row, the value after the comma specifies
+the column. The intersection of the rows and
+
+27
+00:01:57,209 --> 00:02:00,349
+columns you specified, are returned.
+
+28
+00:02:00,349 --> 00:02:05,079
+Once you get used to it, this syntax is more
+intuitive and opens up more possibilities.
+
+29
+00:02:05,079 --> 00:02:09,319
+Suppose you want to select the height and
+weight of the second and third family member.
+
+30
+00:02:09,319 --> 00:02:13,810
+You want both rows, so you put in a colon
+before the comma. You only want the second
+
+31
+00:02:13,810 --> 00:02:18,900
+and third column, so you put in the indices
+1 to 3 after the comma. Remember that the
+
+32
+00:02:18,900 --> 00:02:25,549
+third index is not included here. The intersection
+gives us a 2D array with 2 rows and 2 columns:
+
+33
+00:02:25,549 --> 00:02:30,900
+Similarly, you can select the weight of all
+family members like this: you only want the
+
+34
+00:02:30,900 --> 00:02:35,590
+second row, so put 1 before the comma. You
+want all columns, so you use a colon after
+
+35
+00:02:35,590 --> 00:02:39,640
+the comma. The intersection gives us the entire
+second row.
+
+36
+00:02:39,640 --> 00:02:44,790
+Finally, 2D numpy arrays enable you to do
+element-wise calculations, the same way you
+
+37
+00:02:44,790 --> 00:02:49,400
+did it with 1D numpy arrays. That's something
+you can experiment with in the exercises,
+
+38
+00:02:49,400 --> 00:02:52,879
+along with creating and subsetting 2D numpy
+arrays! Exciting...
+

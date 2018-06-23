@@ -1,0 +1,404 @@
+1
+00:00:00,000 --> 00:00:00,500
+MHTHANH
+https://youtu.be/VXyRfgnzL2o
+Dịch bởi Kiến Học
+---------- KIENHOC.VN ----------
+
+2
+00:00:00,500 --> 00:00:04,860
+Chào mừng đến chương 3 của khoá học Python
+   
+---------- KIENHOC.VN ----------
+
+3
+00:00:04,860 --> 00:00:06,990
+Ta đã học chương 1 và 2, giờ ta sẽ
+   
+---------- KIENHOC.VN ----------
+
+4
+00:00:06,990 --> 00:00:08,880
+lập trình nhiều hơn
+   
+---------- KIENHOC.VN ----------
+
+5
+00:00:08,880 --> 00:00:13,800
+Các câu lệnh gán và các từ dành riêng
+
+6
+00:00:13,800 --> 00:00:15,590
+chỉ như là tiếng róc rách
+
+7
+00:00:15,590 --> 00:00:18,010
+Bây giờ ta sẽ bắt đầu thấy sự tổng hợp
+
+8
+00:00:18,010 --> 00:00:21,230
+Ta sẽ thấy sự thực thi có điều kiện
+
+9
+00:00:21,230 --> 00:00:23,545
+cho ta thấy sức mạnh của máy tính
+
+10
+00:00:23,545 --> 00:00:25,450
+khi bạn bắt đầu ra các quyết định
+
+11
+00:00:25,450 --> 00:00:29,930
+Như thường lệ, bài giảng này, audio, video, và slide
+
+12
+00:00:29,930 --> 00:00:33,270
+được mở theo giấy phép Creative Commons
+
+13
+00:00:33,270 --> 00:00:34,810
+Attribution
+
+14
+00:00:34,810 --> 00:00:39,680
+Các bước có điều kiện là những bước 
+có thể được thực hiện hoặc không
+
+15
+00:00:39,680 --> 00:00:40,310
+Các bước có điều kiện là những bước 
+có thể được thực hiện hoặc không
+
+16
+00:00:40,310 --> 00:00:43,560
+Đây là một ví dụ
+
+17
+00:00:43,560 --> 00:00:45,390
+Tôi vẽ hình này
+
+18
+00:00:45,390 --> 00:00:48,100
+Tôi sẽ không vẽ nhiều hình như vậy ở bên trái
+
+19
+00:00:48,100 --> 00:00:50,790
+Nếu bạn đã học một lớp về lập trình, 
+có thể bạn đã thấy chúng rồi
+
+20
+00:00:50,790 --> 00:00:52,990
+Đôi khi chúng được gọi là biểu đồ luồng
+
+21
+00:00:52,990 --> 00:00:55,690
+Đôi khi người ta nghĩ chúng quan trọng
+
+22
+00:00:55,690 --> 00:00:58,950
+Tôi không nghĩ là chúng quan trọng như vậy cho việc hiểu bài
+
+23
+00:00:58,950 --> 00:01:01,160
+Code Python thì ở bên phải
+
+24
+00:01:01,160 --> 00:01:03,480
+Hình thì ở bên trái
+
+25
+00:01:03,480 --> 00:01:06,760
+Thực tế là cái này có thể
+
+26
+00:01:06,760 --> 00:01:10,300
+tạo cho bạn cảm giác dễ hiểu hơn là cái này
+
+27
+00:01:10,300 --> 00:01:13,710
+Nhưng phần bên phải này mới là quan trọng
+
+28
+00:01:13,710 --> 00:01:15,840
+Tôi thích gọi đây là bản đồ các con đường
+
+29
+00:01:15,840 --> 00:01:19,610
+bạn có thể truy vết code bằng cách 
+lái xe xuống một con đường nhỏ
+
+30
+00:01:19,610 --> 00:01:22,490
+Bạn làm việc đó 1 hoặc 2 lần
+
+31
+00:01:22,490 --> 00:01:24,930
+Sau này bạn sẽ sớm bắt đầu bằng việc đọc code
+
+32
+00:01:24,930 --> 00:01:26,763
+Vậy nên tôi sẽ bắt đầu ở phần bên phải
+
+33
+00:01:26,763 --> 00:01:28,750
+và nói qua về code
+
+34
+00:01:28,750 --> 00:01:30,910
+Nhớ rằng code chạy tuần tự
+
+35
+00:01:30,910 --> 00:01:36,657
+Có từ "if", là một từ đặc biệt dành riêng
+
+36
+00:01:36,657 --> 00:01:38,990
+Nó là một trong những từ bạn không thể dùng --
+bạn không thể đặt tên
+
+37
+00:01:38,990 --> 00:01:41,150
+một biến là "if"
+
+38
+00:01:41,150 --> 00:01:45,320
+Nó là chỉ dẫn của ta cho Python
+
+39
+00:01:45,320 --> 00:01:47,670
+rằng câu lệnh tiếp theo
+
+40
+00:01:47,670 --> 00:01:50,240
+sẽ có thể được thực hiện hoặc không
+
+41
+00:01:50,240 --> 00:01:52,080
+Và thứ ở phía sau trên cùng dòng với từ if
+
+42
+00:01:52,080 --> 00:01:57,120
+cho đến dấu 2 chấm, là câu hỏi
+
+43
+00:01:57,120 --> 00:01:58,950
+Đây là một câu hỏi
+
+44
+00:01:58,950 --> 00:02:01,020
+Bạn đang hỏi một câu
+
+45
+00:02:01,020 --> 00:02:05,320
+Vậy thì một câu lệnh gán sẽ di chuyển 
+một giá trị vào biến
+
+46
+00:02:05,320 --> 00:02:08,120
+Còn một câu lệnh if sẽ hỏi một câu
+
+47
+00:02:08,120 --> 00:02:10,440
+Trong trường hợp này, ta đang hỏi một câu về biến
+
+48
+00:02:10,440 --> 00:02:13,700
+Luôn nghĩ rằng, khi bạn ở đây
+
+49
+00:02:13,700 --> 00:02:16,170
+đây là câu cần hỏi
+
+50
+00:02:16,170 --> 00:02:18,890
+Bạn sẽ chú ý thấy khi tôi làm điều tương tự ở đây
+
+51
+00:02:18,890 --> 00:02:20,120
+Tôi đặt một dấu chấm hỏi ở đấy
+
+52
+00:02:20,120 --> 00:02:22,780
+x nhỏ hơn 10, đúng hay sai?
+
+53
+00:02:22,780 --> 00:02:24,740
+Nó là câu hỏi mà có câu trả lời là đúng hoặc sai
+
+54
+00:02:24,740 --> 00:02:27,840
+Cách nó hoạt động là, câu lệnh này
+
+55
+00:02:27,840 --> 00:02:31,010
+câu được thụt dòng sau lệnh if
+
+56
+00:02:31,010 --> 00:02:34,450
+được thực hiện hoặc không, 
+dựa trên câu trả lời cho câu hỏi kia
+
+57
+00:02:34,450 --> 00:02:38,090
+Đọc chỗ này theo tiếng Anh thì là, gán x bằng 5
+
+58
+00:02:38,090 --> 00:02:42,624
+Nếu x nhỏ hơn 10, thật sự là vậy vì x = 5, thì
+
+59
+00:02:42,624 --> 00:02:43,790
+ta sẽ thực hiện lệnh này
+
+60
+00:02:43,790 --> 00:02:45,759
+"Smaller" được in ra
+
+61
+00:02:45,759 --> 00:02:47,550
+Sau đó ta quay lại ra ngoài và tiếp tục
+
+62
+00:02:47,550 --> 00:02:50,460
+Được rồi, giờ tôi có một câu lệnh if khác
+
+63
+00:02:50,460 --> 00:02:52,310
+và một đoạn mã được thụt dòng
+
+64
+00:02:52,310 --> 00:02:55,770
+câu hỏi là: x có nhỏ hơn 20 không?
+
+65
+00:02:55,770 --> 00:02:59,430
+Câu trả lời là Không,
+nên dòng mã kia không chạy
+
+66
+00:02:59,430 --> 00:03:00,960
+và rồi in ra "Finis"
+
+67
+00:03:00,960 --> 00:03:05,080
+Kết quả in ra của chương trình này là
+"Smaller", theo sau là "Finis"
+
+68
+00:03:05,080 --> 00:03:08,910
+Dòng này không bao giờ được thực thi
+
+69
+00:03:08,910 --> 00:03:11,345
+vì câu trả lời cho câu hỏi này là False (Không)
+
+70
+00:03:11,345 --> 00:03:15,010
+
+71
+00:03:15,010 --> 00:03:16,625
+Hãy xem lại nhanh hơn một chút
+
+72
+00:03:16,625 --> 00:03:17,970
+Gán x = 5
+
+73
+00:03:17,970 --> 00:03:20,960
+If x < 10, print "Smaller"
+
+74
+00:03:20,960 --> 00:03:24,460
+if x > 20, 
+rõ ràng là không đúng, nên bỏ qua
+
+75
+00:03:24,460 --> 00:03:26,180
+cuối cùng là
+print "Finis"
+
+76
+00:03:26,180 --> 00:03:28,170
+Nói ngắn gọn là vậy
+
+77
+00:03:28,170 --> 00:03:30,730
+Bước này được thực thi có điều kiện
+
+78
+00:03:30,730 --> 00:03:32,030
+Bước này được thực thi có điều kiện
+
+79
+00:03:32,030 --> 00:03:34,400
+Chúng có thể được thực thi 
+hoặc không được thực thi
+
+80
+00:03:34,400 --> 00:03:36,160
+dựa trên nội dung trả lời cho câu hỏi
+
+81
+00:03:36,160 --> 00:03:38,810
+Nếu ta nghĩ về điều này như là
+
+82
+00:03:38,810 --> 00:03:41,820
+một bản đồ GPS,
+ta có thể nhìn vào phần bên trái này
+
+83
+00:03:41,820 --> 00:03:44,710
+CPU đi xuống đây
+
+84
+00:03:44,710 --> 00:03:45,580
+x = 5
+
+85
+00:03:45,580 --> 00:03:46,800
+OK, tôi sẽ thực hiện điều đó
+
+86
+00:03:46,800 --> 00:03:49,710
+Rồi nó phải đối diện với một lựa chọn
+
+87
+00:03:49,710 --> 00:03:52,230
+x có nhỏ hơn 10 không?
+có hay không?
+
+88
+00:03:52,230 --> 00:03:55,690
+Nếu Có, mà thật sự là vậy,
+thì tôi sẽ đi đường này
+
+89
+00:03:55,690 --> 00:03:57,590
+Nếu Không,
+thì tôi sẽ đi đường kia
+
+90
+00:03:57,590 --> 00:03:58,742
+Vậy nếu Có, tôi đi đến chỗ này
+
+91
+00:03:58,742 --> 00:04:00,950
+Tôi chạy dòng mã nhỏ này và in ra "Smaller"
+
+92
+00:04:00,950 --> 00:04:02,250
+Tôi đi tiếp con đường nhỏ
+
+93
+00:04:02,250 --> 00:04:04,060
+Nó dẫn tôi đến chỗ này
+
+94
+00:04:04,060 --> 00:04:05,870
+Hỏi tôi một câu khác
+
+95
+00:04:05,870 --> 00:04:07,470
+x có lớn hơn 20 không?
+

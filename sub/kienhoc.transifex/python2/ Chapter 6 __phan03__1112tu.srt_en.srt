@@ -1,0 +1,733 @@
+321
+00:13:53,280 --> 00:13:57,310
+https://youtu.be/L2IUSArpG98
+So again, the second character
+is up-to but not including.
+
+322
+00:13:57,310 --> 00:13:59,310
+And that's the kind
+of weird thing there.
+
+323
+00:13:59,310 --> 00:14:02,330
+Of course, once you remember
+that the first character is 0,
+
+324
+00:14:02,330 --> 00:14:04,140
+0 up-to but not including.
+
+325
+00:14:04,140 --> 00:14:04,640
+Nice.
+
+326
+00:14:04,640 --> 00:14:08,560
+
+327
+00:14:08,560 --> 00:14:14,110
+If we leave off the first or the
+last number, and both of them,
+
+328
+00:14:14,110 --> 00:14:17,690
+they mean the beginning and
+end of the string respectively.
+
+329
+00:14:17,690 --> 00:14:21,570
+And so, up-to but
+not including 2,
+
+330
+00:14:21,570 --> 00:14:30,640
+is M-O. 8 colon means starting
+at 8 to the end of the string.
+
+331
+00:14:30,640 --> 00:14:32,420
+So that's "thon."
+
+332
+00:14:32,420 --> 00:14:34,590
+And then, that means the
+beginning to the end.
+
+333
+00:14:34,590 --> 00:14:38,120
+And so, it's just the whole
+string, "monty python."
+
+334
+00:14:38,120 --> 00:14:40,860
+Now, we've already played
+with string concatenation.
+
+335
+00:14:40,860 --> 00:14:45,020
+Just the thing to emphasize here
+is the concatenation operator
+
+336
+00:14:45,020 --> 00:14:48,740
+does not add a space.
+
+337
+00:14:48,740 --> 00:14:51,920
+If you want a space,
+you explicitly add it.
+
+338
+00:14:51,920 --> 00:14:55,156
+So here, there's no space
+in between the O and the T.
+
+339
+00:14:55,156 --> 00:14:57,280
+But here, there is a space
+between the O and the T,
+
+340
+00:14:57,280 --> 00:14:59,660
+because we explicitly added it.
+
+341
+00:14:59,660 --> 00:15:02,270
+So you can concatenate
+more than one thing.
+
+342
+00:15:02,270 --> 00:15:04,590
+And you add your
+spaces as you want.
+
+343
+00:15:04,590 --> 00:15:07,789
+
+344
+00:15:07,789 --> 00:15:09,830
+Another thing you can do
+is you can ask questions
+
+345
+00:15:09,830 --> 00:15:10,470
+about a string.
+
+346
+00:15:10,470 --> 00:15:14,610
+It's sort of like doing a string
+look up, using the In operator.
+
+347
+00:15:14,610 --> 00:15:17,820
+This a little different than how
+we use it inside of a For loop.
+
+348
+00:15:17,820 --> 00:15:20,200
+This is a logical
+operation asking
+
+349
+00:15:20,200 --> 00:15:23,190
+a question like less-than
+or greater-than or whatever.
+
+350
+00:15:23,190 --> 00:15:25,120
+So here's an expression.
+
+351
+00:15:25,120 --> 00:15:26,950
+So fruit is banana as always.
+
+352
+00:15:26,950 --> 00:15:30,250
+Is N in fruit?
+
+353
+00:15:30,250 --> 00:15:31,720
+And the answer is, yes, it is.
+
+354
+00:15:31,720 --> 00:15:32,584
+True.
+
+355
+00:15:32,584 --> 00:15:33,875
+So this is a logical operation.
+
+356
+00:15:33,875 --> 00:15:34,780
+It's a question.
+
+357
+00:15:34,780 --> 00:15:36,620
+It's like True or False.
+
+358
+00:15:36,620 --> 00:15:38,270
+Is M in fruit?
+
+359
+00:15:38,270 --> 00:15:39,820
+No, False.
+
+360
+00:15:39,820 --> 00:15:42,520
+And this can be a string,
+not just a single character.
+
+361
+00:15:42,520 --> 00:15:44,420
+Is N-A-N in fruit?
+
+362
+00:15:44,420 --> 00:15:46,320
+The answer is True.
+
+363
+00:15:46,320 --> 00:15:50,730
+And you can put parts of
+Ifs, et cetera, et cetera.
+
+364
+00:15:50,730 --> 00:15:53,860
+So this is a logical expression
+that can be on an If.
+
+365
+00:15:53,860 --> 00:15:57,090
+You can have a While,
+et cetera, et cetera.
+
+366
+00:15:57,090 --> 00:16:00,565
+So it's a logical expression
+and it returns True or False.
+
+367
+00:16:00,565 --> 00:16:03,550
+
+368
+00:16:03,550 --> 00:16:05,680
+You can also do comparisons.
+
+369
+00:16:05,680 --> 00:16:10,940
+Now, the comparison operations--
+Equals makes a lot of sense.
+
+370
+00:16:10,940 --> 00:16:13,790
+Less-than and Greater-than
+depend on the language
+
+371
+00:16:13,790 --> 00:16:15,410
+that you're using, Python.
+
+372
+00:16:15,410 --> 00:16:17,840
+And so, if you're using a
+Latin character set, then
+
+373
+00:16:17,840 --> 00:16:22,000
+alphabetical matters, the
+way the Latin character set
+
+374
+00:16:22,000 --> 00:16:22,500
+would do.
+
+375
+00:16:22,500 --> 00:16:24,291
+But if you're in a
+different character set,
+
+376
+00:16:24,291 --> 00:16:26,510
+Python is aware of
+multiple character sets
+
+377
+00:16:26,510 --> 00:16:30,490
+and will sort strings based
+on the sorting algorithm
+
+378
+00:16:30,490 --> 00:16:33,130
+of a particular character set.
+
+379
+00:16:33,130 --> 00:16:36,572
+So you can do comparisons
+like Equality, Less-than,
+
+380
+00:16:36,572 --> 00:16:37,280
+and Greater-than.
+
+381
+00:16:37,280 --> 00:16:39,740
+And we've seen some things in
+previous lectures actually.
+
+382
+00:16:39,740 --> 00:16:42,040
+We've had to use them.
+
+383
+00:16:42,040 --> 00:16:46,310
+So in addition to these
+fundamental operations that we
+
+384
+00:16:46,310 --> 00:16:52,920
+can do on strings, there's
+an extensive library
+
+385
+00:16:52,920 --> 00:16:55,420
+of built-in
+capabilities in Python.
+
+386
+00:16:55,420 --> 00:17:00,190
+And so, the way we see these
+built-in capabilities are
+
+387
+00:17:00,190 --> 00:17:03,410
+they're actually
+built into strings.
+
+388
+00:17:03,410 --> 00:17:05,429
+So let's go real slow here.
+
+389
+00:17:05,429 --> 00:17:07,095
+Here, we have a
+variable called "greet,"
+
+390
+00:17:07,095 --> 00:17:10,060
+and we're sticking the
+string "Hello, Bob" into it.
+
+391
+00:17:10,060 --> 00:17:13,670
+Now Greet is of type
+string, as a result of this.
+
+392
+00:17:13,670 --> 00:17:16,579
+And it contains Hello,
+Bob as its value.
+
+393
+00:17:16,579 --> 00:17:19,819
+But we can actually
+access capabilities inside
+
+394
+00:17:19,819 --> 00:17:22,050
+of this value.
+
+395
+00:17:22,050 --> 00:17:26,690
+So we can say Greet
+dot lower parentheses.
+
+396
+00:17:26,690 --> 00:17:29,546
+This is calling something
+that's part of Greet itself.
+
+397
+00:17:29,546 --> 00:17:30,670
+It's a part of all strings.
+
+398
+00:17:30,670 --> 00:17:33,770
+The fact that Greet
+contains a string means
+
+399
+00:17:33,770 --> 00:17:35,350
+that we can ask
+for, hey, give me
+
+400
+00:17:35,350 --> 00:17:38,090
+Greet, which just gives you
+back what you're looking for.
+
+401
+00:17:38,090 --> 00:17:40,817
+Like here, print
+Greet as Hello, Bob.
+
+402
+00:17:40,817 --> 00:17:42,400
+Or you could say,
+give me Greet lower.
+
+403
+00:17:42,400 --> 00:17:47,460
+So this doesn't convert
+it to lowercase.
+
+404
+00:17:47,460 --> 00:17:51,050
+It gives me a lowercase
+copy of Hello, Bob.
+
+405
+00:17:51,050 --> 00:17:54,690
+So Zap is hello,
+bob, all lowercase.
+
+406
+00:17:54,690 --> 00:17:56,190
+Now, it didn't change Greet.
+
+407
+00:17:56,190 --> 00:17:57,390
+Right?
+
+408
+00:17:57,390 --> 00:18:01,157
+And you could even put this Dot
+Lower on the end of constants.
+
+409
+00:18:01,157 --> 00:18:02,490
+Why you'd do this, I don't know.
+
+410
+00:18:02,490 --> 00:18:06,300
+But Hi There, with H and
+T capitalized, dot lower
+
+411
+00:18:06,300 --> 00:18:07,550
+comes out as hi there.
+
+412
+00:18:07,550 --> 00:18:11,540
+So this bit is part
+of all strings.
+
+413
+00:18:11,540 --> 00:18:16,690
+Both variables and constants
+have these string functions
+
+414
+00:18:16,690 --> 00:18:17,870
+built into them.
+
+415
+00:18:17,870 --> 00:18:21,160
+And every instance of
+a string-- whether it
+
+416
+00:18:21,160 --> 00:18:23,760
+be a variable or a constant--
+has these capabilities.
+
+417
+00:18:23,760 --> 00:18:25,400
+They don't modify it.
+
+418
+00:18:25,400 --> 00:18:28,190
+They just give you back a copy.
+
+419
+00:18:28,190 --> 00:18:33,220
+Now, it turns out there is a
+command inside Python called
+
+420
+00:18:33,220 --> 00:18:37,505
+Dir to ask questions like, hey!
+
+421
+00:18:37,505 --> 00:18:38,937
+Well, here's stuff.
+
+422
+00:18:38,937 --> 00:18:39,770
+We got Hello, World.
+
+423
+00:18:39,770 --> 00:18:42,740
+We can say-- oh, I
+want to redo this,
+
+424
+00:18:42,740 --> 00:18:46,880
+come here-- stuff as a string.
+
+425
+00:18:46,880 --> 00:18:48,240
+We can ask, hey, what are you?
+
+426
+00:18:48,240 --> 00:18:49,660
+I am a string.
+
+427
+00:18:49,660 --> 00:18:53,049
+Dir is another built in Python
+that asks the question, hey,
+
+428
+00:18:53,049 --> 00:18:55,340
+what are all the things that
+are built into this that I
+
+429
+00:18:55,340 --> 00:18:56,700
+can make use of?
+
+430
+00:18:56,700 --> 00:18:57,760
+And here they are.
+
+431
+00:18:57,760 --> 00:18:59,920
+That's kind of a
+raw dump of them.
+
+432
+00:18:59,920 --> 00:19:03,870
+You can also go look at the
+online documentation of Python.
+
+433
+00:19:03,870 --> 00:19:08,441
+And at the Python
+website, you can see
+
+434
+00:19:08,441 --> 00:19:09,690
+a whole bunch of these things.
+
+435
+00:19:09,690 --> 00:19:11,740
+And they have the
+calling sequence, what
+
+436
+00:19:11,740 --> 00:19:13,770
+the parameters are, et cetera.
+
+437
+00:19:13,770 --> 00:19:15,600
+So when you're looking
+these things up,
+
+438
+00:19:15,600 --> 00:19:17,900
+you can go read about them.
+
+439
+00:19:17,900 --> 00:19:19,980
+Here's just a few
+that I pulled out,
+
+440
+00:19:19,980 --> 00:19:23,450
+Capitalize-- which upper case
+is the first characters--
+
+441
+00:19:23,450 --> 00:19:25,870
+Center, Endswith, Find.
+
+442
+00:19:25,870 --> 00:19:26,655
+There's Stripping.
+
+443
+00:19:26,655 --> 00:19:29,280
+So I'll look through a couple of
+these, just the kind of things
+
+444
+00:19:29,280 --> 00:19:30,530
+to be looking for.
+
+445
+00:19:30,530 --> 00:19:32,300
+It would be a good
+idea to take a look
+
+446
+00:19:32,300 --> 00:19:33,800
+and read through
+some of the things.
+
+447
+00:19:33,800 --> 00:19:37,550
+Here's a couple that we'll
+probably be using early on.
+
+448
+00:19:37,550 --> 00:19:41,100
+The Find function,
+it's similar to In.
+
+449
+00:19:41,100 --> 00:19:44,750
+But it tells you where it finds
+the particular thing that's
+
+450
+00:19:44,750 --> 00:19:47,100
+looking for.
+
+451
+00:19:47,100 --> 00:19:49,552
+And so, we'll put
+fruit is banana.
+
+452
+00:19:49,552 --> 00:19:51,010
+And I'm going to
+say, Pause-- which
+
+453
+00:19:51,010 --> 00:19:52,926
+is going to be integer
+variable-- equals fruit
+
+454
+00:19:52,926 --> 00:19:55,340
+dot Find N-A. So
+what it's saying is,
+
+455
+00:19:55,340 --> 00:19:58,140
+go look inside this
+variable fruit.
+
+456
+00:19:58,140 --> 00:20:01,160
+Hunt until you find the first
+occurrence of the string N-A.
+
+457
+00:20:01,160 --> 00:20:03,000
+Hunt-hunt-hunt-hunt, whoop!
+
+458
+00:20:03,000 --> 00:20:04,300
+Got it.
+
+459
+00:20:04,300 --> 00:20:05,680
+--and then, return it to me.
+
+460
+00:20:05,680 --> 00:20:07,990
+So that's going
+to give me back 2.
+
+461
+00:20:07,990 --> 00:20:10,540
+2 is where it found it, right?
+
+462
+00:20:10,540 --> 00:20:12,440
+So where is it in the string?
+
+463
+00:20:12,440 --> 00:20:13,820
+That's what Find does.
+
+464
+00:20:13,820 --> 00:20:16,930
+And if you don't find anything--
+like, you're looking for Z.
+
+465
+00:20:16,930 --> 00:20:19,530
+Nn-nn-nn-nn-na, I
+didn't find a Z. Then,
+
+466
+00:20:19,530 --> 00:20:21,602
+it gives me back negative 1.
+
+467
+00:20:21,602 --> 00:20:26,090
+So again, this is just one
+of many built-in functions
+
+468
+00:20:26,090 --> 00:20:30,130
+in string, the ability
+to find a substring
+
+469
+00:20:30,130 --> 00:20:35,440
+or find a character or
+string within another string.
+
+470
+00:20:35,440 --> 00:20:36,560
+There's a lowercase.
+
+471
+00:20:36,560 --> 00:20:38,030
+There's also an uppercase.
+
+472
+00:20:38,030 --> 00:20:40,740
+This might be better
+named "Shouting."
+
+473
+00:20:40,740 --> 00:20:43,200
+Upper means, give
+me an uppercase copy
+
+474
+00:20:43,200 --> 00:20:44,020
+of this variable.
+
+475
+00:20:44,020 --> 00:20:46,830
+So Hello Bob, becomes HELLO BOB!
+
+476
+00:20:46,830 --> 00:20:49,311
+And then lower is hello, bob.
+
+477
+00:20:49,311 --> 00:20:49,810
+Right?
+
+478
+00:20:49,810 --> 00:20:52,970
+So these are both
+ways to get copies
+
+479
+00:20:52,970 --> 00:20:55,644
+of uppercase and
+lowercase versions.
+
+480
+00:20:55,644 --> 00:20:57,310
+You might think these
+are kind of silly.
+

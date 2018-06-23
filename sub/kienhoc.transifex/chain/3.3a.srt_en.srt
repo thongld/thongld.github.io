@@ -1,0 +1,436 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/tMvmxwXB2Cw
+
+1
+00:00:00,500 --> 00:00:03,062
+In this lesson, we're going to build predictive models.
+
+2
+00:00:03,062 --> 00:00:05,520
+And specifically, we're going to use ordinary least squares
+
+3
+00:00:05,520 --> 00:00:06,570
+regression.
+
+4
+00:00:06,570 --> 00:00:09,300
+Now, this is going to be a very hands on and practical approach
+
+5
+00:00:09,300 --> 00:00:09,660
+to this.
+
+6
+00:00:09,660 --> 00:00:11,410
+There's a lot of theoretical underpinnings
+
+7
+00:00:11,410 --> 00:00:12,950
+that we'll touch a little bit upon.
+
+8
+00:00:12,950 --> 00:00:16,170
+But the main focus is to understand the development
+
+9
+00:00:16,170 --> 00:00:18,210
+and analysis of models.
+
+10
+00:00:18,210 --> 00:00:20,820
+We'll be using the same example throughout the lesson
+
+11
+00:00:20,820 --> 00:00:22,830
+and that is for Duffy Industries.
+
+12
+00:00:22,830 --> 00:00:25,440
+So Robin Curtin is the new Transportation VP
+
+13
+00:00:25,440 --> 00:00:26,430
+for the company.
+
+14
+00:00:26,430 --> 00:00:28,230
+And she's trying to understand what
+
+15
+00:00:28,230 --> 00:00:31,390
+rates they should have for their full truckload service.
+
+16
+00:00:31,390 --> 00:00:33,390
+Now, this is going to be for a new facility they
+
+17
+00:00:33,390 --> 00:00:34,920
+don't have data for.
+
+18
+00:00:34,920 --> 00:00:37,140
+The company uses contract over-the-road trucking
+
+19
+00:00:37,140 --> 00:00:40,510
+companies for these TL or full truckload shipments.
+
+20
+00:00:40,510 --> 00:00:43,460
+Truckload shipments are ones that move from one origin
+
+21
+00:00:43,460 --> 00:00:46,350
+to one destination, say a manufacturing plant
+
+22
+00:00:46,350 --> 00:00:50,400
+to a distribution center with no intermediate stop offs.
+
+23
+00:00:50,400 --> 00:00:52,222
+Now, she only has a snapshot of data
+
+24
+00:00:52,222 --> 00:00:54,180
+showing the cost and some other characteristics
+
+25
+00:00:54,180 --> 00:00:57,990
+of about 100 truckload shipments from a different facility.
+
+26
+00:00:57,990 --> 00:01:02,070
+And so she wants to create a model or models to answer
+
+27
+00:01:02,070 --> 00:01:03,370
+the following questions.
+
+28
+00:01:03,370 --> 00:01:05,850
+One, what characteristics are driving my rates
+
+29
+00:01:05,850 --> 00:01:07,056
+for truckload service?
+
+30
+00:01:07,056 --> 00:01:08,430
+What are the things I can change?
+
+31
+00:01:08,430 --> 00:01:10,722
+How can I make my rates lower?
+
+32
+00:01:10,722 --> 00:01:12,930
+And the second question is, what rate should I expect
+
+33
+00:01:12,930 --> 00:01:15,210
+if I open some new lanes?
+
+34
+00:01:15,210 --> 00:01:17,640
+So we're going to create both a descriptive and predictive
+
+35
+00:01:17,640 --> 00:01:19,950
+model.
+
+36
+00:01:19,950 --> 00:01:22,410
+So if you have the data, and it's
+
+37
+00:01:22,410 --> 00:01:24,270
+available at the bottom of this video,
+
+38
+00:01:24,270 --> 00:01:25,470
+you can take a look at it.
+
+39
+00:01:25,470 --> 00:01:27,090
+And so let me give you a quick summary of what's
+
+40
+00:01:27,090 --> 00:01:29,520
+in that dataset because we'll be using this, as I said,
+
+41
+00:01:29,520 --> 00:01:31,540
+throughout the lesson.
+
+42
+00:01:31,540 --> 00:01:34,470
+So the first field, all the columns are fields.
+
+43
+00:01:34,470 --> 00:01:37,330
+Every row is essentially an observation.
+
+44
+00:01:37,330 --> 00:01:40,410
+So the first field is the ID or the unique identification
+
+45
+00:01:40,410 --> 00:01:41,460
+of the load.
+
+46
+00:01:41,460 --> 00:01:45,210
+The second column is the cost per load or CPL.
+
+47
+00:01:45,210 --> 00:01:47,100
+The third is the distance in miles
+
+48
+00:01:47,100 --> 00:01:49,620
+of each lane or each shipment.
+
+49
+00:01:49,620 --> 00:01:51,900
+The lead time is the time from when
+
+50
+00:01:51,900 --> 00:01:53,890
+the company offered the load to the carrier
+
+51
+00:01:53,890 --> 00:01:55,300
+and they have to pick it up.
+
+52
+00:01:55,300 --> 00:01:59,310
+So the longer that lead time is, the more time the carrier has.
+
+53
+00:01:59,310 --> 00:02:02,295
+If it's a 0, that means it's same day.
+
+54
+00:02:02,295 --> 00:02:04,320
+The next column is trailer length.
+
+55
+00:02:04,320 --> 00:02:06,920
+And that's just the length and feet of the trailer.
+
+56
+00:02:06,920 --> 00:02:07,920
+Then there's the weight.
+
+57
+00:02:07,920 --> 00:02:10,461
+That's the weight of the goods that are in the trailer moving
+
+58
+00:02:10,461 --> 00:02:11,190
+in pounds.
+
+59
+00:02:11,190 --> 00:02:13,420
+And finally, there's an equipment type,
+
+60
+00:02:13,420 --> 00:02:15,600
+whether it's a dry van or refrigerated.
+
+61
+00:02:15,600 --> 00:02:18,390
+Refrigerated just simply has a refrigerator unit on it
+
+62
+00:02:18,390 --> 00:02:20,740
+that keeps it at a certain temperature.
+
+63
+00:02:20,740 --> 00:02:23,550
+So these are the first 7 records or observations.
+
+64
+00:02:23,550 --> 00:02:25,540
+We have 100 in the dataset.
+
+65
+00:02:25,540 --> 00:02:28,306
+So with any good dataset, what will you do?
+
+66
+00:02:28,306 --> 00:02:30,180
+You'll take some quick statistics, everything
+
+67
+00:02:30,180 --> 00:02:32,770
+we learned in the previous lessons.
+
+68
+00:02:32,770 --> 00:02:35,850
+So here I have for the cost per load, distance,
+
+69
+00:02:35,850 --> 00:02:39,390
+lead time, trailer length, and weight, the summary statistics.
+
+70
+00:02:39,390 --> 00:02:41,580
+And you see, I kind of went overboard here,
+
+71
+00:02:41,580 --> 00:02:44,520
+the min, the mode, the median, the mean, the max,
+
+72
+00:02:44,520 --> 00:02:47,680
+the percentiles, range, the inner quartile range,
+
+73
+00:02:47,680 --> 00:02:48,670
+standard deviation.
+
+74
+00:02:48,670 --> 00:02:49,890
+I went with a sample.
+
+75
+00:02:49,890 --> 00:02:52,380
+If you did population, it's not dramatically different
+
+76
+00:02:52,380 --> 00:02:54,330
+because we have so many observations.
+
+77
+00:02:54,330 --> 00:02:56,430
+And then I also put the correlation down there.
+
+78
+00:02:56,430 --> 00:02:59,130
+And that correlation is with each of the columns
+
+79
+00:02:59,130 --> 00:03:02,500
+with the cost per load column.
+
+80
+00:03:02,500 --> 00:03:04,530
+And so you can look at this and test your data.
+
+81
+00:03:04,530 --> 00:03:06,562
+Hopefully, you come up with the same numbers.
+
+82
+00:03:06,562 --> 00:03:08,520
+And as I look at this, there are some questions
+
+83
+00:03:08,520 --> 00:03:09,700
+that I might have.
+
+84
+00:03:09,700 --> 00:03:10,850
+What should I do next?
+
+85
+00:03:10,850 --> 00:03:12,690
+Because I can summarize the data.
+
+86
+00:03:12,690 --> 00:03:13,440
+And this is great.
+
+87
+00:03:13,440 --> 00:03:16,770
+I know on average it's going to cost me about $3,000
+
+88
+00:03:16,770 --> 00:03:19,050
+a load, $3,132.
+
+89
+00:03:19,050 --> 00:03:21,030
+The average distance is 1,200 miles.
+
+90
+00:03:21,030 --> 00:03:25,200
+I give, on average, just under a week of lead time, 5.8 days.
+
+91
+00:03:25,200 --> 00:03:27,810
+The trailer length really doesn't make sense
+
+92
+00:03:27,810 --> 00:03:30,000
+because it's either 48 or 53.
+
+93
+00:03:30,000 --> 00:03:32,430
+So looking at the average really doesn't make sense.
+
+94
+00:03:32,430 --> 00:03:35,596
+But the average weight is about 26,000 pounds.
+
+95
+00:03:35,596 --> 00:03:36,720
+So that tells me something.
+
+96
+00:03:36,720 --> 00:03:38,350
+And I can see the standard deviations.
+
+97
+00:03:38,350 --> 00:03:40,840
+But what I really want to know is, well,
+
+98
+00:03:40,840 --> 00:03:43,410
+how does the cost per load impact
+
+99
+00:03:43,410 --> 00:03:45,510
+and is impacted by these other variables?
+
+100
+00:03:45,510 --> 00:03:46,921
+How is it influenced by them?
+
+101
+00:03:46,921 --> 00:03:49,170
+Can I develop a descriptive model, where cost per load
+
+102
+00:03:49,170 --> 00:03:52,350
+is a function of some collection of these variables
+
+103
+00:03:52,350 --> 00:03:54,630
+to give me a better estimate of what that will be?
+
+104
+00:03:54,630 --> 00:03:57,027
+Because this can also be used as a predictive model.
+
+105
+00:03:57,027 --> 00:03:59,110
+So that's what we're going to do for the remainder
+
+106
+00:03:59,110 --> 00:03:59,735
+of this lesson.
+
+107
+00:03:59,735 --> 00:04:01,890
+We're going to take this data and develop models
+
+108
+00:04:01,890 --> 00:04:06,610
+from it to help us answer those first questions that Robin had.
+

@@ -1,0 +1,426 @@
+0
+00:00:00,000 --> 00:00:00,001
+Thanh_Nguyễn 22/10
+http://youtu.be/KiYSWqb3tI0
+
+1
+00:00:05,849 --> 00:00:09,379
+Chào mừng các bạn trở lại với khóa Quản trị Điều hành và ta sẽ nói về
+
+2
+00:00:09,379 --> 00:00:11,140
+phân tích tiến trình,
+
+3
+00:00:11,140 --> 00:00:14,449
+Và tôi sẽ giới thiệu đến bạn khái niệm định luật Little
+
+4
+00:00:14,449 --> 00:00:19,879
+cho đến nay, ta vẫn nghĩ về những quá trình theo lí thuyết.
+
+5
+00:00:19,880 --> 00:00:23,100
+Tôi đã nhắc đến lí do ta cần nghiên cứu một quá trình
+
+6
+00:00:23,100 --> 00:00:27,868
+và tính quan trọng của những chiến lược vận hành có liên quan đến
+
+7
+00:00:27,868 --> 00:00:29,839
+chiến lược hoạt động và v.v.
+
+8
+00:00:29,839 --> 00:00:33,849
+nhưng giờ ta cần bắt đầu quan sát chi tiết những quá trình
+
+9
+00:00:33,849 --> 00:00:40,488
+và đó là điều ta sẽ bắt đầu ngay bây giờ.
+Ta nghiên cứu quả trị vận hành
+
+10
+00:00:40,488 --> 00:00:41,929
+từ quan điểm quá trình
+
+11
+00:00:41,929 --> 00:00:46,039
+vì khi ta nghiên cứu một tổ chức
+
+12
+00:00:46,039 --> 00:00:49,058
+Nó là chuỗi những sự kiện có liên quan mật thiết với nhau
+
+13
+00:00:49,058 --> 00:00:52,979
+từ thời điểm nhận được đơn hàng
+đến lúc nó đến tay khách hàng
+
+14
+00:00:52,979 --> 00:00:58,038
+ta có một quá trình khá dài khi ta nghiên cứu
+
+15
+00:00:58,039 --> 00:00:58,359
+nó.
+
+16
+00:00:58,359 --> 00:01:02,229
+Thực ra nó là một chuỗi những quy trình nhỏ móc nối với nhau
+
+17
+00:01:02,229 --> 00:01:05,709
+những hoạt động, nhiệm vụ, và điểm đệm
+
+18
+00:01:05,710 --> 00:01:09,058
+để cải thiện được quá trình đó
+
+19
+00:01:09,058 --> 00:01:12,629
+ta cần nghiên cứu nó
+ta cần quan sát nó
+
+20
+00:01:12,629 --> 00:01:15,780
+từ thời điểm nhận được những đơn hàng
+
+21
+00:01:15,780 --> 00:01:19,670
+và bắt đầu nhìn vào cái ta có thể tiến hành để rút ngắn
+
+22
+00:01:19,670 --> 00:01:24,180
+làm thế nào để rút ngắn thời gian dành ra để hoàn thiện đơn vị hàng
+
+23
+00:01:24,180 --> 00:01:25,880
+rút ngắn thời gian dành ra đến khi đến tay khách hàng.
+
+24
+00:01:25,879 --> 00:01:30,289
+Làm sao để hạ thấp chi phí bỏ ra?
+Làm sao để có thể khiến chất lượng cao hơn?
+
+25
+00:01:30,290 --> 00:01:34,710
+Ta không thể giải quyết điều đó
+trừ khi ta hiểu chính bản thân quá trình.
+
+26
+00:01:34,709 --> 00:01:39,399
+Vậy điều ta cần làm là ta cần phải nhìn vào
+ từng bước trong quá trình đó
+
+27
+00:01:39,400 --> 00:01:42,590
+và thử những thứ mới mà không cần thiết
+
+28
+00:01:42,590 --> 00:01:45,780
+những thứ không cần thiết cần được cân nhắc
+
+29
+00:01:45,780 --> 00:01:48,950
+nhưng ta gọi là vô giá trị được thêm vào
+
+30
+00:01:48,950 --> 00:01:52,990
+khi có những thứ phải chờ đến khi thứ vô giá trị được thêm vào
+
+31
+00:01:52,989 --> 00:01:56,069
+khi ta có những bước phụ không cần thiết phải diễn ra
+
+32
+00:01:56,069 --> 00:02:00,219
+Cũng có thứ vô giá trị được thêm vào
+khi ta quan sát tại điểm nhìn của quá trình đó
+
+33
+00:02:00,219 --> 00:02:04,489
+Ta cần phân tích kỹ từng bước trong quá trình đó
+
+34
+00:02:04,489 --> 00:02:07,868
+và cố loại bỏ những thứ không làm tăng giá trị
+
+35
+00:02:07,868 --> 00:02:12,500
+Khi ta phân tích quá trình
+
+36
+00:02:12,500 --> 00:02:15,848
+nó cần được xem là thứ ta gọi là ổn định
+
+37
+00:02:15,848 --> 00:02:18,979
+Một quá trình ổn định nghĩa là
+
+38
+00:02:18,979 --> 00:02:23,539
+những đơn vị mà theo trung bình tốc độ lưu thông đầu vào
+
+39
+00:02:23,539 --> 00:02:27,919
+bằng tốc độ lưu thông đầu ra
+
+40
+00:02:27,919 --> 00:02:31,519
+mà trung bình dòng vào bằng trung bình dòng ra.
+
+41
+00:02:31,520 --> 00:02:34,980
+Ta đều biết rằng
+
+42
+00:02:34,979 --> 00:02:39,060
+những số trung bình thực ra không phải là điều đang diễn ra
+
+43
+00:02:39,060 --> 00:02:43,939
+trên cơ sở thời gian, ta cũng biết khi bạn búng đồng xu
+
+44
+00:02:43,939 --> 00:02:47,930
+trung bình bạn sẽ có 50% măt đầu người
+
+45
+00:02:47,930 --> 00:02:51,750
+50% mặt số nhưng khi tung một đồng xu đơn riêng lẻ
+
+46
+00:02:51,750 --> 00:02:55,389
+hoặc ba hoặc bốn đồng liên tiếp
+bạn sẽ không có khả năng nhận được
+
+47
+00:02:55,389 --> 00:03:00,579
+50% mặt đầu người, 50% mặt số, nhưng ta không thể nghiên cứu một quá trình
+
+48
+00:03:00,580 --> 00:03:05,230
+giao dịch riêng lẻ, ta chỉ có thể nghiên cứu một quá trình
+
+49
+00:03:05,229 --> 00:03:11,268
+sử dụng trung bình. Vậy ta biết những dao động luôn diễn ra 
+
+50
+00:03:11,269 --> 00:03:14,890
+nhưng ta sẽ nhìn vào quá trình theo các số trung bình
+
+51
+00:03:14,889 --> 00:03:19,609
+ta cần nhìn vào ba đơn vị vận hành cụ thể.
+
+52
+00:03:19,610 --> 00:03:23,450
+Một là thời gian lưu thông.
+
+53
+00:03:23,449 --> 00:03:27,378
+Ta phân loại điều này bởi biến T
+T cho thời gian
+
+54
+00:03:27,378 --> 00:03:32,079
+và nó thể hiện mất bao lâu để hoàn thành cả quá trình
+
+55
+00:03:32,080 --> 00:03:36,390
+vậy thời gian lưu thông là thời gian bỏ ra để hoàn thiện quá quá trình.
+
+56
+00:03:36,389 --> 00:03:39,979
+Ta có hàng lưu kho, hàng lưu kho
+
+57
+00:03:39,979 --> 00:03:43,009
+là có bao nhiêu đơn vị trong quá trình
+
+58
+00:03:43,009 --> 00:03:46,889
+tại một thời điểm cho trước bất kì.
+Một lần nữa, ta lại nhìn vào số trung bình
+
+59
+00:03:46,889 --> 00:03:51,079
+vậy nếu ta tính nhanh và cho rằng
+trung bình có bao nhiêu đơn vị
+
+60
+00:03:51,080 --> 00:03:51,890
+trong quá trình
+
+61
+00:03:51,889 --> 00:03:56,518
+I là hàng lưu kho.
+Tốc độ lưu thông của ta là
+
+62
+00:03:56,519 --> 00:04:00,039
+cái mà diễn ra bên trong và ngoài
+
+63
+00:04:00,039 --> 00:04:03,158
+quá trình tại thời gian nhất định  bất kì nào
+
+64
+00:04:03,158 --> 00:04:07,188
+Tốc độ lưu thông của ta là có bao nhiêu lượng vào và ra
+
+65
+00:04:07,188 --> 00:04:11,620
+tốc độ R.
+Giờ thì 3 biến số này
+
+66
+00:04:11,620 --> 00:04:15,438
+ba đơn vị vận hành này có thể được
+
+67
+00:04:15,438 --> 00:04:18,750
+liên kết với nhau và đây là định luật Little
+
+68
+00:04:18,750 --> 00:04:22,399
+Định luật Little liên kết ba cái lại.
+
+69
+00:04:22,399 --> 00:04:26,069
+Ta lấy lượng hàng lưu kho trung bình và nếu bạn nhìn vào bên trong hộp,
+
+70
+00:04:26,069 --> 00:04:29,680
+ở đó, có những đơn vị đang tồn tại bên trong quá trinh bằng với
+
+71
+00:04:29,680 --> 00:04:34,139
+tốc độ lưu thông trung bình.
+Đó là tốc độ lưu thông  chạy xuyên suốt
+
+72
+00:04:34,139 --> 00:04:35,560
+các đơn vị quá trình
+
+73
+00:04:35,560 --> 00:04:40,259
+mỗi giờ hoặc mỗi phút hoặc mỗi giây
+
+74
+00:04:40,259 --> 00:04:43,419
+và ta nhân cái đó với thời gian lưu thông trung bình
+
+75
+00:04:43,418 --> 00:04:46,448
+độ dài thời gian cần cho một đơn vị trung bình
+
+76
+00:04:46,449 --> 00:04:50,680
+hoàn tất bản thân quá trình, vậy định luật Little nói rằng
+
+77
+00:04:50,680 --> 00:04:53,900
+lượng hàng lưu kho trung bình bằng tốc độ lưu thông trung bình
+
+78
+00:04:53,899 --> 00:04:57,250
+nhân thời gian lưu thông trung bình.
+
+79
+00:04:57,250 --> 00:05:00,850
+I bằng R nhân T, rất rất rõ ràng.
+
+80
+00:05:00,850 --> 00:05:03,900
+vì miễn là ta biết những giá trị của
+
+81
+00:05:03,899 --> 00:05:08,409
+2  trong những biến số, ta luôn có thể tính cái thứ ba.
+
+82
+00:05:08,410 --> 00:05:11,479
+Vậy hãy tính một ví dụ đơn giản.
+
+83
+00:05:11,478 --> 00:05:15,629
+Một nhà máy sản xuất đồ chơi có tốc độ lưu thông là 30 búp bê mỗi giờ
+
+84
+00:05:15,629 --> 00:05:19,370
+và nó mất khoảng nửa tiếng để một đồ chơi đi qua cả quá trình
+
+85
+00:05:19,370 --> 00:05:22,949
+vậy trung bình bao nhiêu đồ chơi trong quá trình?
+
+86
+00:05:22,949 --> 00:05:28,430
+Hãy dừng video lại và dành chút thời gian giải bài toán đó.
+
+87
+00:05:28,430 --> 00:05:31,889
+Điểm mấu chốt ở đây là nhìn vào vấn đề và xác định
+
+88
+00:05:31,889 --> 00:05:35,430
+những giá trị của những biến số.
+
+89
+00:05:35,430 --> 00:05:38,829
+Nếu bạn chú ý ta đã nói nói rằng tốc độ lưu thông là
+
+90
+00:05:38,829 --> 00:05:42,740
+30 đồ chơi mỗi giờ, vậy đó là một biến số
+
+91
+00:05:42,740 --> 00:05:46,930
+R độ dài thời gian trong quá trình
+
+92
+00:05:46,930 --> 00:05:50,810
+là nửa giờ, đó là thời gian lưu thông, vậy đó là T.
+
+93
+00:05:50,810 --> 00:05:54,050
+Để tính lượng hàng lưu kho
+
+94
+00:05:54,050 --> 00:05:58,319
+ta sử dụng định luật Little
+I = R x T
+
+95
+00:05:58,319 --> 00:06:01,639
+bằng 30 đồ chơi mỗi giờ
+
+96
+00:06:01,639 --> 00:06:04,769
+nhân với nửa giờ
+
+97
+00:06:04,769 --> 00:06:08,409
+bằng 15 đồ chơi.
+Đó là tất cả cần làm
+
+98
+00:06:08,410 --> 00:06:11,479
+định luật Litte.
+Hiểu mối quan hệ của
+
+99
+00:06:11,478 --> 00:06:15,159
+I = R x T.
+
+100
+00:06:15,160 --> 00:06:18,500
+Lần tới, ta sẽ giải quyết những vấn đề phức tạp hơn
+
+101
+00:06:18,500 --> 00:06:20,800
+bằng cách sử dụng định luật Little. Hẹn gặp bạn sau.
+

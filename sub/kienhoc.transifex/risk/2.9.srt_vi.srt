@@ -1,0 +1,759 @@
+0
+00:00:05,090 --> 00:00:05,770
+Chào các bạn.
+Như các bạn đã biết, chúng ta hiện đang phân tích rất nhiều dữ liệu.
+
+2
+00:00:11,140 --> 00:00:13,460
+Đặc biệt là với những bạn chưa từng làm việc này trước đây.
+
+3
+00:00:13,460 --> 00:00:17,620
+Nó bao hàm cũng khá nhiều thứ, đúng không?
+
+4
+00:00:17,620 --> 00:00:21,920
+Các bạn sẽ hiểu về các khái niệm, cách áp dụng dữ liệu, cách sử dụng Excel,
+
+5
+00:00:21,920 --> 00:00:24,270
+và có thêm kiến thức về thống kê.
+
+6
+00:00:24,270 --> 00:00:27,950
+Đôi lúc nó có thể hơi nhiều nhưng
+
+7
+00:00:27,950 --> 00:00:32,490
+tin tốt khi các bạn học trực tuyến là các bạn có thể nghỉ và quay lại học tiếp,
+
+8
+00:00:33,500 --> 00:00:37,580
+xem lại chỗ mình chưa hiểu và cứ như vậy.
+
+9
+00:00:37,580 --> 00:00:43,270
+Hiện tại, chúng ta đang sử dụng thống kê để
+
+10
+00:00:43,270 --> 00:00:49,350
+phân tích một lượng lớn dữ liệu trong môn Rủi ro và Mức sinh lời.
+
+11
+00:00:49,350 --> 00:00:51,490
+Vậy chúng ta vừa làm gì?
+
+12
+00:00:51,490 --> 00:00:55,682
+Chúng ta vừa tính xong mức sinh lời trung bình.
+
+13
+00:00:58,477 --> 00:01:04,087
+Chúng ta đã tính độ lệch chuẩn và phương sai đẻ hiểu thêm về rủi ro trong đầu tư.
+
+14
+00:01:04,087 --> 00:01:08,816
+Sau đó, chúng ta quay qua tính hiệp phương sai, hệ số tương quan và
+
+15
+00:01:08,816 --> 00:01:13,884
+số Beta để hiểu thêm về mối liên hệ giữa công ty và thị trường.
+
+16
+00:01:13,884 --> 00:01:19,040
+Nhưng bây giờ chúng ta sẽ tiếp tục.
+
+17
+00:01:19,040 --> 00:01:23,260
+Trừ phi các bạn là tuýp người tránh rủi ro khi đầu tư, 
+nên cũng không có ý nghĩa gì khi
+
+18
+00:01:23,260 --> 00:01:28,600
+tìm hiểu rủi ro, bởi vì các bạn không bao giờ quyết định được mức an toàn.
+
+19
+00:01:30,030 --> 00:01:33,900
+Điều quan trọng là các bạn đang có trong tay một danh mục đầu tư lớn.
+
+20
+00:01:33,900 --> 00:01:38,040
+Và một trong những nơi được đầu tư nhiều nhất là thị trường.
+
+21
+00:01:38,040 --> 00:01:43,000
+Khi dùng khái niệm đó, các bạn đã bao hàm mọi thứ trên thế giới này.
+
+22
+00:01:43,000 --> 00:01:47,900
+Nhưng vì thời gian có hạn nên chúng ta chỉ sẽ tập trung vô S&P 500 thôi,
+
+
+23
+00:01:47,900 --> 00:01:51,780
+và những khía cạnh khả thi trong thực tế.
+
+24
+00:01:51,780 --> 00:01:54,690
+Khoảng thời gian của lượng dữ liệu tôi gửi các bạn là bao lâu?
+
+25
+00:01:54,690 --> 00:02:01,453
+60 tháng, tính từ dòng số 2 đến dòng 61.
+
+26
+00:02:01,453 --> 00:02:06,364
+Dữ liệu không nằm ở cột số một, vì đó là cột tháng
+
+27
+00:02:06,364 --> 00:02:07,224
+mà là ở cột 2.
+
+28
+00:02:07,224 --> 00:02:12,300
+Giờ chúng ta sẽ tính mức sinh lời trung bình của công ty.
+
+29
+00:02:12,300 --> 00:02:15,130
+Chúng ta đi nhanh qua phần này, và
+
+30
+00:02:15,130 --> 00:02:18,860
+sau đó tôi sẽ tóm tắt lại nội dung phần này.
+
+31
+00:02:18,860 --> 00:02:24,370
+Chúng ta sẽ tổng kết lại, sau đó đi vào từng phần cụ thể hơn.
+
+32
+00:02:24,370 --> 00:02:29,428
+và áp dụng lý thuyết để lập nên
+
+33
+00:02:29,428 --> 00:02:34,594
+Mô hình Vốn đầu tư lặp., theo ý tôi là mô hình tối ưu nhất từ trước đến giờ.
+
+34
+00:02:34,594 --> 00:02:37,467
+Nó cũng khá đơn giản và rõ ràng.
+
+35
+00:02:37,467 --> 00:02:42,090
+và cũng được áp dụng ở một số khía cạnh, không phải toàn bộ.
+
+36
+00:02:42,090 --> 00:02:45,400
+Mức sinh lợi trung bình của danh mục đầu tư của công ty bằng bao nhiêu?
+
+37
+00:02:45,400 --> 00:02:46,940
+Rất đơn giản.
+
+38
+00:02:46,940 --> 00:02:48,890
+Chúng ta sẽ ghi công thức trước.
+
+39
+00:02:48,890 --> 00:02:53,640
+Chúng ta sẽ tính Rm trung bình, m là viết tắt của thị trường (market)
+
+40
+00:02:53,640 --> 00:02:58,640
+Nhưng trong trường hợp này, chúng ta sẽ tính của S&P 500.
+
+41
+00:02:58,640 --> 00:03:07,120
+Chúng ta sẽ tính 1/N nhân với Sigma của Rm, được chứ?
+
+42
+00:03:07,120 --> 00:03:13,710
+Và kết quả tôi tính được là 1.30%.
+
+43
+00:03:13,710 --> 00:03:18,350
+và tôi tính giá trị trung bình từ ô B2 đến ô B61 như thế nào?
+
+44
+00:03:19,540 --> 00:03:21,143
+Cũng khá đơn giản.
+
+45
+00:03:21,143 --> 00:03:25,960
+Khá biệt giữa 2 chỉ số an toàn 1 và 2 cũng khá rõ ràng.
+
+46
+00:03:25,960 --> 00:03:28,851
+bởi vì chúng chỉ là các chỉ số an toàn và
+
+47
+00:03:28,851 --> 00:03:32,470
+còn đây là sự kết hợp từ nhiều chỉ số an toàn.
+
+48
+00:03:33,570 --> 00:03:40,575
+Nếu quan sát thì các bạn thấy nó sẽ rất thấp,
+nhưng đó là hàm số theo thời gian.
+
+49
+00:03:40,575 --> 00:03:44,940
+Phương sai/Độ lệch chuẩn của danh mục đầu tư trong công ty, cũng khá đơn giản.
+
+50
+00:03:44,940 --> 00:03:46,490
+Giờ chúng ta sẽ tính nó.
+
+51
+00:03:46,490 --> 00:03:50,410
+Các bạn dùng hàm gì trong Excel để tính?
+
+52
+00:03:50,410 --> 00:03:53,970
+Các bạn sẽ dùng hàm VARS, 
+tôi nghĩ là các chữ đều viết hoa.
+
+53
+00:03:55,460 --> 00:03:57,042
+Hãy viết công thức ra.
+
+54
+00:03:57,042 --> 00:03:59,670
+Rm bình phương.
+
+55
+00:03:59,670 --> 00:04:01,490
+Excel đang hiển thị cái gì?
+
+56
+00:04:01,490 --> 00:04:05,400
+Nó đang điều chỉnh số bậc tự do, nhưng vì đang tính
+
+57
+00:04:06,850 --> 00:04:10,450
+nhân với Sigma của Rm - Rm trung bình.
+
+58
+00:04:10,450 --> 00:04:11,780
+Có bao nhiêu số tất cả?
+
+59
+00:04:11,780 --> 00:04:15,590
+60 số, và cuối cùng lấy bình phương.
+
+60
+00:04:15,590 --> 00:04:22,230
+Nếu thiếu bình phương, các bạn sẽ ra kết quả là 0.
+
+61
+00:04:22,230 --> 00:04:25,933
+Kết quả chúng ta tính được
+
+62
+00:04:25,933 --> 00:04:30,124
+là 0.0021.
+
+63
+00:04:30,124 --> 00:04:33,205
+Nhận xét đầu tiên là kết quả tính được
+
+64
+00:04:33,205 --> 00:04:36,285
+thấp hơn so với phương sai của mức an toàn.
+
+65
+00:04:36,285 --> 00:04:40,337
+và đó cũng là cái đáng suy nghĩ.
+
+66
+00:04:40,337 --> 00:04:47,975
+Số tiếp theo tôi sẽ tính đó là độ lệch chuẩn.
+
+67
+00:04:47,975 --> 00:04:52,330
+Lấy căn bậc hai và kết quả là 0.0457%.
+
+68
+00:04:52,330 --> 00:04:55,660
+Chúng ta đã tính xong độ lệch chuẩn và phương sai của công ty.
+
+69
+00:04:56,750 --> 00:04:58,250
+Tại sao chúng ta lại tính những số này?
+
+70
+00:04:58,250 --> 00:05:01,010
+Để tôi cho các bạn ví dụ này.
+
+71
+00:05:01,010 --> 00:05:03,930
+Giả sử như có 3 tình huống.
+
+72
+00:05:03,930 --> 00:05:07,570
+Các bạn chỉ có thể chọn 1 trong 3 cái: chỉ số an toàn 1, chỉ số an toàn 2,
+
+73
+00:05:07,570 --> 00:05:10,310
+danh mục đầu tư của công ty.
+
+74
+00:05:10,310 --> 00:05:13,690
+Bạn sẽ chọn cái nào
+
+75
+00:05:13,690 --> 00:05:16,080
+trong 3 cái ở trên?
+
+76
+00:05:16,080 --> 00:05:20,400
+Câu trả lời rất rõ ràng, nó tùy thuộc vào khả năng chấp nhận rủi ro của bạn.
+
+77
+00:05:20,400 --> 00:05:23,880
+Và hầu hết chúng ta là những người né rủi ro, nên chúng ta sẽ chọn gì?
+
+78
+00:05:23,880 --> 00:05:24,900
+Chọn hết 3 cái.
+
+79
+00:05:24,900 --> 00:05:32,030
+Một lúc nào đó các bạn sẽ thấy người ta không chỉ cố gắng bảo vệ danh mục đầu tư
+
+80
+00:05:32,030 --> 00:05:37,010
+mà còn có danh mục đầu tư ước đoán.
+
+81
+00:05:37,010 --> 00:05:41,554
+Các bạn không cần phải mua và bán và trả chi phí giao dịch.
+
+82
+00:05:41,554 --> 00:05:43,960
+Hình thức này ngày càng trở nên phổ biến.
+
+83
+00:05:43,960 --> 00:05:48,980
+Chúng ta đi tiếp nào.
+
+84
+00:05:48,980 --> 00:05:53,210
+Hiệp phương sai giữa chỉ số an toàn 1 và công ty là gì?
+
+85
+00:05:55,060 --> 00:06:00,760
+Đi kèm với nó là cả nhiều thứ khác nữa.
+
+86
+00:06:00,760 --> 00:06:05,700
+Lý do rất là đơn giản.
+Chỉ số an toàn 1, độ lệch chuẩn của phương sai
+
+87
+00:06:05,700 --> 00:06:10,970
+không có ý nghĩa gì đối với những người tránh rủi ro.
+
+88
+00:06:10,970 --> 00:06:15,460
+Giả sử như bạn là một người nào đó đang nắm giữ một danh mục đầu tư đa dạng.
+
+89
+00:06:15,460 --> 00:06:18,550
+Và giả sử như đây là danh mục đầu tư của công ty.
+
+90
+00:06:18,550 --> 00:06:21,750
+Lúc đó chỉ số an toàn cực kì quan trọng vì lúc đó
+
+91
+00:06:21,750 --> 00:06:26,790
+chúng ta phải đánh giá mọi thứ trong công ty.
+
+92
+00:06:26,790 --> 00:06:30,110
+Bởi vì những thứ đó sẽ dùng để đánh giá rủi ro.
+
+93
+00:06:30,110 --> 00:06:34,870
+Làm cách nào các bạn tính được hiệp phương sai này?
+
+94
+00:06:34,870 --> 00:06:37,020
+Giờ chúng ta sẽ tính.
+
+95
+00:06:37,020 --> 00:06:42,941
+Hiệp phương sai sigma 1,m
+
+96
+00:06:42,941 --> 00:06:48,269
+sẽ bằng 1/(N-1)
+
+97
+00:06:48,269 --> 00:06:56,270
+nhân với tổng (R1-R1i).
+
+98
+00:06:58,127 --> 00:07:06,830
+Tôi nhầm.
+R1 trung bình, rồi nhân với Rm trừ Rm trung bình.
+
+99
+00:07:08,600 --> 00:07:11,030
+Xin lỗi các bạn chỗ đó.
+
+100
+00:07:11,030 --> 00:07:17,020
+Dấu gạch là tượng trưng cho trung bình.
+Cũng khá dễ tính.
+
+101
+00:07:17,020 --> 00:07:23,853
+Nếu tính đúng thì đáp án là 0.0017.
+
+102
+00:07:23,853 --> 00:07:28,492
+Các bạn dùng hàm gì
+
+103
+00:07:28,492 --> 00:07:32,390
+để tính hệ số tương quan và hiệp phương sai?
+Hàm COV
+
+104
+00:07:32,390 --> 00:07:36,730
+Và nhớ rằng các bạn đang dùng dữ liệu mẫu, không phải chính thức.
+
+105
+00:07:36,730 --> 00:07:41,200
+Các bạn cũng có thể tính tay để hiểu ý nghĩa của nó.
+
+106
+00:07:41,200 --> 00:07:46,040
+Nếu muốn hiểu sâu hơn thì phương pháp này không hữu ích lắm,
+
+
+107
+00:07:46,040 --> 00:07:50,530
+nhưng hoàn toàn cần thiết bởi vì các bạn không thể tính tiếp
+trừ phi các bạn tính được số này.
+
+108
+00:07:50,530 --> 00:07:55,350
+Kết luận duy nhất mà các bạn có thể rút ra là 
+
+109
+00:07:55,350 --> 00:08:00,030
+hệ số trung bình có liên hệ mật thiết với thị trường.
+
+110
+00:08:00,030 --> 00:08:02,763
+Và một lần nữa, tôi nhắc với các bạn rằng
+
+111
+00:08:02,763 --> 00:08:07,710
+hiện tượng này dễ xảy ra hơn so với trường hợp hệ số tương quan âm hay
+
+112
+00:08:07,710 --> 00:08:13,110
+hệ số tương quan bằng 0.
+
+113
+00:08:13,110 --> 00:08:18,500
+Cái này chỉ cho các bạn biết dấu hiệu để nhận biết, chúng ta nên bỏ qua và
+
+114
+00:08:18,500 --> 00:08:20,670
+cố tìm cách tính hệ số tương quan.
+
+115
+00:08:20,670 --> 00:08:23,737
+Hệ số tương quan giữa mức an toàn 1 và an toàn 2 là bao nhiêu?
+
+116
+00:08:23,737 --> 00:08:28,453
+Hệ số tương quan giữa mức an toàn 1 và
+
+117
+00:08:28,453 --> 00:08:32,383
+mức an toàn 2 được kí hiệu là sigma 1,m
+
+118
+00:08:32,383 --> 00:08:37,370
+chia cho sigma 1 nhân với sigma m.
+
+119
+00:08:38,659 --> 00:08:42,710
+Do đó nên nó được tiêu chuẩn hóa bằng cả 2 biến, được chứ?
+
+120
+00:08:42,710 --> 00:08:49,415
+Và tôi nghĩ hệ số tương quan là 0.32.
+
+121
+00:08:49,415 --> 00:08:55,313
+tôi và các bạn đều biết hết số liệu, các bạn tính thử xem, nếu đúng thì kết quả là 0.32.
+
+122
+00:08:55,313 --> 00:08:57,380
+Tôi hỏi câu này.
+
+123
+00:08:57,380 --> 00:08:58,530
+Con số này có ý nghĩa gì?
+
+124
+00:08:58,530 --> 00:09:05,700
+Số này mang dấu dương.
+Số này với số 0.06 thì cái nào gần với 1 hơn?
+
+125
+00:09:05,700 --> 00:09:06,768
+Câu trả lời là có.
+
+126
+00:09:06,768 --> 00:09:08,910
+0.06 có liên hệ với chỉ số an toàn 1 và 2.
+
+127
+00:09:08,910 --> 00:09:11,478
+Kết quả này thỏa, do đó
+
+128
+00:09:11,478 --> 00:09:17,410
+kết quả 0.32 cũng khá lớn.
+
+129
+00:09:17,410 --> 00:09:21,849
+Nếu xét trong thực tế thì chúng ta chưa bao giờ
+
+130
+00:09:21,849 --> 00:09:24,224
+gặp trường hợp mà số lớn như vầy.
+
+131
+00:09:24,224 --> 00:09:28,860
+Tin tốt là số đó nằm giữa -1 và +1.
+
+132
+00:09:28,860 --> 00:09:33,290
+Cụ thể hơn, số nằm trong khoảng +1 có thể bị âm.
+
+133
+00:09:33,290 --> 00:09:37,370
+Nhưng trong thực tế thì chúng thường dương.
+
+134
+00:09:38,490 --> 00:09:41,500
+Và thông thường thì hầu hết các mức an toàn đều có
+
+135
+00:09:41,500 --> 00:09:45,550
+hệ số tương quan dương, và nếu có thay đổi thì
+
+136
+00:09:45,550 --> 00:09:46,670
+nó vẫn dương.
+
+137
+00:09:47,800 --> 00:09:49,390
+Các bạn nhớ kĩ cái đó.
+
+138
+00:09:51,490 --> 00:09:54,670
+Chúng ta đi tiếp nào, vì nội dung bài học vẫn chưa xong.
+
+139
+00:09:54,670 --> 00:09:59,812
+Theo tôi thì cái này sẽ là biến số quan trọng mà lát sau chúng ta sẽ dùng,
+
+140
+00:09:59,812 --> 00:10:02,303
+nên tôi sẽ giới thiệu nó bây giờ cho các bạn luôn.
+
+141
+00:10:02,303 --> 00:10:07,574
+Câu hỏi ở đây là hệ số Beta giữa 1 và $&P 500 là bao nhiêu?
+
+142
+00:10:07,574 --> 00:10:09,570
+Chúng ta sẽ dùng phương trình hồi quy.
+
+143
+00:10:09,570 --> 00:10:13,690
+Đây là cái mà tôi đã chờ lâu lắm rồi.
+
+144
+00:10:16,890 --> 00:10:23,728
+Beta 1,m nhân với Rm rồi cộng với Epsilon i. 
+
+145
+00:10:25,068 --> 00:10:27,462
+Epsilon 1,i mới đúng.
+
+146
+00:10:29,736 --> 00:10:31,790
+Do số 1 đã có rồi nên ở đây tôi sẽ không ghi nữa.
+
+147
+00:10:33,230 --> 00:10:36,680
+Giờ chúng ta sẽ tìm cách tính cái này.
+
+148
+00:10:36,680 --> 00:10:38,905
+Hàm số các bạn dùng có đồ thị là đường cong phân bố.
+
+149
+00:10:40,726 --> 00:10:44,849
+Hãy viết công thức ra trước đã.
+
+150
+00:10:44,849 --> 00:10:50,169
+Beta 1,m bằng hệ số tương quan 1,m,
+hệ số này chúng ta đã biết,
+
+151
+00:10:50,169 --> 00:10:57,490
+không chia cho sigma 1 hay sigma m, 
+mà chia cho sigma m bình phương.
+
+152
+00:10:57,490 --> 00:10:58,950
+Cách diễn đạt này
+
+153
+00:10:58,950 --> 00:11:03,450
+khá hay vì nó biểu diễn liên hệ giữa hệ số an toàn 1 và m.
+
+154
+00:11:03,450 --> 00:11:05,010
+Vậy m đại diện cho cái gì?
+
+155
+00:11:05,010 --> 00:11:07,880
+Tất cả những người trong danh mục dầu tư của bạn.
+
+156
+00:11:09,120 --> 00:11:13,700
+Có liên hệ với cả danh mục dầu tư nữa.
+
+157
+00:11:13,700 --> 00:11:16,310
+Chúng ta có cần chú ý đến những số này không?
+
+158
+00:11:16,310 --> 00:11:17,770
+Câu trả lời là có.
+
+159
+00:11:17,770 --> 00:11:25,406
+Kết quả ở đây là 0.79.
+
+160
+00:11:25,406 --> 00:11:27,050
+Điều này có ý nghĩa gì?
+
+161
+00:11:27,050 --> 00:11:32,740
+Nó có ý nghĩa quan trọng, giả sử như mọi thông số thay đỏi khoảng 1%,
+
+162
+00:11:32,740 --> 00:11:35,736
+thì số này thay đổi như thế nào?
+
+163
+00:11:35,736 --> 00:11:37,322
+0.79%.
+
+164
+00:11:37,322 --> 00:11:41,740
+Nó không đồng nhất với thị trường lắm, chỉ mang tính tương dối thôi.
+
+165
+00:11:41,740 --> 00:11:48,420
+Và hóa ra hầu hết các số Beta đều trong khoảng phân bố khá hẹp.
+
+166
+00:11:48,420 --> 00:11:53,400
+Nhưng nó cũng phụ thuộc vào chu kì của công ty.
+
+167
+00:11:53,400 --> 00:11:54,690
+Vậy thì công ty đó thuộc loại nào?
+
+168
+00:11:54,690 --> 00:11:56,810
+Loại doanh nghiệp nào có thể áp dụng được?
+
+169
+00:11:56,810 --> 00:12:02,190
+Nếu là các công ty lớn thì số này sẽ rất cao,
+tôi sẽ giải thích tại sao.
+
+170
+00:12:02,190 --> 00:12:06,245
+Nếu như chúng ta sử dụng thường xuyên thì số beta này sẽ nhỏ dần,
+
+171
+00:12:06,245 --> 00:12:09,450
+nhưng nó vẫn dương.
+
+172
+00:12:09,450 --> 00:12:13,800
+Giờ tôi sẽ cho các bạn nghỉ một chút.
+
+173
+00:12:13,800 --> 00:12:18,910
+Tôi yêu cầu các bạn hãy tính các số Beta.
+
+174
+00:12:18,910 --> 00:12:21,440
+Để xem các bạn rút ra nhận xét gì
+
+175
+00:12:21,440 --> 00:12:25,810
+rồi tôi sẽ cho các bạn làm quen với các bài tập.
+
+176
+00:12:25,810 --> 00:12:29,420
+Hãy tính bằng cách dùng hàm Excel và không dùng hàm Excel.
+
+177
+00:12:29,420 --> 00:12:30,720
+Nếu các bạn giỏi thì
+
+178
+00:12:30,720 --> 00:12:34,800
+các bạn không cần làm hết mà hãy lập hàm hồi quy luôn.
+
+179
+00:12:35,870 --> 00:12:40,470
+Cho dù các bạn đang học gì đi nữa thì
+
+180
+00:12:40,470 --> 00:12:44,850
+trong Thống kê hay Tài chính, hãy thử áp dụng chúng trong việc
+
+181
+00:12:44,850 --> 00:12:48,370
+phân tích dữ liệu, đó là cái hay của nó.
+
+182
+00:12:48,370 --> 00:12:49,370
+Tôi sẽ nghỉ một lát,
+
+183
+00:12:49,370 --> 00:12:55,130
+khi quay lại tôi sẽ tổng quát hóa lại mọi thứ và giải thích
+
+184
+00:12:55,130 --> 00:13:00,410
+tại sao chúng ta lại học phân tích dữ liệu trong một thời gian dài đến vậy
+
+185
+00:13:01,480 --> 00:13:07,210
+tuy học thống kê nhưng lại sử dụng dữ liệu tài chính.
+
+186
+00:13:07,210 --> 00:13:08,328
+Chào các bạn.
+

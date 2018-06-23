@@ -1,0 +1,258 @@
+1
+00:00:07,200 --> 00:00:09,320
+Hãy cùng nghĩ thêm về trực giác.
+
+2
+00:00:09,320 --> 00:00:13,120
+Ta đã nói rằng có thể mô phỏng trực giác 
+bằng cách sử dụng hồi quy
+
+3
+00:00:13,120 --> 00:00:18,890
+với 1 phương trình như thế này - đánh giá bằng hằng số
+
+4
+00:00:18,890 --> 00:00:23,670
+cộng B1 nhân Q1  cộng B2 nhân Q2, cứ thế.
+
+5
+00:00:23,670 --> 00:00:26,700
+Tại sao ta chỉ quan tâm đến đánh giá riêng của mình
+
+6
+00:00:26,700 --> 00:00:28,340
+và dùng hồi quy để mô phỏng kết quả đó?
+
+7
+00:00:28,340 --> 00:00:31,660
+Có ít nhất 3 lý do giải thích tại sao điều này có ích.
+
+8
+00:00:31,660 --> 00:00:36,219
+Đầu tiên, bạn sẽ có cái nhìn sâu sắc hơn 
+trong việc đưa ra quyết định 
+
+9
+00:00:36,219 --> 00:00:38,590
+và đánh giá của chính mình.
+
+10
+00:00:38,590 --> 00:00:42,000
+Nó khá là giống việc bạn mở rộng đầu óc 
+và tìm hiểu cách mình đưa ra lựa chọn 
+
+11
+00:00:42,000 --> 00:00:43,980
+và đưa ra quyết định.
+
+12
+00:00:43,980 --> 00:00:47,433
+Đặc biệt, khi gặp phải tình huống 
+mà bạn biết bạn muốn lựa chọn
+
+13
+00:00:47,433 --> 00:00:50,540
+nhưng lại không biết lý do tại sao,
+
+14
+00:00:50,540 --> 00:00:53,470
+đây có thể coi là 1 kỹ xảo thú vị.
+
+15
+00:00:53,470 --> 00:00:56,500
+Nhìn vào hệ số của các biến Q, bạn sẽ biết được
+
+16
+00:00:56,500 --> 00:01:00,670
+cái nào quan trọng và cái nào không.
+
+17
+00:01:00,670 --> 00:01:04,430
+Một khi hiểu rõ quy trình này, bạn có thể thay đổi
+
+18
+00:01:04,430 --> 00:01:08,790
+và chỉnh sửa lại đánh giá riêng của mình.
+
+19
+00:01:08,790 --> 00:01:12,350
+Bạn đang cân nhắc giá cả để đưa ra quyết định
+
+20
+00:01:12,350 --> 00:01:15,400
+nhưng số liệu lại bảo bạn là không nên.
+
+21
+00:01:15,400 --> 00:01:19,829
+Đơn giản hãy xem như phương trình này
+ có tác dụng A, giúp bạn nhìn nhận rõ ràng hơn và B,
+
+22
+00:01:19,829 --> 00:01:24,240
+cải thiện việc bạn ra quyết định.
+
+23
+00:01:24,240 --> 00:01:29,560
+Thứ 2, có thể dùng mẫu như thế này để theo dõi
+thay đổi trong việc quyết định của bản thân
+
+24
+00:01:29,560 --> 00:01:33,340
+theo thời gian.
+
+25
+00:01:33,340 --> 00:01:36,569
+Bạn có thể dùng hồi quy với khoảng cách là mỗi 6 tháng.
+
+26
+00:01:36,569 --> 00:01:39,369
+Từ đấy, bạn sẽ thấy là 
+tính quan trọng của các tác nhân
+
+27
+00:01:39,369 --> 00:01:41,850
+đi lên hay xuống.
+
+28
+00:01:41,850 --> 00:01:45,049
+Bạn sẽ có thể hình dung rõ hơn liệu trên thực tế
+
+29
+00:01:45,049 --> 00:01:48,880
+những yếu tố này có trở nên quan trọng hay không.
+
+30
+00:01:48,880 --> 00:01:53,929
+Thứ 3, có thể dùng mẫu của người khác
+ nếu mẫu đó 
+
+31
+00:01:53,929 --> 00:01:58,369
+giúp bạn định ra tiêu chuẩn cho quyết định của mình.
+
+32
+00:01:58,369 --> 00:01:59,951
+Tưởng tượng bạn là bác sỹ.
+
+33
+00:01:59,951 --> 00:02:03,709
+Có một người điều trị mà bạn tin vào đánh giá của họ.
+
+34
+00:02:03,709 --> 00:02:06,549
+Người này luôn đưa ra những chẩn đoán chính xác.
+
+35
+00:02:06,549 --> 00:02:07,689
+Bạn muốn biết sao người đó làm được như  vậy.
+
+36
+00:02:07,689 --> 00:02:11,830
+Hãy thử thuyết phục người đó 
+thực hiện một chương trình mẫu
+
+37
+00:02:11,830 --> 00:02:14,920
+ về chẩn đoán lâm sàng.
+
+38
+00:02:14,920 --> 00:02:18,629
+Ở cuối quy trình, bạn sẽ thu được 1 phương trình.
+
+39
+00:02:18,629 --> 00:02:21,510
+Nó cho biết khả năng của bệnh nhân
+ mắc phải bệnh a hay bệnh b
+
+40
+00:02:21,510 --> 00:02:25,810
+dựa trên mẫu hồi quy.
+
+41
+00:02:25,810 --> 00:02:30,030
+Sau đó bạn có thể so sánh
+ các đánh giá của mình
+
+42
+00:02:30,030 --> 00:02:32,110
+với đánh giá của chuyên gia này.
+
+43
+00:02:32,110 --> 00:02:34,520
+Bạn có thể chăm chút cho
+ quá trình này hơn một chút.
+
+44
+00:02:34,520 --> 00:02:39,140
+Giả sử bạn có 2 hoặc 3 chuyên gia, 
+1 người trong lĩnh vực A,
+
+45
+00:02:39,140 --> 00:02:43,969
+người thứ 2 lĩnh vực B và người còn lại lĩnh vực C
+
+46
+00:02:43,969 --> 00:02:47,269
+Bác sỹ A rất giỏi trong chẩn đoán bệnh cho trẻ em,
+
+47
+00:02:47,269 --> 00:02:52,000
+bác sỹ B giỏi các bệnh về thần kinh,
+
+48
+00:02:52,000 --> 00:02:53,780
+bác sỹ C giỏi về bệnh tim.
+
+49
+00:02:53,780 --> 00:02:57,659
+Bạn có thể lập  ra các mẫu hồi quy khác nhau
+
+50
+00:02:57,659 --> 00:02:58,939
+cho mỗi người.
+
+51
+00:02:58,939 --> 00:03:03,090
+Từ đó bạn có thể chỉ ra chuyên môn
+ của bác sỹ A ở 1 lĩnh vực,
+
+52
+00:03:03,090 --> 00:03:05,410
+bác sỹ B ở lĩnh vực thứ 2 
+và bác sỹ C ở lĩnh vực thứ 3.
+
+53
+00:03:05,410 --> 00:03:09,469
+Bạn sẽ phân biệt được bằng cách dựng mẫu cho trực giác
+
+54
+00:03:09,469 --> 00:03:12,460
+cho các trường hợp khác nhau này.
+
+55
+00:03:12,460 --> 00:03:16,909
+Phân tích các quyết định rất thú vị 
+
+56
+00:03:16,909 --> 00:03:20,329
+bởi bạn không chỉ hiểu hơn về
+ quá trình quyết định của mình
+
+57
+00:03:20,329 --> 00:03:23,650
+mà còn giúp bạn xác định tiêu chuẩn 
+và dần điều chỉnh quá trình của mình.
+
+58
+00:03:23,650 --> 00:03:28,280
+Khi ta đi vào tuần 5 và 6 của khóa học,
+
+59
+00:03:28,280 --> 00:03:32,560
+ta sẽ xem xét một số cách cụ thể nhằm 
+sử dụng sự hiểu biết này
+
+60
+00:03:32,560 --> 00:03:34,519
+vào việc điều chỉnh quá trình của mình.
+

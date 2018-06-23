@@ -1,0 +1,224 @@
+1
+00:00:04,680 --> 00:00:09,350
+https://youtu.be/71o2NXeqOsU
+We are still with annuities and I did some
+examples with you, with Future
+
+2
+00:00:09,350 --> 00:00:15,000
+Values, but yes, there's some structure
+provided by annuities,
+
+3
+00:00:15,10 --> 00:00:18,120
+but when I saw them first I said what is this?
+
+4
+00:00:18,120 --> 00:00:24,540
+How will it work? But that´s... it's very
+useful, even the assumption that you are putting
+
+5
+00:00:24,540 --> 00:00:30,180
+away fixed amounts every year or
+paying fixed amounts is very realistic,
+
+6
+00:00:30,180 --> 00:00:35,780
+because people want to invest in ways
+that are understandable, simple,
+
+7
+00:00:35,780 --> 00:00:39,530
+not changing every period and then when you think about
+
+8
+00:00:39,530 --> 00:00:46,650
+PMT, it derives we will see in a second from
+loans and you take a loan and then pay cash
+
+9
+00:00:46,650 --> 00:00:50,120
+flows in the future and typically
+they're fixed in quantities, so
+
+10
+00:00:50,120 --> 00:00:55,19
+that's where the word PMT comes from. So let's get started. Now I'm going to shift a little
+
+11
+00:00:55,19 --> 00:01:01,680
+bit and first do the concept of Present
+Value of annuities, so please stare at
+
+12
+00:01:01,680 --> 00:01:07,790
+the screen and what you´ll see is, the same
+structure of an annuity, where three
+
+13
+00:01:07,790 --> 00:01:14,20
+things are happening. You need to know R
+and we'll introduce it, you need to know N
+
+14
+00:01:14,20 --> 00:01:19,850
+which in this case is, conceptual case is,
+three and you need to know cash flow C,
+
+15
+00:01:19,850 --> 00:01:24,820
+Right? So what I'm going to do is go a little bit quickly because you've seen this
+
+16
+00:01:24,820 --> 00:01:33,550
+before, so the cash flow at time 0, is zero, years left to discount, now it's the opposite, right?
+
+17
+00:01:33,550 --> 00:01:34,550
+So you're going
+
+18
+00:01:34,550 --> 00:01:40,890
+discounting, you´re not carrying forward, you
+don't need to discount zero, any number
+
+19
+00:01:40,890 --> 00:01:47,520
+of years, because it's today. So remember,
+this is a timeline you can write it out
+
+20
+00:01:47,520 --> 00:01:56,570
+like 1,2,3; C, C, C and now where are
+you looking for the value? Here,
+
+21
+00:01:56,570 --> 00:02:06,500
+not at Future Value. So you're looking at PV, not FV, Okay?
+
+22
+00:02:06,510 --> 00:02:11,130
+So how much do you have to discount the
+first, no cash flow, no discounting?
+
+23
+00:02:11,130 --> 00:02:21,850
+This one year; this two years; this three years. Let's do it, because we know how to do one period.
+
+24
+00:02:21,850 --> 00:02:31,180
+This will be what? 0. This will be C, not
+multiplied by one plus R, but divided
+
+25
+00:02:31,180 --> 00:02:36,730
+by one plus R. I'm putting it in parentheses because if you were to do this kind
+
+26
+00:02:36,730 --> 00:02:42,510
+of mathematical operation in say Excel, you need stuff that belongs
+
+27
+00:02:42,510 --> 00:02:46,660
+together in divisions and all in
+parentheses, most of you probably
+
+28
+00:02:46,660 --> 00:02:53,120
+know that. So this will be divided by one
+plus R, square, so if you didn't put
+
+29
+00:02:53,120 --> 00:02:59,190
+1 plus R in parentheses, it'll think R is being squared only but that's not the case.
+
+30
+00:02:59,190 --> 00:03:06,810
+This divided by 1 plus R cube. You see how simple this is? In spite of my bad writing you know,
+
+31
+00:03:06,810 --> 00:03:13,190
+you have a very clear idea what's going
+on. What I'm going to do is, take a little
+
+32
+00:03:13,190 --> 00:03:17,230
+time, write it out as a formula, and
+explain one more time, before we do
+
+33
+00:03:17,230 --> 00:03:35,600
+examples. So the PV of an annuity
+is what? C over 1 plus R
+
+34
+00:03:35,600 --> 00:03:46,329
+Sometimes I'll write cap R, small case R, don't worry about it. C over 1 plus R square, plus C over
+
+35
+00:03:46,330 --> 00:03:48,550
+1 plus R cube.
+
+36
+00:03:48,550 --> 00:03:54,990
+Right? So this is what the formula is. Again when you notice, you can take C
+
+37
+00:03:54,990 --> 00:03:59,260
+outside. And what do you get?
+
+38
+00:03:59,260 --> 00:04:08,140
+1 over (1+R), plus 1 over (1+R) square,
+
+39
+00:04:08,140 --> 00:04:17,760
+plus 1 over (1+R) cube. My writing is getting better as we go along. I'm very impressed with myself.
+
+40
+00:04:17,760 --> 00:04:23,330
+So this is called Present Value Annuity
+Factor. Symbols used maybe different even
+
+41
+00:04:23,330 --> 00:04:35,370
+by me, but you know it's an annuity, not a, and
+it´s a function of what? R and N, right?
+
+42
+00:04:35,370 --> 00:04:40,710
+What's cool about it is, it has 3 things
+in it, because how many cash flows are
+
+43
+00:04:40,710 --> 00:04:45,150
+there? Three, but they are very simple. They are additive.
+
+44
+00:04:45,150 --> 00:04:51,49
+First cashflow discounted, second cashflow discounted, third cashflow discounted.
+
+45
+00:04:51,50 --> 00:05:00,530
+Just stare at this, these numbers are at the back of textbooks still, but you should be
+
+46
+00:05:00,530 --> 00:05:08,549
+using Excel. So if I asked you what is
+the value getting 1 buck a 100 times in the
+
+47
+00:05:08,550 --> 00:05:14,230
+future, with an interest rate of say 2%, you
+should be able to do this very quickly
+
+48
+00:05:14,230 --> 00:05:20,980
+not in your head, because then you're being insane. I can say that to you because we are talking to
+
+49
+00:05:20,980 --> 00:05:25,110
+each other. However, Excel is
+wonderful, it does it very quickly.
+

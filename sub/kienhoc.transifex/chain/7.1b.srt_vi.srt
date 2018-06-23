@@ -1,0 +1,405 @@
+0
+00:00:00,000 --> 00:00:01,220
+tangoclinhh_20/10/2017
+
+1
+00:00:01,220 --> 00:00:04,040
+Hãy cùng tìm hiểu kỹ hơn về EOQ
+
+2
+00:00:04,040 --> 00:00:05,250
+với các đơn hàng chờ giao được dự tính sẵn.
+
+3
+00:00:05,250 --> 00:00:06,930
+Phần chú thích của chúng ta vẫn không thay đổi.
+
+4
+00:00:06,930 --> 00:00:08,980
+Ta có tất cả như cũ.
+
+5
+00:00:08,980 --> 00:00:12,780
+Thứ duy nhất ta thêm vào là chi phí thiếu hụt c_s.
+
+6
+00:00:12,780 --> 00:00:14,640
+Đơn vị tính của nó là
+
+7
+00:00:14,640 --> 00:00:18,600
+đô la trên một đơn vị trên thời gian, cũng giống như
+
+8
+00:00:18,600 --> 00:00:20,900
+chi phí giữ hàng c_e, nhớ rằng nó bằng
+
+9
+00:00:20,900 --> 00:00:23,390
+chi phí mua một sản phẩm (chi phí biến đổi)
+
+10
+00:00:23,390 --> 00:00:25,930
+nhân với phí giữ hàng.
+
+11
+00:00:25,930 --> 00:00:29,810
+Bạn sẽ thấy rằng vấn đề đơn hàng chờ giao được dự tính trước
+
+12
+00:00:29,810 --> 00:00:31,950
+là một sự được mất giữa việc có quá nhiều hàng
+
+13
+00:00:31,950 --> 00:00:34,900
+và có quá ít hàng
+
+14
+00:00:34,900 --> 00:00:36,210
+dẫn tới thiếu hàng.
+
+15
+00:00:36,210 --> 00:00:38,870
+Đó thực sự là một sự được mất - và là sự khởi đầu cho các
+
+16
+00:00:38,870 --> 00:00:40,870
+loại mô hình hàng hóa khác.
+
+17
+00:00:40,870 --> 00:00:43,030
+Vậy vấn đề ta đang đối mặt là gì?
+
+18
+00:00:43,030 --> 00:00:47,040
+Nhìn vào biểu đồ hàng một lần nữa, EOQ tiêu chuẩn của ta.
+
+19
+00:00:47,040 --> 00:00:50,140
+Hãy nhớ rằng, chính sách của ta từng là: khi hàng ở mức 0,
+
+20
+00:00:50,140 --> 00:00:51,150
+ta đặt hàng tiếp.
+
+21
+00:00:51,150 --> 00:00:52,735
+Vậy sau mỗi khoảng thời gian này,
+
+22
+00:00:52,735 --> 00:00:56,620
+tôi sẽ đặt một đơn hàng với số lượng Q.
+
+23
+00:00:56,620 --> 00:01:00,660
+Câu hỏi ta đang đặt ra là: nếu tôi cho phép có các đơn hàng chờ giao thì sao?
+
+24
+00:01:00,660 --> 00:01:04,489
+Vậy là tôi đang cho phép tình huống chuyển thành
+
+25
+00:01:04,489 --> 00:01:05,950
+hết hàng -
+
+26
+00:01:05,950 --> 00:01:09,190
+và những câu hỏi ta cần trả lời được là:
+
+27
+00:01:09,190 --> 00:01:11,940
+Q mới của tôi sẽ là bao nhiêu?
+
+28
+00:01:11,940 --> 00:01:15,930
+Tôi sẽ sẵn sàng đi xuống đến mức nào?
+
+29
+00:01:15,930 --> 00:01:17,940
+Tôi sẽ sẵn sàng cho phép bao nhiêu đơn hàng chờ giao,
+
+30
+00:01:17,940 --> 00:01:20,010
+hay bao nhiêu hàng bị thiếu?
+
+31
+00:01:20,010 --> 00:01:24,200
+Vậy nếu ta nhìn vào trường hợp này, ta thấy rằng
+
+32
+00:01:24,200 --> 00:01:28,450
+mỗi chu kỳ bổ sung hàng T -
+
+33
+00:01:28,450 --> 00:01:31,350
+thời gian cần có để bổ sung đầy hàng -
+
+34
+00:01:31,350 --> 00:01:36,890
+ta có thể chia thành 2 phần: T1 là khoảng thời gian
+
+35
+00:01:36,890 --> 00:01:40,800
+mà tôi thực sự có hàng trong tay,
+
+36
+00:01:40,800 --> 00:01:44,220
+và T2 là khoảng thời gian trong chu kỳ
+
+37
+00:01:44,220 --> 00:01:46,630
+mà tôi hết hàng.
+
+38
+00:01:46,630 --> 00:01:51,070
+Vậy nếu ta biết T1 và T2, ta có thể tính được
+
+39
+00:01:51,070 --> 00:01:54,120
+dễ dàng b là bao nhiêu, trong đó b là
+
+40
+00:01:54,120 --> 00:01:55,850
+số lượng hàng mà tôi sẽ thiếu.
+
+41
+00:01:55,850 --> 00:01:58,890
+Sau đó tôi có thể tìm ra lượng hàng tối đa mà tôi sẽ nắm trong tay
+
+42
+00:01:58,890 --> 00:02:02,970
+đơn giản là số lượng đặt hàng Q trừ đi lượng hàng chưa về:
+
+43
+00:02:02,970 --> 00:02:05,420
+Q - b.
+
+44
+00:02:05,420 --> 00:02:08,940
+Về cơ bản ta đang cố gắng tìm ra -
+
+45
+00:02:08,940 --> 00:02:13,480
+để tôi đổi màu bút -
+
+46
+00:02:13,480 --> 00:02:17,030
+tôi sẽ nhìn vào vùng hình tam giác này,
+
+47
+00:02:17,030 --> 00:02:20,530
+là lượng hàng tôi có trong tay
+
+48
+00:02:20,530 --> 00:02:24,540
+tôi sẽ nhân nó với c_e, chi phí giữ hàng.
+
+49
+00:02:24,540 --> 00:02:28,640
+Và tôi sẽ so sánh nó với hình tam giác này -
+
+50
+00:02:28,640 --> 00:02:30,390
+tôi sẽ nhân nó với c_s,
+
+51
+00:02:30,390 --> 00:02:32,650
+bởi vì đó sẽ là chi phí thiếu hụt.
+
+52
+00:02:32,650 --> 00:02:35,330
+Một lần nữa, ta đang đánh đổi giữa hàng dư
+
+53
+00:02:35,330 --> 00:02:36,790
+và hàng thiếu.
+
+54
+00:02:36,790 --> 00:02:38,050
+Tôi thực hiện như thế nào?
+
+55
+00:02:38,050 --> 00:02:40,380
+Dùng phương trình tổng chi phí liên quan.
+
+56
+00:02:40,380 --> 00:02:42,450
+Lưu ý rằng tôi có hai biến số ở đây.
+
+57
+00:02:42,450 --> 00:02:45,035
+Một là Q, số lượng đặt hàng,
+
+58
+00:02:45,035 --> 00:02:47,180
+cái kia là b,
+
+59
+00:02:47,180 --> 00:02:49,790
+số lượng hàng tôi sẵn sàng để thiếu.
+
+60
+00:02:49,790 --> 00:02:53,060
+Các thuật ngữ tương tự nhau, tôi có chi phí đặt hàng:
+
+61
+00:02:53,060 --> 00:02:54,440
+c_t là chi phí trên một đơn hàng.
+
+62
+00:02:54,440 --> 00:02:58,020
+D / Q, một lần nữa, là số lượng đơn hàng tôi sẽ đặt
+
+63
+00:02:58,020 --> 00:03:00,990
+trên một đơn vị thời gian dài hơn - ví dụ một năm.
+
+64
+00:03:00,990 --> 00:03:05,330
+Sau đó tôi có chi phí giữ hàng,
+
+65
+00:03:05,330 --> 00:03:07,560
+là c_e - chi phí hàng dư ra,
+
+66
+00:03:07,560 --> 00:03:10,710
+nhân với vùng hình tam giác này.
+
+67
+00:03:10,710 --> 00:03:12,240
+Để tôi tô đậm nó lên lần nữa.
+
+68
+00:03:12,240 --> 00:03:16,330
+1/2 nhân đáy là T1/T -
+
+69
+00:03:16,330 --> 00:03:18,250
+phần trăm của
+
+70
+00:03:18,250 --> 00:03:23,480
+khoảng thời gian có hàng trong tay trên khoảng thời gian chu kỳ hàng,
+
+71
+00:03:23,480 --> 00:03:26,140
+nhân chiều cao là Q - b.
+
+72
+00:03:26,140 --> 00:03:28,810
+Sau đó tôi sẽ thêm vào chi phí thiếu hụt,
+
+73
+00:03:28,810 --> 00:03:31,110
+đó là c_s, ta đã nói về chi phí này rồi,
+
+74
+00:03:31,110 --> 00:03:33,590
+nhân với vùng hình tam giác này.
+
+75
+00:03:33,590 --> 00:03:35,750
+Để tôi tô đậm nó lần nữa.
+
+76
+00:03:35,750 --> 00:03:39,280
+Hình tam giác ở ngay đây.
+
+77
+00:03:39,280 --> 00:03:44,510
+Ta có c_s nhân 1/2 nhân (T2/T) {là đáy}
+
+78
+00:03:44,510 --> 00:03:46,520
+nhân b {là chiều cao}.
+
+79
+00:03:46,520 --> 00:03:50,170
+Giờ nhìn vào những hình tam giác này và nhớ lại
+
+80
+00:03:50,170 --> 00:03:54,900
+kiến thức hình học, tôi biết mối quan hệ với
+
+81
+00:03:54,900 --> 00:04:01,280
+hình tam giác lớn, Q/T, cũng sẽ bằng (Q-b)/T1 đối với hình tam giác
+
+82
+00:04:01,280 --> 00:04:05,500
+mà tôi đã tô đậm, và cũng bằng b/T2
+
+83
+00:04:05,500 --> 00:04:08,310
+đối với hình tam giác nhỏ này -
+
+84
+00:04:08,310 --> 00:04:10,220
+tỉ lệ là như nhau.
+
+85
+00:04:10,220 --> 00:04:16,700
+Có nghĩa là tỉ lệ T1/T = (Q-b)/Q
+
+86
+00:04:16,700 --> 00:04:23,475
+và T2/T = b/Q.
+
+87
+00:04:23,475 --> 00:04:27,750
+Một lần nữa, tôi sắp xếp lại các thuật ngữ
+thành dạng mà tôi có thể dùng được.
+
+88
+00:04:27,750 --> 00:04:31,390
+Bằng việc sử dụng các mối quan hệ này, tôi nhìn lại
+
+89
+00:04:31,390 --> 00:04:34,680
+phương trình Tổng Chi phí Liên quan và có thể rút gọn đi một chút.
+
+90
+00:04:34,680 --> 00:04:38,830
+Bất cứ chỗ nào có T1/T hay T2/T,
+
+91
+00:04:38,830 --> 00:04:41,730
+tôi sẽ thay bằng các giá trị mới.
+
+92
+00:04:41,730 --> 00:04:44,340
+Vậy đây chính là phương trình tổng chi phí liên quan,
+
+93
+00:04:44,340 --> 00:04:46,840
+và tôi có thể rút bớt một chút,
+
+94
+00:04:46,840 --> 00:04:49,880
+tôi đã có phương trình tổng chi phí liên quan
+
+95
+00:04:49,880 --> 00:04:52,310
+là hàm của số lượng đặt hàng
+
+96
+00:04:52,310 --> 00:04:53,610
+và lượng hàng mà tôi muốn chờ về.
+
+97
+00:04:53,610 --> 00:04:57,290
+Và bạn có thể thấy 3 thuật ngữ -
+
+98
+00:04:57,290 --> 00:05:00,610
+chi phí đặt hàng, chi phí giữ hàng
+
+99
+00:05:00,610 --> 00:05:03,640
+và chi phí thiếu hụt.
+
+100
+00:05:03,640 --> 00:05:07,040
+Trong video tiếp theo, chúng ta sẽ giải phương trình này.
+

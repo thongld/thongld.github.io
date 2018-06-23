@@ -1,0 +1,443 @@
+1
+00:00:00,000 --> 00:00:00,990
+https://youtu.be/G721cooZXgs
+
+2
+00:00:00,990 --> 00:00:03,821
+Hello and welcome to
+Python for Informatics.
+
+3
+00:00:03,821 --> 00:00:06,070
+Right now, we're going to
+cover chapter one on Charles
+
+4
+00:00:06,070 --> 00:00:08,380
+Severance from the
+University of Michigan.
+
+5
+00:00:08,380 --> 00:00:10,910
+And I'm the author, and
+I'll be your lecturer
+
+6
+00:00:10,910 --> 00:00:15,560
+for this online lecture of
+the first chapter of the book.
+
+7
+00:00:15,560 --> 00:00:19,150
+This lecture, and my slides, and
+the book as a matter of fact,
+
+8
+00:00:19,150 --> 00:00:19,900
+are all open.
+
+9
+00:00:19,900 --> 00:00:23,360
+Open content, open materials.
+
+10
+00:00:23,360 --> 00:00:25,490
+They're copyright Creative
+Commons attribution.
+
+11
+00:00:25,490 --> 00:00:28,900
+And this video recording is
+also copyright Creative Commons
+
+12
+00:00:28,900 --> 00:00:29,454
+attribution.
+
+13
+00:00:29,454 --> 00:00:31,370
+It's important to be
+explicit about copyright,
+
+14
+00:00:31,370 --> 00:00:35,620
+and so I say it right
+at the beginning.
+
+15
+00:00:35,620 --> 00:00:40,400
+So if you have not yet done
+it, please install Python.
+
+16
+00:00:40,400 --> 00:00:42,200
+You're going to do
+it sooner or later.
+
+17
+00:00:42,200 --> 00:00:45,174
+And you actually might as well
+do it before this lecture.
+
+18
+00:00:45,174 --> 00:00:47,590
+You can listen to this lecture,
+obviously, without Python,
+
+19
+00:00:47,590 --> 00:00:50,270
+but it allows you to play
+with some of the things.
+
+20
+00:00:50,270 --> 00:00:53,480
+And we might even do a little
+bit of Python in this lecture
+
+21
+00:00:53,480 --> 00:00:55,260
+and show you Python
+in the lecture.
+
+22
+00:00:55,260 --> 00:01:01,280
+And so, you can go along if you
+have Python in another window.
+
+23
+00:01:01,280 --> 00:01:06,050
+There is
+pythonlearn.com/install.php has
+
+24
+00:01:06,050 --> 00:01:10,030
+instructions for Microsoft
+Windows and Macintosh.
+
+25
+00:01:10,030 --> 00:01:14,190
+And it's not on this slide, but
+I just uploaded instructions
+
+26
+00:01:14,190 --> 00:01:17,040
+on how to do this on a
+Raspberry Pi-- the new really
+
+27
+00:01:17,040 --> 00:01:20,130
+cool $25 computer.
+
+28
+00:01:20,130 --> 00:01:23,270
+And they are really easy
+and straightforward.
+
+29
+00:01:23,270 --> 00:01:26,770
+They're complete screen
+recordings, step by step, 10,
+
+30
+00:01:26,770 --> 00:01:28,830
+15 minutes at the maximum.
+
+31
+00:01:28,830 --> 00:01:30,780
+You can stop them,
+you could start them,
+
+32
+00:01:30,780 --> 00:01:33,450
+you can download them
+to your hard drive.
+
+33
+00:01:33,450 --> 00:01:36,570
+They will walk you through what
+it takes to install Python,
+
+34
+00:01:36,570 --> 00:01:37,140
+if needed.
+
+35
+00:01:37,140 --> 00:01:38,910
+Install text editor, if needed.
+
+36
+00:01:38,910 --> 00:01:41,830
+And then run your very
+first Python program.
+
+37
+00:01:41,830 --> 00:01:44,000
+And you're going to have
+to run a Python program.
+
+38
+00:01:44,000 --> 00:01:48,600
+So, this is as good of a
+time as any to stop and get
+
+39
+00:01:48,600 --> 00:01:49,900
+that done and then come back.
+
+40
+00:01:49,900 --> 00:01:51,190
+OK?
+
+41
+00:01:51,190 --> 00:01:54,730
+So, now, back to
+the introduction.
+
+42
+00:01:54,730 --> 00:01:58,650
+So, computers, basically,
+want to be helpful.
+
+43
+00:01:58,650 --> 00:02:04,060
+They are programmed-- matter of
+fact this is a micro processor.
+
+44
+00:02:04,060 --> 00:02:06,370
+This is really just
+an electrical part.
+
+45
+00:02:06,370 --> 00:02:09,120
+It's got wires and
+circuits inside of it.
+
+46
+00:02:09,120 --> 00:02:12,130
+And somebody spend a
+lot of engineering time
+
+47
+00:02:12,130 --> 00:02:15,380
+to make it so that
+these pins in the back
+
+48
+00:02:15,380 --> 00:02:18,860
+take instructions from
+us, from operating
+
+49
+00:02:18,860 --> 00:02:22,080
+systems, from the hard
+drive, from the memory.
+
+50
+00:02:22,080 --> 00:02:24,480
+Instructions come into here
+and then results come out.
+
+51
+00:02:24,480 --> 00:02:27,340
+It's really sort of a very
+programmable hand calculator,
+
+52
+00:02:27,340 --> 00:02:29,820
+and it's our job to
+put instructions in.
+
+53
+00:02:29,820 --> 00:02:35,000
+This thing, in a sense, is
+wired to be curious about what's
+
+54
+00:02:35,000 --> 00:02:38,020
+next, right?
+
+55
+00:02:38,020 --> 00:02:40,400
+It's is like, tell me
+what you want to do next?
+
+56
+00:02:40,400 --> 00:02:41,610
+What do you want to do next?
+
+57
+00:02:41,610 --> 00:02:42,440
+What you want to do next?
+
+58
+00:02:42,440 --> 00:02:44,148
+And after that, what
+you want to do next?
+
+59
+00:02:44,148 --> 00:02:47,060
+And it just happens to do that
+a billion or so times a second.
+
+60
+00:02:47,060 --> 00:02:50,250
+And so, that's sort of
+the low level piece.
+
+61
+00:02:50,250 --> 00:02:53,020
+But you can also think
+if you have a PDA,
+
+62
+00:02:53,020 --> 00:02:55,830
+something like this, all
+of the buttons on here
+
+63
+00:02:55,830 --> 00:02:59,660
+are some kind of, what's next?
+
+64
+00:02:59,660 --> 00:03:00,400
+Right?
+
+65
+00:03:00,400 --> 00:03:03,530
+Each of those is something
+begging for my attention.
+
+66
+00:03:03,530 --> 00:03:06,750
+Some application developer who's
+built a really cool application
+
+67
+00:03:06,750 --> 00:03:09,980
+and says, please use
+me, please click me,
+
+68
+00:03:09,980 --> 00:03:11,680
+I am nothing without you.
+
+69
+00:03:11,680 --> 00:03:14,920
+We humans are the things
+that cause computers
+
+70
+00:03:14,920 --> 00:03:16,360
+to start doing something.
+
+71
+00:03:16,360 --> 00:03:18,970
+And this will sit here
+happily until I've
+
+72
+00:03:18,970 --> 00:03:20,600
+caused it to do something.
+
+73
+00:03:20,600 --> 00:03:23,158
+Now, whoa.
+
+74
+00:03:23,158 --> 00:03:24,106
+Whoa.
+
+75
+00:03:24,106 --> 00:03:25,900
+Hope it's still OK.
+
+76
+00:03:25,900 --> 00:03:26,400
+Yeah.
+
+77
+00:03:26,400 --> 00:03:28,530
+Seems to be fine,
+seems to be fine.
+
+78
+00:03:28,530 --> 00:03:30,510
+Takes a licking and
+keeps on ticking.
+
+79
+00:03:30,510 --> 00:03:33,910
+So, these anyone can use, right?
+
+80
+00:03:33,910 --> 00:03:38,472
+They say even animals can
+use a Macintosh smartphone.
+
+81
+00:03:38,472 --> 00:03:40,180
+And so you don't have
+to be a programmer,
+
+82
+00:03:40,180 --> 00:03:43,790
+but to get this to
+do what you want,
+
+83
+00:03:43,790 --> 00:03:45,650
+you need to learn a
+different language.
+
+84
+00:03:45,650 --> 00:03:48,870
+And we need to learn the
+language of the instructions
+
+85
+00:03:48,870 --> 00:03:50,000
+to tell it what to do.
+
+86
+00:03:50,000 --> 00:03:51,560
+So, that's what
+we're going to do.
+
+87
+00:03:51,560 --> 00:03:53,550
+We're going to learn
+how to talk to this.
+
+88
+00:03:53,550 --> 00:03:54,540
+Yo!
+
+89
+00:03:54,540 --> 00:03:56,140
+Because it's asking
+us a question,
+
+90
+00:03:56,140 --> 00:03:59,880
+and we have to give the answer.
+
+91
+00:03:59,880 --> 00:04:01,625
+So, what's a programmer?
+
+92
+00:04:01,625 --> 00:04:05,070
+A programmer is somebody
+who writes a program, which
+
+93
+00:04:05,070 --> 00:04:08,000
+is a script or a set
+of instructions that
+
+94
+00:04:08,000 --> 00:04:11,400
+tell one of these kinds of
+things what it is that they're
+

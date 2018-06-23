@@ -1,0 +1,565 @@
+1
+00:00:07,940 --> 00:00:11,040
+Tưởng tượng bạn vừa làm xong một thí nghiệm.
+
+2
+00:00:11,040 --> 00:00:12,750
+Bạn đặt con người vào những tình huống khác nhau.
+
+3
+00:00:12,750 --> 00:00:14,550
+Bạn tính toán những biến số kết quả.
+
+4
+00:00:14,550 --> 00:00:18,260
+Giờ là lúc phân tích dữ liệu.
+
+5
+00:00:18,260 --> 00:00:20,460
+Như đã nói, có 2 cách
+
+6
+00:00:20,460 --> 00:00:22,210
+để phân tích dữ liệu thực nghiệm.
+
+7
+00:00:22,210 --> 00:00:23,571
+Thứ nhất là phân tích phương sai.
+
+8
+00:00:23,571 --> 00:00:27,190
+Thứ hai là phương pháp hồi quy.
+
+9
+00:00:27,190 --> 00:00:30,690
+Trong phần tiếp theo, ta sẽ xem xét 
+
+10
+00:00:30,690 --> 00:00:33,140
+cách xử lý phân tích kết quả thu được.
+
+11
+00:00:33,140 --> 00:00:36,870
+Để làm thế, tôi muốn quay lại thí nghiệm
+
+12
+00:00:36,870 --> 00:00:40,420
+mà ta đã nói, của Gourville,
+
+13
+00:00:40,420 --> 00:00:41,920
+về hiện tượng "vài xu lẻ mỗi ngày".
+
+14
+00:00:41,920 --> 00:00:44,300
+Hãy nhớ lại thí nghiệm đầu tiên mà ta đã nói.
+
+15
+00:00:44,300 --> 00:00:50,030
+Trong thí nghiệm này, bạn sẽ nhận được 350 đô la 1 năm hoặc
+
+16
+00:00:50,030 --> 00:00:52,789
+1 đô la 1 ngày.
+
+17
+00:00:52,789 --> 00:00:54,489
+Đây là kết quả mà Gourville thu được.
+
+18
+00:00:54,489 --> 00:01:01,969
+Ông nhận thấy khi ta thấy một số tiền như nhau, 
+ví dụ 1 đô la 1 ngày
+
+19
+00:01:01,969 --> 00:01:05,230
+họ sẽ sẵn sàng mang ra quyên góp hơn là khi
+
+20
+00:01:05,230 --> 00:01:06,230
+thấy một giá trị tựu chung.
+
+21
+00:01:06,230 --> 00:01:09,680
+Bạn có thể thấy ở cột màu xanh, biểu thị cho
+"vài xu lẻ"
+
+22
+00:01:09,680 --> 00:01:14,550
+cao hơn cột màu xám.
+
+23
+00:01:14,550 --> 00:01:17,680
+Đấy là một ví dụ về cái ta gọi là hiệu quả chính.
+
+24
+00:01:17,680 --> 00:01:22,850
+Trong trường hợp này, yếu tố cơ cấu chi trả tạo ra
+
+25
+00:01:22,850 --> 00:01:27,270
+ảnh hưởng chính đến kết quả, trường hợp này, là 
+
+26
+00:01:27,270 --> 00:01:28,930
+mức bằng lòng quyên góp.
+
+27
+00:01:28,930 --> 00:01:32,480
+Tiếp theo, hãy xem xét thí nghiệm thứ hai, ta cũng nhắc đến rồi.
+
+28
+00:01:32,480 --> 00:01:34,790
+Ở đây ta có thí nghiệp vượt qua toàn diện.
+
+29
+00:01:34,790 --> 00:01:38,750
+Ta xem xét tiêu chuẩn "vài xu lẻ" và tiêu chuẩn tựu chung.
+
+30
+00:01:38,750 --> 00:01:44,580
+Ta thực hiện nó dưới 2 điều kiện, một với giá trị thấp
+
+31
+00:01:44,580 --> 00:01:45,930
+và  một với giá trị cao.
+
+32
+00:01:45,930 --> 00:01:49,180
+Đây là kết quả.
+
+33
+00:01:49,180 --> 00:01:53,370
+Ở phía bên trái ta thấy dữ liệu từ giá trị thấp.
+
+34
+00:01:53,370 --> 00:01:58,640
+Thí nghiệm này là bản sao của thí nghiệm đầu tiên
+ cụ thể là
+
+35
+00:01:58,640 --> 00:02:02,710
+những người trong điều kiện "vài xu lẻ mỗi ngày"
+ bằng lòng quyên góp hơn
+
+36
+00:02:02,710 --> 00:02:05,370
+những người ở điều kiện tựu chung.
+
+37
+00:02:05,370 --> 00:02:07,610
+Hãy nhìn vào bảng bên phải.
+
+38
+00:02:07,610 --> 00:02:10,200
+Giá trị tiền ờ đây cao.
+
+39
+00:02:10,200 --> 00:02:11,890
+Để ý xem chuyện gí đã xảy ra.
+
+40
+00:02:11,890 --> 00:02:15,510
+Dưới điều kiện này, ta thấy sự đảo ngược
+ của hiệu ứng cơ bản.
+
+41
+00:02:15,510 --> 00:02:19,820
+Nói cách khác, những người trong điều kiện "vài xu lẻ"
+
+42
+00:02:19,820 --> 00:02:23,550
+lại ít bằng lòng quyên góp hơn 
+
+43
+00:02:23,550 --> 00:02:24,550
+những người trong điều kiện tựu chung.
+
+44
+00:02:24,550 --> 00:02:28,850
+Nếu nhìn vào tổng thể bức tranh, đây là điều xảy ra.
+
+45
+00:02:28,850 --> 00:02:34,250
+Tác động của 1 biến số, ở đây là trường hợp "vài xu lẻ",
+
+46
+00:02:34,250 --> 00:02:38,750
+ lên mức bằng lòng chỉ trả, thay đổi
+khi biến thứ hai xuất hiện, ở đây
+
+47
+00:02:38,750 --> 00:02:43,380
+là việc giá trị đưa ra cao hay thấp.
+
+48
+00:02:43,380 --> 00:02:48,270
+Trong tình huống khi tác động của 1 biến số
+ lên kết quả 
+
+49
+00:02:48,270 --> 00:02:52,570
+thay đổi vì biến thứ hai tồn tại, 
+
+50
+00:02:52,570 --> 00:02:56,390
+ta gọi đó là hiệu ứng tương tác.
+
+51
+00:02:56,390 --> 00:03:01,550
+Vì vậy, hiệu ứng chính có được khi 1 biến số cho trước
+
+52
+00:03:01,550 --> 00:03:03,160
+ ảnh hưởng nhất quán đến biến số kết quả.
+
+53
+00:03:03,160 --> 00:03:07,630
+Hiệu ứng tương tác có được 
+khi tác động của 1 biến số 
+
+54
+00:03:07,630 --> 00:03:12,350
+thay đổi khi biến thứ hai xuất hiện hoặc biến mất.
+
+55
+00:03:12,350 --> 00:03:17,230
+Ta sẽ đi sâu một chút về khái niệm
+ hiệu ứng tương tác.
+
+56
+00:03:17,230 --> 00:03:20,660
+Tôi sẽ thử đưa ra giả thuyết 
+về 3 thí nghiệm ảo
+
+57
+00:03:20,660 --> 00:03:24,880
+mà John Gourville đã tiến hành trong nghiên cứu
+của mình 
+
+58
+00:03:24,880 --> 00:03:26,200
+về hiện tượng "vài xu lẻ mỗi ngày".
+
+59
+00:03:26,200 --> 00:03:27,520
+Đây là thí nghiệm đầu tiên.
+
+60
+00:03:27,520 --> 00:03:31,600
+Hãy tưởng tượng ta đem điều kiện "vài xu lẻ mỗi ngày"
+
+61
+00:03:31,600 --> 00:03:34,780
+ra so sánh với điều kiện giá trị tựu chung.
+
+62
+00:03:34,780 --> 00:03:40,150
+Bây giở, ta mô phỏng lại nó trong
+ bối cảnh có sản phẩm thứ hai.
+
+63
+00:03:40,150 --> 00:03:45,940
+Như thế, ta có một thiết kế vượt qua toàn diện
+với 2 sản phẩm và 2 cấp độ
+
+64
+00:03:45,940 --> 00:03:48,060
+của khung định giá.
+
+65
+00:03:48,060 --> 00:03:51,319
+Trong bối cảnh này, ta có thể thấy kết quả 
+như thế này.
+
+66
+00:03:51,319 --> 00:03:56,489
+Phía bên trái, sản phẩm thứ nhất trong điều kiện
+"vài xu lẻ mỗi ngày"
+
+67
+00:03:56,489 --> 00:03:59,890
+cho mức bằng lòng chi trả cao hơn
+so với điều kiện tựu chung.
+
+68
+00:03:59,890 --> 00:04:04,520
+Phía bên phải, ta thấy hiệu quả tương tự 
+đối với sản phẩm thứ hai.
+
+69
+00:04:04,520 --> 00:04:09,840
+Ở đây,  không có hiệu quả hấp dẫn mà chỉ đơn thuần
+ là hiệu quả chính 
+
+70
+00:04:09,840 --> 00:04:15,310
+tạo ra từ phương thức thiết lập giá trị, là
+"vài xu lẻ mỗi ngày" hay là tựu chung.
+
+71
+00:04:15,310 --> 00:04:17,000
+Tình huống thứ hai như thế này.
+
+72
+00:04:17,000 --> 00:04:20,569
+Đây không phải là giả thuyết mà là một đồ thị được vẽ nên
+
+73
+00:04:20,569 --> 00:04:23,419
+từ thí nghiệm mà ta đã nói trước đó.
+
+74
+00:04:23,419 --> 00:04:27,770
+có thể thấy khi với giá trị thấp, 
+thì "vài xu lẻ mỗi ngày" chiếm ưu thế.
+
+75
+00:04:27,770 --> 00:04:31,780
+Khi giá trị đưa ra cao, thì tựu chung lại thắng thế.
+
+76
+00:04:31,780 --> 00:04:35,940
+Trong trường hợp này, sự hiện diện của biến số thứ hai
+
+77
+00:04:35,940 --> 00:04:40,720
+đảo ngược hiệu ứng ban đầu
+dẫn đến hiệu ứng tương tác.
+
+78
+00:04:40,720 --> 00:04:42,550
+Tình huống thứ ba.
+
+79
+00:04:42,550 --> 00:04:47,211
+Tưởng tượng thí nghiệm này đã hoàn thành, 
+ta không quan tâm nhiều đến giá trị dưa ra
+
+80
+00:04:47,211 --> 00:04:48,900
+mà được thực hiện nó với 2 nhóm người.
+
+81
+00:04:48,900 --> 00:04:53,750
+Chẳng hạn, đầu tiên ta chọn những người
+ lĩnh lương theo tháng
+
+82
+00:04:53,750 --> 00:04:57,510
+ và đặt họ vào các điều kiện khác nhau.
+
+83
+00:04:57,510 --> 00:04:59,690
+Ở đây là điều kiện tựu chung 
+và "vài xu lẻ mỗi ngày".
+
+84
+00:04:59,690 --> 00:05:03,830
+Nhóm thứ 2 là những người lĩnh lương theo ngày 
+
+85
+00:05:03,830 --> 00:05:07,190
+ và ta làm tương tự với nhóm người này.
+
+86
+00:05:07,190 --> 00:05:10,120
+Dự đoán đơn giản về mặt lý thuyết sẽ là thế này.
+
+87
+00:05:10,120 --> 00:05:14,380
+Nếu họ lĩnh lương ngày, khả năng cao là
+ họ sẽ tính toán giá trị theo ngày
+
+88
+00:05:14,380 --> 00:05:18,450
+của một giá trị tựu chung.
+
+89
+00:05:18,450 --> 00:05:21,330
+Vì thế, đối với nhóm người này, ta nghĩ là 
+không có khác biệt
+
+90
+00:05:21,330 --> 00:05:26,180
+giữa tiêu chuẩn "vài xu lẻ"
+
+91
+00:05:26,180 --> 00:05:27,180
+và tiêu chuẩn tựu chung.
+
+92
+00:05:27,180 --> 00:05:30,880
+Thực tế, kết quả đúng là như thế.
+
+93
+00:05:30,880 --> 00:05:34,300
+Với nhóm người lĩnh lương tháng, 
+ta lại thu được kết quả
+
+94
+00:05:34,300 --> 00:05:35,580
+ của thí nghiệm trước.
+
+95
+00:05:35,580 --> 00:05:38,120
+"Vài xu lẻ" hiệu quả hơn điều kiện tựu chung.
+
+96
+00:05:38,120 --> 00:05:41,410
+Nhưng theo bảng bên phải, ta cũng thấy rằng 
+không có điểm khác biệt 
+
+97
+00:05:41,410 --> 00:05:45,040
+giữa 2 khung định giá này.
+
+98
+00:05:45,040 --> 00:05:48,260
+Đây là hiệu ứng tương tác, trong đó
+
+99
+00:05:48,260 --> 00:05:53,100
+hiệu ứng cơ bản biến mất khi
+ đưa ra biến số thứ hai.
+
+100
+00:05:53,100 --> 00:05:57,570
+Có rất nhiều cách giúp bạn đạt được hiệu ứng tương tác.
+
+101
+00:05:57,570 --> 00:06:02,190
+Hiệu ứng có thể mạnh hay yếu hơn
+khi biến thứ hai thay đổi.
+
+102
+00:06:02,190 --> 00:06:07,690
+Nó cũng có thể bị đảo ngược
+ và cuối cùng biến mất
+
+103
+00:06:07,690 --> 00:06:11,110
+khi đưa biến số thứ hai vào thí nghiệm.
+
+104
+00:06:11,110 --> 00:06:15,430
+Ta sẽ kết thúc bằng việc xem xét
+ cách các bạn giải thích hệ số hồi quy
+
+105
+00:06:15,430 --> 00:06:19,250
+khi sử dụng hồi quy để phân tích
+ dữ liệu thực nghiệm.
+
+106
+00:06:19,250 --> 00:06:22,920
+Nhớ là khi dùng phương pháp này, 
+kết quả cuối cùng phải là một phương trình
+
+107
+00:06:22,920 --> 00:06:29,550
+có dạng như Y bằng hằng số a cộng b1
+
+
+108
+00:06:29,550 --> 00:06:33,130
+ nhân biến thứ nhất cộng với b2, nhân biến thứ hai
+
+109
+00:06:33,130 --> 00:06:35,120
+và cứ thế.
+
+110
+00:06:35,120 --> 00:06:38,760
+Khi bạn dùng mẫu hồi quy, điều đầu tiên cần lưu ý là
+
+111
+00:06:38,760 --> 00:06:43,350
+nếu mẫu cho thấy các hệ số 
+nhất định không đáng kể,
+
+112
+00:06:43,350 --> 00:06:47,240
+bạn không cần phải xem xét chúng
+
+113
+00:06:47,240 --> 00:06:48,860
+khi phân tích kết quả.
+
+114
+00:06:48,860 --> 00:06:52,320
+Khi đọc một báo cáo khoa học, thường thì bạn sẽ thấy
+
+115
+00:06:52,320 --> 00:06:56,350
+các hệ số đáng kể sẽ có hình sao
+
+116
+00:06:56,350 --> 00:06:57,699
+được đánh ngay bên cạnh.
+
+117
+00:06:57,699 --> 00:07:02,850
+Những hệ số không đáng kể s
+ẽ không được đánh dấu sao.
+
+118
+00:07:02,850 --> 00:07:06,840
+Điều đáng lưu ý thứ hai là 
+
+119
+00:07:06,840 --> 00:07:11,580
+cách để thu được hiệu ứng tương tác đối với mẫu hồi quy.
+
+120
+00:07:11,580 --> 00:07:16,430
+ANOVA đơn giản là nhìn 2 yếu tố
+một cách độc lập với nhau
+
+121
+00:07:16,430 --> 00:07:19,380
+khi xử lý số liệu.
+
+122
+00:07:19,380 --> 00:07:24,070
+Trong mẫu hồi quy, hãy tưởng tượng 
+bạn có 2 biến số x1 và x2.
+
+123
+00:07:24,070 --> 00:07:27,100
+Làm thế nào để thu được tương tác giữa 2 biến này?
+
+124
+00:07:27,100 --> 00:07:28,350
+Tôi sẽ làm như sau.
+
+125
+00:07:28,350 --> 00:07:34,670
+Tôi lập cho Y là hàm số có dạng
+
+126
+00:07:34,670 --> 00:07:37,170
+ a + b1.x1 + b2.x2.
+
+127
+00:07:37,170 --> 00:07:41,460
+Sau đó, tôi nhân x1 với x2 và đưa vào
+
+128
+00:07:41,460 --> 00:07:45,080
+tích này một hệ số độc lập, gọi là b3.
+
+129
+00:07:45,080 --> 00:07:48,800
+Nếu áp dụng mẫu như thế này
+ và thu được 1 hệ số hồi quy
+
+130
+00:07:48,800 --> 00:07:53,680
+đáng kể ở b3, bạn có thể nói rằng 
+ta thu được hiệu ứng tương tác 
+
+131
+00:07:53,680 --> 00:07:55,860
+theo mẫu hồi quy.
+

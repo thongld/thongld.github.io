@@ -1,0 +1,227 @@
+0
+00:00:00,000 --> 00:00:00,046
+wermarter
+
+1
+00:00:00,046 --> 00:00:00,670
+Xin chào.
+
+2
+00:00:00,670 --> 00:00:04,940
+wermarter
+Trong video này ta sẽ học cách chuẩn bị một cluster.
+
+3
+00:00:04,940 --> 00:00:07,280
+Video này rất quan trọng, nói về
+
+4
+00:00:07,280 --> 00:00:09,910
+những bước ta thực hiện sẽ lặp lại nhiều lần
+
+5
+00:00:09,910 --> 00:00:12,160
+trong suốt khoá học này.
+
+6
+00:00:12,160 --> 00:00:15,680
+Đầu tiên, ta di chuyển đến thanh bên trái
+
+7
+00:00:15,680 --> 00:00:20,200
+và click vào biểu tượng Cluster.
+
+8
+00:00:20,200 --> 00:00:24,260
+Sau đó, ta click nút Create Cluster.
+
+9
+00:00:24,260 --> 00:00:26,220
+Bạn có thể đặt tên bất kì
+cho cluster này,
+
+10
+00:00:26,220 --> 00:00:29,280
+ví dụ như my-cluster.
+
+11
+00:00:29,280 --> 00:00:32,090
+Cuối cùng ta click nút Create Cluster.
+
+12
+00:00:32,090 --> 00:00:34,940
+Và chờ một vài giây.
+
+13
+00:00:34,940 --> 00:00:39,060
+Nó sẽ tạo cho ta một Cluster với 6 GB bộ nhớ.
+
+14
+00:00:39,060 --> 00:00:42,910
+Như tôi đã nói, ta có thể khởi động lại hay huỷ bỏ nó.
+
+15
+00:00:42,910 --> 00:00:45,890
+Nhưng hãy nhớ, Cluster này sẽ tự động bị huỷ
+
+16
+00:00:45,890 --> 00:00:49,994
+sau một giờ không hoạt động.
+
+17
+00:00:49,994 --> 00:00:51,410
+Điều này có nghĩa, nếu hôm sau bạn trở lại
+
+18
+00:00:51,410 --> 00:00:54,230
+để tiếp tục khoá học này,
+
+19
+00:00:54,230 --> 00:00:58,560
+bạn sẽ phải tạo Cluster lại một lần nữa.
+
+20
+00:00:58,560 --> 00:01:01,500
+Điều đầu tiên chúng ta cần làm là
+
+21
+00:01:01,500 --> 00:01:03,780
+click vào biểu tượng Home bên trái.
+
+22
+00:01:03,780 --> 00:01:05,530
+Và tạo thêm một thư viện
+
+23
+00:01:05,530 --> 00:01:07,710
+được dùng trong suốt khoá học này.
+
+24
+00:01:07,710 --> 00:01:10,910
+Tên của nó là spark_mooc_meta.
+
+25
+00:01:10,910 --> 00:01:15,030
+Và tin tốt là chúng ta sẽ chỉ tạo nó một lần thôi.
+
+26
+00:01:15,030 --> 00:01:17,140
+Đây là một thư viện Python.
+
+27
+00:01:17,140 --> 00:01:20,360
+Tất cả những gì ta cần làm là click phải,
+
+28
+00:01:20,360 --> 00:01:23,540
+chọn Create > Library.
+
+29
+00:01:23,540 --> 00:01:26,340
+Do đây là thư viện Python nên ta chọn 
+
+30
+00:01:26,340 --> 00:01:29,010
+tuỳ chọn thứ hai trong danh sách hiện ra.
+
+31
+00:01:29,010 --> 00:01:30,955
+Ta đặt tên của thư viện spark_mooc_meta tại đây.
+
+32
+00:01:30,955 --> 00:01:34,530
+
+33
+00:01:34,530 --> 00:01:36,350
+Và click Install Library.
+
+34
+00:01:36,350 --> 00:01:38,000
+Xong.
+
+35
+00:01:38,000 --> 00:01:40,860
+Bây giờ, nếu ta click lại biểu tượng Cluster,
+
+36
+00:01:40,860 --> 00:01:44,380
+ta sẽ thấy Cluster mới tạo đã được chọn bởi một thư viện.
+
+37
+00:01:44,380 --> 00:01:48,190
+Và thư viện spark_mooc_meta đã được nạp.
+
+38
+00:01:48,190 --> 00:01:52,280
+Ta dễ dàng xác thực được thao tác này.
+
+39
+00:01:52,280 --> 00:01:54,740
+Bạn chọn nút Home,
+
+40
+00:01:54,740 --> 00:02:00,480
+click phải và chọn "Create Notebook".
+
+41
+00:02:00,480 --> 00:02:04,610
+Đặt tên cho nó là test-library.
+
+42
+00:02:04,610 --> 00:02:06,660
+Nó phải là một thư viện Python.
+
+43
+00:02:06,660 --> 00:02:09,979
+Và Cluster này chính là thứ mà chúng ta đang làm việc.
+
+44
+00:02:09,979 --> 00:02:10,980
+>  Create.
+
+45
+00:02:10,980 --> 00:02:12,700
+Đây là một sổ tay Python
+(Python Notebook).
+
+46
+00:02:12,700 --> 00:02:15,980
+Ở đây, ta có thể viết và thực thi
+các biểu thức Python.
+
+47
+00:02:15,980 --> 00:02:17,936
+Ví dụ như: 1 + 1.
+
+48
+00:02:17,936 --> 00:02:21,890
+Nhấn Shift + Enter.
+
+49
+00:02:21,890 --> 00:02:24,120
+Và các thao tác tính toán đã hoàn thành.
+
+50
+00:02:24,120 --> 00:02:26,650
+Nếu muốn kiểm tra thư viện đã được lưu chưa,
+
+51
+00:02:26,650 --> 00:02:30,990
+ta chỉ cần "import" + tên thư viện.
+
+52
+00:02:30,990 --> 00:02:35,140
+Nhấn Shift + Enter.
+
+53
+00:02:35,140 --> 00:02:39,730
+Không hiện lỗi có nghĩa là ta đã lưu trữ thư viện thành công.
+
+54
+00:02:39,730 --> 00:02:40,920
+Và đây là tất cả những gì ta đã học.
+
+55
+00:02:40,920 --> 00:02:44,270
+Bây giờ, bạn đã sẵn sàng bắt đầu một Lab đầu tiên.
+

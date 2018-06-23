@@ -1,0 +1,296 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/_DgexVhva9E
+
+1
+00:00:00,000 --> 00:00:00,972
+
+2
+00:00:00,972 --> 00:00:02,980
+DR. JONATHAN VALVANO: này thầy Yerraballi,
+
+3
+00:00:02,980 --> 00:00:04,830
+chúng ta sẽ học gì hôm nay?
+
+4
+00:00:04,830 --> 00:00:07,780
+DR. RAMESH YERRABALLI:  à, ta sẽ thử vài thứ
+
+5
+00:00:07,780 --> 00:00:08,660
+khó nhằn 1 chút.
+
+6
+00:00:08,660 --> 00:00:11,612
+Nhưng tôi sẽ cố gắng giải thích mọi thứ 1 cách đơn giản.
+
+7
+00:00:11,612 --> 00:00:16,660
+Ta sẽ tóm lược những thứ cơ bản
+
+8
+00:00:16,660 --> 00:00:19,540
+về mạch điện.
+
+9
+00:00:19,540 --> 00:00:25,180
+Ta nên hiểu về những thứ căn bản và áp dụng chúng
+
+10
+00:00:25,180 --> 00:00:31,980
+vào hệ thống nhúng khi cần.
+
+11
+00:00:31,980 --> 00:00:37,330
+Hãy học những nền tảng tạo nên mạch điện.
+
+12
+00:00:37,330 --> 00:00:44,690
+Mạch điện được tạo từ những thành phần cơ bản, gồm phần bị động
+
+13
+00:00:44,690 --> 00:00:46,070
+và phần chủ động.
+
+14
+00:00:46,070 --> 00:00:50,470
+Nhưng trước khi học tới những phần đó, ta cần định nghĩa vài thuật ngữ.
+
+15
+00:00:50,470 --> 00:00:55,660
+Đầu tiên là dòng điện.
+
+16
+00:00:55,660 --> 00:01:04,780
+Dòng điện là dòng chuyển dời có hướng của các hạt mang điện.
+
+17
+00:01:04,780 --> 00:01:10,050
+có thể là điện tích dương hay âm.
+
+18
+00:01:10,050 --> 00:01:13,780
+Trong trường hợp này, ta xem electron là đơn vị điện tích.
+
+19
+00:01:13,780 --> 00:01:21,160
+Với dòng điện, vì là dòng của eletron, ta sẽ dùng
+
+20
+00:01:21,160 --> 00:01:27,760
+đơn vị là coulomb trên giây.
+
+21
+00:01:27,760 --> 00:01:32,010
+Nói cách khác, nó đo dòng chảy của hạt mang điện, mà hạt mang điện có đơn vị là
+
+22
+00:01:32,010 --> 00:01:34,310
+coulombs, cho nên đơn vị là coulombs trên giây.
+
+23
+00:01:34,310 --> 00:01:41,230
+Nhưng thay vì xài đơn vị là coulomb trên giây, ta có đơn vị khác là Ampere
+
+24
+00:01:41,230 --> 00:01:42,550
+để đại diện cho dòng điện.
+
+25
+00:01:42,550 --> 00:01:49,920
+Tóm lại, dòng điện là dòng chuyển dời có hướng của các hạt mang điện, có thể là electron,
+
+26
+00:01:49,920 --> 00:01:52,680
+hoặc hạt mang điện khác.
+
+27
+00:01:52,680 --> 00:01:56,430
+Có đơn vị là Ampere.
+
+28
+00:01:56,430 --> 00:02:07,090
+Dòng điện thì có hướng, như ta sẽ thấy, khi nói về dòng điện
+
+29
+00:02:07,090 --> 00:02:10,789
+là dòng chuyển dời có hướng của các hạt mang điện, cho nên
+
+30
+00:02:10,789 --> 00:02:14,715
+quan trọng dòng điện đang theo hướng nào.
+
+31
+00:02:14,715 --> 00:02:23,020
+Xuyên qua vật dẫn, ta sẽ thấy dòng điện có vài hướng.
+
+32
+00:02:23,020 --> 00:02:26,880
+Cho nên thuật ngữ kế tiếp ta nói về điện áp.
+
+33
+00:02:26,880 --> 00:02:32,300
+
+34
+00:02:32,300 --> 00:02:39,490
+Điện áp là cái ta gọi lực điện động.
+
+35
+00:02:39,490 --> 00:02:48,220
+Lực điện động hay là hiệu điện thế
+
+36
+00:02:48,220 --> 00:02:58,300
+Cho nên điện áp, là hiệu điện thế
+
+37
+00:02:58,300 --> 00:02:59,950
+giữa 2 điểm.
+
+38
+00:02:59,950 --> 00:03:06,240
+Cho nên khi tôi nói, ví dụ, 2 điểm a và b, ta có điện áp Vab,
+
+39
+00:03:06,240 --> 00:03:09,560
+tức là hiệu điện thế giữa 2 điểm a và b.
+
+40
+00:03:09,560 --> 00:03:19,420
+Định nghĩa của điện áp là lượng năng lượng cần để
+
+41
+00:03:19,420 --> 00:03:33,910
+dời 1 điện tích, đơn vị của điện tích là coulomb,
+
+42
+00:03:33,910 --> 00:03:39,850
+từ điểm a tới b,
+
+43
+00:03:39,850 --> 00:03:42,500
+từ điểm này tới điểm khác.
+1 Volt sẽ phóng thích 1 lượng năng lượng 1 Joule trên mỗi Coulomb của hạt mang điện đi qua nó.
+
+44
+00:03:42,500 --> 00:03:44,600
+Đó là điện áp.
+
+45
+00:03:44,600 --> 00:03:52,670
+Vậy điện áp có đơn vị là Joules, đơn vị của năng lượng
+
+46
+00:03:52,670 --> 00:03:54,485
+trên Coulomb.
+
+47
+00:03:54,485 --> 00:03:58,100
+
+48
+00:03:58,100 --> 00:04:01,120
+Lần nữa, ta có đơn vị khác gọn hơn.
+
+49
+00:04:01,120 --> 00:04:05,160
+là Volt.
+
+50
+00:04:05,160 --> 00:04:11,090
+Đơn vị của dòng điện là Ampere, của điện áp là Volt.
+
+51
+00:04:11,090 --> 00:04:17,880
+Định luật Ohm cho chúng ta mối quan hệ của điện áp và dòng điện.
+
+52
+00:04:17,880 --> 00:04:19,600
+2 khái niệm mới vừa giới thiệu.
+
+53
+00:04:19,600 --> 00:04:26,390
+Định luật Ohm nói rằng dòng điện chạy qua vật dẫn
+
+54
+00:04:26,390 --> 00:04:30,580
+tôi vẽ vật dẫn như thế này,
+
+55
+00:04:30,580 --> 00:04:34,950
+chạy qua vật dẫn từ phần dương sang phần âm,
+
+56
+00:04:34,950 --> 00:04:38,430
+ta gọi 2 điểm này là a và b, có dấu dương và âm.
+
+57
+00:04:38,430 --> 00:04:42,630
+Vab là điện áp giữa 2 điểm, và
+
+58
+00:04:42,630 --> 00:04:51,510
+dòng điện và điện áp có mối quan hệ bằng 1 quy luật là V = I*R.
+
+59
+00:04:51,510 --> 00:04:55,030
+với R là điện trở của vật dẫn.
+
+60
+00:04:55,030 --> 00:05:00,250
+Ta có thể biểu diễn nhiều cách khác nhau, ví dụ,
+
+61
+00:05:00,250 --> 00:05:06,825
+R=V/I, hay I=V/R.
+
+62
+00:05:06,825 --> 00:05:15,410
+Với R là điện trở, đơn vị của điện trở R là
+
+63
+00:05:15,410 --> 00:05:19,840
+Ohm.
+
+64
+00:05:19,840 --> 00:05:26,850
+Vậy ta có định luật Ohm, cho ta mới quan hệ giữa các khái niệm này,
+
+65
+00:05:26,850 --> 00:05:32,690
+nhưng khi nói về dòng điện, ta đang nói về
+
+66
+00:05:32,690 --> 00:05:35,860
+dòng các hạt mang điện.
+
+67
+00:05:35,860 --> 00:05:44,010
+Và công suất tiêu tán qua điện trở là
+
+68
+00:05:44,010 --> 00:05:54,760
+V*I. Đơn vị của công suất là Watt.
+
+69
+00:05:54,760 --> 00:06:01,820
+Và điều thú vị là nó bằng với
+
+70
+00:06:01,820 --> 00:06:07,640
+Joule trên giây.
+
+71
+00:06:07,640 --> 00:06:18,250
+Đơn giản bởi vì đơn vị của điện áp là Jould trên Coulomb, và
+
+72
+00:06:18,250 --> 00:06:21,180
+đơn vị của dòng điện là Coulomb trên giây.
+
+73
+00:06:21,180 --> 00:06:27,340
+Nên đơn vị của công suất là Joule trên giây, cũng là Watt,
+
+74
+00:06:27,340 --> 00:06:28,590

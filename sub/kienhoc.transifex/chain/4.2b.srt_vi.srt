@@ -1,0 +1,664 @@
+0
+00:00:00,000 --> 00:00:00,840
+https://youtu.be/fGY--TUnI3o
+
+1
+00:00:00,840 --> 00:00:03,720
+Giờ hãy lấy phương trình cho EOQ,
+
+2
+00:00:03,720 --> 00:00:05,280
+cách giải quyết nó theo phép giải tích.
+
+3
+00:00:05,280 --> 00:00:07,440
+Chúng ta đã thấy cách chúng ta có thể giải quyết nó bằng biểu đồ
+
+4
+00:00:07,440 --> 00:00:10,830
+và tìm giá trị tối thiểu ở đâu, như tôi vẽ đồ thị
+
+5
+00:00:10,830 --> 00:00:14,500
+chi phí găm hàng và chi phí đặt hàng liên quan đến số lượng đơn hàng.
+
+6
+00:00:14,500 --> 00:00:17,770
+Nhưng hãy tìm hiểu cách giải quyết nó theo giải tích.
+
+7
+00:00:17,770 --> 00:00:20,660
+Tôi có phương trình liên tục này,
+
+8
+00:00:20,660 --> 00:00:23,505
+tổng chi phí liên quan là một hàm theo Q.
+
+9
+00:00:23,505 --> 00:00:27,900
+Nhớ rằng, nó chỉ là tổng của chi phí đặt hàng và
+
+10
+00:00:27,900 --> 00:00:29,190
+chi phí găm hàng.
+
+11
+00:00:29,190 --> 00:00:31,830
+Và tất cả những gì tôi muốn làm là tìm xem
+
+12
+00:00:31,830 --> 00:00:33,110
+tại điểm này thì giá trị cực tiểu là bao nhiêu.
+
+13
+00:00:33,110 --> 00:00:35,560
+Và để làm điều đó, nếu bạn nhớ lại từ Vi phân - Tích phân I,
+
+14
+00:00:35,560 --> 00:00:38,390
+bạn lấy đạo hàm lần thứ nhất, bạn đặt nó bằng 0
+
+15
+00:00:38,390 --> 00:00:42,280
+và giải theo Q. Và sau đó để chắc chắn rằng nó là giá trị cực tiểu bao trùm,
+
+16
+00:00:42,280 --> 00:00:44,770
+để chắc chắn bạn lấy đạo hàm lần thứ hai.
+
+17
+00:00:44,770 --> 00:00:46,990
+Và bạn muốn nói nếu nó là giá trị cực thiểu,
+
+18
+00:00:46,990 --> 00:00:48,910
+tôi biết rằng đạo hàm lần thứ hai sẽ luôn
+
+19
+00:00:48,910 --> 00:00:50,340
+lớn hơn 0.
+
+20
+00:00:50,340 --> 00:00:54,710
+Và nếu đó là giá trị cực đại bao trùm, thì nó sẽ luôn nhỏ hơn 0.
+
+21
+00:00:54,710 --> 00:00:55,880
+Vậy hãy xem chúng ta có gì nào.
+
+22
+00:00:55,880 --> 00:00:59,240
+Chúng ta bắt đầu phương trình này bằng cách đạo hàm lần thứ nhất.
+
+23
+00:00:59,240 --> 00:01:01,280
+Rất dễ hiểu.
+
+24
+00:01:01,280 --> 00:01:04,031
+Đặt nó bằng 0, và tôi sẽ giải theo Q.
+
+25
+00:01:04,031 --> 00:01:05,489
+Và tôi có các bước làm ở đây,
+
+26
+00:01:05,489 --> 00:01:06,738
+để bạn tiện theo dõi.
+
+27
+00:01:06,738 --> 00:01:08,570
+Thực sự là phép đại số đơn giản.
+
+28
+00:01:08,570 --> 00:01:14,347
+Nhưng chúng ta thu được Q*=sqrt(2) nhân với chi phí cho mỗi đơn hàng
+
+29
+00:01:14,347 --> 00:01:16,840
+nhân với cầu hàng năm chia cho chi phí đơn vị
+
+30
+00:01:16,840 --> 00:01:18,590
+cho tồn kho găm hàng.
+
+31
+00:01:18,590 --> 00:01:22,100
+Giờ cần đảm bảo rằng đó là giá trị cực tiểu bao trùm,
+
+32
+00:01:22,100 --> 00:01:24,377
+chúng ta muốn tiến hành đạo hàm lần thứ hai.
+
+33
+00:01:24,377 --> 00:01:25,960
+Tôi lấy đạo hàm lần thứ hai của cái này.
+
+34
+00:01:25,960 --> 00:01:27,830
+Cũng khá dễ hiểu.
+
+35
+00:01:27,830 --> 00:01:30,920
+Và tôi thu được số hạng này, 2 nhân với chi phí cho mỗi đơn hàng
+
+36
+00:01:30,920 --> 00:01:33,890
+nhân với cầu hàng năm
+
+37
+00:01:33,890 --> 00:01:36,260
+trên lũy thừa bậc ba của số lượng đơn hàng.
+
+38
+00:01:36,260 --> 00:01:39,490
+Điều quan trọng ở đây là giá trị này sẽ luôn
+
+39
+00:01:39,490 --> 00:01:41,510
+lớn hơn 0.
+
+40
+00:01:41,510 --> 00:01:43,490
+Chi phí đặt hàng sẽ không bao giờ âm.
+
+41
+00:01:43,490 --> 00:01:45,290
+Cầu hàng năm sẽ không âm.
+
+42
+00:01:45,290 --> 00:01:47,480
+Và bạn sẽ không đặt hàng với số lượng âm.
+
+43
+00:01:47,480 --> 00:01:50,790
+Nên giá trị này sẽ luôn lớn hơn 0.
+
+44
+00:01:50,790 --> 00:01:53,400
+Nên đây là giá trị cực tiểu bao trùm.
+
+45
+00:01:53,400 --> 00:01:57,750
+Và đây là phương trình EOQ mà bạn sẽ rất hay sử dụng.
+
+46
+00:01:57,750 --> 00:01:59,600
+Nhưng giờ hãy tìm vài thứ khác.
+
+47
+00:01:59,600 --> 00:02:03,410
+Hãy tìm thời gian giữa các lần bổ sung cho Q tối ưu.
+
+48
+00:02:03,410 --> 00:02:09,340
+Và nhớ là đây là Q* của chúng ta và T* đơn giản là Q* trên D.
+
+49
+00:02:09,340 --> 00:02:14,960
+Hãy nhớ rằng, vì Q* là đơn vị trên mỗi đơn hàng, D là đơn vị mỗi năm,
+
+50
+00:02:14,960 --> 00:02:18,480
+và nếu triệt tiêu các đơn vị, điều này cho tôi biết những năm giữa
+
+51
+00:02:18,480 --> 00:02:19,530
+đơn hàng.
+
+52
+00:02:19,530 --> 00:02:24,840
+Tôi có thể chỉ chia Q* cho D. Hoặc tôi có thể tìm nó theo
+
+53
+00:02:24,840 --> 00:02:26,860
+ số hạng của các biến đầu vào.
+
+54
+00:02:26,860 --> 00:02:30,110
+Và tất cả những gì tôi làm chỉ là thực hiện với Q* ở đây.
+
+55
+00:02:30,110 --> 00:02:34,510
+Vậy tôi biết rằng T* sẽ là = sqrt (2 nhân với chi phí
+
+56
+00:02:34,510 --> 00:02:39,250
+mỗi đơn hàng chia cho cầu hàng năm và chia cho chi phí
+
+57
+00:02:39,250 --> 00:02:41,880
+mỗi tồn kho găm hàng trên mỗi đơn vị).
+
+58
+00:02:41,880 --> 00:02:44,230
+Với một trong hai cách, bạn có thể làm điều này.
+
+59
+00:02:44,230 --> 00:02:47,310
+Và đôi khi cũng hữu ích khi có cái này theo số hạng của N,
+
+60
+00:02:47,310 --> 00:02:50,320
+là nghịch đảo của T, 1/T.
+
+61
+00:02:50,320 --> 00:02:53,630
+Vì T sẽ cho bạn biết những năm giữa mỗi đơn hàng.
+
+62
+00:02:53,630 --> 00:02:55,940
+N sẽ cho bạn biết số lượng đơn đặt hàng
+
+63
+00:02:55,940 --> 00:02:58,910
+bạn sẽ đặt trong thời gian một năm.
+
+64
+00:02:58,910 --> 00:03:00,950
+Điều quan trọng là dù bạn làm gì,
+
+65
+00:03:00,950 --> 00:03:04,720
+luôn là hữu ích để đặt T* trong các đơn vị
+
+66
+00:03:04,720 --> 00:03:05,340
+có ý nghĩa.
+
+67
+00:03:05,340 --> 00:03:09,240
+Nói với ai đó rằng 0,33 năm cho mỗi đơn hàng
+
+68
+00:03:09,240 --> 00:03:12,450
+không hữu ích bằng việc nói rằng bạn đặt hàng ba lần
+
+69
+00:03:12,450 --> 00:03:13,190
+một năm.
+
+70
+00:03:13,190 --> 00:03:15,800
+Vậy hãy đảm bảo rằng các đơn vị thời gian
+
+71
+00:03:15,800 --> 00:03:19,670
+dễ hiểu với người ra quyết định.
+
+72
+00:03:19,670 --> 00:03:22,350
+Điều cuối cùng tôi muốn làm là tìm tổng chi phí liên quan
+
+73
+00:03:22,350 --> 00:03:26,010
+cho tối ưu Q. này. Vậy tôi đã có tổng phương trình chi phí liên quan
+
+74
+00:03:26,010 --> 00:03:27,050
+ở đây.
+
+75
+00:03:27,050 --> 00:03:30,650
+Và đây là Q* chúng ta vừa mới đạo hàm.
+
+76
+00:03:30,650 --> 00:03:33,960
+Và những gì tôi sẽ làm là chỉ cần thay Q* vào.
+
+77
+00:03:33,960 --> 00:03:38,120
+Sẽ dọn dẹp nó một chút bằng cách di chuyển các số hạng,
+
+78
+00:03:38,120 --> 00:03:40,350
+kết hợp một vài số hạng chung.
+
+79
+00:03:40,350 --> 00:03:45,950
+Và bạn thu được tổng chi phí liên quan = sqrt (2
+
+80
+00:03:45,950 --> 00:03:49,420
+nhân với chi phí mỗi giao dịch-- chi phí đơn hàng--
+
+81
+00:03:49,420 --> 00:03:53,240
+nhân với chi phí tồn kho găm giữ hàng trên một đơn vị thời gian thời gian
+
+82
+00:03:53,240 --> 00:03:54,410
+nhân với cầu hàng năm).
+
+83
+00:03:54,410 --> 00:03:57,120
+Hãy nhớ tổng chi phí liên quan này
+
+84
+00:03:57,120 --> 00:03:58,750
+không giống với tổng chi phí.
+
+85
+00:03:58,750 --> 00:04:02,130
+Tôi phải thêm lại chi phí mua hàng,
+
+86
+00:04:02,130 --> 00:04:06,920
+là c nhân D. Lưu ý rằng chi phí mua hàng này
+
+87
+00:04:06,920 --> 00:04:10,060
+không gồm số lượng đặt hàng tối ưu là bao nhiêu.
+
+88
+00:04:10,060 --> 00:04:11,560
+Nó chỉ giúp tôi khi tôi cần biết
+
+89
+00:04:11,560 --> 00:04:13,320
+tổng chi phí của tôi sẽ là bao nhiêu.
+
+90
+00:04:13,320 --> 00:04:15,960
+Nhưng chi phí mua không ảnh hưởng
+
+91
+00:04:15,960 --> 00:04:18,661
+đến số lượng đơn đặt hàng của tôi.
+
+92
+00:04:18,661 --> 00:04:19,160
+Được rồi.
+
+93
+00:04:19,160 --> 00:04:21,260
+Hãy làm một ví dụ rất đơn giản.
+
+94
+00:04:21,260 --> 00:04:22,610
+Bạn sẽ thấy cái này quen quen.
+
+95
+00:04:22,610 --> 00:04:25,630
+Đây là ví dụ tương tự chúng ta đã làm để hiểu.
+
+96
+00:04:25,630 --> 00:04:29,290
+Chúng ta biết cầu của mình, D của chúng ta là 2.000 đơn vị mỗi năm.
+
+97
+00:04:29,290 --> 00:04:33,660
+Chúng ta biết chi phí giao dịch của chúng ta, c_t là $500 cho mỗi đơn đặt hàng.
+
+98
+00:04:33,660 --> 00:04:38,282
+Chúng ta đã tìm ra c_e của mình, chi phí tồn kho dư thừa của chúng ta là $12,50.
+
+99
+00:04:38,282 --> 00:04:40,220
+Để tôi viết vào đó.
+
+100
+00:04:40,220 --> 00:04:44,000
+Chỉ là 50 nhân 0,25.
+
+101
+00:04:44,000 --> 00:04:45,710
+Và tôi nghĩ đó là tất cả những gì chúng ta cần biết.
+
+102
+00:04:45,710 --> 00:04:47,410
+C của chúng ta là $50 cho mỗi đơn vị.
+
+103
+00:04:47,410 --> 00:04:48,980
+Vậy tôi muốn tìm ra điều gì?
+
+104
+00:04:48,980 --> 00:04:52,800
+Tôi muốn tìm ra Q*.
+
+105
+00:04:52,800 --> 00:04:59,060
+Như chúng ta đã chỉ ra, đó sẽ là = sqrt (2 nhân
+
+106
+00:04:59,060 --> 00:05:07,771
+c_t mà tôi đã nói là 500, nhân với D là 2.000
+
+107
+00:05:07,771 --> 00:05:09,570
+để tôi mở nó ra.
+
+108
+00:05:09,570 --> 00:05:14,760
+Cái này sẽ được chia cho c_e của tôi là 12,5).
+
+109
+00:05:14,760 --> 00:05:21,630
+Vậy tôi nhận được một Q* = 400 đơn vị mỗi đơn đặt hàng.
+
+110
+00:05:21,630 --> 00:05:22,130
+Được rồi.
+
+111
+00:05:22,130 --> 00:05:26,920
+Và từ đó, tôi có thể dễ dàng tìm ra T* của tôi
+
+112
+00:05:26,920 --> 00:05:28,580
+Tần suất đặt hàng của tôi sẽ là bao nhiêu?
+
+113
+00:05:28,580 --> 00:05:33,800
+Đơn giản-- nhớ là Q* trên D.
+
+114
+00:05:33,800 --> 00:05:40,340
+Và đó sẽ là 400 đơn vị trên 2.000 đơn vị mỗi năm,
+
+115
+00:05:40,340 --> 00:05:47,010
+bằng 0,2 năm cho mỗi đơn đặt hàng.
+
+116
+00:05:47,010 --> 00:05:49,370
+Như tôi đã nói, điều đó không hữu ích lắm, đúng không?
+
+117
+00:05:49,370 --> 00:05:52,700
+Vậy nếu tôi nhân nó với 365 cho những ngày trong năm,
+
+118
+00:05:52,700 --> 00:05:57,950
+tôi sẽ có 73 ngày cho mỗi đơn đặt hàng.
+
+119
+00:05:57,950 --> 00:05:59,670
+Nhưng có thể hữu ích hơn nữa đó là
+
+120
+00:05:59,670 --> 00:06:03,340
+đặt cái này theo số hạng N, đơn giản là nghịch đảo.
+
+121
+00:06:03,340 --> 00:06:03,840
+Phải không?
+
+122
+00:06:03,840 --> 00:06:15,610
+1/T* Và đó đơn giản là 2.000 trên 400, bằng 5.
+
+123
+00:06:15,610 --> 00:06:19,300
+Và đó là 5 đơn hàng mỗi năm,
+
+124
+00:06:19,300 --> 00:06:22,830
+điều này giúp dễ hiểu hơn một chút.
+
+125
+00:06:22,830 --> 00:06:23,330
+OK.
+
+126
+00:06:23,330 --> 00:06:27,430
+Chúng tôi cũng muốn tìm tổng chi phí liên quan.
+
+127
+00:06:27,430 --> 00:06:31,260
+Nhớ là chúng ta đã nói tổng chi phí liên quan sẽ là =
+
+128
+00:06:31,260 --> 00:06:36,440
+sqrt( 2 nhân c_t nhân c_e nhân D).
+
+129
+00:06:36,440 --> 00:06:41,210
+Và đó sẽ là = sqrt (2-- chi phí mỗi giao dịch
+
+130
+00:06:41,210 --> 00:06:45,110
+là 500 phải không?
+
+131
+00:06:45,110 --> 00:06:49,020
+12,50 cho chi phí găm hàng trên mỗi đơn vị thời gian,
+
+132
+00:06:49,020 --> 00:06:52,250
+và tôi nghĩ chúng ta có 2.000 đơn vị mỗi năm).
+
+133
+00:06:52,250 --> 00:07:01,290
+Tôi có tổng chi phí liên quan là $5.000 mỗi năm.
+
+134
+00:07:01,290 --> 00:07:02,500
+Các bạn hãy kiểm tra xem.
+
+135
+00:07:02,500 --> 00:07:05,600
+Thay vào phương trình TRC thẳng,
+
+136
+00:07:05,600 --> 00:07:12,240
+và bạn sẽ thấy rằng chi phí găm hàng = chi phí đặt hàng = 2.500.
+
+137
+00:07:12,240 --> 00:07:12,740
+Phải không?
+
+138
+00:07:12,740 --> 00:07:14,150
+Nó bằng nhau trong trường hợp này.
+
+139
+00:07:14,150 --> 00:07:16,880
+Đó là điểm mà hai cái đó bằng nhau.
+
+140
+00:07:16,880 --> 00:07:19,220
+Tổng chi phí của tôi sẽ là bao nhiêu từ đây?
+
+141
+00:07:19,220 --> 00:07:24,060
+Tôi phải thêm vào chi phí mua, cD,
+
+142
+00:07:24,060 --> 00:07:25,920
+cộng với tổng chi phí liên quan.
+
+143
+00:07:25,920 --> 00:07:28,490
+Sẽ bằng gì? c là gì?
+
+144
+00:07:28,490 --> 00:07:33,980
+50 nhân 2.000.
+
+145
+00:07:33,980 --> 00:07:38,660
+Và tôi phải cộng thêm $5.000, tôi chỉ cần
+
+146
+00:07:38,660 --> 00:07:40,710
+tìm ra từ tổng chi phí liên quan của mình.
+
+147
+00:07:40,710 --> 00:07:48,430
+Và đó sẽ là $105.000 mỗi năm.
+
+148
+00:07:48,430 --> 00:07:51,770
+100.000 trong số đó là mua sản phẩm.
+
+149
+00:07:51,770 --> 00:07:54,370
+5.000 chi phí găm hàng tồn kho
+
+150
+00:07:54,370 --> 00:07:56,504
+và chi phí đặt hàng.
+
+151
+00:07:56,504 --> 00:07:58,420
+Vào cuối ngày, tôi muốn tìm ra
+
+152
+00:07:58,420 --> 00:08:00,910
+chính sách tồn kho của mình là gì.
+
+153
+00:08:00,910 --> 00:08:07,710
+Chính sách của tôi sẽ thực sự đơn giản.
+
+154
+00:08:07,710 --> 00:08:14,290
+Tôi muốn đặt hàng Q* là 400 đơn vị.
+
+155
+00:08:14,290 --> 00:08:15,240
+Phải không?
+
+156
+00:08:15,240 --> 00:08:23,616
+Và tôi muốn đặt hàng này khi tồn kho = 0.
+
+157
+00:08:23,616 --> 00:08:25,490
+Nhớ là chúng ta đã nói giả định ở đây
+
+158
+00:08:25,490 --> 00:08:29,270
+là khi tôi đặt hàng, nó được giao ngay lập tức.
+
+159
+00:08:29,270 --> 00:08:36,140
+Một cách khác là tôi có thể nói rằng tôi đặt hàng 400 đơn vị
+
+160
+00:08:36,140 --> 00:08:46,160
+mỗi 73 ngày, đó là T* nên tất cả những gì chúng ta đã làm là
+
+161
+00:08:46,160 --> 00:08:51,610
+tuyên bố chính sách của chúng ta về Q* và T* để nó có thể được thực hiện.
+
+162
+00:08:51,610 --> 00:08:54,690
+Và đó là toàn bộ bản chất của chính sách tồn kho.
+
+163
+00:08:54,690 --> 00:08:57,100
+Và đây là cách bạn làm điều đó với giả thuyết kinh tế
+
+164
+00:08:57,100 --> 00:08:58,650
+số lượng đơn hàng.
+
+165
+00:08:58,650 --> 00:08:59,559
+
+

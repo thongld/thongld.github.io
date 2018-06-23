@@ -1,0 +1,285 @@
+0
+00:00:13,630 --> 00:00:20,630
+Chúng tôi thấy rằng nhìn vào sự tương quan tổng thể thì sự tự tin là một yếu tố dự báo yếu kém chính xác. 
+
+
+1
+00:00:23,939 --> 00:00:28,420
+Một số nhà nghiên cứu đã lập luận rằng việc sử dụng các mối tương quan để kiểm tra mối quan hệ 
+
+2
+00:00:28,420 --> 00:00:33,950
+giữa sự tự tin và độ chính xác là chưa đầy đủ và lỗ mãng. 
+
+3
+00:00:33,950 --> 00:00:39,770
+Điều này là vì sự tương quan chỉ mô tả một mối quan hệ theo đường thẳng 1-1, 
+
+4
+00:00:39,770 --> 00:00:44,470
+trong khi các mối quan hệ thực tế có thể phức tạp hơn nhiều và liên quan 
+
+5
+00:00:44,470 --> 00:00:49,650
+đến các yếu tố khác. Vì vậy, điều gì sẽ xảy ra khi ta sử dụng các kỹ thuật tinh vi 
+
+6
+00:00:49,650 --> 00:00:55,410
+và tinh tế hơn để xem xét mối quan hệ giữa tính chính xác và sự tự tin?
+
+7
+00:00:55,410 --> 00:01:00,900
+Neil Brewer của Đại học Flinders và Gary Wells mô tả rằng kỹ thuật hiệu chuẩn 
+
+8
+00:01:00,900 --> 00:01:07,900
+cho phép ta tính toán được là nhân chứng tự tin hay không tự tin ra sao theo các 
+
+9
+00:01:08,369 --> 00:01:13,110
+cấp độ chính xác khác nhau. Kỹ thuật này đòi hỏi ta phải có 
+
+10
+00:01:13,110 --> 00:01:19,049
+ít nhất 2 phán đoán nhận diện của mỗi nhân chứng. Về cơ bản, bạn kết thúc với một độ chính xác so với 
+
+11
+00:01:19,049 --> 00:01:26,049
+mức tự tin của cốt truyện. Ở đây các giá trị dưới đường chéo đại diện sự quá tự tin còn các giá trị 
+
+12
+00:01:26,530 --> 00:01:33,289
+trên đường chéo đại diện dưới sự thiếu tự tin. Điều quan trọng là cách này không phải là chỉ để đo liệu chính xác 
+
+13
+00:01:33,289 --> 00:01:39,249
+hoặc hay không chính xác như trước nữa, thay vào đó ta sẽ dựa vào đó để rút ra 
+
+14
+00:01:39,249 --> 00:01:44,840
+độ chính xác theo tỉ lệ %. Những gì Brewer và Wells tìm thấy là việc sử dụng 
+
+15
+00:01:44,840 --> 00:01:51,270
+các kỹ thuật đo lường tinh vi hơn có thể thể hiện rõ ràng mối quan hệ giữa sự tự tin và tính chính xác 
+
+16
+00:01:51,270 --> 00:01:58,109
+trong những tình huống nhất định hơn là sử dụng mối tương quan truyền thống. 
+
+17
+00:01:58,109 --> 00:02:04,689
+Sự tự tin có thể được coi như một chỉ số đáng tin cậy cho tính chính xác, nhưng chỉ trong những 
+
+18
+00:02:04,689 --> 00:02:09,429
+tình huống cụ thể. Tất nhiên đó chỉ là một minh họa cho 
+
+19
+00:02:09,429 --> 00:02:14,290
+các ảnh hưởng trong nghiên cứu, và hoàn toàn không phải là cái mà có thể áp dụng 
+
+20
+00:02:14,290 --> 00:02:19,870
+tình huống pháp lý. Vì vậy, chúng ta có thể dựa vào những tình huống này 
+
+21
+00:02:19,870 --> 00:02:26,870
+và tận dụng các giá trị đoán trước về khả năng tự tin của nhân chứng trong một khung pháp lý thực tế?
+
+22
+00:02:27,920 --> 00:02:33,710
+Từ đây ta quay lại những gì đã nói ở phần trước về phương pháp xếp hàng 
+
+23
+00:02:33,710 --> 00:02:38,520
+Có phương pháp nào tốt hơn thay thế cho phương pháp xếp hàng truyền thống ? 
+
+24
+00:02:38,520 --> 00:02:43,280
+Neil Brewer và các đồng nghiệp của ông đã nghĩ ra một phương pháp nhờ tận dụng lợi thế 
+
+25
+00:02:43,280 --> 00:02:50,030
+của các những nghiên cứu trước đây giúp biết được trường hợp nào 
+
+26
+00:02:50,030 --> 00:02:57,030
+ nhân chứng dự đoán là chính xác. Phương pháp của Brewer 
+
+27
+00:02:57,310 --> 00:03:04,310
+chỉ là việc tính toàn sự tự tin của một nhân chứng khi xác định nghi phạm là tội phạm.
+
+28
+00:03:04,340 --> 00:03:07,610
+ Họ không yêu cầu nhân chứng phải xác định 
+
+29
+00:03:07,610 --> 00:03:11,120
+ai trong hàng chắc chắn là tội phạm.
+
+30
+00:03:11,120 --> 00:03:17,370
+Các thứ hạng của sự tự tin mà chính họ quyết định sẽ được dùng để xem xét khả năng
+
+31
+00:03:17,370 --> 00:03:20,920
+ họ xác định nghi phạm là chính xác hay không . 
+
+32
+00:03:20,920 --> 00:03:24,160
+Dưới đây minh họa về phương pháp mà Brewer đã sử dụng. 
+
+33
+00:03:24,160 --> 00:03:27,440
+Ta có thể thấy có 1 vài điểm của phương pháp này khác phương pháp xếp hàng truyền thống
+
+34
+00:03:29,430 --> 00:03:33,110
+mà ta đã biết trước đây. Trước hết, thay vì chỉ ra liệu
+
+35
+00:03:33,110 --> 00:03:40,110
+đó có phải gương mặt tội phạm hay không , thì nhân chứng sẽ phải xếp hạng các khuôn mặt theo các cấp độ tự tin. 
+
+36
+00:03:40,960 --> 00:03:47,060
+Bạn sẽ hoàn thành 1 bảng xếp hạng về độ tự tin chứ không phải là đưa ra đánh giá là có hay không. 
+
+37
+00:03:47,060 --> 00:03:51,320
+Brewer cũng xem xét những phát hiện tâm lý khác trong phương pháp này này. 
+
+38
+00:03:51,320 --> 00:03:56,480
+Ví dụ, nghiên cứu trước đây đã phát hiện ra rằng tốc độ xác định phán đoán nhận dạng 
+
+39
+00:03:56,480 --> 00:04:02,120
+chính xác. Việc xác định nhanh có khả năng chính xác, 
+
+40
+00:04:02,120 --> 00:04:07,660
+còn việc xác định chậm hơn lại có nhiều khả năng xác định sai,
+
+41
+00:04:07,660 --> 00:04:13,930
+Vì người ta cho rằng có nhiều hơn thời gian sẽ có nhiều ảnh hưởng khác vào quyết định. 
+
+42
+00:04:13,930 --> 00:04:18,350
+Vì vậy, trong phương pháp của Brewer nhân chứng 
+
+43
+00:04:18,350 --> 00:04:23,539
+có không quá ba giây để nhìn vào mỗi người trong hàng và đưa ra 
+
+44
+00:04:23,539 --> 00:04:27,690
+đánh giá theo sự tự tin của họ. Ngoài ra, khi sử dụng phương pháp này 
+
+45
+00:04:27,690 --> 00:04:33,300
+cần cố gắng xác định thứ hạng tự tin trước khi nhân chứng có thể bị ảnh hưởng bởi tất cả các ảnh hưởng 
+
+46
+00:04:33,310 --> 00:04:38,510
+mà ta đã đề cập trước đó vào  thời điểm mà nhân chứng 
+
+47
+00:04:38,510 --> 00:04:43,360
+chưa bị tác động gì khác. Cuối cùng, theo nghiên cứu mô tả 
+
+48
+00:04:43,360 --> 00:04:49,389
+trong phần trình bày về phương pháp xếp hàng, các nhân chứng khi nhân dạng theo phương pháp của Brewer quan sát các gương mặt theo tuần tự 
+
+49
+00:04:49,389 --> 00:04:53,310
+chứ không phải cùng một lúc. Ở cuối quy trình nhận dạng, bạn chỉ 
+
+50
+00:04:53,310 --> 00:04:58,670
+cần hoàn thành bảng đánh giá độ tự tin với mỗi khuôn mặt trong hàng, và không phải đưa ra đánh giá có hay không. 
+
+51
+00:04:58,670 --> 00:05:02,940
+Sau đó Brewer áp dụng một thuật toán phân loại 
+
+52
+00:05:02,940 --> 00:05:09,650
+để xử lý các xếp hạng độ tự tin 
+
+53
+00:05:09,650 --> 00:05:14,740
+để xác định xem những gương mặt đã được xác định có đủ cấp độ tự tin để có khả năng đó là tội phạm - sử dụng xếp hạng 
+
+54
+00:05:14,740 --> 00:05:20,680
+chọn ra người nổi bật như một đường cơ sở. Nghĩa là, nó là xếp hạng tự tin mà chính họ 
+
+55
+00:05:20,680 --> 00:05:26,639
+xác định xem liệu các nghi phạm có khả năng là tội phạm hay không. 
+
+56
+00:05:26,639 --> 00:05:31,260
+Brewer và nhóm của ông sau đó đã thử nghiệm phương pháp mới của họ trực tiếp với phương pháp xếp hàng truyền thống 
+
+57
+00:05:31,260 --> 00:05:37,790
+và thấy rằng nó tốt hơn trong việc đưa ra các quyết định chính xác. 
+
+58
+00:05:37,790 --> 00:05:42,850
+Theo báo cáo của họ thì độ chính xác quyết định của phương pháp mới cao hơn 
+
+59
+00:05:42,850 --> 00:05:48,440
+từ 24% đến 66% phương pháp truyền thống. 
+
+60
+00:05:48,440 --> 00:05:54,480
+Và một ví dụ khác đó là 
+
+61
+00:05:54,480 --> 00:05:59,580
+cuộc phỏng vấn Evofit về cách áp dụng lý thuyết tâm lý và nghiên cứu khả năng có thể 
+
+62
+00:05:59,580 --> 00:06:05,430
+dẫn đến những cải tiến hữu ích trong một khía cạnh của hệ thống tư pháp hình sự. 
+
+63
+00:06:05,430 --> 00:06:10,520
+Với tất cả những điều này thì sẽ có những hạn chế. Ví dụ, đội của Brewer thừa nhận rằng
+
+64
+00:06:10,520 --> 00:06:16,940
+ tòa án không có khả năng chấp nhận xếp hạng sự tự tin theo cách như việc xác định có hay không 
+
+65
+00:06:16,940 --> 00:06:23,150
+để kết án người dân, ngay cả khi họ có thể được chứng minh cách đó tốt hơn. 
+
+66
+00:06:23,150 --> 00:06:28,730
+Họ cũng chấp nhận rằng trong một thiết lập tòa án phòng, 
+
+67
+00:06:28,730 --> 00:06:33,680
+nó vẫn còn những trường hợp mà theo quan điểm của một bồi thẩm, sự tự tin cá nhân của một nhân chứng là một yếu tố dự đoán kém chính xác. 
+
+68
+00:06:33,680 --> 00:06:37,449
+Tuy nhiên, họ cho rằng ở cấp độ 
+
+69
+00:06:37,449 --> 00:06:43,530
+điều tra của cảnh sát, không có lý do tại sao kỹ thuật mới của họ không thể được sử dụng 
+
+70
+00:06:43,530 --> 00:06:50,530
+để cải thiện khả năng nhận diện đúng người của nhân chứng.
+

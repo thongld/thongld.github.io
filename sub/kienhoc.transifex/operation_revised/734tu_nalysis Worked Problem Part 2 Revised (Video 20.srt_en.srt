@@ -1,0 +1,385 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/36E9HWe3I_c
+
+1
+00:00:05,610 --> 00:00:08,259
+hello again and welcome back to operations
+management
+
+2
+00:00:08,259 --> 00:00:11,990
+in this session we're going to continue
+with the problem that we started in the
+
+3
+00:00:11,990 --> 00:00:12,870
+last one
+
+4
+00:00:12,870 --> 00:00:16,399
+about the LRDR laundry company
+
+5
+00:00:16,399 --> 00:00:20,670
+and in this one instead of trying to
+determine whether or not we could meet
+
+6
+00:00:20,670 --> 00:00:24,368
+a particular capacity we're going to try
+and figure out how many
+
+7
+00:00:24,368 --> 00:00:28,410
+resources we actually need to meet
+capacity
+
+8
+00:00:28,410 --> 00:00:34,439
+still a little bit different let's get
+started if you recall the LRDR 
+
+9
+00:00:34,439 --> 00:00:37,200
+laundry company provides a commercial
+laundry service
+
+10
+00:00:37,200 --> 00:00:41,640
+to businesses whose employees wear
+uniforms approximately 10 percent of all
+
+11
+00:00:41,640 --> 00:00:42,179
+loads
+
+12
+00:00:42,179 --> 00:00:45,590
+considered heavy loads the rest are
+considered normal
+
+13
+00:00:45,590 --> 00:00:48,730
+a normal though takes 30 minutes in the
+washer eighty
+
+14
+00:00:48,729 --> 00:00:53,968
+in the dryer a heavy load takes 45
+minutes in the washer and 120 minutes in
+
+15
+00:00:53,969 --> 00:00:54,590
+the dryer
+
+16
+00:00:54,590 --> 00:00:59,620
+they have two washers and four dryers
+washers and dryers can run
+
+17
+00:00:59,619 --> 00:01:05,209
+22 hours a day seven days a week and the
+original question was can they meet
+
+18
+00:01:05,210 --> 00:01:07,359
+their weekly demand a 500 loads
+
+19
+00:01:07,359 --> 00:01:10,900
+when we 
+
+20
+00:01:10,900 --> 00:01:14,780
+worked on the problem in the last
+session the bakkie was
+
+21
+00:01:14,780 --> 00:01:18,359
+identifying the bottleneck the
+bottleneck
+
+22
+00:01:18,359 --> 00:01:21,810
+is the resource pool that is the slowest
+it is
+
+23
+00:01:21,810 --> 00:01:25,400
+what actually preventing us from meeting
+our 
+
+24
+00:01:25,400 --> 00:01:29,000
+ demand requirements in this case
+
+25
+00:01:29,000 --> 00:01:32,299
+when we looked at it we saw that the
+washer
+
+26
+00:01:32,299 --> 00:01:37,159
+resource pool could meet the requirement
+of 500 loads per week
+
+27
+00:01:37,159 --> 00:01:41,909
+in fact it could complete 586.7
+loads per week
+
+28
+00:01:41,909 --> 00:01:45,240
+but the dryer couls only do
+
+29
+00:01:45,239 --> 00:01:50,239
+429.8 so the dryer capacity
+
+30
+00:01:50,239 --> 00:01:54,368
+being lower than that of the washer
+capacity said
+
+31
+00:01:54,368 --> 00:01:58,390
+this is our bottleneck even though there
+were four dryers
+
+32
+00:01:58,390 --> 00:02:03,269
+the amount of loads that could be
+done in that resource pool
+
+33
+00:02:03,269 --> 00:02:07,989
+was lower than in the washer
+
+34
+00:02:07,989 --> 00:02:13,019
+so we need to do is determine how many
+dryers are actually needed
+
+35
+00:02:13,019 --> 00:02:16,620
+in order to meet the required 500
+loads per week
+
+36
+00:02:16,620 --> 00:02:19,930
+so if you recall
+
+37
+00:02:19,930 --> 00:02:24,280
+we put in the information degraded to
+determine how many
+
+38
+00:02:24,280 --> 00:02:27,469
+minutes we needed per load
+
+39
+00:02:27,469 --> 00:02:32,080
+we used the weight average between
+heavy load and the normal load
+
+40
+00:02:32,080 --> 00:02:35,330
+to get the average unit load the washer
+
+41
+00:02:35,330 --> 00:02:38,750
+took 31.5 minutes on
+average for a
+
+42
+00:02:38,750 --> 00:02:44,909
+load where's the dryer took 86 so the
+next point need to do is figure out how much
+
+43
+00:02:44,909 --> 00:02:46,889
+time is actually needed
+
+44
+00:02:46,889 --> 00:02:53,039
+to do 500 loads in a week so five hundred
+loads
+
+45
+00:02:53,039 --> 00:02:56,590
+times the average unit load is
+
+46
+00:02:56,590 --> 00:03:00,829
+what is going to give us that time so
+the time needed
+
+47
+00:03:00,829 --> 00:03:04,069
+is the unit load times the 500 loads
+
+48
+00:03:04,068 --> 00:03:07,268
+so it took 500 times 31.5
+
+49
+00:03:07,269 --> 00:03:13,349
+we came up with 15750 minutes for
+the dryer
+
+50
+00:03:13,349 --> 00:03:17,349
+86 minutes per load times 500
+
+51
+00:03:17,349 --> 00:03:20,608
+said we need 43000
+
+52
+00:03:20,609 --> 00:03:24,629
+minutes in a week of dryer time in order to
+get this
+
+53
+00:03:24,629 --> 00:03:27,969
+500 loads done
+
+54
+00:03:27,969 --> 00:03:32,500
+now we also know how much time is
+available per resource unit
+
+55
+00:03:32,500 --> 00:03:36,500
+per week we had 22 hours
+
+56
+00:03:36,500 --> 00:03:39,560
+a day each one worked sixty
+
+57
+00:03:39,560 --> 00:03:45,009
+minutes is an hour and there are
+seven days a week so is 22 hours a day
+
+58
+00:03:45,009 --> 00:03:48,759
+time 60 minutes per hour time seven
+days in a week
+
+59
+00:03:48,759 --> 00:03:53,789
+so a single washer could do 9240
+ minutes
+
+60
+00:03:53,789 --> 00:03:58,889
+a single dryer could do 9240 minutes
+
+61
+00:03:58,889 --> 00:04:02,689
+so how to determine the number Resource
+Units needed
+
+62
+00:04:02,689 --> 00:04:08,310
+we're going to take the amount time that
+needed for 500 loads
+
+63
+00:04:08,310 --> 00:04:12,670
+divided by the amount of time available
+
+64
+00:04:12,669 --> 00:04:16,929
+per resource unit and that will tell us
+how many we need
+
+65
+00:04:16,930 --> 00:04:21,269
+so there it is the number of units
+needed
+
+66
+00:04:21,269 --> 00:04:24,780
+is the total amount of time needed
+
+67
+00:04:24,779 --> 00:04:28,399
+divided by the total time available
+
+68
+00:04:28,399 --> 00:04:33,788
+per resource so it took up 15750
+
+69
+00:04:33,788 --> 00:04:36,819
+divided by 9240
+
+70
+00:04:36,819 --> 00:04:40,629
+and they told us we needed 1.7 washers
+
+71
+00:04:40,629 --> 00:04:44,848
+and we had 2 so obviously we met the
+requirement there
+
+72
+00:04:44,848 --> 00:04:47,959
+for the dryers we needed
+
+73
+00:04:47,959 --> 00:04:51,989
+43,000 minutes to do 500 loads
+
+74
+00:04:51,990 --> 00:04:55,228
+divided by 9240
+
+75
+00:04:55,228 --> 00:05:00,300
+minutes per resource unit said we
+needed 4.65
+
+76
+00:05:00,300 --> 00:05:04,430
+we only had four so that would explain
+why the dryer
+
+77
+00:05:04,430 --> 00:05:08,160
+is the bottleneck we need to increase
+the number dryers
+
+78
+00:05:08,160 --> 00:05:12,680
+in order to meet the capacity
+requirement of 500
+
+79
+00:05:12,680 --> 00:05:16,650
+units per week
+
+80
+00:05:16,649 --> 00:05:19,959
+in our next session we're gonna be
+talking using the same
+
+81
+00:05:19,959 --> 00:05:23,839
+problem where I'm going to be adding
+dollar values to it
+
+82
+00:05:23,839 --> 00:05:27,779
+we're going to take a look at the
+profitability op the LRDR company
+
+83
+00:05:27,779 --> 00:05:28,500
+I'll see you then.
+

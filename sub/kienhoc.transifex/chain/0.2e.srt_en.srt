@@ -1,0 +1,352 @@
+0
+00:00:00,000 --> 00:00:00,280
+https://youtu.be/tl08gNzCoKc
+
+1
+00:00:00,280 --> 00:00:02,470
+In this segment I want to provide some quick tips
+
+2
+00:00:02,470 --> 00:00:04,950
+on responding to numerical problems.
+
+3
+00:00:04,950 --> 00:00:08,010
+Most of the SCX courses are quantitative in nature,
+
+4
+00:00:08,010 --> 00:00:11,010
+so most of the problems will require numerical responses.
+
+5
+00:00:11,010 --> 00:00:12,840
+So here's some quick rules.
+
+6
+00:00:12,840 --> 00:00:16,730
+Use a period symbol, the dot, to designate a decimal point, not
+
+7
+00:00:16,730 --> 00:00:17,860
+a comma.
+
+8
+00:00:17,860 --> 00:00:20,930
+Never enter commas or any other notation to separate thousands.
+
+9
+00:00:20,930 --> 00:00:25,850
+If your answer is 12340, enter that in 1-2-3-4-0,
+
+10
+00:00:25,850 --> 00:00:28,580
+not 12 comma 3, 4, 0.
+
+11
+00:00:28,580 --> 00:00:31,090
+We don't need the separator there.
+
+12
+00:00:31,090 --> 00:00:33,090
+Never enter currency or percentage signs.
+
+13
+00:00:33,090 --> 00:00:35,140
+Just enter the raw number.
+
+14
+00:00:35,140 --> 00:00:37,760
+We'll always allow some tolerance for these answers.
+
+15
+00:00:37,760 --> 00:00:41,640
+So, for example, if the answer is 12340,
+
+16
+00:00:41,640 --> 00:00:48,490
+we might allow a number as low as 12330 and as high as 12350.
+
+17
+00:00:48,490 --> 00:00:52,440
+We'll always have a little bit of tolerance range in there.
+
+18
+00:00:52,440 --> 00:00:54,330
+And if it's a multi-part problem,
+
+19
+00:00:54,330 --> 00:00:56,930
+it's very important that you check the solution
+
+20
+00:00:56,930 --> 00:00:58,140
+of the previous problem.
+
+21
+00:00:58,140 --> 00:01:01,470
+So for example, let's say part B of a problem
+
+22
+00:01:01,470 --> 00:01:04,209
+uses the answer in part A. So you
+
+23
+00:01:04,209 --> 00:01:07,620
+might put a number in for part A, you get it correct.
+
+24
+00:01:07,620 --> 00:01:09,900
+Always look at the explanation to see
+
+25
+00:01:09,900 --> 00:01:11,460
+if you are on the-- you know, you
+
+26
+00:01:11,460 --> 00:01:15,230
+might have been at the very end of the range of the tolerance.
+
+27
+00:01:15,230 --> 00:01:17,110
+We'll tell you a new number to use
+
+28
+00:01:17,110 --> 00:01:20,580
+that's the dead, correct answer, because then that will
+
+29
+00:01:20,580 --> 00:01:22,000
+limit the error propagation.
+
+30
+00:01:22,000 --> 00:01:24,780
+You should use that number going forward.
+
+31
+00:01:24,780 --> 00:01:27,551
+So even if you got part A right in that example,
+
+32
+00:01:27,551 --> 00:01:29,050
+you should still check and make sure
+
+33
+00:01:29,050 --> 00:01:31,490
+that we're telling you to use that number or a slightly
+
+34
+00:01:31,490 --> 00:01:32,854
+different number.
+
+35
+00:01:32,854 --> 00:01:34,770
+And we'll always give you guidance on how many
+
+36
+00:01:34,770 --> 00:01:38,520
+decimal places to use, or the number of significant digits.
+
+37
+00:01:38,520 --> 00:01:40,340
+So the general rule for rounding--
+
+38
+00:01:40,340 --> 00:01:43,300
+and in this example I'm rounding to an integer with no decimal
+
+39
+00:01:43,300 --> 00:01:44,070
+places.
+
+40
+00:01:44,070 --> 00:01:46,120
+And I have it here in terms of x.
+
+41
+00:01:46,120 --> 00:01:47,650
+So x could be 7.
+
+42
+00:01:47,650 --> 00:01:50,180
+So let's just write 7 in wherever ldx is.
+
+43
+00:01:50,180 --> 00:01:52,600
+So let's say you're numerical answer comes out
+
+44
+00:01:52,600 --> 00:01:57,070
+and it's between 7.0 and 7.49999,
+
+45
+00:01:57,070 --> 00:02:01,900
+and we're being asked to round this to no decimal places.
+
+46
+00:02:01,900 --> 00:02:04,070
+I would round down.
+
+47
+00:02:04,070 --> 00:02:09,889
+If the answer's between 7.5000 up to 7.999,
+
+48
+00:02:09,889 --> 00:02:12,740
+I would round up to 8.
+
+49
+00:02:12,740 --> 00:02:15,230
+So the break point is 5.0.
+
+50
+00:02:15,230 --> 00:02:22,890
+So if it's 0 to 4.999, round down, 5.0 up to 9.999,
+
+51
+00:02:22,890 --> 00:02:24,380
+round up.
+
+52
+00:02:24,380 --> 00:02:25,130
+All right.
+
+53
+00:02:25,130 --> 00:02:27,450
+So let's give some examples here.
+
+54
+00:02:27,450 --> 00:02:28,840
+So here's a simple question.
+
+55
+00:02:28,840 --> 00:02:30,250
+What's the area of a circle?
+
+56
+00:02:30,250 --> 00:02:32,620
+I give you a radius of 5.62 miles.
+
+57
+00:02:32,620 --> 00:02:36,250
+We all know that the area is pi r squared,
+
+58
+00:02:36,250 --> 00:02:39,330
+and pi has an infinite number of decimal places.
+
+59
+00:02:39,330 --> 00:02:42,720
+It does not influence our significant digits though.
+
+60
+00:02:42,720 --> 00:02:45,000
+Our significant digits here are 5.62,
+
+61
+00:02:45,000 --> 00:02:47,550
+so we really have three significant digits.
+
+62
+00:02:47,550 --> 00:02:49,880
+So the answer from your calculator, from a spreadsheet,
+
+63
+00:02:49,880 --> 00:02:54,240
+will be 99.225235196.
+
+64
+00:02:54,240 --> 00:02:56,530
+That's probably not what you're going to enter.
+
+65
+00:02:56,530 --> 00:02:59,580
+So if we're to ask you to say hey, round to the nearest
+
+66
+00:02:59,580 --> 00:03:02,210
+integer, then you would enter 99.
+
+67
+00:03:02,210 --> 00:03:06,340
+Because 2, right, is less than 5.
+
+68
+00:03:06,340 --> 00:03:10,290
+Now what if I say to the nearest one decimal place?
+
+69
+00:03:10,290 --> 00:03:13,480
+Well in that case, it would be 99.2,
+
+70
+00:03:13,480 --> 00:03:18,130
+because again, the second decimal place 2 is less than 5.
+
+71
+00:03:18,130 --> 00:03:21,430
+What if I say round to the nearest two decimal places?
+
+72
+00:03:21,430 --> 00:03:25,030
+In that case, I'm looking here-- 5, it's higher,
+
+73
+00:03:25,030 --> 00:03:26,610
+it's 5.0, right?
+
+74
+00:03:26,610 --> 00:03:29,130
+So I'm going to make it 99.23.
+
+75
+00:03:29,130 --> 00:03:34,610
+I would round that up because it's 0.225.
+
+76
+00:03:34,610 --> 00:03:37,040
+If I say round to the nearest three decimal places,
+
+77
+00:03:37,040 --> 00:03:41,827
+then it's 99.225 because the fourth decimal place is a 2.
+
+78
+00:03:41,827 --> 00:03:43,160
+So this should be pretty simple.
+
+79
+00:03:43,160 --> 00:03:46,490
+Sometimes I'll tell you to round up or down.
+
+80
+00:03:46,490 --> 00:03:48,850
+So if I say round up to the nearest integer,
+
+81
+00:03:48,850 --> 00:03:51,760
+you would say 100, because going up,
+
+82
+00:03:51,760 --> 00:03:55,690
+100 is the next closest integer to 99 point whatever.
+
+83
+00:03:55,690 --> 00:03:58,470
+I could also say round down to the nearest integer.
+
+84
+00:03:58,470 --> 00:04:01,780
+And then I would just go down to 99.
+
+85
+00:04:01,780 --> 00:04:03,550
+So these are simple rules.
+
+86
+00:04:03,550 --> 00:04:06,570
+When in doubt, just think it through, and just remember
+
+87
+00:04:06,570 --> 00:04:08,610
+the rounding rule.
+

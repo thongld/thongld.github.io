@@ -1,0 +1,889 @@
+371
+00:17:42,690 --> 00:17:44,050
+https://youtu.be/nO8eU3uts0o
+and print the average.
+
+372
+00:17:44,050 --> 00:17:46,190
+So these two programs
+are basically
+
+373
+00:17:46,190 --> 00:17:49,150
+equivalent-- the only time that
+they might not be equivalent
+
+374
+00:17:49,150 --> 00:17:54,180
+was if there was
+ten million numbers,
+
+375
+00:17:54,180 --> 00:17:59,167
+this would use up 40 megabytes
+of your memory, which
+
+376
+00:17:59,167 --> 00:18:01,250
+is actually not a lot of
+memory on some computers,
+
+377
+00:18:01,250 --> 00:18:05,200
+but if memory mattered this
+does store all those numbers--
+
+378
+00:18:05,200 --> 00:18:07,690
+this one actually just
+runs the calculation
+
+379
+00:18:07,690 --> 00:18:10,220
+so if there's a really
+large number of numbers,
+
+380
+00:18:10,220 --> 00:18:12,820
+this would make a difference
+because the list is growing
+
+381
+00:18:12,820 --> 00:18:15,690
+and keeping them all,
+summing them all at the end,
+
+382
+00:18:15,690 --> 00:18:18,560
+this is actually storing
+very little data.
+
+383
+00:18:18,560 --> 00:18:21,770
+But for reasonably sized
+numbers like thousands or even
+
+384
+00:18:21,770 --> 00:18:23,560
+hundreds of
+thousands of numbers,
+
+385
+00:18:23,560 --> 00:18:26,970
+these two approaches
+are kind of equivalent
+
+386
+00:18:26,970 --> 00:18:29,170
+and then sometimes
+you actually want
+
+387
+00:18:29,170 --> 00:18:31,640
+to accumulate something a
+little more complex than this,
+
+388
+00:18:31,640 --> 00:18:33,960
+you want to sort them,
+or look for the maximum
+
+389
+00:18:33,960 --> 00:18:35,970
+and look for something
+else, who knows what.
+
+390
+00:18:35,970 --> 00:18:39,180
+But the notion of make a list
+and then append something
+
+391
+00:18:39,180 --> 00:18:41,270
+to the list each time
+through the iteration
+
+392
+00:18:41,270 --> 00:18:43,580
+and then do something
+with a list at the end,
+
+393
+00:18:43,580 --> 00:18:45,450
+is a rather powerful pattern.
+
+394
+00:18:45,450 --> 00:18:47,910
+So this is also a
+powerful pattern,
+
+395
+00:18:47,910 --> 00:18:49,520
+this is accumulator
+pattern we just
+
+396
+00:18:49,520 --> 00:18:51,930
+have variables
+accumulating in the loop,
+
+397
+00:18:51,930 --> 00:18:55,420
+this one is one where we
+accumulate the data in the loop
+
+398
+00:18:55,420 --> 00:18:58,470
+and then do the
+computations all at the end.
+
+399
+00:18:58,470 --> 00:19:03,140
+Certain situations will make use
+of these different techniques.
+
+400
+00:19:03,140 --> 00:19:03,836
+OK so.
+
+401
+00:19:03,836 --> 00:19:06,620
+
+402
+00:19:06,620 --> 00:19:08,980
+Connecting strings and lists.
+
+403
+00:19:08,980 --> 00:19:12,450
+So there's a method, a
+capability of strings,
+
+404
+00:19:12,450 --> 00:19:16,230
+that is really powerful when
+it comes to tearing data apart.
+
+405
+00:19:16,230 --> 00:19:18,870
+
+406
+00:19:18,870 --> 00:19:21,440
+It's called the split.
+
+407
+00:19:21,440 --> 00:19:25,250
+So here is a string
+with three words
+
+408
+00:19:25,250 --> 00:19:30,810
+and has blanks in between
+here and abc.split
+
+409
+00:19:30,810 --> 00:19:35,370
+says parse this string,
+look for the blanks,
+
+410
+00:19:35,370 --> 00:19:37,580
+break the string into
+pieces, and give me
+
+411
+00:19:37,580 --> 00:19:43,790
+back a list with one item for
+each of the words in the list
+
+412
+00:19:43,790 --> 00:19:47,220
+as defined by the spaces, OK?
+
+413
+00:19:47,220 --> 00:19:51,630
+So it breaks it
+into three pieces
+
+414
+00:19:51,630 --> 00:19:55,830
+and gives us that back in the
+list, it's very powerful, OK?
+
+415
+00:19:55,830 --> 00:19:58,330
+So we're going to split
+it and we get back a list.
+
+416
+00:19:58,330 --> 00:20:01,990
+There are three words
+and the first word,
+
+417
+00:20:01,990 --> 00:20:04,190
+stuff sub 0 is With.
+
+418
+00:20:04,190 --> 00:20:06,310
+So there's a lot of
+parsing going on here.
+
+419
+00:20:06,310 --> 00:20:08,920
+We could do this with For
+loops and a lot of other things
+
+420
+00:20:08,920 --> 00:20:11,280
+but there would be a lot
+of work in the split.
+
+421
+00:20:11,280 --> 00:20:13,570
+Given that this is a
+really common task,
+
+422
+00:20:13,570 --> 00:20:17,950
+it's really great that this has
+been put into Python for us,
+
+423
+00:20:17,950 --> 00:20:19,340
+OK?
+
+424
+00:20:19,340 --> 00:20:21,030
+So split breaks a
+string into parts
+
+425
+00:20:21,030 --> 00:20:24,720
+and produce a list of strings,
+we think of these as words
+
+426
+00:20:24,720 --> 00:20:26,400
+and we can access
+a particular word
+
+427
+00:20:26,400 --> 00:20:28,120
+or we can loop
+through all the words.
+
+428
+00:20:28,120 --> 00:20:29,830
+So here we have
+stuff again and now
+
+429
+00:20:29,830 --> 00:20:34,300
+we have a For loop that's going
+to go through each of the three
+
+430
+00:20:34,300 --> 00:20:36,410
+words and then it's
+going to run three times.
+
+431
+00:20:36,410 --> 00:20:38,470
+Now chances are good we're going
+to do something different other
+
+432
+00:20:38,470 --> 00:20:39,850
+than just print
+them out, but you
+
+433
+00:20:39,850 --> 00:20:43,442
+see how you quickly can take
+us split followed by a For
+
+434
+00:20:43,442 --> 00:20:45,650
+and then write a loop that's
+going to go through each
+
+435
+00:20:45,650 --> 00:20:48,390
+of the words without working
+too hard to find the spaces,
+
+436
+00:20:48,390 --> 00:20:53,460
+you let Python do all the hard
+work of finding the spaces, OK?
+
+437
+00:20:53,460 --> 00:20:58,170
+So let's take a look
+at a couple of samples,
+
+438
+00:20:58,170 --> 00:21:01,540
+just a couple things to teach
+you a little more about split.
+
+439
+00:21:01,540 --> 00:21:08,490
+Split looks at many spaces as
+equal to one space so if you
+
+440
+00:21:08,490 --> 00:21:11,330
+split a lot of spaces,
+it's still just
+
+441
+00:21:11,330 --> 00:21:15,770
+throws away all those spaces
+and gives us four words.
+
+442
+00:21:15,770 --> 00:21:20,140
+One, two, three, four and
+throws away all the spaces
+
+443
+00:21:20,140 --> 00:21:23,130
+because it assumes that's what
+we want done, so that's nice.
+
+444
+00:21:23,130 --> 00:21:28,710
+You can also have split
+on some other characters.
+
+445
+00:21:28,710 --> 00:21:30,670
+Sometimes you'll be
+getting data and they'll
+
+446
+00:21:30,670 --> 00:21:32,920
+have used a
+semicolon, or a comma,
+
+447
+00:21:32,920 --> 00:21:36,810
+or a colon, or a tab character,
+who knows what they've used,
+
+448
+00:21:36,810 --> 00:21:39,440
+and your job is to
+dig that data out.
+
+449
+00:21:39,440 --> 00:21:42,890
+So you can split based
+on a different character.
+
+450
+00:21:42,890 --> 00:21:45,580
+Here, if we're
+splitting normally,
+
+451
+00:21:45,580 --> 00:21:48,740
+this is a normal split, it's
+not going to see the semicolons,
+
+452
+00:21:48,740 --> 00:21:50,420
+it's looking for
+a space and so all
+
+453
+00:21:50,420 --> 00:21:55,250
+we get back is one item in
+the string with a semicolon.
+
+454
+00:21:55,250 --> 00:22:00,220
+But if we switch and we pass
+semicolon in as a parameter
+
+455
+00:22:00,220 --> 00:22:04,140
+to split, then it will know to
+split it based on semicolons
+
+456
+00:22:04,140 --> 00:22:07,580
+and gives us first,
+second and third back.
+
+457
+00:22:07,580 --> 00:22:08,090
+OK?
+
+458
+00:22:08,090 --> 00:22:10,030
+And then it gives
+us three words.
+
+459
+00:22:10,030 --> 00:22:13,030
+So you can split
+either on spaces
+
+460
+00:22:13,030 --> 00:22:20,340
+or you can split on a character
+other than a space, OK?
+
+461
+00:22:20,340 --> 00:22:23,630
+So let's take a look at
+how we might turn this
+
+462
+00:22:23,630 --> 00:22:25,270
+into some of our
+common assignments
+
+463
+00:22:25,270 --> 00:22:26,910
+that we have this
+chapter, we're going
+
+464
+00:22:26,910 --> 00:22:29,210
+to read some of
+the mailbox data.
+
+465
+00:22:29,210 --> 00:22:33,280
+
+466
+00:22:33,280 --> 00:22:36,820
+So here we go with
+a little program.
+
+467
+00:22:36,820 --> 00:22:39,540
+First three lines,
+we write these a lot.
+
+468
+00:22:39,540 --> 00:22:42,460
+Open the file, write
+a For loop to loop
+
+469
+00:22:42,460 --> 00:22:45,120
+through each line in
+the file, then we're
+
+470
+00:22:45,120 --> 00:22:48,120
+going to strip off the white
+space at the end the line.
+
+471
+00:22:48,120 --> 00:22:50,970
+One, two, three, do
+those all the time.
+
+472
+00:22:50,970 --> 00:22:54,645
+And we're looking for lines,
+if you look at the whole file,
+
+473
+00:22:54,645 --> 00:22:56,020
+we're looking at
+lines that start
+
+474
+00:22:56,020 --> 00:22:58,160
+with from followed by a space.
+
+475
+00:22:58,160 --> 00:23:00,450
+So if the line does
+not start with from
+
+476
+00:23:00,450 --> 00:23:03,720
+followed by a space, that's a
+space right there, continue.
+
+477
+00:23:03,720 --> 00:23:08,480
+So that's a way to skip all the
+lines the don't look like this.
+
+478
+00:23:08,480 --> 00:23:10,310
+There are thousands
+of lines in this file
+
+479
+00:23:10,310 --> 00:23:13,260
+and just a few that
+look like this, OK?
+
+480
+00:23:13,260 --> 00:23:16,680
+And so we're going
+to look and we're
+
+481
+00:23:16,680 --> 00:23:21,750
+going to try to find what
+day of the week this thing
+
+482
+00:23:21,750 --> 00:23:24,010
+happened on.
+
+483
+00:23:24,010 --> 00:23:26,300
+So we're throwing
+away all the lines
+
+484
+00:23:26,300 --> 00:23:27,720
+with this little bit of code.
+
+485
+00:23:27,720 --> 00:23:30,260
+Then what we do is we
+take the line, which
+
+486
+00:23:30,260 --> 00:23:34,080
+is all of this text,
+and then we split it.
+
+487
+00:23:34,080 --> 00:23:38,330
+And we know that the day
+of the week is word sub 2.
+
+488
+00:23:38,330 --> 00:23:41,610
+So this is word sub
+0, this is word sub 1,
+
+489
+00:23:41,610 --> 00:23:43,080
+and this is word sub 2.
+
+490
+00:23:43,080 --> 00:23:46,490
+So this is word sub
+0, sub 1, and sub 2.
+
+491
+00:23:46,490 --> 00:23:50,550
+And so all we have to do
+is print out the sub 2
+
+492
+00:23:50,550 --> 00:23:53,730
+and we throw away all the
+lines except the from lines,
+
+493
+00:23:53,730 --> 00:23:59,150
+we split them and take the
+third word or word sub 2,
+
+494
+00:23:59,150 --> 00:24:00,640
+and we can quickly
+create something
+
+495
+00:24:00,640 --> 00:24:06,030
+that's extracting the
+data week out of these.
+
+496
+00:24:06,030 --> 00:24:07,360
+OK?
+
+497
+00:24:07,360 --> 00:24:12,040
+So it's quick because
+split does the tricky work.
+
+498
+00:24:12,040 --> 00:24:14,790
+If you go back to
+the strings chapter,
+
+499
+00:24:14,790 --> 00:24:18,030
+you saw that we did a lot of
+work to get this to happen.
+
+500
+00:24:18,030 --> 00:24:21,090
+So here's even another
+tricky pattern.
+
+501
+00:24:21,090 --> 00:24:25,640
+So let's say we want to do what
+we did at the end of chapter
+
+502
+00:24:25,640 --> 00:24:29,660
+six, the string chapter, let's
+say we wanted to get back
+
+503
+00:24:29,660 --> 00:24:33,360
+this little bit of data, OK?
+
+504
+00:24:33,360 --> 00:24:36,190
+So we can look at
+this and say, OK,
+
+505
+00:24:36,190 --> 00:24:41,500
+let's split this-- and this will
+be 0, 1, and 2, and 3, and 4,
+
+506
+00:24:41,500 --> 00:24:42,460
+5, and 6.
+
+507
+00:24:42,460 --> 00:24:44,700
+We're splitting it
+based on spaces then
+
+508
+00:24:44,700 --> 00:24:51,230
+that email address is
+words sub 1, right?
+
+509
+00:24:51,230 --> 00:24:54,330
+So that email address
+is this little bit
+
+510
+00:24:54,330 --> 00:24:57,490
+of stuff because it's in
+between spaces, right?
+
+511
+00:24:57,490 --> 00:25:03,540
+So that's what we pull out, the
+email address is words sub 1,
+
+512
+00:25:03,540 --> 00:25:04,700
+and we've got that.
+
+513
+00:25:04,700 --> 00:25:07,500
+So that's sitting in this
+email address variable.
+
+514
+00:25:07,500 --> 00:25:10,540
+Then all we want, we don't
+really want the whole thing,
+
+515
+00:25:10,540 --> 00:25:12,770
+we just want the
+part after the @,
+
+516
+00:25:12,770 --> 00:25:17,510
+and we could do a
+look up of the @,
+
+517
+00:25:17,510 --> 00:25:29,070
+but you can also do
+a second split, OK?
+
+518
+00:25:29,070 --> 00:25:30,830
+So we're taking
+this variable here,
+
+519
+00:25:30,830 --> 00:25:33,950
+email, which is merely this
+little part right here,
+
+520
+00:25:33,950 --> 00:25:37,020
+and we are splitting it
+again except this time
+
+521
+00:25:37,020 --> 00:25:38,620
+we're splitting it
+based on an @ which
+
+522
+00:25:38,620 --> 00:25:40,890
+means it's going to
+bust it right here
+
+523
+00:25:40,890 --> 00:25:44,010
+and find us two pieces.
+
+524
+00:25:44,010 --> 00:25:50,290
+So pieces now is a list where
+the sub 0 item is the person's
+
+525
+00:25:50,290 --> 00:25:55,120
+name and the sub 1 item is the
+host that their mail address is
+
+526
+00:25:55,120 --> 00:25:57,710
+held from, OK?
+
+527
+00:25:57,710 --> 00:26:00,250
+And so then, all
+we need to know is
+
+528
+00:26:00,250 --> 00:26:08,000
+pieces sub 1 and pieces sub
+1 is this guy right here.
+
+529
+00:26:08,000 --> 00:26:10,780
+So that's pieces sub 1
+and so we pulled it out.
+
+530
+00:26:10,780 --> 00:26:13,300
+So if you go back to
+how we did it before,
+
+531
+00:26:13,300 --> 00:26:15,510
+we were doing searching
+and we were searching some
+
+532
+00:26:15,510 --> 00:26:17,870
+and then we're
+taking slices-- this
+
+533
+00:26:17,870 --> 00:26:19,410
+is a little more elegant, OK?
+
+534
+00:26:19,410 --> 00:26:21,550
+Because really, we split
+it and then we split it,
+
+535
+00:26:21,550 --> 00:26:23,300
+and we knew what piece
+we were looking at.
+
+536
+00:26:23,300 --> 00:26:26,040
+So this is what I call
+the double split pattern,
+
+537
+00:26:26,040 --> 00:26:28,470
+where you split a
+string into a list,
+
+538
+00:26:28,470 --> 00:26:29,970
+then you take the
+thing out and then
+
+539
+00:26:29,970 --> 00:26:33,060
+you split it again, depending
+on what data you're looking for.
+
+540
+00:26:33,060 --> 00:26:36,780
+This is just a technique,
+it's not the only technique.
+
+541
+00:26:36,780 --> 00:26:41,970
+OK so that's lists, we
+talked about the concept
+
+542
+00:26:41,970 --> 00:26:44,530
+of a collection where lists
+have multiple things in it,
+
+543
+00:26:44,530 --> 00:26:48,020
+indefinite loops, again
+we've seen these things,
+
+544
+00:26:48,020 --> 00:26:51,070
+it looks a lot like
+strings except the elements
+
+545
+00:26:51,070 --> 00:26:53,110
+are more powerful and
+they're more mutable.
+
+546
+00:26:53,110 --> 00:26:54,820
+We still use the
+bracket operator
+
+547
+00:26:54,820 --> 00:26:58,680
+and we re-did the
+max, min and sum
+
+548
+00:26:58,680 --> 00:27:02,350
+except we did it in one line,
+rather than a whole loop.
+
+549
+00:27:02,350 --> 00:27:04,280
+And something we're
+going to play with a lot,
+
+550
+00:27:04,280 --> 00:27:08,020
+is using split to parse strings,
+the single split and then
+
+551
+00:27:08,020 --> 00:27:11,090
+the double split is a natural
+extension of the single split.
+
+552
+00:27:11,090 --> 00:27:13,500
+So, see you in the next
+lecture, looking forward
+
+553
+00:27:13,500 --> 00:27:15,710
+to talking about dictionaries.
+

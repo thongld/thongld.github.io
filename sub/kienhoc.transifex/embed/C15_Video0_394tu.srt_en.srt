@@ -1,0 +1,233 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/O5S84d08kfQ
+
+1
+00:00:00,000 --> 00:00:00,450
+
+2
+00:00:00,450 --> 00:00:02,241
+DR. JONATHAN VALVANO:
+Professor Yerraballi,
+
+3
+00:00:02,241 --> 00:00:03,690
+what are we going to learn today?
+
+4
+00:00:03,690 --> 00:00:05,840
+DR. RAMESH YERRABALLI:.Today we will
+take stock of everything we have
+
+5
+00:00:05,840 --> 00:00:07,180
+learned in this class.
+
+6
+00:00:07,180 --> 00:00:11,560
+Put them all together to work
+on a single, final project.
+
+7
+00:00:11,560 --> 00:00:13,870
+DR. JONATHAN VALVANO:
+That sounds exciting.
+
+8
+00:00:13,870 --> 00:00:18,430
+But if we include all things in one
+project, it'll be very complicated.
+
+9
+00:00:18,430 --> 00:00:21,299
+To make it worthwhile,
+can we do something fun?
+
+10
+00:00:21,299 --> 00:00:23,840
+DR. RAMESH YERRABALLI:.In fact,
+that's exactly what it'll be,
+
+11
+00:00:23,840 --> 00:00:26,460
+as much fun as you want to make it.
+
+12
+00:00:26,460 --> 00:00:29,130
+After all, it'll be a game that
+you'll design from scratch.
+
+13
+00:00:29,130 --> 00:00:33,790
+We will provide the basic idea, which
+would be based on an '80s style arcade
+
+14
+00:00:33,790 --> 00:00:35,650
+game called Space Invaders.
+
+15
+00:00:35,650 --> 00:00:38,939
+You stretch your imagination and
+make it as much fun as possible.
+
+16
+00:00:38,939 --> 00:00:39,980
+DR. JONATHAN VALVANO: Ah.
+
+17
+00:00:39,980 --> 00:00:43,220
+So from a hardware standpoint,
+we could make a game controller
+
+18
+00:00:43,220 --> 00:00:46,030
+using the switches, the
+LED, and the slide pot.
+
+19
+00:00:46,030 --> 00:00:48,370
+And to make sound, we'll use the DAC.
+
+20
+00:00:48,370 --> 00:00:50,574
+And then we'll add graphics on an LCD.
+
+21
+00:00:50,574 --> 00:00:51,740
+DR. RAMESH YERRABALLI:.Yeah.
+
+22
+00:00:51,740 --> 00:00:56,580
+And on the software front, you'll
+program timers, interrupts, the ADC,
+
+23
+00:00:56,580 --> 00:00:59,590
+and write device drivers
+for the DAC and the LCD.
+
+24
+00:00:59,590 --> 00:01:03,650
+We'll put together all of these in
+a game engine that we will provide.
+
+25
+00:01:03,650 --> 00:01:04,800
+DR. JONATHAN VALVANO: Ah.
+
+26
+00:01:04,800 --> 00:01:07,700
+So this is quite a complex undertaking.
+
+27
+00:01:07,700 --> 00:01:10,865
+Will the students have to
+write everything from scratch?
+
+28
+00:01:10,865 --> 00:01:12,240
+DR. RAMESH YERRABALLI:.Not quite.
+
+29
+00:01:12,240 --> 00:01:14,890
+We will provide a starter
+project for this lab,
+
+30
+00:01:14,890 --> 00:01:19,460
+and the starter project will have the
+support routines for the LCD graphics.
+
+31
+00:01:19,460 --> 00:01:21,650
+The rest of the stuff will
+come from your own work
+
+32
+00:01:21,650 --> 00:01:23,870
+that you finished in the previous labs.
+
+33
+00:01:23,870 --> 00:01:25,555
+DR. JONATHAN VALVANO: Can we
+see what one might look like?
+
+34
+00:01:25,555 --> 00:01:25,840
+DR. RAMESH YERRABALLI:.Yeah.
+
+35
+00:01:25,840 --> 00:01:27,410
+Let's take a look.
+
+36
+00:01:27,410 --> 00:01:31,270
+So here you see the project
+implemented in its entirety.
+
+37
+00:01:31,270 --> 00:01:33,460
+John is playing the game.
+
+38
+00:01:33,460 --> 00:01:38,075
+The controller involves
+two buttons, two LEDs,
+
+39
+00:01:38,075 --> 00:01:41,870
+a slide pot which acts like a joystick.
+
+40
+00:01:41,870 --> 00:01:45,440
+The audio is implemented using a DAC.
+
+41
+00:01:45,440 --> 00:01:48,030
+And audio jack is connected
+to a speaker here,
+
+42
+00:01:48,030 --> 00:01:51,340
+but you could connect
+your headphones to it.
+
+43
+00:01:51,340 --> 00:01:55,040
+You see the display, which is
+an optional display-- which
+
+44
+00:01:55,040 --> 00:01:57,834
+is a black and white display
+that you can purchase.
+
+45
+00:01:57,834 --> 00:02:00,000
+DR. JONATHAN VALVANO: If
+you don't have the display,
+
+46
+00:02:00,000 --> 00:02:03,845
+we'll have a way for you to
+send the signals on to your PC
+
+47
+00:02:03,845 --> 00:02:07,193
+and display them on that screen.
+
+48
+00:02:07,193 --> 00:02:08,516
+Oh.
+
+49
+00:02:08,516 --> 00:02:09,400
+Dead.
+
+50
+00:02:09,400 --> 00:02:10,785
+DR. RAMESH YERRABALLI:.Dead.
+
+51
+00:02:10,785 --> 00:02:11,284

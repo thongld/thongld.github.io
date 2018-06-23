@@ -1,0 +1,321 @@
+0
+00:00:00,000 --> 00:00:00,870
+tangoclinhh_3/10/2017
+
+1
+00:00:00,870 --> 00:00:02,840
+Phần mở rộng tiếp theo đối với EOQ,
+
+2
+00:00:02,840 --> 00:00:06,340
+hay số lượng đặt hàng kinh tế, là lượng chiết khấu,
+
+3
+00:00:06,340 --> 00:00:09,420
+tương ứng với số lượng hàng mà bạn mua.
+
+4
+00:00:09,420 --> 00:00:11,600
+Giả định mà ta sẽ nới lỏng là
+
+5
+00:00:11,600 --> 00:00:14,770
+phần chiết khấu ở trên này.
+
+6
+00:00:14,770 --> 00:00:17,750
+Thay vì có chi phí mua hàng, hay chi phí cho mỗi sản phẩm, c,
+
+7
+00:00:17,750 --> 00:00:20,560
+là một con số cố định,
+
+8
+00:00:20,560 --> 00:00:24,620
+giờ nó sẽ là một hàm số của lượng hàng ta mua, Q.
+
+9
+00:00:24,620 --> 00:00:27,360
+Vì chi phí mua hàng là một hàm số của Q,
+
+10
+00:00:27,360 --> 00:00:29,460
+giờ nó là một quyết định có liên quan -
+
+11
+00:00:29,460 --> 00:00:33,170
+nó là một trong những biến số liên quan tới việc ta sẽ mua bao nhiêu.
+
+12
+00:00:33,170 --> 00:00:37,840
+Ta cần tính đến điều nay khi xác định EOQ.
+
+13
+00:00:37,840 --> 00:00:40,032
+Vậy hãy cùng xem 3 trường hợp phổ biến nhất.
+
+14
+00:00:40,032 --> 00:00:41,740
+Có nhiều cách để bạn được hưởng chiết khấu,
+
+15
+00:00:41,740 --> 00:00:43,830
+nhưng đây là ba cách phổ biến nhất.
+
+16
+00:00:43,830 --> 00:00:46,139
+Loại đầu tiên là Chiết khấu toàn bộ đơn vị.
+
+17
+00:00:46,139 --> 00:00:48,430
+Đây là khi bất kể mức chiết khấu nào bạn được hưởng
+
+18
+00:00:48,430 --> 00:00:52,470
+cũng đều áp dụng với tất cả các đơn vị hàng mà bạn mua,
+
+19
+00:00:52,470 --> 00:00:54,940
+miễn là bạn mua vượt một mức hàng nào đó.
+
+20
+00:00:54,940 --> 00:00:57,070
+Trục hoành này là
+
+21
+00:00:57,070 --> 00:00:59,860
+Q - lượng hàng bạn sẽ đặt,
+
+22
+00:00:59,860 --> 00:01:04,750
+c là chi phí trên một sản phẩm, và D là  nhu cầu hàng năm của bạn.
+
+23
+00:01:04,750 --> 00:01:08,620
+Tôi có Q1 và Q2 là các mốc.
+
+24
+00:01:08,620 --> 00:01:11,970
+Nếu bạn mua nhiều hơn Q1,
+
+25
+00:01:11,970 --> 00:01:15,650
+bạn sẽ nhận được mức giá thấp hơn cho mỗi sản phẩm.
+
+26
+00:01:15,650 --> 00:01:19,500
+Ở đây, c0 sẽ là mức giá thấp nhất,
+
+27
+00:01:19,500 --> 00:01:21,190
+hay nó sẽ là mức giá khởi điểm,
+
+28
+00:01:21,190 --> 00:01:24,520
+và c1 sẽ được áp dụng nếu tôi mua
+
+29
+00:01:24,520 --> 00:01:25,920
+vượt qua mức Q1.
+
+30
+00:01:25,920 --> 00:01:32,200
+Và mức giá thứ 2, c2 sẽ được áp dụng nếu tôi mua vượt mức Q2,
+
+31
+00:01:32,200 --> 00:01:34,720
+và bạn sẽ mong đợi rằng
+
+32
+00:01:34,720 --> 00:01:36,620
+c0 lớn hơn c1 lớn hơn c2.
+
+33
+00:01:36,620 --> 00:01:40,740
+Nói cách khác, bạn sẽ nhận được mức giá thấp hơn
+cho mỗi sản phẩm khi bạn mua nhiều hơn.
+
+34
+00:01:40,740 --> 00:01:41,950
+Điều này rất phổ biến.
+
+35
+00:01:41,950 --> 00:01:44,630
+Điều này phổ biến nhất trong bối cảnh công nghiệp,
+
+36
+00:01:44,630 --> 00:01:49,100
+khi các nhà cung cấp cố gắng khuyến khích bạn đặt hàng nhiều hơn,
+
+37
+00:01:49,100 --> 00:01:51,780
+như vậy nó sẽ giúp ích cho quy mô kinh tế của họ.
+
+38
+00:01:51,780 --> 00:01:54,870
+Loại tiếp theo bạn sẽ thấy rất nhiều trong bối cảnh bán lẻ,
+
+39
+00:01:54,870 --> 00:01:56,960
+được gọi là Chiết khấu gia tăng.
+
+40
+00:01:56,960 --> 00:01:59,860
+Đây là khi chiết khấu được áp dụng cho c,
+
+41
+00:01:59,860 --> 00:02:02,530
+chỉ với số lượng hàng
+
+42
+00:02:02,530 --> 00:02:03,120
+ được mua vượt mốc.
+
+43
+00:02:03,120 --> 00:02:07,250
+Ở đây tôi vẫn có 2 mốc, Q1 và Q2.
+
+44
+00:02:07,250 --> 00:02:13,520
+Nhưng nếu tôi mua 1 trừ Q1 thì
+
+45
+00:02:13,520 --> 00:02:17,690
+tôi sẽ trả với mức giá c0.
+
+46
+00:02:17,690 --> 00:02:19,740
+Tôi vẫn trả c0 cho
+
+47
+00:02:19,740 --> 00:02:22,380
+tất cả sản phẩm trong lượng Q1.
+
+48
+00:02:22,380 --> 00:02:26,100
+Trên mức đó, với mốc thứ 2,
+
+49
+00:02:26,100 --> 00:02:29,970
+tôi sẽ trả c1 như một chi phí biên.
+
+50
+00:02:29,970 --> 00:02:32,670
+Vậy nó chỉ áp dụng cho lượng hàng
+
+51
+00:02:32,670 --> 00:02:34,380
+nhiều hơn so với mốc.
+
+52
+00:02:34,380 --> 00:02:37,590
+Ví dụ khi bạn tới một cửa hàng
+
+53
+00:02:37,590 --> 00:02:40,540
+mua quần áo, có thể bạn sẽ "mua 2 tặng 1
+
+54
+00:02:40,540 --> 00:02:43,090
+(nhận thêm 1 cái) với nửa giá tiền".
+
+55
+00:02:43,090 --> 00:02:45,820
+Hay những tấm thẻ cafe "mua 11,
+
+56
+00:02:45,820 --> 00:02:47,430
+nhận cốc số 12 miễn phí".
+
+57
+00:02:47,430 --> 00:02:49,150
+Đó là loại Chiết khấu gia tăng.
+
+58
+00:02:49,150 --> 00:02:53,470
+Bạn gặp rất nhiều loại này trong các tình huống bán lẻ.
+
+59
+00:02:53,470 --> 00:02:55,440
+Loại cuối cùng mà ta sẽ nói tới
+
+60
+00:02:55,440 --> 00:02:57,470
+là Chiết khấu một lần mua,
+
+61
+00:02:57,470 --> 00:02:58,990
+loại này được áp dụng trong bối cảnh công nghiệp.
+
+62
+00:02:58,990 --> 00:03:01,620
+Nhà cung cấp hàng của bạn,
+
+63
+00:03:01,620 --> 00:03:03,990
+có thể họ đang cố gắng hoàn thành chỉ tiêu quý hoặc năm,
+
+64
+00:03:03,990 --> 00:03:06,650
+hay vì một lý do nào đó, họ cho bạn một mức chiết khấu rất cao.
+
+65
+00:03:06,650 --> 00:03:09,650
+Vậy nếu lượng hàng trong tay tôi trông như thế này,
+
+66
+00:03:09,650 --> 00:03:13,530
+đây chính là đường răng cưa mà ta vẫn nhắc đến,
+
+67
+00:03:13,530 --> 00:03:16,350
+đây là hàng trong kho của tôi.
+
+68
+00:03:16,350 --> 00:03:19,940
+Thay vì mua theo lượng bình thường, người bán sẽ nói rằng
+
+69
+00:03:19,940 --> 00:03:23,150
+anh biết không, nếu anh mua thêm một đống hàng nữa,
+
+70
+00:03:23,150 --> 00:03:25,320
+tôi sẽ cho anh một mức giá rất tốt.
+
+71
+00:03:25,320 --> 00:03:26,710
+Vậy là không có giới hạn về số lượng.
+
+72
+00:03:26,710 --> 00:03:28,870
+Đó là một lần mua,
+
+73
+00:03:28,870 --> 00:03:32,100
+và sau đó bạn trở lại với tần suất đặt hàng bình thường của mình.
+
+74
+00:03:32,100 --> 00:03:34,110
+Ta sẽ nói về cách xác định
+
+75
+00:03:34,110 --> 00:03:36,080
+khi nào thì nên mua một lần như thế này,
+
+76
+00:03:36,080 --> 00:03:37,362
+và bạn nên mua bao nhiêu.
+
+77
+00:03:37,362 --> 00:03:39,070
+Trên đây là 3 loại chiết khấu
+
+78
+00:03:39,070 --> 00:03:40,924
+mà ta sẽ thảo luận.
+
+79
+00:03:40,924 --> 00:03:41,424
+
+

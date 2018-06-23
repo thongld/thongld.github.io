@@ -1,0 +1,175 @@
+1
+00:00:01,810 --> 00:00:06,230
+zhangrain 31/08/2016
+https://youtu.be/Vbyr4f4rnE8
+Chào mọi người !
+Hoan nghênh tới bài học tiếp theo.
+
+2
+00:00:06,230 --> 00:00:12,690
+Đến nay, ta có thể thay đổi dữ liệu trên bảng tính
+sử dụng danh sách xổ xuống ở đây.
+
+3
+00:00:12,690 --> 00:00:18,660
+Ví dụ, ta có thể đổi 2016-12 thành 2016-07.
+
+4
+00:00:18,660 --> 00:00:26,060
+Và tất cả dữ liệu sẽ thay đổi.
+Trong những video trước ta đã biết cách sử dụng slicers.
+
+5
+00:00:26,060 --> 00:00:30,859
+Dù chưa cần ở thời điểm này, 
+
+6
+00:00:30,859 --> 00:00:36,110
+đây cũng là một công cụ nên biết.
+cách ta sử dụng slicer để thay đổi sự lựa chọn dữ liệu trên bảng tính. 
+
+7
+00:00:36,110 --> 00:00:44,270
+Một slicer thường được kết nối với PivotTable,
+
+8
+00:00:44,270 --> 00:00:48,220
+và có rất nhiều dữ liệu ở đây không xuất phát từ PivotTable.
+
+9
+00:00:48,220 --> 00:00:54,100
+Có một mẹo để kết nối slicer đến bảng tính.
+
+10
+00:00:54,100 --> 00:01:00,510
+Thử xem chúng ta sẽ làm như thế nào.
+Tôi sẽ đi vào slide đầu tiên ở đây.
+
+11
+00:01:00,510 --> 00:01:03,080
+'Sự phê chuẩn', bao gồm các mốc thời gian.
+
+12
+00:01:03,080 --> 00:01:13,270
+Tôi chèn một PivotTable.
+
+13
+00:01:13,270 --> 00:01:24,229
+Không.....Không phải cái này.
+Ta làm lại nhé.
+
+14
+00:01:24,229 --> 00:01:30,990
+Ta chèn một PivotTable. 
+Tôi sẽ đặt nó trên worksheet hiện tại.
+
+15
+00:01:30,990 --> 00:01:33,079
+Tôi thường không làm thao tác này, nên có click hơi nhanh.
+
+16
+00:01:33,079 --> 00:01:40,659
+Đặt ở đây.
+
+17
+00:01:40,659 --> 00:01:45,209
+Được rồi. Đây là một PivotTable dạng đơn giản.
+
+18
+00:01:45,209 --> 00:01:53,289
+Tôi sẽ đặt các mốc thời gian vào các hàng.
+Nhấn chuột phải ở đây, 
+
+19
+00:01:53,289 --> 00:02:03,029
+trên trường thời điểm, chọn 'add a slicer'.
+Bây giờ ta đã có một slicer.
+
+20
+00:02:03,029 --> 00:02:08,819
+Nếu tôi chọn một giá trị nào đó, nó sẽ kết nối với PivotTable.
+
+21
+00:02:08,819 --> 00:02:17,610
+Trong trường hợp này, tôi chỉ quan tâm tới mốc thời gian đang được chọn.
+
+22
+00:02:17,610 --> 00:02:20,430
+Mốc thời gian sẽ luôn hiển thị ở vị trí này trong PivotTable.
+
+23
+00:02:20,430 --> 00:02:24,250
+Đặt tên cho ô này.
+Là 'pivotPeriod'.
+
+24
+00:02:24,250 --> 00:02:37,150
+Đây rồi.
+
+25
+00:02:37,150 --> 00:02:44,040
+Tôi sẽ copy slicer, và di chuyển đến bảng tính. 
+
+26
+00:02:44,040 --> 00:02:49,950
+Copy slicer. 
+Đầu tiên tôi đổi format của slicer một chút.
+
+27
+00:02:49,950 --> 00:02:58,260
+Đổi thành hai cột.
+
+28
+00:02:58,260 --> 00:03:06,430
+Và đây nữa. 
+Cho dài ra một chút.
+
+29
+00:03:06,430 --> 00:03:12,290
+Vậy thì hơi dài. 
+Ổn rồi.
+
+30
+00:03:12,290 --> 00:03:21,629
+Sửa thêm một chút
+Được rồi
+
+31
+00:03:21,629 --> 00:03:29,890
+Ở đây ta có thể nói rằng: 'Giá trị của trường này 
+xuất phát từ trường pivotPeriod,
+
+32
+00:03:29,890 --> 00:03:34,049
+mà ta vừa mới thiết lập.'
+Kết nối với PivotTable,
+
+33
+00:03:34,049 --> 00:03:41,000
+mà PivotTable liên kết với slicer.
+Bây giờ ta có thể chọn bất kì mốc thời gian nào cho slicer,
+
+34
+00:03:41,000 --> 00:03:46,549
+và bảng tính cũng sẽ đổi theo. 
+
+35
+00:03:46,549 --> 00:03:51,670
+Đây là một cách dễ dàng và đòi hỏi ít công nghệ để kết nối slicer đến một ô bất kỳ nào đó
+trong Excel.
+
+36
+00:03:51,670 --> 00:03:57,749
+Vừa rồi là video bonus đầu tiên.
+Trong video tiếp theo, ta vẫn còn một rắc rối nhỏ.
+
+37
+00:03:57,749 --> 00:04:05,840
+Ta sẽ đi sâu hơn nữa, chỉ hai dòng,
+vào VBA để đạt được mục tiêu.
+
+38
+00:04:05,840 --> 00:04:10,069
+Tôi hy vọng các bạn cảm thấy thú vị.
+Hẹn gặp lại trong video bonus tiếp theo.
+

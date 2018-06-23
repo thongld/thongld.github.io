@@ -1,0 +1,416 @@
+0
+00:00:04,080 --> 00:00:08,460
+Trong bài giảng này, chúng tôi sẽ giới thiệu một ý tưởng mà chúng tôi đã và đang phát triển 
+
+1
+00:00:08,460 --> 00:00:13,620
+trong suốt 10 bài giảng qua. Ngay từ đầu, chúng tôi đã hứa với mọi người rằng 
+
+2
+00:00:13,620 --> 00:00:18,840
+chúng tôi sẽ cung cấp cho họ công cụ để có thể thay đổi thế giới. Ý tưởng mà chúng ta sẽ bàn bạc
+
+3
+00:00:18,840 --> 00:00:24,460
+hôm nay không thể giới thiệu ngay từ ngày đầu tiên
+
+4
+00:00:24,460 --> 00:00:31,460
+mà trước hết ta cần đặt nền móng. Tôi chắc chắn rằng đó là ý tưởng mạnh mẽ nhất mà chúng ta có thể đưa ra,
+
+5
+00:00:31,699 --> 00:00:34,489
+nhưng trước tiên ta cần phải đính chính một vài lời đồn đoán.
+
+6
+00:00:34,489 --> 00:00:38,549
+Chắc chắn rồi. Ta sẽ bắt đầu với một số tình huống cần đưa ra dự đoán.
+
+7
+00:00:38,549 --> 00:00:42,970
+Trong một cuộc phỏng vấn xin việc, anh cần phải dự đoán liệu người đó
+
+8
+00:00:42,970 --> 00:00:49,299
+có thể hiện tốt hay không. Bạn muốn biết liệu bạn có nên hẹn hò với ai đó không.
+
+9
+00:00:49,299 --> 00:00:54,580
+Bạn cố gắng dự đoán xem liệu mọi người có mua sản phẩm mà bạn đang phát triển hay không, 
+
+10
+00:00:54,580 --> 00:01:00,299
+liệu có nên tin tưởng kể cho ai đó một bí mật hay không; hay những việc quan trọng hơn 
+
+11
+00:01:00,299 --> 00:01:03,960
+như dự đoán xem liệu một tên tội phạm có tái phạm hay không.
+
+12
+00:01:03,960 --> 00:01:09,650
+Khi anh hỏi mọi người: "Bạn cần những thông tin gì để đưa ra quyết định?
+
+13
+00:01:09,650 --> 00:01:14,850
+Theo bạn, điều gì sẽ giúp bạn có khả năng đưa ra phán đoán chính xác?";
+
+14
+00:01:14,850 --> 00:01:24,700
+hầu hết sẽ hỏi những thông tin về tính cách hay thông tin cá nhân như: "Cô ấy có đáng tin không?", "Cô ấy được nuôi dạy ra sao?", v..v.
+
+15
+00:01:24,700 --> 00:01:28,670
+Janice hoạt ngôn, hào phóng, còn Tom khá thoải mái.
+
+16
+00:01:28,670 --> 00:01:34,250
+Đúng vậy, chính là những tính cách kiểu ấy. Thực ra ở đầu tập này chúng tôi đã
+
+17
+00:01:34,250 --> 00:01:38,920
+đưa ra cho học viên một tình huống: "Một người đang đi bộ giữa hai tòa nhà thì bắt gặp
+
+18
+00:01:38,920 --> 00:01:43,659
+một người đàn ông ăn mặc xoàng xĩnh ngã khuỵu trước cửa, đầu chúc xuống, mắt nhắm nghiền,
+
+19
+00:01:43,659 --> 00:01:49,280
+miệng thì ho và rên rỉ. Hãy nêu một thông tin mà bạn cần để dự đoán xem
+
+20
+00:01:49,280 --> 00:01:51,760
+liệu người đó có dừng lại để giúp người đàn ông kia không."
+
+21
+00:01:51,760 --> 00:01:55,659
+Lát nữa tôi sẽ nói với anh câu trả lời mà các học viên học trực tuyến đưa ra cho câu hỏi này, 
+
+22
+00:01:55,659 --> 00:02:01,840
+nhưng trước đó ta cũng đã hỏi các học viên tại đây. Họ cũng có xu hướng liệt kê câu hỏi về đặc điểm tính cách
+
+23
+00:02:01,840 --> 00:02:05,840
+và thông tin cá nhân. Họ muốn biết liệu người đó là nam hay nữ,
+
+24
+00:02:05,840 --> 00:02:13,400
+làm nghề gì, hoàn cảnh xuất thân ra sao, liệu người đó có tôn giáo hay không.
+
+25
+00:02:13,450 --> 00:02:18,450
+Đúng vậy. Ví dụ tiếp theo sẽ quen thuộc hơn. Thực ra, đây là một dụ ngôn 
+
+26
+00:02:18,450 --> 00:02:24,530
+trích ra từ Kinh thánh do chúa Giê-xu kể lại. Chuyện là có một người đàn ông kiệt sức nằm bên vệ đường.
+
+27
+00:02:24,530 --> 00:02:30,920
+Ông ta bị một toán cướp đánh đập. Mọi người đi ngang qua đường
+
+28
+00:02:30,920 --> 00:02:37,920
+và nhìn thấy người đàn ông nằm kiệt sức đó. Đầu tiên là một linh mục, ông này cứ thế đi ngang qua người đàn ông.
+
+29
+00:02:38,470 --> 00:02:44,420
+Tiếp đó là một vị tư tế phục vụ trong đền thờ, ông này cũng đi ngang qua người đàn ông.
+
+30
+00:02:44,420 --> 00:02:50,380
+Cuối cùng, có một người Samaria (người chuyên làm phúc) tới. Người này nhìn thấy người đàn ông liền ra tay giúp đỡ,
+
+31
+00:02:50,380 --> 00:02:54,130
+đưa ông ta lên ngựa vào một nhà trọ và chăm sóc ông ta.
+
+32
+00:02:54,130 --> 00:02:54,709
+Thế nên dụ ngôn ấy mới có tên Người Samaria Nhân lành.
+
+33
+00:02:54,709 --> 00:02:59,090
+Đúng vậy. Chắc hẳn anh đã nghĩ người giúp người đàn ông kia phải là thầy tư tế.
+
+34
+00:02:59,090 --> 00:03:01,110
+Hầu hết mọi người đều nghĩ như vậy vì ông ấy 
+
+35
+00:03:01,110 --> 00:03:06,060
+là một người rất ngoan đạo hay gì đó, nhưng mọi chuyện không như vậy.
+
+36
+00:03:06,060 --> 00:03:12,170
+Thực ra, có 2 nhà nghiên cứu ở Đại học Princeton đã đưa dụ ngôn này vào thực tế ngày nay
+
+37
+00:03:12,170 --> 00:03:18,489
+để xem câu chuyện về Người Samaria nhân hậu có còn đúng với hiện tại không.
+
+38
+00:03:18,489 --> 00:03:25,489
+Họ đã thiết kế thí nghiệm với sự tham gia của một số sinh viên theo học trường dòng thần học tại Princeton,
+
+39
+00:03:25,599 --> 00:03:30,129
+trong đó sinh viên phải ngồi điền một loạt bảng câu hỏi trong một văn phòng trước khi thực sự tiến hành thí nghiệm.
+
+40
+00:03:30,129 --> 00:03:35,200
+Theo đó, họ sẽ thấy câu chuyện về người Samaria nhân hậu có còn đúng với ngày nay hay không.
+
+41
+00:03:35,200 --> 00:03:42,200
+Vâng. Người tiến hành thí nghiệm là Darley và Batson. Sau khi người tham gia hoàn thành bảng câu hỏi,
+
+42
+00:03:42,500 --> 00:03:47,370
+họ sẽ di chuyển sang một căn phòng khác để thuyết trình về Người Samaria nhân hậu.
+
+43
+00:03:47,370 --> 00:03:54,370
+Trên đường đến hội trường, họ để ý thấy một người đàn ông cúi gập người, mắt nhắm nghiền. 
+
+44
+00:03:54,520 --> 00:04:00,849
+Ông ta đang ho và thổi phì phì. Câu hỏi đặt ra là liệu họ có dừng lại để giúp người đàn ông?
+
+45
+00:04:01,300 --> 00:04:08,300
+Hóa ra việc ngoan đạo hay không không đóng vai trò gì trong việc dự đoán xem
+
+46
+00:04:08,920 --> 00:04:14,860
+liệu bọn họ có dừng lại để giúp đỡ người đàn ông mà là
+
+47
+00:04:14,860 --> 00:04:17,280
+liệu họ có đang vội không.
+
+48
+00:04:17,279 --> 00:04:21,689
+Ngay trước khi các sinh viên rời khỏi phòng, những người làm nghiên cứu đã nói với một nhóm rằng:
+
+49
+00:04:21,689 --> 00:04:25,949
+"Tốt hơn là các bạn nên khẩn trương lên. Các bạn muộn rồi đấy. Các bạn còn phải thuyết trình nữa."
+
+50
+00:04:25,949 --> 00:04:30,089
+Còn với một nhóm sinh viên khác thì họ nói rằng: "Các bạn còn dư dả thời gian mà. Đừng lo lắng. Cứ từ từ mà làm."
+
+51
+00:04:30,089 --> 00:04:37,089
+Trong số những sinh viên đang vội, chỉ có 10% dừng lại để giúp người đàn ông kia.
+
+52
+00:04:38,099 --> 00:04:44,069
+Còn với nhóm không gấp gáp và dư dả thời gian thì có 66% trong số đó
+
+53
+00:04:44,069 --> 00:04:46,779
+đã dừng lại giúp người đàn ông.
+
+54
+00:04:46,779 --> 00:04:48,219
+Tôi nghĩ là 63%.
+
+55
+00:04:48,219 --> 00:04:49,159
+Vâng, là 63%.
+
+56
+00:04:49,159 --> 00:04:54,689
+Đúng vậy. Anh nói hoàn toàn chính xác. Tác động quả là khủng khiếp phải không?
+
+57
+00:04:54,689 --> 00:04:59,300
+Sự khác biệt giữa 2 nhóm lên tới 53%. Con số này không thể lớn hơn được nữa.
+
+58
+00:04:59,300 --> 00:05:04,249
+Nhân tố thúc đẩy, điều thực sự quyết định
+
+59
+00:05:04,249 --> 00:05:08,809
+việc họ sẽ giúp người đàn ông đó chính là họ có đang vội hay không.
+
+60
+00:05:08,809 --> 00:05:14,300
+Đầu tập này chúng tôi cũng đã đưa ra một ví dụ khác. Chúng tôi đã yêu cầu mọi người đánh giá mức độ trung thực.
+
+61
+00:05:14,300 --> 00:05:22,000
+Đây là một thí nghiệm của Hartshorne và May từ năm 1928 thì phải.
+
+62
+00:05:22,000 --> 00:05:29,020
+Trong thí nghiệm này, ta đã yêu cầu mọi người
+
+63
+00:05:29,800 --> 00:05:35,629
+tưởng tượng ra rằng họ đang quan sát một nhóm học sinh tiểu học và trung học.
+
+64
+00:05:35,629 --> 00:05:42,629
+Họ đang cố đánh giá độ trung thực của những học sinh này thông qua một loạt các tình huống khác nhau.
+
+65
+00:05:44,490 --> 00:05:48,819
+Thứ nhất là về môn điền kinh, học sinh phải báo lại số vòng mà họ đã chạy được,
+
+66
+00:05:48,819 --> 00:05:53,150
+nhưng chỉ có bản thân họ mới biết thực ra mình đã chạy được bao nhiêu vòng.
+
+67
+00:05:53,150 --> 00:05:57,729
+Thứ hai là liệu bọn họ có nhìn lén các câu trả lời hoặc ăn gian khi giải đố hay không.
+
+68
+00:05:57,729 --> 00:06:02,770
+Ta đã hỏi mọi người liệu 2 việc báo cáo thành tích điền kinh
+
+69
+00:06:02,770 --> 00:06:09,180
+và ăn gian khi giải đố có liên quan gì tới nhau không. Ta cũng tiến hành đếm các kết quả.
+
+70
+00:06:09,180 --> 00:06:14,009
+Và kết quả của học viên tại đây cũng như trong thí nghiệm thực tế là hầu hết đều cho rằng
+
+71
+00:06:14,009 --> 00:06:19,080
+hai việc này chắc chắn liên quan tới nhau. Thực ra, trong phạm vi 
+
+72
+00:06:19,080 --> 00:06:24,309
+từ 1 tới 100, họ cho rằng mối liên hệ giữa hai việc trên sẽ rơi vào khoảng 60.
+
+73
+00:06:24,309 --> 00:06:29,990
+Tôi ngờ rằng học viên của ta cũng cho ra kết quả như vậy. Nhưng hóa ra là không.
+
+74
+00:06:29,990 --> 00:06:35,559
+Hartshorne và May đã tiến hành thí nghiệm nguyên bản và chỉ ra rằng hai việc này không hề liên quan tới nhau.
+
+75
+00:06:35,559 --> 00:06:41,259
+Thực tế, mối liên hệ giữa việc học sinh gian lận trong hoàn cảnh này với hoàn cảnh khác
+
+76
+00:06:41,259 --> 00:06:48,259
+là khoảng 0.15. Nghĩa là 15 trong khoảng từ 0 đến 100. Mối liên hệ 
+
+77
+00:06:48,819 --> 00:06:51,479
+giữa hai thước đo gian lận là vô cùng nhỏ.
+
+78
+00:06:51,479 --> 00:06:58,479
+Để tôi diễn đạt lại cụ thể hơn cho dễ hiểu. Vậy việc người tham gia thí nghiệm nói dối rằng
+
+79
+00:06:59,249 --> 00:07:05,529
+họ đã chạy nhiều vòng quanh đường đua hơn so với thực tế 
+
+80
+00:07:05,529 --> 00:07:12,529
+và việc họ gian lận bằng cách nhìn trộm câu trả lời của người khác không có mối liên hệ chặt chẽ.
+
+81
+00:07:12,539 --> 00:07:18,849
+Chính thế. Người ta thường nghĩ rằng một khi đã gian lận thì cả đời sẽ gian lận. Họ cho rằng
+
+82
+00:07:18,849 --> 00:07:25,569
+bản chất trung thực của người nào sẽ toát lên từ chính con người đó,
+
+83
+00:07:25,569 --> 00:07:31,330
+nhưng thực chất thì chẳng có gì cả. Có vẻ yếu tố dự đoán được liệu ai đó có dối trá hay không phụ thuộc vào
+
+84
+00:07:31,330 --> 00:07:37,199
+cách hành xử của họ qua nhiều trường hợp cụ thể của cùng một tình huống, hơn là qua nhiều tình huống.
+
+85
+00:07:37,199 --> 00:07:39,339
+Điều này thực sự quan trọng.
+
+86
+00:07:39,339 --> 00:07:46,339
+Ta đã có cuộc trò chuyện với Lee Ross. Jennings, Amabile và Ross à đồng tác giả của một thí nghiệm
+
+87
+00:07:46,479 --> 00:07:53,479
+trong đó ông ấy là tác giả đứng cuối cùng. Họ đã nghiên cứu thước đo đánh giá những mối tương quan kiểu này.
+
+88
+00:07:54,949 --> 00:08:01,879
+Hệ số tương quan thường là 0.15, hoặc thậm chí nhỏ hơn 0.30, 
+
+89
+00:08:01,879 --> 00:08:08,879
+hệ số chỉ mức độ tương quan tối đa giữa các đặc điểm tính cách.
+
+90
+00:08:09,300 --> 00:08:15,740
+Anh không thể nhận ra mối liên hệ nào ngoài đời thực nếu hệ số chỉ là khoảng 0.5.
+
+91
+00:08:15,740 --> 00:08:21,639
+Nếu hệ số tương quan giữa những đặc điểm tính cách này là khoảng 0.15
+
+92
+00:08:21,639 --> 00:08:27,809
+thì dường như chỉ toàn là ngẫu nhiên. Không có mối tương quan thực sự nào đang diễn ra cả.
+
+93
+00:08:27,809 --> 00:08:35,800
+Đôi khi người ta sẽ gian lận trong hoàn cảnh này nhưng lại không làm thế trong hoàn cảnh khác, bạn không thể nào biết được.
+
+94
+00:08:35,870 --> 00:08:39,900
+Tôi cho rằng điều này thực sự quan trọng. Đây là bài học của phần 1
+
+95
+00:08:39,900 --> 00:08:46,450
+trong tập này: Ta thường cho rằng đặc điểm tính cách, cá tính, đạo đức  của ai đó là những thứ
+
+96
+00:08:46,450 --> 00:08:53,450
+toát lên từ chính con người họ, kiểu như họ là con người tử tế, trung thực hay hào phóng ra sao,
+
+97
+00:08:54,210 --> 00:08:59,220
+hướng ngoại hay hướng nội thế nào Ta cho rằng cách hành xử của họ rất dễ đoán,
+
+98
+00:08:59,220 --> 00:09:03,850
+và như anh nói, đây là kiểu thông tin ta muốn biết khi đánh giá người nào đó. Nhưng có vẻ như không phải vậy.
+
+99
+00:09:03,850 --> 00:09:09,530
+Điều này thực sự mang tính phản trực giác. Yếu tố có thể giúp ta dự đoán cách hành xử của ai đó
+
+100
+00:09:09,530 --> 00:09:14,430
+chính là hoàn cảnh, như trong ví dụ lúc nãy là liệu người đó có đang vội hay không.
+
+101
+00:09:14,720 --> 00:09:20,260
+Ta sẽ bàn thêm về những ví dụ khác mà trong đó con người cư xử ngược lại với hoàn cảnh,
+
+102
+00:09:20,260 --> 00:09:27,260
+nhưng trước đó, ta đã trò chuyện với Lee Ross and Richard Nisbett về sự khác biệt 
+
+103
+00:09:28,210 --> 00:09:29,590
+giữa con người và tình huống này rồi, và đây là những gì họ đã chia sẻ.
+

@@ -1,0 +1,155 @@
+1
+00:00:01,569 --> 00:00:06,760
+dungpham12002 26.06.2016 Thao reviewed
+Trong video này, tôi sẽ giới thiệu
+về biểu đồ tần suất,
+
+In this video, I'll introduce the histogram.
+The histogram is a type of visualization that's
+
+2
+00:00:06,760 --> 00:00:11,900
+một loại biểu đồ vô cùng hữu dụng để khám phá dữ liệu.
+Nó có thể cho ta cái nhìn cơ bản về sự phân phối
+
+3
+00:00:11,900 --> 00:00:18,050
+của các biến số. Để hiểu cách hoạt động của biểu đồ, ta thử
+lấy 12 giá trị nằm trong khoảng 0 đến 6. Tôi đã đặt chúng
+
+4
+00:00:18,050 --> 00:00:23,070
+trên trục số thế này. Để vẽ biểu đồ tần suất
+cho các giá trị trên, bạn có thể chia trục số này
+
+5
+00:00:23,070 --> 00:00:29,439
+thành các đoạn bằng nhau gọi là ngăn (bin).
+Giả sử ta chia thành 3 ngăn, mỗi ngăn có độ rộng 2 đơn vị.
+
+6
+00:00:29,439 --> 00:00:34,680
+Tiếp theo, ta đếm xem có bao nhiêu điểm dữ liệu
+trong mỗi ngăn. Có 4 số trong ngăn đầu tiên,
+
+7
+00:00:34,680 --> 00:00:40,600
+6 số trong ngăn thứ hai, 2 số trong ngăn thứ ba.
+Cuối cùng, ta vẽ một cột cho mỗi ngăn.
+
+8
+00:00:40,600 --> 00:00:45,010
+Độ cao của cột sẽ tương ứng với
+số lượng các điểm dữ liệu nằm trong ngăn đó.
+
+9
+00:00:45,010 --> 00:00:51,840
+Kết quả là một biểu đồ tần suất cho ta
+cái nhìn tổng thể về sự phân phối của 12 giá trị trên.
+
+10
+00:00:51,840 --> 00:00:55,620
+Hầu hết các giá trị nằm ở ngăn giữa, và
+có nhiều giá trị nhỏ hơn 2 hơn là các giá trị
+
+11
+00:00:55,620 --> 00:00:57,890
+lớn hơn 4.
+
+12
+00:00:57,890 --> 00:01:03,059
+Tất nhiên, matplotlib cũng có thể dựng biểu đồ tần suất.
+Cũng như trước, đầu tiên bạn cần
+
+13
+00:01:03,059 --> 00:01:08,500
+import gói pyplot trong matplotlib.
+Tiếp theo, bạn có thể sử dụng hàm hist().
+
+14
+00:01:08,500 --> 00:01:13,040
+Ta hãy mở phần tài liệu của hàm.
+Có rất nhiều đối số mà bạn có thể đưa vào,
+
+15
+00:01:13,040 --> 00:01:18,380
+tuy nhiên hai đối số đầu tiên là quan trọng nhất.
+x sẽ là một list các giá trị mà bạn muốn sử dụng
+
+16
+00:01:18,380 --> 00:01:23,320
+để lập biểu đồ tần suất. Còn đối số thứ hai,
+bins dùng để chỉ cho Python
+
+17
+00:01:23,320 --> 00:01:28,340
+bạn muốn chia dữ liệu vào bao nhiêu ngăn.
+Dựa trên con số này, hist() sẽ tự động
+
+18
+00:01:28,340 --> 00:01:34,840
+tìm các khoảng phù hợp cho từng ngăn,
+cũng như tính số giá trị trong mỗi ngăn.
+
+19
+00:01:34,840 --> 00:01:40,430
+Vậy để tạo ra biểu đồ tần suất bạn vừa xem,
+bước đầu là xây dựng một list
+
+20
+00:01:40,430 --> 00:01:44,159
+với 12 giá trị. Tiếp theo, bạn chỉ cần gọi hàm hist
+với list trên và nêu rõ rằng bạn muốn có 3 ngăn.
+
+21
+00:01:44,159 --> 00:01:50,850
+Tiếp theo, bạn gọi hàm show để
+cho ra một biểu đồ tần suất hoàn chỉnh.
+
+22
+00:01:50,850 --> 00:01:55,360
+Biểu đồ tần suất rất hữu hiệu trong việc cung cấp
+bức tranh toàn cảnh. Chẳng hạn, hãy nhìn vào
+
+23
+00:01:55,360 --> 00:02:00,130
+biểu đồ tần suất sau. Nó minh họa mức phân phối
+các độ tuổi của người dân châu Âu.
+
+24
+00:02:00,130 --> 00:02:00,909
+Các bạn có thể thấy rõ các cột nào cao nhất.
+
+25
+00:02:00,909 --> 00:02:05,030
+Nhóm tuổi đó là thế hệ baby boom
+(thời kỳ bùng nổ dân số).
+
+26
+00:02:05,030 --> 00:02:06,229
+Dữ liệu này mới được thu thập gần đây.
+
+27
+00:02:06,229 --> 00:02:13,000
+Vậy bạn nghĩ đến năm 2050 sẽ có gì thay đổi?
+Hãy xem 1 biểu đồ tương tự. Sự phân phối đều hơn,
+
+28
+00:02:13,000 --> 00:02:17,580
+và thế hệ baby boom đã trở nên già hơn.
+Chỉ cần lướt qua, ta đã có thể thấy rõ
+
+29
+00:02:17,580 --> 00:02:21,800
+thống kê dân số thay đổi ra sao theo thời gian.
+Đó chính là sức mạnh của
+
+30
+00:02:21,800 --> 00:02:22,560
+biểu đồ tần suất!
+
+31
+00:02:22,560 --> 00:02:26,200
+Bây giờ, hãy làm phần bài tập để
+tự khám phá thêm về biểu đồ tần suất!
+

@@ -1,0 +1,129 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/p4QevDMCuKo
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:04,140
+DR. JONATHAN VALVANO: Next we're
+going to test the robot car.
+
+3
+00:00:04,140 --> 00:00:07,490
+Similar to a logic
+analyzer, an oscilloscope
+
+4
+00:00:07,490 --> 00:00:11,080
+is a non-intrusive hardware
+debugging instrument
+
+5
+00:00:11,080 --> 00:00:16,630
+that allows us to observe signals in
+their amplitude versus time behavior.
+
+6
+00:00:16,630 --> 00:00:22,170
+I have connected up to channel
+0 one end of the motor.
+
+7
+00:00:22,170 --> 00:00:27,040
+So we see when the output is a 0
+to the motor, power is applied.
+
+8
+00:00:27,040 --> 00:00:30,180
+
+9
+00:00:30,180 --> 00:00:33,510
+On channel two we have the output
+of the microcontroller, which
+
+10
+00:00:33,510 --> 00:00:39,680
+is the PWM, or Pulse Width
+Modulated Signal here at 10%.
+
+11
+00:00:39,680 --> 00:00:42,240
+So over here we've got a
+measurement going, 10%,
+
+12
+00:00:42,240 --> 00:00:45,710
+and now we're going
+to push some buttons.
+
+13
+00:00:45,710 --> 00:00:48,250
+And now we're going to 20%.
+
+14
+00:00:48,250 --> 00:00:51,440
+You see the motor has started.
+
+15
+00:00:51,440 --> 00:00:52,990
+30%.
+
+16
+00:00:52,990 --> 00:00:53,950
+Faster.
+
+17
+00:00:53,950 --> 00:00:55,670
+40%.
+
+18
+00:00:55,670 --> 00:00:57,360
+50%.
+
+19
+00:00:57,360 --> 00:00:59,010
+60%.
+
+20
+00:00:59,010 --> 00:01:00,550
+70%.
+
+21
+00:01:00,550 --> 00:01:01,280
+80%.
+
+22
+00:01:01,280 --> 00:01:01,780
+90%.
+
+23
+00:01:01,780 --> 00:01:04,280
+And the motor is now spinning very fast.
+
+24
+00:01:04,280 --> 00:01:10,080
+So in summary, the microcontroller
+adjusts the power to the motor
+
+25
+00:01:10,080 --> 00:01:12,050
+by adjusting the duty cycle.
+
+26
+00:01:12,050 --> 00:01:16,570
+And we see for each of the patterns,
+the period was exactly a millisecond,
+
+27
+00:01:16,570 --> 00:01:18,770
+but we adjusted the duty cycle.
+
+28
+00:01:18,770 --> 00:01:22,600
+And this measurement was
+obtained with an oscilloscope.
+
+29
+00:01:22,600 --> 00:01:23,567

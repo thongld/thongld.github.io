@@ -1,0 +1,396 @@
+0
+00:00:05,162 --> 00:00:10,446
+Welcome, now is kind of, I don&#39;t want to leave you just with data,
+https://youtu.be/4eoWWEKw-wU
+1
+00:00:10,446 --> 00:00:14,450
+I want to go back as to why we did all of this.
+
+2
+00:00:14,450 --> 00:00:20,250
+The goal was to develop a relationship between risk and return.
+
+3
+00:00:20,250 --> 00:00:21,920
+So why were we after return?
+
+4
+00:00:21,920 --> 00:00:25,790
+We were after return because the return on compatible becomes
+
+5
+00:00:26,830 --> 00:00:33,020
+the return you should earn at a minimum, otherwise why would I finance rainforest?
+
+6
+00:00:33,020 --> 00:00:35,973
+And we assume for the time being, that we&#39;d go to Amazon,
+
+7
+00:00:35,973 --> 00:00:39,592
+which does a similar business, and we&#39;ll assume their debt was zero,
+
+8
+00:00:39,592 --> 00:00:41,969
+which turns out to be realistically the case.
+
+9
+00:00:43,010 --> 00:00:48,187
+And what I&#39;m going to do now is talk about the intuition, go back to it.
+
+10
+00:00:48,187 --> 00:00:53,480
+So return we want, but we can&#39;t figure out return before knowing risk.
+
+11
+00:00:53,480 --> 00:00:55,360
+We have talked about risk and return.
+
+12
+00:00:55,360 --> 00:00:59,575
+So let&#39;s go through the intuition and then I&#39;ll show you some even more data,
+
+13
+00:00:59,575 --> 00:01:03,000
+where you don&#39;t have to do the calculations because you know how to.
+
+14
+00:01:03,000 --> 00:01:04,870
+And it&#39;s really rich data.
+
+15
+00:01:04,870 --> 00:01:07,030
+We&#39;ll assume we are risk averse.
+
+16
+00:01:07,030 --> 00:01:12,151
+Most data, most experiments show this is to be true.
+
+17
+00:01:12,151 --> 00:01:15,200
+I will show you data which proves this to be true on average.
+
+18
+00:01:16,290 --> 00:01:21,360
+We like return, but we do not like risk,
+
+19
+00:01:22,460 --> 00:01:24,800
+which is the definition of risk aversion.
+
+20
+00:01:24,800 --> 00:01:27,070
+We like return, but we don&#39;t like risk.
+
+21
+00:01:27,070 --> 00:01:33,670
+The problem is the only way to ensure that you actually take care of your
+
+22
+00:01:33,670 --> 00:01:38,770
+aversion to risk is by holding diversified portfolios and reasonably large ones.
+
+23
+00:01:39,990 --> 00:01:45,259
+But larger loan doesn&#39;t mean much, because if you hold a large portfolio all in one
+
+24
+00:01:45,259 --> 00:01:50,376
+industry, you&#39;re really, all your eggs are in one basket with a lot of eggs in,
+
+25
+00:01:50,376 --> 00:01:54,236
+I mean, you know what I mean, a lot of eggs but in one basket.
+
+26
+00:01:54,236 --> 00:01:58,980
+But this behavior would only survive, this passion for return but
+
+27
+00:01:58,980 --> 00:02:03,809
+without taking on too much risk and therefore holding portfolios,
+
+28
+00:02:03,809 --> 00:02:07,380
+is if risk and return are positively correlated.
+
+29
+00:02:07,380 --> 00:02:10,530
+Otherwise, why would we invest in something that&#39;s very risky?
+
+30
+00:02:10,530 --> 00:02:15,480
+So that&#39;s the behavioral implications of our attitudes towards risk,
+
+31
+00:02:15,480 --> 00:02:19,650
+is that risk and return should be positively related.
+
+32
+00:02:19,650 --> 00:02:25,240
+I&#39;m going to now show you some data, and you&#39;ll recognize what this data is.
+
+33
+00:02:25,240 --> 00:02:29,599
+We all hold portfolios, more or less, so therefore I&#39;ve used portfolio data and
+
+34
+00:02:29,599 --> 00:02:31,442
+this is very commonly available.
+
+35
+00:02:31,442 --> 00:02:36,100
+Since 26 to 2008, we can include more recent data, but
+
+36
+00:02:36,100 --> 00:02:41,290
+this is just showing you some examples over large period of time.
+
+37
+00:02:41,290 --> 00:02:45,030
+So if you stare at this data, in the first column are portfolio.
+
+38
+00:02:45,030 --> 00:02:47,510
+Remember, we are holding portfolios, so portfolio.
+
+39
+00:02:48,590 --> 00:02:53,507
+Average return, average risk premium, standard deviation.
+
+40
+00:02:53,507 --> 00:02:56,752
+So the first column starts off with small stocks, so
+
+41
+00:02:56,752 --> 00:03:00,600
+this is a portfolio of stocks that are relative small in size.
+
+42
+00:03:00,600 --> 00:03:08,087
+Meaning, think about it that these are stocks that are low price stocks,
+
+43
+00:03:08,087 --> 00:03:14,780
+small stocks as supposed to S&amp;P 500, which has got what?
+
+44
+00:03:14,780 --> 00:03:15,760
+All kinds of stocks.
+
+45
+00:03:15,760 --> 00:03:22,550
+It has got stocks ranging from Google to small stocks.
+
+46
+00:03:22,550 --> 00:03:25,860
+Then corporate bonds, government bods and treasury bills.
+
+47
+00:03:26,890 --> 00:03:31,360
+First thing, so these are average returns over a long period of time.
+
+48
+00:03:31,360 --> 00:03:36,745
+And what&#39;s phenomenal is, and this is mind boggling, and do this in your mind.
+
+49
+00:03:36,745 --> 00:03:42,026
+If you put $100 in a small stock portfolio,
+
+50
+00:03:42,026 --> 00:03:49,560
+and over the next, what 64, no, 74 plus 8, 82 years span.
+
+51
+00:03:50,720 --> 00:03:56,790
+How much would that $100 be worth if you invested at 21%?
+
+52
+00:03:56,790 --> 00:03:58,550
+Do the calculation.
+
+53
+00:03:58,550 --> 00:04:03,270
+Then do the calculation how much would it be worth if you&#39;d invested it in 12%.
+
+54
+00:04:03,270 --> 00:04:08,643
+How much would it be worth if you&#39;d invested in 7%, 6%, 4%?
+
+55
+00:04:08,643 --> 00:04:13,360
+And you will see mind-boggling differences in the amount.
+
+56
+00:04:13,360 --> 00:04:17,651
+You would have been a billionaire in one instance, and
+
+57
+00:04:17,651 --> 00:04:20,177
+not with much money in another.
+
+58
+00:04:20,177 --> 00:04:24,293
+The interesting part here is not just the magnitudes, but
+
+59
+00:04:24,293 --> 00:04:29,250
+how they are related to, go to the last column, standard deviation.
+
+60
+00:04:29,250 --> 00:04:31,990
+So, I hope you have jotted down these numbers,
+
+61
+00:04:31,990 --> 00:04:35,414
+and I&#39;m keep going back to the table and so on.
+
+62
+00:04:35,414 --> 00:04:40,750
+And I&#39;ll also share this data with you in a little note so
+
+63
+00:04:40,750 --> 00:04:42,390
+that you can look back and forth.
+
+64
+00:04:42,390 --> 00:04:44,371
+But even now, let&#39;s have some fun.
+
+65
+00:04:44,371 --> 00:04:48,281
+The key here is that the theory that high risk,
+
+66
+00:04:48,281 --> 00:04:54,540
+high return implied by risk aversion is actually proven over this data.
+
+67
+00:04:54,540 --> 00:05:00,920
+So yes, small stocks gave you 21% rate of return on average annual.
+
+68
+00:05:00,920 --> 00:05:02,780
+What is the standard deviation?
+
+69
+00:05:02,780 --> 00:05:06,389
+Twice as much of that of S&amp;P 500.
+
+70
+00:05:06,389 --> 00:05:08,690
+And what is the lowest standard deviation?
+
+71
+00:05:08,690 --> 00:05:11,890
+Lo and behold, Treasury bills, okay?
+
+72
+00:05:11,890 --> 00:05:15,280
+So basically, it&#39;s showing that high risk, high return, high risk,
+
+73
+00:05:15,280 --> 00:05:17,900
+high return, high risk, high return.
+
+74
+00:05:17,900 --> 00:05:20,620
+What is the middle column, average risk premium?
+
+75
+00:05:20,620 --> 00:05:23,370
+And that&#39;s also an interesting number to look at.
+
+76
+00:05:23,370 --> 00:05:29,191
+So what is the risk free investment for almost sure, lowest risk, if you may.
+
+77
+00:05:29,191 --> 00:05:30,688
+It&#39;s Treasury bill.
+
+78
+00:05:30,688 --> 00:05:36,522
+So 17% is 4%- subtracted from 21%.
+
+79
+00:05:36,522 --> 00:05:40,542
+That&#39;s called risk premium, and that 8%,
+
+80
+00:05:40,542 --> 00:05:46,130
+12%,- 4%, is over for the overall S&amp;P 500, right?
+
+81
+00:05:46,130 --> 00:05:51,170
+So this gives you a sense of, and we will talk about data like this a lot,
+
+82
+00:05:51,170 --> 00:05:55,209
+this gives you a sense of the notion of what has happened.
+
+83
+00:05:55,209 --> 00:05:58,560
+By the way, unbelievable returns.
+
+84
+00:05:58,560 --> 00:06:00,926
+People have been studying this,
+
+85
+00:06:00,926 --> 00:06:05,153
+they&#39;ve call it a puzzle to have such high rates of return.
+
+86
+00:06:05,153 --> 00:06:10,158
+And a risk premium so high, because they&#39;ve never been witnessed before, and
+
+87
+00:06:10,158 --> 00:06:15,330
+it may be a long stretch of prosperity and innovation that America has witnessed.
+
+88
+00:06:16,560 --> 00:06:18,470
+Anyway, so that&#39;s the first reason.
+
+89
+00:06:18,470 --> 00:06:22,620
+So I&#39;m giving you people hold portfolios, the riskier the portfolio,
+
+90
+00:06:22,620 --> 00:06:24,060
+the higher the return.
+
+91
+00:06:24,060 --> 00:06:26,270
+This is being shown in the data.
+
+92
+00:06:26,270 --> 00:06:29,830
+This is being shown clearly in the data.
+
+93
+00:06:29,830 --> 00:06:35,540
+What I&#39;m going to do now is I&#39;m going to take a short break from my side,
+
+94
+00:06:35,540 --> 00:06:40,027
+come back, and give you an appetizer for the next time.
+
+95
+00:06:40,027 --> 00:06:44,728
+Because that appetizer will make you think about diversification,
+
+96
+00:06:44,728 --> 00:06:49,671
+which underlies everything we are going to do for the next two modules and
+
+97
+00:06:49,671 --> 00:06:54,470
+actually analyze a lot of human behavior and investment strategies.
+
+98
+00:06:54,470 --> 00:06:55,932
+See you in a minute.
+

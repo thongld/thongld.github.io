@@ -1,0 +1,527 @@
+0
+00:00:09,114 --> 00:00:13,460
+knh_duykhang1311 - 16/1/2017
+Chúng ta đã tìm hiều về các trải nghiệm của người dùng,cả tốt và xấu.
+
+1
+00:00:13,460 --> 00:00:17,845
+Và chúng ta có thể nghĩ đến rất nhiều từ để miêu tả các tình huống đó.
+
+2
+00:00:17,845 --> 00:00:21,810
+Một hệ thống hay kinh nghiệm đều hữu ích như nhau.
+
+3
+00:00:21,810 --> 00:00:23,240
+Cái này rất dễ học.
+
+4
+00:00:23,240 --> 00:00:24,490
+Cái này rất hấp dẫn.
+
+5
+00:00:24,490 --> 00:00:28,430
+Cái này rất vui hay rất xấu xí, tạo cảm giác căng thẳng,
+
+6
+00:00:28,430 --> 00:00:31,260
+làm người dùng nản lòng hay làm họ cảm thấy nhàm chán.
+
+7
+00:00:32,930 --> 00:00:35,710
+Vậy làm cách nào chúng ta nhớ hết được các thứ này khi chúng ta thiết kế?
+
+8
+00:00:35,710 --> 00:00:40,510
+Làm cách nào để chúng ta có thể tập trung thiết kế những vẫn đảm bảo rằng chúng ta tránh được những nhược điểm
+
+9
+00:00:40,510 --> 00:00:43,320
+và thêm vào những ưu điểm.
+
+10
+00:00:44,480 --> 00:00:49,850
+Frank Guo, người viết bài cho trang UXmatters vào năm 2012, đã đề xuất
+
+11
+00:00:49,850 --> 00:00:55,150
+1 cách thức đã được đơn giản hóa để tìm hiểu trải nghiệm của khách hàng, 
+mà theo quan điểm cá nhân thì tôi thấy nó thực sự hữu ích.
+
+12
+00:00:55,150 --> 00:00:59,800
+Anh ta đề xuất ý kiến rằng chúng ta có thể chia trải nghiệm của khách hàng 
+ra làm 4 phần chính,
+
+13
+00:00:59,800 --> 00:01:05,500
+đó là Giá trị, Chức năng, Tính khả thi và Sự mong muốn.
+
+14
+00:01:05,500 --> 00:01:09,860
+Khi chúng ta bàn về giá trị, chúng ta đặt câu hỏi rằng liệu hệ thống hay
+
+15
+00:01:09,860 --> 00:01:12,240
+thiết kế này có hữu ích cho người sử dụng hay không?
+
+16
+00:01:12,240 --> 00:01:14,810
+Nó có hoàn thành nhiệm vụ mà họ cần nó hoàn thành hay không?
+
+17
+00:01:14,810 --> 00:01:16,280
+Và nó có tốt hơn các phiên bản thay thế không?
+
+18
+00:01:17,380 --> 00:01:22,954
+Chúng ta có thể lấy ví dụ chương trình Viscalc, được phát triển vào những năm cuối thập kỉ 70,
+
+19
+00:01:22,954 --> 00:01:28,067
+nó là phần mềm bảng tính đầu tiên được nhiều người sử dụng.
+
+20
+00:01:28,067 --> 00:01:32,955
+Chương trình đó là một thành công lớn vì nó cho phép người dùng làm những việc
+
+21
+00:01:32,955 --> 00:01:37,599
+mà trước đó họ không thể làm được vì cần phải cập nhật toàn bộ
+
+22
+00:01:37,599 --> 00:01:42,097
+mạng lưới hay các công thức để có thể xem được kết quả ngay lập tức.
+
+23
+00:01:42,097 --> 00:01:47,036
+Một cách nhanh chóng, chương trình đó cho phép người dùng khám phá 
+các cách tính toán tài chính khác nhau,
+
+24
+00:01:47,036 --> 00:01:51,000
+theo một phương thức vô cùng khả thi.
+
+25
+00:01:51,000 --> 00:01:55,030
+Nó đã mang lại giá trị to lớn cho những người cần làm công việc
+
+26
+00:01:55,030 --> 00:01:59,370
+tính toán, và nó hoàn toàn vượt trội hơn những phần mềm khác lúc bấy giờ.
+
+27
+00:01:59,370 --> 00:02:04,050
+Xét theo tiêu chuẩn hiện đại thì chương trình này không phải là 1 thành công lớn.
+
+28
+00:02:04,050 --> 00:02:09,090
+Thực ra, khi các đối thủ cạnh tranh xuất hiện vào một vài năm sau, 
+như Lotus 1-2-3 và
+
+29
+00:02:09,090 --> 00:02:13,700
+Microsoft Excel, chúng đã chiếm hết thị trường của Viscalc bởi vì các chương trình này
+
+30
+00:02:13,700 --> 00:02:18,840
+mang lại những tính năng và các đặc điểm vượt trội hơn.
+
+31
+00:02:18,840 --> 00:02:24,470
+Tuy nhiên, chính VisiCalc cũng đã đem lại các chức năng chưa có 
+vào thời điểm đó,
+
+32
+00:02:24,470 --> 00:02:26,270
+nên nó mới trở nên thành công đến như vậy.
+
+33
+00:02:27,670 --> 00:02:32,890
+Khi xét về chức năng, chúng ta thường hỏi người sử dụng rằng 
+họ có làm được những gì cần làm hay không?
+
+34
+00:02:32,890 --> 00:02:35,450
+Giả sử như chúng ta làm được, thực hiện được,
+
+35
+00:02:35,450 --> 00:02:37,690
+vậy người dùng có nhận ra được hay không?
+
+36
+00:02:39,570 --> 00:02:42,610
+Một sản phẩm đi sai hướng là
+
+37
+00:02:42,610 --> 00:02:47,410
+máy nghe nhạc Motorola ROKR, tôi nghĩ nó xuất hiện vào khoảng đầu thập niên 2000, năm 2004.
+
+38
+00:02:49,220 --> 00:02:52,740
+Nó xuất hiện vài năm trước khi iPhone ra đời nhưng
+
+39
+00:02:52,740 --> 00:02:59,630
+nó là dòng điện thoại đầu tiên có tích hợp tính năng chơi nhạc mp3.
+
+40
+00:02:59,630 --> 00:03:05,410
+Và nó cũng kết nối với cửa hàng iTunes của Apple.
+
+41
+00:03:05,410 --> 00:03:09,920
+Tuy nhiên, chức năng của nó thật tệ hại.
+
+42
+00:03:09,920 --> 00:03:11,650
+Mọi người không tìm ra cách nào để sử dụng nó.
+
+43
+00:03:11,650 --> 00:03:16,570
+Họ không tìm ra cách nào để truy cập vào chức năng nghe nhạc.
+
+44
+00:03:16,570 --> 00:03:20,220
+Và nó còn có các khiếm khuyết kì lạ khác, chẳng hạn như chỉ hiện
+
+45
+00:03:20,220 --> 00:03:24,220
+100 bài nhạc đầu tiên có trong điện thoại, dù trong điện thoại còn
+
+46
+00:03:24,220 --> 00:03:27,180
+nhiều bài khác, có lẽ phải đến hàng ngàn bài.
+
+47
+00:03:27,180 --> 00:03:30,550
+Kết quả là, cho dù nó có chức năng đó,
+
+48
+00:03:30,550 --> 00:03:34,020
+nhưng người dùng vẫn mong đợi một cái tốt hơn
+
+49
+00:03:34,020 --> 00:03:37,030
+cho đến khi iPhone tích hợp được vào vài năm sau đó.
+
+50
+00:03:37,030 --> 00:03:39,720
+Kết quả là thành công không đến, và
+
+51
+00:03:39,720 --> 00:03:40,950
+sau cùng thì sản phẩm này hoàn toàn thất bại.
+
+52
+00:03:42,950 --> 00:03:47,420
+Sự mong muốn có liên quan đến khía cạnh khác, chẳng hạn như hệ thống này có hay,
+
+53
+00:03:47,420 --> 00:03:49,200
+hấp dẫn và dễ sử dụng không.
+
+54
+00:03:49,200 --> 00:03:53,550
+Tương tự như ROKR,
+
+55
+00:03:53,550 --> 00:03:57,940
+khi iPod ra đời vào những năm 2000, nó đã thành công vang dội.
+
+56
+00:03:57,940 --> 00:04:02,750
+Khi xuất hiện, iPod có thiết kế kiểu dáng hoàn toàn mới,
+
+57
+00:04:02,750 --> 00:04:07,140
+nhiều người rất yêu thích, thấy nó hấp dẫn và sẵn sàng sử dụng nó.
+
+58
+00:04:07,140 --> 00:04:12,640
+Cụ thể hơn, iPod có gắn bánh xe lăn nhằm tạo ra kiểu tương tác mới
+
+59
+00:04:12,640 --> 00:04:17,430
+cho khách hàng, và họ nhận thấy rằng khi họ thao tác thì rất
+
+60
+00:04:17,430 --> 00:04:21,170
+dễ dàng và thoải mái, và
+
+61
+00:04:21,170 --> 00:04:23,750
+yếu tố đó đã tạo nên thành công cho iPod.
+
+62
+00:04:25,060 --> 00:04:30,120
+Và yếu tố cuối cùng, tính khả thi, liên quan đến việc mày mò tìm cách
+
+63
+00:04:30,120 --> 00:04:32,850
+sử dụng có dễ hay không.
+
+64
+00:04:34,550 --> 00:04:39,590
+Và để minh họa, tôi sẽ cho các bạn ví dụ về một dịch vụ mang lại
+
+65
+00:04:39,590 --> 00:04:41,840
+cho khách hàng những trải nghiệm tuyệt vời.
+
+66
+00:04:44,460 --> 00:04:48,440
+Đây là trang web của Duolingo, là dịch vụ dạy 
+
+67
+00:04:48,440 --> 00:04:50,150
+và học ngôn ngữ mới.
+
+68
+00:04:50,150 --> 00:04:53,480
+Đây là màn hình khi bạn truy cập lần đầu vào Duolingo,
+
+69
+00:04:53,480 --> 00:04:55,700
+và trước đây bạn chưa hề sử dụng nó lần nào.
+
+70
+00:04:55,700 --> 00:04:59,570
+Nó có hướng dẫn rất rõ ràng, khi bắt đầu thì
+
+71
+00:04:59,570 --> 00:05:01,990
+câu đầu tiên trang web hỏi là bạn muốn học ngôn ngữ nào?
+
+72
+00:05:01,990 --> 00:05:10,550
+Chẳng hạn như tôi muốn học tiếng Pháp, sau đó nó hỏi tiếp mức độ quan trọng của tiếng Pháp với bạn?
+
+73
+00:05:10,550 --> 00:05:11,390
+Cái này thì tôi thực sự không biết.
+
+74
+00:05:11,390 --> 00:05:12,670
+Tôi nghĩ tôi nên chọn mức trung bình.
+
+75
+00:05:14,190 --> 00:05:17,890
+Tiếp theo nó hỏi tôi rằng bạn mới học tiếng Pháp hay bạn đã học qua trước đây rồi.
+
+76
+00:05:17,890 --> 00:05:19,160
+Tôi chọn vào mục tôi mới học.
+
+77
+00:05:20,770 --> 00:05:23,930
+Và ngay lập tức tôi bắt đầu học tiếng Pháp.
+
+78
+00:05:23,930 --> 00:05:26,960
+Nó yêu cầu tôi chọn từ có nghĩa là người phụ nữ,
+
+79
+00:05:26,960 --> 00:05:31,060
+và lúc này đây tôi đã bắt đầu khóa học của mình.
+
+80
+00:05:31,060 --> 00:05:35,390
+Bạn cũng thấy rằng nó không yêu cầu tôi tạo tên người dùng mới hay mật khẩu hay
+
+81
+00:05:35,390 --> 00:05:37,620
+yêu cầu tôi khai báo mã số thẻ tín dụng hay những thứ khác.
+
+82
+00:05:37,620 --> 00:05:41,300
+Nó đưa tôi thẳng vào hệ thống và cho phép tôi bắt đầu sử dụng nó.
+
+83
+00:05:41,300 --> 00:05:45,337
+Trong tiến trình học, tại một vài chỗ nó hỏi tôi 
+liệu tôi có muốn tạo trang tiểu sử cho mình không,
+
+84
+00:05:45,337 --> 00:05:47,696
+để tôi có thể lưu lại tiến trình của mình.
+
+85
+00:05:47,696 --> 00:05:52,225
+Nó đã thành công về khía cạnh tính khả thi, bằng chứng là
+
+86
+00:05:52,225 --> 00:05:55,217
+việc tôi thao tác rất đơn giản mà không phải qua
+
+87
+00:05:55,217 --> 00:05:59,690
+các bước gây khó khăn trong quá trình sử dụng.
+
+88
+00:06:02,020 --> 00:06:07,580
+Phương pháp cơ bản mà chúng ta dùng để nghiên cứu trải nghiệm của người dùng
+và thiết kế để
+
+89
+00:06:07,580 --> 00:06:12,375
+giup chúng ta tìm hiểu về trải nghiệm của khách hàng.
+
+90
+00:06:12,375 --> 00:06:17,040
+Các phương pháp mà chúng ta dùng để hiểu người dùng nhằm phục vụ cho thiết kế,
+
+91
+00:06:17,040 --> 00:06:22,460
+làm vật mẫu, đánh giá có thể được áp dụng để đặt câu hỏi
+
+92
+00:06:22,460 --> 00:06:27,010
+xoay quanh 4 yếu tố: Giá trị, Chức năng, Tính khả thi, Mức độ mong muốn.
+
+93
+00:06:27,010 --> 00:06:31,920
+Ví dụ, khi chúng ta nghiên cứu khía cạnh trải nghiệm của người dùng, tôi nghĩ về
+
+94
+00:06:31,920 --> 00:06:36,550
+2 loại hoạt động mà chúng ta hay thực hiện nhằm hiểu được các trải nghiệm của người dùng.
+
+95
+00:06:36,550 --> 00:06:41,870
+Đó là hoạt động để hiểu người dùng và hoạt động để đánh giá sản phẩm.
+
+96
+00:06:41,870 --> 00:06:45,110
+Khi chúng ta đặt ra các câu hỏi về giá trị của món hàng đối với người dùng,
+
+97
+00:06:45,110 --> 00:06:49,200
+chúng ta hay tự hỏi người dùng có cần sản phẩm đó không?
+
+98
+00:06:49,200 --> 00:06:51,400
+Hệ thống của chúng ta cần có thêm cái gì để có thể cung cấp cho họ?
+
+99
+00:06:51,400 --> 00:06:52,710
+Và khi chúng ta đánh giá,
+
+100
+00:06:52,710 --> 00:06:56,400
+chúng ta luôn tự đặt câu hỏi liệu thiết kế này có đáp ứng các nhu cầu của chúng ta hay không?
+
+101
+00:06:57,590 --> 00:07:03,030
+Khi đánh giá tính năng của sản phẩm, chúng ta cần hiểu rõ
+
+102
+00:07:03,030 --> 00:07:07,320
+cách thức nó vận hành, cách thức nó hoàn tất các nhiệm vụ 
+mà hệ thống của chúng ta
+
+103
+00:07:07,320 --> 00:07:12,030
+sẽ hỗ trợ trong quá trình sử dụng.
+
+104
+00:07:12,030 --> 00:07:16,600
+Một khi chúng ta đánh giá các thiết kế mà chúng ta đã tạo ra, chúng ta thường hỏi liệu nó có hoàn thành công việc hay không?
+
+105
+00:07:16,600 --> 00:07:19,510
+Chúng có hoàn tất các nhiệm vụ bằng hệ thống mà chúng ta đã thiết kế không?
+
+106
+00:07:20,810 --> 00:07:22,460
+Khi xét đến khía cạnh sự mong muốn,
+
+107
+00:07:22,460 --> 00:07:27,490
+trong giai đoạn tim hiểu, chúng ta cần phải nắm rõ người dùng mong muốn những gì?
+
+108
+00:07:27,490 --> 00:07:31,500
+Cái họ tìm là gì, cũng như những điểm tích cực và tiêu cực của nó.
+
+109
+00:07:31,500 --> 00:07:35,410
+Và khi đánh giá các thiết kế, chúng ta phải tự hỏi: Mẫu mã này có lôi cuốn không?
+
+110
+00:07:35,410 --> 00:07:37,900
+Liệu mẫu mã này có thiết kế vui nhộn,
+
+111
+00:07:37,900 --> 00:07:41,100
+thú vị, hài hòa; và có phù hợp với mong muốn của khách hàng hay không?
+
+112
+00:07:43,150 --> 00:07:46,570
+Và cuối cùng, khi xét về tính khả thi của sản phẩm, khi
+
+113
+00:07:46,570 --> 00:07:51,040
+tìm hiểu về sở thích của người dùng ở các giai đoạn đầu, 
+chúng ta thường tự hỏi người dùng sẽ kiếm sản phẩm này ở đâu?
+
+114
+00:07:51,040 --> 00:07:55,020
+Và khi lần đầu sử dụng thì họ làm thế nào để vận hành nó?
+
+115
+00:07:55,020 --> 00:07:59,190
+Và trong giai đoạn đánh giá các thiết kế, chúng ta phải luôn tự hỏi liệu người dùng có tìm được
+
+116
+00:07:59,190 --> 00:08:02,300
+và truy cập vào dựa trên những chi tiết mà chúng ta đã thiết kế cho họ?
+
+117
+00:08:04,130 --> 00:08:08,190
+Quá trình thiết kế lặp trong quá trình nghiên cứu trải nghiệm người dùng và
+
+118
+00:08:08,190 --> 00:08:12,240
+thiết kế sẽ là hướng dẫn cho các bạn nhằm đảm bảo rằng
+
+119
+00:08:12,240 --> 00:08:17,120
+các yếu tố do người dùng cung cấp sẽ nằm trong sản phẩm mà các bạn đang thiết kế.
+
+120
+00:08:19,090 --> 00:08:23,650
+Nói tóm lại, trải nghiệm của người dùng là một lĩnh vực gồm nhiều khía cạnh, không chỉ là về 
+
+121
+00:08:23,650 --> 00:08:28,840
+những thứ này, không chỉ là về tính khả dụng, sự hài hòa hay mong muốn của khách hàng.
+
+122
+00:08:28,840 --> 00:08:32,920
+Các phương pháp UX cơ bản mà chúng ta đang bàn trong khóa học này, và
+
+123
+00:08:32,919 --> 00:08:37,439
+cả những khóa khác có thể dùng để giải quyết những vấn đề khác nhau về trải nghiệm khách hàng.
+
+124
+00:08:38,720 --> 00:08:42,020
+Và điều quan trọng nhất là hãy để quá trình dẫn đường cho các bạn.
+
+125
+00:08:42,020 --> 00:08:45,530
+Đây không phải là thứ bạn làm đúng ở lần đầu tiên, nhưng
+
+126
+00:08:45,530 --> 00:08:47,860
+bạn cần phải theo một quy trình lặp đi lặp lại,
+
+127
+00:08:47,860 --> 00:08:51,710
+liên tục đặt ra các câu hỏi trong suốt quá trình, để khi kết thúc
+
+128
+00:08:51,710 --> 00:08:54,560
+bạn sẽ thu được một sản phẩm mang lại những trải nghiệm tuyệt vời cho khách hàng.
+

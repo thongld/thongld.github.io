@@ -1,0 +1,160 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/f6iXAPQAGpo
+
+1
+00:00:00,500 --> 00:00:03,580
+In this lesson, we're going to wrap up our forecasting module
+
+2
+00:00:03,580 --> 00:00:06,460
+by talking about some special cases or special techniques
+
+3
+00:00:06,460 --> 00:00:09,400
+that you might use or might come across in your forecasting
+
+4
+00:00:09,400 --> 00:00:10,960
+career.
+
+5
+00:00:10,960 --> 00:00:13,780
+So the first thing we're going to cover is causal analysis.
+
+6
+00:00:13,780 --> 00:00:15,730
+Now, we've seen this technique before.
+
+7
+00:00:15,730 --> 00:00:18,220
+We're going to use ordinary least squares regression.
+
+8
+00:00:18,220 --> 00:00:20,560
+And the whole idea between causal analysis
+
+9
+00:00:20,560 --> 00:00:22,590
+is that unlike exponential smoothing, where
+
+10
+00:00:22,590 --> 00:00:25,330
+it's a black box, where we assume there are these patterns
+
+11
+00:00:25,330 --> 00:00:27,980
+we don't quite know why, for causal analysis,
+
+12
+00:00:27,980 --> 00:00:30,130
+we assume that we have some understanding of what
+
+13
+00:00:30,130 --> 00:00:32,060
+causes that demand.
+
+14
+00:00:32,060 --> 00:00:33,850
+And so we're going to use regression
+
+15
+00:00:33,850 --> 00:00:38,020
+to try to develop a descriptive and predictive model
+
+16
+00:00:38,020 --> 00:00:42,617
+base of demand based on those explanatory variables.
+
+17
+00:00:42,617 --> 00:00:44,950
+Then we're going to move into new product introductions.
+
+18
+00:00:44,950 --> 00:00:46,242
+This is a huge area.
+
+19
+00:00:46,242 --> 00:00:47,950
+We're going to spend a couple of segments
+
+20
+00:00:47,950 --> 00:00:49,658
+on this, because it's really interesting.
+
+21
+00:00:49,658 --> 00:00:51,220
+And you'll see this a lot, especially
+
+22
+00:00:51,220 --> 00:00:54,610
+if you go in the high tech or in the fast consumer packaged
+
+23
+00:00:54,610 --> 00:00:55,930
+goods industries.
+
+24
+00:00:55,930 --> 00:00:57,790
+The whole idea is how do I introduce,
+
+25
+00:00:57,790 --> 00:01:02,990
+or how do I forecast the demand, for a product with no history.
+
+26
+00:01:02,990 --> 00:01:04,989
+Then we'll talk about another special case, kind
+
+27
+00:01:04,989 --> 00:01:08,980
+of on the other end, and that is with intermittent demand.
+
+28
+00:01:08,980 --> 00:01:10,030
+What do I mean here?
+
+29
+00:01:10,030 --> 00:01:13,250
+This is where demand is very irregular.
+
+30
+00:01:13,250 --> 00:01:14,320
+It's sparse.
+
+31
+00:01:14,320 --> 00:01:16,642
+And so think of spare parts.
+
+32
+00:01:16,642 --> 00:01:18,350
+You don't know you're going to need them.
+
+33
+00:01:18,350 --> 00:01:23,000
+So the demand is not this constant, nice distribution.
+
+34
+00:01:23,000 --> 00:01:24,100
+It's very intermittent.
+
+35
+00:01:24,100 --> 00:01:28,180
+And we'll discuss a way of being able to smooth that out
+
+36
+00:01:28,180 --> 00:01:30,220
+for forecasting purposes.
+
+37
+00:01:30,220 --> 00:01:32,560
+And then finally, we'll just wrap up the module
+
+38
+00:01:32,560 --> 00:01:34,450
+and I'll give some wrap up points
+
+39
+00:01:34,450 --> 00:01:36,960
+for forecasting in general.
+

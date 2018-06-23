@@ -1,0 +1,145 @@
+1
+00:00:03,129 --> 00:00:08,010
+Ở video trước ta đã biết cách kết hợp sáu file dạng CSV thành một, 
+
+2
+00:00:08,010 --> 00:00:13,450
+sử dụng nhắc lệnh copy. Chính xác là ta đã kết hợp sáu file thành một chung.
+
+3
+00:00:13,450 --> 00:00:16,939
+Đó là điều ta đã làm trong video trước. 
+Trong thời gian đó, nếu bạn đã làm
+
+4
+00:00:16,939 --> 00:00:23,029
+bài tập nghĩa là bạn đã sử dụng file CSV đó để nhập nó vào Excel.
+
+5
+00:00:23,029 --> 00:00:27,179
+Tuy nhiên, không phải lúc nào ta cũng có sáu file dạng CSV.
+
+6
+00:00:27,179 --> 00:00:30,019
+Đôi lúc ta có sáu file dạng Excel. Hoặc mười.
+
+7
+00:00:30,019 --> 00:00:34,770
+Hoặc có thể cả trăm. Thật không may, copy không thể thực hiện trên file Excel
+
+8
+00:00:34,770 --> 00:00:37,710
+Nhân đây, nếu bạn đã biết rằng bạn sẽ
+
+9
+00:00:37,710 --> 00:00:42,370
+không nhập file dạng Excel bởi vì bạn luôn nhập file dạng CSV, bạn có thể bỏ qua video này. 
+
+10
+00:00:42,370 --> 00:00:46,510
+Video này chỉ nói về việc chuyển đổi từ dạng Excel sang dạng
+
+11
+00:00:46,510 --> 00:00:49,750
+CSV. Tuy nhiên, đừng bỏ qua video tiếp theo nhé.
+
+12
+00:00:49,750 --> 00:00:54,570
+Video tiếp theo nói về các loại dữ liệu, 
+chúng cần phải được biết trong cả hai tình huống.
+
+13
+00:00:54,570 --> 00:00:59,660
+Nếu bạn vẫn đang xem tôi tin rằng bạn muốn biết làm thế nào để chuyển file dạng Excel thành 
+
+14
+00:00:59,660 --> 00:01:05,369
+dạng CSV để sau đó chỉ cần thao tác "copy" và "nhập" là có thể có mọi thứ trong Excel.
+
+15
+00:01:05,369 --> 00:01:10,270
+Dĩ nhiên, theo video trước, 
+chúng ta có thể thực hiện theo cách thủ công.
+
+16
+00:01:10,270 --> 00:01:15,060
+Mở từng file, chọn "lưu lại thành" "dạng CSV" và cứ như vậy sẽ hoàn thành.
+
+17
+00:01:15,060 --> 00:01:18,020
+Nhưng như vậy sẽ mất rất nhiều công sức.
+
+18
+00:01:18,020 --> 00:01:23,229
+Để cho bạn dễ hiểu hơn tôi đã làm một chương trình nhỏ. VBS, viết tắt của 'Visual Basic'
+
+19
+00:01:23,229 --> 00:01:29,240
+nghĩa là ngôn ngữ lập trình, có thể dùng để tự động chuyển
+
+20
+00:01:29,240 --> 00:01:34,380
+tất cả file dạng Excel thành dạng CSV. 
+Đây là điều tôi sẽ đề cập trong video này.
+
+21
+00:01:34,380 --> 00:01:37,799
+Đây là chương trình. Link để tải sẽ được hiển thị ngay bên dưới.
+
+22
+00:01:37,799 --> 00:01:42,340
+Click vào và ứng dụng sẽ chạy ngay trên nền,
+
+23
+00:01:42,340 --> 00:01:46,869
+và ta có tất cả các file CSV. Ta có thể lặp lại mẹo 
+
+24
+00:01:46,869 --> 00:01:53,959
+được sử dụng trong video trước. Sao chép tất cả file CSV thành một.
+
+25
+00:01:53,959 --> 00:01:56,810
+Và rồi ta có một file đầu vào.
+
+26
+00:01:56,810 --> 00:02:02,639
+Vì đã có kết nối dữ liệu vào file đầu vào này, ta chỉ cần mở nó.
+
+27
+00:02:02,639 --> 00:02:07,459
+Ta tới đây, click "refresh" và tất cả dữ liệu xuất hiện.
+
+28
+00:02:07,459 --> 00:02:09,830
+Rất dễ dàng, đúng không ? 
+Một điều nữa tôi muốn cho bạn xem.
+
+29
+00:02:09,830 --> 00:02:15,510
+Nếu ta click "properties", dòng chữ "refresh on open" hiện ra, và đó là điều ta thực sự
+
+30
+00:02:15,510 --> 00:02:18,980
+muốn kích hoạt. Nó có nghĩa là mỗi lần ta mở
+
+31
+00:02:18,980 --> 00:02:21,790
+file dạng Excel, tất cả các kết nối dữ liệu,
+
+32
+00:02:21,790 --> 00:02:25,510
+trong trường hợp này là một kết nối, thì kết nối sẽ được làm mới lại.
+
+33
+00:02:25,510 --> 00:02:32,000
+Nên bạn sẽ không bao giờ quên cập nhật bất cứ gì. Chỉ cần chuyển đổi, copy và rồi 
+
+34
+00:02:32,000 --> 00:02:35,470
+mỗi lần mở ra thì dữ liệu mới nhất luôn được tải về.
+
+35
+00:02:35,470 --> 00:02:36,890
+Rất đễ dàng, phải không?
+

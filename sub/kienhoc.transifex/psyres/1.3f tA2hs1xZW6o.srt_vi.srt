@@ -1,0 +1,84 @@
+0
+00:00:06,140 --> 00:00:10,780
+Tôi đã yêu cầu các bạn tưởng tượng rằng ta làm một nghiên cứu, trong đó, ta chiếu hoặc phim bao lực
+
+1
+00:00:10,780 --> 00:00:15,240
+hoặc phim không bạo lực, sau đó đo nhịp tim và huyết áp để kiểm tra xem
+
+2
+00:00:15,240 --> 00:00:19,750
+dự đoán rằng phim bạo lực sẽ làm tăng nhịp tim và huyết áp có đúng không.
+
+3
+00:00:19,750 --> 00:00:24,730
+Biến độc lập ở đây là thứ mà ta đã điều khiển, là mức độ bao lực của bộ phim
+
+4
+00:00:24,730 --> 00:00:27,460
+mà những người tham gia xem.
+
+5
+00:00:27,460 --> 00:00:33,120
+Biến phụ thuộc, thứ mà ta phải đo lường, là nhịp tim và huyết áp.
+
+6
+00:00:33,120 --> 00:00:36,650
+Giờ đến phần điều khiển biến độc lập, ta cần bàn về cách điều khiển
+
+7
+00:00:36,650 --> 00:00:41,219
+sao cho hợp lý, vì ta muốn điều khiển biến độc lập
+
+8
+00:00:41,219 --> 00:00:43,719
+mà vẫn giữ nguyên các biến còn lại.
+
+9
+00:00:43,719 --> 00:00:46,969
+Ta phải đảm bảo rằng ta đang thực hiện ấn định một cách ngẫu nhiên.
+
+10
+00:00:46,969 --> 00:00:52,000
+Tức lại cơ hội ở một trong hai tình huống kia của mỗi người là như nhau.
+
+11
+00:00:52,000 --> 00:00:54,760
+Ta sử dụng biện pháp phân bổ ngẫu nhiên.
+
+12
+00:00:54,760 --> 00:00:59,179
+Tôi có thể gieo súc sắc, tung đồng xu, hoặc viết một chương trình để phân bổ mọi người
+
+13
+00:00:59,179 --> 00:01:01,289
+về hai tình huống kia.
+
+14
+00:01:01,289 --> 00:01:05,330
+Trong nghiên cứu mà tôi đã mô tả, những người đến vào ca sáng sẽ xem phim bạo lực
+
+15
+00:01:05,330 --> 00:01:11,630
+còn những người đến vào ca chiều sẽ xem phim không bạo lực.
+
+16
+00:01:11,630 --> 00:01:17,580
+Chúng tôi đã không sử dụng hình thức ấn định ngẫu nghiên - bạn ở trong tình huống nào là phụ thuộc vào thời gian trong ngày,
+
+17
+00:01:17,580 --> 00:01:21,450
+bạn không có cơ hội ngẫu hiện được phân về một trong hai tình huống.
+
+18
+00:01:21,450 --> 00:01:24,720
+Không dùng ấn định ngẫu nhiên thì có vấn đề gì?
+
+19
+00:01:24,720 --> 00:01:28,190
+Có thể có sự khác biệt gì giữa những người đến vào buổi sáng với những người
+
+20
+00:01:28,190 --> 00:01:29,549
+đến vào buổi chiều?
+

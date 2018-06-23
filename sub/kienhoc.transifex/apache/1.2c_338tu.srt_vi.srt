@@ -1,0 +1,208 @@
+0
+00:00:00,000 --> 00:00:00,075
+wermarter
+
+1
+00:00:00,075 --> 00:00:00,700
+Xin chào.
+
+2
+00:00:00,700 --> 00:00:03,290
+Trong video này, ta sẽ khám phá trang web
+
+3
+00:00:03,290 --> 00:00:05,440
+Databricks Community Edition.
+
+4
+00:00:05,440 --> 00:00:07,540
+Tôi sẽ giả sử bạn đã tạo một tài khoản
+
+5
+00:00:07,540 --> 00:00:09,540
+và đăng nhập vào tại
+community.cloud.databricks.com
+
+6
+00:00:09,540 --> 00:00:11,970
+
+7
+00:00:11,970 --> 00:00:15,760
+Bạn sẽ nhìn thấy màn hình "Welcome to Databricks" như tôi.
+
+8
+00:00:15,760 --> 00:00:17,410
+Tôi muốn bạn chú ý vào
+
+9
+00:00:17,410 --> 00:00:19,430
+thanh bên trái này.
+
+10
+00:00:19,430 --> 00:00:21,520
+Đây là thanh đem đến khả năng truy cập
+
+11
+00:00:21,520 --> 00:00:23,210
+vào những tính năng của tài khoản của bạn.
+
+12
+00:00:23,210 --> 00:00:25,300
+Vậy bây giờ ta đang ở màn hình "welcome".
+
+13
+00:00:25,300 --> 00:00:27,930
+Tuy nhiên, dù bạn ở đâu đi nữa,
+
+14
+00:00:27,930 --> 00:00:31,950
+khi nhấn vào biểu tượng này, 
+bạn sẽ trở về trang chủ.
+
+15
+00:00:31,950 --> 00:00:34,000
+Hai nút kế là "Home" và "Workspace",
+
+16
+00:00:34,000 --> 00:00:36,390
+chúng sẽ đưa bạn đến với
+không gian làm việc của mình.
+
+17
+00:00:36,390 --> 00:00:39,360
+Vào trong menu này, bạn sẽ tìm thấy được
+
+18
+00:00:39,360 --> 00:00:41,610
+các nội dung khác nhau có sẵn với bạn.
+
+19
+00:00:41,610 --> 00:00:44,540
+Nút Home sẽ đưa bạn trực tiếp
+đến với nơi làm việc của riêng bạn
+
+20
+00:00:44,540 --> 00:00:46,260
+bên trong không gian làm việc.
+
+21
+00:00:46,260 --> 00:00:48,390
+Trong cột User là tên tài khoản của bạn.
+
+22
+00:00:48,390 --> 00:00:51,210
+Bạn sẽ tìm thấy những file của mình ở đây.
+
+23
+00:00:51,210 --> 00:00:53,700
+Có vài Option quan trọng cung cấp cho bạn
+
+24
+00:00:53,700 --> 00:00:55,460
+bằng cách click phải chuột.
+
+25
+00:00:55,460 --> 00:00:57,380
+Ví dụ, khi click phải chuột lên file,
+
+26
+00:00:57,380 --> 00:01:00,500
+bạn có thể nhân bản (clone), sửa tên (rename),
+xoá (delete) và xuất ra (export).
+
+27
+00:01:00,500 --> 00:01:03,060
+Và click phải trên không gian trắng trong thư mục,
+
+28
+00:01:03,060 --> 00:01:05,990
+bạn có thể tạo sổ ghi chép (notebooks),
+thư viện (libraries) và thư mục (folders)
+
+29
+00:01:05,990 --> 00:01:10,850
+hoặc nhập lên một file từ 
+máy tính cá nhân hay URL.
+
+30
+00:01:10,850 --> 00:01:13,740
+Ở dòng bên dưới, bạn sẽ tìm thấy những định dạng file
+
+31
+00:01:13,740 --> 00:01:16,020
+được website hỗ trợ.
+
+32
+00:01:16,020 --> 00:01:17,800
+Sử dụng nút Recent bên đây,
+
+33
+00:01:17,800 --> 00:01:21,830
+bạn có thể truy cập nhanh đến những nội dung
+bạn đã duyệt qua gần đây.
+
+34
+00:01:21,830 --> 00:01:24,310
+Còn sử dụng nút Search ở phía dưới thanh công cụ,
+
+35
+00:01:24,310 --> 00:01:28,350
+bạn sẽ tìm được những thông tin liên quan
+một cách nhanh chóng.
+
+36
+00:01:28,350 --> 00:01:30,820
+Và cuối cùng là nút Cluster,
+
+37
+00:01:30,820 --> 00:01:33,350
+nó được dùng để tạo một cluster (cụm máy tính) mới.
+
+38
+00:01:33,350 --> 00:01:36,450
+Bạn có thể đặt tên cho cluster-- ví dụ: my-cluster
+
+39
+00:01:36,450 --> 00:01:41,760
+Chọn Spark 1.6.1 và nhấn Create Cluster.
+
+40
+00:01:41,760 --> 00:01:43,740
+Vài giây sau, một cluster (cụm máy tính) mới sẽ được tạo
+
+41
+00:01:43,740 --> 00:01:46,041
+và biểu thị ra cho bạn.
+
+42
+00:01:46,041 --> 00:01:48,030
+Bạn có thể thấy một vài thao tác ở bên phải
+
+43
+00:01:48,030 --> 00:01:50,220
+như là khởi động lại cụm máy tính
+
+44
+00:01:50,220 --> 00:01:51,972
+hoặc kết thúc nó.
+
+45
+00:01:51,972 --> 00:01:54,640
+
+46
+00:01:54,640 --> 00:01:58,160
+Bạn sẽ tìm thấy nhiều thông tin liên quan hơn
+trong các video tiếp theo.
+
+47
+00:01:58,160 --> 00:02:00,550
+Vậy là chúng ta đã tìm hiểu sơ lược về
+một vài tính năng cơ bản của tài khoản
+
+48
+00:02:00,550 --> 00:02:02,448
+Databricks Community Edition.
+
+49
+00:02:02,448 --> 00:02:02,948
+

@@ -1,0 +1,229 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/SyexB3Nnzug
+phuongmai201 1/10
+
+1
+00:00:06,030 --> 00:00:08,870
+Rất vui được gặp lại và chào mừng các bạn trở lại với khóa học "Quản trị vận hành".
+
+2
+00:00:08,870 --> 00:00:12,039
+Chúng ta sẽ tiếp tục với nhóm video 
+
+3
+00:00:12,039 --> 00:00:16,429
+về 7 công cụ của quản lí chất lượng và hôm nay ta sẽ nói về Biểu đồ phân bố tần số.
+
+4
+00:00:16,429 --> 00:00:21,039
+Một cách đơn giản, biểu đồ phân bố tần số chỉ là một cách biểu thị bằng hình học 
+
+5
+00:00:21,039 --> 00:00:24,050
+về những biến đổi hay phân bố của một tập dữ liệu.
+
+6
+00:00:24,050 --> 00:00:27,839
+Cái chúng ta làm là ta sẽ thu thập dữ liệu và chia thành 2 loại
+
+7
+00:00:27,839 --> 00:00:32,278
+và bây giờ ta sẽ lập một biểu đồ. Vậy khi sử dụng biểu đồ phân bố tần số, 
+
+8
+00:00:32,278 --> 00:00:35,679
+ta cố gắng quyết định xem ta có thể thấy hình dạng
+
+9
+00:00:35,679 --> 00:00:38,780
+của dữ liệu phân bố không? Nó có được phân bố một cách thông thường không?
+
+10
+00:00:38,780 --> 00:00:42,500
+Có bất kỳ bias 
+
+11
+00:00:42,500 --> 00:00:47,500
+hay skewness nào không ? Ta có cần so sánh đầu ra qua các qui trình? 
+
+12
+00:00:47,500 --> 00:00:52,738
+Chẳng hạn như ta có cần kiểm tra dây chuyền sản xuất này so với dây chuyền khác và 
+
+13
+00:00:52,738 --> 00:00:56,000
+xem xét đầu ra để xem liệu chúng có giống nhau không? 
+
+14
+00:00:56,000 --> 00:00:59,159
+Một điều nữa về biểu đồ phân bố tần số là tất cả dữ liệu
+
+15
+00:00:59,159 --> 00:01:03,718
+trên đó phải là con số. Ta không thể sử dụng bất kỳ thứ gì như màu sắc
+
+16
+00:01:03,719 --> 00:01:08,649
+con người hay những thứ tương tự. Cái ta muốn làm là chú tâm vào dữ liệu
+
+17
+00:01:08,649 --> 00:01:09,250
+số học
+
+18
+00:01:09,250 --> 00:01:12,400
+Ta muốn xem cái gì phân loại 
+
+19
+00:01:12,400 --> 00:01:17,049
+các hình dạng của dữ liệu. Đây là một ví dụ về biểu đồ phân bố tần số
+
+20
+00:01:17,049 --> 00:01:20,330
+của một tổng đài. Như bạn thấy,
+
+21
+00:01:20,329 --> 00:01:23,750
+dọc đường đáy ta có nhóm các số phút 
+
+22
+00:01:23,750 --> 00:01:28,769
+chờ, 0 đến 1, 1 đến 2, 2 đến 3 và tương tự.
+
+23
+00:01:28,769 --> 00:01:31,859
+Tiếp đó trục y
+
+24
+00:01:31,859 --> 00:01:35,060
+ta đang thể hiện số khách hàng sẵn sàng chờ đợi
+
+25
+00:01:35,060 --> 00:01:39,790
+trong những số phút cụ thể đó. Và bây giờ bạn có thể thấy đây gần như là một
+
+26
+00:01:39,790 --> 00:01:41,390
+sự phân bố bình thường
+
+27
+00:01:41,390 --> 00:01:45,200
+của dữ liệu bởi nó gần như là một hình chuông
+
+28
+00:01:45,200 --> 00:01:49,228
+có đỉnh đầu ở giữa và như bạn thấy
+
+29
+00:01:49,228 --> 00:01:53,640
+các cột liền kề nhau. Ta đã phân loại dữ liệu 
+
+30
+00:01:53,640 --> 00:01:58,430
+rồi kiểm kiểm tra giữa 1 và 2 phút, 2 và 3 phút, 3 và 4
+
+31
+00:01:58,430 --> 00:02:01,520
+ta kiểm tra chỉ để xem tần số của 
+
+32
+00:02:01,519 --> 00:02:05,728
+mỗi nhóm. Nói cách khác, nó cũng giống như
+
+33
+00:02:05,728 --> 00:02:11,590
+một cách biểu thị hình học về phân bố tần số.
+
+34
+00:02:11,590 --> 00:02:15,140
+Vậy khi ta nhìn vào một biểu đồ phân bố tần số, ta để ý rằng hình dạng của dữ liệu 
+
+35
+00:02:15,139 --> 00:02:15,779
+cung cấp 
+
+36
+00:02:15,780 --> 00:02:20,890
+cái nhìn bên trong về qui trình sản xuất dữ liệu. Một đường cong hình chuông thể hiện
+
+37
+00:02:20,889 --> 00:02:22,449
+sự phân bố bình thường.
+
+38
+00:02:22,449 --> 00:02:27,310
+Nếu ta có một cái đuôi ở phía bên phải hay bên trái chỉ skewness
+
+39
+00:02:27,310 --> 00:02:30,390
+của dữ liệu. Nếu ta kết thúc với một hình chữ nhật 
+
+40
+00:02:30,389 --> 00:02:33,419
+thì nó cho thấy sự phân bố đồng đều.
+
+41
+00:02:33,419 --> 00:02:37,059
+Vậy bằng cách nhìn vào sự phân bố của dữ liệu, ta có
+
+42
+00:02:37,060 --> 00:02:40,420
+ý niệm về loại qui trình ta có
+
+43
+00:02:40,419 --> 00:02:45,329
+Khi ta xây dựng một biểu đồ phân bố tần số, ta có thể làm trên Excel
+
+44
+00:02:45,330 --> 00:02:50,340
+ta nhập dữ liệu theo nhóm. Vậy nếu ta nhìn vào đường kính lỗ 
+
+45
+00:02:50,340 --> 00:02:54,069
+ta có, tất cả các nhóm đều nhỏ hơn 10 cm
+
+46
+00:02:54,069 --> 00:02:57,840
+nằm giữa 10-11, 11-12 và tương tự
+
+47
+00:02:57,840 --> 00:03:02,650
+và ta sẽ tính toán tần số của từng nhóm
+
+48
+00:03:02,650 --> 00:03:06,039
+Chú ý không nhóm nào trùng với nhau 
+
+49
+00:03:06,039 --> 00:03:09,039
+nên chúng khác biệt so với những nhóm khác
+
+50
+00:03:09,039 --> 00:03:12,379
+Từ đây ta điền vào biểu đồ
+
+51
+00:03:12,379 --> 00:03:16,789
+sử dụng công cụ biểu đồ và ta chọn biểu đồ cột
+
+52
+00:03:16,789 --> 00:03:20,289
+sau đó ta chỉnh sửa để giảm thiểu khoảng cách giữa 2 cột
+
+53
+00:03:20,289 --> 00:03:25,259
+cũng như cung cấp thêm tên biểu đồ. Vậy việc tạo một biểu đồ phân bố tần số khá là đơn giản.
+
+54
+00:03:25,259 --> 00:03:29,319
+Ta thật ra đang thể hiện sự phân bố tần số của dữ liệu
+
+55
+00:03:29,319 --> 00:03:33,459
+hay biểu thị nó bằng hình học để thấy được hình dạng của nó.
+
+56
+00:03:33,459 --> 00:03:36,739
+Lần tới ta sẽ nói về một công cụ khác. Hẹn gặp lại các bạn trong bài sau.
+

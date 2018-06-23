@@ -1,0 +1,364 @@
+1
+00:00:08,552 --> 00:00:12,200
+https://youtu.be/o9TX1RG8vH4
+So we've been talking about a lot
+of terminology, a lot of concepts.
+
+2
+00:00:12,200 --> 00:00:15,210
+We're going to introduce one more
+concept before we're done.
+
+3
+00:00:15,210 --> 00:00:16,980
+And that is the concept of inheritance.
+
+4
+00:00:16,980 --> 00:00:19,620
+It's a very important concept for
+object orientation.
+
+5
+00:00:20,700 --> 00:00:24,600
+Just at some point, I just want to give you
+a basic understanding what's going on.
+
+6
+00:00:25,620 --> 00:00:27,800
+So everything we've done so far
+
+7
+00:00:27,800 --> 00:00:31,080
+when we've created our own class is
+we just say okay, let's make a class.
+
+8
+00:00:32,280 --> 00:00:34,560
+But inheritance is the concept
+that says, you know what?
+
+9
+00:00:34,560 --> 00:00:35,990
+We're going to create a class, and
+
+10
+00:00:35,990 --> 00:00:39,140
+we're going to borrow a bunch of
+stuff from this other class.
+
+11
+00:00:39,140 --> 00:00:41,060
+And we might add a little bit of stuff.
+
+12
+00:00:41,060 --> 00:00:45,250
+And so it's another term for
+this is extending a class.
+
+13
+00:00:45,250 --> 00:00:48,350
+Here's a class and
+then class b extends class a.
+
+14
+00:00:48,350 --> 00:00:53,030
+And it's a way to sort of just
+write once use many times, and
+
+15
+00:00:53,030 --> 00:00:55,610
+create sort of custom narrower versions.
+
+16
+00:00:55,610 --> 00:00:56,870
+Okay?
+
+17
+00:00:56,870 --> 00:01:00,540
+The new class, which we think of as
+the  child class, and the parent class.
+
+18
+00:01:00,540 --> 00:01:05,460
+The new class can have new capabilities or
+even override capabilities of a parent.
+
+19
+00:01:05,460 --> 00:01:06,340
+And then add some more.
+
+20
+00:01:06,340 --> 00:01:08,280
+Add, override, change, but
+
+21
+00:01:08,280 --> 00:01:11,670
+it's mostly to copy as much of the parent
+as we're going to need to use in the child.
+
+22
+00:01:12,860 --> 00:01:13,435
+Right?
+
+23
+00:01:13,435 --> 00:01:15,200
+Subclasses is another term for this.
+
+24
+00:01:15,200 --> 00:01:17,590
+Subclasses are the child classes.
+
+25
+00:01:17,590 --> 00:01:19,300
+Classes are the parent classes.
+
+26
+00:01:19,300 --> 00:01:21,500
+So we're going to make a PartyAnimal,
+
+27
+00:01:21,500 --> 00:01:24,770
+which is just this same PartyAnimal
+we've been doing all along.
+
+28
+00:01:24,770 --> 00:01:27,530
+Right? We construct it,
+we copy the name,
+
+29
+00:01:27,530 --> 00:01:31,980
+and then what we're going to do is we're
+going to add a new class, right?
+
+30
+00:01:31,980 --> 00:01:35,380
+And we're going to say, let's make
+a new class called FootballFan.
+
+31
+00:01:35,380 --> 00:01:37,260
+And that class extends PartyAnimal,
+
+32
+00:01:37,260 --> 00:01:43,320
+which means it inherits everything
+that PartyAnimal has and then some.
+
+33
+00:01:43,320 --> 00:01:48,480
+And so the and then some is
+football fans have points.
+
+34
+00:01:48,480 --> 00:01:51,590
+So the FootballFan has an x and
+a name and points.
+
+35
+00:01:51,590 --> 00:01:56,360
+So all these member variables you can
+assume are automatically right here.
+
+36
+00:01:56,360 --> 00:01:59,870
+Because we said,
+pull in all of PartyAnimal.
+
+37
+00:01:59,870 --> 00:02:05,190
+And all the constructors and all that
+other stuff, that is pulled in as well.
+
+38
+00:02:05,190 --> 00:02:08,250
+And we're going to add one new
+method called touchdown.
+
+39
+00:02:08,250 --> 00:02:12,110
+Which adds 7 to the points and says party.
+
+40
+00:02:13,220 --> 00:02:18,900
+Calls our own method self.party, which
+is calling this code from our parent,
+
+41
+00:02:18,900 --> 00:02:22,650
+but it's not really our parent, and
+then print out the points, okay?
+
+42
+00:02:22,650 --> 00:02:26,680
+So this is a way to extend it, so
+this is a new instance variable, and
+
+43
+00:02:26,680 --> 00:02:31,130
+this is a new method inside
+of the class FootballFan.
+
+44
+00:02:31,130 --> 00:02:38,170
+So if we look at this code right here, and
+we say let's make ourselves a PartyAnimal.
+
+45
+00:02:38,170 --> 00:02:43,010
+So that basically creates a variable
+with init constructor that puts the x in
+
+46
+00:02:43,010 --> 00:02:46,280
+here and Sally in there, in the name.
+
+47
+00:02:46,280 --> 00:02:49,050
+Well, and then if we look at,
+we call party, and
+
+48
+00:02:49,050 --> 00:02:52,280
+this becomes 1 in this s instance.
+
+49
+00:02:52,280 --> 00:02:55,850
+And then later in the code,
+we say j equals FootballFan.
+
+50
+00:02:55,850 --> 00:03:00,360
+So we make another object so
+the j object has in it an x and
+
+51
+00:03:00,360 --> 00:03:05,870
+a name, because of this, and
+the j also then has a points in it.
+
+52
+00:03:05,870 --> 00:03:07,730
+And it also has methods.
+
+53
+00:03:07,730 --> 00:03:11,330
+So if we called j.party, that's
+going to run
+
+54
+00:03:12,380 --> 00:03:17,170
+this code right here and that's
+going to change x to be 1. Right?
+
+55
+00:03:17,170 --> 00:03:19,510
+And then the name is Jim.
+
+56
+00:03:19,510 --> 00:03:23,810
+And if we call j.touchdown,
+it's going to run this code.
+
+57
+00:03:23,810 --> 00:03:26,240
+So it's going to add
+points add to be 7.
+
+58
+00:03:26,240 --> 00:03:28,480
+And then it's going to
+call the party method,
+
+59
+00:03:28,480 --> 00:03:30,900
+which is going to then going
+to turn this into 2 and
+
+60
+00:03:30,900 --> 00:03:33,850
+then it's going to print this thing out,
+and then it's going to be done.
+
+61
+00:03:33,850 --> 00:03:39,550
+And so that's sort of the essence of
+extension, or inheritance, as we
+
+62
+00:03:39,550 --> 00:03:44,710
+create a FootballFan class inheriting
+everything from the PartyAnimal class.
+
+63
+00:03:44,710 --> 00:03:49,180
+And so, we can have instances of PartyAnimals,
+and we can have instances of FootballFans.
+
+64
+00:03:49,180 --> 00:03:53,710
+And the FootballFan instance has
+everything that the PartyAnimal has,
+
+65
+00:03:53,710 --> 00:03:55,870
+in addition to a little bit more.
+
+66
+00:03:55,870 --> 00:03:57,240
+So we've covered a lot of things.
+
+67
+00:03:57,240 --> 00:03:59,290
+Class, these are words you should know,
+right?
+
+68
+00:03:59,290 --> 00:04:02,420
+Class, method, object,
+instance, constructor, and
+
+69
+00:04:02,420 --> 00:04:06,710
+inheritance are all words now that you
+should have some basic understanding of.
+
+70
+00:04:06,710 --> 00:04:08,580
+Not that I want to make
+you write code on this.
+
+71
+00:04:09,960 --> 00:04:12,780
+So, basically, that kind of gives us
+a summary of object oriented programming.
+
+72
+00:04:12,780 --> 00:04:16,231
+My objective in this is not to turn
+you into a computer scientist,
+
+73
+00:04:16,231 --> 00:04:20,120
+I don't even expect you to be able to
+write objects, I really just want to for
+
+74
+00:04:20,120 --> 00:04:24,262
+the rest of this class, use this
+terminology, like construct, and method,
+
+75
+00:04:24,262 --> 00:04:28,466
+and instance, and object, and have you
+understand it, because as we move into
+
+76
+00:04:28,466 --> 00:04:32,608
+more and more complex things, it's more
+important that I use the real words to
+
+77
+00:04:32,608 --> 00:04:36,087
+describe things rather than sort
+of hiding what the reality is.

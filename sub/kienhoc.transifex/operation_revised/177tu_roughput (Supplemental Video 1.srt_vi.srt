@@ -1,0 +1,98 @@
+0
+00:00:00,000 --> 00:00:00,001
+Ngô Thiện 1/11/2016
+
+1
+00:00:05,000 --> 00:00:14,259
+chào mừng các bạn trở lại với khóa học quản trị vận hành. 
+Trong bài bổ trợ này, ta sẽ nói về thông lượng quá trình,
+chỉ ra những gì chi phối tỉ lệ của các đơn vị xuyên suốt
+ một quá trình nào đó.
+
+2
+00:00:14,259 --> 00:00:39,380
+Ta sẽ xem xét tỉ lệ đến tốc độ đến của đơn vị và tốc đọ xử lý nó.
+Bạn có nhớ là ta đã nói đến tốc độ lưu thông trung bình là gì không?
+Chúng ta đã biết đó chính là số lượng trung bình các đơn vị được đưa vào xư lý trong một khoảng thời gian cụ thể. Chẳng hạn như 10 đơn vị mỗi giờ, 50 đơn vị mỗi ngày.
+
+
+3
+00:00:39,380 --> 00:00:55,490
+12 đơn vị mỗi phút, 100 đơn vị mỗi tuần, 3 mỗi giây v.v... Chúng ta sẽ xem xét các đơn vị mỗi khoảng thời gian. Vậy thì cái gì tác động đến thông lượng. Như tôi đã nói từ đầu, nó là
+
+4
+00:00:55,490 --> 00:01:21,730
+tốc độ đến, tức là có bao nhiêu đơn vị đến và đi vào một quá trình, và nó cũng tác động đến tốc độ xử lý riêng, tức là có bao nhiều đơn vị được xử lý. Một lần nữa chúng ta sẽ xem xét các đơn vị mỗi khoảng thời gian. Bây giời có 3 trường hợp khác nhau. Một là tốc độ đến vượt tốc độ xử lý
+
+5
+00:01:21,730 --> 00:01:26,260
+Trong trường hợp này, đơn vị đến sẽ nhiều hơn đơn vị có thể xử lý được
+
+6
+00:01:26,260 --> 00:01:47,820
+Trường hơp 2 là tốc độ đến thấp hơn tốc độ xử lý, nghĩa là quá trình có thể xử lý nhiều hơn số lượng đơn vị đến. Và trường hợp 3 là khi tốc độ đến bằng tốc độ xử lý. Chúng ta sẽ xem xét những trường hợp này một cách độc lập.
+
+7
+00:01:47,819 --> 00:02:03,459
+Trường hợp thứ nhất, khi tốc độ đến vượt tỉ lệ xử lý, nhìn vào biểu đồ này, bạn có thể thấy các đơn vị đang làm tăng lượng hàng tồn kho, bởi vì các đơn vị tiếp tục đến nhưng quá trình xử lý không sẵn sàng để tiếp nhận những đơn vị mới được đưa vào này.
+
+
+8
+00:02:03,459 --> 00:02:11,879
+Do đó tồn kho sẽ tăng lên. Trong trường hợp này, đầu ra của quá trình của tốc độ thông lượng là 9
+00:02:11,879 --> 00:02:22,159 sẽ giới hạn đến khả năng của chính quá trình xử lý. Quá trình này sẽ sử dụng hết quỹ thời gian. Đó là
+
+10
+00:02:22,159 --> 00:02:29,120
+100% được sử dụng, nghĩa là nếu tốc độ đến vượt tốc độ xử lý thì sẽ không có thời gian nghỉ cho cả quá trình.
+
+11
+00:02:29,120 --> 00:03:03,590
+100% công suất đã được sử dụng, và tốc độ đến cao sẽ làm tăng công việc đối với xử lý hàng tồn kho. Bởi vì muốn một đơn vị qua xử lý, bạn phải chờ cho quá trình xử lý nó và làm cho quá trình chậm đi. Không thể xử lý tất cả các đơn vị đó. Vì thế khi nghĩ đến việc tăng tốc độ lưu thông của một quá trình, ta phải luôn cân nhắc đến thời gian quá trình có thể xử lý các đơn vị mới này.
+
+12
+00:03:03,590 --> 00:03:06,509
+Trường hợp thứ hai là tốc độ đến thấp hơn tốc độ xử lý.
+
+13
+00:03:06,509 --> 00:03:26,759
+Và trường hợp này trong thực tiễn hầu như không làm tăng lượng hàng tòn kho.
+Và thông thường quá trình phải chở đợi cho các đơn vị khác đến.
+Bây giờ chúng ta có thể tạo ra một lượng tồn kho nhỏ bởi vì sự biến thiên trong việc nhập vào các đơn vị.
+
+14
+00:03:26,759 --> 00:03:36,598
+Hãy nhớ rằng khi nói đến
+
+15
+00:03:36,598 --> 00:03:43,829
+vậy nên trong trường hợp này, khi tỉ lệ đến thấp hơn tỉ lệ xử lý
+
+16
+00:03:43,830 --> 00:04:11,189
+thì tốc độ lưu thông trung bình sẽ bị chi phối bởi tốc độ đến của các đơn vị. Nghĩa là đầu ra của quá trình bị giới hạn bởi tốc độ đến. Công suất trung bình của quá trình sẽ thấp hơn 100%. Bởi vì sẽ có một khoảng thời thời quá trình chờ các đơn vị đến để xử lý.
+
+17
+00:04:11,189 --> 00:04:19,879
+Và công việc của chúng ta trong xử lý hàng tồn kho là ít hoặc không có bởi vì quá trình xử lý nhanh hơn các đơn vị đến. Trường hợp thứ 3 là khi tốc độ đến bằng tố độ xử lý
+
+18
+00:04:19,879 --> 00:04:27,089
+Cũng giống như trường hợp trước khi tốc độ đến thấp hơn tốc độ xử lý
+
+
+19
+00:04:27,089 --> 00:04:47,339
+Nhưng mặc dù tốc độ đến và tốc độ xử lý là như nhau, vẵn có sự biến thiên trong các đơn vị đến. Cho nên chúng ta có thể tạo ra một lượng nhỏ tồn kho và có thể có lúc quá trình xử lý phải chờ. Vậy nên tốc độ vào bằng tốc độ xử lý, bằng với tốc độ lưu thông
+
+20
+00:04:47,339 --> 00:04:55,500
+cho nên đầu ra bị giới hạn bởi khả năng của quá trình xử lý.
+
+21
+00:04:55,500 --> 00:05:17,879
+Mức sử dụng công năng có thể là 100%, nghĩa là quá trình làm việc hầu như hết quỹ thời gian và chúng ta có thể sẽ phải xử lý tồn kho tăng lên do sự biến thiên của tốc độ đến và tố độ xử lý. Vậy nên khi nghỉ đến thông lượng của một quá trình,
+
+22
+00:05:17,879 --> 00:05:39,000
+nhớ phải cân nhắc đén tốc đọ đến và tốc độ xử lý của nó. Nếu tốc độ đến vượt quá tốc độ xử lý thì tốc độ xử lý chi phối tốc độ lưu thông. Nếu ttoocs độ đến nhỏ hơn tốc độ xử lý thì tốc độ đến chi phối tốc độ lưu thông. Cảm ơn các bạn đã xem. Gặp lại các bạn sau nhé.

@@ -1,0 +1,685 @@
+1
+00:00:02,980 --> 00:00:05,220
+Ever been on one of those twirly carnival
+rides?
+
+2
+00:00:05,219 --> 00:00:11,039
+You know, the ones where you get into a giant cylinder and stand against the wall, and then they spin you around like a wet salad?
+
+3
+00:00:11,039 --> 00:00:17,160
+If you've had that uniquely nauseating experience, then you know that the simple act of spinning in a circle can be ... intense.
+
+4
+00:00:17,170 --> 00:00:21,170
+It also happens to be one of the most
+misunderstood concepts in Newtonian physics.
+
+5
+00:00:21,170 --> 00:00:27,320
+It’s known as uniform circular motion, and it’s what occurs when anything moves along a circular path in a consistent way.
+
+6
+00:00:27,320 --> 00:00:32,960
+Most of the confusion about this idea has to do with the fact that things accelerate inward as they move in a circle --
+
+7
+00:00:32,960 --> 00:00:37,340
+a kind of acceleration known as centripetal acceleration. But you'll often hear people talking about
+
+8
+00:00:37,350 --> 00:00:41,310
+centrifugal acceleration pushing things
+outward as they move in a circle.
+
+9
+00:00:41,310 --> 00:00:46,719
+That's actually where centrifuges get their name!
+And centrifugal acceleration isn't wrong, exactly.
+
+10
+00:00:46,719 --> 00:00:49,740
+It's just ... not real.
+So, to explain how things really accelerate
+
+11
+00:00:49,750 --> 00:00:54,280
+when they move in circles, let's talk about
+the physics of that ride as it spins you around
+
+12
+00:00:54,280 --> 00:00:57,960
+-- assuming you're willing to risk stepping
+inside. I'm getting dizzy just thinking about it.
+
+13
+00:00:57,960 --> 00:01:08,819
+[Theme Music]
+
+14
+00:01:08,819 --> 00:01:13,159
+In 1960, NASA was getting ready
+to send people to space.
+
+15
+00:01:13,159 --> 00:01:16,379
+They knew that a big part of space flight
+would involve acceleration,
+
+16
+00:01:16,379 --> 00:01:20,500
+so they wanted to test how much acceleration people could handle before they'd black out.
+
+17
+00:01:20,500 --> 00:01:24,718
+Because that’s what happens when too much blood is forced away from your brain for too long.
+
+18
+00:01:24,718 --> 00:01:28,538
+So engineers tested potential astronauts by putting them in a human centrifuge --
+
+19
+00:01:28,539 --> 00:01:31,219
+Basically, a superpowered version
+of those rides at the fair.
+
+20
+00:01:31,219 --> 00:01:37,079
+They found that most people could withstand an acceleration of around 98 meters per second squared for 10 minutes --
+
+21
+00:01:37,079 --> 00:01:41,340
+That's about ten times the acceleration caused by gravity that you'd feel just by jumping in the air.
+
+22
+00:01:41,349 --> 00:01:45,539
+With that in mind, let's say we've been asked to calculate the safety of one of those carnival rides --
+
+23
+00:01:45,540 --> 00:01:49,359
+which means we'll need to figure
+out how much acceleration riders would experience.
+
+24
+00:01:49,359 --> 00:01:52,959
+There are equations we can use to do that,
+because just like with all the other kinds
+
+25
+00:01:52,968 --> 00:01:57,928
+of motion we've talked about so far, uniform
+circular motion has four main qualities --
+
+26
+00:01:57,929 --> 00:02:02,049
+position, velocity, acceleration, and time.
+And they're all related to each other.
+
+27
+00:02:02,049 --> 00:02:05,649
+When it comes to uniform circular motion,
+position is the most obvious quality:
+
+28
+00:02:05,649 --> 00:02:09,840
+There’s an object, and it’s on a circular path.
+But velocity is a little less intuitive.
+
+29
+00:02:09,849 --> 00:02:14,939
+At any given moment, velocity tells you how fast the object’s going, and in what direction.
+
+30
+00:02:14,960 --> 00:02:17,800
+And that direction … is NOT along the path of the circle.
+
+31
+00:02:17,800 --> 00:02:21,880
+It’s actually perpendicular to the radius of the circle -- along what we call a tangent.
+
+32
+00:02:21,879 --> 00:02:27,259
+So if you draw an arrow representing the velocity on the circle, it’ll only touch the circle in one spot.
+
+33
+00:02:27,259 --> 00:02:30,679
+OK bear with me here, as this
+might seem kinda strange, but it’s true!
+
+34
+00:02:30,680 --> 00:02:33,620
+One of the nice things about the physics
+of motion is that often,
+
+35
+00:02:33,620 --> 00:02:35,860
+you can just try it out for yourself and see what happens.
+
+36
+00:02:35,860 --> 00:02:38,580
+So here’s a quick way to see tangential velocity in action:
+
+37
+00:02:38,580 --> 00:02:42,380
+All you need is some string,
+a key -- or some other small object to tie
+
+38
+00:02:42,389 --> 00:02:46,419
+the string to -- and a wide open space so
+nobody gets hurt , by a key flying around.
+
+39
+00:02:46,419 --> 00:02:50,359
+Move the string so the key starts twirling
+around in counterclockwise circles, parallel
+
+40
+00:02:50,360 --> 00:02:53,220
+to the ground. Then, when the key is at the
+point in the circle that’s farthest away
+
+41
+00:02:53,219 --> 00:02:56,719
+from you… let go of the string. The key
+flies to the left!
+
+42
+00:02:56,719 --> 00:03:00,240
+Here’s why: In earlier episodes, we’ve
+talked about inertia and the idea that if
+
+43
+00:03:00,240 --> 00:03:04,280
+an object is in motion, it’ll remain in
+that motion unless it’s acted upon by a
+
+44
+00:03:04,280 --> 00:03:07,390
+net external force.
+Which means that something moving in a straight
+
+45
+00:03:07,389 --> 00:03:11,609
+line is going to continue moving in a straight
+line unless a force -- one that isn’t balanced
+
+46
+00:03:11,610 --> 00:03:15,070
+out by other forces -- turns it.
+Whenever you see something turning?
+
+47
+00:03:15,069 --> 00:03:19,359
+There’s a net external force acting on it.
+That’s why, at any given moment, the velocity
+
+48
+00:03:19,370 --> 00:03:24,509
+of an object moving in a circle will be tangent
+to it. Without a force to turn it, it just
+
+49
+00:03:24,509 --> 00:03:28,179
+flies in whatever direction it was moving
+last. Once you let go of the string, you got
+
+50
+00:03:28,180 --> 00:03:30,760
+rid of the force that was making the key turn
+in circles.
+
+51
+00:03:30,759 --> 00:03:36,149
+So it kept moving with the same velocity that
+it had at the exact moment you let go -- perpendicular
+
+52
+00:03:36,150 --> 00:03:40,340
+to the string connecting it to your hand,
+which was the center of the key’s circular
+
+53
+00:03:40,340 --> 00:03:44,289
+path. And now, we can finally talk about the
+mysterious force that was accelerating the
+
+54
+00:03:44,289 --> 00:03:48,609
+key -- changing the direction of its velocity
+so that it moved in a circle.
+
+55
+00:03:48,610 --> 00:03:53,450
+That force is the same reason riders on the
+human centrifuge spin in a circle -- in fact,
+
+56
+00:03:53,449 --> 00:03:58,280
+it’s the reason anything moves in a circle.
+That force is known as the centripetal force,
+
+57
+00:03:58,280 --> 00:04:01,360
+and the acceleration it causes is called centripetal
+acceleration.
+
+58
+00:04:01,360 --> 00:04:05,510
+And the important thing to remember about
+centripetal acceleration is that it’s always
+
+59
+00:04:05,509 --> 00:04:07,599
+directed toward the center of the circular
+path.
+
+60
+00:04:07,599 --> 00:04:12,000
+That makes a lot of sense, if you think about
+it in terms of how the velocity’s changing.
+
+61
+00:04:12,000 --> 00:04:16,319
+The key was only turning in circles because
+your hand was pulling it toward the center
+
+62
+00:04:16,319 --> 00:04:18,810
+of a circular path.
+But now think about what it’s like to be
+
+63
+00:04:18,810 --> 00:04:22,560
+on one of those centrifuge rides -- or, if
+you’ve never subjected yourself to one,
+
+64
+00:04:22,560 --> 00:04:27,329
+what it’s like to be in a car that turns
+sharply. The ride -- or the car -- is turning
+
+65
+00:04:27,329 --> 00:04:31,859
+in a circle, so there must be centripetal
+acceleration pushing you toward the middle
+
+66
+00:04:31,860 --> 00:04:34,370
+of that circle.
+Except, it feels like you’re being pushed
+
+67
+00:04:34,370 --> 00:04:38,860
+outward. People often attribute this sensation
+to centrifugal force. But that’s not real.
+
+68
+00:04:38,860 --> 00:04:42,658
+The reason that people confuse the centripetal
+force with what feels like a centrifugal
+
+69
+00:04:42,658 --> 00:04:46,728
+force comes down to a change in perspective
+-- what physicists call a frame of reference.
+
+70
+00:04:46,728 --> 00:04:51,228
+From the frame of reference of someone standing
+outside the human centrifuge, it’s easy
+
+71
+00:04:51,228 --> 00:04:55,060
+to see what’s actually happening: As the
+cylinder turns, it forces the people inside
+
+72
+00:04:55,060 --> 00:05:00,079
+it to move in a circle. And the wall is pressing
+on them to keep them turning -- it’s actually
+
+73
+00:05:00,079 --> 00:05:04,008
+pushing them toward the center of the circle!
+But the person inside the cylinder just sees
+
+74
+00:05:04,009 --> 00:05:07,180
+everything moving around with them.
+From their frame of reference, it feels like
+
+75
+00:05:07,180 --> 00:05:10,939
+they’re just being squashed against the
+wall -- as though there’s a centrifugal
+
+76
+00:05:10,939 --> 00:05:14,479
+force acting on them.
+But there’s nothing there to actually create
+
+77
+00:05:14,478 --> 00:05:19,310
+that force. Which is why physicists call it
+a fictitious force -- it doesn’t really exist.
+
+78
+00:05:19,310 --> 00:05:21,519
+So! Now that we know how acceleration works
+
+79
+00:05:21,519 --> 00:05:25,188
+when you’re moving in a circle, we can finally
+come up with some ways to connect position,
+
+80
+00:05:25,189 --> 00:05:29,659
+velocity, and acceleration -- and figure out
+if that centrifuge ride is safe for people.
+
+81
+00:05:29,658 --> 00:05:33,139
+But first, we have to talk about time. When
+something’s moving around a circle in a
+
+82
+00:05:33,139 --> 00:05:37,788
+consistent way -- in other words, its acceleration
+is constant -- it’ll take a certain amount
+
+83
+00:05:37,788 --> 00:05:41,978
+of time to return to its starting conditions.
+In this case, those starting conditions are
+
+84
+00:05:41,978 --> 00:05:46,800
+a particular point along the circular path.
+We call that time the period of the motion,
+
+85
+00:05:46,800 --> 00:05:49,538
+and the variable we use to represent it is
+a capital T.
+
+86
+00:05:49,538 --> 00:05:53,168
+Which isn’t too hard to remember, as long
+as you keep in mind that the period is an
+
+87
+00:05:53,168 --> 00:05:58,120
+amount of time. From timing the centrifuge
+ride in action, we know that it takes 2 seconds
+
+88
+00:05:58,120 --> 00:06:02,879
+to spin around once. So we’d say that the
+period of its motion is 2 seconds.
+
+89
+00:06:02,879 --> 00:06:07,778
+But sometimes it’s easier to talk about
+the same idea in another way -- how many revolutions
+
+90
+00:06:07,778 --> 00:06:11,969
+does the ride make in one second? That’s
+what we’d call the frequency of the motion
+
+91
+00:06:11,970 --> 00:06:15,969
+-- which we write as an f in equations.
+That’s simple enough to figure out: if it
+
+92
+00:06:15,968 --> 00:06:20,990
+takes the ride 2 seconds to make one revolution,
+then it’s making one half of a revolution
+
+93
+00:06:20,990 --> 00:06:25,650
+per second.It’s also not too difficult to
+relate period and frequency with an equation:
+
+94
+00:06:25,649 --> 00:06:29,739
+frequency is just 1, divided by the period.
+Now that we’ve gotten time out of the way,
+
+95
+00:06:29,740 --> 00:06:33,218
+let’s talk about position. We generally
+talk about distance in terms of the circumference
+
+96
+00:06:33,218 --> 00:06:37,248
+of the circle, because that tells us how many
+times you’ve gone around the circle.
+
+97
+00:06:37,249 --> 00:06:41,759
+In other words, if a centrifuge rider covers
+the same distance as one circumference, we
+
+98
+00:06:41,759 --> 00:06:46,699
+know they’ve made one revolution. And circumference
+is just 2 times pi times the radius of the
+
+99
+00:06:46,699 --> 00:06:53,399
+circle. So if that human centrifuge has a
+radius of 5 meters, riders would travel 31.4 meters every revolution.
+
+100
+00:06:53,399 --> 00:06:55,319
+Now: What about their speed? Well, in our
+
+101
+00:06:55,329 --> 00:06:59,068
+episodes on motion in a straight line, we
+talked about how average velocity is generally
+
+102
+00:06:59,069 --> 00:07:03,379
+equal to the change in position over the change
+in time -- -- which turns out to be a great
+
+103
+00:07:03,379 --> 00:07:06,180
+way to describe the speed of uniform circular
+motion.
+
+104
+00:07:06,180 --> 00:07:09,538
+When the rider’s made one revolution around
+the circle, they’ve covered a distance equal
+
+105
+00:07:09,538 --> 00:07:15,399
+to 2 times pi times r -- or, in this case,
+31.4 meters. That’s how far they’ve traveled.
+
+106
+00:07:15,399 --> 00:07:19,348
+And the amount of time it took was equal to
+the period of the ride’s motion. That’s
+
+107
+00:07:19,348 --> 00:07:21,408
+their change in time.
+Divide the distance they’ve traveled by
+
+108
+00:07:21,408 --> 00:07:25,348
+their change in time, and you get the speed
+equation for uniform circular motion. Using
+
+109
+00:07:25,348 --> 00:07:29,808
+that equation, we can calculate the speed
+of a rider on the centrifuge -- it’s 15.7
+
+110
+00:07:29,809 --> 00:07:33,059
+meters per second.
+Next, getting the equation for the magnitude
+
+111
+00:07:33,059 --> 00:07:37,729
+of centripetal acceleration -- how strong
+it is, basically -- is a little less straightforward.
+
+112
+00:07:37,728 --> 00:07:42,308
+That magnitude will be equal to the change
+in velocity over the change in time at any given
+
+113
+00:07:42,309 --> 00:07:46,729
+moment -- in other words, its derivative.
+Actually calculating the derivative can
+
+114
+00:07:46,728 --> 00:07:51,868
+get complicated, but it turns out to be equal
+to the speed, squared, divided by the radius
+
+115
+00:07:51,869 --> 00:07:54,689
+of the circle.
+This equation makes a lot of sense for a few
+
+116
+00:07:54,689 --> 00:07:58,789
+reasons: First, take a look at the units.
+Acceleration is measured in meters per second
+
+117
+00:07:58,788 --> 00:08:02,959
+squared, so we already know that whatever
+the equation for centripetal acceleration
+
+118
+00:08:02,959 --> 00:08:06,098
+is, the units have to work out to meters per
+second squared.
+
+119
+00:08:06,098 --> 00:08:10,459
+And they do: square the speed, and you end
+up with units of meters squared per second
+
+120
+00:08:10,459 --> 00:08:14,838
+squared. Just divide those units by meters,
+and you get meters per second squared. You
+
+121
+00:08:14,838 --> 00:08:19,019
+can also tell from this equation that if you
+increase your speed along the circular path
+
+122
+00:08:19,019 --> 00:08:23,338
+or decrease the radius of that path, you should
+end up with a higher acceleration.
+
+123
+00:08:23,338 --> 00:08:27,019
+And that relationship between acceleration,
+speed, and radius checks out in real life, too:
+
+124
+00:08:27,019 --> 00:08:31,649
+Try spinning the key on a string faster,
+or shortening the string but spinning it at
+
+125
+00:08:31,649 --> 00:08:36,059
+the same speed. You’ll feel the key pulling
+harder on your fingers, because it’s experiencing
+
+126
+00:08:36,059 --> 00:08:39,129
+more acceleration.
+And now that we have an equation for the acceleration
+
+127
+00:08:39,129 --> 00:08:42,860
+that riders would experience on the centrifuge,
+we can finally figure out if that ride is
+
+128
+00:08:42,860 --> 00:08:47,800
+safe. We already know that their speed would
+be 15.7 meters per second, and that the radius
+
+129
+00:08:47,799 --> 00:08:51,569
+of the ride is 5 meters.
+So, according to the equation for acceleration,
+
+130
+00:08:51,570 --> 00:08:56,360
+their acceleration would be 49.3 meters per
+second squared. That’s about half the acceleration
+
+131
+00:08:56,360 --> 00:09:01,430
+that NASA found would make people black out.
+So the ride is probably safe, at least for
+
+132
+00:09:01,429 --> 00:09:05,569
+a couple of minutes. Whether that much acceleration
+would be pleasant is a different story -- but
+
+133
+00:09:05,570 --> 00:09:08,660
+hey, we’re just here to make sure the ride
+is safe. We’re not responsible for cleaning
+
+134
+00:09:08,659 --> 00:09:11,838
+up the vomit once it’s over.
+Today, you learned that when an object is
+
+135
+00:09:11,839 --> 00:09:16,029
+in uniform circular motion, its velocity is
+tangent to the circle and its acceleration
+
+136
+00:09:16,028 --> 00:09:20,439
+is pointing inward. We also talked about the
+difference between centripetal and centrifugal
+
+137
+00:09:20,440 --> 00:09:25,250
+forces, and derived equations for period,
+frequency, velocity, and acceleration.
+
+138
+00:09:25,250 --> 00:09:29,720
+Crash Course Physics is produced in association
+with PBS Digital Studios. You can head over
+
+139
+00:09:29,720 --> 00:09:34,730
+to their channel to check out amazing shows
+like Deep Look, The Good Stuff, and PBS Space Time.
+
+140
+00:09:34,730 --> 00:09:38,379
+This episode of Crash Course was filmed
+in the Doctor Cheryl C. Kinney Crash Course
+
+141
+00:09:38,379 --> 00:09:45,200
+Studio with the help of these amazing people
+and our equally amazing graphics team is Thought Cafe.
+

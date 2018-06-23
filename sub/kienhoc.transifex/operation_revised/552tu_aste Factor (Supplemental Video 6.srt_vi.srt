@@ -1,0 +1,177 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/yamCuRh_5AE
+phuongmai201 11/11/2016
+
+1
+00:00:05,000 --> 00:00:09,230
+Chào mừng trở lại với khóa học " Quản trị vận hành". Trong số này
+
+2
+00:00:09,230 --> 00:00:13,949
+chúng ta sẽ nói về nhân tố lãng phí năng suất. Phần hôm nay 
+
+3
+00:00:13,949 --> 00:00:22,170
+gắn liền với bài phân tích năng suất. Như chúng ta đã biết effective unit load của một
+
+4
+00:00:22,170 --> 00:00:27,650
+nguồn lực chính là khoảng thời gian thực tế cần thiết để xử lí một flow unit. Điều đó 
+
+5
+00:00:27,649 --> 00:00:31,489
+có nghĩa là năng suất hiệu quả là số lượng đơn vị thực tế 
+
+6
+00:00:31,489 --> 00:00:38,109
+được xử lí trong một đơn vị thời gian. Khi chúng ta nói về năng suất hiệu quả ám chỉ rằng 
+
+7
+00:00:38,109 --> 00:00:42,460
+đây là năng suất thực tế bởi ta biết còn có sự chậm trễ, ta còn biết
+
+8
+00:00:42,460 --> 00:00:47,450
+sẽ có một vài vấn đề xảy ra. Vậy đây chính là những gì thực sự đang xảy ra ở 
+
+9
+00:00:47,450 --> 00:00:54,780
+nơi làm việc. Ta còn có năng suất lý thuyết và nó dựa vào 
+
+10
+00:00:54,780 --> 00:00:58,939
+unit load lý thuyết của nguồn lực hay chính là khoảng thời gian tối thiểu
+
+11
+00:00:58,939 --> 00:01:05,149
+cần thiết để xử lí một flow unit nếu như ta loại bỏ tất cả những yếu tố lãng phí đó, loại bỏ
+
+12
+00:01:05,149 --> 00:01:10,430
+thời gian chờ đợi, loại bỏ những hoạt động cực đoan. Vậy năng suất lý thuyết 
+
+13
+00:01:10,430 --> 00:01:15,799
+là số lượng đơn vị tối đa được xử lí nếu tất cả những yếu tố lãng phí
+
+14
+00:01:15,799 --> 00:01:20,939
+được loại bỏ. Cái chúng ta tìm kiếm ở đây là sự so sánh
+
+15
+00:01:20,938 --> 00:01:27,949
+giữa năng suất hiệu quả và năng suất lý thuyết. Vậy những nhân tố
+
+16
+00:01:27,950 --> 00:01:31,689
+năng suất lãng phí thực ra là một tỷ lệ phần trăm. Nó là tỷ lệ phần trăm của năng suất
+
+17
+00:01:31,688 --> 00:01:37,639
+lý thuyết bị lãng phí. Ta có thể xem xét nó theo ba cách: một là nếu ta có 
+
+18
+00:01:37,640 --> 00:01:43,540
+năng suất lý thuyết và năng suất của những nhân tố dư thừa hay CWF, ta có thể 
+
+19
+00:01:43,540 --> 00:01:48,700
+tính toán năng suất hiệu quả; nếu ta có năng suất hiệu quả và yếu tố 
+
+20
+00:01:48,700 --> 00:01:54,409
+gây lãng phí ta sẽ tính được năng suất lý thuyết và cuối cùng nếu ta có 
+
+21
+00:01:54,409 --> 00:02:00,500
+năng suất hiệu quả và năng suất lý thuyết, ta có thể tính được năng suất của yếu tố
+
+22
+00:02:00,500 --> 00:02:07,859
+gây lãng phí. Tôi sẽ lấy một ví dụ đơn giản để minh họa điều trên. Ví dụ một công ty
+
+23
+00:02:07,859 --> 00:02:13,949
+yêu cầu một đội thanh tra đánh giá tất cả sản phẩm được sản xuất. Mỗi đội mất
+
+24
+00:02:13,949 --> 00:02:16,409
+1.25 tiếng cho mỗi
+
+25
+00:02:16,409 --> 00:02:21,460
+sản phẩm. Đội điều tra chỉ có thể dành 6 tiếng một ngày cho việc kiểm duyệt sản phẩm,
+
+26
+00:02:21,460 --> 00:02:25,900
+mặc dù thực chất họ làm việc 8 tiếng một ngày. 
+
+27
+00:02:25,900 --> 00:02:29,370
+2 tiếng dư ra là dành cho những công việc giấy tờ, dọn dẹp và
+
+28
+00:02:29,370 --> 00:02:36,349
+họp hành, hay nói một cách khác, khoảng thời gian không mang lại giá trị. Vậy năng suất của 
+
+29
+00:02:36,349 --> 00:02:41,849
+yếu tố gây lãng phí là bao nhiêu? Chúng ta đầu tiên sẽ tính năng suất hiệu quả. Năng suất 
+
+30
+00:02:41,849 --> 00:02:47,299
+hiệu quả là những gì thực tế đã xảy ra. Ta có 6 tiếng, mỗi sản phẩm
+
+31
+00:02:47,300 --> 00:02:51,380
+cần 1.25 tiếng. Từ đó ta biết được năng suất hiệu quả là 4.8
+
+32
+00:02:51,379 --> 00:02:58,019
+sản phẩm. Bây giờ ta tính toán năng suất lý thuyết. Ta loại bỏ 
+
+33
+00:02:58,020 --> 00:03:03,740
+2 tiếng cho việc họp hành và công việc giấy tờ. Vậy thời gian tối đa sẵn có là 
+
+34
+00:03:03,740 --> 00:03:09,159
+8 giờ, thời gian cho mỗi sản phẩm giữ nguyên là 1.25 tiếng, vậy 
+
+35
+00:03:09,159 --> 00:03:15,419
+năng suất lý thuyết bây giờ là 6.4 giờ. Vậy ta có cả 
+
+36
+00:03:15,419 --> 00:03:21,009
+năng suất lý thuyết lẫn năng suất hiệu quả. Giờ ta có thể tính toán 
+
+37
+00:03:21,009 --> 00:03:23,620
+năng suất của yếu tố gây lãng phí.
+
+38
+00:03:23,620 --> 00:03:30,349
+Năng suất của yếu tố gây lãng phí bằng 1 trừ đi năng suất hiệu quả chia cho
+
+39
+00:03:30,349 --> 00:03:38,639
+năng suất lý thuyết, từ đó ta có 1 trừ 0.75 được 25%. Vậy chúng ta 
+
+40
+00:03:38,639 --> 00:03:47,250
+nói yếu tố gây lãng phí chiếm 25%. Vậy nếu ta muốn
+
+41
+00:03:47,250 --> 00:03:52,699
+cải thiện tình trạng này,  ta sẽ phải cố gắng làm cho năng suất hiệu quả tiến gần hơn tới
+
+42
+00:03:52,699 --> 00:03:59,659
+năng suất lý thuyết. Trên đây chính là cách bạn tính toán năng suất của yếu tố gây lãng phí. 
+
+43
+00:03:59,659 --> 00:04:01,379
+Tôi rất mong được gặp lại bạn trong bài tới. 
+

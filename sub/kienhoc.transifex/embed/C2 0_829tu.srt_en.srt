@@ -1,0 +1,500 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/ZoHjGRtl39s
+
+1
+00:00:00,000 --> 00:00:00,980
+
+2
+00:00:00,980 --> 00:00:06,160
+DR. JONATHAN VALVANO: Hi, this is the
+module on fundamental concepts.
+
+3
+00:00:06,160 --> 00:00:10,800
+DR. RAMESH YERRABALLI: In this module,
+we will look at number systems,
+
+4
+00:00:10,800 --> 00:00:16,790
+microcontroller design, and instruction
+set architecture.
+
+5
+00:00:16,790 --> 00:00:17,945
+DR. JONATHAN VALVANO: OK.
+
+6
+00:00:17,945 --> 00:00:18,330
+DR. RAMESH YERRABALLI: OK.
+
+7
+00:00:18,330 --> 00:00:23,990
+So let's first ask ourselves, what is
+an embedded system to you, Jon?
+
+8
+00:00:23,990 --> 00:00:27,930
+DR. JONATHAN VALVANO: An embedded
+system is the combination of
+
+9
+00:00:27,930 --> 00:00:34,730
+electrical, chemical, mechanical,
+optical, computer, software all
+
+10
+00:00:34,730 --> 00:00:38,140
+combined for a dedicated purpose.
+
+11
+00:00:38,140 --> 00:00:41,640
+And we're going to in this class
+add one more requirement.
+
+12
+00:00:41,640 --> 00:00:44,400
+And that is an embedded system
+is going to have a
+
+13
+00:00:44,400 --> 00:00:48,050
+computer embedded inside.
+
+14
+00:00:48,050 --> 00:00:48,720
+DR. RAMESH YERRABALLI: OK.
+
+15
+00:00:48,720 --> 00:00:52,320
+So it sounds like what you're
+saying is everything in
+
+16
+00:00:52,320 --> 00:00:55,170
+engineering is a system.
+
+17
+00:00:55,170 --> 00:01:01,040
+And so it's either a system or it's
+an interface between systems.
+
+18
+00:01:01,040 --> 00:01:04,510
+So embedded systems seem to
+embody both these aspects.
+
+19
+00:01:04,510 --> 00:01:07,990
+They are systems and you
+have interfaces that
+
+20
+00:01:07,990 --> 00:01:10,040
+interface these systems.
+
+21
+00:01:10,040 --> 00:01:11,110
+DR. JONATHAN VALVANO: That's correct.
+
+22
+00:01:11,110 --> 00:01:11,550
+DR. RAMESH YERRABALLI: OK.
+
+23
+00:01:11,550 --> 00:01:16,130
+So let's look at some sample
+embedded systems.
+
+24
+00:01:16,130 --> 00:01:16,940
+DR. JONATHAN VALVANO: All right.
+
+25
+00:01:16,940 --> 00:01:18,630
+Let's begin with my favorite.
+
+26
+00:01:18,630 --> 00:01:20,520
+Here are a couple of pacemakers.
+
+27
+00:01:20,520 --> 00:01:22,360
+Hopefully you don't have these.
+
+28
+00:01:22,360 --> 00:01:28,020
+But this would be embedded inside the
+body and it helps your heart beat at a
+
+29
+00:01:28,020 --> 00:01:29,040
+regular rate.
+
+30
+00:01:29,040 --> 00:01:35,200
+Inside here is a computer, software that
+runs that computer, mechanical
+
+31
+00:01:35,200 --> 00:01:40,890
+catheters, chemical reactions between
+the catheter and the body, a battery
+
+32
+00:01:40,890 --> 00:01:45,170
+with chemistry in it, all combined
+for the dedicated purpose to
+
+33
+00:01:45,170 --> 00:01:47,635
+help us live longer.
+
+34
+00:01:47,635 --> 00:01:48,090
+DR. RAMESH YERRABALLI: OK.
+
+35
+00:01:48,090 --> 00:01:53,410
+So here is an embedded system that
+is more familiar to some of you.
+
+36
+00:01:53,410 --> 00:01:59,920
+Its a computer inside, but the
+identifying feature of this is that it
+
+37
+00:01:59,920 --> 00:02:01,660
+has switches.
+
+38
+00:02:01,660 --> 00:02:06,200
+All kinds of switches to
+control the behavior.
+
+39
+00:02:06,200 --> 00:02:11,880
+And you have an LCD display, which
+is a black and white LCD display.
+
+40
+00:02:11,880 --> 00:02:16,040
+And it runs on batteries.
+
+41
+00:02:16,040 --> 00:02:18,760
+DR. JONATHAN VALVANO: My rule about
+finding an embedded system in your
+
+42
+00:02:18,760 --> 00:02:22,470
+life is to look for things
+that run on electricity.
+
+43
+00:02:22,470 --> 00:02:26,090
+Take them apart, and then look
+for the computer inside.
+
+44
+00:02:26,090 --> 00:02:28,420
+This, as you can see, is a hard drive.
+
+45
+00:02:28,420 --> 00:02:32,510
+And in here are mechanical
+parts which rotate.
+
+46
+00:02:32,510 --> 00:02:37,400
+Electrical parts which
+control the motor.
+
+47
+00:02:37,400 --> 00:02:41,284
+And optical parts to read and write data
+from the disk [Hard drives use
+
+48
+00:02:41,284 --> 00:02:42,534
+magnetic encoding, CD drives use
+lasers to read/write data].
+
+49
+00:02:42,534 --> 00:02:44,110
+
+50
+00:02:44,110 --> 00:02:46,620
+DR. RAMESH YERRABALLI: Here is
+another embedded system.
+
+51
+00:02:46,620 --> 00:02:54,210
+Now this is an embedded system which is
+used primarily to use these probes
+
+52
+00:02:54,210 --> 00:03:02,430
+to detect voltages at different
+inputs on your testing device.
+
+53
+00:03:02,430 --> 00:03:09,260
+And what it allows you to do is to
+monitor the conditions of the
+
+54
+00:03:09,260 --> 00:03:13,150
+operation of any system
+that you're testing.
+
+55
+00:03:13,150 --> 00:03:17,910
+Again, the characteristic is that it has
+a rich interface, there is a lot
+
+56
+00:03:17,910 --> 00:03:21,246
+of probes that allows you
+to track information.
+
+57
+00:03:21,246 --> 00:03:23,876
+
+58
+00:03:23,876 --> 00:03:26,300
+DR. JONATHAN VALVANO: I've
+got another one.
+
+59
+00:03:26,300 --> 00:03:26,590
+Motors.
+
+60
+00:03:26,590 --> 00:03:26,900
+DR. RAMESH YERRABALLI: Oh, nice.
+
+61
+00:03:26,900 --> 00:03:28,820
+DR. JONATHAN VALVANO:
+Oh, look at that.
+
+62
+00:03:28,820 --> 00:03:29,220
+Yeah.
+
+63
+00:03:29,220 --> 00:03:32,070
+If you ever want to control
+stuff, you need motors.
+
+64
+00:03:32,070 --> 00:03:35,520
+So an embedded system, again,
+has components.
+
+65
+00:03:35,520 --> 00:03:40,050
+So there's a component over here, a
+component over there, and an interface
+
+66
+00:03:40,050 --> 00:03:43,170
+between the two which
+allows it to run.
+
+67
+00:03:43,170 --> 00:03:45,000
+Again, this is a motor controller.
+
+68
+00:03:45,000 --> 00:03:48,900
+And obviously this system would then
+be placed in a bigger system.
+
+69
+00:03:48,900 --> 00:03:50,750
+A robot, an industrial robot.
+
+70
+00:03:50,750 --> 00:03:54,660
+And then this system would be then
+placed in a larger system, like an
+
+71
+00:03:54,660 --> 00:03:56,150
+industrial robot.
+
+72
+00:03:56,150 --> 00:04:00,930
+And the idea is embedded systems
+are built for doing things
+
+73
+00:04:00,930 --> 00:04:03,346
+that humans want done.
+
+74
+00:04:03,346 --> 00:04:03,780
+DR. RAMESH YERRABALLI: OK.
+
+75
+00:04:03,780 --> 00:04:08,790
+So let's look at a more
+sophisticated system.
+
+76
+00:04:08,790 --> 00:04:11,500
+DR. JONATHAN VALVANO: All right, wait
+a minute Professor Yerraballi.
+
+77
+00:04:11,500 --> 00:04:13,400
+We're not having any fun here yet.
+
+78
+00:04:13,400 --> 00:04:14,930
+DR. RAMESH YERRABALLI: OK, let's
+take something apart.
+
+79
+00:04:14,930 --> 00:04:17,240
+DR. JONATHAN VALVANO: Yeah, come
+on, let's take something apart.
+
+80
+00:04:17,240 --> 00:04:26,380
+
+81
+00:04:26,380 --> 00:04:30,270
+DR. RAMESH YERRABALLI: This is
+a popular embedded system.
+
+82
+00:04:30,270 --> 00:04:34,450
+What you see here is an iPod
+that's been taken apart.
+
+83
+00:04:34,450 --> 00:04:38,550
+We took out the hard drive so that we
+can look at the guts of this machine.
+
+84
+00:04:38,550 --> 00:04:43,600
+And what we see here is
+a set of processors.
+
+85
+00:04:43,600 --> 00:04:48,610
+An embedded system may have multiple
+processors that do various functions.
+
+86
+00:04:48,610 --> 00:04:53,590
+And it has, again, a display.
+
+87
+00:04:53,590 --> 00:04:56,770
+An interface, which is
+a clicker interface.
+
+88
+00:04:56,770 --> 00:05:03,600
+And what you also see is an onboard
+battery that allows such a system to
+
+89
+00:05:03,600 --> 00:05:07,130
+be operated for long periods
+of time without being
+
+90
+00:05:07,130 --> 00:05:08,380
+hooked to a power source.
+
+91
+00:05:08,380 --> 00:05:21,560
+
+92
+00:05:21,560 --> 00:05:23,060
+DR. JONATHAN VALVANO: This
+is a game controller.
+
+93
+00:05:23,060 --> 00:05:24,570
+Let's take it apart.
+
+94
+00:05:24,570 --> 00:05:29,330
+I removed the screws to
+allow access inside.
+
+95
+00:05:29,330 --> 00:05:32,010
+We'll take off the front.
+
+96
+00:05:32,010 --> 00:05:32,880
+Parts go flying.
+
+97
+00:05:32,880 --> 00:05:34,470
+That's all right.
+
+98
+00:05:34,470 --> 00:05:36,050
+Don't need this.
+
+99
+00:05:36,050 --> 00:05:39,840
+What we're looking for is the
+microcontroller inside this fun thing.
+
+100
+00:05:39,840 --> 00:05:42,160
+OK, we don't need that.
+
+101
+00:05:42,160 --> 00:05:46,190
+And on this side we see some switches.
+
+102
+00:05:46,190 --> 00:05:48,150
+And on this side the electronics.
+
+103
+00:05:48,150 --> 00:05:51,560
+And right there in this little
+black dot under there is the
+
+104
+00:05:51,560 --> 00:05:52,870
+microcontroller.
+
+105
+00:05:52,870 --> 00:05:58,860
+And again, an embedded system combines
+mechanical, electrical, power to
+
+106
+00:05:58,860 --> 00:06:01,520
+perform a duty that we all want.
+
+107
+00:06:01,520 --> 00:06:03,040
+DR. RAMESH YERRABALLI: Light
+sensors on this.
+
+108
+00:06:03,040 --> 00:06:06,150
+DR. JONATHAN VALVANO: Yeah, sensors,
+accelerometers, all sorts of fun
+
+109
+00:06:06,150 --> 00:06:07,880
+things for us to use.
+
+110
+00:06:07,880 --> 00:06:09,684

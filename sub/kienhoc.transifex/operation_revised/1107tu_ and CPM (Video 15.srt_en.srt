@@ -1,0 +1,606 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/rB_hEtDYVsY
+
+1
+00:00:05,900 --> 00:00:08,519
+hello again welcome back to operations
+management
+
+2
+00:00:08,519 --> 00:00:11,620
+in this session we're going to be
+continuing with the concept
+
+3
+00:00:11,620 --> 00:00:15,070
+critical path and talk about slack time
+
+4
+00:00:15,070 --> 00:00:18,880
+and how we calculate slack time using
+the critical path method
+
+5
+00:00:18,880 --> 00:00:22,420
+so to begin with let's talk about what
+slack time
+
+6
+00:00:22,420 --> 00:00:26,289
+is when we go through a process
+
+7
+00:00:26,289 --> 00:00:30,010
+flow and there's a variety of different
+activities
+
+8
+00:00:30,010 --> 00:00:33,829
+and a lot of those activities are on
+different paths through the flow
+
+9
+00:00:33,829 --> 00:00:37,500
+some others activities don't have to be
+started
+
+10
+00:00:37,500 --> 00:00:41,539
+right on time we know that the critical
+path
+
+11
+00:00:41,539 --> 00:00:45,469
+is the longest path through the
+entire process
+
+12
+00:00:45,469 --> 00:00:49,179
+but some path are shorter in time so that
+means
+
+13
+00:00:49,179 --> 00:00:52,609
+there's room for delay and
+
+14
+00:00:52,609 --> 00:00:57,109
+that's what we're looking at we're trying
+to figure out how much time there is
+
+15
+00:00:57,109 --> 00:01:00,109
+between when an activity
+
+16
+00:01:00,109 --> 00:01:03,390
+can start which is the earliest time
+you can start
+
+17
+00:01:03,390 --> 00:01:06,569
+and when an activity has to start
+
+18
+00:01:06,569 --> 00:01:10,510
+and that's the latest time it has to start
+so slack
+
+19
+00:01:10,510 --> 00:01:13,710
+can be said to be the difference between
+the latest
+
+20
+00:01:13,709 --> 00:01:16,949
+start time LST and the
+
+21
+00:01:16,950 --> 00:01:21,060
+early start time EST so that tells us
+
+22
+00:01:21,060 --> 00:01:24,060
+how long an activity can be delayed
+
+23
+00:01:24,060 --> 00:01:27,909
+before it has to be done to in order
+
+24
+00:01:27,909 --> 00:01:32,340
+to figure out slack we use what's known
+as the critical path method
+
+25
+00:01:32,340 --> 00:01:35,640
+will we take a forward pass through the
+flow 
+
+26
+00:01:35,640 --> 00:01:39,290
+diagram to determine when all the
+activities
+
+27
+00:01:39,290 --> 00:01:42,350
+can start the early start time
+
+28
+00:01:42,349 --> 00:01:47,519
+and as a result also when the earliest
+they will finish that's the early finish
+
+29
+00:01:47,519 --> 00:01:48,069
+time
+
+30
+00:01:48,069 --> 00:01:51,298
+then we take a backward pass
+
+31
+00:01:51,299 --> 00:01:55,520
+between the flow diagram to figure out
+when the latest
+
+32
+00:01:55,519 --> 00:01:58,920
+each activity can start and when the
+latest
+
+33
+00:01:58,920 --> 00:02:02,219
+each activity will finish that's the LST
+
+34
+00:02:02,218 --> 00:02:05,539
+latest start time and LFT
+
+35
+00:02:05,540 --> 00:02:09,100
+the latest finish time then we compare
+the two
+
+36
+00:02:09,099 --> 00:02:12,478
+if there's a difference between the
+early start time
+
+37
+00:02:12,478 --> 00:02:17,789
+and the late start time we know there's
+slack so we're actually going to use the
+
+38
+00:02:17,789 --> 00:02:20,000
+same example from the critical path
+
+39
+00:02:20,000 --> 00:02:23,280
+problems before we were cleaning an
+office
+
+40
+00:02:23,280 --> 00:02:27,110
+and if you recall there were six
+activities there each with different
+
+41
+00:02:27,110 --> 00:02:27,900
+times
+
+42
+00:02:27,900 --> 00:02:32,870
+and when we put it together we had a process
+flow diagram that looked like this
+
+43
+00:02:32,870 --> 00:02:36,810
+there were three potential paths through the
+process
+
+44
+00:02:36,810 --> 00:02:40,890
+ABEF ACEF and ADF
+
+45
+00:02:40,889 --> 00:02:46,929
+and each path had a different amount of
+time so what we need to do is figure out
+
+46
+00:02:46,930 --> 00:02:51,340
+how much delay time we have for
+different activities
+
+47
+00:02:51,340 --> 00:02:55,340
+in this process so we're going to take a
+forward pass
+
+48
+00:02:55,340 --> 00:02:59,080
+through the flow diagram starting with
+activity
+
+49
+00:02:59,080 --> 00:03:02,090
+a it starts right at time 0
+
+50
+00:03:02,090 --> 00:03:05,110
+it's the first activity in the entire
+process
+
+51
+00:03:05,110 --> 00:03:08,700
+so at time 0 that's when activity can
+start
+
+52
+00:03:08,699 --> 00:03:12,179
+and then we add the 55 seconds
+
+53
+00:03:12,180 --> 00:03:16,060
+that the activity last so we know
+that it can finish at
+
+54
+00:03:16,060 --> 00:03:19,128
+time 55 we're starting at zero
+
+55
+00:03:19,128 --> 00:03:23,098
+we're adding 55 seconds for the activity and
+we're finishing
+
+56
+00:03:23,098 --> 00:03:26,840
+at time 55 now activity
+
+57
+00:03:26,840 --> 00:03:30,039
+B has to wait until activity A
+
+58
+00:03:30,039 --> 00:03:34,199
+is completed which means activity B
+cannot start
+
+59
+00:03:34,199 --> 00:03:38,229
+until activity A finishes so the earliest
+you can start
+
+60
+00:03:38,229 --> 00:03:43,969
+is time 55 we add to 300 seconds that
+activity lasts
+
+61
+00:03:43,969 --> 00:03:48,139
+and so activity B finish at 3:55
+
+62
+00:03:48,139 --> 00:03:53,369
+we did the same thing with activities
+C it can start time 55
+
+63
+00:03:53,370 --> 00:03:57,688
+and finishes up at 145 and activity D
+
+64
+00:03:57,688 --> 00:04:02,719
+starting at fifty-five and finishing
+three hundred and sixty seconds later
+
+65
+00:04:02,719 --> 00:04:07,449
+at 415 so now we take a look at
+activity
+
+66
+00:04:07,449 --> 00:04:10,530
+E remember activity E
+
+67
+00:04:10,530 --> 00:04:13,750
+cannot start until both B and
+
+68
+00:04:13,750 --> 00:04:17,048
+C are finished so although
+
+69
+00:04:17,048 --> 00:04:20,509
+activity C can finish at 145
+
+70
+00:04:20,509 --> 00:04:23,529
+activity E can't start then
+
+71
+00:04:23,529 --> 00:04:27,059
+it has to wait until B is done so the
+
+72
+00:04:27,060 --> 00:04:30,790
+early start time for E is 355
+
+73
+00:04:30,790 --> 00:04:34,150
+then we add the forty seconds for that
+activity
+
+74
+00:04:34,149 --> 00:04:38,029
+to make it 395
+
+75
+00:04:38,029 --> 00:04:42,289
+so here we have activity E finishing at
+395
+
+76
+00:04:42,290 --> 00:04:46,479
+and activity D finishing at 415
+
+77
+00:04:46,478 --> 00:04:50,779
+both of them have to be done before
+activity F start
+
+78
+00:04:50,779 --> 00:04:54,399
+so activity D finishes later than E
+
+79
+00:04:54,399 --> 00:04:57,429
+so that's why the early start time for
+F
+
+80
+00:04:57,430 --> 00:05:00,829
+is at 450 then we add the 40s of
+
+81
+00:05:00,829 --> 00:05:05,159
+the activity so we know that it finishes
+at 455
+
+82
+00:05:05,160 --> 00:05:09,210
+so that was our forward pass through
+the process flow diagram
+
+83
+00:05:09,209 --> 00:05:13,288
+and we figure out when everything starts
+
+84
+00:05:13,288 --> 00:05:19,019
+so now let's do a backward pass
+
+85
+00:05:19,019 --> 00:05:25,879
+activity F since it's the last activity
+we know that finishes at 455
+
+86
+00:05:25,879 --> 00:05:29,409
+and so the earliest that can start
+is 415
+
+87
+00:05:29,410 --> 00:05:32,789
+and the latest you can start is 415 as
+well
+
+88
+00:05:32,788 --> 00:05:36,180
+so that activity has a slack of  0
+
+89
+00:05:36,180 --> 00:05:39,910
+now let's go back to activity E
+
+90
+00:05:39,910 --> 00:05:44,139
+activity E must be finished by 415
+
+91
+00:05:44,139 --> 00:05:48,418
+so that's the latest finish time 450
+
+92
+00:05:48,418 --> 00:05:52,469
+which means when we subtract out the
+40s of the activity
+
+93
+00:05:52,470 --> 00:05:56,210
+the latest it can start is 375
+
+94
+00:05:56,209 --> 00:05:59,668
+so there's a difference between the
+early start time and
+
+95
+00:05:59,668 --> 00:06:03,038
+the late start time of 20 seconds
+
+96
+00:06:03,038 --> 00:06:07,318
+that's the slack for activity E
+
+97
+00:06:07,319 --> 00:06:11,400
+let's do another one let's take a look
+at activity D
+
+98
+00:06:11,399 --> 00:06:15,649
+activity D must be finished by 4:5
+
+99
+00:06:15,649 --> 00:06:18,899
+because that's the latest activity
+F start
+
+100
+00:06:18,899 --> 00:06:23,068
+so if it must be finished by 415 the
+LFT
+
+101
+00:06:23,069 --> 00:06:26,910
+we subtract out the three hundred and
+sixty seconds of
+
+102
+00:06:26,910 --> 00:06:30,810
+the time for D we find out that
+our latest start is
+
+103
+00:06:30,810 --> 00:06:34,459
+55 there's no difference between the
+late start
+
+104
+00:06:34,459 --> 00:06:38,288
+and the early start so we have a slack of
+0
+
+105
+00:06:38,288 --> 00:06:41,639
+let's do another one here's activity
+
+106
+00:06:41,639 --> 00:06:46,030
+B activity B says if has to be done by
+
+107
+00:06:46,029 --> 00:06:49,349
+375 because that's the latest activity
+
+108
+00:06:49,350 --> 00:06:53,479
+can start noticed the latest start
+time
+
+109
+00:06:53,478 --> 00:06:57,139
+of the activity that follows it
+
+110
+00:06:57,139 --> 00:07:00,840
+is the latest finished time for that
+activity
+
+111
+00:07:00,839 --> 00:07:04,269
+so again the latest finish time 375
+
+112
+00:07:04,269 --> 00:07:08,478
+we subtract out 300 for the activity
+time
+
+113
+00:07:08,478 --> 00:07:12,240
+to have a late start time of 75 we have
+the slack of
+
+114
+00:07:12,240 --> 00:07:16,490
+20 we do the same thing for activities
+
+115
+00:07:16,490 --> 00:07:20,699
+C and then when we get back to activity
+
+116
+00:07:20,699 --> 00:07:23,960
+A take a good hard look at that
+
+117
+00:07:23,959 --> 00:07:28,500
+activity A must be finished by what time
+
+118
+00:07:28,500 --> 00:07:31,610
+it has to be finished by the earliest
+
+119
+00:07:31,610 --> 00:07:35,848
+time of all the activities following it
+
+120
+00:07:35,848 --> 00:07:40,959
+so activity B well that have to start by
+75
+
+121
+00:07:40,959 --> 00:07:45,689
+activities C well that doesn't have to
+start until 295
+
+122
+00:07:45,689 --> 00:07:49,610
+an activity d has to start by 55
+
+123
+00:07:49,610 --> 00:07:54,650
+so the latest activity A can finish it's 55
+
+124
+00:07:54,649 --> 00:07:58,388
+so the latest you can start is 0
+
+125
+00:07:58,389 --> 00:08:03,030
+so there's no slack for activity a
+it's very important to realize that when
+
+126
+00:08:03,029 --> 00:08:06,429
+you look at this process flow diagram
+
+127
+00:08:06,430 --> 00:08:09,759
+all of the activities on the critical
+path
+
+128
+00:08:09,759 --> 00:08:14,500
+will always have a slack of 0
+
+129
+00:08:14,500 --> 00:08:18,459
+it may take a few times for you to
+understand this I suggest you go over
+
+130
+00:08:18,459 --> 00:08:20,628
+this example couple of times
+
+131
+00:08:20,629 --> 00:08:25,569
+just make sure you understand the
+forward pass and the backward pass
+
+132
+00:08:25,569 --> 00:08:28,990
+and the next session we can be talking
+about process efficiency
+
+133
+00:08:28,990 --> 00:08:29,519
+I'll see you then
+

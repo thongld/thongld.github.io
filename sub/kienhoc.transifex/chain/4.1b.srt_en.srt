@@ -1,0 +1,1016 @@
+0
+00:00:00,000 --> 00:00:01,330
+https://youtu.be/JS9MCTMXI2A
+
+1
+00:00:01,330 --> 00:00:04,030
+In this lesson, we want to look at the cost involved
+
+2
+00:00:04,030 --> 00:00:06,030
+with managing inventory, and we'll
+
+3
+00:00:06,030 --> 00:00:09,100
+use these to develop a total cost equation.
+
+4
+00:00:09,100 --> 00:00:12,180
+So I want to focus in on what's known as the relevant costs,
+
+5
+00:00:12,180 --> 00:00:15,400
+and these are the costs that are critical to the decision being
+
+6
+00:00:15,400 --> 00:00:17,720
+made and are things that are controllable by us.
+
+7
+00:00:17,720 --> 00:00:20,330
+But I'll explain more about that in a second.
+
+8
+00:00:20,330 --> 00:00:23,790
+There are four basic components to this total cost,
+
+9
+00:00:23,790 --> 00:00:27,040
+or this total relevant costs, and the four stated components
+
+10
+00:00:27,040 --> 00:00:29,050
+are first, the purchase price.
+
+11
+00:00:29,050 --> 00:00:33,540
+That's the unit value, the cost per item when I buy it.
+
+12
+00:00:33,540 --> 00:00:35,800
+Then the next is the ordering cost,
+
+13
+00:00:35,800 --> 00:00:38,030
+and this is also known as the set up cost.
+
+14
+00:00:38,030 --> 00:00:41,090
+This is the cost it takes to actually place an order.
+
+15
+00:00:41,090 --> 00:00:43,620
+Then there's the holding cost, and this is also
+
+16
+00:00:43,620 --> 00:00:44,990
+known as the carrying cost.
+
+17
+00:00:44,990 --> 00:00:49,830
+And it's the cost that it takes me to actually hold inventory,
+
+18
+00:00:49,830 --> 00:00:52,210
+not the value of the inventory itself,
+
+19
+00:00:52,210 --> 00:00:54,630
+but the cost that it takes to actually keep
+
+20
+00:00:54,630 --> 00:00:55,535
+that inventory there.
+
+21
+00:00:55,535 --> 00:00:57,660
+And we'll talk more about each of these, of course,
+
+22
+00:00:57,660 --> 00:00:58,540
+in a second.
+
+23
+00:00:58,540 --> 00:01:00,630
+And the final category is the shortage cost.
+
+24
+00:01:00,630 --> 00:01:03,800
+And these are the costs that are incurred if I stock out
+
+25
+00:01:03,800 --> 00:01:06,680
+or if I don't have enough demand-- or supply, rather,
+
+26
+00:01:06,680 --> 00:01:08,410
+to satisfy demand.
+
+27
+00:01:08,410 --> 00:01:10,730
+And so, we'll look at each of these,
+
+28
+00:01:10,730 --> 00:01:13,610
+and we'll also talk about what makes each of these costs
+
+29
+00:01:13,610 --> 00:01:16,070
+relevant to the decision we're making.
+
+30
+00:01:16,070 --> 00:01:18,950
+And again, the key dimensions of this
+
+31
+00:01:18,950 --> 00:01:23,260
+are one, if it's controllable by us, the decision maker,
+
+32
+00:01:23,260 --> 00:01:26,676
+and if it actually applies to the decision being made.
+
+33
+00:01:26,676 --> 00:01:28,550
+Before we dive into the details, because I'll
+
+34
+00:01:28,550 --> 00:01:30,383
+talk about each one of these four components
+
+35
+00:01:30,383 --> 00:01:34,240
+in greater detail, I want to make a note about nomenclature.
+
+36
+00:01:34,240 --> 00:01:37,080
+Unfortunately, textbooks in this area,
+
+37
+00:01:37,080 --> 00:01:39,900
+whether it's in logistics, inventory management, or supply
+
+38
+00:01:39,900 --> 00:01:43,070
+chain management, they differ in the nomenclature
+
+39
+00:01:43,070 --> 00:01:46,840
+they use to describe these costs as well as many other factors
+
+40
+00:01:46,840 --> 00:01:49,070
+within the supply chain space.
+
+41
+00:01:49,070 --> 00:01:51,240
+So just brace yourself for that.
+
+42
+00:01:51,240 --> 00:01:55,940
+I try to use nomenclature that is common with most
+
+43
+00:01:55,940 --> 00:01:59,470
+of the sources, but there is no one set of common nomenclature.
+
+44
+00:01:59,470 --> 00:02:02,130
+People use different variables for the purchase price,
+
+45
+00:02:02,130 --> 00:02:03,780
+the order price, the holding cost,
+
+46
+00:02:03,780 --> 00:02:05,155
+and all those different things.
+
+47
+00:02:05,155 --> 00:02:06,030
+So let's get started.
+
+48
+00:02:06,030 --> 00:02:09,570
+Let's talk about the first category, the purchase cost.
+
+49
+00:02:09,570 --> 00:02:12,325
+We're going to use the variable c here to annotate this.
+
+50
+00:02:12,325 --> 00:02:14,700
+And the units are going to be dollars per item or dollars
+
+51
+00:02:14,700 --> 00:02:15,890
+per unit.
+
+52
+00:02:15,890 --> 00:02:18,510
+And you can think of what this contains.
+
+53
+00:02:18,510 --> 00:02:22,100
+It's the total cost for acquiring the product.
+
+54
+00:02:22,100 --> 00:02:24,210
+And it's the variable cost, so this
+
+55
+00:02:24,210 --> 00:02:26,420
+is a variable with respect to the quantity.
+
+56
+00:02:26,420 --> 00:02:31,310
+It's the dollars per unit, per item, not a fixed cost.
+
+57
+00:02:31,310 --> 00:02:32,730
+So how do we determine this?
+
+58
+00:02:32,730 --> 00:02:33,650
+Well it depends.
+
+59
+00:02:33,650 --> 00:02:36,960
+If I'm buying it, this product, from some vendor,
+
+60
+00:02:36,960 --> 00:02:40,820
+from some third party, it'll be that purchase price, the amount
+
+61
+00:02:40,820 --> 00:02:44,800
+it costs for me to have that delivered to my location.
+
+62
+00:02:44,800 --> 00:02:46,810
+If I'm making it myself, it's more
+
+63
+00:02:46,810 --> 00:02:49,674
+of a transfer cost, a manufacturing cost,
+
+64
+00:02:49,674 --> 00:02:50,840
+then it's a little trickier.
+
+65
+00:02:50,840 --> 00:02:52,550
+I have to engineer that and figure out
+
+66
+00:02:52,550 --> 00:02:54,120
+what that fully loaded cost is.
+
+67
+00:02:54,120 --> 00:02:56,510
+That takes a little more work to find out
+
+68
+00:02:56,510 --> 00:02:58,840
+what that cost would be.
+
+69
+00:02:58,840 --> 00:03:00,010
+And when is it relevant?
+
+70
+00:03:00,010 --> 00:03:02,290
+Well, the purchase price is relevant
+
+71
+00:03:02,290 --> 00:03:06,010
+if the purchase price differs with the amount or the quantity
+
+72
+00:03:06,010 --> 00:03:10,080
+that I buy or it changes based on the timing that I make that.
+
+73
+00:03:10,080 --> 00:03:12,860
+And so this becomes more important a little later.
+
+74
+00:03:12,860 --> 00:03:16,360
+But the idea of the relevance is when this cost, the purchase
+
+75
+00:03:16,360 --> 00:03:19,981
+cost, becomes relevant to the decision we're trying to make.
+
+76
+00:03:19,981 --> 00:03:20,480
+OK.
+
+77
+00:03:20,480 --> 00:03:23,900
+The next category of cost is the ordering costs.
+
+78
+00:03:23,900 --> 00:03:25,980
+And we're going to use c sub t for this,
+
+79
+00:03:25,980 --> 00:03:28,180
+for the transactional cost, and the units
+
+80
+00:03:28,180 --> 00:03:29,830
+are dollars per order.
+
+81
+00:03:29,830 --> 00:03:34,750
+So whether I order 10 or 100 or 200 of an item,
+
+82
+00:03:34,750 --> 00:03:37,560
+this is that fixed cost per that order.
+
+83
+00:03:37,560 --> 00:03:41,490
+It doesn't change with respect to the volume being ordered.
+
+84
+00:03:41,490 --> 00:03:43,300
+So what does this contain?
+
+85
+00:03:43,300 --> 00:03:45,870
+It's all those costs that it takes to place an order,
+
+86
+00:03:45,870 --> 00:03:48,470
+to receive it, and to process that order.
+
+87
+00:03:48,470 --> 00:03:51,670
+It's all the processing activities, the invoicing,
+
+88
+00:03:51,670 --> 00:03:53,370
+auditing, the labor it takes to do
+
+89
+00:03:53,370 --> 00:03:57,270
+that-- all the different costs it takes to place an order.
+
+90
+00:03:57,270 --> 00:03:59,880
+In manufacturing, this is known as the set up cost
+
+91
+00:03:59,880 --> 00:04:03,070
+for a run, how much time and what the cost is
+
+92
+00:04:03,070 --> 00:04:08,520
+to get a machine ready to go to make a run of a certain item.
+
+93
+00:04:08,520 --> 00:04:10,030
+So how do we determine this number?
+
+94
+00:04:10,030 --> 00:04:11,270
+Well, it's a little tricky.
+
+95
+00:04:11,270 --> 00:04:13,210
+It's not as easy as the purchase price, which
+
+96
+00:04:13,210 --> 00:04:15,917
+is pretty clear and easy to measure.
+
+97
+00:04:15,917 --> 00:04:17,625
+Sometimes I have to do workflow analysis.
+
+98
+00:04:17,625 --> 00:04:21,339
+I have to try to engineer what this cost is.
+
+99
+00:04:21,339 --> 00:04:23,540
+One way that is common is I look over
+
+100
+00:04:23,540 --> 00:04:26,450
+the course of, say, six months to a year,
+
+101
+00:04:26,450 --> 00:04:28,720
+and I sum up all the administrative and other costs
+
+102
+00:04:28,720 --> 00:04:31,865
+like the labor costs and divide by the total orders that
+
+103
+00:04:31,865 --> 00:04:34,330
+are processed with those total costs.
+
+104
+00:04:34,330 --> 00:04:37,330
+And then, as you can see, it's sometimes a tricky number
+
+105
+00:04:37,330 --> 00:04:38,290
+to get.
+
+106
+00:04:38,290 --> 00:04:41,580
+What is that order or fixed set up cost?
+
+107
+00:04:41,580 --> 00:04:45,260
+But you need it and it's relevant whenever it exists
+
+108
+00:04:45,260 --> 00:04:46,235
+and it's nontrivial.
+
+109
+00:04:46,235 --> 00:04:49,350
+And we'll talk more about that in a little while.
+
+110
+00:04:49,350 --> 00:04:52,420
+The third category, though, is the holding costs.
+
+111
+00:04:52,420 --> 00:04:56,610
+And these are the costs that are incurred by having inventory
+
+112
+00:04:56,610 --> 00:04:59,670
+on hand, not necessarily the total cost
+
+113
+00:04:59,670 --> 00:05:01,400
+of the inventory, because I've already
+
+114
+00:05:01,400 --> 00:05:04,540
+paid for that with that purchase price, the first term we talked
+
+115
+00:05:04,540 --> 00:05:07,720
+about, this is the cost that is incurred by actually having
+
+116
+00:05:07,720 --> 00:05:09,850
+the inventory hanging around.
+
+117
+00:05:09,850 --> 00:05:13,170
+So we look at c which is. remember, the unit price
+
+118
+00:05:13,170 --> 00:05:16,280
+for the purchase and I use this h, which you can think
+
+119
+00:05:16,280 --> 00:05:18,050
+of as the holding ratio.
+
+120
+00:05:18,050 --> 00:05:20,670
+And this is essentially a percentage over time,
+
+121
+00:05:20,670 --> 00:05:23,270
+so I might have something that the holding cost is
+
+122
+00:05:23,270 --> 00:05:28,490
+25% per year, and so then the holding or carrying costs,
+
+123
+00:05:28,490 --> 00:05:30,820
+which we're going to use as c_e, is
+
+124
+00:05:30,820 --> 00:05:34,660
+going to be the price of the item times that h,
+
+125
+00:05:34,660 --> 00:05:36,770
+or that percentage, and that gives me
+
+126
+00:05:36,770 --> 00:05:40,040
+the cost per unit per time.
+
+127
+00:05:40,040 --> 00:05:41,760
+And so what does this contain?
+
+128
+00:05:41,760 --> 00:05:43,580
+This contains a lot of things.
+
+129
+00:05:43,580 --> 00:05:46,950
+It's all those costs that are required to hold inventory.
+
+130
+00:05:46,950 --> 00:05:49,890
+So it could be the storage cost if I have a warehouse.
+
+131
+00:05:49,890 --> 00:05:52,249
+It might be the amount of space I need.
+
+132
+00:05:52,249 --> 00:05:53,790
+If something takes up a lot of space,
+
+133
+00:05:53,790 --> 00:05:55,040
+it's going to cost me more.
+
+134
+00:05:55,040 --> 00:05:56,740
+So I might think, if it's storage,
+
+135
+00:05:56,740 --> 00:05:58,650
+that I want to actually have it as dollars
+
+136
+00:05:58,650 --> 00:06:00,700
+per square foot of each item.
+
+137
+00:06:00,700 --> 00:06:03,180
+Then you can think of this whole service costs.
+
+138
+00:06:03,180 --> 00:06:05,250
+And these are insurance, taxes.
+
+139
+00:06:05,250 --> 00:06:08,650
+And here I think, well, maybe, the holding cost of this
+
+140
+00:06:08,650 --> 00:06:12,520
+will increase as the value of the product increases.
+
+141
+00:06:12,520 --> 00:06:15,190
+And then you have risk costs, where maybe an item gets
+
+142
+00:06:15,190 --> 00:06:19,090
+lost, stolen-- we call that shrinkage-- damage,
+
+143
+00:06:19,090 --> 00:06:22,104
+goes obsolete, it perishes for whatever reason.
+
+144
+00:06:22,104 --> 00:06:24,020
+And for there, I might think, well, maybe it's
+
+145
+00:06:24,020 --> 00:06:26,140
+just dollar per item.
+
+146
+00:06:26,140 --> 00:06:28,290
+And then the fourth category is the capital cost,
+
+147
+00:06:28,290 --> 00:06:30,870
+because every dollar I put in holding inventory
+
+148
+00:06:30,870 --> 00:06:33,420
+is the dollar I'm not using somewhere else.
+
+149
+00:06:33,420 --> 00:06:35,690
+So you can think of it as an investment.
+
+150
+00:06:35,690 --> 00:06:37,630
+And so, in this case, you can think of it
+
+151
+00:06:37,630 --> 00:06:40,690
+as a dollar-for-dollar inventory or the cost of capital.
+
+152
+00:06:40,690 --> 00:06:42,690
+Sometimes it's known as a hurdle rate,
+
+153
+00:06:42,690 --> 00:06:45,070
+that a company needs to have their investment be
+
+154
+00:06:45,070 --> 00:06:48,540
+above a certain rate of return in order to justify it.
+
+155
+00:06:48,540 --> 00:06:50,950
+So out of all these different terms,
+
+156
+00:06:50,950 --> 00:06:52,690
+you also have different units.
+
+157
+00:06:52,690 --> 00:06:55,810
+And why do we end up with just doing it dollar per unit time?
+
+158
+00:06:55,810 --> 00:07:00,820
+Well what we find is this number is typically given to you.
+
+159
+00:07:00,820 --> 00:07:02,180
+It's set by management.
+
+160
+00:07:02,180 --> 00:07:04,600
+And as we'll see later on, this is really
+
+161
+00:07:04,600 --> 00:07:09,580
+a lever that is used to see how much the company values
+
+162
+00:07:09,580 --> 00:07:10,870
+having inventory.
+
+163
+00:07:10,870 --> 00:07:13,370
+And so it's usually set by management,
+
+164
+00:07:13,370 --> 00:07:16,230
+but it's worth seeing if some of these secondary aspects,
+
+165
+00:07:16,230 --> 00:07:19,440
+the warehousing space or these other things dominate,
+
+166
+00:07:19,440 --> 00:07:22,830
+because typically what happens is this hurdle rate
+
+167
+00:07:22,830 --> 00:07:25,820
+or this cost of capital dominates the other factors.
+
+168
+00:07:25,820 --> 00:07:30,420
+So that's why we kind of use those units.
+
+169
+00:07:30,420 --> 00:07:33,360
+And so at the end of the day, the holding cost
+
+170
+00:07:33,360 --> 00:07:36,500
+is essentially that variable cost per item
+
+171
+00:07:36,500 --> 00:07:38,400
+that it costs me to have that item
+
+172
+00:07:38,400 --> 00:07:40,300
+for a certain length of time.
+
+173
+00:07:40,300 --> 00:07:43,590
+And this is relevant whenever I'm holding inventory
+
+174
+00:07:43,590 --> 00:07:45,330
+for any period of time.
+
+175
+00:07:45,330 --> 00:07:48,120
+So that's carrying cost or the holding cost.
+
+176
+00:07:48,120 --> 00:07:50,200
+Let me go into the last or the fourth category,
+
+177
+00:07:50,200 --> 00:07:52,280
+and these are shortage or stock-out costs.
+
+178
+00:07:52,280 --> 00:07:55,500
+And we're going to use c sub s for shortage or stock-out.
+
+179
+00:07:55,500 --> 00:07:58,280
+And the units here-- again these are
+
+180
+00:07:58,280 --> 00:08:00,600
+tough because they could be many different things.
+
+181
+00:08:00,600 --> 00:08:04,640
+It depends how I think my costs accrue.
+
+182
+00:08:04,640 --> 00:08:08,630
+So it could be dollar per unit, so every item that I'm short,
+
+183
+00:08:08,630 --> 00:08:11,130
+I'm going to be charged a certain amount.
+
+184
+00:08:11,130 --> 00:08:13,250
+It could be dollar per unit per time.
+
+185
+00:08:13,250 --> 00:08:15,100
+So maybe if I'm short something, but I'm
+
+186
+00:08:15,100 --> 00:08:18,747
+only stocked-out for a week versus a month, that's
+
+187
+00:08:18,747 --> 00:08:19,830
+going to cost differently.
+
+188
+00:08:19,830 --> 00:08:21,850
+So maybe it's the period of time.
+
+189
+00:08:21,850 --> 00:08:25,430
+Or sometimes, if it doesn't matter how many I stock-out,
+
+190
+00:08:25,430 --> 00:08:27,770
+but if I get an order in and if anything
+
+191
+00:08:27,770 --> 00:08:30,850
+is short from what I ordered, I incurred cost.
+
+192
+00:08:30,850 --> 00:08:35,409
+So there's many different ways to measure stock-out costs
+
+193
+00:08:35,409 --> 00:08:36,970
+or shortage costs.
+
+194
+00:08:36,970 --> 00:08:38,440
+And so what does it contain?
+
+195
+00:08:38,440 --> 00:08:39,980
+Well, a bunch of different things.
+
+196
+00:08:39,980 --> 00:08:41,809
+It depends on how I want to look at it.
+
+197
+00:08:41,809 --> 00:08:44,460
+For backorders, these are those items
+
+198
+00:08:44,460 --> 00:08:46,790
+where customers will wait to get them.
+
+199
+00:08:46,790 --> 00:08:49,130
+So think of high-end smart phones.
+
+200
+00:08:49,130 --> 00:08:52,700
+When the new ones come on, or when books get launched,
+
+201
+00:08:52,700 --> 00:08:56,251
+instead of being published, people will sign up for them
+
+202
+00:08:56,251 --> 00:08:57,750
+and they will order them and they'll
+
+203
+00:08:57,750 --> 00:09:00,900
+be on backorder until the product actually arrives.
+
+204
+00:09:00,900 --> 00:09:02,630
+That's one case.
+
+205
+00:09:02,630 --> 00:09:05,080
+Another case is you have this lost sales, where
+
+206
+00:09:05,080 --> 00:09:06,960
+the customer will just go somewhere else.
+
+207
+00:09:06,960 --> 00:09:09,400
+So if you don't have the toothpaste they're looking for,
+
+208
+00:09:09,400 --> 00:09:11,400
+they'll just go down the street to another store
+
+209
+00:09:11,400 --> 00:09:12,520
+and buy it there.
+
+210
+00:09:12,520 --> 00:09:14,020
+Then there's another cost that could
+
+211
+00:09:14,020 --> 00:09:17,910
+occur where the customer goes away and goes away forever.
+
+212
+00:09:17,910 --> 00:09:20,390
+They get fed up with you not having the product they want,
+
+213
+00:09:20,390 --> 00:09:23,070
+so they end up going somewhere else and forever.
+
+214
+00:09:23,070 --> 00:09:26,110
+It's not just that individual sale you lose,
+
+215
+00:09:26,110 --> 00:09:27,850
+it's that whole stream of revenue
+
+216
+00:09:27,850 --> 00:09:30,162
+from that one customer forever and ever.
+
+217
+00:09:30,162 --> 00:09:32,120
+And then finally it could be a disruption cost,
+
+218
+00:09:32,120 --> 00:09:34,170
+where it holds up the production line.
+
+219
+00:09:34,170 --> 00:09:37,720
+So there could be costs not just for the lost time
+
+220
+00:09:37,720 --> 00:09:39,950
+and labor for those people working on the line.
+
+221
+00:09:39,950 --> 00:09:41,960
+If you have a product that's feeding into a line
+
+222
+00:09:41,960 --> 00:09:44,520
+and it's not there, the whole line might have to go down,
+
+223
+00:09:44,520 --> 00:09:48,490
+but also maybe incurred cost for bringing it back up on line.
+
+224
+00:09:48,490 --> 00:09:51,970
+And so this can be a very huge cost in some manufacturing
+
+225
+00:09:51,970 --> 00:09:53,000
+situations.
+
+226
+00:09:53,000 --> 00:09:57,090
+So you have all these different types of costs,
+
+227
+00:09:57,090 --> 00:10:00,680
+so this is a really squishy and hard number to get.
+
+228
+00:10:00,680 --> 00:10:03,360
+And so one way you can do it is you engineer the cost
+
+229
+00:10:03,360 --> 00:10:06,490
+and you try to figure out, OK, if I'm short,
+
+230
+00:10:06,490 --> 00:10:08,190
+here's exactly what happens.
+
+231
+00:10:08,190 --> 00:10:10,940
+And there's a lot of studies to try to look at this.
+
+232
+00:10:10,940 --> 00:10:14,330
+Typically what people do, what most companies do,
+
+233
+00:10:14,330 --> 00:10:16,600
+is they assume some service level.
+
+234
+00:10:16,600 --> 00:10:19,655
+They say I want to make sure I don't stock out more than,
+
+235
+00:10:19,655 --> 00:10:22,910
+I don't know, 1% of the time for order cycles.
+
+236
+00:10:22,910 --> 00:10:26,030
+Or my fill rate has to be a certain amount.
+
+237
+00:10:26,030 --> 00:10:29,710
+And so you set a service level, and as we'll show later on,
+
+238
+00:10:29,710 --> 00:10:33,590
+that implicitly determines what your cost of a stock-out is.
+
+239
+00:10:33,590 --> 00:10:35,920
+But costs of stock-out are a very tricky thing
+
+240
+00:10:35,920 --> 00:10:40,340
+to do because it's based on the consumer or the customer's
+
+241
+00:10:40,340 --> 00:10:41,360
+behavior.
+
+242
+00:10:41,360 --> 00:10:43,910
+And so you can't really put the price on it
+
+243
+00:10:43,910 --> 00:10:46,160
+unless you know what their behavior's going to be.
+
+244
+00:10:46,160 --> 00:10:47,330
+And when is it relevant?
+
+245
+00:10:47,330 --> 00:10:49,380
+Whenever there's uncertainty in demand,
+
+246
+00:10:49,380 --> 00:10:52,160
+replenishment time, anything where you could potentially
+
+247
+00:10:52,160 --> 00:10:53,970
+stock-out.
+
+248
+00:10:53,970 --> 00:10:55,860
+So these are the total relevant costs,
+
+249
+00:10:55,860 --> 00:10:57,790
+and the next step is to use these
+
+250
+00:10:57,790 --> 00:11:01,370
+to develop different models for inventory policy
+
+251
+00:11:01,370 --> 00:11:04,320
+that we'll now use to develop the different policies
+
+252
+00:11:04,320 --> 00:11:07,940
+that we'll be playing with for the rest of the course.
+
+253
+00:11:07,940 --> 00:11:09,962
+
+

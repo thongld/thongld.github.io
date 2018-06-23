@@ -1,0 +1,936 @@
+395
+00:18:30,410 --> 00:18:34,340
+https://youtu.be/FS-WZWUlPlM
+so there's in operator
+says, in operator says, hey
+
+396
+00:18:34,340 --> 00:18:37,080
+ask a question.
+
+397
+00:18:37,080 --> 00:18:43,200
+Is the string csev a current
+key in the dictionary ccc.
+
+398
+00:18:43,200 --> 00:18:46,710
+Is the string csev a current
+key in the dictionary ccc,
+
+399
+00:18:46,710 --> 00:18:49,210
+and it says false.
+
+400
+00:18:49,210 --> 00:18:51,560
+So now we have
+something that doesn't
+
+401
+00:18:51,560 --> 00:18:53,980
+give a trace back that
+can tell us whether or not
+
+402
+00:18:53,980 --> 00:18:55,046
+the key is there.
+
+403
+00:18:55,046 --> 00:18:56,420
+So if you remember
+the algorithm,
+
+404
+00:18:56,420 --> 00:18:59,050
+the first time you see
+it you set them to one,
+
+405
+00:18:59,050 --> 00:19:02,620
+and every other time
+you add one to them.
+
+406
+00:19:02,620 --> 00:19:05,120
+So this how we do
+that in Python.
+
+407
+00:19:05,120 --> 00:19:07,380
+So here's how we
+implement that program
+
+408
+00:19:07,380 --> 00:19:09,890
+that I just gave you in Python.
+
+409
+00:19:09,890 --> 00:19:12,660
+So here's our
+names, it's shorter
+
+410
+00:19:12,660 --> 00:19:14,740
+so my slide works better.
+
+411
+00:19:14,740 --> 00:19:16,690
+Here's variable, our
+iteration variable
+
+412
+00:19:16,690 --> 00:19:21,240
+it's going to go through all
+five of these one at a time
+
+413
+00:19:21,240 --> 00:19:24,730
+and within the body of the
+loop, we have an if statement.
+
+414
+00:19:24,730 --> 00:19:29,750
+If the name is not currently in
+the counts dictionary counts is
+
+415
+00:19:29,750 --> 00:19:32,170
+the name of my dictionary,
+if the name is not currently
+
+416
+00:19:32,170 --> 00:19:36,450
+in counts dictionary, I say
+counts of name equals one.
+
+417
+00:19:36,450 --> 00:19:38,810
+Else, that must
+mean it's already
+
+418
+00:19:38,810 --> 00:19:41,290
+there which means it's
+OK to retrieve it,
+
+419
+00:19:41,290 --> 00:19:43,840
+counts sub name plus 1,
+we're going to add a 1 to it
+
+420
+00:19:43,840 --> 00:19:45,710
+and stick it back in.
+
+421
+00:19:45,710 --> 00:19:46,550
+OK
+
+422
+00:19:46,550 --> 00:19:50,310
+And so when this finishes, it's
+going to add entries and then
+
+423
+00:19:50,310 --> 00:19:52,720
+add one to entries today
+that already exist,
+
+424
+00:19:52,720 --> 00:19:55,110
+and not trace back it all,
+and when we print it out
+
+425
+00:19:55,110 --> 00:19:58,300
+we're going to see
+accounts and literally this
+
+426
+00:19:58,300 --> 00:20:00,750
+could have gone a million
+times and it would just be fun
+
+427
+00:20:00,750 --> 00:20:02,540
+and it would just
+keep expanding.
+
+428
+00:20:02,540 --> 00:20:05,280
+OK?
+
+429
+00:20:05,280 --> 00:20:06,900
+So this pattern
+of checking to see
+
+430
+00:20:06,900 --> 00:20:10,250
+if the key is in a dictionary,
+setting it to some number,
+
+431
+00:20:10,250 --> 00:20:16,040
+or adding one to it, is a
+really, really common pattern.
+
+432
+00:20:16,040 --> 00:20:18,370
+It's so common as
+a matter of fact,
+
+433
+00:20:18,370 --> 00:20:21,810
+that there is a special thing
+built into dictionaries,
+
+434
+00:20:21,810 --> 00:20:23,730
+that does this for us.
+
+435
+00:20:23,730 --> 00:20:28,090
+OK and there is this
+method called get.
+
+436
+00:20:28,090 --> 00:20:30,530
+And so counts is the
+name of the dictionary,
+
+437
+00:20:30,530 --> 00:20:34,130
+get is a built in
+capability of dictionaries
+
+438
+00:20:34,130 --> 00:20:35,760
+and it takes two parameters.
+
+439
+00:20:35,760 --> 00:20:39,000
+The first parameter
+is a key name,
+
+440
+00:20:39,000 --> 00:20:43,090
+like a string like
+csev, cwen or marquard.
+
+441
+00:20:43,090 --> 00:20:45,400
+And then the second
+parameter is a value
+
+442
+00:20:45,400 --> 00:20:50,890
+to give back if
+this doesn't exist.
+
+443
+00:20:50,890 --> 00:20:54,350
+It's a default value if
+the key does not exist
+
+444
+00:20:54,350 --> 00:20:55,860
+and there's no trace back.
+
+445
+00:20:55,860 --> 00:21:00,720
+So this way you can encapsulate
+in effect if then else.
+
+446
+00:21:00,720 --> 00:21:03,430
+If the name parameters
+is in the counts,
+
+447
+00:21:03,430 --> 00:21:06,330
+print the thing out,
+otherwise print zero.
+
+448
+00:21:06,330 --> 00:21:11,520
+So this expression will
+either get the number,
+
+449
+00:21:11,520 --> 00:21:15,590
+if it exists, or it
+will give me back a zero
+
+450
+00:21:15,590 --> 00:21:16,930
+if it doesn't exist.
+
+451
+00:21:16,930 --> 00:21:19,100
+So this is really
+valuable, right?
+
+452
+00:21:19,100 --> 00:21:21,110
+This is really valuable.
+
+453
+00:21:21,110 --> 00:21:23,270
+That's a pretty bad Smiley face.
+
+454
+00:21:23,270 --> 00:21:26,710
+So this is really
+valuable because it-- once
+
+455
+00:21:26,710 --> 00:21:30,350
+we understand the idiom, It
+really takes four lines of code
+
+456
+00:21:30,350 --> 00:21:32,560
+and turns it into
+one line of code.
+
+457
+00:21:32,560 --> 00:21:35,810
+Because we're going to be doing
+this if then else all the time.
+
+458
+00:21:35,810 --> 00:21:41,080
+Now we can reconstruct that
+loop a lot easier and a lot more
+
+459
+00:21:41,080 --> 00:21:43,090
+cleanly using this idiom.
+
+460
+00:21:43,090 --> 00:21:44,020
+Right?
+
+461
+00:21:44,020 --> 00:21:45,910
+It's something that
+looks kind of complex,
+
+462
+00:21:45,910 --> 00:21:49,180
+but you'll get used
+to it really fast.
+
+463
+00:21:49,180 --> 00:21:51,460
+So we have everything
+here is the same,
+
+464
+00:21:51,460 --> 00:21:54,440
+we create an empty dictionary we
+have five names to go through,
+
+465
+00:21:54,440 --> 00:21:56,580
+we're going to write
+a loop and it's
+
+466
+00:21:56,580 --> 00:21:58,300
+going to go through
+each of those,
+
+467
+00:21:58,300 --> 00:22:00,100
+and then we're going
+to say, counts of name
+
+468
+00:22:00,100 --> 00:22:05,450
+equals counts dot get
+the value stored at name,
+
+469
+00:22:05,450 --> 00:22:08,590
+and if you don't find
+it give me back a zero.
+
+470
+00:22:08,590 --> 00:22:11,260
+And then whatever comes
+back either the old value
+
+471
+00:22:11,260 --> 00:22:15,320
+or the zero, add one to
+that and then take that sum
+
+472
+00:22:15,320 --> 00:22:18,310
+and stick it in counts name.
+
+473
+00:22:18,310 --> 00:22:25,940
+So this is either
+going to create,
+
+474
+00:22:25,940 --> 00:22:29,837
+or it's going to update.
+
+475
+00:22:29,837 --> 00:22:32,170
+If there is no entry, it's
+going to create it and set it
+
+476
+00:22:32,170 --> 00:22:35,580
+to one, if there is an
+entry it's going to add one
+
+477
+00:22:35,580 --> 00:22:37,560
+to the current entry.
+
+478
+00:22:37,560 --> 00:22:46,510
+OK so this is, this line
+is kind of an idiom.
+
+479
+00:22:46,510 --> 00:22:48,440
+Read about it in the
+book, figure it out,
+
+480
+00:22:48,440 --> 00:22:50,340
+get used to the notion
+of what this is doing.
+
+481
+00:22:50,340 --> 00:22:53,100
+Understand what that is doing.
+
+482
+00:22:53,100 --> 00:22:54,430
+OK?
+
+483
+00:22:54,430 --> 00:22:58,510
+Because I'm going to start using
+it as if you understand it.
+
+484
+00:22:58,510 --> 00:23:03,330
+So the next problem
+is, a problem
+
+485
+00:23:03,330 --> 00:23:05,310
+of finding the most common word.
+
+486
+00:23:05,310 --> 00:23:09,040
+So finding the most
+common the top five,
+
+487
+00:23:09,040 --> 00:23:13,000
+is often a trigger that
+says use dictionaries,
+
+488
+00:23:13,000 --> 00:23:15,407
+because if you're going
+to have to count things up
+
+489
+00:23:15,407 --> 00:23:17,240
+you don't know what the
+most common thing is
+
+490
+00:23:17,240 --> 00:23:20,310
+at the beginning, first you
+have to count everything up,
+
+491
+00:23:20,310 --> 00:23:22,240
+and dictionaries are
+a great way to count.
+
+492
+00:23:22,240 --> 00:23:24,600
+So here's a little
+problem and I would
+
+493
+00:23:24,600 --> 00:23:26,280
+like you to read
+this text and find
+
+494
+00:23:26,280 --> 00:23:29,470
+me the most common
+word in the text
+
+495
+00:23:29,470 --> 00:23:31,800
+and tell me what the
+most common word is
+
+496
+00:23:31,800 --> 00:23:35,430
+and how many times it occurs.
+
+497
+00:23:35,430 --> 00:23:36,552
+Ready?
+
+498
+00:23:36,552 --> 00:23:38,510
+I'm going to give you a
+thousandth of a second,
+
+499
+00:23:38,510 --> 00:23:39,900
+just like I would
+give a computer.
+
+500
+00:23:39,900 --> 00:23:40,920
+I would expect that
+they'll do this
+
+501
+00:23:40,920 --> 00:23:42,450
+in a thousandth of a second.
+
+502
+00:23:42,450 --> 00:23:43,110
+There you go.
+
+503
+00:23:43,110 --> 00:23:45,920
+
+504
+00:23:45,920 --> 00:23:49,590
+OK I gave you five seconds,
+times up, did you get it?
+
+505
+00:23:49,590 --> 00:23:51,570
+Or did you say to
+yourself, you know
+
+506
+00:23:51,570 --> 00:23:54,030
+what I hate that,
+it's no good, I
+
+507
+00:23:54,030 --> 00:23:56,147
+think I'll write a
+Python program instead.
+
+508
+00:23:56,147 --> 00:23:57,980
+And you'll probably
+show me a Python program
+
+509
+00:23:57,980 --> 00:23:59,240
+if I wait long enough.
+
+510
+00:23:59,240 --> 00:24:01,220
+So here's a slightly
+easier problem,
+
+511
+00:24:01,220 --> 00:24:02,660
+from the first lecture.
+
+512
+00:24:02,660 --> 00:24:03,160
+Ready?
+
+513
+00:24:03,160 --> 00:24:06,180
+It's the same problem,
+find the most common word
+
+514
+00:24:06,180 --> 00:24:07,960
+and how many times
+the word occurs.
+
+515
+00:24:07,960 --> 00:24:35,640
+
+516
+00:24:35,640 --> 00:24:38,000
+Did you get it?
+
+517
+00:24:38,000 --> 00:24:42,000
+I believe the answer is, and
+I could look really dumb here,
+
+518
+00:24:42,000 --> 00:24:45,890
+the answer is, the and I
+think it's seven times.
+
+519
+00:24:45,890 --> 00:24:47,470
+So that's the right answer.
+
+520
+00:24:47,470 --> 00:24:48,340
+OK.
+
+521
+00:24:48,340 --> 00:24:51,610
+Again things humans
+are not so good at.
+
+522
+00:24:51,610 --> 00:24:53,772
+So here's a piece of
+code that's starting
+
+523
+00:24:53,772 --> 00:24:55,230
+to combine some of
+the things we've
+
+524
+00:24:55,230 --> 00:24:57,720
+been doing in the past
+few chapters all together.
+
+525
+00:24:57,720 --> 00:25:02,840
+We are going to read a line
+of text, split it into words,
+
+526
+00:25:02,840 --> 00:25:07,350
+count the occurrence, how
+many times each word occurs
+
+527
+00:25:07,350 --> 00:25:10,060
+and then print out a map.
+
+528
+00:25:10,060 --> 00:25:13,440
+So, so here's what
+we're going to do.
+
+529
+00:25:13,440 --> 00:25:16,870
+We're going to say OK start a
+dictionary an empty dictionary.
+
+530
+00:25:16,870 --> 00:25:17,745
+Read a line of input.
+
+531
+00:25:17,745 --> 00:25:20,460
+
+532
+00:25:20,460 --> 00:25:24,940
+Then split it, remember
+the split takes a string
+
+533
+00:25:24,940 --> 00:25:27,160
+and produces a list.
+
+534
+00:25:27,160 --> 00:25:30,230
+So words is a list,
+line is a string,
+
+535
+00:25:30,230 --> 00:25:31,910
+and then we'll print that out.
+
+536
+00:25:31,910 --> 00:25:33,920
+Then we're going to
+write a for loop that's
+
+537
+00:25:33,920 --> 00:25:36,390
+going to go through
+each of the words,
+
+538
+00:25:36,390 --> 00:25:39,040
+and then create, use this
+idiom, counts of word
+
+539
+00:25:39,040 --> 00:25:42,017
+equals counts dot get
+word comma 0 plus 1.
+
+540
+00:25:42,017 --> 00:25:43,600
+So this is going to
+do exactly what we
+
+541
+00:25:43,600 --> 00:25:47,730
+talked about in the
+previous couple slides back.
+
+542
+00:25:47,730 --> 00:25:50,980
+Either create the entries
+or add to those entries.
+
+543
+00:25:50,980 --> 00:25:52,840
+OK and then we're going
+to print them out.
+
+544
+00:25:52,840 --> 00:25:56,650
+So here's what that program
+does, when it prints out.
+
+545
+00:25:56,650 --> 00:25:58,920
+Now this is actually
+one long line
+
+546
+00:25:58,920 --> 00:26:01,060
+I'm just cutting it so
+you can see it here's
+
+547
+00:26:01,060 --> 00:26:05,400
+this line we enter and the
+words the they're seven of them,
+
+548
+00:26:05,400 --> 00:26:08,980
+then it takes this line
+and splits it into a list
+
+549
+00:26:08,980 --> 00:26:11,250
+and there is the beginning
+and end of the list.
+
+550
+00:26:11,250 --> 00:26:14,300
+The list maintains the
+order, so the list simply
+
+551
+00:26:14,300 --> 00:26:18,150
+breaks all these words
+into separate words
+
+552
+00:26:18,150 --> 00:26:25,160
+in a list of strings, from
+one string too many strings.
+
+553
+00:26:25,160 --> 00:26:28,750
+This is many strings,
+and so the and spaces
+
+554
+00:26:28,750 --> 00:26:30,564
+are gone and so
+here's this list,
+
+555
+00:26:30,564 --> 00:26:31,980
+and then what we're
+going to do is
+
+556
+00:26:31,980 --> 00:26:35,440
+we are going to run
+through the list
+
+557
+00:26:35,440 --> 00:26:37,200
+and we are going to
+keep running totals
+
+558
+00:26:37,200 --> 00:26:39,490
+of each of the words in
+the list and then we're
+
+559
+00:26:39,490 --> 00:26:41,990
+done with a list, we're
+going to print out
+
+560
+00:26:41,990 --> 00:26:44,760
+the contents of that dictionary
+and we can inspect it,
+
+561
+00:26:44,760 --> 00:26:47,440
+go like let's look
+for the biggest one,
+
+562
+00:26:47,440 --> 00:26:50,550
+it's kind of like looking for
+the largest, like oh seven,
+
+563
+00:26:50,550 --> 00:26:54,230
+that's the largest and
+the largest word is the.
+
+564
+00:26:54,230 --> 00:26:57,000
+OK so that's how
+the program runs.
+
+565
+00:26:57,000 --> 00:27:01,300
+It reads a line, splits
+it into a list of words,
+
+566
+00:27:01,300 --> 00:27:04,450
+and then accumulates a
+running total for each word,
+
+567
+00:27:04,450 --> 00:27:08,990
+and then we hand inspect to see
+what the most common word is.
+
+568
+00:27:08,990 --> 00:27:10,890
+OK
+
+569
+00:27:10,890 --> 00:27:13,340
+Oh no no, I don't
+want that song again.
+
+570
+00:27:13,340 --> 00:27:15,540
+There we go.
+
+571
+00:27:15,540 --> 00:27:19,330
+And so here we have the, in
+this kind of a smaller fashion,
+
+572
+00:27:19,330 --> 00:27:21,620
+we make a dictionary.
+
+573
+00:27:21,620 --> 00:27:25,160
+This entering a line of text
+is here, it's all one line,
+
+574
+00:27:25,160 --> 00:27:29,150
+we do the split and then
+we print the words out
+
+575
+00:27:29,150 --> 00:27:33,190
+and so that split creates a list
+of strings from a single string
+
+576
+00:27:33,190 --> 00:27:37,080
+based on where the blanks are
+at chop, chop, chop, chop,
+
+577
+00:27:37,080 --> 00:27:41,440
+and then here it
+counting, we're going
+
+578
+00:27:41,440 --> 00:27:44,470
+to loop through each of
+the words, one at a time
+
+579
+00:27:44,470 --> 00:27:46,380
+and use this idiom
+counts of word
+
+580
+00:27:46,380 --> 00:27:50,510
+equals counts that get word
+comma 0 plus 1, which is going
+
+581
+00:27:50,510 --> 00:27:52,690
+to create and/or update.
+
+582
+00:27:52,690 --> 00:27:56,110
+And then we print the counts
+out and that comes up there.
+
+583
+00:27:56,110 --> 00:27:59,547
+OK so again, this is the
+new thing we've done.
+
+584
+00:27:59,547 --> 00:28:01,505
+Everything else here
+we've kind of seen before.
+
+585
+00:28:01,505 --> 00:28:04,790
+
+586
+00:28:04,790 --> 00:28:08,460
+Now we can also loop through
+dictionaries with for loops.
+
+587
+00:28:08,460 --> 00:28:12,560
+
+588
+00:28:12,560 --> 00:28:15,340
+The for loop we've been put
+all kinds of things over here,
+
+589
+00:28:15,340 --> 00:28:18,910
+we put strings over here, we
+put listed numbers over here,
+
+590
+00:28:18,910 --> 00:28:21,800
+we put files over
+here, and basically
+
+591
+00:28:21,800 --> 00:28:26,160
+what it really says is this
+is a collection of things,
+

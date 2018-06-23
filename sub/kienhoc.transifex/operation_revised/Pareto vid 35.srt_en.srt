@@ -1,0 +1,201 @@
+1
+00:00:01,150 --> 00:00:03,900
+Hello again and welcome back to Operations
+Management
+
+2
+00:00:03,900 --> 00:00:07,830
+We are continuing the series of 7 tools of
+quality and in this one,
+
+3
+00:00:07,830 --> 00:00:14,049
+we will be talking about Pareto Charts
+Very simply a pareto chart is just a vertical
+
+4
+00:00:14,049 --> 00:00:18,480
+bar graph where we take the bars,
+rearrange them from the longest bars on the
+
+5
+00:00:18,480 --> 00:00:23,910
+left to the shortest to the right
+and create a great visual aid when we’re
+
+6
+00:00:23,910 --> 00:00:30,890
+discussing problems or causes of situations
+We use pareto charts when we try to analyze
+
+7
+00:00:30,890 --> 00:00:36,360
+the frequency of problems or causes
+and if we try to find the most significant
+
+8
+00:00:36,360 --> 00:00:41,020
+problems or causes
+So let’s take a look at a couple of pareto
+
+9
+00:00:41,020 --> 00:00:42,020
+charts.
+
+10
+00:00:42,020 --> 00:00:46,670
+The one on the left is just indicating the
+reason for people being late
+
+11
+00:00:46,670 --> 00:00:51,960
+where we have the reasons coming from the
+alarm not going off to sleeping
+
+12
+00:00:51,960 --> 00:00:56,330
+through the alarm, traffic, cramp problem,
+no hot water
+
+13
+00:00:56,330 --> 00:01:02,220
+As you notice that the frequency bars are
+ranged from largest to smallest
+
+14
+00:01:02,220 --> 00:01:08,600
+but then you notice there is a second line
+on this chart and this is the cumulative percentage
+
+15
+00:01:08,600 --> 00:01:12,280
+line,
+this is where we’re taking the sum total
+
+16
+00:01:12,280 --> 00:01:17,510
+of each of the reasons and ending it up to
+get 100%
+
+17
+00:01:17,510 --> 00:01:21,140
+The other one on the right is particular points
+to return software.
+
+18
+00:01:21,140 --> 00:01:27,860
+Then again we have the highest to the lowest
+and we have cumulative line but this time
+
+19
+00:01:27,860 --> 00:01:29,370
+we have a second line.
+
+20
+00:01:29,370 --> 00:01:32,000
+The green line there is showing 80%.
+
+21
+00:01:32,000 --> 00:01:38,540
+A lot of time when we use pareto charts,
+what we looking at is what is creating the
+
+22
+00:01:38,540 --> 00:01:44,530
+most problems,
+we want to look at the top 80% so in this
+
+23
+00:01:44,530 --> 00:01:53,470
+case 80% hit right at the Changed mind
+So we take together Not compatible, Does not
+
+24
+00:01:53,470 --> 00:02:01,299
+perform as expected, Found at a cheaper price,
+and Changed mind together that create 80%
+
+25
+00:02:01,299 --> 00:02:09,030
+of the reasons for software being returned
+So when we use the pareto chart, we know that
+
+26
+00:02:09,030 --> 00:02:13,909
+the most frequent issue is on the left,
+the least frequent is on the right and a cumulative
+
+27
+00:02:13,909 --> 00:02:19,900
+line in addition to the bars
+can provide information and that information
+
+28
+00:02:19,900 --> 00:02:25,879
+is combination of issues, and we look for
+80% of all problems
+
+29
+00:02:25,879 --> 00:02:31,640
+When we go about building of pareto chart
+in Excel it is really simple.
+
+30
+00:02:31,640 --> 00:02:35,239
+We enter the data and we sort the highest
+to lowest.
+
+31
+00:02:35,239 --> 00:02:38,480
+So we have categories with the frequency.
+
+32
+00:02:38,480 --> 00:02:42,720
+And then we add the cumulative percentage
+so that we can see that
+
+33
+00:02:42,720 --> 00:02:47,650
+the Missing belt makes up a total of 38% but
+the Missing belt
+
+34
+00:02:47,650 --> 00:02:54,239
+and the Wrong size together make up 64% and
+so on
+
+35
+00:02:54,239 --> 00:02:58,959
+Then we take the data and we select the column
+chart from chart tools
+
+36
+00:02:58,959 --> 00:03:04,170
+and then we edit the chart to convert cumulative
+data to line chart
+
+37
+00:03:04,170 --> 00:03:09,340
+and we put in on the second axis
+That’s generally how it goes.
+
+38
+00:03:09,340 --> 00:03:12,400
+Very simple to do, we may take a look at the
+practice
+
+39
+00:03:12,400 --> 00:03:17,309
+but it is a straightforward way of taking
+a look at causes,
+
+40
+00:03:17,309 --> 00:03:22,529
+the most frequent causes of the situation
+we are trying to correct.
+
+41
+00:03:22,529 --> 00:03:25,400
+I’ll see you again when we talk about another
+tool
+

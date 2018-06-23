@@ -1,0 +1,632 @@
+0
+00:00:05,072 --> 00:00:06,720
+Welcome back.
+https://youtu.be/G4W1tU-u1LE
+1
+00:00:06,720 --> 00:00:09,830
+What I&#39;m going to do is, I&#39;m going to do a detailed example,
+
+2
+00:00:10,940 --> 00:00:16,180
+which takes all the stuff we have talked about, and put it together.
+
+3
+00:00:16,180 --> 00:00:20,330
+And I call this a mega example.
+
+4
+00:00:20,330 --> 00:00:22,020
+Before I do that,
+
+5
+00:00:22,020 --> 00:00:27,400
+I just want you to recognize graphically, again, what we are up to.
+
+6
+00:00:27,400 --> 00:00:28,805
+So I&#39;m going to just write some stuff.
+
+7
+00:00:31,847 --> 00:00:36,559
+You have assets, liabilities and
+
+8
+00:00:36,559 --> 00:00:41,441
+I clearly keep saying real assets.
+
+9
+00:00:41,441 --> 00:00:46,802
+Because if you&#39;re not producing something like a product, or a service,
+
+10
+00:00:46,802 --> 00:00:52,470
+and you have money on both sides, how could it create value, right?
+
+11
+00:00:52,470 --> 00:00:55,920
+So, realize it&#39;s extremely important.
+
+12
+00:00:55,920 --> 00:00:58,690
+These generate cash flows.
+
+13
+00:00:58,690 --> 00:01:01,870
+And they&#39;re evaluated at Ra,
+
+14
+00:01:01,870 --> 00:01:05,670
+which also turns out to be weighted average cost of capital.
+
+15
+00:01:05,670 --> 00:01:08,950
+In our world, we&#39;re going to change that towards the end and
+
+16
+00:01:08,950 --> 00:01:12,790
+then you can go into financing, you&#39;ll learn more and why, okay?
+
+17
+00:01:12,790 --> 00:01:17,240
+But for time being, as I said, let&#39;s keep frictions and taxes away.
+
+18
+00:01:17,240 --> 00:01:18,657
+They are man made.
+
+19
+00:01:18,657 --> 00:01:21,844
+They don&#39;t belong in the natural world and, therefore,
+
+20
+00:01:21,844 --> 00:01:24,930
+let&#39;s understand the natural world.
+
+21
+00:01:24,930 --> 00:01:29,970
+In this world, we know that values created on the left-hand side
+
+22
+00:01:29,970 --> 00:01:34,110
+value sheet from my side and then you have only equity.
+
+23
+00:01:34,110 --> 00:01:35,240
+What will happen?
+
+24
+00:01:35,240 --> 00:01:37,320
+I&#39;m after cost of capital in this case.
+
+25
+00:01:37,320 --> 00:01:38,400
+I&#39;ve done my cash flows.
+
+26
+00:01:38,400 --> 00:01:39,390
+I&#39;m just focused on this.
+
+27
+00:01:40,800 --> 00:01:45,430
+This, And this will be the same.
+
+28
+00:01:45,430 --> 00:01:46,710
+How do I get this?
+
+29
+00:01:46,710 --> 00:01:51,585
+I go to Beta equity, calculate it from returns, put it in,
+
+30
+00:01:51,585 --> 00:01:54,815
+which equation to go from here to here?
+
+31
+00:01:54,815 --> 00:01:55,315
+Cap m.
+
+32
+00:01:57,450 --> 00:01:59,100
+That&#39;s what I&#39;m going to do.
+
+33
+00:01:59,100 --> 00:02:01,190
+However, life is a little bit complicated.
+
+34
+00:02:02,830 --> 00:02:06,740
+I can calculate beta equity, but turns out, I&#39;ve forced debt to be here.
+
+35
+00:02:08,289 --> 00:02:12,890
+And there will be a corresponding Rd and a corresponding Bd.
+
+36
+00:02:14,010 --> 00:02:16,480
+Many times, and I&#39;ve warned you of this, many times,
+
+37
+00:02:16,480 --> 00:02:18,545
+people assume beta delta is zero.
+
+38
+00:02:18,545 --> 00:02:22,130
+That&#39;s simply because in the original proof for
+
+39
+00:02:22,130 --> 00:02:25,390
+convenience assumed, let the debt be risk free.
+
+40
+00:02:26,660 --> 00:02:28,070
+That can&#39;t be true of all debt.
+
+41
+00:02:28,070 --> 00:02:31,470
+You just have seen the disaster in the last few years.
+
+42
+00:02:31,470 --> 00:02:33,770
+Because there is risk.
+
+43
+00:02:33,770 --> 00:02:41,355
+Phones, houses to default, whether that&#39;s due to bad practices or
+
+44
+00:02:41,355 --> 00:02:47,790
+due to general reasons, whatever, default can happen.
+
+45
+00:02:47,790 --> 00:02:53,820
+So beta debt, think of it as 0 all the time as a bad idea, okay?
+
+46
+00:02:53,820 --> 00:02:59,860
+So very quickly, I&#39;m going to now introduce debt,
+
+47
+00:02:59,860 --> 00:03:01,390
+but keep taxes out of the picture.
+
+48
+00:03:01,390 --> 00:03:03,742
+You&#39;ll see debt, in the real world,
+
+49
+00:03:03,742 --> 00:03:08,750
+does have an advantage that&#39;s given by the government to you in most countries.
+
+50
+00:03:08,750 --> 00:03:10,850
+Interest on debt is tax deductible.
+
+51
+00:03:10,850 --> 00:03:14,950
+We are assuming that&#39;s not the case right now for simplicity and actually for
+
+52
+00:03:14,950 --> 00:03:16,580
+understanding the basics.
+
+53
+00:03:16,580 --> 00:03:18,686
+Okay, how would you go from here to here?
+
+54
+00:03:18,686 --> 00:03:20,513
+Again, Cap m.
+
+55
+00:03:22,924 --> 00:03:26,556
+But the thing that now I&#39;ll have to do is I&#39;m valuing a company,
+
+56
+00:03:26,556 --> 00:03:31,720
+I go to my compatible, the compatible has equity in debt, imagine Amazon.
+
+57
+00:03:31,720 --> 00:03:33,500
+So what do I have to do?
+
+58
+00:03:33,500 --> 00:03:37,971
+I can&#39;t put this is Cap m and call this Re.
+
+59
+00:03:37,971 --> 00:03:39,630
+What do I have to do?
+
+60
+00:03:39,630 --> 00:03:44,800
+I have to remove the effects of debt from this.
+
+61
+00:03:44,800 --> 00:03:47,970
+And that&#39;s called unlevering.
+
+62
+00:03:47,970 --> 00:03:51,670
+And that&#39;s what I will do using an example, and
+
+63
+00:03:51,670 --> 00:03:56,560
+that&#39;s closest to the real word, but just a first peek on valuation.
+
+64
+00:03:56,560 --> 00:03:58,495
+And focus not on cash flows.
+
+65
+00:03:58,495 --> 00:04:02,260
+We&#39;ll have cash flows, but focus more on cost of capital.
+
+66
+00:04:03,340 --> 00:04:06,230
+So since we are going to do an example,
+
+67
+00:04:06,230 --> 00:04:11,220
+what I&#39;m going to do now is show you the details of the example and
+
+68
+00:04:11,220 --> 00:04:14,730
+I will let you write out the details while I talk through.
+
+69
+00:04:14,730 --> 00:04:19,540
+Then I&#39;ll take a break, and we&#39;ll do six or seven questions, which are very,
+
+70
+00:04:19,540 --> 00:04:23,600
+very interesting, keeping the calculation simple but
+
+71
+00:04:23,600 --> 00:04:25,680
+really digging deep into evaluation.
+
+72
+00:04:25,680 --> 00:04:30,900
+And by the way, venture capital, private equity do use complicated financial
+
+73
+00:04:30,900 --> 00:04:35,890
+models but often c over r minus g can be used.
+
+74
+00:04:35,890 --> 00:04:40,160
+Multiples is another way to look at c over r minus g.
+
+75
+00:04:40,160 --> 00:04:45,730
+Anyway, so Kitchen Inc is a high-end company that supplies kitchen fixtures.
+
+76
+00:04:45,730 --> 00:04:47,430
+Kitchen Inc has no debt and
+
+77
+00:04:47,430 --> 00:04:51,200
+their stock trades on the NYSE, New York Stock Exchange.
+
+78
+00:04:51,200 --> 00:04:53,660
+I&#39;m just trying to make it very interesting.
+
+79
+00:04:53,660 --> 00:04:56,310
+And it has an equity beta of 1.00.
+
+80
+00:04:56,310 --> 00:04:59,462
+Either you&#39;ve calculated it, or you&#39;ve gone to Yahoo fiance, or
+
+81
+00:04:59,462 --> 00:05:01,689
+you&#39;ve gone to Morningstar and you know this.
+
+82
+00:05:03,110 --> 00:05:05,020
+What do you infer from this?
+
+83
+00:05:05,020 --> 00:05:07,810
+That is what I do when I read something in finance.
+
+84
+00:05:07,810 --> 00:05:09,640
+What strikes you about Kitchen, Inc?
+
+85
+00:05:11,440 --> 00:05:16,500
+It strikes you that the beta asset and the beta equity will be the same.
+
+86
+00:05:16,500 --> 00:05:20,260
+And the reason is they have no debt.
+
+87
+00:05:20,260 --> 00:05:24,640
+The return on equity and the return on assets will be the same.
+
+88
+00:05:24,640 --> 00:05:26,370
+That should strike you right away.
+
+89
+00:05:26,370 --> 00:05:29,690
+That&#39;s the kind of capability I want you to develop is that you don&#39;t even
+
+90
+00:05:29,690 --> 00:05:32,310
+need to do calculations to understand what&#39;s going on.
+
+91
+00:05:32,310 --> 00:05:35,930
+The numbers will just confirm what your thinking is.
+
+92
+00:05:35,930 --> 00:05:37,081
+Okay, Kitchen,
+
+93
+00:05:37,081 --> 00:05:41,392
+Inc is considering investing in the home construction business.
+
+94
+00:05:41,392 --> 00:05:46,300
+So it was doing kitchen business now getting into home construction.
+
+95
+00:05:46,300 --> 00:05:50,080
+The project to that it&#39;s looking at is huge because construction requires
+
+96
+00:05:50,080 --> 00:05:54,470
+a lot of investment, you need buy all kinds of stuff.
+
+97
+00:05:54,470 --> 00:05:58,550
+So let&#39;s, to make it exciting, say that the investment is $100 million.
+
+98
+00:05:59,770 --> 00:06:03,680
+Okay, I many times forget how many zeros in a million,
+
+99
+00:06:03,680 --> 00:06:06,630
+I believe there are 6, so 100 million seems right.
+
+100
+00:06:07,700 --> 00:06:12,800
+If undertaken, meaning if they choose to do it, which we&#39;ll try to evaluate for
+
+101
+00:06:12,800 --> 00:06:17,460
+if they should, the construction business will represent 50% of the total business.
+
+102
+00:06:18,710 --> 00:06:21,435
+So right now, construction business is zero.
+
+103
+00:06:21,435 --> 00:06:26,370
+It will become 50% of the value of the firm if you choose to take it.
+
+104
+00:06:26,370 --> 00:06:28,720
+So what are the cash flows from this new idea?
+
+105
+00:06:30,160 --> 00:06:34,330
+To make matters simple, I&#39;m not going to give you a complicated spreadsheet.
+
+106
+00:06:35,610 --> 00:06:38,325
+I&#39;ll make life simple from a calculation perspective.
+
+107
+00:06:38,325 --> 00:06:40,270
+But you know how to do this.
+
+108
+00:06:40,270 --> 00:06:43,420
+So let&#39;s see what the cash flow scenario is.
+
+109
+00:06:43,420 --> 00:06:45,690
+Remember, the world is uncertain, so
+
+110
+00:06:45,690 --> 00:06:50,820
+with a 40% chance, you are expected to get $25 million forever.
+
+111
+00:06:50,820 --> 00:06:52,130
+Why forever?
+
+112
+00:06:52,130 --> 00:06:53,310
+Because I can do c over r.
+
+113
+00:06:54,350 --> 00:06:56,240
+Otherwise, I&#39;ll use a spreadsheet, and
+
+114
+00:06:56,240 --> 00:06:59,960
+there are many probabilities then and many possibilities.
+
+115
+00:06:59,960 --> 00:07:02,360
+Don&#39;t need to worry about that.
+
+116
+00:07:02,360 --> 00:07:05,022
+40% chance, 25 million.
+
+117
+00:07:05,022 --> 00:07:08,343
+30% chance, 15 million.
+
+118
+00:07:08,343 --> 00:07:11,254
+30% chance, nothing.
+
+119
+00:07:11,254 --> 00:07:14,130
+This is a risky business, right?
+
+120
+00:07:14,130 --> 00:07:19,680
+So lets first stare at these numbers, I&#39;ll let you write them down.
+
+121
+00:07:19,680 --> 00:07:24,490
+I will do another page with some more information, and then we&#39;ll take a pause.
+
+122
+00:07:25,580 --> 00:07:30,820
+What I&#39;ll also do is, I put up these numbers in a separate note,
+
+123
+00:07:31,910 --> 00:07:33,650
+calling it the mega example.
+
+124
+00:07:33,650 --> 00:07:37,326
+Because whenever I do that, we have a lot of numbers like I had in risk,
+
+125
+00:07:37,326 --> 00:07:41,660
+I gave you either the spreadsheets, or I posted something.
+
+126
+00:07:41,660 --> 00:07:44,370
+And if there are a lot of formulas, I put up formulas.
+
+127
+00:07:44,370 --> 00:07:47,160
+If there are a lot of statistics, I put up formulas of statistics.
+
+128
+00:07:47,160 --> 00:07:52,910
+But I don&#39;t believe, I&#39;m sorry, in making copious notes and handing them out.
+
+129
+00:07:52,910 --> 00:07:55,740
+They work out to be a little bit dysfunctional actually.
+
+130
+00:07:55,740 --> 00:07:58,619
+So let&#39;s finish this example with some data.
+
+131
+00:07:58,619 --> 00:08:01,991
+So I&#39;ve given you all the data about the two businesses.
+
+132
+00:08:01,991 --> 00:08:04,510
+Some more about marketplace.
+
+133
+00:08:04,510 --> 00:08:09,967
+Companies solely in the construction business, have an equity beta of 2.50.
+
+134
+00:08:09,967 --> 00:08:13,880
+Remember, you are in the kitchen business, you are going into which business?
+
+135
+00:08:13,880 --> 00:08:15,160
+Construction.
+
+136
+00:08:15,160 --> 00:08:17,230
+You go to look at comparables and
+
+137
+00:08:17,230 --> 00:08:21,334
+you find that the equity beta of the comparables is 2.50.
+
+138
+00:08:21,334 --> 00:08:23,520
+Equity beta, why did I give it to you?
+
+139
+00:08:23,520 --> 00:08:25,310
+Because that&#39;s what you usually see.
+
+140
+00:08:26,390 --> 00:08:32,854
+These firms on average have a debt to equity, d over e, ratio of 1.
+
+141
+00:08:32,854 --> 00:08:35,960
+And the yield on their debt is about 10%.
+
+142
+00:08:35,960 --> 00:08:38,860
+For simplicity, keep that number in mind.
+
+143
+00:08:38,860 --> 00:08:42,930
+What is another name for a yield on debt Rd?
+
+144
+00:08:44,150 --> 00:08:49,295
+Kitchen, Inc is forecasting that the average market risk premium, remember 5%,
+
+145
+00:08:49,295 --> 00:08:53,948
+and the long-term bond is paying, treasury bond is paying about 2.5%.
+
+146
+00:08:53,948 --> 00:08:55,018
+I&#39;ve changed numbers.
+
+147
+00:08:55,018 --> 00:08:57,750
+Yesterday, we saw a real number from the Wall Street.
+
+148
+00:08:57,750 --> 00:09:01,550
+Here, I&#39;m keeping numbers round so that we can do the calculations.
+
+149
+00:09:01,550 --> 00:09:06,220
+So what I&#39;m going to do is I&#39;m going to let you think about these issues.
+
+150
+00:09:06,220 --> 00:09:09,175
+Please remember that in this page,
+
+151
+00:09:09,175 --> 00:09:14,800
+the important variables that lenders offer are Rd 10% for what?
+
+152
+00:09:14,800 --> 00:09:22,405
+The construction business debt but the Cap m numbers are fixed across everything,
+
+153
+00:09:22,405 --> 00:09:26,325
+which is 5% risk premium, 2.5% Rf.
+
+154
+00:09:26,325 --> 00:09:31,350
+When we come back, we will dig in and start doing some work.
+
+155
+00:09:31,350 --> 00:09:32,910
+There are multiple questions, and
+
+156
+00:09:32,910 --> 00:09:37,240
+at the end of it, we&#39;ll wrap up this whole module.
+
+157
+00:09:37,240 --> 00:09:37,870
+See you in a minute.
+

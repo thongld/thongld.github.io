@@ -1,0 +1,1480 @@
+0
+00:00:00,000 --> 00:00:00,110
+https://youtu.be/eVlkD0QH-us
+
+1
+00:00:00,110 --> 00:00:00,610
+OK.
+
+2
+00:00:00,610 --> 00:00:02,770
+Let's dive into causal analysis.
+
+3
+00:00:02,770 --> 00:00:05,610
+So when you develop a causal model, what you're really
+
+4
+00:00:05,610 --> 00:00:08,700
+saying is that I think demand is correlated
+
+5
+00:00:08,700 --> 00:00:11,280
+with some known and measurable environmental factor
+
+6
+00:00:11,280 --> 00:00:12,480
+or factors.
+
+7
+00:00:12,480 --> 00:00:15,630
+Now, we say "causal models," but it's really a correlation.
+
+8
+00:00:15,630 --> 00:00:18,670
+We should really probably call them "correlation models."
+
+9
+00:00:18,670 --> 00:00:20,620
+And I'll explain why in a few minutes,
+
+10
+00:00:20,620 --> 00:00:22,860
+but what we're saying here is demand.
+
+11
+00:00:22,860 --> 00:00:26,080
+We have some understanding of what is driving it,
+
+12
+00:00:26,080 --> 00:00:29,220
+and so these environmental factors have to be known.
+
+13
+00:00:29,220 --> 00:00:30,720
+I need to know them at the time when
+
+14
+00:00:30,720 --> 00:00:33,549
+I'm making my forecast, not after the fact.
+
+15
+00:00:33,549 --> 00:00:34,840
+And they have to be measurable.
+
+16
+00:00:34,840 --> 00:00:37,080
+I have to be able to put them into a model,
+
+17
+00:00:37,080 --> 00:00:39,720
+and so the format is going to look very familiar to you.
+
+18
+00:00:39,720 --> 00:00:41,220
+You're going to say demand in this--
+
+19
+00:00:41,220 --> 00:00:43,770
+we're going to call it y, the dependent variable--
+
+20
+00:00:43,770 --> 00:00:46,620
+is a function of some other variables-- x1, x2--
+
+21
+00:00:46,620 --> 00:00:48,550
+and these are the independent variables.
+
+22
+00:00:48,550 --> 00:00:50,550
+So let's give you some examples.
+
+23
+00:00:50,550 --> 00:00:52,680
+Disposable diapers.
+
+24
+00:00:52,680 --> 00:00:55,470
+If you're going to forecast demand of disposable diapers
+
+25
+00:00:55,470 --> 00:00:59,610
+for a region, a city, a state, a district-- whatever-- then you
+
+26
+00:00:59,610 --> 00:01:02,280
+might think, well, what would drive that?
+
+27
+00:01:02,280 --> 00:01:03,960
+And you think it might be a function
+
+28
+00:01:03,960 --> 00:01:06,060
+of the number of births.
+
+29
+00:01:06,060 --> 00:01:08,430
+Obviously, if there are no kids, then you probably
+
+30
+00:01:08,430 --> 00:01:09,810
+don't need disposable diapers.
+
+31
+00:01:09,810 --> 00:01:12,490
+Also, it might be a function of the household income.
+
+32
+00:01:12,490 --> 00:01:15,030
+So you can think of these factors
+
+33
+00:01:15,030 --> 00:01:19,260
+as potentially driving the demand for disposable diapers.
+
+34
+00:01:19,260 --> 00:01:20,385
+Another example.
+
+35
+00:01:20,385 --> 00:01:22,260
+In this case, macaroni and cheese-- something
+
+36
+00:01:22,260 --> 00:01:27,000
+that's heavily promoted by stores and by manufacturers.
+
+37
+00:01:27,000 --> 00:01:29,910
+So we can think, for this promoted item,
+
+38
+00:01:29,910 --> 00:01:33,510
+that the demand for it might be a function of the discount--
+
+39
+00:01:33,510 --> 00:01:35,810
+how much you're lowering the price--
+
+40
+00:01:35,810 --> 00:01:37,030
+the placement in the store.
+
+41
+00:01:37,030 --> 00:01:38,325
+Do you put it on an end cap?
+
+42
+00:01:38,325 --> 00:01:39,750
+Do you put it really high?
+
+43
+00:01:39,750 --> 00:01:42,420
+Do you put it right at eye level, and advertisements
+
+44
+00:01:42,420 --> 00:01:43,290
+that you ran?
+
+45
+00:01:43,290 --> 00:01:46,680
+In fact, here at MIT, we've done a number of different studies
+
+46
+00:01:46,680 --> 00:01:50,250
+to look at the effect of these different factors on demand
+
+47
+00:01:50,250 --> 00:01:51,900
+during a promotion.
+
+48
+00:01:51,900 --> 00:01:55,410
+And so you can see that the discounted price will have
+
+49
+00:01:55,410 --> 00:01:57,570
+a huge effect on the demand--
+
+50
+00:01:57,570 --> 00:01:59,110
+hopefully, a positive effect.
+
+51
+00:01:59,110 --> 00:01:59,820
+Right?
+
+52
+00:01:59,820 --> 00:02:01,490
+As I decrease the demand--
+
+53
+00:02:01,490 --> 00:02:05,700
+decrease the price, I expect the demand to go up.
+
+54
+00:02:05,700 --> 00:02:08,490
+And one other example that we got from experience
+
+55
+00:02:08,490 --> 00:02:10,800
+is the idea of repair parts.
+
+56
+00:02:10,800 --> 00:02:13,620
+Repair parts for cars are really a function
+
+57
+00:02:13,620 --> 00:02:16,140
+of the weather, the snow, the probability
+
+58
+00:02:16,140 --> 00:02:19,380
+of having accidents, which increase dramatically as you
+
+59
+00:02:19,380 --> 00:02:21,720
+have bad weather conditions.
+
+60
+00:02:21,720 --> 00:02:24,660
+And this is really repair parts like for side doors and things
+
+61
+00:02:24,660 --> 00:02:26,230
+like that.
+
+62
+00:02:26,230 --> 00:02:28,410
+So any time you think you understand
+
+63
+00:02:28,410 --> 00:02:31,590
+what is driving demand or might have an influence on demand,
+
+64
+00:02:31,590 --> 00:02:34,170
+then it might make sense to use a causal model.
+
+65
+00:02:34,170 --> 00:02:37,200
+We've actually already used these in SC1x.
+
+66
+00:02:37,200 --> 00:02:39,721
+When we looked at trying to--
+
+67
+00:02:39,721 --> 00:02:41,220
+on exponential smoothing, when we're
+
+68
+00:02:41,220 --> 00:02:44,430
+initializing the conditions for the Holt-Winter model where
+
+69
+00:02:44,430 --> 00:02:47,190
+we have level trend and seasonality,
+
+70
+00:02:47,190 --> 00:02:49,170
+remember we have removed the seasonality
+
+71
+00:02:49,170 --> 00:02:52,600
+and I wanted to estimate the initial level and trend?
+
+72
+00:02:52,600 --> 00:02:54,900
+So I had this data, and I used regression.
+
+73
+00:02:54,900 --> 00:02:56,940
+I didn't talk too much about it, but I
+
+74
+00:02:56,940 --> 00:02:59,250
+used ordinary least squares regression to develop
+
+75
+00:02:59,250 --> 00:03:00,870
+this initial estimate.
+
+76
+00:03:00,870 --> 00:03:04,650
+And all we're doing is fitting the observed data
+
+77
+00:03:04,650 --> 00:03:07,260
+into a linear equation.
+
+78
+00:03:07,260 --> 00:03:10,980
+And so you have these observed data, the observed demand,
+
+79
+00:03:10,980 --> 00:03:13,800
+and the observed time period-- the x.
+
+80
+00:03:13,800 --> 00:03:17,560
+And from that, I estimate my beta factors.
+
+81
+00:03:17,560 --> 00:03:21,820
+And so I end up with this predictive model,
+
+82
+00:03:21,820 --> 00:03:23,920
+which is saying the expected value of y--
+
+83
+00:03:23,920 --> 00:03:27,640
+the demand-- given the x values-- in this case,
+
+84
+00:03:27,640 --> 00:03:31,470
+the time period, that's going to be equal to my estimate beta
+
+85
+00:03:31,470 --> 00:03:32,440
+0--
+
+86
+00:03:32,440 --> 00:03:35,860
+my level-- plus beta 1 times the time period,
+
+87
+00:03:35,860 --> 00:03:38,250
+x, where beta 1 is my trend or my slope.
+
+88
+00:03:38,250 --> 00:03:40,930
+
+
+89
+00:03:40,930 --> 00:03:43,690
+So the relationship is in a linear model.
+
+90
+00:03:43,690 --> 00:03:45,670
+The data-- x1, y1--
+
+91
+00:03:45,670 --> 00:03:47,500
+are the observed pairs, and we try
+
+92
+00:03:47,500 --> 00:03:50,830
+to find those beta coefficients that get the best fit.
+
+93
+00:03:50,830 --> 00:03:54,730
+And the best fit is the square of the error terms,
+
+94
+00:03:54,730 --> 00:03:57,580
+and those error terms are the unaccounted or unexplained
+
+95
+00:03:57,580 --> 00:03:58,960
+portion of the model--
+
+96
+00:03:58,960 --> 00:04:01,570
+also called the "residuals."
+
+97
+00:04:01,570 --> 00:04:03,910
+And we have a strong assumption for these error terms
+
+98
+00:04:03,910 --> 00:04:06,260
+in that they're assumed to be independent
+
+99
+00:04:06,260 --> 00:04:10,140
+and identically distributed normally with a mean of 0
+
+100
+00:04:10,140 --> 00:04:12,910
+and a standard deviation of some sigma.
+
+101
+00:04:12,910 --> 00:04:16,510
+Now, the mean needs to be 0 because, if not, then
+
+102
+00:04:16,510 --> 00:04:18,339
+the forecast is biased.
+
+103
+00:04:18,339 --> 00:04:23,140
+If the error terms, if the average of those is not 0,
+
+104
+00:04:23,140 --> 00:04:26,470
+that means I'm biasing positively or negatively
+
+105
+00:04:26,470 --> 00:04:29,090
+for my forecast.
+
+106
+00:04:29,090 --> 00:04:32,890
+So back to the initialization that I had,
+
+107
+00:04:32,890 --> 00:04:36,240
+I came up with this linear model.
+
+108
+00:04:36,240 --> 00:04:37,940
+And just to give an example, if I
+
+109
+00:04:37,940 --> 00:04:43,500
+look at the observed demand for period 97, that was 204.
+
+110
+00:04:43,500 --> 00:04:46,460
+Now, for period 97, the expected value
+
+111
+00:04:46,460 --> 00:04:51,070
+using that line that I developed would be 188.4.
+
+112
+00:04:51,070 --> 00:04:54,230
+And all that the residual is the difference between the two,
+
+113
+00:04:54,230 --> 00:04:56,150
+or 15.6.
+
+114
+00:04:56,150 --> 00:04:58,610
+So this observed, there's a residual
+
+115
+00:04:58,610 --> 00:05:05,430
+for every pair of observed and an estimated demand period.
+
+116
+00:05:05,430 --> 00:05:08,010
+So let's do an example, and let's go through this.
+
+117
+00:05:08,010 --> 00:05:10,350
+Let's say I have monthly iced coffee sales.
+
+118
+00:05:10,350 --> 00:05:11,340
+I have a coffee shop.
+
+119
+00:05:11,340 --> 00:05:13,800
+It's located near a university, and I'm
+
+120
+00:05:13,800 --> 00:05:17,280
+trying to forecast how many cups of iced coffee
+
+121
+00:05:17,280 --> 00:05:19,200
+I should sell each month.
+
+122
+00:05:19,200 --> 00:05:21,730
+My data consists of these six columns.
+
+123
+00:05:21,730 --> 00:05:25,500
+I have the demand in column A. That's cups per month.
+
+124
+00:05:25,500 --> 00:05:27,294
+Time period is in column B. Notice,
+
+125
+00:05:27,294 --> 00:05:28,710
+I just numbered these sequentially
+
+126
+00:05:28,710 --> 00:05:31,160
+from the first time period to the 24th,
+
+127
+00:05:31,160 --> 00:05:33,420
+so I have two years worth of data.
+
+128
+00:05:33,420 --> 00:05:37,110
+Column C is the average temperature in Fahrenheit.
+
+129
+00:05:37,110 --> 00:05:38,700
+Column D tells me the year.
+
+130
+00:05:38,700 --> 00:05:41,160
+It's year 1 or year 2.
+
+131
+00:05:41,160 --> 00:05:44,230
+The month-- January, February, March, and so forth.
+
+132
+00:05:44,230 --> 00:05:45,990
+And then the last column, column F,
+
+133
+00:05:45,990 --> 00:05:49,050
+tells me whether the school was in session or not.
+
+134
+00:05:49,050 --> 00:05:51,140
+So let's say this is my data.
+
+135
+00:05:51,140 --> 00:05:53,205
+I'm going to develop a first causal model,
+
+136
+00:05:53,205 --> 00:05:54,705
+and I'm going to say, you know what?
+
+137
+00:05:54,705 --> 00:05:58,272
+What's really driving it is there's some level
+
+138
+00:05:58,272 --> 00:05:59,480
+and then there's some trends.
+
+139
+00:05:59,480 --> 00:06:03,020
+So I'm going to go and do a very simple model here.
+
+140
+00:06:03,020 --> 00:06:06,150
+And so what I'm saying is that my demand
+
+141
+00:06:06,150 --> 00:06:09,390
+is going to be my y variable, and my x variable
+
+142
+00:06:09,390 --> 00:06:14,040
+is going to be my time period starting with January in year 1
+
+143
+00:06:14,040 --> 00:06:17,310
+being time period 1.
+
+144
+00:06:17,310 --> 00:06:19,890
+And so what I'm saying is the demand will look something
+
+145
+00:06:19,890 --> 00:06:22,440
+like this where I have this beta term,
+
+146
+00:06:22,440 --> 00:06:25,890
+this intercept, that happens at time equals 0.
+
+147
+00:06:25,890 --> 00:06:28,380
+And then every additional month beyond that,
+
+148
+00:06:28,380 --> 00:06:31,230
+I'm going to increase sales or decrease sales depending on how
+
+149
+00:06:31,230 --> 00:06:34,890
+the model comes out of beta 1.
+
+150
+00:06:34,890 --> 00:06:37,140
+So what I'm not going to do is show you a tool
+
+151
+00:06:37,140 --> 00:06:38,250
+how to use this.
+
+152
+00:06:38,250 --> 00:06:40,440
+We did that in SC0x.
+
+153
+00:06:40,440 --> 00:06:42,900
+If you have never seen regression before, though,
+
+154
+00:06:42,900 --> 00:06:46,230
+please go to the recitation-- it's an optional recitation--
+
+155
+00:06:46,230 --> 00:06:49,710
+for this week where we talk through different tools of how
+
+156
+00:06:49,710 --> 00:06:51,086
+to do regressions.
+
+157
+00:06:51,086 --> 00:06:52,710
+But mostly, we should have already seen
+
+158
+00:06:52,710 --> 00:06:54,600
+how to use a regression so far.
+
+159
+00:06:54,600 --> 00:06:56,950
+If you haven't, though, stop this video.
+
+160
+00:06:56,950 --> 00:07:00,090
+Go to the recitation so you can play along with us.
+
+161
+00:07:00,090 --> 00:07:00,840
+All right.
+
+162
+00:07:00,840 --> 00:07:02,060
+So I developed this model.
+
+163
+00:07:02,060 --> 00:07:04,681
+I ran a regression, and here my results.
+
+164
+00:07:04,681 --> 00:07:06,180
+And so if I look at this just really
+
+165
+00:07:06,180 --> 00:07:08,910
+quickly, I look at the adjusted R-squared
+
+166
+00:07:08,910 --> 00:07:10,920
+and I see that it's 0.776.
+
+167
+00:07:10,920 --> 00:07:12,280
+Pretty good.
+
+168
+00:07:12,280 --> 00:07:14,130
+I can also look and see, for each
+
+169
+00:07:14,130 --> 00:07:17,466
+of the individual coefficients, what their values are.
+
+170
+00:07:17,466 --> 00:07:18,840
+And what's more important, I look
+
+171
+00:07:18,840 --> 00:07:21,930
+at the p-value to see how statistically significant
+
+172
+00:07:21,930 --> 00:07:22,650
+they are.
+
+173
+00:07:22,650 --> 00:07:25,090
+And these are both very strong.
+
+174
+00:07:25,090 --> 00:07:27,450
+So what does this do for me for a forecast?
+
+175
+00:07:27,450 --> 00:07:29,105
+Well, I have an estimation model now.
+
+176
+00:07:29,105 --> 00:07:33,750
+It's saying my demand is going to be equal to 3,240--
+
+177
+00:07:33,750 --> 00:07:36,840
+that's that beta 0 term that I estimated--
+
+178
+00:07:36,840 --> 00:07:39,330
+plus 53 times each month.
+
+179
+00:07:39,330 --> 00:07:43,710
+So I'm assuming that I'm selling 53 more cups of coffee
+
+180
+00:07:43,710 --> 00:07:44,280
+every month.
+
+181
+00:07:44,280 --> 00:07:47,370
+So that's a trend, a level and a trend.
+
+182
+00:07:47,370 --> 00:07:51,270
+Interpreting this again, 77% on R-squared.
+
+183
+00:07:51,270 --> 00:07:52,360
+Pretty good.
+
+184
+00:07:52,360 --> 00:07:55,140
+Remember, always look at the adjusted R-squared.
+
+185
+00:07:55,140 --> 00:07:58,710
+But the beta 0 in the beta 1 terms are pretty significant.
+
+186
+00:07:58,710 --> 00:08:02,110
+They have p-value less than 0.0001.
+
+187
+00:08:02,110 --> 00:08:05,670
+Generally, you want to look for things lower than 0.01,
+
+188
+00:08:05,670 --> 00:08:08,250
+and so these are very significant.
+
+189
+00:08:08,250 --> 00:08:10,710
+And so we can say that this is a pretty nice model.
+
+190
+00:08:10,710 --> 00:08:13,530
+It captures level and trend quite well.
+
+191
+00:08:13,530 --> 00:08:15,570
+And note that all the data is being used,
+
+192
+00:08:15,570 --> 00:08:17,800
+and we'll talk more about that in a second.
+
+193
+00:08:17,800 --> 00:08:19,920
+So one of the great things about causal models
+
+194
+00:08:19,920 --> 00:08:23,400
+or regression in general is that you can include other factors
+
+195
+00:08:23,400 --> 00:08:26,550
+that we typically don't include in exponential smoothing, which
+
+196
+00:08:26,550 --> 00:08:28,680
+just looks at patterns.
+
+197
+00:08:28,680 --> 00:08:32,250
+And so for example, let's build off of our previous model,
+
+198
+00:08:32,250 --> 00:08:34,830
+and we want to build in addition to level and trend.
+
+199
+00:08:34,830 --> 00:08:36,130
+We want to say you know what?
+
+200
+00:08:36,130 --> 00:08:38,610
+I think the temperature of that month--
+
+201
+00:08:38,610 --> 00:08:40,530
+the predicted or the estimated temperature
+
+202
+00:08:40,530 --> 00:08:42,330
+based on historical values--
+
+203
+00:08:42,330 --> 00:08:45,240
+will tell me something about the sales and my working
+
+204
+00:08:45,240 --> 00:08:47,460
+hypothesis-- because you should always have a working
+
+205
+00:08:47,460 --> 00:08:48,690
+hypothesis--
+
+206
+00:08:48,690 --> 00:08:53,140
+is that higher temperatures lead to more iced coffee sales.
+
+207
+00:08:53,140 --> 00:08:55,740
+So our model will look something like this.
+
+208
+00:08:55,740 --> 00:08:57,750
+Except when the temperature is higher,
+
+209
+00:08:57,750 --> 00:09:00,130
+we expect maybe higher sales.
+
+210
+00:09:00,130 --> 00:09:02,310
+Temperature goes down, we expect lower sales.
+
+211
+00:09:02,310 --> 00:09:05,400
+So it's hard to show on this two-dimensional chart,
+
+212
+00:09:05,400 --> 00:09:09,707
+in fact, what we've added is a third dimension.
+
+213
+00:09:09,707 --> 00:09:10,540
+That is temperature.
+
+214
+00:09:10,540 --> 00:09:12,630
+| Let me clean up my writing.
+
+215
+00:09:12,630 --> 00:09:13,830
+There we go.
+
+216
+00:09:13,830 --> 00:09:15,810
+So it's hard to show in a graph.
+
+217
+00:09:15,810 --> 00:09:17,340
+It's really three-dimensional space,
+
+218
+00:09:17,340 --> 00:09:19,140
+and it's a series of points.
+
+219
+00:09:19,140 --> 00:09:22,154
+So I formulated this model, ran it a regression,
+
+220
+00:09:22,154 --> 00:09:23,070
+and here's what I got.
+
+221
+00:09:23,070 --> 00:09:24,571
+So let's talk about it.
+
+222
+00:09:24,571 --> 00:09:26,070
+First thing I always do for a model,
+
+223
+00:09:26,070 --> 00:09:27,870
+look of the goodness of it.
+
+224
+00:09:27,870 --> 00:09:28,740
+Didn't change.
+
+225
+00:09:28,740 --> 00:09:31,366
+So it's really not helping explain much more.
+
+226
+00:09:31,366 --> 00:09:32,490
+I look at the coefficients.
+
+227
+00:09:32,490 --> 00:09:34,030
+Did they change much?
+
+228
+00:09:34,030 --> 00:09:37,350
+Well, the intercept term and the time or the trend term
+
+229
+00:09:37,350 --> 00:09:38,850
+didn't change much, so they're still
+
+230
+00:09:38,850 --> 00:09:41,550
+significant looking at the p-value.
+
+231
+00:09:41,550 --> 00:09:43,360
+But look at the temperature term.
+
+232
+00:09:43,360 --> 00:09:43,860
+OK.
+
+233
+00:09:43,860 --> 00:09:47,340
+The coefficient came out negative 0.27.
+
+234
+00:09:47,340 --> 00:09:51,049
+So it's saying, as temperature goes up, my sales will go down.
+
+235
+00:09:51,049 --> 00:09:51,840
+Doesn't make sense.
+
+236
+00:09:51,840 --> 00:09:53,760
+Maybe it's something counterintuitive.
+
+237
+00:09:53,760 --> 00:09:56,580
+So then I look and I always like to look at the upper and lower
+
+238
+00:09:56,580 --> 00:10:00,580
+confidence intervals, and notice one's negative, one's positive.
+
+239
+00:10:00,580 --> 00:10:03,090
+So I'm crossing 0, so I know right away
+
+240
+00:10:03,090 --> 00:10:04,410
+this will not be significant.
+
+241
+00:10:04,410 --> 00:10:04,910
+Right?
+
+242
+00:10:04,910 --> 00:10:07,310
+Because remember, our null hypothesis here
+
+243
+00:10:07,310 --> 00:10:09,590
+is that the coefficient is equal to 0,
+
+244
+00:10:09,590 --> 00:10:15,060
+and we're trying to disprove that null hypothesis.
+
+245
+00:10:15,060 --> 00:10:18,476
+And so obviously, if my confidence interval contains 0,
+
+246
+00:10:18,476 --> 00:10:20,100
+it's going to be very hard to disprove.
+
+247
+00:10:20,100 --> 00:10:23,370
+So look over at the p-value, and it's exceptionally high.
+
+248
+00:10:23,370 --> 00:10:25,910
+So what is this telling me?
+
+249
+00:10:25,910 --> 00:10:27,950
+Telling me that the temperature really doesn't
+
+250
+00:10:27,950 --> 00:10:29,750
+seem to have much of an impact.
+
+251
+00:10:29,750 --> 00:10:34,860
+There's not much correlation between temperature and sales.
+
+252
+00:10:34,860 --> 00:10:37,050
+So we could build other models here.
+
+253
+00:10:37,050 --> 00:10:40,580
+In fact, I could include non-continuous variables.
+
+254
+00:10:40,580 --> 00:10:43,790
+So for example, let's say I want to include seasonality
+
+255
+00:10:43,790 --> 00:10:45,680
+because maybe it's not necessarily
+
+256
+00:10:45,680 --> 00:10:48,350
+the historical temperature for a month
+
+257
+00:10:48,350 --> 00:10:51,620
+but that my sales in December, January, and February
+
+258
+00:10:51,620 --> 00:10:52,830
+might be different.
+
+259
+00:10:52,830 --> 00:10:53,810
+So what do I do?
+
+260
+00:10:53,810 --> 00:10:57,650
+I create this dummy variable, this xw,
+
+261
+00:10:57,650 --> 00:11:00,260
+and it says it's going to be equal to 1
+
+262
+00:11:00,260 --> 00:11:02,790
+if the month is either December, January, or February
+
+263
+00:11:02,790 --> 00:11:04,410
+and 0 otherwise.
+
+264
+00:11:04,410 --> 00:11:06,380
+So I can develop my model.
+
+265
+00:11:06,380 --> 00:11:10,460
+And then what this will do, the coefficient for beta w
+
+266
+00:11:10,460 --> 00:11:13,490
+will tell me what the increase or decrease in sales
+
+267
+00:11:13,490 --> 00:11:16,610
+are for those months in absolute terms.
+
+268
+00:11:16,610 --> 00:11:20,411
+So my hypothesis going in would be winter months, lower coffee
+
+269
+00:11:20,411 --> 00:11:20,910
+sales.
+
+270
+00:11:20,910 --> 00:11:23,150
+So I would expect, if I ran that model,
+
+271
+00:11:23,150 --> 00:11:26,930
+I'd come up with a negative sign for that coefficient.
+
+272
+00:11:26,930 --> 00:11:29,280
+I could do something else I could also throw in school.
+
+273
+00:11:29,280 --> 00:11:32,090
+Remember, we have a variable that
+
+274
+00:11:32,090 --> 00:11:34,910
+indicates whether school is in session or not,
+
+275
+00:11:34,910 --> 00:11:36,840
+so I could throw that in as well.
+
+276
+00:11:36,840 --> 00:11:40,220
+And again, set it equal to 1 if school is in session; 0
+
+277
+00:11:40,220 --> 00:11:41,490
+otherwise.
+
+278
+00:11:41,490 --> 00:11:44,229
+So these would be capturing the effect of that school being
+
+279
+00:11:44,229 --> 00:11:46,520
+in session, and I really don't know what that would do.
+
+280
+00:11:46,520 --> 00:11:49,790
+I would guess it would increase iced coffee sales,
+
+281
+00:11:49,790 --> 00:11:51,690
+but these are the type of things you can do.
+
+282
+00:11:51,690 --> 00:11:53,510
+There's all sorts of different ways
+
+283
+00:11:53,510 --> 00:11:56,390
+you can include different causal factors into a forecasting
+
+284
+00:11:56,390 --> 00:11:58,850
+model, and that's the beautiful thing
+
+285
+00:11:58,850 --> 00:12:02,620
+that these causal models do that exponential smoothing does not.
+
+286
+00:12:02,620 --> 00:12:05,300
+They only include these patterns,
+
+287
+00:12:05,300 --> 00:12:08,480
+so regression allows me to bring in other factors.
+
+288
+00:12:08,480 --> 00:12:10,760
+That's why it's widely used in certain areas.
+
+289
+00:12:10,760 --> 00:12:12,950
+We'll see how can we use it in, for example,
+
+290
+00:12:12,950 --> 00:12:16,700
+new product introductions and other areas.
+
+291
+00:12:16,700 --> 00:12:19,910
+So let's wrap up our causal analysis here.
+
+292
+00:12:19,910 --> 00:12:20,752
+What did we do?
+
+293
+00:12:20,752 --> 00:12:22,460
+Well, we did regressions, and they simply
+
+294
+00:12:22,460 --> 00:12:24,830
+find correlations between a single dependent variable--
+
+295
+00:12:24,830 --> 00:12:25,736
+that y.
+
+296
+00:12:25,736 --> 00:12:27,110
+And in our case, for forecasting,
+
+297
+00:12:27,110 --> 00:12:30,380
+that'll be your demand and one or more independent variables--
+
+298
+00:12:30,380 --> 00:12:31,640
+x1, x2--
+
+299
+00:12:31,640 --> 00:12:34,250
+and these can be continuous variables.
+
+300
+00:12:34,250 --> 00:12:35,500
+You can use dummy variables.
+
+301
+00:12:35,500 --> 00:12:36,480
+There's a lot of stuff here.
+
+302
+00:12:36,480 --> 00:12:38,330
+You could look back at your regression notes
+
+303
+00:12:38,330 --> 00:12:39,996
+to see the types of things you can build
+
+304
+00:12:39,996 --> 00:12:43,370
+in to one of these models.
+
+305
+00:12:43,370 --> 00:12:45,590
+The coefficients are estimated by minimizing the sum
+
+306
+00:12:45,590 --> 00:12:48,050
+of the squares of the errors.
+
+307
+00:12:48,050 --> 00:12:49,350
+So why is this important?
+
+308
+00:12:49,350 --> 00:12:51,270
+Well, let me draw a little seesaw,
+
+309
+00:12:51,270 --> 00:12:53,130
+and so I've got a seesaw here.
+
+310
+00:12:53,130 --> 00:12:55,020
+And I've got someone sitting here.
+
+311
+00:12:55,020 --> 00:12:57,950
+And if I put someone over here that's a lot bigger, heavier
+
+312
+00:12:57,950 --> 00:12:59,670
+weight, what's it going to do?
+
+313
+00:12:59,670 --> 00:13:01,636
+It's going to have much more impact.
+
+314
+00:13:01,636 --> 00:13:03,710
+And so why am I saying this?
+
+315
+00:13:03,710 --> 00:13:06,230
+Well, by minimizing the sum of the squares of the errors,
+
+316
+00:13:06,230 --> 00:13:10,010
+we're placing a lot of emphasis on the outliers.
+
+317
+00:13:10,010 --> 00:13:12,950
+The further something is away from the expected value,
+
+318
+00:13:12,950 --> 00:13:16,700
+it's going to have more influence on the model.
+
+319
+00:13:16,700 --> 00:13:17,870
+What does this mean?
+
+320
+00:13:17,870 --> 00:13:19,640
+Pay attention to your outliers.
+
+321
+00:13:19,640 --> 00:13:21,830
+Always look back at the residuals
+
+322
+00:13:21,830 --> 00:13:23,960
+from your observations, and examine the ones
+
+323
+00:13:23,960 --> 00:13:25,640
+that are really large--
+
+324
+00:13:25,640 --> 00:13:27,282
+either positive or negative.
+
+325
+00:13:27,282 --> 00:13:28,490
+And you want to get in those.
+
+326
+00:13:28,490 --> 00:13:30,170
+Maybe they're accurate, but those
+
+327
+00:13:30,170 --> 00:13:35,000
+are the things that will be really influencing your model.
+
+328
+00:13:35,000 --> 00:13:35,960
+Always test your model.
+
+329
+00:13:35,960 --> 00:13:37,793
+I always like to look at the goodness of fit
+
+330
+00:13:37,793 --> 00:13:39,170
+with the adjusted R-squared.
+
+331
+00:13:39,170 --> 00:13:43,210
+Look at the significance of each of the coefficients as well.
+
+332
+00:13:43,210 --> 00:13:43,880
+So warnings.
+
+333
+00:13:43,880 --> 00:13:45,950
+We call these "causal models," but we all
+
+334
+00:13:45,950 --> 00:13:48,170
+know that we're looking at correlations
+
+335
+00:13:48,170 --> 00:13:50,460
+and correlation is not causation.
+
+336
+00:13:50,460 --> 00:13:52,940
+And so you need to avoid the temptation
+
+337
+00:13:52,940 --> 00:13:54,590
+of overfitting your data.
+
+338
+00:13:54,590 --> 00:13:58,040
+It's a siren call for a lot of first-time modelers
+
+339
+00:13:58,040 --> 00:14:00,950
+to try to get your R-squared as high as possible.
+
+340
+00:14:00,950 --> 00:14:01,530
+Right?
+
+341
+00:14:01,530 --> 00:14:03,696
+And so you want to make sure you're not just really,
+
+342
+00:14:03,696 --> 00:14:06,350
+really tightly fitting historical data,
+
+343
+00:14:06,350 --> 00:14:09,350
+and so think about the overall purpose of the model.
+
+344
+00:14:09,350 --> 00:14:15,542
+Don't get caught into the need to maximize your R-squared.
+
+345
+00:14:15,542 --> 00:14:17,750
+And so a question that students always ask is, "Well,
+
+346
+00:14:17,750 --> 00:14:19,880
+why don't I always use regression instead
+
+347
+00:14:19,880 --> 00:14:22,550
+of exponential smoothing because regression is so much easier?
+
+348
+00:14:22,550 --> 00:14:25,100
+I just press a button, and it just comes out.
+
+349
+00:14:25,100 --> 00:14:26,530
+Exponential smoothing is tricky.
+
+350
+00:14:26,530 --> 00:14:28,370
+I've got all that bookkeeping."
+
+351
+00:14:28,370 --> 00:14:30,810
+Well, make sure what we're doing here.
+
+352
+00:14:30,810 --> 00:14:34,010
+For regression, I'm using all of the data,
+
+353
+00:14:34,010 --> 00:14:36,580
+and I'm treating all the data equally.
+
+354
+00:14:36,580 --> 00:14:39,310
+And so I'm keeping the data from two years ago.
+
+355
+00:14:39,310 --> 00:14:42,920
+I'm trying that just as equally as yesterday's data.
+
+356
+00:14:42,920 --> 00:14:45,770
+Exponential smoothing weights it according to time,
+
+357
+00:14:45,770 --> 00:14:48,230
+so the value decays over time.
+
+358
+00:14:48,230 --> 00:14:51,290
+So you've got to ask yourself which is more accurate.
+
+359
+00:14:51,290 --> 00:14:56,395
+And so the regression, like I said, treats all data equally.
+
+360
+00:14:56,395 --> 00:14:57,770
+And then the other big difference
+
+361
+00:14:57,770 --> 00:14:59,390
+is the amount of data required.
+
+362
+00:14:59,390 --> 00:15:01,580
+A beautiful thing about exponential smoothing
+
+363
+00:15:01,580 --> 00:15:04,340
+is you don't have to keep that much data because it
+
+364
+00:15:04,340 --> 00:15:07,100
+gets encapsulated in that historic--
+
+365
+00:15:07,100 --> 00:15:09,200
+in your last estimate term.
+
+366
+00:15:09,200 --> 00:15:11,910
+For regression, I've got to keep all of the data.
+
+367
+00:15:11,910 --> 00:15:15,350
+Still, it's a very powerful tool-- widely used
+
+368
+00:15:15,350 --> 00:15:17,750
+when you think that there are some underlying factors
+
+369
+00:15:17,750 --> 00:15:19,990
+influencing your demand.
+

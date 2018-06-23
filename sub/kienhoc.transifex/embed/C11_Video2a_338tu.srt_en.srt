@@ -1,0 +1,170 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/wdOqQCNWC3c
+
+1
+00:00:00,000 --> 00:00:00,530
+
+2
+00:00:00,530 --> 00:00:06,456
+DR. JONATHAN VALVANO: So let's look
+at the UART as part of the launch pad.
+
+3
+00:00:06,456 --> 00:00:09,590
+The launch pad has eight UARTs.
+
+4
+00:00:09,590 --> 00:00:16,470
+The first one we'll look at is UART0
+, which is here on PA1 and PA0.
+
+5
+00:00:16,470 --> 00:00:20,940
+
+6
+00:00:20,940 --> 00:00:25,540
+PA1 is the transmitter as an output.
+
+7
+00:00:25,540 --> 00:00:31,150
+PA0 is the receiver, which is an input.
+
+8
+00:00:31,150 --> 00:00:38,050
+This UART is hardwired into the
+debugger chips on your launch pad,
+
+9
+00:00:38,050 --> 00:00:50,100
+goes across the USB cable to your
+PC, and shows up as a COM port.
+
+10
+00:00:50,100 --> 00:00:55,510
+The second scenario,
+what we will see is UART1
+
+11
+00:00:55,510 --> 00:01:00,200
+could be connected to PC5 and PC4.
+
+12
+00:01:00,200 --> 00:01:04,970
+This is the transmitter,
+and in this case,
+
+13
+00:01:04,970 --> 00:01:10,290
+we could connect to a second launch pad.
+
+14
+00:01:10,290 --> 00:01:16,080
+And we'll tie PC5 to PC4, and
+data will flow in this direction.
+
+15
+00:01:16,080 --> 00:01:23,850
+And we'll tie PC5 back to PC4.
+
+16
+00:01:23,850 --> 00:01:27,970
+And over here, it's the receiver,
+and over there it's the transmitter.
+
+17
+00:01:27,970 --> 00:01:29,410
+So the roles are reversed.
+
+18
+00:01:29,410 --> 00:01:33,040
+And in order to make this work,
+as you know, we define voltage
+
+19
+00:01:33,040 --> 00:01:36,440
+as the potential difference
+between two pins,
+
+20
+00:01:36,440 --> 00:01:39,640
+so whenever we use the
+UART protocol, we're
+
+21
+00:01:39,640 --> 00:01:42,730
+going to have to tie
+the grounds together.
+
+22
+00:01:42,730 --> 00:01:46,360
+We have one more possibility.
+
+23
+00:01:46,360 --> 00:01:55,960
+If we used UART2 with PD7 and PD6, and
+we wanted to connect to an external
+
+24
+00:01:55,960 --> 00:02:02,720
+device very far away, we could take the
+transmitter and connect it to a driver
+
+25
+00:02:02,720 --> 00:02:09,919
+chip called a Maxim3232 .
+
+26
+00:02:09,919 --> 00:02:18,310
+And this would allow, again three
+wires, transmit, receive, and ground.
+
+27
+00:02:18,310 --> 00:02:25,357
+But this driver chip would
+allow us to go up to 50 feet.
+
+28
+00:02:25,357 --> 00:02:27,440
+DR. RAMESH YERRABALLI:
+Using some sort of a cable?
+
+29
+00:02:27,440 --> 00:02:32,960
+DR. JONATHAN VALVANO: Yes, a cable to
+an external device that's very far away.
+
+30
+00:02:32,960 --> 00:02:38,100
+And there's our receiver and
+our ground is tied together.
+
+31
+00:02:38,100 --> 00:02:40,170
+DR. RAMESH YERRABALLI:
+So the DB9 connector,
+
+32
+00:02:40,170 --> 00:02:46,250
+which you are very familiar with
+if you've used old machines,
+
+33
+00:02:46,250 --> 00:02:51,230
+is one such connector
+that uses the serial port.
+
+34
+00:02:51,230 --> 00:02:55,230
+It has nine pins on it,
+but only three of the pins
+
+35
+00:02:55,230 --> 00:03:00,310
+are essential, pin three, two,
+and five, and those make up
+
+36
+00:03:00,310 --> 00:03:05,950
+the transmitter, receiver,
+and common ground.

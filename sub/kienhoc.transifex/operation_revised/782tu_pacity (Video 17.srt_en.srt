@@ -1,0 +1,391 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/X8eUSQDJVtU
+
+1
+00:00:06,198 --> 00:00:08,339
+hello again and welcome to 
+
+2
+00:00:08,339 --> 00:00:12,660
+operations management in this session we're
+gonna be talking about process capacity
+
+3
+00:00:12,660 --> 00:00:18,179
+if you recall from littles law there
+were three main components of process
+
+4
+00:00:18,179 --> 00:00:21,190
+one was inventory one was to throughput rate
+
+5
+00:00:21,190 --> 00:00:25,820
+and the third one was flow time when we
+deal with process capacity
+
+6
+00:00:25,820 --> 00:00:29,149
+it has a direct relationship on the
+throughput rate
+
+7
+00:00:29,149 --> 00:00:34,879
+so what is process capacity well process
+capacity tells us how many
+
+8
+00:00:34,879 --> 00:00:39,210
+flow units the process can produce in a
+given period of time
+
+9
+00:00:39,210 --> 00:00:42,628
+so it's what it is capable of
+
+10
+00:00:42,628 --> 00:00:45,799
+dealing that's the key of process
+capacity
+
+11
+00:00:45,799 --> 00:00:48,988
+well how do we figure that out well
+
+12
+00:00:48,988 --> 00:00:52,599
+in some cases we want to take a look at
+something called takt
+
+13
+00:00:52,600 --> 00:00:55,730
+time it's a funny sounding word
+
+14
+00:00:55,729 --> 00:00:59,038
+takt time it's actually german term but it
+
+15
+00:00:59,039 --> 00:01:02,070
+is actually the inverse of the flow
+rate
+
+16
+00:01:02,070 --> 00:01:06,319
+its also how long it takes for one unit
+to come
+
+17
+00:01:06,319 --> 00:01:10,308
+out of the process by that I mean not
+how long
+
+18
+00:01:10,308 --> 00:01:13,609
+unit takes to go through the entire
+process
+
+19
+00:01:13,609 --> 00:01:18,680
+but from the end of the process you're
+looking at things coming off
+
+20
+00:01:18,680 --> 00:01:22,420
+a production line how long it takes from
+one unit
+
+21
+00:01:22,420 --> 00:01:28,040
+to the next unit to come out of the process
+it's also considered to be
+
+22
+00:01:28,040 --> 00:01:32,000
+average activity time of the longest
+activity station
+
+23
+00:01:32,000 --> 00:01:35,060
+we'll take these step-by-step
+
+24
+00:01:35,060 --> 00:01:40,820
+let's start with the inverse of the flow
+rate if we're given a flow rate that says we
+
+25
+00:01:40,819 --> 00:01:44,109
+have 10 units per hour going through a
+process
+
+26
+00:01:44,109 --> 00:01:47,670
+then the takt time is the inverse of
+
+27
+00:01:47,670 --> 00:01:51,820
+that one hour per 10 units if we convert
+that
+
+28
+00:01:51,819 --> 00:01:55,228
+to minutes it turns out that a flow rate of
+
+29
+00:01:55,228 --> 00:01:59,188
+10 per hour is a takt time of six minutes
+
+30
+00:01:59,188 --> 00:02:02,639
+an unit comes out of the process every 6
+
+31
+00:02:02,640 --> 00:02:05,640
+minutes now when I also said
+
+32
+00:02:05,640 --> 00:02:09,799
+that the takt time is the longest time of an
+activity
+
+33
+00:02:09,799 --> 00:02:13,810
+think a process that has three different
+activities to it
+
+34
+00:02:13,810 --> 00:02:18,989
+it requires activity A and activity A
+takes 20 minutes per unit
+
+35
+00:02:18,989 --> 00:02:22,230
+activity B takes 30 minutes
+
+36
+00:02:22,229 --> 00:02:25,659
+an activity C takes 15 per unit
+
+37
+00:02:25,659 --> 00:02:28,969
+now the shortest time is 15
+
+38
+00:02:28,969 --> 00:02:32,848
+but remember activity B still has to be
+done
+
+39
+00:02:32,848 --> 00:02:37,299
+and let's say they're all being done at
+the same time which one is the longest
+
+40
+00:02:37,300 --> 00:02:40,840
+well that'a activity B and activity B
+
+41
+00:02:40,840 --> 00:02:44,280
+at thirty minutes per unit is the
+longest time
+
+42
+00:02:44,280 --> 00:02:49,959
+so that would be our tatk time a good
+use of takt
+
+43
+00:02:49,959 --> 00:02:53,390
+time is to try and figure out what the
+flow rate has to be
+
+44
+00:02:53,389 --> 00:02:57,679
+based on our customer demand the takt
+
+45
+00:02:57,680 --> 00:03:03,250
+time to meet customer demand says how
+much time do we have available to us
+
+46
+00:03:03,250 --> 00:03:09,469
+in our resources for the process and we have
+to take a look at what the demand rate
+
+47
+00:03:09,469 --> 00:03:12,759
+is and that will give us the takt time
+
+48
+00:03:12,759 --> 00:03:17,799
+let's take a look at a short example for
+example
+
+49
+00:03:17,800 --> 00:03:20,950
+we have a bicycle manufacture that is
+
+50
+00:03:20,949 --> 00:03:24,219
+100 units per week the demand
+
+51
+00:03:24,219 --> 00:03:28,919
+is 100 bicycles per week the bicycle
+manufacture
+
+52
+00:03:28,919 --> 00:03:32,250
+works one shift a day eight hours in a
+shift
+
+53
+00:03:32,250 --> 00:03:35,739
+five days per week so we can figure out
+
+54
+00:03:35,739 --> 00:03:39,789
+how much time is available in the
+process
+
+55
+00:03:39,789 --> 00:03:43,189
+as well as the demand that's already
+given
+
+56
+00:03:43,189 --> 00:03:46,549
+100 per week so let's figure out the
+takt
+
+57
+00:03:46,549 --> 00:03:50,310
+time recalculate the available time
+
+58
+00:03:50,310 --> 00:03:54,420
+we have one shift a day times eight
+hours per shift
+
+59
+00:03:54,419 --> 00:03:58,979
+times five days per week which equals 40
+hours per week
+
+60
+00:03:58,979 --> 00:04:02,768
+now notice that I've put all of the units
+down
+
+61
+00:04:02,769 --> 00:04:06,658
+the reason I do that is to make sure
+that I am putting
+
+62
+00:04:06,658 --> 00:04:10,810
+the numbers in the correct places we
+have one shift
+
+63
+00:04:10,810 --> 00:04:13,870
+in the numerator and shift in the
+denominator
+
+64
+00:04:13,870 --> 00:04:17,349
+we have days in the numerator days
+denominator
+
+65
+00:04:17,348 --> 00:04:20,980
+and that says our available time is
+forty hours
+
+66
+00:04:20,980 --> 00:04:24,310
+in a week our demand is a hundred
+
+67
+00:04:24,310 --> 00:04:30,870
+in a week so in those forty hours in a
+week we have to get a hundred units done
+
+68
+00:04:30,870 --> 00:04:34,769
+to a takt time is forty divided by 100
+
+69
+00:04:34,769 --> 00:04:39,529
+which is .4 hours so a bicycle must come
+of that
+
+70
+00:04:39,529 --> 00:04:44,168
+manufacturing facility that processes
+every .4 hours
+
+71
+00:04:44,168 --> 00:04:47,579
+which is 24 minutes so a takt time
+
+72
+00:04:47,579 --> 00:04:50,990
+is 24 minutes and our throughput rate
+
+73
+00:04:50,990 --> 00:04:54,879
+is the inverse of that takt time that
+says
+
+74
+00:04:54,879 --> 00:04:58,659
+we have to get two-and-a-half bicycle
+through the process
+
+75
+00:04:58,660 --> 00:05:02,740
+every hour so by you saying
+
+76
+00:05:02,740 --> 00:05:06,259
+the customer demand and our available
+time
+
+77
+00:05:06,259 --> 00:05:09,340
+we have an idea of what our throughput
+rate
+
+78
+00:05:09,339 --> 00:05:14,279
+has to be in order to meet our demand rate
+
+79
+00:05:14,279 --> 00:05:17,739
+so this what we talk about with process
+capacity
+
+80
+00:05:17,740 --> 00:05:21,269
+the next time we're going to be looking
+at is effective capacity
+
+81
+00:05:21,269 --> 00:05:24,629
+sometimes the process doesn't meet the
+demand
+
+82
+00:05:24,629 --> 00:05:29,329
+and we need to figure out how that's
+happening what's causing it
+
+83
+00:05:29,329 --> 00:05:32,500
+and that what we're starting to do with the
+next session I'll see it then
+

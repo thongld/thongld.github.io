@@ -1,0 +1,439 @@
+571
+00:25:39,210 --> 00:25:42,850
+https://youtu.be/IXXHH6ztsSA
+So Python looks out here and
+goes, oh, that's a float.
+
+572
+00:25:42,850 --> 00:25:44,910
+And that's an integer
+if I look over here.
+
+573
+00:25:44,910 --> 00:25:47,530
+And then that means that
+the result is a float.
+
+574
+00:25:47,530 --> 00:25:49,370
+And the division
+is done as a float.
+
+575
+00:25:49,370 --> 00:25:57,084
+So we are force converting the
+99 integer into a 99.0 float.
+
+576
+00:25:57,084 --> 00:25:59,500
+And we can even do this and
+just stick it in the variable.
+
+577
+00:25:59,500 --> 00:26:01,330
+So we can put 42 in i.
+
+578
+00:26:01,330 --> 00:26:02,820
+And that is an integer.
+
+579
+00:26:02,820 --> 00:26:07,430
+Then we can say, hey, convert
+float that i into a float
+
+580
+00:26:07,430 --> 00:26:09,740
+and stick it into
+the variable f.
+
+581
+00:26:09,740 --> 00:26:12,070
+And so we can print it.
+
+582
+00:26:12,070 --> 00:26:15,060
+And now it's 42.0 instead of 42.
+
+583
+00:26:15,060 --> 00:26:16,450
+They're not the same.
+
+584
+00:26:16,450 --> 00:26:17,760
+They're both kind of 42.
+
+585
+00:26:17,760 --> 00:26:21,785
+But one is a floating point 42,
+and the other is an integer 42.
+
+586
+00:26:21,785 --> 00:26:24,054
+And we can ask, and
+that is a float.
+
+587
+00:26:24,054 --> 00:26:25,470
+And you can also
+do the same thing
+
+588
+00:26:25,470 --> 00:26:27,500
+in the middle of a
+calculation where you
+
+589
+00:26:27,500 --> 00:26:30,530
+have 1 plus 2 times float of 3.
+
+590
+00:26:30,530 --> 00:26:32,420
+This float is done quickly.
+
+591
+00:26:32,420 --> 00:26:38,360
+So the first thing that happens,
+this is 1 plus 2 times 3.0
+
+592
+00:26:38,360 --> 00:26:41,680
+point 0 over 4 minus 5.
+
+593
+00:26:41,680 --> 00:26:44,290
+So the first thing that happens
+is these floats are done.
+
+594
+00:26:44,290 --> 00:26:46,123
+Because they're
+parentheses, so they matter.
+
+595
+00:26:46,123 --> 00:26:47,950
+So this is a built-in
+function called
+
+596
+00:26:47,950 --> 00:26:50,510
+float that takes,
+as its argument,
+
+597
+00:26:50,510 --> 00:26:53,560
+a non-floating point
+number and gives you back
+
+598
+00:26:53,560 --> 00:26:55,390
+a floating point number.
+
+599
+00:26:55,390 --> 00:26:57,440
+We'll talk more about
+functions in chapter four.
+
+600
+00:26:57,440 --> 00:27:01,240
+
+601
+00:27:01,240 --> 00:27:04,190
+You can also convert
+between strings and numbers.
+
+602
+00:27:04,190 --> 00:27:10,210
+And if you recall, we did the
+example where we take a string.
+
+603
+00:27:10,210 --> 00:27:12,570
+In this case, I'm being
+a little confusing
+
+604
+00:27:12,570 --> 00:27:16,700
+because I'm making a string
+with the characters 1, 2, 3.
+
+605
+00:27:16,700 --> 00:27:19,330
+Now, this is not
+the same as 123.
+
+606
+00:27:19,330 --> 00:27:23,360
+This is a three character
+string with 1, 2, 3 in it.
+
+607
+00:27:23,360 --> 00:27:25,660
+And I can ask what kind
+of thing is in there.
+
+608
+00:27:25,660 --> 00:27:27,480
+And it says, oh, there's
+a string in there.
+
+609
+00:27:27,480 --> 00:27:28,780
+I know about that.
+
+610
+00:27:28,780 --> 00:27:30,500
+And then I can try
+to add 1 to it.
+
+611
+00:27:30,500 --> 00:27:33,760
+And it seems intuitive
+that quote 1, 2, 3 plus 1
+
+612
+00:27:33,760 --> 00:27:36,740
+would be somehow 124.
+
+613
+00:27:36,740 --> 00:27:38,320
+But it's not.
+
+614
+00:27:38,320 --> 00:27:40,575
+Python takes a look
+at the plus and says,
+
+615
+00:27:40,575 --> 00:27:41,950
+oh, there's a
+string on that side
+
+616
+00:27:41,950 --> 00:27:43,460
+and an integer on that side.
+
+617
+00:27:43,460 --> 00:27:46,340
+I am going to freak out and
+tell you about you cannot
+
+618
+00:27:46,340 --> 00:27:49,910
+concatenate a string
+and an integer.
+
+619
+00:27:49,910 --> 00:27:51,940
+But there is an
+int function that
+
+620
+00:27:51,940 --> 00:27:54,380
+converts various
+things, including
+
+621
+00:27:54,380 --> 00:27:55,500
+strings, to an integer.
+
+622
+00:27:55,500 --> 00:28:00,280
+So we can give as its parameter,
+it's input, the string value.
+
+623
+00:28:00,280 --> 00:28:02,420
+Then it converts
+it to an integer.
+
+624
+00:28:02,420 --> 00:28:05,450
+And then it will put the
+result in the variable ival.
+
+625
+00:28:05,450 --> 00:28:06,990
+We can ask what the
+type of that is.
+
+626
+00:28:06,990 --> 00:28:09,820
+It's an integer.
+
+627
+00:28:09,820 --> 00:28:13,250
+And now we can use it in an
+expression, print ival plus 1.
+
+628
+00:28:13,250 --> 00:28:16,300
+And so now, Python looks to
+both sides, sees an integer,
+
+629
+00:28:16,300 --> 00:28:19,270
+sees an integer, and gets 124.
+
+630
+00:28:19,270 --> 00:28:21,120
+Voila.
+
+631
+00:28:21,120 --> 00:28:24,730
+Now if I make a new variable
+and I stick hello Bob in it
+
+632
+00:28:24,730 --> 00:28:28,650
+and I say, hey, let's convert
+hello Bob to an integer,
+
+633
+00:28:28,650 --> 00:28:31,350
+as you might
+expect, it blows up.
+
+634
+00:28:31,350 --> 00:28:36,010
+And it says invalid
+literal for int.
+
+635
+00:28:36,010 --> 00:28:40,010
+These trace backs,
+again, once you kind of
+
+636
+00:28:40,010 --> 00:28:43,660
+get used to the harsh wording
+of them, because they're not
+
+637
+00:28:43,660 --> 00:28:46,020
+saying, sorry comma.
+
+638
+00:28:46,020 --> 00:28:48,020
+They're trying to tell
+you what's going on.
+
+639
+00:28:48,020 --> 00:28:52,440
+So cannot concatenate string
+and integer and invalid literal
+
+640
+00:28:52,440 --> 00:28:52,940
+for int.
+
+641
+00:28:52,940 --> 00:28:56,310
+It's trying to be as helpful as
+it possibly can be to give you
+
+642
+00:28:56,310 --> 00:28:57,760
+a clue as to what to fix.
+
+643
+00:28:57,760 --> 00:29:02,040
+So again, not scolding.
+
+644
+00:29:02,040 --> 00:29:02,950
+OK.
+
+645
+00:29:02,950 --> 00:29:05,720
+So that's variables, and
+types, and type conversion.
+
+646
+00:29:05,720 --> 00:29:09,350
+Now we'll talk a little
+bit about user input.
+
+647
+00:29:09,350 --> 00:29:12,830
+And there's a
+function that's built
+
+648
+00:29:12,830 --> 00:29:15,350
+into Python called raw input.
+
+649
+00:29:15,350 --> 00:29:20,090
+And what happens when
+raw input runs is it
+
+650
+00:29:20,090 --> 00:29:23,030
+has, as one of its
+parameters, a prompt,
+
+651
+00:29:23,030 --> 00:29:25,290
+which is something that
+shows up on the screen.
+
+652
+00:29:25,290 --> 00:29:26,990
+Who are you?
+
+653
+00:29:26,990 --> 00:29:29,685
+And then it waits.
+
+654
+00:29:29,685 --> 00:29:31,970
+It sits and waits.
+
+655
+00:29:31,970 --> 00:29:34,500
+It says, what next?
+
+656
+00:29:34,500 --> 00:29:37,400
+And then you type a string.
+
+657
+00:29:37,400 --> 00:29:38,730
+And then you hit the Enter key.
+
+658
+00:29:38,730 --> 00:29:41,640
+
+659
+00:29:41,640 --> 00:29:48,480
+And then whatever you typed
+here goes into a variable.
+
+660
+00:29:48,480 --> 00:29:51,010
+And it is a string.
+
+661
+00:29:51,010 --> 00:29:53,800
+And then you can use it.
+
+662
+00:29:53,800 --> 00:29:56,670
+So I'm going to print
+the string welcome comma.
+
+663
+00:29:56,670 --> 00:29:58,720
+So that means I'm
+printing two things now.
+
+664
+00:29:58,720 --> 00:30:00,779
+The comma adds a
+space between welcome.
+
+665
+00:30:00,779 --> 00:30:01,320
+And then nam.
+

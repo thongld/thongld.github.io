@@ -1,0 +1,764 @@
+0
+00:00:00,000 --> 00:00:00,150
+https://youtu.be/M_RuT-XsAuQ
+
+1
+00:00:00,150 --> 00:00:00,650
+OK.
+
+2
+00:00:00,650 --> 00:00:02,940
+Để tôi kết thúc bài học này bằng cách đưa ra một số điểm chính,
+
+3
+00:00:02,940 --> 00:00:05,710
+ và đây thực sự là những lời khuyên thiết thực hơn.
+
+4
+00:00:05,710 --> 00:00:08,310
+Khi bạn thực hiện điều này trong thực tế cho hồi quy,
+
+5
+00:00:08,310 --> 00:00:10,950
+có lẽ bạn nên theo một quy trình khá tiêu chuẩn.
+
+6
+00:00:10,950 --> 00:00:13,657
+Đầu tiên, tôi luôn muốn chọn các biến độc lập
+
+7
+00:00:13,657 --> 00:00:15,240
+mà bạn muốn đưa vào mô hình,
+
+8
+00:00:15,240 --> 00:00:17,940
+và bạn nên căn cứ này theo nghĩa thông thường và kiến thức
+
+9
+00:00:17,940 --> 00:00:20,820
+về bối cảnh của vấn đề mà bạn đang cố gắng giải quyết.
+
+10
+00:00:20,820 --> 00:00:24,120
+Một lần nữa, tôi không phải là một fan hâm mộ lớn
+của mọi mô hình hồi quy
+
+11
+00:00:24,120 --> 00:00:27,810
+nơi bạn ném vào tất cả mọi thứ vào để xem thu được những gì.
+
+12
+00:00:27,810 --> 00:00:29,490
+Bạn phải thu thập dữ liệu và nghĩ về
+
+13
+00:00:29,490 --> 00:00:32,100
+các biến giả mà bạn muốn tạo ra.
+
+14
+00:00:32,100 --> 00:00:33,930
+Ví dụ, nếu chúng ta xem xét thời gian dẫn đầu
+
+15
+00:00:33,930 --> 00:00:36,150
+cho ví dụ trước, tôi đã nghĩ rằng
+
+16
+00:00:36,150 --> 00:00:38,760
+có lẽ tôi muốn có một biến riêng biệt nếu đó là cùng một ngày.
+
+17
+00:00:38,760 --> 00:00:41,460
+Có lẽ tôi muốn có một biến riêng biệt nếu nó dài,
+
+18
+00:00:41,460 --> 00:00:43,090
+chẳng hạn một tuần hoặc lâu hơn.
+
+19
+00:00:43,090 --> 00:00:45,570
+Vậy bạn nghĩ về loại dữ liệu
+
+20
+00:00:45,570 --> 00:00:48,000
+bạn muốn thu thập hoặc tạo, dựa trên dữ liệu
+
+21
+00:00:48,000 --> 00:00:49,080
+mà bạn có.
+
+22
+00:00:49,080 --> 00:00:51,960
+Đừng chỉ giới hạn ở các biến số mà bạn có.
+
+23
+00:00:51,960 --> 00:00:54,060
+Bạn có thể kết hợp chúng theo các số hạng khác nhau.
+
+24
+00:00:54,060 --> 00:00:56,130
+Nghĩ về những gì chúng ta đã làm
+khi chúng ta bình phương các số hạng.
+
+25
+00:00:56,130 --> 00:00:57,810
+Bạn có thể sử dụng các bản ghi tự nhiên.
+
+26
+00:00:57,810 --> 00:00:59,730
+Bạn có thể biến đổi các biến này.
+
+27
+00:00:59,730 --> 00:01:02,100
+Những gì bạn thực sự muốn làm là có hiểu biết tốt
+
+28
+00:01:02,100 --> 00:01:05,489
+về vấn đề, và sau đó sử dụng hồi quy để giúp có được
+
+29
+00:01:05,489 --> 00:01:06,865
+ các hiểu biết sâu sắc khác nhau.
+
+30
+00:01:06,865 --> 00:01:09,540
+
+
+31
+00:01:09,540 --> 00:01:11,220
+Cuối cùng, bạn sẽ chạy hồi quy,
+
+32
+00:01:11,220 --> 00:01:12,430
+và đó là phần dễ nhất.
+
+33
+00:01:12,430 --> 00:01:15,060
+Với phần mềm ngày nay, đó là bấm vào một nút
+
+34
+00:01:15,060 --> 00:01:16,710
+và nó rất dễ dàng.
+
+35
+00:01:16,710 --> 00:01:20,220
+Các phần khó hơn dẫn đến nó, chọn dữ liệu,
+
+36
+00:01:20,220 --> 00:01:22,380
+và sau đó cũng phân tích.
+
+37
+00:01:22,380 --> 00:01:24,510
+Khi bạn phân tích đầu ra và thực hiện thay đổi,
+
+38
+00:01:24,510 --> 00:01:26,830
+vì đó là một quá trình lặp đi lặp lại,
+
+39
+00:01:26,830 --> 00:01:28,530
+bạn có thể muốn hướng dẫn và sử dụng
+
+40
+00:01:28,530 --> 00:01:29,910
+ít biến độc lập hơn.
+
+41
+00:01:29,910 --> 00:01:32,430
+Tốt nhất là sử dụng ít hơn thay vì nhiều hơn.
+
+42
+00:01:32,430 --> 00:01:35,100
+Bạn muốn sử dụng càng ít càng tốt nhưng đủ
+
+43
+00:01:35,100 --> 00:01:37,800
+để bạn giải thích mô hình.
+
+44
+00:01:37,800 --> 00:01:39,960
+Bạn luôn muốn có thể giải thích hoặc chứng minh
+
+45
+00:01:39,960 --> 00:01:43,020
+cho kết luận hoặc loại trừ một biến.
+
+46
+00:01:43,020 --> 00:01:45,360
+Luôn xác nhận các biến giải thích đơn lẻ,
+
+47
+00:01:45,360 --> 00:01:46,290
+đó là các biến của x.
+
+48
+00:01:46,290 --> 00:01:47,370
+Nhìn vào giá trị p.
+
+49
+00:01:47,370 --> 00:01:49,860
+Nếu một trong các biến có một giá trị p
+
+50
+00:01:49,860 --> 00:01:52,650
+lớn hơn 0,1 thì bạn có thể bao gồm nó,
+
+51
+00:01:52,650 --> 00:01:56,070
+nhưng hãy cẩn thận và giải thích tại sao bạn muốn bao gồm nó.
+
+52
+00:01:56,070 --> 00:01:59,520
+Toàn bộ vấn đề ở đây là có nhiều tính nghệ thuật hơn là khoa học
+
+53
+00:01:59,520 --> 00:02:01,560
+với rất nhiều mô hình hồi quy này.
+
+54
+00:02:01,560 --> 00:02:04,680
+Bạn có thể chỉ cần chạy nó một cách máy móc,
+
+55
+00:02:04,680 --> 00:02:07,230
+nhưng bạn cần hiểu được bạn đang cố gắng
+
+56
+00:02:07,230 --> 00:02:09,890
+trình bày cái gì.
+
+57
+00:02:09,890 --> 00:02:10,389
+OK.
+
+58
+00:02:10,389 --> 00:02:12,270
+Dưới đây là một danh sách kiểm tra nhỏ mà bạn nên
+
+59
+00:02:12,270 --> 00:02:14,820
+kiểm tra sau khi bạn chạy từng mô hình.
+
+60
+00:02:14,820 --> 00:02:15,930
+Nhìn vào tính tuyến tính.
+
+61
+00:02:15,930 --> 00:02:18,180
+Nhìn vào kiểu phân tán, sử dụng nhận thức chung của bạn,
+
+62
+00:02:18,180 --> 00:02:19,740
+và biết vấn đề của bạn.
+
+63
+00:02:19,740 --> 00:02:21,829
+Nhìn vào các dấu hiệu của các hệ số hồi quy.
+
+64
+00:02:21,829 --> 00:02:23,370
+Dấu hiệu thực sự tốt vì
+
+65
+00:02:23,370 --> 00:02:27,210
+có ý nghĩa là cộng thêm vào hoặc sẽ là âm?
+
+66
+00:02:27,210 --> 00:02:28,860
+Các thống kê t luôn tốt.
+
+67
+00:02:28,860 --> 00:02:30,720
+Nhìn các giá trị p ở đó.
+
+68
+00:02:30,720 --> 00:02:33,240
+Và đây là đang kiểm tra,
+
+69
+00:02:33,240 --> 00:02:35,370
+hệ số này có khác 0 không?
+
+70
+00:02:35,370 --> 00:02:38,310
+Đó là một bài kiểm tra hai đuôi, với giả thuyết không
+
+71
+00:02:38,310 --> 00:02:41,250
+là giá trị hệ số bằng 0.
+
+72
+00:02:41,250 --> 00:02:43,260
+Luôn nhìn vào r-bình phương được điều chỉnh.
+
+73
+00:02:43,260 --> 00:02:44,520
+Nó có cao một cách hợp lý không?
+
+74
+00:02:44,520 --> 00:02:47,130
+Đây là cho tôi thấy toàn bộ mặt tốt
+
+75
+00:02:47,130 --> 00:02:49,170
+của sự phù hợp của mô hình.
+
+76
+00:02:49,170 --> 00:02:51,000
+Nó có theo các điều kiện bình thường không?
+
+77
+00:02:51,000 --> 00:02:53,790
+Vẽ biểu đồ của các số dư, các số hạng sai số đó.
+
+78
+00:02:53,790 --> 00:02:55,930
+Chúng có tuân theo sự phân bố bình thường,
+
+79
+00:02:55,930 --> 00:02:57,940
+và có nghĩa là xấp xỉ 0?
+
+80
+00:02:57,940 --> 00:02:59,910
+Đó là tính thay đổi, không đồng nhất.
+
+81
+00:02:59,910 --> 00:03:01,650
+Vẽ đồ thị các số dư với mỗi biến x.
+
+82
+00:03:01,650 --> 00:03:03,660
+Xem nó vẫn không đổi, về mặt độ lệch chuẩn,
+
+83
+00:03:03,660 --> 00:03:06,360
+với các giá trị khác nhau
+
+84
+00:03:06,360 --> 00:03:07,440
+của những biến số x đó.
+
+85
+00:03:07,440 --> 00:03:09,330
+Tự tương quan, rất liên quan.
+
+86
+00:03:09,330 --> 00:03:10,920
+Hãy nhìn vào biểu đồ một chuỗi thời gian.
+
+87
+00:03:10,920 --> 00:03:13,560
+Cố gắng xác định xem có vấn đề gì không.
+
+88
+00:03:13,560 --> 00:03:15,150
+Và sau đó đa cộng tuyến.
+
+89
+00:03:15,150 --> 00:03:17,070
+Đây là nơi bạn có các mối tương quan
+
+90
+00:03:17,070 --> 00:03:19,780
+với các biến x độc lập khác nhau.
+
+91
+00:03:19,780 --> 00:03:23,224
+Nếu tương quan lớn hơn 0,7, dương hoặc âm,
+
+92
+00:03:23,224 --> 00:03:25,140
+ bạn có thể muốn loại bỏ một trong các biến này.
+
+93
+00:03:25,140 --> 00:03:26,914
+Chỉ là quy luật ngón tay cái.
+
+94
+00:03:26,914 --> 00:03:28,580
+Dù sao, đây là danh sách kiểm tra nhỏ
+
+95
+00:03:28,580 --> 00:03:30,510
+mà bạn nên theo dõi khi bạn đang xây dựng
+
+96
+00:03:30,510 --> 00:03:33,210
+những mô hình này và thực hành.
+
+97
+00:03:33,210 --> 00:03:35,460
+Hãy để tôi kết thúc với một mối quan tâm cuối cùng,
+
+98
+00:03:35,460 --> 00:03:38,100
+và đây là điều gây khó chịu
+
+99
+00:03:38,100 --> 00:03:40,020
+ cho người mới sử dụng mô hình hồi quy lần đầu
+
+100
+00:03:40,020 --> 00:03:41,910
+trong đó bạn có xu hướng làm vừa khớp dữ liệu quá mức.
+
+101
+00:03:41,910 --> 00:03:44,160
+Vậy chúng ta hãy lấy một ví dụ rất đơn giản.
+
+102
+00:03:44,160 --> 00:03:48,340
+Giả sử tôi có bốn mẩu dữ liệu này.
+
+103
+00:03:48,340 --> 00:03:50,760
+Đó là doanh số bán hàng dựa trên nỗ lực.
+
+104
+00:03:50,760 --> 00:03:54,780
+Vậy doanh số bán hàng là biến y và nỗ lực là x của tôi.
+
+105
+00:03:54,780 --> 00:03:57,630
+Vậy biến phụ thuộc của tôi là bán hàng
+
+106
+00:03:57,630 --> 00:03:59,550
+và nỗ lực là biến độc lập.
+
+107
+00:03:59,550 --> 00:04:02,520
+Và tôi nói rằng bán hàng là một hàm theo nỗ lực.
+
+108
+00:04:02,520 --> 00:04:05,419
+Tôi muốn tìm đường cong phù hợp nhất với dữ liệu này.
+
+109
+00:04:05,419 --> 00:04:07,460
+Vậy có nhiều cách khác nhau để tôi có thể làm điều đó.
+
+110
+00:04:07,460 --> 00:04:09,820
+Dữ liệu sẽ trông giống như thế này khi được vẽ thành đồ thị,
+
+111
+00:04:09,820 --> 00:04:12,450
+và do đó bạn có thể làm một hồi quy tuyến tính.
+
+112
+00:04:12,450 --> 00:04:18,720
+Bạn có y bằng 4,5 cộng 0,4 nhân x, nỗ lực.
+
+113
+00:04:18,720 --> 00:04:22,770
+Bạn có r bình phương khá thấp là 0,16.
+
+114
+00:04:22,770 --> 00:04:24,690
+Nhưng tôi có thể tạo một phương trình bậc hai.
+
+115
+00:04:24,690 --> 00:04:26,914
+Vì vậy, tôi thêm một số hạng bình phương vào đó.
+
+116
+00:04:26,914 --> 00:04:29,080
+Và bạn nhìn thấy những gì nó làm, nó làm tăng r bình phương
+
+117
+00:04:29,080 --> 00:04:30,150
+lên 0,36.
+
+118
+00:04:30,150 --> 00:04:31,680
+Khá tốt.
+
+119
+00:04:31,680 --> 00:04:34,860
+Nhưng thực tế tôi có thể bao gồm một phương trình bậc ba.
+
+120
+00:04:34,860 --> 00:04:37,689
+Nên tôi có một số hạng bậc ba ngoài một số hạng bình phương.
+
+121
+00:04:37,689 --> 00:04:38,730
+Và nhìn vào r bình phương của tôi.
+
+122
+00:04:38,730 --> 00:04:39,990
+Đó là 1.
+
+123
+00:04:39,990 --> 00:04:44,610
+Vậy câu hỏi đặt ra là, đây có phải là mô hình tốt nhất không?
+
+124
+00:04:44,610 --> 00:04:47,220
+Và hy vọng bạn sẽ nhận ra là không.
+
+125
+00:04:47,220 --> 00:04:50,190
+Vâng nó phù hợp với dữ liệu này, nhưng nó không phải là một ước tính tốt
+
+126
+00:04:50,190 --> 00:04:53,760
+Vì ước tính của tôi sẽ là gì cho nỗ lực bằng 6
+
+127
+00:04:53,760 --> 00:04:55,440
+hay nỗ lực bằng 5?
+
+128
+00:04:55,440 --> 00:04:57,901
+Trong mô hình này, với một phương trình tuyến tính,
+
+129
+00:04:57,901 --> 00:05:00,150
+nó có lẽ sẽ là một cái gì đó ngay bên phải ở đây,
+
+130
+00:05:00,150 --> 00:05:01,920
+có vẻ như hợp lý.
+
+131
+00:05:01,920 --> 00:05:05,190
+Đối với số hạng bậc ba, ai biết được nó sẽ đến đâu.
+
+132
+00:05:05,190 --> 00:05:07,770
+Vì vậy, chỉ vì bạn có một cái phù hợp hơn,
+
+133
+00:05:07,770 --> 00:05:09,600
+không có nghĩa là nó là một mô hình tốt hơn.
+
+134
+00:05:09,600 --> 00:05:11,940
+Đảm bảo mô hình phù hợp với các quyết định
+
+135
+00:05:11,940 --> 00:05:13,650
+mà bạn đang cố gắng đưa ra.
+
+136
+00:05:13,650 --> 00:05:16,530
+Ưu tiên của tôi, đơn giản luôn là tốt hơn.
+
+137
+00:05:16,530 --> 00:05:19,230
+Cố gắng giữ nó đơn giản.
+
+138
+00:05:19,230 --> 00:05:21,160
+Mẹo cuối cùng.
+
+139
+00:05:21,160 --> 00:05:23,850
+Đừng nhầm lẫn quan hệ nhân quả với mối quan hệ.
+
+140
+00:05:23,850 --> 00:05:26,430
+Thống kê, chúng ta đang tìm kiếm và đo lường các mối quan hệ.
+
+141
+00:05:26,430 --> 00:05:27,840
+Các mối quan hệ toán học.
+
+142
+00:05:27,840 --> 00:05:31,740
+Mối tương quan và tính đồng biến,
+chứ không phải quan hệ nhân quả.
+
+143
+00:05:31,740 --> 00:05:34,050
+Bạn phải cố gắng giải thích nguyên nhân
+
+144
+00:05:34,050 --> 00:05:35,410
+và đưa ra lập luận đó.
+
+145
+00:05:35,410 --> 00:05:37,860
+Nhưng chỉ vì chúng ta thấy hai biến có tương quan
+
+146
+00:05:37,860 --> 00:05:40,560
+không có nghĩa là một cái gây ra khác.
+
+147
+00:05:40,560 --> 00:05:42,780
+Một lần nữa, đừng làm nô lệ cho r bình phương.
+
+148
+00:05:42,780 --> 00:05:45,090
+Mô hình này phải có ý nghĩa.
+
+149
+00:05:45,090 --> 00:05:46,230
+Đơn giản là luôn luôn tốt hơn.
+
+150
+00:05:46,230 --> 00:05:47,960
+Tránh cụ thể quá.
+
+151
+00:05:47,960 --> 00:05:49,590
+Và có một quy tắc của ngón tay cái ở đây,
+
+152
+00:05:49,590 --> 00:05:52,440
+trong đó k là số lượng các biến độc lập
+
+153
+00:05:52,440 --> 00:05:54,300
+và n là số lần quan sát,
+
+154
+00:05:54,300 --> 00:05:55,841
+mà bạn luôn muốn chắc chắn rằng
+
+155
+00:05:55,841 --> 00:05:57,870
+bạn có nhiều quan sát hơn, thì quy tắc ngón tay cái là
+
+156
+00:05:57,870 --> 00:06:00,280
+5 nhân k cộng 2.
+
+157
+00:06:00,280 --> 00:06:02,375
+Và điều này thực sự không phải là một vấn đề lớn
+
+158
+00:06:02,375 --> 00:06:04,500
+vì trong thực tế
+
+159
+00:06:04,500 --> 00:06:06,852
+bạn sẽ có rất nhiều quan sát,
+
+160
+00:06:06,852 --> 00:06:09,060
+Điều tôi đã không dành quá nhiều thời gian để nói về
+
+161
+00:06:09,060 --> 00:06:12,970
+là ngoại suy bên ngoài phạm vi quan sát được.
+
+162
+00:06:12,970 --> 00:06:14,940
+Hãy nhớ rằng, tất cả các biến độc lập của bạn,
+
+163
+00:06:14,940 --> 00:06:16,740
+x của bạn, chúng có phạm vi.
+
+164
+00:06:16,740 --> 00:06:20,460
+Ví dụ, trong dữ liệu mà chúng ta có cho Duffy Industrials,
+
+165
+00:06:20,460 --> 00:06:25,060
+chiều dài ngắn nhất là lớn hơn 500 dặm,
+
+166
+00:06:25,060 --> 00:06:28,170
+và tôi nghĩ rằng nó đã đi lên đến chừng 2.500 dặm.
+
+167
+00:06:28,170 --> 00:06:31,950
+Nếu tôi muốn ước tính cho một lô hàng 100 dặm,
+
+168
+00:06:31,950 --> 00:06:34,770
+tôi không thể sử dụng mô hình đó hoặc tôi phải rất cẩn thận nếu tôi
+
+169
+00:06:34,770 --> 00:06:37,710
+sử dụng mô hình đó bởi vì giờ tôi sẽ nói tới,
+
+170
+00:06:37,710 --> 00:06:41,160
+Tôi ước tính bên ngoài phạm vi quan sát của tôi về
+
+171
+00:06:41,160 --> 00:06:42,660
+biến độc lập đó.
+
+172
+00:06:42,660 --> 00:06:45,240
+Phải cẩn thận rằng bạn chỉ lấy mẫu
+
+173
+00:06:45,240 --> 00:06:47,610
+trong phạm vi của dữ liệu quan sát được
+
+174
+00:06:47,610 --> 00:06:49,874
+cho các biến độc lập đó.
+
+175
+00:06:49,874 --> 00:06:51,540
+Và rồi điều cuối cùng, bạn luôn có thể
+
+176
+00:06:51,540 --> 00:06:55,470
+bao gồm các mối quan hệ phi tuyến tính,
+sử dụng các kỹ thuật khác nhau
+
+177
+00:06:55,470 --> 00:06:56,400
+mà chúng ta đã nói tới.
+
+178
+00:06:56,400 --> 00:06:58,670
+Các biến nhị phân, bạn có thể biến đổi chúng
+
+179
+00:06:58,670 --> 00:07:01,980
+với căn bậc hai, lấy nghịch đảo, bạn có thể nhân chúng.
+
+180
+00:07:01,980 --> 00:07:04,860
+Bạn có tất cả những công cụ này để giúp bạn mô hình hóa tốt hơn
+
+181
+00:07:04,860 --> 00:07:07,290
+các mối quan hệ phức tạp.
+
+182
+00:07:07,290 --> 00:07:08,130
+Được rồi.
+
+183
+00:07:08,130 --> 00:07:10,830
+Đó là tất cả những gì tôi muốn nói.
+
+184
+00:07:10,830 --> 00:07:13,020
+Và hy vọng đã cho bạn hiểu thêm về
+
+185
+00:07:13,020 --> 00:07:15,430
+cách tạo các mô hình hồi quy.
+
+186
+00:07:15,430 --> 00:07:17,190
+Chúng ta đã không nói quá nhiều về lý thuyết.
+
+187
+00:07:17,190 --> 00:07:19,410
+Bạn cần phải cẩn thận khi bạn xác nhận chúng,
+
+188
+00:07:19,410 --> 00:07:21,810
+nhưng điều lớn nhất tôi muốn bạn hiểu
+
+189
+00:07:21,810 --> 00:07:25,580
+là quá trình mà bạn có thể phát triển các mô hình này.
+

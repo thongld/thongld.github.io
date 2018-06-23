@@ -1,0 +1,492 @@
+0
+00:00:00,000 --> 00:00:00,880
+https://youtu.be/WUPrRaiHn8g
+
+1
+00:00:00,880 --> 00:00:03,720
+In this extension to the EOQ, we're
+
+2
+00:00:03,720 --> 00:00:06,570
+going to consider if we have finite replenishment.
+
+3
+00:00:06,570 --> 00:00:08,590
+And so what this means is we're going
+
+4
+00:00:08,590 --> 00:00:11,760
+to loosen the assumption on lead time.
+
+5
+00:00:11,760 --> 00:00:15,430
+If I order Q*, instead of that whole quantity showing up all
+
+6
+00:00:15,430 --> 00:00:18,200
+at once, it's going to start coming in increments,
+
+7
+00:00:18,200 --> 00:00:20,470
+because I'm making it as I go.
+
+8
+00:00:20,470 --> 00:00:22,350
+And so once the order is placed, I'm
+
+9
+00:00:22,350 --> 00:00:25,040
+going to start making this product in my plant
+
+10
+00:00:25,040 --> 00:00:27,020
+on whatever machine I have, and I'm
+
+11
+00:00:27,020 --> 00:00:29,860
+going to satisfy the demand out of that,
+
+12
+00:00:29,860 --> 00:00:31,600
+until I accumulate enough.
+
+13
+00:00:31,600 --> 00:00:35,220
+So let's take a look at this and see how this affects things.
+
+14
+00:00:35,220 --> 00:00:38,840
+So let's take an example where I assume that the production
+
+15
+00:00:38,840 --> 00:00:40,820
+rate is P units per time.
+
+16
+00:00:40,820 --> 00:00:43,830
+So that's the rate at which I can produce items.
+
+17
+00:00:43,830 --> 00:00:45,240
+And so I have some questions.
+
+18
+00:00:45,240 --> 00:00:46,781
+First of which, how long does it take
+
+19
+00:00:46,781 --> 00:00:49,700
+to produce Q units, whatever Q is.
+
+20
+00:00:49,700 --> 00:00:53,730
+Well, if I know what my order quantity Q is going to be,
+
+21
+00:00:53,730 --> 00:00:56,380
+and I know my rate of production,
+
+22
+00:00:56,380 --> 00:00:58,860
+then it's simply going to be that total amount divided
+
+23
+00:00:58,860 --> 00:00:59,500
+by the rate.
+
+24
+00:00:59,500 --> 00:01:03,370
+So it's Q/P. So let's think about this for a second.
+
+25
+00:01:03,370 --> 00:01:06,200
+What happens if P takes the value of infinity?
+
+26
+00:01:06,200 --> 00:01:10,450
+If instantaneously it produces-- my machine is so fast,
+
+27
+00:01:10,450 --> 00:01:13,540
+it makes things almost instantaneously-- well,
+
+28
+00:01:13,540 --> 00:01:15,930
+then that means that the production slope line would
+
+29
+00:01:15,930 --> 00:01:18,050
+just be a vertical line, and essentially I
+
+30
+00:01:18,050 --> 00:01:22,930
+would default back to "EOQ with instantaneous delivery".
+
+31
+00:01:22,930 --> 00:01:24,930
+Now, what do you think the minimum value
+
+32
+00:01:24,930 --> 00:01:28,040
+that this rate can be, this production rate?
+
+33
+00:01:28,040 --> 00:01:33,770
+Let's suppose if P was less than the demand rate D.
+
+34
+00:01:33,770 --> 00:01:35,000
+What would that mean?
+
+35
+00:01:35,000 --> 00:01:37,075
+Well, that would mean I would never catch up.
+
+36
+00:01:37,075 --> 00:01:41,367
+I start producing it, and the demand is faster than
+
+37
+00:01:41,367 --> 00:01:42,700
+the rate at which I can produce.
+
+38
+00:01:42,700 --> 00:01:45,530
+And if that's the case, then I need to make it ahead of time,
+
+39
+00:01:45,530 --> 00:01:48,620
+and I can't replenish it when the order comes in.
+
+40
+00:01:48,620 --> 00:01:52,310
+So therefore, I'd have to start making things earlier.
+
+41
+00:01:52,310 --> 00:01:54,120
+So we know that the bounds, then,
+
+42
+00:01:54,120 --> 00:01:57,830
+are going to be between infinity and D, the demand rate.
+
+43
+00:01:57,830 --> 00:02:00,720
+But let's go on a little further.
+
+44
+00:02:00,720 --> 00:02:04,330
+And so we look at what the demand slope is.
+
+45
+00:02:04,330 --> 00:02:07,260
+And it's negative here, because it's showing my inventory
+
+46
+00:02:07,260 --> 00:02:10,654
+on hand as it depletes over time, based on the demand.
+
+47
+00:02:10,654 --> 00:02:12,070
+And so the question I want to know
+
+48
+00:02:12,070 --> 00:02:14,600
+is, what is the accumulation rate?
+
+49
+00:02:14,600 --> 00:02:18,780
+So as I'm producing it at P and it's going away at slope,
+
+50
+00:02:18,780 --> 00:02:23,320
+-D, then the accumulation rate is simply the sum of those.
+
+51
+00:02:23,320 --> 00:02:26,820
+It's going to be the production minus the demand, P
+
+52
+00:02:26,820 --> 00:02:31,720
+- D. So that's the slope of this line.
+
+53
+00:02:31,720 --> 00:02:33,700
+And so the next question we want to ask,
+
+54
+00:02:33,700 --> 00:02:35,440
+what is the most I'm going to have?
+
+55
+00:02:35,440 --> 00:02:38,260
+Because the beauty here is, as I start producing,
+
+56
+00:02:38,260 --> 00:02:40,170
+I don't hold any inventory.
+
+57
+00:02:40,170 --> 00:02:44,654
+So I'm producing and satisfying the demand all along here.
+
+58
+00:02:44,654 --> 00:02:46,070
+But I'm not holding any inventory,
+
+59
+00:02:46,070 --> 00:02:48,460
+therefore I'm not incurring any inventory holding costs
+
+60
+00:02:48,460 --> 00:02:51,140
+until my machine is going to stop at some point
+
+61
+00:02:51,140 --> 00:02:53,320
+because I'm going to have enough to satisfy demand.
+
+62
+00:02:53,320 --> 00:02:56,150
+That's that maximum inventory point.
+
+63
+00:02:56,150 --> 00:02:57,640
+What is that going to be?
+
+64
+00:02:57,640 --> 00:02:59,530
+Well, it's simply going to be this rate,
+
+65
+00:02:59,530 --> 00:03:03,040
+(P - D), times that time, Q/P.
+
+66
+00:03:03,040 --> 00:03:05,810
+And if I clean it up a little bit, I get this term.
+
+67
+00:03:05,810 --> 00:03:09,532
+And all I did was multiply through and cancel out the Ps.
+
+68
+00:03:09,532 --> 00:03:11,490
+But it's the same thing, it's just (Q/P)*(P-D).
+
+69
+00:03:11,490 --> 00:03:14,720
+
+
+70
+00:03:14,720 --> 00:03:16,240
+And so then the question is, what
+
+71
+00:03:16,240 --> 00:03:17,810
+is my average inventory on hand.
+
+72
+00:03:17,810 --> 00:03:21,640
+If I'm producing at this rate P, my demand is at D --
+
+73
+00:03:21,640 --> 00:03:25,640
+I'm going to produce Q/P time until I can stop,
+
+74
+00:03:25,640 --> 00:03:29,200
+because I've created enough for that replenishment cycle.
+
+75
+00:03:29,200 --> 00:03:30,990
+And so that average inventory on hand
+
+76
+00:03:30,990 --> 00:03:36,040
+is simply going to be whatever this height is and over two,
+
+77
+00:03:36,040 --> 00:03:37,790
+because remember, the replenishment cycle,
+
+78
+00:03:37,790 --> 00:03:39,740
+we're at an infinite horizon.
+
+79
+00:03:39,740 --> 00:03:42,380
+So it's just going to be 1/2 base times height.
+
+80
+00:03:42,380 --> 00:03:45,510
+1/2 of the base, which is one replenishment
+
+81
+00:03:45,510 --> 00:03:48,861
+cycle, times height, which is my maximum level of inventory.
+
+82
+00:03:48,861 --> 00:03:50,985
+So my average inventory on hand is (1 - D/P)*(Q/2).
+
+83
+00:03:50,985 --> 00:03:55,060
+
+
+84
+00:03:55,060 --> 00:03:57,930
+So how is this going to change the Q?
+
+85
+00:03:57,930 --> 00:04:02,220
+Well, we can think about it and because I'm not being charged
+
+86
+00:04:02,220 --> 00:04:06,560
+in anything for my inventory for this period until I hit that
+
+87
+00:04:06,560 --> 00:04:10,330
+maximum amount, then you would guess that this will increase
+
+88
+00:04:10,330 --> 00:04:12,940
+what my Q* is going to be.
+
+89
+00:04:12,940 --> 00:04:16,570
+So if I just go through and create the total relevant cost
+
+90
+00:04:16,570 --> 00:04:19,454
+equation, notice that the transaction cost,
+
+91
+00:04:19,454 --> 00:04:20,870
+the ordering cost, doesn't change.
+
+92
+00:04:20,870 --> 00:04:25,140
+Its still c_t times the number of replenishments or cycles
+
+93
+00:04:25,140 --> 00:04:28,370
+I expect to have in the course the year, D/Q.
+
+94
+00:04:28,370 --> 00:04:31,190
+And then here, this is just the holding cost.
+
+95
+00:04:31,190 --> 00:04:35,620
+So I have h*c, the unit purchase price times the inventory
+
+96
+00:04:35,620 --> 00:04:36,820
+holding rate.
+
+97
+00:04:36,820 --> 00:04:41,900
+And then this Q/2, this is just my average quantity on hand:
+
+98
+00:04:41,900 --> 00:04:42,970
+Q times ((1 - D)/P)/2.
+
+99
+00:04:42,970 --> 00:04:46,630
+
+
+100
+00:04:46,630 --> 00:04:49,399
+So my economic production quantity--
+
+101
+00:04:49,399 --> 00:04:51,940
+I'm just going to take a first order derivative for this just
+
+102
+00:04:51,940 --> 00:04:56,180
+like we did for EOQ-- the only thing that's going to change
+
+103
+00:04:56,180 --> 00:04:58,739
+is, I have this down to this term.
+
+104
+00:04:58,739 --> 00:05:00,280
+And if I clean this up a little bit--
+
+105
+00:05:00,280 --> 00:05:03,727
+because you see that EOQ is kind of buried in here--
+
+106
+00:05:03,727 --> 00:05:05,560
+so it's just going to be EOQ / sqrt (1-D/P).
+
+107
+00:05:05,560 --> 00:05:11,530
+
+
+108
+00:05:11,530 --> 00:05:15,620
+So as we said before, if I look at this values
+
+109
+00:05:15,620 --> 00:05:17,510
+that the production rate can have,
+
+110
+00:05:17,510 --> 00:05:20,900
+as it's really, really fast, what's that going to do?
+
+111
+00:05:20,900 --> 00:05:25,660
+That means this EPQ is going to approach the EOQ that we would
+
+112
+00:05:25,660 --> 00:05:29,880
+have done, if I wasn't producing things as they were demanded.
+
+113
+00:05:29,880 --> 00:05:34,660
+As the production rate gets slower,
+
+114
+00:05:34,660 --> 00:05:39,520
+then this EPQ gets bigger and bigger compared to EOQ,
+
+115
+00:05:39,520 --> 00:05:42,540
+because what this is saying is, as I produce slower,
+
+116
+00:05:42,540 --> 00:05:46,180
+there's going to be a larger quantity of the product
+
+117
+00:05:46,180 --> 00:05:49,370
+that I'm making where I won't incur any inventory holding
+
+118
+00:05:49,370 --> 00:05:50,050
+costs.
+
+119
+00:05:50,050 --> 00:05:54,870
+So a slower production rate will increase the EPQ,
+
+120
+00:05:54,870 --> 00:05:56,580
+and it'll increase that because it's
+
+121
+00:05:56,580 --> 00:06:00,040
+saying the inventory holding cost is getting lower.
+
+122
+00:06:00,040 --> 00:06:02,020
+
+

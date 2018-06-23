@@ -1,0 +1,119 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/QaxFxLZk9mo
+
+1
+00:00:00,000 --> 00:00:00,279
+
+2
+00:00:00,279 --> 00:00:02,070
+DR. RAMESH YERRABALLI:
+In this short video,
+
+3
+00:00:02,070 --> 00:00:04,500
+we are going to answer
+the question, what
+
+4
+00:00:04,500 --> 00:00:08,600
+is a logic high and a logic
+low on our microcontroller?
+
+5
+00:00:08,600 --> 00:00:11,630
+DR. JONATHAN VALVANO: OK, so
+we go to the table of contents.
+
+6
+00:00:11,630 --> 00:00:15,100
+DR. RAMESH YERRABALLI: And
+we see in our chapter 24,
+
+7
+00:00:15,100 --> 00:00:17,449
+it will tell us what ratings are.
+
+8
+00:00:17,449 --> 00:00:18,490
+DR. JONATHAN VALVANO: OK.
+
+9
+00:00:18,490 --> 00:00:20,200
+DR. RAMESH YERRABALLI: And
+it will tell us our levels.
+
+10
+00:00:20,200 --> 00:00:21,229
+So let's look that up.
+
+11
+00:00:21,229 --> 00:00:22,270
+DR. JONATHAN VALVANO: OK.
+
+12
+00:00:22,270 --> 00:00:27,050
+Section 24.3.
+
+13
+00:00:27,050 --> 00:00:33,447
+So here, in section 24.3, it's going
+to tell us what the voltages are.
+
+14
+00:00:33,447 --> 00:00:35,280
+DR. RAMESH YERRABALLI:
+So we want to look up
+
+15
+00:00:35,280 --> 00:00:41,580
+what a voltage high and
+a voltage low ranges are.
+
+16
+00:00:41,580 --> 00:00:49,770
+So we'll see that for a high, the lowest
+high voltage you can have is 2.4V.
+
+17
+00:00:49,770 --> 00:00:55,007
+And for a low, the maximum
+you can have is 0.4V.
+
+18
+00:00:55,007 --> 00:00:56,090
+DR. JONATHAN VALVANO: Yes.
+
+19
+00:00:56,090 --> 00:00:58,340
+And similarly, we can
+see what voltages it
+
+20
+00:00:58,340 --> 00:01:02,640
+thinks are high and low for the inputs.
+
+21
+00:01:02,640 --> 00:01:05,980
+So these are the VIH and VIL.
+
+22
+00:01:05,980 --> 00:01:09,900
+And we can use these
+equations here to calculate
+
+23
+00:01:09,900 --> 00:01:13,680
+what the voltages will be
+that the microcontroller will
+
+24
+00:01:13,680 --> 00:01:17,020
+consider an input high or an input low.
+
+25
+00:01:17,020 --> 00:01:18,934
+There we have it.
+
+26
+00:01:18,934 --> 00:01:19,434

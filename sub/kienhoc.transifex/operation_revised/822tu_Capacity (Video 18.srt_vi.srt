@@ -1,0 +1,349 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/5Xmvr_UUqfA
+
+1
+00:00:05,339 --> 00:00:08,240
+Rất vui được gặp lại và chào mừng các bạn trở lại với khóa học "Quản trị vận hành".
+
+2
+00:00:08,240 --> 00:00:11,919
+Trong bài trước, ta đang nói về công suất qui trình.
+
+3
+00:00:11,919 --> 00:00:15,609
+Trong bài này, ta sẽ bàn về công suất hiệu quả.
+
+4
+00:00:15,609 --> 00:00:18,839
+Công suất hiệu quả cho ta biết 
+
+5
+00:00:18,839 --> 00:00:24,519
+với qui trình hiện tại thì có bao nhiêu đơn vị hàng ta có thể sản xuất thông qua qui trình
+
+6
+00:00:24,519 --> 00:00:25,059
+trong một
+
+7
+00:00:25,059 --> 00:00:29,009
+khoảng thời gian. Nào hãy cùng tìm hiểu.
+
+8
+00:00:29,010 --> 00:00:32,840
+Ta sẽ cố gắng tìm ra có bao nhiêu đơn vị hàng hóa mà qui trình có thể sản xuất.
+
+9
+00:00:32,840 --> 00:00:37,829
+Một câu hỏi khác ta có là liệu ta có thể hoàn thành yêu cầu khách hàng?
+
+10
+00:00:37,829 --> 00:00:41,460
+Làm thế nào để gia tăng lượng hàng hóa khi cần thiết? 
+
+11
+00:00:41,460 --> 00:00:45,039
+Và câu hỏi lớn là liệu ta có đủ nguồn lực 
+
+12
+00:00:45,039 --> 00:00:50,070
+và liệu nguồn lực đó đã ở đúng chỗ? Nếu bạn nhớ lại lúc ta xem xét
+
+13
+00:00:50,070 --> 00:00:53,840
+những điểm cơ bản của qui trình, ta có đầu vào được chuyển hóa thành
+
+14
+00:00:53,840 --> 00:00:57,030
+đầu ra nhưng để điều đó xảy ra 
+
+15
+00:00:57,030 --> 00:01:00,039
+ta phải có những nguồn lực. Vậy với 
+
+16
+00:01:00,039 --> 00:01:04,300
+công suất hiệu quả, ta sẽ nhìn sâu hơn về những nguồn lực này.
+
+17
+00:01:04,299 --> 00:01:08,590
+Để làm được điều này, ta sẽ phải đi qua một vài thuật ngữ.
+
+18
+00:01:08,590 --> 00:01:12,010
+Ta sẽ bắt đầu với một thứ gọi là đơn vị nguồn lực
+
+19
+00:01:12,010 --> 00:01:16,670
+Một đơn vị trong resource pool không hoàn toàn rõ ràng.
+
+20
+00:01:16,670 --> 00:01:20,150
+Nhưng nếu ta thử nghĩ về những hiệu giặt tự động và 
+
+21
+00:01:20,150 --> 00:01:24,750
+nghĩ về việc đi giặt ủi và ở đó có một lô máy giặt.
+
+22
+00:01:24,750 --> 00:01:28,310
+Chính những chiếc máy giặt đó có thể được coi là
+
+23
+00:01:28,310 --> 00:01:31,969
+một resource pool, một tập hợp các nguồn lực thay thế được lẫn nhau
+
+24
+00:01:31,969 --> 00:01:35,170
+cùng thực hiện một số các hoạt động.
+
+25
+00:01:35,170 --> 00:01:40,240
+Trong trường hợp này là việc giặt quần áo. Vậy mỗi máy giặt 
+
+26
+00:01:40,239 --> 00:01:45,810
+sẽ là một đơn vị trong resouce pool đó. Resource pooling cho thấy ta
+
+27
+00:01:45,810 --> 00:01:47,090
+có thể kết hợp
+
+28
+00:01:47,090 --> 00:01:50,299
+những pools khác nhau vào thành một pool linh hoạt.
+
+29
+00:01:50,299 --> 00:01:55,530
+Vậy thuật ngữ này cho biết ta có một đơn vị nguồn lực riêng lẻ
+
+30
+00:01:55,530 --> 00:01:58,950
+và đơn vị đó nằm trong một resource pool.
+
+31
+00:01:58,950 --> 00:02:02,000
+Ta cũng cần biết 
+
+32
+00:02:02,000 --> 00:02:05,609
+với mỗi đơn vị riêng lẻ đó sẽ mất bao lâu
+
+33
+00:02:05,609 --> 00:02:08,908
+để thực hiện một đơn vị lưu lượng. Ví dụ
+
+34
+00:02:08,908 --> 00:02:12,270
+một máy giặt tốn 30 phút để thực hiện
+
+35
+00:02:12,269 --> 00:02:15,318
+một lô quần áo. Vậy đó là 
+
+36
+00:02:15,318 --> 00:02:19,829
+thời gian yêu cầu trung bình cho mỗi đơn vị nguồn lực để thực hiện 
+
+37
+00:02:19,830 --> 00:02:24,629
+một đơn vị lưu lượng. Vậy công suất hiệu quả của một đơn vị là 
+
+38
+00:02:24,628 --> 00:02:29,500
+nghịch đảo của một unit load. Nếu như ta tốn 30 phút cho mỗi lô đồ giặt
+
+39
+00:02:29,500 --> 00:02:32,568
+điều đó có nghĩa là ta có thể hoàn thành 2 lô trong một giờ. 
+
+40
+00:02:32,568 --> 00:02:36,060
+Vậy ta có thời gian, nghịch đảo 
+
+41
+00:02:36,060 --> 00:02:39,489
+ ta sẽ được công suất hiệu quả. Bây giờ
+
+42
+00:02:39,489 --> 00:02:43,939
+ta có 1 đống máy giặt điều đó có nghĩa công suất hiệu quả 
+
+43
+00:02:43,939 --> 00:02:47,199
+của tất cả đống máy giặt đó bằng tất cả các máy giặt kết hợp lại.
+
+44
+00:02:47,199 --> 00:02:51,848
+Nó không chỉ là thời gian tiêu tốn của mỗi máy giặt.
+
+45
+00:02:51,848 --> 00:02:55,039
+Vậy nếu 2 lô quần áo có thể được hoàn thành trong 1 giờ
+
+46
+00:02:55,039 --> 00:02:58,729
+thì khi nhiều máy giặt cùng hoạt động sẽ thành mỗi máy giặt được 2 lô 
+
+47
+00:02:58,729 --> 00:03:02,929
+trong 1 giờ. Đó là công suất hiệu quả của resouce pool.
+
+48
+00:03:02,930 --> 00:03:07,790
+Việc tôi muốn làm tiếp theo là sử dụng một ví dụ rất đơn giản
+
+49
+00:03:07,789 --> 00:03:12,979
+chỉ sử dụng 1 resouce pool và tôi sẽ tính công suất 
+
+50
+00:03:12,979 --> 00:03:18,979
+hiệu quả. Ví dụ 1 giáo viên tốn 10 phút để chấm 1 bài kiểm tra
+
+51
+00:03:18,979 --> 00:03:23,009
+và thời gian làm việc của giáo viên là 3 giờ một ngày.
+
+52
+00:03:23,009 --> 00:03:26,199
+Vậy công suất hiệu quả của giáo viên là gì?
+
+53
+00:03:26,199 --> 00:03:30,060
+Resouce pool ở đây là người giáo viên đó
+
+54
+00:03:30,060 --> 00:03:34,699
+và trong trường hợp này, ta chỉ có một giáo viên và giáo viên đó mất
+
+55
+00:03:34,699 --> 00:03:37,759
+10 phút để chấm một bài kiểm tra. Đó chính là unit load của ta.
+
+56
+00:03:37,759 --> 00:03:41,639
+và thời gian cho sẵn là 3 giờ một ngày.
+
+57
+00:03:41,639 --> 00:03:44,829
+Ta có tổng là 180 phút
+
+
+58
+00:03:44,830 --> 00:03:49,409
+mỗi ngày để chấm bài. Đó là thời gian sẵn có của chúng ta. 
+
+59
+00:03:49,408 --> 00:03:53,128
+180 phút, tốn 10 phút cho mỗi bài 
+
+60
+00:03:53,128 --> 00:03:57,188
+vậy công suất hiệu quả là 18 bài mỗi ngày. 
+
+61
+00:03:57,188 --> 00:04:02,900
+Đó là khi ta chỉ có 1 resource trong resouce pools. Vậy công suất hiệu quả
+
+62
+00:04:02,900 --> 00:04:04,819
+là 18 bài mỗi ngày.
+
+63
+00:04:04,818 --> 00:04:07,839
+Bây giờ xem điều gì sẽ xảy ra nếu ta thay đổi số 
+
+64
+00:04:07,840 --> 00:04:11,400
+resources. Khi ta thay đổi số lượng
+
+65
+00:04:11,400 --> 00:04:14,459
+resources, ta vẫn có resouce pool là giáo viên
+
+66
+00:04:14,459 --> 00:04:19,649
+và unit load cũng không đổi, thời gian sẵn có 
+
+67
+00:04:19,649 --> 00:04:20,629
+cho mỗi giáo viên.
+
+68
+00:04:20,629 --> 00:04:24,370
+cũng giữ nguyên. Nhưng bây giờ ta có 
+
+69
+00:04:24,370 --> 00:04:28,850
+3 resources vậy nên công suất hiệu quả 
+
+70
+00:04:28,850 --> 00:04:31,970
+thực tế sẽ gấp 3 lần. Hiện ta có 
+
+71
+00:04:31,970 --> 00:04:35,139
+3 resources thay vì 1. Vậy thay vì
+
+72
+00:04:35,139 --> 00:04:41,009
+18 bài mỗi ngày giờ thành 54 bài mỗi ngày
+
+73
+00:04:41,009 --> 00:04:44,680
+Đó là tất cả những điều cần nhớ về công suất hiệu quả.
+
+74
+00:04:44,680 --> 00:04:49,949
+Đối với 1 resource, ta lấy số thời gian ta có sẵn 
+
+75
+00:04:49,949 --> 00:04:55,340
+cho tất cả các resources trong pool và  chia nó cho unit load
+
+76
+00:04:55,339 --> 00:04:59,359
+ta sẽ được công suất hiệu quả.
+
+77
+00:04:59,360 --> 00:05:02,970
+Tuy nhiên đó chỉ là ví dụ với  1 resouce pool
+
+78
+00:05:02,970 --> 00:05:06,860
+nhưng trong đa số trường hợp ta có rất nhiều resource pools trong một quá trình 
+
+79
+00:05:06,860 --> 00:05:08,280
+cụ thể.
+
+80
+00:05:08,279 --> 00:05:11,599
+Điều chúng ta cần giải quyết đó là điểm ứ đọng
+
+81
+00:05:11,600 --> 00:05:15,990
+và điểm ứ đọng cho ta biết resouce pool nào chậm nhất
+
+82
+00:05:15,990 --> 00:05:21,680
+trong toàn bộ quá trình, gây ảnh hưởng dến công suất hiệu quả của quá trình.
+
+83
+00:05:21,680 --> 00:05:25,879
+Bạn sẽ thấy rõ hơn khi xử lý một ví dụ rộng hơn
+
+84
+00:05:25,879 --> 00:05:28,889
+và đó là cái chúng ta sẽ làm trong bài tới. Ta sẽ tìm 
+
+85
+00:05:28,889 --> 00:05:32,069
+công suất hiệu quả và làm từng bước một ví dụ
+
+86
+00:05:32,069 --> 00:05:34,990
+có sử dụng nhiều hơn 1 resource pool. Hẹn gặp lại các bạn.
+

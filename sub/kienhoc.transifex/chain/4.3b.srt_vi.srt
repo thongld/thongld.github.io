@@ -1,0 +1,894 @@
+0
+00:00:00,000 --> 00:00:00,520
+tangoclinhh_2/10/2017
+
+1
+00:00:00,520 --> 00:00:01,020
+Được rồi.
+
+2
+00:00:01,020 --> 00:00:02,070
+Hãy bắt đầu nào.
+
+3
+00:00:02,070 --> 00:00:04,720
+Và ta sẽ bắt đầu với thời gian chờ hàng không tức thời.
+
+4
+00:00:04,720 --> 00:00:07,220
+Như tôi đã từng nói,
+
+5
+00:00:07,220 --> 00:00:10,550
+tôi sẽ chỉ thay đổi ở điểm cho thời gian chờ hàng là một khoảng cố định.
+
+6
+00:00:10,550 --> 00:00:15,670
+Khi tôi đặt hàng, hàng không về ngay lập tức.
+
+7
+00:00:15,670 --> 00:00:17,820
+Cần có một chút thời gian.
+
+8
+00:00:17,820 --> 00:00:20,840
+Hãy nhìn vào biểu đồ hàng.
+
+9
+00:00:20,840 --> 00:00:23,770
+Nhu cầu vẫn là tất yếu và đồng nhất.
+
+10
+00:00:23,770 --> 00:00:25,920
+Tôi sẽ đặt những đơn hàng này,
+
+11
+00:00:25,920 --> 00:00:28,600
+và bây giờ thay vì nhận được nó ngay lập tức,
+
+12
+00:00:28,600 --> 00:00:32,490
+khi tôi đặt đơn hàng ở đây, tôi vẽ đường này xuống,
+
+13
+00:00:32,490 --> 00:00:35,376
+thời gian chờ hàng L
+
+14
+00:00:35,376 --> 00:00:37,750
+sẽ dài hơn nhiều trước khi hàng về.
+
+15
+00:00:37,750 --> 00:00:41,380
+Vậy L là độ dài của thời gian giữa lúc tôi đặt hàng
+
+16
+00:00:41,380 --> 00:00:43,980
+và lúc đơn hàng tới nhà cung cấp.
+
+17
+00:00:43,980 --> 00:00:46,600
+Vậy ở biểu đồ hàng của tôi ở dưới này,
+
+18
+00:00:46,600 --> 00:00:50,580
+sẽ có hai loại hàng.
+
+19
+00:00:50,580 --> 00:00:52,650
+Loại đầu tiên là Hàng có trong tay,
+
+20
+00:00:52,650 --> 00:00:54,090
+ta đã tìm hiểu về nó rồi.
+
+21
+00:00:54,090 --> 00:00:55,790
+Đó là đường kẻ liền màu xanh lá cây.
+
+22
+00:00:55,790 --> 00:00:58,520
+Nó đơn giản là lượng hàng tôi có trong tay
+
+23
+00:00:58,520 --> 00:01:01,740
+và nó sẽ xuất hiện ngay khi ta nhận được hàng.
+
+24
+00:01:01,740 --> 00:01:04,470
+Nó cũng là đường răng cưa mà ta vẫn có.
+
+25
+00:01:04,470 --> 00:01:07,410
+Tuy nhiên, khi tôi đặt một đơn hàng, ngay lúc này,
+
+26
+00:01:07,410 --> 00:01:09,080
+tôi nhận được số hàng này.
+
+27
+00:01:09,080 --> 00:01:13,310
+Đó là số hàng ở phần dưới đường chấm chấm này.
+
+28
+00:01:13,310 --> 00:01:16,950
+Nó được gọi là Hàng đang về.
+
+29
+00:01:16,950 --> 00:01:18,630
+Ta đã nói về điều này
+
+30
+00:01:18,630 --> 00:01:21,170
+ở một trong số các slide về hàng tồn kho.
+
+31
+00:01:21,170 --> 00:01:23,520
+Số hàng đang về này
+
+32
+00:01:23,520 --> 00:01:26,970
+là số hàng tôi đã đặt và có giao kèo.
+
+33
+00:01:26,970 --> 00:01:28,840
+Chỉ là nó chưa về thôi.
+
+34
+00:01:28,840 --> 00:01:31,300
+Câu hỏi đặt ra là làm thế nào để tôi xử lý nó?
+
+35
+00:01:31,300 --> 00:01:33,710
+Làm thế nào để tôi xem xét nó?
+
+36
+00:01:33,710 --> 00:01:36,610
+Bởi vì như ta thấy, tôi cần nhìn vào không chỉ
+
+37
+00:01:36,610 --> 00:01:39,100
+số hàng mà tôi có trong tay,
+
+38
+00:01:39,100 --> 00:01:42,490
+tôi cần bắt đầu nhìn vào tổng Vị trí của hàng.
+
+39
+00:01:42,490 --> 00:01:44,170
+Hãy cùng nói về điều này.
+
+40
+00:01:44,170 --> 00:01:47,250
+Đây là một phần phóng to ra của biểu đồ hàng,
+
+41
+00:01:47,250 --> 00:01:50,350
+trục hoành vẫn là Thời gian.
+
+42
+00:01:50,350 --> 00:01:54,120
+Trục tung là Mức hàng.
+
+43
+00:01:54,120 --> 00:01:56,220
+Ta đã nhìn thấy 2 biểu đồ.
+
+44
+00:01:56,220 --> 00:01:58,220
+Bằng mực đỏ, tôi đã
+
+45
+00:01:58,220 --> 00:02:00,730
+tô chồng lên Vị trí hàng.
+
+46
+00:02:00,730 --> 00:02:04,410
+Nó đơn giản là lượng hàng có trong tay
+
+47
+00:02:04,410 --> 00:02:08,900
+cộng với lượng hàng đang về.
+
+48
+00:02:08,900 --> 00:02:11,867
+Sau này khi ta cho phép có sự giao hàng chậm trễ,
+
+49
+00:02:11,867 --> 00:02:13,450
+nó sẽ thay dổi một chút bởi vì
+
+50
+00:02:13,450 --> 00:02:16,450
+tôi sẽ phải trừ đi số hàng đang bị giao chậm
+
+51
+00:02:16,450 --> 00:02:18,720
+nhưng đã có giao kèo, và những thứ tương tự như vậy.
+
+52
+00:02:18,720 --> 00:02:21,040
+Ngay lúc này, Vị trí hàng
+
+53
+00:02:21,040 --> 00:02:22,910
+đơn giản là lượng hàng tôi có trong tay
+
+54
+00:02:22,910 --> 00:02:26,970
+cộng với lượng mà tôi đã đặt
+
+55
+00:02:26,970 --> 00:02:30,370
+nhưng chưa về, đó là hàng đang về.
+
+56
+00:02:30,370 --> 00:02:32,400
+Vậy câu hỏi có thể ta muốn đặt ra là
+
+57
+00:02:32,400 --> 00:02:36,230
+lượng hàng đang về trung bình của tôi là bao nhiêu?
+
+58
+00:02:36,230 --> 00:02:40,260
+Và ta đang tìm kiếm câu trả lời cho một lần bổ sung hàng.
+
+59
+00:02:40,260 --> 00:02:44,980
+Trong mỗi chu kỳ, tôi muốn biết tôi sẽ có bao nhiêu
+
+60
+00:02:44,980 --> 00:02:46,620
+hàng đang về.
+
+61
+00:02:46,620 --> 00:02:49,150
+Bởi vì tôi biết tôi có 2 loại hàng khác nhau.
+
+62
+00:02:49,150 --> 00:02:52,010
+Tôi có hàng đang về, tôi vừa tô đậm nó.
+
+63
+00:02:52,010 --> 00:02:54,910
+Nhưng tôi cũng có chu kỳ hàng này,
+
+64
+00:02:54,910 --> 00:02:56,580
+ta đều quen với nó rồi.
+
+65
+00:02:56,580 --> 00:02:57,829
+Để tôi kẻ thêm lần nữa.
+
+66
+00:02:57,829 --> 00:02:58,640
+Được rồi.
+
+67
+00:02:58,640 --> 00:03:01,030
+Vậy ta có hai loại hàng khác nhau.
+
+68
+00:03:01,030 --> 00:03:04,580
+Và tôi có thể kiểm soát chúng với các hành động quản lý khác nhau.
+
+69
+00:03:04,580 --> 00:03:08,000
+Đây là lý do vì sao ta nghiên cứu vai trò chức năng của hàng hóa.
+
+70
+00:03:08,000 --> 00:03:12,344
+Cùng nghiên cứu và cố gắng hiểu
+
+71
+00:03:12,344 --> 00:03:14,010
+lượng hàng đang về trung bình
+
+72
+00:03:14,010 --> 00:03:16,910
+mà tôi có trong suốt mỗi chu kỳ bổ sung hàng.
+
+73
+00:03:16,910 --> 00:03:22,850
+Ta thấy rằng trong suốt độ dài của chu kỳ T*
+
+74
+00:03:22,850 --> 00:03:24,450
+lượng hàng đang về có thay đổi.
+
+75
+00:03:24,450 --> 00:03:25,660
+Có hai giai đoạn.
+
+76
+00:03:25,660 --> 00:03:28,510
+Trong đó có một giai đoạn không có hàng nào đang chờ về,
+
+77
+00:03:28,510 --> 00:03:30,670
+để tôi đánh dấu nó.
+
+78
+00:03:30,670 --> 00:03:31,170
+Đúng chứ?
+
+79
+00:03:31,170 --> 00:03:32,628
+Bởi vì tôi chưa đặt thêm hàng nào cả.
+
+80
+00:03:32,628 --> 00:03:36,590
+Và sau đó tôi có một giai đoạn trong chu kỳ
+
+81
+00:03:36,590 --> 00:03:38,510
+mà tôi có hàng đang về.
+
+82
+00:03:38,510 --> 00:03:41,330
+Hãy chia chúng ra làm hai và bắt đầu với giai đoạn
+
+83
+00:03:41,330 --> 00:03:43,670
+khi hàng đang được vận chuyển, khi tôi vừa đặt hàng.
+
+84
+00:03:43,670 --> 00:03:45,180
+Vậy tôi có bao nhiêu hàng ở đó?
+
+85
+00:03:45,180 --> 00:03:47,450
+Tôi có Q* bởi vì đó là số lượng tôi đặt hàng mỗi lần.
+
+86
+00:03:47,450 --> 00:03:49,616
+Ta chưa biết ta sẽ tính nó như thế nào,
+
+87
+00:03:49,616 --> 00:03:53,160
+nhưng khi tôi đặt một đơn hàng, tôi sẽ đặt số lượng Q*.
+
+88
+00:03:53,160 --> 00:03:56,650
+Câu hỏi tiếp theo là giai đoạn này sẽ kéo dài trong bao lâu?
+
+89
+00:03:56,650 --> 00:03:59,420
+Nó sẽ chiếm bao nhiêu phần trăm thời gian trong chu kỳ?
+
+90
+00:03:59,420 --> 00:04:04,890
+Giả sử T* của tôi là 10 ngày,
+
+91
+00:04:04,890 --> 00:04:09,170
+và thời gian chờ hàng của tôi là 4 ngày,
+
+92
+00:04:09,170 --> 00:04:14,720
+vậy tôi sẽ chờ hàng trong 4 trên 10 ngày, tức là 40%.
+
+93
+00:04:14,720 --> 00:04:19,880
+Vậy L chia cho T* cho tôi biết phần trăm của thời gian vận chuyển hàng
+
+94
+00:04:19,880 --> 00:04:22,500
+so với cả chu kỳ.
+
+95
+00:04:22,500 --> 00:04:24,236
+Giờ ta chuyển sang giai đoạn thứ 2.
+
+96
+00:04:24,236 --> 00:04:25,610
+Đây là thời gian khi tôi
+
+97
+00:04:25,610 --> 00:04:27,900
+không có hàng trên đường về kho.
+
+98
+00:04:27,900 --> 00:04:29,600
+Tôi có bao nhiêu hàng loại này?
+
+99
+00:04:29,600 --> 00:04:30,600
+0.
+
+100
+00:04:30,600 --> 00:04:32,900
+Đúng chứ?
+
+101
+00:04:32,900 --> 00:04:36,840
+Tôi sẽ có 0 sản phẩm loại này bởi vì
+không có hàng nào đang được vận chuyển cả.
+
+102
+00:04:36,840 --> 00:04:38,310
+Nó sẽ diễn ra trong bao lâu?
+
+103
+00:04:38,310 --> 00:04:42,550
+Nó sẽ là 1 trừ L/T*,
+
+104
+00:04:42,550 --> 00:04:44,570
+trong ví dụ đơn giản này là 60% thời gian.
+
+105
+00:04:44,570 --> 00:04:47,960
+Tôi sẽ lấy một giá trị mong muốn ở đây,
+
+106
+00:04:47,960 --> 00:04:52,040
+đối với giai đoạn tôi có hàng đang về,
+
+107
+00:04:52,040 --> 00:04:56,910
+nó sẽ là Q* nhân với L/T, và khi tôi không có hàng chờ về,
+
+108
+00:04:56,910 --> 00:05:01,230
+tôi chỉ cần lướt qua và nhận được kết quả là
+lượng hàng đang về trung bình của tôi là D
+
+109
+00:05:01,230 --> 00:05:05,450
+(là tỉ lệ nhu cầu trên năm) nhân với L (thời gian chờ hàng của tôi
+
+110
+00:05:05,450 --> 00:05:05,950
+có đơn vị là năm).
+
+111
+00:05:05,950 --> 00:05:08,040
+Hãy luôn chắc chắn rằng đơn vị khớp với nhau.
+
+112
+00:05:08,040 --> 00:05:11,520
+Nhưng D nhân L cho tôi biết lượng hàng đang về trung bình
+
+113
+00:05:11,520 --> 00:05:16,070
+cho mỗi chu kỳ bổ sung hàng.
+
+114
+00:05:16,070 --> 00:05:19,790
+Vậy lượng hàng trung bình của tôi trong cả hệ thống là bao nhiêu?
+
+115
+00:05:19,790 --> 00:05:22,210
+Nó sẽ là chu kỳ hàng hóa, điều ta đã biết rất rõ,
+
+116
+00:05:22,210 --> 00:05:26,890
+là Q chia 2 cộng với lượng hàng đang về là D nhân L,
+
+117
+00:05:26,890 --> 00:05:29,030
+Và giờ tôi đã biết lượng hàng trung bình của tôi là bao nhiêu.
+
+118
+00:05:29,030 --> 00:05:30,655
+Một lần nữa, tôi có hai loại hàng,
+
+119
+00:05:30,655 --> 00:05:34,280
+hàng trong kho và hàng đang về.
+
+120
+00:05:34,280 --> 00:05:36,850
+Trong cuộc sống thực tế, với loại hàng đang về,
+
+121
+00:05:36,850 --> 00:05:39,640
+ta có thể muốn cân nhắc xem ai sở hữu nó và khi nào.
+
+122
+00:05:39,640 --> 00:05:42,260
+Người cung cấp hàng sở hữu nó khi họ giao hàng
+
+123
+00:05:42,260 --> 00:05:44,550
+hay bạn sở hữu nó.
+
+124
+00:05:44,550 --> 00:05:47,690
+Nhưng trong trường hợp này, ta luôn muốn sở hữu nó, bởi vì khi hàng về,
+
+125
+00:05:47,690 --> 00:05:50,110
+ta muốn đưa nó vào trong kế hoạch của mình.
+
+126
+00:05:50,110 --> 00:05:54,350
+Về sau ta sẽ bàn về các loại chi trả khác nhau,
+
+127
+00:05:54,350 --> 00:05:56,060
+tức là khi nào thì bạn
+
+128
+00:05:56,060 --> 00:05:57,780
+là chủ sở hữu của hàng hóa.
+
+129
+00:05:57,780 --> 00:05:59,740
+Nhưng từ bây giờ cho đến khi tôi nói lại,
+
+130
+00:05:59,740 --> 00:06:01,530
+hãy cứ giả định rằng bạn đang là chủ sở hữu.
+
+131
+00:06:01,530 --> 00:06:03,480
+Bạn muốn đưa hàng đang về vào
+
+132
+00:06:03,480 --> 00:06:07,770
+thành hàng của mình.
+
+133
+00:06:07,770 --> 00:06:08,270
+Được thôi.
+
+134
+00:06:08,270 --> 00:06:10,220
+Hãy đi sâu vào một chút nữa.
+
+135
+00:06:10,220 --> 00:06:13,984
+Hãy tìm hiểu xem hàm số mới của tổng chi phí của bạn là gì?
+
+136
+00:06:13,984 --> 00:06:15,400
+Điều này nhìn rất quen.
+
+137
+00:06:15,400 --> 00:06:18,470
+Tổng chi phí của tôi là hàm số của Q, số lượng đặt hàng,
+
+138
+00:06:18,470 --> 00:06:23,000
+và bao gồm bốn nhân tố chính -
+
+139
+00:06:23,000 --> 00:06:25,570
+chi phí mua hàng, chi phí đặt hàng, chi phí mỗi lần đặt hàng,
+
+140
+00:06:25,570 --> 00:06:28,880
+số lượng đơn hàng mong muốn trong một khoảng thời gian trong năm,
+
+141
+00:06:28,880 --> 00:06:31,140
+và cuối cùng là chi phí giữ hàng.
+
+142
+00:06:31,140 --> 00:06:33,410
+Nhưng tôi có hai nhân tố riêng biệt.
+
+143
+00:06:33,410 --> 00:06:37,450
+Tôi có chi phí dành cho việc giữ hàng trong một khoảng thời gian trong năm,
+
+144
+00:06:37,450 --> 00:06:40,130
+và Q chia 2 là hàng trong kho của tôi.
+
+145
+00:06:40,130 --> 00:06:42,690
+Và D chia L là số hàng đang về của tôi.
+
+146
+00:06:42,690 --> 00:06:45,740
+Và ở đây tôi có chi phí hao hụt.
+
+147
+00:06:45,740 --> 00:06:49,390
+Câu hỏi đặt ra là, điều gì liên quan khi tôi
+
+148
+00:06:49,390 --> 00:06:51,040
+đưa ra quyết định cho Q*?
+
+149
+00:06:51,040 --> 00:06:53,940
+Chi phí mua hàng có liên quan không?
+
+150
+00:06:53,940 --> 00:06:54,440
+Không.
+
+151
+00:06:54,440 --> 00:06:55,550
+Không có Q ở trong đó.
+
+152
+00:06:55,550 --> 00:06:58,690
+Vậy là chi phí mua hàng, chi phí mua mỗi sản phẩm
+
+153
+00:06:58,690 --> 00:07:01,300
+không ảnh hưởng đến giá trị của Q.
+
+154
+00:07:01,300 --> 00:07:02,160
+Chi phí đặt hàng thì sao?
+
+155
+00:07:02,160 --> 00:07:04,550
+Chắc chắn rồi, nó vẫn sẽ liên quan.
+
+156
+00:07:04,550 --> 00:07:08,140
+Nếu tôi nhìn vào chi phí hàng hóa thì chắc chắn là có,
+
+157
+00:07:08,140 --> 00:07:09,810
+nó vẫn sẽ liên quan.
+
+158
+00:07:09,810 --> 00:07:12,230
+Nhưng nhìn vào hàng đang về.
+
+159
+00:07:12,230 --> 00:07:16,770
+Thời gian chờ hàng có ảnh hưởng đến Q không?
+
+160
+00:07:16,770 --> 00:07:17,940
+Có mối quan hệ nào không?
+
+161
+00:07:17,940 --> 00:07:19,130
+Và câu trả lời là không.
+
+162
+00:07:19,130 --> 00:07:22,950
+Hàng đang về không nằm trong các chi phí liên quan
+
+163
+00:07:22,950 --> 00:07:26,480
+trong việc xác định số lượng đặt hàng tối ưu.
+
+164
+00:07:26,480 --> 00:07:28,420
+Ở đây cũng vậy,
+
+165
+00:07:28,420 --> 00:07:30,160
+nó không bị thay đổi bởi chi phí hao hụt,
+
+166
+00:07:30,160 --> 00:07:32,740
+cộng với việc ta vẫn đang giả định rằng không có chuyện hết hàng.
+
+167
+00:07:32,740 --> 00:07:34,570
+Vậy tổng chi phí liên quan
+
+168
+00:07:34,570 --> 00:07:38,110
+sẽ giống như khi thời gian chờ hàng bằng 0,
+
+169
+00:07:38,110 --> 00:07:39,820
+hay thời gian chờ hàng tức thời.
+
+170
+00:07:39,820 --> 00:07:41,460
+Vậy Q* mới của tôi là gì?
+
+171
+00:07:41,460 --> 00:07:42,950
+Vẫn như cũ.
+
+172
+00:07:42,950 --> 00:07:44,730
+Nó không thay đổi.
+
+173
+00:07:44,730 --> 00:07:47,060
+Vậy là thời gian chờ hàng cố định
+
+174
+00:07:47,060 --> 00:07:49,950
+không ảnh hưởng đến số lượng đặt hàng của tôi.
+
+175
+00:07:49,950 --> 00:07:51,680
+Vậy chính sách tối ưu mới của tôi là gì?
+
+176
+00:07:51,680 --> 00:07:53,580
+Một số thứ sẽ thay đổi
+
+177
+00:07:53,580 --> 00:07:55,712
+bởi vì nếu tôi vẽ lại cái này,
+
+178
+00:07:55,712 --> 00:07:57,420
+đây vẫn chỉ là một biểu đồ hàng đơn giản -
+
+179
+00:07:57,420 --> 00:07:59,870
+tôi có hàng trong tay,
+
+180
+00:07:59,870 --> 00:08:01,250
+tôi có hàng đang về.
+
+181
+00:08:01,250 --> 00:08:09,170
+Một lần nữa, chỗ này là hàng đang về, và ở đây sẽ là hàng trong kho.
+
+182
+00:08:09,170 --> 00:08:12,020
+Để tôi kẻ nó thêm lần nữa.
+
+183
+00:08:12,020 --> 00:08:14,460
+Và vị trí hàng của tôi
+
+184
+00:08:14,460 --> 00:08:16,370
+chính là tổng của cả hai chỗ hàng này.
+
+185
+00:08:16,370 --> 00:08:19,190
+Chính sách của tôi là sẽ nhìn vào -
+
+186
+00:08:19,190 --> 00:08:21,540
+tôi muốn xác định KHI NÀO sẽ đặt hàng.
+
+187
+00:08:21,540 --> 00:08:24,370
+Tôi biết rằng nếu tôi đặt hàng ở đây,
+
+188
+00:08:24,370 --> 00:08:28,310
+hàng sẽ về sau một đơn vị thời gian L.
+
+189
+00:08:28,310 --> 00:08:29,980
+Thời điểm đó là gì?
+
+190
+00:08:29,980 --> 00:08:32,649
+Lúc đó tôi còn bao nhiêu hàng?
+
+191
+00:08:32,649 --> 00:08:33,690
+Điểm này sẽ là gì?
+
+192
+00:08:33,690 --> 00:08:36,309
+Nếu nhu cầu của tôi là D
+
+193
+00:08:36,309 --> 00:08:38,840
+và thời gian hàng về là L,
+
+194
+00:08:38,840 --> 00:08:43,360
+điểm này sẽ là D nhân L.
+
+195
+00:08:43,360 --> 00:08:47,210
+Vậy chính sách của tôi sẽ thay đổi, và sẽ là:
+
+196
+00:08:47,210 --> 00:08:49,980
+đặt Q* đơn vị hàng (bởi vì nó vẫn như cũ),
+
+197
+00:08:49,980 --> 00:08:54,270
+khi vị trí hàng bằng D nhân L.
+
+198
+00:08:54,270 --> 00:08:58,230
+Hai thứ khác biệt ở đây.
+
+199
+00:08:58,230 --> 00:09:01,420
+Một cái là "Vị trí hàng", không phải "Hàng có trong tay".
+
+200
+00:09:01,420 --> 00:09:02,460
+Phải không?
+
+201
+00:09:02,460 --> 00:09:04,569
+Bạn đang thêm cả đơn hàng đang về vào tổng số hàng.
+
+202
+00:09:04,569 --> 00:09:05,360
+Nếu bạn không thêm vào thì sao?
+
+203
+00:09:05,360 --> 00:09:07,560
+Nếu bạn chỉ xét đến hàng có trong tay thì sao?
+
+204
+00:09:07,560 --> 00:09:09,050
+Vậy thì bạn sẽ tiếp tục đặt hàng
+
+205
+00:09:09,050 --> 00:09:10,880
+bởi vì hàng trong tay tôi
+
+206
+00:09:10,880 --> 00:09:14,120
+vẫn ít hơn hoặc bằng D nhân L
+
+207
+00:09:14,120 --> 00:09:16,220
+trong khi tôi đang đợi thứ gì đó về.
+
+208
+00:09:16,220 --> 00:09:20,140
+Vậy đó là "Vị trí hàng" chứ không phải "Hàng trong tay"
+
+209
+00:09:20,140 --> 00:09:24,240
+khi lượng hàng ở vị trí D nhân L, bởi vì sau khi bạn đặt hàng
+
+210
+00:09:24,240 --> 00:09:27,509
+hàng sẽ về sau một số đơn vị thời gian L.
+
+211
+00:09:27,509 --> 00:09:30,050
+Một điều thú vị khác cần lưu ý là tôi vẫn có thể
+
+212
+00:09:30,050 --> 00:09:33,690
+đặt Q* đơn vị hàng sau mỗi khoảng thời gian T*
+
+213
+00:09:33,690 --> 00:09:36,980
+(bởi vì lần tới tôi đặt hàng sẽ là xung quanh khoảng này,
+
+214
+00:09:36,980 --> 00:09:40,940
+và khoảng cách này vẫn là T*).
+
+215
+00:09:40,940 --> 00:09:44,120
+Tất cả những điều tôi làm là dịch mọi thứ sang trái.
+
+216
+00:09:44,120 --> 00:09:46,830
+Vậy hiệu ứng ròng ở đây là gì?
+
+217
+00:09:46,830 --> 00:09:50,350
+Điều cần nhớ là việc thêm vào một khoảng thời gian chờ hàng
+
+218
+00:09:50,350 --> 00:09:54,410
+không làm thay đổi số lượng đặt hàng tối ưu.
+
+219
+00:09:54,410 --> 00:09:56,790
+Nó chỉ làm thay đổi chính sách
+
+220
+00:09:56,790 --> 00:09:59,390
+bằng cách thay đổi thời gian đặt hàng.
+
+221
+00:09:59,390 --> 00:10:01,330
+Chỉ thế thôi.
+
+222
+00:10:01,330 --> 00:10:02,300
+
+

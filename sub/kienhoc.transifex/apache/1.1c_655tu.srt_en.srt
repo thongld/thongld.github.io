@@ -1,0 +1,365 @@
+0
+00:00:00,000 --> 00:00:00,747
+https://youtu.be/qZwP8-YvixU
+
+1
+00:00:00,747 --> 00:00:02,580
+SPEAKER 1: There are two key data management
+
+2
+00:00:02,580 --> 00:00:04,490
+concepts that you need to know.
+
+3
+00:00:04,490 --> 00:00:08,010
+The first is that a data model is a collection of concepts
+
+4
+00:00:08,010 --> 00:00:09,860
+for describing data.
+
+5
+00:00:09,860 --> 00:00:12,290
+The second is that a schema is a description
+
+6
+00:00:12,290 --> 00:00:14,560
+of a particular collection of data
+
+7
+00:00:14,560 --> 00:00:17,170
+that uses a given data model.
+
+8
+00:00:17,170 --> 00:00:21,620
+We'll see more about this in just a few minutes.
+
+9
+00:00:21,620 --> 00:00:24,980
+Data falls on a structure spectrum.
+
+10
+00:00:24,980 --> 00:00:28,570
+On the far right, we have unstructured data.
+
+11
+00:00:28,570 --> 00:00:32,460
+Examples of this are plain text and media.
+
+12
+00:00:32,460 --> 00:00:35,070
+This type of data does not have a schema.
+
+13
+00:00:35,070 --> 00:00:39,230
+There's no types associated with the data.
+
+14
+00:00:39,230 --> 00:00:41,760
+In the middle, we have semi-structured data.
+
+15
+00:00:41,760 --> 00:00:45,230
+This includes things like documents, extended markup
+
+16
+00:00:45,230 --> 00:00:49,850
+language documents, tag texts, and media.
+
+17
+00:00:49,850 --> 00:00:52,400
+This type of data we may be able to infer
+
+18
+00:00:52,400 --> 00:00:57,150
+the types of information that's stored in that file.
+
+19
+00:00:57,150 --> 00:01:01,740
+Structured data is where are we know the type of everything
+
+20
+00:01:01,740 --> 00:01:03,320
+that's in the data.
+
+21
+00:01:03,320 --> 00:01:05,680
+Examples are relational databases
+
+22
+00:01:05,680 --> 00:01:09,370
+and formatted messages.
+
+23
+00:01:09,370 --> 00:01:11,690
+Now, semi-structured data most often
+
+24
+00:01:11,690 --> 00:01:14,380
+takes the form of tabular data.
+
+25
+00:01:14,380 --> 00:01:16,740
+It's one of the most common data formats.
+
+26
+00:01:16,740 --> 00:01:20,570
+And the table is just a collection of rows and columns.
+
+27
+00:01:20,570 --> 00:01:24,790
+Each column has a name, and each cell may or may not
+
+28
+00:01:24,790 --> 00:01:26,900
+have a value.
+
+29
+00:01:26,900 --> 00:01:29,840
+Each column also has a type.
+
+30
+00:01:29,840 --> 00:01:32,470
+For example, string or integer.
+
+31
+00:01:32,470 --> 00:01:37,340
+And together, those column types are the schema for the data.
+
+32
+00:01:37,340 --> 00:01:41,150
+Now there are two choices for how the schema is determined.
+
+33
+00:01:41,150 --> 00:01:46,230
+Spark can dynamically infer the schema while it reads each row,
+
+34
+00:01:46,230 --> 00:01:52,780
+or the programmer can statically specify the schema.
+
+35
+00:01:52,780 --> 00:01:56,220
+So here's an example of tabular data.
+
+36
+00:01:56,220 --> 00:02:01,300
+This is Fortune's list of the top 500 US closely held
+
+37
+00:02:01,300 --> 00:02:07,180
+public corporations, and it's done by gross revenue.
+
+38
+00:02:07,180 --> 00:02:11,210
+So here we can see in this table that it has rows
+
+39
+00:02:11,210 --> 00:02:14,265
+and it has columns and the columns have names.
+
+40
+00:02:14,265 --> 00:02:18,015
+The columns, we can also either specify the types in advance,
+
+41
+00:02:18,015 --> 00:02:20,340
+or we could infer the types.
+
+42
+00:02:20,340 --> 00:02:22,980
+So for example, company is a column that
+
+43
+00:02:22,980 --> 00:02:28,170
+consists of strings, or rank is an integer, or size
+
+44
+00:02:28,170 --> 00:02:33,090
+is an integer, profits, also an integer.
+
+45
+00:02:33,090 --> 00:02:37,330
+Here's another example a semi-structured.
+
+46
+00:02:37,330 --> 00:02:40,002
+Here we have protein data bank information.
+
+47
+00:02:40,002 --> 00:02:42,510
+And you can see that the format is that there is
+
+48
+00:02:42,510 --> 00:02:46,410
+a field, a number, and values.
+
+49
+00:02:46,410 --> 00:02:49,710
+A relational data model is the most used data model
+
+50
+00:02:49,710 --> 00:02:52,700
+for structured data, and a relation is just
+
+51
+00:02:52,700 --> 00:02:55,690
+a table with rows and columns.
+
+52
+00:02:55,690 --> 00:02:58,080
+Now every relation has a schema that
+
+53
+00:02:58,080 --> 00:03:01,570
+defines each column's type, and the programmer must statically
+
+54
+00:03:01,570 --> 00:03:04,140
+specify the schema.
+
+55
+00:03:04,140 --> 00:03:07,100
+Here's an example of structured data.
+
+56
+00:03:07,100 --> 00:03:11,680
+In particular, it's an instance of a students relation.
+
+57
+00:03:11,680 --> 00:03:16,550
+So you can see we have the name of this relation is students,
+
+58
+00:03:16,550 --> 00:03:19,060
+and it has several columns.
+
+59
+00:03:19,060 --> 00:03:22,560
+It has three columns that are strings, the SID, the name,
+
+60
+00:03:22,560 --> 00:03:24,146
+and the login.
+
+61
+00:03:24,146 --> 00:03:27,050
+It has the age column, which is an integer,
+
+62
+00:03:27,050 --> 00:03:29,790
+and the GPA column, which is a real number.
+
+63
+00:03:29,790 --> 00:03:31,246
+And it consists of three rows.
+
+64
+00:03:31,246 --> 00:03:35,100
+
+65
+00:03:35,100 --> 00:03:40,060
+However, structured data only accounts for maybe 20%
+
+66
+00:03:40,060 --> 00:03:42,670
+of all the data we have.
+
+67
+00:03:42,670 --> 00:03:45,629
+Most of the data is unstructured.
+
+68
+00:03:45,629 --> 00:03:48,170
+The amount of structured data is decreasing because of things
+
+69
+00:03:48,170 --> 00:03:49,780
+like consumer applications that are
+
+70
+00:03:49,780 --> 00:03:53,180
+creating user-generated content that's not structured.
+
+71
+00:03:53,180 --> 00:03:55,210
+Or things like enterprise search applications
+
+72
+00:03:55,210 --> 00:03:59,790
+which allow you to index corporate data on an intranet.
+
+73
+00:03:59,790 --> 00:04:02,590
+That data oftentimes is not structured data.
+
+74
+00:04:02,590 --> 00:04:05,370
+And finally, media applications are typically
+
+75
+00:04:05,370 --> 00:04:06,430
+unstructured data.
+
+76
+00:04:06,430 --> 00:04:09,060
+
+77
+00:04:09,060 --> 00:04:12,820
+With unstructured data, there's only one column,
+
+78
+00:04:12,820 --> 00:04:15,470
+and it typically has a string or binary type.
+
+79
+00:04:15,470 --> 00:04:18,579
+So there are lots of examples, a Facebook post, and Instagram
+
+80
+00:04:18,579 --> 00:04:22,670
+image, a vine video, a blog post, news article,
+
+81
+00:04:22,670 --> 00:04:24,000
+user-generated content.
+
+82
+00:04:24,000 --> 00:04:26,430
+All of these are typically unstructured.
+
+83
+00:04:26,430 --> 00:04:29,570
+
+84
+00:04:29,570 --> 00:04:31,330
+So this is the challenge.
+
+85
+00:04:31,330 --> 00:04:34,620
+We would like to work with structured and semi-structured
+
+86
+00:04:34,620 --> 00:04:37,820
+data, but most of the data that we're going to encounter
+
+87
+00:04:37,820 --> 00:04:39,700
+is unstructured.
+
+88
+00:04:39,700 --> 00:04:43,360
+And so this means we have to perform the extract, transform,
+
+89
+00:04:43,360 --> 00:04:45,310
+load process.
+
+90
+00:04:45,310 --> 00:04:47,290
+This is where we impose structure
+
+91
+00:04:47,290 --> 00:04:50,470
+on an unstructured data.
+

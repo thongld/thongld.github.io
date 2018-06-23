@@ -1,0 +1,822 @@
+1
+00:00:01,510 --> 00:00:04,500
+Ở phần này, chúng ta sẽ tìm hiểu những thành phần
+ tạo nên một thí nghiệm
+
+2
+00:00:04,500 --> 00:00:09,080
+và những thuật ngữ cốt lõi liên quan đến
+
+3
+00:00:09,080 --> 00:00:12,440
+thiết kế thí nghiệm.
+
+4
+00:00:12,440 --> 00:00:16,269
+Trước hết, hãy nghĩ xem mục đích ban đầu 
+của việc làm thí nghiệm
+
+5
+00:00:16,269 --> 00:00:17,310
+là gì.
+
+6
+00:00:17,310 --> 00:00:21,140
+Có 5 lí do để làm thí nghiệm.
+
+7
+00:00:21,140 --> 00:00:24,590
+Thứ nhất là để ghi chép hiện tượng
+ liên quan đến hành vi.
+
+8
+00:00:24,590 --> 00:00:29,460
+Bất cứ hiện tượng quan trọng nào, như những thiên vị
+ khi quyết định hay những chiến lược
+
+9
+00:00:29,460 --> 00:00:33,649
+để quyết định, thường được ghi chép
+ qua việc thực hiện một loạt thí nghiệm xuyên suốt
+
+10
+00:00:33,649 --> 00:00:38,109
+và cùng dẫn đến một kết luận giống nhau.
+
+11
+00:00:38,109 --> 00:00:43,059
+Thứ hai, thí nghiệm được thực hiện để
+ phát triển một giả thuyết nhằm chứng minh
+
+12
+00:00:43,059 --> 00:00:46,769
+những hiện tượng đã được ghi chép 
+ mà ta vừa nhắc đến.
+
+13
+00:00:46,769 --> 00:00:51,379
+Thứ ba, ta làm thí nghiệm để nghiên cứu mức độ ảnh hưởng
+
+14
+00:00:51,379 --> 00:00:52,789
+của những hiện tượng khác nhau.
+
+15
+00:00:52,789 --> 00:00:58,100
+Ví dụ, ảnh hưởng của việc hệ thống lại thông tín
+
+16
+00:00:58,100 --> 00:01:03,210
+hay trình bày về khoản tiền tích cóp hằng ngày
+
+17
+00:01:03,210 --> 00:01:04,769
+dựa trên thang đo lãi suất.
+
+18
+00:01:04,769 --> 00:01:08,710
+Trong trường hợp này, liệu con người sẽ mua đồ
+
+19
+00:01:08,710 --> 00:01:10,150
+ hay làm từ thiện.
+
+20
+00:01:10,150 --> 00:01:13,490
+Lý do thứ 4 khi làm thí nghiệm là nhằm kiểm tra chéo
+ và giải quyết sự bất đồng
+
+21
+00:01:13,490 --> 00:01:18,150
+trong những lý thuyết có dự đoán trái ngược nhau.
+
+22
+00:01:18,150 --> 00:01:22,150
+Cuối cùng, ta làm thí nghiệm
+ để kiểm chứng tính hiệu quả
+
+23
+00:01:22,150 --> 00:01:27,980
+của cái kinh tế học hành vi gọi là "cú hích" 
+hay những can thiệp làm thay đổi hành vi. 
+
+24
+00:01:27,980 --> 00:01:35,450
+Vậy có 5 lý do chính đáng
+ để những thí nghiệm được thực hiện.
+
+25
+00:01:35,450 --> 00:01:38,520
+Mỗi thí nghiệm đều nghiên cứu mối quan hệ 
+giữa một biến số
+
+26
+00:01:38,520 --> 00:01:42,450
+ta gọi là nguyên nhân và hệ quả của nó
+
+27
+00:01:42,450 --> 00:01:44,420
+cái ta gọi là ảnh hưởng.
+
+28
+00:01:44,420 --> 00:01:49,880
+Nói ngắn gọn, mỗi thí nghiệm cố gắng 
+cho thấy một nguyên nhân cụ thể
+
+29
+00:01:49,880 --> 00:01:53,560
+sẽ chắc chắn dẫn đến một kết quả cụ thể nào đó.
+
+30
+00:01:53,560 --> 00:01:58,230
+Ví dụ, việc chuyển đổi một giá trị thành
+ khoản đóng góp hằng ngày hay yêu cầu
+
+31
+00:01:58,230 --> 00:02:03,670
+số tiền được tích cóp mỗi ngày sẽ khiến bạn
+ dễ dàng trả tiền
+
+32
+00:02:03,670 --> 00:02:06,130
+hoặc cho tiền từ thiện nhiều hơn.
+
+33
+00:02:06,130 --> 00:02:10,929
+Cũng như vậy, trong bối cảnh chi phí chìm, 
+việc tăng số tiền
+
+34
+00:02:10,929 --> 00:02:15,769
+phải trả trước để mua vé xem bóng rổ 
+sẽ làm tăng nguy cơ khiến
+
+35
+00:02:15,769 --> 00:02:18,870
+họ trở thành nạn nhân của chi phí chìm.
+
+36
+00:02:18,870 --> 00:02:23,680
+Trong trường hợp này, việc gán giá trị với số tiền
+ có thể tiết kiệm hàng ngày hoặc 
+
+37
+00:02:23,680 --> 00:02:28,670
+số tiền dành để mua vé là nguyên nhân, trong khi
+
+38
+00:02:28,670 --> 00:02:32,049
+ việc chi tiêu nhiều hơn hoặc chịu tác động 
+của chi phí chìm lớn hơn
+
+39
+00:02:32,049 --> 00:02:37,790
+chính là kết quả.
+
+40
+00:02:37,790 --> 00:02:40,209
+Bây giờ ta cùng tập trung vào chủ đề
+ "vài xu lẻ mỗi ngày".
+
+41
+00:02:40,209 --> 00:02:44,779
+Ý tưởng nằm phía sau là chọn một giá trị nào đó
+
+42
+00:02:44,779 --> 00:02:49,810
+rồi gán nó với số tiền bạn tích cóp hàng ngày,
+ ví dụ 1 đô 1 ngày
+
+43
+00:02:49,810 --> 00:02:55,159
+sẽ tăng khả năng người mua dành tiền
+ cho sản phẩm hay dịch vụ đó.
+
+44
+00:02:55,159 --> 00:02:57,769
+Sao lại thế?
+
+45
+00:02:57,769 --> 00:03:01,739
+Nghiên cứu của John Gourville gợi ý
+ rằng việc một giá trị được gán với số tiền hàng ngày
+
+46
+00:03:01,739 --> 00:03:07,019
+sẽ khiến người mua cảm thấy khả năng 
+có thể chi cao hơn
+
+47
+00:03:07,019 --> 00:03:10,840
+dẫn đến việc dễ dàng chi tiền hơn.
+
+48
+00:03:10,840 --> 00:03:16,139
+Biến số nằm giữa nguyên nhân 
+và kết quả này thường được gọi là
+
+49
+00:03:16,139 --> 00:03:18,630
+biến số trung gian.
+
+50
+00:03:18,630 --> 00:03:24,819
+Trong trường hợp trên, nguyên nhân dẫn đến biến trung gian, 
+còn biến trung gian đem lại kết quả mong muốn. 
+
+51
+00:03:24,819 --> 00:03:30,659
+Ví dụ như việc gán giá trị thành số tiền tiết kiệm mỗi ngày 
+thay đổi nhận thức về khả năng chi trả
+
+52
+00:03:30,659 --> 00:03:36,120
+cuối cùng dẫn đến sức mua lớn hơn.
+
+53
+00:03:36,120 --> 00:03:41,129
+Nào cùng quay lại và suy ngẫm 
+về những phương tiện nhân - quả căn bản.
+
+54
+00:03:41,129 --> 00:03:44,450
+Quay lại với "vài xu lẻ mỗi ngày" 
+- nghiên cứu gợi ý 
+
+55
+00:03:44,450 --> 00:03:48,680
+rằng việc gán thứ gì đó với số tiền
+ tích cóp mỗi ngày sẽ tăng sức mua.
+
+56
+00:03:48,680 --> 00:03:52,590
+Nhưng nếu bạn còn nhớ,
+ điều này chỉ có tác dụng khi số tiền này
+
+57
+00:03:52,590 --> 00:03:58,169
+có thể quy đổi ra một số tiền
+có thể dễ dàng so sánh với
+
+58
+00:03:58,169 --> 00:04:02,499
+những khoản chi khác mà
+ người mua có thể thực hiện
+
+59
+00:04:02,499 --> 00:04:03,519
+với số tiền đó.
+
+60
+00:04:03,519 --> 00:04:09,260
+Nếu thực tế, khoản tiền phải tích cóp
+ mỗi ngày ở mức khá cao
+
+61
+00:04:09,260 --> 00:04:14,849
+khoảng 25 đô hay 20 đô thì hiệu ứng 
+"vài xu lẻ mỗi ngày" sẽ phản tác dụng vì
+
+62
+00:04:14,849 --> 00:04:19,900
+người mua không thể nhớ họ tiêu gì tới 15 đô
+
+63
+00:04:19,900 --> 00:04:23,560
+20 đô hay 25 đô một ngày.
+
+64
+00:04:23,560 --> 00:04:28,340
+Nói cách khác, "vài xu lẻ mỗi ngày"
+ giúp tăng sức mua nhưng chỉ có tác dụng
+
+65
+00:04:28,340 --> 00:04:33,660
+với những khoản nhỏ mỗi ngày 
+và không tác dụng với những khoản chi
+
+66
+00:04:33,660 --> 00:04:36,600
+hay khoản tương đương lớn .
+
+67
+00:04:36,600 --> 00:04:41,310
+Trong ngôn ngữ thiết kế thí nghiệm, 
+biến số thứ ba này được gọi là
+
+68
+00:04:41,310 --> 00:04:43,210
+biến điều tiết.
+
+69
+00:04:43,210 --> 00:04:47,250
+Một nguyên nhân dẫn đến một ảnh hưởng.
+
+70
+00:04:47,250 --> 00:04:53,840
+Và mối quan hệ hệ nhân - quả là hàm số 
+
+71
+00:04:53,840 --> 00:04:54,840
+ của biến điều tiết.
+
+72
+00:04:54,840 --> 00:04:57,060
+Trong trường hợp này, biến điều tiết 
+ngăn chặn kết quả xảy ra.
+
+73
+00:04:57,060 --> 00:05:01,860
+Nhưng thực ra nó có thể củng cố thêm
+ hay làm giảm đi kết quả đang được cân nhắc.
+
+74
+00:05:01,860 --> 00:05:07,170
+Ta cùng tìm hiểu vài yếu tố khác của thí nghiệm.
+
+75
+00:05:07,170 --> 00:05:10,940
+Ta nhắc đến điều kiện được kiểm sát
+
+76
+00:05:10,940 --> 00:05:13,600
+và điều kiện thí nghiệm.
+
+77
+00:05:13,600 --> 00:05:17,390
+Trong một điều kiện kiểm soát điển hình
+
+78
+00:05:17,390 --> 00:05:20,400
+sẽ không có yếu tố nguyên nhân.
+
+79
+00:05:20,400 --> 00:05:24,630
+Còn trong những thí nghiệm 
+mà ta thực hiện trong kinh tế học hành vi,
+
+80
+00:05:24,630 --> 00:05:28,590
+một điều kiện kiểm soát là điều kiện
+ không có sự can thiệp từ bên ngoài,
+
+81
+00:05:28,590 --> 00:05:32,310
+hay sự tồn tại của "cú hích" - cái bạn đang thử nghiệm.
+
+82
+00:05:32,310 --> 00:05:37,000
+Điều kiện này giữ nguyên hiện trạng hay cách thức
+ mà một lựa chọn
+
+83
+00:05:37,000 --> 00:05:40,280
+được đưa ra.
+
+84
+00:05:40,280 --> 00:05:43,910
+Trong điều kiện thí nghiệm, ta thêm vào 
+những can thiệp mà ta đang cố
+
+85
+00:05:43,910 --> 00:05:45,550
+thử nghiệm.
+
+86
+00:05:45,550 --> 00:05:50,250
+Nói chung, ta thử thêm vào những yếu tố
+ mà ta gọi là nguyên nhân
+
+87
+00:05:50,250 --> 00:05:54,620
+để xem liệu chúng có thay đổi
+ được kết quả không.
+
+88
+00:05:54,620 --> 00:05:59,080
+Thờng trong một thí nghiệm,
+ ta có thể có nhiều nguyên nhân 
+
+89
+00:05:59,080 --> 00:06:03,390
+hay nhiều thử nghiệm được xử lí đồng thời.
+
+90
+00:06:03,390 --> 00:06:08,400
+Một điều kiện sẽ liên quan đến một số nhiệm vụ
+ hay yếu tố thúc kích thích mà
+
+91
+00:06:08,400 --> 00:06:11,590
+người làm thí nghiệm 
+đưa ra cho người tham gia.
+
+92
+00:06:11,590 --> 00:06:17,810
+Trong một điều kiện được đưa ra, 
+ta có thể có 2, 3 hoặc chỉ 1 yếu tố
+
+93
+00:06:17,810 --> 00:06:24,750
+đã được kiểm soát bởi nhà nghiên cứu.
+
+94
+00:06:24,750 --> 00:06:27,100
+Bản thân thử nghiệm có thể gồm
+ nhiều yếu tố khác nhau.
+
+95
+00:06:27,100 --> 00:06:29,510
+Mỗi yếu tố có thể có nhiều mức độ.
+
+96
+00:06:29,510 --> 00:06:34,230
+Ví dụ, trong một thí nghiệm ta đã nhắc đến, 
+việc định giá là một yếu tố
+
+97
+00:06:34,230 --> 00:06:39,240
+có 2 mức độ khác nhau, giá trị tổng
+
+98
+00:06:39,240 --> 00:06:41,370
+hay giá trị tính theo số tiền tích cóp hàng ngày.
+
+99
+00:06:41,370 --> 00:06:44,850
+Bạn có thể nghĩ ra được rất nhiều yếu tố 
+có nhiều mức độ.
+
+100
+00:06:44,850 --> 00:06:46,360
+Thử nghĩ về chi phí chìm.
+
+101
+00:06:46,360 --> 00:06:50,770
+Ta có thể thực hiện một thí nghiệm
+ mà vé cho một trận bóng rổ
+
+102
+00:06:50,770 --> 00:06:58,320
+được bán với các trường hợp sau, miễn phí, 
+với 10 đô, 20 đô hoặc 30 đô.
+
+103
+00:06:58,320 --> 00:07:02,550
+Ở đây, giá trị trả trước để mua vé 
+
+104
+00:07:02,550 --> 00:07:06,580
+chính là thử nghiệm cần tìm hiểu và 
+cũng chính là yếu tố mà ta đang nghiên cứu.
+
+105
+00:07:06,580 --> 00:07:12,340
+Nhưng nó có 4 mức độ khác nhau,
+ 0, 10, 20 và 30.
+
+106
+00:07:12,340 --> 00:07:15,810
+Cuối cùng, có vài thứ ta có thể dùng 
+để đánh giá như biến hệ quả 
+
+107
+00:07:15,810 --> 00:07:17,890
+hay biến số kết quả.
+
+108
+00:07:17,890 --> 00:07:24,090
+Trong thí nghiệm, bạn có thể nghiên cứu tác động
+ của một nguyên nhân dựa trên thái độ
+
+109
+00:07:24,090 --> 00:07:30,150
+hay mức độ yêu thích hoặc
+ dựa vào chọn lựa của người tham gia.
+
+110
+00:07:30,150 --> 00:07:34,550
+Trong kinh tế học hành vi, ta thường chỉ nghiên cứu tác động
+ dựa trên chọn lựa.
+
+111
+00:07:34,550 --> 00:07:39,140
+Dù vậy, vài nhà nghiên cứu có nghiên cứu 
+tác động dựa trên thái độ cũng như
+
+112
+00:07:39,140 --> 00:07:41,150
+mức độ yêu thích nữa.
+
+113
+00:07:41,150 --> 00:07:46,520
+Ta thường nhắc đến từ "chi phối" trong khóa học này.
+
+114
+00:07:46,520 --> 00:07:47,810
+Vậy lôi kéo là gì?
+
+115
+00:07:47,810 --> 00:07:52,240
+Đó là bất cứ khía cạnh nào trong quá trình
+ hay phần việc mà người thí nghiệm thực hiện
+
+116
+00:07:52,240 --> 00:07:54,180
+thay đổi trên các nhóm thí nghiệm.
+
+117
+00:07:54,180 --> 00:08:00,360
+Khi ta ghé thăm phòng thí nghiệm, 
+ta có nghe Julie nói  là toàn bộ những điều 
+
+118
+00:08:00,360 --> 00:08:05,760
+mà người tham gia phải trải qua có thể 
+bị chi phối
+
+119
+00:08:05,760 --> 00:08:10,440
+từ cách trình bày thông tin, phông chữ hiển thị văn bản, 
+
+120
+00:08:10,440 --> 00:08:14,780
+hay thậm chí màu sắc hay nhiệt độ hoặc những yếu tố khác
+
+121
+00:08:14,780 --> 00:08:16,270
+của môi trường xung quanh.
+
+122
+00:08:16,270 --> 00:08:21,200
+Vậy mọi thành phần của công việc
+ được thay đổi bởi người làm thí nghiệm 
+
+123
+00:08:21,200 --> 00:08:26,120
+được gọi là một chi phối.
+
+124
+00:08:26,120 --> 00:08:29,560
+Có vài thuật ngữ khác mà ta cần phải ghi nhớ
+ về thí nghiệm.
+
+125
+00:08:29,560 --> 00:08:32,550
+Thứ nhất là biến số nền.
+
+126
+00:08:32,550 --> 00:08:34,710
+Biến số nền là gì?
+
+127
+00:08:34,710 --> 00:08:39,400
+Bất cứ chuỗi biến số nào được cho sẵn
+ trong một thí nghiệm và không bị kiểm soát
+
+128
+00:08:39,400 --> 00:08:41,010
+là biến số nền.
+
+129
+00:08:41,010 --> 00:08:46,490
+Thường thì địa chỉ - nguồn gốc dữ liệu
+ được thu thập, hay là
+
+130
+00:08:46,490 --> 00:08:51,120
+dân tộc, giới tính và trình độ học vấn
+ của người tham gia
+
+131
+00:08:51,120 --> 00:08:55,400
+đều là những biến số nền và hiển hiện sẵn trong 
+
+132
+00:08:55,400 --> 00:08:56,400
+bối cảnh thí nghiệm.
+
+133
+00:08:56,400 --> 00:09:00,650
+Ta phải đảm bảo giải thích thí nghiệm 
+dựa trên nền bối cảnh
+
+134
+00:09:00,650 --> 00:09:05,430
+mà thí nghiệm được sắp đặt.
+
+135
+00:09:05,430 --> 00:09:10,520
+Cụ thể, phải chú ý không tổng quát hóa 
+quá nhiều 
+
+136
+00:09:10,520 --> 00:09:15,330
+từ một dãy biến số nền cho sẵn và 
+đưa kết quả thí nghiệm
+
+137
+00:09:15,330 --> 00:09:19,150
+vào thử ở những điều kiện khác của biến số nền.
+
+138
+00:09:19,150 --> 00:09:22,080
+Đó là lí do tại sao sự lặp lại kết quả
+
+139
+00:09:22,080 --> 00:09:24,290
+của những thí nghiệm quan trọng.
+
+140
+00:09:24,290 --> 00:09:28,960
+Việc lặp lại thí nghiệm ở những biến số nền
+ khác nhau quan trọng vì nó
+
+141
+00:09:28,960 --> 00:09:32,580
+giúp cho nhà nghiên cứu có được độ tin cậy cao hơn
+
+142
+00:09:32,580 --> 00:09:34,630
+trong kết quả nhận được.
+
+143
+00:09:34,630 --> 00:09:38,980
+Ngẫu nhiên hóa là thao tác xếp người tham gia
+ vào những điều kiện khác nhau
+
+144
+00:09:38,980 --> 00:09:42,180
+ngẫu nhiên.
+
+145
+00:09:42,180 --> 00:09:45,310
+Điều này quan trọng vì nó
+ giảm thiểu tối đa cái gọi là
+
+146
+00:09:45,310 --> 00:09:48,440
+thiên lệch chọn lựa hay thiên lệch sắp xếp.
+
+147
+00:09:48,440 --> 00:09:54,930
+Ví dụ như một nghiên cứu thực tế 
+về những người dùng thẻ tín dụng
+
+148
+00:09:54,930 --> 00:09:59,090
+so với người dùng tiền mặt hay séc khi mua hàng. 
+
+149
+00:09:59,090 --> 00:10:03,670
+Nếu bạn quan sát thực tế, bạn có thể nhận thấy rằng
+
+150
+00:10:03,670 --> 00:10:06,790
+người dùng thẻ tín dụng tiêu nhiều tiền hơn so với 
+
+151
+00:10:06,790 --> 00:10:09,520
+người dùng tiền mặt hay séc.
+
+152
+00:10:09,520 --> 00:10:13,570
+Nhưng cũng có thể những người dự định chi tiêu
+ nhiều hơn đó đã quyết định dùng thẻ 
+
+153
+00:10:13,570 --> 00:10:14,570
+ngay từ lúc đầu.
+
+154
+00:10:14,570 --> 00:10:18,839
+Nguyên nhân thực sự, mà bạn đang thấy, chính là
+
+155
+00:10:18,839 --> 00:10:20,700
+mức độ chi tiêu thực tế.
+
+156
+00:10:20,700 --> 00:10:24,680
+Còn kết quả là lựa chọn dùng thẻ tín dụng so với tiền mặt.
+
+157
+00:10:24,680 --> 00:10:27,420
+Nếu bạn đưa ra một kết luận trái ngược,
+
+158
+00:10:27,420 --> 00:10:31,830
+rằng chính phương thức chi trả
+ mới quyết định mức độ chi tiêu,
+
+159
+00:10:31,830 --> 00:10:38,940
+thì đó chính là một nhiễu,
+ hay còn gọi là, một thiên lệch
+
+160
+00:10:38,940 --> 00:10:39,940
+trong thí nghiệm.
+
+161
+00:10:39,940 --> 00:10:43,630
+Cũng như vậy, người làm thí nghiệm hay trợ lí nghiên cứu
+ làm công tác thu thập dữ liệu
+
+162
+00:10:43,630 --> 00:10:50,090
+không được cho biết về mục đích của thí nghiệm
+
+163
+00:10:50,090 --> 00:10:54,540
+có thể tối thiểu hóa khả năng
+ thiên lệch sắp xếp - đó là khi họ cố tình
+
+164
+00:10:54,540 --> 00:10:58,650
+xếp người tham gia vào những điều kiện
+ nào đó mà họ nghĩ rằng
+
+165
+00:10:58,650 --> 00:11:05,110
+sẽ cho ra kết quả họ mong đợi.
+
+166
+00:11:05,110 --> 00:11:08,360
+Sự đối chiếu là sử dụng nhiều phương pháp khác nhau
+
+167
+00:11:08,360 --> 00:11:12,680
+nhằm kiểm tra lại kết quả lần 2 hay lần 3.
+
+168
+00:11:12,680 --> 00:11:16,440
+Bạn có thể đối chiếu qua rất nhiều yếu tố.
+
+169
+00:11:16,440 --> 00:11:18,910
+Bạn có thể đối chiếu qua việc thay đổi biến số phụ thuộc.
+
+170
+00:11:18,910 --> 00:11:23,150
+Ví dụ, trong vài trường hợp, người tham gia 
+có thể chọn giữa 2 phương án
+
+171
+00:11:23,150 --> 00:11:24,680
+a và b.
+
+172
+00:11:24,680 --> 00:11:29,681
+Ở trường hợp 2, họ có thể cho thấy mức độ yêu thích
+
+173
+00:11:29,681 --> 00:11:31,940
+hay mức độ sẵn sàng chi trả của mình. 
+
+174
+00:11:31,940 --> 00:11:36,010
+Nhưng qua nhiều thí nghiệm, việc dùng 
+những biến số phụ thuộc khác nhau
+
+175
+00:11:36,010 --> 00:11:41,410
+sẽ làm tăng thêm niềm tin
+ rằng kết quả của những thí nghiệm 
+
+176
+00:11:41,410 --> 00:11:43,090
+đều dẫn đến cùng một kết luận.
+
+177
+00:11:43,090 --> 00:11:48,160
+Tương tự, ta có thể thực hiện đối chiếu
+ qua việc thay đổi phương pháp làm thí nghiệm,
+
+178
+00:11:48,160 --> 00:11:52,830
+qua sử dụng các biến số nền khác nhau, thậm chí
+
+179
+00:11:52,830 --> 00:11:57,480
+qua việc thay đổi kỹ thuật phân tích dữ liệu đối với
+
+180
+00:11:57,480 --> 00:11:58,839
+các nhóm thí nghiệm khác nhau.
+
+181
+00:11:58,839 --> 00:12:02,839
+Việc đối chiếu một loạt các thí nghiệm
+ cùng thử nghiệm và kiểm tra 
+
+182
+00:12:02,839 --> 00:12:07,700
+những ý tưởng và những mối quan hệ
+ nhân-quả giống nhau
+
+183
+00:12:07,700 --> 00:12:11,300
+sẽ làm tăng sự tin cậy cho nhà nghiên cứu
+ khi đưa ra kết luận.
+

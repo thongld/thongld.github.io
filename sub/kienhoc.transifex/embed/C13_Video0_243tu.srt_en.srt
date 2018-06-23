@@ -1,0 +1,136 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/XOOEUhV9w5I
+
+1
+00:00:00,000 --> 00:00:00,950
+
+2
+00:00:00,950 --> 00:00:04,280
+DR. RAMESH YERRABALLI: So, Jon,
+what are we gonna learn today?
+
+3
+00:00:04,280 --> 00:00:08,130
+DR. JONATHAN VALVANO: Today we're going
+to build systems that work with sound.
+
+4
+00:00:08,130 --> 00:00:12,580
+We'll import sound with
+a microphone, and we
+
+5
+00:00:12,580 --> 00:00:14,997
+will produce sound with a speaker.
+
+6
+00:00:14,997 --> 00:00:16,830
+DR. RAMESH YERRABALLI:
+OK, so you mean we're
+
+7
+00:00:16,830 --> 00:00:22,199
+going to build systems that look
+like MP3 players and recorders?
+
+8
+00:00:22,199 --> 00:00:23,990
+DR. JONATHAN VALVANO:
+Well, yes, but rather
+
+9
+00:00:23,990 --> 00:00:28,280
+than deal with the complexities
+of a format like MP3,
+
+10
+00:00:28,280 --> 00:00:32,810
+we'll focus on the fundamentals
+of signal processing
+
+11
+00:00:32,810 --> 00:00:35,430
+as it applies to sound.
+
+12
+00:00:35,430 --> 00:00:39,280
+DR. RAMESH YERRABALLI: So we will be
+looking at concepts like digitization,
+
+13
+00:00:39,280 --> 00:00:43,390
+the Nyquist Theorem, and maybe
+apply these concepts to build
+
+14
+00:00:43,390 --> 00:00:50,010
+a circuit hardware that converts
+digital information to analog form,
+
+15
+00:00:50,010 --> 00:00:52,687
+or analog information to digital form?
+
+16
+00:00:52,687 --> 00:00:53,770
+DR. JONATHAN VALVANO: Yes.
+
+17
+00:00:53,770 --> 00:00:58,380
+First we'll build a Digital
+to Analog Converter, or DAC,
+
+18
+00:00:58,380 --> 00:01:01,819
+and we'll use it to create sound.
+
+19
+00:01:01,819 --> 00:01:04,860
+DR. RAMESH YERRABALLI: The DAC circuit
+sounds interesting, but where will
+
+20
+00:01:04,860 --> 00:01:05,454
+we use it?
+
+21
+00:01:05,454 --> 00:01:07,120
+DR. JONATHAN VALVANO: Well, you know me.
+
+22
+00:01:07,120 --> 00:01:12,050
+If we don't build something that's
+interesting and useful, it's no fun.
+
+23
+00:01:12,050 --> 00:01:19,290
+So let's build a DAC system that outputs
+a hundred Hertz sine wave connected up
+
+24
+00:01:19,290 --> 00:01:22,640
+to a speaker, and we'll
+generate a pretty tone.
+
+25
+00:01:22,640 --> 00:01:26,280
+DR. RAMESH YERRABALLI: OK, so we could
+also watch it on an oscilloscope,
+
+26
+00:01:26,280 --> 00:01:31,597
+so that we can verify the function
+by looking at a sine wave.
+
+27
+00:01:31,597 --> 00:01:32,680
+DR. JONATHAN VALVANO: Yes.
+
+28
+00:01:32,680 --> 00:01:37,162
+This sine wave we will
+use to shape our world.
+
+29
+00:01:37,162 --> 00:01:37,662

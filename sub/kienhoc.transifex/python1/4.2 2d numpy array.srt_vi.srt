@@ -1,0 +1,185 @@
+1
+00:00:01,589 --> 00:00:05,670
+dungpham12002 23.06.16 Thao reviewed
+Ta sẽ viết lại các mảng numpy từ video trước.
+
+Let's recreate the numpy arrays from the previous
+video:
+
+2
+00:00:05,670 --> 00:00:09,630
+Nếu bạn yêu cầu cho biết kiểu dữ liệu của các mảng này,
+Python sẽ trả lời dưới dạng numpy.ndarray
+
+3
+00:00:09,630 --> 00:00:15,930
+Phần 'numpy.' cho bạn biết đây là
+một kiểu dữ liệu định sẵn trong gói numpy.
+
+4
+00:00:15,930 --> 00:00:20,850
+Còn 'ndarray' cho bạn biết mảng này có n chiều.
+Các mảng np_height và np_weight ở trên là các mảng 1 chiều,
+
+5
+00:00:20,850 --> 00:00:25,250
+tuy nhiên ta hoàn toàn có thể tạo ra
+các mảng 2, 3, thậm chí là
+
+6
+00:00:25,250 --> 00:00:28,960
+7 chiều! Tuy nhiên, ta sẽ chỉ chú tâm vào
+các mảng 2 chiều trong bài này.
+
+7
+00:00:28,960 --> 00:00:34,350
+Bạn có thể tạo một mảng numpy 2 chiều
+từ một dãy các list Python thông thường. Ta sẽ thử tạo ra
+
+8
+00:00:34,350 --> 00:00:38,190
+một mảng numpy cho dữ liệu về chiều cao và cân nặng
+của gia đình bạn, như sau:
+
+9
+00:00:38,190 --> 00:00:44,680
+Nếu bạn in ra np_2d, bạn sẽ thấy
+cấu trúc dữ liệu dạng hình chữ nhật: mỗi list con
+
+10
+00:00:44,680 --> 00:00:50,790
+trong list lớn là một hàng trong mảng numpy 2D này.
+Nhập lệnh np_2d.shape,
+
+11
+00:00:50,790 --> 00:00:55,510
+bạn có thể thấy ta có 2 hàng và 5 cột.
+shape được gọi là một thuộc tính
+
+12
+00:00:55,510 --> 00:00:59,500
+của mảng np_2d. Nó sẽ
+cung cấp thông tin về mô hình
+
+13
+00:00:59,500 --> 00:01:01,390
+ của cấu trúc dữ liệu.
+
+14
+00:01:01,390 --> 00:01:06,259
+Ngoài ra, có một quy tắc với các mảng Numpy:
+một mảng chỉ được chứa duy nhất một kiểu dữ liệu. 
+
+15
+00:01:06,259 --> 00:01:11,139
+Nếu bạn chuyển một số thực thành chuỗi kí tự,
+mọi phần tử của mảng sẽ bị ép chuyển thành các chuỗi kí tự,
+
+16
+00:01:11,139 --> 00:01:13,069
+nhằm đảm bảo một mảng với các phần tử cùng kiểu dữ liệu.
+
+17
+00:01:13,069 --> 00:01:18,659
+Mảng numpy 2D có thể coi như một
+dãy các list đã được cải tiến. Bạn có thể thực hiện tính toán
+
+18
+00:01:18,659 --> 00:01:23,849
+trên các mảng, như đã trình bày phần trước.
+Bạn có thể thực hiện các lệnh xuất tập con phức tạp hơn.
+
+19
+00:01:23,849 --> 00:01:28,459
+Giả sử bạn cần xuất phần tử thứ 3
+trong hàng đầu. Để chọn hàng,
+
+20
+00:01:28,459 --> 00:01:30,729
+bạn cần để chỉ số 0 trong ngoặc vuông.
+
+21
+00:01:30,729 --> 00:01:34,939
+Sau đó, để chọn phần tử thứ ba,
+bạn mở thêm một ngoặc vuông nữa
+
+22
+00:01:34,939 --> 00:01:39,840
+chứa chỉ số 2 như trên.
+Khi nhập lệnh trên, bạn đã chọn một hàng,
+
+23
+00:01:39,840 --> 00:01:43,109
+rồi trên hàng đó lại chọn một phần tử.
+
+24
+00:01:43,109 --> 00:01:47,939
+Có một cách khác để xuất tập con.
+Bạn chỉ cần mở ngoặc vuông 1 lần và dùng dấu phẩy.
+
+25
+00:01:47,939 --> 00:01:52,349
+Lệnh này trả lại kết quả tương tự như lệnh trước.
+Giá trị viết trước dấu phẩy nêu chỉ số của hàng,
+
+26
+00:01:52,349 --> 00:01:57,209
+còn giá trị sau dấu phẩy nêu chỉ số của cột.
+Giao điểm giữa cột và hàng đã nêu
+
+27
+00:01:57,209 --> 00:02:00,349
+sẽ được xuất ra.
+
+28
+00:02:00,349 --> 00:02:05,079
+Khi bạn đã thông thạo, cú pháp này sẽ dễ hiểu hơn
+và mở ra thêm nhiều khả năng mới.
+
+29
+00:02:05,079 --> 00:02:09,319
+Giả sử bạn muốn chọn chiều cao và cân nặng
+của các thành viên thứ 2 và 3 trong gia đình.
+
+30
+00:02:09,319 --> 00:02:13,810
+Bạn cần cả hai hàng, nên sẽ đặt dấu hai chấm trước dấu phẩy.
+Tuy nhiên bạn chỉ cần cột thứ 2 và 3,
+
+31
+00:02:13,810 --> 00:02:18,900
+nên bạn cần đặt số chỉ 1 đến 3 sau dấu phẩy.
+
+32
+00:02:18,900 --> 00:02:25,549
+Nhớ rằng chỉ số thứ 3 sẽ không được trả lại. 
+Giao điểm sẽ cho ta một mảng 2D với 2 hàng, 2 cột:
+
+33
+00:02:25,549 --> 00:02:30,900
+Tương tự, bạn có thể chọn cân nặng
+của cả gia đình như trên: bạn chỉ cần
+
+34
+00:02:30,900 --> 00:02:35,590
+hàng thứ hai, nên viết 1 trước dấu phẩy.
+Bạn cần tất cả các cột, nên viết dấu hai chấm sau
+
+35
+00:02:35,590 --> 00:02:39,640
+dấu phẩy. Giao điểm sẽ cho ta cả hàng thứ hai.
+
+36
+00:02:39,640 --> 00:02:44,790
+Cuối cùng, các mảng numpy 2D giúp bạn thực hiện tính toán với các phần tử.
+
+37
+00:02:44,790 --> 00:02:49,400
+Điều này cũng tương tự như với mảng 1 chiều.
+Bạn có thể làm thử trong các bài tập,
+
+38
+00:02:49,400 --> 00:02:52,879
+cùng với việc tạo ra các mảng numpy 2D,
+và xuất các tập con từ chúng.
+

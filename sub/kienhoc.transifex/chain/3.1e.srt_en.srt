@@ -1,0 +1,984 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/10vU4ZrG5ik
+
+1
+00:00:00,499 --> 00:00:02,730
+So far we've ignored the whole problem
+
+2
+00:00:02,730 --> 00:00:04,600
+of how do you start a forecast, how
+
+3
+00:00:04,600 --> 00:00:06,760
+do you initialize the parameters you're
+
+4
+00:00:06,760 --> 00:00:11,090
+going to use, the level, the trend, the seasonality.
+
+5
+00:00:11,090 --> 00:00:12,980
+Let's dive into that now.
+
+6
+00:00:12,980 --> 00:00:16,140
+And so the big take-away or the big point for initialization,
+
+7
+00:00:16,140 --> 00:00:17,880
+there's no single best method.
+
+8
+00:00:17,880 --> 00:00:19,170
+There are many good ones.
+
+9
+00:00:19,170 --> 00:00:22,180
+And, as the simpler, the exponential smoothing model,
+
+10
+00:00:22,180 --> 00:00:25,170
+the easier the procedure is, the most complicated one
+
+11
+00:00:25,170 --> 00:00:28,860
+is the Holt-Winters that we'll talk about in a few minutes.
+
+12
+00:00:28,860 --> 00:00:33,030
+One other thing to think about is the data that you use.
+
+13
+00:00:33,030 --> 00:00:35,520
+You need three separate data sets
+
+14
+00:00:35,520 --> 00:00:37,990
+to really set up one of these models.
+
+15
+00:00:37,990 --> 00:00:40,670
+The first one you're going to use to initialize the data,
+
+16
+00:00:40,670 --> 00:00:43,650
+to come up with your initial estimates of level, trend,
+
+17
+00:00:43,650 --> 00:00:47,666
+and seasonality, if you're using all three.
+
+18
+00:00:47,666 --> 00:00:49,540
+Then you're going to need another set of data
+
+19
+00:00:49,540 --> 00:00:50,359
+to train it.
+
+20
+00:00:50,359 --> 00:00:52,400
+This is when you introduce the smoothing factors.
+
+21
+00:00:52,400 --> 00:00:56,610
+You want to determine, should I use an alpha of 0.1, a 0.15,
+
+22
+00:00:56,610 --> 00:00:59,592
+a beta of 0.001, 0.05, whatever.
+
+23
+00:00:59,592 --> 00:01:01,550
+You want to figure that out during the training
+
+24
+00:01:01,550 --> 00:01:02,830
+set of data.
+
+25
+00:01:02,830 --> 00:01:05,200
+And then, after that, you want to test it.
+
+26
+00:01:05,200 --> 00:01:08,890
+You want to see how well it does on a new set of data.
+
+27
+00:01:08,890 --> 00:01:11,650
+So this requires a lot and, in many cases,
+
+28
+00:01:11,650 --> 00:01:14,800
+you won't have all of this data, but you should try.
+
+29
+00:01:14,800 --> 00:01:18,220
+It's a dangerous thing to initialize, train, and test
+
+30
+00:01:18,220 --> 00:01:21,980
+on the exact same data set, because you'll probably overfit
+
+31
+00:01:21,980 --> 00:01:25,790
+the model and you will end up with a very high alpha, a very
+
+32
+00:01:25,790 --> 00:01:28,420
+high beta, because it's trying to match
+
+33
+00:01:28,420 --> 00:01:30,200
+exactly what's happening.
+
+34
+00:01:30,200 --> 00:01:33,440
+So we'll talk more about this in our next set of lectures,
+
+35
+00:01:33,440 --> 00:01:35,920
+but let's go through and say, how do you initialize?
+
+36
+00:01:35,920 --> 00:01:37,510
+Let's start with the simplest model.
+
+37
+00:01:37,510 --> 00:01:40,210
+Simple exponential smoothing model, all I've got
+
+38
+00:01:40,210 --> 00:01:42,946
+is a level parameter, an a.
+
+39
+00:01:42,946 --> 00:01:44,970
+So how do I find this count?
+
+40
+00:01:44,970 --> 00:01:46,640
+Well, I look back and I find a bunch
+
+41
+00:01:46,640 --> 00:01:49,140
+of the most recent periods, 5, 10,
+
+42
+00:01:49,140 --> 00:01:52,470
+whatever I have, and just take the average, average demand,
+
+43
+00:01:52,470 --> 00:01:53,080
+done.
+
+44
+00:01:53,080 --> 00:01:55,650
+So that's the easy one.
+
+45
+00:01:55,650 --> 00:01:56,470
+Holt Model.
+
+46
+00:01:56,470 --> 00:01:59,940
+Now we've got both a level and they've got a trend,
+
+47
+00:01:59,940 --> 00:02:03,180
+so we need to find those initial estimates.
+
+48
+00:02:03,180 --> 00:02:06,450
+So this is actually pretty easy, too.
+
+49
+00:02:06,450 --> 00:02:08,639
+We're going to find this by using ordinary least
+
+50
+00:02:08,639 --> 00:02:10,930
+squares regression, which we're not going to talk about
+
+51
+00:02:10,930 --> 00:02:14,180
+in this video, we're going to talk about next week in detail.
+
+52
+00:02:14,180 --> 00:02:17,850
+But, essentially, it's a way to find the best linear equation
+
+53
+00:02:17,850 --> 00:02:19,780
+to fit a data set.
+
+54
+00:02:19,780 --> 00:02:22,230
+And it's ordinary least squares minimizes
+
+55
+00:02:22,230 --> 00:02:23,605
+the sum of the squares, and we'll
+
+56
+00:02:23,605 --> 00:02:25,060
+talk much more about this.
+
+57
+00:02:25,060 --> 00:02:27,000
+But, essentially, what you've got
+
+58
+00:02:27,000 --> 00:02:30,060
+is a regression equation, where your demand, the actual demand
+
+59
+00:02:30,060 --> 00:02:34,620
+that happened, you're going to fit this equation, beta 0,
+
+60
+00:02:34,620 --> 00:02:38,000
+which is the intercept, plus beta 1, which
+
+61
+00:02:38,000 --> 00:02:40,220
+is the slope, times t.
+
+62
+00:02:40,220 --> 00:02:44,740
+So you're going to end up with estimates of your a and your b.
+
+63
+00:02:44,740 --> 00:02:48,520
+Now we'll talk about this in depth on the next week,
+
+64
+00:02:48,520 --> 00:02:50,700
+but what we're doing is giving equal weight
+
+65
+00:02:50,700 --> 00:02:53,479
+to each observation in that data set.
+
+66
+00:02:53,479 --> 00:02:54,770
+But we'll talk more about this.
+
+67
+00:02:54,770 --> 00:02:55,990
+So this is regression.
+
+68
+00:02:55,990 --> 00:02:58,050
+So for the Holt model, when all you have, all
+
+69
+00:02:58,050 --> 00:03:01,130
+you need to estimate is a level and a trend,
+
+70
+00:03:01,130 --> 00:03:02,590
+ordinary least squares regression
+
+71
+00:03:02,590 --> 00:03:06,320
+is the fastest way to do that.
+
+72
+00:03:06,320 --> 00:03:08,180
+Now this gets a little more complicated.
+
+73
+00:03:08,180 --> 00:03:11,230
+We introduce seasonality models, so there's
+
+74
+00:03:11,230 --> 00:03:12,680
+different ways to do this.
+
+75
+00:03:12,680 --> 00:03:16,305
+The big overarching need, though, is more data.
+
+76
+00:03:16,305 --> 00:03:20,080
+You have to have at least, obviously, two seasons worth,
+
+77
+00:03:20,080 --> 00:03:22,090
+but it's best to have four or more.
+
+78
+00:03:22,090 --> 00:03:23,480
+You want as many as you can have,
+
+79
+00:03:23,480 --> 00:03:26,180
+but then you can see you're getting into a trade-off.
+
+80
+00:03:26,180 --> 00:03:30,240
+As I get more data going further back in my history,
+
+81
+00:03:30,240 --> 00:03:32,640
+it's probably less relevant to today.
+
+82
+00:03:32,640 --> 00:03:34,650
+But you want to be able to get multiple data
+
+83
+00:03:34,650 --> 00:03:37,860
+points for each point in your seasonality.
+
+84
+00:03:37,860 --> 00:03:41,190
+So let's look at the first one, double exponential smoothing.
+
+85
+00:03:41,190 --> 00:03:43,452
+And this one makes-- this one's a little easier
+
+86
+00:03:43,452 --> 00:03:44,910
+than the Holt-Winter one that we're
+
+87
+00:03:44,910 --> 00:03:46,600
+going to talk about in a second--
+
+88
+00:03:46,600 --> 00:03:48,190
+so we're going to have to estimate
+
+89
+00:03:48,190 --> 00:03:52,790
+two parameters, the level and the seasonality indices
+
+90
+00:03:52,790 --> 00:03:54,330
+for each of the seasonalities.
+
+91
+00:03:54,330 --> 00:03:58,710
+So if I have the four periods here of the sandwich
+
+92
+00:03:58,710 --> 00:04:01,640
+shop for bagels, the daily bagel demand,
+
+93
+00:04:01,640 --> 00:04:04,750
+whereas this is a Monday, this is a Monday, this is a Monday.
+
+94
+00:04:04,750 --> 00:04:06,620
+You see, it goes every five days.
+
+95
+00:04:06,620 --> 00:04:08,200
+You see the seasonality.
+
+96
+00:04:08,200 --> 00:04:11,570
+So if I have this history, how would I figure this out?
+
+97
+00:04:11,570 --> 00:04:14,630
+Well, I want to find the average demand for each day,
+
+98
+00:04:14,630 --> 00:04:17,920
+in this case, each common season period.
+
+99
+00:04:17,920 --> 00:04:20,040
+So I find the average demand on Mondays,
+
+100
+00:04:20,040 --> 00:04:23,040
+the average demand on Tuesdays, Wednesdays, et cetera.
+
+101
+00:04:23,040 --> 00:04:26,560
+Then I find the average demand for all the periods.
+
+102
+00:04:26,560 --> 00:04:27,520
+I've got that.
+
+103
+00:04:27,520 --> 00:04:32,230
+And then I simply divide, 60 divided by 121 is 0.5.
+
+104
+00:04:32,230 --> 00:04:34,860
+90 divided by 121 is 0.75.
+
+105
+00:04:34,860 --> 00:04:37,540
+So I'm finding what a Monday's sales
+
+106
+00:04:37,540 --> 00:04:39,750
+are as a fraction of the average.
+
+107
+00:04:39,750 --> 00:04:44,710
+And this will naturally have to sum up to p, in this case, 5,
+
+108
+00:04:44,710 --> 00:04:46,850
+and it will average to 1.
+
+109
+00:04:46,850 --> 00:04:48,050
+So this is pretty easy.
+
+110
+00:04:48,050 --> 00:04:51,270
+We just find the average each day or each period
+
+111
+00:04:51,270 --> 00:04:54,350
+and then divide that by the average over the whole length
+
+112
+00:04:54,350 --> 00:04:57,880
+of that historical initialization data set.
+
+113
+00:04:57,880 --> 00:05:00,390
+But here comes the tough one, Holt-Winter.
+
+114
+00:05:00,390 --> 00:05:02,730
+So there are many methods out there.
+
+115
+00:05:02,730 --> 00:05:04,740
+We're going to talk one that's called
+
+116
+00:05:04,740 --> 00:05:08,330
+the P-centered moving average method.
+
+117
+00:05:08,330 --> 00:05:10,250
+And what we're going to do is I'll
+
+118
+00:05:10,250 --> 00:05:13,090
+talk it through the exact same example.
+
+119
+00:05:13,090 --> 00:05:15,700
+We're going to first find the seasonality indices,
+
+120
+00:05:15,700 --> 00:05:17,960
+because now what we've got for Holt-Winter, remember,
+
+121
+00:05:17,960 --> 00:05:22,230
+I've got a level, a trend, and seasonality.
+
+122
+00:05:22,230 --> 00:05:24,090
+So first thing I do.
+
+123
+00:05:24,090 --> 00:05:25,930
+I have the data over here, and you
+
+124
+00:05:25,930 --> 00:05:27,670
+see I've got four weeks of data.
+
+125
+00:05:27,670 --> 00:05:31,330
+Every time period is listed on each row, the day of the week,
+
+126
+00:05:31,330 --> 00:05:33,580
+actual demand is listed here.
+
+127
+00:05:33,580 --> 00:05:37,460
+And then what I'm doing is I'm finding a moving average of 5.
+
+128
+00:05:37,460 --> 00:05:38,300
+Why 5?
+
+129
+00:05:38,300 --> 00:05:39,610
+Because that's p.
+
+130
+00:05:39,610 --> 00:05:42,110
+And so I find this moving average
+
+131
+00:05:42,110 --> 00:05:47,190
+and I have this 128.3 is the moving average of these five
+
+132
+00:05:47,190 --> 00:05:48,850
+time periods.
+
+133
+00:05:48,850 --> 00:05:51,780
+So I centered it, that's where the center comes from.
+
+134
+00:05:51,780 --> 00:05:54,860
+So then the next one I do-- let me just
+
+135
+00:05:54,860 --> 00:05:59,020
+erase that-- 129.4 is equal to the moving
+
+136
+00:05:59,020 --> 00:06:02,890
+average of these five and so forth.
+
+137
+00:06:02,890 --> 00:06:04,810
+So, essentially, I'm doing a moving average
+
+138
+00:06:04,810 --> 00:06:07,460
+and then shifting it up to be the first one
+
+139
+00:06:07,460 --> 00:06:09,620
+to be centered in that period.
+
+140
+00:06:09,620 --> 00:06:13,840
+Now if I have an even number of periods in the seasonality,
+
+141
+00:06:13,840 --> 00:06:16,050
+it gets a little more complicated.
+
+142
+00:06:16,050 --> 00:06:18,400
+You want to do one on one end and then the other end
+
+143
+00:06:18,400 --> 00:06:22,020
+and average it, but this is a little easier.
+
+144
+00:06:22,020 --> 00:06:23,850
+So I get that moving average.
+
+145
+00:06:23,850 --> 00:06:28,340
+So, essentially, what I'm saying is that, on Wednesday-- let's
+
+146
+00:06:28,340 --> 00:06:33,070
+look at one-- time period 82, actual demand was 163,
+
+147
+00:06:33,070 --> 00:06:38,160
+the moving average around that, say it was 128.3.
+
+148
+00:06:38,160 --> 00:06:41,180
+So if I want to find my seasonality, all I want to do
+
+149
+00:06:41,180 --> 00:06:45,050
+is divide my actual demand by that estimate.
+
+150
+00:06:45,050 --> 00:06:47,920
+When this is the estimate of the level.
+
+151
+00:06:47,920 --> 00:06:50,115
+And so what I'm doing, I'm de-levelling it.
+
+152
+00:06:50,115 --> 00:06:51,740
+And so I'm saying, well, you know what?
+
+153
+00:06:51,740 --> 00:06:54,900
+That says Wednesday has about 27% more
+
+154
+00:06:54,900 --> 00:06:58,900
+than the average day, or 1.273.
+
+155
+00:06:58,900 --> 00:07:00,620
+Same thing with, let's pick another day.
+
+156
+00:07:00,620 --> 00:07:05,250
+Let's pick, well, the next day, Thursday, time period 83.
+
+157
+00:07:05,250 --> 00:07:07,110
+129 was the actual.
+
+158
+00:07:07,110 --> 00:07:08,810
+If I did a five-day moving average
+
+159
+00:07:08,810 --> 00:07:13,920
+around that, where this is the centered five-day,
+
+160
+00:07:13,920 --> 00:07:17,240
+so it goes two days before, two days after, and that day, it's
+
+161
+00:07:17,240 --> 00:07:18,010
+almost even.
+
+162
+00:07:18,010 --> 00:07:20,280
+So that's kind of like an average day.
+
+163
+00:07:20,280 --> 00:07:22,800
+So I do that for each of those five periods
+
+164
+00:07:22,800 --> 00:07:26,050
+and I end up with this center point moving
+
+165
+00:07:26,050 --> 00:07:29,040
+average column, that's what's in this column.
+
+166
+00:07:29,040 --> 00:07:32,090
+And then what am I going to do?
+
+167
+00:07:32,090 --> 00:07:35,020
+Well, what I want to do, this center point average is
+
+168
+00:07:35,020 --> 00:07:38,690
+this line, by the way, on the chart, I'll just highlight it.
+
+169
+00:07:38,690 --> 00:07:40,240
+So that's what I'm doing, because I'm
+
+170
+00:07:40,240 --> 00:07:42,720
+trying to de-seasonalize things.
+
+171
+00:07:42,720 --> 00:07:48,660
+So I ended up with this estimate of the F1's, where I just
+
+172
+00:07:48,660 --> 00:07:52,830
+divide the actual divided by that center point average.
+
+173
+00:07:52,830 --> 00:07:55,100
+And what do I get for that?
+
+174
+00:07:55,100 --> 00:07:56,210
+Well, each one of these.
+
+175
+00:07:56,210 --> 00:07:58,804
+So now I go through, and I found it for each period,
+
+176
+00:07:58,804 --> 00:08:00,220
+now I'm just going to sum them up.
+
+177
+00:08:00,220 --> 00:08:06,410
+Let me sum up all the Mondays, 0.492, 0.518, 0.495.
+
+178
+00:08:06,410 --> 00:08:09,900
+I take the average of that and I'll get 0.501.
+
+179
+00:08:09,900 --> 00:08:12,470
+I do the same thing for Tuesdays,
+
+180
+00:08:12,470 --> 00:08:17,550
+what's a Tuesday, 0.735, 0.736, 0.752, et cetera.
+
+181
+00:08:17,550 --> 00:08:20,040
+And so I do that for each of the separate days.
+
+182
+00:08:20,040 --> 00:08:23,110
+So once I get them, chances are, it
+
+183
+00:08:23,110 --> 00:08:27,410
+would be an exceptionally rare thing for them to sum up to p.
+
+184
+00:08:27,410 --> 00:08:31,160
+They don't in this case, they sum up to 4.952.
+
+185
+00:08:31,160 --> 00:08:32,179
+I'm a little low.
+
+186
+00:08:32,179 --> 00:08:33,309
+So what am I going to do?
+
+187
+00:08:33,309 --> 00:08:34,289
+I'm going to normalize them, just
+
+188
+00:08:34,289 --> 00:08:36,059
+like I did in the previous video.
+
+189
+00:08:36,059 --> 00:08:38,429
+And I'm going to increase them all a little bit
+
+190
+00:08:38,429 --> 00:08:44,000
+to cover that, what is it, 0.048 gap, to get it to 5.
+
+191
+00:08:44,000 --> 00:08:45,480
+So each one of these is normalized.
+
+192
+00:08:45,480 --> 00:08:48,660
+You'll see they each go up by about, what is it,
+
+193
+00:08:48,660 --> 00:08:51,640
+about 5 units each?
+
+194
+00:08:51,640 --> 00:08:52,580
+So it depends.
+
+195
+00:08:52,580 --> 00:08:58,710
+And then it sums up at the end of the day to 5.
+
+196
+00:08:58,710 --> 00:09:00,240
+All right.
+
+197
+00:09:00,240 --> 00:09:04,580
+So that's the first step, first two steps.
+
+198
+00:09:04,580 --> 00:09:07,670
+The next thing we want to do is estimate the initial level
+
+199
+00:09:07,670 --> 00:09:10,170
+and trend values, and so from here,
+
+200
+00:09:10,170 --> 00:09:13,150
+what I want to do, what I've done already--
+
+201
+00:09:13,150 --> 00:09:16,096
+and this chart still shows the week, the time period,
+
+202
+00:09:16,096 --> 00:09:17,720
+the day of the week, the actual demand.
+
+203
+00:09:17,720 --> 00:09:20,580
+
+
+204
+00:09:20,580 --> 00:09:23,160
+And then this is the normalized indices
+
+205
+00:09:23,160 --> 00:09:24,770
+that we just calculated.
+
+206
+00:09:24,770 --> 00:09:28,050
+We just calculate that, you see they repeat each week.
+
+207
+00:09:28,050 --> 00:09:30,520
+And then, what I want to find is a de-seasonalized demand.
+
+208
+00:09:30,520 --> 00:09:33,200
+And all I'm doing is taking the actual demand in each period
+
+209
+00:09:33,200 --> 00:09:36,240
+and dividing it by my seasonality index
+
+210
+00:09:36,240 --> 00:09:37,850
+that I just calculated.
+
+211
+00:09:37,850 --> 00:09:41,230
+And so what I'm finding is this line, which
+
+212
+00:09:41,230 --> 00:09:44,420
+is de-seasonalized line, I took seasonality out of it
+
+213
+00:09:44,420 --> 00:09:47,870
+to try to find the level and the trend.
+
+214
+00:09:47,870 --> 00:09:51,050
+So what I'm going to do to find that now?
+
+215
+00:09:51,050 --> 00:09:55,680
+Well, I've got these data sets, this data,
+
+216
+00:09:55,680 --> 00:09:58,910
+and I'm trying to find an a-- well, actually,
+
+217
+00:09:58,910 --> 00:10:01,130
+I'm going to be doing it from time period 100
+
+218
+00:10:01,130 --> 00:10:04,720
+forward-- so I want to find an a hat zero, which
+
+219
+00:10:04,720 --> 00:10:07,020
+is my intercept, essentially, at 100.
+
+220
+00:10:07,020 --> 00:10:13,500
+And I want to find what the slope is of b hat zero.
+
+221
+00:10:13,500 --> 00:10:14,710
+So how do I do that?
+
+222
+00:10:14,710 --> 00:10:16,668
+Well, we're going to use ordinary least squares
+
+223
+00:10:16,668 --> 00:10:19,850
+regression, just like we did in the previous Holt model, where
+
+224
+00:10:19,850 --> 00:10:22,050
+it's just level and trend.
+
+225
+00:10:22,050 --> 00:10:25,120
+And so we'll talk about the details how do that next week,
+
+226
+00:10:25,120 --> 00:10:27,610
+but you end up with this equation,
+
+227
+00:10:27,610 --> 00:10:31,730
+that the intercept at time zero is negative 216.9,
+
+228
+00:10:31,730 --> 00:10:37,070
+and the slope is 4.192 bagels per day.
+
+229
+00:10:37,070 --> 00:10:41,710
+So I'm starting at time period t, t equals 100.
+
+230
+00:10:41,710 --> 00:10:43,360
+So I'm going forward from there.
+
+231
+00:10:43,360 --> 00:10:45,510
+So my initial estimate for the level
+
+232
+00:10:45,510 --> 00:10:48,190
+is going to be-- that's this equation,
+
+233
+00:10:48,190 --> 00:10:50,520
+this equation we just calculated--
+
+234
+00:10:50,520 --> 00:10:56,270
+and I'm going to multiply the slope times 100, minus 216.9
+
+235
+00:10:56,270 --> 00:10:59,087
+gives me 202.
+
+236
+00:10:59,087 --> 00:11:01,420
+Then for the slope, I just, I already know what that is.
+
+237
+00:11:01,420 --> 00:11:05,620
+That comes out of the equation, 4.192, call it 4.2.
+
+238
+00:11:05,620 --> 00:11:07,670
+So I've got my a hat.
+
+239
+00:11:07,670 --> 00:11:11,590
+This is my b hat, b hat zero.
+
+240
+00:11:11,590 --> 00:11:14,330
+And down here are all my estimates for the indices,
+
+241
+00:11:14,330 --> 00:11:16,990
+the seasonality indices that we've already done.
+
+242
+00:11:16,990 --> 00:11:19,720
+So, it took a long while to get to it,
+
+243
+00:11:19,720 --> 00:11:21,880
+but hopefully you saw the mechanics of it,
+
+244
+00:11:21,880 --> 00:11:23,870
+and all we're doing is getting a first best
+
+245
+00:11:23,870 --> 00:11:26,880
+estimate for what these parameters are.
+

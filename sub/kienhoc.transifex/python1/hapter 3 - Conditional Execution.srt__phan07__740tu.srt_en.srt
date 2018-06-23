@@ -1,0 +1,441 @@
+571
+00:25:25,260 --> 00:25:29,210
+https://youtu.be/VXyRfgnzL2o
+Well, the one that will
+never execute is this one.
+
+572
+00:25:29,210 --> 00:25:35,400
+
+573
+00:25:35,400 --> 00:25:41,200
+x = 15 is a bad one. x = 5 is
+the one that will sort of cause
+
+574
+00:25:41,200 --> 00:25:44,190
+it to behave badly.
+
+575
+00:25:44,190 --> 00:25:48,800
+And so if x is
+five, this is false.
+
+576
+00:25:48,800 --> 00:25:52,060
+If x is less than
+20, this is true.
+
+577
+00:25:52,060 --> 00:25:53,580
+And then it's done.
+
+578
+00:25:53,580 --> 00:25:58,130
+So the problem is this is the
+one that will never execute,
+
+579
+00:25:58,130 --> 00:26:02,750
+because if a value is less than
+10, it's also less than 20.
+
+580
+00:26:02,750 --> 00:26:04,270
+So this will be true.
+
+581
+00:26:04,270 --> 00:26:07,260
+So for a value like 5, which
+happens to be less than 10,
+
+582
+00:26:07,260 --> 00:26:10,130
+which you would think would
+cause that line to execute,
+
+583
+00:26:10,130 --> 00:26:11,540
+does not.
+
+584
+00:26:11,540 --> 00:26:14,150
+This one executes because
+it's checked first.
+
+585
+00:26:14,150 --> 00:26:17,290
+Now, if we just moved
+this code, took this code,
+
+586
+00:26:17,290 --> 00:26:21,695
+and we moved it down here,
+then it would make more sense.
+
+587
+00:26:21,695 --> 00:26:23,940
+If we moved it down there,
+it would make more sense.
+
+588
+00:26:23,940 --> 00:26:26,640
+But basically, the
+answer to these
+
+589
+00:26:26,640 --> 00:26:32,140
+is this one won't execute.
+
+590
+00:26:32,140 --> 00:26:35,130
+And this one will never
+execute for any value.
+
+591
+00:26:35,130 --> 00:26:37,400
+So there's the answer.
+
+592
+00:26:37,400 --> 00:26:39,890
+OK, so we're almost
+done with conditionals.
+
+593
+00:26:39,890 --> 00:26:43,730
+I want to show you one
+more kind of conditional.
+
+594
+00:26:43,730 --> 00:26:46,100
+It's a little bit different.
+
+595
+00:26:46,100 --> 00:26:50,580
+It's not a bit of code
+structure that you make.
+
+596
+00:26:50,580 --> 00:26:56,890
+It is dealing with the fact
+that some things may blow up.
+
+597
+00:26:56,890 --> 00:27:00,597
+Like, if you read a
+number from a user,
+
+598
+00:27:00,597 --> 00:27:02,680
+and you try to convert to
+a floating point number,
+
+599
+00:27:02,680 --> 00:27:06,070
+as you may have already done
+in some of your homework,
+
+600
+00:27:06,070 --> 00:27:06,960
+it can blow up.
+
+601
+00:27:06,960 --> 00:27:09,800
+You know it's going to blow
+up, but you don't exactly
+
+602
+00:27:09,800 --> 00:27:12,000
+want to kill your program.
+
+603
+00:27:12,000 --> 00:27:16,180
+So the concept of try
+and except are, hey,
+
+604
+00:27:16,180 --> 00:27:17,430
+this is a dangerous thing.
+
+605
+00:27:17,430 --> 00:27:18,480
+I know it might blow up.
+
+606
+00:27:18,480 --> 00:27:19,990
+I know exactly why
+it might blow up.
+
+607
+00:27:19,990 --> 00:27:21,100
+But I don't want to die.
+
+608
+00:27:21,100 --> 00:27:23,141
+I don't want to stop my
+program when it blows up.
+
+609
+00:27:23,141 --> 00:27:24,210
+I want to continue.
+
+610
+00:27:24,210 --> 00:27:26,660
+And that's the purpose
+of the except block.
+
+611
+00:27:26,660 --> 00:27:29,110
+So here's a little bit of code.
+
+612
+00:27:29,110 --> 00:27:31,270
+And you'll notice we've
+done this code before.
+
+613
+00:27:31,270 --> 00:27:34,720
+This is code that's kind of
+similar to your rate and pay
+
+614
+00:27:34,720 --> 00:27:38,200
+homework, where you read
+a string using raw input.
+
+615
+00:27:38,200 --> 00:27:40,860
+You converted it
+using float, but then
+
+616
+00:27:40,860 --> 00:27:43,900
+if you typed in "Fred,"
+the thing blows up.
+
+617
+00:27:43,900 --> 00:27:46,130
+So we're kind of
+simulating that right here.
+
+618
+00:27:46,130 --> 00:27:49,490
+So here we have a variable
+a string called Hello Bob.
+
+619
+00:27:49,490 --> 00:27:51,385
+And then we try to turn
+it into an integer.
+
+620
+00:27:51,385 --> 00:27:53,010
+And then we're going
+to print that out.
+
+621
+00:27:53,010 --> 00:27:56,910
+And then we have another string
+that has the letters 1 2 3.
+
+622
+00:27:56,910 --> 00:27:58,650
+We convert that to an integer.
+
+623
+00:27:58,650 --> 00:28:00,570
+And then we print that one out.
+
+624
+00:28:00,570 --> 00:28:07,010
+The problem is that when this
+runs, this is going to fail.
+
+625
+00:28:07,010 --> 00:28:10,410
+It's going to fail
+with this traceback.
+
+626
+00:28:10,410 --> 00:28:14,830
+And the problem is when
+the traceback happens,
+
+627
+00:28:14,830 --> 00:28:17,220
+the program stops executing.
+
+628
+00:28:17,220 --> 00:28:22,140
+The traceback is Python's
+way of asking you, hey,
+
+629
+00:28:22,140 --> 00:28:22,990
+this would be bad.
+
+630
+00:28:22,990 --> 00:28:24,130
+I don't know what to do.
+
+631
+00:28:24,130 --> 00:28:25,310
+I'm stopping.
+
+632
+00:28:25,310 --> 00:28:30,880
+So that means that the rest
+of your program is gone.
+
+633
+00:28:30,880 --> 00:28:33,670
+The fact that we had stuff
+down here doesn't matter.
+
+634
+00:28:33,670 --> 00:28:36,690
+This line died
+with the traceback.
+
+635
+00:28:36,690 --> 00:28:37,780
+It stopped.
+
+636
+00:28:37,780 --> 00:28:40,537
+It doesn't give you a
+traceback and then keep going.
+
+637
+00:28:40,537 --> 00:28:41,620
+It gives you a trace back.
+
+638
+00:28:41,620 --> 00:28:43,659
+And that's the end.
+
+639
+00:28:43,659 --> 00:28:45,950
+Now, this might be something
+instead of just the string
+
+640
+00:28:45,950 --> 00:28:48,020
+"Hello Bob," which is insane.
+
+641
+00:28:48,020 --> 00:28:50,210
+Data might have come
+from a raw input, where
+
+642
+00:28:50,210 --> 00:28:52,670
+the user was typing, and
+you're saying give me a number.
+
+643
+00:28:52,670 --> 00:28:54,792
+And they type something
+that's not a number.
+
+644
+00:28:54,792 --> 00:28:55,750
+And this would blow up.
+
+645
+00:28:55,750 --> 00:28:58,270
+It's like, hey, I know
+it's going to blow up.
+
+646
+00:28:58,270 --> 00:29:00,670
+The problem with this
+is that you don't
+
+647
+00:29:00,670 --> 00:29:03,820
+know-- oops, clear the thing.
+
+648
+00:29:03,820 --> 00:29:06,550
+Now we have to start
+it on fire again.
+
+649
+00:29:06,550 --> 00:29:10,540
+OK, it's on fire-- the
+problem is that in a sense,
+
+650
+00:29:10,540 --> 00:29:12,550
+this program is you.
+
+651
+00:29:12,550 --> 00:29:16,990
+If you recall, we have you
+as typing these commands
+
+652
+00:29:16,990 --> 00:29:20,060
+into these scripts, feeding
+the central processing unit,
+
+653
+00:29:20,060 --> 00:29:22,370
+answering the
+question what next?
+
+654
+00:29:22,370 --> 00:29:24,620
+So you should take it
+a little personally
+
+655
+00:29:24,620 --> 00:29:28,980
+when your program gets a
+traceback, because that means
+
+656
+00:29:28,980 --> 00:29:32,620
+you, in the form of your
+program, have been vaporized,
+
+657
+00:29:32,620 --> 00:29:35,850
+and you're not present to
+give any more instructions.
+
+658
+00:29:35,850 --> 00:29:36,600
+It stops.
+
+659
+00:29:36,600 --> 00:29:38,380
+It stops dead in its tracks.
+
+660
+00:29:38,380 --> 00:29:40,380
+You are gone.
+
+661
+00:29:40,380 --> 00:29:44,270
+So we want to make sure
+we control this behavior.
+
+662
+00:29:44,270 --> 00:29:46,780
+We know it might blow up.
+
+663
+00:29:46,780 --> 00:29:49,930
+And we want to capture the
+situation where it does
+
+664
+00:29:49,930 --> 00:29:52,570
+and execute alternate code.
+
+665
+00:29:52,570 --> 00:29:55,100
+OK, so here it goes.
+

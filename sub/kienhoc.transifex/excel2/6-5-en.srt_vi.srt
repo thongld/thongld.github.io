@@ -1,0 +1,219 @@
+1
+00:00:01,900 --> 00:00:04,480
+Xin chào các bạn! Chào mừng quay trở lại.
+
+2
+00:00:04,480 --> 00:00:09,740
+Hôm nay chúng ta sẽ học một loại biểu đồ mới
+đó là biểu đồ kết hợp.
+
+3
+00:00:09,740 --> 00:00:13,490
+Đây là xu hướng bán hàng được thể hiện
+bằng biểu đồ đường và một dạng biểu đồ
+
+4
+00:00:13,490 --> 00:00:18,039
+gọi là biểu đồ miền. Hãy vào Excel
+để xem ta tạo ra biểu đồ này ra sao nhé.
+
+5
+00:00:18,039 --> 00:00:28,789
+Ta vào tab chứa dữ liệu cần dùng.
+
+6
+00:00:28,789 --> 00:00:33,620
+Ta cần dữ liệu xu hướng bán hàng. Đây rồi.
+
+7
+00:00:33,620 --> 00:00:40,820
+Ta sẽ làm giống như lần trước.
+Ta sẽ chọn dữ liệu ta cần.
+
+8
+00:00:40,820 --> 00:00:44,850
+Lúc này tôi không cần đến phím Ctrl nữa.
+
+9
+00:00:44,850 --> 00:00:52,730
+Tôi chỉ cần chọn mọi dữ liệu tôi cần,
+vậy tôi đã có dữ liệu cho trục hoành, dữ liệu thực tế
+
+10
+00:00:52,730 --> 00:01:00,670
+và dữ liệu ngân sách. Ta nhấp chuột vào Insert,
+sau đó ta sẽ chèn
+
+11
+00:01:00,670 --> 00:01:05,030
+một biểu đồ đường. Ở đây.
+
+12
+00:01:05,030 --> 00:01:08,470
+Biểu đồ đường 2D. Vậy ta có dữ liệu ở đây.
+
+13
+00:01:08,470 --> 00:01:14,190
+Trước tiên ta sẽ chỉnh trang lại một chút.
+Xoá tiêu đề đi.
+
+14
+00:01:14,190 --> 00:01:20,650
+Tôi không cần dòng chú thích. Trong video trước
+chúng ta đã bàn về cách sử dụng
+
+15
+00:01:20,650 --> 00:01:23,460
+dòng chú thích. Nhưng không phải biểu đồ nào
+ta cũng cần đến nó.
+
+16
+00:01:23,460 --> 00:01:29,340
+Vậy ta sẽ xoá nó đi. Lần này tôi sẽ để
+lưới đường kẻ ngang ở đây.
+
+17
+00:01:29,340 --> 00:01:34,070
+Nhưng đường kẻ chỉ số liệu ngân sách này,
+
+18
+00:01:34,070 --> 00:01:40,550
+ta có thể thấy ở đây, tôi muốn nó
+là biểu đồ miền.
+
+19
+00:01:40,550 --> 00:01:50,229
+Vậy tôi chọn đường kẻ, nhấp chuột phải,
+và chọn "change the series chart type".
+
+20
+00:01:50,229 --> 00:01:55,310
+Ta sẽ đổi sang loại biểu đồ miền.
+
+21
+00:01:55,310 --> 00:02:05,770
+Được rồi. Nhưng cả đường kẻ ở trên cũng bị đổi.
+
+22
+00:02:05,770 --> 00:02:19,930
+Phần này vẫn phải là biểu đồ đường.
+Được rồi.
+
+23
+00:02:19,930 --> 00:02:23,719
+Phải thay cả hai cùng một lúc.
+
+24
+00:02:23,719 --> 00:02:28,180
+Đây là kết quả ta muốn. 
+Tôi không thích màu này lắm, nên tôi sẽ
+
+25
+00:02:28,180 --> 00:02:32,219
+đổi màu đi một chút. Thông thường
+nó sẽ là màu xanh nước biển nhạt, 
+
+26
+00:02:32,219 --> 00:02:37,739
+nhưng để nhìn dễ hơn trên video tôi 
+sẽ chọn một màu mà tôi không thích
+
+27
+00:02:37,739 --> 00:02:50,379
+nhưng sẽ nhìn rõ hơn. Tôi chọn màu này.
+
+28
+00:02:50,379 --> 00:03:02,999
+Tôi cũng muốn định dạng lại chữ số.
+Tuy nhiên tôi nghĩ để thế này là được.
+
+29
+00:03:02,999 --> 00:03:06,809
+Hãy kiếm tra chế độ Master. 
+Được rồi đấy.
+
+30
+00:03:06,809 --> 00:03:11,849
+Ta muốn các số này ở dạng nghìn. 
+Và ở đây đã có rồi.
+
+31
+00:03:11,849 --> 00:03:24,150
+Ta sẽ chỉnh định dạng chiều dọc là 2.15,
+chiều ngang là 2.27.
+
+32
+00:03:24,150 --> 00:03:30,449
+Được rồi. Tôi sẽ thay cả font chữ ở đây.
+
+33
+00:03:30,449 --> 00:03:36,019
+Nếu không các số sẽ bị nghiêng, tôi không thích thế.
+
+34
+00:03:36,019 --> 00:03:45,400
+Tôi cũng sẽ đổi font các chữ số ở trục tung.
+Ta nên giảm bớt nhãn dữ liệu 
+
+35
+00:03:45,400 --> 00:03:49,900
+ở đây. Tôi sẽ định dạng lại trục hoành.
+
+36
+00:03:49,900 --> 00:03:54,589
+Ta sẽ làm các nhãn dữ liệu thống nhất với nhau.
+
+37
+00:03:54,589 --> 00:04:06,980
+Ta muốn nó xuất hiện cách 3 giá trị một lần.
+Sau đó ta sẽ xoá màu nền
+
+38
+00:04:06,980 --> 00:04:13,870
+và các đường viền. Sau đó ta sẽ cut, 
+
+39
+00:04:13,870 --> 00:04:22,310
+sang Dashboard và đưa 
+biểu đồ xu hướng bán hàng vào đây.
+
+40
+00:04:22,310 --> 00:04:32,330
+Được rồi. Tôi gọi mục này là "Xu hướng bán hàng".
+
+41
+00:04:32,330 --> 00:04:39,020
+Tôi sẽ điền tên biểu đồ ở đây là "Xu hướng bán hàng".
+
+42
+00:04:39,020 --> 00:04:42,620
+Trong trường hợp này ta phải nhập đơn vị
+
+43
+00:04:42,620 --> 00:04:50,080
+là 1000 x $.
+
+44
+00:04:50,080 --> 00:04:59,300
+Được rồi. Ta quay lại trang tổng quan.
+
+45
+00:04:59,300 --> 00:05:03,800
+Giờ đã có 3 biểu đồ được điền vào đây.
+Ta sẽ xem trong video tiếp theo
+
+46
+00:05:03,800 --> 00:05:07,550
+sẽ nói về gì nhé. 
+Đó là một kiểu đồ thị mới
+
+47
+00:05:07,550 --> 00:05:11,689
+gọi là đồ thị nhiệt kế (thermometer graph).
+Đồ thị này hơi khác so với
+
+48
+00:05:11,689 --> 00:05:15,130
+các biểu đồ ta được xem từ đầu đến giờ.
+Hẹn gặp lại các bạn trong video tiếp theo.
+

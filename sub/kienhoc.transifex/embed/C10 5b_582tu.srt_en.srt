@@ -1,0 +1,313 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/GZnFAPGM9mw
+
+1
+00:00:00,000 --> 00:00:00,870
+
+2
+00:00:00,870 --> 00:00:04,580
+DR. JONATHAN VALVANO: So let's
+look at our software for our robot.
+
+3
+00:00:04,580 --> 00:00:11,320
+The hardware is such that
+PB7-PB4 is to the right stepper.
+
+4
+00:00:11,320 --> 00:00:14,420
+PB3 to PB0 is to the left.
+
+5
+00:00:14,420 --> 00:00:17,300
+PE1 has the left bumper.
+
+6
+00:00:17,300 --> 00:00:22,490
+PE0 has the right bumper,
+both positive logic.
+
+7
+00:00:22,490 --> 00:00:26,550
+There's initialization, which is similar
+to all the other initializations we've
+
+8
+00:00:26,550 --> 00:00:30,790
+been doing so far, where port B
+is an output, port E is an input.
+
+9
+00:00:30,790 --> 00:00:35,870
+
+10
+00:00:35,870 --> 00:00:40,430
+We will use a struct to define
+the components of a state.
+
+11
+00:00:40,430 --> 00:00:43,720
+Each state will have an
+output, will have a time
+
+12
+00:00:43,720 --> 00:00:48,710
+to wait in 10 millisecond
+units, and four next states.
+
+13
+00:00:48,710 --> 00:00:54,590
+Again, the four possible next states
+are zero zero means, we're OK.
+
+14
+00:00:54,590 --> 00:00:55,930
+Full speed ahead.
+
+15
+00:00:55,930 --> 00:00:59,230
+Zero one means the right
+bumper just hit something,
+
+16
+00:00:59,230 --> 00:01:01,650
+zero two means the left
+bumper hit something,
+
+17
+00:01:01,650 --> 00:01:04,365
+and zero three means
+a head-on collision,
+
+18
+00:01:04,365 --> 00:01:06,340
+both bumpers at the same time.
+
+19
+00:01:06,340 --> 00:01:10,740
+DR. RAMESH YERRABALLI: So the indexes
+in this area respond to the inputs
+
+20
+00:01:10,740 --> 00:01:12,440
+that you have to respond to.
+
+21
+00:01:12,440 --> 00:01:13,815
+DR. JONATHAN VALVANO: Absolutely.
+
+22
+00:01:13,815 --> 00:01:16,540
+
+23
+00:01:16,540 --> 00:01:21,370
+An important thing about finite state
+machines, the reason it is so powerful
+
+24
+00:01:21,370 --> 00:01:27,360
+is because there is a one-to-one mapping
+between the structure that we drew,
+
+25
+00:01:27,360 --> 00:01:29,780
+the state transition
+graph, and this data
+
+26
+00:01:29,780 --> 00:01:32,910
+structure that we will
+store in the computer.
+
+27
+00:01:32,910 --> 00:01:37,790
+Every state had exactly one output,
+every state had a time to wait,
+
+28
+00:01:37,790 --> 00:01:42,560
+and every state had four next
+states, shown here as indexes,
+
+29
+00:01:42,560 --> 00:01:46,680
+depending upon whether the input
+is zero, one, two, or three.
+
+30
+00:01:46,680 --> 00:01:49,350
+So there is a one-to-one mapping.
+
+31
+00:01:49,350 --> 00:01:54,850
+That means no more, no less information
+in this than the state transition
+
+32
+00:01:54,850 --> 00:01:55,830
+graph.
+
+33
+00:01:55,830 --> 00:02:01,610
+This data here completely
+specifies what the machine will do.
+
+34
+00:02:01,610 --> 00:02:05,460
+We will store the current
+state in this variable called
+
+35
+00:02:05,460 --> 00:02:09,410
+cState, so will have a
+number between zero and nine
+
+36
+00:02:09,410 --> 00:02:14,350
+specifying the state number
+that we are currently in.
+
+37
+00:02:14,350 --> 00:02:19,200
+The initialization is to turn on the
+clock and the SysTick and the ports
+
+38
+00:02:19,200 --> 00:02:23,650
+and initialize the state to be
+the first state, or state zero.
+
+39
+00:02:23,650 --> 00:02:26,970
+And then we'll repeat the
+engine over and over again.
+
+40
+00:02:26,970 --> 00:02:31,250
+The first step is exactly like we saw
+with Dr. Yerraballi's, and that is,
+
+41
+00:02:31,250 --> 00:02:34,600
+we're going to output
+depending on the current state.
+
+42
+00:02:34,600 --> 00:02:37,190
+So cState is our current
+state, and so we're
+
+43
+00:02:37,190 --> 00:02:42,220
+going to fetch the output field from
+that state and output it to port B.
+
+44
+00:02:42,220 --> 00:02:46,910
+That will be one of the numbers we
+saw in the finite state machine.
+
+45
+00:02:46,910 --> 00:02:50,600
+The next, to make it run
+at the speed we want,
+
+46
+00:02:50,600 --> 00:02:54,300
+is we were going to delay
+for a certain amount of time.
+
+47
+00:02:54,300 --> 00:02:58,479
+So a delay of two will mean
+it will wait 20 milliseconds.
+
+48
+00:02:58,479 --> 00:03:00,270
+DR. RAMESH YERRABALLI:
+So this will control
+
+49
+00:03:00,270 --> 00:03:04,337
+the speed at which the
+motors will rotate?
+
+50
+00:03:04,337 --> 00:03:05,420
+DR. JONATHAN VALVANO: Yes.
+
+51
+00:03:05,420 --> 00:03:08,870
+So if we're waiting
+20 milliseconds, that
+
+52
+00:03:08,870 --> 00:03:11,900
+will be 1.8 degrees for 20 milliseconds.
+
+53
+00:03:11,900 --> 00:03:14,850
+
+54
+00:03:14,850 --> 00:03:16,670
+Next, we'll fetch the input.
+
+55
+00:03:16,670 --> 00:03:20,730
+And so we're going to fetch the
+input from PORT E bit 0 and 1.
+
+56
+00:03:20,730 --> 00:03:25,130
+And so this variable here is going
+to have the values zero, one, two,
+
+57
+00:03:25,130 --> 00:03:30,000
+or three, depending upon
+whether we hit something or not.
+
+58
+00:03:30,000 --> 00:03:32,570
+And lastly, we're going
+to change state, depending
+
+59
+00:03:32,570 --> 00:03:35,780
+on both the input and the current state.
+
+60
+00:03:35,780 --> 00:03:39,780
+The current state will specify
+which one we're currently in,
+
+61
+00:03:39,780 --> 00:03:44,650
+and then the input variable
+here, zero, one, two, or three,
+
+62
+00:03:44,650 --> 00:03:47,790
+will specify what the
+next state will be,
+
+63
+00:03:47,790 --> 00:03:51,510
+depending on the input
+and the current state.
+
+64
+00:03:51,510 --> 00:03:54,087
+
+65
+00:03:54,087 --> 00:03:56,420
+DR. RAMESH YERRABALLI: OK,
+let's look at the functioning
+
+66
+00:03:56,420 --> 00:04:00,190
+of this robot in a real setting.
+
+67
+00:04:00,190 --> 00:04:01,347

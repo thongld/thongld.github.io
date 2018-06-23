@@ -1,0 +1,892 @@
+0
+00:00:00,000 --> 00:00:00,520
+https://youtu.be/KZ1va6I7S6E
+
+1
+00:00:00,520 --> 00:00:01,020
+All right.
+
+2
+00:00:01,020 --> 00:00:02,070
+So let's get started.
+
+3
+00:00:02,070 --> 00:00:04,720
+And we're going to start with non-instantaneous lead time.
+
+4
+00:00:04,720 --> 00:00:07,220
+I'm going to say, as I said before, I'm
+
+5
+00:00:07,220 --> 00:00:10,550
+going to change only that the lead time is a constant.
+
+6
+00:00:10,550 --> 00:00:15,670
+So when I place an order, it doesn't show up right away.
+
+7
+00:00:15,670 --> 00:00:17,820
+It takes a little bit of time.
+
+8
+00:00:17,820 --> 00:00:20,840
+So let's look at the inventory charts.
+
+9
+00:00:20,840 --> 00:00:23,770
+Demand is still deterministic and uniform.
+
+10
+00:00:23,770 --> 00:00:25,920
+I'm going to place these orders, and now,
+
+11
+00:00:25,920 --> 00:00:28,600
+instead of receiving it instantaneously,
+
+12
+00:00:28,600 --> 00:00:32,490
+when I place the order here-- just draw this down--
+
+13
+00:00:32,490 --> 00:00:35,376
+it looks like the lead time, L, is
+
+14
+00:00:35,376 --> 00:00:37,750
+going to be that much longer before it actually shows up.
+
+15
+00:00:37,750 --> 00:00:41,380
+So L is the length of time it takes between the order being
+
+16
+00:00:41,380 --> 00:00:43,980
+placed and it being received.
+
+17
+00:00:43,980 --> 00:00:46,600
+And so what this is going to do to my inventory chart
+
+18
+00:00:46,600 --> 00:00:50,580
+on the bottom, it's going to create two types of inventory.
+
+19
+00:00:50,580 --> 00:00:52,650
+So the first is Inventory on Hand,
+
+20
+00:00:52,650 --> 00:00:54,090
+which we've been playing with.
+
+21
+00:00:54,090 --> 00:00:55,790
+That's the solid green line.
+
+22
+00:00:55,790 --> 00:00:58,520
+And this is simply how much inventory i have on hand
+
+23
+00:00:58,520 --> 00:01:01,740
+and it's going to show up exactly when it's received.
+
+24
+00:01:01,740 --> 00:01:04,470
+So it's the same saw tooth we've always had.
+
+25
+00:01:04,470 --> 00:01:07,410
+However, when I place an order, right now,
+
+26
+00:01:07,410 --> 00:01:09,080
+I've got this inventory.
+
+27
+00:01:09,080 --> 00:01:13,310
+And it's this inventory here in under this dotted line.
+
+28
+00:01:13,310 --> 00:01:16,950
+And this is known as my Pipeline Inventory.
+
+29
+00:01:16,950 --> 00:01:18,630
+We talked about this earlier, in one
+
+30
+00:01:18,630 --> 00:01:21,170
+of the first slides on inventory.
+
+31
+00:01:21,170 --> 00:01:23,520
+And so this pipeline inventory is
+
+32
+00:01:23,520 --> 00:01:26,970
+inventory I placed an order for, and I committed to.
+
+33
+00:01:26,970 --> 00:01:28,840
+It just hasn't shown up yet.
+
+34
+00:01:28,840 --> 00:01:31,300
+So the question is how do I handle that?
+
+35
+00:01:31,300 --> 00:01:33,710
+How do I take that into account?
+
+36
+00:01:33,710 --> 00:01:36,610
+Because, as we'll see, I need to look at more than just
+
+37
+00:01:36,610 --> 00:01:39,100
+what inventory I have on hand, I need
+
+38
+00:01:39,100 --> 00:01:42,490
+to start looking at my whole Inventory Position.
+
+39
+00:01:42,490 --> 00:01:44,170
+And so let's talk about that.
+
+40
+00:01:44,170 --> 00:01:47,250
+So here's just a little blow up of the inventory chart,
+
+41
+00:01:47,250 --> 00:01:50,350
+and the horizontal axis, again, is Time.
+
+42
+00:01:50,350 --> 00:01:54,120
+The vertical axis is Inventory Level.
+
+43
+00:01:54,120 --> 00:01:56,220
+And we saw the two charts.
+
+44
+00:01:56,220 --> 00:01:58,220
+And what I did here in red is I just
+
+45
+00:01:58,220 --> 00:02:00,730
+overlaid what's known as the Inventory Position.
+
+46
+00:02:00,730 --> 00:02:04,410
+And it's simply equal to the Inventory
+
+47
+00:02:04,410 --> 00:02:08,900
+on Hand plus the Pipeline Inventory.
+
+48
+00:02:08,900 --> 00:02:11,867
+Now, later on, when we allow backorders,
+
+49
+00:02:11,867 --> 00:02:13,450
+it'll change a little bit because I'll
+
+50
+00:02:13,450 --> 00:02:16,450
+have to subtract off what's already been backordered,
+
+51
+00:02:16,450 --> 00:02:18,720
+and already being committed, and things like that.
+
+52
+00:02:18,720 --> 00:02:21,040
+But for right now, the Inventory Position
+
+53
+00:02:21,040 --> 00:02:22,910
+is simply the amount of inventory
+
+54
+00:02:22,910 --> 00:02:26,970
+I have on hand plus the amount that I've ordered and hasn't an
+
+55
+00:02:26,970 --> 00:02:30,370
+arrived yet, that's the Pipeline Inventory.
+
+56
+00:02:30,370 --> 00:02:32,400
+So the question we might want to ask--
+
+57
+00:02:32,400 --> 00:02:36,230
+what is my average amount of pipeline inventory?
+
+58
+00:02:36,230 --> 00:02:40,260
+And so what we're looking for is for one replenishment time.
+
+59
+00:02:40,260 --> 00:02:44,980
+Each cycle, I want to know how much of this pipeline inventory
+
+60
+00:02:44,980 --> 00:02:46,620
+should I expect to have?
+
+61
+00:02:46,620 --> 00:02:49,150
+Because now I've got two different types of inventory.
+
+62
+00:02:49,150 --> 00:02:52,010
+I've got that pipeline inventory that I just highlighted.
+
+63
+00:02:52,010 --> 00:02:54,910
+But I've also got this cycle stock
+
+64
+00:02:54,910 --> 00:02:56,580
+that we're all comfortable with this.
+
+65
+00:02:56,580 --> 00:02:57,829
+Let me just double-hatch that.
+
+66
+00:02:57,829 --> 00:02:58,640
+There we go.
+
+67
+00:02:58,640 --> 00:03:01,030
+So I've got these two different types of inventory.
+
+68
+00:03:01,030 --> 00:03:04,580
+And I can control them with very different managerial actions.
+
+69
+00:03:04,580 --> 00:03:08,000
+This is why we look at functional roles of inventory.
+
+70
+00:03:08,000 --> 00:03:12,344
+So let's go in and let's try to understand what's
+
+71
+00:03:12,344 --> 00:03:14,010
+the average amount of pipeline inventory
+
+72
+00:03:14,010 --> 00:03:16,910
+I have during each replenishment cycle.
+
+73
+00:03:16,910 --> 00:03:22,850
+So we notice, during the length of this cycle, which is T*,
+
+74
+00:03:22,850 --> 00:03:24,450
+that the pipeline inventory changes.
+
+75
+00:03:24,450 --> 00:03:25,660
+There's two periods.
+
+76
+00:03:25,660 --> 00:03:28,510
+There's a period of time-- and let me just mark it here--
+
+77
+00:03:28,510 --> 00:03:30,670
+where I have no pipeline inventory.
+
+78
+00:03:30,670 --> 00:03:31,170
+Right?
+
+79
+00:03:31,170 --> 00:03:32,628
+Because nothing's been ordered yet.
+
+80
+00:03:32,628 --> 00:03:36,590
+And then I've got a period of that cycle time
+
+81
+00:03:36,590 --> 00:03:38,510
+where I have pipeline inventory.
+
+82
+00:03:38,510 --> 00:03:41,330
+So let's just break those in half and start with a time
+
+83
+00:03:41,330 --> 00:03:43,670
+when I'm in transit, when I have something ordered.
+
+84
+00:03:43,670 --> 00:03:45,180
+So how much will I have there?
+
+85
+00:03:45,180 --> 00:03:47,450
+Well I have Q*, because that's what I order each time.
+
+86
+00:03:47,450 --> 00:03:49,616
+We don't know how we're going to calculate that yet,
+
+87
+00:03:49,616 --> 00:03:53,160
+but when I place an order, I'm placing it for Q*.
+
+88
+00:03:53,160 --> 00:03:56,650
+And so the next question is how long will that last?
+
+89
+00:03:56,650 --> 00:03:59,420
+What percentage of time of the cycle will it be?
+
+90
+00:03:59,420 --> 00:04:04,890
+Well, if my T*, let's just say my T* is 10 days,
+
+91
+00:04:04,890 --> 00:04:09,170
+and my lead time, let's say my lead time is 4 days,
+
+92
+00:04:09,170 --> 00:04:14,720
+then I'm going to be in transit 4 out of 10 days or 40%.
+
+93
+00:04:14,720 --> 00:04:19,880
+So L/T* tells me the percent of that cycle time that I'm going
+
+94
+00:04:19,880 --> 00:04:22,500
+to have inventory in transit.
+
+95
+00:04:22,500 --> 00:04:24,236
+So now let's look at the second time.
+
+96
+00:04:24,236 --> 00:04:25,610
+And this is the time when I don't
+
+97
+00:04:25,610 --> 00:04:27,900
+have any inventory in transit.
+
+98
+00:04:27,900 --> 00:04:29,600
+How much will I have in pipeline?
+
+99
+00:04:29,600 --> 00:04:30,600
+0.
+
+100
+00:04:30,600 --> 00:04:32,900
+Right?
+
+101
+00:04:32,900 --> 00:04:36,840
+I'll have 0 because nothing's in the pipeline.
+
+102
+00:04:36,840 --> 00:04:38,310
+How often will that happen?
+
+103
+00:04:38,310 --> 00:04:42,550
+Well it's going to be 1 - L/T*, which in this simple example
+
+104
+00:04:42,550 --> 00:04:44,570
+would be 60% of the time.
+
+105
+00:04:44,570 --> 00:04:47,960
+So I just take an expected value here,
+
+106
+00:04:47,960 --> 00:04:52,040
+so for the time when I have inventory in the pipeline,
+
+107
+00:04:52,040 --> 00:04:56,910
+Q* times L/T*, and when I don't, and if I just carry it through,
+
+108
+00:04:56,910 --> 00:05:01,230
+what I end up with is my average pipeline inventory is D (the
+
+109
+00:05:01,230 --> 00:05:05,450
+demand rate per year), times L (my lead time in units
+
+110
+00:05:05,450 --> 00:05:05,950
+of year).
+
+111
+00:05:05,950 --> 00:05:08,040
+Always make sure the units match here.
+
+112
+00:05:08,040 --> 00:05:11,520
+But D times L tells me my average amount
+
+113
+00:05:11,520 --> 00:05:16,070
+of pipeline inventory for each replenishment cycle.
+
+114
+00:05:16,070 --> 00:05:19,790
+So what is my average inventory in the system then?
+
+115
+00:05:19,790 --> 00:05:22,210
+It's going to be that cycle stock, which we know very well
+
+116
+00:05:22,210 --> 00:05:26,890
+is Q/2 plus the pipeline inventory, DL,
+
+117
+00:05:26,890 --> 00:05:29,030
+and so now I know what my average inventory is.
+
+118
+00:05:29,030 --> 00:05:30,655
+And again, I've got two different types
+
+119
+00:05:30,655 --> 00:05:34,280
+of inventory, cycle stock and pipeline.
+
+120
+00:05:34,280 --> 00:05:36,850
+Now in real life, for pipeline inventory,
+
+121
+00:05:36,850 --> 00:05:39,640
+we might want to consider who owns it, when.
+
+122
+00:05:39,640 --> 00:05:42,260
+Does the vendor own it when they deliver it
+
+123
+00:05:42,260 --> 00:05:44,550
+or do you pick it up and take it.
+
+124
+00:05:44,550 --> 00:05:47,690
+But in this case, we always want to, since inventory is coming,
+
+125
+00:05:47,690 --> 00:05:50,110
+we want to consider it in our planning.
+
+126
+00:05:50,110 --> 00:05:54,350
+And so later on, we'll talk about different payment terms,
+
+127
+00:05:54,350 --> 00:05:56,060
+and what that means is, when you take
+
+128
+00:05:56,060 --> 00:05:57,780
+ownership of the inventory.
+
+129
+00:05:57,780 --> 00:05:59,740
+But from here out, until I say otherwise,
+
+130
+00:05:59,740 --> 00:06:01,530
+just assume that you're taking ownership.
+
+131
+00:06:01,530 --> 00:06:03,480
+You want to consider that inventory coming
+
+132
+00:06:03,480 --> 00:06:07,770
+into your pipeline when you manage your total inventory.
+
+133
+00:06:07,770 --> 00:06:08,270
+OK.
+
+134
+00:06:08,270 --> 00:06:10,220
+So let's go a little bit deeper.
+
+135
+00:06:10,220 --> 00:06:13,984
+And let's figure out: what's your new total cost function?
+
+136
+00:06:13,984 --> 00:06:15,400
+So this should look very familiar.
+
+137
+00:06:15,400 --> 00:06:18,470
+My total cost is a function of Q, my order quantity,
+
+138
+00:06:18,470 --> 00:06:23,000
+and consists of the four main elements-- purchase cost,
+
+139
+00:06:23,000 --> 00:06:25,570
+the ordering cost, cost per order times
+
+140
+00:06:25,570 --> 00:06:28,880
+the number of orders expected over the course of a year,
+
+141
+00:06:28,880 --> 00:06:31,140
+and then, I've got my holding cost.
+
+142
+00:06:31,140 --> 00:06:33,410
+But I've got two separate elements.
+
+143
+00:06:33,410 --> 00:06:37,450
+I've got my cost for holding an item for unit time for a year,
+
+144
+00:06:37,450 --> 00:06:40,130
+and this Q/2 is my cycle stock.
+
+145
+00:06:40,130 --> 00:06:42,690
+And this D/L is my pipeline inventory.
+
+146
+00:06:42,690 --> 00:06:45,740
+And then here I've got my shortage cost.
+
+147
+00:06:45,740 --> 00:06:49,390
+So the question is, what's relevant when I'm making
+
+148
+00:06:49,390 --> 00:06:51,040
+my decision for Q*?
+
+149
+00:06:51,040 --> 00:06:53,940
+So as I look through, is the purchase cost relevant?
+
+150
+00:06:53,940 --> 00:06:54,440
+No.
+
+151
+00:06:54,440 --> 00:06:55,550
+There's no Q in there.
+
+152
+00:06:55,550 --> 00:06:58,690
+So the purchase price, the purchase cost of each item,
+
+153
+00:06:58,690 --> 00:07:01,300
+does not affect what my Q is going to be.
+
+154
+00:07:01,300 --> 00:07:02,160
+Order cost?
+
+155
+00:07:02,160 --> 00:07:04,550
+Sure, that's still going to be relevant.
+
+156
+00:07:04,550 --> 00:07:08,140
+If I look at the inventory cost, well the cycle stock--- sure,
+
+157
+00:07:08,140 --> 00:07:09,810
+that's still going to be relevant.
+
+158
+00:07:09,810 --> 00:07:12,230
+But look at the pipeline inventory.
+
+159
+00:07:12,230 --> 00:07:16,770
+Does the length of the lead time impact what my Q should be?
+
+160
+00:07:16,770 --> 00:07:17,940
+Is there any relationship?
+
+161
+00:07:17,940 --> 00:07:19,130
+And the answer is no.
+
+162
+00:07:19,130 --> 00:07:22,950
+So the pipeline inventory is not part of the relevant costs
+
+163
+00:07:22,950 --> 00:07:26,480
+for determining what my optimal order quantity is going to be.
+
+164
+00:07:26,480 --> 00:07:28,420
+And for here, same thing here-- it
+
+165
+00:07:28,420 --> 00:07:30,160
+hasn't changed for the shortage costs,
+
+166
+00:07:30,160 --> 00:07:32,740
+plus we're still assuming there are no stock-outs.
+
+167
+00:07:32,740 --> 00:07:34,570
+So my total relevant cost is going
+
+168
+00:07:34,570 --> 00:07:38,110
+to be the same as it was when I had lead time of 0,
+
+169
+00:07:38,110 --> 00:07:39,820
+or instantaneous lead time.
+
+170
+00:07:39,820 --> 00:07:41,460
+So what's my new Q*?
+
+171
+00:07:41,460 --> 00:07:42,950
+Same as the old one.
+
+172
+00:07:42,950 --> 00:07:44,730
+It has not changed.
+
+173
+00:07:44,730 --> 00:07:47,060
+So lead time, constant lead time,
+
+174
+00:07:47,060 --> 00:07:49,950
+does not affect my order quantity.
+
+175
+00:07:49,950 --> 00:07:51,680
+What's my new optimal policy?
+
+176
+00:07:51,680 --> 00:07:53,580
+Well now, some things will change
+
+177
+00:07:53,580 --> 00:07:55,712
+because if I blow this up again-- and again
+
+178
+00:07:55,712 --> 00:07:57,420
+this is just a simple inventory chart-- I
+
+179
+00:07:57,420 --> 00:07:59,870
+got my inventory on hand, and then I've
+
+180
+00:07:59,870 --> 00:08:01,250
+got my pipeline inventory.
+
+181
+00:08:01,250 --> 00:08:09,170
+Again, pipeline, and then here, it's going to be cycle stock.
+
+182
+00:08:09,170 --> 00:08:12,020
+Let me just double hatch it.
+
+183
+00:08:12,020 --> 00:08:14,460
+And then my inventory position, which
+
+184
+00:08:14,460 --> 00:08:16,370
+is just the sum of the two.
+
+185
+00:08:16,370 --> 00:08:19,190
+And so my policy is going to look at-- I
+
+186
+00:08:19,190 --> 00:08:21,540
+want to determine WHEN I will place my order.
+
+187
+00:08:21,540 --> 00:08:24,370
+Well I know if I place my order here,
+
+188
+00:08:24,370 --> 00:08:28,310
+it will show up L units of time later.
+
+189
+00:08:28,310 --> 00:08:29,980
+And then what is that point in time?
+
+190
+00:08:29,980 --> 00:08:32,649
+How much inventory will I have left here?
+
+191
+00:08:32,649 --> 00:08:33,690
+What would this point be?
+
+192
+00:08:33,690 --> 00:08:36,309
+Well if my demand is at a rate of D
+
+193
+00:08:36,309 --> 00:08:38,840
+and it's going to L units of time,
+
+194
+00:08:38,840 --> 00:08:43,360
+then this point is simply D times L.
+
+195
+00:08:43,360 --> 00:08:47,210
+So my policy is going to change, and it's going to be:
+
+196
+00:08:47,210 --> 00:08:49,980
+Order Q* units (because that hasn't changed, right--
+
+197
+00:08:49,980 --> 00:08:54,270
+the quantity hasn't changed), when the inventory position = D
+
+198
+00:08:54,270 --> 00:08:58,230
+times L. Two things are different here.
+
+199
+00:08:58,230 --> 00:09:01,420
+One is "Inventory Position", not "Inventory on Hand".
+
+200
+00:09:01,420 --> 00:09:02,460
+Right?
+
+201
+00:09:02,460 --> 00:09:04,569
+You're adding IN the order.
+
+202
+00:09:04,569 --> 00:09:05,360
+What if you didn't?
+
+203
+00:09:05,360 --> 00:09:07,560
+What if you said this was inventory on hand?
+
+204
+00:09:07,560 --> 00:09:09,050
+Well then you'd keep ordering when
+
+205
+00:09:09,050 --> 00:09:10,880
+I'm down here because my inventory on hand
+
+206
+00:09:10,880 --> 00:09:14,120
+is still less than or equal to DL
+
+207
+00:09:14,120 --> 00:09:16,220
+while I'm waiting for something to come in.
+
+208
+00:09:16,220 --> 00:09:20,140
+So it's "Inventory Position", not "Inventory on Hand"
+
+209
+00:09:20,140 --> 00:09:24,240
+when it's = D times L, because you order then,
+
+210
+00:09:24,240 --> 00:09:27,509
+it'll show up in L units of time.
+
+211
+00:09:27,509 --> 00:09:30,050
+Now the other interesting thing to note is that I could still
+
+212
+00:09:30,050 --> 00:09:33,690
+have it as: Order Q* units every T* time periods (because
+
+213
+00:09:33,690 --> 00:09:36,980
+the next time I order is going to somewhere around here,
+
+214
+00:09:36,980 --> 00:09:40,940
+and this distance is still T*).
+
+215
+00:09:40,940 --> 00:09:44,120
+All I've done is shifted things left.
+
+216
+00:09:44,120 --> 00:09:46,830
+So what's the net effect here?
+
+217
+00:09:46,830 --> 00:09:50,350
+The big takeaway is adding in a lead time
+
+218
+00:09:50,350 --> 00:09:54,410
+does not change the optimal order quantity.
+
+219
+00:09:54,410 --> 00:09:56,790
+It does change the policy by changing
+
+220
+00:09:56,790 --> 00:09:59,390
+the timing of when I would place that order.
+
+221
+00:09:59,390 --> 00:10:01,330
+But that's it.
+
+222
+00:10:01,330 --> 00:10:02,300
+
+

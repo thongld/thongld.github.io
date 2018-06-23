@@ -1,0 +1,632 @@
+0
+00:00:05,088 --> 00:00:10,430
+Welcome back, and now comes the punchline, which I have been excited about.
+https://youtu.be/b5tJBmyxNHQ
+1
+00:00:10,430 --> 00:00:14,070
+So here&#39;s the equation, and one caution.
+
+2
+00:00:14,070 --> 00:00:19,140
+I&#39;m leaving out some symbols, which I&#39;ll ask you to just kind of keep in mind.
+
+3
+00:00:19,140 --> 00:00:20,970
+They&#39;re shown in bold.
+
+4
+00:00:20,970 --> 00:00:26,000
+So stare at this one equation up there, and what does it say?
+
+5
+00:00:26,000 --> 00:00:29,290
+The expected return Ri.
+
+6
+00:00:31,060 --> 00:00:35,210
+So when I say expected, you technically should write it like this.
+
+7
+00:00:38,090 --> 00:00:39,950
+So quick question.
+
+8
+00:00:39,950 --> 00:00:42,090
+What is expected return Ri?
+
+9
+00:00:42,090 --> 00:00:45,580
+It&#39;s on average what will happen to Ri.
+
+10
+00:00:45,580 --> 00:00:50,050
+You can never know what will happen to RI in a specific day.
+
+11
+00:00:50,050 --> 00:00:51,940
+In our case, what are we looking for?
+
+12
+00:00:51,940 --> 00:00:53,270
+Amazon.
+
+13
+00:00:53,270 --> 00:00:56,360
+Right, remember, we&#39;ll go back to that, towards the end of this.
+
+14
+00:00:56,360 --> 00:00:59,660
+We&#39;re looking at Amazon to figure out the cost of capital of rainforests,
+
+15
+00:00:59,660 --> 00:01:01,310
+which is very similar.
+
+16
+00:01:01,310 --> 00:01:06,550
+So expected RI it is not one return, you&#39;re trying to predict.
+
+17
+00:01:06,550 --> 00:01:09,420
+You&#39;re trying to predict on average what it will be.
+
+18
+00:01:09,420 --> 00:01:11,540
+You&#39;ll never know what it&#39;ll be tomorrow.
+
+19
+00:01:11,540 --> 00:01:12,640
+You&#39;re trying to get an estimate.
+
+20
+00:01:13,940 --> 00:01:14,880
+Quick question.
+
+21
+00:01:14,880 --> 00:01:17,230
+Why don&#39;t I say expected rf?
+
+22
+00:01:18,520 --> 00:01:20,165
+First of all, what the heck is rf?
+
+23
+00:01:20,165 --> 00:01:24,588
+Rrf is the return on the risk free security.
+
+24
+00:01:24,588 --> 00:01:29,328
+So this is risk
+
+25
+00:01:29,328 --> 00:01:34,870
+free security.
+
+26
+00:01:34,870 --> 00:01:36,910
+Beauty of finance, can you measure it?
+
+27
+00:01:38,190 --> 00:01:40,850
+Do we know what the risk free security is?
+
+28
+00:01:40,850 --> 00:01:42,010
+Yes!
+
+29
+00:01:42,010 --> 00:01:47,680
+It&#39;s idly a zero coupon treasury bill and
+
+30
+00:01:47,680 --> 00:01:51,430
+it&#39;s issued in America, it&#39;s issued zero coupon bond.
+
+31
+00:01:51,430 --> 00:01:52,330
+Why zero coupon?
+
+32
+00:01:52,330 --> 00:01:53,760
+Because if you hold it to maturity,
+
+33
+00:01:53,760 --> 00:01:59,060
+you will surely get the face value unless the government decides to go bankrupt.
+
+34
+00:01:59,060 --> 00:02:03,800
+Highly unlikely, so therefore we call that a generic risk for security.
+
+35
+00:02:03,800 --> 00:02:06,200
+So because we know it, there&#39;s no expectation there.
+
+36
+00:02:07,340 --> 00:02:08,550
+What is this?
+
+37
+00:02:08,550 --> 00:02:11,240
+Remember, we talked about the market return.
+
+38
+00:02:11,240 --> 00:02:13,300
+So this, again, is is expected.
+
+39
+00:02:14,600 --> 00:02:19,340
+So it should technically, if you look at books, it&#39;ll show up like this.
+
+40
+00:02:19,340 --> 00:02:21,880
+Let&#39;s make it cap just for the heck of it.
+
+41
+00:02:21,880 --> 00:02:24,650
+Sometimes I use caps, sometimes I use lower case,
+
+42
+00:02:24,650 --> 00:02:28,950
+but both you&#39;ll see, so it&#39;s not a big deal.
+
+43
+00:02:28,950 --> 00:02:31,860
+So here is CAPM, what does CAPM say?
+
+44
+00:02:31,860 --> 00:02:36,793
+CAPM says that the expected return on Amazon, or Google, or
+
+45
+00:02:36,793 --> 00:02:42,609
+whatever, is equal to expected return, which is rf plus the premium.
+
+46
+00:02:45,788 --> 00:02:48,000
+This is a premium.
+
+47
+00:02:48,000 --> 00:02:49,910
+Why do we pay this premium?
+
+48
+00:02:49,910 --> 00:02:54,450
+We pay this premium because people are risk averse.
+
+49
+00:02:55,770 --> 00:02:58,480
+And the premium has two components.
+
+50
+00:02:58,480 --> 00:03:02,390
+One is the average market risk premium.
+
+51
+00:03:02,390 --> 00:03:07,820
+Meaning on average, what was likely to be the difference between the market
+
+52
+00:03:07,820 --> 00:03:13,600
+portfolio, which is the total portfolio, minus the risk-free asset.
+
+53
+00:03:13,600 --> 00:03:16,429
+So what are we using for the market portfolio in our data?
+
+54
+00:03:17,460 --> 00:03:18,410
+This would be 500.
+
+55
+00:03:18,410 --> 00:03:22,000
+In the real world, you can use 2,000 and so on and so
+
+56
+00:03:22,000 --> 00:03:24,930
+forth in today&#39;s world, right?
+
+57
+00:03:24,930 --> 00:03:27,200
+So the average difference between the two.
+
+58
+00:03:27,200 --> 00:03:28,360
+And you know what?
+
+59
+00:03:28,360 --> 00:03:31,930
+This number is very, very tough to estimate.
+
+60
+00:03:31,930 --> 00:03:34,040
+And for example, as I&#39;ve mentioned before,
+
+61
+00:03:34,040 --> 00:03:39,780
+in the US many people used to think it&#39;s 7% based on data, and history.
+
+62
+00:03:39,780 --> 00:03:41,740
+Because you can&#39;t predict the future right?
+
+63
+00:03:41,740 --> 00:03:43,190
+So you use the history.
+
+64
+00:03:43,190 --> 00:03:45,348
+Now people are thinking it&#39;s more like 5%.
+
+65
+00:03:45,348 --> 00:03:51,962
+This is an extremely important variable to everything we do,
+
+66
+00:03:51,962 --> 00:03:55,700
+and it&#39;s very tough to estimate.
+
+67
+00:03:55,700 --> 00:04:01,430
+And if you use 7% instead of 5, huge dramatic difference in your analysis.
+
+68
+00:04:01,430 --> 00:04:04,257
+Why? Because of compounding.
+
+69
+00:04:04,257 --> 00:04:08,640
+Because even a 2% difference will make a huge difference.
+
+70
+00:04:08,640 --> 00:04:11,360
+So okay, so this is the market risk, what is this?
+
+71
+00:04:13,690 --> 00:04:17,280
+This is the risk of Amazon.
+
+72
+00:04:18,649 --> 00:04:22,180
+But what, inner large portfolio.
+
+73
+00:04:23,290 --> 00:04:24,600
+So let me ask you this.
+
+74
+00:04:24,600 --> 00:04:26,450
+Can you measure all of this?
+
+75
+00:04:26,450 --> 00:04:28,680
+And that&#39;s the beauty of the answer is yes.
+
+76
+00:04:28,680 --> 00:04:31,380
+You can look up the treasury bill and we&#39;ll do it.
+
+77
+00:04:31,380 --> 00:04:33,355
+You can look up the risk premium,
+
+78
+00:04:33,355 --> 00:04:39,040
+we&#39;ll actually don&#39;t even need to do it I&#39;ll ask you to take a number like 5%.
+
+79
+00:04:39,040 --> 00:04:44,270
+Where most people are thinking that&#39;s a much more realistic number for the future.
+
+80
+00:04:44,270 --> 00:04:47,210
+Because 7% was just too high.
+
+81
+00:04:47,210 --> 00:04:49,370
+And as I said, people are still working on it,
+
+82
+00:04:49,370 --> 00:04:53,410
+and there&#39;s a lot of disagreement about what this number should be.
+
+83
+00:04:53,410 --> 00:04:56,660
+And it has a huge impact on how we work.
+
+84
+00:04:56,660 --> 00:04:58,170
+Can we measure Beta i?
+
+85
+00:04:58,170 --> 00:04:58,670
+Sure.
+
+86
+00:04:59,923 --> 00:05:03,034
+If I gave you Amazon&#39;s return instead of Security One, or
+
+87
+00:05:03,034 --> 00:05:07,890
+if I told you security one was Amazon, you already know the number, right?
+
+88
+00:05:07,890 --> 00:05:13,050
+So the beauty of returns, it&#39;s so simple, it&#39;s so simple to calculate.
+
+89
+00:05:13,050 --> 00:05:15,770
+And we can and we will in a second.
+
+90
+00:05:15,770 --> 00:05:19,230
+Let me show you a graphical representation of CAPM so
+
+91
+00:05:19,230 --> 00:05:20,890
+that you understand what&#39;s going on.
+
+92
+00:05:22,240 --> 00:05:24,670
+So, the graphical expectation of
+
+93
+00:05:24,670 --> 00:05:27,660
+representation of CAPM is very straight forward.
+
+94
+00:05:27,660 --> 00:05:30,720
+It&#39;s a straight line, and it&#39;s the same equation I just showed you.
+
+95
+00:05:31,790 --> 00:05:34,210
+Quickly, how would you draw a straight line?
+
+96
+00:05:34,210 --> 00:05:36,097
+How many data points do you need?
+
+97
+00:05:36,097 --> 00:05:39,179
+You need one, and two, and
+
+98
+00:05:39,179 --> 00:05:45,450
+then you can draw a straight line between the two.
+
+99
+00:05:45,450 --> 00:05:46,960
+Can I figure out Rf?
+
+100
+00:05:46,960 --> 00:05:47,460
+Yes.
+
+101
+00:05:49,130 --> 00:05:52,000
+Most people use a 10 year
+
+102
+00:05:54,500 --> 00:05:58,390
+treasury bond and we&#39;ll do that.
+
+103
+00:05:58,390 --> 00:06:02,480
+You put it in here one number you know.
+
+104
+00:06:02,480 --> 00:06:03,600
+Do I know this?
+
+105
+00:06:03,600 --> 00:06:04,990
+Sure.
+
+106
+00:06:04,990 --> 00:06:07,480
+And herein lies the institution for capital.
+
+107
+00:06:07,480 --> 00:06:09,890
+What will be the beta of the market portfolio?
+
+108
+00:06:11,500 --> 00:06:13,170
+Remember what is beta.
+
+109
+00:06:13,170 --> 00:06:17,240
+Sigma im over Sigma m squared.
+
+110
+00:06:18,330 --> 00:06:21,120
+So what will be the beta of m with n?
+
+111
+00:06:22,770 --> 00:06:27,150
+Sigma MM over sigma M squared.
+
+112
+00:06:27,150 --> 00:06:29,067
+This is for the market portfolio.
+
+113
+00:06:29,067 --> 00:06:31,468
+Sigma MM, sigma MM 1.
+
+114
+00:06:31,468 --> 00:06:35,720
+And that makes sense.
+
+115
+00:06:35,720 --> 00:06:39,980
+How, if the market moves by 1%, how much will the market move by?
+
+116
+00:06:39,980 --> 00:06:40,480
+1%.
+
+117
+00:06:41,750 --> 00:06:47,110
+So if I know this is going to be 1 and these are betas along this line.
+
+118
+00:06:47,110 --> 00:06:51,860
+And the beta here was 0 because it was risk free.
+
+119
+00:06:51,860 --> 00:06:53,590
+Do I know expected return on the market?
+
+120
+00:06:53,590 --> 00:06:58,342
+Yes, I can go and check out what the market portfolio return was on the S&amp;P
+
+121
+00:06:58,342 --> 00:07:02,470
+500 over the last 90 years or more.
+
+122
+00:07:02,470 --> 00:07:07,050
+And that is the best guess I could possibly have for the future, right?
+
+123
+00:07:07,050 --> 00:07:09,190
+Because I&#39;m doing forward analysis.
+
+124
+00:07:09,190 --> 00:07:12,530
+You could use more information and so on so forth, but let&#39;s stick with this.
+
+125
+00:07:12,530 --> 00:07:15,610
+So once we have there two points, I have this.
+
+126
+00:07:15,610 --> 00:07:17,800
+But look at the straight line.
+
+127
+00:07:17,800 --> 00:07:20,340
+I&#39;m going to be geeky for a second.
+
+128
+00:07:20,340 --> 00:07:22,620
+What is the equation of a straight line?
+
+129
+00:07:22,620 --> 00:07:26,240
+B plus mc.
+
+130
+00:07:30,570 --> 00:07:38,090
+Okay, so b is the intercept of rf.
+
+131
+00:07:38,090 --> 00:07:38,990
+M is the slope.
+
+132
+00:07:40,120 --> 00:07:41,910
+C is what in this equation?
+
+133
+00:07:41,910 --> 00:07:43,020
+Beta i.
+
+134
+00:07:43,020 --> 00:07:44,550
+And what&#39;s the slope?
+
+135
+00:07:44,550 --> 00:07:45,300
+Of this.
+
+136
+00:07:45,300 --> 00:07:46,571
+Look how cool this is.
+
+137
+00:07:46,571 --> 00:07:53,838
+Slope is this over this.
+
+138
+00:07:53,838 --> 00:07:54,390
+This over this.
+
+139
+00:07:54,390 --> 00:07:56,150
+But what is this?
+
+140
+00:07:56,150 --> 00:07:56,650
+1.
+
+141
+00:07:58,950 --> 00:08:01,790
+So all I have to measure is this distance.
+
+142
+00:08:01,790 --> 00:08:03,638
+But what is this distance?
+
+143
+00:08:03,638 --> 00:08:11,850
+Rm- rf, rm- rf so CAPM, that&#39;s why I got the nobel prize.
+
+144
+00:08:11,850 --> 00:08:16,555
+It is so straightforward, you can measure everything or
+
+145
+00:08:16,555 --> 00:08:21,847
+at least attempt to and you come off with one of the most important
+
+146
+00:08:21,847 --> 00:08:26,368
+variables used in analysis which is expected return.
+
+147
+00:08:26,368 --> 00:08:30,251
+Which also is highly correlated to the cost of capital,
+
+148
+00:08:30,251 --> 00:08:32,573
+depends what your financing is.
+
+149
+00:08:32,573 --> 00:08:38,580
+If you can figure out expected return on Amazon stock, and Amazon had no debt.
+
+150
+00:08:38,580 --> 00:08:41,510
+What is the expected return on Amazon&#39;s assets?
+
+151
+00:08:41,510 --> 00:08:42,630
+The same.
+
+152
+00:08:42,630 --> 00:08:46,800
+Remember we assumed that for the time being we&#39;ll have no debt.
+
+153
+00:08:46,800 --> 00:08:48,260
+Let&#39;s come back.
+
+154
+00:08:48,260 --> 00:08:49,770
+Let&#39;s try to wrap it up.
+
+155
+00:08:49,770 --> 00:08:52,760
+Let&#39;s do an exercise very quickly.
+
+156
+00:08:52,760 --> 00:08:57,970
+And you&#39;ll see how it all fits together, and no wonder finance is awesome.
+
+157
+00:08:57,970 --> 00:08:58,503
+See you soon.
+

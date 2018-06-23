@@ -1,0 +1,426 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/94AUdeFDmao
+
+1
+00:00:06,198 --> 00:00:09,068
+hello again and welcome back to operations
+management
+
+2
+00:00:09,068 --> 00:00:13,120
+in the past couple of sessions we've
+been looking at the powerful
+
+3
+00:00:13,119 --> 00:00:16,799
+equation known as Little's law Little's
+law
+
+4
+00:00:16,800 --> 00:00:21,500
+shows the relationship between inventory
+flow time and throughput rate
+
+5
+00:00:21,500 --> 00:00:24,829
+and in our last session we actually look
+at
+
+6
+00:00:24,829 --> 00:00:29,528
+units going through a process flow
+diagram in this one
+
+7
+00:00:29,528 --> 00:00:33,489
+we're going to take a look at using
+little's law with financials
+
+8
+00:00:33,489 --> 00:00:37,598
+items we can get often income statement
+or balance sheet
+
+9
+00:00:37,598 --> 00:00:43,109
+because a lot of times we don't have the
+luxury of having an entire process flow
+
+10
+00:00:43,109 --> 00:00:45,670
+diagram that we can keep track of
+
+11
+00:00:45,670 --> 00:00:49,329
+but what we do have is financials
+
+12
+00:00:49,329 --> 00:00:53,128
+we can see how efficient an organization is
+
+13
+00:00:53,128 --> 00:00:56,619
+just by looking at the financial
+statement and applying little's law
+
+14
+00:00:56,619 --> 00:01:00,238
+as always with little's law
+
+15
+00:01:00,238 --> 00:01:04,159
+we're concerned with the stable process
+so that the average
+
+16
+00:01:04,159 --> 00:01:08,828
+inflow  going into the process
+equals the average outflow coming out of
+
+17
+00:01:08,829 --> 00:01:09,799
+the process
+
+18
+00:01:09,799 --> 00:01:13,260
+this way we don't have to deal with
+individual
+
+19
+00:01:13,260 --> 00:01:16,260
+fluctuations a day-to-day fluctuations
+
+20
+00:01:16,260 --> 00:01:21,030
+we're only gonna be looking at averages
+Little's law
+
+21
+00:01:21,030 --> 00:01:24,868
+concerns itself with three particular
+operational measures
+
+22
+00:01:24,868 --> 00:01:29,040
+flow time how long it takes to get
+through the process
+
+23
+00:01:29,040 --> 00:01:32,600
+inventory how much is going on
+
+24
+00:01:32,599 --> 00:01:36,890
+in the process and the throughput rate
+what's going on
+
+25
+00:01:36,890 --> 00:01:42,290
+through the process in a given time when
+we're looking at financials
+
+26
+00:01:42,290 --> 00:01:45,670
+we're looking at money more specifically
+dollars
+
+27
+00:01:45,670 --> 00:01:49,100
+or other kinds of currency in terms of
+
+28
+00:01:49,099 --> 00:01:53,589
+how long does it take for a dollar to
+get through the entire process
+
+29
+00:01:53,590 --> 00:01:56,859
+how many dollars are sitting in
+inventory
+
+30
+00:01:56,859 --> 00:02:01,368
+and how many dollars go through the
+entire process
+
+31
+00:02:01,368 --> 00:02:05,700
+in a day a year a month and most usually
+
+32
+00:02:05,700 --> 00:02:11,180
+we're looking at it in terms of the year
+so let's take a simple example
+
+33
+00:02:11,180 --> 00:02:15,610
+here's a company called LRDR and here
+are their year
+
+34
+00:02:15,610 --> 00:02:19,410
+end's  financials we have a value for net
+sales
+
+35
+00:02:19,409 --> 00:02:22,829
+a cost of goods sold net income 
+inventories
+
+36
+00:02:22,830 --> 00:02:26,099
+so we need to identify
+
+37
+00:02:26,098 --> 00:02:30,068
+the correct financials from this
+statement here
+
+38
+00:02:30,068 --> 00:02:34,708
+to apply them to Little's law so we need
+to understand
+
+39
+00:02:34,709 --> 00:02:37,890
+which value here is going to be our
+throughput rate
+
+40
+00:02:37,889 --> 00:02:40,949
+which value here is going to
+represent their
+
+41
+00:02:40,949 --> 00:02:44,889
+inventories let's take a look at it on a
+diagram
+
+42
+00:02:44,889 --> 00:02:49,079
+inventories is pretty easy
+
+43
+00:02:49,080 --> 00:02:54,110
+straight off the statement there we saw
+that the inventory was nine thousand six
+
+44
+00:02:54,110 --> 00:02:55,800
+hundred forty six dollars
+
+45
+00:02:55,800 --> 00:03:00,310
+and there it is right in the diagram but
+the flow rate
+
+46
+00:03:00,310 --> 00:03:04,590
+might be a little bit more difficult to
+understand flow rate
+
+47
+00:03:04,590 --> 00:03:07,750
+is dollars that we put into 
+
+48
+00:03:07,750 --> 00:03:12,590
+the process okay so we're concerned with
+our cost
+
+49
+00:03:12,590 --> 00:03:16,060
+of goods sold sometimes cost of sales
+
+50
+00:03:16,060 --> 00:03:19,598
+is what it's called but this is the dollars
+that we are putting
+
+51
+00:03:19,598 --> 00:03:24,128
+into the process to create the item that
+goes out to the customer
+
+52
+00:03:24,128 --> 00:03:27,169
+that's why we use cost of goods sold
+
+53
+00:03:27,169 --> 00:03:32,030
+it's the dollar's entering into the
+process so now we have a value for the
+
+54
+00:03:32,030 --> 00:03:36,449
+flow rate because we know how much
+money was spent in costs of goods sold
+
+55
+00:03:36,449 --> 00:03:39,719
+a year and we have a value for the
+inventory
+
+56
+00:03:39,719 --> 00:03:44,280
+which currently sitting in the process
+so using
+
+57
+00:03:44,280 --> 00:03:47,860
+the version of Little's law that says
+
+58
+00:03:47,860 --> 00:03:51,560
+flow time equals to inventory divided
+by our throughput
+
+59
+00:03:51,560 --> 00:03:56,299
+rate we can calculate how long it takes
+for single dollar
+
+60
+00:03:56,299 --> 00:04:01,080
+to go from the beginning of the process
+all the way through to the end
+
+61
+00:04:01,080 --> 00:04:05,489
+so let's go take a look at that our throughput
+rate
+
+62
+00:04:05,489 --> 00:04:09,200
+was $79,183 per year
+
+63
+00:04:09,199 --> 00:04:13,699
+again that was our cost of goods sold
+the dollars they got entered into the
+
+64
+00:04:13,699 --> 00:04:14,589
+process
+
+65
+00:04:14,590 --> 00:04:19,289
+at the end of the year we had nine
+thousand six hundred and forty six
+
+66
+00:04:19,289 --> 00:04:19,879
+dollars
+
+67
+00:04:19,879 --> 00:04:23,238
+in inventory so now to calculate
+
+68
+00:04:23,238 --> 00:04:28,349
+the flow time we just take our inventory and
+divide it by the throughput rate
+
+69
+00:04:28,350 --> 00:04:32,669
+and it gives us .122 years
+
+70
+00:04:32,668 --> 00:04:36,829
+remember our throughput rate was in dollars per
+year so our flow time
+
+71
+00:04:36,829 --> 00:04:41,750
+is in years as well because our unit
+time has to match
+
+72
+00:04:41,750 --> 00:04:44,978
+but a lot of people have difficulty
+understanding what .122
+
+73
+00:04:44,978 --> 00:04:46,409
+years is
+
+74
+00:04:46,410 --> 00:04:49,639
+so we just multiply it by 52 weeks in a
+year
+
+75
+00:04:49,639 --> 00:04:53,079
+and that's how we get 6.33 weeks
+
+76
+00:04:53,079 --> 00:04:57,800
+so what this tells us it takes 6.33
+weeks
+
+77
+00:04:57,800 --> 00:05:00,870
+for single dollar to enter the process
+
+78
+00:05:00,870 --> 00:05:03,910
+for to come out to be able to be built to
+
+79
+00:05:03,910 --> 00:05:08,340
+the customer
+
+80
+00:05:08,339 --> 00:05:12,239
+so what does that mean for us well it
+could be one of our metrics
+
+81
+00:05:12,240 --> 00:05:16,590
+how do we evaluate how efficient
+organization is
+
+82
+00:05:16,589 --> 00:05:20,279
+if there are other companies in our same
+industry that have
+
+83
+00:05:20,279 --> 00:05:24,508
+a flow time of only 4 weeks we are not
+nearly as efficient
+
+84
+00:05:24,509 --> 00:05:27,669
+in getting our process is done as they
+are
+
+85
+00:05:27,668 --> 00:05:31,769
+if however there are other organizations
+that are taking ten weeks
+
+86
+00:05:31,769 --> 00:05:36,288
+then we are doing better than they are so
+that's one of the things that we can use
+
+87
+00:05:36,288 --> 00:05:37,719
+financials for
+
+88
+00:05:37,720 --> 00:05:42,229
+we're trying to figure out how long it
+takes for items to get through our entire
+
+89
+00:05:42,228 --> 00:05:43,609
+process
+
+90
+00:05:43,610 --> 00:05:47,020
+we're going to continue with Little's Law
+in the next session I'll see you then
+

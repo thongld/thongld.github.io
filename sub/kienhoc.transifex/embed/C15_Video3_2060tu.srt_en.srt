@@ -1,0 +1,1086 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/ZCNFdYtrNXw
+
+1
+00:00:00,000 --> 00:00:00,719
+
+2
+00:00:00,719 --> 00:00:03,010
+DR. JONATHAN VALVANO: Next,
+let's look at the graphics.
+
+3
+00:00:03,010 --> 00:00:05,490
+And we will show you
+the high level functions
+
+4
+00:00:05,490 --> 00:00:08,530
+that we'll use to generate images.
+
+5
+00:00:08,530 --> 00:00:15,180
+Our Nokia image is a very small image.
+
+6
+00:00:15,180 --> 00:00:23,580
+The size is 48 pixels
+high by 84 pixels wide.
+
+7
+00:00:23,580 --> 00:00:27,170
+And each pixel can be
+a zero, which is off.
+
+8
+00:00:27,170 --> 00:00:28,900
+Or a one, which is on.
+
+9
+00:00:28,900 --> 00:00:31,510
+
+10
+00:00:31,510 --> 00:00:37,110
+Which means the coordinates
+go from 0 to 83.
+
+11
+00:00:37,110 --> 00:00:44,641
+And in graphics, this pixel right
+here is located at coordinate 0, 0.
+
+12
+00:00:44,641 --> 00:00:46,390
+DR. RAMESH YERRABALLI:
+That is the origin.
+
+13
+00:00:46,390 --> 00:00:48,056
+DR. JONATHAN VALVANO: That's the origin.
+
+14
+00:00:48,056 --> 00:00:53,490
+And this pixel, up in this corner, is
+going to be at the x-position of 83
+
+15
+00:00:53,490 --> 00:00:57,230
+and the y-position of 0.
+
+16
+00:00:57,230 --> 00:01:02,570
+This one down in this corner is
+going to be at the x-position of 0
+
+17
+00:01:02,570 --> 00:01:05,530
+and the y-position of 47.
+
+18
+00:01:05,530 --> 00:01:11,100
+And this corner will be at 83, 47.
+
+19
+00:01:11,100 --> 00:01:17,920
+And so in this way we will define each
+pixel with a unique x, y-coordinate.
+
+20
+00:01:17,920 --> 00:01:21,940
+The basic function for
+producing graphics in this game
+
+21
+00:01:21,940 --> 00:01:28,490
+will be to create or to draw
+into this screen a BMP image.
+
+22
+00:01:28,490 --> 00:01:33,070
+A BMP file is a standard graphics
+file that we can produce.
+
+23
+00:01:33,070 --> 00:01:39,880
+And when we place a BMP file onto the
+screen we will specify which file,
+
+24
+00:01:39,880 --> 00:01:41,510
+which image to produce.
+
+25
+00:01:41,510 --> 00:01:48,180
+And we will specify the
+position of this lower left dot.
+
+26
+00:01:48,180 --> 00:01:50,740
+DR. RAMESH YERRABALLI: So
+each sprite over there,
+
+27
+00:01:50,740 --> 00:01:57,340
+it's an object that's an enemy ship,
+or the player's ship, or a bunker.
+
+28
+00:01:57,340 --> 00:02:07,029
+Each of these objects is a BMP
+image and we call that a sprite
+
+29
+00:02:07,029 --> 00:02:09,195
+DR. JONATHAN VALVANO: And
+we can have missiles, too.
+
+30
+00:02:09,195 --> 00:02:10,861
+DR. RAMESH YERRABALLI: And missiles too.
+
+31
+00:02:10,861 --> 00:02:13,490
+
+32
+00:02:13,490 --> 00:02:16,850
+DR. JONATHAN VALVANO: So the particular
+function that we're going to call is
+
+33
+00:02:16,850 --> 00:02:22,920
+labeled Nokia5110_.
+
+34
+00:02:22,920 --> 00:02:26,630
+That means it's a function
+in the Nokia module.
+
+35
+00:02:26,630 --> 00:02:27,910
+And it's called PrintBMP.
+
+36
+00:02:27,910 --> 00:02:33,750
+
+37
+00:02:33,750 --> 00:02:36,660
+And the next coordinate
+will be the x-position.
+
+38
+00:02:36,660 --> 00:02:47,290
+So if we write an 8
+here then the x-position
+
+39
+00:02:47,290 --> 00:02:51,456
+of the lower left corner
+of the BMP will be 8.
+
+40
+00:02:51,456 --> 00:03:01,670
+And if we put it at 47, then
+the y-coordinate will be at 47.
+
+41
+00:03:01,670 --> 00:03:04,450
+That'll be the bottom row.
+
+42
+00:03:04,450 --> 00:03:09,490
+The next parameter of this function
+is a pointer to the image itself.
+
+43
+00:03:09,490 --> 00:03:13,480
+And we'll see that there are
+lots of images drawn for us.
+
+44
+00:03:13,480 --> 00:03:27,670
+The player ship zero,
+is one of the predrawn
+
+45
+00:03:27,670 --> 00:03:31,050
+images, which will look
+like the player ship.
+
+46
+00:03:31,050 --> 00:03:34,230
+And the last coordinate,
+the last parameter,
+
+47
+00:03:34,230 --> 00:03:39,930
+is a threshold which will
+decide which colors to produce--
+
+48
+00:03:39,930 --> 00:03:42,790
+which colors to be off
+and which will be on.
+
+49
+00:03:42,790 --> 00:03:48,440
+And so if we produce a zero in
+this, then any color which is zero
+
+50
+00:03:48,440 --> 00:03:49,390
+will be off.
+
+51
+00:03:49,390 --> 00:03:56,190
+And any color which will be 1 to
+15 will actually turn on the pixel.
+
+52
+00:03:56,190 --> 00:04:09,900
+This is a threshold because our BMP
+images are going to be 4-bit color
+
+53
+00:04:09,900 --> 00:04:12,210
+and we only have a 1-bit display.
+
+54
+00:04:12,210 --> 00:04:15,140
+DR. RAMESH YERRABALLI: So if
+this display were a color display
+
+55
+00:04:15,140 --> 00:04:20,420
+then you could change the
+threshold and render colored
+
+56
+00:04:20,420 --> 00:04:22,330
+sprite in the same place.
+
+57
+00:04:22,330 --> 00:04:26,060
+
+58
+00:04:26,060 --> 00:04:31,230
+So Jon, it looks like the print
+BMP, from what I understand,
+
+59
+00:04:31,230 --> 00:04:38,155
+is going to change a virtual imagine
+and not the actual physical image.
+
+60
+00:04:38,155 --> 00:04:52,470
+It seems like there is another thing
+called the Nokia5110_DisplayBuffer.
+
+61
+00:04:52,470 --> 00:04:56,720
+And this routine will
+be the one that actually
+
+62
+00:04:56,720 --> 00:05:06,520
+displays the screen, entire
+screen, onto the Nokia device.
+
+63
+00:05:06,520 --> 00:05:09,510
+DR. JONATHAN VALVANO:
+There's a third one.
+
+64
+00:05:09,510 --> 00:05:21,040
+The Nokia5110_ClearBuffer
+will clear the array.
+
+65
+00:05:21,040 --> 00:05:22,730
+So there's an array.
+
+66
+00:05:22,730 --> 00:05:24,180
+You'll find it in the program.
+
+67
+00:05:24,180 --> 00:05:25,085
+It's called screen.
+
+68
+00:05:25,085 --> 00:05:28,350
+
+69
+00:05:28,350 --> 00:05:37,670
+And this memory buffer contains the
+virtual image that we will draw next.
+
+70
+00:05:37,670 --> 00:05:45,300
+So this memory buffer contains
+the virtual image of the screen
+
+71
+00:05:45,300 --> 00:05:47,560
+that we will draw next.
+
+72
+00:05:47,560 --> 00:05:56,720
+And we can see that this 504 is
+48 pixels by 84 pixels, divided
+
+73
+00:05:56,720 --> 00:06:00,790
+by 8 pixels per byte is 504.
+
+74
+00:06:00,790 --> 00:06:07,520
+So these 504 bytes contain the
+48 by 84 pixel rendered image
+
+75
+00:06:07,520 --> 00:06:09,130
+that we're going to draw next.
+
+76
+00:06:09,130 --> 00:06:14,860
+So the software will first clear the
+buffer, which will clear this screen.
+
+77
+00:06:14,860 --> 00:06:17,750
+And then it will draw
+a whole bunch of BMPs
+
+78
+00:06:17,750 --> 00:06:20,090
+all over the screen where you want them.
+
+79
+00:06:20,090 --> 00:06:26,490
+And then when you're ready to create a
+new image, we will call this function,
+
+80
+00:06:26,490 --> 00:06:29,920
+and the screen buffer is then
+dumped onto the actual screen
+
+81
+00:06:29,920 --> 00:06:31,920
+and we'll see it.
+
+82
+00:06:31,920 --> 00:06:37,970
+This is the element that we're
+going to call 30 times a second.
+
+83
+00:06:37,970 --> 00:06:41,600
+DR. RAMESH YERRABALLI: So Jon,
+you said that the display buffer
+
+84
+00:06:41,600 --> 00:06:45,220
+routine is called 30 times a second.
+
+85
+00:06:45,220 --> 00:06:53,400
+The way we describe the flow chart, the
+display buffer is called in the main.
+
+86
+00:06:53,400 --> 00:06:58,410
+So if I'm displaying in the main, the
+main was not an interrupt-given one.
+
+87
+00:06:58,410 --> 00:07:00,772
+So how is it 30 hertz?
+
+88
+00:07:00,772 --> 00:07:02,480
+DR. JONATHAN VALVANO:
+It will be 30 Hertz
+
+89
+00:07:02,480 --> 00:07:06,920
+because we will set
+a flag or a semaphore
+
+90
+00:07:06,920 --> 00:07:13,570
+from the interrupt service routine into
+the main to say, draw me a new picture.
+
+91
+00:07:13,570 --> 00:07:16,200
+So that's how we'll
+make it to be 30 hertz.
+
+92
+00:07:16,200 --> 00:07:19,540
+The other question is,
+why is it 30 hertz?
+
+93
+00:07:19,540 --> 00:07:23,692
+If we make it a lot slower than 30
+hertz, like 10 Hertz or 5 hertz,
+
+94
+00:07:23,692 --> 00:07:26,150
+the display will flicker.
+
+95
+00:07:26,150 --> 00:07:29,080
+And if we make it a lot
+faster than 30 hertz
+
+96
+00:07:29,080 --> 00:07:34,420
+we're essentially wasting time because
+our eyes can see that difference.
+
+97
+00:07:34,420 --> 00:07:37,620
+DR. RAMESH YERRABALLI:
+That sounds perfect.
+
+98
+00:07:37,620 --> 00:07:40,780
+DR. JONATHAN VALVANO: This is
+the starter file for Lab 15.
+
+99
+00:07:40,780 --> 00:07:45,730
+The first thing we see
+at the top of this C file
+
+100
+00:07:45,730 --> 00:07:47,710
+are the hardware requirements.
+
+101
+00:07:47,710 --> 00:07:49,890
+These are the specific
+connections you must
+
+102
+00:07:49,890 --> 00:07:54,680
+make in order for us to be able to
+share your game with other students.
+
+103
+00:07:54,680 --> 00:07:57,580
+Again the slide pot is tied to PE2.
+
+104
+00:07:57,580 --> 00:08:00,680
+You have two buttons on PE0 and 1.
+
+105
+00:08:00,680 --> 00:08:05,210
+Your DAC is on port B. If
+you want to flash some LEDs,
+
+106
+00:08:05,210 --> 00:08:07,950
+they can be here on port B4 and 5.
+
+107
+00:08:07,950 --> 00:08:11,220
+
+108
+00:08:11,220 --> 00:08:15,390
+The Nokia display, which is
+either a red one or a blue one
+
+109
+00:08:15,390 --> 00:08:17,130
+depends upon where you buy it.
+
+110
+00:08:17,130 --> 00:08:22,020
+But it's connected to
+PA7, 6, 5, 3, and 2.
+
+111
+00:08:22,020 --> 00:08:26,330
+
+112
+00:08:26,330 --> 00:08:29,230
+This is a sample BMP file.
+
+113
+00:08:29,230 --> 00:08:33,880
+And embedded in this file, in
+this BMP image, are the pixels.
+
+114
+00:08:33,880 --> 00:08:38,340
+And down in this part of the
+image we can see some F's and 0's.
+
+115
+00:08:38,340 --> 00:08:40,010
+0's are going to be off.
+
+116
+00:08:40,010 --> 00:08:41,159
+F's are going to be on.
+
+117
+00:08:41,159 --> 00:08:44,490
+This is a 4-bit BMP file.
+
+118
+00:08:44,490 --> 00:08:49,380
+And it will draw the
+small enemy number 30.
+
+119
+00:08:49,380 --> 00:08:55,100
+And so there are a lot of images that
+we can draw, small enemy 30, small enemy
+
+120
+00:08:55,100 --> 00:09:05,650
+20, small enemy 10, the player ship,
+a small enemy, extra small enemy, some
+
+121
+00:09:05,650 --> 00:09:07,330
+of the bunkers.
+
+122
+00:09:07,330 --> 00:09:11,970
+Bunker 0 is actually one
+that has fully functional.
+
+123
+00:09:11,970 --> 00:09:16,280
+And as the bunkers are being
+destroyed they can be changed shape.
+
+124
+00:09:16,280 --> 00:09:23,860
+Bunker 1, and 2, and 3 are
+bunkers being destroyed.
+
+125
+00:09:23,860 --> 00:09:29,010
+We have some explosions,
+big ones, small ones.
+
+126
+00:09:29,010 --> 00:09:30,640
+We have missiles that can go up.
+
+127
+00:09:30,640 --> 00:09:33,940
+And we can have missiles
+that can go down.
+
+128
+00:09:33,940 --> 00:09:37,625
+Missiles that go up
+and lasers going down.
+
+129
+00:09:37,625 --> 00:09:42,400
+
+130
+00:09:42,400 --> 00:09:46,370
+And so now we're at the
+main loop, the main program.
+
+131
+00:09:46,370 --> 00:09:49,050
+The starter file is not the
+game, that's yours to do.
+
+132
+00:09:49,050 --> 00:09:54,140
+But what I like to illustrate in this
+main program is how the graphics work.
+
+133
+00:09:54,140 --> 00:09:57,280
+So this is not the solution
+to the lab but rather
+
+134
+00:09:57,280 --> 00:10:00,380
+an explanation of how the graphics work.
+
+135
+00:10:00,380 --> 00:10:02,775
+We're going to be
+running at 80 megahertz.
+
+136
+00:10:02,775 --> 00:10:06,930
+There is a random number generator
+that you can use if you want.
+
+137
+00:10:06,930 --> 00:10:10,470
+And these are the functions
+that we need to call.
+
+138
+00:10:10,470 --> 00:10:12,220
+DR. RAMESH YERRABALLI:
+So Jon, why would I
+
+139
+00:10:12,220 --> 00:10:14,619
+use a random number generator in a game?
+
+140
+00:10:14,619 --> 00:10:16,910
+DR. JONATHAN VALVANO: Well,
+it makes the game more fun.
+
+141
+00:10:16,910 --> 00:10:19,340
+Every time you play it, it's
+just a little bit different.
+
+142
+00:10:19,340 --> 00:10:22,160
+
+143
+00:10:22,160 --> 00:10:27,630
+All right, the initialization function
+is the hardware initialization
+
+144
+00:10:27,630 --> 00:10:30,550
+for the Nokia display.
+
+145
+00:10:30,550 --> 00:10:33,410
+We talked about there being a buffer.
+
+146
+00:10:33,410 --> 00:10:38,230
+And so the clear buffer function
+will clear the screen buffer.
+
+147
+00:10:38,230 --> 00:10:42,920
+And then if I display that cleared
+buffer what we have at this point
+
+148
+00:10:42,920 --> 00:10:47,220
+is a completely empty screen.
+
+149
+00:10:47,220 --> 00:10:49,630
+Next we'll show you some
+examples of calling.
+
+150
+00:10:49,630 --> 00:10:52,790
+
+151
+00:10:52,790 --> 00:10:55,690
+Let's go ahead and download
+the code and run it.
+
+152
+00:10:55,690 --> 00:11:00,180
+So download, click.
+
+153
+00:11:00,180 --> 00:11:00,680
+Debug.
+
+154
+00:11:00,680 --> 00:11:07,290
+
+155
+00:11:07,290 --> 00:11:09,640
+Step over, where's my step over?
+
+156
+00:11:09,640 --> 00:11:11,056
+There it is, step over.
+
+157
+00:11:11,056 --> 00:11:14,000
+We're running now at 80 megahertz.
+
+158
+00:11:14,000 --> 00:11:16,510
+The random number
+generator is initialized.
+
+159
+00:11:16,510 --> 00:11:19,970
+The hardware for the
+Nokia is initialized.
+
+160
+00:11:19,970 --> 00:11:24,550
+Notice the screen has some
+displays from last time I ran it.
+
+161
+00:11:24,550 --> 00:11:30,600
+And when I call the clear buffer we
+can see that the screen didn't clear,
+
+162
+00:11:30,600 --> 00:11:33,520
+the software virtual array got cleared.
+
+163
+00:11:33,520 --> 00:11:36,630
+And it's only when I
+execute the display buffer.
+
+164
+00:11:36,630 --> 00:11:38,850
+I'm going to step over
+to the display buffer.
+
+165
+00:11:38,850 --> 00:11:41,730
+And we will see the
+display is now cleared.
+
+166
+00:11:41,730 --> 00:11:46,020
+In a similar way, the next
+function to call is a Print BMP.
+
+167
+00:11:46,020 --> 00:11:50,930
+And I'm going to produce or draw the
+player's ship in the middle, that's
+
+168
+00:11:50,930 --> 00:11:55,360
+32 somewhere sort of the middle.
+
+169
+00:11:55,360 --> 00:11:59,810
+But in the bottom row, 47.
+
+170
+00:11:59,810 --> 00:12:03,670
+So I'm going to execute this function.
+
+171
+00:12:03,670 --> 00:12:06,200
+And again you notice the
+display didn't change.
+
+172
+00:12:06,200 --> 00:12:11,240
+That's because I just drew that
+bump into the virtual variable,
+
+173
+00:12:11,240 --> 00:12:13,140
+the virtual array.
+
+174
+00:12:13,140 --> 00:12:22,150
+So we'll draw a bunker,
+step over, draw my bunker.
+
+175
+00:12:22,150 --> 00:12:23,490
+Draw a bunch enemies.
+
+176
+00:12:23,490 --> 00:12:25,860
+Here I'm going to draw a bunch enemies.
+
+177
+00:12:25,860 --> 00:12:28,520
+I'm going to put them on the top row.
+
+178
+00:12:28,520 --> 00:12:33,570
+A bunch of different enemies,
+step over, step over, step over.
+
+179
+00:12:33,570 --> 00:12:35,510
+Again nothing happens
+until I hit which--
+
+180
+00:12:35,510 --> 00:12:37,510
+DR. RAMESH YERRABALLI:
+Jon, can you pause there?
+
+181
+00:12:37,510 --> 00:12:41,420
+I want to take a look
+at what your passing
+
+182
+00:12:41,420 --> 00:12:46,454
+as the second parameter to a Print BMP.
+
+183
+00:12:46,454 --> 00:12:48,870
+DR. JONATHAN VALVANO: OK, here
+I'm going to draw an enemy.
+
+184
+00:12:48,870 --> 00:12:53,830
+64 is pretty much over towards
+the right hand side of the screen.
+
+185
+00:12:53,830 --> 00:13:01,110
+This define function will
+tell me how high the enemy is.
+
+186
+00:13:01,110 --> 00:13:05,430
+And so, as you can see, this
+enemy is 10 pixels high.
+
+187
+00:13:05,430 --> 00:13:08,140
+So 10 minus 1 is 9.
+
+188
+00:13:08,140 --> 00:13:13,530
+And if I put him in the
+y-position of 9, and he's 10 high,
+
+189
+00:13:13,530 --> 00:13:16,170
+this will be exactly on the top.
+
+190
+00:13:16,170 --> 00:13:19,020
+So he is as high as he
+can go onto the screen.
+
+191
+00:13:19,020 --> 00:13:21,500
+DR. RAMESH YERRABALLI:
+And the third parameter
+
+192
+00:13:21,500 --> 00:13:26,060
+is our array that contains the BMP.
+
+193
+00:13:26,060 --> 00:13:30,530
+DR. JONATHAN VALVANO: Yes, this
+is an array, stored in ROM,
+
+194
+00:13:30,530 --> 00:13:33,820
+which contains the BMP image.
+
+195
+00:13:33,820 --> 00:13:36,870
+And the last parameter is the threshold.
+
+196
+00:13:36,870 --> 00:13:39,590
+A zero will show up as off.
+
+197
+00:13:39,590 --> 00:13:43,897
+And any number bigger than
+zero will show up as an on.
+
+198
+00:13:43,897 --> 00:13:46,480
+DR. RAMESH YERRABALLI: OK, now
+we're ready to display the BMP.
+
+199
+00:13:46,480 --> 00:13:47,000
+DR. JONATHAN VALVANO: Yeah, come on.
+
+200
+00:13:47,000 --> 00:13:48,208
+Let's see what it looks like.
+
+201
+00:13:48,208 --> 00:13:50,300
+Step over.
+
+202
+00:13:50,300 --> 00:13:57,220
+And we see the imagine that was created
+by these seven calls to the PrintBMP
+
+203
+00:13:57,220 --> 00:13:59,503
+is now shown on the screen.
+
+204
+00:13:59,503 --> 00:14:01,945
+DR. RAMESH YERRABALLI: So
+there are three different kinds
+
+205
+00:14:01,945 --> 00:14:07,555
+of enemy ships, a
+bunker, and the player.
+
+206
+00:14:07,555 --> 00:14:08,930
+DR. JONATHAN VALVANO: Absolutely.
+
+207
+00:14:08,930 --> 00:14:10,290
+Now no game yet.
+
+208
+00:14:10,290 --> 00:14:11,580
+That's your job.
+
+209
+00:14:11,580 --> 00:14:16,780
+This function for the starter file
+is just going to wait five seconds.
+
+210
+00:14:16,780 --> 00:14:19,680
+Let's show you another feature
+of the graphics driver,
+
+211
+00:14:19,680 --> 00:14:22,110
+and that is to do character output.
+
+212
+00:14:22,110 --> 00:14:28,390
+The clear function is a function
+which will clear the screen.
+
+213
+00:14:28,390 --> 00:14:33,180
+And then if you want to output
+characters or numbers to the screen,
+
+214
+00:14:33,180 --> 00:14:39,650
+we can set the cursor in
+the row column location,
+
+215
+00:14:39,650 --> 00:14:44,250
+step over, and then draw
+characters to the screen.
+
+216
+00:14:44,250 --> 00:14:46,950
+So it's in row number 1, column 1.
+
+217
+00:14:46,950 --> 00:14:51,950
+And it output the string.
+
+218
+00:14:51,950 --> 00:14:59,090
+Step over, step over, step
+over, step over, step over.
+
+219
+00:14:59,090 --> 00:15:01,530
+And down here this could be your score.
+
+220
+00:15:01,530 --> 00:15:03,500
+As you can see, I don't have any score.
+
+221
+00:15:03,500 --> 00:15:10,540
+1,234 points.
+
+222
+00:15:10,540 --> 00:15:12,530
+DR. RAMESH YERRABALLI:
+So, in summary, what
+
+223
+00:15:12,530 --> 00:15:16,720
+we saw in the starter
+file and the description
+
+224
+00:15:16,720 --> 00:15:21,780
+before is that there's a screen
+buffer and a virtual buffer.
+
+225
+00:15:21,780 --> 00:15:29,180
+We cleared the buffer, which is
+clearing the buffer that is our screen.
+
+226
+00:15:29,180 --> 00:15:32,830
+And then we have a display
+buffer which will render it.
+
+227
+00:15:32,830 --> 00:15:36,860
+So the first thing we did is cleared
+it, then displayed an empty buffer.
+
+228
+00:15:36,860 --> 00:15:42,580
+And then we added a bunch of
+BMPs to the screen buffer.
+
+229
+00:15:42,580 --> 00:15:47,350
+And eventually, when we were
+done with adding all the BMPs,
+
+230
+00:15:47,350 --> 00:15:49,500
+we displayed this buffer.
+
+231
+00:15:49,500 --> 00:15:52,260
+And once we did that, we
+delayed for a little bit of time
+
+232
+00:15:52,260 --> 00:16:01,150
+and then went on to show a
+text message on the screen
+
+233
+00:16:01,150 --> 00:16:07,260
+by calling these functions called
+SetCursor, OutString, and OutDec.
+
+234
+00:16:07,260 --> 00:16:10,910
+
+235
+00:16:10,910 --> 00:16:15,680
+So now you have all the
+elements for building it
+
+236
+00:16:15,680 --> 00:16:20,100
+except we need to look
+at a timer module, which
+
+237
+00:16:20,100 --> 00:16:24,510
+is very similar to the SysTick, but
+we'll go through the details of that.

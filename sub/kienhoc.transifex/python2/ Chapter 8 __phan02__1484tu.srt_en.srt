@@ -1,0 +1,867 @@
+186
+00:09:08,220 --> 00:09:11,120
+https://youtu.be/nO8eU3uts0o
+long list, with the first one
+followed by the second one,
+
+187
+00:09:11,120 --> 00:09:12,100
+concatenated.
+
+188
+00:09:12,100 --> 00:09:15,740
+It didn't hurt the original,
+a, c is a new list basically.
+
+189
+00:09:15,740 --> 00:09:19,060
+
+190
+00:09:19,060 --> 00:09:21,150
+We can also slice lists.
+
+191
+00:09:21,150 --> 00:09:22,590
+Feels a lot like strings, right?
+
+192
+00:09:22,590 --> 00:09:25,460
+Everything's kind of like
+strings, For loop like strings,
+
+193
+00:09:25,460 --> 00:09:28,590
+concatenation like strings and
+now slicing like strings and it
+
+194
+00:09:28,590 --> 00:09:32,320
+is exactly the same.
+
+195
+00:09:32,320 --> 00:09:37,080
+So 1, up to but not including--
+just remember, up to
+
+196
+00:09:37,080 --> 00:09:38,830
+but not including,
+the second parameter
+
+197
+00:09:38,830 --> 00:09:41,080
+is up to but not including--
+so that starts at the sub
+
+198
+00:09:41,080 --> 00:09:43,600
+1 which is the second one.
+
+199
+00:09:43,600 --> 00:09:47,415
+Up to but not including
+3, the third one so this
+
+200
+00:09:47,415 --> 00:09:49,690
+is 1, 2, and 3.
+
+201
+00:09:49,690 --> 00:09:52,500
+So that's 41, comma 2.
+
+202
+00:09:52,500 --> 00:09:54,760
+Starting at the first one,
+up to but not including
+
+203
+00:09:54,760 --> 00:09:55,410
+the third one.
+
+204
+00:09:55,410 --> 00:09:58,670
+
+205
+00:09:58,670 --> 00:10:01,480
+We can similarly
+eliminate the first one
+
+206
+00:10:01,480 --> 00:10:03,990
+so that's up to but not
+including fourth one,
+
+207
+00:10:03,990 --> 00:10:08,580
+is starting at 0 1, 2,
+3, but not including 4,
+
+208
+00:10:08,580 --> 00:10:11,160
+so that's this one.
+
+209
+00:10:11,160 --> 00:10:15,010
+If we go 3 to the end,
+and again remember
+
+210
+00:10:15,010 --> 00:10:17,500
+the they're starting at
+0, so three to the end
+
+211
+00:10:17,500 --> 00:10:22,420
+is 0, 1, 2, 3, to the end, the
+number three doesn't matter.
+
+212
+00:10:22,420 --> 00:10:27,050
+So that's 374.15
+and the whole thing,
+
+213
+00:10:27,050 --> 00:10:29,650
+that's the whole thing so
+these two things are the same.
+
+214
+00:10:29,650 --> 00:10:33,260
+So slicing works like
+strings, starting and up to,
+
+215
+00:10:33,260 --> 00:10:36,410
+but not including is
+the second parameter.
+
+216
+00:10:36,410 --> 00:10:40,420
+There are some methods and you
+can read about these online
+
+217
+00:10:40,420 --> 00:10:43,030
+in the Python documentation.
+
+218
+00:10:43,030 --> 00:10:44,940
+We can use the
+built in function,
+
+219
+00:10:44,940 --> 00:10:49,540
+doesn't have a lot of use
+when we're running programs
+
+220
+00:10:49,540 --> 00:10:51,000
+but it's kind of
+useful, I like it
+
+221
+00:10:51,000 --> 00:10:54,430
+when I'm typing interactively
+like, what can this thing do?
+
+222
+00:10:54,430 --> 00:10:58,000
+So I make a list, a
+list is a unique type
+
+223
+00:10:58,000 --> 00:11:00,340
+and I say with dir, I say,
+what can we do with it?
+
+224
+00:11:00,340 --> 00:11:03,260
+Well, we can append, we can
+count, extend, index, insert,
+
+225
+00:11:03,260 --> 00:11:04,920
+pop, remove, reverse and sort.
+
+226
+00:11:04,920 --> 00:11:08,300
+And then you can sort of
+read up on all these things.
+
+227
+00:11:08,300 --> 00:11:11,630
+I'll show you just a couple.
+
+228
+00:11:11,630 --> 00:11:14,890
+We can build a list
+with the append.
+
+229
+00:11:14,890 --> 00:11:16,980
+So this syntax
+here, stuff equals
+
+230
+00:11:16,980 --> 00:11:19,530
+list-- that's called
+a constructor, which
+
+231
+00:11:19,530 --> 00:11:22,470
+says give me an empty list.
+
+232
+00:11:22,470 --> 00:11:26,300
+You could also say bracket,
+bracket, for an empty list.
+
+233
+00:11:26,300 --> 00:11:28,100
+Whatever, you've got
+to make an empty list
+
+234
+00:11:28,100 --> 00:11:30,120
+and then you call the append.
+
+235
+00:11:30,120 --> 00:11:33,290
+Remember that lists are mutable,
+so it's OK to change it.
+
+236
+00:11:33,290 --> 00:11:35,560
+So we're saying, OK, we
+start with an empty list
+
+237
+00:11:35,560 --> 00:11:38,180
+and now append to the end
+of that the word book,
+
+238
+00:11:38,180 --> 00:11:39,715
+and then append to that, 99.
+
+239
+00:11:39,715 --> 00:11:43,170
+
+240
+00:11:43,170 --> 00:11:43,937
+Wait a sec.
+
+241
+00:11:43,937 --> 00:11:44,645
+That's a mistake.
+
+242
+00:11:44,645 --> 00:11:50,670
+
+243
+00:11:50,670 --> 00:11:55,200
+So I have to fix this mistake,
+so watch me fix the mistake.
+
+244
+00:11:55,200 --> 00:11:57,850
+Poof!
+
+245
+00:11:57,850 --> 00:12:00,670
+Now my thing is magically
+fixed, isn't that amazing?
+
+246
+00:12:00,670 --> 00:12:04,020
+I have magic powers when
+it comes to slide fixing,
+
+247
+00:12:04,020 --> 00:12:07,457
+I just snap my fingers
+and the slides are fixed.
+
+248
+00:12:07,457 --> 00:12:08,040
+So here we go.
+
+249
+00:12:08,040 --> 00:12:10,240
+We append a 99 and
+we print it out
+
+250
+00:12:10,240 --> 00:12:13,680
+and it's got book and 99,
+emphasizing the fact that they
+
+251
+00:12:13,680 --> 00:12:16,780
+don't have to be the exact
+same kind of thing in a list.
+
+252
+00:12:16,780 --> 00:12:20,380
+Then later, we append cookie
+and then it's book 99 cookie.
+
+253
+00:12:20,380 --> 00:12:20,880
+OK?
+
+254
+00:12:20,880 --> 00:12:23,256
+So this append, we won't
+do it in line like this
+
+255
+00:12:23,256 --> 00:12:24,880
+so often, we'll tend
+to do it in a loop
+
+256
+00:12:24,880 --> 00:12:26,664
+as we're building up
+a list, but that's
+
+257
+00:12:26,664 --> 00:12:28,080
+a way you start
+with an empty list
+
+258
+00:12:28,080 --> 00:12:33,360
+and then
+programmatically grow it.
+
+259
+00:12:33,360 --> 00:12:35,630
+We can ask-- much like
+we do in a string-- we
+
+260
+00:12:35,630 --> 00:12:39,610
+can ask if an item is in a
+list, so here's a list called
+
+261
+00:12:39,610 --> 00:12:42,900
+some with these numbers in it,
+it's got five numbers in it.
+
+262
+00:12:42,900 --> 00:12:44,210
+Is 9 in some?
+
+263
+00:12:44,210 --> 00:12:45,505
+True, yes it is.
+
+264
+00:12:45,505 --> 00:12:47,720
+Is 15 in some?
+
+265
+00:12:47,720 --> 00:12:48,790
+False.
+
+266
+00:12:48,790 --> 00:12:56,690
+Is 20 not in, that is legal
+syntax, is 20 not in some?
+
+267
+00:12:56,690 --> 00:12:58,310
+Yes, it's not there, OK?
+
+268
+00:12:58,310 --> 00:13:02,940
+They don't modify the list,
+they're just asking questions.
+
+269
+00:13:02,940 --> 00:13:05,320
+These are logical
+operations often used
+
+270
+00:13:05,320 --> 00:13:08,930
+in If statements or
+while, some kind of logic
+
+271
+00:13:08,930 --> 00:13:12,630
+that you might be building, OK?
+
+272
+00:13:12,630 --> 00:13:15,010
+So lists have order.
+
+273
+00:13:15,010 --> 00:13:17,720
+So when we were pending them,
+the first thing went it first,
+
+274
+00:13:17,720 --> 00:13:20,840
+the second thing went in
+second, et cetera, et cetera.
+
+275
+00:13:20,840 --> 00:13:23,460
+And we can also tell
+the list to sort itself.
+
+276
+00:13:23,460 --> 00:13:25,670
+So one of the things that
+we can do with a list,
+
+277
+00:13:25,670 --> 00:13:27,430
+now we're starting to
+see some power here,
+
+278
+00:13:27,430 --> 00:13:28,800
+is say, sort yourself.
+
+279
+00:13:28,800 --> 00:13:32,020
+This is a list of strings,
+it can sort numbers,
+
+280
+00:13:32,020 --> 00:13:33,580
+it can sort lots of things.
+
+281
+00:13:33,580 --> 00:13:37,240
+Friends.sort That says,
+hey, there dear friends,
+
+282
+00:13:37,240 --> 00:13:38,490
+sort yourself.
+
+283
+00:13:38,490 --> 00:13:39,735
+This makes a change.
+
+284
+00:13:39,735 --> 00:13:42,530
+
+285
+00:13:42,530 --> 00:13:45,140
+It alters the list and
+puts it in this case,
+
+286
+00:13:45,140 --> 00:13:49,280
+in alphabetical order:
+Glenn, Joseph and Sally.
+
+287
+00:13:49,280 --> 00:13:52,310
+It's been modified
+and so friend sub
+
+288
+00:13:52,310 --> 00:13:55,850
+1 is now Joseph because
+that's the second one, OK?
+
+289
+00:13:55,850 --> 00:14:00,030
+So the sort method
+says, sort yourself now
+
+290
+00:14:00,030 --> 00:14:03,660
+sort yourself and it sorts
+and then it stays sorted.
+
+291
+00:14:03,660 --> 00:14:06,810
+
+292
+00:14:06,810 --> 00:14:11,510
+So again, you're going
+to be kind of ticked
+
+293
+00:14:11,510 --> 00:14:13,730
+about this particular
+slide because there's
+
+294
+00:14:13,730 --> 00:14:16,790
+a whole bunch of built in
+functions that help with lists
+
+295
+00:14:16,790 --> 00:14:23,070
+and there's max, there's min,
+there's lend, various things.
+
+296
+00:14:23,070 --> 00:14:24,820
+All those loops that
+I told you how to do,
+
+297
+00:14:24,820 --> 00:14:27,060
+I was just showing you
+that stuff because I
+
+298
+00:14:27,060 --> 00:14:29,390
+thought it was important.
+
+299
+00:14:29,390 --> 00:14:32,620
+This is the simplest way to go
+through and find the largest,
+
+300
+00:14:32,620 --> 00:14:35,370
+smallest n, sum, et cetera.
+
+301
+00:14:35,370 --> 00:14:38,140
+So here's a list of numbers.
+
+302
+00:14:38,140 --> 00:14:40,749
+We can say how many are
+there, that's the count.
+
+303
+00:14:40,749 --> 00:14:42,040
+We can say, what's the largest?
+
+304
+00:14:42,040 --> 00:14:43,477
+It's 74.
+
+305
+00:14:43,477 --> 00:14:44,310
+What's the smallest?
+
+306
+00:14:44,310 --> 00:14:46,260
+That'd be 3.
+
+307
+00:14:46,260 --> 00:14:48,380
+What is the sum, the
+running total of them all,
+
+308
+00:14:48,380 --> 00:14:50,790
+154, if you remember
+from a few lectures ago
+
+309
+00:14:50,790 --> 00:14:52,290
+these are the same numbers.
+
+310
+00:14:52,290 --> 00:14:53,900
+And what is the average?
+
+311
+00:14:53,900 --> 00:14:58,120
+Which is sum of them over
+the length of them, OK?
+
+312
+00:14:58,120 --> 00:15:00,100
+So this makes a lot
+more sense and if you
+
+313
+00:15:00,100 --> 00:15:01,770
+had a list of numbers
+like this, you
+
+314
+00:15:01,770 --> 00:15:04,610
+would simply say what's the max,
+you wouldn't write a max loop,
+
+315
+00:15:04,610 --> 00:15:09,580
+I just did that to
+demonstrate how loops work.
+
+316
+00:15:09,580 --> 00:15:13,990
+So here is a way that you
+can sort of change those kind
+
+317
+00:15:13,990 --> 00:15:16,580
+of programs that we wrote.
+
+318
+00:15:16,580 --> 00:15:19,790
+So there's two ways to
+write a summing program.
+
+319
+00:15:19,790 --> 00:15:23,040
+Let's just say instead of
+the data being in a list,
+
+320
+00:15:23,040 --> 00:15:25,610
+we're going to write
+a While loop that's
+
+321
+00:15:25,610 --> 00:15:28,850
+going to read a set of
+numbers until we say done,
+
+322
+00:15:28,850 --> 00:15:31,540
+and then compute the average
+of those numbers, OK?
+
+323
+00:15:31,540 --> 00:15:35,020
+So let's say this is our
+problem: Read a list of numbers
+
+324
+00:15:35,020 --> 00:15:38,200
+and wait until the word done
+comes in and then average them.
+
+325
+00:15:38,200 --> 00:15:40,460
+So here's a little
+program that does that.
+
+326
+00:15:40,460 --> 00:15:43,250
+We create total equal
+0 count equal 0,
+
+327
+00:15:43,250 --> 00:15:46,080
+making an infinite
+loop with while true,
+
+328
+00:15:46,080 --> 00:15:48,920
+and then we ask
+to enter a number,
+
+329
+00:15:48,920 --> 00:15:51,780
+we get a string back from
+this-- remember raw input always
+
+330
+00:15:51,780 --> 00:15:55,290
+gives us strings back--
+and then if it's done,
+
+331
+00:15:55,290 --> 00:15:56,810
+we're going to break.
+
+332
+00:15:56,810 --> 00:15:58,890
+This is the version
+of an If that does not
+
+333
+00:15:58,890 --> 00:16:02,020
+require an indent, we just put
+the break up there and so that
+
+334
+00:16:02,020 --> 00:16:04,150
+gets us out of the loop
+when the time is right
+
+335
+00:16:04,150 --> 00:16:05,990
+so when the time
+is right over here,
+
+336
+00:16:05,990 --> 00:16:09,830
+and then we convert
+the value to float,
+
+337
+00:16:09,830 --> 00:16:12,590
+we use float to convert the
+input to a floating point
+
+338
+00:16:12,590 --> 00:16:14,920
+number and then we do
+our accumulation pattern,
+
+339
+00:16:14,920 --> 00:16:18,017
+total equals total plus value,
+count equals count plus 1.
+
+340
+00:16:18,017 --> 00:16:19,600
+So this is going to
+run, these numbers
+
+341
+00:16:19,600 --> 00:16:21,244
+are going to go up
+and up and up and up
+
+342
+00:16:21,244 --> 00:16:22,910
+and then we're going
+to break out of it,
+
+343
+00:16:22,910 --> 00:16:25,906
+calculate the average and
+then print the average.
+
+344
+00:16:25,906 --> 00:16:27,780
+Because that's a floating
+point number so now
+
+345
+00:16:27,780 --> 00:16:29,870
+the average is a
+floating point number.
+
+346
+00:16:29,870 --> 00:16:31,430
+So that's one way
+to do it, right?
+
+347
+00:16:31,430 --> 00:16:34,790
+That would be one way
+to write a program that
+
+348
+00:16:34,790 --> 00:16:37,990
+does an average, is
+keep a running average
+
+349
+00:16:37,990 --> 00:16:40,080
+as you're reading the numbers.
+
+350
+00:16:40,080 --> 00:16:43,180
+But there's another
+way to do it that would
+
+351
+00:16:43,180 --> 00:16:45,890
+work exactly the
+same way, and this is
+
+352
+00:16:45,890 --> 00:16:48,040
+when you can start using lists.
+
+353
+00:16:48,040 --> 00:16:53,300
+So come in, you say I'm going
+to make a list of numbers
+
+354
+00:16:53,300 --> 00:16:56,830
+just a mnemonic name number
+list is an empty list.
+
+355
+00:16:56,830 --> 00:16:59,140
+Then I create
+another infinite loop
+
+356
+00:16:59,140 --> 00:17:02,060
+that's going to read
+for enter a number,
+
+357
+00:17:02,060 --> 00:17:06,750
+and if it's done break that
+kind of gets us out of it.
+
+358
+00:17:06,750 --> 00:17:12,390
+Convert the input
+value to a float
+
+359
+00:17:12,390 --> 00:17:14,450
+and then append it to the list.
+
+360
+00:17:14,450 --> 00:17:17,560
+So now the list is going to
+grow each time we read a number,
+
+361
+00:17:17,560 --> 00:17:18,800
+the list is going to grow.
+
+362
+00:17:18,800 --> 00:17:22,040
+However many times we add
+the numbers, how many things
+
+363
+00:17:22,040 --> 00:17:23,520
+are going to be in the list.
+
+364
+00:17:23,520 --> 00:17:26,770
+So in this case when we're
+at this and we type done,
+
+365
+00:17:26,770 --> 00:17:28,319
+there'll be three
+numbers in the list
+
+366
+00:17:28,319 --> 00:17:30,152
+because we will have
+run append three times,
+
+367
+00:17:30,152 --> 00:17:32,690
+we'll have appended
+3, 9, and 5 we'll
+
+368
+00:17:32,690 --> 00:17:37,140
+have them sitting in a list, and
+we will have exited the loop.
+
+369
+00:17:37,140 --> 00:17:40,340
+So now you say oh, add up
+all the numbers in that list
+
+370
+00:17:40,340 --> 00:17:42,690
+and then divide it by
+the length of the list
+

@@ -1,0 +1,624 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/IYiXqrifdms
+
+1
+00:00:00,500 --> 00:00:02,700
+Vậy điểm mấu chốt của bài học này là gì?
+
+2
+00:00:02,700 --> 00:00:04,210
+Chúng ta thực sự đã bàn về rất nhiều thứ.
+
+3
+00:00:04,210 --> 00:00:07,120
+Đầu tiên, chúng ta giới thiệu ý tưởng phân tích dựa trên chuỗi thời gian.
+
+4
+00:00:07,120 --> 00:00:08,920
+Và nội dung của nó chính là sự tương ứng 
+
+5
+00:00:08,920 --> 00:00:11,910
+của dữ liệu theo thời gian.
+
+6
+00:00:11,910 --> 00:00:13,990
+Chúng ta xem xét năm thành phần.
+
+7
+00:00:13,990 --> 00:00:16,360
+Thật ra, chúng ta chỉ chú trọng bốn thành phần đầu tiên.
+
+8
+00:00:16,360 --> 00:00:21,640
+Và các thành phần gồm có trình độ, cái mà chúng ta sử dụng chữ a;
+
+9
+00:00:21,640 --> 00:00:24,430
+xu hướng, chính là sự thay đổi liên tục theo một chiều hướng nào đó,
+
+10
+00:00:24,430 --> 00:00:27,940
+chúng ta sử dụng chữ b ở đây; và rồi một vài yếu tố 
+
+11
+00:00:27,940 --> 00:00:30,070
+mang tính thời vụ, còn được biết đến
+
+12
+00:00:30,070 --> 00:00:32,520
+sự thay đổi theo từng khoảng thời gian, có thể kéo dài 
+
+13
+00:00:32,520 --> 00:00:36,670
+trong một ngày, một tuần, một năm, một tháng, gì cũng được, và
+
+14
+00:00:36,670 --> 00:00:40,380
+chúng ta sử dụng chữ F. Và chúng ta cũng đề cập phần sai số,
+
+15
+00:00:40,380 --> 00:00:44,080
+và đó chính là sự ngẫu nhiên còn sót lại sau khi chúng ta đã
+
+16
+00:00:44,080 --> 00:00:46,260
+dùng để giải thích cho các thành phần khác nhau này.
+
+17
+00:00:46,260 --> 00:00:47,740
+Và rồi bạn có thành phần có tính chu kỳ,
+
+18
+00:00:47,740 --> 00:00:49,770
+đó là chu kỳ kinh doanh, tất cả những thứ này,
+
+19
+00:00:49,770 --> 00:00:51,890
+trong đó bạn không biết độ dài khoảng thời gian.
+
+20
+00:00:51,890 --> 00:00:54,650
+Nó không ổn định và không phổ biến.
+
+21
+00:00:54,650 --> 00:00:56,560
+Bốn thành phần chính này
+
+22
+00:00:56,560 --> 00:01:00,080
+là những gì chúng ta sẽ tập trung vào, giống như tôi nói, thành có tính chu kỳ.
+
+23
+00:01:00,080 --> 00:01:01,600
+Đó là cuộc thảo luận khác.
+
+24
+00:01:01,600 --> 00:01:03,070
+Đó là một loại khác.
+
+25
+00:01:03,070 --> 00:01:04,879
+Vì thế chúng ta sẽ tập trung vào bốn thành phần này.
+
+26
+00:01:04,879 --> 00:01:07,130
+Và chúng ta có thể nghĩ về cách chúng ta có thể kết hợp chúng.
+
+27
+00:01:07,130 --> 00:01:10,160
+Và chúng ta có thể kết hợp chúng bằng cách sử dụng các giả thiết.
+
+28
+00:01:10,160 --> 00:01:12,114
+Một giả thiết chính là tôi chỉ có một đơn hàng trình độ.
+
+29
+00:01:12,114 --> 00:01:13,530
+Vì thế thật ra đơn hàng của tôi 
+
+30
+00:01:13,530 --> 00:01:14,540
+trông giống như thế này.
+
+31
+00:01:14,540 --> 00:01:15,956
+Và tôi có thể mô phỏng nó, 
+
+32
+00:01:15,956 --> 00:01:19,430
+bởi vì nó rất cố định ở mức độ đơn hàng, chỉ có vài sự dịch chuyển
+
+33
+00:01:19,430 --> 00:01:21,340
+xung quanh phần sai số.
+
+34
+00:01:21,340 --> 00:01:25,262
+Hay tôi có thể giả thiết một trình độ cộng với một xu hướng.
+
+35
+00:01:25,262 --> 00:01:26,970
+Và đó thực sự sẽ là một điều gì đó
+
+36
+00:01:26,970 --> 00:01:29,100
+ở trên này, trong đó tôi có mức độ này.
+
+37
+00:01:29,100 --> 00:01:30,520
+Đó là a.
+
+38
+00:01:30,520 --> 00:01:32,380
+Rồi dù xu hướng có là gì.
+
+39
+00:01:32,380 --> 00:01:35,190
+Vậy dữ liệu của tôi trông như thế này.
+
+40
+00:01:35,190 --> 00:01:38,370
+Hay tôi có thể có cái gì đó trong đó bao gồm luôn cả tính thời vụ.
+
+41
+00:01:38,370 --> 00:01:40,870
+Và đó là nơi bạn có biến số.
+
+42
+00:01:40,870 --> 00:01:43,590
+Bạn có thể quan sát những giá trị này.
+
+43
+00:01:43,590 --> 00:01:46,496
+Và bạn cố gắng tìm kiếm hiệu ứng thời vụ là gì.
+
+44
+00:01:46,496 --> 00:01:48,870
+Và đây là ba mô hình mà chúng ta sẽ tập trung vào.
+
+45
+00:01:48,870 --> 00:01:51,036
+Bên cạnh đó, chúng ta sẽ xem xét một hay hai mô hình nữa.
+
+46
+00:01:51,036 --> 00:01:53,510
+Nhưng ba mô hình này là những mô hình chính.
+
+47
+00:01:53,510 --> 00:01:55,070
+Nhưng trước tiên hãy giới thiệu những mô hình này.
+
+48
+00:01:55,070 --> 00:02:00,290
+Và rồi cuối cùng, chúng ta đã giới thiệu ba mô hình này, cách thực hiện nó.
+
+49
+00:02:00,290 --> 00:02:04,330
+Chúng đều là xu hướng mức độ, yêu cầu mức độ giả định.
+
+50
+00:02:04,330 --> 00:02:06,680
+Trong ba mô hình chúng ta 
+
+51
+00:02:06,680 --> 00:02:11,680
+đặt giả thiết thì loại mô hình đầu tiên chúng ta có yêu cầu cố định.
+
+52
+00:02:11,680 --> 00:02:14,420
+Chúng ta sẽ tập trung vào nó.
+
+53
+00:02:14,420 --> 00:02:17,344
+Mô hình đầu tiên mang tính tích lũy.
+
+54
+00:02:17,344 --> 00:02:19,010
+Đó là mô hình mà mọi thứ đều quan trọng.
+
+55
+00:02:19,010 --> 00:02:23,410
+Chúng ta giả định yêu cầu được dự đoán trước được thực hiện tại thời điểm
+
+56
+00:02:23,410 --> 00:02:27,040
+t đối với thời điểm t cộng 1 sẽ bằng
+
+57
+00:02:27,040 --> 00:02:30,070
+tổng tất cả cầu từ khoảng thời gian 1
+
+58
+00:02:30,070 --> 00:02:31,740
+đến khoảng thời gian t đó.
+
+59
+00:02:31,740 --> 00:02:32,860
+Đólà tích lũy.
+
+60
+00:02:32,860 --> 00:02:35,620
+Tôi sẽ nói về dự báo cho giai đoạn tiếp theo
+
+61
+00:02:35,620 --> 00:02:40,190
+là trung bình của tất cả cầu tính đến thời điểm đó.
+
+62
+00:02:40,190 --> 00:02:42,490
+Sau đó chúng ta nhìn vào điểm cực khác, mô hình mộc,
+
+63
+00:02:42,490 --> 00:02:44,300
+trong đó chỉ ngày hôm qua mới quan trọng.
+
+64
+00:02:44,300 --> 00:02:47,230
+Và chúng tôi nói về cầu dự báo được thực hiện tại thời điểm t
+
+65
+00:02:47,230 --> 00:02:51,240
+cho thời gian t cộng với 1, cho hôm nay, cho ngày mai
+
+66
+00:02:51,240 --> 00:02:54,780
+sẽ bằng với những gì đã xảy ra hôm nay, xt.
+
+67
+00:02:54,780 --> 00:02:56,630
+Và bạn có thể thấy rằng đây là hai điểm cực.
+
+68
+00:02:56,630 --> 00:02:58,540
+Sau đó, chúng ta đã đi vào trung bình động,
+
+69
+00:02:58,540 --> 00:03:01,570
+trong đó chúng ta có thể chọn bao gồm bao nhiêu lịch sử chúng ta muốn,
+
+70
+00:03:01,570 --> 00:03:02,580
+quan trọng là bao nhiêu.
+
+71
+00:03:02,580 --> 00:03:05,330
+Và đó là khoảng thời gian M.
+
+72
+00:03:05,330 --> 00:03:10,250
+Và do đó dự báo nhu cầu được thực hiện tại thời điểm t4, t cộng 1
+
+73
+00:03:10,250 --> 00:03:13,300
+sẽ bằng với mức trung bình của tất cả cầu
+
+74
+00:03:13,300 --> 00:03:16,490
+trong các giai đoạn M vừa qua.
+
+75
+00:03:16,490 --> 00:03:19,060
+Và đó là dự đoán của tôi.
+
+76
+00:03:19,060 --> 00:03:22,700
+Đó là mức trung bình qua những khoảng thời gian M cuối cùng,
+
+77
+00:03:22,700 --> 00:03:24,050
+gần đây nhất.
+
+78
+00:03:24,050 --> 00:03:26,860
+Vậy sự khác nhau giữa các mô hình này là gì?
+
+79
+00:03:26,860 --> 00:03:29,380
+Rõ ràng nếu tôi nhìn vào những cái đó
+
+80
+00:03:29,380 --> 00:03:31,255
+có mức độ biến động khác nhau.
+
+81
+00:03:31,255 --> 00:03:34,810
+
+
+82
+00:03:34,810 --> 00:03:39,020
+Đường mộc ở dưới đây rất không ổn định.
+
+83
+00:03:39,020 --> 00:03:42,940
+Và đường tích lũy ở đây rất ít thay đổi.
+
+84
+00:03:42,940 --> 00:03:46,640
+Và trung bình động sẽ là một cái gì đó ở giữa.
+
+85
+00:03:46,640 --> 00:03:52,520
+Nhưng tôi có thể thay đổi tùy thuộc vào cái tôi chọn cho M.
+
+86
+00:03:52,520 --> 00:03:56,260
+Nhưng khác biệt nữa là lượng dữ liệu bạn cần.
+
+87
+00:03:56,260 --> 00:03:59,600
+Nếu bạn nhìn vào cả mô hình mộc và tích lũy,
+
+88
+00:03:59,600 --> 00:04:01,860
+tôi cần bao nhiêu dữ liệu?
+
+89
+00:04:01,860 --> 00:04:04,690
+Tôi chỉ cần giữ một phần thông tin
+
+90
+00:04:04,690 --> 00:04:07,290
+cho mỗi SKU, bởi vì mô hình mộc, tất cả
+
+91
+00:04:07,290 --> 00:04:10,230
+những gì tôi cần nhớ là cái cuối cùng.
+
+92
+00:04:10,230 --> 00:04:14,070
+Với mô hình tích lũy, tất cả những gì tôi cần là phần mới,
+
+93
+00:04:14,070 --> 00:04:16,250
+vì sau đó tôi luôn biết t của tôi là gì.
+
+94
+00:04:16,250 --> 00:04:19,529
+Nên tôi chỉ chia thứ t của cái đó, 1/t của nó,
+
+95
+00:04:19,529 --> 00:04:23,660
+và cộng cái đó lại, vì tôi luôn có thể cộng nó vào giá trị trung bình của tôi.
+
+96
+00:04:23,660 --> 00:04:25,920
+Tuy nhiên, với giá trị trung bình động,
+
+97
+00:04:25,920 --> 00:04:28,420
+bạn phải giữ các mục M cho mỗi SKU,
+
+98
+00:04:28,420 --> 00:04:33,470
+ vì tôi có những thứ này trong bốn lần quan sát cuối cùng của tôi.
+
+99
+00:04:33,470 --> 00:04:35,430
+Và bây giờ tôi sẽ đến lần thứ năm này.
+
+100
+00:04:35,430 --> 00:04:39,050
+Tôi phải bỏ cái cuối cùng này ra và bao gồm cái mới này.
+
+101
+00:04:39,050 --> 00:04:42,630
+Nên tôi cần biết giá trị của lần quan sát cuối cùng
+
+102
+00:04:42,630 --> 00:04:45,290
+trước khi tôi có thể tìm ra mức trung bình động là gì.
+
+103
+00:04:45,290 --> 00:04:49,140
+Tính toán trung bình động đòi hỏi nhiều dữ liệu hơn.
+
+104
+00:04:49,140 --> 00:04:50,720
+Và bạn có thể nghĩ, ai thèm quan tâm?
+
+105
+00:04:50,720 --> 00:04:51,450
+Dữ liệu rẻ mà.
+
+106
+00:04:51,450 --> 00:04:53,090
+Lưu trữ thông tin thật dễ dàng.
+
+107
+00:04:53,090 --> 00:04:55,790
+Nhưng khi bạn đang nói về 100.000 SKU
+
+108
+00:04:55,790 --> 00:04:59,607
+và tôi đang lưu trữ chúng ở mức 2.000 đến 3.000 cửa hàng
+
+109
+00:04:59,607 --> 00:05:01,690
+và tôi sẽ làm điều này trong các giai đoạn thời gian khác nhau,
+
+110
+00:05:01,690 --> 00:05:02,880
+nó sẽ cộng dồn lại.
+
+111
+00:05:02,880 --> 00:05:05,000
+Và bạn có thể nghĩ về điều này.
+
+112
+00:05:05,000 --> 00:05:07,800
+Mô hình tích lũy và mô hình mộc lấy ít dữ liệu hơn.
+
+113
+00:05:07,800 --> 00:05:09,880
+Và chúng ta sẽ nói về điều này nhiều hơn khi chúng ta tiếp tục,
+
+114
+00:05:09,880 --> 00:05:12,730
+vì các kỹ thuật khác nhau mà chúng ta sẽ sử dụng sẽ ít nhiều
+
+115
+00:05:12,730 --> 00:05:15,700
+thâm dụng dữ liệu.
+
+116
+00:05:15,700 --> 00:05:18,140
+Nên không kém phần quan trọng với những khác biệt,
+
+117
+00:05:18,140 --> 00:05:19,680
+chúng ta hãy nói về những điểm tương đồng
+
+118
+00:05:19,680 --> 00:05:21,471
+giữa ba mô hình này, vì chúng
+
+119
+00:05:21,471 --> 00:05:23,660
+giống nhau hơn bạn tưởng.
+
+120
+00:05:23,660 --> 00:05:26,930
+Điều đầu tiên là tất cả chúng đều là cầu cân bằng giả định.
+
+121
+00:05:26,930 --> 00:05:29,080
+Chúng ta đều giả định nhu cầu văn phòng phẩm.
+
+122
+00:05:29,080 --> 00:05:31,030
+Trông nó sẽ như thế này.
+
+123
+00:05:31,030 --> 00:05:34,047
+Tất cả chúng ta đang cố gắng tìm ra mức cân bằng đó là gì.
+
+124
+00:05:34,047 --> 00:05:35,130
+Cả ba mô hình này.
+
+125
+00:05:35,130 --> 00:05:35,963
+Không có xu hướng.
+
+126
+00:05:35,963 --> 00:05:37,030
+Không có các bước.
+
+127
+00:05:37,030 --> 00:05:39,660
+Không có tính mùa vụ.
+
+128
+00:05:39,660 --> 00:05:42,620
+Nên tất cả các mô hình này trì trệ đến một mức độ nào đó.
+
+129
+00:05:42,620 --> 00:05:46,390
+Ngay cả mô hình mộc sẽ trì trệ một chút.
+
+130
+00:05:46,390 --> 00:05:50,160
+Vậy nếu có xu hướng cơ bản và tôi sử dụng một trong các mô hình này,
+
+131
+00:05:50,160 --> 00:05:53,590
+tôi sẽ luôn trì trệ.
+
+132
+00:05:53,590 --> 00:05:56,190
+Một điều khác mà chúng làm là
+
+133
+00:05:56,190 --> 00:05:59,540
+bất kể số lượng lịch sử mà chúng chọn để xem xét,
+
+134
+00:05:59,540 --> 00:06:02,680
+dù đó là tất cả lịch sử, chỉ ngày hôm qua,
+
+135
+00:06:02,680 --> 00:06:07,770
+hay một số lượng nhất định, M, chúng ta luôn sử dụng trọng số bằng nhau.
+
+136
+00:06:07,770 --> 00:06:09,340
+Vậy với mô hình mộc, chỉ có một.
+
+137
+00:06:09,340 --> 00:06:11,620
+Nên nó sẽ là 100%.
+
+138
+00:06:11,620 --> 00:06:15,510
+Với mô hình tích lũy, nếu tôi có 100 lần quan sát,
+
+139
+00:06:15,510 --> 00:06:17,910
+mỗi lần quan sát sẽ là 1/100.
+
+140
+00:06:17,910 --> 00:06:22,150
+Nếu M của tôi bằng 4 thì mỗi lần quan sát sẽ là 1/4.
+
+141
+00:06:22,150 --> 00:06:24,930
+Nêu tôi coi tất cả lịch sử là như nhau.
+
+142
+00:06:24,930 --> 00:06:26,720
+Khác biệt duy nhất ở đây là
+
+143
+00:06:26,720 --> 00:06:29,475
+thực tế tôi cân nhắc bao nhiêu lịch sử.
+
+144
+00:06:29,475 --> 00:06:31,865
+Nhưng tôi coi chúng như nhau thế nào.
+
+145
+00:06:31,865 --> 00:06:33,460
+Đó là trọng số như nhau.
+
+146
+00:06:33,460 --> 00:06:36,680
+Vậy quan sát gần đây nhất của tôi quan trọng
+
+147
+00:06:36,680 --> 00:06:38,500
+như quan sát cũ nhất mà tôi đang cân nhắc
+
+148
+00:06:38,500 --> 00:06:41,400
+dù đó là tất cả lịch sử cho mô hình tích lũy,
+
+149
+00:06:41,400 --> 00:06:46,900
+hay chỉ là M giai đoạn cho trung bình động.
+
+150
+00:06:46,900 --> 00:06:48,242
+Chúng ta đã giới thiệu rất nhiều ở đây.
+
+151
+00:06:48,242 --> 00:06:49,950
+Đây là những mô hình đơn giản, nhưng chúng
+
+152
+00:06:49,950 --> 00:06:51,730
+trở thành cốt lõi của rất nhiều đánh đổi
+
+153
+00:06:51,730 --> 00:06:53,270
+mà chúng tôi đưa ra để dự báo.
+
+154
+00:06:53,270 --> 00:06:55,780
+Nên nếu bạn có bất kỳ câu hỏi, nhận xét, đề xuất nào,
+
+155
+00:06:55,780 --> 00:06:57,670
+hãy sử dụng phần thảo luận.
+

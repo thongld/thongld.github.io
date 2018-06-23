@@ -1,0 +1,861 @@
+0
+00:00:05,199 --> 00:00:10,450
+Chào các bạn. 
+Chúng ta đã học về Đánh giá rủi ro trong dự án.
+Trong lĩnh vực này chúng ta sẽ dùng rất nhiều khái niệm về thống kê.
+
+2
+00:00:17,133 --> 00:00:19,878
+Trước tiên, như thường lệ, tôi sẽ dành thời gian 
+
+3
+00:00:19,878 --> 00:00:24,730
+giải thích tại sao chúng ta lại học phần này.
+
+4
+00:00:24,730 --> 00:00:27,240
+Thứ hai là học về thống kê.
+
+5
+00:00:27,240 --> 00:00:29,970
+Và tôi cũng đã gửi cho các bạn dữ liệu ở lần trước rồi.
+
+6
+00:00:29,970 --> 00:00:34,800
+Tôi sẽ không chiếu lên, dữ liệu của các bạn gồm 2 loại.
+
+7
+00:00:34,800 --> 00:00:40,550
+1 loại là về danh mục dầu tư có cả rủi ro và mức sinh lời
+
+8
+00:00:40,550 --> 00:00:44,950
+trong vài thập kỉ vừa qua của Hoa Kì.
+
+9
+00:00:45,950 --> 00:00:49,620
+Số liệu của một số công ty nhỏ
+
+10
+00:00:49,620 --> 00:00:52,320
+cao trên 20%.
+
+11
+00:00:52,320 --> 00:00:55,710
+Chúng ta sẽ thảo luận về những thứ đó
+
+12
+00:00:56,750 --> 00:01:01,310
+vì các bạn sẽ học cách đánh giá rủi ro
+
+13
+00:01:01,310 --> 00:01:06,340
+và xem thử rủi ro liên hệ với mức sinh lời như thế nào, và tính cả vốn đầu tư nữa.
+
+14
+00:01:06,340 --> 00:01:09,710
+Rất nhiều bước khác nhau, và chúng ta sẽ đi từng bước một.
+
+15
+00:01:09,710 --> 00:01:14,309
+Loại dữ liệu thứ hai là dữ liệu từ 11 công ty
+
+16
+00:01:15,720 --> 00:01:19,830
+được lấy từ dữ liệu thị trường chứng khoán Hoa Kì, và
+
+17
+00:01:19,830 --> 00:01:22,920
+chúng cũng cho các bạn biết về độ lệch chuẩn.
+
+18
+00:01:22,920 --> 00:01:25,770
+Khi tôi nói đến giá trị pháp ly hay độ lệch chuẩn,
+
+19
+00:01:25,770 --> 00:01:29,370
+tôi đang cố phân biệt giữa phương sai và độ lệch chuẩn.
+
+20
+00:01:30,740 --> 00:01:32,605
+Và tôi cũng đã cho các bạn xem dữ liệu của 
+
+21
+00:01:32,605 --> 00:01:37,436
+11 công ty trong 1 khoảng thời gian dài, và cả công ty S&P 500.
+
+22
+00:01:37,436 --> 00:01:41,130
+Vậy thì tôi hỏi các bạn câu này:
+Có hiện tượng gì đang xảy ra?
+
+23
+00:01:41,130 --> 00:01:46,535
+Ý tôi là tại sao mức sinh lời trung bình của 1 1 công ty
+
+24
+00:01:46,535 --> 00:01:51,825
+được chọn từ nhiều ngành khác nhau,
+
+25
+00:01:51,825 --> 00:01:56,655
+lại cao hơn nhiều so với độ lệch chuẩn
+
+26
+00:01:56,655 --> 00:02:01,144
+của danh mục đầu tư, ngay cả S&P 500?
+
+27
+00:02:01,144 --> 00:02:05,390
+Các bạn sẽ thực hành với những bài tập thú vị trong học phần này.
+
+28
+00:02:05,390 --> 00:02:11,380
+Kết hợp mức an toàn vào danh mục đầu tư và chúng ta sẽ xem xét sự thay đổi của chúng.
+
+29
+00:02:11,380 --> 00:02:14,670
+Nhưng chúng ta sẽ thiết lập một số dữ liệu thú vị.
+
+30
+00:02:14,670 --> 00:02:19,745
+Và nếu như các bạn tính mức sinh lời trung bình của 11 công ty,
+
+31
+00:02:19,745 --> 00:02:26,087
+thì kết quả là khoảng 27% như tôi đã tính ở trên, trong khi đó S&P 500 là 15% và
+
+32
+00:02:26,087 --> 00:02:32,790
+thấp nhất trong số 12, à không 11 công ty.
+
+33
+00:02:32,790 --> 00:02:35,840
+Tôi tóm tắt để các bạn nắm bắt được chúng ta đang làm gì.
+
+34
+00:02:35,840 --> 00:02:40,550
+Và còn cả lý do tại sao chúng ta lại nắm giữ danh mục đầu tư, trong khi
+
+35
+00:02:40,550 --> 00:02:44,009
+hầu hết các bạn là những người né tránh rủi ro.
+
+36
+00:02:45,170 --> 00:02:49,330
+Hôm nay chúng ta sẽ thảo luận về sự đa dạng?
+
+37
+00:02:49,330 --> 00:02:50,660
+Quy luật của nó như thế nào?
+
+38
+00:02:50,660 --> 00:02:56,100
+Chúng ta sẽ đi từng bước một, sử dụng lại một số dữ liệu cũ, do đó nên tôi sẽ
+
+39
+00:02:56,100 --> 00:03:01,550
+lấy số liệu cũ ra và chiếu lên để các bạn theo kịp.
+
+40
+00:03:01,550 --> 00:03:04,600
+Và tôi cũng đã có số liệu của công ty S&P 500 trong đó rồi.
+
+41
+00:03:04,600 --> 00:03:07,130
+ 
+
+42
+00:03:07,130 --> 00:03:10,870
+Hãy quay lại lấy số liệu đó khi bạn tính toán.
+
+43
+00:03:10,870 --> 00:03:14,950
+Và tôi cũng sẽ dành thời gian cho nó, vì chúng ta cũng có một vài ví dụ,
+
+44
+00:03:14,950 --> 00:03:17,860
+nhưng vừa đủ thôi vì các bạn còn phải tự luyện tập nữa.
+
+45
+00:03:17,860 --> 00:03:19,440
+Bắt đầu nào.
+
+46
+00:03:19,440 --> 00:03:21,900
+Đa dạng hóa là 
+
+47
+00:03:21,900 --> 00:03:26,250
+sự suy giảm của độ lệch chuẩn theo biến động.
+
+48
+00:03:26,250 --> 00:03:30,300
+Nếu danh mục đầu tư gồm nhiều công ty và
+
+49
+00:03:30,300 --> 00:03:34,430
+bạn muốn lấy trung bình để
+
+50
+00:03:34,430 --> 00:03:39,960
+tính độ lệch chuẩn, thì giá trị đó sẽ cao hơn độ lệch chuẩn của các công ty,
+
+51
+00:03:39,960 --> 00:03:45,410
+nên hãy cẩn thận, lát nữa chúng ta sẽ xem xét tại sao.
+
+52
+00:03:45,410 --> 00:03:46,330
+ 
+
+53
+00:03:46,330 --> 00:03:47,260
+Nhớ rằng
+
+54
+00:03:47,260 --> 00:03:51,060
+lúc nào cũng tiềm ẩn 2 rủi ro cả.
+
+55
+00:03:51,060 --> 00:03:53,230
+Một là thị trường.
+
+56
+00:03:53,230 --> 00:03:56,700
+Hai là những thứ có liên quan đến công ty, tài sản
+
+57
+00:03:56,700 --> 00:03:59,700
+hay bất cứ cái gì bạn đưa vào danh mục đầu tư.
+
+58
+00:03:59,700 --> 00:04:02,160
+Nhớ chú ý đến đại cục.
+
+59
+00:04:02,160 --> 00:04:06,540
+Rủi ro nào trong hai cái trên sẽ giảm dần.
+
+60
+00:04:06,540 --> 00:04:10,640
+Nói cách khác, rủi ro thị trường sẽ giữ nguyên không đổi, hay
+
+61
+00:04:10,640 --> 00:04:14,290
+rủi ro đặc định sẽ tự động biến mất?
+
+62
+00:04:15,370 --> 00:04:16,870
+Câu trả lời cũng khá rõ ràng rồi.
+
+63
+00:04:16,870 --> 00:04:19,150
+Tôi sẽ để ngỏ và quay lại ở phần sau.
+
+64
+00:04:20,950 --> 00:04:23,840
+ 
+
+65
+00:04:23,840 --> 00:04:25,540
+Bắt đầu nào.
+
+66
+00:04:25,540 --> 00:04:31,220
+Giả sử như vì một vài lý do nào đó, bạn đưa Google vào danh mục đầu tư của mình,
+
+67
+00:04:31,220 --> 00:04:37,370
+Nói cách khác, bạn mua cổ phiếu của Google và đưa nó vào danh mục đầu tư của mình.
+
+68
+00:04:37,370 --> 00:04:41,790
+Chúng ta sẽ đi chậm trong phần này
+
+69
+00:04:41,790 --> 00:04:44,179
+bởi vì tôi muốn các bạn tự viết lại theo ý mình.
+
+70
+00:04:45,210 --> 00:04:46,430
+Câu hỏi đầu tiên.
+
+71
+00:04:46,430 --> 00:04:48,520
+Làm cách nào bạn đánh giá được mức độ rủi ro của Google?
+
+72
+00:04:48,520 --> 00:04:51,000
+Hay rủi ro của số cổ phiếu kia?
+
+73
+00:04:51,000 --> 00:04:55,120
+Câu trả lời là độ lệch chuẩn của Google.
+
+74
+00:04:55,120 --> 00:05:00,480
+Các bạn sẽ có được nhiều giá trị trung bình như ví dụ chúng ta đã làm,
+
+75
+00:05:00,480 --> 00:05:05,750
+và các bạn có thể làm được bằng cách tra Google và tải dữ liệu về.
+
+76
+00:05:05,750 --> 00:05:08,260
+Hoặc các bạn có thể lên Yahoo Tài chình hay những nguồn dữ liệu khác.
+
+77
+00:05:08,260 --> 00:05:11,060
+Một số nguồn thì tốt hơn những nguồn khác nhưng
+
+78
+00:05:11,060 --> 00:05:13,050
+bây giờ chúng ta hãy tập trung vào các khái niệm trước đã.
+
+79
+00:05:14,130 --> 00:05:15,790
+Các bạn làm cách nào để đánh giá rủi ro của Google?
+
+80
+00:05:15,790 --> 00:05:19,020
+Các bạn chỉ cần lấy số liệu trong khoảng 5 năm hoặc hơn.
+
+81
+00:05:19,020 --> 00:05:21,840
+Và hi vọng là nó đại diện đủ cho cả công ty.
+
+82
+00:05:21,840 --> 00:05:25,850
+Các bạn sẽ thấy số bài tập mà tôi sẽ đưa cho các bạn.
+
+83
+00:05:25,850 --> 00:05:30,483
+Ý tôi khi nói "tính đại diện là", ngay cả khi 5 năm bạn chọn là thời điểm xấu,
+
+84
+00:05:30,483 --> 00:05:35,210
+nó cũng không mang tính đại diện vì chúng ta không phải lúc nào cũng gặp phải thời điểm xấu.
+
+85
+00:05:36,240 --> 00:05:37,830
+Rồi, các bạn đánh giá rủi ro bằng cách nào?
+
+86
+00:05:37,830 --> 00:05:38,700
+Dựa theo độ lệch chuẩn.
+
+87
+00:05:40,420 --> 00:05:42,900
+Các bạn đánh giá rủi ro trong danh mục đầu tư của mình như thế nào?
+
+88
+00:05:42,900 --> 00:05:45,250
+Nhớ rằng, trong lúc này,
+
+89
+00:05:45,250 --> 00:05:50,380
+vì một vài lý do nên các bạn chỉ chọn một công ty trong toàn bộ danh mục đầu tư của mình.
+
+90
+00:05:50,380 --> 00:05:52,870
+Vậy rủi ro của danh mục đầu tư như thế nào?
+
+91
+00:05:52,870 --> 00:05:57,287
+Tôi sẽ không nói về cái đó ngay lập tức
+
+92
+00:05:57,287 --> 00:06:01,540
+mà tôi sẽ bám sát phần đó trong một lát.
+
+93
+00:06:01,540 --> 00:06:06,160
+Do vậy nên độ lệch chuẩn của Google cũng chính là độ lệch chuẩn của danh mục đầu tư.
+
+94
+00:06:07,450 --> 00:06:08,190
+Giả sử
+
+95
+00:06:08,190 --> 00:06:12,970
+bạn chỉ đầu tư vào Microsoft, thì rủi ro của danh mục đầu tư như thế nào?
+
+96
+00:06:12,970 --> 00:06:17,350
+Tính dễ thay đổi của độ lệch chuẩn của mức sinh lời của công ty Microsoft.
+
+97
+00:06:18,500 --> 00:06:21,730
+Cũng khá đơn giản và dễ hiểu.
+
+98
+00:06:21,730 --> 00:06:24,170
+Một câu hỏi ngoài lề.
+
+99
+00:06:24,170 --> 00:06:27,830
+Lãi suất kì vọng của danh mục đầu tư của bạn là bao nhiêu?
+
+100
+00:06:27,830 --> 00:06:32,010
+Tính lãi suất kỳ vọng của danh mục đầu tư rất dễ nên chúng ta sẽ đi nhanh qua phần này.
+
+101
+00:06:32,010 --> 00:06:34,650
+Ngoại lệ là khi chúng ta làm một số ví dụ.
+
+102
+00:06:34,650 --> 00:06:39,120
+Lúc này lãi suất kỳ vọng phải là lãi suất kỳ vọng của Google hay
+
+103
+00:06:39,120 --> 00:06:39,920
+của Microsoft.
+
+104
+00:06:39,920 --> 00:06:41,890
+Nhớ là các bạn chỉ chọn một cái thôi.
+
+105
+00:06:41,890 --> 00:06:45,030
+Đây là bài luyện tập thôi.
+
+106
+00:06:45,030 --> 00:06:47,990
+Giờ chúng ta quay lại bài học.
+
+107
+00:06:47,990 --> 00:06:53,720
+Rủi ro của danh mục đầu tư và rủi ro của Google được đánh giá như thế nào?
+
+108
+00:06:53,720 --> 00:06:55,370
+Chúng như nhau thôi.
+
+109
+00:06:55,370 --> 00:06:57,380
+Do đó nên không có gì phải lo lắng.
+
+110
+00:06:57,380 --> 00:07:00,270
+Nhưng thực tế thì không đơn giản vậy.
+
+111
+00:07:00,270 --> 00:07:05,980
+Chúng ta không chỉ có một mức độ an toàn, lý do rất đơn giản: sự đa dạng.
+
+112
+00:07:05,980 --> 00:07:09,560
+Chúng ta không muốn đặt toàn bộ trứng vào cùng một rổ.
+
+113
+00:07:09,560 --> 00:07:13,270
+Cũng khá là hợp lý nếu như các bạn là người né tránh rủi ro nhỉ?
+
+114
+00:07:13,270 --> 00:07:18,120
+Bởi vì nếu bạn là người tránh rủi ro, tại sao bạn phải đầu tư vô 1 cái?
+
+115
+00:07:18,120 --> 00:07:21,460
+Các bạn có thể được rất nhiều và
+
+116
+00:07:21,460 --> 00:07:23,740
+có thể mất rất nhiều.
+
+117
+00:07:25,470 --> 00:07:27,810
+Giờ chúng ta sẽ đi vào 2 nội dung.
+
+118
+00:07:27,810 --> 00:07:29,610
+Thiết lập phương trình và
+
+119
+00:07:29,610 --> 00:07:33,500
+sau đó chúng ta sẽ nghỉ một lúc trước khi tìm hiểu bản chất của nó.
+
+120
+00:07:33,500 --> 00:07:37,220
+Vì vậy nên tôi sẽ giảng cho các bạn nghe về tính chất cũng như cách làm.
+
+121
+00:07:39,190 --> 00:07:42,060
+Giả sử như các bạn, à không,...
+
+122
+00:07:42,060 --> 00:07:43,870
+Đây không phải bài tập.
+
+123
+00:07:43,870 --> 00:07:47,321
+Giả sử tôi có 2 công ty trong danh mục đầu tư của mình.
+
+124
+00:07:47,321 --> 00:07:49,970
+Giả sử 2 công ty đó là Google và Microsoft.
+
+125
+00:07:49,970 --> 00:07:51,460
+Nhớ rằng chúng ta sẽ tính toán sau,
+
+126
+00:07:51,460 --> 00:07:56,050
+còn bây giờ chúng ta sẽ lấy tên các công ty nổi tiếng để làm ví dụ thôi.
+
+127
+00:07:56,050 --> 00:07:58,390
+Tôi có 2 công ty là Google và Microsoft.
+
+128
+00:07:58,390 --> 00:08:02,870
+Các bạn làm thế nào để đánh giá được rủi ro của từng công ty?
+
+129
+00:08:04,370 --> 00:08:09,970
+Tôi nói lại, làm thế nào để đánh giá được rủi ro của từng công ty riêng lẻ?
+
+130
+00:08:09,970 --> 00:08:10,600
+Rất đơn giản.
+
+131
+00:08:12,080 --> 00:08:16,330
+Rủi ro của Microsoft là sigma Microsoft.
+
+132
+00:08:17,490 --> 00:08:18,390
+Để tôi viết lại. 
+
+133
+00:08:19,620 --> 00:08:24,708
+Sigma MS là rủi ro của Microsoft.
+
+134
+00:08:24,708 --> 00:08:30,460
+Sigma Google.
+
+135
+00:08:30,460 --> 00:08:31,210
+Đúng không?
+
+136
+00:08:31,210 --> 00:08:33,710
+Google. Biểu tượng của họ là MSFD.
+
+137
+00:08:33,710 --> 00:08:36,490
+Tôi nghĩ vậy.
+
+138
+00:08:36,490 --> 00:08:37,830
+ 
+
+139
+00:08:37,830 --> 00:08:40,350
+Cách tính rất đơn giản.
+
+140
+00:08:40,350 --> 00:08:42,570
+Chắc các bạn cũng biết cách tính rồi đúng không?
+
+141
+00:08:42,570 --> 00:08:44,790
+Do vậy nên tôi sẽ cho các bạn dữ liệu của Microsoft và Google.
+
+142
+00:08:44,790 --> 00:08:48,420
+Do vậy nên tôi sẽ khuyến khích các bạn tính thử xem sao.
+
+143
+00:08:49,790 --> 00:08:55,370
+Câu hỏi thứ 2: Các bạn làm thế nào để đánh giá rủi ro trung bình của cả 2 công ty?
+
+144
+00:08:55,370 --> 00:08:58,113
+Để tính chúng ta phải quay lại biểu đồ mà tôi cho các bạn xem ở lần trước.
+
+145
+00:08:58,113 --> 00:09:02,260
+Tôi đã cho các bạn 11 công ty và hỏi các bạn độ lệch chuẩn trung bình là bao nhiêu?
+
+146
+00:09:02,260 --> 00:09:04,780
+Bạn sẽ làm gì nếu chỉ tính giá trị trung bình của một công ty?
+
+147
+00:09:04,780 --> 00:09:06,546
+Các bạn chỉ cần lấy một nửa thôi.
+
+148
+00:09:08,008 --> 00:09:15,390
+rồi nhân với tổng của Sigma Google và Sigma Microsoft.
+
+149
+00:09:15,390 --> 00:09:17,440
+Cũng khá dễ hiểu, đúng không?
+
+150
+00:09:17,440 --> 00:09:24,510
+Mọi thứ đều đơn giản, giờ chúng ta sẽ qua phần khó khăn.
+
+151
+00:09:25,580 --> 00:09:28,440
+Bạn đánh giá rủi ro trong danh mục đầu tư của mình như thế nào?
+
+152
+00:09:30,100 --> 00:09:33,510
+Giờ mọi thứ sẽ hơi lắt léo một chút.
+
+153
+00:09:33,510 --> 00:09:34,780
+Tại sao à?
+
+154
+00:09:34,780 --> 00:09:39,310
+Vì rủi ro của cả danh mục đầu tư được tính từ rủi ro của 2 công ty.
+
+155
+00:09:40,660 --> 00:09:45,810
+Giả sử tình huống như sau:
+
+156
+00:09:45,810 --> 00:09:49,465
+Bạn bỏ một nửa số tiền của mình, tất cả là $100,
+
+157
+00:09:49,465 --> 00:09:52,889
+bạn bỏ $50 vào Microsoft và $50 vào Google.
+
+158
+00:09:52,889 --> 00:09:55,273
+Đó là điều đầu tiên mà các bạn phải quyết định.
+
+159
+00:09:55,273 --> 00:09:59,315
+Ngay khi lập ra danh mục đầu tư của mình, bạn phải xem thử có bao nhiêu công ty trong đó.
+
+160
+00:09:59,315 --> 00:10:01,390
+và tiền đầu tư vào mỗi công ty là bao nhiêu.
+
+161
+00:10:01,390 --> 00:10:05,830
+Nếu bạn đầu tư hết vào một công ty, tức là 100% vào Google,
+
+162
+00:10:05,830 --> 00:10:08,454
+và 100% vào Microsoft.
+
+163
+00:10:08,454 --> 00:10:12,940
+Ngay khi lập ra danh mục đầu tư, câu hỏi đầu tiên là
+
+164
+00:10:12,940 --> 00:10:17,280
+bạn đầu tư bao nhiêu vào mỗi công ty?
+
+165
+00:10:17,280 --> 00:10:21,380
+Và nhân tiện tôi nói luôn, rất nhiều công ty tài chính 
+
+166
+00:10:21,380 --> 00:10:26,200
+làm bạn cảm thấy rằng họ đang giúp bạn ra quyết định, và
+
+167
+00:10:26,200 --> 00:10:27,790
+thông qua đó thu phí của bạn.
+
+168
+00:10:27,790 --> 00:10:28,850
+Không cần đâu.
+
+169
+00:10:28,850 --> 00:10:32,020
+Nếu bạn hiểu những cái căn bản mà chúng ta đang thảo luận, thì
+
+170
+00:10:32,020 --> 00:10:34,180
+bạn sẽ có những chiến lược vô cùng đơn giản và
+
+171
+00:10:34,180 --> 00:10:39,700
+do đó nên các bạn có thể giảm thiểu chi phí bằng cách lập ra nhiều danh mục đầu tư khác nhau.
+
+172
+00:10:39,700 --> 00:10:44,550
+Đó là trường hợp mà bạn là người né tránh rủi ro và bạn sẵn sàng mua các công ty
+
+173
+00:10:44,550 --> 00:10:47,240
+đang có phiên giao dịch trên thị trường.
+
+174
+00:10:47,240 --> 00:10:51,900
+Rất khó để chống lại sức hút của thị trường chứng khoán.
+
+175
+00:10:51,900 --> 00:10:53,800
+Hầu hết chúng ta đều nghĩ chúng ta có thể làm được.
+
+176
+00:10:53,800 --> 00:10:55,230
+Đây là nội dung chính của bài học.
+
+177
+00:10:55,230 --> 00:10:57,920
+Rủi ro của danh mục đầu tư được tính như thế nào?
+
+178
+00:10:57,920 --> 00:11:02,150
+Để cho đơn giản, tôi sẽ kí hiệu là Sigma p.
+
+179
+00:11:05,230 --> 00:11:08,390
+ 
+
+180
+00:11:08,390 --> 00:11:14,160
+Tôi để đây cho các bạn xem.
+
+181
+00:11:14,160 --> 00:11:19,369
+Và tôi sẽ viết ra mức sinh lời của danh mục đầu tư: Xa
+
+182
+00:11:19,369 --> 00:11:25,460
+nhân với Ra cộng Xb nhân với Rb.
+
+183
+00:11:26,490 --> 00:11:30,290
+Bây giờ thì danh mục đầu tư được tính theo 2 công ty.
+
+184
+00:11:30,290 --> 00:11:33,440
+Chúng ta sẽ lần lượt tính từng số.
+
+185
+00:11:33,440 --> 00:11:37,070
+Tôi sẽ nói lại một lần nữa về các số này.
+
+186
+00:11:37,070 --> 00:11:37,730
+Ý nghĩa của Xa là gì?
+
+187
+00:11:37,730 --> 00:11:39,800
+Tỉ lệ % của công ty a.
+
+188
+00:11:39,800 --> 00:11:40,580
+Vậy a là công ty nào?
+
+189
+00:11:40,580 --> 00:11:42,230
+Trong ví dụ này là Google.
+Còn công ty b?
+
+190
+00:11:42,230 --> 00:11:43,810
+Microsoft.
+
+191
+00:11:43,810 --> 00:11:47,390
+a và b là cách viết khá là tổng quát.
+
+192
+00:11:47,390 --> 00:11:51,220
+Mức sinh lời của danh mục đầu tư giờ phụ thuộc vào cả 2 công ty.
+
+193
+00:11:51,220 --> 00:11:55,960
+Vậy làm thế nào để tính độ lệch chuẩn của số này
+
+194
+00:11:57,140 --> 00:12:00,330
+khi nó trở thành rủi ro của danh mục đầu tư?
+Đó cũng là mục tiêu của chúng ta.
+
+195
+00:12:01,770 --> 00:12:07,180
+Rủi ro của danh mục đầu tư có giống như rủi ro trung bình của cả 2 công ty không?
+
+196
+00:12:07,180 --> 00:12:09,790
+Các bạn đã biết câu trả lời đó rồi.
+
+197
+00:12:09,790 --> 00:12:14,540
+Bởi vì lần trước tôi cũng đã hỏi các bạn câu này, đồng thời cũng cho các bạn 11 chỉ số an toàn.
+
+198
+00:12:14,540 --> 00:12:15,810
+Vậy câu trả lời là gì?
+
+199
+00:12:17,470 --> 00:12:18,960
+Không
+
+200
+00:12:18,960 --> 00:12:26,290
+Chọn ngẫu nhiên 2 công ty không hề giống với việc tính rủi ro trung bình từ rủi ro của 2 công ty đó.
+
+201
+00:12:26,290 --> 00:12:30,710
+Đó là giá trị sigma 1 trung bình và sigma 2 trung bình.
+
+202
+00:12:30,710 --> 00:12:35,169
+Số đó không thể giống nhau vì độ lệch chuẩn của đanh mục đầu tư.
+
+203
+00:12:35,169 --> 00:12:40,091
+của 2 công ty đó hầu như sẽ luôn thấp.
+
+204
+00:12:42,139 --> 00:12:46,866
+Lý do rất đơn giản.
+
+205
+00:12:46,866 --> 00:12:49,350
+Đó là do sự đa dạng.
+
+206
+00:12:49,350 --> 00:12:50,970
+Câu hỏi phụ:
+
+207
+00:12:50,970 --> 00:12:54,640
+Nếu các bạn đưa cả Microsoft và Google chung với nhau, và
+
+208
+00:12:54,640 --> 00:12:57,140
+đó là giả thiết của tôi,
+
+209
+00:12:57,140 --> 00:12:58,840
+và tôi muốn các bạn suy nghĩ 
+
+210
+00:12:58,840 --> 00:13:04,120
+Khi nào xảy ra trường hợp độ lệch chuẩn của cả 2
+
+211
+00:13:04,120 --> 00:13:05,570
+hay của danh mục đầu tư,
+
+212
+00:13:06,710 --> 00:13:10,140
+sẽ giống như độ lệch chuẩn trung bình của 2 công ty?
+
+213
+00:13:11,960 --> 00:13:16,660
+Hãy để ngỏ câu hỏi đó, chúng ta sẽ quay lại sau ít phút nữa.
+
+214
+00:13:16,660 --> 00:13:18,579
+Chào các bạn.
+

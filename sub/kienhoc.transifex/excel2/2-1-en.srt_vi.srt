@@ -1,0 +1,68 @@
+1
+00:00:00,500 --> 00:00:07,040
+Chào mừng đến với tuần 2 của khóa học. Tuần trước ta đã nói về nhập dữ liệu.
+
+2
+00:00:07,380 --> 00:00:13,340
+Làm thế nào để đưa dữ liệu từ một file csv vào Excel. Tuần này ta có thể trả lời các câu hỏi kiểu như
+
+3
+00:00:13,340 --> 00:00:19,280
+Có bao nhiêu đôi tất màu xanh lá đã được bán ra ở Tokyo vào các ngày thứ tư?
+
+4
+00:00:19,390 --> 00:00:25,330
+Đó là vấn đề ta sẽ giải quyết ở bài học tuần này. Nhân tiện, đây là một ví dụ điển hình
+
+5
+00:00:25,330 --> 00:00:30,410
+về nhu cầu kinh doanh mà ta từng nói đến. Các doanh nghiệp có nhu cầu biết rõ về điều gì đó,
+
+6
+00:00:30,410 --> 00:00:35,109
+và những nhu cầu đó cần được đáp ứng bằng báo cáo theo thời gian thực. Vì sếp của bạn muốn
+
+7
+00:00:35,109 --> 00:00:40,409
+biết bao nhiêu đôi tất được bán ở Tokyo ngay lúc này, chứ không phải trong 5 tuần. Việc này cần
+
+8
+00:00:40,409 --> 00:00:46,719
+một báo cáo thời gian thực. Cho nên công việc của ta là làm tuần tự các bước sau: nhập dữ liệu,
+
+9
+00:00:46,719 --> 00:00:51,939
+tranh cãi về nó rồi phân tích nó, đây cũng chính là chủ đề của bài học tuần này.
+
+10
+00:00:52,280 --> 00:00:58,760
+Không phải chỉ là phân tích dữ liệu đơn thuần mà là phân tích thăm dò. Bởi vì sếp của bạn không phải
+
+11
+00:00:58,760 --> 00:01:04,480
+lúc nào cũng hỏi những câu kiểu này. Đôi khi cô ấy sẽ hỏi những câu như "Mọi việc thuận lợi chứ?" 
+
+12
+00:01:04,480 --> 00:01:10,340
+Một câu hỏi chung chung như thế có thể hơi khó trả lời. "Thuận lợi" cái gì mới được chứ?
+
+13
+00:01:10,340 --> 00:01:16,020
+Nó có thể là về doanh thu, về mức tăng trưởng, hoặc sản phẩm cụ thể nào đó. 
+
+14
+00:01:16,020 --> 00:01:21,340
+Vậy nên với những câu hỏi chung chung kiểu này, để trả lời được chúng, hẳn là ta muốn có
+
+15
+00:01:21,340 --> 00:01:24,460
+một thiết lập bảng điều khiển giúp ta làm điều đó
+
+16
+00:01:25,100 --> 00:01:28,340
+Nên nếu ta muốn trả lời những câu hỏi kiểu như thế, muốn
+
+17
+00:01:28,350 --> 00:01:32,470
+thăm dò dữ liệu, thì đó chính là vấn đề ta sẽ tìm hiểu trong bài học tuần này!
+

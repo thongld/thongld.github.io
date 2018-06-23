@@ -1,0 +1,417 @@
+1223
+00:52:59,106 --> 00:53:12,020
+https://youtu.be/G721cooZXgs
+
+1224
+00:53:12,020 --> 00:53:13,747
+What was the largest number?
+
+1225
+00:53:13,747 --> 00:53:21,380
+
+1226
+00:53:21,380 --> 00:53:24,940
+As a matter of fact, how
+did you solve that problem?
+
+1227
+00:53:24,940 --> 00:53:28,046
+You solved that
+problem, most likely,
+
+1228
+00:53:28,046 --> 00:53:29,920
+because you didn't--
+you couldn't look at all
+
+1229
+00:53:29,920 --> 00:53:33,800
+the numbers the same time, so
+you probably created a variable
+
+1230
+00:53:33,800 --> 00:53:36,530
+in your head without
+even knowing it.
+
+1231
+00:53:36,530 --> 00:53:39,280
+And you put into
+that variable, you
+
+1232
+00:53:39,280 --> 00:53:44,320
+called the variable, the
+largest number I've seen so far.
+
+1233
+00:53:44,320 --> 00:53:46,600
+And you hadn't seen
+any, so let's say
+
+1234
+00:53:46,600 --> 00:53:49,625
+the largest number you've
+seen so far is negative 1.
+
+1235
+00:53:49,625 --> 00:53:51,870
+Then, I showed you 3.
+
+1236
+00:53:51,870 --> 00:53:55,910
+And you said yourself,
+well, negative 1
+
+1237
+00:53:55,910 --> 00:53:58,202
+is no longer the largest
+number I've seen,
+
+1238
+00:53:58,202 --> 00:53:59,452
+so I'm going to keep that one.
+
+1239
+00:53:59,452 --> 00:54:01,910
+I'll keep 3, that's
+largest I've seen so far.
+
+1240
+00:54:01,910 --> 00:54:03,930
+And now I see 41.
+
+1241
+00:54:03,930 --> 00:54:08,340
+41 is larger than 3,
+so I will keep that.
+
+1242
+00:54:08,340 --> 00:54:09,490
+And now I see 12.
+
+1243
+00:54:09,490 --> 00:54:13,550
+Now, 12 is crap because it's
+nowhere near as good as 41.
+
+1244
+00:54:13,550 --> 00:54:16,830
+So I'm keeping 41.
+
+1245
+00:54:16,830 --> 00:54:17,694
+9.
+
+1246
+00:54:17,694 --> 00:54:18,560
+9.
+
+1247
+00:54:18,560 --> 00:54:21,490
+Not nearly as good as 41,
+so I'll throw that away.
+
+1248
+00:54:21,490 --> 00:54:22,750
+74?
+
+1249
+00:54:22,750 --> 00:54:23,670
+Better, better.
+
+1250
+00:54:23,670 --> 00:54:24,170
+Keep it.
+
+1251
+00:54:24,170 --> 00:54:25,330
+Keep that one.
+
+1252
+00:54:25,330 --> 00:54:27,450
+So I'll keep 74.
+
+1253
+00:54:27,450 --> 00:54:29,279
+And the last number's 15.
+
+1254
+00:54:29,279 --> 00:54:30,820
+Don't even know it's
+the last number,
+
+1255
+00:54:30,820 --> 00:54:32,540
+but we don't want
+to keep that one.
+
+1256
+00:54:32,540 --> 00:54:34,650
+And so now, we're done.
+
+1257
+00:54:34,650 --> 00:54:38,000
+So we know that at the end,
+what was during the loop
+
+1258
+00:54:38,000 --> 00:54:42,079
+the largest so far,
+is the actual largest
+
+1259
+00:54:42,079 --> 00:54:42,870
+of all the numbers.
+
+1260
+00:54:42,870 --> 00:54:47,330
+And we don't remember exactly
+how many numbers there were.
+
+1261
+00:54:47,330 --> 00:54:49,150
+So that's like thinking
+like a program.
+
+1262
+00:54:49,150 --> 00:54:51,360
+This kind of sliding window.
+
+1263
+00:54:51,360 --> 00:54:53,730
+Didn't matter if I gave you
+a billion numbers or five
+
+1264
+00:54:53,730 --> 00:54:57,070
+numbers-- I think the were
+five numbers, actually.
+
+1265
+00:54:57,070 --> 00:55:00,130
+This notion of the largest
+so far is a powerful notion.
+
+1266
+00:55:00,130 --> 00:55:03,320
+As a matter of fact, it's
+central to the program
+
+1267
+00:55:03,320 --> 00:55:05,450
+I've been showing you.
+
+1268
+00:55:05,450 --> 00:55:07,970
+I don't want you try
+to understand this,
+
+1269
+00:55:07,970 --> 00:55:14,050
+but this part in the purple--
+this part in the purple
+
+1270
+00:55:14,050 --> 00:55:18,070
+is really saying, I'm going to
+loop through the counts of all
+
+1271
+00:55:18,070 --> 00:55:18,600
+the words.
+
+1272
+00:55:18,600 --> 00:55:21,310
+So it's got a word
+like, "the" is 15 times
+
+1273
+00:55:21,310 --> 00:55:24,370
+and "clown" is four times.
+
+1274
+00:55:24,370 --> 00:55:27,290
+And it's going to loop through
+all the pairs of word value
+
+1275
+00:55:27,290 --> 00:55:28,630
+combinations.
+
+1276
+00:55:28,630 --> 00:55:30,130
+And it's going to
+basically say, I'm
+
+1277
+00:55:30,130 --> 00:55:32,565
+going to go through
+the counts that I have,
+
+1278
+00:55:32,565 --> 00:55:34,940
+and I'm going to check to see
+is the count I'm looking at
+
+1279
+00:55:34,940 --> 00:55:38,820
+is bigger than the biggest
+count I've seen so far.
+
+1280
+00:55:38,820 --> 00:55:41,450
+And if it is, I'm
+going to remember it.
+
+1281
+00:55:41,450 --> 00:55:42,600
+Now don't worry about this.
+
+1282
+00:55:42,600 --> 00:55:44,141
+We haven't covered
+any of this stuff.
+
+1283
+00:55:44,141 --> 00:55:46,790
+That's a chapter two,
+three, four, five, six.
+
+1284
+00:55:46,790 --> 00:55:51,100
+But this is an
+algorithm, a paragraph,
+
+1285
+00:55:51,100 --> 00:55:55,300
+a pattern that allows you
+to find the largest number.
+
+1286
+00:55:55,300 --> 00:55:57,855
+And we'll look at this
+again in great detail
+
+1287
+00:55:57,855 --> 00:55:59,500
+in upcoming chapters.
+
+1288
+00:55:59,500 --> 00:56:03,280
+So this is thinking
+like a computer,
+
+1289
+00:56:03,280 --> 00:56:06,930
+having the sliding window
+across the long list of numbers
+
+1290
+00:56:06,930 --> 00:56:09,220
+and coming up with
+something that
+
+1291
+00:56:09,220 --> 00:56:11,420
+is the answer that you need.
+
+1292
+00:56:11,420 --> 00:56:14,220
+
+1293
+00:56:14,220 --> 00:56:15,500
+OK.
+
+1294
+00:56:15,500 --> 00:56:17,660
+So that's the end
+of this lecture.
+
+1295
+00:56:17,660 --> 00:56:19,230
+Read chapter one.
+
+1296
+00:56:19,230 --> 00:56:21,160
+Write your hello world program.
+
+1297
+00:56:21,160 --> 00:56:24,620
+Make sure if you haven't,
+get Python installed.
+
+1298
+00:56:24,620 --> 00:56:28,500
+As you read this chapter, and
+even as you install Python,
+
+1299
+00:56:28,500 --> 00:56:31,040
+and even as you write
+the first program,
+
+1300
+00:56:31,040 --> 00:56:34,440
+don't get too stuck
+on the details.
+
+1301
+00:56:34,440 --> 00:56:36,880
+I was confused for like
+eight weeks-- well,
+
+1302
+00:56:36,880 --> 00:56:39,840
+probably six weeks-- in my
+first programming class.
+
+1303
+00:56:39,840 --> 00:56:41,620
+You'll be confused, too.
+
+1304
+00:56:41,620 --> 00:56:43,240
+Just sort of wander
+through with me.
+
+1305
+00:56:43,240 --> 00:56:44,990
+Keep at it.
+
+1306
+00:56:44,990 --> 00:56:48,810
+It will start making sense at
+some point that's up to you.
+
+1307
+00:56:48,810 --> 00:56:50,960
+I can't tell you when
+it's going to make sense.
+
+1308
+00:56:50,960 --> 00:56:54,560
+So, don't stare at
+everything until you get it,
+
+1309
+00:56:54,560 --> 00:56:58,920
+just keep digging in and keep
+understanding and keep playing,
+
+1310
+00:56:58,920 --> 00:57:01,820
+and sooner or later this will
+make a lot of sense to you.
+
+1311
+00:57:01,820 --> 00:57:03,380
+I promise you.
+
+1312
+00:57:03,380 --> 00:57:05,400
+See you next lecture.
+
+1313
+00:57:05,400 --> 00:57:07,171
+

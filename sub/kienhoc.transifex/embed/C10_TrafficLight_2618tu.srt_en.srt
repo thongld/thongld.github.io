@@ -1,0 +1,1261 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/NjaMe4s0Zz8
+
+1
+00:00:00,000 --> 00:00:00,919
+
+2
+00:00:00,919 --> 00:00:01,960
+DR. JONATHAN VALVANO: Hi.
+
+3
+00:00:01,960 --> 00:00:07,540
+Let's make a traffic light
+using a finite state machine.
+
+4
+00:00:07,540 --> 00:00:10,420
+
+5
+00:00:10,420 --> 00:00:12,930
+The finite state machine
+is an abstraction.
+
+6
+00:00:12,930 --> 00:00:18,850
+And so we're going to begin our
+design by looking at the input/output.
+
+7
+00:00:18,850 --> 00:00:20,970
+So, we have two roads.
+
+8
+00:00:20,970 --> 00:00:27,430
+Cars are either going east,
+or they're going north.
+
+9
+00:00:27,430 --> 00:00:31,170
+And so, our first
+outputs are the ability
+
+10
+00:00:31,170 --> 00:00:33,410
+to control the two traffic lights.
+
+11
+00:00:33,410 --> 00:00:41,800
+So, we're going to connect three
+bits to the light that's going east.
+
+12
+00:00:41,800 --> 00:00:47,401
+And we're going to connect three bits
+for the light that's going north.
+
+13
+00:00:47,401 --> 00:00:47,900
+OK.
+
+14
+00:00:47,900 --> 00:00:50,360
+So what we have is a 6 bit output.
+
+15
+00:00:50,360 --> 00:00:55,640
+
+16
+00:00:55,640 --> 00:00:58,900
+We have two car sensors.
+
+17
+00:00:58,900 --> 00:01:02,500
+The car sensors will tell us
+whether or not cars are coming.
+
+18
+00:01:02,500 --> 00:01:09,984
+And so the north sensor here is
+going to be connected to PE1.
+
+19
+00:01:09,984 --> 00:01:16,630
+And the east sensor is going
+to be connected to PE0.
+
+20
+00:01:16,630 --> 00:01:20,580
+So we have 2 bits of input.
+
+21
+00:01:20,580 --> 00:01:26,550
+And so, to understand how this works, we
+can see that the input for this machine
+
+22
+00:01:26,550 --> 00:01:28,476
+has got four possibilities.
+
+23
+00:01:28,476 --> 00:01:32,070
+
+24
+00:01:32,070 --> 00:01:36,520
+If both sensors are low,
+that means there's no cars.
+
+25
+00:01:36,520 --> 00:01:41,710
+If both sensors are high, that means
+there are cars both directions.
+
+26
+00:01:41,710 --> 00:01:44,420
+Both roads have cars.
+
+27
+00:01:44,420 --> 00:01:51,580
+And we saw, since we tied
+PE1 to the north sensor,
+
+28
+00:01:51,580 --> 00:01:55,330
+this means there's
+cars just on the north.
+
+29
+00:01:55,330 --> 00:01:59,940
+And PE0 is tied to the
+east sensor, and so this
+
+30
+00:01:59,940 --> 00:02:04,200
+means we have cars just on the east.
+
+31
+00:02:04,200 --> 00:02:08,180
+So once we get a good understanding
+of what our input/output is,
+
+32
+00:02:08,180 --> 00:02:12,115
+the next is to capture
+the essence of state.
+
+33
+00:02:12,115 --> 00:02:15,780
+
+34
+00:02:15,780 --> 00:02:20,010
+Let's begin the design by
+thinking about the states.
+
+35
+00:02:20,010 --> 00:02:26,450
+A state represents what the machine is
+doing, what do we believe to be true.
+
+36
+00:02:26,450 --> 00:02:33,400
+And so, what I'm going to do is list
+the possibilities that can be happening.
+
+37
+00:02:33,400 --> 00:02:43,260
+So cars going north through the
+intersection represents a state.
+
+38
+00:02:43,260 --> 00:02:46,055
+We're going to allow
+cars to go through north.
+
+39
+00:02:46,055 --> 00:02:48,730
+
+40
+00:02:48,730 --> 00:02:53,855
+Later on, I skipped a spot, we're
+going to allow cars going east.
+
+41
+00:02:53,855 --> 00:02:56,460
+
+42
+00:02:56,460 --> 00:02:59,500
+And in order to flip
+between these two states,
+
+43
+00:02:59,500 --> 00:03:08,440
+we're going to have to stop,
+or slow down, the north cars.
+
+44
+00:03:08,440 --> 00:03:10,980
+
+45
+00:03:10,980 --> 00:03:15,030
+And similarly, after we're
+allowing the cars to go east,
+
+46
+00:03:15,030 --> 00:03:21,950
+then we're going to want to stop,
+or slow down, the east cars.
+
+47
+00:03:21,950 --> 00:03:23,980
+And you notice I don't
+have a state where
+
+48
+00:03:23,980 --> 00:03:27,760
+cars can go both north
+and east at the same time.
+
+49
+00:03:27,760 --> 00:03:34,170
+I don't have a state where no cars can
+go, because it's a very simple thing.
+
+50
+00:03:34,170 --> 00:03:36,640
+So once I've figured
+out what my states are,
+
+51
+00:03:36,640 --> 00:03:44,180
+the next step is to do a mapping
+from the states to the output.
+
+52
+00:03:44,180 --> 00:03:56,370
+And remember that PB 5, 4, and 3 were
+the lights for the red, yellow, green,
+
+53
+00:03:56,370 --> 00:04:00,120
+the lights for the east road.
+
+54
+00:04:00,120 --> 00:04:09,100
+So if I want cars to go east, I'm going
+to have to turn on the green, 0 0 1,
+
+55
+00:04:09,100 --> 00:04:16,630
+and the other three bits, the PB
+2, 1, and 0, which is also red,
+
+56
+00:04:16,630 --> 00:04:19,870
+yellow, green, I'm going
+to want that to be red.
+
+57
+00:04:19,870 --> 00:04:22,089
+So 1 0 0.
+
+58
+00:04:22,089 --> 00:04:26,450
+So that will be the output
+pattern allowing cars to go east.
+
+59
+00:04:26,450 --> 00:04:28,730
+Similarly, if I want
+cars to go north I'm
+
+60
+00:04:28,730 --> 00:04:36,770
+going to want to turn on this
+light, and that light, 1 0 0 0 0 1.
+
+61
+00:04:36,770 --> 00:04:41,570
+When I want the cars to
+slow down on the north road,
+
+62
+00:04:41,570 --> 00:04:46,380
+I'm going to flip this green
+light to a yellow light,
+
+63
+00:04:46,380 --> 00:04:49,480
+and leave the red light on the east.
+
+64
+00:04:49,480 --> 00:04:52,440
+And similarly, when I want
+the east cars to slow down,
+
+65
+00:04:52,440 --> 00:05:00,560
+I'm going to turn on the yellow
+light for the east, 0 1 0 1 0 0.
+
+66
+00:05:00,560 --> 00:05:07,110
+So in a Moore machine, we see a 1 to 1
+mapping between the state that we're in
+
+67
+00:05:07,110 --> 00:05:08,550
+and the output pattern.
+
+68
+00:05:08,550 --> 00:05:11,660
+
+69
+00:05:11,660 --> 00:05:15,110
+So once I get a sense of
+my states, the next step
+
+70
+00:05:15,110 --> 00:05:18,260
+is to figure out what
+to do with the inputs.
+
+71
+00:05:18,260 --> 00:05:23,270
+All right, next we've got to figure
+out what to do with our inputs.
+
+72
+00:05:23,270 --> 00:05:28,700
+In a finite state machine, the inputs
+cause the machine to change states.
+
+73
+00:05:28,700 --> 00:05:34,310
+So let's write down our states again.
+
+74
+00:05:34,310 --> 00:05:38,360
+I'll use this shorthand, Go
+N, for meaning, going north.
+
+75
+00:05:38,360 --> 00:05:43,270
+And remember, we had to
+the output pattern of 1 0 0
+
+76
+00:05:43,270 --> 00:05:51,470
+0 0 1, to allow the lights to
+be green in the north direction,
+
+77
+00:05:51,470 --> 00:05:54,370
+and red in the east direction.
+
+78
+00:05:54,370 --> 00:06:04,670
+And then I had a wait north state,
+where the north state went to yellow,
+
+79
+00:06:04,670 --> 00:06:07,870
+and the east state remained red.
+
+80
+00:06:07,870 --> 00:06:17,690
+Then I had a go east state, where
+the light on the east road was green,
+
+81
+00:06:17,690 --> 00:06:21,040
+and the light on the north road was red.
+
+82
+00:06:21,040 --> 00:06:26,370
+And then I had a wait
+on the east road, where
+
+83
+00:06:26,370 --> 00:06:28,200
+there was a yellow
+light on the east road.
+
+84
+00:06:28,200 --> 00:06:31,450
+So this is what we had from before.
+
+85
+00:06:31,450 --> 00:06:36,280
+And so what I want to do
+now, is think about what
+
+86
+00:06:36,280 --> 00:06:40,860
+I'm going to do if the input were a 0 0.
+
+87
+00:06:40,860 --> 00:06:44,300
+And remember, what does that mean?
+
+88
+00:06:44,300 --> 00:06:46,775
+That means there are no cars.
+
+89
+00:06:46,775 --> 00:06:50,030
+
+90
+00:06:50,030 --> 00:06:53,070
+That's what that means.
+
+91
+00:06:53,070 --> 00:07:00,450
+So what I'm going to think about
+is, if I'm in the Go N state,
+
+92
+00:07:00,450 --> 00:07:05,460
+if I'm in the Go N state and the input
+is 0 0, that means there are no cars.
+
+93
+00:07:05,460 --> 00:07:08,570
+So I'll just leave it right there.
+
+94
+00:07:08,570 --> 00:07:11,480
+It's fine, I'll just leave it.
+
+95
+00:07:11,480 --> 00:07:17,420
+Similarly, what does it
+mean if the input is a 0 1?
+
+96
+00:07:17,420 --> 00:07:23,960
+You remember that the 0th bit was
+connected up to the east road.
+
+97
+00:07:23,960 --> 00:07:31,370
+That means there are cars that
+are just on the east road.
+
+98
+00:07:31,370 --> 00:07:33,980
+And if there are cars on
+the east road, and the light
+
+99
+00:07:33,980 --> 00:07:42,700
+is on the north road, what I'm going
+to want to do is to stop the light.
+
+100
+00:07:42,700 --> 00:07:47,330
+But I can't go directly, I
+have to first turn it yellow.
+
+101
+00:07:47,330 --> 00:07:51,600
+And so let's finish
+the progression here.
+
+102
+00:07:51,600 --> 00:07:58,730
+So if there is a car on the east
+road, I'm going to make it go wait.
+
+103
+00:07:58,730 --> 00:08:01,230
+And then I'm going to make it go east.
+
+104
+00:08:01,230 --> 00:08:06,010
+And then I'm going to stay
+right here, on the east road.
+
+105
+00:08:06,010 --> 00:08:06,510
+See that?
+
+106
+00:08:06,510 --> 00:08:09,700
+
+107
+00:08:09,700 --> 00:08:12,560
+And so, we can see here,
+what we've built so far
+
+108
+00:08:12,560 --> 00:08:15,560
+is, if we start out in this state,
+and there's a car on the east road,
+
+109
+00:08:15,560 --> 00:08:17,120
+it will go to wait.
+
+110
+00:08:17,120 --> 00:08:24,470
+And then it will flip into this
+state, and then go into that state
+
+111
+00:08:24,470 --> 00:08:25,240
+and stay there.
+
+112
+00:08:25,240 --> 00:08:29,940
+So the light will go east green if
+they're just cars on the east road.
+
+113
+00:08:29,940 --> 00:08:32,150
+That's what we're doing.
+
+114
+00:08:32,150 --> 00:08:34,710
+What about the 1 0 state?
+
+115
+00:08:34,710 --> 00:08:39,023
+Remember, the 1 0 state is
+cars just on the north road.
+
+116
+00:08:39,023 --> 00:08:42,900
+
+117
+00:08:42,900 --> 00:08:47,760
+If I'm already in the north road,
+and there are cars on the north
+
+118
+00:08:47,760 --> 00:08:49,392
+I'll just stay there.
+
+119
+00:08:49,392 --> 00:08:50,350
+And see what I'm doing?
+
+120
+00:08:50,350 --> 00:08:53,320
+I'm using my intuition
+to say, what if, I'm
+
+121
+00:08:53,320 --> 00:08:56,900
+in these states, what if
+the input were to stay.
+
+122
+00:08:56,900 --> 00:08:59,810
+Probably the most
+interesting one, and the one
+
+123
+00:08:59,810 --> 00:09:05,470
+that's most illustrative of what's
+going on, is the 1 1 condition.
+
+124
+00:09:05,470 --> 00:09:09,770
+And this sort of captures the entire
+finite state machine in its entirety.
+
+125
+00:09:09,770 --> 00:09:12,480
+So let's do that one next.
+
+126
+00:09:12,480 --> 00:09:15,030
+And this is if there are both cars.
+
+127
+00:09:15,030 --> 00:09:19,690
+If you think about what you want to
+have happen, if cars are on both roads,
+
+128
+00:09:19,690 --> 00:09:24,295
+a busy day, what we're going to have
+it do, is basically cycle through.
+
+129
+00:09:24,295 --> 00:09:27,280
+
+130
+00:09:27,280 --> 00:09:32,880
+And so if the light is green,
+and there's both, it'll go wait.
+
+131
+00:09:32,880 --> 00:09:37,160
+And after wait, it will then go east.
+
+132
+00:09:37,160 --> 00:09:41,880
+And then after go east,
+it'll go wait east.
+
+133
+00:09:41,880 --> 00:09:48,150
+And then after wait east, it
+will go back to go north again.
+
+134
+00:09:48,150 --> 00:09:55,440
+And so for this particular input case of
+1 1, we will see it cycle through here,
+
+135
+00:09:55,440 --> 00:09:59,400
+allowing cars to go east, and
+then allowing cars to go north,
+
+136
+00:09:59,400 --> 00:10:01,340
+and repeating back again.
+
+137
+00:10:01,340 --> 00:10:03,230
+All right, so let's do it.
+
+138
+00:10:03,230 --> 00:10:07,650
+We've got to fill in this thing,
+because what if everything happens.
+
+139
+00:10:07,650 --> 00:10:11,270
+This stage, here, is
+kind of interesting,
+
+140
+00:10:11,270 --> 00:10:17,710
+because once the light is
+yellow, regardless of the input,
+
+141
+00:10:17,710 --> 00:10:25,270
+I'm going to go to go east,
+Because I don't want the light
+
+142
+00:10:25,270 --> 00:10:31,172
+to go green on the north, yellow on
+the north, and then back to green
+
+143
+00:10:31,172 --> 00:10:32,630
+on the north, that's a silly thing.
+
+144
+00:10:32,630 --> 00:10:35,840
+So I'll just go all the
+way to green on the east,
+
+145
+00:10:35,840 --> 00:10:38,360
+once I go wait yellow on the north.
+
+146
+00:10:38,360 --> 00:10:43,130
+Similarly, down here,
+regardless of the input,
+
+147
+00:10:43,130 --> 00:10:50,570
+I'm going to go back to north
+after the east light goes yellow.
+
+148
+00:10:50,570 --> 00:10:52,220
+Let's do an easy one.
+
+149
+00:10:52,220 --> 00:10:56,700
+If the light is green in the
+east road, and there are no cars,
+
+150
+00:10:56,700 --> 00:10:58,270
+I'm just going to stay right there.
+
+151
+00:10:58,270 --> 00:11:00,062
+That's a fairly easy one.
+
+152
+00:11:00,062 --> 00:11:02,240
+But let's do a hard one.
+
+153
+00:11:02,240 --> 00:11:08,640
+Let's say the light is green on the
+east and there's just cars on the north.
+
+154
+00:11:08,640 --> 00:11:11,130
+That's this condition here.
+
+155
+00:11:11,130 --> 00:11:13,270
+No reason to stay green on the east.
+
+156
+00:11:13,270 --> 00:11:15,050
+I want to flip over to north.
+
+157
+00:11:15,050 --> 00:11:20,830
+But I can't get there directly, so I
+have to go through this wait state.
+
+158
+00:11:20,830 --> 00:11:25,170
+So now let's sort of imagine
+the sequence of steps
+
+159
+00:11:25,170 --> 00:11:34,130
+that occur if I'm in the east
+green and the cars are just north.
+
+160
+00:11:34,130 --> 00:11:47,060
+It will then go into this state, and
+then come back to that state here.
+
+161
+00:11:47,060 --> 00:11:55,590
+So we see that if I just have north,
+it will go through the east yellow,
+
+162
+00:11:55,590 --> 00:11:58,040
+and then flip up to green on north.
+
+163
+00:11:58,040 --> 00:12:02,350
+All right, so we've built
+this state transition graph.
+
+164
+00:12:02,350 --> 00:12:09,080
+
+165
+00:12:09,080 --> 00:12:12,390
+And now we're going to
+map this state transition
+
+166
+00:12:12,390 --> 00:12:18,260
+graph into the data structure, which
+will be our finite state machine.
+
+167
+00:12:18,260 --> 00:12:20,420
+Let me show you that
+this state transition
+
+168
+00:12:20,420 --> 00:12:30,320
+graph is exactly the same as the
+finite state machine graph here.
+
+169
+00:12:30,320 --> 00:12:34,200
+So in a finite state machine
+graph we have the name
+
+170
+00:12:34,200 --> 00:12:40,990
+of the state, the output
+pattern 1 0 0 0 0 1.
+
+171
+00:12:40,990 --> 00:12:51,140
+Wait N, right here, 1 0 0 0
+1 0, you see, that's this.
+
+172
+00:12:51,140 --> 00:13:00,470
+We have go east, which is
+0 0 1 1 0 0, that's this.
+
+173
+00:13:00,470 --> 00:13:10,510
+And we have one more, wait
+east, which is 0 1 0 1 0 0.
+
+174
+00:13:10,510 --> 00:13:13,170
+All right.
+
+175
+00:13:13,170 --> 00:13:19,890
+So what I'm going to do, is do this
+mapping from the graph to the table.
+
+176
+00:13:19,890 --> 00:13:27,020
+So this term here
+represents this arrow, 0 0.
+
+177
+00:13:27,020 --> 00:13:32,334
+I'll go along here, that
+one represents this arrow.
+
+178
+00:13:32,334 --> 00:13:37,830
+This one represents that arrow.
+
+179
+00:13:37,830 --> 00:13:41,880
+This one represents that arrow.
+
+180
+00:13:41,880 --> 00:13:47,020
+Now these are all easy, they all
+go that way, one, two, three, four.
+
+181
+00:13:47,020 --> 00:13:52,470
+0 0, 0 1, 1 0, 1 1.
+
+182
+00:13:52,470 --> 00:13:57,320
+Then here, this one,
+this picture right here
+
+183
+00:13:57,320 --> 00:14:01,840
+is, I'm going to stay
+in that state, 0 0.
+
+184
+00:14:01,840 --> 00:14:11,920
+I'm going to stay in that state on a 0
+1 I'm going to go over here on a 1 0.
+
+185
+00:14:11,920 --> 00:14:17,480
+And I'm also going to
+go over there, on 1 1.
+
+186
+00:14:17,480 --> 00:14:30,530
+And then these all go back
+over there, 0 0, 0 1, 1 0, 1 1.
+
+187
+00:14:30,530 --> 00:14:34,215
+So you see that the exact
+same information in the table
+
+188
+00:14:34,215 --> 00:14:35,700
+is in the graph.
+
+189
+00:14:35,700 --> 00:14:38,210
+So I'm going to work with
+the table because it'll
+
+190
+00:14:38,210 --> 00:14:41,210
+show a simpler map to the actual code.
+
+191
+00:14:41,210 --> 00:14:44,890
+So I'm going to erase the graph
+and then show you the code.
+
+192
+00:14:44,890 --> 00:14:47,890
+Now here's the beauty of the
+finite state machine design.
+
+193
+00:14:47,890 --> 00:14:54,600
+And that is, there is an abstraction
+here in this table or in that graph.
+
+194
+00:14:54,600 --> 00:14:57,980
+But when we do the
+translation into the code,
+
+195
+00:14:57,980 --> 00:15:03,226
+we capture absolutely
+everything about that machine.
+
+196
+00:15:03,226 --> 00:15:05,100
+And so what we're going
+to do, is we're going
+
+197
+00:15:05,100 --> 00:15:10,630
+to see that when we write the code,
+the finite state machine, which
+
+198
+00:15:10,630 --> 00:15:18,840
+is a stype finite state machine,
+we're going to capture everything.
+
+199
+00:15:18,840 --> 00:15:22,800
+And there are exactly
+four states, so we're
+
+200
+00:15:22,800 --> 00:15:25,790
+going to have four states in our table.
+
+201
+00:15:25,790 --> 00:15:28,890
+I did leave off the time so
+I'm going to go ahead and paste
+
+202
+00:15:28,890 --> 00:15:30,290
+that so you'll see it.
+
+203
+00:15:30,290 --> 00:15:34,950
+I'm going to stay here for thirty
+seconds, which will mean 3,000.
+
+204
+00:15:34,950 --> 00:15:44,230
+I'm going to stay here for five seconds,
+thirty seconds, and five seconds.
+
+205
+00:15:44,230 --> 00:15:54,660
+And this is the time in 0.01
+seconds or 10 milliseconds.
+
+206
+00:15:54,660 --> 00:16:00,790
+
+207
+00:16:00,790 --> 00:16:05,740
+So for each of the states, we're
+going to capture the output.
+
+208
+00:16:05,740 --> 00:16:14,570
+So that number right there,
+this number right here, is 0x21.
+
+209
+00:16:14,570 --> 00:16:20,300
+And then I'm going to capture the time,
+which is 3,000, that's that number.
+
+210
+00:16:20,300 --> 00:16:22,980
+And now, these are the next states.
+
+211
+00:16:22,980 --> 00:16:26,700
+So I'm going to capture
+those exactly the same.
+
+212
+00:16:26,700 --> 00:16:36,630
+Go N, that's this one,
+wait N, that's that one,
+
+213
+00:16:36,630 --> 00:16:44,510
+go N, wait N. This is
+all the syntax I've
+
+214
+00:16:44,510 --> 00:16:47,290
+got to do to make this look pretty.
+
+215
+00:16:47,290 --> 00:16:48,090
+That's my state.
+
+216
+00:16:48,090 --> 00:16:52,530
+So you see that this line of C
+code and that line of that table
+
+217
+00:16:52,530 --> 00:16:56,537
+are mathematically equivalent, 1 to 1.
+
+218
+00:16:56,537 --> 00:16:58,370
+Wait until I write the
+other states as well.
+
+219
+00:16:58,370 --> 00:17:05,240
+
+220
+00:17:05,240 --> 00:17:08,800
+This 0x22 is right
+there, there's the 500.
+
+221
+00:17:08,800 --> 00:17:13,089
+And then I'm going to capture the four
+states here, which are all go east.
+
+222
+00:17:13,089 --> 00:17:23,960
+
+223
+00:17:23,960 --> 00:17:33,860
+There's my 0x0C, 3,000, and
+that number right there, 0x0C,
+
+224
+00:17:33,860 --> 00:17:42,430
+and there are my four states,
+Go E, Go E, wait e, wait e.
+
+225
+00:17:42,430 --> 00:17:45,340
+
+226
+00:17:45,340 --> 00:17:55,240
+And then we've got one more, which was a
+0x14, that's this number, five seconds,
+
+227
+00:17:55,240 --> 00:17:57,910
+and then all of these are Go N's.
+
+228
+00:17:57,910 --> 00:18:01,420
+So what you've seen here
+is that there is a 1 to 1
+
+229
+00:18:01,420 --> 00:18:05,120
+mapping, that means, no
+more, no less information.
+
+230
+00:18:05,120 --> 00:18:13,210
+One two three, three
+braces and a semicolon.
+
+231
+00:18:13,210 --> 00:18:16,120
+That means that there's no
+more, no less information.
+
+232
+00:18:16,120 --> 00:18:22,580
+So we've captured in C code all the
+information that we had in our table.
+
+233
+00:18:22,580 --> 00:18:25,367
+The next step is the engine.
+
+234
+00:18:25,367 --> 00:18:27,200
+We'll write the finite
+state machine engine.
+
+235
+00:18:27,200 --> 00:18:30,950
+And this is the part that's
+repeated over and over again.
+
+236
+00:18:30,950 --> 00:18:37,560
+We'll have a index, which
+will represent our state.
+
+237
+00:18:37,560 --> 00:18:42,080
+And we've got to begin somewhere,
+so we'll begin with the north state.
+
+238
+00:18:42,080 --> 00:18:45,852
+This is a Moore machine.
+
+239
+00:18:45,852 --> 00:18:48,060
+And a Moore machine is,
+we're going to do our output.
+
+240
+00:18:48,060 --> 00:18:51,550
+We're going to send
+out to our port, that's
+
+241
+00:18:51,550 --> 00:18:54,880
+going to be port B. We're
+going to send our output out
+
+242
+00:18:54,880 --> 00:18:57,720
+to equal the finite state machine.
+
+243
+00:18:57,720 --> 00:19:01,890
+The output is a function of the state.
+
+244
+00:19:01,890 --> 00:19:06,370
+And we're going to capture
+the output parameter.
+
+245
+00:19:06,370 --> 00:19:09,020
+So that number is going to
+be one of those four numbers.
+
+246
+00:19:09,020 --> 00:19:13,340
+It's going to be, if s is
+equal to 0, this number here
+
+247
+00:19:13,340 --> 00:19:18,660
+is going to be a 0 0x21, if s is
+equal to 1, is going to be a 0x22,
+
+248
+00:19:18,660 --> 00:19:23,720
+and if s is equal to 2, it's going
+to be a 0x0c, and if s is equal to 3,
+
+249
+00:19:23,720 --> 00:19:25,470
+it's going to be a 0x14.
+
+250
+00:19:25,470 --> 00:19:27,480
+Those are the four possible outputs.
+
+251
+00:19:27,480 --> 00:19:29,790
+That's going to happen right there.
+
+252
+00:19:29,790 --> 00:19:31,910
+The next thing I'm going to do is wait.
+
+253
+00:19:31,910 --> 00:19:37,170
+And I'm going to call my wait
+a 10 millisecond routine,
+
+254
+00:19:37,170 --> 00:19:40,200
+and I'm going to pass in the
+parameter for that state.
+
+255
+00:19:40,200 --> 00:19:47,290
+So again some of the states are
+going to wait thirty seconds,
+
+256
+00:19:47,290 --> 00:19:51,570
+and some of the states are
+going to wait five seconds.
+
+257
+00:19:51,570 --> 00:19:56,120
+And the wait time is a function
+of the state that I'm in.
+
+258
+00:19:56,120 --> 00:19:57,950
+Now I'm going to do my input.
+
+259
+00:19:57,950 --> 00:20:05,300
+So I will read my input from port
+E. And I want the bottom two bits,
+
+260
+00:20:05,300 --> 00:20:07,490
+so we AND with 0x03.
+
+261
+00:20:07,490 --> 00:20:09,710
+And so now you know
+I have a number which
+
+262
+00:20:09,710 --> 00:20:15,044
+is 0 0, 0 1, 1 0, 1 1,
+from the bottom two bits.
+
+263
+00:20:15,044 --> 00:20:16,210
+And now here's the fun part.
+
+264
+00:20:16,210 --> 00:20:17,580
+We're going to change states.
+
+265
+00:20:17,580 --> 00:20:20,220
+We're going to go to a new state.
+
+266
+00:20:20,220 --> 00:20:23,670
+That new state is a
+function of the old state,
+
+267
+00:20:23,670 --> 00:20:25,760
+and it's a function of the input.
+
+268
+00:20:25,760 --> 00:20:30,600
+So we had four next states
+and so I'm going to index
+
+269
+00:20:30,600 --> 00:20:35,480
+into that list, which again, is a
+function of the state that I'm in,
+
+270
+00:20:35,480 --> 00:20:36,891
+and a function of the input.
+
+271
+00:20:36,891 --> 00:20:38,140
+That's a finite state machine.
+
+272
+00:20:38,140 --> 00:20:40,260
+We're just going to do
+that over and over again.
+
+273
+00:20:40,260 --> 00:20:42,270
+You'll see the details in the code.
+
+274
+00:20:42,270 --> 00:20:43,461
+Now you try it.
+
+275
+00:20:43,461 --> 00:20:43,961

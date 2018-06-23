@@ -1,0 +1,421 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/u9UUVh8YoEg
+
+1
+00:00:00,000 --> 00:00:00,640
+
+2
+00:00:00,640 --> 00:00:04,100
+DR. RAMESH YERRABALLI: So let's take a
+look at the last piece off the ISA
+
+3
+00:00:04,100 --> 00:00:05,840
+which is the memory map.
+
+4
+00:00:05,840 --> 00:00:11,380
+
+5
+00:00:11,380 --> 00:00:15,050
+As you saw, there are different
+kinds of memory.
+
+6
+00:00:15,050 --> 00:00:21,660
+There's the RAM, there is the ROM, or
+the Flash, and there could be multiple
+
+7
+00:00:21,660 --> 00:00:25,000
+ROMs on a system.
+
+8
+00:00:25,000 --> 00:00:31,370
+And so as a convenience, we want to
+refer to all of them as if they were
+
+9
+00:00:31,370 --> 00:00:37,340
+part of a single table.
+
+10
+00:00:37,340 --> 00:00:40,450
+That is, we want to refer to
+them by their location.
+
+11
+00:00:40,450 --> 00:00:48,820
+So what we do is we refer to memory on
+the ARM ISA by a 32-bit address.
+
+12
+00:00:48,820 --> 00:00:53,710
+
+13
+00:00:53,710 --> 00:00:58,850
+So the addresses start from, again I
+am using the convenient shortcut,
+
+14
+00:00:58,850 --> 00:01:04,970
+which is 0x00000000, with
+eight zeroes, that's the
+
+15
+00:01:04,970 --> 00:01:06,700
+lowest memory location.
+
+16
+00:01:06,700 --> 00:01:10,620
+And the farthest, or the highest
+memory location, is 0xFFFFFFFF.
+
+17
+00:01:10,620 --> 00:01:15,150
+
+18
+00:01:15,150 --> 00:01:26,000
+Now, the total memory we can refer to is
+sometimes called the address space.
+
+19
+00:01:26,000 --> 00:01:32,340
+The address space constitutes
+the number of locations.
+
+20
+00:01:32,340 --> 00:01:33,690
+We can refer to.
+
+21
+00:01:33,690 --> 00:01:40,050
+With 32-bit address, we can refer from
+0x00000000, eight zeros, all the way
+
+22
+00:01:40,050 --> 00:01:42,600
+up to eight F's.
+
+23
+00:01:42,600 --> 00:01:50,780
+Each location is going to hold
+eight bits of information.
+
+24
+00:01:50,780 --> 00:02:00,120
+So we say that each location holds eight
+bits of information, so memory
+
+25
+00:02:00,120 --> 00:02:07,480
+location zero holds eight bits of
+information and every location holds
+
+26
+00:02:07,480 --> 00:02:08,850
+eight bits of information.
+
+27
+00:02:08,850 --> 00:02:12,830
+Which is one byte.
+
+28
+00:02:12,830 --> 00:02:17,370
+Now let's take a look at the various
+banks within the memory.
+
+29
+00:02:17,370 --> 00:02:25,900
+So the memory itself is composed of a
+region of memory which starts
+
+30
+00:02:25,900 --> 00:02:37,590
+from zero all the way up to a location
+which is 0x0003FFFF which makes up
+
+31
+00:02:37,590 --> 00:02:43,660
+256k of Flash or ROM.
+
+32
+00:02:43,660 --> 00:02:47,040
+
+33
+00:02:47,040 --> 00:02:50,010
+This is where we're going
+to write our code.
+
+34
+00:02:50,010 --> 00:02:55,510
+So this is the part where we are going
+to put our code, constants,
+
+35
+00:02:55,510 --> 00:03:00,530
+and stuff like that.
+
+36
+00:03:00,530 --> 00:03:03,460
+Code which is our instructions
+and constants.
+
+37
+00:03:03,460 --> 00:03:13,290
+Now, we have our next bank of memory,
+which is going to be our RAM.
+
+38
+00:03:13,290 --> 00:03:19,830
+This is the 32k of RAM on the board
+that we are using, which starts at
+
+39
+00:03:19,830 --> 00:03:41,560
+memory location 0x20000000 all the way
+up to 0x20007FFF This is the RAM where
+
+40
+00:03:41,560 --> 00:03:53,360
+we will store our data, our variables,
+and again this is the volatile part.
+
+41
+00:03:53,360 --> 00:03:56,980
+And also our stack is going
+to be part of this region.
+
+42
+00:03:56,980 --> 00:04:03,030
+
+43
+00:04:03,030 --> 00:04:12,200
+And now we have our all-important part
+of the memory map, which is the I/O.
+
+44
+00:04:12,200 --> 00:04:16,420
+Now you may be wondering why we are
+looking at the memory and talking
+
+45
+00:04:16,420 --> 00:04:22,120
+about I/O. Well, this it's important to
+understand that the way we refer to
+
+46
+00:04:22,120 --> 00:04:32,630
+I/O devices, again this I/O starts at
+0x40000000 and goes all the way up to
+
+47
+00:04:32,630 --> 00:04:33,880
+0x400FFFFF.
+
+48
+00:04:33,880 --> 00:04:37,720
+
+49
+00:04:37,720 --> 00:04:50,410
+But we refer to I/O using a technique
+called memory-mapped I/O.
+
+50
+00:04:50,410 --> 00:04:54,980
+So the idea of memory-mapped I/O is when
+we want to refer to a device, we
+
+51
+00:04:54,980 --> 00:05:00,270
+simply read or write a particular
+location in memory, and that
+
+52
+00:05:00,270 --> 00:05:04,680
+particular location in turn, for
+example, if I read manipulating a
+
+53
+00:05:04,680 --> 00:05:09,960
+particular port I would go to this
+location in memory and a particular
+
+54
+00:05:09,960 --> 00:05:14,610
+bit here might refer to an I/O pin.
+
+55
+00:05:14,610 --> 00:05:18,240
+
+56
+00:05:18,240 --> 00:05:21,730
+And manipulating this bit
+is the equivalent of
+
+57
+00:05:21,730 --> 00:05:23,890
+manipulating this I/O pin.
+
+58
+00:05:23,890 --> 00:05:27,850
+So this is what memory-mapped
+I/O gives us.
+
+59
+00:05:27,850 --> 00:05:34,030
+Now there are some other I/O. Some
+of these locations have other
+
+60
+00:05:34,030 --> 00:05:40,440
+information, not all of them refer to
+pins, so in general then these will
+
+61
+00:05:40,440 --> 00:05:45,850
+refer to, these locations will
+refer to device registers.
+
+62
+00:05:45,850 --> 00:05:51,020
+
+63
+00:05:51,020 --> 00:06:08,500
+And there's more I/O, and there is more
+I/O which is the internal I/O, as
+
+64
+00:06:08,500 --> 00:06:14,500
+opposed to the external ones that have
+something to do with external
+
+65
+00:06:14,500 --> 00:06:17,650
+registers, external devices
+of some kind.
+
+66
+00:06:17,650 --> 00:06:27,120
+This starts from 0xE0000000 and goes
+all the way up to 0xE004FFFF.
+
+67
+00:06:27,120 --> 00:06:34,890
+
+68
+00:06:34,890 --> 00:06:42,370
+So what we notice in the memory map is
+that we have a lot of, there are
+
+69
+00:06:42,370 --> 00:06:44,190
+several sections of the memory.
+
+70
+00:06:44,190 --> 00:06:52,430
+And we have these 256k of ROM, 32k of
+RAM, I/O ports, internal I/O. And if
+
+71
+00:06:52,430 --> 00:06:58,750
+you notice that there are chunks of
+space in between that I have not
+
+72
+00:06:58,750 --> 00:06:59,600
+referred to.
+
+73
+00:06:59,600 --> 00:07:10,980
+Well these chunks of space in between
+are unused in that we don't have any
+
+74
+00:07:10,980 --> 00:07:12,400
+way of accessing them.
+
+75
+00:07:12,400 --> 00:07:17,130
+And making accesses to these locations
+are considered errors.
+
+76
+00:07:17,130 --> 00:07:23,740
+Now what is also the case is that this
+picture obviously is not to scale.
+
+77
+00:07:23,740 --> 00:07:31,110
+Notice that the 32k of RAM that we have
+here and the 256k ROM leave out
+
+78
+00:07:31,110 --> 00:07:34,510
+whole chunks off empty
+space in between.
+
+79
+00:07:34,510 --> 00:07:43,900
+And so as a convenience, I'm showing
+this as if they're at all contiguous,
+
+80
+00:07:43,900 --> 00:07:50,580
+and they are of a certain size, but in
+reality there is a lot of empty space
+
+81
+00:07:50,580 --> 00:07:52,430
+that we are referring to.
+
+82
+00:07:52,430 --> 00:07:58,270
+So now in this module we looked at a lot
+of important fundamental concepts.
+
+83
+00:07:58,270 --> 00:08:04,190
+These were concepts that we expect you
+to understand and remember as you go
+
+84
+00:08:04,190 --> 00:08:08,210
+forward, because we looked at number
+systems that allow you
+
+85
+00:08:08,210 --> 00:08:09,560
+to represent things.
+
+86
+00:08:09,560 --> 00:08:15,280
+We looked at the guts of an embedded
+system, what's a microcontroller, and
+
+87
+00:08:15,280 --> 00:08:21,660
+what is the ISA of a processor,
+we looked at the memory,
+
+88
+00:08:21,660 --> 00:08:23,430
+we looked at registers.
+
+89
+00:08:23,430 --> 00:08:26,940
+Now all this will only make sense
+if we do something with it.
+
+90
+00:08:26,940 --> 00:08:31,370
+So what we are going to do from this
+point onwards is get our hands dirty
+
+91
+00:08:31,370 --> 00:08:32,729
+and have fun.
+
+92
+00:08:32,729 --> 00:08:36,015

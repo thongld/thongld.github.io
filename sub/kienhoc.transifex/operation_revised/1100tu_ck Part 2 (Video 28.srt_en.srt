@@ -1,0 +1,398 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/H4XjuyvhC0g
+
+1
+00:00:05,000 --> 00:00:10,609
+hello again and welcome back to
+operations management and we're still
+
+2
+00:00:10,609 --> 00:00:15,230
+calculating safety stock only this time
+when we're trying to calculate the
+
+3
+00:00:15,230 --> 00:00:20,420
+safety stock were not given a lead time
+demand and a standard deviation of the
+
+4
+00:00:20,420 --> 00:00:26,899
+lead time demand what we are given are
+demand and standard deviation of demand
+
+5
+00:00:26,899 --> 00:00:31,219
+and sometimes the lead time is variable
+sometimes the lead time is not variable
+
+6
+00:00:31,219 --> 00:00:36,528
+so we're going to have to do is
+calculate that lead time demand as well
+
+7
+00:00:36,528 --> 00:00:42,200
+as the standard deviation of the lead
+time demand so sometimes you know that
+
+8
+00:00:42,200 --> 00:00:48,469
+the lead time is static it's l and it's
+very constant but the demand itself is
+
+9
+00:00:48,469 --> 00:00:52,879
+variable so we have to calculate that
+lead time demand and the standard
+
+10
+00:00:52,878 --> 00:00:58,339
+deviation of the lead time demand so we're
+typically given the demand
+
+11
+00:00:58,340 --> 00:01:05,270
+how much is expected to be used per given
+time of day week month etc as well as
+
+12
+00:01:05,270 --> 00:01:10,880
+the standard deviation for that demand
+and we're also given a lead time so to
+
+13
+00:01:10,879 --> 00:01:15,349
+calculate the lead time demand we're
+just going to multiply the lead time by
+
+14
+00:01:15,349 --> 00:01:20,658
+the demand very simple and to get the
+standard deviation of the lead time
+
+15
+00:01:20,659 --> 00:01:22,609
+demand it's  a little bit different
+
+16
+00:01:22,609 --> 00:01:26,840
+we're going to take the square root of
+the lead time and multiply it by the
+
+17
+00:01:26,840 --> 00:01:34,430
+standard deviation of the demand so what
+we use a simple example here Riley is
+
+18
+00:01:34,430 --> 00:01:38,540
+trying to figure out how much extra
+inventory of ink cartridges to keep and
+
+19
+00:01:38,540 --> 00:01:43,729
+during the past year the demand per day
+was variable with a mean of 20 and a
+
+20
+00:01:43,728 --> 00:01:48,709
+standard deviation of three and the lead
+time was constant at five days
+
+21
+00:01:48,709 --> 00:01:53,509
+Riley wants to maintain a ninety-percent
+service level we want to figure out the
+
+22
+00:01:53,509 --> 00:01:59,118
+safety stock and the reorder point
+notice in this problem we know that the
+
+23
+00:01:59,118 --> 00:02:04,459
+demand itself is variable because we're
+given a mean and a standard deviation
+
+24
+00:02:04,459 --> 00:02:12,530
+with the lead time is constant at five
+days so let's do those calculations the
+
+25
+00:02:12,530 --> 00:02:16,848
+lead time demand is going to be just
+equal to the lead-time times the demand
+
+26
+00:02:16,848 --> 00:02:18,459
+we know the lead time is
+
+27
+00:02:18,460 --> 00:02:25,689
+five the demand is 20 so we expect to
+use 100 ink cartridges between the time
+
+28
+00:02:25,689 --> 00:02:30,189
+we place the order and the time we
+receive it but for the standard
+
+29
+00:02:30,189 --> 00:02:36,009
+deviation of the lead time demand we're
+going to take the square root of five x
+
+30
+00:02:36,009 --> 00:02:43,149
+the standard deviation of the demand and
+we end up with 6.708 so now we've
+
+31
+00:02:43,150 --> 00:02:48,340
+calculated the ltd the lead time demand
+and the standard deviation of the lead
+
+32
+00:02:48,340 --> 00:02:53,319
+time demand which means we can just go
+back to the material from the last
+
+33
+00:02:53,319 --> 00:02:58,569
+session to calculate safety stock or Z
+statistic times the standard deviation
+
+34
+00:02:58,569 --> 00:03:04,780
+of lead time demand we calculate that Z
+statistic using the service level that
+
+35
+00:03:04,780 --> 00:03:11,560
+we were given which was 90% and we use
+Excel to use the norms inverse formula
+
+36
+00:03:11,560 --> 00:03:17,860
+and we get 1.28 and we multiply that
+1.28 by the standard deviation of lead
+
+37
+00:03:17,860 --> 00:03:23,860
+time demand we get 8.6 and as
+always when dealing with safety stock we
+
+38
+00:03:23,860 --> 00:03:30,430
+always round up so our safety stock is
+going to be nine ink cartridges and a
+
+39
+00:03:30,430 --> 00:03:35,500
+reorder point we take our lead time
+demand add our safety stock and we had a
+
+40
+00:03:35,500 --> 00:03:40,930
+hundred and nine so when we look at the
+inventory and we realize we're down to a
+
+41
+00:03:40,930 --> 00:03:47,530
+hundred and nine ink cartridges we place
+our order but sometimes the lead time is
+
+42
+00:03:47,530 --> 00:03:52,659
+also variable not just the demand we
+still have to calculate that lead time
+
+43
+00:03:52,659 --> 00:03:57,669
+demand and standard deviation for the
+lead time demand so we're typically
+
+44
+00:03:57,669 --> 00:04:05,500
+given a value for the demand R and
+standard deviation of the demand and
+
+45
+00:04:05,500 --> 00:04:13,150
+will also be given a lead time L and the
+standard deviation of the lead time now
+
+46
+00:04:13,150 --> 00:04:18,850
+using all four of those values we are going
+to end up calculating the lead time
+
+47
+00:04:18,850 --> 00:04:24,819
+demand which is just the lead-time times
+the demand and the standard deviation of
+
+48
+00:04:24,819 --> 00:04:29,349
+that lead time demand now notice this is
+a much different formula than what we
+
+49
+00:04:29,350 --> 00:04:30,400
+had before
+
+50
+00:04:30,399 --> 00:04:32,199
+it's a little bit complicated
+
+51
+00:04:32,199 --> 00:04:38,050
+and when you use that you have to be
+very careful that your you take the
+
+52
+00:04:38,050 --> 00:04:42,160
+square root of the whole equation and
+make sure your parentheses and so forth
+
+53
+00:04:42,160 --> 00:04:48,430
+are in the correct place so when we look
+at an example here we have Robin trying
+
+54
+00:04:48,430 --> 00:04:52,449
+to figure out how much extra inventory
+of boxes of imported chocolate to keep
+
+55
+00:04:52,449 --> 00:04:58,389
+during the past year the demand per week
+was variable with a mean of 85 and a
+
+56
+00:04:58,389 --> 00:05:04,629
+standard deviation of 12 lead time was
+also variable with a mean of six weeks and
+
+57
+00:05:04,629 --> 00:05:11,860
+a standard deviation of two so now we
+have a value for the demand along with
+
+58
+00:05:11,860 --> 00:05:15,610
+its standard deviation amvalue for the
+lead time along with that standard
+
+59
+00:05:15,610 --> 00:05:19,689
+deviation now we know what the service
+level in this case again ninety percent
+
+60
+00:05:19,689 --> 00:05:27,040
+we want to calculate the safety stock as
+well as the reorder point we're using
+
+61
+00:05:27,040 --> 00:05:32,860
+the variables that we were given and we
+calculate the lead time demand to be 510
+
+62
+00:05:32,860 --> 00:05:37,600
+and the standard deviation that lead
+time demand is a hundred and seventy
+
+63
+00:05:37,600 --> 00:05:44,650
+two point five two again we go back to the standard
+safety stock equation Z times the
+
+64
+00:05:44,649 --> 00:05:51,009
+standard deviation of lead time demand
+we calculate Z statistic we calculate
+
+65
+00:05:51,009 --> 00:05:56,920
+our safety stock always round up so
+we're up to 220 in our safety stock
+
+66
+00:05:56,920 --> 00:06:06,009
+and a reorder point is a lead time demand
+plus the safety stock 510 plus 222
+
+67
+00:06:06,519 --> 00:06:13,089
+so when our inventory level goes down to
+732 boxes of chocolate
+
+68
+00:06:13,089 --> 00:06:20,079
+we're placing our order so when do you
+know when to use the right model for
+
+69
+00:06:20,079 --> 00:06:24,699
+calculating safety stock the first
+question are the demand and the lead
+
+70
+00:06:24,699 --> 00:06:31,959
+time constant yes no safety stock is
+needed is the lead time demand variable
+
+71
+00:06:31,959 --> 00:06:37,389
+yes we're going to calculate the safety
+stock using the Z times the standard
+
+72
+00:06:37,389 --> 00:06:43,029
+deviation of the lead time demand is the
+lead time constant with the demand
+
+73
+00:06:43,029 --> 00:06:45,848
+variable we calculate the lead time demand
+
+74
+00:06:45,848 --> 00:06:50,168
+and the standard deviation of the lead
+time demand then calculate safety stock
+
+75
+00:06:50,168 --> 00:06:55,628
+if both lead time and demand variable
+again we're going to calculate that lead
+
+76
+00:06:55,629 --> 00:07:00,968
+time demand and standard deviation of
+lead time demand then calculate the safety
+
+77
+00:07:00,968 --> 00:07:06,490
+stock now we've been talking a lot about
+service level we've been using ninety
+
+78
+00:07:06,490 --> 00:07:11,379
+percent a lot but in the next session
+we're going to talk about what drives
+
+79
+00:07:11,379 --> 00:07:15,459
+that service level how we try and
+calculate what that service level should
+
+80
+00:07:15,459 --> 00:07:16,749
+be i'll see you then
+

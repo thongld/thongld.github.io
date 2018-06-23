@@ -1,0 +1,780 @@
+379
+00:17:37,590 --> 00:17:41,140
+huyentrangkt.hust 17/06/2016 Thao reviewed
+Cuối đoạn code này
+
+380
+00:17:41,140 --> 00:17:48,260
+ta sẽ có dictionary counts với các cặp word - count.
+
+381
+00:17:48,260 --> 00:17:48,760
+OK.
+
+382
+00:17:48,760 --> 00:17:51,700
+Ta đã học cái này rồi.
+
+383
+00:17:51,700 --> 00:17:55,580
+Chỉ là tạo dictionary, đọc, tách dòng,
+
+384
+00:17:55,580 --> 00:18:00,020
+rồi cộng dồn các giá trị trong dictionary.
+
+385
+00:18:00,020 --> 00:18:02,100
+Sau đó ta sẽ tạo một list mới
+
+386
+00:18:02,100 --> 00:18:04,720
+gọi là lst.
+
+387
+00:18:04,720 --> 00:18:07,150
+Giờ ta sẽ duyệt qua từng cặp key - value.
+
+388
+00:18:07,150 --> 00:18:09,150
+Vòng lặp này sẽ duyệt qua các cặp key - value
+
+389
+00:18:09,150 --> 00:18:12,430
+trong list này, tức là các cặp
+
+390
+00:18:12,430 --> 00:18:15,410
+key - value trong dictionary.
+
+391
+00:18:15,410 --> 00:18:16,020
+Đúng không?
+
+392
+00:18:16,020 --> 00:18:19,570
+Tiếp theo, ta sẽ tạo một list tạm thời
+
+393
+00:18:19,570 --> 00:18:21,720
+gồm các tuple dạng val, key.
+
+394
+00:18:21,720 --> 00:18:30,230
+Dạng như là 20 - the, 14 - hello.
+
+395
+00:18:30,230 --> 00:18:32,550
+List sẽ có dạng như vậy.
+
+396
+00:18:32,550 --> 00:18:34,670
+Nó sẽ bao gồm các tuple
+
+397
+00:18:34,670 --> 00:18:37,980
+nhưng với value đứng trước, key đứng sau
+
+398
+00:18:37,980 --> 00:18:39,610
+thay vì là key trước value sau.
+
+399
+00:18:39,610 --> 00:18:42,240
+Cái này là key, value.
+
+400
+00:18:42,240 --> 00:18:46,520
+Còn ở đây trong lst là value, key.
+
+401
+00:18:46,520 --> 00:18:53,582
+Giờ ta có một list dạng value - key,
+
+402
+00:18:53,582 --> 00:18:54,790
+ta sẽ sắp xếp nó.
+
+403
+00:18:54,790 --> 00:18:57,081
+Nó sẽ được sắp xếp dựa theo giá trị đầu tiên
+
+404
+00:18:57,081 --> 00:18:58,070
+trong tuple.
+
+405
+00:18:58,070 --> 00:18:59,320
+Và ta sẽ đảo ngược trình tự của nó
+
+406
+00:18:59,320 --> 00:19:02,730
+để đưa các giá trị lớn nhất lên đầu.
+
+407
+00:19:02,730 --> 00:19:04,830
+Khi thao tác xong,
+
+408
+00:19:04,830 --> 00:19:06,760
+ta sẽ được một list
+
+409
+00:19:06,760 --> 00:19:09,270
+được sắp xếp theo value.
+
+410
+00:19:09,270 --> 00:19:11,500
+Vậy ta đã sắp xếp bằng 1 thao tác duy nhất.
+
+411
+00:19:11,500 --> 00:19:13,490
+Đây là 1 ví dụ hay về thực hiện
+
+412
+00:19:13,490 --> 00:19:14,240
+nhiều thao tác.
+
+413
+00:19:14,240 --> 00:19:17,330
+Ta tạo một cấu trúc dữ liệu, hay một list, theo ý muốn.
+
+414
+00:19:17,330 --> 00:19:19,920
+Ta tận dụng phương thức sort có sẵn.
+
+415
+00:19:19,920 --> 00:19:23,709
+Ta phải chuẩn bị một list để sử dụng sort.
+
+416
+00:19:23,709 --> 00:19:24,750
+Ta cũng có thể làm theo cách thủ công,
+
+417
+00:19:24,750 --> 00:19:26,708
+nhưng như vậy rất khó. Tạo một list
+
+418
+00:19:26,708 --> 00:19:29,910
+rồi sắp xếp nó sẽ dễ hơn nhiều.
+
+419
+00:19:29,910 --> 00:19:30,410
+OK.
+
+420
+00:19:30,410 --> 00:19:32,820
+Vậy cơ bản tôi đã tạo ra 2 list.
+
+421
+00:19:32,820 --> 00:19:34,130
+Tôi tạo list gốc.
+
+422
+00:19:34,130 --> 00:19:36,970
+Sau đó tạo một list khác để sắp xếp.
+
+423
+00:19:36,970 --> 00:19:40,350
+Bây giờ để in ra top 10,
+
+424
+00:19:40,350 --> 00:19:44,160
+tôi sẽ viết vòng lặp for val, key.
+
+425
+00:19:44,160 --> 00:19:47,910
+Hãy nhớ là trong lst thứ tự là value, key.
+
+426
+00:19:47,910 --> 00:19:53,890
+Với val và key trong lst, ở đây ta cắt list
+
+427
+00:19:53,890 --> 00:19:56,390
+từ vị trí 0 cho đến nhưng không bao gồm vị trí 10,
+
+428
+00:19:56,390 --> 00:20:00,460
+tức là lấy 10 phần tử đầu tiên.
+
+429
+00:20:00,460 --> 00:20:02,510
+Giờ tôi sẽ in ra key và value,
+
+430
+00:20:02,510 --> 00:20:09,740
+lần lượt là the 22, fred 16.
+
+431
+00:20:09,740 --> 00:20:11,670
+Nó chỉ cho ra 10 cặp giá trị đầu tiên.
+
+432
+00:20:11,670 --> 00:20:14,200
+Vậy list này có các tuple
+
+433
+00:20:14,200 --> 00:20:15,427
+theo trình tự value, key.
+
+434
+00:20:15,427 --> 00:20:17,260
+Tôi sẽ in nó ra theo trình tự key, value
+
+435
+00:20:17,260 --> 00:20:21,070
+để đọc cho nó thuận hơn thôi.
+
+436
+00:20:21,070 --> 00:20:24,370
+Đây là 
+1 cách khá đơn giản để tạo 
+
+437
+00:20:24,370 --> 00:20:29,590
+1 biểu đồ tần suất xuất hiện của các từ trong 1 file.
+
+438
+00:20:29,590 --> 00:20:32,970
+Nhắc lại, các bạn nên hiểu kĩ đoạn này.
+
+439
+00:20:32,970 --> 00:20:36,178
+Phải hiểu kĩ từng dòng một.
+
+440
+00:20:36,178 --> 00:20:37,760
+Hiểu thật kĩ từng dòng một.
+
+441
+00:20:37,760 --> 00:20:39,920
+Bạn có thể xem lại, ôn lại vài lần.
+
+442
+00:20:39,920 --> 00:20:43,150
+Nhưng bạn phải hiểu được ý nghĩa của từng dòng một.
+
+443
+00:20:43,150 --> 00:20:46,110
+Hiểu được thì rất tốt.
+
+444
+00:20:46,110 --> 00:20:53,470
+Sau này khi thành thạo và nắm rõ Python hơn rồi,
+
+445
+00:20:53,470 --> 00:20:56,240
+bạn sẽ nhận ra là nhiều khi có những cách làm khác
+
+446
+00:20:56,240 --> 00:20:57,770
+còn ngắn hơn.
+
+447
+00:20:57,770 --> 00:21:00,200
+Sau đây tôi sẽ chỉ cho các bạn một cách
+
+448
+00:21:00,200 --> 00:21:03,240
+thực hiện không khác gì trang trước,
+
+449
+00:21:03,240 --> 00:21:04,890
+chỉ là nó rất cô đọng.
+
+450
+00:21:04,890 --> 00:21:07,370
+Nhưng bạn phải thật tập trung.
+
+451
+00:21:07,370 --> 00:21:09,620
+Tôi muốn các bạn hiểu những kiến thức 
+ở trang trước đã.
+
+452
+00:21:09,620 --> 00:21:11,495
+Nếu bạn không hiểu cái này
+thì cũng đừng lo ngại.
+
+453
+00:21:11,495 --> 00:21:13,250
+Tôi sẽ giải thích nó.
+
+454
+00:21:13,250 --> 00:21:15,140
+Nhưng không hiểu thì cũng không sao, nhé?
+
+455
+00:21:15,140 --> 00:21:18,540
+Giờ tôi sẽ giải thích nó.
+
+456
+00:21:18,540 --> 00:21:20,450
+Nếu cảm thấy không ổn, 
+hãy quay lại
+
+457
+00:21:20,450 --> 00:21:22,060
+xem trang trước.
+
+458
+00:21:22,060 --> 00:21:22,890
+OK.
+
+459
+00:21:22,890 --> 00:21:24,310
+Ta bắt đầu nào.
+
+460
+00:21:24,310 --> 00:21:27,050
+Tôi tạo một dictionary.
+
+461
+00:21:27,050 --> 00:21:33,260
+Tôi sẽ in nó ra sau khi sắp xếp theo value
+chỉ bằng 1 dòng.
+
+462
+00:21:33,260 --> 00:21:37,100
+Ta đi từ trong ra ngoài nhé.
+
+463
+00:21:37,100 --> 00:21:40,610
+Đây là cú pháp list comprehension.
+
+464
+00:21:40,610 --> 00:21:42,520
+Nhìn nó giống một hằng list vì ta
+
+465
+00:21:42,520 --> 00:21:44,310
+đặt nó trong dấu ngoặc vuông.
+
+466
+00:21:44,310 --> 00:21:50,050
+Nhưng nó là một cú pháp Python 
+cho phép tạo một list các tuple dạng v, k
+
+467
+00:21:50,050 --> 00:21:55,240
+theo kiểu động.
+
+468
+00:21:55,240 --> 00:21:58,900
+Nó chạy vòng lặp duyệt qua 
+các phần tử của c, với k và v
+
+469
+00:21:58,900 --> 00:22:01,980
+lần lượt nhận các cặp giá trị.
+
+470
+00:22:01,980 --> 00:22:05,120
+Đây là thao tác tạo một list nghịch đảo
+
+471
+00:22:05,120 --> 00:22:07,380
+trong đó mỗi tuple có dạng
+
+472
+00:22:07,380 --> 00:22:09,514
+value trước, key sau.
+
+473
+00:22:09,514 --> 00:22:10,680
+Chương trình sẽ thực hiện điều đó.
+
+474
+00:22:10,680 --> 00:22:12,330
+Nó sẽ tiếp tục mở rộng.
+
+475
+00:22:12,330 --> 00:22:13,694
+Vèo một cái.
+
+476
+00:22:13,694 --> 00:22:14,360
+Nó mở rộng list này.
+
+477
+00:22:14,360 --> 00:22:16,920
+Tạo ra một list tạm thời.
+
+478
+00:22:16,920 --> 00:22:18,980
+Cái này tương ứng với
+
+479
+00:22:18,980 --> 00:22:21,460
+list tên lst ở slide trước.
+
+480
+00:22:21,460 --> 00:22:23,670
+Nhưng ở đây ta 
+còn chẳng đặt tên cho nó.
+
+481
+00:22:23,670 --> 00:22:29,850
+Một khi ta có list các
+tuple theo thứ tự value - key,
+
+482
+00:22:29,850 --> 00:22:34,020
+ta chỉ cần đưa list đó vào hàm sorted.
+
+483
+00:22:34,020 --> 00:22:38,270
+Ở đây ta gọi hàm sorted.
+
+484
+00:22:38,270 --> 00:22:39,450
+Giờ tôi sẽ không đảo ngược nó.
+
+485
+00:22:39,450 --> 00:22:43,520
+Nhưng câu lệnh print in ra theo thứ tự tăng dần
+
+486
+00:22:43,520 --> 00:22:47,480
+của value là 1, 10, 22.
+
+487
+00:22:47,480 --> 00:22:48,150
+OK.
+
+488
+00:22:48,150 --> 00:22:51,460
+Vậy bạn có thể viết cô đọng hơn khi
+
+489
+00:22:51,460 --> 00:22:54,220
+bạn hiểu rõ các thao tác hơn.
+
+490
+00:22:54,220 --> 00:22:57,430
+Đôi khi xây dựng chương trình
+
+491
+00:22:57,430 --> 00:23:01,180
+theo từng bước sẽ dễ hơn, ta có thể 
+đặt một số câu lệnh print
+
+492
+00:23:01,180 --> 00:23:04,010
+để debug (tìm và khắc phục lỗi) ở các vị trí như thế này.
+
+493
+00:23:04,010 --> 00:23:06,270
+Như vậy bạn sẽ xem được quá trình
+hoạt động của chương trình.
+
+494
+00:23:06,270 --> 00:23:08,320
+Nhưng khi đã thực sự hiểu rõ rồi
+
+495
+00:23:08,320 --> 00:23:12,110
+thì bạn có thể viết chương trình ngắn gọn hơn.
+
+496
+00:23:12,110 --> 00:23:15,042
+Khi hiểu rồi bạn sẽ dùng được.
+
+497
+00:23:15,042 --> 00:23:17,250
+Các bạn không bắt buộc phải hiểu.
+
+498
+00:23:17,250 --> 00:23:18,833
+Tôi chỉ muốn chỉ ra rằng
+
+499
+00:23:18,833 --> 00:23:22,610
+ta có cách làm khác gọn gàng hơn.
+
+500
+00:23:22,610 --> 00:23:29,640
+Vậy tuple cũng giống với list, 
+chỉ khác là ta không thể thay đổi nó.
+
+501
+00:23:29,640 --> 00:23:31,370
+List thì có thể thay đổi.
+
+502
+00:23:31,370 --> 00:23:33,240
+Và ta có thể so sánh các tuple.
+
+503
+00:23:33,240 --> 00:23:34,630
+Ta có thể sắp xếp
+
+504
+00:23:34,630 --> 00:23:36,180
+list các tuple.
+
+505
+00:23:36,180 --> 00:23:40,060
+Nhưng không thể sắp xếp
+các giá trị trong 1 tuple.
+
+506
+00:23:40,060 --> 00:23:42,450
+Có thể đặt 2 giá trị bên vế trái một câu lệnh gán.
+
+507
+00:23:42,450 --> 00:23:46,270
+Có thể dùng hàm sorted.
+
+508
+00:23:46,270 --> 00:23:49,290
+Và ta đã sắp xếp các dictionary
+theo key và value.
+
+509
+00:23:49,290 --> 00:23:53,690
+Bài giảng đến đây là kết thúc.
+
+510
+00:23:53,690 --> 00:23:55,910
+Đến thời điểm này, tôi muốn
+
+511
+00:23:55,910 --> 00:24:00,980
+chúc mừng các bạn 
+đã học hết 10 chương
+
+512
+00:24:00,980 --> 00:24:02,350
+của cuốn sách này.
+
+513
+00:24:02,350 --> 00:24:05,330
+Tôi sẽ nâng một ly trà với các bạn.
+
+514
+00:24:05,330 --> 00:24:06,320
+Trà của các bạn đây.
+
+515
+00:24:06,320 --> 00:24:11,770
+Tôi xin nâng ly chúc mừng bằng
+chiếc cốc Slytherin này.
+
+516
+00:24:11,770 --> 00:24:16,200
+Giờ là lúc tổ chức
+lễ tốt nghiệp.
+
+517
+00:24:16,200 --> 00:24:18,410
+Tôi sẽ đọc 
+1 bài diễn văn tốt nghiệp ngắn
+
+518
+00:24:18,410 --> 00:24:20,740
+với chiếc mũ tốt nghiệp này.
+
+519
+00:24:20,740 --> 00:24:23,740
+Đây là đũa thần Slytherin của tôi.
+
+520
+00:24:23,740 --> 00:24:27,010
+Tôi muốn chúc mừng các bạn vì
+
+521
+00:24:27,010 --> 00:24:31,350
+đến cuối chương này, tại thời điểm này,
+
+522
+00:24:31,350 --> 00:24:39,040
+bạn đã biết được tất cả 
+các kiến thức lập trình cơ bản.
+
+523
+00:24:39,040 --> 00:24:41,030
+Bản chất của lập trình là
+
+524
+00:24:41,030 --> 00:24:43,920
+các thuật toán và cấu trúc dữ liệu.
+
+525
+00:24:43,920 --> 00:24:48,970
+Đôi khi ta giải quyết vấn đề 
+bằng cách kết hợp khéo léo
+
+526
+00:24:48,970 --> 00:24:50,530
+một loạt các bước.
+
+527
+00:24:50,530 --> 00:24:53,830
+Đôi khi ta lại giải quyết vấn đề 
+bằng cách tạo ra một cấu trúc dữ liệu
+
+528
+00:24:53,830 --> 00:24:55,670
+thông minh.
+
+529
+00:24:55,670 --> 00:24:59,260
+Những chương đầu tiên đã
+nói về thuật toán, các bước,
+
+530
+00:24:59,260 --> 00:25:02,100
+vòng lặp, hàm,
+
+531
+00:25:02,100 --> 00:25:05,300
+dần dần hình thành các bước
+
+532
+00:25:05,300 --> 00:25:09,010
+để thực hiện một thao tác vô số lần
+hoặc là nhảy cóc, v.v.
+
+533
+00:25:09,010 --> 00:25:11,330
+Trong 3 chương gần đây nhất,
+
+534
+00:25:11,330 --> 00:25:13,650
+ta đã học về các
+cấu trúc dữ liệu.
+
+535
+00:25:13,650 --> 00:25:18,020
+Sức mạnh lập trình được tạo nên từ sự kết hợp 
+các thuật toán và các cấu trúc dữ liệu.
+
+536
+00:25:18,020 --> 00:25:19,880
+Sức mạnh lập trình được tạo nên từ sự kết hợp 
+các thuật toán và các cấu trúc dữ liệu.
+
+537
+00:25:19,880 --> 00:25:21,660
+Trong các chương tiếp theo, bắt đầu từ
+
+538
+00:25:21,660 --> 00:25:24,600
+chương 11, Regular Expressions (Biểu thức chính quy),
+
+539
+00:25:24,600 --> 00:25:29,500
+ta sẽ học những cách thao tác hay hơn
+cho những gì đã làm.
+
+540
+00:25:29,500 --> 00:25:31,750
+Bây giờ bạn đã làm được 
+khá nhiều thứ rồi đấy.
+
+541
+00:25:31,750 --> 00:25:34,520
+Từ giờ trở đi, bạn sẽ thấy ồ,
+
+542
+00:25:34,520 --> 00:25:35,380
+thì ra có cách này còn siêu hơn.
+
+543
+00:25:35,380 --> 00:25:36,790
+Hoặc ta sẽ sử dụng 1 cơ sở dữ liệu.
+
+544
+00:25:36,790 --> 00:25:38,230
+Ồ, cái này siêu hơn.
+
+545
+00:25:38,230 --> 00:25:40,490
+Tuy nhiên về căn bản nó 
+không khác nhau,
+
+546
+00:25:40,490 --> 00:25:46,210
+nên quan trọng là trước khi học tiếp,
+
+547
+00:25:46,210 --> 00:25:49,770
+các bạn phải nắm thật rõ mọi thứ
+
+548
+00:25:49,770 --> 00:25:53,880
+mà ta đã học như 
+vòng lặp, hàm, chuỗi,
+
+549
+00:25:53,880 --> 00:25:58,825
+file, tuple, list, dictionary.
+
+550
+00:25:58,825 --> 00:26:00,450
+Chúng là 
+kiến thức nền
+
+551
+00:26:00,450 --> 00:26:02,580
+còn tất cả những thứ khác chỉ là
+
+552
+00:26:02,580 --> 00:26:05,300
+cải tiến, nâng cấp thêm một chút thôi.
+
+553
+00:26:05,300 --> 00:26:09,570
+Một khi nắm rõ kiến thức
+thì bạn đã bắt đầu được rồi đó.
+
+554
+00:26:09,570 --> 00:26:11,080
+Bạn đã trở thành 1 lập trình viên sơ cấp.
+
+555
+00:26:11,080 --> 00:26:14,095
+Và úm ba la,
+
+556
+00:26:14,095 --> 00:26:18,877
+tôi đã hô biến các bạn thành sinh vật Pythoneo
+
+557
+00:26:18,877 --> 00:26:19,710
+gì đó.
+
+558
+00:26:19,710 --> 00:26:20,210
+OK.
+
+559
+00:26:20,210 --> 00:26:22,800
+Bắt chước Harry Potter đủ rồi.
+
+560
+00:26:22,800 --> 00:26:25,780
+Cảm ơn các bạn đã dành
+thời gian cho tôi.
+
+561
+00:26:25,780 --> 00:26:29,760
+Rất cám ơn các bạn đã theo học đến đây.
+
+562
+00:26:29,760 --> 00:26:32,350
+Dĩ nhiên, đó 
+mới chỉ là bắt đầu.
+
+563
+00:26:32,350 --> 00:26:35,580
+Tôi hy vọng rằng đó 
+là 1 khởi đầu tốt.
+
+564
+00:26:35,580 --> 00:26:37,130
+Cảm ơn các bạn.
+

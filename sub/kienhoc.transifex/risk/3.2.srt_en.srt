@@ -1,0 +1,812 @@
+0
+00:00:05,066 --> 00:00:06,440
+Welcome back.
+https://youtu.be/U90hIpn-SMc
+1
+00:00:06,440 --> 00:00:11,371
+So I ask you the following question,
+
+2
+00:00:11,371 --> 00:00:16,618
+if you take sigma p at and compare it with
+
+3
+00:00:16,618 --> 00:00:21,231
+remember we have two securities,
+
+4
+00:00:21,231 --> 00:00:26,332
+sigma a hat + sigma b hat, averaged.
+
+5
+00:00:29,248 --> 00:00:31,480
+I sometimes flip it around and so on.
+
+6
+00:00:31,480 --> 00:00:32,890
+Which will be the higher one?
+
+7
+00:00:35,020 --> 00:00:40,710
+This side, or more importantly, we are interested in minimizing this.
+
+8
+00:00:40,710 --> 00:00:44,850
+This will go down relative to the average.
+
+9
+00:00:44,850 --> 00:00:49,020
+And we see that, but imagine you&#39;re Google And Microsoft.
+
+10
+00:00:49,020 --> 00:00:53,590
+It&#39;ll be the case that if you&#39;re combining two randomly selected securities,
+
+11
+00:00:55,320 --> 00:01:02,410
+it will always be the case that standard deviation of the portfolio return,
+
+12
+00:01:02,410 --> 00:01:06,530
+will be less than average of the two standard deviations.
+
+13
+00:01:07,540 --> 00:01:10,670
+This is called a busificaiton, I asked you a question last time,
+
+14
+00:01:10,670 --> 00:01:12,950
+when will this not be the case?
+
+15
+00:01:12,950 --> 00:01:17,820
+When will the two be equal, intuition, you can try all the formulas you want, and
+
+16
+00:01:17,820 --> 00:01:19,050
+we get that.
+
+17
+00:01:19,050 --> 00:01:20,690
+But, what is the intuition?
+
+18
+00:01:20,690 --> 00:01:24,900
+Intuitive answers, they have to be the same, right.
+
+19
+00:01:24,900 --> 00:01:28,800
+Diversification will not work if two things are identical.
+
+20
+00:01:28,800 --> 00:01:30,970
+So, when will they be identical?
+
+21
+00:01:30,970 --> 00:01:34,150
+Essentially, even the correlation is perfectly positive.
+
+22
+00:01:35,600 --> 00:01:39,400
+And that is very, very unlikely.
+
+23
+00:01:39,400 --> 00:01:41,010
+So let&#39;s try to figure out,
+
+24
+00:01:41,010 --> 00:01:44,620
+to answer this question, let&#39;s try to figure out what is this.
+
+25
+00:01:45,680 --> 00:01:47,730
+Before we do that, let me ask you this.
+
+26
+00:01:47,730 --> 00:01:51,590
+What is the expected return on the portfolio?
+
+27
+00:01:52,960 --> 00:02:00,053
+Turns out that the expected return on the portfolio, and I&#39;m using new symbols.
+
+28
+00:02:04,361 --> 00:02:08,200
+Is this, so this is the beauty of expected return.
+
+29
+00:02:08,199 --> 00:02:12,600
+Averages add up, probabilities don&#39;t add up.
+
+30
+00:02:12,600 --> 00:02:14,750
+And the reason is very simple,
+
+31
+00:02:14,750 --> 00:02:19,650
+one is linear, averaging as a linear process, whereas variance,
+
+32
+00:02:19,650 --> 00:02:23,670
+whose square root of the standard deviation is a non-linear process.
+
+33
+00:02:23,670 --> 00:02:27,020
+You know by the way it&#39;s been shown that humans are very good
+
+34
+00:02:27,020 --> 00:02:28,940
+dealing with linear processes.
+
+35
+00:02:28,940 --> 00:02:33,660
+So good that they impose that thinking on even non-linear things.
+
+36
+00:02:33,660 --> 00:02:39,770
+So things like, very chaotic things or complex things like the rainforest,
+
+37
+00:02:39,770 --> 00:02:44,752
+climate change and so on are not easily understood by the mind,
+
+38
+00:02:44,752 --> 00:02:49,828
+because we very capable people but we tend to think leniently for
+
+39
+00:02:49,828 --> 00:02:54,341
+example, both of the things that we need to worry about.
+
+40
+00:02:54,341 --> 00:02:57,301
+By the way, read a book called Think Fast,
+
+41
+00:02:57,301 --> 00:03:01,248
+Think Slow if you have a chance and you will get a sense of,
+
+42
+00:03:01,248 --> 00:03:05,950
+why is it that in spite of everything being so cool about our brains.
+
+43
+00:03:05,950 --> 00:03:11,500
+We tend to make quick decisions based on quick thinking.
+
+44
+00:03:11,500 --> 00:03:13,890
+But the answer&#39;s very simple, in some senses.
+
+45
+00:03:13,890 --> 00:03:16,020
+It takes a lot of effort to think deeply,
+
+46
+00:03:16,020 --> 00:03:19,390
+to learn, to have an educated view on things.
+
+47
+00:03:19,390 --> 00:03:20,906
+I&#39;m not talking about college degree.
+
+48
+00:03:20,906 --> 00:03:24,003
+I&#39;m talking about a thoughtful view.
+
+49
+00:03:24,003 --> 00:03:25,690
+Anyway come back.
+
+50
+00:03:25,690 --> 00:03:26,910
+So what I XB.
+
+51
+00:03:26,910 --> 00:03:30,460
+In our case we are to assume half and half.
+
+52
+00:03:30,460 --> 00:03:32,550
+What do we expect of return of RA?
+
+53
+00:03:32,550 --> 00:03:33,660
+So what will it be?
+
+54
+00:03:33,660 --> 00:03:38,413
+It is the same thing as Ra bar R expected as I said last time as
+
+55
+00:03:38,413 --> 00:03:41,370
+what you expect to happen.
+
+56
+00:03:41,370 --> 00:03:43,400
+And Rb 5.
+
+57
+00:03:43,400 --> 00:03:46,190
+So this is pretty straight forward.
+
+58
+00:03:46,190 --> 00:03:51,460
+Let&#39;s now see what the volatility of the portfolio will be.
+
+59
+00:03:51,460 --> 00:03:55,660
+Now for simplicity I&#39;m going to write up the equation for you but
+
+60
+00:03:55,660 --> 00:03:57,680
+it&#39;s very straight forward.
+
+61
+00:03:57,680 --> 00:03:59,230
+Think about the following.
+
+62
+00:03:59,230 --> 00:04:05,630
+In order to calculate standard deviation, you have to calculate this guy.
+
+63
+00:04:05,630 --> 00:04:09,660
+And by the way, hat is just I&#39;m carrying around as an estimate.
+
+64
+00:04:09,660 --> 00:04:12,130
+So when you don&#39;t have an hat, you&#39;re talking concept.
+
+65
+00:04:12,130 --> 00:04:15,440
+When you have a hat, you&#39;re talking about the estimate.
+
+66
+00:04:15,440 --> 00:04:18,730
+So let&#39;s ignore this, let&#39;s look at conceptually.
+
+67
+00:04:18,730 --> 00:04:21,020
+Look what we are looking at here.
+
+68
+00:04:21,019 --> 00:04:23,660
+We are looking at variance, and variance of what now?
+
+69
+00:04:26,010 --> 00:04:33,104
+We are looking at a variance of the portfolio, which is XaRa + XbRb, right.
+
+70
+00:04:33,104 --> 00:04:37,390
+Now stare at it, a variance,
+
+71
+00:04:37,390 --> 00:04:43,900
+if you remember, is a complicated animal.
+
+72
+00:04:43,900 --> 00:04:45,000
+It&#39;s square.
+
+73
+00:04:45,000 --> 00:04:46,750
+You&#39;re squaring stuff.
+
+74
+00:04:46,750 --> 00:04:48,240
+So what will you do?
+
+75
+00:04:48,240 --> 00:04:50,880
+You&#39;ll have to worry about squares, but
+
+76
+00:04:50,880 --> 00:04:56,740
+you also will have to worry about what is the relationship between this and this.
+
+77
+00:04:56,740 --> 00:04:57,390
+Why?
+
+78
+00:04:57,390 --> 00:05:01,170
+Because when you square xa ra, xb rb.
+
+79
+00:05:01,170 --> 00:05:05,944
+You remember from high school, it&#39;ll be two squares and
+
+80
+00:05:05,944 --> 00:05:08,840
+two cross-products.
+
+81
+00:05:08,840 --> 00:05:10,260
+So that&#39;s what&#39;s happening.
+
+82
+00:05:10,260 --> 00:05:13,270
+And the cross-product, that&#39;s what&#39;s really interesting.
+
+83
+00:05:14,710 --> 00:05:16,730
+So let&#39;s do that in a second.
+
+84
+00:05:16,730 --> 00:05:18,520
+I&#39;m gonna put it up for you.
+
+85
+00:05:18,520 --> 00:05:22,250
+So I would take a second pause, you can pause this film and
+
+86
+00:05:22,250 --> 00:05:23,540
+write out this equation.
+
+87
+00:05:23,540 --> 00:05:25,730
+I&#39;m gonna talk it out.
+
+88
+00:05:25,730 --> 00:05:29,630
+So the variance of a portfolio which you have to calculate to calculate this
+
+89
+00:05:29,630 --> 00:05:34,840
+standard deviation is xa squared variance of a.
+
+90
+00:05:35,920 --> 00:05:38,970
+In our case xa was half.
+
+91
+00:05:38,970 --> 00:05:40,510
+xa squared was a quarter.
+
+92
+00:05:40,510 --> 00:05:41,440
+Why are we squaring?
+
+93
+00:05:41,440 --> 00:05:43,000
+Because variance is a square.
+
+94
+00:05:43,000 --> 00:05:47,320
+If you didn&#39;t square and just subtracted the mean of something and
+
+95
+00:05:47,320 --> 00:05:49,150
+added them up what will you get?
+
+96
+00:05:49,150 --> 00:05:50,220
+Zippo.
+
+97
+00:05:50,220 --> 00:05:52,200
+So that&#39;s where you first calculate variance and
+
+98
+00:05:52,200 --> 00:05:53,620
+then take the standard deviation.
+
+99
+00:05:53,620 --> 00:05:56,090
+I mean square root to take the standard deviation.
+
+100
+00:05:56,090 --> 00:05:58,510
+So you get xa squared, sigma a squared.
+
+101
+00:05:59,690 --> 00:06:02,360
+This is why statistics is very important.
+
+102
+00:06:02,360 --> 00:06:05,630
+Plus xb squared sigma b squared.
+
+103
+00:06:05,630 --> 00:06:07,640
+So what is sigma a squared?
+
+104
+00:06:07,640 --> 00:06:11,750
+Variance of a which in our case Google.
+
+105
+00:06:11,750 --> 00:06:15,050
+Sigma b squared, variance of Microsoft which is what?
+
+106
+00:06:16,160 --> 00:06:17,800
+B is Microsoft.
+
+107
+00:06:17,800 --> 00:06:19,490
+And how much is x b squared?
+
+108
+00:06:19,490 --> 00:06:22,640
+it&#39;s half times half.
+
+109
+00:06:22,640 --> 00:06:28,340
+Squaring again happening simply because variance is a non-linear function.
+
+110
+00:06:28,340 --> 00:06:29,470
+So that&#39;s okay.
+
+111
+00:06:29,470 --> 00:06:35,000
+But remember what a portfolio return is in the background, and this will make sense.
+
+112
+00:06:35,000 --> 00:06:42,160
+So remember Rp = XaRa + Xb Rb.
+
+113
+00:06:42,160 --> 00:06:46,490
+And you&#39;re kind of squaring this, so what will you also have to worry about?
+
+114
+00:06:46,490 --> 00:06:49,740
+Xa, Xb, are they all b?
+
+115
+00:06:49,740 --> 00:06:54,763
+Xb, Xa, Rb, Ra, and 2xby,
+
+116
+00:06:54,763 --> 00:06:58,710
+because it&#39;s happening twice.
+
+117
+00:06:58,710 --> 00:07:04,030
+So once you are going Xa Ra Xb Rb and the other way around.
+
+118
+00:07:05,310 --> 00:07:06,885
+So what is Ra Rb?
+
+119
+00:07:06,885 --> 00:07:08,630
+Co-variants.
+
+120
+00:07:08,630 --> 00:07:13,110
+So remember when you square itself, you become variants but
+
+121
+00:07:13,110 --> 00:07:16,080
+when you have two guys it&#39;s called co-variants.
+
+122
+00:07:16,080 --> 00:07:17,460
+So it&#39;s very straightforward.
+
+123
+00:07:17,460 --> 00:07:18,560
+It&#39;s from high school,
+
+124
+00:07:18,560 --> 00:07:22,950
+you must have learned this and kind of forgotten it by now.
+
+125
+00:07:22,950 --> 00:07:26,650
+Is that when you&#39;re squaring something with two variables in it,
+
+126
+00:07:26,650 --> 00:07:29,810
+cross products which are covariances enter.
+
+127
+00:07:30,880 --> 00:07:33,550
+And this is very cool stuff, very cool.
+
+128
+00:07:33,550 --> 00:07:36,420
+And it looks exact, it is.
+
+129
+00:07:36,420 --> 00:07:37,940
+And that&#39;s what the beauty of finance is.
+
+130
+00:07:37,940 --> 00:07:41,640
+Finance can be math or finance can be art.
+
+131
+00:07:41,640 --> 00:07:43,950
+Finance can be very intuitive.
+
+132
+00:07:43,950 --> 00:07:46,240
+Okay, so very quickly, and
+
+133
+00:07:46,240 --> 00:07:50,780
+I&#39;m going to do this til you go nuts with me and that&#39;s okay.
+
+134
+00:07:50,780 --> 00:07:58,060
+How many terms in the portfolio&#39;s variance, how many total terms.
+
+135
+00:07:58,060 --> 00:08:03,970
+Term number one is the first one, term number two is the second one.
+
+136
+00:08:03,970 --> 00:08:08,730
+And then there are two terms in the last one so the total there are four.
+
+137
+00:08:08,730 --> 00:08:09,760
+Why?
+
+138
+00:08:09,760 --> 00:08:11,440
+Because the two are symmetric.
+
+139
+00:08:11,440 --> 00:08:16,260
+So sigma ab is equal to sigma ba.
+
+140
+00:08:18,170 --> 00:08:21,820
+So the covariance of a with b and b with a is very similar.
+
+141
+00:08:21,820 --> 00:08:23,140
+Unlike human beings, right?
+
+142
+00:08:23,140 --> 00:08:25,300
+So Sean is sitting there, and
+
+143
+00:08:25,300 --> 00:08:29,830
+my thought about my relationship with him Is very positive.
+
+144
+00:08:30,890 --> 00:08:33,820
+But his talking about relationship with me, with the sigma p.
+
+145
+00:08:33,820 --> 00:08:36,410
+I&#39;m not very sure about, right?
+
+146
+00:08:36,409 --> 00:08:39,160
+It could be zero, it could have been negative.
+
+147
+00:08:39,159 --> 00:08:41,500
+But here, the good thing is their symmetric.
+
+148
+00:08:41,500 --> 00:08:46,270
+So, the two sigma a b simply coming because there is
+
+149
+00:08:46,270 --> 00:08:48,170
+symmetry in the relationship.
+
+150
+00:08:48,170 --> 00:08:52,580
+And both are multiplied by xaxb because the weight is very important.
+
+151
+00:08:52,580 --> 00:08:55,510
+And in our case, you can plug and chug.
+
+152
+00:08:55,510 --> 00:09:02,950
+If xaxb are half, xa squared is quarter, xb a quarter, xaxb is also a quarter.
+
+153
+00:09:02,950 --> 00:09:04,520
+But multiplied by 2 it becomes half.
+
+154
+00:09:06,190 --> 00:09:07,170
+Okay, simple.
+
+155
+00:09:08,320 --> 00:09:09,380
+Very straight forward.
+
+156
+00:09:09,380 --> 00:09:14,590
+We&#39;ve done each of these pieces, the complication here is that sigma squared b
+
+157
+00:09:14,590 --> 00:09:20,800
+the variance doesn&#39;t look any okay like an average of the two variances.
+
+158
+00:09:20,800 --> 00:09:23,510
+Right, whats messing things up?
+
+159
+00:09:23,510 --> 00:09:27,610
+Things that are messing things up which is really cool in the end
+
+160
+00:09:27,610 --> 00:09:29,720
+Is the fact that you have this covalences.
+
+161
+00:09:30,740 --> 00:09:35,810
+So let&#39;s take this covalences and rewrite it, remember what the covalence is?
+
+162
+00:09:36,840 --> 00:09:45,140
+Covalence ab can divided by a sigma a, sigma b and that becomes what?
+
+163
+00:09:45,140 --> 00:09:46,320
+Rho ab.
+
+164
+00:09:47,560 --> 00:09:55,238
+And this implies that you can take sigma ab and
+
+165
+00:09:55,238 --> 00:10:02,524
+write it out as rho ab times sigma a sigma b.
+
+166
+00:10:05,469 --> 00:10:06,680
+Why am I doing this?
+
+167
+00:10:06,680 --> 00:10:08,710
+Because rhos are easier to understand.
+
+168
+00:10:08,710 --> 00:10:14,490
+Remember, covariances are great, but, in the end, a lot of people can rely on rho,
+
+169
+00:10:14,490 --> 00:10:19,430
+because it has plus, minus limits, it can compare, and so on.
+
+170
+00:10:19,430 --> 00:10:20,680
+So, look what I&#39;ve done.
+
+171
+00:10:22,110 --> 00:10:28,070
+I&#39;ve just taken and substituted sigma ab by this guy.
+
+172
+00:10:28,070 --> 00:10:29,110
+And there to equal.
+
+173
+00:10:29,110 --> 00:10:30,290
+Very simple.
+
+174
+00:10:30,290 --> 00:10:31,890
+So in question one and
+
+175
+00:10:31,890 --> 00:10:34,600
+two are just two different ways of looking at the same thing.
+
+176
+00:10:34,600 --> 00:10:37,980
+One with covariances and one with correlations.
+
+177
+00:10:37,980 --> 00:10:42,140
+A lot of people like correlations for understandable reasons.
+
+178
+00:10:42,140 --> 00:10:43,930
+I don&#39;t particularly care.
+
+179
+00:10:43,930 --> 00:10:46,600
+Why? Because the idea of relationships as
+
+180
+00:10:46,600 --> 00:10:48,030
+the area is important.
+
+181
+00:10:48,030 --> 00:10:50,320
+So very quickly, two securities.
+
+182
+00:10:51,390 --> 00:10:52,890
+How many relationships?
+
+183
+00:10:52,890 --> 00:10:53,670
+Two.
+
+184
+00:10:53,670 --> 00:10:54,560
+But they&#39;re symmetric.
+
+185
+00:10:54,560 --> 00:10:57,560
+A with B, B with A are the same.
+
+186
+00:10:58,860 --> 00:11:03,280
+In one security portfolio, how many relationships?
+
+187
+00:11:03,280 --> 00:11:03,780
+Zippo.
+
+188
+00:11:04,790 --> 00:11:06,080
+How many variances?
+
+189
+00:11:06,080 --> 00:11:07,340
+One.
+
+190
+00:11:07,340 --> 00:11:09,200
+In two how many variances?
+
+191
+00:11:09,200 --> 00:11:12,120
+Two, A and B but how many covariance?
+
+192
+00:11:12,120 --> 00:11:14,410
+Two they happen to be symmetric.
+
+193
+00:11:14,410 --> 00:11:16,660
+Okay, total how many items?
+
+194
+00:11:16,660 --> 00:11:17,340
+Four.
+
+195
+00:11:17,340 --> 00:11:20,850
+You&#39;ve gone from one singularity in a portfolio to two.
+
+196
+00:11:20,850 --> 00:11:23,700
+What has happened to the number of things you have to worry about?
+
+197
+00:11:23,700 --> 00:11:24,830
+Four, right?
+
+198
+00:11:26,310 --> 00:11:31,770
+Sigma square A, sigma square B, sigma AB, sigma BA.
+
+199
+00:11:31,770 --> 00:11:33,915
+The two are the same so there are two of those.
+
+200
+00:11:33,915 --> 00:11:36,700
+Let&#39;s take a pause.
+
+201
+00:11:36,700 --> 00:11:38,030
+Let&#39;s think about it.
+
+202
+00:11:38,030 --> 00:11:38,550
+Let&#39;s come back.
+

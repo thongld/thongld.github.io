@@ -1,0 +1,868 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/l3kU-OjP5cY
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:06,665
+DR. RAMESH YERRABALLI: In this video,
+we will look at finite state machines.
+
+3
+00:00:06,665 --> 00:00:09,770
+
+4
+00:00:09,770 --> 00:00:17,280
+A finite state machine
+is an abstraction we
+
+5
+00:00:17,280 --> 00:00:23,960
+use to describe any system
+that can be captured
+
+6
+00:00:23,960 --> 00:00:32,130
+in the form of-- so any system that can
+be captured by this schematic, which
+
+7
+00:00:32,130 --> 00:00:38,240
+is it takes inputs-- and there
+could be multiple inputs--
+
+8
+00:00:38,240 --> 00:00:40,810
+and it generates outputs.
+
+9
+00:00:40,810 --> 00:00:44,140
+
+10
+00:00:44,140 --> 00:00:48,050
+And it performs certain logic.
+
+11
+00:00:48,050 --> 00:00:55,810
+And this logic that it performs
+puts the system in different states.
+
+12
+00:00:55,810 --> 00:01:02,410
+So it reacts to the inputs, changes
+states, and produces outputs.
+
+13
+00:01:02,410 --> 00:01:04,730
+So any system that can
+be described like this
+
+14
+00:01:04,730 --> 00:01:08,110
+is described by a finite state machine.
+
+15
+00:01:08,110 --> 00:01:14,110
+So in order to fully describe a finite
+state machine, we need five things.
+
+16
+00:01:14,110 --> 00:01:18,920
+The five things that we
+use-- I call it a 5-tuple,
+
+17
+00:01:18,920 --> 00:01:21,285
+if you will-- the five
+things that we use
+
+18
+00:01:21,285 --> 00:01:32,040
+are, first, the set of
+inputs-- the input set.
+
+19
+00:01:32,040 --> 00:01:35,785
+The second thing is set of
+outputs that are generated.
+
+20
+00:01:35,785 --> 00:01:40,790
+
+21
+00:01:40,790 --> 00:01:46,180
+The third thing is the finite set of
+states that the system goes through.
+
+22
+00:01:46,180 --> 00:01:49,230
+
+23
+00:01:49,230 --> 00:01:54,470
+And the fourth and important thing is
+to describe how we move from one state
+
+24
+00:01:54,470 --> 00:01:58,130
+to another state in
+reacting to the inputs.
+
+25
+00:01:58,130 --> 00:02:03,960
+So this is what we call
+as a state transition.
+
+26
+00:02:03,960 --> 00:02:09,229
+Now, state transitions are, as I said,
+how do you transition from one state
+
+27
+00:02:09,229 --> 00:02:10,090
+to another.
+
+28
+00:02:10,090 --> 00:02:12,400
+We use two different ways of describing.
+
+29
+00:02:12,400 --> 00:02:18,960
+This one is a graph, a state transition
+graph, or a state transition matrix.
+
+30
+00:02:18,960 --> 00:02:22,020
+This is commonly used in the literature.
+
+31
+00:02:22,020 --> 00:02:26,050
+We will, in this module
+and in this class,
+
+32
+00:02:26,050 --> 00:02:31,360
+we will primarily use a
+state transition graph,
+
+33
+00:02:31,360 --> 00:02:35,920
+which we will call STG to describe it.
+
+34
+00:02:35,920 --> 00:02:43,673
+And the last piece of the tuple, last
+element, is the output determination.
+
+35
+00:02:43,673 --> 00:02:53,410
+
+36
+00:02:53,410 --> 00:02:58,880
+So what output determination is
+saying is what determines the output?
+
+37
+00:02:58,880 --> 00:03:00,640
+How do you generate the output?
+
+38
+00:03:00,640 --> 00:03:05,570
+What conditions have to be satisfied
+for output to be generated?
+
+39
+00:03:05,570 --> 00:03:11,640
+Now, the kind of machine we're going to
+look at is what is called a Moore FSM.
+
+40
+00:03:11,640 --> 00:03:17,160
+
+41
+00:03:17,160 --> 00:03:23,420
+When I generate a state, the
+next state is dependent on,
+
+42
+00:03:23,420 --> 00:03:33,845
+is a function of, the
+current state and the inputs.
+
+43
+00:03:33,845 --> 00:03:37,410
+
+44
+00:03:37,410 --> 00:03:44,880
+Also, the output is a function--
+I'm going to call that function g(),
+
+45
+00:03:44,880 --> 00:03:53,240
+if you will-- a function
+of just the current state.
+
+46
+00:03:53,240 --> 00:04:00,650
+In other words, in a
+Moore machine, there's
+
+47
+00:04:00,650 --> 00:04:06,480
+a one-to-one correspondence
+between outputs and states.
+
+48
+00:04:06,480 --> 00:04:12,330
+That is, for each state, there is
+a unique output that's generated.
+
+49
+00:04:12,330 --> 00:04:16,080
+What we will not be looking at in
+this class-- and those of you who
+
+50
+00:04:16,080 --> 00:04:22,380
+are curious can explore this--
+is another kind of machine
+
+51
+00:04:22,380 --> 00:04:27,590
+called a Mealy machine, a Mealy FSM.
+
+52
+00:04:27,590 --> 00:04:34,720
+A Mealy FSM looks almost identical,
+except that-- so it still
+
+53
+00:04:34,720 --> 00:04:38,540
+has the next state dependent
+on the current state and input.
+
+54
+00:04:38,540 --> 00:04:50,750
+But the output in a Mealy FSM is a
+function of not just the current state,
+
+55
+00:04:50,750 --> 00:04:56,580
+but also the input.
+
+56
+00:04:56,580 --> 00:05:01,810
+So the reason why we don't look at the
+Mealy FSM is it's a little complicated.
+
+57
+00:05:01,810 --> 00:05:07,450
+But suffice it to say that anything
+that can be done with a Mealy machine
+
+58
+00:05:07,450 --> 00:05:09,380
+can be done with a Moore machine.
+
+59
+00:05:09,380 --> 00:05:11,790
+So they're both equally powerful.
+
+60
+00:05:11,790 --> 00:05:15,200
+And therefore, we choose the simpler
+one, which is the Moore machine,
+
+61
+00:05:15,200 --> 00:05:16,090
+in this course.
+
+62
+00:05:16,090 --> 00:05:19,170
+
+63
+00:05:19,170 --> 00:05:22,760
+So all this sounds good, but
+how does it exactly work?
+
+64
+00:05:22,760 --> 00:05:25,840
+So let's take a problem
+to apply this to.
+
+65
+00:05:25,840 --> 00:05:29,710
+So the problem I'm going
+to look at is going
+
+66
+00:05:29,710 --> 00:05:33,130
+to be 1) so let's state the problem.
+
+67
+00:05:33,130 --> 00:05:35,265
+So let's clear this.
+
+68
+00:05:35,265 --> 00:05:36,530
+Let's state the problem.
+
+69
+00:05:36,530 --> 00:05:41,770
+The problem I'm going to apply this
+to, or a system that I want to describe
+
+70
+00:05:41,770 --> 00:05:49,630
+is recognizer, so a
+detector or a recognizer.
+
+71
+00:05:49,630 --> 00:06:02,620
+So recognize whether-- or
+detect whether-- the sequence
+
+72
+00:06:02,620 --> 00:06:29,230
+of bits read so far has
+an odd number of 1s.
+
+73
+00:06:29,230 --> 00:06:32,720
+So in other words, here's my system.
+
+74
+00:06:32,720 --> 00:06:37,560
+And I'm going to read a bit
+at a time, through some port.
+
+75
+00:06:37,560 --> 00:06:39,530
+Let's not worry about what port it is.
+
+76
+00:06:39,530 --> 00:06:41,040
+I'm going to read a bit.
+
+77
+00:06:41,040 --> 00:06:46,370
+And let's say the bit sequence
+looks something like this.
+
+78
+00:06:46,370 --> 00:06:47,335
+So this is my input.
+
+79
+00:06:47,335 --> 00:06:50,160
+
+80
+00:06:50,160 --> 00:06:52,270
+And it's a single bit that I read.
+
+81
+00:06:52,270 --> 00:06:55,400
+And let's say the input sequence
+looks something like this-- 1,
+
+82
+00:06:55,400 --> 00:07:09,000
+a 0, another 0, a 1, a
+0, 0, 1, 1, 0, and so on.
+
+83
+00:07:09,000 --> 00:07:11,460
+So this is how the input sequences.
+
+84
+00:07:11,460 --> 00:07:16,070
+Now, what we want to see is,
+as soon as we read a bit.
+
+85
+00:07:16,070 --> 00:07:19,970
+We want to know whether the
+number of 1s so far is odd.
+
+86
+00:07:19,970 --> 00:07:23,110
+So the first bit I read,
+I will produce an output.
+
+87
+00:07:23,110 --> 00:07:24,225
+So this is my output.
+
+88
+00:07:24,225 --> 00:07:28,040
+
+89
+00:07:28,040 --> 00:07:32,280
+And when I read the first bit,
+so far there's only one 1 read,
+
+90
+00:07:32,280 --> 00:07:36,050
+and so the output has to be a 1.
+
+91
+00:07:36,050 --> 00:07:37,850
+Now, I read a second 0.
+
+92
+00:07:37,850 --> 00:07:44,759
+And this 0 makes the number
+of 1s so far still be an odd,
+
+93
+00:07:44,759 --> 00:07:45,800
+because there's only one.
+
+94
+00:07:45,800 --> 00:07:47,960
+So I continue to output a 1.
+
+95
+00:07:47,960 --> 00:07:49,190
+I read another 0.
+
+96
+00:07:49,190 --> 00:07:50,850
+I continue to write a 1.
+
+97
+00:07:50,850 --> 00:07:51,720
+I read a 1.
+
+98
+00:07:51,720 --> 00:07:56,240
+That's going to make my output be a 0,
+because right now, there are two 1s.
+
+99
+00:07:56,240 --> 00:07:59,910
+So until this point, there
+are two 1s, so I write a 0.
+
+100
+00:07:59,910 --> 00:08:02,200
+I read another 0.
+
+101
+00:08:02,200 --> 00:08:03,720
+Nothing has changed.
+
+102
+00:08:03,720 --> 00:08:05,400
+Nothing has changed.
+
+103
+00:08:05,400 --> 00:08:10,280
+When I read this 1, I produce a
+1, because now there are three 1s.
+
+104
+00:08:10,280 --> 00:08:16,930
+And now, I read another 1, so I
+produce a 0, and a 0, and it continues.
+
+105
+00:08:16,930 --> 00:08:19,540
+So in other words, it's
+keeping a running tally
+
+106
+00:08:19,540 --> 00:08:21,390
+of how many 1s it has read.
+
+107
+00:08:21,390 --> 00:08:25,810
+So this is my system
+that I want to describe.
+
+108
+00:08:25,810 --> 00:08:30,120
+So we will first identify
+all the elements.
+
+109
+00:08:30,120 --> 00:08:33,470
+So let's fill in all our elements.
+
+110
+00:08:33,470 --> 00:08:39,480
+So our first element is
+our input for the FSM.
+
+111
+00:08:39,480 --> 00:08:41,990
+We're saying that there's a single bit.
+
+112
+00:08:41,990 --> 00:08:48,070
+Input is one bit, which
+can be a 0 or a 1.
+
+113
+00:08:48,070 --> 00:08:51,920
+Output, again, is a single bit.
+
+114
+00:08:51,920 --> 00:08:59,130
+And it's also a 0 or a 1, a 0 or a 1
+to indicate whether the number of 1s
+
+115
+00:08:59,130 --> 00:09:01,270
+so far are odd or even.
+
+116
+00:09:01,270 --> 00:09:05,620
+So the indicator here is 1
+indicates that we're odd.
+
+117
+00:09:05,620 --> 00:09:08,200
+0 indicates that so far, it's an even.
+
+118
+00:09:08,200 --> 00:09:12,020
+So the third thing is states.
+
+119
+00:09:12,020 --> 00:09:19,090
+Well, as the logic would
+determine, if I want
+
+120
+00:09:19,090 --> 00:09:24,130
+to keep track of how many
+1s have been read so far,
+
+121
+00:09:24,130 --> 00:09:27,860
+and I wanted to know whether they're
+odd or even, I would need two states.
+
+122
+00:09:27,860 --> 00:09:32,800
+And I'm going to describe the
+two states by these circles.
+
+123
+00:09:32,800 --> 00:09:36,940
+So there are two states,
+so I call them two states.
+
+124
+00:09:36,940 --> 00:09:48,330
+And the two states are, I have odd
+ones so far or even ones so far.
+
+125
+00:09:48,330 --> 00:09:55,580
+So I call them my even and odd state.
+
+126
+00:09:55,580 --> 00:09:59,220
+So I start off my
+system in an even state,
+
+127
+00:09:59,220 --> 00:10:00,910
+because I haven't read anything yet.
+
+128
+00:10:00,910 --> 00:10:04,430
+And so I'm saying zero 1s are even.
+
+129
+00:10:04,430 --> 00:10:10,310
+So I designate my initial state
+by drawing an arrow into it.
+
+130
+00:10:10,310 --> 00:10:13,490
+And now I have to do
+the state transition.
+
+131
+00:10:13,490 --> 00:10:15,055
+So this is a graph.
+
+132
+00:10:15,055 --> 00:10:19,670
+So this is my fourth step, which
+is a state transition graph.
+
+133
+00:10:19,670 --> 00:10:25,120
+The state transition graph has
+nodes, which are circles, and arrows.
+
+134
+00:10:25,120 --> 00:10:30,110
+So the arrows, then, will tell me
+how I transition from one state
+
+135
+00:10:30,110 --> 00:10:31,200
+to another state.
+
+136
+00:10:31,200 --> 00:10:35,460
+So if I'm in the even
+state, and I read a 1,
+
+137
+00:10:35,460 --> 00:10:38,200
+which means that the number
+1s so far will become odd.
+
+138
+00:10:38,200 --> 00:10:40,220
+So I'm going to draw a line like that.
+
+139
+00:10:40,220 --> 00:10:45,900
+So this is saying that
+if I read a 1, I go here.
+
+140
+00:10:45,900 --> 00:10:52,590
+On the other hand, if I read a 0
+here, then I stay in the same state.
+
+141
+00:10:52,590 --> 00:10:56,640
+So the arrows are going from
+one state to another state
+
+142
+00:10:56,640 --> 00:11:01,040
+to indicate that on an input--
+so they're tagged by the input--
+
+143
+00:11:01,040 --> 00:11:04,150
+and if the input is a 0, I stay in even.
+
+144
+00:11:04,150 --> 00:11:09,910
+If the input is a 1 and the current
+state is even, then I go to odd.
+
+145
+00:11:09,910 --> 00:11:12,870
+Now, I've accounted for all
+possibilities in this state,
+
+146
+00:11:12,870 --> 00:11:15,800
+because there's only two
+possible inputs-- a 0 or a 1.
+
+147
+00:11:15,800 --> 00:11:18,180
+I'm here in odd, let's say.
+
+148
+00:11:18,180 --> 00:11:18,820
+And if I read.
+
+149
+00:11:18,820 --> 00:11:22,260
+A 0, I still remain odd.
+
+150
+00:11:22,260 --> 00:11:28,430
+If I read a 1 in this state, I
+transition to this even state,
+
+151
+00:11:28,430 --> 00:11:31,035
+because two 1s make it an even.
+
+152
+00:11:31,035 --> 00:11:33,110
+So if I'm already here, then I do that.
+
+153
+00:11:33,110 --> 00:11:35,690
+So that's my state transition graph.
+
+154
+00:11:35,690 --> 00:11:41,030
+My fifth element, which is
+the output determination.
+
+155
+00:11:41,030 --> 00:11:46,480
+Remember, I said that there's a
+one-to-one correspondence in a Moore
+
+156
+00:11:46,480 --> 00:11:46,980
+FSM.
+
+157
+00:11:46,980 --> 00:11:49,510
+
+158
+00:11:49,510 --> 00:11:52,800
+There's a one-to-one correspondence
+between a state and output.
+
+159
+00:11:52,800 --> 00:11:56,570
+So I will write the
+output within the state.
+
+160
+00:11:56,570 --> 00:12:03,290
+And I'll say if I'm in even, then
+I have to produce an output of 0.
+
+161
+00:12:03,290 --> 00:12:07,710
+If I'm in odd, then I have
+to produce an output of 1.
+
+162
+00:12:07,710 --> 00:12:15,230
+So this shows us the elements
+of a finite state machine,
+
+163
+00:12:15,230 --> 00:12:18,620
+where the state transition
+graph describes everything
+
+164
+00:12:18,620 --> 00:12:21,100
+that we want to know what the system.
+
+165
+00:12:21,100 --> 00:12:26,250
+And we have to make sure that all
+inputs that accounted for in all states,
+
+166
+00:12:26,250 --> 00:12:31,120
+and we also have to say
+what outputs are generated.
+
+167
+00:12:31,120 --> 00:12:39,330
+Now, if I were to traverse this finite
+state machine for the given input,
+
+168
+00:12:39,330 --> 00:12:41,530
+then it would look something like this.
+
+169
+00:12:41,530 --> 00:12:44,220
+
+170
+00:12:44,220 --> 00:12:47,500
+The first one I read is going
+to get me from this state--
+
+171
+00:12:47,500 --> 00:12:52,710
+so remember, this is my initial
+state-- so I go from here to here.
+
+172
+00:12:52,710 --> 00:12:55,510
+I make this transition
+because I read a 1.
+
+173
+00:12:55,510 --> 00:12:59,320
+And then I read a 0, so
+I stay within this state.
+
+174
+00:12:59,320 --> 00:13:01,960
+
+175
+00:13:01,960 --> 00:13:06,370
+So transitioning here
+would have produced this 1,
+
+176
+00:13:06,370 --> 00:13:09,350
+so that's the first
+1 that got generated.
+
+177
+00:13:09,350 --> 00:13:11,490
+I come here.
+
+178
+00:13:11,490 --> 00:13:17,260
+I read now a 0, so I stay
+there, so I produce another 1.
+
+179
+00:13:17,260 --> 00:13:22,710
+And I read another 0, so
+I produce a third one.
+
+180
+00:13:22,710 --> 00:13:25,500
+So that's all the 1s
+that are being produced.
+
+181
+00:13:25,500 --> 00:13:29,630
+And then I read a 1, which is
+going to put me back in the state.
+
+182
+00:13:29,630 --> 00:13:32,200
+And then I'm in this
+state, and I produce
+
+183
+00:13:32,200 --> 00:13:36,290
+a 0, which is this one right there.
+
+184
+00:13:36,290 --> 00:13:40,340
+And then I read another
+0, so I remain here.
+
+185
+00:13:40,340 --> 00:13:47,160
+And I produce a second
+0, which is this guy.
+
+186
+00:13:47,160 --> 00:13:51,130
+I read another 0, so I produce that one.
+
+187
+00:13:51,130 --> 00:13:52,400
+And I read a 1.
+
+188
+00:13:52,400 --> 00:13:58,560
+That will transition me to this state
+again, and I go back to this state,
+
+189
+00:13:58,560 --> 00:14:03,070
+produce that 1, which is coming
+from here again, and so on.
+
+190
+00:14:03,070 --> 00:14:08,142
+So this is a traversal of
+the FSM for a given input.
+
+191
+00:14:08,142 --> 00:14:08,642

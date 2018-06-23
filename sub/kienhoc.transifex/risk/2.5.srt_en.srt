@@ -1,0 +1,356 @@
+0
+00:00:05,041 --> 00:00:08,650
+Welcome back, let&#39;s have some fun.
+https://youtu.be/_IkS4-11XsY
+1
+00:00:08,650 --> 00:00:14,260
+I hope you have opened up the data file called stocks-data.
+
+2
+00:00:14,260 --> 00:00:17,180
+And if you open it up, and it&#39;s right now on the screen,
+
+3
+00:00:17,180 --> 00:00:20,840
+you can stare on the screen and kind of make sure we are on the same page.
+
+4
+00:00:20,840 --> 00:00:26,910
+The first thing you&#39;ll notice is that there are multiple columns, six of them.
+
+5
+00:00:26,910 --> 00:00:28,260
+And the first one is month.
+
+6
+00:00:29,430 --> 00:00:34,710
+For simplicity, I have only labeled on thing, which is S&amp;P 500.
+
+7
+00:00:34,710 --> 00:00:36,940
+Now why have I included that?
+
+8
+00:00:36,940 --> 00:00:44,740
+You&#39;ll see in a second, but the other stocks are randomly chosen real stocks.
+
+9
+00:00:44,740 --> 00:00:49,000
+Turns out they&#39;re chosen over a specific time.
+
+10
+00:00:49,000 --> 00:00:51,330
+But I&#39;ve just called them Months 1-60.
+
+11
+00:00:51,330 --> 00:00:53,690
+I want this part to be generic,
+
+12
+00:00:53,690 --> 00:00:57,980
+meaning I don&#39;t care which months you&#39;ve picked or whatever.
+
+13
+00:00:57,980 --> 00:01:02,870
+You should be able to execute the analysis regardless of what it is.
+
+14
+00:01:02,870 --> 00:01:08,760
+Having said that I&#39;ll also give you a corresponding assignment for
+
+15
+00:01:08,760 --> 00:01:12,780
+this section, which will be focused on data analysis like this.
+
+16
+00:01:12,780 --> 00:01:17,770
+Because you see, the other kind will you see enough of those.
+
+17
+00:01:18,830 --> 00:01:24,470
+And I&#39;ll give you a new data set where I&#39;ll give you the also.
+
+18
+00:01:24,470 --> 00:01:27,860
+Or maybe camouflage them, but give you two separate time periods.
+
+19
+00:01:27,860 --> 00:01:28,750
+Why am I doing that?
+
+20
+00:01:28,750 --> 00:01:33,190
+It&#39;s because, first, different time
+
+21
+00:01:33,190 --> 00:01:37,950
+periods could be pulled from different parts of the economic cycle.
+
+22
+00:01:37,950 --> 00:01:40,470
+Remember what I told you, and you know this.
+
+23
+00:01:40,470 --> 00:01:44,330
+The economy goes into business cycles, and a lot of us don&#39;t understand why, and
+
+24
+00:01:44,330 --> 00:01:49,280
+that&#39;s one of the biggest challenges is understanding why there is a business
+
+25
+00:01:49,280 --> 00:01:54,360
+cycle and economics and finance to help study it all the time.
+
+26
+00:01:54,360 --> 00:01:55,880
+So you have 60 months of data.
+
+27
+00:01:55,880 --> 00:01:57,300
+Please make sure you do.
+
+28
+00:01:57,300 --> 00:02:02,120
+So I&#39;m going to just make sure my file up there has 60.
+
+29
+00:02:02,120 --> 00:02:08,290
+Okay I&#39;m going to spend a few minutes talking about this.
+
+30
+00:02:09,759 --> 00:02:11,720
+And I would encourage you to use Excel.
+
+31
+00:02:11,720 --> 00:02:15,780
+So total number of rows are what, 61.
+
+32
+00:02:15,780 --> 00:02:16,650
+Why?
+
+33
+00:02:16,650 --> 00:02:20,710
+Because the first row is given entirely to naming conventions.
+
+34
+00:02:20,710 --> 00:02:23,880
+So the column one is Month, S&amp;P 500, Stock 1, 2, 3, 4, 5.
+
+35
+00:02:23,880 --> 00:02:28,433
+Then if you look at a particular stock return,
+
+36
+00:02:28,433 --> 00:02:34,876
+it is either negative or positive, which I told you is possible.
+
+37
+00:02:34,876 --> 00:02:41,359
+But it is not a percentage from its the way it is calculated is
+
+38
+00:02:41,359 --> 00:02:46,953
+kept it that way, because it is minus 0.085657.
+
+39
+00:02:46,953 --> 00:02:48,862
+So the numbers are not neat and round like we have.
+
+40
+00:02:48,862 --> 00:02:54,040
+However it&#39;s a pretty high monthly negative
+
+41
+00:02:54,040 --> 00:02:58,370
+return because it is percentage from you multiply by 100 so what do you know,
+
+42
+00:02:59,490 --> 00:03:04,900
+that month is not a very good month right and so you can almost guess
+
+43
+00:03:04,900 --> 00:03:09,719
+which period is strong during recession or during a down time or whatever.
+
+44
+00:03:11,050 --> 00:03:16,205
+So, what you also notice is that there are five such returns and
+
+45
+00:03:16,205 --> 00:03:20,280
+S&amp;P 500, and even the S&amp;P 500, which has how many stocks?
+
+46
+00:03:20,280 --> 00:03:23,060
+500 of them. On that day
+
+47
+00:03:23,060 --> 00:03:26,050
+has a huge negative return, right?
+
+48
+00:03:26,050 --> 00:03:27,950
+But one of the stocks doesn&#39;t.
+
+49
+00:03:27,950 --> 00:03:29,550
+One of the stocks has a positive return.
+
+50
+00:03:29,550 --> 00:03:33,960
+So this is showing you that this is just data.
+
+51
+00:03:33,960 --> 00:03:39,060
+This is how stocks behave, this is the fascinating part about the real world.
+
+52
+00:03:39,060 --> 00:03:42,920
+And that&#39;s what I love about data, is that we are going to try to capture concepts
+
+53
+00:03:42,920 --> 00:03:46,250
+and put them with data and try to make sense of them.
+
+54
+00:03:46,250 --> 00:03:49,900
+No model, I say this often in class, is right.
+
+55
+00:03:49,900 --> 00:03:54,414
+But the beauty of a really awesome model is it&#39;s simplicity versus how much of
+
+56
+00:03:54,414 --> 00:03:56,220
+the captures.
+
+57
+00:03:56,220 --> 00:04:00,550
+And what we are going to do in this return is we see,
+
+58
+00:04:00,550 --> 00:04:06,560
+this module which we call capital pressing model that we are building up to because
+
+59
+00:04:06,560 --> 00:04:11,400
+of it&#39;s simplicity and applicability not because it&#39;s right all the time.
+
+60
+00:04:11,400 --> 00:04:13,810
+It&#39;s the way of thinking that&#39;s right.
+
+61
+00:04:13,810 --> 00:04:14,990
+That&#39;s the awesomeness.
+
+62
+00:04:14,990 --> 00:04:18,420
+Anyway, so 60 months, why did I give you?
+
+63
+00:04:18,420 --> 00:04:24,070
+Because it takes a fair amount of data to actually calculate numbers accurately.
+
+64
+00:04:24,070 --> 00:04:28,560
+And the research has been done on it, and five years worth of monthly data,
+
+65
+00:04:28,560 --> 00:04:31,189
+60 data points, is considered reasonable.
+
+66
+00:04:32,250 --> 00:04:35,590
+You&#39;ll see similar estimates on Yahoo finance and
+
+67
+00:04:35,590 --> 00:04:39,540
+there they can estimate things even with up to 24 months of data so
+
+68
+00:04:39,540 --> 00:04:42,970
+that&#39;s why you have to be very careful how do you do your analysis.
+
+69
+00:04:42,970 --> 00:04:48,340
+So the data even it&#39;s identical, the data analysis is
+
+70
+00:04:48,340 --> 00:04:52,480
+a very critical component and could be right, wrong.
+
+71
+00:04:52,480 --> 00:04:54,190
+Better, and so on.
+
+72
+00:04:54,190 --> 00:04:56,850
+So, you have all this data, what am I going to do?
+
+73
+00:04:56,850 --> 00:05:01,430
+I&#39;m going to redo everything we did, with a major twist.
+
+74
+00:05:01,430 --> 00:05:07,690
+I will fix the one, and two stocks, like before, but real ones, over a five
+
+75
+00:05:07,690 --> 00:05:12,700
+year period, with 60 months of data I&#39;ll calculate the mean standard deviations.
+
+76
+00:05:12,700 --> 00:05:15,530
+I&#39;ll tell you how to calculate them.
+
+77
+00:05:15,530 --> 00:05:17,790
+I&#39;ll give you a bit of the flavor of Excel.
+
+78
+00:05:17,790 --> 00:05:20,470
+Remember, Excel, I don&#39;t get deeply into,
+
+79
+00:05:20,470 --> 00:05:24,605
+because I want you to take [INAUDIBLE] But I&#39;ll talk a little bit about it.
+
+80
+00:05:24,605 --> 00:05:28,415
+But the odd thing about there is the market portfolio.
+
+81
+00:05:28,415 --> 00:05:31,785
+And we will talk about that, and we&#39;ll talk about relationships.
+
+82
+00:05:31,785 --> 00:05:34,737
+And when we are done with this module, and we come back.
+
+83
+00:05:34,737 --> 00:05:38,549
+You&#39;ll see why I included S&amp;P 500.
+
+84
+00:05:38,549 --> 00:05:43,940
+And you&#39;ll see why covariances and correlations matter a lot.
+
+85
+00:05:43,940 --> 00:05:45,860
+So I hope this dataset is with you.
+
+86
+00:05:45,860 --> 00:05:47,680
+I hope you use it.
+
+87
+00:05:47,680 --> 00:05:51,250
+When we come back I&#39;ll start number crunching.
+
+88
+00:05:51,250 --> 00:05:52,165
+See you in a minute.
+

@@ -1,0 +1,981 @@
+0
+00:00:09,191 --> 00:00:12,450
+https://youtu.be/6Ln5UueaVII
+So what do we mean when we talk about designed in UX?
+
+1
+00:00:12,450 --> 00:00:18,090
+Well, I&#39;d like to start by thinking about how the term design is used in common,
+
+2
+00:00:18,090 --> 00:00:19,650
+everyday ways.
+
+3
+00:00:19,650 --> 00:00:24,410
+And I&#39;d like to do that by looking at what happens when we do a search on Google
+
+4
+00:00:24,410 --> 00:00:29,860
+images for design.
+
+5
+00:00:29,860 --> 00:00:32,460
+Well, what we see are a lot of
+
+6
+00:00:32,460 --> 00:00:35,820
+visual images that are essentially decorations of some kind.
+
+7
+00:00:35,820 --> 00:00:39,443
+If we scroll down we can see lot&#39;s of graphical images and
+
+8
+00:00:39,443 --> 00:00:43,000
+some tools that are used for producing graphic images.
+
+9
+00:00:44,310 --> 00:00:47,640
+And so commonly when people talk about design they talk about
+
+10
+00:00:47,640 --> 00:00:49,300
+how something looks.
+
+11
+00:00:49,300 --> 00:00:53,710
+Maybe what decorations it has, what form it has.
+
+12
+00:00:53,710 --> 00:00:58,890
+However, this is a very narrow and specific use of design.
+
+13
+00:01:00,100 --> 00:01:01,600
+Steve Jobs once said,
+
+14
+00:01:01,600 --> 00:01:05,230
+most people make the mistake of thinking design is what it looks like.
+
+15
+00:01:05,230 --> 00:01:09,210
+People think it&#39;s this veneer, that the designers are handed this box and
+
+16
+00:01:09,210 --> 00:01:10,680
+told make it look good.
+
+17
+00:01:10,680 --> 00:01:12,560
+But that&#39;s not what we think design is.
+
+18
+00:01:12,560 --> 00:01:15,160
+It&#39;s not just what it looks like and feels like.
+
+19
+00:01:15,160 --> 00:01:16,767
+Design is how it works.
+
+20
+00:01:19,120 --> 00:01:23,806
+Charles Eames, a well known mid-century furniture designer,
+
+21
+00:01:23,806 --> 00:01:25,679
+said, design is a plan for
+
+22
+00:01:25,679 --> 00:01:31,890
+arranging elements in such a way as to best accomplish a particular purpose.
+
+23
+00:01:31,890 --> 00:01:38,470
+So from these two quotes we start to get a picture of design as being first a plan.
+
+24
+00:01:38,470 --> 00:01:41,680
+So a design is not the final product, tt&#39;s not the outcome, but
+
+25
+00:01:41,680 --> 00:01:45,200
+it&#39;s a plan for producing that product or that outcome.
+
+26
+00:01:46,490 --> 00:01:49,460
+And it&#39;s a plan for arranging elements and
+
+27
+00:01:49,460 --> 00:01:52,670
+those elements will depend on the type of product that it is.
+
+28
+00:01:52,670 --> 00:01:59,910
+So the elements could be, gears and pulleys or it could be wood and leather.
+
+29
+00:01:59,910 --> 00:02:04,010
+It could be lines and swatches of color on a page.
+
+30
+00:02:04,010 --> 00:02:06,720
+Or in the case of UX, it could be things like text and
+
+31
+00:02:06,720 --> 00:02:09,750
+icons and buttons and images.
+
+32
+00:02:10,840 --> 00:02:15,650
+A design is a plan for arranging elements to accomplish a purpose.
+
+33
+00:02:15,650 --> 00:02:20,100
+So, there is a purpose that this design is supposed to accomplish and
+
+34
+00:02:20,100 --> 00:02:26,120
+it&#39;s supposed to help the users, or the consumers of the design to accomplish.
+
+35
+00:02:26,120 --> 00:02:30,110
+And ultimately, a design is mostly about how it works and
+
+36
+00:02:30,110 --> 00:02:33,540
+the functionality, and not just about how it looks.
+
+37
+00:02:33,540 --> 00:02:36,650
+Of course, it also includes what it looks like and what it feels like.
+
+38
+00:02:38,070 --> 00:02:41,280
+The well known designer and architect Buckminster Fuller said,
+
+39
+00:02:41,280 --> 00:02:44,360
+when I&#39;m working on a problem, I never think about beauty.
+
+40
+00:02:44,360 --> 00:02:46,948
+I only think about how to solve the problem.
+
+41
+00:02:46,948 --> 00:02:51,270
+But when I&#39;ve finished, if the solution isn&#39;t beautiful, I know it&#39;s wrong.
+
+42
+00:02:51,270 --> 00:02:57,220
+So here, we see an echo of Steve Jobs point, that a design is not strictly
+
+43
+00:02:57,220 --> 00:03:02,300
+about beauty, but we see an emphasis on design being about solving problems.
+
+44
+00:03:04,670 --> 00:03:10,440
+So this brings us to our first major point that design is about solving problems.
+
+45
+00:03:11,490 --> 00:03:13,410
+So what do we mean by solving problems and
+
+46
+00:03:13,410 --> 00:03:17,110
+what are the kinds of problems that design can solve?
+
+47
+00:03:17,110 --> 00:03:21,869
+Well let&#39;s look at an example, this is Zappos, which is
+
+48
+00:03:21,869 --> 00:03:26,940
+e-commerce site that primarily focuses on selling shoes.
+
+49
+00:03:26,940 --> 00:03:30,950
+They sell lots of other clothes now, but they started out selling shoes.
+
+50
+00:03:30,950 --> 00:03:35,160
+And so what is the problem that a product like this is trying to solve?
+
+51
+00:03:35,160 --> 00:03:39,910
+Well, it&#39;s trying to solve the problem that some people need shoes.
+
+52
+00:03:39,910 --> 00:03:44,870
+Well that&#39;s simple, because it so happens that the creators of Zappos
+
+53
+00:03:44,870 --> 00:03:48,680
+want to sell shoes, so this should work out perfectly.
+
+54
+00:03:48,680 --> 00:03:52,590
+However, the problem is a little bit more sophisticated then that because there&#39;s
+
+55
+00:03:52,590 --> 00:03:54,680
+lots of ways that people can get shoes.
+
+56
+00:03:54,680 --> 00:03:55,700
+They can go to a shoe store,
+
+57
+00:03:55,700 --> 00:03:59,370
+they can go to lots of other websites to get their shoes.
+
+58
+00:03:59,370 --> 00:04:02,570
+So maybe we need to understand the problem a little bit better.
+
+59
+00:04:03,590 --> 00:04:08,910
+Well, so maybe it turns out that what consumers need is shoes
+
+60
+00:04:08,910 --> 00:04:14,380
+that they can acquire conveniently, without having to go out and
+
+61
+00:04:14,380 --> 00:04:17,350
+go shopping and spend the time that it takes to do that.
+
+62
+00:04:17,350 --> 00:04:19,040
+They want to receive them fast,
+
+63
+00:04:19,040 --> 00:04:21,812
+they want to be able to get them within a day or two.
+
+64
+00:04:21,812 --> 00:04:25,690
+They wanna be able to find shoes that are in their style that they actually like.
+
+65
+00:04:25,690 --> 00:04:29,501
+And I need it to be reliable, they need to be sure that when they invest
+
+66
+00:04:29,501 --> 00:04:33,930
+the time in going onto Zappos that they&#39;re going to have a successful outcome.
+
+67
+00:04:35,985 --> 00:04:39,814
+Maybe it turns out also that people don&#39;t know exactly what they want and
+
+68
+00:04:39,814 --> 00:04:41,150
+they need inspiration.
+
+69
+00:04:41,150 --> 00:04:44,400
+They need to be able to be led to the choices that are going to be
+
+70
+00:04:44,400 --> 00:04:45,940
+satisfying for them.
+
+71
+00:04:45,940 --> 00:04:49,880
+And by the way, there are a lot of different consumers who have different
+
+72
+00:04:49,880 --> 00:04:51,860
+tastes and we&#39;re all different.
+
+73
+00:04:51,860 --> 00:04:56,590
+So this can lead to a more precise articulation of what the solution to
+
+74
+00:04:56,590 --> 00:05:02,100
+this problem of delivering shoes to consumers might consist of.
+
+75
+00:05:02,100 --> 00:05:04,898
+So now as the creator of this product,
+
+76
+00:05:04,898 --> 00:05:08,751
+I might be able to articulate what I&#39;m trying to do.
+
+77
+00:05:08,751 --> 00:05:13,450
+As I want to be able to sell shoes faster, more conveniently, with more selection,
+
+78
+00:05:13,450 --> 00:05:16,770
+in a way that&#39;s more personalized than the alternatives.
+
+79
+00:05:17,900 --> 00:05:20,850
+I wanna do it in a way that&#39;s fun and inspiring for people.
+
+80
+00:05:20,850 --> 00:05:23,080
+So if they have a positive experience and
+
+81
+00:05:23,080 --> 00:05:28,502
+that they end up finding shoes that they enjoy and that delight them.
+
+82
+00:05:28,502 --> 00:05:31,660
+And I want to do this across many demographics and styles.
+
+83
+00:05:33,340 --> 00:05:36,340
+So what we&#39;ve seen here is we&#39;ve gone from a very simple
+
+84
+00:05:36,340 --> 00:05:39,300
+high level problem statement, and we&#39;ve really unpacked it
+
+85
+00:05:39,300 --> 00:05:43,140
+to understand more specifically what this product needs to accomplish.
+
+86
+00:05:43,140 --> 00:05:45,640
+So we&#39;ve not only understood the problem better, but
+
+87
+00:05:45,640 --> 00:05:49,020
+we&#39;ve understood better what the form of a solution needs to be.
+
+88
+00:05:50,400 --> 00:05:52,350
+The design researcher Bryan Lawson,
+
+89
+00:05:52,350 --> 00:05:56,600
+who studied how designers work across many domains, across many years.
+
+90
+00:05:56,600 --> 00:06:01,780
+Has said that design is as much a matter of finding problems as it is solving them.
+
+91
+00:06:01,780 --> 00:06:06,650
+And I would add, it&#39;s about articulating problems in such a way that you can
+
+92
+00:06:06,650 --> 00:06:11,320
+understand what the form and the criteria of a solution ought to be.
+
+93
+00:06:12,780 --> 00:06:17,090
+So we can look at a very simplified version of the process that we follow
+
+94
+00:06:17,090 --> 00:06:18,040
+when we&#39;re designing.
+
+95
+00:06:19,320 --> 00:06:22,360
+The first step is understanding the problem, and
+
+96
+00:06:22,360 --> 00:06:25,940
+as we said making sure that you understand the problem
+
+97
+00:06:25,940 --> 00:06:29,630
+well enough that you can envision what a solution would look like.
+
+98
+00:06:29,630 --> 00:06:33,320
+What would the solution have to have, in order to actually solve that problem.
+
+99
+00:06:34,780 --> 00:06:37,750
+At that point, you can generate possible solutions.
+
+100
+00:06:37,750 --> 00:06:42,357
+You can start thinking about different possible ways to solve that problem.
+
+101
+00:06:42,357 --> 00:06:45,794
+And the goal here is actually to produce lots of different solutions,
+
+102
+00:06:45,794 --> 00:06:48,310
+that could be candidates for solving the problem.
+
+103
+00:06:49,540 --> 00:06:51,584
+Given those possible solutions,
+
+104
+00:06:51,584 --> 00:06:56,520
+the next step is to analyze systematically the solutions against the criteria that
+
+105
+00:06:56,520 --> 00:06:59,423
+you established for what a solution ought have.
+
+106
+00:06:59,423 --> 00:07:04,214
+And select the ones that are the most promising, that can be elaborated and
+
+107
+00:07:04,214 --> 00:07:06,610
+brought forward to the next phases.
+
+108
+00:07:06,610 --> 00:07:10,180
+The next step is to embody those solution which means to build
+
+109
+00:07:10,180 --> 00:07:14,020
+some kind of a prototype that can be used for
+
+110
+00:07:14,020 --> 00:07:16,930
+really understanding how this solution would work.
+
+111
+00:07:16,930 --> 00:07:20,880
+And that can also be used for assessing whether or
+
+112
+00:07:20,880 --> 00:07:23,680
+not we&#39;re moving along the right track.
+
+113
+00:07:23,680 --> 00:07:26,070
+At the assessment phase, what you wanna do is,
+
+114
+00:07:26,070 --> 00:07:29,490
+you wanna find new problems, one&#39;s that you missed the first time around.
+
+115
+00:07:29,490 --> 00:07:34,060
+Maybe you missed important requirements, or you missed important constraints, and
+
+116
+00:07:34,060 --> 00:07:38,600
+now you&#39;re going to go back to the beginning, understand those problems,
+
+117
+00:07:38,600 --> 00:07:41,170
+generate possible solutions, and so on and so forth.
+
+118
+00:07:42,360 --> 00:07:45,230
+So, to look at an example of how this all works,
+
+119
+00:07:46,290 --> 00:07:49,540
+I&#39;d like to show you a pretty cool project that I just came across recently.
+
+120
+00:07:50,710 --> 00:07:53,120
+It&#39;s called 50 Problems in 50 Days, and
+
+121
+00:07:53,120 --> 00:07:57,370
+it&#39;s this British designer named Pete Smart who travelled all over Europe.
+
+122
+00:07:57,370 --> 00:08:02,310
+And set as a goal for himself to do 50 designs in 50 days starting with
+
+123
+00:08:02,310 --> 00:08:04,270
+understanding a problem in the morning.
+
+124
+00:08:04,270 --> 00:08:05,450
+Working through solutions and
+
+125
+00:08:05,450 --> 00:08:10,120
+coming up with prototype of a solution by the evening.
+
+126
+00:08:10,120 --> 00:08:15,022
+So one that I like is day 29, [BLANK AUDIO] and
+
+127
+00:08:15,022 --> 00:08:19,870
+he was staying at a hostel in Amsterdam.
+
+128
+00:08:19,870 --> 00:08:21,684
+And he observed that at his hostel,
+
+129
+00:08:21,684 --> 00:08:25,924
+the staff sometimes have guests who can&#39;t speak a language that they understand.
+
+130
+00:08:25,924 --> 00:08:29,796
+So there&#39;s this communication problem between the staff at the hostel and
+
+131
+00:08:29,796 --> 00:08:31,060
+the guests.
+
+132
+00:08:31,060 --> 00:08:32,300
+So today&#39;s challenge, he said,
+
+133
+00:08:32,299 --> 00:08:36,619
+was work with the hostel staff to develop a system to assist communication.
+
+134
+00:08:39,309 --> 00:08:42,318
+So he started out by sitting down with the staff and
+
+135
+00:08:42,318 --> 00:08:46,269
+asking them to think of questions they are often asked by guests.
+
+136
+00:08:46,269 --> 00:08:50,592
+And have them write them down on post it notes, and created just a huge number
+
+137
+00:08:50,592 --> 00:08:54,935
+of the types of questions that they often have to answer on a day to day basis.
+
+138
+00:08:54,935 --> 00:08:58,630
+So this was part of understanding the problem and understanding
+
+139
+00:08:58,630 --> 00:09:02,950
+at a more specific way, going from the general problem of communication to say,
+
+140
+00:09:02,950 --> 00:09:05,630
+what are the specific types of communication we need to address?
+
+141
+00:09:07,240 --> 00:09:11,753
+He went forward from there to organize those into different categories of
+
+142
+00:09:11,753 --> 00:09:12,561
+questions.
+
+143
+00:09:12,561 --> 00:09:16,736
+Say well are there themes or are there patterns that we can leverage when trying
+
+144
+00:09:16,736 --> 00:09:18,580
+to come up with design solutions?
+
+145
+00:09:20,290 --> 00:09:24,716
+And from that, was able to organize a communication architecture to summarize
+
+146
+00:09:24,716 --> 00:09:26,905
+the flow of interactions with guests.
+
+147
+00:09:26,905 --> 00:09:31,121
+So how do they go about figuring out what the question is and
+
+148
+00:09:31,121 --> 00:09:34,410
+what type of answer the guest is looking for?
+
+149
+00:09:34,410 --> 00:09:38,564
+And further, went through to categorize these into key themes, and
+
+150
+00:09:38,564 --> 00:09:43,090
+actually asked the hostel staff to work with him to draw some of the key themes
+
+151
+00:09:43,090 --> 00:09:46,990
+such as luggage check out, train station, breakfast and so forth.
+
+152
+00:09:46,990 --> 00:09:50,000
+And look at how those could be communicated
+
+153
+00:09:50,000 --> 00:09:52,610
+through pictures since the problem is that
+
+154
+00:09:52,610 --> 00:09:57,450
+people don&#39;t have a shared language that they can use to talk about these things.
+
+155
+00:09:57,450 --> 00:09:59,260
+He then engaged in rapid prototyping.
+
+156
+00:09:59,260 --> 00:10:03,370
+So basically sketching out and trying out different ideas that could be used
+
+157
+00:10:03,370 --> 00:10:05,670
+to facilitate this kind of communication.
+
+158
+00:10:07,130 --> 00:10:12,630
+And then ultimately iterated through those to come up with this particular prototype.
+
+159
+00:10:12,630 --> 00:10:16,820
+Which was a book that could be used to facilitate communication.
+
+160
+00:10:16,820 --> 00:10:20,290
+And the way it works is, a guest could take the book,
+
+161
+00:10:20,290 --> 00:10:24,330
+they could point to whether they had a question or a statement.
+
+162
+00:10:24,330 --> 00:10:27,760
+What was the type of question that they were trying to ask.
+
+163
+00:10:27,760 --> 00:10:32,161
+Was it about when something happens, why something happens, where it is or
+
+164
+00:10:32,161 --> 00:10:34,770
+about the hostel staff themselves?
+
+165
+00:10:34,770 --> 00:10:36,550
+And then from there could go on and
+
+166
+00:10:36,550 --> 00:10:40,210
+ask more specific questions using these pictorial representations.
+
+167
+00:10:41,300 --> 00:10:44,910
+So in that simple example, just a one day very short example,
+
+168
+00:10:44,910 --> 00:10:48,680
+we saw all of these steps, except for maybe the last one taking place.
+
+169
+00:10:48,680 --> 00:10:52,790
+Understanding the problem, generating possible solutions, analyzing and
+
+170
+00:10:52,790 --> 00:10:56,950
+selecting from those possible solutions, and embodying those solutions.
+
+171
+00:10:56,950 --> 00:11:00,410
+in a way that could help both the designer, the hostel staff, and
+
+172
+00:11:00,410 --> 00:11:04,390
+potentially other people assess whether or not it actually solves the problem.
+
+173
+00:11:04,390 --> 00:11:08,340
+&gt;From there, you would ordinarily go on and iterate and try to refine and
+
+174
+00:11:08,340 --> 00:11:11,280
+come up with better solutions based on what you learned from that.
+
+175
+00:11:13,770 --> 00:11:15,350
+In some of the other lectures,
+
+176
+00:11:15,350 --> 00:11:19,720
+we&#39;ve talked about the iterative design process that we use in UX research and
+
+177
+00:11:19,720 --> 00:11:25,030
+design, to come up with products that deliver a great user experience.
+
+178
+00:11:25,030 --> 00:11:29,310
+And I just wanna point out that this design process that I&#39;ve just described,
+
+179
+00:11:29,310 --> 00:11:32,950
+is aligned with the process that we&#39;ve been talking about.
+
+180
+00:11:32,950 --> 00:11:35,610
+So when we talk about understanding the problem,
+
+181
+00:11:35,610 --> 00:11:39,140
+that&#39;s aligned with what we&#39;ve been calling the assessment phase.
+
+182
+00:11:39,140 --> 00:11:43,030
+Where we understand initially what it is that people are doing.
+
+183
+00:11:43,030 --> 00:11:45,060
+What works and what doesn&#39;t for them.
+
+184
+00:11:45,060 --> 00:11:48,080
+And then, using that to understand
+
+185
+00:11:48,080 --> 00:11:50,260
+what problems we&#39;re going to solve in the design phase.
+
+186
+00:11:51,630 --> 00:11:56,670
+Generating possible solutions is what we do during that initial design phase,
+
+187
+00:11:56,670 --> 00:12:00,060
+to try to explore the space of possible solutions.
+
+188
+00:12:00,060 --> 00:12:01,610
+And towards the end of that design phase,
+
+189
+00:12:01,610 --> 00:12:04,640
+we analyze and select the most promising solutions.
+
+190
+00:12:06,450 --> 00:12:11,213
+In the build phase, we embody those potential solutions in the form of
+
+191
+00:12:11,213 --> 00:12:15,182
+prototypes that we can then use with UX research methods.
+
+192
+00:12:15,182 --> 00:12:16,059
+To assess and
+
+193
+00:12:16,059 --> 00:12:20,780
+find new problems that we can use in the next phase of design and build.
+
+194
+00:12:22,670 --> 00:12:26,640
+So what I&#39;ve described here is actually a general design process.
+
+195
+00:12:26,640 --> 00:12:27,510
+It can be used for
+
+196
+00:12:27,510 --> 00:12:33,220
+designing anything from a tube of toothpaste to an aircraft carrier.
+
+197
+00:12:33,220 --> 00:12:36,060
+So what is it that&#39;s special about UX design?
+
+198
+00:12:36,060 --> 00:12:37,690
+Well a couple of things,
+
+199
+00:12:37,690 --> 00:12:42,506
+one is that the experiences in the systems that we&#39;re building are interactive.
+
+200
+00:12:42,506 --> 00:12:47,690
+Which means that they&#39;re time based, they occur across time.
+
+201
+00:12:47,690 --> 00:12:51,688
+They&#39;re based around action response rules and getting those rules, what hjappens
+
+202
+00:12:51,688 --> 00:12:55,182
+when a user does x is one of the critical things that we&#39;re focusing on, and
+
+203
+00:12:55,182 --> 00:12:57,090
+what it is that we&#39;re trying to design.
+
+204
+00:12:58,872 --> 00:13:02,360
+So to break that down more, thinking about designing action,
+
+205
+00:13:02,360 --> 00:13:06,710
+that&#39;s about designing the command options, or the things that users can do.
+
+206
+00:13:06,710 --> 00:13:09,170
+And when their thinking about the response part of that equation,
+
+207
+00:13:09,170 --> 00:13:11,060
+it&#39;s about what information is presented.
+
+208
+00:13:11,060 --> 00:13:15,640
+And what new commands are available when a particular command is invoked.
+
+209
+00:13:17,120 --> 00:13:22,640
+And as a result, in UX design where we&#39;re dealing with interactive systems,
+
+210
+00:13:22,640 --> 00:13:25,850
+we&#39;re often contending with complex system behavior.
+
+211
+00:13:25,850 --> 00:13:28,610
+Which drives us towards this focus on usability.
+
+212
+00:13:28,610 --> 00:13:33,320
+How can we make sure that people can navigate these complex systems,
+
+213
+00:13:33,320 --> 00:13:35,660
+in order to be able to accomplish the things that they need to do?
+
+214
+00:13:37,060 --> 00:13:39,700
+In UX design context is critical,
+
+215
+00:13:39,700 --> 00:13:44,610
+so understanding how and when and why people are using and
+
+216
+00:13:44,610 --> 00:13:47,900
+interacting with our systems, is critical to getting the design right.
+
+217
+00:13:49,730 --> 00:13:53,820
+So we need to understand the other interactions that people are having
+
+218
+00:13:53,820 --> 00:13:57,800
+with other systems, with other devices, with other people, and the other things
+
+219
+00:13:57,800 --> 00:14:01,210
+that they&#39;re doing, when they&#39;re trying to interact with our systems.
+
+220
+00:14:01,210 --> 00:14:04,890
+What other activities are they engaged in at the same time?
+
+221
+00:14:04,890 --> 00:14:06,655
+And what other people are involved?
+
+222
+00:14:06,655 --> 00:14:12,310
+Solooking at this design process that I introduced a few slides ago.
+
+223
+00:14:12,310 --> 00:14:17,070
+In mapping it onto the UX design process, we can see that understanding
+
+224
+00:14:17,070 --> 00:14:21,810
+the problem becomes very much about studying users and the tasks that they&#39;re
+
+225
+00:14:21,810 --> 00:14:25,530
+trying to accomplish in the context in which they&#39;re trying to accomplish them.
+
+226
+00:14:25,530 --> 00:14:29,750
+Generating possible solutions, takes the form of sketching different design ideas,
+
+227
+00:14:29,750 --> 00:14:33,400
+storyboarding to show how an interaction unfolds over time
+
+228
+00:14:33,400 --> 00:14:37,090
+wire framing specific screens, and so on and so forth.
+
+229
+00:14:37,090 --> 00:14:39,980
+Analyzing and selecting among the design solutions,
+
+230
+00:14:39,980 --> 00:14:44,190
+becomes not just about applying the criteria of
+
+231
+00:14:44,190 --> 00:14:48,300
+the design problem as we&#39;ve understood it, but also applying UX criteria.
+
+232
+00:14:48,300 --> 00:14:52,220
+What is it that we know about what delivers a good user experience, and
+
+233
+00:14:52,220 --> 00:14:54,150
+what drives us away from that?
+
+234
+00:14:54,150 --> 00:14:56,920
+Embodying the solutions is gonna be about building prototypes.
+
+235
+00:14:56,920 --> 00:15:00,690
+And we&#39;ll talk more about the different types of prototypes that you might build.
+
+236
+00:15:00,690 --> 00:15:05,890
+And assessing and finding new problems with those prototypes
+
+237
+00:15:05,890 --> 00:15:09,610
+is gonna be based around applying specific UX research methods,
+
+238
+00:15:09,610 --> 00:15:13,510
+like user testing, to be able to understand what those problems might be.
+
+239
+00:15:14,950 --> 00:15:19,277
+So to sum up, the design process, and we&#39;ll be talking about this more in other
+
+240
+00:15:19,277 --> 00:15:21,990
+lectures, is about understanding the problem,
+
+241
+00:15:21,990 --> 00:15:24,640
+generating possible solutions, analyzing and
+
+242
+00:15:24,640 --> 00:15:29,112
+selecting from among those possible solutions, embodying them in a prototype.
+
+243
+00:15:29,112 --> 00:15:32,188
+And then assessing them to see whether we&#39;re on track or not,
+
+244
+00:15:32,188 --> 00:15:35,340
+in finding new problems that we need to solve in the next phase.
+

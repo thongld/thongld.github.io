@@ -1,0 +1,581 @@
+1
+00:00:08,290 --> 00:00:13,030
+Phương trình này ta đã xem xét ở bài trước là cơ sở cho lý thuyết
+
+2
+00:00:13,030 --> 00:00:15,530
+về độ thỏa dụng kỳ vọng khi đưa ra quyết định.
+
+3
+00:00:15,530 --> 00:00:19,640
+Lý thuyết này dựa trên năm tiền đề cơ bản
+
+4
+00:00:19,640 --> 00:00:22,740
+làm nền tảng cho việc đưa ra các quyết định lý trí.
+
+5
+00:00:22,740 --> 00:00:24,500
+Sau đây là 5 tiền đề chính.
+
+6
+00:00:24,500 --> 00:00:26,500
+Tiền đề thứ nhất là tính đầy đủ.
+
+7
+00:00:26,500 --> 00:00:27,920
+Tiền đề thứ hai là tính bắt cầu.
+
+8
+00:00:27,920 --> 00:00:30,919
+Tiền đề thứ ba là sự thay thế.
+
+9
+00:00:30,919 --> 00:00:32,650
+Tiền đề thứ tư là tính liên tục, và tiền đề thứ năm là tính đơn điệu.
+
+10
+00:00:32,650 --> 00:00:37,240
+Ta sẽ chỉ tập trung vào ba tiền đề đầu tiên, 
+vì hai tiền đề sau chỉ thực sự áp dụng với
+
+11
+00:00:37,240 --> 00:00:41,410
+khi thi triển toán học tách khỏi mô hình, 
+và chúng lại không có những chiều sâu
+
+12
+00:00:41,410 --> 00:00:43,210
+về hành vi nào thú vị cả. 
+
+13
+00:00:43,210 --> 00:00:46,010
+Tôi sẽ bắt đầu với tiền đề về tính đầy đủ.
+
+14
+00:00:46,010 --> 00:00:47,840
+Đây là một tiền đề rất đơn giản.
+
+15
+00:00:47,840 --> 00:00:51,270
+Tính đầy đủ chỉ ra rằng khi tôi đưa ra cho ai đó hai sự lựa chọn, 
+
+16
+00:00:51,270 --> 00:00:57,240
+giả sử là X và Y, họ nên phân biệt rõ ràng
+ đâu là cái họ thích hơn
+
+17
+00:00:57,240 --> 00:00:58,400
+giữa hai sự lựa chọn này.
+
+18
+00:00:58,400 --> 00:01:05,239
+Nói cách khác, người đưa ra quyết định nên
+ biết được họ thích X hơn Y, hay Y hơn X,
+
+19
+00:01:05,239 --> 00:01:11,030
+hoặc là họ phải nói được rằng họ hoàn toàn 
+không quan tâm tới hai sự lựa chọn này.
+
+20
+00:01:11,030 --> 00:01:14,490
+Người đưa ra quyết định không thể nói rằng
+
+21
+00:01:14,490 --> 00:01:16,260
+Ồ, tôi không biết chọn cái nào cả.
+
+22
+00:01:16,260 --> 00:01:22,159
+Như chúng ta đã thấy ở vài bài trước, trong
+ trường hợp có quá nhiều thông tin, hay khi quá tải dữ liệu
+
+23
+00:01:22,159 --> 00:01:26,100
+người tiêu dùng thường chọn như không chọn bởi họ cảm thấy bối rối
+
+24
+00:01:26,100 --> 00:01:32,060
+và hành vi này được coi là trái với 
+
+25
+00:01:32,060 --> 00:01:34,010
+tiền đề trên. 
+
+26
+00:01:34,010 --> 00:01:37,850
+Chuyển sang tiền đề thứ hai là tính bắc cầu.
+
+27
+00:01:37,850 --> 00:01:42,350
+Đây cũng là một tiền đề rất đơn giản, 
+được giải thích như sau.
+
+28
+00:01:42,350 --> 00:01:49,780
+Hãy tưởng tượng một người đưa ra quyết định 
+thích X hơn Y, và chọn Y thay vì Z.
+
+29
+00:01:49,780 --> 00:01:55,630
+Tiền đề này nói lên rằng, trong trường hợp
+ trên, X được ưa thích hơn Z.
+
+30
+00:01:55,630 --> 00:01:57,580
+Nghe có vẻ rất hiển nhiên.
+
+31
+00:01:57,580 --> 00:02:03,630
+Nếu bạn thích nhận 100 đô hơn là 50 dô 
+và bạn thích nhận 50 đô hơn là 20 đô
+
+32
+00:02:03,630 --> 00:02:07,330
+thì nghĩa là bạn muốn nhận được 100 đô hơn là 20 đô.
+
+33
+00:02:07,330 --> 00:02:12,819
+Nhưng cũng có rất nhiều trường hợp 
+khác đi trái lại với tiền đề này.
+
+34
+00:02:12,819 --> 00:02:15,659
+Tôi sẽ cho bạn thấy một ví dụ đơn giản thôi.
+
+35
+00:02:15,659 --> 00:02:18,599
+Hãy tưởng tượng bạn đang tìm một trợ lí nghiên cứu.
+
+36
+00:02:18,599 --> 00:02:23,540
+Và bạn có ba ứng cử viên: anh A, anh B và anh C.
+
+37
+00:02:23,540 --> 00:02:27,390
+Mỗi ứng cử viên sẽ có hai tiêu chí cho bạn lựa chọn.
+
+38
+00:02:27,390 --> 00:02:32,219
+Tiêu chí thứ nhất là chỉ số IQ của họ, 
+được dựa trên một bài kiểm tra IQ.
+
+39
+00:02:32,219 --> 00:02:36,999
+Tiêu chí thứ hai là số năm kinh nghiệm 
+làm việc mà mỗi người có được.
+
+40
+00:02:36,999 --> 00:02:40,239
+Bạn thì có một quy tắc rất đơn giản.
+
+41
+00:02:40,239 --> 00:02:45,879
+Bạn muốn chọn một người thông minh nhất, và 
+nếu trên thực tế lại có hai người có chỉ số IQ bằng nhau,
+
+42
+00:02:45,879 --> 00:02:49,439
+bạn sẽ chọn người 
+
+43
+00:02:49,439 --> 00:02:50,439
+có kinh nghiệm làm việc lâu năm hơn.
+
+44
+00:02:50,439 --> 00:02:53,150
+Nếu nhìn vào số liệu này, bạn sẽ có 3 người.
+
+45
+00:02:53,150 --> 00:02:56,950
+Người có IQ cao nhất lại có kinh nghiệm ít nhất.
+
+46
+00:02:56,950 --> 00:03:02,400
+Đây là tình huống khá điển hình mà bạn
+ có thể sẽ gặp phải trong thực tế.
+
+47
+00:03:02,400 --> 00:03:04,239
+Bây giờ sẽ là một phần rất thú vị.
+
+48
+00:03:04,239 --> 00:03:10,549
+Ta cũng biết rằng những bài kiểm tra 
+IQ thì không thật sự đáng tin.
+
+49
+00:03:10,549 --> 00:03:12,680
+Chúng không thật sự mang tính chuẩn đoán.
+
+50
+00:03:12,680 --> 00:03:15,779
+Nói cách khác, người này ít hơn người người kia 10 điểm
+
+51
+00:03:15,779 --> 00:03:20,340
+không thật sự có nghĩa là người đó
+
+52
+00:03:20,340 --> 00:03:21,340
+kém thông minh hơn người kia.
+
+53
+00:03:21,340 --> 00:03:25,890
+Vì vậy nếu tôi nhìn vào số liệu này, 120 cũng giống với 110
+
+54
+00:03:25,890 --> 00:03:29,519
+110 cũng giống với 100
+
+55
+00:03:29,519 --> 00:03:32,930
+Và nếu tôi áp dụng quy tắc ban đầu của mình 
+khi đưa ra quyết định, nó sẽ như thế này.
+
+56
+00:03:32,930 --> 00:03:37,459
+Tôi sẽ thích anh B hơn anh A, 
+
+57
+00:03:37,459 --> 00:03:41,860
+vì họ về cơ bản có cùng chỉ số thông minh, 
+nhưng anh B lại có nhiều kinh nghiệm hơn.
+
+58
+00:03:41,860 --> 00:03:49,029
+Và tương tự, tôi sẽ thích anh C hơn anh B.
+Tuy nhiên,  nếu tôi nhìn vào tổng thể
+
+59
+00:03:49,029 --> 00:03:54,780
+cuối cùng tôi sẽ thích anh A hơn anh C vì lúc này,
+ sự khác biệt giữa 120 và 100 là tương đối lớn
+
+60
+00:03:54,780 --> 00:03:59,249
+Dựa theo quy tắc của tôi, 
+
+61
+00:03:59,249 --> 00:04:01,599
+cuối cùng tôi sẽ chọn người thông minh hơn. 
+
+62
+00:04:01,599 --> 00:04:06,059
+Trên đây là một ví dụ trái lại với tiền đề về tính bắc cầu, 
+
+63
+00:04:06,059 --> 00:04:08,859
+và nó xảy ra trong rất nhiều trường hợp khác nhau.
+
+64
+00:04:08,859 --> 00:04:11,909
+Về bản chất, bối cảnh trên đã được tổng hợp
+ bằng cách người đưa ra chọn lựa 
+
+65
+00:04:11,909 --> 00:04:16,139
+nhìn nhận các tiêu chí đánh giá một cách khác nhau
+
+66
+00:04:16,139 --> 00:04:19,609
+khi đưa ra quyết định.
+
+67
+00:04:19,609 --> 00:04:24,229
+Trên đây là ví dụ cụ thể cho hành vi vi phạm
+
+68
+00:04:24,229 --> 00:04:26,920
+cho hành vi vi phạm tiền đề này.
+
+69
+00:04:26,920 --> 00:04:33,830
+Tiền đề thứ ba và cũng quan trọng hơn cả là tiền đề về sự thay thế.
+
+70
+00:04:33,830 --> 00:04:36,410
+Nó được diễn giải như sau.
+
+71
+00:04:36,410 --> 00:04:41,630
+Nếu tôi có hai sự lựa chọn, X và Y. Giả sử tôi
+ không có hứng thú với cả X và Y,
+
+72
+00:04:41,630 --> 00:04:44,480
+có nghĩa tôi cũng sẽ không có hứng thú với 2 sự lựa chọn khác 
+
+73
+00:04:44,480 --> 00:04:47,280
+mà có giá trị tương đương với X và Y.
+
+74
+00:04:47,280 --> 00:04:52,310
+Ví dụ nhé, nếu tôi thích một quả táo và một quả chuối như nhau
+
+75
+00:04:52,310 --> 00:04:55,780
+rồi bạn đến và nói với tôi rằng:  hãy tung một đồng xu,
+
+76
+00:04:55,780 --> 00:04:58,220
+trong trường hợp mặt ngửa, bạn sẽ chọn quả táo.
+
+77
+00:04:58,220 --> 00:05:00,990
+Hoặc trong trường hợp mặt sấp, bạn sẽ có quả chuối.
+
+78
+00:05:00,990 --> 00:05:03,270
+Tôi sẽ không có hứng thú với cả hai sự lựa chọn này
+
+79
+00:05:03,270 --> 00:05:07,870
+vì tôi vốn dĩ không quan tâm tới cả hai giá trị 
+đó ngay từ đầu.
+
+80
+00:05:07,870 --> 00:05:14,060
+Một hệ quả của tiền đề này là quy tắc loại bỏ.
+
+81
+00:05:14,060 --> 00:05:16,650
+Quy tắc này chỉ ra rằng nếu tôi có hai sự chọn lựa,
+
+82
+00:05:16,650 --> 00:05:20,260
+và tôi loại bỏ một vài cái gì đó giống hệt nhau từ hai sự lựa chọn,
+
+83
+00:05:20,260 --> 00:05:24,650
+tôi vẫn sẽ có cùng sự yêu thích đối với hai sự lựa chọn
+
+84
+00:05:24,650 --> 00:05:25,650
+như tôi đã có ban đầu.
+
+85
+00:05:25,650 --> 00:05:28,790
+Quay trở lại với nguyên tắc này, 
+
+86
+00:05:28,790 --> 00:05:33,450
+có rất nhiều quyết định ta đưa ra đã 
+vi phạm nguyên tắc loại bỏ này.
+
+87
+00:05:33,450 --> 00:05:38,000
+Minh chứng nổi tiếng nhất về việc vi phạm nguyên tắc này 
+
+88
+00:05:38,000 --> 00:05:43,810
+đã được thực hiện bởi Maurice Allais, còn được 
+biết đến với cái tên Nghịch lý Allais.
+
+89
+00:05:43,810 --> 00:05:47,900
+Hãy cùng xem ví dụ cụ thể sau đây.
+
+90
+00:05:47,900 --> 00:05:49,200
+Có 2 sự lựa chọn.
+
+91
+00:05:49,200 --> 00:05:53,780
+Lựa chọn A: tôi đưa cho bạn 1 triệu đô la vô điều kiện.
+
+92
+00:05:53,780 --> 00:05:56,280
+Lựa chọn B: người ta chuẩn bị mở một đợt quay xổ số.
+
+93
+00:05:56,280 --> 00:05:59,730
+Trong đợt quay xổ số đó, khả năng bạn thắng 2.5 triệu đô là 10%.
+
+94
+00:05:59,730 --> 00:06:03,930
+89% bạn có cơ hội thắng 1 triệu đô, 
+
+95
+00:06:03,930 --> 00:06:07,360
+và khả năng bạn không trúng gì hết là 1%.
+
+96
+00:06:07,360 --> 00:06:11,770
+Trong trường hợp này, điều mà Maurice Allais nhìn thấy đó là
+
+97
+00:06:11,770 --> 00:06:16,130
+hầu hết mọi người đều lựa chọn phương án A không cần suy nghĩ.
+
+98
+00:06:16,130 --> 00:06:18,860
+Một triệu đô la mà không cần một điều kiện ràng buộc nào.
+
+99
+00:06:18,860 --> 00:06:20,810
+Rất hợp lí.
+
+100
+00:06:20,810 --> 00:06:23,480
+Hãy nhìn vào vấn đề thứ hai ở đây.
+
+101
+00:06:23,480 --> 00:06:27,340
+Một lần nữa, nếu bạn đang phải chọn lựa giữa 2 sự lựa chọn, là A và B.
+
+102
+00:06:27,340 --> 00:06:34,810
+Ở sự lựa chọn A, ta có một giải xổ số mà ở đó 
+cơ hội thắng 1 triệu đô là 11%
+
+103
+00:06:34,810 --> 00:06:38,500
+và 89% là không trúng gì hết.
+
+104
+00:06:38,500 --> 00:06:41,170
+Ở sự lựa chọn B, ta có đợt quay xổ số thứ hai.
+
+105
+00:06:41,170 --> 00:06:47,820
+Cơ hội thắng 2.5 triệu đô là 10% và 90% là không trúng gì.
+
+106
+00:06:47,820 --> 00:06:52,150
+Bạn có thể sẽ nghĩ rất nhiều người chọn B.
+
+107
+00:06:52,150 --> 00:06:57,070
+Nếu bạn nghĩ về sự khác nhau giữa 10% và 11%
+
+108
+00:06:57,070 --> 00:06:58,070
+chúng không khác biệt là bao.
+
+109
+00:06:58,070 --> 00:07:02,650
+Nhưng giữa 1 triệu đô và 2.5 triệu đô lại có sự khác biệt khá lớn.
+
+110
+00:07:02,650 --> 00:07:06,060
+Và vì thế, mọi người sẽ có xu hướng chọn phương án B, 
+
+111
+00:07:06,060 --> 00:07:08,270
+vì nó đem lại cơ hội chiến thắng với giải thưởng lớn hơn.
+
+112
+00:07:08,270 --> 00:07:10,330
+Sau đây lại là một điều vô cùng thú vị.
+
+113
+00:07:10,330 --> 00:07:13,730
+Nếu bạn đặt 2 sự lựa chọn này cạnh nhau, bạn sẽ thấy
+
+114
+00:07:13,730 --> 00:07:17,920
+chúng về bản chất là giống nhau.
+
+115
+00:07:17,920 --> 00:07:20,210
+Hai vấn đề này đều giống nhau.
+
+116
+00:07:20,210 --> 00:07:25,430
+Giả sử tôi vừa lấy đi 89% cơ hội chiến thắng 1 triệu đô
+
+117
+00:07:25,430 --> 00:07:29,790
+từ cả 2 sự lựa chọn.
+
+118
+00:07:29,790 --> 00:07:35,420
+Bằng cách đó, tôi đã tạo ra một tình huống 
+
+119
+00:07:35,420 --> 00:07:40,990
+mà tôi có thể đảo ngược sự ưu tiên giữa A và B.
+ Lại một lần nữa, sự vi phạm tiền đề xảy ra.
+
+120
+00:07:40,990 --> 00:07:44,830
+Trong quá trình nghiên cứu khóa học này,  
+ta sẽ nhìn thấy có rất nhiều cách khác nhau
+
+121
+00:07:44,830 --> 00:07:48,780
+mà người tiêu dùng có xu hướng vi phạm phải, 
+
+122
+00:07:48,780 --> 00:07:53,530
+không chỉ là những tiền đề của sự chọn lựa, mà họ 
+còn có xu hướng tạo ra những ưu tiên không nhất quán.
+
+123
+00:07:53,530 --> 00:07:55,230
+Tôi muốn đưa ra cho bạn một ý tưởng.
+
+124
+00:07:55,230 --> 00:07:59,850
+Ta đã từng nói về 4 chữ C của việc suy nghĩ 
+lý trí, và ta cũng đã chỉ ra rằng 
+
+125
+00:07:59,850 --> 00:08:05,120
+cả 4 cái C này đều cần thiết để thể hiện thế nào là một hành vi có lý trí. 
+
+126
+00:08:05,120 --> 00:08:08,690
+Giờ đây, con người thường xuyên vi phạm các tiền đề.
+
+127
+00:08:08,690 --> 00:08:13,411
+Nhiều người thường không hành xử nhất quán với 4 chữ C này, 
+
+128
+00:08:13,411 --> 00:08:14,730
+họ chỉ là con người mà thôi.
+
+129
+00:08:14,730 --> 00:08:16,010
+Vậy họ có phải là người phi lý trí?
+
+130
+00:08:16,010 --> 00:08:19,590
+Tôi nghĩ "phi lý trí" là một cụm từ có nghĩa liên tưởng rất mạnh.
+
+131
+00:08:19,590 --> 00:08:21,990
+Nó chỉ ra rằng con người đang mắc phải sai lầm.
+
+132
+00:08:21,990 --> 00:08:27,080
+Theo nhận định của tôi, nếu bạn có một thuyết riêng 
+mà không lý giải được 
+
+133
+00:08:27,080 --> 00:08:31,320
+cách con người quyết định thì có lẽ nó chưa phải là một 
+lý thuyết phù hợp để giải thich
+
+134
+00:08:31,320 --> 00:08:32,320
+hành vi của con người. 
+
+135
+00:08:32,320 --> 00:08:34,490
+Có lẽ không phải do con người phi lý trí.
+
+136
+00:08:34,490 --> 00:08:41,019
+Mà là do chính học thuyết đó không hợp lý,
+đó là lí do tại sao phương pháp tiếp cận kinh tế học
+
+137
+00:08:41,019 --> 00:08:42,589
+bằng hành vi tiêu dùng lại thường tốt hơn.
+

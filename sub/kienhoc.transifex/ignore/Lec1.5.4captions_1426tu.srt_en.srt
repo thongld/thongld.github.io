@@ -1,0 +1,510 @@
+1
+00:00:17,570 --> 00:00:24,230
+https://youtu.be/EpuPdnoUbmQ
+On August 18th, 1913, the ball of a roulette
+wheel at Le Grand Casino of Monte Carlo landed
+
+2
+00:00:24,230 --> 00:00:30,289
+on black 26 consecutive times. During this
+streak a betting frenzy ensued as a growing
+
+3
+00:00:30,289 --> 00:00:34,790
+crowd staked increasingly large amounts on
+red. They believed that the ball was due to
+
+4
+00:00:34,790 --> 00:00:41,790
+land on red. They lost and the casino reaped
+a large reward, thanks to Gambler's Fallacy.
+
+5
+00:00:42,339 --> 00:00:47,710
+Gambler's Fallacy is well-known and yet it
+remains a powerful intuition for most of us.
+
+6
+00:00:47,710 --> 00:00:53,300
+Why? Where does its seductive power come from?
+To begin with, what exactly is the Gambler's
+
+7
+00:00:53,300 --> 00:00:59,020
+Fallacy? Here's Wikipedia's definition: "The
+Gambler's fallacy is the belief that if deviations
+
+8
+00:00:59,020 --> 00:01:05,160
+from expected behaviour are observed in repeated
+independent trials of some random process
+
+9
+00:01:05,160 --> 00:01:11,840
+then these deviations are likely to be evened
+out by opposite deviations in the future."
+
+10
+00:01:11,840 --> 00:01:17,649
+The crucial premise is a sequence of independent
+events, in other words, events whose outcomes do not
+
+11
+00:01:17,649 --> 00:01:23,610
+depend on previous events. Actually, they
+don't have to be random. All that is required
+
+12
+00:01:23,610 --> 00:01:27,210
+is that the next event not be predictable
+by the previous ones.
+
+13
+00:01:27,210 --> 00:01:33,869
+So, at the most general level, the key components
+of Gambler's Fallacy are as follows. First,
+
+14
+00:01:33,869 --> 00:01:38,460
+we're observing a sequence of events that
+are independent of one another. Second, our
+
+15
+00:01:38,460 --> 00:01:44,560
+minds tell us that they aren't independent.
+Third, we think that deviations in one direction
+
+16
+00:01:44,560 --> 00:01:51,560
+from the sequence average will be corrected
+by equal and opposite deviations. And fourth,
+
+17
+00:01:51,880 --> 00:01:58,409
+we therefore make predictions about the sequence
+based on its earlier events. Why would our
+
+18
+00:01:58,409 --> 00:02:03,570
+minds commit this error?
+A widely-cited explanation given in 1974 by
+
+19
+00:02:03,570 --> 00:02:09,840
+Amos Tversky and Daniel Kahneman attempted
+to answer this question. They claimed that
+
+20
+00:02:09,840 --> 00:02:15,140
+people use a "representativeness" heuristic,
+whereby people judge the probability of an
+
+21
+00:02:15,140 --> 00:02:21,390
+event by its resemblance to the data available
+to them. Thus, people expect that a short
+
+22
+00:02:21,390 --> 00:02:26,790
+run of random events should have the same
+properties that it has in the long run. If
+
+23
+00:02:26,790 --> 00:02:32,190
+we believe a coin is fair and therefore the
+probability of it landing Heads is 1/2, we
+
+24
+00:02:32,190 --> 00:02:37,949
+think that a run of 9 consecutive tosses landing
+Tails is not representative of the coin's
+
+25
+00:02:37,949 --> 00:02:43,540
+long-run properties and so we expect the 10th
+toss to land Heads, just like what happened
+
+26
+00:02:43,540 --> 00:02:48,870
+to the misguided gamblers in Le Grand Casino.
+You can see the representativeness heuristic
+
+27
+00:02:48,870 --> 00:02:54,919
+in action if you look at the two sequences
+of coin tosses in this slide. The upper sequence
+
+28
+00:02:54,919 --> 00:03:01,820
+looks more representative of a random sequence
+than the bottom sequence does. However, they
+
+29
+00:03:01,820 --> 00:03:07,310
+both contain the same number of Heads and
+Tails, and so they are equally likely to be
+
+30
+00:03:07,310 --> 00:03:13,449
+the result of a random sequence of coin-tosses.
+The problem with the representativeness heuristic
+
+31
+00:03:13,449 --> 00:03:20,109
+explanation for Gambler's Fallacy is that
+it begs the "why" question. It may well be
+
+32
+00:03:20,109 --> 00:03:25,350
+that we expect a short run of random events
+to share its long-run properties, but where
+
+33
+00:03:25,350 --> 00:03:30,690
+does this expectation come from?
+Alex Bellos, the author of a fascinating book
+
+34
+00:03:30,690 --> 00:03:36,449
+Adventures in Numberland, makes a stab at
+the "why" question. He thinks it's a motivational
+
+35
+00:03:36,449 --> 00:03:42,299
+matter of trying to establish control over
+events by reading patterns into them. That's
+
+36
+00:03:42,299 --> 00:03:46,620
+plausible, but the intuition behind Gambler's
+Fallacy seems sufficiently powerful to not
+
+37
+00:03:46,620 --> 00:03:51,350
+require a motivational explanation.
+More problems with the representativeness
+
+38
+00:03:51,350 --> 00:03:58,109
+heuristic explanation arise when we look at
+a related fallacy, namely the belief in the
+
+39
+00:03:58,109 --> 00:04:04,139
+"hot hand". Here's the Wikipedia definition:
+"... the hot hand fallacy is the idea that
+
+40
+00:04:04,139 --> 00:04:07,290
+a streak of positive successes are likely
+to continue."
+
+41
+00:04:08,169 --> 00:04:11,419
+But the Hot
+Hand Fallacy and Gambler's Fallacy make opposite
+
+42
+00:04:11,419 --> 00:04:17,130
+predictions. The Hot Hand Fallacy is a belief
+in a positive correlation between earlier
+
+43
+00:04:17,130 --> 00:04:22,750
+and later events in a sequence, whereas the
+Gambler's Fallacy is a belief in a negative
+
+44
+00:04:22,750 --> 00:04:29,280
+correlation between earlier and later events.
+The representativeness heuristic has been
+
+45
+00:04:29,280 --> 00:04:36,000
+used to explain both of these, but that begs
+the question of when or why people would find
+
+46
+00:04:36,000 --> 00:04:41,500
+positively correlated sequences more representative
+in some situations and negatively correlated
+
+47
+00:04:41,500 --> 00:04:48,500
+sequences more so in other situations.
+James Sundali and Rachel Croson studied real
+
+48
+00:04:48,840 --> 00:04:55,230
+betting and belief patterns in games of roulette.
+Their 2006 paper pointed out that there are
+
+49
+00:04:55,230 --> 00:05:01,410
+two kinds of beliefs that players bring to
+bear: Beliefs about players and beliefs about
+
+50
+00:05:01,410 --> 00:05:06,730
+outcomes. They found that players' betting
+patterns fell into two categories. Those who
+
+51
+00:05:06,730 --> 00:05:10,510
+acted consistently with Gambler's Fallacy
+about outcomes (betting on numbers that hadn't
+
+52
+00:05:10,510 --> 00:05:16,470
+appeared previously) were more likely to also
+act as if they believed in the Hot Hand Fallacy
+
+53
+00:05:16,470 --> 00:05:23,090
+regarding players (increasing the number of
+bets after a win). But players who acted consistently
+
+54
+00:05:23,090 --> 00:05:29,030
+with a Hot Hand Fallacy about outcomes (betting
+on numbers that had already appeared) were
+
+55
+00:05:29,030 --> 00:05:34,090
+more likely to act consistently with a kind
+of Gambler's Fallacy belief about players'
+
+56
+00:05:34,090 --> 00:05:39,430
+luck (decreasing the number of bets after
+a win because one's stock of luck was due
+
+57
+00:05:39,430 --> 00:05:44,170
+to run out).
+Sundali and Croson speculated that locus of
+
+58
+00:05:44,170 --> 00:05:50,530
+control could account for this pattern of
+individual variability. Players with an external
+
+59
+00:05:50,530 --> 00:05:57,250
+locus of control believe in luck and are more
+likely to believe in lucky streaks (hot outcomes)
+
+60
+00:05:57,250 --> 00:06:02,780
+and a stock of luck that can run out. Players
+with an internal locus of control believe
+
+61
+00:06:02,780 --> 00:06:07,310
+they can learn the underlying principles by
+which, for instance, a roulette wheel operates
+
+62
+00:06:07,310 --> 00:06:14,310
+(whence Gambler's Fallacy) and also are more
+likely to have hot hand beliefs about players.
+
+63
+00:06:15,220 --> 00:06:22,220
+Ayton and Fischer came up with yet another
+explanation in 2004, simply based on learning
+
+64
+00:06:22,700 --> 00:06:29,139
+from experience. They showed that Gambler's
+Fallacy or Hot Hand Fallacy could be induced
+
+65
+00:06:29,139 --> 00:06:35,330
+by exposing people to a sequence of events
+that fit one or the other belief about the
+
+66
+00:06:35,330 --> 00:06:39,200
+sequence.
+Wilke and Barrett's 2009 paper took this experiential
+
+67
+00:06:39,200 --> 00:06:44,820
+explanation for Hot Hand Fallacy one step
+further. They point out that humans didn't
+
+68
+00:06:44,820 --> 00:06:51,180
+evolve in casinos but instead in environments
+where resources tend to be clumped as is the
+
+69
+00:06:51,180 --> 00:06:58,010
+case for food resources in foraging environments,
+and they claim that the hot hand intuition evolved
+
+70
+00:06:58,010 --> 00:07:02,930
+from successful foragers being more likely
+to pass their genetic material on to succeeding
+
+71
+00:07:02,930 --> 00:07:08,220
+generations.
+In my 1997 paper, "Judgment Under Chaos,"
+
+72
+00:07:08,220 --> 00:07:13,870
+I presented both the learning-from-experience
+and evolutionary explanations a decade before
+
+73
+00:07:13,870 --> 00:07:20,870
+Wilke and Barrett, and applied them to both
+Gambler's and Hot Hand Fallacies. My evidence
+
+74
+00:07:21,050 --> 00:07:26,280
+was a demonstration that humans are good at
+short-range predictions of chaotic processes.
+
+75
+00:07:26,280 --> 00:07:31,810
+To do this, I coded a chaotic-sequence-generating
+algorithm with a parameter that controlled
+
+76
+00:07:31,810 --> 00:07:37,330
+the extent to which the resulting sequence
+was anti-persistent (frequently oscillating
+
+77
+00:07:37,330 --> 00:07:43,980
+as would be expected by Gambler's Fallacy) or persistent (infrequently oscillating
+
+78
+00:07:43,980 --> 00:07:49,970
+as expected by Hot Hand beliefs). You can
+see examples of both kinds in this slide.
+
+79
+00:07:49,970 --> 00:07:56,240
+The left-hand graph is an anti-persistent
+pattern, and the right-hand graph is a persistent
+
+80
+00:07:56,240 --> 00:07:59,900
+pattern.
+Participants in my study were randomly assigned
+
+81
+00:07:59,900 --> 00:08:05,639
+to either tracking a persistent or anti-persistent
+process, and after seeing 100 iterations of
+
+82
+00:08:05,639 --> 00:08:11,990
+their sequence they were asked to predict
+its next value for 50 more iterations. They
+
+83
+00:08:11,990 --> 00:08:17,090
+were also asked to do the same for a random
+sequence containing exactly the same values
+
+84
+00:08:17,090 --> 00:08:24,090
+as their chaotic sequence (but randomly re-ordered).
+Of course, no one was any good at predicting
+
+85
+00:08:24,139 --> 00:08:31,139
+the random sequence. I suspect that when we
+see a random sequence like coin-tosses, we actually
+
+86
+00:08:32,479 --> 00:08:38,909
+misread it as an anti-persistent process and
+therefore fall for Gambler's Fallacy. But
+
+87
+00:08:38,909 --> 00:08:43,789
+everyone was quite good at predicting the
+chaotic sequence (the average correlation between
+
+88
+00:08:43,789 --> 00:08:49,779
+their predictions and the sequence itself
+was .68, and some people's correlations were
+
+89
+00:08:49,779 --> 00:08:56,779
+around .9). Moreover, they were equally good
+at predicting persistent and anti-persistent
+
+90
+00:08:58,470 --> 00:09:02,420
+processes.
+Those of you who have played my Investor games
+
+91
+00:09:02,420 --> 00:09:09,330
+have been predicting the same three types
+of sequences. InvestorRandom has a stock that
+
+92
+00:09:09,330 --> 00:09:16,330
+fluctuates randomly, InvestorChaos1's stock
+is chaotic and anti-persistent, and InvestorChaos2's
+
+93
+00:09:17,370 --> 00:09:22,860
+stock is chaotic and persistent. Many of you
+will have found that you could learn the tricks
+
+94
+00:09:22,860 --> 00:09:28,450
+to making money in the InvestorChaos 1 and
+2 games. The best strategies will closely
+
+95
+00:09:28,450 --> 00:09:34,800
+resemble Gambler's Fallacy for InvestorChaos
+1 and Hot Hand Fallacy for InvestorChaos 2.
+
+96
+00:09:34,800 --> 00:09:39,880
+So, Ayton and Fischer's learning-from-experience
+proposition received solid support before
+
+97
+00:09:39,880 --> 00:09:45,310
+they wrote their paper. The Wilke-Barrett
+evolutionary explanation got a circumstantial
+
+98
+00:09:45,310 --> 00:09:52,310
+evidential boost too. Indeed, we didn't evolve
+in casinos. We evolved in environments full
+
+99
+00:09:53,140 --> 00:09:59,350
+of anti-persistent processes, like prey populations,
+and persistent processes, like the weather.
+
+100
+00:09:59,350 --> 00:10:03,790
+We're adept at spotting which is which. We
+expect the processes in the world around us
+
+101
+00:10:03,790 --> 00:10:10,200
+to operate as if they have "memory", and for
+good reason: They usually do. Gambler's and
+
+102
+00:10:10,200 --> 00:10:13,990
+Hot Hand Fallacies serve us quite well-- outside
+the casino.
+

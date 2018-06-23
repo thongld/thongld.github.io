@@ -1,0 +1,360 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/V7mA-2kw_ys
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:03,150
+DR. JONATHAN VALVANO:
+Let's talk about sound.
+
+3
+00:00:03,150 --> 00:00:06,180
+We're going to see sound
+from two perspectives.
+
+4
+00:00:06,180 --> 00:00:09,950
+We're going to see some
+from the generation.
+
+5
+00:00:09,950 --> 00:00:11,580
+How do we generate sound?
+
+6
+00:00:11,580 --> 00:00:14,200
+And then we're going to look at
+sound and how we perceive it,
+
+7
+00:00:14,200 --> 00:00:18,880
+and how the perception happens.
+
+8
+00:00:18,880 --> 00:00:22,660
+Our micro controller
+is going to control.
+
+9
+00:00:22,660 --> 00:00:26,580
+It will use our DAC to
+convert the digital to analog.
+
+10
+00:00:26,580 --> 00:00:31,090
+And then we'll use a speaker
+to generate the sound.
+
+11
+00:00:31,090 --> 00:00:35,140
+The sound is a air pressure.
+
+12
+00:00:35,140 --> 00:00:39,820
+And so we're going to have pieces
+of air at high pressure followed
+
+13
+00:00:39,820 --> 00:00:41,500
+by pieces at low pressure.
+
+14
+00:00:41,500 --> 00:00:46,050
+High pressure, low pressure,
+high pressure, low pressure.
+
+15
+00:00:46,050 --> 00:00:48,870
+And this sound is going
+to-- this pressure
+
+16
+00:00:48,870 --> 00:00:51,370
+wave is going to traverse the air.
+
+17
+00:00:51,370 --> 00:00:57,110
+And our ears are going to perceive it.
+
+18
+00:00:57,110 --> 00:01:04,390
+The ear drum will oscillate, and
+we'll touch the nerves in our ear
+
+19
+00:01:04,390 --> 00:01:06,605
+and our brain will perceive the sound.
+
+20
+00:01:06,605 --> 00:01:10,750
+
+21
+00:01:10,750 --> 00:01:14,400
+DR. RAMESH YERRABALLI: So some
+perceived this way, visualize this way,
+
+22
+00:01:14,400 --> 00:01:18,140
+is change in air pressure.
+
+23
+00:01:18,140 --> 00:01:19,390
+DR. JONATHAN VALVANO: Yes.
+
+24
+00:01:19,390 --> 00:01:23,700
+And if we look at this air
+pressure, we can visualize it
+
+25
+00:01:23,700 --> 00:01:26,940
+as an oscillation of pressure.
+
+26
+00:01:26,940 --> 00:01:31,310
+And so, we can see
+that at any given spot,
+
+27
+00:01:31,310 --> 00:01:36,740
+the air pressure is going to
+oscillate with respect to time.
+
+28
+00:01:36,740 --> 00:01:40,870
+The other way that we can perceive
+sound, or understand sound,
+
+29
+00:01:40,870 --> 00:01:44,820
+is the fact that this pressure
+wave actually travels.
+
+30
+00:01:44,820 --> 00:01:52,400
+And so this pressure is
+also oscillates in space.
+
+31
+00:01:52,400 --> 00:01:59,260
+So the wave actually propagates away
+from the generator to the perceiver.
+
+32
+00:01:59,260 --> 00:02:03,050
+DR. RAMESH YERRABALLI: So now that
+we've looked at what sound is,
+
+33
+00:02:03,050 --> 00:02:07,020
+let's look at the properties of sound.
+
+34
+00:02:07,020 --> 00:02:10,919
+First, we know that sound
+can be visualized as a wave.
+
+35
+00:02:10,919 --> 00:02:15,765
+
+36
+00:02:15,765 --> 00:02:18,390
+DR. JONATHAN VALVANO: And so
+there are properties of this wave.
+
+37
+00:02:18,390 --> 00:02:25,610
+One of the obvious properties
+is the period of this wave.
+
+38
+00:02:25,610 --> 00:02:32,040
+And one over this
+period is the frequency.
+
+39
+00:02:32,040 --> 00:02:36,580
+And when we talk about sound,
+we define this frequency
+
+40
+00:02:36,580 --> 00:02:41,090
+as the pitch, high pitch or low pitch.
+
+41
+00:02:41,090 --> 00:02:44,590
+DR. RAMESH YERRABALLI: The second
+property of sound, or in a wave,
+
+42
+00:02:44,590 --> 00:02:45,860
+is the amplitude.
+
+43
+00:02:45,860 --> 00:02:48,930
+
+44
+00:02:48,930 --> 00:02:52,140
+In the context of sound,
+we call this loudness.
+
+45
+00:02:52,140 --> 00:02:57,340
+
+46
+00:02:57,340 --> 00:03:01,175
+DR. JONATHAN VALVANO: So if the sound
+is much louder, it will be bigger.
+
+47
+00:03:01,175 --> 00:03:03,710
+
+48
+00:03:03,710 --> 00:03:06,290
+DR. RAMESH YERRABALLI: That is correct.
+
+49
+00:03:06,290 --> 00:03:13,290
+So, let's take a simple note, a
+sound that all of us can relate to,
+
+50
+00:03:13,290 --> 00:03:16,360
+an A-note on a piano or a keyboard.
+
+51
+00:03:16,360 --> 00:03:18,110
+DR. JONATHAN VALVANO:
+This A note is going
+
+52
+00:03:18,110 --> 00:03:26,470
+to oscillate and 440 cycles per
+second, so we'll call it 440 Hertz.
+
+53
+00:03:26,470 --> 00:03:32,470
+If we were to go down an octave to the
+octave below, we get another A note,
+
+54
+00:03:32,470 --> 00:03:38,980
+and it oscillates at one half
+that frequency, or 220 Hertz.
+
+55
+00:03:38,980 --> 00:03:46,965
+If we go 1 octave up, then it'll
+oscillate twice that, or 880 Hertz.
+
+56
+00:03:46,965 --> 00:03:51,270
+
+57
+00:03:51,270 --> 00:03:56,370
+DR. RAMESH YERRABALLI: So we can
+have notes in between things.
+
+58
+00:03:56,370 --> 00:04:02,780
+Let's look at some notes that
+are useful and make a nice sound.
+
+59
+00:04:02,780 --> 00:04:16,529
+The note G which is at 392 Hertz,
+the note E, which is 329.6 Hertz,
+
+60
+00:04:16,529 --> 00:04:23,180
+and the note C which is 261.6 hertz.
+
+61
+00:04:23,180 --> 00:04:26,920
+You will see that these numbers
+have a relationship when
+
+62
+00:04:26,920 --> 00:04:30,332
+you do the lab for this
+class, this particular module.
+
+63
+00:04:30,332 --> 00:04:32,207
+DR. JONATHAN VALVANO:
+Yeah, in the lab, where
+
+64
+00:04:32,207 --> 00:04:37,650
+it's going to use these four
+notes to generate a piano.
+
+65
+00:04:37,650 --> 00:04:42,950
+DR. RAMESH YERRABALLI: So, we saw sound
+can be described by three properties-
+
+66
+00:04:42,950 --> 00:04:48,930
+the frequency of sound, the
+amplitude, or the loudness of sound,
+
+67
+00:04:48,930 --> 00:04:53,560
+and there's a third property,
+which is the shape of sound.
+
+68
+00:04:53,560 --> 00:04:57,080
+DR. JONATHAN VALVANO: So if you
+wanted to listen to a trumpet,
+
+69
+00:04:57,080 --> 00:05:03,197
+you would see that the trumpet wave
+looks different than the sine wave
+
+70
+00:05:03,197 --> 00:05:05,360
+that we drew in the last picture.
+
+71
+00:05:05,360 --> 00:05:09,270
+The shape of this sound is different.
+
+72
+00:05:09,270 --> 00:05:12,870
+It still oscillates, but it's
+not as regular as the pure tone
+
+73
+00:05:12,870 --> 00:05:16,382
+that we did in the last slide.
+
+74
+00:05:16,382 --> 00:05:19,090
+DR. RAMESH YERRABALLI: So let's
+put all of these things together.
+
+75
+00:05:19,090 --> 00:05:23,490
+We're going to build a system
+that will produce sound
+
+76
+00:05:23,490 --> 00:05:27,250
+by converting digital
+signal to an analog sample.
+
+77
+00:05:27,250 --> 00:05:32,860
+We'll hook up a speaker that'll
+produce sound that we can listen to.
+
+78
+00:05:32,860 --> 00:05:35,180
+DR. JONATHAN VALVANO:
+All right let's go.

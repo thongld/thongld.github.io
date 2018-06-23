@@ -1,0 +1,366 @@
+1
+00:00:00,000 --> 00:00:10,380
+https://youtu.be/k5ZnaUIYil0
+
+2
+00:00:10,380 --> 00:00:13,240
+So in the last topic, we looked
+at the way the pixels
+
+3
+00:00:13,240 --> 00:00:17,370
+define and construct the detail
+in our image and that a
+
+4
+00:00:17,370 --> 00:00:21,230
+digital image has unique values
+for every single one of
+
+5
+00:00:21,230 --> 00:00:22,700
+those pixels.
+
+6
+00:00:22,700 --> 00:00:24,950
+Now we're going to look
+at tone and levels.
+
+7
+00:00:24,950 --> 00:00:27,140
+And the same principles apply.
+
+8
+00:00:27,140 --> 00:00:30,480
+If you have a look at my arm
+here, you can see that there
+
+9
+00:00:30,480 --> 00:00:33,870
+are lots of different tones
+wrapping around and creating
+
+10
+00:00:33,870 --> 00:00:35,930
+that dimensionality of my arm.
+
+11
+00:00:35,930 --> 00:00:39,460
+But you can't count the number
+of tones that are on there nor
+
+12
+00:00:39,460 --> 00:00:43,610
+can you actually differentiate
+between one tone to the next.
+
+13
+00:00:43,610 --> 00:00:45,780
+This is the gift
+of photography.
+
+14
+00:00:45,780 --> 00:00:48,530
+This is the thing that
+photography does best.
+
+15
+00:00:48,530 --> 00:00:52,950
+It creates images with smooth,
+continuous tone.
+
+16
+00:00:52,950 --> 00:00:57,030
+In this picture here, you can
+see those levels of tone and
+
+17
+00:00:57,030 --> 00:01:00,540
+the relationship that has with
+the dimensionality and the way
+
+18
+00:01:00,540 --> 00:01:02,890
+that tone exists in the image.
+
+19
+00:01:02,890 --> 00:01:05,690
+From the bottom there, you've
+got black and white, right up
+
+20
+00:01:05,690 --> 00:01:09,050
+to the top where we have
+lots and lots of tone.
+
+21
+00:01:09,050 --> 00:01:11,869
+And even though there's the
+illusion of continuity and
+
+22
+00:01:11,870 --> 00:01:14,690
+smoothness, it is in
+fact an illusion.
+
+23
+00:01:14,690 --> 00:01:19,220
+And you can count every
+individual tone in that image.
+
+24
+00:01:19,220 --> 00:01:23,800
+So the real question then, if
+that's how levels of tone are
+
+25
+00:01:23,800 --> 00:01:27,460
+formed in our photographic
+images, is just how many
+
+26
+00:01:27,460 --> 00:01:31,710
+levels of tone do we need in
+order to get that illusion of
+
+27
+00:01:31,710 --> 00:01:33,570
+smoothness and continuity?
+
+28
+00:01:33,570 --> 00:01:36,720
+Well, in order to answer that,
+we actually need to do a
+
+29
+00:01:36,720 --> 00:01:37,610
+little bit of maths.
+
+30
+00:01:37,610 --> 00:01:39,330
+And again, bear with me.
+
+31
+00:01:39,330 --> 00:01:43,950
+But we're talking about binary
+data, which begins at its
+
+32
+00:01:43,950 --> 00:01:48,630
+rawest form, as being on or off
+or being black and white.
+
+33
+00:01:48,630 --> 00:01:51,640
+So we therefore have
+two tones.
+
+34
+00:01:51,640 --> 00:01:55,110
+And it's just 2 to the power
+of 1, which gives us 2.
+
+35
+00:01:55,110 --> 00:01:58,490
+So that means we've got
+black or white.
+
+36
+00:01:58,490 --> 00:02:00,570
+Now black and white's not going
+to give us anywhere near
+
+37
+00:02:00,570 --> 00:02:01,820
+enough tonality.
+
+38
+00:02:01,820 --> 00:02:06,610
+So we just need to keep going
+until we find that point where
+
+39
+00:02:06,610 --> 00:02:08,250
+we have enough tone.
+
+40
+00:02:08,250 --> 00:02:12,760
+So 2 to the power of 2
+is simply 2 times 2.
+
+41
+00:02:12,760 --> 00:02:13,820
+That's 4.
+
+42
+00:02:13,820 --> 00:02:15,590
+Again, that's not enough.
+
+43
+00:02:15,590 --> 00:02:18,180
+But we keep going on
+and on and on.
+
+44
+00:02:18,180 --> 00:02:23,110
+And we end up with 2 to the
+power of 8, which 2 times 2
+
+45
+00:02:23,110 --> 00:02:30,040
+times 2 times 2 8 times
+equals 256.
+
+46
+00:02:30,040 --> 00:02:35,769
+256 is enough tone to give us
+that illusion of continuity
+
+47
+00:02:35,770 --> 00:02:37,020
+and smoothness.
+
+48
+00:02:37,020 --> 00:02:44,100
+And so this idea of 8 gives
+us the 8-bit image.
+
+49
+00:02:44,100 --> 00:02:45,359
+The 8-bit image.
+
+50
+00:02:45,360 --> 00:02:47,650
+And that is the magic number.
+
+51
+00:02:47,650 --> 00:02:50,760
+And you will have seen that,
+possibly seen that, in some of
+
+52
+00:02:50,760 --> 00:02:54,209
+the literature or some of the
+technical explanations of
+
+53
+00:02:54,210 --> 00:02:55,540
+digital imaging.
+
+54
+00:02:55,540 --> 00:02:56,590
+8 bits.
+
+55
+00:02:56,590 --> 00:02:59,020
+256 levels of tone.
+
+56
+00:02:59,020 --> 00:03:02,440
+Now I've got a video here that
+shows you visually how that
+
+57
+00:03:02,440 --> 00:03:05,640
+all unfolds and what that means
+for the way that we see
+
+58
+00:03:05,640 --> 00:03:07,220
+our images.
+
+59
+00:03:07,220 --> 00:03:11,330
+So here we've got a standard
+long image that I'm converting
+
+60
+00:03:11,330 --> 00:03:15,440
+into a grayscale, starting from
+black moving through into
+
+61
+00:03:15,440 --> 00:03:19,060
+white, or shadows, midtones,
+highlights.
+
+62
+00:03:19,060 --> 00:03:21,260
+And if I just use one of the
+adjustment features in
+
+63
+00:03:21,260 --> 00:03:25,549
+Photoshop and posterise this
+gradient, you can see what
+
+64
+00:03:25,550 --> 00:03:27,460
+black and white looks like.
+
+65
+00:03:27,460 --> 00:03:30,630
+And as I move through and simply
+double each of those
+
+66
+00:03:30,630 --> 00:03:35,549
+numbers, I start to get more and
+more tonality in my image.
+
+67
+00:03:35,550 --> 00:03:37,090
+16 shades.
+
+68
+00:03:37,090 --> 00:03:38,270
+32 shades.
+
+69
+00:03:38,270 --> 00:03:39,600
+Not quite enough.
+
+70
+00:03:39,600 --> 00:03:41,370
+As I keep going, 64.
+
+71
+00:03:41,370 --> 00:03:42,810
+I can still see the gaps.
+
+72
+00:03:42,810 --> 00:03:44,380
+I can still count the tones.
+
+73
+00:03:44,380 --> 00:03:48,250
+If I go to 128, that's
+looking pretty good.
+
+74
+00:03:48,250 --> 00:03:50,090
+But it's still not
+quite there yet.
+
+75
+00:03:50,090 --> 00:03:50,970
+Got to keep going.
+
+76
+00:03:50,970 --> 00:03:53,250
+255.
+
+77
+00:03:53,250 --> 00:03:59,130
+255 plus 0, because 0 is
+a value, gives me 256.
+
+78
+00:03:59,130 --> 00:04:00,920
+And there's my smooth
+continuous tone.
+
+79
+00:04:00,920 --> 00:04:02,553
+
+

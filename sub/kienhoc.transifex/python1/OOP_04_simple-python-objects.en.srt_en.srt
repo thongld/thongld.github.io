@@ -1,0 +1,740 @@
+1
+00:00:09,038 --> 00:00:11,800
+https://youtu.be/MkfuqueC3Qc
+So enough with the pictures, and
+enough with the terminology.
+
+2
+00:00:11,800 --> 00:00:13,010
+It's time to write some code.
+
+3
+00:00:13,010 --> 00:00:14,660
+So we're going to actually
+write a sample class.
+
+4
+00:00:14,660 --> 00:00:17,950
+It's not going to do anything useful
+whatsoever, but here we go.
+
+5
+00:00:17,950 --> 00:00:21,970
+So here is our class PartyAnimal, okay?
+
+6
+00:00:21,970 --> 00:00:29,270
+And it's a kind of an animal, and it has,
+inside this, class is a new reserved word.
+
+7
+00:00:29,270 --> 00:00:33,310
+Like def, or break, or continue,
+class is a reserved word.
+
+8
+00:00:34,700 --> 00:00:37,490
+This is, we're defining, and
+it's kind of like a def.
+
+9
+00:00:37,490 --> 00:00:40,830
+Remember the def doesn't actually execute,
+it just remembers.
+
+10
+00:00:40,830 --> 00:00:46,720
+So class says, remember this template,
+and I'm naming the template PartyAnimal.
+
+11
+00:00:46,720 --> 00:00:49,180
+I haven't made any objects yet,
+but this is the class.
+
+12
+00:00:51,120 --> 00:00:56,080
+And then for inside this, we indent and
+we just simply say oh, x = 0 and
+
+13
+00:00:56,080 --> 00:01:00,160
+that's a variable that's part
+of every instance of this class.
+
+14
+00:01:00,160 --> 00:01:04,256
+And then, if we want to do a method,
+we have some code like the def,
+
+15
+00:01:04,256 --> 00:01:05,756
+and that's indented.
+
+16
+00:01:05,756 --> 00:01:10,072
+And then it indents even farther, right,
+so it's indented to be part of this class
+
+17
+00:01:10,072 --> 00:01:13,660
+because that's part of the class, and
+then we do def, which means here.
+
+18
+00:01:13,660 --> 00:01:17,421
+So you could have multiple of these,
+we're just not showing multiple of those.
+
+19
+00:01:17,421 --> 00:01:21,102
+And so we have the name of the method,
+which is party, and
+
+20
+00:01:21,102 --> 00:01:23,340
+then we have a parameter.
+
+21
+00:01:23,340 --> 00:01:28,350
+Now, if you're familiar with other
+object oriented languages, one thing
+
+22
+00:01:28,350 --> 00:01:33,210
+that's different about Python than other
+object oriented langues is the concept of
+
+23
+00:01:34,580 --> 00:01:38,530
+a variable that is
+an alias to the instance,
+
+24
+00:01:38,530 --> 00:01:40,260
+which we'll cover in more detail.
+
+25
+00:01:40,260 --> 00:01:44,690
+And so the first parameter,
+by convention, not by requirement, but
+
+26
+00:01:44,690 --> 00:01:46,800
+by convention, is always self.
+
+27
+00:01:46,800 --> 00:01:49,020
+And then if you have more parameters,
+you put them after this.
+
+28
+00:01:49,020 --> 00:01:51,919
+So pretty much every method
+has to have one parameter
+
+29
+00:01:51,919 --> 00:01:54,387
+if it wants to talk to
+the instance variables.
+
+30
+00:01:54,387 --> 00:01:57,957
+And then within the code,
+it has this thing called self, and
+
+31
+00:01:57,957 --> 00:02:01,715
+that says there will be many x's,
+which we'll see in a bit.
+
+32
+00:02:01,715 --> 00:02:04,470
+self.x is a way to talk within
+
+33
+00:02:04,470 --> 00:02:08,100
+an instance of an object to the x that's
+part of the particular object we're doing.
+
+34
+00:02:08,100 --> 00:02:10,950
+And so
+you'll see these things to go to these.
+
+35
+00:02:10,950 --> 00:02:13,780
+We could have like a = 2.
+
+36
+00:02:13,780 --> 00:02:18,110
+Those aren't object-wide variables,
+that's just a local variable in that code.
+
+37
+00:02:18,110 --> 00:02:20,730
+So self.x is a way, and
+I'll cover that in a bit.
+
+38
+00:02:20,730 --> 00:02:24,808
+So there's a bit of code in there,
+has some rules,
+
+39
+00:02:24,808 --> 00:02:26,950
+the self parameter,
+which we'll come back to.
+
+40
+00:02:26,950 --> 00:02:31,150
+And then what happens is, so
+this part here gets all just recorded and
+
+41
+00:02:31,150 --> 00:02:33,520
+it remembers it in the name PartyAnimal.
+
+42
+00:02:33,520 --> 00:02:37,690
+And now we're saying that we want
+to actually create an object, okay?
+
+43
+00:02:37,690 --> 00:02:40,680
+So this is a class and
+now we're going to create an instance.
+
+44
+00:02:40,680 --> 00:02:45,780
+So we basically say, call the PartyAnimal
+thing, and make me a PartyAnimal object,
+
+45
+00:02:45,780 --> 00:02:50,830
+and return me the PartyAnimal object,
+and put it in the variable an, okay?
+
+46
+00:02:50,830 --> 00:02:55,310
+So now at this point,
+the variable an is an object, and
+
+47
+00:02:55,310 --> 00:02:58,710
+we can do things to it based on
+the definition of the class.
+
+48
+00:02:58,710 --> 00:03:02,590
+So we can call the party method, and
+we can call the method again, and
+
+49
+00:03:02,590 --> 00:03:04,120
+we can call the party method again.
+
+50
+00:03:05,430 --> 00:03:10,180
+Now, to just sort of clarify this, not that
+we have to fully understand this right
+
+51
+00:03:10,180 --> 00:03:15,820
+now, but since an is of type PartyAnimal,
+
+52
+00:03:17,060 --> 00:03:20,920
+the way this works is,
+it calls PartyAnimal.party,
+
+53
+00:03:20,920 --> 00:03:26,420
+which is this code right here, and
+passes in the instance variable an.
+
+54
+00:03:26,420 --> 00:03:30,160
+So this, you can think of this as
+almost a syntactic transformation
+
+55
+00:03:30,160 --> 00:03:33,870
+where this code is being called and
+this is being passed in, and
+
+56
+00:03:33,870 --> 00:03:37,410
+that's how this self
+becomes an alias of an.
+
+57
+00:03:39,030 --> 00:03:42,950
+And again, we'll hit this later and it
+will make some more sense, but I'll just
+
+58
+00:03:42,950 --> 00:03:49,550
+put this here as these two things,
+this is like a short form of this, okay?
+
+59
+00:03:49,550 --> 00:03:54,380
+So if we watch this code run,
+okay, like I said,
+
+60
+00:03:54,380 --> 00:03:58,450
+as Python encounters the class,
+it's like the def and
+
+61
+00:03:58,450 --> 00:04:03,700
+it simply records this and defines
+the new concept PartyAnimal, right?
+
+62
+00:04:03,700 --> 00:04:07,600
+And so, when the program runs,
+no output happens,
+
+63
+00:04:07,600 --> 00:04:11,720
+it just remembers I got a template,
+I got a cookie cutter named PartyAnimal.
+
+64
+00:04:11,720 --> 00:04:14,430
+I can make as many of these
+PartyAnimals as I like.
+
+65
+00:04:14,430 --> 00:04:18,034
+And then we hit a line basically says,
+make me a PartyAnimal and
+
+66
+00:04:18,034 --> 00:04:20,418
+give me back an instance of PartyAnimal.
+
+67
+00:04:20,418 --> 00:04:23,993
+And I´m going to, I mean this is like
+a function that gives you an instance and
+
+68
+00:04:23,993 --> 00:04:26,358
+then there´s an assignment
+statement that says,
+
+69
+00:04:26,358 --> 00:04:29,660
+put that object into the variable an,
+and that's what happens there.
+
+70
+00:04:31,000 --> 00:04:37,080
+And at this point, Python uses this
+class to create a variable called an.
+
+71
+00:04:38,270 --> 00:04:42,960
+And it says, oh,
+there is a variable x inside of an, and
+
+72
+00:04:42,960 --> 00:04:45,150
+a bit of code called party inside of an.
+
+73
+00:04:45,150 --> 00:04:49,880
+So this little green box here, that is
+the object, and it has stuff inside of it.
+
+74
+00:04:49,880 --> 00:04:54,586
+Code and data, and this object is created
+
+75
+00:04:54,586 --> 00:04:59,703
+when we construct a new PartyAnimal, okay?
+
+76
+00:04:59,703 --> 00:05:04,486
+So now we're going to call the method
+the first time, and so if you look,
+
+77
+00:05:04,486 --> 00:05:09,830
+that effectively fires into party and
+starts running that code.
+
+78
+00:05:09,830 --> 00:05:14,680
+And self.x is this thing, and so now it
+
+79
+00:05:14,680 --> 00:05:19,890
+changes that from 0 to 1, and
+it then prints out, So far 1, okay?
+
+80
+00:05:19,890 --> 00:05:24,000
+Then the def returns, and
+then it comes back to the main program
+
+81
+00:05:24,000 --> 00:05:28,170
+just like a function would, and
+it says, oh, let's call party again.
+
+82
+00:05:28,170 --> 00:05:32,270
+So it goes back up again,
+and it runs the code.
+
+83
+00:05:32,270 --> 00:05:35,800
+It adds 1, so this becomes 2,
+and then it prints out So far 2.
+
+84
+00:05:35,800 --> 00:05:38,460
+And then it comes back to here.
+
+85
+00:05:38,460 --> 00:05:42,430
+And then it runs the code again.
+
+86
+00:05:42,430 --> 00:05:48,020
+It goes up, runs this code,
+this x within switches from 2 to 3,
+
+87
+00:05:48,020 --> 00:05:51,960
+then it prints out So far 3, and
+then it comes back down here.
+
+88
+00:05:51,960 --> 00:05:55,840
+So this function has access
+to all the data that
+
+89
+00:05:55,840 --> 00:05:59,310
+lives inside this object while
+the function is running.
+
+90
+00:05:59,310 --> 00:06:03,110
+And it's using self as
+the way to access this thing.
+
+91
+00:06:04,230 --> 00:06:10,210
+So you can think of this as,
+self is an alias to the an.
+
+92
+00:06:10,210 --> 00:06:12,925
+Out here,
+an is a variable that we've got and
+
+93
+00:06:12,925 --> 00:06:15,431
+we can just do stuff to
+an in our main code.
+
+94
+00:06:15,431 --> 00:06:21,176
+But we don't know about an here,
+but while this code is running,
+
+95
+00:06:21,176 --> 00:06:27,700
+when we call an.party, self is
+an alias to an because of this, okay?
+
+96
+00:06:27,700 --> 00:06:31,460
+So self is like a global variable
+that's throughout this whole thing.
+
+97
+00:06:31,460 --> 00:06:35,750
+And it's a way that we access
+the actual instance of the object.
+
+98
+00:06:35,750 --> 00:06:37,540
+See, I told you how much fun this was.
+
+99
+00:06:37,540 --> 00:06:38,705
+No, I'm just kidding.
+
+100
+00:06:38,705 --> 00:06:42,960
+So, so far we've talked
+about class, which is a template.
+
+101
+00:06:42,960 --> 00:06:46,950
+Just for review, the methods or
+message is the code that's within there.
+
+102
+00:06:46,950 --> 00:06:50,080
+There's also fields or attributes,
+which is the data in there.
+
+103
+00:06:50,080 --> 00:06:54,080
+And an instance is, when you use
+the class to make an object, and
+
+104
+00:06:54,080 --> 00:06:55,460
+then you have an object instance.
+
+105
+00:06:55,460 --> 00:06:57,070
+It's the particular instance of a class.
+
+106
+00:06:58,460 --> 00:07:01,080
+Okay, so if we take a look at this,
+
+107
+00:07:01,080 --> 00:07:05,350
+what we're really doing is making
+new types of variables, right?
+
+108
+00:07:05,350 --> 00:07:09,060
+So we have like integers, and
+floating point numbers, and strings,
+
+109
+00:07:09,060 --> 00:07:10,920
+and Boolean, and whatever.
+
+110
+00:07:10,920 --> 00:07:14,690
+But what we have done with class,
+is we've made our own type of variable.
+
+111
+00:07:14,690 --> 00:07:16,830
+And so if you recall, if we make a list,
+
+112
+00:07:16,830 --> 00:07:21,260
+and we say what kind of thing are you
+with type, and it says, oh I'm a list.
+
+113
+00:07:21,260 --> 00:07:24,140
+And then remember what dir does,
+dir basically tells us,
+
+114
+00:07:24,140 --> 00:07:26,230
+what are the capabilities of this?
+
+115
+00:07:26,230 --> 00:07:29,850
+Now, now we have a word for this.
+
+116
+00:07:29,850 --> 00:07:33,980
+These things in list, like extend,
+count, pop, remove, reverse, sort.
+
+117
+00:07:33,980 --> 00:07:35,380
+These are methods.
+
+118
+00:07:37,770 --> 00:07:41,590
+List is a class that's already built in.
+
+119
+00:07:41,590 --> 00:07:46,940
+x is an object that we get back from it,
+and we say, what kind of thing is x?
+
+120
+00:07:46,940 --> 00:07:48,420
+Well, it's a list object.
+
+121
+00:07:48,420 --> 00:07:52,330
+Oh, when we say dir of x, we say,
+what is x capable of doing?
+
+122
+00:07:52,330 --> 00:07:54,700
+And we see all of the methods.
+
+123
+00:07:54,700 --> 00:07:58,220
+Append, index, insert, so
+these are called methods.
+
+124
+00:07:58,220 --> 00:08:00,660
+We've been using them all along, okay?
+
+125
+00:08:02,030 --> 00:08:09,440
+So that is dir and type on classes and
+instances that we've been using so far.
+
+126
+00:08:09,440 --> 00:08:12,430
+Okay, and so remember,
+when we did dir with a string,
+
+127
+00:08:12,430 --> 00:08:16,960
+we make a new string object,
+we assign it into y.
+
+128
+00:08:16,960 --> 00:08:18,220
+That's the long version of that.
+
+129
+00:08:18,220 --> 00:08:19,210
+We ask, what's in it?
+
+130
+00:08:19,210 --> 00:08:23,760
+Oh, we got an rindex, we got a split,
+we got this, we got expandtabs.
+
+131
+00:08:23,760 --> 00:08:26,670
+We've got all these,
+these are again, methods.
+
+132
+00:08:29,480 --> 00:08:33,513
+Turns out that these are also methods as
+well, with special names that have to do
+
+133
+00:08:33,513 --> 00:08:37,984
+with supporting things like greater than,
+which supports the greater than operator.
+
+134
+00:08:37,984 --> 00:08:42,944
+And less than is one that gets
+called when we see syntax like,
+
+135
+00:08:42,944 --> 00:08:48,700
+if I see like x less than y, and these
+are strings, it actually calls this method.
+
+136
+00:08:49,860 --> 00:08:52,460
+Not that you need to know that, okay.
+
+137
+00:08:52,460 --> 00:08:56,010
+rindex or isupper, those are things that
+we call when we want to accomplish things.
+
+138
+00:08:56,010 --> 00:09:00,000
+So every string has all
+of these methods in it.
+
+139
+00:09:01,140 --> 00:09:03,580
+Let's take a look at
+the thing we just made.
+
+140
+00:09:03,580 --> 00:09:05,930
+So we made a thing called
+class PartyAnimal.
+
+141
+00:09:05,930 --> 00:09:08,930
+Python reads that and says,
+oh, I'm going to make a template
+
+142
+00:09:08,930 --> 00:09:12,520
+that's shaped like a PartyAnimal,
+so we shape like a PartyAnimal.
+
+143
+00:09:12,520 --> 00:09:16,570
+And it's got some code in it,
+it's got a variable in it.
+
+144
+00:09:16,570 --> 00:09:19,460
+And we're going to make an instance
+of it and assign the instance
+
+145
+00:09:19,460 --> 00:09:24,640
+in the an variable, and now we're going
+to say, what kind of thing is an?
+
+146
+00:09:24,640 --> 00:09:25,160
+Print its type.
+
+147
+00:09:25,160 --> 00:09:28,340
+And then dir says print all the methods.
+
+148
+00:09:29,410 --> 00:09:32,160
+And so type says it is an instance,
+
+149
+00:09:32,160 --> 00:09:36,380
+which means it's an instance of
+an object or instance of a class.
+
+150
+00:09:36,380 --> 00:09:40,007
+And we do dir, it says well we can call
+doc and module, those are built in.
+
+151
+00:09:40,007 --> 00:09:43,080
+party, that's our party.
+
+152
+00:09:43,080 --> 00:09:49,230
+x, that's our x, and so Python itself
+knows the member functions and
+
+153
+00:09:49,230 --> 00:09:53,295
+the attributes in a class that we created.
+
+154
+00:09:53,295 --> 00:09:56,715
+Okay, so that basically gets
+us through some of the syntax,
+
+155
+00:09:56,715 --> 00:09:59,799
+the concept of self,
+the fact that self is the alias for
+
+156
+00:09:59,799 --> 00:10:04,184
+the actual instance, and then we'll
+continue and do some more in just a bit.

@@ -1,0 +1,161 @@
+1
+00:00:00,000 --> 00:00:06,899
+Ta sẽ nhập dữ liệu, và điều đầu tiên cần phải làm
+
+2
+00:00:06,899 --> 00:00:14,660
+là chuyển dữ liệu sang định dạng CSV, "comma separated values" (các giá trị định giới bằng dấu phẩy).
+
+3
+00:00:14,660 --> 00:00:17,859
+Bạn sẽ thắc mắc "Làm sao để chuyển dữ liệu thành file CSV?"
+
+4
+00:00:18,390 --> 00:00:22,460
+Bạn có thể chưa nghĩ tới nhưng cách dễ nhất
+
+5
+00:00:22,460 --> 00:00:27,449
+là nhờ đồng nghiệp: những người sẽ email các bảng tính cho bạn. Thay vào đó họ
+
+6
+00:00:27,449 --> 00:00:33,090
+có thể gửi file dạng CSV cho bạn luôn. Rất nhiều cơ sở dữ liệu có thể dễ dàng
+
+7
+00:00:33,090 --> 00:00:37,629
+xuất ra file CSV. Sẽ chẳng sao cả nếu bạn yêu cầu đồng nghiệp 
+
+8
+00:00:37,629 --> 00:00:42,559
+"Này, cậu có thể gửi tôi tệp CSV luôn không?"
+
+9
+00:00:42,559 --> 00:00:47,940
+Nếu bạn không thể làm điều đó, giả sử bạn đã có sẵn dữ liệu trong
+
+10
+00:00:47,940 --> 00:00:52,289
+Excel, bạn vẫn có thể tự mình chuyển định dạng file. Không hề khó chút nào.
+
+11
+00:00:52,289 --> 00:00:57,969
+Chỉ cần mở bảng tính ra và lưu dưới dạng CSV. Xem nào.
+
+12
+00:00:57,969 --> 00:01:03,890
+Ta sẽ lưu file và thay vì chọn XLSX, kéo xuống và chọn CSV. Và rồi ta đã có 
+
+13
+00:01:03,890 --> 00:01:08,820
+dữ liệu dưới dạng file CSV. Excel cảnh báo chúng ta: "Này! Cẩn thận! Công thức tính
+
+14
+00:01:08,820 --> 00:01:13,680
+và các bảng trục sẽ bị xóa nếu bạn chuyển qua dạng CSV." Nhưng không sao.
+
+15
+00:01:13,680 --> 00:01:17,869
+Ta không cần chúng. Bây giờ, như đã làm trong khóa học trước giống khi muốn
+
+16
+00:01:17,869 --> 00:01:23,270
+nhập dữ liệu từ trang web ta có thể nhập dữ liệu từ file CSV. Ta chọn
+
+17
+00:01:23,270 --> 00:01:27,850
+"delimited" (phân định) và thông báo với Excel là dữ liệu của ta có header.
+
+18
+00:01:27,850 --> 00:01:32,619
+Vì dòng đầu tiên là header. Mặc dù được gọi là tệp CSV, ta vẫn phải báo
+
+19
+00:01:32,619 --> 00:01:37,049
+cho Excel biết dấu phẩy là dấu hiệu ngăn cách các cột. Ta có thể
+
+20
+00:01:37,049 --> 00:01:41,520
+xem trước một chút ở đây rồi chỉnh dạng dữ liệu. Đây là "văn bản" 
+
+21
+00:01:41,520 --> 00:01:45,500
+ và đây cũng là "văn bản". Còn lại đều là "văn bản", tôi đoán bạn tin như thế
+
+22
+00:01:46,200 --> 00:01:49,780
+Ở đây ta có "ngày". Ta phải báo cho Excel "Cẩn thận, đây là "ngày" đấy!"
+
+23
+00:01:49,780 --> 00:01:55,840
+và cũng báo nó ở dạng tháng-ngày-năm. Rồi Excel sẽ biết cách diễn giải dữ liệu.
+
+24
+00:01:55,840 --> 00:01:59,090
+Bây giờ bạn có lẽ muốn nhấn OK nhưng đừng làm thế! Ta phải tới mục Properties trước.
+
+25
+00:01:59,090 --> 00:02:03,829
+Bởi vì có một tính năng quan trọng ở đây ta phải bỏ đi.
+
+26
+00:02:03,829 --> 00:02:09,709
+Ta không muốn Excel hỏi tên file mỗi khi "Refresh". Nếu ta nhấn vào đó
+
+27
+00:02:09,709 --> 00:02:12,910
+thì mỗi lần "Refresh", Excel lại sẽ hỏi:
+
+28
+00:02:12,910 --> 00:02:19,490
+"Tên file là gì?" Cho nên ta muốn vô hiệu hóa chức năng này. Xong. Bây giờ ta sẽ có tất cả dữ liệu đưa
+
+29
+00:02:19,490 --> 00:02:26,050
+từ fle CSV vào tệp Excel cùng một lúc. Giả sử ta có tên đồng nghiệp đáng ghét nào đó
+
+30
+00:02:26,050 --> 00:02:31,680
+email cho ta "đây là bản mới cập nhật". thì cũng không thanh vấn đề nữa.
+
+31
+00:02:31,680 --> 00:02:36,800
+Vì ta chỉ cần làm thế này: Mở file...Để tôi cho bạn xem ta
+
+32
+00:02:36,800 --> 00:02:42,360
+đang có 753 hàng. Điều này sẽ quan trọng đây... Ta mở file, file thứ hai
+
+33
+00:02:42,360 --> 00:02:47,090
+mà đồng nghiệp vừa gửi. Và ta lưu nó lại dưới dạng CSV lần nữa.
+
+34
+00:02:47,090 --> 00:02:52,780
+Xong rồi. Ta cuộn xuống, chọn "CSV", và giờ ta chọn file đã có sẵn đó
+
+35
+00:02:52,780 --> 00:02:57,250
+lưu đè lên nó. Vâng Excel, tôi biết. Ta biết mình đang làm gì với cảnh báo này.
+
+
+36
+00:02:57,250 --> 00:03:03,070
+Ta có thể đóng nó lại! Giờ file thứ hai đã được lưu dưới dạng CSV
+
+37
+00:03:03,070 --> 00:03:08,150
+Ta chỉ việc nhấn vào "Refresh" và dữ liệu sẽ được tải xuống. Kéo xuống xem nào
+
+38
+00:03:08,150 --> 00:03:13,950
+bạn có thể thấy ta có thêm 5 hàng mới nữa mà không phải sao chép-dán
+
+39
+00:03:13,950 --> 00:03:18,800
+hay xóa dữ liệu nào cả. Ta chỉ cần đảm bảo là đang chỉ tới cùng một tên file khi ta nhấp "Refresh".
+
+40
+00:03:18,800 --> 00:03:22,010
+Và tất cả dữ liệu đều ở đó. Thú vị phải không?
+

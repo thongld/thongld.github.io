@@ -1,0 +1,414 @@
+1
+00:00:05,120 --> 00:00:11,950
+https://youtu.be/EsFza6bHRzo
+We'll talk about the more commonly issued
+bonds across governments and companies.
+
+2
+00:00:11,950 --> 00:00:15,610
+And I'm focused on the government because it borrows the most,
+
+3
+00:00:15,610 --> 00:00:18,680
+it has the most interesting types of bonds,
+and
+
+4
+00:00:18,680 --> 00:00:23,259
+also because the difference between a government bond and
+
+5
+00:00:23,259 --> 00:00:31,599
+a corporate bond is complex, but not dramatic.
+In other words the structure of coupon paying
+
+6
+00:00:31,599 --> 00:00:35,200
+bonds is the same
+with corporate bonds.
+
+7
+00:00:35,200 --> 00:00:40,940
+Okay, so what is a coupon paying bond?
+Very simple, you should know that by now.
+
+8
+00:00:40,940 --> 00:00:46,660
+It not only pays face value, but it also pays coupon.
+
+9
+00:00:46,660 --> 00:00:54,159
+And so the nature of the bond
+is again explicit IOU between this time government
+
+10
+00:00:54,159 --> 00:00:59,719
+and you.
+So let's just be a little bit crisp here and
+
+11
+00:00:59,719 --> 00:01:03,710
+draw the timeline.
+I'm going to draw the timeline and
+
+12
+00:01:03,710 --> 00:01:08,370
+what I'm going to do is I'm going to make
+sure you understand what's going on.
+
+13
+00:01:08,370 --> 00:01:13,590
+You get face value here, but I'm going to
+make it real world now.
+
+14
+00:01:13,590 --> 00:01:21,000
+Because coupons are paid every six months,
+you will do face plus C over 2.
+
+15
+00:01:21,000 --> 00:01:28,170
+And every six months, so this is six months long.
+
+16
+00:01:28,170 --> 00:01:34,670
+Every six months you paid a coupon and I'm writing it as C over 2.
+
+17
+00:01:34,670 --> 00:01:39,950
+And you'll see in a second, when we do example
+why.
+
+18
+00:01:39,950 --> 00:01:44,540
+Fundamental reason, and we'll see it, is that coupons are stated annually.
+
+19
+00:01:44,540 --> 00:01:49,480
+Interest rates are stated annually.
+Interest rates are determined by whom?
+
+20
+00:01:49,480 --> 00:01:52,840
+The market.
+Coupon is determined by whom?
+
+21
+00:01:52,840 --> 00:01:57,420
+The issue of the bond.
+So the coupon is stated annually, and as a
+
+22
+00:01:57,420 --> 00:02:03,280
+percentage of face value.
+So let's get to an example and then we'll
+
+23
+00:02:03,280 --> 00:02:08,729
+do some number crunching.
+So the example is the following, pay attention,
+
+24
+00:02:08,729 --> 00:02:13,810
+write it down.
+Suppose a government bond has a 3% coupon
+
+25
+00:02:13,810 --> 00:02:18,959
+and a face value of $100,000.
+Immediately, what should you think?
+
+26
+00:02:18,959 --> 00:02:25,249
+What is the payment being made?
+What is the coupon, 3% of 100 thousand.
+
+27
+00:02:25,249 --> 00:02:32,69
+You do that calculation and it's $3000, right?
+Then you keep going and you realize that the
+
+28
+00:02:32,69 --> 00:02:38,230
+maturity is six years, right?
+So you know now that six will be multiplied
+
+29
+00:02:38,230 --> 00:02:42,459
+by two because actual life of the bond.
+
+30
+00:02:42,459 --> 00:02:45,769
+In terms of compounding intervals, the actual life,
+
+31
+00:02:45,769 --> 00:02:50,420
+the real life is six years but in terms of
+number of periods it's 12.
+
+32
+00:02:50,420 --> 00:02:56,510
+What is the price of this bond, given that
+similar bonds yield a annual return of 4%.
+
+33
+00:02:56,510 --> 00:03:03,679
+So as soon as you see 4% remember all interest
+rates are coded stated.
+
+34
+00:03:03,680 --> 00:03:11,40
+So you'll take the 4% and you'll divide it
+by 2 to apply to a two-year bond.
+
+35
+00:03:11,40 --> 00:03:15,769
+That's what we are focused on and we'll write
+out the formula.
+
+36
+00:03:15,769 --> 00:03:26,889
+The formula will be like this.
+The formula will be C over 2.
+
+37
+00:03:26,889 --> 00:03:30,90
+How many times c over 2.
+12 times.
+
+38
+00:03:30,90 --> 00:03:36,400
+How did I get 12?
+6 times 2.
+
+39
+00:03:36,400 --> 00:03:44,689
+One and then face value
+is 100 thousand.
+
+40
+00:03:44,689 --> 00:03:50,719
+Now the formula is pretty straightforward
+but it's pretty cool.
+
+41
+00:03:50,719 --> 00:03:59,870
+The price will be equal to the PV
+and in the function I'll just talk through it,
+
+42
+00:03:59,870 --> 00:04:02,379
+and then when we use numbers we'll do it with
+
+43
+00:04:02,379 --> 00:04:07,659
+Excel So
+if you look at this, the price will be present
+
+44
+00:04:07,659 --> 00:04:11,659
+value, but
+they're three components to that present value
+
+45
+00:04:11,659 --> 00:04:15,200
+right now.
+So the first component you will figure out
+
+46
+00:04:15,200 --> 00:04:22,840
+is rate, yeah?
+The rate has to be what?
+
+47
+00:04:22,840 --> 00:04:31,638
+We know that comparable bonds are paying 4%.
+But you'll think 2%.
+
+48
+00:04:31,639 --> 00:04:36,460
+Okay so what do you do?
+You take rate and divide it by two.
+
+49
+00:04:36,460 --> 00:04:41,549
+You can do it while doing Excel right, so
+you don't have to do it outside.
+
+50
+00:04:41,550 --> 00:04:46,780
+Then you press comma.
+What else do you want to put in next?
+
+51
+00:04:46,780 --> 00:04:51,758
+You want to put an n, but you know the stated
+n is 6,
+
+52
+00:04:51,759 --> 00:04:57,699
+so you take n and multiply it by 2.
+So where n is the stated number of years,
+
+53
+00:04:57,699 --> 00:05:00,620
+right?
+So you make the number of periods a function
+
+54
+00:05:00,620 --> 00:05:05,80
+of twice as much.
+If the compounding was every three months,
+
+55
+00:05:05,80 --> 00:05:08,229
+what would n be?
+N multiplied by four.
+
+56
+00:05:08,229 --> 00:05:16,68
+If every 12 months, remember the loan example
+I did in module two.
+
+57
+00:05:16,69 --> 00:05:20,580
+Is I made compounding every month because
+that's how you pay it back loan.
+
+58
+00:05:20,580 --> 00:05:25,580
+So this is this.
+And then what is the third thing you enter
+
+59
+00:05:25,580 --> 00:05:28,419
+in the formula?
+You enter payment, but
+
+60
+00:05:28,419 --> 00:05:35,139
+the payment is happening as a function of,
+so this is what you'll do.
+
+61
+00:05:35,139 --> 00:05:43,830
+You'll take 3,000,
+but divide it by 2, why?
+
+62
+00:05:43,830 --> 00:05:49,198
+Because you're paying coupon every six months,
+which is half a year.
+
+63
+00:05:49,199 --> 00:05:55,960
+You have to match with the timeline and
+the formula, otherwise, you're not gonna get
+
+64
+00:05:55,960 --> 00:06:01,688
+much out of it, right?
+So if now I'm left with one last thing to
+
+65
+00:06:01,689 --> 00:06:08,509
+enter, 800 thousand.
+Please remember, if you put a positive number here,
+
+66
+00:06:08,509 --> 00:06:12,680
+you'll get a negative answer here.
+
+67
+00:06:12,680 --> 00:06:19,490
+So you may want to enter a negative number
+because prices are never [LAUGH] never negative,
+
+68
+00:06:19,490 --> 00:06:22,740
+right?
+So anyway, so that's something that we know
+
+69
+00:06:22,740 --> 00:06:27,889
+how to do and so on.
+So let's do it in Excel and calculate it.
+
+70
+00:06:27,889 --> 00:06:35,810
+So let's write out the formula.
+It's PV.
+
+71
+00:06:35,810 --> 00:06:44,830
+So you do it with me.
+I'm going to do 0.04 divided by 2.
+
+72
+00:06:44,830 --> 00:06:52,960
+Then I'm going to take n as 6 multiplied by
+2, then I'll do what?
+
+73
+00:06:52,960 --> 00:07:01,688
+3,000 divided by 2.
+You can actually say 0.03 multipled by 100,000
+
+74
+00:07:01,689 --> 00:07:13,409
+right here in Excel, divided by 2.
+And then, I will enter a -100,000.
+
+75
+00:07:13,409 --> 00:07:16,20
+So I've covered everything.
+Look that's the whole thing.
+
+76
+00:07:16,20 --> 00:07:19,770
+In one form of PV I can enter the PMT and
+the face value.
+
+77
+00:07:19,770 --> 00:07:24,859
+This challenge is, if the face value was in
+the middle of the period,
+
+78
+00:07:24,860 --> 00:07:31,319
+which it doesn't happen for a bond.
+So suppose the bond was paying 100,000 suddenly
+
+79
+00:07:31,319 --> 00:07:33,650
+in the middle.
+Then you can't use this formula because when
+
+80
+00:07:33,650 --> 00:07:40,169
+you enter 100,000, it assumes
+that the future values at the end of your
+
+81
+00:07:40,169 --> 00:07:44,280
+lifecycle of the bond.
+Okay and this, I believe, will work out to be
+
+82
+00:07:44,280 --> 00:07:49,99
+$94,712.33.
+
+83
+00:07:49,99 --> 00:07:59,50
+Okay, please do this because it's slightly
+different than what we did earlier.
+
+84
+00:07:59,50 --> 00:08:07,340
+But now once you have this setup in your Excel,
+I'm going to ask you to try to do something
+
+85
+00:08:07,340 --> 00:08:07,919
+fun with it.
+

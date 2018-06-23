@@ -1,0 +1,12 @@
+Tổng quan Chương trình XSeries
+
+XSeries "Khoa học Dữ liệu và Kĩ thuật với Spark", được tạo ra với sự đồng hành của Databricks, sẽ dạy cách thực hiện các công việc lớn trong data science và data engineering sử dụng Spark, một hệ thống điện toán cụm phù hợp với các công việc học máy lớn. Khóa học cũng sẽ trình bày cái nhìn tích hợp về xử lí dữ liệu bằng cách nhấn mạnh vào nhiều bộ phận của các kênh phân tích dữ liệu - bao gồm phân tích thăm dò, trích rút đặc trưng, học có giám sát và đánh giá mô hình. Học viên sẽ được tự trải nghiệm cách xây dựng và sửa lỗi cho các chương trình Spark. Thông tin chuyên ngành về Spark và các thuật toán phân tán trong học máy sẽ được đề cập, giúp học viên hiểu biết về các vấn đề: làm việc với big data và xây dựng code cho một môi trường phân tán.
+
+XSeries này yêu cầu bạn cần có kiến thức về lập trình và kinh nghiệm sử dụng Python (hoặc khả năng học nó một cách nhanh chóng). Tất cả bài tập sẽ sử dụng PySpark (API của Python dành cho Spark), nhưng bạn KHÔNG cần có kinh nghiệm trước khi học về Spark hoặc điện toán phân tán. Có hiểu biết về các khái niệm cơ bản trong học máy và đã tiếp xúc với các thuật toán, xác suất, đại số tuyến tính và giải tích là các điều kiện cần để học hai khóa trong chương trình này.
+
+Những gì bạn sẽ được học:
+1. Cách dùng Spark và các thư viện của nó để giải quyết vấn đề liên quan đến big data
+2. Cách tiếp cận các vấn đề liên quan đến data science/engineering ở quy mô lớn
+3. Các API và kiến trúc của Spark cùng nhiều chi tiết nội bộ
+4. Sự đánh đổi giữa giao tiếp và tính toán trong môi trường phân tán
+5. Ứng dụng của Spark

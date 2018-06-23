@@ -1,0 +1,312 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/LD1dd8uRfj4
+
+1
+00:00:00,000 --> 00:00:00,410
+
+2
+00:00:00,410 --> 00:00:03,970
+(JONATHAN VALVANO) Next, let's look at
+how the components of an embedded
+
+3
+00:00:03,970 --> 00:00:06,700
+system fit together.
+
+4
+00:00:06,700 --> 00:00:07,950
+We're going to have the computer.
+
+5
+00:00:07,950 --> 00:00:12,100
+
+6
+00:00:12,100 --> 00:00:17,150
+And we're going to connect through
+the input output ports.
+
+7
+00:00:17,150 --> 00:00:19,380
+Some will be just output.
+
+8
+00:00:19,380 --> 00:00:22,720
+Some will be both input and output.
+
+9
+00:00:22,720 --> 00:00:24,550
+And some will be just input.
+
+10
+00:00:24,550 --> 00:00:30,090
+And we're going to connect these up to
+devices, which we've already listed as
+
+11
+00:00:30,090 --> 00:00:49,340
+electrical, mechanical, chemical,
+biological, optical...
+
+12
+00:00:49,340 --> 00:00:50,830
+Your list can go on and on.
+
+13
+00:00:50,830 --> 00:00:53,940
+
+14
+00:00:53,940 --> 00:00:57,780
+Now, let's look at inside
+the computer.
+
+15
+00:00:57,780 --> 00:01:00,785
+In the computer, we said
+it has a processor.
+
+16
+00:01:00,785 --> 00:01:03,390
+
+17
+00:01:03,390 --> 00:01:08,180
+The processor is the brains, the
+thing that performs actions.
+
+18
+00:01:08,180 --> 00:01:12,660
+And we're going to connect up to this
+processor two types of memory.
+
+19
+00:01:12,660 --> 00:01:16,900
+
+20
+00:01:16,900 --> 00:01:25,770
+We have a random access memory,
+which is volatile.
+
+21
+00:01:25,770 --> 00:01:29,660
+
+22
+00:01:29,660 --> 00:01:33,550
+And it will contain our data.
+
+23
+00:01:33,550 --> 00:01:37,340
+Volatile means if we shut the power
+off, the information goes away.
+
+24
+00:01:37,340 --> 00:01:45,410
+And then we have another type of
+memory called read only memory.
+
+25
+00:01:45,410 --> 00:01:50,230
+And sometimes we're going to call it
+flash because that's the technology
+
+26
+00:01:50,230 --> 00:01:52,790
+that was used to build it.
+
+27
+00:01:52,790 --> 00:01:55,065
+And it is nonvolatile.
+
+28
+00:01:55,065 --> 00:02:04,512
+
+29
+00:02:04,512 --> 00:02:07,180
+And that means the data
+does not go away.
+
+30
+00:02:07,180 --> 00:02:10,500
+And this nonvolatility is important
+in an embedded system.
+
+31
+00:02:10,500 --> 00:02:14,835
+And what we're going to put in ROM
+memory is our code or our software
+
+32
+00:02:14,835 --> 00:02:16,345
+will go in there.
+
+33
+00:02:16,345 --> 00:02:22,450
+And as I mentioned before, an important
+part of an embedded system
+
+34
+00:02:22,450 --> 00:02:23,700
+is input output.
+
+35
+00:02:23,700 --> 00:02:27,880
+
+36
+00:02:27,880 --> 00:02:31,890
+And we're going to connect all
+these together with a bus.
+
+37
+00:02:31,890 --> 00:02:34,220
+So these are the components
+of our embedded system.
+
+38
+00:02:34,220 --> 00:02:39,890
+
+39
+00:02:39,890 --> 00:02:44,660
+The picture that we drew on the previous
+slide was classified as Von
+
+40
+00:02:44,660 --> 00:02:47,980
+Neumann computer.
+
+41
+00:02:47,980 --> 00:02:54,400
+And that is the two types of
+memory and the I/O all
+
+42
+00:02:54,400 --> 00:02:57,510
+existed on the same bus.
+
+43
+00:02:57,510 --> 00:03:04,350
+So we had the processor, which is the
+intelligence that performs actions.
+
+44
+00:03:04,350 --> 00:03:12,040
+And we had our RAM memory,
+which contained the data.
+
+45
+00:03:12,040 --> 00:03:19,990
+And we had our ROM memory, which
+contains our instructions and our I/O,
+
+46
+00:03:19,990 --> 00:03:26,040
+which performs either output
+or input to the world.
+
+47
+00:03:26,040 --> 00:03:28,220
+That was a Von Neumann machine.
+
+48
+00:03:28,220 --> 00:03:31,910
+And we can see that all the
+information is connected
+
+49
+00:03:31,910 --> 00:03:34,870
+across the same bus.
+
+50
+00:03:34,870 --> 00:03:40,910
+The Cortex M, the one we're going to do
+in this class, is classified as a
+
+51
+00:03:40,910 --> 00:03:42,700
+Harvard architecture.
+
+52
+00:03:42,700 --> 00:03:46,130
+And it is different in the following
+fundamental way.
+
+53
+00:03:46,130 --> 00:03:51,080
+And that is we still have a processor,
+which executes instructions.
+
+54
+00:03:51,080 --> 00:03:55,860
+And we still have ROM, which contains
+those instructions.
+
+55
+00:03:55,860 --> 00:03:58,580
+
+56
+00:03:58,580 --> 00:04:06,330
+And the processor and the ROM are
+connected by a bus, which allows you
+
+57
+00:04:06,330 --> 00:04:11,765
+to decode the op code bus.
+
+58
+00:04:11,765 --> 00:04:16,320
+The ICode bus allows the processor
+to fetch op codes.
+
+59
+00:04:16,320 --> 00:04:23,660
+But this processor has a second bus.
+
+60
+00:04:23,660 --> 00:04:32,290
+And on this second bus, which is called
+a system bus, we see our RAM,
+
+61
+00:04:32,290 --> 00:04:39,970
+which contains our data and our I/O
+devices, which perform either output
+
+62
+00:04:39,970 --> 00:04:42,130
+or input to the real world.
+
+63
+00:04:42,130 --> 00:04:47,400
+And having a second bus allows
+you to do two things at once.
+
+64
+00:04:47,400 --> 00:04:55,740
+At the same time that the processor
+can be fetching an op code, at the
+
+65
+00:04:55,740 --> 00:05:01,680
+exact same time the processor
+is writing data to RAM.
+
+66
+00:05:01,680 --> 00:05:04,940
+And this way the computer
+will run much faster.
+
+67
+00:05:04,940 --> 00:05:09,570
+In fact, the processor that we're going
+to use, the Texas Instruments
+
+68
+00:05:09,570 --> 00:05:20,310
+TM4C123, which is a Cortex M4 processor,
+actually has five or six
+
+69
+00:05:20,310 --> 00:05:27,040
+buses allowing up to five or six
+operations to occur simultaneously.
+
+70
+00:05:27,040 --> 00:05:33,576

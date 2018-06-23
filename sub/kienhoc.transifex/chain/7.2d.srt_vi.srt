@@ -1,0 +1,364 @@
+0
+00:00:00,000 --> 00:00:00,499
+https://youtu.be/8wwGFOUWf2A
+
+1
+00:00:00,499 --> 00:00:03,360
+Bây giờ, hãy xem xét cách tính số đơn vị thiếu hụt
+
+2
+00:00:03,360 --> 00:00:05,470
+đối với sự phân phát thông thường, đối với trường hợp trong đó yêu cầu
+
+3
+00:00:05,470 --> 00:00:07,840
+được phân phát một cách bình thường.
+
+4
+00:00:07,840 --> 00:00:12,320
+Vì thế, điều chúng ta sẽ làm chính là sử dụng hàm Mất mát, chính là L(Q).
+
+5
+00:00:12,320 --> 00:00:14,220
+Và một lần nữa, đó là số lượng mong đợi
+
+6
+00:00:14,220 --> 00:00:16,570
+mà biến ngẫu nhiên, x, yêu cầu,
+
+7
+00:00:16,570 --> 00:00:19,780
+vượt qua ngưỡng giá trị Q. Đây cũng được gọi là
+
+8
+00:00:19,780 --> 00:00:23,460
+đơn vị thiếu hụt mong đợi trong mỗi Chu trình làm đầy lại kho.
+
+9
+00:00:23,460 --> 00:00:25,730
+Tôi sẽ giới thiệu đến bạn hai phương trình,
+
+10
+00:00:25,730 --> 00:00:29,979
+liên quan đến trường hợp riêng biệt và trường hợp liên tục,
+
+11
+00:00:29,979 --> 00:00:32,520
+và chúng ta sẽ tập trung vào sự phân phát thông thường, cái mà
+
+12
+00:00:32,520 --> 00:00:36,550
+một lần nữa, là biến liên tục, rõ ràng là thế.
+
+13
+00:00:36,550 --> 00:00:40,140
+Và điều chúng ta sẽ làm chính là giới thiệu hàm tính 
+
+14
+00:00:40,140 --> 00:00:40,970
+Sự tổn thất thông thường về đơn vị.
+
+15
+00:00:40,970 --> 00:00:44,090
+Vậy đó là hàm Tổn thất được thiết kế 
+
+16
+00:00:44,090 --> 00:00:46,360
+cho đơn vị thông thường.
+
+17
+00:00:46,360 --> 00:00:48,040
+Và chúng ta sẽ gọi nó là G(k).
+
+18
+00:00:48,040 --> 00:00:51,710
+Chúng ta sẽ sử dụng rất nhiều G(K) trong vài tuần tới.
+
+19
+00:00:51,710 --> 00:00:55,060
+Và vì thế, một cách thiết yếu, G(k), có k,
+
+20
+00:00:55,060 --> 00:00:58,350
+nó cho bạn biết về hàm Đơn vị thông thường, 
+
+21
+00:00:58,350 --> 00:01:01,830
+sự phân phát đơn vị thông thường, số đơn vị thiếu hụt dự kiến là bao nhiêu.
+
+22
+00:01:01,830 --> 00:01:05,420
+Sau đó, tôi sẽ nhân nó với độ lệch chuẩn 
+
+23
+00:01:05,420 --> 00:01:06,850
+của đơn hàng.
+
+24
+00:01:06,850 --> 00:01:08,570
+Và nó sẽ cho ra số đơn vị thiếu hụt dự kiến 
+
+25
+00:01:08,570 --> 00:01:11,000
+cho sự phân phát của tôi.
+
+26
+00:01:11,000 --> 00:01:13,970
+Vậy để sử dụng hàm G(k), tôi sẽ 
+
+27
+00:01:13,970 --> 00:01:16,860
+phải đổi sự phân phát của mình
+
+28
+00:01:16,860 --> 00:01:20,110
+thành sự phân phát thông thường chuẩn hay sự phân phát theo đơn vị,
+
+29
+00:01:20,110 --> 00:01:23,380
+trong đó có giá trị trung bình cộng là 0
+
+30
+00:01:23,380 --> 00:01:26,020
+và độ lệch chuẩn là 1.
+
+31
+00:01:26,020 --> 00:01:28,610
+Và tôi sẽ chuyển đổi nó,
+
+32
+00:01:28,610 --> 00:01:29,855
+và nó bằng Q trừ cho giá trị trung bình của sự phân phát chia cho
+
+33
+00:01:29,855 --> 00:01:30,938
+độ lệch chuẩn.
+
+34
+00:01:30,938 --> 00:01:38,130
+
+
+35
+00:01:38,130 --> 00:01:41,120
+Đây là trang tính, dù là Excel hay LibreOffice cũng được,
+
+36
+00:01:41,120 --> 00:01:44,650
+hàm chỉ là hàm Norm S nghịch đảo của Tỷ lệ Quan trọng
+
+37
+00:01:44,650 --> 00:01:47,480
+và nó sẽ cho bạn giá trị k.
+
+38
+00:01:47,480 --> 00:01:50,630
+Bây giờ, hàm Mất mát thông thường theo đơn vị trông có vẻ phức tạp
+
+39
+00:01:50,630 --> 00:01:52,700
+và nó luôn khiến học sinh bối rối 
+
+40
+00:01:52,700 --> 00:01:55,000
+trong lần đầu sử dụng.
+
+41
+00:01:55,000 --> 00:01:57,370
+Nó chính là--
+
+42
+00:01:57,370 --> 00:01:59,366
+bạn có thể xem xét G(k) này và nó thật sự
+
+43
+00:01:59,366 --> 00:02:02,466
+hàm mật độ xác suất trừ cho k rồi nhân với
+
+44
+00:02:02,466 --> 00:02:03,799
+hàm mật độ tích lũy.
+
+45
+00:02:03,799 --> 00:02:09,680
+
+
+46
+00:02:09,680 --> 00:02:11,910
+Trong trang tính, tôi có thể tạo ra hàm này
+
+47
+00:02:11,910 --> 00:02:14,030
+với biểu thức đơn giản này,
+
+48
+00:02:14,030 --> 00:02:17,010
+cho dù đó là LibreOffice hay Excel, bạn có thể cắm
+
+49
+00:02:17,010 --> 00:02:19,960
+nó vào bảng tính và sẽ luôn tính được
+
+50
+00:02:19,960 --> 00:02:24,190
+giá trị của G(k) theo k đã cho.
+
+51
+00:02:24,190 --> 00:02:26,000
+Nhưng tôi cũng có thể sử dụng các bảng.
+
+52
+00:02:26,000 --> 00:02:28,120
+Trong các bảng tiêu chuẩn thông thường chúng tôi
+
+53
+00:02:28,120 --> 00:02:32,050
+cung cấp cho bạn, chúng tôi không chỉ cung cấp cho bạn xác suất
+
+54
+00:02:32,050 --> 00:02:36,040
+rằng X nhỏ hơn k, mà chúng ta đã sử dụng để tìm ra
+
+55
+00:02:36,040 --> 00:02:40,190
+các Tỷ lệ Tới hạn, chúng tôi cũng cung cấp cho bạn một cột, G(k),
+
+56
+00:02:40,190 --> 00:02:41,950
+đó là Lỗ thông thường theo đơn vị.
+
+57
+00:02:41,950 --> 00:02:45,760
+Hãy làm một ví dụ đơn giản để minh họa cách sử dụng điều này.
+
+58
+00:02:45,760 --> 00:02:49,620
+Giả sử tôi đã có cầu của tôi và nó được phân phối bình thường.
+
+59
+00:02:49,620 --> 00:02:51,550
+Vẽ một hình vẽ nhỏ ở đây.
+
+60
+00:02:51,550 --> 00:02:54,460
+Và giá trị trung bình là 160.
+
+61
+00:02:54,460 --> 00:02:57,530
+Và độ lệch chuẩn của tôi là 45 đơn vị.
+
+62
+00:02:57,530 --> 00:03:04,540
+Và giả sử tôi đã đặt mua Q và Q của tôi là 190 đơn vị.
+
+63
+00:03:04,540 --> 00:03:07,270
+Tôi muốn biết các đơn vị dự kiến
+
+64
+00:03:07,270 --> 00:03:09,295
+mà tôi sẽ thiếu cho mỗi chu kỳ bổ sung là bao nhiêu.
+
+65
+00:03:09,295 --> 00:03:11,090
+Tôi tìm ra điều này như thế nào?
+
+66
+00:03:11,090 --> 00:03:12,610
+Bước đầu tiên là tìm k.
+
+67
+00:03:12,610 --> 00:03:14,110
+Tôi muốn biến đổi nó.
+
+68
+00:03:14,110 --> 00:03:22,164
+k của tôi sẽ bằng Q của tôi trừ đi giá trị trung bình, mu.
+
+69
+00:03:22,164 --> 00:03:23,580
+Và sau đó, nó sẽ được chia cho
+
+70
+00:03:23,580 --> 00:03:25,850
+độ lệch chuẩn.
+
+71
+00:03:25,850 --> 00:03:29,190
+190 trừ 160, và chia cho 45,
+
+72
+00:03:29,190 --> 00:03:32,420
+và tôi có k bằng 0,67.
+
+73
+00:03:32,420 --> 00:03:35,600
+Tôi nhìn vào bảng của tôi, tìm 0,67.
+
+74
+00:03:35,600 --> 00:03:36,220
+Đây rồi.
+
+75
+00:03:36,220 --> 00:03:38,940
+Nó ở ngay đây.
+
+76
+00:03:38,940 --> 00:03:46,910
+Và tôi thấy rằng G(k) của tôi, nhìn xuống cột này, là 0,1503.
+
+77
+00:03:46,910 --> 00:03:51,050
+Tôi biết cho các Phân phối Thông thường theo đơn vị
+
+78
+00:03:51,050 --> 00:03:55,690
+sẽ là thiếu 0,15 đơn vị hay 0,1503.
+
+79
+00:03:55,690 --> 00:03:58,950
+Tôi nhân với độ lệch chuẩn của cầu
+
+80
+00:03:58,950 --> 00:04:03,550
+sigma, và có được 6,76.
+
+81
+00:04:03,550 --> 00:04:06,600
+Với ví dụ đơn giản này, tôi biết rằng
+
+82
+00:04:06,600 --> 00:04:11,400
+nếu cầu của tôi được phân phối Thông thường với trung bình là 160
+
+83
+00:04:11,400 --> 00:04:15,720
+và độ lệch chuẩn là 45 và tôi có 190 đơn vị được đặt mua mỗi lần
+
+84
+00:04:15,720 --> 00:04:18,329
+hoặc mua trực tiếp, thì tôi có thể mong đợi
+
+85
+00:04:18,329 --> 00:04:23,250
+thiếu hụt 6,76 đơn vị mỗi lần Bổ sung Chu kỳ.
+
+86
+00:04:23,250 --> 00:04:25,130
+Đó là cách bạn có thể tính toán bằng cách sử dụng
+
+87
+00:04:25,130 --> 00:04:27,940
+các bảng để tìm G(k) hoặc Lỗ Thông thường theo đơn vị của bạn
+
+88
+00:04:27,940 --> 00:04:30,830
+và biến nó thành đơn vị thiếu hụt dự kiến.
+
+89
+00:04:30,830 --> 00:04:32,560
+Giờ hãy áp dụng tất cả những điều này
+
+90
+00:04:32,560 --> 00:04:35,320
+để giải quyết bài toán NFL Jersey.
+

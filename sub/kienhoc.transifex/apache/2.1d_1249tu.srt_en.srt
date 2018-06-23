@@ -1,0 +1,693 @@
+0
+00:00:00,000 --> 00:00:00,700
+https://youtu.be/E3cYWUxzyVA
+
+1
+00:00:00,700 --> 00:00:03,700
+SPEAKER: As we saw in last week's lecture,
+
+2
+00:00:03,700 --> 00:00:07,920
+there are a couple of important data management concepts.
+
+3
+00:00:07,920 --> 00:00:11,370
+The first is a data model, which is a collection of concepts
+
+4
+00:00:11,370 --> 00:00:13,050
+for describing data.
+
+5
+00:00:13,050 --> 00:00:14,500
+And the second is a schema, which
+
+6
+00:00:14,500 --> 00:00:17,060
+is a description of a particular collection of data
+
+7
+00:00:17,060 --> 00:00:20,310
+using a given data model.
+
+8
+00:00:20,310 --> 00:00:23,110
+Today, we'll talk about a relational data
+
+9
+00:00:23,110 --> 00:00:26,860
+model, which is the most widely used data model.
+
+10
+00:00:26,860 --> 00:00:30,010
+Now, a relation is a table with rows and columns.
+
+11
+00:00:30,010 --> 00:00:32,180
+And every relation has a schema that defines
+
+12
+00:00:32,180 --> 00:00:35,140
+the fields in the column.
+
+13
+00:00:35,140 --> 00:00:38,230
+So in this lecture, we're going to look at structured data.
+
+14
+00:00:38,230 --> 00:00:40,830
+And this includes things like relational databases
+
+15
+00:00:40,830 --> 00:00:43,940
+and formatted messages.
+
+16
+00:00:43,940 --> 00:00:46,805
+Now for a relational database, we need some definitions.
+
+17
+00:00:46,805 --> 00:00:49,760
+A relational database is a set of relations.
+
+18
+00:00:49,760 --> 00:00:52,140
+And there are two parts to a relation.
+
+19
+00:00:52,140 --> 00:00:53,850
+The first part is a schema, which
+
+20
+00:00:53,850 --> 00:00:56,050
+specifies the name of the relation
+
+21
+00:00:56,050 --> 00:00:58,770
+plus each column's name and type.
+
+22
+00:00:58,770 --> 00:01:01,660
+So here we have an example of a student's relation.
+
+23
+00:01:01,660 --> 00:01:06,840
+And it has three columns that are strings named sid, name,
+
+24
+00:01:06,840 --> 00:01:07,980
+and email.
+
+25
+00:01:07,980 --> 00:01:11,430
+And one column that's an integer named age.
+
+26
+00:01:11,430 --> 00:01:15,830
+And one column that's a real value named gpa.
+
+27
+00:01:15,830 --> 00:01:18,870
+The second part to a relation is the instance.
+
+28
+00:01:18,870 --> 00:01:22,120
+This is the actual data at any given time.
+
+29
+00:01:22,120 --> 00:01:24,030
+And it consists of a number of rows,
+
+30
+00:01:24,030 --> 00:01:26,830
+that's the cardinality, and a number of fields,
+
+31
+00:01:26,830 --> 00:01:30,050
+and that's the degree.
+
+32
+00:01:30,050 --> 00:01:31,780
+So what is a database?
+
+33
+00:01:31,780 --> 00:01:36,770
+A database is a large collection of organized data.
+
+34
+00:01:36,770 --> 00:01:40,170
+Transactions are typically used to modify the data.
+
+35
+00:01:40,170 --> 00:01:43,070
+Now, database models the real world.
+
+36
+00:01:43,070 --> 00:01:44,970
+For example, an enterprise.
+
+37
+00:01:44,970 --> 00:01:48,970
+It consists of entities, things like teams and games,
+
+38
+00:01:48,970 --> 00:01:51,200
+and relationships, things like "A"
+
+39
+00:01:51,200 --> 00:01:55,970
+plays against "B" in the World Cup.
+
+40
+00:01:55,970 --> 00:01:57,650
+Now, what's a large database?
+
+41
+00:01:57,650 --> 00:02:01,420
+Well, here are several examples of large databases,
+
+42
+00:02:01,420 --> 00:02:05,000
+ranging from 150 terabytes for the US Internal Revenue
+
+43
+00:02:05,000 --> 00:02:09,810
+Service, to over 2 petabytes for Yahoo's click data.
+
+44
+00:02:09,810 --> 00:02:13,360
+Now for each of these databases, what actually matters?
+
+45
+00:02:13,360 --> 00:02:14,790
+Well, it depends.
+
+46
+00:02:14,790 --> 00:02:17,520
+For the US Internal Revenue Service,
+
+47
+00:02:17,520 --> 00:02:21,850
+they care about accuracy, consistency, durability,
+
+48
+00:02:21,850 --> 00:02:25,040
+and the ability to perform rich queries.
+
+49
+00:02:25,040 --> 00:02:27,580
+The Australian Bureau of Statistics
+
+50
+00:02:27,580 --> 00:02:31,710
+cares about fast and rich queries.
+
+51
+00:02:31,710 --> 00:02:37,050
+AT&T cares about accuracy, consistency, and durability.
+
+52
+00:02:37,050 --> 00:02:40,000
+And eBay and Yahoo both care about availability
+
+53
+00:02:40,000 --> 00:02:40,625
+and timeliness.
+
+54
+00:02:40,625 --> 00:02:43,630
+
+55
+00:02:43,630 --> 00:02:46,500
+So here's an example of an instance
+
+56
+00:02:46,500 --> 00:02:48,760
+of a student's relation.
+
+57
+00:02:48,760 --> 00:02:52,420
+Again, we have five columns, three
+
+58
+00:02:52,420 --> 00:02:55,840
+are strings-- sid, name, and login.
+
+59
+00:02:55,840 --> 00:02:58,530
+One is an integer-- age.
+
+60
+00:02:58,530 --> 00:03:03,110
+And the last column is a real value, the gpa.
+
+61
+00:03:03,110 --> 00:03:04,770
+So we have five columns.
+
+62
+00:03:04,770 --> 00:03:06,535
+That gives us Degree 5.
+
+63
+00:03:06,535 --> 00:03:07,970
+And we have three rows.
+
+64
+00:03:07,970 --> 00:03:10,290
+That gives us Cardinality 3.
+
+65
+00:03:10,290 --> 00:03:13,225
+And notice that all of the rows, the tuples, are distinct.
+
+66
+00:03:13,225 --> 00:03:16,490
+
+67
+00:03:16,490 --> 00:03:18,960
+We have a table name, that's Students.
+
+68
+00:03:18,960 --> 00:03:22,300
+We have attributes, that's the name of each column.
+
+69
+00:03:22,300 --> 00:03:25,650
+And each of those rows is a row or a tuple.
+
+70
+00:03:25,650 --> 00:03:28,280
+
+71
+00:03:28,280 --> 00:03:31,250
+So the Structured Query Language is the language
+
+72
+00:03:31,250 --> 00:03:34,320
+that we use for relational databases.
+
+73
+00:03:34,320 --> 00:03:36,980
+And it's supported by Spark DataFrames.
+
+74
+00:03:36,980 --> 00:03:39,160
+And it's called SparksSQL.
+
+75
+00:03:39,160 --> 00:03:41,530
+Now, some of the functionality that SQL provides
+
+76
+00:03:41,530 --> 00:03:46,420
+includes the ability to create, modify, and delete relations
+
+77
+00:03:46,420 --> 00:03:49,610
+and to add, modify, or remove tuples.
+
+78
+00:03:49,610 --> 00:03:52,040
+You can also specify queries to find tuples
+
+79
+00:03:52,040 --> 00:03:55,510
+matching a given criteria.
+
+80
+00:03:55,510 --> 00:03:58,070
+So here's an example of a query in SQL.
+
+81
+00:03:58,070 --> 00:03:59,930
+And this should look very familiar to what
+
+82
+00:03:59,930 --> 00:04:02,740
+we saw in the last lecture.
+
+83
+00:04:02,740 --> 00:04:06,300
+So for single-table queries, it's very straightforward.
+
+84
+00:04:06,300 --> 00:04:08,780
+So let's find all of the 18-year-old students.
+
+85
+00:04:08,780 --> 00:04:13,470
+To do that, we can write Select * FROM Students S,
+
+86
+00:04:13,470 --> 00:04:14,150
+WHERE S.age=18.
+
+87
+00:04:14,150 --> 00:04:17,620
+
+88
+00:04:17,620 --> 00:04:22,890
+So this is going to use a column, age, and filter all
+
+89
+00:04:22,890 --> 00:04:27,780
+of the values that match exactly, 18,
+
+90
+00:04:27,780 --> 00:04:33,150
+and return all of the columns for those matching rows.
+
+91
+00:04:33,150 --> 00:04:35,980
+Now to find just names and logins,
+
+92
+00:04:35,980 --> 00:04:43,025
+we could instead SELECT S.name and S.login from Students S,
+
+93
+00:04:43,025 --> 00:04:43,650
+WHERE S.age=18.
+
+94
+00:04:43,650 --> 00:04:46,630
+
+95
+00:04:46,630 --> 00:04:52,950
+This will now just return those rows, WHERE age=18,
+
+96
+00:04:52,950 --> 00:04:54,940
+but only the columns name and login.
+
+97
+00:04:54,940 --> 00:04:58,380
+
+98
+00:04:58,380 --> 00:05:01,780
+We can query multiple relations.
+
+99
+00:05:01,780 --> 00:05:05,180
+So here we have two tables.
+
+100
+00:05:05,180 --> 00:05:10,780
+We have an Enrolled table that consists of three columns--
+
+101
+00:05:10,780 --> 00:05:15,180
+sid, class id, and grade.
+
+102
+00:05:15,180 --> 00:05:20,780
+We have a Students table that consists of five columns-- sid,
+
+103
+00:05:20,780 --> 00:05:25,420
+name, login, age, and gpa.
+
+104
+00:05:25,420 --> 00:05:30,130
+Now, we want to find all of the students
+
+105
+00:05:30,130 --> 00:05:35,160
+where the sid is the same in the Students table and the Enrolled
+
+106
+00:05:35,160 --> 00:05:36,180
+table.
+
+107
+00:05:36,180 --> 00:05:38,280
+To do that, we'll use a join.
+
+108
+00:05:38,280 --> 00:05:43,700
+So here, we're going to SELECT S.name and E.cid
+
+109
+00:05:43,700 --> 00:05:47,160
+because we just care about the name and classid columns.
+
+110
+00:05:47,160 --> 00:05:51,300
+And we're going to do that from our two tables, Students, S,
+
+111
+00:05:51,300 --> 00:05:59,230
+and Enrolled, E, where we have matching sids in both tables.
+
+112
+00:05:59,230 --> 00:06:02,480
+So to do this, we first logically combine the two
+
+113
+00:06:02,480 --> 00:06:08,100
+tables, S and E. So we produce the Cartesian product
+
+114
+00:06:08,100 --> 00:06:09,970
+of these two tables.
+
+115
+00:06:09,970 --> 00:06:12,230
+And here's an example of that.
+
+116
+00:06:12,230 --> 00:06:16,700
+So notice at this table has all of the columns from both E
+
+117
+00:06:16,700 --> 00:06:20,610
+and from S and rows that we've created
+
+118
+00:06:20,610 --> 00:06:23,780
+through the Cartesian product.
+
+119
+00:06:23,780 --> 00:06:28,270
+Now, we can just choose the matching rows
+
+120
+00:06:28,270 --> 00:06:30,180
+by using our WHERE clause.
+
+121
+00:06:30,180 --> 00:06:35,680
+So this is where the S.sid is equivalent to the E.sid.
+
+122
+00:06:35,680 --> 00:06:38,810
+
+123
+00:06:38,810 --> 00:06:41,660
+Then, we can filter the columns from those matching
+
+124
+00:06:41,660 --> 00:06:46,780
+rows using the SELECT clause of S.name and E.cid.
+
+125
+00:06:46,780 --> 00:06:49,450
+
+126
+00:06:49,450 --> 00:06:51,770
+And then we can return the result.
+
+127
+00:06:51,770 --> 00:06:55,950
+So in this case, the result is a table consisting
+
+128
+00:06:55,950 --> 00:06:58,610
+of two rows and two columns.
+
+129
+00:06:58,610 --> 00:07:02,270
+The columns are S.name and E.cid.
+
+130
+00:07:02,270 --> 00:07:05,270
+And the rows are Jones and History 105
+
+131
+00:07:05,270 --> 00:07:10,230
+and Smith and Physics 203.
+
+132
+00:07:10,230 --> 00:07:13,060
+So there are two different types of joins.
+
+133
+00:07:13,060 --> 00:07:16,490
+There are explicit joins, and in this case
+
+134
+00:07:16,490 --> 00:07:18,730
+we explicitly say we want to perform
+
+135
+00:07:18,730 --> 00:07:22,810
+a join between these two tables, S and E.
+
+136
+00:07:22,810 --> 00:07:25,810
+So here we SELECT the name column
+
+137
+00:07:25,810 --> 00:07:31,180
+from S and the classid column from E.
+
+138
+00:07:31,180 --> 00:07:36,200
+And we take that FROM Students S INNER JOIN with Enrolled
+
+139
+00:07:36,200 --> 00:07:42,540
+E ON S.sid equal to E.sid.
+
+140
+00:07:42,540 --> 00:07:45,600
+So we get the same results as we did last time.
+
+141
+00:07:45,600 --> 00:07:48,880
+You can see that we have now two columns in the result, name
+
+142
+00:07:48,880 --> 00:07:50,160
+and classid.
+
+143
+00:07:50,160 --> 00:07:54,376
+And the rows consist of those students where their sid in S
+
+144
+00:07:54,376 --> 00:08:01,990
+also appears in E. So these are equivalent notations.
+
+145
+00:08:01,990 --> 00:08:05,010
+But the explicit join notation is preferred.
+
+146
+00:08:05,010 --> 00:08:09,030
+So to either say INNER JOIN or to say JOIN explicitly,
+
+147
+00:08:09,030 --> 00:08:11,680
+as opposed to just simply using a WHERE clause where
+
+148
+00:08:11,680 --> 00:08:13,940
+the join notation is implicit.
+
+149
+00:08:13,940 --> 00:08:15,840
+That type of notation is actually deprecated.
+
+150
+00:08:15,840 --> 00:08:19,590
+
+151
+00:08:19,590 --> 00:08:22,380
+So there are other types of joins.
+
+152
+00:08:22,380 --> 00:08:27,050
+And the type of join controls how we handle unmatched keys.
+
+153
+00:08:27,050 --> 00:08:31,580
+So here, we have two tables, like before, S and E.
+
+154
+00:08:31,580 --> 00:08:39,090
+And we're performing an INNER JOIN where S.sid equals E.sid.
+
+155
+00:08:39,090 --> 00:08:46,960
+And notice that in the S table for Brown that sid, 33333,
+
+156
+00:08:46,960 --> 00:08:54,490
+and in the E table for English 10, 44444,
+
+157
+00:08:54,490 --> 00:08:57,690
+does not appear in the other table.
+
+158
+00:08:57,690 --> 00:08:59,902
+So these are unmatched keys.
+
+159
+00:08:59,902 --> 00:09:03,100
+When we have unmatched keys with an INNER JOIN,
+
+160
+00:09:03,100 --> 00:09:05,890
+we just simply drop those rows.
+
+161
+00:09:05,890 --> 00:09:07,920
+So we can see in our result we only
+
+162
+00:09:07,920 --> 00:09:10,730
+have entries for those keys where
+
+163
+00:09:10,730 --> 00:09:13,805
+the sid appears in both tables.
+
+164
+00:09:13,805 --> 00:09:16,590
+
+165
+00:09:16,590 --> 00:09:20,720
+With a LEFT OUTER JOIN, we take keys
+
+166
+00:09:20,720 --> 00:09:24,800
+that are unmatched from the left table.
+
+167
+00:09:24,800 --> 00:09:27,690
+So here are students S LEFT OUTER JOIN
+
+168
+00:09:27,690 --> 00:09:32,840
+with Enrolled E for that unmatched row, Brown,
+
+169
+00:09:32,840 --> 00:09:37,090
+we take that row and that row appears in the result.
+
+170
+00:09:37,090 --> 00:09:42,930
+Now, since there's no matching E.sid, the value for that cell
+
+171
+00:09:42,930 --> 00:09:47,950
+is going to be 0 for the E.classid.
+
+172
+00:09:47,950 --> 00:09:51,960
+
+173
+00:09:51,960 --> 00:09:56,580
+With a RIGHT OUTER JOIN, in this case
+
+174
+00:09:56,580 --> 00:10:02,830
+for our row with English 10, there is no matching S.name,
+
+175
+00:10:02,830 --> 00:10:06,390
+and so that cell will be NULL.
+

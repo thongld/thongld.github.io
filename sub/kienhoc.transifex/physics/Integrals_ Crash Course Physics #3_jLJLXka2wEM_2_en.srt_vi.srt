@@ -1,0 +1,571 @@
+1
+00:00:02,940 --> 00:00:06,379
+HuuHuan 10/11/2016
+Nếu bạn đã xem phần trước
+và thực sự, nếu chưa, bạn nên xem ngay.
+
+2
+00:00:06,379 --> 00:00:11,000
+...giờ bạn đã biết mọi thứ về đạo hàm và làm thế nào để sử dụng chúng để mô tả cách một phương trình thay đổi.
+
+3
+00:00:11,000 --> 00:00:14,439
+Vậy có nghĩa là giờ ta có thể nói về một phần chủ yếu khác của giải tích -- về cơ bản,
+
+4
+00:00:14,448 --> 00:00:16,609
+nghịch đảo của đạo hàm được gọi là tích phân
+
+5
+00:00:16,609 --> 00:00:21,310
+Tích phân rất hữu dụng vì chúng cho ta biết rất nhiều về một phương trình: nếu bạn biểu diễn
+
+6
+00:00:21,309 --> 00:00:26,169
+một phương trình trên đồ thị, tích phân sẽ bằng với khu vực giữa đường cong và trục hoành.
+
+7
+00:00:26,170 --> 00:00:30,880
+Tìm một tích phân thì không dễ dàng như tìm một đạo hàm vì với đạo hàm
+
+8
+00:00:30,890 --> 00:00:33,929
+ta có nhiều cách làm tắt mà có thể làm mọi thứ dễ dàng hơn một chút.
+
+9
+00:00:33,929 --> 00:00:37,619
+Thậm chí ta còn có thẻ dùng tích phân khi nói về sự chuyển động của một vật -- cụ thể là,
+
+10
+00:00:37,619 --> 00:00:41,519
+trong phương trình mà ta gọi là đường cong hoán vị, và tại sao nó có hình dạng như vậy.
+
+11
+00:00:41,520 --> 00:00:42,900
+Vậy hãy bắt đầu nào.
+
+12
+00:00:42,899 --> 00:00:52,399
+[Nhạc nền]
+
+13
+00:00:52,399 --> 00:00:56,539
+Giả sử bạn muốn biết cửa sổ phòng ngủ của mình cao hơn mắt đất bên ngoài bao nhiêu.
+
+14
+00:00:56,539 --> 00:00:58,719
+Nhưng bạn lại không có thứ gì khác để đo -- 
+
+15
+00:00:58,719 --> 00:01:02,498
+ngoài một trái bóng, đồng hồ bấm giờ từ điện thoại và kiến thức đáng kinh ngạc về vật lý.
+
+16
+00:01:02,499 --> 00:01:05,159
+Lực hấp dẫn là thứ làm trái bóng rơi,
+
+17
+00:01:05,159 --> 00:01:10,439
+vậy bạn biết rằng gia tốc g chỉ nhỏ ở mức 9.81 ms^2, từ trên xuống.
+
+18
+00:01:10,439 --> 00:01:14,340
+Nhưng bạn lại đang tìm sự thay đổi về vị trí của nó --nó đã rơi được bao xa.
+
+19
+00:01:14,340 --> 00:01:17,960
+Ta đã dành rất nhiều thời gian để bàn luận về mối quan hệ giữa các đặc tính của sự chuyển động:
+
+20
+00:01:17,959 --> 00:01:20,159
+vị trí, vận tốc và gia tốc.
+
+21
+00:01:20,159 --> 00:01:26,939
+Nhưng cho đến nay, ta chỉ mô tả mối quan hệ này theo một chiều hướng duy nhất: vận tốc là đạo hàm của vị trí
+
+22
+00:01:26,939 --> 00:01:31,700
+đó là cách đo lường sự thay đổi của nó và gia tốc là đạo hàm của vận tốc.
+
+23
+00:01:31,700 --> 00:01:36,000
+Để tìm ra quả bóng đã rơi bao xa, bạn cần sử dụng nghịc đảo của mối quan hệ này.
+
+24
+00:01:36,000 --> 00:01:39,540
+Thể hiện một cách toán học, vậy có nghĩa là vận tốc là tích phân của gia tốc,
+
+25
+00:01:39,540 --> 00:01:41,530
+và vị trí là tích phân của vận tốc.
+
+26
+00:01:41,530 --> 00:01:46,140
+Nói một cách khác: nếu bạn biểu diễn những đồ thị trên biểu đồ, vận tốc tương đương với vùng
+
+27
+00:01:46,140 --> 00:01:50,719
+dưới đường gia tốc, và vị trí tương đương với vùng dưới đường vận tốc.
+
+28
+00:01:50,719 --> 00:01:53,000
+Tìm được vùng này là một phần rất khó.
+
+29
+00:01:53,009 --> 00:01:56,849
+Có những cách đơn giản hơn để tìm được những vùng này của gần như bất kỳ hình nào, với điều kiện là hình đó
+
+30
+00:01:56,849 --> 00:01:59,199
+được tạo nên chỉ bằng các đường thẳng và góc.
+
+31
+00:01:59,200 --> 00:02:03,240
+Và khi bạn nghĩ về nó, một đường cong là một tập hợp của các đường thẳng vô cùng nhỏ.
+
+32
+00:02:03,239 --> 00:02:08,139
+Vậy nên vùng dưới đường cong có thể được chia thành tập hợp vô số hình chữ nhật vô cùng nhỏ.
+
+33
+00:02:08,139 --> 00:02:12,539
+Tích phân cho bạn biết điều gì diễn ra khi bạn chia vùng dưới đường cong thành vô số 
+
+34
+00:02:12,539 --> 00:02:16,799
+những hình chữ nhật nhỏ, lấy những vùng này và gộp chúng lại.
+
+35
+00:02:16,800 --> 00:02:18,600
+Vậy, bạn tìn những tích phân này như thế nào?
+
+36
+00:02:18,610 --> 00:02:23,170
+Vâng, bạn bắt đầu bằng cách áp dụng thực tế là tích phân cơ bản là đảo nghịch của đạo hàm. 
+
+37
+00:02:23,169 --> 00:02:28,869
+Ví dụ, nếu bạn biết rằng vận tốc của bạn bằng với hai lần thời gian, thì bạn sẽ biết đó là đạo hàm của vị trí này.
+
+38
+00:02:28,870 --> 00:02:36,500
+Vậy, để tìm được phương trình của một vị trí, bạn chỉ cần tìm một phương trình mà đạo hàm của nó là 2t ... ví dụ như là x = t ^ 2.
+
+
+39
+00:02:36,500 --> 00:02:42,479
+Đây như là một cách đi đường vòng để giải, so với các phương trình đơn thuần mà ta có thể sử dụng để tìm các đạo hàm.
+
+40
+00:02:42,479 --> 00:02:46,659
+Nhưng thực tế lại không có những phương trình đơn thuần như vậy để ta có thể sử dụng để tính ra bất kì tích phân nào ta muốn.
+
+41
+00:02:46,659 --> 00:02:53,000
+Nhưng! Với đạo hàm, có những cách làm tắt để tìm những phương trình nhất định và hữu dụng
+
+42
+00:02:53,000 --> 00:02:57,340
+Ví dụ, bạn có thể lấy quy tắc lũy thừa mà ta dùng với đạo hàm và khai triển nó ngược lại.
+
+43
+00:02:57,340 --> 00:03:01,000
+Về cơ bản: bạn cộng một vào số mũ, rồi lấy biến số chia cho số mũ đó.
+
+44
+00:03:01,009 --> 00:03:05,530
+Vậy tích phân của 2t -- được viết như trên -- sẽ trở thành t^2
+
+45
+00:03:05,530 --> 00:03:10,640
+Cũng với cách này, tích phân của 42t^5 là 7t^6.
+
+46
+00:03:10,639 --> 00:03:15,199
+Bạn cũng có thể lấy đạo hàm lượng giác mà ta đã trao đổi trước đây và đảo ngược chúng lại.
+
+47
+00:03:15,199 --> 00:03:21,799
+tích phân của cos(x) là sin(x) và tương tự như vậy. Tích phân của e^x thì chỉ là e^x.
+
+48
+00:03:21,800 --> 00:03:27,460
+Nhưng có một phần phức tạp nữa mà ta vẫn chưa nói tới -- chắc bạn đã đoán ra rồi: là hằng số.
+
+49
+00:03:27,469 --> 00:03:34,560
+Hằng số về cơ bản chỉ là một con số. Nó có thể đơn thuần là một con số -- như 2 hoặc 1/2 hoặc âm 4.
+
+50
+00:03:34,560 --> 00:03:40,379
+Hoặc nó có thể là ký hiệu của một con số cố định, như là g mà ta đã sử dụng để thể hiện lực gia tốc tạo ra bởi trọng lực.
+
+51
+00:03:40,379 --> 00:03:46,280
+Hằng số là một vấn đề trong tích phân vì: đạo hàm của một hằng số chỉ là 0.
+
+52
+00:03:46,280 --> 00:03:50,628
+Xét cho cùng đạo hàm thể hiện tỉ lệ biến thiên, mà theo định nghĩa thì một hằng số là KHÔNG ĐỔI
+
+53
+00:03:50,628 --> 00:03:53,609
+và luôn có đạo hàm bằng 0.
+
+54
+00:03:53,610 --> 00:03:59,400
+Vậy nghĩa là rất nhiều phương trình khác nhau - thực tế là vô số - có thể đều có chung một đạo hàm.
+
+55
+00:03:59,400 --> 00:04:04,408
+Ví dụ,  đạo hàm của t^2 là 2t. Nhưng bạn có thể thêm BẤT KỲ số -- hoặc một chữ cái thể hiện
+
+56
+00:04:04,408 --> 00:04:10,709
+một con số -- vào đây và đạo hàm VẪN là 2t. Vậy nên đạo hàm của t62 + 1
+
+57
+00:04:10,709 --> 00:04:14,340
+cũng là 2t. Và điều tương tự cũng đúng với t^2 - 7.
+
+58
+00:04:14,340 --> 00:04:19,120
+Vậy có nghĩa là: Nếu bạn tìm một tích phân của một phương trình như x = 2t, bạn sẽ có VÔ SỐ
+
+59
+00:04:19,120 --> 00:04:21,259
+lựa chọn, tất cả chúng đều đúng.
+
+60
+00:04:21,259 --> 00:04:28,099
+t^2 có thể đúng, nhưng t^2 + 1 ... hoặc t^2 - 7 ... hoặc t^2 + 0.256 cũng vậy .
+
+61
+00:04:28,100 --> 00:04:32,200
+Trong trường hợp này, ta đã có thể biết được hình dạng của tích phân trông như thế nào trên đồ thị.
+
+62
+00:04:32,199 --> 00:04:37,879
+dù nó là một đường thẳng, hoặc cong thế nào ta vẫn không thể biết được đặt nó ở đâu trên đường trục tung.
+
+63
+00:04:37,879 --> 00:04:42,339
+Vậy nên ta cần biết rõ hằng số đó là gì, để biết được phải bắt đầu biểu diễn tích phân của nó.
+
+64
+00:04:42,350 --> 00:04:46,540
+Cho dù hằng số đó là gì, đó chính là nơi đường đồ thị cắt trục tung
+
+65
+00:04:46,540 --> 00:04:53,819
+Vậy t^2 sẽ giao tại gốc tọa độ 0, nhưng t^2 - 7 sẽ giao tại -7. 
+
+66
+00:04:53,829 --> 00:04:57,550
+Các nhà toán học đã phải tìm ra cách để xử lý vấn đề các tích phân vô số các tích phân 
+
+67
+00:04:57,550 --> 00:05:03,350
+để lựa chọn, nên họ đưa ra một cách để thể hiện cho tất cả chúng: chỉ cần thêm C vào cuối của tích phân.
+
+68
+00:05:03,350 --> 00:05:07,140
+Chữ C này đại điện cho tất cả các hằng số mà ta có thể đặt tại đó.
+
+69
+00:05:07,139 --> 00:05:11,259
+Vậy nếu ta nói rằng tích phân của 2t là t^2+ C,
+
+70
+00:05:11,259 --> 00:05:16,879
+thì ta cũng bao gồm cả t^2 + 1 và t^2 - 7 và tất cả các tùy chọn vô hạn khác
+
+71
+00:05:16,879 --> 00:05:19,199
+mỗi phương trình mà đạo hàm là 2t.
+
+72
+00:05:19,199 --> 00:05:22,539
+Nhưng đôi khi bạn không cần C, vì bạn CÓ THỂ tìm ra tích phân  
+
+73
+00:05:22,540 --> 00:05:25,870
+sẽ nằm ở đâu trên trục y. Như là khi bạn có thứ được biết tới như là giá trí khởi đầu
+
+74
+00:05:25,870 --> 00:05:30,180
+Ví dụ, trong trường hợp một đồ thị vị trí, giá trị khởi đầu sẽ là điểm bạn bắt đầu vẽ,
+
+75
+00:05:30,180 --> 00:05:33,319
+vậy nên bạn có thể sẽ vẽ được toàn bộ hình đồ thị từ đây.
+
+76
+00:05:33,319 --> 00:05:37,659
+Nếu bạn bắt đầu từ điểm 2 mét và tiến thêm 1 mét mỗi giây, 
+
+77
+00:05:37,660 --> 00:05:42,700
+bạn sẽ có điểm cuối đồ thị tại đây.  Nhưng nếu bạn bắt đầu tại điểm 4 mét, đồ thị sẽ dịch chuyển một chút.
+
+78
+00:05:42,699 --> 00:05:48,199
+Về cơ bản, nó cho bạn biết điểm mà tích phân giao với trục y -- và cũng là giá trị của C.
+
+79
+00:05:48,199 --> 00:05:52,479
+Hãy thử nó, và cùng lúc, ta có thể sẽ tìm ra chiều cao của của sổ phòng ngủ.
+
+80
+00:05:52,480 --> 00:05:56,720
+Bạn đứng ở trong phòng, giữ một trái bóng tennis dơ ra ngoài cửa sổ với cánh tay giữ nguyên trên bệ cửa.
+
+81
+00:05:56,720 --> 00:05:59,740
+Bây giờ hãy thả quả bóng và đồng thời khởi động đồng hồ đếm giờ.
+
+82
+00:05:59,740 --> 00:06:03,379
+Tính ra là trái bóng mất 1.7 giây để chạm mặt đất.
+
+83
+00:06:03,379 --> 00:06:09,860
+Như đã nói, ta biết gia tốc của trái bóng là 9.81ms^2 và  ta biết thời gian liên quan.
+
+84
+00:06:09,860 --> 00:06:13,560
+Bằng cách nào đó, ta phải đi từ đây tới đồ thị vị trí của quả bóng.
+
+85
+00:06:13,560 --> 00:06:18,379
+Vậy, đầu tiên, hãy tìm vận tốc -- bước ở giữa -- bằng cách lấy tích phân gia tốc của nó.
+
+86
+00:06:18,379 --> 00:06:21,100
+Hãy nhìn vào đồ thị gia tốc của trái bóng qua toàn bộ quá trình.
+
+87
+00:06:21,100 --> 00:06:26,340
+Nó chỉ là một đường thẳng, có nghĩa là rất dễ đẻ tìm ra khoảng giữa nó và trục hoành.
+
+88
+00:06:26,350 --> 00:06:30,640
+Đó chính là hình chữ nhật! Và diện tích hình chữ nhật là lấy đáy nhân chiều cao của nó.
+
+89
+00:06:30,639 --> 00:06:34,379
+Trong trường hợp này, đáy là t, chính là khoảng thời gian trái bóng cần để chạm đất.
+
+90
+00:06:34,379 --> 00:06:36,659
+Và chiều cao là a, lực gia tốc.
+
+91
+00:06:36,660 --> 00:06:41,400
+Vậy, khoảng giữa đồ thị gia tốc và trục hoành là (a) lần (t).
+
+92
+00:06:41,399 --> 00:06:44,939
+Và tích phân là (a) lần (t), thêm vào hằng số, ta viết C.
+
+93
+00:06:44,959 --> 00:06:49,000
+Bây giờ, ta cần C, vì ta đã biết hình dạng chung của đồ thị vận tốc:
+
+94
+00:06:49,000 --> 00:06:55,720
+Đó là một đường chéo nghiêng theo cách mà mỗi giây nó lại tăng một lượng bằng với khả năng gia tốc.
+
+95
+00:06:55,720 --> 00:06:59,760
+Nhưng ta vẫn chưa biết phải đặt đường này ở đâu trên tục tung.
+
+96
+00:06:59,759 --> 00:07:04,060
+Bây giwof ta có thể tìm được tích phân của gia tốc dễ dàng bằng cách sử dụng quy tắc.
+
+97
+00:07:04,060 --> 00:07:10,100
+Gia tốc a là một hằng số, nhưng ta cũng có thể nói rằng  i(a) x (t^0) 
+
+98
+00:07:10,100 --> 00:07:12,960
+vì lũy thừa của 0 luôn bằng 1.
+
+99
+00:07:12,970 --> 00:07:17,330
+Vậy, dựa vào quy tắc, tích phân của gia tốc, mà chính là vận tốc 
+
+100
+00:07:17,329 --> 00:07:20,859
+có thể bằng với gia tốc nhân với thời gian, cộng C.
+
+101
+00:07:20,860 --> 00:07:22,680
+Đó cũng là câu trả lời ta tìm được lúc trước.
+
+102
+00:07:22,680 --> 00:07:26,800
+Bây giờ, đây là nơi giá trị ban đầu khởi đầu. Đồ thị vận tốc cho bạn biết 
+
+103
+00:07:26,800 --> 00:07:31,430
+vận tốc nào cho mỗi mốc thời gian. Nhưng ta cần phải thêm C, vì ta ta chưa biết
+
+104
+00:07:31,430 --> 00:07:34,790
+đặt nó ở đâu trên trục tung -- khi thời gian bằng 0
+
+105
+00:07:34,790 --> 00:07:38,500
+Vậy, tích phân của gia tốc có thể chỉ là (gia tốc) x (thời gian), hoặc
+
+106
+00:07:38,500 --> 00:07:43,240
+(a)(t). Nhưng nó cugx có thể là (at) + 4. Hoặc (at) - 6.
+
+107
+00:07:43,240 --> 00:07:47,680
+Vậy nên, thay vào đó ta đặt C vào tích phân, để tượng trưng cho toàn bộ những lựa chọn đó.
+
+108
+00:07:47,680 --> 00:07:51,980
+Nhưng ta có thể bỏ hoàn toàn C nếu ta tìm được vận tốc, khi thời gian bằng 0
+
+109
+00:07:51,980 --> 00:07:54,259
+được gọi là v(0)
+
+110
+00:07:54,259 --> 00:07:58,480
+Và nếu ta viết phương trình bao gồm v(0), như một ký hiệu cho vận tốc khi thòi gian bằng 0, 
+
+111
+00:07:58,490 --> 00:08:02,189
+ta có được phương trình vận tốc hoàn chỉnh 
+
+112
+00:08:02,189 --> 00:08:06,550
+Nó trông khá quen thuocj, vì đây là một trong các phương trình động học của chúng ta - định nghĩa về gia tốc!
+
+113
+00:08:06,550 --> 00:08:08,590
+Khái quát mọi thứ hoạt động thế nào.
+
+114
+00:08:08,589 --> 00:08:12,579
+Phương trình này cho chứng ta thấy vận tốc cuối cùng của trái bóng rơi,
+
+115
+00:08:12,579 --> 00:08:15,699
+khi nó chạm đất là 16.7 ms hướng từ trên xuống.
+
+116
+00:08:15,699 --> 00:08:19,420
+Nhưng vẫn chưa xong. Ta đang tìm kiếm mối liên quan giữa gia tốc và vị trí,
+
+117
+00:08:19,420 --> 00:08:22,640
+nên ta cần thêm 1 bước nữa bằng cách làm tích phân thêm mottj lần nữa.
+
+118
+00:08:22,639 --> 00:08:26,379
+Có một vài cách khác nhau mà ta có thể áp dụng, nhưng hãy áp dụng quy tắc một lần nữa.
+
+119
+00:08:26,379 --> 00:08:29,430
+Tích phân của (a * t) là (1/2)(a t)(bình phương),
+
+120
+00:08:29,430 --> 00:08:33,180
+và tích phân của v_0 là v_0 * t
+
+121
+00:08:33,179 --> 00:08:37,000
+Đặt chúng lại với nhau, ta có như sau, trông bắt đầu giống 
+
+122
+00:08:37,000 --> 00:08:41,200
+với phương trình động học khác -- cái mà ta đã gọi là đường cong hoán vị
+
+123
+00:08:41,200 --> 00:08:42,740
+Giờ thì, đối với C thì sao?
+
+124
+00:08:42,750 --> 00:08:46,659
+Vâng, giống như lúc trước với vận tốc ban đầu, vị trí ban đầu sẽ cho chúng ta biết
+
+125
+00:08:46,659 --> 00:08:50,829
+phải đặt phương tình ở đâu trên trung tung. Vậy nên ta chỉ cần làm cho C bằng với 
+
+126
+00:08:50,830 --> 00:08:53,280
+vị trí ban đầu, mà được viết là x_0
+
+127
+00:08:53,279 --> 00:08:55,860
+Và đó chính là tích phân -- đường cong hoán vị.
+
+128
+00:08:55,860 --> 00:08:59,399
+Điều này nghĩa là ta đã có đủ mọi thứ ta cần để tìm ra cửa sổ cao bao nhiêu so với mặt đất.
+
+129
+00:08:59,399 --> 00:09:03,029
+Vận tốc ban đầu là 0, vì bạn chỉ vừa thả rơi quả bóng mà không ném nó đi.
+
+130
+00:09:03,029 --> 00:09:08,370
+Gia tốc là 9.81 ms^2. Và cần 1.7 giây để chạm đất.
+
+131
+00:09:08,370 --> 00:09:12,299
+Và giờ bạn đã biết mọi thứ cần biết về tích phân. KHông phải đâu.
+
+132
+00:09:12,299 --> 00:09:15,709
+Như bạn có thể tưởng tượng, ta hiếm khi đi sâu nghiên cứu vấn đề này, 
+
+133
+00:09:15,710 --> 00:09:19,889
+Có một lý do ta luôn cần 2 học kỳ ở trường đại học để học những thứ cơ bản.
+
+134
+00:09:19,889 --> 00:09:22,939
+Và bạn cũng biết có những người dành cả đời của họ để học những thứ này.
+
+135
+00:09:22,940 --> 00:09:26,760
+Nhưng ít nhất ta cũng đã thiết lập một nền tảng đầy đủ , để khi nhưng điều này diễn ra 
+
+136
+00:09:26,759 --> 00:09:29,620
+trong khóa học, bạn có thể sử dụng những điều ta để học để thảo luận.
+
+137
+00:09:29,620 --> 00:09:33,600
+Hôm nay, bạn đã học được rằng tích phân là vùng nằm giữa một phương trình trên một đồ thị và trục hoành.
+
+138
+00:09:33,600 --> 00:09:38,360
+Bạn cũng đã học được một vài cách ngắn gọn để tìm ra chúng, và làm thế nào để tìm thấy C sử dụng giá trị khởi đầu.
+
+139
+00:09:38,360 --> 00:09:43,139
+Khóa triết học học vui được hợp tác sản xuất với PBS Digital Studio. Bán có thể đến với 
+
+140
+00:09:43,139 --> 00:09:48,819
+kênh của họ để tìm hiểu các chương trình như Shanks FX, Gross Science, và PBS Game Show.
+
+141
+00:09:48,820 --> 00:09:53,050
+Phần này của Crash Course được quay tại Crash Course Studio của tiếng sĩ Cheryl C. Kinney 
+
+142
+00:09:53,049 --> 00:09:58,139
+với sự giúp đỡ của những con người tuyệt vời nhóm đồ họa là Thought Cafe cũng tuyệt vời không kém.
+

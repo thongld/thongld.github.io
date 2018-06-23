@@ -1,0 +1,22 @@
+BerkeleyX: CS105x Giới thiệu về Apache Spark
+
+Spark đang nhanh chóng trở thành công cụ tính toán cho dữ liệu lớn được ưa chuộng. Các chương trình Spark ngắn gọn hơn và chạy nhanh hơn các công việc Hadoop MapReduce từ 10-100 lần. Các công ty đã nhận ra điều này, làm các nhà lập trình Spark càng ngày càng được coi trọng.
+
+Khóa thống kê và phân tích dữ liệu này sẽ dạy bạn những kiến thức cơ bản để làm việc với Spark và cung cấp cho bạn nền tảng cần thiết để tìm hiểu sâu hơn về Spark. Bạn cũng sẽ được học về kiến trúc và mô hình lập trình của Spark, bao gồm các API thường được sử dụng. Sau khi hoàn thành khóa học, bạn sẽ có thể viết và sửa lỗi cho các chương trình Spark đơn giản. Khóa học cũng sẽ giải thích cách sử dụng giao diện người dùng dựa trên web của Spark, cách nhận biết các lỗi lập trình thường gặp, và cách chủ động tránh việc xảy ra lỗi. Khóa học sẽ tập trung nghiên cứu Spark Core và Spark SQL.
+
+Khóa học sẽ bao gồm những kiến thức nâng cao ở mức cử nhân. Bạn cần có kiến thức về lập trình cũng như kinh nghiệm sử dụng Python (hoặc khả năng học Python nhanh chóng). Tất cả bài tập đều sử dụng PySpark (API Python cho Spark), nhưng bạn KHÔNG bắt buộc phải có kinh nghiệm trước khi học về Spark hay điện toán phân tán.
+
+Khóa học này sẽ không thể được tạo ra nếu như thiếu đi sự đóng góp hào phóng của công ty Databricks.
+
+Những gì bạn sẽ được học:
+1. Kiến trúc cơ bản của Spark
+2. Các thao tác thông dụng
+3. Cách tránh mắc phải các lỗi lập trình
+4. Cách sửa lỗi trong chương trình Spark của bạn
+
+Người hướng dẫn: Anthony D. Joseph
+
+Giáo sư ngành Kĩ thuật Điện và Khoa học Máy tính
+Đại học California, Berkeley.
+
+Anthony D. Joseph là Giáo sư ngành Kĩ thuật Điện và Khoa học Máy tính tại UC Berkeley. Ông nhận các bằng cử nhân khoa học (B.S.), thạc sĩ khoa học (S.M.) và tiến sĩ (Ph.D.) Khoa học Máy tính ở MIT. Ông tham gia giảng dạy ở UC Berkeley từ năm 1998, nơi ông xây dựng những kĩ thuật linh hoạt trong lĩnh vực điện toán đám mây, an ninh mạng và máy tính vả các biện pháp bảo vệ các hệ quyết định dựa trên học máy. Ông cũng là đồng quản lý của hệ thống thử nghiệm DETERlab - một hệ thống thử nghiệm an toàn, mở rộng được; dùng để thực hiện nghiên cứu về an ninh mạng. Ông còn là Cố vấn Kĩ thuật cho Databricks.

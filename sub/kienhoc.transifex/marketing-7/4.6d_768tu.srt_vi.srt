@@ -1,0 +1,373 @@
+0
+00:00:00,000 --> 00:00:03,864
+.
+
+1
+00:00:03,864 --> 00:00:06,280
+
+
+2
+00:00:06,280 --> 00:00:09,730
+Tôi đã nhắc qua về sự khác biệt giữa các chiến lược giá
+
+3
+00:00:09,730 --> 00:00:12,750
+và chiến thuật giá một vài lần rồi.
+
+4
+00:00:12,750 --> 00:00:15,840
+Tôi sẽ đưa ra một số ví dụ
+
+5
+00:00:15,840 --> 00:00:19,090
+cho thấy sự khác biệt
+
+6
+00:00:19,090 --> 00:00:23,880
+giữa việc vạch ra chiến lược
+
+7
+00:00:23,880 --> 00:00:28,330
+và các chiến thuật để thực hiện chiến lược đó 
+
+8
+00:00:28,330 --> 00:00:33,100
+so với việc phản ứng thụ động
+
+9
+00:00:33,100 --> 00:00:36,464
+trước chiến lược của người khác.
+
+10
+00:00:36,464 --> 00:00:37,380
+Nói thế nào nhỉ?
+
+11
+00:00:37,380 --> 00:00:41,090
+Bạn muốn thiết lập chiến lược và thực thi nó bằng chiến thuật của mình?
+
+12
+00:00:41,090 --> 00:00:44,400
+Hay bạn muốn chiến thuật của mình
+
+13
+00:00:44,400 --> 00:00:45,700
+đáp lại chiến lược của người khác?
+
+14
+00:00:45,700 --> 00:00:46,820
+Đó là điểm mấu chốt.
+
+15
+00:00:46,820 --> 00:00:49,750
+Để tôi làm rõ thêm.
+
+16
+00:00:49,750 --> 00:00:54,690
+Bạn muốn là người định giá hay là người phản ứng lại
+ mức giá của người khác
+
+17
+00:00:54,690 --> 00:00:57,800
+trên thị trường là điều phải cân nhắc.
+
+18
+00:00:57,800 --> 00:01:02,402
+Tiếp theo, mục tiêu của bạn là gì 
+
+19
+00:01:02,402 --> 00:01:03,860
+khi thay đổi mức giá?
+
+20
+00:01:03,860 --> 00:01:06,380
+Tôi muốn bạn xem xét như sau.
+
+21
+00:01:06,380 --> 00:01:10,760
+Đường thẳng này thể hiện thời gian.
+
+22
+00:01:10,760 --> 00:01:17,970
+Khi doanh số đang ổn định theo thời gian,
+
+23
+00:01:17,970 --> 00:01:22,670
+và chúng ta tiến hành giảm giá 
+
+24
+00:01:22,670 --> 00:01:25,330
+ở giai đoạn này,
+
+25
+00:01:25,330 --> 00:01:30,060
+ta thường kỳ vọng
+
+26
+00:01:30,060 --> 00:01:35,950
+sự nhạy cảm với giá của người mua hàng
+
+27
+00:01:35,950 --> 00:01:38,040
+sẽ làm tăng doanh số.
+
+28
+00:01:38,040 --> 00:01:40,890
+Doanh số tăng lên như thế này.
+
+29
+00:01:40,890 --> 00:01:44,990
+Sẽ thế nào nếu ta tăng giá trở lại
+
+30
+00:01:44,990 --> 00:01:46,480
+mức ban đầu?
+
+31
+00:01:46,480 --> 00:01:49,800
+Doanh số sẽ giảm thế này.
+
+32
+00:01:49,800 --> 00:01:53,730
+Và rồi, thật không may,
+
+33
+00:01:53,730 --> 00:01:59,410
+ta thấy hình ảnh của tăng doanh số trong giảm doanh số.
+
+34
+00:01:59,410 --> 00:02:00,410
+Chuyện gì đang xảy ra?
+
+35
+00:02:00,410 --> 00:02:02,040
+Hiểu thế nào đây?
+
+36
+00:02:02,040 --> 00:02:03,220
+Ta giảm giá.
+
+37
+00:02:03,220 --> 00:02:03,720
+Tại sao?
+
+38
+00:02:03,720 --> 00:02:06,840
+Có thể ta nghĩ sẽ có thêm nhiều người mua.
+
+39
+00:02:06,840 --> 00:02:10,830
+Thực tế thì có thể các khách hàng trung thành hiện tại
+
+40
+00:02:10,830 --> 00:02:13,720
+đã nhân cơ hội giảm giá
+
+41
+00:02:13,720 --> 00:02:16,414
+để mua tích lũy sản phẩm.
+
+42
+00:02:16,414 --> 00:02:18,080
+Bạn có từng làm như thế chưa?
+
+43
+00:02:18,080 --> 00:02:22,160
+Đi siêu thị và mua hẳn năm hộp ngũ cốc hay năm hộp bánh quy?
+
+44
+00:02:22,160 --> 00:02:25,270
+Đó là loại bánh quy bạn thích, và kìa, giá giảm rẻ như cho.
+
+45
+00:02:25,270 --> 00:02:28,510
+Và bạn trả tiền ít hơn.
+
+46
+00:02:28,510 --> 00:02:30,160
+Công ty nhận được ít hơn.
+
+47
+00:02:30,160 --> 00:02:34,900
+Hay một trường hợp khác là những người
+ không phải khách hàng của bạn
+
+48
+00:02:34,900 --> 00:02:37,570
+dùng thử sản phẩm, nhưng họ thử chỉ vì bạn bán rẻ.
+
+49
+00:02:37,570 --> 00:02:40,480
+Nhưng điều đó không đủ để thuyết phục họ
+
+50
+00:02:40,480 --> 00:02:43,560
+mua với mức giá thông thường.
+
+51
+00:02:43,560 --> 00:02:46,200
+Đó là tình huống đầu tiên.
+
+52
+00:02:46,200 --> 00:02:48,149
+Thường đây không phải là kịch bản tốt.
+
+53
+00:02:48,149 --> 00:02:51,440
+Nếu bạn làm thế liên tục, bạn đang giảm giá trị thương hiệu.
+
+54
+00:02:51,440 --> 00:02:52,980
+Bạn đang làm giảm lợi nhuận biên.
+
+55
+00:02:52,980 --> 00:02:55,750
+Và bạn đang khuyến khích khách hàng tiềm năng,
+
+56
+00:02:55,750 --> 00:03:00,180
+ngay cả những người ủng hộ bạn, 
+đợi đến lúc giảm giá
+
+57
+00:03:00,180 --> 00:03:02,280
+mới mua hàng.
+
+58
+00:03:02,280 --> 00:03:04,220
+Ta sẽ xem kịch bản thứ hai.
+
+59
+00:03:04,220 --> 00:03:08,305
+Với kịch bản hai này, ta sẽ đi nhanh hơn.
+
+60
+00:03:08,305 --> 00:03:11,740
+Căn bản là thế này.
+
+61
+00:03:11,740 --> 00:03:14,710
+Đây là lúc giá giảm,
+
+62
+00:03:14,710 --> 00:03:16,420
+đây là lúc giá tăng trở lại.
+
+63
+00:03:16,420 --> 00:03:18,480
+Và ta tăng thêm được doanh số.
+
+64
+00:03:18,480 --> 00:03:22,690
+Nhưng thực tế, hoặc là ta đã thuyết phục 
+khách hàng hiện tại mua dự trữ,
+
+65
+00:03:22,690 --> 00:03:27,220
+họ sử dụng nhiều hơn, đem cho, tặng,
+
+66
+00:03:27,220 --> 00:03:30,520
+hoặc là ta thu hút được khách hàng mới dùng thử.
+
+67
+00:03:30,520 --> 00:03:34,790
+Họ thích, nhưng chưa sẵn sàng mua tiếp.
+
+68
+00:03:34,790 --> 00:03:38,520
+Cái ta hướng đến là kịch bản thứ ba.
+
+69
+00:03:38,520 --> 00:03:40,040
+Ta muốn thực tế như sau.
+
+70
+00:03:40,040 --> 00:03:43,530
+
+
+71
+00:03:43,530 --> 00:03:47,870
+Đây là khi chúng ta giảm giá.
+
+72
+00:03:47,870 --> 00:03:51,220
+Còn đây là khi giá quay lại bình thường.
+
+73
+00:03:51,220 --> 00:03:52,980
+Và đây là doanh số.
+
+74
+00:03:52,980 --> 00:03:56,480
+Doanh số ổn định ở mức cao hơn.
+
+75
+00:03:56,480 --> 00:03:57,890
+Tại sao lại cao hơn?
+
+76
+00:03:57,890 --> 00:04:02,010
+Vì một số người mua thử vì giá rẻ
+
+77
+00:04:02,010 --> 00:04:06,380
+thích sản phẩm và tiếp tục mua lại ngay cả khi nguyên giá
+
+78
+00:04:06,380 --> 00:04:11,530
+Yếu tố chủ chốt là không nên giảm giá chỉ vì tuyệt vọng
+
+79
+00:04:11,530 --> 00:04:14,950
+mà hãy giảm nếu bạn muốn thu hút mọi người
+
+80
+00:04:14,950 --> 00:04:20,950
+khi sản phẩm có những điểm mới mẻ và thú vị.
+
+81
+00:04:20,950 --> 00:04:23,510
+Bạn thực sự có điểm khác biệt
+
+82
+00:04:23,510 --> 00:04:25,400
+mà người ta chưa biết đến.
+
+83
+00:04:25,400 --> 00:04:30,570
+Lúc đó bạn có thể kết hợp chiến lược giá với định vị,
+ xây dựng thương hiệu,
+
+84
+00:04:30,570 --> 00:04:35,970
+và sự khác biệt hóa.
+
+85
+00:04:35,970 --> 00:04:41,730
+Nói tóm lại, chiến lược giá rất phức tạp.
+
+86
+00:04:41,730 --> 00:04:45,120
+Nhưng cũng tương tự các chủ đề khác, ta có thể bóc tách được.
+
+87
+00:04:45,120 --> 00:04:48,090
+Ta có thể chia nó thành từng phần nhỏ
+
+88
+00:04:48,090 --> 00:04:50,350
+để thiết kế được một chiến lược giá.
+
+89
+00:04:50,350 --> 00:04:55,360
+Và rồi ta có thể thử nghiệm xem chiến lược nào hiệu quả.
+
+90
+00:04:55,360 --> 00:04:59,010
+[NHẠC]
+
+91
+00:04:59,010 --> 00:05:04,085
+
+

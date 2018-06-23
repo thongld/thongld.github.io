@@ -1,0 +1,1019 @@
+0
+00:00:00,000 --> 00:00:01,330
+tangoclinhh_25/9/2017
+
+1
+00:00:01,330 --> 00:00:04,030
+Trong bài học này, ta sẽ nghiên cứu chi phí liên quan đến
+
+2
+00:00:04,030 --> 00:00:06,030
+quản lý hàng tồn kho,
+
+3
+00:00:06,030 --> 00:00:09,100
+và ta sẽ dùng chúng để phát triển một phương trình tổng chi phí.
+
+4
+00:00:09,100 --> 00:00:12,180
+Nên tôi muốn tập trung vào các chi phí liên quan,
+
+5
+00:00:12,180 --> 00:00:15,400
+đó là những chi phí quan trọng đối với các quyết định
+
+6
+00:00:15,400 --> 00:00:17,720
+được đưa ra và là những thứ ta có thể kiểm soát được.
+
+7
+00:00:17,720 --> 00:00:20,330
+Nhưng lát nữa tôi sẽ giải thích kỹ hơn.
+
+8
+00:00:20,330 --> 00:00:23,790
+Có 4 yếu tố cơ bản đối với tổng chi phí này,
+
+9
+00:00:23,790 --> 00:00:27,040
+hay tổng chi phí liên quan này,
+
+10
+00:00:27,040 --> 00:00:29,050
+trong đó, thứ nhất là chi phí mua hàng.
+
+11
+00:00:29,050 --> 00:00:33,540
+Đó là giá trị đơn vị, chi phí trên mỗi đầu sản phẩm khi tôi mua nó.
+
+12
+00:00:33,540 --> 00:00:35,800
+Tiếp đến là chi phí đặt hàng,
+
+13
+00:00:35,800 --> 00:00:38,030
+hay còn được gọi là chi phí thiết lập.
+
+14
+00:00:38,030 --> 00:00:41,090
+Đây là chi phí phải trả để đặt một đơn hàng.
+
+15
+00:00:41,090 --> 00:00:43,620
+Sau đó là chi phí giữ hàng,
+
+16
+00:00:43,620 --> 00:00:44,990
+còn được biết đến với tên gọi chi phí bảo tồn hàng lưu kho.
+
+17
+00:00:44,990 --> 00:00:49,830
+Đó là chi phí phải trả để giữ hàng,
+
+18
+00:00:49,830 --> 00:00:52,210
+không phải là giá trị của hàng
+
+19
+00:00:52,210 --> 00:00:54,630
+mà là chi phí phải trả
+
+20
+00:00:54,630 --> 00:00:55,535
+để giữ hàng ở đó.
+
+21
+00:00:55,535 --> 00:00:57,660
+Và ta sẽ nói kỹ hơn về từng loại một, tất nhiên,
+
+22
+00:00:57,660 --> 00:00:58,540
+ngay sau đây thôi.
+
+23
+00:00:58,540 --> 00:01:00,630
+Và loại cuối cùng là chi phí hao hụt.
+
+24
+00:01:00,630 --> 00:01:03,800
+Đó là chi phí phải chịu nếu tôi hết hàng
+
+25
+00:01:03,800 --> 00:01:06,680
+hay nếu tôi không có đủ nhu cầu -
+
+26
+00:01:06,680 --> 00:01:08,410
+hoặc thay vào đó là không có đủ hàng để đáp ứng nhu cầu.
+
+27
+00:01:08,410 --> 00:01:10,730
+Ta sẽ nghiên cứu từng cái một,
+
+28
+00:01:10,730 --> 00:01:13,610
+sau đó sẽ nói về điều làm cho mỗi chi phí này
+
+29
+00:01:13,610 --> 00:01:16,070
+có liên quan tới quyết định mà ta sẽ đưa ra.
+
+30
+00:01:16,070 --> 00:01:18,950
+Một lần nữa, yếu tố chính ở đây là
+
+31
+00:01:18,950 --> 00:01:23,260
+một là, nó có thể điều khiển bởi ta - người ra quyết định hay không,
+
+32
+00:01:23,260 --> 00:01:26,676
+hai là, nó có áp dụng cho quyết dịnh được đưa ra hay không.
+
+33
+00:01:26,676 --> 00:01:28,550
+Trước khi ta đi vào chi tiết,
+
+34
+00:01:28,550 --> 00:01:30,383
+tôi muốn lưu ý về thuật ngữ,
+
+35
+00:01:30,383 --> 00:01:34,240
+bởi vì ta sẽ nói chi tiết hơn rất nhiều về 4 nhân tố này.
+
+36
+00:01:34,240 --> 00:01:37,080
+Không may mắn thay, giáo trình trong lĩnh vực này,
+
+37
+00:01:37,080 --> 00:01:39,900
+dù là trong hậu cần, quản trị hàng tồn kho
+
+38
+00:01:39,900 --> 00:01:43,070
+hay quản lý chuỗi cung ứng, chúng sử dụng các thuật ngữ
+
+39
+00:01:43,070 --> 00:01:46,840
+rất khác nhau để miêu tả những chi phí này cũng như
+
+40
+00:01:46,840 --> 00:01:49,070
+rất nhiều yếu tố khác trong mảng chuỗi cung ứng.
+
+41
+00:01:49,070 --> 00:01:51,240
+Vì vậy hãy tỉnh táo.
+
+42
+00:01:51,240 --> 00:01:55,940
+Tôi cố gắng dùng thuật ngữ phổ biển với hầu hết
+
+43
+00:01:55,940 --> 00:01:59,470
+các nguồn, nhưng không có một bộ thuật ngữ chung nào cả,
+
+44
+00:01:59,470 --> 00:02:02,130
+Mọi người dùng các cách nói khác nhau cho chi phí mua hàng,
+
+45
+00:02:02,130 --> 00:02:03,780
+chi phí đặt hàng, chi phí giữ hàng
+
+46
+00:02:03,780 --> 00:02:05,155
+và tất cả những thứ khác nhau đó.
+
+47
+00:02:05,155 --> 00:02:06,030
+Hãy bắt đầu nào.
+
+48
+00:02:06,030 --> 00:02:09,570
+Đầu tiên hãy nói về chi phí mua hàng.
+
+49
+00:02:09,570 --> 00:02:12,325
+Ta sẽ dùng chữ C để chú giải nó.
+
+50
+00:02:12,325 --> 00:02:14,700
+Và đơn vị sẽ là đô la trên một sản phẩm
+
+51
+00:02:14,700 --> 00:02:15,890
+hay đô la trên một đơn vị.
+
+52
+00:02:15,890 --> 00:02:18,510
+Và bạn có thể nghĩ đến việc nó bao gồm những gì.
+
+53
+00:02:18,510 --> 00:02:22,100
+Nó là tổng chi phí phải trả để nhận được sản phẩm.
+
+54
+00:02:22,100 --> 00:02:24,210
+Nó là chi phí có thể biến đổi,
+
+55
+00:02:24,210 --> 00:02:26,420
+cho nên nó là một biến số đối với số lượng.
+
+56
+00:02:26,420 --> 00:02:31,310
+Nó là đô la trên đơn vị, trên sản phẩm,
+chứ không phải một chi phí cố định trước.
+
+57
+00:02:31,310 --> 00:02:32,730
+Vậy ta sẽ xác định nó như thế nào?
+
+58
+00:02:32,730 --> 00:02:33,650
+Điều đó còn tùy.
+
+59
+00:02:33,650 --> 00:02:36,960
+Nếu tôi đang mua sản phẩm này từ một người bán rong nào đó, 
+
+60
+00:02:36,960 --> 00:02:40,820
+từ một bên thứ ba nào đó, nó sẽ là chi phí mua hàng,
+
+61
+00:02:40,820 --> 00:02:44,800
+là lượng tiền tôi phải trả để người bán mang hàng đến địa điểm của tôi.
+
+62
+00:02:44,800 --> 00:02:46,810
+Nếu tôi tự làm nó,
+
+63
+00:02:46,810 --> 00:02:49,674
+chi phí mua hàng sẽ là chi phí vận chuyển, chi phí sản xuất,
+
+64
+00:02:49,674 --> 00:02:50,840
+cái đó sẽ hơi phức tạp hơn một chút.
+
+65
+00:02:50,840 --> 00:02:52,550
+Tôi phải thiết kế và tính ra
+
+66
+00:02:52,550 --> 00:02:54,120
+đầy đủ chi phí đã chịu là gì.
+
+67
+00:02:54,120 --> 00:02:56,510
+Cần phải dành nhiều thời gian
+
+68
+00:02:56,510 --> 00:02:58,840
+hơn một chút để tính ra chi phí đó.
+
+69
+00:02:58,840 --> 00:03:00,010
+Và khi nào thì nó liên quan?
+
+70
+00:03:00,010 --> 00:03:02,290
+Chi phí mua hàng có liên quan nếu
+
+71
+00:03:02,290 --> 00:03:06,010
+chi phí mua hàng khác với số lượng mà tôi mua
+
+72
+00:03:06,010 --> 00:03:10,080
+hoặc nó thay đổi dựa trên thời gian mà tôi làm ra nó.
+
+73
+00:03:10,080 --> 00:03:12,860
+Về sau điều này sẽ trở nên quan trọng hơn.
+
+74
+00:03:12,860 --> 00:03:16,360
+Nhưng sự liên quan xuất hiện khi
+
+75
+00:03:16,360 --> 00:03:19,981
+chi phí mua hàng trở nên liên quan tới quyết định mà ta sẽ đưa ra.
+
+76
+00:03:19,981 --> 00:03:20,480
+OK.
+
+77
+00:03:20,480 --> 00:03:23,900
+Loại phí tiếp theo là chi phí đặt hàng.
+
+78
+00:03:23,900 --> 00:03:25,980
+Ta sẽ dùng Ct để đại diện cho nó,
+
+79
+00:03:25,980 --> 00:03:28,180
+cho chi phí giao dịch,
+
+80
+00:03:28,180 --> 00:03:29,830
+và đơn vị là đô la trên một đơn hàng.
+
+81
+00:03:29,830 --> 00:03:34,750
+Dù tôi đặt 10 hay 100 hay 200 sản phẩm,
+
+82
+00:03:34,750 --> 00:03:37,560
+chi phí này đã cố định trên từng đơn hàng.
+
+83
+00:03:37,560 --> 00:03:41,490
+Nó không thay đổi đối với lượng hàng được đặt.
+
+84
+00:03:41,490 --> 00:03:43,300
+Vậy nó bao gồm những gì?
+
+85
+00:03:43,300 --> 00:03:45,870
+Nó là tất cả những chi phí phải trả để đặt một đơn hàng,
+
+86
+00:03:45,870 --> 00:03:48,470
+để nhận được đơn hàng và để thực hiện đơn hàng.
+
+87
+00:03:48,470 --> 00:03:51,670
+Đó là tất cả các hoạt động xử lý, làm hóa đơn,
+
+88
+00:03:51,670 --> 00:03:53,370
+giám định, thuê nhân công để làm những việc đó -
+
+89
+00:03:53,370 --> 00:03:57,270
+tất cả những chi phí khác nhau để đặt một đơn hàng.
+
+90
+00:03:57,270 --> 00:03:59,880
+Trong sản xuất, nó được gọi là chi phí thiết lập
+
+91
+00:03:59,880 --> 00:04:03,070
+cho một sự vận hành, mất bao nhiêu thời gian và chi phí là bao nhiêu
+
+92
+00:04:03,070 --> 00:04:08,520
+để chạy một cái máy vận hành sản xuất một sản phẩm nhất định.
+
+93
+00:04:08,520 --> 00:04:10,030
+Ta xác định con số này như thế nào?
+
+94
+00:04:10,030 --> 00:04:11,270
+Khá là phức tạp.
+
+95
+00:04:11,270 --> 00:04:13,210
+Nó không dễ như chi phí mua hàng,
+
+96
+00:04:13,210 --> 00:04:15,917
+chi phí mua hàng khá rõ ràng và dễ tính toán hơn.
+
+97
+00:04:15,917 --> 00:04:17,625
+Đôi khi tôi phải phân tích lưu trình làm việc.
+
+98
+00:04:17,625 --> 00:04:21,339
+Tôi phải cố tìm hiểu xem chi phí này là gì.
+
+99
+00:04:21,339 --> 00:04:23,540
+Một cách phổ biến là
+
+100
+00:04:23,540 --> 00:04:26,450
+nhìn vào khoảng thời gian 6 tháng tới 1 năm,
+
+101
+00:04:26,450 --> 00:04:28,720
+và tôi cộng tổng tất cả chi phí quản lý và các chi phí khác
+
+102
+00:04:28,720 --> 00:04:31,865
+như chi phí nhân công và chia cho tổng số đơn hàng
+
+103
+00:04:31,865 --> 00:04:34,330
+được sản xuất với tổng chi phí đó.
+
+104
+00:04:34,330 --> 00:04:37,330
+Và như bạn có thể thấy, đôi khi nó là một con số
+
+105
+00:04:37,330 --> 00:04:38,290
+rất khó để tính ra.
+
+106
+00:04:38,290 --> 00:04:41,580
+Chi phí đặt hàng hay chi phí thiết lập đó là gì?
+
+107
+00:04:41,580 --> 00:04:45,260
+Nhưng bạn cần đến nó và nó có liên quan tới
+
+108
+00:04:45,260 --> 00:04:46,235
+bất cứ khi nào nó tồn tại, và nó không hề nhảm nhí.
+
+109
+00:04:46,235 --> 00:04:49,350
+Và ta sẽ nói nhiều hơn về điều đó trong một lát nữa.
+
+110
+00:04:49,350 --> 00:04:52,420
+Loại thứ ba là chi phí giữ hàng.
+
+111
+00:04:52,420 --> 00:04:56,610
+Đó là những chi phí phải chịu khi có hàng trong tay,
+
+112
+00:04:56,610 --> 00:04:59,670
+không cần thiết phải là tổng chi phí của hàng,
+
+113
+00:04:59,670 --> 00:05:01,400
+bởi vì tôi đã trả chi phí mua hàng rồi,
+
+114
+00:05:01,400 --> 00:05:04,540
+chính là yếu tố đầu tiên mà ta nói tới,
+
+115
+00:05:04,540 --> 00:05:07,720
+còn chi phí này là phí phải chịu khi
+
+116
+00:05:07,720 --> 00:05:09,850
+có hàng trong tay.
+
+117
+00:05:09,850 --> 00:05:13,170
+Nên ta có Ce là đơn vị chi phí mua hàng
+
+118
+00:05:13,170 --> 00:05:16,280
+và tôi dùng chữ h này để bạn nghĩ về
+
+119
+00:05:16,280 --> 00:05:18,050
+tỉ số giữ hàng.
+
+120
+00:05:18,050 --> 00:05:20,670
+Đây là tỉ lệ phần trăm so với thời gian,
+
+121
+00:05:20,670 --> 00:05:23,270
+nên tôi có một số chi phí giữ hàng là
+
+122
+00:05:23,270 --> 00:05:28,490
+25% một năm, và chi phí giữ hàng hay lưu kho hàng
+
+123
+00:05:28,490 --> 00:05:30,820
+chính là Ce, là giá của
+
+124
+00:05:30,820 --> 00:05:34,660
+sản phẩm [không dịch được]
+
+125
+00:05:34,660 --> 00:05:36,770
+hay phần trăm đó, từ đó tôi nhận được
+
+126
+00:05:36,770 --> 00:05:40,040
+chi phí trên một sản phẩm trên thời gian.
+
+127
+00:05:40,040 --> 00:05:41,760
+Vậy chi phí này bao gồm những gì?
+
+128
+00:05:41,760 --> 00:05:43,580
+Nó bao gồm rất nhiều thứ.
+
+129
+00:05:43,580 --> 00:05:46,950
+Nó là tất cả những chi phí phải trả để giữ hàng.
+
+130
+00:05:46,950 --> 00:05:49,890
+Nó có thể là chi phí bảo quản nếu tôi có một nhà kho.
+
+131
+00:05:49,890 --> 00:05:52,249
+Nó có thể là lượng không gian tôi cần.
+
+132
+00:05:52,249 --> 00:05:53,790
+Nếu thứ gì đó chiếm quá nhiều diện tích,
+
+133
+00:05:53,790 --> 00:05:55,040
+tôi sẽ phải trả nhiều tiền hơn.
+
+134
+00:05:55,040 --> 00:05:56,740
+Nên tôi có thể nghĩ, nếu phải bảo quản,
+
+135
+00:05:56,740 --> 00:05:58,650
+tôi muốn trả theo
+
+136
+00:05:58,650 --> 00:06:00,700
+đô la trên một foot vuông của mỗi sản phẩm.
+
+137
+00:06:00,700 --> 00:06:03,180
+Bạn có thể nghĩ đến tổng chi phí dịch vụ.
+
+138
+00:06:03,180 --> 00:06:05,250
+Có cả bảo hiểm, thuế.
+
+139
+00:06:05,250 --> 00:06:08,650
+Và tôi nghĩ là có lẽ chi phí giữ hàng
+
+140
+00:06:08,650 --> 00:06:12,520
+sẽ tăng khi giá trị của sản phẩm tăng.
+
+141
+00:06:12,520 --> 00:06:15,190
+Khi đó bạn có chi phí rủi ro, khi mà có thể một sản phẩm bị mất,
+
+142
+00:06:15,190 --> 00:06:19,090
+bị lấy cắp - ta gọi đó là thiệt hại hao hụt,
+
+143
+00:06:19,090 --> 00:06:22,104
+không dùng được nữa, mất phẩm chất hay bất kì lý do nào đi nữa.
+
+144
+00:06:22,104 --> 00:06:24,020
+Khi đó có thể tôi sẽ nghĩ
+
+145
+00:06:24,020 --> 00:06:26,140
+có thể nó chỉ là đô la trên một sản phẩm.
+
+146
+00:06:26,140 --> 00:06:28,290
+Và loại thứ tư là chi phí vốn,
+
+147
+00:06:28,290 --> 00:06:30,870
+bởi vì mỗi đô la tôi dùng cho việc giữ hàng
+
+148
+00:06:30,870 --> 00:06:33,420
+đều là số đô la tôi không dùng cho việc khác.
+
+149
+00:06:33,420 --> 00:06:35,690
+Bạn có thể nghĩ về nó như một sự đầu tư.
+
+150
+00:06:35,690 --> 00:06:37,630
+Vì vậy trong trường hợp này, bạn có thể nghĩ về nó
+
+151
+00:06:37,630 --> 00:06:40,690
+như hàng tồn kho từng đô la hay chi phí vốn.
+
+152
+00:06:40,690 --> 00:06:42,690
+Đôi khi nó được gọi là tỉ lệ trở ngại,
+
+153
+00:06:42,690 --> 00:06:45,070
+thứ mà một công ty cần có để làm cho sự đầu tư của họ
+
+154
+00:06:45,070 --> 00:06:48,540
+ở trên một tỉ lệ nhất định của thu nhập để chứng thực nó.
+
+155
+00:06:48,540 --> 00:06:50,950
+Ngoài các thuật ngữ này ra,
+
+156
+00:06:50,950 --> 00:06:52,690
+bạn còn có các đơn vị khác nhau.
+
+157
+00:06:52,690 --> 00:06:55,810
+Tại sao ta lại có công thức đô la trên một đơn vị thời gian?
+
+158
+00:06:55,810 --> 00:07:00,820
+Con số này được đưa cho bạn.
+
+159
+00:07:00,820 --> 00:07:02,180
+Nó được thiết lập bởi sự quản lý.
+
+160
+00:07:02,180 --> 00:07:04,600
+Như lát nữa ta sẽ thấy
+
+161
+00:07:04,600 --> 00:07:09,580
+đây thực sự là một mức độ được dùng để xem
+
+162
+00:07:09,580 --> 00:07:10,870
+công ty cần giữ hàng tồn kho đến mức độ nào.
+
+163
+00:07:10,870 --> 00:07:13,370
+Nó luôn được thiết lập bởi sự quản lý,
+
+164
+00:07:13,370 --> 00:07:16,230
+nhưng đáng cân nhắc xem nếu một số khía cạnh thứ hai này
+
+165
+00:07:16,230 --> 00:07:19,440
+như nhà kho hay những thứ khác có chi phối hay không,
+
+166
+00:07:19,440 --> 00:07:22,830
+bởi vì lợi tức tối thiểu
+
+167
+00:07:22,830 --> 00:07:25,820
+hay chi phí của vốn chi phối các yếu tố khác.
+
+168
+00:07:25,820 --> 00:07:30,420
+Đó là lý do tại sao ta dùng những đơn vị này.
+
+169
+00:07:30,420 --> 00:07:33,360
+Cuối cùng, chi phí giữ hàng
+
+170
+00:07:33,360 --> 00:07:36,500
+về cơ bản là chi phí biến đổi cho mỗi mặt hàng
+
+171
+00:07:36,500 --> 00:07:38,400
+mà tôi phải trả để có dược mặt hàng đó
+
+172
+00:07:38,400 --> 00:07:40,300
+trong một khoảng thời gian nhất định.
+
+173
+00:07:40,300 --> 00:07:43,590
+Điều này có liên quan tới bất cứ khi nào tôi giữ hàng
+
+174
+00:07:43,590 --> 00:07:45,330
+trong bất kỳ thời điểm nào.
+
+175
+00:07:45,330 --> 00:07:48,120
+Đó là chi phí giữ hàng hay chi phí lưu kho.
+
+176
+00:07:48,120 --> 00:07:50,200
+Tôi sẽ đi tiếp đến loại bốn, loại cuối cùng,
+
+177
+00:07:50,200 --> 00:07:52,280
+đây là chi phí hao hụt hay chi phí hết hàng.
+
+178
+00:07:52,280 --> 00:07:55,500
+Ta sẽ dùng Cs để đại diện cho nó.
+
+179
+00:07:55,500 --> 00:07:58,280
+Đơn vị ở đây, một lần nữa lại là điều phức tạp
+
+180
+00:07:58,280 --> 00:08:00,600
+bởi vì chúng có thể là rất nhiều thứ khác nhau.
+
+181
+00:08:00,600 --> 00:08:04,640
+Nó phụ thuộc vào cách tôi nhìn nhận chi phí tích lũy.
+
+182
+00:08:04,640 --> 00:08:08,630
+Nó có thể là đô la trên một đơn vị, vậy với mọi sản phẩm tôi thiếu hụt
+
+183
+00:08:08,630 --> 00:08:11,130
+tôi đều phải trả một khoản tiền.
+
+184
+00:08:11,130 --> 00:08:13,250
+Nó có thể là đô la trên một đơn vị trên một khoảng thời gian.
+
+185
+00:08:13,250 --> 00:08:15,100
+Có lẽ nếu tôi thiếu hụt thứ gì,
+
+186
+00:08:15,100 --> 00:08:18,747
+nhưng tôi chỉ bị hết hàng trong một tuần hay một tháng,
+
+187
+00:08:18,747 --> 00:08:19,830
+tôi sẽ phải chịu khoản phí đó kiểu khác.
+
+188
+00:08:19,830 --> 00:08:21,850
+Có thể nó là một khoảng thời gian.
+
+189
+00:08:21,850 --> 00:08:25,430
+Hay đôi khi, việc tôi hết bao nhiêu hàng không quan trọng,
+
+190
+00:08:25,430 --> 00:08:27,770
+nhưng nếu tôi nhận được thiếu hàng từ đơn hàng của mình,
+
+191
+00:08:27,770 --> 00:08:30,850
+tôi cũng phải chịu một khoản phí.
+
+192
+00:08:30,850 --> 00:08:35,409
+Cho nên có rất nhiều cách khác nhau để tính toán
+
+193
+00:08:35,409 --> 00:08:36,970
+ chi phí hết hàng hay chi phí hao hụt.
+
+194
+00:08:36,970 --> 00:08:38,440
+Vậy nó bao gồm những gì?
+
+195
+00:08:38,440 --> 00:08:39,980
+Nó gồm rất nhiều thứ khác nhau.
+
+196
+00:08:39,980 --> 00:08:41,809
+Tùy vào cách nhìn của tôi thôi.
+
+197
+00:08:41,809 --> 00:08:44,460
+Đối với những đơn hàng chưa được giao vì lý do chậm trễ,
+
+198
+00:08:44,460 --> 00:08:46,790
+đó chính là những sản phẩm mà khách hàng sẽ phải chờ để nhận được.
+
+199
+00:08:46,790 --> 00:08:49,130
+Hãy nghĩ về những chiếc điện thoại thông minh cao cấp.
+
+200
+00:08:49,130 --> 00:08:52,700
+Khi những chiếc điện thoại mới ra đời, hay khi xuất bản sách,
+
+201
+00:08:52,700 --> 00:08:56,251
+thay vì được phát hành, mọi người sẽ đăng ký để nhận được chúng,
+
+202
+00:08:56,251 --> 00:08:57,750
+họ sẽ đặt hàng
+
+203
+00:08:57,750 --> 00:09:00,900
+và sẽ đợi giao hàng cho đến khi sản phẩm về tay mình.
+
+204
+00:09:00,900 --> 00:09:02,630
+Đó là một trường hợp.
+
+205
+00:09:02,630 --> 00:09:05,080
+Một trường hợp khác là bạn không bán được hàng,
+
+206
+00:09:05,080 --> 00:09:06,960
+khách hàng sẽ đi mua ở một nơi khác.
+
+207
+00:09:06,960 --> 00:09:09,400
+Nên nếu bạn không có sản phẩm kem đánh răng mà khách muốn,
+
+208
+00:09:09,400 --> 00:09:11,400
+họ sẽ xuống phố và tới một cửa hàng khác
+
+209
+00:09:11,400 --> 00:09:12,520
+và mua thứ họ cần ở đó.
+
+210
+00:09:12,520 --> 00:09:14,020
+Có một chi phí khác mà bạn phải chịu
+
+211
+00:09:14,020 --> 00:09:17,910
+khi khách hàng đi mất và đi mãi mãi.
+
+212
+00:09:17,910 --> 00:09:20,390
+Họ chán ngấy với việc bạn không có sản phẩm mà họ muốn,
+
+213
+00:09:20,390 --> 00:09:23,070
+nên họ tới một nơi khác để mua và không bao giờ quay lại nữa.
+
+214
+00:09:23,070 --> 00:09:26,110
+Bạn không chỉ mất một lần bán hàng đó,
+
+215
+00:09:26,110 --> 00:09:27,850
+bạn còn mất toàn bộ doanh thu
+
+216
+00:09:27,850 --> 00:09:30,162
+từ người khách đó mãi mãi.
+
+217
+00:09:30,162 --> 00:09:32,120
+Cuối cùng nó trở thành một chi phí xáo trộn,
+
+218
+00:09:32,120 --> 00:09:34,170
+bởi vì mạch sản xuất bị trì hoãn.
+
+219
+00:09:34,170 --> 00:09:37,720
+Có sự thiệt hại về chi phí không chỉ trong lần mất khách
+
+220
+00:09:37,720 --> 00:09:39,950
+mà còn trong công việc của những người
+làm việc trong dây chuyền sản xuất.
+
+221
+00:09:39,950 --> 00:09:41,960
+Nếu bạn có một sản phẩm chịu trách nhiệm cho cả đường dây sản xuất
+
+222
+00:09:41,960 --> 00:09:44,520
+nhưng bạn không có sẵn hàng, cả đường dây có thể sẽ bị ảnh hưởng,
+
+223
+00:09:44,520 --> 00:09:48,490
+nhưng cũng có thể phải tốn chi phí để
+cả đường dây hoạt động lại bình thường.
+
+224
+00:09:48,490 --> 00:09:51,970
+Trong một số trường hợp,
+
+225
+00:09:51,970 --> 00:09:53,000
+chi phí còn lớn hơn rất nhiều.
+
+226
+00:09:53,000 --> 00:09:57,090
+Bạn đã tìm hiểu tất cả những loại chi phí khác nhau,
+
+227
+00:09:57,090 --> 00:10:00,680
+tất cả đều khá khó hiểu.
+
+228
+00:10:00,680 --> 00:10:03,360
+Có một cách để bạn hiểu đó là bạn tự tính toán chi phí
+
+229
+00:10:03,360 --> 00:10:06,490
+và tìm ra câu trả lời rằng nếu tôi bị hao hụt,
+
+230
+00:10:06,490 --> 00:10:08,190
+đây sẽ là chính xác những điều sẽ xảy ra.
+
+231
+00:10:08,190 --> 00:10:10,940
+Có rất nhiều nghiên cứu tìm hiểu về mảng này.
+
+232
+00:10:10,940 --> 00:10:14,330
+Tiêu biểu là những điều mọi người làm, điều hầu hết các công ty làm
+
+233
+00:10:14,330 --> 00:10:16,600
+là họ đảm nhận một mức độ dịch vụ nào đó.
+
+234
+00:10:16,600 --> 00:10:19,655
+Họ nói rằng tôi muốn đảm bảo tôi không hết hàng
+
+235
+00:10:19,655 --> 00:10:22,910
+nhiều hơn 1% thời gian của chu trình đặt hàng.
+
+236
+00:10:22,910 --> 00:10:26,030
+Hoặc tỉ lệ đơn hàng thực hiện của tôi phải là một số lượng nhất định.
+
+237
+00:10:26,030 --> 00:10:29,710
+Bạn thiết lập một mức dịch vụ, và như ta sẽ trình chiếu về sau,
+
+238
+00:10:29,710 --> 00:10:33,590
+điều đó sẽ xác định mức chi phí bạn phải trả khi hết hàng.
+
+239
+00:10:33,590 --> 00:10:35,920
+Nhưng việc tính toán chi phí đó rất phức tạp
+
+240
+00:10:35,920 --> 00:10:40,340
+bởi vì nó dựa trên hành vi của
+
+241
+00:10:40,340 --> 00:10:41,360
+ người tiêu dùng hay khách hàng.
+
+242
+00:10:41,360 --> 00:10:43,910
+Bạn không thể ghi giá lên nó
+
+243
+00:10:43,910 --> 00:10:46,160
+trừ khi bạn biết hành vi của họ sẽ như thế nào.
+
+244
+00:10:46,160 --> 00:10:47,330
+Khi nào thì liên quan?
+
+245
+00:10:47,330 --> 00:10:49,380
+Bất cứ khi nào có sự không chắc chắn trong nhu cầu,
+
+246
+00:10:49,380 --> 00:10:52,160
+trong thời gian bổ sung hàng, bất cứ khi nào bạn có thể
+
+247
+00:10:52,160 --> 00:10:53,970
+bị hết hàng.
+
+248
+00:10:53,970 --> 00:10:55,860
+Đó là tổng các chi phí liên quan,
+
+249
+00:10:55,860 --> 00:10:57,790
+và bước tiếp theo là dùng chúng
+
+250
+00:10:57,790 --> 00:11:01,370
+để phát triển các mô hình khác nhau cho chính sách hàng tồn kho,
+
+251
+00:11:01,370 --> 00:11:04,320
+ta sẽ dùng để phát triển các chính sách khác nhau
+
+252
+00:11:04,320 --> 00:11:07,940
+để nghiên cứu trong phần còn lại của khóa học.
+
+253
+00:11:07,940 --> 00:11:09,962
+
+

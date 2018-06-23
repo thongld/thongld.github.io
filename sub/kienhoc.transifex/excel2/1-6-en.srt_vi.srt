@@ -1,0 +1,313 @@
+1
+00:00:02,490 --> 00:00:08,290
+Trong video trước ta đã nhập xong dữ liệu.
+Vậy ta đã đi từ nguồn dữ liệu thành
+
+2
+00:00:08,290 --> 00:00:12,040
+dữ liệu thô. Tuy nhiên có nhiều dữ liệu vẫn cần xử lý thêm.
+
+3
+00:00:12,040 --> 00:00:17,520
+Có lẽ bạn đã để ý thấy trong phần bài tập rằng các dữ liệu của ta không hoàn hảo.
+
+4
+00:00:17,520 --> 00:00:25,259
+Giống như dầu thô, dữ liệu vẫn cần phải được tinh luyện để có thể xử lý khi phân tích sâu hơn.
+
+5
+00:00:25,259 --> 00:00:29,570
+Bạn có thể để ý thấy điều sau.
+
+6
+00:00:29,570 --> 00:00:35,910
+Nếu ta đến dòng 1578, hãy dùng tính năng "Go to" nhé, bạn có thể
+
+7
+00:00:35,910 --> 00:00:41,450
+dùng phím F5, bạn sẽ thấy những thông tin đầu trang bị lặp lại.
+
+8
+00:00:41,450 --> 00:00:47,200
+Vì ta đã gộp 6 file CSV thành một nên các ô này bị lặp lại.
+
+9
+00:00:47,200 --> 00:00:51,890
+Bạn biết cách khắc phục chuyện này chứ? Có thể bạn đã thấy vấn đề này trong khoá học trước
+
+10
+00:00:51,890 --> 00:00:55,120
+hoặc đâu đó. Bạn có thể áp dụng một vài kỹ thuật
+
+11
+00:00:55,120 --> 00:00:59,390
+để xoá bỏ sự lặp lại thông tin này. Sẽ có một bài kiểm tra nho nhỏ sau đây,
+
+12
+00:00:59,390 --> 00:01:03,850
+bạn sẽ phải chỉ ra cách bạn khắc phục vấn đề này cho chúng tôi.
+
+13
+00:01:03,850 --> 00:01:09,700
+Tuy nhiên dữ liệu có thể có nhiều vấn đề nghiêm trọng hơn
+
+14
+00:01:09,700 --> 00:01:12,420
+Ví dụ, nếu bạn nhìn vào mục "Khách hàng thân thiết",
+
+15
+00:01:12,420 --> 00:01:16,729
+một số thì có mã số, còn số khác lại có ba dấu gạch ngang.
+
+16
+00:01:16,729 --> 00:01:20,450
+Nếu thêm vào vài phép phân tích, một cách ngây thơ,
+
+17
+00:01:20,450 --> 00:01:25,979
+hãy tính xem có bao nhiêu đặt hàng mà không có thẻ khách hàng thân thiết.
+
+18
+00:01:25,979 --> 00:01:30,939
+Chỉ cần nhìn vào vài hàng đầu tiên thôi đã thấy rồi. Ta sẽ dùng hàm 'COUNTIF'
+
+19
+00:01:30,939 --> 00:01:37,369
+cho cột K, tức là cho tất cả cột Khách hàng thân thiết, và sẽ đếm tất cả các ô có 3 gạch ngang.
+
+20
+00:01:37,369 --> 00:01:42,289
+Nhưng đáng tiếc, đây không phải là giá trị chính xác. Vì nếu ta nhìn vào cột Khách hàng thân thiết,
+
+21
+00:01:42,289 --> 00:01:47,560
+ta có thể dễ dàng tìm cột này bằng cách áp dụng một bộ lọc. Quay lại cột này,
+
+22
+00:01:47,560 --> 00:01:54,119
+ta sẽ thấy có vài giá trị bằng 0. Đây có lẽ không phải là mã thẻ khách hàng thân thiết
+
+23
+00:01:54,119 --> 00:01:59,810
+mà đặt những món hàng này. Ở một vài chi nhánh, họ lưu thẻ khách hàng thân thiết
+
+24
+00:01:59,810 --> 00:02:06,829
+là số 0 thay vì 3 gạch ngang. Vậy ta có thể làm vài phép tính toán
+
+25
+00:02:06,829 --> 00:02:11,690
+để khiến dữ liệu được thống nhất hơn. Ta có thể đến cột "Khách hàng thân thiết",
+
+26
+00:02:11,690 --> 00:02:14,430
+Đúng rồi. Đến cột "Khách hàng thân thiết".
+
+27
+00:02:14,430 --> 00:02:20,470
+Và tạo một cột "Khách hàng thân thiết đã xử lý". Tại đây ta sẽ viết: 
+
+28
+00:02:20,470 --> 00:02:28,420
+Xét cả ba trường hợp, dù giá trị là ô trống, số 0 hay 3 gạch ngang,
+
+29
+00:02:28,420 --> 00:02:33,080
+Một trong ba trường hợp này thì ta cũng chỉ đưa ra một giá trị duy nhất.
+
+30
+00:02:33,080 --> 00:02:36,760
+Ta chọn gì cũng được. Ở đây tôi chọn 3 gạch ngang.
+
+31
+00:02:36,760 --> 00:02:39,670
+Được rồi. Trong trường hợp này là 3 gạch ngang.
+
+32
+00:02:39,670 --> 00:02:43,190
+Mặt khác ta có thể đưa ra giá trị của khách hàng thân thiết.
+
+33
+00:02:43,190 --> 00:02:47,400
+Nếu ta dùng công thức đó, ta có thể kéo nó xuống như thế này
+
+34
+00:02:47,400 --> 00:02:50,680
+Được rồi đấy. Giờ thì bạn sẽ thấy ở tất cả các ô,
+
+35
+00:02:50,680 --> 00:02:56,970
+dù giá trị có là 0 thì ta có 3 gạch ngang. Và dù là ô trống, trong bất cứ trường hợp nào
+
+36
+00:02:56,970 --> 00:03:01,930
+thì ta vẫn sẽ có 3 dấu gạch ngang. Vừa đẹp vừa thống nhất.
+
+37
+00:03:01,930 --> 00:03:05,820
+Bất kể nội dung cột K có là gì thì nội dung cột L sẽ rất mạch lạc.
+
+38
+00:03:05,820 --> 00:03:10,100
+Chú ý ở đây là tôi đang tiến hành việc này trên trang tính ban đầu.
+
+39
+00:03:10,100 --> 00:03:14,670
+Tôi đặt dữ liệu đã xử lý cạnh dữ liệu đầu vào vì đây là bài giảng qua video,
+
+40
+00:03:14,670 --> 00:03:18,070
+sẽ rất mất công chuyển qua chuyển lại giữa các trang tính.
+
+41
+00:03:18,070 --> 00:03:22,040
+Thông thường bạn sẽ đưa các dữ liệu này sang một trang tính riêng vì bạn muốn
+
+42
+00:03:22,040 --> 00:03:26,430
+tách bạch dữ liệu đầu vào và các công thức
+Trong phần bài tập bạn cũng sẽ làm thế.
+
+43
+00:03:26,430 --> 00:03:31,830
+Đây chỉ là ví dụ thôi, bình thường
+bạn không làm như thế này.
+
+44
+00:03:31,830 --> 00:03:36,400
+Bạn cũng sẽ thấy dữ liệu còn mắc nhiều vấn đề nghiêm trọng hơn nữa.
+
+45
+00:03:36,400 --> 00:03:41,380
+Nếu ta đi đến cột "Giá bán", ta chọn cột đó và dùng bộ lọc để
+
+46
+00:03:41,380 --> 00:03:46,360
+xem tất cả các giá trị trong cột. Có nhiều ô giá trị có ký hiệu đô la, trong khi
+
+47
+00:03:46,360 --> 00:03:51,260
+các ô khác lại không có. Bạn có thể suy nghĩ: "Đây có phải là vấn đề không?"
+
+48
+00:03:51,260 --> 00:03:52,950
+Ta có thể hỏi Excel.
+
+49
+00:03:52,950 --> 00:03:59,320
+Ta có thể hỏi "Hai giá trị này có giống nhau không?"
+Và Excel đáp "Đúng". Vâng, hai giá trị này
+
+50
+00:03:59,320 --> 00:04:01,710
+như nhau. Đây chỉ là vấn đề hình thức
+
+51
+00:04:01,710 --> 00:04:07,150
+và không thực sự là vấn đề. Tuy nhiên có một thứ có vấn đề.
+
+52
+00:04:07,150 --> 00:04:13,510
+Một vài giá trị ở đây có dấu phẩy. Hãy chọn một ô nào.
+
+53
+00:04:13,510 --> 00:04:17,060
+Ta muốn biết: "Đây có phải là vấn đề không?" Có một cách bạn luôn có thể thử để xem
+
+54
+00:04:17,060 --> 00:04:20,949
+chúng có bình thường không đó là thực hiện tính toán với chúng.
+
+55
+00:04:20,949 --> 00:04:25,889
+Nếu ta cộng hai giá trị này... Hả? Không được rồi.
+
+56
+00:04:25,889 --> 00:04:30,379
+Sao lại như vậy? Ta có thể đoán rằng,
+
+57
+00:04:30,379 --> 00:04:34,509
+có thể đây là từ ngữ. Và ta có thể hỏi Excel "Này, đây có phải là từ ngữ không?"
+
+58
+00:04:34,509 --> 00:04:37,680
+Bạn có nghĩ đây là từ ngữ không?
+Excel đáp: "Đúng vậy!".
+
+59
+00:04:37,680 --> 00:04:42,819
+Đây đúng là từ ngữ. Ít nhất ta đã biết điều gì sai ở đây.
+
+60
+00:04:42,819 --> 00:04:45,729
+Tôi sẽ chỉ cho bạn một công thức mà bạn có thể
+
+61
+00:04:45,729 --> 00:04:51,499
+để chuyển đổi ký tự văn bản thành số nếu Excel không tự động làm việc này.
+
+62
+00:04:51,499 --> 00:04:55,550
+Đôi khi nó cứ tự động làm thôi. Để tôi chỉ cho bạn công thức này dùng như thế nào.
+
+63
+00:04:55,550 --> 00:04:58,659
+Chúng ta sẽ xoá dòng ký tự này đi, không cần nó nữa.
+
+64
+00:04:58,659 --> 00:05:02,659
+Xoá nó đi. Bây giờ ta sẽ dùng hàm NUMBERVALUE.
+
+65
+00:05:02,659 --> 00:05:05,860
+Đây là hàm có thể áp dụng với giá trị là văn bản, giờ ta biết rằng
+
+66
+00:05:05,860 --> 00:05:08,460
+đây là dạng văn bản. Vậy ta có thể áp dụng hàm đó.
+
+67
+00:05:08,460 --> 00:05:12,560
+Sau đó ta có thể nói dấu ngăn cách thập phân ở số này là gì.
+
+68
+00:05:12,560 --> 00:05:16,659
+Tất nhiên như bạn thấy, trong trường hợp này đó là dấu phẩy
+
+69
+00:05:16,659 --> 00:05:20,879
+Sau khi kết thúc công thức, ta được một giá trị rất đẹp.
+
+70
+00:05:20,879 --> 00:05:25,029
+100, một giá trị thực. Và bạn có thể kéo xuống như vậy.
+
+71
+00:05:25,029 --> 00:05:29,020
+Ở đây tôi đang thực hiện với bộ lọc, nhưng tất nhiên bạn có thể làm việc này với tất cả các hàng.
+
+72
+00:05:29,020 --> 00:05:33,379
+Để đảm bảo ta đã làm đúng, ta sẽ thêm một công thức và để xem
+
+73
+00:05:33,379 --> 00:05:37,550
+Đúng vậy, đây đúng là dữ liệu thực. Vì nếu ta cộng 100 với 100 ta
+
+74
+00:05:37,550 --> 00:05:41,699
+được 200, chứ không phải là #VALUE như lúc nãy.
+
+75
+00:05:41,699 --> 00:05:48,469
+Vậy bài tập của tuần này là làm sạch tất cả các dữ liệu để chuẩn bị cho
+
+76
+00:05:48,469 --> 00:05:51,460
+bước phân tích dữ liệu mà ta sẽ tiến hành vào tuần sau.
+
+77
+00:05:51,460 --> 00:05:52,080
+Chúc may mắn!
+

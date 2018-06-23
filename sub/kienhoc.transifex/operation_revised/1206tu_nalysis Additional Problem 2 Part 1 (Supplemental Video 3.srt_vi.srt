@@ -1,0 +1,402 @@
+0
+00:00:00,000 --> 00:00:00,001
+Thanh_Nguyễn 18/10/2016
+http://youtu.be/JzzfmEIyvLk
+
+1
+00:00:05,000 --> 00:00:09,890
+Chào mừng bạn trở lại với khóa quản trị vận hành và ta đang nói
+
+2
+00:00:09,890 --> 00:00:14,320
+về phân tích năng lực và tôi có thêm một vấn đề nữa cho bạn.
+
+3
+00:00:14,320 --> 00:00:19,259
+Đây là vấn đề bổ sung số 2
+và nó có thể được chia thành 3 phần
+
+4
+00:00:19,259 --> 00:00:22,990
+vì nó sẽ khá toàn diện nên ta sẽ bắt đầu.
+
+5
+00:00:22,989 --> 00:00:29,459
+Ta sẽ bàn về công ty Amazing Sheds.
+Công ty này sản xuất ba loại lán trại khác nhau
+
+6
+00:00:29,460 --> 00:00:34,420
+cao cấp, vượt trội, cơ bản.
+Mỗi lán trại sử dụng
+
+7
+00:00:34,420 --> 00:00:39,800
+cùng nguồn tài nguyên, đội chế tạo, đội sơn và
+
+8
+00:00:39,799 --> 00:00:45,069
+đội giám sát. Công ty đã tiếp nhận đơn hàng cho 20 loại lán trại cơ bản
+
+9
+00:00:45,070 --> 00:00:50,200
+10 lán cao cấp, và 10 lán vượt trội được hoàn thiện trong một tuần.
+
+10
+00:00:50,200 --> 00:00:52,359
+Ta sẽ giả định là 5 ngày trong một tuần.
+
+11
+00:00:52,359 --> 00:00:57,609
+Câu hỏi là họ có thể đáp ứng yêu cầu đơn hàng không,
+
+12
+00:00:57,609 --> 00:01:03,019
+vì sao và số đội nhỏ nhất cần cho mỗi nguồn là bao nhiêu.
+Vậy thông tin về lán trại
+
+13
+00:01:03,020 --> 00:01:09,469
+và công ty Sheds và các nhóm tài nguyên khác nhau của họ ở trên slide
+
+14
+00:01:09,469 --> 00:01:13,560
+Ở đây bạn có thể thấy rằng ta có 
+4 nhóm tài nguyên khác nhau: chế tạo, lắp ráp
+
+15
+00:01:13,560 --> 00:01:20,379
+sơn và thanh tra. Và có ba loại lán khác nhau đang được tiến hành
+
+16
+00:01:20,379 --> 00:01:27,719
+vậy có những lượng đơn vị khác nhau cho mỗi loại lán.
+Lán cơ bản cần 2 giờ
+
+17
+00:01:27,719 --> 00:01:33,978
+để chế tạo, 3 giờ để lắp ráp, 1 giờ để sơn và 1.5 giờ để kiểm tra.
+
+18
+00:01:33,978 --> 00:01:39,759
+Loại cao cấp lần lượt là 2.5; 3.5; 1.25; 1.5
+
+19
+00:01:39,759 --> 00:01:45,739
+Loại lán trại vượt trội lần lượt là 2.5; 3.8; 2
+và 1.5
+
+20
+00:01:45,739 --> 00:01:51,339
+bạn có thể thấy rằng mỗi loại lán khác nhau
+thì có một lượng đơn vị trong giai đoạn chế tạo khác nhau.
+
+21
+00:01:51,340 --> 00:01:55,159
+Có  bốn đội sẵn sàng,
+
+22
+00:01:55,159 --> 00:02:00,719
+3 lắp ráp, 2 sơn và 2 thanh tra
+và khi ta nhìn vào số giờ khả dụng
+
+23
+00:02:00,719 --> 00:02:06,019
+của mỗi đội mỗi ngày, bạn có thể thấy nhóm chế tạo
+
+24
+00:02:06,019 --> 00:02:07,869
+có 7 giờ khả dụng và 
+
+25
+00:02:07,870 --> 00:02:15,490
+nhóm lắp ráp có 7 và 1/2 giờ, và nhóm kiểm tra có 6 giờ.
+Vậy điều đầu tiên ta cần làm là
+
+26
+00:02:15,490 --> 00:02:20,390
+tìm ra lượng đơn vị trung bình là bao nhiêu. Ta có ba loại lán khác nhau
+
+27
+00:02:20,389 --> 00:02:25,319
+và mỗi loại có lượng đơn vị khác nhau. Vậy ta cần
+
+28
+00:02:25,319 --> 00:02:30,560
+tìm ra lượng đơn vị trung bình. Để làm được điều đó, ta phải
+
+29
+00:02:30,560 --> 00:02:36,319
+lấy một số bình quân gia quyền.
+Ta biết ta sẽ thi công 20 lán cơ bản, 10 lán cao cấp, và 10 lán vượt trội
+
+30
+00:02:36,319 --> 00:02:42,689
+trong một tuần, nghĩa là ta có tổng cộng 40 lán.
+Vậy tỷ lệ sản phẩm của ta là
+
+31
+00:02:42,689 --> 00:02:53,810
+50% cơ bản 25% cao cấp 25% vượt trội. Sử dụng tỷ lệ sản phẩm này
+
+32
+00:02:53,810 --> 00:03:01,009
+tiếp theo ta có thể tính toán lượng đơn vị trung bình cho mỗi nhóm tài nguyên khác nhau
+
+33
+00:03:01,009 --> 00:03:07,479
+Vậy khi ta bắt đầu vời chế tạo, lượng đơn vị bình quân gia quyền của ta là 2 và 1/4 giờ
+
+34
+00:03:07,479 --> 00:03:10,869
+lắp ráp 3 và 1/3 giờ, sơn 1.13  giờ
+
+35
+00:03:10,870 --> 00:03:17,239
+và kiểm tra 1.5 giờ, và nếu nhìn vào phần nửa cuối của slide, bạn có thể thấy
+
+36
+00:03:17,239 --> 00:03:22,810
+điều đó được tính như thế nào. Vậy giờ ta biết ta cần bao nhiêu thời gian cho mỗi loại lán.
+
+37
+00:03:22,810 --> 00:03:28,849
+Điều tiếp theo ta cần làm là tìm ra ta có bao nhiêu thời gian hữu dụng.
+
+38
+00:03:28,849 --> 00:03:33,430
+Để tính số thời gian hữu dụng mỗi ngày, ta lấy số đội cho mỗi tài nguyên
+
+39
+00:03:33,430 --> 00:03:38,830
+nhân với số giờ hữu dụng của mỗi đội mỗi ngày, và đó là cách ta tính được
+
+40
+00:03:38,830 --> 00:03:44,500
+lượng thời gian hữu dụng của ta mỗi ngày.
+Vậy ta có 4 đội chế tạo hữu dụng,
+
+41
+00:03:44,500 --> 00:03:50,469
+mỗi đội làm việc 7 giờ và cho ta 28 giờ.
+Ta thực hiện phép tính tương tự 
+
+42
+00:03:50,469 --> 00:03:57,849
+với đội lắp ráp, sơn, và kiểm tra.
+Vậy bạn có thể thấy lượng thời gian ở phía góc dưới bên trái của slide
+
+43
+00:03:57,849 --> 00:04:04,549
+Tiếp đó, ta phải tính năng lực mỗi ngày.
+Năng lực ta có bao nhiêu thời gian?
+
+44
+00:04:04,550 --> 00:04:09,719
+Ta cần bao nhiêu thời gian?
+Ta có 28 giờ hữu dụng và ta cần
+
+45
+00:04:09,719 --> 00:04:17,250
+2 và 1/4 giờ cho mỗi lán. 
+Vậy ta chế tạo được 12.44 số lán 
+
+46
+00:04:17,250 --> 00:04:19,419
+ta có 22 và 1/2 giờ để lắp ráp
+
+47
+00:04:19,419 --> 00:04:25,459
+ và ta cần 3 và 1/3 giờ, vậy ta lắp ráp được 6.77 số lán và
+
+48
+00:04:25,459 --> 00:04:28,819
+với sơn ta có 14 giờ hữu dụng
+
+49
+00:04:28,819 --> 00:04:36,209
+chia đó cho 1.31, ta được 10.67 giờ,
+và với kiểm tra, ta có 12 giờ hữu dụng, chia cho
+
+50
+00:04:36,209 --> 00:04:43,899
+1 và 1/2, ra được 8 giờ.
+Vậy đó là năng lực của ta mỗi ngày. Và ta có 5 ngày
+
+
+51
+00:04:43,899 --> 00:04:49,579
+trong một tuần nên ta nhân năng lực của ta mỗi ngày với 5,
+và điều đó cho ta biết
+
+52
+00:04:49,579 --> 00:04:56,079
+ta có thể thực hiện được bao nhiêu trong vòng một tuần.
+Và như bạn có thể thấy trở ngại của ta là quá trình lắp ráp
+
+53
+00:04:56,079 --> 00:05:07,829
+ta chỉ có thể làm được 33.8 số lán trong 1 tuần
+khi ta cần làm 40 chiếc.
+
+54
+00:05:07,829 --> 00:05:10,009
+Vậy trở ngại của ta là phần lắp ráp ở ngay đó,
+
+55
+00:05:10,009 --> 00:05:17,879
+33.8 số lán khi nhìn vào điều này, ta hỏi liệu họ có thẻ đáp ứng
+
+56
+00:05:17,879 --> 00:05:20,009
+yêu cầu đơn hàng của họ không và vì sao?
+
+57
+00:05:20,009 --> 00:05:23,779
+Vâng, họ không thể. Vì số lán nhiều nhất họ có thể sản xuất
+
+58
+00:05:23,779 --> 00:05:30,199
+là 33.8. Vậy giờ ta biết họ không thể đáp ứng yêu cầu.
+
+59
+00:05:30,199 --> 00:05:36,978
+Câu hỏi tiếp theo là ta nên có bao nhiêu đội cho mỗi tài nguyên.
+
+60
+00:05:36,978 --> 00:05:42,819
+Vậy hãy phân tích điều đó. Khi tính lượng tài nguyên cần thiết, ta phân tích thông tin
+
+61
+00:05:42,819 --> 00:05:44,209
+theo cách khác hơn một chút.
+
+62
+00:05:44,209 --> 00:05:50,159
+Thay vì tính ta có và cần bao nhiêu thời gian, ta thử và
+
+63
+00:05:50,160 --> 00:05:57,979
+tính tổng lượng thời gian ta cần cho 40 lán, sau đó ta
+
+64
+00:05:57,978 --> 00:06:02,849
+làm ngược lại để có lượng tài nguyên cần thiết.
+Vậy khi tôi nhìn vào
+
+65
+00:06:02,850 --> 00:06:09,039
+lượng thời gian cần thiết mỗi tuần, ta biết ta cần 2.25 chế tạo giờ cho mỗi lán
+
+66
+00:06:09,038 --> 00:06:17,529
+và ta cần sản xuất 40 lán,
+vậy 40 x 2.25 = 90 giờ
+
+67
+00:06:17,529 --> 00:06:25,029
+ta làm loại phép tính tương tự cho mỗi đội khác.
+Với quá trình lắp ráp, ta cần
+
+68
+00:06:25,029 --> 00:06:27,168
+3.33 giờ cho mỗi lán.
+
+69
+00:06:27,168 --> 00:06:29,128
+Ta nhân nó với 40.
+
+70
+00:06:29,129 --> 00:06:35,330
+Vậy đó là 133.2 giờ cho phần sơn.
+Cuối cùng ta có 52.4 giờ và 
+
+71
+00:06:35,329 --> 00:06:43,519
+kiểm tra 60 giờ. Giờ ta chia nhỏ thời gian cần thiết mỗi ngày, nên ta biết cần bao nhiêu
+
+72
+00:06:43,519 --> 00:06:48,819
+giờ mỗi tuần. Ta sẽ chia cho 5 ngày một tuần,
+
+73
+00:06:48,819 --> 00:07:00,309
+vậy giờ điều đó cho ta biết cần bao nhiêu giờ đồng hồ mỗi ngày.
+90 chia cho 5 bằng 18, 133.2 chia 5 bằng 26.64
+
+74
+00:07:00,309 --> 00:07:08,088
+52.4 chia 3 bằng 10.48, và 60 chia 5 bằng 12
+
+75
+00:07:08,088 --> 00:07:15,069
+đó là lượng thời gian ta cần mỗi ngày.
+Ta cũng biết mỗi ngày mỗi đội có bao nhiêu giờ khả dụng
+
+76
+00:07:15,069 --> 00:07:22,209
+cái mà đã được đưa ra ngay từ đầu. Nếu ta chia 2 lượng thời gian cần thiết mỗi ngày đó
+
+77
+00:07:22,209 --> 00:07:28,168
+cho số giờ khả dụng của mỗi đội mỗi ngày, 
+
+78
+00:07:28,168 --> 00:07:37,109
+ta được số đội ta cần.
+Vậy 18 chia 7 bằng 2.57
+
+79
+00:07:37,110 --> 00:07:50,229
+26.64 chia 7.5 bằng 3.55, 10.48 chia 7 bằng 1.5
+và 12 chia 6 bằng 2
+
+80
+00:07:50,228 --> 00:07:56,438
+vậy nhìn tổng thể, hiện tại ta có 4 đội chế tạo, và
+
+81
+00:07:56,439 --> 00:08:04,749
+ta chỉ cần 2.57. Đội lắp ráp, trở ngại của ta, ta chỉ có 3 đội nhưng
+
+
+82
+00:08:04,749 --> 00:08:12,550
+thực tế ta cần 3.55.
+Hiện tại ta có 2 đội sơn, nhưng ta cần 1 và 1/2.
+
+83
+00:08:12,550 --> 00:08:18,759
+Ta có 2 đội kiểm tra và ta cần 2
+nên ta thừ năng lực với đội chế tạo 
+
+84
+00:08:18,759 --> 00:08:24,459
+nhưng không đủ cho lắp ráp
+vậy khi ta cân nhắc
+
+85
+00:08:24,459 --> 00:08:29,329
+thay đổi tài nguyên khả dụng cho công ty Amazing Sheds
+
+86
+00:08:29,329 --> 00:08:34,439
+ta sẽ cân nhắc việc giảm số đội chế tạo và
+
+87
+00:08:34,439 --> 00:08:37,639
+tăng số đội lắp ráp
+
+88
+00:08:37,639 --> 00:08:43,799
+vậy khi ta nghĩ về phân tích năng lực, nó giúp ta hiểu rằng nếu ta
+
+89
+00:08:43,799 --> 00:08:48,379
+bố trí nguồn tài nguyên hợp lý đúng chỗ
+
+90
+00:08:48,379 --> 00:08:52,210
+nó thực sự cải thiện nhịp độ sản xuất.
+Tôi sẽ gặp lại bạn trong phần 2.
+

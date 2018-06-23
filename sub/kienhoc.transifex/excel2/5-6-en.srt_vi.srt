@@ -1,0 +1,452 @@
+1
+00:00:00,190 --> 00:00:05,210
+https://youtu.be/XiTCm-KA8o4
+Lần trước ta đã xem thiết kế kết cấu của biểu đồ.
+
+2
+00:00:05,600 --> 00:00:07,640
+Hôm nay ta sẽ xem xét những cách thực hành tốt nhất
+
+3
+00:00:07,860 --> 00:00:09,880
+Những điều ta cần nhớ từ bài học trước là:
+
+4
+00:00:10,660 --> 00:00:16,500
+Cố gắng thể hiện gần với sự thật nhất có thể.
+Đừng cố điều khiển người đọc.
+
+5
+00:00:16,960 --> 00:00:22,160
+Không bao giờ dùng biểu đồ 3D và tránh dùng biểu đồ tròn.
+
+6
+00:00:22,780 --> 00:00:27,840
+Ở phần này, ta sẽ tập trung vào vài
+cách thực hành tốt nhất để có những biểu đồ đẹp
+
+7
+00:00:32,340 --> 00:00:35,480
+Một trong những biểu đồ căn bản là
+biểu đồ cột hay là biểu đồ thanh.
+
+8
+00:00:35,480 --> 00:00:39,300
+Vậy, khi nào bạn dùng một thanh
+và khi nào bạn dùng 1 cột?
+
+9
+00:00:40,640 --> 00:00:44,600
+Thật sự tôi không có ý kiến về điều nào,
+nhưng ta có vài qui định cơ bản.
+
+10
+00:00:45,500 --> 00:00:50,700
+Một trong những yếu tố quan trọng nhất, hoặc
+quyết định nhất, là nhãn của biểu đồ.
+
+11
+00:00:51,000 --> 00:00:57,320
+Nếu bạn nhìn vào 2 biểu đồ, bạn sẽ thấy
+ví dụ, chữ United States không vừa trong 1 dòng.
+
+12
+00:00:57,860 --> 00:00:59,880
+nếu bạn tạo nó trong biểu đồ cột.
+
+13
+00:01:00,220 --> 00:01:07,440
+Do đó nếu bạn có những nhãn dài thì tốt hơn là tạo biểu đồ thanh hay đồ thị thanh hơn là đồ thị cột.
+
+14
+00:01:09,380 --> 00:01:14,300
+Và còn một điều nữa, nếu bạn nhìn vào
+phía dưới bên trái, bạn sẽ thấy có 1 dãy thời gian ở đây.
+
+15
+00:01:15,140 --> 00:01:20,960
+Tôi cũng có thể tạo 1 đồ thị thanh cho nó, bạn
+sẽ thấy nó đúng, nhưng nhìn rất lạ.
+
+16
+00:01:21,180 --> 00:01:28,720
+Khi mà bạn để chiều thời gian vào trục tung
+của biểu đồ, nó sẽ trở nên rất khó hiểu.
+
+17
+00:01:29,020 --> 00:01:34,000
+Thời gian đối với chúng ta chạy từ trái sang phải.
+Do đó nếu bạn có 1 dãy thời gian và...
+
+18
+00:01:34,000 --> 00:01:38,060
+bạn muốn dùng đồ thị thanh hoặc cột,
+bạn nên chọn đồ thị cột.
+
+19
+00:01:40,700 --> 00:01:45,780
+Bây giờ, với những bảng dữ liệu ta đã thấy sự quan trọng của
+khoảng trắng, và với biểu đồ, nó cũng như vậy.
+
+20
+00:01:46,120 --> 00:01:47,920
+Ngoài ra bạn có 1 lựa chọn.
+
+21
+00:01:47,920 --> 00:01:51,680
+Bạn nên nhớ là phần mềm bảng tính của bạn,
+trong trường hợp này là Excel...
+
+22
+00:01:51,920 --> 00:01:55,640
+sẽ luôn mặc định nó cho bạn,
+và điều mặc định không phải lúc nào cũng đúng.
+
+23
+00:01:56,480 --> 00:01:59,820
+Ở đây bạn thấy có thể có
+vài giá trị khác nhau.
+
+24
+00:02:00,810 --> 00:02:07,530
+Tôi thích khoảng trắng vào khoảng 50 hay 100%.
+
+25
+00:02:08,760 --> 00:02:13,920
+Và tôi sẽ cho bạn thấy trong Excel, làm cách nào bạn có thể
+thay đổi khoảng trắng giữa các cột.
+
+26
+00:02:20,760 --> 00:02:21,840
+Bây giờ chúng ta ở đây.
+
+27
+00:02:23,200 --> 00:02:26,300
+Tôi chọn hết dữ liệu
+
+28
+00:02:27,480 --> 00:02:29,480
+Tôi học điều này từ Felienne.
+
+29
+00:02:31,480 --> 00:02:36,180
+Ta chọn Insert, Column chart.
+
+30
+00:02:41,460 --> 00:02:42,380
+Đây rồi.
+
+31
+00:02:44,460 --> 00:02:47,700
+Tôi không thích số khoảng trắng
+tôi thấy ở đây.
+
+32
+00:02:47,700 --> 00:02:52,819
+Quá nhiều đối với tôi và tôi muốn thay đổi nó,
+do đó tôi chọn 1 trong những cột.
+
+33
+00:02:52,819 --> 00:02:54,259
+Cột nào cũng được.
+
+34
+00:02:55,440 --> 00:02:56,540
+Click chuột phải.
+
+35
+00:02:58,220 --> 00:03:00,360
+Tôi định dạng lại chuỗi dữ liệu.
+
+36
+00:03:02,160 --> 00:03:04,660
+Và đây.
+
+37
+00:03:05,360 --> 00:03:07,900
+Tôi có thể điều chỉnh chiều rộng khoảng trống.
+
+38
+00:03:08,660 --> 00:03:14,720
+Tôi sẽ đặt nó là 50%.
+
+39
+00:03:16,860 --> 00:03:19,580
+Với tôi, nó dễ đọc hơn.
+
+40
+00:03:20,240 --> 00:03:24,840
+Quan trọng là bạn biết bạn có lựa chọn
+và bạn nên nghĩ về nó...
+
+41
+00:03:24,840 --> 00:03:26,680
+nó sẽ ảnh hưởng thế nào tới thông điệp của bạn.
+
+42
+00:03:34,800 --> 00:03:36,800
+Và đây là một ví dụ cũ.
+
+43
+00:03:37,340 --> 00:03:41,700
+Hồi trước, ta có máy in kim.
+Loại này không thể in màu...
+
+44
+00:03:42,400 --> 00:03:46,620
+và tôi đã tạo nhiều biểu đồ và dùng cách kẻ sọc khác nhau để...
+
+45
+00:03:46,960 --> 00:03:49,960
+phân biệt các phần khác nhau trong đồ thị.
+
+46
+00:03:50,840 --> 00:03:56,620
+Vài người vẫn dùng cách đó,
+nhưng các bạn không nên.
+
+47
+00:03:57,460 --> 00:04:03,960
+Dù cho bạn không có máy in màu.
+
+48
+00:04:04,560 --> 00:04:11,820
+Thì nên dùng màu xám.
+
+49
+00:04:13,580 --> 00:04:20,560
+Bạn có máy in màu hoặc màn hình hiển thị là tốt nhất.
+
+50
+00:04:20,560 --> 00:04:27,200
+Dùng màu sắc đối lập để phân biệt
+những thành phần khác nhau trong dữ liệu của bạn.
+
+51
+00:04:29,600 --> 00:04:30,840
+Chú thích thì sao?
+
+52
+00:04:30,840 --> 00:04:34,660
+Excel đặt bên phải.
+
+53
+00:04:35,980 --> 00:04:38,760
+Hãy cùng nghĩ về tỉ lệ hiển thị.
+
+54
+00:04:39,000 --> 00:04:42,340
+Nếu nó nằm ở bên phải, nó sẽ chiếm chỗ...
+
+55
+00:04:43,000 --> 00:04:46,860
+mà đôi khi tôi muốn dùng chỗ đó cho biểu đồ của mình...
+
+56
+00:04:47,280 --> 00:04:52,440
+và nó có khung bao chung quanh
+không thêm được gì cho đồ thị.
+
+57
+00:04:52,840 --> 00:04:56,620
+Nên ta có thể để chú thích xuống phía dưới.
+
+58
+00:04:57,040 --> 00:05:02,300
+Bây giờ tôi có nhiều không gian hơn cho đồ thị của tôi.
+
+59
+00:05:03,060 --> 00:05:06,560
+để dùng nó hiệu quả hơn.
+
+60
+00:05:09,880 --> 00:05:15,440
+Và 1 điều nữa, hãy nhớ lại đồ thị đầu tiên trong video trước.
+
+61
+00:05:15,800 --> 00:05:18,720
+Nó là đồ thị "Doanh số bán hàng đang tăng mạnh".
+
+62
+00:05:19,280 --> 00:05:23,460
+1 điều đáng lưu ý mà người tạo ra đồ thị này đã làm là tạo ấn tượng bằng tỉ lệ.
+
+63
+00:05:24,000 --> 00:05:29,040
+Bạn có thể nói quá hoặc nói ít về mức tăng thực sự.
+
+64
+00:05:30,220 --> 00:05:34,560
+Tôi thường cho tỉ lệ 1/1.5 cho biểu đồ của mình.
+
+65
+00:05:34,860 --> 00:05:43,200
+Tỉ lệ 1/2 là nói ít (cần điều chỉnh!) và tỉ lệ 1/1 hoặc thậm chí 3/2 là nói quá.
+
+66
+00:05:43,380 --> 00:05:48,260
+Bạn nên biết là tỉ lệ thể hiện có thể ảnh hưởng tới người đọc
+và bạn có thể thay đổi nó...
+
+67
+00:05:48,270 --> 00:05:50,730
+khi bạn tạo 1 biểu đồ trong Excel.
+
+68
+00:05:53,260 --> 00:05:58,460
+1 vấn đề khác nữa là đôi khi, ta có quá nhiều dữ liệu và bạn muốn thể hiện hết tất cả.
+
+69
+00:05:58,800 --> 00:06:02,520
+Trí nhớ ngắn hạn của chúng ta có thể chứa 7 thứ...
+
+70
+00:06:02,520 --> 00:06:08,220
+nhưng bỏ cả 7 biến vô trong 1 đồ thị thì quá khó hiểu.
+
+71
+00:06:08,220 --> 00:06:13,520
+Tôi nghĩ 5 biến là tối đa,
+và cho dù như vậy cũng không dễ biểu diễn dữ liệu.
+
+72
+00:06:13,520 --> 00:06:16,980
+Nếu có thể, tôi cũng sẽ không bỏ 5 biến vào trong cùng 1 biểu đồ.
+
+73
+00:06:17,320 --> 00:06:23,180
+Nhưng nên nhớ, 5 biến là tối đa.
+Nếu nhiều hơn 5, bạn phải tìm cách khác.
+
+74
+00:06:24,740 --> 00:06:26,960
+Vậy cách khác là cách nào?
+
+75
+00:06:27,340 --> 00:06:31,920
+Ở đây ta có 1 bảng.
+Và ta biết nó là bảng 1 chiều...
+
+76
+00:06:31,930 --> 00:06:38,330
+với 2 dữ kiện
+Kênh phân phối và Vùng.
+
+77
+00:06:38,580 --> 00:06:44,320
+Có nhiều thông tin ở đây.
+Kênh phân phối có bán trực tiếp, nhà phân phối, đại lý bán lẻ.
+
+78
+00:06:44,320 --> 00:06:49,500
+Tôi có 4 vùng, đặt chỗ, đặt hàng và hoá đơn.
+
+79
+00:06:49,500 --> 00:06:55,020
+Tôi muốn biểu diễn chúng lên biểu đồ.
+
+80
+00:06:56,060 --> 00:06:58,880
+Nhưng quá nhiều cho 1 biểu đồ duy nhất.
+
+81
+00:06:59,320 --> 00:07:05,280
+Bạn nên làm gì: thay vì 1 biểu đồ,
+tạo vải cái nhỏ hơn.
+
+82
+00:07:05,560 --> 00:07:08,300
+Tôi sẽ mô tả nó bằng ví dụ này.
+
+83
+00:07:09,340 --> 00:07:17,040
+Ta biểu diễn những biểu đồ của Kênh phân phối theo chiều ngang.
+
+84
+00:07:17,300 --> 00:07:20,980
+Bên trái tôi có Bán trực tiếp,
+Bên phải tôi có Đại lý bán lẻ.
+
+85
+00:07:21,420 --> 00:07:25,400
+Hãy nhìn những nhãn trên trục y:
+
+86
+00:07:25,539 --> 00:07:28,679
+Tôi chỉ tạo chúng 1 lần cho biểu đồ ngoài cùng bên trái
+
+87
+00:07:29,020 --> 00:07:33,840
+Những biểu đồ khác không cần nhãn
+vì chúng có thể mượn nhãn của cái đầu tiên.
+
+88
+00:07:34,200 --> 00:07:40,560
+Cho nên bạn thấy 3 đồ thị khác nhau, nhưng thật sự chúng là 1 biểu đồ hoàn chỉnh.
+
+89
+00:07:40,820 --> 00:07:41,979
+Tương tự cho chú thích.
+
+90
+00:07:41,979 --> 00:07:46,379
+Tôi chỉ có 1 chú thích ở đây, vì nó giống nhau cho cả 3 biểu đồ.
+
+91
+00:07:47,660 --> 00:07:51,680
+Đương nhiên tôi có nhiều lựa chọn để biểu diễn dữ liệu.
+
+92
+00:07:51,680 --> 00:07:57,419
+Và không có quy định cái nào là tốt nhất,
+bởi vì nó phụ thuộc vào việc tôi muốn trình bày cái gì.
+
+93
+00:07:57,419 --> 00:08:02,199
+Nếu tôi muốn tập trung vào Kênh phân phối, như này là ổn.
+
+94
+00:08:02,480 --> 00:08:07,740
+Nhưng, nếu tôi muốn tập trung vào vùng, tôi phải thay đổi dữ liệu 1 chút...
+
+95
+00:08:07,740 --> 00:08:10,660
+và biểu diễn vùng trên các cột.
+
+96
+00:08:11,980 --> 00:08:14,620
+Hoặc tôi có thể chọn cách khác,
+
+97
+00:08:14,620 --> 00:08:20,460
+bởi vì nếu tôi muốn, ví dụ, so sánh lượng đặt chỗ ở miền Tây...
+
+98
+00:08:20,800 --> 00:08:26,660
+với lượng đặt chỗ ở miền Nam, tôi vẫn có thể biểu diễn như này,
+nhưng nó sẽ khó thấy sự khác biệt về độ dài.
+
+99
+00:08:26,660 --> 00:08:29,820
+Biểu diễn trên trục tung dễ thấy hơm.
+
+100
+00:08:30,520 --> 00:08:32,500
+Nó là lựa chọn khác.
+
+101
+00:08:33,140 --> 00:08:38,420
+Tới đây, chúng ta kết thúc những cách thực hành tốt nhất để tạo ra biểu đồ đẹp và dễ hiểu.
+
+102
+00:08:39,600 --> 00:08:44,640
+Trong phần này, bạn đã học nhiều lý thuyết làm thế nào để thiết kế bảng biểu và biểu diễn biểu đồ.
+
+103
+00:08:45,680 --> 00:08:50,940
+Trong phần tiếp theo, ta sẽ kết hợp mọi thứ lại với nhau và tạo biểu đồ của riêng bạn.
+
+104
+00:08:51,280 --> 00:08:52,920
+Hẹn gặp lại tuần sau.
+

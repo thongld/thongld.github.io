@@ -1,0 +1,292 @@
+0
+00:00:00,000 --> 00:00:00,870
+DANGTHANH 
+https://youtu.be/ko5wYyxMCF8
+
+1
+00:00:00,870 --> 00:00:06,420
+DIỄN GIẢ: Trong buổi thực tập này, bạn sẽ tìm hiểu về dữ liệu bán cấu trúc. 
+
+2
+00:00:06,420 --> 00:00:10,550
+Cụ thể là, bạn sẽ tìm hiểu về các tập tin bản ghi bán cấu trúc.
+
+3
+00:00:10,550 --> 00:00:13,240
+Dạng tập tin bản ghi này được tạo ra từ các câu lệnh prinf
+
+4
+00:00:13,240 --> 00:00:15,020
+và các quá trình trên máy chủ.
+
+5
+00:00:15,020 --> 00:00:18,290
+Lấy ví dụng, các máy chủ web hoặc máy chủ cơ sở dữ liệu hoặc các máy chủ tập tin mạng, 
+
+6
+00:00:18,290 --> 00:00:22,040
+hoặc bởi các thành phần hệ điều hành.
+
+7
+00:00:22,040 --> 00:00:25,575
+Những tập tin đăng bản ghi này có dạng con người có thể đọc được.
+
+8
+00:00:25,575 --> 00:00:27,700
+Điều này khá ngược đời, vì chúng hiếm khi 
+
+9
+00:00:27,700 --> 00:00:29,880
+thật sự được đọc bởi con người.
+
+10
+00:00:29,880 --> 00:00:32,590
+Bạn có thể lưu các tập tin này, hoặc nén chúng,
+
+11
+00:00:32,590 --> 00:00:35,420
+dưới dạng nhị phân hoặc dạng nén.
+
+12
+00:00:35,420 --> 00:00:37,260
+Định dạng của những tập tin này thông thường
+
+13
+00:00:37,260 --> 00:00:40,510
+được xuất bản hoặc đôi khi định nghĩa bởi mã chương trình.
+
+14
+00:00:40,510 --> 00:00:44,810
+Và đôi khi rất khó để phân tích cú pháp của những tập tin này.
+
+15
+00:00:44,810 --> 00:00:49,580
+Do đó chúng ta sẽ sử dụng một tập tin bản ghi máy chủ web Apache.
+
+16
+00:00:49,580 --> 00:00:51,790
+Định dạng của tập tin bản máy chủ web Apache
+
+17
+00:00:51,790 --> 00:00:54,760
+được xác định bởi một định dạng đăng nhập Apache cụ thể.
+
+18
+00:00:54,760 --> 00:00:56,790
+...
+
+19
+00:00:56,790 --> 00:01:01,750
+Đây là một dòng ví dụ của một tập tin bản ghi máy chủ web Apache.
+
+20
+00:01:01,750 --> 00:01:06,070
+Hãy cùng tìm hiểu các thành phần của tập tin bản ghi này.
+
+21
+00:01:06,070 --> 00:01:09,880
+Thành phần đầu tiên là địa chỉ IP của khách hàng.
+
+22
+00:01:09,880 --> 00:01:12,140
+Đây là địa chỉ IP của trình duyệt web
+
+23
+00:01:12,140 --> 00:01:15,720
+liên hệ với hệ thống máy chủ web.
+
+24
+00:01:15,720 --> 00:01:19,210
+Thành phần thứ hai là danh tính người dùng
+
+25
+00:01:19,210 --> 00:01:21,950
+từ máy từ xa, và thành phần thứ ba
+
+26
+00:01:21,950 --> 00:01:25,840
+là danh tính người dùng từ đăng nhập cục bộ.
+
+27
+00:01:25,840 --> 00:01:28,040
+Trong cả hai trường hợp, điều này cơ bản
+
+28
+00:01:28,040 --> 00:01:30,165
+chỉ là một gạch nối, có nghĩa là nó không có sẵn.
+
+29
+00:01:30,165 --> 00:01:33,170
+
+30
+00:01:33,170 --> 00:01:35,680
+Thành phần tiếp theo là thời gian yêu cầu.
+
+31
+00:01:35,680 --> 00:01:40,000
+Nó bắt đầu tính từ khi người dùng web liên lạc đến máy chủ web.
+
+32
+00:01:40,000 --> 00:01:42,570
+
+33
+00:01:42,570 --> 00:01:45,870
+Thành phần tiếp theo là yêu cầu của người dùng.
+
+34
+00:01:45,870 --> 00:01:50,340
+Đó là những gì trình duyệt web của bạn gửi tới máy chủ web.
+
+35
+00:01:50,340 --> 00:01:53,480
+Và nó tạo bởi một vài thành phần nhỏ hơn.
+
+36
+00:01:53,480 --> 00:01:56,290
+Thành phần đầu tiên là phương pháp yêu cầu.
+
+37
+00:01:56,290 --> 00:01:59,980
+Ví dụ, nhận hoặc gửi hoặc đặt.
+
+38
+00:01:59,980 --> 00:02:03,600
+và thành phần tiếp theo là điểm cuối.
+
+39
+00:02:03,600 --> 00:02:06,890
+Đây là một xác nhận tài nguyên đồng dạng.
+
+40
+00:02:06,890 --> 00:02:09,900
+Đây là URL.
+
+41
+00:02:09,900 --> 00:02:13,165
+Thành phần cuối cùng là phiên bản giao thức người dùng.
+
+42
+00:02:13,165 --> 00:02:16,360
+
+43
+00:02:16,360 --> 00:02:20,350
+Hai thành phần cuối cùng trong tập tin đăng nhập
+
+44
+00:02:20,350 --> 00:02:24,190
+là mã trạng thái, và đây là cái mà hệ thống gửi ngược
+
+45
+00:02:24,190 --> 00:02:25,370
+lại cho người dùng.
+
+46
+00:02:25,370 --> 00:02:28,810
+Thông thường, nó là 200 và mọi thứ ổn.
+
+47
+00:02:28,810 --> 00:02:34,990
+Nhưng cũng có những mã khác như nhóm mã 300 hoặc 400 hoặc 500
+
+48
+00:02:34,990 --> 00:02:38,970
+Và chúng thường là một số lỗi hoặc sự cố.
+
+49
+00:02:38,970 --> 00:02:41,330
+Thành phần cuối cùng la kích thước của đối tượng
+
+50
+00:02:41,330 --> 00:02:43,530
+được trả về cho người dùng.
+
+51
+00:02:43,530 --> 00:02:46,150
+Đôi khi nó sẽ là một dấu gạch hoặc số không
+
+52
+00:02:46,150 --> 00:02:47,575
+nếu không có nội dung nào được trả về.
+
+53
+00:02:47,575 --> 00:02:50,670
+
+54
+00:02:50,670 --> 00:02:55,480
+Trong bài thực hành, bạn sẽ khám phá một tập tin bản ghi
+
+55
+00:02:55,480 --> 00:02:57,060
+của hệ thống web NASA.
+
+56
+00:02:57,060 --> 00:03:01,380
+Thông tin bản ghi này gồm 21 ngày bắt đầu từ ngày 1 tháng Tám
+
+57
+00:03:01,380 --> 00:03:06,600
+và sau đó là ngày 3 tháng Tám đến ngày 22 tháng Tám năm 1995.
+
+58
+00:03:06,600 --> 00:03:10,010
+Nó gồm một triệu yêu cầu.
+
+59
+00:03:10,010 --> 00:03:11,870
+Tôi dọn lai một phần của tập tin bản ghi cho bạn
+
+60
+00:03:11,870 --> 00:03:13,990
+bằng việc xóa đi một số yêu cầu quá phức tạp để phân tích.
+
+61
+00:03:13,990 --> 00:03:17,170
+
+62
+00:03:17,170 --> 00:03:22,040
+Ta có thể hỏi một số các câu hỏi về phân tích bản ghi cơ bản.
+
+63
+00:03:22,040 --> 00:03:23,810
+Nhin chung các câu hỏi sẽ như là
+
+64
+00:03:23,810 --> 00:03:26,500
+số liệu thống kê nội dung nào đang được trả về?
+
+65
+00:03:26,500 --> 00:03:29,300
+Những thứ như kích thước hoặc trạng thái.
+
+66
+00:03:29,300 --> 00:03:31,630
+Các loại mã trả về?
+
+67
+00:03:31,630 --> 00:03:36,420
+Hoặc có bao nhiêu 404 -- có nghĩa là lỗi không thấy trang -- ở đó?
+
+68
+00:03:36,420 --> 00:03:37,870
+Có những câu hỏi về thời gian
+
+69
+00:03:37,870 --> 00:03:40,740
+mà ta có thể hỏi, như là có bao nhiêu máy chủ duy nhất ở đó mỗi ngày,
+
+70
+00:03:40,740 --> 00:03:44,280
+có bao nhiêu yêu cầu mỗi ngày,
+
+71
+00:03:44,280 --> 00:03:47,870
+hoặc trung bình, có bao nhiêu yêu cầu cho mỗi máy chủ?
+
+72
+00:03:47,870 --> 00:03:51,170
+Có bao nhiêu lỗi 404 mỗi ngày?
+
+73
+00:03:51,170 --> 00:03:53,720
+Lần nữa, đây là lỗi trang không được tìm thấy.
+

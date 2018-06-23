@@ -1,0 +1,363 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/DfuhVG5LKxA
+
+1
+00:00:00,000 --> 00:00:04,540
+DR. RAMESH YERRABALLI: So let's
+analyze the R2R ladder circuit
+
+2
+00:00:04,540 --> 00:00:08,470
+that we've used for our design.
+
+3
+00:00:08,470 --> 00:00:12,210
+So we have three situations here.
+
+4
+00:00:12,210 --> 00:00:16,160
+The three situations
+correspond to our bit2 bit1,
+
+5
+00:00:16,160 --> 00:00:29,070
+bit0, being 0,0,1, which is my first
+one; 0,1,0, which is this scenario;
+
+6
+00:00:29,070 --> 00:00:33,007
+and a 1,0,0, which is
+the third scenario.
+
+7
+00:00:33,007 --> 00:00:35,090
+DR. JONATHAN VALVANO: So
+the Law of Superpositions
+
+8
+00:00:35,090 --> 00:00:38,770
+says if we look at these
+three basis elements,
+
+9
+00:00:38,770 --> 00:00:42,540
+and prove that these three
+work, the other five, which
+
+10
+00:00:42,540 --> 00:00:45,786
+are combinations of these
+three will also work.
+
+11
+00:00:45,786 --> 00:00:49,590
+DR. RAMESH YERRABALLI: So
+we see that, in this circuit
+
+12
+00:00:49,590 --> 00:00:54,100
+here, let's analyze this one first,
+we see that all of these circuits
+
+13
+00:00:54,100 --> 00:00:58,190
+have something common to them
+in terms of their behavior.
+
+14
+00:00:58,190 --> 00:01:02,830
+When they finally reduce them,
+they will have this form.
+
+15
+00:01:02,830 --> 00:01:19,340
+That is, we will have a signal
+that is at 3.3 volts with a 2R
+
+16
+00:01:19,340 --> 00:01:26,630
+and a R. That is, the net resistance
+from the powering signal to ground
+
+17
+00:01:26,630 --> 00:01:30,770
+is going to 3R.
+
+18
+00:01:30,770 --> 00:01:33,740
+it's just a matter of combining
+them based on what you already
+
+19
+00:01:33,740 --> 00:01:37,010
+know about series and
+parallel resistors.
+
+20
+00:01:37,010 --> 00:01:40,870
+So if you did that, then we can
+find out what the current is.
+
+21
+00:01:40,870 --> 00:01:44,850
+The current as we see
+here that is leaving out
+
+22
+00:01:44,850 --> 00:01:57,760
+of this node, this node, or this node
+is simply given by 3.3 divided by 3R,
+
+23
+00:01:57,760 --> 00:02:10,490
+which in our case is going to come out
+to be 0.1 milliamps because R is 11K.
+
+24
+00:02:10,490 --> 00:02:13,510
+DR. JONATHAN VALVANO: I see
+you also ignored the speaker.
+
+25
+00:02:13,510 --> 00:02:18,760
+The 32 ohms of speakers is a very
+small number compared to 11,000,
+
+26
+00:02:18,760 --> 00:02:20,210
+so you just ignored it.
+
+27
+00:02:20,210 --> 00:02:22,460
+DR. RAMESH YERRABALLI:
+Yes, that is correct.
+
+28
+00:02:22,460 --> 00:02:30,070
+So now what we notice then is when
+we look at each of these values,
+
+29
+00:02:30,070 --> 00:02:35,850
+and we find out what the current
+is, which this is I,0,I which is,
+
+30
+00:02:35,850 --> 00:02:39,090
+in our case, the current.
+
+31
+00:02:39,090 --> 00:02:43,990
+The first one is a I sub
+0,0,1, which is this one.
+
+32
+00:02:43,990 --> 00:02:53,080
+In the second case, it's a I sub 0,1,0.
+
+33
+00:02:53,080 --> 00:02:58,140
+and in the third case,
+this is an I sub1,0,0.
+
+34
+00:02:58,140 --> 00:03:00,350
+so we can calculate
+this is by looking at,
+
+35
+00:03:00,350 --> 00:03:04,570
+for example, how I sub
+0,0,1 gets calculated.
+
+36
+00:03:04,570 --> 00:03:08,730
+We have I coming out of
+here, which we know is this.
+
+37
+00:03:08,730 --> 00:03:10,340
+It gets split.
+
+38
+00:03:10,340 --> 00:03:16,150
+And it gets split in 2R and this net
+resistance is also going to be 2R,
+
+39
+00:03:16,150 --> 00:03:17,780
+so it splits halfway.
+
+40
+00:03:17,780 --> 00:03:19,170
+So half goes here.
+
+41
+00:03:19,170 --> 00:03:21,030
+Half goes here.
+
+42
+00:03:21,030 --> 00:03:23,420
+And then, when it comes
+here, the same thing
+
+43
+00:03:23,420 --> 00:03:25,740
+happens, which is this
+is going to be 2R.
+
+44
+00:03:25,740 --> 00:03:28,510
+So it goes half goes
+here, and half goes here.
+
+45
+00:03:28,510 --> 00:03:30,330
+so we've halved it again.
+
+46
+00:03:30,330 --> 00:03:33,380
+And eventually it goes
+half here and half here.
+
+47
+00:03:33,380 --> 00:03:38,380
+So what we see is that I,0,0,1
+has been halved three times,
+
+48
+00:03:38,380 --> 00:03:43,410
+so it's going to be I divided by 8.
+
+49
+00:03:43,410 --> 00:03:49,080
+Similarly, here, we will have
+this divide half and half.
+
+50
+00:03:49,080 --> 00:03:51,400
+And again, it will be exactly half.
+
+51
+00:03:51,400 --> 00:03:56,550
+And then it'll divide
+half and half and half.
+
+52
+00:03:56,550 --> 00:04:01,430
+And so it's only divided two times,
+so that's going to be I divided by 4.
+
+53
+00:04:01,430 --> 00:04:06,440
+And in this case, it is
+divided half and half.
+
+54
+00:04:06,440 --> 00:04:11,400
+So it's only divided once,
+so it's going to be I over 2.
+
+55
+00:04:11,400 --> 00:04:17,420
+So the law of superposition the tells us
+that if I had a different combination,
+
+56
+00:04:17,420 --> 00:04:25,220
+let's say I had a combination which was
+up 0,1,1/ Then this will give me a net
+
+57
+00:04:25,220 --> 00:04:33,910
+current of I over 8, which is because
+of this bit which is a 0,0,1 scenario,
+
+58
+00:04:33,910 --> 00:04:38,010
+plus the 0,1,0 scenario,
+which is an I over 4.
+
+59
+00:04:38,010 --> 00:04:40,810
+
+60
+00:04:40,810 --> 00:04:46,290
+And similarly, we can evaluate the other
+situation, so no matter what we have,
+
+61
+00:04:46,290 --> 00:04:57,140
+it's a simple linear combination
+of our individual bits.
+
+62
+00:04:57,140 --> 00:05:06,834
+And lastly, 1,1,1 is going to be simply
+I over 8, plus I over 4, plus I over 2.
+
+63
+00:05:06,834 --> 00:05:10,880
+DR. JONATHAN VALVANO: So we have a
+linear relationship between the number
+
+64
+00:05:10,880 --> 00:05:14,580
+N, which is between 0
+and 7, and the output
+
+65
+00:05:14,580 --> 00:05:16,435
+current, which is going
+across our speaker.
+
+66
+00:05:16,435 --> 00:05:18,060
+DR. RAMESH YERRABALLI: That is correct.
+
+67
+00:05:18,060 --> 00:05:22,230
+And the higher the digital
+value, the higher the current.
+
+68
+00:05:22,230 --> 00:05:27,820
+And that's how we know it is doing
+a digital-to-analog conversion.
+
+69
+00:05:27,820 --> 00:05:31,080
+DR. JONATHAN VALVANO: Well, we still
+have to make it oscillate, don't we?
+
+70
+00:05:31,080 --> 00:05:31,960
+DR. RAMESH YERRABALLI: That is correct.
+
+71
+00:05:31,960 --> 00:05:33,085
+DR. JONATHAN VALVANO: How
+are we going to do that?
+
+72
+00:05:33,085 --> 00:05:34,834
+DR. RAMESH YERRABALLI:
+So what we did here
+
+73
+00:05:34,834 --> 00:05:40,390
+is build the hardware
+part of our solution.
+
+74
+00:05:40,390 --> 00:05:46,620
+Now we have to look at the software
+part of our solution, which
+
+75
+00:05:46,620 --> 00:05:49,370
+is going to be using SysTick.
+
+76
+00:05:49,370 --> 00:05:50,550

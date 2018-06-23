@@ -1,0 +1,211 @@
+1
+00:00:01,880 --> 00:00:07,660
+Thao reviewed
+Trong chương này, ta sẽ tìm hiểu về trực quan hoá số liệu (visualization),
+một phần rất quan trọng trong phân tích dữ liệu.
+
+This chapter is about data visualization,
+which is a very important part of data analysis.
+
+2
+00:00:07,660 --> 00:00:12,430
+Đầu tiên, ta liên tục dùng nó để khai thác
+thông tin từ dữ liệu.
+
+3
+00:00:12,430 --> 00:00:16,500
+Càng hiểu thêm về dữ liệu, ta càng dễ 
+rút ra những thông tin quan trọng hơn.
+
+4
+00:00:16,500 --> 00:00:21,449
+Một khi có những thông tin quan trọng đó,
+ta cần thể hiện nó một cách trực quan cho người khác.
+
+5
+00:00:21,449 --> 00:00:26,989
+Bởi vì thông thường, con người cần phải
+thấy được dữ liệu thì mới hiểu được nó.
+
+6
+00:00:26,989 --> 00:00:32,079
+Tôi nói "thấy" ở đây không có nghĩa là nhìn
+vào một bảng Excel, mà là
+
+7
+00:00:32,079 --> 00:00:34,430
+các biểu đồ sinh động, như ví dụ này.
+
+8
+00:00:34,430 --> 00:00:39,640
+Biểu đồ này thực hiện bởi giáo sư người Thuỵ Điển
+Hans Rosling. Những bài nói chuyện của ông về sự phát triển toàn cầu
+
+9
+00:00:39,640 --> 00:00:44,430
+đã được hàng triệu người theo dõi. Điều làm nó
+hấp dẫn chính là những biểu đồ sinh động
+
+10
+00:00:44,430 --> 00:00:49,530
+giúp cho mỗi dữ liệu của ông thể hiện một 
+câu chuyện riêng. Đây là một biểu đồ bong bóng,
+
+11
+00:00:49,530 --> 00:00:54,520
+mỗi bong bóng đại diện cho một nước.
+Bong bóng càng to thì dân số nước đó càng lớn.
+
+12
+00:00:54,520 --> 00:00:57,570
+Trung Quốc (China) và Ấn Độ (India)
+là hai bong bóng lớn nhất trên biểu đồ.
+
+13
+00:00:57,570 --> 00:01:04,500
+Biểu đồ này gồm 2 trục. Trục hoành thể hiện
+GPD trên đầu người bằng đô la Mỹ.
+
+14
+00:01:04,500 --> 00:01:09,450
+Trục tung thể hiện tuổi thọ trung bình. Ta thấy rõ là
+ở những nước có GDP trên đầu người cao hơn
+
+15
+00:01:09,450 --> 00:01:14,859
+thì người dân sống lâu hơn. Nhưng
+tuổi thọ trung bình vẫn chênh lệch khá nhiều
+
+16
+00:01:14,859 --> 00:01:18,109
+giữa những nước có cùng mức thu nhập.
+
+17
+00:01:18,109 --> 00:01:23,179
+Tại sao tôi lại nói những điều này? Đương nhiên là
+để cung cấp thông tin! Nhưng cũng vì
+
+18
+00:01:23,179 --> 00:01:29,189
+đến cuối chương này, bạn sẽ có thể
+tự mình tạo một biểu đồ sinh động như vậy!
+
+19
+00:01:29,189 --> 00:01:34,090
+Mọi gói trực quan hoá thông tin trong Python
+đều bắt nguồn từ matplotlib.
+
+20
+00:01:34,090 --> 00:01:38,729
+Bên trong đó có gói dữ liệu con pyplot.
+Đầu tiên, ta nhập gói dữ liệu vào chương trình,
+
+21
+00:01:38,729 --> 00:01:42,020
+thường sử dụng dưới tên 'plt'.
+
+22
+00:01:42,020 --> 00:01:45,909
+Bây giờ, ta sẽ tìm hiểu một chút về
+sự phát triển dân số thế giới.
+
+23
+00:01:45,909 --> 00:01:50,990
+Tôi có một list các năm và một list dân số
+tương ứng với từng năm theo đơn vị hàng tỉ.
+
+24
+00:01:50,990 --> 00:01:56,689
+Để mô phỏng dữ liệu dạng biểu đồ đường,
+ta gọi plt.plot() và sử dụng 2 list trên làm đối số.
+
+25
+00:01:56,689 --> 00:02:01,659
+List đầu tiên thể hiện ở trục hoành 
+và list thứ hai thể hiện ở trục tung.
+
+26
+00:02:01,659 --> 00:02:06,619
+Hàm plot() cung cấp cho Python mọi thứ cần có
+để vẽ biểu đồ. Nhưng Python rất lười biếng.
+
+27
+00:02:06,619 --> 00:02:11,140
+Tới khi ta gọi hàm show() 
+nó mới thực sự vẽ biểu đồ.
+
+28
+00:02:11,140 --> 00:02:14,910
+Lý do là để ta có thể thêm một vài thứ vào
+trước khi thực sự in nó ra màn hình.
+
+29
+00:02:14,910 --> 00:02:17,360
+Ta sẽ tìm hiểu về điều này sau.
+
+30
+00:02:17,360 --> 00:02:22,050
+Nhìn vào biểu đồ đã vẽ, ta thấy năm
+được biểu diễn trên trục hoành và
+
+31
+00:02:22,050 --> 00:02:26,140
+trên trục tung là dân số tương ứng. Có 4 điểm dữ liệu,
+qua đó Python vẽ một đường thẳng.
+
+32
+00:02:26,140 --> 00:02:32,570
+Năm 1950, dân số thế giới khoảng 2.5 tỉ.
+Năm 2010, nó khoảng 7 tỉ.
+
+33
+00:02:32,570 --> 00:02:37,610
+Vậy là qua 60 năm, dân số thế giới
+tăng gần 3 lần. Khá khủng khiếp nhỉ.
+
+34
+00:02:37,610 --> 00:02:41,920
+Chuyện gì sẽ xảy ra nếu nó tiếp tục
+tăng như thế? Thế giới liệu có bị đông dân quá?
+
+35
+00:02:41,920 --> 00:02:44,760
+Bạn sẽ tìm được câu trả lời trong phần bài tập.
+
+36
+00:02:44,760 --> 00:02:51,220
+Tôi sẽ nói về một dạng biểu đồ khác,
+đó là biểu đồ phân tán. Sử dụng biểu đồ phân tán,
+
+37
+00:02:51,220 --> 00:02:56,750
+ta dễ dàng nhìn thấy từng điểm dữ liệu riêng biệt.
+Không như biểu đồ đường, không có
+
+38
+00:02:56,750 --> 00:03:01,520
+đường thẳng nào nối những điểm này lại.
+Để vẽ biểu đồ phân tán, cú pháp tương tự như trước.
+
+39
+00:03:01,520 --> 00:03:06,720
+Nhưng thay vì plot thì ta dùng hàm scatter,
+
+40
+00:03:06,720 --> 00:03:08,970
+và tiếp tục dùng 2 list đã tạo làm đối số.
+
+41
+00:03:08,970 --> 00:03:13,510
+Có thể nói đây là cách minh họa dữ liệu
+trung thực hơn, vì ta thấy rõ được
+
+42
+00:03:13,510 --> 00:03:17,680
+là biểu đồ chỉ có 4 điểm dữ liệu.
+
+43
+00:03:17,680 --> 00:03:22,110
+Bây giờ, bạn đã nắm được Matplotlib,
+tới lượt bạn làm nên những biểu đồ tuyệt vời!
+

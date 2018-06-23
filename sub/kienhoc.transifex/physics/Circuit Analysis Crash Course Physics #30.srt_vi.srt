@@ -1,0 +1,482 @@
+1
+00:00:03,60 --> 00:00:06,520
+Khi bạn học vật lý, bạn có thể bắt đầu nhìn thấy nó ở khắp mọi nơi - thậm chí là ngay đây.
+
+2
+00:00:06,520 --> 00:00:11,320
+Với tư cách là một kỹ sư học vật lý, tôi phải nói rằng một trong những phần thú vị nhất của kỳ nghỉ chính là bóng đèn.
+
+3
+00:00:11,320 --> 00:00:18,400
+Chỉ cần nghĩ đến tất cả sự sắp xếp điên rồ mà bạn thấy, và cần gì để có thể tìm ra dòng điện - dòng điện cần thiết để thắp sáng tất cả những bóng đèn tí hon đó.
+
+4
+00:00:18,400 --> 00:00:19,820
+Rất nhiều điện trở.
+
+5
+00:00:19,830 --> 00:00:23,9
+Bây giờ, tôi sẽ không yêu cầu bạn vẽ sơ đồ bóng đèn dùng để trang trí cho kỳ nghỉ trên tường nhà hàng xóm của bạn.
+
+6
+00:00:23,10 --> 00:00:28,330
+Nhưng, một trong những cách hiệu quả nhất để hiểu cách dòng điện hoạt động trong một hệ thống giống như thế. đó là thông qua sự phân tích mạch điện:
+
+7
+00:00:28,330 --> 00:00:34,230
+quá trình chia nhỏ mạch điện thành những bộ phận chính, rồi nghiên cứu từng cái một, để thấy được bộ phận này cho bạn biết điều gì về bộ phận kia. 
+
+8
+00:00:34,230 --> 00:00:39,989
+Từ nãy đến giờ, bạn đã học được các bộ phận chính của mỗi mạch điện - cụ thể là điện áp, điện trở, và dòng điện.
+
+9
+00:00:39,990 --> 00:00:43,50
+Những thành phần này đều liên quan với nhau thông qua Định luật Ôm.
+
+10
+00:00:43,50 --> 00:00:46,949
+Điều này có nghĩa nếu bạn biết hai trong ba biến, bạn có thể giải phương trình để tìm cái còn lại. 
+
+11
+00:00:46,950 --> 00:00:54,190
+Ví dụ, bạn có thể dùng rất nhiều cái điện trở trong một mạch điện, rồi tìm điện trở tương đương, rồi dùng điện áp dể tìm dòng điện.
+
+12
+00:00:54,190 --> 00:01:02,459
+Và khi bạn tìm được dòng điện, bạn có thể thậm chí biết nhiều thông tin quan trọng, chẳng hạn như điện áp trong một bộ phận cụ thể, hay dòng điện chạy qua dây kim loại cụ thể. 
+
+13
+00:01:02,460 --> 00:01:08,420
+Nếu không còn gì nữa thì bài học hôm nay về phân tích mạch điện sẽ giúp bạn đánh giá cao bóng đèn dành cho kỳ nghỉ ở một mức độ hoàn toàn mới. 
+
+14
+00:01:08,420 --> 00:01:20,900
+[Nhạc Nền]
+
+15
+00:01:20,900 --> 00:01:22,300
+Hãy suy nghĩ đơn giản thôi. 
+
+16
+00:01:22,300 --> 00:01:29,840
+Có vô số phương pháp mắc mạch điện mà tôi muốn bàn với các bạn, nhưng chúng ta sẽ bàn những cái cơ bản, cái mà bạn sẽ sử dụng trong mọi vấn đề về mạch điện mà bạn gặp phải. 
+
+17
+00:01:29,840 --> 00:01:33,460
+Đây là mạch điện một chiều, có cái điện trở mắc nối tiếp và mắc song song.
+
+18
+00:01:33,460 --> 00:01:40,958
+Bạn sẽ nhớ cách mắc nối tiếp được tạo ra khi cái điện trở kết nối với nhau trên cùng một đường thẳng, nên chúng có cùng dòng điện chạy qua.
+
+19
+00:01:40,960 --> 00:01:47,740
+Cách mắc song song là khi cái điện trở được gắn vào dây kim loại và dây kim loại này tách ra từ một điểm chung, tất cả đều có cùng điện áp.
+
+20
+00:01:47,740 --> 00:01:52,580
+Và để tìm điện trở tương đương của cái điện trở trong mạch mắc nối tiếp, bạn chỉ cần cộng các điện trở lại với nhau. 
+
+21
+00:01:52,580 --> 00:02:01,860
+Trong khi đó, đối với cái điện trở mắc song song, bạn phải sử dụng phương pháp khác - một phương pháp cho bạn cái điện trở có điện trở tương đương nhỏ hơn bất kỳ cái điện trở riêng lẻ nào trong mỗi nhánh. 
+
+22
+00:02:01,869 --> 00:02:03,860
+Bây giờ, hãy giải các phương tình này nào!
+
+23
+00:02:03,860 --> 00:02:08,000
+Đây là ví dụ của một mạch điện có cái điện trở mắc nối tiếp và mắc song song. 
+
+24
+00:02:08,000 --> 00:02:12,60
+Giả sử bạn có bình ắc quy 20 vôn, nối trực tiếp với cái điện trở 10 Ôm.
+
+25
+00:02:12,60 --> 00:02:15,480
+Tiếp đó, có một cách mắc song song gồm nhiều cái điện trở hơn. 
+
+26
+00:02:15,480 --> 00:02:20,380
+Một nhánh gồm 2 cái điện trở mắc nối tiếp, một cái 15 Ôm và một cái 20 Ôm.
+
+27
+00:02:20,380 --> 00:02:26,579
+Nhánh khác có một cái điện trở 6 Ôm, nối với các cái điện trở mắc song song, lần lượt là 3 và 5 Ôm.
+
+28
+00:02:26,580 --> 00:02:33,820
+Mục tiêu của chúng ta là đơn giản hóa mọi thứ xuống còn một cái điện trở, cái điện trở này sẽ có điện trở tương đương của tất cả cái điện trở cộng lại.
+
+29
+00:02:33,820 --> 00:02:38,340
+Dùng điện trở tương đương đó, bạn thậm chí có thể biết được dòng điện cho ra của mạch điện đó là bao nhiêu. 
+
+30
+00:02:38,340 --> 00:02:43,600
+Sau đó, dùng Định luật Ôm, bạn có thể tính điện áp và dòng điện chạy qua mỗi cái điện trở.
+
+31
+00:02:43,600 --> 00:02:46,100
+Được rồi, trước tiên, hãy thực hiện bước đơn giản nhất.
+
+32
+00:02:46,100 --> 00:02:48,180
+Hãy bắt đầu bằng cách tìm cái điện trở mắc nối tiếp. 
+
+33
+00:02:48,180 --> 00:02:52,880
+Khi bạn ... thành một cái điện trở bằng cách cộng điện trở của chúng lại với nhau.
+
+34
+00:02:52,880 --> 00:02:58,180
+Trong trường hợp này, bạn cộng cái điện trở 15 và 2 Ôm thành một điện trở tương đương 17 Ôm.
+
+35
+00:02:58,180 --> 00:03:00,439
+Bây giờ tới nhánh có một cái điện trở. 
+
+36
+00:03:00,439 --> 00:03:01,970
+Hãy xem xét nhánh khác.
+
+37
+00:03:01,970 --> 00:03:04,800
+Nhánh này có một cái điện trở rồi hai cái điện trở mắc song song. 
+
+38
+00:03:04,800 --> 00:03:11,40
+Hãy bắt đầu bằng cách chuyển hai cái điện trở 3 Ôm và 5 Ôm mắc song song thành một cái điện trở tương đương. 
+
+39
+00:03:11,40 --> 00:03:17,280
+Bằng cách sử dụng phương trình cho cái điện trở mắc song song, bạn thấy rằng chúng được đơn giản hóa thành một cái điện trở khoảng 1.88 Ôm.
+
+40
+00:03:17,280 --> 00:03:24,820
+Rồi, bạn có thể cộng cái điện trở vừa mới tìm được với cái điện trở 6 Ôm, và nhánh đó thậm chí còn được đơn giản háo hơn nữa - thành một cái điện trở 7.88 Ôm.
+
+41
+00:03:24,820 --> 00:03:26,578
+Được rồi, bạn sắp giải ra rồi. 
+
+42
+00:03:26,580 --> 00:03:35,800
+Bây giờ, hãy cộng cái điện trở 17 và 7.88 Ôm lại, cái mà mắc song song, và điện trở của nó là 5.38 Ôm.
+
+43
+00:03:35,800 --> 00:03:44,100
+Và bằng cách đó, bạn chỉ cần tính hai cái điện trở mắc nối tiếp còn lại, bạn có thể cộng hai cái điện trở này lại thành một cái điện trở có điện trở tương đương là 15.38 Ôm.
+
+44
+00:03:44,100 --> 00:03:48,780
+Bây giờ, chỉ còn một điện trở, điều này có nghĩa là bạn có thể tìm dòng điện tạo ra bởi bình ắc quy một cách dễ dàng. 
+
+45
+00:03:48,780 --> 00:03:58,340
+Bằng cách sử dụng Định luật Ôm, bạn có thể tìm ra dòng điện chạy qua mạch điện có bình ắc quy 20 Vôn và điện trở tương đương 15.38 Ôm có giá trị khoảng 1.30 Ampe.
+
+46
+00:03:58,340 --> 00:04:01,700
+Hãy ngừng một chút và hãy trân trọng những gì bạn đã tính được từ nãy đến giờ. 
+
+47
+00:04:01,700 --> 00:04:09,739
+Bạn có khả năng áp dụng những điều mình biết về nguồn điện và con số và cấu hình của cái điện trở để tìm được dòng điện chạy qua mạch điện. 
+
+48
+00:04:09,740 --> 00:04:11,440
+Và nó không hề khó, đúng không nào?
+
+49
+00:04:11,450 --> 00:04:14,760
+Và bây giờ, bằng việc bạn đã xác định được dòng điện, bạn có thể học được nhiều thứ hơn!
+
+50
+00:04:14,760 --> 00:04:19,399
+Có được dòng điện trong hệ thống, bạn có thể khai triển mạch điện tương đương về cấu hình ban  đầu của nó. 
+
+51
+00:04:19,399 --> 00:04:25,260
+Và trong khi bạn thực hiện điều đó, bạn có thể xác định được dòng điện chạy qua, điện áp, từng cái điện trở. 
+
+52
+00:04:25,260 --> 00:04:29,719
+Hãy quay lại chỗ cái điện trở 10 Ôm và cái điện trở 5.38 Ôm.
+
+53
+00:04:29,720 --> 00:04:31,860
+Dòng điện chạy qua mạch điện không đổi. 
+
+54
+00:04:31,860 --> 00:04:35,580
+Và do hai cái điện trở mắc nối tiếp, nên dòng điện chạy qua chúng không đổi. 
+
+55
+00:04:35,580 --> 00:04:38,380
+Nhưng điện áp ở mỗi điện trở lại khác nhau. 
+
+56
+00:04:38,380 --> 00:04:43,860
+Bạn có thể tính điện áp ở mỗi cái điện trở bằng cách sử dụng Định luật Ôm, V bằng I nhân R.
+
+57
+00:04:43,860 --> 00:04:52,600
+Bạn biết cường độ dòng điện, I, và bạn cũng biết từng điện trở, R, nên bạn chỉ cần dùng chúng để tìm điện áp, V, ở mỗi cái điện trở. 
+
+58
+00:04:52,600 --> 00:05:00,320
+Điện trở ở cái điện trở 10 Ôm là 13 Vôn, điều này có nghĩa là điện áp ở mạch điện còn lại là 7 Vôn.
+
+59
+00:05:00,320 --> 00:05:05,80
+Và bạn không cần phải dùng cái điện trở 10 Ôm nữa, vì nó không phải là sự kết hợp của nhiều cái điện trở. 
+
+60
+00:05:05,80 --> 00:05:09,39
+Vậy cường độ dòng điện và điện áp ở mỗi phần tử trong mạch điện không thay đổi. 
+
+61
+00:05:09,40 --> 00:05:15,260
+Để tính xong phần còn lại của mạch điện, hãy triển khai cái điện trở 5.38 Ôm thành hai cái điện trở mắc song song.
+
+62
+00:05:15,260 --> 00:05:27,120
+Giờ thì, bạn biết rằng bất kỳ hai cái điện trở nào mắc song song đều có cùng điện áp, nên cả cái điện trở 17 Ôm và cái điện trở 7.88 Ôm đều có cùng điện áp 7 Vôn, chỉ khi chúng 
+
+63
+00:05:27,120 --> 00:05:29,380
+Nhưng cường độ dòng điện của mỗi cái điện trở lại không giống nhau. 
+
+64
+00:05:29,380 --> 00:05:36,819
+Vì bạn biết điện trở, và điện áp của mỗi cái điện trở, nên bạn chỉ cần dùng Định luật Ôm để tính cường độ dòng điện của mỗi nhánh. 
+
+65
+00:05:36,819 --> 00:05:42,000
+Cái điện trở 17 Ôm, có điện áp 7 Vôn, sẽ có cường độ dòng điện 0.41 Ampe. 
+
+66
+00:05:42,000 --> 00:05:48,720
+Và cái điện trở 7.88 Ôm, có cùng điện áp 7 Vôn, sẽ có cường độ dòng điện 0.89 Ampe. 
+
+67
+00:05:48,720 --> 00:05:53,539
+Hãy nhìn này: Nếu bạn cộng hai cường độ dòng điện lại thì chúng cho ra kết quả 1.3 Ampe. 
+
+68
+00:05:53,539 --> 00:05:57,979
+Đó chính xác là giá trị của cường độ dòng điện chạy qua mối nối nơi mà dây điện bắt đầu tách ra. 
+
+69
+00:05:57,980 --> 00:06:03,180
+Điều này chắc chắn đúng, để thỏa mãn sự bảo toàn năng lượng, vì hãy nhớ rằng: cái gì được hấp thụ vào thì đều sẽ được tỏa ra!
+
+70
+00:06:03,180 --> 00:06:09,80
+Bây giờ, hãy khai triển cái điện trở bên phải thành hai bộ phận,cái điện trở 6 Ôm và 1.88 Ôm.
+
+71
+00:06:09,80 --> 00:06:16,380
+Cường độ dòng điện của cả hai cái điện trở vẫn là 0.89 Ampe, nhưng điện áp 7 Vôn giờ sẽ được chia cho hai cái điện trở.
+
+72
+00:06:16,380 --> 00:06:22,219
+Điều bạn cần làm đó là áp dụng Định luật Ôm, nhân cường độ dòng điện và điện trở để tìm điện áp. 
+
+73
+00:06:22,220 --> 00:06:27,280
+Vậy 0.89 Ampe nhân 6 Ôm bằng 5.33 Vôn.
+
+74
+00:06:27,280 --> 00:06:33,99
+Và 0.89 Ampe nhân 1.88 Ôm bằng 1.67 Vôn.
+
+75
+00:06:33,100 --> 00:06:36,900
+Bây giờ là cần thiết để kiểm tra xem bạn có đi đúng hướng không bằng cách nhìn vào mối quan hệ của những giá trị này. 
+
+76
+00:06:36,900 --> 00:06:42,859
+Hãy nhớ rằng, đối với cái điện trở mắc nối tiếp, điện trở càng lớn, thì sẽ cần điện áp lớn. 
+
+77
+00:06:42,860 --> 00:06:48,20
+Hãy nghĩ về bóng đèn điện lớn và bóng đèn điện nhỏ được mắc trên cùng dây điện của chùm bóng đèn dành cho kỳ nghỉ, sử dụng cùng cường độ dòng điện. 
+
+78
+00:06:48,20 --> 00:06:53,799
+Bóng đèn điện nhỏ không cần nhiều năng lượng lắm, nên nó dùng ít điện áp hơn cho cùng cường độ dòng điện chạy qua nó. 
+
+79
+00:06:53,800 --> 00:06:55,40
+Được rồi, quay trở lại thôi nào.
+
+
+80
+00:06:55,40 --> 00:07:00,940
+Cái điện trở 1.88 Ôm là sự kết hợp của một cặp điện trở 3 Ôm và 5 Ôm mắc song song. 
+
+81
+00:07:00,940 --> 00:07:07,240
+Vậy nên, điện áp của mỗi cái điện trở vẫn là 1.67 Vôn, nhưng cường độ dòng điện chạy qua mỗi cái điện trở lại khác nhau. 
+
+82
+00:07:07,240 --> 00:07:14,220
+Bằng việc sử dụng Định luật Ôm, bạn có thể chia điện áp ở mỗi cái điện trở cho điện trở tương ứng của chúng, điều này sẽ cho bạn cường độ dòng điện chạy qua mỗi nhánh. 
+
+83
+00:07:14,220 --> 00:07:20,640
+1,67 Vôn chia 3 Ôm cho kết quả cường độ dòng điện 0,56 Ampe. Đây là cường độ dòng điện chạy qua cái điện trở 3 Ôm.
+
+84
+00:07:20,640 --> 00:07:26,320
+Và 1,67 Vôn chia 5 Ôm cho bạn cường độ dòng điện 0,33 Ampe. 
+
+85
+00:07:26,320 --> 00:07:34,680
+Và vì 0,56 cộng 0,33 Ampe bằng 0,89 Ampe. Đây là cường độ dòng điện chạy qua mạch điện ở mối nối, nên bạn biết rằng bạn đang đi đúng hướng. 
+
+86
+00:07:34,680 --> 00:07:35,900
+Bước cuối cùng!
+
+87
+00:07:35,900 --> 00:07:40,200
+Cái điện trở 17 Ôm là một chuỗi kết hợp của cái điện trở 15 Ôm và cái điện trở 2 Ôm.
+
+88
+00:07:40,200 --> 00:07:48,219
+Ở đây, cường độ dòng điện chạy qua chúng - 0,41 Ampe - vẫn giữ nguyên, trong khi điện áp ở mỗi cái điện trở có thể tìm được bằng cách sử dụng Định luật Ôm. 
+
+89
+00:07:48,220 --> 00:07:54,440
+0,41 Ampe nhân 15 Ôm bằng 6,17 Vôn. Đây là điện áp ở cái điện trở 15 Ôm.
+
+90
+00:07:54,449 --> 00:08:01,319
+Và 0,41 Ampe nhân 2 Ôm bằng 0,82 Vôn. Đây là điện áp ở cái điện trở 2 Ôm.
+
+91
+00:08:01,320 --> 00:08:08,500
+Để kiểm tra các bước tính của mình, bạn có thể quay lại rồi xem xem hai điện áp có bằng điện áp tổng ở mỗi nhánh mắc sau cái điện trở 10 Ôm hay không.
+
+
+92
+00:08:08,500 --> 00:08:10,300
+Và bạn đã giải xong rồi! Chúc mừng!
+
+93
+00:08:10,300 --> 00:08:17,840
+Bạn dùng toàn bộ mạch điện, đơn giản hóa nó nhất, rồi khai triển ra, rồi tính cường độ dòng điện và điện áp cho mỗi cái điện trở. 
+
+94
+00:08:17,840 --> 00:08:20,979
+Nhưng, mặc dù chúng ta ai cũng yêu thích môn Toán, sẽ ra sao nếu bạn cần nhiều hơn kiến thức về Toán học?
+
+95
+00:08:20,980 --> 00:08:26,639
+Sẽ ra sao nếu bạn tự tay mình mắc mạch điện này, và bạn muốn tính các giá trị để biết rằng kiến thức Toán học của bạn đã được kiểm chứng?
+
+96
+00:08:26,640 --> 00:08:29,560
+Để tính điện áp, bạn chỉ cần một công cụ gọi là vôn kế. 
+
+97
+00:08:29,560 --> 00:08:30,800
+Rất sáng tạo, tôi biết mà. 
+
+98
+00:08:30,800 --> 00:08:34,100
+Bây giờ, bạn muốn tìm cách đo điện áp mà không luân phiên thay đổi mạch điện thực tế.
+
+99
+00:08:34,100 --> 00:08:40,620
+Không giải pháp nào là hoàn hảo cả, nhưng bạn có thể có một số đo rất chính xác bằng cách gắn vôn kế vào bất kỳ phía nào của thiết bị mà bạn muốn đo. 
+
+100
+00:08:40,620 --> 00:08:45,100
+Và bạn thực hiện bằng cách đó, vì bạn biết rằng bất cứ bộ phận nào được mắc song song đều sẽ có cùng điện áp. 
+
+101
+00:08:45,110 --> 00:08:49,590
+Nhưng kể cả khi bạn đo điện áp thì bạn vẫn không muốn thay đổi mạch điện cho kết quả. 
+
+102
+00:08:49,590 --> 00:08:55,780
+Vì thế, điều bạn cần phải làm đó là dùng Vôn kế đo điện trở có giá trị lớn đến nỗi được xem là điện trở vô cùng lớn, tương đối với phần còn lại của mạch điện.
+
+103
+00:08:55,780 --> 00:09:04,540
+Với điện trở "vô cùng lớn", điện áp được ghi ở cả Vôn kế và thiết bị bạn đo, cùng với một cường độ dòng điện nhỏ chạy qua Vôn kế. 
+
+104
+00:09:04,540 --> 00:09:09,640
+Được rồi, nếu bạn là người cẩn trọng, và cho dù bạn đã biết chắc điện áp nhưng bạn vẫn muốn thực hiện điều tương tự với cường độ dòng điện. 
+
+105
+00:09:09,650 --> 00:09:13,670
+Lần này, bạn sẽ sử dụng thông tin đó là các thiết bị mắc kết nối thì có cùng cường độ dòng điện. 
+
+106
+00:09:13,670 --> 00:09:18,699
+Vì thế, bạn cần một thiết bị có thể đo cường độ dòng điện, thiết bị này mắc kết nối với một bộ phận khác, mà không làm thay đổi cường độ dòng điện. 
+
+107
+00:09:18,700 --> 00:09:23,520
+Thiết bị này là Ampe kế, và nó đo cường độ dòng điện ở đơn vị Ampe bằng cách mắc nối tiếp với mạch điện.
+
+108
+00:09:23,520 --> 00:09:27,400
+Nó không làm ảnh hưởng đến mạch điện, vì thiết bị này có điện trở gần bằng 0.
+
+109
+00:09:27,400 --> 00:09:33,439
+Nhưng đây là mẹo cực kỳ hữu ích: Khi bạn dùng các thiết bị này trong phòng thí nghiệm, hãy thật cẩn trọng để không làm rối các phương pháp mắc với nhau. 
+
+110
+00:09:33,440 --> 00:09:42,80
+Việc gắn Ampe kế, một thiết bị có điện trở gần bằng 0, song song với một cái điện trở khác, sẽ khiến toàn bộ cường độ dòng điện chạy qua Ampe kế, điều này có thể làm hỏng thiết bị này. 
+
+111
+00:09:42,80 --> 00:09:47,900
+Và nếu Vôn kế được mắc kết nối thì bạn sẽ không thấy cường độ dòng điện nào chạy qua bởi vì điện trở quá lớn. 
+
+112
+00:09:47,900 --> 00:09:56,459
+Nhưng khi được mắc đúng cách, các thiết bị này không chỉ cho phép bạn kiểm tra phép toán của mình, mà chúng còn cho bạn cách thực tế để tính các nguyên lý cơ bản của Định luật Ôm.
+
+113
+00:09:56,460 --> 00:10:00,140
+Và chúng còn có thể nâng cấp trò chơi về bóng đèn điện dành cho kỳ nghỉ của bạn lên một tầm cao mới. 
+
+114
+00:10:00,140 --> 00:10:05,680
+Hôm nay, chúng ta đã xem xét sự phân tích mạch điện được vận dụng như thế nào khi điện trở được mắc song song hay nối tiếp trong mạch một chiều. 
+
+115
+00:10:05,680 --> 00:10:12,79
+Chúng ta sử dụng Định luật Ôm để đi từ một mạch tương đương đến việc tính toán giá trị cường độ dòng điện và điện áp trong hệ thống. 
+
+116
+00:10:12,80 --> 00:10:17,60
+Cuối cùng, chúng ta xem xét cách đo điện áp và cường độ dòng điện trong mạch điện thực tế bằng cách sử dụng Vôn kế và Ampe kế. 
+
+117
+00:10:17,60 --> 00:10:21,000
+Khóa học cấp tốc về Vật lý được cho ra mắt cùng với kênh Youtube PBS Digital Studios. 
+
+118
+00:10:21,000 --> 00:10:27,820
+Bạn có thể đi đến kênh Youtube đó để xem qua danh sách các tập mới nhất từ chương trình chẳng hạn như PBS Space Time, The Good Stuff, và Indie Alaska. 
+
+119
+00:10:27,820 --> 00:10:31,560
+Tập Khóa học Cấp tốc được quay trong Crash Course Studio của Tiến sĩ Cheryl C. Kinney
+
+120
+00:10:31,560 --> 00:10:36,000
+cùng với sự giúp đỡ của những con người tuyệt vời này và nhóm đồ họa cũng tuyệt vời không kém, đó là nhóm Thought Cafe. 
+

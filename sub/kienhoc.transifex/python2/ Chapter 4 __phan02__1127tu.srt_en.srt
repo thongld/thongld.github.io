@@ -1,0 +1,724 @@
+155
+00:06:55,760 --> 00:07:02,220
+https://youtu.be/Wdi6lhcrtBU
+Now, this is not sort
+of a profound reason
+
+156
+00:07:02,220 --> 00:07:02,970
+to use it in this.
+
+157
+00:07:02,970 --> 00:07:05,011
+I'm just trying to give
+you the notion that there
+
+158
+00:07:05,011 --> 00:07:07,750
+is a way to store and
+name code that then you
+
+159
+00:07:07,750 --> 00:07:08,980
+can retrieve later.
+
+160
+00:07:08,980 --> 00:07:11,161
+That's really what's
+going on here.
+
+161
+00:07:11,161 --> 00:07:13,285
+So there's two kinds of
+functions inside of Python.
+
+162
+00:07:13,285 --> 00:07:15,140
+And we've actually
+been using them almost
+
+163
+00:07:15,140 --> 00:07:16,776
+from the very first lecture.
+
+164
+00:07:16,776 --> 00:07:18,400
+And that is, there
+a built-in functions
+
+165
+00:07:18,400 --> 00:07:23,470
+that Python provides to us
+like float, raw input, int,
+
+166
+00:07:23,470 --> 00:07:24,890
+those kinds of functions.
+
+167
+00:07:24,890 --> 00:07:28,170
+Those are just part of Python,
+but we call them as functions.
+
+168
+00:07:28,170 --> 00:07:29,840
+The difference is
+we don't write them.
+
+169
+00:07:29,840 --> 00:07:31,548
+And then, there's
+user-defined functions,
+
+170
+00:07:31,548 --> 00:07:33,290
+functions that we
+write, functions
+
+171
+00:07:33,290 --> 00:07:36,330
+to create functionality
+that we want
+
+172
+00:07:36,330 --> 00:07:39,310
+to make use of like
+encapsulating the ability
+
+173
+00:07:39,310 --> 00:07:42,790
+to compute pay for time
+and a half for overtime.
+
+174
+00:07:42,790 --> 00:07:46,130
+And so we name these
+things, and we treat them
+
+175
+00:07:46,130 --> 00:07:47,940
+as new reserved words
+that we've created.
+
+176
+00:07:47,940 --> 00:07:50,580
+They're kind of an extension
+to the language as it were.
+
+177
+00:07:50,580 --> 00:07:53,550
+
+178
+00:07:53,550 --> 00:07:57,370
+So when we're coming
+along, we define a function
+
+179
+00:07:57,370 --> 00:07:58,790
+with the def keyword.
+
+180
+00:07:58,790 --> 00:08:02,039
+The def keyword is
+a reserved word.
+
+181
+00:08:02,039 --> 00:08:04,330
+It's one of the many reserved
+words back in chapter one
+
+182
+00:08:04,330 --> 00:08:05,320
+that we talked about.
+
+183
+00:08:05,320 --> 00:08:08,630
+And it indicates to Python
+the beginning of a function.
+
+184
+00:08:08,630 --> 00:08:09,520
+We define it.
+
+185
+00:08:09,520 --> 00:08:12,660
+And then when we call
+it, it's called invoking.
+
+186
+00:08:12,660 --> 00:08:15,600
+It's like we're building
+it and then we're invoking.
+
+187
+00:08:15,600 --> 00:08:17,540
+And you can build it
+once and then invoke it
+
+188
+00:08:17,540 --> 00:08:20,300
+many, many times.
+
+189
+00:08:20,300 --> 00:08:23,450
+So for example, here's
+a built-in function
+
+190
+00:08:23,450 --> 00:08:26,180
+called max that
+finds the largest
+
+191
+00:08:26,180 --> 00:08:29,540
+character-- the sort
+of lexigraphically
+
+192
+00:08:29,540 --> 00:08:31,650
+larger character-- in a string.
+
+193
+00:08:31,650 --> 00:08:35,690
+And so it's like, OK, tell
+me the maximum character.
+
+194
+00:08:35,690 --> 00:08:37,720
+And so max is not some
+code that we've written.
+
+195
+00:08:37,720 --> 00:08:40,380
+But we are invoking
+a function here.
+
+196
+00:08:40,380 --> 00:08:43,380
+And we're passing in
+an argument to that.
+
+197
+00:08:43,380 --> 00:08:47,900
+So the argument is the stuff
+in between the parentheses.
+
+198
+00:08:47,900 --> 00:08:49,970
+So the max function
+can find the maximum
+
+199
+00:08:49,970 --> 00:08:51,350
+of many different things.
+
+200
+00:08:51,350 --> 00:08:52,740
+At this moment,
+we wanted to find
+
+201
+00:08:52,740 --> 00:08:56,360
+the maximum of that particular
+string, the highest character
+
+202
+00:08:56,360 --> 00:08:58,210
+in that particular string.
+
+203
+00:08:58,210 --> 00:09:01,760
+So this is a right-hand side
+of an assignment statement
+
+204
+00:09:01,760 --> 00:09:06,382
+too, so that has to be
+evaluated to a value.
+
+205
+00:09:06,382 --> 00:09:08,590
+So it goes into the function,
+does whatever it thinks
+
+206
+00:09:08,590 --> 00:09:10,180
+the function wants to do.
+
+207
+00:09:10,180 --> 00:09:12,500
+And then, the function
+gives us back a value
+
+208
+00:09:12,500 --> 00:09:17,130
+that becomes the value for
+max parentheses Hello world.
+
+209
+00:09:17,130 --> 00:09:20,540
+And that value, in this
+case, is the letter w.
+
+210
+00:09:20,540 --> 00:09:23,360
+Because the letter w is decided
+to be the highest letter,
+
+211
+00:09:23,360 --> 00:09:26,090
+and that's what
+max gives us back.
+
+212
+00:09:26,090 --> 00:09:28,370
+And then, we're
+done with that, then
+
+213
+00:09:28,370 --> 00:09:30,506
+that w ends up being assigned.
+
+214
+00:09:30,506 --> 00:09:31,880
+The assigned
+statement completes.
+
+215
+00:09:31,880 --> 00:09:34,450
+And so you can think of
+the function evaluation
+
+216
+00:09:34,450 --> 00:09:38,180
+as happening as part of the
+right-hand side expression
+
+217
+00:09:38,180 --> 00:09:38,820
+calculation.
+
+218
+00:09:38,820 --> 00:09:40,880
+There could be a plus
+here and other stuff.
+
+219
+00:09:40,880 --> 00:09:43,040
+And it's just at some
+point a big expression.
+
+220
+00:09:43,040 --> 00:09:45,740
+And this one, it's a simple
+expression with just one
+
+221
+00:09:45,740 --> 00:09:48,530
+function call.
+
+222
+00:09:48,530 --> 00:09:50,890
+Now, if we look at this,
+there's some code somewhere.
+
+223
+00:09:50,890 --> 00:09:52,940
+Somebody wrote some code.
+
+224
+00:09:52,940 --> 00:09:54,510
+It's part of Python.
+
+225
+00:09:54,510 --> 00:09:55,710
+You didn't write it.
+
+226
+00:09:55,710 --> 00:09:57,950
+There's a max
+function somewhere.
+
+227
+00:09:57,950 --> 00:10:00,210
+And you can think of a
+function as having some input.
+
+228
+00:10:00,210 --> 00:10:01,940
+It's kind of like a program.
+
+229
+00:10:01,940 --> 00:10:04,930
+That's why some languages
+call these things subprograms.
+
+230
+00:10:04,930 --> 00:10:08,120
+Because they have an input, they
+do some kind of useful works--
+
+231
+00:10:08,120 --> 00:10:10,240
+whatever that useful
+work happens to be.
+
+232
+00:10:10,240 --> 00:10:13,260
+And then, it produced
+some kind of an output.
+
+233
+00:10:13,260 --> 00:10:16,420
+So Hello world is the input,
+the string, the arguments,
+
+234
+00:10:16,420 --> 00:10:17,890
+the thing we're passing in.
+
+235
+00:10:17,890 --> 00:10:20,850
+Hello world is what's being
+passed into the function.
+
+236
+00:10:20,850 --> 00:10:22,610
+The function is running.
+
+237
+00:10:22,610 --> 00:10:25,550
+And then, something comes
+back and is sent back.
+
+238
+00:10:25,550 --> 00:10:31,090
+So it has input,
+processing, and output.
+
+239
+00:10:31,090 --> 00:10:33,770
+So that's how a function,
+some stored code--
+
+240
+00:10:33,770 --> 00:10:37,030
+whether we wrote it or
+not-- they work the same
+
+241
+00:10:37,030 --> 00:10:38,930
+when we call functions.
+
+242
+00:10:38,930 --> 00:10:43,110
+So you could think of this as
+somewhere inside of the Python
+
+243
+00:10:43,110 --> 00:10:46,640
+library is some code that maybe
+has a little def in there.
+
+244
+00:10:46,640 --> 00:10:49,400
+And they named the function max.
+
+245
+00:10:49,400 --> 00:10:51,340
+And it takes a single parameter.
+
+246
+00:10:51,340 --> 00:10:55,430
+And it does some blah, blah,
+blah, loopy, blah, blah, blah.
+
+247
+00:10:55,430 --> 00:10:56,550
+A lot of stuff.
+
+248
+00:10:56,550 --> 00:10:58,960
+Whatever max wants to do.
+
+249
+00:10:58,960 --> 00:11:01,750
+Whatever we need max to do
+based on the specifications
+
+250
+00:11:01,750 --> 00:11:03,480
+that max is supposed to support.
+
+251
+00:11:03,480 --> 00:11:06,840
+But somewhere there is
+code inside of Python
+
+252
+00:11:06,840 --> 00:11:09,250
+that actually represents
+the function definition.
+
+253
+00:11:09,250 --> 00:11:12,000
+It's a built-in function,
+because it comes with Python
+
+254
+00:11:12,000 --> 00:11:14,820
+and we didn't have to
+do anything to add.
+
+255
+00:11:14,820 --> 00:11:17,000
+So some common
+built-in functions
+
+256
+00:11:17,000 --> 00:11:20,560
+that we have been
+using all along,
+
+257
+00:11:20,560 --> 00:11:24,100
+good examples are the float,
+which takes as input anything
+
+258
+00:11:24,100 --> 00:11:29,270
+and returns you a floating
+point number version of that;
+
+259
+00:11:29,270 --> 00:11:32,640
+type, which takes a parameter
+of a variable or a constant
+
+260
+00:11:32,640 --> 00:11:37,740
+and says, what is the type of
+this; float, again converting;
+
+261
+00:11:37,740 --> 00:11:38,755
+type, again; and float.
+
+262
+00:11:38,755 --> 00:11:41,130
+So these are all things that
+we've been calling functions
+
+263
+00:11:41,130 --> 00:11:42,070
+all along.
+
+264
+00:11:42,070 --> 00:11:45,610
+And it passes the input
+value into the function,
+
+265
+00:11:45,610 --> 00:11:47,780
+the function runs and
+then gives us back
+
+266
+00:11:47,780 --> 00:11:50,380
+the return value,
+which then participates
+
+267
+00:11:50,380 --> 00:11:54,060
+in the rest of the expression
+on the right-hand side.
+
+268
+00:11:54,060 --> 00:11:57,180
+You can think of it's
+pausing the calculation
+
+269
+00:11:57,180 --> 00:11:59,554
+on the right-hand side,
+calling the function,
+
+270
+00:11:59,554 --> 00:12:00,970
+getting the result
+of the function
+
+271
+00:12:00,970 --> 00:12:02,710
+back, and then
+continuing the evaluation
+
+272
+00:12:02,710 --> 00:12:05,970
+on the right-hand side, then
+coming up with whatever value,
+
+273
+00:12:05,970 --> 00:12:09,740
+and then printing
+that value out.
+
+274
+00:12:09,740 --> 00:12:13,200
+Another thing that
+we've done, is
+
+275
+00:12:13,200 --> 00:12:14,840
+we've done string conversions.
+
+276
+00:12:14,840 --> 00:12:17,250
+Right, so we've converted
+in this case a string
+
+277
+00:12:17,250 --> 00:12:18,480
+to an integer.
+
+278
+00:12:18,480 --> 00:12:20,170
+And that's what type it is.
+
+279
+00:12:20,170 --> 00:12:21,940
+We've converted a
+string to an integer.
+
+280
+00:12:21,940 --> 00:12:25,500
+So it converts its argument,
+whatever that happens to be,
+
+281
+00:12:25,500 --> 00:12:26,580
+into an integer.
+
+282
+00:12:26,580 --> 00:12:28,950
+So that's just some of the
+built in functions that we
+
+283
+00:12:28,950 --> 00:12:31,450
+have talked about so far.
+
+284
+00:12:31,450 --> 00:12:36,970
+Now this becomes
+more interesting when
+
+285
+00:12:36,970 --> 00:12:39,240
+we can make our own functions.
+
+286
+00:12:39,240 --> 00:12:41,800
+There goes my tea bag.
+
+287
+00:12:41,800 --> 00:12:45,590
+Right in the middle
+of the thing.
+
+288
+00:12:45,590 --> 00:12:47,000
+We take the tea bag out.
+
+289
+00:12:47,000 --> 00:12:48,982
+I think it's -- whoa.
+
+290
+00:12:48,982 --> 00:12:50,391
+I'll be right back.
+
+291
+00:12:50,391 --> 00:12:58,247
+
+292
+00:12:58,247 --> 00:13:00,211
+OK, there's my tea.
+
+293
+00:13:00,211 --> 00:13:03,157
+So, we want to make
+a new function.
+
+294
+00:13:03,157 --> 00:13:08,580
+As we said in the other
+example, we use the Def keyword.
+
+295
+00:13:08,580 --> 00:13:12,200
+The Def keyword here, and then
+we have some indented bit.
+
+296
+00:13:12,200 --> 00:13:14,280
+We create a name for it.
+
+297
+00:13:14,280 --> 00:13:16,170
+And then have some parentheses.
+
+298
+00:13:16,170 --> 00:13:19,230
+These parentheses will
+later tell the inputs
+
+299
+00:13:19,230 --> 00:13:21,400
+that we're going to pass
+in but this function has
+
+300
+00:13:21,400 --> 00:13:23,520
+no input so we just go
+parentheses parentheses.
+
+301
+00:13:23,520 --> 00:13:25,670
+And then the all
+important colon character,
+
+302
+00:13:25,670 --> 00:13:29,670
+which indicates the beginning
+of an indented block of Python
+
+303
+00:13:29,670 --> 00:13:32,460
+that then is just the
+text of the function.
+
+304
+00:13:32,460 --> 00:13:36,670
+So it's important to remember
+that while this is executing,
+
+305
+00:13:36,670 --> 00:13:39,490
+when Python first
+looks this it doesn't
+
+306
+00:13:39,490 --> 00:13:40,890
+run these lines of code.
+
+307
+00:13:40,890 --> 00:13:44,850
+It just remembers them and
+names them print lyrics.
+
+308
+00:13:44,850 --> 00:13:46,830
+So it doesn't cause
+any print out,
+

@@ -1,0 +1,871 @@
+1
+00:00:08,738 --> 00:00:10,380
+NghiaNguyen Thao reviewed
+Giờ ta sẽ viết 1 đoạn code.
+
+2
+00:00:10,380 --> 00:00:13,310
+Ta sẽ viết code thực hiện mối quan hệ nhiều-nhiều.
+
+3
+00:00:13,310 --> 00:00:17,569
+Như ta đã học, trong mối quan hệ nhiều - nhiều,
+
+4
+00:00:17,569 --> 00:00:21,288
+một bên là nhiều khóa học
+và một bên là nhiều người dùng.
+
+5
+00:00:21,288 --> 00:00:25,470
+Các khóa có nhiều người dùng là thành viên,
+
+6
+00:00:25,470 --> 00:00:29,420
+và một người dùng cũng có thể tham gia nhiều khoá học.
+
+7
+00:00:29,420 --> 00:00:30,920
+Vậy có "nhiều" ở cả 2 bên.
+
+8
+00:00:30,920 --> 00:00:34,110
+Và ta không có cách nào thể hiện trực tiếp
+quan hệ này trong cơ sở dữ liệu, do đó
+
+9
+00:00:34,110 --> 00:00:37,270
+ta tạo ra 1 thứ mà Wikipedia gọi là bảng nối.
+
+10
+00:00:37,270 --> 00:00:39,850
+Tôi thì gọi nó là bảng nhiều - nhiều.
+
+11
+00:00:39,850 --> 00:00:42,610
+Qua đó, ta tách mối quan hệ nhiều - nhiều
+
+12
+00:00:42,610 --> 00:00:44,890
+thành 2 quan hệ nhiều - một.
+
+13
+00:00:44,890 --> 00:00:49,480
+Ta tạo ra bảng này để 
+nối các bảng kia lại với nhau.
+
+14
+00:00:49,480 --> 00:00:53,470
+Và nó có 2 khoá ngoại để trỏ ra bên ngoài.
+
+15
+00:00:53,470 --> 00:00:55,160
+Rồi bạn cũng có thể xây dựng một số cái khác.
+
+16
+00:00:55,160 --> 00:00:59,670
+Trong trường hợp này, ta sẽ bổ sung vai trò của người dùng
+
+17
+00:00:59,670 --> 00:01:00,870
+là sinh viên hay giáo viên gì đó.
+
+18
+00:01:00,870 --> 00:01:03,910
+Vậy, bạn là 1 thành viên của khoá học 
+nhưng có thể nêu thêm là loại thành viên gì.
+
+19
+00:01:03,910 --> 00:01:06,860
+Ngoài ra cũng có thể thêm vài thứ khác dưới đây
+
+20
+00:01:06,860 --> 00:01:08,350
+vào liên kết này.
+
+21
+00:01:08,350 --> 00:01:10,550
+Ở đây ta có 2 khoá ngoại,
+
+22
+00:01:10,550 --> 00:01:13,540
+và điều thú vị là không có khoá chính, đúng không?
+
+23
+00:01:13,540 --> 00:01:15,010
+Không có khoá chính.
+
+24
+00:01:15,010 --> 00:01:17,900
+Bởi vì ta tạo ra 1 khoá phức hợp,
+
+25
+00:01:17,900 --> 00:01:19,750
+khoá này là sự kết hợp của 2 thứ
+
+26
+00:01:19,750 --> 00:01:23,320
+user_id và course_id.
+
+27
+00:01:23,320 --> 00:01:25,540
+Chẳng hạn như 1 - 1; 1 - 2 hay 1 - 3.
+
+28
+00:01:25,540 --> 00:01:30,120
+Tổ hợp 2 con số đó là khoá chính.
+
+29
+00:01:30,120 --> 00:01:32,090
+Ta gọi đó là khoá phức hợp.
+
+30
+00:01:32,090 --> 00:01:32,670
+OK?
+
+31
+00:01:32,670 --> 00:01:36,580
+Giờ ta sẽ tìm hiểu cách chèn dữ liệu vào bảng User,
+
+32
+00:01:36,580 --> 00:01:38,830
+chèn dữ liệu vào bảng Course,
+
+33
+00:01:38,830 --> 00:01:42,600
+và chèn dữ liệu vào bảng liên kết này, OK?
+
+34
+00:01:42,600 --> 00:01:44,080
+Hãy nhìn vào đoạn code này.
+
+35
+00:01:44,080 --> 00:01:46,350
+Trong trường hợp này,
+
+36
+00:01:46,350 --> 00:01:47,860
+thay vì đọc từ XML hay
+
+37
+00:01:47,860 --> 00:01:51,670
+đọc từ Web, ta sẽ đọc từ dữ liệu JSON mà tôi có.
+
+38
+00:01:51,670 --> 00:01:54,680
+Và JSON này là 1 danh sách các list.
+
+39
+00:01:54,680 --> 00:01:58,850
+Mỗi list ở đây có 1 tên (name), 
+1 khoá học (course) và 1 vai trò (role).
+
+40
+00:01:58,850 --> 00:02:03,650
+Đây là giáo viên của khóa si110, 
+đây là 1 sinh viên si110.
+
+41
+00:02:03,650 --> 00:02:06,070
+Và nếu bạn cuộn xuống, bạn thấy phần tiếp theo, 
+
+42
+00:02:06,070 --> 00:02:10,570
+ta sẽ có khóa si106 và giáo viên của si106
+
+43
+00:02:10,570 --> 00:02:15,310
+Vậy ta sẽ viết 1 đoạn code để đọc
+
+44
+00:02:15,310 --> 00:02:18,400
+dữ liệu JSON này, phân tích dữ liệu JSON,
+
+45
+00:02:18,400 --> 00:02:22,550
+và lặp qua từng phần tử trong JSON.
+
+46
+00:02:22,550 --> 00:02:26,290
+Chèn dữ liệu đó vào bảng User, bảng Course
+
+47
+00:02:26,290 --> 00:02:30,080
+rồi dùng khoá ngoại để kết nối 
+những thông tin lại với nhau, OK?
+
+48
+00:02:30,080 --> 00:02:33,920
+Vậy, Charley nằm ở 1 bên, 
+si110 nằm ở bên còn lại, và
+
+49
+00:02:33,920 --> 00:02:35,610
+ta tạo ra 1 liên kết.
+
+50
+00:02:35,610 --> 00:02:38,890
+Giờ ta phải thiết lập 1 khoá chính 
+trong bảng User
+
+51
+00:02:38,890 --> 00:02:39,710
+cho Charley.
+
+52
+00:02:39,710 --> 00:02:42,800
+Tạo 1 khoá chính cho si110 trong bảng Course.
+
+53
+00:02:42,800 --> 00:02:46,446
+Sau đó ta chỉ việc chèn vào 1 dòng,
+khá đơn giản và dễ dàng.
+
+54
+00:02:48,306 --> 00:02:49,950
+OK, hãy nhìn vào đoạn code này.
+
+55
+00:02:49,950 --> 00:02:51,190
+Đây là đoạn code, roster.py
+
+56
+00:02:51,190 --> 00:02:54,570
+Đến giờ chắc các bạn đã nhìn quen những cái này.
+
+57
+00:02:54,570 --> 00:02:57,890
+Ta import thư viện json, 
+import thư viện sqlite3
+
+58
+00:02:57,890 --> 00:03:01,640
+Ta tạo 1 kết nối tới cơ sở dữ liệu rosterdb.sqlite.
+
+59
+00:03:01,640 --> 00:03:04,030
+Và ta lấy 1 cursor để gửi lệnh.
+
+60
+00:03:04,030 --> 00:03:06,600
+Phần tiếp theo sẽ hơi khác 1 
+chút so với việc ta thường làm.
+
+61
+00:03:06,600 --> 00:03:10,290
+Thường thì ta gọi cur.execute
+nhưng lần này, ta sẽ gọi executescript.
+
+62
+00:03:10,290 --> 00:03:12,140
+Điểm khác biệt là ta sẽ gọi executescript.
+
+63
+00:03:12,140 --> 00:03:16,580
+Và đây là 3 dấu nháy, theo sau là 
+1 chuỗi dài với ký tự xuống hàng,
+
+64
+00:03:16,580 --> 00:03:17,790
+và những câu lệnh.
+
+65
+00:03:17,790 --> 00:03:22,820
+Trong executescript ta có thể gọi nhiều câu lệnh SQL.
+
+66
+00:03:22,820 --> 00:03:26,370
+Ta viết các dòng DROP TABLE IF EXISTS như thế này.
+
+67
+00:03:26,370 --> 00:03:27,330
+Ở đây,
+
+68
+00:03:27,330 --> 00:03:30,650
+ta không muốn phải xoá file này 
+mỗi khi ta khởi động lại.
+
+69
+00:03:30,650 --> 00:03:34,310
+Ta muốn bắt đầu với những bảng mới
+nên ta DROP rồi tạo lại những bảng đó.
+
+70
+00:03:35,400 --> 00:03:39,440
+DROP IF EXIST (xóa nếu tồn tại)
+nghĩa là lần tạo đầu tiên nó chưa tồn tại,
+
+71
+00:03:39,440 --> 00:03:41,150
+vậy cái này không làm gì cả.
+
+72
+00:03:41,150 --> 00:03:43,610
+Nhưng những lần sau, 3 bảng này sẽ bị xoá.
+
+73
+00:03:43,610 --> 00:03:45,870
+Ta sẽ tạo 1 bảng User và
+
+74
+00:03:45,870 --> 00:03:50,090
+cái khác biệt duy nhất so với bình thường 
+là ta thêm vào UNIQUE ở đây.
+
+75
+00:03:50,090 --> 00:03:55,670
+Cái này đơn giản là trong bảng User, 
+tên trong cột name phải là duy nhất.
+
+76
+00:03:55,670 --> 00:04:00,590
+Vậy, sẽ không tồn tại 2 hàng có cùng tên là Chuck.
+
+77
+00:04:00,590 --> 00:04:02,990
+Đây là nguyên tắc ta tạo ra cho chính mình.
+
+78
+00:04:02,990 --> 00:04:09,130
+Nếu ta vi phạm nguyên tắc, SQLite 
+sẽ la lên hay báo lỗi.
+
+79
+00:04:09,130 --> 00:04:11,690
+Lát nữa ta sẽ tận dụng nguyên tắc này.
+
+80
+00:04:11,690 --> 00:04:14,230
+Và tương tự với bảng Course.
+
+81
+00:04:14,230 --> 00:04:17,510
+Ta đã có 1 khoá chính và 1 khoá logic
+
+82
+00:04:17,510 --> 00:04:19,610
+có nghĩa là tên của khoá học phải là duy nhất.
+
+83
+00:04:19,610 --> 00:04:21,560
+Và ta có 1 bảng liên kết.
+
+84
+00:04:21,560 --> 00:04:25,390
+Bảng liên kết hay bảng nối này có 
+
+85
+00:04:25,390 --> 00:04:28,880
+2 khoá ngoại, giống như mọi 
+khoá ngoại mà ta thường dùng.
+
+86
+00:04:28,880 --> 00:04:32,400
+Chỉ khác là ở đây ta viết
+PRIMARY KEY (user_id, course_id)
+
+87
+00:04:32,400 --> 00:04:35,250
+Vậy ta có 1 khoá chính phức hợp ở đây.
+
+88
+00:04:35,250 --> 00:04:38,910
+Đó là các cặp kết hợp như 1 - 1; 1 - 2 hay 2 - 1.
+
+89
+00:04:40,060 --> 00:04:43,710
+Nó giống như ta ghép nối 2 con số 
+này lại thành 1 khoá đơn nhất.
+
+90
+00:04:43,710 --> 00:04:45,960
+Cả hai đều không phải là khoá chính.
+
+91
+00:04:45,960 --> 00:04:51,010
+Nhưng khoá chính cho các hàng là 
+sự kết hợp của user_id và course_id.
+
+92
+00:04:51,010 --> 00:04:53,680
+Và đây là hạn chế về tính duy nhất để
+
+93
+00:04:53,680 --> 00:04:56,610
+ta không thể chèn thông tin vào 2 lần.
+
+94
+00:04:56,610 --> 00:04:59,601
+OK? Vậy, khi ta xong những cái này,
+
+95
+00:04:59,601 --> 00:05:03,684
+ta đã thiết lập 3 bảng theo cách ta muốn.
+
+96
+00:05:07,290 --> 00:05:12,640
+OK, ta yêu cầu tên file, ta nhấn Enter,
+tên file sẽ là roster_data.json,
+
+97
+00:05:12,640 --> 00:05:16,370
+có lẽ bạn sẽ liên tục nhấn Enter cho cái này.
+
+98
+00:05:16,370 --> 00:05:18,490
+Đây là cú pháp của file đó.
+
+99
+00:05:18,490 --> 00:05:21,970
+Ta sẽ mở file, đọc toàn bộ nội dung,
+
+100
+00:05:21,970 --> 00:05:24,416
+đưa nội dung vào chuỗi rồi loads.
+
+101
+00:05:24,416 --> 00:05:27,730
+Bạn có thể thử try/except ở đây
+nhưng sẽ không có vấn đề gì cả.
+
+102
+00:05:27,730 --> 00:05:29,640
+Nó sẽ chạy thành công.
+
+103
+00:05:29,640 --> 00:05:34,790
+Giờ json_data là 1 list Python.
+
+104
+00:05:34,790 --> 00:05:37,330
+Ta nói: for entry in json_data.
+
+105
+00:05:37,330 --> 00:05:40,500
+Về cơ bản, entry sẽ lặp qua từng phần tử
+
+106
+00:05:40,500 --> 00:05:41,570
+trong list.
+
+107
+00:05:41,570 --> 00:05:46,100
+Entry là 1 mảng có 3 phần tử, 0, 1 và 2.
+
+108
+00:05:46,100 --> 00:05:49,870
+Rồi ta gán name là entry[0] và title là entry[1].
+
+109
+00:05:49,870 --> 00:05:52,660
+Ta sẽ lấy name (tên) và title (tiêu đề) từ mảng này.
+
+110
+00:05:53,955 --> 00:05:57,220
+Đây là 1 trong những đặc điểm
+khiến mọi người thích sử dụng JSON:
+
+111
+00:05:57,220 --> 00:05:59,460
+việc đọc dữ liệu, phân tích dữ liệu,
+
+112
+00:05:59,460 --> 00:06:01,680
+lặp qua từng dữ liệu, tìm kiếm dữ liệu
+
+113
+00:06:01,680 --> 00:06:05,650
+đều rất dễ làm vì nó chỉ là list hay dictionary
+
+114
+00:06:05,650 --> 00:06:10,610
+tùy theo chuỗi JSON bắt đầu với
+dấu ngoặc vuông hay ngoặc nhọn.
+
+115
+00:06:10,610 --> 00:06:13,000
+Ngoài chi tiết đó ra thì nó rất tiện dụng.
+
+116
+00:06:13,000 --> 00:06:14,850
+Rồi ta in ra màn hình.
+
+117
+00:06:14,850 --> 00:06:20,060
+Bây giờ, đây là nơi mà nơi ta sẽ
+tận dụng hạn chế UNIQUE.
+
+118
+00:06:20,060 --> 00:06:23,700
+Ta nói "INSERT OR IGNORE".
+
+119
+00:06:23,700 --> 00:06:27,190
+Nói chung OR IGNORE nghĩa là
+
+120
+00:06:27,190 --> 00:06:30,680
+nếu khi INSERT mà có lỗi thì bỏ qua.
+
+121
+00:06:30,680 --> 00:06:33,510
+Nghĩa là chèn hoặc bỏ qua.
+
+122
+00:06:33,510 --> 00:06:36,020
+Và bình thường thì lỗi sẽ xảy ra ở đây
+
+123
+00:06:36,020 --> 00:06:39,750
+là sự vi phạm từ khoá UNIQUE
+mà ta đặt ở cột name.
+
+124
+00:06:39,750 --> 00:06:40,710
+Cột name.
+
+125
+00:06:40,710 --> 00:06:42,270
+INSERT INTO User name.
+
+126
+00:06:42,270 --> 00:06:45,900
+Lưu ý rằng id là khoá chính và ta không 
+phải đề cập ở đây. Tiếp theo là VALUES,
+
+127
+00:06:45,900 --> 00:06:46,540
+rồi dấu hỏi chấm.
+
+128
+00:06:46,540 --> 00:06:50,764
+Và rồi ta có 1 tuple với 1 dấu phẩy theo sau.
+
+129
+00:06:50,764 --> 00:06:52,748
+Đây chính là cú pháp mà ta sẽ dùng.
+
+130
+00:06:52,748 --> 00:06:57,856
+Cú pháp này nghĩa là nếu đây 
+là lần đầu tiên ta thấy tên name,
+
+131
+00:06:57,856 --> 00:07:01,800
+nó sẽ được chèn vào bảng và cấp 1 khoá chính.
+
+132
+00:07:01,800 --> 00:07:05,030
+Nếu là lần thứ 2 trở đi, nó sẽ không được chèn vào.
+
+133
+00:07:05,030 --> 00:07:07,860
+Ta đang làm giống hệt như 1 dictionary mà ta từng làm
+
+134
+00:07:07,860 --> 00:07:09,750
+trong vài chương trình về cơ sở dữ liệu khác.
+
+135
+00:07:09,750 --> 00:07:13,010
+Vậy, câu lệnh này sẽ chèn hoặc không làm gì cả.
+
+136
+00:07:13,010 --> 00:07:18,470
+Nhưng từ thời điểm này trở đi,
+
+137
+00:07:18,470 --> 00:07:21,858
+ta biết chắc sẽ có 1 bản ghi và 1 khoá chính.
+
+138
+00:07:21,858 --> 00:07:24,550
+Vậy bây giờ ta sẽ tìm kiếm khoá chính đó
+
+139
+00:07:24,550 --> 00:07:26,290
+xem nó là gì,
+
+140
+00:07:26,290 --> 00:07:31,910
+đây có thể là khóa vừa mới tạo hay có từ lâu rồi.
+
+141
+00:07:31,910 --> 00:07:36,660
+Dù là bất cứ cái gì, SELECT khoá chính 
+FROM User WHERE name = name.
+
+142
+00:07:36,660 --> 00:07:41,530
+Ta chèn nó hoặc bỏ qua, rồi ta lấy ra bằng select.
+
+143
+00:07:41,530 --> 00:07:45,350
+Cả đoạn này gần như là thành một cụm cố định.
+
+144
+00:07:45,350 --> 00:07:49,380
+Đoạn INSERT OR IGNORE rồi SELECT này nghĩa là
+
+145
+00:07:49,380 --> 00:07:51,800
+đưa nó vào hoặc không làm gì 
+và trả ra khoá chính khi làm xong.
+
+146
+00:07:51,800 --> 00:07:56,226
+Tiếp theo ta có user_id = cur.fetchone, 
+đưa cho tôi 1 hàng từ cái này,
+
+147
+00:07:56,226 --> 00:07:57,818
+và ta chỉ có 1 hàng thông tin.
+
+148
+00:07:57,818 --> 00:08:00,778
+Và chọn phần tử thứ 0 bởi vì
+
+149
+00:08:00,778 --> 00:08:04,300
+ta chỉ lấy 1 cột trong cơ sở dữ liệu, OK?
+
+150
+00:08:05,440 --> 00:08:07,570
+Tiếp theo ta làm lại chính xác như vậy.
+
+151
+00:08:09,580 --> 00:08:13,370
+Nó giống như một cụm cố định rồi. Ta chọn 3 dòng này
+
+152
+00:08:13,370 --> 00:08:14,900
+rồi dán nó xuống dưới đây.
+
+153
+00:08:14,900 --> 00:08:17,584
+INSERT OR IGNORE into Course với title
+
+154
+00:08:17,584 --> 00:08:18,500
+cũng là loại UNIQUE.
+
+155
+00:08:18,500 --> 00:08:22,390
+Và rồi ta sẽ gọi SELECT WHERE.
+
+156
+00:08:22,390 --> 00:08:24,500
+Và rồi ta sẽ có 1 con số nguyên,
+
+157
+00:08:24,500 --> 00:08:29,180
+số này sẽ là khoá chính của Course,
+bất kể ta đã chèn nó hay không.
+
+158
+00:08:29,180 --> 00:08:31,410
+OK? Tới giờ mọi thứ đều ổn.
+
+159
+00:08:31,410 --> 00:08:36,100
+Bây giờ, ta đã chèn vào 1 bản ghi ở bên này,
+chèn 1 bản ghi ở bên kia,
+
+160
+00:08:36,100 --> 00:08:40,770
+và ta có giá trị cho 2 cái này trong 2 biến.
+
+161
+00:08:40,770 --> 00:08:42,080
+Như tôi đã nói,
+
+162
+00:08:42,080 --> 00:08:46,020
+một số thứ cần đặt khoá ngoại vào
+thì khá dễ làm trong Python.
+
+163
+00:08:46,020 --> 00:08:50,830
+Bởi vì bạn không cần nhìn lại các bảng tổng hợp.
+
+164
+00:08:50,830 --> 00:08:53,170
+Ở đây là 1 bảng tổng hợp.
+
+165
+00:08:53,170 --> 00:08:54,370
+Nó cho thấy các con số đó có nghĩa gì.
+
+166
+00:08:54,370 --> 00:08:57,470
+Tốt, ta không cần biết các con số đó là gì.
+
+167
+00:08:57,470 --> 00:09:05,440
+Bởi vì ta có chúng trong các biến course_id, user_id.
+
+168
+00:09:05,440 --> 00:09:09,190
+Hãy đưa nó cho tôi bất kể nó là con số nào,
+và bạn không cần phải ghi nó ra.
+
+169
+00:09:09,190 --> 00:09:12,432
+Vậy ta chỉ làm INSERT OR REPLACE,
+
+170
+00:09:12,432 --> 00:09:17,790
+bởi vì sự kết hợp của user_id 
+và course_id là 1 khoá chính.
+
+171
+00:09:17,790 --> 00:09:22,620
+Vậy nếu ta thấy 1 người xuất hiện 2 lần
+trong Course, nó sẽ được cập nhật.
+
+172
+00:09:22,620 --> 00:09:30,552
+Cái này là 1 sự kết hợp chèn hoặc cập nhật.
+
+173
+00:09:30,552 --> 00:09:34,280
+INSERT OR REPLACE, không gặp lỗi nếu nó đã tồn tại.
+
+174
+00:09:34,280 --> 00:09:38,840
+INTO Member user_id, course_id, 
+2 giá trị, và tiếp user_id, course_id.
+
+175
+00:09:38,840 --> 00:09:39,670
+Và ta đã xong.
+
+176
+00:09:39,670 --> 00:09:43,840
+Ta đã thiết làm 1 kết nối 
+nho nhỏ giữa 2 khoá ngoại.
+
+177
+00:09:43,840 --> 00:09:46,520
+Và rồi ta gọi commit để đảm bảo
+ghi tất cả vào ổ đĩa, và
+
+178
+00:09:46,520 --> 00:09:50,130
+ta chạy cái này 1 lần cho mỗi bảng. OK?
+
+179
+00:09:50,130 --> 00:09:56,220
+Rất dễ dàng và đơn giản.
+Ta hãy chạy đoạn code này.
+
+180
+00:09:56,220 --> 00:10:01,188
+OK, giờ tôi đang ở code/roster 
+và tôi chạy lệnh ls,
+
+181
+00:10:01,188 --> 00:10:05,086
+tôi thấy roster.json và roster.py ở đây.
+
+182
+00:10:05,086 --> 00:10:09,304
+Và để chạy file code, 
+tôi gõ python roster.py.
+
+183
+00:10:09,304 --> 00:10:15,135
+Và tại thời điểm này, 1 cơ sở 
+dữ liệu đã được tạo ra bởi vì
+
+184
+00:10:15,135 --> 00:10:18,158
+lệnh CREATE, executescript đã được gọi trước đó.
+
+185
+00:10:18,158 --> 00:10:20,880
+Nhìn vào Database Structure.
+
+186
+00:10:20,880 --> 00:10:25,125
+Không có gì trong đây cả, ta chọn Open Database,
+
+187
+00:10:25,125 --> 00:10:28,870
+rosterdb.sqlite.
+
+188
+00:10:28,870 --> 00:10:32,860
+Ta thấy những thứ này đã được
+tạo chính xác như ta muốn.
+
+189
+00:10:32,860 --> 00:10:35,900
+Thường thì bạn sẽ không mở dữ liệu ra xem nhưng
+
+190
+00:10:35,900 --> 00:10:39,105
+nếu ta nhìn vào dữ liệu ở đây, chẳng có gì cả.
+
+191
+00:10:39,105 --> 00:10:41,720
+OK? Không có dữ liệu gì hết.
+
+192
+00:10:41,720 --> 00:10:43,060
+Và tôi nhấn Enter,
+
+193
+00:10:43,060 --> 00:10:48,190
+và nó sẽ mặc định tên file là rosterdata.json.
+
+194
+00:10:48,190 --> 00:10:51,680
+Đọc tất cả dữ liệu json, chèn các thứ rồi ghi lại.
+
+195
+00:10:51,680 --> 00:10:54,730
+Giờ ta quay trở lại và nhìn vào dữ liệu.
+
+196
+00:10:54,730 --> 00:10:57,100
+Và chúng đây, dữ liệu đã ở đây.
+
+197
+00:10:57,100 --> 00:10:59,200
+Đây là tất cả người dùng trong bảng User.
+
+198
+00:10:59,200 --> 00:11:00,370
+Khá đơn giản.
+
+199
+00:11:00,370 --> 00:11:03,240
+Các khoá học trong bảng Course. Khá đơn giản.
+
+200
+00:11:03,240 --> 00:11:09,110
+Các khoá chính và bảng Member,
+chỉ là 1 đống các hàng dữ liệu
+
+201
+00:11:09,110 --> 00:11:14,170
+với 2 khoá chính trỏ đến Course và User ở 2 bên.
+
+202
+00:11:14,170 --> 00:11:16,060
+Xong rồi.
+
+203
+00:11:16,060 --> 00:11:24,377
+Đó là tất cả những gì ta phải làm.
+Giờ ta lên trên này
+
+204
+00:11:26,627 --> 00:11:31,214
+để hiện thực sơ đồ quan hệ nhiều - nhiều này
+
+205
+00:11:31,214 --> 00:11:34,607
+mà ta đã tách ra thành 2 quan hệ nhiều - một.

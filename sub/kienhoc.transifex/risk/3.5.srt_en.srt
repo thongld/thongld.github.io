@@ -1,0 +1,356 @@
+0
+00:00:05,093 --> 00:00:06,540
+Welcome back.
+https://youtu.be/sf9SmSgNP1Q
+1
+00:00:06,540 --> 00:00:08,790
+Let&#39;s get to the trickier, fun part.
+
+2
+00:00:08,790 --> 00:00:11,940
+We are still with two assets but this time with data.
+
+3
+00:00:11,940 --> 00:00:14,410
+And the data file is stock data.
+
+4
+00:00:14,410 --> 00:00:18,950
+And for ease of exposition and so that you get used to it,
+
+5
+00:00:18,950 --> 00:00:23,420
+sometimes I&#39;ll jump around with variance or standard deviation.
+
+6
+00:00:23,420 --> 00:00:25,950
+But what&#39;s the relationship between the two?
+
+7
+00:00:25,950 --> 00:00:27,990
+One, first important principle.
+
+8
+00:00:27,990 --> 00:00:32,630
+I have to calculate variance before I can calculate standard deviation.
+
+9
+00:00:32,630 --> 00:00:36,230
+A lot of people are comfortable talking about variances most of the time.
+
+10
+00:00:36,230 --> 00:00:40,784
+Some deal with standard deviation simply because it&#39;s the square root and
+
+11
+00:00:40,784 --> 00:00:42,525
+similar to a return, okay.
+
+12
+00:00:42,525 --> 00:00:47,142
+So if I flip around between variances and standard deviations,
+
+13
+00:00:47,142 --> 00:00:49,886
+that shouldn&#39;t bother you, right?
+
+14
+00:00:49,886 --> 00:00:52,030
+You should be able to go between the two.
+
+15
+00:00:52,030 --> 00:00:52,918
+But important,
+
+16
+00:00:52,918 --> 00:00:56,986
+you cannot calculate standard deviation before you calculate variances.
+
+17
+00:00:56,986 --> 00:01:02,561
+So two assets, what was the average return on the portfolio?
+
+18
+00:01:02,561 --> 00:01:04,630
+It was the average of the two averages.
+
+19
+00:01:05,680 --> 00:01:10,890
+So the expected return on the portfolio is a rated average of the two
+
+20
+00:01:10,890 --> 00:01:12,090
+expected returns.
+
+21
+00:01:12,090 --> 00:01:13,510
+Very simple, very linear.
+
+22
+00:01:14,580 --> 00:01:18,374
+And our rates for the time being are often half.
+
+23
+00:01:18,374 --> 00:01:20,100
+Quick question.
+
+24
+00:01:20,100 --> 00:01:24,140
+You already calculated the portfolio return, right?
+
+25
+00:01:24,140 --> 00:01:28,960
+You created a new column going from two to 61 because there are 60 data
+
+26
+00:01:28,960 --> 00:01:33,900
+points which is a combination of the two securities, first two.
+
+27
+00:01:33,900 --> 00:01:34,710
+So let&#39;s keep going.
+
+28
+00:01:35,860 --> 00:01:40,390
+Again, using those two securities, what are the risks of securities one and
+
+29
+00:01:40,390 --> 00:01:42,000
+two by themselves?
+
+30
+00:01:42,000 --> 00:01:43,500
+And let&#39;s talk about variances.
+
+31
+00:01:43,500 --> 00:01:47,130
+This is what I meant is that I&#39;m going to sometimes use variances,
+
+32
+00:01:47,130 --> 00:01:48,420
+sometimes standard deviation.
+
+33
+00:01:48,420 --> 00:01:52,970
+Don&#39;t use them, variance of one and standard deviation on the second one.
+
+34
+00:01:52,970 --> 00:01:53,930
+That doesn&#39;t make sense.
+
+35
+00:01:53,930 --> 00:01:54,930
+Let&#39;s write it out.
+
+36
+00:01:56,130 --> 00:02:02,820
+So, sigma square hat, sigma two square hat.
+
+37
+00:02:02,820 --> 00:02:05,400
+You should have done it last time.
+
+38
+00:02:05,400 --> 00:02:11,865
+I believe the numbers are 0.0127,
+
+39
+00:02:11,865 --> 00:02:17,258
+and this is 0.0102, okay?
+
+40
+00:02:17,258 --> 00:02:20,130
+So, remember, this is the variance,
+
+41
+00:02:20,130 --> 00:02:24,440
+you calculate the variance of the two securities and you&#39;re all set to go.
+
+42
+00:02:24,440 --> 00:02:28,270
+Now the question is, this is not very interesting, right?
+
+43
+00:02:28,270 --> 00:02:33,430
+Because you are holding a portfolio, have you created the portfolio of return?
+
+44
+00:02:33,430 --> 00:02:34,730
+Answer is, yes you have.
+
+45
+00:02:34,730 --> 00:02:36,620
+So let me ask you the second question.
+
+46
+00:02:37,820 --> 00:02:41,560
+What is the risk of the portfolio of the two securities, right?
+
+47
+00:02:41,560 --> 00:02:42,470
+And how would you do that?
+
+48
+00:02:43,480 --> 00:02:48,150
+You would calculate sigma p hat square.
+
+49
+00:02:48,150 --> 00:02:54,554
+Very simple, you will do variance, function and
+
+50
+00:02:54,554 --> 00:02:59,285
+you will give column var.
+
+51
+00:02:59,285 --> 00:03:04,801
+The portfolio return is sitting, column 61.
+
+52
+00:03:04,801 --> 00:03:08,910
+And the column, you substitute the column where the portfolio return is sitting,
+
+53
+00:03:08,910 --> 00:03:11,230
+wherever you&#39;ve created.
+
+54
+00:03:11,230 --> 00:03:12,410
+Very straightforward.
+
+55
+00:03:12,410 --> 00:03:13,150
+Very simple.
+
+56
+00:03:14,230 --> 00:03:17,626
+What will the answer be here, if you&#39;ve calculated it.
+
+57
+00:03:20,396 --> 00:03:21,710
+It will work out to be this.
+
+58
+00:03:22,920 --> 00:03:26,818
+Remember, what was sigma 1 square hat?
+
+59
+00:03:26,818 --> 00:03:29,237
+I&#39;m putting a hat just because these are estimates now.
+
+60
+00:03:31,359 --> 00:03:34,271
+What was sigma 2 hat square?
+
+61
+00:03:40,121 --> 00:03:41,800
+So I calculated three numbers.
+
+62
+00:03:41,800 --> 00:03:45,730
+Something must jump out at you right now.
+
+63
+00:03:46,990 --> 00:03:50,940
+And I&#39;m not going to say what it is there, I&#39;m just going to ask the question.
+
+64
+00:03:50,940 --> 00:03:55,555
+How is it related to the average of the risks of the two securities.
+
+65
+00:03:55,555 --> 00:04:00,532
+So if I simply average the top two, what would I get and
+
+66
+00:04:00,532 --> 00:04:05,300
+the answer is, let&#39;s answer it, 0.0114.
+
+67
+00:04:05,300 --> 00:04:07,130
+You see, I&#39;m averaging this two,
+
+68
+00:04:07,130 --> 00:04:12,030
+so it has to be something in between and I&#39;m averaging them as half and half.
+
+69
+00:04:12,030 --> 00:04:13,000
+What do you notice?
+
+70
+00:04:13,000 --> 00:04:17,698
+What&#39;s the relationship between the second number I calculated and
+
+71
+00:04:17,697 --> 00:04:19,318
+the portfolio return.
+
+72
+00:04:21,598 --> 00:04:25,345
+I think you could see, you can say one thing very obviously,
+
+73
+00:04:25,345 --> 00:04:28,076
+one is less than the other, which you knew.
+
+74
+00:04:28,076 --> 00:04:32,792
+You should have guessed, the return portfolio variance is less
+
+75
+00:04:32,792 --> 00:04:36,210
+than the variance averages of the two, okay?
+
+76
+00:04:36,210 --> 00:04:38,050
+Same will be we too if you do standard deviation.
+
+77
+00:04:39,530 --> 00:04:42,120
+But one is dramatically less than that.
+
+78
+00:04:42,120 --> 00:04:48,570
+So the portfolio returns variance is dramatically less than 0.114 right?
+
+79
+00:04:48,570 --> 00:04:50,400
+It&#39;s about half.
+
+80
+00:04:50,400 --> 00:04:52,360
+Why is that happening?
+
+81
+00:04:52,360 --> 00:04:54,380
+Why so much lower?
+
+82
+00:04:54,380 --> 00:04:56,980
+Where will you go looking for the answer?
+
+83
+00:04:56,980 --> 00:05:00,630
+And I will pause after doing this and I&#39;ll force you to go looking for
+
+84
+00:05:00,630 --> 00:05:02,610
+the answer, please do.
+
+85
+00:05:02,610 --> 00:05:05,810
+And may the force be with you as always, when you&#39;re looking.
+
+86
+00:05:05,810 --> 00:05:06,890
+Where should you be looking?
+
+87
+00:05:06,890 --> 00:05:07,920
+What should you be looking at?
+
+88
+00:05:10,080 --> 00:05:10,720
+See you in a minute.
+

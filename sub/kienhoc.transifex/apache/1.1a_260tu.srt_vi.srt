@@ -1,0 +1,170 @@
+0
+00:00:00,000 --> 00:00:04,782
+dungpham12002
+https://youtu.be/kBmV4mYUZE4
+
+1
+00:00:04,782 --> 00:00:06,990
+ANTHONY JOSEPH: Chào mừng bạn đến với khóa học Giới thiệu
+
+2
+00:00:06,990 --> 00:00:08,680
+về Apache Spark.
+
+3
+00:00:08,680 --> 00:00:10,210
+Tên tôi là Anthony Joseph, và tôi
+
+4
+00:00:10,210 --> 00:00:12,180
+là giáo sư khoa Kĩ thuật Điện và
+
+5
+00:00:12,180 --> 00:00:13,980
+Khoa học máy tính tại Đại học
+
+6
+00:00:13,980 --> 00:00:16,160
+California, Berkeley.
+
+7
+00:00:16,160 --> 00:00:17,590
+Dữ liệu lớn có ở mọi nơi xung quanh ta,
+
+8
+00:00:17,590 --> 00:00:19,920
+và Apache Spark là một trong những công cụ mới và phổ biến nhất
+
+9
+00:00:19,920 --> 00:00:24,460
+để phân tích Dữ liệu lớn nhanh chóng và hiệu quả.
+
+10
+00:00:24,460 --> 00:00:27,810
+Trong bài này, tôi sẽ nói về mục tiêu khóa học
+
+11
+00:00:27,810 --> 00:00:29,960
+và kiến thức cần có trước khi học.
+
+12
+00:00:29,960 --> 00:00:31,930
+Ta sẽ bàn luận xem: Apache Spark là gì
+
+13
+00:00:31,930 --> 00:00:33,930
+và dữ liệu lớn có ở đâu.
+
+14
+00:00:33,930 --> 00:00:36,280
+Ta sẽ tìm hiểu về phổ cấu trúc,
+
+15
+00:00:36,280 --> 00:00:39,130
+sau đó tìm hiểu về Apache Spark và một khái niệm quan trọng
+
+16
+00:00:39,130 --> 00:00:40,934
+trong đó - data frame.
+
+17
+00:00:40,934 --> 00:00:42,600
+Sau đó ta sẽ dành khá nhiều thời gian
+
+18
+00:00:42,600 --> 00:00:48,460
+tìm hiểu về các transformation và action trong Spark.
+
+19
+00:00:48,460 --> 00:00:50,720
+Mục tiêu của khóa học là giúp bạn
+
+20
+00:00:50,720 --> 00:00:53,950
+thử nghiệm với các use case cho Apache Spark.
+
+21
+00:00:53,950 --> 00:00:56,040
+Bạn sẽ được thực hiện thao tác ETL - extract, transform, and load,
+
+22
+00:00:56,040 --> 00:00:59,740
+các phân tích cơ bản về dữ liệu
+
+23
+00:00:59,740 --> 00:01:02,600
+và minh họa dữ liệu.
+
+24
+00:01:02,600 --> 00:01:05,030
+Bạn cũng được tìm hiểu về lịch sử
+
+25
+00:01:05,030 --> 00:01:07,390
+và sự phát triển của Apache Spark.
+
+26
+00:01:07,390 --> 00:01:09,490
+Bạn sẽ được tìm hiểu mô hình khái niệm
+
+27
+00:01:09,490 --> 00:01:13,100
+của data frame và Spark SQL.
+
+28
+00:01:13,100 --> 00:01:17,650
+Bạn sẽ được tìm hiểu những thứ quan trọng
+trong Spark như transformation, action,
+
+29
+00:01:17,650 --> 00:01:21,420
+pySpark và API SparkSQL.
+
+30
+00:01:21,420 --> 00:01:25,070
+Bạn sẽ được tìm hiểu cách gỡ lỗi cơ bản
+cho các chương trình Apache Spark
+
+31
+00:01:25,070 --> 00:01:29,910
+và nơi để tìm câu trả lời cho thắc mắc liên quan đến Spark.
+
+32
+00:01:29,910 --> 00:01:32,740
+Đối với khóa học này, có một số yêu cầu về kiến thức:
+
+33
+00:01:32,740 --> 00:01:35,150
+Đầu tiên là bạn phải có kinh nghiệm và kĩ năng
+
+34
+00:01:35,150 --> 00:01:37,350
+lập trình cơ bản.
+
+35
+00:01:37,350 --> 00:01:40,630
+Bạn cũng cần có kinh nghiệm sử dụng Python 2.7.
+
+36
+00:01:40,630 --> 00:01:43,690
+Nếu chưa có, bạn có thể học khóa học Python ngắn theo
+
+37
+00:01:43,690 --> 00:01:47,220
+đường dẫn dưới đây để học cấp tốc Python.
+
+38
+00:01:47,220 --> 00:01:50,640
+Bạn cũng cần có trình duyệt Google Chrome.
+
+39
+00:01:50,640 --> 00:01:52,450
+Môi trường ta sẽ sử dụng không
+
+40
+00:01:52,450 --> 00:01:56,503
+hỗ trợ Internet Explorer, Edge và Safari.
+
+41
+00:01:56,503 --> 00:01:57,003
+

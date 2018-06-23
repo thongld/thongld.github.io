@@ -1,0 +1,756 @@
+0
+00:00:00,000 --> 00:00:00,500
+https://youtu.be/fO-M17OEziM
+
+1
+00:00:00,500 --> 00:00:03,290
+OK, recall that we said that supply chain management is
+
+2
+00:00:03,290 --> 00:00:06,000
+all about making supply match demand.
+
+3
+00:00:06,000 --> 00:00:09,500
+So understanding and being able to forecast that demand
+
+4
+00:00:09,500 --> 00:00:11,430
+is a critical and usually a first step
+
+5
+00:00:11,430 --> 00:00:13,230
+in designing a supply chain.
+
+6
+00:00:13,230 --> 00:00:15,880
+But before we get into the math of forecasting,
+
+7
+00:00:15,880 --> 00:00:18,070
+let's step back and talk about demand planning
+
+8
+00:00:18,070 --> 00:00:20,560
+to understand what we're really trying to do.
+
+9
+00:00:20,560 --> 00:00:22,240
+It's important to always remember
+
+10
+00:00:22,240 --> 00:00:23,930
+when we're in the middle of forecasting
+
+11
+00:00:23,930 --> 00:00:27,290
+and all the different models what our objective is,
+
+12
+00:00:27,290 --> 00:00:30,050
+and that forecasting isn't the end game.
+
+13
+00:00:30,050 --> 00:00:32,850
+We don't forecast just for forecast sake.
+
+14
+00:00:32,850 --> 00:00:34,970
+We always forecast for a reason, whether it's
+
+15
+00:00:34,970 --> 00:00:37,724
+the planned capacity, to manage our inventory,
+
+16
+00:00:37,724 --> 00:00:39,265
+or to set up our transportation plan,
+
+17
+00:00:39,265 --> 00:00:41,290
+or anything in between that.
+
+18
+00:00:41,290 --> 00:00:44,840
+But there's always a reason for doing a forecast.
+
+19
+00:00:44,840 --> 00:00:47,690
+And forecasting is actually part of a larger process.
+
+20
+00:00:47,690 --> 00:00:49,690
+And then you can think about the demand process.
+
+21
+00:00:49,690 --> 00:00:51,550
+And there are three main big questions
+
+22
+00:00:51,550 --> 00:00:54,160
+that we try to answer in this demand process.
+
+23
+00:00:54,160 --> 00:00:57,120
+The first one is, what should we do to shape and create
+
+24
+00:00:57,120 --> 00:00:58,910
+demand for our product?
+
+25
+00:00:58,910 --> 00:01:01,270
+And this is sometimes known as demand planning.
+
+26
+00:01:01,270 --> 00:01:04,560
+And you can think of what falls in this category as the five
+
+27
+00:01:04,560 --> 00:01:05,261
+p's.
+
+28
+00:01:05,261 --> 00:01:07,510
+You want to think about the product that you're making
+
+29
+00:01:07,510 --> 00:01:08,740
+and the packaging.
+
+30
+00:01:08,740 --> 00:01:10,920
+What does the size and the final form look like?
+
+31
+00:01:10,920 --> 00:01:12,560
+Because this will shape demand.
+
+32
+00:01:12,560 --> 00:01:15,630
+It'll change whether people really want it or are not
+
+33
+00:01:15,630 --> 00:01:17,030
+as interested in it.
+
+34
+00:01:17,030 --> 00:01:18,680
+Think about promotions.
+
+35
+00:01:18,680 --> 00:01:20,820
+And so the interesting thing about promotions,
+
+36
+00:01:20,820 --> 00:01:22,890
+if you're talking to the consumer
+
+37
+00:01:22,890 --> 00:01:25,880
+packaged good industry, the companies that make things
+
+38
+00:01:25,880 --> 00:01:28,380
+that you buy in the grocery store or department store,
+
+39
+00:01:28,380 --> 00:01:31,860
+40% of all products in supermarkets sold by CPG
+
+40
+00:01:31,860 --> 00:01:33,510
+are sold under a promotion.
+
+41
+00:01:33,510 --> 00:01:36,500
+Promotions drive huge swings in the business.
+
+42
+00:01:36,500 --> 00:01:39,370
+So that will definitely change demand.
+
+43
+00:01:39,370 --> 00:01:41,080
+You want to think about the pricing.
+
+44
+00:01:41,080 --> 00:01:43,660
+What's your list price versus what discounts do you offer?
+
+45
+00:01:43,660 --> 00:01:46,690
+Because that changes the way the demand will be shaped.
+
+46
+00:01:46,690 --> 00:01:47,840
+And then finally, place.
+
+47
+00:01:47,840 --> 00:01:51,270
+And what we mean here is what kind of channels are you using?
+
+48
+00:01:51,270 --> 00:01:52,260
+Is it all internet?
+
+49
+00:01:52,260 --> 00:01:54,310
+Is it small mom and pop stores?
+
+50
+00:01:54,310 --> 00:01:55,970
+Is it large grocery stores?
+
+51
+00:01:55,970 --> 00:01:57,290
+Anything in between.
+
+52
+00:01:57,290 --> 00:01:59,830
+So how you set up your product, your packaging,
+
+53
+00:01:59,830 --> 00:02:02,710
+the way you run promotions, your pricing plan,
+
+54
+00:02:02,710 --> 00:02:05,430
+and where you place, where you sell your products,
+
+55
+00:02:05,430 --> 00:02:08,340
+that will help shape demand.
+
+56
+00:02:08,340 --> 00:02:10,770
+So now we can think about the next question.
+
+57
+00:02:10,770 --> 00:02:15,380
+And that's given this plan, what do we expect the demand to be?
+
+58
+00:02:15,380 --> 00:02:17,850
+And so this is where forecasting comes in.
+
+59
+00:02:17,850 --> 00:02:19,410
+So we've got this plan in place.
+
+60
+00:02:19,410 --> 00:02:20,750
+We know what the promotions are going to be
+
+61
+00:02:20,750 --> 00:02:22,041
+and all these different things.
+
+62
+00:02:22,041 --> 00:02:23,530
+And now we're going to forecast.
+
+63
+00:02:23,530 --> 00:02:25,060
+And as we'll see in a second, there
+
+64
+00:02:25,060 --> 00:02:26,980
+are different levels of forecasting.
+
+65
+00:02:26,980 --> 00:02:30,320
+You can think of strategic, tactical, and operational.
+
+66
+00:02:30,320 --> 00:02:32,370
+And they all vary with the time horizon
+
+67
+00:02:32,370 --> 00:02:33,640
+you're trying to plan over.
+
+68
+00:02:33,640 --> 00:02:36,477
+And we'll talk more about that in a second.
+
+69
+00:02:36,477 --> 00:02:38,310
+But the second thing is you want to consider
+
+70
+00:02:38,310 --> 00:02:40,670
+both internal and external factors.
+
+71
+00:02:40,670 --> 00:02:43,080
+And the key word here is factors.
+
+72
+00:02:43,080 --> 00:02:46,250
+So you want to understand that demand plan-- that's
+
+73
+00:02:46,250 --> 00:02:48,780
+the internal factors that you're shaping,
+
+74
+00:02:48,780 --> 00:02:51,390
+how you're setting up your promotions and everything--
+
+75
+00:02:51,390 --> 00:02:55,270
+but also your external factors, the competitive landscape.
+
+76
+00:02:55,270 --> 00:02:58,580
+What you don't want to include in here is your capabilities.
+
+77
+00:02:58,580 --> 00:03:00,200
+You don't want to set a forecast based
+
+78
+00:03:00,200 --> 00:03:02,010
+on what you want to happen or what
+
+79
+00:03:02,010 --> 00:03:04,080
+you think you would like to see.
+
+80
+00:03:04,080 --> 00:03:08,640
+It's really all about what your unbiased, the baseline
+
+81
+00:03:08,640 --> 00:03:10,500
+or unconstrained forecast is.
+
+82
+00:03:10,500 --> 00:03:14,330
+So you try not to have other things influence
+
+83
+00:03:14,330 --> 00:03:16,300
+the forecast that don't fit in.
+
+84
+00:03:16,300 --> 00:03:18,220
+You look at those factors that are
+
+85
+00:03:18,220 --> 00:03:21,790
+beyond your control-- the competitive landscape.
+
+86
+00:03:21,790 --> 00:03:24,260
+But you really don't want to bias your forecast.
+
+87
+00:03:24,260 --> 00:03:27,030
+And we'll talk much more about that in later lectures.
+
+88
+00:03:27,030 --> 00:03:29,000
+And then the third question is, OK,
+
+89
+00:03:29,000 --> 00:03:32,010
+given that we have this demand, how do we prepare and act
+
+90
+00:03:32,010 --> 00:03:33,970
+for this when it starts materializing?
+
+91
+00:03:33,970 --> 00:03:36,200
+And this is known as demand management.
+
+92
+00:03:36,200 --> 00:03:39,010
+And this is kind of at the end of the process.
+
+93
+00:03:39,010 --> 00:03:41,200
+But it's an ongoing process.
+
+94
+00:03:41,200 --> 00:03:43,320
+And this is where we try to balance the demand
+
+95
+00:03:43,320 --> 00:03:46,060
+and supply across the organization.
+
+96
+00:03:46,060 --> 00:03:48,530
+So you can think about this demand planning up here.
+
+97
+00:03:48,530 --> 00:03:51,100
+A lot of this is happening at the marketing or sales side.
+
+98
+00:03:51,100 --> 00:03:53,740
+Product development, they're trying to figure out policies.
+
+99
+00:03:53,740 --> 00:03:56,950
+Forecasting is done in different places within a company.
+
+100
+00:03:56,950 --> 00:03:59,220
+A lot of times it's done in the marketing side,
+
+101
+00:03:59,220 --> 00:04:01,310
+sometimes on the supply chain side.
+
+102
+00:04:01,310 --> 00:04:04,810
+But demand management is the process
+
+103
+00:04:04,810 --> 00:04:06,300
+that involves all of the company,
+
+104
+00:04:06,300 --> 00:04:09,920
+because you're balancing the demand and the supply.
+
+105
+00:04:09,920 --> 00:04:13,110
+So the key tool or process used here
+
+106
+00:04:13,110 --> 00:04:16,570
+is the S&OP processor, Sales and Operations Planning,
+
+107
+00:04:16,570 --> 00:04:18,839
+which we'll talk about a little bit later.
+
+108
+00:04:18,839 --> 00:04:20,640
+But essentially what this is, it's
+
+109
+00:04:20,640 --> 00:04:23,510
+a meeting or series of meetings or a mechanism
+
+110
+00:04:23,510 --> 00:04:26,770
+that ties the operations or the supply side
+
+111
+00:04:26,770 --> 00:04:28,110
+with the demand side.
+
+112
+00:04:28,110 --> 00:04:31,620
+So the supply side is focused on minimizing cost and inventory.
+
+113
+00:04:31,620 --> 00:04:34,440
+This is the guys in the supply chain trying
+
+114
+00:04:34,440 --> 00:04:36,549
+to make things as efficient as possible.
+
+115
+00:04:36,549 --> 00:04:38,340
+And they balance this with the demand side.
+
+116
+00:04:38,340 --> 00:04:40,240
+These are the marketing and sales side.
+
+117
+00:04:40,240 --> 00:04:43,120
+And their objective is to maximize revenues and margins.
+
+118
+00:04:43,120 --> 00:04:48,020
+And so what this S&OP does, it creates a bridge
+
+119
+00:04:48,020 --> 00:04:50,510
+across the firm to try to balance
+
+120
+00:04:50,510 --> 00:04:54,940
+between what we want to sell and what we're able to make.
+
+121
+00:04:54,940 --> 00:04:56,780
+So these are the three key questions
+
+122
+00:04:56,780 --> 00:04:58,720
+within the demand process.
+
+123
+00:04:58,720 --> 00:05:00,470
+And the last thing I want to say before we
+
+124
+00:05:00,470 --> 00:05:03,420
+get into some of the details is the different types
+
+125
+00:05:03,420 --> 00:05:04,440
+of forecasts.
+
+126
+00:05:04,440 --> 00:05:08,420
+And again, they all differ based on the time horizon.
+
+127
+00:05:08,420 --> 00:05:12,400
+So you can think of a strategic plan or strategic forecast
+
+128
+00:05:12,400 --> 00:05:13,980
+as being multiple years.
+
+129
+00:05:13,980 --> 00:05:15,630
+This is one year, multiple years.
+
+130
+00:05:15,630 --> 00:05:17,600
+In the pharmaceuticals industry, you
+
+131
+00:05:17,600 --> 00:05:20,030
+might be planning five, 10 plus years out,
+
+132
+00:05:20,030 --> 00:05:22,840
+because you have to base it on the life of the drug
+
+133
+00:05:22,840 --> 00:05:24,990
+that you're creating.
+
+134
+00:05:24,990 --> 00:05:27,120
+For large infrastructure investments,
+
+135
+00:05:27,120 --> 00:05:29,880
+such as for the government for a department of transportation,
+
+136
+00:05:29,880 --> 00:05:31,880
+they've got to look 20 to 30 years out,
+
+137
+00:05:31,880 --> 00:05:34,400
+because the life of the product itself, the investment,
+
+138
+00:05:34,400 --> 00:05:37,230
+the highway, the bridge, whatever has a long lifespan.
+
+139
+00:05:37,230 --> 00:05:40,250
+So they have to look much further.
+
+140
+00:05:40,250 --> 00:05:43,770
+So you see these strategic level forecasts, mainly
+
+141
+00:05:43,770 --> 00:05:45,100
+for investment strategies.
+
+142
+00:05:45,100 --> 00:05:48,860
+And the big questions-- capacity planning, building a new plant,
+
+143
+00:05:48,860 --> 00:05:52,034
+large business changes.
+
+144
+00:05:52,034 --> 00:05:53,700
+Then you get down to the tactical level.
+
+145
+00:05:53,700 --> 00:05:57,240
+You can think of quarterly tactical plans as well as
+
+146
+00:05:57,240 --> 00:05:58,522
+months or weeks plans.
+
+147
+00:05:58,522 --> 00:06:00,230
+And they're really all about those things
+
+148
+00:06:00,230 --> 00:06:01,970
+that we can change within a quarter
+
+149
+00:06:01,970 --> 00:06:03,960
+or within a month or a week.
+
+150
+00:06:03,960 --> 00:06:06,180
+So here on the month or week, we can
+
+151
+00:06:06,180 --> 00:06:07,970
+think about short term capacity planning,
+
+152
+00:06:07,970 --> 00:06:09,900
+master planning, inventory planning.
+
+153
+00:06:09,900 --> 00:06:12,140
+This is where we'll spend a lot of time.
+
+154
+00:06:12,140 --> 00:06:13,900
+But quarterly, that's pretty much
+
+155
+00:06:13,900 --> 00:06:16,492
+how you can adjust your labor, your manpower, some
+
+156
+00:06:16,492 --> 00:06:17,450
+of your sales planning.
+
+157
+00:06:17,450 --> 00:06:19,920
+A lot of these things run on quarterly cycles.
+
+158
+00:06:19,920 --> 00:06:22,600
+Whether that's a good thing or a bad thing is another question.
+
+159
+00:06:22,600 --> 00:06:25,580
+But a lot of times, you have these things tied to a quarter.
+
+160
+00:06:25,580 --> 00:06:28,560
+And then finally, you have these operation or shortform term
+
+161
+00:06:28,560 --> 00:06:29,280
+plans.
+
+162
+00:06:29,280 --> 00:06:32,009
+And I'm forecasting over days or hours.
+
+163
+00:06:32,009 --> 00:06:34,050
+A lot of times you'll see this for transportation
+
+164
+00:06:34,050 --> 00:06:37,450
+on the current operations, production planning, inventory
+
+165
+00:06:37,450 --> 00:06:39,440
+deployment, those kinds of things.
+
+166
+00:06:39,440 --> 00:06:41,960
+So essentially, you forecast to the level
+
+167
+00:06:41,960 --> 00:06:44,650
+that which your process can change.
+
+168
+00:06:44,650 --> 00:06:47,030
+So if an investment up here, like
+
+169
+00:06:47,030 --> 00:06:50,370
+we're talking about for a factory or a large plant,
+
+170
+00:06:50,370 --> 00:06:52,240
+if it's going to last for 50 years
+
+171
+00:06:52,240 --> 00:06:54,176
+and takes five to 10 years to build,
+
+172
+00:06:54,176 --> 00:06:55,800
+then you're going to need a longer term
+
+173
+00:06:55,800 --> 00:06:58,410
+vision than if you're trying to plan how many trucks I need
+
+174
+00:06:58,410 --> 00:06:59,720
+next Tuesday.
+
+175
+00:06:59,720 --> 00:07:02,220
+So the type of the forecast depends
+
+176
+00:07:02,220 --> 00:07:06,140
+along the length of the horizon you're trying to plan for.
+
+177
+00:07:06,140 --> 00:07:08,310
+So what are we going to talk about for the rest
+
+178
+00:07:08,310 --> 00:07:09,880
+of this lecture?
+
+179
+00:07:09,880 --> 00:07:10,530
+Four things.
+
+180
+00:07:10,530 --> 00:07:13,140
+First, we're going to go into some truisms about forecasting.
+
+181
+00:07:13,140 --> 00:07:15,015
+We always have to address these when we first
+
+182
+00:07:15,015 --> 00:07:16,604
+talk about demand forecasting.
+
+183
+00:07:16,604 --> 00:07:18,520
+We're going to talk about different approaches
+
+184
+00:07:18,520 --> 00:07:21,530
+and classify them as subjective versus objective.
+
+185
+00:07:21,530 --> 00:07:23,770
+And then we're going to go into quality of forecast,
+
+186
+00:07:23,770 --> 00:07:25,500
+how do you tell if it's good or bad,
+
+187
+00:07:25,500 --> 00:07:27,620
+and then getting into metrics.
+
+188
+00:07:27,620 --> 00:07:29,520
+So let's get started.
+

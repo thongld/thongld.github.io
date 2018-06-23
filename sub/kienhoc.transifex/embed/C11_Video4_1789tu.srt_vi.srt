@@ -1,0 +1,910 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/zF1swxwoPq8
+
+1
+00:00:00,000 --> 00:00:00,500
+
+2
+00:00:00,500 --> 00:00:04,490
+Dr. Jon Valvano: Next we will
+look at number conversions.
+
+3
+00:00:04,490 --> 00:00:08,400
+And there are four big
+ideas in this section.
+
+4
+00:00:08,400 --> 00:00:13,090
+The first is Device Driver.
+
+5
+00:00:13,090 --> 00:00:16,565
+The second is Successive Refinement.
+
+6
+00:00:16,565 --> 00:00:24,930
+
+7
+00:00:24,930 --> 00:00:27,320
+The third is number conversion itself.
+
+8
+00:00:27,320 --> 00:00:32,750
+
+9
+00:00:32,750 --> 00:00:37,290
+And the last is we will
+see two types of loops.
+
+10
+00:00:37,290 --> 00:00:44,110
+So a device driver, as we saw,
+is a set of software programs
+
+11
+00:00:44,110 --> 00:00:47,690
+to facilitate using
+I/O. And so what we're
+
+12
+00:00:47,690 --> 00:00:52,520
+going to do is create one
+of those driver functions.
+
+13
+00:00:52,520 --> 00:00:57,870
+And so we're going to
+take a number and we're
+
+14
+00:00:57,870 --> 00:01:02,900
+going to convert it to an
+ASCII string and output
+
+15
+00:01:02,900 --> 00:01:04,555
+that ASCII string to the device.
+
+16
+00:01:04,555 --> 00:01:07,070
+
+17
+00:01:07,070 --> 00:01:11,390
+Successive refinement is a
+software development technique
+
+18
+00:01:11,390 --> 00:01:17,410
+which allows us to go from the
+big idea into the fine details.
+
+19
+00:01:17,410 --> 00:01:20,350
+And so it is a software
+development process.
+
+20
+00:01:20,350 --> 00:01:23,620
+And we'll use it to solve this problem.
+
+21
+00:01:23,620 --> 00:01:26,490
+And then we will see two types of loops.
+
+22
+00:01:26,490 --> 00:01:29,970
+We will see where in
+the first loop we will
+
+23
+00:01:29,970 --> 00:01:34,320
+see when we don't know how
+many steps it is, it is unknown
+
+24
+00:01:34,320 --> 00:01:36,810
+how many times through
+the loop we will run.
+
+25
+00:01:36,810 --> 00:01:40,210
+And in that case, we're
+going to use a While loop.
+
+26
+00:01:40,210 --> 00:01:45,290
+And in the second method, we will know
+exactly how many times and we'll use a
+
+27
+00:01:45,290 --> 00:01:47,400
+For loop.
+
+28
+00:01:47,400 --> 00:01:50,070
+So what are we going to do in this lab?
+
+29
+00:01:50,070 --> 00:01:55,230
+We're going to take a
+number like the integer 123
+
+30
+00:01:55,230 --> 00:02:00,090
+and we're going to convert it
+to a set of ASCII characters.
+
+31
+00:02:00,090 --> 00:02:05,820
+'1', that's the ASCII code
+for 1, the ASCII code for 2,
+
+32
+00:02:05,820 --> 00:02:11,280
+and the ASCII code for 3, and we're
+going to output these three ASCII
+
+33
+00:02:11,280 --> 00:02:13,940
+values to the device.
+
+34
+00:02:13,940 --> 00:02:18,150
+So what the human will see is 123.
+
+35
+00:02:18,150 --> 00:02:22,480
+So we're converting what the computer
+sees into what the human sees.
+
+36
+00:02:22,480 --> 00:02:25,160
+
+37
+00:02:25,160 --> 00:02:31,390
+For instance, if the computer
+has the number 65432,
+
+38
+00:02:31,390 --> 00:02:48,480
+then the output is going to
+be hex 36, 35, 34, 33, and 32.
+
+39
+00:02:48,480 --> 00:02:52,500
+And we see one of the problems is at
+the time I'm writing this program,
+
+40
+00:02:52,500 --> 00:02:56,390
+I don't know whether I'm going
+to output three characters
+
+41
+00:02:56,390 --> 00:02:59,880
+or whether I'm going to output
+four or five or six or seven.
+
+42
+00:02:59,880 --> 00:03:04,660
+This is what is unknown
+at the time of execution.
+
+43
+00:03:04,660 --> 00:03:10,170
+Whenever we write software, there are
+three questions that we wish to ask.
+
+44
+00:03:10,170 --> 00:03:12,730
+First is where do we start?
+
+45
+00:03:12,730 --> 00:03:16,070
+What's the starting point?
+
+46
+00:03:16,070 --> 00:03:16,850
+Where do we begin?
+
+47
+00:03:16,850 --> 00:03:19,890
+That's always a very troublesome thing.
+
+48
+00:03:19,890 --> 00:03:23,420
+The second is how do we make progress?
+
+49
+00:03:23,420 --> 00:03:28,590
+So if we make progress in the correct
+direction, we'll eventually finish.
+
+50
+00:03:28,590 --> 00:03:34,310
+And the last is the ending
+point, or when are we done?
+
+51
+00:03:34,310 --> 00:03:38,470
+So in this case here, we see
+that what we're going to do
+
+52
+00:03:38,470 --> 00:03:42,760
+is we're going to have the number 123.
+
+53
+00:03:42,760 --> 00:03:46,240
+And so we begin with where do we start?
+
+54
+00:03:46,240 --> 00:03:51,640
+Do we start with the biggest digit or
+do we start with the smallest digit?
+
+55
+00:03:51,640 --> 00:03:53,456
+Where do we start?
+
+56
+00:03:53,456 --> 00:03:56,930
+And we'll look at that when
+we get to the next one.
+
+57
+00:03:56,930 --> 00:04:04,350
+And then the progress is we're
+going to create one digit of output.
+
+58
+00:04:04,350 --> 00:04:08,680
+But the trick is after I
+create one digit of output,
+
+59
+00:04:08,680 --> 00:04:13,060
+I need to create a simpler problem.
+
+60
+00:04:13,060 --> 00:04:14,830
+It needs to get simpler.
+
+61
+00:04:14,830 --> 00:04:21,980
+So for instance, if I tried to pick
+off the most significant digit,
+
+62
+00:04:21,980 --> 00:04:26,850
+then naturally the one
+that I think I should get.
+
+63
+00:04:26,850 --> 00:04:29,510
+Then the question for
+this is, I would need
+
+64
+00:04:29,510 --> 00:04:32,230
+to pick out the one,
+the hundredths digit.
+
+65
+00:04:32,230 --> 00:04:34,390
+But for this number,
+I'd have to pick out
+
+66
+00:04:34,390 --> 00:04:37,300
+the six, which is the
+ten thousandth's digit.
+
+67
+00:04:37,300 --> 00:04:41,200
+And so we see it's difficult
+to pick off the first one.
+
+68
+00:04:41,200 --> 00:04:45,920
+Conversely, if I start
+with the ones digit,
+
+69
+00:04:45,920 --> 00:04:52,500
+start with the other end of the number,
+we see in all cases the first digit,
+
+70
+00:04:52,500 --> 00:04:54,880
+the ones digit it is easy to get.
+
+71
+00:04:54,880 --> 00:04:59,670
+Because I can just take the
+number and find the modulo of 10.
+
+72
+00:04:59,670 --> 00:05:05,430
+The number modulo of 10
+will be the ones digit.
+
+73
+00:05:05,430 --> 00:05:07,600
+And that will be easy to do.
+
+74
+00:05:07,600 --> 00:05:15,380
+Similarly, if I adjust the number
+in this way after I get that digit,
+
+75
+00:05:15,380 --> 00:05:20,330
+I can simplify my problem.
+
+76
+00:05:20,330 --> 00:05:27,020
+And I'm going to simplify my
+problem such that this divided by 10
+
+77
+00:05:27,020 --> 00:05:35,880
+is going to produce a 123 down
+to the 12 and the 65432 will
+
+78
+00:05:35,880 --> 00:05:40,990
+be reduced to a simpler problem of 6543.
+
+79
+00:05:40,990 --> 00:05:45,340
+And then the ending point will
+be when this number n eventually
+
+80
+00:05:45,340 --> 00:05:46,870
+goes to 0 I'll be done.
+
+81
+00:05:46,870 --> 00:05:49,730
+
+82
+00:05:49,730 --> 00:05:52,430
+So this is my strategy.
+
+83
+00:05:52,430 --> 00:05:57,130
+So let me show you the method
+of software development called
+
+84
+00:05:57,130 --> 00:05:59,330
+Successive refinement.
+
+85
+00:05:59,330 --> 00:06:05,930
+Successive refinement is to go from the
+big picture down into the fine details.
+
+86
+00:06:05,930 --> 00:06:09,600
+So first, I'm going to think
+of my program in three steps.
+
+87
+00:06:09,600 --> 00:06:11,830
+I'm going to initialize some things.
+
+88
+00:06:11,830 --> 00:06:13,900
+I'm going to create some digits.
+
+89
+00:06:13,900 --> 00:06:17,030
+
+90
+00:06:17,030 --> 00:06:19,710
+And third, I'm going
+output those digits.
+
+91
+00:06:19,710 --> 00:06:24,670
+Because we saw in my method I created
+the digits in the opposite order.
+
+92
+00:06:24,670 --> 00:06:27,110
+I created them from the
+least significant digit
+
+93
+00:06:27,110 --> 00:06:29,120
+to the most significant.
+
+94
+00:06:29,120 --> 00:06:31,580
+But I want to output them
+in the other direction.
+
+95
+00:06:31,580 --> 00:06:37,520
+So my big picture will be to
+create a storage of the digits
+
+96
+00:06:37,520 --> 00:06:40,130
+and then output them in the other order.
+
+97
+00:06:40,130 --> 00:06:42,200
+That's my big picture.
+
+98
+00:06:42,200 --> 00:06:48,210
+I can refine that by thinking about how
+it is I'm going to create the digits,
+
+99
+00:06:48,210 --> 00:06:48,810
+right?
+
+100
+00:06:48,810 --> 00:06:52,290
+I'm going to create a digit.
+
+101
+00:06:52,290 --> 00:06:59,930
+And we saw we're going to create a digit
+using this digit equals n modulo 10.
+
+102
+00:06:59,930 --> 00:07:04,700
+And we're going to simplify by
+using this n equals n divided by 10.
+
+103
+00:07:04,700 --> 00:07:08,360
+That's how I'm going
+to create the digits.
+
+104
+00:07:08,360 --> 00:07:14,990
+And then I'm going to repeat
+until n is equal to 0.
+
+105
+00:07:14,990 --> 00:07:18,510
+
+106
+00:07:18,510 --> 00:07:20,570
+And next I'm going to output the digits.
+
+107
+00:07:20,570 --> 00:07:26,140
+
+108
+00:07:26,140 --> 00:07:28,535
+But I've got to output
+them in the other order.
+
+109
+00:07:28,535 --> 00:07:39,440
+
+110
+00:07:39,440 --> 00:07:43,270
+So when I refine this some more, I
+think about what do I need to know?
+
+111
+00:07:43,270 --> 00:07:48,080
+You remember, what we do
+is we place our knowledge.
+
+112
+00:07:48,080 --> 00:07:50,356
+Our knowledge have to go into variables.
+
+113
+00:07:50,356 --> 00:07:53,040
+
+114
+00:07:53,040 --> 00:07:56,510
+And so I'm going to create--
+we saw we had the parameter n.
+
+115
+00:07:56,510 --> 00:07:58,030
+That was an obvious one.
+
+116
+00:07:58,030 --> 00:08:02,707
+And we saw we had the digit
+d, which is an obvious one.
+
+117
+00:08:02,707 --> 00:08:04,040
+We're going to need another one.
+
+118
+00:08:04,040 --> 00:08:09,830
+We're going to need some sort of
+count which we'll initialize to 0.
+
+119
+00:08:09,830 --> 00:08:13,300
+And this count will tell
+me how many characters.
+
+120
+00:08:13,300 --> 00:08:21,050
+And the other thing I'm going
+to need is some sort of buffer
+
+121
+00:08:21,050 --> 00:08:22,610
+to store the data into.
+
+122
+00:08:22,610 --> 00:08:26,550
+
+123
+00:08:26,550 --> 00:08:30,450
+So as I create the characters,
+I will store them in the buffer.
+
+124
+00:08:30,450 --> 00:08:37,710
+In this count, as I go through the
+buffer, can index into this array.
+
+125
+00:08:37,710 --> 00:08:42,289
+All right, so that's my initialization
+step is to set the counter equal to 0.
+
+126
+00:08:42,289 --> 00:08:46,190
+And the counter will tell me how
+many elements are in the buffer.
+
+127
+00:08:46,190 --> 00:08:48,590
+So as we saw, we're going to
+create the number this way.
+
+128
+00:08:48,590 --> 00:08:51,320
+We're going to create
+the digit this way.
+
+129
+00:08:51,320 --> 00:08:56,690
+We're going to create the
+digit by taking n in modulo 10.
+
+130
+00:08:56,690 --> 00:09:01,910
+That's the remainder of the
+division of n divided by 10.
+
+131
+00:09:01,910 --> 00:09:07,680
+And then we'll reduce the
+simplicity of the problem,
+
+132
+00:09:07,680 --> 00:09:10,980
+reduce this complexity of the
+problem, by dividing by 10.
+
+133
+00:09:10,980 --> 00:09:12,480
+Now the numbers are getting smaller.
+
+134
+00:09:12,480 --> 00:09:17,800
+And if I take any number and divide
+it by 10, it'll eventually hit 0.
+
+135
+00:09:17,800 --> 00:09:19,905
+I have to place this number somewhere.
+
+136
+00:09:19,905 --> 00:09:21,530
+So I'm going to store it in the buffer.
+
+137
+00:09:21,530 --> 00:09:27,810
+
+138
+00:09:27,810 --> 00:09:30,020
+I'm going to store the
+digit into the buffer.
+
+139
+00:09:30,020 --> 00:09:33,932
+
+140
+00:09:33,932 --> 00:09:38,120
+And increment my count.
+
+141
+00:09:38,120 --> 00:09:41,150
+And you can see I'm getting
+pretty close to writing C code.
+
+142
+00:09:41,150 --> 00:09:44,560
+So my last flowchart is going
+to be easy to translate.
+
+143
+00:09:44,560 --> 00:09:49,750
+And now I will test to see if I'm done.
+
+144
+00:09:49,750 --> 00:09:56,138
+If the number n is not 0,
+that means I have more digits.
+
+145
+00:09:56,138 --> 00:10:02,900
+If the number is 0, then I'm done.
+
+146
+00:10:02,900 --> 00:10:05,680
+Let's start with the example 123.
+
+147
+00:10:05,680 --> 00:10:10,930
+The first time through, I'm going to get
+a d equals 3 and then this will be a 12
+
+148
+00:10:10,930 --> 00:10:13,010
+and then I'm going to
+store the 3 right here.
+
+149
+00:10:13,010 --> 00:10:15,680
+
+150
+00:10:15,680 --> 00:10:18,510
+Increment this to a 1.
+
+151
+00:10:18,510 --> 00:10:20,000
+Keep repeating.
+
+152
+00:10:20,000 --> 00:10:23,730
+The second time through,
+I'm going to get the 2.
+
+153
+00:10:23,730 --> 00:10:29,320
+And I divide, this will be the 1, I'll
+store the 2 here, this goes to a 2.
+
+154
+00:10:29,320 --> 00:10:34,620
+Third time through, I'm going
+to get the hundredths digit.
+
+155
+00:10:34,620 --> 00:10:36,010
+This will become 0.
+
+156
+00:10:36,010 --> 00:10:37,720
+I will store the 1.
+
+157
+00:10:37,720 --> 00:10:42,380
+And now count is equal to 3,
+telling me I have 3 elements.
+
+158
+00:10:42,380 --> 00:10:46,130
+But now I'll drop out of the loop.
+
+159
+00:10:46,130 --> 00:10:50,470
+That was this part of the flow chart.
+
+160
+00:10:50,470 --> 00:10:53,670
+Now let's finish the second
+half of the flow chart.
+
+161
+00:10:53,670 --> 00:10:59,170
+I know that there is a counter which
+tells me how many digits I have.
+
+162
+00:10:59,170 --> 00:11:01,500
+And I know I have a
+buffer which contains
+
+163
+00:11:01,500 --> 00:11:03,770
+the digit in the opposite order.
+
+164
+00:11:03,770 --> 00:11:10,680
+And so if counter equals 3, I know
+the first digit that I actually
+
+165
+00:11:10,680 --> 00:11:14,810
+want to output is a
+2, at the index of 2.
+
+166
+00:11:14,810 --> 00:11:20,310
+So what I'm going to do is I'm
+going to get the digit back
+
+167
+00:11:20,310 --> 00:11:28,060
+from the buffer at counter minus 1.
+
+168
+00:11:28,060 --> 00:11:31,390
+And that will give me the
+most significant digit.
+
+169
+00:11:31,390 --> 00:11:39,560
+I will create an ASCII character out
+of it by adding a 0x30 and that will
+
+170
+00:11:39,560 --> 00:11:49,830
+convert the 0 to 9 into an
+ASCII character, '0' to '9'.
+
+171
+00:11:49,830 --> 00:11:58,400
+And then I'll output this
+number to the device.
+
+172
+00:11:58,400 --> 00:12:01,490
+In our case here, we're going
+to output it to the UART.
+
+173
+00:12:01,490 --> 00:12:04,360
+And then we will repeat this loop.
+
+174
+00:12:04,360 --> 00:12:06,980
+I know exactly how many
+times to go through the loop
+
+175
+00:12:06,980 --> 00:12:09,010
+because I have an initial
+value for counter.
+
+176
+00:12:09,010 --> 00:12:12,290
+
+177
+00:12:12,290 --> 00:12:14,310
+And then I'll decrement the counter.
+
+178
+00:12:14,310 --> 00:12:16,860
+Counter minus minus.
+
+179
+00:12:16,860 --> 00:12:23,770
+And then if the counter-- I want to
+output, as we can see from the things,
+
+180
+00:12:23,770 --> 00:12:27,420
+I want to output the
+2, the 1, and the 0.
+
+181
+00:12:27,420 --> 00:12:33,495
+And so I'm going to quit as long as
+counter is greater than or equal to 0.
+
+182
+00:12:33,495 --> 00:12:36,880
+
+183
+00:12:36,880 --> 00:12:37,845
+I will go back.
+
+184
+00:12:37,845 --> 00:12:40,540
+
+185
+00:12:40,540 --> 00:12:45,590
+But if it is equal to
+minus 1, then I'm done.
+
+186
+00:12:45,590 --> 00:12:50,470
+
+187
+00:12:50,470 --> 00:12:56,350
+So we saw the process of a successive
+refinement is to take the big picture
+
+188
+00:12:56,350 --> 00:12:57,950
+and add details to it.
+
+189
+00:12:57,950 --> 00:13:00,230
+And there were three
+fundamental things you
+
+190
+00:13:00,230 --> 00:13:05,730
+should remember when we write
+software is where to start,
+
+191
+00:13:05,730 --> 00:13:12,010
+how to make progress, and how to end.
+
+192
+00:13:12,010 --> 00:13:17,810
+And so in this case here, we
+started with the ones digit.
+
+193
+00:13:17,810 --> 00:13:28,580
+We made progress by taking
+the remainder and simplifying.
+
+194
+00:13:28,580 --> 00:13:32,490
+And we got done when n is equal to 0.
+
+195
+00:13:32,490 --> 00:13:37,450
+Let's look at the other example, 65432.
+
+196
+00:13:37,450 --> 00:13:43,530
+This buffer, again, would have had the
+numbers in the opposite order, 2, 3, 4,
+
+197
+00:13:43,530 --> 00:13:45,340
+5, and 6.
+
+198
+00:13:45,340 --> 00:13:50,740
+Count would have been equal to a
+5 because there are five digits.
+
+199
+00:13:50,740 --> 00:13:57,310
+And then we would have wanted
+to output them in this order.
+
+200
+00:13:57,310 --> 00:14:05,540
+6 and then a 5 and then a 4
+and then a 3 and then a 2.
+
+201
+00:14:05,540 --> 00:14:14,040
+And this loop here would have reversed
+the order from 2 to 6 to 6 to 2.
+
+202
+00:14:14,040 --> 00:14:15,399

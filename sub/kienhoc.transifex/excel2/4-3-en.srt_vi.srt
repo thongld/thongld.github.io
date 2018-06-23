@@ -1,0 +1,202 @@
+1
+00:00:00,560 --> 00:00:04,940
+Trong video trước tôi đã chỉ cho các bạn
+cách khiến Excel tư duy hộ các bạn,
+
+2
+00:00:04,940 --> 00:00:11,240
+và trong video lần này tôi sẽ chỉ cho các bạn
+một ví dụ nữa về cách Excel hỗ trợ chúng ta 
+làm những công việc rất nặng nhọc.
+
+3
+00:00:11,560 --> 00:00:14,920
+Nếu đã download trang tính, bạn có thể thấy
+đây là một trang dữ liệu
+
+4
+00:00:14,920 --> 00:00:18,940
+chứa tất cả các công thức chế biến,
+tất cả các đồ ăn, đồ uống chúng ta bán 
+ở cửa hàng
+
+5
+00:00:18,940 --> 00:00:20,420
+và cách tạo ra chúng.
+
+6
+00:00:20,620 --> 00:00:30,980
+Ví dụ: Với 4 ly nước chanh ta cần
+200 mg đường, 750 ml nước và 6 quả chanh.
+
+7
+00:00:31,340 --> 00:00:33,420
+Tất nhiên ta có thể chỉnh sửa công thức này
+đi một chút.
+
+8
+00:00:33,430 --> 00:00:38,390
+Ta có thể thay đổi công thức và xem
+chuyện đó sẽ có tác động thế nào đến
+việc kinh doanh của chúng ta.
+
+9
+00:00:38,650 --> 00:00:43,370
+Ở đây tôi có một trang dữ liệu 
+Công thức chế biến thử nghiệm, trong này
+tôi sẽ viết các công thức chế biến vào
+
+10
+00:00:43,370 --> 00:00:48,670
+nhưng tôi có thay đổi đi một chút để 
+các thành phần trở thành các giá trị 
+mà ta có thể tính toán được.
+
+11
+00:00:48,960 --> 00:00:53,889
+Tôi cũng đưa ra giá trị của mỗi món hàng.
+Nếu tôi muốn biết giá trị của
+
+12
+00:00:53,899 --> 00:01:00,359
+một ly nước chanh, tôi phải nhân từng cặp các ô
+và cộng tổng tất cả với nhau.
+
+13
+00:01:00,700 --> 00:01:04,980
+May mắn là Excel có sẵn một hàm 
+để làm điều này gọi là SUMPRODUCT.
+
+14
+00:01:05,220 --> 00:01:11,620
+Tôi chỉ việc chọn hàng đầu tiên và hàng thứ hai
+rồi Excel sẽ tự động nhân và cộng tổng.
+
+15
+00:01:11,980 --> 00:01:18,720
+Tất nhiên đây vẫn là giá của 4 ly nước chanh, 
+nên tôi phải chia giá trị này cho số lượng ly.
+
+16
+00:01:18,940 --> 00:01:24,640
+Ta có thể thấy: một ly nước chanh có giá trị $1.05.
+
+17
+00:01:25,980 --> 00:01:29,260
+Thế giá thành thì sao? Bạn đã nhìn thấy
+con số này rất nhiều lần.
+
+18
+00:01:29,260 --> 00:01:33,160
+Bạn có thể đánh vào $2.50, nhưng tất nhiên
+ta muốn bảng dữ liệu tự vận hành.
+
+19
+00:01:33,160 --> 00:01:34,700
+Vậy ta sẽ dùng hàm VLOOKUP.
+
+20
+00:01:34,700 --> 00:01:39,420
+Ta di chuyển đến trang Giá Thành 
+rồi chọn cột thứ hai.
+
+21
+00:01:39,420 --> 00:01:41,880
+Tất nhiên bạn đã biết điều này 
+ở lớp học lần trước:
+
+22
+00:01:41,880 --> 00:01:47,980
+Ở đây ta sẽ phải chọn FALSE để đảm bảo
+ta nhận được đúng giá trị ngay cả khi tiến hành phân loại.
+
+23
+00:01:48,380 --> 00:01:55,560
+Giống như kiến thức trong lớp Economy 101,
+ta có thể tính lợi nhuận bằng cách lấy giá thành
+
+24
+00:01:55,560 --> 00:01:56,800
+trừ đi giá trị.
+
+25
+00:01:56,800 --> 00:02:02,680
+Vậy lợi nhuận thu được từ một 
+ly nước chanh là $1.45.
+
+26
+00:02:03,620 --> 00:02:05,920
+Lúc này ta sẽ tiến hành thử nghiệm 
+công thức chế biến.
+
+27
+00:02:05,920 --> 00:02:10,940
+Chuyện gì sẽ xảy ra nếu ta thay đổi
+lượng đường trong công thức?
+
+28
+00:02:11,460 --> 00:02:17,280
+Chúng ta đã biết điều này rồi. Thực ra trong 
+bài tập về nhà tuần trước, ta đã đưa ra dự đoán
+cho việc này:
+
+29
+00:02:17,280 --> 00:02:25,360
+150 cộng 0.6 lần số gram đường trong nước chanh
+chính là số hàng ta bán được.
+
+30
+00:02:25,720 --> 00:02:30,940
+Giờ ta có thể ước tính lợi nhuận bằng cách
+nhân khối lượng nước chanh trên dự đoán
+
+31
+00:02:30,940 --> 00:02:34,220
+với lợi nhuận ta thu về từ mỗi ly nước chanh.
+
+32
+00:02:34,640 --> 00:02:39,940
+Nếu trên công thức chúng ta để là 200,
+thì lợi nhuận ta kiếm được là thế này.
+
+33
+00:02:39,950 --> 00:02:44,730
+Nhưng ta có thể thay đổi một chút.
+Giả sử chúng ta để là 150.
+
+34
+00:02:45,020 --> 00:02:47,080
+Bạn thấy đấy, giá trị đã thay đổi.
+
+35
+00:02:47,080 --> 00:02:55,280
+Chúng ta bán ít hàng hơn nhưng kiếm được
+nhiều tiền hơn vì ta tiết kiệm được tiền mua đường.
+
+36
+00:02:56,460 --> 00:03:00,340
+Vậy các bạn có thể thấy, ta bán ít hơn
+nhưng kiếm nhiều tiền hơn.
+
+37
+00:03:00,569 --> 00:03:05,189
+Nếu ta thay thành 180 thì ta bán được
+nhiều hơn một chút, nhưng lại kiếm 
+ít tiền hơn một chút.
+
+38
+00:03:05,440 --> 00:03:10,040
+Vậy dĩ nhiên câu hỏi là: Lợi nhuận cao nhất
+có thể là bao nhiêu?
+
+39
+00:03:10,240 --> 00:03:15,640
+Lượng đường thích hợp nhất cho mỗi ly
+nước chanh là bao nhiêu nếu xét trên phương diện
+lợi nhuận chứ không phải mùi vị?
+
+40
+00:03:15,640 --> 00:03:18,420
+Chúng ta sẽ tìm hiểu điều này trong
+video tiếp theo.
+

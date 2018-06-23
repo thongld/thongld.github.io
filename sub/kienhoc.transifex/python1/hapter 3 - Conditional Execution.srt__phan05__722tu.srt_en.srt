@@ -1,0 +1,434 @@
+381
+00:16:43,281 --> 00:16:45,570
+https://youtu.be/VXyRfgnzL2o
+So that's what we
+have shown here.
+
+382
+00:16:45,570 --> 00:16:47,570
+We say is x = 4.
+
+383
+00:16:47,570 --> 00:16:49,120
+Is x equal to question mark?
+
+384
+00:16:49,120 --> 00:16:50,980
+If it's yes, we're
+going to go here.
+
+385
+00:16:50,980 --> 00:16:52,894
+If it's no, we're
+going to go here,
+
+386
+00:16:52,894 --> 00:16:54,310
+going to execute
+one or the other,
+
+387
+00:16:54,310 --> 00:16:56,360
+and then we're
+going to continue.
+
+388
+00:16:56,360 --> 00:16:58,600
+So we're really at a
+fork in the road here.
+
+389
+00:16:58,600 --> 00:17:01,710
+We're are at a fork in the road,
+going to make a choice, and one
+
+390
+00:17:01,710 --> 00:17:04,970
+or the other, but never both.
+
+391
+00:17:04,970 --> 00:17:06,670
+So we're going to do one thing.
+
+392
+00:17:06,670 --> 00:17:08,410
+Or we're going to
+do another thing.
+
+393
+00:17:08,410 --> 00:17:10,089
+We're going to do
+one of the two.
+
+394
+00:17:10,089 --> 00:17:14,089
+And depending on the
+question that we ask
+
+395
+00:17:14,089 --> 00:17:17,869
+is which one that
+we're going to do.
+
+396
+00:17:17,869 --> 00:17:21,550
+So here's a little bit of code.
+
+397
+00:17:21,550 --> 00:17:23,170
+x = 4 .
+
+398
+00:17:23,170 --> 00:17:24,420
+Is x > 2?
+
+399
+00:17:24,420 --> 00:17:25,960
+The answer is yes.
+
+400
+00:17:25,960 --> 00:17:27,970
+Then we come out
+and hit this else.
+
+401
+00:17:27,970 --> 00:17:30,490
+And we automatically
+skip, because we're only
+
+402
+00:17:30,490 --> 00:17:32,972
+going to do one of the two.
+
+403
+00:17:32,972 --> 00:17:33,930
+And here's the picture.
+
+404
+00:17:33,930 --> 00:17:35,590
+x = 4.
+
+405
+00:17:35,590 --> 00:17:39,250
+Is x equal to, yes,
+print, done, which
+
+406
+00:17:39,250 --> 00:17:41,780
+means we'll never do
+both this and that.
+
+407
+00:17:41,780 --> 00:17:43,200
+Never do both, both sides.
+
+408
+00:17:43,200 --> 00:17:46,230
+We're going to do one or
+the other of the sides.
+
+409
+00:17:46,230 --> 00:17:55,180
+And just sort of going with the
+box, this is our box, right?
+
+410
+00:17:55,180 --> 00:17:58,110
+It's sort of the indent,
+followed by the final indent.
+
+411
+00:17:58,110 --> 00:18:00,037
+The else is really
+kind of part of it.
+
+412
+00:18:00,037 --> 00:18:01,620
+And then we can draw
+the picture here.
+
+413
+00:18:01,620 --> 00:18:06,160
+It has one entry and one exit.
+
+414
+00:18:06,160 --> 00:18:09,670
+OK, so we have one-way ifs.
+
+415
+00:18:09,670 --> 00:18:10,950
+And we have two-way ifs.
+
+416
+00:18:10,950 --> 00:18:13,463
+And now we have multi-way ifs.
+
+417
+00:18:13,463 --> 00:18:16,110
+
+418
+00:18:16,110 --> 00:18:23,540
+So here is a multi-way if.
+
+419
+00:18:23,540 --> 00:18:29,430
+And it introduces a
+new reserved word--
+
+420
+00:18:29,430 --> 00:18:33,240
+elif, which is a
+combination of else and if.
+
+421
+00:18:33,240 --> 00:18:37,020
+And this one probably just as
+easy to talk about the picture
+
+422
+00:18:37,020 --> 00:18:37,950
+here.
+
+423
+00:18:37,950 --> 00:18:39,670
+The first question is asked.
+
+424
+00:18:39,670 --> 00:18:42,650
+There's still going
+to only be one.
+
+425
+00:18:42,650 --> 00:18:45,870
+One, and only one, of these
+three choices are going to run.
+
+426
+00:18:45,870 --> 00:18:49,500
+Once it's run one,
+then it's done.
+
+427
+00:18:49,500 --> 00:18:54,410
+So the way to think about
+this, if x is less than two,
+
+428
+00:18:54,410 --> 00:18:55,577
+we're going to run this one.
+
+429
+00:18:55,577 --> 00:18:57,785
+And then we're going to kind
+of flush all the way out
+
+430
+00:18:57,785 --> 00:18:58,760
+to the bottom.
+
+431
+00:18:58,760 --> 00:19:01,340
+If x is not less than two,
+and it's less than 10,
+
+432
+00:19:01,340 --> 00:19:04,300
+we're going to run this one
+and flush out the bottom.
+
+433
+00:19:04,300 --> 00:19:08,330
+And if x is not less than two,
+and x is not less than 10,
+
+434
+00:19:08,330 --> 00:19:11,660
+we're going to run this one
+and flush out the bottom.
+
+435
+00:19:11,660 --> 00:19:18,590
+So one of these three-- one,
+two, three-- is going to run.
+
+436
+00:19:18,590 --> 00:19:21,490
+And it's going to run
+based on the questions that
+
+437
+00:19:21,490 --> 00:19:22,570
+are being asked.
+
+438
+00:19:22,570 --> 00:19:24,690
+The questions do get
+asked in an order.
+
+439
+00:19:24,690 --> 00:19:27,010
+And the order does matter.
+
+440
+00:19:27,010 --> 00:19:29,530
+So that is a multi-way if.
+
+441
+00:19:29,530 --> 00:19:34,690
+If elif else-- so this is
+kind of like an otherwise.
+
+442
+00:19:34,690 --> 00:19:37,429
+The else is like an otherwise.
+
+443
+00:19:37,429 --> 00:19:39,470
+One way or another, we're
+going to run something.
+
+444
+00:19:39,470 --> 00:19:43,080
+And if none of these first two
+have run, we will run this one.
+
+445
+00:19:43,080 --> 00:19:44,450
+We call it a multi-way if.
+
+446
+00:19:44,450 --> 00:19:48,260
+
+447
+00:19:48,260 --> 00:19:51,650
+So here's a example
+of our multi-way if.
+
+448
+00:19:51,650 --> 00:19:56,070
+If we say x equals 0-- x
+= 0-- is it less than two?
+
+449
+00:19:56,070 --> 00:19:57,130
+Yes, it is.
+
+450
+00:19:57,130 --> 00:19:59,480
+So we run small, print "Small."
+
+451
+00:19:59,480 --> 00:20:02,150
+And then we flush
+out the bottom.
+
+452
+00:20:02,150 --> 00:20:08,140
+If we switch instead x to 5--
+x is 5-- is it less than 2?
+
+453
+00:20:08,140 --> 00:20:09,480
+No, it is not less than 2.
+
+454
+00:20:09,480 --> 00:20:10,410
+Is it less than 10?
+
+455
+00:20:10,410 --> 00:20:12,740
+Well, 5 is less than 10,
+so the answer is yes.
+
+456
+00:20:12,740 --> 00:20:17,060
+So we print "Medium," then
+we flush out the bottom.
+
+457
+00:20:17,060 --> 00:20:20,090
+One, and only one,
+are going to execute.
+
+458
+00:20:20,090 --> 00:20:23,290
+Now, in this case,
+we got x is 20.
+
+459
+00:20:23,290 --> 00:20:24,470
+And so we come through here.
+
+460
+00:20:24,470 --> 00:20:25,430
+Is it less than two?
+
+461
+00:20:25,430 --> 00:20:26,630
+No, it is not.
+
+462
+00:20:26,630 --> 00:20:27,620
+It is less than 10.
+
+463
+00:20:27,620 --> 00:20:28,630
+No, it is not.
+
+464
+00:20:28,630 --> 00:20:31,300
+So we're going to do this one,
+and then flush out the bottom.
+
+465
+00:20:31,300 --> 00:20:35,440
+If we go here,
+it's false, false.
+
+466
+00:20:35,440 --> 00:20:38,379
+Go here-- all else being
+equal, we run that one.
+
+467
+00:20:38,379 --> 00:20:39,920
+So this one doesn't
+run, and that one
+
+468
+00:20:39,920 --> 00:20:43,530
+doesn't run, because
+these are like gateways.
+
+469
+00:20:43,530 --> 00:20:45,630
+If it were true,
+it would run it.
+
+470
+00:20:45,630 --> 00:20:47,890
+But it's false, so
+we're going to skip.
+
+471
+00:20:47,890 --> 00:20:50,580
+This one is false, so
+we're going to skip it.
+
+472
+00:20:50,580 --> 00:20:52,040
+But then we hit the else.
+
+473
+00:20:52,040 --> 00:20:53,460
+That's like a catch-all.
+
+474
+00:20:53,460 --> 00:20:55,010
+And then if none
+of these were true,
+
+475
+00:20:55,010 --> 00:20:57,388
+then it will run the else.
+

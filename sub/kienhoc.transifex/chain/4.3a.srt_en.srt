@@ -1,0 +1,132 @@
+0
+00:00:00,000 --> 00:00:00,790
+https://youtu.be/oI1_Z8JzGB8
+
+1
+00:00:00,790 --> 00:00:03,730
+In this lesson, we're going to make some extensions to the EOQ
+
+2
+00:00:03,730 --> 00:00:04,400
+model.
+
+3
+00:00:04,400 --> 00:00:06,925
+We saw how robust the model is in the previous lesson,
+
+4
+00:00:06,925 --> 00:00:08,300
+and now we're going to see how we
+
+5
+00:00:08,300 --> 00:00:12,417
+can use this simple, simple model to many different cases.
+
+6
+00:00:12,417 --> 00:00:14,375
+And so if I go back to the assumptions we made,
+
+7
+00:00:14,375 --> 00:00:17,410
+what we're going to do is loosen some of these assumptions
+
+8
+00:00:17,410 --> 00:00:20,980
+to create situations that are a little more realistic.
+
+9
+00:00:20,980 --> 00:00:22,850
+So the first one we're going to do
+
+10
+00:00:22,850 --> 00:00:25,550
+is, we're going to loosen up this whole idea of lead time.
+
+11
+00:00:25,550 --> 00:00:27,550
+And we're going to move away from the assumption
+
+12
+00:00:27,550 --> 00:00:29,310
+that it's an instantaneous lead time,
+
+13
+00:00:29,310 --> 00:00:33,200
+and allow it to be constant, and to have a real positive lead
+
+14
+00:00:33,200 --> 00:00:34,170
+time.
+
+15
+00:00:34,170 --> 00:00:36,350
+Then we're going to go into discounts.
+
+16
+00:00:36,350 --> 00:00:39,020
+And we're going to say, OK, what happens if the purchase
+
+17
+00:00:39,020 --> 00:00:41,760
+price that I offer for an item is
+
+18
+00:00:41,760 --> 00:00:43,520
+a function of how much I order?
+
+19
+00:00:43,520 --> 00:00:46,470
+And we're going to look at three different types of discounts,
+
+20
+00:00:46,470 --> 00:00:50,290
+all units, incremental, and one-time buy.
+
+21
+00:00:50,290 --> 00:00:51,876
+And then finally, what we'll do is
+
+22
+00:00:51,876 --> 00:00:53,250
+we'll come back to the lead time,
+
+23
+00:00:53,250 --> 00:00:57,890
+and we're going to look at the idea of internally replenishing
+
+24
+00:00:57,890 --> 00:00:58,630
+products.
+
+25
+00:00:58,630 --> 00:01:01,190
+Instead of receiving all the products instantaneously
+
+26
+00:01:01,190 --> 00:01:03,910
+in one big delivery, we're going to assume and see
+
+27
+00:01:03,910 --> 00:01:06,530
+what the case is, when I'm making
+
+28
+00:01:06,530 --> 00:01:09,160
+my items as the order comes.
+
+29
+00:01:09,160 --> 00:01:12,060
+And so I'll be replenishing it incrementally.
+
+30
+00:01:12,060 --> 00:01:14,370
+And so these are the three extensions
+
+31
+00:01:14,370 --> 00:01:16,790
+we're going to make in this lesson.
+
+32
+00:01:16,790 --> 00:01:17,530
+
+

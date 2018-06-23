@@ -1,0 +1,584 @@
+0
+00:00:05,150 --> 00:00:10,060
+So let&#39;s start off with the first basic thing we need to understand.
+https://youtu.be/ha21aiQrdj0
+1
+00:00:10,060 --> 00:00:14,900
+And let&#39;s ask the following question, which is up there.
+
+2
+00:00:14,900 --> 00:00:17,660
+What are the average returns of securities 1 and 2?
+
+3
+00:00:17,660 --> 00:00:19,920
+And as I said, I&#39;ll focus on 1 and
+
+4
+00:00:19,920 --> 00:00:23,610
+2 because you need just 2 to figure out everything we are doing.
+
+5
+00:00:23,610 --> 00:00:27,625
+But you can obviously apply and I encourage you to work with all 4.
+
+6
+00:00:28,810 --> 00:00:29,790
+So security 1.
+
+7
+00:00:29,790 --> 00:00:31,590
+What is the average return?
+
+8
+00:00:31,590 --> 00:00:33,320
+How will we calculate it?
+
+9
+00:00:33,320 --> 00:00:37,260
+So I&#39;ll call it R1 bar.
+
+10
+00:00:37,260 --> 00:00:42,301
+We&#39;ll calculate it as sigma BI,
+
+11
+00:00:42,301 --> 00:00:45,186
+all right, okay?
+
+12
+00:00:45,186 --> 00:00:48,290
+And pretty straightforward.
+
+13
+00:00:48,290 --> 00:00:50,540
+When you do that, what are the probabilities?
+
+14
+00:00:50,540 --> 00:00:51,360
+What are you doing?
+
+15
+00:00:51,360 --> 00:00:57,150
+So let&#39;s just bounce back to the table, and let&#39;s visually see it.
+
+16
+00:00:57,150 --> 00:00:59,650
+And I&#39;m going to walk through it, talk through it, and you can understand.
+
+17
+00:00:59,650 --> 00:01:00,990
+What am I doing?
+
+18
+00:01:00,990 --> 00:01:03,653
+I&#39;m multiplying the probabilities by the return.
+
+19
+00:01:03,653 --> 00:01:07,900
+So 0.1 times 5% is 0.5.
+
+20
+00:01:07,900 --> 00:01:11,352
+0.4 times 7 is how much?
+
+21
+00:01:11,352 --> 00:01:12,461
+2.8.
+
+22
+00:01:12,461 --> 00:01:16,867
+0.3 times 6 is 0.18.
+
+23
+00:01:16,867 --> 00:01:22,290
+And 0.2 times minus 2 is minus 0.04.
+
+24
+00:01:22,290 --> 00:01:26,590
+If I&#39;m misquoting the decimals, don&#39;t worry about it.
+
+25
+00:01:26,590 --> 00:01:28,820
+You&#39;re hopefully doing it.
+
+26
+00:01:28,820 --> 00:01:34,852
+And this answer works out to be 4.7%.
+
+27
+00:01:34,852 --> 00:01:40,430
+So all you have done is, you multiply probabilities by the amounts.
+
+28
+00:01:40,430 --> 00:01:44,530
+Important point, and I&#39;m going to emphasize it.
+
+29
+00:01:44,530 --> 00:01:47,980
+This usually has a tilde in it.
+
+30
+00:01:47,980 --> 00:01:49,810
+Tilde, or a curly, and
+
+31
+00:01:49,810 --> 00:01:54,870
+the reason it&#39;s on it is because each i will have a different return.
+
+32
+00:01:54,870 --> 00:01:56,940
+Each state of the world will have a different return.
+
+33
+00:01:58,050 --> 00:02:03,740
+So that&#39;s why RIs change, but R1 bar does not change in the sample, right?
+
+34
+00:02:03,740 --> 00:02:04,546
+So RI bar.
+
+35
+00:02:04,546 --> 00:02:12,466
+The second number to calculate is R2 bar,
+
+36
+00:02:12,466 --> 00:02:16,866
+which is sigma p i, R i.
+
+37
+00:02:16,866 --> 00:02:20,780
+Of course, when I say R i here, we&#39;re talking about security 2.
+
+38
+00:02:20,780 --> 00:02:27,427
+And the answer, I think, turns out to be 3.35%.
+
+39
+00:02:27,427 --> 00:02:28,840
+Why is this important?
+
+40
+00:02:28,840 --> 00:02:33,428
+Because remember, in the distribution of things,
+
+41
+00:02:33,428 --> 00:02:37,818
+I&#39;m very interested in what happens on average.
+
+42
+00:02:39,467 --> 00:02:43,614
+It is also called expected return, in finance,
+
+43
+00:02:43,614 --> 00:02:48,420
+because on average, this is what you expect to happen.
+
+44
+00:02:48,420 --> 00:02:53,860
+So if, supposing Ri was IBM and r2 was Xerox, and you did this calculation,
+
+45
+00:02:53,860 --> 00:02:59,180
+you would say on average I would expect IBM to pay 4.7% and
+
+46
+00:03:00,440 --> 00:03:05,200
+Xerox to pay 3.35, under the assumption these are those returns.
+
+47
+00:03:05,200 --> 00:03:08,660
+And the first thing you must remember is this what the real world does,
+
+48
+00:03:08,660 --> 00:03:11,180
+and I think it&#39;s not good practice.
+
+49
+00:03:12,190 --> 00:03:17,160
+They say R1 bar is higher that R2 bar, true.
+
+50
+00:03:18,160 --> 00:03:25,067
+But they also imply that IBM is giving you a better return than R2 bar,
+
+51
+00:03:25,067 --> 00:03:31,480
+as if that&#39;s an investment that will therefore be better.
+
+52
+00:03:31,480 --> 00:03:32,235
+Answer is wrong.
+
+53
+00:03:32,235 --> 00:03:39,760
+It&#39;s not better or worse, it is just on average compensating you for
+
+54
+00:03:39,760 --> 00:03:44,392
+risk if the market is functioning well, of course I am making assumptions.
+
+55
+00:03:44,392 --> 00:03:49,360
+So it&#39;s very rare that on average you will expect something to give a high return but
+
+56
+00:03:49,360 --> 00:03:50,890
+have a low risk,
+
+57
+00:03:50,890 --> 00:03:56,100
+these are kind of trading strategies people are looking for all the time.
+
+58
+00:03:56,100 --> 00:03:59,520
+And therefore, the market actually functions reasonably well.
+
+59
+00:03:59,520 --> 00:04:02,320
+That doesn&#39;t mean always, but reasonably well.
+
+60
+00:04:02,320 --> 00:04:07,170
+So in isolation, please remember the fact that 4.70 is greater
+
+61
+00:04:07,170 --> 00:04:11,520
+than 3.35 doesn&#39;t mean much, okay?
+
+62
+00:04:11,520 --> 00:04:15,330
+But the purpose here was to calculate these numbers based on
+
+63
+00:04:15,330 --> 00:04:16,710
+what I have just told you.
+
+64
+00:04:16,709 --> 00:04:23,590
+So let&#39;s go back and write out the two securities, and that&#39;s it.
+
+65
+00:04:23,590 --> 00:04:26,740
+Let&#39;s move on now to variances and standard deviations.
+
+66
+00:04:26,740 --> 00:04:30,838
+So again, what are the variances and standard deviations of the two?
+
+67
+00:04:30,838 --> 00:04:36,070
+Here what I&#39;m going to do, instead of bouncing back and forth, back and forth.
+
+68
+00:04:36,070 --> 00:04:39,880
+I&#39;ll just write out the formulas and can you please
+
+69
+00:04:39,880 --> 00:04:44,610
+take the time either with me, or take breaks, and do this?
+
+70
+00:04:44,610 --> 00:04:46,150
+So what will the formula look like?
+
+71
+00:04:47,390 --> 00:04:51,360
+So, sigma squared hat 1.
+
+72
+00:04:51,360 --> 00:04:53,110
+What does 1 stand for?
+
+73
+00:04:53,110 --> 00:04:54,000
+Security 1.
+
+74
+00:04:54,000 --> 00:04:55,390
+What does hat stand for?
+
+75
+00:04:55,390 --> 00:04:56,640
+Estimation.
+
+76
+00:04:56,640 --> 00:05:02,030
+Sometimes s is also used for a variance as an estimator.
+
+77
+00:05:02,030 --> 00:05:02,950
+And square.
+
+78
+00:05:02,950 --> 00:05:03,470
+Why?
+
+79
+00:05:03,470 --> 00:05:05,270
+Because it&#39;s a variance.
+
+80
+00:05:05,270 --> 00:05:06,660
+So how would you do it?
+
+81
+00:05:06,660 --> 00:05:08,430
+Summation pi.
+
+82
+00:05:10,790 --> 00:05:13,090
+Quick question, who determines the probabilities?
+
+83
+00:05:14,630 --> 00:05:17,380
+Nature, you can&#39;t control them.
+
+84
+00:05:17,380 --> 00:05:21,750
+Because if you could control them, I think life would be pretty boring.
+
+85
+00:05:21,750 --> 00:05:22,850
+You know what I mean?
+
+86
+00:05:22,850 --> 00:05:24,830
+It wouldn&#39;t be interesting.
+
+87
+00:05:24,830 --> 00:05:26,910
+There would be no risk, so on and so forth.
+
+88
+00:05:26,910 --> 00:05:29,270
+So these are things that are not under your control.
+
+89
+00:05:30,310 --> 00:05:32,000
+And how would you calculate variance?
+
+90
+00:05:33,600 --> 00:05:35,945
+R1i.
+
+91
+00:05:35,945 --> 00:05:39,100
+Now I am making the symbols a little bit more complex, right?
+
+92
+00:05:39,100 --> 00:05:40,030
+So why R1i?
+
+93
+00:05:41,080 --> 00:05:43,700
+I is the state of the word.
+
+94
+00:05:43,700 --> 00:05:51,230
+1 is security 1 minus R1 but If I stop here, what will you get?
+
+95
+00:05:52,730 --> 00:05:55,495
+If I stop here, you will get 0.
+
+96
+00:05:56,520 --> 00:05:59,986
+But I&#39;m not going to stop here, because, I know that, so I square.
+
+97
+00:05:59,986 --> 00:06:05,030
+So I square, multiply by probability, sum them up.
+
+98
+00:06:05,030 --> 00:06:06,620
+So what am I doing?
+
+99
+00:06:06,620 --> 00:06:07,953
+Just raise.
+
+100
+00:06:10,431 --> 00:06:15,747
+I&#39;m taking these distances, multiplying by the probabilities,
+
+101
+00:06:15,747 --> 00:06:18,890
+but squaring them before doing that.
+
+102
+00:06:18,890 --> 00:06:19,820
+Otherwise, they&#39;ll cancel.
+
+103
+00:06:20,860 --> 00:06:25,702
+And for us, this number turns out to be 11.61.
+
+104
+00:06:27,280 --> 00:06:27,881
+Okay?
+
+105
+00:06:31,160 --> 00:06:34,360
+However, it&#39;s much better to deal with what?
+
+106
+00:06:34,360 --> 00:06:38,420
+Standard deviations, because remember they are not squared.
+
+107
+00:06:38,420 --> 00:06:45,120
+So returns, means and returns will become easier to understand.
+
+108
+00:06:45,120 --> 00:06:49,965
+So the standard deviation, the square root of this,
+
+109
+00:06:49,965 --> 00:06:52,986
+turns out to be 3.41, okay?
+
+110
+00:06:55,860 --> 00:07:00,980
+Now let&#39;s go to sigma 2 squared.
+
+111
+00:07:00,980 --> 00:07:04,930
+I&#39;m looking around to make sure my calculations are right.
+
+112
+00:07:04,930 --> 00:07:07,244
+What will it be, pi?
+
+113
+00:07:07,244 --> 00:07:14,990
+Now you have R2i, R2 bar squared, right?
+
+114
+00:07:14,990 --> 00:07:17,860
+Remember that i makes R2 change.
+
+115
+00:07:17,860 --> 00:07:22,770
+There&#39;s no i for the state of the world changing so it stays at R2 bar,
+
+116
+00:07:22,770 --> 00:07:24,990
+one number for this sample.
+
+117
+00:07:24,990 --> 00:07:26,820
+And what was these numbers?
+
+118
+00:07:26,820 --> 00:07:29,855
+I think this was 4.7 and this was 3.35.
+
+119
+00:07:29,855 --> 00:07:32,570
+Again, what are you doing for
+
+120
+00:07:32,570 --> 00:07:38,650
+a different distribution, you are figuring out what do these deviations mean.
+
+121
+00:07:38,650 --> 00:07:44,220
+And we are mostly worried, like about this side.
+
+122
+00:07:44,220 --> 00:07:49,748
+This number turns out to be 2.90 and
+
+123
+00:07:49,748 --> 00:07:53,441
+the standard deviation,
+
+124
+00:07:56,619 --> 00:08:00,593
+Turns out to be 1.70.
+
+125
+00:08:03,676 --> 00:08:06,440
+And this is sigma 2 hat.
+
+126
+00:08:06,440 --> 00:08:08,351
+Let me make sure I got the numbers right.
+
+127
+00:08:08,351 --> 00:08:12,432
+11.61, 3.41, for one.
+
+128
+00:08:12,432 --> 00:08:16,400
+2.9, 1.741, so now what have we calculated?
+
+129
+00:08:16,400 --> 00:08:22,780
+We have calculated the means, and we have calculated the standard deviations.
+
+130
+00:08:22,780 --> 00:08:24,860
+What was the mean for security 1?
+
+131
+00:08:24,860 --> 00:08:32,713
+The mean for security 1 was average R1 bar, was 4.70%.
+
+132
+00:08:32,712 --> 00:08:37,417
+And R2 bar was
+
+133
+00:08:37,417 --> 00:08:42,128
+3.35%.
+
+134
+00:08:42,128 --> 00:08:43,880
+Quick question.
+
+135
+00:08:43,880 --> 00:08:47,590
+If I were investing in only one of them at each time,
+
+136
+00:08:47,590 --> 00:08:51,170
+you invested in security 1, I invested in security 1, that&#39;s it.
+
+137
+00:08:52,590 --> 00:08:55,120
+We have all the information we need.
+
+138
+00:08:55,120 --> 00:08:59,010
+However, the problem is that both of us
+
+139
+00:08:59,010 --> 00:09:02,380
+will not invest in just one of the securities.
+
+140
+00:09:02,380 --> 00:09:08,000
+Imagine if there were two securities available to us, we will naturally want to
+
+141
+00:09:08,000 --> 00:09:14,330
+diversify and spread our money around, and not put our eggs in one basket.
+
+142
+00:09:14,330 --> 00:09:19,580
+Let&#39;s take a break, because to calculate what risk means for
+
+143
+00:09:19,580 --> 00:09:24,150
+a security, within the context of a portfolio, not standalone,
+
+144
+00:09:24,150 --> 00:09:26,660
+is a totally different ball game.
+
+145
+00:09:26,660 --> 00:09:27,718
+See you soon.
+

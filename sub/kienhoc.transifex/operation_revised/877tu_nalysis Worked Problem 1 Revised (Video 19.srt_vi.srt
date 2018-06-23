@@ -1,0 +1,370 @@
+0
+00:00:00,000 --> 00:00:00,001
+http://youtu.be/lCII8lj6lDA
+
+1
+00:00:05,780 --> 00:00:08,638
+Rất vui được gặp lại và chào mừng đến với khóa học "Quản trị vận hành"
+
+2
+00:00:08,638 --> 00:00:12,278
+ở buổi học trước ta đang nói về phân tích năng lực 
+
+3
+00:00:12,278 --> 00:00:17,070
+Hay nói cách khác, ta đang nghĩ về việc cần gì để xác định được một quá trình sản xuất tạo ra bao nhiêu đơn vị 
+
+4
+00:00:17,070 --> 00:00:18,070
+many units
+
+5
+00:00:18,070 --> 00:00:23,698
+thông thường là do bạn có bao nhiêu thời gian cho resource pool 
+
+6
+00:00:23,699 --> 00:00:27,179
+và cần bao nhiêu thời gian 
+
+7
+00:00:27,179 --> 00:00:30,689
+trong bài này ta sẽ giải quyết qua các vấn đề 
+
+8
+00:00:30,689 --> 00:00:34,399
+video này có thể sẽ hơi dài hơn video khác nhưng hãy cố kiên nhẫn cùng tôi 
+
+9
+00:00:34,399 --> 00:00:34,810
+me
+
+10
+00:00:34,810 --> 00:00:40,009
+tôi sẽ làm cho mọi thứ thật rõ ràng để bạn có thể tiếp cận vấn đề giống thế này 
+
+11
+00:00:40,009 --> 00:00:44,339
+ta có công ty giặt ủi LRDR 
+
+12
+00:00:44,340 --> 00:00:47,610
+công ty nảy cung cấp dịch vụ giặt ủi 
+
+13
+00:00:47,609 --> 00:00:50,850
+cho những doanh nghiệp mà nhân viên mặc đồng phục
+
+14
+00:00:50,850 --> 00:00:55,010
+xấp xỉ 10% lượng hàng được xem là hàng nặng
+
+15
+00:00:55,009 --> 00:00:58,219
+phần còn lại được xem là hàng thường 
+
+16
+00:00:58,219 --> 00:01:01,780
+tốn 30 phút trong máy giặt và 80 phút trong máy sấy
+
+17
+00:01:01,780 --> 00:01:05,009
+hàng nặng thì tốn 45 phút trong máy giặt
+
+18
+00:01:05,009 --> 00:01:09,030
+và 140 phút trong máy sấy , công ty có 2 máy giặt 
+
+19
+00:01:09,030 --> 00:01:15,180
+và 4 máy sấy, máy giặt và sấy có thể hoạt động 22 tiếng mỗi ngày, 7 ngày mỗi tuần
+
+20
+00:01:15,180 --> 00:01:20,420
+câu hỏi là liệu công ty có đáp ứng được nhu cầu hàng tuần là 500 đơn vị hàng 
+
+21
+00:01:20,420 --> 00:01:25,070
+ta cần phân tích vấn đề đặc biệt này
+
+22
+00:01:25,069 --> 00:01:28,149
+và xác định tất cả những mẩu tin quan trọng 
+
+23
+00:01:28,150 --> 00:01:33,118
+để xác định được rằng ta có thể đáp ứng nhu cầu 500 đơn vị hàng hay không 
+
+24
+00:01:33,118 --> 00:01:36,228
+đây là bảng xác định 2 resource pools 
+
+25
+00:01:36,228 --> 00:01:41,269
+mà ta có , ta có vùng máy giặt 
+
+26
+00:01:41,269 --> 00:01:45,200
+và vùng máy sấy như bạn thấy
+
+27
+00:01:45,200 --> 00:01:48,579
+ta dùng số lượng cần để hoàn thành một đơn vị hàng giặt ủi cho cả máy giặt và máy sấy
+
+28
+00:01:48,578 --> 00:01:52,438
+complete a load of laundry for both the
+wash and the dryer
+
+29
+00:01:52,438 --> 00:01:56,148
+ta cũng xem xét có bao nhiêu thời gian
+
+30
+00:01:56,149 --> 00:02:01,409
+cho mỗi nguồn , trở về với vấn đề ban đầu 
+
+31
+00:02:01,409 --> 00:02:04,899
+và tìm thông tin cần để điền vào bảng
+
+32
+00:02:04,899 --> 00:02:09,840
+trong vấn đề này, công ty cho rằng
+
+33
+00:02:09,840 --> 00:02:14,640
+họ có 2 máy giặt và 4 máy sấy , máy giặt và máy sấy
+
+34
+00:02:14,639 --> 00:02:18,219
+có thể hoạt động 22 tiếng mỗi ngày , 7 ngày mỗi tuần
+
+35
+00:02:18,219 --> 00:02:22,030
+điều này cho ta thông tin về thời gian khả dụng
+
+36
+00:02:22,030 --> 00:02:26,259
+cho những resource pools khác nhau 
+
+37
+00:02:26,259 --> 00:02:30,009
+máy giặt có 2 đơn vị nguồn , có 2 máy giặt
+
+38
+00:02:30,009 --> 00:02:33,039
+mỗi máy hoạt động 22 tiếng
+
+39
+00:02:33,039 --> 00:02:36,539
+mỗi ngày, mà mỗi ngày có 60 phút
+
+40
+00:02:36,539 --> 00:02:40,229
+nên mỗi máy hoạt động 1320 phút
+
+41
+00:02:40,229 --> 00:02:44,429
+mà có 2 máy, nên tổng thời gian khả dụng mỗi ngày 
+
+42
+00:02:44,430 --> 00:02:49,209
+là 2640 phút 
+
+43
+00:02:49,209 --> 00:02:53,390
+máy sấy cũng hoạt động 22 tiếng một ngày
+
+44
+00:02:53,389 --> 00:02:59,039
+nên mỗi máy sấy hoạt động 1320 phút nhưng có tới 4 máy trong resource pool
+
+45
+00:02:59,039 --> 00:03:02,679
+nên có tổng cộng 5280 phút khả dụng
+
+46
+00:03:02,680 --> 00:03:09,189
+cho máy sấy, trở lại và nhìn lại vấn đề 
+
+47
+00:03:09,189 --> 00:03:11,000
+để xác định cần có bao nhiêu thời gian
+
+48
+00:03:11,000 --> 00:03:16,229
+ta biết rằng 10% của toàn bộ hàng là hàng nặng
+
+49
+00:03:16,229 --> 00:03:19,679
+và còn lại là hàng thường
+
+50
+00:03:19,680 --> 00:03:23,060
+cần 30 phút trong máy giặt và 80 phút trong máy sấy
+
+51
+00:03:23,060 --> 00:03:26,580
+trong khi một hàng nặng cần 45 phút trong máy giặt 
+
+52
+00:03:26,580 --> 00:03:30,140
+và 140 phút trong máy sấy
+
+53
+00:03:30,139 --> 00:03:35,809
+đặt những số đó vào bảng , hàng nặng cần 245 phút trong máy giặt
+
+54
+00:03:35,810 --> 00:03:37,229
+và
+
+55
+00:03:37,229 --> 00:03:42,060
+140 phút trong máy sấy , hàng thường cần 30 phút trong máy giặt
+
+56
+00:03:42,060 --> 00:03:45,610
+và 80 phút trong máy sấy
+
+57
+00:03:45,610 --> 00:03:48,870
+nhưng giờ ta phải tìm đơn vị hàng trung bình
+
+58
+00:03:48,870 --> 00:03:53,140
+đây phải là trung bình khối vì chỉ có 10%
+
+59
+00:03:53,139 --> 00:03:56,729
+hàng là hàng nặng, và 90%
+
+60
+00:03:56,729 --> 00:04:01,329
+là hàng thường , nên tôi sẽ lấy 10% nhân thời gian cho hàng nặng
+
+61
+00:04:01,330 --> 00:04:04,510
+cộng với 90% nhân thời gian cho hàng thường
+
+62
+00:04:04,509 --> 00:04:07,810
+và đem chúng cộng lại , ta được trung bình khối 
+
+63
+00:04:07,810 --> 00:04:11,009
+trung bình, một đơn vị hàng giặt ủi
+
+64
+00:04:11,009 --> 00:04:14,979
+mất 31.5 phút trong máy giặt
+
+65
+00:04:14,979 --> 00:04:18,209
+và 86 phút trong máy sấy
+
+66
+00:04:18,209 --> 00:04:21,720
+đây là thời gian ta cần trên mỗi đơn vị hàng
+
+67
+00:04:21,720 --> 00:04:26,420
+ta đã tính số thời gian mà ta có 
+
+68
+00:04:26,420 --> 00:04:30,140
+bước tiếp theo là chỉ tính số hàng mỗi ngày
+
+69
+00:04:30,139 --> 00:04:33,719
+ta có hàng mỗi ngày
+
+70
+00:04:33,720 --> 00:04:38,030
+bằng thời gian khả dụng cho máy giặt , 2460 phút 
+
+71
+00:04:38,029 --> 00:04:39,559
+hundred and sixty minutes
+
+72
+00:04:39,560 --> 00:04:43,889
+chia cho 31.5 , ta được 83.8
+
+73
+00:04:43,889 --> 00:04:48,129
+đơn vị hàng mỗi ngày và tính giống vậy cho máy sấy
+
+74
+00:04:48,129 --> 00:04:51,689
+tổng thời gian là 5280 phút chia cho 
+
+75
+00:04:51,689 --> 00:04:55,170
+86 phút cần trên mỗi đơn vị 
+
+76
+00:04:55,170 --> 00:05:02,170
+ta được 61.4 đơn vị hàng mỗi ngày, câu hỏi là liệu ta có đáp ứng được 500 đơn vị hàng mỗi tuần không 
+
+77
+00:05:03,560 --> 00:05:07,250
+nếu ta biết được có bao nhiêu đơn vị hàng mỗi ngày
+
+78
+00:05:07,250 --> 00:05:10,860
+ta nhân nó cho 7 và xác định số hàng mỗi tuần
+
+79
+00:05:10,860 --> 00:05:16,810
+máy giặt đáp ứng được 586.7 đơn vị hàng 
+
+80
+00:05:16,810 --> 00:05:20,750
+trong một tuần, nhưng máy sấy thì không
+
+81
+00:05:20,750 --> 00:05:24,220
+nó chỉ có thể được 429.8
+
+82
+00:05:24,220 --> 00:05:28,290
+nên tổng năng suất của công ty giặt ủi
+
+83
+00:05:28,290 --> 00:05:32,000
+chỉ là 429.8 đơn vị hàng mỗi tuần
+
+84
+00:05:32,000 --> 00:05:36,050
+máy sấy là nhân tố làm đình trệ , 
+
+85
+00:05:36,050 --> 00:05:40,710
+nó ảnh hưởng đến năng suất hiệu quả trong quy trình
+
+86
+00:05:40,709 --> 00:05:44,779
+câu trả lời cho câu hỏi có đáp ứng được nhu cầu 500 đơn vị hàng mỗi tuần không
+
+87
+00:05:44,779 --> 00:05:45,419
+week
+
+88
+00:05:45,420 --> 00:05:49,560
+câu trả lời là không
+
+89
+00:05:49,560 --> 00:05:52,970
+bài tiếp theo, ta sẽ nói về làm sao để xác định có bao nhiêu nguồn cần để đáp ứng nhu cầu 
+
+90
+00:05:52,970 --> 00:05:57,190
+resources we need in order to meet their
+demand
+
+91
+00:05:57,189 --> 00:05:58,089
+Hẹn gặp lại các bạn trong bài học tới. 
+

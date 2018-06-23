@@ -1,0 +1,618 @@
+1
+00:00:00,000 --> 00:00:00,500
+HanuDungNguyen  01/06/2016
+https://youtu.be/Wdi6lhcrtBU
+
+2
+00:00:00,500 --> 00:00:04,910
+Chào mừng đến với chương 4, chương về Hàm, trong quyển sách Python
+
+3
+00:00:04,910 --> 00:00:06,920
+của tôi
+
+4
+00:00:06,920 --> 00:00:10,260
+Như thường lệ, các slide, audio và video này
+
+5
+00:00:10,260 --> 00:00:14,590
+được cấp quyền sử dụng theo giấy phép Creative Commons Attribution
+
+6
+00:00:14,590 --> 00:00:17,370
+Đến giờ, chúng ta đã sang chương 4,
+
+7
+00:00:17,370 --> 00:00:19,260
+Ta biết kha khá về lớp học
+
+8
+00:00:19,260 --> 00:00:22,680
+Vậy tôi xin phép giới thiệu một chút về bản thân
+
+
+9
+00:00:22,680 --> 00:00:24,870
+để bạn biết thêm
+
+10
+00:00:24,870 --> 00:00:29,770
+Như tôi chia sẻ từ trước, trong bài giảng ban đầu thì phải,
+
+11
+00:00:29,770 --> 00:00:32,400
+Tôi ghi hình bài giảng trong một tòa nhà tuyệt vời
+
+12
+00:00:32,400 --> 00:00:35,710
+tên là North Quad tại trường Đại học Michigan
+
+13
+00:00:35,710 --> 00:00:37,600
+Nó là một tòa nhà khá mới
+
+14
+00:00:37,600 --> 00:00:41,000
+Ở đó có một vài khu dân sự,
+
+15
+00:00:41,000 --> 00:00:43,710
+một vài khu học thuật và một vài lớp học
+
+16
+00:00:43,710 --> 00:00:45,910
+Một trong các phòng học mà tôi thường xuyên giảng dạy
+
+17
+00:00:45,910 --> 00:00:49,185
+là 2255 North Quad
+
+18
+00:00:49,185 --> 00:00:51,570
+Nó là một căn phòng rất đẹp và tiện lợi
+
+19
+00:00:51,570 --> 00:00:53,180
+cho mọi người tương tác
+
+20
+00:00:53,180 --> 00:00:57,170
+Thỉnh thoảng tôi dạy học, thầy Chuck bé nhỏ
+
+21
+00:00:57,170 --> 00:01:00,900
+ở đây, với một nụ cười tươi
+
+22
+00:01:00,900 --> 00:01:04,660
+Đôi khi học sinh tới tham gia các lớp học của tôi ở trường
+
+23
+00:01:04,660 --> 00:01:11,310
+Đôi khi cũng có học sinh xem bài giảng của tôi qua video
+
+24
+00:01:11,310 --> 00:01:13,569
+Tòa nhà này thực sự rất đẹp
+
+25
+00:01:13,569 --> 00:01:15,610
+Nếu bạn có cơ hội tới Ann Arbor
+
+26
+00:01:15,610 --> 00:01:17,484
+hãy ghé thăm và đi dạo bên trong
+
+27
+00:01:17,484 --> 00:01:19,130
+Cảm giác rất tuyệt
+
+28
+00:01:19,130 --> 00:01:20,770
+Một trong những điều khiến tôi thích nó
+
+29
+00:01:20,770 --> 00:01:23,560
+là nó thực sự 
+
+30
+00:01:23,560 --> 00:01:27,700
+được lấy cảm hứng từ Harry Potter
+
+31
+00:01:27,700 --> 00:01:30,930
+Tất nhiên, đại học Oxford và đại học Cambridge là những nơi thật sự truyền cảm hứng
+
+32
+00:01:30,930 --> 00:01:31,690
+cho Harry Potter
+
+33
+00:01:31,690 --> 00:01:36,140
+Nhưng khu vực nhà ăn của chúng tôi, những chiếc bàn này 
+
+34
+00:01:36,140 --> 00:01:39,550
+giống như là 4 chiếc bàn ở trường Hogwarts
+
+35
+00:01:39,550 --> 00:01:42,330
+Bạn có thể tưởng tượng những con cú tuyết đang bay xung quanh
+
+36
+00:01:42,330 --> 00:01:47,010
+và chiếc mũ Sorting Hat đứng trước các mặt các học sinh đang xếp hàng phía dưới
+
+37
+00:01:47,010 --> 00:01:50,545
+Tên đặc biệt cho nơi này 
+
+38
+00:01:50,545 --> 00:01:54,590
+là Quad-warts, đơn giả vì nó ở trong trường North Quad
+
+39
+00:01:54,590 --> 00:01:59,210
+Quad-warts, kiểu như là Hogwarts và North Quad
+
+40
+00:01:59,210 --> 00:01:59,950
+kết hợp với nhau
+
+41
+00:01:59,950 --> 00:02:02,630
+Thử tưởng tượng chúng ta sẽ được xếp vào nhà nào
+
+42
+00:02:02,630 --> 00:02:07,320
+giống như trong phim Harry Potter và các học sinh khác khi bắt đầu 
+
+43
+00:02:07,320 --> 00:02:12,870
+nhập học vào tháng 9, mọi người xếp hàng và đợi được xếp vào các nhà
+
+44
+00:02:12,870 --> 00:02:17,070
+Một vài năm trước, khi ta bắt đầu chọn nhà
+
+45
+00:02:17,070 --> 00:02:21,684
+Học sinh cho rằng tôi không phải là người nhà Gryffindor
+
+46
+00:02:21,684 --> 00:02:23,600
+Đã đến lúc
+
+47
+00:02:23,600 --> 00:02:27,930
+tôi cho bạn thấy mình là ai
+
+48
+00:02:27,930 --> 00:02:31,630
+Học sinh cho rằng tôi không thể thuộc nhà Grynffindor,
+
+49
+00:02:31,630 --> 00:02:34,100
+Tôi phải là người nhà Slytherin
+
+50
+00:02:34,100 --> 00:02:36,600
+Đơn giản là vì cái tên Charles Severance có liên quan
+
+51
+00:02:36,600 --> 00:02:39,210
+đến Severus Snape
+
+52
+00:02:39,210 --> 00:02:43,310
+Nhưng ngầu hơn là vì tôi dạy môn Python,
+
+53
+00:02:43,310 --> 00:02:48,080
+Biểu tượng nhà Slytherin là một con rắn
+
+54
+00:02:48,080 --> 00:02:49,890
+Thật là có lý
+
+55
+00:02:49,890 --> 00:02:53,860
+Họ thậm chí còn đưa tôi chiếc cốc trà của nhà Slytherin
+
+56
+00:02:53,860 --> 00:02:56,097
+mà tôi hay dùng để uống trà trong lúc giảng bài
+
+57
+00:02:56,097 --> 00:02:57,180
+Thi thoảng tôi uống cà phê
+
+58
+00:02:57,180 --> 00:02:59,000
+Thi thoảng tôi uống trà
+
+59
+00:02:59,000 --> 00:02:59,500
+Wow
+
+60
+00:02:59,500 --> 00:03:00,250
+Mái tóc giả làm tôi thấy ngứa ngứa
+
+61
+00:03:00,250 --> 00:03:02,164
+Để tôi bỏ nó ra
+
+62
+00:03:02,164 --> 00:03:04,080
+Nếu có bất kì sợi tóc nào, nó sẽ rối bù lên mất
+
+63
+00:03:04,080 --> 00:03:06,330
+Để tôi bỏ nó ra trong phần còn lại của bài giảng
+
+64
+00:03:06,330 --> 00:03:08,838
+
+65
+00:03:08,838 --> 00:03:10,770
+Đó, tôi đó
+
+66
+00:03:10,770 --> 00:03:11,270
+OK
+
+67
+00:03:11,270 --> 00:03:12,770
+Đùa chút vậy thôi
+
+68
+00:03:12,770 --> 00:03:17,370
+Quay trở lại là Giáo sư Chuck
+
+69
+00:03:17,370 --> 00:03:22,050
+Sau phần giải lao ngắn ở trên,
+
+70
+00:03:22,050 --> 00:03:27,610
+Chủ đề của của bài giảng hôm nay là: Hàm - Functions
+
+71
+00:03:27,610 --> 00:03:31,370
+Việc lưu trữ và sử dụng lại
+
+72
+00:03:31,370 --> 00:03:36,550
+ý tưởng cơ bản là ta thường có một loạt bước
+
+73
+00:03:36,550 --> 00:03:39,760
+mà ta muốn sử dụng lặp lại nhiều lần trong chương trình
+
+74
+00:03:39,760 --> 00:03:41,870
+với độ phức tạp ngày càng tăng
+
+75
+00:03:41,870 --> 00:03:43,370
+Những ví dụ ta sử dụng trong bài giảng này
+
+76
+00:03:43,370 --> 00:03:45,660
+khá đơn giản, bởi vì tôi 
+
+77
+00:03:45,660 --> 00:03:48,200
+phải viết chúng ngắn gọn để các slides không quá dài
+
+78
+00:03:48,200 --> 00:03:51,160
+Lấy một ví dụ điển hỉnh
+
+79
+00:03:51,160 --> 00:03:56,290
+tôi sẽ sử dụng dịch vụ định vị của Google
+
+80
+00:03:56,290 --> 00:04:00,440
+Tôi sẽ gửi một vài dữ liệu phi cấu trúc
+
+81
+00:04:00,440 --> 00:04:02,452
+và nhận lại toạ độ GPS
+
+82
+00:04:02,452 --> 00:04:04,160
+Và đó là dịch vụ tôi muốn dùng
+
+83
+00:04:04,160 --> 00:04:07,169
+Nó có thể cần rất nhiều dòng code
+
+84
+00:04:07,169 --> 00:04:09,210
+Và tôi muốn sử dụng tất cả chúng ở mọi chỗ
+
+85
+00:04:09,210 --> 00:04:11,790
+Liệu tôi có muốn đặt hàng loạt dòng code này
+
+86
+00:04:11,790 --> 00:04:13,570
+tại 40 chỗ trong chương trình của tôi?
+
+87
+00:04:13,570 --> 00:04:15,610
+Hay là tôi chỉ cần đặt nó ở một nơi
+
+88
+00:04:15,610 --> 00:04:18,260
+và gọi nhiều lần ở những nơi khác nhau mà tôi cần đến?
+
+89
+00:04:18,260 --> 00:04:22,320
+Đó là lí do tại sao tôi gọi nó là hàm lưu trữ và sử dụng lại
+
+90
+00:04:22,320 --> 00:04:27,514
+Nếu ta nhìn vào cú pháp đơn giản ở đây
+
+91
+00:04:27,514 --> 00:04:28,930
+Những thứ này được gọi là hàm
+
+92
+00:04:28,930 --> 00:04:31,770
+Trong một vài ngôn ngữ lập trình khác, chúng được gọi là chương trình con
+
+93
+00:04:31,770 --> 00:04:36,080
+Nhưng trong Python, ta gọi chúng là hàm
+
+94
+00:04:36,080 --> 00:04:38,910
+Từ khóa chúng ta quan tâm ở đây là
+
+95
+00:04:38,910 --> 00:04:41,590
+def, viết tắt của define
+
+96
+00:04:41,590 --> 00:04:47,380
+Khi Python thấy từ khoá def này
+
+97
+00:04:47,380 --> 00:04:50,230
+Thực tế nó không chạy đoạn code
+
+98
+00:04:50,230 --> 00:04:52,430
+Nó hiểu là bạn đang tạo một hàm
+
+99
+00:04:52,430 --> 00:04:55,040
+giống như bạn chuẩn bị bật máy ghi 
+
+100
+00:04:55,040 --> 00:04:57,170
+và bắt đầu ghi lại đoạn code này
+
+101
+00:04:57,170 --> 00:04:58,740
+Có dấu hai chấm ":" ở cuối dòng
+
+102
+00:04:58,740 --> 00:05:01,030
+Tiếp đến là đoạn code được viết lùi vào trong
+
+103
+00:05:01,030 --> 00:05:05,190
+Đoạn code lùi vào trong này được ghi lại
+
+104
+00:05:05,190 --> 00:05:07,450
+Thay vì chạy đoạn code chỉ gồm  
+
+105
+00:05:07,450 --> 00:05:09,850
+print "Hello" và print "Fun"
+
+106
+00:05:09,850 --> 00:05:13,300
+Thì ta bảo nó không chạy ngay lúc này
+
+107
+00:05:13,300 --> 00:05:14,620
+Mà đặt tên cho đoạn code đó là "hello"
+
+108
+00:05:14,620 --> 00:05:15,630
+Ta đặt cho nó một cái tên
+
+109
+00:05:15,630 --> 00:05:16,940
+Nó giống như một loại biến vậy
+
+110
+00:05:16,940 --> 00:05:18,210
+Chúng ta chọn cái tên
+
+111
+00:05:18,210 --> 00:05:21,310
+Ở đây ta chọn tên hàm này là "hello"
+
+112
+00:05:21,310 --> 00:05:22,910
+Định nghĩa hàm "hello"
+
+113
+00:05:22,910 --> 00:05:25,360
+có 2 dòng code Phython bên trong
+
+114
+00:05:25,360 --> 00:05:27,880
+Ta sẽ sử dụng nó sau
+
+115
+00:05:27,880 --> 00:05:29,770
+Đó là phần định nghĩa hàm
+
+116
+00:05:29,770 --> 00:05:32,020
+Đó là phần lưu trữ
+
+117
+00:05:32,020 --> 00:05:34,550
+Chương trình không chạy các dòng code này
+
+118
+00:05:34,550 --> 00:05:36,360
+Có thể hiểu giống như nó tạo một biến
+
+119
+00:05:36,360 --> 00:05:40,080
+tên là "hello" chứa đoạn code Python thay vì
+
+120
+00:05:40,080 --> 00:05:42,770
+chứa một số 12, một chuỗi, hay một loại dữ liệu khác nào đó
+
+121
+00:05:42,770 --> 00:05:45,310
+như những gì mà chúng ta đã học trước đó
+
+122
+00:05:45,310 --> 00:05:46,690
+Đây là phần lưu trữ
+
+123
+00:05:46,690 --> 00:05:50,260
+Tiếp đến là phần tái sử dụng, 
+ta có phần mã Python mở rộng
+
+124
+00:05:50,260 --> 00:05:53,740
+Bây giờ ta có thể gọi đoạn code mà ta viết
+
+125
+00:05:53,740 --> 00:05:56,240
+chúng ta gọi hàm "hello"
+
+126
+00:05:56,240 --> 00:05:58,250
+đi kèm với 1 cặp ngoặc đơn.
+
+127
+00:05:58,250 --> 00:06:00,270
+Bạn có nhớ đoạn code
+
+128
+00:06:00,270 --> 00:06:02,690
+mà tối viết dưới hàm hello không?
+
+129
+00:06:02,690 --> 00:06:03,990
+Chạy nó ngay bây giờ
+
+130
+00:06:03,990 --> 00:06:07,030
+Khi tôi bắt đầu nhìn vào phần đó
+
+131
+00:06:07,030 --> 00:06:08,630
+Nó tiếp tục chạy
+
+132
+00:06:08,630 --> 00:06:11,440
+Để tôi xóa phần này và bắt đầu lại
+
+133
+00:06:11,440 --> 00:06:14,540
+Nếu tôi xem Python làm gì từ đoạn code ở vị trí bắt đầu này
+
+134
+00:06:14,540 --> 00:06:16,260
+Khi nó đọc đến đây, Ồ,
+
+135
+00:06:16,260 --> 00:06:18,130
+bạn đang định nghĩa 1 hàm có tên là "hello"
+
+136
+00:06:18,130 --> 00:06:18,750
+Tuyệt
+
+137
+00:06:18,750 --> 00:06:22,095
+Tôi sẽ nhớ phần code này
+
+138
+00:06:22,095 --> 00:06:23,790
+Tôi đã ghi nhớ nó lại cho bạn
+
+139
+00:06:23,790 --> 00:06:24,680
+Tiếp tục
+
+140
+00:06:24,680 --> 00:06:25,750
+Oh, hello()
+
+141
+00:06:25,750 --> 00:06:28,260
+Bạn muốn tôi chạy đoạn code
+
+142
+00:06:28,260 --> 00:06:30,280
+được lưu dưới tên hello
+
+143
+00:06:30,280 --> 00:06:31,870
+Vậy thì, chương trình sẽ chỉ đến đây và chạy phần code này
+
+144
+00:06:31,870 --> 00:06:34,310
+Kết quả hiển thị lần lượt là Hello, Fun
+
+145
+00:06:34,310 --> 00:06:36,640
+Sau đó, chương trình gặp lệnh in này
+
+146
+00:06:36,640 --> 00:06:38,587
+và in ra chữ "Zip"
+
+147
+00:06:38,587 --> 00:06:40,920
+Rồi ta nói, Python, tôi muốn sử dụng lại hàm hello một lần nữa
+
+148
+00:06:40,920 --> 00:06:41,790
+Tôi từng lưu nó lại
+
+149
+00:06:41,790 --> 00:06:44,120
+Tôi có thể tái sử dụng nó bao nhiêu lần tuỳ thích
+
+150
+00:06:44,120 --> 00:06:45,440
+Chạy lại hàm "hello"
+
+151
+00:06:45,440 --> 00:06:48,790
+2 dòng code này chạy tiếp lần thứ 2
+
+152
+00:06:48,790 --> 00:06:51,430
+Như vậy ta chỉ cần viết có một lần, đặt cho chúng một cái tên,
+
+153
+00:06:51,430 --> 00:06:54,490
+và chạy chúng được 2 lần, bất kì
+
+154
+00:06:54,490 --> 00:06:55,760
+lúc nào ta muốn
+

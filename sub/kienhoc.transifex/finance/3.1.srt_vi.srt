@@ -1,0 +1,514 @@
+1
+00:00:04,650 --> 00:00:06,160
+narcissusdale
+https://youtu.be/l7sUANiIslM
+Chào mừng các bạn
+
+2
+00:00:06,160 --> 00:00:09,780
+Chắc hẳn các bạn đã nhận ra
+
+3
+00:00:09,780 --> 00:00:14,950
+đây là 1 phần nhỏ của quá trình chuyển đổi. Tôi nghĩ rằng
+
+4
+00:00:14,950 --> 00:00:20,860
+tài chính có thể áp dụng trong mọi việc làm, thậm chí ngay cả đến thời điểm này
+
+5
+00:00:20,860 --> 00:00:26,570
+dù có đơn giản, nhưng nó có tính ứng dụng cao. Nhưng giờ tôi sẽ làm 1 số việc
+
+6
+00:00:26,570 --> 00:00:32,119
+mà tôi không làm với sinh viên ở các lớp cao hay các chương trình nâng cao.
+Vì đây là dự án Tài chính cho mọi người
+
+7
+00:00:32,119 --> 00:00:38,500
+tôi sẽ giới thiệu một số ứng dụng thực sự thú vị
+
+8
+00:00:38,500 --> 00:00:45,980
+những ứng dụng này sẽ chỉ cho bạn cách giải quyết vấn đề
+Tôi hy vọng rằng các bạn đã bắt đầu làm các bài tập rồi
+
+9
+00:00:45,980 --> 00:00:51,980
+Mỗi môđun đều có 1 bài tập liên quan,
+các bạn nên thực hành
+
+10
+00:00:51,980 --> 00:00:57,419
+vào bất cứ lúc nào bạn cảm thấy thoải mái, điều này tuỳ thuộc vào bạn.
+
+11
+00:00:57,420 --> 00:01:03,50
+một điểm tôi thích ở Giáo dục số là
+bạn nắm quyền kiểm soát
+
+12
+00:01:03,50 --> 00:01:07,689
+Giờ tôi sẽ làm những bài toán phức tạp,
+một điều có lẽ sẽ thay đổi là
+
+13
+00:01:07,689 --> 00:01:16,779
+tôi sẽ không tiếp tục làm các video dài 4 hoặc 5 phút
+nếu tình thế bắt buộc
+
+14
+00:01:16,780 --> 00:01:20,920
+Thực ra tôi có 1 chuyện buồn cười muốn chia sẻ với các bạn
+
+15
+00:01:20,920 --> 00:01:24,869
+một trong những phương pháp rèn luyện tốt nhất của giáo dục online là làm video ngắn
+
+16
+00:01:24,869 --> 00:01:32,289
+khoảng 6 phút, nhưng nhiều lần tôi chẳng nhớ nổi tên mình và loay hoay mất 2 phút mới nghĩ ra 
+
+17
+00:01:32,289 --> 00:01:36,549
+nếu bạn thức dậy vào buổi sáng, thì bạn là ai?
+Tôi thắc mắc liệu điều đó có quá bí ẩn đến nỗi tôi không trả lời được
+
+18
+00:01:36,549 --> 00:01:42,740
+trở lại vấn đề.
+
+19
+00:01:42,740 --> 00:01:46,658
+Chỉ cần bình tĩnh thôi. Các bạn luôn có thể tạm dừng, chuyển tiếp
+
+20
+00:01:46,659 --> 00:01:51,850
+xem với tốc độ nhanh gấp đôi và vv. Ta hãy bắt đầu, tôi gọi chúng là những bài toán lớn
+
+21
+00:01:51,850 --> 00:01:52,749
+problems.
+
+22
+00:01:52,749 --> 00:01:58,609
+Bài toán lớn thứ nhất. Đó là 1 ứng dụng mà các bạn từng thấy trước kia rồi, 
+
+23
+00:01:58,609 --> 00:02:06,568
+nhưng tôi sẽ chỉ cho các bạn cái hay của tài chính và cái hay của thế giới phức tạp.
+
+24
+00:02:06,569 --> 00:02:12,220
+Nếu tôi vay 1 khoản tiền dùng để trang trải học phí đại học, tôi nghĩ có thể lúc trước các bạn đã trải qua.
+
+25
+00:02:12,220 --> 00:02:17,40
+tôi sẽ mở rộng vấn đề này, nếu các bạn nhìn lên màn hình,
+các bạn sẽ thấy một bài toán rất quen thuộc
+
+26
+00:02:17,40 --> 00:02:23,819
+Bạn đang dự định học đại học,
+bố mẹ và bạn họp lại 
+
+27
+00:02:23,819 --> 00:02:25,959
+và tính toán rằng bạn cần $100,000
+
+28
+00:02:25,960 --> 00:02:35,60
+ở mốc thời gian 0, bạn sẽ vay khoản tiền đó 
+và phải hoàn trả trong 5 năm
+
+29
+00:02:35,60 --> 00:02:49,380
+R là 6%, n là 5 năm, và PV là $100,000
+
+30
+00:02:49,380 --> 00:02:54,500
+Ở đây tôi có dùng dấu phẩy nhưng trong Excel đừng làm thế
+tôi chỉ nhắc nhở vậy thôi
+
+31
+00:02:54,500 --> 00:03:02,320
+Bài toán tôi đang cố giải ở đây là, bạn sẽ nợ bao nhiêu tiền trong mỗi kỳ, bắt đầu 1..5 lần?
+
+32
+00:03:02,320 --> 00:03:15,000
+Thứ tôi sẽ giữ lại là "hàng năm",
+ta hãy giải nhanh bài toán này.
+
+33
+00:03:15,000 --> 00:03:23,590
+Các bạn sẽ viết = PMT, được chưa?
+sau đó sẽ nhập 0.06
+
+34
+00:03:23,590 --> 00:03:34,850
+n = 5, PV = $100,000, và câu trả lời bạn nhận được là, 
+
+35
+00:03:34,850 --> 00:03:39,60
+tôi chỉ kiểm tra để chắc chắn thôi 23,794
+
+36
+00:03:39,60 --> 00:03:53,310
+ồ, xin lỗi,  $23,739.64, ok
+Vậy là  $23,739.64 lúc trước ta đã giải bài toán này rồi,
+
+37
+00:03:53,310 --> 00:04:01,950
+Tôi vẫn sẽ làm cho việc tính toán thật đơn giản,
+ý tôi là việc thanh toán hằng năm
+
+38
+00:04:01,950 --> 00:04:06,609
+mặc dù ta sẽ khiến nó phức tạp hơn,
+hãy xem 1 trong những cách dạy tài chính tiện lợi nhất của tôi
+
+39
+00:04:06,610 --> 00:04:11,240
+Hãy chăm chú nhìn màn hình
+và bạn sẽ thấy thứ gọi là 
+
+40
+00:04:11,240 --> 00:04:17,480
+bảng khấu hao. Điều này nghe có vẻ phức tạp nhưng không đâu,
+
+41
+00:04:17,480 --> 00:04:23,80
+và tôi sẽ cùng các bạn từ từ giải quyết bài toán này
+để dạy các bạn một khoản vay hoạt động như thế nào.
+
+42
+00:04:23,80 --> 00:04:31,430
+Số dư đầu kỳ là gì? Hãy để tôi giải thích
+Năm  1,2,3,4,5
+
+43
+00:04:31,430 --> 00:04:36,380
+Theo quy ước, mọi thứ thường diễn ra ở cuối kỳ hạn
+Nên khi nhắc đến thanh toán hằng năm
+
+44
+00:04:36,380 --> 00:04:39,600
+thì nó không diễn ra vào mốc thời gian 0,
+mà ở thời điểm cuối những năm thứ
+
+45
+00:04:39,600 --> 00:04:49,910
+1,2,3,4,5. Nhưng điều quan trọng cần nhớ
+là đó cũng là khởi đầu của kỳ hạn tiếp theo.
+
+46
+00:04:49,910 --> 00:04:55,360
+Vậy số dư đầu kỳ mà các bạn thấy ở trên cùng
+sẽ là bao nhiêu vào năm đầu tiên?
+
+47
+00:04:55,360 --> 00:05:04,450
+Đó là khoản tiền khởi đầu
+Để tôi viết ra nhé, $100,000
+
+48
+00:05:04,450 --> 00:05:11,849
+Điều tôi sẽ làm bây giờ là tỉm hiểu xem
+khoản vay hoạt động như thế nào và nếu
+
+49
+00:05:11,850 --> 00:05:16,750
+bạn muốn làm trên Excel, vì thiết lập trên Excel rất dễ dàng
+
+50
+00:05:16,750 --> 00:05:23,960
+Câu hỏi là với khoản tiền khởi điểm 100,000
+Bạn phải thanh toán mỗi năm là bao nhiêu?
+
+51
+00:05:23,960 --> 00:05:31,729
+Chúng ta đã biết về khoản thanh toán này trước rồi. Nó còn được gọi là PMT và nhớ rằng ta đã 
+
+52
+00:05:31,730 --> 00:05:45,220
+giải ra con số  23,739.64. Một lần nữa,
+nếu tôi mắc lỗi, tôi sẽ cố phát hiện ra
+
+53
+00:05:45,220 --> 00:05:50,470
+nếu không hãy cứ nói Gautam là kẻ ngớ ngẩn, 
+tôi biết cách làm vậy. Hãy cứ viết ra
+
+54
+00:05:50,470 --> 00:06:02,610
+23,739.64. Điều tôi thích ở bảng khấu hao không phải là bản thân cái bảng,
+
+55
+00:06:02,610 --> 00:06:07,150
+mà là cách thức nó hoạt động cho ta hiểu được
+cách mọi thứ hoạt động ở ngoài đời thực
+
+56
+00:06:07,150 --> 00:06:12,770
+giờ gần như mọi khoản thanh toán đều có 2 thành phần và đôi khi
+
+57
+00:06:12,770 --> 00:06:16,49
+một trong những thành phần đó là 0, ta sẽ bàn về việc đó sau
+
+58
+00:06:16,50 --> 00:06:20,620
+Vậy 2 thành phần đó là? Thành phần đầu tiên chính là lãi suất,
+
+59
+00:06:20,620 --> 00:06:26,30
+thành phần thứ hai của khoản thanh toán hằng năm này là một phần nợ gốc phải trả.
+
+60
+00:06:26,30 --> 00:06:29,719
+vì đó là cách thức hoạt động của nó, bạn phải trả lãi để được dùng tiền
+nhưng rồi bạn cũng trả 1 phần khoản tiền gốc bạn đã mượn
+
+61
+00:06:29,720 --> 00:06:33,520
+100,000 vì nếu không làm thế, bạn sẽ
+
+62
+00:06:33,520 --> 00:06:35,430
+trả nợ theo hình thức khoản vay chỉ tính tiền lãi
+
+63
+00:06:35,430 --> 00:06:42,270
+và khoản vay gốc sẽ còn mãi đó. Mọi thứ diễn ra như vậy, nhưng chúng ta hãy nói về thứ thông dụng nhất.
+
+64
+00:06:42,270 --> 00:06:48,710
+Lãi suất là bao nhiêu?
+Cách để tính ra là, bạn biết
+
+65
+00:06:48,710 --> 00:06:55,419
+lãi suất hàng năm là 0.06, đúng không?
+Đó là mức lãi suất, nhưng bạn phải trả
+
+66
+00:06:55,420 --> 00:07:01,470
+bao nhiêu tiền lãi tính theo đô? lúc này khoản tiền được tính ở đầu kỳ.
+
+67
+00:07:01,470 --> 00:07:06,680
+Thế nên mức lãi suất bao nhiêu % là do thị trường quyết định
+
+68
+00:07:06,680 --> 00:07:11,890
+ngân hàng cho bạn vay với mưc lãi suất đó cùng với số tiền gốc vào đầu kỳ hạn. 
+
+69
+00:07:11,890 --> 00:07:16,520
+Vì  tiền lãi là tiền bạn phải trả để đươc vay tiền. Vậy tiền lãi bạn phải trả là bao nhiêu ?
+
+70
+00:07:16,520 --> 00:07:27,909
+0.06 x 100,000 = 6000
+Rất đơn giản, nhưng xin hãy nhớ rằng
+
+71
+00:07:27,910 --> 00:07:33,750
+lãi suất là 1 hàm số mà bạn phải trả vào cuối năm
+
+72
+00:07:33,750 --> 00:07:37,780
+dòng tiền là 1 hàm số của thứ bạn mượn lúc đầu
+
+73
+00:07:37,780 --> 00:07:44,289
+Vậy nợ gốc phải trả mỗi kỳ là bao nhiêu ?  Rất đơn giản. Lấy khoản thanh toán hàng năm trừ đi 6,000
+
+74
+00:07:44,290 --> 00:07:45,410
+Vậy còn lại bao nhiêu?
+
+75
+00:07:45,410 --> 00:07:57,270
+17,739.64. Giờ thì bước tiếp theo là gì? Bạn đã thanh toán 1 lần
+
+76
+00:07:57,270 --> 00:08:02,760
+cuối năm đầu tiên, bạn biết rằng 
+bạn phải trả 6,000 tiền lãi nhưng 17,739
+
+77
+00:08:02,760 --> 00:08:07,810
+là số tiền bạn phải trả ở số dư đầu kỳ
+
+78
+00:08:07,810 --> 00:08:10,920
+vậy số dư đầu kỳ đầu năm thứ hai là bao nhiêu?
+
+79
+00:08:10,920 --> 00:08:19,900
+Đầu năm 2 số dư đầu kỳ
+nghe hơi nhíu vào nhau
+
+80
+00:08:19,900 --> 00:08:34,299
+Lấy số dư đầu kỳ này trừ đi nợ gốc phải trả kỳ 1 , bạn còn bao nhiêu?
+82,260.36, Tôi sẽ hơi buồn 1 chút
+
+81
+00:08:34,299 --> 00:08:40,140
+Như tôi đã nói, tôi sẽ giải bài toán này cùng các bạn, vậy là 82
+
+82
+00:08:40,140 --> 00:08:45,410
+Cuối năm thứ 2, bạn sẽ phải trả bao nhiêu? Vẫn con số ấy
+
+83
+00:08:45,410 --> 00:08:52,199
+Hãy nghĩ về số tiền ấy như 1 bản hợp đồng mà bạn phải trả
+
+84
+00:08:52,200 --> 00:08:59,339
+Câu hỏi là, trong 23,000 này có bao nhiêu tiền lãi?
+
+85
+00:08:59,339 --> 00:09:04,970
+Tiền lãi tăng hay giảm? Nó sẽ giảm vì 6% của 100,000 nhiều hơn 6%
+
+86
+00:09:04,970 --> 00:09:09,110
+của 82,260. Làm sao bạn tính được tiền lãi?
+
+87
+00:09:09,110 --> 00:09:13,839
+Một lần nữa rất đơn giản. Lấy 6% lãi nhân với
+
+88
+00:09:13,839 --> 00:09:18,480
+số dư đầu kỳ và tôi sẽ viết ra luôn vì hơi khó tính
+
+89
+00:09:18,480 --> 00:09:29,80
+hơn là nhân 6% với 1000. 4,935.62, đúng chưa?
+
+90
+00:09:29,80 --> 00:09:35,150
+Tôi đang đi đúng hướng vì tiền lãi đang giảm
+Giờ thì tôi phải hoàn trả lại bao nhiêu tiền?
+
+91
+00:09:35,150 --> 00:09:40,250
+Hãy suy nghĩ, bạn nghĩ là tôi sẽ hoàn trả lại tiền gốc mỗi kỳ ít hay nhiều hơn?
+Tôi sẽ hoàn trả nhiều hơn vì khoản tiền tôi phải trả là cố định
+
+92
+00:09:40,250 --> 00:09:45,540
+và lãi suất thì giảm. Nên tiền gốc phải trả kỳ này là
+
+93
+00:09:45,540 --> 00:09:54,899
+là 18,804.42, đúng không? Như tôi đã nói
+
+94
+00:09:54,899 --> 00:09:59,529
+bạn có thể tự làm, giờ bạn có thể thiết lập, tôi đã làm đủ rồi
+
+95
+00:09:59,529 --> 00:10:04,860
+Bạn có thể tự thiết lập 1 bảng tính dựa theo tất cả những số liệu này, đúng không?
+
+96
+00:10:04,860 --> 00:10:09,279
+Việc đó rất đơn giản. Bạn hãy bắt đầu với 1 khoản tiền thanh toán hàng kỳ cố định
+hãy để tôi viết cụ thể ra, được chứ?
+
+97
+00:10:09,279 --> 00:10:27,420
+Vậy là bạn đã có những khoản thanh toán hằng năm cố định
+
+98
+00:10:27,420 --> 00:10:31,219
+cái thay đổi là những yếu tố khác trong bảng, nhưng theo 1 cách có hệ thống, đúng chưa?
+
+99
+00:10:31,220 --> 00:10:36,850
+Tiền lãi sẽ giảm xuống và tiền hoàn trả nợ gốc sẽ tăng 
+
+100
+00:10:36,850 --> 00:10:41,619
+cho đến cuối năm thứ 5, bạn sẽ thanh toán hết mọi thứ
+
+101
+00:10:41,619 --> 00:10:52,249
+Để tôi nhanh chóng nhập con số này. 63,456.34, làm sao tôi tính ra được?
+
+102
+00:10:52,249 --> 00:10:58,339
+Tôi lấy 82,000 trừ đi  18,800, đúng chưa?
+Kết quả sẽ là? Sẽ là 1 số nhỏ hơn
+
+103
+00:10:58,339 --> 00:11:07,790
+khoảng 3807.38 và ở đây tôi sẽ được 1 số
+
+104
+00:11:07,790 --> 00:11:14,529
+lớn hơn 18 và đó là 19,932.
+
+105
+00:11:14,529 --> 00:11:22,59
+26. Tôi phải nói ra phòng khi 
+chữ tôi xấu quá các bạn không đọc được, rất xin lỗi
+
+106
+00:11:22,59 --> 00:11:36,689
+Tôi thấy khá là buồn cười
+Ở đây là 43,524.08, ở đây là
+
+107
+00:11:36,689 --> 00:11:48,379
+2611.44 và ở đây là 21,128.20
+
+108
+00:11:48,379 --> 00:12:04,870
+Số dư đầu kỳ năm thứ 5 trừ số dư đầu kỳ năm thứ 4
+trừ đi số tiền hoàn trả nợ gốc năm 4 là 22,395.89
+
+109
+00:12:04,870 --> 00:12:21,200
+bạn đã trả sô đó, tiền lãi là 1343.75 và ở đây là 22,395.89.
+Điều thú vị ở đây là?
+
+110
+00:12:21,200 --> 00:12:27,730
+Số tiền này và số tiền này bằng nhau nghĩa là?
+
+111
+00:12:27,730 --> 00:12:35,680
+Số dư đầu kỳ đầu năm 6, cũng là số hoàn trả nợ gốc năm 5,
+vậy ta còn nợ ngân hàng bao nhiêu? Ta đã hết nợ
+
+112
+00:12:35,680 --> 00:12:41,630
+Điều cần nhớ ở đây là hãy dùng Excel và tạo bảng này. hãy dành thời gian làm điều đó
+
+113
+00:12:41,630 --> 00:12:47,550
+Bạn sẽ thấy rất thích thú. Đây chính là 1 ứng dụng
+giờ tôi sẽ dừng lại
+
+114
+00:12:47,550 --> 00:12:52,400
+vì tôi muốn các bạn tíếp tục giải bài toán này
+tạo bảng tính Excel, ta sẽ trở lại
+
+115
+00:12:52,400 --> 00:12:57,140
+và có khoảng thời gian vui vẻ 
+và tôi sẽ cho các bạn thấy tài chính có thể hay đến nhường nào
+
+116
+00:12:57,140 --> 00:12:57,640
+ 
+

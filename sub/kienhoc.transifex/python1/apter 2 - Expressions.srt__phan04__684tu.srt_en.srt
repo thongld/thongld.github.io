@@ -1,0 +1,435 @@
+286
+00:13:50,340 --> 00:13:51,360
+https://youtu.be/IXXHH6ztsSA
+OK.
+
+287
+00:13:51,360 --> 00:13:55,170
+And so let's sort of
+take a look at this.
+
+288
+00:13:55,170 --> 00:13:58,510
+And so we start with are
+there any parentheses?
+
+289
+00:13:58,510 --> 00:13:59,540
+And the answer is no.
+
+290
+00:13:59,540 --> 00:14:00,680
+There are no parentheses.
+
+291
+00:14:00,680 --> 00:14:03,710
+So let's go next.
+
+292
+00:14:03,710 --> 00:14:05,080
+Power.
+
+293
+00:14:05,080 --> 00:14:09,700
+And so the power says,
+OK, let's look across
+
+294
+00:14:09,700 --> 00:14:12,030
+and find those things that
+are raised to a power.
+
+295
+00:14:12,030 --> 00:14:17,350
+And the 2 cubed, or 2 the
+third power, is the power.
+
+296
+00:14:17,350 --> 00:14:20,060
+So we're going to do that one.
+
+297
+00:14:20,060 --> 00:14:22,030
+And then the way
+I do it when I'm
+
+298
+00:14:22,030 --> 00:14:24,150
+sort of doing these
+slowly is I rewrite it.
+
+299
+00:14:24,150 --> 00:14:25,960
+So the 2 to the third
+power becomes 8.
+
+300
+00:14:25,960 --> 00:14:28,690
+So it's 1 plus 8 over 4 times 5.
+
+301
+00:14:28,690 --> 00:14:30,190
+And then now we can say, power?
+
+302
+00:14:30,190 --> 00:14:31,727
+That's taken care of.
+
+303
+00:14:31,727 --> 00:14:33,810
+Now we're going to do
+multiplication and division.
+
+304
+00:14:33,810 --> 00:14:35,570
+And we go across.
+
+305
+00:14:35,570 --> 00:14:38,660
+Now we have both a division
+and a multiplication.
+
+306
+00:14:38,660 --> 00:14:41,140
+And multiplication and division
+are done at the same time.
+
+307
+00:14:41,140 --> 00:14:42,750
+So that means we
+do left to right,
+
+308
+00:14:42,750 --> 00:14:45,880
+which means we do the first
+one that we encounter first.
+
+309
+00:14:45,880 --> 00:14:52,580
+So that will be 8 over 4,
+because of the left to right
+
+310
+00:14:52,580 --> 00:14:53,440
+rule.
+
+311
+00:14:53,440 --> 00:14:54,440
+And so we find that one.
+
+312
+00:14:54,440 --> 00:14:56,900
+And that's the one that
+gets computed next.
+
+313
+00:14:56,900 --> 00:14:58,490
+And that turns into two.
+
+314
+00:14:58,490 --> 00:15:00,850
+And again, I like to rewrite
+these expressions just
+
+315
+00:15:00,850 --> 00:15:03,779
+to keep my brain
+really, really clear.
+
+316
+00:15:03,779 --> 00:15:05,570
+After a while, you just
+do it in your head.
+
+317
+00:15:05,570 --> 00:15:06,452
+But I rewrite them.
+
+318
+00:15:06,452 --> 00:15:08,160
+When I was first
+learning them, at least,
+
+319
+00:15:08,160 --> 00:15:09,250
+I rewrote it all the time.
+
+320
+00:15:09,250 --> 00:15:13,110
+
+321
+00:15:13,110 --> 00:15:15,560
+And so next, looking at this,
+there's a multiplication.
+
+322
+00:15:15,560 --> 00:15:17,220
+We're not done with
+multiplication yet.
+
+323
+00:15:17,220 --> 00:15:21,040
+So the 2 over 5
+is the next thing.
+
+324
+00:15:21,040 --> 00:15:23,580
+And then we do that calculation,
+and that becomes 10.
+
+325
+00:15:23,580 --> 00:15:24,890
+And again, we rewrite it.
+
+326
+00:15:24,890 --> 00:15:27,020
+And now we've done
+the multiplication.
+
+327
+00:15:27,020 --> 00:15:28,730
+And we're going to
+do addition next.
+
+328
+00:15:28,730 --> 00:15:31,820
+And that's just 1 over 10.
+
+329
+00:15:31,820 --> 00:15:33,940
+And that becomes 11.
+
+330
+00:15:33,940 --> 00:15:36,560
+And so basically,
+this big long thing
+
+331
+00:15:36,560 --> 00:15:40,700
+through a series of
+successive steps becomes 11.
+
+332
+00:15:40,700 --> 00:15:43,725
+And indeed, when we print
+it out, that's what we get.
+
+333
+00:15:43,725 --> 00:15:46,840
+
+334
+00:15:46,840 --> 00:15:49,820
+So there's the rules that
+are parentheses, power,
+
+335
+00:15:49,820 --> 00:15:52,470
+multiplication, addition,
+and then left to right.
+
+336
+00:15:52,470 --> 00:15:58,750
+But smart people usually
+just put parentheses in.
+
+337
+00:15:58,750 --> 00:16:00,850
+So here's an example.
+
+338
+00:16:00,850 --> 00:16:01,790
+Go back, go back.
+
+339
+00:16:01,790 --> 00:16:03,370
+Here's an exam question.
+
+340
+00:16:03,370 --> 00:16:09,050
+Now, I wouldn't write
+this code this way.
+
+341
+00:16:09,050 --> 00:16:12,330
+I would put a parenthese here.
+
+342
+00:16:12,330 --> 00:16:14,860
+And a parenthese there.
+
+343
+00:16:14,860 --> 00:16:16,194
+It's the same thing.
+
+344
+00:16:16,194 --> 00:16:18,610
+Because that's exactly-- the
+2 times 3 is going to happen.
+
+345
+00:16:18,610 --> 00:16:20,390
+And the 4 over 5
+is going to happen.
+
+346
+00:16:20,390 --> 00:16:23,150
+And then the plus and minus
+will happen left to right.
+
+347
+00:16:23,150 --> 00:16:25,880
+But why not make it
+easier on your readers
+
+348
+00:16:25,880 --> 00:16:27,240
+and just put the parentheses in?
+
+349
+00:16:27,240 --> 00:16:28,323
+Because they're redundant.
+
+350
+00:16:28,323 --> 00:16:30,140
+They're not necessary.
+
+351
+00:16:30,140 --> 00:16:31,520
+But away you go.
+
+352
+00:16:31,520 --> 00:16:34,082
+Now if you don't
+want it to happen
+
+353
+00:16:34,082 --> 00:16:36,540
+in that order, of course, then
+you have to put parentheses.
+
+354
+00:16:36,540 --> 00:16:39,180
+If you want the
+addition to happen
+
+355
+00:16:39,180 --> 00:16:42,040
+before the multiplication, then
+you have to put parentheses in,
+
+356
+00:16:42,040 --> 00:16:43,180
+which you can.
+
+357
+00:16:43,180 --> 00:16:47,520
+But we tend to recommended that
+you use more parentheses rather
+
+358
+00:16:47,520 --> 00:16:49,810
+than less parentheses.
+
+359
+00:16:49,810 --> 00:16:53,610
+Now Python integer
+division in Python 2,
+
+360
+00:16:53,610 --> 00:16:56,130
+which we are using
+Python 2 for this class--
+
+361
+00:16:56,130 --> 00:16:59,400
+there's a new Python 3
+that the world is slowly
+
+362
+00:16:59,400 --> 00:17:00,490
+transitioning to.
+
+363
+00:17:00,490 --> 00:17:03,600
+And a lot of people are
+using it and teaching,
+
+364
+00:17:03,600 --> 00:17:06,630
+but it's not as common
+sort of in the real world
+
+365
+00:17:06,630 --> 00:17:08,349
+with libraries and utilities.
+
+366
+00:17:08,349 --> 00:17:11,099
+And so we'll stick with
+Python 2 for a few more years
+
+367
+00:17:11,099 --> 00:17:14,876
+until Python 3 really
+kind of turns the corner.
+
+368
+00:17:14,876 --> 00:17:16,000
+It's nice to have it there.
+
+369
+00:17:16,000 --> 00:17:17,420
+But there's so much Python.
+
+370
+00:17:17,420 --> 00:17:20,690
+And it's so popular,
+Python 2, that it's just
+
+371
+00:17:20,690 --> 00:17:23,260
+kind of hard to get
+everybody up to Python 3.
+
+372
+00:17:23,260 --> 00:17:26,184
+So in Python 2, integer
+division truncates.
+
+373
+00:17:26,184 --> 00:17:31,376
+And you saw that before,
+where I did the 5,280 by 1,000
+
+374
+00:17:31,376 --> 00:17:33,769
+and I got 5.
+
+375
+00:17:33,769 --> 00:17:36,310
+But we can look at a couple of
+examples that make this really
+
+376
+00:17:36,310 --> 00:17:37,990
+very quite clear.
+
+377
+00:17:37,990 --> 00:17:41,060
+So 10 divided by 2 is
+5, as you would expect.
+
+378
+00:17:41,060 --> 00:17:44,650
+9 divided by 2 is 4, not
+exactly what you'd expect.
+
+379
+00:17:44,650 --> 00:17:49,470
+You kind of expect that
+to be 4.5 instead of four.
+
+380
+00:17:49,470 --> 00:17:51,860
+But in Python 3, it will be 4.5.
+
