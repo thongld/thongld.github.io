@@ -910,14 +910,14 @@ def get_playable_url(url):
 		if os.path.exists(xshare_settings_path):
 			with open(xshare_settings_path,"r") as f:
 				s = f.read()
-				if 'id="getLinkFree" value="false"' in s:
-					return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
-				else:
-					line1 = "Nội dung này cần nhập [COLOR yellow]FShare VIP[/COLOR] [COLOR orange]Cá Nhân[/COLOR] trong [COLOR yellow]XShare[/COLOR]"
-					line2 = "Xin vui lòng xem video hướng dẫn chi tiết tại"
-					line3 = "[B][COLOR orange]http://bit.ly/fshare-xshare[/COLOR][/B]"
-					dlg = xbmcgui.Dialog()
-					dlg.ok("Chưa nhập FShare cá nhân!!!", line1, line2, line3)
+				# if 'id="getLinkFree" value="false"' in s:
+				return "plugin://plugin.video.xshare/?mode=3&page=0&url=" + urllib.quote_plus(url)
+				# else:
+				# 	line1 = "Nội dung này cần nhập [COLOR yellow]FShare VIP[/COLOR] [COLOR orange]Cá Nhân[/COLOR] trong [COLOR yellow]XShare[/COLOR]"
+				# 	line2 = "Xin vui lòng xem video hướng dẫn chi tiết tại"
+				# 	line3 = "[B][COLOR orange]http://bit.ly/fshare-xshare[/COLOR][/B]"
+				# 	dlg = xbmcgui.Dialog()
+				# 	dlg.ok("Chưa nhập FShare cá nhân!!!", line1, line2, line3)
 		else:
 			header  = "Không tìm thấy Add-on Settings của XShare"
 			message = "Bạn cần cài addon \"XShare XBMC HDVideo\" và thiết lập FShare VIP trong XShare để xem nội dung này"
