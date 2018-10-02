@@ -1064,7 +1064,6 @@ def LoginFShare(uname,pword):
 
 def GetFShareCred():
 	try:
-		raise Exception("")
 		_hash = plugin.get_setting("hash")
 		uname = plugin.get_setting("usernamefshare")
 		pword = plugin.get_setting("passwordfshare")
@@ -1183,8 +1182,6 @@ def cleanHTML(s):
 	s = re.sub('  +', ' ', s)
 	s = s.replace('> <', '><')
 	return s
-
-
 
 
 def version_cmp(local_version, download_version):
