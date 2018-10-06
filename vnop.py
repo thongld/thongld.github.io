@@ -516,7 +516,7 @@ def FShare(path="0", tracking_string="FShare"):
 				urllib.quote_plus("https://www.fshare.vn/file/" + i["linkcode"]),
 				urllib.quote_plus("[FShare] %s (%s)" % (name, size))
 			)
-			item["label"] = "[FShare] %s (%s)" % (name, size)
+			item["label"] = "%s (%s)" % (name, size)
 			item["is_playable"] = True
 		items += [item]
 	if len(fshare_items) >= 20:
