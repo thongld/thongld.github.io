@@ -944,7 +944,7 @@ def get_playable_url(url):
 			except:
 				pass
 		return play_url
-	elif "vtcnow.vn" in url:
+	elif "vtc.gov.vn" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
 			'Accept-Encoding': 'None'
@@ -954,8 +954,8 @@ def get_playable_url(url):
 			"GET",
 			headers=headers
 		)
-		match = re.search('src: "(.+?)"', content)
-		return match.group(1)+"|Referer=https%3A%2F%2Fvtcnow.vn%2Fkenh%2Fvtc6"
+		match = re.search("src: '(.+?)'", content)
+		return match.group(1)
 	elif "livestream.com" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
