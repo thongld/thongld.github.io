@@ -80,6 +80,7 @@ def M3UToItems(url_path=""):
 			# Kiểu link plugin://
 			if item["path"].startswith("plugin://"):
 				item["is_playable"] = True
+				item["info"] = {"type": "video"}
 			# Kiểu link .ts
 			elif re.search("\.ts$", item["path"]):
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
@@ -95,6 +96,7 @@ def M3UToItems(url_path=""):
 				item["path"] = pluginrootpath + \
 					"/play/%s" % urllib.quote_plus(item["path"])
 				item["is_playable"] = True
+				item["info"] = {"type": "video"}
 		else:
 			# Nếu không phải...
 			item["is_playable"] = False
@@ -183,12 +185,14 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["path"] = match.group(1).join(tmp)
 				if "/play/" in match.group(1):
 					item["is_playable"] = True
+					item["info"] = {"type": "video"}
 			elif item["path"].startswith("plugin://plugin.video.f4mTester"):
 				item["is_playable"] = False
 				item["path"] = pluginrootpath + \
 					"/executebuiltin/" + urllib.quote_plus(item["path"])
 			elif "/play/" in item["path"]:
 				item["is_playable"] = True
+				item["info"] = {"type": "video"}
 		elif item["path"] == "":
 			item["label"] = "[I]%s[/I]" % item["label"]
 			item["is_playable"] = False
@@ -227,6 +231,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["path"] = "plugin://plugin.video.xshare/?mode=3&page=0&url=" + \
 					urllib.quote_plus(item["path"])
 				item["is_playable"] = True
+				item["info"] = {"type": "video"}
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 			elif "youtube.com/channel" in item["path"]:
 				# https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ
@@ -252,6 +257,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			else:
 				# Nếu là direct link thì route đến hàm play_url
 				item["is_playable"] = True
+				item["info"] = {"type": "video"}
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 		if item["label2"].startswith("http"):
 			item["path"] += "?sub=" + urllib.quote_plus(item["label2"].encode("utf8"))
@@ -459,6 +465,7 @@ def AceList(path="0", tracking_string="AceList"):
 			urllib.quote_plus("[AceList] %s" % item["label"])
 		)
 		item["is_playable"] = True
+		item["info"] = {"type": "video"}
 		items += [item]
 	return plugin.finish(items)
 
@@ -518,6 +525,7 @@ def FShare(path="0", tracking_string="FShare"):
 			)
 			item["label"] = "%s (%s)" % (name, size)
 			item["is_playable"] = True
+			item["info"] = {"type": "video"}
 		items += [item]
 	if len(fshare_items) >= 20:
 		path = "https://www.fshare.vn/folder/%s?page=%s" % (folder_id, page + 1)
