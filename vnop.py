@@ -30,7 +30,7 @@ http = httplib2.Http(cache, disable_ssl_certificate_validation=True)
 query_url = "https://docs.google.com/spreadsheets/d/{sid}/gviz/tq?gid={gid}&headers=1&tq={tq}"
 sheet_headers = {
 	"User-Agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)",
-	"Accept-Encoding": "gzip, deflate, sdch, br"
+	"Accept-Encoding": "gzip, deflate, sdch"
 }
 
 
@@ -216,6 +216,9 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				elif match_passw:
 					item["path"] = pluginrootpath + \
 						"/password-section/%s/%s@%s" % (match_passw.group(1), gid, sheet_id)
+			elif re.search(r'textuploader', item["path"]):
+				item["path"] = pluginrootpath + \
+					"/m3u/" + urllib.quote_plus(item["path"])
 			elif any(service in item["path"] for service in ["acelisting.in"]):
 				item["path"] = pluginrootpath + \
 					"/acelist/" + urllib.quote_plus(item["path"])
