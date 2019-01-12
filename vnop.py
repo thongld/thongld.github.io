@@ -1038,14 +1038,23 @@ def get_playable_url(url):
 					body=json.dumps(data),
 					headers=fshare_headers
 				)
+				url = json.loads(content)["location"]
 				if resp.status == 404:
 					history = plugin.get_storage('history')
 					header = "Không lấy được link FShare VIP!"
 					message = "Link không tồn tại hoặc file đã bị xóa"
 					xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
 					return None
-				else:
-					return json.loads(content)["location"]
+				(resp, content) = http.request(
+					url, "HEAD"
+				)
+				if '/ERROR' in resp['content-location']:
+					history = plugin.get_storage('history')
+					header = "Không lấy được link FShare VIP!"
+					message = "Link không tồn tại hoặc file đã bị xóa"
+					xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
+					return None
+				return url
 			return None
 		except:	pass
 	elif "tv24.vn" in url:
