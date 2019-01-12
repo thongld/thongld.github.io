@@ -1040,7 +1040,6 @@ def get_playable_url(url):
 				)
 				url = json.loads(content)["location"]
 				if resp.status == 404:
-					history = plugin.get_storage('history')
 					header = "Không lấy được link FShare VIP!"
 					message = "Link không tồn tại hoặc file đã bị xóa"
 					xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
@@ -1049,7 +1048,6 @@ def get_playable_url(url):
 					url, "HEAD"
 				)
 				if '/ERROR' in resp['content-location']:
-					history = plugin.get_storage('history')
 					header = "Không lấy được link FShare VIP!"
 					message = "Link không tồn tại hoặc file đã bị xóa"
 					xbmc.executebuiltin('Notification("%s", "%s", "%d", "%s")' % (header, message, 10000, ''))
