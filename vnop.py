@@ -152,9 +152,8 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 		url, "GET",
 		headers=sheet_headers
 	)
-	_re = "google.visualization.Query.setResponse\((.+?)\);"
+	_re = "google.visualization.Query.setResponse\((.+)\);"
 	_json = json.loads(re.compile(_re).findall(content)[0])
-
 	items = []
 	for row in _json["table"]["rows"]:
 		item = {}
