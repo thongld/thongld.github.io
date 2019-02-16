@@ -502,8 +502,11 @@ def FShare(path="0", tracking_string="FShare"):
 		folder_id, page)
 	(resp, content) = http.request(
 		fshare_folder_api, "GET",
-		headers={"Accept": "application/json, text/plain, */*",
-                    "Accept-Encoding": "gzip, deflate, sdch, br"}
+		headers={
+			"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36",
+			"Accept": "application/json, text/plain, */*",
+			"Accept-Encoding": "gzip, deflate, sdch, br"
+		}
 	)
 	items = []
 	fshare_items = json.loads(content)["items"]
