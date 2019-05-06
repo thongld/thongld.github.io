@@ -16,7 +16,7 @@ import socket
 from datetime import datetime
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
-from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
+from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions, xbmcplugin
 path = xbmc.translatePath(
 	xbmcaddon.Addon().getAddonInfo('path')).decode("utf-8")
 cache = xbmc.translatePath(os.path.join(path, ".cache"))
@@ -363,6 +363,8 @@ def CachedSection(path="0", tracking_string="Home"):
 		"Section - %s" % tracking_string,
 		"/section/%s" % path
 	)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_UNSORTED)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
 	return plugin.finish(getCachedItems(path))
 
 
@@ -382,6 +384,9 @@ def PasswordSection(password="0000", path="0", tracking_string="Home"):
 		"/password-section/%s" % path
 	)
 	passwords = plugin.get_storage('passwords')
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_UNSORTED)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
+
 	if password in passwords and (time.time() - passwords[password] < 1800):
 		items = AddTracking(getItems(path))
 		return plugin.finish(items)
@@ -415,6 +420,8 @@ def Section(path="0", tracking_string="Home"):
 		"/section/%s" % path
 	)
 	items = AddTracking(getItems(path))
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_UNSORTED)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
 	return plugin.finish(items)
 
 
@@ -473,6 +480,8 @@ def AceList(path="0", tracking_string="AceList"):
 		item["is_playable"] = True
 		item["info"] = {"type": "video"}
 		items += [item]
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_UNSORTED)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
 	return plugin.finish(items)
 
 
@@ -547,6 +556,8 @@ def FShare(path="0", tracking_string="FShare"):
 			),
 			'thumbnail': "https://docs.google.com/drawings/d/12OjbFr3Z5TCi1WREwTWECxNNwx0Kx-FTrCLOigrpqG4/pub?w=256&h=256"
 		})
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_UNSORTED)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
 	return plugin.finish(items)
 
 
@@ -573,6 +584,8 @@ def M3USection(path="0", tracking_string="M3U"):
 			del item["is_playable"]
 		if "playable" in item:
 			del item["playable"]
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_UNSORTED)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
 	return plugin.finish(AddTracking(items))
 
 
@@ -594,6 +607,8 @@ def M3U(path="0", tracking_string="M3U"):
 	)
 
 	items = M3UToItems(path)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_UNSORTED)
+	plugin.add_sort_method(xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
 	return plugin.finish(AddTracking(items))
 
 
@@ -753,8 +768,7 @@ def AddTracking(items):
 				tail = ""
 			else:
 				tail = tmps[1]
-			item["path"] = "%s/%s?%s" % (tmps[0],
-			                             urllib.quote_plus(item["label"]), tail)
+			item["path"] = "%s/%s?%s" % (tmps[0], urllib.quote_plus(item["label"]), tail)
 	return items
 
 
