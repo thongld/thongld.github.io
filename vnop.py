@@ -131,6 +131,8 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 	# Default VN Open Playlist Sheet ID
 
 	sheet_id = GetSheetIDFromSettings()
+	if "1CzW6m07TdutoBZ1azkvpTsDd1fyjc3p-2u4Zs-OYBfc" in url_path:
+		return [{"label": "[COLOR red][B]This content is BLOCKED![/B][/COLOR]", "path":"plugin://plugin.video.thongld.vnplaylist/executebuiltin/-"}]
 	gid = url_path
 	if "@" in url_path:
 		path_split = url_path.split("@")
