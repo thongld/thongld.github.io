@@ -129,6 +129,8 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 
 	sheet_id = GetSheetIDFromSettings()
 	gid = url_path
+	if "1CzW6m07TdutoBZ1azkvpTsDd1fyjc3p-2u4Zs-OYBfc" in url_path:
+		return [{"label": "[COLOR red][B]This content is BLOCKED![/B][/COLOR]", "path":"plugin://plugin.video.thongld.vnplaylist/executebuiltin/-"}]
 	if "@" in url_path:
 		path_split = url_path.split("@")
 		gid = path_split[0]
