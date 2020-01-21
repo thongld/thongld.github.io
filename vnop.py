@@ -1057,7 +1057,7 @@ def get_playable_url(url):
 				}
 
 				(resp, content) = http.request(
-					convert_ipv4_url("https://api2.fshare.vn/api/session/download"), "POST",
+					convert_ipv4_url("https://api.fshare.vn/api/session/download"), "POST",
 					body=json.dumps(data),
 					headers=fshare_headers
 				)
@@ -1098,7 +1098,7 @@ def convert_ipv4_url(url):
 	return url
 
 def LoginFShare(uname,pword):
-	login_uri = "https://api2.fshare.vn/api/user/login"
+	login_uri = "https://api.fshare.vn/api/user/login"
 	login_uri = convert_ipv4_url(login_uri)
 	fshare_headers = {
 		"Accept-Encoding": "gzip, deflate, sdch"
@@ -1157,7 +1157,7 @@ def LoginOKNoti(user="",lvl=""):
 
 
 def GetFShareUser(cred):
-	user_url = "https://api2.fshare.vn/api/user/get"
+	user_url = "https://api.fshare.vn/api/user/get"
 	user_url = convert_ipv4_url(user_url)
 	headers = {
 		"Cookie": "session_id=" + cred["session_id"]
